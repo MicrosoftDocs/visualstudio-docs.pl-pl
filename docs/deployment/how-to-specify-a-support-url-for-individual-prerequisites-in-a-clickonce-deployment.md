@@ -1,5 +1,7 @@
 ---
 title: Adres URL pomocy technicznej dla wymagań wstępnych wdrożenia technologii ClickOnce
+description: Dowiedz się, w jaki sposób można testować wdrożenie technologii ClickOnce pod kątem wymagań wstępnych dla aplikacji ClickOnce oraz jak działa wdrożenie z brakującymi wymaganiami wstępnymi.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,19 +17,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf474e4926403a9475860bfdc620ee4a6860f8aa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: af912503ddc1e87f14756a1041e9fa4d8aac505b
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85381733"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350949"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Instrukcje: Określanie adresu URL pomocy technicznej dla indywidualnych wymagań wstępnych w ramach wdrożenia ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Wdrożenie może przetestować różne wymagania wstępne, które muszą być dostępne na komputerze klienckim w celu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uruchomienia aplikacji. Te zależności obejmują wymaganą minimalną wersję .NET Framework, wersję systemu operacyjnego oraz wszystkie zestawy, które muszą być wstępnie zainstalowane w globalnej pamięci podręcznej zestawów (GAC). [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]nie można jednak zainstalować żadnego z tych wymagań wstępnych; Jeśli wymaganie wstępne nie zostanie znalezione, po prostu zatrzymuje instalację i wyświetla okno dialogowe z wyjaśnieniem dlaczego instalacja nie powiodła się.
 
  Istnieją dwie metody instalacji wstępnie wymaganego oprogramowania. Można je zainstalować przy użyciu aplikacji programu inicjującego. Alternatywnie można określić adres URL pomocy technicznej dla indywidualnych wymagań wstępnych, który jest wyświetlany użytkownikom w oknie dialogowym, jeśli nie zostanie znaleziony warunek wstępny. Strona, do której odwołuje się ten adres URL, może zawierać linki do instrukcji dotyczących instalowania wymaganego wymagania wstępnego. Jeśli aplikacja nie określa adresu URL pomocy technicznej dla danego wymagania wstępnego, program [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wyświetla adres URL pomocy technicznej określony w manifeście wdrożenia dla aplikacji jako całości, jeśli jest zdefiniowany.
 
- Chociaż [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , *Mage.exe*i *MageUI.exe* mogą być używane do generowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożeń, żadne z tych narzędzi nie obsługują bezpośredniego określania adresu URL pomocy technicznej dla indywidualnych wymagań wstępnych. W tym dokumencie opisano sposób modyfikowania manifestu aplikacji i manifestu wdrażania wdrożenia w celu uwzględnienia tych adresów URL pomocy technicznej.
+ Chociaż [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , *Mage.exe* i *MageUI.exe* mogą być używane do generowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożeń, żadne z tych narzędzi nie obsługują bezpośredniego określania adresu URL pomocy technicznej dla indywidualnych wymagań wstępnych. W tym dokumencie opisano sposób modyfikowania manifestu aplikacji i manifestu wdrażania wdrożenia w celu uwzględnienia tych adresów URL pomocy technicznej.
 
 ### <a name="specify-a-support-url-for-an-individual-prerequisite"></a>Określ adres URL pomocy technicznej dla pojedynczego wymagania wstępnego
 

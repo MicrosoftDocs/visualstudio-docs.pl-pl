@@ -1,5 +1,6 @@
 ---
 title: Tworzenie niestandardowego programu inicjującego wyświetlającego monit o zasadach ochrony prywatności
+description: Dowiedz się, jak skonfigurować aplikacje ClickOnce do automatycznej aktualizacji, gdy zestawy z nowszymi wersjami plików i wersjami zestawu staną się dostępne.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -20,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8fbb05fcfdb1a639855ca31e9574d3037559610
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 06effb313dc2b8a247eeeab99290a289717bc960
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809279"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350468"
 ---
 # <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Przewodnik: Tworzenie niestandardowego programu inicjującego wyświetlającego monit o zasadach ochrony prywatności
 Aplikacje ClickOnce można skonfigurować do automatycznego aktualizowania, gdy zestawy z nowszymi wersjami plików i wersjami zestawu staną się dostępne. Aby upewnić się, że klienci wyrażają zgodę na takie zachowanie, możesz wyświetlić do nich monit o prywatność. Następnie mogą zdecydować, czy udzielić uprawnienia aplikacji do automatycznej aktualizacji. Jeśli aplikacja nie jest dozwolona do automatycznej aktualizacji, nie zostanie zainstalowana.
@@ -42,17 +43,17 @@ Aplikacje ClickOnce można skonfigurować do automatycznego aktualizowania, gdy 
 
 #### <a name="to-create-a-consent-dialog-box"></a>Aby utworzyć okno dialogowe zgody
 
-1. W menu **plik** wskaż polecenie **Nowy**, a następnie kliknij pozycję **projekt**.
+1. W menu **plik** wskaż polecenie **Nowy** , a następnie kliknij pozycję **projekt**.
 
-2. W oknie dialogowym **Nowy projekt** kliknij pozycję **Windows**, a następnie kliknij pozycję **WindowsFormsApplication**.
+2. W oknie dialogowym **Nowy projekt** kliknij pozycję **Windows** , a następnie kliknij pozycję **WindowsFormsApplication**.
 
-3. W polu **Nazwa**wpisz **ConsentDialog**, a następnie kliknij przycisk **OK**.
+3. W polu **Nazwa** wpisz **ConsentDialog** , a następnie kliknij przycisk **OK**.
 
 4. W projektancie kliknij formularz.
 
 5. W oknie **Właściwości** Zmień właściwość **Text** na **okno dialogowe Aktualizowanie zgody**.
 
-6. W **przyborniku**rozwiń **wszystkie Windows Forms**i przeciągnij kontrolkę **etykieta** do formularza.
+6. W **przyborniku** rozwiń **wszystkie Windows Forms** i przeciągnij kontrolkę **etykieta** do formularza.
 
 7. W projektancie kliknij kontrolkę etykieta.
 
@@ -60,17 +61,17 @@ Aplikacje ClickOnce można skonfigurować do automatycznego aktualizowania, gdy 
 
     Aplikacja, którą chcesz zainstalować, sprawdza dostępność najnowszych aktualizacji w sieci Web. Klikając pozycję "Zgadzam się", upoważniasz aplikację do automatycznego sprawdzania i instalowania aktualizacji z Internetu.
 
-9. W **przyborniku**przeciągnij formant **CheckBox** do środka formularza.
+9. W **przyborniku** przeciągnij formant **CheckBox** do środka formularza.
 
-10. W oknie **Właściwości** Zmień właściwość **Text** w obszarze **Układ** na **zgadzam**się.
+10. W oknie **Właściwości** Zmień właściwość **Text** w obszarze **Układ** na **zgadzam** się.
 
-11. W **przyborniku**przeciągnij kontrolkę **Button** do lewego dolnego rogu formularza.
+11. W **przyborniku** przeciągnij kontrolkę **Button** do lewego dolnego rogu formularza.
 
 12. W oknie **Właściwości** Zmień właściwość **Text** w obszarze **Układ** , aby **kontynuował**.
 
 13. W oknie **Właściwości** Zmień właściwość **(nazwa)** w obszarze **projekt** na **ProceedButton**.
 
-14. W **przyborniku**przeciągnij kontrolkę **Button** do prawej dolnej krawędzi formularza.
+14. W **przyborniku** przeciągnij kontrolkę **Button** do prawej dolnej krawędzi formularza.
 
 15. W oknie **Właściwości** Zmień właściwość **Text** w obszarze **Układ** na **Anuluj**.
 
@@ -111,15 +112,15 @@ Aplikacje ClickOnce można skonfigurować do automatycznego aktualizowania, gdy 
 
      Tylko dla Visual Basic deweloperów:
 
-    1. W **Eksplorator rozwiązań**kliknij pozycję **ConsentDialog**.
+    1. W **Eksplorator rozwiązań** kliknij pozycję **ConsentDialog**.
 
-    2. W menu **projekt** kliknij polecenie **Dodaj moduł**, a następnie kliknij przycisk **Dodaj**.
+    2. W menu **projekt** kliknij polecenie **Dodaj moduł** , a następnie kliknij przycisk **Dodaj**.
 
     3. W pliku kodu *Module1. vb* Dodaj następujący kod.
 
         [!code-vb[ConsentDialog#7](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_6.vb)]
 
-    4. W menu **projekt** kliknij polecenie **Właściwości ConsentDialog**, a następnie kliknij kartę **aplikacja** .
+    4. W menu **projekt** kliknij polecenie **Właściwości ConsentDialog** , a następnie kliknij kartę **aplikacja** .
 
     5. Usuń zaznaczenie pola wyboru **Włącz platformę aplikacji**.
 
@@ -233,7 +234,7 @@ Aplikacje ClickOnce można skonfigurować do automatycznego aktualizowania, gdy 
 
 #### <a name="to-set-the-update-consent-application-as-a-prerequisite"></a>Aby ustawić zgodę na aktualizację jako warunek wstępny
 
-1. W **Eksplorator rozwiązań**kliknij nazwę aplikacji, którą chcesz wdrożyć.
+1. W **Eksplorator rozwiązań** kliknij nazwę aplikacji, którą chcesz wdrożyć.
 
 2. W menu **projekt** kliknij polecenie właściwości *ProjectName* **Properties**.
 
@@ -244,14 +245,14 @@ Aplikacje ClickOnce można skonfigurować do automatycznego aktualizowania, gdy 
     > [!NOTE]
     > Może być konieczne zamknięcie i ponowne otwarcie programu Visual Studio, aby wyświetlić okno dialogowe zgody na aktualizację w oknie dialogowym wymagania wstępne.
 
-5. Kliknij przycisk **OK**.
+5. Kliknij pozycję **OK**.
 
 ## <a name="create-and-test-the-setup-program"></a>Utwórz i przetestuj program instalacyjny
  Po ustawieniu aplikacji zgody na aktualizację jako warunek wstępny można wygenerować Instalatora i program inicjujący dla aplikacji.
 
 #### <a name="to-create-and-test-the-setup-program-by-not-clicking-i-agree"></a>Aby utworzyć i przetestować program instalacyjny, nie klikając Zgadzam się
 
-1. W **Eksplorator rozwiązań**kliknij nazwę aplikacji, którą chcesz wdrożyć.
+1. W **Eksplorator rozwiązań** kliknij nazwę aplikacji, którą chcesz wdrożyć.
 
 2. W menu **projekt** kliknij polecenie właściwości *ProjectName* **Properties**.
 
@@ -277,7 +278,7 @@ Aplikacje ClickOnce można skonfigurować do automatycznego aktualizowania, gdy 
 
 #### <a name="to-create-and-test-the-setup-program-by-clicking-i-agree"></a>Aby utworzyć i przetestować program instalacyjny, klikając przycisk Zgadzam się
 
-1. W **Eksplorator rozwiązań**kliknij nazwę aplikacji, którą chcesz wdrożyć.
+1. W **Eksplorator rozwiązań** kliknij nazwę aplikacji, którą chcesz wdrożyć.
 
 2. W menu **projekt** kliknij polecenie właściwości *ProjectName* **Properties**.
 
@@ -293,7 +294,7 @@ Aplikacje ClickOnce można skonfigurować do automatycznego aktualizowania, gdy 
 
      Zostanie wyświetlona aplikacja okno dialogowe zgody na aktualizację, która zawiera następujący tekst: aplikacja, którą chcesz zainstalować, sprawdza, czy są dostępne najnowsze aktualizacje w sieci Web. Klikając przycisk Zgadzam się, autoryzujesz aplikację, aby automatycznie sprawdzać dostępność aktualizacji w Internecie.
 
-7. Kliknij przycisk **zgadzam**się, a następnie kliknij przycisk **Zastosuj**.
+7. Kliknij przycisk **zgadzam** się, a następnie kliknij przycisk **Zastosuj**.
 
      Instalacja aplikacji rozpocznie się.
 

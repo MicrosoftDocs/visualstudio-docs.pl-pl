@@ -1,5 +1,6 @@
 ---
 title: Określ pliki do opublikowania (ClickOnce)
+description: Informacje na temat wykluczania plików, oznaczania plików jako plików danych lub wymagań wstępnych oraz tworzenia grup na potrzeby instalacji warunkowej aplikacji ClickOnce.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afa77b8a69151509455e149c168cbf94e5ad56f8
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: dca403e2b4b7ac9b572e73db397433b1fae1b1ae
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809495"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350897"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Instrukcje: Określanie, które pliki są publikowane przez ClickOnce
 Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji wszystkie pliki niebędące kodem w projekcie są wdrażane wraz z aplikacją. W niektórych przypadkach może nie być konieczne lub nie trzeba publikować niektórych plików lub instalować niektórych plików na podstawie warunków. Program Visual Studio udostępnia funkcje do wykluczania plików, oznaczania plików jako plików danych lub wymagań wstępnych oraz tworzenia grup plików na potrzeby instalacji warunkowej.
@@ -36,9 +37,9 @@ Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_m
 
  Pliki z właściwością **Akcja kompilacji** ustawioną na **zawartość** są wyznaczane jako pliki aplikacji i będą domyślnie oznaczone jako uwzględnione. Mogą być dołączane, wykluczone lub oznaczane jako pliki danych. Wyjątki są następujące:
 
-- Pliki danych, takie jak pliki SQL Database (*. mdf* i *. mdb*) i pliki XML, zostaną domyślnie oznaczone jako pliki danych.
+- Pliki danych, takie jak pliki SQL Database ( *. mdf* i *. mdb* ) i pliki XML, zostaną domyślnie oznaczone jako pliki danych.
 
-- Odwołania do zestawów (pliki *. dll* ) są wystawiane w następujący sposób podczas dodawania odwołania: Jeśli **copy Local** ma **wartość false**, jest domyślnie oznaczony jako zestaw wymagań wstępnych (**Autoinstalacja**), który musi być obecny w pamięci GAC przed zainstalowaniem aplikacji. Jeśli **kopia lokalna** ma **wartość true**, zestaw jest oznaczony domyślnie jako zestaw aplikacji (**include (Auto)**) i zostanie skopiowany do folderu aplikacji podczas instalacji. Odwołanie COM zostanie wyświetlone w oknie dialogowym **pliki aplikacji** (jako plik *ocx* ) tylko wtedy, gdy jego właściwość **izolowana** ma **wartość true**. Domyślnie zostanie on uwzględniony.
+- Odwołania do zestawów (pliki *. dll* ) są wystawiane w następujący sposób podczas dodawania odwołania: Jeśli **copy Local** ma **wartość false** , jest domyślnie oznaczony jako zestaw wymagań wstępnych ( **Autoinstalacja** ), który musi być obecny w pamięci GAC przed zainstalowaniem aplikacji. Jeśli **kopia lokalna** ma **wartość true** , zestaw jest oznaczony domyślnie jako zestaw aplikacji ( **include (Auto)** ) i zostanie skopiowany do folderu aplikacji podczas instalacji. Odwołanie COM zostanie wyświetlone w oknie dialogowym **pliki aplikacji** (jako plik *ocx* ) tylko wtedy, gdy jego właściwość **izolowana** ma **wartość true**. Domyślnie zostanie on uwzględniony.
 
 ### <a name="to-add-files-to-the-application-files-dialog-box"></a>Aby dodać pliki do okna dialogowego pliki aplikacji
 
@@ -48,7 +49,7 @@ Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_m
 
 ### <a name="to-exclude-files-from-clickonce-publishing"></a>Aby wykluczyć pliki z publikacji ClickOnce
 
-1. Po wybraniu projektu w **Eksplorator rozwiązań**, w menu **projekt** kliknij polecenie **Właściwości**.
+1. Po wybraniu projektu w **Eksplorator rozwiązań** , w menu **projekt** kliknij polecenie **Właściwości**.
 
 2. Kliknij kartę **Publikowanie** .
 
@@ -60,7 +61,7 @@ Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_m
 
 ### <a name="to-mark-files-as-data-files"></a>Aby oznaczyć pliki jako pliki danych
 
-1. Po wybraniu projektu w **Eksplorator rozwiązań**, w menu **projekt** kliknij polecenie **Właściwości**.
+1. Po wybraniu projektu w **Eksplorator rozwiązań** , w menu **projekt** kliknij polecenie **Właściwości**.
 
 2. Kliknij kartę **Publikowanie** .
 
@@ -72,7 +73,7 @@ Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_m
 
 ### <a name="to-mark-files-as-prerequisites"></a>Aby oznaczyć pliki jako wstępnie wymagane
 
-1. Po wybraniu projektu w **Eksplorator rozwiązań**, w menu **projekt** kliknij polecenie **Właściwości**.
+1. Po wybraniu projektu w **Eksplorator rozwiązań** , w menu **projekt** kliknij polecenie **Właściwości**.
 
 2. Kliknij kartę **Publikowanie** .
 
@@ -84,7 +85,7 @@ Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_m
 
 ### <a name="to-add-a-new-file-group"></a>Aby dodać nową grupę plików
 
-1. Po wybraniu projektu w **Eksplorator rozwiązań**, w menu **projekt** kliknij polecenie **Właściwości**.
+1. Po wybraniu projektu w **Eksplorator rozwiązań** , w menu **projekt** kliknij polecenie **Właściwości**.
 
 2. Kliknij kartę **Publikowanie** .
 
@@ -101,7 +102,7 @@ Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_m
 
 ### <a name="to-add-a-file-to-a-group"></a>Aby dodać plik do grupy
 
-1. Po wybraniu projektu w **Eksplorator rozwiązań**, w menu **projekt** kliknij polecenie **Właściwości**.
+1. Po wybraniu projektu w **Eksplorator rozwiązań** , w menu **projekt** kliknij polecenie **Właściwości**.
 
 2. Kliknij kartę **Publikowanie** .
 

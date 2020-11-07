@@ -1,5 +1,7 @@
 ---
 title: '&lt;Package — &gt; element (program inicjujący) | Microsoft Docs'
+description: Element Package jest elementem XML najwyższego poziomu w pliku pakietu. Element Package jest wymagany.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab3478f701cade458ffdb97caf4541a88f52230e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7645731cf5b955601541a122f2fdb3fa3d794cc3
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66745762"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350741"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;Package — &gt; element (program inicjujący)
 `Package`Element jest elementem XML najwyższego poziomu w pliku pakietu.
@@ -145,9 +147,9 @@ ms.locfileid: "66745762"
 
 | Atrybut | Opis |
 |--------------------| - |
-| `Culture` | Wymagany. Definiuje kulturę dla tego pakietu, która określa język, który ma być używany. Ten atrybut jest kluczem do `Strings` elementu, który zawiera listę ciągów specyficznych dla kultury dla nazw produktów i komunikatów o błędach podczas instalacji. |
-| `Name` | Wymagany. Nazwa pakietu wyświetlanego dla dewelopera w ramach narzędzia, takiego jak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Ten atrybut jest kluczem do `Strings` elementu, który powinien zawierać `String` element z `Name` `Culture` właściwością i ustawioną tak, aby pasował do `Name` `Culture` właściwości i `Package` . |
-| `LicenseAgreement` | Opcjonalny. Określa nazwę pliku w pakiecie dystrybucji, który zawiera umowę licencyjną użytkownika oprogramowania (EULA).  Ten plik może być w formacie zwykłego tekstu (*txt*) lub tekstu sformatowanego. (*RTF*) |
+| `Culture` | Wymagane. Definiuje kulturę dla tego pakietu, która określa język, który ma być używany. Ten atrybut jest kluczem do `Strings` elementu, który zawiera listę ciągów specyficznych dla kultury dla nazw produktów i komunikatów o błędach podczas instalacji. |
+| `Name` | Wymagane. Nazwa pakietu wyświetlanego dla dewelopera w ramach narzędzia, takiego jak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Ten atrybut jest kluczem do `Strings` elementu, który powinien zawierać `String` element z `Name` `Culture` właściwością i ustawioną tak, aby pasował do `Name` `Culture` właściwości i `Package` . |
+| `LicenseAgreement` | Opcjonalny. Określa nazwę pliku w pakiecie dystrybucji, który zawiera umowę licencyjną End-User (EULA).  Ten plik może być w formacie zwykłego tekstu ( *txt* ) lub tekstu sformatowanego. ( *RTF* ) |
 
 ## <a name="example"></a>Przykład
  Poniższy przykład kodu przedstawia kompletny plik pakietu do redystrybucji .NET Framework 2,0.

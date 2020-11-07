@@ -1,5 +1,7 @@
 ---
 title: Debuguj arkusze stylów XSLT
+description: Dowiedz się, jak za pomocą debugera XSLT w programie Visual Studio debugować arkusz stylów XSLT, wykonując kroki opisane w tym instruktażu.
+ms.custom: SEO-VS-2020
 ms.date: 03/05/2019
 ms.topic: how-to
 ms.assetid: 3db9fa5a-f619-4cb6-86e7-64b364e58e5d
@@ -8,14 +10,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c75d3cae07101363f6c986a1defb375f602f466
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c69f93aca88cb8e83417a370de7113640d3ae38c
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815126"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351339"
 ---
-# <a name="walkthrough-debug-an-xslt-style-sheet"></a>Przewodnik: debugowanie arkusza stylów XSLT
+# <a name="walkthrough-debug-an-xslt-style-sheet"></a>Przewodnik: Debugowanie arkusza stylów XSLT
 
 W krokach w tym instruktażu pokazano, jak używać debugera XSLT. Kroki obejmują wyświetlanie zmiennych, ustawianie punktów przerwania i przechodzenie przez kod. Debuger umożliwia wykonywanie kodu jeden wiersz jednocześnie.
 
@@ -32,7 +34,7 @@ Aby przygotować się do tego przewodnika, najpierw skopiuj dwa [pliki przykład
 
    Arkusz stylów zostanie otwarty w edytorze XML.
 
-3. Kliknij przycisk Przeglądaj (**...**) w polu **wejściowym** okna właściwości dokumentu. (Jeśli okno **Właściwości** nie jest widoczne, kliknij prawym przyciskiem myszy w dowolnym miejscu w otwartym pliku w edytorze, a następnie wybierz polecenie **Właściwości**.)
+3. Kliknij przycisk Przeglądaj ( **...** ) w polu **wejściowym** okna właściwości dokumentu. (Jeśli okno **Właściwości** nie jest widoczne, kliknij prawym przyciskiem myszy w dowolnym miejscu w otwartym pliku w edytorze, a następnie wybierz polecenie **Właściwości**.)
 
 4. Znajdź plik *books.xml* , a następnie wybierz polecenie **Otwórz**.
 
@@ -48,13 +50,13 @@ Aby przygotować się do tego przewodnika, najpierw skopiuj dwa [pliki przykład
 
       ![Wstaw punkt przerwania w pliku XSL w programie Visual Studio](media/insert-breakpoint.PNG)
 
-6. Na pasku menu wybierz pozycję **XML**  >  **Rozpocznij debugowanie XSLT** (lub naciśnij klawisz **Alt** + **F5**).
+6. Na pasku menu wybierz pozycję **XML**  >  **Rozpocznij debugowanie XSLT** (lub naciśnij klawisz **Alt** + **F5** ).
 
    Rozpocznie się proces debugowania.
 
    W edytorze debuger jest umieszczony na `xsl:if` elemencie arkusza stylów. Inny plik o nazwie *below-average.xml* otwiera się w edytorze; jest to plik wyjściowy, który zostanie wypełniony jako każdy węzeł w pliku wejściowym *books.xml* jest przetwarzany.
 
-   Okna **Autokorekty**, **lokalne**i **czujka 1** są wyświetlane u dołu okna programu Visual Studio. W oknie **Ustawienia lokalne** są wyświetlane wszystkie zmienne lokalne i ich bieżące wartości. Obejmuje to zmienne zdefiniowane w arkuszu stylów i zmienne, które są używane przez debuger do śledzenia węzłów, które znajdują się obecnie w kontekście.
+   Okna **Autokorekty** , **lokalne** i **czujka 1** są wyświetlane u dołu okna programu Visual Studio. W oknie **Ustawienia lokalne** są wyświetlane wszystkie zmienne lokalne i ich bieżące wartości. Obejmuje to zmienne zdefiniowane w arkuszu stylów i zmienne, które są używane przez debuger do śledzenia węzłów, które znajdują się obecnie w kontekście.
 
 ## <a name="watch-window"></a>okno czujki
 
@@ -80,19 +82,19 @@ Dodamy dwie zmienne do okna **czujki 1** , aby można było przeanalizować wart
 
 ## <a name="step-through-the-code"></a>Przechodzenie przez kod
 
-1. Naciśnij klawisz **F5**, aby kontynuować.
+1. Naciśnij klawisz **F5** , aby kontynuować.
 
    Ponieważ pierwszy węzeł książki spełnił `xsl:if` warunek, węzeł książki jest dodawany do *below-average.xml* pliku wyjściowego. Debuger będzie nadal wykonywany do momentu ponownego pozycjonowania `xsl:if` elementu w arkuszu stylów. Debuger jest teraz umieszczony w drugim węźle książki w pliku *books.xml* .
 
    W oknie **czujka 1** `self::node()` wartość zmieni się na drugi węzeł książki. Sprawdzając wartość elementu Price, można określić, że cena jest wyższa niż średnia, w rezultacie `xsl:if` warunek powinien zakończyć się niepowodzeniem.
 
-2. Naciśnij klawisz **F5**, aby kontynuować.
+2. Naciśnij klawisz **F5** , aby kontynuować.
 
    Ponieważ drugi węzeł książki nie spełnia `xsl:if` warunku, węzeł książki nie zostanie dodany do pliku wyjściowego *below-average.xml* . Debuger kontynuuje działanie, dopóki nie zostanie ponownie umieszczony na `xsl:if` elemencie w arkuszu stylów. Debuger jest teraz umieszczony w trzecim `book` węźle w pliku *books.xml* .
 
    W oknie **czujka 1** `self::node()` wartość zmieni się na trzeci węzeł książki. Sprawdzając wartość `price` elementu, można określić, że cena jest niższa od średniej. `xsl:if`Warunek powinien się powieść.
 
-3. Naciśnij klawisz **F5**, aby kontynuować.
+3. Naciśnij klawisz **F5** , aby kontynuować.
 
    Ponieważ `xsl:if` warunek został spełniony, trzecia książka jest dodawana do pliku wyjściowego *below-average.xml* . Wszystkie książki w dokumencie XML zostały przetworzone i debuger zatrzyma działanie.
 

@@ -1,5 +1,7 @@
 ---
 title: Tworzenie manifestu produktu | Microsoft Docs
+description: Dowiedz się, jak wdrożyć wymagania wstępne dla aplikacji ClickOnce przy użyciu pakietu zawierającego pojedynczy manifest produktu i manifest pakietu dla każdego ustawienia regionalnego.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97ec49438ce2382336b1b8a6f8355bd092486c2d
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: ab7156635914d46dfc1849717d29ac0416e2d9fa
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852221"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351222"
 ---
 # <a name="how-to-create-a-product-manifest"></a>Instrukcje: tworzenie manifestu produktu
 Aby wdrożyć wymagania wstępne dla aplikacji, można utworzyć pakiet programu inicjującego. Pakiet programu inicjującego zawiera jeden plik manifestu produktu, ale manifest pakietu dla każdego ustawienia regionalnego. Manifest pakietu zawiera aspekty dotyczące lokalizacji pakietu. Dotyczy to również ciągów, umów licencyjnych użytkowników końcowych i pakietów językowych.
@@ -36,7 +38,7 @@ Aby wdrożyć wymagania wstępne dla aplikacji, można utworzyć pakiet programu
 
 1. Utwórz katalog dla pakietu programu inicjującego. W tym przykładzie używa C:\Package.
 
-2. W programie Visual Studio Utwórz nowy plik XML o nazwie *product.xml*i Zapisz go w folderze *C:\Package* .
+2. W programie Visual Studio Utwórz nowy plik XML o nazwie *product.xml* i Zapisz go w folderze *C:\Package* .
 
 3. Dodaj następujący kod XML, aby opisać przestrzeń nazw XML i kod produktu pakietu. Zastąp kod produktu unikatowym identyfikatorem pakietu.
 
@@ -64,7 +66,7 @@ Aby wdrożyć wymagania wstępne dla aplikacji, można utworzyć pakiet programu
 
 6. Skopiuj lub Przenieś plik *CorePackage.msi* do folderu *C:\Package* .
 
-7. Dodaj plik XML, aby zainstalować pakiet za pomocą poleceń programu inicjującego. Program inicjujący automatycznie dodaje do pliku *MSI* flagę **/Qn** , która zostanie zainstalowana w trybie dyskretnym. Jeśli plik jest plikiem *exe*, program inicjujący uruchamia plik *. exe* przy użyciu powłoki. Poniższy kod XML nie zawiera argumentów do *CorePackage.msi*, ale można umieścić argument wiersza polecenia w `Arguments` atrybucie.
+7. Dodaj plik XML, aby zainstalować pakiet za pomocą poleceń programu inicjującego. Program inicjujący automatycznie dodaje do pliku *MSI* flagę **/Qn** , która zostanie zainstalowana w trybie dyskretnym. Jeśli plik jest plikiem *exe* , program inicjujący uruchamia plik *. exe* przy użyciu powłoki. Poniższy kod XML nie zawiera argumentów do *CorePackage.msi* , ale można umieścić argument wiersza polecenia w `Arguments` atrybucie.
 
     ```xml
     <Commands>
@@ -158,5 +160,5 @@ Aby wdrożyć wymagania wstępne dla aplikacji, można utworzyć pakiet programu
 </Product>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dokumentacja schematu produktu i pakietu](../deployment/product-and-package-schema-reference.md)

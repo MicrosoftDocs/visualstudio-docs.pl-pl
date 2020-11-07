@@ -1,5 +1,7 @@
 ---
 title: Publikowanie w witrynie sieci Web
+description: Dowiedz się, jak publikować aplikacje ASP.NET, ASP.NET Core, .NET Core i Python w witrynie sieci Web z poziomu programu Visual Studio za pomocą narzędzia do publikowania.
+ms.custom: SEO-VS-2020
 ms.date: 01/29/2019
 ms.topic: quickstart
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89d8acfa4bf0f5dd9f1f387389b9f7f523c153a7
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 027350b6a51cae5e7be88643624adc6955de91e4
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036408"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350702"
 ---
 # <a name="publish-a-web-app-to-a-web-site-using-visual-studio"></a>Publikowanie aplikacji sieci Web w witrynie sieci Web przy użyciu programu Visual Studio
 

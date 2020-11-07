@@ -1,5 +1,7 @@
 ---
 title: Omówienie wdrażania zaufanych aplikacji | Microsoft Docs
+description: Dowiedz się, jak wdrażać aplikacje ClickOnce, które mają podwyższony poziom uprawnień przy użyciu technologii wdrażania zaufanych aplikacji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b3fca6db978eefc5af751d793ad299d89688cba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 96dfb98b468782f771d866b33b94b2c18de6276f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72806827"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350494"
 ---
 # <a name="trusted-application-deployment-overview"></a>Omówienie wdrażania zaufanych aplikacji
 Ten temat zawiera omówienie sposobu wdrażania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, które mają podwyższony poziom uprawnień przy użyciu technologii wdrażania zaufanych aplikacji.
@@ -77,7 +79,7 @@ Aby skorzystać z zaufanego wdrożenia aplikacji, należy wykonać następujące
 
 - <xref:System.Security.Cryptography?displayProperty=fullName>Przestrzeń nazw.
 
-- *CertMgr.exe*, który jest składnikiem programu Internet Explorer i w związku z tym istnieje w systemie Windows 98 i wszystkich nowszych wersjach. Aby uzyskać więcej informacji, zobacz [Certmgr.exe (narzędzie Menedżer certyfikatów)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).
+- *CertMgr.exe* , który jest składnikiem programu Internet Explorer i w związku z tym istnieje w systemie Windows 98 i wszystkich nowszych wersjach. Aby uzyskać więcej informacji, zobacz [Certmgr.exe (narzędzie Menedżer certyfikatów)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).
 
 ### <a name="create-a-clickonce-application"></a>Tworzenie aplikacji ClickOnce
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Aplikacja jest aplikacją kliencką .NET Framework, która jest połączona z plikami manifestu opisującymi aplikację i parametry instalacji. Program można przekształcić w [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikację przy użyciu polecenia **Publikuj** w programie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Alternatywnie można wygenerować wszystkie pliki wymagane do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia przy użyciu narzędzi, które są dołączone do programu [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] . Aby uzyskać szczegółowe instrukcje dotyczące [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrażania, zobacz [Przewodnik: ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).

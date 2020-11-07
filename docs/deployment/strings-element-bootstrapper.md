@@ -1,5 +1,7 @@
 ---
 title: '&lt;Strings — &gt; element (program inicjujący) | Microsoft Docs'
+description: Element Strings definiuje zlokalizowane ciągi dla nazw produktów, nazw pakietów i komunikatów o błędach instalacji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8bc56bf980bba6326b3615b6892ec555b795ec8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 09608f4b182d72b0b86b69df7df0b37d019ddf45
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66747412"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350481"
 ---
 # <a name="ltstringsgt-element-bootstrapper"></a>&lt;Strings — &gt; element (program inicjujący)
 Definiuje zlokalizowane ciągi dla nazw produktów, nazw pakietów i komunikatów o błędach instalacji.
@@ -42,14 +44,14 @@ Definiuje zlokalizowane ciągi dla nazw produktów, nazw pakietów i komunikató
 ## <a name="elements-and-attributes"></a>Elementy i atrybuty
  `Strings`Element jest elementem podrzędnym `Package` elementu. Nie ma atrybutów.
 
-## <a name="string"></a>String
+## <a name="string"></a>Ciąg
  `String`Element jest elementem podrzędnym `Strings` elementu. `Strings`Element może mieć jeden lub więcej `String` elementów.
 
  `String` ma następujący atrybut.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`Name`|Wymagany. Nazwa ciągu.|
+|`Name`|Wymagane. Nazwa ciągu.|
 
 ## <a name="example"></a>Przykład
  Poniższy przykład kodu określa wszystkie ciągi angielskie dla Instalatora .NET Framework.

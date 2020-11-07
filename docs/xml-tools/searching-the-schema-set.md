@@ -1,5 +1,7 @@
 ---
 title: Eksplorator schematu XML — przeszukiwanie zestawu schematów
+description: Dowiedz się, jak wykonać wyszukiwanie za pomocą słów kluczowych i wyszukiwanie w schemacie dla zestawu schematów w Eksploratorze schematu XML.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ec1395e0-d03c-4130-810d-f2db656937bd
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8378ebaccefaedfcc3d83f23bcab56f7417264dd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c73af4f40abddaaba15e3b2cc785ab412e8884e4
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592506"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351521"
 ---
 # <a name="search-the-schema-set"></a>Wyszukiwanie zestawu schematów
 
@@ -43,7 +45,7 @@ Wyszukiwanie słów kluczowych jest wykonywane przez wprowadzenie podciągu w po
 
 ## <a name="display-and-navigate-search-results"></a>Wyświetlanie i nawigowanie po wynikach wyszukiwania
 
-Po zakończeniu wyszukiwania okienko wyniki podsumowania zostanie dodane do paska narzędzi z wynikami wyszukiwania. Wyniki wyszukiwania są również wyróżnione w **Eksploratorze schematu XML** i oznaczone przez Takty na pionowym pasku przewijania. Wyniki wyszukiwania można nawigować przy użyciu przycisków **Przejdź do następnego wyszukiwania** wynik i **Przejdź do poprzedniego wyniku wyszukiwania** w okienku wyników podsumowania na pasku narzędzi **Eksploratora schematu XML** . za pomocą klawiszy klawiatury **F3** i **SHIFT** + **F3**; lub klikając znaczniki osi na pasku przewijania.
+Po zakończeniu wyszukiwania okienko wyniki podsumowania zostanie dodane do paska narzędzi z wynikami wyszukiwania. Wyniki wyszukiwania są również wyróżnione w **Eksploratorze schematu XML** i oznaczone przez Takty na pionowym pasku przewijania. Wyniki wyszukiwania można nawigować przy użyciu przycisków **Przejdź do następnego wyszukiwania** wynik i **Przejdź do poprzedniego wyniku wyszukiwania** w okienku wyników podsumowania na pasku narzędzi **Eksploratora schematu XML** . za pomocą klawiszy klawiatury **F3** i **SHIFT** + **F3** ; lub klikając znaczniki osi na pasku przewijania.
 
 Możesz dodać wyniki wyszukiwania do obszaru roboczego, klikając przycisk **Dodaj wyróżnione węzły do obszaru roboczego** w okienku wyników podsumowania.
 

@@ -1,5 +1,7 @@
 ---
 title: Pobieranie zestawu satelickiego na żądanie przy użyciu narzędzia ClickOnce Designer
+description: Dowiedz się, jak oznaczyć zestawy satelickie jako opcjonalne przy użyciu narzędzia Projektant i pobrać tylko zestaw, a komputer kliencki musi mieć aktualne ustawienia kultury.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f510ef4ad81188997e1d572e7aa3b52b65883269
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b6b57faf01878dc5aff708f0aca47707bf6e48c
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66263404"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350338"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Przewodnik: pobieranie zestawów satelickich na żądanie za pomocą interfejsu API wdrażania ClickOnce przy użyciu narzędzia Projektant
 Aplikacje Windows Forms można skonfigurować dla wielu kultur przy użyciu zestawów satelickich. *Zestaw satelicki* jest zestawem zawierającym zasoby aplikacji dla kultury innej niż domyślna kultura aplikacji.
@@ -47,7 +49,7 @@ Aplikacje Windows Forms można skonfigurować dla wielu kultur przy użyciu zest
 
 4. Zaznacz pole wyboru **Pokaż wszystkie pliki** , aby wyświetlić zestawy satelickie. Domyślnie wszystkie zestawy satelickie zostaną uwzględnione we wdrożeniu i będą widoczne w tym oknie dialogowym.
 
-     Zestaw satelicki będzie miał nazwę w postaci * \<isoCode>\ApplicationName.resources.dll*, gdzie \<isoCode> jest identyfikatorem języka w formacie RFC 1766.
+     Zestaw satelicki będzie miał nazwę w postaci *\<isoCode>\ApplicationName.resources.dll* , gdzie \<isoCode> jest identyfikatorem języka w formacie RFC 1766.
 
 5. Kliknij pozycję **Nowy** na liście **Grupa pobierania** dla każdego identyfikatora języka. Po wyświetleniu monitu o podanie nazwy grupy pobierania wprowadź identyfikator języka. Na przykład dla japońskiego zestawu satelickiego należy określić nazwę grupy pobierania `ja-JP` .
 
@@ -71,7 +73,7 @@ Aplikacje Windows Forms można skonfigurować dla wielu kultur przy użyciu zest
 
      [!code-vb[ClickOnce.SatelliteAssembliesVB#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_2.vb)]
 
-4. Dodaj następujący kod do `MyApplication` klasy.
+4. Dodaj poniższy kod do klasy `MyApplication`.
 
      [!code-vb[ClickOnce.SatelliteAssembliesVB#2](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_3.vb)]
 

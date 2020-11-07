@@ -1,5 +1,7 @@
 ---
 title: 'Wskazówki: korzystanie z funkcji edytora XML'
+description: Dowiedz się, jak utworzyć nowy dokument XML, wykonując kroki opisane w tym instruktażu, które pokazuje funkcje edytora XML.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: ea8dc357-2e66-455a-aec2-7ccaccfc9adf
@@ -8,14 +10,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cebf6f7621fb5fada37b8e4592efd429bdc85e6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f8aa7daef6e427b7355eb7676db0728a4af4ca42
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817401"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351482"
 ---
-# <a name="walkthrough-use-xml-editor-features"></a>Przewodnik: korzystanie z funkcji edytora XML
+# <a name="walkthrough-use-xml-editor-features"></a>Przewodnik: Używanie funkcji edytora XML
 
 Kroki opisane w tym instruktażu pokazują, jak utworzyć nowy dokument XML. Przewodnik używa również niektórych funkcji edytora XML, które są przydatne do tworzenia kodu XML.
 
@@ -24,13 +26,13 @@ Kroki opisane w tym instruktażu pokazują, jak utworzyć nowy dokument XML. Prz
 
 ## <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Aby utworzyć nowy plik XML i skojarzyć go ze schematem XML
 
-1. W menu **plik** wskaż polecenie **Nowy**, a następnie kliknij polecenie **plik**.
+1. W menu **plik** wskaż polecenie **Nowy** , a następnie kliknij polecenie **plik**.
 
 2. W okienku **Szablony** wybierz pozycję **plik XML** , a następnie kliknij pozycję **Otwórz**.
 
      Nowy plik zostanie otwarty w edytorze. Plik zawiera domyślną deklarację XML, `<?xml version="1.0" encoding="utf-8">` .
 
-3. W oknie właściwości dokumentu kliknij przycisk przeglądania (**...**) w polu **schematy** .
+3. W oknie właściwości dokumentu kliknij przycisk przeglądania ( **...** ) w polu **schematy** .
 
      Zostanie wyświetlone okno dialogowe **schematy XSD** .
 
@@ -40,7 +42,7 @@ Kroki opisane w tym instruktażu pokazują, jak utworzyć nowy dokument XML. Prz
 
 5. Wybierz plik *HireDate. xsd* , a następnie kliknij przycisk **Otwórz**.
 
-6. Kliknij przycisk **OK**.
+6. Kliknij pozycję **OK**.
 
      Schemat XML jest teraz skojarzony z dokumentem XML. Schemat XML jest używany do walidacji dokumentu. Jest on także używany przez funkcję IntelliSense do wypełniania listy elementów członkowskich prawidłowych elementów.
 
@@ -58,7 +60,7 @@ Kroki opisane w tym instruktażu pokazują, jak utworzyć nowy dokument XML. Prz
 
     - **Pracownik** , aby dodać element główny.
 
-2. Wybierz pozycję ** &lt; !--** , aby dodać węzeł komentarza, a następnie naciśnij klawisz **Enter**.
+2. Wybierz pozycję **&lt; !--** , aby dodać węzeł komentarza, a następnie naciśnij klawisz **Enter**.
 
      Edytor wstawia tag końcowy komentarza i umieszcza kursor między tagami początkowymi i końcowymi komentarzami.
 
@@ -96,7 +98,7 @@ Kroki opisane w tym instruktażu pokazują, jak utworzyć nowy dokument XML. Prz
 
 ## <a name="to-format-the-xml-document"></a>Aby sformatować dokument XML
 
-- Wybierz przycisk **Formatuj dokument** na pasku narzędzi edytora XML lub naciśnij **klawisze CTRL** + **E**,**D**.
+- Wybierz przycisk **Formatuj dokument** na pasku narzędzi edytora XML lub naciśnij **klawisze CTRL** + **E** , **D**.
 
    ![Przycisk formatowania dokumentu XML w programie Visual Studio](media/format-xml-document.png)
 

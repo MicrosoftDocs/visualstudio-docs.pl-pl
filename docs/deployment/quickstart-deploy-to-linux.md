@@ -1,5 +1,7 @@
 ---
 title: Publikowanie w usłudze App Service w systemie Linux
+description: Dowiedz się więcej o metodach publikowania ASP.NET Core aplikacji do Azure App Service Linux przy użyciu kontenerów, w tym opcji ciągłego i jednorazowego.
+ms.custom: SEO-VS-2020
 ms.date: 01/29/2019
 ms.topic: quickstart
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 790e88edcd5d0d77e09cc349c82c242cd3da876d
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: 4e474cc96e4b950aee2f509a8e2879b0c31f912a
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91830735"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350725"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>Publikowanie aplikacji ASP.NET Core App Service w systemie Linux przy użyciu programu Visual Studio
 
@@ -48,7 +50,7 @@ W tym artykule opisano sposób korzystania z narzędzia do **publikowania** na p
 
     ![Link do tworzenia nowego wystąpienia Azure App Service](../deployment/media/quickstart-publish-linux-create-new-link.png)
 
-1. W oknie dialogowym **tworzenie Azure App Service (Linux)** pola **Nazwa aplikacji**, **grupa zasobów**i zapis **planu App Service** są wypełniane. Te nazwy można zachować lub zmienić. Gdy wszystko będzie gotowe, wybierz pozycję **Utwórz**.
+1. W oknie dialogowym **tworzenie Azure App Service (Linux)** pola **Nazwa aplikacji** , **grupa zasobów** i zapis **planu App Service** są wypełniane. Te nazwy można zachować lub zmienić. Gdy wszystko będzie gotowe, wybierz pozycję **Utwórz**.
 
     ![Wybierz Azure App Service](../deployment/media/quickstart-publish-linux-create-new-dialog.png)
 
@@ -60,12 +62,12 @@ W tym artykule opisano sposób korzystania z narzędzia do **publikowania** na p
 
     ![Okienko właściwości publikowania przedstawiające Podsumowanie profilu](../deployment/media/quickstart-publish-linux-summary-page.png)
 
-## <a name="clean-up-resources"></a>Czyszczenie zasobów
+## <a name="clean-up-resources"></a>Oczyszczanie zasobów
 
 W poprzednich krokach utworzono zasoby platformy Azure w grupie zasobów. Jeśli nie będziesz już potrzebować tych zasobów w przyszłości, możesz je usunąć przez usunięcie grupy zasobów.
-W menu znajdującym się po lewej stronie w witrynie Azure Portal wybierz pozycję **Grupy zasobów**, a następnie wybierz pozycję **myResourceGroup**.
+W menu znajdującym się po lewej stronie w witrynie Azure Portal wybierz pozycję **Grupy zasobów** , a następnie wybierz pozycję **myResourceGroup**.
 Na stronie grupy zasobów upewnij się, że zasoby na liście są tymi, które chcesz usunąć.
-Wybierz pozycję **Usuń**, wpisz ciąg **myResourceGroup** w polu tekstowym, a następnie wybierz opcję **Usuń**.
+Wybierz pozycję **Usuń** , wpisz ciąg **myResourceGroup** w polu tekstowym, a następnie wybierz opcję **Usuń**.
 
 ## <a name="next-steps"></a>Następne kroki
 

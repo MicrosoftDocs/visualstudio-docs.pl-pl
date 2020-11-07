@@ -1,5 +1,6 @@
 ---
 title: Określ pełne pliki dziennika (wdrożenia ClickOnce)
+description: Dowiedz się, jak określić szczegółowość dzienników aktywności, które są obsługiwane przez ClickOnce na potrzeby instalowania, inicjowania, aktualizowania i odinstalowywania wdrożenia technologii ClickOnce.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,15 +17,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54c90f6a544607e78dd8f294bfc307bc87377b70
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 0da285cfef49bd495fbecf39131e49cacd0476a5
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808714"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350923"
 ---
 # <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>Instrukcje: Określanie pełnych plików dziennika dla wdrożeń ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] przechowuje pliki dziennika aktywności dla wszystkich wdrożeń. Te dzienniki zawierają szczegółowe informacje dotyczące instalowania, inicjowania, aktualizowania i odinstalowywania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia. Aby zwiększyć szczegóły, które [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zapisuje w tych plikach dziennika, użyj Edytora rejestru (*regedit.exe*), aby określić poziom szczegółowości.
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] przechowuje pliki dziennika aktywności dla wszystkich wdrożeń. Te dzienniki zawierają szczegółowe informacje dotyczące instalowania, inicjowania, aktualizowania i odinstalowywania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia. Aby zwiększyć szczegóły, które [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zapisuje w tych plikach dziennika, użyj Edytora rejestru ( *regedit.exe* ), aby określić poziom szczegółowości.
 
 > [!CAUTION]
 > Jeśli używasz edytora rejestru nieprawidłowo, może to spowodować poważne problemy, które mogą wymagać ponownego zainstalowania systemu operacyjnego. Korzystanie z edytora rejestru na własne ryzyko.
@@ -35,7 +36,7 @@ ms.locfileid: "90808714"
 
 1. Otwórz *Regedit.exe*.
 
-2. Przejdź do węzła **HKEY_CURRENT_USER \software\classes\software\microsoft\windows\currentversion\deployment**.
+2. Przejdź do węzła **HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment**.
 
 3. W razie potrzeby utwórz nową wartość ciągu o nazwie `LogVerbosityLevel` .
 

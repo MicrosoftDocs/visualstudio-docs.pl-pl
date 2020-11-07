@@ -1,5 +1,7 @@
 ---
 title: Włącz ustawienia zabezpieczeń ClickOnce | Microsoft Docs
+description: Dowiedz się, jak Kreator publikowania automatycznie włącza zabezpieczenia dostępu kodu dla aplikacji ClickOnce w celu opublikowania aplikacji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f407ac42dc9997215bfe6682bb8b974b78c7847
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: db31d0182c598b32933cf2d4260706a2252a9b6f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90850933"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351170"
 ---
 # <a name="how-to-enable-clickonce-security-settings"></a>Instrukcje: Włączanie ustawień zabezpieczeń technologii ClickOnce
 Aby można było opublikować aplikację, należy włączyć zabezpieczenia dostępu kodu dla aplikacji ClickOnce. Jest to wykonywane automatycznie podczas publikowania aplikacji przy użyciu Kreatora publikacji.
@@ -32,7 +34,7 @@ Aby można było opublikować aplikację, należy włączyć zabezpieczenia dost
 
 ### <a name="to-enable-clickonce-security-settings"></a>Aby włączyć ustawienia zabezpieczeń ClickOnce
 
-1. Po wybraniu projektu w **Eksplorator rozwiązań**, w menu **projekt** kliknij polecenie **Właściwości**.
+1. Po wybraniu projektu w **Eksplorator rozwiązań** , w menu **projekt** kliknij polecenie **Właściwości**.
 
 2. Kliknij kartę **Zabezpieczenia**.
 
@@ -45,7 +47,7 @@ Aby można było opublikować aplikację, należy włączyć zabezpieczenia dost
 
 ### <a name="to-disable-clickonce-security-settings"></a>Aby wyłączyć ustawienia zabezpieczeń ClickOnce
 
-1. Po wybraniu projektu w **Eksplorator rozwiązań**, w menu **projekt** kliknij polecenie **Właściwości**.
+1. Po wybraniu projektu w **Eksplorator rozwiązań** , w menu **projekt** kliknij polecenie **Właściwości**.
 
 2. Kliknij kartę **Zabezpieczenia**.
 
@@ -56,6 +58,6 @@ Aby można było opublikować aplikację, należy włączyć zabezpieczenia dost
     > [!NOTE]
     > Za każdym razem, gdy aplikacja jest publikowana przy użyciu Kreatora publikacji, to pole wyboru zostanie zaznaczone. należy wyczyścić ją ponownie po każdym pomyślnym opublikowaniu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Zabezpieczanie aplikacji ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Zabezpieczenia dostępu kodu dla aplikacji ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)

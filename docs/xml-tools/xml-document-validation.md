@@ -1,5 +1,7 @@
 ---
 title: Sprawdzanie poprawności dokumentu XML w edytorze XML
+description: Dowiedz się więcej o walidacji dokumentów XML w edytorze XML i sposobie sprawdzania składni XML 1,0 i przeprowadzania walidacji danych podczas wpisywania.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: abb353bd-6c4a-4978-b03b-a8c245bbfb55
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 389328e97f29d97962353e86f73c39c7c5459bfc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ec38cb416f764990252b1e58c2322bea8be94d15
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592415"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351456"
 ---
 # <a name="xml-document-validation"></a>Walidacja dokumentów XML
 

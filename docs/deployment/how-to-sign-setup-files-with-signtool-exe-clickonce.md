@@ -1,5 +1,6 @@
 ---
 title: Podpisywanie plików instalacyjnych przy użyciu narzędzia SignTool.exe (ClickOnce)
+description: Dowiedz się, jak za pomocą SignTool.exe podpisać program instalacyjny aplikacji ClickOnce, co pomaga zapewnić, że naruszone pliki nie są zainstalowane.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -19,15 +20,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 138e84637acb123c445839dc4810547ed8bc2ed3
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: d8907018c7f5b131747e802902d88a02ca95c2cc
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809508"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350975"
 ---
 # <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Instrukcje: podpisywanie plików instalacyjnych za pomocą SignTool.exe (ClickOnce)
-Za pomocą *SignTool.exe* można podpisać program instalacyjny (*setup.exe*). Ten proces zapewnia, że naruszone pliki nie są zainstalowane na komputerach użytkowników końcowych.
+Za pomocą *SignTool.exe* można podpisać program instalacyjny ( *setup.exe* ). Ten proces zapewnia, że naruszone pliki nie są zainstalowane na komputerach użytkowników końcowych.
 
  Domyślnie technologia ClickOnce ma podpisane manifesty i podpisany program instalacyjny. Jeśli jednak chcesz zmienić parametry programu instalacyjnego później, należy podpisać program instalacyjny później. Jeśli zmienisz parametry po podpisaniu programu instalacyjnego, podpis zostanie uszkodzony.
 

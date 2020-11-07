@@ -1,5 +1,7 @@
 ---
 title: Edytor XML
+description: Dowiedz się więcej o edytorze XML w programie Visual Studio, który jest oparty na edytorze tekstów i zawiera dodatkowe wsparcie dla języków XML.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 550dcb0cc3299a4a1b884d3141761c39977ce088
-ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
+ms.openlocfilehash: 1bd1cac1c688bf2efc0a4c08797d72eabf0133e2
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90713545"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351443"
 ---
 # <a name="xml-editor"></a>Edytor XML
 
@@ -32,7 +34,7 @@ Edytor XML zawiera następujące funkcje:
 
 - Tworzenie schematu XML na podstawie dokumentu wystąpienia XML.
 
-- Konwertowanie schematu DTD lub danych XML (XDR) na schemat XML.
+- Konwertowanie schematu DTD lub XML-Data zredukowane (XDR) do schematu XML.
 
 - Sprawdzanie składni XSLT.
 
@@ -40,7 +42,7 @@ Edytor XML zawiera następujące funkcje:
 
 - Integracja z [Eksploratorem schematu XML](../xml-tools/xml-schema-explorer.md). Zapewnia to hierarchiczna widok schematów XML.
 
-Edytor XML jest wywoływany dla dobrze znanych rozszerzeń plików, takich jak *. XML*, *XSD*, *XSL*i *. config*. Jest również wywoływana na dowolnym nieznanym rozszerzeniu pliku, jeśli plik wydaje się zawierać XML.
+Edytor XML jest wywoływany dla dobrze znanych rozszerzeń plików, takich jak *. XML* , *XSD* , *XSL* i *. config*. Jest również wywoływana na dowolnym nieznanym rozszerzeniu pliku, jeśli plik wydaje się zawierać XML.
 
 ## <a name="xslt-intellisense"></a>Funkcja IntelliSense XSLT
 

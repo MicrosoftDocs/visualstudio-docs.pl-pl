@@ -1,5 +1,6 @@
 ---
 title: Określanie strony publikowania (Aplikacja ClickOnce)
+description: Dowiedz się, jak ustawić właściwość publikowanie strony dla projektu, co pozwala na określenie strony sieci Web dla aplikacji ClickOnce.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70f9853f6e15cb6d960e02491539f031bc1c44a1
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: ecf70f5ffdd81688943892c06fdf98aae73d6c57
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808779"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350962"
 ---
 # <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>Instrukcje: Określanie strony publikowania dla aplikacji ClickOnce
 Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji domyślna strona sieci Web (publish.htm) jest generowana i publikowana razem z aplikacją. Ta strona zawiera nazwę aplikacji, link do zainstalowania aplikacji i/lub wymagania wstępne oraz link do tematu pomocy opisującego [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . Właściwość **Publikowanie strony** dla projektu pozwala określić nazwę strony sieci Web [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji.
@@ -34,7 +35,7 @@ Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_m
 
 ### <a name="to-specify-a-custom-web-page-for-a-clickonce-application"></a>Aby określić niestandardową stronę sieci Web dla aplikacji ClickOnce
 
-1. Po wybraniu projektu w **Eksplorator rozwiązań**, w menu **projekt** kliknij polecenie **Właściwości**.
+1. Po wybraniu projektu w **Eksplorator rozwiązań** , w menu **projekt** kliknij polecenie **Właściwości**.
 
 2. Wybierz okienko **Publikowanie** .
 
@@ -48,7 +49,7 @@ Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_m
 
 ### <a name="to-prevent-the-publish-page-from-launching-each-time-you-publish"></a>Aby zapobiec uruchamianiu strony publikowania przy każdym publikowaniu
 
-1. Po wybraniu projektu w **Eksplorator rozwiązań**, w menu **projekt** kliknij polecenie **Właściwości**.
+1. Po wybraniu projektu w **Eksplorator rozwiązań** , w menu **projekt** kliknij polecenie **Właściwości**.
 
 2. Wybierz okienko **Publikowanie** .
 

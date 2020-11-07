@@ -1,5 +1,7 @@
 ---
 title: Zagadnienia dotyczące zabezpieczeń podczas pracy z danymi XML
+description: Informacje o kwestiach dotyczących zabezpieczeń podczas pracy z danymi XML w edytorze XML lub debugerze XSLT.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: fce2b708-1aef-454f-be59-52b76f359351
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e18d2c2e47c3cc1f7e1b3be0112e49e2710e45c8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8d9e98e18e3e01f53afa6b0a9ea3bdec94f2186f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815841"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351352"
 ---
 # <a name="security-considerations-when-working-with-xml-data"></a>Zagadnienia dotyczące zabezpieczeń podczas pracy z danymi XML
 
@@ -23,7 +25,7 @@ W tym temacie omówiono problemy związane z zabezpieczeniami, które należy zn
 
 Edytor XML jest oparty na edytorze tekstu programu Visual Studio. Opiera się on na <xref:System.Xml> <xref:System.Xml.Xsl> klasach i obsługujących wiele procesów XML.
 
-- Przekształcenia XSLT są wykonywane w nowej domenie aplikacji. Przekształcenia XSLT są w *trybie piaskownicy*; oznacza to, że zasady zabezpieczeń dostępu kodu komputera są używane do określania ograniczonych uprawnień na podstawie lokalizacji arkusza stylów XSLT. Na przykład arkusze stylów z lokalizacji internetowej mają najbardziej ograniczone uprawnienia, a arkusze stylów skopiowane na dysk twardy są uruchamiane z pełnym zaufaniem.
+- Przekształcenia XSLT są wykonywane w nowej domenie aplikacji. Przekształcenia XSLT są w *trybie piaskownicy* ; oznacza to, że zasady zabezpieczeń dostępu kodu komputera są używane do określania ograniczonych uprawnień na podstawie lokalizacji arkusza stylów XSLT. Na przykład arkusze stylów z lokalizacji internetowej mają najbardziej ograniczone uprawnienia, a arkusze stylów skopiowane na dysk twardy są uruchamiane z pełnym zaufaniem.
 
 - <xref:System.Xml.Xsl.XslCompiledTransform>Klasa jest używana do kompilowania XSLT do języka pośredniego firmy Microsoft w celu zwiększenia wydajności podczas wykonywania.
 

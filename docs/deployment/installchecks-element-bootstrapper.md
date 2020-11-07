@@ -1,5 +1,7 @@
 ---
 title: '&lt;InstallChecks — &gt; element (program inicjujący) | Microsoft Docs'
+description: Element InstallChecks obsługuje uruchamianie różnych testów na komputerze lokalnym, aby upewnić się, że wszystkie wymagania wstępne dotyczące aplikacji zostały zainstalowane.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7ba4da072a586bdc09993b77200a769be3940ab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 660fc893eb22d0c40805a8bf7b2efc86fd83c3b1
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536308"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350871"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks — &gt; element (program inicjujący)
 `InstallChecks`Element obsługuje uruchamianie różnych testów na komputerze lokalnym, aby upewnić się, że zostały zainstalowane wszystkie odpowiednie wymagania wstępne dotyczące aplikacji.
@@ -74,10 +76,10 @@ ms.locfileid: "85536308"
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`Property`|Wymagany. Nazwa właściwości do przechowywania wyniku. Do tej właściwości można odwoływać się z testu poniżej `InstallConditions` elementu, który jest elementem podrzędnym `Command` elementu. Aby uzyskać więcej informacji, zobacz [ \<Commands> element](../deployment/commands-element-bootstrapper.md).|
-|`Name`|Wymagany. W pełni kwalifikowana nazwa zestawu do sprawdzenia.|
-|`PublicKeyToken`|Wymagany. Skrócona forma klucza publicznego skojarzonego z tym silnie nazwanym zestawem. Wszystkie zestawy przechowywane w pamięci podręcznej GAC muszą mieć nazwę, wersję i klucz publiczny.|
-|`Version`|Wymagany. Wersja zestawu.<br /><br /> Numer wersji ma format \<*major version*> . \<*minor version*> . \<*build version*> . \<*revision version*>|
+|`Property`|Wymagane. Nazwa właściwości do przechowywania wyniku. Do tej właściwości można odwoływać się z testu poniżej `InstallConditions` elementu, który jest elementem podrzędnym `Command` elementu. Aby uzyskać więcej informacji, zobacz [ \<Commands> element](../deployment/commands-element-bootstrapper.md).|
+|`Name`|Wymagane. W pełni kwalifikowana nazwa zestawu do sprawdzenia.|
+|`PublicKeyToken`|Wymagane. Skrócona forma klucza publicznego skojarzonego z tym silnie nazwanym zestawem. Wszystkie zestawy przechowywane w pamięci podręcznej GAC muszą mieć nazwę, wersję i klucz publiczny.|
+|`Version`|Wymagane. Wersja zestawu.<br /><br /> Numer wersji ma format \<*major version*> . \<*minor version*> . \<*build version*> . \<*revision version*>|
 |`Language`|Opcjonalny. Język zlokalizowanego zestawu. Wartość domyślna to `neutral`.|
 |`ProcessorArchitecture`|Opcjonalny. Procesor komputera przeznaczony dla tej instalacji. Wartość domyślna to `msil`.|
 
@@ -88,8 +90,8 @@ ms.locfileid: "85536308"
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`Property`|Wymagany. Nazwa właściwości do przechowywania wyniku. Do tej właściwości można odwoływać się z testu poniżej `InstallConditions` elementu, który jest elementem podrzędnym `Command` elementu. Aby uzyskać więcej informacji, zobacz [ \<Commands> element](../deployment/commands-element-bootstrapper.md).|
-|`PackageFile`|Wymagany. Program zewnętrzny do wykonania. Program musi być częścią pakietu dystrybucji Instalatora.|
+|`Property`|Wymagane. Nazwa właściwości do przechowywania wyniku. Do tej właściwości można odwoływać się z testu poniżej `InstallConditions` elementu, który jest elementem podrzędnym `Command` elementu. Aby uzyskać więcej informacji, zobacz [ \<Commands> element](../deployment/commands-element-bootstrapper.md).|
+|`PackageFile`|Wymagane. Program zewnętrzny do wykonania. Program musi być częścią pakietu dystrybucji Instalatora.|
 |`Arguments`|Opcjonalny. Dostarcza argumenty wiersza polecenia do pliku wykonywalnego o nazwie przez `PackageFile` .|
 
 ## <a name="filecheck"></a>FileCheck
@@ -99,9 +101,9 @@ ms.locfileid: "85536308"
 
 | Atrybut | Opis |
 |-----------------| - |
-| `Property` | Wymagany. Nazwa właściwości do przechowywania wyniku. Do tej właściwości można odwoływać się z testu poniżej `InstallConditions` elementu, który jest elementem podrzędnym `Command` elementu. Aby uzyskać więcej informacji, zobacz [ \<Commands> element](../deployment/commands-element-bootstrapper.md). |
-| `FileName` | Wymagany. Nazwa pliku do wyszukania. |
-| `SearchPath` | Wymagany. Dysk lub folder, w którym ma być wyszukiwany plik. Ta wartość musi być ścieżką względną `SpecialFolder` , jeśli jest przypisana; w przeciwnym razie musi być ścieżką bezwzględną. |
+| `Property` | Wymagane. Nazwa właściwości do przechowywania wyniku. Do tej właściwości można odwoływać się z testu poniżej `InstallConditions` elementu, który jest elementem podrzędnym `Command` elementu. Aby uzyskać więcej informacji, zobacz [ \<Commands> element](../deployment/commands-element-bootstrapper.md). |
+| `FileName` | Wymagane. Nazwa pliku do wyszukania. |
+| `SearchPath` | Wymagane. Dysk lub folder, w którym ma być wyszukiwany plik. Ta wartość musi być ścieżką względną `SpecialFolder` , jeśli jest przypisana; w przeciwnym razie musi być ścieżką bezwzględną. |
 | `SpecialFolder` | Opcjonalny. Folder, który ma specjalne znaczenie dla systemu Windows lub [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . Wartością domyślną jest interpretowanie `SearchPath` jako ścieżki bezwzględnej. Prawidłowe wartości to:<br /><br /> `AppDataFolder`. Folder dane aplikacji dla tej [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji; określony dla bieżącego użytkownika.<br /><br /> `CommonAppDataFolder`. Folder danych aplikacji używany przez wszystkich użytkowników.<br /><br /> `CommonFilesFolder`. Folder Common Files dla bieżącego użytkownika.<br /><br /> `LocalDataAppFolder`. Folder danych dla aplikacji niemobilnych.<br /><br /> `ProgramFilesFolder`. Folder Program Files w warstwie Standardowa dla aplikacji 32-bitowych.<br /><br /> `StartUpFolder`. Folder zawierający wszystkie aplikacje, które są uruchamiane podczas uruchamiania systemu.<br /><br /> `SystemFolder`. Folder zawierający 32-bitowe systemowe biblioteki DLL.<br /><br /> `WindowsFolder`. Folder zawierający instalację systemu Windows.<br /><br /> `WindowsVolume`. Dysk lub partycja zawierająca instalację systemu Windows. |
 | `SearchDepth` | Opcjonalny. Głębokość przeszukiwania podfolderów dla nazwanego pliku. Wyszukiwanie jest głębokością — najpierw. Wartość domyślna to 0, co ogranicza wyszukiwanie do folderu najwyższego poziomu określonego przez `SpecialFolder` i **SearchPath**. |
 
@@ -112,8 +114,8 @@ ms.locfileid: "85536308"
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`Property`|Wymagany. Nazwa właściwości do przechowywania wyniku. Do tej właściwości można odwoływać się z testu poniżej `InstallConditions` elementu, który jest elementem podrzędnym `Command` elementu. Aby uzyskać więcej informacji, zobacz [ \<Commands> element](../deployment/commands-element-bootstrapper.md).|
-|`Product`|Wymagany. Identyfikator GUID zainstalowanego produktu.|
+|`Property`|Wymagane. Nazwa właściwości do przechowywania wyniku. Do tej właściwości można odwoływać się z testu poniżej `InstallConditions` elementu, który jest elementem podrzędnym `Command` elementu. Aby uzyskać więcej informacji, zobacz [ \<Commands> element](../deployment/commands-element-bootstrapper.md).|
+|`Product`|Wymagane. Identyfikator GUID zainstalowanego produktu.|
 |`Feature`|Opcjonalny. Identyfikator GUID określonej funkcji zainstalowanej aplikacji.|
 
 ## <a name="registrycheck"></a>RegistryCheck
@@ -123,8 +125,8 @@ ms.locfileid: "85536308"
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`Property`|Wymagany. Nazwa właściwości do przechowywania wyniku. Do tej właściwości można odwoływać się z testu poniżej `InstallConditions` elementu, który jest elementem podrzędnym `Command` elementu. Aby uzyskać więcej informacji, zobacz [ \<Commands> element](../deployment/commands-element-bootstrapper.md).|
-|`Key`|Wymagany. Nazwa klucza rejestru.|
+|`Property`|Wymagane. Nazwa właściwości do przechowywania wyniku. Do tej właściwości można odwoływać się z testu poniżej `InstallConditions` elementu, który jest elementem podrzędnym `Command` elementu. Aby uzyskać więcej informacji, zobacz [ \<Commands> element](../deployment/commands-element-bootstrapper.md).|
+|`Key`|Wymagane. Nazwa klucza rejestru.|
 |`Value`|Opcjonalny. Nazwa wartości rejestru do pobrania. Wartością domyślną jest zwrócenie tekstu wartości domyślnej. `Value` musi być ciągiem lub DWORD.|
 
 ## <a name="registryfilecheck"></a>RegistryFileCheck
@@ -134,8 +136,8 @@ ms.locfileid: "85536308"
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`Property`|Wymagany. Nazwa właściwości do przechowywania wyniku. Do tej właściwości można odwoływać się z testu poniżej `InstallConditions` elementu, który jest elementem podrzędnym `Command` elementu. Aby uzyskać więcej informacji, zobacz [ \<Commands> element](../deployment/commands-element-bootstrapper.md).|
-|`Key`|Wymagany. Nazwa klucza rejestru. Jego wartość jest interpretowana jako ścieżka do pliku, chyba że `File` atrybut jest ustawiony. Jeśli ten klucz nie istnieje, `Property` nie jest ustawiony.|
+|`Property`|Wymagane. Nazwa właściwości do przechowywania wyniku. Do tej właściwości można odwoływać się z testu poniżej `InstallConditions` elementu, który jest elementem podrzędnym `Command` elementu. Aby uzyskać więcej informacji, zobacz [ \<Commands> element](../deployment/commands-element-bootstrapper.md).|
+|`Key`|Wymagane. Nazwa klucza rejestru. Jego wartość jest interpretowana jako ścieżka do pliku, chyba że `File` atrybut jest ustawiony. Jeśli ten klucz nie istnieje, `Property` nie jest ustawiony.|
 |`Value`|Opcjonalny. Nazwa wartości rejestru do pobrania. Wartością domyślną jest zwrócenie tekstu wartości domyślnej. `Value` musi być ciągiem.|
 |`FileName`|Opcjonalny. Nazwa pliku. Jeśli jest określony, zakłada się, że wartość uzyskana z klucza rejestru jest ścieżką katalogu, a ta nazwa jest dołączana do niej. Jeśli nie zostanie określony, przyjmuje się, że wartość zwracana z rejestru jest pełną ścieżką do pliku.|
 |`SearchDepth`|Opcjonalny. Głębokość przeszukiwania podfolderów dla nazwanego pliku. Wyszukiwanie jest głębokością — najpierw. Wartością domyślną jest 0, która ogranicza wyszukiwanie do folderu najwyższego poziomu określonego przez wartość klucza rejestru.|

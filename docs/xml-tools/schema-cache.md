@@ -1,5 +1,7 @@
 ---
 title: Pamięć podręczna schematu edytora XML
+description: Informacje o pamięci podręcznej schematu udostępnionej przez Edytor XML, który zawiera standardowe schematy XML używane do sprawdzania poprawności kodu IntelliSense i dokumentu XML.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 35a7fcad-f3bf-4a96-9008-4306e7276223
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40781a5249d9b69df5f41f863f3d36ac6a119645
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d3eaab4379d744bae0032e51995e5bc1b8e76423
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592493"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351378"
 ---
 # <a name="schema-cache"></a>Pamięć podręczna schematów
 
@@ -112,7 +114,7 @@ Lokalizację pamięci podręcznej schematu można dostosować za pomocą strony 
 
 1. W menu **Narzędzia** wybierz pozycję **Opcje**.
 
-2. Rozwiń węzeł **Edytor tekstu**, rozwiń pozycję **XML**, a następnie kliknij pozycję **różne**.
+2. Rozwiń węzeł **Edytor tekstu** , rozwiń pozycję **XML** , a następnie kliknij pozycję **różne**.
 
 3. Kliknij przycisk **Przeglądaj** w polu **schematy** .
 

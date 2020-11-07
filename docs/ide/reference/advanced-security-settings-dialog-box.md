@@ -1,5 +1,7 @@
 ---
 title: Zaawansowane ustawienia zabezpieczeń — Okno dialogowe
+description: Zaawansowane ustawienia zabezpieczeń — okno dialogowe pozwala określić ustawienia zabezpieczeń związane z debugowaniem w strefie.
+ms.custom: SEO-VS-2020
 ms.date: 06/27/2018
 ms.technology: vs-ide-deployment
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d34d1b16f36c90f4200a091050d1646fc563d33
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffbf2bb5a8a73ba577489af825969c3bdc23f15e
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419084"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351508"
 ---
 # <a name="advanced-security-settings-dialog-box"></a>Zaawansowane ustawienia zabezpieczeń — Okno dialogowe
 
@@ -26,7 +28,7 @@ To okno dialogowe umożliwia określenie ustawień zabezpieczeń związanych z d
 
 ![Zaawansowane ustawienia zabezpieczeń — okno dialogowe w programie Visual Studio](../media/advanced-security-settings.png)
 
-Aby uzyskać dostęp do tego okna dialogowego, wybierz węzeł projektu w **Eksplorator rozwiązań**, a następnie w menu **projekt** kliknij polecenie **Właściwości**. Gdy zostanie wyświetlony **Projektant projektu** , kliknij kartę **zabezpieczenia** . Na stronie **zabezpieczenia** wybierz opcję **Włącz ustawienia zabezpieczeń ClickOnce**, kliknij **to jest aplikacja częściowej relacji zaufania**, a następnie kliknij przycisk **Zaawansowane**.
+Aby uzyskać dostęp do tego okna dialogowego, wybierz węzeł projektu w **Eksplorator rozwiązań** , a następnie w menu **projekt** kliknij polecenie **Właściwości**. Gdy zostanie wyświetlony **Projektant projektu** , kliknij kartę **zabezpieczenia** . Na stronie **zabezpieczenia** wybierz opcję **Włącz ustawienia zabezpieczeń ClickOnce** , kliknij **to jest aplikacja częściowej relacji zaufania** , a następnie kliknij przycisk **Zaawansowane**.
 
 ## <a name="uielement-list"></a>Lista elementów UIElement
 

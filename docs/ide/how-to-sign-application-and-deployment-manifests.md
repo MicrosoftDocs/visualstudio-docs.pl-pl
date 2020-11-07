@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: podpisywanie aplikacji i manifestów wdrożenia'
+description: Informacje o wymaganiach dotyczących podpisywania na potrzeby publikowania aplikacji ClickOnce i manifestów wdrożenia. Podpisywanie jest opcjonalne dla aplikacji opartych na programie. exe.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
 ms.topic: conceptual
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e04827dd8d8d393af8bc3448df75a7503c8eec3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a267a64a6b6d59b64ffb70596154d1e54f368410
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769785"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351274"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Instrukcje: podpisywanie aplikacji i manifestów wdrożenia
 
@@ -40,14 +42,14 @@ Aby uzyskać informacje na temat tworzenia plików kluczy, zobacz [How to: Creat
 
 ## <a name="sign-using-a-certificate"></a>Logowanie przy użyciu certyfikatu
 
-1. Przejdź do okna właściwości projektu (kliknij prawym przyciskiem myszy węzeł projektu w **Eksplorator rozwiązań** i wybierz polecenie **Właściwości**). Na karcie **podpisywanie** wybierz pole wyboru **Podpisz manifesty ClickOnce** .
+1. Przejdź do okna właściwości projektu (kliknij prawym przyciskiem myszy węzeł projektu w **Eksplorator rozwiązań** i wybierz polecenie **Właściwości** ). Na karcie **podpisywanie** wybierz pole wyboru **Podpisz manifesty ClickOnce** .
 
 2. Kliknij przycisk **Wybierz ze sklepu** .
 
      Zostanie wyświetlone okno dialogowe **Wybierz certyfikat** i zostanie wyświetlona zawartość magazynu certyfikatów systemu Windows.
 
     > [!TIP]
-    > Jeśli klikniesz **pozycję kliknij tutaj, aby wyświetlić właściwości certyfikatu**, zostanie wyświetlone okno dialogowe **Szczegóły certyfikatu** . To okno dialogowe zawiera szczegółowe informacje o certyfikacie i opcjach dodatkowych. Kliknij pozycję **Certyfikaty** , aby wyświetlić dodatkowe informacje pomocy.
+    > Jeśli klikniesz **pozycję kliknij tutaj, aby wyświetlić właściwości certyfikatu** , zostanie wyświetlone okno dialogowe **Szczegóły certyfikatu** . To okno dialogowe zawiera szczegółowe informacje o certyfikacie i opcjach dodatkowych. Kliknij pozycję **Certyfikaty** , aby wyświetlić dodatkowe informacje pomocy.
 
 3. Wybierz certyfikat, którego chcesz użyć do podpisania manifestów.
 
@@ -61,7 +63,7 @@ Aby uzyskać informacje na temat tworzenia plików kluczy, zobacz [How to: Creat
 
      Zostanie wyświetlone okno dialogowe **Wybierz plik** .
 
-3. W oknie dialogowym **Wybierz plik** przejdź do lokalizacji pliku klucza (*PFX*), którego chcesz użyć, a następnie kliknij przycisk **Otwórz**.
+3. W oknie dialogowym **Wybierz plik** przejdź do lokalizacji pliku klucza ( *PFX* ), którego chcesz użyć, a następnie kliknij przycisk **Otwórz**.
 
     > [!NOTE]
     > Ta opcja obsługuje tylko pliki z rozszerzeniem *PFX* . Jeśli masz plik klucza lub certyfikat w innym formacie, Zapisz go w magazynie certyfikatów systemu Windows i wybierz certyfikat opisany w poprzedniej procedurze. Wybrany cel certyfikatu powinien obejmować podpisywanie kodu.

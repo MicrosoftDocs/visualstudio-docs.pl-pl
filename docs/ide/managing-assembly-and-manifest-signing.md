@@ -1,5 +1,7 @@
 ---
 title: Zarządzanie podpisywaniem zestawu i manifestu
+description: Dowiedz się więcej o zaletach podpisywania silnej nazwy, co daje składnikowi oprogramowania unikatową tożsamość.
+ms.custom: SEO-VS-2020
 ms.date: 02/17/2017
 ms.technology: vs-ide-deployment
 ms.topic: conceptual
@@ -14,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a17ce633515979ca7a3fd3ac5a7e1d8802996944
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bdd2570f94b0f5577c7c09a696906338245f77a4
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770412"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351391"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>Zarządzanie podpisywaniem zestawu i manifestu
 
@@ -38,13 +40,13 @@ Aby uzyskać informacje o podpisywaniu zestawów w projektach języka C++, zobac
 
 Można podpisywać zestawy .NET i manifesty aplikacji:
 
-- Pliki wykonywalne (*. exe*)
+- Pliki wykonywalne ( *. exe* )
 
-- Manifesty aplikacji (*. exe. manifest*)
+- Manifesty aplikacji ( *. exe. manifest* )
 
-- Manifesty wdrożenia (*. Application*)
+- Manifesty wdrożenia ( *. Application* )
 
-- Współużytkowane zestawy składników (*. dll*)
+- Współużytkowane zestawy składników ( *. dll* )
 
 Podpisz następujące typy zasobów:
 
@@ -58,7 +60,7 @@ Ogólnie rzecz biorąc nie należy podpisywać plików wykonywalnych. Silnie naz
 
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>Jak podpisać zestaw w programie Visual Studio
 
-Aplikację lub składnik należy podpisać przy użyciu karty **podpisywanie** okna właściwości projektu (kliknij prawym przyciskiem myszy węzeł projektu w **Eksplorator rozwiązań** i wybierz polecenie **Właściwości**). Wybierz kartę **podpisywanie** , a następnie zaznacz pole wyboru **podpisz zestaw**  .
+Aplikację lub składnik należy podpisać przy użyciu karty **podpisywanie** okna właściwości projektu (kliknij prawym przyciskiem myszy węzeł projektu w **Eksplorator rozwiązań** i wybierz polecenie **Właściwości** ). Wybierz kartę **podpisywanie** , a następnie zaznacz pole wyboru **podpisz zestaw**  .
 
 Określ plik klucza. Jeśli zdecydujesz się utworzyć nowy plik klucza, nowe pliki kluczy są zawsze tworzone w formacie *PFX* . Musisz mieć nazwę i hasło dla nowego pliku.
 
