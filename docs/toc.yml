@@ -414,12 +414,16 @@
                   href: ide/reference/datetime-timespan-completion.md
                 - name: Hermetyzowanie pola
                   href: ide/reference/encapsulate-field.md
+                - name: Wyodrębnianie klasy bazowej
+                  href: ide/reference/extract-base-class.md
                 - name: Wyodrębnianie interfejsu
                   href: ide/reference/extract-interface.md
                 - name: Wyodrębnianie metody
                   href: ide/reference/extract-method.md
                 - name: Wyodrębnianie funkcji lokalnej
                   href: ide/reference/extract-local-function.md
+                - name: Metoda śródwierszowa
+                  href: ide/reference/inline-method.md
                 - name: Śródwierszowa zmienna tymczasowa
                   href: ide/reference/inline-temporary-variable.md
                 - name: Uzupełnianie IntelliSense dla niezaimportowanych typów i metod rozszerzenia
@@ -428,8 +432,8 @@
                   href: ide/reference/invert-conditional-logical.md
                 - name: Odwracanie instrukcji If
                   href: ide/reference/invert-if-statement.md
-                - name: Opcje refaktoryzacji statycznej funkcji lokalnej
-                  href: ide/reference/static-local-function-refactor-options.md
+                - name: Zmiana klasy na abstrakcyjną
+                  href: ide/reference/make-class-abstract.md
                 - name: Ustawianie elementu członkowskiego jako statycznego
                   href: ide/reference/make-member-static.md
                 - name: Przenoszenie deklaracji blisko odwołania
@@ -456,6 +460,8 @@
                   href: ide/reference/sort-usings.md
                 - name: Dzielenie i scalanie instrukcji if
                   href: ide/reference/split-or-merge-if-statement.md
+                - name: Opcje refaktoryzacji statycznej funkcji lokalnej
+                  href: ide/reference/static-local-function-refactor-options.md
                 - name: Synchronizowanie przestrzeni nazw i nazwy folderu
                   href: ide/reference/sync-namespace-and-folder-name.md
                 - name: Synchronizacja typu i nazwy pliku
@@ -464,6 +470,10 @@
                   href: ide/reference/convert-var-to-explicit-type.md
                 - name: Używanie wyrażenia lambda lub treści bloku
                   href: ide/reference/use-block-body-lambda.md
+                - name: Używanie instrukcji new()
+                  href: ide/reference/use-new.md
+                - name: Korzystanie z dopasowania do wzorca
+                  href: ide/reference/use-pattern-matching.md
                 - name: 'Nieużywane przypisania wartości, zmienne i parametry'
                   href: ide/reference/unused-values-parameters.md
                 - name: 'Opakowywanie, wcięcia i wyrównywanie refaktoryzacji'
@@ -966,7 +976,7 @@
       href: ide/reference/accessibility-tips-and-tricks.md
     - name: Produkty i usługi firmy Microsoft związane z ułatwieniami dostępu
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: Dokumentacja
+- name: Tematy pomocy
   items:
     - name: Skróty klawiaturowe
       items:
