@@ -1,5 +1,7 @@
 ---
 title: Zabezpieczenia dostępu kodu dla aplikacji ClickOnce | Microsoft Docs
+description: Dowiedz się więcej o zabezpieczeniach dostępu kodu dla aplikacji ClickOnce i jak skonfigurować uprawnienia zabezpieczeń dostępu kodu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fd2d9b6792cae002967c9000474a825bd3a0651
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 256a41138a3918dd61d8fd496465bb0230fb9362
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649278"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382575"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>Zabezpieczenia dostępu kodu dla aplikacji ClickOnce
 Aplikacje ClickOnce są oparte na .NET Framework i podlegają ograniczeniom zabezpieczeń dostępu kodu. Z tego powodu ważne jest, aby zrozumieć skutki zabezpieczenia dostępu kodu i odpowiednio napisać aplikacje ClickOnce.

@@ -1,6 +1,6 @@
 ---
 title: Typy właściwości nie są zgodne
-description: Nie można utworzyć skojarzenia — typy właściwości nie są zgodne.
+description: Nie można utworzyć skojarzenia — typy właściwości nie są zgodne. Wyświetl informacje o tym komunikacie Object Relational Designer programu Visual Studio (Projektant O/R).
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: 97ec5a04-6e23-45a2-9226-d77ead854392
@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 76d61361677923afda6125db1ae819a460a567f4
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: bce5a285f3bccdc2be8004f0eba4546bb7964a42
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743190"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382055"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>Nie można utworzyć &lt; nazwy skojarzenia skojarzenia &gt; — typy właściwości nie są zgodne.
 
@@ -32,9 +32,9 @@ Właściwości wymienione w komunikacie nie mają tych samych typów danych.
 
 3. Sprawdź **właściwości skojarzenia** i wybierz właściwości tego samego typu danych.
 
-4. Kliknij pozycję **OK**.
+4. Kliknij przycisk **OK**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Narzędzia LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Instrukcje: Tworzenie skojarzenia między klasami LINQ to SQL (Projektant O/R)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)

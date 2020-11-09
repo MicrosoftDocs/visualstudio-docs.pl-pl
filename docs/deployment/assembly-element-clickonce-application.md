@@ -1,5 +1,7 @@
 ---
 title: '&lt;Assembly — &gt; element (Aplikacja ClickOnce) | Microsoft Docs'
+description: Element Assembly jest elementem głównym i jest wymagany w aplikacji ClickOnce. Jego pierwszy element zawarty musi być elementem assemblyIdentity.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b629243920021adc3833f43f268f05638029dc7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0c3614cd2d4fc0e6a5eebfb8dc6911e6eb183c01
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900763"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383225"
 ---
 # <a name="ltassemblygt-element-clickonce-application"></a>&lt;Assembly — &gt; element (Aplikacja ClickOnce)
 Element najwyższego poziomu dla manifestu aplikacji.
@@ -50,7 +52,7 @@ Element najwyższego poziomu dla manifestu aplikacji.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`manifestVersion`|Wymagany. `manifestVersion`Atrybut musi być ustawiony na `1.0` .|
+|`manifestVersion`|Wymagane. `manifestVersion`Atrybut musi być ustawiony na `1.0` .|
 
 ## <a name="example"></a>Przykład
  Poniższy przykład kodu ilustruje `assembly` element w manifeście aplikacji dla [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji. Ten przykład kodu jest częścią większego przykładu dostarczonego w [manifeście aplikacji ClickOnce](../deployment/clickonce-application-manifest.md).

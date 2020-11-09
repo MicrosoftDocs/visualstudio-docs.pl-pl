@@ -1,5 +1,6 @@
 ---
 title: Praca z danymi w programie Visual Studio
+description: Pracuj z danymi w programie Visual Studio. Twórz aplikacje, które łączą się z danymi w innych produktach lub usługach bazy danych za pośrednictwem maszyn lokalnych, sieci LAN lub chmur publicznych lub prywatnych.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d1a82cc5fc5ea34f007750a08c0e8140421a9f41
-ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
+ms.openlocfilehash: 846898c1cf93d0f90ce04e77ee93bd8802e22ec2
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91959825"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382094"
 ---
 # <a name="work-with-data-in-visual-studio"></a>Praca z danymi w programie Visual Studio
 
@@ -70,13 +71,13 @@ Większość innych produktów baz danych SQL i NoSQL, które są wymienione w t
 
 ::: moniker range="vs-2017"
 
-Wielu dostawców baz danych i inne firmy obsługują integrację z programem Visual Studio przez pakiety NuGet. Możesz zapoznać się z ofertami w witrynie NuGet.org lub za pomocą Menedżera pakietów NuGet w programie Visual Studio (**Narzędzia**  >  **Menedżer pakietów NuGet**zarządzanie pakietami  >  **NuGet dla rozwiązania**). Inne produkty bazy danych integrują się z programem Visual Studio jako rozszerzeniem. Możesz przeglądać te oferty w [Visual Studio Marketplace](https://marketplace.visualstudio.com/) lub, przechodząc do obszaru **Narzędzia**  >  **rozszerzenia i aktualizacje** , a następnie wybierając pozycję **online** w lewym okienku okna dialogowego. Aby uzyskać więcej informacji, zobacz [zgodne systemy baz danych dla programu Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
+Wielu dostawców baz danych i inne firmy obsługują integrację z programem Visual Studio przez pakiety NuGet. Możesz zapoznać się z ofertami w witrynie NuGet.org lub za pomocą Menedżera pakietów NuGet w programie Visual Studio ( **Narzędzia**  >  **Menedżer pakietów NuGet** zarządzanie pakietami  >  **NuGet dla rozwiązania** ). Inne produkty bazy danych integrują się z programem Visual Studio jako rozszerzeniem. Możesz przeglądać te oferty w [Visual Studio Marketplace](https://marketplace.visualstudio.com/) lub, przechodząc do obszaru **Narzędzia**  >  **rozszerzenia i aktualizacje** , a następnie wybierając pozycję **online** w lewym okienku okna dialogowego. Aby uzyskać więcej informacji, zobacz [zgodne systemy baz danych dla programu Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Wielu dostawców baz danych i inne firmy obsługują integrację z programem Visual Studio przez pakiety NuGet. Możesz zapoznać się z ofertami w witrynie NuGet.org lub za pomocą Menedżera pakietów NuGet w programie Visual Studio (**Narzędzia**  >  **Menedżer pakietów NuGet**zarządzanie pakietami  >  **NuGet dla rozwiązania**). Inne produkty bazy danych integrują się z programem Visual Studio jako rozszerzeniem. Możesz przeglądać te oferty w [Visual Studio Marketplace](https://marketplace.visualstudio.com/) lub poprzez przechodzenie do **rozszerzeń**  >  **Zarządzanie rozszerzeniami** , a następnie wybranie **trybu online** w lewym okienku okna dialogowego. Aby uzyskać więcej informacji, zobacz [zgodne systemy baz danych dla programu Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
+Wielu dostawców baz danych i inne firmy obsługują integrację z programem Visual Studio przez pakiety NuGet. Możesz zapoznać się z ofertami w witrynie NuGet.org lub za pomocą Menedżera pakietów NuGet w programie Visual Studio ( **Narzędzia**  >  **Menedżer pakietów NuGet** zarządzanie pakietami  >  **NuGet dla rozwiązania** ). Inne produkty bazy danych integrują się z programem Visual Studio jako rozszerzeniem. Możesz przeglądać te oferty w [Visual Studio Marketplace](https://marketplace.visualstudio.com/) lub poprzez przechodzenie do **rozszerzeń**  >  **Zarządzanie rozszerzeniami** , a następnie wybranie **trybu online** w lewym okienku okna dialogowego. Aby uzyskać więcej informacji, zobacz [zgodne systemy baz danych dla programu Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ::: moniker-end
 

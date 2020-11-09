@@ -1,5 +1,6 @@
 ---
 title: Dodawanie nowych połączeń
+description: Dodawanie połączenia w programie Visual Studio do bazy danych lub usługi oraz Eksplorowanie zawartości i schematów bazy danych przy użyciu Eksplorator serwera, Cloud Explorer lub Eksplorator obiektów SQL Server.
 ms.date: 11/04/2016
 ms.topic: how-to
 author: ghogen
@@ -7,16 +8,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5f6f34c28a6bbba236a4d90e2f936fad0b2a3f60
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 34f3ef6823ddfae806de11b85cc5bfe6b14c9b19
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283063"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382419"
 ---
 # <a name="add-new-connections"></a>Dodawanie nowych połączeń
 
-Możesz przetestować połączenie z bazą danych lub usługą oraz zbadać zawartość i schematy bazy danych za pomocą **Eksplorator serwera**, **Cloud Explorer**lub **Eksplorator obiektów SQL Server**. Funkcje tych okien nakładają się na pewien zakres. Podstawowe różnice są następujące:
+Możesz przetestować połączenie z bazą danych lub usługą oraz zbadać zawartość i schematy bazy danych za pomocą **Eksplorator serwera** , **Cloud Explorer** lub **Eksplorator obiektów SQL Server**. Funkcje tych okien nakładają się na pewien zakres. Podstawowe różnice są następujące:
 
 - Eksplorator serwera
 
@@ -32,7 +33,7 @@ Możesz przetestować połączenie z bazą danych lub usługą oraz zbadać zawa
 
 ## <a name="add-a-connection-in-server-explorer"></a>Dodawanie połączenia w Eksplorator serwera
 
-Aby utworzyć połączenie z bazą danych, kliknij ikonę **Dodaj połączenie** w **Eksplorator serwera**lub kliknij prawym przyciskiem myszy w obszarze **Eksplorator serwera** w węźle **połączenia danych** i wybierz polecenie **Dodaj połączenie**. W tym miejscu możesz również nawiązać połączenie z bazą danych na innym serwerze, w usłudze SharePoint lub w usłudze platformy Azure.
+Aby utworzyć połączenie z bazą danych, kliknij ikonę **Dodaj połączenie** w **Eksplorator serwera** lub kliknij prawym przyciskiem myszy w obszarze **Eksplorator serwera** w węźle **połączenia danych** i wybierz polecenie **Dodaj połączenie**. W tym miejscu możesz również nawiązać połączenie z bazą danych na innym serwerze, w usłudze SharePoint lub w usłudze platformy Azure.
 
 ![Ikona Eksplorator serwera nowe połączenie](../data-tools/media/raddata-server-explorer-new-connection-icon.png)
 
@@ -52,7 +53,7 @@ Po wybraniu źródła danych kliknij pozycję **Testuj połączenie**. Jeśli to
 
 ![Testuj połączenie](../data-tools/media/raddata-test-connection.png)
 
-Jeśli test zakończy się pomyślnie, możesz utworzyć *Źródło danych*, które jest terminem programu Visual Studio, który naprawdę oznacza *model danych* oparty na podstawowej bazie danych lub usłudze.
+Jeśli test zakończy się pomyślnie, możesz utworzyć *Źródło danych* , które jest terminem programu Visual Studio, który naprawdę oznacza *model danych* oparty na podstawowej bazie danych lub usłudze.
 
 ## <a name="see-also"></a>Zobacz też
 

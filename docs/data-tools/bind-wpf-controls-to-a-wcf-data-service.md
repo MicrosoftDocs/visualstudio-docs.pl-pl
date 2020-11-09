@@ -1,5 +1,6 @@
 ---
 title: Powiązywanie kontrolek WPF z usługą danych programu WCF
+description: Powiązywanie kontrolek WPF z usługą danych programu WCF w programie Visual Studio. Formanty są powiązane z rekordami klientów, które są hermetyzowane w usłudze danych programu WCF.
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7371e08925ad9227cf15a93a339e6e0ed36d11db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c627a9f09d5400e321bcc8a141c36ec46cad7958
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282855"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382211"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Powiązywanie kontrolek WPF z usługą danych programu WCF
 
@@ -62,7 +63,7 @@ Wcześniejsza znajomość następujących pojęć jest również przydatna, ale 
 
 1. Rozpocznij ten przewodnik, tworząc projekt **aplikacji sieci Web** w języku C# lub Visual Basic ASP.NET. Nazwij projekt **AdventureWorksService**.
 
-2. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **default. aspx** i wybierz pozycję **Usuń**. Ten plik nie jest konieczny dla przewodnika.
+2. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję **default. aspx** i wybierz pozycję **Usuń**. Ten plik nie jest konieczny dla przewodnika.
 
 ## <a name="create-an-entity-data-model-for-the-service"></a>Tworzenie Entity Data Model dla usługi
 
@@ -70,25 +71,25 @@ Aby udostępnić dane aplikacji przy użyciu usługi danych programu WCF, należ
 
 1. W menu **projekt** kliknij polecenie **Dodaj nowy element**.
 
-2. Na liście zainstalowane szablony kliknij pozycję **dane**, a następnie wybierz element projektu **ADO.NET Entity Data Model** .
+2. Na liście zainstalowane szablony kliknij pozycję **dane** , a następnie wybierz element projektu **ADO.NET Entity Data Model** .
 
 3. Zmień nazwę na `AdventureWorksModel.edmx` , a następnie kliknij przycisk **Dodaj**.
 
      Zostanie otwarty Kreator **Entity Data Model** .
 
-4. Na stronie **Wybierz zawartość modelu** kliknij pozycję **Generuj z bazy danych**, a następnie kliknij przycisk **dalej**.
+4. Na stronie **Wybierz zawartość modelu** kliknij pozycję **Generuj z bazy danych** , a następnie kliknij przycisk **dalej**.
 
 5. Na stronie **Wybierz połączenie danych** wybierz jedną z następujących opcji:
 
     - Jeśli połączenie danych z przykładową bazą danych AdventureWorksLT jest dostępne na liście rozwijanej, wybierz ją.
 
-    - Kliknij pozycję **nowe połączenie**i Utwórz połączenie z bazą danych AdventureWorksLT.
+    - Kliknij pozycję **nowe połączenie** i Utwórz połączenie z bazą danych AdventureWorksLT.
 
 6. Na stronie **Wybierz połączenie danych** upewnij się, że zaznaczone jest pole **Zapisz ustawienia połączenia jednostki w App.Config jako** opcja, a następnie kliknij przycisk **dalej**.
 
-7. Na stronie **Wybierz obiekty bazy danych** rozwiń węzeł **tabele**, a następnie wybierz tabelę **SalesOrderHeader** .
+7. Na stronie **Wybierz obiekty bazy danych** rozwiń węzeł **tabele** , a następnie wybierz tabelę **SalesOrderHeader** .
 
-8. Kliknij przycisk **Zakończ**.
+8. Kliknij przycisk **Finish** (Zakończ).
 
 ## <a name="create-the-service"></a>Tworzenie usługi
 
@@ -96,7 +97,7 @@ Utwórz usługę danych programu WCF, aby uwidocznić dane w Entity Data Model w
 
 1. W menu **projekt** wybierz polecenie **Dodaj nowy element**.
 
-2. Na liście **zainstalowane szablony** kliknij pozycję **Sieć Web**, a następnie wybierz element projekt **usługi danych programu WCF** .
+2. Na liście **zainstalowane szablony** kliknij pozycję **Sieć Web** , a następnie wybierz element projekt **usługi danych programu WCF** .
 
 3. W polu **Nazwa** wpisz `AdventureWorksService.svc` , a następnie kliknij przycisk **Dodaj**.
 
@@ -119,9 +120,9 @@ Należy skonfigurować usługę do działania w utworzonym Entity Data Model:
 
 Aby wyświetlić dane z usługi danych programu WCF, Utwórz nową aplikację WPF ze źródłem danych opartym na usłudze. W dalszej części tego instruktażu dodasz kontrolki powiązane z danymi do aplikacji.
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł rozwiązanie, kliknij polecenie **Dodaj**, a następnie wybierz pozycję **Nowy projekt**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł rozwiązanie, kliknij polecenie **Dodaj** , a następnie wybierz pozycję **Nowy projekt**.
 
-2. W oknie dialogowym **Nowy projekt** rozwiń pozycję **Visual C#** lub **Visual Basic**, a następnie wybierz pozycję **Windows**.
+2. W oknie dialogowym **Nowy projekt** rozwiń pozycję **Visual C#** lub **Visual Basic** , a następnie wybierz pozycję **Windows**.
 
 3. Wybierz szablon projektu **aplikacji WPF** .
 
@@ -137,7 +138,7 @@ Aby wyświetlić dane z usługi danych programu WCF, Utwórz nową aplikację WP
 
    Zostanie otwarty Kreator **konfiguracji źródła danych** .
 
-7. Na stronie **Wybierz typ źródła danych** kreatora wybierz pozycję **Usługa**, a następnie kliknij przycisk **dalej**.
+7. Na stronie **Wybierz typ źródła danych** kreatora wybierz pozycję **Usługa** , a następnie kliknij przycisk **dalej**.
 
 8. W **Dodaj odwołanie do usługi** okno dialogowe, kliknij przycisk **odkryj**.
 
@@ -145,7 +146,7 @@ Aby wyświetlić dane z usługi danych programu WCF, Utwórz nową aplikację WP
 
 9. W polu **przestrzeń nazw** wpisz **AdventureWorksService**.
 
-10. W polu **usługi** kliknij pozycję **AdventureWorksService. svc**, a następnie kliknij przycisk **OK**.
+10. W polu **usługi** kliknij pozycję **AdventureWorksService. svc** , a następnie kliknij przycisk **OK**.
 
     Program Visual Studio pobierze informacje o usłudze, a następnie powróci do kreatora **konfiguracji źródła danych** .
 
@@ -157,7 +158,7 @@ Aby wyświetlić dane z usługi danych programu WCF, Utwórz nową aplikację WP
 
 Dodaj kilka przycisków do okna, modyfikując kod XAML w projektancie WPF. W dalszej części tego instruktażu zostanie dodany kod umożliwiający użytkownikom wyświetlanie i aktualizowanie rekordów sprzedaży przy użyciu tych przycisków.
 
-1. W **Eksplorator rozwiązań**kliknij dwukrotnie pozycję **MainWindow. XAML**.
+1. W **Eksplorator rozwiązań** kliknij dwukrotnie pozycję **MainWindow. XAML**.
 
    Okno zostanie otwarte w projektancie WPF.
 
@@ -183,7 +184,7 @@ Utwórz kontrolki, które wyświetlają rekordy klientów, przeciągając `Sales
 
 2. Rozwiń węzeł **SalesOrderHeaders** .
 
-3. W tym przykładzie niektóre pola nie będą wyświetlane, więc kliknij menu rozwijane obok następujących węzłów i wybierz opcję **Brak**:
+3. W tym przykładzie niektóre pola nie będą wyświetlane, więc kliknij menu rozwijane obok następujących węzłów i wybierz opcję **Brak** :
 
     - **CreditCardApprovalCode**
 
@@ -269,9 +270,9 @@ Skompiluj i uruchom aplikację, aby sprawdzić, czy można wyświetlać i aktual
 
      Program Visual Studio uruchamia projekt **AdventureWorksService** bez jego debugowania.
 
-3. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt **AdventureWorksSalesEditor** .
+3. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt **AdventureWorksSalesEditor** .
 
-4. W menu rozwijanym prawym przyciskiem myszy (menu kontekstowe) w obszarze **debugowanie**kliknij polecenie **Uruchom nowe wystąpienie**.
+4. W menu rozwijanym prawym przyciskiem myszy (menu kontekstowe) w obszarze **debugowanie** kliknij polecenie **Uruchom nowe wystąpienie**.
 
      Aplikacja zostanie uruchomiona. Sprawdź następujące informacje:
 

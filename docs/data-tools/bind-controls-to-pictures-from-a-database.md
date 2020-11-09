@@ -1,5 +1,6 @@
 ---
 title: Powiązywanie kontrolek z obrazami z bazy danych
+description: Użyj okna źródła danych, aby powiązać obraz w bazie danych z kontrolką w aplikacji Visual Studio.
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -17,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e9093c2a2d7cec95e4fdd08ff4273ae8f8126a36
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a2033bfe6719ccd325a2409d20fbb0e77d92926
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282987"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382302"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>Powiązywanie kontrolek z obrazami z bazy danych
 
@@ -39,7 +40,7 @@ W poniższej procedurze przyjęto założenie, że okno **źródła danych** jes
 2. W oknie **źródła danych** rozwiń żądaną tabelę lub obiekt, aby wyświetlić jego kolumny lub właściwości.
 
    > [!TIP]
-   > Jeśli okno **źródła danych** nie jest otwarte, otwórz je, wybierając opcję **Wyświetl**  >  **inne**  >  **źródła danych**systemu Windows.
+   > Jeśli okno **źródła danych** nie jest otwarte, otwórz je, wybierając opcję **Wyświetl**  >  **inne**  >  **źródła danych** systemu Windows.
 
 3. Wybierz kolumnę lub właściwość, która zawiera dane obrazu, a następnie wybierz jedną z następujących kontrolek z listy rozwijanej kontrolki:
 

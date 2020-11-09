@@ -1,5 +1,6 @@
 ---
 title: Dodawanie kodu do adapterów TableAdapter w aplikacjach n-warstwowych
+description: Dodaj kod do kart tabel w aplikacjach n-warstwowych. Utwórz plik klasy częściowej dla TableAdapter i Dodaj do niego kod (zamiast elementu DataSet. DataSet. Designer).
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -14,19 +15,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3ea451ac60de971677ee2f7910b28b334c67dff3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed0664b78408e91eeda5b65c26615e870e2171b6
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283102"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382367"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>Dodawanie kodu do adapterów TableAdapter w aplikacjach n-warstwowych
 Można zwiększyć funkcjonalność TableAdapter, tworząc plik klasy częściowej dla TableAdapter i dodając do niego kod (zamiast dodawać kod do pliku *DatasetName. DataSet. Designer* ). Klasy częściowe umożliwiają dzielenie kodu dla określonej klasy, aby można je było podzielić między wiele plików fizycznych. Aby uzyskać więcej informacji, zobacz [częściowe](/dotnet/visual-basic/language-reference/modifiers/partial) lub [częściowe (Type)](/dotnet/csharp/language-reference/keywords/partial-type).
 
 Kod definiujący TableAdapter jest generowany za każdym razem, gdy zmiany są wprowadzane do TableAdapter w zestawie danych. Ten kod jest również generowany, gdy zmiany są wprowadzane podczas uruchamiania kreatora, który modyfikuje konfigurację TableAdapter. Aby zapobiec usunięciu kodu podczas ponownej generacji TableAdapter, Dodaj kod do pliku klasy częściowej TableAdapter.
 
-Domyślnie po oddzieleniu zestawu danych i kodu TableAdapter wynik jest dyskretnym plikiem klasy w każdym projekcie. Oryginalny projekt zawiera plik o nazwie *DatasetName. Designer. vb* (lub *DatasetName.Designer.cs*), który zawiera kod TableAdapter. Projekt wskazany we właściwości **projektu DataSet** zawiera plik o nazwie *DataSetname. DataSet. Designer. vb* (lub *DatasetName.DataSet.Designer.cs*), który zawiera kod zestawu danych.
+Domyślnie po oddzieleniu zestawu danych i kodu TableAdapter wynik jest dyskretnym plikiem klasy w każdym projekcie. Oryginalny projekt zawiera plik o nazwie *DatasetName. Designer. vb* (lub *DatasetName.Designer.cs* ), który zawiera kod TableAdapter. Projekt wskazany we właściwości **projektu DataSet** zawiera plik o nazwie *DataSetname. DataSet. Designer. vb* (lub *DatasetName.DataSet.Designer.cs* ), który zawiera kod zestawu danych.
 
 > [!NOTE]
 > Gdy oddzielasz zestawy danych i TableAdapters (ustawiając właściwość **projektu DataSet** ), istniejące częściowe klasy zestawu danych w projekcie nie będą przenoszone automatycznie. Istniejące częściowe klasy DataSet muszą być przenoszone ręcznie do projektu DataSet.

@@ -1,5 +1,7 @@
 ---
 title: '&lt;Dependency — &gt; element (wdrożenie ClickOnce) | Microsoft Docs'
+description: Element Dependency identyfikuje wersję aplikacji do zainstalowania i lokalizację manifestu aplikacji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -25,12 +27,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84e26a2d7dae70e0029817d4e6bb6e70dd53bce4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e77f115eb4014f16107ae167576ed0d923bffe8
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62928950"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382969"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;Dependency — &gt; element (wdrażanie ClickOnce)
 Identyfikuje wersję aplikacji do zainstalowania i lokalizację manifestu aplikacji.
@@ -76,25 +78,25 @@ Identyfikuje wersję aplikacji do zainstalowania i lokalizację manifestu aplika
  `dependency`Element zwykle wyraża zależności dla głównej aplikacji w zestawach zawartych w [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji. Jeśli aplikacja Main.exe zużywa zestaw o nazwie DotNetAssembly.dll, ten zestaw musi znajdować się w sekcji zależności. Zależność, jednak może również wyznaczać inne typy zależności, takie jak zależności w określonej wersji środowiska uruchomieniowego języka wspólnego, w zestawie w globalnej pamięci podręcznej zestawów (GAC) lub w obiekcie COM. Ponieważ nie jest to technologia wdrażania bez dotyku, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nie można zainicjować pobierania i instalacji tych typów zależności, ale uniemożliwia uruchomienie aplikacji, jeśli co najmniej jedno z określonych zależności nie istnieje.
 
 ## <a name="dependentassembly"></a>dependentAssembly
- Wymagany. Ten element zawiera `assemblyIdentity` element. W poniższej tabeli przedstawiono atrybuty obsługiwane przez program `dependentAssembly` .
+ Wymagane. Ten element zawiera `assemblyIdentity` element. W poniższej tabeli przedstawiono atrybuty obsługiwane przez program `dependentAssembly` .
 
 | Atrybut | Opis |
 |------------------| - |
 | `preRequisite` | Opcjonalny. Określa, że ten zestaw powinien już istnieć w pamięci podręcznej GAC. Prawidłowe wartości to `true` i `false` . Jeśli `true` określony zestaw nie istnieje w pamięci PODręcznej GAC, uruchomienie aplikacji nie powiedzie się. |
 | `visible` | Opcjonalny. Identyfikuje tożsamość aplikacji najwyższego poziomu, łącznie z jej zależnościami. Używane wewnętrznie przez program [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] do zarządzania magazynem i aktywacją aplikacji. |
-| `dependencyType` | Wymagany. Relacja między tą zależnością a aplikacją. Prawidłowe wartości:<br /><br /> -   `install`. Składnik reprezentuje oddzielną instalację od bieżącej aplikacji.<br />-   `preRequisite`. Składnik jest wymagany przez bieżącą aplikację. |
+| `dependencyType` | Wymagane. Relacja między tą zależnością a aplikacją. Prawidłowe wartości:<br /><br /> -   `install`. Składnik reprezentuje oddzielną instalację od bieżącej aplikacji.<br />-   `preRequisite`. Składnik jest wymagany przez bieżącą aplikację. |
 | `codebase` | Opcjonalny. Pełna ścieżka do manifestu aplikacji. |
 | `size` | Opcjonalny. Rozmiar manifestu aplikacji w bajtach. |
 
 ## <a name="assemblyidentity"></a>assemblyIdentity
- Wymagany. Ten element jest elementem podrzędnym `dependentAssembly` elementu. Zawartość `assemblyIdentity` musi być taka sama jak opisana w [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeście aplikacji. W poniższej tabeli przedstawiono atrybuty `assemblyIdentity` elementu.
+ Wymagane. Ten element jest elementem podrzędnym `dependentAssembly` elementu. Zawartość `assemblyIdentity` musi być taka sama jak opisana w [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeście aplikacji. W poniższej tabeli przedstawiono atrybuty `assemblyIdentity` elementu.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`Name`|Wymagany. Identyfikuje nazwę aplikacji.|
-|`Version`|Wymagany. Określa numer wersji aplikacji w następującym formacie: `major.minor.build.revision`|
-|`publicKeyToken`|Wymagany. Określa 16-znakowy ciąg szesnastkowy, który reprezentuje ostatnie 8 bajtów skrótu SHA-1 klucza publicznego, w którym aplikacja lub zestaw są podpisane. Klucz publiczny używany do podpisywania musi mieć wartość 2048 bitów lub większą.|
-|`processorArchitecture`|Wymagany. Określa mikroprocesor. Prawidłowe wartości to `x86` 32-bitowy system Windows i `IA64` dla systemu Windows 64-bit.|
+|`Name`|Wymagane. Identyfikuje nazwę aplikacji.|
+|`Version`|Wymagane. Określa numer wersji aplikacji w następującym formacie: `major.minor.build.revision`|
+|`publicKeyToken`|Wymagane. Określa 16-znakowy ciąg szesnastkowy, który reprezentuje ostatnie 8 bajtów skrótu SHA-1 klucza publicznego, w którym aplikacja lub zestaw są podpisane. Klucz publiczny używany do podpisywania musi mieć wartość 2048 bitów lub większą.|
+|`processorArchitecture`|Wymagane. Określa mikroprocesor. Prawidłowe wartości to `x86` 32-bitowy system Windows i `IA64` dla systemu Windows 64-bit.|
 |`Language`|Opcjonalny. Identyfikuje dwa kody języka części zestawu. Na przykład EN-US, która oznacza angielski (Stany Zjednoczone). Wartość domyślna to `neutral`. Ten element znajduje się w `asmv2` przestrzeni nazw.|
 |`type`|Opcjonalny. W celu zapewnienia zgodności z poprzednimi wersjami z technologią instalacji równoległej systemu Windows. Jedyna dozwolona wartość to `win32` .|
 

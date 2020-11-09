@@ -1,5 +1,7 @@
 ---
 title: Wybieranie strategii aktualizacji ClickOnce | Microsoft Docs
+description: Dowiedz się, w jaki sposób aplikacja ClickOnce obsługuje aktualizacje automatyczne i które strategie aktualizacji, których można użyć.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbddf759841dbe9626868d6c00f42a0849d70520
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5618a8996b9858f0799f2a359573d5b7b9da1ce9
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64858752"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383160"
 ---
 # <a name="choose-a-clickonce-update-strategy"></a>Wybieranie strategii aktualizacji ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] może zapewnić automatyczne aktualizacje aplikacji. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Aplikacja okresowo odczytuje plik manifestu wdrożenia, aby sprawdzić, czy są dostępne aktualizacje aplikacji. Jeśli są dostępne, jest pobierana i uruchamiana nowa wersja aplikacji. W celu zwiększenia wydajności pobierane są tylko pliki, które uległy zmianie.
@@ -78,7 +80,7 @@ ms.locfileid: "64858752"
 > [!NOTE]
 > Mimo że można wymagać aktualizacji przy użyciu innych strategii aktualizacji, sprawdzenie **przed uruchomieniem aplikacji** jest jedynym sposobem na zagwarantowanie, że nie można uruchomić starszej wersji. Gdy podczas uruchamiania zostanie wykryta obowiązkowa aktualizacja, użytkownik będzie musiał zaakceptować aktualizację lub zamknąć aplikację.
 
- Aby oznaczyć aktualizację jako wymaganą, kliknij pozycję **Określ minimalną wersję wymaganą dla tej aplikacji** w oknie dialogowym **aktualizacje aplikacji** , a następnie określ wersję publikacji (**główna**, **pomocnicza**, **kompilacja**, **poprawka**), która określa najniższy numer wersji aplikacji, która może być zainstalowana.
+ Aby oznaczyć aktualizację jako wymaganą, kliknij pozycję **Określ minimalną wersję wymaganą dla tej aplikacji** w oknie dialogowym **aktualizacje aplikacji** , a następnie określ wersję publikacji ( **główna** , **pomocnicza** , **kompilacja** , **poprawka** ), która określa najniższy numer wersji aplikacji, która może być zainstalowana.
 
  Jest to takie samo, jak ustawienie atrybutu **MinimumRequiredVersion** elementu **Deployment** w manifeście wdrożenia; na przykład:
 

@@ -1,5 +1,7 @@
 ---
 title: Tworzenie aplikacji ClickOnce z wiersza polecenia | Microsoft Docs
+description: Dowiedz się, jak tworzyć projekty programu Visual Studio z poziomu wiersza polecenia, co pozwala na odtworzenie kompilacji przy użyciu zautomatyzowanego procesu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 065eea058ffa78c84428e031832e24837eb81d08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8423c2820aaf7daf479df6c14dd2e8de9e0e6e5a
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74797203"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383199"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>Tworzenie aplikacji ClickOnce z wiersza poleceń
 W programie [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] można tworzyć projekty z wiersza polecenia, nawet jeśli są one tworzone w zintegrowanym środowisku programistycznym (IDE). W rzeczywistości można skompilować projekt utworzony za pomocą [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] na innym komputerze, na którym zainstalowano tylko .NET Framework. Pozwala to na odtworzenie kompilacji przy użyciu zautomatyzowanego procesu, na przykład w centralnym laboratorium kompilacji lub użycie zaawansowanych technik tworzenia skryptów poza zakresem tworzenia projektu.
@@ -29,7 +31,7 @@ W programie [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_shor
 ## <a name="use-msbuild-to-reproduce-clickonce-application-deployments"></a>Używanie programu MSBuild do odtwarzania wdrożeń aplikacji ClickOnce
  Po wywołaniu MSBuild/target: Publikuj w wierszu polecenia, nakazuje systemowi MSBuild skompilowanie projektu i utworzenie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji w folderze publikacji. Jest to równoznaczne z wybraniem polecenia **Publikuj** w IDE.
 
- To polecenie wykonuje *msbuild.exe*, który znajduje się na ścieżce w środowisku wiersza polecenia programu Visual Studio.
+ To polecenie wykonuje *msbuild.exe* , który znajduje się na ścieżce w środowisku wiersza polecenia programu Visual Studio.
 
  "Target" to wskaźnik do programu MSBuild dotyczący sposobu przetwarzania polecenia. Kluczowe cele to element docelowy "build" i element docelowy "publish". Obiekt docelowy kompilacji jest równoznaczny z wybraniem polecenia Build (lub naciśnięciem klawisza F5) w środowisku IDE. Jeśli chcesz tylko skompilować projekt, możesz to zrobić, wpisując polecenie `msbuild` . To polecenie działa, ponieważ obiekt docelowy kompilacji jest domyślnym obiektem docelowym dla wszystkich projektów wygenerowanych przez [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] . Oznacza to, że nie trzeba jawnie określać docelowej kompilacji. W związku z tym wpisywanie `msbuild` jest tą samą operacją jak wpisywanie `msbuild /target:build` .
 
@@ -63,9 +65,9 @@ W programie [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_shor
 
 1. Zakończ [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] .
 
-2. W menu **Start** systemu Windows kliknij pozycję **Wszystkie programy**, a następnie **Microsoft Visual Studio**, a następnie **Visual Studio Tools**, **wiersz polecenia programu Visual Studio**. W tym celu należy otworzyć wiersz polecenia w folderze głównym bieżącego użytkownika.
+2. W menu **Start** systemu Windows kliknij pozycję **Wszystkie programy** , a następnie **Microsoft Visual Studio** , a następnie **Visual Studio Tools** , **wiersz polecenia programu Visual Studio**. W tym celu należy otworzyć wiersz polecenia w folderze głównym bieżącego użytkownika.
 
-3. W **wierszu polecenia programu Visual Studio**Zmień bieżący katalog na lokalizację projektu, który właśnie został skompilowany. Na przykład wpisz `chdir My Documents\Visual Studio\Projects\CmdLineDemo`.
+3. W **wierszu polecenia programu Visual Studio** Zmień bieżący katalog na lokalizację projektu, który właśnie został skompilowany. Na przykład wpisz `chdir My Documents\Visual Studio\Projects\CmdLineDemo`.
 
 4. Aby usunąć istniejące pliki utworzone w "aby utworzyć i opublikować [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] projekt", wpisz `rmdir /s publish` .
 
@@ -73,7 +75,7 @@ W programie [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_shor
 
 5. Wpisz `msbuild /target:publish`.
 
-   Powyższe kroki spowodują utworzenie pełnego [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia aplikacji w podfolderze projektu o nazwie **Publikuj**. *CmdLineDemo. Application* to [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest wdrożenia. Folder *CmdLineDemo_1.0.0.0* zawiera pliki *CmdLineDemo.exe* i *CmdLineDemo.exe. manifest*, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikacji. *Setup.exe* jest program inicjujący, który jest domyślnie skonfigurowany do instalowania .NET Framework. Folder DotNetFX zawiera pakiety redystrybucyjne dla .NET Framework. Jest to cały zestaw plików potrzebnych do wdrożenia aplikacji za pośrednictwem sieci Web lub UNC lub CD/DVD.
+   Powyższe kroki spowodują utworzenie pełnego [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia aplikacji w podfolderze projektu o nazwie **Publikuj**. *CmdLineDemo. Application* to [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest wdrożenia. Folder *CmdLineDemo_1.0.0.0* zawiera pliki *CmdLineDemo.exe* i *CmdLineDemo.exe. manifest* , [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikacji. *Setup.exe* jest program inicjujący, który jest domyślnie skonfigurowany do instalowania .NET Framework. Folder DotNetFX zawiera pakiety redystrybucyjne dla .NET Framework. Jest to cały zestaw plików potrzebnych do wdrożenia aplikacji za pośrednictwem sieci Web lub UNC lub CD/DVD.
    
 > [!NOTE]
 > System MSBuild używa opcji **PublishDir** , aby określić lokalizację danych wyjściowych, na przykład `msbuild /t:publish /p:PublishDir="<specific location>"` .
@@ -81,7 +83,7 @@ W programie [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_shor
 ## <a name="publish-properties"></a>Właściwości publikowania
  Po opublikowaniu aplikacji w powyższych procedurach Kreator publikacji dodaje następujące właściwości do pliku projektu. Te właściwości bezpośrednio wpływają na sposób tworzenia [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji.
 
- W *CmdLineDemo. vbproj*  /  *CmdLineDemo. csproj*:
+ W *CmdLineDemo. vbproj*  /  *CmdLineDemo. csproj* :
 
 ```xml
 <AssemblyOriginatorKeyFile>WindowsApplication3.snk</AssemblyOriginatorKeyFile>
@@ -109,7 +111,7 @@ W programie [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_shor
 msbuild /target:publish /property:BootstrapperEnabled=false
 ```
 
- Właściwości publikowania są kontrolowane na [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] podstawie stron właściwości **Publikowanie**, **zabezpieczenia**i **podpisywanie** w **projektancie projektu**. Poniżej znajduje się opis właściwości publikowania wraz ze wskazaniem, jak każdy z nich jest ustawiany na różnych stronach właściwości projektanta aplikacji:
+ Właściwości publikowania są kontrolowane na [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] podstawie stron właściwości **Publikowanie** , **zabezpieczenia** i **podpisywanie** w **projektancie projektu**. Poniżej znajduje się opis właściwości publikowania wraz ze wskazaniem, jak każdy z nich jest ustawiany na różnych stronach właściwości projektanta aplikacji:
 
 - `AssemblyOriginatorKeyFile` Określa plik klucza używany do podpisywania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestów aplikacji. Ten sam klucz może być również używany do przypisywania silnej nazwy do zestawów. Ta właściwość jest ustawiana na stronie **podpisywanie** w **projektancie projektu**.
 

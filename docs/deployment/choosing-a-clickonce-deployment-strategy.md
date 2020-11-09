@@ -1,5 +1,7 @@
 ---
 title: Wybieranie strategii wdrażania ClickOnce | Microsoft Docs
+description: Zapoznaj się z strategiami wdrażania aplikacji ClickOnce i sposobami wybierania strategii w zależności od typu wdrażanej aplikacji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b4ed387d00c96c1d66fdac0bb92a0bfbae7c530
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d623c47960a3c1a44c184df52488682659d5238d
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64782478"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383173"
 ---
 # <a name="choose-a-clickonce-deployment-strategy"></a>Wybieranie strategii wdrażania technologii ClickOnce
 Istnieją trzy różne strategie wdrażania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji. wybrana strategia zależy głównie od typu wdrażanej aplikacji. Poniżej przedstawiono wszystkie trzy strategie wdrażania:
@@ -55,7 +57,7 @@ Istnieją trzy różne strategie wdrażania [!INCLUDE[ndptecclick](../deployment
 
  Aby włączyć tę strategię wdrażania w programie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , kliknij pozycję nie **Instaluj aplikacji** na stronie **Instalowanie lub uruchamianie z sieci Web** Kreatora publikacji.
 
- Aby włączyć tę strategię wdrażania ręcznie, należy zmienić tag **instalacji** w manifeście wdrożenia. (Jego wartość może być **równa true** lub **false**. W *Mage.exe*Użyj opcji **tylko online** na liście **Typ aplikacji** ).
+ Aby włączyć tę strategię wdrażania ręcznie, należy zmienić tag **instalacji** w manifeście wdrożenia. (Jego wartość może być **równa true** lub **false**. W *Mage.exe* Użyj opcji **tylko online** na liście **Typ aplikacji** ).
 
 ## <a name="install-from-a-cd"></a>Instalacja z dysku CD
  Gdy jest używana ta strategia, aplikacja jest wdrażana na nośniku wymiennym, takim jak dysk CD-ROM lub DVD. Podobnie jak w przypadku poprzedniej opcji, gdy użytkownik zdecyduje się na zainstalowanie aplikacji, zostanie ona zainstalowana i uruchomiona, a elementy zostaną dodane do menu **Start** i **Dodaj lub usuń programy** w **Panelu sterowania**.

@@ -1,6 +1,6 @@
 ---
 title: Właściwość wyświetlana dwukrotnie
-description: Nie można utworzyć skojarzenia — Właściwość wymieniona dwukrotnie
+description: Nie można utworzyć skojarzenia-właściwości wymienionej dwukrotnie. Wyświetl informacje o tym komunikacie Object Relational Designer programu Visual Studio (Projektant O/R).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d0e3475896c937f247fc64a0750da25c2d6edac9
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: d4cb795a5d608e31c26ccec0b96f359a5c63cee7
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036486"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94381782"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>Nie można utworzyć &lt; nazwy skojarzenia skojarzenia &gt; — Właściwość wymieniona dwukrotnie.
 
@@ -24,7 +24,7 @@ Nie można utworzyć skojarzenia \<association name> . Ta sama właściwość je
 
 Skojarzenia są definiowane przez wybrane **właściwości skojarzenia** w oknie dialogowym **Edytor skojarzeń** . Właściwości mogą być wyświetlane tylko raz dla każdej klasy w skojarzeniu.
 
-Właściwość w komunikacie pojawia się więcej niż jeden raz we **właściwościach skojarzenia**klasy nadrzędnej lub podrzędnej.
+Właściwość w komunikacie pojawia się więcej niż jeden raz we **właściwościach skojarzenia** klasy nadrzędnej lub podrzędnej.
 
 ## <a name="to-resolve-this-condition"></a>Aby rozwiązać ten problem
 
@@ -34,9 +34,9 @@ Właściwość w komunikacie pojawia się więcej niż jeden raz we **właściwo
 
 - Sprawdź **właściwości skojarzenia** i Usuń zduplikowane wpisy.
 
-- Kliknij pozycję **OK**.
+- Kliknij przycisk **OK**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Narzędzia LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Instrukcje: Tworzenie skojarzenia między klasami LINQ to SQL (Projektant O/R)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)

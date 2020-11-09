@@ -1,5 +1,6 @@
 ---
 title: Dodawanie nowych źródeł danych
+description: Dodaj nowe źródła danych w programie Visual Studio. Źródło danych to obiekt .NET, który nawiązuje połączenie z magazynem danych i udostępnia dane aplikacji platformy .NET.
 ms.date: 11/21/2018
 ms.topic: how-to
 f1_keywords:
@@ -13,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2e8ad5bf65ad25d197785c3e720ec01c7bdc6f9d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51d7d2bb7a7037d3fbcf307c620e9aca702ac370
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283050"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382120"
 ---
 # <a name="add-new-data-sources"></a>Dodawanie nowych źródeł danych
 
@@ -51,7 +52,7 @@ W kontekście narzędzi danych .NET w programie Visual Studio termin *Źródło 
 Po utworzeniu źródła danych pojawia się ono w oknie narzędzia **źródła danych** .
 
 > [!TIP]
-> Aby otworzyć okno **źródła danych** , upewnij się, że projekt jest otwarty, a następnie naciśnij klawisze **SHIFT** + **Alt** + **D** lub przycisk **Przeglądaj**  >  **inne**  >  **źródła danych**systemu Windows.
+> Aby otworzyć okno **źródła danych** , upewnij się, że projekt jest otwarty, a następnie naciśnij klawisze **SHIFT** + **Alt** + **D** lub przycisk **Przeglądaj**  >  **inne**  >  **źródła danych** systemu Windows.
 
 Możesz przeciągnąć źródło danych z okna **źródła danych** na powierzchnię lub kontrolkę projektu formularza. Powoduje to wygenerowanie kodu standardowego, który wyświetla dane z magazynu danych.
 

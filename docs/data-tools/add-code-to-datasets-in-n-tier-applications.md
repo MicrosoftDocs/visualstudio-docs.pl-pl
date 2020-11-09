@@ -1,5 +1,6 @@
 ---
 title: Dodawanie kodu do zestawów danych w aplikacjach n-warstwowych
+description: Dodawanie kodu do zestawów danych w aplikacjach n-warstwowych w programie Visual Studio. Utwórz plik klasy częściowej dla zestawu danych i Dodaj do niego kod (zamiast elementu DataSet. DataSet. Designer).
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a57a05ddb8317ea31b852ded369ad7ef69d40bd0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bdbd6e728ebd4adea1a18d842651e9941098249c
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283089"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382198"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>Dodawanie kodu do zestawów danych w aplikacjach n-warstwowych
 
@@ -26,7 +27,7 @@ Można zwiększyć funkcjonalność zestawu danych, tworząc plik klasy części
 
 Kod definiujący zestaw danych jest generowany każdorazowo po wprowadzeniu zmian w definicji zestawu danych (w określonym zestawie danych). Ten kod jest również generowany, gdy wprowadzasz zmiany w trakcie działania kreatora, który modyfikuje konfigurację zestawu danych. Aby zapobiec usunięciu kodu podczas ponownej generacji zestawu danych, Dodaj kod do pliku klasy częściowej zestawu danych.
 
-Domyślnie po oddzieleniu zestawu danych i kodu TableAdapter wynik jest dyskretnym plikiem klasy w każdym projekcie. Oryginalny projekt zawiera plik o nazwie *DatasetName. Designer. vb* (lub *DatasetName.Designer.cs*), który zawiera kod TableAdapter. Projekt wskazany we właściwości **projektu DataSet** zawiera plik o nazwie *DatasetName. DataSet. Designer. vb* (lub *DatasetName.DataSet.Designer.cs*). Ten plik zawiera kod zestawu danych.
+Domyślnie po oddzieleniu zestawu danych i kodu TableAdapter wynik jest dyskretnym plikiem klasy w każdym projekcie. Oryginalny projekt zawiera plik o nazwie *DatasetName. Designer. vb* (lub *DatasetName.Designer.cs* ), który zawiera kod TableAdapter. Projekt wskazany we właściwości **projektu DataSet** zawiera plik o nazwie *DatasetName. DataSet. Designer. vb* (lub *DatasetName.DataSet.Designer.cs* ). Ten plik zawiera kod zestawu danych.
 
 > [!NOTE]
 > Gdy oddzielasz zestawy danych i TableAdapters (ustawiając właściwość **projektu DataSet** ), istniejące częściowe klasy zestawu danych w projekcie nie będą automatycznie przenoszone. Istniejące klasy częściowe zestawu danych muszą być przenoszone ręcznie do projektu DataSet.

@@ -1,6 +1,6 @@
 ---
 title: Nie można cofnąć zmiany zwracanego typu
-description: Zmiany zwracanego typu metody DataContext nie można cofnąć
+description: Nie można cofnąć zwracanego typu metody DataContext. Wyświetl informacje o tym komunikacie Object Relational Designer programu Visual Studio (Projektant O/R).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fc0c3d6c1ddeab3ee92414e1264912f8b9d24b22
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: c0f3728056f2703dc1c9553a4a165f9654ce5112
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036473"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94381821"
 ---
 # <a name="changing-the-return-type-of-a-datacontext-method-cannot-be-undone"></a>Zmiany zwracanego typu metody DataContext nie można cofnąć
 
@@ -39,6 +39,6 @@ Zwracany typ <xref:System.Data.Linq.DataContext> metody różni się w zależno�
 
     <xref:System.Data.Linq.DataContext>Metoda jest tworzona przy użyciu oryginalnego domyślnego typu zwracanego.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Narzędzia LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

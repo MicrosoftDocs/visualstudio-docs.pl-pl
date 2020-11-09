@@ -1,5 +1,6 @@
 ---
 title: Powiązywanie kontrolek WPF z danymi — część 1
+description: Powiązywanie kontrolek WPF z danymi. Aby utworzyć te kontrolki powiązane z danymi, przeciągnij elementy z okna źródła danych do projektanta WPF w programie Visual Studio.
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -16,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 27d0c14bcf09a3b0d30cd23dea0f8348c45fcab7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 697b5efb172a09f2dcd5512a6301febd7429411f
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282884"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94381925"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Wiązanie kontrolek WPF z danymi w programie Visual Studio
 
@@ -36,7 +37,7 @@ Poniższa tabela zawiera listę zadań, które można wykonać, przeciągając e
 |Zadanie|Więcej informacji|
 |----------| - |
 |Utwórz nowe formanty związane z danymi.<br /><br /> Powiąż istniejące formant z danymi.|[Powiązywanie kontrolek WPF z zestawem danych](../data-tools/bind-wpf-controls-to-a-dataset.md)|
-|Utwórz formant, które wyświetlają pokrewne dane w relacji nadrzędny podrzędny: kiedy użytkownik wybierze nadrzędny rekord danych w jednym formancie, inny formant wyświetli powiązane dane podrzędne dla wybranego rekordu.|[Wyświetlanie powiązanych danych w aplikacjach WPF](../data-tools/display-related-data-in-wpf-applications.md)|
+|Utwórz formant, które wyświetlają pokrewne dane w relacji nadrzędny podrzędny: kiedy użytkownik wybierze nadrzędny rekord danych w jednym formancie, inny formant wyświetli powiązane dane podrzędne dla wybranego rekordu.|[Wyświetlanie pokrewnych danych w aplikacjach WPF](../data-tools/display-related-data-in-wpf-applications.md)|
 |Utwórz *tabelę odnośników* , która wyświetla informacje z jednej tabeli na podstawie wartości pola klucza obcego w innej tabeli.|[Tworzenie tabel wyszukiwania w aplikacjach WPF](../data-tools/create-lookup-tables-in-wpf-applications.md)|
 |Powiąż formant z obrazem w bazie danych.|[Powiązywanie kontrolek z obrazami z bazy danych](../data-tools/bind-controls-to-pictures-from-a-database.md)|
 

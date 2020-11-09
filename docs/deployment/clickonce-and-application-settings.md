@@ -1,5 +1,7 @@
 ---
 title: Ustawienia ClickOnce i aplikacje | Microsoft Docs
+description: Dowiedz się, jak pliki ustawień aplikacji działają w aplikacji ClickOnce oraz jak technologia ClickOnce migruje ustawienia, gdy użytkownik uaktualnia do następnej wersji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a72b5bc3f3645d9af1008f2c178ab285e8b45449
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e51b850fa10ac660fbc3bd3a06428ddb92a060c4
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84184136"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383134"
 ---
 # <a name="clickonce-and-application-settings"></a>Ustawienia technologii ClickOnce i aplikacji
 Ustawienia aplikacji dla Windows Forms ułatwiają tworzenie, przechowywanie i konserwowanie niestandardowych preferencji aplikacji i użytkowników na kliencie. W poniższym dokumencie opisano sposób działania plików ustawień aplikacji w aplikacji ClickOnce oraz sposób migrowania ustawień przez program ClickOnce po uaktualnieniu użytkownika do kolejnej wersji.
@@ -27,11 +29,11 @@ Ustawienia aplikacji dla Windows Forms ułatwiają tworzenie, przechowywanie i k
  Poniższe informacje dotyczą tylko domyślnego dostawcy ustawień aplikacji, <xref:System.Configuration.LocalFileSettingsProvider> klasy. W przypadku podania dostawcy niestandardowego dostawca określi, w jaki sposób przechowuje swoje dane i w jaki sposób uaktualnia ustawienia między wersjami. Aby uzyskać więcej informacji na temat dostawców ustawień aplikacji, zobacz [Architektura ustawień aplikacji](/dotnet/framework/winforms/advanced/application-settings-architecture).
 
 ## <a name="application-settings-files"></a>Pliki ustawień aplikacji
- Ustawienia aplikacji zużywają dwa pliki: * \<app>.exe.config* i *user.config*, gdzie *App* jest nazwą aplikacji Windows Forms. *user.config* jest tworzony na kliencie przy pierwszym zapisaniu przez aplikację ustawień o zakresie użytkownika. * \<app>.exe.config*, z kolei, będzie istniał przed wdrożeniem, jeśli zdefiniujesz wartości domyślne dla ustawień. Program Visual Studio będzie automatycznie uwzględniał ten plik podczas korzystania z polecenia **Publikuj** . Jeśli tworzysz aplikację ClickOnce przy użyciu *Mage.exe* lub *MageUI.exe*, musisz upewnić się, że ten plik jest dołączony do innych plików aplikacji podczas wypełniania manifestu aplikacji.
+ Ustawienia aplikacji zużywają dwa pliki: *\<app>.exe.config* i *user.config* , gdzie *App* jest nazwą aplikacji Windows Forms. *user.config* jest tworzony na kliencie przy pierwszym zapisaniu przez aplikację ustawień o zakresie użytkownika. *\<app>.exe.config* , z kolei, będzie istniał przed wdrożeniem, jeśli zdefiniujesz wartości domyślne dla ustawień. Program Visual Studio będzie automatycznie uwzględniał ten plik podczas korzystania z polecenia **Publikuj** . Jeśli tworzysz aplikację ClickOnce przy użyciu *Mage.exe* lub *MageUI.exe* , musisz upewnić się, że ten plik jest dołączony do innych plików aplikacji podczas wypełniania manifestu aplikacji.
 
- W aplikacji Windows Forms niewdrożonej przy użyciu technologii ClickOnce plik * \<app>.exe.config* aplikacji jest przechowywany w katalogu aplikacji, podczas gdy plik *user.config* jest przechowywany w folderze **dokumenty i ustawienia** użytkownika. W aplikacji ClickOnce * \<app>.exe.config* znajdują się w katalogu aplikacji wewnątrz pamięci podręcznej aplikacji ClickOnce i *user.config* znajdują się w katalogu danych ClickOnce dla tej aplikacji.
+ W aplikacji Windows Forms niewdrożonej przy użyciu technologii ClickOnce plik *\<app>.exe.config* aplikacji jest przechowywany w katalogu aplikacji, podczas gdy plik *user.config* jest przechowywany w folderze **dokumenty i ustawienia** użytkownika. W aplikacji ClickOnce *\<app>.exe.config* znajdują się w katalogu aplikacji wewnątrz pamięci podręcznej aplikacji ClickOnce i *user.config* znajdują się w katalogu danych ClickOnce dla tej aplikacji.
 
- Bez względu na sposób wdrażania aplikacji, ustawienia aplikacji zapewniają bezpieczny dostęp do odczytu do * \<app>.exe.config*i bezpieczny dostęp do odczytu/zapisu do *user.config*.
+ Bez względu na sposób wdrażania aplikacji, ustawienia aplikacji zapewniają bezpieczny dostęp do odczytu do *\<app>.exe.config* i bezpieczny dostęp do odczytu/zapisu do *user.config*.
 
  W aplikacji ClickOnce rozmiar plików konfiguracji używanych przez ustawienia aplikacji jest ograniczony przez rozmiar pamięci podręcznej ClickOnce. Aby uzyskać więcej informacji, zobacz [Omówienie pamięci podręcznej ClickOnce](../deployment/clickonce-cache-overview.md).
 
@@ -42,8 +44,8 @@ Ustawienia aplikacji dla Windows Forms ułatwiają tworzenie, przechowywanie i k
 
 |Typ zmiany|Akcja uaktualniania|
 |--------------------|--------------------|
-|Dodano ustawienie do * \<app>.exe.config*|Nowe ustawienie zostanie scalone z * \<app>.exe.config* bieżącej wersji|
-|Ustawienie usunięte z * \<app>.exe.config*|Stare ustawienie zostanie usunięte z * \<app>.exe.config* bieżącej wersji|
+|Dodano ustawienie do *\<app>.exe.config*|Nowe ustawienie zostanie scalone z *\<app>.exe.config* bieżącej wersji|
+|Ustawienie usunięte z *\<app>.exe.config*|Stare ustawienie zostanie usunięte z *\<app>.exe.config* bieżącej wersji|
 |Ustawienie domyślne zmiany ustawienia; Ustawienie lokalne nadal ma domyślnie wartość pierwotna w *user.config*|To ustawienie jest scalane w *user.config* bieżącej wersji z nową wartością domyślną jako wartość|
 |Ustawienie domyślne zmiany ustawienia; ustawienie wartości innej niż domyślna w *user.config*|To ustawienie jest scalane w *user.config* bieżącej wersji z zachowaną wartością niedomyślną|
 

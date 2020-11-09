@@ -1,5 +1,7 @@
 ---
 title: '&lt;entryPoint — &gt; element (Aplikacja ClickOnce) | Microsoft Docs'
+description: Element entryPoint identyfikuje zestaw, który powinien być wykonany, gdy ta aplikacja ClickOnce zostanie uruchomiona na komputerze klienckim.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 615a606dc4d04682a9d5a1a69c91b4d2cd67de15
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f509ade0103e390ea9cf53cbd5907116b99ddd39
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62928610"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382810"
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;entryPoint — &gt; element (Aplikacja ClickOnce)
 Identyfikuje zestaw, który ma zostać wykonany po [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uruchomieniu tej aplikacji na komputerze klienckim.
@@ -61,17 +63,17 @@ Identyfikuje zestaw, który ma zostać wykonany po [!INCLUDE[ndptecclick](../dep
  `entryPoint` ma następujące elementy.
 
 ## <a name="assemblyidentity"></a>assemblyIdentity
- Wymagany. Rola `assemblyIdentity` i jej atrybuty są zdefiniowane w [ \<assemblyIdentity> elemencie](../deployment/assemblyidentity-element-clickonce-application.md).
+ Wymagane. Rola `assemblyIdentity` i jej atrybuty są zdefiniowane w [ \<assemblyIdentity> elemencie](../deployment/assemblyidentity-element-clickonce-application.md).
 
  `processorArchitecture`Atrybut tego elementu i `processorArchitecture` atrybut zdefiniowany w `assemblyIdentity` innym miejscu w manifeście aplikacji musi być zgodny.
 
 ## <a name="commandline"></a>Wiersza polecenia
- Wymagany. Musi być elementem podrzędnym `entryPoint` elementu. Nie ma elementów podrzędnych i ma następujące atrybuty.
+ Wymagane. Musi być elementem podrzędnym `entryPoint` elementu. Nie ma elementów podrzędnych i ma następujące atrybuty.
 
 | Atrybut | Opis |
 |--------------| - |
-| `file` | Wymagany. Lokalne odwołanie do zestawu startowego dla [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji. Ta wartość nie może zawierać separatorów ścieżek ukośników (/) ani ukośników odwrotnych ( \\ ). |
-| `parameters` | Wymagany. Opisuje akcję do wykonania z punktem wejścia. Jedyna prawidłowa wartość to `run` ; w przypadku podania pustego ciągu `run` zostanie przyjęty. |
+| `file` | Wymagane. Lokalne odwołanie do zestawu startowego dla [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji. Ta wartość nie może zawierać separatorów ścieżek ukośników (/) ani ukośników odwrotnych ( \\ ). |
+| `parameters` | Wymagane. Opisuje akcję do wykonania z punktem wejścia. Jedyna prawidłowa wartość to `run` ; w przypadku podania pustego ciągu `run` zostanie przyjęty. |
 
 ## <a name="customhostrequired"></a>customHostRequired
  Opcjonalny. W przypadku uwzględnienia określa, że to wdrożenie zawiera składnik, który zostanie wdrożony w ramach hosta niestandardowego i nie jest aplikacją autonomiczną.

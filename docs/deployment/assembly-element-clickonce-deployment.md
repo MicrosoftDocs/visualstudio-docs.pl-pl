@@ -1,5 +1,7 @@
 ---
 title: '&lt;Assembly — &gt; element (wdrożenie ClickOnce) | Microsoft Docs'
+description: Element Assembly jest elementem głównym i jest wymagany w przypadku wdrażania ClickOnce. Jego pierwszy element zawarty musi być elementem assemblyIdentity.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b639a7f95cfb59844fa37963730e22ead450482
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dde3bdb5fc0e9c6ea256aaa4368623a8e8af18d6
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62929076"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383238"
 ---
 # <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;Assembly — &gt; element (wdrażanie ClickOnce)
 Element najwyższego poziomu dla manifestu wdrożenia.
@@ -30,7 +32,7 @@ Element najwyższego poziomu dla manifestu wdrożenia.
 
 ```xml
 
-      <assembly  
+      <assembly  
    manifestVersion
 />
 ```
@@ -42,7 +44,7 @@ Element najwyższego poziomu dla manifestu wdrożenia.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`manifestVersion`|Wymagany. Ten atrybut musi być ustawiony na `1.0` .|
+|`manifestVersion`|Wymagane. Ten atrybut musi być ustawiony na `1.0` .|
 
 ## <a name="example"></a>Przykład
  Poniższy przykład kodu ilustruje `assembly` element w manifeście wdrożenia dla aplikacji wdrożonej przy użyciu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . Ten przykład kodu jest częścią większego przykładu dostarczonego w temacie [manifestu wdrażania ClickOnce](../deployment/clickonce-deployment-manifest.md) .

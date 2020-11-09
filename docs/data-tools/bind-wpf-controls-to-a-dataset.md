@@ -1,5 +1,6 @@
 ---
 title: Powiązywanie kontrolek WPF z zestawem danych
+description: Utwórz aplikację WPF w programie Visual Studio, która zawiera kontrolki powiązane z danymi, które są powiązane z rekordami produktów, które są hermetyzowane w zestawie danych.
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a2344c9331b8fe253077b6bbc8c3cdba01ea9731
-ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
+ms.openlocfilehash: 1922df10e331627b0695fb6ea03f4a5101ea0fd1
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90713493"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382042"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Powiązywanie kontrolek WPF z zestawem danych
 
@@ -62,7 +63,7 @@ Utwórz nowy projekt WPF do wyświetlania rekordów produktów.
 
 2. W menu **Plik** wybierz pozycję **Nowy** > **Projekt**.
 
-3. Rozwiń węzeł **Visual Basic** lub **Visual C#**, a następnie wybierz pozycję **Windows**.
+3. Rozwiń węzeł **Visual Basic** lub **Visual C#** , a następnie wybierz pozycję **Windows**.
 
 4. Wybierz szablon projektu **aplikacji WPF** .
 
@@ -94,21 +95,21 @@ Aby można było tworzyć kontrolki powiązane z danymi, należy zdefiniować mo
 
    Zostanie otwarty Kreator **konfiguracji źródła danych** .
 
-3. Na stronie **Wybierz typ źródła danych** wybierz pozycję **baza danych**, a następnie kliknij przycisk **dalej**.
+3. Na stronie **Wybierz typ źródła danych** wybierz pozycję **baza danych** , a następnie kliknij przycisk **dalej**.
 
-4. Na stronie **Wybierz model bazy danych** wybierz pozycję **zestaw danych**, a następnie kliknij przycisk **dalej**.
+4. Na stronie **Wybierz model bazy danych** wybierz pozycję **zestaw danych** , a następnie kliknij przycisk **dalej**.
 
 5. Na stronie **Wybierz połączenie danych** wybierz jedną z następujących opcji:
 
    - Jeśli połączenie danych z przykładową bazą danych AdventureWorksLT jest dostępne na liście rozwijanej, wybierz ją, a następnie kliknij przycisk **dalej**.
 
-   - Kliknij pozycję **nowe połączenie**i Utwórz połączenie z bazą danych AdventureWorksLT.
+   - Kliknij pozycję **nowe połączenie** i Utwórz połączenie z bazą danych AdventureWorksLT.
 
 6. Na stronie **Zapisz parametry połączenia do pliku konfiguracji aplikacji** zaznacz pole wyboru **tak, Zapisz połączenie jako** , a następnie kliknij przycisk **dalej**.
 
-7. Na stronie **Wybierz obiekty bazy danych** rozwiń węzeł **tabele**, a następnie wybierz tabelę **Product (tabeli SalesLT)** .
+7. Na stronie **Wybierz obiekty bazy danych** rozwiń węzeł **tabele** , a następnie wybierz tabelę **Product (tabeli SalesLT)** .
 
-8. Kliknij przycisk **Zakończ**.
+8. Kliknij przycisk **Finish** (Zakończ).
 
    Program Visual Studio dodaje nowy `AdventureWorksLTDataSet.xsd` plik do projektu i dodaje odpowiedni element **AdventureWorksLTDataSet** do okna **źródła danych** . `AdventureWorksLTDataSet.xsd`Plik definiuje określony zestaw danych o nazwie `AdventureWorksLTDataSet` i TableAdapter o nazwie `ProductTableAdapter` . W dalszej części tego instruktażu zostanie użyta funkcja `ProductTableAdapter` do wypełnienia zestawu danych danymi i zapisania zmian z powrotem w bazie danych.
 
@@ -118,11 +119,11 @@ Aby można było tworzyć kontrolki powiązane z danymi, należy zdefiniować mo
 
 Aby wypełnić zestaw danych danymi, użyj `Fill` metody `ProductTableAdapter` . Domyślnie `Fill` Metoda wypełnia `ProductDataTable` w programie `AdventureWorksLTDataSet` wszystkie wiersze danych z tabeli Product. Możesz zmodyfikować tę metodę, aby zwrócić tylko podzestaw wierszy. W tym instruktażu zmodyfikuj `Fill` metodę, aby zwracała tylko wiersze dla produktów mających zdjęcia.
 
-1. W **Eksplorator rozwiązań**kliknij dwukrotnie plik *AdventureWorksLTDataSet. xsd* .
+1. W **Eksplorator rozwiązań** kliknij dwukrotnie plik *AdventureWorksLTDataSet. xsd* .
 
      Zostanie otwarty projektant obiektów DataSet.
 
-2. W projektancie kliknij prawym przyciskiem myszy zapytanie **wypełnienie**, **GetData ()** i wybierz pozycję **Konfiguruj**.
+2. W projektancie kliknij prawym przyciskiem myszy zapytanie **wypełnienie** , **GetData ()** i wybierz pozycję **Konfiguruj**.
 
      Zostanie otwarty Kreator **konfiguracji TableAdapter** .
 
@@ -132,13 +133,13 @@ Aby wypełnić zestaw danych danymi, użyj `Fill` metody `ProductTableAdapter` .
     WHERE ThumbnailPhotoFileName <> 'no_image_available_small.gif'
     ```
 
-4. Kliknij przycisk **Zakończ**.
+4. Kliknij przycisk **Finish** (Zakończ).
 
 ## <a name="define-the-user-interface"></a>Zdefiniuj interfejs użytkownika
 
 Dodaj kilka przycisków do okna, modyfikując kod XAML w projektancie WPF. W dalszej części tego instruktażu zostanie dodany kod umożliwiający użytkownikom przewijanie i zapisywanie zmian w rekordach produktów przy użyciu tych przycisków.
 
-1. W **Eksplorator rozwiązań**kliknij dwukrotnie pozycję *MainWindow. XAML*.
+1. W **Eksplorator rozwiązań** kliknij dwukrotnie pozycję *MainWindow. XAML*.
 
     Okno zostanie otwarte w **projektancie WPF**.
 
@@ -164,7 +165,7 @@ Utwórz kontrolki, które wyświetlają rekordy klientów, przeciągając `Produ
 
 2. Rozwiń węzeł **produkt** .
 
-3. W tym przykładzie niektóre pola nie będą wyświetlane, więc kliknij menu rozwijane obok następujących węzłów i wybierz opcję **Brak**:
+3. W tym przykładzie niektóre pola nie będą wyświetlane, więc kliknij menu rozwijane obok następujących węzłów i wybierz opcję **Brak** :
 
     - ProductCategoryID
 
@@ -238,7 +239,7 @@ Skompiluj i uruchom aplikację. Sprawdź, czy można wyświetlać i aktualizowa�
 
      Aplikacja zostanie skompilowana i uruchomiona. Sprawdź następujące informacje:
 
-    - Pola tekstowe wyświetlają dane z pierwszego rekordu produktu, który ma zdjęcie. Ten produkt ma identyfikator produktu 713, a nazwa w **logo z długą cyfrą**().
+    - Pola tekstowe wyświetlają dane z pierwszego rekordu produktu, który ma zdjęcie. Ten produkt ma identyfikator produktu 713, a nazwa w **logo z długą cyfrą** ().
 
     - Możesz kliknąć przycisk **>** lub, **<** Aby nawigować po innych rekordach produktu.
 

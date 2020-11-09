@@ -1,5 +1,7 @@
 ---
 title: '&lt;compatibleFrameworks, &gt; element (wdrażanie ClickOnce) | Microsoft Docs'
+description: Element compatibleFrameworks identyfikuje wersje .NET Framework, w których ta aplikacja może zostać zainstalowana i uruchomiona.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99db3d51414197df469aaa2eabe97e0967c31b05
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5da9819cd3df667be5e8fa04372684f82762c037
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66746033"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383069"
 ---
 # <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;compatibleFrameworks, &gt; element (wdrażanie ClickOnce)
 Identyfikuje wersje .NET Framework, w których ta aplikacja może zostać zainstalowana i uruchomiona.
@@ -31,12 +33,12 @@ Identyfikuje wersje .NET Framework, w których ta aplikacja może zostać zainst
 
 ```xml
 <compatibleFrameworks
-      SupportUrl> 
+      SupportUrl> 
    <framework
       targetVersion
       profile
       supportedRuntime
-   /> 
+   /> 
 </ compatibleFrameworks>
 ```
 
@@ -50,13 +52,13 @@ Identyfikuje wersje .NET Framework, w których ta aplikacja może zostać zainst
 |`S` `upportUrl`|Opcjonalny. Określa adres URL, pod którym można pobrać preferowaną zgodną .NET Framework wersję.|
 
 ## <a name="framework"></a>szablon
- Wymagany. W poniższej tabeli wymieniono atrybuty obsługiwane przez `framework` element.
+ Wymagane. W poniższej tabeli wymieniono atrybuty obsługiwane przez `framework` element.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`targetVersion`|Wymagany. Określa numer wersji .NET Framework docelowej.|
-|`profile`|Wymagany. Określa profil .NET Framework docelowej.|
-|`supportedRuntime`|Wymagany. Określa numer wersji środowiska uruchomieniowego skojarzonego z .NET Framework docelowej.|
+|`targetVersion`|Wymagane. Określa numer wersji .NET Framework docelowej.|
+|`profile`|Wymagane. Określa profil .NET Framework docelowej.|
+|`supportedRuntime`|Wymagane. Określa numer wersji środowiska uruchomieniowego skojarzonego z .NET Framework docelowej.|
 
 ## <a name="remarks"></a>Uwagi
 

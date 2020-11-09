@@ -1,5 +1,7 @@
 ---
 title: Debuguj aplikacje ClickOnce używające System. Deployment. Application
+description: Dowiedz się, jak używać i dostosowywać zaawansowane funkcje wdrażania ClickOnce, uzyskując dostęp do modelu obiektów wdrożenia dostarczonego przez system. Deployment. Application.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 203f1edc2e29bbbc34fb39e6aa01c1b56bf20e91
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5e79b6a64eff9eab92a05624f6ca71ae7a242ad2
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382656"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382991"
 ---
 # <a name="debug-clickonce-applications-that-use-systemdeploymentapplication"></a>Debuguj aplikacje ClickOnce używające System. Deployment. Application
 W [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] programie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenie umożliwia skonfigurowanie sposobu aktualizowania aplikacji. Jeśli jednak zachodzi potrzeba użycia i dostosowania zaawansowanych [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] funkcji wdrażania, należy uzyskać dostęp do modelu obiektów wdrożenia dostarczonego przez program <xref:System.Deployment.Application> . Możesz użyć <xref:System.Deployment.Application> interfejsów API do zadań zaawansowanych, takich jak:
@@ -43,11 +45,11 @@ W [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 
 
 2. Wdróż wersję 1 aplikacji.
 
-3. Utwórz nowe puste rozwiązanie. W menu **plik** kliknij pozycję **Nowy**, a następnie polecenie **projekt**. W oknie dialogowym **Nowy projekt** Otwórz węzeł **Inne typy projektów** , a następnie wybierz folder **rozwiązania programu Visual Studio** . W okienku **Szablony** wybierz pozycję **puste rozwiązanie**.
+3. Utwórz nowe puste rozwiązanie. W menu **plik** kliknij pozycję **Nowy** , a następnie polecenie **projekt**. W oknie dialogowym **Nowy projekt** Otwórz węzeł **Inne typy projektów** , a następnie wybierz folder **rozwiązania programu Visual Studio** . W okienku **Szablony** wybierz pozycję **puste rozwiązanie**.
 
-4. Dodaj zarchiwizowaną lokalizację źródłową do właściwości tego nowego rozwiązania. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł rozwiązanie, a następnie kliknij polecenie **Właściwości**. W oknie dialogowym **strony właściwości** wybierz pozycję **Debuguj pliki źródłowe**, a następnie Dodaj katalog archiwalnego kodu źródłowego. W przeciwnym razie debuger odnajdzie nieaktualne pliki źródłowe, ponieważ ścieżki plików źródłowych są zapisywane w pliku. pdb. Jeśli debuger używa nieaktualnych plików źródłowych, zobaczysz komunikat informujący, że źródło nie jest zgodne.
+4. Dodaj zarchiwizowaną lokalizację źródłową do właściwości tego nowego rozwiązania. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł rozwiązanie, a następnie kliknij polecenie **Właściwości**. W oknie dialogowym **strony właściwości** wybierz pozycję **Debuguj pliki źródłowe** , a następnie Dodaj katalog archiwalnego kodu źródłowego. W przeciwnym razie debuger odnajdzie nieaktualne pliki źródłowe, ponieważ ścieżki plików źródłowych są zapisywane w pliku. pdb. Jeśli debuger używa nieaktualnych plików źródłowych, zobaczysz komunikat informujący, że źródło nie jest zgodne.
 
-5. Upewnij się, że debuger może znaleźć pliki *. pdb* . Jeśli zostały wdrożone w aplikacji, debuger odnajdzie je automatycznie. Jest on zawsze wyglądał obok zestawu w polu pytanie. W przeciwnym razie należy dodać ścieżkę archiwalną do **lokalizacji pliku symboli (. pdb)** (Aby uzyskać dostęp do tej opcji, w menu **Narzędzia** kliknij pozycję **Opcje**, a następnie otwórz węzeł **debugowanie** i kliknij pozycję **symbole**).
+5. Upewnij się, że debuger może znaleźć pliki *. pdb* . Jeśli zostały wdrożone w aplikacji, debuger odnajdzie je automatycznie. Jest on zawsze wyglądał obok zestawu w polu pytanie. W przeciwnym razie należy dodać ścieżkę archiwalną do **lokalizacji pliku symboli (. pdb)** (Aby uzyskać dostęp do tej opcji, w menu **Narzędzia** kliknij pozycję **Opcje** , a następnie otwórz węzeł **debugowanie** i kliknij pozycję **symbole** ).
 
 6. Debuguj, co się dzieje `CheckForUpdate` między `Download` / `Update` wywołaniami metody a.
 

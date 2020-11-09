@@ -1,5 +1,6 @@
 ---
 title: Powiązywanie kontrolek Windows Forms z danymi
+description: Powiąż Windows Forms kontrolki z danymi w programie Visual Studio, aby umożliwić wyświetlanie danych użytkownikom aplikacji.
 ms.date: 11/03/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -17,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9af6c503b34d00ea88e74b8af40cd9e7ded643ff
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 48697fb5a031496b5e69c4dd8d6821ad243d3874
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508551"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382380"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Wiązanie kontrolek Windows Forms z danymi w programie Visual Studio
 
@@ -31,7 +32,7 @@ Dane można wyświetlić użytkownikom aplikacji przez powiązanie danych z Wind
 ![Operacja przeciągania źródła danych](../data-tools/media/raddata-data-source-drag-operation.png)
 
 > [!TIP]
-> Jeśli okno **źródła danych** nie jest widoczne, można je otworzyć, wybierając opcję **Wyświetl**  >  **inne**  >  **źródła danych**systemu Windows lub naciskając klawisze **SHIFT** + **Alt** + **D**. Aby wyświetlić okno **źródła danych** , musisz mieć otwarty projekt w programie Visual Studio.
+> Jeśli okno **źródła danych** nie jest widoczne, można je otworzyć, wybierając opcję **Wyświetl**  >  **inne**  >  **źródła danych** systemu Windows lub naciskając klawisze **SHIFT** + **Alt** + **D**. Aby wyświetlić okno **źródła danych** , musisz mieć otwarty projekt w programie Visual Studio.
 
 Przed przeciągnięciem elementów można ustawić typ kontrolki, z którą ma zostać utworzone powiązanie. Różne wartości są wyświetlane w zależności od tego, czy wybrano tabelę lub pojedynczą kolumnę.  Możesz również ustawić wartości niestandardowe. W przypadku tabeli **szczegóły** oznacza, że każda kolumna jest powiązana z oddzielnym formantem.
 
@@ -67,7 +68,7 @@ Możesz również przeciągać elementy z okna **źródła danych** do kontrolek
 
 ## <a name="bind-to-data-in-individual-controls"></a>Powiąż z danymi w poszczególnych kontrolkach
 
-Po powiązaniu źródła danych ze **szczegółami**każda kolumna w zestawie danych jest powiązana z oddzielnym formantem.
+Po powiązaniu źródła danych ze **szczegółami** każda kolumna w zestawie danych jest powiązana z oddzielnym formantem.
 
 ![Powiąż źródło danych ze szczegółami](../data-tools/media/raddata-bind-data-source-to-details.png)
 
@@ -80,7 +81,7 @@ Na poniższej ilustracji przedstawiono domyślne kontrolki powiązane z danymi, 
 
 Należy zauważyć, że każda kontrolka ma tag inteligentny. Ten tag włącza dostosowania, które mają zastosowanie tylko do tej kontrolki.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Powiązywanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [Powiązanie danych w Windows Forms (.NET Framework)](/dotnet/framework/winforms/windows-forms-data-binding)

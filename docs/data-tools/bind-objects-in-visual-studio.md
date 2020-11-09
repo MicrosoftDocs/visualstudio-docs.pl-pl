@@ -1,5 +1,6 @@
 ---
 title: Obiekty niestandardowe powiązane z danymi
+description: Powiąż obiekty jako źródła danych w programie Visual Studio. Korzystaj z narzędzi czasu projektowania do pracy z obiektami niestandardowymi jako źródła danych w aplikacji.
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a1d72ed179324b8ab7682e485fbaaf8f34b25cd4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ea36249ecc0cfc266a650ca24d143e053f7fc0d9
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282933"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382107"
 ---
 # <a name="bind-objects-as-data-sources-in-visual-studio"></a>Powiązywanie obiektów jako źródeł danych w programie Visual Studio
 

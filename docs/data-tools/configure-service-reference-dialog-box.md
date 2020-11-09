@@ -1,5 +1,6 @@
 ---
 title: Konfigurowanie odwołania do usługi — Okno dialogowe
+description: Okno dialogowe Konfigurowanie odwołania do usługi w programie Visual Studio służy do konfigurowania zachowania usług Windows Communication Foundation (WCF).
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f5bae3acb6f687c8c787e2d4121999d1133b0f1f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 70faee4277625621074b1bd1bfdf667c818e1f46
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586929"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382354"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Konfiguruj odwołanie do usługi — Okno dialogowe
 
@@ -39,7 +40,7 @@ Aby uzyskać dostęp do okna dialogowego **Konfigurowanie odwołania do usługi*
 
 - Aby określić typy kolekcji list lub słowników dla klienta WCF, wybierz typy z listy **Typ kolekcji** i **Typ kolekcji słownika** .
 
-- Aby wyłączyć udostępnianie typów, wyczyść pole wyboru **Użyj ponownie typów w przywoływanych zestawach** . Aby włączyć udostępnianie typu dla podzbioru przywoływanych zestawów, zaznacz pole wyboru **Użyj ponownie typów w przywoływanych zestawach** , wybierz pozycję **Użyj ponownie typów w określonych przywoływanych zestawach**i wybierz odpowiednie odwołania na **liście przywoływanych zestawów**.
+- Aby wyłączyć udostępnianie typów, wyczyść pole wyboru **Użyj ponownie typów w przywoływanych zestawach** . Aby włączyć udostępnianie typu dla podzbioru przywoływanych zestawów, zaznacz pole wyboru **Użyj ponownie typów w przywoływanych zestawach** , wybierz pozycję **Użyj ponownie typów w określonych przywoływanych zestawach** i wybierz odpowiednie odwołania na **liście przywoływanych zestawów**.
 
 ## <a name="uielement-list"></a>Lista elementów UIElement
 
@@ -91,7 +92,7 @@ Po wybraniu są ponownie używane tylko wybrane typy z **listy przywoływanych z
 
 **Lista zestawów, do których się odwołuje**
 
-Zawiera listę zestawów, do których odwołuje się projekt lub witryna sieci Web. W przypadku wybrania opcji **Użyj ponownie typów w określonych przywoływanych zestawach**można wybrać lub wyczyścić poszczególne zestawy.
+Zawiera listę zestawów, do których odwołuje się projekt lub witryna sieci Web. W przypadku wybrania opcji **Użyj ponownie typów w określonych przywoływanych zestawach** można wybrać lub wyczyścić poszczególne zestawy.
 
 **Dodaj odwołanie sieci Web**
 
@@ -101,7 +102,7 @@ Wyświetla okno dialogowe **Dodawanie odwołania sieci Web** .
 > Tej opcji należy używać tylko w przypadku projektów przeznaczonych dla .NET Framework w wersji 2,0.
 >
 > [!NOTE]
-> Przycisk **Dodaj odwołanie sieci Web** jest dostępny tylko wtedy, gdy w oknie **dialogowym Dodaj odwołanie do usługi**zostanie wyświetlone okno dialogowe **Konfigurowanie odwołania do usługi** .
+> Przycisk **Dodaj odwołanie sieci Web** jest dostępny tylko wtedy, gdy w oknie **dialogowym Dodaj odwołanie do usługi** zostanie wyświetlone okno dialogowe **Konfigurowanie odwołania do usługi** .
 
 ## <a name="see-also"></a>Zobacz też
 

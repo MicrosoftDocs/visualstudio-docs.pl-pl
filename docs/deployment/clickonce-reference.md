@@ -1,5 +1,7 @@
 ---
 title: Odwołanie ClickOnce | Microsoft Docs
+description: Skorzystaj z tych artykułów referencyjnych, aby zrozumieć strukturę plików XML używanych do reprezentowania aplikacji ClickOnce.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f3b22dacdb0192df70f9fcb13b8a228188f129d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f852182baec22915f412a3753755b129053e0ad
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900329"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383030"
 ---
 # <a name="clickonce-reference"></a>Dokumentacja technologii ClickOnce
 Poniższe strony opisują strukturę plików XML używanych do reprezentowania aplikacji ClickOnce.

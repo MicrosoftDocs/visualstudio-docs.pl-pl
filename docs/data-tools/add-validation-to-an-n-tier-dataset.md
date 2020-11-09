@@ -1,5 +1,6 @@
 ---
 title: Dodawanie walidacji do n-warstwowego zestawu danych
+description: Dodaj weryfikację do n-warstwowego zestawu danych w programie Visual Studio. Sprawdź poprawność zmian w poszczególnych kolumnach lub w całych wierszach.
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 91dbe04c85491a38a221edfb064702085136780f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ecd57066f310886f2941700173d138756f682a0e
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283024"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382133"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Dodawanie walidacji do n-warstwowego zestawu danych
 Dodawanie walidacji do zestawu danych, który jest podzielony na rozwiązanie n-warstwowe, jest zasadniczo takie samo jak dodanie walidacji do pojedynczego pliku zestawu danych (zestawu danych w jednym projekcie). Sugerowana lokalizacja do wykonywania walidacji danych znajduje się w <xref:System.Data.DataTable.ColumnChanging> zdarzeniach i/lub <xref:System.Data.DataTable.RowChanging> tabeli danych.

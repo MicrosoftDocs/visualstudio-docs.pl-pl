@@ -1,5 +1,7 @@
 ---
 title: Jak technologia ClickOnce wykonuje aktualizacje aplikacji | Microsoft Docs
+description: Dowiedz się, w jaki sposób Technologia ClickOnce używa informacji o wersji pliku, aby zdecydować, czy zaktualizować aplikację. Technologia ClickOnce używa poprawek plików, aby uniknąć nadmiarowości podczas pobierania.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9217558c68d47ef8f2bf34b10db16463ee76f857
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e0177f199f0178e9fe0221a4cb6daa58d36a6f87
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900027"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382670"
 ---
 # <a name="how-clickonce-performs-application-updates"></a>Jak technologia ClickOnce wykonuje aktualizacje aplikacji
 ClickOnce używa informacji o wersji pliku określonych w manifeście wdrożenia aplikacji, aby zdecydować, czy zaktualizować pliki aplikacji. Po rozpoczęciu aktualizacji ClickOnce używa techniki o nazwie *poprawka pliku* , aby uniknąć nadmiarowego pobierania plików aplikacji.

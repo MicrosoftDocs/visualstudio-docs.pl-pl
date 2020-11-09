@@ -1,5 +1,6 @@
 ---
 title: Dodawanie kontrolek niestandardowych do okna źródeł danych
+description: Dodaj niestandardowe kontrolki do okna źródła danych w programie Visual Studio. Dostosuj listę formantów możliwych do powiązania. Dodaj skojarzone kontrolki.
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +16,12 @@ ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
 author: ghogen
 ms.author: ghogen
 manager: jillfra
-ms.openlocfilehash: 39ff272581793be9b456bbc404119a488850b3c4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 004004a420374f3b0ce9504098ac5836cb307f1d
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283076"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382068"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Dodawanie kontrolek niestandardowych do okna źródeł danych
 
@@ -39,7 +40,7 @@ Aby dodać lub usunąć kontrolki z listy dostępnych kontrolek dla elementów w
 2. W oknie **źródła danych** kliknij element, który jest częścią źródła danych, które zostało dodane do okna, a następnie kliknij menu rozwijane dla elementu.
 
    > [!TIP]
-   > Jeśli okno źródła danych nie jest otwarte, otwórz je, wybierając opcję **Wyświetl**  >  **inne**  >  **źródła danych**systemu Windows.
+   > Jeśli okno źródła danych nie jest otwarte, otwórz je, wybierając opcję **Wyświetl**  >  **inne**  >  **źródła danych** systemu Windows.
 
 3. W menu rozwijanym kliknij opcję **Dostosuj**. Zostanie otwarte jedno z następujących okien dialogowych:
 

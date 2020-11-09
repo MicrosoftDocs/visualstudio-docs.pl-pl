@@ -1,5 +1,7 @@
 ---
 title: Tworzenie aplikacji ClickOnce do wdrażania przez inne osoby | Microsoft Docs
+description: Dowiedz się więcej o aplikacjach ClickOnce hostowanych przez klienta opracowanych w .NET Framework 3,5 i poprzednich wersjach .NET Framework.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -24,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3307fc124f50e8c9f73749293c36f53be36c5e3c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7379038d1c2bf203f7787e69408ddd9b2e30f372
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71252449"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383004"
 ---
 # <a name="create-clickonce-applications-for-others-to-deploy"></a>Tworzenie aplikacji ClickOnce do wdrażania przez inne osoby
 Nie wszyscy deweloperzy, którzy tworzą plan wdrożeń ClickOnce do wdrażania samych aplikacji. Wiele z nich po prostu pakuje swoją aplikację za pomocą technologii ClickOnce, a następnie Wycofaj pliki do klienta, na przykład duże firmy. Klient jest odpowiedzialny za hostowanie aplikacji w sieci. W tym temacie omówiono niektóre problemy związane z wdrażaniem w wersjach .NET Framework wcześniejszych niż wersja 3,5. Następnie opisano nowe rozwiązanie dostarczone przy użyciu nowej funkcji "Użyj manifestu dla zaufania" w .NET Framework 3,5. Na koniec zawiera ona zalecane strategie tworzenia wdrożeń ClickOnce dla klientów, którzy nadal korzystają ze starszych wersji .NET Framework.
@@ -50,7 +52,7 @@ Nie wszyscy deweloperzy, którzy tworzą plan wdrożeń ClickOnce do wdrażania 
  Nawet jeśli deweloper i klient zgadzają się, że klient powinien podpisać manifest aplikacji, wywołuje inne problemy, które ponoszą tożsamość aplikacji, szczególnie w odniesieniu do wdrożenia zaufanej aplikacji. Aby uzyskać więcej informacji na temat tej funkcji, zobacz [Omówienie wdrażania zaufanych aplikacji](../deployment/trusted-application-deployment-overview.md). Załóżmy, że firma Adventure Works chce skonfigurować swoje komputery klienckie w taki sposób, aby każda aplikacja udostępniona przez firmę Microsoft Corporation była uruchomiona z pełnym zaufaniem. Jeśli firma Adventure Works podpisuje Manifest wdrożenia, ClickOnce będzie używać sygnatury zabezpieczeń firmy Adventure Work, aby określić poziom zaufania aplikacji.
 
 ## <a name="create-customer-deployments-by-using-application-manifest-for-trust"></a>Tworzenie wdrożeń klientów przy użyciu manifestu aplikacji dla zaufania
- Technologia ClickOnce w .NET Framework 3,5 zawiera nową funkcję zapewniającą deweloperom i klientom nowe rozwiązanie do scenariusza, w jaki sposób mają być podpisane manifesty. Manifest aplikacji ClickOnce obsługuje nowy element o nazwie `<useManifestForTrust>` , który umożliwia deweloperom oznaczanie, że podpis cyfrowy manifestu aplikacji jest używany do podejmowania decyzji dotyczących zaufania. Deweloper używa narzędzi do pakowania ClickOnce, takich jak *Mage.exe*, *MageUI.exe*i Visual Studio — do uwzględnienia tego elementu w manifeście aplikacji, a także do osadzania zarówno nazwy wydawcy, jak i nazwy aplikacji w manifeście.
+ Technologia ClickOnce w .NET Framework 3,5 zawiera nową funkcję zapewniającą deweloperom i klientom nowe rozwiązanie do scenariusza, w jaki sposób mają być podpisane manifesty. Manifest aplikacji ClickOnce obsługuje nowy element o nazwie `<useManifestForTrust>` , który umożliwia deweloperom oznaczanie, że podpis cyfrowy manifestu aplikacji jest używany do podejmowania decyzji dotyczących zaufania. Deweloper używa narzędzi do pakowania ClickOnce, takich jak *Mage.exe* , *MageUI.exe* i Visual Studio — do uwzględnienia tego elementu w manifeście aplikacji, a także do osadzania zarówno nazwy wydawcy, jak i nazwy aplikacji w manifeście.
 
  W przypadku korzystania `<useManifestForTrust>` z programu manifest wdrożenia nie musi być podpisany przy użyciu certyfikatu Authenticode wystawionego przez urząd certyfikacji. Zamiast tego może być podpisany przy użyciu co jest znane jako certyfikat z podpisem własnym. Certyfikat z podpisem własnym jest generowany przez klienta lub dewelopera przy użyciu standardowych narzędzi zestawu SDK .NET Framework, a następnie stosowane do manifestu wdrożenia przy użyciu standardowych narzędzi wdrażania ClickOnce. Aby uzyskać więcej informacji, zobacz [MakeCert](/windows/desktop/SecCrypto/makecert).
 

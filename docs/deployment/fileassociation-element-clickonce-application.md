@@ -1,5 +1,7 @@
 ---
 title: '&lt;fileAssociation, &gt; element (Aplikacja ClickOnce) | Microsoft Docs'
+description: Element fileAssociation identyfikuje rozszerzenie pliku, które ma być skojarzone z aplikacją. Element fileAssociation jest opcjonalny.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d3a43af5b2c7d50034cbed9d7da16e65b402f70
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1908b4f63edcf90643c28523c0c6ed0d0e11a97
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62928523"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382731"
 ---
 # <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileAssociation, &gt; element (Aplikacja ClickOnce)
 Identyfikuje rozszerzenie pliku, które ma być skojarzone z aplikacją.
@@ -42,10 +44,10 @@ Identyfikuje rozszerzenie pliku, które ma być skojarzone z aplikacją.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`extension`|Wymagany. Rozszerzenie pliku, które ma być skojarzone z aplikacją.|
-|`description`|Wymagany. Opis typu pliku do użycia przez powłokę.|
-|`progid`|Wymagany. Nazwa, która jednoznacznie identyfikuje typ pliku.|
-|`defaultIcon`|Wymagany. Określa ikonę, która ma być używana dla plików z tym rozszerzeniem. Plik ikony należy określić za pomocą [ \<file> elementu](../deployment/file-element-clickonce-application.md) w [ \<assembly> elemencie](../deployment/assembly-element-clickonce-application.md) , który zawiera ten element.|
+|`extension`|Wymagane. Rozszerzenie pliku, które ma być skojarzone z aplikacją.|
+|`description`|Wymagane. Opis typu pliku do użycia przez powłokę.|
+|`progid`|Wymagane. Nazwa, która jednoznacznie identyfikuje typ pliku.|
+|`defaultIcon`|Wymagane. Określa ikonę, która ma być używana dla plików z tym rozszerzeniem. Plik ikony należy określić za pomocą [ \<file> elementu](../deployment/file-element-clickonce-application.md) w [ \<assembly> elemencie](../deployment/assembly-element-clickonce-application.md) , który zawiera ten element.|
 
 ## <a name="remarks"></a>Uwagi
  Ten element musi zawierać odwołanie do przestrzeni nazw XML do "urn: schematys-Microsoft-com: ClickOnce. v1". Jeśli `<fileAssociation>` element jest używany, musi znajdować się po `<application>` elemencie w jego [ \<assembly> elemencie](../deployment/assembly-element-clickonce-application.md)nadrzędnym.

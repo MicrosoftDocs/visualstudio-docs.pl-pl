@@ -1,5 +1,7 @@
 ---
 title: '&lt;Description — &gt; element (wdrożenie ClickOnce) | Microsoft Docs'
+description: Element Description identyfikuje informacje o aplikacji używane do tworzenia obecności powłoki i apletu Dodaj lub usuń programy w panelu sterowania.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c359b188894c40f017e3d2a0e06d52de87e9c5f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4eb1de8f5692eedc9673f1a22cb448ac8d102ae5
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62928797"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382835"
 ---
 # <a name="ltdescriptiongt-element-clickonce-deployment"></a>&lt;Description — &gt; element (wdrażanie ClickOnce)
 Identyfikuje informacje o aplikacji używane do tworzenia obecności powłoki i apletu **Dodaj lub usuń programy** w panelu sterowania.
@@ -30,8 +32,8 @@ Identyfikuje informacje o aplikacji używane do tworzenia obecności powłoki i 
 
 ```xml
 
-      <description 
-   publisher 
+      <description 
+   publisher 
    product
    suiteName
    supportUrl
@@ -43,8 +45,8 @@ Identyfikuje informacje o aplikacji używane do tworzenia obecności powłoki i 
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`publisher`|Wymagany. Identyfikuje nazwę firmy używaną do umieszczania ikon w menu **Start** systemu Windows i apletu **Dodaj lub usuń programy** w panelu sterowania, jeśli wdrożenie jest skonfigurowane do instalacji.|
-|`product`|Wymagany. Identyfikuje pełną nazwę produktu. Używany jako tytuł ikony zainstalowanej w menu **Start** systemu Windows.|
+|`publisher`|Wymagane. Identyfikuje nazwę firmy używaną do umieszczania ikon w menu **Start** systemu Windows i apletu **Dodaj lub usuń programy** w panelu sterowania, jeśli wdrożenie jest skonfigurowane do instalacji.|
+|`product`|Wymagane. Identyfikuje pełną nazwę produktu. Używany jako tytuł ikony zainstalowanej w menu **Start** systemu Windows.|
 |`suiteName`|Opcjonalny. Identyfikuje podfolder w `publisher` folderze w menu **Start** systemu Windows.|
 |`supportUrl`|Opcjonalny. Określa adres URL pomocy technicznej, który jest wyświetlany w aplecie **Dodaj lub usuń programy** w panelu sterowania. Skrót do tego adresu URL jest również tworzony na potrzeby obsługi aplikacji w menu **Start** systemu Windows, jeśli wdrożenie jest skonfigurowane do instalacji.|
 

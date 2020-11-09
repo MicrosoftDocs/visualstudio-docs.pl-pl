@@ -1,5 +1,7 @@
 ---
 title: '&lt;Dependency — &gt; element (Aplikacja ClickOnce) | Microsoft Docs'
+description: Element Dependency identyfikuje zależność platformy lub zestawu, która jest wymagana dla aplikacji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -26,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3aa949aa2f8e718ab0209c54a0ea2160c042a4eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e7896fa2d39bafc793c5fd74f66f4991cf5e8461
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71252495"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382952"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;Dependency — &gt; element (Aplikacja ClickOnce)
 Identyfikuje platformę lub zależność zestawu, która jest wymagana dla aplikacji.
@@ -102,17 +104,17 @@ Identyfikuje platformę lub zależność zestawu, która jest wymagana dla aplik
 |`description`|Opcjonalny. Opisuje w formularzu czytelnym dla człowieka system operacyjny opisany przez `dependentOS` element.|
 
 ### <a name="osversioninfo"></a>osVersionInfo
- Wymagany. Ten element jest elementem podrzędnym `dependentOS` elementu i zawiera `os` element. Ten element nie ma atrybutów.
+ Wymagane. Ten element jest elementem podrzędnym `dependentOS` elementu i zawiera `os` element. Ten element nie ma atrybutów.
 
 ### <a name="os"></a>os
- Wymagany. Ten element jest elementem podrzędnym `osVersionInfo` elementu. Ten element ma następujące atrybuty.
+ Wymagane. Ten element jest elementem podrzędnym `osVersionInfo` elementu. Ten element ma następujące atrybuty.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`majorVersion`|Wymagany. Określa numer wersji głównej systemu operacyjnego.|
-|`minorVersion`|Wymagany. Określa numer wersji pomocniczej systemu operacyjnego.|
-|`buildNumber`|Wymagany. Określa numer kompilacji systemu operacyjnego.|
-|`servicePackMajor`|Wymagany. Określa numer wersji głównej dodatku Service Pack dla systemu operacyjnego.|
+|`majorVersion`|Wymagane. Określa numer wersji głównej systemu operacyjnego.|
+|`minorVersion`|Wymagane. Określa numer wersji pomocniczej systemu operacyjnego.|
+|`buildNumber`|Wymagane. Określa numer kompilacji systemu operacyjnego.|
+|`servicePackMajor`|Wymagane. Określa numer wersji głównej dodatku Service Pack dla systemu operacyjnego.|
 |`servicePackMinor`|Opcjonalny. Określa numer pomocniczy dodatku Service Pack dla systemu operacyjnego.|
 |`productType`|Opcjonalny. Identyfikuje wartość typu produktu. Prawidłowe wartości to `server` , `workstation` , i `domainController` . Na przykład w przypadku systemu Windows 2000 Professional wartość tego atrybutu to `workstation` .|
 |`suiteType`|Opcjonalny. Identyfikuje pakiet produktów dostępny w systemie lub typ konfiguracji systemu. Prawidłowe wartości to `backoffice` , `blade` ,,,,, `datacenter` `enterprise` ,, `home` `professional` `smallbusiness` `smallbusinessRestricted` i `terminal` . Na przykład w przypadku systemu Windows 2000 Professional wartość tego atrybutu to `professional` .|
@@ -124,19 +126,19 @@ Identyfikuje platformę lub zależność zestawu, która jest wymagana dla aplik
 
 | Atrybut | Opis |
 |-----------------------| - |
-| `dependencyType` | Wymagany. Określa typ zależności. Prawidłowe wartości to `preprequisite` i `install` . `install`Zestaw jest instalowany jako część [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji. `prerequisite`Aby [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] można było zainstalować aplikację, zestaw musi znajdować się w globalnej pamięci podręcznej zestawów (GAC). |
-| `allowDelayedBinding` | Wymagany. Określa, czy zestaw może być ładowany programowo w czasie wykonywania. |
+| `dependencyType` | Wymagane. Określa typ zależności. Prawidłowe wartości to `preprequisite` i `install` . `install`Zestaw jest instalowany jako część [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji. `prerequisite`Aby [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] można było zainstalować aplikację, zestaw musi znajdować się w globalnej pamięci podręcznej zestawów (GAC). |
+| `allowDelayedBinding` | Wymagane. Określa, czy zestaw może być ładowany programowo w czasie wykonywania. |
 | `group` | Opcjonalny. Jeśli `dependencyType` atrybut jest ustawiony na `install` , wyznacza nazwaną grupę zestawów, które są instalowane tylko na żądanie. Aby uzyskać więcej informacji, zobacz [Przewodnik: pobieranie zestawów na żądanie za pomocą interfejsu API wdrażania ClickOnce przy użyciu narzędzia Projektant](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Jeśli jest ustawiona na `framework` `dependencyType` , a atrybut jest ustawiony na `prerequisite` , wyznacza zestaw jako część .NET Framework. Globalna pamięć podręczna Assemby (GAC) nie jest sprawdzana dla tego zestawu podczas instalacji programu w wersji .NET Framework 4 i nowszych. |
 | `codeBase` | Wymagane, gdy `dependencyType` atrybut jest ustawiony na `install` . Ścieżka do zestawu zależnego. Może być ścieżką bezwzględną lub ścieżką względem bazy kodu manifestu. Ta ścieżka musi być prawidłowym identyfikatorem URI, aby manifest zestawu był prawidłowy. |
 | `size` | Wymagane, gdy `dependencyType` atrybut jest ustawiony na `install` . Rozmiar zestawu zależnego, w bajtach. |
 
 ### <a name="assemblyidentity"></a>assemblyIdentity
- Wymagany. Ten element jest elementem podrzędnym `dependentAssembly` elementu i ma następujące atrybuty.
+ Wymagane. Ten element jest elementem podrzędnym `dependentAssembly` elementu i ma następujące atrybuty.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`name`|Wymagany. Identyfikuje nazwę aplikacji.|
-|`version`|Wymagany. Określa numer wersji aplikacji w następującym formacie: `major.minor.build.revision`|
+|`name`|Wymagane. Identyfikuje nazwę aplikacji.|
+|`version`|Wymagane. Określa numer wersji aplikacji w następującym formacie: `major.minor.build.revision`|
 |`publicKeyToken`|Opcjonalny. Określa 16-znakowy ciąg szesnastkowy, który reprezentuje ostatnie 8 bajtów `SHA-1` wartości skrótu klucza publicznego, w którym aplikacja lub zestaw są podpisane. Klucz publiczny używany do podpisywania wykazu musi mieć 2048 bitów lub więcej.|
 |`processorArchitecture`|Opcjonalny. Określa procesor. Prawidłowe wartości to `x86` 32-bitowy system Windows i `I64` dla systemu Windows 64-bit.|
 |`language`|Opcjonalny. Identyfikuje dwa kody języka części, takie jak EN-US, zestawu.|

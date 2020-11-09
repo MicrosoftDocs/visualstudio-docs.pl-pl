@@ -1,5 +1,7 @@
 ---
 title: Wdrażanie wymagań wstępnych dla aplikacji 64-bitowych | Microsoft Docs
+description: Informacje o pakietach redystrybucyjnych, których można użyć jako wymagań wstępnych dla wdrażania aplikacji ClickOnce na platformach 64-bitowych.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c70b58577f8aa6e391215658afb7f8fa43c9bb5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c051e57bb6af707e7bd5c096e230966e98498bd2
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62928891"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382913"
 ---
 # <a name="deploy-prerequisites-for-64-bit-applications"></a>Wdrażanie wstępnie wymaganych składników dla aplikacji 64-bitowych
 Wdrożenie ClickOnce obsługuje instalację aplikacji na platformach 64-bitowych. Platformy docelowe to **x86** dla platform 32-bitowych, **x64** dla maszyn obsługujących zestawy instrukcji amd64 i EM64T oraz **procesor Itanium** dla 64-bitowego procesora Itanium.

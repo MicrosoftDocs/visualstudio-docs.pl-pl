@@ -1,5 +1,7 @@
 ---
 title: Wdrożenie ClickOnce w systemie Windows Vista | Microsoft Docs
+description: Dowiedz się, jak program Visual Studio generuje zewnętrzny manifest funkcji kontroli konta użytkownika dla aplikacji ClickOnce i Registration-Free COM, które wymagają manifestu zewnętrznego.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,16 +19,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b76804eb8c06acbcdeac017108773056ee38338
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: c2e09225339a87c55c31d27d26b129e199385e99
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641490"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383082"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Wdrażanie technologii ClickOnce w systemie Windows Vista
 
-Tworzenie aplikacji w programie Visual Studio na potrzeby kontroli konta użytkownika w systemie Windows Vista zwykle generuje osadzony manifest zakodowany jako dane binarne XML w pliku wykonywalnym aplikacji.  Aplikacje COM i bezpłatnej rejestracji wymagają manifestu zewnętrznego, dlatego program Visual Studio generuje plik dla tych projektów zawierających dane UAC zamiast osadzonego manifestu. W przypadku wdrożeń ClickOnce i niebezpłatnych rejestracji COM program Visual Studio używa informacji z pliku o nazwie *App. manifest* do generowania informacji o zewnętrznym manifeście funkcji kontroli konta użytkownika. We wszystkich innych przypadkach program Visual Studio osadza dane funkcji Kontrola konta użytkownika w pliku wykonywalnym aplikacji.
+Tworzenie aplikacji w programie Visual Studio na potrzeby kontroli konta użytkownika w systemie Windows Vista zwykle generuje osadzony manifest zakodowany jako dane binarne XML w pliku wykonywalnym aplikacji.  Aplikacje ClickOnce i Registration-Free COM wymagają manifestu zewnętrznego, dlatego program Visual Studio generuje plik dla tych projektów zawierających dane kontroli konta użytkownika zamiast osadzonego manifestu. W przypadku wdrożeń ClickOnce i Registration-Free COM program Visual Studio używa informacji z pliku o nazwie *App. manifest* do generowania informacji o zewnętrznym manifeście funkcji kontroli konta użytkownika. We wszystkich innych przypadkach program Visual Studio osadza dane funkcji Kontrola konta użytkownika w pliku wykonywalnym aplikacji.
 
 Program Visual Studio udostępnia następujące opcje generowania manifestu:
 
@@ -36,7 +38,7 @@ Program Visual Studio udostępnia następujące opcje generowania manifestu:
 
 - Użyj manifestu zewnętrznego. Wygeneruj manifest zewnętrzny przy użyciu pliku *App. manifest*.
 
-   Spowoduje to wygenerowanie tylko manifestu zewnętrznego przy użyciu informacji w pliku *App. manifest*. Po opublikowaniu aplikacji przy użyciu technologii ClickOnce lub COM bez rejestracji program Visual Studio dodaje do projektu *App. manifest* , a następnie dodaje tę opcję.
+   Spowoduje to wygenerowanie tylko manifestu zewnętrznego przy użyciu informacji w pliku *App. manifest*. Po opublikowaniu aplikacji przy użyciu technologii ClickOnce lub Registration-Free COM program Visual Studio dodaje do projektu *App. manifest* , a następnie dodaje tę opcję.
 
 - Nie używaj manifestu. Utwórz aplikację bez manifestu.
 

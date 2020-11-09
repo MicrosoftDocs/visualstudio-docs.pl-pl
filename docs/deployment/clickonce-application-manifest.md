@@ -1,5 +1,7 @@
 ---
 title: Manifest aplikacji ClickOnce | Microsoft Docs
+description: Dowiedz się więcej na temat manifestu aplikacji ClickOnce, który jest plikiem XML, który opisuje aplikację wdrożoną przy użyciu technologii ClickOnce.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be9bfe19b92740d6be6c91802d193bf2fc401847
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13b84a256bfc9d13f8c17b92385df2106dc0a47d
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62928960"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383121"
 ---
 # <a name="clickonce-application-manifest"></a>Manifest aplikacji ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Manifest aplikacji to plik XML, który opisuje aplikację wdrożoną za pomocą programu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .
@@ -29,11 +31,11 @@ ms.locfileid: "62928960"
 
 | Element | Opis | Atrybuty |
 | - | - | - |
-| [\<assembly> Postaci](../deployment/assembly-element-clickonce-application.md) | Wymagany. Element najwyższego poziomu. | `manifestVersion` |
-| [\<assemblyIdentity> Postaci](../deployment/assemblyidentity-element-clickonce-application.md) | Wymagany. Identyfikuje podstawowy zestaw [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji. | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language` |
+| [\<assembly> Postaci](../deployment/assembly-element-clickonce-application.md) | Wymagane. Element najwyższego poziomu. | `manifestVersion` |
+| [\<assemblyIdentity> Postaci](../deployment/assemblyidentity-element-clickonce-application.md) | Wymagane. Identyfikuje podstawowy zestaw [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji. | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language` |
 | [\<trustInfo> Postaci](../deployment/trustinfo-element-clickonce-application.md) | Identyfikuje wymagania dotyczące zabezpieczeń aplikacji. | Brak |
-| [\<entryPoint> Postaci](../deployment/entrypoint-element-clickonce-application.md) | Wymagany. Identyfikuje punkt wejścia kodu aplikacji. | `name` |
-| [\<dependency> Postaci](../deployment/dependency-element-clickonce-application.md) | Wymagany. Identyfikuje każdą zależność wymaganą do uruchomienia aplikacji. Opcjonalnie identyfikuje zestawy, które muszą być preinstalowane. | Brak |
+| [\<entryPoint> Postaci](../deployment/entrypoint-element-clickonce-application.md) | Wymagane. Identyfikuje punkt wejścia kodu aplikacji. | `name` |
+| [\<dependency> Postaci](../deployment/dependency-element-clickonce-application.md) | Wymagane. Identyfikuje każdą zależność wymaganą do uruchomienia aplikacji. Opcjonalnie identyfikuje zestawy, które muszą być preinstalowane. | Brak |
 | [\<file> Postaci](../deployment/file-element-clickonce-application.md) | Opcjonalny. Identyfikuje każdy plik niezestawowy, który jest używany przez aplikację. Może zawierać dane izolacji Component Object Model (COM) skojarzone z plikiem. | `name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType` |
 | [\<fileAssociation> Postaci](../deployment/fileassociation-element-clickonce-application.md) | Opcjonalny. Identyfikuje rozszerzenie pliku, które ma być skojarzone z aplikacją. | `extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon` |
 

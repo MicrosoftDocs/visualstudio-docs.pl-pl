@@ -1,5 +1,7 @@
 ---
 title: '&lt;File — &gt; element (Aplikacja ClickOnce) | Microsoft Docs'
+description: Element pliku identyfikuje wszystkie pliki niezestawowe pobrane i używane przez aplikację. Element pliku jest opcjonalny.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -22,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9345f3f094e1c48204892cd40cca71a7e28eba7c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a4d09d4a0e141359b066f2af31c158f36c96522
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900282"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382744"
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;File — &gt; element (Aplikacja ClickOnce)
 Identyfikuje wszystkie pliki niezestawowe pobrane i używane przez aplikację.
@@ -88,8 +90,8 @@ Identyfikuje wszystkie pliki niezestawowe pobrane i używane przez aplikację.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`name`|Wymagany. Określa nazwę pliku.|
-|`size`|Wymagany. Określa rozmiar pliku w bajtach.|
+|`name`|Wymagane. Określa nazwę pliku.|
+|`size`|Wymagane. Określa rozmiar pliku w bajtach.|
 |`group`|Opcjonalne, jeśli `optional` atrybut nie jest określony lub ma wartość `false` ; wymagane, jeśli `optional` jest `true` . Nazwa grupy, do której należy ten plik. Nazwa może być dowolną wartością ciągu Unicode wybraną przez dewelopera i służy do pobierania plików na żądanie z <xref:System.Deployment.Application.ApplicationDeployment> klasą.|
 |`optional`|Opcjonalny. Określa, czy ten plik musi zostać pobrany podczas pierwszego uruchomienia aplikacji, czy plik powinien znajdować się tylko na serwerze, dopóki aplikacja nie zażąda tej aplikacji na żądanie. Jeśli `false` lub niezdefiniowany, plik zostanie pobrany podczas pierwszego uruchomienia lub zainstalowania aplikacji. Jeśli `true` `group` musi być określony, aby manifest aplikacji był prawidłowy. `optional` nie można wykonać wartości true, jeśli `writeableType` określono wartość `applicationData` .|
 |`writeableType`|Opcjonalny. Określa, że ten plik jest plikiem danych. Obecnie jedyna prawidłowa wartość to `applicationData` .|
@@ -99,9 +101,9 @@ Identyfikuje wszystkie pliki niezestawowe pobrane i używane przez aplikację.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`tlbid`|Wymagany. Identyfikator GUID przypisany do biblioteki typów.|
-|`version`|Wymagany. Numer wersji biblioteki typów.|
-|`helpdir`|Wymagany. Katalog zawierający pliki pomocy dla składnika. Może mieć długość 0.|
+|`tlbid`|Wymagane. Identyfikator GUID przypisany do biblioteki typów.|
+|`version`|Wymagane. Numer wersji biblioteki typów.|
+|`helpdir`|Wymagane. Katalog zawierający pliki pomocy dla składnika. Może mieć długość 0.|
 |`resourceid`|Opcjonalny. Szesnastkowa reprezentacja identyfikatora ustawień regionalnych (LCID). Jest to jeden do czterech cyfr szesnastkowych bez prefiksu 0x i bez zer wiodących. Identyfikator LCID może mieć neutralne identyfikatory języka.|
 |`flags`|Opcjonalny. Ciąg reprezentujący flagi biblioteki typów dla tej biblioteki typów. W przypadku powinna być to jeden z wartości "z OGRANICZENIAmi", "CONTROL", "HIDDEN" i "HASDISKIMAGE".|
 
@@ -110,7 +112,7 @@ Identyfikuje wszystkie pliki niezestawowe pobrane i używane przez aplikację.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`clsid`|Wymagany. Identyfikator klasy składnika COM wyrażony jako identyfikator GUID.|
+|`clsid`|Wymagane. Identyfikator klasy składnika COM wyrażony jako identyfikator GUID.|
 |`description`|Opcjonalny. Nazwa klasy.|
 |`threadingModel`|Opcjonalny. Model wątkowości używany przez klasy modelu COM w procesie. Jeśli ta właściwość ma wartość null, nie jest używany żaden model wątkowy. Składnik jest tworzony w głównym wątku klienta i wywołania z innych wątków są organizowane w tym wątku. Poniższa lista zawiera prawidłowe wartości:<br /><br /> `Apartment`, `Free` , `Both` i `Neutral` .|
 |`tlbid`|Opcjonalny. Identyfikator GUID dla biblioteki typów dla tego składnika COM.|
@@ -126,7 +128,7 @@ Identyfikuje wszystkie pliki niezestawowe pobrane i używane przez aplikację.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`iid`|Wymagany. Identyfikator interfejsu (IID) obsługiwany przez ten serwer proxy. Identyfikator IID musi zawierać nawiasy klamrowe.|
+|`iid`|Wymagane. Identyfikator interfejsu (IID) obsługiwany przez ten serwer proxy. Identyfikator IID musi zawierać nawiasy klamrowe.|
 |`baseInterface`|Opcjonalny. Identyfikator IID interfejsu, z którego pochodzi interfejs wywoływany przez program `iid` .|
 |`numMethods`|Opcjonalny. Liczba metod implementowanych przez interfejs.|
 |`name`|Opcjonalny. Nazwa interfejsu w postaci, w jakiej będzie wyświetlana w kodzie.|
@@ -138,7 +140,7 @@ Identyfikuje wszystkie pliki niezestawowe pobrane i używane przez aplikację.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`iid`|Wymagany. Identyfikator interfejsu (IID) obsługiwany przez ten serwer proxy. Identyfikator IID musi zawierać nawiasy klamrowe.|
+|`iid`|Wymagane. Identyfikator interfejsu (IID) obsługiwany przez ten serwer proxy. Identyfikator IID musi zawierać nawiasy klamrowe.|
 |`baseInterface`|Opcjonalny. Identyfikator IID interfejsu, z którego pochodzi interfejs wywoływany przez program `iid` .|
 |`numMethods`|Opcjonalny. Liczba metod implementowanych przez interfejs.|
 |`Name`|Opcjonalny. Nazwa interfejsu w postaci, w jakiej będzie wyświetlana w kodzie.|

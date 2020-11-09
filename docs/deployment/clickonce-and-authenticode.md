@@ -1,5 +1,7 @@
 ---
 title: ClickOnce i Authenticode | Microsoft Docs
+description: Dowiedz się więcej o certyfikatach używanych przez Authenticode do weryfikowania autentyczności aplikacji. Dowiedz się, jak certyfikaty są weryfikowane i przechowywane.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed7945dac94527df51dcdd601113f8874cd36142
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: 07b40cb9c4e1d79390bb4a0541e1cb5bd8862d3a
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641637"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383147"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce i podpis Authenticode
 *Authenticode* to technologia firmy Microsoft, która używa kryptografii standardowej w branży do podpisywania kodu aplikacji za pomocą certyfikatów cyfrowych, które weryfikują autentyczność wydawcy aplikacji. Użycie technologii Authenticode do wdrażania aplikacji [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zmniejsza ryzyko koń trojański. Koń trojański jest wirusem lub innym szkodliwym programem, który złośliwa osoba trzecia Niemniej reprezentuje jako legalny program pochodzący z ustalonego, wiarygodnego źródła. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Aby sprawdzić, czy zestawy i pliki nie zostały naruszone, należy wykonać dodatkowe czynności.
@@ -41,10 +43,10 @@ ms.locfileid: "89641637"
 
 - Odbierz jeden z grup w organizacji odpowiedzialnych za tworzenie certyfikatów cyfrowych.
 
-- Wygeneruj własny certyfikat przy użyciu polecenia cmdlet New-SelfSignedCertificate programu PowerShell lub za pomocą *MakeCert.exe*, który jest dołączony do programu [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] .
+- Wygeneruj własny certyfikat za pomocą polecenia cmdlet programu New-SelfSignedCertificate PowerShell lub za pomocą *MakeCert.exe* , który jest dołączony do programu [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] .
 
 ### <a name="how-using-certificate-authorities-helps-users"></a>Jak korzystanie z urzędów certyfikacji ułatwia użytkownikom
- Certyfikat wygenerowany przy użyciu polecenia New-SelfSignedCertificate lub narzędzia *MakeCert.exe* jest często nazywany certyfikatem *samodzielnego certyfikatu lub* *testem*. Ten rodzaj certyfikatu działa tak samo, jak plik *. snk* działa w .NET Framework. Składa się ona wyłącznie z publicznej/prywatnej pary kluczy kryptograficznych i nie zawiera informacji o zweryfikowaniu wydawcy. Za pomocą samoobsługi certyfikatów można wdrażać [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje z wysokim zaufaniem w intranecie. Jednak po uruchomieniu tych aplikacji na komputerze klienckim program [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zidentyfikuje je jako pochodzące od nieznanego wydawcy. Domyślnie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Aplikacje podpisane przy użyciu samoobsługi certyfikatów i wdrożone za pośrednictwem Internetu nie mogą korzystać z wdrożenia zaufanej aplikacji.
+ Certyfikat wygenerowany przy użyciu New-SelfSignedCertificate lub narzędzia *MakeCert.exe* jest często nazywany certyfikatem *samodzielnego certyfikatu* lub *testem*. Ten rodzaj certyfikatu działa tak samo, jak plik *. snk* działa w .NET Framework. Składa się ona wyłącznie z publicznej/prywatnej pary kluczy kryptograficznych i nie zawiera informacji o zweryfikowaniu wydawcy. Za pomocą samoobsługi certyfikatów można wdrażać [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje z wysokim zaufaniem w intranecie. Jednak po uruchomieniu tych aplikacji na komputerze klienckim program [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zidentyfikuje je jako pochodzące od nieznanego wydawcy. Domyślnie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Aplikacje podpisane przy użyciu samoobsługi certyfikatów i wdrożone za pośrednictwem Internetu nie mogą korzystać z wdrożenia zaufanej aplikacji.
 
  Z drugiej strony, jeśli otrzymasz certyfikat od urzędu certyfikacji, na przykład dostawcy certyfikatu lub działu w przedsiębiorstwie, certyfikat ten zapewnia większe bezpieczeństwo użytkowników. Nie tylko identyfikuje wydawcę podpisanego oprogramowania, ale weryfikuje tę tożsamość, sprawdzając urząd certyfikacji, który go podpisał. Jeśli urząd certyfikacji nie jest urzędem głównym, w celu sprawdzenia, czy urząd certyfikacji jest autoryzowany do wystawiania certyfikatów, będzie również "łańcuch" z powrotem do urzędu głównego. Aby zwiększyć bezpieczeństwo, należy użyć certyfikatu wystawionego przez urząd certyfikacji, jeśli jest to możliwe.
 
@@ -64,7 +66,7 @@ ms.locfileid: "89641637"
 
 ### <a name="store-certificates"></a>Certyfikaty magazynu
 
-- Certyfikaty można przechowywać jako plik *PFX* w systemie plików lub przechowywać je wewnątrz kontenera kluczy. Użytkownik w domenie systemu Windows może mieć wiele kontenerów kluczy. Domyślnie *MakeCert.exe* będą przechowywać certyfikaty w prywatnym kontenerze kluczy, chyba że zostanie określona, że powinna zapisać ją w pliku *PFX* . *Mage.exe* i *MageUI.exe*, [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] Narzędzia do tworzenia [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożeń, umożliwiają korzystanie z certyfikatów przechowywanych w jeden sposób.
+- Certyfikaty można przechowywać jako plik *PFX* w systemie plików lub przechowywać je wewnątrz kontenera kluczy. Użytkownik w domenie systemu Windows może mieć wiele kontenerów kluczy. Domyślnie *MakeCert.exe* będą przechowywać certyfikaty w prywatnym kontenerze kluczy, chyba że zostanie określona, że powinna zapisać ją w pliku *PFX* . *Mage.exe* i *MageUI.exe* , [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] Narzędzia do tworzenia [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożeń, umożliwiają korzystanie z certyfikatów przechowywanych w jeden sposób.
 
 ## <a name="see-also"></a>Zobacz też
 - [Zabezpieczenia i wdrażanie technologii ClickOnce](../deployment/clickonce-security-and-deployment.md)

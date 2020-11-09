@@ -1,5 +1,7 @@
 ---
 title: Wdrażanie składników COM za pomocą technologii ClickOnce | Microsoft Docs
+description: Informacje o krokach niezbędnych do wdrożenia aplikacji .NET w technologii ClickOnce, które zawierają starsze składniki COM.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,24 +20,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7032ec5ae03febf6c54978020379769ac742a136
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4fc6ef0e4d682f0f712eefc4c139895331c31688
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64804449"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382926"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>Wdrażanie składników COM za pomocą technologii ClickOnce
 Wdrożenie starszych składników COM było tradycyjnie trudnym zadaniem. Składniki muszą być zarejestrowane globalnie i w ten sposób mogą spowodować niepożądane skutki uboczne między nakładającymi się aplikacjami. Ta sytuacja zazwyczaj nie jest problemem w aplikacjach .NET Framework, ponieważ składniki są całkowicie izolowane do aplikacji lub są zgodne ze sobą. Program Visual Studio umożliwia wdrażanie izolowanych składników COM w systemie operacyjnym Windows XP lub nowszym.
 
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zapewnia łatwy i bezpieczny mechanizm wdrażania aplikacji .NET. Jeśli jednak aplikacje korzystają ze starszych składników modelu COM, należy wykonać dodatkowe kroki w celu ich wdrożenia. W tym temacie opisano sposób wdrażania izolowanych składników COM i odwołań do natywnych składników (na przykład z Visual Basic 6,0 lub Visual C++).
 
- Aby uzyskać więcej informacji na temat wdrażania izolowanych składników COM, zobacz [uproszczenie wdrażania aplikacji za pomocą technologii ClickOnce i com bez rejestracji](https://web.archive.org/web/20050326005413/msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx).
+ Aby uzyskać więcej informacji na temat wdrażania izolowanych składników COM, zobacz [uproszczenie wdrażania aplikacji przy użyciu technologii ClickOnce i Registration-Free com](https://web.archive.org/web/20050326005413/msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx).
 
 ## <a name="registration-free-com"></a>COM bez rejestracji
  COM bez rejestracji to nowa technologia wdrażania i aktywowania izolowanych składników COM. Działa przez umieszczenie wszystkich informacji o bibliotece typów składników i informacje o rejestracji, które są zazwyczaj instalowane w rejestrze systemu do pliku XML o nazwie Manifest, przechowywane w tym samym folderze, w którym znajduje się aplikacja.
 
- Izolowanie składnika modelu COM wymaga, aby był on zarejestrowany na komputerze dewelopera, ale nie musi być zarejestrowany na komputerze użytkownika końcowego. Aby izolować składnik modelu COM, wystarczy ustawić właściwość **izolowany** odwołania na **wartość true**. Domyślnie ta właściwość ma wartość **false**, co oznacza, że powinna być traktowana jako zarejestrowane odwołanie com. Jeśli ta właściwość ma **wartość true**, powoduje to wygenerowanie manifestu dla tego składnika w czasie kompilacji. Powoduje również, że odpowiednie pliki zostaną skopiowane do folderu aplikacji podczas instalacji.
+ Izolowanie składnika modelu COM wymaga, aby był on zarejestrowany na komputerze dewelopera, ale nie musi być zarejestrowany na komputerze użytkownika końcowego. Aby izolować składnik modelu COM, wystarczy ustawić właściwość **izolowany** odwołania na **wartość true**. Domyślnie ta właściwość ma wartość **false** , co oznacza, że powinna być traktowana jako zarejestrowane odwołanie com. Jeśli ta właściwość ma **wartość true** , powoduje to wygenerowanie manifestu dla tego składnika w czasie kompilacji. Powoduje również, że odpowiednie pliki zostaną skopiowane do folderu aplikacji podczas instalacji.
 
  Gdy Generator manifestu napotyka odizolowane odwołanie COM, wylicza wszystkie `CoClass` wpisy w bibliotece typów składnika, dopasowuje każdy wpis z odpowiednimi danymi rejestracyjnymi i generuje definicje manifestu dla wszystkich klas com w pliku biblioteki typów.
 
@@ -57,14 +59,14 @@ Wdrożenie starszych składników COM było tradycyjnie trudnym zadaniem. Skład
 
 ##### <a name="to-create-a-native-com-component"></a>Aby utworzyć natywny składnik COM
 
-1. Korzystając z Visual Basic 6,0, w menu **plik** kliknij polecenie **Nowy**, a następnie pozycję **projekt**.
+1. Korzystając z Visual Basic 6,0, w menu **plik** kliknij polecenie **Nowy** , a następnie pozycję **projekt**.
 
 2. W oknie dialogowym **Nowy projekt** wybierz węzeł **Visual Basic** i wybierz projekt **ActiveX DLL** . W polu **Nazwa** wpisz `VB6Hello`.
 
     > [!NOTE]
     > W przypadku modelu COM bez rejestracji są obsługiwane tylko typy projektów ActiveX DLL i ActiveX Control. Nie są obsługiwane typy projektów ActiveX EXE i dokumentów ActiveX.
 
-3. W **Eksplorator rozwiązań**kliknij dwukrotnie pozycję **Class1. vb** , aby otworzyć Edytor tekstu.
+3. W **Eksplorator rozwiązań** kliknij dwukrotnie pozycję **Class1. vb** , aby otworzyć Edytor tekstu.
 
 4. W Class1. vb Dodaj następujący kod po wygenerowaniu kodu dla `New` metody:
 
@@ -83,11 +85,11 @@ Wdrożenie starszych składników COM było tradycyjnie trudnym zadaniem. Skład
 
 ##### <a name="to-create-a-windows-based-application-using-a-com-component"></a>Aby utworzyć aplikację opartą na systemie Windows przy użyciu składnika COM
 
-1. Korzystając z Visual Basic, w menu **plik** kliknij polecenie **Nowy**, a następnie **projekt**.
+1. Korzystając z Visual Basic, w menu **plik** kliknij polecenie **Nowy** , a następnie **projekt**.
 
 2. W oknie dialogowym **Nowy projekt** wybierz węzeł **Visual Basic** i wybierz pozycję **aplikacja systemu Windows**. W polu **Nazwa** wpisz `RegFreeComDemo`.
 
-3. W **Eksplorator rozwiązań**kliknij przycisk **Pokaż wszystkie pliki** , aby wyświetlić odwołania do projektu.
+3. W **Eksplorator rozwiązań** kliknij przycisk **Pokaż wszystkie pliki** , aby wyświetlić odwołania do projektu.
 
 4. Kliknij prawym przyciskiem myszy węzeł **odwołania** i wybierz polecenie **Dodaj odwołanie** z menu kontekstowego.
 
@@ -95,7 +97,7 @@ Wdrożenie starszych składników COM było tradycyjnie trudnym zadaniem. Skład
 
     Odwołanie **VB6Hello** pojawia się na liście odwołań.
 
-6. Wskaż **Przybornik**, wybierz kontrolkę **przycisk** i przeciągnij ją do formularza **Form1** .
+6. Wskaż **Przybornik** , wybierz kontrolkę **przycisk** i przeciągnij ją do formularza **Form1** .
 
 7. W oknie **Właściwości** ustaw właściwość **Text** przycisku na **Hello**.
 
@@ -116,7 +118,7 @@ Wdrożenie starszych składników COM było tradycyjnie trudnym zadaniem. Skład
 
 ##### <a name="to-isolate-a-com-component"></a>Aby wyizolować składnik COM
 
-1. W **Eksplorator rozwiązań**w węźle **odwołania** wybierz odwołanie **VB6Hello** .
+1. W **Eksplorator rozwiązań** w węźle **odwołania** wybierz odwołanie **VB6Hello** .
 
 2. W oknie **Właściwości** Zmień wartość właściwości **izolowanej** z **false** na **true**.
 

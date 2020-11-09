@@ -1,5 +1,7 @@
 ---
 title: '&lt;Commands — &gt; element (program inicjujący) | Microsoft Docs'
+description: Element Commands implementuje testy w elementach pod InstallChecks i deklaruje pakiet do zainstalowania, jeśli test programu inicjującego ClickOnce zakończy się niepowodzeniem.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f52c862adcdaf7a95de6a90c2c330c39edcea13
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 65c63d52290962d8c9878edf025bbc05487103da
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900347"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383056"
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;Commands — &gt; element (program inicjujący)
 `Commands`Element implementuje testy opisane przez elementy poniżej `InstallChecks` elementu i deklaruje pakiet, który program [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] inicjujący powinien zainstalować, jeśli test zakończy się niepowodzeniem.
@@ -77,7 +79,7 @@ ms.locfileid: "62900347"
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`PackageFile`|Wymagany. Nazwa pakietu do zainstalowania powinna mieć co najmniej jeden warunek określony przez `InstallConditions` zwrócenie wartości false. Pakiet musi być zdefiniowany w tym samym pliku przy użyciu `PackageFile` elementu.|
+|`PackageFile`|Wymagane. Nazwa pakietu do zainstalowania powinna mieć co najmniej jeden warunek określony przez `InstallConditions` zwrócenie wartości false. Pakiet musi być zdefiniowany w tym samym pliku przy użyciu `PackageFile` elementu.|
 |`Arguments`|Opcjonalny. Zestaw argumentów wiersza polecenia do przekazania do pliku pakietu.|
 |`EstimatedInstallSeconds`|Opcjonalny. Szacowany czas, w sekundach, zajmie się instalacją pakietu. Ta wartość określa rozmiar paska postępu wyświetlanego użytkownikowi przez program inicjujący. Wartość domyślna to 0, w tym przypadku nie określono oszacowania czasu.|
 |`EstimatedDiskBytes`|Opcjonalny. Szacowana ilość miejsca na dysku (w bajtach), którą zajmie pakiet po zakończeniu instalacji. Ta wartość jest używana w wymaganiach dotyczących miejsca na dysku twardym, które program inicjujący wyświetla użytkownikowi. Wartość domyślna to 0, w takim przypadku program inicjujący nie wyświetla żadnych wymagań dotyczących miejsca na dysku twardym.|
@@ -94,9 +96,9 @@ ms.locfileid: "62900347"
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`Property`|Wymagany. Nazwa właściwości do przetestowania. Właściwość musi wcześniej być zdefiniowana przez `InstallChecks` element podrzędny elementu. Aby uzyskać więcej informacji, zobacz [ \<InstallChecks> element](../deployment/installchecks-element-bootstrapper.md).|
-|`Compare`|Wymagany. Typ porównania do wykonania. Poniższa lista zawiera prawidłowe wartości:<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|
-|`Value`|Wymagany. Wartość do porównania z właściwością.|
+|`Property`|Wymagane. Nazwa właściwości do przetestowania. Właściwość musi wcześniej być zdefiniowana przez `InstallChecks` element podrzędny elementu. Aby uzyskać więcej informacji, zobacz [ \<InstallChecks> element](../deployment/installchecks-element-bootstrapper.md).|
+|`Compare`|Wymagane. Typ porównania do wykonania. Poniższa lista zawiera prawidłowe wartości:<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|
+|`Value`|Wymagane. Wartość do porównania z właściwością.|
 |`Schedule`|Opcjonalny. Nazwa `Schedule` tagu, który definiuje, kiedy ta reguła powinna być Szacowana.|
 
 ## <a name="failif"></a>FailIf
@@ -106,9 +108,9 @@ ms.locfileid: "62900347"
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`Property`|Wymagany. Nazwa właściwości do przetestowania. Właściwość musi wcześniej być zdefiniowana przez `InstallChecks` element podrzędny elementu. Aby uzyskać więcej informacji, zobacz [ \<InstallChecks> element](../deployment/installchecks-element-bootstrapper.md).|
-|`Compare`|Wymagany. Typ porównania do wykonania. Poniższa lista zawiera prawidłowe wartości:<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|
-|`Value`|Wymagany. Wartość do porównania z właściwością.|
+|`Property`|Wymagane. Nazwa właściwości do przetestowania. Właściwość musi wcześniej być zdefiniowana przez `InstallChecks` element podrzędny elementu. Aby uzyskać więcej informacji, zobacz [ \<InstallChecks> element](../deployment/installchecks-element-bootstrapper.md).|
+|`Compare`|Wymagane. Typ porównania do wykonania. Poniższa lista zawiera prawidłowe wartości:<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|
+|`Value`|Wymagane. Wartość do porównania z właściwością.|
 |`String`|Opcjonalny. Tekst, który ma być wyświetlany użytkownikowi w przypadku niepowodzenia.|
 |`Schedule`|Opcjonalny. Nazwa `Schedule` tagu, który definiuje, kiedy ta reguła powinna być Szacowana.|
 
@@ -120,8 +122,8 @@ ms.locfileid: "62900347"
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`Value`|Wymagany. Wartość kodu zakończenia, do której `ExitCode` ma zastosowanie ten element.|
-|`Result`|Wymagany. Jak instalacja powinna reagować na ten kod zakończenia. Poniższa lista zawiera prawidłowe wartości:<br /><br /> `Success`. Flaguje pakiet jako pomyślnie zainstalowany.<br /><br /> `SuccessReboot`. Flaguje pakiet jako pomyślnie zainstalowany i instruuje system do ponownego uruchomienia.<br /><br /> `Fail`. Flaguje pakiet jako niepowodzenie.<br /><br /> `FailReboot`. Flaguje pakiet jako zakończony niepowodzeniem i powoduje ponowne uruchomienie systemu.|
+|`Value`|Wymagane. Wartość kodu zakończenia, do której `ExitCode` ma zastosowanie ten element.|
+|`Result`|Wymagane. Jak instalacja powinna reagować na ten kod zakończenia. Poniższa lista zawiera prawidłowe wartości:<br /><br /> `Success`. Flaguje pakiet jako pomyślnie zainstalowany.<br /><br /> `SuccessReboot`. Flaguje pakiet jako pomyślnie zainstalowany i instruuje system do ponownego uruchomienia.<br /><br /> `Fail`. Flaguje pakiet jako niepowodzenie.<br /><br /> `FailReboot`. Flaguje pakiet jako zakończony niepowodzeniem i powoduje ponowne uruchomienie systemu.|
 |`String`|Opcjonalny. Wartość, która ma zostać wyświetlona dla użytkownika w odpowiedzi na ten kod zakończenia.|
 |`FormatMessageFromSystem`|Opcjonalny. Określa, czy należy użyć komunikatu o błędzie dostarczonego przez system odpowiadającego kodowi zakończenia lub użyć wartości podanej w `String` . Prawidłowe wartości to `true` , co oznacza użycie błędu dostarczonego przez system i `false` , który oznacza użycie ciągu dostarczonego przez `String` . Wartość domyślna to `false`. Jeśli ta właściwość ma `false` wartość, ale `String` nie jest ustawiona, zostanie użyty błąd dostarczony przez system.|
 

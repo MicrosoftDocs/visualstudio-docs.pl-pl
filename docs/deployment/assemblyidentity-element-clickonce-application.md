@@ -1,5 +1,7 @@
 ---
 title: '&lt;assemblyIdentity, &gt; element (Aplikacja ClickOnce) | Microsoft Docs'
+description: Element assemblyIdentity jest wymagany w aplikacji ClickOnce. Nie zawiera żadnych elementów podrzędnych i zawiera atrybuty opisane w tym artykule.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7870fcf644103ec7f048a809e439cb962f63bd07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c86d5d1fd1e25b498405197b68efd9553ed64f16
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900670"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383212"
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-application"></a>&lt;assemblyIdentity, &gt; element (Aplikacja ClickOnce)
 Identyfikuje aplikację wdrożoną we [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożeniu.
@@ -44,11 +46,11 @@ Identyfikuje aplikację wdrożoną we [!INCLUDE[ndptecclick](../deployment/inclu
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`Name`|Wymagany. Identyfikuje nazwę aplikacji.<br /><br /> Jeśli `Name` zawiera znaki specjalne, takie jak pojedyncze lub podwójne cudzysłowy, uruchomienie aplikacji może się nie powieść.|
-|`Version`|Wymagany. Określa numer wersji aplikacji w następującym formacie: `major.minor.build.revision`|
+|`Name`|Wymagane. Identyfikuje nazwę aplikacji.<br /><br /> Jeśli `Name` zawiera znaki specjalne, takie jak pojedyncze lub podwójne cudzysłowy, uruchomienie aplikacji może się nie powieść.|
+|`Version`|Wymagane. Określa numer wersji aplikacji w następującym formacie: `major.minor.build.revision`|
 |`publicKeyToken`|Opcjonalny. Określa 16-znakowy ciąg szesnastkowy, który reprezentuje ostatnie 8 bajtów `SHA-1` wartości skrótu klucza publicznego, w którym aplikacja lub zestaw są podpisane. Klucz publiczny używany do podpisywania wykazu musi mieć wartość 2048 bitów lub większą.<br /><br /> Chociaż podpisywanie zestawu jest zalecane, ale opcjonalne, ten atrybut jest wymagany. Jeśli zestaw nie jest podpisany, należy skopiować wartość z zestawu z podpisem własnym lub użyć wartości "fikcyjnej" wszystkich zer.|
-|`processorArchitecture`|Wymagany. Określa procesor. Prawidłowe wartości są `msil` dla wszystkich procesorów, `x86` 32-bitowych systemu Windows, `IA64` dla 64-bitowego systemu Windows oraz `Itanium` dla procesorów Intel 64-bit.|
-|`language`|Wymagany. Identyfikuje dwa kody języka części (na przykład `en-US` ) zestawu. Ten element znajduje się w `asmv2` przestrzeni nazw. Jeśli nie zostanie określony, wartość domyślna to `neutral` .|
+|`processorArchitecture`|Wymagane. Określa procesor. Prawidłowe wartości są `msil` dla wszystkich procesorów, `x86` 32-bitowych systemu Windows, `IA64` dla 64-bitowego systemu Windows oraz `Itanium` dla procesorów Intel 64-bit.|
+|`language`|Wymagane. Identyfikuje dwa kody języka części (na przykład `en-US` ) zestawu. Ten element znajduje się w `asmv2` przestrzeni nazw. Jeśli nie zostanie określony, wartość domyślna to `neutral` .|
 
 ## <a name="examples"></a>Przykłady
 

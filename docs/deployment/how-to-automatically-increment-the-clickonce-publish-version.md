@@ -1,5 +1,6 @@
 ---
 title: Autozwiększ wersję publikacji ClickOnce
+description: Dowiedz się, jak wyłączyć automatyczne zwiększanie numeru poprawki dla aplikacji ClickOnce przy użyciu programu Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6267e75db2e2a23d01368cdaa822d835cb8b844
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: b4d39654134177f3936bd2fbe72b6786ca9cf03c
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809797"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382627"
 ---
 # <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>Instrukcje: automatyczne zwiększanie wersji publikacji ClickOnce
 
@@ -36,7 +37,7 @@ To zachowanie można wyłączyć na stronie **Publikowanie** **projektanta proje
 
 ## <a name="to-disable-automatically-incrementing-the-publish-version"></a>Aby wyłączyć automatyczne zwiększanie wersji publikacji
 
-1. Po wybraniu projektu w **Eksplorator rozwiązań**, w menu **projekt** kliknij polecenie **Właściwości**.
+1. Po wybraniu projektu w **Eksplorator rozwiązań** , w menu **projekt** kliknij polecenie **Właściwości**.
 
 2. Kliknij kartę **Publikowanie** .
 

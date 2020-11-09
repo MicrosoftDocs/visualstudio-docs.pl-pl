@@ -1,5 +1,6 @@
 ---
 title: Powiązywanie kontrolek z danymi
+description: Powiązywanie kontrolek z danymi w programie Visual Studio. Twórz formanty powiązane z danymi, przeciągając elementy z okna źródła danych.
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3d812316de46caf7480146003f7ba1950ae3b9e2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f92382721558d76cf9e84fa587b322d56af72247
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283037"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382172"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Wiązanie kontrolek z danymi w programie Visual Studio
 
@@ -45,7 +46,7 @@ W kontekście powiązania danych źródło danych reprezentuje dane w pamięci, 
 
 ## <a name="data-sources-window"></a>Data Sources — Okno
 
-Źródła danych są dostępne dla projektu jako elementy w oknie **źródła danych** . To okno jest widoczne, gdy powierzchnia projektu formularza jest aktywnym oknem w projekcie lub można ją otworzyć (gdy projekt jest otwarty), wybierając opcję **Wyświetl**  >  **inne**  >  **źródła danych**systemu Windows. Możesz przeciągnąć elementy z tego okna, aby utworzyć formanty, które są powiązane z danymi źródłowymi, a także skonfigurować źródła danych, klikając je prawym przyciskiem myszy.
+Źródła danych są dostępne dla projektu jako elementy w oknie **źródła danych** . To okno jest widoczne, gdy powierzchnia projektu formularza jest aktywnym oknem w projekcie lub można ją otworzyć (gdy projekt jest otwarty), wybierając opcję **Wyświetl**  >  **inne**  >  **źródła danych** systemu Windows. Możesz przeciągnąć elementy z tego okna, aby utworzyć formanty, które są powiązane z danymi źródłowymi, a także skonfigurować źródła danych, klikając je prawym przyciskiem myszy.
 
 ![Data Sources — Okno](../data-tools/media/raddata-data-sources-window.png)
 

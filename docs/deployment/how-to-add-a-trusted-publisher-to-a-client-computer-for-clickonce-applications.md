@@ -1,5 +1,6 @@
 ---
 title: Dodawanie zaufanego wydawcy do programu Box Client (ClickOnce)
+description: Dowiedz się, jak dodać certyfikat do komputera klienckiego, aby aplikacje ClickOnce działały na wyższym poziomie zaufania bez monitowania użytkownika.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4146efe0790e2bfd4abfa9e30897811aba182916
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: cef5eb1df80c7fffcc4a938504e82cac2aa3ae46
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809810"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382705"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>Instrukcje: Dodawanie zaufanego wydawcy do komputera klienckiego dla aplikacji ClickOnce
 Dzięki wdrożeniu zaufanej aplikacji można skonfigurować komputery klienckie w taki sposób, aby [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje były uruchamiane z wyższym poziomem zaufania bez monitowania użytkownika. W poniższych procedurach pokazano, jak za pomocą narzędzia wiersza polecenia CertMgr.exe dodać certyfikat wydawcy do magazynu zaufanych wydawców na komputerze klienckim.
@@ -39,7 +40,7 @@ Dzięki wdrożeniu zaufanej aplikacji można skonfigurować komputery klienckie 
 
 1. Uzyskaj certyfikat cyfrowy od urzędu certyfikacji.
 
-2. Wyeksportuj certyfikat do formatu Base64 X. 509 (*. cer*). Aby uzyskać więcej informacji na temat formatów certyfikatów, zobacz [Eksportowanie certyfikatu](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
+2. Wyeksportuj certyfikat do formatu Base64 X. 509 ( *. cer* ). Aby uzyskać więcej informacji na temat formatów certyfikatów, zobacz [Eksportowanie certyfikatu](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
 
 3. W wierszu polecenia na komputerach klienckich Uruchom następujące polecenie:
 
@@ -49,7 +50,7 @@ Dzięki wdrożeniu zaufanej aplikacji można skonfigurować komputery klienckie 
 
 1. Uzyskaj certyfikat cyfrowy od urzędu certyfikacji.
 
-2. Wyeksportuj certyfikat do formatu Base64 X. 509 (*. cer*). Aby uzyskać więcej informacji na temat formatów certyfikatów, zobacz [Eksportowanie certyfikatu](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
+2. Wyeksportuj certyfikat do formatu Base64 X. 509 ( *. cer* ). Aby uzyskać więcej informacji na temat formatów certyfikatów, zobacz [Eksportowanie certyfikatu](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
 
 3. W wierszu polecenia na komputerach klienckich Uruchom następujące polecenie:
 

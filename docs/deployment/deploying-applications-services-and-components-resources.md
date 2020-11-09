@@ -1,8 +1,10 @@
 ---
 title: Wdrażanie aplikacji Visual Studio w folderze, usługach IIS, na platformie Azure lub w innym miejscu docelowym
 titleSuffix: ''
-description: Dowiedz się więcej o opcjach publikowania aplikacji za pomocą Kreatora publikacji
-ms.custom: contperfq1
+description: Dowiedz się więcej o opcjach publikowania aplikacji za pomocą narzędzia do publikowania.
+ms.custom:
+- SEO-VS-2020
+- contperfq1
 ms.date: 08/21/2020
 ms.topic: troubleshooting
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bc551a6e9bf4e05db61ddeb2480e218ebb3c925
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: f8c4a1effcf61348d2f2267fb38164fd166f7d48
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928531"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382975"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>Wdrażanie aplikacji w folderze, usługach IIS, na platformie Azure lub w innym miejscu docelowym
 
@@ -209,7 +211,7 @@ Aby uzyskać pomoc w rozwiązywaniu problemów ASP.NET Core w usługach IIS, zob
 
 ## <a name="import-profile"></a>Importuj profil
 
-Możesz zaimportować profil podczas publikowania w usługach IIS lub Azure App Service. Wdrożenie można skonfigurować przy użyciu *pliku ustawień publikowania* (* \* . publishsettings*). Plik ustawień publikowania jest tworzony przez usługi IIS lub Azure App Service lub można go utworzyć ręcznie, a następnie można go zaimportować do programu Visual Studio.
+Możesz zaimportować profil podczas publikowania w usługach IIS lub Azure App Service. Wdrożenie można skonfigurować przy użyciu *pliku ustawień publikowania* ( *\* . publishsettings* ). Plik ustawień publikowania jest tworzony przez usługi IIS lub Azure App Service lub można go utworzyć ręcznie, a następnie można go zaimportować do programu Visual Studio.
 
 Użycie pliku ustawień publikowania może uprościć konfigurację wdrożenia i działać lepiej w środowisku zespołu, a jednocześnie ręcznie skonfigurować każdy profil wdrożenia.
 

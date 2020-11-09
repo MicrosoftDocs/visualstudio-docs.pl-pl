@@ -1,5 +1,7 @@
 ---
 title: Tworzenie niestandardowych pakietów programu inicjującego
+description: Dowiedz się więcej o programie instalacyjnym i sposobach używania manifestów XML, które określają metadane do zarządzania instalacją składników technologii ClickOnce.
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2018
 ms.topic: conceptual
 dev_langs:
@@ -20,15 +22,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 17ac6fdb6b2eaf80d927407e717954842f6e6b1b
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: 4ffa19de6abff0bb73c91c4a8e79d707d0941e00
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641658"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383017"
 ---
 # <a name="create-bootstrapper-packages"></a>Tworzenie niestandardowych pakietów programu inicjującego
-Program instalacyjny jest instalatorem ogólnym, który można skonfigurować w celu wykrywania i instalowania składników redystrybucyjnych, takich jak pliki Instalator Windows (*MSI*) i programy wykonywalne. Instalator jest również znany jako program inicjujący. Jest on zaprogramowany przez zestaw manifestów XML, które określają metadane do zarządzania instalacją składnika.  Każdy składnik redystrybucyjny lub warunek wstępny, który jest wyświetlany w oknie dialogowym **wymagania wstępne** dla technologii ClickOnce, jest pakietem programu inicjującego. Pakiet programu inicjującego to grupa katalogów i plików, które zawierają pliki manifestu opisujące, jak należy zainstalować wymaganie wstępne.
+Program instalacyjny jest instalatorem ogólnym, który można skonfigurować w celu wykrywania i instalowania składników redystrybucyjnych, takich jak pliki Instalator Windows ( *MSI* ) i programy wykonywalne. Instalator jest również znany jako program inicjujący. Jest on zaprogramowany przez zestaw manifestów XML, które określają metadane do zarządzania instalacją składnika.  Każdy składnik redystrybucyjny lub warunek wstępny, który jest wyświetlany w oknie dialogowym **wymagania wstępne** dla technologii ClickOnce, jest pakietem programu inicjującego. Pakiet programu inicjującego to grupa katalogów i plików, które zawierają pliki manifestu opisujące, jak należy zainstalować wymaganie wstępne.
 
 Program inicjujący najpierw wykrywa, czy którykolwiek z wymagań wstępnych jest już zainstalowany. Jeśli wymagania wstępne nie są zainstalowane, program inicjujący wyświetli umowy licencyjne. Po drugie, po zaakceptowaniu przez użytkownika końcowego umów licencyjnych instalacja rozpocznie się w przypadku wymagań wstępnych. W przeciwnym razie, jeśli zostaną wykryte wszystkie wymagania wstępne, program inicjujący rozpocznie pracę Instalatora aplikacji.
 
@@ -37,9 +39,9 @@ Można wygenerować manifesty programu inicjującego za pomocą edytora XML w pr
 
 Aby utworzyć pakiet programu inicjującego, należy utworzyć manifest produktu i, dla każdej zlokalizowanej wersji składnika, również manifest pakietu.
 
-* Manifest produktu, *product.xml*, zawiera wszelkie metadane niezależne od języka dla pakietu. Zawiera metadane wspólne dla wszystkich zlokalizowanych wersji składnika redystrybucyjnego.  Aby utworzyć ten plik, zobacz [jak: Tworzenie manifestu produktu](../deployment/how-to-create-a-product-manifest.md).
+* Manifest produktu, *product.xml* , zawiera wszelkie metadane niezależne od języka dla pakietu. Zawiera metadane wspólne dla wszystkich zlokalizowanych wersji składnika redystrybucyjnego.  Aby utworzyć ten plik, zobacz [jak: Tworzenie manifestu produktu](../deployment/how-to-create-a-product-manifest.md).
 
-* Manifest pakietu, *package.xml*, zawiera metadane specyficzne dla języka; zwykle zawiera zlokalizowane komunikaty o błędach. Składnik musi mieć co najmniej jeden manifest pakietu dla każdej zlokalizowanej wersji tego składnika. Aby utworzyć ten plik, zobacz [How to: Create a Package manifest](../deployment/how-to-create-a-package-manifest.md).
+* Manifest pakietu, *package.xml* , zawiera metadane specyficzne dla języka; zwykle zawiera zlokalizowane komunikaty o błędach. Składnik musi mieć co najmniej jeden manifest pakietu dla każdej zlokalizowanej wersji tego składnika. Aby utworzyć ten plik, zobacz [How to: Create a Package manifest](../deployment/how-to-create-a-package-manifest.md).
 
 Po utworzeniu tych plików Umieść plik manifestu produktu w folderze o nazwie niestandardowego programu inicjującego. Plik manifestu pakietu przechodzi do folderu o nazwie dla ustawień regionalnych. Jeśli na przykład plik manifestu pakietu jest przeznaczony do redystrybucji w języku angielskim, należy umieścić go w folderze o nazwie en. Powtórz ten proces dla każdego ustawienia regionalnego, takiego jak ja dla języka japońskiego i Cofnij dla języka niemieckiego. Ostatni niestandardowy pakiet programu inicjującego może mieć następującą strukturę folderów.
 
@@ -109,7 +111,7 @@ Można zapobiec wdrażaniu plików redystrybucyjnych w projektach instalacyjnych
 
 `%ProgramFiles%\Microsoft.NET\RedistList`
 
-Lista redystrybucyjna to plik XML, który należy nazwać, używając następującego formatu: * \<Company Name> . \<Component Name>.RedistList.xml*. Tak więc, na przykład, jeśli składnik jest wywoływany przez Acme, użyj *Acme.DataWidgets.RedistList.xml*. Przykład zawartości listy redystrybucyjnej może wyglądać następująco:
+Lista redystrybucyjna to plik XML, który należy nazwać, używając następującego formatu: *\<Company Name> . \<Component Name>.RedistList.xml*. Tak więc, na przykład, jeśli składnik jest wywoływany przez Acme, użyj *Acme.DataWidgets.RedistList.xml*. Przykład zawartości listy redystrybucyjnej może wyglądać następująco:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
