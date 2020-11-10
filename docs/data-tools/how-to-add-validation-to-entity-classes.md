@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: dodawanie walidacji do klas jednostek'
+description: Zapoznaj się z tematem Dodawanie walidacji do klas jednostek. Dodawanie walidacji zmian do wartości w określonej kolumnie. Dodaj weryfikację dla aktualizacji klasy jednostki.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5d408c67b2e54fecd6404bac93d93ecfb35de162
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4f367cf799dd00b8b442870554e499e5405865cb
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282348"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435107"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Instrukcje: dodawanie walidacji do klas jednostek
 *Sprawdzanie poprawności* klas jednostek jest procesem potwierdzania, że wartości wprowadzone do obiektów danych są zgodne z ograniczeniami w schemacie obiektu, a także z regułami ustanowionymi dla aplikacji. Sprawdzanie poprawności danych przed wysłaniem aktualizacji do podstawowej bazy danych jest dobrym sposobem na zmniejszenie błędów. Zmniejsza również potencjalną liczbę operacji rundy między aplikacją a bazą danych.
@@ -33,9 +35,9 @@ Ta procedura pokazuje, jak sprawdzać poprawność danych po zmianie wartości w
 
 ### <a name="to-validate-data-during-a-columns-value-change"></a>Aby sprawdzić poprawność danych podczas zmiany wartości kolumny
 
-1. Otwórz lub Utwórz nowy plik klas LINQ to SQL (plik**DBML** ) w **projektancie o/R**. (Kliknij dwukrotnie plik **. dbml** w **Eksplorator rozwiązań**).
+1. Otwórz lub Utwórz nowy plik klas LINQ to SQL (plik **DBML** ) w **projektancie o/R**. (Kliknij dwukrotnie plik **. dbml** w **Eksplorator rozwiązań** ).
 
-2. W **projektancie o/R**kliknij prawym przyciskiem myszy klasę, dla której chcesz dodać walidację, a następnie kliknij polecenie **Wyświetl kod**.
+2. W **projektancie o/R** kliknij prawym przyciskiem myszy klasę, dla której chcesz dodać walidację, a następnie kliknij polecenie **Wyświetl kod**.
 
      Zostanie otwarty Edytor kodu z klasą częściową dla wybranej klasy jednostki.
 
@@ -79,7 +81,7 @@ Oprócz sprawdzania wartości podczas zmian, można także sprawdzić poprawnoś
 
 ### <a name="to-validate-data-during-an-update-to-an-entity-class"></a>Aby sprawdzić poprawność danych podczas aktualizacji klasy jednostki
 
-1. Otwórz lub Utwórz nowy plik klas LINQ to SQL (plik**DBML** ) w **projektancie o/R**. (Kliknij dwukrotnie plik **. dbml** w **Eksplorator rozwiązań**).
+1. Otwórz lub Utwórz nowy plik klas LINQ to SQL (plik **DBML** ) w **projektancie o/R**. (Kliknij dwukrotnie plik **. dbml** w **Eksplorator rozwiązań** ).
 
 2. Kliknij prawym przyciskiem myszy pusty obszar w **Projektancie O/R** i kliknij polecenie **Wyświetl kod**.
 

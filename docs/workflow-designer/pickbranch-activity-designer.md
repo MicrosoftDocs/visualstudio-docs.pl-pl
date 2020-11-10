@@ -1,5 +1,7 @@
 ---
 title: Projektant przepływu pracy — Projektant działań PickBranch
+description: Dowiedz się, jak Projektant działań PickBranch udostępnia ścieżkę wykonywania w ramach działania pobrania, które może zostać wyzwolone przez zdarzenie przychodzące.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34da9091c0f96b7270678f9b36fe861e4a87418f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bce1cee7fad7ccff57a6911c99a9470a22b9a927
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876089"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434236"
 ---
 # <a name="pickbranch-activity-designer"></a>PickBranch, projektant działań
 
@@ -31,7 +33,7 @@ Dostęp do projektanta **PickBranch** w kategorii **przepływ sterowania** w **p
 
 Dwa puste <xref:System.Activities.Statements.PickBranch> obiekty z nazwami wyświetlanymi **Branch1** i **Branch2** są tworzone domyślnie jako elementy <xref:System.Activities.Statements.Pick> działania po początkowym **pobraniu** projektanta działań na Projektant przepływu pracy. Te odpowiednie <xref:System.Activities.Statements.PickBranch.DisplayName%2A> wartości właściwości można edytować w nagłówku projektanta **PickBranch** lub w oknie **Właściwości** dla każdej gałęzi.
 
-Istnieją dwa sposoby dodawania <xref:System.Activities.Statements.PickBranch> obiektów do kolekcji <xref:System.Activities.Statements.Pick> obiektów: przeciąganie i upuszczanie projektanta **PickBranch** z **przybornika**lub za pomocą menu dostępnego po kliknięciu prawym przyciskiem myszy z poziomu powierzchni projektowej **wyboru** :
+Istnieją dwa sposoby dodawania <xref:System.Activities.Statements.PickBranch> obiektów do kolekcji <xref:System.Activities.Statements.Pick> obiektów: przeciąganie i upuszczanie projektanta **PickBranch** z **przybornika** lub za pomocą menu dostępnego po kliknięciu prawym przyciskiem myszy z poziomu powierzchni projektowej **wyboru** :
 
 - Projektant **PickBranch** tworzy, <xref:System.Activities.Statements.PickBranch> gdy jest przeciągany z **przybornika** i upuszczany na jedną z gałęzi projektanta działań **wyboru** na Projektant przepływu pracy powierzchni. Nowe <xref:System.Activities.Statements.PickBranch> obiekty można umieścić wewnątrz <xref:System.Activities.Statements.Pick> projektanta po lewej lub prawej stronie wszelkich istniejących elementów znajdujących się <xref:System.Activities.Statements.PickBranch> już w kolekcji. Gdy przeciągasz projektanta **PickBranch** do projektanta **wyboru** z myszą, Projektant **wyboru** używa pionowego szarego pasma, aby wskazać, gdzie <xref:System.Activities.Statements.PickBranch> zostanie dodany dla danego położenia myszy.
 

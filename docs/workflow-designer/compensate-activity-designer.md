@@ -1,5 +1,7 @@
 ---
 title: Projektant przepływu pracy — kompensowanie działań
+description: Dowiedz się więcej na temat projektanta działań kompensacyjnych i sposobu użycia projektanta działań kompensowania do tworzenia i konfigurowania działań kompensacyjnych.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5332b6d9ec087f4e1b127d93563dc0f2fe5fdd15
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 96ae76bac3f6163e8b4434878017df07f1341828
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876154"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434327"
 ---
 # <a name="compensate-activity-designer"></a>Compensate, projektant działań
 
@@ -29,7 +31,7 @@ Projektant działań **kompensacyjnych** służy do tworzenia i konfigurowania <
 
 ### <a name="using-the-compensate-activity-designer"></a>Korzystanie z projektanta działań kompensacyjnych
 
-Projektanta działań **kompensowania** aktywności można znaleźć w kategorii **transakcji** w **przyborniku**. Aby otworzyć **Przybornik**, wybierz kartę **Przybornik** po lewej stronie Projektant przepływu pracy. Alternatywnie możesz wybrać **Przybornik** z menu **Widok** lub nacisnąć **klawisze CTRL** + **Alt** + **X**.
+Projektanta działań **kompensowania** aktywności można znaleźć w kategorii **transakcji** w **przyborniku**. Aby otworzyć **Przybornik** , wybierz kartę **Przybornik** po lewej stronie Projektant przepływu pracy. Alternatywnie możesz wybrać **Przybornik** z menu **Widok** lub nacisnąć **klawisze CTRL** + **Alt** + **X**.
 
 Projektant działań **kompensacyjnych** można przeciągnąć z **przybornika** i porzucić na Projektant przepływu pracy powierzchnię, wszędzie tam, gdzie działania są umieszczane, na przykład wewnątrz <xref:System.Activities.Statements.Sequence> . Porzucenie projektanta działań powoduje utworzenie <xref:System.Activities.Statements.Compensate> działania z domyślną <xref:System.Activities.Activity.DisplayName%2A> kompensacją. <xref:System.Activities.Activity.DisplayName%2A>Wartość można edytować w nagłówku projektanta działań lub w **Compensate** polu **DisplayName** siatki właściwości.
 

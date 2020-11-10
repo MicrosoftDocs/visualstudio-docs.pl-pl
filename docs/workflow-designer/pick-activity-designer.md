@@ -1,5 +1,7 @@
 ---
 title: Projektant przepływu pracy — Projektant działań
+description: Dowiedz się, jak działanie pobrania zapewnia przepływ sterowania oparty na zdarzeniach i wykonuje jedną z kilku gałęzi w odpowiedzi na zdarzenie wyzwalania.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01ebd0dbfa8274b370a7e84b1033465e2be0b4a9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a9968a00a1e4530e22abe25819c9e3d5188bcefa
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876037"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434249"
 ---
 # <a name="pick-activity-designer"></a>Pick, projektant działań
 

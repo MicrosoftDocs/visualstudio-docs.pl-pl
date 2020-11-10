@@ -1,5 +1,7 @@
 ---
 title: Rozszerzanie funkcjonalności adaptera TableAdapter
+description: Dowiedz się, jak zwiększyć funkcjonalność TableAdapter przez dodanie kodu do pliku klasy częściowej TableAdapter.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,24 +17,24 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 245ea6791fde96c1ff08d43d138c522f43749c6b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6e1c594ab1f74cddb962cc2a6d4030ede1e53c8f
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282426"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435081"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>Rozszerzanie funkcjonalności adaptera TableAdapter
 
 Można zwiększyć funkcjonalność TableAdapter, dodając kod do pliku klasy częściowej TableAdapter.
 
-Kod definiujący TableAdapter jest generowany ponownie, gdy wprowadzane są zmiany do TableAdapter w **Projektant obiektów DataSet**lub Kreator modyfikuje konfigurację TableAdapter. Aby zapobiec usunięciu kodu podczas ponownej generacji TableAdapter, Dodaj kod do pliku klasy częściowej TableAdapter.
+Kod definiujący TableAdapter jest generowany ponownie, gdy wprowadzane są zmiany do TableAdapter w **Projektant obiektów DataSet** lub Kreator modyfikuje konfigurację TableAdapter. Aby zapobiec usunięciu kodu podczas ponownej generacji TableAdapter, Dodaj kod do pliku klasy częściowej TableAdapter.
 
 Klasy częściowe umożliwiają dzielenie kodu dla określonej klasy między wiele plików fizycznych. Aby uzyskać więcej informacji, zobacz [częściowe](/dotnet/visual-basic/language-reference/modifiers/partial) lub [częściowe (Type)](/dotnet/csharp/language-reference/keywords/partial-type).
 
 ## <a name="locate-tableadapters-in-code"></a>Znajdź TableAdapters w kodzie
 
-Podczas gdy TableAdapters są zaprojektowane z **Projektant obiektów DataSet**, klasy TableAdapter, które są generowane, nie są klasami zagnieżdżonymi klasy <xref:System.Data.DataSet> . TableAdapters znajdują się w przestrzeni nazw na podstawie nazwy skojarzonego zestawu danych TableAdapter. Na przykład jeśli aplikacja zawiera zestaw danych o nazwie `HRDataSet` , TableAdapters będzie znajdować się w `HRDataSetTableAdapters` przestrzeni nazw. (Konwencja nazewnictwa jest zgodna z tym wzorcem: *DataSetName*  +  `TableAdapters` ).
+Podczas gdy TableAdapters są zaprojektowane z **Projektant obiektów DataSet** , klasy TableAdapter, które są generowane, nie są klasami zagnieżdżonymi klasy <xref:System.Data.DataSet> . TableAdapters znajdują się w przestrzeni nazw na podstawie nazwy skojarzonego zestawu danych TableAdapter. Na przykład jeśli aplikacja zawiera zestaw danych o nazwie `HRDataSet` , TableAdapters będzie znajdować się w `HRDataSetTableAdapters` przestrzeni nazw. (Konwencja nazewnictwa jest zgodna z tym wzorcem: *DataSetName*  +  `TableAdapters` ).
 
 W poniższym przykładzie założono, że TableAdapter o nazwie `CustomersTableAdapter` jest w projekcie z `NorthwindDataSet` .
 

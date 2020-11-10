@@ -1,5 +1,7 @@
 ---
 title: Tworzenie i konfigurowanie zestawów danych
+description: Tworzenie i konfigurowanie zestawów danych w programie Visual Studio. Zestaw danych to zbiór obiektów, które przechowują dane z bazy danych w pamięci i obsługują operacje CRUD na tych danych.
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1065c5efdcf73016e61ee0f016511579d41acd88
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a9a10d68b5b0617b5c4e2152cbbbb920a7c683f
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282751"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435407"
 ---
 # <a name="how-to-create-and-configure-datasets-in-visual-studio"></a>Instrukcje: Tworzenie i konfigurowanie zestawów danych w programie Visual Studio
 
@@ -40,7 +42,7 @@ Można utworzyć klasę o określonym typie <xref:System.Data.DataSet> w program
 
      ![Wybierz obiekty bazy danych](../data-tools/media/raddata-chose-objects.png)
 
-5. Kliknij przycisk **Zakończ**.
+5. Kliknij przycisk **Finish** (Zakończ).
 
    Zestaw danych jest wyświetlany jako węzeł w **Eksplorator rozwiązań**.
 

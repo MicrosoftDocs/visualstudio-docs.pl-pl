@@ -1,6 +1,8 @@
 ---
 title: Generuj metryki kodu z poziomu środowiska IDE lub z wiersza polecenia
 ms.date: 11/02/2018
+description: Dowiedz się, jak generować dane metryk kodu w programie Visual Studio. Zobacz, jak używać Eksplorator rozwiązań, pliku zestawu reguł, wiersza polecenia lub polecenia menu.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
 - code metrics data
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25fc255d0e04dd45400fa5da2b81c2e050a2150f
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 9c72e53266eae11fb060ac117c4a6dc0a1c37e2e
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658532"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434795"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Instrukcje: generowanie danych metryk kodu
 
@@ -24,7 +26,7 @@ Dane metryk kodu można generować na trzy sposoby:
 
 - Przez włączenie [analizatorów jakości kodu platformy .NET](#net-code-quality-analyzers-code-metrics-rules) i włączenie czterech reguł metryk kodu (łatwość konserwacji), które zawiera.
 
-- Poprzez wybranie polecenia [ **Analizuj**  >  **metryki kodu** ](#calculate-code-metrics-menu-command) w programie Visual Studio.
+- Poprzez wybranie polecenia [ **Analizuj**  >  **metryki kodu**](#calculate-code-metrics-menu-command) w programie Visual Studio.
 
 - Z [wiersza polecenia](#command-line-code-metrics) dla projektów C# i Visual Basic.
 
@@ -62,7 +64,7 @@ Można skonfigurować progi, w których będą wyzwalane reguły metryki kodu.
 
    W tym przykładzie reguła [CA1502](/dotnet/fundamentals/code-analysis/quality-rules/ca1502) jest skonfigurowana do uruchamiania, gdy Złożoność cyklomatyczna metody jest większa niż 10.
 
-3. W oknie **Właściwości** programu Visual Studio lub w pliku projektu Oznacz akcję kompilacja pliku konfiguracji jako [**AdditionalFiles**](../ide/build-actions.md#build-action-values). Przykład:
+3. W oknie **Właściwości** programu Visual Studio lub w pliku projektu Oznacz akcję kompilacja pliku konfiguracji jako [**AdditionalFiles**](../ide/build-actions.md#build-action-values). Na przykład:
 
    ```xml
    <ItemGroup>
@@ -80,7 +82,7 @@ Można generować wyniki metryk kodu dla całego rozwiązania w dowolny z nastę
 
 - Na pasku menu wybierz pozycję **Analizuj**  >  **Oblicz metryki kodu**  >  **dla rozwiązania**.
 
-- W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy rozwiązanie, a następnie wybierz polecenie **Oblicz metryki kodu**.
+- W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy rozwiązanie, a następnie wybierz polecenie **Oblicz metryki kodu**.
 
 - W oknie **wyników metryk kodu** wybierz przycisk **Oblicz metryki kodu dla rozwiązania** .
 
@@ -88,7 +90,7 @@ Wyniki są generowane i zostanie wyświetlone okno **wyników metryk kodu** . Ab
 
 ### <a name="generate-code-metrics-results-for-one-or-more-projects"></a>Generuj wyniki metryk kodu dla jednego lub wielu projektów
 
-1. W **Eksplorator rozwiązań**wybierz co najmniej jeden projekt.
+1. W **Eksplorator rozwiązań** wybierz co najmniej jeden projekt.
 
 1. Na pasku menu wybierz pozycję **Analizuj**  >  **Oblicz metryki kodu**  >  **dla wybranych projektów**.
 
@@ -111,7 +113,7 @@ Można generować dane metryk kodu z wiersza polecenia dla projektów C# i Visua
 
 ### <a name="microsoftcodeanalysismetrics-nuget-package"></a>Pakiet NuGet Microsoft. CodeAnalysis. Metrics
 
-Najprostszym sposobem generowania danych metryk kodu z wiersza polecenia jest zainstalowanie pakietu NuGet [Microsoft. CodeAnalysis. Metrics](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) . Po zainstalowaniu pakietu Uruchom polecenie `msbuild /t:Metrics` z katalogu, który zawiera plik projektu. Przykład:
+Najprostszym sposobem generowania danych metryk kodu z wiersza polecenia jest zainstalowanie pakietu NuGet [Microsoft. CodeAnalysis. Metrics](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) . Po zainstalowaniu pakietu Uruchom polecenie `msbuild /t:Metrics` z katalogu, który zawiera plik projektu. Na przykład:
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics
@@ -134,7 +136,7 @@ Build succeeded.
     0 Error(s)
 ```
 
-Można zastąpić nazwę pliku wyjściowego, określając `/p:MetricsOutputFile=<filename>` . Możesz również uzyskać dane metryk kodu w [starszej wersji](#previous-versions) , określając `/p:LEGACY_CODE_METRICS_MODE=true` . Przykład:
+Można zastąpić nazwę pliku wyjściowego, określając `/p:MetricsOutputFile=<filename>` . Możesz również uzyskać dane metryk kodu w [starszej wersji](#previous-versions) , określając `/p:LEGACY_CODE_METRICS_MODE=true` . Na przykład:
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics /p:LEGACY_CODE_METRICS_MODE=true /p:MetricsOutputFile="Legacy.xml"
@@ -293,7 +295,7 @@ Jeśli nie chcesz instalować pakietu NuGet, możesz bezpośrednio wygenerować 
 
 #### <a name="metricsexe-usage"></a>Użycie Metrics.exe
 
-Aby uruchomić *Metrics.exe*, podaj projekt lub rozwiązanie oraz wyjściowy plik XML jako argumenty. Przykład:
+Aby uruchomić *Metrics.exe* , podaj projekt lub rozwiązanie oraz wyjściowy plik XML jako argumenty. Na przykład:
 
 ```shell
 C:\>Metrics.exe /project:ConsoleApp20.csproj /out:report.xml
@@ -334,7 +336,7 @@ Począwszy od programu Visual Studio 2019 w wersji 16,4 i Microsoft. CodeAnalysi
 `LinesOfCode`Metryka jest bardziej dokładna i niezawodna w nowym narzędziu metryk kodu wiersza polecenia. Jest on niezależny od jakichkolwiek różnic codegen i nie ulega zmianie, gdy zmieni się zestaw narzędzi lub środowisko uruchomieniowe. Nowe narzędzie zlicza rzeczywiste wiersze kodu, w tym puste wiersze i komentarze.
 ::: moniker-end
 
-Inne metryki, takie jak `CyclomaticComplexity` i `MaintainabilityIndex` używają tych samych formuł co poprzednie wersje *Metrics.exe*, ale nowe narzędzie zlicza liczbę `IOperations` (instrukcje logicznego źródła) zamiast instrukcji języka pośredniego (IL). Liczby będą nieco inne niż te, które są generowane przez środowisko IDE programu Visual Studio i poprzednie wersje *Metrics.exe*.
+Inne metryki, takie jak `CyclomaticComplexity` i `MaintainabilityIndex` używają tych samych formuł co poprzednie wersje *Metrics.exe* , ale nowe narzędzie zlicza liczbę `IOperations` (instrukcje logicznego źródła) zamiast instrukcji języka pośredniego (IL). Liczby będą nieco inne niż te, które są generowane przez środowisko IDE programu Visual Studio i poprzednie wersje *Metrics.exe*.
 
 ## <a name="see-also"></a>Zobacz też
 

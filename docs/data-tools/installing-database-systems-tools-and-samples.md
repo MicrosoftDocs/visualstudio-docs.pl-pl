@@ -1,5 +1,7 @@
 ---
 title: Zgodność bazy danych
+description: Przejrzyj zgodne systemy baz danych dla programu Visual Studio, takie jak Microsoft SQL Server, Oracle, MySQL, PostgreSQL, SQLite i Firebird.
+ms.custom: SEO-VS-2020
 ms.date: 09/06/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cfc3b6c3adc5c51cbbc4bc7d91338fd3595ec372
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 598d48d560db58a40b04e9d7684e98df22291a6a
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586409"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434858"
 ---
 # <a name="compatible-database-systems-for-visual-studio"></a>Zgodne systemy baz danych dla programu Visual Studio
 
@@ -39,15 +41,15 @@ Na stronie [sieci technologii Oracle](https://www.oracle.com/database/technologi
 
 ## <a name="mysql"></a>MySQL
 
-MySQL to popularny system baz danych typu "open source", który jest powszechnie używany w przedsiębiorstwach i witrynach sieci Web. Pliki do pobrania dla programu MySQL, MySQL dla programu Visual Studio i powiązane produkty są dostępne w witrynie [MySQL w systemie Windows](https://www.mysql.com/why-mysql/windows/). Osoby trzecie oferują różne rozszerzenia programu Visual Studio i autonomiczne aplikacje zarządzania dla programu MySQL. Oferty można przeglądać w Menedżerze pakietów NuGet (**Narzędzia**  >  **Menedżera pakietów**NuGet  >  **Zarządzanie pakietami NuGet dla rozwiązania**).
+MySQL to popularny system baz danych typu "open source", który jest powszechnie używany w przedsiębiorstwach i witrynach sieci Web. Pliki do pobrania dla programu MySQL, MySQL dla programu Visual Studio i powiązane produkty są dostępne w witrynie [MySQL w systemie Windows](https://www.mysql.com/why-mysql/windows/). Osoby trzecie oferują różne rozszerzenia programu Visual Studio i autonomiczne aplikacje zarządzania dla programu MySQL. Oferty można przeglądać w Menedżerze pakietów NuGet ( **Narzędzia**  >  **Menedżera pakietów** NuGet  >  **Zarządzanie pakietami NuGet dla rozwiązania** ).
 
 ## <a name="postgresql"></a>PostgreSQL
 
-PostgreSQL to bezpłatny system relacyjnej bazy danych typu "open source". Aby zainstalować ją w systemie Windows, można pobrać ją ze [strony pobierania PostgreSQL](https://www.postgresql.org/download/windows/). Możesz również kompilować PostgreSQL z kodu źródłowego. System PostgreSQL Core zawiera interfejs języka C. Wiele stron trzecich udostępnia pakiety NuGet do używania PostgreSQL z aplikacji .NET. Oferty można przeglądać w Menedżerze pakietów NuGet (**Narzędzia**  >  **Menedżera pakietów**NuGet  >  **Zarządzanie pakietami NuGet dla rozwiązania**). Prawdopodobnie najpopularniejszy pakiet jest dostarczany przez [npgsql.org](http://www.npgsql.org).
+PostgreSQL to bezpłatny system relacyjnej bazy danych typu "open source". Aby zainstalować ją w systemie Windows, można pobrać ją ze [strony pobierania PostgreSQL](https://www.postgresql.org/download/windows/). Możesz również kompilować PostgreSQL z kodu źródłowego. System PostgreSQL Core zawiera interfejs języka C. Wiele stron trzecich udostępnia pakiety NuGet do używania PostgreSQL z aplikacji .NET. Oferty można przeglądać w Menedżerze pakietów NuGet ( **Narzędzia**  >  **Menedżera pakietów** NuGet  >  **Zarządzanie pakietami NuGet dla rozwiązania** ). Prawdopodobnie najpopularniejszy pakiet jest dostarczany przez [npgsql.org](http://www.npgsql.org).
 
 ## <a name="sqlite"></a>SQLite
 
-SQLite to osadzony aparat bazy danych SQL, który działa w procesie aplikacji. Można go pobrać ze [strony pobierania oprogramowania SQLite](https://www.sqlite.org/download.html). Dostępne są również wiele pakietów NuGet innych firm dla oprogramowania SQLite. Oferty można przeglądać w Menedżerze pakietów NuGet (**Narzędzia**  >  **Menedżera pakietów**NuGet  >  **Zarządzanie pakietami NuGet dla rozwiązania**).
+SQLite to osadzony aparat bazy danych SQL, który działa w procesie aplikacji. Można go pobrać ze [strony pobierania oprogramowania SQLite](https://www.sqlite.org/download.html). Dostępne są również wiele pakietów NuGet innych firm dla oprogramowania SQLite. Oferty można przeglądać w Menedżerze pakietów NuGet ( **Narzędzia**  >  **Menedżera pakietów** NuGet  >  **Zarządzanie pakietami NuGet dla rozwiązania** ).
 
 ## <a name="firebird"></a>Firebird
 

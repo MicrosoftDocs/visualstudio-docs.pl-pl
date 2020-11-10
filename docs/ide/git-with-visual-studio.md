@@ -1,34 +1,30 @@
 ---
-title: Nowe środowisko Git w programie Visual Studio (wersja zapoznawcza)
+title: Środowisko Git w programie Visual Studio
 titleSuffix: ''
-description: Dowiedz się więcej na temat nowego zintegrowanego środowiska Git w programie Visual Studio 2019
-ms.date: 10/13/2020
+description: Dowiedz się, w jaki sposób nowe zintegrowane środowisko Git w programie Visual Studio 2019 może pomóc w zwiększeniu produktywności.
+ms.date: 11/10/2020
 ms.topic: conceptual
 ms.author: tglee
 author: prnadago
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: ad75fcff26365afdbc4fb4b02975d7c3211fa79b
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 71136bb634bd42eaf4933dead8c024b290177da3
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "92334210"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434704"
 ---
-# <a name="new-git-experience-in-visual-studio-preview"></a>Nowe środowisko Git w programie Visual Studio (wersja zapoznawcza)
+# <a name="git-productivity-in-visual-studio"></a>Wydajność usługi Git w programie Visual Studio
 
-Począwszy od [wersji 16,6](/visualstudio/releases/2019/release-notes-v16.6), program Visual Studio 2019 zawiera teraz nowe środowisko git, które ułatwia korzystanie z narzędzia Git z poziomu środowiska IDE. Git to najczęściej używany nowoczesny system kontroli wersji, więc niezależnie od tego, czy jesteś specjalistą dla profesjonalistów, czy wiesz, jak kod, program git może być bardzo przydatny dla użytkownika.
+Git jest teraz domyślnym interfejsem kontroli wersji w programie Visual Studio 2019. Od [wersji 16,6](/visualstudio/releases/2019/release-notes-v16.6)pracowałem nad tworzeniem zestawu funkcji i iteracją na podstawie opinii użytkowników. Nowe środowisko git jest domyślnie włączone dla wszystkich użytkowników w [wersji 16,8](/visualstudio/releases/2019/release-notes/).
 
 > [!TIP]
-> Jeśli dopiero zaczynasz pracę z usługą git, https://git-scm.com/ Witryna sieci Web jest dobrym miejscem do uruchomienia. W tym miejscu znajdziesz popularne książki online, wideo podstawowe informacje dotyczące usługi git i arkusze Ściągawka.
+> Git to najczęściej używany nowoczesny system kontroli wersji, dlatego bez względu na to, czy jesteś specjalistą dla profesjonalistów, czy też wiesz, jak kod, program git może być bardzo przydatny dla użytkownika. Jeśli dopiero zaczynasz pracę z usługą git, https://git-scm.com/ Witryna sieci Web jest dobrym miejscem do uruchomienia. W tym miejscu znajdziesz arkusze Ściągawka, popularną książkę online i wideo z podstawowymi informacjami na temat usługi git.
 
-## <a name="how-to-start-using-git-in-visual-studio"></a>Jak zacząć korzystać z usługi Git w programie Visual Studio
+## <a name="how-to-use-git-in-visual-studio"></a>Jak używać narzędzia Git w programie Visual Studio
 
-Aby włączyć nowe środowisko git, przejdź do pozycji **Narzędzia**  >  **Opcje**  >  **środowisko**  >  **Podgląd funkcji** , a następnie zaznacz pole wyboru **nowe środowisko użytkownika usługi git** .
-
-:::image type="content" source="media/git-opt-new-user-experience.png" alt-text="Zrzut ekranu przedstawiający sekcję funkcje w wersji zapoznawczej okna dialogowego Opcje w programie Visual Studio ":::
-
-Istnieją trzy sposoby używania usługi Git w programie Visual Studio 2019:
+Istnieją trzy sposoby, aby rozpocząć korzystanie z narzędzia Git z programem Visual Studio 2019, aby zwiększyć produktywność:
 
 - [Otwórz istniejące repozytorium git](#open-an-existing-local-repository). Jeśli Twój kod znajduje się już na Twojej maszynie, możesz otworzyć **go za pomocą polecenia**  >  **Otwórz**  >  **projekt/rozwiązanie** (lub **folder** ), a program Visual Studio automatycznie wykrywa, czy ma zainicjowane repozytorium git.
 - [Utwórz nowe repozytorium git](#create-a-new-git-repository). Jeśli kod nie jest skojarzony z usługą git, możesz utworzyć nowe repozytorium git.
@@ -184,16 +180,23 @@ Aby spersonalizować i dostosować ustawienia Git na poziomie repozytorium, a ta
 
 :::image type="content" source="media/git-options-settings.png" alt-text="Zrzut ekranu przedstawiający okno dialogowe Opcje, w którym można wybrać ustawienia personalizacji i dostosowywania w środowisku IDE programu Visual Studio ":::
 
+## <a name="how-to-use-legacy-team-explorer-experience-in-visual-studio"></a>Jak korzystać ze starszego środowiska Team Explorer w programie Visual Studio
+
+Nowe środowisko git to domyślny system kontroli wersji w programie Visual Studio 2019 od [wersji 16,8](/visualstudio/releases/2019/release-notes/) lub nowszej. Jeśli jednak chcesz ją wyłączyć, możesz to zrobić. Przejdź do pozycji **Narzędzia**  >  **Opcje**  >  **środowiska**  >  **Podgląd funkcje** , a następnie przełączenia **nowego środowiska użytkownika git** , które spowoduje przełączenie się z powrotem do starszego środowiska Team Explorer.
+
+:::image type="content" source="media/git-opt-new-user-experience.png" alt-text="Zrzut ekranu przedstawiający sekcję funkcje w wersji zapoznawczej okna dialogowego Opcje w programie Visual Studio ":::
+
 ## <a name="whats-next"></a>Co dalej
 
-Bądź na bieżąco; Ta strona zostanie zaktualizowana, ponieważ będziemy nadal udoskonalać nowe środowisko Git w programie Visual Studio 2019.
+Mimo że nowe środowisko git jest teraz domyślnie włączone w programie Visual Studio 2019 w [wersji 16,8](/visualstudio/releases/2019/release-notes/), będziemy nadal dodawać nowe funkcje, aby usprawnić środowisko pracy. Jeśli chcesz wyewidencjonować nowe aktualizacje środowiska Git w wersji zapoznawczej, możesz je pobrać i zainstalować ze strony [wersji zapoznawczej programu Visual Studio](https://aka.ms/vspreview/) .
 
 > [!IMPORTANT]
 > Jeśli masz sugestię, daj nam znać! Doceniamy okazję do skontaktowania się z informacjami na temat decyzji projektowych za pośrednictwem portalu [**społeczności deweloperów**](https://aka.ms/vs-suggest) .
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Nowe wideo dotyczące środowiska git](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/The-New-Git-Experience) w witrynie Channel 9 i [YouTube](https://www.youtube.com/watch?v=ZiQ2LXtAJ6I&feature=youtu.be)
+- [Uruchomienie nowego środowiska git](https://www.youtube.com/watch?v=UHrAg3iKoe0&t) w serwisie YouTube
+- [Seria Visual Studio Toolbox prezentuje: nowe wideo dotyczące środowiska git](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/The-New-Git-Experience) w witrynie Channel 9 i w serwisie [YouTube](https://www.youtube.com/watch?v=ZiQ2LXtAJ6I&feature=youtu.be)
 - [Atrakcyjne nowe aktualizacje środowiska Git w blogu programu Visual Studio](https://devblogs.microsoft.com/visualstudio/exciting-new-updates-to-the-git-experience-in-visual-studio/)
 - [Ulepszone środowisko Git w blogu programu Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/improved-git-experience-in-visual-studio-2019/)
 - [Informacje o wersji programu Visual Studio 2019](/visualstudio/releases/2019/release-notes)

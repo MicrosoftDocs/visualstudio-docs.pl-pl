@@ -1,5 +1,7 @@
 ---
 title: Projektant przepływu pracy — Projektant działań TransactedReceiveScope
+description: Dowiedz się, jak za pomocą projektanta TransactedReceiveScope utworzyć i skonfigurować działanie TransactedReceiveScope.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75fb1da392bce7dbd0cd7849d83b3b452521e0c7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 70117ab8b27a23dfb2836800c41ff0844fb8de1c
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86875933"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433781"
 ---
 # <a name="transactedreceivescope-activity-designer"></a>TransactedReceiveScope, projektant działań
 

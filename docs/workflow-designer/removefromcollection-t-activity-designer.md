@@ -1,5 +1,7 @@
 ---
 title: Projektant przepływu pracy — &lt; &gt; Projektant działań w RemoveFromCollection T
+description: Dowiedz się, jak <T> utworzyć i skonfigurować działanie RemoveFromCollection przy użyciu projektanta działań RemoveFromCollection <T> .
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8af0a0bf8bdf60c8ae9911ef0926cb9e395989a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 61ffa2aaec2cfcc588607bd71c6524ab7c8f39e3
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86875582"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434132"
 ---
 # <a name="removefromcollectiont-activity-designer"></a>RemoveFromCollection\<T>, projektant działań
 
@@ -27,8 +29,8 @@ Projektant **działań \<T> RemoveFromCollection** służy do tworzenia i konfig
 
 ### <a name="using-the-removefromcollectiont-activity-designer"></a>Korzystanie z \<T> projektanta działań RemoveFromCollection
 
-Dostęp do projektanta działań **RemoveFromCollection \<T> ** w kategorii **Kolekcja** **przybornika**.
-Projektanta **działań \<T> RemoveFromCollection** można przeciągnąć z **przybornika** i porzucić na Projektant przepływu pracy powierzchnię, wszędzie tam, gdzie działania są zwykle umieszczane, na przykład wewnątrz <xref:System.Activities.Statements.Sequence> . Spowoduje to utworzenie <xref:System.Activities.Statements.RemoveFromCollection%601> działania z wartością domyślną <xref:System.Activities.Activity.DisplayName%2A> RemoveFromCollection<Int32 \> . <xref:System.Activities.Activity.DisplayName%2A>Wartość można edytować w nagłówku **RemoveFromCollection<T \> ** Activity Designer lub w polu **DisplayName** siatki właściwości. Inne właściwości muszą być edytowane w siatce właściwości.
+Dostęp do projektanta działań **RemoveFromCollection \<T>** w kategorii **Kolekcja** **przybornika**.
+Projektanta **działań \<T> RemoveFromCollection** można przeciągnąć z **przybornika** i porzucić na Projektant przepływu pracy powierzchnię, wszędzie tam, gdzie działania są zwykle umieszczane, na przykład wewnątrz <xref:System.Activities.Statements.Sequence> . Spowoduje to utworzenie <xref:System.Activities.Statements.RemoveFromCollection%601> działania z wartością domyślną <xref:System.Activities.Activity.DisplayName%2A> RemoveFromCollection<Int32 \> . <xref:System.Activities.Activity.DisplayName%2A>Wartość można edytować w nagłówku **RemoveFromCollection<T \>** Activity Designer lub w polu **DisplayName** siatki właściwości. Inne właściwości muszą być edytowane w siatce właściwości.
 
 ### <a name="the-removefromcollectiont-properties"></a>Właściwości RemoveFromCollection<T \>
 
@@ -37,7 +39,7 @@ W poniższej tabeli przedstawiono <xref:System.Activities.Statements.RemoveFromC
 |Nazwa właściwości|Wymagany|Użycie|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Fałsz|Opcjonalna przyjazna nazwa <xref:System.Activities.Statements.RemoveFromCollection%601> działania. Wartość domyślna to RemoveFromCollection<Int32 \> .<br /><br /> Chociaż <xref:System.Activities.Activity.DisplayName%2A> nie jest to ściśle wymagane, najlepszym rozwiązaniem jest użycie jednego z nich.|
-|<xref:System.Activities.Statements.RemoveFromCollection%601.Item%2A>|Prawda|Element do usunięcia z **kolekcji \<T> **. Ten element jest typu *T*, który jest typu *elementu TypeArgument*. Aby określić element, wpisz wyrażenie Visual Basic w siatce właściwości.|
+|<xref:System.Activities.Statements.RemoveFromCollection%601.Item%2A>|Prawda|Element do usunięcia z **kolekcji \<T>**. Ten element jest typu *T* , który jest typu *elementu TypeArgument*. Aby określić element, wpisz wyrażenie Visual Basic w siatce właściwości.|
 |<xref:System.Activities.Statements.RemoveFromCollection%601.Collection%2A>|Prawda|Kolekcja, z której ma zostać usunięty element. Ta kolekcja jest typu **ICollection<elementu TypeArgument \> .** Aby określić kolekcję, wpisz wyrażenie Visual Basic w siatce właściwości.|
 |*Elementu TypeArgument*|Prawda|Typ T elementów zawartych w <xref:System.Collections.Generic.ICollection%601> . Domyślnie ten typ *elementu TypeArgument* jest ustawiony na **Int32**. Aby zmienić typ, Zmień wartość *elementu TypeArgument* w polu kombi w siatce właściwości.|
 |<xref:System.Activities.Activity%601.Result%2A>|Fałsz|Wartość wskazująca, czy określony element został usunięty z kolekcji. Aby określić zmienną, która ma zostać powiązana z wynikiem, wpisz zmienną w siatce właściwości|

@@ -1,6 +1,8 @@
 ---
 title: Synchronizowanie zestawów reguł projektu z zasadami ewidencjonowania
 ms.date: 11/04/2016
+description: Dowiedz się, jak zsynchronizować zestaw reguł projektu programu Visual Studio Code z zasadami ewidencjonowania projektu usługi Azure DevOps.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e27987f7fa298ddcedf52a9f01a80f57d3d329f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 913860538fe7f9da1514d0e51d23bb3ea48c3b66
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371784"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434691"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Instrukcje: synchronizowanie zestawów reguł projektu kodu z zasadami ewidencjonowania projektu usługi Azure DevOps
 
@@ -31,7 +33,7 @@ Ustawienia analizy kodu dla projektów kodu można synchronizować z zasadami ew
 
 ## <a name="to-specify-a-microsoft-standard-rule-set"></a>Aby określić standardowy zestaw reguł firmy Microsoft
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt kodu, a następnie kliknij polecenie **Właściwości**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt kodu, a następnie kliknij polecenie **Właściwości**.
 
 2. Kliknij pozycję **Analiza kodu**.
 
@@ -51,7 +53,7 @@ Ustawienia analizy kodu dla projektów kodu można synchronizować z zasadami ew
 
 1. W razie potrzeby wykonaj operację Pobierz w pliku zestawu reguł, który określa zasady ewidencjonowania.
 
-2. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt kodu, a następnie kliknij polecenie **Właściwości**.
+2. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt kodu, a następnie kliknij polecenie **Właściwości**.
 
 3. Kliknij pozycję **Analiza kodu**.
 

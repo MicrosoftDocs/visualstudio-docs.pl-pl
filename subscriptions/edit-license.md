@@ -7,12 +7,12 @@ ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
 ms.date: 11/09/2020
 ms.topic: how-to
 description: Dowiedz się, jak Administratorzy mogą edytować przypisania subskrypcji.
-ms.openlocfilehash: 785bad481e4329647582d1f441988b1cd83a055a
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 0f1ec9c9aa63b5bd877e13f112964f7d74a4b5af
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382497"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433560"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Edytuj przypisania subskrypcji programu Visual Studio
 Administrator subskrypcji może wprowadzać zmiany w subskrypcjach przypisanych do osób w organizacji.  W tym artykule omówiono typy zmian, które można wprowadzić, i przedstawiono niezbędne kroki.
@@ -39,6 +39,8 @@ Obejrzyj ten film wideo lub przeczytaj, aby dowiedzieć się, jak edytować wiel
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vkAF]
 
+> [!NOTE]
+> Nie zmieniaj identyfikatorów GUID subskrypcji w szablonie. Zapoznaj się z naszym artykułem dotyczącym [przypisywania określonych identyfikatorów GUID subskrypcji](assign-guid.md).
 
 1. Aby jednocześnie edytować wielu subskrybentów, przejdź do karty Subskrybenci. Na Wstążce u góry kliknij pozycję **Edytuj zbiorczo**.
 
@@ -46,7 +48,7 @@ Obejrzyj ten film wideo lub przeczytaj, aby dowiedzieć się, jak edytować wiel
    > [!div class="mx-imgBorder"]
    > ![Edycja licencji-eksportowanie list edycji zbiorczej](_img/edit-license/edit-license-bulk-edit-export.png "Kliknij pozycję Eksportuj ten program Excel, aby utworzyć listę bieżących subskrypcji.")
 
-3. Następnie Zapisz plik lokalnie, aby można było go łatwo znaleźć i wprowadzić wszelkie niezbędne zmiany przed jego przekazaniem. Aby zapewnić pomyślne przekazywanie, **nie należy edytować poziomu subskrypcji lub identyfikatora GUID subskrypcji** w pliku edycji zbiorczej w taki sposób, że spowoduje to niepowodzenie przekazywania.
+3. Następnie Zapisz plik lokalnie, aby można było go łatwo znaleźć i wprowadzić wszelkie niezbędne zmiany przed jego przekazaniem. 
 
 4. Wróć do portalu administracyjnego subskrypcji programu Visual Studio i w oknie dialogowym Edycja zbiorcza kliknij przycisk **Przeglądaj**. Wybierz zapisany plik programu Excel, a następnie kliknij przycisk **OK**. Postęp przekazywania zostanie wyświetlony na ekranie.
    > [!div class="mx-imgBorder"]

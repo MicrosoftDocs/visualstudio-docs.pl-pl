@@ -1,5 +1,7 @@
 ---
 title: 'Projektant przepływu pracy: System. Activities, wybierz elementy przybornika'
+description: Dowiedz się, jak karta system. Activities wyświetla listę działań, szablonów i elementów Windows Workflow Foundation (WF), które są dostępne dla Ciebie.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f1a7030b6c351407814314ccd41e0e2ed6a880e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d13aadb135f6dcf72d146f74ea2804ef34228641
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593112"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433898"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>Karta System. Activities, okno dialogowe Wybieranie elementów przybornika
 
@@ -33,7 +35,7 @@ Możesz usunąć zaznaczenie wszystkich elementów, które nie mają być wyświ
 
 Tworzenie wystąpienia działania przez przeciąganie i upuszczanie go w projektancie dodaje zestaw, który zawiera element do listy przywoływanych zestawów. Ponadto, jeśli działanie odwołuje się do zestawu C, nie dodaje C do listy zestawów, do których się odwołuje. Zestaw C musi znajdować się w pamięci podręcznej GAC lub w tym samym katalogu, w którym działa B. W przypadku autonomicznego zestaw musi znajdować się w pamięci podręcznej lub w ścieżkach sondy programu VS. Tylko wtedy można przeciągnąć i upuścić działanie na powierzchni projektanta przepływu pracy.
 
-Ustawienia **przybornika** są zapisywane domyślnie jako opcje użytkownika, więc przy następnym otwarciu **przybornika**zostanie wyświetlona dostosowana lista działań przepływu pracy. Jednym z efektów ubocznych tego jest to, że jeśli dodano określone elementy domeny do **przybornika** za pomocą okna dialogowego **Wybierz elementy przybornika** , nadal będą widoczne te elementy, gdy pracujesz również w aplikacji konsolowej przepływu pracy. Jeśli nie chcesz ich zobaczyć, usuń je za pomocą menu dostępnego po kliknięciu prawym przyciskiem myszy lub usuń zaznaczenie tych pól w oknie dialogowym **Wybierz elementy przybornika** , tak jak zostało to opisane wcześniej.
+Ustawienia **przybornika** są zapisywane domyślnie jako opcje użytkownika, więc przy następnym otwarciu **przybornika** zostanie wyświetlona dostosowana lista działań przepływu pracy. Jednym z efektów ubocznych tego jest to, że jeśli dodano określone elementy domeny do **przybornika** za pomocą okna dialogowego **Wybierz elementy przybornika** , nadal będą widoczne te elementy, gdy pracujesz również w aplikacji konsolowej przepływu pracy. Jeśli nie chcesz ich zobaczyć, usuń je za pomocą menu dostępnego po kliknięciu prawym przyciskiem myszy lub usuń zaznaczenie tych pól w oknie dialogowym **Wybierz elementy przybornika** , tak jak zostało to opisane wcześniej.
 
 Kolumny w tym oknie dialogowym zawierają następujące informacje:
 

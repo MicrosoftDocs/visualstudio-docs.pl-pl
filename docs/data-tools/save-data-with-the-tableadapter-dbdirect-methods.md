@@ -1,5 +1,7 @@
 ---
 title: Zapisywanie danych za pomocą metod DBDirect adaptera TableAdapter
+description: W tym instruktażu należy uruchomić instrukcje SQL bezpośrednio dla bazy danych przy użyciu metod DBDirect klasy TableAdapter.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 77d7aa0859ee383258f80dfd74f36d584790e464
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d79b2081e2d30d77ae3507884b44421f0f14bae
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281612"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434574"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Zapisywanie danych za pomocą metod DBDirect adaptera TableAdapter
 
@@ -43,7 +45,7 @@ W tym instruktażu dowiesz się, jak:
 
 W tym instruktażu jest stosowana SQL Server Express LocalDB i Przykładowa baza danych Northwind.
 
-1. Jeśli nie masz SQL Server Express LocalDB, zainstaluj go na [stronie pobierania SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)lub za pośrednictwem **Instalator programu Visual Studio**. W **Instalator programu Visual Studio**można zainstalować SQL Server Express LocalDB jako część obciążenia **magazynu danych i przetwarzania** lub jako pojedynczy składnik.
+1. Jeśli nie masz SQL Server Express LocalDB, zainstaluj go na [stronie pobierania SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)lub za pośrednictwem **Instalator programu Visual Studio**. W **Instalator programu Visual Studio** można zainstalować SQL Server Express LocalDB jako część obciążenia **magazynu danych i przetwarzania** lub jako pojedynczy składnik.
 
 2. Zainstaluj przykładową bazę danych Northwind, wykonując następujące kroki:
 
@@ -67,7 +69,7 @@ Pierwszym krokiem jest utworzenie **aplikacji Windows Forms**.
 
 3. W środkowym okienku wybierz typ projektu **aplikacji Windows Forms** .
 
-4. Nazwij projekt **TableAdapterDbDirectMethodsWalkthrough**, a następnie wybierz przycisk **OK**.
+4. Nazwij projekt **TableAdapterDbDirectMethodsWalkthrough** , a następnie wybierz przycisk **OK**.
 
      Projekt **TableAdapterDbDirectMethodsWalkthrough** został utworzony i dodany do **Eksplorator rozwiązań**.
 
@@ -83,7 +85,7 @@ Ten krok powoduje użycie **Kreatora konfiguracji źródła danych** w celu utwo
 
 2. W oknie **źródła danych** wybierz pozycję **Dodaj nowe źródło danych** , aby uruchomić **Kreatora konfiguracji źródła danych**.
 
-3. Na ekranie **Wybierz typ źródła danych** wybierz pozycję **baza danych**, a następnie wybierz przycisk **dalej**.
+3. Na ekranie **Wybierz typ źródła danych** wybierz pozycję **baza danych** , a następnie wybierz przycisk **dalej**.
 
 4. Na ekranie **Wybierz połączenie danych** wykonaj jedną z następujących czynności:
 
@@ -113,7 +115,7 @@ Aby utworzyć formanty powiązane z danymi w formularzu systemu Windows, przeci�
 
 ### <a name="to-add-buttons-that-will-call-the-individual-tableadapter-dbdirect-methods"></a>Aby dodać przyciski, które będą wywoływały poszczególne metody TableAdapter DBDirect
 
-1. Przeciągnij trzy <xref:System.Windows.Forms.Button> kontrolki z **przybornika** na **formularz Form1** (poniżej **RegionDataGridView**).
+1. Przeciągnij trzy <xref:System.Windows.Forms.Button> kontrolki z **przybornika** na **formularz Form1** (poniżej **RegionDataGridView** ).
 
 2. Dla każdego przycisku Ustaw następujące właściwości **nazwy** i **tekstu** .
 
@@ -121,7 +123,7 @@ Aby utworzyć formanty powiązane z danymi w formularzu systemu Windows, przeci�
     |----------|----------|
     |`InsertButton`|**Insert**|
     |`UpdateButton`|**Aktualizowanie**|
-    |`DeleteButton`|**Usuń**|
+    |`DeleteButton`|**Usuwanie**|
 
 ### <a name="to-add-code-to-insert-new-records-into-the-database"></a>Aby dodać kod umożliwiający wstawianie nowych rekordów do bazy danych
 

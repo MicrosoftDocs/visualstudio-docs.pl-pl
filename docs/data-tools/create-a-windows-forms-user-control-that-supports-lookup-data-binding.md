@@ -1,5 +1,6 @@
 ---
 title: Używanie tabel odnośników w powiązaniu danych — Windows Forms
+description: Dowiedz się, jak utworzyć Windows Forms kontrolkę użytkownika, która obsługuje powiązanie danych wyszukiwania, przy użyciu klasy LookupBindingPropertiesAttribute w programie Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -16,16 +17,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fe2289a54dba0c3b3e34de54991e9b7cfbee4c93
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: de89839dd85f0f330356e1ade7d4658428ea3d3e
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037396"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435277"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Tworzenie kontrolki użytkownika aplikacji Windows Forms obsługującej powiązanie danych wyszukiwania
 
-Gdy dane są wyświetlane na Windows Forms, można wybrać istniejące kontrolki z **przybornika**lub można utworzyć niestandardowe kontrolki, jeśli aplikacja wymaga funkcjonalności niedostępnej w standardowych kontrolkach. W tym instruktażu pokazano, jak utworzyć kontrolkę implementującą <xref:System.ComponentModel.LookupBindingPropertiesAttribute> . Kontrolki implementujące interfejs <xref:System.ComponentModel.LookupBindingPropertiesAttribute> mogą zawierać trzy właściwości, które można powiązać z danymi. Takie kontrolki są podobne do <xref:System.Windows.Forms.ComboBox> .
+Gdy dane są wyświetlane na Windows Forms, można wybrać istniejące kontrolki z **przybornika** lub można utworzyć niestandardowe kontrolki, jeśli aplikacja wymaga funkcjonalności niedostępnej w standardowych kontrolkach. W tym instruktażu pokazano, jak utworzyć kontrolkę implementującą <xref:System.ComponentModel.LookupBindingPropertiesAttribute> . Kontrolki implementujące interfejs <xref:System.ComponentModel.LookupBindingPropertiesAttribute> mogą zawierać trzy właściwości, które można powiązać z danymi. Takie kontrolki są podobne do <xref:System.Windows.Forms.ComboBox> .
 
 Aby uzyskać więcej informacji na temat tworzenia kontroli, zobacz [Opracowywanie formantów Windows Forms w czasie projektowania](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time).
 
@@ -59,7 +60,7 @@ W tym instruktażu dowiesz się, jak:
 
 W tym instruktażu jest stosowana SQL Server Express LocalDB i Przykładowa baza danych Northwind.
 
-1. Jeśli nie masz SQL Server Express LocalDB, zainstaluj go na [stronie pobierania SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)lub za pośrednictwem **Instalator programu Visual Studio**. W **Instalator programu Visual Studio**można zainstalować SQL Server Express LocalDB jako część obciążenia **magazynu danych i przetwarzania** lub jako pojedynczy składnik.
+1. Jeśli nie masz SQL Server Express LocalDB, zainstaluj go na [stronie pobierania SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)lub za pośrednictwem **Instalator programu Visual Studio**. W **Instalator programu Visual Studio** można zainstalować SQL Server Express LocalDB jako część obciążenia **magazynu danych i przetwarzania** lub jako pojedynczy składnik.
 
 2. Zainstaluj przykładową bazę danych Northwind, wykonując następujące kroki:
 
@@ -83,19 +84,19 @@ Pierwszym krokiem jest utworzenie projektu **aplikacji Windows Forms** .
 
 3. W środkowym okienku wybierz typ projektu **aplikacji Windows Forms** .
 
-4. Nazwij projekt **LookupControlWalkthrough**, a następnie wybierz przycisk **OK**.
+4. Nazwij projekt **LookupControlWalkthrough** , a następnie wybierz przycisk **OK**.
 
      Projekt **LookupControlWalkthrough** został utworzony i dodany do **Eksplorator rozwiązań**.
 
 ## <a name="add-a-user-control-to-the-project"></a>Dodawanie kontrolki użytkownika do projektu
 
-W tym instruktażu tworzony jest formant wyszukiwania z **kontrolki użytkownika**, więc Dodaj element **kontrolki użytkownika** do projektu **LookupControlWalkthrough** .
+W tym instruktażu tworzony jest formant wyszukiwania z **kontrolki użytkownika** , więc Dodaj element **kontrolki użytkownika** do projektu **LookupControlWalkthrough** .
 
 1. W menu **projekt** wybierz polecenie **Dodaj kontrolkę użytkownika**.
 
 2. Wpisz `LookupBox` w obszarze **Nazwa** , a następnie kliknij przycisk **Dodaj**.
 
-     Formant **LookupBox** zostanie dodany do **Eksplorator rozwiązań**i otwarty w projektancie.
+     Formant **LookupBox** zostanie dodany do **Eksplorator rozwiązań** i otwarty w projektancie.
 
 ## <a name="design-the-lookupbox-control"></a>Zaprojektuj formant LookupBox
 
@@ -105,7 +106,7 @@ Aby zaprojektować formant LookupBox, przeciągnij <xref:System.Windows.Forms.Co
 
 W przypadku formantów wyszukiwania, które obsługują powiązanie danych, można zaimplementować <xref:System.ComponentModel.LookupBindingPropertiesAttribute> .
 
-1. Przełącz formant **LookupBox** do widoku kodu. (W menu **Widok** wybierz polecenie **kod**).
+1. Przełącz formant **LookupBox** do widoku kodu. (W menu **Widok** wybierz polecenie **kod** ).
 
 2. Zastąp kod w `LookupBox` następującej postaci:
 
@@ -156,7 +157,7 @@ W oknie **źródła danych** można ustawić kontrolkę, która ma zostać utwor
 
 6. Wybierz **LookupBox** z listy **skojarzonych kontrolek** w oknie dialogowym **Opcje dostosowywania interfejsu użytkownika danych** .
 
-7. Kliknij pozycję **OK**.
+7. Kliknij przycisk **OK**.
 
 8. Kliknij strzałkę listy rozwijanej w kolumnie **IDKlienta** i wybierz pozycję **LookupBox**.
 
@@ -178,6 +179,6 @@ Spowoduje to skonfigurowanie powiązania danych w celu wyświetlenia `CompanyNam
 
 - Nawiguj po kilku rekordach i sprawdź, czy `CompanyName` pojawia się w `LookupBox` kontrolce.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Wiązanie kontrolek Windows Forms z danymi w programie Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

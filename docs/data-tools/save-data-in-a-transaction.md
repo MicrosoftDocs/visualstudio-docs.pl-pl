@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: zapisywanie danych w transakcji'
+description: W tym instruktażu zapoznaj się z tematem zapisywanie danych w transakcji przy użyciu przestrzeni nazw System. Transactions w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 09/08/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: caeb06ac3f38293b493463ff456e222f148ef93a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1bb0262139e2096cf55ae7581ef854a57c67d22a
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281633"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434548"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>Przewodnik: zapisywanie danych w transakcji
 
@@ -56,7 +58,7 @@ Pierwszym krokiem jest utworzenie **aplikacji Windows Forms**.
 
 3. W środkowym okienku wybierz typ projektu **aplikacji Windows Forms** .
 
-4. Nazwij projekt **SavingDataInATransactionWalkthrough**, a następnie wybierz przycisk **OK**.
+4. Nazwij projekt **SavingDataInATransactionWalkthrough** , a następnie wybierz przycisk **OK**.
 
      Projekt **SavingDataInATransactionWalkthrough** został utworzony i dodany do **Eksplorator rozwiązań**.
 
@@ -68,7 +70,7 @@ Ten krok powoduje użycie **Kreatora konfiguracji źródła danych** w celu utwo
 
 2. W oknie **źródła danych** wybierz pozycję **Dodaj nowe źródło danych** , aby uruchomić **Kreatora konfiguracji źródła danych**.
 
-3. Na ekranie **Wybierz typ źródła danych** wybierz pozycję **baza danych**, a następnie wybierz przycisk **dalej**.
+3. Na ekranie **Wybierz typ źródła danych** wybierz pozycję **baza danych** , a następnie wybierz przycisk **dalej**.
 
 4. Na ekranie **Wybierz połączenie danych** wykonaj jedną z następujących czynności:
 
@@ -139,28 +141,28 @@ Kolejność uzgadniania zmian związanych z danymi jest następująca:
 
 ### <a name="to-delete-existing-orders"></a>Aby usunąć istniejące zamówienia
 
-- Dodaj następującą `DeleteOrders` metodę do **formularza Form1**:
+- Dodaj następującą `DeleteOrders` metodę do **formularza Form1** :
 
      [!code-vb[VbRaddataSaving#5](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_2.vb)]
      [!code-csharp[VbRaddataSaving#5](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_2.cs)]
 
 ### <a name="to-delete-existing-customers"></a>Aby usunąć istniejących klientów
 
-- Dodaj następującą `DeleteCustomers` metodę do **formularza Form1**:
+- Dodaj następującą `DeleteCustomers` metodę do **formularza Form1** :
 
      [!code-vb[VbRaddataSaving#6](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_3.vb)]
      [!code-csharp[VbRaddataSaving#6](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_3.cs)]
 
 ### <a name="to-add-new-customers"></a>Aby dodać nowych klientów
 
-- Dodaj następującą `AddNewCustomers` metodę do **formularza Form1**:
+- Dodaj następującą `AddNewCustomers` metodę do **formularza Form1** :
 
      [!code-vb[VbRaddataSaving#7](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_4.vb)]
      [!code-csharp[VbRaddataSaving#7](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_4.cs)]
 
 ### <a name="to-add-new-orders"></a>Aby dodać nowe zamówienia
 
-- Dodaj następującą `AddNewOrders` metodę do **formularza Form1**:
+- Dodaj następującą `AddNewOrders` metodę do **formularza Form1** :
 
      [!code-vb[VbRaddataSaving#8](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_5.vb)]
      [!code-csharp[VbRaddataSaving#8](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_5.cs)]

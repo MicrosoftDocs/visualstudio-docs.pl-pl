@@ -1,6 +1,8 @@
 ---
 title: Zestaw reguł Mixed Minimum Rules
 ms.date: 11/04/2016
+description: Dowiedz się więcej na temat zestawu reguł dotyczących mieszanych reguł minimalnych w programie Visual Studio. Zobacz opisy reguł dla projektów C++, które obsługują środowisko uruchomieniowe języka wspólnego.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: bc8df61c-19af-40ab-a871-315807e5f4bf
 author: mikejo5000
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edacd898cc1deb0382dd8e8b4b048af895c3b579
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 5bb87da3cc668ba946c6ee607fa3be5a2c79cc32
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658467"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435329"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Zestaw reguł Mixed Minimum Rules
 
@@ -43,8 +45,8 @@ Dołącz ten zestaw reguł do dowolnego niestandardowego zestawu reguł tworzone
 |[C6276](/cpp/code-quality/c6276)|Nieprawidłowe rzutowanie ciągu|
 |[C6277](/cpp/code-quality/c6277)|Nieprawidłowe wywołanie metody CreateProcess|
 |[C6284](/cpp/code-quality/c6284)|Nieprawidłowy argument obiektu dla funkcji formatowania|
-|[C6290](/cpp/code-quality/c6290)|Niestandardowa koniunkcja logiczna|
-|[C6291](/cpp/code-quality/c6291)|Niestandardowa koniunkcja logiczna|
+|[C6290](/cpp/code-quality/c6290)|Logical-Not Bitwise-And pierwszeństwo|
+|[C6291](/cpp/code-quality/c6291)|Logical-Not Bitwise-Or pierwszeństwo|
 |[C6302](/cpp/code-quality/c6302)|Nieprawidłowy argument ciągu znaków dla funkcji formatowania|
 |[C6303](/cpp/code-quality/c6303)|Nieprawidłowy argument ciągu znaków dwubajtowych do funkcji formatowania|
 |[C6305](/cpp/code-quality/c6305)|Użycie niedopasowanego rozmiaru i liczby|

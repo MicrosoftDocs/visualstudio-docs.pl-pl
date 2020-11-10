@@ -1,5 +1,7 @@
 ---
 title: Aktualizacja hierarchiczna
+description: Przejrzyj hierarchiczne aktualizacje, które wymagają zapisywania zaktualizowanych danych (z zestawu danych zawierającego 2 + powiązane tabele) z powrotem do bazy danych przy zachowaniu reguł integralności referencyjnej.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +23,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 158908c45d33781bc9f983950d5558a23481ad37
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bfc0c1ca96f5bf6ce58a1b7df9ad0ea10f283e1e
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586584"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435159"
 ---
 # <a name="hierarchical-update"></a>Aktualizacja hierarchiczna
 
@@ -38,7 +40,7 @@ Domyślnie zestaw danych traktuje powiązane tabele jako "tylko relacje", co ozn
 
 ## <a name="enable-hierarchical-update-in-a-dataset"></a>Włączanie aktualizacji hierarchicznej w zestawie danych
 
-Domyślnie dla wszystkich nowych zestawów danych, które są dodawane lub tworzone w projekcie, jest włączona aktualizacja hierarchiczna. Włącz lub Wyłącz aktualizację hierarchiczną, ustawiając właściwość **hierarchicznej aktualizacji** określonego zestawu danych w zestawie danych na **wartość true** lub **false**:
+Domyślnie dla wszystkich nowych zestawów danych, które są dodawane lub tworzone w projekcie, jest włączona aktualizacja hierarchiczna. Włącz lub Wyłącz aktualizację hierarchiczną, ustawiając właściwość **hierarchicznej aktualizacji** określonego zestawu danych w zestawie danych na **wartość true** lub **false** :
 
 ![Ustawienie hierarchicznej aktualizacji](../data-tools/media/hierarchical-update-setting.png)
 

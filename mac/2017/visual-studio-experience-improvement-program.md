@@ -5,12 +5,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/22/2018
 ms.assetid: 6F2ECF5A-E195-4890-8399-12A88C7D62FD
-ms.openlocfilehash: 5e8fa7f740275f416f80827276d74be1f05b0e21
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6668e0b61c541ffc0327120cb6e699ada6f1b690
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74984749"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434379"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Program poprawy jakości obsługi klienta systemu Visual Studio
 
@@ -37,5 +37,5 @@ VSCEIP jest domyślnie włączona. Można ją wyłączyć lub ponownie włączy�
 * [Program poprawy jakości obsługi klienta (Visual Studio w systemie Windows)](/visualstudio/ide/visual-studio-experience-improvement-program)
 * [Dzienniki generowane przez system w programie Visual Studio (w systemie Windows)](/visualstudio/ide/diagnostic-data-collection)
 * [Jak zgłosić problem z Visual Studio dla komputerów Mac](report-a-problem.md)
-* [Społeczność deweloperów Visual Studio dla komputerów Mac](https://developercommunity.visualstudio.com/spaces/41/index.html)
+* [Społeczność deweloperów Visual Studio dla komputerów Mac](https://aka.ms/feedback/vsm-home)
 * [Oświadczenie o ochronie prywatności w firmie Microsoft](https://privacy.microsoft.com/privacystatement)

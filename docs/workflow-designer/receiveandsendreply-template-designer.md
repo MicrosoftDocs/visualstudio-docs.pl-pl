@@ -1,5 +1,7 @@
 ---
 title: Projektant przepływu pracy — Projektant szablonów ReceiveAndSendReply
+description: Dowiedz się, jak za pomocą szablonu ReceiveAndSendReply utworzyć parę wstępnie skonfigurowanych działań odbioru i działania SendReply.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66822664766ac64e466882fda27906f56ebb4aad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b66b403fb5df98bc4a23131b6062b2d06f95719
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876011"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434171"
 ---
 # <a name="receiveandsendreply-template-designer"></a>ReceiveAndSendReply, projektant szablonów
 

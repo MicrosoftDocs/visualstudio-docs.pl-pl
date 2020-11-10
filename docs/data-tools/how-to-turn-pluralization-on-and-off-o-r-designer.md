@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Włączanie i wyłączanie pluralizacja (Projektant O-R)'
+description: Dowiedz się, jak włączać i wyłączać pluralizacja w Object Relational Designer (Projektant O/R). Ustawienie domyślne konwertuje nazwy w liczbie mnogiej na liczbę pojedynczą.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 9b693bc3-303a-40a9-97ee-9cef5ca3ae81
@@ -8,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6675a136b2bbdc1ef19d90ee19ecf7497053bfe1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6ea872d96e59365f3dbef5dc3568641c30e51606
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282050"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434899"
 ---
 # <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Instrukcje: włączanie i wyłączanie pluralizacji (O/R Designer)
 Domyślnie, gdy przeciągasz obiekty bazy danych, które mają nazwy kończące się na s lub z **Eksplorator serwera** lub **Eksplorator bazy danych** do [narzędzi LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md), nazwy wygenerowanych klas jednostek są zmieniane z plural na liczbę pojedynczą. Jest to bardziej dokładne przedstawienie faktu, że Klasa jednostki wystąpienia jest mapowana na pojedynczy rekord danych. Na przykład dodanie `Customers` tabeli do **projektanta O/R** powoduje wystąpienie klasy jednostki o nazwie `Customer` , ponieważ klasa będzie przechowywać dane tylko dla jednego klienta.

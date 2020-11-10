@@ -1,5 +1,7 @@
 ---
 title: Tworzenie tabel wyszukiwania w aplikacjach Windows Forms
+description: Zapoznaj się z tematem tworzenie tabel odnośników w aplikacjach Windows Forms. W tabeli odnośników opisano formanty, które są powiązane z dwiema powiązanymi tabelami danych.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9a1ae368b7d2bf8548bf78a6a9795e19206bc277
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d6ec8860d2c163d16e29d229203bb77abcdf65f
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282660"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435198"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Tworzenie tabel wyszukiwania w aplikacjach Windows Forms
 
@@ -28,7 +30,7 @@ Na przykład rozważmy tabelę `Orders` w bazie danych sprzedaży. Każdy rekord
 
 ## <a name="to-databind-a-lookup-control"></a>Aby powiązać z danymi kontrolkę wyszukiwania odnośników
 
-1. Po otwarciu projektu Otwórz okno **źródła danych** , wybierając opcję **Wyświetl**  >  **inne**  >  **źródła danych**systemu Windows.
+1. Po otwarciu projektu Otwórz okno **źródła danych** , wybierając opcję **Wyświetl**  >  **inne**  >  **źródła danych** systemu Windows.
 
     > [!NOTE]
     > Tabele wyszukiwania wymagają, aby w oknie **źródła danych** były dostępne dwie powiązane tabele lub obiekty. Aby uzyskać więcej informacji, zobacz [relacje w zestawach danych](relationships-in-datasets.md).

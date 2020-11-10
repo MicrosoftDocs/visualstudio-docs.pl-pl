@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8c4a1effcf61348d2f2267fb38164fd166f7d48
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 45fc0a58262a533416f630ede795d0060f9fc909
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382975"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434496"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>Wdrażanie aplikacji w folderze, usługach IIS, na platformie Azure lub w innym miejscu docelowym
 
@@ -32,7 +32,7 @@ Uzyskaj pomoc dotyczącą zadania wdrożenia:
 
 - Nie masz pewności co do wyboru opcji wdrażania? Zobacz, [jakie opcje publikowania są odpowiednie dla mnie?](#what-publishing-options-are-right-for-me)
 - Aby uzyskać pomoc dotyczącą problemów z wdrażaniem Azure App Service lub IIS, zobacz [Rozwiązywanie problemów ASP.NET Core na Azure App Service i usługach IIS](/aspnet/core/test/troubleshoot-azure-iis).
-- Aby uzyskać pomoc dotyczącą konfigurowania ustawień wdrożenia platformy .NET, zobacz [Konfigurowanie ustawień wdrożenia platformy .NET](#configure-net-deployment-settings).
+- Aby uzyskać pomoc dotyczącą konfigurowania ustawień wdrażania platformy .NET, zobacz [Konfigurowanie ustawień wdrożenia platformy .NET](#configure-net-deployment-settings).
 - Aby wdrożyć w nowym miejscu docelowym, jeśli wcześniej utworzono profil publikowania, wybierz opcję **Nowy** z okna **publikowania** dla skonfigurowanego profilu.
 
    ![Utwórz nowy profil publikowania](../deployment/media/create-a-new-publish-profile.png)
@@ -117,16 +117,16 @@ Więcej informacji:
 
 ### <a name="azure-virtual-machine"></a>Maszyna wirtualna platformy Azure
 
-[Usługa Azure Virtual Machines (maszyny wirtualne)](https://azure.microsoft.com/documentation/services/virtual-machines/) umożliwia tworzenie dowolnej liczby zasobów obliczeniowych w chmurze i zarządzanie nią. Przy założeniu, że odpowiedzialność za wszystkie oprogramowanie i aktualizacje na maszynach wirtualnych, można dostosować je tak długo, jak jest to wymagane przez aplikację. Dostęp do maszyn wirtualnych można uzyskać bezpośrednio za pomocą Pulpit zdalny, a każda z nich będzie obsługiwać przypisany adres IP, tak długo, jak to konieczne.
+[Usługa Azure Virtual Machines (VM)](https://azure.microsoft.com/documentation/services/virtual-machines/) umożliwia tworzenie dowolnej liczby zasobów obliczeniowych w chmurze i zarządzanie nią. Przy założeniu, że odpowiedzialność za wszystkie oprogramowanie i aktualizacje na maszynach wirtualnych, można dostosować je tak długo, jak jest to wymagane przez aplikację. Dostęp do maszyn wirtualnych można uzyskać bezpośrednio za pomocą Pulpit zdalny, a każda z nich będzie obsługiwać przypisany adres IP, tak długo, jak to konieczne.
 
 Skalowanie aplikacji hostowanej na maszynach wirtualnych obejmuje rozmieszczenie dodatkowych maszyn wirtualnych zgodnie z zapotrzebowaniem, a następnie wdrożenie niezbędnego oprogramowania. Ten dodatkowy poziom kontroli umożliwia skalowanie w różny sposób w różnych regionach globalnych. Na przykład jeśli aplikacja obsługuje pracowników w różnych biurach regionalnych, można skalować maszyny wirtualne zgodnie z liczbą pracowników w tych regionach, co może powodować obniżenie kosztów.
 
-Dodatkowe informacje znajdują się w [szczegółowym porównaniu](/azure/architecture/guide/technology-choices/compute-decision-tree) między Azure App Service, Azure Virtual Machines i innymi usługami platformy Azure, których można użyć jako celu wdrożenia przy użyciu opcji niestandardowej w programie Visual Studio.
+Aby uzyskać dodatkowe informacje, zobacz [szczegółowe porównanie](/azure/architecture/guide/technology-choices/compute-decision-tree) między Azure App Service, Azure Virtual Machines i innymi usługami platformy Azure, których można użyć jako celu wdrożenia przy użyciu opcji niestandardowej w programie Visual Studio.
 
 #### <a name="when-to-choose-azure-virtual-machines"></a>Kiedy należy wybrać platformę Azure Virtual Machines
 
 - Chcesz wdrożyć aplikację sieci Web, która jest dostępna za pośrednictwem Internetu, z pełną kontrolą nad okresem istnienia przypisanych adresów IP.
-- Na serwerach programu wymagane są dostosowania na poziomie komputera, w tym dodatkowe oprogramowanie, takie jak wyspecjalizowany system bazy danych, konkretne konfiguracje sieci, partycje dysku i tak dalej.
+- Na serwerach są wymagane dostosowania na poziomie komputera, które obejmują dodatkowe oprogramowanie, takie jak wyspecjalizowany system bazy danych, konkretne konfiguracje sieci, partycje dysku i tak dalej.
 - Chcesz mieć precyzyjną kontrolę nad skalowaniem aplikacji sieci Web.
 - Potrzebujesz bezpośredniego dostępu do serwerów obsługujących aplikację z dowolnego innego powodu.
 
@@ -147,19 +147,29 @@ Aby uzyskać więcej informacji, zobacz następujące tematy:
 
 ## <a name="folder"></a>Folder
 
-Wdrożenie w systemie plików oznacza, że wystarczy skopiować pliki aplikacji do określonego folderu na swoim komputerze. Jest to najczęściej używane do celów testowych lub do wdrożenia aplikacji do użytku przez ograniczoną liczbę osób, jeśli na komputerze jest również uruchomiony serwer. Jeśli folder docelowy jest udostępniony w sieci, wdrożenie w systemie plików może udostępnić pliki aplikacji sieci Web innym użytkownikom, którzy mogą następnie wdrożyć ją na określonych serwerach.
+Wdrożenie w systemie plików oznacza skopiowanie plików aplikacji do określonego folderu na własnym komputerze. Wdrażanie w folderze jest najczęściej używane do celów testowych lub do wdrożenia aplikacji do użytku przez ograniczoną liczbę osób, jeśli na komputerze jest również uruchomiony serwer programu. Jeśli folder docelowy jest udostępniony w sieci, wdrożenie w systemie plików może udostępnić pliki aplikacji sieci Web innym użytkownikom, którzy mogą następnie wdrożyć ją na określonych serwerach.
+::: moniker range=">=vs-2019"
+Począwszy od programu Visual Studio 2019 16,8, obiekt docelowy folderu obejmuje możliwość opublikowania aplikacji .NET systemu Windows przy użyciu technologii ClickOnce.
 
+Jeśli chcesz opublikować platformę .NET Core 3,1 lub nowszą, aplikację systemu Windows z funkcją ClickOnce, zobacz [wdrażanie aplikacji .NET systemu Windows przy użyciu technologii ClickOnce](quickstart-deploy-using-clickonce-folder.md).
+::: moniker-end
 Wszystkie maszyny lokalne, na których działa serwer, mogą udostępnić aplikację za pośrednictwem Internetu lub intranetu w zależności od konfiguracji i sieci, z którymi są połączone. (Jeśli komputer zostanie połączony bezpośrednio z Internetem, należy szczególnie uważnie chronić go przed zagrożeniami bezpieczeństwa zewnętrznego). Ponieważ zarządzasz tymi maszynami, masz pełną kontrolę nad konfiguracjami oprogramowania i sprzętu.
 
-Należy pamiętać, że jeśli z jakiegokolwiek powodu (na przykład dostęp do komputera) nie można korzystać z usług w chmurze, takich jak Azure App Service lub Azure Virtual Machines, można użyć [Azure Stack](https://azure.microsoft.com/overview/azure-stack/) we własnym centrum danych. Azure Stack pozwala zarządzać zasobami obliczeniowymi i korzystać z nich za pomocą Azure App Service i Virtual Machines platformy Azure, jednocześnie zachowując wszystkie dane lokalne.
+Jeśli z jakiegokolwiek powodu (na przykład dostęp do komputera) nie możesz korzystać z usług w chmurze, takich jak Azure App Service lub Azure Virtual Machines, możesz użyć [Azure Stack](https://azure.microsoft.com/overview/azure-stack/) we własnym centrum danych. Azure Stack pozwala zarządzać zasobami obliczeniowymi i korzystać z nich za pomocą Azure App Service i Virtual Machines platformy Azure, jednocześnie zachowując wszystkie dane lokalne.
 
 ### <a name="when-to-choose-file-system-deployment"></a>Kiedy należy wybrać wdrożenie systemu plików
 
 - Aplikację należy wdrożyć tylko w udziale plików, z którego inne będą wdrażać je na różnych serwerach.
+::: moniker range=">=vs-2019"
+- Chcesz wdrożyć aplikację platformy .NET dla systemu Windows przy użyciu technologii ClickOnce
+::: moniker-end
 - Wymagane jest tylko lokalne wdrożenie testowe.
 - Chcesz przeanalizować i potencjalnie zmodyfikować pliki aplikacji niezależnie przed ich wysłaniem do innego celu wdrożenia.
 
 Aby uzyskać więcej informacji, zobacz [Szybki Start-Deploy do folderu lokalnego](quickstart-deploy-to-local-folder.md).
+::: moniker range=">=vs-2019"
+Aby uzyskać więcej informacji na temat wdrażania aplikacji .NET dla systemu Windows przy użyciu technologii ClickOnce, zobacz [wdrażanie aplikacji .NET systemu Windows przy użyciu technologii ClickOnce](quickstart-deploy-using-clickonce-folder.md).
+::: moniker-end
 
 Aby uzyskać dodatkową pomoc dotyczącą wybierania ustawień, zobacz następujące tematy:
 
@@ -207,7 +217,7 @@ W programie Visual Studio można utworzyć dowolną liczbę profilów wdrażania
 
 Aby uzyskać więcej informacji, zobacz [Przewodnik Szybki Start — wdrażanie w witrynie sieci Web](quickstart-deploy-to-a-web-site.md).
 
-Aby uzyskać pomoc w rozwiązywaniu problemów ASP.NET Core w usługach IIS, zobacz [Rozwiązywanie problemów ASP.NET Core na Azure App Service i usługach IIS](/aspnet/core/test/troubleshoot-azure-iis).
+Aby uzyskać pomoc dotyczącą rozwiązywania problemów ASP.NET Core w usługach IIS, zobacz [Rozwiązywanie problemów ASP.NET Core na Azure App Service i usługach IIS](/aspnet/core/test/troubleshoot-azure-iis).
 
 ## <a name="import-profile"></a>Importuj profil
 

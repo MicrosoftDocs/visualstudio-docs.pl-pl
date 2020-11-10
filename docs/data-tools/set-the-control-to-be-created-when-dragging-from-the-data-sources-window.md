@@ -1,5 +1,6 @@
 ---
 title: Ustaw kontrolkę do utworzenia podczas przeciągania
+description: Odkryj, jak ustawić formant do utworzenia podczas przeciągania z okna źródła danych do projektanta WPF lub projektanta Windows Forms w programie Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -14,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a7588fc23e7d52adb6c7ea780a75e11715688e26
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 8a81ecb35c37dbef6d48227c27ed877c64e6e26f
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036265"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434470"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Ustawianie kontrolki do utworzenia podczas przeciągania z okna źródeł danych
 
@@ -38,7 +39,7 @@ W tym kontekście *obiekt* Term odnosi się do niestandardowego obiektu biznesow
 2. W oknie **źródła danych** wybierz element reprezentujący tabelę danych lub obiekt, który ma zostać ustawiony.
 
    > [!TIP]
-   > Jeśli okno **źródła danych** nie jest otwarte, możesz je otworzyć, wybierając opcję **Wyświetl**  >  **inne**  >  **źródła danych**systemu Windows.
+   > Jeśli okno **źródła danych** nie jest otwarte, możesz je otworzyć, wybierając opcję **Wyświetl**  >  **inne**  >  **źródła danych** systemu Windows.
 
 3. Kliknij menu rozwijane dla elementu, a następnie kliknij jeden z następujących elementów w menu:
 
@@ -70,6 +71,6 @@ Przed przeciągnięciem elementu, który reprezentuje kolumnę lub właściwoś�
 
      Jeśli nie chcesz tworzyć kontrolki dla kolumny lub właściwości, wybierz **Brak** z menu rozwijanego. Jest to przydatne, jeśli chcesz przeciągnąć tabelę nadrzędną lub obiekt do projektanta, ale nie chcesz uwzględniać konkretnej kolumny lub właściwości.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Wiązanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

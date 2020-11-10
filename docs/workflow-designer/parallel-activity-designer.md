@@ -1,5 +1,7 @@
 ---
 title: Projektant przepływu pracy — Projektant działań równoległych
+description: Zapoznaj się z działaniem równoległym oraz jak używać projektanta działań równoległych w celu współbieżnego wykonywania kolekcji działań podrzędnych.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f07dd02f682cd5c61d4d17099c1aeb76bb39bf8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8751c15e40658e7a901550eef3d86050da842cc7
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593164"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435602"
 ---
 # <a name="parallel-activity-designer"></a>Parallel, projektant działań
 
@@ -25,7 +27,7 @@ ms.locfileid: "75593164"
 
 <xref:System.Activities.Statements.Parallel>Działanie przechowuje działania podrzędne w <xref:System.Activities.Statements.Parallel.Branches%2A> kolekcji. Użyj <xref:System.Activities.Statements.Parallel> działania zamiast <xref:System.Activities.Statements.Sequence> działania, jeśli niektóre działania podrzędne mogą przejść w stan bezczynności.
 
-<xref:System.Activities.Statements.Parallel>Działanie ma <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> Właściwość, która zawiera wyrażenie Visual Basic określone przez użytkownika. <xref:System.Activities.Statements.Parallel>Działanie oblicza tę właściwość po zakończeniu każdej gałęzi. Jeśli wartość jest **równa true**, <xref:System.Activities.Statements.Parallel> działanie kończy się bez wykonywania innych gałęzi. Jeśli nie zostanie <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> obliczona **wartość true**, <xref:System.Activities.Statements.Parallel> działanie kończy się po zakończeniu wszystkich działań podrzędnych.
+<xref:System.Activities.Statements.Parallel>Działanie ma <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> Właściwość, która zawiera wyrażenie Visual Basic określone przez użytkownika. <xref:System.Activities.Statements.Parallel>Działanie oblicza tę właściwość po zakończeniu każdej gałęzi. Jeśli wartość jest **równa true** , <xref:System.Activities.Statements.Parallel> działanie kończy się bez wykonywania innych gałęzi. Jeśli nie zostanie <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> obliczona **wartość true** , <xref:System.Activities.Statements.Parallel> działanie kończy się po zakończeniu wszystkich działań podrzędnych.
 
 ### <a name="using-the-parallel-activity-designer"></a>Korzystanie z programu Parallel Activity Designer
 
@@ -43,7 +45,7 @@ W poniższej tabeli przedstawiono właściwości działania równoległego i opi
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Fałsz|Określa przyjazną nazwę wyświetlaną projektanta działań w nagłówku. Wartość domyślna to **Parallel**. Wartość można opcjonalnie edytować w siatce **Właściwości** lub bezpośrednio w nagłówku projektanta działań.|
 |<xref:System.Activities.Statements.Parallel.Branches%2A>|Prawda|Zawiera kolekcję działań podrzędnych do wykonania.|
-|<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|Fałsz|Oceniane po zakończeniu gałęzi. Jeśli wartość jest **równa true**, zaplanowane oczekujące gałęzie są anulowane. Jeśli ta właściwość nie jest ustawiona lub ma **wartość false**, działanie kończy się po zakończeniu wszystkich działań podrzędnych. Wartość domyślna to **null**.|
+|<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|Fałsz|Oceniane po zakończeniu gałęzi. Jeśli wartość jest **równa true** , zaplanowane oczekujące gałęzie są anulowane. Jeśli ta właściwość nie jest ustawiona lub ma **wartość false** , działanie kończy się po zakończeniu wszystkich działań podrzędnych. Wartość domyślna to **null**.|
 
 ## <a name="see-also"></a>Zobacz też
 

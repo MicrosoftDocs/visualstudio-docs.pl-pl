@@ -1,5 +1,7 @@
 ---
 title: Projektant przepływu pracy — Projektant działań CancellationScope
+description: Dowiedz się, jak za pomocą projektanta działań CancellationScope utworzyć i skonfigurować działanie CancellationScope.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6d1067b529dffec5a4e6a1f21d5489c32311c07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 746ed70d0a1a8ae4de2207ea1fdf15280bd44de9
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76112508"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434444"
 ---
 # <a name="cancellationscope-activity-designer"></a>CancellationScope, projektant działań
 
@@ -27,7 +29,7 @@ Projektant działań **CancellationScope** służy do tworzenia i konfigurowania
 
 ### <a name="using-the-cancellationscope-activity-designer"></a>Korzystanie z projektanta działań CancellationScope
 
-Projektanta działań **CancellationScope** można znaleźć w kategorii **transakcji** **przybornika**. Aby otworzyć **Przybornik**, wybierz kartę **przybornika** Projektant przepływu pracy. Alternatywnie możesz wybrać **Przybornik** z menu **Widok** lub nacisnąć **klawisze CTRL** + **Alt** + **X**.
+Projektanta działań **CancellationScope** można znaleźć w kategorii **transakcji** **przybornika**. Aby otworzyć **Przybornik** , wybierz kartę **przybornika** Projektant przepływu pracy. Alternatywnie możesz wybrać **Przybornik** z menu **Widok** lub nacisnąć **klawisze CTRL** + **Alt** + **X**.
 
 Projektanta działań **CancellationScope** można przeciągnąć z **przybornika** i porzucić na Projektant przepływu pracy powierzchnię, wszędzie tam, gdzie działania są umieszczane, na przykład wewnątrz <xref:System.Activities.Statements.Sequence> . Porzucenie projektanta działań **CancellationScope** tworzy <xref:System.Activities.Statements.CancellationScope> działanie z domyślną wartością <xref:System.Activities.Activity.DisplayName%2A> CancellationScope. Edytuj <xref:System.Activities.Activity.DisplayName%2A> wartość w nagłówku projektanta działań **CancellationScope** . Można go również edytować w polu **DisplayName** siatki właściwości.
 

@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: zapisywanie danych przy użyciu transakcji'
+description: Zapoznaj się z tematem zapisywanie danych przy użyciu transakcji z narzędziami zestawu danych w programie Visual Studio. Dane są zapisywane w transakcji przy użyciu przestrzeni nazw System. Transactions.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 40894adefb42d6de077a2e2812d26f90bc5f40dd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c1cd112a1960078c72c575542525a5ecf6571b06
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281698"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434587"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>Instrukcje: zapisywanie danych przy użyciu transakcji
 
@@ -39,7 +41,7 @@ Aby wycofać transakcję, Zgłoś wyjątek przed wywołaniem <xref:System.Transa
 
 1. W menu **projekt** wybierz polecenie **Dodaj odwołanie**.
 
-2. Na karcie **.NET** (**SQL Server** karcie Projekty SQL Server) wybierz pozycję **System. Transactions**, a następnie wybierz przycisk **OK**.
+2. Na karcie **.NET** ( **SQL Server** karcie Projekty SQL Server) wybierz pozycję **System. Transactions** , a następnie wybierz przycisk **OK**.
 
      Odwołanie do *System.Transactions.dll* jest dodawane do projektu.
 
@@ -53,4 +55,4 @@ Aby wycofać transakcję, Zgłoś wyjątek przed wywołaniem <xref:System.Transa
 ## <a name="see-also"></a>Zobacz też
 
 - [Zapisywanie danych z powrotem w bazie danych](../data-tools/save-data-back-to-the-database.md)
-- [Przewodnik: Zapisywanie danych w transakcji](../data-tools/save-data-in-a-transaction.md)
+- [Przewodnik: zapisywanie danych w transakcji](../data-tools/save-data-in-a-transaction.md)

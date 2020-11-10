@@ -1,6 +1,8 @@
 ---
 title: Instalowanie analizatorów FxCop
 ms.date: 08/03/2018
+description: Dowiedz się, jak zainstalować analizatory FxCop w programie Visual Studio. Zobacz jak zainstalować te analizatory jako pakiet NuGet lub rozszerzenie VSIX.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
 - fxcop analyzers
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d789299212ec7420f40135dd655056f16b6e4f35
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e9950941680f9e251fe9c589a1df1d0314f149a7
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88893349"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435524"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Zainstaluj analizatory FxCop w programie Visual Studio
 
@@ -28,13 +30,13 @@ Można zainstalować te analizatory FxCop jako pakiet NuGet lub rozszerzenie VSI
 
 W programie Visual Studio 2019 w wersji 16,3 lub nowszej można zainstalować pakiet NuGet [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) bezpośrednio na stronie właściwości analizy kodu projektu:
 
-1. Kliknij prawym przyciskiem myszy węzeł projektu w **Eksplorator rozwiązań**, wybierz polecenie **Właściwości**, a następnie wybierz kartę **Analiza kodu** .
+1. Kliknij prawym przyciskiem myszy węzeł projektu w **Eksplorator rozwiązań** , wybierz polecenie **Właściwości** , a następnie wybierz kartę **Analiza kodu** .
 
    ![Zainstaluj pakiet analizatorów FxCop na stronie właściwości w programie Visual Studio](media/install-fxcop-properties-page.png)
 
 2. Wybierz pozycję **Zainstaluj**.
 
-   Program Visual Studio instaluje najnowszą wersję pakietu Microsoft. CodeAnalysis. FxCopAnalyzers. Zestawy pojawiają się w **Eksplorator rozwiązań** w obszarze **References**  >  **analizatory**odwołań.
+   Program Visual Studio instaluje najnowszą wersję pakietu Microsoft. CodeAnalysis. FxCopAnalyzers. Zestawy pojawiają się w **Eksplorator rozwiązań** w obszarze **References**  >  **analizatory** odwołań.
 
    ![Węzeł analizatorów w Eksplorator rozwiązań](media/solution-explorer-analyzers-node.png)
 
@@ -53,7 +55,7 @@ Jeśli używasz starszej wersji programu Visual Studio 2019, zainstaluj pakiet p
    >
    > ![Strona NuGet.org przedstawiająca polecenie konsoli Menedżera pakietów](media/nuget-package-manager-command.png)
 
-   Zestawy analizatora są zainstalowane i pojawiają się w **Eksplorator rozwiązań** w **References** obszarze > **analizatory**odwołań.
+   Zestawy analizatora są zainstalowane i pojawiają się w **Eksplorator rozwiązań** w **References** obszarze > **analizatory** odwołań.
 
 ::: moniker-end
 
@@ -72,7 +74,7 @@ Skorzystaj z poniższych wskazówek, aby określić, która wersja pakietu anali
 
 | Wersja programu Visual Studio | Wersja pakietu analizatora FxCop |
 | - | - |
-| Visual Studio 2019 (wszystkie wersje) | [Ostatnia](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) |
+| Visual Studio 2019 (wszystkie wersje) | [latest](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) |
 | Visual Studio 2017 w wersji 15,9 | [2.9.10](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.9.10) |
 | Program Visual Studio 2017 w wersji 15,5 do 15,8 | [2.6.4](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.4) |
 | Program Visual Studio 2017 w wersji 15,3 do 15,4 | [2.3.0 — beta1](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.3.0-beta1) |
@@ -121,7 +123,7 @@ Rozszerzenie [Microsoft Code Analysis 2019](https://marketplace.visualstudio.com
 
 ::: moniker-end
 
-4. Wybierz pozycję **Pobierz**.
+4. Kliknij pozycję **Pobierz**.
 
    Rozszerzenie jest pobierane.
 
@@ -139,7 +141,7 @@ Rozszerzenie [Microsoft Code Analysis 2019](https://marketplace.visualstudio.com
 
    Po minucie lub dwóch instalacjach zostanie zakończona.
 
-7. Wybierz pozycję **Zamknij**, a następnie ponownie otwórz program Visual Studio.
+7. Wybierz pozycję **Zamknij** , a następnie ponownie otwórz program Visual Studio.
 
 ::: moniker range="vs-2017"
 
