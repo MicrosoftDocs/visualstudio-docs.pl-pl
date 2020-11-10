@@ -27,12 +27,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e77f115eb4014f16107ae167576ed0d923bffe8
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 09e5973b39bae2fbf923cf97ac1bd9cf15e10874
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382969"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407682"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;Dependency — &gt; element (wdrażanie ClickOnce)
 Identyfikuje wersję aplikacji do zainstalowania i lokalizację manifestu aplikacji.
@@ -128,7 +128,7 @@ Identyfikuje wersję aplikacji do zainstalowania i lokalizację manifestu aplika
 ## <a name="remarks"></a>Uwagi
  Manifesty wdrożenia zazwyczaj mają jeden `assemblyIdentity` element, który identyfikuje nazwę i wersję manifestu aplikacji.
 
-## <a name="example"></a>Przykład
+## <a name="example-1"></a>Przykład 1
  Poniższy przykład kodu przedstawia `dependency` element w [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeście wdrożenia.
 
 ```xml
@@ -147,7 +147,7 @@ Identyfikuje wersję aplikacji do zainstalowania i lokalizację manifestu aplika
 </dependency>
 ```
 
-## <a name="example"></a>Przykład
+## <a name="example-2"></a>Przykład 2
  Poniższy przykład kodu określa zależność od zestawu już zainstalowanego w pamięci podręcznej GAC.
 
 ```xml
@@ -158,7 +158,7 @@ Identyfikuje wersję aplikacji do zainstalowania i lokalizację manifestu aplika
 </dependency>
 ```
 
-## <a name="example"></a>Przykład
+## <a name="example-3"></a>Przykład 3
  Poniższy przykład kodu określa zależność od określonej wersji środowiska uruchomieniowego języka wspólnego.
 
 ```xml
@@ -169,7 +169,7 @@ Identyfikuje wersję aplikacji do zainstalowania i lokalizację manifestu aplika
 </dependency>
 ```
 
-## <a name="example"></a>Przykład
+## <a name="example-4"></a>Przykład 4
  Poniższy przykład kodu określa zależność systemu operacyjnego.
 
 ```xml

@@ -14,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94feafbc614be61aaa4eef9e26669c0fbe901ed5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8df973ef6a75a9134b4ee6e945a5702708ece712
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740024"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407721"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>Powiąż skróty klawiaturowe z elementami menu
 Aby powiązać skrót klawiaturowy z niestandardowym poleceniem menu, po prostu Dodaj wpis do pliku *. vsct* pakietu. W tym temacie opisano sposób mapowania skrótu klawiaturowego na przycisk niestandardowy, element menu lub polecenie paska narzędzi oraz sposób zastosowania mapowania klawiatury w domyślnym edytorze lub ograniczanie go do niestandardowego edytora.
@@ -59,7 +59,7 @@ Aby powiązać skrót klawiaturowy z niestandardowym poleceniem menu, po prostu 
 
     Ustaw `guid`  atrybuty i  `id` dla poleceń, które chcesz wywołać.
 
-    Ustaw `mod1` atrybut na **Control**, **Alt**lub **SHIFT**.
+    Ustaw `mod1` atrybut na **Control** , **Alt** lub **SHIFT**.
 
     Sekcja powiązania klawiszy powinna wyglądać następująco:
 
@@ -81,7 +81,7 @@ Aby powiązać skrót klawiaturowy z niestandardowym poleceniem menu, po prostu 
 
    Aby polecenie było dostępne tylko w edytorze niestandardowym, należy ustawić `editor` atrybut na nazwę niestandardowego edytora, który został wygenerowany przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] szablon pakietu podczas tworzenia pakietu VSPackage zawierającego Edytor niestandardowy. Aby znaleźć wartość nazwy, zapoznaj się z `<Symbols>` sekcją `<GuidSymbol>` węzła, którego `name` atrybut jest kończący się znakiem " `editorfactory` ." To jest nazwa niestandardowego edytora.
 
-## <a name="example"></a>Przykład
+## <a name="example-1"></a>Przykład 1
  Ten przykład wiąże skrót klawiaturowy **Ctrl** + **Alt** + **C** do polecenia o nazwie `cmdidMyCommand` w pakiecie o nazwie `MyPackage` .
 
 ```
@@ -98,7 +98,7 @@ Aby powiązać skrót klawiaturowy z niestandardowym poleceniem menu, po prostu 
 </CommandTable>
 ```
 
-## <a name="example"></a>Przykład
+## <a name="example-2"></a>Przykład 2
  Ten przykład wiąże skrót klawiaturowy **Ctrl** + **B** z poleceniem o nazwie `cmdidBold` w projekcie o nazwie `TestEditor` . Polecenie jest dostępne tylko w edytorze niestandardowym, a nie w innych edytorach.
 
 ```xml

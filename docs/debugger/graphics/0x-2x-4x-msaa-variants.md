@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 707d63d3ae5fb487f6232321a1d9d3128d379e06
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e77c0d7b5cbba2faf73fcca85ffcd0db063d618e
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64816534"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407552"
 ---
 # <a name="0x2x4x-msaa-variants"></a>Warianty 0x/2x/4x MSAA
 Przesłania wiele przykładowych ustawień wygładzania (MSAA) dla wszystkich obiektów docelowych renderowania i łańcuchów wymiany.
@@ -54,7 +54,7 @@ Przesłania wiele przykładowych ustawień wygładzania (MSAA) dla wszystkich ob
 
  Gdy odtwarzanie wykrywa te rodzaje konfliktów, najlepszym rozwiązaniem jest replikowanie zamierzonego zachowania, ale może nie być możliwe dokładne dopasowanie wyników. Chociaż zdarza się to w taki sposób, aby miało to wpływ na wydajność tych wariantów w sposób, który nie reprezentuje ich wpływu, jest to możliwe — na przykład gdy sterowanie przepływem w programie do cieniowania pikseli jest określane przez dokładną zawartość tekstury — ponieważ zreplikowana tekstura może nie mieć identycznej zawartości.
 
-## <a name="example"></a>Przykład
+## <a name="example-1"></a>Przykład 1
  Te warianty mogą być odtwarzane dla elementów docelowych renderowania utworzonych za pomocą przy użyciu `ID3D11Device::CreateTexture2D` kodu w następujący sposób:
 
 ```cpp
@@ -65,7 +65,7 @@ target_description.SampleDesc.Quality = 0;
 d3d_device->CreateTexture2D(&target_description, nullptr, &render_target);
 ```
 
-## <a name="example"></a>Przykład
+## <a name="example-2"></a>Przykład 2
  Lub w przypadku łańcuchów wymiany utworzonych przy użyciu IDXGISwapChain:: CreateSwapChain lub D3D11CreateDeviceAndSwapChain za pomocą kodu w następujący sposób:
 
 ```cpp

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 314ec61da7ed61cc8bdd573e201d98a53862a32c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 075fc9c4be3890ce9a63c1aa79762dbd8ceaeea5
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66262934"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407565"
 ---
 # <a name="point-bilinear-trilinear-and-anisotropic-texture-filtering-variants"></a>Warianty punktowego, dwuliniowego, trójliniowego i anizotropowego filtrowania tekstur
 Zastępuje tryb filtrowania odpowiednich próbników tekstury.
@@ -61,7 +61,7 @@ Zastępuje tryb filtrowania odpowiednich próbników tekstury.
 ## <a name="restrictions-and-limitations"></a>Ograniczenia i ograniczenia
  W programie Direct3D poziom funkcji 9,1 określa maksymalną anisotropy. Ponieważ wariant **filtru tekstury anizotropowego** próbuje użyć wyłącznie 16x anisotropy, odtwarzanie kończy się niepowodzeniem, gdy analiza klatek jest uruchamiana na urządzeniu 9,1 na poziomie funkcji. Współczesne urządzenia, na które ma wpływ ten limit, obejmują tablety czołowe i Surface 2 systemu Windows. Mogą być również narażone starsze procesory GPU, które nadal mogą znajdować się na niektórych komputerach, ale są one powszechnie uznawane za przestarzałe i coraz bardziej niespotykane.
 
-## <a name="example"></a>Przykład
+## <a name="example-1"></a>Przykład 1
  Wartość zmiennej **filtrowania tekstury punktów** można odtworzyć przy użyciu kodu w następujący sposób:
 
 ```cpp
@@ -75,7 +75,7 @@ d3d_device->CreateSamplerState(&sampler_desc, &sampler);
 d3d_context->PSSetSamplers(0, 1, &sampler
 ```
 
-## <a name="example"></a>Przykład
+## <a name="example-2"></a>Przykład 2
  Wariant **filtrowania tekstury liniowej** można odtworzyć przy użyciu kodu w następujący sposób:
 
 ```cpp
@@ -89,7 +89,7 @@ d3d_device->CreateSamplerState(&sampler_desc, &sampler);
 d3d_context->PSSetSamplers(0, 1, &sampler
 ```
 
-## <a name="example"></a>Przykład
+## <a name="example-3"></a>Przykład 3
  Wariant **filtrowania tekstury trójliniowego** można odtworzyć przy użyciu kodu w następujący sposób:
 
 ```cpp
@@ -103,7 +103,7 @@ d3d_device->CreateSamplerState(&sampler_desc, &sampler);
 d3d_context->PSSetSamplers(0, 1, &sampler
 ```
 
-## <a name="example"></a>Przykład
+## <a name="example-4"></a>Przykład 4
  Wariant **filtrowania tekstury anizotropowego** można odtworzyć przy użyciu kodu w następujący sposób:
 
 ```cpp

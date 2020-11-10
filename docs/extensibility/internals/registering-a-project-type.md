@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05ac1f393632934f193f5f4efaaf9e5459ffbb14
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7267060f2207b0842885dc3001c3926874be30a9
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705870"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407734"
 ---
 # <a name="registering-a-project-type"></a>Rejestrowanie typu projektu
 Podczas tworzenia nowego typu projektu należy utworzyć wpisy rejestru, które umożliwiają [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] rozpoznawanie i współpracują z typem projektu. Te wpisy rejestru są zwykle tworzone przy użyciu pliku skryptu rejestru (. RGS).
@@ -29,7 +29,7 @@ Podczas tworzenia nowego typu projektu należy utworzyć wpisy rejestru, które 
 
  Poniższe przykłady pochodzą z HKEY_CLASSES_ROOT.
 
-## <a name="example"></a>Przykład
+## <a name="example-1"></a>Przykład 1
 
 ```
 \.figp
@@ -56,14 +56,14 @@ Podczas tworzenia nowego typu projektu należy utworzyć wpisy rejestru, które 
 |`@`|REG_SZ|`&Open in Visual Studio`|Domyślna aplikacja, w której zostanie otwarty ten typ projektu.|
 |`@`|REG_SZ|`devenv.exe "%1"`|Domyślne polecenie, które zostanie uruchomione, gdy zostanie otwarty projekt tego typu.|
 
- Poniższe przykłady pochodzą z HKEY_LOCAL_MACHINE i znajdują się w rejestrze w kluczu [HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\99.0Exp\Packages].
+ Poniższe przykłady pochodzą z HKEY_LOCAL_MACHINE i znajdują się w rejestrze w kluczu [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\99.0Exp\Packages].
 
-## <a name="example"></a>Przykład
+## <a name="example-2"></a>Przykład 2
 
 ```
 \{ACEF4EB2-57CF-11D2-96F4-000000000000} (The CLSID for the VSPackage)
    @="FigPrj Project Package"
-   "InprocServer32"="9.0<Visual Studio SDK installation path>\\VSIntegration\\Archive\\FigPkgs\\FigPrj\\                      Debug\\FigPrj.dll"
+   "InprocServer32"="9.0<Visual Studio SDK installation path>\\VSIntegration\\Archive\\FigPkgs\\FigPrj\\                      Debug\\FigPrj.dll"
    "CompanyName"="Microsoft"
    "ProductName"="Figure Project Sample"
    "ProductVersion"="9.0"
@@ -93,21 +93,21 @@ Podczas tworzenia nowego typu projektu należy utworzyć wpisy rejestru, które 
 |`FigProjectsEvents`|REG_SZ|Zobacz instrukcję Value.|Określa ciąg tekstowy zwracany dla tego zdarzenia automatyzacji.|
 |`FigProjectItemsEvents`|REG_SZ|Zobacz instrukcję Value.|Określa ciąg tekstowy zwracany dla tego zdarzenia automatyzacji.|
 
- Wszystkie poniższe przykłady znajdują się w rejestrze w kluczu [HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\9.0Exp\Projects].
+ Wszystkie poniższe przykłady znajdują się w rejestrze w kluczu [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\Projects].
 
-## <a name="example"></a>Przykład
+## <a name="example-3"></a>Przykład 3
 
 ```
 \{C061DB26-5833-11D2-96F5-000000000000} (The CLSID for projects of this type)
    @="FigPrj Project"
    "DisplayName"="#2"
    "Package"="{ACEF4EB2-57CF-11D2-96F4-000000000000}"
-   "ProjectTemplatesDir"="C:\\Program Files\\VSIP 9.0\\EnvSDK\\FigPkgs\\                           FigPrj\\FigPrjProjects"
-   "ItemTemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                           FigPrjProjectItems"
+   "ProjectTemplatesDir"="C:\\Program Files\\VSIP 9.0\\EnvSDK\\FigPkgs\\                           FigPrj\\FigPrjProjects"
+   "ItemTemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                           FigPrjProjectItems"
    "DisplayProjectFileExtensions"="#3"
    "PossibleProjectExtensions"="figp"
    "DefaultProjectExtension"=".figp"
-\{C061DB26-5833-11D2-96F5-000000000000}\Filters\1       (Folder 1 contains settings for Open Files filters.)
+\{C061DB26-5833-11D2-96F5-000000000000}\Filters\1       (Folder 1 contains settings for Open Files filters.)
    @="#4"
    "CommonOpenFilesFilter"=dword:00000000
    "CommonFindFilesFilter"=dword:00000000
@@ -126,7 +126,7 @@ Podczas tworzenia nowego typu projektu należy utworzyć wpisy rejestru, które 
    "SortPriority"=dword:000003e8
 \{C061DB26-5833-11D2-96F5-000000000000}\AddItemTemplates\TemplateDirs\ {ACEF4EB2-57CF-11D2-96F4-000000000000}\1 (Second GUID indicates the registered project type for the Add Items templates.)
    @="#6"
-   "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                    FigPrjProjectItems"
+   "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                    FigPrjProjectItems"
    "SortPriority"=dword:00000064
 ```
 
@@ -157,9 +157,9 @@ Podczas tworzenia nowego typu projektu należy utworzyć wpisy rejestru, które 
 
  Domyślnie jeśli filtr nie ma co najmniej jednego zestawu flag, filtr jest używany w oknie dialogowym **Dodaj istniejący element** i oknie dialogowym **Otwórz plik** po wyświetleniu wspólnych filtrów. Filtr nie jest używany w oknie dialogowym **Znajdź w plikach** .
 
- Wszystkie poniższe przykłady znajdują się w rejestrze w kluczu [HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\9.0Exp\Projects].
+ Wszystkie poniższe przykłady znajdują się w rejestrze w kluczu [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\Projects].
 
-## <a name="example"></a>Przykład
+## <a name="example-4"></a>Przykład 4
 
 ```
 {FE3BBBB6-72D5-11d2-9ACE-00C04F79A2A4} (The CLSID for Enterprise Projects)
@@ -177,9 +177,9 @@ Podczas tworzenia nowego typu projektu należy utworzyć wpisy rejestru, które 
 |`SortPriority`|REG_DWORD|`41 (x29)`|Ustawia kolejność sortowania projektów wyświetlanych w oknie dialogowym Kreatora nowych projektów.|
 |`NewProjectDialogOnly`|REG_DWORD|`0`|wartość 0 oznacza, że projekty tego typu są wyświetlane tylko w oknie dialogowym Nowy projekt.|
 
- Wszystkie poniższe przykłady znajdują się w rejestrze w kluczu [HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\9.0Exp\Projects].
+ Wszystkie poniższe przykłady znajdują się w rejestrze w kluczu [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\Projects].
 
-## <a name="example"></a>Przykład
+## <a name="example-5"></a>Przykład 5
 
 ```
 \{A2FE74E1-B743-11d0-AE1A-00A0C90FFFC3} (CLSID for Miscellaneous Files projects)
@@ -187,7 +187,7 @@ Podczas tworzenia nowego typu projektu należy utworzyć wpisy rejestru, które 
 \AddItemTemplates\TemplateDirs\{ACEF4EB2-57CF-11D2-96F4-000000000000}\1
                                  (CLSID for Figures Project projects)
    @="#6"
-   "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                    FigPrjProjectItems"
+   "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                    FigPrjProjectItems"
    "SortPriority"=dword:00000064
 ```
 
@@ -198,9 +198,9 @@ Podczas tworzenia nowego typu projektu należy utworzyć wpisy rejestru, które 
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjectItems`|Domyślna ścieżka elementów, które będą wyświetlane w oknie dialogowym **Dodaj nowy element** .|
 |`SortPriority`|REG_DWORD|`100 (vcprx64)`|Ustala porządek sortowania do wyświetlania w węźle drzewa okna dialogowego **Dodaj nowy element** .|
 
- Poniższy przykład znajduje się w rejestrze w kluczu [HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\9.0Exp\Menus].
+ Poniższy przykład znajduje się w rejestrze w kluczu [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\Menus].
 
-## <a name="example"></a>Przykład
+## <a name="example-6"></a>Przykład 6
 
 ```
 "{ACEF4EB2-57CF-11D2-96F4-000000000000}"=",1000,1"
@@ -224,10 +224,10 @@ Podczas tworzenia nowego typu projektu należy utworzyć wpisy rejestru, które 
 |----------|----------|----------|-----------------|
 |% CLSID_Package%|REG_SZ|`,1000,1`|Zasób do pobrania informacji z menu.|
 
- Wszystkie poniższe przykłady znajdują się w rejestrze w kluczu [HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\9.0Exp\NewProjectTemplates].
+ Wszystkie poniższe przykłady znajdują się w rejestrze w kluczu [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\NewProjectTemplates].
 
 ```
-\TemplateDirs\{ACEF4EB2-57CF-11D2-96F4-000000000000}\1                (CLSID for Figures Project projects)
+\TemplateDirs\{ACEF4EB2-57CF-11D2-96F4-000000000000}\1                (CLSID for Figures Project projects)
    @="#7"
    "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\FigPrjProjects"
    "SortPriority"=dword:00000029
@@ -241,7 +241,7 @@ Podczas tworzenia nowego typu projektu należy utworzyć wpisy rejestru, które 
 |`SortPriority`|REG_DWORD|`41 (x29)`|Określa kolejność, w której projekty będą wyświetlane w węźle drzewa okna dialogowego **Nowy projekt** .|
 |`NewProjectDialogOnly`|REG_DWORD|`0`|wartość 0 oznacza, że projekty tego typu są wyświetlane tylko w oknie dialogowym **Nowy projekt** .|
 
- Poniższy przykład znajduje się w rejestrze w kluczu [HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\9.0Exp\InstalledProducts].
+ Poniższy przykład znajduje się w rejestrze w kluczu [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\InstalledProducts].
 
 ```
 \FiguresProductSample
@@ -256,11 +256,11 @@ Podczas tworzenia nowego typu projektu należy utworzyć wpisy rejestru, które 
 
  Pliki. vsz kontrolujące nowe typy projektów często zawierają wpis RELATIVE_PATH. Ta ścieżka jest względna dla ścieżki określonej w \ProductDir wpis typu projektu w następującym kluczu instalacji:
 
- HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\7.0Exp\Setup
+ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\7.0Exp\Setup
 
  Na przykład szablony projektów platformy Enterprise Framework dodają następujące wpisy rejestru:
 
- HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\7.0Exp\Setup\EF\ProductDir = C:\Program Files\Microsoft Visual Studio\EnterpriseFrameworks\
+ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\7.0Exp\Setup\EF\ProductDir = C:\Program Files\Microsoft Visual Studio\EnterpriseFrameworks\
 
  Oznacza to, że jeśli w pliku VSZ znajduje się wpis PROJECT_TYPE = EF, środowisko odnajdzie pliki. vsz w katalogu ProductDir określonym wcześniej.
 

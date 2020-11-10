@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9d1c151b7f3afe977786ef3b308eff2de1c0857f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57820a7532255c0084bafc5134cf7793b8c88ab6
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282361"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407669"
 ---
 # <a name="handle-a-concurrency-exception"></a>Obsługiwanie wyjątku współbieżności
 
@@ -49,7 +49,7 @@ Ten przewodnik przeprowadzi Cię przez następujący proces:
 
 W tym instruktażu jest stosowana SQL Server Express LocalDB i Przykładowa baza danych Northwind.
 
-1. Jeśli nie masz SQL Server Express LocalDB, zainstaluj go na [stronie pobierania SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)lub za pośrednictwem **Instalator programu Visual Studio**. W **Instalator programu Visual Studio**można zainstalować SQL Server Express LocalDB jako część obciążenia **magazynu danych i przetwarzania** lub jako pojedynczy składnik.
+1. Jeśli nie masz SQL Server Express LocalDB, zainstaluj go na [stronie pobierania SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)lub za pośrednictwem **Instalator programu Visual Studio**. W **Instalator programu Visual Studio** można zainstalować SQL Server Express LocalDB jako część obciążenia **magazynu danych i przetwarzania** lub jako pojedynczy składnik.
 
 2. Zainstaluj przykładową bazę danych Northwind, wykonując następujące kroki:
 
@@ -73,13 +73,13 @@ Zacznij od utworzenia nowej aplikacji Windows Forms:
 
 3. W środkowym okienku wybierz typ projektu **aplikacji Windows Forms** .
 
-4. Nazwij projekt **ConcurrencyWalkthrough**, a następnie wybierz przycisk **OK**.
+4. Nazwij projekt **ConcurrencyWalkthrough** , a następnie wybierz przycisk **OK**.
 
-     Projekt **ConcurrencyWalkthrough** jest tworzony i dodawany do **Eksplorator rozwiązań**, a nowy formularz zostanie otwarty w projektancie.
+     Projekt **ConcurrencyWalkthrough** jest tworzony i dodawany do **Eksplorator rozwiązań** , a nowy formularz zostanie otwarty w projektancie.
 
 ## <a name="create-the-northwind-dataset"></a>Tworzenie zestawu danych Northwind
 
-Następnie Utwórz zestaw danych o nazwie **NorthwindDataSet**:
+Następnie Utwórz zestaw danych o nazwie **NorthwindDataSet** :
 
 1. W menu **dane** wybierz polecenie **Dodaj nowe źródło danych**.
 
@@ -112,7 +112,7 @@ W tej sekcji utworzysz, <xref:System.Windows.Forms.DataGridView?displayProperty=
 
 4. Przeciągnij tabelę do pustego obszaru formularza.
 
-     <xref:System.Windows.Forms.DataGridView>Kontrolka o nazwie **customersDataGridView**i <xref:System.Windows.Forms.BindingNavigator> nazwanym **CustomersBindingNavigator**są dodawane do formularza, który jest powiązany z <xref:System.Windows.Forms.BindingSource> . Jest to z kolei powiązane z tabelą Customers w NorthwindDataSet.
+     <xref:System.Windows.Forms.DataGridView>Kontrolka o nazwie **customersDataGridView** i <xref:System.Windows.Forms.BindingNavigator> nazwanym **CustomersBindingNavigator** są dodawane do formularza, który jest powiązany z <xref:System.Windows.Forms.BindingSource> . Jest to z kolei powiązane z tabelą Customers w NorthwindDataSet.
 
 ## <a name="test-the-form"></a>Testowanie formularza
 
@@ -176,14 +176,14 @@ Utwórz komunikat, dodając następujący kod do **edytora kodu**. Wprowadź nas
 
 ### <a name="process-the-users-response"></a>Przetwórz odpowiedź użytkownika
 
-Musisz również mieć kod, aby przetworzyć odpowiedź użytkownika do okna komunikatu. Dostępne są opcje zastępowania bieżącego rekordu w bazie danych z proponowaną zmianą lub porzucenia lokalnych zmian i odświeżenia tabeli danych z rekordem, który jest obecnie w bazie danych. Jeśli użytkownik wybierze **wartość tak**, <xref:System.Data.DataTable.Merge%2A> Metoda zostanie wywołana z argumentem *PreserveChanges* ustawionym na **wartość true**. Powoduje to pomyślną próbę aktualizacji, ponieważ oryginalna wersja rekordu jest teraz zgodna z rekordem w bazie danych.
+Musisz również mieć kod, aby przetworzyć odpowiedź użytkownika do okna komunikatu. Dostępne są opcje zastępowania bieżącego rekordu w bazie danych z proponowaną zmianą lub porzucenia lokalnych zmian i odświeżenia tabeli danych z rekordem, który jest obecnie w bazie danych. Jeśli użytkownik wybierze **wartość tak** , <xref:System.Data.DataTable.Merge%2A> Metoda zostanie wywołana z argumentem *PreserveChanges* ustawionym na **wartość true**. Powoduje to pomyślną próbę aktualizacji, ponieważ oryginalna wersja rekordu jest teraz zgodna z rekordem w bazie danych.
 
 Dodaj następujący kod poniżej kodu, który został dodany w poprzedniej sekcji:
 
 [!code-csharp[VbRaddataConcurrency#3](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_4.cs)]
 [!code-vb[VbRaddataConcurrency#3](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_4.vb)]
 
-## <a name="test-the-form"></a>Testowanie formularza
+## <a name="test-the-form-behavior"></a>Testowanie zachowania formularza
 
 Teraz można testować formularz, aby upewnić się, że działa zgodnie z oczekiwaniami. W celu zasymulowania naruszenia współbieżności dane w bazie danych są zmieniane po wypełnieniu NorthwindDataSet.
 
@@ -193,18 +193,18 @@ Teraz można testować formularz, aby upewnić się, że działa zgodnie z oczek
 
 3. W menu **Widok** wybierz **Eksplorator serwera**.
 
-4. W **Eksplorator serwera**rozwiń połączenie używane przez aplikację, a następnie rozwiń węzeł **tabele** .
+4. W **Eksplorator serwera** rozwiń połączenie używane przez aplikację, a następnie rozwiń węzeł **tabele** .
 
 5. Kliknij prawym przyciskiem myszy tabelę **Customers** , a następnie wybierz polecenie **Pokaż dane tabeli**.
 
-6. W pierwszym rekordzie (**ALFKI**) Zmień wartość **ContactName** na **Mariany Anders2**.
+6. W pierwszym rekordzie ( **ALFKI** ) Zmień wartość **ContactName** na **Mariany Anders2**.
 
     > [!NOTE]
     > Przejdź do innego wiersza, aby zatwierdzić zmianę.
 
 7. Przejdź do formularza ConcurrencyWalkthrough.
 
-8. W pierwszym rekordzie w formularzu (**ALFKI**) Zmień wartość **ContactName** na **Mariany Anders1**.
+8. W pierwszym rekordzie w formularzu ( **ALFKI** ) Zmień wartość **ContactName** na **Mariany Anders1**.
 
 9. Wybierz ikonę **Zapisz**.
 

@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c70195cdc0a6a03395744c63f556ce8c2970aa30
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e8612bd2423849c61f21a5c184a3e1d39da0302b
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72731510"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407747"
 ---
 # <a name="limitations-on-wcf-debugging"></a>Ograniczenia debugowania WCF
 Istnieją trzy sposoby rozpoczęcia debugowania usługi WCF:
@@ -73,10 +73,9 @@ Istnieją trzy sposoby rozpoczęcia debugowania usługi WCF:
   <system.web>
   ```
 
-## <a name="self-hosting"></a>Samoobsługowe hosting
- *Samoobsługowa usługa* to usługa WCF, która nie działa w ramach usług IIS, hosta usługi WCF ani [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] serwera deweloperskiego. Informacje o sposobie debugowania usługi samodzielnej można znaleźć w temacie [How to: Debug a The Inhosteding WCF Service](../debugger/how-to-debug-a-self-hosted-wcf-service.md).
+## <a name="self-hosting"></a>Self-Hosting
+ *Samoobsługowa usługa* to usługa WCF, która nie działa w ramach usług IIS, hosta usługi WCF ani [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] serwera deweloperskiego. Aby uzyskać informacje o sposobie debugowania usługi samodzielnej, zobacz [How to: Debug a Self-Hosted WCF Service](../debugger/how-to-debug-a-self-hosted-wcf-service.md).
 
-## <a name="self-hosting"></a>Samoobsługowe hosting
  Aby włączyć debugowanie [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji 3,0 lub 3,5, [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] przed zainstalowaniem programu należy zainstalować program 3,0 lub 3,5 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] . Jeśli program [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] został zainstalowany przed [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3,0 lub 3,5, wystąpi błąd podczas próby debugowania [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji 3,0 lub 3,5. Komunikat o błędzie to "nie można automatycznie wkroczyć do serwera". Aby rozwiązać ten problem, należy użyć **Control Panel**  >  **narzędzi i funkcji** panelu sterowania systemu Windows w celu naprawy [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] instalacji.
 
 ## <a name="see-also"></a>Zobacz też
