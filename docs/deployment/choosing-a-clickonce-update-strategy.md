@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5618a8996b9858f0799f2a359573d5b7b9da1ce9
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 7f231f3426821b7f3148d3e6c268234f125f88f0
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383160"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437607"
 ---
 # <a name="choose-a-clickonce-update-strategy"></a>Wybieranie strategii aktualizacji ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] może zapewnić automatyczne aktualizacje aplikacji. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Aplikacja okresowo odczytuje plik manifestu wdrożenia, aby sprawdzić, czy są dostępne aktualizacje aplikacji. Jeśli są dostępne, jest pobierana i uruchamiana nowa wersja aplikacji. W celu zwiększenia wydajności pobierane są tylko pliki, które uległy zmianie.
@@ -73,6 +73,8 @@ ms.locfileid: "94383160"
    </update>
 </subscription>
 ```
+> [!NOTE]
+> W przypadku programu .NET 3,1 i nowszych aplikacji sprawdzanie aktualizacji przed uruchomieniem aplikacji powoduje jedyną obsługiwaną opcję aktualizacji.
 
 ## <a name="make-updates-required"></a>Wymagane aktualizacje
  Możliwe są sytuacje, w których autor aplikacji będzie wymagał, aby użytkownicy używali zaktualizowanej wersji aplikacji. Na przykład może to być spowodowane wprowadzeniem zmian w zasobie zewnętrznym, takim jak usługa sieci Web, które uniemożliwią poprawne działanie wcześniejszych wersji aplikacji. W takim przypadku należy oznaczyć aktualizację jako wymaganą i uniemożliwić użytkownikom uruchamianie wcześniejszych wersji.
@@ -119,7 +121,7 @@ ms.locfileid: "94383160"
  Użytkownicy nie będą monitowani o poziomy zaufania w przypadku użycia zaufanego wdrożenia aplikacji. Aby uzyskać więcej informacji, zobacz [Omówienie wdrażania zaufanych aplikacji](../deployment/trusted-application-deployment-overview.md).
 
 ## <a name="see-also"></a>Zobacz też
- \<xref:System.Deployment.Application>
+- <xref:System.Deployment.Application>
 - [Zabezpieczenia i wdrażanie technologii ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Wybieranie strategii wdrażania technologii ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)
 - [Zabezpieczanie aplikacji ClickOnce](../deployment/securing-clickonce-applications.md)

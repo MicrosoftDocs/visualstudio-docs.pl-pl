@@ -1,6 +1,8 @@
 ---
 title: Zestawy reguł analizy kodu
 ms.date: 04/02/2018
+description: Dowiedz się więcej na temat wbudowanych i niestandardowych zestawów reguł w programie Visual Studio Code Analysis. Zobacz jak określić zestawy reguł w plikach i jak skonfigurować zestawy reguł w projektach.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.rulesets.learnmore
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fde3f3200a4764c231b97b0b44e36c38dd0b3e23
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 49d17e8321aa6567a6ae0936291a73d5cb854b5c
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860425"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436891"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>Korzystanie z zestawów reguł do grupowania reguł analizy kodu
 
@@ -28,7 +30,7 @@ Zestawy reguł są dostępne na potrzeby [analizy kodu zarządzanego](/dotnet/fu
 
 ## <a name="rule-set-format"></a>Format zestawu reguł
 
-Zestaw reguł jest określony w formacie XML w pliku zestawu *reguł* . Reguły, które składają się z identyfikatora i *akcji*, są pogrupowane według identyfikatora analizatora i przestrzeni nazw w pliku.
+Zestaw reguł jest określony w formacie XML w pliku zestawu *reguł* . Reguły, które składają się z identyfikatora i *akcji* , są pogrupowane według identyfikatora analizatora i przestrzeni nazw w pliku.
 
 Zawartość pliku. zestawu *reguł* wygląda podobnie do tego kodu XML:
 

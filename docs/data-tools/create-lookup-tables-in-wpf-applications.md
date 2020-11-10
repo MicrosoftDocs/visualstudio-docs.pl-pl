@@ -1,5 +1,7 @@
 ---
 title: Tworzenie tabel wyszukiwania w aplikacjach WPF
+description: Tworzenie tabel odnośników w aplikacjach WPF. Tabela odnośnika jest formantem, który wyświetla informacje z tabeli danych na podstawie wartości pola klucza obcego w innej tabeli.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -16,16 +18,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7485c63d358bc6f6fe7030e589fbdf7286ded3fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 293f04ca111fe88c905a288885f7e4763ec1cdc3
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282621"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436696"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Tworzenie tabel wyszukiwania w aplikacjach WPF
 
-Termin *tabela wyszukiwania* (nazywana czasem *powiązaniem wyszukiwania*) opisuje kontrolkę wyświetlającą informacje z jednej tabeli danych na podstawie wartości pola klucza obcego w innej tabeli. Tabelę odnośników można utworzyć, przeciągając główny węzeł tabeli nadrzędnej lub obiektu w oknie **źródła danych** na kontrolkę, która jest już powiązana z kolumną lub właściwością w powiązanej tabeli podrzędnej.
+Termin *tabela wyszukiwania* (nazywana czasem *powiązaniem wyszukiwania* ) opisuje kontrolkę wyświetlającą informacje z jednej tabeli danych na podstawie wartości pola klucza obcego w innej tabeli. Tabelę odnośników można utworzyć, przeciągając główny węzeł tabeli nadrzędnej lub obiektu w oknie **źródła danych** na kontrolkę, która jest już powiązana z kolumną lub właściwością w powiązanej tabeli podrzędnej.
 
 Na przykład rozważmy tabelę `Orders` w bazie danych sprzedaży. Każdy rekord w `Orders` tabeli zawiera element `CustomerID` wskazujący, który klient złożył zamówienie. `CustomerID`Jest kluczem obcym, który wskazuje rekord klienta w `Customers` tabeli. Po wyświetleniu listy zamówień z `Orders` tabeli możesz chcieć wyświetlić rzeczywistą nazwę klienta zamiast `CustomerID` . Ponieważ nazwa klienta znajduje się w `Customers` tabeli, należy utworzyć tabelę odnośników, aby wyświetlić nazwę klienta. Tabela wyszukiwania używa `CustomerID` wartości w `Orders` rekordzie do nawigowania po relacji i zwraca nazwę klienta.
 
@@ -42,7 +44,7 @@ Na przykład rozważmy tabelę `Orders` w bazie danych sprzedaży. Każdy rekord
     > [!NOTE]
     > Aby można było utworzyć tabelę odnośników, muszą istnieć dwie powiązane tabele lub obiekty jako źródło danych dla projektu.
 
-2. Otwórz **projektanta WPF**i upewnij się, że projektant zawiera kontener, który jest prawidłowym obiektem docelowym upuszczania dla elementów w oknie **źródła danych** .
+2. Otwórz **projektanta WPF** i upewnij się, że projektant zawiera kontener, który jest prawidłowym obiektem docelowym upuszczania dla elementów w oknie **źródła danych** .
 
      Aby uzyskać więcej informacji na temat prawidłowych obiektów docelowych upuszczania, zobacz [Powiązywanie kontrolek WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
 
@@ -91,5 +93,5 @@ Na przykład rozważmy tabelę `Orders` w bazie danych sprzedaży. Każdy rekord
 ## <a name="see-also"></a>Zobacz też
 
 - [Wiązanie kontrolek WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
-- [Wyświetlanie powiązanych danych w aplikacjach WPF](../data-tools/display-related-data-in-wpf-applications.md)
+- [Wyświetlanie pokrewnych danych w aplikacjach WPF](../data-tools/display-related-data-in-wpf-applications.md)
 - [Wskazówki: wyświetlanie powiązanych danych w aplikacji WPF](../data-tools/display-related-data-in-wpf-applications.md)

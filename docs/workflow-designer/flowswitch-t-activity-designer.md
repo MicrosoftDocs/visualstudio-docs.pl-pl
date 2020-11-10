@@ -1,5 +1,7 @@
 ---
 title: Projektant przepływu pracy — &lt; &gt; Projektant działań w FlowSwitch T
+description: Dowiedz się, w jaki sposób <T> działanie FlowSwitch jest węzłem warunkowym, który zapewnia rozgałęzienie dla przepływu sterowania w oparciu o kryterium dopasowywania.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6637682bd6ba649f27c1a53f3b1448629f03736
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4eff69f1da5d2bc8c5f397b0cc6d21492a0a8d20
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88711576"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435798"
 ---
 # <a name="flowswitcht-activity-designer"></a>FlowSwitch\<T>, projektant działań
 
@@ -30,11 +32,11 @@ ms.locfileid: "88711576"
 
 ### <a name="using-the-flowswitcht-activity-designer"></a>Korzystanie z \<T> projektanta działań FlowSwitch
 
-Projektanta **działań \<T> FlowSwitch** można znaleźć w kategorii **schemat blokowy** **przybornika**, do którego uzyskuje się dostęp, klikając kartę **Przybornik** po lewej stronie Projektant przepływu pracy. Alternatywnie możesz wybrać **Przybornik** z menu **Widok** lub nacisnąć **klawisze CTRL** + **Alt** + **X**.
+Projektanta **działań \<T> FlowSwitch** można znaleźć w kategorii **schemat blokowy** **przybornika** , do którego uzyskuje się dostęp, klikając kartę **Przybornik** po lewej stronie Projektant przepływu pracy. Alternatywnie możesz wybrać **Przybornik** z menu **Widok** lub nacisnąć **klawisze CTRL** + **Alt** + **X**.
 
 Projektanta **działań \<T> FlowSwitch** można przeciągnąć z **przybornika** i porzucić na Projektant przepływu pracy powierzchnię w ramach projektanta działań **Flowchart** . Użyj okna **Wybieranie typów** , które wyświetla, aby określić typ (skojarzony w kodzie za pomocą <xref:System.Activities.Statements.FlowSwitch%601> jego parametru ogólnego) uzyskany z oceny <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> . Ta procedura powoduje utworzenie <xref:System.Activities.Statements.FlowSwitch%601> działania z etykietą **przełącznika** w ramach <xref:System.Activities.Statements.Flowchart> działania. <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>Można wpisać w polu **wyrażenie** okna **Właściwości** , klikając miejsce, w którym tekst wskazówki brzmi "wprowadź wyrażenie VB".
 
-Wskaźnik myszy nad projektantem działań **FlowSwitch \<T> ** , aby spowodować, że uchwyty kwadratowe, które są używane do łączenia się, <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> są wyświetlane wokół krawędzi. Po przeciągnięciu projektanta aktywności **FlowSwitch \><T** i innych projektantów działań na **schemat blokowy** <xref:System.Activities.Activity> obiekty, które reprezentują, są gotowe do powiązania ze sobą, aby określić kolejność wykonywania. Aby utworzyć jedno z elementów <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> skojarzonych z <xref:System.Activities.Statements.FlowSwitch%601> , kliknij jeden z kwadratowych uchwytów wielkości liter na obrzeżu **FlowSwitch<T \> ** i przeciągnij go (przytrzymując przycisk myszy) do jednego z uchwytów, które pojawiają się w podobny sposób wokół działania docelowego, gdy wskaźnik myszy jest przesuwany nad jego projektantem. Zwolnij przycisk myszy i strzałkę z **FlowSwitch<T \> ** do projektanta docelowego pojawia się w tym przypadku. Wartość domyślna tego przypadku jest wyświetlana na strzałce i może być edytowana w polu **Case** okna **Właściwości** .
+Wskaźnik myszy nad projektantem działań **FlowSwitch \<T>** , aby spowodować, że uchwyty kwadratowe, które są używane do łączenia się, <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> są wyświetlane wokół krawędzi. Po przeciągnięciu projektanta aktywności **FlowSwitch \><T** i innych projektantów działań na **schemat blokowy** <xref:System.Activities.Activity> obiekty, które reprezentują, są gotowe do powiązania ze sobą, aby określić kolejność wykonywania. Aby utworzyć jedno z elementów <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> skojarzonych z <xref:System.Activities.Statements.FlowSwitch%601> , kliknij jeden z kwadratowych uchwytów wielkości liter na obrzeżu **FlowSwitch<T \>** i przeciągnij go (przytrzymując przycisk myszy) do jednego z uchwytów, które pojawiają się w podobny sposób wokół działania docelowego, gdy wskaźnik myszy jest przesuwany nad jego projektantem. Zwolnij przycisk myszy i strzałkę z **FlowSwitch<T \>** do projektanta docelowego pojawia się w tym przypadku. Wartość domyślna tego przypadku jest wyświetlana na strzałce i może być edytowana w polu **Case** okna **Właściwości** .
 
 ### <a name="the-flowswitcht-properties"></a>Właściwości FlowSwitch \<T>
 

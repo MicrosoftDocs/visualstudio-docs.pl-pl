@@ -12,21 +12,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f392cc2dcb474487a37076229c0b10f7359b9251
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: a96ea0fe4b4bbbebfc29cde7258273ea4f4b21e2
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349571"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437692"
 ---
 # <a name="deploy-an-app-to-a-folder-using-visual-studio"></a>Wdrażanie aplikacji w folderze przy użyciu programu Visual Studio
 
 Za pomocą narzędzia do **publikowania** można publikować aplikacje ASP.NET, ASP.NET Core, .NET Core i Python do folderu z programu Visual Studio. W przypadku Node.js kroki są obsługiwane, ale interfejs użytkownika jest inny.
 
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
-
+::: moniker range=">=vs-2017"
 > [!NOTE]
 > Jeśli musisz opublikować aplikację klasyczną systemu Windows w folderze, zobacz [wdrażanie aplikacji klasycznej przy użyciu technologii ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# lub Visual Basic). W przypadku języka C++/CLR zobacz [wdrażanie aplikacji natywnej przy użyciu technologii ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) lub dla języka C/C++, zobacz [wdrażanie aplikacji natywnej przy użyciu projektu instalacji](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+> [!NOTE]
+> Jeśli musisz opublikować platformę .NET Core 3,1 lub nowszą, aplikację klasyczną systemu Windows do folderu, zobacz [wdrażanie aplikacji .NET dla systemu Windows przy użyciu technologii ClickOnce](quickstart-deploy-using-clickonce-folder.md).
+
+::: moniker-end
 
 ## <a name="deploy-to-a-local-folder"></a>Wdrażanie w folderze lokalnym
 
@@ -40,7 +48,17 @@ Za pomocą narzędzia do **publikowania** można publikować aplikacje ASP.NET, 
 
     ![Wybierz folder jako element docelowy publikowania](../deployment/media/quickstart-publish-folder-new.png "Wybierz folder")
 
-1. Wprowadź ścieżkę lub wybierz pozycję **Przeglądaj** , aby określić folder.
+::: moniker range=">=vs-2019"
+
+4. Jeśli wdrażasz platformę .NET Core 3,1 lub nowszą, aplikacja systemu Windows może wymagać wybrania **folderu** w oknie **określonego celu** .
+
+![Wybierz folder jako określony element docelowy](../deployment/media/quickstart-publish-folder-targets.png "Wybierz konkretny element docelowy")
+
+5. Jeśli chcesz opublikować platformę .NET Core 3,1 lub nowszą, aplikację systemu Windows z funkcją ClickOnce, zobacz [wdrażanie aplikacji .NET systemu Windows przy użyciu technologii ClickOnce](quickstart-deploy-using-clickonce-folder.md).
+
+ ::: moniker-end
+
+4. Wprowadź ścieżkę lub wybierz pozycję **Przeglądaj** , aby określić folder.
 
     ![Określ ścieżkę do folderu](../deployment/media/quickstart-publish-folder-path.png "Wybierz folder")
 
@@ -73,3 +91,6 @@ W przypadku aplikacji .NET:
 - [Wdrażanie aplikacji .NET Core za pomocą narzędzia do publikowania](/dotnet/core/deploying/deploy-with-vs)
 - [Publikowanie aplikacji platformy .NET Core (wdrożenia zależne od platformy a samodzielne)](/dotnet/core/deploying/)
 - [Wdrażanie .NET Framework i aplikacji](/dotnet/framework/deployment/)
+::: moniker range=">=vs-2019"
+- [Wdróż aplikację platformy .NET dla systemu Windows przy użyciu technologii ClickOnce](quickstart-deploy-using-clickonce-folder.md).
+ ::: moniker-end

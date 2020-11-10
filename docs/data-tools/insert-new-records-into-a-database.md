@@ -1,5 +1,7 @@
 ---
 title: Wstawianie nowych rekordów do bazy danych
+description: Wstaw nowe rekordy do bazy danych przy użyciu metody TableAdapter. Update, jednej z metod DBDirect TableAdapter lub obiektów poleceń.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b703d3ccc6ffbd5e2449a1768071b930f606f37f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3586cf45e152cd8a0149140556916b11544a00bb
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281997"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436279"
 ---
 # <a name="insert-new-records-into-a-database"></a>Wstawianie nowych rekordów do bazy danych
 
@@ -34,7 +36,7 @@ Jeśli Twoja aplikacja korzysta z zestawów danych do przechowywania, użyj `Tab
 
 Jeśli aplikacja korzysta z obiektów do przechowywania danych lub jeśli chcesz mieć większą kontrolę nad tworzeniem nowych rekordów w bazie danych, użyj `TableAdapter.Insert` metody.
 
-Jeśli TableAdapter nie ma `Insert` metody, oznacza to, że TableAdapter jest skonfigurowany do korzystania z procedur składowanych lub jej `GenerateDBDirectMethods` Właściwość jest ustawiona na `false` . Spróbuj ustawić `GenerateDBDirectMethods` Właściwość TableAdapter na `true` wartość z w **Projektant obiektów DataSet**, a następnie Zapisz zestaw danych. Spowoduje to ponowne wygenerowanie TableAdapter. Jeśli TableAdapter nadal nie ma `Insert` metody, tabela prawdopodobnie nie zawiera wystarczającej ilości informacji o schemacie do rozróżnienia między pojedynczymi wierszami (na przykład w tabeli może nie być ustawiony klucz podstawowy).
+Jeśli TableAdapter nie ma `Insert` metody, oznacza to, że TableAdapter jest skonfigurowany do korzystania z procedur składowanych lub jej `GenerateDBDirectMethods` Właściwość jest ustawiona na `false` . Spróbuj ustawić `GenerateDBDirectMethods` Właściwość TableAdapter na `true` wartość z w **Projektant obiektów DataSet** , a następnie Zapisz zestaw danych. Spowoduje to ponowne wygenerowanie TableAdapter. Jeśli TableAdapter nadal nie ma `Insert` metody, tabela prawdopodobnie nie zawiera wystarczającej ilości informacji o schemacie do rozróżnienia między pojedynczymi wierszami (na przykład w tabeli może nie być ustawiony klucz podstawowy).
 
 ## <a name="insert-new-records-by-using-tableadapters"></a>Wstawianie nowych rekordów przy użyciu TableAdapters
 

@@ -1,5 +1,7 @@
 ---
 title: Tworzenie zapytań względem zestawów danych
+description: Omówienie zestawów danych zapytań. Dowiedz się więcej o rozróżnianiu wielkości liter w zestawie danych. Znajdź konkretny wiersz w tabeli danych, Znajdź wiersze według wartości kolumn i rekordy powiązane z dostępem.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4ef1c806914b0f134702e010b58229ee3fc15c7a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ccf228b147301eb9fccf41da98f8cc5204971a9
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281867"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436071"
 ---
 # <a name="query-datasets"></a>Tworzenie zapytań względem zestawów danych
 Aby wyszukać określone rekordy w zestawie danych, należy użyć `FindBy` metody z tabeli DataTable, napisać własną instrukcję foreach do pętli w kolekcji Rows tabel lub użyć [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
@@ -70,7 +72,7 @@ Na tej stronie przedstawiono przykłady użycia wpisanych zestawów danych. Aby 
 > [!NOTE]
 > Jeśli pracujesz w aplikacji Windows Forms i używasz funkcji powiązania danych do wyświetlania danych, formularz wygenerowany przez projektanta może zapewnić odpowiednią funkcjonalność aplikacji. Aby uzyskać więcej informacji, zobacz [Powiązywanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Zapoznaj się [z tematem relacje w zestawach danych](relationships-in-datasets.md).
 
-Poniższy przykład kodu pokazuje, jak nawigować w górę i w dół relacji w typach danych. W przykładach kodu użyto <xref:System.Data.DataRow> typu s ( `NorthwindDataSet.OrdersRow` ) i wygenerowanych metod FindBy*PrimaryKey* ( `FindByCustomerID` ), aby zlokalizować żądany wiersz i zwrócić powiązane rekordy. Przykłady kompilują i działają poprawnie tylko wtedy, gdy masz:
+Poniższy przykład kodu pokazuje, jak nawigować w górę i w dół relacji w typach danych. W przykładach kodu użyto <xref:System.Data.DataRow> typu s ( `NorthwindDataSet.OrdersRow` ) i wygenerowanych metod FindBy *PrimaryKey* ( `FindByCustomerID` ), aby zlokalizować żądany wiersz i zwrócić powiązane rekordy. Przykłady kompilują i działają poprawnie tylko wtedy, gdy masz:
 
 - Wystąpienie zestawu danych o nazwie `NorthwindDataSet` z `Customers` tabelą.
 

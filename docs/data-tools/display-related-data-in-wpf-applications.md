@@ -1,5 +1,7 @@
 ---
 title: Wyświetlanie pokrewnych danych w aplikacjach WPF
+description: Wyświetlaj powiązane dane w aplikacjach WPF. Pracuj z danymi z wielu tabel lub jednostek, które są ze sobą powiązane w relacji nadrzędny-podrzędny.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6694d3c1521a6a405323edc33adc44dac0e66829
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a9604ac7c0083bc40edb17b19d4de608eb7366b1
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282556"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436501"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Wyświetlanie pokrewnych danych w aplikacjach WPF
 
@@ -33,7 +35,7 @@ Można tworzyć kontrolki powiązane z danymi, które wyświetlają powiązane d
 
 1. W menu **dane** kliknij przycisk **Pokaż źródła danych** , aby otworzyć okno **źródła danych** .
 
-2. Kliknij przycisk **Dodaj nowe źródło danych**i Ukończ pracę kreatora **konfiguracji źródła danych** .
+2. Kliknij przycisk **Dodaj nowe źródło danych** i Ukończ pracę kreatora **konfiguracji źródła danych** .
 
 3. Otwórz projektanta WPF i upewnij się, że projektant zawiera kontener, który jest prawidłowym obiektem docelowym upuszczania dla elementów w oknie **źródła danych** .
 

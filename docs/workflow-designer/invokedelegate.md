@@ -1,5 +1,7 @@
 ---
 title: Projektant przepływu pracy — InvokeDelegate
+description: Dowiedz się więcej o programie InvokeDelegate Designer i sposobach tworzenia i konfigurowania działania InvokeDelegate za pomocą projektanta InvokeDelegate.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ author: TerryGLee
 ms.author: tglee
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e63fb7a766b79467749cc5181a575e0d35a07b8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a482f23b1df1587e9a1c7e3023bfb0d1737f1fae
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876076"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437752"
 ---
 # <a name="invokedelegate"></a>InvokeDelegate
 

@@ -1,6 +1,6 @@
 ---
 title: Błąd użycia oddzielnych projektów
-description: Rozdzielanie zestawów danych i adapterów TableAdapter do różnych projektów
+description: Dowiedz się, jak rozdzielić zestawy danych i TableAdapters je w różne projekty, dzięki czemu możesz szybko oddzielić warstwy aplikacji i generować wielowarstwowe aplikacje do obsługi danych.
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.custom: SEO-VS-2020
@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4ed815b73cade73c38b52528d918b4af4de2a618
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: f039dc445acd9032a5fe6862e78e5c28ec67bf5d
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036278"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436006"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Rozdzielanie zestawów danych i adapterów TableAdapter do różnych projektów
 Wpisane zestawy danych zostały ulepszone, aby klasy [TableAdapters](create-and-configure-tableadapters.md) i DataSet mogły być generowane w oddzielnych projektach. Dzięki temu można szybko oddzielić warstwy aplikacji i generować wielowarstwowe aplikacje do obsługi danych.
@@ -32,7 +32,7 @@ W przypadku rozdzielenia kodu zestawu danych z kodu TableAdapter, projekt zawier
 
 #### <a name="to-separate-the-dataset-into-a-different-project"></a>Aby rozdzielić zestaw danych do innego projektu
 
-1. Otwórz rozwiązanie, które zawiera zestaw danych (plik*XSD* ).
+1. Otwórz rozwiązanie, które zawiera zestaw danych (plik *XSD* ).
 
     > [!NOTE]
     > Jeśli rozwiązanie nie zawiera projektu, do którego chcesz oddzielić kod zestawu danych, Utwórz projekt lub Dodaj istniejący projekt do rozwiązania.
@@ -54,12 +54,12 @@ W przypadku rozdzielenia kodu zestawu danych z kodu TableAdapter, projekt zawier
 
      Kod zestawu danych jest generowany w wybranym projekcie we właściwości **projektu DataSet** , a kod **TableAdapter** jest generowany w bieżącym projekcie.
 
-Domyślnie po oddzieleniu zestawu danych i kodu TableAdapter wynik jest dyskretnym plikiem klasy w każdym projekcie. Oryginalny projekt zawiera plik o nazwie *DatasetName. Designer. vb* (lub *DatasetName.Designer.cs*), który zawiera kod TableAdapter. Projekt wskazany we właściwości **projektu DataSet** zawiera plik o nazwie *DataSetname. DataSet. Designer. vb* (lub *DatasetName.DataSet.Designer.cs*), który zawiera kod zestawu danych.
+Domyślnie po oddzieleniu zestawu danych i kodu TableAdapter wynik jest dyskretnym plikiem klasy w każdym projekcie. Oryginalny projekt zawiera plik o nazwie *DatasetName. Designer. vb* (lub *DatasetName.Designer.cs* ), który zawiera kod TableAdapter. Projekt wskazany we właściwości **projektu DataSet** zawiera plik o nazwie *DataSetname. DataSet. Designer. vb* (lub *DatasetName.DataSet.Designer.cs* ), który zawiera kod zestawu danych.
 
 > [!NOTE]
-> Aby wyświetlić wygenerowany plik klasy, wybierz projekt zestawu danych lub TableAdapter. Następnie w obszarze **Eksplorator rozwiązań**wybierz pozycję **Pokaż wszystkie pliki**.
+> Aby wyświetlić wygenerowany plik klasy, wybierz projekt zestawu danych lub TableAdapter. Następnie w obszarze **Eksplorator rozwiązań** wybierz pozycję **Pokaż wszystkie pliki**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [N-warstwowe aplikacje dotyczące danych — omówienie](../data-tools/n-tier-data-applications-overview.md)
 - [Przewodnik: Tworzenie wielowarstwowej aplikacji danych](../data-tools/walkthrough-creating-an-n-tier-data-application.md)

@@ -1,5 +1,7 @@
 ---
 title: Wypełnianie zestawów danych za pomocą adapterów TableAdapter
+description: Wypełnij zestawy danych przy użyciu TableAdapters. Składnik TableAdapter wypełnia zestaw danych z danymi z bazy danych, na podstawie jednej lub kilku zapytań lub procedur przechowywanych, które określisz.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 888e2ac47348d7e61d115f51e3ea52d15ea9f447
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6a10eb996acbdbf5411688860ce2ec8b00da1f6
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282439"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436462"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Wypełnianie zestawów danych za pomocą adapterów TableAdapter
 
@@ -52,7 +54,7 @@ TableAdapters to składniki generowane przez projektanta, które łączą się z
 
 ![Przepływ danych w aplikacji klienckiej](../data-tools/media/clientdatadiagram.gif)
 
-Chociaż TableAdapters są zaprojektowane z **Projektant obiektów DataSet**, klasy TableAdapter nie są generowane jako klasy zagnieżdżone  <xref:System.Data.DataSet> . Znajdują się one w oddzielnych przestrzeniach nazw, które są specyficzne dla każdego zestawu danych. Na przykład, jeśli masz zestaw danych o nazwie `NorthwindDataSet` , TableAdapters, które są skojarzone z  <xref:System.Data.DataTable> s w, `NorthwindDataSet` zostałyby w `NorthwindDataSetTableAdapters` przestrzeni nazw. Aby programowo uzyskać dostęp do określonego TableAdapter, należy zadeklarować nowe wystąpienie TableAdapter. Na przykład:
+Chociaż TableAdapters są zaprojektowane z **Projektant obiektów DataSet** , klasy TableAdapter nie są generowane jako klasy zagnieżdżone  <xref:System.Data.DataSet> . Znajdują się one w oddzielnych przestrzeniach nazw, które są specyficzne dla każdego zestawu danych. Na przykład, jeśli masz zestaw danych o nazwie `NorthwindDataSet` , TableAdapters, które są skojarzone z  <xref:System.Data.DataTable> s w, `NorthwindDataSet` zostałyby w `NorthwindDataSetTableAdapters` przestrzeni nazw. Aby programowo uzyskać dostęp do określonego TableAdapter, należy zadeklarować nowe wystąpienie TableAdapter. Na przykład:
 
 [!code-csharp[VbRaddataTableAdapters#7](../data-tools/codesnippet/CSharp/fill-datasets-by-using-tableadapters_1.cs)]
 [!code-vb[VbRaddataTableAdapters#7](../data-tools/codesnippet/VisualBasic/fill-datasets-by-using-tableadapters_1.vb)]

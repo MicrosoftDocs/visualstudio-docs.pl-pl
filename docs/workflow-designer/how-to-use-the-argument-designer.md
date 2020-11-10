@@ -1,5 +1,7 @@
 ---
 title: 'Projektant przepływu pracy — jak: korzystanie z projektanta argumentów'
+description: Dowiedz się więcej o projektancie argumentów oraz jak używać projektanta argumentów, aby umożliwić przepływ danych do działania i z niego.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c3c0fe3de3a9ab74ed09c1be45e0d39a71a5b7c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aca39eaf94e5dca3159a9f3740dae0f87257d9c1
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817453"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437869"
 ---
 # <a name="how-to-use-the-argument-designer"></a>Instrukcje: Używanie projektanta argumentów
 
@@ -28,7 +30,7 @@ Projektant argumentów ułatwia, aby dane były przesyłane do i z działania. D
 
 2. Otwórz projektanta argumentów, klikając przycisk **argumenty** w lewym dolnym rogu kanwy projektowania. Zostanie wyświetlony Projektant argumentów.
 
-3. Kliknij pusty wiersz z etykietą **Utwórz**. Spowoduje to dodanie nowego wiersza z nowym argumentem przy użyciu następujących wartości domyślnych: argumentx dla **nazwy** , gdzie x jest liczbą całkowitą z wartością początkową 1, która jest automatycznie zwiększana w celu utworzenia unikatowych nazw argumentów, **w** odniesieniu do **kierunku**i **ciągu** dla **typu argumentu**. Żadna wartość nie jest dodawana do **wartości domyślnej**. Te wartości można zmienić w dowolnym momencie podczas procesu projektowania przepływu pracy.
+3. Kliknij pusty wiersz z etykietą **Utwórz**. Spowoduje to dodanie nowego wiersza z nowym argumentem przy użyciu następujących wartości domyślnych: argumentx dla **nazwy** , gdzie x jest liczbą całkowitą z wartością początkową 1, która jest automatycznie zwiększana w celu utworzenia unikatowych nazw argumentów, **w** odniesieniu do **kierunku** i **ciągu** dla **typu argumentu**. Żadna wartość nie jest dodawana do **wartości domyślnej**. Te wartości można zmienić w dowolnym momencie podczas procesu projektowania przepływu pracy.
 
     > [!NOTE]
     > Aby usunąć argument, zaznacz go, klikając go, a następnie naciśnij klawisz **delete** .

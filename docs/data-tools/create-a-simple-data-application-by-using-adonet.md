@@ -1,5 +1,6 @@
 ---
 title: Tworzenie prostej aplikacji do obsługi danych za pomocą pakietu ADO.NET
+description: Dowiedz się, jak utworzyć prostą aplikację typu "formularze do danych" przy użyciu Windows Forms i ADO.NET w programie Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 08/23/2017
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c7db4d0072f217604e7ca163e581cc8fe138ffdb
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 44205f7f8f12d453a7c1d93ec8fee6ed1a3c1765
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037435"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436800"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Tworzenie prostej aplikacji do obsługi danych za pomocą pakietu ADO.NET
 
@@ -48,7 +49,7 @@ Utwórz przykładową bazę danych, wykonując następujące czynności:
 
 3. W polu tekstowym **Nazwa serwera** wprowadź **(LocalDB) \mssqllocaldb**.
 
-4. W polu tekstowym **Nowa nazwa bazy danych** wprowadź **Sales**, a następnie wybierz **OK**.
+4. W polu tekstowym **Nowa nazwa bazy danych** wprowadź **Sales** , a następnie wybierz **OK**.
 
      Pusta baza danych **sprzedaży** jest tworzona i dodawana do węzła połączenia danych w Eksplorator serwera.
 
@@ -123,10 +124,10 @@ Utwórz przykładową bazę danych, wykonując następujące czynności:
 ## <a name="store-the-connection-string"></a>Przechowywanie parametrów połączenia
 Gdy aplikacja próbuje otworzyć połączenie z bazą danych, aplikacja musi mieć dostęp do parametrów połączenia. Aby uniknąć wprowadzania ciągu ręcznie w każdym formularzu, należy przechowywać ciąg w pliku *App.config* w projekcie i utworzyć metodę zwracającą ciąg, gdy metoda jest wywoływana z dowolnej formy w aplikacji.
 
-Parametry połączenia można znaleźć, klikając prawym przyciskiem myszy połączenie danych **sprzedaży** w **Eksplorator serwera** i wybierając pozycję **Właściwości**. Znajdź właściwość **ConnectionString** , a następnie użyj **klawiszy CTRL** + **a**, **Ctrl** + **C** , aby zaznaczyć i skopiować ciąg do Schowka.
+Parametry połączenia można znaleźć, klikając prawym przyciskiem myszy połączenie danych **sprzedaży** w **Eksplorator serwera** i wybierając pozycję **Właściwości**. Znajdź właściwość **ConnectionString** , a następnie użyj **klawiszy CTRL** + **a** , **Ctrl** + **C** , aby zaznaczyć i skopiować ciąg do Schowka.
 
-1. Jeśli używasz języka C#, w **Eksplorator rozwiązań**rozwiń węzeł **Właściwości** w obszarze projektu, a następnie otwórz plik **Settings. Settings** .
-    Jeśli używasz Visual Basic, w **Eksplorator rozwiązań**, kliknij przycisk **Pokaż wszystkie pliki**, rozwiń węzeł **mój projekt** , a następnie otwórz plik **Settings. Settings** .
+1. Jeśli używasz języka C#, w **Eksplorator rozwiązań** rozwiń węzeł **Właściwości** w obszarze projektu, a następnie otwórz plik **Settings. Settings** .
+    Jeśli używasz Visual Basic, w **Eksplorator rozwiązań** , kliknij przycisk **Pokaż wszystkie pliki** , rozwiń węzeł **mój projekt** , a następnie otwórz plik **Settings. Settings** .
 
 2. W kolumnie **Nazwa** wprowadź wartość `connString` .
 
@@ -149,9 +150,9 @@ Po uruchomieniu aplikacji zostanie otwarty formularz nawigacji. Przycisk **Dodaj
 
 #### <a name="make-the-navigation-form-the-startup-form"></a>Ustaw nawigację formularza startowego
 
-Jeśli używasz języka C#, w **Eksplorator rozwiązań**Otwórz **program.cs**, a następnie zmień `Application.Run` wiersz na: `Application.Run(new Navigation());`
+Jeśli używasz języka C#, w **Eksplorator rozwiązań** Otwórz **program.cs** , a następnie zmień `Application.Run` wiersz na: `Application.Run(new Navigation());`
 
-Jeśli używasz Visual Basic, w **Eksplorator rozwiązań**, Otwórz okno **Właściwości** , wybierz kartę **aplikacja** , a następnie wybierz pozycję **SimpleDataApp. Nawigacja** na liście **formularz startowy** .
+Jeśli używasz Visual Basic, w **Eksplorator rozwiązań** , Otwórz okno **Właściwości** , wybierz kartę **aplikacja** , a następnie wybierz pozycję **SimpleDataApp. Nawigacja** na liście **formularz startowy** .
 
 #### <a name="create-auto-generated-event-handlers"></a>Utwórz automatycznie generowane programy obsługi zdarzeń
 
@@ -234,6 +235,6 @@ Aby ukończyć logikę formularza FillOrCancel, wykonaj następujące kroki.
 
 Wybierz klawisz **F5** , aby skompilować i przetestować aplikację po wprowadzeniu kodu dla każdej procedury obsługi zdarzeń, a następnie po zakończeniu kodowania.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Narzędzia do obsługi danych programu Visual Studio dla platformy .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

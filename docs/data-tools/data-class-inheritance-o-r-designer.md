@@ -1,5 +1,7 @@
 ---
 title: Dziedziczenie klasy danych (Projektant O-R)
+description: Współpracuj z dziedziczeniem klasy danych w Object Relational Designer (Projektant O/R), LINQ to SQL narzędzi klasy w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: af32653c-f4e6-4217-8c5a-e32b322b4918
@@ -8,16 +10,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7172c868780aec61de8688614fbb93627dc23bf5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aba03be7014880618d32be250e08c735622d8c4d
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462398"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436579"
 ---
 # <a name="data-class-inheritance-or-designer"></a>Dziedziczenie klas danych (Object Relational Designer)
 
-Podobnie jak w przypadku innych obiektów, klasy LINQ to SQL mogą używać dziedziczenia i pochodzić z innych klas. W kodzie można określić relacje dziedziczenia między obiektami przez zadeklarowanie, że jedna klasa dziedziczy z innej. W bazie danych relacje dziedziczenia są tworzone na kilka sposobów. **Object Relational Designer** (**Projektant O/R**) wspiera koncepcję dziedziczenia pojedynczej tabeli, ponieważ jest ona często zaimplementowana w systemach relacyjnych.
+Podobnie jak w przypadku innych obiektów, klasy LINQ to SQL mogą używać dziedziczenia i pochodzić z innych klas. W kodzie można określić relacje dziedziczenia między obiektami przez zadeklarowanie, że jedna klasa dziedziczy z innej. W bazie danych relacje dziedziczenia są tworzone na kilka sposobów. **Object Relational Designer** ( **Projektant O/R** ) wspiera koncepcję dziedziczenia pojedynczej tabeli, ponieważ jest ona często zaimplementowana w systemach relacyjnych.
 
 W przypadku dziedziczenia z jedną tabelą istnieje pojedyncza tabela bazy danych zawierająca kolumny dla klas podstawowych i pochodnych. W przypadku danych relacyjnych kolumna rozróżniacza zawiera wartość określającą, do której klasy należy dany rekord. Rozważmy na przykład `Persons` tabelę zawierającą wszystkie osoby zaangażowane przez firmę. Niektóre osoby to pracownicy i niektórzy ludzie są kierownikami. `Persons`Tabela zawiera kolumnę o nazwie `Type` , która ma wartość 1 dla menedżerów i wartość 2 dla pracowników. `Type`Kolumna jest kolumną rozróżniacza. W tym scenariuszu można utworzyć podklasę pracowników i wypełnić klasę tylko rekordami o `Type` wartości 2.
 
@@ -30,8 +32,8 @@ W poniższej tabeli wymieniono właściwości dziedziczenia i ich opisy:
 |Właściwość|Opis|
 |--------------|-----------------|
 |**Właściwość rozróżniacza**|Właściwość (zamapowana na kolumnę), która określa, do której klasy należy bieżący rekord.|
-|**Wartość rozróżniacza klasy bazowej**|Wartość (w kolumnie wyznaczono jako **Właściwość dyskryminatora**), która określa, że rekord jest klasą bazową.|
-|**Wartość rozróżniacza klasy pochodnej**|Wartość (we właściwości wyznaczonej jako **właściwość rozróżniacza**), która określa, że rekord jest klasą pochodną.|
+|**Wartość rozróżniacza klasy bazowej**|Wartość (w kolumnie wyznaczono jako **Właściwość dyskryminatora** ), która określa, że rekord jest klasą bazową.|
+|**Wartość rozróżniacza klasy pochodnej**|Wartość (we właściwości wyznaczonej jako **właściwość rozróżniacza** ), która określa, że rekord jest klasą pochodną.|
 |**Domyślne dziedziczenie**|Klasa, która jest wypełniana, gdy wartość we właściwości wyznaczonej jako **właściwość rozróżniacza** nie pasuje do **wartości rozróżniacza klasy bazowej** lub **wartości rozróżniacza klasy pochodnej**.|
 
 Tworzenie modelu obiektów, który używa dziedziczenia i odpowiada danych relacyjnych, może być nieco mylące. Ten temat zawiera informacje o podstawowych pojęciach i poszczególnych właściwościach, które są wymagane do skonfigurowania dziedziczenia. Poniższe tematy zawierają wyraźniejsze wyjaśnienie sposobu konfigurowania dziedziczenia przy użyciu **projektanta o/R**.

@@ -1,5 +1,7 @@
 ---
 title: Projektant przepływu pracy — Wyczyść &lt; &gt; projektanta działań w programiecollection T
+description: Dowiedz się, jak za pomocą <T> projektanta działań ClearCollection utworzyć i skonfigurować działanie ClearCollection <T> .
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 710e221441736ecb2415aec32c7f0bfb9a2d99ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3ec1820df3a12a729d534d4c07e56bb48bb46e70
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88711628"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435889"
 ---
 # <a name="clearcollectiont-activity-designer"></a>ClearCollection\<T>, projektant działań
 
-Projektant działań **ClearCollection \<T> ** służy do tworzenia i konfigurowania <xref:System.Activities.Statements.ClearCollection%601> działania.
+Projektant działań **ClearCollection \<T>** służy do tworzenia i konfigurowania <xref:System.Activities.Statements.ClearCollection%601> działania.
 
 ## <a name="the-clearcollectiont-activity"></a>Działanie ClearCollection \<T>
 
@@ -27,9 +29,9 @@ Projektant działań **ClearCollection \<T> ** służy do tworzenia i konfigurow
 
 ### <a name="using-the-clearcollectiont-activity-designer"></a>Korzystanie z \<T> projektanta działania ClearCollection
 
-Projektant **działań \<T> ClearCollection** można znaleźć w kategorii **kolekcji** **przybornika**, do którego jest uzyskiwany dostęp, klikając kartę **przybornika** Projektant przepływu pracy. Alternatywnie możesz wybrać **Przybornik** z menu **Widok** lub nacisnąć **klawisze CTRL** + **Alt** + **X**.
+Projektant **działań \<T> ClearCollection** można znaleźć w kategorii **kolekcji** **przybornika** , do którego jest uzyskiwany dostęp, klikając kartę **przybornika** Projektant przepływu pracy. Alternatywnie możesz wybrać **Przybornik** z menu **Widok** lub nacisnąć **klawisze CTRL** + **Alt** + **X**.
 
-Projektant działań **ClearCollection \<T> ** można przeciągnąć z **przybornika** i porzucić na Projektant przepływu pracy powierzchnię, wszędzie tam, gdzie działania są umieszczane, na przykład wewnątrz <xref:System.Activities.Statements.Sequence> . Porzucenie projektanta działań powoduje utworzenie <xref:System.Activities.Statements.ClearCollection%601> działania z wartością domyślną <xref:System.Activities.Activity.DisplayName%2A> clearcollection<Int32 \> . (Domyślnie *elementu TypeArgument* jest **Int32**. Elementu TypeArgument można zmienić w siatce właściwości.) <xref:System.Activities.Activity.DisplayName%2A>Wartość może być edytowana w nagłówku projektanta działania **clearcollection<T \> ** lub w polu **DisplayName** siatki właściwości. Inne właściwości muszą być edytowane w siatce właściwości.
+Projektant działań **ClearCollection \<T>** można przeciągnąć z **przybornika** i porzucić na Projektant przepływu pracy powierzchnię, wszędzie tam, gdzie działania są umieszczane, na przykład wewnątrz <xref:System.Activities.Statements.Sequence> . Porzucenie projektanta działań powoduje utworzenie <xref:System.Activities.Statements.ClearCollection%601> działania z wartością domyślną <xref:System.Activities.Activity.DisplayName%2A> clearcollection<Int32 \> . (Domyślnie *elementu TypeArgument* jest **Int32**. Elementu TypeArgument można zmienić w siatce właściwości.) <xref:System.Activities.Activity.DisplayName%2A>Wartość może być edytowana w nagłówku projektanta działania **clearcollection<T \>** lub w polu **DisplayName** siatki właściwości. Inne właściwości muszą być edytowane w siatce właściwości.
 
 ### <a name="the-clearcollectiont-properties"></a>Właściwości ClearCollection \<T>
 

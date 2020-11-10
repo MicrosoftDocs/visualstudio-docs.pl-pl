@@ -1,6 +1,8 @@
 ---
 title: Okno metryk kodu
 ms.date: 12/12/2017
+description: Dowiedz się, jak wyświetlać, filtrować, zmieniać kolejność i eksportować dane analizy metryk kodu programu Visual Studio. Zobacz, jak tworzyć elementy robocze na podstawie wyników metryki kodu.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 f1_keywords:
 - vs.codemetrics.output
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c01543b290d991a189c0851c64526c9c513068ba
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: d29109811c3dd5f354b510d046b33b0ba31d60e5
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91927981"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436813"
 ---
 # <a name="use-the-code-metrics-results-window"></a>Korzystanie z okna wyników metryk kodu
 
@@ -30,9 +32,9 @@ Okno **wyników metryki kodu** jest wyświetlane automatycznie podczas generowan
 
 Można wyświetlić okno wyników metryk kodu przy użyciu jednej z następujących sekwencji menu:
 
-- W menu **Analizuj** wybierz pozycję **Windows**  >  **wyniki metryk kodu**systemu Windows.
+- W menu **Analizuj** wybierz pozycję **Windows**  >  **wyniki metryk kodu** systemu Windows.
 
-- W menu **Widok** wybierz inne **Other Windows**  >  **wyniki metryk kodu**systemu Windows.
+- W menu **Widok** wybierz inne **Other Windows**  >  **wyniki metryk kodu** systemu Windows.
 
 Zostanie otwarte okno **wyników metryki kodu** , nawet jeśli nie zawiera żadnych wyników.
 
@@ -50,9 +52,9 @@ Pole listy rozwijanej **Filtr** zawiera nazwy kolumn wyników. Gdy filtr jest zd
 
 1. Z listy **Filtr** wybierz nazwę kolumny.
 
-2. W polu **min**wpisz wartość minimalną, która ma zostać wyświetlona.
+2. W polu **min** wpisz wartość minimalną, która ma zostać wyświetlona.
 
-3. W polu **maks**wpisz wartość maksymalną, która ma zostać wyświetlona.
+3. W polu **maks** wpisz wartość maksymalną, która ma zostać wyświetlona.
 
 4. Kliknij przycisk **Zastosuj filtr** .
 
@@ -90,7 +92,7 @@ Aby uzyskać więcej informacji na temat Azure Boards elementów roboczych, zoba
 
 1. Kliknij prawym przyciskiem myszy wynik.
 
-2. Wskaż polecenie **Utwórz element roboczy**, a następnie kliknij typ elementu pracy, który chcesz utworzyć (**usterka**, **zadanie**itd.).
+2. Wskaż polecenie **Utwórz element roboczy** , a następnie kliknij typ elementu pracy, który chcesz utworzyć ( **usterka** , **zadanie** itd.).
 
 3. Wypełnij formularz elementu pracy, wypełniając wszystkie wymagane pola.
 

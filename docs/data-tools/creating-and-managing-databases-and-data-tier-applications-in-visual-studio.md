@@ -1,5 +1,7 @@
 ---
 title: Projekty bazy danych i projekty DAC
+description: Przeczytaj o projektach bazy danych i aplikacjach warstwy danych (DAC). Za pomocą projektów bazy danych można tworzyć nowe bazy danych, tworzyć nowe DAC i aktualizować istniejące baz danych i DAC.
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cc8d32ddcc332264278cf76392ac69a6188ca51c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57b889f025b06e127e8e4bb38be311f6bbe55952
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586734"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436605"
 ---
 # <a name="database-projects-and-data-tier-applications"></a>Projekty bazy danych i aplikacje warstwy danych
 
@@ -25,7 +27,7 @@ Listę funkcji bazy danych obsługiwanych przez aplikacje warstwy danych można 
 
 ## <a name="common-high-level-tasks"></a>Typowe zadania wysokiego poziomu
 
-| Zadanie wysokiego poziomu | Zawartość pomocnicza |
+| High-Level, zadanie | Zawartość pomocnicza |
 | - | - |
 | **Rozpocznij programowanie aplikacji warstwy danych:** Koncepcja aplikacji warstwy danych (DAC) została wprowadzona w SQL Server 2008. DAC zawiera definicję bazy danych SQL Server i pomocniczych obiektów wystąpienia, które są używane przez aplikację klient-serwer lub 3-warstwowa. DAC obejmuje obiekty bazy danych, takie jak tabele i widoki, wraz z obiektami wystąpienia, takimi jak logowania. Możesz użyć programu Visual Studio do utworzenia projektu DAC, skompilowania pliku pakietu DAC i wysłania pliku pakietu DAC do administratora bazy danych w celu wdrożenia w wystąpieniu aparatu bazy danych SQL Server. | - [Aplikacje warstwy danych](/sql/relational-databases/data-tier-applications/data-tier-applications)<br />- [SQL Server Management Studio](/sql/ssms/sql-server-management-studio-ssms) |
 | **Wykonywanie iteracyjnego tworzenia bazy danych:** Deweloperzy mogą wyewidencjonowywać części projektu i aktualizować je w izolowanym środowisku programistycznym. Korzystając z tego typu środowiska, można testować zmiany bez wpływu na innych członków zespołu. Po zakończeniu wprowadzania zmian sprawdź pliki z powrotem do kontroli wersji, gdzie inni członkowie zespołu mogą uzyskać zmiany i skompilować je i wdrożyć na serwerze testowym. | - [Projektowanie zorientowane na projekt w trybie offline (narzędzia danych SQL Server)](/sql/ssdt/project-oriented-offline-database-development)<br />- [Debuger języka Transact-SQL (SQL Server Management Studio)](/sql/ssms/scripting/transact-sql-debugger) |

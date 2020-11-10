@@ -1,18 +1,20 @@
 ---
 title: Zestaw reguł Mixed Recommended Rules
 ms.date: 11/04/2016
+description: Dowiedz się więcej o mieszanych regułach zalecanych w programie Visual Studio. Zobacz opisy reguł dla projektów C++, które obsługują środowisko uruchomieniowe języka wspólnego.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 324595021a11fb533a1eeb1936df6f4894d4fbce
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: bc30012dc025c5fc92f6d589c8e40740d689a86b
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658454"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437073"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>Zestaw reguł Mixed Recommended Rules
 
@@ -38,20 +40,20 @@ Dołącz ten zestaw reguł do dowolnego niestandardowego zestawu reguł tworzone
 |[C6201](/cpp/code-quality/c6201)|Indeks przekracza maksymalną wartość buforu stosu|
 |[C6214](/cpp/code-quality/c6214)|Nieprawidłowe rzutowanie HRESULT do wartości LOGICZNEj|
 |[C6215](/cpp/code-quality/c6215)|Nieprawidłowa wartość logiczna rzutowania do HRESULT|
-|[C6216](/cpp/code-quality/c6216)|Nieprawidłowa wartość logiczna rzutowania wstawionego przez kompilator do HRESULT|
+|[C6216](/cpp/code-quality/c6216)|Nieprawidłowa Compiler-Inserted rzutowania BOOL na HRESULT|
 |[C6217](/cpp/code-quality/c6217)|Nieprawidłowy test HRESULT z|
 |[C6220](/cpp/code-quality/c6220)|Nieprawidłowe porównanie HRESULT z-1|
 |[C6226](/cpp/code-quality/c6226)|Nieprawidłowe przypisanie HRESULT do-1|
 |[C6230](/cpp/code-quality/c6230)|Nieprawidłowe użycie HRESULT jako wartości logicznej|
-|[C6235](/cpp/code-quality/c6235)|Stała niezerowa z wartością logiczną lub|
-|[C6236](/cpp/code-quality/c6236)|Logiczna — lub z niezerową stałą|
-|[C6237](/cpp/code-quality/c6237)|Zero ze koniunkcją logiczną i powoduje utratę efektów ubocznych|
+|[C6235](/cpp/code-quality/c6235)|Stała niezerowa z Logical-Or|
+|[C6236](/cpp/code-quality/c6236)|Logical-Or z stałą niezerową|
+|[C6237](/cpp/code-quality/c6237)|Zero z Logical-And utraci skutki uboczne|
 |[C6242](/cpp/code-quality/c6242)|Wymuszone lokalne rozwinięcie|
 |[C6248](/cpp/code-quality/c6248)|Tworzenie listy DACL o wartości null|
 |[C6250](/cpp/code-quality/c6250)|Niezwolnione deskryptory adresów|
 |[C6255](/cpp/code-quality/c6255)|Niechronione użycie alloca|
 |[C6258](/cpp/code-quality/c6258)|Korzystanie z wątku przerywania|
-|[C6259](/cpp/code-quality/c6259)|Martwy kod w przełączniku bitowym lub ograniczonym|
+|[C6259](/cpp/code-quality/c6259)|Martwy kod w przełączniku ograniczonym Bitwise-Or|
 |[C6260](/cpp/code-quality/c6260)|Użycie arytmetyki bajtowej|
 |[C6262](/cpp/code-quality/c6262)|Nadmierne użycie stosu|
 |[C6263](/cpp/code-quality/c6263)|Korzystanie z usługi alloca w pętli|
@@ -64,20 +66,20 @@ Dołącz ten zestaw reguł do dowolnego niestandardowego zestawu reguł tworzone
 |[C6274](/cpp/code-quality/c6274)|Argument niebędący znakiem do funkcji formatowania|
 |[C6276](/cpp/code-quality/c6276)|Nieprawidłowe rzutowanie ciągu|
 |[C6277](/cpp/code-quality/c6277)|Nieprawidłowe wywołanie metody CreateProcess|
-|[C6278](/cpp/code-quality/c6278)|Niezgodność Array-New skalarna Delete|
-|[C6279](/cpp/code-quality/c6279)|Skalarna — niezgodność z nową tablicą|
-|[C6280](/cpp/code-quality/c6280)|Niezgodność alokacji pamięci|
+|[C6278](/cpp/code-quality/c6278)|Niezgodność Scalar-Delete Array-New|
+|[C6279](/cpp/code-quality/c6279)|Niezgodność Array-Delete Scalar-New|
+|[C6280](/cpp/code-quality/c6280)|Niezgodność Allocation-Deallocation pamięci|
 |[C6281](/cpp/code-quality/c6281)|Pierwszeństwo relacji bitowej|
 |[C6282](/cpp/code-quality/c6282)|Przypisanie zastępuje test|
-|[C6283](/cpp/code-quality/c6283)|Niezgodność z tablicą pierwotną — Nowa funkcja skalarna usuwania|
+|[C6283](/cpp/code-quality/c6283)|Niezgodność Scalar-Delete Array-New pierwotna|
 |[C6284](/cpp/code-quality/c6284)|Nieprawidłowy argument obiektu dla funkcji formatowania|
-|[C6285](/cpp/code-quality/c6285)|Logiczne-lub stałe|
-|[C6286](/cpp/code-quality/c6286)|Niezerowe logiczne lub utrata efektów ubocznych|
+|[C6285](/cpp/code-quality/c6285)|Logical-Or stałych|
+|[C6286](/cpp/code-quality/c6286)|Niezerowe Logical-Or tracące skutki uboczne|
 |[C6287](/cpp/code-quality/c6287)|Test nadmiarowy|
-|[C6288](/cpp/code-quality/c6288)|Wzajemne włączenie przy użyciu operatora logicznego i ma wartość false|
-|[C6289](/cpp/code-quality/c6289)|Wzajemne wykluczenie z użyciem operatora logicznego OR jest prawdziwe|
-|[C6290](/cpp/code-quality/c6290)|Niestandardowa koniunkcja logiczna|
-|[C6291](/cpp/code-quality/c6291)|Niestandardowa koniunkcja logiczna|
+|[C6288](/cpp/code-quality/c6288)|Wzajemne włączenie do Logical-And ma wartość false|
+|[C6289](/cpp/code-quality/c6289)|Wzajemne wykluczenie dla Logical-Or jest prawdziwe|
+|[C6290](/cpp/code-quality/c6290)|Logical-Not Bitwise-And pierwszeństwo|
+|[C6291](/cpp/code-quality/c6291)|Logical-Not Bitwise-Or pierwszeństwo|
 |[C6292](/cpp/code-quality/c6292)|Pętla zlicza w górę od maksimum|
 |[C6293](/cpp/code-quality/c6293)|Pętla liczy w dół od minimum|
 |[C6294](/cpp/code-quality/c6294)|Treść pętli nigdy nie została wykonana|
@@ -92,7 +94,7 @@ Dołącz ten zestaw reguł do dowolnego niestandardowego zestawu reguł tworzone
 |[C6308](/cpp/code-quality/c6308)|Przeciek realloc|
 |[C6310](/cpp/code-quality/c6310)|Niedozwolona stała filtru wyjątków|
 |[C6312](/cpp/code-quality/c6312)|Pętla kontynuacji wykonywania wyjątków|
-|[C6314](/cpp/code-quality/c6314)|Pierwszeństwo bitowe|
+|[C6314](/cpp/code-quality/c6314)|Bitwise-Or pierwszeństwo|
 |[C6317](/cpp/code-quality/c6317)|Nie uzupełniaj|
 |[C6318](/cpp/code-quality/c6318)|Wyjątek — Kontynuuj wyszukiwanie|
 |[C6319](/cpp/code-quality/c6319)|Zignorowane przez przecinek|
@@ -103,7 +105,7 @@ Dołącz ten zestaw reguł do dowolnego niestandardowego zestawu reguł tworzone
 |[C6333](/cpp/code-quality/c6333)|Nieprawidłowy rozmiar VirtualFree|
 |[C6335](/cpp/code-quality/c6335)|Przeciek uchwytu procesu|
 |[C6381](/cpp/code-quality/c6381)|Brak informacji o zamknięciu|
-|[C6383](/cpp/code-quality/c6383)|Przepełnienie buforu liczby elementów-count|
+|[C6383](/cpp/code-quality/c6383)|Przepełnienie buforu Byte-Count Element-Count|
 |[C6384](/cpp/code-quality/c6384)|Dzielenie rozmiaru wskaźnika|
 |[C6385](/cpp/code-quality/c6385)|Przepełnienie odczytu|
 |[C6386](/cpp/code-quality/c6386)|Przepełnienie zapisu|

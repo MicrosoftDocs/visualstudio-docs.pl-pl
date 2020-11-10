@@ -1,5 +1,7 @@
 ---
 title: Zapisywanie danych z powrotem w bazie danych
+description: Użyj narzędzi DataSet, aby zapisać dane z powrotem w bazie danych. Zestaw danych to kopia danych w pamięci, która powinna zostać zapisana z powrotem do bazy danych, jeśli jest modyfikowana.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -20,12 +22,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 493637f81df15fadf65d6c7d90e980e322919b13
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 77f6a837fcc88c7154978e8031b17febaa0fcd39
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281750"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436058"
 ---
 # <a name="save-data-back-to-the-database"></a>Zapisywanie danych z powrotem w bazie danych
 
@@ -48,7 +50,7 @@ Jeśli znasz już program TableAdapters, możesz przejść bezpośrednio do jedn
 |[Aktualizacja hierarchiczna](../data-tools/hierarchical-update.md)|Jak wykonać aktualizacje z zestawu danych z co najmniej dwiema powiązanymi tabelami|
 |[Obsługiwanie wyjątku współbieżności](../data-tools/handle-a-concurrency-exception.md)|Jak obsługiwać wyjątki, gdy dwóch użytkowników próbuje zmienić te same dane w bazie danych w tym samym czasie|
 |[Instrukcje: zapisywanie danych przy użyciu transakcji](../data-tools/save-data-by-using-a-transaction.md)|Jak zapisywać dane w transakcji przy użyciu systemu. Przestrzeń nazw transakcji i obiekt TransactionScope|
-|[Zapisywanie danych w transakcji](../data-tools/save-data-in-a-transaction.md)|Przewodnik, który tworzy aplikację Windows Forms, aby zademonstrować zapisywanie danych w bazie danych w ramach transakcji|
+|[zapisywanie danych w transakcji](../data-tools/save-data-in-a-transaction.md)|Przewodnik, który tworzy aplikację Windows Forms, aby zademonstrować zapisywanie danych w bazie danych w ramach transakcji|
 |[Zapisywanie danych w bazie danych (wiele tabel)](../data-tools/save-data-to-a-database-multiple-tables.md)|Jak edytować rekordy i zapisywać zmiany w wielu tabelach z powrotem do bazy danych|
 |[Zapisywanie danych z obiektu w bazie danych](../data-tools/save-data-from-an-object-to-a-database.md)|Jak przekazać dane z obiektu, który nie znajduje się w zestawie danych, za pomocą metody TableAdapter DBDirect|
 |[Zapisywanie danych za pomocą metod DBDirect adaptera TableAdapter](../data-tools/save-data-with-the-tableadapter-dbdirect-methods.md)|Jak wysyłać zapytania SQL bezpośrednio do bazy danych za pomocą TableAdapter|

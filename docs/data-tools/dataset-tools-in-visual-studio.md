@@ -1,5 +1,7 @@
 ---
 title: Narzędzia do obsługi zestawów danych
+description: Przejrzyj narzędzia zestawu danych dostępne w programie Visual Studio. Przeczytaj informacje o przepływie pracy zestawu danych, zestawach danych i architekturze N-warstwowej oraz zestawy danych i XML.
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: conceptual
 f1_keywords:
@@ -47,12 +49,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cb41a4e3e4ed1c0032c579779a18c7df0bc22477
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b0ccb15d65f021099bb48c26dbdb7c03122049a7
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586721"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436488"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Narzędzia zestawów danych w programie Visual Studio
 

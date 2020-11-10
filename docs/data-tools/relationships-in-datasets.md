@@ -1,5 +1,6 @@
 ---
 title: Tworzenie relacji między zestawami danych
+description: Utwórz relacje między zestawami danych w programie Visual Studio. Zrozumienie obiektów i ograniczeń DataRelation. Ręcznie Utwórz relację danych w Menedżerze zestawów danych.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,15 +17,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 93575cb299513dbb0616f3c7ed6f1c7db6d65bb5
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 0a07ca2d30e27cdcbc06e8f90a810982d4410931
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037689"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436097"
 ---
 # <a name="create-relationships-between-datasets"></a>Tworzenie relacji między zestawami danych
-Zestawy danych, które zawierają tabele powiązane z danymi, używają <xref:System.Data.DataRelation> obiektów do reprezentowania relacji nadrzędny/podrzędny między tabelami i zwracania powiązanych rekordów ze sobą. Dodawanie powiązanych tabel do zestawów danych za pomocą **Kreatora konfiguracji źródła danych**lub **Projektant obiektów DataSet**, tworzy i konfiguruje <xref:System.Data.DataRelation> obiekt.
+Zestawy danych, które zawierają tabele powiązane z danymi, używają <xref:System.Data.DataRelation> obiektów do reprezentowania relacji nadrzędny/podrzędny między tabelami i zwracania powiązanych rekordów ze sobą. Dodawanie powiązanych tabel do zestawów danych za pomocą **Kreatora konfiguracji źródła danych** lub **Projektant obiektów DataSet** , tworzy i konfiguruje <xref:System.Data.DataRelation> obiekt.
 
 <xref:System.Data.DataRelation>Obiekt wykonuje dwie funkcje:
 
@@ -69,9 +70,9 @@ Aby uzyskać więcej informacji o aktualizacjach w tabelach zestawu danych, zoba
 Podczas tworzenia <xref:System.Data.DataRelation> obiektu można określić, czy relacja ma być używana tylko w celu wymuszania ograniczeń — to znaczy, że nie będzie również służyć do uzyskiwania dostępu do powiązanych rekordów. Za pomocą tej opcji można wygenerować zestaw danych, który jest nieco bardziej wydajny i zawiera mniej metod niż jeden z funkcją powiązane rekordy. Nie będzie jednak możliwe uzyskanie dostępu do powiązanych rekordów. Na przykład relacja tylko do ograniczenia uniemożliwia usunięcie rekordu nadrzędnego, który nadal ma rekordy podrzędne i nie ma dostępu do rekordów podrzędnych za pośrednictwem elementu nadrzędnego.
 
 ## <a name="manually-creating-a-data-relation-in-the-dataset-designer"></a>Ręczne tworzenie relacji danych w Projektant obiektów Dataset
-Podczas tworzenia tabel danych przy użyciu narzędzi do projektowania danych w programie Visual Studio, relacje są tworzone automatycznie, jeśli informacje można zbierać ze źródła danych. W przypadku ręcznego dodawania tabel danych z karty **zestaw danych** **przybornika**może być konieczne ręczne utworzenie relacji. Aby uzyskać informacje na temat <xref:System.Data.DataRelation> programistycznego tworzenia obiektów, zobacz [Dodawanie relacji](/dotnet/framework/data/adonet/dataset-datatable-dataview/adding-datarelations)danych.
+Podczas tworzenia tabel danych przy użyciu narzędzi do projektowania danych w programie Visual Studio, relacje są tworzone automatycznie, jeśli informacje można zbierać ze źródła danych. W przypadku ręcznego dodawania tabel danych z karty **zestaw danych** **przybornika** może być konieczne ręczne utworzenie relacji. Aby uzyskać informacje na temat <xref:System.Data.DataRelation> programistycznego tworzenia obiektów, zobacz [Dodawanie relacji](/dotnet/framework/data/adonet/dataset-datatable-dataview/adding-datarelations)danych.
 
-Relacje między tabelami danych są wyświetlane jako wiersze w **Projektant obiektów DataSet**, z glifem Key i Infinity, który przedstawia aspekt relacji jeden-do-wielu. Domyślnie nazwa relacji nie jest wyświetlana na powierzchni projektowej.
+Relacje między tabelami danych są wyświetlane jako wiersze w **Projektant obiektów DataSet** , z glifem Key i Infinity, który przedstawia aspekt relacji jeden-do-wielu. Domyślnie nazwa relacji nie jest wyświetlana na powierzchni projektowej.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -105,6 +106,6 @@ Relacje między tabelami danych są wyświetlane jako wiersze w **Projektant obi
 
 2. Z menu **dane** wybierz polecenie **Pokaż etykiety relacji** , aby wyświetlić nazwę relacji. Wyczyść to polecenie, aby ukryć nazwę relacji.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Tworzenie i konfigurowanie zestawów danych w programie Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)

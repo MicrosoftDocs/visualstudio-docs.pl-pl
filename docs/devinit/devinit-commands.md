@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 6543dfe8298ea24aa731a74556b01be1beeed2bf
-ms.sourcegitcommit: e132a870ec198fdcec289227f1a0c1c48fef070c
+ms.openlocfilehash: 153864a293ca25fdcf30f23b96f686737411c965
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93344479"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435787"
 ---
 # <a name="devinit-commands"></a>polecenia devinit
 
@@ -26,7 +26,7 @@ ms.locfileid: "93344479"
 devinit init
 ```
 
-Zainicjuj środowisko, uruchamiając narzędzia określone w [_.devinit.js_](devinit-json.md) w pliku w bieżącym katalogu roboczym.  
+Zainicjuj środowisko, uruchamiając narzędzia określone w [.devinit.js](devinit-json.md) pliku.
 
 ### <a name="options-for-init"></a>Opcje inicjowania
 
@@ -34,7 +34,7 @@ Opcjonalne opcje dla `devinit init` polecenia.
 
 | Argument             | Wymagane | Opis                                                               |
 |----------------------|----------|---------------------------------------------------------------------------|
-| -plik,--            | Nie       | Ścieżka do _.devinit.js_ pliku.                                         |
+| -plik,--            | Nie       | Ścieżka do `.devinit.json` pliku.                                         |
 | --błąd-akcja       | Nie       | Określa, jak obsługiwać błędy. Opcje: Stop, IGNORE, Continue (domyślnie).|
 | -v,--verbose         | Nie       | Emituj pełne dane wyjściowe.                                                      |
 | -n,--w trakcie działania suchego         | Nie       | Uruchomienie suche.                                                                  |
@@ -97,6 +97,10 @@ Określa akcję, która ma zostać podjęta, jeśli narzędzie zwróci kod zako�
 | continue | Kontynuuj przetwarzanie innych narzędzi po wyemitowaniu błędu do standardowego błędu. Kod zakończenia devinit.exe jest różny od zera (niepowodzenie). To zachowanie jest podobne do akcji zatrzymania błędu, ale przetwarzanie jest kontynuowane. `continue` jest domyślnym akcją błędu dla polecenia init.              |
 | ignoruj   | Kontynuuj przetwarzanie innych narzędzi po wyemitowaniu ostrzeżenia do wyjścia standardowego. Kod zakończenia procesu DevInit powinien być zawsze równy zero (powodzenie). `ignore`Ustawienie ignoruje wszystkie błędy.                                                                                                      |
 | zatrzymanie     | Emituje błąd do standardowego błędu i kończy przetwarzanie narzędzi. Kod zakończenia devinit.exe jest różny od zera (niepowodzenie). Jest to podobne do akcji Kontynuuj, ale podczas pierwszego napotkanego błędu przetwarzanie jest zatrzymywane. `stop` to domyślny błąd-akcja dla wszystkich poleceń z wyjątkiem init. |
+
+#### <a name="--dry-run-switch"></a>--Przełącznik suchy
+
+Polecenia narzędzia echo, które zostałyby uruchomione. Niektóre narzędzia mogą podejmować dalsze działania zgodnie z opisem dla tego narzędzia. 
 
 #### <a name="--verbose-switch"></a>--pełny przełącznik
 

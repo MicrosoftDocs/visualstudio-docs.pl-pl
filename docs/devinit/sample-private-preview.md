@@ -1,5 +1,5 @@
 ---
-title: Prywatna wersja zapoznawcza
+title: Prywatna wersja beta
 description: Przykładowe dostosowania używane w repozytorium GitHub Codespaces programu Visual Studio w wersji zapoznawczej.
 ms.date: 08/28/2020
 ms.topic: reference
@@ -11,20 +11,20 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 61ef0a0575e5b86ab7cbd7c17e37c552c0c14388
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: c79206295615fc984d2a95b52e0ecc0f70814e6f
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005632"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437102"
 ---
-# <a name="private-preview"></a>Prywatna wersja zapoznawcza
+# <a name="private-beta"></a>Prywatna wersja beta
 
 W tym przykładzie pokazano, jak dostosować codespace dla programu Visual Studio, aby miał te same funkcje co początkowy prywatny beta usługi [GitHub Codespaces](https://github.com/features/codespaces) .
 
 ## <a name="devinitjson"></a>.devinit.json
 
-Zawartość [_.devinit.js_](devinit-json.md) pliku. Ten plik musi znajdować się w tym samym folderze co _.devcontainer.js_.
+Zawartość [`.devinit.json`](devinit-json.md) pliku. Ten plik musi znajdować się w tym samym folderze co _.devcontainer.js_.
 
 ```json
 {

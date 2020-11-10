@@ -1,5 +1,6 @@
 ---
 title: Tworzenie kontrolek użytkownika, które obsługują proste powiązanie danych
+description: Dowiedz się, jak utworzyć formant użytkownika Windows Forms obsługujący proste powiązanie danych przy użyciu klasy DefaultBindingPropertyAttribute w programie Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -15,16 +16,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f5126c6f4c06bc52e98b952a7809ccae9c20e633
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 4ba2010b33b1defa6ef7dcb601fde9417fa47f70
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037371"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436748"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Tworzenie kontrolki użytkownika aplikacji Windows Forms obsługującej proste powiązanie danych
 
-Podczas wyświetlania danych w formularzach w aplikacjach systemu Windows można wybrać istniejące kontrolki z **przybornika**lub można utworzyć niestandardowe kontrolki, jeśli aplikacja wymaga funkcjonalności, która nie jest dostępna w kontrolkach standardowych. W tym instruktażu pokazano, jak utworzyć kontrolkę implementującą <xref:System.ComponentModel.DefaultBindingPropertyAttribute> . Kontrolki implementujące <xref:System.ComponentModel.DefaultBindingPropertyAttribute> może zawierać jedną właściwość, która może być powiązana z danymi. Takie kontrolki są podobne do <xref:System.Windows.Forms.TextBox> lub <xref:System.Windows.Forms.CheckBox> .
+Podczas wyświetlania danych w formularzach w aplikacjach systemu Windows można wybrać istniejące kontrolki z **przybornika** lub można utworzyć niestandardowe kontrolki, jeśli aplikacja wymaga funkcjonalności, która nie jest dostępna w kontrolkach standardowych. W tym instruktażu pokazano, jak utworzyć kontrolkę implementującą <xref:System.ComponentModel.DefaultBindingPropertyAttribute> . Kontrolki implementujące <xref:System.ComponentModel.DefaultBindingPropertyAttribute> może zawierać jedną właściwość, która może być powiązana z danymi. Takie kontrolki są podobne do <xref:System.Windows.Forms.TextBox> lub <xref:System.Windows.Forms.CheckBox> .
 
 Aby uzyskać więcej informacji na temat tworzenia kontroli, zobacz [Opracowywanie formantów Windows Forms w czasie projektowania](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time).
 
@@ -58,11 +59,11 @@ W tym instruktażu dowiesz się, jak:
 
 W tym instruktażu jest stosowana SQL Server Express LocalDB i Przykładowa baza danych Northwind.
 
-1. Jeśli nie masz SQL Server Express LocalDB, zainstaluj go na [stronie pobierania SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)lub za pośrednictwem **Instalator programu Visual Studio**. W **Instalator programu Visual Studio**można zainstalować SQL Server Express LocalDB jako część obciążenia **magazynu danych i przetwarzania** lub jako pojedynczy składnik.
+1. Jeśli nie masz SQL Server Express LocalDB, zainstaluj go na [stronie pobierania SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)lub za pośrednictwem **Instalator programu Visual Studio**. W **Instalator programu Visual Studio** można zainstalować SQL Server Express LocalDB jako część obciążenia **magazynu danych i przetwarzania** lub jako pojedynczy składnik.
 
 2. Zainstaluj przykładową bazę danych Northwind, wykonując następujące kroki:
 
-    1. W programie Visual Studio Otwórz okno **Eksplorator obiektów SQL Server** . (Eksplorator obiektów SQL Server jest instalowany jako część obciążenia **magazynu i przetwarzania danych** w **Instalator programu Visual Studio**). Rozwiń węzeł **SQL Server** . Kliknij prawym przyciskiem myszy wystąpienie LocalDB i wybierz pozycję **nowe zapytanie**.
+    1. W programie Visual Studio Otwórz okno **Eksplorator obiektów SQL Server** . (Eksplorator obiektów SQL Server jest instalowany jako część obciążenia **magazynu i przetwarzania danych** w **Instalator programu Visual Studio** ). Rozwiń węzeł **SQL Server** . Kliknij prawym przyciskiem myszy wystąpienie LocalDB i wybierz pozycję **nowe zapytanie**.
 
        Zostanie otwarte okno edytora zapytań.
 
@@ -74,7 +75,7 @@ W tym instruktażu jest stosowana SQL Server Express LocalDB i Przykładowa baza
 
 ## <a name="create-a-windows-forms-application"></a>Tworzenie aplikacji Windows Forms
 
-Pierwszym krokiem jest utworzenie **aplikacji Windows Forms**:
+Pierwszym krokiem jest utworzenie **aplikacji Windows Forms** :
 
 1. W programie Visual Studio w menu **plik** wybierz pozycję **Nowy**  >  **projekt**.
 
@@ -82,7 +83,7 @@ Pierwszym krokiem jest utworzenie **aplikacji Windows Forms**:
 
 3. W środkowym okienku wybierz typ projektu **aplikacji Windows Forms** .
 
-4. Nazwij projekt **SimpleControlWalkthrough**, a następnie wybierz przycisk **OK**.
+4. Nazwij projekt **SimpleControlWalkthrough** , a następnie wybierz przycisk **OK**.
 
      Projekt **SimpleControlWalkthrough** został utworzony i dodany do **Eksplorator rozwiązań**.
 
@@ -94,7 +95,7 @@ Ten Instruktaż tworzy prostą kontrolkę z powiązaniem danych z **kontrolki u�
 
 2. Wpisz **PhoneNumberBox** w obszarze Nazwa, a następnie kliknij przycisk **Dodaj**.
 
-     Formant **PhoneNumberBox** zostanie dodany do **Eksplorator rozwiązań**i otwarty w projektancie.
+     Formant **PhoneNumberBox** zostanie dodany do **Eksplorator rozwiązań** i otwarty w projektancie.
 
 ## <a name="design-the-phonenumberbox-control"></a>Zaprojektuj formant PhoneNumberBox
 
@@ -110,7 +111,7 @@ Ten przewodnik rozszerza się na istniejący, <xref:System.Windows.Forms.MaskedT
 
 W przypadku prostych formantów, które obsługują wiązania z danymi, zaimplementuj <xref:System.ComponentModel.DefaultBindingPropertyAttribute> :
 
-1. Przełącz formant **PhoneNumberBox** do widoku kodu. (W menu **Widok** wybierz polecenie **kod**).
+1. Przełącz formant **PhoneNumberBox** do widoku kodu. (W menu **Widok** wybierz polecenie **kod** ).
 
 2. Zastąp kod w **PhoneNumberBox** następującym:
 
@@ -127,7 +128,7 @@ Ten krok powoduje użycie kreatora **konfiguracji źródła danych** w celu utwo
 
 2. W oknie **źródła danych** wybierz pozycję **Dodaj nowe źródło danych** , aby uruchomić kreatora **konfiguracji źródła danych** .
 
-3. Na stronie **Wybierz typ źródła danych** wybierz pozycję **baza danych**, a następnie kliknij przycisk **dalej**.
+3. Na stronie **Wybierz typ źródła danych** wybierz pozycję **baza danych** , a następnie kliknij przycisk **dalej**.
 
 4. Na stronie **Wybierz połączenie danych** wykonaj jedną z następujących czynności:
 
@@ -181,7 +182,7 @@ W zależności od wymagań aplikacji istnieje kilka kroków, które można wykon
 
 - Tworzenie formantów, które obsługują bardziej złożone scenariusze powiązań danych. Aby uzyskać więcej informacji, zobacz [Tworzenie kontrolki użytkownika Windows Forms obsługującej złożone powiązanie danych](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md) i [Tworzenie Windows Forms kontrolki użytkownika, która obsługuje powiązanie danych wyszukiwania](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Wiązanie kontrolek Windows Forms z danymi w programie Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Ustawianie kontrolki do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)

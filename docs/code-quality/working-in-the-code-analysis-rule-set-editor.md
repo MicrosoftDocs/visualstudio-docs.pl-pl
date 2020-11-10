@@ -1,6 +1,8 @@
 ---
 title: Korzystanie z edytora zestawu reguł analizy kodu
 ms.date: 04/04/2018
+description: Dowiedz się, jak edytować i wyświetlać zestawy reguł w programie Visual Studio. Zobacz, jak ustawić ważność reguły, określić reguły w zestawie niestandardowym i dostosować dane w siatce zestawu reguł.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.ruleseteditor
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffaf964b24fea41d8e364d610806ba92980b1dc7
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 4d2703972658aace438ab235d469eed3e0644c06
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659182"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436826"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Korzystanie z edytora zestawu reguł analizy kodu
 
@@ -69,10 +71,10 @@ W poniższej tabeli opisano pola zestawu reguł:
 
 |Pole|Opis|
 |-----------|-----------------|
-|**#C1**|Identyfikator reguły.|
+|**ID (Identyfikator)**|Identyfikator reguły.|
 |**Kategoria**|Oprócz ich przynależności do zestawów reguł reguły analizy kodu są również pogrupowane według kategorii. Aby uzyskać więcej informacji, zobacz [ostrzeżenia analizy kodu](/dotnet/fundamentals/code-analysis/quality-rules/index).|
 |**Nazwa**|Tytuł reguły.|
-|**Obszaru**|Przestrzeń nazw reguły.|
+|**Przestrzeń nazw**|Przestrzeń nazw reguły.|
 |**Typ docelowy**|Wskazuje, czy reguła dotyczy kodu natywnego, zarządzanego lub bazy danych.|
 |**Akcja**|Akcja podejmowana, gdy reguła jest naruszana w przebiegu analizy kodu. Można edytować pole **akcji** .|
 |**Źródłowe zestawy reguł**|Zestaw reguł, który zawiera regułę.|

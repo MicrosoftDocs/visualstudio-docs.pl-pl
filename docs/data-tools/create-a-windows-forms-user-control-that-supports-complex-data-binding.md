@@ -1,5 +1,7 @@
 ---
 title: Tworzenie kontrolki użytkownika Windows Forms z powiązaniem danych
+description: Dowiedz się, jak utworzyć kontrolkę użytkownika Windows Forms, która obsługuje złożone powiązanie danych, implementując klasę atrybutu ComplexBindingPropertiesAttribute.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 97d9e64a0fcabb207d4606d4819f6afcb61b1043
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 465636b2b5bbf1a47752b4f0917258e264172abd
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586851"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436787"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Tworzenie kontrolki użytkownika aplikacji Windows Forms obsługującej złożone powiązanie danych
 
@@ -55,7 +57,7 @@ W tym instruktażu dowiesz się, jak:
 
 W tym instruktażu jest stosowana SQL Server Express LocalDB i Przykładowa baza danych Northwind.
 
-1. Jeśli nie masz SQL Server Express LocalDB, zainstaluj go na [stronie pobierania SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)lub za pośrednictwem **Instalator programu Visual Studio**. W **Instalator programu Visual Studio**można zainstalować SQL Server Express LocalDB jako część obciążenia **magazynu danych i przetwarzania** lub jako pojedynczy składnik.
+1. Jeśli nie masz SQL Server Express LocalDB, zainstaluj go na [stronie pobierania SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)lub za pośrednictwem **Instalator programu Visual Studio**. W **Instalator programu Visual Studio** można zainstalować SQL Server Express LocalDB jako część obciążenia **magazynu danych i przetwarzania** lub jako pojedynczy składnik.
 
 1. Zainstaluj przykładową bazę danych Northwind, wykonując następujące kroki:
 
@@ -75,13 +77,13 @@ Pierwszym krokiem jest utworzenie projektu **aplikacji Windows Forms** dla języ
 
 ## <a name="add-a-user-control-to-the-project"></a>Dodawanie kontrolki użytkownika do projektu
 
-Ponieważ ten przewodnik tworzy złożoną kontrolkę z powiązaniem danych z **kontrolki użytkownika**, Dodaj element **kontrolki użytkownika** do projektu:
+Ponieważ ten przewodnik tworzy złożoną kontrolkę z powiązaniem danych z **kontrolki użytkownika** , Dodaj element **kontrolki użytkownika** do projektu:
 
 1. W menu **projekt** wybierz polecenie **Dodaj kontrolkę użytkownika**.
 
 1. W obszarze **Nazwa** wpisz **ComplexDataGridView** , a następnie kliknij przycisk **Dodaj**.
 
-    Formant **ComplexDataGridView** zostanie dodany do **Eksplorator rozwiązań**i otwarty w projektancie.
+    Formant **ComplexDataGridView** zostanie dodany do **Eksplorator rozwiązań** i otwarty w projektancie.
 
 ## <a name="design-the-complexdatagridview-control"></a>Zaprojektuj formant ComplexDataGridView
 
@@ -91,7 +93,7 @@ Aby dodać <xref:System.Windows.Forms.DataGridView> do kontrolki użytkownika, p
 
 W przypadku złożonych formantów, które obsługują powiązanie danych, można zaimplementować <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> :
 
-1. Przełącz formant **ComplexDataGridView** do widoku kodu. (W menu **Widok** wybierz pozycję **kod**).
+1. Przełącz formant **ComplexDataGridView** do widoku kodu. (W menu **Widok** wybierz pozycję **kod** ).
 
 1. Zastąp kod w `ComplexDataGridView` następującej postaci:
 

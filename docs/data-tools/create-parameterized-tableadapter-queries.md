@@ -1,5 +1,7 @@
 ---
 title: Tworzenie sparametryzowanych zapytań adaptera TableAdapter
+description: Dowiedz się, jak tworzyć sparametryzowane zapytania TableAdapter. Zapytanie sparametryzowane zwraca dane, które spełniają warunki klauzuli WHERE w zapytaniach.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,18 +20,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a2b94e10dd09d26a17a7574db97880567f7725cd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6eb2f6e1358c91a1103615aca67ede4a3561fae
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282608"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436670"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Tworzenie sparametryzowanych zapytań adaptera TableAdapter
 
 Zapytanie sparametryzowane zwraca dane, które spełniają warunki klauzuli WHERE w zapytaniach. Na przykład możesz Sparametryzuj listę klientów, aby wyświetlić tylko klientów w określonym mieście przez dodanie `WHERE City = @City` do końca instrukcji SQL, która zwraca listę klientów.
 
-W **Projektant obiektów DataSet**można tworzyć sparametryzowane zapytania TableAdapter. Można je również utworzyć w aplikacji systemu Windows za pomocą polecenia **Sparametryzuj źródło danych** w menu **dane** . Polecenie **Sparametryzuj Data Source** tworzy kontrolki w formularzu, gdzie można wprowadzać wartości parametrów i uruchamiać zapytanie.
+W **Projektant obiektów DataSet** można tworzyć sparametryzowane zapytania TableAdapter. Można je również utworzyć w aplikacji systemu Windows za pomocą polecenia **Sparametryzuj źródło danych** w menu **dane** . Polecenie **Sparametryzuj Data Source** tworzy kontrolki w formularzu, gdzie można wprowadzać wartości parametrów i uruchamiać zapytanie.
 
 > [!NOTE]
 > Podczas konstruowania zapytania parametrycznego należy użyć notacji parametru, która jest specyficzna dla bazy danych, względem której jest używane kodowanie. Na przykład źródła danych dostępu i OleDb używają znaku zapytania "?" do określenia parametrów, więc klauzula WHERE będzie wyglądać następująco: `WHERE City = ?` .
@@ -71,7 +73,7 @@ W **Projektant obiektów DataSet**można tworzyć sparametryzowane zapytania Tab
 
 5. W polu **tekstowym zapytanie** Wpisz zapytanie, które pobiera parametry.
 
-6. Wybierz pozycję **OK**.
+6. Wybierz przycisk **OK**.
 
      Kontrolka do wprowadzania parametru i przycisk **ładowania** są dodawane do formularza w <xref:System.Windows.Forms.ToolStrip> kontrolce.
 
@@ -92,9 +94,9 @@ Jeśli było to zapytanie w TableAdapter, można wykonać zapytanie o wszystkie 
 
 Aby włączyć akceptowanie przez zapytanie wartości null:
 
-1. W **Projektant obiektów DataSet**wybierz zapytanie TableAdapter, które wymaga zaakceptowania wartości parametrów null.
+1. W **Projektant obiektów DataSet** wybierz zapytanie TableAdapter, które wymaga zaakceptowania wartości parametrów null.
 
-2. W oknie **Właściwości** wybierz opcję **Parametry**, a następnie kliknij przycisk wielokropka (**...**), aby otworzyć **Edytor kolekcji parametrów**.
+2. W oknie **Właściwości** wybierz opcję **Parametry** , a następnie kliknij przycisk wielokropka ( **...** ), aby otworzyć **Edytor kolekcji parametrów**.
 
 3. Wybierz parametr, który dopuszcza wartości null i ustaw właściwość **AllowDBNull** na `true` .
 

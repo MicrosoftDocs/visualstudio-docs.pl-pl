@@ -1,5 +1,7 @@
 ---
 title: Metody DataContext — Projektant O-R)
+description: Zrozumienie metod DataContext w kontekście narzędzi LINQ to SQL Tools for Visual Studio. Te metody uruchamiają procedury składowane i funkcje w bazie danych.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c149f4e5-3b61-4c33-892e-3e26d47f3eeb
@@ -8,25 +10,25 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b8b9d322ea9c805b7fc1ce55dbf93b72b29958af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 30091a5bfd613ba9bd3738731e23153565ec4c8e
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586708"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436592"
 ---
 # <a name="datacontext-methods-or-designer"></a>Metody DataContext (Object Relational Designer)
 
 <xref:System.Data.Linq.DataContext> Metody (w kontekście [narzędzi LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)) to metody <xref:System.Data.Linq.DataContext> klasy, która uruchamia procedury składowane i funkcje w bazie danych.
 
-<xref:System.Data.Linq.DataContext>Klasa jest [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] klasą, która działa jako kanał między bazą danych SQL Server i [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] klasami jednostek mapowanymi do tej bazy danych. <xref:System.Data.Linq.DataContext>Klasa zawiera informacje o parametrach połączenia oraz metody łączenia się z bazą danych i manipulowania danymi w bazie danych programu. Domyślnie <xref:System.Data.Linq.DataContext> Klasa zawiera kilka metod, które można wywołać, takich jak <xref:System.Data.Linq.DataContext.SubmitChanges%2A> Metoda, która wysyła zaktualizowane dane z [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] klas do bazy danych. Możesz również utworzyć dodatkowe <xref:System.Data.Linq.DataContext> metody, które mapują na procedury składowane i funkcje. Innymi słowy, wywoływanie tych metod niestandardowych powoduje uruchomienie procedury składowanej lub funkcji w bazie danych, do której <xref:System.Data.Linq.DataContext> Metoda jest zamapowana. Nowe metody można dodać do <xref:System.Data.Linq.DataContext> klasy tak samo jak w przypadku dodawania metod w celu rozbudowania dowolnej klasy. Jednak w dyskusjach dotyczących <xref:System.Data.Linq.DataContext> metod w kontekście **projektanta o/R**są to <xref:System.Data.Linq.DataContext> metody, które mapują na procedury składowane i funkcje, które są omawiane.
+<xref:System.Data.Linq.DataContext>Klasa jest [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] klasą, która działa jako kanał między bazą danych SQL Server i [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] klasami jednostek mapowanymi do tej bazy danych. <xref:System.Data.Linq.DataContext>Klasa zawiera informacje o parametrach połączenia oraz metody łączenia się z bazą danych i manipulowania danymi w bazie danych programu. Domyślnie <xref:System.Data.Linq.DataContext> Klasa zawiera kilka metod, które można wywołać, takich jak <xref:System.Data.Linq.DataContext.SubmitChanges%2A> Metoda, która wysyła zaktualizowane dane z [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] klas do bazy danych. Możesz również utworzyć dodatkowe <xref:System.Data.Linq.DataContext> metody, które mapują na procedury składowane i funkcje. Innymi słowy, wywoływanie tych metod niestandardowych powoduje uruchomienie procedury składowanej lub funkcji w bazie danych, do której <xref:System.Data.Linq.DataContext> Metoda jest zamapowana. Nowe metody można dodać do <xref:System.Data.Linq.DataContext> klasy tak samo jak w przypadku dodawania metod w celu rozbudowania dowolnej klasy. Jednak w dyskusjach dotyczących <xref:System.Data.Linq.DataContext> metod w kontekście **projektanta o/R** są to <xref:System.Data.Linq.DataContext> metody, które mapują na procedury składowane i funkcje, które są omawiane.
 
 ## <a name="methods-pane"></a>Okienko metod
 
 <xref:System.Data.Linq.DataContext> metody, które są mapowane na procedury składowane i funkcje, są wyświetlane w okienku **metody** **projektanta o/R**. Okienko **metody** jest okienkiem obok okienka **jednostki** (głównej powierzchni projektowej). W okienku **metody** są wyświetlane wszystkie <xref:System.Data.Linq.DataContext> metody, które zostały utworzone przy użyciu **projektanta o/R**. Domyślnie okienko **metody** jest puste; Przeciągnij procedury składowane lub funkcje z **Eksplorator serwera** lub **Eksplorator bazy danych** do **projektanta O/R** , aby utworzyć <xref:System.Data.Linq.DataContext> metody i wypełnić okienko **metody** . Aby uzyskać więcej informacji, zobacz [How to: Create DataContext Methods zamapowany na procedury składowane i funkcje (Projektant O/R)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md).
 
 > [!NOTE]
-> Otwórz i zamknij okienko metody, klikając prawym przyciskiem myszy **projektanta O/R** , a następnie klikając polecenie **Ukryj okienko metody** lub **Pokaż okienko metody**lub użyj skrótu klawiaturowego **Ctrl** + **1**.
+> Otwórz i zamknij okienko metody, klikając prawym przyciskiem myszy **projektanta O/R** , a następnie klikając polecenie **Ukryj okienko metody** lub **Pokaż okienko metody** lub użyj skrótu klawiaturowego **Ctrl** + **1**.
 
 ## <a name="two-types-of-datacontext-methods"></a>Dwa typy metod DataContext
 
@@ -42,7 +44,7 @@ Metody DataContext to te metody, które mapują na procedury składowane i funkc
 
 ## <a name="return-types-of-datacontext-methods"></a>Zwracane typy metod DataContext
 
-Gdy przeciągasz procedury składowane i funkcje z **Eksplorator serwera** lub **Eksplorator bazy danych** do **projektanta O/R**, zwracany typ wygenerowanej <xref:System.Data.Linq.DataContext> metody różni się w zależności od miejsca, w którym element zostanie porzucany. Porzucenie elementów bezpośrednio do istniejącej klasy jednostek tworzy <xref:System.Data.Linq.DataContext> metodę z typem zwracanym klasy Entity; upuszczanie elementów na pusty obszar **projektanta o/R** (w obu okienka) tworzy <xref:System.Data.Linq.DataContext> metodę, która zwraca typ wygenerowany automatycznie. Typ wygenerowany automatycznie ma nazwę zgodną z nazwą procedury składowanej lub funkcją oraz właściwościami, które mapują do pól zwracanych przez procedurę składowaną lub funkcję.
+Gdy przeciągasz procedury składowane i funkcje z **Eksplorator serwera** lub **Eksplorator bazy danych** do **projektanta O/R** , zwracany typ wygenerowanej <xref:System.Data.Linq.DataContext> metody różni się w zależności od miejsca, w którym element zostanie porzucany. Porzucenie elementów bezpośrednio do istniejącej klasy jednostek tworzy <xref:System.Data.Linq.DataContext> metodę z typem zwracanym klasy Entity; upuszczanie elementów na pusty obszar **projektanta o/R** (w obu okienka) tworzy <xref:System.Data.Linq.DataContext> metodę, która zwraca typ wygenerowany automatycznie. Typ wygenerowany automatycznie ma nazwę zgodną z nazwą procedury składowanej lub funkcją oraz właściwościami, które mapują do pól zwracanych przez procedurę składowaną lub funkcję.
 
 > [!NOTE]
 > Można zmienić zwracany typ <xref:System.Data.Linq.DataContext> metody po dodaniu jej do okienka metod. Aby sprawdzić lub zmienić zwracany typ <xref:System.Data.Linq.DataContext> metody, zaznacz ją i sprawdź Właściwość **zwracanego typu** w oknie **Właściwości** . Aby uzyskać więcej informacji, zobacz [How to: zmiana zwracanego typu metody DataContext (Projektant O/R)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md).

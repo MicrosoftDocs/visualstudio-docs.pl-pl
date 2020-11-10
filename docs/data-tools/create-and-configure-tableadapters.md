@@ -1,5 +1,7 @@
 ---
 title: Tworzenie i konfigurowanie adapterów TableAdapter
+description: Zapoznaj się z tematem jak utworzyć i skonfigurować TableAdapter w programie Visual Studio. TableAdapters zapewnia komunikację między aplikacją a bazą danych.
+ms.custom: SEO-VS-2020
 ms.date: 09/01/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 90dcc8e623f258721c71ef02082500a0736764e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6c976f06f105969f1eaa91022607d61251a56008
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282677"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436761"
 ---
 # <a name="create-and-configure-tableadapters"></a>Tworzenie i konfigurowanie adapterów TableAdapter
 
@@ -49,7 +51,7 @@ Jeśli przeciągniesz nowy TableAdapter z przybornika, gdy **Projektant obiektó
 
 - Istnieje możliwość utworzenia nowej procedury składowanej w źródłowej bazie danych, jeśli masz odpowiednie uprawnienia do bazy danych. Jeśli nie masz tych uprawnień, nie będzie to możliwe.
 
-- Możesz również uruchomić istniejące procedury składowane dla poleceń **SELECT**, **INSERT**, **Update**i **delete** elementu TableAdapter. Procedura składowana przypisana do polecenia **Update** , na przykład, jest uruchamiana, gdy `TableAdapter.Update()` wywoływana jest metoda.
+- Możesz również uruchomić istniejące procedury składowane dla poleceń **SELECT** , **INSERT** , **Update** i **delete** elementu TableAdapter. Procedura składowana przypisana do polecenia **Update** , na przykład, jest uruchamiana, gdy `TableAdapter.Update()` wywoływana jest metoda.
 
 Mapuj parametry z wybranej procedury przechowywanej do odpowiednich kolumn w tabeli danych. Na przykład jeśli procedura składowana akceptuje parametr o nazwie `@CompanyName` przekazane do `CompanyName` kolumny w tabeli, należy ustawić **kolumnę źródłową** `@CompanyName` parametru na `CompanyName` .
 
@@ -82,7 +84,7 @@ Poniższy przykład pokazuje, jak wywołać dodatkowe zapytanie o nazwie `FillBy
 
 1. Otwórz zestaw danych w **Projektant obiektów DataSet**.
 
-2. W przypadku tworzenia nowego zapytania przeciągnij obiekt **zapytania** z karty **zestaw danych** **przybornika** do <xref:System.Data.DataTable> lub wybierz polecenie **Dodaj zapytanie** z menu skrótów programu TableAdapter. Możesz również przeciągnąć obiekt **zapytania** do pustego obszaru **Projektant obiektów DataSet**, który tworzy TableAdapter bez skojarzonego <xref:System.Data.DataTable> . Te zapytania mogą zwracać tylko pojedyncze (skalarne) wartości lub uruchamiać polecenia UPDATE, INSERT lub DELETE względem bazy danych.
+2. W przypadku tworzenia nowego zapytania przeciągnij obiekt **zapytania** z karty **zestaw danych** **przybornika** do <xref:System.Data.DataTable> lub wybierz polecenie **Dodaj zapytanie** z menu skrótów programu TableAdapter. Możesz również przeciągnąć obiekt **zapytania** do pustego obszaru **Projektant obiektów DataSet** , który tworzy TableAdapter bez skojarzonego <xref:System.Data.DataTable> . Te zapytania mogą zwracać tylko pojedyncze (skalarne) wartości lub uruchamiać polecenia UPDATE, INSERT lub DELETE względem bazy danych.
 
 3. Na ekranie **Wybierz połączenie danych** wybierz lub Utwórz połączenie, które będzie używane przez zapytanie.
 

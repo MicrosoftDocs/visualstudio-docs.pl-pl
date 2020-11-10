@@ -1,6 +1,8 @@
 ---
 title: Zestaw reguł Native Minimum Rules
 ms.date: 11/04/2016
+description: Dowiedz się więcej na temat natywnego zestawu reguł minimalnych reguł w programie Visual Studio. Zobacz opisy reguł zabezpieczeń, niezawodności i innych krytycznych problemów w kodzie natywnym.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: 2d898bc4-fba5-472e-8f09-b0c6b511c5a3
 author: mikejo5000
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5646986381907d6ba524b27ae28985e579d6e379
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 182c896aea682287f89119217e5d4b8b860b6dcf
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600037"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437086"
 ---
 # <a name="native-minimum-rules-rule-set"></a>Zestaw reguł Native Minimum Rules
 
@@ -43,8 +45,8 @@ Dołącz ten zestaw reguł do dowolnego niestandardowego zestawu reguł tworzone
 |[C6276](/cpp/code-quality/c6276)|Nieprawidłowe rzutowanie ciągu|
 |[C6277](/cpp/code-quality/c6277)|Nieprawidłowe wywołanie metody CreateProcess|
 |[C6284](/cpp/code-quality/c6284)|Nieprawidłowy argument obiektu dla funkcji formatowania|
-|[C6290](/cpp/code-quality/c6290)|Niestandardowa koniunkcja logiczna|
-|[C6291](/cpp/code-quality/c6291)|Niestandardowa koniunkcja logiczna|
+|[C6290](/cpp/code-quality/c6290)|Logical-Not Bitwise-And pierwszeństwo|
+|[C6291](/cpp/code-quality/c6291)|Logical-Not Bitwise-Or pierwszeństwo|
 |[C6302](/cpp/code-quality/c6302)|Nieprawidłowy argument ciągu znaków dla funkcji formatowania|
 |[C6303](/cpp/code-quality/c6303)|Nieprawidłowy argument ciągu znaków dwubajtowych do funkcji formatowania|
 |[C6305](/cpp/code-quality/c6305)|Użycie niedopasowanego rozmiaru i liczby|

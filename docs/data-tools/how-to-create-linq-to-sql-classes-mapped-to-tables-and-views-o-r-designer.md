@@ -1,5 +1,7 @@
 ---
 title: Mapowanie klas LINQ to SQL do tabel/widoków (Projektant O-R)
+description: Informacje o sposobie tworzenia klas jednostek LINQ to SQL (klasy, które są mapowane na tabele i widoki) w Object Relational Designer (Projektant O/R).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 0fb78bbc-7a78-4ab4-b32f-85ece912e660
@@ -8,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 19b634973e555fd037d20c3ad359ccbb1465c894
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 79e5c529c1aefb4777e174489fc8fd1ca95a4111
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282127"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436349"
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Instrukcje: tworzenie klas LINQ do SQL zamapowanych na tabele i widoki (O/R Designer)
 
@@ -32,7 +34,7 @@ Domyślnie [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] środ
 
 ### <a name="to-create-linq-to-sql-classes-that-are-mapped-to-database-tables-or-views"></a>Aby utworzyć klasy LINQ to SQL mapowane do tabel lub widoków bazy danych
 
-1. W obszarze **serwer** lub **Eksplorator bazy danych**rozwiń węzeł **tabele** lub **widoki** i Znajdź tabelę lub widok bazy danych, który ma być używany w aplikacji.
+1. W obszarze **serwer** lub **Eksplorator bazy danych** rozwiń węzeł **tabele** lub **widoki** i Znajdź tabelę lub widok bazy danych, który ma być używany w aplikacji.
 
 2. Przeciągnij tabelę lub widok do **projektanta o/R**.
 
@@ -40,7 +42,7 @@ Domyślnie [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] środ
 
 ## <a name="create-an-object-data-source-and-display-the-data-on-a-form"></a>Tworzenie źródła danych obiektu i wyświetlanie danych w formularzu
 
-Po utworzeniu klas jednostek przy użyciu **projektanta O/R**można utworzyć źródło danych obiektu i wypełnić [okno źródła danych](add-new-data-sources.md#data-sources-window) z klasami jednostek.
+Po utworzeniu klas jednostek przy użyciu **projektanta O/R** można utworzyć źródło danych obiektu i wypełnić [okno źródła danych](add-new-data-sources.md#data-sources-window) z klasami jednostek.
 
 ### <a name="to-create-an-object-data-source-based-on-linq-to-sql-entity-classes"></a>Aby utworzyć źródło danych obiektu na podstawie LINQ to SQL klas jednostek
 

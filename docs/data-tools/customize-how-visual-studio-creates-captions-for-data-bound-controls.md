@@ -1,5 +1,7 @@
 ---
 title: Dostosuj napisy dla formantów powiązanych z danymi
+description: Dostosuj sposób tworzenia przez program Visual Studio napisów dla formantów powiązanych z danymi. Zmodyfikuj inteligentne zachowanie napisów w oknie źródła danych. Wyłącz opcję Podpisy inteligentne.
+ms.custom: SEO-VS-2020
 ms.date: 11/03/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 085542f912cc5747c2012adb05e6097b5891ed60
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 65c0f1146549dfbee6f84fab06be12053b174aeb
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282582"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436631"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Dostosowywanie sposobu tworzenia podpisów dla kontrolek powiązanych z danymi przez program Visual Studio
 
@@ -26,13 +28,13 @@ Gdy przeciągasz elementy z [okna źródła danych](add-new-data-sources.md#data
 
 ::: moniker range="vs-2017"
 
-Możesz dostosować sposób, w jaki te etykiety są tworzone przez ustawienie wartości **SmartCaptionExpression**, **SmartCaptionReplacement**i **SmartCaptionSuffix** w kluczu rejestru **HKEY_CURRENT_USER Projektant \software\microsoft\visualstudio\15.0\Data** .
+Możesz dostosować sposób, w jaki te etykiety są tworzone przez ustawienie wartości **SmartCaptionExpression** , **SmartCaptionReplacement** i **SmartCaptionSuffix** w kluczu rejestru **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data Designers** .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Możesz dostosować sposób, w jaki te etykiety są tworzone przez ustawienie wartości **SmartCaptionExpression**, **SmartCaptionReplacement**i **SmartCaptionSuffix** w kluczu rejestru **HKEY_CURRENT_USER Projektant \software\microsoft\visualstudio\16.0\Data** .
+Możesz dostosować sposób, w jaki te etykiety są tworzone przez ustawienie wartości **SmartCaptionExpression** , **SmartCaptionReplacement** i **SmartCaptionSuffix** w kluczu rejestru **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Data Designers** .
 
 ::: moniker-end
 

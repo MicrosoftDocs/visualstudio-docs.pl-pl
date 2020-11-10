@@ -1,5 +1,6 @@
 ---
 title: Dodawanie, aktualizowanie lub usuwanie odwołania usługi danych programu WCF
+description: Zapoznaj się z tematem Dodawanie, aktualizowanie lub usuwanie odwołania usługi danych Windows Communication Foundation (WCF).
 ms.date: 11/04/2016
 ms.custom: SEO-VS-2020
 ms.topic: how-to
@@ -15,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d9a05924bd7c790d2a1cc9ffd96d66eb905acb39
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 6e6c289038c3f8cb9d1586ae4a1f7a84b563239f
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037318"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436436"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Instrukcje: Dodawanie, aktualizowanie lub usuwanie odwołania usługi danych programu WCF
 
@@ -28,7 +29,7 @@ ms.locfileid: "90037318"
 *Odwołanie do usługi* umożliwia projektowi dostęp do co najmniej jednego elementu [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] . Użyj okna dialogowego **Dodaj odwołanie do usługi** , aby wyszukać [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] w bieżącym rozwiązaniu, lokalnie, w sieci lokalnej lub w Internecie.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-Można użyć węzła **usługi połączone** w **Eksplorator rozwiązań** , aby uzyskać dostęp do **Microsoft WCF Web Service Reference Provider**, co umożliwia zarządzanie odwołaniami do usługi danych Windows Communication Foundation (WCF).
+Można użyć węzła **usługi połączone** w **Eksplorator rozwiązań** , aby uzyskać dostęp do **Microsoft WCF Web Service Reference Provider** , co umożliwia zarządzanie odwołaniami do usługi danych Windows Communication Foundation (WCF).
 ::: moniker-end
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
@@ -39,7 +40,7 @@ Można użyć węzła **usługi połączone** w **Eksplorator rozwiązań** , ab
 
 ::: moniker range="vs-2017"
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy nazwę projektu, do którego chcesz dodać usługę, a następnie kliknij pozycję **Dodaj odwołanie do usługi**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy nazwę projektu, do którego chcesz dodać usługę, a następnie kliknij pozycję **Dodaj odwołanie do usługi**.
 
    Zostanie wyświetlone okno dialogowe **Dodaj odwołanie do usługi** .
 
@@ -61,7 +62,7 @@ Można użyć węzła **usługi połączone** w **Eksplorator rozwiązań** , ab
      Zostanie wygenerowany klient usługi (proxy), a metadane opisujące usługę zostaną dodane do pliku *app.config* .
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-1. W **Eksplorator rozwiązań**kliknij dwukrotnie lub naciśnij węzeł **usługi połączone** .
+1. W **Eksplorator rozwiązań** kliknij dwukrotnie lub naciśnij węzeł **usługi połączone** .
 
    Zostanie otwarta karta **Konfigurowanie usług** .
 
@@ -95,7 +96,7 @@ Można użyć węzła **usługi połączone** w **Eksplorator rozwiązań** , ab
 
 ::: moniker range="vs-2017"
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy nazwę projektu, do którego chcesz dodać usługę, a następnie kliknij pozycję **Dodaj odwołanie do usługi**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy nazwę projektu, do którego chcesz dodać usługę, a następnie kliknij pozycję **Dodaj odwołanie do usługi**.
 
     Zostanie wyświetlone okno dialogowe **Dodaj odwołanie do usługi** .
 
@@ -112,7 +113,7 @@ Można użyć węzła **usługi połączone** w **Eksplorator rozwiązań** , ab
     Zostanie wygenerowany klient usługi (proxy), a metadane opisujące usługę zostaną dodane do pliku *app.config* .
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-1. W **Eksplorator rozwiązań**kliknij dwukrotnie lub naciśnij węzeł **usługi połączone** . 
+1. W **Eksplorator rozwiązań** kliknij dwukrotnie lub naciśnij węzeł **usługi połączone** . 
 
    Zostanie otwarta karta **Konfigurowanie usług** .
 
@@ -140,7 +141,7 @@ Entity Data Model [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] 
 
 ### <a name="to-update-a-service-reference"></a>Aby zaktualizować odwołanie do usługi
 
-- W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy odwołanie do usługi, a następnie kliknij pozycję **Aktualizuj odwołanie do usługi**.
+- W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy odwołanie do usługi, a następnie kliknij pozycję **Aktualizuj odwołanie do usługi**.
 
      Zostanie wyświetlone okno dialogowe postęp, gdy odwołanie zostanie zaktualizowane z oryginalnej lokalizacji, a klient usługi zostanie wygenerowany ponownie w celu odzwierciedlenia wszelkich zmian w metadanych.
 
@@ -150,13 +151,13 @@ Jeśli odwołanie do usługi nie jest już używane, można je usunąć z rozwi�
 
 ### <a name="to-remove-a-service-reference"></a>Aby usunąć odwołanie do usługi
 
-- W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy odwołanie do usługi, a następnie kliknij pozycję **Usuń**.
+- W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy odwołanie do usługi, a następnie kliknij pozycję **Usuń**.
 
      Klient usługi zostanie usunięty z rozwiązania, a metadane opisujące usługę zostaną usunięte z pliku *app.config* .
 
     > [!NOTE]
     > Każdy kod, który odwołuje się do odwołania do usługi, musi zostać usunięty ręcznie.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Usługi Windows Communication Foundation i usługi danych programu WCF w programie Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

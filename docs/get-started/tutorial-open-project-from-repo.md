@@ -2,7 +2,7 @@
 title: 'Samouczek: Otwieranie projektu z repozytorium'
 description: Dowiedz się, jak otworzyć projekt w repozytorium Git lub Azure DevOps za pomocą programu Visual Studio.
 ms.custom: get-started
-ms.date: 11/03/2020
+ms.date: 11/10/2020
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 56005faa4475f040375108ca02abbca40cd2652d
-ms.sourcegitcommit: e132a870ec198fdcec289227f1a0c1c48fef070c
+ms.openlocfilehash: 91fb06a50fe0c992d3018aee31cfc963544f8b97
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93344543"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436084"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>Samouczek: Otwieranie projektu z repozytorium
 
@@ -75,6 +75,9 @@ Wyświetl poniższą animację, aby sprawdzić pracę zakończono w poprzedniej 
 
 ::: moniker range="vs-2019"
 
+> [!NOTE]
+> Jeśli chcesz wypróbować nowe zintegrowane środowisko Git w programie Visual Studio 2019, upewnij się, że Zaktualizowano do [**wersji 16,8**](/visualstudio/releases/2019/release-notes/). Aby uzyskać więcej informacji, zobacz [nowe środowisko Git na stronie programu Visual Studio](../ide/git-with-visual-studio.md) .
+
 1. Otwórz program Visual Studio 2019.
 
 1. W oknie uruchamiania wybierz **klonowanie lub wyewidencjonowywanie kodu**.
@@ -92,9 +95,6 @@ Wyświetl poniższą animację, aby sprawdzić pracę zakończono w poprzedniej 
    ![Wybierz, co chcesz otworzyć z listy rozwijanej Eksplorator rozwiązań](./media/open-proj-repo-github-solutions-folders-picker.png)
 
    Jeśli w repozytorium nie ma pliku rozwiązania (w odniesieniu do pliku. sln), w menu rozwijanym zostanie wyświetlona informacja "nie znaleziono rozwiązań". Można jednak kliknąć dwukrotnie dowolny plik z menu folder, aby otworzyć go w edytorze kodu programu Visual Studio.
-
-> [!TIP]
-> Jeśli chcesz wypróbować nowe środowisko usługi Git w programie Visual Studio i korzystać z [wersji 16,6](/visualstudio/releases/2019/release-notes-v16.6) lub nowszej, możesz ją przełączać, przechodząc do opcji **Narzędzia**  >  **Opcje**  >  **środowisko** w  >  **wersji zapoznawczej** , a następnie zaznaczając pole wyboru **nowe środowisko użytkownika systemu Git** . Aby uzyskać więcej informacji, zobacz [nowe środowisko Git na stronie programu Visual Studio](../ide/git-with-visual-studio.md) .
 
 ::: moniker-end
 
