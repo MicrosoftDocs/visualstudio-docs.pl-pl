@@ -32,8 +32,6 @@
   items:
     - name: Dostosowywanie wyglądu i sposobu działania środowiska IDE
       href: customizing-the-ide.md
-    - name: Rozszerzanie programu Visual Studio dla komputerów Mac
-      href: extending-visual-studio-mac.md
 - name: Projekty i rozwiązania
   items:
     - name: Omówienie
