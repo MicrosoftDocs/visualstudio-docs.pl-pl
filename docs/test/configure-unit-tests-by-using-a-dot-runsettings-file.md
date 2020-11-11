@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 6361b6b3d85c970d74a624c82d052054ab66e44a
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 8194a5f61b45ac2b4358922aaf8c7c7b8bea4ae9
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400105"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518768"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurowanie testów jednostkowych przy użyciu pliku *. runsettings*
 
@@ -221,8 +221,8 @@ Moduł zbierający dane pokrycia kodu tworzy dziennik z zapisami, które częśc
       <CollectFromChildProcesses>True</CollectFromChildProcesses>
       <CollectAspDotNet>False</CollectAspDotNet>
     </CodeCoverage>
-  </CodeCoverage>
-</Configuration>
+  </Configuration>
+</DataCollector>
 ```
 
 ### <a name="videorecorder-data-collector"></a>Moduł zbierający dane VideoRecorder
@@ -306,7 +306,7 @@ Te ustawienia są specyficzne dla adaptera testowego, który uruchamia metody te
 </MSTest>
 ```
 
-|Konfigurowanie|Domyślne|Wartości|
+|Konfiguracja|Domyślne|Wartości|
 |-|-|-|
 |**ForcedLegacyMode**|fałsz|W programie Visual Studio 2012 karta MSTest została zoptymalizowana tak, aby była szybsza i bardziej skalowalna. Niektóre zachowania, na przykład kolejność, w jakiej są uruchamiane testy, mogą nie być dokładnie takie same, jak w poprzednich wersjach programu Visual Studio. Ustaw tę wartość na **true** , aby użyć starszego adaptera testowego.<br /><br />Można na przykład użyć tego ustawienia, jeśli istnieje plik *app.config* określony dla testu jednostkowego.<br /><br />Zaleca się, aby rozważyć refaktoryzację testów pozwalającą na użycie nowszego adaptera.|
 |**IgnoreTestImpact**|fałsz|Funkcja wpływu na testy określa priorytety testów, których dotyczą ostatnie zmiany, po uruchomieniu w MSTest lub z Microsoft Test Manager (przestarzałe w programie Visual Studio 2017). To ustawienie powoduje wyłączenie funkcji. Aby uzyskać więcej informacji, zobacz, [które testy należy uruchomić od poprzedniej kompilacji](/previous-versions/dd286589(v=vs.140)).|
@@ -464,7 +464,7 @@ Węzeł **RunConfiguration** powinien zawierać węzeł **EnvironmentVariables**
 > [!NOTE]
 > Ponieważ te zmienne środowiskowe zawsze powinny być ustawiane podczas uruchamiania hosta testowego, testy powinny być zawsze uruchamiane w osobnym procesie. Dla tej flagi flaga */inisolation.* zostanie ustawiona, gdy istnieją zmienne środowiskowe, aby Host testowy był zawsze wywoływany.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Konfigurowanie przebiegu testowego](https://github.com/microsoft/vstest-docs/blob/master/docs/configure.md)
 - [Dostosowywanie analizy pokrycia kodu](../test/customizing-code-coverage-analysis.md)

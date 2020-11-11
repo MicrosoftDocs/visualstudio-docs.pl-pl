@@ -1,6 +1,7 @@
 ---
 title: Dodawanie nowych źródeł danych
 description: Dodaj nowe źródła danych w programie Visual Studio. Źródło danych to obiekt .NET, który nawiązuje połączenie z magazynem danych i udostępnia dane aplikacji platformy .NET.
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 51d7d2bb7a7037d3fbcf307c620e9aca702ac370
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: ec58528bfe5e1687c4b4edc7f86451c08b04652c
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382120"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518677"
 ---
 # <a name="add-new-data-sources"></a>Dodawanie nowych źródeł danych
 
@@ -119,6 +120,6 @@ Jeśli chcesz powiązać z obiektem w zestawie lub projekcie, który nie jest wy
 
 Można utworzyć źródło danych z listy programu SharePoint, uruchamiając **Kreatora konfiguracji źródła danych** i wybierając typ źródła danych **programu SharePoint** . Program SharePoint udostępnia dane za pośrednictwem Usługi danych programu WCF, więc tworzenie źródła danych programu SharePoint jest takie samo jak w przypadku tworzenia źródła danych z usługi. Wybranie elementu **programu SharePoint** w **Kreatorze konfiguracji źródła danych** powoduje otwarcie okna dialogowego **Dodaj odwołanie do usługi** , w którym można nawiązać połączenie z usługą danych programu SharePoint, wskazując serwerowi programu SharePoint. Wymaga to zestawu SDK programu SharePoint.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Narzędzia do obsługi danych programu Visual Studio dla platformy .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

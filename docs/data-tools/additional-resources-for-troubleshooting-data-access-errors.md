@@ -1,6 +1,7 @@
 ---
 title: Fora dostępu do danych
 description: Znajdź pomoc dotyczącą rozwiązywania problemów i ostrzeżeń na forach publicznych. Wyświetl listę forów związanych z danymi.
+ms.custom: SEO-VS-2020
 ms.date: 06/27/2018
 ms.topic: troubleshooting
 f1_keywords:
@@ -225,12 +226,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8555a67bf9173767584c2bf37c1ed470548c4157
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: c3bfd0b322a368cd758ea1518c8c63ed668d4545
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382484"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518587"
 ---
 # <a name="troubleshoot-data-access-errors-on-the-forums"></a>Rozwiązywanie problemów z błędami dostępu do danych na forach
 
@@ -252,6 +253,6 @@ Pomoc dotyczącą rozwiązywania problemów i ostrzeżeń można znaleźć w pub
 
 Aby uzyskać informacje na temat rozwiązywania problemów z łącznością SQL Server, zobacz [Rozwiązywanie problemów z aparatem bazy danych SQL Server](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Narzędzia do obsługi danych programu Visual Studio dla platformy .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

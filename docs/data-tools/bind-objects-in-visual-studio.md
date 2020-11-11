@@ -1,6 +1,7 @@
 ---
 title: Obiekty niestandardowe powiązane z danymi
 description: Powiąż obiekty jako źródła danych w programie Visual Studio. Korzystaj z narzędzi czasu projektowania do pracy z obiektami niestandardowymi jako źródła danych w aplikacji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ea36249ecc0cfc266a650ca24d143e053f7fc0d9
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: ad8b5f502953912e2de7383afa4a86ff749c5724
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382107"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518597"
 ---
 # <a name="bind-objects-as-data-sources-in-visual-studio"></a>Powiązywanie obiektów jako źródeł danych w programie Visual Studio
 
@@ -148,6 +149,6 @@ Poniższy przykład pokazuje, jak używać `TableAdapter.Insert` metody DBDirect
 [!code-csharp[VbRaddataSaving#23](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_6.cs)]
 [!code-vb[VbRaddataSaving#23](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_6.vb)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Wiązanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
