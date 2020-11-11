@@ -1,5 +1,7 @@
 ---
 title: Projektant przepływu pracy — &lt; &gt; Projektant działań w usłudze foreach T
+description: Dowiedz się, jak <T> działanie foreach wykonuje działanie zawarte w jego treści dla każdego elementu w określonej kolekcji wartości.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30d43351211a6ff857630b47f05be77e27bd7951
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4fd81377ca24dfbeaf4a25f2af00fb69f4821d73
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593918"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437986"
 ---
 # <a name="foreachlttgt-activity-designer"></a>&lt; &gt; Projektant działań foreach T
 
@@ -28,7 +30,7 @@ W poniższej tabeli przedstawiono najbardziej przydatne <xref:System.Activities.
 |Nazwa właściwości|Wymagany|Użycie|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Fałsz|Przyjazna nazwa <xref:System.Activities.Statements.ForEach%601> działania. Wartość domyślna to ForEach<Int32 \> . Chociaż <xref:System.Activities.Activity.DisplayName%2A> wartość nie jest ściśle wymagana, najlepszym rozwiązaniem jest użycie jednego z nich.|
-|<xref:System.Activities.Statements.ForEach%601.Values%2A>|Prawda|Kolekcja elementów do iteracji. Aby ustawić <xref:System.Activities.Statements.ForEach%601.Values%2A> , wpisz wyrażenie Visual Basic w polu **wartości** w projektancie aktywności **foreach<T \> ** lub w siatce właściwości.|
+|<xref:System.Activities.Statements.ForEach%601.Values%2A>|Prawda|Kolekcja elementów do iteracji. Aby ustawić <xref:System.Activities.Statements.ForEach%601.Values%2A> , wpisz wyrażenie Visual Basic w polu **wartości** w projektancie aktywności **foreach<T \>** lub w siatce właściwości.|
 |*Elementu TypeArgument*|Prawda|Typ elementów w <xref:System.Activities.Statements.ForEach%601.Values%2A> kolekcji określony przez parametr generyczny *T*. Domyślnie *elementu TypeArgument* jest ustawiona na **Int32**. Aby zmienić typ, należy zmienić wartość pola kombi *elementu TypeArgument* w siatce właściwości.|
 
 Domyślnie iterator pętli ma nazwę **element**. Można zmienić nazwę zmiennej iteratora w <xref:System.Activities.Statements.ForEach%601> projektancie działań. Iteratora pętli można używać w wyrażeniach w elemencie podrzędnym <xref:System.Activities.Statements.ForEach%601> działania.

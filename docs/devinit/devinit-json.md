@@ -11,18 +11,20 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 2b6cc27d2614f71c85988457ab9bb64228bbaebb
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: acd3b65f520a9be048fe2d0209a85a85d086df2f
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399967"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438230"
 ---
 # <a name="devinit-configuration-file"></a>plik konfiguracji devinit
 
+`.devinit.json`Plik definiuje zależności systemowe, których potrzebuje aplikacja, aby można było uruchomić i skompilować. Zależności w całym systemie są takie jak Node.js, SQL Server, IIS, RabbitMQ, Docker itp. Są to sortowanie elementów, które zwykle instalujesz w polu dev, które nie są instalowane przez określone repozytorium. Nie jest to miejsce do definiowania zależności specyficznych dla aplikacji, takich jak w przypadku menedżerów pakietów, takich jak NuGet lub NPM. Istnieje jednak możliwość zdefiniowania potrzeb tych menedżerów pakietów.
+
 ## <a name="file-location"></a>Lokalizacja pliku
 
-`devinit.exe init`Polecenie jest realizowane za pośrednictwem _.devinit.js_ pliku. Domyślnie program `devinit.exe` szuka pliku w następujących lokalizacjach:
+`devinit init`Polecenie jest realizowane za pośrednictwem `.devinit.json` pliku. Domyślnie program `devinit` szuka pliku w następujących lokalizacjach:
 
 * {Current-Directory} \\.devinit.jsna
 * {Current-Directory} \\devinit.jsna
@@ -36,7 +38,7 @@ ms.locfileid: "93399967"
 > [!NOTE]
 > Jeśli zostanie znalezionych wiele plików domyślnych, devinit użyje pliku, który jest wyświetlany w pierwszej kolejności na powyższej liście.
 
-_.devinit.jsw_ pliku można również jawnie określić za pomocą `--file` / `-f` opcji.
+`.devinit.json`Plik można również jawnie określić za pomocą `--file` / `-f` opcji.
 
 ### <a name="directories-and-relative-paths"></a>Katalogi i ścieżki względne
 

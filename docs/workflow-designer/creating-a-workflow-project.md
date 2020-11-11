@@ -1,5 +1,7 @@
 ---
 title: Tworzenie projektu programu Workflow Foundation
+description: Dowiedz się, jak tworzyć biblioteki i aplikacje za pomocą szablonów projektów dostępnych w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 06/25/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8c3e4930376d2d2f9a6ee3334d8b164279d5ac2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4df3a1b4ead644058147473a4f95cf16fe6fc5cc
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597077"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438103"
 ---
 # <a name="workflow-project-templates"></a>Szablony projektów przepływu pracy
 
@@ -43,7 +45,7 @@ Aby uzyskać dostęp do tych szablonów, najpierw Zainstaluj składnik **Windows
 1. Kontynuuj, aby utworzyć projekt.
 
    > [!NOTE]
-   > Jeśli chcesz dodać nowy projekt do istniejącego rozwiązania, Otwórz to rozwiązanie w programie Visual Studio, kliknij prawym przyciskiem myszy rozwiązanie w **Eksplorator rozwiązań**i wybierz polecenie **Dodaj**  >  **Nowy projekt**.
+   > Jeśli chcesz dodać nowy projekt do istniejącego rozwiązania, Otwórz to rozwiązanie w programie Visual Studio, kliknij prawym przyciskiem myszy rozwiązanie w **Eksplorator rozwiązań** i wybierz polecenie **Dodaj**  >  **Nowy projekt**.
 
 ## <a name="workflow-console-app"></a>Aplikacja konsolowa przepływu pracy
 

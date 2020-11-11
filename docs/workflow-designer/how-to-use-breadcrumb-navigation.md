@@ -1,5 +1,7 @@
 ---
 title: 'Projektant przepływu pracy — How to: use webnawigacji'
+description: Dowiedz się, w jaki sposób używać nawigacji do stron nadrzędnych w celu uzyskania dostępu do działania podrzędnego, nawigowania do działania nadrzędnego lub rozwijanie lub zwijanie działania na miejscu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 4a688056-37dc-406a-9071-be2141e192fe
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a432d7cfc40ad6116f570d0e7beb4bfc5b40493
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a15f44b33e7109b126b091dcbf7102aa86a649a9
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817466"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437895"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>Instrukcje: Używanie nawigacji za pomocą linków do stron nadrzędnych
 
@@ -50,4 +52,4 @@ Istnieją trzy podstawowe sposoby zmiany zestawu działań, które są wyświetl
     > Jeśli działanie, takie jak <xref:System.Activities.Statements.Flowchart> , wybrało rozwinięte miejsce, funkcjonalność skojarzona z przyciskami **Rozwiń wszystko** i **Zwiń wszystko** jest wyłączona w projektancie **schematów blokowych** . Aby uzyskać więcej informacji na temat projektanta **schematów blokowych** , zobacz temat [schemat blokowy](../workflow-designer/flowchart-activity-designer.md) .
 
     > [!WARNING]
-    > Rozszerzenie ALL ma również szczególny efekt w projektantach działań **Switch** i **TryCatch** . Po kliknięciu przycisku **Rozwiń wszystko**wszystkie przypadki przełączania i wszystkie bloki try/catch/finally są wyświetlane. Kliknięcie przycisku **Przywróć** lub **Zwiń wszystko** zwraca tych projektantów do ich domyślnego stanu, z którego można kliknąć pojedynczy przypadek/blok, aby wyświetlić jego zawartość.
+    > Rozszerzenie ALL ma również szczególny efekt w projektantach działań **Switch** i **TryCatch** . Po kliknięciu przycisku **Rozwiń wszystko** wszystkie przypadki przełączania i wszystkie bloki try/catch/finally są wyświetlane. Kliknięcie przycisku **Przywróć** lub **Zwiń wszystko** zwraca tych projektantów do ich domyślnego stanu, z którego można kliknąć pojedynczy przypadek/blok, aby wyświetlić jego zawartość.

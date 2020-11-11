@@ -2,7 +2,7 @@
 title: Co nowego w programie Visual Studio 2019
 titleSuffix: ''
 description: Dowiedz się więcej o nowych funkcjach w programie Visual Studio 2019.
-ms.date: 08/21/2020
+ms.date: 11/10/2020
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,31 +15,27 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: ff0188a93b8c7b6470aeaeced7e3f48dbad0f28b
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: a9bf479796db1b23a204050c941650c3c20dd6aa
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005372"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438274"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Co nowego w programie Visual Studio 2019
 
-**Zaktualizowano w [wersji 16,7](/visualstudio/releases/2019/release-notes/)**
+**Zaktualizowano w [wersji 16,8](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
 >[Pobierz program Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
-
-Program Visual Studio ciągle zmienia się w celu spełnienia wymagań deweloperów. W poniższym filmie wideo z biblioteki **[kompilacji firmy Microsoft](https://mybuild.microsoft.com/)** Dołącz do nas, aby zapoznać się z [najnowszymi funkcjami](/visualstudio/releases/2019/release-notes/) i [zobaczyć wgląd](/visualstudio/releases/2019/release-notes-preview/) w to, co się stało: <br><br>*Długość wideo: 44,58 minut*
-
-> [!VIDEO https://channel9.msdn.com/Events/Build/2020/BOD111/player]
 
 W programie Visual Studio 2019 uzyskasz najlepsze w swojej klasie narzędzia i usługi dla każdego dewelopera, każdej aplikacji i dowolnej platformy. Bez względu na to, czy korzystasz z programu Visual Studio po raz pierwszy, czy korzystasz z niego przez kilka lat, możesz skorzystać z naszej najnowszej wersji.
 
 Oto podsumowanie o nowościach, które są nowe:
 
-* **[Programowanie](#develop)**: zapewnianie koncentracji i produktywności dzięki ulepszonej wydajności, błyskawicznemu oczyszczaniu kodu i lepszym wynikom wyszukiwania.
-* **[Współpraca](#collaborate)**: Ciesz się naturalną pracą w ramach przepływu pracy usługi git — pierwszego, edytowania i debugowania w czasie rzeczywistym oraz przeglądów kodu w programie Visual Studio.
-* **[Debugowanie](#debug)**: Wyróżnij i przejdź do określonych wartości, Optymalizuj użycie pamięci i wykonaj automatyczne migawki wykonywania aplikacji.
+* **[Programowanie](#develop)** : zapewnianie koncentracji i produktywności dzięki ulepszonej wydajności, błyskawicznemu oczyszczaniu kodu i lepszym wynikom wyszukiwania.
+* **[Współpraca](#collaborate)** : Ciesz się naturalną pracą w ramach przepływu pracy usługi git — pierwszego, edytowania i debugowania w czasie rzeczywistym oraz przeglądów kodu w programie Visual Studio.
+* **[Debugowanie](#debug)** : Wyróżnij i przejdź do określonych wartości, Optymalizuj użycie pamięci i wykonaj automatyczne migawki wykonywania aplikacji.
 
 Aby zapoznać się z pełną listą wszystkiego, co nowego w tej wersji, zobacz [Informacje o wersji](/visualstudio/releases/2019/release-notes/).
 
@@ -78,7 +74,7 @@ Oto kilka sposobów, które program Visual Studio rozszerzenia intellicode może
 * Znajdź problemy związane z kodem trudnym do przechwycenia
 * Przeglądanie przeglądów kodu przez rysowanie uwagi do obszarów, które naprawdę się interesują
 
-Początkowo obsługujemy tylko język C#, gdy najpierw rozszerzenia intellicode jako rozszerzenie programu Visual Studio. Teraz **Nowość w 16,1**, dodaliśmy obsługę języka C# i XAML "w polu". (Obsługa języka C++ i języka TypeScript/JavaScript jest jednak nadal w wersji zapoznawczej).
+Początkowo obsługujemy tylko język C#, gdy najpierw rozszerzenia intellicode jako rozszerzenie programu Visual Studio. Teraz **Nowość w 16,1** , dodaliśmy obsługę języka C# i XAML "w polu". (Obsługa języka C++ i języka TypeScript/JavaScript jest jednak nadal w wersji zapoznawczej).
 
 A jeśli korzystasz z języka C#, dodaliśmy również możliwość uczenia modelu niestandardowego na własnym kodzie.
 
@@ -108,13 +104,13 @@ Aby uzyskać więcej informacji, zobacz [lepsze środowisko z wieloma monitorami
 
 ### <a name="test-explorer"></a>Eksplorator testów
 
-**Nowość w 16,2**: Zaktualizowaliśmy Eksploratora testów w celu zapewnienia lepszej obsługi dużych zestawów testów, łatwiejszego filtrowania, bardziej wykrywalnych poleceń, widoków listy odtwarzania z kartami i dostosowywalnych kolumn, które umożliwiają precyzyjne dostosowanie informacji o testowaniu.
+**Nowość w 16,2** : Zaktualizowaliśmy Eksploratora testów w celu zapewnienia lepszej obsługi dużych zestawów testów, łatwiejszego filtrowania, bardziej wykrywalnych poleceń, widoków listy odtwarzania z kartami i dostosowywalnych kolumn, które umożliwiają precyzyjne dostosowanie informacji o testowaniu.
 
    ![Zrzut ekranu pokazujący ulepszenia interfejsu użytkownika w Eksploratorze testów](media/vs-2019/test-explorer-ui.png)
 
 ### <a name="net-core"></a>.NET Core
 
-**Nowość w 16,3**: dołączono obsługę programu .net Core 3,0. Międzyplatformowe, Open Source &mdash; i w pełni obsługiwane przez firmę Microsoft.
+**Nowość w 16,3** : dołączono obsługę programu .net Core 3,0. Międzyplatformowe, Open Source &mdash; i w pełni obsługiwane przez firmę Microsoft.
 
 Aby uzyskać więcej informacji, zobacz wpis na blogu dotyczący [programu .NET Core 3,0](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/) .
 
@@ -137,6 +133,12 @@ Okno startowe zawiera kilka opcji umożliwiających szybkie przechodzenie do kod
 Okno uruchamiania zawiera również opcje otwierania projektu lub rozwiązania, otwierania folderu lokalnego lub tworzenia nowego projektu.
 
 Aby uzyskać więcej informacji, zobacz artykuł [wprowadzenie do kodu: jak zaprojektowano nowy wpis w blogu uruchamiania programu Visual Studio](https://devblogs.microsoft.com/visualstudio/get-to-code-how-we-designed-the-new-visual-studio-start-window/) .
+
+### <a name="git-productivity"></a>Wydajność usługi git
+
+**Nowość w 16,8** Git jest teraz domyślnym interfejsem kontroli wersji w programie Visual Studio 2019. Na podstawie opinii użytkowników w ostatnich dwóch wersjach została wbudowana funkcja zestawu funkcji i iteracji. Nowe środowisko zostało teraz włączone domyślnie dla wszystkich użytkowników. Z nowego menu usługi git można klonować, tworzyć i otwierać repozytoria. Zintegrowane okna narzędzi git służą do zatwierdzania i wypychania zmian w kodzie, zarządzania gałęziami, pozostawania na bieżąco z zdalnymi repozytoriami i rozwiązywania konfliktów scalania.
+
+Aby uzyskać więcej informacji, zobacz stronę [wydajność usługi Git w programie Visual Studio](git-with-visual-studio.md) .
 
 ### <a name="live-share"></a>Live Share
 
@@ -196,13 +198,13 @@ Aby uzyskać więcej informacji, zobacz Debugowanie [live ASP.NET Azure Apps prz
 
 ### <a name="microsoft-edge-insider-support"></a>Pomoc techniczna programu Microsoft Edge dla niejawnych testerów
 
-**Nowość w 16,2**: można ustawić punkt przerwania w aplikacji JavaScript i rozpocząć sesję debugowania przy użyciu przeglądarki [Microsoft Edge insideer](https://www.microsoftedgeinsider.com/) . Gdy to zrobisz, program Visual Studio otworzy nowe okno przeglądarki z włączonym debugowaniem, którego można następnie użyć do przechodzenia przez aplikację JavaScript w programie Visual Studio.
+**Nowość w 16,2** : można ustawić punkt przerwania w aplikacji JavaScript i rozpocząć sesję debugowania przy użyciu przeglądarki [Microsoft Edge insideer](https://www.microsoftedgeinsider.com/) . Gdy to zrobisz, program Visual Studio otworzy nowe okno przeglądarki z włączonym debugowaniem, którego można następnie użyć do przechodzenia przez aplikację JavaScript w programie Visual Studio.
 
    ![Zrzut ekranu, który pokazuje renderowanie kodu JavaScript w przeglądarce](media/vs-2019/edge-chromium-breakpoint.png)
 
 ### <a name="pinnable-properties-tool"></a>Narzędzie właściwości Pinnable
 
-**Nowość w 16,4**: teraz łatwiej jest identyfikować obiekty według ich właściwości podczas debugowania za pomocą nowego narzędzia Pinnable Properties. Po prostu umieść kursor nad właściwością, która ma zostać wyświetlona w oknie Debuger w oknach czujka, automatycznie i lokalne, wybierz ikonę pinezki i od razu Zobacz informacje, których szukasz w górnej części okna.
+**Nowość w 16,4** : teraz łatwiej jest identyfikować obiekty według ich właściwości podczas debugowania za pomocą nowego narzędzia Pinnable Properties. Po prostu umieść kursor nad właściwością, która ma zostać wyświetlona w oknie Debuger w oknach czujka, automatycznie i lokalne, wybierz ikonę pinezki i od razu Zobacz informacje, których szukasz w górnej części okna.
 
    ![Animacja pokazująca, jak przypiąć właściwości w debugerze programu Visual Studio za pomocą narzędzia właściwości Pinnable](media/vs-2019/debugger-pinnable-properties.gif)
 
@@ -222,11 +224,11 @@ W tym miejscu poniżej przedstawiono kilka nowych funkcji dostępnych obecnie w 
 
 - **Ulepszone środowisko Git w programie Visual Studio 2019 (wersja zapoznawcza)**
 
-   Kontynuujemy iterację w środowisku odnowionych git, aby zwiększyć produktywność podczas pracy z kodem w witrynie GitHub, Azure Repos i innych zdalnych usługach hostingu. Możesz inicjować i wypchnąć z programu Visual Studio 2019 przy użyciu jednej akcji (lub kliknięcia). Można również tworzyć nowe gałęzie, zarządzać bieżącymi gałęziami i rozwiązywać konflikty scalania.
+   Mimo że nowe środowisko kontroli wersji Git jest teraz domyślnie włączone w programie Visual Studio 2019 w [wersji 16,8](/visualstudio/releases/2019/release-notes/), będziemy nadal dodawać funkcje w celu ulepszenia środowiska w najnowszej wersji zapoznawczej.
 
-   Aby uzyskać więcej informacji, zobacz [nowe środowisko Git na stronie programu Visual Studio](git-with-visual-studio.md) .
+   Aby uzyskać więcej informacji, zobacz stronę [wydajność usługi Git w programie Visual Studio](git-with-visual-studio.md) .
 
-Aby uzyskać więcej informacji na temat wersji zapoznawczej &mdash; i linku pobierania, jeśli chcesz ją wypróbować, &mdash; Zobacz stronę **[wersji zapoznawczej programu Visual Studio](https://visualstudio.microsoft.com/vs/preview/)** .
+Aby uzyskać więcej informacji na temat wersji zapoznawczej &mdash; i linku pobierania, jeśli chcesz ją wypróbować, &mdash; Zobacz stronę **[wersji zapoznawczej programu Visual Studio](https://aka.ms/vspreview/)** .
 
 ## <a name="give-us-feedback"></a>Wyślij do nas swoją opinię
 

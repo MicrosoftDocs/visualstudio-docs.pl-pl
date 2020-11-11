@@ -1,5 +1,7 @@
 ---
 title: Komunikaty o błędach w Projektancie przepływu pracy
+description: Informacje o typach komunikatów o błędach, które można napotkać podczas pracy z Projektant przepływu pracy.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72592d21fdaba1ef47a15a113c820dffe0ba71eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8f3886739cbc6deefd13570ae0f49da7e89ad9b1
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597051"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438038"
 ---
 # <a name="error-messages-in-workflow-designer"></a>Komunikaty o błędach w Projektancie przepływu pracy
 

@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 04ac5ba718e72085f8e050ecf0e2ce0cc1305629
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 0cc36dc58b65188b21115569f1216446784d227a
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134268"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438223"
 ---
 # <a name="net-core-runtime"></a>Środowisko uruchomieniowe platformy .NET Core
 
@@ -24,7 +24,7 @@ W tym przykładzie pokazano, jak dostosować środowisko uruchomieniowe programu
 
 ## <a name="postclonesetupps1"></a>PostCloneSetup.ps1
 
-Ten skrypt jest wywoływany z _PostCloneSetup.ps1_ i może być również uruchamiany lokalnie w celu skonfigurowania repozytorium. Ten plik musi znajdować się w tym samym folderze co _.devcontainer.js_ .
+Ten skrypt jest wywoływany z _PostCloneSetup.ps1_ i może być również uruchamiany lokalnie w celu skonfigurowania repozytorium. Ten plik musi znajdować się w tym samym folderze co _.devcontainer.js_.
 
 ```console
 devinit init
@@ -33,7 +33,7 @@ git config --system core.longpaths true
 
 ## <a name="packagesconfig"></a>packages.config
 
-Plik _packages.config_ jest plikiem [czekolady](https://chocolatey.org/) , który definiuje listę pakietów czekolady do zainstalowania. Ten plik musi znajdować się w tym samym folderze co _.devcontainer.js_ .
+Plik _packages.config_ jest plikiem [czekolady](https://chocolatey.org/) , który definiuje listę pakietów czekolady do zainstalowania. Ten plik musi znajdować się w tym samym folderze co _.devcontainer.js_.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -45,7 +45,7 @@ Plik _packages.config_ jest plikiem [czekolady](https://chocolatey.org/) , któr
 
 ## <a name="devinitjson"></a>.devinit.json
 
-Zawartość [_.devinit.js_](devinit-json.md) pliku. Ten plik musi znajdować się w tym samym folderze co _.devcontainer.js_ pliku.
+Zawartość [`.devinit.json`](devinit-json.md) pliku. Ten plik musi znajdować się w tym samym folderze co _.devcontainer.js_ pliku.
 
 ```json
 {

@@ -1,5 +1,7 @@
 ---
 title: Projektant przepływu pracy — Projektant działań z opóźnieniem
+description: Dowiedz się więcej o działaniach opóźnień i sposobach tworzenia i konfigurowania aktywności opóźnienia przy użyciu projektanta aktywności opóźnienia.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abfd625a248c14f646683c7b035065e6ca096f68
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e6bbadcbabbe1dbd274c48f2325217c17d3933d
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876115"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438090"
 ---
 # <a name="delay-activity-designer"></a>Delay, projektant działań
 
@@ -27,7 +29,7 @@ Projektant działań **opóźnionych** służy do tworzenia i konfigurowania <xr
 
 ### <a name="use-the-delay-activity-designer"></a>Korzystanie z projektanta działań opóźnionych
 
-Projektanta aktywności **opóźnienia** można znaleźć w kategorii elementy **pierwotne** **przybornika**, do którego uzyskuje się dostęp przez kliknięcie karty **przybornika** w Projektant przepływu pracy. Alternatywnie możesz wybrać **Przybornik** z menu **Widok** lub nacisnąć **klawisze CTRL** + **Alt** + **X**.
+Projektanta aktywności **opóźnienia** można znaleźć w kategorii elementy **pierwotne** **przybornika** , do którego uzyskuje się dostęp przez kliknięcie karty **przybornika** w Projektant przepływu pracy. Alternatywnie możesz wybrać **Przybornik** z menu **Widok** lub nacisnąć **klawisze CTRL** + **Alt** + **X**.
 
 Projektanta aktywności **opóźnienia** można przeciągnąć z **przybornika** i porzucić na Projektant przepływu pracy powierzchnię, wszędzie tam, gdzie działania są zwykle umieszczane, na przykład wewnątrz <xref:System.Activities.Statements.Sequence> . Porzucenie projektanta działań powoduje utworzenie <xref:System.Activities.Statements.Delay> działania z domyślnym <xref:System.Activities.Activity.DisplayName%2A> opóźnieniem. <xref:System.Activities.Activity.DisplayName%2A>Można edytować w nagłówku projektanta działań **opóźnionych** lub w polu **DisplayName** siatki właściwości.
 

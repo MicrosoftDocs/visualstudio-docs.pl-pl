@@ -1,5 +1,7 @@
 ---
 title: Projektant przepływu pracy — Potwierdź działanie projektanta działań
+description: Dowiedz się więcej o programie Confirming Designer i sposobach tworzenia i konfigurowania działań potwierdzających za pomocą tego projektanta.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abd7fedd958072baf23b456f9897ab67c864991d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4928dcd7a9e1b83ba797614545315022d0f36ac3
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876141"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438155"
 ---
 # <a name="confirm-activity-designer"></a>Confirm, projektant działań
 
@@ -27,7 +29,7 @@ Aby utworzyć i skonfigurować działanie, należy użyć programu **confirming*
  <xref:System.Activities.Statements.CompensationToken>Określony przez <xref:System.Activities.Statements.Compensate.Target%2A> zawiera metodę, aby jawnie potwierdzić lub skompensować <xref:System.Activities.Statements.CompensableActivity> po <xref:System.Activities.Statements.CompensableActivity.Body%2A> <xref:System.Activities.Statements.CompensableActivity> pomyślnym zakończeniu.
 
 ### <a name="using-the-confirm-activity-designer"></a>Korzystanie z programu Confirme Designer
- Można znaleźć **projektanta działań w** kategorii **transakcji** **przybornika**, do którego uzyskuje się dostęp, klikając kartę **Przybornik** po lewej stronie Projektant przepływu pracy. Alternatywnie możesz wybrać **Przybornik** z menu **Widok** lub nacisnąć **klawisze CTRL** + **Alt** + **X**.
+ Można znaleźć **projektanta działań w** kategorii **transakcji** **przybornika** , do którego uzyskuje się dostęp, klikając kartę **Przybornik** po lewej stronie Projektant przepływu pracy. Alternatywnie możesz wybrać **Przybornik** z menu **Widok** lub nacisnąć **klawisze CTRL** + **Alt** + **X**.
 
  Można przeciągać **projektanta aktywności z** **przybornika** i znajdować się na Projektant przepływu pracy powierzchni, wszędzie tam, gdzie działania są zwykle umieszczane, na przykład wewnątrz <xref:System.Activities.Statements.Sequence> . Spowoduje to utworzenie <xref:System.Activities.Statements.Confirm> działania z domyślnym <xref:System.Activities.Activity.DisplayName%2A> potwierdzeniem. <xref:System.Activities.Activity.DisplayName%2A>Wartość można edytować w nagłówku programu **Confirmed** Activity Designer lub w polu **DisplayName** siatki właściwości.
 

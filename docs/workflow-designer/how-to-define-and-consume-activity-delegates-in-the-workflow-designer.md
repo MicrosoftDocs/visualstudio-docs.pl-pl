@@ -1,5 +1,7 @@
 ---
 title: 'Projektant przepływu pracy: Definiowanie delegatów działań i korzystanie z nich'
+description: Dowiedz się, jak .NET Framework 4,5 zawiera projektanta poza ramką dla działania InvokeDelegate, którego można użyć do definiowania delegatów działań i korzystania z nich.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: c68e42ad-3ec0-4c2d-b104-fe36c6d83b5e
@@ -8,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: 41271266793927f6029f50c0411bb9a150f5a64a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c59c828f380e47a06f8feb7b72788e76ad7ee08f
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817505"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437921"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Instrukcje: Definiowanie i stosowanie delegowania działania w Projektancie przepływu pracy
 
@@ -32,25 +34,25 @@ ms.locfileid: "85817505"
 
 4. W Projektant przepływu pracy kliknij kartę **argumenty** .
 
-5. Kliknij przycisk **Utwórz argument**. Nazwij nowe **elementy**argumentu.
+5. Kliknij przycisk **Utwórz argument**. Nazwij nowe **elementy** argumentu.
 
 6. W kolumnie **Typ argumentu** wybierz pozycję **Tablica [T]**.
 
 7. W przeglądarce typu wybierz **obiekt** , a następnie wybierz przycisk **OK**.
 
-8. Kliknij przycisk **Utwórz argument** ponownie. Nazwij nową **treść**argumentu. W kolumnie **kierunek** dla nowego argumentu wybierz pozycję **Właściwość**.
+8. Kliknij przycisk **Utwórz argument** ponownie. Nazwij nową **treść** argumentu. W kolumnie **kierunek** dla nowego argumentu wybierz pozycję **Właściwość**.
 
 9. W kolumnie Typ argumentu wybierz pozycję **Przeglądaj w poszukiwaniu typów**
 
-10. W przeglądarce typu wpisz **ActivityAction** w polu **Nazwa typu** . W widoku drzewa wybierz pozycję **ActivityAction \<T> ** . Wybierz z listy rozwijanej **obiekt** , który zostanie wyświetlony, aby przypisać do argumentu Typ **ActivityAction \<Object> ** .
+10. W przeglądarce typu wpisz **ActivityAction** w polu **Nazwa typu** . W widoku drzewa wybierz pozycję **ActivityAction \<T>** . Wybierz z listy rozwijanej **obiekt** , który zostanie wyświetlony, aby przypisać do argumentu Typ **ActivityAction \<Object>** .
 
 11. Przeciągnij <xref:System.Activities.Statements.While> działanie z sekcji **przepływ sterowania** w przyborniku do powierzchni projektanta.
 
 12. Wybierz <xref:System.Activities.Statements.While> działanie i wybierz kartę **zmienne** .
 
-13. Wybierz pozycję **Utwórz zmienną**. Nazwij nowy **indeks**zmiennych.
+13. Wybierz pozycję **Utwórz zmienną**. Nazwij nowy **indeks** zmiennych.
 
-14. W kolumnie **Typ zmiennej** wybierz wartość **Int32**. Pozostaw **zakres** **jako nieokreślony**, a kolumna **Domyślna** jest pusta.
+14. W kolumnie **Typ zmiennej** wybierz wartość **Int32**. Pozostaw **zakres** **jako nieokreślony** , a kolumna **Domyślna** jest pusta.
 
 15. Ustaw właściwość **Condition** <xref:System.Activities.Statements.While> działania na **indeksowanie < elementów. length;**.
 
@@ -60,7 +62,7 @@ ms.locfileid: "85817505"
 
 18. W siatce **Właściwości** <xref:System.Activities.Statements.InvokeDelegate> działania kliknij przycisk **...** w właściwości **Delegat argumenty** .
 
-19. W kolumnie **wartość** argumentu nazwanego **argumentu**wpisz **elementy [index]**. Kliknij przycisk **OK** , aby zamknąć okno dialogowe **DelegateArguments** .
+19. W kolumnie **wartość** argumentu nazwanego **argumentu** wpisz **elementy [index]**. Kliknij przycisk **OK** , aby zamknąć okno dialogowe **DelegateArguments** .
 
 20. Przeciągnij <xref:System.Activities.Statements.Assign> działanie na linię poziomą poniżej <xref:System.Activities.Statements.InvokeDelegate> działania. To <xref:System.Activities.Statements.Assign> działanie jest tworzone, a <xref:System.Activities.Statements.Sequence> działanie jest tworzone automatycznie, aby zawierało dwa działania w sekcji **Body** działania. **MyForEach** Sekwencja jest wymagana, ponieważ sekcja **treści** może zawierać tylko jedno działanie. Automatyczne tworzenie nowego <xref:System.Activities.Statements.Sequence> działania jest nową funkcją .NET Framework 4,5.
 
@@ -72,7 +74,7 @@ ms.locfileid: "85817505"
 
 1. Skompiluj projekt, naciskając **klawisze CTRL** + **SHIFT** + **B**.
 
-2. W **Eksplorator rozwiązań**Otwórz **Workflow1. XAML** w projektancie.
+2. W **Eksplorator rozwiązań** Otwórz **Workflow1. XAML** w projektancie.
 
 3. Przeciągnij działanie elementu **foreach** z przybornika do powierzchni projektanta. Działanie znajduje się w sekcji przybornika o tej samej nazwie co projekt.
 

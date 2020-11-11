@@ -1,5 +1,7 @@
 ---
 title: Projektant przepływu pracy — Projektant działań DoWhile
+description: Dowiedz się, w jaki sposób działanie DoWhile wykonuje działanie zawarte w jego treści co najmniej raz, do momentu, gdy określony warunek zwróci wartość false.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c56a9ab8b46f8f7ee36875dda507cb9f288136cf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8385fe376f56738d76e066dc172e7b6b516f9a08
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86875608"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438064"
 ---
 # <a name="dowhile-activity-designer"></a>DoWhile, projektant działań
 

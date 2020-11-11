@@ -1,5 +1,7 @@
 ---
 title: Projektant przepływu pracy — Przypisz projektanta działań
+description: Dowiedz się, w jaki sposób można użyć projektanta działań do tworzenia i konfigurowania działania przypisania oraz jak działanie Assign przypisuje wartość do zmiennej lub argumentu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83a01c96b64dcd55adfd775efc266063efbab27d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d8601951cfaba3f246e8488ab23c9b6ccad0d01
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86875946"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438194"
 ---
 # <a name="assign-activity-designer"></a>Assign, projektant działań
 
@@ -27,7 +29,7 @@ Projektant działań **Assign** służy do tworzenia i konfigurowania <xref:Syst
 
 ### <a name="using-the-assign-activity-designer"></a>Korzystanie z projektanta akcji przypisania
 
-Projektanta działań **przypisanych** można znaleźć w kategorii elementy **pierwotne** **przybornika**, do którego uzyskuje się dostęp przez kliknięcie karty **przybornika** (można również wybrać **Przybornik** z menu **Widok** lub CTRL + ALT + X).
+Projektanta działań **przypisanych** można znaleźć w kategorii elementy **pierwotne** **przybornika** , do którego uzyskuje się dostęp przez kliknięcie karty **przybornika** (można również wybrać **Przybornik** z menu **Widok** lub CTRL + ALT + X).
 
 Projektanta działania **przypisanego** można przeciągnąć z **przybornika** i porzucić na Projektant przepływu pracyą powierzchnię, w której zostaną umieszczone kiedykolwiek wykonane działania, na przykład wewnątrz <xref:System.Activities.Statements.Sequence> . Porzucenie projektanta **przypisywania** działań powoduje utworzenie <xref:System.Activities.Statements.Assign> działania z domyślną wartością **DisplayName** elementu Assign. <xref:System.Activities.Activity.DisplayName%2A>Można edytować w nagłówku projektanta działania **przypisania** lub w polu **DisplayName** siatki właściwości.
 

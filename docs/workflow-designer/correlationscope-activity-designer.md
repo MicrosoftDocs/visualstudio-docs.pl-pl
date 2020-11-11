@@ -1,5 +1,7 @@
 ---
 title: Projektant przepływu pracy — Projektant działań CorrelationScope
+description: Dowiedz się, jak za pomocą projektanta działań CorrelationScope utworzyć i skonfigurować działanie CorrelationScope.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 135acfbbaf9fdcbbf219fd50a504cf9262fe4d24
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cc85dbb5c774f6afa956f51852ef15d4c7ccebc0
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876102"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438116"
 ---
 # <a name="correlationscope-activity-designer"></a>CorrelationScope, projektant działań
 
@@ -27,7 +29,7 @@ Projektant działań **CorrelationScope** służy do tworzenia i konfigurowania 
 
 ### <a name="use-the-correlationscope-activity-designer"></a>Korzystanie z projektanta działań CorrelationScope
 
-Projektanta działań **CorrelationScope** można znaleźć w kategorii **wiadomości** w **przyborniku**, do którego uzyskuje się dostęp, klikając kartę **Przybornik** po lewej stronie Projektant przepływu pracy. Alternatywnie możesz wybrać **Przybornik** z menu **Widok** lub nacisnąć **klawisze CTRL** + **Alt** + **X**.
+Projektanta działań **CorrelationScope** można znaleźć w kategorii **wiadomości** w **przyborniku** , do którego uzyskuje się dostęp, klikając kartę **Przybornik** po lewej stronie Projektant przepływu pracy. Alternatywnie możesz wybrać **Przybornik** z menu **Widok** lub nacisnąć **klawisze CTRL** + **Alt** + **X**.
 
 Projektanta działań **CorrelationScope** można przeciągnąć z **przybornika** i porzucić na Projektant przepływu pracy powierzchnię. Spowoduje to utworzenie <xref:System.ServiceModel.Activities.CorrelationScope> działania z domyślną wartością **DisplayName** elementu CorrelationScope. <xref:System.Activities.Activity.DisplayName%2A>Można edytować w nagłówku projektanta działań **CorrelationScope** lub w polu **DisplayName** okna **Właściwości** .
 

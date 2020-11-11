@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Używanie funkcji wyszukiwania w Projektancie przepływu pracy'
+description: Dowiedz się, jak wyszukiwać w Projektant przepływu pracy, aby znaleźć elementy według słowa kluczowego, dzięki czemu można ułatwić tworzenie większych, bardziej złożonych przepływów pracy.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: f42d3115-2ed2-4941-8f1e-92dac41c30fa
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63ad6f8b6d3afd1f30f2e9a02eaa4927fb3608d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3dadaf6ce4728dfac8d4052804cbed70ee7cefcd
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817479"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437908"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>Instrukcje: Używanie funkcji wyszukiwania w Projektancie przepływu pracy
 
@@ -33,7 +35,7 @@ Szybkie znajdowanie umożliwia znalezienie następujących danych w projektancie
 
 ### <a name="use-quick-find"></a>Użyj szybkiego wyszukiwania
 
-1. Po otwarciu projektanta przepływu pracy naciśnij **klawisze CTRL + F**lub wybierz pozycję **Edytuj**  >  **Znajdź i Zamień**  >  **szybkie znajdowanie**.
+1. Po otwarciu projektanta przepływu pracy naciśnij **klawisze CTRL + F** lub wybierz pozycję **Edytuj**  >  **Znajdź i Zamień**  >  **szybkie znajdowanie**.
 
 2. Wprowadź wyszukiwany termin w polu **Znajdź** element TextBox i kliknij przycisk **Znajdź dalej**.
 
@@ -47,7 +49,7 @@ Znajdź w plikach lokalizuje ciągi w plikach przepływu pracy, w tym pliki XAML
 
 ### <a name="use-find-in-files"></a>Użyj Znajdź w plikach
 
-1. W programie Visual Studio naciśnij klawisz **Ctrl** + **SHIFT** + **F**lub wybierz pozycję **Edytuj**  >  **Znajdź i Zamień**  >  **Znajdź w plikach**.
+1. W programie Visual Studio naciśnij klawisz **Ctrl** + **SHIFT** + **F** lub wybierz pozycję **Edytuj**  >  **Znajdź i Zamień**  >  **Znajdź w plikach**.
 
 2. Wprowadź element wyszukiwania do pola tekstowego **Znajdź co** i kliknij przycisk **Znajdź wszystko**.
 
