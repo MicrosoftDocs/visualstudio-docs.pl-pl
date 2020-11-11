@@ -3,15 +3,15 @@ title: Przewodnik Visual Studio dla komputerów Mac
 description: Visual Studio dla komputerów Mac zapewnia zintegrowane środowisko programistyczne do kompilowania aplikacji .NET w systemie macOS, w tym ASP.NET Core witryn sieci Web i projektów platformy Xamarin dla systemów iOS, Android, Mac i Xamarin. Forms.
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 07/03/2020
+ms.date: 11/09/2020
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: a385e58f73edbcea6eb25b7b2e2728e00f9bcb8d
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: a2caadd454564b389f48987e69e1bc08475affea
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584012"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493273"
 ---
 # <a name="visual-studio-2019-for-mac-tour"></a>Przewodnik po programie Visual Studio 2019 for Mac
 
@@ -58,11 +58,11 @@ Na poniższej ilustracji przedstawiono Visual Studio dla komputerów Mac z zała
 
 Poniższe sekcje zawierają omówienie głównych obszarów w Visual Studio dla komputerów Mac.
 
-## <a name="solution-pad"></a>Konsola rozwiązania
+## <a name="solution-window"></a>Okno rozwiązania
 
-Okienko rozwiązania organizuje projekty w rozwiązaniu:
+Okno rozwiązanie organizuje projekty w rozwiązaniu:
 
-![Projekty zorganizowane w okienko rozwiązania](media/ide-tour-image18.png)
+![Projekty zorganizowane w oknie rozwiązania](media/ide-tour-image18.png)
 
 Jest to miejsce, w którym pliki kodu źródłowego, zasobów, interfejsu użytkownika i zależności są zorganizowane w projekty specyficzne dla platformy.
 
@@ -72,7 +72,7 @@ Aby uzyskać więcej informacji na temat korzystania z projektów i rozwiązań 
 
 Odwołania do zestawów dla każdego projektu są dostępne w folderze References:
 
-![Odwołuje się do folderu w konsoli rozwiązania](media/ide-tour-image19.png)
+![Odwołuje się do folderu w oknie rozwiązania](media/ide-tour-image19.png)
 
 Dodatkowe odwołania są dodawane za pomocą okna dialogowego **Edytowanie odwołań** , który jest wyświetlany przez dwukrotne kliknięcie folderu References lub wybranie polecenia **Edytuj odwołania** w jego akcjach menu kontekstowego:
 
@@ -86,7 +86,7 @@ Wszystkie zależności zewnętrzne używane w aplikacji są przechowywane w fold
 
 Pakiet NuGet jest najpopularniejszym menedżerem pakietów na potrzeby programowania na platformie .NET. Dzięki obsłudze NuGet programu Visual Studio można łatwo wyszukiwać i dodawać pakiety do projektu do aplikacji.
 
-Aby dodać zależność do aplikacji, kliknij prawym przyciskiem myszy folder zależności/pakiety, a następnie wybierz polecenie **Dodaj pakiety**:
+Aby dodać zależność do aplikacji, kliknij prawym przyciskiem myszy folder zależności/pakiety, a następnie wybierz polecenie **Dodaj pakiety** :
 
 ![Dodawanie pakietu NuGet](media/ide-tour-image21.png)
 
@@ -135,9 +135,9 @@ Visual Studio dla komputerów Mac integruje się z systemami kontroli źródła 
 
 ![Nazwa rozgałęzienia wskazująca projekt pod kontrolą źródła](media/ide-tour-image22.png)
 
-Pliki z niezatwierdzonymi zmianami mają adnotację w ikonach w okienku rozwiązanie, jak pokazano na poniższej ilustracji:
+Pliki z niezatwierdzonymi zmianami mają adnotację w swoich ikonach w oknie rozwiązania, jak pokazano na poniższej ilustracji:
 
-![Pliki niezatwierdzone w konsoli rozwiązania](media/ide-tour-image23.png)
+![Niezatwierdzone pliki w oknie rozwiązania](media/ide-tour-image23.png)
 
 Aby uzyskać więcej informacji na temat korzystania z kontroli wersji w programie Visual Studio, zobacz artykuł dotyczący [kontroli wersji](./version-control.md) .
 

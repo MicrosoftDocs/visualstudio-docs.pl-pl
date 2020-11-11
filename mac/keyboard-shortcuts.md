@@ -5,18 +5,18 @@ ms.date: 03/14/2019
 author: heiligerdankgesang
 ms.author: dominicn
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: 989c47e3c192c936eec0828b96a800d5ed4feaa4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3a4b2a56e5ac6ed29289c3946a65fc57b54eaa21
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247377"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493208"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Domyślne skróty klawiaturowe w Visual Studio dla komputerów Mac
 
 Aby uzyskać informacje na temat ułatwień dostępu do klawiatury, zobacz [How to: use a Keyboard nawigacji](~/accessibility-keyboard.md).
 
-Możesz uzyskać dostęp do różnych poleceń w Visual Studio dla komputerów Mac przy użyciu odpowiedniego skrótu klawiaturowego. Ten dokument zawiera listę domyślnych skrótów dla schematu powiązania klucza **Visual Studio dla komputerów Mac** . Aby uzyskać więcej informacji na temat zmiany schematu powiązania kluczy, zobacz [Dostosowywanie środowiska IDE](~/customizing-the-ide.md#key-bindings). Możesz również dostosować skróty dla polecenia za pomocą **Visual Studio for Mac**  >  elementu menu**preferencji** Visual Studio dla komputerów Mac i wybierając opcję **Environment**  >  **powiązania klucza** środowiska w oknie **preferencji** .
+Możesz uzyskać dostęp do różnych poleceń w Visual Studio dla komputerów Mac przy użyciu odpowiedniego skrótu klawiaturowego. Ten dokument zawiera listę domyślnych skrótów dla schematu powiązania klucza **Visual Studio dla komputerów Mac** . Aby uzyskać więcej informacji na temat zmiany schematu powiązania kluczy, zobacz [Dostosowywanie środowiska IDE](~/customizing-the-ide.md#key-bindings). Możesz również dostosować skróty dla polecenia za pomocą **Visual Studio for Mac**  >  elementu menu **preferencji** Visual Studio dla komputerów Mac i wybierając opcję **Environment**  >  **powiązania klucza** środowiska w oknie **preferencji** .
 
 > [!TIP]
 > Skróty klawiaturowe wyświetlane w tym dokumencie i preferencje dotyczące powiązań klawiszy w Visual Studio dla komputerów Mac są prezentowane przy użyciu symboli często używanych w macOS. Jeśli nie masz pewności co do symbolu, zapoznaj się z [tabelą macOS Key Symbols loopkup](#macos-key-symbols-lookup).
@@ -32,9 +32,9 @@ Skompilowano najczęściej używane i najbardziej użyteczne skróty klawiaturow
 
 |Polecenia|Skróty klawiaturowe|
 |-|-|
-|Znajdź odwołania|**⇧ ⌘ R**, **F12**|
-|Przejdź do deklaracji|**⌘ D**, **F12**|
-|Następny błąd|**⌥ ⇧ ⇟**, **⇧ ⌘ F12**|
+|Znajdź odwołania|**⇧ ⌘ R** , **F12**|
+|Przejdź do deklaracji|**⌘ D** , **F12**|
+|Następny błąd|**⌥ ⇧ ⇟** , **⇧ ⌘ F12**|
 |Następny problem w pliku|**⌥⇟**|
 |Poprzedni błąd|**⌥⇧⇞**|
 |Poprzedni problem w pliku|**⌥⇞**|
@@ -43,16 +43,16 @@ Skompilowano najczęściej używane i najbardziej użyteczne skróty klawiaturow
 
 |Polecenia|Skróty klawiaturowe|
 |-|-|
-|Włącz lub wyłącz punkt przerwania|**⌥ ⌘/**, **⌘ F9**|
-|Wstrzymanie|**⌥ ⌘ P**, **⌥ ⌘ P5**|
+|Włącz lub wyłącz punkt przerwania|**⌥ ⌘/** , **⌘ F9**|
+|Wstrzymanie|**⌥ ⌘ P** , **⌥ ⌘ P5**|
 |Usuń wszystkie punkty przerwania|**⇧ ⌘ F9**|
 |Uruchom do kursora|**⌘ F10**|
 |Ustaw następną instrukcję|**⇧ ⌘ F10**|
-|Pokaż następną instrukcję|**⌥\***|
-|Wkrocz do|**⇧ ⌘ I**, **⌘ F11**|
-|Wyjdź|**⇧ ⌘ U**, **⇧ ⌘ F11**|
-|Przekrocz nad|**⇧ ⌘ O**, **F10**|
-|Przełącz punkt przerwania|**⌘ \\ **, **F9**|
+|Pokaż następną instrukcję|**⌥ \** _|
+|Wkrocz do|_ * ⇧ ⌘ I * *, **⌘ F11**|
+|Wyjdź|**⇧ ⌘ U** , **⇧ ⌘ F11**|
+|Przekrocz nad|**⇧ ⌘ O** , **F10**|
+|Przełącz punkt przerwania|**⌘ \\** , **F9**|
 |Wyświetl punkty przerwania|**⌥ ⌘ B**|
 
 ## <a name="designer"></a>Projektant
@@ -74,7 +74,7 @@ Skompilowano najczęściej używane i najbardziej użyteczne skróty klawiaturow
 |Wklej|**⌘ V**|
 |Preferencje|**⌘,**|
 |Ponów|**⇧ ⌘ Z**|
-|Zmień nazwę|**⌘ R**, **F2**|
+|Zmień nazwę|**⌘ R** , **F2**|
 |Zaznacz wszystko|**⌘**|
 |Pokaż generowanie kodu|**⌘ I**|
 |Przełącz wszystkie zgięcia|**⌥⇧⌘↑**|
@@ -105,8 +105,8 @@ Skompilowano najczęściej używane i najbardziej użyteczne skróty klawiaturow
 |Zamknij obszar roboczy|**⌥ ⌘ W**|
 |Nowy plik|**⌘ N**|
 |Nowe rozwiązanie|**⇧ ⌘ N**|
-|Otwarte|**⌘ O**|
-|Drukowanie|**⌘ P**|
+|Otwórz|**⌘ O**|
+|Drukuj|**⌘ P**|
 |zakończ.|**⌘ Q**|
 |Cofanie|**⌘ U**|
 |Zapisz|**⌘ S**|
@@ -126,19 +126,19 @@ Skompilowano najczęściej używane i najbardziej użyteczne skróty klawiaturow
 |Zaimplementuj komunikaty aparatu Unity|**⇧ ⌘ M**|
 |Skontrol|**⌥ ⌘ I**|
 
-## <a name="project"></a>Projekt
+## <a name="project"></a>Project
 
 |Polecenia|Skróty klawiaturowe|
 |-|-|
 |Dodaj pliki|**⌥ ⌘ A**|
-|Kompilacja|**⌘ K**, **⇧ F6**|
-|Kompiluj wszystko|**⌘ B**, **F6**|
+|Kompilacja|**⌘ K** , **⇧ F6**|
+|Kompiluj wszystko|**⌘ B** , **F6**|
 |Clean|**⇧ ⌘ K**|
 |Ponowne kompilowanie|**⌃ ⌘ K**|
 |Kompiluj ponownie wszystko|**⌃ ⌘ B**|
-|Rozpocznij debugowanie|**⌘ ⏎**, **F5**|
-|Uruchom bez debugowania|**⌥ ⌘ ⏎**, **⌃ F5**|
-|Stop|**⇧ ⌘ ⏎**, **⇧ F5**|
+|Rozpocznij debugowanie|**⌘ ⏎** , **F5**|
+|Uruchom bez debugowania|**⌥ ⌘ ⏎** , **⌃ F5**|
+|Stop|**⇧ ⌘ ⏎** , **⇧ F5**|
 
 ## <a name="refactoring"></a>Refaktoryzacja
 
@@ -147,15 +147,15 @@ Skompilowano najczęściej używane i najbardziej użyteczne skróty klawiaturow
 |Importuj symbol|**⌃⌥␣**|
 |Szybka naprawa|**⌥⏎**|
 
-## <a name="search"></a>Wyszukiwanie
+## <a name="search"></a>Wyszukaj
 
 |Polecenia|Skróty klawiaturowe|
 |-|-|
 |Polecenie|**⇧ ⌘ P**|
 |Znajdź w plikach|**⇧ ⌘ F**|
-|Znajdź następny|**⌘ G**, **F3**|
-|Znajdź dalej podobne zaznaczenie|**⌘ E**, **⌘ F3**|
-|Znajdź poprzedni|**⇧ ⌘ G**, **⇧ F3**|
+|Znajdź następny|**⌘ G** , **F3**|
+|Znajdź dalej podobne zaznaczenie|**⌘ E** , **⌘ F3**|
+|Znajdź poprzedni|**⇧ ⌘ G** , **⇧ F3**|
 |Znajdź poprzednie podobne zaznaczenie|**⇧ ⌘ F3**|
 |Znajdowanie|**⌘ F**|
 |Przejdź do pliku|**⇧ ⌘ D**|
@@ -180,10 +180,10 @@ Skompilowano najczęściej używane i najbardziej użyteczne skróty klawiaturow
 |Dynamiczny dynamiczne|**⌃/**|
 |Rozwiń wybór|**⌥⇧↓**|
 |Rozwiń wybór|**⌥⇧↑**|
-|Rozszerz zaznaczenie do końca dokumentu|**⇧ ⌘ ↓**, **⇧ ⌘ ↘**|
-|Rozszerz zaznaczenie do początku dokumentu|**⇧ ⌘ ↑**, **⇧ ⌘ ↖**|
-|Rozszerz zaznaczenie do końca linii|**⇧ ↘**, **⇧ ⌘ →**|
-|Rozszerz zaznaczenie do początku wiersza|**⇧ ↖**, **⇧ ⌘ ←**|
+|Rozszerz zaznaczenie do końca dokumentu|**⇧ ⌘ ↓** , **⇧ ⌘ ↘**|
+|Rozszerz zaznaczenie do początku dokumentu|**⇧ ⌘ ↑** , **⇧ ⌘ ↖**|
+|Rozszerz zaznaczenie do końca linii|**⇧ ↘** , **⇧ ⌘ →**|
+|Rozszerz zaznaczenie do początku wiersza|**⇧ ↖** , **⇧ ⌘ ←**|
 |Rozszerz zaznaczenie do następnego wiersza|**⇧↓**|
 |Rozszerz zaznaczenie do następnego wyrazu|**⌥ ⇧ →**|
 |Rozszerz zaznaczenie o stronę w dół|**⇧⇟**|
@@ -196,9 +196,9 @@ Skompilowano najczęściej używane i najbardziej użyteczne skróty klawiaturow
 |Przejdź o jeden znak w lewo|**⌃ B**|
 |Przejdź o jeden znak w prawo|**⌃ F**|
 |Przejdź do początku dokumentu|**⌘↑**|
-|Przejdź do początku wiersza|**⌘ ←**, **⌃**|
+|Przejdź do początku wiersza|**⌘ ←** , **⌃**|
 |Przejdź na koniec dokumentu|**⌘↓**|
-|Przejdź do końca wiersza|**⌘ →**, **⌃ E**|
+|Przejdź do końca wiersza|**⌘ →** , **⌃ E**|
 |Przejdź do pasującego nawiasu klamrowego|**⇧⌘\\**|
 |Przejdź do następnego wiersza|**⌃ N**|
 |Przejdź do następnego wyrazu|**⌥ →**|
@@ -229,11 +229,11 @@ Skompilowano najczęściej używane i najbardziej użyteczne skróty klawiaturow
 |Przejdź do przodu|**⌃ ⌘ →**|
 |Rozmiar normalny|**⌘ 0**|
 |Jedna kolumna edytora|**⌥ ⌘ 1**|
-|Pokaż następny|**⌥ ⌘ ↓**, **F8**|
-|Pokaż poprzedni|**⌥ ⌘ ↑**, **⇧ F8**|
+|Pokaż następny|**⌥ ⌘ ↓** , **F8**|
+|Pokaż poprzedni|**⌥ ⌘ ↑** , **⇧ F8**|
 |Dwie kolumny edytora|**⌥ ⌘ 2**|
-|Powiększ|**⌘ +**, **⌘ =**|
-|Pomniejsz|**⌘-**, **⌘ _**|
+|Powiększ|**⌘ +** , **⌘ =**|
+|Pomniejsz|**⌘-** , **⌘ _**|
 
 ## <a name="window"></a>Okno
 
@@ -251,29 +251,29 @@ Skompilowano najczęściej używane i najbardziej użyteczne skróty klawiaturow
 |Ukryj inne|**⌥ ⌘ H**|
 |Ukryj program Visual Studio|**⌘ H**|
 |Minimalizuj|**⌘ M**|
-|Następny dokument|**⌘}**, **⌘ F6**|
-|Poprzedni dokument|**⌘ {**, **⇧ ⌘ F6**|
+|Następny dokument|**⌘}** , **⌘ F6**|
+|Poprzedni dokument|**⌘ {** , **⇧ ⌘ F6**|
 |Przełącz do następnego dokumentu|**⌃⇥**|
-|Przełącz do następnej konsoli|**⌃⌥⇥**|
+|Przełącz do następnego okna narzędzi|**⌃⌥⇥**|
 |Przełącz do poprzedniego dokumentu|**⌃⇧⇥**|
-|Przełącz do poprzedniej konsoli|**⌃⌥⇧⇥**|
+|Przełącz do poprzedniego okna narzędzi|**⌃⌥⇧⇥**|
 
 ## <a name="macos-key-symbols-lookup"></a>Wyszukiwanie symboli klucza macOS
 
 |Symbol|Klucz|
 |-|-|
-|⌘|**Polecenie** (**cmd**)|
-|⌥|**Option** (**Alt**)|
+|⌘|**Polecenie** ( **cmd** )|
+|⌥|**Option** ( **Alt** )|
 |⇧|**Przesunięcia**|
-|⌃|**Kontrolka** (**Ctrl**)
-|⇞|**Strona w górę** (**PG**)|
-|⇟|**Strona w dół** (**PG DN**)|
-|⌫|**Usuń** (**Backspace**)|
+|⌃|**Kontrolka** ( **Ctrl** )
+|⇞|**Strona w górę** ( **PG** )|
+|⇟|**Strona w dół** ( **PG DN** )|
+|⌫|**Usuń** ( **Backspace** )|
 |⌦|**Usuwanie do przodu**|
 |⏎|**Przesłać**|
 |←→↑↓|**Klawisze strzałek**|
-|↖|**Strona główna**|
-|↘|**Punktów**|
+|↖|**Ekran główny**|
+|↘|**End**|
 |␣|**Pasek miejsca**|
 |⇥|**Tabulator**|
 

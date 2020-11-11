@@ -3,16 +3,16 @@ title: 'Instrukcje: otwieranie wielu rozwiązań'
 description: Dowiedz się, jak otworzyć więcej niż jedno rozwiązanie w Visual Studio dla komputerów Mac i jak otworzyć więcej niż jedno wystąpienie aplikacji.
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 04/02/2019
+ms.date: 11/09/2020
 ms.assetid: 592BA4E3-8DEF-4FCD-8BA0-519A4CEEE03E
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: d90a2a92e2902633e5667e71c5692faa8fa161e1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e54f002141379d93a40df69ea070d5a64eba2f7d
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950060"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493442"
 ---
 # <a name="open-multiple-solutions-or-instances-of-visual-studio-for-mac"></a>Otwórz wiele rozwiązań lub wystąpień Visual Studio dla komputerów Mac
 
@@ -32,7 +32,7 @@ Aby otworzyć drugie rozwiązanie obok pierwszego rozwiązania, wykonaj następu
 
 1. Gdy pierwsze rozwiązanie jest już otwarte, wybierz pozycję **plik**  >  **Otwórz**.
 2. Przejrzyj system plików, aby znaleźć istniejące rozwiązanie.
-3. Wybierz plik **. sln** , a następnie wybierz **Opcje**:
+3. Wybierz plik **. sln** , a następnie wybierz **Opcje** :
 
     ![Zrzut ekranu przedstawiający Visual Studio dla komputerów Mac, z wyróżnionym plikiem. sln i opcjami](media/open-multiple-solutions-image3.png)
 
@@ -40,7 +40,7 @@ Aby otworzyć drugie rozwiązanie obok pierwszego rozwiązania, wykonaj następu
 
     ![Zrzut ekranu przedstawiający okno dialogowe Opcje z wyczyszczonym polem Zamknij bieżący obszar roboczy](media/open-multiple-solutions-image1.png)
 
-5. Wybierz pozycję **Otwórz** , aby otworzyć drugie rozwiązanie w okienko rozwiązania.
+5. Wybierz pozycję **Otwórz** , aby otworzyć drugie rozwiązanie w oknie rozwiązanie.
 
 Alternatywnie, jeśli ostatnio otwarto rozwiązanie, można wykonać następujące czynności:
 
@@ -48,7 +48,7 @@ Alternatywnie, jeśli ostatnio otwarto rozwiązanie, można wykonać następują
 
     ![Zrzut ekranu przedstawiający menu ostatnich rozwiązań](media/open-multiple-solutions-image2.png)
 
-1. Naciśnij i przytrzymaj klawisz **Ctrl** i wybierz rozwiązanie. Ta kombinacja otwiera drugie rozwiązanie w okienko rozwiązania.
+1. Naciśnij i przytrzymaj klawisz **Ctrl** i wybierz rozwiązanie. Ta kombinacja otwiera drugie rozwiązanie w oknie rozwiązania.
 
 ## <a name="related-video"></a>Pokrewne wideo
 

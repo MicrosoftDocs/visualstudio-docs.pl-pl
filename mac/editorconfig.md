@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
 ms.topic: how-to
-ms.openlocfilehash: adeab06341c0691bdb902a3bb8a813ac38d786f6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c7269b4272fb8ed2c73dbe9f57e94da071dc623e
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85938524"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493065"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>Tworzenie i edytowanie niestandardowego pliku EditorConfig
 
@@ -51,7 +51,7 @@ EditorConfig obsługuje również [konwencje kodowania](/visualstudio/ide/editor
 
     Dodanie elementu na poziomie rozwiązania powoduje automatyczne utworzenie i zagnieżdżenie go w folderze **elementów rozwiązania** :
 
-    ![Element rozwiązania wyświetlany w konsoli rozwiązania](media/editorconfig-image1a.png)
+    ![Element rozwiązania wyświetlany w oknie rozwiązania](media/editorconfig-image1a.png)
 
 4. Edytuj plik. Na przykład:
 
@@ -86,11 +86,11 @@ Możesz chcieć ponownie użyć istniejącego `.editorconfig` pliku w projekcie.
 
 3. Pliki zaczynające się od `.` (takich jak `.editorconfig` ) to pliki ukryte w programie macOS, a następnie naciśnij klawisze **Command + Shift +.** Aby plik był `.editorconfig` widoczny.
 
-4. Wybierz `.editorconfig` plik, a następnie kliknij przycisk **Otwórz**:
+4. Wybierz `.editorconfig` plik, a następnie kliknij przycisk **Otwórz** :
 
     ![Dodawanie nowego okna pliku](media/editorconfig-image3b.png)
 
-5. Gdy zostanie wyświetlone następujące okno dialogowe, zaznacz opcję **Kopiuj plik do katalogu** i wybierz **przycisk OK**:
+5. Gdy zostanie wyświetlone następujące okno dialogowe, zaznacz opcję **Kopiuj plik do katalogu** i wybierz **przycisk OK** :
 
     ![Opcje okna dialogowego Dodawanie pliku do folderu](media/editorconfig-image3.png)
 
@@ -123,15 +123,15 @@ csharp_new_line_before_open_brace = none
 
 Ustawienie `root` `true` flagowania tego pliku jako najwyższego pliku bazy kodu i wszystkich wyższych `.editorconfig` plików w projekcie zostanie zignorowane, jak wyjaśniono w sekcji [Przesłoń ustawienia EditorConfig](#override-editorconfig-settings) .
 
-Każda sekcja jest oznaczona przez kwadrat (**[]**) nawiasy klamrowe i określa informacje o typach plików, do których powinny odnosić się następujące właściwości.
+Każda sekcja jest oznaczona przez kwadrat ( **[]** ) nawiasy klamrowe i określa informacje o typach plików, do których powinny odnosić się następujące właściwości.
 
 W powyższym przykładzie niektóre ustawienia są stosowane do wszystkich plików w projekcie, a inne są dodawane tylko do plików języka C#. Poniższe zrzuty ekranu pokazują przed i po `.editorconfig` zastosowaniu ustawień:
 
-**Przed**:
+**Przed** :
 
 ![Przed zastosowaniem ustawień editorconfig](media/editorconfig-image4.png)
 
-**Po**:
+**Po** :
 
 ![Po zastosowaniu ustawień editorconfig](media/editorconfig-image5.png)
 

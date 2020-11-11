@@ -3,16 +3,16 @@ title: Wprowadzenie do tworzenia gier za pomocą platformy Unity
 description: Wprowadzenie do aparatu Unity i Visual Studio dla komputerów Mac
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 05/20/2019
+ms.date: 11/09/2020
 ms.technology: vs-ide-general
 ms.assetid: D07FA43B-9D18-4DFA-8343-CD538FAD84DB
 ms.topic: how-to
-ms.openlocfilehash: da9c8b3470fee406b577b136b6c55d76c9346e44
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cae68b54623564028ea85dd1aa319fad5ceaec48
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950653"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493585"
 ---
 # <a name="getting-started-building-games-with-unity-in-visual-studio-for-mac"></a>Wprowadzenie do tworzenia gier za pomocą aparatu Unity w Visual Studio dla komputerów Mac
 
@@ -74,7 +74,7 @@ To laboratorium jest przeznaczone dla deweloperów, którzy znają język C#, ch
 
     ![Odsłoń w akcji kontekstu wyszukiwania](media/unity-image8.png)
 
-12. Projekty zawierają **zasoby**, **biblioteki**, **ProjectSettings**i foldery **tymczasowe** , jak widać. Jednak tylko jeden, który jest wyświetlany w interfejsie jest folderem **zasobów** . Folder **biblioteki** to lokalna pamięć podręczna dla importowanych zasobów; zawiera wszystkie metadane dla zasobów. Folder **ProjectSettings** przechowuje ustawienia, które można skonfigurować. Folder **tymczasowy** jest używany dla plików tymczasowych z narzędzia mono i Unity podczas procesu kompilacji. Istnieje również plik rozwiązania, który można otworzyć w Visual Studio dla komputerów Mac (**UnityLab. sln** tutaj).
+12. Projekty zawierają **zasoby** , **biblioteki** , **ProjectSettings** i foldery **tymczasowe** , jak widać. Jednak tylko jeden, który jest wyświetlany w interfejsie jest folderem **zasobów** . Folder **biblioteki** to lokalna pamięć podręczna dla importowanych zasobów; zawiera wszystkie metadane dla zasobów. Folder **ProjectSettings** przechowuje ustawienia, które można skonfigurować. Folder **tymczasowy** jest używany dla plików tymczasowych z narzędzia mono i Unity podczas procesu kompilacji. Istnieje również plik rozwiązania, który można otworzyć w Visual Studio dla komputerów Mac ( **UnityLab. sln** tutaj).
 
     ![zasoby w programie Finder](media/unity-image9.png)
 
@@ -112,7 +112,7 @@ To laboratorium jest przeznaczone dla deweloperów, którzy znają język C#, ch
 
     ![Przesuwanie jednego modułu wzdłuż osi](media/unity-image17.png)
 
-22. Teraz można dodać kod, aby uzyskać logikę Enemy, dzięki czemu będzie ona wykonywała gracz. Kliknij prawym przyciskiem myszy folder **Assets** w konsoli **projektu** i wybierz polecenie **Utwórz skrypt > C#**.
+22. Teraz można dodać kod, aby uzyskać logikę Enemy, dzięki czemu będzie ona wykonywała gracz. Kliknij prawym przyciskiem myszy folder **Assets** w oknie **projektu** i wybierz polecenie **Utwórz skrypt > C#**.
 
     ![Akcja kontekstu skryptu C#](media/unity-image18.png)
 
@@ -142,9 +142,9 @@ To laboratorium jest przeznaczone dla deweloperów, którzy znają język C#, ch
 
     ![Enemy zasób wybrany w środowisku Unity](media/unity-image23.png)
 
-5. Rozwiązanie Visual Studio jest proste. Zawiera on folder **zasobów** (taki sam, jak **Wyszukiwanie**) i utworzony wcześniej skrypt **EnemyAI.cs** . W bardziej zaawansowanych projektach hierarchia prawdopodobnie będzie wyglądać inaczej niż w środowisku Unity.
+5. Rozwiązanie Visual Studio jest proste. Zawiera on folder **zasobów** (taki sam, jak **Wyszukiwanie** ) i utworzony wcześniej skrypt **EnemyAI.cs** . W bardziej zaawansowanych projektach hierarchia prawdopodobnie będzie wyglądać inaczej niż w środowisku Unity.
 
-    ![Konsola rozwiązań w Visual Studio dla komputerów Mac](media/unity-image24.png)
+    ![Okno rozwiązania w Visual Studio dla komputerów Mac](media/unity-image24.png)
 
 6. **EnemyAI.cs** jest otwarty w edytorze. Skrypt początkowy zawiera tylko klasy zastępcze dla metod **Start** i **Update** .
 
@@ -194,11 +194,11 @@ To laboratorium jest przeznaczone dla deweloperów, którzy znają język C#, ch
 
 1. Ustaw punkt przerwania w pierwszym wierszu kodu w metodzie **Start** . Możesz kliknąć margines edytora w wierszu docelowym lub umieścić kursor w wierszu i nacisnąć klawisz **F9**.
 
-    ![Ustawianie punktu przerwania w programie Visual Studio dla komputerów Mac](media/unity-image25.png)
+    ![Ustawianie punktu przerwania w Visual Studio dla komputerów Mac](media/unity-image25.png)
 
 2. Kliknij przycisk **Rozpocznij debugowanie** lub naciśnij klawisz **F5**. Spowoduje to skompilowanie projektu i dołączenie go do aparatu Unity w celu debugowania.
 
-    ![przycisk Uruchom w programie Visual Studio dla komputerów Mac](media/unity-image26.png)
+    ![przycisk Uruchom w Visual Studio dla komputerów Mac](media/unity-image26.png)
 
 3. Wróć do **aparatu Unity** i kliknij przycisk **Uruchom** , aby rozpocząć grę.
 
@@ -206,21 +206,21 @@ To laboratorium jest przeznaczone dla deweloperów, którzy znają język C#, ch
 
 4. Punkt przerwania powinien zostać trafiony i możesz teraz korzystać z narzędzi debugowania Visual Studio dla komputerów Mac.
 
-    ![trafienie punktu przerwania w programie Visual Studio dla komputerów Mac](media/unity-image28.png)
+    ![osiągnięto punkt przerwania w Visual Studio dla komputerów Mac](media/unity-image28.png)
 
-5. Z poziomu konsoli **lokalnej** Zlokalizuj **ten** wskaźnik, który odwołuje się do obiektu **EnemyAI** . Rozwiń odwołanie i zobacz, że możesz przeglądać powiązane elementy członkowskie, takie jak **szybkość**.
+5. W oknie **zmiennych lokalnych** Znajdź **ten** wskaźnik, który odwołuje się do obiektu **EnemyAI** . Rozwiń odwołanie i zobacz, że możesz przeglądać powiązane elementy członkowskie, takie jak **szybkość**.
 
-    ![Konsola debugowania ustawień regionalnych w programie Visual Studio dla komputerów Mac](media/unity-image29.png)
+    ![Okno zmiennych lokalnych w Visual Studio dla komputerów Mac](media/unity-image29.png)
 
 6. Usuń punkt przerwania z metody **Start** w ten sam sposób, w jaki został dodany — przez kliknięcie go na marginesie lub zaznaczenie wiersza i naciśnięcie klawisza **F9**.
 
-    ![trafienie punktu przerwania w programie Visual Studio dla komputerów Mac](media/unity-image30.png)
+    ![Usuwanie punktu przerwania w Visual Studio dla komputerów Mac przez kliknięcie go](media/unity-image30.png)
 
 7. Naciśnij klawisz **F10** , aby przekroczyć pierwszy wiersz kodu, który odnajdzie obiekt Game **Player** przy użyciu tagu jako parametru.
 
 8. Umieść kursor myszy nad zmienną **odtwarzacza** w oknie edytora kodu, aby wyświetlić jej skojarzone elementy członkowskie. Możesz nawet rozwinąć nakładkę, aby wyświetlić właściwości podrzędne.
 
-    ![okno debugowania w edytorze programu Visual Studio dla komputerów Mac](media/unity-image31.png)
+    ![okno debugowania w edytorze Visual Studio dla komputerów Mac](media/unity-image31.png)
 
 9. Naciśnij klawisz **F5** lub naciśnij przycisk **Run (Uruchom** ), aby kontynuować wykonywanie. Wróć do aparatu Unity, aby wielokrotnie widzieć moduł Enemy. Być może trzeba będzie dostosować kamerę, jeśli nie jest ona widoczna.
 
@@ -228,7 +228,7 @@ To laboratorium jest przeznaczone dla deweloperów, którzy znają język C#, ch
 
 10. Przełącz się z powrotem do **Visual Studio dla komputerów Mac** i ustaw punkt przerwania w pierwszym wierszu metody **Update** . Należy ją natychmiast nacisnąć.
 
-    ![Ustawianie punktu przerwania w programie Visual Studio dla komputerów Mac](media/unity-image33.png)
+    ![Usuwanie punktu przerwania w Visual Studio dla komputerów Mac](media/unity-image33.png)
 
 11. Załóżmy, że szybkość jest zbyt szybka i chcemy przetestować wpływ zmiany bez ponownego uruchamiania aplikacji. Znajdź zmienną **szybkość** w oknie **samochody** lub **Ustawienia lokalne** , a następnie zmień ją na **"10"** i naciśnij klawisz **Enter**.
 
@@ -258,21 +258,21 @@ To laboratorium jest przeznaczone dla deweloperów, którzy znają język C#, ch
 
     ![okno przeglądarki otwiera się w dokumentacji](media/unity-image39.png)
 
-3. Visual Studio dla komputerów Mac udostępnia także pomocników do szybkiego tworzenia klas zachowań aparatu Unity. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **zasoby** i wybierz polecenie **Dodaj > nowe**działanie.
+3. Visual Studio dla komputerów Mac udostępnia także pomocników do szybkiego tworzenia klas zachowań aparatu Unity. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję **zasoby** i wybierz polecenie **Dodaj > nowe** działanie.
 
     ![Nowa akcja kontekstowa bezczynności](media/unity-image40.png)
 
 4. Nowo utworzona klasa zawiera klasy zastępcze dla metod **Start** i **Update** . Po zamykającym nawiasie klamrowym metody **Update** zacznij pisać **"OnMouseUp"**. Podczas pisania należy zauważyć, że funkcja IntelliSense programu Visual Studio szybko zeruje się w metodzie, która ma zostać wdrożona. Wybierz ją z podanej listy autouzupełniania. Spowoduje to wypełnienie metody zastępczej, w tym wszystkich parametrów.
 
-    ![Technologia IntelliSense w programie Visual Studio dla komputerów Mac](media/unity-image41.png)
+    ![Technologia IntelliSense w Visual Studio dla komputerów Mac](media/unity-image41.png)
 
 5. Wewnątrz metody **OnMouseUp** wpisz **"Base".** Aby wyświetlić wszystkie metody podstawowe dostępne do wywołania. Można również poznać różne przeciążenia każdej funkcji przy użyciu opcji stronicowania w prawym górnym rogu okna wysuwanego IntelliSense.
 
-    ![Eksplorowanie przeciążeń w programie Visual Studio dla komputerów Mac](media/unity-image42.png)
+    ![Eksplorowanie przeciążeń w Visual Studio dla komputerów Mac](media/unity-image42.png)
 
-6. Visual Studio dla komputerów Mac umożliwia również łatwe zdefiniowanie nowych programów do cieniowania. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **zasoby** i wybierz polecenie **Dodaj > nowy program do cieniowania**.
+6. Visual Studio dla komputerów Mac umożliwia również łatwe zdefiniowanie nowych programów do cieniowania. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję **zasoby** i wybierz polecenie **Dodaj > nowy program do cieniowania**.
 
-    ![Nowa akcja modułu cieniującego w programie Visual Studio dla komputerów Mac](media/unity-image43.png)
+    ![Nowa akcja modułu cieniującego w Visual Studio dla komputerów Mac](media/unity-image43.png)
 
 7. Format pliku programu do cieniowania uzyskuje pełny kolor i czcionki, aby ułatwić ich odczytywanie i zrozumienie.
 

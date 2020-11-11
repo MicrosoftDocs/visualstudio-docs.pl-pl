@@ -3,15 +3,15 @@ title: Dołączanie pakietu NuGet do projektu
 description: W tym dokumencie opisano sposób dołączania pakietu NuGet w projekcie przy użyciu Visual Studio dla komputerów Mac. Przeprowadza on wyszukiwanie i pobieranie pakietu, a także przedstawia funkcje integracji IDE.
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 09/04/2020
+ms.date: 11/09/2020
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: conceptual
-ms.openlocfilehash: e361a1a0fba05a6fdabc66b03008049dfa34784f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 46ceb99617c6a0e9ba457fdb769c1162090d1d31
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349340"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493494"
 ---
 # <a name="install-and-manage-nuget-packages-in-visual-studio-for-mac"></a>Instalowanie pakietów NuGet i zarządzanie nimi w Visual Studio dla komputerów Mac
 
@@ -23,7 +23,7 @@ Aby zapoznać się z wprowadzeniem do korzystania z narzędzia NuGet w Visual St
 
 ## <a name="find-and-install-a-package"></a>Znajdowanie i instalowanie pakietu
 
-1. Gdy projekt jest otwarty w Visual Studio dla komputerów Mac, kliknij prawym przyciskiem myszy folder **zależności** ( **pakiety** , jeśli używany jest projekt Xamarin) w **okienko rozwiązania** i wybierz pozycję **Zarządzaj pakietami NuGet..**..
+1. Mając otwarty projekt w Visual Studio dla komputerów Mac, kliknij prawym przyciskiem myszy folder **zależności** ( **pakiety** , jeśli używasz projektu Xamarin) w **oknie rozwiązania** i wybierz polecenie **Zarządzaj pakietami NuGet.**...
 
     ![Dodaj nową akcję kontekstu pakietu NuGet](media/nuget-walkthrough-packages-menu.png)
 
@@ -85,7 +85,7 @@ Na koniec na karcie **aktualizacje** okna dialogowego wybierz pakiet, który chc
 ![Zostanie otwarte okno dialogowe Zarządzanie pakietami NuGet z zainstalowaną kartą z wybranym pakietem i otwartą listą rozwijaną Nowa wersja.](media/nuget-walkthrough-packages-nuget-dialog-update-installed-package.png)
 
 ### <a name="locating-outdated-packages"></a>Lokalizowanie nieaktualnych pakietów
-W konsoli rozwiązania możesz zobaczyć, która wersja pakietu jest aktualnie zainstalowana, a następnie kliknij prawym przyciskiem myszy pakiet, który chcesz zaktualizować.
+W oknie rozwiązanie możesz zobaczyć, jaka wersja pakietu jest aktualnie zainstalowana, a następnie kliknij prawym przyciskiem myszy pakiet, który chcesz zaktualizować.
 
 ![Menu pakiety z opcjami do zaktualizowania, usunięcia, odświeżenia](media/nuget-walkthrough-PackageMenu.png)
 

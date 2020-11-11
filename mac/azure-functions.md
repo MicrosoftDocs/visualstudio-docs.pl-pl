@@ -1,18 +1,18 @@
 ---
 title: Wprowadzenie do usługi Azure Functions
-description: Korzystanie z usługi Azure Functions w Visual Studio dla komputerów Mac.
+description: Wprowadzenie do Azure Functions w Visual Studio dla komputerów Mac.
 author: jmatthiesen
 ms.author: jomatthi
 ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.topic: how-to
-ms.openlocfilehash: 586d03e88ba3a2523dde00a6826980830ad54fbc
-ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
+ms.openlocfilehash: 69ecab4f4d3dd7d99821b384dbda0c8986297282
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89402320"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94492844"
 ---
 # <a name="introduction-to-azure-functions"></a>Wprowadzenie do usługi Azure Functions
 
@@ -27,7 +27,7 @@ Aby tworzyć i wdrażać funkcje, należy również uzyskać subskrypcję platfo
 ## <a name="creating-your-first-azure-functions-project"></a>Tworzenie pierwszego projektu Azure Functions
 
 1. W Visual Studio dla komputerów Mac wybierz pozycję **plik > nowe rozwiązanie**.
-2. W oknie dialogowym Nowy projekt wybierz szablon Azure Functions w obszarze **Cloud > ogólne** , a następnie kliknij przycisk **dalej**:
+2. W oknie dialogowym Nowy projekt wybierz szablon Azure Functions w obszarze **Cloud > ogólne** , a następnie kliknij przycisk **dalej** :
 
     ![Okno dialogowe Nowy projekt z opcją Azure Functions](media/azure-functions-image1.png)
 
@@ -81,7 +81,7 @@ Dzięki obsłudze Azure Functions w Visual Studio dla komputerów Mac można tes
 
 Szablony funkcji umożliwiają szybkie tworzenie nowych funkcji przy użyciu najczęściej stosowanych wyzwalaczy i szablonów. Aby utworzyć inny typ funkcji, wykonaj następujące czynności:
 
-1. Aby dodać nową funkcję, kliknij prawym przyciskiem myszy nazwę projektu i wybierz polecenie **dodaj > Dodaj funkcję...**:
+1. Aby dodać nową funkcję, kliknij prawym przyciskiem myszy nazwę projektu i wybierz polecenie **dodaj > Dodaj funkcję...** :
 
     ![Akcja kontekstowa dodawania nowej funkcji](media/azure-functions-addnew.png)
 
@@ -95,10 +95,10 @@ Korzystając z powyższej procedury, można dodać więcej funkcji do projektu a
 
 ## <a name="publish-to-azure"></a>Publikowanie na platformie Azure
 
-1. Kliknij prawym przyciskiem myszy nazwę projektu i wybierz opcję **publikuj > publikowanie na platformie Azure**:  ![ Publikowanie w usłudze Azure — opcja menu](media/azure-functions-image5.png)
+1. Kliknij prawym przyciskiem myszy nazwę projektu i wybierz pozycję **publikuj > publikowanie na platformie Azure** :  ![ menu kontekstowe z publikowaniem > publikowanie na platformie Azure... Opcja wyróżniona](media/azure-functions-image5.png)
 2. Jeśli masz już połączenie z kontem platformy Azure w celu Visual Studio dla komputerów Mac zostanie wyświetlona lista dostępnych usług App Services. Jeśli użytkownik nie zalogował się, zostanie wyświetlony odpowiedni monit.
 3. W oknie dialogowym **Publikowanie w Azure App Service** możesz wybrać istniejącą usługę App Service lub utworzyć nową, klikając przycisk **Nowy**.
-4. W oknie dialogowym **Tworzenie nowego App Service** wprowadź ustawienia:  ![ Publikowanie w usłudze Azure — opcja menu](media/azure-functions-image7.png)
+4. W oknie dialogowym **Tworzenie nowego App Service** wprowadź ustawienia:  ![ Nowy App Service okno dialogowe z polami nazwa usługi, subskrypcja, Grupa zasobów i ustawienia planu usługi.](media/azure-functions-image7.png)
 
     |Ustawienie  |Opis  |
     |---------|---------|
@@ -109,23 +109,23 @@ Korzystając z powyższej procedury, można dodać więcej funkcji do projektu a
 
 5. Kliknij przycisk **dalej** , aby utworzyć konto magazynu. Środowisko uruchomieniowe usługi Functions wymaga konta magazynu platformy Azure. Kliknij pozycję **niestandardowy** , aby utworzyć konto magazynu ogólnego przeznaczenia, lub Użyj istniejącego:
 
-    ![Opcja menu Publikuj w systemie Azure](media/azure-functions-image8.png)
+    ![Nowe okno dialogowe App Service z monitem o podanie nazwy konta magazynu.](media/azure-functions-image8.png)
 
-6. Kliknij przycisk **Utwórz**, aby utworzyć aplikację funkcji i powiązane zasoby na platformie Azure przy użyciu tych ustawień i wdrożyć kod projektu funkcji.
+6. Kliknij przycisk **Utwórz** , aby utworzyć aplikację funkcji i powiązane zasoby na platformie Azure przy użyciu tych ustawień i wdrożyć kod projektu funkcji.
 
-7. Podczas publikowania może pojawić się okno dialogowe z informacją o tym, jak zaktualizować wersję funkcji na platformie Azure. Kliknij przycisk **tak**:
+7. Podczas publikowania może pojawić się okno dialogowe z informacją o tym, jak zaktualizować wersję funkcji na platformie Azure. Kliknij przycisk **tak** :
 
-    ![Opcja menu Publikuj w systemie Azure](media/azure-functions-image12.png)
+    ![Monituj o pytanie "Aktualizacja ustawień aplikacji platformy Azure w celu dopasowania do wersji funkcji lokalnych"? z opcjami Yes i No.](media/azure-functions-image12.png)
 
 ## <a name="function-app-settings"></a>Ustawienia aplikacji funkcji
 
 Wszystkie ustawienia dodane w local.settings.jsna komputerze muszą zostać również dodane do aplikacji funkcji na platformie Azure. Te ustawienia nie są przekazywane automatycznie po opublikowaniu projektu.
 
-Aby uzyskać dostęp do ustawień aplikacji, przejdź do Azure Portal pod adresem [https://ms.portal.azure.com/](https://ms.portal.azure.com/) . W obszarze **aplikacje funkcje**wybierz pozycję **aplikacje funkcji** i wyróżnij nazwę funkcji:
+Aby uzyskać dostęp do ustawień aplikacji, przejdź do Azure Portal pod adresem [https://ms.portal.azure.com/](https://ms.portal.azure.com/) . W obszarze **aplikacje funkcje** wybierz pozycję **aplikacje funkcji** i wyróżnij nazwę funkcji:
 
 ![menu usługi Azure Functions](media/azure-functions-image9.png)
 
-Na karcie **Przegląd** wybierz pozycję **Ustawienia aplikacji** w obszarze **skonfigurowane funkcje**:
+Na karcie **Przegląd** wybierz pozycję **Ustawienia aplikacji** w obszarze **skonfigurowane funkcje** :
 
 ![Za pośrednictwem karty usługi Azure Functions](media/azure-functions-image10.png)
 

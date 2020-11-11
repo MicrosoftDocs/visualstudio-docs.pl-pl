@@ -1,18 +1,18 @@
 ---
 title: Używanie danych czasu projektowania z projektant XAML w programie Visual Studio
 description: Dowiedz się, jak używać danych czasu projektowania w języku XAML.
-ms.date: 09/29/2020
+ms.date: 11/10/2020
 ms.topic: overview
 author: alihamie
 ms.author: tglee
 manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: b9477868d265e9ad8b927d9e13b67112c0ea14f7
-ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
+ms.openlocfilehash: 1dd0b4df440f6addd474ef08e7bf0b2958a58076
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92298477"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94492898"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>Używanie danych czasu projektowania z projektant XAML w programie Visual Studio
 
@@ -25,7 +25,7 @@ Niektóre układy są trudne do wizualizacji bez danych. W tym dokumencie będzi
 
 Dane czasu projektowania to dane, które zostały ustawione, aby ułatwić wizualizację w projektant XAML. Aby rozpocząć, Dodaj następujące wiersze kodu do nagłówka dokumentu XAML, jeśli nie są one jeszcze obecne:
 
-```xml 
+```xml
 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 mc:Ignorable="d"
@@ -138,9 +138,9 @@ Korzyścią jest tutaj, że można powiązać kontrolki z wersją statyczną w c
 
 ## <a name="use-design-time-data-with-custom-types-and-properties"></a>Korzystanie z danych czasu projektowania z niestandardowymi typami i właściwościami
 
-Ta funkcja domyślnie działa tylko z kontrolkami i właściwościami platformy. W tej sekcji opisano kroki wymagane w celu umożliwienia korzystania z własnych kontrolek niestandardowych jako kontrolek czasu projektowania. Nowa funkcja jest dostępna dla klientów korzystających z programu Visual Studio 2019 w wersji zapoznawczej [16,8](/visualstudio/releases/2019/preview-notes) lub nowszej. Aby to umożliwić, należy wykonać trzy wymagania:
+Ta funkcja domyślnie działa tylko z kontrolkami i właściwościami platformy. W tej sekcji opisano kroki wymagane do umożliwienia korzystania z własnych kontrolek niestandardowych jako kontrolek czasu projektowania. Nowa funkcja jest dostępna dla klientów korzystających z programu Visual Studio 2019 w wersji [16,8](/visualstudio/releases/2019/release-notes/) lub nowszej. Aby to umożliwić, należy wykonać trzy wymagania:
 
-- Niestandardowa przestrzeń nazw xmlns 
+- Niestandardowa przestrzeń nazw xmlns
 
     ```xml
     xmlns:myControls="http://MyCustomControls"

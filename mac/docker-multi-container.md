@@ -6,12 +6,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 07/03/2020
 ms.topic: tutorial
-ms.openlocfilehash: b883979921b3fa1493188a8d0fe75a1c493d5d97
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: f2c5154e2f35c57b46817c36ea669c6a9d0f5797
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583999"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493546"
 ---
 # <a name="create-a-multi-container-app-with-docker-compose"></a>Tworzenie aplikacji z wieloma kontenerami przy użyciu narzędzia Docker Compose
 
@@ -27,8 +27,8 @@ W tym samouczku dowiesz się, jak zarządzać więcej niż jednym kontenerem i k
 1. Utwórz nowe rozwiązanie, przechodząc do **pliku > nowe rozwiązanie**.
 1. W obszarze **aplikacja sieci Web i konsola >** wybierz szablon **aplikacji sieci Web** : ![ Utwórz nową aplikację ASP.NET](media/docker-quickstart-1.png)
 1. Wybierz platformę docelową. W tym przykładzie będziemy używać platformy .NET Core 3,1: ![ Ustaw platformę docelową](media/docker-quickstart-2.png)
-1. Wprowadź szczegóły projektu, takie jak nazwa projektu (_DockerDemoFrontEnd_ w tym przykładzie) i nazwa rozwiązania (_DockerDemo_). Utworzony projekt zawiera wszystkie podstawowe informacje niezbędne do kompilowania i uruchamiania witryny sieci Web ASP.NET Core.
-1. W okienko rozwiązania kliknij prawym przyciskiem myszy projekt DockerDemoFrontEnd i wybierz polecenie **dodaj > Dodawanie obsługi platformy Docker**: ![ Dodawanie obsługi platformy Docker](media/docker-quickstart-3.png)
+1. Wprowadź szczegóły projektu, takie jak nazwa projektu ( _DockerDemoFrontEnd_ w tym przykładzie) i nazwa rozwiązania ( _DockerDemo_ ). Utworzony projekt zawiera wszystkie podstawowe informacje niezbędne do kompilowania i uruchamiania witryny sieci Web ASP.NET Core.
+1. W oknie rozwiązanie kliknij prawym przyciskiem myszy projekt DockerDemoFrontEnd i wybierz polecenie **dodaj > Dodaj obsługę platformy Docker** : ![ Dodaj obsługę platformy Docker](media/docker-quickstart-3.png)
 
 Visual Studio dla komputerów Mac automatycznie doda nowy projekt do rozwiązania o nazwie **Docker-Zredaguj** i Dodaj **pliku dockerfile** do istniejącego projektu.
 
@@ -39,8 +39,8 @@ Następnie utworzymy drugi projekt, który będzie pełnić rolę interfejsu API
 1. Dodaj nowy projekt do istniejącego rozwiązania, klikając rozwiązanie prawym przyciskiem myszy i wybierając polecenie **dodaj > Dodaj nowy projekt**.
 1. W obszarze **Sieć Web i konsola > aplikacji** wybierz szablon **interfejsu API** .
 1. Wybierz platformę docelową. W tym przykładzie będziemy używać platformy .NET Core 3,1.
-1. Wprowadź szczegóły projektu, takie jak nazwa projektu (_MyWebAPI_ w tym przykładzie).
-1. Po utworzeniu przejdź do okienko rozwiązania i kliknij prawym przyciskiem myszy projekt MyWebAPI i wybierz polecenie **dodaj > Dodaj obsługę platformy Docker**.
+1. Wprowadź szczegóły projektu, takie jak nazwa projektu ( _MyWebAPI_ w tym przykładzie).
+1. Po utworzeniu przejdź do okna rozwiązanie i kliknij prawym przyciskiem myszy projekt MyWebAPI i wybierz polecenie **dodaj > Dodaj obsługę platformy Docker**.
 
 Plik **Docker-Compose. yml** w projekcie programu **Docker — redagowanie** zostanie automatycznie zaktualizowany w taki sposób, aby obejmował projekt interfejsu API wraz z istniejącym projektem aplikacji sieci Web. Po skompilowaniu i uruchomieniu projektu **platformy Docker —** każdy z tych projektów zostanie wdrożony w osobnym kontenerze platformy Docker.
 
@@ -102,7 +102,7 @@ Mamy teraz dwa projekty ASP.NET w naszym rozwiązaniu, a oba są skonfigurowane 
       </div>
       ```
   
-1. W projektach frontonu i interfejsu API sieci Web Dodaj komentarz do wywołania [Microsoft. AspNetCore. Builder. HttpsPolicyBuilderExtensions. UseHttpsRedirection](/dotnet/api/microsoft.aspnetcore.builder.httpspolicybuilderextensions.usehttpsredirection) w `Configure` metodzie w *Startup.cs*, ponieważ ten przykładowy kod używa protokołu HTTP, a nie https, aby wywołać internetowy interfejs API.
+1. W projektach frontonu i interfejsu API sieci Web Dodaj komentarz do wywołania [Microsoft. AspNetCore. Builder. HttpsPolicyBuilderExtensions. UseHttpsRedirection](/dotnet/api/microsoft.aspnetcore.builder.httpspolicybuilderextensions.usehttpsredirection) w `Configure` metodzie w *Startup.cs* , ponieważ ten przykładowy kod używa protokołu HTTP, a nie https, aby wywołać internetowy interfejs API.
 
       ```csharp
                   //app.UseHttpsRedirection();

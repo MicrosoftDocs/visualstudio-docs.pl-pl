@@ -8,12 +8,12 @@ ms.author: tglee
 author: prnadago
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 71136bb634bd42eaf4933dead8c024b290177da3
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 33606a2b4290735d5c15788a1e6961191d6d92f9
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434704"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493559"
 ---
 # <a name="git-productivity-in-visual-studio"></a>Wydajność usługi Git w programie Visual Studio
 
@@ -94,7 +94,7 @@ Program Visual Studio ułatwia również przekazywanie i synchronizowanie za pom
 :::image type="content" source="media/git-file-version-compare.png" alt-text="Zrzut ekranu przedstawiający porównanie wierszy według wierszy w programie Visual Studio ":::
 
 > [!TIP]
-> Możesz skojarzyć element roboczy usługi Azure DevOps z zatwierdzeniem, używając znaku "#", jeśli masz połączenie z repozytorium usługi Azure DevOps. Repozytorium usługi Azure DevOps można połączyć za pomocą **Team Explorer**  >  **zarządzania połączeniami**.
+> Możesz skojarzyć element roboczy usługi Azure DevOps z zatwierdzeniem za pomocą znaku "#", jeśli masz połączenie z repozytorium usługi Azure DevOps. Repozytorium usługi Azure DevOps można połączyć za pomocą **Team Explorer**  >  **zarządzania połączeniami**.
 
 ### <a name="select-an-existing-branch"></a>Wybierz istniejącą gałąź
 
@@ -180,7 +180,7 @@ Aby spersonalizować i dostosować ustawienia Git na poziomie repozytorium, a ta
 
 :::image type="content" source="media/git-options-settings.png" alt-text="Zrzut ekranu przedstawiający okno dialogowe Opcje, w którym można wybrać ustawienia personalizacji i dostosowywania w środowisku IDE programu Visual Studio ":::
 
-## <a name="how-to-use-legacy-team-explorer-experience-in-visual-studio"></a>Jak korzystać ze starszego środowiska Team Explorer w programie Visual Studio
+## <a name="how-to-use-the-legacy-team-explorer-experience-in-visual-studio"></a>Jak korzystać ze starszego środowiska Team Explorer w programie Visual Studio
 
 Nowe środowisko git to domyślny system kontroli wersji w programie Visual Studio 2019 od [wersji 16,8](/visualstudio/releases/2019/release-notes/) lub nowszej. Jeśli jednak chcesz ją wyłączyć, możesz to zrobić. Przejdź do pozycji **Narzędzia**  >  **Opcje**  >  **środowiska**  >  **Podgląd funkcje** , a następnie przełączenia **nowego środowiska użytkownika git** , które spowoduje przełączenie się z powrotem do starszego środowiska Team Explorer.
 

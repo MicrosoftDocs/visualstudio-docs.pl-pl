@@ -1,20 +1,20 @@
 ---
 title: Wstawki kodu
 description: Jak skutecznie korzystać z fragmentów kodu w programie Visual Studio dla komputerów Mac
-author: cobey
-ms.author: cobey
-ms.date: 02/07/2019
+author: jmatthiesen
+ms.author: jomatthi
+ms.date: 11/09/2020
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
-ms.openlocfilehash: 1dacc935549d738ff1b5e84c3ac4420c343155fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a8fdf70b4d966c644719047eca4249e432561ace
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68787697"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493455"
 ---
 # <a name="code-snippets"></a>Fragmenty kodu
 
-Fragmenty kodu, często nazywane _szablonami kodu_, są przydatne do wydajnego programowania, ponieważ umożliwiają wstawianie i edytowanie wstępnie pisanych bloków kodu. Używanie fragmentów kodu może być wygodne do szybkiego dodawania wspólnych wzorców, a nawet do uczenia się nowych wzorców, gdy Deweloper nie ma pewności składni. Dostępne są szablony dla języków C#, F #, HTML, XML, Python i Razor.
+Fragmenty kodu, często nazywane _szablonami kodu_ , są przydatne do wydajnego programowania, ponieważ umożliwiają wstawianie i edytowanie wstępnie pisanych bloków kodu. Używanie fragmentów kodu może być wygodne do szybkiego dodawania wspólnych wzorców, a nawet do uczenia się nowych wzorców, gdy Deweloper nie ma pewności składni. Dostępne są szablony dla języków C#, F #, HTML, XML, Python i Razor.
 
 W tej sekcji wyjaśniono, jak tworzyć, wstawiać i używać fragmentów kodu.
 
@@ -22,21 +22,21 @@ W tej sekcji wyjaśniono, jak tworzyć, wstawiać i używać fragmentów kodu.
 
 Istnieją różne sposoby dodawania fragmentów kodu, z których niektóre zostały opisane poniżej:
 
-- **Rozszerzanie karty** &ndash; Rozpocznij wpisywanie nazwy szablonu, wybierz ją z listy i naciśnij klawisz **Tab**, **Aby ją** dodać:
+- **Rozszerzanie karty** &ndash; Rozpocznij wpisywanie nazwy szablonu, wybierz ją z listy i naciśnij klawisz **Tab** , **Aby ją** dodać:
 
   ![Rozszerzanie karty w kodzie](media/source-editor-image13.png)
 
-- **Zestaw narzędzi** &ndash; Użyj konsoli przybornika, aby wyświetlić listę wszystkich fragmentów kodu. Przeciągnij dowolny szablon z przybornika do poprawnego położenia w kodzie źródłowym:
+- **Zestaw narzędzi** &ndash; Użyj okna przybornika, aby wyświetlić listę wszystkich fragmentów kodu. Przeciągnij dowolny szablon z przybornika do poprawnego położenia w kodzie źródłowym:
 
   [![Fragmenty kodu w przyborniku](media/source-editor-image14-sml.png)](media/source-editor-image14.png#lightbox)
 
-- **Wstawianie szablonów — polecenie** &ndash; Obecnie nie ma żadnego zestawu powiązań kluczy domyślnych na potrzeby wstawiania szablonu. Aby go utworzyć, przejdź do **okna preferencji > programu Visual Studio > powiązania kluczy** i wyszukaj ciąg `template` . Pozwala to na dodawanie odpowiedniego powiązania klucza do pola Edytuj powiązanie, a następnie kliknięcie przycisku **Zastosuj**:
+- **Wstawianie szablonów — polecenie** &ndash; Obecnie nie ma żadnego zestawu powiązań kluczy domyślnych na potrzeby wstawiania szablonu. Aby go utworzyć, przejdź do **okna preferencji > programu Visual Studio > powiązania kluczy** i wyszukaj ciąg `template` . Pozwala to na dodawanie odpowiedniego powiązania klucza do pola Edytuj powiązanie, a następnie kliknięcie przycisku **Zastosuj** :
 
   ![Powstawanie polecenia szablonu](media/source-editor-image15.png)
 
 ## <a name="creating-a-new-template"></a>Tworzenie nowego szablonu
 
-Chociaż istnieje wiele istniejących szablonów w różnych językach, których można użyć i edytować, można również dodać nowe szablony, przechodząc do **> preferencji programu Visual Studio > edytorze tekstu > fragmenty kodu**:
+Chociaż istnieje wiele istniejących szablonów w różnych językach, których można użyć i edytować, można również dodać nowe szablony, przechodząc do **> preferencji programu Visual Studio > edytorze tekstu > fragmenty kodu** :
 
 ![Wstawanie nowego szablonu](media/source-editor-image12.png)
 

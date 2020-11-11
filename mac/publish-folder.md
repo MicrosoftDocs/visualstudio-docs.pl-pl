@@ -1,6 +1,7 @@
 ---
 title: Publikowanie w folderze
-ms.date: 04/02/2019
+description: Jak opublikować aplikację sieci Web w folderze przy użyciu Visual Studio dla komputerów Mac.
+ms.date: 11/09/2020
 helpviewer_keywords:
 - deployment, website, console, publish
 ms.assetid: e963fb4b-6d32-4d45-86bb-ef7e4d3028b0
@@ -9,12 +10,12 @@ ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
 ms.topic: how-to
-ms.openlocfilehash: 42d1d76275afd4944791137b97e04dd499e36083
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 640cdf8b9c31bad42f8c5664f3cef44c558e2a3a
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583947"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493416"
 ---
 # <a name="publish-to-a-folder-using-visual-studio-for-mac"></a>Publikowanie w folderze przy użyciu Visual Studio dla komputerów Mac
 
@@ -23,13 +24,13 @@ Za pomocą narzędzia do publikowania można opublikować konsolę .NET Core lub
 ## <a name="prerequisites"></a>Wymagania wstępne
 
 - [Program Visual Studio 2019 for Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) został zainstalowany z włączonym platformą .NET Core.
-- Konsola .NET Core lub projekt ASP.NET Core. Jeśli nie masz jeszcze projektu, możesz [utworzyć nowy](./create-new-projects.md?view=vsmac-2019).
+- Konsola .NET Core lub projekt ASP.NET Core. Jeśli nie masz jeszcze projektu, możesz [utworzyć nowy](./create-new-projects.md).
 
 ## <a name="publish-to-folder"></a>Publikowanie w folderze
 
 Za pomocą Visual Studio dla komputerów Mac można opublikować projekty platformy .NET Core w folderze za pomocą narzędzia do publikowania. Po opublikowaniu w folderze można przenieść pliki do innego środowiska. Aby opublikować w folderze, wykonaj następujące kroki.
 
- 1. W okienko rozwiązania kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Publikuj**.
+ 1. W oknie rozwiązanie kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Publikuj**.
 
     ![Menu kontekstowe publikowania](media/publish-context-menu.png)
 

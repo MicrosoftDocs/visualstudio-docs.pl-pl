@@ -1,18 +1,19 @@
 ---
 title: Narzędzia do testowania Visual Studio dla komputerów Mac
-ms.date: 08/03/2020
+description: Tworzenie i uruchamianie testów przy użyciu Visual Studio dla komputerów Mac.
+ms.date: 11/09/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - testing tools [Visual Studio for Mac]
 - unit tests [Visual Studio for Mac]
 ms.author: jomatthi
 author: jmatthiesen
-ms.openlocfilehash: 758bdcb0d854247847e4d0d56152840643402bf4
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 3956c3158fd4ec1ad32b76882ac3f9d4cf1ea9bf
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91580964"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493390"
 ---
 # <a name="testing-tools-in-visual-studio-for-mac"></a>Narzędzia do testowania w Visual Studio dla komputerów Mac
 
@@ -27,7 +28,7 @@ Aby rozpocząć testowanie, możesz utworzyć nowy projekt testowy w rozwiązani
 > Aby uzyskać więcej informacji na temat testowania jednostkowego aplikacji platformy .NET Core i wybierania platform testów jednostkowych, zobacz [testy jednostkowe w programie .NET Core i w .NET Standard](/dotnet/core/testing/?pivots=xunit) dokumentacji.
 
 ## <a name="running-tests"></a>Uruchamianie testów
-Okno **testy jednostkowe** służy do uruchamiania testów jednostkowych i jest otwierane za pomocą menu **Widok > konsole > testy jednostkowe** . Testy jednostkowe w rozwiązaniu są automatycznie wykrywane i wyświetlane w tym oknie, w którym można uruchomić wszystkie testy lub zestaw testów, które zostały wybrane.
+Okno **testy jednostkowe** służy do uruchamiania testów jednostkowych i jest otwierane za pomocą menu **Widok > testy** . Testy jednostkowe w rozwiązaniu są automatycznie wykrywane i wyświetlane w tym oknie, w którym można uruchomić wszystkie testy lub zestaw testów, które zostały wybrane.
 
 ![Okno testowe pokazujące listę testów jednostkowych i pasek narzędzi służący do uruchamiania lub zatrzymywania testów.](media/test-window.PNG)
 

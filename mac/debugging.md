@@ -7,16 +7,16 @@ ms.date: 5/13/2020
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
 ms.topic: overview
-ms.openlocfilehash: 09a761a8269fa40c3fab49a34b3e43a7f0ec63cd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 04fae5874a4fefcb51bdef8b00c8cb3b7171057e
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85939078"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493260"
 ---
 # <a name="debugging-with-visual-studio-for-mac"></a>Debugowanie za pomocą Visual Studio dla komputerów Mac
 
-Visual Studio dla komputerów Mac ma debugery z obsługą aplikacji .Net Core, .NET Framework, Unity i Xamarin.
+Visual Studio dla komputerów Mac ma debugery z obsługą aplikacji .NET Core, .NET Framework, Unity i Xamarin.
 
 Visual Studio dla komputerów Mac używa [*debugera miękkiego mono*](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger/), który jest implementowany w środowisku uruchomieniowym mono, umożliwiając Visual Studio dla komputerów Mac Debugowanie kodu zarządzanego na wszystkich platformach.
 
@@ -40,7 +40,7 @@ Aby ustawić punkt przerwania w środowisku IDE, kliknij obszar marginesu w edyt
 
 ![Ustawianie punktu przerwania na marginesie](media/debugging-image0.png)
 
-Wszystkie punkty przerwania, które zostały ustawione w kodzie, można wyświetlić, przechodząc do  **konsoli punkty przerwania**:
+Wszystkie punkty przerwania, które zostały ustawione w kodzie, można wyświetlić, przechodząc do  **okna punkty przerwania** :
 
 ![Lista punktów przerwania](media/debugging-image0a.png)
 
@@ -61,15 +61,15 @@ Aby uzyskać więcej informacji na temat tego, co dzieje się w kodzie, można u
 
 ## <a name="conditional-breakpoints"></a>Warunkowe punkty przerwania
 
-Można również ustawić reguły określające sytuacje, w których powinien wystąpić punkt przerwania, tak jak w przypadku dodawania *warunkowego punktu przerwania*. Aby ustawić warunkowy punkt przerwania, uzyskaj dostęp do  **okno właściwości punktu przerwania**, który można wykonać na dwa sposoby:
+Można również ustawić reguły określające sytuacje, w których powinien wystąpić punkt przerwania, tak jak w przypadku dodawania *warunkowego punktu przerwania*. Aby ustawić warunkowy punkt przerwania, uzyskaj dostęp do  **okno właściwości punktu przerwania** , który można wykonać na dwa sposoby:
 
 * Aby dodać nowy warunkowy punkt przerwania, kliknij prawym przyciskiem myszy na marginesie edytora, po lewej stronie numeru wiersza dla kodu, dla którego chcesz ustawić punkt przerwania, a następnie wybierz polecenie Nowy punkt przerwania:
 
  ![Menu kontekstowe punktu przerwania](media/debugging-image4.png)
 
-* Aby dodać warunek do istniejącego punktu przerwania, kliknij prawym przyciskiem myszy punkt przerwania i wybierz polecenie  **właściwości punktu przerwania**, lub w  **konsoli punkty przerwania**wybierz przycisk Edytuj punkt przerwania przedstawiony poniżej:
+* Aby dodać warunek do istniejącego punktu przerwania, kliknij prawym przyciskiem myszy punkt przerwania i wybierz polecenie  **właściwości punktu przerwania** , lub w  **oknie punkty przerwania** wybierz przycisk Edytuj punkt przerwania przedstawiony poniżej:
 
- ![Edytuj istniejący punkt przerwania w konsoli punkty przerwania](media/debugging-image5.png)
+ ![Edytuj istniejący punkt przerwania w oknie punkty przerwania](media/debugging-image5.png)
 
 Następnie możesz wprowadzić warunek, pod którym ma nastąpić punkt przerwania:
 
@@ -103,7 +103,7 @@ Produkty platformy Xamarin są dostarczane z kodem źródłowym dla bibliotek kl
 
 Ponieważ ta funkcja zużywa więcej pamięci podczas debugowania, jest domyślnie wyłączona.
 
-Aby włączyć tę funkcję, przejdź do **Visual Studio dla komputerów Mac > preferencji > debuger** i upewnij się, że **wybrano**opcję "**Wkrocz do kodu zewnętrznego**", jak pokazano poniżej:
+Aby włączyć tę funkcję, przejdź do **Visual Studio dla komputerów Mac > preferencji > debuger** i upewnij się, że **wybrano** opcję " **Wkrocz do kodu zewnętrznego** ", jak pokazano poniżej:
 
 ![Opcja do kodu zewnętrznego](media/debugging-image8.png)
 

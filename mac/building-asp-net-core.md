@@ -1,17 +1,17 @@
 ---
 title: Kompilowanie aplikacji ASP.NET Core
-description: W tym artykule opisano, jak rozpocząć pracę z usługą ASP.NET w Visual Studio dla komputerów Mac, w tym instalację i tworzenie nowego projektu.
+description: W tym artykule omówiono tworzenie i eksplorowanie ASP.NET Core aplikacji z Visual Studio dla komputerów Mac.
 author: sayedihashimi
 ms.author: sayedha
 ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
 ms.topic: how-to
-ms.openlocfilehash: 47ddfa11b4c05896037c1fb18e285d46fc79520b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 22dfa4a33005afd64be54828f3b49c45244779d2
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88214621"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493507"
 ---
 # <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>Tworzenie aplikacji platformy ASP.NET Core w programie Visual Studio dla komputerów Mac
 
@@ -80,15 +80,15 @@ To laboratorium jest przeznaczone dla deweloperów, którzy znają język C#, ch
 
 ## <a name="task-3-understanding-how-the-application-is-hosted"></a>Zadanie 3: zrozumienie, w jaki sposób aplikacja jest hostowana
 
-1. W **Eksplorator rozwiązań**Otwórz **program.cs**. Jest to program inicjujący, na którym będzie uruchamiana aplikacja.
+1. W **Eksplorator rozwiązań** Otwórz **program.cs**. Jest to program inicjujący, na którym będzie uruchamiana aplikacja.
 
     ![Zrzut ekranu rozwiązania z plikiem źródłowym C# o nazwie program wybrany.](media/netcore-image10.png)
 
-2. Chociaż w tym miejscu istnieje tylko dwa wiersze kodu, są one istotne. Podziel się nimi. Najpierw zostanie utworzony nowy **WebHostBuilder** . Aplikacje ASP.NET Core wymagają hosta, który ma zostać uruchomiony. Host musi implementować interfejs **IWebHost** , który uwidacznia kolekcje funkcji i usług oraz metodę **startową** . Host jest zwykle tworzony przy użyciu wystąpienia **WebHostBuilder**, które kompiluje i zwraca wystąpienie **webhost** . Serwer **webhost** odwołuje się do serwera, który będzie obsługiwał żądania.
+2. Chociaż w tym miejscu istnieje tylko dwa wiersze kodu, są one istotne. Podziel się nimi. Najpierw zostanie utworzony nowy **WebHostBuilder** . Aplikacje ASP.NET Core wymagają hosta, który ma zostać uruchomiony. Host musi implementować interfejs **IWebHost** , który uwidacznia kolekcje funkcji i usług oraz metodę **startową** . Host jest zwykle tworzony przy użyciu wystąpienia **WebHostBuilder** , które kompiluje i zwraca wystąpienie **webhost** . Serwer **webhost** odwołuje się do serwera, który będzie obsługiwał żądania.
 
     ![Zrzut ekranu przedstawiający metodę Main języka C# z instrukcją, która inicjuje zmienną o nazwie host z typem WebHostBuilder.](media/netcore-image11.png)
 
-3. Mimo że **WebHostBuilder** jest odpowiedzialny za utworzenie hosta, który będzie mógł zainicjować serwer dla aplikacji, wymaga podania serwera implementującego **IServer**. Domyślnie jest to **[Kestrel](/aspnet/core/fundamentals/servers/kestrel)**, wieloplatformowy serwer sieci web dla ASP.NET Core oparty na **libuv**, który jest międzyplatformową biblioteką asynchronicznych operacji we/wy.
+3. Mimo że **WebHostBuilder** jest odpowiedzialny za utworzenie hosta, który będzie uruchamiał serwer dla aplikacji, wymaga podania serwera, który implementuje **`IServer`** . Domyślnie jest to **[Kestrel](/aspnet/core/fundamentals/servers/kestrel)** , wieloplatformowy serwer sieci web dla ASP.NET Core oparty na **libuv** , który jest międzyplatformową biblioteką asynchronicznych operacji we/wy.
 
     ![Zrzut ekranu przedstawiający podstawową metodę języka C# wyróżnienie zmiennej hosta ustawiającej serwer przy użyciu metody UseKestrel.](media/netcore-image12.png)
 
@@ -108,25 +108,25 @@ To laboratorium jest przeznaczone dla deweloperów, którzy znają język C#, ch
 
     ![Zrzut ekranu przedstawiający podstawową metodę języka C# wyróżnienie zmiennej hosta za pomocą metody Build.](media/netcore-image16.png)
 
-8. Gdy klasy **IWebHost** są wymagane do zaimplementowania **uruchamiania**bez blokowania, ASP.NET Core projekty mają metodę rozszerzającą o nazwie **Run** , która zawija **się od kodu** blokującego, więc nie trzeba ręcznie blokować metody od razu.
+8. Gdy klasy **IWebHost** są wymagane do zaimplementowania **uruchamiania** bez blokowania, ASP.NET Core projekty mają metodę rozszerzającą o nazwie **Run** , która zawija **się od kodu** blokującego, więc nie trzeba ręcznie blokować metody od razu.
 
     ![Zrzut ekranu przedstawiający metodę Main języka C# z wyróżnieniem przebiegu punktu hosta instrukcji.](media/netcore-image17.png)
 
 ## <a name="task-4-running-and-debugging-the-application"></a>Zadanie 4. Uruchamianie i debugowanie aplikacji
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł projektu **CoreLab** i wybierz polecenie **Opcje**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł projektu **CoreLab** i wybierz polecenie **Opcje**.
 
     ![Zrzut ekranu przedstawiający menu kontekstowe dla rozwiązania CoreLab, wyróżnianie opcji.](media/netcore-image18.png)
 
 2. Okno dialogowe **Opcje projektu** zawiera wszystko, czego potrzebujesz, aby dostosować sposób kompilowania i uruchamiania aplikacji. Wybierz węzeł **Uruchom konfiguracje > > default** z panelu po lewej stronie.
 
-3. Zaznacz opcję **Uruchom w konsoli zewnętrznej** i usuń zaznaczenie pola **Wstrzymaj dane wyjściowe konsoli**. Zwykle aplikacja samodzielnie hostowana nie będzie miała widocznej konsoli, ale zamiast tego rejestruje wyniki w konsoli **wyjściowej** . Na potrzeby tego laboratorium zobaczymy go również w osobnym oknie, chociaż nie trzeba tego robić podczas normalnego opracowywania.
+3. Zaznacz opcję **Uruchom w konsoli zewnętrznej** i usuń zaznaczenie pola **Wstrzymaj dane wyjściowe konsoli**. Zwykle aplikacja samodzielnie hostowana nie będzie miała widocznej konsoli, ale zamiast tego rejestruje wyniki w oknie **danych wyjściowych** . Na potrzeby tego laboratorium zobaczymy go również w osobnym oknie, chociaż nie trzeba tego robić podczas normalnego opracowywania.
 
 4. Kliknij przycisk **OK**.
 
     ![Zrzut ekranu przedstawiający kartę Konfiguracja ogólna uruchamiania z opcją Uruchom w konsoli zewnętrznej i Wstrzymaj dane wyjściowe konsoli nie zostały wybrane.](media/netcore-image19.png)
 
-5. Naciśnij klawisz **F5**, aby skompilować i uruchomić aplikację. Alternatywnie możesz wybrać polecenie **uruchom > Rozpocznij debugowanie**.
+5. Naciśnij klawisz **F5** , aby skompilować i uruchomić aplikację. Alternatywnie możesz wybrać polecenie **uruchom > Rozpocznij debugowanie**.
 
 6. Visual Studio dla komputerów Mac uruchomi dwa okna. Pierwszym z nich jest okno konsoli, które udostępnia widok aplikacji serwera samoobsługowego.
 
@@ -174,7 +174,7 @@ To laboratorium jest przeznaczone dla deweloperów, którzy znają język C#, ch
 
 ## <a name="task-5-application-startup-configuration"></a>Zadanie 5. Konfiguracja uruchamiania aplikacji
 
-1. W **Eksplorator rozwiązań**Otwórz **Startup.cs**. Możesz zauważyć, że niektóre czerwone zygzaky początkowo jako pakiety NuGet są przywracane w tle, a kompilator Roslyn tworzy pełny obraz zależności projektu.
+1. W **Eksplorator rozwiązań** Otwórz **Startup.cs**. Możesz zauważyć, że niektóre czerwone zygzaky początkowo jako pakiety NuGet są przywracane w tle, a kompilator Roslyn tworzy pełny obraz zależności projektu.
 
     ![Zrzut ekranu rozwiązania z plikiem klasy C# o nazwie Startup Selected.](media/netcore-image29.png)
 
@@ -190,7 +190,7 @@ To laboratorium jest przeznaczone dla deweloperów, którzy znają język C#, ch
 
     ![Zrzut ekranu przedstawiający metodę uruchamiania pokazującą zmienną konstruktora przy użyciu metody AddJsonFile, aby dodać plik JSON o nazwie appSettings.](media/netcore-image32.png)
 
-5. Następnie próbuje załadowaćappsettings.jsspecyficzne dla środowiska ** w** pliku, co spowodowałoby zastąpienie istniejących ustawień. Na przykład jest to podano **appsettings.Development.jsw** pliku używanym dla danego środowiska. Aby dowiedzieć się więcej na temat konfiguracji w ASP.NET Core, zapoznaj [się z](/aspnet/core/fundamentals/configuration)dokumentacją.
+5. Następnie próbuje załadowaćappsettings.jsspecyficzne dla środowiska **w** pliku, co spowodowałoby zastąpienie istniejących ustawień. Na przykład jest to podano **appsettings.Development.jsw** pliku używanym dla danego środowiska. Aby dowiedzieć się więcej na temat konfiguracji w ASP.NET Core, zapoznaj [się z](/aspnet/core/fundamentals/configuration)dokumentacją.
 
     ![Zrzut ekranu przedstawiający metodę uruchamiania pokazującą zmienną konstruktora przy użyciu metody AddJsonFile, aby dodać plik JSON specyficzny dla środowiska.](media/netcore-image34.png)
 
@@ -200,7 +200,7 @@ To laboratorium jest przeznaczone dla deweloperów, którzy znają język C#, ch
 
 ## <a name="task-6-inserting-application-middleware"></a>Zadanie 6. Wstawianie oprogramowania pośredniczącego aplikacji
 
-1. Znajdź metodę **Configure** w klasie **Startup** . Jest to miejsce, w którym skonfigurowano wszystkie oprogramowanie pośredniczące, aby można je było wstawić do potoku HTTP i użyć do przetwarzania każdego żądania do serwera. Chociaż ta metoda jest wywoływana tylko raz, zawartość metod (takich jak **UseStaticFiles**) może być wykonywana dla każdego żądania.
+1. Znajdź metodę **Configure** w klasie **Startup** . Jest to miejsce, w którym skonfigurowano wszystkie oprogramowanie pośredniczące, aby można je było wstawić do potoku HTTP i użyć do przetwarzania każdego żądania do serwera. Chociaż ta metoda jest wywoływana tylko raz, zawartość metod (takich jak **UseStaticFiles** ) może być wykonywana dla każdego żądania.
 
     ![Zrzut ekranu przedstawiający metodę Configure w klasie uruchomieniowej.](media/netcore-image36.png)
 
@@ -218,7 +218,7 @@ To laboratorium jest przeznaczone dla deweloperów, którzy znają język C#, ch
 
 4. Możemy użyć przeglądarki do sprawdzenia nagłówków, aby sprawdzić, czy są one dodawane. Poniższe instrukcje dotyczą programu Safari, ale można to zrobić w przeglądarce [Chrome](https://stackoverflow.com/questions/4423061/view-http-headers-in-google-chrome) lub [Firefox](https://stackoverflow.com/questions/33974595/in-firefox-how-do-i-see-http-request-headers-where-in-web-console).
 
-5. Gdy przeglądarka załaduje lokację, wybierz pozycję **Safari > Preferences (Preferencje**).
+5. Gdy przeglądarka załaduje lokację, wybierz pozycję **Safari > Preferences (Preferencje** ).
 
 6. Na karcie **Zaawansowane** zaznacz opcję **Pokaż menu rozwijane na pasku menu** , a następnie zamknij okno dialogowe.
 

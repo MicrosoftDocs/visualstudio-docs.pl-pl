@@ -6,22 +6,22 @@ ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
 ms.topic: overview
-ms.openlocfilehash: d082cd5efbb41c6f20bc0abb8e5de9b3a25186ba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1da1fc5145e5fd4a2f271b30ac42204c2aa611e5
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800193"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493351"
 ---
 # <a name="accessibility"></a>Ułatwienia dostępu
 
-Istnieje wiele narzędzi i funkcji ułatwień dostępu wbudowanych bezpośrednio w macOS, które ułatwią korzystanie z Visual Studio dla komputerów Mac.  Oprócz tych Visual Studio dla komputerów Mac ma także następujące funkcje, aby zwiększyć ich dostępność dla osób z różnymi możliwościami:
+Istnieje wiele narzędzi i funkcji ułatwień dostępu wbudowanych bezpośrednio w macOS, które ułatwiają korzystanie z Visual Studio dla komputerów Mac.  Oprócz tych Visual Studio dla komputerów Mac ma także następujące funkcje, aby zwiększyć ich dostępność dla osób z różnymi możliwościami:
 
 * Rozszerzenie tekstu edytora
-* Rozszerzenie tekstu do uzupełniania
+* Rozszerzenie tekstu okna narzędziowego
 * Dostosowywanie motywu kolorów edytora kodu
 * Dostosowywanie skrótu klawiaturowego
-* Nawigacja za pomocą klawiatury
+* Nawigacja przy użyciu klawiatury
 
 > [!NOTE]
 > Ten przewodnik odnosi się do Visual Studio dla komputerów Mac. W przypadku programu Visual Studio w systemie Windows Zobacz [funkcje ułatwień dostępu w programie Visual Studio](/visualstudio/ide/reference/accessibility-features-of-visual-studio).

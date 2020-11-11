@@ -3,15 +3,15 @@ title: Zarządzanie odwołaniami w projekcie
 description: W tym artykule opisano sposób zarządzania odwołaniami w projekcie w Visual Studio dla komputerów Mac
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 05/06/2018
+ms.date: 11/09/2020
 ms.assetid: 4AD51385-B0A8-4BA7-B2D4-BF2BD167A142
 ms.topic: overview
-ms.openlocfilehash: 28ea53826a19a9ec97349060702cf13c68342ad2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41d49fe6b23818f3cb9de8dec72462d4b2029bb6
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85939000"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493520"
 ---
 # <a name="managing-references-in-a-project"></a>Zarządzanie odwołaniami w projekcie
 
@@ -21,7 +21,7 @@ Visual Studio dla komputerów Mac zapewnia dwa sposoby dodawania dodatkowych odw
 
 Są to:
 
-* Dokumentacja
+* Odwołania
 * Pakiety NuGet (dodane za pośrednictwem folderu Packages)
 
 Ponadto odwołania sieci Web i natywne odwołania można także dodać do każdego projektu.
@@ -40,7 +40,7 @@ Aby uzyskać informacje na temat zestawów dostępnych dla poszczególnych platf
 
 Pakiet NuGet jest najpopularniejszym menedżerem pakietów na potrzeby programowania na platformie .NET. Obsługa NuGet Visual Studio dla komputerów Mac umożliwia wyszukiwanie pakietów, które mają zostać dodane do projektu.
 
-W tym celu kliknij prawym przyciskiem myszy folder **Package** w okienko rozwiązania, a następnie wybierz pozycję Dodaj pakiety.
+W tym celu kliknij prawym przyciskiem myszy folder **Package** w oknie rozwiązanie, a następnie wybierz pozycję Dodaj pakiety.
 
 Więcej informacji na temat korzystania z pakietu NuGet znajduje się w temacie [zawierającym pakiet NuGet w](nuget-walkthrough.md) przewodniku po projekcie.
 

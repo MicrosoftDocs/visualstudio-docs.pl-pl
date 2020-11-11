@@ -3,28 +3,28 @@ title: Debugowanie — wizualizacje danych
 description: Debugowanie jest powszechną i niezbędną częścią programowania. Visual Studio dla komputerów Mac zawiera cały zestaw funkcji, które ułatwiają debugowanie. Ten artykuł przegląda różne wizualizacje danych, które mogą być wyświetlane podczas przeprowadzania inspekcji obiektów w debugerze.
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 05/06/2018
+ms.date: 11/09/2020
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.openlocfilehash: 14696040160dfc33f89b7647fb73b116b41afa16
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 838762435268ea06c09392475f294dbb22c3038d
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67691733"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493247"
 ---
 # <a name="data-visualizations"></a>Wizualizacja danych
 
 Visual Studio dla komputerów Mac obejmuje obsługę interfejsu użytkownika dla debugera, umożliwiając wizualizacje wartości zmiennych, pól lub właściwości podczas debugowania. Te Wizualizatory danych pokazują rozszerzoną wersję danych i umożliwiają deweloperom inspekcję znanych struktur, na przykład pokazując Kolor struktury koloru.
 
-Wizualizatory w konsoli  **lokalnej** debugowania można wyświetlić, klikając ikonę podglądu wyświetlaną po prawej stronie wartości, gdy użytkownik umieści wskaźnik myszy nad wierszem:
+Wizualizatory w oknie  **Ustawienia regionalne** debugowania można wyświetlić, klikając ikonę podglądu wyświetlaną po prawej stronie wartości, gdy użytkownik umieści wskaźnik myszy nad wierszem:
 
-![Konsola lokalna](media/data-visualizations-image9.png)
+![Okno zmiennych lokalnych](media/data-visualizations-image9.png)
 
 Poniższa lista szuka wielu nowych wizualizacji dostępnych podczas debugowania w Visual Studio dla komputerów Mac.
 
 ## <a name="point"></a>Moment
-Punkt/przedstawiającą punkt, lub CGPoint w systemach iOS i Mac, będzie renderowany jako krotka pokazująca wartości X i Y w konsoli debugowania:
+Punkt/przedstawiającą punkt, lub CGPoint w systemach iOS i Mac, będzie renderowany jako krotka pokazująca wartości X i Y w oknach debugowania:
 
 ![Wizualizacja punktu](media/data-visualizations-image10.png)
 
@@ -43,7 +43,7 @@ Współrzędne są kreślone na mapie, z lokalizacją przypiętą do centrum:
 
 [Wizualizacja współrzędnej](media/data-visualizations-image13.png)
 
-## <a name="color"></a>Kolor
+## <a name="color"></a>Color (Kolor)
 Spowoduje to wyświetlenie właściwości UIColor, CGColor i Color, przedstawiających Podgląd kolorów, składniki RGBA, wartości jasności i nasycenie oraz wartość szesnastkową koloru:
 
 ![Wizualizacja kolorów](media/data-visualizations-image14.png)
@@ -60,7 +60,7 @@ Wizualizator wyświetli `NSBezierPath` :
 
 ![Wizualizacja krzywej Beziera](media/data-visualizations-image16.png)
 
-## <a name="string"></a>String
+## <a name="string"></a>Ciąg
 
 Ciąg krótszy niż 100 znaków jest wyświetlany w całości bez podglądu. Dłuższe ciągi są wyświetlane w pełnej wersji zapoznawczej. Ciągi można edytować, a wizualizator towarzyszy przyciskowi edycji, co pozwala na edytowanie wartości ciągu w podglądzie lub w edytorze wartości ciągów, jak pokazano poniżej:
 
