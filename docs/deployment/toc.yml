@@ -24,7 +24,9 @@
           href: /dotnet/core/deploying/deploy-with-vs
         - name: Tworzenie pakietu aplikacji klasycznej dla sklepu Microsoft Store
           href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
-        - name: Wdrażanie aplikacji klasycznej za pomocą technologii ClickOnce
+        - name: Wdrażanie aplikacji systemu Windows na platformie .NET przy użyciu technologii ClickOnce
+          href: quickstart-deploy-using-clickonce-folder.md
+        - name: Wdrażanie aplikacji klasycznej programu .NET Framework za pomocą technologii ClickOnce
           href: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
         - name: Tworzenie aplikacji ClickOnce z wiersza poleceń
           href: building-clickonce-applications-from-the-command-line.md
