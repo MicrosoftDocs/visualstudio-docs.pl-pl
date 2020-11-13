@@ -1,7 +1,7 @@
 ---
 title: wsl-install
 description: devinit narzędzie WSL — Zainstaluj.
-ms.date: 08/28/2020
+ms.date: 11/10/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,18 +11,19 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 3283b6e90cb2bced27f09b8c4491992fb5ac315f
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: ab63b5feb8c71659b83e824f104dd7bbcbb744f9
+ms.sourcegitcommit: 62f91179f2c3a51c85dd7b0e6172a3a53393fb7e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400179"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94567014"
 ---
 # <a name="wsl-install"></a>wsl-install
 
 `wsl-install`Narzędzie to służy do instalowania dystrybucje systemu Linux dla [podsystemu Windows w systemie Linux](/windows/wsl/) (WSL).
 
-`wsl-install`Narzędzie wymaga, aby WSL 2 było już włączone w systemie Windows. Jeśli z jakiegoś powodu WSL2 nie jest włączona, można włączyć WSL2 przy użyciu narzędzia [WindowsFeature-Enable](tool-windowsfeature-enable.md) i nazwy funkcji `Microsoft-Windows-Subsystem-Linux` .
+> [!IMPORTANT]
+> `wsl-install`Narzędzie wymaga, aby WSL 2 było już włączone w systemie Windows. Jeśli z jakiegoś powodu WSL 2 nie jest włączona, możesz wykonać czynności opisane w [dokumentacji programu WSL Install](https://docs.microsoft.com/windows/wsl/install-win10). Można również użyć narzędzia [WindowsFeature-Enable](tool-windowsfeature-enable.md) , aby włączyć wszystkie potrzebne funkcje systemu Windows.
 
 ## <a name="usage"></a>Użycie
 
