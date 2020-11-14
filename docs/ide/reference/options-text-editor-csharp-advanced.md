@@ -1,6 +1,6 @@
 ---
 title: Opcje, edytor tekstu, C#, zaawansowane
-ms.date: 08/12/2020
+ms.date: 11/13/2020
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
@@ -10,16 +10,16 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b8e515058b17205a65bab401c7b31c7205aa55bc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: acd04f80d5ade3a4afea418def69d4bbb6e20fa0
+ms.sourcegitcommit: c1cc3d8e1673c52fbfddc86b089b4a3d46bb3e59
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88214666"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94626200"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opcje, edytor tekstu, C#, zaawansowane
 
-Na stronie opcje **Zaawansowane** można modyfikować ustawienia formatowania edytora, refaktoryzacji kodu i komentarzy dokumentacji XML dla języka C#. Aby uzyskać dostęp do tej strony opcji **Tools**, wybierz  >  **Opcje**narzędzia, a następnie wybierz **Edytor tekstu**  >  **C#**  >  **Advanced**.
+Na stronie opcje **Zaawansowane** można modyfikować ustawienia formatowania edytora, refaktoryzacji kodu i komentarzy dokumentacji XML dla języka C#. Aby uzyskać dostęp do tej strony opcji **Tools** , wybierz  >  **Opcje** narzędzia, a następnie wybierz **Edytor tekstu**  >  **C#**  >  **Advanced**.
 
 > [!NOTE]
 > Nie wszystkie opcje mogą być wyświetlane w tym miejscu.
@@ -134,6 +134,12 @@ Zaznacz te pola wyboru, aby wyświetlić kropkowane linie pionowe między nawias
     Po wybraniu wstawia wskazówki dotyczące nazw parametrów dla literałów, literałów rzutowania i wystąpień obiektów przed każdym argumentem w wywołaniach funkcji.  
     
     ![Wskazówki dotyczące nazwy parametru wbudowanego dla CSharp](media/inline-parameter-name-hints-csharp.png)
+
+- Wskazówki dotyczące typu wbudowanego 
+    
+    Po wybraniu wstawia wskazówki typu dla zmiennych z typami wywnioskowanych i typami parametrów lambda.  
+    
+    ![Wskazówki dotyczące typu wbudowanego dla CSharp](media/inline-type-hints-csharp.png)
 ::: moniker-end
 - Generuj komentarze dokumentacji XML dla///
 

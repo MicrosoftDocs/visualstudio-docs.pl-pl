@@ -7,16 +7,16 @@ ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.topic: how-to
-ms.openlocfilehash: 69ecab4f4d3dd7d99821b384dbda0c8986297282
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: f3c1c528e9201c66bc566f9867f8325c653700b9
+ms.sourcegitcommit: f915322d60182143da7036893d2941bc200cf439
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94492844"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "94575544"
 ---
 # <a name="introduction-to-azure-functions"></a>Wprowadzenie do usługi Azure Functions
 
-Usługa Azure Functions to sposób tworzenia i uruchamiania fragmentów kodu opartych na zdarzeniach — w chmurze, bez konieczności jawnego udostępniania infrastruktury ani zarządzania nią. Aby uzyskać więcej informacji na temat Azure Functions, zobacz [dokumentację Azure Functions](/azure/azure-functions/).
+Azure Functions to sposób tworzenia i uruchamiania fragmentów kodu opartych na zdarzeniach — w chmurze, bez konieczności jawnego udostępniania infrastruktury ani zarządzania nią. Aby uzyskać więcej informacji na temat Azure Functions, zobacz [dokumentację Azure Functions](/azure/azure-functions/).
 
 ## <a name="requirements"></a>Wymagania
 
@@ -29,15 +29,15 @@ Aby tworzyć i wdrażać funkcje, należy również uzyskać subskrypcję platfo
 1. W Visual Studio dla komputerów Mac wybierz pozycję **plik > nowe rozwiązanie**.
 2. W oknie dialogowym Nowy projekt wybierz szablon Azure Functions w obszarze **Cloud > ogólne** , a następnie kliknij przycisk **dalej** :
 
-    ![Okno dialogowe Nowy projekt z opcją Azure Functions](media/azure-functions-image1.png)
+    ![Okno dialogowe Nowy projekt z pokazywaniem opcji Azure Functions](media/azure-functions-image1.png)
 
 3. Wybierz początkowy szablon Azure Functions, którego chcesz użyć, wprowadź nazwę funkcji, a następnie kliknij przycisk **dalej**.
 
-    ![Okno dialogowe Nowy projekt z szablonami usługi Azure Functions](media/azure-functions-image2.png)
+    ![Okno dialogowe nowego projektu przedstawiające szablony Azure Functions](media/azure-functions-image2.png)
 
     > [!TIP]
     > Chociaż powiązane Azure Functions środowisko uruchomieniowe i szablony (CLI) są jak najprawdopodobniej aktualne, są one nieaktualne. Podczas tworzenia nowego projektu funkcji program Visual Studio dla komputerów Mac sprawdzi dostępność aktualizacji interfejsu wiersza polecenia i wyświetli powiadomienie, jak pokazano na poniższej ilustracji. Wystarczy kliknąć przycisk, aby pobrać zaktualizowane szablony.
-    > ![Dostępne jest okno dialogowe Nowy projekt pokazujące aktualizacje usługi Azure Functions](media/azure-functions-update.png)
+    > ![Nowe okno dialogowe projektu przedstawiające aktualizacje Azure Functions są dostępne](media/azure-functions-update.png)
 
     W zależności od wybranego typu funkcji Następna strona wyświetli monit o podanie szczegółowych informacji, takich jak prawa dostępu, jak pokazano na poniższej ilustracji:
 
@@ -147,15 +147,15 @@ Jednym z ważnych ustawień może być konieczne ustawienie wartości `FUNCTIONS
   - HTTP POST CRUD
   - Wyzwalacz http z parametrami
 
-- **Timer** — wykonaj oczyszczanie lub inne zadania wsadowe zgodnie ze wstępnie zdefiniowanym harmonogramem. Ten szablon przyjmuje dwa pola: nazwę i harmonogram, czyli sześć wyrażeń firmy cronus. Aby uzyskać więcej informacji, zobacz [artykuł dotyczący usługi Azure Functions w czasie](/azure/azure-functions/functions-create-scheduled-function)
+- **Timer** — wykonaj oczyszczanie lub inne zadania wsadowe zgodnie ze wstępnie zdefiniowanym harmonogramem. Ten szablon przyjmuje dwa pola: nazwę i harmonogram, czyli sześć wyrażeń firmy cronus. Aby uzyskać więcej informacji, zobacz [artykuł Azure Functions w czasie](/azure/azure-functions/functions-create-scheduled-function)
 
-- **Wyzwalacz kolejki** — jest to funkcja, która będzie odpowiadać na komunikaty, gdy docierają one do kolejki usługi Azure Storage. Oprócz nazwy funkcji ten szablon przyjmuje **ścieżkę** (nazwę kolejki, z której zostanie odczytany komunikat) i **połączenie** konta magazynu (nazwę aplikacji zawierającą parametry połączenia konta magazynu). Aby uzyskać więcej informacji, zobacz [artykuł dotyczący usługi Azure Functions w queue storage](/azure/azure-functions/functions-create-storage-queue-triggered-function).
+- **Wyzwalacz kolejki** — jest to funkcja, która będzie odpowiadać na komunikaty, gdy docierają one do kolejki usługi Azure Storage. Oprócz nazwy funkcji ten szablon przyjmuje **ścieżkę** (nazwę kolejki, z której zostanie odczytany komunikat) i **połączenie** konta magazynu (nazwę aplikacji zawierającą parametry połączenia konta magazynu). Aby uzyskać więcej informacji, zapoznaj się z [artykułem Azure Functions w queue storage](/azure/azure-functions/functions-create-storage-queue-triggered-function).
 
-- **Wyzwalacz obiektów BLOB** — przetwarzanie obiektów BLOB usługi Azure Storage po ich dodaniu do kontenera. Oprócz nazwy funkcji ten szablon przyjmuje również właściwość Path i Connection. Właściwość Path jest ścieżką w ramach konta magazynu, który będzie monitorowany przez wyzwalacz. Konto połączenia to nazwa ustawienia aplikacji zawierającego parametry połączenia konta magazynu. Aby uzyskać więcej informacji, zobacz [artykuł dotyczący usługi Azure functions BLOB Storage](/azure/azure-functions/functions-create-storage-blob-triggered-function).
+- **Wyzwalacz obiektów BLOB** — przetwarzanie obiektów BLOB usługi Azure Storage po ich dodaniu do kontenera. Oprócz nazwy funkcji ten szablon przyjmuje również właściwość Path i Connection. Właściwość Path jest ścieżką w ramach konta magazynu, który będzie monitorowany przez wyzwalacz. Konto połączenia to nazwa ustawienia aplikacji zawierającego parametry połączenia konta magazynu. Aby uzyskać więcej informacji, zapoznaj się z [artykułem Blob Storage Azure Functions](/azure/azure-functions/functions-create-storage-blob-triggered-function).
 
-- **Ogólny element webhook** — prosta funkcja, która będzie uruchamiana za każdym razem, gdy odbierze żądanie od dowolnej usługi obsługującej elementy webhook. Aby uzyskać więcej informacji, zobacz [artykuł dotyczący usługi Azure Functions w ogólnych elementach webhook](/azure/azure-functions/functions-create-generic-webhook-triggered-function).
+- **Ogólny element webhook** — prosta funkcja, która będzie uruchamiana za każdym razem, gdy odbierze żądanie od dowolnej usługi obsługującej elementy webhook. Aby uzyskać więcej informacji, zobacz [artykuł Azure Functions dotyczący ogólnych elementów webhook](/azure/azure-functions/functions-create-generic-webhook-triggered-function).
 
-- **Aranżacja funkcji trwałych** — Durable Functions pozwala pisać funkcje stanowe w środowisku bezserwerowym. Rozszerzenie zarządza stanem, punktami kontrolnymi i ponownym uruchamianiem. Aby uzyskać więcej informacji, zobacz Przewodniki usługi Azure Functions dotyczący [trwałych funkcji](/azure/azure-functions/durable-functions-overview).
+- **Aranżacja funkcji trwałych** — Durable Functions pozwala pisać funkcje stanowe w środowisku bezserwerowym. Rozszerzenie zarządza stanem, punktami kontrolnymi i ponownym uruchamianiem. Aby uzyskać więcej informacji, zobacz przewodniki dotyczące Azure Functions w [funkcjach trwałych](/azure/azure-functions/durable-functions-overview).
 
 - Wskaźnik **rozmiaru obrazu** — ta funkcja tworzy obrazy o zmienionym rozmiarze za każdym razem, gdy obiekt BLOB zostanie dodany do kontenera. Szablon przyjmuje ścieżkę i parametry połączenia dla wyzwalacza, niewielką wartość wyjściową obrazu oraz średnią wartość wyjściową obrazu.
 

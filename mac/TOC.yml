@@ -169,7 +169,7 @@
         - name: Tworzenie aplikacji z wieloma kontenerami przy użyciu narzędzia Docker Compose
           href: docker-multi-container.md
     - name: Projektowanie gier w środowisku Unity
-      href: /visualstudio/gamedev/unity/get-started/visual-studio-tools-for-unity.md
+      href: /visualstudio/gamedev/unity/get-started/visual-studio-tools-for-unity
     - name: Aplikacje mobilne na platformie Xamarin
       href: ./xamarin.md
 - name: Ułatwienia dostępu

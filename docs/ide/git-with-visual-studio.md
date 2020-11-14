@@ -2,20 +2,20 @@
 title: Środowisko Git w programie Visual Studio
 titleSuffix: ''
 description: Dowiedz się, w jaki sposób nowe zintegrowane środowisko Git w programie Visual Studio 2019 może pomóc w zwiększeniu produktywności.
-ms.date: 11/10/2020
+ms.date: 11/13/2020
 ms.topic: conceptual
 ms.author: tglee
 author: prnadago
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 33606a2b4290735d5c15788a1e6961191d6d92f9
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: cf2f55f64eff13e9f7966ac21decf669c36284bd
+ms.sourcegitcommit: c1cc3d8e1673c52fbfddc86b089b4a3d46bb3e59
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493559"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94626271"
 ---
-# <a name="git-productivity-in-visual-studio"></a>Wydajność usługi Git w programie Visual Studio
+# <a name="git-experience-in-visual-studio"></a>Środowisko Git w programie Visual Studio
 
 Git jest teraz domyślnym interfejsem kontroli wersji w programie Visual Studio 2019. Od [wersji 16,6](/visualstudio/releases/2019/release-notes-v16.6)pracowałem nad tworzeniem zestawu funkcji i iteracją na podstawie opinii użytkowników. Nowe środowisko git jest domyślnie włączone dla wszystkich użytkowników w [wersji 16,8](/visualstudio/releases/2019/release-notes/).
 
@@ -24,7 +24,11 @@ Git jest teraz domyślnym interfejsem kontroli wersji w programie Visual Studio 
 
 ## <a name="how-to-use-git-in-visual-studio"></a>Jak używać narzędzia Git w programie Visual Studio
 
-Istnieją trzy sposoby, aby rozpocząć korzystanie z narzędzia Git z programem Visual Studio 2019, aby zwiększyć produktywność:
+Przeprowadzimy Cię przez proces używania nowego środowiska Git w programie Visual Studio 2019, ale jeśli chcesz najpierw skorzystać z krótkiego przewodnika, zapoznaj się z następującym wideo: <br><br>*Długość wideo: 5,27 minut*
+
+> [!VIDEO https://www.youtube.com/embed/UHrAg3iKoe0]
+
+Istnieją trzy sposoby, aby rozpocząć korzystanie z narzędzia Git z programem Visual Studio, aby zwiększyć produktywność:
 
 - [Otwórz istniejące repozytorium git](#open-an-existing-local-repository). Jeśli Twój kod znajduje się już na Twojej maszynie, możesz otworzyć **go za pomocą polecenia**  >  **Otwórz**  >  **projekt/rozwiązanie** (lub **folder** ), a program Visual Studio automatycznie wykrywa, czy ma zainicjowane repozytorium git.
 - [Utwórz nowe repozytorium git](#create-a-new-git-repository). Jeśli kod nie jest skojarzony z usługą git, możesz utworzyć nowe repozytorium git.
@@ -195,6 +199,7 @@ Mimo że nowe środowisko git jest teraz domyślnie włączone w programie Visua
 
 ## <a name="see-also"></a>Zobacz też
 
+- [Ogłaszanie wersji środowiska Git w blogu programu Visual Studio](https://devblogs.microsoft.com/visualstudio/announcing-the-release-of-the-git-experience-in-visual-studio/)
 - [Uruchomienie nowego środowiska git](https://www.youtube.com/watch?v=UHrAg3iKoe0&t) w serwisie YouTube
 - [Seria Visual Studio Toolbox prezentuje: nowe wideo dotyczące środowiska git](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/The-New-Git-Experience) w witrynie Channel 9 i w serwisie [YouTube](https://www.youtube.com/watch?v=ZiQ2LXtAJ6I&feature=youtu.be)
 - [Atrakcyjne nowe aktualizacje środowiska Git w blogu programu Visual Studio](https://devblogs.microsoft.com/visualstudio/exciting-new-updates-to-the-git-experience-in-visual-studio/)
