@@ -6,6 +6,8 @@
       href: whats-new-msbuild-16-0.md
     - name: Co nowego w programie MSBuild 15.0
       href: what-s-new-in-msbuild-15-0.md
+    - name: Fale zmian
+      href: change-waves.md
     - name: Pojęcia dotyczące programu MSBuild
       items:
         - name: Omówienie
