@@ -1,6 +1,7 @@
 ---
 title: BuildOnLoad — atrybut i element (szablony Visual Studio)
 titleSuffix: ''
+description: Dowiedz się więcej o atrybutach i elementach BuildOnLoad oraz o tym, czy należy skompilować projekt bezpośrednio po jego utworzeniu.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -16,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f411f918352391387e5c3b34eafeb209df3118b
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 37df139f890a7717287db675a3a4b7e4b250dbf3
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036863"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671608"
 ---
 # <a name="buildonload-attribute-and-element"></a>BuildOnLoad — atrybut i element
 

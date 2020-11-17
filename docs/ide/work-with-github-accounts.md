@@ -1,5 +1,5 @@
 ---
-title: Współpraca z kontami usługi GitHub w programie Visual Studio
+title: Praca z kontami usługi GitHub w programie Visual Studio
 ms.date: 11/13/2020
 ms.custom: ''
 ms.topic: conceptual
@@ -10,14 +10,14 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: d0575abb528810e714dbe747b46db986dc3ce6e1
-ms.sourcegitcommit: c1cc3d8e1673c52fbfddc86b089b4a3d46bb3e59
+ms.openlocfilehash: cdea71e2d5c376e465bb5cdb990ec7ed45caa1f3
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "94631627"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672362"
 ---
-# <a name="work-with-github-accounts-in-visual-studio"></a>Współpraca z kontami usługi GitHub w programie Visual Studio
+# <a name="work-with-github-accounts-in-visual-studio"></a>Praca z kontami usługi GitHub w programie Visual Studio
 
 Jeśli masz publiczne konto w serwisie GitHub lub GitHub Enterprise, możesz je dodać do łańcucha kluczy programu Visual Studio. Po dodaniu konta będziesz mieć możliwość skorzystania z integracji z platformą, uzyskując dostęp do repozytoriów usługi GitHub i tworząc je bezpośrednio z programu Visual Studio.  
 
@@ -59,7 +59,7 @@ Domyślnie program Visual Studio ma włączone publiczne konta serwisu GitHub.
 
 3. Po wprowadzeniu adresu serwera w witrynie GitHub Enterprise wybierz pozycję **Zaloguj się za pomocą przeglądarki**. W tym miejscu możesz zalogować się przy użyciu poświadczeń przedsiębiorstwa usługi GitHub.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Praca z wieloma kontami użytkowników](work-with-multiple-user-accounts.md)
 - [Logowanie do programu Visual Studio](signing-in-to-visual-studio.md)

@@ -1,5 +1,7 @@
 ---
 title: ProjectCollection — element (szablony Visual Studio) | Microsoft Docs
+description: Dowiedz się więcej na temat elementu ProjectCollection i sposobu określania organizacji i zawartości szablonów wieloprojektowych.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12a22ca28c90ed1df69529ed3004b417b5e04276
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2d9da3dbe92bdde8b0c19495e73cdbf2660ef3b4
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701977"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671236"
 ---
 # <a name="projectcollection-element-visual-studio-templates"></a>ProjectCollection — element (szablony Visual Studio)
 Określa organizację i zawartość szablonów wieloprojektowych.
@@ -83,7 +85,7 @@ Określa organizację i zawartość szablonów wieloprojektowych.
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
 - [Instrukcje: Tworzenie szablonów wieloprojektowych](../ide/how-to-create-multi-project-templates.md)

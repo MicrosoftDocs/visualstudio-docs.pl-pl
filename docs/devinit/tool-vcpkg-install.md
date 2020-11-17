@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 30bd66310f386a920b20522f59e54d586e3d3af1
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 6e10887e09c329a241aab7f18c6170c873705fbf
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400233"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672053"
 ---
 # <a name="vcpkg-install"></a>vcpkg-install
 
@@ -45,18 +45,28 @@ Dodatkowe opcje są przesyłane bezpośrednio do polecenia [vcpkg](/powershell/m
 Domyślne zachowanie `vcpkg-install` narzędzia to błąd, zgodnie z `input` potrzebami.
 
 ## <a name="example-usage"></a>Przykład użycia
+Poniżej znajdują się przykłady sposobu uruchamiania programu `vcpkg-install` przy użyciu programu `.devinit.json` . 
 
+#### <a name="devinitjson-that-will-install-the-sdl2-port"></a>.devinit.js, na którym zostanie zainstalowany port SDL2:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
-            "comments": "Installs the sdl2 port.",
             "tool": "vcpkg-install",
             "input": "sdl2",
-        },
+        }
+    ]
+}
+```
+
+#### <a name="devinitjson-that-will-install-multiple-ports"></a>.devinit.js, na którym zostanie zainstalowana wiele portów:
+```json
+{
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+    "run": [
+
         {
-            "comments": "Installs the sdl2 and sqlite3 ports.",
             "tool": "vcpkg-install",
             "input": "sdl2 sqlite3"
         }

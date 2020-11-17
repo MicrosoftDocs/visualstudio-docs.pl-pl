@@ -1,5 +1,7 @@
 ---
 title: ProjectSubType, element (szablony Visual Studio) | Microsoft Docs
+description: Dowiedz się więcej na temat elementu ProjectSubType i sposobu klasyfikowania szablonu do podkategorii wartości określonej w elemencie ProjectType.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 27396ad1bcc4e181b2b8cecd6ca863db2412630d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9ceecbf1bfb750244a13c641906f7a8712d01d69
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701833"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672323"
 ---
 # <a name="projectsubtype-element-visual-studio-templates"></a>ProjectSubType, element (szablony Visual Studio)
 Klasyfikuje szablon do podkategorii wartości określonej w `ProjectType` elemencie.
@@ -96,7 +98,7 @@ Klasyfikuje szablon do podkategorii wartości określonej w `ProjectType` elemen
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
 - [ProjectType — element (szablony Visual Studio)](../extensibility/projecttype-element-visual-studio-templates.md)

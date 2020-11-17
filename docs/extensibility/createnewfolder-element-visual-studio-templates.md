@@ -1,5 +1,7 @@
 ---
 title: CreateNewFolder —, element (szablony Visual Studio) | Microsoft Docs
+description: Dowiedz się więcej o elemencie CreateNewFolder — i sposobie jego określania, czy należy sprawdzić, czy katalog docelowy, w którym ma zostać utworzony projekt, nie istnieje.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 860f4df3e69a568a3e391da4d7437d9a5fd83f15
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 15633c2f701c813ca24c5484fd4108a86c57b05b
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739671"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671582"
 ---
 # <a name="createnewfolder-element-visual-studio-templates"></a>CreateNewFolder —, element (szablony Visual Studio)
 Określa, czy należy sprawdzić, czy katalog docelowy, w którym ma zostać utworzony projekt, nie istnieje. Jeśli katalog istnieje, można utworzyć nowy katalog dla projektu. To ustawienie jest zwykle zastępowane przez `NewProjectRequiresNewFolder(VsTemplate)` flagę rejestru ( `HKEY_LOCAL_MACHINE/SOFTWARE(/Wow6432Node)/Microsoft/VisualStudio/<version number>/Projects/<project GUID>` ), którą używają wszystkie typy projektów wspólnych do określenia, czy utworzyć nowy projekt w nowym katalogu.
@@ -90,6 +92,6 @@ Określa, czy należy sprawdzić, czy katalog docelowy, w którym ma zostać utw
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)

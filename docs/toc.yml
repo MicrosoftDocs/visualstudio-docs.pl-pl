@@ -945,7 +945,7 @@
       displayName: 'marketplace, gallery, vsix'
     - name: Zarządzanie narzędziami zewnętrznymi
       href: ide/managing-external-tools.md
-    - name: Konta personalizacji
+    - name: Zarządzanie kontami
       items:
         - name: Logowanie do programu Visual Studio
           displayName: personalization accounts
@@ -954,6 +954,8 @@
           href: ide/work-with-multiple-user-accounts.md
         - name: Praca z kontami wymagającymi uwierzytelniania wieloskładnikowego
           href: ide/work-with-multi-factor-authentication.md
+        - name: Praca z kontami usługi GitHub w programie Visual Studio
+          href: ide/work-with-github-accounts.md
         - name: Rozszerzanie wersji próbnej lub aktualizowanie licencji
           href: ide/how-to-unlock-visual-studio.md
     - name: Dostrajanie wydajności programu Visual Studio

@@ -1,5 +1,7 @@
 ---
 title: BuildProjectOnload, element (szablony Visual Studio) | Microsoft Docs
+description: Dowiedz się więcej na temat elementu BuildProjectOnload i sposobu, w jaki kompiluje tylko nowe projekty podczas tworzenia i dodawania ich do rozwiązania.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 72d1981aab67762b3ee4aa8d62e0643f4c2a8963
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bdf4256b2fb376fc063eb330d47c843c1ff8820b
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739945"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671595"
 ---
 # <a name="buildprojectonload-element-visual-studio-templates"></a>BuildProjectOnload, element (szablony Visual Studio)
 Kompiluje tylko nowe projekty podczas tworzenia i dodawania ich do rozwiązania. Całe rozwiązanie nie zostało skompilowane.
@@ -84,7 +86,7 @@ Hierarchia elementów:
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [BuildOnLoad — atrybut i element](buildonload-visual-studio-templates.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)

@@ -1,5 +1,7 @@
 ---
 title: ProjectItem, element (szablony elementów Visual Studio) | Microsoft Docs
+description: Dowiedz się więcej na temat elementu ProjectItem dla szablonów elementów i sposobu akceptowania przez niego różnych atrybutów w zależności od tego, czy szablon dotyczy projektu czy elementu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 885d0fbb50204f23a30fa43c1ffad45c9d67f829
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 431f1d5f81827b47b57a53dbe411a2a7e8a57941
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770725"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672336"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem, element (szablony elementów Visual Studio)
 Określa plik, który jest zawarty w szablonie elementu.
@@ -53,7 +55,7 @@ Określa plik, który jest zawarty w szablonie elementu.
 | `SubType` | Atrybut opcjonalny.<br /><br /> Określa podtyp elementu w szablonie elementu wieloplikowego. Ta wartość służy do określenia edytora, który [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] będzie używany do otwierania elementu. |
 | `CustomTool` | Atrybut opcjonalny.<br /><br /> Ustawia CustomTool dla elementu w pliku projektu. |
 | `ItemType` | Atrybut opcjonalny.<br /><br /> Ustawia ItemType dla elementu w pliku projektu. |
-| `ReplaceParameters` | Atrybut opcjonalny.<br /><br /> Wartość logiczna określająca, czy element zawiera wartości parametrów, które muszą zostać zastąpione, gdy projekt jest tworzony na podstawie szablonu. Wartość domyślna to `false` . |
+| `ReplaceParameters` | Atrybut opcjonalny.<br /><br /> Wartość logiczna określająca, czy element zawiera wartości parametrów, które muszą zostać zastąpione, gdy projekt jest tworzony na podstawie szablonu. Wartość domyślna to `false`. |
 | `TargetFileName` | Atrybut opcjonalny.<br /><br /> Określa nazwę elementu, który jest tworzony na podstawie szablonu. Ten atrybut jest przydatny do tworzenia nazwy elementu przy użyciu zastąpienia parametrów. |
 
 ### <a name="child-elements"></a>Elementy podrzędne
@@ -100,7 +102,7 @@ Określa plik, który jest zawarty w szablonie elementu.
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
 - [Instrukcje: Tworzenie szablonów elementów wieloplikowych](../ide/how-to-create-multi-file-item-templates.md)

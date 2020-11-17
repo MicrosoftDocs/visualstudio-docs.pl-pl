@@ -1,5 +1,7 @@
 ---
 title: PreviewImage, element (szablony Visual Studio) | Microsoft Docs
+description: Dowiedz się więcej o elemencie PreviewImage i sposobie określania nazwy pliku dla obrazu podglądu, który będzie wyświetlany w oknie dialogowym Nowy projekt lub Dodaj nowy element.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f20cfe5f3ef35b23a52972ef1e3b7d9d4adc5a39
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 326588259203224d3f70b505af8437af22930faa
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702016"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672349"
 ---
 # <a name="previewimage-element-visual-studio-templates"></a>PreviewImage, element (szablony Visual Studio)
 Określa obraz podglądu jako nazwę pliku dla obrazu podglądu, który będzie wyświetlany w oknie dialogowym **Nowy projekt** lub **Dodaj nowy element** .
@@ -54,6 +56,6 @@ Określa obraz podglądu jako nazwę pliku dla obrazu podglądu, który będzie 
 ## <a name="remarks"></a>Uwagi
  `PreviewImage` jest elementem opcjonalnym.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)

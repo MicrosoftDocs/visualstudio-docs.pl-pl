@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 432c2a6c532e95e7d0e3e4cb22c87930031f5907
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 21630f5dbc80294547be33ab4a82bdf286a0b08f
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400296"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671907"
 ---
 # <a name="npm-install"></a>npm-install
 
@@ -41,13 +41,14 @@ Jeśli obie `input` właściwości i `additionalOptions` zostaną pominięte lub
 Dodatkowe opcje konfiguracji mogą być przesyłane jako wartość `additionalOptions` . Te argumenty są bezpośrednim przekazywaniem do argumentów używanych przez [instalację npm](https://docs.npmjs.com/cli/install).
 
 ## <a name="example-usage"></a>Przykład użycia
+Poniżej znajduje się przykład sposobu uruchamiania `npm-install` przy użyciu `.devinit.json` . 
 
+#### <a name="devinitjson-that-will-install-mongo"></a>.devinit.js, na którym zostanie zainstalowany program Mongo:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
-            "comments": "Example that will install the mongo NPM package (https://www.npmjs.com/package/mongo).",
             "tool": "npm-install",
             "input": "mongo",
         }

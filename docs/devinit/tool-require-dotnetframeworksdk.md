@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 42bcb44704c0273c936a763661ec78d232fe7a82
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: a74f45d67c6f2a921d8c5a06bc60abf6f5c76cb9
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400275"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671795"
 ---
 # <a name="require-dotnetframeworksdk"></a>require-dotnetframeworksdk
 
@@ -45,19 +45,28 @@ Nie używany.
 Domyślnym zachowaniem tego `require-dotnetframeworksdk` narzędzia jest zainstalowanie najnowszej wersji. Zapoznaj się z [dostarczonymi instalatorami](https://dotnet.microsoft.com/download/visual-studio-sdks) w celu uzyskania najnowszej wersji.
 
 ## <a name="example-usage"></a>Przykład użycia
+Poniżej znajdują się przykłady sposobu uruchamiania programu `require-dotnetframeworksdk` przy użyciu programu `.devinit.json` . 
 
+#### <a name="devinitjson-that-will-install-the-latest-net-framework"></a>.devinit.js, na którym zostanie zainstalowana najnowsza .NET Framework:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
-            "comments": "Example that will install a specific version of the .NET Framework SDK.",
+            "tool": "require-dotnetframeworksdk"
+        }
+    ]
+}
+```
+
+#### <a name="devinitjson-that-will-install-a-specific-version-of-the-net-framework"></a>.devinit.js, na którym zostanie zainstalowana określona wersja .NET Framework:
+```json
+{
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+    "run": [
+        {
             "tool": "require-dotnetframeworksdk",
             "input": "4.8.0"
-        },
-        {
-            "comments": "Example that will install the latest version of the .NET Framework SDK.",
-            "tool": "require-dotnetframeworksdk"
         }
     ]
 }

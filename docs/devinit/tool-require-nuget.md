@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: f58809465e41b3b1b6020de91fe0ab590ca1c428
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: e4f08e8c3f5967eb2e9db53633a12b304ac23bfb
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400261"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671761"
 ---
 # <a name="require-nuget"></a>require-nuget
 
@@ -45,16 +45,16 @@ Nie używany.
 Domyślnym zachowaniem tego `require-nuget` narzędzia jest zainstalowanie najnowszej wersji interfejsu wiersza polecenia NuGet.
 
 ## <a name="example-usage"></a>Przykład użycia
+Poniżej znajduje się przykład sposobu uruchamiania `require-nuget` przy użyciu `.devinit.json` . 
 
+#### <a name="devinitjson-that-will-install-a-specified-version-of-nuget"></a>.devinit.js, na którym zostanie zainstalowana określona wersja programu NuGet:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
-    "comments": "A sample dot-devinit file that downloads NuGet CLI and adds to PATH variable.'",
     "run": [
         {
             "tool": "require-nuget",
             "input": "5.5.1",
-            "comments": "Installs NuGet for given input version. If no input given, then installs latest."
         }
     ]
 }

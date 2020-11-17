@@ -1,5 +1,5 @@
 ---
-title: MSI-instalacja
+title: msi-install
 description: Narzędzie devinit dla narzędzia Msiexec.
 ms.date: 10/13/2020
 ms.topic: reference
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 98667c602272f22e7803647a688ee75d6c6cbd70
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: ab56157d531e762ed36f8c2349e50e76596b05ec
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93402313"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672174"
 ---
-# <a name="msi-install"></a>MSI-instalacja
+# <a name="msi-install"></a>msi-install
 
 `msi-install`Narzędzie służy do instalowania `.msi` formatów plików pakietu przy użyciu polecenia [msiexec](https://docs.microsoft.com/windows-server/administration/windows-commands/msiexec).
 
@@ -54,13 +54,14 @@ Narzędzie MSI-Install ustawia liczbę `msiexec` argumentów wiersza polecenia, 
 | /norestart    | Powoduje zatrzymanie ponownego uruchomienia komputera po zakończeniu instalacji, ale zwróci kod zakończenia 3010, jeśli jest wymagany ponowny rozruch                                                                  | 
 
 ## <a name="example-usage"></a>Przykład użycia
+Poniżej znajduje się przykład sposobu uruchamiania `msi-install` przy użyciu `.devinit.json` . 
 
+#### <a name="devinitjson-that-will-install-the-7-zip-msi"></a>.devinit.js, na którym zostanie zainstalowany plik MSI 7-Zip:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-4.0",
     "run": [
         {
-            "comments": "Installs the 7-Zip MSI",
             "tool": "msi-install",
             "input": "https://www.7-zip.org/a/7z1900.msi"
         }

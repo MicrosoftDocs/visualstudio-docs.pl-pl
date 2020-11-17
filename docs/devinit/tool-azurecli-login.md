@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 86427e0ad6dde2f51336d9ea0e508413425fdc29
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 304c7b12e3b290c3e47857877b050b18873e3934
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399661"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672312"
 ---
 # <a name="azurecli-login"></a>azurecli-login
 
@@ -45,13 +45,15 @@ Nie używany.
 Domyślnym zachowaniem tego `azurecli-login` narzędzia jest zainstalowanie najnowszej wersji interfejsu wiersza polecenia platformy Azure i dodanie jej do ścieżki (tylko system Windows).
 
 ## <a name="example-usage"></a>Przykład użycia
+Poniżej znajduje się przykład sposobu uruchamiania `azurecli-login` przy użyciu `.devinit.json` . 
+
+#### <a name="devinitjson-that-will-trigger-azure-login"></a>.devinit.js, na którym zostanie wyzwolone logowanie na platformie Azure:
 
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
-            "comments": "Example that will trigger az login --use-device-code behavior.",
             "tool": "azurecli-login"
         }
     ]

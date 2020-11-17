@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: c8273a130ab9b977a7d4893f13d830cd59ff46b3
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: da6ce656e552a7df0b02fd4a0df3a1fb78871607
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399614"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672147"
 ---
 # <a name="require-azurecli"></a>require-azurecli
 
@@ -45,13 +45,14 @@ Nie używany.
 Domyślnym zachowaniem tego `require-azurecli` narzędzia jest zainstalowanie najnowszej wersji interfejsu wiersza polecenia platformy Azure i dodanie jej do ścieżki (tylko system Windows).
 
 ## <a name="example-usage"></a>Przykład użycia
+Poniżej znajduje się przykład sposobu uruchamiania `require-azurecli` przy użyciu `.devinit.json` . 
 
+#### <a name="devinitjson-that-will-install-the-azure-cli"></a>.devinit.js, na którym zostanie zainstalowany interfejs wiersza polecenia platformy Azure:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
-            "comments": "Example that will trigger the Default behavior of installing the Azure CLI.",
             "tool": "require-azurecli"
         }
     ]

@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 87938b05b860921ee81cb2ca9191ad58fa85dd7a
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: e28a1f896904c89a4553f18c73324293ea468ee6
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399593"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672126"
 ---
 # <a name="require-npm"></a>require-npm
 
@@ -45,17 +45,26 @@ Nieużywany.
 Domyślne zachowanie `require-nodejs` Narzędzia polega na zainstalowaniu najnowszej wersji LTS npm.
 
 ## <a name="example-usage"></a>Przykład użycia
+Poniżej znajdują się przykłady sposobu uruchamiania programu `require-npm` przy użyciu programu `.devinit.json` . 
 
+#### <a name="devinitjson-that-will-install-the-lts-of-npm"></a>.devinit.js, na którym zostanie zainstalowany LTS npm:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
-            "comments": "Example that will trigger the Default behavior of installing latest LTS of NPM.",
             "tool": "require-npm"
-        },
+        }
+    ]
+}
+```
+
+#### <a name="devinitjson-that-will-install-a-specific-version-of-npm"></a>.devinit.js, na którym zostanie zainstalowana określona wersja programu npm:
+```json
+{
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+    "run": [
         {
-            "comments": "Example that will install a specific version.",
             "tool": "require-npm",
             "input": "6.14.6"
         }

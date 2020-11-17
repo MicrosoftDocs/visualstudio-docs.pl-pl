@@ -1,5 +1,7 @@
 ---
 title: AppliesTo — element (szablony Visual Studio) | Microsoft Docs
+description: Dowiedz się więcej o elemencie AppliesTo i jak określa opcjonalne wyrażenie, aby dopasować je do co najmniej jednej funkcji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39b5ee1e3cad0b4d8ddbe0fc2dfa1c2d478ec063
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5fca9f6550a066d3f3e0e46514a15d9ff14cb66c
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740074"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671704"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo — element (szablony Visual Studio)
 
@@ -104,7 +106,7 @@ W przykładzie poniżej widać trzy różne szablony. `Template1` stosuje się d
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)

@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 39d30b08e4ca3ba3a3e355fdf123f3a05055c358
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 7db97694e129fe5c70de09aaf4c132656ae00746
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399668"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672227"
 ---
 # <a name="choco-upgrade"></a>choco-upgrade
 
@@ -34,7 +34,7 @@ Jeśli obie `input` właściwości i `additionalOptions` zostaną pominięte lub
 
 ### <a name="input"></a>Dane wejściowe
 
-`input`Właściwość służy do określenia nazwy pakietu do uaktualnienia (na przykład "MongoDB") lub ścieżki do pliku konfiguracji następujących formatów _packages.config_ , _. nuspec_ i _. nupkg_. Wartość `input` zostanie dołączona do `choco upgrade` polecenia (na przykład `choco upgrade mongodb` ) wraz z dowolnymi argumentami określonymi w [`additionalOptions`](#additional-options) i wbudowane `choco` Opcje (zdefiniowane [poniżej](#built-in-options)). Pakiety można znaleźć w [Galerii pakietów czekolady](https://chocolatey.org/packages). Przy użyciu pliku konfiguracji można przekazać ścieżkę do tego pliku we `input` właściwości na przykład: `"input":"packages.config"` .
+`input`Właściwość służy do określenia nazwy pakietu do uaktualnienia (na przykład "MongoDB") lub ścieżki do pliku konfiguracji następujących formatów _packages.config_, _. nuspec_ i _. nupkg_. Wartość `input` zostanie dołączona do `choco upgrade` polecenia (na przykład `choco upgrade mongodb` ) wraz z dowolnymi argumentami określonymi w [`additionalOptions`](#additional-options) i wbudowane `choco` Opcje (zdefiniowane [poniżej](#built-in-options)). Pakiety można znaleźć w [Galerii pakietów czekolady](https://chocolatey.org/packages). Przy użyciu pliku konfiguracji można przekazać ścieżkę do tego pliku we `input` właściwości na przykład: `"input":"packages.config"` .
 
 ### <a name="additional-options"></a>Opcje dodatkowe
 
@@ -51,23 +51,40 @@ Dodatkowe opcje konfiguracji mogą być przesyłane jako wartość `additionalOp
 | **--Skip-PowerShell** | Pomijanie programu PowerShell — chocolateyInstall.ps1 nie zostanie uruchomiony.                                              |
 
 ## <a name="example-usage"></a>Przykład użycia
+Poniżej znajdują się przykłady sposobu uruchamiania programu `choco-upgrade` przy użyciu programu `.devinit.json` . 
 
+#### <a name="devinitjson-that-will-update-packages-listed-in-packagesconfig"></a>.devinit.js, na którym zostaną zaktualizowane pakiety wymienione w packages.config:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
-            "comments": "Example that will trigger the Default behavior of upgrading packages listed in a packages.config file.",
             "tool": "choco-upgrade",
             "input": "packages.config",
-        },
+        }
+    ]
+}
+```
+
+#### <a name="devinitjson-that-will-upgrade-mongodb"></a>.devinit.js, na którym zostanie uaktualniony MongoDB:
+```json
+{
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+    "run": [
         {
-            "comments": "Example that will upgrade the package 'mongodb'.",
             "tool": "choco-upgrade",
             "input": "mongodb"
-        },
+        }
+    ]
+}
+```
+
+#### <a name="devinitjson-that-will-upgrade-to-a-specific-version-of-mongodb"></a>.devinit.jsw ramach uaktualnienia do określonej wersji programu MongoDB:
+```json
+{
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+    "run": [
         {
-            "comments": "Example that will upgrade the '4.2.7' version of 'mongodb'.",
             "tool": "choco-upgrade",
             "input": "mongodb",
             "additionalOptions": "--version 4.2.7"

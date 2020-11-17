@@ -1,5 +1,8 @@
 ---
 title: Assembly — element (szablony Visual Studio) | Microsoft Docs
+titleSuffix: ''
+description: Dowiedz się więcej na temat elementu Assembly i sposobu określania informacji o zestawie, którego używa szablon do dodawania odwołania do tego zestawu do projektów.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c80044657b16448ba4567fff839274226985fa14
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f4115e999cc061be53ba437a090f207046f71ef8
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740032"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671649"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Assembly — element (szablony Visual Studio)
 Określa informacje dotyczące zestawu, którego szablon używa do dodawania odwołania do tego zestawu do projektów.
@@ -95,6 +98,6 @@ Określa informacje dotyczące zestawu, którego szablon używa do dodawania odw
 </TemplateContent>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)

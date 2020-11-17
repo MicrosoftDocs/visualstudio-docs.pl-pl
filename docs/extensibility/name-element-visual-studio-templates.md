@@ -1,5 +1,7 @@
 ---
 title: Name — element (szablony Visual Studio) | Microsoft Docs
+description: Dowiedz się więcej o elemencie name i sposobie jego określania nazwy szablonu wyświetlanej w oknie dialogowym Nowy projekt lub Dodaj nowy element.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2a02dc377bac5f93f8e0365f6f3d9ccb81737a8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2aa14005a202b7868f61cd41ffb6ac9e2f872b68
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702455"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671184"
 ---
 # <a name="name-element-visual-studio-templates"></a>Name — element (szablony Visual Studio)
 Określa nazwę szablonu, która pojawia się w oknie dialogowym **Nowy projekt** lub **Dodaj nowy element** .
@@ -90,6 +92,6 @@ Określa nazwę szablonu, która pojawia się w oknie dialogowym **Nowy projekt*
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)

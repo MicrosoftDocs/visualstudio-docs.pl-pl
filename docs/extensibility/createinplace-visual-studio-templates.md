@@ -1,5 +1,7 @@
 ---
 title: CreateInPlace, element (szablony Visual Studio)
+description: Dowiedz się więcej o elemencie CreateInPlace i sposobie jego określania, czy należy utworzyć projekt i wykonać zastępowanie parametrów w określonej lub tymczasowej lokalizacji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab2b5d68be069f30c8f71536b6d47cb1ce8823b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51348e8304b67314ffd19d0aec15d43d904ee651
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739661"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671985"
 ---
 # <a name="createinplace-element-visual-studio-templates"></a>CreateInPlace, element (szablony Visual Studio)
 Określa, czy należy utworzyć projekt i wykonać zastępowanie parametrów w określonej lokalizacji, czy wykonać zastąpienie parametru w tymczasowej lokalizacji, a następnie zapisać projekt w określonej lokalizacji.
@@ -84,6 +86,6 @@ Określa, czy należy utworzyć projekt i wykonać zastępowanie parametrów w o
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
 - [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

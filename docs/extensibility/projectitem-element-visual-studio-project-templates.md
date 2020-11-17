@@ -1,5 +1,7 @@
 ---
 title: ProjectItem, element (szablony projektów Visual Studio) | Microsoft Docs
+description: Dowiedz się więcej na temat elementu ProjectItem dla szablonów projektu i sposobu, w jaki akceptuje różne atrybuty, w zależności od tego, czy szablon dotyczy projektu czy elementu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 943f50823892e3cd942709bdcd4556b65c006b58
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf2d41fe83b440e2a3b4bfebd4fac6f5d06094a4
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770304"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671327"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem, element (szablony projektów Visual Studio)
 Określa plik, który jest dołączony do szablonu projektu.
@@ -53,7 +55,7 @@ Określa plik, który jest dołączony do szablonu projektu.
 | Atrybut | Opis |
 |---------------------| - |
 | `TargetFileName` | Atrybut opcjonalny.<br /><br /> Określa nazwę i ścieżkę elementu projektu, gdy projekt jest tworzony na podstawie szablonu. Ten atrybut jest przydatny do tworzenia struktury katalogów innej niż struktura katalogów w pliku template *. zip* lub do użycia zastąpienia parametrów w celu utworzenia nazwy elementu. |
-| `ReplaceParameters` | Atrybut opcjonalny.<br /><br /> Wartość logiczna określająca, czy element zawiera wartości parametrów, które muszą zostać zastąpione, gdy projekt jest tworzony na podstawie szablonu. Wartość domyślna to `false` . |
+| `ReplaceParameters` | Atrybut opcjonalny.<br /><br /> Wartość logiczna określająca, czy element zawiera wartości parametrów, które muszą zostać zastąpione, gdy projekt jest tworzony na podstawie szablonu. Wartość domyślna to `false`. |
 | `OpenInEditor` | Atrybut opcjonalny.<br /><br /> Wartość logiczna określająca, czy element powinien być otwarty w odpowiednim edytorze w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] momencie tworzenia projektu na podstawie szablonu.<br /><br /> `OpenInWebBrowser`Atrybuty i `OpenInHelpBrowser` są ignorowane dla elementu o `OpenInEditor` wartości `true` .<br /><br /> Wartość domyślna to `false`. |
 | `OpenInWebBrowser` | Atrybut opcjonalny.<br /><br /> Wartość logiczna określająca, czy element powinien zostać otwarty w przeglądarce sieci Web po utworzeniu projektu na podstawie szablonu.<br /><br /> W przeglądarce sieci Web można otwierać tylko pliki HTML i pliki tekstowe, które są lokalne dla projektu. Nie można otworzyć zewnętrznych adresów URL z tym atrybutem.<br /><br /> Wartość domyślna to `false`. |
 | `OpenInHelpBrowser` | Atrybut opcjonalny.<br /><br /> Wartość logiczna określająca, czy element powinien być otwarty w podglądzie pomocy, gdy projekt jest tworzony na podstawie szablonu.<br /><br /> W przeglądarce pomocy można otwierać tylko pliki HTML i pliki tekstowe, które są lokalne dla projektu. Nie można otworzyć zewnętrznych adresów URL z tym atrybutem.<br /><br /> Wartość domyślna to `false`. |
@@ -137,7 +139,7 @@ Określa plik, który jest dołączony do szablonu projektu.
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
 - [Parametry szablonu](../ide/template-parameters.md)

@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 07a15f7c0422cbc3e44bcffd8806be35dbe5717f
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 1f06f89a61b77bd4c323303ca796252d4874b3cc
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400213"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671733"
 ---
 # <a name="windowsfeature-disable"></a>windowsfeature-disable
 
@@ -43,13 +43,14 @@ Brak.
 Domyślne zachowanie `windowsfeature-disable` narzędzia to błąd, zgodnie z `input` potrzebami.
 
 ## <a name="example-usage"></a>Przykład użycia
+Poniżej znajduje się przykład sposobu uruchamiania `windowsfeature-disable` przy użyciu `.devinit.json` . 
 
+#### <a name="devinitjson-that-will-disable-a-specified-feature"></a>.devinit.js, na którym zostanie wyłączona określona funkcja:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
-            "comments": "Installs IIS.",
             "tool": "require-windowsfeature",
             "input": "web-server",
         }

@@ -2,7 +2,7 @@
 title: Dziennik zmian (Visual Studio Tools for Unity, Windows) | Microsoft Docs
 description: Wyświetl dziennik zmian dla Visual Studio Tools for Unity systemu Windows. Zobacz zmiany w wersji 1.0.0.0 przez 4.7.0.0 i poza nią.
 ms.custom: ''
-ms.date: 7/30/2020
+ms.date: 11/13/2020
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -12,16 +12,65 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: f8a1ed0520bb1a2e5d213cd9a670769f70251ebb
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: e3b4b730608234b8d25b7ff4bf6b6fcfa25bec09
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "94341858"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671249"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Dziennik zmian (Visual Studio Tools for Unity, Windows)
 
 Visual Studio Tools for Unity dziennik zmian.
+
+## <a name="4820"></a>4.8.2.0
+Wydana 10 listopada 2020
+
+### <a name="new-features"></a>Nowe funkcje
+
+- **Integration**
+
+  - Ulepszona [`UNT0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0010.md) Diagnostyka do zastosowania do wszystkiego dziedziczonego z `Component` , a nie tylko `MonoBehaviour` .
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+- **Integration**
+
+  - Rozwiązano nieprawidłową ważność komunikatów CodeLens.
+
+## <a name="4810"></a>4.8.1.0
+Wydanie 13 października 2020
+
+### <a name="new-features"></a>Nowe funkcje
+
+- **Sprawozdanie**
+
+  - Dodano obsługę niejawnej konwersji z wywołaniami. Wcześniej ewaluatora wymusza dokładne sprawdzanie typów, co powoduje wyświetlenie `Failed to find a match for method([parameters...])` komunikatów ostrzegawczych.
+
+- **Integration**
+
+  - Dodano [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md) diagnostykę. Nie należy używać `System.Reflection` funkcji w przypadku komunikatów o znaczeniu krytycznym, takich jak `Update` ,, `FixedUpdate` `LateUpdate` , lub `OnGUI` .
+
+  - Ulepszone [`USP0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0003.md) i [`USP0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0005.md) uniemożliwione, z obsługą wszystkich `AssetPostprocessor` metod statycznych.
+
+  - Dodano [`USP0016`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0016.md) pominięcie dla elementu `CS8618` . `C# 8.0` wprowadza typy odwołań do wartości null i niedopuszczające wartości null. Wykrywanie inicjalizacji typów dziedziczących z `UnityEngine.Object` nie jest obsługiwane i spowoduje błędy.
+
+  - Teraz korzystamy z tego samego odtwarzacza i mechanizmu generowania projektu asmdef dla obu systemów Unity 2019. x i 2020. x +.
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+- **Integration**
+
+  - Naprawiono nieoczekiwane uzupełnienie komunikatów w komentarzach.
+
+## <a name="4800"></a>4.8.0.0 
+Wydanie 14 września 2020
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+- **Integration**
+
+  - Stała generacja projektu odtwarzacza z użyciem aparatu Unity. x.
 
 ## <a name="4710"></a>4.7.1.0
 Wydana 5 sierpnia 2020

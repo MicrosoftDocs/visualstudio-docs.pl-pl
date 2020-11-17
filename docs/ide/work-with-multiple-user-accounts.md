@@ -1,18 +1,18 @@
 ---
 title: Praca z wieloma kontami użytkowników
-ms.date: 07/23/2019
+ms.date: 11/16/2020
 ms.topic: conceptual
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abca888cda2d309951d6b8921cfd2078972ce195
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fe124fc35eabec4b3c48cdf8dfa53ef8f17b0003
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800232"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671340"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Praca z wieloma kontami użytkowników
 
@@ -23,7 +23,7 @@ Po dodaniu wielu kont na jednej maszynie ten zbiór kont zostanie przejściu do 
 > [!NOTE]
 > Mimo że nazwy kont są przenoszone, poświadczenia nie są obsługiwane. Zostanie wyświetlony monit o podanie poświadczeń dla tych innych kont przy pierwszej próbie użycia zasobów na nowym komputerze.
 
-W tym artykule pokazano, jak dodać wiele kont do programu Visual Studio. Przedstawiono w nim również sposób wyświetlania zasobów dostępnych z tych kont w miejscach takich jak okno dialogowe **Dodawanie podłączonej usługi** , **Eksplorator serwera**i **Team Explorer**.
+W tym artykule pokazano, jak dodać wiele kont do programu Visual Studio. Przedstawiono w nim również sposób wyświetlania zasobów dostępnych z tych kont w miejscach takich jak okno dialogowe **Dodawanie podłączonej usługi** , **Eksplorator serwera** i **Team Explorer**.
 
 ## <a name="sign-in-to-visual-studio"></a>Logowanie do programu Visual Studio
 
@@ -41,7 +41,7 @@ Przy pierwszym użyciu programu Visual Studio na dowolnym konkretnym urządzeniu
 
 ![Okno dialogowe Zarządzanie subskrypcjami platformy Azure](../ide/media/vs2015_manage_subs.png)
 
-Przy następnym otwarciu **Eksplorator serwera**zostaną wyświetlone zasoby dla tej subskrypcji.
+Przy następnym otwarciu **Eksplorator serwera** zostaną wyświetlone zasoby dla tej subskrypcji.
 
 ### <a name="access-your-azure-account-via-add-connected-service-dialog"></a>Uzyskiwanie dostępu do konta platformy Azure za pomocą okna dialogowego Dodawanie połączonej usługi
 
@@ -75,7 +75,7 @@ Aby uzyskać więcej informacji na temat różnych rodzajów uwierzytelniania w 
 
 ### <a name="access-your-azure-devops-organization"></a>Dostęp do organizacji usługi Azure DevOps
 
-Z menu głównego wybierz kolejno pozycje **zespół**  >  **Zarządzanie połączeniami** , aby otworzyć okno **Team Explorer-Connect** . Wybierz pozycję **Zarządzaj połączeniami**  >  **Połącz**się z projektem. W oknie dialogowym **Połącz z projektem** wybierz projekt z listy (lub wybierz pozycję **Dodaj serwer TFS** i wprowadź adres URL serwera). Po wybraniu adresu URL użytkownik jest zalogowany bez konieczności ponownego wprowadzania poświadczeń.
+Z menu głównego wybierz kolejno pozycje **zespół**  >  **Zarządzanie połączeniami** , aby otworzyć okno **Team Explorer-Connect** . Wybierz pozycję **Zarządzaj połączeniami**  >  **Połącz** się z projektem. W oknie dialogowym **Połącz z projektem** wybierz projekt z listy (lub wybierz pozycję **Dodaj serwer TFS** i wprowadź adres URL serwera). Po wybraniu adresu URL użytkownik jest zalogowany bez konieczności ponownego wprowadzania poświadczeń.
 
 Aby uzyskać więcej informacji, zobacz [nawiązywanie połączenia z projektami w Team Explorer](connect-team-project.md).
 
@@ -83,13 +83,13 @@ Aby uzyskać więcej informacji, zobacz [nawiązywanie połączenia z projektami
 
 Aby dodać dodatkowe konto do programu Visual Studio:
 
-1. Wybierz **File**pozycję  >  **Ustawienia konta**pliku.
+1. Wybierz **File** pozycję  >  **Ustawienia konta** pliku.
 
-1. W obszarze **wszystkie konta**wybierz pozycję **Dodaj konto**.
+1. W obszarze **wszystkie konta** wybierz pozycję **Dodaj konto**.
 
 1. Na stronie **Logowanie do konta** wybierz konto lub wybierz pozycję **Użyj innego konta**. Postępuj zgodnie z monitami, aby wprowadzić nowe poświadczenia konta.
 
-Obowiązkowe Teraz możesz przejść do **Eksplorator serwera** i wyświetlić usługi platformy Azure skojarzone z właśnie dodanym kontem. W **Eksplorator serwera**kliknij prawym przyciskiem myszy węzeł **platformy Azure** , a następnie wybierz pozycję **Zarządzaj i Filtruj subskrypcje**. Wybierz nowe konto, klikając strzałkę listy rozwijanej obok bieżącego konta, a następnie wybierz subskrypcje, które mają być wyświetlane w **Eksplorator serwera**. Powinny zostać wyświetlone wszystkie usługi skojarzone z określoną subskrypcją. Mimo że użytkownik nie jest obecnie zalogowany do programu Visual Studio przy użyciu drugiego konta, loguje się do usług i zasobów tego konta. To samo jest prawdziwe w przypadku **programu Project**  >  **Dodawanie połączonej usługi** i łączenie **zespołu**z  >  **Team Foundation Server**.
+Obowiązkowe Teraz możesz przejść do **Eksplorator serwera** i wyświetlić usługi platformy Azure skojarzone z właśnie dodanym kontem. W **Eksplorator serwera** kliknij prawym przyciskiem myszy węzeł **platformy Azure** , a następnie wybierz pozycję **Zarządzaj i Filtruj subskrypcje**. Wybierz nowe konto, klikając strzałkę listy rozwijanej obok bieżącego konta, a następnie wybierz subskrypcje, które mają być wyświetlane w **Eksplorator serwera**. Powinny zostać wyświetlone wszystkie usługi skojarzone z określoną subskrypcją. Mimo że użytkownik nie jest obecnie zalogowany do programu Visual Studio przy użyciu drugiego konta, loguje się do usług i zasobów tego konta. To samo jest prawdziwe w przypadku **programu Project**  >  **Dodawanie połączonej usługi** i łączenie **zespołu** z  >  **Team Foundation Server**.
 
 ### <a name="add-an-account-using-device-code-flow"></a>Dodawanie konta przy użyciu przepływu kodu urządzenia
 
@@ -99,7 +99,7 @@ Aby zalogować się za pomocą przepływu kodu urządzenia:
 
 1. Otwórz stronę [**konta**](reference/accounts-environment-options-dialog-box.md) w obszarze **Narzędzia**  >  **Opcje**  >  **środowisko**, a następnie wybierz pozycję **Włącz przepływ kodu urządzenia podczas dodawania lub ponownego uwierzytelniania konta**. Wybierz **przycisk OK** , aby zamknąć strony Opcje.
 
-1. Wybierz **File**pozycję  >  **Ustawienia konta** pliku, aby otworzyć stronę Zarządzanie kontem.
+1. Wybierz **File** pozycję  >  **Ustawienia konta** pliku, aby otworzyć stronę Zarządzanie kontem.
 
 1. Wybierz pozycję **Dodaj konto** w obszarze **wszystkie konta**.
 
@@ -113,7 +113,7 @@ Aby zalogować się za pomocą przepływu kodu urządzenia:
 
    Nazwa aplikacji **Visual Studio** powinna zostać wyświetlona w dalszej postaci na stronie.
 
-1. W obszarze **Visual Studio**wybierz pozycję **Kontynuuj**.
+1. W obszarze **Visual Studio** wybierz pozycję **Kontynuuj**.
 
    ![device-login-page.png](media/work-with-multiple-user-accounts/device-login-page.png)
 
@@ -125,7 +125,16 @@ Aby zalogować się za pomocą przepływu kodu urządzenia:
 
 1. Wróć do strony zarządzania kontami w programie Visual Studio, a nowo dodane konto zostanie wyświetlone w obszarze **wszystkie konta**. Wybierz pozycję **Zamknij**.
 
-## <a name="see-also"></a>Zobacz też
+::: moniker range=">=vs-2019"
+
+### <a name="add-a-github-account-to-visual-studio"></a>Dodawanie konta usługi GitHub do programu Visual Studio
+
+Począwszy od wersji 16,8, można dodać konta usługi GitHub i GitHub dla przedsiębiorstw do łańcucha kluczy. Będziesz w stanie dodawać i korzystać z nich tak samo jak w przypadku kont Microsoft, co oznacza, że będziesz mieć łatwiejszy czas uzyskiwania dostępu do zasobów usługi GitHub w programie Visual Studio.
+
+Aby uzyskać szczegółowe instrukcje, zobacz temat [współpraca z kontami usługi GitHub w programie Visual Studio](work-with-github-accounts.md).
+::: moniker-end
+
+## <a name="see-also"></a>Zobacz także
 
 - [Logowanie do programu Visual Studio](signing-in-to-visual-studio.md)
 - [Zaloguj się do Visual Studio dla komputerów Mac](/visualstudio/mac/signing-in)

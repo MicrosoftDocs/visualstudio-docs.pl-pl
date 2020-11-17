@@ -1,5 +1,7 @@
 ---
 title: Opracowywanie aplikacji na platformę uniwersalną systemu Windows (UWP)
+description: Dowiedz się więcej na temat tworzenia aplikacji przy użyciu programu Visual Studio i narzędzi do tworzenia aplikacji uniwersalnych systemu Windows.
+ms.custom: SEO-VS-2020
 ms.date: 10/24/2017
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -9,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 2ef09f58d22e3cb72af5b745f16b2acf8920900e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e9cff517c60a67ee9bbf929c59a1150d5ace3757
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75587150"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671422"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Opracowywanie aplikacji na platformę uniwersalną systemu Windows (UWP)
 
@@ -68,6 +70,6 @@ Jeśli masz istniejące aplikacje ze sklepu Windows 8,1, aplikacje Windows Phone
 
 Po utworzeniu aplikacji uniwersalnej systemu Windows należy spakować aplikację, aby ją zainstalować na urządzeniu z systemem Windows 10 lub przesłać do sklepu Windows. Zobacz [pakowanie aplikacji](/windows/uwp/packaging/index).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Programowanie aplikacji mobilnych na wiele platform w programie Visual Studio](../cross-platform/cross-platform-mobile-development-in-visual-studio.md)

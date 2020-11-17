@@ -1,5 +1,7 @@
 ---
 title: Description — element (szablony Visual Studio) | Microsoft Docs
+description: Dowiedz się więcej na temat elementu Description i sposobu określania opisu szablonu wyświetlanego w oknie dialogowym Nowy projekt lub Dodaj nowy element.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ea10b43662d2818792dbc57aeac09a056cb63ce
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2f244fb6d681c9cc22416422be3ade098c67deea
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712257"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671288"
 ---
 # <a name="description-element-visual-studio-templates"></a>Description — element (szablony Visual Studio)
 Określa opis szablonu, który pojawia się w oknie dialogowym **Nowy projekt** lub **Dodaj nowy element** .
@@ -90,6 +92,6 @@ Określa opis szablonu, który pojawia się w oknie dialogowym **Nowy projekt** 
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
