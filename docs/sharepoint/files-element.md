@@ -1,5 +1,7 @@
 ---
 title: Files — element | Microsoft Docs
+description: Wyświetl informacje referencyjne na temat elementu Files, który jest elementem w schemacie elementu projektu programu SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 42e919bbe25047da14940203ac86793430aeadde
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03473f40bb78c866f3d93dea11a20b8747afad7b
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546513"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672811"
 ---
 # <a name="files-element"></a>Element Pliki
   Określa pliki do wdrożenia za pomocą elementu projektu programu SharePoint, takich jak pliki elementów funkcji i dane wyjściowe zależnych projektów spoza programu SharePoint.
@@ -62,5 +64,5 @@ ms.locfileid: "85546513"
 |**Plik walidacji**|ProjectItemModelSchema. xsd|
 |**Może być puste**|Nie|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Odwołanie do schematu elementu projektu programu SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)

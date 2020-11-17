@@ -2,18 +2,18 @@
 title: Środowisko Git w programie Visual Studio
 titleSuffix: ''
 description: Dowiedz się, w jaki sposób nowe zintegrowane środowisko Git w programie Visual Studio 2019 może pomóc w zwiększeniu produktywności.
-ms.date: 11/13/2020
+ms.date: 11/16/2020
 ms.topic: conceptual
 ms.author: tglee
-author: prnadago
+author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: cf2f55f64eff13e9f7966ac21decf669c36284bd
-ms.sourcegitcommit: c1cc3d8e1673c52fbfddc86b089b4a3d46bb3e59
+ms.openlocfilehash: 621aed831e55d2fca1fda7063f8c10f859ca5157
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "94626271"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672525"
 ---
 # <a name="git-experience-in-visual-studio"></a>Środowisko Git w programie Visual Studio
 
@@ -30,9 +30,12 @@ Przeprowadzimy Cię przez proces używania nowego środowiska Git w programie Vi
 
 Istnieją trzy sposoby, aby rozpocząć korzystanie z narzędzia Git z programem Visual Studio, aby zwiększyć produktywność:
 
-- [Otwórz istniejące repozytorium git](#open-an-existing-local-repository). Jeśli Twój kod znajduje się już na Twojej maszynie, możesz otworzyć **go za pomocą polecenia**  >  **Otwórz**  >  **projekt/rozwiązanie** (lub **folder** ), a program Visual Studio automatycznie wykrywa, czy ma zainicjowane repozytorium git.
+- [Otwórz istniejące repozytorium git](#open-an-existing-local-repository). Jeśli Twój kod znajduje się już na Twojej maszynie, możesz otworzyć **go za pomocą polecenia**  >  **Otwórz**  >  **projekt/rozwiązanie** (lub **folder**), a program Visual Studio automatycznie wykrywa, czy ma zainicjowane repozytorium git.
 - [Utwórz nowe repozytorium git](#create-a-new-git-repository). Jeśli kod nie jest skojarzony z usługą git, możesz utworzyć nowe repozytorium git.
 - [Klonuj istniejące repozytorium git](#clone-an-existing-git-repository). Jeśli kod, nad którym chcesz korzystać, nie znajduje się na komputerze, możesz sklonować wszystkie istniejące repozytoria zdalne.
+
+> [!NOTE]
+> Program Visual Studio 2019 oferuje teraz w pełni zintegrowane środowisko konta usługi GitHub. Począwszy od [wersji 16,8](/visualstudio/releases/2019/release-notes/), można dodać konta usługi GitHub i GitHub przedsiębiorstwa do łańcucha kluczy. Będziesz w stanie dodawać i korzystać z nich tak samo jak w przypadku kont Microsoft, co oznacza, że będziesz mieć łatwiejszy czas uzyskiwania dostępu do zasobów usługi GitHub w programie Visual Studio. Aby uzyskać więcej informacji, zobacz temat [współpraca z kontami usługi GitHub na stronie programu Visual Studio](work-with-github-accounts.md) .
 
 ## <a name="create-a-new-git-repository"></a>Utwórz nowe repozytorium git
 
@@ -79,9 +82,9 @@ Można przełączać się między aktualnie otwartym widokiem a listą widoków 
 
 Git śledzi zmiany plików w repozytorium podczas pracy i oddziela pliki w repozytorium do trzech kategorii. Te zmiany są równoważne z informacjami wyświetlanymi po wprowadzeniu `git status` polecenia w wierszu polecenia:
 
-- **Pliki niezmodyfikowane** : te pliki nie zostały zmienione od czasu ostatniego zatwierdzenia.
-- **Zmodyfikowane pliki** : te pliki mają zmiany od czasu ostatniego zatwierdzenia, ale jeszcze nie zostały przygotowane do następnego zatwierdzenia.
-- **Pliki przemieszczane** : te pliki zawierają zmiany, które zostaną dodane do następnego zatwierdzenia.
+- **Pliki niezmodyfikowane**: te pliki nie zostały zmienione od czasu ostatniego zatwierdzenia.
+- **Zmodyfikowane pliki**: te pliki mają zmiany od czasu ostatniego zatwierdzenia, ale jeszcze nie zostały przygotowane do następnego zatwierdzenia.
+- **Pliki przemieszczane**: te pliki zawierają zmiany, które zostaną dodane do następnego zatwierdzenia.
 
 Podczas pracy program Visual Studio śledzi zmiany plików w projekcie w sekcji **zmiany** w oknie zmiany w usłudze **git** .
 
@@ -154,7 +157,7 @@ Program Visual Studio ułatwia identyfikowanie i rozwiązywanie konfliktów scal
 
 :::image type="content" source="media/git-merge-conflict-gold-bar.png" alt-text="Zrzut ekranu przedstawiający komunikat &quot;scalanie ukończone z konfliktami&quot; w programie Visual Studio ":::
 
-W oknie zmiany w usłudze **git** zostanie również wyświetlony komunikat " *scalanie w toku z konfliktami* " z niescalonymi plikami w oddzielnej sekcji poniżej.
+W oknie zmiany w usłudze **git** zostanie również wyświetlony komunikat "*scalanie w toku z konfliktami*" z niescalonymi plikami w oddzielnej sekcji poniżej.
 
 :::image type="content" source="media/git-merge-progress-conflicts-message.png" alt-text="Zrzut ekranu przedstawiający komunikat &quot;scalanie w toku ze konfliktami&quot; w programie Visual Studio ":::
 
@@ -197,11 +200,12 @@ Mimo że nowe środowisko git jest teraz domyślnie włączone w programie Visua
 > [!IMPORTANT]
 > Jeśli masz sugestię, daj nam znać! Doceniamy okazję do skontaktowania się z informacjami na temat decyzji projektowych za pośrednictwem portalu [**społeczności deweloperów**](https://aka.ms/vs-suggest) .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Ogłaszanie wersji środowiska Git w blogu programu Visual Studio](https://devblogs.microsoft.com/visualstudio/announcing-the-release-of-the-git-experience-in-visual-studio/)
 - [Uruchomienie nowego środowiska git](https://www.youtube.com/watch?v=UHrAg3iKoe0&t) w serwisie YouTube
 - [Seria Visual Studio Toolbox prezentuje: nowe wideo dotyczące środowiska git](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/The-New-Git-Experience) w witrynie Channel 9 i w serwisie [YouTube](https://www.youtube.com/watch?v=ZiQ2LXtAJ6I&feature=youtu.be)
 - [Atrakcyjne nowe aktualizacje środowiska Git w blogu programu Visual Studio](https://devblogs.microsoft.com/visualstudio/exciting-new-updates-to-the-git-experience-in-visual-studio/)
 - [Ulepszone środowisko Git w blogu programu Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/improved-git-experience-in-visual-studio-2019/)
+- [Praca z kontami usługi GitHub w programie Visual Studio](work-with-github-accounts.md)
 - [Informacje o wersji programu Visual Studio 2019](/visualstudio/releases/2019/release-notes)

@@ -1,5 +1,7 @@
 ---
 title: Wdrażanie rozszerzeń dla narzędzi programu SharePoint w programie Visual Studio | Microsoft Docs
+description: Wdróż rozszerzenia dla narzędzi programu SharePoint w programie Visual Studio. Użyj projektów rozszerzeń programu Visual Studio (VSIX) do tworzenia pakietów VSIX.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8178a660f757ae7d7c2758c76d6fd0fc4b22918f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 9c8b05b5cb74a28157436f95f01992515c716e6a
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584706"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672681"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Wdróż rozszerzenia dla narzędzi programu SharePoint w programie Visual Studio
 
@@ -130,7 +132,7 @@ W poniższych procedurach opisano sposób dodawania wpisów do pliku vsixmanifes
 
 5. Na liście **projekt** wybierz nazwę projektu, a następnie wybierz przycisk **OK** .
 
-6. W **Eksplorator rozwiązań**Otwórz menu skrótów dla szablonu projektu lub projektu szablonu elementu, a następnie wybierz polecenie **Zwolnij projekt**.
+6. W **Eksplorator rozwiązań** Otwórz menu skrótów dla szablonu projektu lub projektu szablonu elementu, a następnie wybierz polecenie **Zwolnij projekt**.
 
 7. Otwórz menu skrótów dla węzła projektu, a następnie wybierz polecenie **Edytuj**_YourTemplateProjectName_**. csproj** lub **Edytuj**_YourTemplateProjectName_**. vbproj**.
 
@@ -152,7 +154,7 @@ W poniższych procedurach opisano sposób dodawania wpisów do pliku vsixmanifes
 
 10. Zapisz i zamknij plik.
 
-11. W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu szablonu lub szablonu elementu, a następnie wybierz polecenie **Załaduj ponownie projekt**.
+11. W **Eksplorator rozwiązań** Otwórz menu skrótów dla projektu szablonu lub szablonu elementu, a następnie wybierz polecenie **Załaduj ponownie projekt**.
 
 #### <a name="to-include-a-template-that-you-create-manually"></a>Aby dołączyć szablon, który tworzysz ręcznie
 
@@ -172,7 +174,7 @@ W poniższych procedurach opisano sposób dodawania wpisów do pliku vsixmanifes
 
      Na przykład jeśli masz szablon elementu o nazwie ContosoCustomAction.zip, który obsługuje ustawienia regionalne w języku angielskim (Stany Zjednoczone), pełna ścieżka może być *ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip*.
 
-3. W **Eksplorator rozwiązań**wybierz plik szablonu (*YourTemplateName*. zip).
+3. W **Eksplorator rozwiązań** wybierz plik szablonu (*YourTemplateName*. zip).
 
 4. W oknie **Właściwości** ustaw właściwość **Akcja kompilacji** na **zawartość**.
 
@@ -188,7 +190,7 @@ W poniższych procedurach opisano sposób dodawania wpisów do pliku vsixmanifes
 
 8. Z listy **Źródło** wybierz pozycję **plik w systemie plików**.
 
-9. W polu **ścieżka** wprowadź pełną ścieżkę do zestawu (na przykład *ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip*lub użyj przycisku **Przeglądaj** , aby zlokalizować i wybrać zestaw, a następnie wybierz przycisk **OK** .
+9. W polu **ścieżka** wprowadź pełną ścieżkę do zestawu (na przykład *ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip* lub użyj przycisku **Przeglądaj** , aby zlokalizować i wybrać zestaw, a następnie wybierz przycisk **OK** .
 
 #### <a name="to-include-a-wizard-for-a-project-template-or-item-template"></a>Aby dodać kreatora dla szablonu projektu lub szablonu elementu
 
@@ -265,7 +267,7 @@ Poniższy przykład przedstawia zawartość pliku Extension. vsixmanifest rozsze
 </PackageManifest>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Poszerzanie systemu projektu SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)
 - [Rozwiń węzeł połączenia programu SharePoint w Eksplorator serwera](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)

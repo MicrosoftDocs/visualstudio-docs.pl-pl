@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: acd3b65f520a9be048fe2d0209a85a85d086df2f
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 863c2715b7dfbc2c331bb57f6cf06851401c51df
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438230"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672501"
 ---
 # <a name="devinit-configuration-file"></a>plik konfiguracji devinit
 
@@ -45,6 +45,7 @@ ms.locfileid: "94438230"
 Ścieżki są względne dla lokalizacji, w której działa devinit. Jest to zazwyczaj bieżący katalog roboczy, z którego `devinit` wykonano.
 
 ## <a name="file-format"></a>Format pliku
+W programie `.devinit.json` można określić więcej niż jedno narzędzie do uruchomienia. W `run` sekcji można umieścić dowolną liczbę obiektów. Przykład jest widoczny w naszym przykładzie [.devinit.jsna](sample-all-tool.md) wszystkich naszych narzędziach.
 
 ```json
 {

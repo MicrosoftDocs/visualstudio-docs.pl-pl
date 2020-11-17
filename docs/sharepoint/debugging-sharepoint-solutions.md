@@ -1,5 +1,7 @@
 ---
 title: Debugowanie rozwiązań programu SharePoint | Microsoft Docs
+description: Debuguj rozwiązania programu SharePoint za pomocą debugera programu Visual Studio. Poznaj proces debugowania i wdrażania F5 oraz odbiorników zdarzeń debugowania i debugowania.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d83c8ffd4fe5ebb627b70fa07f010bdc713225dd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c0bd1996f5d42561cb2d44879ab702d6b6c4b4f7
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72984488"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672863"
 ---
 # <a name="debug-sharepoint-solutions"></a>Debuguj rozwiązania programu SharePoint
   Można debugować rozwiązania programu SharePoint za pomocą [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debugera. Po rozpoczęciu debugowania program [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] wdraża pliki projektu na serwerze programu SharePoint, a następnie otwiera wystąpienie witryny programu SharePoint w przeglądarce sieci Web. W poniższych sekcjach wyjaśniono, jak debugować aplikacje programu SharePoint w programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
@@ -118,7 +120,7 @@ ms.locfileid: "72984488"
 ## <a name="sharepoint-project-features"></a>Funkcje projektu programu SharePoint
  Funkcja jest przenośną i modularną jednostką funkcji, która upraszcza modyfikację lokacji przy użyciu definicji lokacji. Jest to również pakiet elementów programu [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] (WSS), który można aktywować dla określonego zakresu i który ułatwia użytkownikom wykonywanie określonych celów lub zadań. Szablony są wdrażane jako funkcje.
 
- Po uruchomieniu projektu w trybie debugowania proces wdrażania tworzy folder w katalogu *funkcji* na *%CommonProgramFiles%\Microsoft Shared\Web Server extensions\14\TEMPLATE\FEATURES*. Nazwy funkcji mają format *nazwy projektu*_Feature*x*, np. TestProject_Feature1.
+ Po uruchomieniu projektu w trybie debugowania proces wdrażania tworzy folder w katalogu *funkcji* na *%CommonProgramFiles%\Microsoft Shared\Web Server extensions\14\TEMPLATE\FEATURES*. Nazwy funkcji mają format *nazwy projektu* _Feature *x*, np. TestProject_Feature1.
 
  Folder rozwiązania w katalogu funkcji zawiera plik *definicji funkcji* i plik *definicji przepływu pracy* . Plik definicji funkcji (Feature.xml) zawiera opis plików w funkcji projektu. plik definicji projektu (*Elements.xml*) zawiera opis szablonu projektu. *Elements.xml* można znaleźć w **Eksplorator rozwiązań**, ale Feature.xml jest generowany podczas tworzenia pakietu rozwiązania. Aby uzyskać więcej informacji o tych plikach, zobacz [Szablony projektów i elementów projektu programu SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md).
 
@@ -140,7 +142,7 @@ ms.locfileid: "72984488"
 ## <a name="enable-enhanced-debugging-information"></a>Włącz rozszerzone informacje o debugowaniu
  Ze względu na to, że czasami złożone interakcje między [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] procesem (devenv.exe), [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] procesem hosta programu sharepoint (*vssphost4.exe*), SharePoint i warstwą WCF, Diagnozowanie błędów występujących podczas kompilowania, wdrażania i tak dalej może być wyzwaniem. Aby ułatwić rozwiązanie takich błędów, można włączyć ulepszone informacje o debugowaniu. W tym celu przejdź do następującego klucza rejestru w rejestrze systemu Windows:
 
- **HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\11.0\SharePointTools**
+ **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools**
 
  Jeśli wartość **REG_DWORD** "EnableDiagnostics" jeszcze nie istnieje, utwórz ją ręcznie. Ustaw wartość "EnableDiagnostics" na "1".
 
@@ -148,5 +150,5 @@ ms.locfileid: "72984488"
 
  Aby uzyskać więcej informacji na temat innych kluczy rejestru programu SharePoint, zobacz [Debugowanie rozszerzeń dla narzędzi programu SharePoint w programie Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Rozwiązywanie problemów z rozwiązaniami programu SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md)

@@ -2,7 +2,7 @@
 title: Dziennik zmian (Visual Studio Tools for Unity, Mac) | Microsoft Docs
 description: Wyświetl dziennik zmian dla Visual Studio Tools for Unity i Mac. Zobacz zmiany w wersji 1.0.0.0 przez 2.7.0.0 i poza nią.
 ms.custom: ''
-ms.date: 5/19/2020
+ms.date: 11/13/2020
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -12,16 +12,70 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 72e1897e8eb7f7072ba22189c6414ba2585a6711
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 2f026c9d33f5aa49ebb7e974a507c85b87073897
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "94341729"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672850"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Dziennik zmian (narzędzia Visual Studio Tools for Unity, komputery Mac)
 
 Visual Studio Tools for Unity dziennik zmian.
+
+## <a name="2830"></a>2.8.3.0
+Wydana 10 listopada 2020
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+- **Oknie**
+
+  - Naprawiono dołączenie do aparatu Unity nawet wtedy, gdy w rozwiązaniu nie ma projektu rozszerzenia VSTU.
+
+## <a name="2820"></a>2.8.2.0
+Wydana 27 października 2020
+
+### <a name="new-features"></a>Nowe funkcje
+
+- **Integration**
+
+  - Ulepszona [`UNT0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0010.md) Diagnostyka do zastosowania do wszystkiego dziedziczonego z `Component` , a nie tylko `MonoBehaviour` .
+
+## <a name="2810"></a>2.8.1.0
+Wydanie 13 października 2020
+
+### <a name="new-features"></a>Nowe funkcje
+
+- **Sprawozdanie**
+
+  - Dodano obsługę niejawnej konwersji z wywołaniami. Wcześniej ewaluatora wymusza dokładne sprawdzanie typów, co powoduje wyświetlenie `Failed to find a match for method([parameters...])` komunikatów ostrzegawczych.
+
+- **Integration**
+
+  - Dodano [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md) diagnostykę. Nie należy używać `System.Reflection` funkcji w przypadku komunikatów o znaczeniu krytycznym, takich jak `Update` ,, `FixedUpdate` `LateUpdate` , lub `OnGUI` .
+
+  - Ulepszone [`USP0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0003.md) i [`USP0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0005.md) uniemożliwione, z obsługą wszystkich `AssetPostprocessor` metod statycznych.
+
+  - Dodano [`USP0016`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0016.md) pominięcie dla elementu `CS8618` . `C# 8.0` wprowadza typy odwołań do wartości null i niedopuszczające wartości null. Wykrywanie inicjalizacji typów dziedziczących z `UnityEngine.Object` nie jest obsługiwane i spowoduje błędy.
+
+  - Teraz korzystamy z tego samego odtwarzacza i mechanizmu generowania projektu asmdef dla obu systemów Unity 2019. x i 2020. x +.
+  
+  - Ulepszone środowisko użytkownika podczas generowania komunikatów aparatu Unity za pomocą kreatora.
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+- **Integration**
+
+  - Naprawiono nieoczekiwane uzupełnienie komunikatów w komentarzach.
+
+## <a name="2800"></a>2.8.0.0 
+Wydanie 14 września 2020
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+- **Integration**
+
+  - Stała generacja projektu odtwarzacza z użyciem aparatu Unity. x.
 
 ## <a name="2710"></a>2.7.1.0
 Wydana 5 sierpnia 2020

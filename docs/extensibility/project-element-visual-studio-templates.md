@@ -1,5 +1,7 @@
 ---
 title: Project — element (szablony Visual Studio) | Microsoft Docs
+description: Dowiedz się więcej na temat elementu projektu i sposobu określania plików lub katalogów, które mają zostać dodane do projektu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 335a1e4efa62f07e10bb24b9971627d24bb13273
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 652d438d6a0fdf0c42648ded7d3dc9c18b0212ff
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702004"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672388"
 ---
 # <a name="project-element-visual-studio-templates"></a>Project — element (szablony Visual Studio)
 Określa pliki lub katalogi, które mają zostać dodane do projektu.
@@ -47,7 +49,7 @@ Określa pliki lub katalogi, które mają zostać dodane do projektu.
 |Atrybut|Opis|
 |---------------|-----------------|
 |`File`|Atrybut wymagany.<br /><br /> Określa nazwę pliku projektu w pliku template *. zip* .|
-|`ReplaceParameters`|Atrybut opcjonalny.<br /><br /> Wartość logiczna określająca, czy plik projektu zawiera wartości parametrów, które muszą zostać zastąpione, gdy projekt jest tworzony na podstawie szablonu. Wartość domyślna to `false` .|
+|`ReplaceParameters`|Atrybut opcjonalny.<br /><br /> Wartość logiczna określająca, czy plik projektu zawiera wartości parametrów, które muszą zostać zastąpione, gdy projekt jest tworzony na podstawie szablonu. Wartość domyślna to `false`.|
 |`TargetFileName`|Atrybut opcjonalny.<br /><br /> Określa nazwę pliku projektu, gdy projekt jest tworzony na podstawie szablonu.|
 |`IgnoreProjectParameter`|Atrybut opcjonalny.<br /><br /> Określa, czy projekt powinien zostać dodany do bieżącego rozwiązania. Jeśli wartość parametru niestandardowego "$*myCustomParameter*$" istnieje w pliku zastępującym parametr, projekt jest tworzony, ale nie został dodany jako część aktualnie otwartego rozwiązania.|
 
@@ -100,7 +102,7 @@ Określa pliki lub katalogi, które mają zostać dodane do projektu.
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
 - [ProjectItem, element (szablony projektów Visual Studio)](../extensibility/projectitem-element-visual-studio-project-templates.md)

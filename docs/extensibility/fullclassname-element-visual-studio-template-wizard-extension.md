@@ -1,5 +1,7 @@
 ---
 title: FullClassName — element (rozszerzenie kreatora VS Template)
+description: Dowiedz się więcej na temat elementu FullClassName i sposobu, w jaki jest to w pełni kwalifikowana nazwa klasy implementującej interfejs IWizard.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed9ceb57f49d8c08b75aa140e45a0f4268f4336c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 987a97a34c846f93ef52765375c1512dd8968fb1
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769600"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672746"
 ---
 # <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>FullClassName — element (rozszerzenie Kreatora szablonów programu Visual Studio)
 W pełni kwalifikowana nazwa klasy, która implementuje `IWizard` interfejs.
@@ -86,7 +88,7 @@ W pełni kwalifikowana nazwa klasy, która implementuje `IWizard` interfejs.
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
 - [Instrukcje: korzystanie z kreatorów z szablonami projektu](../extensibility/how-to-use-wizards-with-project-templates.md)

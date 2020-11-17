@@ -1,5 +1,7 @@
 ---
 title: Wdrażanie, publikowanie, & uaktualnianie pakietów rozwiązania SharePoint
+description: Wdrażaj, Publikuj i uaktualniaj pakiety rozwiązań programu SharePoint. Dostosuj proces wdrażania. Publikowanie pakietów na serwerze zdalnym lub lokalnym.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 574712b870256fa7422e64a3c29ae8733f4c2251
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ab97efc82575c31c8e05b73063c2b53a09691d2d
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583882"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672668"
 ---
 # <a name="deploy-publish-and-upgrade-sharepoint-solution-packages"></a>Wdrażanie, publikowanie i uaktualnianie pakietów rozwiązania SharePoint
   Po opracowaniu rozwiązania SharePoint w programie Visual Studio można wdrożyć jego plik pakietu (wsp) na lokalnym serwerze programu SharePoint lub opublikować go na zdalnym lub lokalnym serwerze programu SharePoint. W przypadku wdrażania plików można dostosować sposób wdrażania plików pakietu (wsp).
@@ -47,7 +49,7 @@ ms.locfileid: "91583882"
 
 |Konfiguracja wdrożenia|Opis|
 |------------------------------|-----------------|
-|Domyślny|Domyślna konfiguracja wdrożenia. Wykonywane są następujące kroki wdrażania:<br /><br /> 1. Uruchom polecenie przed wdrożeniem.<br />2. Odtwórz pulę aplikacji usług IIS.<br />3. wycofywanie rozwiązania.<br />4. Dodaj rozwiązanie.<br />5. Aktywuj funkcje.<br />6. Uruchom polecenie po wdrożeniu.<br /><br /> Po odinstalowaniu pakietu są wykonywane następujące czynności wycofywania.<br /><br /> 1. Odtwórz pulę aplikacji usług IIS.<br />2. wycofywanie rozwiązania.|
+|Domyślne|Domyślna konfiguracja wdrożenia. Wykonywane są następujące kroki wdrażania:<br /><br /> 1. Uruchom polecenie przed wdrożeniem.<br />2. Odtwórz pulę aplikacji usług IIS.<br />3. wycofywanie rozwiązania.<br />4. Dodaj rozwiązanie.<br />5. Aktywuj funkcje.<br />6. Uruchom polecenie po wdrożeniu.<br /><br /> Po odinstalowaniu pakietu są wykonywane następujące czynności wycofywania.<br /><br /> 1. Odtwórz pulę aplikacji usług IIS.<br />2. wycofywanie rozwiązania.|
 |Brak aktywacji|Ta konfiguracja wdrożenia uruchamia te same kroki jak konfiguracja domyślna, ale pomija krok aktywacji.|
 
  Możesz utworzyć własne konfiguracje wdrożenia, aby ukończyć pojedynczy krok lub zmienić kolejność kroków w procesie wdrażania. Aby uzyskać więcej informacji, zobacz [How to: Edit a SharePoint Deployment Configuration](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).
@@ -64,5 +66,5 @@ ms.locfileid: "91583882"
 ### <a name="upgrade-published-packages"></a>Uaktualnianie opublikowanych pakietów
  Jeśli wprowadzisz jakiekolwiek zmiany w projekcie programu SharePoint w programie Visual Studio po jego opublikowaniu, należy uaktualnić opublikowany pakiet, aby uwzględnić zmiany. Aby uaktualnienie powiodło się, pakiet musi mieć unikatową nazwę. Jeśli w witrynie programu SharePoint zostanie znaleziony pakiet o tej samej nazwie, który może wystąpić w przypadku aktualizowania istniejącej aplikacji — błąd powoduje wyświetlenie alertu dotyczącego konfliktu nazw plików i pozwala zmienić nazwę pakietu. Po ponownym opublikowaniu nowy pakiet zostanie wyświetlony w witrynie programu SharePoint i będzie można go uaktualnić. Uaktualniony pakiet aktualizuje rozwiązanie przy użyciu danych ze starszego pakietu, a następnie aktywuje rozwiązanie w programie SharePoint. Aby uzyskać więcej informacji, zobacz [jak: wdrażanie, publikowanie i uaktualnianie rozwiązań SharePoint na serwerze zdalnym](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

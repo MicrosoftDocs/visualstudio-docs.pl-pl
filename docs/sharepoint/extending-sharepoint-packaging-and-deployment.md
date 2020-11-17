@@ -1,5 +1,7 @@
 ---
 title: Rozszerzanie pakowania i wdrażania programu SharePoint | Microsoft Docs
+description: Rozwiń pakiet i wdrażanie programu SharePoint. Utwórz kroki wdrażania i konfiguracje. Obsłuż konflikty wdrożenia. Dostosuj reguły sprawdzania poprawności.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4bb98e2b1c83ff06570a77dc84ce6a7bf690f81d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9f0f9eb6c863a961a527fcb6fb330a2a4f88669e
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62967468"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672590"
 ---
 # <a name="extend-sharepoint-packaging-and-deployment"></a>Rozszerzona pakowanie i wdrażanie programu SharePoint
   Można rozłożyć proces tworzenia pakietów i wdrożeń dla projektów programu SharePoint.
@@ -52,7 +54,7 @@ ms.locfileid: "62967468"
 ## <a name="customize-validation-rules"></a>Dostosuj reguły walidacji
  Przed wdrożeniem pakietu rozwiązań (wsp) można utworzyć niestandardowe reguły sprawdzania poprawności pakietów, aby sprawdzić, czy funkcja lub pakiet są prawidłowe. Można na przykład zgłosić informacje, ostrzeżenia lub błędy do deweloperów, aby ułatwić im Rozwiązywanie problemów z walidacją. Aby uzyskać więcej informacji, zobacz [How to: Create Custom Feature and Package Rules for SharePoint Solutions](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Instrukcje: uruchamianie kodu po wykonaniu kroków wdrożenia](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)
 - [Przewodnik: Tworzenie niestandardowego kroku wdrożenia dla projektów programu SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)
 - [Instrukcje: Tworzenie niestandardowych reguł walidacji pakietu dla rozwiązań SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)

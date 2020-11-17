@@ -1,5 +1,7 @@
 ---
 title: Rozszerzanie systemu projektu programu SharePoint | Microsoft Docs
+description: Zwiększ system projektu programu SharePoint. Dowiedz się, jak rozłożyć system projektu programu SharePoint. Informacje o typowych zadaniach programistycznych.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7dce10c2bc44eb4fde6a6e38417d136ea5e9ba41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c017217f66e38eed6248b90efaeabce0efaa9c70
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62557027"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672551"
 ---
 # <a name="extend-the-sharepoint-project-system"></a>Poszerzanie systemu projektu SharePoint
   Rozwiązania programu SharePoint można tworzyć przy użyciu zestawu szablonów projektu i szablonów elementów w programie Visual Studio. Te szablony spełniają wymagania wielu scenariuszy programistycznych, ale mogą zostać wykryte sytuacje, w których nie zapewniają potrzebnych funkcji. W takich przypadkach można rozszerzyć system projektu programu SharePoint.
@@ -48,7 +50,7 @@ ms.locfileid: "62557027"
 
 - Przekonwertuj obiekt w systemie projektu SharePoint na odpowiedni obiekt w modelu obiektów automatyzacji programu Visual Studio lub modelu obiektów integracji lub odwrotnie. Aby uzyskać więcej informacji, zobacz [skonwer między typami systemu projektu SharePoint a innymi typami projektów programu Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Definiowanie niestandardowych typów elementów projektu SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [Zwiększ elementy projektu SharePoint](../sharepoint/extending-sharepoint-project-items.md)
 - [Zwiększ projekty programu SharePoint](../sharepoint/extending-sharepoint-projects.md)

@@ -1,5 +1,7 @@
 ---
 title: Projektowanie modelu łączności danych firmy | Microsoft Docs
+description: Zaprojektuj model łączności danych biznesowych (BDC). Dodaj jednostki i metody. Zdefiniuj parametry metody. Dodawanie deskryptorów filtrów. Sprawdź poprawność modelu usługi BDC.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 16a410b59cef6f282d2d27ad90a90013636d6489
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b574c52b9081cc6640c5611e0759b5559e7a4f6d
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72984466"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672655"
 ---
 # <a name="design-a-business-data-connectivity-model"></a>Projektowanie modelu łączności danych firmy
   Możesz opracować model usługi łączności danych biznesowych (BDC), dodając jednostki i metody do pliku modelu. Jednostka opisuje zbiór pól danych. Na przykład jednostka może reprezentować tabelę w bazie danych. Metoda wykonuje zadanie takie jak dodawanie, usuwanie lub aktualizowanie danych reprezentowanych przez jednostki. Aby uzyskać więcej informacji, zobacz [Integrowanie danych firmowych z programem SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).
@@ -57,7 +59,7 @@ ms.locfileid: "72984466"
  Program SharePoint udostępnia kilka funkcji, które umożliwiają użytkownikom udostępnianie wartości filtru. Na przykład dane biznesowe składniki Web Part zawierają pola tekstowego filtr. Użytkownicy mogą ograniczać dane na liście, wprowadzając wartość w polu tekstowym. Aby uzyskać więcej informacji na temat dodawania deskryptora filtru do metody, zobacz [jak: Dodawanie deskryptora filtru do metody wyszukiwania](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md).
 
 ### <a name="filter-descriptor-properties"></a>Właściwości deskryptora filtru
- Należy ustawić wartość **skojarzonego deskryptora typu**, **nazwę**i właściwości **typu** deskryptora filtru. Wszystkie inne właściwości są opcjonalne.
+ Należy ustawić wartość **skojarzonego deskryptora typu**, **nazwę** i właściwości **typu** deskryptora filtru. Wszystkie inne właściwości są opcjonalne.
 
  Właściwość **deskryptora skojarzonego typu** wiąże Deskryptor filtru z parametrem wejściowym. Gdy użytkownik poda wartość filtru, usługa BDC przekazuje tę wartość do metody przy użyciu parametru wejściowego.
 
@@ -69,7 +71,7 @@ ms.locfileid: "72984466"
  W niektórych przypadkach użytkownik może nie podawać wartości filtru. Wartość domyślną można podać przez dodanie wartości domyślnej do wystąpienia metody lub przez ustawienie wartości domyślnej w kodzie metody. Aby uzyskać więcej informacji na temat dodawania wartości domyślnej do wystąpienia metody, zobacz element [MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14)). Aby zapoznać się z przykładem sposobu ustawiania wartości domyślnej parametru wejściowego w kodzie metody, zobacz [How to: Add a Descriptor Filter to a metoda Finder](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md).
 
 ## <a name="validate-the-model"></a>Weryfikowanie modelu
- Podczas opracowywania można sprawdzić poprawność modelu. Program Visual Studio identyfikuje problemy, które mogą uniemożliwić zachowanie modelu zgodnie z oczekiwaniami. Te problemy są wyświetlane w **Lista błędów**programu Visual Studio.
+ Podczas opracowywania można sprawdzić poprawność modelu. Program Visual Studio identyfikuje problemy, które mogą uniemożliwić zachowanie modelu zgodnie z oczekiwaniami. Te problemy są wyświetlane w **Lista błędów** programu Visual Studio.
 
  Możesz sprawdzić poprawność modelu, otwierając menu skrótów dla projektanta usługi BDC, a następnie wybierając polecenie **Weryfikuj**. Jeśli model zawiera błędy, pojawiają się one w **Lista błędów**. Możesz szybko przenieść kursor do kodu, który zawiera błąd przez dwukrotne kliknięcie na liście błędu. Alternatywnie można wielokrotnie wybrać klawisze **F8** lub **SHIFT** + **F8** , aby krok do przodu lub do tyłu przekroczyć błędy na liście.
 
@@ -89,7 +91,7 @@ ms.locfileid: "72984466"
 |----------|------------|
 |Do wdrażania modeli w usłudze BDC.|Edytuj|
 |Tworzenie list i składniki Web Part przy użyciu zewnętrznych typów zawartości (jednostek) w modelu.|Wybór w klientach|
-|Tworzenie, odczytywanie, aktualizowanie i usuwanie danych jednostki.|Realizacja|
+|Tworzenie, odczytywanie, aktualizowanie i usuwanie danych jednostki.|Wykonaj polecenie|
 
  Aby uzyskać więcej informacji na temat tych ustawień, zobacz [Zarządzanie usługą łączności danych firmowych](/previous-versions/office/sharepoint-server-2010/ee661742(v=office.14)).
 

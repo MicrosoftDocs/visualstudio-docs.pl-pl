@@ -1,5 +1,7 @@
 ---
 title: Tworzenie składniki Web Part dla programu SharePoint | Microsoft Docs
+description: Tworzenie składników Web Part dla programu SharePoint. Za pomocą części sieci Web, można modyfikować zawartość, wygląd i zachowanie stron witryny programu SharePoint za pomocą przeglądarki.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4824c358f81f2cf757f037611ed70ba9b8935130
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: bc9427d561817cb115473bddc71f2ba63475427e
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740160"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672798"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>Tworzenie składników Web Part dla programu SharePoint
   Za pomocą części sieci Web, można modyfikować zawartość, wygląd i zachowanie stron witryny programu SharePoint za pomocą przeglądarki. Części sieci Web to kontrolki po stronie serwera, które są uruchamiane wewnątrz strony składnika Web Part: są to bloki konstrukcyjne stron, które są wyświetlane w witrynie programu SharePoint. Zobacz [blok konstrukcyjny: składniki Web Part](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14)).
@@ -52,7 +54,7 @@ ms.locfileid: "90740160"
  Aby uzyskać więcej informacji, zobacz [How to: Create a SharePoint Web Part](../sharepoint/how-to-create-a-sharepoint-web-part.md).
 
 ### <a name="visual-web-part-item"></a>Element wizualnego składnika Web Part
- Wizualny składnik Web Part to składnik Web Part tworzony przy użyciu projektanta Visual Web Developer w programie Visual Studio. Wizualny składnik Web Part działa tak samo jak każdy inny składnik Web Part. Aby dodać kontrolki, takie jak przyciski i pola tekstowe, do składnika Web Part, należy dodać kod do pliku XML. Można jednak dodać kontrolki do wizualnego składnika Web Part, przeciągając je lub kopiując do składnika Web Part z **przybornika**programu Visual Studio. Następnie Projektant generuje wymagany kod w pliku XML. Zobacz [jak: Tworzenie składnika Web Part programu SharePoint za pomocą projektanta](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).
+ Wizualny składnik Web Part to składnik Web Part tworzony przy użyciu projektanta Visual Web Developer w programie Visual Studio. Wizualny składnik Web Part działa tak samo jak każdy inny składnik Web Part. Aby dodać kontrolki, takie jak przyciski i pola tekstowe, do składnika Web Part, należy dodać kod do pliku XML. Można jednak dodać kontrolki do wizualnego składnika Web Part, przeciągając je lub kopiując do składnika Web Part z **przybornika** programu Visual Studio. Następnie Projektant generuje wymagany kod w pliku XML. Zobacz [jak: Tworzenie składnika Web Part programu SharePoint za pomocą projektanta](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).
 
 ## <a name="sharepoint-controls"></a>Kontrolki programu SharePoint
  Program Visual Studio udostępnia pewne kontrolki służące do tworzenia stron programu SharePoint, takich jak strony aplikacji. Te kontrolki są wyświetlane w **przyborniku** w obszarze **kontrolki programu SharePoint**. Funkcje tych formantów pochodzą z przestrzeni nazw [Microsoft. SharePoint. WebControls](/previous-versions/office/sharepoint-server/ms413880(v=office.15)) , która zawiera kontrolki serwera ASP.NET, które są używane na stronach witryny i listy programu SharePoint.

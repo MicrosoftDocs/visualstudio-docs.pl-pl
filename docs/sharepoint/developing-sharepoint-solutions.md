@@ -1,5 +1,7 @@
 ---
 title: Opracowywanie rozwiązań SharePoint | Microsoft Docs
+description: Opracowywanie rozwiązań programu SharePoint. Poznaj elementy projektu programu SharePoint. Zrozumienie projektu programu SharePoint i właściwości elementu projektu.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 36823637c530d65776c149ff576bf5e7e0ca545f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 755723dd2ae309e971e86852646ee33d2caa22cf
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016796"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672824"
 ---
 # <a name="develop-sharepoint-solutions"></a>Opracowywanie rozwiązań SharePoint
   Kilka szablonów typów projektów programu SharePoint jest dostępnych w programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] do tworzenia witryn i elementów witryny programu SharePoint. Aby uzyskać listę dostępnych typów projektów, zobacz [Szablony projektów i elementów projektu programu SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md). Poniżej znajduje się opis elementów i właściwości projektu programu SharePoint.
@@ -47,7 +49,7 @@ ms.locfileid: "86016796"
 
  Aby ręcznie dodać funkcję, wykonaj polecenie **Dodaj funkcję** w menu skrótów węzła funkcji. Zawartość funkcji można wyświetlić lub zmienić za pomocą projektanta funkcji. Aby uzyskać więcej informacji, zobacz [How to: Dostosowywanie funkcji SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).
 
- Gdy funkcja jest dodawana do projektu programu SharePoint, jest wyświetlana w **Eksplorator rozwiązań** jako węzeł o domyślnej nazwie funkcja*x*. feature, gdzie *x* jest unikatowym numerem. Po wdrożeniu funkcji na serwerze programu SharePoint Administrator programu SharePoint może ją uaktywnić i udostępnić użytkownikom witryny programu SharePoint.
+ Gdy funkcja jest dodawana do projektu programu SharePoint, jest wyświetlana w **Eksplorator rozwiązań** jako węzeł o domyślnej nazwie funkcja *x*. feature, gdzie *x* jest unikatowym numerem. Po wdrożeniu funkcji na serwerze programu SharePoint Administrator programu SharePoint może ją uaktywnić i udostępnić użytkownikom witryny programu SharePoint.
 
 #### <a name="package-node"></a>Węzeł pakietu
  Węzeł **pakietu** zawiera pojedynczy plik, który służy jako mechanizm dystrybucji dla projektu programu SharePoint. Ten plik, znany jako *pakiet rozwiązania*, to. Na podstawie pliku CAB. Rozszerzenie WSP. Pakiet rozwiązania to możliwy do wdrożenia plik do wielokrotnego użytku, który zawiera zestaw funkcji, definicje witryn i zestawy, które mają zastosowanie do witryn programu SharePoint, a które można włączać lub wyłączać pojedynczo. Węzeł **pakietu** również zawsze zawiera plik o nazwie Package. wspdef, [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] plik definicji pakietu. Po wdrożeniu pakietu na serwerze, na którym działa program SharePoint, administrator programu SharePoint może go zainstalować i aktywować jego funkcje.
@@ -101,7 +103,7 @@ ms.locfileid: "86016796"
 |Lokalizacja wdrożenia|W pełni kwalifikowana ścieżka pliku na serwerze programu SharePoint. Ta ścieżka składa się z właściwości podrzędnych i ścieżki wdrożenia elementu głównego wdrożenia.|
 |Ścieżka wdrożenia|Ścieżka względna pliku w pliku programu SharePoint Server, na przykład Workflow1 \\ . W pełni kwalifikowana ścieżka do pliku jest tworzona przez połączenie wartości *ścieżki wdrożenia* na końcu wartości *głównej wdrożenia* .<br /><br /> Wybranie wartości *RootFile* dla właściwości *typ wdrożenia* spowoduje zmianę właściwości *głównej wdrożenia* na \<SharePointRoot> \\ , co spowodowało w pełni kwalifikowaną ścieżkę \<SharePointRoot> \Workflow1 \\ . Aby uzyskać więcej informacji, zobacz [pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).|
 |Katalog główny wdrożenia|Ciąg. Folder główny, w którym plik jest wdrożony na serwerze programu SharePoint. Na przykład \<SharePointRoot> \Template\Features \\ \<FeatureName> \\ .<br /><br /> Wartość właściwości *root wdrożenia* jest określana na podstawie ustawienia *typu wdrożenia* .|
-|Typ wdrożenia|Typ wdrożenia pliku, który określa jego wartość *główną wdrożenia* . Może być jedną z następujących wartości:<br /><br /> NoDeployment: *\<no value>*<br /><br /> ElementManifest: * \<SharePointRoot> \Template\Features \\ \<FeatureName> *\\<br /><br /> Elementu: * \<SharePointRoot> \\ \<FeatureName> \Template\Features \\ *<br /><br /> TemplateFile: * \<SharePointRoot> \Template \\ *<br /><br /> RootFile: *\<SharePointRoot>\\*<br /><br /> GlobalResource: * \<SharePointRoot> \Resources \\ *<br /><br /> ClassResource: *\<ClassResourcePath>\\*<br /><br /> Aby uzyskać więcej informacji, zobacz <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|
+|Typ wdrożenia|Typ wdrożenia pliku, który określa jego wartość *główną wdrożenia* . Może być jedną z następujących wartości:<br /><br /> NoDeployment: *\<no value>*<br /><br /> ElementManifest: *\<SharePointRoot> \Template\Features \\ \<FeatureName>*\\<br /><br /> Elementu: *\<SharePointRoot> \\ \<FeatureName> \Template\Features \\*<br /><br /> TemplateFile: *\<SharePointRoot> \Template \\*<br /><br /> RootFile: *\<SharePointRoot>\\*<br /><br /> GlobalResource: *\<SharePointRoot> \Resources \\*<br /><br /> ClassResource: *\<ClassResourcePath>\\*<br /><br /> Aby uzyskać więcej informacji, zobacz <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|
 |Nazwa pliku|Nazwa pliku lub folderu dla pliku elementu.|
 |Pełna ścieżka|Lokalizacja pliku dla elementu. (Tylko do odczytu).|
 
@@ -128,7 +130,7 @@ ms.locfileid: "86016796"
 |[Zabezpieczenia dla rozwiązań SharePoint](../sharepoint/security-for-sharepoint-solutions.md)|Opisuje zagadnienia dotyczące zabezpieczeń dotyczące opracowywania rozwiązań programu SharePoint w programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .|
 |[Okno dialogowe selektora adresów URL &#40;programowanie SharePoint w programie Visual Studio&#41;](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|Opisuje okno dialogowe, za pomocą którego można dodać odwołania do ścieżek do zasobów w projekcie lub na lokalnym serwerze programu SharePoint.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wprowadzenie &#40;programowanie SharePoint w programie Visual Studio&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)
 - [Przeglądanie połączeń programu SharePoint przy użyciu Eksplorator serwera](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)
 - [Kompilowanie i debugowanie rozwiązań SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
