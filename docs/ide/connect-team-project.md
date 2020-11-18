@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
-ms.openlocfilehash: 4e4fdfb26c601ce6b706c1c946ea9afe9b18ecb2
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 7d920370013b2d624430acbdbe8e38dcc9aab03d
+ms.sourcegitcommit: f78960320798e2c6b33145cee77a2221f031603c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850094"
+ms.locfileid: "94878260"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>Nawiązywanie połączenia z projektami w Team Explorer
 
@@ -32,7 +32,7 @@ Możesz użyć okna narzędzia **Team Explorer** , aby koordynować wysiłki kod
 
 ::: moniker-end
 
-![Strona główna Team Explorer w programie Visual Studio](media/team-explorer/team-explorer.png)
+![Strona główna Team Explorer w programie Visual Studio](media/team-explorer/team-explorer.png "Strona główna Team Explorer w programie Visual Studio.")
 
 ::: moniker range="vs-2017"
 
@@ -45,17 +45,17 @@ Możesz użyć okna narzędzia **Team Explorer** , aby koordynować wysiłki kod
 
 Połącz się z projektem lub repozytorium na stronie **Połącz** .
 
-![Połącz stronę w Team Explorer](media/team-explorer/connect.png)
+![Połącz stronę w Team Explorer](media/team-explorer/connect.png "Strona Team Explorer-Connect w programie Visual Studio")
 
 Aby nawiązać połączenie z projektem:
 
 1. Otwórz stronę **Połącz** , wybierając ikonę **Zarządzaj połączeniami** .
 
-   ![Przycisk Zarządzaj połączeniami w Team Explorer](media/team-explorer/manage-connections.png)
+   ![Przycisk Zarządzaj połączeniami w Team Explorer](media/team-explorer/manage-connections.png "Przycisk Team Explorer-Manage Connections w programie Visual Studio.")
 
 1. Na stronie **Połącz** wybierz pozycję **Zarządzaj połączeniami**  >  **Połącz** się z projektem.
 
-   ![Nawiązywanie połączenia z projektem w Team Explorer](media/team-explorer/connect-project.png)
+   ![Nawiązywanie połączenia z projektem w Team Explorer](media/team-explorer/connect-project.png "Opcja Team Explorer — Połącz z projektem w programie Visual Studio.")
 
 > [!TIP]
 > Jeśli chcesz otworzyć projekt z repozytorium, zobacz [Otwieranie projektu z repozytorium](../get-started/tutorial-open-project-from-repo.md). Jeśli chcesz utworzyć nowy projekt lub dodać użytkowników do projektu, zobacz [Tworzenie projektu (Azure DevOps)](/azure/devops/organizations/projects/create-project) i [Dodawanie użytkowników do projektu lub zespołu (Azure DevOps)](/azure/devops/organizations/security/add-users-team-project).

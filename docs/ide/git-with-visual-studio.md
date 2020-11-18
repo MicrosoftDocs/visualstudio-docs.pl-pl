@@ -8,12 +8,12 @@ ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 30ae69f07c89efb6d01228088596fc1bc05fac87
-ms.sourcegitcommit: e8a13978131f257d91ce37c5a2e0d153a4c400ef
+ms.openlocfilehash: e640d19659861a03d0f97abc799344bebb14b936
+ms.sourcegitcommit: f78960320798e2c6b33145cee77a2221f031603c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94704069"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94878312"
 ---
 # <a name="git-experience-in-visual-studio"></a>Środowisko Git w programie Visual Studio
 
@@ -41,7 +41,7 @@ Istnieją trzy sposoby, aby rozpocząć korzystanie z narzędzia Git z programem
 
 Jeśli kod nie jest skojarzony z usługą git, możesz zacząć od utworzenia nowego repozytorium git. W tym celu wybierz pozycję **git**  >  **Utwórz repozytorium git** na pasku menu. Następnie w oknie dialogowym **Tworzenie repozytorium git** wprowadź informacje.
 
-:::image type="content" source="media/git-create-repository.png" alt-text="Zrzut ekranu przedstawiający okno dialogowe Tworzenie repozytorium Git w programie Visual Studio ":::
+:::image type="content" source="media/git-create-repository.png" alt-text="Okno dialogowe Tworzenie repozytorium Git w programie Visual Studio.":::
 
 Okno dialogowe **Tworzenie repozytorium git** ułatwia wypychanie nowego repozytorium do usługi GitHub. Domyślnie nowe repozytorium jest prywatne, co oznacza, że jesteś jedynym, kto ma do niego dostęp. Jeśli wyłączysz to pole, repozytorium będzie publiczne, co oznacza, że każdy z nich może go wyświetlić.
 
@@ -54,7 +54,7 @@ Można utworzyć tylko lokalne repozytorium git przy użyciu opcji **tylko lokal
 
 Program Visual Studio zawiera proste środowisko klonowania. Jeśli znasz adres URL repozytorium, które chcesz sklonować, możesz wkleić adres URL w sekcji **Lokalizacja repozytorium** , a następnie wybrać lokalizację dysku, do której ma zostać sklonowany program Visual Studio.
 
-:::image type="content" source="media/git-clone-repository.png" alt-text="Zrzut ekranu przedstawiający okno dialogowe klonowanie repozytorium Git w programie Visual Studio ":::
+:::image type="content" source="media/git-clone-repository.png" alt-text="Okno dialogowe klonowanie repozytorium Git w programie Visual Studio.":::
 
 Jeśli nie znasz adresu URL repozytorium, program Visual Studio ułatwia przeglądanie i Klonowanie istniejącego repozytorium usługi GitHub lub Azure DevOps.
 
@@ -62,7 +62,7 @@ Jeśli nie znasz adresu URL repozytorium, program Visual Studio ułatwia przegl�
 
 Po sklonowaniu repozytorium lub utworzeniu go program Visual Studio wykrywa repozytorium git i dodaje je do listy **lokalnych repozytoriów** w menu git. W tym miejscu możesz szybko uzyskać dostęp do repozytoriów Git i przełączać się między nimi.
 
-:::image type="content" source="media/git-local-repositories.png" alt-text="Zrzut ekranu opcji lokalnych repozytoriów z menu Git w programie Visual Studio ":::
+:::image type="content" source="media/git-local-repositories.png" alt-text="Opcja lokalnych repozytoriów z menu Git w programie Visual Studio ":::
 
 ## <a name="view-files-in-solution-explorer"></a>Wyświetl pliki w Eksplorator rozwiązań
 
@@ -76,7 +76,7 @@ Program Visual Studio dostosowuje swój widok na podstawie tego, który plik wid
 
 Można przełączać się między aktualnie otwartym widokiem a listą widoków przy użyciu przycisku **Przełącz widoki** na pasku narzędzi Eksplorator rozwiązań.
 
-:::image type="content" source="media/git-solution-explorer-views.png" alt-text="Zrzut ekranu przedstawiający Eksplorator rozwiązań za pomocą przycisku Przełącz widoki wybrane w programie Visual Studio ":::
+:::image type="content" source="media/git-solution-explorer-views.png" alt-text="Eksplorator rozwiązań z przyciskiem przełączania widoków wybranym w programie Visual Studio.":::
 
 ## <a name="git-changes-window"></a>Okno zmian git
 
@@ -88,7 +88,7 @@ Git śledzi zmiany plików w repozytorium podczas pracy i oddziela pliki w repoz
 
 Podczas pracy program Visual Studio śledzi zmiany plików w projekcie w sekcji **zmiany** w oknie zmiany w usłudze **git** .
 
-:::image type="content" source="media/git-changes-window.png" alt-text="Zrzut ekranu przedstawiający okno zmiany Git w programie Visual Studio ":::
+:::image type="content" source="media/git-changes-window.png" alt-text="Okno zmiany w usłudze Git w programie Visual Studio.":::
 
 Gdy wszystko będzie gotowe do przemieszczania zmian, kliknij **+** przycisk (plus) w każdym pliku, który chcesz przygotować, lub kliknij prawym przyciskiem myszy plik, a następnie wybierz pozycję **etap**. Możesz również przemieścić wszystkie zmodyfikowane pliki jednym kliknięciem, używając przycisku przemieszczenie wszystko **+** (plus) w górnej części sekcji **zmiany** .
 
@@ -98,7 +98,7 @@ Możesz również zrezygnować z przygotowania zmodyfikowanych plików, pomijaj�
 
 Program Visual Studio ułatwia również przekazywanie i synchronizowanie za pomocą jednego kliknięcia przy użyciu skrótów **Zatwierdź wszystkie i wypchnij** i **Zatwierdź wszystkie skróty i Synchronizuj** . Po dwukrotnym kliknięciu dowolnego pliku w sekcjach **zmiany** i **przemieszczane zmiany** można zobaczyć porównanie liniowe z niezmodyfikowaną wersją pliku.
 
-:::image type="content" source="media/git-file-version-compare.png" alt-text="Zrzut ekranu przedstawiający porównanie wierszy według wierszy w programie Visual Studio ":::
+:::image type="content" source="media/git-file-version-compare.png" alt-text="Porównanie liniowe w wersji plików w programie Visual Studio ":::
 
 > [!TIP]
 > Możesz skojarzyć element roboczy usługi Azure DevOps z zatwierdzeniem za pomocą znaku "#", jeśli masz połączenie z repozytorium usługi Azure DevOps. Repozytorium usługi Azure DevOps można połączyć za pomocą **Team Explorer**  >  **zarządzania połączeniami**.
@@ -107,11 +107,11 @@ Program Visual Studio ułatwia również przekazywanie i synchronizowanie za pom
 
 Program Visual Studio Wyświetla bieżącą gałąź w selektorze w górnej części okna **zmiany systemu Git** .
 
-:::image type="content" source="media/git-changes-current-branch-selector.png" alt-text="Zrzut ekranu przedstawiający bieżące gałęzie, które można wyświetlić za pomocą selektora w górnej części selektora zmian Git w programie Visual Studio ":::
+:::image type="content" source="media/git-changes-current-branch-selector.png" alt-text="Bieżące gałęzie, które można wyświetlić za pomocą selektora w górnej części selektora zmian Git w programie Visual Studio ":::
 
 Bieżąca gałąź jest również dostępna na pasku stanu w prawym dolnym rogu środowiska IDE programu Visual Studio.
 
-:::image type="content" source="media/git-changes-current-branch-status-bar.png" alt-text="Zrzut ekranu przedstawiający bieżące gałęzie, które można wyświetlić przy użyciu paska stanu w prawym dolnym rogu w środowisku IDE programu Visual Studio ":::
+:::image type="content" source="media/git-changes-current-branch-status-bar.png" alt-text="Bieżące gałęzie, które można wyświetlić przy użyciu paska stanu w prawym dolnym rogu środowiska IDE programu Visual Studio ":::
 
 Z obu lokalizacji można przełączać się między istniejącymi gałęziami.
 
@@ -121,7 +121,7 @@ Można również utworzyć nową gałąź. Równoważne polecenie dla tej akcji 
 
 Tworzenie nowej gałęzi jest tak proste jak wprowadzenie nazwy gałęzi i oparcie jej poza istniejącą gałęzią.
 
-:::image type="content" source="media/git-changes-create-new-branch.png" alt-text="Zrzut ekranu przedstawiający okno dialogowe Tworzenie nowej gałęzi w programie Visual Studio ":::
+:::image type="content" source="media/git-changes-create-new-branch.png" alt-text="Okno dialogowe Tworzenie nowej gałęzi w programie Visual Studio ":::
 
 Możesz wybrać istniejącą gałąź lokalną lub zdalną jako podstawę. Pole wyboru **rozgałęzienie wyewidencjonowania** automatycznie przełącza użytkownika do nowo utworzonego rozgałęzienia. Równoważne polecenie dla tej akcji to `git checkout -b <new-branch><existing-branch>` .
 
@@ -137,17 +137,17 @@ Po wybraniu opcji **Zarządzaj gałęziami** w menu **git** zobaczysz widok drze
 
 Po pobraniu gałęzi okno zmiany w usłudze **git** ma wskaźnik pod listą rozwijaną gałąź, która wyświetla liczbę nieściągniętych zatwierdzeń z gałęzi zdalnej. Ten wskaźnik przedstawia również liczbę niewypychanych zatwierdzeń lokalnych.
 
-:::image type="content" source="media/git-repo-drop-down-indicator.png" alt-text="Zrzut ekranu okna zmiany git, który pokazuje element interfejsu użytkownika listy rozwijanej wskaźnika w programie Visual Studio ":::
+:::image type="content" source="media/git-repo-drop-down-indicator.png" alt-text="Okno zmiany git, które pokazuje element interfejsu użytkownika listy rozwijanej wskaźnika w programie Visual Studio ":::
 
 Wskaźnik również działa jako link umożliwiający przejście do historii zatwierdzania tej gałęzi w oknie **repozytorium git** . W górnej części historii są teraz wyświetlane szczegóły tych zatwierdzeń przychodzących i wychodzących. W tym miejscu możesz również zdecydować się na ściąganie lub wypchnięcie zatwierdzeń.
 
-:::image type="content" source="media/git-branch-commit-history.png" alt-text="Zrzut ekranu okna repozytorium git, który pokazuje historię zatwierdzania gałęzi w programie Visual Studio ":::
+:::image type="content" source="media/git-branch-commit-history.png" alt-text="Okno repozytorium git, które pokazuje historię zatwierdzania gałęzi w programie Visual Studio ":::
 
 #### <a name="commit-details"></a>Szczegóły zatwierdzenia
 
 Po dwukrotnym kliknięciu **zatwierdzenia** program Visual Studio otwiera jego szczegóły w osobnym oknie narzędzi. W tym miejscu możesz cofnąć zatwierdzenie, zresetować zatwierdzenie, zmienić komunikat zatwierdzenia lub utworzyć tag w zatwierdzeniu. Po kliknięciu zmienionego pliku w zatwierdzeniu program Visual Studio otwiera widok **różnic** obok siebie zatwierdzania i jego elementu nadrzędnego.
 
-:::image type="content" source="media/git-branch-commit-details.png" alt-text="Zrzut ekranu przedstawiający okno dialogowe Szczegóły zatwierdzania w programie Visual Studio ":::
+:::image type="content" source="media/git-branch-commit-details.png" alt-text="Okno dialogowe Szczegóły zatwierdzania w programie Visual Studio ":::
 
 ## <a name="handle-merge-conflicts"></a>Obsługa konfliktów scalania
 
@@ -155,11 +155,11 @@ Konflikty mogą wystąpić podczas scalania, jeśli dwaj deweloperzy modyfikują
 
 Program Visual Studio ułatwia identyfikowanie i rozwiązywanie konfliktów scalania. Pierwsze okno **repozytorium git** zawiera złoty pasek informacyjny w górnej części okna.
 
-:::image type="content" source="media/git-merge-conflict-gold-bar.png" alt-text="Zrzut ekranu przedstawiający komunikat &quot;scalanie ukończone z konfliktami&quot; w programie Visual Studio ":::
+:::image type="content" source="media/git-merge-conflict-gold-bar.png" alt-text="Komunikat &quot;scalanie zostało ukończone z konfliktami&quot; w programie Visual Studio ":::
 
 W oknie zmiany w usłudze **git** zostanie również wyświetlony komunikat "*scalanie w toku z konfliktami*" z niescalonymi plikami w oddzielnej sekcji poniżej.
 
-:::image type="content" source="media/git-merge-progress-conflicts-message.png" alt-text="Zrzut ekranu przedstawiający komunikat &quot;scalanie w toku ze konfliktami&quot; w programie Visual Studio ":::
+:::image type="content" source="media/git-merge-progress-conflicts-message.png" alt-text="Komunikat &quot;scalanie w toku ze konfliktami&quot; w programie Visual Studio ":::
 
 Jeśli jednak żadne z tych okien nie jest otwarte, a zamiast tego przejdziesz do pliku, który ma konflikty scalania, nie będzie konieczne wyszukiwanie następującego tekstu:
 
@@ -177,7 +177,7 @@ Zamiast tego program Visual Studio Wyświetla złoty pasek informacyjny u góry 
 
 Edytor scalania w programie Visual Studio to trójwymiarowe narzędzie do scalania, które wyświetla zmiany przychodzące, bieżące zmiany i wynik scalania. Możesz użyć paska narzędzi na najwyższym poziomie **edytora scalania** , aby nawigować między konfliktami i automatycznie scalone różnice w pliku.
 
-:::image type="content" source="media/git-merge-editor.png" alt-text="Zrzut ekranu edytora scalania w programie Visual Studio ":::
+:::image type="content" source="media/git-merge-editor.png" alt-text="Edytor scalania w programie Visual Studio ":::
 
 Można również użyć przełączników, aby pokazać/ukryć różnice, pokazać/ukryć różnice między wyrazami i dostosować układ. W górnej części każdej strony znajdują się pola wyboru, za pomocą których można przyjmować wszystkie zmiany z jednej strony. Aby wprowadzić indywidualne zmiany, można kliknąć pola wyboru po lewej stronie wierszy powodujących konflikty po obu stronach. Wreszcie po zakończeniu rozwiązywania konfliktów można wybrać przycisk **Akceptuj scalanie** w edytorze scalania. Następnie napiszesz komunikat dotyczący zatwierdzenia i zatwierdzisz zmiany, aby ukończyć rozwiązywanie.
 
@@ -185,13 +185,13 @@ Można również użyć przełączników, aby pokazać/ukryć różnice, pokaza�
 
 Aby spersonalizować i dostosować ustawienia Git na poziomie repozytorium, a także na poziomie globalnym, przejdź do pozycji **Git**  >  **Ustawienia** Git na pasku menu lub **Narzędzia**  >  **Opcje**  >  **kontroli źródła** na pasku menu. Następnie wybierz odpowiednie opcje.
 
-:::image type="content" source="media/git-options-settings.png" alt-text="Zrzut ekranu przedstawiający okno dialogowe Opcje, w którym można wybrać ustawienia personalizacji i dostosowywania w środowisku IDE programu Visual Studio ":::
+:::image type="content" source="media/git-options-settings.png" alt-text="Okno dialogowe Opcje, w którym można wybrać ustawienia personalizacji i dostosowywania w środowisku IDE programu Visual Studio ":::
 
 ## <a name="how-to-use-the-legacy-team-explorer-experience-in-visual-studio"></a>Jak korzystać ze starszego środowiska Team Explorer w programie Visual Studio
 
 Nowe środowisko git to domyślny system kontroli wersji w programie Visual Studio 2019 od [wersji 16,8](/visualstudio/releases/2019/release-notes/) lub nowszej. Jeśli jednak chcesz ją wyłączyć, możesz to zrobić. Przejdź do pozycji **Narzędzia**  >  **Opcje**  >  **środowiska**  >  **Podgląd funkcje** , a następnie przełączenia **nowego środowiska użytkownika git** , które spowoduje przełączenie się z powrotem do starszego środowiska Team Explorer.
 
-:::image type="content" source="media/git-opt-new-user-experience.png" alt-text="Zrzut ekranu przedstawiający sekcję funkcje w wersji zapoznawczej okna dialogowego Opcje w programie Visual Studio ":::
+:::image type="content" source="media/git-opt-new-user-experience.png" alt-text="Sekcja funkcje w wersji zapoznawczej okna dialogowego Opcje w programie Visual Studio ":::
 
 ## <a name="whats-next"></a>Co dalej
 

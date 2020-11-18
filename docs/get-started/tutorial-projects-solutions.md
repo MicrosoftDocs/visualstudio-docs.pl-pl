@@ -1,5 +1,6 @@
 ---
 title: Wprowadzenie do projektów i rozwiązań
+description: Dowiedz się więcej o różnicach między projektami i rozwiązaniami oraz sposobami ich używania w programie Visual Studio.
 ms.date: 11/17/2020
 ms.technology: vs-ide-general
 ms.custom: get-started
@@ -9,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf99c191ef6cfe32ec8ccc9b2cfd57f761941be7
-ms.sourcegitcommit: e8a13978131f257d91ce37c5a2e0d153a4c400ef
+ms.openlocfilehash: 026e046e4bcc2291bd27907f10e6ac6a50729601
+ms.sourcegitcommit: f78960320798e2c6b33145cee77a2221f031603c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94704056"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94878273"
 ---
 # <a name="learn-about-projects-and-solutions"></a>Informacje o projektach i rozwiązaniach
 
@@ -55,7 +56,7 @@ Rozpocznie nasze eksplorację, tworząc puste rozwiązanie. Po uzyskaniu informa
 
 1. W okienku po lewej stronie rozwiń pozycję **Inne typy projektów**, a następnie wybierz pozycję **rozwiązania programu Visual Studio**. W środkowym okienku wybierz szablon **pustego rozwiązania** . Nazwij rozwiązanie **QuickSolution**, a następnie wybierz przycisk **OK** .
 
-   ![Pusty szablon rozwiązania w programie Visual Studio 2017](media/tutorial-projects-new-solution.png)
+   ![Pusty szablon rozwiązania w programie Visual Studio 2017](media/tutorial-projects-new-solution.png "Pusty szablon rozwiązania w programie Visual Studio 2017.")
 
    **Strona początkowa** zostanie ZAMKNIĘTA, a rozwiązanie pojawia się w **Eksplorator rozwiązań** po prawej stronie okna programu Visual Studio. Prawdopodobnie będziesz używać **Eksplorator rozwiązań** często, aby przeglądać zawartość Twoich projektów.
 
@@ -69,7 +70,7 @@ Rozpocznie nasze eksplorację, tworząc puste rozwiązanie. Po uzyskaniu informa
 
 3. Na stronie **Tworzenie nowego projektu** wprowadź **puste rozwiązanie** w polu wyszukiwania, wybierz szablon **pustego rozwiązania** , a następnie wybierz przycisk **dalej**.
 
-   ![Pusty szablon rozwiązania w programie Visual Studio 2019](media/vs-2019/tutorial-projects-blank-solution-template.png)
+   ![Pusty szablon rozwiązania w programie Visual Studio 2019](media/vs-2019/tutorial-projects-blank-solution-template.png "Pusty szablon rozwiązania w programie Visual Studio 2019.")
 
     > [!TIP]
     > Jeśli zainstalowano kilka obciążeń, pusty szablon **rozwiązania** może nie pojawić się w górnej części listy wyników wyszukiwania. Spróbuj przewinięcie na **inne wyniki w zależności** od sekcji wyszukiwania na liście. Powinien on pojawić się w tym miejscu.
@@ -97,7 +98,7 @@ Teraz Dodajmy nasz pierwszy projekt do rozwiązania. Zaczniemy od pustego projek
    > [!NOTE]
    > Jeśli nie widzisz **języka Visual C#** w lewym okienku okna dialogowego, należy zainstalować program **.NET Desktop Development** w programie Visual Studio. Program Visual Studio używa instalacji opartej na obciążeniach, aby zainstalować tylko składniki potrzebne do tego typu rozwoju. Łatwym sposobem instalacji nowego obciążenia jest wybranie linku **otwórz Instalator programu Visual Studio** w lewym dolnym rogu okna dialogowego **Dodawanie nowego projektu** . Po uruchomieniu Instalator programu Visual Studio wybierz obciążenie **Programowanie aplikacji klasycznych platformy .NET** , a następnie przycisk **Modyfikuj** .
    >
-   > ![Otwórz link Instalator programu Visual Studio](media/tutorial-projects-open-installer.png)
+   > ![Otwórz link Instalator programu Visual Studio](media/tutorial-projects-open-installer.png "Link Otwórz Instalator programu Visual Studio w oknie dialogowym Dodaj nowy projekt w programie Visual Studio 2017.")
 
 ::: moniker-end
 
@@ -116,9 +117,11 @@ Teraz Dodajmy nasz pierwszy projekt do rozwiązania. Zaczniemy od pustego projek
    Projekt o nazwie QuickDate pojawia się poniżej rozwiązania w **Eksplorator rozwiązań**. Obecnie zawiera pojedynczy plik o nazwie *App.config*.
 
    > [!NOTE]
-   > Jeśli nie widzisz szablonu **pustego projektu (.NET Framework)** , musisz zainstalować program **.NET Desktop Development** w programie Visual Studio. Program Visual Studio używa instalacji opartej na obciążeniach, aby zainstalować tylko składniki potrzebne do tego typu rozwoju. Prostym sposobem na zainstalowanie nowego obciążenia podczas tworzenia nowego projektu jest wybranie linku **Zainstaluj więcej narzędzi i funkcji** pod tekstem, który **nie jest szukany?**. Po uruchomieniu Instalator programu Visual Studio wybierz obciążenie **Programowanie aplikacji klasycznych platformy .NET** , a następnie przycisk **Modyfikuj** .
+   > Jeśli nie widzisz szablonu **pustego projektu (.NET Framework)** , musisz zainstalować program **.NET Desktop Development** w programie Visual Studio. Program Visual Studio używa instalacji opartej na obciążeniach, aby zainstalować tylko składniki potrzebne do tego typu rozwoju.
    >
-   > ![Otwórz link Instalator programu Visual Studio](media/vs-2019/tutorial-projects-open-installer.png)
+   >Prostym sposobem na zainstalowanie nowego obciążenia podczas tworzenia nowego projektu jest wybranie linku **Zainstaluj więcej narzędzi i funkcji** pod tekstem, który **nie jest szukany?**. Po uruchomieniu Instalator programu Visual Studio wybierz obciążenie **Programowanie aplikacji klasycznych platformy .NET** , a następnie przycisk **Modyfikuj** .
+   >
+   > ![Otwórz link Instalator programu Visual Studio](media/vs-2019/tutorial-projects-open-installer.png "Link Otwórz Instalator programu Visual Studio w oknie dialogowym Tworzenie nowego projektu w programie Visual Studio.")
 
 ::: moniker-end
 
@@ -174,7 +177,7 @@ Dodajmy projekt testu jednostkowego do naszego rozwiązania. Tym razem zaczniemy
 
    Drugi projekt zostanie dodany do **Eksplorator rozwiązań**, a w edytorze zostanie otwarty plik o nazwie *UnitTest1.cs* .
 
-   ![Program Visual Studio Eksplorator rozwiązań z dwoma projektami](media/tutorial-projects-solution-explorer.png)
+   ![Program Visual Studio Eksplorator rozwiązań z dwoma projektami](media/tutorial-projects-solution-explorer.png "Eksplorator rozwiązań z dwoma projektami w programie Visual Studio 2017.")
 
 ::: moniker-end
 
@@ -188,7 +191,7 @@ Dodajmy projekt testu jednostkowego do naszego rozwiązania. Tym razem zaczniemy
 
    Drugi projekt zostanie dodany do **Eksplorator rozwiązań**, a w edytorze zostanie otwarty plik o nazwie *UnitTest1.cs* .
 
-   ![Program Visual Studio Eksplorator rozwiązań z dwoma projektami](media/vs-2019/tutorial-projects-solution-explorer.png)
+   ![Program Visual Studio Eksplorator rozwiązań z dwoma projektami](media/vs-2019/tutorial-projects-solution-explorer.png "Eksplorator rozwiązań z dwoma projektami w programie Visual Studio.")
 
 ::: moniker-end
 
@@ -204,7 +207,7 @@ Będziemy używać nowego projektu testów jednostkowych do testowania naszej me
 
    Dodano odwołanie do projektu **QuickDate** .
 
-   ![Program Visual Studio 2019 Eksplorator rozwiązań pokazujący odwołanie do projektu](media/vs-2019/tutorial-projects-solution-explorer-reference.png)
+   ![Program Visual Studio 2019 Eksplorator rozwiązań pokazujący odwołanie do projektu](media/vs-2019/tutorial-projects-solution-explorer-reference.png "Eksplorator rozwiązań pokazujący odwołanie do projektu w programie Visual Studio.")
 
 ## <a name="add-test-code"></a>Dodaj kod testu
 
@@ -240,7 +243,7 @@ Będziemy używać nowego projektu testów jednostkowych do testowania naszej me
 
    Plik kodu powinien wyglądać następująco:
 
-   ![Kod CSharp](media/tutorial-projects-cs-code.png)
+   ![Kod CSharp](media/tutorial-projects-cs-code.png "Fragment kodu z sekcji Dodawanie kodu testu w tym artykule.")
 
 ## <a name="project-properties"></a>Właściwości projektu
 
@@ -250,7 +253,7 @@ Wiersz w pliku *Calendar.cs* , który zawiera <xref:System.Runtime.CompilerServi
 
    *Strony właściwości* projektu otwartego na karcie **aplikacja** . Strony właściwości zawierają różne ustawienia dla projektu. Należy zauważyć, że nazwa zestawu projektu **Quicktest** jest rzeczywiście "Quicktest". Jeśli chcesz ją zmienić, możesz to zrobić. Następnie podczas budowania projektu testowego nazwa pliku binarnego, który zostanie zmieniony, zmieni się z *QuickTest.dll* na dowolnie wybrany.
 
-   ![Właściwości projektu](media/tutorial-projects-netcore-properties.png)
+   ![Właściwości projektu](media/tutorial-projects-netcore-properties.png "Okno dialogowe właściwości projektu w programie Visual Studio.")
 
 1. Zapoznaj się z innymi kartami stron właściwości projektu, takimi jak **kompilacja** i **debugowanie**. Te karty są różne dla różnych typów projektów.
 
@@ -258,7 +261,7 @@ Wiersz w pliku *Calendar.cs* , który zawiera <xref:System.Runtime.CompilerServi
 
 Jeśli chcesz sprawdzić, czy test jednostkowy działa, wybierz pozycję **Testuj**  >  **Uruchom**  >  **wszystkie testy** z paska menu. Zostanie otwarte okno o nazwie **Eksplorator testów** i zobaczysz, że test **TestGetCurrentDate** kończy się powodzeniem.
 
-![Eksplorator testów w programie Visual Studio pokazujący zakończony test](media/tutorial-projects-test-explorer.png)
+![Eksplorator testów w programie Visual Studio pokazujący zakończony test](media/tutorial-projects-test-explorer.png "Eksplorator testów w programie Visual Studio pokazujący przetestowany test.")
 
 ::: moniker range="vs-2017"
 
