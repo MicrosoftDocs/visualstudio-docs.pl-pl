@@ -1,6 +1,8 @@
 ---
 title: 'Konwertuj: typy systemu projektu SharePoint na/z innych typów'
 titleSuffix: ''
+description: Konwersja między typami systemu projektu SharePoint a innymi typami projektów programu Visual Studio. Zobacz listę zawierającą szczegóły typów, które mogą być konwertowane.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 44b3e32114b10eae776f39e4c3d7337bba636f3f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 75f8a2072e81936c4c1c691261e301aae37b0191
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584649"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850484"
 ---
 # <a name="convert-between-sharepoint-project-system-types-and-other-visual-studio-project-types"></a>Konwersja między typami systemu projektu SharePoint a innymi typami projektów programu Visual Studio
   W niektórych przypadkach może istnieć obiekt w systemie projektu programu SharePoint i chcesz użyć funkcji odpowiedniego obiektu w modelu obiektów automatyzacji programu Visual Studio lub modelu obiektów integracji lub na odwrót. W takich przypadkach można użyć <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> metody usługi projektu SharePoint do przekonwertowania obiektu na inny model obiektu.
@@ -47,7 +49,7 @@ ms.locfileid: "91584649"
 
 - Kod, który rejestruje `projectService_ProjectAdded` metodę, aby obsłużyć <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectAdded> zdarzenie <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> obiektu. Aby zapoznać się z przykładem, zobacz [How to: Create a SharePoint Project Extension](../sharepoint/how-to-create-a-sharepoint-project-extension.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Korzystanie z usługi projektu SharePoint](../sharepoint/using-the-sharepoint-project-service.md)
 - [Instrukcje: pobieranie usługi projektu SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)

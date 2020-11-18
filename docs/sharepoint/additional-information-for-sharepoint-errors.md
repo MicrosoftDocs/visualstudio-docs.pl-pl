@@ -1,5 +1,7 @@
 ---
 title: Dodatkowe informacje na temat błędów programu SharePoint | Microsoft Docs
+description: Uzyskaj dodatkowe informacje na temat rozwiązywania problemów i ostrzeżeń występujących w narzędziach programu Visual Studio SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2c22f6570d741bce7f72ffd2c07f75cc8c6dc18b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 240913e93dc1945846613ac1ecc8d0141368f7b3
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985081"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850432"
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>Dodatkowe informacje na temat błędów programu SharePoint
   Pomoc można znaleźć w temacie Rozwiązywanie problemów z [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] narzędziami programu SharePoint i ostrzeżeniami w tematach dotyczących rozwiązywania problemów oraz na forach publicznych.
@@ -38,7 +40,7 @@ ms.locfileid: "72985081"
 ## <a name="other-resources"></a>Inne zasoby
  W poniższej tabeli wymieniono [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fora narzędzi programu SharePoint i inne dostępne zasoby.
 
-|Okres|Definicja|
+|Termin|Definicja|
 |----------|----------------|
 |[Programowanie SharePoint](https://social.msdn.microsoft.com/Forums/office/home?forum=sharepointdevelopmentprevious)|Zawiera forum z pytaniami dotyczącymi programowania programu SharePoint w programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .|
 |[Fora programu Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?category=visualstudio)|Zawiera forum z pytaniami dotyczącymi usługi [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .|
@@ -46,5 +48,5 @@ ms.locfileid: "72985081"
 
  Jeśli nadal nie możesz znaleźć wymaganych odpowiedzi, możesz uzyskać dostęp do opcji pomocy technicznej online, takich jak kontaktowanie się z usługami pomocy technicznej firmy Microsoft lub wyszukiwanie artykułów bazy wiedzy. Aby uzyskać więcej informacji, zobacz stronę [pomocy i obsługi technicznej firmy Microsoft](https://support.microsoft.com/) .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Kompilowanie i debugowanie rozwiązań SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)

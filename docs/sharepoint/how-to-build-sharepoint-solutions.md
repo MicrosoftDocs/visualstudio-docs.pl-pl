@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: kompilowanie rozwiązań SharePoint | Microsoft Docs'
+description: Kompiluj rozwiązanie SharePoint. W programie Visual Studio Tworzenie rozwiązania programu SharePoint nie różni się od tworzenia innych aplikacji.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d3beb1602a6572ed578208d6dd85951f1ea1c30b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4e878221f3b6989a87fa3c9e36be1018d34d4af
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014512"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850692"
 ---
 # <a name="how-to-build-sharepoint-solutions"></a>Instrukcje: kompilowanie rozwiązań SharePoint
 
@@ -33,6 +35,6 @@ Kompiluj rozwiązanie SharePoint nie różni się od tworzenia innych aplikacji 
 
 3. Na pasku menu wybierz polecenie **Kompiluj**  >  **kompilację rozwiązania**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Kompilowanie i debugowanie rozwiązań SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)

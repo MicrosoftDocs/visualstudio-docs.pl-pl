@@ -1,5 +1,7 @@
 ---
 title: Tworzenie pakietów rozwiązania SharePoint | Microsoft Docs
+description: Tworzenie i dostosowywanie pakietów wdrożeniowych dla rozwiązań programu SharePoint za pomocą projektanta pakietów. Poznaj narzędzia pakietu, opcje projektanta i strukturę folderów.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b250be3b61cdfc524f049f952f0cf7e65f1c295a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bbe458f6ab4de01ffb224ae4e493bf23e3fc6ceb
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74876067"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850562"
 ---
 # <a name="create-sharepoint-solution-packages"></a>Tworzenie pakietów rozwiązania SharePoint
   Za pomocą projektanta pakietów można tworzyć i dostosowywać pakiety wdrożeniowe. Można na przykład dodać elementy i funkcje projektu programu SharePoint, zresetować serwer usług IIS, ustawić zakresy aktywacji funkcji i zidentyfikować zależności funkcji. Projektant generuje również manifest, plik XML, który opisuje każdy pakiet.
@@ -35,7 +37,7 @@ ms.locfileid: "74876067"
 
 |Właściwość projektanta pakietów|Opis ustawienia domyślnego|
 |-------------------------------|------------------------------------|
-|Nazwa|Wymagany. Domyślna nazwa pakietu jest ustawiona na *ProjectName*.|
+|Nazwa|Wymagane. Domyślna nazwa pakietu jest ustawiona na *ProjectName*.|
 |Zresetuj serwer WebServer|Opcjonalny. Wybierz, czy chcesz ponownie uruchomić serwer sieci Web po zainstalowaniu pliku *. wsp* na serwerze programu SharePoint.|
 |Typ serwera wdrażania|Opcjonalny. Reprezentuje typ serwera, który hostuje pakiet. Jeśli ta wartość nie zostanie ustawiona, wartość domyślna to webfronton.<br /><br /> ApplicationServer: opisuje serwer, który hostuje usługi.<br /><br /> Webfronton: opisuje serwer, który hostuje witryny sieci Web.|
 |Elementy w rozwiązaniu|Wszystkie elementy projektu programu SharePoint i funkcje, które można dodać do pakietu.|
@@ -69,9 +71,9 @@ ms.locfileid: "74876067"
 6. Pliki w katalogu pośrednim są dodawane do pliku *wsp* .
 
 ## <a name="package-folder-structure"></a>Struktura folderu pakietu
- Podczas pakowania projektu programu SharePoint plik *. wsp* jest tworzony w folderze *SolutionFolder\bin \\ \<BuildConfiguration> * . Na przykład jeśli Twoje rozwiązanie jest w *C:\Visual Studio 2013 \ Projects\ListDefinition1* i konfiguracja kompilacji jest ustawiona na wartość Release, plik *. wsp* znajduje się w *C:\Visual Studio 2013 \ Projects\ListDefinition1\bin\Release*.
+ Podczas pakowania projektu programu SharePoint plik *. wsp* jest tworzony w folderze *SolutionFolder\bin \\ \<BuildConfiguration>* . Na przykład jeśli Twoje rozwiązanie jest w *C:\Visual Studio 2013 \ Projects\ListDefinition1* i konfiguracja kompilacji jest ustawiona na wartość Release, plik *. wsp* znajduje się w *C:\Visual Studio 2013 \ Projects\ListDefinition1\bin\Release*.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Instrukcje: Dostosowywanie pakietu rozwiązania SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)
 - [Instrukcje: Dodawanie i usuwanie funkcji oraz elementów do pakietu przy użyciu projektanta pakietów](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)
 - [Instrukcje: Tworzenie pakietu rozwiązania SharePoint przy użyciu zadań MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)

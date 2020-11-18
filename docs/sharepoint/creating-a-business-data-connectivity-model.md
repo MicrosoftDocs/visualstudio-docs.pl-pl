@@ -1,5 +1,7 @@
 ---
 title: Tworzenie modelu łączności danych firmowych | Microsoft Docs
+description: Utwórz model łączności danych biznesowych (BDC) lub dostosuj istniejący model usługi BDC przy użyciu programu Visual Studio. Każdy projekt programu SharePoint może zawierać tylko jeden model.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9f3da13858507a3ff176aaa0a44051674fd5285f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0486ce6ac53850b1b607f9e7f859806cdc3ef8fe
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64788188"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850471"
 ---
 # <a name="create-a-business-data-connectivity-model"></a>Tworzenie modelu łączności danych firmy
   Można utworzyć model łączności danych biznesowych (BDC) lub dostosować istniejący model usługi BDC przy użyciu programu Visual Studio. Każdy projekt programu SharePoint może zawierać tylko jeden model. Aby uzyskać więcej informacji, zobacz [Integrowanie danych firmowych z programem SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).

@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Dodawanie elementów do projektu programu SharePoint | Microsoft Docs'
+description: Po otwarciu lub utworzeniu rozwiązania SharePoint Dodaj nowe lub istniejące elementy do projektu programu SharePoint w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1f7a36591d94e846a0024bce8c5d0b618479e647
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4471f6a593e9349f32e4837da15df2e3e952d227
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014699"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850731"
 ---
 # <a name="how-to-add-items-to-a-sharepoint-project"></a>Instrukcje: Dodawanie elementów do projektu SharePoint
   Rozwiązania programu SharePoint zawierają jeden lub więcej projektów, z których każdy zawiera wiele elementów projektu programu SharePoint. Po otwarciu lub utworzeniu rozwiązania SharePoint można dodać do tych projektów nowe lub istniejące elementy. Na przykład nowe projekty przepływu pracy mają domyślny formularz o nazwie Default. aspx, ale można zastąpić ten formularz nowym lub innym formularzem lub dodać inny formularz ASPX.
@@ -26,7 +28,7 @@ ms.locfileid: "86014699"
 
 1. W programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Otwórz lub Utwórz rozwiązanie SharePoint.
 
-2. W **Eksplorator rozwiązań**wybierz węzeł projektu.
+2. W **Eksplorator rozwiązań** wybierz węzeł projektu.
 
 3. Na pasku menu wybierz **projekt**  >  **Dodaj nowy element** , aby wyświetlić okno dialogowe **Dodaj nowy element** .
 
@@ -40,12 +42,12 @@ ms.locfileid: "86014699"
 
 1. W programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Otwórz lub Utwórz rozwiązanie SharePoint.
 
-2. W **Eksplorator rozwiązań**wybierz węzeł projektu.
+2. W **Eksplorator rozwiązań** wybierz węzeł projektu.
 
 3. Na pasku menu wybierz **projekt**  >  **Dodaj istniejący element** , aby wyświetlić okno dialogowe **Dodaj istniejący element** .
 
 4. Przejdź do folderu, który zawiera element, który chcesz dodać, wybierz go, a następnie wybierz przycisk **Dodaj** .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Projekty programu SharePoint i szablony elementów projektu](../sharepoint/sharepoint-project-and-project-item-templates.md)
 - [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)

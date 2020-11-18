@@ -1,5 +1,7 @@
 ---
 title: Kompilowanie i debugowanie rozwiązań programu SharePoint | Microsoft Docs
+description: Dowiedz się, jak tworzyć i debugować rozwiązania programu SharePoint oraz zrozumieć, jak różni się od kompilowania i debugowania innych typów projektów w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e4b34df23c8cb612d72fed108a6c0aecbf57875c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f6801f6b60d2ef522385ecdf290d0a1913bd6df2
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016361"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850224"
 ---
 # <a name="build-and-debug-sharepoint-solutions"></a>Kompilowanie i debugowanie rozwiązań SharePoint
   Ogólnie rzecz biorąc, kompilowanie i debugowanie rozwiązań programu SharePoint jest takie samo jak Kompilowanie i debugowanie innych typów projektów w programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . W tematach w tej sekcji opisano różnice, które istnieją.
@@ -28,10 +30,10 @@ ms.locfileid: "86016361"
 
 |Kompiluj element|Folder wyjściowy|
 |----------------|-------------------|
-|Zestawy, bazy danych programu (*. pdb*) i pliki *. wsp* .|* \<ProjectName> \bin\debug* lub * \<ProjectName> \bin\Release*|
-|Pliki elementów projektu programu SharePoint.|* \<ProjectName> \pkg\debug* lub * \<ProjectName> \pkg\release*|
-|Kompiluj pliki pośrednie.|* \<ProjectName> \obj\debug* lub * \<ProjectName> \obj\release*|
-|Pliki pośrednie pakietu.|* \<ProjectName> \pkgobj\debug* lub * \<ProjectName> \pkgobj\release*|
+|Zestawy, bazy danych programu (*. pdb*) i pliki *. wsp* .|*\<ProjectName> \bin\debug* lub *\<ProjectName> \bin\Release*|
+|Pliki elementów projektu programu SharePoint.|*\<ProjectName> \pkg\debug* lub *\<ProjectName> \pkg\release*|
+|Kompiluj pliki pośrednie.|*\<ProjectName> \obj\debug* lub *\<ProjectName> \obj\release*|
+|Pliki pośrednie pakietu.|*\<ProjectName> \pkgobj\debug* lub *\<ProjectName> \pkgobj\release*|
 
 ## <a name="build-sharepoint-solutions"></a>Tworzenie rozwiązań SharePoint
  Aby można było tworzyć rozwiązania programu SharePoint, na komputerze deweloperskim musi być zainstalowana poprawna wersja programu SharePoint Server. W przeciwnym razie Kompilowanie rozwiązań programu SharePoint jest takie samo jak w przypadku tworzenia innych typów projektów w programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Aby uzyskać więcej informacji, zobacz [How to: build Solutions SharePoint](../sharepoint/how-to-build-sharepoint-solutions.md).
@@ -48,7 +50,7 @@ ms.locfileid: "86016361"
 ## <a name="using-the-clean-command"></a>Przy użyciu polecenia Clean
  Gdy na serwerze programu SharePoint jest zainstalowane rozwiązanie programu SharePoint do debugowania, polecenie **Oczyść** nie odinstaluje rozwiązania. Zamiast tego należy dezaktywować funkcje za pomocą konfiguracji programu SharePoint.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)
 - [Przeglądanie połączeń programu SharePoint przy użyciu Eksplorator serwera](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)
 - [Pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

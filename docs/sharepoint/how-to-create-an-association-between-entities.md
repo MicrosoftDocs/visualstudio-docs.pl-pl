@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Tworzenie skojarzenia między jednostkami | Microsoft Docs'
+description: Definiowanie relacji między jednostkami w modelu łączności danych biznesowych (BDC) przez tworzenie skojarzeń w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 75d4fcc9b99c9c5e2960e152eb5dac1da1343109
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e736e0befe8aaf9a6c090615d0c43bb3f3116dbf
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016932"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849847"
 ---
 # <a name="how-to-create-an-association-between-entities"></a>Instrukcje: Tworzenie skojarzenia między jednostkami
   Możesz definiować relacje między jednostkami w modelu łączności danych biznesowych (BDC), tworząc skojarzenia. Program Visual Studio generuje metody zapewniające odbiorcom modelu informacje o każdym skojarzeniu. Te metody mogą być używane przez składniki Web Part programu SharePoint, listy lub aplikacje niestandardowe do wyświetlania relacji danych w interfejsie użytkownika.
@@ -35,7 +37,7 @@ ms.locfileid: "86016932"
 
 ### <a name="to-create-an-association-between-entities"></a>Aby utworzyć skojarzenie między jednostkami
 
-1. Na karcie **BusinessDataConnectivity** w **przyborniku**wybierz element **skojarzenia** .
+1. Na karcie **BusinessDataConnectivity** w **przyborniku** wybierz element **skojarzenia** .
 
 2. W projektancie BDC wybierz jednostkę źródłową, a następnie wybierz jednostkę docelową.
 
@@ -61,7 +63,7 @@ ms.locfileid: "86016932"
 
      Przykłady metod nawigatora skojarzeń można znaleźć w temacie [Tworzenie skojarzenia między jednostkami](../sharepoint/creating-an-association-between-entities.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Utwórz skojarzenie między jednostkami](../sharepoint/creating-an-association-between-entities.md)
 - [Projektowanie modelu łączności danych firmy](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [Instrukcje: Dodawanie metody wyszukiwania](../sharepoint/how-to-add-a-finder-method.md)

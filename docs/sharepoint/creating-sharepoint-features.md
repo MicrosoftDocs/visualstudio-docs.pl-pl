@@ -1,5 +1,7 @@
 ---
 title: Tworzenie funkcji programu SharePoint | Microsoft Docs
+description: Utwórz funkcję programu SharePoint, aby pogrupować powiązane elementy projektu programu SharePoint w celu łatwiejszego wdrażania. Dodaj funkcje do rozwiązania SharePoint. Użyj projektanta funkcji.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8d3f453770dbb389a688db0a9edcc8e97e179858
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06a8fdef9c194e9b0f81768f93b675ade77d39ef
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62952750"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850588"
 ---
 # <a name="create-sharepoint-features"></a>Tworzenie funkcji programu SharePoint
   Za pomocą funkcji SharePoint można grupować powiązane elementy projektu programu SharePoint w celu łatwiejszego wdrażania. Można tworzyć funkcje, ustawiać zakresy i oznaczyć inne funkcje jako zależności przy użyciu projektanta funkcji programu SharePoint. Projektant generuje również manifest, który jest plikiem XML, który opisuje każdą funkcję.
@@ -26,9 +28,9 @@ ms.locfileid: "62952750"
 ## <a name="add-features-to-the-sharepoint-solution"></a>Dodawanie funkcji do rozwiązania SharePoint
  Funkcję można dodać do rozwiązania programu SharePoint za pomocą Eksplorator rozwiązań lub Eksploratora pakietów. Aby dodać funkcję, można użyć jednej z poniższych metod.
 
-- W **Eksplorator rozwiązań**Otwórz menu skrótów dla **funkcji**, a następnie wybierz polecenie **Dodaj funkcję**.
+- W **Eksplorator rozwiązań** Otwórz menu skrótów dla **funkcji**, a następnie wybierz polecenie **Dodaj funkcję**.
 
-- W **Eksploratorze pakietów**Otwórz menu skrótów dla pakietu, a następnie wybierz polecenie **Dodaj funkcję**.
+- W **Eksploratorze pakietów** Otwórz menu skrótów dla pakietu, a następnie wybierz polecenie **Dodaj funkcję**.
 
 ## <a name="using-the-feature-designer"></a>Korzystanie z projektanta funkcji
  Rozwiązanie SharePoint może zawierać jedną lub więcej funkcji programu SharePoint, które są zgrupowane w węźle funkcji w Eksplorator rozwiązań. Każda funkcja ma własny **Projektant funkcji** , którego można użyć do dostosowania właściwości funkcji. Aby uzyskać więcej informacji, zobacz [How to: Dostosowywanie funkcji SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md). Aby odróżnić funkcje od siebie, można skonfigurować właściwości funkcji, takie jak tytuł, opis, wersja i zakres.
@@ -40,9 +42,9 @@ ms.locfileid: "62952750"
 
 |Właściwość|Opis|
 |--------------|-----------------|
-|Tytuł|Opcjonalny. Domyślny *tytuł funkcji jest*ustawiany na wartość *SolutionName* .|
+|Tytuł|Opcjonalny. Domyślny *tytuł funkcji jest* ustawiany na wartość *SolutionName* .|
 |Opis|Opcjonalny. Opis funkcji programu SharePoint.|
-|Zakres|Wymagany. Jeśli funkcja jest tworzona przy użyciu **Eksplorator rozwiązań**, zakres jest domyślnie ustawiany na Web.<br /><br /> -Farma: Aktywuj funkcję dla całej farmy serwerów.<br /><br /> -Site: Aktywuj funkcję dla wszystkich witryn sieci Web w zbiorze witryn.<br /><br /> -Web: Aktywuj funkcję dla określonej witryny sieci Web.<br /><br /> -WebApplication: Aktywuj funkcję dla wszystkich witryn sieci Web w aplikacji sieci Web.|
+|Zakres|Wymagane. Jeśli funkcja jest tworzona przy użyciu **Eksplorator rozwiązań**, zakres jest domyślnie ustawiany na Web.<br /><br /> -Farma: Aktywuj funkcję dla całej farmy serwerów.<br /><br /> -Site: Aktywuj funkcję dla wszystkich witryn sieci Web w zbiorze witryn.<br /><br /> -Web: Aktywuj funkcję dla określonej witryny sieci Web.<br /><br /> -WebApplication: Aktywuj funkcję dla wszystkich witryn sieci Web w aplikacji sieci Web.|
 |Elementy w rozwiązaniu|Wszystkie elementy programu SharePoint, które można dodać do funkcji.|
 |Elementy w funkcji|Elementy projektu programu SharePoint, które zostały dodane do funkcji.|
 
@@ -52,7 +54,7 @@ ms.locfileid: "62952750"
 ## <a name="add-feature-dependencies"></a>Dodawanie zależności funkcji
  Można skonfigurować manifest funkcji tak, aby serwer programu SharePoint uaktywniał pewne funkcje przed aktywowaniem funkcji. Na przykład, jeśli funkcja programu SharePoint zależy od innych funkcji dla funkcjonalności lub danych, serwer programu SharePoint może najpierw spróbować aktywować dowolne funkcje, od których zależy dana funkcja. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie i usuwanie zależności funkcji](../sharepoint/how-to-add-and-remove-feature-dependencies.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Instrukcje: Dostosowywanie funkcji programu SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)
 - [Instrukcje: Dodawanie i usuwanie elementów do funkcji programu SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)
 - [Instrukcje: Dodawanie i usuwanie zależności funkcji](../sharepoint/how-to-add-and-remove-feature-dependencies.md)

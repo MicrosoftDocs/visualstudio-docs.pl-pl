@@ -1,5 +1,7 @@
 ---
 title: Tworzenie skojarzenia między jednostkami | Microsoft Docs
+description: Utwórz skojarzenie między jednostkami w modelu łączności danych biznesowych (BDC). Dowiedz się więcej o metodach skojarzenia i typach skojarzeń.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -21,18 +23,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee767ded0687baa09653bd82785b68bee7fa0ebd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a5decf8ad803bea8b1d64c79410c319dbef0be9
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72981092"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850549"
 ---
 # <a name="create-an-association-between-entities"></a>Utwórz skojarzenie między jednostkami
   Możesz definiować relacje między jednostkami w modelu łączności danych biznesowych (BDC), tworząc skojarzenia. Program Visual Studio generuje metody zapewniające odbiorcom modelu informacje o każdym skojarzeniu. Te metody mogą być używane przez składniki Web Part programu SharePoint, listy lub aplikacje niestandardowe do wyświetlania relacji danych w interfejsie użytkownika.
 
 ## <a name="create-an-association"></a>Tworzenie skojarzenia
- Utwórz skojarzenie, wybierając kontrolkę **skojarzenia** w **przyborniku**programu Visual Studio, wybierając pierwszą jednostkę (o nazwie jednostka źródłowa), a następnie wybierając drugą jednostkę (nazywaną jednostką docelową). Można zdefiniować szczegóły skojarzenia w **Edytorze skojarzenia**. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie skojarzenia między jednostkami](../sharepoint/how-to-create-an-association-between-entities.md).
+ Utwórz skojarzenie, wybierając kontrolkę **skojarzenia** w **przyborniku** programu Visual Studio, wybierając pierwszą jednostkę (o nazwie jednostka źródłowa), a następnie wybierając drugą jednostkę (nazywaną jednostką docelową). Można zdefiniować szczegóły skojarzenia w **Edytorze skojarzenia**. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie skojarzenia między jednostkami](../sharepoint/how-to-create-an-association-between-entities.md).
 
 ## <a name="association-methods"></a>Metody kojarzenia
  Aplikacje, takie jak składniki Web Part programu SharePoint Business, wykorzystują skojarzenia przez wywoływanie metod w klasie usługi jednostki. Możesz dodać metody do klasy usługi jednostki, wybierając je w **Edytorze skojarzenia**.
@@ -76,6 +78,6 @@ ms.locfileid: "72981092"
  [!code-csharp[SP_BDC#10](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs#10)]
  [!code-vb[SP_BDC#10](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#10)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Projektowanie modelu łączności danych firmy](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [Instrukcje: Tworzenie skojarzenia między jednostkami](../sharepoint/how-to-create-an-association-between-entities.md)

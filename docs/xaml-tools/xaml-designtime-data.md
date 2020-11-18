@@ -1,18 +1,18 @@
 ---
 title: Używanie danych czasu projektowania z projektant XAML w programie Visual Studio
 description: Dowiedz się, jak używać danych czasu projektowania w języku XAML.
-ms.date: 11/10/2020
+ms.date: 11/17/2020
 ms.topic: overview
 author: alihamie
 ms.author: tglee
 manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: bda4af3a3985ec6fc3aae1e991b7f5f622d67965
-ms.sourcegitcommit: e8a13978131f257d91ce37c5a2e0d153a4c400ef
+ms.openlocfilehash: 992c97b188535fb39548fca4fd9d02d588a45474
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94704004"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850744"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>Używanie danych czasu projektowania z projektant XAML w programie Visual Studio
 
@@ -179,11 +179,11 @@ Jeśli wystąpi problem, którego nie ma w tej sekcji, poinformuj nas o tym za p
 
 ### <a name="requirements"></a>Wymagania
 
-- Dane czasu projektowania wymagają programu Visual Studio 2019 w wersji [16,7](/visualstudio/releases/2019/release-notes) lub nowszej.
+- Dane czasu projektowania wymagają programu Visual Studio 2019 w wersji [16,7](/visualstudio/releases/2019/release-notes-v16.7) lub nowszej.
 
-- Obsługuje projekty klasyczne systemu Windows, które są przeznaczone dla Windows Presentation Foundation (WPF) dla platformy .NET Core i platformy UWP. Ta funkcja jest również dostępna w [kanale w wersji zapoznawczej](/visualstudio/releases/2019/release-notes-preview) dla .NET Framework. Aby włączyć tę funkcję, przejdź do pozycji **Narzędzia**  >  **Opcje**  >  **środowisko**  >  w **wersji zapoznawczej**, wybierz pozycję **Nowy Projektant XAML WPF dla .NET Framework** a następnie ponownie uruchom program Visual Studio.
+- Obsługuje projekty klasyczne systemu Windows, które są przeznaczone dla Windows Presentation Foundation (WPF) dla platformy .NET Core i platformy UWP. Ta funkcja jest również dostępna dla .NET Framework w [kanale w wersji zapoznawczej](/visualstudio/releases/2019/release-notes-preview). Aby włączyć tę funkcję, przejdź do pozycji **Narzędzia**  >  **Opcje**  >  **środowisko**  >  w **wersji zapoznawczej**, wybierz pozycję **Nowy Projektant XAML WPF dla .NET Framework** a następnie ponownie uruchom program Visual Studio.
 
-- Począwszy od programu Visual Studio 2019 w wersji 16,7, ta funkcja działa ze wszystkimi wbudowanymi kontrolkami z platform WPF i platformy UWP Framework. Obsługa kontrolek innych firm jest teraz dostępna w wersji zapoznawczej 16,8.
+- Począwszy od programu Visual Studio 2019 w wersji 16,7, ta funkcja działa ze wszystkimi wbudowanymi kontrolkami z platform WPF i platformy UWP Framework. Obsługa formantów innych firm jest teraz dostępna w [wersji 16,8](/visualstudio/releases/2019/release-notes/).
 
 ### <a name="the-xaml-designer-stopped-working"></a>projektant XAML przestała działać
 

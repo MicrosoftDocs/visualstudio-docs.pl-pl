@@ -1,5 +1,7 @@
 ---
 title: Kojarzenie danych niestandardowych z rozszerzeniami narzędzi programu SharePoint | Microsoft Docs
+description: Kojarzenie danych niestandardowych z rozszerzeniami narzędzi programu SharePoint. Zobacz listę obiektów, które mogą zawierać dane niestandardowe. Dodawanie i pobieranie danych niestandardowych.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 434f8aaf9303f3ee9a4008094b4e98c99d635e9f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: db32c05b4a1f4536e71b4ef233758f747a958327
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584693"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850406"
 ---
 # <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>Kojarzenie danych niestandardowych z rozszerzeniami narzędzi programu SharePoint
   Niestandardowe dane można dodać do określonych obiektów w rozszerzeniach narzędzi programu SharePoint. Jest to przydatne, gdy masz dane w jednej części rozszerzenia, do którego chcesz uzyskać dostęp później z innego kodu w rozszerzeniu. Zamiast implementować niestandardowy sposób przechowywania danych i uzyskiwania do nich dostępu, możesz skojarzyć dane z obiektem w rozszerzeniu, a następnie pobrać dane z tego samego obiektu później.
@@ -80,7 +82,7 @@ ms.locfileid: "91584693"
   [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#13)]
   [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#13)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Koncepcje programowania i funkcje dla rozszerzeń narzędzi SharePoint](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)
 - [Przewodnik: Tworzenie niestandardowego elementu projektu akcji z szablonem elementu część 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
 - [Przewodnik: rozszerzanie Eksplorator serwera do wyświetlania części sieci Web](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)

@@ -1,5 +1,7 @@
 ---
 title: Wywoływanie modeli obiektów programu SharePoint | Microsoft Docs
+description: Dowiedz się, jak wywoływać dwa różne modele obiektów, których można użyć w rozszerzeniach narzędzi programu SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24634143a40f7b163c0b658bddb5596041868033
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 40cd7132888d8b19d8e2a2818ec9a299b465e786
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62988410"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850055"
 ---
 # <a name="call-into-the-sharepoint-object-models"></a>Wywoływanie modeli obiektów programu SharePoint
   Podczas tworzenia rozszerzeń dla narzędzi programu SharePoint w programie Visual Studio, może być konieczne wywołanie interfejsów API programu SharePoint w celu wykonania określonych zadań. Jeśli na przykład utworzysz niestandardowy krok wdrożenia dla projektów programu SharePoint, może być konieczne wywołanie interfejsów API programu SharePoint w celu wykonania niektórych zadań związanych z wdrażaniem rozwiązań.
@@ -54,7 +56,7 @@ ms.locfileid: "62988410"
 ### <a name="understand-how-sharepoint-commands-are-executed"></a>Informacje o wykonywaniu poleceń programu SharePoint
  Zestawy, które definiują polecenia programu SharePoint, są ładowane w 64-bitowym procesie o nazwie *vssphost4.exe*. Po wywołaniu polecenia programu SharePoint w rozszerzeniu narzędzi programu SharePoint polecenie jest wykonywane przez *vssphost4.exe* zamiast 32-bitowego procesu programu Visual Studio (*devenv.exe*). Można kontrolować pewne aspekty sposobu wykonywania poleceń programu SharePoint przez ustawienie wartości w rejestrze. Aby uzyskać więcej informacji, zobacz [Debugowanie rozszerzeń dla narzędzi programu SharePoint w programie Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Instrukcje: Tworzenie polecenia SharePoint](../sharepoint/how-to-create-a-sharepoint-command.md)
 - [Instrukcje: wykonywanie polecenia SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md)
 - [Omówienie modelu programowania rozszerzeń narzędzi SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)

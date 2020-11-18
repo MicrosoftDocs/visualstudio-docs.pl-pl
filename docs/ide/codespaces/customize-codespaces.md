@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 2223aecd66da721ff1afe9877853c8a00c837611
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 9072676dfc96ffc6286f81785048eca8ec46b0b8
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862222"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850510"
 ---
 # <a name="how-to-customize-a-codespace-preview"></a>Jak dostosować codespace (wersja zapoznawcza)
 
@@ -28,21 +28,21 @@ System Windows codespaces jest wyposażony w wiele platform i narzędzi, które 
 
 | Aplikacja                                         | Alias ścieżki | Wersja            |
 |---------------------------------------------|------------|--------------------|
-| .NET                                        | Brak        | 4,8                |
+| .NET                                        | Nie dotyczy        | 4.8                |
 | Środowisko uruchomieniowe platformy .NET Core                           | dotnet     | 2,1, 3,1           |
 | Zestaw .NET Core SDK                               | dotnet     | 2,1, 3.1.3, 3.1.4  |
-| Interfejs wiersza polecenia platformy Azure                                   | AZ         | 2,5                |
+| Interfejs wiersza polecenia platformy Azure                                   | AZ         | 2.5                |
 | Narzędzia Chocolatey                                  | choco      | 0.10.15            |
 | CMake                                       | CMAKE      | 3,17               |
 | Git                                         | git        | 2,26               |
 | Kompilacja firmy Microsoft                             | MSBuild    | 16,7               |
-| Microsoft SQL Server Express Edition 2019   | Brak        | 15,0               |
+| Microsoft SQL Server Express Edition 2019   | Nie dotyczy        | 15,0               |
 | Ninja                                       | Ninja      | 1.8.2              |
 | Node.js                                     | węzeł       | 12,16              |
 | NPM                                         | npm        | 6,14               |
 | Python                                      | python     | 3.7                |
 | Menedżer pakietów VC                          | vcpkg      | 2020,02            |
-| Zestaw SDK systemu Windows                                 | Brak        | 10.0.18362         |
+| Zestaw SDK systemu Windows                                 | Nie dotyczy        | 10.0.18362         |
 
 Powyższa lista nie jest wyczerpująca i wyklucza wiele narzędzi instalowanych przez program Visual Studio (na przykład IISExpress). Składnik może mieć również inną wersję pomocniczą lub poprawek niż podana powyżej.
 
@@ -84,7 +84,7 @@ Po utworzeniu codespace usługi GitHub Codespaces wyszukuje [*devcontainers.jsw*
 
 ## <a name="customize-with-devinit"></a>Dostosuj przy użyciu devinit
 
-[devinit](../../devinit/getting-started-with-devinit.md) to narzędzie wiersza polecenia zawarte w systemie Windows codespaces, które umożliwia Instalowanie platform i narzędzi w środowisku. Można go uruchomić ręcznie z wiersza polecenia (), `devinit -t require-dotnetcoresdk` ale jego rzeczywista moc polega na tworzeniu niestandardowego [ *.devinit.jsw* ](../../devinit/devinit-json.md) pliku, aby jednolicie konfigurować codespace po każdym utworzeniu.
+[devinit](../../devinit/getting-started-with-devinit.md) to narzędzie wiersza polecenia zawarte w systemie Windows codespaces, które umożliwia Instalowanie platform i narzędzi w środowisku. Można go uruchomić ręcznie z wiersza polecenia (), `devinit run -t require-dotnetcoresdk` ale jego rzeczywista moc polega na tworzeniu niestandardowego [ *.devinit.jsw*](../../devinit/devinit-json.md) pliku, aby jednolicie konfigurować codespace po każdym utworzeniu.
 
 `devinit` obejmuje zestaw narzędzi do instalowania określonych elementów, takich jak SQL Server i interfejs wiersza polecenia platformy Azure, a także do uruchamiania ogólnych menedżerów pakietów, takich jak czekolady, npm i vcpkg. Pełną listę narzędzi można znaleźć `devinit` w dokumentacji [dostępnych narzędzi](../../devinit/devinit-tool-list.md) .
 
@@ -126,7 +126,7 @@ Po określeniu `devinit init` program `devinit` zostanie uruchomiony przy użyci
 
 Poniżej przedstawiono prosty przykład instalowania narzędzia wiersza polecenia programu .NET Core Entity Framework `dotnet-ef` .
 
-**devcontainer.jsna**
+**devcontainer.json**
 
 Zawartość *.devcontainer.jsw* pliku w katalogu głównym repozytorium. 
 
@@ -192,7 +192,7 @@ Jeśli używasz tożsamości Azure Active Directory do uwierzytelniania aplikacj
 
 Więcej informacji można znaleźć w `az login` [dokumentacji](/cli/azure/reference-index#az_login)interfejsu wiersza polecenia platformy Azure.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Co to jest GitHub Codespaces?](codespaces-overview.md)
 - [Jak używać programu Visual Studio z codespace](use-visual-studio-with-codespaces.md)

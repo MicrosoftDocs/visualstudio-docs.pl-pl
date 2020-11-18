@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Tworzenie odbiorcy zdarzeń | Microsoft Docs'
+description: Utwórz odbiorcę zdarzeń, aby można było odpowiedzieć, gdy użytkownik współdziała z elementami programu SharePoint, takimi jak listy lub elementy listy.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 26d8c9f433fad051716b6ebd37e3d1f3b3f9f4eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2e94bd1594f94f43c82eed5033d6ec2660905c18
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016926"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849886"
 ---
 # <a name="how-to-create-an-event-receiver"></a>Instrukcje: Tworzenie odbiorcy zdarzeń
   Tworząc *odbiorcy zdarzeń*, możesz odpowiedzieć, gdy użytkownik współdziała z elementami programu SharePoint, takimi jak listy lub elementy listy. Na przykład kod w odbiorcy zdarzeń może być wyzwalany, gdy użytkownik zmieni Kalendarz lub usunie nazwę z listy kontaktów. Postępując zgodnie z tym tematem, można dowiedzieć się, jak dodać odbiorcę zdarzeń do wystąpienia listy.
@@ -36,11 +38,11 @@ ms.locfileid: "86016926"
 
 1. Otwórz projekt, który został utworzony w [przewodniku: Tworzenie kolumny witryny, typu zawartości i listy dla programu SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).
 
-2. W **Eksplorator rozwiązań**wybierz węzeł projektu programu SharePoint o nazwie **Klinika**.
+2. W **Eksplorator rozwiązań** wybierz węzeł projektu programu SharePoint o nazwie **Klinika**.
 
 3. Na pasku menu wybierz **projekt**  >  **Dodaj nowy element**.
 
-4. W obszarze **Visual C#** lub **Visual Basic**rozwiń węzeł **SharePoint** , a następnie wybierz element **2010** .
+4. W obszarze **Visual C#** lub **Visual Basic** rozwiń węzeł **SharePoint** , a następnie wybierz element **2010** .
 
 5. W okienku **Szablony** wybierz pozycję **Odbiorca zdarzenia**, nadaj jej nazwę **TestEventReceiver1**, a następnie wybierz przycisk **OK** .
 
@@ -69,6 +71,6 @@ ms.locfileid: "86016926"
 
      Po wybraniu przycisku **Zapisz** kolumna **Nazwa pacjenta** zostanie automatycznie zaktualizowana do nazwy Scott Brown.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)

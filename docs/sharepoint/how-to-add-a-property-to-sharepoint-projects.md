@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Dodawanie właściwości do projektów programu SharePoint | Microsoft Docs'
+description: Użyj rozszerzenia projektu, aby dodać właściwość do projektu programu SharePoint. Właściwość pojawia się w okno Właściwości po wybraniu projektu w Eksplorator rozwiązań.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb72b0546b504e2df1a7e93ea9d4def350143d1d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 62766b704d140805a3b76dbc3c00acaf6257f5e5
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015921"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850159"
 ---
 # <a name="how-to-add-a-property-to-sharepoint-projects"></a>Instrukcje: Dodawanie właściwości do projektów programu SharePoint
   Możesz użyć rozszerzenia projektu, aby dodać właściwość do dowolnego projektu programu SharePoint. Właściwość pojawia się w oknie **Właściwości** , gdy projekt jest wybrany w **Eksplorator rozwiązań**.
@@ -80,7 +82,7 @@ ms.locfileid: "86015921"
 ## <a name="deploy-the-extension"></a>Wdróż rozszerzenie
  Aby wdrożyć rozszerzenie, Utwórz [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] pakiet rozszerzenia (VSIX) dla zestawu i wszystkie inne pliki, które chcesz dystrybuować z rozszerzeniem. Aby uzyskać więcej informacji, zobacz [Wdrażanie rozszerzeń dla narzędzi programu SharePoint w programie Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Zwiększ projekty programu SharePoint](../sharepoint/extending-sharepoint-projects.md)
 - [Instrukcje: Tworzenie rozszerzenia projektu SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
 - [Instrukcje: Dodawanie elementu menu skrótów do projektów programu SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)

@@ -1,5 +1,7 @@
 ---
 title: Dodaj właściwość do niestandardowego typu elementu projektu SharePoint
+description: Dodaj właściwość do niestandardowego typu elementu projektu programu SharePoint. Właściwość pojawia się w okno Właściwości, gdy element projektu zostanie wybrany w Eksplorator rozwiązań.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 54765b9b6b82214a7deccaee4f9ee671a72dd40d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0b62f41ff6b185469a61681a8845c4e96d044695
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016000"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850185"
 ---
 # <a name="how-to-add-a-property-to-a-custom-sharepoint-project-item-type"></a>Instrukcje: Dodawanie właściwości do niestandardowego typu elementu projektu SharePoint
   Podczas definiowania niestandardowego typu elementu projektu programu SharePoint można dodać właściwość do elementu projektu. Właściwość pojawia się w oknie **Właściwości** , gdy element projektu jest wybrany w **Eksplorator rozwiązań**.
@@ -70,7 +72,7 @@ ms.locfileid: "86016000"
 
  Aby wdrożyć element projektu, Utwórz [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] pakiet rozszerzenia (VSIX) dla zestawu, szablonu i innych plików, które chcesz dystrybuować z elementem projektu. Aby uzyskać więcej informacji, zobacz [Wdrażanie rozszerzeń dla narzędzi programu SharePoint w programie Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Instrukcje: Definiowanie typu elementu projektu SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)
 - [Instrukcje: Dodawanie elementu menu skrótów do niestandardowego typu elementu projektu SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md)
 - [Definiowanie niestandardowych typów elementów projektu SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)

@@ -1,5 +1,7 @@
 ---
 title: Tworzenie stron aplikacji dla programu SharePoint | Microsoft Docs
+description: Tworzenie stron aplikacji dla programu SharePoint. Strona aplikacji to strona sieci Web ASP.NET przeznaczona do użycia w witrynie programu SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 47f403f4eec6ec66563ae88bec226e073f625716
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1228ef551235fd616803d6e05057ee50f0ea7ec4
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72981100"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850445"
 ---
 # <a name="create-application-pages-for-sharepoint"></a>Tworzenie stron aplikacji dla programu SharePoint
   *Strona aplikacji* to strona sieci Web ASP.NET przeznaczona do użycia w witrynie sieci Web programu SharePoint. Strony aplikacji są wyspecjalizowanym typem strony ASP.NET. Główną różnicą między stroną aplikacji a standardową stroną ASP.NET jest to, że Strona aplikacji zawiera zawartość scaloną ze stroną wzorcową programu SharePoint. Strona wzorcowa umożliwia stronom aplikacji udostępnianie tego samego wyglądu i zachowań co inne strony w witrynie.
@@ -71,7 +73,7 @@ ms.locfileid: "72981100"
 
  Możesz jawnie zmienić stronę wzorcową używaną przez ustawienie `MasterPageFile` atrybutu `Page` elementu aplikacji. (Na przykład: `MasterPageFile="~/_layouts/applicationv4.master"` ). W rzeczywistości należy ustawić ten atrybut, jeśli dynamiczne strony główne nie są włączone na serwerze programu SharePoint. Aby uzyskać więcej informacji na temat stron wzorcowych w programie SharePoint, zobacz [stronę wzorcową](/previous-versions/office/developer/sharepoint-2010/ms443795(v=office.14)).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Projektowanie programu SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ee539092(v=office.14))
 - [Omówienie platformy ASP.NET](/aspnet/overview)
 - [ASP.NET Web Pages](/aspnet/web-pages/index)

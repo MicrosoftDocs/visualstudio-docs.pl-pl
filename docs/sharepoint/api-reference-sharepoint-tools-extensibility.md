@@ -1,5 +1,7 @@
 ---
 title: Dokumentacja interfejsu API (rozszerzalność narzędzi SharePoint) | Microsoft Docs
+description: Przejrzyj dokumentację referencyjną interfejsu API na potrzeby rozszerzania narzędzi programu SharePoint w programie Visual Studio. Zobacz listę powiązanych przestrzeni nazw, takich jak Microsoft. VisualStudio. SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 37639068b74b5d99864871355a8b9ef36906f6cd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4599a2c305558f2ef551d19abac210bdf05269f3
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62987990"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850393"
 ---
 # <a name="api-reference-sharepoint-tools-extensibility"></a>Dokumentacja interfejsu API (rozszerzalność narzędzi SharePoint)
   Ta sekcja zawiera dokumentację referencyjną interfejsu API służącą do rozszerzania narzędzi programu SharePoint w programie Visual Studio.
@@ -67,7 +69,7 @@ ms.locfileid: "62987990"
 
  Zawiera typy, które służą do dostosowania funkcji i zachowania walidacji pakietu dla projektu programu SharePoint.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dokumentacja &#40;rozszerzalności narzędzi programu SharePoint&#41;](../sharepoint/reference-sharepoint-tools-extensibility.md)
 - [Omówienie modelu programowania rozszerzeń narzędzi SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
 - [Poszerzanie systemu projektu SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)

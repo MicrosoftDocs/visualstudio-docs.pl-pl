@@ -1,5 +1,7 @@
 ---
 title: Przeglądanie połączeń programu SharePoint przy użyciu Eksplorator serwera | Microsoft Docs
+description: Przeglądaj połączenia programu SharePoint przy użyciu Eksplorator serwera. Dowiedz się więcej na temat Eksplorator serwera węzłów i poleceń menu skrótów węzła.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: baf580ace98ab14032de1e9a3edf18af2b2cfee8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 79e8d3dbc1dab865b2ab9048cea8d13c478f2a12
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016352"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849834"
 ---
 # <a name="browse-sharepoint-connections-by-using-server-explorer"></a>Przeglądanie połączeń programu SharePoint przy użyciu Eksplorator serwera
   Teraz można przeglądać lokalne połączenia programu SharePoint w **Eksplorator serwera**. Korzystając z tej techniki, można przechodzić przez składniki witryny programu SharePoint w systemie. Składniki witryny programu SharePoint, takie jak definicje list i typy zawartości, są wyświetlane w węźle o nazwie **połączenia programu SharePoint** w widoku drzewa **Eksplorator serwera**. Aby wyświetlić **Eksplorator serwera**, na pasku menu wybierz **Widok**  >  **Eksplorator serwera**. Oprócz wyświetlania składników witryny programu SharePoint, można usunąć elementy, wyświetlić ich właściwości lub odświeżyć widok drzewa przy użyciu poleceń w menu skrótów.
@@ -38,7 +40,7 @@ ms.locfileid: "86016352"
 |Nazwa polecenia|Opis|
 |------------------|-----------------|
 |Odśwież|Aktualizuje widok drzewa, aby odzwierciedlić wszelkie zmiany, które mogły wystąpić od czasu ostatniego wyświetlenia węzła.|
-|Usuń|Usuwa wybrany węzeł z widoku drzewa. **Uwaga:**  To polecenie jest włączone tylko dla połączeń programu SharePoint znajdujących się w węźle **połączenia programu SharePoint** .|
+|Usuwanie|Usuwa wybrany węzeł z widoku drzewa. **Uwaga:**  To polecenie jest włączone tylko dla połączeń programu SharePoint znajdujących się w węźle **połączenia programu SharePoint** .|
 |Właściwości|Wyświetla dostępne właściwości wybranego węzła w oknie **Właściwości** . Właściwości są tylko do odczytu, a nie każdy węzeł ma skojarzone z nim właściwości.|
 |Dodaj połączenie|Pozwala określić witrynę programu SharePoint, którą chcesz przeglądać. Dostępne w węźle **połączenia programu SharePoint** i węzły podrzędne lokacji.|
 |Wyświetl w przeglądarce|Wyświetla wybraną listę w przeglądarce sieci Web. To polecenie jest dostępne na niektórych **listach, które** znajdują się na **listach i w bibliotekach**.|
@@ -49,5 +51,5 @@ ms.locfileid: "86016352"
 |-----------|-----------------|
 |[Instrukcje: Dodawanie lub usuwanie połączeń programu SharePoint](../sharepoint/how-to-add-or-remove-sharepoint-connections.md)|Zawiera opis czynności, które są wymagane do dodania nowej witryny programu SharePoint do węzła **połączenia programu SharePoint** w **Eksplorator serwera**.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)

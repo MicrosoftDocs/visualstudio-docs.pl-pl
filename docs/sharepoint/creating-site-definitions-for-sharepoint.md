@@ -1,5 +1,7 @@
 ---
 title: Tworzenie definicji witryny dla programu SharePoint | Microsoft Docs
+description: Utwórz definicje witryn dla programu SharePoint. Definicje lokacji określają wygląd i zachowanie witryny programu SharePoint oraz jej domyślnej zawartości i funkcji.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0f1a512218c3c1b7af179cfaba3e231a90941fe0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7585a4b80322afb37e816758fc7074806a443676
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015063"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850575"
 ---
 # <a name="create-site-definitions-for-sharepoint"></a>Tworzenie definicji witryny dla programu SharePoint
   Projekt definicji witryny programu SharePoint w programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] umożliwia utworzenie *definicji lokacji*, która służy jako podstawa dla nowej witryny programu SharePoint. Definicje te nie tylko określają wygląd i zachowanie witryny programu SharePoint, ale również jego domyślną zawartość i funkcje. W definicji można umieścić wstępnie skonfigurowane listy, typy zawartości, odbiorniki zdarzeń, obrazy i inne elementy. Program SharePoint zawiera definicje witryn, takie jak BLOG, na przykład. W przypadku tworzenia witryny na podstawie definicji witryny blogu lokacja zawiera listy, składniki Web Part i inne elementy wymagane przez witrynę blogów.
@@ -40,7 +42,7 @@ ms.locfileid: "86015063"
 |*onet.xml*|Określa konfigurację nowej lokacji, składników szablonu definicji lokacji i zachowania domyślnego. Te ustawienia mogą zawierać atrybuty, takie jak typy zawartości, które są włączone, domyślne widoki list, pliki szablonów dokumentów i składniki Web Part dołączone do witryny. Domyślnie `Modules` sekcja zawiera listę plików, które mają zostać dodane do witryny programu SharePoint i sposobu ich konfiguracji.|
 |*webtemp_ \<SiteDefinitionName> . XML*|Określa konfiguracje definicji lokacji, które pojawiają się w sekcji **Wybieranie szablonu** na **nowej stronie witryny programu SharePoint** .|
 
- Domyślnie wszystkie definicje lokacji są przechowywane w folderze * \<drive:> \Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates* . Każda definicja lokacji ma własny podfolder.
+ Domyślnie wszystkie definicje lokacji są przechowywane w folderze *\<drive:> \Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates* . Każda definicja lokacji ma własny podfolder.
 
 ## <a name="related-topics"></a>Powiązane tematy
 
@@ -58,5 +60,5 @@ ms.locfileid: "86015063"
 |[Programowanie stron sieci Web ASP.NET](/previous-versions/aspnet/0yt4zca8(v=vs.100))|Zawiera informacje dotyczące sposobu tworzenia programów obsługi zdarzeń na [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] stronach oraz sposobu pracy z skryptem klienta programu.|
 |[Programowanie w programie Windows SharePoint Services](/previous-versions/office/developer/sharepoint-services/ms430674(v=office.12))|Opisuje sposób korzystania z modelu obiektów zarządzanych, który jest dostępny w programie [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] .|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)

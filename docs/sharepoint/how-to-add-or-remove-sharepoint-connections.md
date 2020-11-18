@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Dodawanie lub usuwanie połączeń programu SharePoint | Microsoft Docs'
+description: Dodawanie lub usuwanie połączeń programu SharePoint przy użyciu węzła połączenia programu SharePoint w oknie Eksplorator serwera programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cec1389294c8baf169db055acb87619114d7d19b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b898dd0f9327c7589d0dac3436aec0299009221d
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014568"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850718"
 ---
 # <a name="how-to-add-or-remove-sharepoint-connections"></a>Instrukcje: Dodawanie lub usuwanie połączeń programu SharePoint
   Eksplorator serwera umożliwia przeglądanie witryn programu SharePoint oraz połączeń danych. Jednak zanim będzie można przeglądać zawartość witryny programu SharePoint, należy ją dodać do węzła **połączenia programu SharePoint** .
@@ -28,7 +30,7 @@ ms.locfileid: "86014568"
 
 1. Na pasku menu wybierz **Widok**, **Eksplorator serwera**.
 
-2. W **Eksplorator serwera**wybierz węzeł **połączenia programu SharePoint** , a następnie na pasku menu wybierz kolejno opcje **Narzędzia**  >  **Dodaj połączenie programu SharePoint**.
+2. W **Eksplorator serwera** wybierz węzeł **połączenia programu SharePoint** , a następnie na pasku menu wybierz kolejno opcje **Narzędzia**  >  **Dodaj połączenie programu SharePoint**.
 
 3. W polu **Dodaj połączenie programu SharePoint** wprowadź [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] dla witryny programu SharePoint (na przykład http://testserver/sites/unittests) .
 
@@ -43,5 +45,5 @@ ms.locfileid: "86014568"
     > [!NOTE]
     > Ten krok nie powoduje usunięcia lokacji podstawowej; usuwa tylko połączenie z **Eksplorator serwera**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Przeglądanie połączeń programu SharePoint przy użyciu Eksplorator serwera](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)

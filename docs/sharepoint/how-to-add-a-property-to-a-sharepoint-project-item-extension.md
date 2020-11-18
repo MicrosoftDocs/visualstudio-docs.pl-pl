@@ -1,6 +1,8 @@
 ---
 title: 'Instrukcje: Dodawanie właściwości do rozszerzenia elementu projektu programu SharePoint | Microsoft Docs'
 titleSuffix: ''
+description: Użyj rozszerzenia elementu projektu programu SharePoint, aby dodać właściwość do dowolnego elementu projektu programu SharePoint, który jest już zainstalowany w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 752a782bb4aafd977ff10a0b57dd971f7ad6bed4
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ae43eb1fd2c20fde6e7b1ad503b87a5d1cb367b1
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584259"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850172"
 ---
 # <a name="how-to-add-a-property-to-a-sharepoint-project-item-extension"></a>Instrukcje: Dodawanie właściwości do rozszerzenia elementu projektu SharePoint
   Możesz użyć rozszerzenia elementu projektu, aby dodać właściwość do dowolnego elementu projektu programu SharePoint, który jest już zainstalowany w programie Visual Studio. Właściwość pojawia się w oknie **Właściwości** , gdy element projektu jest wybrany w **Eksplorator rozwiązań**.
@@ -69,7 +71,7 @@ ms.locfileid: "91584259"
 ## <a name="deploy-the-extension"></a>Wdróż rozszerzenie
  Aby wdrożyć rozszerzenie, Utwórz [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] pakiet rozszerzenia (VSIX) dla zestawu i wszystkie inne pliki, które chcesz dystrybuować z rozszerzeniem. Aby uzyskać więcej informacji, zobacz [Wdrażanie rozszerzeń dla narzędzi programu SharePoint w programie Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Instrukcje: Tworzenie rozszerzenia elementu projektu SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
 - [Instrukcje: Dodawanie elementu menu skrótów do rozszerzenia elementu projektu SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)
 - [Zwiększ elementy projektu SharePoint](../sharepoint/extending-sharepoint-project-items.md)

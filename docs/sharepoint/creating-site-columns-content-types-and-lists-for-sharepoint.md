@@ -1,6 +1,8 @@
 ---
 title: Tworzenie kolumn witryn, typów zawartości i list dla programu SharePoint | Microsoft Docs
 titleSuffix: ''
+description: Tworzenie kolumn witryn, typów zawartości i list dla programu SharePoint. Program Visual Studio udostępnia szablony elementów projektu dla tych typów elementów programu SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 269be4aaf34e9b6c611a5d79ba38cddba04276bf
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 29d0ebc33bf3df198f3ee9b3f9d80a747087341c
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585109"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850523"
 ---
 # <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>Tworzenie kolumn witryn, typów zawartości i list dla programu SharePoint
   Program Visual Studio udostępnia szablony elementów projektu dla wielu różnych podstawowych elementów programu SharePoint, w tym *listy* i *typy zawartości*, które mogą obejmować kolumny witryny (lub *pola*). Nowe projektanci typów zawartości i list tworzą te elementy łatwiej niż kiedykolwiek wcześniej.
@@ -49,5 +51,5 @@ ms.locfileid: "91585109"
 |-----------|-----------------|
 |[Przewodnik: Tworzenie kolumny witryny, typu zawartości i listy dla programu SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Pokazuje, jak utworzyć kolumny witryny, które są używane w niestandardowym typie zawartości. Typ zawartości jest następnie używany na liście niestandardowej.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wprowadzenie do programowania w programie SharePoint 2010](/sharepoint/dev/)

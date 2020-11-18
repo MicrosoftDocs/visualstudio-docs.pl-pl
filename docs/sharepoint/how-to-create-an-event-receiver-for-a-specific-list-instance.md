@@ -1,6 +1,8 @@
 ---
 title: 'Instrukcje: Tworzenie odbiorcy zdarzeń dla określonego wystąpienia listy | Microsoft Docs'
 titleSuffix: ''
+description: Utwórz odbiorcę zdarzeń dla określonego wystąpienia listy. Odbiorca zdarzenia wystąpienia listy odpowiada na zdarzenia występujące w dowolnym wystąpieniu definicji listy.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c37da8b798c3b6a0fdc093d5c443584f68b4b5cc
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 8bd76f2aafc5d0b3058dcaba68b6f3099f01ff8d
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585839"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849899"
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Instrukcje: Tworzenie odbiorcy zdarzeń dla określonego wystąpienia listy
   Odbiorca zdarzenia wystąpienia listy odpowiada na zdarzenia występujące w dowolnym wystąpieniu definicji listy. Mimo że szablon odbiorcy zdarzeń nie umożliwia określania wartości docelowej określonego wystąpienia listy, można zmodyfikować odbiorcę zdarzeń, który jest objęty zakresem definicji listy w celu reagowania na zdarzenia w określonym wystąpieniu listy.
@@ -50,7 +52,7 @@ ms.locfileid: "91585839"
 
 8. Na liście **Obsługuj poniższe zdarzenia** zaznacz pole wyboru **element jest dodawany** , a następnie wybierz przycisk **Zakończ** .
 
-9. W **Eksplorator rozwiązań**w obszarze EventReceiver1 Otwórz *Elements.xml*.
+9. W **Eksplorator rozwiązań** w obszarze EventReceiver1 Otwórz *Elements.xml*.
 
      Odbiorca zdarzeń odwołuje się obecnie do definicji listy anonsów, używając następującego wiersza:
 
@@ -86,6 +88,6 @@ ms.locfileid: "91585839"
 
      Należy zauważyć, że odbiorca zdarzeń nie wyzwala nowego anonsu, ponieważ odbiornik jest skonfigurowany do odpowiadania tylko na zdarzenia w wystąpieniu listy anonsów niestandardowych, **TestAnnouncements**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Instrukcje: Tworzenie odbiorcy zdarzeń](../sharepoint/how-to-create-an-event-receiver.md)
 - [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)

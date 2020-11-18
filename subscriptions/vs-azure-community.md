@@ -2,17 +2,17 @@
 title: Korzyść wsparcia społeczności platformy Azure w Visual Studio Subscription | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: c15f7e18-b280-4902-a60d-2c2598653207
-ms.date: 07/29/2019
+ms.date: 11/17/2020
 ms.topic: conceptual
 description: Dowiedz się więcej na temat korzyści z pomocy technicznej dla społeczności platformy Azure zawartych w wybranych subskrypcjach programu Visual Studio.
-ms.openlocfilehash: 000732d2c46d777c68451153dc5965d45087abce
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: 285b10670c10b2b2d14af45bfe23e891b08bbb5b
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353216"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850536"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Forum pomocy technicznej platformy Azure w ramach subskrypcji programu Visual Studio
 Uzyskaj pomoc bezpośrednio z zespołu platformy Azure w ramach wybranych forów pomocy technicznej za pośrednictwem społeczności platformy Azure.  Korzyść społeczność platformy Azure zapewnia dostęp do kolekcji forów skoncentrowanych na tematach związanych z platformą Azure.
@@ -22,7 +22,7 @@ Uzyskaj pomoc bezpośrednio z zespołu platformy Azure w ramach wybranych forów
 :::row:::
     :::column:::
         - [Azure Active Directory](https://social.msdn.microsoft.com/forums/home?forum=WindowsAzureAD&filter=alltypes&sort=lastpostdesc)  
-        - [Azure API Management](https://social.msdn.microsoft.com/Forums/home?forum=azureapimgmt&filter=alltypes&sort=lastpostdesc)  
+        - [API Management platformy Azure](https://social.msdn.microsoft.com/Forums/home?forum=azureapimgmt&filter=alltypes&sort=lastpostdesc)  
         - [Azure App Service — Web Apps](https://social.msdn.microsoft.com/forums/home?forum=windowsazurewebsitespreview&filter=alltypes&sort=lastpostdesc)  
         - [Azure Backup](https://social.msdn.microsoft.com/forums/home?forum=windowsazureonlinebackup&filter=alltypes&sort=lastpostdesc)  
         - [Azure DevTest Labs](https://social.msdn.microsoft.com/forums/home?forum=AzureDevTestLabs&filter=alltypes&sort=lastpostdesc)  
@@ -39,7 +39,7 @@ Uzyskaj pomoc bezpośrednio z zespołu platformy Azure w ramach wybranych forów
         - [Azure Site Recovery](https://social.msdn.microsoft.com/forums/home?forum=hypervrecovmgr&filter=alltypes&sort=lastpostdesc)  
     :::column-end:::
     :::column:::
-        - [Baza danych SQL Azure](https://social.msdn.microsoft.com/Forums/home?forum=ssdsgetstarted&filter=alltypes&sort=lastpostdesc)  
+        - [Azure SQL Database](https://social.msdn.microsoft.com/Forums/home?forum=ssdsgetstarted&filter=alltypes&sort=lastpostdesc)  
         - [Azure Stack](https://social.msdn.microsoft.com/forums/home?forum=AzureStack&filter=alltypes&sort=lastpostdesc)  
         - [Azure Storage](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuredata&filter=alltypes&sort=lastpostdesc)  
         - [Azure Virtual Machines](https://social.msdn.microsoft.com/Forums/home?forum=WAVirtualMachinesforWindows&filter=alltypes&sort=lastpostdesc)  
@@ -70,13 +70,13 @@ Dostępność korzyści społeczności platformy Azure zależy od poziomu subskr
 
 |                                          Poziom subskrypcji                                           |     Kanały      |    Korzyść    | Odnawialny? |
 |-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
-|                           Visual Studio Enterprise (standardowa)                           | LICENCJONOWANie, Azure, sprzedaż detaliczna |   Jeden rok    |    Tak     |
+|                           Visual Studio Enterprise (standard), NFR<sup>1</sup>                            | LICENCJONOWANie, Azure, sprzedaż detaliczna |   Jeden rok    |    Tak     |
 |                           Visual Studio Enterprise z usługą GitHub Enterprise                           | LICENCJONOWANie, Azure, sprzedaż detaliczna |   Jeden rok    |    Tak     |
 |                          Visual Studio Professional (standardowa)                          | LICENCJONOWANie, Azure, sprzedaż detaliczna |   Jeden rok    |    Tak     |
 |                          Visual Studio Professional z usługą GitHub Enterprise                          | LICENCJONOWANie, Azure, sprzedaż detaliczna |   Jeden rok    |    Tak     |
 |                              Visual Studio Test Professional (standardowa)                               |    LICENCJONOWANie detaliczne     |   Jeden rok    |    Tak     |
 |                                       Platformy MSDN (standardowa)                                       |    LICENCJONOWANie detaliczne     |   Jeden rok    |    Tak     |
-| Visual Studio Enterprise (chmura miesięczna), Visual Studio Professional (chmura miesięczna), NFR<sup>1</sup> |        Wszystko        | Niedostępne |     Nie     |
+| Visual Studio Enterprise (chmura miesięczna), Visual Studio Professional (chmura miesięczna)|        Wszystko        | Niedostępne |     Nie     |
 
 <sup>1</sup>  *obejmuje: nie do odsprzedaży (NFR), Microsoft w pełni, najbardziej cennych profesjonalistów (MVP), regionalnego dyrektora (RD), Visual Studio Industry partner (VSIP), BizSpark, Wyobraź sobie, że firma Microsoft Certified Trainer (MCT)*
 
@@ -91,9 +91,9 @@ Nie masz pewności, której subskrypcji używasz?  Połącz się z, [https://my.
 - Potrzebujesz pomocy w zakresie sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio?  Skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dokumentacja programu Visual Studio](/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Azure DevOps documentation (Dokumentacja usługi Azure DevOps)](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)
 - [Dokumentacja Microsoft 365](/microsoft-365/)
 

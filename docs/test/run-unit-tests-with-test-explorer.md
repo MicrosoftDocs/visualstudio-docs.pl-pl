@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2d7dc38f1a25826ba275738cd8e758a2ad5d90e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 95e35037ba07dcba1f51da7b47b7fca40a447dfb
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86386644"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850029"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów
 
@@ -47,7 +47,7 @@ Podczas kompilowania projektu testowego, testy są wyświetlane w Eksploratorze 
 Podczas uruchamiania, zapisywania i ponownego uruchamiania testów, Eksplorator testów wyświetla wyniki w domyślnych grupach **testów zakończonych niepowodzeniem**, testy **zakończone pomyślnie**, **testy pominięte** i **testy nie są uruchamiane**. Można zmienić sposób, w jaki Eksplorator testów grupuje testy.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-Podczas uruchamiania, zapisywania i ponownego uruchamiania testów, Eksplorator testów wyświetla wyniki w domyślnym grupowaniu **projektu**, **przestrzeni nazw**i **klasy**. Można zmienić sposób, w jaki Eksplorator testów grupuje testy.
+Podczas uruchamiania, zapisywania i ponownego uruchamiania testów, Eksplorator testów wyświetla wyniki w domyślnym grupowaniu **projektu**, **przestrzeni nazw** i **klasy**. Można zmienić sposób, w jaki Eksplorator testów grupuje testy.
 ::: moniker-end
 
 Na pasku narzędzi **Eksploratora testów** można wykonywać wiele prac znajdowania, organizowania i uruchamiania testów.
@@ -158,7 +158,7 @@ Można zdefiniować własne poziomy hierarchii i według **stanu** , a następni
 ::: moniker range="vs-2017"
 |Grupa|Opis|
 |-|-----------------|
-|**Czas trwania**|Testy grup według czasu wykonywania: **szybka**, **średnia**i **wolna**.|
+|**Czas trwania**|Testy grup według czasu wykonywania: **szybka**, **średnia** i **wolna**.|
 |**Wynikiem**|Grupuje testy według wyników wykonywania: **testy zakończone niepomyślnie**, **testy pominięte**, **testy zakończone powodzeniem**.|
 |**Cech**|Grupuje testy według par kategorii/wartości zdefiniowanych przez użytkownika. Składnia określająca kategorie i wartości cech jest definiowana przez strukturę testów jednostkowych.|
 |**Project**|Grupuje testy według nazwy projektów.|
@@ -166,7 +166,7 @@ Można zdefiniować własne poziomy hierarchii i według **stanu** , a następni
 ::: moniker range=">=vs-2019"
 |Grupa|Opis|
 |-|-----------------|
-|**Czas trwania**|Grupuje testy według czasu wykonywania: **szybka**, **średnia**i **wolna**.|
+|**Czas trwania**|Grupuje testy według czasu wykonywania: **szybka**, **średnia** i **wolna**.|
 |**Stan**|Grupuje testy według wyników wykonywania: **testy zakończone niepomyślnie**, **testy pominięte**, **testy zakończone powodzeniem**, **nie uruchomiono**|
 |**Struktura docelowa** | Grupuje testy według struktury obiektów docelowych projektów |
 |**Przestrzeń nazw**|Grupuje testy według przestrzeni nazw zawierającej.|
@@ -233,6 +233,21 @@ Począwszy od programu Visual Studio 2019 w wersji 16,7, można wybrać przycisk
 Możesz również sprawdzić lub usunąć zaznaczenie pól grup nadrzędnych w hierarchii. Ta akcja tworzy dynamiczną listę odtwarzania, która zawsze aktualizuje listę odtwarzania w oparciu o testy, które znajdują się w tej grupie. Na przykład jeśli umieścisz znacznik wyboru obok klasy, każdy test dodany z tej klasy będzie częścią tej listy odtwarzania. Po usunięciu testu z tej klasy zostanie on usunięty z listy odtwarzania. Aby dowiedzieć się więcej na temat reguł, można zapisać listę odtwarzania z przyciskiem Zapisz na pasku narzędzi i otworzyć plik *listy odtwarzania* , który jest tworzony na dysku. Ten plik zawiera listę wszystkich reguł i testów indywidualnych, które tworzą listę odtwarzania.
 
 ![Plik XML z listą odtwarzania](../test/media/vs-2019/test-explorer-playlist-xml-file.png)
+
+Jeśli chcesz utworzyć listę odtwarzania dla cech, użyj poniższego formatu. Upewnij się, że istnieje spacja między `TestCategory` nazwą i `[Value]` .
+```xml
+<Playlist Version="2.0">
+  <Rule Name="Includes" Match="Any">
+    <Rule Match="All">
+      <Property Name="Solution" />
+        <Rule Match="Any">
+            <Property Name="Trait" Value="TestCategory [Value]" />
+        </Rule>
+    </Rule>
+  </Rule>
+</Playlist>
+```
+
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
@@ -260,7 +275,7 @@ Kolumny można filtrować, sortować i zmieniać ich kolejność.
 
 Możesz również użyć filtrów wyszukiwania programu Test Explorer, aby ograniczyć metody testowe w projektach, które są wyświetlane i uruchamiane.
 
-Po wpisaniu ciągu w polu wyszukiwania **Eksploratora testów** i wybraniu **klawisza ENTER**lista testów jest filtrowana, aby wyświetlić tylko te testy, których w pełni kwalifikowane nazwy zawierają ciąg.
+Po wpisaniu ciągu w polu wyszukiwania **Eksploratora testów** i wybraniu **klawisza ENTER** lista testów jest filtrowana, aby wyświetlić tylko te testy, których w pełni kwalifikowane nazwy zawierają ciąg.
 
 Aby odfiltrować według innych kryteriów:
 
@@ -353,7 +368,7 @@ Testy można uruchomić z poziomu Eksploratora testów, klikając prawym przycis
 > [!NOTE]
 > Nie można uruchomić testu w klasie abstrakcyjnej, ponieważ testy są zdefiniowane tylko w klasach abstrakcyjnych i nie są tworzone. Aby uruchomić testy w klasach abstrakcyjnych, należy utworzyć klasę, która dziedziczy z klasy abstrakcyjnej.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Testowanie jednostkowe kodu](../test/unit-test-your-code.md)
 - [Debugowanie testów jednostkowych za pomocą narzędzia Eksplorator testów](../test/debug-unit-tests-with-test-explorer.md)

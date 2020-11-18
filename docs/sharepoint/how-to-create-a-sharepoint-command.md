@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Tworzenie polecenia SharePoint | Microsoft Docs'
+description: Dowiedz się, jak utworzyć niestandardowe polecenie programu SharePoint, aby wywołać interfejs API modelu obiektów serwera w rozszerzeniu narzędzi programu SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 15ea7ff86e90bf7a474f9d64c30a9803e3e20bf5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41e4ab0fd70f4993d148cd5c67cb816bdc92e77a
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016216"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850705"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>Instrukcje: Tworzenie polecenia SharePoint
   Jeśli chcesz użyć modelu obiektów serwera w rozszerzeniu narzędzi programu SharePoint, musisz utworzyć niestandardowe *polecenie programu SharePoint* , aby wywołać interfejs API. Zdefiniuj polecenie programu SharePoint w zestawie, które może bezpośrednio wywołać model obiektów serwera.
@@ -53,7 +55,7 @@ ms.locfileid: "86016216"
 
     - Drugi parametr i zwracana wartość muszą być typu, który może zostać Zserializowany przez Windows Communication Foundation (WCF). Aby uzyskać więcej informacji, zobacz [Typy obsługiwane przez serializator kontraktu danych](/dotnet/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer) i [Używanie klasy XmlSerializer](/dotnet/framework/wcf/feature-details/using-the-xmlserializer-class).
 
-    - Metoda może mieć widoczność (**publiczna**, **wewnętrzna**lub **prywatna**) i może być statyczna lub niestatyczna.
+    - Metoda może mieć widoczność (**publiczna**, **wewnętrzna** lub **prywatna**) i może być statyczna lub niestatyczna.
 
 4. Zastosuj <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> do metody. Ten atrybut określa unikatowy identyfikator polecenia; Ten identyfikator nie musi być zgodny z nazwą metody.
 
@@ -77,7 +79,7 @@ ms.locfileid: "86016216"
 ## <a name="deploying-the-command"></a>Wdrażanie polecenia
  Aby wdrożyć polecenie, należy uwzględnić zestaw poleceń w tym samym [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] pakiecie rozszerzenia (*VSIX*) z zestawem rozszerzeń, który używa polecenia. Należy również dodać wpis dla zestawu poleceń w pliku Extension. vsixmanifest. Aby uzyskać więcej informacji, zobacz [Wdrażanie rozszerzeń dla narzędzi programu SharePoint w programie Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wywoływanie modeli obiektów programu SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)
 - [Instrukcje: wykonywanie polecenia SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md)
 - [Przewodnik: rozszerzona Eksplorator serwera do wyświetlania składników Web Part](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)

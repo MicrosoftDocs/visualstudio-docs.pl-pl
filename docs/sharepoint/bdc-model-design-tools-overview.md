@@ -1,5 +1,7 @@
 ---
 title: Omówienie narzędzi projektowania modelu BDC | Microsoft Docs
+description: Zapoznaj się z omówieniem narzędzi do projektowania, które mają być używane z modelem łączności danych biznesowych (BDC). Dowiedz się więcej na temat projektanta BDC, okna Szczegóły metody BDC i Eksploratora usługi BDC.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7a2531f1cc6352a03acf0b3d6af82c35e47c2743
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6e78b6809d3136c0db1f558d175706dc0ecd75b
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64827951"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850316"
 ---
 # <a name="bdc-model-design-tools-overview"></a>Omówienie narzędzi projektowania modelu BDC
   Model łączności danych biznesowych (BDC) można zaprojektować za pomocą projektanta BDC, okna **Szczegóły metody BDC** i **Eksploratora usługi BDC**.
@@ -51,7 +53,7 @@ ms.locfileid: "64827951"
 
  W oknie **Szczegóły metody BDC** można szybko wygenerować wyszukiwanie, określone metody wyszukiwania, twórców, Aktualizator i metod Delete. Podczas generowania tych metod program Visual Studio dodaje do metody metadane, takie jak parametry, wystąpienia i deskryptory typu. Możesz zmodyfikować te metadane, aby spełniały określony scenariusz.
 
- Aby otworzyć okno **Szczegóły metody BDC** , na pasku menu wybierz opcję **Wyświetl**  >  **inne**  >  **Szczegóły metody BDC**systemu Windows.
+ Aby otworzyć okno **Szczegóły metody BDC** , na pasku menu wybierz opcję **Wyświetl**  >  **inne**  >  **Szczegóły metody BDC** systemu Windows.
 
  Aby wyświetlić metody w oknie **Szczegóły metody BDC** , wybierz jednostkę w projektancie BDC. Metody wybranej jednostki pojawiają się w oknie **Szczegóły metody BDC** . Jeśli nie wybierzesz jednostki w Projektancie usługi BDC, w oknie **Szczegóły metody BDC** nie zostaną wyświetlone żadne informacje.
 
@@ -60,7 +62,7 @@ ms.locfileid: "64827951"
 ## <a name="bdc-explorer"></a>Eksplorator modelu BDC
  W **Eksploratorze BDC** są wyświetlane elementy wchodzące w skład modelu. Aby otworzyć **Eksploratora usługi BDC**, na pasku menu wybierz pozycję **Wyświetl**  >  **inne**  >  **Eksplorator usługi Windows BDC**. Aby przeglądać model, rozwiń węzły w **Eksploratorze BDC**. Każdy węzeł reprezentuje element w kodzie XML pliku modelu.
 
- Po wybraniu węzłów w **Eksploratorze BDC**właściwości każdego wybranego węzła są wyświetlane w oknie **Właściwości** . Wiele z tych właściwości odpowiada atrybutom w pliku modelu. Możesz przeszukiwać model przy użyciu pola wyszukiwania w górnej części okna **Eksplorator usługi BDC**.
+ Po wybraniu węzłów w **Eksploratorze BDC** właściwości każdego wybranego węzła są wyświetlane w oknie **Właściwości** . Wiele z tych właściwości odpowiada atrybutom w pliku modelu. Możesz przeszukiwać model przy użyciu pola wyszukiwania w górnej części okna **Eksplorator usługi BDC**.
 
 > [!NOTE]
 > **Eksplorator usługi BDC** nie wyświetla identyfikatorów, właściwości niestandardowych, zlokalizowanych ciągów, grup skojarzeń, akcji, deskryptorów filtrów, list kontrolek akcji i wartości domyślnych parametrów.
@@ -73,7 +75,7 @@ ms.locfileid: "64827951"
 
  Aby uzyskać więcej informacji, zobacz [How to: define The Type Descriptor of a Parameter](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Instrukcje: Tworzenie modelu usługi BDC](../sharepoint/how-to-create-a-bdc-model.md)
 - [Instrukcje: Dodawanie jednostki do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md)
 - [Instrukcje: Dodawanie metody wyszukiwania](../sharepoint/how-to-add-a-finder-method.md)

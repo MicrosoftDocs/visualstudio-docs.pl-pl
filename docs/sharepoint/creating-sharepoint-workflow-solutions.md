@@ -1,5 +1,7 @@
 ---
 title: Tworzenie rozwiązań przepływu pracy programu SharePoint | Microsoft Docs
+description: Twórz rozwiązania przepływu pracy programu SharePoint za pomocą narzędzi, aby tworzyć niestandardowe przepływy pracy, które zarządzają cyklem życia dokumentów i elementów listy w witrynach programu SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2c787009577735213437140513ec095f81c3f43b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dd3f88df661537434c79a8b0049f90ddbce14c70
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015288"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850614"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>Tworzenie rozwiązań przepływu pracy programu SharePoint
 
@@ -60,7 +62,7 @@ Aby uzyskać więcej informacji na temat programu SharePoint, zobacz [produkty i
 > Właściwość **typu przepływu pracy** jest tylko do odczytu i nie można jej zmienić. Jeśli chcesz zmienić typ przepływu pracy, musisz utworzyć inny przepływ pracy.
 
 ## <a name="design-a-sharepoint-workflow"></a>Projektowanie przepływu pracy programu SharePoint
- Po zdefiniowaniu wszystkich kroków w procesie biznesowym [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] można zaprojektować przepływ pracy programu SharePoint za pomocą projektanta przepływu pracy. Aby otworzyć projektanta, kliknij dwukrotnie pozycję Workflow1.cs lub Workflow1. vb w **Eksplorator rozwiązań**lub Otwórz menu skrótów dla jednego z tych plików, a następnie wybierz polecenie **Otwórz**.
+ Po zdefiniowaniu wszystkich kroków w procesie biznesowym [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] można zaprojektować przepływ pracy programu SharePoint za pomocą projektanta przepływu pracy. Aby otworzyć projektanta, kliknij dwukrotnie pozycję Workflow1.cs lub Workflow1. vb w **Eksplorator rozwiązań** lub Otwórz menu skrótów dla jednego z tych plików, a następnie wybierz polecenie **Otwórz**.
 
 ### <a name="activities"></a>Działania
  Aby zaprojektować przepływ pracy, należy dodać działania z **przybornika** do *harmonogramu przepływu pracy* w projektancie. Harmonogram przepływu pracy zawiera sekwencję działań w kolejności, w jakiej powinny być wykonywane.
@@ -142,7 +144,7 @@ Aby uzyskać więcej informacji na temat programu SharePoint, zobacz [produkty i
 |[Przewodnik: Tworzenie niestandardowego działania przepływu pracy witryny](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md)|Pokazuje, jak wykonywać dwa kluczowe zadania: tworzenie przepływu pracy na poziomie witryny i tworzenie niestandardowego działania przepływu pracy.|
 |[Przewodnik: Importowanie przepływu pracy wielokrotnego użytku programu SharePoint Designer do programu Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|Demonstruje sposób importowania deklaratywnych przepływów pracy wielokrotnego użytku utworzonych w programie SharePoint Designer 2010 do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu programu SharePoint.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)
 - [Kompilowanie i debugowanie rozwiązań SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)

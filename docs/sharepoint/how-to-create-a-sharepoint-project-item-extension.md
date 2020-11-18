@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Tworzenie rozszerzenia elementu projektu SharePoint | Microsoft Docs'
+description: Zapoznaj się z tematem jak utworzyć rozszerzenie elementu projektu, gdy chcesz dodać funkcję do elementu projektu programu SharePoint, który jest już zainstalowany w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 345bfa49da4bf5d5b73fe1d3f209675fe2814de2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6ad0befdfc656233373e8c79d14495aa3f7fa21e
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015349"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850653"
 ---
 # <a name="how-to-create-a-sharepoint-project-item-extension"></a>Instrukcje: Tworzenie rozszerzenia elementu projektu SharePoint
   Utwórz rozszerzenie elementu projektu, gdy chcesz dodać funkcję do elementu projektu programu SharePoint, który jest już zainstalowany w programie Visual Studio. Aby uzyskać więcej informacji, zobacz sekcję [rozszerzając elementy projektu programu SharePoint](../sharepoint/extending-sharepoint-project-items.md).
@@ -62,6 +64,6 @@ ms.locfileid: "86015349"
 ## <a name="deploy-the-extension"></a>Wdróż rozszerzenie
  Aby wdrożyć rozszerzenie, Utwórz [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] pakiet rozszerzenia (VSIX) dla zestawu i wszystkie inne pliki, które chcesz dystrybuować z rozszerzeniem. Aby uzyskać więcej informacji, zobacz [Wdrażanie rozszerzeń dla narzędzi programu SharePoint w programie Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Zwiększ elementy projektu SharePoint](../sharepoint/extending-sharepoint-project-items.md)
 - [Przewodnik: zwiększanie typu elementu projektu SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)
