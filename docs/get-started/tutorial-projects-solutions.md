@@ -1,6 +1,6 @@
 ---
 title: Wprowadzenie do projektów i rozwiązań
-ms.date: 02/24/2020
+ms.date: 11/17/2020
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: tutorial
@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da2fc196f687e2335933794a578f507dafbc6de3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cf99c191ef6cfe32ec8ccc9b2cfd57f761941be7
+ms.sourcegitcommit: e8a13978131f257d91ce37c5a2e0d153a4c400ef
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579975"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94704056"
 ---
 # <a name="learn-about-projects-and-solutions"></a>Informacje o projektach i rozwiązaniach
 
@@ -71,6 +71,9 @@ Rozpocznie nasze eksplorację, tworząc puste rozwiązanie. Po uzyskaniu informa
 
    ![Pusty szablon rozwiązania w programie Visual Studio 2019](media/vs-2019/tutorial-projects-blank-solution-template.png)
 
+    > [!TIP]
+    > Jeśli zainstalowano kilka obciążeń, pusty szablon **rozwiązania** może nie pojawić się w górnej części listy wyników wyszukiwania. Spróbuj przewinięcie na **inne wyniki w zależności** od sekcji wyszukiwania na liście. Powinien on pojawić się w tym miejscu.
+
 4. Nazwij rozwiązanie **QuickSolution**, a następnie wybierz pozycję **Utwórz**.
 
    Rozwiązanie pojawia się w **Eksplorator rozwiązań** po prawej stronie okna programu Visual Studio. Prawdopodobnie będziesz używać **Eksplorator rozwiązań** często, aby przeglądać zawartość Twoich projektów.
@@ -83,7 +86,7 @@ Teraz Dodajmy nasz pierwszy projekt do rozwiązania. Zaczniemy od pustego projek
 
 ::: moniker range="vs-2017"
 
-1. W obszarze **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy lub menu kontekstowe **rozwiązania "QuickSolution"** , wybierz polecenie **Dodaj** > **Nowy projekt**.
+1. W obszarze **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy lub menu kontekstowe **rozwiązania "QuickSolution"** , wybierz polecenie **Dodaj** > **Nowy projekt**.
 
    Zostanie otwarte okno dialogowe **Dodaj nowy projekt** .
 
@@ -100,7 +103,7 @@ Teraz Dodajmy nasz pierwszy projekt do rozwiązania. Zaczniemy od pustego projek
 
 ::: moniker range=">=vs-2019"
 
-1. W obszarze **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy lub menu kontekstowe **rozwiązania "QuickSolution"** , wybierz polecenie **Dodaj** > **Nowy projekt**.
+1. W obszarze **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy lub menu kontekstowe **rozwiązania "QuickSolution"** , wybierz polecenie **Dodaj** > **Nowy projekt**.
 
    Zostanie otwarte okno dialogowe z komunikatem **Dodawanie nowego projektu**.
 
@@ -123,11 +126,11 @@ Teraz Dodajmy nasz pierwszy projekt do rozwiązania. Zaczniemy od pustego projek
 
 Mamy pusty projekt. Dodajmy plik kodu.
 
-1. Z menu podręcznego kliknij lub kontekstowego projektu **QuickDate** w **Eksplorator rozwiązań**wybierz pozycję **Dodaj**  >  **nowy element**.
+1. Z menu podręcznego kliknij lub kontekstowego projektu **QuickDate** w **Eksplorator rozwiązań** wybierz pozycję **Dodaj**  >  **nowy element**.
 
    Zostanie otwarte okno dialogowe **Dodaj nowy element** .
 
-1. Rozwiń pozycję **elementy Visual C#**, a następnie wybierz pozycję **kod**. W środkowym okienku wybierz szablon element **klasy** . Nazwij **Kalendarz**klasy, a następnie wybierz przycisk **Dodaj** .
+1. Rozwiń pozycję **elementy Visual C#**, a następnie wybierz pozycję **kod**. W środkowym okienku wybierz szablon element **klasy** . Nazwij **Kalendarz** klasy, a następnie wybierz przycisk **Dodaj** .
 
    Plik o nazwie *Calendar.cs* jest dodawany do projektu. *. Cs* na końcu to rozszerzenie pliku, które jest określone dla plików kodu C#. Plik jest wyświetlany w hierarchii projektu wizualizacji w **Eksplorator rozwiązań**, a jego zawartość jest otwierana w edytorze.
 
@@ -163,7 +166,7 @@ Rozwiązanie to często dotyczy rozwiązań zawierających więcej niż jeden pr
 
 Dodajmy projekt testu jednostkowego do naszego rozwiązania. Tym razem zaczniemy od szablonu projektu, więc nie trzeba dodawać dodatkowego pliku kodu do projektu.
 
-1. W obszarze **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy lub menu kontekstowe **rozwiązania "QuickSolution"** , wybierz polecenie **Dodaj**  >  **Nowy projekt**.
+1. W obszarze **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy lub menu kontekstowe **rozwiązania "QuickSolution"** , wybierz polecenie **Dodaj**  >  **Nowy projekt**.
 
 ::: moniker range="vs-2017"
 
@@ -243,7 +246,7 @@ Będziemy używać nowego projektu testów jednostkowych do testowania naszej me
 
 Wiersz w pliku *Calendar.cs* , który zawiera <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> atrybut odwołuje się do nazwy zestawu (nazwa pliku) projektu **Quicktest** . Nazwa zestawu może nie zawsze być taka sama jak nazwa projektu. Aby znaleźć nazwę zestawu projektu, Otwórz właściwości projektu.
 
-1. W **Eksplorator rozwiązań**wybierz projekt **Quicktest** . W menu kontekstowym lub prawym przyciskiem myszy wybierz pozycję **Właściwości**lub po prostu naciśnij klawisz **Alt** + **Enter**.
+1. W **Eksplorator rozwiązań** wybierz projekt **Quicktest** . W menu kontekstowym lub prawym przyciskiem myszy wybierz pozycję **Właściwości** lub po prostu naciśnij klawisz **Alt** + **Enter**.
 
    *Strony właściwości* projektu otwartego na karcie **aplikacja** . Strony właściwości zawierają różne ustawienia dla projektu. Należy zauważyć, że nazwa zestawu projektu **Quicktest** jest rzeczywiście "Quicktest". Jeśli chcesz ją zmienić, możesz to zrobić. Następnie podczas budowania projektu testowego nazwa pliku binarnego, który zostanie zmieniony, zmieni się z *QuickTest.dll* na dowolnie wybrany.
 
@@ -267,11 +270,11 @@ Jeśli chcesz sprawdzić, czy test jednostkowy działa, wybierz pozycję **Testu
 ::: moniker range=">=vs-2019"
 
 > [!TIP]
-> Jeśli **Eksplorator testów** nie zostanie otwarty automatycznie, otwórz go, **Test**wybierając  >  z paska menu test**Eksploratora testów** .
+> Jeśli **Eksplorator testów** nie zostanie otwarty automatycznie, otwórz go, **Test** wybierając  >  z paska menu test **Eksploratora testów** .
 
 ::: moniker-end
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Tworzenie projektów i rozwiązań](../ide/creating-solutions-and-projects.md)
 - [Zarządzanie właściwościami projektów i rozwiązań](../ide/managing-project-and-solution-properties.md)

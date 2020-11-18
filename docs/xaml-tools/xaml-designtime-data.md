@@ -7,12 +7,12 @@ author: alihamie
 ms.author: tglee
 manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 1dd0b4df440f6addd474ef08e7bf0b2958a58076
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: bda4af3a3985ec6fc3aae1e991b7f5f622d67965
+ms.sourcegitcommit: e8a13978131f257d91ce37c5a2e0d153a4c400ef
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94492898"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94704004"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>Używanie danych czasu projektowania z projektant XAML w programie Visual Studio
 
@@ -181,7 +181,7 @@ Jeśli wystąpi problem, którego nie ma w tej sekcji, poinformuj nas o tym za p
 
 - Dane czasu projektowania wymagają programu Visual Studio 2019 w wersji [16,7](/visualstudio/releases/2019/release-notes) lub nowszej.
 
-- Obsługuje projekty klasyczne systemu Windows, które są przeznaczone dla Windows Presentation Foundation (WPF) dla platformy .NET Core i platformy UWP. Ta funkcja jest również dostępna dla .NET Framework, jeśli masz włączoną funkcję wersji zapoznawczej "New WPF projektant XAML for .NET Framework".
+- Obsługuje projekty klasyczne systemu Windows, które są przeznaczone dla Windows Presentation Foundation (WPF) dla platformy .NET Core i platformy UWP. Ta funkcja jest również dostępna w [kanale w wersji zapoznawczej](/visualstudio/releases/2019/release-notes-preview) dla .NET Framework. Aby włączyć tę funkcję, przejdź do pozycji **Narzędzia**  >  **Opcje**  >  **środowisko**  >  w **wersji zapoznawczej**, wybierz pozycję **Nowy Projektant XAML WPF dla .NET Framework** a następnie ponownie uruchom program Visual Studio.
 
 - Począwszy od programu Visual Studio 2019 w wersji 16,7, ta funkcja działa ze wszystkimi wbudowanymi kontrolkami z platform WPF i platformy UWP Framework. Obsługa kontrolek innych firm jest teraz dostępna w wersji zapoznawczej 16,8.
 
@@ -189,7 +189,7 @@ Jeśli wystąpi problem, którego nie ma w tej sekcji, poinformuj nas o tym za p
 
 Spróbuj zamknąć i ponownie otworzyć plik XAML, a następnie wyczyścić i przebudować projekt.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Projektowanie danych czasu przy użyciu programu Xamarin. Forms Preview](/xamarin/xamarin-forms/xaml/xaml-Designer/design-time-data/)
 - [XAML w aplikacjach WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)

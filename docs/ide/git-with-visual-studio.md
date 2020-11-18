@@ -8,12 +8,12 @@ ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 621aed831e55d2fca1fda7063f8c10f859ca5157
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 30ae69f07c89efb6d01228088596fc1bc05fac87
+ms.sourcegitcommit: e8a13978131f257d91ce37c5a2e0d153a4c400ef
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672525"
+ms.locfileid: "94704069"
 ---
 # <a name="git-experience-in-visual-studio"></a>Środowisko Git w programie Visual Studio
 
@@ -35,7 +35,7 @@ Istnieją trzy sposoby, aby rozpocząć korzystanie z narzędzia Git z programem
 - [Klonuj istniejące repozytorium git](#clone-an-existing-git-repository). Jeśli kod, nad którym chcesz korzystać, nie znajduje się na komputerze, możesz sklonować wszystkie istniejące repozytoria zdalne.
 
 > [!NOTE]
-> Program Visual Studio 2019 oferuje teraz w pełni zintegrowane środowisko konta usługi GitHub. Począwszy od [wersji 16,8](/visualstudio/releases/2019/release-notes/), można dodać konta usługi GitHub i GitHub przedsiębiorstwa do łańcucha kluczy. Będziesz w stanie dodawać i korzystać z nich tak samo jak w przypadku kont Microsoft, co oznacza, że będziesz mieć łatwiejszy czas uzyskiwania dostępu do zasobów usługi GitHub w programie Visual Studio. Aby uzyskać więcej informacji, zobacz temat [współpraca z kontami usługi GitHub na stronie programu Visual Studio](work-with-github-accounts.md) .
+> Począwszy od [wersji 16,8](/visualstudio/releases/2019/release-notes/), Visual Studio 2019 obejmuje w pełni zintegrowane środowisko usługi GitHub. Teraz możesz dodać konta usługi GitHub i GitHub przedsiębiorstwa do łańcucha kluczy. Będziesz w stanie dodawać i korzystać z nich tak samo jak w przypadku kont Microsoft, co oznacza, że będziesz mieć łatwiejszy czas uzyskiwania dostępu do zasobów usługi GitHub w programie Visual Studio. Aby uzyskać więcej informacji, zobacz temat [współpraca z kontami usługi GitHub na stronie programu Visual Studio](work-with-github-accounts.md) .
 
 ## <a name="create-a-new-git-repository"></a>Utwórz nowe repozytorium git
 

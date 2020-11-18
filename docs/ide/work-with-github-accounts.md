@@ -1,6 +1,6 @@
 ---
 title: Praca z kontami usługi GitHub w programie Visual Studio
-ms.date: 11/13/2020
+ms.date: 11/16/2020
 ms.custom: ''
 ms.topic: conceptual
 description: Dowiedz się, jak używać programu Visual Studio z kontami usługi GitHub.
@@ -10,16 +10,16 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: cdea71e2d5c376e465bb5cdb990ec7ed45caa1f3
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 845b663a3a0828806766fa0609e45efafabec50a
+ms.sourcegitcommit: e8a13978131f257d91ce37c5a2e0d153a4c400ef
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672362"
+ms.locfileid: "94704034"
 ---
 # <a name="work-with-github-accounts-in-visual-studio"></a>Praca z kontami usługi GitHub w programie Visual Studio
 
-Jeśli masz publiczne konto w serwisie GitHub lub GitHub Enterprise, możesz je dodać do łańcucha kluczy programu Visual Studio. Po dodaniu konta będziesz mieć możliwość skorzystania z integracji z platformą, uzyskując dostęp do repozytoriów usługi GitHub i tworząc je bezpośrednio z programu Visual Studio.  
+Jeśli masz publiczne konto w serwisie GitHub lub GitHub Enterprise, możesz je dodać do łańcucha kluczy programu Visual Studio. Po dodaniu konta będziesz mieć możliwość skorzystania z integracji z platformą, uzyskując dostęp do repozytoriów usługi GitHub i tworząc je bezpośrednio z programu Visual Studio.
 
 ## <a name="adding-public-github-accounts"></a>Dodawanie publicznych kont usługi GitHub
 
