@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Importowanie strony wzorcowej lub motywu | Microsoft Docs'
+description: Utwórz szablony dla stron głównych i motywów w programie SharePoint Designer, a następnie zaimportuj do programu Visual Studio, aby zapewnić spójny wygląd stron w witrynie programu SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7abca9e9141fdc8d4540e8a38e9579862fc540f1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c17f4e7477a20ea245eaa359a6f9611a8dc4ece6
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015292"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903497"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>Instrukcje: Importowanie strony wzorcowej lub motywu
   Możesz nadać stronom w witrynie programu SharePoint spójny wygląd, tworząc i używając stron wzorcowych i motywów. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nie udostępnia szablonów dla tych elementów, ale można je utworzyć w programie SharePoint Designer, a następnie zaimportować je do programu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Aby uzyskać więcej informacji, zobacz [Budowanie bloków: strony i interfejs użytkownika](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14)) w witrynie sieci Web firmy Microsoft.
@@ -76,7 +78,7 @@ ms.locfileid: "86015292"
 
      Ten atrybut `Type="GhostableInLibrary"` wskazuje, że element jest dodawany do bazy danych zawartości, a `Url` atrybut modułu określa miejsce przechowywania pliku w bazie danych zawartości programu SharePoint.
 
-11. Aby zmienić zakres wdrożenia dla strony wzorcowej, w **Eksplorator rozwiązań**Otwórz plik funkcji w Projektancie funkcji, a następnie wybierz nowy zakres wdrożenia z listy **zakres** .
+11. Aby zmienić zakres wdrożenia dla strony wzorcowej, w **Eksplorator rozwiązań** Otwórz plik funkcji w Projektancie funkcji, a następnie wybierz nowy zakres wdrożenia z listy **zakres** .
 
      Wartość **sieci Web** oznacza, że strona wzorcowa ma zastosowanie tylko do witryny sieci Web, która jest aktualnie określona w projekcie. Wartość **lokacji** oznacza, że strona wzorcowa ma zastosowanie do bieżącego zbioru witryn, który obejmuje wszystkie lokacje podrzędne i główną witrynę sieci Web. Inne wartości nie mają zastosowania.
 
@@ -89,7 +91,7 @@ ms.locfileid: "86015292"
 
      Zostanie wyświetlona lista stron wzorcowych lub motywów, które zawierają zarówno stronę wzorcową, jak i zaimportowaną kompozycję.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Strony wzorcowe](/previous-versions/office/developer/sharepoint-2010/ms443795(v=office.14))
 - [Importowanie elementów z istniejącej witryny programu SharePoint](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [Tworzenie stron dla programu SharePoint](../sharepoint/creating-pages-for-sharepoint.md)

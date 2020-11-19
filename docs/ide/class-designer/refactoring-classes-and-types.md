@@ -1,5 +1,7 @@
 ---
 title: Zmień nazwę i Przenieś klasy i typy w Projektant klas
+description: Informacje o sposobie zmiany nazwy i przenoszenia klas i typów przy użyciu Projektant klas i okna Szczegóły klasy.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: baf0e9d9d0f4bb45ef965f64c256bd9360af112b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d51a541edb30e24405faccfec6e05264303d049
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768601"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901091"
 ---
 # <a name="refactor-classes-and-types-in-class-designer"></a>Klasy i typy refaktoryzacji w Projektant klas
 
@@ -86,6 +88,6 @@ Za pomocą **Projektant klas**, można przenieść składową typu z jednego typ
 
      Właściwość jest usuwana z typu źródłowego i pojawia się w typie docelowym.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Projektowanie klas i typów](designing-and-viewing-classes-and-types.md)

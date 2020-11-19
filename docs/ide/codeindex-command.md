@@ -1,5 +1,7 @@
 ---
 title: CodeIndex — polecenie
+description: Dowiedz się, jak za pomocą polecenia CodeIndex zarządzać indeksem kodu na Azure DevOps Server (wcześniej znanym jako Team Foundation Server).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07338e83f0c58331345cd3f4c6eb61855a16fd4f
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: ece3916f0af442b67bb5cdd0999ad37159e53448
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928492"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901183"
 ---
 # <a name="codeindex-command"></a>CodeIndex — polecenie
 
@@ -48,7 +50,7 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 |----------------| - |
 |**/indexingStatus**|Pokaż stan i konfigurację usługi indeksowania kodu.|
 |**/setIndexing:**[on &#124; off &#124; keepupOnly]|-   **włączone**: Rozpocznij indeksowanie wszystkich zestawów zmian.<br />-   **wyłączone**: Zatrzymaj indeksowanie wszystkich zestawów zmian.<br />-   **keepupOnly**: Zatrzymaj indeksowanie wcześniej utworzonych zestawów zmian i Rozpocznij indeksowanie tylko nowych zestawów zmian.|
-|**/Ignorelist:**[Dodaj &#124; usuń &#124; &#124; widok `ServerPath`<br /><br /> Możesz użyć symbolu wieloznacznego (*) na początku, na końcu lub na obu końcach ścieżki serwerowej.|Określa listę plików kodu i ich ścieżek, które nie mają być indeksowane.<br /><br /> -   **Dodaj**: Dodaj plik, którego nie chcesz zindeksować, do listy plików ignorowanych.<br />-   **Usuń**: Usuń plik, który ma być indeksowany z listy plików ignorowanych.<br />-   **removeAll**Usuń z listy ignorowanych plików i Rozpocznij indeksowanie wszystkich plików.<br />-   **Widok**: Zobacz wszystkie pliki, które nie są indeksowane.|
+|**/Ignorelist:**[Dodaj &#124; usuń &#124; &#124; widok `ServerPath`<br /><br /> Możesz użyć symbolu wieloznacznego (*) na początku, na końcu lub na obu końcach ścieżki serwerowej.|Określa listę plików kodu i ich ścieżek, które nie mają być indeksowane.<br /><br /> -   **Dodaj**: Dodaj plik, którego nie chcesz zindeksować, do listy plików ignorowanych.<br />-   **Usuń**: Usuń plik, który ma być indeksowany z listy plików ignorowanych.<br />-   **removeAll** Usuń z listy ignorowanych plików i Rozpocznij indeksowanie wszystkich plików.<br />-   **Widok**: Zobacz wszystkie pliki, które nie są indeksowane.|
 |**/listLargeFiles [/filecount:** `FileCount` **/MinSize:** `MinSize` ]|Pokazuje określoną liczbę plików, które przekraczają określony rozmiar w KB. Następnie można użyć opcji **/Ignorelist** , aby wykluczyć te pliki z indeksowania.|
 |**/reindexAll**|Wyczyść poprzednio indeksowane dane i uruchom ponownie indeksowanie.|
 |**/destroyCodeIndex [/noPrompt]**|Usuń indeks kodu i Usuń wszystkie indeksowane dane. Nie wymaga potwierdzenia w przypadku użycia opcji **/noprompt** .|
@@ -122,7 +124,7 @@ Aby usunąć indeks kodu z potwierdzeniem:
 TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Website"
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Znajdowanie zmian w kodzie i innych elementów historii kodu za pomocą funkcji CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)
 - [Zarządzanie konfiguracją serwera za pomocą polecenia TFSConfig](/azure/devops/server/command-line/tfsconfig-cmd)

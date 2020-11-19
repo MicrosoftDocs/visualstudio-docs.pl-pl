@@ -1,5 +1,7 @@
 ---
 title: Struktury C++ w Projektant klas
+description: Dowiedz się, w jaki sposób Projektant klas obsługuje struktury C++ zadeklarowane za pomocą struktury słowa kluczowego.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2aa8014835df2b5b2bd3dc68e2aaf0b079e001e8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d22ff6be694de69f105897821aba1b587955f748
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590687"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903432"
 ---
 # <a name="c-structures-in-class-designer"></a>Struktury C++ w Projektant klas
 
@@ -38,7 +40,7 @@ Kształt struktury C++ na diagramie klas wygląda i działa jak kształt klasy, 
 |------------------| - |
 |`struct StructureName {};`|**StructureName**<br /><br /> Struktura|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Praca z kodem C++](working-with-visual-cpp-code.md)
 - [Klasy i struktury](/cpp/cpp/classes-and-structs-cpp)

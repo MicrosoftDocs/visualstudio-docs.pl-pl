@@ -1,5 +1,7 @@
 ---
 title: 'Porady: eksportowanie diagramów klasy jako obrazów (Projektant klas)'
+description: Informacje na temat eksportowania diagramu klas utworzonego na podstawie kodu w projekcie przez zapisanie diagramu jako obrazu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdecb8834f296d24cbd53d6725b800612f9bcf57
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2cb72a494cbafc9e2ab6661f056436a083b52de1
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770147"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901404"
 ---
 # <a name="how-to-export-class-diagrams-as-images"></a>Instrukcje: eksportowanie diagramów klas jako obrazów
 
@@ -37,7 +39,7 @@ Aby wyeksportować Diagram klas, który został utworzony na podstawie kodu w pr
 
 Aby automatycznie aktualizować eksportowane obrazy połączone z innych dokumentów, należy ponownie wyeksportować diagram w programie Visual Studio.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Instrukcje: Drukowanie diagramów klas](how-to-print-class-diagrams.md)
 - [Praca z diagramami klas](designing-and-viewing-classes-and-types.md)

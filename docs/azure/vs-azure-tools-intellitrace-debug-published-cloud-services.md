@@ -4,17 +4,16 @@ ms.custom: SEO-VS-2020
 description: Dowiedz się, jak debugować usługę w chmurze za pomocą programu Visual Studio i IntelliTrace
 author: mikejo5000
 manager: jillfra
-ms.assetid: 5e6662fc-b917-43ea-bf2b-4f2fc3d213dc
 ms.topic: how-to
 ms.workload: azure-vs
 ms.date: 03/21/2017
 ms.author: mikejo
-ms.openlocfilehash: b89ed536e6483f54d4d7370a02935728dedfb517
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: abfe3de9bad150fbfb187646592218e62c1cce20
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809823"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902418"
 ---
 # <a name="debugging-a-published-azure-cloud-service-with-visual-studio-and-intellitrace"></a>Debugowanie opublikowanej usługi w chmurze platformy Azure za pomocą programu Visual Studio i funkcji IntelliTrace
 Za pomocą IntelliTrace można rejestrować obszerne informacje o debugowaniu dla wystąpienia roli uruchomionego na platformie Azure. Jeśli chcesz znaleźć przyczynę problemu, możesz użyć dzienników IntelliTrace, aby przejść do kodu z programu Visual Studio, tak jakby był uruchomiony na platformie Azure. W efekcie IntelliTrace rejestruje kod klucza i dane środowiska, gdy aplikacja platformy Azure działa jako usługa w chmurze na platformie Azure i umożliwia odtwarzanie zarejestrowanych danych z programu Visual Studio.
@@ -32,9 +31,9 @@ Aby włączyć IntelliTrace dla aplikacji platformy Azure, musisz utworzyć i op
 
 1. Gdy wszystko będzie gotowe do wdrożenia aplikacji platformy Azure, sprawdź, czy obiekty docelowe kompilacji projektu są ustawione na **debugowanie**.
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję projekt, a następnie z menu kontekstowego wybierz pozycję **Publikuj**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję projekt, a następnie z menu kontekstowego wybierz pozycję **Publikuj**.
 
-1. W oknie dialogowym **publikowanie aplikacji platformy** Azure wybierz subskrypcję platformy Azure, a **następnie**wybierz pozycję Dalej.
+1. W oknie dialogowym **publikowanie aplikacji platformy** Azure wybierz subskrypcję platformy Azure, a **następnie** wybierz pozycję Dalej.
 
 1. Na stronie **Ustawienia** wybierz kartę **Ustawienia zaawansowane** .
 
@@ -57,7 +56,7 @@ Po opublikowaniu usługi w chmurze platformy Azure na platformie Azure Możesz o
 ## <a name="download-intellitrace-logs-for-a-role-instance"></a>Pobieranie dzienników IntelliTrace dla wystąpienia roli
 Za pomocą programu Visual Studio można pobrać dzienniki IntelliTrace dla wystąpienia roli, wykonując następujące czynności:
 
-1. W **Eksplorator serwera**rozwiń węzeł **Cloud Services** i zlokalizuj wystąpienie roli, którego dzienniki chcesz pobrać.
+1. W **Eksplorator serwera** rozwiń węzeł **Cloud Services** i zlokalizuj wystąpienie roli, którego dzienniki chcesz pobrać.
 
 1. Kliknij prawym przyciskiem myszy wystąpienie roli, a następnie z menu kontekstowego s wybierz opcję **Wyświetl dzienniki IntelliTrace**.
 

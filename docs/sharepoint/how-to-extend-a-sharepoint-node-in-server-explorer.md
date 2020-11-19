@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: zwiększanie węzła programu SharePoint w Eksplorator serwera | Microsoft Docs'
+description: Zapoznaj się z tematem jak zwiększyć węzeł programu SharePoint w Eksplorator serwera przy użyciu węzła połączenia programu SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ea556d18641b96ea6a38ef5abf6efe4c93a44cdf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bad90701d19f97036ecba55bb2901739ad30b200
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015025"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903549"
 ---
 # <a name="how-to-extend-a-sharepoint-node-in-server-explorer"></a>Instrukcje: zwiększanie węzła programu SharePoint w Eksplorator serwera
   Węzły można rozciągnąć w węźle **połączenia programu SharePoint** w **Eksplorator serwera**. Jest to przydatne, gdy chcesz dodać nowe węzły podrzędne, elementy menu skrótów lub właściwości do istniejącego węzła. Aby uzyskać więcej informacji, zobacz sekcję Rozpoznaj [węzeł połączenia SharePoint w Eksplorator serwera](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
@@ -81,7 +83,7 @@ ms.locfileid: "86015025"
 ## <a name="deploy-the-extension"></a>Wdróż rozszerzenie
  Aby wdrożyć rozszerzenie **Eksplorator serwera** , Utwórz [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] pakiet rozszerzenia (VSIX) dla zestawu i innych plików, które chcesz dystrybuować z rozszerzeniem. Aby uzyskać więcej informacji, zobacz [Wdrażanie rozszerzeń dla narzędzi programu SharePoint w programie Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Instrukcje: Dodawanie niestandardowego węzła programu SharePoint do Eksplorator serwera](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)
 - [Rozwiń węzeł połączenia programu SharePoint w Eksplorator serwera](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
 - [Przewodnik: rozszerzona Eksplorator serwera do wyświetlania składników Web Part](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)

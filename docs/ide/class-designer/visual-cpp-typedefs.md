@@ -1,5 +1,7 @@
 ---
 title: Definicje typów C++ w Projektant klas
+description: Dowiedz się, jak Projektant klas obsługuje typy języka C++ typedef zadeklarowane za pomocą słowa kluczowego typedef.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4c57382809b7730df2d7c674c24902d70ccab647
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f95b948d4ffc70d225dd4a8b2bb2debe111c967e
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590699"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903445"
 ---
 # <a name="c-typedefs-in-class-designer"></a>Definicje typów C++ w Projektant klas
 
@@ -39,9 +41,9 @@ Następnie można użyć tego typu, aby zadeklarować wystąpienie:
 
 ## <a name="class-and-struct-shapes"></a>Kształty klas i struktur
 
-W **Projektant klas**, element typedef języka C++ ma kształt typu określonego w elemencie typedef. Jeśli źródło deklaruje `typedef class` , kształt ma zaokrąglone rogi i **klasę**etykiet. Dla `typedef struct` , kształt ma narożniki kwadratowe i **strukturę**etykiet.
+W **Projektant klas**, element typedef języka C++ ma kształt typu określonego w elemencie typedef. Jeśli źródło deklaruje `typedef class` , kształt ma zaokrąglone rogi i **klasę** etykiet. Dla `typedef struct` , kształt ma narożniki kwadratowe i **strukturę** etykiet.
 
-Klasy i struktury mogą mieć zagnieżdżone elementy typedef zadeklarowane w obrębie tych elementów. W **Projektant klas**kształty klas i struktur mogą wyświetlać zagnieżdżone deklaracje typedef jako zagnieżdżone kształty.
+Klasy i struktury mogą mieć zagnieżdżone elementy typedef zadeklarowane w obrębie tych elementów. W **Projektant klas** kształty klas i struktur mogą wyświetlać zagnieżdżone deklaracje typedef jako zagnieżdżone kształty.
 
 W elementach typedef są obsługiwane polecenia **Pokaż jako skojarzenie** i **Pokaż jako kolekcje kolekcji** w menu rozwijanym prawym przyciskiem myszy (menu kontekstowe).
 
@@ -82,7 +84,7 @@ typedef class coord
 > [!NOTE]
 > W **Projektant klas** nie są wyświetlane definicje typów, których typ źródłowy jest wskaźnikiem funkcji.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Współpraca z kodem C++](working-with-visual-cpp-code.md)
 - [Definicje typów](/cpp/cpp/aliases-and-typedefs-cpp#typedefs)

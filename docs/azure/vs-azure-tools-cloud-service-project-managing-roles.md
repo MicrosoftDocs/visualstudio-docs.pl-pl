@@ -3,17 +3,16 @@ title: Zarządzanie rolami w usługach Azure Cloud Services
 description: Dowiedz się, jak dodawać i usuwać role w usługach Azure Cloud Services za pomocą programu Visual Studio.
 author: ghogen
 manager: jillfra
-assetId: 5ec9ae2e-8579-4e5d-999e-8ae05b629bd1
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 897cb36ee2afa650e042b92243c6044684468a6e
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 8e932084f9bf3d4631b2fae027224f8973602f13
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398842"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902587"
 ---
 # <a name="managing-roles-in-azure-cloud-services-with-visual-studio"></a>Zarządzanie rolami w usługach Azure Cloud Services za pomocą programu Visual Studio
 Po utworzeniu usługi w chmurze platformy Azure Możesz dodać do niej nowe role lub usunąć z niej istniejące role. Można także zaimportować istniejący projekt i przekonwertować go do roli. Na przykład możesz zaimportować aplikację sieci Web ASP.NET i wyznaczyć ją jako rolę sieci Web.
@@ -25,7 +24,7 @@ Poniższe kroki przeprowadzą Cię przez proces dodawania roli sieci Web lub pro
 
 1. W **Eksplorator rozwiązań** rozwiń węzeł projektu
 
-1. Kliknij prawym przyciskiem myszy węzeł **role** , aby wyświetlić menu kontekstowe. Z menu kontekstowego wybierz pozycję **Dodaj** , a następnie wybierz istniejącą rolę sieci Web lub rolę procesu roboczego z bieżącego rozwiązania lub Utwórz projekt roli sieć Web lub proces roboczy. Możesz również wybrać odpowiedni projekt, taki jak projekt aplikacji sieci Web ASP.NET, i skojarzyć go z projektem roli.
+1. Kliknij prawym przyciskiem myszy węzeł **role** , aby wyświetlić menu kontekstowe. Z menu kontekstowego wybierz pozycję **Dodaj**, a następnie wybierz istniejącą rolę sieci Web lub rolę procesu roboczego z bieżącego rozwiązania lub Utwórz projekt roli sieć Web lub proces roboczy. Możesz również wybrać odpowiedni projekt, taki jak projekt aplikacji sieci Web ASP.NET, i skojarzyć go z projektem roli.
 
    ![Opcje menu umożliwiające dodanie roli do projektu usługi w chmurze platformy Azure](./media/vs-azure-tools-cloud-service-project-managing-roles/add-role.png)
 

@@ -3,17 +3,16 @@ title: Konfigurowanie ról dla usługi w chmurze platformy Azure
 description: Dowiedz się, jak skonfigurować i skonfigurować role dla usług Azure Cloud Services przy użyciu programu Visual Studio.
 author: ghogen
 manager: jillfra
-assetId: d397ef87-64e5-401a-aad5-7f83f1022e16
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 6b34a61bb0353bbbd4405b7f642bc63758dfa096
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 120c693e7009dddf2efaab7ce54fd4d20c0b1681
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399282"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902652"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Konfigurowanie ról usług w chmurze platformy Azure przy użyciu programu Visual Studio
 Usługa w chmurze platformy Azure może mieć co najmniej jedną rolę procesu roboczego lub sieci Web. Dla każdej roli należy zdefiniować sposób konfigurowania tej roli, a także skonfigurować sposób jej uruchamiania. Aby dowiedzieć się więcej o rolach w usługach w chmurze, zobacz [wprowadzenie do usługi Azure Cloud Services](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services).
@@ -43,7 +42,7 @@ Eksplorator rozwiązań usługę w chmurze platformy Azure można skonfigurować
 
     ![Strona właściwości projektu — karta programowanie](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-development-tab.png)
 
-1. Na liście **Konfiguracja usługi** wybierz nazwę konfiguracji usługi, którą chcesz edytować. (Jeśli chcesz wprowadzić zmiany we wszystkich konfiguracjach usługi dla tej roli, wybierz opcję **wszystkie konfiguracje** ).
+1. Na liście **Konfiguracja usługi** wybierz nazwę konfiguracji usługi, którą chcesz edytować. (Jeśli chcesz wprowadzić zmiany we wszystkich konfiguracjach usługi dla tej roli, wybierz opcję **wszystkie konfiguracje**).
 
     > [!IMPORTANT]
     > W przypadku wybrania określonej konfiguracji usługi niektóre właściwości są wyłączone, ponieważ mogą być ustawiane tylko dla wszystkich konfiguracji. Aby edytować te właściwości, należy wybrać **wszystkie konfiguracje**.

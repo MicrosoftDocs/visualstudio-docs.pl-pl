@@ -1,5 +1,7 @@
 ---
 title: WizardData, element (szablony Visual Studio) | Microsoft Docs
+description: Dowiedz się więcej na temat elementu WizardData i sposobu określania niestandardowego kodu XML.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa3f9d2e971d944b964f4b194d1324ff960fbd24
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0472bfeb3a988bcb39b4daf80cea92398130f59f
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740395"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903406"
 ---
 # <a name="wizarddata-element-visual-studio-templates"></a>WizardData — Element (szablony Visual Studio)
 
@@ -104,7 +106,7 @@ Poniższy przykład ilustruje metadane standardowego szablonu projektu dla aplik
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)

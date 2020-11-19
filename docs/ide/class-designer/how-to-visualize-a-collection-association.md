@@ -1,5 +1,7 @@
 ---
 title: 'Porady: wizualizacja skojarzeń kolekcji (Projektant klas)'
+description: Dowiedz się, jak wizualizować skojarzenie kolekcji w Projektant klas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3636b6548725ddc9af0a2e28acfdda06a8821f9a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4b1e5be53f829949cfffbdc7db727b1117aa9de8
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769895"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901079"
 ---
 # <a name="how-to-visualize-a-collection-association-in-class-designer"></a>Instrukcje: wizualizacja skojarzenia kolekcji w Projektant klas
 
@@ -36,7 +38,7 @@ Właściwości i pola, które są kolekcjami innych typów, mogą być wyświetl
 
 Właściwość lub pole jest wyświetlane jako linia skojarzenia łącząca z typem zebranym.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Instrukcje: tworzenie skojarzeń między typami](how-to-create-associations-between-types.md)
 - [Projektowanie klas i typów](designing-and-viewing-classes-and-types.md)

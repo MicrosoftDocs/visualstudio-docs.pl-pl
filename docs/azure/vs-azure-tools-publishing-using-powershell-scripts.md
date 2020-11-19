@@ -4,17 +4,16 @@ description: Dowiedz się, jak publikować w środowiskach deweloperskich i test
 ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
-assetId: 5fff1301-5469-4d97-be88-c85c30f837c1
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 0fafcd0042fce6d3f9eece8e493ee01a9a6923e5
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: 97c337adabc5ce22ce92c720a3a4d776eaecf867
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407591"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902146"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Publikowanie w środowisku deweloperskim i testowym za pomocą skryptów programu Windows PowerShell
 
@@ -208,7 +207,7 @@ Jeśli wcześniej nie uruchomiono skryptu środowiska Windows PowerShell, należ
 
 Można dostosować skrypt publikacji i plik konfiguracji JSON. Nie ma potrzeby modyfikowania funkcji w module programu Windows PowerShell **AzureWebAppPublishModule. PSM1** . Jeśli chcesz tylko określić inną bazę danych lub zmienić niektóre właściwości maszyny wirtualnej, edytuj plik konfiguracji JSON. Jeśli chcesz zwiększyć funkcjonalność skryptu w celu zautomatyzowania kompilowania i testowania projektu, można zaimplementować klasy zastępcze w **Publish-WebApplication.ps1**.
 
-Aby zautomatyzować Kompilowanie projektu, Dodaj kod, który wywołuje MSBuild, `New-WebDeployPackage` tak jak pokazano w tym przykładzie kodu. Ścieżka do polecenia MSBuild jest inna w zależności od zainstalowanej wersji programu Visual Studio. Aby uzyskać poprawną ścieżkę, można użyć funkcji **Get-MSBuildCmd** , jak pokazano w tym przykładzie.
+Aby zautomatyzować Kompilowanie projektu, Dodaj kod, który wywołuje MSBuild, `New-WebDeployPackage` tak jak pokazano w tym przykładzie kodu. Ścieżka do polecenia MSBuild jest inna w zależności od zainstalowanej wersji programu Visual Studio. Aby uzyskać poprawną ścieżkę, można użyć funkcji **Get-MSBuildCmd**, jak pokazano w tym przykładzie.
 
 ### <a name="to-automate-building-your-project"></a>Aby zautomatyzować Kompilowanie projektu
 
@@ -322,7 +321,7 @@ Aby uzyskać pomoc dotyczącą funkcji, których można użyć w wierszu polecen
 | Find-AzureVM |Pobiera określoną maszynę wirtualną platformy Azure. |
 | Format-DevTestMessageWithTime |Dołącza datę i godzinę do komunikatu. Ta funkcja została zaprojektowana z myślą o komunikatach zapisywana w błędach i pełnych strumieniach. |
 | Get-AzureSQLDatabaseConnectionString |Składa parametry połączenia w celu nawiązania połączenia z bazą danych Azure SQL Database. |
-| Get-AzureVMStorage |Zwraca nazwę pierwszego konta magazynu z wzorcem Name "DevTest *" (bez uwzględniania wielkości liter) w określonej lokalizacji lub grupie koligacji. Jeśli konto magazynu "DevTest* " jest niezgodne z lokalizacją lub grupą koligacji, funkcja zignoruje ją. Określ lokalizację lub grupę koligacji. |
+| Get-AzureVMStorage |Zwraca nazwę pierwszego konta magazynu z wzorcem Name "DevTest *" (bez uwzględniania wielkości liter) w określonej lokalizacji lub grupie koligacji. Jeśli konto magazynu "DevTest*" jest niezgodne z lokalizacją lub grupą koligacji, funkcja zignoruje ją. Określ lokalizację lub grupę koligacji. |
 | Get-MSDeployCmd |Zwraca polecenie, aby uruchomić narzędzie MsDeploy.exe. |
 | New-AzureVMEnvironment |Znajduje lub tworzy maszynę wirtualną w subskrypcji, która pasuje do wartości w pliku konfiguracji JSON. |
 | Publish-WebPackage |Używa MsDeploy.exe i pakietu publikacji w sieci Web. Plik zip służący do wdrażania zasobów w witrynie sieci Web. Ta funkcja nie generuje żadnych danych wyjściowych. Jeśli wywołanie MSDeploy.exe nie powiedzie się, funkcja zgłasza wyjątek. Aby uzyskać bardziej szczegółowe dane wyjściowe, użyj opcji **-verbose** . |
@@ -334,8 +333,8 @@ Aby uzyskać pomoc dotyczącą funkcji, których można użyć w wierszu polecen
 | Test-HttpsUrl |Konwertuje wejściowy adres URL na obiekt system. URI. Zwraca `$True` czy adres URL jest bezwzględny, a jego schemat to https. Zwraca wartość `$false` , jeśli adres URL jest względny, jego schemat nie jest typu HTTPS lub nie można przekonwertować ciągu wejściowego na adres URL. |
 | Test-Member |Zwraca `$true` czy właściwość lub metoda jest elementem członkowskim obiektu. W przeciwnym razie zwraca `$false` . |
 | Write-ErrorWithTime |Zapisuje komunikat o błędzie poprzedzony bieżącą godziną. Ta funkcja wywołuje funkcję **Format-DevTestMessageWithTime, aby dołączać** czas przed zapisaniem komunikatu do strumienia błędów. |
-| Write-HostWithTime |Zapisuje komunikat do programu hosta ( **write-host** ) poprzedzonego bieżącą godziną. Efekt zapisu w programie hosta jest różny. Większość programów, które obsługują program Windows PowerShell, zapisuj te komunikaty w standardowym wyjściu. |
-| Write-VerboseWithTime |Zapisuje pełny komunikat poprzedzony bieżącą godziną. Ponieważ wywołuje metodę **Write-verbose** , komunikat jest wyświetlany tylko wtedy, gdy skrypt jest uruchamiany z parametrem **verbose** lub gdy preferencja **VerbosePreference** jest ustawiona na **Kontynuuj**. |
+| Write-HostWithTime |Zapisuje komunikat do programu hosta (**write-host**) poprzedzonego bieżącą godziną. Efekt zapisu w programie hosta jest różny. Większość programów, które obsługują program Windows PowerShell, zapisuj te komunikaty w standardowym wyjściu. |
+| Write-VerboseWithTime |Zapisuje pełny komunikat poprzedzony bieżącą godziną. Ponieważ wywołuje metodę **Write-verbose**, komunikat jest wyświetlany tylko wtedy, gdy skrypt jest uruchamiany z parametrem **verbose** lub gdy preferencja **VerbosePreference** jest ustawiona na **Kontynuuj**. |
 
 **Publikowanie — aplikacja**
 

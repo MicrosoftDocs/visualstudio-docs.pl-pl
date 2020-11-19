@@ -3,18 +3,17 @@ title: Dodawanie usługi Azure Storage przy użyciu usług połączonych | Micro
 description: Dodawanie zależności usługi Azure Storage do aplikacji przy użyciu usług połączonych programu Visual Studio
 author: ghogen
 manager: jillfra
-assetId: 521ec044-ad4b-4828-8864-01decde2e758
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 08/13/2020
 ms.author: ghogen
-ms.openlocfilehash: f2f55a149420205435d9f64ea1f66c8c6854ec38
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d169940d6deffdf67bcbcb94e9f647631d0f606a
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800518"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902639"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Dodawanie usługi Azure Storage przy użyciu usług połączonych programu Visual Studio
 
@@ -45,7 +44,7 @@ Funkcja połączonej usługi dodaje wszystkie konieczne odwołania i kod połąc
 
 1. Otwórz projekt w programie Visual Studio.
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł **usługi połączone** , a następnie z menu kontekstowego wybierz polecenie **Dodaj podłączoną usługę**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł **usługi połączone** , a następnie z menu kontekstowego wybierz polecenie **Dodaj podłączoną usługę**.
 
     ![Dodawanie usługi połączonej z platformą Azure](./media/vs-azure-tools-connected-services-storage/add-connected-service.png)
 
@@ -76,7 +75,7 @@ Funkcja połączonej usługi dodaje wszystkie konieczne odwołania i kod połąc
 
 1. Otwórz projekt w programie Visual Studio.
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł **usługi połączone** , a następnie z menu kontekstowego wybierz polecenie **Dodaj podłączoną usługę**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł **usługi połączone** , a następnie z menu kontekstowego wybierz polecenie **Dodaj podłączoną usługę**.
 
     ![Dodawanie usługi połączonej z platformą Azure](./media/vs-azure-tools-connected-services-storage/vs-2019/add-connected-service.png)
 
@@ -117,7 +116,7 @@ Funkcja połączonej usługi dodaje wszystkie konieczne odwołania i kod połąc
 1. Usługa połączona do magazynu jest wyświetlana w węźle **odwołania do usługi** projektu.
 :::moniker-end
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Forum usługi Azure Storage](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
 - [Dokumentacja usługi Azure Storage](/azure/storage/)

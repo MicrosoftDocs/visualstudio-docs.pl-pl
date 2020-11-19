@@ -1,5 +1,7 @@
 ---
 title: WizardExtension —, element (szablony Visual Studio) | Microsoft Docs
+description: Dowiedz się więcej o elemencie WizardExtension — i sposobie zawiera elementy rejestracji do dostosowania Kreatora szablonów.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd81b32861114d654aa794b992826589406b1df9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07d1c52e2b1dd8fe452d4c24f8dc6db6b32334a5
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740373"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903393"
 ---
 # <a name="wizardextension-element-visual-studio-templates"></a>WizardExtension — Element (szablony Visual Studio)
 Zawiera elementy rejestracji do dostosowywania Kreatora szablonów.
@@ -88,7 +90,7 @@ Zawiera elementy rejestracji do dostosowywania Kreatora szablonów.
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)
 - [Porady: korzystanie z kreatora z szablonami projektu](../extensibility/how-to-use-wizards-with-project-templates.md)

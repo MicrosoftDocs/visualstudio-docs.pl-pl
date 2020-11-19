@@ -1,5 +1,7 @@
 ---
 title: Zmiana między notacją skojarzenia & elementu członkowskiego (Projektant klas)
+description: Dowiedz się, jak zmienić sposób, w jaki Diagram klas reprezentuje relację skojarzenia między dwoma typami z notacji elementu członkowskiego i odwrotnie.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,16 +15,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d453dd2cd19f8a6c9c76ebcc48a762ba3142ea74
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64d26b6ca1c71fe3484544f02006a27866ff4843
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85771014"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901664"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>Instrukcje: zmiana między notacją składowej i notacją skojarzenia w Projektant klas
 
-W **Projektant klas**można zmienić sposób, w jaki Diagram klas reprezentuje relację skojarzenia między dwoma typami z notacji elementu członkowskiego i odwrotnie. Elementy członkowskie wyświetlane jako linie kojarzenia często zapewniają przydatną wizualizację sposobu, w jaki są powiązane typy.
+W **Projektant klas** można zmienić sposób, w jaki Diagram klas reprezentuje relację skojarzenia między dwoma typami z notacji elementu członkowskiego i odwrotnie. Elementy członkowskie wyświetlane jako linie kojarzenia często zapewniają przydatną wizualizację sposobu, w jaki są powiązane typy.
 
 > [!NOTE]
 > Relacje skojarzenia mogą być reprezentowane jako właściwość lub pole elementu członkowskiego. Aby zmienić notację elementu członkowskiego na notację skojarzenia, jeden typ musi mieć element członkowski innego typu. Aby zmienić notację skojarzenia na notację elementu członkowskiego, dwa typy muszą być połączone przez linię skojarzenia. Aby uzyskać więcej informacji, zobacz [How to: Create Association bBetween Types](how-to-create-associations-between-types.md). Jeśli projekt zawiera wiele diagramów klas, zmiany wprowadzane do sposobu wyświetlania relacji skojarzenia mają wpływ tylko na ten diagram. Aby zmienić sposób wyświetlania relacji skojarzenia przez inny diagram, Otwórz lub Wyświetl ten diagram i wykonaj te kroki.
@@ -42,7 +44,7 @@ W **Projektant klas**można zmienić sposób, w jaki Diagram klas reprezentuje r
 
 Na diagramie klas kliknij prawym przyciskiem myszy linię skojarzenia, a następnie wybierz polecenie **Pokaż jako właściwość** lub **Pokaż jako odpowiednie pole** . Wiersz skojarzenia znika, a właściwość jest wyświetlana w odpowiednim przedziale w obrębie kształtu typ na diagramie.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Instrukcje: Tworzenie dziedziczenia między typami](how-to-create-inheritance-between-types.md)
 - [Instrukcje: wyświetlanie dziedziczenia między typami](how-to-view-inheritance-between-types.md)

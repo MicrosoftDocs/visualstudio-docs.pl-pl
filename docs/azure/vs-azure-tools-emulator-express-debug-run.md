@@ -4,17 +4,16 @@ ms.custom: SEO-VS-2020
 description: Używanie emulatora Express do uruchamiania i debugowania usługi w chmurze na komputerze lokalnym
 author: mikejo5000
 manager: jillfra
-ms.assetid: 73108f98-a552-4817-b7a1-551367b71906
 ms.topic: how-to
 ms.workload: azure-vs
 ms.date: 03/06/2017
 ms.author: mikejo
-ms.openlocfilehash: 4874a93cd7d7546ca1d131f6c8941bd78cd98465
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: dee97ab487f4e165fd372559e51b6f19c3501e9f
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809836"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902444"
 ---
 # <a name="using-emulator-express-to-run-and-debug-an-azure-cloud-service-on-a-local-machine"></a>Uruchamianie i debugowanie usługi w chmurze platformy Azure na maszynie lokalnej za pomocą emulatora w wersji Express
 Za pomocą emulatora Express można testować i debugować usługę w chmurze bez uruchamiania programu Visual Studio jako administrator. Ustawienia projektu można ustawić tak, aby używały emulatora Express lub pełnego emulatora, w zależności od wymagań usługi w chmurze. Aby uzyskać więcej informacji na temat pełnego emulatora, zobacz [Uruchamianie aplikacji platformy Azure w emulatorze obliczeniowym](/azure/storage/common/storage-use-emulator).
@@ -30,9 +29,9 @@ Podczas tworzenia projektu platformy Azure w zestawie Azure SDK 2,3 lub nowszym 
 
     ![Właściwości projektu usługi w chmurze platformy Azure](./media/vs-azure-tools-emulator-express-debug-run/web-properties.png)
 
-1. W obszarze **lokalny serwer programistyczny**wybierz opcję **Użyj IIS Express**.
+1. W obszarze **lokalny serwer programistyczny** wybierz opcję **Użyj IIS Express**.
 
-1. W obszarze **emulator**wybierz pozycję **Użyj emulator Express**.
+1. W obszarze **emulator** wybierz pozycję **Użyj emulator Express**.
 
 1. Aby uruchomić emulator Express, uruchom następujące polecenie w wierszu polecenia:
 

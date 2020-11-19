@@ -3,17 +3,16 @@ title: Kompilacja w wierszu polecenia dla platformy Azure | Microsoft Docs
 description: Kompilacja w wierszu polecenia dla platformy Azure
 author: ghogen
 manager: jillfra
-assetId: 94b35d0d-0d35-48b6-b48b-3641377867fd
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/05/2017
 ms.author: ghogen
-ms.openlocfilehash: 940636c6df2f16445b5510543b5f2a39d7076f7e
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 64c18ea8b572d8481b2b2d04f8a8e16f21afc44a
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398946"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902501"
 ---
 # <a name="building-azure-projects-from-the-command-line"></a>Tworzenie projektów platformy Azure z poziomu wiersza polecenia
 Korzystając z Microsoft Build Engine (MSBuild), można tworzyć produkty w środowiskach kompilacji, w których nie zainstalowano programu Visual Studio. MSBuild używa formatu XML dla plików projektu, które są rozszerzalne i w pełni obsługiwane przez firmę Microsoft. Korzystając z formatu pliku MSBuild, można opisać, jakie elementy muszą zostać skompilowane dla jednej lub kilku platform i konfiguracji.

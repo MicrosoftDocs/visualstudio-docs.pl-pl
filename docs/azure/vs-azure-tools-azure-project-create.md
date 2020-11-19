@@ -3,17 +3,16 @@ title: Tworzenie projektu usługi w chmurze platformy Azure
 description: Dowiedz się teraz, jak utworzyć projekt usługi w chmurze platformy Azure za pomocą programu Visual Studio
 author: ghogen
 manager: jillfra
-assetId: ec580df7-3dcc-45a9-a1d9-8c110678dfb5
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/19/2019
 ms.author: ghogen
-ms.openlocfilehash: 1fd554a397c6db3bb1f1d5beb2fc12c0423aed22
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 667d3a0a4e4642c348f6a0dd6663a30fcf704d14
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399757"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902795"
 ---
 # <a name="create-an-azure-cloud-service-project-with-visual-studio"></a>Tworzenie projektu usługi w chmurze platformy Azure za pomocą programu Visual Studio
 
@@ -40,7 +39,7 @@ W tej sekcji omówiono tworzenie projektu usługi w chmurze platformy Azure w pr
 ::: moniker range=">=vs-2019"
 1. W oknie uruchamiania wybierz pozycję **Utwórz nowy projekt**.
 
-1. W polu wyszukiwania wpisz ciąg w *chmurze* , a następnie wybierz pozycję **Usługa w chmurze platformy Azure**.
+1. W polu wyszukiwania wpisz ciąg w *chmurze*, a następnie wybierz pozycję **Usługa w chmurze platformy Azure**.
 
    ![Nowa usługa w chmurze platformy Azure](./media/vs-azure-tools-azure-project-create/vs-2019/new-project-cloud-service.png)
 
@@ -53,11 +52,11 @@ W tej sekcji omówiono tworzenie projektu usługi w chmurze platformy Azure w pr
 
     ![Wybierz nowe role usługi w chmurze platformy Azure](./media/vs-azure-tools-azure-project-create/new-cloud-service.png)
 
-1. Aby zmienić nazwę dodanej roli, umieść wskaźnik myszy na roli w oknie dialogowym **nowa Microsoft Azure usługa w chmurze** , a następnie z menu kontekstowego wybierz polecenie **Zmień nazwę**. Możesz również zmienić nazwę roli w rozwiązaniu (w **Eksplorator rozwiązań** ) po dodaniu.
+1. Aby zmienić nazwę dodanej roli, umieść wskaźnik myszy na roli w oknie dialogowym **nowa Microsoft Azure usługa w chmurze** , a następnie z menu kontekstowego wybierz polecenie **Zmień nazwę**. Możesz również zmienić nazwę roli w rozwiązaniu (w **Eksplorator rozwiązań**) po dodaniu.
 
     ![Zmień nazwę roli usługi w chmurze platformy Azure](./media/vs-azure-tools-azure-project-create/new-cloud-service-rename.png)
 
-Projekt programu Visual Studio Azure ma skojarzenia z projektami ról w rozwiązaniu. Projekt zawiera również plik *definicji usługi* i *plik konfiguracji usługi* :
+Projekt programu Visual Studio Azure ma skojarzenia z projektami ról w rozwiązaniu. Projekt zawiera również plik *definicji usługi* i *plik konfiguracji usługi*:
 
 - **Plik definicji usługi** — definiuje ustawienia czasu wykonywania dla aplikacji, w tym informacje o wymaganych rolach, punktach końcowych i rozmiarze maszyny wirtualnej.
 - **Plik konfiguracji usługi** — określa, ile wystąpień roli jest uruchomionych i wartości ustawień zdefiniowanych dla roli.

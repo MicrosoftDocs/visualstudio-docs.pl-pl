@@ -1,5 +1,7 @@
 ---
 title: TemplateData, element (szablony Visual Studio) | Microsoft Docs
+description: Dowiedz się więcej na temat elementu TemplateData oraz sposobu kategoryzacji szablonu i definiowania sposobu wyświetlania w oknie dialogowym Nowy projekt lub Dodaj nowy element.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3ce0226286e8cc4623b66c043eb7bd376597118
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc0edf82421ba41198480e6c105dd56c02bd0f7e
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699191"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903263"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>TemplateData — Element (szablony Visual Studio)
 Klasyfikuje szablon i definiuje sposób wyświetlania w oknie dialogowym **Nowy projekt** lub **Dodaj nowy element** .
@@ -60,7 +62,7 @@ Klasyfikuje szablon i definiuje sposób wyświetlania w oknie dialogowym **Nowy 
 | [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md) | Element opcjonalny.<br /><br /> Określa, czy system projektu programu Visual Studio będzie generował nazwę domyślną dla projektu lub elementu podczas jego tworzenia. |
 | [PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md) | Element opcjonalny.<br /><br /> Określa, czy projekt może być utworzony jako projekt tymczasowy (tylko w programie Visual Studio 2017). |
 | [EnableLocationBrowseButton](../extensibility/enablelocationbrowsebutton-element-visual-studio-templates.md) | Element opcjonalny.<br /><br /> Określa, czy przycisk **Przeglądaj** jest dostępny w oknie dialogowym **Nowy projekt** , dzięki czemu użytkownicy mogą łatwo modyfikować domyślny katalog, w którym zapisano nowy projekt. |
-| [Ukryte](../extensibility/hidden-element-visual-studio-templates.md) | Element opcjonalny.<br /><br /> Określa, czy szablon jest wyświetlany w oknie dialogowym **Nowy projekt** lub **Dodaj nowy element** . |
+| [Ukryty](../extensibility/hidden-element-visual-studio-templates.md) | Element opcjonalny.<br /><br /> Określa, czy szablon jest wyświetlany w oknie dialogowym **Nowy projekt** lub **Dodaj nowy element** . |
 | [NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md) | Element opcjonalny.<br /><br /> Określa liczbę kategorii nadrzędnych, które będą wyświetlać szablon w oknie dialogowym **Nowy projekt** . |
 | [LocationFieldMRUPrefix](../extensibility/locationfieldmruprefix-element-visual-studio-templates.md) | Element opcjonalny. |
 | [LocationField](../extensibility/locationfield-element-visual-studio-project-templates.md) | Element opcjonalny.<br /><br /> Określa, czy pole tekstowe **lokalizacji** w oknie dialogowym **Nowy projekt** jest włączone, wyłączone czy ukryte dla szablonu projektu. |
@@ -108,6 +110,6 @@ Klasyfikuje szablon i definiuje sposób wyświetlania w oknie dialogowym **Nowy 
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)

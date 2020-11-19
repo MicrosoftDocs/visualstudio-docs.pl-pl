@@ -1,5 +1,7 @@
 ---
 title: TemplateID, element (szablony Visual Studio) | Microsoft Docs
+description: Dowiedz się więcej o elemencie TemplateID i sposobie określania identyfikatora dla szablonu elementu, który jest kategoryzowany w grupie szablonów elementów przez element TemplateGroupID.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8eb5abac9c837b3022354d6da743ac8f21d5e41d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 734af9de80da5f095f9ad7f0e52023659fea6b67
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699058"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903185"
 ---
 # <a name="templateid-element-visual-studio-templates"></a>TemplateID — Element (szablony Visual Studio)
 Określa identyfikator szablonu elementu, który jest kategoryzowany w grupie szablonów elementów przez element [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md) .
@@ -56,8 +58,8 @@ Określa identyfikator szablonu elementu, który jest kategoryzowany w grupie sz
 
  Jeśli plik. vstemplate pomija `TemplateID` element, wówczas element [name](../extensibility/name-element-visual-studio-templates.md) jest używany jako identyfikator szablonu.
 
- Wartość `TemplateID` elementu jest używana wraz z rejestracją systemu projektu (HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\11.0\Projects \\ ) do filtrowania szablonów, które pojawiają się w oknie dialogowym **Dodaj nowy element** .
+ Wartość `TemplateID` elementu jest używana wraz z rejestracją systemu projektu (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Projects\\ ) do filtrowania szablonów, które pojawiają się w oknie dialogowym **Dodaj nowy element** .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)

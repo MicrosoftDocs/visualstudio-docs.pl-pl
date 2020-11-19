@@ -1,5 +1,7 @@
 ---
 title: Funkcje zaawansowane
+description: Poznaj zaawansowane funkcje, które mogą być bardziej odpowiednie dla doświadczonych deweloperów lub tych deweloperów, którzy już znają program Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 06/01/2018
 ms.topic: conceptual
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04c725e5bcae5d72562e767a06afdee8aa84950b
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 61109a315a7f331821527ee882dd7c019411fca3
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399256"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903302"
 ---
 # <a name="features-of-visual-studio"></a>Funkcje programu Visual Studio
 
@@ -90,7 +92,7 @@ Możesz użyć programu Visual Studio do tworzenia aplikacji i gier dla systemó
 
 ## <a name="connect-to-databases"></a>Łączenie z bazami danych
 
-**Eksplorator serwera** ułatwia przeglądanie SQL Server wystąpień i zasobów oraz zarządzanie nimi lokalnie, zdalnie i na platformie Azure, Salesforce.com, Microsoft 365 i witrynach sieci Web. Aby otworzyć **Eksplorator serwera** , w menu głównym wybierz polecenie **Wyświetl**  >  **Eksplorator serwera**. Aby uzyskać więcej informacji na temat korzystania z Eksplorator serwera, zobacz [Dodawanie nowych połączeń](../data-tools/add-new-connections.md).
+**Eksplorator serwera** ułatwia przeglądanie SQL Server wystąpień i zasobów oraz zarządzanie nimi lokalnie, zdalnie i na platformie Azure, Salesforce.com, Microsoft 365 i witrynach sieci Web. Aby otworzyć **Eksplorator serwera**, w menu głównym wybierz polecenie **Wyświetl**  >  **Eksplorator serwera**. Aby uzyskać więcej informacji na temat korzystania z Eksplorator serwera, zobacz [Dodawanie nowych połączeń](../data-tools/add-new-connections.md).
 
 [SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) to zaawansowane środowisko programistyczne dla SQL Server, Azure SQL Database i Azure SQL Data Warehouse. Umożliwia tworzenie, debugowanie, konserwację i refaktoryzację baz danych. Można korzystać z projektu bazy danych lub bezpośrednio z połączonym wystąpieniem bazy danych lub w środowisku lokalnym.
 
@@ -136,7 +138,7 @@ Znajdź [istniejące rozszerzenia](https://marketplace.visualstudio.com/vs) dla 
 
 Aby dowiedzieć się więcej na temat rozszerzania programu Visual Studio, zobacz [rozszerzanie środowiska IDE programu Visual Studio](https://visualstudio.microsoft.com/vs/extend/).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Środowisko IDE programu Visual Studio — omówienie](../get-started/visual-studio-ide.md)
 - [Co nowego w programie Visual Studio 2017](../ide/whats-new-visual-studio-2017.md)

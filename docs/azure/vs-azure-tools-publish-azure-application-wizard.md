@@ -3,17 +3,16 @@ title: Publikowanie usługi w chmurze platformy Azure
 description: Dowiedz się, jak skonfigurować różne ustawienia w Kreatorze publikacji aplikacji platformy Azure dla programu Visual Studio
 author: ghogen
 manager: jillfra
-assetId: 7d8f1ac9-e439-47e0-a183-0642c4ea1920
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 281547356dcb8910af9426a853ceeb7e757b195d
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 87082a0d4df4542f36b1ce95cba92d261a2b4d9e
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399459"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902314"
 ---
 # <a name="using-the-visual-studio-publish-azure-application-wizard"></a>Korzystanie z kreatora publikacji aplikacji platformy Azure programu Visual Studio
 

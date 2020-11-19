@@ -1,8 +1,11 @@
 ---
 title: Przegląd dla deweloperów Visual Basic
+description: Dowiedz się więcej o używaniu programu Visual Studio do edytowania, debugowania i kompilowania kodu, a następnie publikowania aplikacji jako dewelopera Visual Basic.
 ms.date: 11/15/2018
 ms.technology: vs-ide-general
-ms.custom: get-started
+ms.custom:
+- get-started
+- SEO-VS-2020
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
@@ -11,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9938d017d683fd27a3f303824f9568a3876c2c4d
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 990bff2832f290987ed29fd48b69f4d7a1a05bba
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928046"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901573"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Witamy w programie Visual Studio IDE | Visual Basic
 
@@ -261,7 +264,7 @@ Następnie skonfigurujemy program Visual Studio do korzystania z ustawień środ
 
 1. Na pasku menu wybierz kolejno opcje **Narzędzia**  >  **Importuj i Eksportuj ustawienia**.
 
-2. W **Kreatorze importowania i eksportowania ustawień**wybierz pozycję **Zresetuj wszystkie ustawienia** na pierwszej stronie, a następnie wybierz przycisk **dalej**.
+2. W **Kreatorze importowania i eksportowania ustawień** wybierz pozycję **Zresetuj wszystkie ustawienia** na pierwszej stronie, a następnie wybierz przycisk **dalej**.
 
 3. Na stronie **Zapisywanie bieżących ustawień** wybierz opcję zapisania bieżących ustawień, a następnie wybierz przycisk **dalej**. (Jeśli nie dostosowano żadnych ustawień, wybierz pozycję **nie, po prostu Zresetuj ustawienia, zastępując Moje bieżące ustawienia**).
 
@@ -281,7 +284,7 @@ Szczegółowemy i utworzysz prosty program.
 
    ![Plik > nowy projekt na pasku menu](media/file-new-project-menu.png)
 
-   Okno dialogowe **Nowy projekt** zawiera kilka *szablonów*projektów. Szablon zawiera podstawowe pliki i ustawienia, które są zbędne dla danego typu projektu.
+   Okno dialogowe **Nowy projekt** zawiera kilka *szablonów* projektów. Szablon zawiera podstawowe pliki i ustawienia, które są zbędne dla danego typu projektu.
 
 1. Wybierz kategorię **.NET Core** w obszarze **Visual Basic**, a następnie wybierz szablon **Aplikacja konsolowa (.NET Core)** . W polu tekstowym **Nazwa** wpisz **HelloWorld**, a następnie wybierz przycisk **OK** .
 
@@ -345,7 +348,7 @@ Szczegółowemy i utworzysz prosty program.
 
    ![Plik > nowy projekt na pasku menu](media/vs-2019/file-new-project.png)
 
-   Zostanie otwarte okno **Utwórz nowy projekt** zawierające kilka *szablonów*projektów. Szablon zawiera podstawowe pliki i ustawienia, które są zbędne dla danego typu projektu.
+   Zostanie otwarte okno **Utwórz nowy projekt** zawierające kilka *szablonów* projektów. Szablon zawiera podstawowe pliki i ustawienia, które są zbędne dla danego typu projektu.
 
 1. Aby znaleźć żądany szablon, wpisz lub wprowadź w polu wyszukiwania **konsolę .NET Core** . Lista dostępnych szablonów jest automatycznie filtrowana na podstawie wprowadzonych słów kluczowych. Można bardziej filtrować wyniki szablonu, wybierając **Visual Basic** z listy rozwijanej **Język** .
 
@@ -375,7 +378,7 @@ Szczegółowemy i utworzysz prosty program.
 
    Program Visual Studio kompiluje aplikację i zostanie otwarte okno konsoli z komunikatem **Hello World!**. Masz teraz działającą aplikację.
 
-   ![Okno konsoli](../media/vs-2019/overview-console-window.png)
+   ![Zrzut ekranu przedstawiający okno konsoli z komunikatem Hello world.](../media/vs-2019/overview-console-window.png)
 
 1. Aby zamknąć okno konsoli, naciśnij dowolny klawisz na klawiaturze.
 
@@ -400,7 +403,7 @@ Szczegółowemy i utworzysz prosty program.
 
 1. Wprowadź swoją nazwę w oknie konsoli i naciśnij klawisz **Enter**.
 
-   ![Okno konsoli](../media/vs-2019/overview-console-input.png)
+   ![Zrzut ekranu przedstawiający okno konsoli z pytaniami dotyczącymi Twojej nazwy i odpowiedzi aplikacji.](../media/vs-2019/overview-console-input.png)
 
 1. Naciśnij dowolny klawisz, aby zamknąć okno konsoli i zatrzymać uruchomiony program.
 
@@ -509,7 +512,7 @@ Poznanie programu Visual Studio w następujący sposób wraz z jednym z następu
 > [!div class="nextstepaction"]
 > [Informacje o projektach i rozwiązaniach](tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - Odkryj [więcej funkcji programu Visual Studio](../../ide/advanced-feature-overview.md)
 - Odwiedź witrynę [VisualStudio.Microsoft.com](https://visualstudio.microsoft.com/vs/)

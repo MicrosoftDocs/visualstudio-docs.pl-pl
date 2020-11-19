@@ -1,5 +1,7 @@
 ---
 title: Najlepsze praktyki dotyczące korzystania z wstawek kodu
+description: Dowiedz się więcej o fragmentach kodu, zamiarach fragmentu kodu i sposobach ich użycia w aplikacji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08add20b59e3e14897d1870aa45fd6cce8698d96
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f54a451bea8345d06073e6f3a8ab944b3c7ea820
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591713"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903146"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Najlepsze rozwiązania dotyczące korzystania z fragmentów kodu
 
@@ -31,7 +33,7 @@ W przypadku adaptacji lokalizacji plików do aplikacji należy wziąć pod uwag�
 
 - Znajdowanie dostępnej lokalizacji. Użytkownicy mogą nie mieć dostępu do folderu *Program Files* komputera, dlatego przechowywanie plików z plikami aplikacji może nie zadziałało.
 
-- Znajdowanie bezpiecznej lokalizacji. Przechowywanie plików w folderze głównym (*C: \\ *) nie jest bezpieczne. W przypadku danych aplikacji zalecamy użycie folderu *dane aplikacji* . W przypadku poszczególnych danych użytkownika aplikacja może utworzyć plik dla każdego użytkownika w folderze *dokumenty* .
+- Znajdowanie bezpiecznej lokalizacji. Przechowywanie plików w folderze głównym (*C: \\*) nie jest bezpieczne. W przypadku danych aplikacji zalecamy użycie folderu *dane aplikacji* . W przypadku poszczególnych danych użytkownika aplikacja może utworzyć plik dla każdego użytkownika w folderze *dokumenty* .
 
 - Przy użyciu prawidłowej nazwy pliku. Możesz użyć <xref:System.Windows.Forms.OpenFileDialog> formantów i, <xref:System.Windows.Forms.SaveFileDialog> Aby zmniejszyć prawdopodobieństwo wystąpienia nieprawidłowych nazw plików. Należy pamiętać, że od momentu, gdy użytkownik wybierze plik i gdy kod manipuluje plikiem, plik może zostać usunięty. Ponadto użytkownik może nie mieć uprawnień do zapisu w pliku.
 
@@ -67,7 +69,7 @@ Fragmenty kodu IntelliSense instalowane przez program Visual Studio nie są zagr
 
   - Fragment kodu może zawierać odwołania, które są dodawane w trybie dyskretnym do projektu i mogą być ładowane z dowolnego miejsca w systemie. Te odwołania mogły zostać pobrane na komputer z lokalizacji, w której pobrano fragment kodu. Fragment kodu może następnie wykonać wywołanie metody w odwołaniu, które wykonuje złośliwy kod. Aby zapewnić sobie ochronę przed takimi atakami, przejrzyj bloki Importy i odwołania pliku fragmentu kodu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Visual Basic fragmenty kodu IntelliSense](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)
 - [Zabezpieczanie aplikacji](../ide/securing-applications.md)

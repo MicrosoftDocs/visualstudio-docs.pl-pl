@@ -1,8 +1,11 @@
 ---
 title: Projekty samouczków i rozwiązania Visual Basic
+description: Dowiedz się, jak utworzyć rozwiązanie i projekt w programie Visual Studio jako deweloper Visual Basic.
 ms.date: 12/12/2018
 ms.technology: vs-ide-general
-ms.custom: get-started
+ms.custom:
+- get-started
+- SEO-VS-2020
 ms.topic: tutorial
 author: TerryGLee
 ms.author: tglee
@@ -11,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 48b3f2c9aae099e3ae5f2cf2d8c438fb0f9062a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0277379c44a7d0334798920759438dce52ae16f8
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590218"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901274"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>Poznaj projekty i rozwiązania przy użyciu Visual Basic
 
@@ -87,7 +90,7 @@ Teraz Dodajmy nasz pierwszy projekt do rozwiązania. Zaczniemy od pustego projek
 
 ::: moniker range="vs-2017"
 
-1. W obszarze **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy lub menu kontekstowe **rozwiązania "QuickSolution"** , wybierz polecenie **Dodaj** > **Nowy projekt**.
+1. W obszarze **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy lub menu kontekstowe **rozwiązania "QuickSolution"** , wybierz polecenie **Dodaj** > **Nowy projekt**.
 
    Zostanie otwarte okno dialogowe **Dodaj nowy projekt** .
 
@@ -104,7 +107,7 @@ Teraz Dodajmy nasz pierwszy projekt do rozwiązania. Zaczniemy od pustego projek
 
 ::: moniker range=">=vs-2019"
 
-1. W obszarze **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy lub menu kontekstowe **rozwiązania "QuickSolution"** , wybierz polecenie **Dodaj** > **Nowy projekt**.
+1. W obszarze **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy lub menu kontekstowe **rozwiązania "QuickSolution"** , wybierz polecenie **Dodaj** > **Nowy projekt**.
 
    Zostanie otwarte okno dialogowe z komunikatem **Dodawanie nowego projektu**.
 
@@ -127,13 +130,13 @@ Teraz Dodajmy nasz pierwszy projekt do rozwiązania. Zaczniemy od pustego projek
 
 Mamy pusty projekt. Dodajmy plik kodu.
 
-1. Z menu podręcznego kliknij lub kontekstowego projektu **QuickDate** w **Eksplorator rozwiązań**wybierz pozycję **Dodaj**  >  **nowy element**.
+1. Z menu podręcznego kliknij lub kontekstowego projektu **QuickDate** w **Eksplorator rozwiązań** wybierz pozycję **Dodaj**  >  **nowy element**.
 
    Zostanie otwarte okno dialogowe **Dodaj nowy element** .
 
-1. Rozwiń węzeł **wspólne elementy**, a następnie wybierz pozycję **kod**. W środkowym okienku wybierz szablon element **klasy** . Nazwij **Kalendarz**klasy, a następnie wybierz przycisk **Dodaj** .
+1. Rozwiń węzeł **wspólne elementy**, a następnie wybierz pozycję **kod**. W środkowym okienku wybierz szablon element **klasy** . Nazwij **Kalendarz** klasy, a następnie wybierz przycisk **Dodaj** .
 
-   Plik o nazwie *Calendar. vb* został dodany do projektu. *. Vb* na końcu to rozszerzenie pliku, które ma Visual Basic plików kodu. Plik jest wyświetlany w hierarchii projektu wizualizacji w **Eksplorator rozwiązań**i jego zawartość jest otwarta w edytorze.
+   Plik o nazwie *Calendar. vb* został dodany do projektu. *. Vb* na końcu to rozszerzenie pliku, które ma Visual Basic plików kodu. Plik jest wyświetlany w hierarchii projektu wizualizacji w **Eksplorator rozwiązań** i jego zawartość jest otwarta w edytorze.
 
 1. Zastąp zawartość pliku *Calendar. vb* następującym kodem:
 
@@ -157,7 +160,7 @@ Rozwiązanie to często dotyczy rozwiązań zawierających więcej niż jeden pr
 
 Dodajmy projekt testu jednostkowego do naszego rozwiązania. Tym razem zaczniemy od szablonu projektu, więc nie trzeba dodawać dodatkowego pliku kodu do projektu.
 
-1. W obszarze **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy lub menu kontekstowe **rozwiązania "QuickSolution"** , wybierz polecenie **Dodaj**  >  **Nowy projekt**.
+1. W obszarze **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy lub menu kontekstowe **rozwiązania "QuickSolution"** , wybierz polecenie **Dodaj**  >  **Nowy projekt**.
 
 ::: moniker range="Vs-2017"
 
@@ -227,7 +230,7 @@ Będziemy używać nowego projektu testów jednostkowych do testowania naszej me
 
 Wiersz w pliku *Calendar. vb* , który zawiera <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> atrybut odwołuje się do nazwy zestawu (nazwa pliku) projektu **Quicktest** . Nazwa zestawu może nie zawsze być taka sama jak nazwa projektu. Aby znaleźć nazwę zestawu projektu, Otwórz właściwości projektu.
 
-1. W **Eksplorator rozwiązań**wybierz projekt **Quicktest** . W menu kontekstowym lub prawym przyciskiem myszy wybierz pozycję **Właściwości**lub po prostu naciśnij klawisz **Alt** + **Enter**. (Możesz również kliknąć dwukrotnie pozycję **mój projekt** w **Eksplorator rozwiązań**).
+1. W **Eksplorator rozwiązań** wybierz projekt **Quicktest** . W menu kontekstowym lub prawym przyciskiem myszy wybierz pozycję **Właściwości** lub po prostu naciśnij klawisz **Alt** + **Enter**. (Możesz również kliknąć dwukrotnie pozycję **mój projekt** w **Eksplorator rozwiązań**).
 
    *Strony właściwości* projektu otwartego na karcie **aplikacja** . Strony właściwości zawierają różne ustawienia dla projektu. Należy zauważyć, że nazwa zestawu projektu **Quicktest** jest rzeczywiście "Quicktest". Jeśli chcesz ją zmienić, możesz to zrobić. Następnie podczas budowania projektu testowego nazwa pliku binarnego, który zostanie zmieniony, zmieni się z *QuickTest.dll* na dowolnie wybrany.
 
@@ -248,7 +251,7 @@ Jeśli chcesz sprawdzić, czy test jednostkowy działa, wybierz pozycję **Testu
 
 Aby dowiedzieć się więcej na temat programu Visual Studio, należy rozważyć utworzenie aplikacji, postępując zgodnie z jednym z [samouczków Visual Basic](index.yml).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Tworzenie projektów i rozwiązań](../../ide/creating-solutions-and-projects.md)
 - [Zarządzanie właściwościami projektów i rozwiązań](../../ide/managing-project-and-solution-properties.md)

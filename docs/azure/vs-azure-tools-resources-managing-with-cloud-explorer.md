@@ -3,17 +3,16 @@ title: Zarządzanie zasobami platformy Azure za pomocą programu Cloud Explorer 
 description: Dowiedz się, jak przeglądać zasoby platformy Azure w programie Visual Studio i zarządzać nimi za pomocą programu Cloud Explorer.
 author: ghogen
 manager: jillfra
-assetId: 6347dc53-f497-49d5-b29b-e8b9f0e939d7
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: 12c82cca6c8873facc1a16a926d90fd0f3918c07
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: c9c2ce60b2096b6c3a4f06fad7360b1d5ea0c753
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399393"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902283"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Zarządzanie zasobami skojarzonymi z kontami platformy Azure w narzędziu Visual Studio Cloud Explorer
 

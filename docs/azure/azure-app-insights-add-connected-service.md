@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 9d279de29664dcfc17ebd719fafc95d197a3352a
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 1317f41c9463ab645e6dd3ba281f11b9246720a8
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398673"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901937"
 ---
 # <a name="add-azure-application-insights-by-using-visual-studio-connected-services"></a>Dodawanie Application Insights platformy Azure przy użyciu usług połączonych programu Visual Studio
 
@@ -82,7 +82,7 @@ Funkcja połączonej usługi dodaje wszystkie konieczne odwołania i kod połąc
 
    ![Zależności usługi](./media/azure-app-insights-add-connected-service/service-dependencies-after.png)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Strona produktu Azure Monitor](https://azure.microsoft.com/services/monitor/)
 - [Dokumentacja usługi Azure App Insights](/azure/azure-monitor/app/app-insights-overview/)

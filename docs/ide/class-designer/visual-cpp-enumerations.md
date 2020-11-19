@@ -1,5 +1,7 @@
 ---
 title: Wyliczenia C++ w Projektant klas
+description: Dowiedz się, jak Projektant klas obsługuje typy wyliczeniowe C++ i klasy wyliczeniowe w zakresie.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee56850c05e4b06ea4325ec238e56e99b38978d0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b12d270884ca9877d6c1c80780a9ae96324f3af4
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114195"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903458"
 ---
 # <a name="c-enumerations-in-class-designer"></a>Wyliczenia C++ w Projektant klas
 
@@ -42,7 +44,7 @@ Kształt wyliczenia języka C++ na diagramie klas wygląda i działa jak kształ
 
 Aby uzyskać więcej informacji na temat korzystania z `enum` typu, zobacz [wyliczenia](/cpp/cpp/enumerations-cpp).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Praca z kodem C++](working-with-visual-cpp-code.md)
 - [Wyliczenia](/cpp/cpp/enumerations-cpp)

@@ -3,17 +3,16 @@ title: Uaktualnianie projektów do bieżącej wersji narzędzi platformy Azure
 description: Dowiedz się, jak uaktualnić projekt platformy Azure w programie Visual Studio do bieżącej wersji narzędzi platformy Azure
 author: ghogen
 manager: jillfra
-assetId: 1d64070a-078d-468a-87f4-e6715de6475f
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: 4cd9ffac5f668a9f6cd6ab266d38b90658ce9336
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: fce77f6417a14c204df883efd2f64655fa79b432
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398582"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901911"
 ---
 # <a name="how-to-upgrade-projects-to-the-current-version-of-the-azure-tools-for-visual-studio"></a>Jak uaktualniać projekty do bieżącej wersji narzędzi platformy Azure dla programu Visual Studio
 ## <a name="overview"></a>Omówienie
@@ -36,7 +35,7 @@ Jeśli projekt jest automatycznie uaktualniany lub określono, że chcesz go uak
 
 ### <a name="how-to-upgrade-an-azure-project-to-the-current-release"></a>Jak uaktualnić projekt platformy Azure do bieżącej wersji
 1. Zainstaluj bieżącą wersję narzędzi platformy Azure w instalacji programu Visual Studio, której chcesz użyć dla uaktualnionego projektu, a następnie otwórz projekt, który chcesz uaktualnić. Jeśli projekt został utworzony za pomocą narzędzia platformy Azure przed 1,6 (listopad 2011), projekt zostanie automatycznie uaktualniony do bieżącej wersji. Jeśli projekt został utworzony z wydaniem listopad 2011, a wersja jest nadal zainstalowana, projekt zostanie otwarty w tej wersji.
-2. W Eksplorator rozwiązań otwórz menu skrótów dla węzła projektu, wybierz **Właściwości** , a następnie wybierz kartę **aplikacja** w wyświetlonym oknie dialogowym.
+2. W Eksplorator rozwiązań otwórz menu skrótów dla węzła projektu, wybierz **Właściwości**, a następnie wybierz kartę **aplikacja** w wyświetlonym oknie dialogowym.
 
     Na karcie **aplikacja** zostanie wyświetlona wersja narzędzi, która jest skojarzona z projektem. Jeśli zostanie wyświetlona bieżąca wersja narzędzi platformy Azure, projekt został już uaktualniony. Jeśli zainstalowano nowszą wersję narzędzi niż wyświetlana na karcie, pojawia się przycisk **Uaktualnij** .
 3. Wybierz przycisk **Uaktualnij** , aby uaktualnić projekt do bieżącej wersji narzędzi.

@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Tworzenie skojarzeń między typami (Projektant klas)'
+description: Dowiedz się, jak tworzyć skojarzenia między różnymi typami w Projektant klas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cce893efaad5f2317b175391a2685cae7053e3c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f72cb173b5ece347bb2d9eb1b4ef0e8d2317b21d
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770952"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901612"
 ---
 # <a name="how-to-create-associations-between-types-in-class-designer"></a>Instrukcje: tworzenie skojarzeń między typami w Projektant klas
 
@@ -34,7 +36,7 @@ Podczas gdy można wyświetlić wszystkie pola i właściwości jako skojarzenia
 
 ## <a name="to-define-an-association-line-in-the-class-diagram"></a>Aby zdefiniować linię skojarzenia na Diagramie klasy
 
-1. W przyborniku w obszarze **Projektant klas**wybierz pozycję **skojarzenie**.
+1. W przyborniku w obszarze **Projektant klas** wybierz pozycję **skojarzenie**.
 
 2. Narysuj linię między dwoma kształtami, które chcesz połączyć przez skojarzenie.
 
@@ -54,6 +56,6 @@ Alternatywnie wykonaj następujące kroki:
 
    Nazwa zostanie zaktualizowana w oknie **Szczegóły klasy** , w wierszu skojarzenia, w oknie **Właściwości** i w kodzie.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Instrukcje: zmiana między notacją składowej i notacją skojarzenia](how-to-change-between-member-notation-and-association-notation.md)

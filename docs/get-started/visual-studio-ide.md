@@ -1,10 +1,13 @@
 ---
 title: Omówienie programu Visual Studio
 titleSuffix: ''
+description: Dowiedz się więcej na temat zintegrowanego środowiska programistycznego programu Visual Studio.
 ms.date: 03/19/2019
 ms.technology: vs-ide-general
 ms.topic: overview
-ms.custom: vs-get-started
+ms.custom:
+- vs-get-started
+- SEO-VS-2020
 author: TerryGLee
 f1_keywords:
 - vs.startpage
@@ -13,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5790d652ad98c684786efaa39a1fd23948d3b36e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 406b02c0453c8e8b6fb353c0a1b021f64cab6181
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770882"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901456"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Wprowadzenie do środowiska IDE programu Visual Studio
 
@@ -44,7 +47,7 @@ Jeśli wszystko jest gotowe do szczegółowe do większej ilości kodu, jeden z 
 
 - [Tworzenie pierwszej aplikacji konsolowej w języku C++ za pomocą programu Visual Studio](/cpp/get-started/tutorial-console-cpp)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - Odkryj [więcej funkcji programu Visual Studio](../ide/advanced-feature-overview.md)
 - Odwiedź witrynę [VisualStudio.Microsoft.com](https://visualstudio.microsoft.com/vs/)

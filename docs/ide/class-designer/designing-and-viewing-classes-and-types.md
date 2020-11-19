@@ -1,5 +1,7 @@
 ---
 title: Użyj Projektant klas
+description: Dowiedz się, jak projektować, wizualizować i reprezentować klasy i inne typy w kodzie za pomocą Projektant klas w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 05/08/2018
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80668f3b999d9e022de3d22abb383f2dbd10730a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 72d646150baafb7e7169a3c0a2452da6aec5df9b
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87507914"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902990"
 ---
 # <a name="design-and-view-classes-and-types-with-class-designer"></a>Projektowanie i wyświetlanie klas i typów z Projektant klas
 
@@ -56,7 +58,7 @@ Po dostosowaniu co najmniej jednego diagramu klas można skopiować je do Micros
 > [!NOTE]
 > Projektant klas nie śledzi lokalizacji plików źródłowych, dlatego zmiana struktury projektu lub przeniesienie plików źródłowych w projekcie może spowodować, że Projektant klas utraci śledzenie tego typu, szczególnie typ źródłowy elementu typedef, klasy bazowe lub typy skojarzeń. Może zostać wyświetlony komunikat o błędzie, np. **Projektant klas nie może wyświetlić tego typu**. Jeśli to zrobisz, przeciągnij ponownie zmodyfikowany lub zlokalizowany kod źródłowy do diagramu klas, aby go wyświetlić.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Funkcje edytora kodu](../writing-code-in-the-code-and-text-editor.md)
 - [Zależności mapy w ramach rozwiązań](../../modeling/map-dependencies-across-your-solutions.md)

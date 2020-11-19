@@ -1,8 +1,11 @@
 ---
 title: Wprowadzenie do edytowania w edytorze kodu
+description: Dowiedz się, jak za pomocą edytora kodu w programie Visual Studio dodać kod do pliku, a także jak napisać kod, przechodź do niego i refaktoryzacji.
 ms.date: 11/30/2017
 ms.technology: vs-ide-general
-ms.custom: get-started
+ms.custom:
+- get-started
+- SEO-VS-2020
 ms.topic: tutorial
 author: TerryGLee
 ms.author: tglee
@@ -11,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a0c8122bd08e4eb9af68a0aa70f06cfb18e51469
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 39c5fd62b67c8153da0a64dcd92142300912c25f
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595270"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901781"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Dowiedz się, jak używać edytora kodu
 
@@ -76,7 +79,7 @@ Program Visual Studio oferuje przydatne *fragmenty kodu* , za pomocą których m
 
    Zostanie wyświetlony `static void Main()` podpis metody dodany do pliku.
 
-Dostępne fragmenty kodu są różne dla różnych języków programowania. Możesz sprawdzić dostępne fragmenty kodu dla danego języka, wybierając pozycję **Edytuj**  >  **IntelliSense**  >  **wstawkę**IntelliSense, a następnie wybierając folder języka. Dla języka C# lista wygląda następująco:
+Dostępne fragmenty kodu są różne dla różnych języków programowania. Możesz sprawdzić dostępne fragmenty kodu dla danego języka, wybierając pozycję **Edytuj**  >  **IntelliSense**  >  **wstawkę** IntelliSense, a następnie wybierając folder języka. Dla języka C# lista wygląda następująco:
 
 ![Lista fragmentów kodu w języku C#](media/tutorial-code-snippet-list.png)
 
@@ -171,7 +174,7 @@ Nikt nie pobiera kodu po raz pierwszy, a jedna z rzeczy, które trzeba zmienić,
 
    Okno dialogowe **zmiana nazwy** zostanie wyświetlone w prawym górnym rogu edytora.
 
-1. Wprowadź odpowiednie nazwy **wyrazów**. Należy zauważyć, że Nazwa odwołania do `words` zapytania jest również automatycznie zmieniana. Przed naciśnięciem klawisza **Enter**zaznacz pole wyboru **Dołącz Komentarze** w oknie podręcznym **zmiany nazwy** .
+1. Wprowadź odpowiednie nazwy **wyrazów**. Należy zauważyć, że Nazwa odwołania do `words` zapytania jest również automatycznie zmieniana. Przed naciśnięciem klawisza **Enter** zaznacz pole wyboru **Dołącz Komentarze** w oknie podręcznym **zmiany nazwy** .
 
    ![Zmień nazwę — Okno dialogowe](media/tutorial-rename.png)
 
@@ -184,7 +187,7 @@ Nikt nie pobiera kodu po raz pierwszy, a jedna z rzeczy, które trzeba zmienić,
 > [!div class="nextstepaction"]
 > [Informacje o projektach i rozwiązaniach](../get-started/tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Fragmenty kodu](../ide/code-snippets.md)
 - [Nawiguj po kodzie](../ide/navigating-code.md)

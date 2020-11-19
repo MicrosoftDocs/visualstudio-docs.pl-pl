@@ -3,23 +3,22 @@ title: Konstruowanie ciągów filtru dla projektanta tabel | Microsoft Docs
 description: Konstruowanie ciągów filtru dla projektanta tabel
 author: ghogen
 manager: jillfra
-assetId: a1a10ea1-687a-4ee1-a952-6b24c2fe1a22
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: 30e9a347be1a3b35e69d2c72d141873c62dcdeb3
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 288e4256a472eb7bbc692758ad81df68be507676
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398608"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901924"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>Konstruowanie ciągów filtrów dla projektanta tabel
 ## <a name="overview"></a>Omówienie
 Aby filtrować dane w tabeli platformy Azure, która jest wyświetlana w **Projektancie tabel** programu Visual Studio, należy utworzyć ciąg filtru i wprowadzić go w polu filtru. Składnia ciągu filtru jest definiowana przez Usługi danych programu WCF i jest podobna do klauzuli SQL WHERE, ale jest wysyłana do Table service za pośrednictwem żądania HTTP. **Projektant tabel** obsługuje odpowiednie kodowanie, dlatego w celu filtrowania według żądanej wartości właściwości należy wprowadzić tylko nazwę właściwości, operator porównania, wartość kryteriów i opcjonalnie operator logiczny w polu filtru. Nie trzeba dołączać opcji zapytania $filter tak samo, jak w przypadku konstruowania adresu URL w celu zbadania tabeli za pośrednictwem [dokumentacji interfejsu API REST usług Storage](/rest/api/storageservices/).
 
-Usługi danych programu WCF opierają się na [protokole Open Data Protocol](https://www.odata.org/) (OData). Aby uzyskać szczegółowe informacje na temat opcji filtrowania systemu kwerend ( **$Filter** ), zobacz [specyfikację identyfikatorów URI usługi OData](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
+Usługi danych programu WCF opierają się na [protokole Open Data Protocol](https://www.odata.org/) (OData). Aby uzyskać szczegółowe informacje na temat opcji filtrowania systemu kwerend (**$Filter**), zobacz [specyfikację identyfikatorów URI usługi OData](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
 
 ## <a name="comparison-operators"></a>Operatory porównania
 Następujące operatory logiczne są obsługiwane dla wszystkich typów właściwości:
@@ -81,13 +80,13 @@ AmountDue le 100.25
 ## <a name="filtering-on-boolean-properties"></a>Filtrowanie właściwości logicznych
 Aby odfiltrować wartość logiczną, należy określić **wartość PRAWDA** lub **Fałsz** bez znaków cudzysłowu.
 
-Poniższy przykład zwraca wszystkie jednostki, w których właściwość IsActive jest ustawiona na **wartość true** :
+Poniższy przykład zwraca wszystkie jednostki, w których właściwość IsActive jest ustawiona na **wartość true**:
 
 ```
 IsActive eq true
 ```
 
-Możesz również napisać wyrażenie filtru bez operatora logicznego. W poniższym przykładzie Table service zwróci również wszystkie jednostki, gdzie IsActive jest **prawdziwe** :
+Możesz również napisać wyrażenie filtru bez operatora logicznego. W poniższym przykładzie Table service zwróci również wszystkie jednostki, gdzie IsActive jest **prawdziwe**:
 
 ```
 IsActive

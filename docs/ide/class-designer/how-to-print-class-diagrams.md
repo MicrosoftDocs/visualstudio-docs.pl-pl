@@ -1,5 +1,7 @@
 ---
 title: 'Porady: drukowanie diagramów klasy (Projektant klas)'
+description: Dowiedz się, jak drukować Diagram klas przy użyciu funkcji drukowania programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fb7b22c523216a41cddfc5c6cf8e87a915a9e38
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ecabb44f7b66c94ef7390d79bf4e379256bd464
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770079"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901365"
 ---
 # <a name="how-to-print-class-diagrams"></a>Instrukcje: Drukowanie diagramów klas
 
@@ -30,7 +32,7 @@ Diagram klas można wydrukować przy użyciu funkcji drukowania programu Visual 
 
 Cały Diagram klas zostanie wydrukowany. Aby drukować o odpowiednim rozmiarze, może być konieczne dostosowanie ustawień w oknie dialogowym **Ustawienia strony** .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Instrukcje: kopiowanie elementów diagramu klas do dokumentu Microsoft Office](how-to-copy-class-diagram-elements-to-a-microsoft-office-document.md)
 - [Instrukcje: eksportowanie diagramów klas jako obrazów](how-to-export-class-diagrams-as-images.md)

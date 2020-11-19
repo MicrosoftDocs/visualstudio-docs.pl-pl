@@ -1,5 +1,7 @@
 ---
 title: 'Porady: tworzenie typów za pomocą Projektanta klas'
+description: Dowiedz się, jak projektować nowe typy dla projektów C# i Visual Basic, tworząc je na diagramie klas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98e489a37e5d75cbc17d17c32a1fa3b53f9993f8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac6e59f4dc6fa68962ac061132e3fab90ec8e955
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770219"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901443"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Instrukcje: Tworzenie typów za pomocą Projektant klas
 
@@ -30,7 +32,7 @@ Aby zaprojektować nowe typy dla projektów C# i Visual Basic, utwórz je na dia
 
 ## <a name="create-a-new-type"></a><a name="CreateType"></a> Utwórz nowy typ
 
-1. W **przyborniku**w obszarze **Projektant klas**przeciągnij jeden z nich na Diagram klas:
+1. W **przyborniku** w obszarze **Projektant klas** przeciągnij jeden z nich na Diagram klas:
 
     - **Klasa** lub **Klasa abstrakcyjna**
 
@@ -70,7 +72,7 @@ Aby zaprojektować nowe typy dla projektów C# i Visual Basic, utwórz je na dia
 
 1. Kliknij typ kształtu na diagramie klasy.
 
-2. We **właściwościach**obok właściwości **atrybuty niestandardowe** typu kliknij przycisk wielokropka (...).
+2. We **właściwościach** obok właściwości **atrybuty niestandardowe** typu kliknij przycisk wielokropka (...).
 
 3. Dodaj jeden lub więcej atrybutów niestandardowych, jeden na wiersz. Nie otaczaj ich nawiasami kwadratowymi.
 
@@ -80,13 +82,13 @@ Aby zaprojektować nowe typy dla projektów C# i Visual Basic, utwórz je na dia
 
 1. Kliknij nazwę składowej w jej kształcie typu na diagramie klasy lub kliknij jej wiersz w oknie Szczegóły klasy.
 
-2. We **właściwościach**Znajdź właściwość **atrybuty niestandardowe** elementu członkowskiego.
+2. We **właściwościach** Znajdź właściwość **atrybuty niestandardowe** elementu członkowskiego.
 
 3. Dodaj jeden lub więcej atrybutów niestandardowych, jeden na wiersz. Nie otaczaj ich nawiasami kwadratowymi.
 
    Atrybuty niestandardowe są stosowane do typu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Instrukcje: Tworzenie dziedziczenia między typami](how-to-create-inheritance-between-types.md)
 - [Instrukcje: tworzenie skojarzeń między typami](how-to-create-associations-between-types.md)

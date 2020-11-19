@@ -4,17 +4,16 @@ ms.custom: SEO-VS-2020
 description: Dowiedz się, jak skonfigurować diagnostykę do debugowania usług Azure Cloud Services i maszyn wirtualnych w programie Visual Studio.
 author: ghogen
 manager: jillfra
-ms.assetid: e70cd7b4-6298-43aa-adea-6fd618414c26
 ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: 55a0f96959d0e3e8bbc70c458ab99bbc06b06a62
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: ababbbfcfa71f3083a292103f4fa4f1ba481faae
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809849"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902619"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Konfigurowanie diagnostyki dla usług w chmurze i maszyn wirtualnych platformy Azure
 W przypadku konieczności rozwiązywania problemów z usługą w chmurze lub maszyną wirtualną platformy Azure można użyć programu Visual Studio, aby łatwiej skonfigurować Diagnostyka Azure. Diagnostyka przechwytuje dane systemowe i rejestruje dane na maszynach wirtualnych i wystąpieniach maszyn wirtualnych, na których działa usługa w chmurze. Dane diagnostyczne są przesyłane do wybranego konta magazynu. Aby uzyskać więcej informacji na temat rejestrowania diagnostycznego na platformie Azure, zobacz [Włączanie rejestrowania diagnostyki dla Web Apps w Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -78,10 +77,10 @@ W programie Visual Studio można zbierać dane diagnostyczne dla ról działają
 
     ![Konto magazynu — okno dialogowe](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796662.png)
 
-   * W przypadku wybrania **emulator magazynu Microsoft Azure**parametry połączenia są ustawiane na `UseDevelopmentStorage=true` .
+   * W przypadku wybrania **emulator magazynu Microsoft Azure** parametry połączenia są ustawiane na `UseDevelopmentStorage=true` .
    * Jeśli wybierzesz **subskrypcję**, możesz wybrać subskrypcję platformy Azure, której chcesz użyć, a następnie wprowadzić nazwę konta. Aby zarządzać subskrypcjami platformy Azure, wybierz pozycję **Zarządzaj kontami**.
-   * W przypadku wybrania **ręcznie wprowadzonych poświadczeń**wprowadź nazwę i klucz konta platformy Azure, którego chcesz użyć.
-5. Aby wyświetlić okno dialogowe **Konfiguracja diagnostyki** , wybierz pozycję **Konfiguruj**. Każda karta reprezentuje źródło danych diagnostycznych, które można zbierać, z wyjątkiem katalogów **ogólnych** i **dzienników**. Domyślna karta **Ogólne** oferuje następujące opcje zbierania danych diagnostycznych: **tylko błędy**, **wszystkie informacje**i **plany niestandardowe**. Opcja **tylko błędy** domyślne używa najmniejszej ilości miejsca w magazynie, ponieważ nie przesyła ostrzeżeń ani śledzenia komunikatów. Opcja **wszystkie informacje** transferuje najwięcej informacji, korzysta z większości magazynu i dlatego jest najbardziej kosztowną opcją.
+   * W przypadku wybrania **ręcznie wprowadzonych poświadczeń** wprowadź nazwę i klucz konta platformy Azure, którego chcesz użyć.
+5. Aby wyświetlić okno dialogowe **Konfiguracja diagnostyki** , wybierz pozycję **Konfiguruj**. Każda karta reprezentuje źródło danych diagnostycznych, które można zbierać, z wyjątkiem katalogów **ogólnych** i **dzienników**. Domyślna karta **Ogólne** oferuje następujące opcje zbierania danych diagnostycznych: **tylko błędy**, **wszystkie informacje** i **plany niestandardowe**. Opcja **tylko błędy** domyślne używa najmniejszej ilości miejsca w magazynie, ponieważ nie przesyła ostrzeżeń ani śledzenia komunikatów. Opcja **wszystkie informacje** transferuje najwięcej informacji, korzysta z większości magazynu i dlatego jest najbardziej kosztowną opcją.
 
    > [!NOTE]
    > Minimalny obsługiwany rozmiar dla przydziału dysku w MB to 50 MB, a rozmiar domyślny to 4 GB. Jeśli jednak zbierasz zrzuty pamięci, zwiększ ten poziom do wyższej wartości, na przykład 10 GB.
@@ -119,7 +118,7 @@ W programie Visual Studio można zbierać dane diagnostyczne dotyczące maszyn w
 
     ![Włącz diagnostykę i konfigurację platformy Azure](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758144.png)
 
-    Karta domyślna, **Ogólne**, oferuje następujące opcje zbierania danych diagnostycznych: **tylko błędy**, **wszystkie informacje**i **plany niestandardowe**. Opcja domyślna, **tylko błędy**, wymaga co najmniej magazynu, ponieważ nie przesyła ostrzeżeń ani śledzenia komunikatów. Opcja **wszystkie informacje** transferuje najwięcej informacji i jest z tego powodu najbardziej kosztowną opcją w obszarze magazyn.
+    Karta domyślna, **Ogólne**, oferuje następujące opcje zbierania danych diagnostycznych: **tylko błędy**, **wszystkie informacje** i **plany niestandardowe**. Opcja domyślna, **tylko błędy**, wymaga co najmniej magazynu, ponieważ nie przesyła ostrzeżeń ani śledzenia komunikatów. Opcja **wszystkie informacje** transferuje najwięcej informacji i jest z tego powodu najbardziej kosztowną opcją w obszarze magazyn.
 7. Na potrzeby tego przykładu wybierz opcję **Plan niestandardowy** , aby można było dostosować zbierane dane.
 8. **Limit przydziału dysku w MB** określa, ile miejsca chcesz przydzielić na koncie magazynu na potrzeby danych diagnostycznych. Jeśli chcesz, możesz zmienić wartość domyślną.
 9. Na każdej karcie danych diagnostycznych, które mają być zbierane, zaznacz pole wyboru **Włącz \<log type\> transfer dla** .
@@ -215,7 +214,7 @@ Po zebraniu danych diagnostycznych dla usługi w chmurze lub maszyny wirtualnej 
     Aby natychmiast zaktualizować dane, wybierz łącze **Odśwież** . Aby automatycznie aktualizować dane, wybierz interwał w polu listy rozwijanej **automatyczne odświeżanie** . Aby wyeksportować dane błędu, wybierz przycisk **Eksportuj do pliku CSV** , aby utworzyć plik z wartościami rozdzielanymi przecinkami, który można otworzyć w arkuszu programu Excel.
 
     W programie Cloud Explorer lub Eksplorator serwera Otwórz konto magazynu skojarzone ze wdrożeniem.
-3. Otwórz tabele diagnostyki w przeglądarce tabel, a następnie przejrzyj zebrane dane. W przypadku dzienników usług IIS i dzienników niestandardowych można otworzyć kontener obiektów BLOB. W poniższej tabeli wymieniono tabele lub kontenery obiektów blob zawierające dane dla różnych plików dziennika. Oprócz danych dla tego pliku dziennika, wpisy tabeli zawierają **EventTickCount**, **DeploymentId**, **role**i **RoleInstance**, aby ułatwić identyfikację, która maszyna wirtualna i rola wygenerowała dane oraz kiedy.
+3. Otwórz tabele diagnostyki w przeglądarce tabel, a następnie przejrzyj zebrane dane. W przypadku dzienników usług IIS i dzienników niestandardowych można otworzyć kontener obiektów BLOB. W poniższej tabeli wymieniono tabele lub kontenery obiektów blob zawierające dane dla różnych plików dziennika. Oprócz danych dla tego pliku dziennika, wpisy tabeli zawierają **EventTickCount**, **DeploymentId**, **role** i **RoleInstance**, aby ułatwić identyfikację, która maszyna wirtualna i rola wygenerowała dane oraz kiedy.
 
    | Dane diagnostyczne | Opis | Lokalizacja |
    | --- | --- | --- |
@@ -278,7 +277,7 @@ Sygnatury czasowe znajdują się w lokalnej strefie czasowej centrum danych, kt�
 
 **Jak mogę zarządzać kosztami podczas zbierania informacji diagnostycznych?**
 
-Ustawienia domyślne (**poziom dziennika** ustawiony na **błąd**i **okres transferu** ustawiony na **1 minutę**) zostały zaprojektowane w celu zminimalizowania kosztów. Koszty obliczeń zwiększają się w przypadku zbierania większej ilości danych diagnostycznych lub zmniejszenia okresu transferu. Nie Zbieraj więcej danych niż jest to potrzebne i nie zapomnij, aby wyłączyć zbieranie danych, gdy nie jest już potrzebne. Zawsze można włączyć ją ponownie, nawet w czasie wykonywania, zgodnie z opisem we wcześniejszej części tego artykułu.
+Ustawienia domyślne (**poziom dziennika** ustawiony na **błąd** i **okres transferu** ustawiony na **1 minutę**) zostały zaprojektowane w celu zminimalizowania kosztów. Koszty obliczeń zwiększają się w przypadku zbierania większej ilości danych diagnostycznych lub zmniejszenia okresu transferu. Nie Zbieraj więcej danych niż jest to potrzebne i nie zapomnij, aby wyłączyć zbieranie danych, gdy nie jest już potrzebne. Zawsze można włączyć ją ponownie, nawet w czasie wykonywania, zgodnie z opisem we wcześniejszej części tego artykułu.
 
 **Jak mogę zbierać Dzienniki żądań zakończonych niepowodzeniem z usług IIS?**
 

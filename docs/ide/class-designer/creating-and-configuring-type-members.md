@@ -1,5 +1,7 @@
 ---
 title: Tworzenie i konfigurowanie typów członków (Projektant klas)
+description: Dowiedz się, jak dodać członków do typów na diagramie klas i skonfigurować te elementy członkowskie w oknie Szczegóły klasy.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -29,12 +31,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bb65cc70bfec5e8eafc4a823d24f609166d4327
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 504488bdd08e80c34ebeed727e7b95badf12ca37
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85771052"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903017"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Utwórz i skonfiguruj elementy członkowskie typu w Projektant klas
 
@@ -98,7 +100,7 @@ Można utworzyć element członkowski, używając dowolnego z następujących na
 
      Typ uzyskuje fokus i jego zawartość jest wyświetlana w oknie **Szczegóły klasy** .
 
-2. Na pasku narzędzi okna **Szczegóły klasy** Kliknij górną ikonę i wybierz pozycję **Nowy \<member> ** z listy rozwijanej.
+2. Na pasku narzędzi okna **Szczegóły klasy** Kliknij górną ikonę i wybierz pozycję **Nowy \<member>** z listy rozwijanej.
 
      Kursor zostanie przeniesiony do pola **Nazwa** w wierszu dla rodzaju elementu członkowskiego, który chcesz dodać. Jeśli na przykład klikniesz pozycję **Nowa właściwość**, kursor przejdzie do nowego wiersza w sekcji **Właściwości** okna **Szczegóły klasy** .
 
@@ -131,7 +133,7 @@ Projektant klas umożliwia modyfikowanie składowych typów, które są wyświet
 
 Wszystkie elementy członkowskie wyświetlane w oknie **Szczegóły klasy** reprezentują elementy członkowskie typów na diagramie klas. Istnieją cztery rodzaje elementów członkowskich: metody, właściwości, pola i zdarzenia.
 
-Wszystkie wiersze elementów członkowskich pojawiają się pod nagłówkami, które grupują elementy członkowskie według rodzaju. Na przykład wszystkie właściwości są wyświetlane pod **właściwościami**nagłówka, które jako węzeł w siatce mogą być zwinięte lub rozwinięte.
+Wszystkie wiersze elementów członkowskich pojawiają się pod nagłówkami, które grupują elementy członkowskie według rodzaju. Na przykład wszystkie właściwości są wyświetlane pod **właściwościami** nagłówka, które jako węzeł w siatce mogą być zwinięte lub rozwinięte.
 
 Każdy wiersz elementu członkowskiego zawiera następujące elementy:
 
@@ -163,7 +165,7 @@ Każdy wiersz elementu członkowskiego zawiera następujące elementy:
 
 - **Podsumowanie**
 
-     Komórka **Podsumowanie** uwidacznia podsumowanie informacji o elemencie członkowskim. Kliknij wielokropek w komórce **Podsumowanie** , aby wyświetlić lub edytować informacje o **podsumowaniu**, **zwracanym typie**i **uwagach** dla elementu członkowskiego.
+     Komórka **Podsumowanie** uwidacznia podsumowanie informacji o elemencie członkowskim. Kliknij wielokropek w komórce **Podsumowanie** , aby wyświetlić lub edytować informacje o **podsumowaniu**, **zwracanym typie** i **uwagach** dla elementu członkowskiego.
 
 - **Ukryj**
 
@@ -198,7 +200,7 @@ Wiersze parametrów zawierają następujące elementy:
 
 - **Modyfikator**
 
-     Komórka **modyfikująca** w wierszu parametru akceptuje i wyświetla nowy modyfikator parametru. Aby wprowadzić nowy modyfikator parametrów, użyj pola listy rozwijanej, aby wybrać opcję **Brak**, **ref**, **out**lub **params** w języku C#, a **ByVal**, **ByRef**lub **ParamArray** w języku VB.
+     Komórka **modyfikująca** w wierszu parametru akceptuje i wyświetla nowy modyfikator parametru. Aby wprowadzić nowy modyfikator parametrów, użyj pola listy rozwijanej, aby wybrać opcję **Brak**, **ref**, **out** lub **params** w języku C#, a **ByVal**, **ByRef** lub **ParamArray** w języku VB.
 
 - **Podsumowanie**
 
@@ -206,7 +208,7 @@ Wiersze parametrów zawierają następujące elementy:
 
 - **\<add parameter>**
 
-     Ostatni wiersz parametru elementu członkowskiego zawiera tekst **<Dodaj parametr \> ** w komórce **Nazwa** . Kliknięcie tej komórki pozwala utworzyć nowy parametr. Aby uzyskać więcej informacji, zobacz [Aby dodać parametr do metody](creating-and-configuring-type-members.md#add-parameters-to-methods).
+     Ostatni wiersz parametru elementu członkowskiego zawiera tekst **<Dodaj parametr \>** w komórce **Nazwa** . Kliknięcie tej komórki pozwala utworzyć nowy parametr. Aby uzyskać więcej informacji, zobacz [Aby dodać parametr do metody](creating-and-configuring-type-members.md#add-parameters-to-methods).
 
 W oknie **Właściwości** są wyświetlane te same właściwości parametrów, które są wyświetlane w oknie **Szczegóły klasy** : **Nazwa**, **Typ**, **modyfikator**, **Podsumowanie**, a także **Opcjonalna Właściwość domyślna** . Zmiana właściwości w jednej lokalizacji aktualizuje globalnie wartość właściwości, włącznie z wyświetlaniem jej wartości w innej lokalizacji.
 
@@ -224,7 +226,7 @@ W oknie **Właściwości** są wyświetlane te same właściwości parametrów, 
 
 2. W oknie **Szczegóły klasy** Rozwiń wiersz metody, do której chcesz dodać parametr.
 
-     Pojawia się wiersz parametru z wcięciem, zawierający tylko parę nawiasów i słów ** \<add parameter> .**
+     Pojawia się wiersz parametru z wcięciem, zawierający tylko parę nawiasów i słów **\<add parameter> .**
 
 3. Kliknij **\<add parameter>** , wpisz nazwę nowego parametru, a następnie naciśnij klawisz **Enter**.
 
@@ -240,7 +242,7 @@ W oknie **Właściwości** są wyświetlane te same właściwości parametrów, 
 
 2. W oknie **Szczegóły klasy** Rozwiń wiersz metody, do której chcesz dodać opcjonalny parametr.
 
-     Pojawia się wiersz parametru z wcięciem, zawierający tylko parę nawiasów i słów ** \<add parameter> .**
+     Pojawia się wiersz parametru z wcięciem, zawierający tylko parę nawiasów i słów **\<add parameter> .**
 
 3. Kliknij **\<add parameter>** , wpisz nazwę nowego parametru, a następnie naciśnij klawisz **Enter**.
 
@@ -305,7 +307,7 @@ Projekt może być tylko do odczytu z przyczyn innych niż kontrola kodu źród�
 
 **Typy tylko do odczytu**
 
-W przypadku próby zapisania projektu zawierającego typ, którego plik kodu źródłowego jest tylko do odczytu, zostanie wyświetlone okno dialogowe **Zapisywanie pliku tylko do odczytu** , które umożliwia zapisanie pliku pod nową nazwą lub nową lokalizację lub zastąpienie pliku tylko do odczytu. Jeśli plik zostanie zastąpiony, nowa kopia nie będzie już tylko do odczytu.
+W przypadku próby zapisania projektu zawierającego typ, którego plik kodu źródłowego jest tylko do odczytu, zostanie wyświetlone okno dialogowe **Zapisywanie pliku Read-Only** , które umożliwia zapisanie pliku pod nową nazwą lub nową lokalizacją lub zastępowanie pliku tylko do odczytu. Jeśli plik zostanie zastąpiony, nowa kopia nie będzie już tylko do odczytu.
 
 Jeśli plik kodu zawiera błąd składni, kształty wyświetlające kod w tym pliku zostaną tymczasowo ustawione tylko do odczytu, dopóki błąd składni nie zostanie poprawiony. Kształty w tym stanie wyświetlają czerwony tekst i czerwoną ikonę, która wyświetla etykietkę z napisem „plik kodu źródłowego zawiera błąd analizy składni”.
 
@@ -317,7 +319,7 @@ Nie można edytować metod częściowych przy użyciu Projektant klas lub okna *
 
 Nie można edytować natywnego kodu C++ przy użyciu Projektant klas lub okna **Szczegóły klasy** ; Aby edytować natywny kod C++, należy użyć edytora kodu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Wyświetlanie typów i relacji](designing-and-viewing-classes-and-types.md)
 - [Refaktoryzacja klas i typów](refactoring-classes-and-types.md)

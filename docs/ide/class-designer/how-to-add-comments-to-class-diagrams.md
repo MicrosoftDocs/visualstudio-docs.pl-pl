@@ -1,5 +1,7 @@
 ---
 title: 'Porady: dodawanie komentarzy do diagramów klasy (Projektant klas)'
+description: Dowiedz się, jak używać kształtów komentarzy do dodawania adnotacji do diagramów klas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8e7514e8ab55697bdfc01f58c5ceffe4228721c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b146efb27bb76d91b7453d574bda6d79d53a68a
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85771018"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901677"
 ---
 # <a name="how-to-add-comments-to-class-diagrams"></a>Instrukcje: Dodawanie komentarzy do diagramów klas
 
@@ -35,7 +37,7 @@ Można zmienić rozmiar kształtu komentarza, ale nie można zmienić innych asp
 
 2. Kliknij nowy kształt komentarza na diagramie i wpisz żądany tekst.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Pracuj z diagramami klas](designing-and-viewing-classes-and-types.md)
 - [Instrukcje: Dostosowywanie diagramów klas](how-to-customize-class-diagrams.md)

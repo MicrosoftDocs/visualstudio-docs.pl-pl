@@ -1,5 +1,7 @@
 ---
 title: 'Porady: tworzenie typu zerowalnego (Projektant klas)'
+description: Dowiedz się, jak utworzyć typ dopuszczający wartość null w Projektant klas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +16,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ad371f987ab7ff0e50dc7d2fe4effeba5205e74e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3e229583b2ff375928ea462ee676e21462157dcb
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770984"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901651"
 ---
 # <a name="how-to-create-a-nullable-type-in-class-designer"></a>Instrukcje: Tworzenie typu dopuszczającego wartość null w Projektant klas
 
@@ -85,7 +87,7 @@ Aby uzyskać więcej informacji na temat typów dopuszczających wartości null 
 
 5. Kliknij prawym przyciskiem myszy kształt klasy, a następnie kliknij pozycję **Szczegóły klasy**. Właściwości nowego typu można wyświetlić lub zmodyfikować w oknie **Szczegóły klasy** .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - <xref:System.Nullable%601>
 - [Typy dopuszczające wartości null](/dotnet/csharp/programming-guide/nullable-types/index)

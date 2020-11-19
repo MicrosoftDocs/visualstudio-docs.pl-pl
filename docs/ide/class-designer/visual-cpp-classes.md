@@ -1,5 +1,7 @@
 ---
 title: Klasy C++ w Projektant klas
+description: Dowiedz się więcej o klasach C++ i sposobach ich obsługi, które mogą mieć wiele relacji dziedziczenia w Projektant klas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d7af49e94045e519e32aacd12ec33a4a31a4c905
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 593ca8ba3edc3c779a0440a35551bf870f20c831
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808132"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901209"
 ---
 # <a name="c-classes-in-class-designer"></a>Klasy C++ w Projektant klas
 
@@ -91,7 +93,7 @@ class Swimmer
 };
 ```
 
-Po wyświetleniu tych deklaracji w diagramie klas nazwa klasy `Swimmer` i jej czysta funkcja wirtualna `swim` są wyświetlane kursywnie w kształcie klasy abstrakcyjnej, wraz z **klasą abstrakcyjną**notacji. Zwróć uwagę, że kształt typu klasy abstrakcyjnej jest taki sam jak w przypadku zwykłej klasy, z tą różnicą, że jej obramowanie jest linią kropkowaną.
+Po wyświetleniu tych deklaracji w diagramie klas nazwa klasy `Swimmer` i jej czysta funkcja wirtualna `swim` są wyświetlane kursywnie w kształcie klasy abstrakcyjnej, wraz z **klasą abstrakcyjną** notacji. Zwróć uwagę, że kształt typu klasy abstrakcyjnej jest taki sam jak w przypadku zwykłej klasy, z tą różnicą, że jej obramowanie jest linią kropkowaną.
 
 Klasa pochodna z abstrakcyjnej klasy bazowej musi przesłonić każdą czystą funkcję wirtualną w klasie podstawowej lub nie można utworzyć wystąpienia klasy pochodnej. Tak więc, na przykład, w przypadku wyprowadzania `Fish` klasy z `Swimmer` klasy, `Fish` należy zastąpić `swim` metodę:
 
@@ -172,7 +174,7 @@ W poniższej tabeli przedstawiono kilka przykładów kanonicznych, wyspecjalizow
 |`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {};`<br /><br /> `class A : C<int> {};`<br /><br /> `class D : C<float> {};`|`A`<br /><br /> Klasa<br /><br /> ->C\<int><br /><br /> `C<int>`<br /><br /> Klasa<br /><br /> `C<T>`<br /><br /> Klasa szablonu<br /><br /> `D`<br /><br /> Klasa<br /><br /> ->C\<float>|
 |`class B {`<br /><br /> `template <class T>`<br /><br /> `T min (const T &a, const T &b);`<br /><br /> `};`|`B`<br /><br /> długości \<T>|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Praca z kodem C++](working-with-visual-cpp-code.md)
 - [Klasy i struktury](/cpp/cpp/classes-and-structs-cpp)

@@ -1,5 +1,7 @@
 ---
 title: 'Porady: wyświetlanie istniejących typów (Projektant klas)'
+description: Dowiedz się, jak wyświetlić istniejący typ i jego elementy członkowskie przez dodanie jego kształtu do diagramu klas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa27489844bc59bc0d4da32440cc1caa74ecbea6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6b4660c4efc7c22431b7c9f0d9180576d524a372
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770011"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901170"
 ---
 # <a name="how-to-view-existing-types-in-class-designer"></a>Instrukcje: wyświetlanie istniejących typów w Projektant klas
 
@@ -31,9 +33,9 @@ Aby zaprojektować nowe typy na diagramach klas, zobacz [jak: Tworzenie typów z
 
 ## <a name="to-see-types-in-a-project-on-a-class-diagram"></a>Aby wyświetlić typy w projekcie na diagramie klasy
 
-1. Z projektu w **Eksplorator rozwiązań**Otwórz istniejący plik diagramu klasy (. CD). Lub jeśli nie istnieje żaden diagram klas, dodaj nowy diagram klas do projektu. Zobacz [jak: dodać diagramy klas do projektów](how-to-add-class-diagrams-to-projects.md).
+1. Z projektu w **Eksplorator rozwiązań** Otwórz istniejący plik diagramu klasy (. CD). Lub jeśli nie istnieje żaden diagram klas, dodaj nowy diagram klas do projektu. Zobacz [jak: dodać diagramy klas do projektów](how-to-add-class-diagrams-to-projects.md).
 
-2. Z projektu w **Eksplorator rozwiązań**przeciągnij plik kodu źródłowego do diagramu klas.
+2. Z projektu w **Eksplorator rozwiązań** przeciągnij plik kodu źródłowego do diagramu klas.
 
     > [!NOTE]
     > Jeśli rozwiązanie ma projekt, który współużytkuje kod w wielu aplikacjach, możesz przeciągnąć pliki lub kod do diagramu klasy tylko z tych źródeł:
@@ -61,7 +63,7 @@ Przy pierwszym wyświetleniu typu na diagramie, jego kształt pojawia się domy�
 
 W **Eksplorator rozwiązań** lub **Widok klasy**, kliknij prawym przyciskiem myszy projekt, a następnie wybierz polecenie **Widok**, a następnie wybierz polecenie **Wyświetl Diagram klas**. Tworzony jest automatycznie wypełniony Diagram klas.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Instrukcje: wyświetlanie dziedziczenia między typami](how-to-view-inheritance-between-types.md)
 - [Instrukcje: Dostosowywanie diagramów klas](how-to-customize-class-diagrams.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Porady: wyświetlanie dziedziczenia pomiędzy typami (Projektant klas)'
+description: Dowiedz się, jak znaleźć relację dziedziczenia między typem podstawowym a jego typami pochodnymi na diagramie klas w Projektant klas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5c35279421ad17e62afe707d62dbc879d03b384
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 82785f1a5cac2185925c63c4d6d224ffd5fd67de
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769910"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901196"
 ---
 # <a name="how-to-view-inheritance-between-types-in-class-designer"></a>Instrukcje: wyświetlanie dziedziczenia między typami w Projektant klas
 
@@ -45,7 +47,7 @@ Możesz również kliknąć prawym przyciskiem myszy typ, którego typ podstawow
 
 Możesz również kliknąć prawym przyciskiem myszy typ, dla którego chcesz zobaczyć typy pochodne, a następnie wybrać **Pokaż klasy pochodne** lub **Pokaż interfejsy pochodne**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Instrukcje: tworzenie skojarzeń między typami](how-to-create-associations-between-types.md)
 - [Wyświetlanie typów i relacji](designing-and-viewing-classes-and-types.md)

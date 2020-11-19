@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3eb912ebb4d8d7d4596a6aae6499ac054d4514ca
-ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
+ms.openlocfilehash: d2ac806b4a83b23a783c59eeee5df801c9237685
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93102509"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94900923"
 ---
 # <a name="intellisense-completion-for-unimported-types-and-extension-methods"></a>Uzupełnianie IntelliSense dla nieimportowanych typów i metod rozszerzających
 
@@ -38,7 +38,7 @@ To Refaktoryzacja dotyczy:
 1. Po rozpoczęciu wpisywania nazwy typu lub metody rozszerzenia, która ma zależność w projekcie, funkcja IntelliSense udzieli sugestii. Elementy z nieimportowanych przestrzeni nazw byłyby wyświetlane jako sufiksy.
 
    > [!TIP]
-   > Można pokazać/ukryć elementy z nieimportowanych przestrzeni nazw na żądanie przy użyciu **przycisku Ekspander (Alt + A)** , który pojawia się w lewym dolnym rogu listy uzupełniania. Aby zmienić zachowanie domyślne, przejdź do pozycji **Narzędzia**  >  **Opcje**  >  **Edytor tekstu**  >  **C#**  /  **podstawowa**  >  **technologia IntelliSense** i Wyszukaj pozycję **Pokaż elementy z nieimportowanych przestrzeni nazw** .
+   > Można pokazać/ukryć elementy z nieimportowanych przestrzeni nazw na żądanie przy użyciu **przycisku Ekspander (Alt + A)** , który pojawia się w lewym dolnym rogu listy uzupełniania. Aby zmienić zachowanie domyślne, przejdź do pozycji **Narzędzia**  >  **Opcje**  >  **Edytor tekstu**  >  **C#**  /  **podstawowa**  >  **technologia IntelliSense** i Wyszukaj pozycję **Pokaż elementy z nieimportowanych przestrzeni nazw**.
 
 2. Wybierz i zatwierdź nieimportowany element.
 
@@ -46,7 +46,7 @@ To Refaktoryzacja dotyczy:
 
    ![Uzupełnianie IntelliSense dla nieimportowanych typów](media/intellisense-completion-unimported-types.png)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [IntelliSense](../using-intellisense.md)
 - [Refaktoryzacja](../refactoring-in-visual-studio.md)

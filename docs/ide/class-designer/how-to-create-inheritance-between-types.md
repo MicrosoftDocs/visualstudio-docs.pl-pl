@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Tworzenie dziedziczenia między typami (Projektant klas)'
+description: Dowiedz się, jak utworzyć relację dziedziczenia między dwoma typami na diagramie klas przy użyciu Projektant klas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1ffae72a3fe171b6bd16cfbc623a777f4d4d2e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 199f220529b28d4ca0c668d30564da65f6553e0e
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770205"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901469"
 ---
 # <a name="how-to-create-inheritance-between-types-in-class-designer"></a>Instrukcje: Tworzenie dziedziczenia między typami w Projektant klas
 
@@ -26,11 +28,11 @@ Aby utworzyć relację dziedziczenia między dwoma typami na diagramie klasy prz
 
 ## <a name="to-create-an-inheritance-between-types"></a>Aby utworzyć dziedziczenie między typami
 
-1. Z projektu w **Eksplorator rozwiązań**Otwórz plik diagramu klasy (. CD).
+1. Z projektu w **Eksplorator rozwiązań** Otwórz plik diagramu klasy (. CD).
 
      Jeśli nie masz diagramu klas, utwórz go. Zobacz [jak: dodać diagramy klas do projektów](how-to-add-class-diagrams-to-projects.md).
 
-2. W **przyborniku**w obszarze **Projektant klas**kliknij pozycję **dziedziczenie**.
+2. W **przyborniku** w obszarze **Projektant klas** kliknij pozycję **dziedziczenie**.
 
 3. Na diagramie klasy należy narysować linię dziedziczenia między typami, które chcesz, zaczynając od:
 
@@ -47,7 +49,7 @@ Aby utworzyć relację dziedziczenia między dwoma typami na diagramie klasy prz
     >
     >  Chociaż można wizualizować istniejące typy ogólne, nie można tworzyć nowych typów ogólnych. Nie można również zmienić parametrów typu dla istniejących typów ogólnych.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Dziedziczenie](/dotnet/csharp/programming-guide/classes-and-structs/inheritance)
 - [Podstawowe informacje o dziedziczeniu](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)

@@ -4,17 +4,16 @@ description: Dowiedz się, jak skonfigurować projekt usługi w chmurze platform
 ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
-assetId: a4fb79ed-384f-4183-9f74-5cac257206b9
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: a811c30114f9a45119eaccc666d6eb39be80a562
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 58d7a967c3a8cf46330c169db1b73bc048a2110c
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399809"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902366"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Konfigurowanie projektu platformy Azure w programie Visual Studio w celu używania wielu konfiguracji usługi
 
@@ -39,7 +38,7 @@ Wybiera `ServiceConfiguration.*.cscfg` plik, na który mają wpływ zmiany. Domy
 
 Ustaw właściwość liczba **wystąpień** na liczbę wystąpień, które usługa powinna uruchomić dla tej roli.
 
-Ustaw właściwość **rozmiar maszyny wirtualnej** na **bardzo małe** , **małe** , **średnie** , **duże** lub **bardzo duże**.  Aby uzyskać więcej informacji, zobacz [Rozmiary usług Cloud Services](/azure/cloud-services/cloud-services-sizes-specs).
+Ustaw właściwość **rozmiar maszyny wirtualnej** na **bardzo małe**, **małe**, **średnie**, **duże** lub **bardzo duże**.  Aby uzyskać więcej informacji, zobacz [Rozmiary usług Cloud Services](/azure/cloud-services/cloud-services-sizes-specs).
 
 ### <a name="startup-action-web-role-only"></a>Akcja uruchamiania (tylko rola sieci Web)
 
@@ -51,7 +50,7 @@ Jeśli dodano już punkt końcowy HTTPS, opcja punktu końcowego HTTPS jest domy
 
 ### <a name="diagnostics"></a>Diagnostyka
 
-Domyślnie Diagnostyka jest włączona dla roli sieci Web. Projekt usługi w chmurze platformy Azure i konto magazynu są ustawione tak, aby używały lokalnego emulatora magazynu. Gdy wszystko będzie gotowe do wdrożenia na platformie Azure, możesz wybrać przycisk konstruktora ( **...** ), aby użyć usługi Azure Storage. Dane diagnostyczne można transferować do konta magazynu na żądanie lub w automatycznie zaplanowanych odstępach czasu. Aby uzyskać więcej informacji na temat diagnostyki platformy Azure, zobacz [Włączanie diagnostyki na platformie azure Cloud Services i Virtual Machines](/azure/cloud-services/cloud-services-dotnet-diagnostics).
+Domyślnie Diagnostyka jest włączona dla roli sieci Web. Projekt usługi w chmurze platformy Azure i konto magazynu są ustawione tak, aby używały lokalnego emulatora magazynu. Gdy wszystko będzie gotowe do wdrożenia na platformie Azure, możesz wybrać przycisk konstruktora (**...**), aby użyć usługi Azure Storage. Dane diagnostyczne można transferować do konta magazynu na żądanie lub w automatycznie zaplanowanych odstępach czasu. Aby uzyskać więcej informacji na temat diagnostyki platformy Azure, zobacz [Włączanie diagnostyki na platformie azure Cloud Services i Virtual Machines](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
 ## <a name="settings-page"></a>Strona Ustawienia
 
@@ -68,14 +67,14 @@ Możesz ustawić parametry połączenia tak, aby używały magazynu lokalnego, a
 
 Aby utworzyć parametry połączenia, wybierz opcję **Dodaj ustawienie** i ustaw **typ** na "parametry połączenia".
 
-W przypadku nowych lub istniejących parametrów połączenia wybierz pozycję **...** _ po prawej stronie pola _ *Value* *, aby otworzyć okno dialogowe **Tworzenie parametrów połączenia magazynu** :
+W przypadku nowych lub istniejących parametrów połączenia wybierz pozycję **...** _ po prawej stronie pola _ *Value**, aby otworzyć okno dialogowe **Tworzenie parametrów połączenia magazynu** :
 
 1. W obszarze **Połącz przy użyciu** wybierz opcję **subskrypcja** , aby wybrać konto magazynu z subskrypcji. Program Visual Studio następnie automatycznie uzyskuje poświadczenia konta magazynu z `.publishsettings` pliku.
 1. Wybranie pozycji **Ręczne wprowadzanie poświadczeń** pozwala określić nazwę konta i klucz bezpośrednio przy użyciu informacji z Azure Portal. Aby skopiować klucz konta:
     1. Przejdź do konta magazynu na Azure Portal a następnie wybierz pozycję **Zarządzaj kluczami**.
-    1. Aby skopiować klucz konta, przejdź do konta magazynu w Azure Portal, wybierz pozycję **ustawienia > klucze dostępu** , a następnie użyj przycisku kopiowania, aby skopiować podstawowy klucz dostępu do Schowka.
+    1. Aby skopiować klucz konta, przejdź do konta magazynu w Azure Portal, wybierz pozycję **ustawienia > klucze dostępu**, a następnie użyj przycisku kopiowania, aby skopiować podstawowy klucz dostępu do Schowka.
 1. Wybierz jedną z opcji połączenia. **Określ niestandardowe punkty końcowe** z prośbą o określenie określonych adresów URL dla obiektów blob, tabel i kolejek. Niestandardowe punkty końcowe umożliwiają korzystanie z [domen niestandardowych](/azure/storage/blobs/storage-custom-domain-name) i precyzyjne kontrolowanie dostępu. Zobacz [Konfigurowanie parametrów połączenia usługi Azure Storage](/azure/storage/common/storage-configure-connection-string).
-1. Wybierz przycisk **OK** , a następnie **plik > Zapisz** , aby zaktualizować konfigurację przy użyciu nowych parametrów połączenia.
+1. Wybierz przycisk **OK**, a następnie **plik > Zapisz** , aby zaktualizować konfigurację przy użyciu nowych parametrów połączenia.
 
 Po opublikowaniu aplikacji na platformie Azure wybierz konfigurację usługi, która zawiera konto usługi Azure Storage dla parametrów połączenia. Po opublikowaniu aplikacji Sprawdź, czy aplikacja działa zgodnie z oczekiwaniami w odniesieniu do usług Azure Storage.
 
@@ -86,7 +85,7 @@ Więcej informacji o sposobach aktualizowania konfiguracji usługi znajduje się
 Rola sieci Web zazwyczaj ma jeden punkt końcowy HTTP na porcie 80. Rola procesu roboczego, z drugiej strony, może mieć dowolną liczbę punktów końcowych HTTP, HTTPS lub TCP. Punkty końcowe mogą być wejściowymi punktami końcowymi, które są dostępne dla klientów zewnętrznych lub wewnętrznych punktów końcowych, które są dostępne dla innych ról uruchomionych w usłudze.
 
 - Aby udostępnić punkt końcowy HTTP klientom zewnętrznym i przeglądarkom sieci Web, Zmień typ punktu końcowego na wejściowy, a następnie podaj nazwę i numer portu publicznego.
-- Aby udostępnić punkt końcowy HTTPS klientom zewnętrznym i przeglądarkom sieci Web, Zmień typ punktu końcowego na **wejściowy** , a następnie określ nazwę, numer portu publicznego i nazwę certyfikatu zarządzania. Należy również zdefiniować certyfikat na stronie właściwości **Certyfikaty** , aby można było określić certyfikat zarządzania.
+- Aby udostępnić punkt końcowy HTTPS klientom zewnętrznym i przeglądarkom sieci Web, Zmień typ punktu końcowego na **wejściowy**, a następnie określ nazwę, numer portu publicznego i nazwę certyfikatu zarządzania. Należy również zdefiniować certyfikat na stronie właściwości **Certyfikaty** , aby można było określić certyfikat zarządzania.
 - Aby udostępnić punkt końcowy dla dostępu wewnętrznego przez inne role w usłudze w chmurze, Zmień typ punktu końcowego na wewnętrzny i określ nazwę i możliwe porty prywatne dla tego punktu końcowego.
 
 ## <a name="local-storage-page"></a>Strona magazynu lokalnego
