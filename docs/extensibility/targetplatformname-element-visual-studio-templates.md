@@ -1,5 +1,7 @@
 ---
 title: TargetPlatformName, element (szablony Visual Studio) | Microsoft Docs
+description: Dowiedz się więcej na temat elementu TargetPlatformName i sposobu określania platformy, do której odwołuje się szablon projektu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db5e9d4f44af242e76bd446a25d3bbc533b56854
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5b8f81ad86c98ab31e8f5d5dddf0efa1b2c89d85
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699266"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903991"
 ---
 # <a name="targetplatformname-element-visual-studio-templates"></a>TargetPlatformName, element (szablony Visual Studio)
 Określa platformę, do której należy szablon projektu. Ten element służy do określenia, że szablon projektu jest używany do tworzenia [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplikacji.
@@ -64,6 +66,6 @@ Określa platformę, do której należy szablon projektu. Ten element służy do
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)
 - [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

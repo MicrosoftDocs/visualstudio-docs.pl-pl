@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Definiowanie deskryptora typu dla parametru | Microsoft Docs'
+description: Dowiedz się, jak zdefiniować deskryptor typu dla metody w modelu łączności danych biznesowych (BDC).
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0b3ae803576c98a86a45d175af45aa28b3852134
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8044f04902e74b2597d6cf331e54eb4a6138817a
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016845"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903601"
 ---
 # <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Instrukcje: Definiowanie deskryptora typu dla parametru
   Deskryptor typu zawiera właściwości opisujące typ danych parametru. Deskryptor typu może definiować pole, jednostkę lub kolekcję jednostek. Aby uzyskać więcej informacji, zobacz [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\)).
@@ -71,7 +73,7 @@ ms.locfileid: "86016845"
 
      Zostanie otwarte okno **Eksplorator BDC** .
 
-4. W **Eksploratorze BDC**Otwórz menu skrótów deskryptora typu, a następnie wybierz **Dodaj deskryptor typu**.
+4. W **Eksploratorze BDC** Otwórz menu skrótów deskryptora typu, a następnie wybierz **Dodaj deskryptor typu**.
 
      Nowy deskryptor typu jest dodawany jako element podrzędny do deskryptora typu jednostki. Skonfiguruj ten deskryptor typu jako pole.
 
@@ -113,11 +115,11 @@ ms.locfileid: "86016845"
 
     Zostanie otwarte okno **Eksplorator BDC** .
 
-7. W **Eksploratorze BDC**Otwórz menu skrótów deskryptora typu, a następnie wybierz **Dodaj deskryptor typu**.
+7. W **Eksploratorze BDC** Otwórz menu skrótów deskryptora typu, a następnie wybierz **Dodaj deskryptor typu**.
 
     Nowy deskryptor typu jest dodawany jako element podrzędny do deskryptora typu kolekcji. Skonfiguruj ten deskryptor typu jako jednostkę.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Omówienie narzędzi projektowania modelu BDC](../sharepoint/bdc-model-design-tools-overview.md)
 - [Instrukcje: Dodawanie jednostki do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md)
 - [Instrukcje: Dodawanie parametru do metody](../sharepoint/how-to-add-a-parameter-to-a-method.md)

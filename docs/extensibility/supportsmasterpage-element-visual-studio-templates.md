@@ -1,5 +1,7 @@
 ---
 title: SupportsMasterPage —, element (szablony Visual Studio) | Microsoft Docs
+description: Dowiedz się więcej o elemencie SupportsMasterPage — i sposobie jego określania, czy pole wyboru Wybierz stronę wzorcową jest włączone w oknie dialogowym Dodaj nowy element.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 384672303d00b72431820b98fa02d09e440a1de5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07230c3a9b76be8d78e22acaa83addd0fa21005a
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699450"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903835"
 ---
 # <a name="supportsmasterpage-element-visual-studio-templates"></a>SupportsMasterPage — Element (szablony Visual Studio)
 Określa, czy pole wyboru **Wybierz stronę wzorcową** jest włączone w oknie dialogowym **Dodaj nowy element** .
@@ -83,6 +85,6 @@ Określa, czy pole wyboru **Wybierz stronę wzorcową** jest włączone w oknie 
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)

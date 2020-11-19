@@ -1,6 +1,8 @@
 ---
 title: Zdalne wdrażanie, publikowanie & Uaktualnianie rozwiązań SharePoint
 titleSuffix: ''
+description: Wdrażaj, Publikuj i uaktualniaj rozwiązania programu SharePoint w trybie piaskownicy w zdalnej witrynie lub lokalnej witrynie programu SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,19 +18,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5de5128ff19472390e65aa5d9a437aee269ff897
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: db476af4a9d3be9cab2109fb3489d0767765075f
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585787"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903575"
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Instrukcje: wdrażanie, publikowanie i uaktualnianie rozwiązań SharePoint na serwerze zdalnym
   Oprócz wdrażania rozwiązań programu SharePoint w systemie lokalnym można publikować rozwiązania programu SharePoint w trybie piaskownicy w witrynach zdalnych lub lokalnych witrynach programu SharePoint. Proces publikowania zdalnego kopiuje plik *. wsp* do serwera programu SharePoint, instaluje rozwiązanie, a następnie umożliwia aktywowanie rozwiązania. Możesz również uaktualnić zdalną instalację rozwiązania SharePoint po wprowadzeniu zmian.
 
 ## <a name="to-publish-a-sandboxed-sharepoint-solution-to-a-remote-sharepoint-server"></a>Aby opublikować rozwiązanie SharePoint w trybie piaskownicy na zdalnym serwerze programu SharePoint
 
-1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu programu SharePoint w trybie piaskownicy, który chcesz opublikować, a następnie wybierz polecenie **Publikuj**.
+1. W **Eksplorator rozwiązań** Otwórz menu skrótów dla projektu programu SharePoint w trybie piaskownicy, który chcesz opublikować, a następnie wybierz polecenie **Publikuj**.
 
 2. W oknie dialogowym **Publikowanie** wybierz przycisk opcji **Publikuj w witrynie SharePoint** , a następnie wprowadź adres URL dla witryny publikacji online, na przykład: `https://mytestsite.sharepoint.microsoftonline.com` .
 
@@ -51,11 +53,11 @@ ms.locfileid: "91585787"
 
 1. Zmień nazwę pakietu programu SharePoint w programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . W tym celu w **Eksplorator rozwiązań** otworzyć pakiet. Jest on wyświetlany w **Eksploratorze pakietów**.
 
-2. W **Eksploratorze pakietów**w polu **Nazwa** Zmień nazwę pakietu na unikatową.
+2. W **Eksploratorze pakietów** w polu **Nazwa** Zmień nazwę pakietu na unikatową.
 
 3. Zapisz projekt.
 
-4. W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu, a następnie wybierz polecenie **Publikuj**.
+4. W **Eksplorator rozwiązań** Otwórz menu skrótów dla projektu, a następnie wybierz polecenie **Publikuj**.
 
 5. W oknie dialogowym **Publikowanie** wybierz przycisk opcji **Publikuj w witrynie programu SharePoint** , a następnie, jeśli brakuje adresu URL serwera zdalnego, na którym zapisano rozwiązanie, wprowadź je.
 
@@ -75,7 +77,7 @@ ms.locfileid: "91585787"
 
      Stara wersja rozwiązania została zdezaktywowana, Nowa wersja rozwiązania zostanie uaktualniona przy użyciu danych przechowywanych ze starego rozwiązania, a nowe rozwiązanie zostanie aktywowane w programie SharePoint.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Instrukcje: wdrażanie i publikowanie rozwiązania SharePoint w lokalnej witrynie programu SharePoint](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)
 - [Tworzenie pakietów rozwiązania SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)
 - [Instrukcje: Dostosowywanie pakietu rozwiązania SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)

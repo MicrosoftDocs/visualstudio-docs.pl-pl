@@ -1,5 +1,7 @@
 ---
 title: Dodawanie obsługi edytora dla innych języków
+description: Dowiedz się, jak edytor programu Visual Studio obsługuje odczytywanie i nawigowanie w różnych językach komputerowych oraz jak można dodać obsługę innych języków.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c6761e74e68bad1ef800246d400c79b9689a18c
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 7bf84f4e48b9f070b3cebed4c2e17e5fc07992e3
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809075"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903900"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Dodaj obsługę edytora programu Visual Studio dla innych języków
 
@@ -43,7 +45,7 @@ Program Visual Studio obecnie zapewnia kolorowanie składni i obsługę uzupełn
 - Rust
 - Visual Basic
 - Clojure
-- Przejdź
+- Go
 - JavaDoc
 - Objective-C
 - ShaderLab
@@ -116,7 +118,7 @@ W systemie Windows *% USERPROFILE%* jest rozpoznawany jako ścieżka *: \\ \<use
 
 Aby uzyskać szczegółowe informacje na temat tworzenia gramatyki Details, zobacz detailion [-Introduction to Languages](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) i [uwagi na temat tworzenia gramatyki języka i motywu niestandardowego dla pakietu](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle)details.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Dodawanie rozszerzenia Language Server Protocol](../extensibility/adding-an-lsp-extension.md)
 - [Przewodnik: tworzenie fragmentu kodu](../ide/walkthrough-creating-a-code-snippet.md)

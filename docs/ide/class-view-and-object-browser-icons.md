@@ -1,5 +1,7 @@
 ---
 title: Widok klas i Przeglądarka obiektów ― Ikony
+description: Dowiedz się więcej na temat Widok klasy i Przeglądarka obiektów wyświetlania ikon, które reprezentują jednostki kodu, na przykład przestrzenie nazw, klasy, funkcje i zmienne.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87bce70f83be2af80f93cf9888432257f6139732
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f8c0cf21d6d9055f183d15728fb63118ffb87e9c
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285152"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94904004"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Widok klasy i Przeglądarka obiektów, ikony
 
@@ -33,13 +35,13 @@ ms.locfileid: "85285152"
 |![Ikona klasy](../ide/media/vxclass_icon.gif)|Klasa|![Symbol operatora](../ide/media/vxoperator_icon.gif)|Operator|
 |![Symbol interfejsu typu lizak](../ide/media/vxinterface_icon.gif)|Interfejs|![Symbol właściwości](../ide/media/vxproperty_icon.gif)|Właściwość|
 |![Symbol struktury](../ide/media/vxstruct_icon.gif)|Struktura|![Ikona pola](../ide/media/vxfield_icon.gif)|Pole lub zmienna|
-|![Symbol Union](../ide/media/vxunion_icon.gif)|Unia|![Symbol zdarzenia](../ide/media/vxevent_icon.gif)|Wydarzenie|
+|![Symbol Union](../ide/media/vxunion_icon.gif)|Unia|![Symbol zdarzenia](../ide/media/vxevent_icon.gif)|Zdarzenie|
 |![Symbol wyliczenia](../ide/media/vxenum_icon.gif)|Wyliczenie|![Ikona stałej](../ide/media/vxconstant_icon.gif)|Stała|
 |![Symbol definicji typu](../ide/media/vxtypedef_icon.gif)|Własne|![Symbol wyliczenia elementu](../ide/media/vxenumitem_icon.gif)|Element Enum|
 |![Symbol modułu programu Visual Studio](../ide/media/vxmodule_icon.gif)|Moduł|![Symbol elementu mapy](../ide/media/vxmapitem_icon.gif)|Element mapy|
 |![Symbol metody rozszerzenia](../ide/media/extensionmethod.gif)|Metoda rozszerzenia|![Symbol deklaracji](../ide/media/vxmethod_icon.gif)|Deklaracja zewnętrzna|
 |![Symbol delegata](../ide/media/vxdelegate_icon.gif)|Delegat|![Ikona błędu dla Widok klasy i Przeglądarka obiektów](../ide/media/erroricon.gif)|Błąd|
-|![Symbol wyjątku](../ide/media/vxexception_icon.gif)|Wyjątek|![Symbol szablonu](../ide/media/vxtemplate_icon.gif)|Szablon|
+|![Symbol wyjątku](../ide/media/vxexception_icon.gif)|Wyjątek|![Symbol szablonu](../ide/media/vxtemplate_icon.gif)|Template|
 |![Symbol mapy](../ide/media/vxmap_icon.gif)|Mapa|![Błąd znaku wykrzyknika](../ide/media/vxerror_icon.gif)|Nieznany|
 |![Symbol przesyłania dalej typu](../ide/media/ob_type_forward.gif)|Przekazywanie typu|||
 
@@ -64,6 +66,6 @@ Poniższe ikony sygnałów mają zastosowanie do wszystkich poprzednich ikon i w
 > [!NOTE]
 > Jeśli projekt jest uwzględniony w bazie danych kontroli źródła, można wyświetlić dodatkowe ikony sygnałów wskazujące stan kontroli źródła, na przykład zaewidencjonowano lub wyewidencjonowany.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Wyświetlanie struktury kodu](../ide/viewing-the-structure-of-code.md)

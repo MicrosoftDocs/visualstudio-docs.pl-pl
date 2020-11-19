@@ -1,5 +1,7 @@
 ---
 title: Praca z kodem C++ (Projektant klas)
+description: Dowiedz się, jak używać diagramów klas do projektowania i wizualizacji elementu kodu C++, klas i innych typów w projekcie.
+ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 54087a719b0079ba32ff08ff1e08ad01f5e64ed0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c3509f625686f97156efe79f5e1b72aa991ce5ca
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596752"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903887"
 ---
 # <a name="work-with-c-code-in-class-designer"></a>Współpraca z kodem C++ w Projektant klas
 
@@ -108,7 +110,7 @@ Pomoc dotyczącą rozwiązywania problemów i ostrzeżeń można znaleźć w pub
 
 - **Projektant klas** nie może wyświetlić typów, które są puste lub które pochodzą od typu void.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Projektowanie i wyświetlanie klas i typów](designing-and-viewing-classes-and-types.md)
 - [Dodatkowe informacje na temat błędów Projektanta klas](additional-information-about-errors.md)

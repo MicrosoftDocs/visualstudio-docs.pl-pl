@@ -1,6 +1,8 @@
 ---
 title: Wdróż & publikowanie rozwiązania SharePoint w lokalnej witrynie programu SharePoint
 titleSuffix: ''
+description: Zapoznaj się z tematem Wdrażanie lub publikowanie rozwiązań programu SharePoint na lokalnym serwerze programu SharePoint na komputerze deweloperskim.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,19 +16,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 78a837cc7145187fbc529e6e86cc27f88dd81f51
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 65683544f345a2378fdec559f582985ffec7bc43
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585800"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903588"
 ---
 # <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>Instrukcje: wdrażanie i publikowanie rozwiązania SharePoint w lokalnej witrynie programu SharePoint
   Rozwiązania programu SharePoint można wdrożyć lub opublikować na lokalnym serwerze programu SharePoint na komputerze deweloperskim. Proces wdrażania kopiuje plik *. wsp* do serwera programu SharePoint, instaluje rozwiązanie, a następnie aktywuje te funkcje. Proces publikowania kopiuje tylko plik *wsp* na serwer programu SharePoint i instaluje go. Należy ją uaktywnić ręcznie, aby włączyć ją w programie SharePoint.
 
 ## <a name="to-deploy-a-sharepoint-solution-to-the-local-sharepoint-server"></a>Aby wdrożyć rozwiązanie SharePoint na lokalnym serwerze programu SharePoint
 
-1. W **Eksplorator rozwiązań**wybierz projekt, który chcesz wdrożyć.
+1. W **Eksplorator rozwiązań** wybierz projekt, który chcesz wdrożyć.
 
 2. Na pasku menu wybierz **kompilacja**, **Wdróż rozwiązanie**.
 
@@ -34,7 +36,7 @@ ms.locfileid: "91585800"
 
 ## <a name="to-publish-a-sharepoint-solution-to-a-local-sharepoint-server"></a>Aby opublikować rozwiązanie SharePoint na lokalnym serwerze programu SharePoint
 
-1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu programu SharePoint, który chcesz opublikować, a następnie wybierz polecenie **Publikuj**.
+1. W **Eksplorator rozwiązań** Otwórz menu skrótów dla projektu programu SharePoint, który chcesz opublikować, a następnie wybierz polecenie **Publikuj**.
 
 2. W oknie dialogowym **Publikowanie** wybierz przycisk opcji **Publikuj w systemie plików** .
 
@@ -42,7 +44,7 @@ ms.locfileid: "91585800"
 
      Postęp publikowania pojawia się w oknie **danych wyjściowych** programu Visual Studio. Po zakończeniu procesu na lokalnym serwerze programu SharePoint jest instalowany plik rozwiązania (*wsp*). Jednak nadal musi być aktywowany, aby można go było używać w programie SharePoint. Jeśli plik rozwiązania już istnieje, wystąpi błąd i pyta, czy chcesz zastąpić istniejący plik. Informacje o uaktualnianiu pakietu znajdują się w sekcji dotyczącej uaktualniania pakietów zdalnych w artykule [jak: wdrażanie, publikowanie i uaktualnianie rozwiązań SharePoint na serwerze zdalnym](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Instrukcje: wdrażanie, publikowanie i uaktualnianie rozwiązań SharePoint na serwerze zdalnym](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md)
 - [Tworzenie pakietów rozwiązania SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)
 - [Instrukcje: Dostosowywanie pakietu rozwiązania SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)

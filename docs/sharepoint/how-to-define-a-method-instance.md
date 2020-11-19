@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Definiowanie wystąpienia metody | Microsoft Docs'
+description: Dowiedz się, jak zdefiniować wystąpienie metody dla metody w modelu łączności danych biznesowych (BDC).
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 170982a5d4abe33ca8cd705a979acc0737185a9c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 751683873d98e6c7aedc7228e0a91fb59117993b
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016828"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903627"
 ---
 # <a name="how-to-define-a-method-instance"></a>Instrukcje: Definiowanie wystąpienia metody
   Należy zdefiniować co najmniej jedno wystąpienie metody dla każdej metody w modelu.
@@ -35,11 +37,11 @@ ms.locfileid: "86016828"
 
      Nowe wystąpienie metody pojawi się poniżej węzła **Instances** .
 
-3. Na pasku menu wybierz **View**  >  **okno właściwości**widoku.
+3. Na pasku menu wybierz **View**  >  **okno właściwości** widoku.
 
 4. W oknie **Właściwości** ustaw właściwości wystąpienia metody. Aby uzyskać więcej informacji na temat każdej właściwości, zobacz element [MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14)).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Omówienie narzędzi projektowania modelu BDC](../sharepoint/bdc-model-design-tools-overview.md)
 - [Instrukcje: Dodawanie jednostki do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md)
 - [Instrukcje: Dodawanie parametru do metody](../sharepoint/how-to-add-a-parameter-to-a-method.md)

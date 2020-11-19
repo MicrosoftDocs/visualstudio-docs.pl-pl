@@ -1,6 +1,8 @@
 ---
 title: Tworzenie funkcji walidacji pakietu dla rozwiązań SharePoint
 titleSuffix: ''
+description: Utwórz niestandardowe reguły walidacji, aby zweryfikować pakiet rozwiązania wygenerowany przez program Visual Studio lub aby sprawdzić całą funkcję.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7ac718d16383448ea13f01ad367d97f917bb42ed
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 8f76abeee6ace851025a29ce6d85b894bf479dfa
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585826"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903692"
 ---
 # <a name="create-feature-and-package-validations-for-sharepoint-solutions"></a>Tworzenie funkcji walidacji pakietu dla rozwiązań SharePoint
 
@@ -59,5 +61,5 @@ ms.locfileid: "91585826"
 ## <a name="deploy-the-extension"></a>Wdróż rozszerzenie
  Aby wdrożyć rozszerzenie, Utwórz [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] pakiet rozszerzenia (VSIX) dla zestawu i wszystkie inne pliki, które chcesz dystrybuować z rozszerzeniem. Aby uzyskać więcej informacji, zobacz [Wdrażanie rozszerzeń dla narzędzi programu SharePoint w programie Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Rozszerzona pakowanie i wdrażanie programu SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)

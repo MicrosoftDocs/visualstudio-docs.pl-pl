@@ -1,5 +1,7 @@
 ---
 title: Tworzenie pakietu rozwiązania SharePoint przy użyciu zadań MSBuild
+description: Dowiedz się, jak kompilować, czyścić i sprawdzać pakiet rozwiązań programu SharePoint (wsp) przy użyciu zadań MSBuild wiersza polecenia na komputerze deweloperskim.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c59a38e1153a57c1bd886121eeac244075045a42
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f2979073414434d2b8f5be9d070b6b505c09ee14
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017014"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903731"
 ---
 # <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>Instrukcje: Tworzenie pakietu rozwiązania SharePoint przy użyciu zadań MSBuild
   Można kompilować, czyścić i sprawdzać pakiet programu SharePoint (*. wsp*) przy użyciu zadań MSBuild wiersza polecenia na komputerze deweloperskim. Można również użyć tych poleceń do zautomatyzowania procesu kompilacji przy użyciu Team Foundation Server na komputerze kompilacji.
@@ -105,7 +107,7 @@ ms.locfileid: "86017014"
     msbuild /property:WarningLevel = 2
     ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Tworzenie funkcji programu SharePoint](../sharepoint/creating-sharepoint-features.md)
 - [Instrukcje: Dostosowywanie funkcji programu SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)
 - [Instrukcje: Dodawanie i usuwanie elementów do funkcji programu SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)

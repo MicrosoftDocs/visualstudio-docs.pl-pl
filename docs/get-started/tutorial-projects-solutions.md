@@ -3,19 +3,21 @@ title: Wprowadzenie do projektów i rozwiązań
 description: Dowiedz się więcej o różnicach między projektami i rozwiązaniami oraz sposobami ich używania w programie Visual Studio.
 ms.date: 11/17/2020
 ms.technology: vs-ide-general
-ms.custom: get-started
+ms.custom:
+- get-started
+- SEO-VS-2020
 ms.topic: tutorial
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 026e046e4bcc2291bd27907f10e6ac6a50729601
-ms.sourcegitcommit: f78960320798e2c6b33145cee77a2221f031603c
+ms.openlocfilehash: 8b22695dac3f75b9e90950ee5428bb906436d661
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94878273"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903939"
 ---
 # <a name="learn-about-projects-and-solutions"></a>Informacje o projektach i rozwiązaniach
 

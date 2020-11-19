@@ -1,5 +1,7 @@
 ---
 title: Reference — element (szablony Visual Studio) | Microsoft Docs
+description: Dowiedz się więcej o elemencie Reference i sposobie określania odwołania do zestawu, który ma zostać dodany, gdy element zostanie dodany do projektu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11d893f6268a69172d27a0f7caee707767abfe89
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dcb713a62ebc9a0c3e4daf5aa16f36779b1a1fdc
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701629"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903770"
 ---
 # <a name="reference-element-visual-studio-templates"></a>Reference — element (szablony Visual Studio)
 Określa odwołanie do zestawu, które ma zostać dodane, gdy element zostanie dodany do projektu.
@@ -52,7 +54,7 @@ Określa odwołanie do zestawu, które ma zostać dodane, gdy element zostanie d
 
 |Element|Opis|
 |-------------|-----------------|
-|[Dokumentacja](../extensibility/references-element-visual-studio-templates.md)|Grupuje odwołania zestawu, które szablon dodaje do projektów.|
+|[Odwołania](../extensibility/references-element-visual-studio-templates.md)|Grupuje odwołania zestawu, które szablon dodaje do projektów.|
 
 ## <a name="remarks"></a>Uwagi
  `Reference` jest wymaganym elementem podrzędnym `References` .
@@ -80,6 +82,6 @@ Określa odwołanie do zestawu, które ma zostać dodane, gdy element zostanie d
 </TemplateContent>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)

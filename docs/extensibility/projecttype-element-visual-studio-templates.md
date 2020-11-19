@@ -1,5 +1,7 @@
 ---
 title: ProjectType — element (szablony Visual Studio) | Microsoft Docs
+description: Dowiedz się więcej na temat elementu ProjectType i sposobu kategoryzacji szablonu projektu, tak aby pojawił się w oknie dialogowym Nowy projekt lub Dodaj nowy element.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d794bd5e81e77a892b5a3be38ff73ab805582dd7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2bd457bfb639ff0def2662476e60c8736e14b3ce
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701805"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903822"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>ProjectType — element (szablony Visual Studio)
 Klasyfikuje szablon projektu tak, aby pojawił się pod określoną grupą w oknie dialogowym **Nowy projekt** lub **Dodaj nowy element** .
@@ -95,7 +97,7 @@ Klasyfikuje szablon projektu tak, aby pojawił się pod określoną grupą w okn
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
 - [ProjectSubType, element (szablony Visual Studio)](../extensibility/projectsubtype-element-visual-studio-templates.md)

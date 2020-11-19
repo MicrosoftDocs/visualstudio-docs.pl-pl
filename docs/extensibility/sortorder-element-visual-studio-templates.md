@@ -1,5 +1,7 @@
 ---
 title: SortOrder — Element (szablony Visual Studio) | Microsoft Docs
+description: Dowiedz się więcej na temat elementu SortOrder i sposobu określania wartości, która jest używana do rozmieszczenia szablonu w postaci wyświetlanej w oknie dialogowym Nowy projekt lub Dodaj nowy element.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 935d00335a21d3e129e79ce351e554ea93787447
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f07c3b62d1412564fd74c420b31b2a9fed41d1fa
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699957"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903757"
 ---
 # <a name="sortorder-element-visual-studio-templates"></a>SortOrder — Element (szablony Visual Studio)
 Określa wartość, która jest używana do rozmieszczenia szablonu, między innymi szablonami w tej samej kategorii, jak pojawia się w oknie dialogowym **Nowy projekt** lub **Dodaj nowy element** .
@@ -82,6 +84,6 @@ Określa wartość, która jest używana do rozmieszczenia szablonu, między inn
 
  W tym przykładzie `SortOrder` element jest stosunkowo wysoki. Prawdopodobnie inne [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Szablony elementów będą mieć `SortOrder` wartość niższą niż `290` i pojawią się przed tym szablonem w oknie dialogowym **nowy element** .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)

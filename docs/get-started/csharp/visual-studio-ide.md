@@ -1,8 +1,11 @@
 ---
 title: Przegląd dla deweloperów C#
+description: Dowiedz się więcej na temat zintegrowanego środowiska programistycznego programu Visual Studio i sposobu jego dopasowywania do deweloperów języka C#.
 ms.date: 03/19/2019
 ms.technology: vs-ide-general
-ms.custom: get-started
+ms.custom:
+- get-started
+- SEO-VS-2020
 ms.topic: overview
 author: TerryGLee
 ms.author: tglee
@@ -11,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: ade9dbfb17aa4330b572ac96080117562498a338
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 688a4377b9e4bd6f80d65744955dc84908a18e7a
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85771129"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94904017"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>Witamy w programie Visual Studio IDE | S\#
 
@@ -28,7 +31,7 @@ Skonfigurujmy program Visual Studio tak, aby korzystał z ustawień środowiska,
 
 1. Na pasku menu wybierz kolejno opcje **Narzędzia**  >  **Importuj i Eksportuj ustawienia**.
 
-2. W **Kreatorze importowania i eksportowania ustawień**wybierz pozycję **Zresetuj wszystkie ustawienia** na pierwszej stronie, a następnie wybierz przycisk **dalej**.
+2. W **Kreatorze importowania i eksportowania ustawień** wybierz pozycję **Zresetuj wszystkie ustawienia** na pierwszej stronie, a następnie wybierz przycisk **dalej**.
 
 3. Na stronie **Zapisywanie bieżących ustawień** wybierz opcję zapisania bieżących ustawień, a następnie wybierz przycisk **dalej**. (Jeśli nie dostosowano żadnych ustawień, wybierz pozycję **nie, po prostu Zresetuj ustawienia, zastępując Moje bieżące ustawienia**).
 
@@ -48,7 +51,7 @@ Poznanie programu Visual Studio w następujący sposób wraz z jednym z następu
 > [!div class="nextstepaction"]
 > [Informacje o projektach i rozwiązaniach](../tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - Odkryj [więcej funkcji programu Visual Studio](../../ide/advanced-feature-overview.md)
 - Odwiedź witrynę [VisualStudio.Microsoft.com](https://visualstudio.microsoft.com/vs/)

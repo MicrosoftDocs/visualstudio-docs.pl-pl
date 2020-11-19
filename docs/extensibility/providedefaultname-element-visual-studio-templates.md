@@ -1,5 +1,7 @@
 ---
 title: ProvideDefaultName —, element (szablony Visual Studio) | Microsoft Docs
+description: Dowiedz się więcej o elemencie ProvideDefaultName — i sposobie jego określania, czy program Visual Studio będzie generował domyślną nazwę programu Visual Studio w oknie dialogowym Dodaj nowy element lub nowy projekt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 192716198f605a5f6b4f62730e84dcf83b4229cc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7732c6f02ae5ec086a89bd9ade5c00ea533a68f2
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701715"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903809"
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a>ProvideDefaultName —, element (szablony Visual Studio)
 Określa, czy [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] system projektu będzie generował nazwę domyślną dla szablonu w oknie dialogowym **Dodaj nowy element** lub **Nowy projekt** .
@@ -78,6 +80,6 @@ Określa, czy [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] system p
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)

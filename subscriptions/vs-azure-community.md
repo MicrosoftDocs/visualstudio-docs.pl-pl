@@ -7,12 +7,12 @@ ms.assetid: c15f7e18-b280-4902-a60d-2c2598653207
 ms.date: 11/17/2020
 ms.topic: conceptual
 description: Dowiedz się więcej na temat korzyści z pomocy technicznej dla społeczności platformy Azure zawartych w wybranych subskrypcjach programu Visual Studio.
-ms.openlocfilehash: 285b10670c10b2b2d14af45bfe23e891b08bbb5b
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 21f984d3c41ae4f654fea638792b5db4f3c8acb2
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850536"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903926"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Forum pomocy technicznej platformy Azure w ramach subskrypcji programu Visual Studio
 Uzyskaj pomoc bezpośrednio z zespołu platformy Azure w ramach wybranych forów pomocy technicznej za pośrednictwem społeczności platformy Azure.  Korzyść społeczność platformy Azure zapewnia dostęp do kolekcji forów skoncentrowanych na tematach związanych z platformą Azure.
@@ -70,12 +70,12 @@ Dostępność korzyści społeczności platformy Azure zależy od poziomu subskr
 
 |                                          Poziom subskrypcji                                           |     Kanały      |    Korzyść    | Odnawialny? |
 |-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
-|                           Visual Studio Enterprise (standard), NFR<sup>1</sup>                            | LICENCJONOWANie, Azure, sprzedaż detaliczna |   Jeden rok    |    Tak     |
-|                           Visual Studio Enterprise z usługą GitHub Enterprise                           | LICENCJONOWANie, Azure, sprzedaż detaliczna |   Jeden rok    |    Tak     |
-|                          Visual Studio Professional (standardowa)                          | LICENCJONOWANie, Azure, sprzedaż detaliczna |   Jeden rok    |    Tak     |
-|                          Visual Studio Professional z usługą GitHub Enterprise                          | LICENCJONOWANie, Azure, sprzedaż detaliczna |   Jeden rok    |    Tak     |
-|                              Visual Studio Test Professional (standardowa)                               |    LICENCJONOWANie detaliczne     |   Jeden rok    |    Tak     |
-|                                       Platformy MSDN (standardowa)                                       |    LICENCJONOWANie detaliczne     |   Jeden rok    |    Tak     |
+|                           Visual Studio Enterprise (standard), NFR<sup>1</sup>                            | LICENCJONOWANie, Azure, sprzedaż detaliczna |   Dostępne    |    Tak     |
+|                           Visual Studio Enterprise z usługą GitHub Enterprise                           | LICENCJONOWANie, Azure, sprzedaż detaliczna |   Dostępne    |    Tak     |
+|                          Visual Studio Professional (standardowa)                          | LICENCJONOWANie, Azure, sprzedaż detaliczna |   Dostępne    |    Tak     |
+|                          Visual Studio Professional z usługą GitHub Enterprise                          | LICENCJONOWANie, Azure, sprzedaż detaliczna |   Dostępne    |    Tak     |
+|                              Visual Studio Test Professional (standardowa)                               |    LICENCJONOWANie detaliczne     |   Dostępne    |    Tak     |
+|                                       Platformy MSDN (standardowa)                                       |    LICENCJONOWANie detaliczne     |   Dostępne    |    Tak     |
 | Visual Studio Enterprise (chmura miesięczna), Visual Studio Professional (chmura miesięczna)|        Wszystko        | Niedostępne |     Nie     |
 
 <sup>1</sup>  *obejmuje: nie do odsprzedaży (NFR), Microsoft w pełni, najbardziej cennych profesjonalistów (MVP), regionalnego dyrektora (RD), Visual Studio Industry partner (VSIP), BizSpark, Wyobraź sobie, że firma Microsoft Certified Trainer (MCT)*

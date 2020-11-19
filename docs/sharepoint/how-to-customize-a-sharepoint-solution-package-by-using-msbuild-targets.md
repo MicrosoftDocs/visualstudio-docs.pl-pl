@@ -1,6 +1,8 @@
 ---
 title: Dostosowywanie pakietu rozwiązania SharePoint przy użyciu elementów docelowych programu MSBuild
 titleSuffix: ''
+description: Dostosuj sposób, w jaki program Visual Studio tworzy pliki pakietu rozwiązania SharePoint (wsp) przy użyciu obiektów docelowych MSBuild w wierszu polecenia.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9845f755d184c18b6b5ade4c5504e393edae7b00
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 5aa0afbe685c85d9a005dc621f58f17d396c0236
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585813"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903653"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>Instrukcje: Dostosowywanie pakietu rozwiązania SharePoint przy użyciu elementów docelowych MSBuild
   Za pomocą obiektów docelowych programu MSBuild w wierszu polecenia można dostosować sposób, w jaki program Visual Studio tworzy pliki pakietu SharePoint (*wsp*). Na przykład można dostosować właściwości programu MSBuild, aby zmienić katalog pośredni pakietu i grupy elementów MSBuild, które określają pliki wyliczane.
@@ -44,7 +46,7 @@ ms.locfileid: "91585813"
 
 3. Otwórz projekt, otwórz jego menu skrótów, a następnie wybierz polecenie **Zwolnij projekt**.
 
-4. W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu, a następnie wybierz **Edytuj** * \<ProjectName> . vbproj* lub **Edytuj** * \<ProjectName> . csproj*.
+4. W **Eksplorator rozwiązań** Otwórz menu skrótów dla projektu, a następnie wybierz **Edytuj** *\<ProjectName> . vbproj* lub **Edytuj** *\<ProjectName> . csproj*.
 
 5. Po `Import` wierszu blisko końca pliku projektu Dodaj następujący wiersz.
 
@@ -54,7 +56,7 @@ ms.locfileid: "91585813"
 
 6. Zapisz i zamknij plik projektu.
 
-7. W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu, a następnie wybierz polecenie **Załaduj ponownie projekt**.
+7. W **Eksplorator rozwiązań** Otwórz menu skrótów dla projektu, a następnie wybierz polecenie **Załaduj ponownie projekt**.
 
    Podczas publikowania projektu, komunikat pojawi się w danych wyjściowych przed rozpoczęciem pakowania.
 
@@ -80,5 +82,5 @@ ms.locfileid: "91585813"
 
    Po opublikowaniu projektu komunikat BeforeLayout jest wyświetlany przed rozpoczęciem tworzenia pakietu, a po zakończeniu tworzenia pakietu pojawi się komunikat AfterLayout.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

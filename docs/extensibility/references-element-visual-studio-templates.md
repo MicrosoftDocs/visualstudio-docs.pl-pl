@@ -1,5 +1,7 @@
 ---
 title: References — element (szablony Visual Studio) | Microsoft Docs
+description: Dowiedz się więcej na temat elementu References i sposobu grupowania przez niego odwołań do zestawu, które szablon dodaje do projektów.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef31c5e7550ec7c6e4570d156d364afcf4ad6819
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2576a56bf223fd1b3a1ba4903595cc25144011ec
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701613"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903747"
 ---
 # <a name="references-element-visual-studio-templates"></a>References — element (szablony Visual Studio)
 Grupuje odwołania zestawu, które szablon dodaje do projektów.
@@ -81,6 +83,6 @@ Grupuje odwołania zestawu, które szablon dodaje do projektów.
 </TemplateContent>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
