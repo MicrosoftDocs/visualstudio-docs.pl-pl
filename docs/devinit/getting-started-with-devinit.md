@@ -1,7 +1,7 @@
 ---
 title: Wprowadzenie z devinit
 description: Wprowadzenie do przewodnika dla devinit.
-ms.date: 08/28/2020
+ms.date: 11/18/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 1f66f691bd92c6cc9d315c58225b9345198fe96d
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: d071a49c9996c9f7f161faf676117704fbcbbdcd
+ms.sourcegitcommit: 3b9a8aec34c7e835069f4db5c133dd002028180c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435767"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94937696"
 ---
 # <a name="getting-started-with-devinit"></a>Wprowadzenie z devinit
 
@@ -32,7 +32,9 @@ devinit jest obecnie dostępna tylko w ramach usługi GitHub Codespaces w przypa
 
 Najważniejszym krokiem jest zdefiniowanie środowiska deweloperskiego w [.devinit.jspliku](devinit-json.md). Ten plik będzie używany przez devinit do tworzenia środowiska podczas uruchamiania `devinit init` .
 
-Na potrzeby tego kroku zapoznaj się z instrukcjami podanymi przez kogoś, kto może zacząć korzystać z repozytorium projektu. Czy na przykład należy zainstalować program SQL? Określona wersja platformy .NET Core? I tak dalej. Następnie dla każdej z tych zależności poszukaj odpowiedniego narzędzia devinit na [liście narzędzi](devinit-tool-list.md) i Dodaj je do `.devinit.json` pliku repozytorium. Możesz również zobaczyć wybrane przykłady w [dokumentacji przykładów](sample-readme.md).
+Na potrzeby tego kroku zapoznaj się z instrukcjami podanymi przez kogoś, kto może zacząć korzystać z repozytorium projektu. Czy na przykład należy zainstalować program SQL? Określona wersja platformy .NET Core? I tak dalej. Następnie dla każdej z tych zależności poszukaj odpowiedniego narzędzia devinit na [liście narzędzi](devinit-tool-list.md) i Dodaj je do `.devinit.json` pliku repozytorium.
+
+Możesz również zobaczyć wybrane przykłady w [dokumentacji przykładów](sample-readme.md)lub zapoznaj się z [samouczkiem](tutorial.md).
 
 ## <a name="step-3-enjoy"></a>Krok 3. Ciesz się!
 
