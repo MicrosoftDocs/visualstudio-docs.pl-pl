@@ -20,45 +20,45 @@
   items:
     - name: .NET
       items:
-        - name: Wdrażanie aplikacji .NET Core za pomocą narzędzia publikowania
-          href: /dotnet/core/deploying/deploy-with-vs
-        - name: Tworzenie pakietu aplikacji klasycznej dla sklepu Microsoft Store
-          href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
         - name: Wdrażanie aplikacji systemu Windows na platformie .NET przy użyciu technologii ClickOnce
           href: quickstart-deploy-using-clickonce-folder.md
         - name: Wdrażanie aplikacji klasycznej programu .NET Framework za pomocą technologii ClickOnce
           href: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
+        - name: Tworzenie pakietu instalatora (komputer z systemem Windows)
+          href: deploying-applications-services-and-components.md#create-an-installer-package-windows-desktop
+        - name: Tworzenie pakietu aplikacji klasycznej dla sklepu Microsoft Store >>
+          href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
         - name: Tworzenie aplikacji ClickOnce z wiersza poleceń
           href: building-clickonce-applications-from-the-command-line.md
     - name: ASP.NET
       items:
-        - name: Publikowanie aplikacji platformy ASP.NET Core na platformie Azure
+        - name: Publikowanie aplikacji platformy ASP.NET Core na platformie Azure >>
           href: /aspnet/core/tutorials/publish-to-azure-webapp-using-vs
         - name: Importowanie ustawień publikowania i wdrażanie w usługach IIS
           href: tutorial-import-publish-settings-iis.md
         - name: Importowanie ustawień publikowania i wdrażanie na platformie Azure
           href: tutorial-import-publish-settings-azure.md
-        - name: Ciągłe wdrażanie platformy ASP.NET Core na platformie Azure za pomocą usługi Git
+        - name: Ciągłe wdrażanie platformy ASP.NET Core na platformie Azure za pomocą usługi Git >>
           href: /aspnet/core/publishing/azure-continuous-deployment
     - name: C++
       items:
-        - name: Wdrażanie aplikacji C/C++
-          href: /cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project
-        - name: Tworzenie pakietu aplikacji klasycznej dla sklepu Microsoft Store
+        - name: Tworzenie pakietu instalatora
+          href: deploying-applications-services-and-components.md#create-an-installer-package-windows-desktop
+        - name: Tworzenie pakietu aplikacji klasycznej dla sklepu Microsoft Store >>
           href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
-        - name: Wdrażanie aplikacji C++/CLR za pomocą technologii ClickOnce...
+        - name: Wdrażanie aplikacji C++/CLR za pomocą technologii ClickOnce >>
           href: /cpp/windows/clickonce-deployment-for-visual-cpp-applications
     - name: Platforma UWP
       items:
-        - name: Tworzenie pakietu aplikacji platformy UWP przy użyciu programu Visual Studio
+        - name: Tworzenie pakietu aplikacji platformy UWP przy użyciu programu Visual Studio >>
           href: /windows/uwp/packaging/packaging-uwp-apps
     - name: Node.js
       items:
-        - name: Publikowanie w usłudze App Service w systemie Linux
+        - name: Publikowanie w usłudze App Service w systemie Linux >>
           href: ../javascript/publish-nodejs-app-azure.md
     - name: Python
       items:
-        - name: Publikowanie w usłudze Azure App Service
+        - name: Publikowanie w usłudze Azure App Service >>
           href: ../python/publishing-python-web-applications-to-azure-from-visual-studio.md
 - name: Przewodniki z instrukcjami
   items:
