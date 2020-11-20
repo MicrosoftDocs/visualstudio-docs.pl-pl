@@ -1,5 +1,7 @@
 ---
 title: Windows Communication Foundation i Usługi danych programu WCF
+description: Eksplorowanie usług Windows Communication Foundation (WCF) i Usługi danych programu WCF w programie Visual Studio, dzięki czemu można tworzyć aplikacje rozproszone.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 dev_langs:
@@ -35,12 +37,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c1f24a33a482b1994d0d8667b4fc71cf968e4625
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 983ff598003a4f966b5173dc9ae78dd9aaa16580
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281048"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997904"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Usługi Windows Communication Foundation i usługi danych WCF w programie Visual Studio
 
@@ -163,7 +165,7 @@ W takim przypadku można określić `endpointConfigurationName` jako parametr do
 
 ### <a name="to-find-the-available-endpoints-for-a-wcf-service"></a>Aby znaleźć dostępne punkty końcowe dla usługi WCF
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy plik **app.config** dla projektu, który zawiera odwołanie do usługi, a następnie kliknij polecenie **Otwórz**. Plik jest wyświetlany w edytorze kodu.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy plik **app.config** dla projektu, który zawiera odwołanie do usługi, a następnie kliknij polecenie **Otwórz**. Plik jest wyświetlany w edytorze kodu.
 
 2. Wyszukaj `<Client>` tag w pliku.
 
@@ -186,7 +188,7 @@ Domyślnie, gdy odwołanie do usługi jest dodawane do projektu, jest skonfiguro
 
 ### <a name="to-call-a-service-method-asynchronously"></a>Aby wywołać metodę usługi asynchronicznie
 
-1. W **Eksplorator rozwiązań**wybierz odwołanie do usługi.
+1. W **Eksplorator rozwiązań** wybierz odwołanie do usługi.
 
 2. W menu **projekt** kliknij polecenie **Konfiguruj odwołanie do usługi**.
 
@@ -234,7 +236,7 @@ Aby uniknąć tego problemu, typy w przywoływanych zestawach są domyślnie udo
 
 ### <a name="to-disable-type-sharing-in-a-single-assembly"></a>Aby wyłączyć udostępnianie typu w pojedynczym zestawie
 
-1. W **Eksplorator rozwiązań**wybierz odwołanie do usługi.
+1. W **Eksplorator rozwiązań** wybierz odwołanie do usługi.
 
 2. W menu **projekt** kliknij polecenie **Konfiguruj odwołanie do usługi**.
 
@@ -244,7 +246,7 @@ Aby uniknąć tego problemu, typy w przywoływanych zestawach są domyślnie udo
 
 ### <a name="to-disable-type-sharing-in-all-assemblies"></a>Aby wyłączyć udostępnianie typu we wszystkich zestawach
 
-1. W **Eksplorator rozwiązań**wybierz odwołanie do usługi.
+1. W **Eksplorator rozwiązań** wybierz odwołanie do usługi.
 
 2. W menu **projekt** kliknij polecenie **Konfiguruj odwołanie do usługi**.
 
@@ -261,13 +263,13 @@ Aby uniknąć tego problemu, typy w przywoływanych zestawach są domyślnie udo
 | [Rozwiązywanie problemów z odwołaniami do usługi](../data-tools/troubleshooting-service-references.md) | Przedstawia niektóre typowe błędy, które mogą wystąpić w odniesieniu do usług i sposobach ich zapobiegania. |
 | [Debugowanie usług WCF](../debugger/debugging-wcf-services.md) | Opisuje typowe problemy z debugowaniem i techniki, które mogą wystąpić podczas debugowania usług WCF. |
 | [Przewodnik: Tworzenie wielowarstwowej aplikacji danych](../data-tools/walkthrough-creating-an-n-tier-data-application.md) | Zawiera instrukcje krok po kroku dotyczące tworzenia określonego zestawu danych i rozdzielania kodu TableAdapter i zestawu danych na wiele projektów. |
-| [Konfiguruj odwołanie do usługi — Okno dialogowe](../data-tools/configure-service-reference-dialog-box.md) | Opisuje elementy interfejsu użytkownika okna dialogowego **Konfigurowanie odwołania do usługi** . |
+| [Konfigurowanie odwołania do usługi — okno dialogowe](../data-tools/configure-service-reference-dialog-box.md) | Opisuje elementy interfejsu użytkownika okna dialogowego **Konfigurowanie odwołania do usługi** . |
 
-## <a name="reference"></a>Tematy pomocy
+## <a name="reference"></a>Dokumentacja
 
 - <xref:System.ServiceModel>
 - <xref:System.Data.Services>
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Narzędzia do obsługi danych programu Visual Studio dla platformy .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

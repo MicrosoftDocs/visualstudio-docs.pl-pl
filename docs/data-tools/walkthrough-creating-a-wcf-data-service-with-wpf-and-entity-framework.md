@@ -1,5 +1,7 @@
 ---
 title: Tworzenie usługi danych WCF przy użyciu & WPF Entity Framework
+description: Utwórz usługę danych programu WCF za pomocą WPF i Entity Framework, która jest hostowana w aplikacji sieci Web ASP.NET, a następnie Uzyskuj dostęp do niej z poziomu aplikacji Windows Forms.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9abdeee9a785a8bccf6cbb580c87bae4fa313036
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c8c9ced0b589b28f1cd21de4a862c6f11dc6e03e
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585993"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998268"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Przewodnik: tworzenie usługi danych programu WCF za pomocą struktur WPF i Entity Framework
 W tym instruktażu pokazano, jak utworzyć prostą [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] , która jest hostowana w [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci Web, a następnie uzyskać do niej dostęp z aplikacji Windows Forms.
@@ -43,7 +45,7 @@ W tym instruktażu:
 ## <a name="prerequisites"></a>Wymagania wstępne
 W tym instruktażu jest stosowana SQL Server Express LocalDB i Przykładowa baza danych Northwind.
 
-1. Jeśli nie masz SQL Server Express LocalDB, zainstaluj go na [stronie pobierania SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)lub za pośrednictwem **Instalator programu Visual Studio**. W **Instalator programu Visual Studio**można zainstalować SQL Server Express LocalDB jako część obciążenia **magazynu danych i przetwarzania** lub jako pojedynczy składnik.
+1. Jeśli nie masz SQL Server Express LocalDB, zainstaluj go na [stronie pobierania SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)lub za pośrednictwem **Instalator programu Visual Studio**. W **Instalator programu Visual Studio** można zainstalować SQL Server Express LocalDB jako część obciążenia **magazynu danych i przetwarzania** lub jako pojedynczy składnik.
 
 2. Zainstaluj przykładową bazę danych Northwind, wykonując następujące kroki:
 
@@ -122,7 +124,7 @@ W następnym kroku utworzysz i testujesz usługę danych.
 
      Plik **NorthwindCustomers. svc** pojawi się w **edytorze kodu**.
 
-4. W **edytorze kodu**Znajdź pierwszy `TODO:` komentarz i zastąp go następującym kodem:
+4. W **edytorze kodu** Znajdź pierwszy `TODO:` komentarz i zastąp go następującym kodem:
 
      [!code-vb[WCFDataServiceWalkthrough#1](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework_1.vb)]
      [!code-csharp[WCFDataServiceWalkthrough#1](../data-tools/codesnippet/CSharp/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework_1.cs)]
@@ -158,7 +160,7 @@ W pierwszym kroku dodasz projekt Windows Forms do rozwiązania i ustawisz go jak
 
 3. W polu tekstowym **Nazwa** wprowadź `NorthwindClient` , a następnie wybierz przycisk **OK** .
 
-4. W **Eksplorator rozwiązań**wybierz węzeł projektu **NorthwindClient** .
+4. W **Eksplorator rozwiązań** wybierz węzeł projektu **NorthwindClient** .
 
 5. Na pasku menu wybierz **projekt**, **Ustaw jako projekt startowy**.
 
@@ -178,13 +180,13 @@ W następnym kroku skonfigurujesz źródło danych, aby umożliwić powiązanie 
 
 ### <a name="to-enable-data-binding-to-the-service"></a>Aby utworzyć powiązanie danych z usługą
 
-1. Na pasku menu wybierz opcję **Wyświetl**  >  **inne**  >  **źródła danych**systemu Windows.
+1. Na pasku menu wybierz opcję **Wyświetl**  >  **inne**  >  **źródła danych** systemu Windows.
 
    Zostanie otwarte okno **źródła danych** .
 
 2. W oknie **źródła danych** wybierz przycisk **Dodaj nowe źródło danych** .
 
-3. Na stronie **Wybierz typ źródła danych** w **Kreatorze konfiguracji źródła danych**wybierz **obiekt**, a następnie wybierz przycisk **dalej** .
+3. Na stronie **Wybierz typ źródła danych** w **Kreatorze konfiguracji źródła danych** wybierz **obiekt**, a następnie wybierz przycisk **dalej** .
 
 4. Na stronie **Wybierz obiekty danych** rozwiń węzeł **NorthwindClient** , a następnie rozwiń węzeł **NorthwindClient. ServiceReference1** .
 
@@ -202,7 +204,7 @@ W następnym kroku utworzysz interfejs użytkownika, który wyświetla dane z us
 
 3. Wybierz kontrolkę **customersDataGridView** , a następnie w oknie **Właściwości** ustaw właściwość **Dock** na **Fill**.
 
-4. W **Eksplorator rozwiązań**Otwórz menu skrótów dla węzła **Form1** i wybierz polecenie **Wyświetl kod** , aby otworzyć Edytor kodu, i Dodaj następującą `Imports` `Using` instrukcję lub na początku pliku:
+4. W **Eksplorator rozwiązań** Otwórz menu skrótów dla węzła **Form1** i wybierz polecenie **Wyświetl kod** , aby otworzyć Edytor kodu, i Dodaj następującą `Imports` `Using` instrukcję lub na początku pliku:
 
    ```vb
    Imports NorthwindClient.ServiceReference1
@@ -230,7 +232,7 @@ W następnym kroku utworzysz interfejs użytkownika, który wyświetla dane z us
    }
    ```
 
-6. W **Eksplorator rozwiązań**Otwórz menu skrótów dla pliku **NorthwindCustomers. svc** i wybierz polecenie **Wyświetl w przeglądarce**. Zostanie otwarty program Internet Explorer i zostanie wyświetlony schemat XML dla usługi.
+6. W **Eksplorator rozwiązań** Otwórz menu skrótów dla pliku **NorthwindCustomers. svc** i wybierz polecenie **Wyświetl w przeglądarce**. Zostanie otwarty program Internet Explorer i zostanie wyświetlony schemat XML dla usługi.
 
 7. Skopiuj adres URL z paska adresu przeglądarki Internet Explorer.
 
@@ -247,7 +249,7 @@ W tym kroku dostosowano aplikację w celu filtrowania danych według miasta klie
 
 ### <a name="to-add-filtering-by-city"></a>Aby dodać filtrowanie według miejscowości
 
-1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla węzła **Form1. vb** lub **Form1.cs** i wybierz polecenie **Otwórz**.
+1. W **Eksplorator rozwiązań** Otwórz menu skrótów dla węzła **Form1. vb** lub **Form1.cs** i wybierz polecenie **Otwórz**.
 
 2. Dodaj <xref:System.Windows.Forms.TextBox> kontrolkę i <xref:System.Windows.Forms.Button> kontrolkę z **przybornika** do formularza.
 
@@ -286,7 +288,7 @@ W tym kroku dostosowano aplikację w celu filtrowania danych według miasta klie
 
 6. W polu tekstowym wprowadź wartość **Londyn**, a następnie wybierz przycisk. Zostaną wyświetleni tylko klienci z Londynu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Usługi Windows Communication Foundation i usługi danych WCF w programie Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 - [Instrukcje: Dodawanie, aktualizowanie lub usuwanie odwołania usługi danych programu WCF](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)

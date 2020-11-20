@@ -1,5 +1,6 @@
 ---
 title: Tworzenie zestawu danych z Projektant obiektów Dataset
+description: W tym instruktażu Utwórz zestaw danych przy użyciu Projektant obiektów Dataset. Zapoznaj się z procesem tworzenia nowego projektu i dodawania do niego nowego elementu DataSet.
 ms.custom: SEO-VS-2020
 ms.date: 09/11/2017
 ms.topic: conceptual
@@ -14,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 20cd8bdc4f7d72cd0ed3920f75a4955ee57d2a68
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 1f124a459d55b945cd8dbb480d7e7c22b5de4f3e
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036785"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998034"
 ---
 # <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>Przewodnik: Tworzenie zestawu danych za pomocą Projektant obiektów Dataset
 
@@ -71,7 +72,7 @@ W tym instruktażu jest stosowana SQL Server Express LocalDB i Przykładowa baza
 
 1. W menu **Widok** kliknij **Eksplorator serwera**.
 
-2. W **Eksplorator serwera**kliknij przycisk **Połącz z bazą danych** .
+2. W **Eksplorator serwera** kliknij przycisk **Połącz z bazą danych** .
 
 3. Utwórz połączenie z przykładową bazą danych Northwind.
 
@@ -91,13 +92,13 @@ W tej sekcji wyjaśniono, jak dodać tabele do zestawu danych.
 
 - Przeciągnij tabelę **Orders** z **Eksplorator serwera** na **Projektant obiektów DataSet**.
 
-     Tabela dane **zamówienia** , **OrdersTableAdapter**i relacja danych między tabelami **Customers** i **Orders** są dodawane do zestawu danych.
+     Tabela dane **zamówienia** , **OrdersTableAdapter** i relacja danych między tabelami **Customers** i **Orders** są dodawane do zestawu danych.
 
 ### <a name="to-create-the-orderdetails-table"></a>Aby utworzyć tabelę OrderDetails
 
 - Przeciągnij tabelę **szczegóły zamówienia** z **Eksplorator serwera** na **Projektant obiektów DataSet**.
 
-     Tabela danych **Order Details** , **OrderDetailsTableAdapter**i relacja danych między tabelami **Orders** i **OrderDetails** są dodawane do zestawu danych.
+     Tabela danych **Order Details** , **OrderDetailsTableAdapter** i relacja danych między tabelami **Orders** i **OrderDetails** są dodawane do zestawu danych.
 
 ## <a name="next-steps"></a>Następne kroki
 

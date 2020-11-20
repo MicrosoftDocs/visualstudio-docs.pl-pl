@@ -1,5 +1,7 @@
 ---
 title: Nie można usunąć właściwości
+description: Nie można usunąć właściwości. Wyświetl informacje o tym komunikacie Object Relational Designer programu Visual Studio (Projektant O/R).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: 55873f74-7834-4ec1-8815-eeeb65618d87
@@ -8,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 63e99bf7b247856815fd3e8de0f4932fed4881dc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bdca9758116c551604b5f75f141c15107c1fc890
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535294"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998363"
 ---
 # <a name="the-property-property-name-cannot-be-deleted"></a>Właściwości \<property name> nie można usunąć
 
@@ -25,12 +27,12 @@ Ustaw **Właściwość dyskryminatora** na inną właściwość klasy danych, ab
 
 ## <a name="to-correct-this-error"></a>Aby poprawić ten błąd
 
-1. W **projektancie o/R**wybierz linię dziedziczenia, która łączy klasy danych wskazane w komunikacie o błędzie.
+1. W **projektancie o/R** wybierz linię dziedziczenia, która łączy klasy danych wskazane w komunikacie o błędzie.
 
 2. Ustaw właściwość **dyskryminatora** na inną właściwość.
 
 3. Spróbuj ponownie usunąć właściwość.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Narzędzia LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

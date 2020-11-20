@@ -1,5 +1,7 @@
 ---
 title: Rozwiązywanie problemów z odwołaniami usługi
+description: Przejrzyj typowe problemy, które mogą wystąpić podczas pracy z Windows Communication Foundation (WCF) lub Usługi danych programu WCF odwołaniami w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d52562382f10615c7da1dfab22d4c18323b725b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7d1a1f0efc21f1f612d85725358555fcb0cb8245
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586123"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998073"
 ---
 # <a name="troubleshoot-service-references"></a>Rozwiązywanie problemów z odwołaniami usługi
 
@@ -33,7 +35,7 @@ W przypadku powrotu `DataSet` lub `DataTable` z usługi może zostać wyświetlo
 
 Aby naprawić ten błąd:
 
-1. W **Eksplorator rozwiązań**kliknij dwukrotnie plik *app.config* , aby go otworzyć.
+1. W **Eksplorator rozwiązań** kliknij dwukrotnie plik *app.config* , aby go otworzyć.
 
 2. Znajdź `MaxReceivedMessageSize` Właściwość i zmień ją na większą.
 
@@ -43,7 +45,7 @@ Po kliknięciu przycisku **odkryj** w oknie dialogowym **Dodawanie odwołań do 
 
 Aby naprawić ten błąd:
 
-- W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt Biblioteka usługi WCF i kliknij polecenie **Kompiluj**.
+- W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt Biblioteka usługi WCF i kliknij polecenie **Kompiluj**.
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>Błąd podczas uzyskiwania dostępu do usługi za pośrednictwem pulpitu zdalnego
 
@@ -84,7 +86,7 @@ Aby naprawić ten błąd, należy ręcznie skompilować ponownie projekt usługi
 
 5. W oknie dialogowym **Configuration Manager** Ustaw **aktywną konfigurację rozwiązania** na **debugowanie**. Aby uzyskać więcej informacji, zobacz [How to: Create and Edit Configurations](../ide/how-to-create-and-edit-configurations.md).
 
-6. W **Eksplorator rozwiązań**wybierz projekt usługi WCF.
+6. W **Eksplorator rozwiązań** wybierz projekt usługi WCF.
 
 7. W menu **kompilacja** kliknij polecenie **Skompiluj ponownie** , aby ponownie skompilować projekt usługi WCF.
 
@@ -102,6 +104,6 @@ Aby naprawić ten błąd, wyłącz kanały informacyjne RSS:
 
 4. Kliknij przycisk **OK** , aby zamknąć okno dialogowe **Opcje internetowe** .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Usługi Windows Communication Foundation i usługi danych WCF w programie Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

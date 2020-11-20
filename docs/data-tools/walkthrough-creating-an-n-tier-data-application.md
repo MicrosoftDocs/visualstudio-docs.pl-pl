@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: Tworzenie wielowarstwowej aplikacji danych'
+description: W tym instruktażu Utwórz wielowarstwową aplikację do obsługi danych. N-warstwowe aplikacje danych to aplikacje, które uzyskują dostęp do danych i są rozdzielone na wiele warstw logicznych lub warstw.
+ms.custom: SEO-VS-2020
 ms.date: 09/08/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a09ef4cec4b7c2921322b934eef39ba660d02587
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: 76bf07e99f9965e88804c51663bcc37053bf74d6
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426658"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998086"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>Przewodnik: Tworzenie wielowarstwowej aplikacji danych
 *N-warstwowe* aplikacje danych to aplikacje, które uzyskują dostęp do danych i są rozdzielone na wiele warstw logicznych lub *warstw*. Oddzielenie składników aplikacji do odrębnych warstw zwiększa łatwość utrzymania i skalowalność aplikacji. Pozwala to na łatwiejsze wdrażanie nowych technologii, które mogą być stosowane do jednej warstwy, bez konieczności ponownego projektowania całego rozwiązania. Architektura N-warstwowa obejmuje warstwę prezentacji, warstwę środkową i warstwę danych. Warstwa środkowa zazwyczaj obejmuje warstwę dostępu do danych, warstwę logiki biznesowej i składniki współużytkowane, takie jak uwierzytelnianie i sprawdzanie poprawności. Warstwa danych obejmuje relacyjną bazę danych. Aplikacje N-warstwowe zwykle przechowują informacje poufne w warstwie dostępu do danych warstwy środkowej, aby zachować izolację od użytkowników końcowych, którzy uzyskują dostęp do warstwy prezentacji. Aby uzyskać więcej informacji, zobacz [Omówienie wielowarstwowych aplikacji do obsługi danych](../data-tools/n-tier-data-applications-overview.md).
@@ -53,7 +55,7 @@ W tym instruktażu należy wykonać następujące czynności:
 ## <a name="prerequisites"></a>Wymagania wstępne
 W tym instruktażu jest stosowana SQL Server Express LocalDB i Przykładowa baza danych Northwind.
 
-1. Jeśli nie masz SQL Server Express LocalDB, zainstaluj go na [stronie pobierania SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)lub za pośrednictwem **Instalator programu Visual Studio**. W **Instalator programu Visual Studio**można zainstalować SQL Server Express LocalDB w ramach obciążeń **programistycznych programu .NET Desktop** lub pojedynczego składnika.
+1. Jeśli nie masz SQL Server Express LocalDB, zainstaluj go na [stronie pobierania SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)lub za pośrednictwem **Instalator programu Visual Studio**. W **Instalator programu Visual Studio** można zainstalować SQL Server Express LocalDB w ramach obciążeń **programistycznych programu .NET Desktop** lub pojedynczego składnika.
 
 2. Zainstaluj przykładową bazę danych Northwind, wykonując następujące kroki:
 
@@ -177,7 +179,7 @@ Usługa danych musi wywoływać dwie metody z warstwy dostępu do danych: `GetCu
 
 ### <a name="to-create-a-method-in-the-data-access-tier-that-returns-the-customers-table"></a>Aby utworzyć metodę w warstwie dostępu do danych, która zwraca tabelę Customers
 
-1. W **Eksplorator rozwiązań**kliknij dwukrotnie plik **NorthwindDataSet. xsd** , aby otworzyć zestaw danych.
+1. W **Eksplorator rozwiązań** kliknij dwukrotnie plik **NorthwindDataSet. xsd** , aby otworzyć zestaw danych.
 
 2. Kliknij prawym przyciskiem myszy pozycję **CustomersTableAdapter** , a następnie kliknij pozycję **Dodaj zapytanie**.
 
@@ -189,7 +191,7 @@ Usługa danych musi wywoływać dwie metody z warstwy dostępu do danych: `GetCu
 
 6. Na stronie **Wybierz metody do wygenerowania** wpisz **GetCustomers** dla **nazwy metody** w sekcji **Return DataTable** .
 
-7. Kliknij przycisk **Zakończ**.
+7. Kliknij przycisk **Finish** (Zakończ).
 
 ### <a name="to-create-a-method-in-the-data-access-tier-that-returns-the-orders-table"></a>Aby utworzyć metodę w warstwie dostępu do danych, która zwraca tabelę Orders
 
@@ -203,7 +205,7 @@ Usługa danych musi wywoływać dwie metody z warstwy dostępu do danych: `GetCu
 
 5. Na stronie **Wybierz metody do wygenerowania** wpisz **GetOrders** dla **nazwy metody** w sekcji **Return DataTable** .
 
-6. Kliknij przycisk **Zakończ**.
+6. Kliknij przycisk **Finish** (Zakończ).
 
 7. W menu **Kompilacja** kliknij pozycję **Kompiluj rozwiązanie**.
 
@@ -301,14 +303,14 @@ Ustawimy projekt **PresentationTier** jako projekt startowy rozwiązania, poniew
 
 ### <a name="to-set-the-new-presentation-tier-project-as-the-startup-project"></a>Aby ustawić nowy projekt warstwy prezentacji jako projekt startowy
 
-- W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **PresentationTier** , a następnie kliknij pozycję **Ustaw jako projekt startowy**.
+- W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję **PresentationTier** , a następnie kliknij pozycję **Ustaw jako projekt startowy**.
 
 ## <a name="add-references-to-the-presentation-tier"></a>Dodawanie odwołań do warstwy prezentacji
 Aplikacja kliencka PresentationTier wymaga odwołania do usługi danych w celu uzyskania dostępu do metod w usłudze. Ponadto odwołanie do zestawu danych jest wymagane do włączenia udostępniania typu przez usługę WCF. Do momentu włączenia udostępniania typu za pomocą usługi danych kod dodany do klasy częściowego zestawu danych nie jest dostępny dla warstwy prezentacji. Ze względu na to, że zwykle dodajesz kod, taki jak kod sprawdzania poprawności do wierszy i kolumn zmiany zdarzeń tabeli danych, prawdopodobnie chcesz uzyskać dostęp do tego kodu z klienta.
 
 ### <a name="to-add-a-reference-to-the-presentation-tier"></a>Aby dodać odwołanie do warstwy prezentacji
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **PresentationTier** i wybierz polecenie **Dodaj odwołanie**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję **PresentationTier** i wybierz polecenie **Dodaj odwołanie**.
 
 2. W oknie dialogowym **Dodaj odwołanie** wybierz kartę **projekty** .
 
@@ -316,7 +318,7 @@ Aplikacja kliencka PresentationTier wymaga odwołania do usługi danych w celu u
 
 ### <a name="to-add-a-service-reference-to-the-presentation-tier"></a>Aby dodać odwołanie do usługi do warstwy prezentacji
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **PresentationTier** i wybierz pozycję **Dodaj odwołanie do usługi**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję **PresentationTier** i wybierz pozycję **Dodaj odwołanie do usługi**.
 
 2. W oknie dialogowym **Dodaj odwołanie do usługi** wybierz pozycję **odkryj**.
 
@@ -330,7 +332,7 @@ Po dodaniu odwołania do usługi do usługi danych okno **źródła danych** zos
 
 ### <a name="to-add-two-data-bound-datagridviews-to-the-form"></a>Aby dodać do formularza dwie powiązane z danymi
 
-1. W **Eksplorator rozwiązań**wybierz projekt **PresentationTier** .
+1. W **Eksplorator rozwiązań** wybierz projekt **PresentationTier** .
 
 2. W oknie **źródła danych** rozwiń węzeł **NorthwindDataSet** i Znajdź węzeł **Customers** .
 
@@ -365,7 +367,7 @@ Wartość domyślna dla `maxReceivedMessageSize` nie jest wystarczająco duża, 
 
 ### <a name="to-increase-the-maxreceivedmessagesize-value"></a>Aby zwiększyć wartość maxReceivedMessageSize
 
-1. W **Eksplorator rozwiązań**kliknij dwukrotnie plik **app.config** w projekcie **PresentationTier** .
+1. W **Eksplorator rozwiązań** kliknij dwukrotnie plik **app.config** w projekcie **PresentationTier** .
 
 2. Znajdź atrybut **maxReceivedMessage** size i zmień wartość na `6553600` .
 
@@ -379,7 +381,7 @@ W zależności od wymagań aplikacji istnieje kilka kroków, które można wykon
 
 - Dodaj kolejne metody do usługi w celu zaktualizowania danych z powrotem do bazy danych.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Praca z zestawami danych w aplikacjach n-warstwowych](../data-tools/work-with-datasets-in-n-tier-applications.md)
 - [Aktualizacja hierarchiczna](../data-tools/hierarchical-update.md)

@@ -1,5 +1,7 @@
 ---
 title: Uaktualnianie plików mdf
+description: Przejrzyj opcje uaktualniania pliku bazy danych (. mdf) po zainstalowaniu nowszej wersji programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d35611dcc7b6067cf6d6166aff521ef291b8dfcd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: babc82469d32540f1a003b629c9d83887ca91595
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281126"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998047"
 ---
 # <a name="upgrade-mdf-files"></a>Uaktualnianie plików mdf
 
@@ -57,7 +59,7 @@ Przed uaktualnieniem bazy danych należy wziąć pod uwagę następujące kryter
 
 ### <a name="to-upgrade-a-database-file-to-use-the-localdb-version"></a>Aby uaktualnić plik bazy danych w celu użycia wersji LocalDB
 
-1. W **Eksplorator serwera**wybierz przycisk **Połącz z bazą danych** .
+1. W **Eksplorator serwera** wybierz przycisk **Połącz z bazą danych** .
 
 2. W oknie dialogowym **Dodawanie połączenia** podaj następujące informacje:
 
@@ -97,7 +99,7 @@ Możesz również zmodyfikować połączenie SQL Server Express, aby użyć Loca
 
   - Aby uruchomić projekt, wybierz klawisz **F5** .
 
-  - Aby edytować bazę danych, Otwórz plik *. mdf* w **Eksplorator rozwiązań**i rozwiń węzeł w **Eksplorator serwera** , aby współpracował z bazą danych.
+  - Aby edytować bazę danych, Otwórz plik *. mdf* w **Eksplorator rozwiązań** i rozwiń węzeł w **Eksplorator serwera** , aby współpracował z bazą danych.
 
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>Aby SQL Server Express domyślnego aparatu bazy danych
 
@@ -111,6 +113,6 @@ Możesz również zmodyfikować połączenie SQL Server Express, aby użyć Loca
 
     SQL Server Express będzie domyślnym aparatem bazy danych aplikacji.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Uzyskiwanie dostępu do danych w programie Visual Studio](accessing-data-in-visual-studio.md)

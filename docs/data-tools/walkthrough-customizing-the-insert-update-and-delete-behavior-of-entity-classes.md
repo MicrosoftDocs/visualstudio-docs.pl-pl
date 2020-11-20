@@ -1,5 +1,6 @@
 ---
 title: Dostosuj zachowanie wstawiania/aktualizowania/usuwania
+description: W tym instruktażu Dostosuj zachowanie funkcji INSERT, Update i DELETE dla klas jednostek przy użyciu LINQ (zapytanie zintegrowane z językiem) do narzędzi SQL Tools w programie Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5323cfa41dc4931db514977238fd359b4f38ab3f
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: cac9f27263fc7d316d308f1f8d906751f419f104
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036746"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997930"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>Przewodnik: Dostosowywanie zachowania INSERT, Update i DELETE klas jednostek
 
@@ -26,7 +27,7 @@ ms.locfileid: "90036746"
 Domyślnie logika do wykonywania aktualizacji jest zapewniana przez środowisko uruchomieniowe LINQ to SQL. Środowisko uruchomieniowe tworzy domyślne `Insert` , `Update` i `Delete` instrukcje na podstawie schematu tabeli (definicje kolumn i informacje o kluczu podstawowym). Jeśli nie chcesz używać zachowania domyślnego, możesz skonfigurować zachowanie aktualizacji i wyznaczyć określone procedury składowane do wykonywania niezbędnych operacji wstawiania, aktualizacji i usuwania wymaganych do pracy z danymi w bazie danych. Można to również zrobić, gdy domyślne zachowanie nie jest generowane, na przykład gdy klasy jednostek mapują się na widoki. Ponadto można zastąpić domyślne zachowanie aktualizacji, gdy baza danych wymaga dostępu do tabeli za pomocą procedur składowanych. Aby uzyskać więcej informacji, zobacz [Dostosowywanie operacji za pomocą procedur składowanych](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures).
 
 > [!NOTE]
-> Ten Instruktaż wymaga dostępności procedur składowanych **InsertCustomer**, **UpdateCustomer**i **DeleteCustomer** dla bazy danych Northwind.
+> Ten Instruktaż wymaga dostępności procedur składowanych **InsertCustomer**, **UpdateCustomer** i **DeleteCustomer** dla bazy danych Northwind.
 
 W tym instruktażu przedstawiono kroki, które należy wykonać, aby zastąpić domyślny LINQ to SQL zachowanie w czasie wykonywania zapisywania danych z powrotem do bazy danych za pomocą procedur składowanych.
 
@@ -50,7 +51,7 @@ W tym instruktażu dowiesz się, jak wykonywać następujące zadania:
 
 W tym instruktażu jest stosowana SQL Server Express LocalDB i Przykładowa baza danych Northwind.
 
-1. Jeśli nie masz SQL Server Express LocalDB, zainstaluj go na [stronie pobierania SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)lub za pośrednictwem **Instalator programu Visual Studio**. W **Instalator programu Visual Studio**można zainstalować SQL Server Express LocalDB jako część obciążenia **magazynu danych i przetwarzania** lub jako pojedynczy składnik.
+1. Jeśli nie masz SQL Server Express LocalDB, zainstaluj go na [stronie pobierania SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)lub za pośrednictwem **Instalator programu Visual Studio**. W **Instalator programu Visual Studio** można zainstalować SQL Server Express LocalDB jako część obciążenia **magazynu danych i przetwarzania** lub jako pojedynczy składnik.
 
 2. Zainstaluj przykładową bazę danych Northwind, wykonując następujące kroki:
 
@@ -96,7 +97,7 @@ Utwórz klasy LINQ to SQL, które są mapowane na tabele bazy danych, przeciąga
 
 ### <a name="to-create-a-customer-entity-class-and-configure-a-data-source-with-it"></a>Aby utworzyć klasę jednostki klienta i skonfigurować dla niej źródło danych
 
-1. W **Eksplorator serwera** lub **Eksplorator bazy danych**znajdź tabelę **Customer** w SQL Server wersji przykładowej bazy danych Northwind.
+1. W **Eksplorator serwera** lub **Eksplorator bazy danych** znajdź tabelę **Customer** w SQL Server wersji przykładowej bazy danych Northwind.
 
 2. Przeciągnij węzeł **Customers** z **Eksplorator serwera** lub **Eksplorator bazy danych** na powierzchnię projektanta **O/R* .
 
@@ -186,7 +187,7 @@ Domyślnie przycisk Zapisz nie jest włączony i funkcja zapisywania nie jest za
 
 1. Otwórz plik LINQ to SQL w **projektancie o/R**. (Kliknij dwukrotnie plik **Northwind. dbml** w **Eksplorator rozwiązań**).
 
-2. W **Eksplorator serwera** lub **Eksplorator bazy danych**rozwiń węzeł **procedury składowane** bazy danych Northwind, a następnie zlokalizuj procedury składowane **InsertCustomers**, **UpdateCustomers**i **DeleteCustomers** .
+2. W **Eksplorator serwera** lub **Eksplorator bazy danych** rozwiń węzeł **procedury składowane** bazy danych Northwind, a następnie zlokalizuj procedury składowane **InsertCustomers**, **UpdateCustomers** i **DeleteCustomers** .
 
 3. Przeciągnij wszystkie trzy procedury składowane na **projektanta o/R**.
 
@@ -230,7 +231,7 @@ Domyślnie przycisk Zapisz nie jest włączony i funkcja zapisywania nie jest za
 
 18. Mapuj argument **Original_CustomerID** metody na właściwość klasy **CustomerID (oryginalna)** .
 
-19. Kliknij pozycję **OK**.
+19. Kliknij przycisk **OK**.
 
 > [!NOTE]
 > Chociaż nie jest to problem związany z tym konkretnym instruktażem, warto zauważyć, że LINQ to SQL automatycznie obsługuje wartości generowane przez bazę danych dla tożsamości (Automatyczne zwiększenie), ROWGUIDCOL (GUID wygenerowanej przez bazę danych) i kolumn sygnatur czasowych podczas operacji INSERT i Update. Wartości wygenerowane przez bazę danych w innych typach kolumn nieoczekiwanie spowodują wartość null. Aby zwrócić wartości generowane przez bazę danych, należy ręcznie ustawić wartość <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> `true` i <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> na jedną z następujących opcji: [AutoSync. Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>), [AutoSync. OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)lub [AutoSync. OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>).
@@ -275,5 +276,5 @@ W zależności od wymagań aplikacji istnieje kilka kroków, które można wykon
 - [Narzędzia LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Metody DataContext](../data-tools/datacontext-methods-o-r-designer.md)
 - [Instrukcje: przypisywanie procedur składowanych do wykonywania aktualizacji, wstawianych i usuwanych](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
-- [LINQ do SQL](/dotnet/framework/data/adonet/sql/linq/index)
+- [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [Zapytania LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/linq-to-sql-queries)
