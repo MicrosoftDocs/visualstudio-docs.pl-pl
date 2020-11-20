@@ -1,5 +1,7 @@
 ---
 title: Element polecenia | Microsoft Docs
+description: Polecenie jest głównym elementem pliku vsct, który definiuje układ i typ poleceń dostarczanych przez pakietu VSPackage do IDE.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a362763d34335b9a18c4114a7c35b23f0efee020
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 24e6792bb6199606f1d993492527d39c3f0f7f8b
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739649"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974515"
 ---
 # <a name="commandtable-element"></a>Element polecenia
 Polecenie jest głównym elementem pliku *. vsct* . Jest to plik, który definiuje rzeczywisty układ i typ poleceń, które pakietu VSPackage zapewnia IDE. Polecenia mogą obejmować elementy menu, menu, paski narzędzi i pola kombi. Aby uzyskać więcej informacji, zobacz [pliki tabeli poleceń programu Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
@@ -46,7 +48,7 @@ Polecenie jest głównym elementem pliku *. vsct* . Jest to plik, który definiu
 
 | Atrybut | Opis |
 |-----------| - |
-| 'xmlns | Wymagany. Przestrzenie nazw XML:<br /><br /> `xmlns=http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable`<br /><br /> xmlns: XS = " <http://www.w3.org/2001/XMLSchema> " |
+| 'xmlns | Wymagane. Przestrzenie nazw XML:<br /><br /> `xmlns=http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable`<br /><br /> xmlns: XS = " <http://www.w3.org/2001/XMLSchema> " |
 | language | Opcjonalny. Atrybut Language może służyć do określania języka domyślnego wszystkich \<Strings> elementów w tabeli poleceń.  Jeśli język nie zostanie określony, będzie używany język bieżącego procesu:<br /><br /> Language = "pl-US" |
 
 ### <a name="child-elements"></a>Elementy podrzędne
@@ -69,5 +71,5 @@ Polecenie jest głównym elementem pliku *. vsct* . Jest to plik, który definiu
 |-------------|-----------------|
 |Brak||
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Pliki tabeli poleceń programu Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

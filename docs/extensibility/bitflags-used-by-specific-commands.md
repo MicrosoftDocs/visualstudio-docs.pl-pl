@@ -1,5 +1,7 @@
 ---
 title: Bitflags używane przez określone polecenia | Microsoft Docs
+description: Dowiedz się więcej o bitflags używanym przez interfejs API kontroli źródła, zorganizowane przez funkcję, która z nich korzysta.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ffa1fd8bf025d665977e87dc8b88da724ade5a8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7c6c48dbad986d8bc4be58f1ebd9c5bd1fffbd57
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740015"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974599"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Bitflags używane przez określone polecenia
 Zachowanie wielu funkcji w interfejsie API dodatku plug-in kontroli źródła może być modyfikowane przez ustawienie jednej lub kilku bitów w jednej wartości. Te wartości są znane jako bitflags. Różne bitflags używane przez interfejs API dodatku plug-in kontroli źródła są szczegółowo pogrupowane według funkcji, która z nich korzysta.
@@ -105,5 +107,5 @@ Zachowanie wielu funkcji w interfejsie API dodatku plug-in kontroli źródła mo
 |`SCC_OPT_SCO_NO`|0L|Wartooć OK, aby wyewidencjonować z wtyczki interfejsu użytkownika; Katalog roboczy jest ustawiony.|`SCC_OPT_SCCCHECKOUTONLY`|
 |`SCC_OPT_SCO_YES`|1L|Brak wyewidencjonowania interfejsu użytkownika wtyczki, brak katalogu roboczego.|`SCC_OPT_SCCCHECKOUTONLY`|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wtyczki kontroli źródła](../extensibility/source-control-plug-ins.md)

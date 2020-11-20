@@ -1,5 +1,7 @@
 ---
 title: Elementy kombi | Microsoft Docs
+description: Element kombi Grupuje elementy kombi, które definiują polecenia, które pojawiają się w polu kombi. Ten artykuł zawiera przykład.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d005ea69aea7f0331877326abe4087fcff403553
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eba7b40a6e770c5076a4d1aa89bf6196f7ef8684
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739802"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974253"
 ---
 # <a name="combos-element"></a>Elementy kombi
 Grupuje elementy [elementu kombi](../extensibility/combo-element.md) .
@@ -76,6 +78,6 @@ Grupuje elementy [elementu kombi](../extensibility/combo-element.md) .
 </Combos>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Jak pakietów VSPackage Dodawanie elementów interfejsu użytkownika](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)

@@ -1,5 +1,7 @@
 ---
 title: Tworzenie strony opcji | Microsoft Docs
+description: Dowiedz się, jak utworzyć prostą stronę narzędzi/opcji, która używa siatki właściwości do badania i ustawiania właściwości.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be826b73e28a73216ea88ceba8e23eb1e9ea457b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41102dfbbf1e49dadb1360ab0182810a47651dca
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903818"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973714"
 ---
 # <a name="create-an-options-page"></a>Utwórz stronę opcji
 
@@ -37,7 +39,7 @@ W tym instruktażu utworzono prostą stronę narzędzi/opcji, która używa siat
 
 1. Każde rozszerzenie programu Visual Studio rozpoczyna się od projektu wdrożenia VSIX, który będzie zawierać zasoby rozszerzenia. Utwórz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projekt VSIX o nazwie `MyToolsOptionsExtension` . Szablon projektu VSIX można znaleźć w oknie dialogowym **Nowy projekt** , wyszukując frazę "VSIX".
 
-2. Dodaj pakietu VSPackage, dodając szablon elementu pakietu programu Visual Studio o nazwie `MyToolsOptionsPackage` . W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >  **nowy element**. W **oknie dialogowym Dodaj nowy element**przejdź do pozycji rozszerzalność **elementów Visual C#**  >  **Extensibility** i wybierz pozycję **pakiet programu Visual Studio**. W polu **Nazwa** w dolnej części okna dialogowego Zmień nazwę pliku na `MyToolsOptionsPackage.cs` . Aby uzyskać więcej informacji na temat tworzenia pakietu VSPackage, zobacz [Tworzenie rozszerzenia przy użyciu pakietu VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md).
+2. Dodaj pakietu VSPackage, dodając szablon elementu pakietu programu Visual Studio o nazwie `MyToolsOptionsPackage` . W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >  **nowy element**. W **oknie dialogowym Dodaj nowy element** przejdź do pozycji rozszerzalność **elementów Visual C#**  >  **Extensibility** i wybierz pozycję **pakiet programu Visual Studio**. W polu **Nazwa** w dolnej części okna dialogowego Zmień nazwę pliku na `MyToolsOptionsPackage.cs` . Aby uzyskać więcej informacji na temat tworzenia pakietu VSPackage, zobacz [Tworzenie rozszerzenia przy użyciu pakietu VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md).
 
 ### <a name="to-create-the-tools-options-property-grid"></a>Aby utworzyć siatkę właściwości opcji narzędzi
 
@@ -99,7 +101,7 @@ W tym instruktażu utworzono prostą stronę narzędzi/opcji, która używa siat
 
 7. W eksperymentalnym wystąpieniu programu Visual Studio, w menu **Narzędzia** kliknij pozycję **Opcje**.
 
-     W okienku po lewej stronie powinna zostać wyświetlona **Kategoria moje kategorie**. (Kategorie opcji są wyświetlane w kolejności alfabetycznej, więc powinny być wyświetlane w połowie listy). Otwórz **moją kategorię** , a następnie kliknij pozycję **moja strona siatki**. Siatka opcji zostanie wyświetlona w okienku po prawej stronie. Kategoria właściwości to **Moje opcje**, a nazwa właściwości jest **opcją my Integer**. Opcja opis właściwości, **My Integer**pojawia się u dołu okienka. Zmień wartość z jej początkowej wartości 256 na inną. Kliknij przycisk **OK**, a następnie ponownie Otwórz **stronę Moje siatki**. Można zobaczyć, że nowa wartość będzie się utrzymywała.
+     W okienku po lewej stronie powinna zostać wyświetlona **Kategoria moje kategorie**. (Kategorie opcji są wyświetlane w kolejności alfabetycznej, więc powinny być wyświetlane w połowie listy). Otwórz **moją kategorię** , a następnie kliknij pozycję **moja strona siatki**. Siatka opcji zostanie wyświetlona w okienku po prawej stronie. Kategoria właściwości to **Moje opcje**, a nazwa właściwości jest **opcją my Integer**. Opcja opis właściwości, **My Integer** pojawia się u dołu okienka. Zmień wartość z jej początkowej wartości 256 na inną. Kliknij przycisk **OK**, a następnie ponownie Otwórz **stronę Moje siatki**. Można zobaczyć, że nowa wartość będzie się utrzymywała.
 
      Strona opcji jest również dostępna za poorednictwem pola wyszukiwania programu Visual Studio. W polu wyszukiwania w górnej części środowiska IDE wpisz **moją kategorię** , a na liście wyników zobaczysz moją **kategorię — > stronie Moje siatki** .
 
@@ -266,6 +268,6 @@ W tym instruktażu utworzono prostą stronę narzędzi/opcji, która używa siat
 
      Zostanie wyświetlone okno komunikatu z bieżącą wartością `OptionInteger` .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Opcje i strony opcji](../extensibility/internals/options-and-options-pages.md)

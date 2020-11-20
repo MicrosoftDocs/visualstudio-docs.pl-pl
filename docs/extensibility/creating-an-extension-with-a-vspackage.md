@@ -1,5 +1,7 @@
 ---
 title: Tworzenie rozszerzenia za pomocą pakietu VSPackage | Microsoft Docs
+description: Dowiedz się, jak utworzyć projekt VSIX i dodać element projektu pakietu VSPackage przy użyciu pakietu VSPackage, aby pobrać usługę powłoki interfejsu użytkownika w celu wyświetlenia okna komunikatu.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 ms.assetid: c0cc5e08-4897-44f2-8309-e3478f1f999e
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 68ade2f8d334c1f93349e396d910fa300f6b5417
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 431de32838ad236229db5e41330aba372e30ea75
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903859"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973774"
 ---
 # <a name="create-an-extension-with-a-vspackage"></a>Tworzenie rozszerzenia za pomocą pakietu VSPackage
 
@@ -27,7 +29,7 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
 
 1. Utwórz projekt VSIX o nazwie **FirstPackage**. Szablon projektu VSIX można znaleźć w oknie dialogowym **Nowy projekt** , wyszukując frazę "VSIX".
 
-2. Po otwarciu projektu Dodaj szablon elementu pakietu programu Visual Studio o nazwie **FirstPackage**. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >  **nowy element**. W oknie dialogowym **Dodaj nowy element** przejdź do rozszerzalności **Visual C#**  >  **Extensibility** i wybierz pozycję **pakiet programu Visual Studio**. W polu **Nazwa** w dolnej części okna Zmień nazwę pliku polecenia na *FirstPackage.cs*.
+2. Po otwarciu projektu Dodaj szablon elementu pakietu programu Visual Studio o nazwie **FirstPackage**. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >  **nowy element**. W oknie dialogowym **Dodaj nowy element** przejdź do rozszerzalności **Visual C#**  >  **Extensibility** i wybierz pozycję **pakiet programu Visual Studio**. W polu **Nazwa** w dolnej części okna Zmień nazwę pliku polecenia na *FirstPackage.cs*.
 
 3. Skompiluj projekt i Rozpocznij debugowanie.
 

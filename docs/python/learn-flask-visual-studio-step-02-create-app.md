@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 03a0eb6808b2298e0727492978d9beb7cfaf2216
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a06c6dbacf21cb2ce00539af901c24c77aaf9ef5
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89313747"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974086"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Krok 2. Tworzenie aplikacji do kolby z widokami i szablonami stron
 
@@ -36,7 +36,7 @@ W kodzie utworzonym przez szablon "pusty kolby projekt sieci Web" istnieje pojed
 
 1. W folderze projektu Utwórz folder aplikacji o nazwie `HelloFlask` (kliknij prawym przyciskiem myszy projekt w **Eksplorator rozwiązań** a następnie wybierz pozycję **Dodaj**  >  **Nowy folder**).
 
-2. W folderze *HelloFlask* Utwórz plik o nazwie * \_ \_ init \_ \_ . PR* z następującą zawartością, która tworzy `Flask` wystąpienie i ładuje widoki aplikacji (utworzone w następnym kroku):
+2. W folderze *HelloFlask* Utwórz plik o nazwie *\_ \_ init \_ \_ . PR* z następującą zawartością, która tworzy `Flask` wystąpienie i ładuje widoki aplikacji (utworzone w następnym kroku):
 
     ```python
     from flask import Flask
@@ -45,7 +45,7 @@ W kodzie utworzonym przez szablon "pusty kolby projekt sieci Web" istnieje pojed
     import HelloFlask.views
     ```
 
-3. W folderze *HelloFlask* Utwórz plik o nazwie *views.py* z następującą zawartością. Nazwa *views.py* jest ważna, ponieważ została użyta `import HelloFlask.views` w * \_ \_ init \_ \_ . PR*; Jeśli nazwy nie są zgodne, zobaczysz błąd w czasie wykonywania.
+3. W folderze *HelloFlask* Utwórz plik o nazwie *views.py* z następującą zawartością. Nazwa *views.py* jest ważna, ponieważ została użyta `import HelloFlask.views` w *\_ \_ init \_ \_ . PR*; Jeśli nazwy nie są zgodne, zobaczysz błąd w czasie wykonywania.
 
     ```python
     from flask import Flask
@@ -57,11 +57,11 @@ W kodzie utworzonym przez szablon "pusty kolby projekt sieci Web" istnieje pojed
         return "Hello Flask!"
     ```
 
-    Oprócz zmiany nazwy funkcji i trasy do programu `home` ten kod zawiera kod renderowania stron z *App.py* i importuje `app` obiekt zadeklarowany w * \_ \_ init \_ \_ . PR*.
+    Oprócz zmiany nazwy funkcji i trasy do programu `home` ten kod zawiera kod renderowania stron z *App.py* i importuje `app` obiekt zadeklarowany w *\_ \_ init \_ \_ . PR*.
 
 4. Utwórz podfolder w programie *HelloFlask* o nazwie *templates*, który pozostanie pusty dla tej pory.
 
-5. W folderze głównym projektu Zmień nazwę *App.py* na *runserver.py*i Oznacz zawartość jako zgodną z poniższym kodem:
+5. W folderze głównym projektu Zmień nazwę *App.py* na *runserver.py* i Oznacz zawartość jako zgodną z poniższym kodem:
 
     ```python
     import os
@@ -84,7 +84,7 @@ W kodzie utworzonym przez szablon "pusty kolby projekt sieci Web" istnieje pojed
 
 7. Wybierz kolejno opcje **Debuguj**  >  **Rozpocznij debugowanie** (**F5**) lub przycisk **serwer sieci Web** na pasku narzędzi (widoczna przeglądarka może się różnić), aby uruchomić aplikację i otworzyć przeglądarkę. Wypróbuj trasy URL/i/Home.
 
-8. Możesz również ustawić punkty przerwania w różnych częściach kodu i ponownie uruchomić aplikację, aby postępować zgodnie z sekwencją uruchamiania. Na przykład ustaw punkt przerwania w pierwszych wierszach *runserver.py* i *HelloFlask \_ *init_*. PR*i w `return "Hello Flask!"` wierszu w *views.py*. Następnie uruchom ponownie aplikację (**Debug**  >  **ponownie uruchom**polecenie Debug, **Ctrl** + **F5**lub przycisk paska narzędzi poniżej), a następnie przejdź do kroku (**F10**) kod lub Uruchom z każdego punktu przerwania przy użyciu klawisza **F5**.
+8. Możesz również ustawić punkty przerwania w różnych częściach kodu i ponownie uruchomić aplikację, aby postępować zgodnie z sekwencją uruchamiania. Na przykład ustaw punkt przerwania w pierwszych wierszach *runserver.py* i *HelloFlask \_* init_ *. PR* i w `return "Hello Flask!"` wierszu w *views.py*. Następnie uruchom ponownie aplikację (**Debug**  >  **ponownie uruchom** polecenie Debug, **naciśnij klawisz Ctrl** + **SHIFT** + **F5** lub przycisk paska narzędzi poniżej), a następnie przejdź do kroku (**F10**) kod lub Uruchom z każdego punktu przerwania przy użyciu klawisza **F5**.
 
     ![Przycisk Uruchom ponownie na pasku narzędzi debugowania w programie Visual Studio](media/debugging-restart-toolbar-button.png)
 
@@ -98,7 +98,7 @@ Ponieważ wprowadzono zmiany w kodzie i przetestowano je pomyślnie, to teraz ś
 
     ![Przycisk zmiany kontroli źródła na pasku stanu programu Visual Studio](media/flask/step02-source-control-changes-button.png)
 
-1. W **Team Explorer**wprowadź komunikat dotyczący zatwierdzenia, taki jak "kod refaktoryzacji", i wybierz pozycję **Zatwierdź wszystko**. Po zakończeniu zatwierdzania zostanie wyświetlone **zatwierdzenie wiadomości \<hash> utworzone lokalnie. Synchronizuj, aby udostępnić zmiany na serwerze.** Jeśli chcesz wypchnąć zmiany do zdalnego repozytorium, wybierz pozycję **Synchronizuj**, a następnie wybierz pozycję **wypychanie** w obszarze **zatwierdzenia wychodzące**. Możesz również zbierać wiele lokalnych zatwierdzeń przed wypchnięciem do zdalnego.
+1. W **Team Explorer** wprowadź komunikat dotyczący zatwierdzenia, taki jak "kod refaktoryzacji", i wybierz pozycję **Zatwierdź wszystko**. Po zakończeniu zatwierdzania zostanie wyświetlone **zatwierdzenie wiadomości \<hash> utworzone lokalnie. Synchronizuj, aby udostępnić zmiany na serwerze.** Jeśli chcesz wypchnąć zmiany do zdalnego repozytorium, wybierz pozycję **Synchronizuj**, a następnie wybierz pozycję **wypychanie** w obszarze **zatwierdzenia wychodzące**. Możesz również zbierać wiele lokalnych zatwierdzeń przed wypchnięciem do zdalnego.
 
     ![Zatwierdzeń wypychania do zdalnego w Team Explorer](media/flask/step02-source-control-push-to-remote.png)
 

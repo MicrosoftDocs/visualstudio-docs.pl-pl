@@ -1,5 +1,7 @@
 ---
 title: Moduł wyliczający kod polecenia | Microsoft Docs
+description: Moduł wyliczający kod polecenia jest używany w opcjach dla SccGetCommandOptions i SccPopulateListto, aby wskazać polecenie, dla którego są określone opcje.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15916d26ac0120417205af0bb9117a45ec0397c6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a831813bb975819e9152dfab4d4eefd6b440606
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739789"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974265"
 ---
 # <a name="command-code-enumerator"></a>Moduł wyliczający kod polecenia
 Ten moduł wyliczający jest używany w opcjach dla [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) i [SccPopulateList](../extensibility/sccpopulatelist-function.md), aby wskazać polecenie, dla którego są określone opcje.
@@ -62,7 +64,7 @@ SCC_COMMAND_PROPERTIES odnosi się do [SccProperties](../extensibility/sccproper
 
 SCC_COMMAND_OPTIONS odnosi się do [SccSetOption](../extensibility/sccsetoption-function.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wtyczki kontroli źródła](../extensibility/source-control-plug-ins.md)
 - [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)
 - [SccPopulateList](../extensibility/sccpopulatelist-function.md)

@@ -1,5 +1,7 @@
 ---
 title: Tworzenie systemu podstawowego projektu, część 1 | Microsoft Docs
+description: Dowiedz się, jak utworzyć typ projektu o nazwie Extension. webproj. W programie Visual Studio projekty są kontenerami używanymi do organizowania plików kodu źródłowego i innych zasobów.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e95f760712f46632120540091b9f8f408aad9da4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c202aa9e76f568db9394625485282345ea3222c1
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903420"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974534"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Tworzenie podstawowego systemu projektu, część 1
 W programie Visual Studio projekty są kontenerami używanymi przez deweloperów do organizowania plików kodu źródłowego i innych zasobów. Projekty są wyświetlane jako elementy podrzędne rozwiązań w **Eksplorator rozwiązań**. Projekty pozwalają organizować, kompilować, debugować i wdrażać kod źródłowy oraz tworzyć odwołania do usług sieci Web, baz danych i innych zasobów.
@@ -61,16 +63,16 @@ W programie Visual Studio projekty są kontenerami używanymi przez deweloperów
  Należy również pobrać kod źródłowy dla [struktury zarządzanego pakietu dla projektów](https://github.com/tunnelvisionlabs/MPFProj10). Wyodrębnij plik do lokalizacji dostępnej dla rozwiązania, które chcesz utworzyć.
 
 ## <a name="create-a-basic-project-type"></a>Tworzenie podstawowego typu projektu
- Utwórz projekt w języku C# o nazwie **SimpleProject**. (**Plik**  >  **Nowe**  >  **Projekt, a** następnie **Visual C#**  >  **Extensibility**  >  **Projekt VSIX**rozszerzalności Visual C#). Dodaj szablon elementu projektu pakietu programu Visual Studio (na **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >  **nowy element**, a następnie przejdź do **rozszerzenia rozszerzalny**  >  **pakiet Visual Studio**). Nazwij plik *SimpleProjectPackage*.
+ Utwórz projekt w języku C# o nazwie **SimpleProject**. (**Plik**  >  **Nowe**  >  **Projekt, a** następnie **Visual C#**  >  **Extensibility**  >  **Projekt VSIX** rozszerzalności Visual C#). Dodaj szablon elementu projektu pakietu programu Visual Studio (na **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >  **nowy element**, a następnie przejdź do **rozszerzenia rozszerzalny**  >  **pakiet Visual Studio**). Nazwij plik *SimpleProjectPackage*.
 
 ## <a name="creating-a-basic-project-template"></a>Tworzenie podstawowego szablonu projektu
  Teraz możesz zmodyfikować ten podstawowy pakietu VSPackage, aby zaimplementować nowy typ projektu *. proj* . Aby utworzyć projekt oparty na typie projektu *. proj* , program Visual Studio musi wiedzieć, które pliki, zasoby i odwołania, które mają zostać dodane do nowego projektu. Aby podać te informacje, Umieść pliki projektu w folderze szablonu projektu. Gdy użytkownik używa projektu *. proj* do tworzenia projektu, pliki są kopiowane do nowego projektu.
 
 ### <a name="to-create-a-basic-project-template"></a>Aby utworzyć podstawowy szablon projektu
 
-1. Dodaj trzy foldery do projektu, jeden pod drugim: *Templates\Projects\SimpleProject*. (W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł projektu **SimpleProject** , wskaż polecenie **Dodaj**, a następnie kliknij pozycję **Nowy folder**. Nazwij *Szablony*folderów. W folderze *Szablony* Dodaj folder o nazwie *projekty*. W folderze *projekty* Dodaj folder o nazwie *SimpleProject*.)
+1. Dodaj trzy foldery do projektu, jeden pod drugim: *Templates\Projects\SimpleProject*. (W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł projektu **SimpleProject** , wskaż polecenie **Dodaj**, a następnie kliknij pozycję **Nowy folder**. Nazwij *Szablony* folderów. W folderze *Szablony* Dodaj folder o nazwie *projekty*. W folderze *projekty* Dodaj folder o nazwie *SimpleProject*.)
 
-2. W folderze *Templates\Projects\SimpleProject* Dodaj plik obrazu mapy bitowej, który ma być używany jako ikona o nazwie *SimpleProject. ico*. Po kliknięciu przycisku **Dodaj**zostanie otwarty Edytor ikon.
+2. W folderze *Templates\Projects\SimpleProject* Dodaj plik obrazu mapy bitowej, który ma być używany jako ikona o nazwie *SimpleProject. ico*. Po kliknięciu przycisku **Dodaj** zostanie otwarty Edytor ikon.
 
 3. Ustaw charakterystyczną ikonę. Ta ikona zostanie wyświetlona w oknie dialogowym **Nowy projekt** w dalszej części przewodnika.
 
@@ -154,11 +156,11 @@ W programie Visual Studio projekty są kontenerami używanymi przez deweloperów
 
 11. Zapisz plik.
 
-12. W oknie **Właściwości** Ustaw **akcję kompilacja** z *AssemblyInfo.cs*, *program.cs*, *SimpleProject. ico*i *SimpleProject. webproj* na **zawartość**, a następnie ustaw dla nich opcję **include** na **wartość true**.
+12. W oknie **Właściwości** Ustaw **akcję kompilacja** z *AssemblyInfo.cs*, *program.cs*, *SimpleProject. ico* i *SimpleProject. webproj* na **zawartość**, a następnie ustaw dla nich opcję **include** na **wartość true**.
 
-    Ten szablon projektu opisuje podstawowy projekt Visual C#, który ma zarówno konfigurację debugowania, jak i konfigurację wydania. Projekt zawiera dwa pliki źródłowe, *AssemblyInfo.cs* i *program.cs*oraz kilka odwołań do zestawów. Po utworzeniu projektu na podstawie szablonu wartość ProjectGuid jest automatycznie zastępowana przez nowy identyfikator GUID.
+    Ten szablon projektu opisuje podstawowy projekt Visual C#, który ma zarówno konfigurację debugowania, jak i konfigurację wydania. Projekt zawiera dwa pliki źródłowe, *AssemblyInfo.cs* i *program.cs* oraz kilka odwołań do zestawów. Po utworzeniu projektu na podstawie szablonu wartość ProjectGuid jest automatycznie zastępowana przez nowy identyfikator GUID.
 
-    W **Eksplorator rozwiązań**folder rozwinięte **Szablony** powinien wyglądać następująco:
+    W **Eksplorator rozwiązań** folder rozwinięte **Szablony** powinien wyglądać następująco:
 
 ```
 Templates
@@ -210,7 +212,7 @@ Templates
 
 ### <a name="to-register-the-project-template"></a>Aby zarejestrować szablon projektu
 
-1. W *SimpleProjectPackage.cs*Dodaj <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> atrybut do `SimpleProjectPackage` klasy w następujący sposób.
+1. W *SimpleProjectPackage.cs* Dodaj <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> atrybut do `SimpleProjectPackage` klasy w następujący sposób.
 
    ```csharp
    [ProvideProjectFactory(    typeof(SimpleProjectFactory),     "Simple Project",
@@ -233,7 +235,7 @@ Templates
 
 1. Naciśnij klawisz **F5** , aby rozpocząć debugowanie eksperymentalnego wystąpienia programu Visual Studio.
 
-2. W eksperymentalnym wystąpieniu Utwórz nowy projekt nowo utworzonego typu projektu. W oknie dialogowym **Nowy projekt** w obszarze **zainstalowane szablony**powinny być widoczne **SimpleProject** .
+2. W eksperymentalnym wystąpieniu Utwórz nowy projekt nowo utworzonego typu projektu. W oknie dialogowym **Nowy projekt** w obszarze **zainstalowane szablony** powinny być widoczne **SimpleProject** .
 
    Teraz masz zarejestrowaną fabrykę projektów. Jednak nie może jeszcze utworzyć projektu. Pakiet projektu i fabryka projektów współpracują ze sobą, aby utworzyć i zainicjować projekt.
 
@@ -242,7 +244,7 @@ Templates
 
 - Zaimportuj pliki kodu źródłowego dla struktury pakietu zarządzanego.
 
-    1. Zwolnij projekt SimpleProject (w **Eksplorator rozwiązań**wybierz węzeł projektu, a następnie w menu kontekstowym kliknij polecenie **Zwolnij projekt**.) i Otwórz plik projektu w edytorze XML.
+    1. Zwolnij projekt SimpleProject (w **Eksplorator rozwiązań** wybierz węzeł projektu, a następnie w menu kontekstowym kliknij polecenie **Zwolnij projekt**.) i Otwórz plik projektu w edytorze XML.
 
     2. Dodaj następujące bloki do pliku projektu (tuż powyżej \<Import> bloków). Ustaw `ProjectBasePath` lokalizację pliku *ProjectBase. Files* w pobranym kodzie struktury pakietu zarządzanego. Może być konieczne dodanie ukośnika odwrotnego do nazwy ścieżki. W przeciwnym razie projekt może nie znaleźć kodu źródłowego struktury pakietu zarządzanego.
 
@@ -261,7 +263,7 @@ Templates
 
     4. Dodaj odwołania do następujących zestawów:
 
-        - `Microsoft.VisualStudio.Designer.Interfaces`(w * \<VSSDK install> \VisualStudioIntegration\Common\Assemblies\v2.0*)
+        - `Microsoft.VisualStudio.Designer.Interfaces`(w *\<VSSDK install> \VisualStudioIntegration\Common\Assemblies\v2.0*)
 
         - `WindowsBase`
 
@@ -352,9 +354,9 @@ Templates
 ## <a name="extend-the-projectnode-class"></a>Poszerzenie klasy ProjectNode
  Teraz można zaimplementować `SimpleProjectNode` klasę, która pochodzi od `ProjectNode` klasy. `ProjectNode`Klasa bazowa obsługuje następujące zadania tworzenia projektu:
 
-- Kopiuje plik szablonu projektu, *SimpleProject. webproj*do nowego folderu projektu. Nazwa kopii zostanie zmieniona na podstawie nazwy wprowadzonej w oknie dialogowym **Nowy projekt** . `ProjectGuid`Wartość właściwości jest zastępowana przez nowy identyfikator GUID.
+- Kopiuje plik szablonu projektu, *SimpleProject. webproj* do nowego folderu projektu. Nazwa kopii zostanie zmieniona na podstawie nazwy wprowadzonej w oknie dialogowym **Nowy projekt** . `ProjectGuid`Wartość właściwości jest zastępowana przez nowy identyfikator GUID.
 
-- Przechodzi elementy programu MSBuild pliku szablonu projektu, *SimpleProject. webproj*i szuka `Compile` elementów. Dla każdego `Compile` pliku docelowego Program kopiuje plik do folderu nowego projektu.
+- Przechodzi elementy programu MSBuild pliku szablonu projektu, *SimpleProject. webproj* i szuka `Compile` elementów. Dla każdego `Compile` pliku docelowego Program kopiuje plik do folderu nowego projektu.
 
   Klasa pochodna `SimpleProjectNode` obsługuje następujące zadania:
 
@@ -460,7 +462,7 @@ Templates
 
 3. W oknie **Właściwości** Zmień **akcję kompilacja** mapy bitowej na **zasób osadzony**.
 
-4. W *SimpleProjectNode.cs*Dodaj następujące `using` dyrektywy:
+4. W *SimpleProjectNode.cs* Dodaj następujące `using` dyrektywy:
 
    ```csharp
    using System.Drawing;

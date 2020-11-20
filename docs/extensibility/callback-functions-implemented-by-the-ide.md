@@ -1,5 +1,7 @@
 ---
 title: Funkcje wywołania zwrotnego implementowane przez środowisko IDE | Microsoft Docs
+description: Dowiedz się więcej na temat funkcji wywołania zwrotnego, które wtyczka może wywoływać w odpowiednim czasie podczas operacji kontroli źródła w celu przekazania informacji do środowiska IDE.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +13,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 666486f5b800707a4467a129abeed7a13306f10a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9dfb7e8b7e046c9587f591aec96a6a7fbd270865
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739892"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974450"
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>Funkcje wywołania zwrotnego zaimplementowane przez IDE
 Aby zapewnić bezproblemową integrację z zintegrowanym środowiskiem programistycznym (IDE) i zapewniać ujednolicone środowisko użytkownika końcowego, wtyczka do kontroli źródła może korzystać z funkcji wywołania zwrotnego, które są implementowane przez IDE. Wtyczka może wywoływać te funkcje w odpowiednim czasie podczas operacji kontroli źródła, aby przekazać informacje do środowiska IDE; IDE może wyświetlić te informacje jako osadzone elementy w macierzystym interfejsie użytkownika. Użytkownik ma mniej pofragmentowane środowisko w tym scenariuszu, niż w przypadku, gdy wtyczka korzysta z własnego interfejsu użytkownika.
 
- Wymagany plik nagłówkowy to *SCC. h*. Domyślna lokalizacja to *\Program Files\VSIP 8.0 \ EnvSDK\common\inc \\ *. Jest również w folderze VSIP, który ma przykład wtyczki kontroli źródła w *folderze \Program Files\VSIP 8.0 \ MSSCCI \\ *.
+ Wymagany plik nagłówkowy to *SCC. h*. Domyślna lokalizacja to *\Program Files\VSIP 8.0 \ EnvSDK\common\inc \\*. Jest również w folderze VSIP, który ma przykład wtyczki kontroli źródła w *folderze \Program Files\VSIP 8.0 \ MSSCCI \\*.
 
 ## <a name="in-this-section"></a>W tej sekcji
 - [LpTextOutProc](../extensibility/lptextoutproc.md) Opisuje funkcję wywołania zwrotnego, która jest używana przez [SccOpenProject](../extensibility/sccopenproject-function.md) do wyświetlania komunikatów z wtyczki kontroli źródła za pośrednictwem IDE.

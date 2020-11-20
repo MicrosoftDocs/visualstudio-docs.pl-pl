@@ -1,5 +1,7 @@
 ---
 title: Tworzenie systemu podstawowego projektu, część 2 | Microsoft Docs
+description: Dowiedz się, jak dodać szablon programu Visual Studio, stronę właściwości i inne funkcje do projektu utworzonego w poprzednim artykule.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b9d5ce673e0ee44e888905239c12251241015ab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 564d975a60c54a074d830742eb0ab6133fdbfe4e
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903830"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974610"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>Tworzenie podstawowego systemu projektu, część 2
 Pierwsze wskazówki w tej serii, [Tworzenie podstawowego systemu projektu, część 1](../extensibility/creating-a-basic-project-system-part-1.md), pokazuje, jak utworzyć podstawowy system projektu. Ten przewodnik jest oparty na podstawowym systemie projektu przez dodanie szablonu programu Visual Studio, strony właściwości i innych funkcji. Przed rozpoczęciem tego procesu należy wykonać pierwszą Instruktaż.
@@ -40,7 +42,7 @@ W tym instruktażu przedstawiono sposób wykonywania następujących zadań:
 > Kroki opisane w tym instruktażu są oparte na projekcie w języku C#. Jednak z wyjątkiem określonych, takich jak rozszerzenia nazw plików i kod, można użyć tych samych kroków dla projektu Visual Basic.
 
 ## <a name="create-a-visual-studio-template"></a>Tworzenie szablonu programu Visual Studio
-- [Utwórz podstawowy system projektu, część 1 pokazuje,](../extensibility/creating-a-basic-project-system-part-1.md) jak utworzyć podstawowy szablon projektu i dodać go do systemu projektu. Pokazano również, jak zarejestrować ten szablon w programie Visual Studio przy użyciu <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> atrybutu, który zapisuje pełną ścieżkę folderu * \\ Templates\Projects\SimpleProject \\ * w rejestrze systemowym.
+- [Utwórz podstawowy system projektu, część 1 pokazuje,](../extensibility/creating-a-basic-project-system-part-1.md) jak utworzyć podstawowy szablon projektu i dodać go do systemu projektu. Pokazano również, jak zarejestrować ten szablon w programie Visual Studio przy użyciu <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> atrybutu, który zapisuje pełną ścieżkę folderu *\\ Templates\Projects\SimpleProject \\* w rejestrze systemowym.
 
 Przy użyciu szablonu programu Visual Studio (plik *. vstemplate* ) zamiast podstawowego szablonu projektu można kontrolować sposób wyświetlania szablonu w oknie dialogowym **Nowy projekt** oraz jak zastępuje się parametry szablonu. Plik *. vstemplate* jest plikiem XML, który opisuje, jak pliki źródłowe mają być uwzględniane podczas tworzenia projektu przy użyciu szablonu systemu projektu. Sam system projektu jest kompilowany przez zebranie pliku *. vstemplate* i plików źródłowych w pliku *zip* oraz wdrożenie przez skopiowanie pliku *zip* do lokalizacji znanej dla programu Visual Studio. Ten proces został szczegółowo opisany w dalszej części tego przewodnika.
 
@@ -55,7 +57,7 @@ Przy użyciu szablonu programu Visual Studio (plik *. vstemplate* ) zamiast pods
     LanguageVsTemplate = "SimpleProject")]
     ```
 
-3. Dodaj plik XML o nazwie *SimpleProject. vstemplate* do folderu * \\ Templates\Projects\SimpleProject \\ * .
+3. Dodaj plik XML o nazwie *SimpleProject. vstemplate* do folderu *\\ Templates\Projects\SimpleProject \\* .
 
 4. Zastąp zawartość *SimpleProject. vstemplate* następującym kodem.
 
@@ -83,7 +85,7 @@ Przy użyciu szablonu programu Visual Studio (plik *. vstemplate* ) zamiast pods
     </VSTemplate>
     ```
 
-5. W oknie **Właściwości** zaznacz wszystkie pięć plików w folderze * \\ Templates\Projects\SimpleProject \\ * i ustaw **akcję kompilacja** na **ZipProject**.
+5. W oknie **Właściwości** zaznacz wszystkie pięć plików w folderze *\\ Templates\Projects\SimpleProject \\* i ustaw **akcję kompilacja** na **ZipProject**.
 
     ![Prosty folder projektu](../extensibility/media/simpproj2.png "SimpProj2")
 
@@ -207,9 +209,9 @@ Węzły podrzędne są tworzone przez zmianę pliku projektu i dodanie \<OutputS
 
 W tej sekcji pokazano, jak utworzyć węzeł podrzędny konsoli dla typu projektu SimpleProject.
 
-1. Zmień nazwę folderu * \\ Templates\Projects\SimpleProject \\ * na * \\ Templates\Projects\ConsoleApp \\ *.
+1. Zmień nazwę folderu *\\ Templates\Projects\SimpleProject \\* na *\\ Templates\Projects\ConsoleApp \\*.
 
-2. W oknie **Właściwości** zaznacz wszystkie pięć plików w folderze * \\ Templates\Projects\ConsoleApp \\ * i upewnij się, że **Akcja kompilacja** jest ustawiona na **ZipProject**.
+2. W oknie **Właściwości** zaznacz wszystkie pięć plików w folderze *\\ Templates\Projects\ConsoleApp \\* i upewnij się, że **Akcja kompilacja** jest ustawiona na **ZipProject**.
 
 3. W pliku SimpleProject. vstemplate Dodaj następujący wiersz na końcu \<TemplateData> sekcji tuż przed tagiem zamykającym.
 
@@ -285,13 +287,13 @@ Podczas tworzenia projektu przy użyciu szablonu programu Visual Studio w oknie 
 
 1. W pliku *SimpleProjectNode.cs* Usuń `AddFileFromTemplate` metodę.
 
-2. W pliku * \\ Templates\Projects\ConsoleApp\SimpleProject.myproj* Znajdź \<RootNamespace> Właściwość i zmień jej wartość na $safeprojectname $.
+2. W pliku *\\ Templates\Projects\ConsoleApp\SimpleProject.myproj* Znajdź \<RootNamespace> Właściwość i zmień jej wartość na $safeprojectname $.
 
     ```
     <RootNamespace>$safeprojectname$</RootNamespace>
     ```
 
-3. W pliku * \\ Templates\Projects\SimpleProject\Program.cs* Zastąp zawartość pliku następującym kodem:
+3. W pliku *\\ Templates\Projects\SimpleProject\Program.cs* Zastąp zawartość pliku następującym kodem:
 
     ```
     using System;
@@ -315,7 +317,7 @@ Podczas tworzenia projektu przy użyciu szablonu programu Visual Studio w oknie 
 
 4. Skompiluj ponownie projekt SimpleProject i Rozpocznij debugowanie. Powinno zostać wyświetlone wystąpienie eksperymentalne.
 
-5. Utwórz nową aplikację konsolową SimpleProject. (W okienku **typy projektów** wybierz pozycję **SimpleProject**. W obszarze **zainstalowane szablony programu Visual Studio**wybierz pozycję **Aplikacja konsolowa**.
+5. Utwórz nową aplikację konsolową SimpleProject. (W okienku **typy projektów** wybierz pozycję **SimpleProject**. W obszarze **zainstalowane szablony programu Visual Studio** wybierz pozycję **Aplikacja konsolowa**.
 
 6. W nowo utworzonym projekcie Otwórz *program.cs*. Powinien wyglądać podobnie do poniższego (wartości identyfikatorów GUID w pliku będą się różnić).
 

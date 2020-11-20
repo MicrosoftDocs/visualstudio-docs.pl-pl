@@ -1,5 +1,7 @@
 ---
 title: Tworzenie edytorów niestandardowych i projektantów | Microsoft Docs
+description: 'Dowiedz się więcej o różnych typach edytorów, które mogą być hostowane przez środowisko IDE programu Visual Studio: podstawowy edytor, edytory niestandardowe, edytory zewnętrzne i projektanci.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9177e6f431eb24a337822dd7de0a0b9586e1de0e
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 9dd2d3923776cc0666a3efd12a32fc9e4e8735a0
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414259"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973614"
 ---
 # <a name="create-custom-editors-and-designers"></a>Tworzenie niestandardowych edytorów i projektantów
 
@@ -102,6 +104,6 @@ Wyjaśnia sposób implementacji usługi językowej.
 [Rozszerzając inne części programu Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)\
 Wyjaśnia, jak utworzyć elementy interfejsu użytkownika, które pasują do pozostałej części [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>

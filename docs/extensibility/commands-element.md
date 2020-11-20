@@ -1,5 +1,7 @@
 ---
 title: Commands — element | Microsoft Docs
+description: 'Element Commands reprezentuje kolekcję poleceń na pasku narzędzi pakietu VSPackage i może zawierać następujące sekcje: menu, grupy, przyciski, listy kombinowane i mapy bitowe.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ea2400cca19a02475caecec3d022e0b78794ae4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 59afdda5a9af3a779b65063c3c764ef4f284a265
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739686"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974504"
 ---
 # <a name="commands-element"></a>Commands, element
 Reprezentuje kolekcję poleceń na pasku narzędzi pakietu VSPackage. Kolekcja może zawierać maksymalnie pięć podsekcji: menu, grupy, przyciski, listy kombinowane i mapy bitowe.
@@ -88,6 +90,6 @@ Reprezentuje kolekcję poleceń na pasku narzędzi pakietu VSPackage. Kolekcja m
 <Commands>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Jak pakietów VSPackage Dodawanie elementów interfejsu użytkownika](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)

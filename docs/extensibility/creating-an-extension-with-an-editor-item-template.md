@@ -1,5 +1,7 @@
 ---
 title: Tworzenie rozszerzenia za pomocą szablonu elementu edytora | Microsoft Docs
+description: Dowiedz się, jak używać szablonów elementów w zestawie SDK programu Visual Studio, aby tworzyć podstawowe rozszerzenia edytora, które dodają klasyfikatory, elementy definiowania układu i marginesy do edytora.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91daa7e195435f33b93e6286cb19d820b4418d48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6264cb35e404d69900094513875fc7b79310a4d
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903836"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973743"
 ---
 # <a name="create-an-extension-with-an-editor-item-template"></a>Tworzenie rozszerzenia z szablonem elementu edytora
 Za pomocą szablonów elementów zawartych w zestawie SDK programu Visual Studio można tworzyć podstawowe rozszerzenia edytora, które dodają klasyfikatory, elementy definiowania układu i marginesy do edytora. Szablony elementów edytora są dostępne dla projektów programu Visual C# lub Visual Basic VSIX.
@@ -28,7 +30,7 @@ Za pomocą szablonów elementów zawartych w zestawie SDK programu Visual Studio
 
 1. W oknie dialogowym **Nowy projekt** rozwiń pozycję **Visual C#** lub **Visual Basic** a następnie kliknij pozycję **rozszerzalność**. W okienku **Szablony** wybierz pozycję **Projekt VSIX**. W polu **Nazwa** wpisz `TestClassifier`. Kliknij przycisk **OK**.
 
-2. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >  **nowy element**. Przejdź do węzła **rozszerzalności** Visual C# i wybierz pozycję **klasyfikator edytora**. Pozostaw domyślną nazwę pliku (*EditorClassifier1.cs*).
+2. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >  **nowy element**. Przejdź do węzła **rozszerzalności** Visual C# i wybierz pozycję **klasyfikator edytora**. Pozostaw domyślną nazwę pliku (*EditorClassifier1.cs*).
 
 3. Istnieją cztery pliki kodu:
 
@@ -49,7 +51,7 @@ Za pomocą szablonów elementów zawartych w zestawie SDK programu Visual Studio
 
 1. W oknie dialogowym **Nowy projekt** rozwiń pozycję **Visual C#** lub **Visual Basic** a następnie kliknij pozycję **rozszerzalność**. W okienku **Szablony** wybierz pozycję **Projekt VSIX**. W polu **Nazwa** wpisz `TestAdornment`. Kliknij przycisk **OK**.
 
-2. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >  **nowy element**. Przejdź do węzła **rozszerzalności** Visual C# i wybierz pozycję **Edytor tekstów edytora**. Pozostaw domyślną nazwę pliku (*TextAdornment1.cs/VB*).
+2. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >  **nowy element**. Przejdź do węzła **rozszerzalności** Visual C# i wybierz pozycję **Edytor tekstów edytora**. Pozostaw domyślną nazwę pliku (*TextAdornment1.cs/VB*).
 
 3. Istnieją dwa pliki kodu:
 
@@ -69,7 +71,7 @@ Za pomocą szablonów elementów zawartych w zestawie SDK programu Visual Studio
 
 1. W oknie dialogowym **Nowy projekt** rozwiń pozycję **Visual C#** lub **Visual Basic** a następnie kliknij pozycję **rozszerzalność**. W okienku **Szablony** wybierz pozycję **Projekt VSIX**. W polu **Nazwa** wpisz `ViewportAdornment`. Kliknij przycisk **OK**.
 
-2. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >  **nowy element**. Przejdź do węzła **rozszerzalności** Visual C# i wybierz pozycję **Edytor definiowania okienka ekranu edytora**. Pozostaw domyślną nazwę pliku (*ViewportAdornment1.cs/VB*).
+2. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >  **nowy element**. Przejdź do węzła **rozszerzalności** Visual C# i wybierz pozycję **Edytor definiowania okienka ekranu edytora**. Pozostaw domyślną nazwę pliku (*ViewportAdornment1.cs/VB*).
 
 3. Istnieją dwa pliki kodu:
 
@@ -86,7 +88,7 @@ Za pomocą szablonów elementów zawartych w zestawie SDK programu Visual Studio
 
 1. W oknie dialogowym **Nowy projekt** rozwiń pozycję **Visual C#** lub **Visual Basic** a następnie kliknij pozycję **rozszerzalność**. W okienku **Szablony** wybierz pozycję **Projekt VSIX**. W polu **Nazwa** wpisz `MarginExtension`. Kliknij przycisk **OK**.
 
-2. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >  **nowy element**. Przejdź do węzła **rozszerzalności** Visual C# i wybierz pozycję **margines edytora**. Pozostaw domyślną nazwę pliku (EditorMargin1.cs/vb).
+2. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >  **nowy element**. Przejdź do węzła **rozszerzalności** Visual C# i wybierz pozycję **margines edytora**. Pozostaw domyślną nazwę pliku (EditorMargin1.cs/vb).
 
 3. Istnieją dwa pliki kodu:
 
@@ -96,5 +98,5 @@ Za pomocą szablonów elementów zawartych w zestawie SDK programu Visual Studio
 
 4. Kompiluj ten projekt i Rozpocznij debugowanie. Zostanie wyświetlone wystąpienie eksperymentalne. Jeśli otworzysz plik tekstowy, zielony margines zawierający słowa **Hello EditorMargin1** jest wyświetlany poniżej poziomego paska przewijania.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Punkty rozszerzenia usługi językowej i edytora](../extensibility/language-service-and-editor-extension-points.md)

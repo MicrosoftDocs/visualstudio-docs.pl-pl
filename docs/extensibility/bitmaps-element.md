@@ -1,5 +1,7 @@
 ---
 title: Bitmaps — element | Microsoft Docs
+description: Element mapy bitowe grupuje jeden lub więcej elementów mapy bitowej. Ten artykuł zawiera przykład elementu mapy bitowe.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85310923134a6db59f1b6a3a15ac4b96a127e239
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd3222e24c6e90380ec9c5836bed583ba95eaa68
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739989"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974570"
 ---
 # <a name="bitmaps-element"></a>Bitmapy, element
 Grupuje elementy [elementu mapy bitowej](../extensibility/bitmap-element.md) .
@@ -62,6 +64,6 @@ Grupuje elementy [elementu mapy bitowej](../extensibility/bitmap-element.md) .
 </Bitmaps>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Jak pakietów VSPackage Dodawanie elementów interfejsu użytkownika](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)

@@ -1,5 +1,7 @@
 ---
 title: Tworzenie modalnych okien dialogowych i zarządzanie nimi | Microsoft Docs
+description: Dowiedz się, jak utworzyć modalne okno dialogowe w programie Visual Studio, zarówno przy użyciu DialogWindow, jak i bez użycia DialogWindow.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2f4f296bb155bcde82235d962ae63c8fa4d41d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c95f03ee71a827380539404a90cd79d50232e488
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903780"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973619"
 ---
 # <a name="create-and-manage-modal-dialog-boxes"></a>Tworzenie modalnych okien dialogowych i zarządzanie nimi
 Gdy tworzysz modalne okno dialogowe w programie Visual Studio, musisz upewnić się, że okno dialogowe nadrzędne jest wyłączone podczas wyświetlania okna dialogowego, a następnie ponownie włącz okno nadrzędne po zamknięciu okna dialogowego. Jeśli tego nie zrobisz, może zostać wyświetlony komunikat o błędzie: *Microsoft Visual Studio nie może zostać zamknięty, ponieważ modalne okno dialogowe jest aktywne. Zamknij aktywne okno dialogowe i spróbuj ponownie.*

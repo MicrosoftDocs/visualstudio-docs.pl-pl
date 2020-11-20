@@ -1,5 +1,7 @@
 ---
 title: Flagi możliwości | Microsoft Docs
+description: Dowiedz się więcej na temat SCC_CAP_xxx flag, które wskazują możliwości wtyczki kontroli źródła i SCC_EXCAP_xxx flagi wskazujące rozszerzone możliwości.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9660cbe5a18e82974858fa4d923a38fc73e773f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b80672b00bec95c740824ef7e29f1faba0e63cf4
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739866"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974447"
 ---
 # <a name="capability-flags"></a>Flagi możliwości
-Flagi SCC_CAP_*XXX* są flagami bitowymi używanymi do wskazywania możliwości wtyczki kontroli źródła. Flagi SCC_EXCAP_*XXX* są flagami przyrostowymi, które wskazują rozszerzone możliwości i rozwiązują wartości całkowite.
+Flagi SCC_CAP_ *XXX* są flagami bitowymi używanymi do wskazywania możliwości wtyczki kontroli źródła. Flagi SCC_EXCAP_ *XXX* są flagami przyrostowymi, które wskazują rozszerzone możliwości i rozwiązują wartości całkowite.
 
 |Kod możliwości|Wartość|Opis|
 |---------------------|-----------|-----------------|
@@ -77,5 +79,5 @@ Flagi SCC_CAP_*XXX* są flagami bitowymi używanymi do wskazywania możliwości 
 |`SCC_EXCAP_DELETE_CHECKEDOUT`|10|Może usuwać wyewidencjonowane pliki.|
 |`SCC_EXCAP_RENAME_CHECKEDOUT`|11|Można zmienić nazwy wyewidencjonowanych plików.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wtyczki kontroli źródła](../extensibility/source-control-plug-ins.md)

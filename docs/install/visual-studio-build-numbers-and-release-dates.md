@@ -5,19 +5,19 @@ description: Lista wydanych wersji i numery kompilacji dla programu Visual Studi
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 11/12/2020
+ms.date: 11/19/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 1a1807102fc0f8b62d9cf4830783de1f5348499b
-ms.sourcegitcommit: f915322d60182143da7036893d2941bc200cf439
+ms.openlocfilehash: 72e6e4cdc14f87080bb9e7a6faf3285c49270d78
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94575466"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973964"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numery wersji i daty wydania programu Visual Studio
 
@@ -29,12 +29,13 @@ W poniższej tabeli wymieniono numery kompilacji i daty wydania dla programu Vis
 
 | **Wersja**| **Kanał** | **Data wydania** | **Wersja kompilacji** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
-| 16.8.1 | Release | 12 listopada 2020 | 16.8.30711.63 |
-| 16.9.0 | Wersja zapoznawcza 1 | 10 listopada 2020 | 16.9.30709.64 |
-| 16.7.8 | Release | 10 listopada 2020 | 16.7.30704.19 |
-| 16.4.15 | Release | 10 listopada 2020 | 16.4.30703.110 |
-| 16.0.20 | Release | 10 listopada 2020 | 16.0.28803.868 |
-| 16.8.0 | Release | 10 listopada 2020 | 16.8.30709.132 |
+| 16.8.2 | Release | 19 listopada 2020 | 16.8.30717.126 |
+| 16.8.1 | Release | 12 listopada 2020 r. | 16.8.30711.63 |
+| 16.9.0 | Wersja zapoznawcza 1 | 10 listopada 2020 r. | 16.9.30709.64 |
+| 16.7.8 | Release | 10 listopada 2020 r. | 16.7.30704.19 |
+| 16.4.15 | Release | 10 listopada 2020 r. | 16.4.30703.110 |
+| 16.0.20 | Release | 10 listopada 2020 r. | 16.0.28803.868 |
+| 16.8.0 | Release | 10 listopada 2020 r. | 16.8.30709.132 |
 | 16.8.0 | Wersja zapoznawcza 6 | 27 października 2020 r. | 16.8.30626.31 |
 | 16.7.7 | Release | 27 października 2020 r. | 16.7.30621.155 |
 | 16.8.0 | Wersja zapoznawcza 5 | 20 października 2020 | 16.8.30615.102 |
@@ -193,7 +194,7 @@ W poniższej tabeli wymieniono numery kompilacji i daty wydania dla programu Vis
 
 | **Wersja**| **Kanał** | **Data wydania** | **Wersja kompilacji** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
-| 15.9.29 | Release | 10 listopada 2020 | 15.9.28307.1300 |
+| 15.9.29 | Release | 10 listopada 2020 r. | 15.9.28307.1300 |
 | 15.9.28 | Release | 13 października 2020 r. | 15.9.28307.1274 |
 | 15.9.27 | Release | 8 września 2020 r. | 15.9.28307.1259 |
 | 15.9.26 | Release | 11 sierpnia 2020 r. | 15.9.28307.1234 |
@@ -373,7 +374,7 @@ W poniższej tabeli wymieniono numery kompilacji i daty wydania dla programu Vis
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 * [Harmonogram działania programu Visual Studio](/visualstudio/productinfo/vs-roadmap)
 * [Rytm wydawania programu Visual Studio](/visualstudio/productinfo/release-rhythm)

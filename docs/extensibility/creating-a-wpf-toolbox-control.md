@@ -1,5 +1,7 @@
 ---
 title: Tworzenie kontrolki przybornika WPF | Microsoft Docs
+description: Dowiedz się, jak za pomocą szablonu kontrolki przybornika WPF utworzyć formant przybornika, który można dystrybuować do innych użytkowników.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6aa6051648e495e21f7954a737f7b572ce6a6f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6dbe9ed00223fa549420537579d39a4c88cf37cb
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903948"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973971"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>Tworzenie kontrolki przybornika WPF
 
@@ -31,9 +33,9 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
 
 1. Utwórz projekt VSIX o nazwie `MyToolboxControl` . Szablon projektu VSIX można znaleźć w oknie dialogowym **Nowy projekt** , wyszukując frazę "VSIX".
 
-2. Po otwarciu projektu Dodaj szablon elementu **kontrolki przybornika WPF** o nazwie `MyToolboxControl` . W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >  **nowy element**. W oknie dialogowym **Dodaj nowy element** przejdź do rozszerzalności **Visual C#**  >  **Extensibility** i wybierz **kontrolkę Przybornik WPF**. W polu **Nazwa** w dolnej części okna Zmień nazwę pliku polecenia na *MyToolboxControl.cs*.
+2. Po otwarciu projektu Dodaj szablon elementu **kontrolki przybornika WPF** o nazwie `MyToolboxControl` . W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >  **nowy element**. W oknie dialogowym **Dodaj nowy element** przejdź do rozszerzalności **Visual C#**  >  **Extensibility** i wybierz **kontrolkę Przybornik WPF**. W polu **Nazwa** w dolnej części okna Zmień nazwę pliku polecenia na *MyToolboxControl.cs*.
 
-    Rozwiązanie zawiera teraz kontrolkę użytkownika, `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> która dodaje formant do **przybornika**i wpis zasobu **Microsoft. VISUALSTUDIO. ToolboxControl** w manifeście VSIX dla wdrożenia.
+    Rozwiązanie zawiera teraz kontrolkę użytkownika, `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> która dodaje formant do **przybornika** i wpis zasobu **Microsoft. VISUALSTUDIO. ToolboxControl** w manifeście VSIX dla wdrożenia.
 
 #### <a name="to-create-the-control-ui"></a>Aby utworzyć interfejs użytkownika kontrolki
 

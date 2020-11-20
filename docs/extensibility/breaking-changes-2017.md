@@ -1,5 +1,7 @@
 ---
 title: Istotne zmiany w rozszerzalności programu Visual Studio 2017
+description: Zapoznaj się z informacjami technicznymi dotyczącymi istotnych zmian w modelu rozszerzalności w programie Visual Studio 2017 i co możesz zrobić, aby rozwiązać te problemy.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 11/09/2016
 ms.topic: conceptual
@@ -9,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d872003b319773401ef4da72c1fac8dc177ecbdb
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 3121189b1d73543d2a01bbf0b149c6a98eab6909
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011791"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973756"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Zmiany w rozszerzalności programu Visual Studio 2017
 
@@ -70,7 +72,7 @@ Większość zestawów podstawowych programu Visual Studio nie jest już zainsta
   * Kopia w pamięci podręcznej GAC została usunięta z Instalatora.
   * Dodano plik *. pkgdef* , aby określić podstawowy wpis kodu dla zestawu.
 
-    Na przykład:
+    Przykład:
 
     ```
     [$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{UniqueGUID}]
@@ -98,7 +100,7 @@ Większość zestawów podstawowych programu Visual Studio nie jest już zainsta
 ### <a name="global-com-registration"></a>Globalna Rejestracja modelu COM
 
 * Wcześniej program Visual Studio zainstalował wiele kluczy rejestru w HKEY_CLASSES_ROOT i HKEY_LOCAL_MACHINE Hive w celu obsługi rejestracji natywnego modelu COM. Aby wyeliminować ten wpływ, program Visual Studio używa teraz [aktywacji bezpłatnej do rejestracji składników modelu COM](/previous-versions/dotnet/articles/ms973913(v=msdn.10)).
-* W związku z tym większość plików TLB/OLB/DLL w folderze% ProgramFiles (x86)% \ Common Files\Microsoft Shared\MSEnv nie jest już instalowana domyślnie przez program Visual Studio. Te pliki są teraz zainstalowane w obszarze [INSTALLDIR] z odpowiednimi manifestami COM bez rejestracji używanymi przez proces hosta programu Visual Studio.
+* W związku z tym większość plików TLB/OLB/DLL w folderze% ProgramFiles (x86)% \ Common Files\Microsoft Shared\MSEnv nie jest już instalowana domyślnie przez program Visual Studio. Te pliki są teraz zainstalowane w obszarze [INSTALLDIR] z odpowiednimi manifestami COM Registration-Free używanymi przez proces hosta programu Visual Studio.
 * W rezultacie kod zewnętrzny, który opiera się na globalnej rejestracji modelu COM dla interfejsów COM programu Visual Studio, nie będzie już znajdować tych rejestracji. Kod uruchomiony w procesie programu Visual Studio nie będzie widział różnic.
 
 ### <a name="visual-studio-registry"></a>Rejestr programu Visual Studio
@@ -115,7 +117,7 @@ Większość zestawów podstawowych programu Visual Studio nie jest już zainsta
 
 ### <a name="react-to-this-breaking-change"></a>Reagowanie na tę nieprzerwaną zmianę
 
-* Kod zewnętrzny należy przekonwertować, aby można było również używać aktywacji bezpłatnej do rejestracji składników COM.
+* Kod zewnętrzny należy przekonwertować, aby używać również aktywacji Registration-Free dla składników COM.
 * Składniki zewnętrzne mogą znaleźć lokalizację programu Visual Studio [, postępując zgodnie ze wskazówkami tutaj](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup).
 * Firma Microsoft zaleca, aby składniki zewnętrzne używały [Menedżera ustawień zewnętrznych](/dotnet/api/microsoft.visualstudio.settings.externalsettingsmanager) zamiast odczytywania/zapisywania bezpośrednio w kluczach rejestru programu Visual Studio.
 * Sprawdź, czy składniki używane przez rozszerzenie mogły zaimplementować inną technikę do rejestracji. Na przykład rozszerzenia debugera mogą być w stanie skorzystać z nowej [rejestracji modelu COM msvsmon JSON](migrate-debugger-COM-registration.md).

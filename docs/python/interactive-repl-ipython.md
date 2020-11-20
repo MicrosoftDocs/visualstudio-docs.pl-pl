@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b1fe36a4ee74ca1b41c1db1d79a6e4683c1f2b1f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e53ef96ad8fab8b26f04ccd5f7f0488d1f0d6985
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542431"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974073"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>Użyj IPython w oknie interaktywnym
 
@@ -80,8 +80,6 @@ W tym instruktażu należy zainstalować środowisko [Anaconda](https://www.cont
 
 IPython ma wiele innych użytecznych funkcji, takich jak ucieczki do powłoki systemowej, podstawienia zmiennych, przechwytywania danych wyjściowych itp. Więcej informacji można znaleźć w [dokumentacji IPython](https://ipython.org/documentation.html) .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
-- Aby korzystać z Jupyter z łatwością i bez instalacji, wypróbuj bezpłatną [Azure Notebooks hostowaną usługę](https://notebooks.azure.com/) , która umożliwia utrzymywanie i udostępnianie notesów innym osobom.
-
-- [Usługa Azure Data Science Virtual Machine](/azure/machine-learning/data-science-virtual-machine/overview) jest również wstępnie skonfigurowana do uruchamiania notesów Jupyter oraz szerokiej gamy innych narzędzi do nauki o danych.
+- [Data Science Virtual Machine platformy Azure](/azure/machine-learning/data-science-virtual-machine/overview) jest wstępnie skonfigurowany do uruchamiania notesów Jupyter oraz szerokiej gamy innych narzędzi do nauki o danych.

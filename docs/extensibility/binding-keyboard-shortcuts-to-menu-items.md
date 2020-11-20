@@ -1,5 +1,7 @@
 ---
 title: Powiązywanie skrótów klawiaturowych z elementami menu | Microsoft Docs
+description: Dowiedz się, jak zmapować skrót klawiaturowy w programie Visual Studio do niestandardowego przycisku, elementu menu lub polecenia paska narzędzi dla edytora domyślnego lub niestandardowego edytora.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8df973ef6a75a9134b4ee6e945a5702708ece712
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: 112089581965b96133f2160341a13efe23329934
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407721"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974627"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>Powiąż skróty klawiaturowe z elementami menu
 Aby powiązać skrót klawiaturowy z niestandardowym poleceniem menu, po prostu Dodaj wpis do pliku *. vsct* pakietu. W tym temacie opisano sposób mapowania skrótu klawiaturowego na przycisk niestandardowy, element menu lub polecenie paska narzędzi oraz sposób zastosowania mapowania klawiatury w domyślnym edytorze lub ograniczanie go do niestandardowego edytora.
@@ -59,7 +61,7 @@ Aby powiązać skrót klawiaturowy z niestandardowym poleceniem menu, po prostu 
 
     Ustaw `guid`  atrybuty i  `id` dla poleceń, które chcesz wywołać.
 
-    Ustaw `mod1` atrybut na **Control** , **Alt** lub **SHIFT**.
+    Ustaw `mod1` atrybut na **Control**, **Alt** lub **SHIFT**.
 
     Sekcja powiązania klawiszy powinna wyglądać następująco:
 
@@ -105,5 +107,5 @@ Aby powiązać skrót klawiaturowy z niestandardowym poleceniem menu, po prostu 
 <KeyBinding guid="guidVSStd97" id="cmdidBold" editor="guidTestEditorEditorFactory" key1="B" mod1="Control" />
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Rozszerzanie menu i poleceń](../extensibility/extending-menus-and-commands.md)

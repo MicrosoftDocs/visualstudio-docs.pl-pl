@@ -1,5 +1,7 @@
 ---
 title: Wybieranie między udostępnianymi i pakietów VSPackage z wersjami | Microsoft Docs
+description: Dowiedz się więcej na temat instalacji równoległych pakietów VSPackage za pomocą strategii udostępnionych lub z obsługą wersji z wieloma wersjami programu Visual Studio i .NET Framework.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96386c2d3b7d1e822fdd1dd6632d754740f86301
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 725dd8368bd4db9509426fa1a98ce56ef85bc3c0
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011934"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974403"
 ---
 # <a name="choose-between-shared-and-versioned-vspackages"></a>Wybierz między udostępnionym i z wersją pakietów VSPackage
 Różne wersje programu Visual Studio mogą współistnieć na tym samym komputerze. Pakietów VSPackage może obsługiwać dowolne różne [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wersje.

@@ -1,5 +1,7 @@
 ---
 title: Tworzenie kategorii ustawień | Microsoft Docs
+description: Dowiedz się, jak utworzyć kategorię ustawień programu Visual Studio i użyć jej do zapisywania i przywracania wartości z pliku ustawień.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03d50ca998efa034b1d4392c1fb7cecb8de8ed06
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 468b1a44fb4754f86b31992e2c6d96bf6380592d
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904022"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974549"
 ---
 # <a name="create-a-settings-category"></a>Utwórz kategorię ustawień
 
@@ -48,18 +50,18 @@ Aby rozpocząć ten przewodnik, należy najpierw wykonać pierwszą sekcję [two
     > [!NOTE]
     > Z tych trzech, tylko nazwa kategorii nie jest wyświetlana w kreatorze **importowania i eksportowania ustawień** .
 
-3. W *MyToolsOptionsPackage.cs*Dodaj `float` Właściwość o nazwie `OptionFloat` do `OptionPageGrid` klasy, jak pokazano w poniższym przykładzie.
+3. W *MyToolsOptionsPackage.cs* Dodaj `float` Właściwość o nazwie `OptionFloat` do `OptionPageGrid` klasy, jak pokazano w poniższym przykładzie.
 
     ```csharp
-    public class OptionPageGrid : DialogPage
+    public class OptionPageGrid : DialogPage
     {
-        private int optionInt = 256;
-        private float optionFloat = 3.14F;
+        private int optionInt = 256;
+        private float optionFloat = 3.14F;
 
         [Category("My Options")]
         [DisplayName("My Integer option")]
         [Description("My integer option")]
-        public int OptionInteger
+        public int OptionInteger
         {
             get { return optionInt; }
             set { optionInt = value; }
@@ -67,7 +69,7 @@ Aby rozpocząć ten przewodnik, należy najpierw wykonać pierwszą sekcję [two
         [Category("My Options")]
         [DisplayName("My Float option")]
         [Description("My float option")]
-        public float OptionFloat
+        public float OptionFloat
         {
             get { return optionFloat; }
             set { optionFloat = value; }
@@ -92,7 +94,7 @@ Aby rozpocząć ten przewodnik, należy najpierw wykonać pierwszą sekcję [two
 
 1. Uruchom projekt w trybie debugowania, naciskając klawisz **F5**. Spowoduje to uruchomienie eksperymentalnego wystąpienia.
 
-2. Otwórz **Tools**  >  okno dialogowe**Opcje** narzędzi.
+2. Otwórz **Tools**  >  okno dialogowe **Opcje** narzędzi.
 
 3. W widoku drzewa w lewym okienku rozwiń węzeł **moja Kategoria** , a następnie kliknij pozycję **moja strona siatki**.
 
@@ -114,7 +116,7 @@ Aby rozpocząć ten przewodnik, należy najpierw wykonać pierwszą sekcję [two
 
      Zostanie wyświetlona strona **Nazwij plik ustawień** .
 
-9. Nadaj nazwę nowemu plikowi ustawień *. vssettings* i Zapisz ją w odpowiednim katalogu. Kliknij przycisk **Zakończ**.
+9. Nadaj nazwę nowemu plikowi ustawień *. vssettings* i Zapisz ją w odpowiednim katalogu. Kliknij przycisk **Finish** (Zakończ).
 
      Na stronie **Eksportowanie zakończą** się raporty, że Twoje ustawienia zostały pomyślnie wyeksportowane.
 

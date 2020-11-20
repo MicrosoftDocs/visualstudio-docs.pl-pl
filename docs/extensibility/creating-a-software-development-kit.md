@@ -1,5 +1,7 @@
 ---
 title: Tworzenie zestawu Software Development Kit | Microsoft Docs
+description: Dowiedz się więcej na temat ogólnej infrastruktury zestawów SDK i sposobu tworzenia zestawu SDK platformy i rozszerzenia SDK.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61e547be5f240cafccc058eb7ea2249fd492554b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b3a793e3d7233eb1b6d0aaaa74fbe16d52cf6f43
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904116"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974323"
 ---
 # <a name="create-a-software-development-kit"></a>Tworzenie zestawu SDK
 
@@ -53,7 +55,7 @@ Zestawy SDK platformy mają następujący układ:
 | Węzeł | Opis |
 |------------------------| - |
 | Folder *odwołań* | Zawiera pliki binarne, które zawierają interfejsy API, które można zakodować. Mogą to być pliki lub zestawy metadanych systemu Windows (WinMD). |
-| Folder *DesignTime* | Zawiera pliki, które są wymagane tylko w czasie przed uruchomieniem/debugowaniem. Mogą to być dokumenty XML, biblioteki, nagłówki, Przybornik plików binarnych czasu projektowania, artefakty programu MSBuild i tak dalej.<br /><br /> Dokumentacja XML zostałaby, najlepiej umieszczona w folderze *\DesignTime* , ale dokumentacja XML dla odwołań będzie nadal umieszczana obok pliku referencyjnego w programie Visual Studio. Na przykład dokument XML dla odwołania<em>\References \\ [config] \\ [arch] \sample.dll</em> będzie *\References \\ [config] \\ [arch] \sample.xml*, a zlokalizowana wersja tego dokumentu będzie *\References \\ [config] \\ [arch] \\ [locale] \sample.xml*. |
+| Folder *DesignTime* | Zawiera pliki, które są wymagane tylko w czasie przed uruchomieniem/debugowaniem. Mogą to być dokumenty XML, biblioteki, nagłówki, Przybornik plików binarnych czasu projektowania, artefakty programu MSBuild i tak dalej.<br /><br /> Dokumentacja XML zostałaby, najlepiej umieszczona w folderze *\DesignTime* , ale dokumentacja XML dla odwołań będzie nadal umieszczana obok pliku referencyjnego w programie Visual Studio. Na przykład dokument XML dla odwołania <em>\References \\ [config] \\ [arch] \sample.dll</em> będzie *\References \\ [config] \\ [arch] \sample.xml*, a zlokalizowana wersja tego dokumentu będzie *\References \\ [config] \\ [arch] \\ [locale] \sample.xml*. |
 | Folder *konfiguracji* | Może istnieć tylko trzy foldery: *Debug*, *handel detaliczny* i *CommonConfiguration*. Autorzy zestawu SDK mogą umieścić pliki w obszarze *CommonConfiguration* , jeśli ten sam zestaw plików zestawu SDK ma być używany, niezależnie od konfiguracji, która będzie celem odbiorcy zestawu SDK. |
 | Folder *architektury* | Może istnieć każdy obsługiwany folder *architektury* . Program Visual Studio obsługuje następujące architektury: x86, x64, ARM i neutralny. Uwaga: system Win32 jest mapowany na architekturę x86, a następnie jest mapowany na neutralną.<br /><br /> MSBuild sprawdza się tylko w obszarze *\CommonConfiguration\neutral* for Platform SDK. |
 | *SDKManifest.xml* | W tym pliku opisano, jak program Visual Studio powinien korzystać z zestawu SDK. Zapoznaj się z manifestem zestawu SDK dla [!INCLUDE[win81](../debugger/includes/win81_md.md)] :<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **Nazwa wyświetlana:** Wartość, która Przeglądarka obiektów wyświetlana na liście Przeglądaj.<br /><br /> **PlatformIdentity:** Istnienie tego atrybutu nakazuje programowi Visual Studio i MSBuild, że zestaw SDK jest zestawem SDK platformy i że odwołania dodane z niego nie powinny zostać skopiowane lokalnie.<br /><br /> **TargetFramework:** Ten atrybut jest używany przez program Visual Studio, aby upewnić się, że tylko projekty, które są przeznaczone dla tych samych platform, jak określono w wartości tego atrybutu mogą korzystać z zestawu SDK.<br /><br /> **Brakuje MinVSVersion:** Ten atrybut jest używany przez program Visual Studio do korzystania tylko z zestawów SDK, które mają do nich zastosowanie.<br /><br /> **Dokumentacja:** Ten atrybut musi być określony tylko dla odwołań zawierających formanty. Aby uzyskać informacje na temat sposobu określania, czy odwołanie zawiera kontrolki, zobacz poniżej. |
@@ -107,7 +109,7 @@ Zestawy SDK rozszerzeń mają następujący układ instalacji:
 
 2. Folder *References* : pliki binarne, które zawierają interfejsy API. Mogą to być pliki lub zestawy metadanych systemu Windows (WinMD).
 
-3. Folder *Redist* : pliki, które są potrzebne do środowiska uruchomieniowego/debugowania, powinny być spakowane jako część aplikacji użytkownika. Wszystkie pliki binarne należy umieścić poniżej *\redist \\<config \> \\<Arch \> *, a nazwy binarne powinny mieć następujący format, aby zapewnić unikatowość: *]* \<company> . \<product> \<purpose> \<extension> .. <em>. Na przykład * Microsoft.Cpp.Build.dll</em>. Wszystkie pliki o nazwach, które mogą koliduje z nazwami plików z innych zestawów SDK (na przykład JavaScript, CSS, pri, XAML, PNG i jpg), powinny być umieszczone poniżej <em>\redist \\<config \> \\<Arch \> \\<SDKName \> \* , z wyjątkiem plików, które są skojarzone z kontrolkami XAML. Pliki te powinny być umieszczone poniżej * \redist \\<config \> \\<Arch \> \\<ComponentName \> \\ </em>.
+3. Folder *Redist* : pliki, które są potrzebne do środowiska uruchomieniowego/debugowania, powinny być spakowane jako część aplikacji użytkownika. Wszystkie pliki binarne należy umieścić poniżej *\redist \\<config \> \\<Arch \>*, a nazwy binarne powinny mieć następujący format, aby zapewnić unikatowość: *]* \<company> . \<product> \<purpose> \<extension> .. <em>. Na przykład * Microsoft.Cpp.Build.dll</em>. Wszystkie pliki o nazwach, które mogą koliduje z nazwami plików z innych zestawów SDK (na przykład JavaScript, CSS, pri, XAML, PNG i jpg), powinny być umieszczone poniżej <em>\redist \\<config \> \\<Arch \> \\<SDKName \> \* , z wyjątkiem plików, które są skojarzone z kontrolkami XAML. Pliki te powinny być umieszczone poniżej * \redist \\<config \> \\<Arch \> \\<ComponentName \> \\ </em>.
 
 4. Folder *DesignTime* : pliki, które są wymagane tylko w czasie przed uruchomieniem/debugowaniem i nie powinny być spakowane jako część aplikacji użytkownika. Mogą to być dokumenty XML, biblioteki, nagłówki, Przybornik plików binarnych czasu projektowania, artefakty programu MSBuild i tak dalej. Każdy zestaw SDK, który jest przeznaczony do użycia przez projekt natywny, musi mieć plik *SDKName. props* . Poniżej przedstawiono przykład tego typu pliku.
 
@@ -129,7 +131,7 @@ Zestawy SDK rozszerzeń mają następujący układ instalacji:
 
     Dokumenty odwołań XML są umieszczane obok pliku referencyjnego. Na przykład dokument referencyjny XML dla zestawu *\References \\<config \> \\<Arch \>\sample.dll* jest *\References \\<konfiguracji \> \\<Arch \>\sample.xml*, a zlokalizowana wersja tego dokumentu to *\References \\<konfiguracja \> \\<Arch \> \\<ustawienia regionalne \>\sample.xml*.
 
-5. Folder *konfiguracji* : trzy podfoldery: *debugowanie*, *sprzedaż detaliczna*i *CommonConfiguration*. Autorzy zestawu SDK mogą umieszczać swoje pliki w *CommonConfiguration* , gdy ten sam zestaw plików zestawu SDK powinien być używany, niezależnie od konfiguracji wskazywanej przez klienta zestawu SDK.
+5. Folder *konfiguracji* : trzy podfoldery: *debugowanie*, *sprzedaż detaliczna* i *CommonConfiguration*. Autorzy zestawu SDK mogą umieszczać swoje pliki w *CommonConfiguration* , gdy ten sam zestaw plików zestawu SDK powinien być używany, niezależnie od konfiguracji wskazywanej przez klienta zestawu SDK.
 
 6. Folder *architektury* : obsługiwane są następujące architektury: x86, x64, ARM, neutralna. System Win32 jest mapowany na architekturę x86 i jest mapowany na neutralną.
 
@@ -183,7 +185,7 @@ Poniższa lista zawiera elementy pliku:
 
 10. SupportsMultipleVersions: Jeśli ten atrybut ma wartość **Error** lub **Warning**, MSBuild wskazuje, że ten sam projekt nie może odwoływać się do wielu wersji tej samej rodziny zestawów SDK. Jeśli ten atrybut nie istnieje lub jest ustawiony na **Zezwalaj**, MSBuild nie wyświetla tego typu błędu ani Ostrzeżenia.
 
-11. AppX: Określa ścieżkę do pakietów aplikacji dla biblioteki składników systemu Windows na dysku. Ta wartość jest przenoszona do składnika rejestracji biblioteki składników systemu Windows podczas lokalnego debugowania. Konwencja nazewnictwa dla nazwy pliku to * \<Company> . \<Product> . \<Architecture> . \<Configuration> \<Version> . APPX*. Konfiguracja i architektura są opcjonalne w nazwie atrybutu i wartości atrybutu, jeśli nie mają zastosowania do biblioteki składników systemu Windows. Ta wartość ma zastosowanie tylko do bibliotek składników systemu Windows.
+11. AppX: Określa ścieżkę do pakietów aplikacji dla biblioteki składników systemu Windows na dysku. Ta wartość jest przenoszona do składnika rejestracji biblioteki składników systemu Windows podczas lokalnego debugowania. Konwencja nazewnictwa dla nazwy pliku to *\<Company> . \<Product> . \<Architecture> . \<Configuration> \<Version> . APPX*. Konfiguracja i architektura są opcjonalne w nazwie atrybutu i wartości atrybutu, jeśli nie mają zastosowania do biblioteki składników systemu Windows. Ta wartość ma zastosowanie tylko do bibliotek składników systemu Windows.
 
 12. CopyRedistToSubDirectory: określa, gdzie należy skopiować pliki w folderze *\redist* względem katalogu głównego pakietu aplikacji (czyli **lokalizacji pakietu** wybranej w kreatorze **tworzenia pakietu aplikacji** ) i katalogu głównego układu środowiska uruchomieniowego. Domyślną lokalizacją jest katalog główny pakietu aplikacji i układu **F5** .
 
@@ -267,7 +269,7 @@ Element **ToolBoxItems** schematu *SDKManifest.xml* Określa kategorię i lokali
     </File>
     ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Przewodnik: Tworzenie zestawu SDK przy użyciu języka C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)
 - [Przewodnik: Tworzenie zestawu SDK przy użyciu języka C# lub Visual Basic](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)

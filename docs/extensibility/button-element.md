@@ -1,5 +1,7 @@
 ---
 title: Button — element | Microsoft Docs
+description: 'Element Button definiuje element, z którym użytkownik może korzystać. Przyciski mogą być różnego rodzaju: Button, MenuButton i SplitDropDown.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05bd73764e96a27a92d741f144c222acc48fa518
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8da92f721f0f4333ffb32ac5cb080d87e4fc0543
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739930"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974494"
 ---
 # <a name="button-element"></a>Button — element
 Definiuje element, z którym użytkownik może korzystać. Przyciski mogą być różnego rodzaju: Button, MenuButton i SplitDropDown.
@@ -39,8 +41,8 @@ Definiuje element, z którym użytkownik może korzystać. Przyciski mogą być 
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|guid|Wymagany. Identyfikator GUID identyfikatora polecenia GUID/ID.|
-|identyfikator|Wymagany. Identyfikator identyfikatora polecenia GUID/ID.|
+|guid|Wymagane. Identyfikator GUID identyfikatora polecenia GUID/ID.|
+|identyfikator|Wymagane. Identyfikator identyfikatora polecenia GUID/ID.|
 |priority|Opcjonalny. Wartość liczbowa, która określa priorytet.|
 |typ|Opcjonalny. Wartość wyliczana, która określa rodzaj przycisku.<br /><br /> Jeśli nie zostanie określona, używa przycisku.<br /><br /> Przycisk<br /> Standardowe polecenie, które pojawia się na paskach narzędzi (zazwyczaj jako przycisk ikony), menu i menu kontekstowe.<br /><br /> MenuButton<br /> Element menu, który nie wykonuje polecenia, ale tworzy inne menu.<br /><br /> SplitDropDown<br /> Kontrolki, takie jak przyciski Cofnij i wykonaj ponownie na standardowym pasku narzędzi w programie Microsoft Word.|
 |Warunek|Opcjonalny. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
@@ -51,8 +53,8 @@ Definiuje element, z którym użytkownik może korzystać. Przyciski mogą być 
 |-------------|-----------------|
 |[Element nadrzędny](../extensibility/parent-element.md)|Opcjonalny. Element nadrzędny przycisku.|
 |[Icon — element](../extensibility/icon-element.md)|Opcjonalny. Ikona skojarzona z przyciskiem.|
-|[Element flagi polecenia](../extensibility/command-flag-element.md)|Wymagany. Prawidłowe wartości CommandFlag dla przycisku są następujące.<br /><br /> - AllowParams<br /><br /> - CommandWellOnly<br /><br /> - DefaultDisabled<br /><br /> - DefaultInvisible<br /><br /> - DontCache<br /><br /> - DynamicItemStart<br /><br /> - DynamicVisibility<br /><br /> - FixMenuController<br /><br /> - IconAndText<br /><br /> - NoButtonCustomize<br /><br /> -Nodostosowywanie<br /><br /> - NoKeyCustomize<br /><br /> - NoShowOnMenuController<br /><br /> — PICT<br /><br /> - PostExec<br /><br /> - ProfferedCmd<br /><br /> - RouteToDocs<br /><br /> - TextCascadeUseBtn<br /><br /> - TextMenuUseButton<br /><br /> -TextChanges<br /><br /> - TextChangesButton<br /><br /> - TextContextUseButton<br /><br /> - TextMenuCtrlUseMenu<br /><br /> - TextMenuUseButton<br /><br /> -TextOnly|
-|[Strings, element](../extensibility/strings-element.md)|Wymagany. Element podrzędny [ButtonText](../extensibility/buttontext-element.md) musi być zdefiniowany.|
+|[Element flagi polecenia](../extensibility/command-flag-element.md)|Wymagane. Prawidłowe wartości CommandFlag dla przycisku są następujące.<br /><br /> - AllowParams<br /><br /> - CommandWellOnly<br /><br /> - DefaultDisabled<br /><br /> - DefaultInvisible<br /><br /> - DontCache<br /><br /> - DynamicItemStart<br /><br /> - DynamicVisibility<br /><br /> - FixMenuController<br /><br /> - IconAndText<br /><br /> - NoButtonCustomize<br /><br /> -Nodostosowywanie<br /><br /> - NoKeyCustomize<br /><br /> - NoShowOnMenuController<br /><br /> — PICT<br /><br /> - PostExec<br /><br /> - ProfferedCmd<br /><br /> - RouteToDocs<br /><br /> - TextCascadeUseBtn<br /><br /> - TextMenuUseButton<br /><br /> -TextChanges<br /><br /> - TextChangesButton<br /><br /> - TextContextUseButton<br /><br /> - TextMenuCtrlUseMenu<br /><br /> - TextMenuUseButton<br /><br /> -TextOnly|
+|[Strings, element](../extensibility/strings-element.md)|Wymagane. Element podrzędny [ButtonText](../extensibility/buttontext-element.md) musi być zdefiniowany.|
 |Adnotacja|Opcjonalny komentarz.|
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
@@ -76,5 +78,5 @@ Definiuje element, z którym użytkownik może korzystać. Przyciski mogą być 
 </Button>
  ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Pliki tabeli poleceń programu Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
