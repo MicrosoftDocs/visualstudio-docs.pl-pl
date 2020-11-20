@@ -86,3 +86,5 @@
           href: sample-dotnet-core.md
         - name: Aplikacja platformy Node.js
           href: sample-nodejs.md
+    - name: Samouczek
+      href: tutorial.md
