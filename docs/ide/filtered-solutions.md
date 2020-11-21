@@ -1,5 +1,7 @@
 ---
 title: Załaduj podzestaw projektów
+description: Dowiedz się więcej o filtrowaniu rozwiązań i sposobach jego szybkiego ładowania podzbioru projektów w rozwiązaniu.
+ms.custom: SEO-VS-2020
 ms.date: 04/22/2019
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -10,12 +12,12 @@ author: jillre
 ms.author: stsu
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 4c44d267ef5686d04e9549601e05866aabbfb62d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 73cb7afe913f7656ac6124d1f54fbc1cb7b611cb
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72650835"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006617"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Rozwiązania filtrowane w programie Visual Studio
 
@@ -47,7 +49,7 @@ Aby otworzyć rozwiązanie bez ładowania żadnego z jego projektów przy użyci
 
    Zostanie otwarte rozwiązanie ze wszystkimi niezaładowanymi swoimi projektami.
 
-4. W **Eksplorator rozwiązań**wybierz projekty, które chcesz załadować (naciśnij klawisz **Ctrl** podczas klikania, aby zaznaczyć więcej niż jeden projekt), a następnie kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Załaduj ponownie projekt**.
+4. W **Eksplorator rozwiązań** wybierz projekty, które chcesz załadować (naciśnij klawisz **Ctrl** podczas klikania, aby zaznaczyć więcej niż jeden projekt), a następnie kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Załaduj ponownie projekt**.
 
    ![Załaduj ponownie wiele projektów w programie Visual Studio Eksplorator rozwiązań](media/filtered-solutions/reload-project.png)
 
@@ -92,7 +94,7 @@ Pliki filtrów rozwiązań są wizualnie odróżniane od zwykłych plików rozwi
 
 ### <a name="create-a-solution-filter-file"></a>Utwórz plik filtru rozwiązania
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy rozwiązanie i wybierz polecenie **Zapisz jako filtr rozwiązania**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy rozwiązanie i wybierz polecenie **Zapisz jako filtr rozwiązania**.
 
    ![Menu filtrowania rozwiązań w programie Visual Studio Eksplorator rozwiązań](media/filtered-solutions/save-as-solution-filter.png)
 
@@ -102,7 +104,7 @@ Po utworzeniu pliku filtru rozwiązania zostanie on dodany do listy **ostatnio u
 
 ![Otwórz ostatnie w programie Visual Studio](media/filtered-solutions/open-recent.png)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Dostosowywanie zagnieżdżania plików w Eksploratorze rozwiązań](file-nesting-solution-explorer.md)
 - [Optymalizowanie wydajności programu Visual Studio](optimize-visual-studio-performance.md)

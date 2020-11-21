@@ -1,5 +1,7 @@
 ---
 title: Ustawienia środowiska
+description: Dowiedz się więcej o ustawieniach środowiska programu Visual Studio i sposobach dostosowywania ich pod kątem optymalnego typu rozwoju.
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: conceptual
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 780f9e6cdd3a2b30a8cc5ce31b0c8cc61a6d5e55
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e38505b800037be63b326003bfa6c7fc5396126
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89313032"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006656"
 ---
 # <a name="environment-settings-for-visual-studio"></a>Ustawienia środowiska dla programu Visual Studio
 
@@ -34,7 +36,7 @@ Aby zmienić ustawienia programistyczne po otwarciu programu Visual Studio po ra
 
 1. Wybierz pozycję **Narzędzia**  >  **Importuj i Eksportuj ustawienia** z paska menu, aby otworzyć **Kreatora importowania i eksportowania ustawień**.
 
-1. W **Kreatorze importowania i eksportowania ustawień**wybierz opcję **Zresetuj wszystkie ustawienia**, a następnie wybierz przycisk **dalej**.
+1. W **Kreatorze importowania i eksportowania ustawień** wybierz opcję **Zresetuj wszystkie ustawienia**, a następnie wybierz przycisk **dalej**.
 
    ![Kreator importowania i eksportowania ustawień w programie Visual Studio](media/reset-all-settings.png)
 
@@ -46,7 +48,7 @@ Aby zmienić ustawienia programistyczne po otwarciu programu Visual Studio po ra
 
 1. Na stronie **Resetowanie ukończone** wybierz pozycję **Zamknij**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Synchronizowanie ustawień na wielu komputerach](synchronized-settings-in-visual-studio.md)
 - [Personalizowanie środowiska IDE programu Visual Studio](personalizing-the-visual-studio-ide.md)

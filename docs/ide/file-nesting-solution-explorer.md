@@ -1,5 +1,7 @@
 ---
 title: Reguły zagnieżdżania plików dla Eksplorator rozwiązań
+description: Dowiedz się więcej na temat reguł zagnieżdżania plików Eksplorator rozwiązań, ustawień wstępnych i dostosowywania.
+ms.custom: SEO-VS-2020
 ms.date: 05/25/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,16 +10,16 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: jillfra
-ms.openlocfilehash: a36ca2535785f72756ad66a69c2ebe4d7d5a373b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5425c255e85a2785383f1e8e718340fc2049e0c4
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67587024"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006695"
 ---
 # <a name="file-nesting-in-solution-explorer"></a>Zagnieżdżanie plików w Eksploratorze rozwiązań
 
-**Eksplorator rozwiązań** zagnieżdża powiązane pliki, aby ułatwić ich organizowanie i ułatwić ich lokalizowanie. Na przykład jeśli dodasz formularz Windows Forms do projektu, plik kodu dla formularza zostanie zagnieżdżony poniżej formularza w **Eksplorator rozwiązań**. W projektach ASP.NET Core zagnieżdżenia plików można wykonać krokowo. Można wybrać między ustawieniami zagnieżdżenia plików **wyłączonymi**, **domyślnymi**i **sieci Web**. Można również [dostosować sposób zagnieżdżania plików](#customize-file-nesting) lub tworzyć ustawienia specyficzne dla konkretnego [rozwiązania i projektu](#create-project-specific-settings).
+**Eksplorator rozwiązań** zagnieżdża powiązane pliki, aby ułatwić ich organizowanie i ułatwić ich lokalizowanie. Na przykład jeśli dodasz formularz Windows Forms do projektu, plik kodu dla formularza zostanie zagnieżdżony poniżej formularza w **Eksplorator rozwiązań**. W projektach ASP.NET Core zagnieżdżenia plików można wykonać krokowo. Można wybrać między ustawieniami zagnieżdżenia plików **wyłączonymi**, **domyślnymi** i **sieci Web**. Można również [dostosować sposób zagnieżdżania plików](#customize-file-nesting) lub tworzyć ustawienia specyficzne dla konkretnego [rozwiązania i projektu](#create-project-specific-settings).
 
 > [!NOTE]
 > Ta funkcja jest obecnie obsługiwana tylko w projektach ASP.NET Core.
@@ -178,7 +180,7 @@ Istniejące globalne reguły zagnieżdżania plików można wyłączyć dla konk
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Personalizowanie środowiska IDE](../ide/personalizing-the-visual-studio-ide.md)
 - [Rozwiązania i projekty w programie Visual Studio](solutions-and-projects-in-visual-studio.md)

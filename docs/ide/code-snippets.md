@@ -1,5 +1,7 @@
 ---
 title: Fragmenty kodu
+description: Dowiedz się więcej na temat fragmentów kodu i ich małych bloków kodu wielokrotnego użytku, które można wstawić do pliku kodu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +19,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: c06f9f7dc7e5a672e3fd5da3f3fc834fe223a783
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52059dd464ad0c720a4a2e77a961b7d6f3525c6d
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585421"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006396"
 ---
 # <a name="code-snippets"></a>Fragmenty kodu
 
@@ -62,7 +64,7 @@ finally
 
 Możesz wstawić ten fragment kodu, klikając **Wstaw fragment kodu** w menu rozwijanym prawym przyciskiem myszy (menu kontekstowe) okna kod, a następnie **Visual C#**, następnie wpisz `tryf` , a następnie naciśnij klawisz **Tab**. Możesz również wpisać `tryf` i nacisnąć klawisz **Tab** dwa razy.
 
-Przykład fragmentu kodu otaczającego: w języku C++ `if` można użyć skrótu jako fragmentu kodu wstawiania lub jako fragmentu kodu. Jeśli zaznaczysz wiersz kodu (na przykład `return FALSE;` ), a następnie wybierzesz opcję **Otocz za pomocą**elementu  >  **if**, fragment kodu jest rozwinięty wokół wiersza:
+Przykład fragmentu kodu otaczającego: w języku C++ `if` można użyć skrótu jako fragmentu kodu wstawiania lub jako fragmentu kodu. Jeśli zaznaczysz wiersz kodu (na przykład `return FALSE;` ), a następnie wybierzesz opcję **Otocz za pomocą** elementu  >  **if**, fragment kodu jest rozwinięty wokół wiersza:
 
 ```cpp
 if (true)
@@ -95,7 +97,7 @@ End Property
 
 Jeśli zmienisz `newPropertyValue` się na `m_property` , każde wystąpienie programu `newPropertyValue` zostanie zmienione. Jeśli zmienisz `String` się na `Int` w deklaracji właściwości, wartość w metodzie Set również zostanie zmieniona na `Int` .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Przewodnik: Tworzenie fragmentu kodu](../ide/walkthrough-creating-a-code-snippet.md)
 - [Instrukcje: dystrybuowanie fragmentów kodu](../ide/how-to-distribute-code-snippets.md)

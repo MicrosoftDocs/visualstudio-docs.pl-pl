@@ -1,5 +1,7 @@
 ---
 title: 'Konfigurowanie ostrzeżeń w Visual Basic:'
+description: Dowiedz się więcej na temat sposobu konfigurowania ostrzeżeń w Visual Basic, które z kolei ułatwią pisanie oczyszczarki, szybszego i lepszego kodu z mniejszą liczbą błędów.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33302a4a686d80621cc64ee018371a2d03ea30ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd5239c4fd01aefa247fc63a66af3e872dbecbb6
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114730"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006409"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Konfigurowanie ostrzeżeń w Visual Basic
 
@@ -28,7 +30,7 @@ Czasami kompilator oferuje dodatkową logikę w imieniu użytkownika, dzięki cz
 Możesz chcieć dostosować projekt i wyłączyć niektóre ostrzeżenia, które nie są związane z aplikacją, przy jednoczesnym wyłączaniu innych ostrzeżeń do błędów. Na tej stronie wyjaśniono, jak włączyć i wyłączyć poszczególne ostrzeżenia.
 
 ## <a name="turning-warnings-off-and-on"></a>Wyłączanie i włączanie ostrzeżeń
-Istnieją dwa różne sposoby konfigurowania ostrzeżeń: można je skonfigurować za pomocą **projektanta projektu**lub można użyć opcji kompilatora **/warnaserror** i **/nowarn** .
+Istnieją dwa różne sposoby konfigurowania ostrzeżeń: można je skonfigurować za pomocą **projektanta projektu** lub można użyć opcji kompilatora **/warnaserror** i **/nowarn** .
 
 Karta **kompilacja** na stronie **Projektant projektu** umożliwia włączanie i wyłączanie ostrzeżeń. Zaznacz pole wyboru **Wyłącz wszystkie ostrzeżenia** , aby wyłączyć wszystkie ostrzeżenia; Wybierz pozycję **Traktuj wszystkie ostrzeżenia jako błędy** , aby traktować wszystkie ostrzeżenia jako błędy. Niektóre poszczególne ostrzeżenia mogą być przełączane jako błąd lub ostrzeżenie zgodnie z potrzebami w wyświetlonej tabeli.
 
@@ -117,7 +119,7 @@ Generowane, gdy `Catch` blok nigdy nie został osiągnięty ze względu na jego 
 
 IDENTYFIKATOR: 42029, 42031
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Typy błędów](/dotnet/visual-basic/programming-guide/language-features/error-types)
 - [Spróbuj... Catch... Finally — instrukcja](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)

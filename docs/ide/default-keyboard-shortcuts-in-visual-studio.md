@@ -1,5 +1,7 @@
 ---
 title: Domyślne skróty klawiaturowe
+description: Dowiedz się więcej o domyślnych skrótach klawiaturowych w programie Visual Studio, które umożliwiają dostęp do różnych poleceń i okien.
+ms.custom: SEO-VS-2020
 ms.date: 06/26/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eab8798dfb5c1666ef2829361adb8c48202c3981
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+ms.openlocfilehash: 06bbbb0124984530e92b0066044c71bfbe80ad2b
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91022220"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006370"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Domyślne skróty klawiaturowe w programie Visual Studio
 
@@ -48,7 +50,7 @@ Aby uzyskać więcej informacji na temat ułatwień dostępu w programie Visual 
 - [Pomoc](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)
 - [Eksplorator rozwiązań](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)
 - [Wyświetlanie](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)
-- [Debugowanie](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug)
+- [Rozpocząć](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug)
 - [Test obciążeniowy](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_loadtest)
 - [Zespół](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team)
 - [Okno](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_window)
@@ -195,7 +197,7 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 |Edytuj. GoToAll|**Ctrl +** lub **Ctrl + T**|
 |Edit.GoToDeclaration|**Ctrl+F12**|
 |Edit.GoToDefinition|**F12**|
-|Edytuj. GoToMember|**Ctrl + 1, Ctrl + M** lub **Ctrl + 1, M** lub **Alt + \\ **|
+|Edytuj. GoToMember|**Ctrl + 1, Ctrl + M** lub **Ctrl + 1, M** lub **Alt + \\**|
 |Edit.GoToNextLocation|**F8** (następny błąd w Lista błędów lub oknie danych wyjściowych)|
 |Edit.GoToPrevLocation|**Shift + F8** (poprzedni błąd w Lista błędów lub oknie danych wyjściowych)|
 |Edit.InsertSnippet|**Ctrl+K, Ctrl+X**|
@@ -844,7 +846,7 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 | Edit.LineDown | **Strzałka w dół** |
 | Edit.LineDownExtend | **Shift+Strzałka w dół** |
 | Edit.LineDownExtendColumn | **Shift+Alt+Strzałka w dół** |
-| Edit.LineEnd | **Punktów** |
+| Edit.LineEnd | **End** |
 | Edit.LineEndExtend | **Shift+End** |
 | Edit.LineEndExtendColumn | **Shift+Alt+End** |
 | Edit.LineOpenAbove | **Ctrl+Enter** |
@@ -1054,7 +1056,7 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 |Edit.CharLeftExtend|**Shift+Strzałka w lewo**|
 |Edit.CharRight|**Strzałka w prawo**|
 |Edit.CharRightExtend|**Shift+Strzałka w prawo**|
-|Edit.DocumentEnd|**Punktów**|
+|Edit.DocumentEnd|**End**|
 |Edit.DocumentEndExtend|**Shift+End**|
 |Edit.DocumentStart|**Ekran główny**|
 |Edit.DocumentStartExtend|**Shift+Home**|
@@ -1176,6 +1178,6 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 |XsdDesigner.ShowGraphView|**Ctrl + 3**|
 |XsdDesigner.ShowStartView|**Ctrl + 1**|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Visual Studio — Polecenia](reference/visual-studio-commands.md)

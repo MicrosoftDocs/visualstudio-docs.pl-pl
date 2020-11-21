@@ -1,5 +1,7 @@
 ---
 title: Zmień środowisko uruchamiania
+description: Dowiedz się, jak dostosować środowisko uruchomieniowe, aby program Visual Studios otwierał narzędzia, które są najbardziej przydatne dla Ciebie.
+ms.custom: SEO-VS-2020
 ms.date: 02/01/2017
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 281a0c43c0163d158151683e9fdc483dfc1709f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 827ac67840f272e17cec6a7882a02b58dddbf925
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75567219"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006266"
 ---
 # <a name="customize-startup"></a>Dostosowywanie uruchamiania
 
@@ -44,7 +46,7 @@ Można także pokazać niestandardową stronę początkową, czyli stronę XAML 
 
 ::: moniker range=">=vs-2019"
 
-3. Na **stronie podczas uruchamiania Otwórz** listę, wybierz, co ma się zdarzyć po uruchomieniu programu Visual Studio. Możesz wybrać z **okna startowego** (który umożliwia otwarcie nowego lub istniejącego projektu), najnowsze **rozwiązanie**lub **puste środowisko**.
+3. Na **stronie podczas uruchamiania Otwórz** listę, wybierz, co ma się zdarzyć po uruchomieniu programu Visual Studio. Możesz wybrać z **okna startowego** (który umożliwia otwarcie nowego lub istniejącego projektu), najnowsze **rozwiązanie** lub **puste środowisko**.
 
 ::: moniker-end
 
@@ -67,7 +69,7 @@ Aby zainstalować niestandardową stronę początkową, Otwórz plik *. vsix* lu
 > [!TIP]
 > Jeśli błąd na niestandardowej stronie początkowej powoduje awarię programu Visual Studio, można otworzyć program Visual Studio w trybie awaryjnym, a następnie ustawić go tak, aby korzystał z domyślnej strony początkowej. Zobacz [/safemode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md)
 

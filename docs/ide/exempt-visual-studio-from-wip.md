@@ -1,5 +1,7 @@
 ---
 title: Wykluczony z Information Protection systemu Windows
+description: Dowiedz się więcej na temat wykluczania wizualizacji Studios z systemu Windows Information Protection i nadal zezwala na korzystanie z danych przedsiębiorstwa.
+ms.custom: SEO-VS-2020
 ms.date: 06/01/2018
 ms.topic: conceptual
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b4eb454f641b5bef7273464d605fb194f650790
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cfb078ee3f136a1d33f5b25040198c23411a05fb
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75588567"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006630"
 ---
 # <a name="configure-visual-studio-as-a-wip-exempt-app"></a>Konfigurowanie programu Visual Studio jako aplikacji z wykluczeniem PWT
 
@@ -34,6 +36,6 @@ Ponieważ program Visual Studio zawiera wiele plików binarnych, [Utwórz plik z
 
 Aby określić, gdzie program Visual Studio może uzyskać dostęp do danych przedsiębiorstwa w sieci, wykonaj następujące [kroki, aby określić, gdzie chronione aplikacje mogą znajdować i wysyłać dane przedsiębiorstwa](/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure#choose-where-apps-can-access-enterprise-data). Aby uniemożliwić systemowi Windows blokowanie połączeń z zasobami w chmurze za pośrednictwem adresu IP, należy dodać do \* Ustawienia/AppCompat \* /ciąg.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Zachowanie aplikacji przy użyciu PWT](/windows/security/information-protection/windows-information-protection/app-behavior-with-wip)

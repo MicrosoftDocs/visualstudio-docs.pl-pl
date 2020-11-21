@@ -1,5 +1,7 @@
 ---
 title: Tworzenie kodu bez projektów ani rozwiązań
+description: Dowiedz się, jak opracowywać kod bezpośrednio w programie Visual Studio bez potrzeby projektów i rozwiązań.
+ms.custom: SEO-VS-2020
 ms.date: 06/22/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68665acfcc3ea00f118dc19cf155cb3e6f5d1b36
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d706ccdc07abcc91e956878e1bc180be9c542223
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769664"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006006"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Tworzenie kodu w programie Visual Studio bez projektów ani rozwiązań
 
@@ -33,10 +35,10 @@ Możesz otworzyć kod w programie Visual Studio w następujący sposób:
 - W menu kontekstowym (kliknij prawym przyciskiem myszy) folderu zawierającego kod wybierz polecenie **Otwórz w programie Visual Studio** .
 
 ::: moniker range="vs-2017"
-- Wybierz link **Otwórz folder** na **stronie startowej**programu Visual Studio.
+- Wybierz link **Otwórz folder** na **stronie startowej** programu Visual Studio.
 
     > [!IMPORTANT]
-    > Nie cały kod można otworzyć za pomocą linku **Otwórz folder** na **stronie startowej**programu Visual Studio. Na przykład jeśli plik kodu został zapisany jako część rozwiązania &mdash; inaczej mówiąc, w pliku. sln &mdash; musisz użyć jednej z innych opcji wymienionych w tym miejscu, aby otworzyć swój kod.
+    > Nie cały kod można otworzyć za pomocą linku **Otwórz folder** na **stronie startowej** programu Visual Studio. Na przykład jeśli plik kodu został zapisany jako część rozwiązania &mdash; inaczej mówiąc, w pliku. sln &mdash; musisz użyć jednej z innych opcji wymienionych w tym miejscu, aby otworzyć swój kod.
 
 ::: moniker-end
 
@@ -70,7 +72,7 @@ Poniższy przykład pokazuje, jak sklonować repozytorium GitHub, a następnie o
 
 1. Wybierz przycisk **klon** , aby sklonować pliki projektu do lokalnego repozytorium git. W zależności od rozmiaru repozytorium ten proces może potrwać kilka minut.
 
-1. Po sklonowaniu repozytorium do systemu w obszarze **Team Explorer**wybierz polecenie **Otwórz** w menu kontekstowym (kliknij prawym przyciskiem myszy) dla nowo sklonowanego repozytorium.
+1. Po sklonowaniu repozytorium do systemu w obszarze **Team Explorer** wybierz polecenie **Otwórz** w menu kontekstowym (kliknij prawym przyciskiem myszy) dla nowo sklonowanego repozytorium.
 
    ![Sklonowane repozytorium](./media/VSIDE_Code_Clone3.png)
 
@@ -101,11 +103,11 @@ Jeśli baza kodu używa niestandardowych narzędzi kompilacji, należy powiedzie
 
 Jeśli baza kodu zawiera kod Python lub JavaScript, nie trzeba konfigurować żadnych plików *. JSON* , ale trzeba zainstalować odpowiednie obciążenie. Należy również skonfigurować skrypt uruchamiania:
 
-1. Zainstaluj [Node.js programowanie](https://visualstudio.microsoft.com/vs/node-js/) lub programowanie w języku [Python](https://visualstudio.microsoft.com/vs/python/) , wybierając kolejno pozycje **Narzędzia**  >  **Pobierz narzędzia i funkcje**lub zamykając program Visual Studio i uruchamiając Instalator programu Visual Studio.
+1. Zainstaluj [Node.js programowanie](https://visualstudio.microsoft.com/vs/node-js/) lub programowanie w języku [Python](https://visualstudio.microsoft.com/vs/python/) , wybierając kolejno pozycje **Narzędzia**  >  **Pobierz narzędzia i funkcje** lub zamykając program Visual Studio i uruchamiając Instalator programu Visual Studio.
 
    ![Obciążenia programowania Node.js i Python](media/python_nodejs_workloads.png)
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy lub menu kontekstowym pliku JavaScript lub Python, wybierz polecenie **Ustaw jako element startowy** .
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy lub menu kontekstowym pliku JavaScript lub Python, wybierz polecenie **Ustaw jako element startowy** .
 
 1. Wybierz przycisk **Start** , aby rozpocząć debugowanie.
 
@@ -123,7 +125,7 @@ Tekst przycisku **Start** zmieni się, aby odzwierciedlić, że projekt jest ele
 
 ![Projekt przy przycisku Start](media/customize-start-button-project.png)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Dostosowywanie zadań kompilacji i debugowania](../ide/customize-build-and-debug-tasks-in-visual-studio.md)
 - [Projekty z obsługa funkcji Otwórz folder dla języka C++](/cpp/build/open-folder-projects-cpp)

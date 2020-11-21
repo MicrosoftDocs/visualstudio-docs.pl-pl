@@ -1,5 +1,6 @@
 ---
 title: Skróty klawiaturowe dla często używanych poleceń
+description: Poznaj skróty klawiaturowe, które Evoke najczęściej używane polecenia programu Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -8,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64c3a163f706898dfb358b15279e62729f40cf84
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: c60da36ac6a8e5002e65e0973af0f3e0cb13eef7
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93045656"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006487"
 ---
 # <a name="popular-keyboard-shortcuts-for-visual-studio"></a>Popularne skróty klawiaturowe dla programu Visual Studio
 
@@ -22,7 +23,7 @@ Wybierając te domyślne skróty klawiaturowe, możesz uzyskać dostęp do częs
 Kontekst *globalny* oznacza, że skrót jest stosowany w dowolnym oknie narzędzia w programie Visual Studio.
 
 > [!NOTE]
-> Możesz [wyszukać skrót](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) dla dowolnego polecenia, otwierając okno dialogowe **Opcje** , rozwijając węzeł **środowisko** , a następnie wybierając pozycję **Klawiatura** .
+> Możesz [wyszukać skrót](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) dla dowolnego polecenia, otwierając okno dialogowe **Opcje** , rozwijając węzeł **środowisko** , a następnie wybierając pozycję **Klawiatura**.
 
 ## <a name="build"></a>Kompilacja
 
@@ -58,9 +59,9 @@ Kontekst *globalny* oznacza, że skrót jest stosowany w dowolnym oknie narzędz
 |Polecenia|Skróty klawiaturowe [konteksty]|
 |--------------| - |
 |Edit.BreakLine|**Enter** [Edytor tekstu, Projektant raportów, Projektant formularzy systemu Windows]<br /><br />lub **SHIFT + ENTER** [Edytor tekstu]|
-|Edytuj. CollapseToDefinitions|**Ctrl + M** , **Ctrl + O** [Edytor tekstu]|
-|Edit.CommentSelection|**Ctrl + K** , **Ctrl + C** [Edytor tekstu]|
-|Edit.CompleteWord|**Alt + Strzałka w prawo** [Edytor tekstu, Projektant przepływu pracy]<br /><br />lub **Ctrl + spacja** [Edytor tekstu, Projektant przepływu pracy]<br /><br />lub **Ctrl + K** , **w** [Projektant przepływu pracy]<br /><br />lub **Ctrl + K, Ctrl + W** [Projektant przepływu pracy]|
+|Edytuj. CollapseToDefinitions|**Ctrl + M**, **Ctrl + O** [Edytor tekstu]|
+|Edit.CommentSelection|**Ctrl + K**, **Ctrl + C** [Edytor tekstu]|
+|Edit.CompleteWord|**Alt + Strzałka w prawo** [Edytor tekstu, Projektant przepływu pracy]<br /><br />lub **Ctrl + spacja** [Edytor tekstu, Projektant przepływu pracy]<br /><br />lub **Ctrl + K**, **w** [Projektant przepływu pracy]<br /><br />lub **Ctrl + K, Ctrl + W** [Projektant przepływu pracy]|
 |Edit.Copy|**Ctrl + C** [globalny]<br /><br />lub **Ctrl + INSERT** [globalny]|
 |Edit.Cut|**Ctrl + X** [globalny]<br /><br />lub **Shift + Delete** [globalny]|
 |Edit.Delete|**Delete** [Global, Team Explorer]<br /><br />lub **Shift + Delete** [diagram sekwencji, diagram aktywności UML, diagram warstwowy]<br /><br />lub **Ctrl + Delete** [Diagram klas]|
@@ -76,7 +77,7 @@ Kontekst *globalny* oznacza, że skrót jest stosowany w dowolnym oknie narzędz
 |Edit.GoToDefinition|**F12**|
 |Edit.GoToFindCombo|**Ctrl + D** [globalny]|
 |Edit.GoToNextLocation|**F8** [globalny]|
-|Edit.InsertSnippet|**Ctrl + K** , **Ctrl + X** [globalny]|
+|Edit.InsertSnippet|**Ctrl + K**, **Ctrl + X** [globalny]|
 |Edit.InsertTab|**Karta** [Projektant raportów, Projektant formularzy systemu Windows, Edytor tekstu]|
 |Edit.LineCut|**Ctrl + L** [Edytor tekstu]|
 |Edit.LineDownExtendColumn|**Shift + Alt + Strzałka w dół** [Edytor tekstu]|
@@ -170,7 +171,7 @@ Kontekst *globalny* oznacza, że skrót jest stosowany w dowolnym oknie narzędz
 |Window.NextDocumentWindowNav|**Ctrl + Tab** [globalny]|
 |Window.NextSplitPane|**F6** [globalny]|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Identyfikowanie i Dostosowywanie skrótów klawiaturowych w programie Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
 - [Wszystkie skróty klawiaturowe w programie Visual Studio](default-keyboard-shortcuts-in-visual-studio.md)

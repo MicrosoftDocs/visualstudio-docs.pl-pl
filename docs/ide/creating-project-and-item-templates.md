@@ -1,5 +1,7 @@
 ---
 title: Szablony projektów i plików
+description: Dowiedz się, jak szablony projektów i elementów zapewniają klasy wielokrotnego użytku, które zapewniają użytkownikom pewien podstawowy kod i strukturę.
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 2cc932a2407aeb4951bab970a0edc6e2b2a5fcc9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f7ce85818e0cce4a6e78f5e2ec5901452ebd83f9
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89313799"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006305"
 ---
 # <a name="project-and-item-templates"></a>Szablony projektów i elementów
 
@@ -67,7 +69,7 @@ Gdy te pliki są kompresowane do pliku *zip* i umieszczane w prawidłowym folder
 
 Aby uzyskać więcej informacji na temat folderów szablonów, zobacz [How to: Lokalizowanie i organizowanie szablonów](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Instrukcje: Tworzenie szablonów projektu](../ide/how-to-create-project-templates.md)
 - [Instrukcje: Tworzenie szablonów elementów](../ide/how-to-create-item-templates.md)

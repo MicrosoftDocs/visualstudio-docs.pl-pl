@@ -1,5 +1,7 @@
 ---
 title: Znajdowanie i zastępowanie tekstu oraz Zaznaczanie z obsługą wiele karetki
+description: Dowiedz się więcej o funkcji Znajdź i Zamień oraz sposobie używania jej do znajdowania i zamieniania wystąpień wzorca.
+ms.custom: SEO-VS-2020
 ms.date: 10/17/2020
 ms.topic: conceptual
 f1_keywords:
@@ -30,12 +32,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b878ccbf6714987599d1585ca9c0dc3ceb759144
-ms.sourcegitcommit: 4450abc99453ccaf8936449bbff437c5b9efa022
+ms.openlocfilehash: 475f0249bd6af8176fba3ecc79ad758cc6ceceb7
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92334197"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006591"
 ---
 # <a name="find-and-replace-text"></a>Znajdowanie i zastępowanie tekstu
 
@@ -62,7 +64,7 @@ Kontrolka **Znajdź i Zamień** pojawia się w prawym górnym rogu okna edytora 
 
 Możesz uzyskać dostęp do opcji zamiany, wybierając przycisk obok pola tekstowego **Znajdź** . Aby dokonać jednej zamiany, wybierz przycisk **Zamień następny** obok pola tekstowego **Zastąp** . Aby zastąpić wszystkie dopasowania, wybierz przycisk **Zamień wszystko** .
 
-Aby zmienić kolor podświetlenia dla dopasowania, wybierz menu **Narzędzia** , wybierz pozycję **Opcje**, a następnie wybierz pozycję **środowisko**i wybierz pozycję **czcionki i kolory**. Na liście **Pokaż ustawienia dla** wybierz pozycję **Edytor tekstu**, a następnie na liście **Wyświetl elementy** wybierz pozycję **Znajdź Wyróżnij (rozszerzenie)**.
+Aby zmienić kolor podświetlenia dla dopasowania, wybierz menu **Narzędzia** , wybierz pozycję **Opcje**, a następnie wybierz pozycję **środowisko** i wybierz pozycję **czcionki i kolory**. Na liście **Pokaż ustawienia dla** wybierz pozycję **Edytor tekstu**, a następnie na liście **Wyświetl elementy** wybierz pozycję **Znajdź Wyróżnij (rozszerzenie)**.
 
 ### <a name="search-tool-windows"></a>Okna narzędzi wyszukiwania
 
@@ -81,7 +83,7 @@ Wersja kontrolki **Znajdź** jest również dostępna w niektórych oknach narz�
 
 ### <a name="find-results"></a>Znajdź wyniki
 
-Po wybraniu przycisku **Znajdź wszystkie**zostanie otwarte okno **Znajdź wyniki** i zostanie wyświetlona lista dopasowań dla wyszukiwania. Wybranie wyniku z listy powoduje wyświetlenie skojarzonego pliku i wyróżnienie dopasowania. Jeśli plik nie jest jeszcze otwarty do edycji, zostanie otwarty na karcie podglądu po prawej stronie w obszarze karty. Możesz użyć kontrolki **Znajdź** , aby przeszukać listę **Znajdź wyniki** .
+Po wybraniu przycisku **Znajdź wszystkie** zostanie otwarte okno **Znajdź wyniki** i zostanie wyświetlona lista dopasowań dla wyszukiwania. Wybranie wyniku z listy powoduje wyświetlenie skojarzonego pliku i wyróżnienie dopasowania. Jeśli plik nie jest jeszcze otwarty do edycji, zostanie otwarty na karcie podglądu po prawej stronie w obszarze karty. Możesz użyć kontrolki **Znajdź** , aby przeszukać listę **Znajdź wyniki** .
 
 ### <a name="create-custom-search-folder-sets"></a>Tworzenie niestandardowych zestawów folderów wyszukiwania
 
@@ -92,7 +94,7 @@ Zakres wyszukiwania można zdefiniować, wybierając przycisk **Wybierz foldery 
 
 ### <a name="create-custom-component-sets"></a>Tworzenie niestandardowych zestawów składników
 
-Zestawy składników można definiować jako zakres wyszukiwania, wybierając przycisk **Edytuj niestandardowy zestaw składników** obok pola **Szukaj w** . Można określić zainstalowane składniki .NET lub COM, projekty programu Visual Studio, które znajdują się w rozwiązaniu lub dowolnego zestawu lub biblioteki typów (*. dll*, *. tlb*, *. olb*, *. exe*lub *. ocx*). Aby wyszukać odwołania, zaznacz pole **odszukaj w odwołaniach** .
+Zestawy składników można definiować jako zakres wyszukiwania, wybierając przycisk **Edytuj niestandardowy zestaw składników** obok pola **Szukaj w** . Można określić zainstalowane składniki .NET lub COM, projekty programu Visual Studio, które znajdują się w rozwiązaniu lub dowolnego zestawu lub biblioteki typów (*. dll*, *. tlb*, *. olb*, *. exe* lub *. ocx*). Aby wyszukać odwołania, zaznacz pole **odszukaj w odwołaniach** .
 
 ## <a name="multi-caret-selection"></a>Wybór o wiele karetki
 
@@ -110,7 +112,7 @@ Na poniższym zrzucie ekranu `-0000` wybrano w trzech lokalizacjach. Jeśli uży
 Aby zaznaczyć wiele karetki, kliknij lub Zwolnij pierwszy wybór tekstu w zwykły sposób, a następnie naciśnij klawisz **Alt** podczas klikania lub zaznaczania tekstu w każdej dodatkowej lokalizacji. Możesz również automatycznie dodać pasujący tekst jako dodatkowe wybory lub zaznaczyć pole tekstu do edycji identycznie w każdym wierszu.
 
 > [!TIP]
-> Jeśli wybrano opcję **Alt** jako klawisz modyfikujący dla kliknięcia przycisku myszy, przejdź do definicji **Tools**w  >  **opcji**narzędzia, wybór wieloznaczny jest wyłączony.
+> Jeśli wybrano opcję **Alt** jako klawisz modyfikujący dla kliknięcia przycisku myszy, przejdź do definicji **Tools** w  >  **opcji** narzędzia, wybór wieloznaczny jest wyłączony.
 
 ### <a name="commands"></a>Polecenia
 
@@ -132,7 +134,7 @@ Niektóre polecenia są również dostępne w menu **Edycja** w obszarze **wielu
 
 :::image type="content" source="media/edit-menu-multiple-carets-find-replace.png" alt-text="Zrzut ekranu przedstawiający menu z wieloma karetkami w programie Visual Studio":::
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Używanie wyrażeń regularnych w programie Visual Studio](../ide/using-regular-expressions-in-visual-studio.md)
 - [Kod refaktoryzacji w programie Visual Studio](../ide/refactoring-in-visual-studio.md)

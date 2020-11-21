@@ -1,5 +1,7 @@
 ---
 title: Tworzenie nowego projektu
+description: Dowiedz się, jak utworzyć nowy projekt w programie Visual Studio, krok po kroku.
+ms.custom: SEO-VS-2020
 ms.date: 03/19/2019
 ms.topic: how-to
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7cecf6a68296b3bffd07cca13fc3a3d0d5bc836
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7cba3c19ae939396132af8bb3c2ffee318b7007e
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770731"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006526"
 ---
 # <a name="create-a-new-project-in-visual-studio"></a>Utworzenie nowego projektu w Visual Studio
 
@@ -99,6 +101,6 @@ Kliknij przycisk **Utwórz** , aby utworzyć nowy projekt.
 
 Jeśli chcesz dodać dodatkowy projekt do rozwiązania, kliknij prawym przyciskiem myszy węzeł rozwiązanie w **Eksplorator rozwiązań** i wybierz polecenie **Dodaj**  >  **Nowy projekt**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Tworzenie rozwiązań i projektów](creating-solutions-and-projects.md)

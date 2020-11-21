@@ -1,5 +1,7 @@
 ---
 title: Dostosowywanie układów okien
+description: Dowiedz się, jak dostosować cechy, które są widziane w systemie Windows w celu utworzenia układów, które działają najlepiej dla różnych przepływów pracy deweloperskiej
+ms.custom: SEO-VS-2020
 ms.date: 07/31/2020
 ms.topic: conceptual
 f1_keywords:
@@ -23,18 +25,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2135183a474e29229d941bbd47af8d6abc263e49
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c433a6faf3eab9dd959cc25f26033c74852c0899
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87546078"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006669"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Dostosowywanie układów okien w programie Visual Studio
 
 W programie Visual Studio można dostosować położenie, rozmiar i zachowanie systemu Windows w celu utworzenia układów okna, które działają najlepiej dla różnych przepływów pracy deweloperskiej. Po dostosowaniu układu środowisko IDE zapamiętuje go. Na przykład jeśli zmienisz lokalizację dokowania **Eksplorator rozwiązań** a następnie zamkniesz program Visual Studio, następnym razem, gdy otworzysz program Visual Studio, nawet jeśli pracujesz na innym komputerze, **Eksplorator rozwiązań** zostanie zadokowany w tej samej lokalizacji.
 
-Możesz również nazwać i zapisać niestandardowy układ, a następnie przełączać się między układami za pomocą jednego polecenia. Na przykład można utworzyć układ do edycji i układu do debugowania oraz przełączać **się między**nimi przy użyciu  >  polecenia menu**Układ okna stosowanie** .
+Możesz również nazwać i zapisać niestandardowy układ, a następnie przełączać się między układami za pomocą jednego polecenia. Na przykład można utworzyć układ do edycji i układu do debugowania oraz przełączać **się między** nimi przy użyciu  >  polecenia menu **Układ okna stosowanie** .
 
 ## <a name="tool-and-document-windows"></a>Okna narzędzi i dokumentów
 
@@ -52,7 +54,7 @@ Karty umożliwiają rozmieszczenie układu na kilka różnych sposobów. Na przy
 
 #### <a name="preview-tab-document-windows"></a>Karta Podgląd (okna dokumentów)
 
-Na karcie **Podgląd** można wyświetlić pliki w edytorze bez ich otwierania. Możesz wyświetlić podgląd plików, wybierając je w **Eksplorator rozwiązań**podczas debugowania, gdy przejdziesz do plików, z **Przejdź do definicji**, a następnie przeglądając wyniki wyszukiwania. Pliki w wersji zapoznawczej są wyświetlane na karcie po prawej stronie karty dokumentu. Plik zostanie otwarty do edycji w przypadku jego modyfikacji lub wybrania opcji  **Otwórz**.
+Na karcie **Podgląd** można wyświetlić pliki w edytorze bez ich otwierania. Możesz wyświetlić podgląd plików, wybierając je w **Eksplorator rozwiązań** podczas debugowania, gdy przejdziesz do plików, z **Przejdź do definicji**, a następnie przeglądając wyniki wyszukiwania. Pliki w wersji zapoznawczej są wyświetlane na karcie po prawej stronie karty dokumentu. Plik zostanie otwarty do edycji w przypadku jego modyfikacji lub wybrania opcji  **Otwórz**.
 
 ::: moniker range="vs-2019"
 
@@ -62,7 +64,7 @@ Na karcie **Podgląd** można wyświetlić pliki w edytorze bez ich otwierania. 
 
 Możesz zastosować pionowe karty dokumentu w następujący sposób:
 
-- Wybierz **Tools**  >  **Opcje**narzędzia  >  karty**środowisko**  >  **i okna** z paska menu. Następnie w kontrolce **Ustawianie układu karty** wybierz z listy rozwijanej opcję z **góry**, z **lewej**lub z **prawej strony** .
+- Wybierz **Tools**  >  **Opcje** narzędzia  >  karty **środowisko**  >  **i okna** z paska menu. Następnie w kontrolce **Ustawianie układu karty** wybierz z listy rozwijanej opcję z **góry**, z **lewej** lub z **prawej strony** .
 
 - Kliknij prawym przyciskiem myszy kartę, wybierz polecenie **Ustaw układ karty**, a następnie wybierz opcję w **lewo** lub w **prawo**. (Aby przywrócić domyślne położenie kart, wybierz pozycję **Top**).
 
@@ -167,7 +169,7 @@ Najpierw utwórz rozwiązanie testowe, które ma dwa projekty, każdy z innym op
 
 3. Naciśnij **klawisze CTRL** + **Alt** + **X** , aby wyświetlić okno **Przybornik** . Jeśli okno jest zadokowane, przeciągnij je tak, aby było przepływać w miejscu, gdzie chcesz go umieścić.
 
-4. Naciśnij klawisz **F5** , aby umieścić program Visual Studio w trybie debugowania. Dostosuj **pozycję okien,** **stosu wywołań**i debugowania **danych wyjściowych** w żądany sposób. Układ, który zamierzasz utworzyć, będzie stosowany do trybu edycji i trybu debugowania.
+4. Naciśnij klawisz **F5** , aby umieścić program Visual Studio w trybie debugowania. Dostosuj **pozycję okien,** **stosu wywołań** i debugowania **danych wyjściowych** w żądany sposób. Układ, który zamierzasz utworzyć, będzie stosowany do trybu edycji i trybu debugowania.
 
 5. Gdy układy w trybie debugowania i trybie edycji są odpowiednie, wybierz kolejno opcje okno, **Window**  >  **Układ okna**. Wywołaj ten układ "Projektant".
 
@@ -204,6 +206,6 @@ Aby przypomnić, który skrót klawiaturowy jest przypisany do układu, wybierz 
 
 Te układy są automatycznie przenoszone między wersjami programu Visual Studio, a także między wystąpieniami Blend na oddzielnych maszynach i w dowolnej innej organizacji Express Edition. Jednak układy nie poruszają się w programie Visual Studio, Blend i Express.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Instrukcje: poruszanie się w środowisku IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md)

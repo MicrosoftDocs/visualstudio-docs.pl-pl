@@ -1,5 +1,7 @@
 ---
 title: Dane diagnostyczne i dzienniki generowane przez system
+description: Dowiedz się więcej o dziennikach generowanych przez system Visual Studio, typach zbieranych danych i sposobach ich użycia do rozwiązywania problemów i poprawiania jakości produktów.
+ms.custom: SEO-VS-2020
 ms.date: 05/24/2018
 ms.topic: conceptual
 author: jillre
@@ -7,12 +9,12 @@ ms.author: michma
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3f3774a816ca31bfcdd4013d35dadbb1737e5ab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 93f450eab5879991f45f4a924338d4a277d13544
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86387255"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95005928"
 ---
 # <a name="system-generated-logs-collected-by-visual-studio"></a>Dzienniki generowane przez system w programie Visual Studio
 
@@ -24,7 +26,7 @@ Program Visual Studio zbiera dzienniki generowane przez system pod kątem awarii
 
 - W celu zapewnienia wysokiego użycia procesora CPU i braku odpowiedzi są zbierane ślady stosu odpowiednich wątków programu Visual Studio.
 
-- W przypadkach, gdy ślady stosu niektórych wątków nie są wystarczające, aby określić główną przyczynę problemu, na przykład awarie, braku odpowiedzi lub duże użycie pamięci, zbieramy *zrzut*pamięci. Zrzut reprezentuje stan procesu, gdy wystąpił błąd.
+- W przypadkach, gdy ślady stosu niektórych wątków nie są wystarczające, aby określić główną przyczynę problemu, na przykład awarie, braku odpowiedzi lub duże użycie pamięci, zbieramy *zrzut* pamięci. Zrzut reprezentuje stan procesu, gdy wystąpił błąd.
 
 - W przypadku nieoczekiwanych warunków błędu na przykład wyjątek podczas próby zapisu do pliku na dysku Zbieramy informacje o wyjątku. Informacje obejmują nazwę wyjątku, ślad stosu wątku, w którym wystąpił wyjątek, komunikat skojarzony z wyjątkiem i inne informacje istotne dla konkretnego wyjątku.
 
@@ -70,7 +72,7 @@ Autorzy rozszerzeń powinni ograniczyć narażenie na dane osobowe, nie używaj�
 
 W oparciu o dane zbierane i ograniczenia dotyczące dostępu i przechowywania, zalecamy użycie domyślnych ustawień prywatności dla programu Visual Studio i systemu Windows. Można jednak [zrezygnować](../ide/visual-studio-experience-improvement-program.md#opt-in-or-out) z program poprawy jakości obsługi programu Visual Studio. Aby zrezygnować z wygenerowanej przez system kolekcji dzienników dla wszystkich programów, zobacz [Diagnostyka, opinie i prywatność w systemie Windows 10](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy). Opcje mogą się różnić w zależności od używanej wersji systemu Windows.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Program poprawy jakości obsługi klienta systemu Visual Studio](visual-studio-experience-improvement-program.md)
 - [Diagnostyka, opinie i prywatność w systemie Windows 10](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy)

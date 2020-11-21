@@ -1,5 +1,7 @@
 ---
 title: Tworzenie rozwiązań i projektów
+description: Dowiedz się więcej o różnicach między rozwiązaniami i projektami oraz sposobami ich używania w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/06/2018
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19a836847aa01038bdbb015612c4fb4a3964d9a9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7bd893c06da9bc2c2c8d95fc4c085affa815edd2
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770539"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006448"
 ---
 # <a name="create-solutions-and-projects"></a>Tworzenie rozwiązań i projektów
 
@@ -57,7 +59,7 @@ Jeśli masz kolekcję plików źródłowych kodu, możesz łatwo dodać je do pr
 
 ## <a name="add-files-to-a-solution"></a>Dodawanie plików do rozwiązania
 
-Jeśli masz plik, który dotyczy wielu projektów, takich jak plik Readme dla rozwiązania lub inne pliki, które logicznie należą do poziomu rozwiązania, a nie w określonym projekcie, możesz dodać je do samego rozwiązania. Aby dodać element do rozwiązania, w menu kontekstowym (kliknij prawym przyciskiem myszy) węzła rozwiązania w **Eksplorator rozwiązań**wybierz pozycję **Dodaj**  >  **nowy element**lub **Dodaj**  >  **istniejący element**.
+Jeśli masz plik, który dotyczy wielu projektów, takich jak plik Readme dla rozwiązania lub inne pliki, które logicznie należą do poziomu rozwiązania, a nie w określonym projekcie, możesz dodać je do samego rozwiązania. Aby dodać element do rozwiązania, w menu kontekstowym (kliknij prawym przyciskiem myszy) węzła rozwiązania w **Eksplorator rozwiązań** wybierz pozycję **Dodaj**  >  **nowy element** lub **Dodaj**  >  **istniejący element**.
 
 ## <a name="create-a-net-project-that-targets-a-specific-version-of-the-net-framework"></a>Utwórz projekt platformy .NET, który jest przeznaczony dla określonej wersji .NET Framework
 
@@ -122,7 +124,7 @@ Jak wspomniano wcześniej, można również otwierać pliki kodu bez potrzeby pr
 
 Jeśli utworzysz. Projekt oparty na sieci, bez określania lokalizacji dysku, jest projektem tymczasowym. Projekty tymczasowe umożliwiają eksperymentowanie z projektami .NET. W dowolnym momencie podczas pracy z projektem tymczasowym można wybrać opcję zapisywania lub odrzucania go.
 
-Aby utworzyć projekt tymczasowy, najpierw przejdź do opcji **Narzędzia**  >  **Opcje**  >  **projekty i rozwiązania**  >  **Ogólne**i usuń zaznaczenie pola wyboru **Zapisz nowe projekty po utworzeniu** . Następnie otwórz okno dialogowe **Nowy projekt** w zwykły sposób.
+Aby utworzyć projekt tymczasowy, najpierw przejdź do opcji **Narzędzia**  >  **Opcje**  >  **projekty i rozwiązania**  >  **Ogólne** i usuń zaznaczenie pola wyboru **Zapisz nowe projekty po utworzeniu** . Następnie otwórz okno dialogowe **Nowy projekt** w zwykły sposób.
 
 ::: moniker-end
 
@@ -141,7 +143,7 @@ Rozwiązania i ich zawartość można trwale usunąć, ale nie za pomocą środo
 
 1. Wybierz folder zawierający rozwiązanie, a następnie naciśnij klawisz **delete** .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Rozwiązania i projekty](../ide/solutions-and-projects-in-visual-studio.md)
 - [Repozytoria Open Source firmy Microsoft w serwisie GitHub](https://github.com/Microsoft)

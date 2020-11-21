@@ -1,5 +1,7 @@
 ---
 title: Znajdowanie zmian w kodzie i innych elementów historii kodu za pomocą funkcji CodeLens
+description: Dowiedz się więcej na temat CodeLens i sposobu korzystania z niego, aby poznać historię kodu bez konieczności opuszczania edytora.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98bdbecb12897602a70c590b9cee64b992193b7d
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 485287239a13f61d10ee39bad854a0f3bdae4f55
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928505"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006708"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Znajdowanie zmian w kodzie i innych elementów historii kodu za pomocą funkcji CodeLens
 
@@ -79,11 +81,11 @@ Potrzebne elementy:
 
 - [Skype dla firm](/skypeforbusiness/) , aby skontaktować się z zespołem w edytorze kodu
 
-W przypadku kodu w języku C# lub Visual Basic, który jest przechowywany za pomocą Kontrola wersji serwera Team Foundation (TFVC) lub git, można uzyskać szczegóły CodeLens na poziomach klasy i metody (wskaźniki*poziomu elementów kodu* ). Jeśli repozytorium git jest hostowane w usłudze TfGit, uzyskasz także linki do elementów roboczych TFS.
+W przypadku kodu w języku C# lub Visual Basic, który jest przechowywany za pomocą Kontrola wersji serwera Team Foundation (TFVC) lub git, można uzyskać szczegóły CodeLens na poziomach klasy i metody (wskaźniki *poziomu elementów kodu* ). Jeśli repozytorium git jest hostowane w usłudze TfGit, uzyskasz także linki do elementów roboczych TFS.
 
 ![Wskaźniki poziomu elementów kodu](../ide/media/codelens-element-level-indicators.png)
 
-W przypadku typów plików innych niż *. cs* lub *. vb*uzyskasz CodeLens szczegóły dotyczące całego pliku w jednym miejscu w dolnej części okna (wskaźniki*poziomu plików* ).
+W przypadku typów plików innych niż *. cs* lub *. vb* uzyskasz CodeLens szczegóły dotyczące całego pliku w jednym miejscu w dolnej części okna (wskaźniki *poziomu plików* ).
 
 ![Wskaźniki CodeLens na poziomie plików](../ide/media/almcodelensfilelevelindicators.png)
 
@@ -128,7 +130,7 @@ Możesz również zobaczyć, kto zmienił swój kod w czasie. Może to pomóc zn
 
 Zespół może mieć wiele rozgałęzień, na przykład główną gałąź i podrzędną gałąź programistyczną, aby zmniejszyć ryzyko związanego z uszkodzeniem stabilnego kodu.
 
-![CodeLens: Znajdź, kiedy nastąpiło rozgałęzienie kodu](../ide/media/codelensfirstbranchconceptual.png)
+![CodeLens: Znajdź zmiany w bieżącej gałęzi](../ide/media/codelensfirstbranchconceptual.png)
 
 Aby dowiedzieć się, ile osób zmieniło kod i ile zmian zostało wprowadzonych w głównej gałęzi, naciśnij **klawisze Alt** + **6**:
 
@@ -156,7 +158,7 @@ Możesz przejrzeć zmiany bez opuszczania bieżącej gałęzi ("Main"):
 
 Możesz zobaczyć, kiedy zmiany zostały scalone, więc możesz określić, które zmiany są zawarte w gałęzi:
 
-![CodeLens — scalone zmiany między gałęziami](../ide/media/codelensbranchmergedconceptual.png)
+![CodeLens — Znajdź, kiedy zmiany zostały scalone](../ide/media/codelensbranchmergedconceptual.png)
 
 Na przykład kod w gałęzi głównej zawiera teraz poprawkę błędu z gałęzi "dev":
 
@@ -164,7 +166,7 @@ Na przykład kod w gałęzi głównej zawiera teraz poprawkę błędu z gałęzi
 
 ### <a name="compare-an-incoming-change-with-your-local-version"></a>Porównanie przychodzącej zmiany z wersją lokalną
 
-Porównaj zmiany przychodzące z lokalną wersją, naciskając klawisz **SHIFT** + **F10**lub klikając dwukrotnie zestaw zmian.
+Porównaj zmiany przychodzące z lokalną wersją, naciskając klawisz **SHIFT** + **F10** lub klikając dwukrotnie zestaw zmian.
 
 ![CodeLens: Porównaj przychodzące zmiany z lokalną](../ide/media/codelens-branch-incoming-change-menu.png)
 
@@ -250,7 +252,7 @@ Aby wybrać wskaźniki przy użyciu klawiatury, naciśnij i przytrzymaj klawisz 
 
 ### <a name="q-how-do-i-turn-codelens-off-or-on-or-choose-which-indicators-to-see"></a>P: Jak mogę wyłączyć lub włączyć CodeLens lub wybrać wskaźniki, które mają być wyświetlane?
 
-Odp **.:**  Można wyłączyć lub włączyć wskaźniki, z wyjątkiem wskaźnika odwołań. Przejdź do **Tools**  >  **opcji**narzędzia  >  **Edytor tekstu**  >  **wszystkie języki**  >  **CodeLens**.
+Odp **.:**  Można wyłączyć lub włączyć wskaźniki, z wyjątkiem wskaźnika odwołań. Przejdź do **Tools**  >  **opcji** narzędzia  >  **Edytor tekstu**  >  **wszystkie języki**  >  **CodeLens**.
 
 Po włączeniu wskaźników można także otworzyć Opcje CodeLens z wskaźników.
 
@@ -264,7 +266,7 @@ Włącz i Wyłącz wskaźniki na poziomie plików CodeLens przy użyciu ikon Pag
 
 Odp **.:** CodeLens pojawia się w języku C# i Visual Basic kodzie na poziomie metody, klasy, indeksatora i właściwości. CodeLens pojawia się na poziomie pliku dla wszystkich innych typów plików.
 
-- Upewnij się, że CodeLens jest włączona. Przejdź do **Tools**  >  **opcji**narzędzia  >  **Edytor tekstu**  >  **wszystkie języki**  >  **CodeLens**.
+- Upewnij się, że CodeLens jest włączona. Przejdź do **Tools**  >  **opcji** narzędzia  >  **Edytor tekstu**  >  **wszystkie języki**  >  **CodeLens**.
 
 - Jeśli kod jest przechowywany w programie TFS, upewnij się, że indeksowanie kodu jest włączone przy użyciu [polecenia CodeIndex](../ide/codeindex-command.md) z [poleceniem TFS config](/azure/devops/server/command-line/tfsconfig-cmd).
 
@@ -354,6 +356,6 @@ Odp **.:** Strzałka **wersja lokalna** wskazuje najnowszą grupę zmian w lokal
 
 Odp **.:** Skompiluj ponownie projekt, aby uzyskać CodeLens wskaźniki testów do załadowania pliku. Aby zwiększyć wydajność, program Visual Studio nie pobiera więcej informacji o źródłach dla wskaźników testów podczas ładowania plików kodu. Wskaźniki testowe są ładowane po kompilacji lub po przejściu do testu przez dwukrotne kliknięcie go w **Eksploratorze testów**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Funkcje edytora kodu](../ide/writing-code-in-the-code-and-text-editor.md)

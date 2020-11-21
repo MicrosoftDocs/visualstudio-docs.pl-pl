@@ -1,5 +1,7 @@
 ---
 title: Opcje stylu kodu i czyszczenie kodu
+description: Dowiedz się, jak skonfigurować program Visual Studio, aby stosować preferencje stylu kodu za pomocą poleceń czyszczenia kodu (Visual Studio 2019) i formatowania dokumentu (Visual Studio 2017).
+ms.custom: SEO-VS-2020
 ms.date: 04/25/2019
 ms.topic: conceptual
 author: mikejo5000
@@ -10,16 +12,16 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 82eec2a911ec113c42423fe14b06539e465e8bb3
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 9172fff2dde1528c5ea382aea996d316e0738ea0
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658389"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006682"
 ---
 # <a name="code-style-preferences"></a>Preferencje stylu kodu
 
-Można zdefiniować ustawienia stylu kodu dla każdego projektu przy użyciu [pliku EditorConfig](#code-styles-in-editorconfig-files)lub dla całego kodu edytowanego w programie Visual Studio na [stronie **Opcje** ](#code-styles-in-the-options-dialog-box)edytora tekstu. W przypadku kodu w języku C# można także skonfigurować program Visual Studio, aby zastosować te preferencje stylu kodu przy użyciu poleceń **czyszczenia kodu** (visual Studio 2019) i **formatowania dokumentu** (Visual Studio 2017).
+Można zdefiniować ustawienia stylu kodu dla każdego projektu przy użyciu [pliku EditorConfig](#code-styles-in-editorconfig-files)lub dla całego kodu edytowanego w programie Visual Studio na [stronie **Opcje**](#code-styles-in-the-options-dialog-box)edytora tekstu. W przypadku kodu w języku C# można także skonfigurować program Visual Studio, aby zastosować te preferencje stylu kodu przy użyciu poleceń **czyszczenia kodu** (visual Studio 2019) i **formatowania dokumentu** (Visual Studio 2017).
 
 > [!NOTE]
 > Ten temat ma zastosowanie do programu Visual Studio w systemie Windows. Aby uzyskać Visual Studio dla komputerów Mac, zobacz [zachowanie edytora w programie Visual Studio dla komputerów Mac](/visualstudio/mac/editor-behavior).
@@ -58,7 +60,7 @@ Opcje ustawione w tym oknie dotyczą konta personalizacji programu Visual Studio
 
 ### <a name="preference-and-severity"></a>Preferencja i ważność
 
-Dla każdego ustawienia stylu kodu na tej stronie można ustawić wartości **preferencji** i **ważności** przy użyciu list rozwijanych w każdym wierszu. Ważność można ustawić tylko do **refaktoryzacji**, **sugestii**, **ostrzeżenia**lub **błędu**. Jeśli chcesz włączyć [szybkie akcje](../ide/quick-actions.md) dla stylu kodu, upewnij się, że ustawienie **ważności** ma wartość inne niż **tylko Refaktoryzacja**. Żarówka żarówki z **szybką akcją** , lampka błędu żarówki z błędami ![ ](media/light-bulb-dropdown.png) ![ ](media/error-bulb.png) lub ![ ikona śrubokrętu śrubokrętu ](media/screwdriver.png) pojawia się, gdy używany jest styl niepreferowany, i można wybrać opcję na liście **szybkie akcje** , aby automatycznie napisać kod do preferowanego stylu.
+Dla każdego ustawienia stylu kodu na tej stronie można ustawić wartości **preferencji** i **ważności** przy użyciu list rozwijanych w każdym wierszu. Ważność można ustawić tylko do **refaktoryzacji**, **sugestii**, **ostrzeżenia** lub **błędu**. Jeśli chcesz włączyć [szybkie akcje](../ide/quick-actions.md) dla stylu kodu, upewnij się, że ustawienie **ważności** ma wartość inne niż **tylko Refaktoryzacja**. Żarówka **Quick Actions** , żarówka :::image type="icon" source="media/light-bulb-dropdown.png"::: o błędach :::image type="icon" source="media/error-bulb.png"::: lub ikona śrubokrętu :::image type="icon" source="media/screwdriver.png"::: pojawia się, gdy używany jest styl niepreferowany i można wybrać opcję na liście **szybkie akcje** , aby automatycznie ponownie napisać kod do preferowanego stylu.
 
 ::: moniker range=">=vs-2019"
 
@@ -72,7 +74,7 @@ Począwszy od programu Visual Studio 2019 w wersji 16,8, który zawiera zestaw S
 
 ::: moniker range="vs-2017"
 
-Można skonfigurować polecenie **Formatuj dokument** (**Edytuj**  >  **Advanced**  >  **dokument w formacie**zaawansowanym), aby zastosować ustawienia stylu kodu (z EditorConfig pliku lub opcji **stylu kodu** ) wraz z regularnym formatowaniem (na przykład wcięciem). Jeśli plik *. editorconfig* istnieje dla projektu, te ustawienia mają pierwszeństwo.
+Można skonfigurować polecenie **Formatuj dokument** (**Edytuj**  >  **Advanced**  >  **dokument w formacie** zaawansowanym), aby zastosować ustawienia stylu kodu (z EditorConfig pliku lub opcji **stylu kodu** ) wraz z regularnym formatowaniem (na przykład wcięciem). Jeśli plik *. editorconfig* istnieje dla projektu, te ustawienia mają pierwszeństwo.
 
 > [!NOTE]
 > Stosowanie stylów kodu przy użyciu polecenia **Formatuj dokument** jest dostępne tylko dla plików kodu C#. Jest to funkcja eksperymentalna.
@@ -109,7 +111,7 @@ Jeśli chcesz, aby ustawienia stylu kodu były stosowane za każdym razem, gdy z
 
 ::: moniker-end
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Szybkie akcje](../ide/quick-actions.md)
 - [Ustawienia konwencji kodowania .NET dla EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options)

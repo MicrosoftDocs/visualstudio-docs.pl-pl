@@ -1,5 +1,7 @@
 ---
 title: Fragmenty kodu — informacje o schemacie
+description: Dowiedz się więcej o schemacie XML fragmentów kodu IntelliSense i sposobach ich użycia w celu zwiększenia produktywności.
+ms.custom: SEO-VS-2020
 ms.date: 03/31/2020
 ms.topic: reference
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e31ec2be9ccce0b07b04746d2ed51ab3909cdd2c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b5030efcfe6fc774a1bb576f6056db7d9f8fd662
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183681"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006474"
 ---
 # <a name="code-snippets-schema-reference"></a>Fragmenty kodu — informacje o schemacie
 
@@ -633,7 +635,7 @@ Określa typ obiektu. `Object`Element jest używany do identyfikowania elementu,
 | - |-----------------|
 |[Element obiektu](../ide/code-snippets-schema-reference.md#object-element)|Definiuje pola obiektów fragmentu kodu, które można edytować.|
 
-Wartość tekstowa jest wymagana. Ten tekst określa typ obiektu. Na przykład:
+Wartość tekstowa jest wymagana. Ten tekst określa typ obiektu. Przykład:
 
 ```xml
 <Type>System.Data.SqlClient.SqlConnection</Type>
@@ -658,7 +660,7 @@ Określa adres URL strony z dodatkowymi informacjami o zestawie, do którego pro
 
 Wartość tekstowa jest wymagana. Ten tekst określa adres URL strony z dodatkowymi informacjami o zestawie, do którego prowadzi odwołanie. Ten adres URL jest wyświetlany, gdy do projektu nie można dodać odwołania.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Fragmenty kodu](../ide/code-snippets.md)
 - [Przewodnik: tworzenie fragmentu kodu](../ide/walkthrough-creating-a-code-snippet.md)

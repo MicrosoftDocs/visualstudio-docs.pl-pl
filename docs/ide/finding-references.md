@@ -1,5 +1,7 @@
 ---
 title: Znajdowanie odwołań w kodzie
+description: Dowiedz się więcej o poleceniu Znajdź wszystkie odwołania, aby znaleźć odwołania do określonych elementów kodu w kodzie.
+ms.custom: SEO-VS-2020
 ms.date: 09/26/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,18 +12,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e4ef16ef88e871778fd4e0c755ffb156c374109
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5ee6a0792c5dbfa1661018e75806499d1aa1028
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592038"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006552"
 ---
 # <a name="find-references-in-your-code"></a>Znajdowanie odwołań w kodzie
 
 Możesz użyć polecenia **Znajdź wszystkie odwołania** , aby znaleźć, gdzie poszczególne elementy kodu są przywoływane w bazie kodu. Polecenie **Znajdź wszystkie odwołania** jest dostępne w menu kontekstowym (kliknij prawym przyciskiem myszy) elementu, do którego chcesz znaleźć odwołania. Lub, jeśli jesteś użytkownikiem klawiatury, naciśnij klawisze **Shift + F12**.
 
-Wyniki pojawiają się w oknie narzędzia o nazwie ** \<element> References**, gdzie *element* to nazwa wyszukiwanego elementu. Pasek narzędzi w oknie **odwołania** umożliwia:
+Wyniki pojawiają się w oknie narzędzia o nazwie **\<element> References**, gdzie *element* to nazwa wyszukiwanego elementu. Pasek narzędzi w oknie **odwołania** umożliwia:
 - Zmień zakres wyszukiwania w polu listy rozwijanej. Możesz wyszukać tylko zmienione dokumenty, tak samo jak w całym rozwiązaniu.
 - Skopiuj wybrany element, do którego istnieje odwołanie, wybierając przycisk **Kopiuj** .
 - Wybierz przyciski, aby przejść do następnej lub poprzedniej lokalizacji na liście, lub naciśnij klawisze **F8** i **Shift + F8** , aby to zrobić.
@@ -40,10 +42,10 @@ Aby przejść do odwołań w oknie **odwołania** , można użyć następującyc
 - Naciśnij klawisz **F8** , aby przejść do następnego odwołania, lub **klawisze Shift + F8** , aby przejść do poprzedniego odwołania.
 - Naciśnij klawisz **Enter** , aby uzyskać odwołanie, lub kliknij go dwukrotnie, aby przejść do niego w kodzie.
 - W menu rozwijanym prawym przyciskiem myszy (menu kontekstowe) odwołania wybierz polecenie **Przejdź do poprzedniej lokalizacji** lub **Przejdź do następnej lokalizacji** polecenia.
-- Wybierz klawisze **Strzałka w górę** i **Strzałka w dół** (jeśli są włączone w oknie dialogowym **Opcje** ). Aby włączyć tę funkcję, na pasku menu wybierz kolejno **Tools**  >  **Opcje**narzędzia  >  **Environment**  >  **karty środowiska i Podgląd systemu Windows**  >  **Preview Tab**, a następnie zaznacz pole wyboru **Zezwalaj na otwieranie nowych plików na karcie Podgląd** i **Wyświetl podgląd wybranych plików w polu Wyniki wyszukiwania** .
+- Wybierz klawisze **Strzałka w górę** i **Strzałka w dół** (jeśli są włączone w oknie dialogowym **Opcje** ). Aby włączyć tę funkcję, na pasku menu wybierz kolejno **Tools**  >  **Opcje** narzędzia  >  **Environment**  >  **karty środowiska i Podgląd systemu Windows**  >  **Preview Tab**, a następnie zaznacz pole wyboru **Zezwalaj na otwieranie nowych plików na karcie Podgląd** i **Wyświetl podgląd wybranych plików w polu Wyniki wyszukiwania** .
 
 ## <a name="change-reference-groupings"></a>Zmień grupowanie odwołań
-Domyślnie odwołania są pogrupowane według projektu, a następnie według definicji. Można jednak zmienić tę kolejność grupowania, zmieniając ustawienie w polu listy rozwijanej **Grupuj według:** na pasku narzędzi. Można na przykład zmienić to ustawienie z domyślnego ustawienia **projekt, a następnie definicja** na projekt, **a**także inne ustawienia.
+Domyślnie odwołania są pogrupowane według projektu, a następnie według definicji. Można jednak zmienić tę kolejność grupowania, zmieniając ustawienie w polu listy rozwijanej **Grupuj według:** na pasku narzędzi. Można na przykład zmienić to ustawienie z domyślnego ustawienia **projekt, a następnie definicja** na projekt, **a** także inne ustawienia.
 
 **Definicja** i **projekt** to dwie domyślne grupy, które są używane, ale możesz dodać inne, wybierając polecenie **grupowania** na prawym kliknięciu lub menu kontekstowym wybranego elementu. Dodanie większej liczby grup może być przydatne, jeśli rozwiązanie ma wiele plików i ścieżek.
 
@@ -52,6 +54,6 @@ W języku C# lub Visual Basic okno Znajdowanie odwołań zawiera kolumnę rodzaj
 
 ![Znajdowanie kolumny rodzaju okna odwołań ](../ide/media/vside_findallreferencesKind.png)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Nawigowanie po kodzie](../ide/navigating-code.md)
