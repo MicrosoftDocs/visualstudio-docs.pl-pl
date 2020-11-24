@@ -1,5 +1,7 @@
 ---
 title: Skonfiguruj opóźnienia uruchamiania scenariusza na potrzeby testowania obciążenia
+description: Dowiedz się, jak określić opóźnienie, zanim scenariusz rozpocznie się w teście obciążenia, używając Edytor testu obciążeniowego i okno Właściwości.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: 2f634fba-8dfa-4c7a-a8b9-be867b78d16a
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0d425b457056e256c5c9ed927c99adf002b78dd9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ec94fc67dbf42cd2631af1a655d6b8deab54fabc
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288796"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441511"
 ---
 # <a name="configure-scenario-start-delays-in-load-tests"></a>Konfiguruj opóźnienia uruchamiania scenariusza w testach obciążenia
 
@@ -83,7 +85,7 @@ Właściwość **disable in rozgrzewania** służy do wskazywania, czy scenarius
 
 4. Po zakończeniu zmiany właściwości wybierz pozycję **Zapisz** w menu **plik** . Następnie można uruchomić test obciążenia przy użyciu nowej wartości **disable podczas rozgrzewania** .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Edytowanie scenariuszy testu obciążenia](../test/edit-load-test-scenarios.md)
 - [Konfigurowanie agentów testowych i kontrolerów testów dla testów obciążenia](../test/configure-test-agents-and-controllers-for-load-tests.md)

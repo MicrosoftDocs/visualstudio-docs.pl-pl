@@ -1,5 +1,7 @@
 ---
 title: Ustaw ustawienia przebiegu testu obciążenia z wiersza polecenia
+description: Test obciążenia może obejmować Parametry uruchomieniowe, które mają wpływ na sposób uruchamiania testu obciążenia. Dowiedz się, jak ładować Parametry uruchomieniowe z wiersza polecenia.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: 175d1d58-f09a-4449-b132-a29a394a7c8e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 79f1cc833278a62e2871cdc725f5993b12bcdb60
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 290f56ba0f0ca9c6a8f6a6a1ee4e30b86bcfacd7
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287561"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440964"
 ---
 # <a name="how-to-select-a-load-test-run-setting-to-use-from-the-command-line"></a>Instrukcje: Wybieranie ustawienia przebiegu testu obciążenia do użycia z wiersza polecenia
 
@@ -34,7 +36,7 @@ Jeśli test obciążenia zawiera tylko jedno ustawienie uruchomieniowe, zawsze j
 
     `mstest /testcontainer:loadtest1.loadtest`
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Skonfiguruj ustawienia przebiegu testu obciążenia](../test/configure-load-test-run-settings.md)
 - [Określ zestawy liczników i reguły progowe dla komputerów w teście obciążenia](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)

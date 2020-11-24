@@ -1,5 +1,7 @@
 ---
-title: Samouczek kodowanych testów interfejsu użytkownika opartych na danych
+title: Samouczek Data-Driven kodowanego testu interfejsu użytkownika
+description: Dowiedz się, jak używać kodowanych testów interfejsu użytkownika opartych na danych do testowania różnych warunków, uruchamiając testy wiele razy z różnymi wartościami parametrów.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ada1f297bbb30fbe636042c87aae42849c1b6b7d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d9c4deb02bea8bf6e3dc3615ba9c5f0eddc6c877
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595361"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442680"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Tworzenie kodowanego testu interfejsu użytkownika opartego na danych
 
@@ -68,7 +70,7 @@ Ten przykład tworzy kodowany test interfejsu użytkownika, który jest uruchami
 
     Wynik testu, który pokazuje, czy w oknie **Eksplorator testów** jest wyświetlany test zakończony powodzeniem lub niepowodzeniem. Aby otworzyć okno Eksplorator testów, z menu **test** wybierz pozycję **Windows** , a następnie wybierz **Eksplorator testów**.
 
-6. Ze względu na to, że źródło danych może być również używane dla wartości parametrów potwierdzenia — które są używane przez test w celu sprawdzenia oczekiwanych wartości — Dodajmy potwierdzenie, aby sprawdzić, czy suma dwóch numerów jest poprawna. Umieść kursor w pokazanej powyżej metodzie testowej, otwórz menu dostępne po kliknięciu prawym przyciskiem myszy i wybierz polecenie **Generuj kod dla kodowanego testu interfejsu**użytkownika, a następnie **Użyj konstruktora KODOWANEGO testu interfejsu użytkownika**.
+6. Ze względu na to, że źródło danych może być również używane dla wartości parametrów potwierdzenia — które są używane przez test w celu sprawdzenia oczekiwanych wartości — Dodajmy potwierdzenie, aby sprawdzić, czy suma dwóch numerów jest poprawna. Umieść kursor w pokazanej powyżej metodzie testowej, otwórz menu dostępne po kliknięciu prawym przyciskiem myszy i wybierz polecenie **Generuj kod dla kodowanego testu interfejsu** użytkownika, a następnie **Użyj konstruktora KODOWANEGO testu interfejsu użytkownika**.
 
     Mapuj kontrolkę tekstową na Kalkulator, który wyświetla sumę.
 
@@ -233,7 +235,7 @@ Odp **.:** Wszelkie zmiany kodu wprowadzone w pliku *UIMapDesigner.cs* zostaną 
 
 Jeśli trzeba zmodyfikować nagraną metodę, należy skopiować ją do pliku *UIMap.cs* i zmienić jej nazwę. Plik *UIMap.cs* może służyć do przesłonięcia metod i właściwości w pliku *UIMapDesigner.cs* . Musisz usunąć odwołanie do oryginalnej metody w kodowanym pliku *UITest.cs* i zastąpić je nazwą metody o zmienionej nazwie.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>

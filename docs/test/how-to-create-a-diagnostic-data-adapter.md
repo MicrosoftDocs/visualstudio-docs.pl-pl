@@ -1,5 +1,7 @@
 ---
 title: 'Porady: tworzenie adaptera danych diagnostycznych'
+description: Dowiedz się, jak utworzyć adapter danych diagnostycznych, tworząc bibliotekę klas przy użyciu programu Visual Studio i dodając interfejsy API adaptera danych diagnostycznych.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bd5d4d14267be51dfea20c43630ff9f31f6d13ac
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 730a3e2618bd5f424d21eaf3eb4ef3621ec1838e
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928622"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95439852"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Instrukcje: Tworzenie adaptera danych diagnostycznych
 
@@ -32,7 +34,7 @@ Zdarzenia są wywoływane po uruchomieniu testów, aby adapter danych diagnostyc
 
 Poniżej znajduje się częściowa lista kluczowych zdarzeń, których można użyć podczas tworzenia adaptera danych diagnostycznych. Aby uzyskać pełną listę zdarzeń karty danych diagnostycznych, zobacz Klasa abstract <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents> .
 
-|Wydarzenie|Opis|
+|Zdarzenie|Opis|
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionStart>|Początek przebiegu testu|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionEnd>|Koniec przebiegu testu|
@@ -54,7 +56,7 @@ Aby zapoznać się z kompletnym przykładowym projektem adaptera danych diagnost
 
 2. Dodaj zestaw **Microsoft.VisualStudio.QualityTools.ExecutionCommon**.
 
-   1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **odwołania** i wybierz polecenie **Dodaj odwołanie** .
+   1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję **odwołania** i wybierz polecenie **Dodaj odwołanie** .
 
    2. Wybierz pozycję **.NET** i Znajdź **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**.
 
@@ -62,7 +64,7 @@ Aby zapoznać się z kompletnym przykładowym projektem adaptera danych diagnost
 
 3. Dodaj zestaw **Microsoft. VisualStudio. QualityTools. Common**.
 
-   1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **odwołania** i wybierz polecenie **Dodaj odwołanie** .
+   1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję **odwołania** i wybierz polecenie **Dodaj odwołanie** .
 
    2. Wybierz pozycję **/.NET**, a następnie Znajdź **Microsoft.VisualStudio.QualityTools.Common.dll**.
 
@@ -79,7 +81,7 @@ Aby zapoznać się z kompletnym przykładowym projektem adaptera danych diagnost
    using System;
    ```
 
-5. Dodaj <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorTypeUriAttribute> do klasy dla karty danych diagnostycznych, aby zidentyfikować ją jako adapter danych diagnostycznych, zastępując **firmę**, **produkt**i **wersję** odpowiednimi informacjami dla adaptera danych diagnostycznych:
+5. Dodaj <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorTypeUriAttribute> do klasy dla karty danych diagnostycznych, aby zidentyfikować ją jako adapter danych diagnostycznych, zastępując **firmę**, **produkt** i **wersję** odpowiednimi informacjami dla adaptera danych diagnostycznych:
 
    ```csharp
    [DataCollectorTypeUri("datacollector://Company/Product/Version")]
@@ -263,7 +265,7 @@ Aby zapoznać się z kompletnym przykładowym projektem adaptera danych diagnost
 
     Określony plik danych jest dołączany do wyników testu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute>
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents>

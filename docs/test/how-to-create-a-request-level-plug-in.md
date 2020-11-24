@@ -1,5 +1,6 @@
 ---
 title: Tworzenie wtyczki na poziomie żądania (testy wydajności sieci Web)
+description: Dowiedz się, jak wtyczki testów wydajności sieci Web na pojedynczym żądaniu umożliwiają ponowne użycie kodu poza głównymi instrukcjami deklaracyjne w teście wydajności sieci Web.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ ms.assetid: d0b5b23c-7e94-4637-be6c-2620a5442d46
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5f136214b787820396fdbcff37f9f3b78574e9c8
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: fb0b5339507866b8e6c134db2951c5ae94f108b9
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810275"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441068"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>Instrukcje: tworzenie wtyczki na poziomie żądania
 
@@ -31,11 +32,11 @@ Możesz użyć niestandardowych wtyczek do testowania wydajności sieci Web przy
 
 ## <a name="to-create-a-request-level-plug-in"></a>Aby utworzyć wtyczkę na poziomie żądania
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy rozwiązanie, wybierz polecenie **Dodaj** , a następnie wybierz pozycję **Nowy projekt**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy rozwiązanie, wybierz polecenie **Dodaj** , a następnie wybierz pozycję **Nowy projekt**.
 
 2. Utwórz nowy projekt **biblioteki klas** .
 
-3. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy folder **odwołania** w nowej bibliotece klas i wybierz polecenie **Dodaj odwołanie**.
+3. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy folder **odwołania** w nowej bibliotece klas i wybierz polecenie **Dodaj odwołanie**.
 
      Zostanie wyświetlone okno dialogowe **Dodawanie odwołania** .
 
@@ -43,13 +44,13 @@ Możesz użyć niestandardowych wtyczek do testowania wydajności sieci Web przy
 
      Odwołanie do **Microsoft. VisualStudio. QualityTools. WebTestFramework** jest dodawane do folderu **Reference** w **Eksplorator rozwiązań**.
 
-5. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy górny węzeł projektu testu wydajności i obciążenia sieci Web, który zawiera test obciążenia, do którego chcesz dodać wtyczkę testową żądania testu wydajności sieci Web. Wybierz pozycję **Dodaj odwołanie**.
+5. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy górny węzeł projektu testu wydajności i obciążenia sieci Web, który zawiera test obciążenia, do którego chcesz dodać wtyczkę testową żądania testu wydajności sieci Web. Wybierz pozycję **Dodaj odwołanie**.
 
      **Zostanie wyświetlone okno dialogowe Dodawanie odwołania**.
 
 6. Wybierz kartę **projekty** , wybierz **projekt Biblioteka klas** , a następnie wybierz przycisk **OK** .
 
-7. W **edytorze kodu**Napisz kod wtyczki. Najpierw utwórz nową klasę publiczną, która pochodzi od <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin> .
+7. W **edytorze kodu** Napisz kod wtyczki. Najpierw utwórz nową klasę publiczną, która pochodzi od <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin> .
 
 8. Zaimplementuj kod wewnątrz jednego lub obu <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin.PreRequest*> <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin.PostRequest*> programów obsługi zdarzeń i. Przykładową implementację przedstawiono w następującej sekcji Przykład.
 
@@ -61,7 +62,7 @@ Możesz użyć niestandardowych wtyczek do testowania wydajności sieci Web przy
 
      Zostanie wyświetlone okno dialogowe **Dodaj wtyczkę żądania testu sieci Web** .
 
-12. W obszarze **wybierz wtyczkę**wybierz nową wtyczkę.
+12. W obszarze **wybierz wtyczkę** wybierz nową wtyczkę.
 
 13. We **właściwościach wybranego okienka wtyczek** Ustaw początkowe wartości dla wtyczki, które mają być używane w czasie wykonywania.
 
@@ -111,7 +112,7 @@ namespace RequestPluginNamespace
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>
 - [Tworzenie niestandardowych kodów i wtyczek dla testów obciążeniowych](../test/create-custom-code-and-plug-ins-for-load-tests.md)

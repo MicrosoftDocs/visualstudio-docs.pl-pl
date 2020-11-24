@@ -1,7 +1,7 @@
 ---
 title: require-mssql
 description: Narzędzie devinit wymaga — MSSQL.
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 7d7a5e7d8ba78b98e05d1b9aff3145c3c34c6ca0
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 95558da015462899d0388870fce95d19030fc291
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672133"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442099"
 ---
 # <a name="require-mssql"></a>require-mssql
 
@@ -49,7 +49,7 @@ Nie używany.
 
 Domyślnym zachowaniem tego `require-mssql` narzędzia jest zainstalowanie programu SQL Server.
 
-### <a name="builtin-options"></a>Wbudowane opcje
+### <a name="built-in-options"></a>Wbudowane opcje
 
 `require-mssql`Narzędzie ustawia liczbę argumentów wiersza polecenia Instalatora, aby upewnić się, że Instalator może uruchomić bezobsługowy. Te argumenty są wymienione poniżej, a dokumentacja na nich znajduje się w [dokumentacji instalacji programu SQL Server](/sql/database-engine/install-windows/install-sql-server-from-the-command-prompt?view=sql-server-ver15&preserve-view=true).
 
@@ -75,7 +75,7 @@ Domyślnym zachowaniem tego `require-mssql` narzędzia jest zainstalowanie progr
 | /IACCEPTSQLSERVERLICENSETERMS                                      |             |
 
 ## <a name="example-usage"></a>Przykład użycia
-Poniżej znajduje się przykład sposobu uruchamiania `require-msssql` przy użyciu `.devinit.json` . 
+Poniżej znajduje się przykład sposobu uruchamiania `require-msssql` przy użyciu `.devinit.json` .
 
 #### <a name="devinitjson-that-will-install-mssql"></a>.devinit.js, na którym zostanie zainstalowany program MSSQL:
 ```json

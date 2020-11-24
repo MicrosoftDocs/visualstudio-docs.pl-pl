@@ -1,7 +1,7 @@
 ---
 title: dotnet-toolinstall
 description: Narzędzie devinit dotnet-toolinstall.
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 85a8beafdc9b19a807becabb459baa5de88169e2
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 343c66a0f1da955479993502cf5dcf967abe03b9
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672220"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440403"
 ---
 # <a name="dotnet-toolinstall"></a>dotnet-toolinstall
 
@@ -38,7 +38,7 @@ Jeśli obie `input` właściwości i `additionalOptions` zostaną pominięte lub
 
 ### <a name="additional-options"></a>Opcje dodatkowe
 
-Dodatkowe opcje konfiguracji mogą być przesyłane jako wartość `additionalOptions` . Te argumenty są bezpośrednim przekazywaniem do argumentów używanych przez [`dotnet tool update`](/dotnet/core/tools/global-tools#update-a-tool) polecenie. 
+Dodatkowe opcje konfiguracji mogą być przesyłane jako wartość `additionalOptions` . Te argumenty są bezpośrednim przekazywaniem do argumentów używanych przez [`dotnet tool update`](/dotnet/core/tools/global-tools#update-a-tool) polecenie.
 
 `dotnet tool update`Polecenie jest używane do bezpiecznego obsługi przypadku, gdy narzędzie jest już zainstalowane.
 
@@ -47,7 +47,7 @@ Dodatkowe opcje konfiguracji mogą być przesyłane jako wartość `additionalOp
 Domyślne zachowanie `dotnet-toolinstall` narzędzia to błąd, zgodnie z `input` wymaganiami.
 
 ## <a name="example-usage"></a>Przykład użycia
-Poniżej znajdują się przykłady sposobu uruchamiania programu `dotnet-toolinstall` przy użyciu programu `.devinit.json` . 
+Poniżej znajdują się przykłady sposobu uruchamiania programu `dotnet-toolinstall` przy użyciu programu `.devinit.json` .
 
 #### <a name="devinitjson-that-will-install-the-dotnet-trace-tool"></a>.devinit.js, na którym zostanie zainstalowane narzędzie do śledzenia dotnet:
 ```json

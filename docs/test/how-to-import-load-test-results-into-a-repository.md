@@ -1,5 +1,7 @@
 ---
 title: 'Porady: importowanie wyników testu obciążenia do repozytorium'
+description: Dowiedz się, jak ładować informacje do repozytorium Wyniki testów obciążenia, korzystając z okna dialogowego Otwórz i Zarządzaj Wyniki testów ładowania.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.assetid: a955b3d2-c8ad-40dd-8ea3-9f1a271e1eed
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f8f0ec6b9f1a5664ac898e525420ec2cc374f5ad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2133977de827fe558ee9323280c5f05df683ed59
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287743"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442316"
 ---
 # <a name="how-to-import-load-test-results-into-a-repository"></a>Instrukcje: Importowanie wyników testu obciążenia do repozytorium
 
@@ -36,7 +38,7 @@ Można zarządzać wynikami testów obciążenia z Edytor testu obciążeniowego
 
 3. W polu **Wprowadź nazwę kontrolera, aby znaleźć wyniki testu obciążenia**, wybierz kontroler. Wybierz **\<local>** , aby uzyskać dostęp do wyników przechowywanych lokalnie.
 
-     Jeśli są dostępne wyniki testów obciążenia, są one wyświetlane na liście **wyników testu obciążenia** . Kolumny są typu **Time**, **Duration**, **User**, **wynik**, **test**i **Description**. **Test** zawiera nazwę testu, a **Opis** zawiera opcjonalny opis, który jest dodawany przed uruchomieniem testu.
+     Jeśli są dostępne wyniki testów obciążenia, są one wyświetlane na liście **wyników testu obciążenia** . Kolumny są typu **Time**, **Duration**, **User**, **wynik**, **test** i **Description**. **Test** zawiera nazwę testu, a **Opis** zawiera opcjonalny opis, który jest dodawany przed uruchomieniem testu.
 
 4. Wybierz pozycję **Importuj**.
 
@@ -53,7 +55,7 @@ Można zarządzać wynikami testów obciążenia z Edytor testu obciążeniowego
 
      Wyniki są importowane i pojawiają się na liście **wyników testu obciążenia** .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Zarządzanie wynikami testów obciążenia w repozytorium Wyniki testów obciążenia](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [Analizowanie wyników testów obciążenia](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

@@ -1,5 +1,7 @@
 ---
 title: Analizowanie aktywności wirtualnego użytkownika na potrzeby testów obciążenia
+description: Dowiedz się, jak używać wykresu aktywności wirtualnego użytkownika, aby zobaczyć, że każdy użytkownik wirtualny był uruchomiony podczas testu, aby zobaczyć wzorce aktywności użytkownika i inne informacje.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: 8bda19b3-91c1-4daf-b6c7-09108bddadff
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 64b69ba926e3c978efa60bd9946da94d846c383f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 353a38c17cdcd3358376547155750914e406f4be
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288406"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442394"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Instrukcje: analizowanie, co robią Użytkownicy wirtualną podczas testu obciążenia za pomocą wykresu aktywności wirtualnego użytkownika
 
@@ -72,7 +74,7 @@ W poniższych procedurach przedstawiono sposób wyświetlania **wykresu aktywno�
 
 ## <a name="to-use-filtering-options-in-the-virtual-user-activity-chart"></a>Aby użyć opcji filtrowania na wykresie aktywności wirtualnego użytkownika
 
-1. W **legendzie szczegółów**Użyj listy rozwijanej, aby wybrać **test**, **stronę**lub **transakcję**.
+1. W **legendzie szczegółów** Użyj listy rozwijanej, aby wybrać **test**, **stronę** lub **transakcję**.
 
     **Panel legendy szczegółów**
 
@@ -90,7 +92,7 @@ W poniższych procedurach przedstawiono sposób wyświetlania **wykresu aktywno�
 
     ![Panel wyników filtrowania](../test/media/ltest_filterresults.png)
 
-3. W **wynikach filtru**zaznacz lub usuń zaznaczenie pól wyboru dla następujących opcji filtru:
+3. W **wynikach filtru** zaznacz lub usuń zaznaczenie pól wyboru dla następujących opcji filtru:
 
    - **Pokaż tylko wyniki z dziennikami** Wyświetla tylko wyniki testów, które mają skojarzone dzienniki testowe.
 
@@ -103,7 +105,7 @@ W poniższych procedurach przedstawiono sposób wyświetlania **wykresu aktywno�
 
      **Wykres aktywności wirtualnego użytkownika** jest odpowiednio aktualizowany.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Analizowanie aktywności wirtualnego użytkownika w widoku szczegółów](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
 - [Przewodnik: używanie wykresu aktywności wirtualnego użytkownika w celu wyizolowania problemów](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)

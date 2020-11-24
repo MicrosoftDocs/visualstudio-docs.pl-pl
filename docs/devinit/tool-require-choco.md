@@ -1,7 +1,7 @@
 ---
 title: require-choco
 description: Narzędzie devinit wymaga-Choco.
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: d9ecd12a36621ab2a21f94014d6a0fd13568609b
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 408c88a72f0d468d9a044460a0d0da2bdb5fcc31
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671880"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440410"
 ---
 # <a name="require-choco"></a>require-choco
 
@@ -42,10 +42,10 @@ Nie używany.
 
 ### <a name="default-behavior"></a>Zachowanie domyślne
 
-Domyślnym zachowaniem `require-choco` narzędzia jest zainstalowanie czekolady i dodanie go do ścieżki (tylko system Windows).
+Domyślnym zachowaniem `require-choco` narzędzia jest zainstalowanie czekolady i dodanie go do programu `PATH` .
 
 ## <a name="example-usage"></a>Przykład użycia
-Poniżej znajduje się przykład sposobu uruchamiania `require-choco` przy użyciu `.devinit.json` . 
+Poniżej znajduje się przykład sposobu uruchamiania `require-choco` przy użyciu `.devinit.json` .
 
 #### <a name="devinitjson-that-will-install-chocolatey"></a>.devinit.js, na którym zostanie zainstalowana czekolada:
 ```json

@@ -1,5 +1,6 @@
 ---
 title: Kod reguły wyodrębniania niestandardowego (test wydajności sieci Web)
+description: Dowiedz się, jak utworzyć własne reguły wyodrębniania pochodzące z klasy reguł wyodrębniania, ExtractionRule.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -14,12 +15,12 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d29bb2d0bfa1bbea7d0dd8dedbb17f9704a9c66d
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: e03a289ee95e9aefddb49154d1199fffa31ce3ca
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810630"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442459"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>Kod reguły wyodrębniania niestandardowego dla testu wydajności sieci Web
 
@@ -207,7 +208,7 @@ End Namespace
 
 Metoda <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> zawiera podstawowe funkcje reguły wyodrębniania. Metoda <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> w poprzednim przykładzie przyjmuje jako wartość element <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionEventArgs>, który dostarcza odpowiedzi generowane przez żądanie objęte regułą wyodrębniania. Odpowiedź zawiera element <xref:Microsoft.VisualStudio.TestTools.WebTesting.HtmlDocument>, w którym znajdują się wszystkie znaczniki odpowiedzi. Znaczniki wejściowe są odfiltrowywane z elementu <xref:Microsoft.VisualStudio.TestTools.WebTesting.HtmlDocument>. Każdy tag wejściowy jest sprawdzany pod kątem atrybutu o nazwie `name` , którego wartość jest równa wartości podanej przez użytkownika `Name` właściwości. Jeśli zostanie znaleziony tag z tym pasującym atrybutem, podejmowana jest próba wyodrębnienia wartości zawartej w `value` atrybucie, jeśli istnieje atrybut value. Jeśli istnieje, nazwa i wartość znacznika są wyodrębniane i dodawane do kontekstu testu wydajności sieci Web. Reguła wyodrębniania zadziałała pomyślnie.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule>
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.Rules>

@@ -1,5 +1,7 @@
 ---
 title: Nagrywanie ekranu i głosu podczas testów
+description: Dowiedz się, jak skonfigurować adapter danych diagnostycznych, który rejestruje ekran i głos użytkownika, który uruchamia test w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 10/03/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: 2cefe8c2-430a-4cb4-bbe0-f3edb2e5bc03
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2366e77b0b66e2a31ce17e1aefb9240e4f45df2d
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 08ae6d19327a956b5dab71fa30b0b33742390d2b
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928648"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440990"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Instrukcje: uwzględnianie nagrań ekranu i głosu podczas testów przy użyciu ustawień testu
 
@@ -46,9 +48,9 @@ Rejestrator ekranu i głosu może być używany z testami ręcznymi lub zautomat
 5. Obowiązkowe Zaznacz pole wyboru obok pozycji **Zapisz nagranie, jeśli przypadek testowy zostanie** określony, aby określić zapisywanie nagrań ekranu i głosu dla testów zakończonych niepowodzeniem i zakończonych pomyślnie.
 
     > [!WARNING]
-    > Jeśli wybierzesz opcję **Zapisz nagrywanie, jeśli przypadek testowy**jest zapisywany, nagranie jest przechowywane z wynikami testu, które korzystają z miejsca do magazynowania na serwerze. Aby wyczyścić te załączniki, można użyć narzędzia do **czyszczenia załączników testów** .
+    > Jeśli wybierzesz opcję **Zapisz nagrywanie, jeśli przypadek testowy** jest zapisywany, nagranie jest przechowywane z wynikami testu, które korzystają z miejsca do magazynowania na serwerze. Aby wyczyścić te załączniki, można użyć narzędzia do **czyszczenia załączników testów** .
 
-6. W obszarze **jakość nagrywania ekranu**skonfiguruj następujące opcje listy rozwijanej:
+6. W obszarze **jakość nagrywania ekranu** skonfiguruj następujące opcje listy rozwijanej:
 
     1. **Szybkość klatek:** Określ liczbę ramek na sekundę, które mają być używane na potrzeby nagrania ekranu i głosu. Wartość domyślna to 4 klatki na sekundę. Można określić wartości z zakresu od 2 do 20.
 
@@ -67,7 +69,7 @@ Rejestrator ekranu i głosu może być używany z testami ręcznymi lub zautomat
     > Aby zresetować konfigurację tego adaptera danych diagnostycznych, wybierz pozycję **Zresetuj do konfiguracji domyślnej** w programie Visual Studio.
     ::: moniker-end
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Zbieraj dane diagnostyczne podczas testowania (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts&preserve-view=true)
 - [Zbieranie danych diagnostycznych w testach ręcznych (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts&preserve-view=true)

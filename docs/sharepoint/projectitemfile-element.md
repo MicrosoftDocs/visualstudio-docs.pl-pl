@@ -1,5 +1,7 @@
 ---
 title: ProjectItemFile — — element | Microsoft Docs
+description: Pobierz informacje referencyjne na temat elementu ProjectItemFile —, który reprezentuje plik elementu projektu w odwołaniu do schematu XML elementu projektu programu SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d1c9814498d74a5d1a6533576f1071b4bf7deb57
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 099f20926487b09240219f04d9bce4a79709f6e6
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85539857"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440808"
 ---
 # <a name="projectitemfile-element"></a>ProjectItemFile — element
   Reprezentuje plik programu SharePoint, taki jak plik elementu funkcji, do dołączenia do elementu projektu, gdy jest wdrażany w programie SharePoint.
@@ -51,7 +53,7 @@ ms.locfileid: "85539857"
 
 |Element|Opis|
 |-------------|-----------------|
-|[Pliki](../sharepoint/files-element.md)|Określa pliki do dołączenia do elementu projektu programu SharePoint po wdrożeniu w programie SharePoint.|
+|[Files](../sharepoint/files-element.md)|Określa pliki do dołączenia do elementu projektu programu SharePoint po wdrożeniu w programie SharePoint.|
 
 ## <a name="remarks"></a>Uwagi
  Pliki programu SharePoint, które są zwykle przywoływane w elementach **ProjectItemFile —** , obejmują pliki elementów funkcji (*Elements.xml*), pliki schematów dla definicji list (*Schema.xml*) i pliki definicji części sieci Web dla składniki Web Part (*. WebPart*).
@@ -60,10 +62,10 @@ ms.locfileid: "85539857"
 
 |Właściwość|Wartość|
 |-|-|
-|**Przestrzeń nazw**|http: \/ \/ schemas.Microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**Obszaru**|http: \/ \/ schemas.Microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
 |**Nazwa schematu**|Schemat elementu projektu programu SharePoint|
 |**Plik walidacji**|ProjectItemModelSchema. xsd|
 |**Może być puste**|Nie|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Odwołanie do schematu elementu projektu programu SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)

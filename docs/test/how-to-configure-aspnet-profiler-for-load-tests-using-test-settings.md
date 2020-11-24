@@ -1,5 +1,7 @@
 ---
 title: Konfigurowanie profilera ASP.NET dla testów obciążenia
+description: Dowiedz się, jak zbierać informacje profilera ASP.NET przy użyciu adaptera danych diagnostycznych ASP.NET Profiler.
+ms.custom: SEO-VS-2020
 ms.date: 10/13/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: 6832fe39-04d5-4d94-8a18-3e2730bad423
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c4f82f8f4c518a9c72399b6e28a01d112f5678c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: baea8be1da9a6dd89c06aa328bf579974503921f
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288211"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442329"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Instrukcje: Konfigurowanie profilera ASP.NET na potrzeby testów obciążenia przy użyciu ustawień testu w programie Visual Studio
 
@@ -44,7 +46,7 @@ Przed wykonaniem kroków opisanych w tej procedurze należy otworzyć ustawienia
 
      Zostanie wyświetlone okno dialogowe umożliwiające skonfigurowanie zbierania danych profilowania ASP.NET.
 
-3. W polu **Interwał próbkowania profilera**wpisz wartość wskazującą, ile niezatrzymanego zegara procesora CPU ma oczekiwać między pobieraniem ASP.NET profilowania.
+3. W polu **Interwał próbkowania profilera** wpisz wartość wskazującą, ile niezatrzymanego zegara procesora CPU ma oczekiwać między pobieraniem ASP.NET profilowania.
 
 4. Aby włączyć profilowanie interakcji między warstwami, wybierz pozycję **Włącz profilowanie interakcji między warstwami**.
 
@@ -58,7 +60,7 @@ Przed wykonaniem kroków opisanych w tej procedurze należy otworzyć ustawienia
 
 Za pomocą adaptera danych diagnostycznych profilera ASP.NET skonfigurowanych w ustawieniu testu możesz teraz zbierać dane profilowania ASP.NET w aplikacji sieci Web ASP.NET.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Zbieranie informacji diagnostycznych za pomocą ustawień testu](../test/collect-diagnostic-information-using-test-settings.md)
 - [Instrukcje: Tworzenie ustawień testowych dla testu obciążenia rozłożonego](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)

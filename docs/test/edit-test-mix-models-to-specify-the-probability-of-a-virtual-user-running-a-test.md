@@ -1,5 +1,7 @@
 ---
 title: Edytowanie modeli tekstu mieszanego
+description: Dowiedz się, w jaki sposób model testu mieszanego pozwala na korzystanie z kilku przepływów pracy, co jest bardziej ściśle zbliżone do sposobu, w jaki użytkownicy końcowi pracują z aplikacjami.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: e3b7d952-9012-400a-8131-3444390a6066
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8ce54af89164b1a71c7328d04635c8735eec1b28
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0d95eee8dd4e49e74b9bafd048e3f672fe560c68
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288653"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441368"
 ---
 # <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Edytuj modele testów mieszanych, aby określić prawdopodobieństwo uruchomienia testu przez użytkownika wirtualnego
 
@@ -38,18 +40,18 @@ Możesz określić jedną z następujących opcji modelu testu mieszanego dla sc
 
 |Zadania|Skojarzone tematy|
 |-|-----------------------|
-|**Określanie mieszanki testowej dla testu obciążenia:** Podczas tworzenia testu obciążenia należy określić ustawienia testu obciążenia w **nowym Kreator testu obciążeniowego**. W **nowych Kreator testu obciążeniowego**wybierasz istniejące testy sieci Web i jednostek, aby dodać je do scenariusza początkowego. Po dodaniu testów do scenariusza należy określić test mieszany dla scenariusza.<br /><br /> Opcja Załaduj model umożliwia dokładniejsze przewidywalność rzeczywistego użycia witryny sieci Web lub aplikacji, które są testowane. Należy to zrobić, ponieważ test obciążenia, który nie jest oparty na precyzyjnym modelu obciążenia, może generować błędne wyniki.|-   [Emulowanie oczekiwanego użycia witryny sieci Web lub aplikacji w świecie rzeczywistym](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md)|
+|**Określanie mieszanki testowej dla testu obciążenia:** Podczas tworzenia testu obciążenia należy określić ustawienia testu obciążenia w **nowym Kreator testu obciążeniowego**. W **nowych Kreator testu obciążeniowego** wybierasz istniejące testy sieci Web i jednostek, aby dodać je do scenariusza początkowego. Po dodaniu testów do scenariusza należy określić test mieszany dla scenariusza.<br /><br /> Opcja Załaduj model umożliwia dokładniejsze przewidywalność rzeczywistego użycia witryny sieci Web lub aplikacji, które są testowane. Należy to zrobić, ponieważ test obciążenia, który nie jest oparty na precyzyjnym modelu obciążenia, może generować błędne wyniki.|-   [Emulowanie oczekiwanego użycia witryny sieci Web lub aplikacji w świecie rzeczywistym](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md)|
 |**Edytuj model testu mieszanego:** Można zmienić scenariusz testu obciążenia, aby użyć jednego z modeli testów mieszanych za pomocą **Edytor testu obciążeniowego**.||
 |**Skonfiguruj opóźnienie tempem dla modelu testowego:** Jeśli scenariusz testu obciążenia jest skonfigurowany do korzystania z **modelu standardu testowego**, możesz określić sposób, w jaki ma zostać skonfigurowane opóźnienie tempem.|-   [Instrukcje: stosowanie dystrybucji do opóźnień tempem w przypadku korzystania z modelu mieszanego testów](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|
 
 ## <a name="change-the-test-mix-model-in-a-scenario"></a>Zmiana modelu testu mieszanego w scenariuszu
 
-Po utworzeniu testu obciążenia przy użyciu **nowego Kreator testu obciążeniowego**można użyć **Edytor testu obciążeniowego** , aby zmienić właściwości scenariuszy, aby spełniały potrzeby testowania i cele.
+Po utworzeniu testu obciążenia przy użyciu **nowego Kreator testu obciążeniowego** można użyć **Edytor testu obciążeniowego** , aby zmienić właściwości scenariuszy, aby spełniały potrzeby testowania i cele.
 
 > [!NOTE]
 > Aby uzyskać pełną listę właściwości ustawień ładowania i ich opisów, zobacz [właściwości scenariusza testu obciążenia](../test/load-test-scenario-properties.md).
 
-Za pomocą **Edytor testu obciążeniowego**można zmienić model testu mieszanego w scenariuszu testu obciążenia, edytując Właściwość **test mix Type** w oknie **Właściwości** .
+Za pomocą **Edytor testu obciążeniowego** można zmienić model testu mieszanego w scenariuszu testu obciążenia, edytując Właściwość **test mix Type** w oknie **Właściwości** .
 
 ### <a name="to-change-the-test-mix-model"></a>Aby zmienić model testu mieszanego
 
@@ -79,7 +81,7 @@ Za pomocą **Edytor testu obciążeniowego**można zmienić model testu mieszane
 
 9. Po zmianie właściwości wybierz pozycję **Zapisz** w menu **plik** . Następnie można uruchomić test obciążenia za pomocą nowej wartości **typ testu mieszanego** .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Edytowanie scenariuszy testu obciążenia](../test/edit-load-test-scenarios.md)
 - [Właściwości scenariusza testu obciążenia](../test/load-test-scenario-properties.md)

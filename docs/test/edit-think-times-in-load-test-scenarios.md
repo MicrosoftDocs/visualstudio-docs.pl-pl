@@ -1,5 +1,7 @@
 ---
 title: Czasy reakcji na testowanie obciążenia
+description: Dowiedz się, jak edytować czas reakcji, który symuluje zachowanie człowieka, które powoduje, że osoby czekają na interakcję z witryną sieci Web.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.assetid: 8e03bee5-ab7b-4b40-9497-9dbe91ccb90e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 887d2af9e60be914bd74141041ecc375cfea4f00
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a1c0c1ef98a77b83c49ca69fd70e38238ed4ded0
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590036"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441303"
 ---
 # <a name="edit-think-times-to-simulate-website-human-interaction-delays-in-load-tests-scenarios"></a>Edytowanie czasów reakcji w celu symulowania opóźnień interakcji z witryną sieci Web w scenariuszach testów obciążenia
 
@@ -50,12 +52,12 @@ Czasy reakcji są używane, ale różnią się w stosunku do normalnej krzywej. 
 
 1. Z projektu test wydajności i obciążenia sieci Web Otwórz test obciążenia.
 
-2. W **Edytor testu obciążeniowego**wybierz węzeł scenariusza, w którym chcesz zmienić **profil myśli**. **Profil myśli** jest wyświetlany w oknie **Właściwości** . Naciśnij klawisz **F4** , aby wyświetlić okno **Właściwości** .
+2. W **Edytor testu obciążeniowego** wybierz węzeł scenariusza, w którym chcesz zmienić **profil myśli**. **Profil myśli** jest wyświetlany w oknie **Właściwości** . Naciśnij klawisz **F4** , aby wyświetlić okno **Właściwości** .
 
 3. Zmień właściwość **profil myśli** w oknie **Właściwości** .
 
 4. Po zakończeniu zmiany właściwości wybierz pozycję **Zapisz** w menu **plik** . Następnie możesz uruchomić test obciążenia z nowym profilem myśli.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Edytowanie scenariuszy testu obciążenia](../test/edit-load-test-scenarios.md)

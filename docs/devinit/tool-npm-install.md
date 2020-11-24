@@ -1,7 +1,7 @@
 ---
 title: npm-install
 description: devinit narzędzie npm — Zainstaluj.
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 21630f5dbc80294547be33ab4a82bdf286a0b08f
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: c69d9464622e1814f6289c925423a6674f113a2f
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671907"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440431"
 ---
 # <a name="npm-install"></a>npm-install
 
@@ -29,7 +29,7 @@ Jeśli obie `input` właściwości i `additionalOptions` zostaną pominięte lub
 | Nazwa                                             | Typ   | Wymagane | Wartość                                                                                                          |
 |--------------------------------------------------|--------|----------|----------------------------------------------------------------------------------------------------------------|
 | **komentarz**                                     | ciąg | Nie       | Opcjonalna Właściwość komentarzy. Nie używany.                                                                          |
-| [**klawiatur**](#input)                              | ciąg | Tak      | Pakiet do zainstalowania. Aby uzyskać szczegółowe informacje, zobacz poniższe [dane wejściowe](#input) .                                                 |
+| [**klawiatur**](#input)                              | ciąg | Nie       | Pakiet do zainstalowania. Aby uzyskać szczegółowe informacje, zobacz poniższe [dane wejściowe](#input) .                                                 |
 | [**additionalOptions**](#additional-options)     | ciąg | Nie       | Dodatkowe opcje do przekazania do narzędzia. Aby uzyskać szczegółowe informacje, zobacz [dodatkowe opcje](#additional-options) poniżej.       |
 
 ### <a name="input"></a>Dane wejściowe
@@ -40,8 +40,12 @@ Jeśli obie `input` właściwości i `additionalOptions` zostaną pominięte lub
 
 Dodatkowe opcje konfiguracji mogą być przesyłane jako wartość `additionalOptions` . Te argumenty są bezpośrednim przekazywaniem do argumentów używanych przez [instalację npm](https://docs.npmjs.com/cli/install).
 
+### <a name="default-behavior"></a>Zachowanie domyślne
+
+Domyślne zachowanie `npm-install` narzędzia jest uruchamiane `npm install` bez argumentów. Opis tego zachowania można znaleźć [w dokumentacji npm](https://docs.npmjs.com/cli/v6/commands/npm-install) .
+
 ## <a name="example-usage"></a>Przykład użycia
-Poniżej znajduje się przykład sposobu uruchamiania `npm-install` przy użyciu `.devinit.json` . 
+Poniżej znajduje się przykład sposobu uruchamiania `npm-install` przy użyciu `.devinit.json` .
 
 #### <a name="devinitjson-that-will-install-mongo"></a>.devinit.js, na którym zostanie zainstalowany program Mongo:
 ```json

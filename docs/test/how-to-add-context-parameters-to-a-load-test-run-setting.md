@@ -1,5 +1,7 @@
 ---
 title: Dodaj parametry kontekstu do ustawienia przebiegu testu obciążenia
+description: Dowiedz się, jak utworzyć parametry kontekstu do użycia w ustawieniu przebiegu testu obciążenia przy użyciu Edytor testu obciążeniowego, które umożliwi Sparametryzuj ciągu.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,16 +11,16 @@ ms.assetid: a8a0b97e-8040-4711-85ab-36548b130ed2
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 10a410b18391b3fbaee98f10be56cdc70c0f3562
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 22b3a6a1f40a317284380bf72aadec4d53b6ce13
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288419"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440190"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Instrukcje: Dodawanie parametrów kontekstu do ustawienia przebiegu testu obciążenia
 
-Po utworzeniu testu obciążenia przy użyciu **nowego Kreator testu obciążeniowego**można użyć **Edytor testu obciążeniowego** , aby zmienić właściwości scenariuszy, aby spełniały potrzeby testowania i cele.
+Po utworzeniu testu obciążenia przy użyciu **nowego Kreator testu obciążeniowego** można użyć **Edytor testu obciążeniowego** , aby zmienić właściwości scenariuszy, aby spełniały potrzeby testowania i cele.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -70,6 +72,6 @@ Ponadto, przypisując różne wartości do parametru kontekstowego za pomocą te
 
 6. Wybierz Parametry uruchomieniowe, które mają być aktywne. Otwórz menu skrótów na stronie Parametry uruchomieniowe i wybierz polecenie **Ustaw jako aktywne**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Skonfiguruj ustawienia przebiegu testu obciążenia](../test/configure-load-test-run-settings.md)

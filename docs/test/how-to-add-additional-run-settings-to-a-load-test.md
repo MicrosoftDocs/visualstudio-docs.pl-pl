@@ -1,5 +1,7 @@
 ---
 title: Dodaj Parametry uruchomieniowe do testu obciążenia
+description: Dowiedz się, jak używać dodatkowych ustawień testu obciążenia, w tym czasu trwania testu, poziomu szczegółowości kolekcji wyników i zbiorów liczników, które są zbierane.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: 257d2a24-d582-4cfe-8b2b-51f51ba9cc84
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a2f62b3e9797e411138590fc15b0fe872920d203
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aef68ac9371833fb44b1ead026e669ad14f7b5d8
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288458"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441238"
 ---
 # <a name="how-to-add-additional-run-settings-to-a-load-test"></a>Instrukcje: Dodawanie dodatkowych parametrów uruchomieniowych do testu obciążenia
 
@@ -47,7 +49,7 @@ Do testu obciążeniowego można dodać więcej parametrów uruchomieniowych z r
 
      Teraz można określić, że dodany parametr uruchomieniowy ma być używany, ustawiając mu status aktywności. Aby uzyskać więcej informacji, zobacz [How to: SELECT The Run aktywny setting for a test Load](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Skonfiguruj ustawienia przebiegu testu obciążenia](../test/configure-load-test-run-settings.md)
 - [Określ zestawy liczników i reguły progowe dla komputerów w teście obciążenia](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)

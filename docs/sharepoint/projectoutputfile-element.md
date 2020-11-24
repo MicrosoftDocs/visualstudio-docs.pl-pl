@@ -1,5 +1,7 @@
 ---
 title: ProjectOutputFile — — element | Microsoft Docs
+description: Pobierz informacje referencyjne na temat elementu ProjectOutputFile —, który reprezentuje dane wyjściowe oddzielnego projektu w odwołaniu do schematu XML elementu projektu programu SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 12f399b7a09c18c77482475575ca387a11955762
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffe6f95bdfd7795c837aaaa25ec7ef2a35a7ae76
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542392"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442031"
 ---
 # <a name="projectoutputfile-element"></a>ProjectOutputFile — element
   Przedstawia dane wyjściowe oddzielnego projektu do dołączenia do elementu projektu, gdy jest wdrażany w programie SharePoint.
@@ -53,7 +55,7 @@ ms.locfileid: "85542392"
 
 |Element|Opis|
 |-------------|-----------------|
-|[Pliki](../sharepoint/files-element.md)|Określa pliki do dołączenia do elementu projektu programu SharePoint po wdrożeniu w programie SharePoint.|
+|[Files](../sharepoint/files-element.md)|Określa pliki do dołączenia do elementu projektu programu SharePoint po wdrożeniu w programie SharePoint.|
 
 ## <a name="remarks"></a>Uwagi
  Użyj elementu **ProjectOutputFile —** , aby uwzględnić dane wyjściowe projektu we wdrożeniu elementu projektu programu SharePoint. Możesz określić inny projekt lub ten sam projekt, który zawiera element projektu. Aby uzyskać więcej informacji, zobacz [zapewnianie informacji o pakowaniu i wdrożeniu w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).
@@ -62,12 +64,12 @@ ms.locfileid: "85542392"
 
 |Właściwość|Wartość|
 |-|-|
-|**Przestrzeń nazw**|http: \/ \/ schemas.Microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**Obszaru**|http: \/ \/ schemas.Microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
 |**Nazwa schematu**|Schemat elementu projektu programu SharePoint|
 |**Plik walidacji**|ProjectItemModelSchema. xsd|
 |**Może być puste**|Nie|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Odwołanie do schematu elementu projektu programu SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)
 - [Udostępnianie informacji o pakowaniu i wdrożeniu w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
 - [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)

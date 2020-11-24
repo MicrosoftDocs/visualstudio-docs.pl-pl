@@ -1,7 +1,7 @@
 ---
 title: set-env
 description: Narzędzie devinit wymaga-set-env.
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: ce3876884061246d8ac1dbc1b211766903ea840a
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 820cd87f26e4babc7a83d975c3fb480187af564f
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671740"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442285"
 ---
 # <a name="set-env"></a>set-env
 
@@ -38,7 +38,7 @@ To narzędzie korzysta z interfejsu API programu .NET Core `Environment.SetEnvir
 
 | Akcja       | Dane wejściowe            | Opis                                                                                                                                                              | Przykład             |
 |--------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
-| **Wyświetl wszystko** | puste lub pominięte | Wyświetl listę wszystkich bieżących zmiennych środowiskowych.                                                                                                                              | `"input":""`        |
+| **Wyświetl wszystko** | puste lub pominięte | Wyświetl listę wszystkich bieżących zmiennych środowiskowych.                                                                                                                           | `"input":""`        |
 | **Lista jeden** | ciąg           | Wyświetl wartość konkretnej zmiennej środowiskowej według nazwy.                                                                                                               | `"input":"foo"`     |
 | **add**      | ciąg           | Ustawia wartość zmiennej środowiskowej jako parę klucz-wartość. Dodaje nową zmienną środowiskową, jeśli jeszcze nie istnieje lub nie ustawił wartości istniejącej zmiennej środowiskowej | `"input":"foo=bar"` |
 | **delete**   | ciąg           | Usuwa istniejącą zmienną środowiskową, przekazując ciąg pustej wartości.                                                                                            | `"input":"foo="`    |
@@ -49,12 +49,16 @@ To narzędzie korzysta z interfejsu API programu .NET Core `Environment.SetEnvir
 
 Nie używany.
 
+### <a name="default-behavior"></a>Zachowanie domyślne
+
+Domyślnym zachowaniem tego `set-env` narzędzia jest wyświetlenie listy bieżących zmiennych środowiskowych.
+
 ## <a name="usage-in-a-codespace"></a>Użycie w codespace
 
 Jeśli używasz codespace, możesz ustawić zmienne środowiskowe używane w codespace przez dostosowanie `remoteEnv` właściwości w [`.devcontainer.json`](/visualstudio/codespaces/reference/configuring) pliku.
 
 ## <a name="example-usage"></a>Przykład użycia
-Poniżej znajdują się przykłady sposobu uruchamiania programu `set-env` przy użyciu programu `.devinit.json` . 
+Poniżej znajdują się przykłady sposobu uruchamiania programu `set-env` przy użyciu programu `.devinit.json` .
 
 #### <a name="devinitjson-that-will-set-an-environment-variable-foo-to-value-bar"></a>.devinit.js, w którym zostanie ustawiona zmienna środowiskowa, `foo` do wartości `bar` :
 ```json

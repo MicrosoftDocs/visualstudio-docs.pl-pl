@@ -1,5 +1,7 @@
 ---
 title: Dodaj regułę progową na potrzeby testowania obciążenia
+description: Dowiedz się więcej o regułach progowych w testach obciążenia, które porównują wartość licznika wydajności z wartością stałą lub inną wartością licznika wydajności.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.assetid: 3d8fac8f-426f-4155-9ced-f7cd4c79792c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c6855088c05e03311b5724ba3a0ccf438a43b6a8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: efd601862de60c38991de5eb901de5b55605540a
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288484"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440223"
 ---
 # <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>Instrukcje: Dodawanie reguły progu za pomocą edytora testu obciążenia
 
@@ -41,7 +43,7 @@ Reguły progowe w testach obciążenia porównują wartość licznika wydajnośc
     > [!NOTE]
     > Ustaw **alert, jeśli właściwość over** ma **wartość true** , aby wskazać, że przekroczenie progu jest problemem, lub **wartość false** , aby wskazać, że poniżej progu jest problem.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Analizowanie naruszeń reguł progu](../test/analyze-threshold-rule-violations-in-load-tests.md)
 - [Określ zestawy liczników i reguły progowe dla komputerów w teście obciążenia](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)

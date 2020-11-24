@@ -1,7 +1,7 @@
 ---
 title: require-dotnetcoresdk
 description: Narzędzie devinit wymaga-dotnetcoresdk.
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: b75f7961008c8b575cd21b42fdb5246c3b65078d
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: fe860b697bb5a85ec2bb3c8221118254552b5301
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672140"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441693"
 ---
 # <a name="require-dotnetcoresdk"></a>require-dotnetcoresdk
 
@@ -48,7 +48,7 @@ Dodatkowe opcje konfiguracji mogą być przesyłane jako wartość `additionalOp
 Domyślnym zachowaniem tego `require-dotnetcoresdk` narzędzia jest zainstalowanie wersji zestaw .NET Core SDK określonej w `global.json` pliku [(dokumentacji)](/dotnet/core/tools/global-json?tabs=netcore3x) w bieżącym katalogu roboczym. Jeśli `global.json` plik nie zostanie znaleziony, `require-dotnetcoresdk` program zainstaluje najnowszą bieżącą wersję zestaw .NET Core SDK i udostępnionego środowiska uruchomieniowego.
 
 ## <a name="example-usage"></a>Przykład użycia
-Poniżej znajdują się przykłady sposobu uruchamiania programu `require-dotnetcoresdk` przy użyciu programu `.devinit.json` . 
+Poniżej znajdują się przykłady sposobu uruchamiania programu `require-dotnetcoresdk` przy użyciu programu `.devinit.json` .
 
 #### <a name="devinitjson-that-will-install-the-latest-version-of-net-core"></a>.devinit.js, na którym zostanie zainstalowana najnowsza wersja programu .NET Core:
 ```json

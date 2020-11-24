@@ -1,5 +1,7 @@
 ---
 title: 'Sztuczne firmy Microsoft: generowanie kodu kompilacji & Konwencje nazewnictwa'
+description: Dowiedz się więcej o opcjach i problemach w przypadku sztucznych generacji kodu i kompilacji, w tym konwencji nazewnictwa dla typów, elementów członkowskich i parametrów wygenerowanych przez
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 9a1ba469f460e966be581b87226f2a89faac8186
-ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
+ms.openlocfilehash: e3ebb1439c7b8eb958d8e7126ca0197462e89a09
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93325944"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441636"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Konwencje dotyczące generowania, kompilowania i nazywania w Microsoft Fakes
 
@@ -32,7 +34,7 @@ W tym artykule omówiono opcje i problemy związane z generowaniem kodu i kompil
 
 Generowanie typów zastępczych jest konfigurowane w pliku XML, który ma rozszerzenie pliku *.* Struktura sztuczna integruje się w procesie kompilacji za pomocą niestandardowych zadań programu MSBuild i wykrywa te pliki w czasie kompilacji. Generator kodu sztucznego kompiluje typy zastępcze do zestawu i dodaje odwołanie do projektu.
 
-Poniższy przykład ilustruje typy zastępcze zdefiniowane w *FileSystem.dll* :
+Poniższy przykład ilustruje typy zastępcze zdefiniowane w *FileSystem.dll*:
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -134,7 +136,7 @@ Struktura elementów sztucznych używa tego samego klucza do podpisywania wszyst
 [assembly: InternalsVisibleTo("FileSystem.Fakes, PublicKey=0024000004800000940000000602000000240000525341310004000001000100e92decb949446f688ab9f6973436c535bf50acd1fd580495aae3f875aa4e4f663ca77908c63b7f0996977cb98fcfdb35e05aa2c842002703cad835473caac5ef14107e3a7fae01120a96558785f48319f66daabc862872b2c53f5ac11fa335c0165e202b4c011334c7bc8f4c4e570cf255190f4e3e2cbc9137ca57cb687947bc")]
 ```
 
-Możesz określić inny klucz publiczny dla zestawu sztucznego, taki jak klucz utworzony dla zestawu zastąpionym podkładką, określając pełną ścieżkę do pliku *. snk* , który zawiera klucz alternatywny jako `KeyFile` wartość atrybutu w `Fakes` \\ `Compilation` elemencie pliku *.* repliks. Przykład:
+Możesz określić inny klucz publiczny dla zestawu sztucznego, taki jak klucz utworzony dla zestawu zastąpionym podkładką, określając pełną ścieżkę do pliku *. snk* , który zawiera klucz alternatywny jako `KeyFile` wartość atrybutu w `Fakes` \\ `Compilation` elemencie pliku *.* repliks. Na przykład:
 
 ```xml
 <-- FileSystem.Fakes.fakes -->
@@ -199,7 +201,7 @@ attribute of the Assembly element in the .fakes:
 
 **Namespaces**
 
-- . Sufiks elementów sztucznych jest dodawany do przestrzeni nazw.
+- . Sufiks sztuczny jest dodawany do przestrzeni nazw.
 
    Na przykład `System.Fakes` przestrzeń nazw zawiera typy w przestrzeni nazw System.
 
@@ -237,7 +239,7 @@ attribute of the Assembly element in the .fakes:
 |-|-|-|
 |**Konstruktor**|`.ctor`|`Constructor`|
 |Statyczny **Konstruktor**|`.cctor`|`StaticConstructor`|
-|Metoda **dostępu** o nazwie metody składająca się z dwóch części oddzielonych znakami "_" (takich jak metody pobierające właściwości)|*kind_name* (przypadek typowy, ale nie wymuszony przez ECMA)|*NameKind* , gdzie obie części są pisane wielkimi literami i wymieniane|
+|Metoda **dostępu** o nazwie metody składająca się z dwóch części oddzielonych znakami "_" (takich jak metody pobierające właściwości)|*kind_name* (przypadek typowy, ale nie wymuszony przez ECMA)|*NameKind*, gdzie obie części są pisane wielkimi literami i wymieniane|
 ||Metoda pobierająca właściwości `Prop`|`PropGet`|
 ||Metoda ustawiająca właściwości `Prop`|`PropSet`|
 ||Rozszerzanie zdarzeń|`Add`|

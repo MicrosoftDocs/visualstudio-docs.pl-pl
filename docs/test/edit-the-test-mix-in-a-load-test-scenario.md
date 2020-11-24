@@ -1,5 +1,7 @@
 ---
 title: Test mieszany dla scenariusza testu obciążenia
+description: Dowiedz się, jak edytować test mieszany scenariusza, który jest połączeniem wyboru wydajności sieci Web i testów jednostkowych oraz dystrybucji tych testów.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.assetid: 303e1d70-5d98-424a-b51e-e0898e16d3f8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4a52d660140416ce829493a733171cfcf64ebbe4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d6681b8aead05a180df04b1c3953002aa832a281
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595933"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441381"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Edytuj mieszany test, aby określić, które testy wydajności sieci Web, jednostki i kodowanego interfejsu użytkownika mają być uwzględnione w scenariuszu testu obciążenia
 
@@ -33,7 +35,7 @@ Po dodaniu testów do mieszania można je usunąć. Można również zmienić ro
 
 ## <a name="add-new-tests-to-a-test-mix-in-an-existing-scenario"></a>Dodawanie nowych testów do testu mieszanego w istniejącym scenariuszu
 
-Podczas tworzenia nowego scenariusza przy użyciu **nowego Kreator testu obciążeniowego**można określić testy wydajności sieci Web i jednostki, które mają zostać dodane do testu mieszanego w nowym scenariuszu.
+Podczas tworzenia nowego scenariusza przy użyciu **nowego Kreator testu obciążeniowego** można określić testy wydajności sieci Web i jednostki, które mają zostać dodane do testu mieszanego w nowym scenariuszu.
 
 Aby dowiedzieć się więcej o wydajności sieci Web i testach jednostkowych, możesz użyć **Edytor testu obciążeniowego**.
 
@@ -43,7 +45,7 @@ Aby dowiedzieć się więcej o wydajności sieci Web i testach jednostkowych, mo
 
 1. Otwórz test obciążenia.
 
-2. W **Edytor testu obciążeniowego**kliknij prawym przyciskiem myszy istniejący scenariusz, a następnie wybierz polecenie **Dodaj testy**.
+2. W **Edytor testu obciążeniowego** kliknij prawym przyciskiem myszy istniejący scenariusz, a następnie wybierz polecenie **Dodaj testy**.
 
      Zostanie wyświetlone okno dialogowe **Dodawanie testów** . Wszystkie testy wydajności sieci Web, jednostki i kodowanego interfejsu użytkownika w rozwiązaniu, które nie znajdują się jeszcze w Twoim scenariuszu, są dostępne do dodania do tego scenariusza.
 
@@ -62,7 +64,7 @@ Aby dowiedzieć się więcej o wydajności sieci Web i testach jednostkowych, mo
 
 1. Otwórz test obciążenia.
 
-2. W **Edytor testu obciążeniowego**w drzewie testu obciążenia kliknij prawym przyciskiem myszy scenariusz, z którego chcesz usunąć test, a następnie wybierz pozycję **Edytuj test mieszany**. Zostanie wyświetlone okno dialogowe **Edytowanie testu mieszanego** .
+2. W **Edytor testu obciążeniowego** w drzewie testu obciążenia kliknij prawym przyciskiem myszy scenariusz, z którego chcesz usunąć test, a następnie wybierz pozycję **Edytuj test mieszany**. Zostanie wyświetlone okno dialogowe **Edytowanie testu mieszanego** .
 
 3. Wybierz test wydajność sieci Web, jednostkę lub kodowany interfejs użytkownika w siatce, a następnie wybierz **Usuń**.
 
@@ -88,6 +90,6 @@ Można również wpisać wartości procentowe bezpośrednio w **%** kolumnie zam
 
 Po ręcznym wprowadzeniu wartości procentowych należy upewnić się, że suma wszystkich elementów wynosi 100%. W przypadku zapisania mieszanki, jeśli suma nie jest równa 100%, zostanie wyświetlony monit o zaakceptowanie wartości procentowych w miarę ich lub przywrócenia i dostosowania. Jeśli zdecydujesz się na ich zaakceptowanie, zostanie nadana proporcjonalnie do 100%.  Na przykład jeśli masz dwa elementy i ręcznie ustawisz je na 80% i 40%, pierwszy element zostanie ustawiony na 66,67% (80 podzielony przez 120), a drugi element zostanie ustawiony na 33,33% (40 podzielony przez 120).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Edytowanie scenariuszy testu obciążenia](../test/edit-load-test-scenarios.md)

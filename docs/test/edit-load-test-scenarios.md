@@ -1,5 +1,7 @@
 ---
 title: Scenariusze testów obciążenia
+description: Dowiedz się, jak edytować scenariusze testowania obciążeniowego, które umożliwiają konfigurowanie testów w celu symulowania skomplikowanych, realistycznych obciążeń.
+ms.custom: SEO-VS-2020
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.assetid: fec04f2e-bf38-4d44-b2ec-fa50f58fd0d9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8fa323d275628fe580763709884552754acfba81
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 95e7c612e7379c44c95f17e7b12c36f7a6f07d8c
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593242"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442654"
 ---
 # <a name="edit-load-test-scenarios"></a>Edytowanie scenariuszy testu obciążenia
 
@@ -33,7 +35,7 @@ Wszystkie opcje konfiguracji początkowej i ustawienia, które można określić
 
 Scenariusze zawierają następujące składniki:
 
-|Okres|Definicja|
+|Termin|Definicja|
 |-|-|
 |Mieszanie przeglądarki|Symuluje, że użytkownicy wirtualną uzyskują dostęp do witryny internetowej za pomocą różnych przeglądarek sieci Web.|
 |Wzorzec obciążenia|Określa liczbę wirtualnych użytkowników, którzy są aktywni podczas testu obciążenia, oraz częstotliwość uruchamiania nowych użytkowników. Na przykład: krok, stała i oparty na celach.|
@@ -57,7 +59,7 @@ Scenariusz ma kilka innych właściwości, które można edytować za pomocą **
 |**Skonfiguruj ustawienia opóźnień dla scenariusza:** Przy użyciu **Edytor testu obciążeniowego** i okna **Właściwości** można określić opóźnienie przed rozpoczęciem scenariusza w teście obciążenia. Przykładem sytuacji, w której możesz chcieć użyć właściwości **czas rozpoczęcia opóźnienia** , jeśli potrzebujesz jednego scenariusza, aby rozpocząć tworzenie elementów, które są używane w innym scenariuszu. Można opóźnić scenariusz zużywający, aby umożliwić tworzenie w scenariuszu tworzenia danych.|-   [Opóźnienia uruchamiania scenariusza Configureng](../test/configure-scenario-start-delays.md)|
 |**Określ maszyny zdalne do użycia w scenariuszu testu obciążenia:** Po utworzeniu testu obciążenia można edytować właściwości scenariusza testu obciążenia, aby wskazać, którzy agenci testowi mają dołączać. Aby uzyskać więcej informacji, zobacz [kontrolerów testów i agentów testowych](configure-test-agents-and-controllers-for-load-tests.md).|-   [Instrukcje: Określanie agentów testowych do użycia](../test/how-to-specify-test-agents-to-use-in-load-test-scenarios.md)|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Edytuj testy obciążenia](../test/edit-load-tests.md)
 - [Właściwości scenariusza testu obciążenia](../test/load-test-scenario-properties.md)

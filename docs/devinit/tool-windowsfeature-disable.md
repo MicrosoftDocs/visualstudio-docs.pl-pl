@@ -1,7 +1,7 @@
 ---
 title: windowsfeature-disable
 description: devinit narzędzie WindowsFeature-Wyłącz.
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 1f06f89a61b77bd4c323303ca796252d4874b3cc
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: e48ba0a288aec76588e3d984d4c1577e053e35ae
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671733"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442160"
 ---
 # <a name="windowsfeature-disable"></a>windowsfeature-disable
 
@@ -40,10 +40,10 @@ Brak.
 
 ### <a name="default-behavior"></a>Zachowanie domyślne
 
-Domyślne zachowanie `windowsfeature-disable` narzędzia to błąd, zgodnie z `input` potrzebami.
+Domyślne zachowanie `windowsfeature-disable` narzędzia to błąd, zgodnie z `input` wymaganiami.
 
 ## <a name="example-usage"></a>Przykład użycia
-Poniżej znajduje się przykład sposobu uruchamiania `windowsfeature-disable` przy użyciu `.devinit.json` . 
+Poniżej znajduje się przykład sposobu uruchamiania `windowsfeature-disable` przy użyciu `.devinit.json` .
 
 #### <a name="devinitjson-that-will-disable-a-specified-feature"></a>.devinit.js, na którym zostanie wyłączona określona funkcja:
 ```json

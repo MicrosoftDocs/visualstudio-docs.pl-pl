@@ -1,7 +1,7 @@
 ---
 title: require-nuget
 description: Narzędzie devinit wymaga — NuGet.
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,16 +11,16 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: e4f08e8c3f5967eb2e9db53633a12b304ac23bfb
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: dd5c85e6bff00433903a1e9e472f567401ada70c
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671761"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440497"
 ---
 # <a name="require-nuget"></a>require-nuget
 
-`require-nuget`Narzędzie do pobierania interfejsu wiersza polecenia NuGet i dodaje do zmiennej PATH. Interfejs wiersza polecenia NuGet zapewnia pełen zakres funkcji NuGet do instalowania, tworzenia, publikowania i zarządzania pakietami bez wprowadzania żadnych zmian w plikach projektu. Więcej informacji o interfejsie wiersza polecenia NuGet można znaleźć [tutaj](/nuget/reference/nuget-exe-cli-reference).
+`require-nuget`Narzędzie pobiera interfejs wiersza polecenia NuGet i dodaje go do programu `PATH` . Interfejs wiersza polecenia NuGet zapewnia pełen zakres funkcji NuGet do instalowania, tworzenia, publikowania i zarządzania pakietami bez wprowadzania żadnych zmian w plikach projektu. Więcej informacji o interfejsie wiersza polecenia NuGet można znaleźć [tutaj](/nuget/reference/nuget-exe-cli-reference).
 
 ## <a name="usage"></a>Użycie
 
@@ -45,7 +45,7 @@ Nie używany.
 Domyślnym zachowaniem tego `require-nuget` narzędzia jest zainstalowanie najnowszej wersji interfejsu wiersza polecenia NuGet.
 
 ## <a name="example-usage"></a>Przykład użycia
-Poniżej znajduje się przykład sposobu uruchamiania `require-nuget` przy użyciu `.devinit.json` . 
+Poniżej znajduje się przykład sposobu uruchamiania `require-nuget` przy użyciu `.devinit.json` .
 
 #### <a name="devinitjson-that-will-install-a-specified-version-of-nuget"></a>.devinit.js, na którym zostanie zainstalowana określona wersja programu NuGet:
 ```json

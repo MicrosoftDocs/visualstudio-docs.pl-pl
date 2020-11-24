@@ -1,5 +1,7 @@
 ---
 title: Zastosuj rozkład do opóźnienia tempem na potrzeby testowania obciążenia
+description: Dowiedz się, jak ustawić właściwość Apply Distribution to tempem dla testu obciążenia przy użyciu okno Właściwości.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,16 +10,16 @@ ms.assetid: ae8b35f9-d465-4d72-8d7d-7b56ae6ffd22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aa5d3239e3b096a2018d6ef9c9b3c6666dcd31c3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c966eb9b4ad0bbf8e00c8a27fd69fef0c59cbc1
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288276"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440135"
 ---
 # <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>Instrukcje: stosowanie dystrybucji do opóźnienia tempem dla modelu testu tempa użytkownika
 
-Po utworzeniu testu obciążenia przy użyciu **nowego Kreator testu obciążeniowego**można użyć Edytor testu obciążeniowego, aby zmienić właściwości scenariusza, aby spełniały potrzeby testowania i cele.
+Po utworzeniu testu obciążenia przy użyciu **nowego Kreator testu obciążeniowego** można użyć Edytor testu obciążeniowego, aby zmienić właściwości scenariusza, aby spełniały potrzeby testowania i cele.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -48,11 +50,11 @@ Wartość dla **opóźnienia Apply tempem** można ustawić na wartość true lu
 
    Kategorie i właściwości scenariusza są wyświetlane w oknie **Właściwości** .
 
-4. W polu wartość właściwości dla opcji **Zastosuj dystrybucję do tempem**wybierz wartość **prawda** lub **Fałsz**.
+4. W polu wartość właściwości dla opcji **Zastosuj dystrybucję do tempem** wybierz wartość **prawda** lub **Fałsz**.
 
 5. Wybierz pozycję **plik**  >  **Zapisz**. Teraz można uruchomić test obciążenia z nową wartością **opóźnienia Zastosuj dystrybucję do tempem** .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Edytowanie scenariuszy testu obciążenia](../test/edit-load-test-scenarios.md)
 - [Przewodnik: Tworzenie i uruchamianie testów obciążeniowych](../test/walkthrough-create-and-run-a-load-test.md)

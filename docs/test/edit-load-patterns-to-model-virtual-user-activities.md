@@ -1,5 +1,7 @@
 ---
 title: Wzorce obciążenia do testowania obciążenia
+description: Poznaj Wbudowane wzorce obciążeń, które zapewnia program Visual Studio. Wybierz wzorzec obciążenia i Dostosuj właściwości do odpowiednich poziomów dla testu obciążenia.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.assetid: 0ba0363b-7f50-4bde-a919-0e3bce7bc115
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0836fdb085ab33b2a646d9774c94bd859b5ca5ad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c46c353b09df792b2e204ce90a04b372e23ebd8b
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590309"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440262"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Edytuj wzorce obciążenia, aby modelować działania użytkownika wirtualnego
 
@@ -109,14 +111,14 @@ Jednym z rzeczy, które należy obserwować, jest to, że jakiś inny zasób ogr
 
 |Zadania|Skojarzone tematy|
 |-|-----------------------|
-|**Określanie początkowego wzorca obciążenia dla testu obciążenia:** Podczas tworzenia testu obciążenia przy użyciu **nowego Kreator testu obciążeniowego**należy wybrać wzorzec obciążenia.|-   [Zmiana wzorca obciążenia](../test/edit-load-patterns-to-model-virtual-user-activities.md#change-the-load-pattern)|
+|**Określanie początkowego wzorca obciążenia dla testu obciążenia:** Podczas tworzenia testu obciążenia przy użyciu **nowego Kreator testu obciążeniowego** należy wybrać wzorzec obciążenia.|-   [Zmiana wzorca obciążenia](../test/edit-load-patterns-to-model-virtual-user-activities.md#change-the-load-pattern)|
 |**Edytowanie wzorca obciążenia dla testu obciążenia:** Po utworzeniu testu obciążenia można edytować wzorzec obciążenia w **Edytor testu obciążeniowego**.|-   [Instrukcje: Określanie właściwości czasu rampy kroku dla wzorca obciążenia krok po kroku](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
 |**Określanie, czy wirtualne użytkownicy w scenariuszu testu obciążenia powinny zawierać dane z pamięci podręcznej sieci Web:** Można zmienić **wartość procentowa właściwości New Users** , aby mieć wpływ na sposób, w jaki test obciążenia symuluje buforowanie sieci Web, które byłyby wykonywane przez przeglądarkę sieci Web dla użytkowników wirtualnych.|-   [Instrukcje: Określanie procentu użytkowników wirtualnych korzystających z danych w pamięci podręcznej sieci Web](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)|
 |**Określanie czasu rampy kroku dla wzorca obciążenia krokami:** Właściwość **czas rampy kroku** pozwala zwiększyć się od jednego kroku do następnego (na przykład od 100 do 200 użytkowników), a nie od razu.|-   [Instrukcje: Określanie właściwości czasu rampy kroku dla wzorca obciążenia krok po kroku](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
 
 ## <a name="change-the-load-pattern"></a>Zmiana wzorca obciążenia
 
-Po utworzeniu testu obciążenia przy użyciu **nowego Kreator testu obciążeniowego**można użyć **Edytor testu obciążeniowego** , aby zmienić właściwości wzorca obciążenia powiązane z scenariuszem na poziomy spełniające cele testów.
+Po utworzeniu testu obciążenia przy użyciu **nowego Kreator testu obciążeniowego** można użyć **Edytor testu obciążeniowego** , aby zmienić właściwości wzorca obciążenia powiązane z scenariuszem na poziomy spełniające cele testów.
 
 > [!NOTE]
 > Aby uzyskać pełną listę właściwości scenariusza testu obciążenia i ich opisów, zobacz [właściwości scenariusza testu obciążenia](../test/load-test-scenario-properties.md).
@@ -130,7 +132,7 @@ Wzorzec obciążenia określa liczbę wirtualnych użytkowników aktywnych podcz
 
 1. Otwórz test obciążenia.
 
-2. W **Edytor testu obciążeniowego**w folderze *scenariusze* rozwiń scenariusz, dla którego chcesz edytować wzorzec obciążenia i wybierz wzorzec obciążenia dla scenariusza.
+2. W **Edytor testu obciążeniowego** w folderze *scenariusze* rozwiń scenariusz, dla którego chcesz edytować wzorzec obciążenia i wybierz wzorzec obciążenia dla scenariusza.
 
     > [!NOTE]
     > Tekst węzła wzorca obciążenia, który jest wyświetlany w drzewie scenariuszy testu obciążenia, odzwierciedla profil obciążenia, który został wybrany podczas tworzenia testu obciążenia. Może to być **profil stałego ładowania** lub **krok ładowania**.
@@ -141,7 +143,7 @@ Wzorzec obciążenia określa liczbę wirtualnych użytkowników aktywnych podcz
 
 4. Obowiązkowe Zmień właściwość **wzorzec** w kategorii **wzorzec obciążenia** .
 
-     Wybór właściwości **wzorzec** to **etap**, **stała**i **cel na podstawie**. Aby uzyskać więcej informacji na temat typów wzorców obciążenia, zobacz [Określanie liczby wirtualnych użytkowników ze wzorcami obciążenia w scenariuszu testu obciążenia](../test/edit-load-patterns-to-model-virtual-user-activities.md).
+     Wybór właściwości **wzorzec** to **etap**, **stała** i **cel na podstawie**. Aby uzyskać więcej informacji na temat typów wzorców obciążenia, zobacz [Określanie liczby wirtualnych użytkowników ze wzorcami obciążenia w scenariuszu testu obciążenia](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
 5. Obowiązkowe W kategorii **Parametry** Zmień wartości.
 
@@ -150,7 +152,7 @@ Wzorzec obciążenia określa liczbę wirtualnych użytkowników aktywnych podcz
 
 6. Po zakończeniu zmiany właściwości wybierz pozycję **Zapisz** w menu **plik** . Następnie można uruchomić test obciążenia z nowym wzorcem obciążenia.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Edytowanie scenariuszy testu obciążenia](../test/edit-load-test-scenarios.md)
 - [Instrukcje: Określanie procentu użytkowników wirtualnych korzystających z danych w pamięci podręcznej sieci Web](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)

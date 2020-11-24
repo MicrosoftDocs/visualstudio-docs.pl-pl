@@ -1,7 +1,7 @@
 ---
 title: require-azureartifactscredentialprovider
 description: Narzędzie devinit wymaga-azureartifactscredentialprovider.
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 0aa0d250289e6bf79467c0a00ddddef5264ed6d2
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: ad39bc070841dae5202abca8ca4624927a100f23
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671900"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440389"
 ---
 # <a name="require-azureartifactscredentialprovider"></a>require-azureartifactscredentialprovider
 
@@ -42,10 +42,10 @@ Dodatkowe opcje są przesyłane jako-do polecenia dostawcy poświadczeń.
 
 ### <a name="default-behavior"></a>Zachowanie domyślne
 
-Domyślnym zachowaniem tego `require-azureartifactscredentialprovider` narzędzia jest zainstalowanie najnowszej wersji Azure Artifacts dostawcy poświadczeń.
+Domyślnym zachowaniem tego `require-azureartifactscredentialprovider` narzędzia jest zainstalowanie najnowszej wersji dostawcy poświadczeń Azure Artifacts.
 
 ## <a name="example-usage"></a>Przykład użycia
-Poniżej znajduje się przykład sposobu uruchamiania `require-azureartifactscredentialprovider` przy użyciu `.devinit.json` . 
+Poniżej znajduje się przykład sposobu uruchamiania `require-azureartifactscredentialprovider` przy użyciu `.devinit.json` .
 
 #### <a name="devinitjson-that-will-install-azure-artifacts-credential-provider"></a>.devinit.js, na którym zostanie zainstalowany dostawca poświadczeń Azure Artifacts:
 ```json

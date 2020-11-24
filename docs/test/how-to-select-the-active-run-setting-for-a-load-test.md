@@ -1,5 +1,7 @@
 ---
 title: Wybierz ustawienie uruchomieniowe dla testu obciążenia
+description: Test obciążenia może obejmować Parametry uruchomieniowe, które mają wpływ na sposób uruchamiania testu obciążenia. Dowiedz się, jak wybrać aktywne ustawienie uruchomieniowe.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,16 +10,16 @@ ms.assetid: ed6ff546-acfa-4dd8-b3a2-6e7455930ca4
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8400c5afcb81215078617cca00cef9aa8ce018d6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 87a67cb90ed48993e75dc248f23d10e982c64c43
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287548"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95439865"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Instrukcje: Wybieranie aktywnego ustawienia uruchomieniowego dla testu obciążenia
 
-Po utworzeniu testu obciążenia przy użyciu **nowego Kreator testu obciążeniowego**można użyć **Edytor testu obciążeniowego** , aby zmienić właściwości scenariuszy, aby spełniały potrzeby testowania i cele.
+Po utworzeniu testu obciążenia przy użyciu **nowego Kreator testu obciążeniowego** można użyć **Edytor testu obciążeniowego** , aby zmienić właściwości scenariuszy, aby spełniały potrzeby testowania i cele.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -28,7 +30,7 @@ Test obciążenia może zawierać jedno lub więcej *parametrów uruchomieniowyc
 
 Jeśli test obciążenia zawiera tylko jeden węzeł Ustawienia uruchomieniowego w folderze **Parametry uruchomieniowe** , ten węzeł zawsze jest aktywnym węzłem. Jeśli test obciążenia zawiera wiele węzłów parametrów uruchomieniowych, można wybrać jeden do użycia podczas uruchamiania testu obciążenia. Zobacz [jak: dodać dodatkowe parametry uruchomieniowe do testu obciążenia](../test/how-to-add-additional-run-settings-to-a-load-test.md).
 
-W **Edytor testu obciążeniowego**ustawienie aktywnego przebiegu jest identyfikowane za pomocą sufiksu "[Active]".
+W **Edytor testu obciążeniowego** ustawienie aktywnego przebiegu jest identyfikowane za pomocą sufiksu "[Active]".
 
 ## <a name="select-the-active-run-setting"></a>Wybierz aktywne ustawienie uruchomieniowe
 
@@ -38,7 +40,7 @@ W **Edytor testu obciążeniowego**ustawienie aktywnego przebiegu jest identyfik
 
 3. Kliknij prawym przyciskiem myszy węzeł Ustawienia uruchamiania, który ma być aktywnym węzłem, a następnie wybierz pozycję **Ustaw jako aktywny**.
 
-     W **teście obciążenia Edito**r, węzeł Ustawienia uruchamiania, którego to dotyczy, zostanie zaktualizowany przy użyciu sufiksu "[Active]".
+     W **teście obciążenia Edito** r, węzeł Ustawienia uruchamiania, którego to dotyczy, zostanie zaktualizowany przy użyciu sufiksu "[Active]".
 
      Wybrane ustawienie przebiegu zostanie uaktywnione i pozostaje aktywne do momentu wybrania innego ustawienia uruchomieniowego, które ma być aktywne.
 
@@ -55,7 +57,7 @@ I do uruchomienia testu:
 
 **MSTest/testcontainer: LoadTest1. LoadTest**
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Skonfiguruj ustawienia przebiegu testu obciążenia](../test/configure-load-test-run-settings.md)
 - [Określ zestawy liczników i reguły progowe dla komputerów w teście obciążenia](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)

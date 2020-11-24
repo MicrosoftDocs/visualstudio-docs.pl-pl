@@ -1,5 +1,7 @@
 ---
 title: Tworzenie wycinków metody testów jednostkowych
+description: Dowiedz się, w jaki sposób używać polecenia Utwórz testy jednostkowe, które pozwala na łatwą konfigurację projektu testowego, klasy testowej i częściowej metody testowej.
+ms.custom: SEO-VS-2020
 ms.date: 04/24/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b2712210d4761edb90414e2a27beba74a3bacbf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8afbc73e8c778829a9a1ce5a59d30df6de2f0daa
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288666"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441862"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Utwórz klasy zastępcze metody testów jednostkowych za pomocą polecenia Utwórz testy jednostkowe
 
@@ -31,7 +33,7 @@ Polecenie **Utwórz testy jednostkowe** powoduje utworzenie wycinków metody tes
 
 Polecenie menu **Utwórz testy jednostkowe** jest rozszerzalne i może służyć do generowania testów dla MSTest, MSTest v2, nunit i xUnit.
 
-## <a name="get-started"></a>Rozpoczęcie pracy
+## <a name="get-started"></a>Wprowadzenie
 
 Aby rozpocząć, wybierz metodę, typ lub przestrzeń nazw w edytorze kodu w projekcie, który chcesz przetestować, kliknij prawym przyciskiem myszy, a następnie wybierz polecenie **Utwórz testy jednostkowe**. Zostanie otwarte okno dialogowe **Tworzenie testów jednostkowych** , w którym można skonfigurować sposób tworzenia testów.
 
@@ -56,7 +58,7 @@ Użyj tej funkcji, gdy chcesz utworzyć testy jednostkowe, ale w odróżnieniu o
 
 Jednak ta funkcja jest równie stosowana, gdy programista rozpocznie pisanie kodu, a następnie używa go do uruchamiania testów jednostkowych. W ramach przepływu kodowania, deweloper może chcieć szybko utworzyć element zastępczy metody testów jednostkowych (z odpowiednią klasą testową i odpowiednim projektem testowym) dla konkretnego fragmentu kodu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Tworzenie wycinków metody testów jednostkowych przy użyciu "tworzenia testów jednostkowych"](https://devblogs.microsoft.com/devops/creating-unit-test-method-stubs-with-create-unit-tests/)
 - [Wpisy w blogu testowania jednostkowego](https://devblogs.microsoft.com/devops/?s=unit+testing)

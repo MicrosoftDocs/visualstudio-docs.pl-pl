@@ -1,5 +1,6 @@
 ---
 title: Role kontrolera testów i agenta testowego
+description: Dowiedz się, jak utworzyć i skonfigurować ustawienie testu, które używa kontrolera testów i agenta testowego do dystrybucji testów na kilku komputerach przy użyciu programu Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 10/20/2016
 ms.topic: conceptual
@@ -13,12 +14,12 @@ ms.assetid: 57ed43ae-4e67-4139-8aec-3e9fceb0a745
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c7f4360772f3962ff60517071dcae4318dc71e56
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: c059510dc39472d5c981f93e4d7259545b809d38
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809305"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442446"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Przypisywanie ról do kontrolera testów i agenta testowego
 
@@ -34,7 +35,7 @@ W tym artykule przedstawiono sposób tworzenia i konfigurowania ustawienia testu
 
 ## <a name="to-create-and-configure-a-test-setting"></a>Aby utworzyć i skonfigurować ustawienie testu
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **elementy rozwiązania,** wskaż polecenie **Dodaj**, a następnie wybierz polecenie **nowy element**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję **elementy rozwiązania,** wskaż polecenie **Dodaj**, a następnie wybierz polecenie **nowy element**.
 
      Zostanie wyświetlone okno dialogowe **Dodawanie nowego elementu**.
 
@@ -44,15 +45,15 @@ W tym artykule przedstawiono sposób tworzenia i konfigurowania ustawienia testu
 
 4. Wybierz pozycję **Dodaj**.
 
-     Nowy plik testu *TestSettingDistributedTestWalkthrough. testsettings* pojawia się w **Eksplorator rozwiązań**w folderze **elementy rozwiązania** .
+     Nowy plik testu *TestSettingDistributedTestWalkthrough. testsettings* pojawia się w **Eksplorator rozwiązań** w folderze **elementy rozwiązania** .
 
      Zostanie wyświetlone okno dialogowe **Ustawienia testu** . Wybrana jest strona **Ogólne** .
 
      Możesz teraz edytować i zapisywać wartości ustawień testu.
 
-5. W polu **Nazwa**wpisz nazwę dla ustawień testu.
+5. W polu **Nazwa** wpisz nazwę dla ustawień testu.
 
-6. W obszarze **Opis**wpisz **Ustawienia testu rozproszonego**.
+6. W obszarze **Opis** wpisz **Ustawienia testu rozproszonego**.
 
 7. Pozostaw wybrany **domyślny schemat nazewnictwa** .
 
@@ -69,7 +70,7 @@ W tym artykule przedstawiono sposób tworzenia i konfigurowania ustawienia testu
     > [!NOTE]
     > Jeśli po raz pierwszy dodajesz kontrolera, nie ma kontrolerów wymienionych na liście rozwijanej. Lista jest wypełniana przez wcześniejsze kontrolery, które określono w innych ustawieniach testu.
 
-4. W obszarze **role**wybierz pozycję **Dodaj**.
+4. W obszarze **role** wybierz pozycję **Dodaj**.
 
 5. W wyróżnionym wierszu pod kolumną **Nazwa** wpisz **Test rozłożony**.
 
@@ -79,9 +80,9 @@ W tym artykule przedstawiono sposób tworzenia i konfigurowania ustawienia testu
 
      Zostanie wyświetlona strona **dane i Diagnostyka** .
 
-2. W obszarze **rola**Sprawdź, czy jest zaznaczona rola **test rozproszona** .
+2. W obszarze **rola** Sprawdź, czy jest zaznaczona rola **test rozproszona** .
 
-3. W obszarze **dane i Diagnostyka dla wybranej roli**wybierz pozycję **IntelliTrace** i karty **informacji o systemie** .
+3. W obszarze **dane i Diagnostyka dla wybranej roli** wybierz pozycję **IntelliTrace** i karty **informacji o systemie** .
 
      Aby uzyskać informacje o tych adapterach i innych adapterach, których można użyć w ustawieniu testu, zobacz [Konfigurowanie testów jednostkowych](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).
 
@@ -112,6 +113,6 @@ W tym artykule przedstawiono sposób tworzenia i konfigurowania ustawienia testu
 
      Gdy kontroler testów przetwarza testy jednostkowe i kodowane testy interfejsu użytkownika, kontroler testu dzieli testy na grupy 100 i wysyła je do maszyny agenta testowego. Na przykład jeśli masz 250 testów jednostkowych i trzech agentów testowych, pierwsze 100 testów jednostkowych zostanie wysłanych do agenta 1, następne 100 testów jednostkowych zostanie wysłanych do agenta 2, a pozostałe testy jednostkowe programu 50 będą wysyłane do agenta 3.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md)

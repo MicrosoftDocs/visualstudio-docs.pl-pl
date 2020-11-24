@@ -1,5 +1,6 @@
 ---
 title: Utwórz raport wydajności testu obciążenia przy użyciu programu MS Word
+description: Dowiedz się, jak ręcznie tworzyć raporty testów obciążenia programu Microsoft Word przez kopiowanie i wklejanie danych z widoku podsumowania Wyniki testów ładowania i wykresu.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ ms.assetid: 3b864c75-2699-48c1-a2b4-9651f108c267
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8100ec72beea715a97402f304cfe9dbe6dc54dad
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 2bddd2585d3bc88821fb2c265f21bfda84ed7bef
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810249"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441003"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Instrukcje: ręczne tworzenie raportu wydajności testu obciążenia przy użyciu programu Microsoft Word
 
@@ -56,7 +57,7 @@ Raporty testów obciążenia programu Microsoft Word można tworzyć ręcznie pr
     > [!WARNING]
     > Nie można skopiować wykresu z pulpitu zdalnego i wkleić go do innej maszyny, ponieważ zostaną skopiowane jedynie informacje tabeli, która jest skojarzona z wykresem, a nie obraz wykresu. Obraz wykresu jest przechowywany w katalogu tymczasowym na maszynie, z której został skopiowany, a druga maszyna nie może wyłuskać tego katalogu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Zgłoś wyniki testów obciążenia dla porównania testów lub analizy trendów](../test/compare-load-test-results.md)
 - [Instrukcje: Tworzenie raportów wydajności testu obciążenia przy użyciu programu Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)

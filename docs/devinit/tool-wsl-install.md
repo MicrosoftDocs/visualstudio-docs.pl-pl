@@ -1,7 +1,7 @@
 ---
 title: wsl-install
 description: devinit narzędzie WSL — Zainstaluj.
-ms.date: 11/10/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 4cbb30842ebbed148b2aea80f941a738d18ae262
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: cd48cbe0eac8438bb761029bbca4cd27e13f2319
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671974"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442092"
 ---
 # <a name="wsl-install"></a>wsl-install
 
@@ -66,7 +66,7 @@ Obsługiwane są wiele dodatkowych opcji:
 Domyślne zachowanie `wsl-install` narzędzia to błąd, który jest `input` wymagany do zainstalowania dystrybucji.
 
 ## <a name="example-usage"></a>Przykład użycia
-Poniżej znajdują się przykłady sposobu uruchamiania programu `wsl-install` przy użyciu programu `.devinit.json` . 
+Poniżej znajdują się przykłady sposobu uruchamiania programu `wsl-install` przy użyciu programu `.devinit.json` .
 
 #### <a name="devinitjson-that-will-install-ubuntu-2004"></a>.devinit.js, na którym zostanie zainstalowany program Ubuntu 20,04:
 ```json

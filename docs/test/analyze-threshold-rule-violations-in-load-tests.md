@@ -1,5 +1,7 @@
 ---
 title: Analizowanie naruszeń reguł progu w testach obciążenia
+description: Dowiedz się, jak wyświetlać naruszenia reguł progowych, które zostały skonfigurowane, aby można było analizować naruszenia.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.assetid: 969ed346-cf2e-4d48-82b3-edb3e075e1c0
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0a20c5e3f30a6d006175e78fc70dab79d0b9bf8a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 49fe5893254083dd83551ef5f43fffcc295a992a
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591284"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442706"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analizowanie naruszeń reguł progu w testach obciążenia za pomocą analizatora testu obciążenia
 
@@ -41,7 +43,7 @@ W tabeli naruszeń progowych są wyświetlane pierwsze naruszenia 1 000. Poniżs
 |Kategoria|Kategoria licznika wydajności, na którym wystąpiło naruszenie.|Tak|
 |Licznik|Nazwa licznika wydajności, na którym wystąpiło naruszenie.|Tak|
 |Wystąpienie|Wystąpienie licznika wydajności, na którym wystąpiło naruszenie.|Tak|
-|Komunikat|Komunikat opisujący naruszenie progu. Na przykład **wartość 5 przekracza krytyczną wartość progową 0**.|Tak|
+|Wiadomość|Komunikat opisujący naruszenie progu. Na przykład **wartość 5 przekracza krytyczną wartość progową 0**.|Tak|
 
 > [!NOTE]
 > Tabelę można sortować, wybierając nagłówki kolumn.
@@ -74,7 +76,7 @@ Na wykresie można wyświetlać naruszenia progów. Podobnie jak w panelu **Coun
 
 Aby uzyskać więcej informacji, zobacz [Analizowanie wyników testów obciążenia w widoku wykresy](../test/analyze-load-test-results-in-the-graphs-view.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Określanie zestawów liczników i reguł progu dla komputerów w teście obciążenia](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
 - [Analizowanie wyników testów obciążenia](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

@@ -1,7 +1,7 @@
 ---
 title: require-psmodule
 description: Narzędzie devinit wymaga-psmodule.
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 51d9353333fac6dcca0035bf7cc8dd722c32cb40
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: c8c87e6df0e7ea66c2413f85fa39f397f30d50a7
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672119"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440005"
 ---
 # <a name="require-psmodule"></a>require-psmodule
 
@@ -47,7 +47,7 @@ Dodatkowe opcje są przesyłane bezpośrednio do polecenia [Install-module](/pow
 
 Domyślne zachowanie `require-psmodule` narzędzia to błąd, zgodnie z `input` wymaganiami.
 
-## <a name="builtin-options"></a>Wbudowane opcje
+### <a name="built-in-options"></a>Wbudowane opcje
 
 `require-psmodule`Narzędzie ustawia szereg `Install-Module` argumentów wiersza polecenia, aby zapewnić `Install-Module` możliwość uruchamiania bezobsługowego. Te argumenty są wymienione poniżej, a dokumentacja na nich znajduje się w [module Install](/powershell/module/powershellget/install-module?view=powershell-7&preserve-view=true).
 
@@ -59,7 +59,7 @@ Domyślne zachowanie `require-psmodule` narzędzia to błąd, zgodnie z `input` 
 
 
 ## <a name="example-usage"></a>Przykład użycia
-Poniżej znajdują się przykłady sposobu uruchamiania programu `require-psmodule` przy użyciu programu `.devinit.json` . 
+Poniżej znajdują się przykłady sposobu uruchamiania programu `require-psmodule` przy użyciu programu `.devinit.json` .
 
 #### <a name="devinitjson-that-will-install-the-powershellget-module"></a>.devinit.js, na którym zostanie zainstalowany moduł PowerShellGet:
 ```json

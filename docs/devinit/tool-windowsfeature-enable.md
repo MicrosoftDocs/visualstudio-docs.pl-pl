@@ -1,7 +1,7 @@
 ---
 title: windowsfeature-enable
 description: devinit narzędzie WindowsFeature-Enable.
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 9ed1cc5379cc28c3932c96271fda27e23f4cd27c
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 57c122f9ff86994d6ed262fa41834a01be5fa949
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672007"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442120"
 ---
 # <a name="windowsfeature-enable"></a>windowsfeature-enable
 
@@ -40,10 +40,10 @@ Brak.
 
 ### <a name="default-behavior"></a>Zachowanie domyślne
 
-Domyślne zachowanie `windowsfeature-enable` narzędzia to błąd, zgodnie z `input` potrzebami.
+Domyślne zachowanie `windowsfeature-enable` narzędzia to błąd, zgodnie z `input` wymaganiami.
 
 ## <a name="example-usage"></a>Przykład użycia
-Poniżej znajdują się przykłady sposobu uruchamiania programu `windowsfeature-enable` przy użyciu programu `.devinit.json` . 
+Poniżej znajdują się przykłady sposobu uruchamiania programu `windowsfeature-enable` przy użyciu programu `.devinit.json` .
 
 #### <a name="devinitjson-that-will-install-iis"></a>.devinit.js, na którym zostaną zainstalowane usługi IIS:
 ```json

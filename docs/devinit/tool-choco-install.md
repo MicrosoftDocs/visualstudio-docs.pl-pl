@@ -1,7 +1,7 @@
 ---
 title: choco-install
 description: devinit Tool Choco — Instaluj, aby zainstalować pakiety czekoladowe.
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 82c1bfbaed4a8ae5540447991f1a097760ade0bd
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: d26b2aa89ad295b63f0115acae11148c505720a5
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671941"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440511"
 ---
 # <a name="choco-install"></a>choco-install
 
@@ -26,11 +26,11 @@ Za `choco-install` pomocą tego narzędzia można instalować i aktualizować pa
 
 Jeśli obie `input` właściwości i `additionalOptions` zostaną pominięte lub puste, narzędzie nie będzie niczego robić.
 
-| Nazwa                                             | Typ   | Wymagane | Wartość                                                                                                          |
-|--------------------------------------------------|--------|----------|----------------------------------------------------------------------------------------------------------------|
-| **komentarz**                                     | ciąg | Nie       | Opcjonalna Właściwość komentarzy. Nie używany.                                                                          |
-| [**klawiatur**](#input)                              | ciąg | Nie       | Pakiet do zainstalowania. Aby uzyskać szczegółowe informacje, zobacz poniższe [dane wejściowe](#input) .                                                 |
-| [**additionalOptions**](#additional-options)     | ciąg | Nie       | Dodatkowe opcje do przekazania do narzędzia. Aby uzyskać szczegółowe informacje, zobacz [dodatkowe opcje](#additional-options) poniżej.       |
+| Nazwa                                             | Typ   | Wymagane  | Wartość                                                                                                          |
+|--------------------------------------------------|--------|-----------|----------------------------------------------------------------------------------------------------------------|
+| **komentarz**                                     | ciąg | Nie        | Opcjonalna Właściwość komentarzy. Nie używany.                                                                          |
+| [**klawiatur**](#input)                              | ciąg | Tak       | Pakiet do zainstalowania. Aby uzyskać szczegółowe informacje, zobacz poniższe [dane wejściowe](#input) .                                                 |
+| [**additionalOptions**](#additional-options)     | ciąg | Nie        | Dodatkowe opcje do przekazania do narzędzia. Aby uzyskać szczegółowe informacje, zobacz [dodatkowe opcje](#additional-options) poniżej.       |
 
 ### <a name="input"></a>Dane wejściowe
 
@@ -50,8 +50,12 @@ Dodatkowe opcje konfiguracji mogą być przesyłane jako wartość `additionalOp
 | **--No-Progress**     | Nie pokazuj postępów — procent postępu nie będzie pokazywany.                                         |
 | **--Skip-PowerShell** | Pomijanie programu PowerShell — chocolateyInstall.ps1 nie zostanie uruchomiony.                                              |
 
+### <a name="default-behavior"></a>Zachowanie domyślne
+
+Domyślne zachowanie `choco-install` narzędzia jest błędem, ponieważ `input` Właściwość jest wymagana.
+
 ## <a name="example-usage"></a>Przykład użycia
-Poniżej znajdują się przykłady sposobu uruchamiania programu `choco-install` przy użyciu programu `.devinit.json` . 
+Poniżej znajdują się przykłady sposobu uruchamiania programu `choco-install` przy użyciu programu `.devinit.json` .
 
 #### <a name="devinitjson-that-will-install-packages-listed-in-packagesconfig"></a>.devinit.js, na którym zostaną zainstalowane pakiety wymienione w packages.config:
 ```json

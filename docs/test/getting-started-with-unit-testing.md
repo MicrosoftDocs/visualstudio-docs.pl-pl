@@ -1,5 +1,7 @@
 ---
 title: Rozpoczynanie pracy z testami jednostkowymi
+description: Za pomocą programu Visual Studio można definiować i uruchamiać testy jednostkowe, aby zachować kondycję kodu, zapewnić pokrycie kodu i znajdować błędy i usterki przed klientami.
+ms.custom: SEO-VS-2020
 ms.date: 04/07/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c167e98f9419842876aed713e008b8746064669a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3daff1a7b7c2e62b4ca4a508c5c8dd31261a40dd
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82153035"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441784"
 ---
 # <a name="get-started-with-unit-testing"></a>Rozpoczynanie pracy z testami jednostkowymi
 
@@ -40,7 +42,7 @@ W tej sekcji opisano sposób tworzenia projektu testów jednostkowych.
       }
    ```
 
-1. W **Eksplorator rozwiązań**wybierz węzeł rozwiązania. Następnie z górnego paska menu wybierz pozycję **plik**  >  **Dodaj**  >  **Nowy projekt**.
+1. W **Eksplorator rozwiązań** wybierz węzeł rozwiązania. Następnie z górnego paska menu wybierz pozycję **plik**  >  **Dodaj**  >  **Nowy projekt**.
 
 1. W oknie dialogowym Nowy projekt Znajdź szablon projektu test jednostkowy dla struktury testowej, która ma zostać użyta, i wybierz ją.
 
@@ -243,7 +245,7 @@ Aby utworzyć testy jednostkowe używające [nunit](https://nunit.org/):
 
 6. Uruchom test z **Eksploratora testów** lub klikając prawym przyciskiem myszy kod testu i wybierając polecenie **Uruchom testy**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 * [Przewodnik: Tworzenie i uruchamianie testów jednostkowych dla kodu zarządzanego](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 * [Utwórz testy jednostkowe, polecenie](create-unit-tests-menu.md)

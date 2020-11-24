@@ -1,5 +1,7 @@
 ---
 title: Projectitemfolder — — element | Microsoft Docs
+description: Pobierz informacje referencyjne na temat elementu Projectitemfolder —, który reprezentuje zamapowany folder w odwołaniu do schematu XML elementu projektu programu SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 38f8f70cc6480554441809e33c4083735600fbbb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99a27f8e255aa17e8b9fa604b504109976c5d36a
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85539818"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440795"
 ---
 # <a name="projectitemfolder-element"></a>ProjectItemFolder — element
   Reprezentuje zamapowany folder.
@@ -58,11 +60,11 @@ ms.locfileid: "85539818"
 
 |Właściwość|Wartość|
 |-|-|
-|**Przestrzeń nazw**|http: \/ \/ schemas.Microsoft.com/VisualStudio/2010/<br>SharePointTools/SharePointProjectItemModel|
+|**Obszaru**|http: \/ \/ schemas.Microsoft.com/VisualStudio/2010/<br>SharePointTools/SharePointProjectItemModel|
 |**Nazwa schematu**|Schemat elementu projektu programu SharePoint|
 |**Plik walidacji**|ProjectItemModelSchema. xsd|
 |**Może być puste**|Nie|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Odwołanie do schematu elementu projektu programu SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)
 - [Instrukcje: Dodawanie i usuwanie mapowanych folderów](../sharepoint/how-to-add-and-remove-mapped-folders.md)

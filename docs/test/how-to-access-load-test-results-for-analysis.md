@@ -1,5 +1,7 @@
 ---
 title: Analizowanie wyników testów obciążenia
+description: Dowiedz się, jak uzyskać dostęp do wyników testów obciążenia do analizy, automatycznie za pośrednictwem analizatora testu obciążenia lub ręcznie dla testów z wiersza polecenia.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.assetid: b0a3e694-2894-479b-b270-7e61e9fafacd
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b72db87014304dc2b9baf57e05015e53a630c431
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 95108a5901a00582e708f6bf3660cb07d2126e0a
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288536"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442602"
 ---
 # <a name="how-to-access-load-test-results-for-analysis"></a>Instrukcje: uzyskiwanie dostępu do wyników testu obciążenia na potrzeby analizy
 
@@ -37,11 +39,11 @@ Wynik testu obciążenia dla zakończonego testu obciążenia zawiera próbki li
 
      Zostanie wyświetlone okno dialogowe **Otwórz i Zarządzaj wynikami** .
 
-3. W polu **Wprowadź nazwę kontrolera, aby znaleźć wyniki testu obciążenia**, wybierz kontroler. Wybierz ** \<local> — Brak kontrolera** , aby uzyskać dostęp do wyników przechowywanych lokalnie.
+3. W polu **Wprowadź nazwę kontrolera, aby znaleźć wyniki testu obciążenia**, wybierz kontroler. Wybierz **\<local> — Brak kontrolera** , aby uzyskać dostęp do wyników przechowywanych lokalnie.
 
-4. W polu **Pokaż wyniki dla następującego testu obciążenia**wybierz test obciążenia, którego wyniki chcesz wyświetlić. Wybierz **\<Show results for all tests>** , aby wyświetlić wszystkie wyniki dla wszystkich testów.
+4. W polu **Pokaż wyniki dla następującego testu obciążenia** wybierz test obciążenia, którego wyniki chcesz wyświetlić. Wybierz **\<Show results for all tests>** , aby wyświetlić wszystkie wyniki dla wszystkich testów.
 
-     Jeśli są dostępne wyniki testów obciążenia, są one wyświetlane na liście **wyników testu obciążenia** . Kolumny są typu **Time**, **Duration**, **User**, **wynik**, **test**i **Description**. **Test** zawiera nazwę testu, a **Opis** zawiera opcjonalny opis, który jest dodawany przed uruchomieniem testu.
+     Jeśli są dostępne wyniki testów obciążenia, są one wyświetlane na liście **wyników testu obciążenia** . Kolumny są typu **Time**, **Duration**, **User**, **wynik**, **test** i **Description**. **Test** zawiera nazwę testu, a **Opis** zawiera opcjonalny opis, który jest dodawany przed uruchomieniem testu.
 
     > [!NOTE]
     > Wyniki są wyświetlane z najnowszymi wynikami w górnej części listy.
@@ -52,6 +54,6 @@ Wynik testu obciążenia dla zakończonego testu obciążenia zawiera próbki li
 
      Można zarządzać innymi aspektami wyników testu obciążenia w oknie dialogowym **Otwórz i Zarządzaj wynikami** , w tym importowaniem, eksportowaniem i usuwaniem wyników testu obciążenia. Aby uzyskać więcej informacji, zobacz [Zarządzanie wynikami testów obciążenia w repozytorium wyników testów obciążenia](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Analizowanie wyników testów obciążenia](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

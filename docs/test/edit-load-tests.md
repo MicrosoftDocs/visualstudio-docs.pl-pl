@@ -1,5 +1,7 @@
 ---
 title: Edytowanie testów obciążenia
+description: Dowiedz się więcej o różnicach między scenariuszami, zestawami liczników i ustawieniami uruchomieniowymi, które definiują testy obciążenia.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: ba16ed02-137e-40bf-a4cb-45d87d922d37
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b95689871a987c018720c529743b8447f39b2bf6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 81825b2a9060d75a792e73519486275fd34569a4
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288705"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441472"
 ---
 # <a name="edit-load-tests"></a>Edytuj testy obciążenia
 
@@ -22,7 +24,7 @@ Testy obciążenia umożliwiają uruchamianie testów wydajności sieci Web lub 
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-Test obciążenia jest definiowany przez *scenariusze*, *zestawy liczników*i *Parametry uruchomieniowe*. Na poniższej ilustracji opisano różnice między [scenariuszami](../test/edit-load-test-scenarios.md), [zestawami liczników](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)i [ustawieniami uruchomieniowymi](../test/load-test-run-settings-properties.md):
+Test obciążenia jest definiowany przez *scenariusze*, *zestawy liczników* i *Parametry uruchomieniowe*. Na poniższej ilustracji opisano różnice między [scenariuszami](../test/edit-load-test-scenarios.md), [zestawami liczników](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)i [ustawieniami uruchomieniowymi](../test/load-test-run-settings-properties.md):
 
 ![Architektura testu obciążenia](../test/media/load_test_editor.png)
 
@@ -38,7 +40,7 @@ Aby uzyskać więcej informacji, zobacz [Edytowanie scenariuszy testu obciążen
 
 ## <a name="configure-and-manage-performance-counter-sets"></a>Konfigurowanie zbiorów liczników wydajności i zarządzanie nimi
 
-Testy obciążenia zapewniają nazwane zestawy liczników uporządkowane według technologii, które są przydatne podczas analizowania danych licznika wydajności. Zestawy liczników obejmują test obciążenia, IIS, ASP.NET i SQL. Podczas tworzenia testu obciążenia z **nowym Kreator testu obciążeniowego**początkowy zestaw wstępnie zdefiniowanych i ważnych liczników jest konfigurowany dla komputerów określonych do uwzględnienia w teście obciążenia. Zarządzasz licznikami w **Edytor testu obciążeniowego**.
+Testy obciążenia zapewniają nazwane zestawy liczników uporządkowane według technologii, które są przydatne podczas analizowania danych licznika wydajności. Zestawy liczników obejmują test obciążenia, IIS, ASP.NET i SQL. Podczas tworzenia testu obciążenia z **nowym Kreator testu obciążeniowego** początkowy zestaw wstępnie zdefiniowanych i ważnych liczników jest konfigurowany dla komputerów określonych do uwzględnienia w teście obciążenia. Zarządzasz licznikami w **Edytor testu obciążeniowego**.
 
 Aby uzyskać więcej informacji, zobacz [Określanie zestawów liczników i reguł progowych dla komputerów w teście obciążenia](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
 
@@ -48,7 +50,7 @@ Parametry uruchomieniowe są właściwościami wpływającymi na sposób urucham
 
 Aby uzyskać więcej informacji, zobacz [Konfigurowanie ustawień przebiegu testu obciążenia](../test/configure-load-test-run-settings.md) i [Ustawienia przebiegu testu obciążenia](../test/load-test-run-settings-properties.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Analizowanie wyników testów obciążenia](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Analizowanie naruszeń reguł progu](../test/analyze-threshold-rule-violations-in-load-tests.md)

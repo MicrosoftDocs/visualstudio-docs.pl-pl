@@ -1,7 +1,7 @@
 ---
 title: choco-upgrade
 description: devinit narzędzia Choco-Upgrade.
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 7db97694e129fe5c70de09aaf4c132656ae00746
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 27a29584a4cf3cd688abe36f625c2e68967c39c0
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672227"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440490"
 ---
 # <a name="choco-upgrade"></a>choco-upgrade
 
@@ -26,11 +26,11 @@ Za `choco-upgrade` pomocą tego narzędzia można instalować i aktualizować pa
 
 Jeśli obie `input` właściwości i `additionalOptions` zostaną pominięte lub puste, narzędzie nie będzie niczego robić.
 
-| Nazwa                                             | Typ   | Wymagane | Wartość                                                                                                          |
-|--------------------------------------------------|--------|----------|----------------------------------------------------------------------------------------------------------------|
-| **komentarz**                                     | ciąg | Nie       | Opcjonalna Właściwość komentarzy. Nie używany.                                                                          |
-| [**klawiatur**](#input)                              | ciąg | Nie       | Pakiet do uaktualnienia. Aby uzyskać szczegółowe informacje, zobacz poniższe [dane wejściowe](#input) .                                                 |
-| [**additionalOptions**](#additional-options)     | ciąg | Nie       | Dodatkowe opcje do przekazania do narzędzia. Aby uzyskać szczegółowe informacje, zobacz [dodatkowe opcje](#additional-options) poniżej.       |
+| Nazwa                                             | Typ   | Wymagane  | Wartość                                                                                                          |
+|--------------------------------------------------|--------|-----------|----------------------------------------------------------------------------------------------------------------|
+| **komentarz**                                     | ciąg | Nie        | Opcjonalna Właściwość komentarzy. Nie używany.                                                                          |
+| [**klawiatur**](#input)                              | ciąg | Tak       | Pakiet do uaktualnienia. Aby uzyskać szczegółowe informacje, zobacz poniższe [dane wejściowe](#input) .                                                 |
+| [**additionalOptions**](#additional-options)     | ciąg | Nie        | Dodatkowe opcje do przekazania do narzędzia. Aby uzyskać szczegółowe informacje, zobacz [dodatkowe opcje](#additional-options) poniżej.       |
 
 ### <a name="input"></a>Dane wejściowe
 
@@ -40,7 +40,7 @@ Jeśli obie `input` właściwości i `additionalOptions` zostaną pominięte lub
 
 Dodatkowe opcje konfiguracji mogą być przesyłane jako wartość `additionalOptions` . Te argumenty są bezpośrednim przekazywaniem do argumentów używanych przez [`choco upgrade`](https://chocolatey.org/docs/commands-upgrade) i są zdefiniowane w dokumentacji czekoladowej.
 
-## <a name="built-in-options"></a>Wbudowane opcje
+### <a name="built-in-options"></a>Wbudowane opcje
 
 `choco-upgrade`Narzędzie ustawia wiele `choco` argumentów wiersza polecenia, aby zapewnić `choco` możliwość uruchamiania bezobsługowego. Te argumenty są wymienione poniżej i dokumentacja na nich znajduje się w [dokumentacji czekoladowej](https://chocolatey.org/docs/).
 
@@ -50,8 +50,12 @@ Dodatkowe opcje konfiguracji mogą być przesyłane jako wartość `additionalOp
 | **--No-Progress**     | Nie pokazuj postępów — procent postępu nie będzie pokazywany.                                         |
 | **--Skip-PowerShell** | Pomijanie programu PowerShell — chocolateyInstall.ps1 nie zostanie uruchomiony.                                              |
 
+### <a name="default-behavior"></a>Zachowanie domyślne
+
+Domyślne zachowanie `choco-upgrade` narzędzia jest błędem, ponieważ `input` Właściwość jest wymagana.
+
 ## <a name="example-usage"></a>Przykład użycia
-Poniżej znajdują się przykłady sposobu uruchamiania programu `choco-upgrade` przy użyciu programu `.devinit.json` . 
+Poniżej znajdują się przykłady sposobu uruchamiania programu `choco-upgrade` przy użyciu programu `.devinit.json` .
 
 #### <a name="devinitjson-that-will-update-packages-listed-in-packagesconfig"></a>.devinit.js, na którym zostaną zaktualizowane pakiety wymienione w packages.config:
 ```json

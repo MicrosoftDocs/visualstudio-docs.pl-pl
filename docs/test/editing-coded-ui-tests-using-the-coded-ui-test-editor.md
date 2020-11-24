@@ -1,5 +1,7 @@
 ---
 title: Edytowanie kodowanych testów interfejsu użytkownika
+description: Dowiedz się, jak używać edytora kodowanego testu interfejsu użytkownika do lokalizowania, wyświetlania i edytowania metod testowych oraz akcji interfejsu użytkownika. Użyj mapy formantów interfejsu użytkownika do wyświetlania i edytowania odpowiednich kontrolek.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: d6c2fcf3d8807e9095abc9546e8bf1e39aecb8ea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0f78839280ae19da5020b08d499d347c0537a045
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288731"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441446"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>Edytowanie kodowanych testów interfejsu użytkownika za pomocą edytora kodowanego testu interfejsu użytkownika
 
@@ -57,11 +59,11 @@ Po otwarciu pliku *UIMap. UITest* powiązanego z kodowanym TESTem interfejsu uż
 
 ## <a name="open-a-coded-ui-test"></a>Otwieranie kodowanego testu interfejsu użytkownika
 
-Za pomocą **edytora kodowanego testu interfejsu użytkownika**można wyświetlać i edytować swój kodowany test interfejsu użytkownika oparty na języku Visual C# i Visual Basic.
+Za pomocą **edytora kodowanego testu interfejsu użytkownika** można wyświetlać i edytować swój kodowany test interfejsu użytkownika oparty na języku Visual C# i Visual Basic.
 
 ![Edytowanie menu kontekstowego za pomocą konstruktora kodowanego testu interfejsu użytkownika](../test/media/editcodeduitest.png)
 
-W **Eksplorator rozwiązań**Otwórz menu skrótów dla *UIMap. UITest* i wybierz polecenie **Otwórz**. Kodowany test interfejsu użytkownika jest wyświetlany w **Edytorze kodowanego testu interfejsu użytkownika**. Teraz można wyświetlać i edytować zarejestrowane metody, akcje i odpowiadające im kontrolki w kodowanym teście interfejsu użytkownika.
+W **Eksplorator rozwiązań** Otwórz menu skrótów dla *UIMap. UITest* i wybierz polecenie **Otwórz**. Kodowany test interfejsu użytkownika jest wyświetlany w **Edytorze kodowanego testu interfejsu użytkownika**. Teraz można wyświetlać i edytować zarejestrowane metody, akcje i odpowiadające im kontrolki w kodowanym teście interfejsu użytkownika.
 
 > [!TIP]
 > Po wybraniu akcji interfejsu użytkownika, która znajduje się w metodzie w okienku **akcje interfejsu użytkownika** , odpowiadający jej formant zostanie wyróżniony. Możesz również zmodyfikować akcję interfejsu użytkownika lub właściwości kontrolek.
@@ -86,7 +88,7 @@ Po zakończeniu modyfikacji Zapisz zmiany w pliku *UIMap. Designer* , wybierają
 
 ### <a name="tips"></a>Porady
 
-- Jeśli okno **Właściwości** nie jest wyświetlane, naciśnij i przytrzymaj klawisz **Alt** podczas naciskania klawisza **Enter**lub naciśnij klawisz **F4**.
+- Jeśli okno **Właściwości** nie jest wyświetlane, naciśnij i przytrzymaj klawisz **Alt** podczas naciskania klawisza **Enter** lub naciśnij klawisz **F4**.
 
 - Aby cofnąć wprowadzone zmiany właściwości, wybierz polecenie **Cofnij** z menu **Edycja** lub naciśnij klawisz **Ctrl** + **z**.
 
@@ -112,7 +114,7 @@ Można podzielić metodę testową, aby udoskonalić lub modularyzacji akcje int
 
 ![Dwie metody testowe](../test/media/codeduitestsplitmethod2.png)
 
-W okienku **Akcja interfejsu użytkownika** rozwiń metodę testową, która ma zostać podzielona na dwie oddzielne metody, a następnie wybierz akcję interfejsu użytkownika, w której chcesz rozpocząć nową metodę testową. Otwórz menu skrótów dla akcji interfejsu użytkownika, a następnie wybierz polecenie **Podziel na nową metodę**lub wybierz przycisk **Podziel na nową metodę** na pasku narzędzi edytora kodowanego testu interfejsu użytkownika. Nowa metoda testowa zostanie wyświetlona w okienku **akcje interfejsu użytkownika** . Zawiera akcje interfejsu użytkownika, rozpoczynając od akcji, w której został określony podział.
+W okienku **Akcja interfejsu użytkownika** rozwiń metodę testową, która ma zostać podzielona na dwie oddzielne metody, a następnie wybierz akcję interfejsu użytkownika, w której chcesz rozpocząć nową metodę testową. Otwórz menu skrótów dla akcji interfejsu użytkownika, a następnie wybierz polecenie **Podziel na nową metodę** lub wybierz przycisk **Podziel na nową metodę** na pasku narzędzi edytora kodowanego testu interfejsu użytkownika. Nowa metoda testowa zostanie wyświetlona w okienku **akcje interfejsu użytkownika** . Zawiera akcje interfejsu użytkownika, rozpoczynając od akcji, w której został określony podział.
 
 Po zakończeniu dzielenia metody Zapisz zmiany w pliku *UIMap. Designer* , wybierając pozycję **Zapisz** na pasku narzędzi programu Visual Studio.
 
@@ -190,7 +192,7 @@ Po wstawieniu opóźnienia Zapisz zmiany w pliku *UIMap. Designer* , wybierając
 
 Aby upewnić się, że określony formant jest dostępny przed akcją interfejsu użytkownika, należy rozważyć dodanie niestandardowego kodu do metody testowej przy użyciu odpowiedniej metody UITestControl. WaitForControlXXX (). Aby uzyskać więcej informacji, zobacz [Tworzenie kodowanych testów interfejsu użytkownika w przypadku określonych zdarzeń podczas odtwarzania](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)
 - [Tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md)

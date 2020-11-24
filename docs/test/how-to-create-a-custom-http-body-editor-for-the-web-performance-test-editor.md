@@ -1,5 +1,6 @@
 ---
 title: Tworzenie edytora treści HTTP dla testu wydajności sieci Web
+description: Dowiedz się, jak utworzyć niestandardowy Edytor zawartości, który pozwala edytować treść ciągu lub zawartość binarną żądania usługi sieci Web.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7539f9055fb64cdbfa77ebe5beee7173b8967afb
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 7d6da75b24a982c420b475815f665851ebf06504
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810288"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440150"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Instrukcje: Tworzenie niestandardowego edytora treści HTTP dla Edytor internetowego testu wydajnościowego
 
@@ -36,13 +37,13 @@ Te interfejsy są zawarte w <xref:Microsoft.VisualStudio.TestTools.WebTesting> p
 
    Projekt jest dodawany do nowego rozwiązania, a <xref:System.Windows.Forms.UserControl> nazwana *UserControl1.cs* jest wyświetlana w projektancie.
 
-1. Z **przybornika**w kategorii **Formanty standardowe** przeciągnij a na <xref:System.Windows.Forms.RichTextBox> powierzchnię UserControl1.
+1. Z **przybornika** w kategorii **Formanty standardowe** przeciągnij a na <xref:System.Windows.Forms.RichTextBox> powierzchnię UserControl1.
 
 1. Wybierz symbol tagu akcji ( ![ symbol tagu inteligentnego ](../test/media/vs_winformsmttagglyph.gif) ) w prawym górnym rogu <xref:System.Windows.Forms.RichTextBox> kontrolki, a następnie wybierz i **Zadokuj w kontenerze nadrzędnym**.
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt Biblioteka Windows Forms i wybierz polecenie **Właściwości**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt Biblioteka Windows Forms i wybierz polecenie **Właściwości**.
 
-1. W oknie **Właściwości**wybierz kartę **aplikacja** .
+1. W oknie **Właściwości** wybierz kartę **aplikacja** .
 
 1. Z listy rozwijanej **platforma docelowa** wybierz pozycję .NET Framework 4 (lub nowszy).
 
@@ -50,13 +51,13 @@ Te interfejsy są zawarte w <xref:Microsoft.VisualStudio.TestTools.WebTesting> p
 
 1. Wybierz opcję **tak**.
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł **odwołania** i wybierz polecenie **Dodaj odwołanie**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł **odwołania** i wybierz polecenie **Dodaj odwołanie**.
 
 1. Zostanie wyświetlone okno dialogowe **Dodawanie odwołania** .
 
 1. Wybierz. Kartę **net** , przewiń w dół i wybierz pozycję **Microsoft. VisualStudio. QualityTools. WebTestFramework** , a następnie wybierz **przycisk OK**.
 
-1. Jeśli **Projektant widoków** nie jest wciąż otwarty, w **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **UserControl1.cs** , a następnie wybierz polecenie **Projektant widoków**.
+1. Jeśli **Projektant widoków** nie jest wciąż otwarty, w **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję **UserControl1.cs** , a następnie wybierz polecenie **Projektant widoków**.
 
 1. Na powierzchni projektowej kliknij prawym przyciskiem myszy i wybierz polecenie **Wyświetl kod**.
 
@@ -124,7 +125,7 @@ Gdy edytujesz treść ciągu, a użytkownik kliknie przycisk **OK** w oknie dial
 
 ### <a name="create-a-class-and-implement-the-istringhttpbodyeditorplugin-interface"></a>Tworzenie klasy i implementowanie interfejsu IStringHttpBodyEditorPlugin
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt biblioteka formantów Windows Forms i wybierz polecenie **Dodaj nowy element**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt biblioteka formantów Windows Forms i wybierz polecenie **Dodaj nowy element**.
 
    Zostanie wyświetlone okno dialogowe **Dodaj nowy element**.
 
@@ -265,7 +266,7 @@ Gdy edytujesz treść ciągu, a użytkownik kliknie przycisk **OK** w oknie dial
 
 ## <a name="build-and-deploy-the-plug-ins"></a>Kompilowanie i wdrażanie wtyczek
 
-1. W menu **kompilacja** wybierz polecenie **Kompiluj \<Windows Form Control Library project name> **.
+1. W menu **kompilacja** wybierz polecenie **Kompiluj \<Windows Form Control Library project name>**.
 
 2. Zamknij wszystkie wystąpienia programu Visual Studio.
 
@@ -298,7 +299,7 @@ Sprawdź, czy platforma domowa dla projektu biblioteki formantów systemu Window
 
 Aby uzyskać więcej informacji, zobacz [Strona aplikacji, Projektant projektu (C#)](../ide/reference/application-page-project-designer-csharp.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin>
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin>

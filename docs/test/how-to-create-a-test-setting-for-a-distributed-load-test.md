@@ -1,5 +1,7 @@
 ---
 title: Utwórz ustawienie testu dla testu obciążenia rozłożonego
+description: Dowiedz się, jak skonfigurować ustawienia testu dla testów obciążenia, aby można było dystrybuować te testy na wielu maszynach przy użyciu agentów testowych i kontrolerów testów.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: b63d4b71-3b74-4872-b2d1-f0bd1a9a8544
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c4c33072c1b42d76f1f6ea26222c4674f9e6ff77
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: b52fad24cf0772099e619b08ad877bae891365c3
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036096"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95439969"
 ---
 # <a name="how-to-create-a-test-settings-file-for-a-distributed-load-test"></a>Instrukcje: Tworzenie pliku ustawień testu dla testu obciążenia rozłożonego
 
@@ -41,7 +43,7 @@ Wykonaj następujące kroki, aby utworzyć i usunąć ustawienia testu w rozwią
 
 ## <a name="create-a-test-settings-file"></a>Utwórz plik ustawień testu
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **elementy rozwiązania**, wskaż polecenie **Dodaj**, a następnie wybierz polecenie **nowy element**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję **elementy rozwiązania**, wskaż polecenie **Dodaj**, a następnie wybierz polecenie **nowy element**.
 
      Zostanie wyświetlone okno dialogowe **Dodawanie nowego elementu**.
 
@@ -51,15 +53,15 @@ Wykonaj następujące kroki, aby utworzyć i usunąć ustawienia testu w rozwią
 
 4. Wybierz pozycję **Dodaj**.
 
-     Nowy plik ustawień testu jest wyświetlany w **Eksplorator rozwiązań**w folderze **elementy rozwiązania** .
+     Nowy plik ustawień testu jest wyświetlany w **Eksplorator rozwiązań** w folderze **elementy rozwiązania** .
 
 5. Zostanie wyświetlone okno dialogowe **Ustawienia testu** . Wybrana jest strona **Ogólne** .
 
      Możesz teraz edytować i zapisywać wartości ustawień testu.
 
-6. W polu **Nazwa**wpisz nazwę dla ustawień testu.
+6. W polu **Nazwa** wpisz nazwę dla ustawień testu.
 
-7. Obowiązkowe W obszarze **Opis**wpisz opis ustawienia testu, aby inni członkowie zespołu wiedzieli, co jest zamierzone.
+7. Obowiązkowe W obszarze **Opis** wpisz opis ustawienia testu, aby inni członkowie zespołu wiedzieli, co jest zamierzone.
 
 8. Obowiązkowe Aby wybrać domyślny schemat nazewnictwa dla przebiegów testowych, wybierz **domyślny schemat nazewnictwa**. Aby zdefiniować własny schemat nazewnictwa, wybierz **schemat zdefiniowany przez użytkownika** , a następnie wpisz tekst, który ma być używany jako **prefiks tekstu**. Aby dołączyć sygnaturę daty i godziny do nazwy przebiegu testu, wybierz pozycję **Dołącz sygnaturę daty i godziny**.
 
@@ -76,7 +78,7 @@ Wykonaj następujące kroki, aby utworzyć i usunąć ustawienia testu w rozwią
     > [!NOTE]
     > Jeśli po raz pierwszy dodajesz kontroler, na liście rozwijanej nie będą wyświetlane żadne kontrolery. Lista jest wypełniana przez wcześniejsze kontrolery, które określono w innych ustawieniach testu. Należy wpisać nazwę kontrolera w polu (na przykład **TestControllerMachine1**).
 
-12. Aby dodać role, które mają być używane do uruchamiania testów i zbierania danych, w obszarze **role**wybierz pozycję **Dodaj**.
+12. Aby dodać role, które mają być używane do uruchamiania testów i zbierania danych, w obszarze **role** wybierz pozycję **Dodaj**.
 
 13. Wpisz nazwę roli w kolumnie **Nazwa** . Na przykład rola może być "serwer sieci Web".
 
@@ -152,7 +154,7 @@ Wykonaj następujące kroki, aby utworzyć i usunąć ustawienia testu w rozwią
 
 24. Aby uruchomić testy przy użyciu innego hosta, wybierz **hosty**.
 
-    1. Sprawdź, czy w polu **typ hosta**jest wybrana **wartość domyślna** .
+    1. Sprawdź, czy w polu **typ hosta** jest wybrana **wartość domyślna** .
 
         > [!NOTE]
         > **ASP.NET** w **typie hosta** nie są obsługiwane w testach obciążenia.
@@ -176,7 +178,7 @@ Wykonaj następujące kroki, aby utworzyć i usunąć ustawienia testu w rozwią
 
 ## <a name="remove-a-test-settings-file-from-your-solution"></a>Usuwanie pliku ustawień testu z rozwiązania
 
-W folderze **elementy rozwiązania** w **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy ustawienia testu, które chcesz usunąć, a następnie wybierz polecenie **Usuń**.
+W folderze **elementy rozwiązania** w **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy ustawienia testu, które chcesz usunąć, a następnie wybierz polecenie **Usuń**.
 
 Plik ustawień testu zostanie usunięty z rozwiązania.
 

@@ -1,5 +1,7 @@
 ---
 title: Konfigurowanie agenta testowego
+description: Dowiedz się, jak uruchamiać testy automatyczne, które współdziałają z pulpitem przez skonfigurowanie agenta do uruchamiania jako proces zamiast do usługi.
+ms.custom: SEO-VS-2020
 ms.date: 09/18/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: 3a94dd07-6d17-402c-ae8f-7947143755c9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 994d5da8af7b00ab8af55681d4a67e9681ebbde6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13949465677301a336f0a4738e903657dbfe2b7f
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287535"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441016"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Instrukcje: Konfigurowanie agenta testowego do uruchamiania testów, które współdziałają z pulpitem
 
@@ -56,7 +58,7 @@ Poniższa procedura umożliwia skonfigurowanie wszystkich agentów przypisanych 
    > [!NOTE]
    > - Użytkownik dodawany do uruchomienia procesu musi również zostać dodany jako członek grupy TeamTestAgentService na komputerze dla kontrolera testów dla tego agenta. Jeśli ten użytkownik jest bieżącym użytkownikiem, gdy ten użytkownik zostanie dodany do komputera kontrolera testów, musisz się wylogować lub uruchomić ponownie.
    > - Hasła o wartości null nie są obsługiwane dla kont użytkowników.
-   > - Jeśli chcesz użyć IntelliTrace lub danych emulacji sieci i karty diagnostycznej, konto użytkownika musi być członkiem grupy Administratorzy. Jeśli na komputerze z uruchomionym agentem testowym jest uruchomiony system operacyjny z najniższymi uprawnieniami konta użytkownika, należy uruchomić go jako administrator (podwyższony poziom). Jeśli nazwa użytkownika agenta nie znajduje się w usłudze agenta, spróbuje ją dodać, co wymaga uprawnień do kontrolera testów.
+   > - Jeśli chcesz użyć IntelliTrace lub danych emulacji sieci i karty diagnostycznej, konto użytkownika musi być członkiem grupy Administratorzy. Jeśli na komputerze z uruchomionym agentem testowym jest uruchomiony system operacyjny, który ma Least-Privileged konto użytkownika, należy uruchomić go również jako administrator (podwyższony poziom). Jeśli nazwa użytkownika agenta nie znajduje się w usłudze agenta, spróbuje ją dodać, co wymaga uprawnień do kontrolera testów.
    > - Użytkownik próbujący użyć kontrolera testów musi znajdować się na koncie użytkownika kontrolera testów lub nie będzie mógł uruchamiać testów dla kontrolera.
 
 4. Aby upewnić się, że komputer z agentem testowym może uruchamiać testy po ponownym uruchomieniu, można skonfigurować komputer do automatycznego logowania jako użytkownik agenta testowego. Wybierz pozycję **Zaloguj automatycznie**. Spowoduje to zapisanie nazwy użytkownika i hasła w postaci zaszyfrowanej w rejestrze.
@@ -84,6 +86,6 @@ Poniższa procedura umożliwia skonfigurowanie wszystkich agentów przypisanych 
    Jeśli kontroler testów dla tego agenta testowego jest zarejestrowany w Team Foundation Server, stan agenta testowego, który działa jako proces interaktywny, zostanie wyświetlony w widoku **Kontrolery** w **Centrum laboratoryjnym** dla Microsoft Test Manager. Jest on wyświetlany z poprzednim symbolem gwiazdki, aby zauważyć, że jest uruchomiony jako proces interaktywny. Aby ponownie uruchomić tego agenta testowego, należy użyć narzędzia uruchomionego na komputerze dla agenta testowego, a nie widoku **Kontrolery** .
    ::: moniker-end
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md)

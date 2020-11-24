@@ -1,5 +1,7 @@
 ---
-title: Tworzenie wtyczki rejestratora dla testów wydajności sieci Web
+title: Tworzenie Plug-In rejestratora dla testów wydajności sieci Web
+description: Dowiedz się, w jaki sposób WebTestRecorderPlugin pozwala modyfikować zarejestrowany test wydajności sieci Web po wybraniu opcji Zatrzymaj na pasku narzędzi rejestratora testów wydajności sieci Web.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: 6fe13be1-aeb5-4927-9bff-35950e194da9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3f75114683a4f456d0514af20c1c201c373bd4b0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce4be33e2e29ee0089184a034e56cf3a0539dc76
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288013"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440063"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Instrukcje: tworzenie wtyczki rejestratora
 
@@ -37,7 +39,7 @@ W poniższych procedurach opisano, jak utworzyć kod podstawowe dla wtyczki reje
 
 2. Dodaj nowy projekt **biblioteki klas** do rozwiązania.
 
-3. W **Eksplorator rozwiązań**w folderze nowy projekt biblioteki klas kliknij prawym przyciskiem myszy folder **odwołania** i wybierz polecenie **Dodaj odwołanie**.
+3. W **Eksplorator rozwiązań** w folderze nowy projekt biblioteki klas kliknij prawym przyciskiem myszy folder **odwołania** i wybierz polecenie **Dodaj odwołanie**.
 
     > [!TIP]
     > Przykładem nowego folderu projektu biblioteki klas jest **RecorderPlugins**.
@@ -71,7 +73,7 @@ W poniższych procedurach opisano, jak utworzyć kod podstawowe dla wtyczki reje
 
 8. Dodaj więcej kodu według tego, co wtyczka Rejestrator ma wykonać po nagraniu w sieci Web. Na przykład można dodać kod do obsługi korelacji niestandardowej, jak pokazano w poniższym przykładzie. Możesz również utworzyć wtyczkę rejestratora dla takich elementów jak konwertowanie komentarzy do transakcji lub dodawanie reguł sprawdzania poprawności do testu wydajności sieci Web.
 
-9. W menu **kompilacja** wybierz polecenie **Kompiluj \<class library project name> **.
+9. W menu **kompilacja** wybierz polecenie **Kompiluj \<class library project name>**.
 
 Następnie wdróż wtyczkę rejestratora, aby mogła ona zostać zarejestrowana w programie Visual Studio.
 
@@ -243,7 +245,7 @@ namespace RecorderPlugin
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin.PostWebTestRecording*>

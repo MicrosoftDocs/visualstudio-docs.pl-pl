@@ -1,5 +1,7 @@
 ---
-title: Tworzenie testów jednostkowych opartych na danych
+title: Utwórz testy jednostkowe Data-Driven
+description: Dowiedz się, jak używać struktury testów jednostkowych firmy Microsoft dla kodu zarządzanego, aby skonfigurować metodę testową jednostkową w celu pobrania wartości ze źródła danych.
+ms.custom: SEO-VS-2020
 ms.date: 05/08/2019
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 936c6b2ee9e05d059c09c2aa074829b35b6ca5fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31e1fb08d77992e6fb592e286553196928b13ad4
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287990"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441199"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Instrukcje: Tworzenie testu jednostkowego opartego na danych
 
@@ -71,7 +73,7 @@ Aby przetestować `AddIntegers` metodę, Utwórz źródło danych, które okreś
 |-|------------------|-|
 |0|1|1|
 |1|1|2|
-|2|-3|-1|
+|2|–3|-1|
 
 ## <a name="add-a-testcontext-to-the-test-class"></a>Dodawanie TestContext do klasy testowej
 
@@ -160,7 +162,7 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 
 ## <a name="run-the-test-and-view-results"></a>Uruchom test i Wyświetl wyniki
 
-Po zakończeniu pisania metody testowej Skompiluj projekt testowy. Metoda testowa pojawia się w **Eksploratorze testów** w grupie **nie uruchomiono testów** . Podczas uruchamiania, zapisywania i ponownego uruchamiania testów program **Test Explorer** wyświetla wyniki w grupach **testów zakończonych niepowodzeniem**, **testy zakończone pomyślnie**i **nie uruchamiają testów**. Możesz wybrać opcję **Uruchom wszystkie** , aby uruchomić wszystkie testy, lub wybrać polecenie **Uruchom** , aby wybrać podzbiór testów do uruchomienia.
+Po zakończeniu pisania metody testowej Skompiluj projekt testowy. Metoda testowa pojawia się w **Eksploratorze testów** w grupie **nie uruchomiono testów** . Podczas uruchamiania, zapisywania i ponownego uruchamiania testów program **Test Explorer** wyświetla wyniki w grupach **testów zakończonych niepowodzeniem**, **testy zakończone pomyślnie** i **nie uruchamiają testów**. Możesz wybrać opcję **Uruchom wszystkie** , aby uruchomić wszystkie testy, lub wybrać polecenie **Uruchom** , aby wybrać podzbiór testów do uruchomienia.
 
 Pasek wyników testu w górnej części **Eksploratora testów** jest animowany w miarę przebiegu testu. Na końcu przebiegu testu pasek będzie zielony, jeśli wszystkie testy przebiegły lub czerwona, jeśli którykolwiek z testów zakończył się niepowodzeniem. Podsumowanie przebiegu testu pojawia się w okienku szczegółów u dołu okna **Eksplorator testów** . Wybierz test, aby wyświetlić szczegóły tego testu w dolnym okienku.
 
@@ -171,7 +173,7 @@ Jeśli `AddIntegers_FromDataSourceTest` w naszym przykładzie została uruchomio
 
 Gdy testowana Metoda jest korygowana, a test zostanie uruchomiony ponownie, pasek wyników zmieni kolor na zielony, a metoda testowa zostanie przeniesiona do grupy **testów zakończonych** .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute?displayProperty=fullName>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext?displayProperty=fullName>

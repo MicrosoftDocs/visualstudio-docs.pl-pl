@@ -1,7 +1,7 @@
 ---
 title: msi-install
 description: Narzędzie devinit dla narzędzia Msiexec.
-ms.date: 10/13/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: ab56157d531e762ed36f8c2349e50e76596b05ec
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 8dfde12f58161dfcf86eeda2b9714f705685d39a
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672174"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440423"
 ---
 # <a name="msi-install"></a>msi-install
 
@@ -46,15 +46,19 @@ Narzędzie MSI-Install ustawia liczbę `msiexec` argumentów wiersza polecenia, 
 
 | Nazwa          | Opis                                                                                                                                                                                   |
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| /i            | Uruchamia normalną instalację                                                                                                                                                                    | 
-| /quiet        | Określa tryb cichy bez interakcji użytkownika                                                                                                                                        | 
-| /Qn           | Określa, że podczas procesu instalacji nie ma interfejsu użytkownika                                                                                                                                           | 
-| /Passive      | Określa tryb instalacji nienadzorowanej, w którym tylko pokazuje pasek postępu                                                                                                                    | 
-| /l * V          | Włącza rejestrowanie i rejestruje wszystkie informacje, łącznie z pełnymi informacjami, do `devinit.log` pliku w lokalnym folderze tymczasowym maszyny. Jeśli narzędzie się nie powiedzie, zostanie wyświetlona ścieżka pliku dziennika.      | 
-| /norestart    | Powoduje zatrzymanie ponownego uruchomienia komputera po zakończeniu instalacji, ale zwróci kod zakończenia 3010, jeśli jest wymagany ponowny rozruch                                                                  | 
+| /i            | Uruchamia normalną instalację                                                                                                                                                                    |
+| /quiet        | Określa tryb cichy bez interakcji użytkownika                                                                                                                                        |
+| /Qn           | Określa, że podczas procesu instalacji nie ma interfejsu użytkownika                                                                                                                                           |
+| /Passive      | Określa tryb instalacji nienadzorowanej, w którym tylko pokazuje pasek postępu                                                                                                                    |
+| /l * V          | Włącza rejestrowanie i rejestruje wszystkie informacje, łącznie z pełnymi informacjami, do `devinit.log` pliku w lokalnym folderze tymczasowym maszyny. Jeśli narzędzie się nie powiedzie, zostanie wyświetlona ścieżka pliku dziennika.      |
+| /norestart    | Powoduje zatrzymanie ponownego uruchomienia komputera po zakończeniu instalacji, ale zwróci kod zakończenia 3010, jeśli jest wymagany ponowny rozruch                                                                  |
+
+### <a name="default-behavior"></a>Zachowanie domyślne
+
+Domyślne zachowanie `msi-install` narzędzia jest błędem, ponieważ `input` Właściwość jest wymagana.
 
 ## <a name="example-usage"></a>Przykład użycia
-Poniżej znajduje się przykład sposobu uruchamiania `msi-install` przy użyciu `.devinit.json` . 
+Poniżej znajduje się przykład sposobu uruchamiania `msi-install` przy użyciu `.devinit.json` .
 
 #### <a name="devinitjson-that-will-install-the-7-zip-msi"></a>.devinit.js, na którym zostanie zainstalowany plik MSI 7-Zip:
 ```json

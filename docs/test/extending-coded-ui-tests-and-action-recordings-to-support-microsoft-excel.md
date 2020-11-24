@@ -1,5 +1,7 @@
 ---
 title: Poszerzenie kodowanych testów interfejsu użytkownika i nagrań akcji
+description: Dowiedz się, jak utworzyć rozszerzenie dla struktury kodowanego testu interfejsu użytkownika dla określonego interfejsu użytkownika, wykorzystując rozszerzalność kodowanego środowiska testowania interfejsu użytkownika.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: c8efead1712ace2f533cb9075ea7a4c5305289a4
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 6a2996da30c0be8e3dc4d303d0e46e901c8b885d
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036083"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442628"
 ---
 # <a name="extend-coded-ui-tests-and-action-recordings"></a>Poszerzenie kodowanych testów interfejsu użytkownika i nagrań akcji
 

@@ -1,5 +1,6 @@
 ---
 title: Powiąż kontroler testów/agenta testowego z kartą sieciową
+description: Dowiedz się, jak powiązać kontroler testów lub agenta testowego z kartą sieciową przy użyciu adresu IP, na wypadek gdy jest zainstalowany dla wielu kart sieciowych.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -12,12 +13,12 @@ ms.assetid: 7eb9290a-f9f6-4e41-9caa-796fcfaf0610
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dc590973a0a98cd9c5108c9cfe44ea957073b313
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 3f4c215937f6637eedfa869a5e3abd701966c693
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810301"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442355"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Instrukcje: powiązanie kontrolera testów lub agenta testowego z kartą sieciową
 
@@ -129,7 +130,7 @@ Jeśli komputer, na którym jest zainstalowany kontroler testów lub oprogramowa
 
     `net start vsttagent`
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md)
 - [Modyfikowanie ustawień rejestrowania testu obciążenia](../test/modify-load-test-logging-settings.md)

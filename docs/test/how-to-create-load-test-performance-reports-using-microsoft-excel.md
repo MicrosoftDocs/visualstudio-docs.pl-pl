@@ -1,5 +1,6 @@
 ---
 title: Utwórz raport wydajności testu obciążenia przy użyciu programu Excel
+description: Dowiedz się, jak generować raporty testów obciążenia programu Microsoft Excel, które są oparte na dwóch lub większej liczbie wyników testów. Możesz tworzyć porównania i raporty trendów.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ ms.assetid: b87fb196-9973-4512-a924-088788def4ea
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9ce92e157ba3fe02dbabd1ddd408492c440102a1
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: a89818630258aab42535fb4256fa3e844b0c6878
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810262"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442433"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Instrukcje: Tworzenie raportów wydajności testu obciążenia przy użyciu programu Microsoft Excel
 
@@ -63,13 +64,13 @@ Raporty programu Excel można generować w **analizatorze testu obciążenia**, 
 
       Program Microsoft Excel zostanie otwarty z **kreatorem Generuj raport z testu obciążenia**.
 
-   **ORAZ**
+   **OR**
 
    1. Otwórz program Microsoft Excel, wybierz kartę **test obciążenia** na Wstążce **pakietu Office** , a następnie wybierz pozycję **Raport z testu obciążenia**.
 
        Zostanie wyświetlony **Kreator Generuj raport z testu obciążenia** .
 
-   2. Na stronie **Wybierz bazę danych zawierającą testy obciążenia** w obszarze **Nazwa serwera**wpisz nazwę serwera zawierającego wyniki testu obciążenia.
+   2. Na stronie **Wybierz bazę danych zawierającą testy obciążenia** w obszarze **Nazwa serwera** wpisz nazwę serwera zawierającego wyniki testu obciążenia.
 
    3. Z listy rozwijanej **Nazwa bazy danych** wybierz bazę danych zawierającą wyniki testu obciążenia.
 
@@ -81,7 +82,7 @@ Raporty programu Excel można generować w **analizatorze testu obciążenia**, 
 
 6. Wybierz test obciążenia, dla którego chcesz wygenerować raport, a następnie wybierz przycisk **dalej**.
 
-7. Na stronie **Wybierz przebiegi dla raportu** w obszarze **Wybierz co najmniej jeden przebieg do dodania do raportu**wybierz dwa wyniki testów obciążenia, które chcesz porównać w raporcie, i wybierz przycisk **dalej**.
+7. Na stronie **Wybierz przebiegi dla raportu** w obszarze **Wybierz co najmniej jeden przebieg do dodania do raportu** wybierz dwa wyniki testów obciążenia, które chcesz porównać w raporcie, i wybierz przycisk **dalej**.
 
    > [!NOTE]
    > Raport porównawczy można generować tylko dla dwóch wyników testu obciążenia. Jeśli wybierzesz jeden wynik testu obciążenia lub więcej niż dwa wyniki testów obciążenia, zostanie wyświetlony komunikat ostrzegawczy.
@@ -118,13 +119,13 @@ Raporty programu Excel można generować w **analizatorze testu obciążenia**, 
 
       Program Microsoft Excel zostanie otwarty z **kreatorem Generuj raport z testu obciążenia**.
 
-   **ORAZ**
+   **OR**
 
    1. Otwórz program Microsoft Excel, wybierz kartę **test obciążenia** na Wstążce **pakietu Office** , a następnie wybierz pozycję **Raport z testu obciążenia**.
 
        Zostanie wyświetlony **Kreator Generuj raport z testu obciążenia** .
 
-   2. Na stronie **Wybierz bazę danych zawierającą testy obciążenia** w obszarze **Nazwa serwera**wpisz nazwę serwera zawierającego wyniki testu obciążenia.
+   2. Na stronie **Wybierz bazę danych zawierającą testy obciążenia** w obszarze **Nazwa serwera** wpisz nazwę serwera zawierającego wyniki testu obciążenia.
 
    3. Z listy rozwijanej **Nazwa bazy danych** wybierz bazę danych zawierającą wyniki testu obciążenia.
 
@@ -136,7 +137,7 @@ Raporty programu Excel można generować w **analizatorze testu obciążenia**, 
 
 6. Wybierz test obciążenia, dla którego chcesz wygenerować raport, a następnie wybierz przycisk **dalej**.
 
-7. Na stronie **Wybierz przebiegi dla raportu** w obszarze **Wybierz co najmniej jeden przebieg do dodania do raportu**wybierz wyniki testów obciążenia, które chcesz porównać w raporcie, i wybierz przycisk **dalej**.
+7. Na stronie **Wybierz przebiegi dla raportu** w obszarze **Wybierz co najmniej jeden przebieg do dodania do raportu** wybierz wyniki testów obciążenia, które chcesz porównać w raporcie, i wybierz przycisk **dalej**.
 
 8. Na stronie **Wybierz liczniki dla raportu** w obszarze **Wybierz co najmniej jeden licznik, który ma zostać dodany do raportu**, można rozwinąć listę liczników, aby dostosować raport. Wybierz liczniki, które chcesz porównać na potrzeby analizy trendów, a następnie wybierz pozycję **Zakończ**.
 
@@ -149,6 +150,6 @@ Raporty programu Excel można generować w **analizatorze testu obciążenia**, 
 
 Wyniki testów obciążenia i raporty zawierają potencjalnie poufne informacje, które mogą być używane do tworzenia ataku na komputer lub w sieci. Wyniki testów obciążenia i raporty zawierają nazwy komputerów i parametry połączenia. Należy pamiętać o tym, gdy udostępniasz raporty testów obciążenia innym osobom.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Zgłoś wyniki testów obciążenia dla porównania testów lub analizy trendów](../test/compare-load-test-results.md)

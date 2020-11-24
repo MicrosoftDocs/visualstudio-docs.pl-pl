@@ -1,5 +1,7 @@
 ---
 title: Testy jednostkowe docelowe w starszej wersji .NET Framework
+description: Dowiedz się, jak tworzyć projekty testów jednostkowych dla konkretnych wersji .NET Framework. Wersja doużywana musi mieć wartość 3,5 lub nowszą i nie może być wersją klienta.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: 670ec672c55d591496e26435db5a3112c345a44d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6badbb7723bf4d8ed0c9385558204c2dc4907574
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288172"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441251"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Instrukcje: Konfigurowanie testów jednostkowych pod kątem wcześniejszej wersji .NET Framework
 
@@ -50,7 +52,7 @@ Następujące ograniczenia są stosowane po ponownym nakierowaniu projektów tes
 
 1. Utwórz nowy projekt **projektu testu jednostkowego** Visual Basic.
 
-2. W obszarze **Eksplorator rozwiązań**wybierz pozycję **Właściwości** w menu rozwijanym prawym przyciskiem myszy nowy Visual Basic projekt testowy.
+2. W obszarze **Eksplorator rozwiązań** wybierz pozycję **Właściwości** w menu rozwijanym prawym przyciskiem myszy nowy Visual Basic projekt testowy.
 
      Zostaną wyświetlone właściwości projektu testowego Visual Basic.
 
@@ -66,7 +68,7 @@ Następujące ograniczenia są stosowane po ponownym nakierowaniu projektów tes
 
 1. Utwórz nowy projekt **projektu testów jednostkowych** C#.
 
-2. W **Eksplorator rozwiązań**wybierz **Właściwości** z menu rozwijanego prawym przyciskiem myszy nowego projektu testu C#.
+2. W **Eksplorator rozwiązań** wybierz **Właściwości** z menu rozwijanego prawym przyciskiem myszy nowego projektu testu C#.
 
    Zostaną wyświetlone właściwości projektu testowego w języku C#.
 
@@ -81,9 +83,9 @@ Następujące ograniczenia są stosowane po ponownym nakierowaniu projektów tes
    > [!WARNING]
    > Aby skompilować testy jednostkowe języka C++/CLI dla poprzedniej wersji programu .NET Framework dla Visual C++, należy użyć odpowiedniej wersji programu Visual Studio.
 
-2. W **Eksplorator rozwiązań**wybierz pozycję **Zwolnij projekt** z nowego projektu testowego języka C++.
+2. W **Eksplorator rozwiązań** wybierz pozycję **Zwolnij projekt** z nowego projektu testowego języka C++.
 
-3. W **Eksplorator rozwiązań**wybierz niezaładowany projekt testowego języka C++, a następnie wybierz polecenie **Edytuj \<project name> . vcxproj**.
+3. W **Eksplorator rozwiązań** wybierz niezaładowany projekt testowego języka C++, a następnie wybierz polecenie **Edytuj \<project name> . vcxproj**.
 
    Plik *. vcxproj* zostanie otwarty w edytorze.
 
@@ -102,9 +104,9 @@ Następujące ograniczenia są stosowane po ponownym nakierowaniu projektów tes
 
 5. Zapisz i zamknij plik *. vcxproj* .
 
-6. W **Eksplorator rozwiązań**wybierz opcję Wybierz **Załaduj ponownie projekt** z menu rozwijanego prawym przyciskiem myszy nowego projektu testowego języka C++.
+6. W **Eksplorator rozwiązań** wybierz opcję Wybierz **Załaduj ponownie projekt** z menu rozwijanego prawym przyciskiem myszy nowego projektu testowego języka C++.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Tworzenie rozwiązań SharePoint](../sharepoint/create-sharepoint-solutions.md)
 - [Kompilowanie i debugowanie rozwiązań SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)

@@ -1,5 +1,7 @@
 ---
 title: Określ agentów testowych do użycia w scenariuszach testów obciążenia
+description: Informacje na temat określania agentów do użycia w scenariuszu przez ustawienie agentów do użycia właściwości w okno Właściwości Edytor testu obciążeniowego.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,16 +14,16 @@ ms.assetid: e86806dd-5897-4e4c-bfd4-8d687fb72a6e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5d9e22200a63544b4539f7bf78c48d5711974776
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: af0dac96bef5218a80e01c3ec205b58d122677c6
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287496"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440912"
 ---
 # <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Instrukcje: Określanie agentów testowych do użycia w scenariuszach testów obciążenia
 
-Po utworzeniu testu obciążenia przy użyciu **nowego Kreator testu obciążeniowego**można użyć **Edytor testu obciążeniowego** , aby zmienić właściwości scenariuszy, aby spełniały potrzeby testowania i cele.
+Po utworzeniu testu obciążenia przy użyciu **nowego Kreator testu obciążeniowego** można użyć **Edytor testu obciążeniowego** , aby zmienić właściwości scenariuszy, aby spełniały potrzeby testowania i cele.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -64,7 +66,7 @@ Jeśli maszyna testowa ma więcej niż 75 procent użycia procesora CPU lub ma m
 
 5. Po zmianie właściwości wybierz pozycję **Zapisz** w menu **plik** . Następnie można uruchomić test obciążenia za pomocą nowych **agentów, aby użyć** wartości.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Edytowanie scenariuszy testu obciążenia](../test/edit-load-test-scenarios.md)
 - [Przewodnik: Tworzenie i uruchamianie testów obciążeniowych](../test/walkthrough-create-and-run-a-load-test.md)

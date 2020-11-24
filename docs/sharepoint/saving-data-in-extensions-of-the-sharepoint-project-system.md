@@ -1,6 +1,8 @@
 ---
 title: Zapisywanie danych w rozszerzeniach systemu projektu SharePoint | Microsoft Docs
 titleSuffix: ''
+description: Dowiedz się, jak zapisać dane ciągów, które są utrwalane po zamknięciu projektu programu SharePoint, który zawiera rozszerzenie.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 30142b9aaec3df7ce0d43845e369eb538533de62
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 1e3c05b9ad570febcfc28fec367a8d180dd2b222
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583869"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440652"
 ---
 # <a name="save-data-in-extensions-of-the-sharepoint-project-system"></a>Zapisywanie danych w rozszerzeniach systemu projektu SharePoint
   Rozszerzając system projektu programu SharePoint, można zapisać dane ciągów, które są utrwalane po zamknięciu projektu programu SharePoint. Dane są zwykle skojarzone z konkretnym elementem projektu lub z samym projektem.
@@ -54,7 +56,7 @@ ms.locfileid: "91583869"
  [!code-vb[SpExt_SPCustomPrjProperty#2](../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb#2)]
  [!code-csharp[SpExt_SPCustomPrjProperty#2](../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs#2)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Poszerzanie systemu projektu SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)
 - [Kojarzenie danych niestandardowych z rozszerzeniami narzędzi programu SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)
 - [Konwersja między typami systemu projektu SharePoint a innymi typami projektów programu Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)

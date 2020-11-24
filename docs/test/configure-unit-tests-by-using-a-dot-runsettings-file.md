@@ -1,5 +1,7 @@
 ---
 title: Konfigurowanie testów jednostkowych przy użyciu pliku. runsettings
+description: Dowiedz się, jak za pomocą pliku. runsettings w programie Visual Studio skonfigurować testy jednostkowe, które są uruchamiane z wiersza polecenia, z IDE lub w przepływie pracy kompilacji.
+ms.custom: SEO-VS-2020
 ms.date: 07/15/2020
 ms.topic: conceptual
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 8194a5f61b45ac2b4358922aaf8c7c7b8bea4ae9
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: ca15e265f9e6f3188826c019a8c81d02a7668bcf
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518768"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442693"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurowanie testów jednostkowych przy użyciu pliku *. runsettings*
 
@@ -61,7 +63,7 @@ Jeśli chcesz wyłączyć ustawienia niestandardowe i włączyć je w IDE, usuń
 Dostępne metody zależą od używanej wersji programu Visual Studio.
 
 ::: moniker range="vs-2017"
-Aby określić plik parametrów uruchomieniowych w środowisku IDE **, wybierz pozycję Testuj** > **Ustawienia testu** > **Wybierz plik ustawień testu** , a następnie wybierz plik *. runsettings* .
+Aby określić plik parametrów uruchomieniowych w środowisku IDE **, wybierz pozycję Testuj** > **Ustawienia testu** > **Wybierz plik ustawień testu**, a następnie wybierz plik *. runsettings* .
 
 ![Wybieranie menu plik ustawień testu w programie Visual Studio 2017](media/select-test-settings-file.png)
 
@@ -94,7 +96,7 @@ Jeśli jest włączone Autowykrywanie plików uruchomieniowych, ustawienia w tym
 
 #### <a name="manually-select-the-run-settings-file"></a>Ręcznie wybierz plik parametrów uruchomieniowych
 
-W środowisku IDE wybierz kolejno opcje **Testuj** > **Skonfiguruj Parametry uruchomieniowe** > **Wybierz pozycję plik Wide runsettings** , a następnie wybierz plik *. runsettings* .
+W środowisku IDE wybierz kolejno opcje **Testuj** > **Skonfiguruj Parametry uruchomieniowe** > **Wybierz pozycję plik Wide runsettings**, a następnie wybierz plik *. runsettings* .
 
    - Ten plik przesłania plik *. runsettings* w katalogu głównym rozwiązania, jeśli istnieje, i jest stosowany do wszystkich przebiegów testów.
    - Ten wybór pliku będzie trwały tylko lokalnie.
@@ -233,7 +235,7 @@ Aby dostosować każdy inny typ adapterów danych diagnostycznych, należy uży�
 
 ### <a name="blame-data-collector"></a>Moduł zbierający dane polecenia Blame
 
-Ta opcja może pomóc wyizolować problematyczny test, który powoduje awarię hosta testowego. Uruchomienie modułu zbierającego tworzy plik wyjściowy ( *Sequence.xml* ) w *TestResults* , który przechwytuje kolejność wykonywania testu przed awarią.
+Ta opcja może pomóc wyizolować problematyczny test, który powoduje awarię hosta testowego. Uruchomienie modułu zbierającego tworzy plik wyjściowy (*Sequence.xml*) w *TestResults*, który przechwytuje kolejność wykonywania testu przed awarią.
 
 ```xml
 <DataCollector friendlyName="blame" enabled="True">
@@ -306,7 +308,7 @@ Te ustawienia są specyficzne dla adaptera testowego, który uruchamia metody te
 </MSTest>
 ```
 
-|Konfiguracja|Domyślne|Wartości|
+|Konfigurowanie|Domyślne|Wartości|
 |-|-|-|
 |**ForcedLegacyMode**|fałsz|W programie Visual Studio 2012 karta MSTest została zoptymalizowana tak, aby była szybsza i bardziej skalowalna. Niektóre zachowania, na przykład kolejność, w jakiej są uruchamiane testy, mogą nie być dokładnie takie same, jak w poprzednich wersjach programu Visual Studio. Ustaw tę wartość na **true** , aby użyć starszego adaptera testowego.<br /><br />Można na przykład użyć tego ustawienia, jeśli istnieje plik *app.config* określony dla testu jednostkowego.<br /><br />Zaleca się, aby rozważyć refaktoryzację testów pozwalającą na użycie nowszego adaptera.|
 |**IgnoreTestImpact**|fałsz|Funkcja wpływu na testy określa priorytety testów, których dotyczą ostatnie zmiany, po uruchomieniu w MSTest lub z Microsoft Test Manager (przestarzałe w programie Visual Studio 2017). To ustawienie powoduje wyłączenie funkcji. Aby uzyskać więcej informacji, zobacz, [które testy należy uruchomić od poprzedniej kompilacji](/previous-versions/dd286589(v=vs.140)).|

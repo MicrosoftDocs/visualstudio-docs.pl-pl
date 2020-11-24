@@ -1,5 +1,7 @@
 ---
 title: Okno dialogowe selektora adresów URL (Programowanie SharePoint)
+description: Dowiedz się więcej na temat okna dialogowego selektora adresów URL, które umożliwia użytkownikowi wybranie plików znajdujących się w ich projekcie lub na serwerze lokalnym, na którym działa program SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 991693c3379e008a2a907efd3127290c7e804c22
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 584b77ab714cb692069fadd6c6fad50e20d46f80
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66261945"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442537"
 ---
 # <a name="url-picker-dialog-box-sharepoint-development-in-visual-studio"></a>Okno dialogowe selektora adresów URL (Programowanie SharePoint w Visual Studio)
   W oknie dialogowym Selektor adresów URL możesz wybrać pliki, takie jak pliki strony głównej lub pliki obrazów, które znajdują się w projekcie lub na serwerze lokalnym, na którym działa program SharePoint.
@@ -42,7 +44,7 @@ ms.locfileid: "66261945"
 
   Rozwiń węzeł **serwera** , aby wybrać pliki znajdujące się na serwerze lokalnym, na którym działa program SharePoint. Aby były wyświetlane jako wybrane w oknie dialogowym, te pliki muszą spełniać następujące kryteria:
 
-- Plik musi znajdować się w jednym z następujących mapowanych folderów: **images**, **Layouts**lub **elementy ControlTemplates**.
+- Plik musi znajdować się w jednym z następujących mapowanych folderów: **images**, **Layouts** lub **elementy ControlTemplates**.
 
 - Plik nie może znajdować się w bazie danych zawartości programu SharePoint.
 
@@ -52,7 +54,7 @@ ms.locfileid: "66261945"
 
   **Pliki typu** Umożliwia wybranie z listy plików, które są odpowiednie dla wykonywanego zadania.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Tworzenie stron aplikacji dla programu SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)
 - [Tworzenie składników Web Part dla programu SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)
 - [Tworzenie kontrolek wielokrotnego użytku dla części sieci Web lub stron aplikacji](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)

@@ -1,7 +1,7 @@
 ---
 title: dotnet-restore
 description: Narzędzie devinit dotnet-Restore.
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 51c6ed6576fefe3853bca7f4250c1884bd364f64
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 647748acc3eb45e2eca6ab4ca1e48a8bda3a563b
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671934"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440396"
 ---
 # <a name="dotnet-restore"></a>dotnet-restore
 
@@ -42,10 +42,10 @@ Dodatkowe opcje są przesyłane jako-do polecenia dotnet restore.
 
 ### <a name="default-behavior"></a>Zachowanie domyślne
 
-Domyślnym zachowaniem tego `dotnet-restore` narzędzia jest uruchomienie "dotnet Restore" w bieżącym katalogu.
+Domyślne zachowanie `dotnet-restore` narzędzia jest uruchamiane `dotnet restore` w bieżącym katalogu.
 
 ## <a name="example-usage"></a>Przykład użycia
-Poniżej znajduje się przykład sposobu uruchamiania `dotnet-restore` przy użyciu `.devinit.json` . 
+Poniżej znajduje się przykład sposobu uruchamiania `dotnet-restore` przy użyciu `.devinit.json` .
 
 #### <a name="devinitjson-that-will-restore-dependencies-and-tools-of-a-project"></a>.devinit.js, na którym zostaną przywrócone zależności i narzędzia projektu:
 ```json

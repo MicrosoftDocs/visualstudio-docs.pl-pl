@@ -1,5 +1,7 @@
 ---
-title: Tworzenie wtyczki testu obciążenia
+title: Utwórz test obciążenia Plug-In
+description: Dowiedz się, jak utworzyć wtyczkę testu obciążenia, aby uruchomić kod w różnym czasie podczas przebiegu testu obciążenia, który może rozwijać lub modyfikować funkcję testu obciążenia.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 f1_keywords:
@@ -12,12 +14,12 @@ ms.assetid: 27806972-1b15-4388-833d-6d0632816f1f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0abcc3865c21a4f4673331377af8d17b223c7875
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6fee903c9fd2001b6c6d229e5786dd7ffb9037b9
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288029"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441098"
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>Instrukcje: tworzenie wtyczki testu obciążenia
 
@@ -38,9 +40,9 @@ Można utworzyć wtyczkę testu obciążeniowego służącą do uruchamiania kod
 
      Aby uzyskać więcej informacji, zobacz [Szybki Start: Tworzenie projektu testu obciążenia](../test/quickstart-create-a-load-test-project.md).
 
-3. Dodaj nowy projekt **biblioteki klas** do rozwiązania. (W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy rozwiązanie, a następnie wybierz pozycję **Dodaj** , a następnie wybierz pozycję **Nowy projekt**).
+3. Dodaj nowy projekt **biblioteki klas** do rozwiązania. (W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy rozwiązanie, a następnie wybierz pozycję **Dodaj** , a następnie wybierz pozycję **Nowy projekt**).
 
-4. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy folder **odwołania** w nowej bibliotece klas i wybierz polecenie **Dodaj odwołanie**.
+4. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy folder **odwołania** w nowej bibliotece klas i wybierz polecenie **Dodaj odwołanie**.
 
    Zostanie wyświetlone okno dialogowe **Dodawanie odwołania** .
 
@@ -50,7 +52,7 @@ Można utworzyć wtyczkę testu obciążeniowego służącą do uruchamiania kod
 
    Odwołanie do **Microsoft. VisualStudio. QualityTools. LoadTestFramework** jest dodawane do folderu **Reference** w **Eksplorator rozwiązań**.
 
-7. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy górny węzeł projektu testu wydajności i obciążenia sieci Web, który zawiera test obciążenia, do którego chcesz dodać wtyczkę testu obciążenia, a następnie wybierz pozycję **Dodaj odwołanie**.
+7. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy górny węzeł projektu testu wydajności i obciążenia sieci Web, który zawiera test obciążenia, do którego chcesz dodać wtyczkę testu obciążenia, a następnie wybierz pozycję **Dodaj odwołanie**.
 
    **Zostanie wyświetlone okno dialogowe Dodawanie odwołania**.
 
@@ -58,7 +60,7 @@ Można utworzyć wtyczkę testu obciążeniowego służącą do uruchamiania kod
 
 9. Wybierz przycisk **OK**.
 
-10. W **edytorze kodu**Dodaj `using` instrukcję dla <xref:Microsoft.VisualStudio.TestTools.LoadTesting> przestrzeni nazw.
+10. W **edytorze kodu** Dodaj `using` instrukcję dla <xref:Microsoft.VisualStudio.TestTools.LoadTesting> przestrzeni nazw.
 
 11. Zaimplementuj interfejs <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> dla klasy, która została utworzona w projekcie Biblioteka klas. Przykładową implementację przedstawiono w następującej sekcji Przykład.
 
@@ -68,7 +70,7 @@ Można utworzyć wtyczkę testu obciążeniowego służącą do uruchamiania kod
 
      Zostanie wyświetlone okno dialogowe **Dodaj wtyczkę testu obciążenia** .
 
-14. W obszarze **wybierz wtyczkę**wybierz klasę wtyczki testu obciążenia.
+14. W obszarze **wybierz wtyczkę** wybierz klasę wtyczki testu obciążenia.
 
 15. We **właściwościach wybranego okienka wtyczek** Ustaw początkowe wartości dla wtyczki, które mają być używane w czasie wykonywania.
 
@@ -157,7 +159,7 @@ Z testem obciążeniowym jest skojarzonych osiem zdarzeń, których wtyczka test
 
 - <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.LoadTestAborted>
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>
 - [Tworzenie niestandardowych kodów i wtyczek dla testów obciążeniowych](../test/create-custom-code-and-plug-ins-for-load-tests.md)

@@ -1,7 +1,7 @@
 ---
 title: azurecli-login
 description: devinit narzędzia azurecli — logowanie.
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 304c7b12e3b290c3e47857877b050b18873e3934
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 572f0af5f7ff586ebbda8785245637f10d66abed
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672312"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440504"
 ---
 # <a name="azurecli-login"></a>azurecli-login
 
@@ -42,10 +42,10 @@ Nie używany.
 
 ### <a name="default-behavior"></a>Zachowanie domyślne
 
-Domyślnym zachowaniem tego `azurecli-login` narzędzia jest zainstalowanie najnowszej wersji interfejsu wiersza polecenia platformy Azure i dodanie jej do ścieżki (tylko system Windows).
+Domyślnym zachowaniem tego `azurecli-login` narzędzia jest zainstalowanie najnowszej wersji interfejsu wiersza polecenia platformy Azure i dodanie go do programu `PATH` .
 
 ## <a name="example-usage"></a>Przykład użycia
-Poniżej znajduje się przykład sposobu uruchamiania `azurecli-login` przy użyciu `.devinit.json` . 
+Poniżej znajduje się przykład sposobu uruchamiania `azurecli-login` przy użyciu `.devinit.json` .
 
 #### <a name="devinitjson-that-will-trigger-azure-login"></a>.devinit.js, na którym zostanie wyzwolone logowanie na platformie Azure:
 

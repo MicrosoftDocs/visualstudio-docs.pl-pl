@@ -1,5 +1,7 @@
 ---
 title: Utwórz test usługi sieci Web
+description: Dowiedz się, jak używać testu wydajności dla usług sieci Web i Dostosuj żądania w Edytor internetowego testu wydajnościowego, aby zlokalizować strony usługi sieci Web.
+ms.custom: SEO-VS-2020
 ms.date: 06/30/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.assetid: fbcd57ee-06ad-4260-8694-09f8e0f93e39
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9934f48e6d5900a418995eb96d357b4ea1ea532f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 32b5a6a91221e8942faeefcb89cfc52dd0cc5895
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85814762"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95439930"
 ---
 # <a name="how-to-create-a-web-service-test"></a>Instrukcje: Tworzenie nowego testu usługi internetowej
 
@@ -51,7 +53,7 @@ Jeśli składnik narzędzi testowania wydajności sieci Web i obciążenia nie z
 
 1. Otwórz **Instalator programu Visual Studio** z menu **Start** systemu Windows. Możesz również uzyskać do niego dostęp w programie Visual Studio z okna dialogowego Nowy projekt lub wybierając **Narzędzia**  >  **Pobierz narzędzia i funkcje** z paska menu.
 
-1. W **Instalator programu Visual Studio**wybierz kartę **poszczególne składniki** i przewiń w dół do sekcji **debugowanie i testowanie** . Wybierz pozycję **Narzędzia do testowania obciążenia i wydajności sieci Web**.
+1. W **Instalator programu Visual Studio** wybierz kartę **poszczególne składniki** i przewiń w dół do sekcji **debugowanie i testowanie** . Wybierz pozycję **Narzędzia do testowania obciążenia i wydajności sieci Web**.
 
    ![Składnik narzędzi do testowania wydajności sieci Web i testów obciążenia](media/web-perf-load-testing-tools-component.png)
 
@@ -107,7 +109,7 @@ Test sieci Web wymaga szablonu projektu test wydajności i obciążenia sieci We
 
 1. W przypadku usługi sieci Web Otwórz oddzielną sesję przeglądarki i wpisz adres URL strony *. asmx* na pasku narzędzi **adres** . W górnej części strony sieci Web Wybierz metodę, którą chcesz przetestować, i Sprawdź komunikat protokołu SOAP. (W przykładowej usłudze sieci Web Metoda to HelloWorld). Po otwarciu metody zobaczysz, że zawiera ona `SOAPAction` .
 
-1. W **Edytor internetowego testu wydajnościowego**kliknij prawym przyciskiem myszy żądanie i wybierz pozycję **Dodaj nagłówek** , aby dodać nowy nagłówek. W właściwości **name** wpisz `SOAPAction` . We właściwości **Value** wpisz wartość, która jest wyświetlana w, na przykład `SOAPAction` *http://tempuri.org/HelloWorld* .
+1. W **Edytor internetowego testu wydajnościowego** kliknij prawym przyciskiem myszy żądanie i wybierz pozycję **Dodaj nagłówek** , aby dodać nowy nagłówek. W właściwości **name** wpisz `SOAPAction` . We właściwości **Value** wpisz wartość, która jest wyświetlana w, na przykład `SOAPAction` *http://tempuri.org/HelloWorld* .
 
 1. Rozwiń węzeł adresu URL w edytorze testów, wybierz węzeł **treść ciąg** i we właściwości **Typ zawartości** wprowadź wartość `text/xml` .
 
@@ -137,10 +139,10 @@ Test sieci Web wymaga szablonu projektu test wydajności i obciążenia sieci We
     > [!NOTE]
     > Możesz użyć powiązania danych w treści protokołu SOAP, aby zastąpić dowolną wartość symbolu zastępczego wartościami związanymi z danymi przy użyciu `{{DataSourceName.TableName.ColumnName}}` składni.
 
-1. Uruchom test. W górnym okienku **podglądu wyniki testów wydajności sieci Web**wybierz żądanie usługi sieci Web. W dolnym okienku wybierz kartę **przeglądarka sieci Web** . Zostanie wyświetlony kod XML, który jest zwracany przez usługę sieci Web i wyniki operacji.
+1. Uruchom test. W górnym okienku **podglądu wyniki testów wydajności sieci Web** wybierz żądanie usługi sieci Web. W dolnym okienku wybierz kartę **przeglądarka sieci Web** . Zostanie wyświetlony kod XML, który jest zwracany przez usługę sieci Web i wyniki operacji.
 
    Wyszukaj wyniki żądania usługi sieci Web.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Tworzenie niestandardowych kodów i wtyczek dla testów obciążeniowych](../test/create-custom-code-and-plug-ins-for-load-tests.md)

@@ -1,5 +1,7 @@
 ---
 title: Anatomia kodowanego testu interfejsu użytkownika
+description: Informacje o plikach, które są dodawane do rozwiązania kodowanego testu interfejsu użytkownika podczas tworzenia kodowanego testu interfejsu użytkownika.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7100c6bb5c1dfb4c7d336ec110cf532f1f998d4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aeaa2231c62487ec366aa561ea199cf63f3c6792
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591206"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441797"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Anatomia kodowanego testu interfejsu użytkownika
 
@@ -266,7 +268,7 @@ Jest to plik XML, który reprezentuje strukturę rejestrowania kodowanego testu 
 
 Plik *UIMap. UITest* nie jest bezpośrednio edytowalny. Można jednak użyć kodowanego konstruktora interfejsu użytkownika, aby zmodyfikować test, który automatycznie modyfikuje plik *UIMap. UITest* i plik [*UIMap.Designer.cs*](#UIMapDesignerFile) .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls>

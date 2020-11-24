@@ -1,5 +1,6 @@
 ---
 title: Napraw parametry dynamiczne, które nie są wykrywalne (test wydajności sieci Web)
+description: Dowiedz się, jak Rejestrator testów wydajności sieci Web i aparat odtwarzania automatycznie obsługują najczęściej używane typy parametrów dynamicznych.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -11,12 +12,12 @@ ms.assetid: 92dff25c-36ee-4135-acdd-315c4962fa11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cad94040997d8cead6be799bee6b2bc17aab699c
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 713d711847d798c617074d2d620e09f914c1a147
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810643"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442719"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Naprawa niewykrywalnych parametrów dynamicznych w teście wydajności sieci Web
 
@@ -119,7 +120,7 @@ Aby przedstawić zarówno wykrywalny, jak i niewykrywalny parametr dynamiczny, u
 
 13. Zapisz projekt.
 
-14. W **Eksplorator rozwiązań**ustaw wartość *QueryString. aspx* jako stronę początkową.
+14. W **Eksplorator rozwiązań** ustaw wartość *QueryString. aspx* jako stronę początkową.
 
      ![Ustaw stronę początkową w ciągu QueryString. aspx](../test/media/web_test_dynamicparameter_setstartpage.png)
 

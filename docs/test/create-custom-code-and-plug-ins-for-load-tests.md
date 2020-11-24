@@ -1,5 +1,7 @@
 ---
 title: Tworzenie niestandardowych kodów i wtyczek dla testów obciążeniowych
+description: Dowiedz się, jak za pomocą interfejsu API testu obciążenia i interfejsu API testów wydajności sieci Web utworzyć niestandardowe wtyczki dla testów, które mają zostać rozszerzone do wbudowanej funkcji.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 f1_keywords:
@@ -11,12 +13,12 @@ ms.assetid: 0c0fcc99-673b-4ea0-a268-0475f66e5cb6
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3c060dc9bd50c6dc49777e9114eadae4d6267d92
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: db91f8f5ccf86d67d01bb56a3a42b66757320500
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288679"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442667"
 ---
 # <a name="create-custom-code-and-plug-ins-for-load-tests"></a>Tworzenie niestandardowych kodów i wtyczek dla testów obciążeniowych
 
@@ -45,7 +47,7 @@ Niestandardowa Wtyczka używa kodu, który można napisać i dołączyć do test
 
 <xref:Microsoft.VisualStudio.TestTools.LoadTesting>
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Analizowanie wyników testów obciążenia](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Generowanie i uruchamianie kodowanego testu wydajności sieci Web](../test/generate-and-run-a-coded-web-performance-test.md)

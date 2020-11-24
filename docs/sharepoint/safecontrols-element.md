@@ -1,5 +1,7 @@
 ---
 title: SafeControls — — element | Microsoft Docs
+description: Uzyskaj informacje na temat elementu SafeControls —, który zawiera kolekcję kontrolek ASPX lub składników Web Part oznaczonych jako bezpieczne dla dostępu na stronie ASPX witryny programu SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e840f0040cf94fea408615525358580d207f07c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c3423d1b6efd106ef7f947bd8573dcd1aa548a66
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547904"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440678"
 ---
 # <a name="safecontrols-element"></a>SafeControls — element
   Kolekcja formantów ASPX i składniki Web Part, które są wyznaczeni jako bezpieczne dla każdego użytkownika, który ma dostęp do dowolnej strony ASPX w witrynie programu SharePoint.
@@ -55,11 +57,11 @@ ms.locfileid: "85547904"
 
 |Właściwość|Wartość|
 |-|-|
-|**Przestrzeń nazw**|http: \/ \/ schemas.Microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**Obszaru**|http: \/ \/ schemas.Microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
 |**Nazwa schematu**|Schemat elementu projektu programu SharePoint|
 |**Plik walidacji**|ProjectItemModelSchema. xsd|
 |**Może być puste**|Nie|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Odwołanie do schematu elementu projektu programu SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)
 - [Udostępnianie informacji o pakowaniu i wdrożeniu w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)

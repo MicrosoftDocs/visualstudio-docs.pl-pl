@@ -1,5 +1,7 @@
 ---
 title: Włącz testowanie kodowanego interfejsu użytkownika dla Twoich kontrolek
+description: Dowiedz się, jak zaimplementować obsługę kodowanej struktury testowania interfejsu użytkownika, aby formant był bardziej weryfikowalne.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: d94c68a660201b0a8767b1405fcd4399cdf6d660
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b36b7e2469aa5d4ef6e11cff2580e0fb0c8ff03
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288692"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441407"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Włącz testowanie kodowanego interfejsu użytkownika dla kontrolek
 
@@ -196,7 +198,7 @@ Dostawca właściwości i filtr akcji są zaimplementowane w pakiecie rozszerzen
 
 6. W konstruktorze kodowanego testu interfejsu użytkownika utwórz potwierdzenia do korzystania z dostawcy właściwości i zarejestruj akcje, aby wykonać filtry akcji.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - <xref:System.Windows.Forms.AccessibleObject>
 - [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)

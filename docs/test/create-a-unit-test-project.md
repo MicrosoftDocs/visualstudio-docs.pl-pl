@@ -1,5 +1,7 @@
 ---
 title: Tworzenie projektu testu jednostkowego
+description: Dowiedz się, jak utworzyć projekt testu jednostkowego. Projekt testowy może być w tym samym rozwiązaniu co kod produkcyjny lub może znajdować się w osobnym rozwiązaniu.
+ms.custom: SEO-VS-2020
 ms.date: 01/29/2019
 ms.topic: how-to
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: ffa19fb9dc49d6286ef3f54c51d89043445f18ba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f0d438c05d3c9608c11903c02119d7c3e267a48b
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288718"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441849"
 ---
 # <a name="create-a-unit-test-project"></a>Tworzenie projektu testu jednostkowego
 
@@ -23,7 +25,7 @@ Testy jednostkowe często duplikują strukturę testowanego kodu. Na przykład p
 
 ## <a name="to-create-a-unit-test-project"></a>Aby utworzyć projekt testu jednostkowego
 
-1. W menu **plik** wybierz polecenie **Nowy**  >  **projekt**lub naciśnij **klawisze CTRL** + **SHIFT** + **N**.
+1. W menu **plik** wybierz polecenie **Nowy**  >  **projekt** lub naciśnij **klawisze CTRL** + **SHIFT** + **N**.
 
 ::: moniker range="vs-2017"
 
@@ -51,7 +53,7 @@ Testy jednostkowe często duplikują strukturę testowanego kodu. Na przykład p
 
    2. W menu **projekt** wybierz polecenie **Dodaj odwołanie**.
 
-   3. W **Menedżerze odwołań**wybierz węzeł **rozwiązania** w obszarze **projekty**. Wybierz projekt kodu, który chcesz przetestować, a następnie wybierz przycisk **OK**.
+   3. W **Menedżerze odwołań** wybierz węzeł **rozwiązania** w obszarze **projekty**. Wybierz projekt kodu, który chcesz przetestować, a następnie wybierz przycisk **OK**.
 
    Jeśli kod, który ma zostać przetestowany, znajduje się w innej lokalizacji, zobacz [Zarządzanie odwołaniami w projekcie](../ide/managing-references-in-a-project.md) , aby uzyskać informacje na temat dodawania odwołania.
 
