@@ -1,5 +1,7 @@
 ---
 title: Debuguj aplikację SharePoint przy użyciu IntelliTrace
+description: Użyj IntelliTrace, aby łatwiej debugować i naprawiać aplikacje programu SharePoint. Utwórz i Dodaj kod do odbiorcy funkcji. Przetestuj projekt. Zbieraj dane IntelliTrace.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 041a110ee39ae7711756b8d689bdf68ae2368caf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4c7ab11dbe213208a2e8f5e39c3af2d20b79f5cb
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015753"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598487"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Przewodnik: debugowanie aplikacji SharePoint przy użyciu IntelliTrace
 
@@ -65,7 +67,7 @@ Najpierw należy utworzyć pusty projekt programu SharePoint, który ma odbiorc�
 
      IntelliTrace działa tylko na rozwiązaniach farmy.
 
-3. W **Eksplorator rozwiązań**Otwórz menu skrótów dla węzła **funkcje** , a następnie wybierz polecenie **Dodaj funkcję**.
+3. W **Eksplorator rozwiązań** Otwórz menu skrótów dla węzła **funkcje** , a następnie wybierz polecenie **Dodaj funkcję**.
 
      Zostanie wyświetlona *Funkcja Feature1.*
 
@@ -264,9 +266,9 @@ Teraz, gdy kod jest dodawany do odbiorcy funkcji, a moduł zbierający dane jest
 
    1. W menu **Akcje witryny** w programie SharePoint wybierz pozycję **Ustawienia witryny**.
 
-   2. W obszarze **Akcje lokacji**wybierz łącze **Zarządzaj funkcjami lokacji** .
+   2. W obszarze **Akcje lokacji** wybierz łącze **Zarządzaj funkcjami lokacji** .
 
-   3. Obok pozycji **IntelliTraceTest Feature1**wybierz przycisk **Dezaktywuj** .
+   3. Obok pozycji **IntelliTraceTest Feature1** wybierz przycisk **Dezaktywuj** .
 
    4. Na stronie ostrzeżenie wybierz link **Dezaktywuj tę funkcję** .
 
@@ -285,9 +287,9 @@ W przypadku zainstalowania Microsoft Monitoring Agent w systemie, w którym dzia
 
    1. W menu **Akcje witryny** w programie SharePoint wybierz pozycję **Ustawienia witryny**.
 
-   2. W obszarze **Akcje lokacji**wybierz łącze **Zarządzaj funkcjami lokacji** .
+   2. W obszarze **Akcje lokacji** wybierz łącze **Zarządzaj funkcjami lokacji** .
 
-   3. Obok pozycji **IntelliTraceTest Feature1**wybierz przycisk **Dezaktywuj** .
+   3. Obok pozycji **IntelliTraceTest Feature1** wybierz przycisk **Dezaktywuj** .
 
    4. Na stronie ostrzeżenie wybierz link **Dezaktywuj tę funkcję** .
 
@@ -319,9 +321,9 @@ Teraz możesz wyświetlić plik dziennika IntelliTrace w programie Visual Studio
 
     1. W menu **Akcje witryny** w programie SharePoint wybierz pozycję **Ustawienia witryny**.
 
-    2. W obszarze **Akcje lokacji**wybierz łącze **Zarządzaj funkcjami lokacji** .
+    2. W obszarze **Akcje lokacji** wybierz łącze **Zarządzaj funkcjami lokacji** .
 
-    3. Obok pozycji **IntelliTraceTest Feature1**wybierz przycisk **Dezaktywuj** .
+    3. Obok pozycji **IntelliTraceTest Feature1** wybierz przycisk **Dezaktywuj** .
 
     4. Na stronie ostrzeżenie wybierz link **Dezaktywuj tę funkcję** .
 
@@ -329,7 +331,7 @@ Teraz możesz wyświetlić plik dziennika IntelliTrace w programie Visual Studio
 
      Kod jest teraz uruchamiany prawidłowo.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Weryfikowanie i debugowanie kodu programu SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md)
 - [IntelliTrace](../debugger/intellitrace.md)

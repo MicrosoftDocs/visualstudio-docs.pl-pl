@@ -1,5 +1,7 @@
 ---
 title: Narzędzia lokalizacyjne
+description: Poznaj narzędzia lokalizacyjne, które znajdują się w programie Visual Studio, oraz sposób ich używania do tworzenia zlokalizowanych aplikacji w wielu językach.
+ms.custom: SEO-VS-2020
 ms.date: 02/15/2019
 ms.topic: reference
 helpviewer_keywords:
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eebdccf44580442b87e3d31e33ddcd7052838306
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 65c7a82488fea8fc12e6d5db838818269add0181
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810904"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597447"
 ---
 # <a name="develop-globalized-and-localized-apps"></a>Opracowywanie aplikacji globalnych i zlokalizowanych
 
@@ -48,7 +50,7 @@ Za pomocą programu Visual Studio można tworzyć aplikacje, które prawidłowo 
 > [!NOTE]
 > Aplikacje konsolowe nie obejmują obsługi tekstu w językach dwukierunkowych. Jest to wynikiem działania systemu Windows z aplikacjami konsolowymi.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Obsługa języków dwukierunkowych w programie Visual Studio](use-bidirectional-languages.md)
 - [Globalizacja i lokalizowanie aplikacji platformy .NET](/dotnet/standard/globalization-localization/)

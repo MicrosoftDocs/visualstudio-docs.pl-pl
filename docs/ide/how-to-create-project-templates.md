@@ -1,5 +1,7 @@
 ---
 title: Tworzenie szablonów projektu
+description: Dowiedz się, jak używać Kreatora eksportu szablonów i innych metod tworzenia szablonów projektu w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: how-to
 f1_keywords:
@@ -9,12 +11,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: e6f168244971a348cdb7938af463538d0fa2acaf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9030a88e67c90fab870613d71d0fe63992166222
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284389"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597187"
 ---
 # <a name="how-to-create-project-templates"></a>Instrukcje: Tworzenie szablonów projektu
 
@@ -41,7 +43,7 @@ W tym temacie pokazano, jak utworzyć szablon przy użyciu **Kreatora eksportu s
 
    Projekt zostanie wyeksportowany do pliku *zip* i umieszczony w określonej lokalizacji wyjściowej, a w przypadku wybrania zaimportowany do programu Visual Studio.
 
-Aby znaleźć szablon w oknie dialogowym **Nowy projekt** , rozwiń węzeł **zainstalowane** , a następnie rozwiń kategorię odpowiadającą `ProjectType` elementowi w pliku *. vstemplate* . Na przykład plik *. vstemplate* , który zawiera `<ProjectType>CSharp</ProjectType>` Domyślnie pojawia się w obszarze **zainstalowane**środowisko  >  **Visual C#**. Szablon można organizować w podkatalogu typu projektu po prostu przez utworzenie folderu w tym katalogu i umieszczenie w nim pliku *zip* szablonu. Aby uzyskać więcej informacji, zobacz [How to: Lokalizowanie i organizowanie szablonów](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Aby znaleźć szablon w oknie dialogowym **Nowy projekt** , rozwiń węzeł **zainstalowane** , a następnie rozwiń kategorię odpowiadającą `ProjectType` elementowi w pliku *. vstemplate* . Na przykład plik *. vstemplate* , który zawiera `<ProjectType>CSharp</ProjectType>` Domyślnie pojawia się w obszarze **zainstalowane** środowisko  >  **Visual C#**. Szablon można organizować w podkatalogu typu projektu po prostu przez utworzenie folderu w tym katalogu i umieszczenie w nim pliku *zip* szablonu. Aby uzyskać więcej informacji, zobacz [How to: Lokalizowanie i organizowanie szablonów](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ::: moniker-end
 
@@ -61,7 +63,7 @@ Szablony projektów można tworzyć ręcznie, zbierając pliki stanowiące proje
 
 Jeśli masz zainstalowany zestaw Visual Studio SDK, możesz otoczyć gotowy szablon w pliku VSIX do wdrożenia przy użyciu szablonu **projektu VSIX** . Aby uzyskać więcej informacji, zobacz Rozpoczynanie [pracy z szablonem projektu VSIX](../extensibility/getting-started-with-the-vsix-project-template.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
 - [Instrukcje: Tworzenie szablonów elementów](../ide/how-to-create-item-templates.md)

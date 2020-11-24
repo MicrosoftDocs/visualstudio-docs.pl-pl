@@ -1,5 +1,7 @@
 ---
 title: Rozpowszechnianie fragmentów kodu jako rozszerzenia
+description: Dowiedz się, jak za pomocą Menedżera fragmentów kodu dystrybuować fragmenty kodu do innych deweloperów.
+ms.custom: SEO-VS-2020
 ms.date: 03/21/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c283d5ca29b67e772df2a0bb2e25dee70cd63fd3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17f477fe2d02a43cef77358e862cfdf80a079ba5
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284376"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597174"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Instrukcje: dystrybuowanie fragmentów kodu
 
@@ -63,7 +65,7 @@ Ta procedura spowoduje użycie tego samego fragmentu kodu Hello world, który zo
 
 ### <a name="set-up-the-directory-structure"></a>Konfigurowanie struktury katalogów
 
-1. W **Eksplorator rozwiązań**wybierz węzeł projektu, a następnie Dodaj folder, który ma nazwę, której fragment ma mieć w programie **fragmentów kodu**. W takim przypadku powinna być **HelloWorldVB**.
+1. W **Eksplorator rozwiązań** wybierz węzeł projektu, a następnie Dodaj folder, który ma nazwę, której fragment ma mieć w programie **fragmentów kodu**. W takim przypadku powinna być **HelloWorldVB**.
 
 2. Przenieś plik *fragmentu kodu* do folderu *HelloWorldVB* .
 
@@ -73,13 +75,13 @@ Ta procedura spowoduje użycie tego samego fragmentu kodu Hello world, który zo
 
 ::: moniker range="vs-2017"
 
-1. Dodaj plik tekstowy do folderu *HelloWorldVB* i nadaj mu nazwę *HelloWorldVB. pkgdef*. Ten plik jest używany do dodawania niektórych kluczy do rejestru. W takim przypadku dodaje nowy podklucz do **HKEY_CURRENT_USER klucza \software\microsoft\visualstudio\15.0\languages\codeexpansions\basic** .
+1. Dodaj plik tekstowy do folderu *HelloWorldVB* i nadaj mu nazwę *HelloWorldVB. pkgdef*. Ten plik jest używany do dodawania niektórych kluczy do rejestru. W takim przypadku dodaje nowy podklucz do klucza **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Languages\CodeExpansions\Basic** .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. Dodaj plik tekstowy do folderu *HelloWorldVB* i nadaj mu nazwę *HelloWorldVB. pkgdef*. Ten plik jest używany do dodawania niektórych kluczy do rejestru. W takim przypadku dodaje nowy podklucz do **HKEY_CURRENT_USER klucza \software\microsoft\visualstudio\16.0\languages\codeexpansions\basic** .
+1. Dodaj plik tekstowy do folderu *HelloWorldVB* i nadaj mu nazwę *HelloWorldVB. pkgdef*. Ten plik jest używany do dodawania niektórych kluczy do rejestru. W takim przypadku dodaje nowy podklucz do klucza **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Languages\CodeExpansions\Basic** .
 
 ::: moniker-end
 
@@ -101,7 +103,7 @@ Ta procedura spowoduje użycie tego samego fragmentu kodu Hello world, który zo
 
 4. Dodaj plik *. pkgdef* jako element zawartości w manifeście VSIX. W pliku *source. Extension. vsixmanifest* przejdź do karty **zasoby** , a następnie kliknij przycisk **Nowy**.
 
-5. W oknie **dialogowym Dodawanie nowego elementu zawartości** Ustaw dla **opcji Typ** **Microsoft. VisualStudio. pakietu VSPackage**, **Źródło** do **pliku w systemie plików**oraz **ścieżkę** do **HelloWorldVB. pkgdef** (która powinna pojawić się na liście rozwijanej).
+5. W oknie **dialogowym Dodawanie nowego elementu zawartości** Ustaw dla **opcji Typ** **Microsoft. VisualStudio. pakietu VSPackage**, **Źródło** do **pliku w systemie plików** oraz **ścieżkę** do **HelloWorldVB. pkgdef** (która powinna pojawić się na liście rozwijanej).
 
 ### <a name="test-the-snippet"></a>Testowanie fragmentu kodu
 
@@ -113,9 +115,9 @@ Ta procedura spowoduje użycie tego samego fragmentu kodu Hello world, który zo
 
 3. W eksperymentalnym wystąpieniu Przejdź kolejno do pozycji **Narzędzia**  >  **Wstaw fragmenty kodu Menedżer** i ustaw **Język** na **podstawowy**. Powinien być widoczny *HelloWorldVB* jako jeden z folderów i można rozwinąć folder, aby wyświetlić fragment kodu *HelloWorldVB* .
 
-4. Przetestuj fragment kodu. W eksperymentalnym wystąpieniu Otwórz projekt Visual Basic i otwórz jeden z plików kodu. Umieść kursor w dowolnym miejscu w kodzie, kliknij prawym przyciskiem myszy, a następnie w menu kontekstowym wybierz **Wstaw fragment**kodu.
+4. Przetestuj fragment kodu. W eksperymentalnym wystąpieniu Otwórz projekt Visual Basic i otwórz jeden z plików kodu. Umieść kursor w dowolnym miejscu w kodzie, kliknij prawym przyciskiem myszy, a następnie w menu kontekstowym wybierz **Wstaw fragment** kodu.
 
-5. Należy zobaczyć *HelloWorldVB* jako jeden z folderów. Kliknij go dwukrotnie. Powinien pojawić się podręczny **Wstaw fragment kodu: HelloWorldVB >** , który ma **HelloWorldVB**listy rozwijanej. Kliknij listę rozwijaną **HelloWorldVB** .
+5. Należy zobaczyć *HelloWorldVB* jako jeden z folderów. Kliknij go dwukrotnie. Powinien pojawić się podręczny **Wstaw fragment kodu: HelloWorldVB >** , który ma **HelloWorldVB** listy rozwijanej. Kliknij listę rozwijaną **HelloWorldVB** .
 
    Do pliku kodu zostanie dodany następujący wiersz:
 
@@ -123,6 +125,6 @@ Ta procedura spowoduje użycie tego samego fragmentu kodu Hello world, który zo
     Console.WriteLine("Hello, World!")
     ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Fragmenty kodu](../ide/code-snippets.md)

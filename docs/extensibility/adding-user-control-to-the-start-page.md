@@ -1,5 +1,7 @@
 ---
 title: Dodawanie kontrolki użytkownika do strony startowej | Microsoft Docs
+description: Dowiedz się, jak dodać kontrolkę użytkownika Windows Presentation Foundation (WPF) do strony Start w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 1d093ecc8afd9fe822c19c2c1f2ceb5765208865
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: fa812b477f88b03b8f0d4bdcba6c69f009ec2894
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011999"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597551"
 ---
 # <a name="add-user-control-to-the-start-page"></a>Dodawanie kontrolki użytkownika do strony początkowej
 
@@ -32,7 +34,7 @@ Najpierw Dodaj kontrolkę użytkownika Windows Presentation Foundation (WPF) do 
 
 1. Utwórz stronę początkową przy użyciu utworzonej w obszarze [Tworzenie niestandardowej strony początkowej](../extensibility/creating-a-custom-start-page.md).
 
-2. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy rozwiązanie, kliknij polecenie **Dodaj**, a następnie kliknij pozycję **Nowy projekt**.
+2. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy rozwiązanie, kliknij polecenie **Dodaj**, a następnie kliknij pozycję **Nowy projekt**.
 
 3. W lewym okienku okna dialogowego **Nowy projekt** rozwiń węzeł **Visual Basic** lub **Visual C#** , a następnie kliknij pozycję **Windows**. W środkowym okienku wybierz pozycję **Biblioteka formantów użytkownika WPF**.
 
@@ -111,7 +113,7 @@ Aby zaimplementować kontrolkę użytkownika WPF, skompiluj interfejs użytkowni
 2. Wypełnij SetButton_Click obsługi zdarzeń w następujący sposób.
 
     ```csharp
-    private void SetButton_Click(object sender, RoutedEventArgs e)
+    private void SetButton_Click(object sender, RoutedEventArgs e)
     {
         try
         {
@@ -139,7 +141,7 @@ Aby zaimplementować kontrolkę użytkownika WPF, skompiluj interfejs użytkowni
 
 Aby udostępnić tę kontrolkę projektowi strony początkowej, w pliku projektu strony początkowej Dodaj odwołanie do nowej biblioteki formantów. Następnie można dodać formant do znacznika XAML strony początkowej.
 
-1. W **Eksplorator rozwiązań**w projekcie strony początkowej kliknij prawym przyciskiem myszy pozycję **odwołania** , a następnie kliknij pozycję **Dodaj odwołanie**.
+1. W **Eksplorator rozwiązań** w projekcie strony początkowej kliknij prawym przyciskiem myszy pozycję **odwołania** , a następnie kliknij pozycję **Dodaj odwołanie**.
 
 2. Na karcie **projekty** wybierz pozycję **WebUserControl** , a następnie kliknij przycisk **OK**.
 
@@ -151,7 +153,7 @@ Aby udostępnić tę kontrolkę projektowi strony początkowej, w pliku projektu
 
 ### <a name="to-add-the-control-to-the-markup"></a>Aby dodać kontrolkę do znacznika
 
-1. W **Eksplorator rozwiązań**Otwórz plik Start Page *. XAML* .
+1. W **Eksplorator rozwiązań** Otwórz plik Start Page *. XAML* .
 
 2. W okienku **XAML** Dodaj następującą deklarację przestrzeni nazw do elementu najwyższego poziomu <xref:System.Windows.Controls.Grid> .
 
@@ -177,13 +179,13 @@ Aby udostępnić tę kontrolkę projektowi strony początkowej, w pliku projektu
 
 ## <a name="test-a-manually-created-custom-start-page"></a>Przetestuj ręcznie utworzoną niestandardową stronę początkową
 
-1. Skopiuj plik XAML i wszystkie pomocnicze pliki tekstowe lub pliki znaczników do folderu *%USERPROFILE%\My Documents\Visual Studio 2015 \ startpages \\ * .
+1. Skopiuj plik XAML i wszystkie pomocnicze pliki tekstowe lub pliki znaczników do folderu *%USERPROFILE%\My Documents\Visual Studio 2015 \ startpages \\* .
 
-2. Jeśli strona początkowa odwołuje się do dowolnych kontrolek lub typów w zestawach, które nie są zainstalowane przez program Visual Studio, skopiuj zestawy, a następnie wklej je w _folderze instalacyjnym programu Visual Studio_**\Common7\IDE\PrivateAssemblies \\ **.
+2. Jeśli strona początkowa odwołuje się do dowolnych kontrolek lub typów w zestawach, które nie są zainstalowane przez program Visual Studio, skopiuj zestawy, a następnie wklej je w _folderze instalacyjnym programu Visual Studio_**\Common7\IDE\PrivateAssemblies \\**.
 
 3. W wierszu polecenia programu Visual Studio wpisz **devenv/rootsuffix Exp** , aby otworzyć eksperymentalne wystąpienie programu Visual Studio.
 
-4. W eksperymentalnym wystąpieniu przejdź do **Tools**  >  **Options**  >  **Environment**  >  strony**startowej** Opcje narzędzia, a następnie wybierz plik XAML na liście rozwijanej **Dostosuj stronę początkową** .
+4. W eksperymentalnym wystąpieniu przejdź do **Tools**  >  **Options**  >  **Environment**  >  strony **startowej** Opcje narzędzia, a następnie wybierz plik XAML na liście rozwijanej **Dostosuj stronę początkową** .
 
 5. W menu **Widok** kliknij pozycję **Strona początkowa**.
 

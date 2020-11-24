@@ -1,5 +1,7 @@
 ---
 title: Dodawanie ostatnio używanej listy do podmenu | Microsoft Docs
+description: Dowiedz się, jak dodać listę dynamiczną zawierającą ostatnio używane polecenia menu do podmenu w zintegrowanym środowisku programistycznym (IDE) programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f73f948befc7665ecc3a40f816389bfaae8e4fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0de48e30ea20ab2f7df4e512312978e4faa3a46b
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904209"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597929"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>Dodaj ostatnio używaną listę do podmenu
 Ten przewodnik jest oparty na pokazach w oknie [Dodawanie podmenu do menu](../extensibility/adding-a-submenu-to-a-menu.md)i pokazuje, jak dodać listę dynamiczną do podmenu. Lista dynamiczna stanowi podstawę tworzenia ostatnio używanej listy (MRU).
@@ -47,7 +49,7 @@ Aby wykonać czynności opisane w tym przewodniku, należy zainstalować Visual 
 
     ```xml
     <IDSymbol name="MRUListGroup" value="0x1200"/>
-    <IDSymbol name="cmdidMRUList" value="0x0200"/>
+    <IDSymbol name="cmdidMRUList" value="0x0200"/>
     ```
 
 3. W `Groups` sekcji Dodaj zadeklarowaną grupę po istniejących wpisach grupy.
@@ -81,11 +83,11 @@ Aby wykonać czynności opisane w tym przewodniku, należy zainstalować Visual 
 
 ## <a name="filling-the-mru-list"></a>Wypełnianie listy MRU
 
-1. W *TestCommandPackageGuids.cs*Dodaj następujące wiersze po istniejących identyfikatorach poleceń w `TestCommandPackageGuids` definicji klasy.
+1. W *TestCommandPackageGuids.cs* Dodaj następujące wiersze po istniejących identyfikatorach poleceń w `TestCommandPackageGuids` definicji klasy.
 
     ```csharp
     public const string guidTestCommandPackageCmdSet = "00000000-0000-0000-0000-00000000"; // get the GUID from the .vsct file
-    public const uint cmdidMRUList = 0x200;
+    public const uint cmdidMRUList = 0x200;
     ```
 
 2. W *TestCommand.cs* Dodaj następującą instrukcję using.
@@ -147,7 +149,7 @@ Aby wykonać czynności opisane w tym przewodniku, należy zainstalować Visual 
 6. Po `InitMRUMenu` metodzie Dodaj następującą `OnMRUQueryStatus` metodę. Jest to procedura obsługi, która ustawia tekst dla każdego elementu MRU.
 
     ```csharp
-    private void OnMRUQueryStatus(object sender, EventArgs e)
+    private void OnMRUQueryStatus(object sender, EventArgs e)
     {
         OleMenuCommand menuCommand = sender as OleMenuCommand;
         if (null != menuCommand)
@@ -155,7 +157,7 @@ Aby wykonać czynności opisane w tym przewodniku, należy zainstalować Visual 
             int MRUItemIndex = menuCommand.CommandID.ID - this.baseMRUID;
             if (MRUItemIndex >= 0 && MRUItemIndex < this.mruList.Count)
             {
-                menuCommand.Text = this.mruList[MRUItemIndex] as string;
+                menuCommand.Text = this.mruList[MRUItemIndex] as string;
             }
         }
     }
@@ -164,7 +166,7 @@ Aby wykonać czynności opisane w tym przewodniku, należy zainstalować Visual 
 7. Po `OnMRUQueryStatus` metodzie Dodaj następującą `OnMRUExec` metodę. Jest to procedura obsługi wybierania elementu MRU. Ta metoda przenosi wybrany element na początek listy, a następnie wyświetla wybrany element w oknie komunikatu.
 
     ```csharp
-    private void OnMRUExec(object sender, EventArgs e)
+    private void OnMRUExec(object sender, EventArgs e)
     {
         var menuCommand = sender as OleMenuCommand;
         if (null != menuCommand)
@@ -172,7 +174,7 @@ Aby wykonać czynności opisane w tym przewodniku, należy zainstalować Visual 
             int MRUItemIndex = menuCommand.CommandID.ID - this.baseMRUID;
             if (MRUItemIndex >= 0 && MRUItemIndex < this.mruList.Count)
             {
-                string selection = this.mruList[MRUItemIndex] as string;
+                string selection = this.mruList[MRUItemIndex] as string;
                 for (int i = MRUItemIndex; i > 0; i--)
                 {
                     this.mruList[i] = this.mruList[i - 1];
@@ -199,5 +201,5 @@ Aby wykonać czynności opisane w tym przewodniku, należy zainstalować Visual 
 
 4. Ponownie Otwórz podmenu. Zauważ, że **element 3** znajduje się teraz w górnej części listy, a pozostałe elementy zostały wypchnięte do jednego stanowiska. Kliknij ponownie **element Item 3** i zwróć uwagę, że w oknie komunikatu nadal jest wyświetlany **wybrany element 3**, który wskazuje, że tekst został prawidłowo przeniesiony do nowej pozycji i z etykietą polecenia.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dynamiczne dodawanie elementów menu](../extensibility/dynamically-adding-menu-items.md)

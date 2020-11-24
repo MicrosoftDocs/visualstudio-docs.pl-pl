@@ -1,5 +1,7 @@
 ---
 title: Zarządzanie zasobami aplikacji (.NET)
+description: Dowiedz się, jak zarządzać plikami zasobów aplikacji, które nie są częścią procesu kompilacji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1815b0efeebf98587fe07384ea0b2c8d1f5e1d90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4707a3e33279ead458566bc01ed2eed8c67355cf
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88992371"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596745"
 ---
 # <a name="manage-application-resources-net"></a>Zarządzanie zasobami aplikacji (.NET)
 
@@ -38,7 +40,7 @@ Aby uzyskać więcej informacji na temat zasobów w aplikacjach .NET, zobacz [za
 W projekcie kodu zarządzanego Otwórz okno właściwości projektu. Aby otworzyć okno właściwości, można wykonać jedną z:
 
 - Kliknij prawym przyciskiem myszy węzeł projektu w **Eksplorator rozwiązań** i wybierz polecenie **Właściwości**
-- Wpisywanie **właściwości projektu** w **Ctrl** + polu wyszukiwania Ctrl**Q**
+- Wpisywanie **właściwości projektu** w **Ctrl** + polu wyszukiwania Ctrl **Q**
 - Wybieranie **klawisza** + **Enter** w **Eksplorator rozwiązań**
 
 Wybierz kartę **zasoby** . Plik *. resx* można dodać, jeśli projekt nie zawiera już jednego z nich, dodawać i usuwać różne rodzaje zasobów oraz modyfikować istniejące zasoby.
@@ -50,7 +52,7 @@ Zasoby są zarządzane inaczej w projektach .NET niż w innych typach projektów
 - Aplikacje platforma uniwersalna systemu Windows (platformy UWP), zobacz [zasoby aplikacji i system zarządzania zasobami](/windows/uwp/app-resources/)
 - Projekty języka C++, zobacz [Work with pliki zasobów](/cpp/windows/working-with-resource-files) i [instrukcje: Tworzenie zasobu](/cpp/windows/how-to-create-a-resource)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Zasoby w aplikacjach .NET (.NET Framework)](/dotnet/framework/resources/index)
 - [Zarządzanie zasobami aplikacji (Visual Studio dla komputerów Mac)](/visualstudio/mac/managing-app-resources)

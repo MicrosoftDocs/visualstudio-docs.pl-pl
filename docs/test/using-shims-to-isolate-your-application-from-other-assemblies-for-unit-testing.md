@@ -1,5 +1,6 @@
 ---
 title: Izolowanie aplikacji za pomocą podkładki (testy jednostkowe)
+description: Dowiedz się, jak używać typów podkładki do przewrócenia wywołań do określonych metod w kodzie, który piszesz jako część testu. Podkładka może zwracać spójne wyniki przy każdym wywołaniu.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 13a5c8c4058fc051cf7ec0093632220c757604f0
-ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
+ms.openlocfilehash: 0ce89246d227d747fee2d3a02484855257f016f8
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93325931"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598214"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>Używanie podkładki do izolowania aplikacji do testów jednostkowych
 
@@ -67,10 +68,10 @@ using (ShimsContext.Create()) {
 
 Najpierw Dodaj zestaw elementów sztucznych:
 
-1. W **Eksplorator rozwiązań** , 
+1. W **Eksplorator rozwiązań**, 
     - W przypadku starszego projektu .NET Framework (styl inny niż zestaw SDK) rozwiń węzeł **odwołania** projektu testów jednostkowych.
     ::: moniker range=">=vs-2019"
-    - W przypadku projektu w stylu zestawu SDK .NET Framework lub .NET Core rozwiń węzeł **zależności** , aby znaleźć zestaw, który ma zostać sfałszowany w ramach **zestawów** , **projektów** lub **pakietów**.
+    - W przypadku projektu w stylu zestawu SDK .NET Framework lub .NET Core rozwiń węzeł **zależności** , aby znaleźć zestaw, który ma zostać sfałszowany w ramach **zestawów**, **projektów** lub **pakietów**.
     ::: moniker-end
     - Jeśli pracujesz w Visual Basic, wybierz pozycję **Pokaż wszystkie pliki** na **Eksplorator rozwiązań** pasku narzędzi, aby wyświetlić węzeł **odwołania** .
 
@@ -96,7 +97,7 @@ Należy prawidłowo usunąć każdy kontekst podkładek. Jako zasada elementu kc
 
 ### <a name="write-a-test-with-shims"></a>Napisz test z podkładkami
 
-W kodzie testowym Wstaw *deprezentację* dla metody, która ma zostać sfałszowana. Przykład:
+W kodzie testowym Wstaw *deprezentację* dla metody, która ma zostać sfałszowana. Na przykład:
 
 ```csharp
 [TestClass]

@@ -1,5 +1,7 @@
 ---
 title: Dodawanie menu skrótów w oknie narzędzi | Microsoft Docs
+description: Dowiedz się, jak dodać menu skrótów do okna narzędzia w programie Visual Studio, które pojawia się, gdy przycisk, pole tekstowe lub tło okna jest kliknięte prawym przyciskiem myszy.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa8d6f5c47289e66a51653e39d31890f09e8ceb2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2e14d948bf5d4b637002ca1f2ec8be37b64dc22b
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904188"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597876"
 ---
 # <a name="add-a-shortcut-menu-in-a-tool-window"></a>Dodawanie menu skrótów w oknie narzędzi
 W tym instruktażu jest umieszczane menu skrótów w oknie narzędzi. Menu skrótów to menu, które pojawia się po kliknięciu prawym przyciskiem myszy przycisku, pola tekstowego lub tła okna. Polecenia w menu skrótów zachowują się tak samo jak polecenia w innych menu lub paskach narzędzi. Aby obsłużyć menu skrótów, określ je w pliku *. vsct* i Wyświetl go w odpowiedzi na kliknięcie prawym przyciskiem myszy.
@@ -39,7 +41,7 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
 ## <a name="specifying-the-shortcut-menu"></a>Określanie menu skrótów
 Menu skrótów, takie jak pokazane w tym instruktażu, umożliwia użytkownikowi wybranie z listy kolorów, które są używane do wypełnienia tła okna narzędzi.
 
-1. W *ShortcutMenuPackage. vsct*Znajdź w elemencie GuidSymbol o nazwie guidShortcutMenuPackageCmdSet i Zadeklaruj menu skrótów, grupę menu skrótów i opcje menu. Element GuidSymbol powinien teraz wyglądać następująco:
+1. W *ShortcutMenuPackage. vsct* Znajdź w elemencie GuidSymbol o nazwie guidShortcutMenuPackageCmdSet i Zadeklaruj menu skrótów, grupę menu skrótów i opcje menu. Element GuidSymbol powinien teraz wyglądać następująco:
 
     ```xml
     <GuidSymbol name="guidShortcutMenuPackageCmdSet" value="{00000000-0000-0000-0000-0000}"> // your GUID here
@@ -116,10 +118,10 @@ Menu skrótów, takie jak pokazane w tym instruktażu, umożliwia użytkownikowi
 
     ```csharp
     public const string guidShortcutMenuPackageCmdSet = "00000000-0000-0000-0000-00000000"; // your GUID will differ
-    public const int ColorMenu = 0x1000;
-    public const int cmdidRed = 0x102;
-    public const int cmdidYellow = 0x103;
-    public const int cmdidBlue = 0x104;
+    public const int ColorMenu = 0x1000;
+    public const int cmdidRed = 0x102;
+    public const int cmdidYellow = 0x103;
+    public const int cmdidBlue = 0x104;
     ```
 
     Są to te same identyfikatory poleceń, które są zdefiniowane w sekcji symboli w pliku *ShortcutMenuPackage. vsct* . Grupa kontekstowa nie została tutaj uwzględniona, ponieważ jest wymagana tylko w pliku *. vsct* .
@@ -127,9 +129,9 @@ Menu skrótów, takie jak pokazane w tym instruktażu, umożliwia użytkownikowi
 ## <a name="implementing-the-shortcut-menu"></a>Implementowanie menu skrótów
  Ta sekcja implementuje menu skrótów i jego poleceń.
 
-1. W programie *ShortcutMenu.cs*okno narzędzi może pobrać usługę poleceń menu, ale kontrolka, która zawiera, nie może. Poniższe kroki pokazują, jak udostępnić usługę poleceń menu dla kontrolki użytkownika.
+1. W programie *ShortcutMenu.cs* okno narzędzi może pobrać usługę poleceń menu, ale kontrolka, która zawiera, nie może. Poniższe kroki pokazują, jak udostępnić usługę poleceń menu dla kontrolki użytkownika.
 
-2. W *ShortcutMenu.cs*Dodaj następujące dyrektywy using:
+2. W *ShortcutMenu.cs* Dodaj następujące dyrektywy using:
 
     ```csharp
     using Microsoft.VisualStudio.Shell;
@@ -157,7 +159,7 @@ Menu skrótów, takie jak pokazane w tym instruktażu, umożliwia użytkownikowi
     }
     ```
 
-5. W *ShortcutMenuControl.XAML.cs*Dodaj pole private dla usługi poleceń menu i Zmień konstruktora formantów, aby przetworzyć usługę poleceń menu. Następnie użyj usługi poleceń menu, aby dodać polecenia menu kontekstowego. Konstruktor ShortcutMenuControl powinien teraz wyglądać podobnie do następującego kodu. Program obsługi poleceń zostanie zdefiniowany później.
+5. W *ShortcutMenuControl.XAML.cs* Dodaj pole private dla usługi poleceń menu i Zmień konstruktora formantów, aby przetworzyć usługę poleceń menu. Następnie użyj usługi poleceń menu, aby dodać polecenia menu kontekstowego. Konstruktor ShortcutMenuControl powinien teraz wyglądać podobnie do następującego kodu. Program obsługi poleceń zostanie zdefiniowany później.
 
     ```csharp
     public ShortcutMenuControl(OleMenuCommandService service)
@@ -183,7 +185,7 @@ Menu skrótów, takie jak pokazane w tym instruktażu, umożliwia użytkownikowi
     }
     ```
 
-6. W *ShortcutMenuControl. XAML*Dodaj <xref:System.Windows.UIElement.MouseRightButtonDown> zdarzenie do elementu najwyższego poziomu <xref:System.Windows.Controls.UserControl> . Plik XAML powinien teraz wyglądać następująco:
+6. W *ShortcutMenuControl. XAML* Dodaj <xref:System.Windows.UIElement.MouseRightButtonDown> zdarzenie do elementu najwyższego poziomu <xref:System.Windows.Controls.UserControl> . Plik XAML powinien teraz wyglądać następująco:
 
     ```vb
     <UserControl x:Class="TWShortcutMenu.ShortcutMenuControl"
@@ -208,7 +210,7 @@ Menu skrótów, takie jak pokazane w tym instruktażu, umożliwia użytkownikowi
 7. W *ShortcutMenuControl.XAML.cs*, Dodaj element zastępczy dla programu obsługi zdarzeń.
 
     ```csharp
-    private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
+    private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
     {
     . . .
     }
@@ -276,6 +278,6 @@ Menu skrótów, takie jak pokazane w tym instruktażu, umożliwia użytkownikowi
 
 4. Kliknij kolor w menu skrótów. Kolor tła okna narzędzia powinien zostać zmieniony na wybrany kolor.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)
 - [Używanie i świadczenie usług](../extensibility/using-and-providing-services.md)

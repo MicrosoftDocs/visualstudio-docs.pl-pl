@@ -1,5 +1,6 @@
 ---
 title: Dodawanie lub usuwanie importowanych przestrzeni nazw (Visual Basic)
+description: Dowiedz się, jak dodać lub usunąć zaimportowane przestrzenie nazw oraz dodać lub usunąć Importy użytkowników.
 ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.topic: how-to
@@ -15,18 +16,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff6b63db07d515e85c4c756f8d302d292c62dd50
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: c175f838389067ef7e40b07d2f3f9d15aa5df03e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047101"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597369"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Instrukcje: Dodawanie lub usuwanie importowanych przestrzeni nazw (Visual Basic)
 
 Importowanie przestrzeni nazw pozwala używać elementów z tej przestrzeni nazw w kodzie bez w pełni zakwalifikowania elementu. Na przykład jeśli chcesz uzyskać dostęp do `Create` metody w `System.Messaging.MessageQueue` klasie, możesz zaimportować `System.Messaging` przestrzeń nazw i odwołać się do elementu, który jest potrzebny w kodzie jako `MessageQueue.Create` .
 
-Importowane przestrzenie nazw są zarządzane na stronie **odwołania** **projektanta projektu** . Importy określone w tym oknie dialogowym są przesyłane bezpośrednio do kompilatora ( */Imports —* ) i stosowane do wszystkich plików w projekcie. Użyj `Imports` instrukcji, aby użyć przestrzeni nazw w jednym pliku kodu źródłowego.
+Importowane przestrzenie nazw są zarządzane na stronie **odwołania** **projektanta projektu**. Importy określone w tym oknie dialogowym są przesyłane bezpośrednio do kompilatora (*/Imports —*) i stosowane do wszystkich plików w projekcie. Użyj `Imports` instrukcji, aby użyć przestrzeni nazw w jednym pliku kodu źródłowego.
 
 ### <a name="to-add-an-imported-namespace"></a>Aby dodać zaimportowaną przestrzeń nazw
 
@@ -77,6 +78,6 @@ Jeśli później zmienisz zdanie i zdecydujesz, że naprawdę była to `EventLog
 
 5. Kliknij przycisk **Aktualizuj Import użytkowników** , aby zaktualizować przestrzeń nazw na liście **zaimportowanych przestrzeni nazw** .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Zarządzanie odwołaniami w projekcie](../ide/managing-references-in-a-project.md)

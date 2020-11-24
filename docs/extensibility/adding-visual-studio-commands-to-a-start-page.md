@@ -1,5 +1,7 @@
 ---
 title: Dodawanie poleceń programu Visual Studio do strony startowej | Microsoft Docs
+description: Dowiedz się więcej na temat różnych sposobów powiązania poleceń programu Visual Studio z obiektami XAML na niestandardowej stronie początkowej w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 13dd40006039209b06cc6a71760fdbaa240db4fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7784b077093660eb5f9c9a0bf471a8965811ba72
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740111"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597525"
 ---
 # <a name="add-visual-studio-commands-to-a-start-page"></a>Dodawanie poleceń programu Visual Studio do strony początkowej
 
@@ -110,6 +112,6 @@ Możesz użyć `vscom:` aliasu, aby powiązać polecenia programu Visual Studio 
 
  Aby zapoznać się z przykładem, zobacz [Przewodnik: zapisywanie ustawień użytkownika na stronie startowej](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Dodawanie kontrolki użytkownika do strony początkowej](../extensibility/adding-user-control-to-the-start-page.md)

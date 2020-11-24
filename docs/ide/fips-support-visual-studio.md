@@ -1,6 +1,7 @@
 ---
 title: Obsługa standardu FIPS w programie Visual Studio
 titleSuffix: ''
+description: Dowiedz się, w jaki sposób program Visual Studio obsługuje publikacje w standardowej zgodności z przetwarzaniem danych federalnym 140-2 zatwierdzony tryb operacji dla systemu Windows, platformy Azure i platformy .NET.
 ms.custom: SEO-VS-2020
 ms.date: 04/14/2020
 ms.topic: conceptual
@@ -9,18 +10,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56fe4fa2381502f01a952977fe2d506dc7792231
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: ddf7831df3a820c757120159d6d367b884d224a4
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93045520"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597486"
 ---
 # <a name="visual-studio-support-for-the-fips-140-2-approved-mode-of-operation"></a>Obsługa programu Visual Studio dla zatwierdzonego trybu działania FIPS 140-2
 
 Począwszy od [wersji 16,4](/visualstudio/releases/2019/release-notes-v16.4/), Visual Studio 2019 obsługuje publikacje Federal Information Processing Standard (FIPS) 140-2 zatwierdzone trybu operacji dla systemu Windows, platformy Azure i platformy .NET. I w [wersji 16,5](/visualstudio/releases/2019/release-notes-archive-v16.5)program Visual Studio obsługuje teraz tryb zatwierdzania FIPS 140-2 w przypadku tworzenia [aplikacji w języku C++ przeznaczonych dla zdalnego systemu Linux](/cpp/linux/set-up-fips-compliant-secure-remote-linux-development/).
 
-Aby skonfigurować tryb systemu operacyjnego FIPS 140-2 dla programu Visual Studio, [zainstaluj .NET Framework 4,8](https://dotnet.microsoft.com/download/dotnet-framework/net48) , a następnie włącz ustawienie zasady grupy, **Kryptografia systemu: Użyj zgodnych algorytmów FIPS do szyfrowania, mieszania i podpisywania** .
+Aby skonfigurować tryb systemu operacyjnego FIPS 140-2 dla programu Visual Studio, [zainstaluj .NET Framework 4,8](https://dotnet.microsoft.com/download/dotnet-framework/net48) , a następnie włącz ustawienie zasady grupy, **Kryptografia systemu: Użyj zgodnych algorytmów FIPS do szyfrowania, mieszania i podpisywania**.
 
 Aby uzyskać więcej informacji na temat zatwierdzonego trybu działania FIPS 140-2 i sposobu jego włączania, zobacz [Walidacja fips 140-2](/windows/security/threat-protection/fips-140-validation/).
 
@@ -35,6 +36,6 @@ Aby dowiedzieć się więcej o zatwierdzonym trybie obsługi trybu FIPS 140-2 dl
 - [System Windows: Kryptografia systemu i użycie algorytmów zgodnych ze standardem FIPS do szyfrowania, mieszania i podpisywania](/windows/security/threat-protection/security-policy-settings/system-cryptography-use-fips-compliant-algorithms-for-encryption-hashing-and-signing)
 - [.NET Core: zgodność ze standardem FIPS](/dotnet/standard/security/fips-compliance/)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 [Zabezpieczanie aplikacji](securing-applications.md)

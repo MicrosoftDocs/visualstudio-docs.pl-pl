@@ -1,5 +1,7 @@
 ---
 title: Dodawanie ikon do poleceń menu | Microsoft Docs
+description: Dowiedz się, jak dodać ikony do poleceń, które mogą być wyświetlane w menu i paskach narzędzi w zintegrowanym środowisku programistycznym (IDE) programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9f038dc43c1705a7cef47eb09a17607c535e307
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eaf0a089c10c850c14b9ba2f807a69eada5d04b9
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903438"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597655"
 ---
 # <a name="add-icons-to-menu-commands"></a>Dodawanie ikon do poleceń menu
 Polecenia mogą znajdować się zarówno w menu, jak i na paskach narzędzi. Na paskach narzędzi wspólne polecenie jest wyświetlane z ikoną (aby zaoszczędzić miejsce) w menu, a polecenie zazwyczaj pojawia się zarówno w przypadku ikony, jak i tekstu.
@@ -33,7 +35,7 @@ Polecenia mogą znajdować się zarówno w menu, jak i na paskach narzędzi. Na 
 
      Jeśli używasz 8-bitowej głębi kolorów, użyj karmazynowego, `RGB(255,0,255)` jako przezroczystości. Jednak 32-bitowe ikony kolorów są preferowane.
 
-2. Skopiuj plik ikony do katalogu *zasobów* w projekcie pakietu VSPackage. W **Eksplorator rozwiązań**Dodaj ikonę do projektu. (Wybierz **zasoby**, a następnie w menu kontekstowym kliknij przycisk **Dodaj**, a następnie **istniejący element**i wybierz plik ikony).
+2. Skopiuj plik ikony do katalogu *zasobów* w projekcie pakietu VSPackage. W **Eksplorator rozwiązań** Dodaj ikonę do projektu. (Wybierz **zasoby**, a następnie w menu kontekstowym kliknij przycisk **Dodaj**, a następnie **istniejący element** i wybierz plik ikony).
 
 3. Otwórz plik *. vsct* w edytorze.
 
@@ -81,6 +83,6 @@ Polecenia mogą znajdować się zarówno w menu, jak i na paskach narzędzi. Na 
 
 8. Przetestuj ikonę. Skompiluj projekt i Rozpocznij debugowanie. W eksperymentalnym wystąpieniu Znajdź polecenie. Powinna zostać wyświetlona ikona, która została dodana.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Rozszerzanie menu i poleceń](../extensibility/extending-menus-and-commands.md)
 - [Dokumentacja schematu XML VSCT](../extensibility/vsct-xml-schema-reference.md)

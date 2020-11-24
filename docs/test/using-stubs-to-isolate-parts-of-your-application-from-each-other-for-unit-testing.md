@@ -1,5 +1,7 @@
 ---
 title: Używanie wycinków do izolowania części aplikacji do testowania
+description: Dowiedz się więcej na temat szczątkowego, który jest niewielkim fragmentem kodu, który zajmuje miejsce innego składnika podczas testowania. Użycie klasy zastępczej zwraca spójne wyniki.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
@@ -10,12 +12,12 @@ author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 268cfaa0a5df458ae529f5f2d369dc157ef64548
-ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
+ms.openlocfilehash: eeb7b981dcaec97d52c24ea40476f0bec84e608e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93325970"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598565"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Stosowanie wycinków kodu do izolowania od siebie poszczególnych części aplikacji w celu przeprowadzania testów jednostkowych
 
@@ -29,7 +31,7 @@ Na diagramie składnikiem StockAnalyzer jest ten, który chcemy przetestować. Z
 
 ![Klasy Real i stub są zgodne z jednym interfejsem.](../test/media/fakesinterfaces.png)
 
-Wycinki opierają się w ten sposób na swoich możliwościach bycia strukturą kodu, dlatego zwykle są one używane w celu wyizolowania jednej strony aplikacji z innej. Aby odizolować je od innych zestawów, które nie są objęte kontrolką, takich jak *System.dll* , zwykle używaj podkładki. Zobacz [Używanie podkładki do izolowania aplikacji od innych zestawów w celu przeprowadzania testów jednostkowych](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
+Wycinki opierają się w ten sposób na swoich możliwościach bycia strukturą kodu, dlatego zwykle są one używane w celu wyizolowania jednej strony aplikacji z innej. Aby odizolować je od innych zestawów, które nie są objęte kontrolką, takich jak *System.dll*, zwykle używaj podkładki. Zobacz [Używanie podkładki do izolowania aplikacji od innych zestawów w celu przeprowadzania testów jednostkowych](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
 
 ## <a name="how-to-use-stubs"></a>Jak używać wycinków
 
@@ -147,10 +149,10 @@ Aby użyć wycinków, należy najpierw wygenerować typy wycinków z definicji i
 
 #### <a name="add-a-fakes-assembly"></a>Dodaj zestaw elementów sztucznych
 
-1. W **Eksplorator rozwiązań** , 
+1. W **Eksplorator rozwiązań**, 
     - W przypadku starszego projektu .NET Framework (styl inny niż zestaw SDK) rozwiń węzeł **odwołania** projektu testów jednostkowych.
     ::: moniker range=">=vs-2019"
-    - W przypadku projektu w stylu zestawu SDK .NET Framework lub .NET Core rozwiń węzeł **zależności** , aby znaleźć zestaw, który ma zostać sfałszowany w ramach **zestawów** , **projektów** lub **pakietów**.
+    - W przypadku projektu w stylu zestawu SDK .NET Framework lub .NET Core rozwiń węzeł **zależności** , aby znaleźć zestaw, który ma zostać sfałszowany w ramach **zestawów**, **projektów** lub **pakietów**.
     ::: moniker-end
     - Jeśli pracujesz w Visual Basic, wybierz pozycję **Pokaż wszystkie pliki** na **Eksplorator rozwiązań** pasku narzędzi, aby wyświetlić węzeł **odwołania** .
 
@@ -221,7 +223,7 @@ Wycinki kodu są generowane także dla metod pobierających i ustawiających wł
 
 ### <a name="verify-parameter-values"></a>Weryfikuj wartości parametrów
 
-Można zweryfikować, że jeżeli składnik wywołuje inny składnik, przekazuje poprawne wartości. Teraz można umieścić potwierdzenie w wycinku lub przechowywać wartość i weryfikować ją w głównej części testu. Przykład:
+Można zweryfikować, że jeżeli składnik wywołuje inny składnik, przekazuje poprawne wartości. Teraz można umieścić potwierdzenie w wycinku lub przechowywać wartość i weryfikować ją w głównej części testu. Na przykład:
 
 ```csharp
 [TestClass]
@@ -393,7 +395,7 @@ Jeśli kod był wywoływany `GetValue<T>` z jakimkolwiek innym wystąpieniem, po
 
 ### <a name="stubs-of-virtual-classes"></a>Wycinki wirtualnych klas
 
-W poprzednich przykładach wycinki zostały wygenerowane z interfejsów. Można również wygenerować wycinki z klasy, która ma składowe virtual lub abstract. Przykład:
+W poprzednich przykładach wycinki zostały wygenerowane z interfejsów. Można również wygenerować wycinki z klasy, która ma składowe virtual lub abstract. Na przykład:
 
 ```csharp
 // Base class in application under test

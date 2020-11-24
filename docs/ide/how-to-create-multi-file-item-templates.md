@@ -1,5 +1,7 @@
 ---
 title: Tworzenie szablonów elementów wieloplikowych
+description: Dowiedz się, jak utworzyć szablon elementu w programie Visual Studio, który składa się z wielu plików.
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 4a4f0c50fc0a3fe21da560356d3551ca85ef9d66
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a947d23bd7094e003bae3cfe880299bb3698d92e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284428"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597265"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Instrukcje: Tworzenie szablonów elementów wieloplikowych
 
@@ -92,7 +94,7 @@ Poniższy przykład przedstawia szablon Windows Forms. Po utworzeniu elementu na
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
 - [Instrukcje: Tworzenie szablonów elementów](../ide/how-to-create-item-templates.md)

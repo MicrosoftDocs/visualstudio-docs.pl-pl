@@ -1,5 +1,6 @@
 ---
 title: Użyj MSTest w testach jednostkowych
+description: Dowiedz się więcej o platformie MSTest, która obsługuje testy jednostkowe w programie Visual Studio. Użyj tych klas i elementów członkowskich do kodu testów jednostkowych.
 ms.custom: SEO-VS-2020
 ms.date: 03/02/2018
 ms.topic: reference
@@ -8,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 759eaded70c3e95b76123062e00072aced4ecdfa
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 21e78263e848a501d83414630de734368f90a179
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810539"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598578"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>Używanie struktury MSTest w testach jednostkowych
 
@@ -96,7 +97,7 @@ Testy jednostkowe mogą weryfikować określone zachowanie aplikacji przy użyci
 
 ## <a name="the-testcontext-class"></a>Klasa TestContext
 
-Następujące atrybuty i przypisane do nich wartości są wyświetlane w okno Właściwości programu Visual Studio dla konkretnej metody testowej. Te atrybuty nie są przeznaczone do dostępu za pomocą kodu testu jednostkowego. Zamiast tego wpływają na sposób, w jaki testy jednostkowe są używane lub uruchamiane, przez środowisko IDE programu Visual Studio lub przez aparat testowy programu Visual Studio. Na przykład niektóre z tych atrybutów są wyświetlane jako kolumny w oknie **Test Manager** i **wyniki testów** , co oznacza, że można ich użyć do grupowania i sortowania testów i wyników testów. Ten atrybut jest <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> używany do dodawania dowolnych metadanych do testów jednostkowych. Na przykład można go użyć do przechowywania nazwy przebiegu testu, który obejmuje ten test, poprzez oznaczenie testu jednostkowego za pomocą `[TestProperty("TestPass", "Accessibility")]` . Lub można go użyć do przechowywania wskaźnika rodzaju testowego `[TestProperty("TestKind", "Localization")]` . Właściwość tworzona przy użyciu tego atrybutu i wartość właściwości, którą można przypisać, są wyświetlane w oknie **Właściwości** programu Visual Studio pod **konkretnym testem**nagłówka.
+Następujące atrybuty i przypisane do nich wartości są wyświetlane w okno Właściwości programu Visual Studio dla konkretnej metody testowej. Te atrybuty nie są przeznaczone do dostępu za pomocą kodu testu jednostkowego. Zamiast tego wpływają na sposób, w jaki testy jednostkowe są używane lub uruchamiane, przez środowisko IDE programu Visual Studio lub przez aparat testowy programu Visual Studio. Na przykład niektóre z tych atrybutów są wyświetlane jako kolumny w oknie **Test Manager** i **wyniki testów** , co oznacza, że można ich użyć do grupowania i sortowania testów i wyników testów. Ten atrybut jest <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> używany do dodawania dowolnych metadanych do testów jednostkowych. Na przykład można go użyć do przechowywania nazwy przebiegu testu, który obejmuje ten test, poprzez oznaczenie testu jednostkowego za pomocą `[TestProperty("TestPass", "Accessibility")]` . Lub można go użyć do przechowywania wskaźnika rodzaju testowego `[TestProperty("TestKind", "Localization")]` . Właściwość tworzona przy użyciu tego atrybutu i wartość właściwości, którą można przypisać, są wyświetlane w oknie **Właściwości** programu Visual Studio pod **konkretnym testem** nagłówka.
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>
 
@@ -134,6 +135,6 @@ Można wygenerować test jednostkowy dla metody prywatnej. Ta generacja powoduje
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.PrivateType>
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting> Dokumentacja referencyjna

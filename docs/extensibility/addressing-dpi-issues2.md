@@ -1,5 +1,7 @@
 ---
 title: Adresowanie Issues2 DPI | Microsoft Docs
+description: Dowiedz się więcej o problemach związanych z programowaniem ekranów o wysokiej rozdzielczości, takich jak skalowanie zawartości, problemy z układem i Używanie interfejsów API skalowania DPI.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80f16c5b17a41d1f95b9bcb70e90eb8de46ad69d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 455f144a95a41ae482c1f240e1d2f87b888763a5
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740108"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598461"
 ---
 # <a name="address-dpi-issues"></a>Problemy dotyczące DPI adresów
 Rosnąca liczba urządzeń jest wysyłana z ekranami o wysokiej rozdzielczości. Ekrany te zwykle mają ponad 200 pikseli na cal (ppi). Praca z aplikacją na tych komputerach będzie wymagała skalowania zawartości w górę w celu spełnienia potrzeb związanych z wyświetlaniem zawartości przy normalnej odległości do wyświetlania na urządzeniu. Począwszy od 2014, podstawowy element docelowy dla ekranów o wysokiej gęstości jest urządzeniami przenośnymi z obsługą urządzeń przenośnych (tabletów, laptopów clamshell i telefonów).
@@ -103,7 +105,7 @@ Typowe problemy z układem można uniknąć przede wszystkim przez utrzymywanie 
 ## <a name="using-the-dpihelper-libraryclass-to-scale-images-and-layout"></a>Używanie biblioteki/klasy DPIHelper do skalowania obrazów i układu
 Biblioteka pomocnika DPI programu Visual Studio jest dostępna w natywnych i zarządzanych formularzach i może być używana poza powłoką programu Visual Studio przez inne aplikacje.
 
-Aby skorzystać z biblioteki, przejdź do [przykładów rozszerzalności programu Visual Studio VSSDK](https://github.com/Microsoft/VSSDK-Extensibility-Samples) i Sklonuj przykład o wysokiej DPI_Images_Icons.
+Aby użyć biblioteki, przejdź do [przykładów rozszerzalności programu Visual Studio VSSDK](https://github.com/Microsoft/VSSDK-Extensibility-Samples) i sklonuj przykład High-DPI_Images_Icons.
 
 W polu pliki źródłowe Dołącz *VsUIDpiHelper. h* i Wywołaj statyczne funkcje `VsUI::DpiHelper` klasy:
 
@@ -126,7 +128,7 @@ Aby uzyskać dostęp do funkcji pomocnika DPI z kodu zarządzanego, który będz
     <Reference Include="Microsoft.VisualStudio.Shell.14.0.dll" />
     ```
 
-- Upewnij się, że projekt zawiera odwołania do **System. Windows. Forms**, **'presentationcore**i **PresentationUI**.
+- Upewnij się, że projekt zawiera odwołania do **System. Windows. Forms**, **'presentationcore** i **PresentationUI**.
 
 - W kodzie, użyj przestrzeni nazw **Microsoft. VisualStudio. PlatformUI** i Wywołaj funkcje statyczne klasy DpiHelper. W przypadku obsługiwanych typów (punktów, rozmiarów, prostokątów itd.) dostępne są funkcje rozszerzenia, które zwracają nowe obiekty skalowane. Na przykład:
 
@@ -141,7 +143,7 @@ Aby uzyskać dostęp do funkcji pomocnika DPI z kodu zarządzanego, który będz
 ## <a name="dealing-with-wpf-image-fuzziness-in-zoomable-ui"></a>Obsługa obrazów WPF rozmycia w interfejsie użytkownika z powiększeniami
 W programie WPF mapy bitowe są zmieniane automatycznie przez WPF dla bieżącego poziomu powiększenia DPI przy użyciu algorytmu wielosześciennego o wysokiej jakości (domyślnie), który dobrze sprawdza się w przypadku obrazów lub dużych zrzutów ekranu, ale jest nieodpowiedni dla ikon elementów menu, ponieważ wprowadza postrzegane rozmycia.
 
-Mając
+Zalecenia:
 
 - W przypadku kompozycji obrazu logo i transparentów można <xref:System.Windows.Media.BitmapScalingMode> użyć domyślnego trybu zmiany rozmiarów.
 

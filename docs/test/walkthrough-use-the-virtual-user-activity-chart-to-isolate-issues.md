@@ -1,5 +1,7 @@
 ---
 title: Używanie wykresu aktywności wirtualnego użytkownika dla testów obciążenia
+description: Dowiedz się, jak wyizolować błędy, które wystąpiły dla indywidualnych użytkowników wirtualnych, którzy uruchomili test obciążenia, za pomocą wykresu aktywności wirtualnego użytkownika.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: d1c10fb9-cfeb-4e7f-9991-2d1e1103699e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c58dd4f6e6a0c8fe1bd468053bf18c3635b1ee9d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7f87542e528b743fa59dfe82aa52a57f1a9cfa2c
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78169381"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598240"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Przewodnik: używanie wykresu aktywności wirtualnego użytkownika w celu wyizolowania problemów
 
@@ -46,7 +48,7 @@ Wykres aktywności wirtualnego użytkownika umożliwia wizualizację aktywności
 
 Uruchom test obciążenia, aby zebrać dane aktywności wirtualnego użytkownika.
 
-- W **Edytor testu obciążeniowego**wybierz przycisk **Uruchom** na pasku narzędzi. LoadTest1 zaczyna działać.
+- W **Edytor testu obciążeniowego** wybierz przycisk **Uruchom** na pasku narzędzi. LoadTest1 zaczyna działać.
 
 ## <a name="isolate-issues-in-the-virtual-user-activity-chart"></a>Izolowanie problemów na wykresie aktywności wirtualnego użytkownika
 
@@ -67,9 +69,9 @@ Po uruchomieniu testu obciążenia i zebraniu danych o aktywności użytkownika 
 
      Na osi y poziome wykresy reprezentują poszczególnych użytkowników wirtualnych. Oś x wyświetla wiersz czasu dla przebiegu testu obciążenia.
 
-3. W narzędziu **Powiększ do okresu** poniżej **wykresu aktywności wirtualnego użytkownika**Dostosuj suwaki w lewo i w prawo do momentu, aż oba zostaną zamknięte ikonie naruszenie progu. Spowoduje to zmianę skali czasu na **wykresie aktywności wirtualnego użytkownika**
+3. W narzędziu **Powiększ do okresu** poniżej **wykresu aktywności wirtualnego użytkownika** Dostosuj suwaki w lewo i w prawo do momentu, aż oba zostaną zamknięte ikonie naruszenie progu. Spowoduje to zmianę skali czasu na **wykresie aktywności wirtualnego użytkownika**
 
-4. W **legendzie szczegółów**zaznacz pole wyboru **(Wyróżnij błędy)**. Należy zauważyć, że wyróżniono użytkownika wirtualnego, który spowodował naruszenie progu.
+4. W **legendzie szczegółów** zaznacz pole wyboru **(Wyróżnij błędy)**. Należy zauważyć, że wyróżniono użytkownika wirtualnego, który spowodował naruszenie progu.
 
 5. W panelu **wyników filtru** wyczyść pola wyboru dla opcji **Pokaż udane wyniki** i **HttpError** , ale pozostaw zaznaczone pole wyboru **ValidationRuleError** .
 
@@ -103,7 +105,7 @@ Po uruchomieniu testu obciążenia i zebraniu danych o aktywności użytkownika 
 
      Aby ułatwić izolowanie problemów z wydajnością oraz błędy w testach obciążenia, można użyć różnych ustawień zarówno w **legendzie szczegółów** , jak i w panelu **wyników filtrowania** . Eksperymentuj z tymi ustawieniami oraz narzędziem **Powiększ do okresu** , aby zobaczyć, jak dane użytkownika wirtualnego są prezentowane na **wykresie aktywności wirtualnego użytkownika**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Analizowanie aktywności wirtualnego użytkownika w widoku szczegółów](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
 - [Kontrolerzy testów i agenci testowi](configure-test-agents-and-controllers-for-load-tests.md)

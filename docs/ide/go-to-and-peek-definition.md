@@ -1,5 +1,7 @@
 ---
 title: Wyświetlanie definicji typów
+description: Dowiedz się więcej na temat funkcji przejdź do definicji i wglądu w definicję, które umożliwiają łatwe wyświetlanie definicji typu lub elementu członkowskiego.
+ms.custom: SEO-VS-2020
 ms.date: 01/10/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ef13b959d4e106b451ea0cfb336835059667ce4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8fab4bae999825d7d2fb11dd232d1e271b4f62d5
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592077"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597499"
 ---
 # <a name="view-type-and-member-definitions"></a>Wyświetlanie definicji typów i elementów członkowskich
 
@@ -69,14 +71,14 @@ Na przykład, jeśli uruchomisz polecenie **Przejdź do definicji** dla <xref:Sy
 
 ### <a name="view-decompiled-source-definitions-instead-of-metadata-c"></a>Wyświetl dekompilowane Definicje źródeł zamiast metadanych (C#)
 
-Można ustawić opcję wyświetlania dekompilowanego kodu źródłowego podczas wyświetlania definicji typu C# lub elementu członkowskiego, którego kod źródłowy jest niedostępny. Aby włączyć tę funkcję, wybierz opcje **Narzędzia**  >  **Options** z paska menu. Następnie rozwiń węzeł **Edytor tekstu**  >  **C#**  >  **Zaawansowane**i wybierz opcję **Włącz nawigację do dekompilowanych źródeł**.
+Można ustawić opcję wyświetlania dekompilowanego kodu źródłowego podczas wyświetlania definicji typu C# lub elementu członkowskiego, którego kod źródłowy jest niedostępny. Aby włączyć tę funkcję, wybierz opcje **Narzędzia**  >  **Options** z paska menu. Następnie rozwiń węzeł **Edytor tekstu**  >  **C#**  >  **Zaawansowane** i wybierz opcję **Włącz nawigację do dekompilowanych źródeł**.
 
 ![Wyświetlanie dekompilowanej definicji](media/go-to-definition-decompiled-sources.png)
 
 > [!NOTE]
 > Program Visual Studio rekonstruuje treści metod przy użyciu dekompilacji ILSpy. Gdy uzyskujesz dostęp do tej funkcji po raz pierwszy, musisz wyrazić zgodę na oświadczenie prawne dotyczące licencjonowania oprogramowania i praw autorskich oraz przepisów dotyczących znaków towarowych.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Nawiguj po kodzie](../ide/navigating-code.md)
 - [Instrukcje: wyświetlanie i edytowanie kodu za pomocą definicji wglądu (Alt + F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)

@@ -1,5 +1,7 @@
 ---
 title: Tworzenie kodowanego testu interfejsu użytkownika
+description: Dowiedz się, jak używać kodowanego testu interfejsu użytkownika dla aplikacji struktury prezentacji systemu Windows i zapoznać się z rozwiązaniami dla testów z problemami dotyczącymi chronometrażu i refaktoryzacją formantów.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: f1e22a39035e5d3500f4dd45481319e1daecfa04
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f36704405776a790c3ec634856f54ee51bc23dc6
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592064"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598539"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Przewodnik: Tworzenie, edytowanie i obsługa kodowanego testu interfejsu użytkownika
 
@@ -106,7 +108,7 @@ W tym instruktażu dowiesz się, jak tworzyć, edytować i obsługiwać kodowane
 
 ## <a name="create-a-coded-ui-test-for-simplewpfapp"></a>Tworzenie kodowanego testu interfejsu użytkownika dla SimpleWPFApp
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy rozwiązanie i wybierz polecenie **Dodaj**  >  **Nowy projekt**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy rozwiązanie i wybierz polecenie **Dodaj**  >  **Nowy projekt**.
 
 2. Wyszukaj i wybierz szablon projektu **kodowanego testu interfejsu użytkownika** , a następnie wykonaj kroki do momentu utworzenia projektu.
 
@@ -160,7 +162,7 @@ W tym instruktażu dowiesz się, jak tworzyć, edytować i obsługiwać kodowane
 
 2. Z menu **kompilacja** wybierz polecenie **Kompiluj rozwiązanie**.
 
-3. W pliku *CodedUITest1.cs* Znajdź metodę **metodę CodedUITestMethod** , kliknij prawym przyciskiem myszy i wybierz polecenie **Uruchom testy**lub Uruchom test z **Eksploratora testów**.
+3. W pliku *CodedUITest1.cs* Znajdź metodę **metodę CodedUITestMethod** , kliknij prawym przyciskiem myszy i wybierz polecenie **Uruchom testy** lub Uruchom test z **Eksploratora testów**.
 
    Podczas wykonywania kodowanego przebiegu testu interfejsu użytkownika aplikacja SimpleWPFApp jest widoczna. Wykonuje ona działania, których nie było w poprzedniej procedurze. Jednak gdy test próbuje zaznaczyć pole wyboru dla kontrolki pole wyboru, okno **wyniki testów** pokazuje, że test zakończył się niepowodzeniem. Jest to spowodowane tym, że test próbuje zaznaczyć pole wyboru, ale nie wie, że formant pola wyboru jest wyłączony, dopóki pasek postępu nie zostanie ukończony do 100%. Te i podobne problemy można rozwiązać, korzystając z różnych `UITestControl.WaitForControlXXX()` metod, które są dostępne dla kodowanego testowania interfejsu użytkownika. Kolejna procedura przedstawia użycie `WaitForControlEnabled()` metody w celu rozwiązania problemu, który spowodował niepowodzenie tego testu. Aby uzyskać więcej informacji, zobacz [wykonywanie kodowanych testów interfejsu użytkownika w przypadku określonych zdarzeń podczas odtwarzania](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).
 
@@ -180,7 +182,7 @@ W tym instruktażu dowiesz się, jak tworzyć, edytować i obsługiwać kodowane
     > [!WARNING]
     > Nie należy modyfikować pliku *UIMap.Designer.cs* . Wszelkie wprowadzone zmiany kodu zostaną nadpisywane przy każdym wygenerowaniu kodu za pomocą **konstruktora kodowanego testu interfejsu użytkownika UIMap**. Jeśli trzeba zmodyfikować nagraną metodę, skopiuj ją do pliku *UIMap.cs* i zmień jej nazwę. Plik *UIMap.cs* może służyć do przesłonięcia metod i właściwości w pliku *UIMapDesigner.cs* . Musisz usunąć odwołanie do oryginalnej metody w pliku *CodedUITest.cs* i zastąpić ją nazwą metody o zmienionej nazwie.
 
-4. W **Eksplorator rozwiązań**Zlokalizuj *UIMap. UITest* w projekcie kodowanego testu interfejsu użytkownika.
+4. W **Eksplorator rozwiązań** Zlokalizuj *UIMap. UITest* w projekcie kodowanego testu interfejsu użytkownika.
 
 5. Otwórz menu skrótów dla *UIMap. UITest* i wybierz polecenie **Otwórz**.
 
@@ -245,11 +247,11 @@ W tym instruktażu dowiesz się, jak tworzyć, edytować i obsługiwać kodowane
 
 3. W menu **kompilacja** wybierz polecenie **Kompiluj rozwiązanie**.
 
-4. W **Eksploratorze testów**Uruchom **okno CodedUITestMethod1**.
+4. W **Eksploratorze testów** Uruchom **okno CodedUITestMethod1**.
 
      Test zakończy się niepowodzeniem, ponieważ w UIMap jako button1 kodowany test interfejsu użytkownika nie można znaleźć formantu przycisku, który pierwotnie był mapowany. Refaktoryzacja może w ten sposób wpłynąć na kodowane testy interfejsu użytkownika.
 
-5. W **Eksploratorze testów**w sekcji **ślad stosu** wybierz pierwsze łącze obok **UIMpa. ModifiedSimpleAppTest ()**.
+5. W **Eksploratorze testów** w sekcji **ślad stosu** wybierz pierwsze łącze obok **UIMpa. ModifiedSimpleAppTest ()**.
 
      Zostanie otwarty plik *UIMap.cs* . Punkt błędu jest wyróżniany w kodzie:
 
@@ -290,7 +292,7 @@ W tym instruktażu dowiesz się, jak tworzyć, edytować i obsługiwać kodowane
 
 9. Zamknij **UIMap — Konstruktor kodowanego testu interfejsu użytkownika**.
 
-10. W **Eksplorator rozwiązań**otwórz plik *UIMap.Designer.cs* .
+10. W **Eksplorator rozwiązań** otwórz plik *UIMap.Designer.cs* .
 
 11. W pliku *UIMap.Designer.cs* Znajdź właściwość **UIStartButton1** . Zauważ, że `SearchProperties` ustawiono `"buttonA"` :
 
@@ -325,7 +327,7 @@ W tym instruktażu dowiesz się, jak tworzyć, edytować i obsługiwać kodowane
 
 13. W menu **kompilacja** wybierz polecenie **Kompiluj rozwiązanie**.
 
-14. W **Eksploratorze testów**Uruchom **okno CodedUITestMethod1**.
+14. W **Eksploratorze testów** Uruchom **okno CodedUITestMethod1**.
 
      Tym razem kodowany test interfejsu użytkownika pomyślnie zakończy wszystkie etapy testu. W oknie **wyniki testów** zostanie wyświetlony stan **Zakończono**.
 
@@ -337,7 +339,7 @@ W tym instruktażu dowiesz się, jak tworzyć, edytować i obsługiwać kodowane
 
 [Kodowane testy interfejsu użytkownika — często zadawane pytania](https://social.msdn.microsoft.com/Forums/vsautotest/3a74dd2c-cef8-4923-abbf-7a91f489e6c4/faqs)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)
 - [Obsługiwane konfiguracje i platformy dla kodowanych testów interfejsu użytkownika i nagrań akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

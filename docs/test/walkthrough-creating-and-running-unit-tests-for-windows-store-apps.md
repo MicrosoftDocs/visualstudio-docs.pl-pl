@@ -1,5 +1,7 @@
 ---
 title: Tworzenie i uruchamianie testów jednostkowych dla aplikacji platformy UWP
+description: Dowiedz się więcej o obsłudze testów jednostkowych platforma uniwersalna systemu Windows aplikacji w programie Visual Studio. Program Visual Studio udostępnia szablony testów jednostkowych dla języków C#, Visual Basic i C++.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 ms.workload:
 - uwp
 author: mikejo5000
-ms.openlocfilehash: 4109f743caf7c62450591f78e90b92113fc4107e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fcf93dff859e2332c79b50086d0dc50d6bd304c8
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568883"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598344"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>Przewodnik: Tworzenie i uruchamianie testów jednostkowych dla aplikacji platformy UWP
 
@@ -78,11 +80,11 @@ Po wykonaniu tych kroków projekt testu jednostkowego zostanie utworzony i wyśw
 
 ## <a name="edit-the-unit-test-projects-uwp-application-manifest-file"></a>Edytuj plik manifestu aplikacji platformy UWP projektu testów jednostkowych
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy plik *Package. appxmanifest* i wybierz polecenie **Otwórz**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy plik *Package. appxmanifest* i wybierz polecenie **Otwórz**.
 
-2. W **Projektancie manifestów**wybierz kartę **możliwości** .
+2. W **Projektancie manifestów** wybierz kartę **możliwości** .
 
-3. Na liście w obszarze **możliwości**wybierz funkcje, które są potrzebne do testu jednostkowego, oraz kod, który ma być testowany. Na przykład zaznacz pole wyboru **Internet** , jeśli wymagane są testy jednostkowe i kod, który jest testowany, musi mieć możliwość uzyskania dostępu do Internetu.
+3. Na liście w obszarze **możliwości** wybierz funkcje, które są potrzebne do testu jednostkowego, oraz kod, który ma być testowany. Na przykład zaznacz pole wyboru **Internet** , jeśli wymagane są testy jednostkowe i kod, który jest testowany, musi mieć możliwość uzyskania dostępu do Internetu.
 
    > [!NOTE]
    > Wybrane możliwości powinny zawierać tylko funkcje, które są niezbędne do poprawnego działania testu jednostkowego.
@@ -106,7 +108,7 @@ Aby skompilować rozwiązanie i uruchomić test jednostkowy przy użyciu Eksplor
    > [!NOTE]
    > Należy skompilować rozwiązanie w celu zaktualizowania listy testów jednostkowych w Eksploratorze testów.
 
-3. W **Eksploratorze testów**wybierz utworzony test jednostkowy.
+3. W **Eksploratorze testów** wybierz utworzony test jednostkowy.
 
 4. Wybierz pozycję **Uruchom wszystkie**.
 
@@ -115,7 +117,7 @@ Aby skompilować rozwiązanie i uruchomić test jednostkowy przy użyciu Eksplor
    > [!TIP]
    > Można wybrać co najmniej jeden test jednostkowy wymieniony w Eksploratorze testów, a następnie kliknąć prawym przyciskiem myszy i wybrać polecenie **Uruchom wybrane testy**.
    >
-   > Ponadto możesz wybrać **debugowanie wybranych testów**, **otworzyć test**i użyć opcji **Właściwości** .
+   > Ponadto możesz wybrać **debugowanie wybranych testów**, **otworzyć test** i użyć opcji **Właściwości** .
    >
    > ![Menu kontekstowe testu jednostkowego &#45;](../test/media/unit_test_win8_unittestexplorer_contextmenu.png)
 
@@ -123,7 +125,7 @@ Aby skompilować rozwiązanie i uruchomić test jednostkowy przy użyciu Eksplor
 
    ![Test jednostkowy Eksploratora testów &#45; zakończony](../test/media/unit_test_win8_unittestexplorer_done.png)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Testowanie aplikacji platformy UWP przy użyciu programu Visual Studio](../test/unit-test-your-code.md)
 - [Kompilowanie i testowanie aplikacji platformy UWP](/azure/devops/pipelines/apps/windows/universal?tabs=vsts)

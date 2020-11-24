@@ -1,5 +1,7 @@
 ---
 title: Lokalizowanie szablonów
+description: Dowiedz się, jak lokalizować i organizować szablony projektów i elementów.
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: ecbc5421562ca79466ace0d93a16ac4e3635ddfb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 517918bf7e56381a4d4d2a36fc43f976a07c29ea
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284246"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597161"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Instrukcje: Lokalizowanie i organizowanie szablonów projektów i elementów
 
@@ -156,7 +158,7 @@ Szablony w podkategoriach można włączyć do wyświetlania w ich kategoriach n
 
 ::: moniker-end
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Dostosowywanie szablonów](../ide/customizing-project-and-item-templates.md)
 - [Odwołanie do schematu szablonu programu Visual Studio (rozszerzalność)](../extensibility/visual-studio-template-schema-reference.md)

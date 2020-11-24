@@ -1,5 +1,7 @@
 ---
 title: Tworzenie szablonów elementów
+description: Dowiedz się, jak za pomocą Kreatora eksportu szablonów utworzyć szablon elementu w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -7,12 +9,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 0a0d4122d36c0946b6c1c98ef0f1523ce35751a6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: abf058526a6ff48a37d4c7585e7deabe1decb14a
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284480"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597278"
 ---
 # <a name="how-to-create-item-templates"></a>Instrukcje: Tworzenie szablonów elementów
 
@@ -80,8 +82,8 @@ Można określić, że szablon powinien występować tylko w przypadku niektóry
 
     - Windows
     - Office
-    - baza danych
-    - Sieć Web
+    - Baza danych
+    - Internet
 
 Na przykład: `<ProjectSubType>Database</ProjectSubType>`.
 
@@ -119,7 +121,7 @@ W niektórych przypadkach może być konieczne ręczne utworzenie szablonu eleme
 
 6. Zapisz plik *. vstemplate* i zamknij go.
 
-7. W **Eksploratorze Windows**wybierz pliki, które chcesz uwzględnić w szablonie. Kliknij prawym przyciskiem myszy zaznaczenie, a następnie wybierz polecenie **Wyślij do**  >  **folderu skompresowanego (spakowanego)**. Wybrane pliki są kompresowane do pliku *zip* .
+7. W **Eksploratorze Windows** wybierz pliki, które chcesz uwzględnić w szablonie. Kliknij prawym przyciskiem myszy zaznaczenie, a następnie wybierz polecenie **Wyślij do**  >  **folderu skompresowanego (spakowanego)**. Wybrane pliki są kompresowane do pliku *zip* .
 
 ::: moniker range="vs-2017"
 
@@ -133,7 +135,7 @@ W niektórych przypadkach może być konieczne ręczne utworzenie szablonu eleme
 
 ::: moniker-end
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
 - [Instrukcje: Tworzenie szablonów elementów wieloplikowych](../ide/how-to-create-multi-file-item-templates.md)

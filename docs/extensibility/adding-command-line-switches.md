@@ -1,5 +1,7 @@
 ---
-title: Dodawanie przełączników wiersza polecenia | Microsoft Docs
+title: Dodawanie przełączników Command-Line | Microsoft Docs
+description: Dowiedz się, jak dodać przełączniki wiersza polecenia, które są stosowane do pakietu VSPackage podczas wykonywania polecenia devenv.exe.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb4abf5352ac6ad78852bd3224df0b22784470db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0eefb532380badcf917f6d512bc5b41ebb96b1d1
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903474"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597733"
 ---
 # <a name="add-command-line-switches"></a>Dodawanie przełączników wiersza polecenia
 Podczas wykonywania *devenv.exe* można dodać przełączniki wiersza polecenia, które są stosowane do pakietu VSPackage. Użyj <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> , aby zadeklarować nazwę przełącznika i jego właściwości. W tym przykładzie przełącznik przełącznika zostanie dodany dla podklasy pakietu VSPackage o nazwie **AddCommandSwitchPackage** bez argumentów i z pakietu VSPackage załadowany automatycznie.
@@ -67,9 +69,9 @@ cmdline.GetOption("MySwitch", out isPresent, out optionValue);
 
  Ponosisz odpowiedzialność za sprawdzanie przełączników wiersza polecenia przy każdym załadowaniu pakietu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>
 - [Przełączniki wiersza polecenia Devenv](../ide/reference/devenv-command-line-switches.md)
 - [Narzędzie CreatePkgDef](../extensibility/internals/createpkgdef-utility.md)
-- [. Pliki pkgdef](https://devblogs.microsoft.com/visualstudio/whats-a-pkgdef-and-why/)
+- [Pliki. pkgdef](https://devblogs.microsoft.com/visualstudio/whats-a-pkgdef-and-why/)

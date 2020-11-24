@@ -1,5 +1,7 @@
 ---
 title: Dodawanie odwołań w Menedżerze odwołań
+description: Dowiedz się, jak za pomocą okna dialogowego Menedżer odwołań dodawać odwołania do utworzonych składników i zarządzać nimi.
+ms.custom: SEO-VS-2020
 ms.date: 08/02/2019
 ms.topic: how-to
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f02dcc5f38bf8eb4acc702c5d8a1ee466a6a4a71
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4884fdc857abd524fa62bb126e7a74af48e9ca88
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87390265"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597317"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Instrukcje: Dodawanie lub usuwanie odwołań za pomocą Menedżera odwołań
 
@@ -36,7 +38,7 @@ Za pomocą okna dialogowego Menedżer odwołań można dodawać odwołania do sk
 
 W oknie dialogowym Menedżer odwołań są wyświetlane różne kategorie po lewej stronie, w zależności od typu projektu:
 
-- **Zestawy**z podgrupami **platformy** i **rozszerzeń**
+- **Zestawy** z podgrupami **platformy** i **rozszerzeń**
 
 - **Com** wyświetla listę wszystkich składników com dostępnych do odwołania
 
@@ -44,16 +46,16 @@ W oknie dialogowym Menedżer odwołań są wyświetlane różne kategorie po lew
 
 - **Projekty udostępnione**
 
-- **System Windows**z podgrupami **Core** i **Extensions** . Odwołania do zestawów SDK Windows SDK lub rozszerzeń można eksplorować przy użyciu **Przeglądarka obiektów**.
+- **System Windows** z podgrupami **Core** i **Extensions** . Odwołania do zestawów SDK Windows SDK lub rozszerzeń można eksplorować przy użyciu **Przeglądarka obiektów**.
 
-- **Przeglądaj**z **ostatnią** podgrupą
+- **Przeglądaj** z **ostatnią** podgrupą
  
     > [!NOTE]
     > Jeśli opracowujesz projekty w języku C++, w oknie dialogowym Menedżer odwołań może nie być widoczne okno dialogowe **Przeglądaj** .
 
 ## <a name="add-a-reference"></a>Dodaj odwołanie
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł **odwołania** lub **zależności** i wybierz polecenie **Dodaj odwołanie**. Możesz również kliknąć prawym przyciskiem myszy węzeł projektu i wybrać polecenie **Dodaj**  >  **odwołanie**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł **odwołania** lub **zależności** i wybierz polecenie **Dodaj odwołanie**. Możesz również kliknąć prawym przyciskiem myszy węzeł projektu i wybrać polecenie **Dodaj**  >  **odwołanie**.
 
    Zostanie otwarty **Menedżer odwołań** i zostanie wyświetlona lista dostępnych odwołań według grupy.
 
@@ -91,7 +93,7 @@ Karta **zestawy** składa się z dwóch podkart:
 
    I starsze wersje [docelowego identyfikatora platformy]
 
-   Na przykład jeśli projekt jest ukierunkowany na .NET Framework 4 na komputerze 32-bitowym, **rozszerzenia** wyliczają zestawy, które są zarejestrowane w obszarze *\Microsoft \. NETFramework\v4.0\AssemblyFoldersEx*, *\Microsoft \. NETFramework\v3.5\AssemblyFoldersEx*, *\Microsoft \. NETFramework\v3.0\AssemblyFoldersEx*i *\Microsoft \. NETFramework\v2.0\AssemblyFoldersEx*.
+   Na przykład jeśli projekt jest ukierunkowany na .NET Framework 4 na komputerze 32-bitowym, **rozszerzenia** wyliczają zestawy, które są zarejestrowane w obszarze *\Microsoft \. NETFramework\v4.0\AssemblyFoldersEx*, *\Microsoft \. NETFramework\v3.5\AssemblyFoldersEx*, *\Microsoft \. NETFramework\v3.0\AssemblyFoldersEx* i *\Microsoft \. NETFramework\v2.0\AssemblyFoldersEx*.
 
 Niektóre składniki na liście mogą nie być wyświetlane, w zależności od wersji platformy projektu. Może się to zdarzyć w następujących warunkach:
 
@@ -189,11 +191,11 @@ Należy unikać dodawania odwołań do plików do danych wyjściowych innego pro
 
 Nie można przejść do zestawu SDK i dodać go do projektu. Możesz tylko przeglądać do pliku (na przykład zestawu lub *winmd*) i dodać go do projektu.
 
-W przypadku odwoływania się do pliku winmd, oczekiwany układ polega na tym, że pliki * \<FileName> winmd*, * \<FileName> dll*i * \<FileName> . pri* są umieszczone obok siebie. Jeśli odwołujesz się do WinMD w następujących scenariuszach, niepełny zestaw plików zostanie skopiowany do katalogu wyjściowego projektu i, w związku z tym, wystąpią błędy kompilacji i czasu wykonywania.
+W przypadku odwoływania się do pliku winmd, oczekiwany układ polega na tym, że pliki *\<FileName> winmd*, *\<FileName> dll* i *\<FileName> . pri* są umieszczone obok siebie. Jeśli odwołujesz się do WinMD w następujących scenariuszach, niepełny zestaw plików zostanie skopiowany do katalogu wyjściowego projektu i, w związku z tym, wystąpią błędy kompilacji i czasu wykonywania.
 
-- **Składnik macierzysty**: projekt natywny utworzy jeden winmd dla każdego rozłączonego zestawu nazw i jedną bibliotekę DLL, która składa się z implementacji. Pliki WinMD będą miały odmienne nazwy. W przypadku odwoływania się do tego pliku składnika macierzystego MSBuild nie rozpoznaje, że niepodobne nazwy WinMD tworzą jeden składnik. W związku z tym zostaną skopiowane tylko identyczne nazwy * \<FileName> . dll* i * \<FileName> . winmd* , a błędy środowiska uruchomieniowego zostaną wykonane. Aby obejść ten problem, Utwórz zestaw SDK rozszerzenia. Aby uzyskać więcej informacji, zobacz [Tworzenie zestawu Software Development Kit](../extensibility/creating-a-software-development-kit.md).
+- **Składnik macierzysty**: projekt natywny utworzy jeden winmd dla każdego rozłączonego zestawu nazw i jedną bibliotekę DLL, która składa się z implementacji. Pliki WinMD będą miały odmienne nazwy. W przypadku odwoływania się do tego pliku składnika macierzystego MSBuild nie rozpoznaje, że niepodobne nazwy WinMD tworzą jeden składnik. W związku z tym zostaną skopiowane tylko identyczne nazwy *\<FileName> . dll* i *\<FileName> . winmd* , a błędy środowiska uruchomieniowego zostaną wykonane. Aby obejść ten problem, Utwórz zestaw SDK rozszerzenia. Aby uzyskać więcej informacji, zobacz [Tworzenie zestawu Software Development Kit](../extensibility/creating-a-software-development-kit.md).
 
-- **Używanie formantów**: co najmniej kontrolka XAML składa się z plików * \<FileName> winmd*, * \<FileName> . dll*, * \<FileName> . pri*, * \<XamlName> . XAML*i * \<ImageName> . jpg*. Po skompilowaniu projektu pliki zasobów, które są skojarzone z odwołaniem do pliku, nie zostaną skopiowane do katalogu wyjściowego projektu, a tylko * \<FileName> . winmd*, * \<FileName> . dll* i * \<FileName> . pri* będą kopiowane. Błąd kompilacji jest rejestrowany w celu powiadomienia użytkownika o braku zasobów * \<XamlName> . XAML* i * \<ImageName> . jpg* . Aby kompilacja się powiodła, trzeba ręcznie skopiować te pliki zasobów do katalogu wyjściowego projektu dla kompilacji i debugowania/czasu wykonywania. Aby obejść ten problem, Utwórz zestaw SDK rozszerzeń, wykonując kroki opisane w temacie [Tworzenie zestawu SDK oprogramowania](../extensibility/creating-a-software-development-kit.md) lub edytuj plik projektu, aby dodać następującą właściwość:
+- **Używanie formantów**: co najmniej kontrolka XAML składa się z plików *\<FileName> winmd*, *\<FileName> . dll*, *\<FileName> . pri*, *\<XamlName> . XAML* i *\<ImageName> . jpg*. Po skompilowaniu projektu pliki zasobów, które są skojarzone z odwołaniem do pliku, nie zostaną skopiowane do katalogu wyjściowego projektu, a tylko *\<FileName> . winmd*, *\<FileName> . dll* i *\<FileName> . pri* będą kopiowane. Błąd kompilacji jest rejestrowany w celu powiadomienia użytkownika o braku zasobów *\<XamlName> . XAML* i *\<ImageName> . jpg* . Aby kompilacja się powiodła, trzeba ręcznie skopiować te pliki zasobów do katalogu wyjściowego projektu dla kompilacji i debugowania/czasu wykonywania. Aby obejść ten problem, Utwórz zestaw SDK rozszerzeń, wykonując kroki opisane w temacie [Tworzenie zestawu SDK oprogramowania](../extensibility/creating-a-software-development-kit.md) lub edytuj plik projektu, aby dodać następującą właściwość:
 
     ```xml
     <PropertyGroup>
@@ -206,12 +208,12 @@ W przypadku odwoływania się do pliku winmd, oczekiwany układ polega na tym, �
 
 ## <a name="recent"></a>Ostatnie
 
-**Zespoły**, **com**, **Windows**i **Przeglądaj** każdy obsługują **ostatnią** kartę, która wylicza listę składników, które zostały ostatnio dodane do projektów.
+**Zespoły**, **com**, **Windows** i **Przeglądaj** każdy obsługują **ostatnią** kartę, która wylicza listę składników, które zostały ostatnio dodane do projektów.
 
-## <a name="search"></a>Wyszukiwanie
+## <a name="search"></a>Wyszukaj
 
 Pasek wyszukiwania w oknie dialogowym Menedżer odwołań działa nad kartą, na której się skupia. Na przykład, jeśli użytkownik wpisze na pasku wyszukiwania przycisk "system", podczas gdy karta **rozwiązanie** jest fokusem, wyszukiwanie nie zwróci żadnych wyników, chyba że rozwiązanie składa się z nazwy projektu zawierającej "system".
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Zarządzanie odwołaniami w projekcie](../ide/managing-references-in-a-project.md)

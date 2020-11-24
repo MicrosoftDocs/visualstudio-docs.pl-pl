@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: zapisywanie i otwieranie plików przy użyciu kodowania'
+description: Dowiedz się, jak zapisywać i otwierać pliki przy użyciu określonego kodowania, aby podczas otwierania pliku program Visual Studio prawidłowo wyświetlał plik.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72496e842841b2c55833075e890da4b7088cb489
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cfec7d31e6fc2c120ef42dc9de2a5a7eea4132e0
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284168"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597096"
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>Instrukcje: zapisywanie i otwieranie plików przy użyciu kodowania
 
@@ -30,9 +32,9 @@ Pliki z określonym kodowaniem znaków można zapisać w celu obsługi języków
 
      Zostanie wyświetlone okno dialogowe **Zaawansowane opcje zapisywania** .
 
-2. W obszarze **kodowanie**wybierz kodowanie, które ma być używane dla pliku.
+2. W obszarze **kodowanie** wybierz kodowanie, które ma być używane dla pliku.
 
-3. Opcjonalnie w obszarze **końce wiersza**wybierz format znaków końca wiersza.
+3. Opcjonalnie w obszarze **końce wiersza** wybierz format znaków końca wiersza.
 
      Ta opcja jest przydatna, jeśli zamierzasz wymieniać plik z użytkownikami innego systemu operacyjnego.
 
@@ -40,7 +42,7 @@ Pliki z określonym kodowaniem znaków można zapisać w celu obsługi języków
 
 ## <a name="to-open-an-encoded-file-that-is-part-of-a-project"></a>Aby otworzyć zakodowany plik, który jest częścią projektu
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy plik i wybierz polecenie **Otwórz za pomocą**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy plik i wybierz polecenie **Otwórz za pomocą**.
 
 2. W oknie dialogowym **Otwórz za pomocą** wybierz Edytor, dla którego chcesz otworzyć plik.
 
@@ -56,7 +58,7 @@ Pliki z określonym kodowaniem znaków można zapisać w celu obsługi języków
 
 3. Wykonaj kroki 2 i 3 z poprzedniej procedury.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Kodowanie i podziały wierszy](encodings-and-line-breaks.md)
 - [Kodowanie i globalizacja Windows Forms](/dotnet/framework/winforms/advanced/encoding-and-windows-forms-globalization)

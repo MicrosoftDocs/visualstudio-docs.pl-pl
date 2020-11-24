@@ -1,5 +1,7 @@
 ---
 title: Tworzenie i uruchamianie testów obciążeniowych
+description: Dowiedz się, jak utworzyć test obciążenia, który zawiera testy jednostkowe. Możesz tworzyć i uruchamiać testy obciążenia przy użyciu Visual Studio Enterprise.
+ms.custom: SEO-VS-2020
 ms.date: 10/01/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.assetid: bbf075a5-96d5-48ed-a03c-330f0fc04748
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 780485a4d42cad574cddaaa5a9ae51a65a1a9b7d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bdcd96e8fc87a7627689af1c67a81b69b2ecee72
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79093629"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598266"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Przewodnik: Tworzenie i uruchamianie testu obciążenia zawierającego testy jednostkowe
 
@@ -45,7 +47,7 @@ W tym instruktażu wykonasz następujące zadania:
 
 1. Otwórz rozwiązanie bankowe, które zostało utworzone w [przewodniku: Tworzenie i uruchamianie testów jednostkowych dla kodu zarządzanego](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
-1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla węzła rozwiązanie banku, wybierz **Dodaj**, a następnie wybierz **Nowy projekt**.
+1. W **Eksplorator rozwiązań** Otwórz menu skrótów dla węzła rozwiązanie banku, wybierz **Dodaj**, a następnie wybierz **Nowy projekt**.
 
      Zostanie wyświetlone okno dialogowe **Dodaj nowy projekt** .
 
@@ -141,11 +143,11 @@ W tym instruktażu wykonasz następujące zadania:
 
 ### <a name="to-run-the-load-test"></a>Aby uruchomić test obciążenia
 
-1. Przy otwartym teście obciążenia w **Edytor testu obciążeniowego**wybierz przycisk zielony **przebieg testu** na pasku narzędzi. Test obciążenia rozpocznie się.
+1. Przy otwartym teście obciążenia w **Edytor testu obciążeniowego** wybierz przycisk zielony **przebieg testu** na pasku narzędzi. Test obciążenia rozpocznie się.
 
 2. Jeśli symulacja testowa przekracza wartości progowe, ikony są wyświetlane w węzłach kontrolki drzewa, aby wskazać naruszenie progu. Błędy mają czerwoną nakładkę koła, ostrzeżenia mają żółty trójkąt nakładki. Można znaleźć licznik, który przekroczył próg i przedstawić go na wykresie, przeciągając ikonę na Graf. Można to zrobić, gdy test jest uruchomiony.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Edytuj mieszany test, aby określić, które testy należy uwzględnić w scenariuszu testu obciążenia](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)
 - [Określanie typów sieci wirtualnych](../test/specify-virtual-network-types-in-a-load-test-scenario.md)

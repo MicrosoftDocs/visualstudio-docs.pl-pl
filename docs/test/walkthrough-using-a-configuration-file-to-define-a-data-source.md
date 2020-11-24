@@ -1,5 +1,7 @@
 ---
 title: Definiowanie źródła danych przy użyciu pliku konfiguracji
+description: Dowiedz się, jak używać źródła danych zdefiniowanego w pliku app.config do testowania jednostek, rozpoczynając od tworzenia pliku app.config, który definiuje źródło danych.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a4f5731a828eb04e57f56a46fe399125b5ded2f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06e33721fa4ac1cc657c79c8aa68b35e5ceec00b
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75776153"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598500"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Wskazówki: korzystanie z pliku konfiguracji w celu zdefiniowania źródła danych
 
@@ -267,7 +269,7 @@ Teraz, gdy został zdefiniowany plik *app.config* , zostanie utworzony test jedn
 > [!IMPORTANT]
 > Wdróż elementy, takie jak źródła danych, aby były dostępne dla testu w katalogu wdrożenia.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Testowanie jednostkowe kodu](../test/unit-test-your-code.md)
 - [Instrukcje: Tworzenie testu jednostkowego opartego na danych](../test/how-to-create-a-data-driven-unit-test.md)

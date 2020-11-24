@@ -1,5 +1,7 @@
 ---
 title: Jak używać fragmentów kodu ze znakiem przestrzenny | Microsoft Docs
+description: Dowiedz się, jak uzyskać dostęp do fragmentów kodu przy użyciu skrótu klawiaturowego, w menu Edycja lub w menu kontekstowym.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbbd283186ed31960b2f84bd862a762abae748de
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd117937979b73b4dbecb19844159e6e8995cf8e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769772"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596875"
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>Instrukcje: używanie fragmentów kodu w cudzysłowie
 
@@ -25,7 +27,7 @@ W poniższych procedurach opisano, jak używać fragmentów kodu. Fragmenty kodu
 
 1. W środowisku IDE programu Visual Studio Otwórz plik, który ma być edytowany.
 
-1. W **edytorze kodu**wybierz opcję tekst do obprzestrzennia.
+1. W **edytorze kodu** wybierz opcję tekst do obprzestrzennia.
 
 1. Wpisz **Ctrl** + **K**, **Ctrl** + **S**.
 
@@ -35,7 +37,7 @@ W poniższych procedurach opisano, jak używać fragmentów kodu. Fragmenty kodu
 
 1. W środowisku IDE programu Visual Studio Otwórz plik, który ma być edytowany.
 
-1. W **edytorze kodu**wybierz opcję tekst do obprzestrzennia.
+1. W **edytorze kodu** wybierz opcję tekst do obprzestrzennia.
 
 1. Z menu **Edycja** wybierz pozycję **IntelliSense** , a następnie wybierz polecenie **Otocz za pomocą** polecenia.
 
@@ -47,7 +49,7 @@ W poniższych procedurach opisano, jak używać fragmentów kodu. Fragmenty kodu
 
 1. W środowisku IDE programu Visual Studio Otwórz plik, który ma być edytowany.
 
-1. W **edytorze kodu**wybierz opcję tekst do obprzestrzennia.
+1. W **edytorze kodu** wybierz opcję tekst do obprzestrzennia.
 
 1. Kliknij prawym przyciskiem myszy zaznaczony tekst, a następnie wybierz polecenie **Otocz z** menu kontekstowego.
 
@@ -55,7 +57,7 @@ W poniższych procedurach opisano, jak używać fragmentów kodu. Fragmenty kodu
 
      Alternatywnie można wpisać nazwę fragmentu kodu, a następnie nacisnąć klawisz **Tab** lub **Enter**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Fragmenty kodu w języku C#](../ide/visual-csharp-code-snippets.md)
 - [Selektor wstawek kodu](../ide/reference/code-snippet-picker.md)

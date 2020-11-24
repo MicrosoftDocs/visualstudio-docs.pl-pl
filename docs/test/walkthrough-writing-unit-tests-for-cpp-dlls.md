@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: zapisywanie testów jednostkowych dla bibliotek DLL języka C++'
+description: Dowiedz się, jak opracować natywną bibliotekę DLL C++ za pomocą metodologii test-First. Zacznij od utworzenia natywnego projektu testowego.
+ms.custom: SEO-VS-2020
 ms.date: 06/13/2019
 ms.topic: how-to
 ms.author: corob
@@ -7,12 +9,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 16020c0928229c80a9eb33b3bc4804b004d9f432
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 178fef548bc52346a78c7f9e4607aad7b1c56f65
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816010"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598409"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Instrukcje: zapisywanie testów jednostkowych dla bibliotek DLL języka C++
 
@@ -188,7 +190,7 @@ Poniższe kroki pokazują, jak utworzyć projekt DLL w programie Visual Studio 2
 
     Nowy test pojawi się w **Eksploratorze testów**.
 
-5. W **Eksploratorze testów**wybierz opcję **Uruchom wszystkie**.
+5. W **Eksploratorze testów** wybierz opcję **Uruchom wszystkie**.
 
     ![Eksplorator testów jednostkowych &#45; test podstawowy zakończony zakończono](../test/media/utecpp10.png)
 
@@ -215,7 +217,7 @@ Poniższe kroki pokazują, jak utworzyć projekt DLL w programie Visual Studio 2
     >
     > Gdy użytkownicy zmienią swoje wymagania, należy wyłączyć testy, które nie są już poprawne. Napisz nowe testy i Przekształć je w jeden raz w ten sam przyrostowy sposób.
 
-2. Skompiluj rozwiązanie, a następnie w **Eksploratorze testów**wybierz opcję **Uruchom wszystkie**.
+2. Skompiluj rozwiązanie, a następnie w **Eksploratorze testów** wybierz opcję **Uruchom wszystkie**.
 
      Nowy test zakończy się niepowodzeniem.
 
@@ -243,7 +245,7 @@ Poniższe kroki pokazują, jak utworzyć projekt DLL w programie Visual Studio 2
     }
     ```
 
-4. Skompiluj rozwiązanie, a następnie w **Eksploratorze testów**wybierz opcję **Uruchom wszystkie**.
+4. Skompiluj rozwiązanie, a następnie w **Eksploratorze testów** wybierz opcję **Uruchom wszystkie**.
 
      Oba testy zostały zakończone pomyślnie.
 
@@ -366,7 +368,7 @@ Poniższe kroki pokazują, jak utworzyć projekt DLL w programie Visual Studio 2
 
    Istnieje również możliwość przydzielenia minimalnego poziomu pokrycia kodu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Dodawanie testów jednostkowych do istniejących aplikacji C++](../test/how-to-use-microsoft-test-framework-for-cpp.md)
 - [Korzystanie z Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md)

@@ -1,5 +1,7 @@
 ---
 title: Dodawanie rozszerzenia protokołu serwera języka | Microsoft Docs
+description: Dowiedz się, jak utworzyć rozszerzenie programu Visual Studio, które integruje serwer języka w oparciu o protokół serwera języka (LSP).
+ms.custom: SEO-VS-2020
 ms.date: 11/14/2017
 ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0c43d5a50b7a2acb536dee5fe9c6ed9ec3d36d7
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 26f78be8708e61370be3256c8cde481d5c61c89d
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860455"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598149"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Dodawanie rozszerzenia Language Server Protocol
 
@@ -43,50 +45,50 @@ Aby uzyskać więcej informacji na temat tworzenia przykładowego serwera język
 
 W poniższych tabelach przedstawiono, które funkcje programu LSP są obsługiwane w programie Visual Studio:
 
-Komunikat | Ma pomoc techniczną w programie Visual Studio
+Wiadomość | Ma pomoc techniczną w programie Visual Studio
 --- | ---
-inicjacj | tak
-Initialize | tak
-shutdown | tak
-Zakończ | tak
-$/cancelRequest | tak
-okno/showMessage | tak
-okno/showMessageRequest | tak
-okno/logMessage | tak
+inicjacj | yes
+Initialize | yes
+shutdown | yes
+Zakończ | yes
+$/cancelRequest | yes
+okno/showMessage | yes
+okno/showMessageRequest | yes
+okno/logMessage | yes
 Telemetria/wydarzenie |
 Klient/registerCapability |
 Klient/unregisterCapability |
-obszar roboczy/didChangeConfiguration | tak
-obszar roboczy/didChangeWatchedFiles | tak
-obszar roboczy/symbol | tak
-obszar roboczy/executeCommand | tak
-obszar roboczy/applyEdit | tak
-TextDocument/publishDiagnostics | tak
-TextDocument/didOpen | tak
-TextDocument/didChange | tak
+obszar roboczy/didChangeConfiguration | yes
+obszar roboczy/didChangeWatchedFiles | yes
+obszar roboczy/symbol | yes
+obszar roboczy/executeCommand | yes
+obszar roboczy/applyEdit | yes
+TextDocument/publishDiagnostics | yes
+TextDocument/didOpen | yes
+TextDocument/didChange | yes
 TextDocument/willSave |
 TextDocument/willSaveWaitUntil |
-TextDocument/didSave | tak
-TextDocument/didClose | tak
-Dokumentowanie/uzupełnianie | tak
-zakończenie/rozwiązanie | tak
-TextDocument/Aktywuj | tak
-TextDocument/signatureHelp | tak
-TextDocument/References | tak
-TextDocument/documentHighlight | tak
-TextDocument/documentSymbol | tak
-TextDocument/formatowanie | tak
-TextDocument/rangeFormatting | tak
+TextDocument/didSave | yes
+TextDocument/didClose | yes
+Dokumentowanie/uzupełnianie | yes
+zakończenie/rozwiązanie | yes
+TextDocument/Aktywuj | yes
+TextDocument/signatureHelp | yes
+TextDocument/References | yes
+TextDocument/documentHighlight | yes
+TextDocument/documentSymbol | yes
+TextDocument/formatowanie | yes
+TextDocument/rangeFormatting | yes
 TextDocument/onTypeFormatting |
-TextDocument/Definition | tak
-TextDocument/codeAction | tak
+TextDocument/Definition | yes
+TextDocument/codeAction | yes
 TextDocument/codeLens |
 codeLens/Rozwiąż |
 TextDocument/documentLink |
 documentLink/Rozwiąż |
-TextDocument/Zmień nazwę | tak
+TextDocument/Zmień nazwę | yes
 
-## <a name="get-started"></a>Rozpoczęcie pracy
+## <a name="get-started"></a>Wprowadzenie
 
 > [!NOTE]
 > Począwszy od programu Visual Studio 2017 w wersji 15,8, obsługa protokołu Common Language Server jest wbudowana w program Visual Studio. Jeśli skompilowano rozszerzenia LSP przy użyciu wersji zapoznawczej [klienta serwera językowego](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview) , program przestanie działać po uaktualnieniu do wersji 15,8 lub nowszej. Aby Twoje rozszerzenia dostawcy LSP działały ponownie, należy wykonać następujące czynności:
@@ -107,7 +109,7 @@ TextDocument/Zmień nazwę | tak
 
 Aby utworzyć rozszerzenie usługi językowej przy użyciu serwera języka opartego na dostawcy LSP, najpierw upewnij się, że zainstalowano obciążenie **programowanie rozszerzenia programu Visual Studio** dla wystąpienia programu vs.
 
-Następnie utwórz nowy projekt VSIX, przechodząc do pozycji **plik**  >  **Nowy**projekt  >  **Visual C#**  >  **rozszerzalność**Visual C#,  >  **Projekt VSIX**:
+Następnie utwórz nowy projekt VSIX, przechodząc do pozycji **plik**  >  **Nowy** projekt  >  **Visual C#**  >  **rozszerzalność** Visual C#,  >  **Projekt VSIX**:
 
 ![Utwórz projekt VSIX](media/lsp-vsix-project.png)
 
@@ -125,7 +127,7 @@ LSP nie zawiera specyfikacji dotyczącej sposobu tworzenia kolorowania tekstu dl
 
 1. Utwórz folder o nazwie "gramatyki" wewnątrz rozszerzenia (może to być dowolnie wybrana nazwa).
 
-2. W folderze *gramatyki* Uwzględnij dowolne pliki * \* . tmlanguage*, * \* . plist*, * \* . tmtheme*lub * \* . JSON* , które mają zapewniać niestandardowe kolorowanie.
+2. W folderze *gramatyki* Uwzględnij dowolne pliki *\* . tmlanguage*, *\* . plist*, *\* . tmtheme* lub *\* . JSON* , które mają zapewniać niestandardowe kolorowanie.
 
    > [!TIP]
    > Plik *. tmtheme* definiuje, jak zakresy są mapowane na klasyfikacje programu Visual Studio (klucze kolorów). Aby uzyskać wskazówki, można odwołać się do pliku Global *. tmtheme* w katalogu *% ProgramFiles (x86)% \ Microsoft Visual Studio \\ \<version> \\ \<SKU> \Common7\IDE\CommonExtensions\Microsoft\TextMate\Starterkit\Themesg* .
@@ -480,7 +482,7 @@ Funkcja warstwy środkowej nadal jest opracowywana i nie jest jeszcze kompletna.
 
 Aby wyświetlić kod źródłowy przykładowego rozszerzenia przy użyciu interfejsu API klienta LSP w programie Visual Studio, zobacz przykład VSSDK-rozszerzalności-przykłady dla dostawcy [LSP](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/LanguageServerProtocol).
 
-## <a name="faq"></a>Najczęściej zadawane pytania
+## <a name="faq"></a>Często zadawane pytania
 
 **Chcę utworzyć niestandardowy system projektu, aby uzupełnić mój serwer języka LSP, aby zapewnić bardziej rozbudowaną obsługę funkcji w programie Visual Studio, jak to zrobić?**
 
@@ -498,6 +500,6 @@ Tak, ale nie wszystkie funkcje będą działały prawidłowo. Ostatecznym celem 
 
 Zobacz [tutaj](walkthrough-publishing-a-visual-studio-extension.md)instrukcje dotyczące witryny Marketplace.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Dodaj obsługę edytora programu Visual Studio dla innych języków](../ide/adding-visual-studio-editor-support-for-other-languages.md)

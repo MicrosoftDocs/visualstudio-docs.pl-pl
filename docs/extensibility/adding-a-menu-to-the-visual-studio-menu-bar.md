@@ -1,5 +1,7 @@
 ---
 title: Dodawanie menu do paska menu programu Visual Studio | Microsoft Docs
+description: Dowiedz się, jak dodać menu do paska menu zintegrowanego środowiska programistycznego (IDE) programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,16 +13,16 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3eb5afbbe688c15f429054d50210a68769173e73
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc84eb8854c0a6ff738a51c2ca883ad0527ec919
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801857"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597863"
 ---
 # <a name="add-a-menu-to-the-visual-studio-menu-bar"></a>Dodawanie menu do paska menu programu Visual Studio
 
-W tym instruktażu pokazano, jak dodać menu do paska menu zintegrowanego środowiska programistycznego (IDE) programu Visual Studio. Pasek menu IDE zawiera kategorie menu, takie jak **plik**, **Edycja**, **Widok**, **okno**i **Pomoc**.
+W tym instruktażu pokazano, jak dodać menu do paska menu zintegrowanego środowiska programistycznego (IDE) programu Visual Studio. Pasek menu IDE zawiera kategorie menu, takie jak **plik**, **Edycja**, **Widok**, **okno** i **Pomoc**.
 
 Przed dodaniem nowego menu do paska menu programu Visual Studio należy rozważyć, czy polecenia powinny być umieszczane w istniejącym menu. Aby uzyskać więcej informacji na temat umieszczania poleceń, zobacz [menu i polecenia dla programu Visual Studio](../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md).
 
@@ -43,13 +45,13 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
 
 ::: moniker range="vs-2017"
 
-2. Po otwarciu projektu Dodaj niestandardowy szablon elementu polecenia o nazwie **TestCommand**. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >   **nowy element**. W oknie dialogowym **Dodaj nowy element** przejdź do pozycji **Visual C#/rozszerzalność** i wybierz **polecenie niestandardowe**. W polu **Nazwa** w dolnej części okna Zmień nazwę pliku polecenia na *TestCommand.cs*.
+2. Po otwarciu projektu Dodaj niestandardowy szablon elementu polecenia o nazwie **TestCommand**. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >   **nowy element**. W oknie dialogowym **Dodaj nowy element** przejdź do pozycji **Visual C#/rozszerzalność** i wybierz **polecenie niestandardowe**. W polu **Nazwa** w dolnej części okna Zmień nazwę pliku polecenia na *TestCommand.cs*.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. Po otwarciu projektu Dodaj niestandardowy szablon elementu polecenia o nazwie **TestCommand**. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >   **nowy element**. W oknie dialogowym **Dodaj nowy element** przejdź do pozycji **Visual C#/rozszerzalność** i wybierz **polecenie**. W polu **Nazwa** w dolnej części okna Zmień nazwę pliku polecenia na *TestCommand.cs*.
+2. Po otwarciu projektu Dodaj niestandardowy szablon elementu polecenia o nazwie **TestCommand**. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >   **nowy element**. W oknie dialogowym **Dodaj nowy element** przejdź do pozycji **Visual C#/rozszerzalność** i wybierz **polecenie**. W polu **Nazwa** w dolnej części okna Zmień nazwę pliku polecenia na *TestCommand.cs*.
 
 ::: moniker-end
 
@@ -57,7 +59,7 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
 
 ::: moniker range="vs-2017"
 
-1. W **Eksplorator rozwiązań**Otwórz *TestCommandPackage. vsct*.
+1. W **Eksplorator rozwiązań** Otwórz *TestCommandPackage. vsct*.
 
     Na końcu pliku znajduje się `<Symbols>` węzeł, który zawiera kilka `<GuidSymbol>` węzłów. W węźle o nazwie `guidTestCommandPackageCmdSet` Dodaj nowy symbol w następujący sposób:
 
@@ -101,7 +103,7 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
 
 ::: moniker range=">=vs-2019"
 
-1. W **Eksplorator rozwiązań**Otwórz *TopLevelMenuPackage. vsct*.
+1. W **Eksplorator rozwiązań** Otwórz *TopLevelMenuPackage. vsct*.
 
     Na końcu pliku znajduje się `<Symbols>` węzeł, który zawiera kilka `<GuidSymbol>` węzłów. W węźle o nazwie `guidTopLevelMenuPackageCmdSet` Dodaj nowy symbol w następujący sposób:
 
@@ -167,6 +169,6 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
 
     Powinien pojawić się okno komunikatu z komunikatem "TestCommand wewnątrz TopLevelMenu. TestCommand. MenuItemCallback ()".
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)

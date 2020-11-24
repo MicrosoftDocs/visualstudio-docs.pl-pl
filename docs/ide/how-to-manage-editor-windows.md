@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Zarządzanie oknami edytora'
+description: Dowiedz się, jak podzielić system Windows i otworzyć kilka okien jednocześnie, aby można było wyświetlić kod w sposób najlepiej odpowiadający Twoim potrzebom.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 461593e4c77d7c90210ae1bb78741a1fff9616ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 93a2a9d74c66ffa699ea3fbf73da5d9043316f31
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284194"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597135"
 ---
 # <a name="how-to-manage-editor-windows"></a>Instrukcje: Zarządzanie oknami edytora
 
@@ -54,7 +56,7 @@ Możesz również utworzyć wiele wystąpień okna edytora. Ta funkcja umożliwi
 
    Dodawane jest nowe wystąpienie edytora z kartami.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Funkcje edytora kodu](../ide/writing-code-in-the-code-and-text-editor.md)
 - [Dostosowywanie układów okien](../ide/customizing-window-layouts-in-visual-studio.md)

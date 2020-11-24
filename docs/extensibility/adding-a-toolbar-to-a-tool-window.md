@@ -1,5 +1,7 @@
 ---
 title: Dodawanie paska narzędzi do okna narzędzi | Microsoft Docs
+description: Dowiedz się, jak dodać pasek narzędzi zawierający przyciski, które są powiązane z poleceniami do okna narzędzi w zintegrowanym środowisku programistycznym (IDE) programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5351fe6a713c217f8fca20d6740b542dc75f053
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a093dd65ce4de187cadf7e277c695bac99b5ca6
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904128"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597980"
 ---
 # <a name="add-a-toolbar-to-a-tool-window"></a>Dodawanie paska narzędzi do okna narzędzi
 W tym instruktażu pokazano, jak dodać pasek narzędzi do okna narzędzi.
@@ -34,7 +36,7 @@ W tym instruktażu pokazano, jak dodać pasek narzędzi do okna narzędzi.
 
 1. Utwórz projekt VSIX o nazwie `TWToolbar` z poleceniem menu o nazwie **TWTestCommand** i oknem narzędzia o nazwie **TestToolWindow**. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md) i [Tworzenie rozszerzenia przy użyciu okna narzędzi](../extensibility/creating-an-extension-with-a-tool-window.md). Musisz dodać szablon elementu polecenia przed dodaniem szablonu okna narzędzi.
 
-2. W *TWTestCommandPackage. vsct*poszukaj sekcji symboli. W węźle GuidSymbol o nazwie guidTWTestCommandPackageCmdSet Zadeklaruj pasek narzędzi i grupę pasków narzędzi w następujący sposób.
+2. W *TWTestCommandPackage. vsct* poszukaj sekcji symboli. W węźle GuidSymbol o nazwie guidTWTestCommandPackageCmdSet Zadeklaruj pasek narzędzi i grupę pasków narzędzi w następujący sposób.
 
     ```xml
     <IDSymbol name="TWToolbar" value="0x1000" />
@@ -113,5 +115,5 @@ W tym instruktażu pokazano, jak dodać pasek narzędzi do okna narzędzi.
 
 3. Na pasku narzędzi kliknij ikonę, aby wyświetlić komunikat **TWTestCommandPackage wewnątrz TWToolbar. TWTestCommand. MenuItemCallback ()**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dodawanie paska narzędzi](../extensibility/adding-a-toolbar.md)

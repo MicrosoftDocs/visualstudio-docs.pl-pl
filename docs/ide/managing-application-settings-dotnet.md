@@ -1,5 +1,7 @@
 ---
 title: Zarządzanie ustawieniami aplikacji (.NET)
+description: Dowiedz się, jak zarządzać ustawieniami aplikacji (dawniej nazywanymi właściwościami dynamicznymi), które nie są uwzględnione w kodzie aplikacji, ale są wymagane w czasie wykonywania.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d792a6147795f81211203fc442539371f3caa91
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f62e03210e83f434bd32d08c3fe0f7b2b539155e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593710"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596901"
 ---
 # <a name="manage-application-settings-net"></a>Zarządzanie ustawieniami aplikacji (.NET)
 
@@ -50,14 +52,14 @@ Zwróć uwagę, że zmiany ustawień użytkownika nie są zapisywane na dysku, c
 
 ## <a name="create-application-settings-at-design-time"></a>Tworzenie ustawień aplikacji w czasie projektowania
 
-W czasie projektowania można utworzyć ustawienia aplikacji na dwa sposoby: za pomocą strony **Ustawienia** **projektanta projektu**lub za pomocą okna **Właściwości** formularza lub kontrolki, co pozwala powiązać ustawienie z właściwością.
+W czasie projektowania można utworzyć ustawienia aplikacji na dwa sposoby: za pomocą strony **Ustawienia** **projektanta projektu** lub za pomocą okna **Właściwości** formularza lub kontrolki, co pozwala powiązać ustawienie z właściwością.
 
 W przypadku tworzenia ustawienia o zakresie aplikacji (na przykład parametrów połączenia z bazą danych lub odwołania do zasobów serwera) program [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zapisuje je w *app.config* przy użyciu `<applicationSettings>` znacznika. (Parametry połączenia są zapisywane pod `<connectionStrings>` tagiem).
 
 Podczas tworzenia ustawienia o zakresie użytkownika (na przykład czcionki domyślnej, strony głównej lub rozmiaru okna), program [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zapisuje ją w *app.config* przy użyciu `<userSettings>` znacznika.
 
 > [!IMPORTANT]
-> W przypadku przechowywania parametrów połączenia w *app.config*należy podjąć odpowiednie środki ostrożności, aby uniknąć ujawnienia poufnych informacji, takich jak hasła lub ścieżki serwera, w parametrach połączenia.
+> W przypadku przechowywania parametrów połączenia w *app.config* należy podjąć odpowiednie środki ostrożności, aby uniknąć ujawnienia poufnych informacji, takich jak hasła lub ścieżki serwera, w parametrach połączenia.
 >
 > W przypadku korzystania z informacji o parametrach połączenia z zewnętrznego źródła, takiego jak podanie identyfikatora użytkownika i hasła, należy zachować ostrożność, aby upewnić się, że wartości używane do konstruowania parametrów połączenia nie zawierają dodatkowych parametrów połączenia, które zmieniają zachowanie połączenia.
 >
@@ -102,6 +104,6 @@ Properties.Settings.Default.Save();
 
 Aby uzyskać ogólne informacje na temat uzyskiwania dostępu do ustawień aplikacji za pomocą `Settings` klasy, zobacz [Omówienie ustawień aplikacji (.NET Framework)](/dotnet/framework/winforms/advanced/application-settings-overview). Aby uzyskać informacje o iteracji za pomocą ustawień, zobacz ten [wpis na forum](https://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Dostęp do ustawień aplikacji (.NET Framework)](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings)

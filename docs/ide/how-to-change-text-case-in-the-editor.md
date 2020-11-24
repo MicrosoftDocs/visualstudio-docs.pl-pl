@@ -1,5 +1,7 @@
 ---
 title: Konwertuj tekst na wielkie lub małe litery
+description: Dowiedz się, jak używać poleceń menu i skrótów klawiaturowych do konwersji wielkości liter zaznaczonego tekstu na wielkie litery lub na małe litery.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28ed534a72c542f978fc8d4121f471cad79ea64d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4574874e14ee66bbfb0f11d7767d59516b6666f3
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284636"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597291"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>Instrukcje: zmiana wielkości liter w edytorze
 
@@ -36,6 +38,6 @@ Możesz użyć poleceń menu lub skrótów klawiaturowych do przekonwertowania w
 > [!TIP]
 > Aby przywrócić poprzedni format wielkości liter przed tą zmianą, wybierz polecenie **Cofnij** z menu **Edycja** .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Funkcje edytora kodu](../ide/writing-code-in-the-code-and-text-editor.md)

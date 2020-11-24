@@ -1,5 +1,7 @@
 ---
 title: Dodawanie podmenu do menu | Microsoft Docs
+description: Dowiedz się, jak utworzyć podmenu, dodać je do paska menu programu Visual Studio i dodać nowe polecenie do podmenu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5887dba1ed1c583653b93792174524f8dfb84609
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16b58a6ab6a01ff635b3afd58b06133abacf970e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86972325"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598019"
 ---
 # <a name="add-a-submenu-to-a-menu"></a>Dodawanie podmenu do menu
 Ten przewodnik kompiluje się w demonstracji w oknie [Dodawanie menu do paska menu programu Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) , pokazując sposób dodawania podmenu do menu **TestMenu** .
@@ -153,7 +155,7 @@ Ten przewodnik kompiluje się w demonstracji w oknie [Dodawanie menu do paska me
 
 5. W menu **TestMenu** kliknij pozycję **sub menu** , a następnie kliknij pozycję **Testuj polecenie sub**. Zostanie wyświetlone okno komunikatu z tekstem "polecenie testowe wewnątrz TestCommand. SubItemCallback ()".
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Dodawanie menu do paska menu programu Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)
 - [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)

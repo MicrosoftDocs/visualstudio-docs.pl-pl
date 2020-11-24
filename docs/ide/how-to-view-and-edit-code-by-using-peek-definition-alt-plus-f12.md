@@ -1,5 +1,7 @@
 ---
 title: Korzystanie z definicji wglądu
+description: Dowiedz się, jak za pomocą polecenia Zobacz definicję wyświetlić i edytować swój kod bez konieczności przełączania się z kodu, który jest aktualnie pisany.
+ms.custom: SEO-VS-2020
 ms.date: 01/10/2018
 ms.topic: how-to
 author: TerryGLee
@@ -7,16 +9,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 753d26e2c48f6263ccbc9c403f255948b5077924
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0b706e730767c7c79fbeebc11291ecd11f4635b6
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86092313"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596927"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Instrukcje: wyświetlanie i edytowanie kodu za pomocą definicji wglądu (Alt + F12)
 
-Aby wyświetlić i edytować kod bez przełączania się z kodu, który piszesz, można użyć polecenia Sprawdź **definicję** . Zobacz **definicję** i **Przejdź do definicji** Pokaż te same informacje, ale w oknie podręcznym wybierz pozycję **Definicja wglądu** , a następnie **Przejdź do** definicji — pokazuje kod w oddzielnym oknie kodu. Polecenie **Przejdź do definicji** powoduje, że kontekst (czyli aktywne okno kodu, bieżący wiersz i pozycja kursora) do przełączenia do okna kodu definicji. Przy użyciu **definicji wglądu**można wyświetlać i edytować definicję i poruszać się wewnątrz pliku definicji, zachowując swoje miejsce w oryginalnym pliku kodu.
+Aby wyświetlić i edytować kod bez przełączania się z kodu, który piszesz, można użyć polecenia Sprawdź **definicję** . Zobacz **definicję** i **Przejdź do definicji** Pokaż te same informacje, ale w oknie podręcznym wybierz pozycję **Definicja wglądu** , a następnie **Przejdź do** definicji — pokazuje kod w oddzielnym oknie kodu. Polecenie **Przejdź do definicji** powoduje, że kontekst (czyli aktywne okno kodu, bieżący wiersz i pozycja kursora) do przełączenia do okna kodu definicji. Przy użyciu **definicji wglądu** można wyświetlać i edytować definicję i poruszać się wewnątrz pliku definicji, zachowując swoje miejsce w oryginalnym pliku kodu.
 
 Możesz użyć **definicji wglądu** z kodem C#, Visual Basic i C++. W Visual Basic funkcja **wglądu do definicji** pokazuje łącze do **Przeglądarka obiektów** dla symboli, które nie mają metadanych definicji (na przykład typów wbudowanych w programie .NET).
 
@@ -82,7 +84,7 @@ Możesz użyć następujących skrótów klawiaturowych z oknem **definicji wgl�
 > [!NOTE]
 > Możesz również użyć tych samych skrótów klawiaturowych do edycji kodu w oknie **definicji wglądu** w innym miejscu w programie Visual Studio.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Nawiguj po kodzie](../ide/navigating-code.md)
 - [Przejdź do definicji i Zobacz definicję](../ide/go-to-and-peek-definition.md)

@@ -1,5 +1,7 @@
 ---
 title: Jak poruszać się w środowisku IDE
+description: Dowiedz się, jak poruszać się w środowisku IDE programu Visual Studio z okna do okna i plików do pliku na kilka różnych sposobów.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -17,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1052deb04a93d11349ef9beb2ff667893095902f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b8f2e796ed122bc4dba0c1fb4cfca85c74065fb8
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769845"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597044"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Instrukcje: poruszanie się w środowisku IDE programu Visual Studio
 
@@ -92,7 +94,7 @@ Możesz również przełączyć się do określonego pliku otwartego w edytorze,
     > [!TIP]
     > Aby odwrócić kolejność, w której można przejść przez **aktywną listę okien narzędzi** , przytrzymaj wciśnięty klawisz **SHIFT** + **Alt** i naciśnij klawisz **F7**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Dostosowywanie układów okien](../ide/customizing-window-layouts-in-visual-studio.md)
 - [Domyślne skróty klawiaturowe](../ide/default-keyboard-shortcuts-in-visual-studio.md)

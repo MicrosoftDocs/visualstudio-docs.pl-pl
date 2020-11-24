@@ -1,5 +1,7 @@
 ---
 title: Aktualizowanie istniejących szablonów elementów projektu
+description: Dowiedz się, jak za pomocą Kreatora eksportowania szablonów i innych procesów ręcznych zaktualizować szablony elementów projektu, które zostały już utworzone.
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: d5d9726ecbf3cb7c403f682aadb197a26b0dc26b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3a709070d777ebaf600fc05abf0e651eaef5b1a
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283921"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596888"
 ---
 # <a name="how-to-update-existing-templates"></a>Instrukcje: aktualizowanie istniejących szablonów
 
@@ -65,7 +67,7 @@ Istniejący szablon można zaktualizować bez użycia **Kreatora eksportu szablo
 
 1. Usuń wyodrębnione pliki szablonów i stary plik template *. zip* .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Dostosowywanie szablonów](../ide/customizing-project-and-item-templates.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)

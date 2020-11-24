@@ -1,5 +1,7 @@
 ---
 title: Tryb mapy paska przewijania i tryb paska
+description: Dowiedz się, jak śledzić zmiany w kodzie za pomocą dostosowywania paska przewijania, a także dowiedzieć się, jak używać trybu słupkowego i trybu mapowania.
+ms.custom: SEO-VS-2020
 ms.date: 03/20/2020
 ms.topic: how-to
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d1b659dabed2337013ffb84ff48277f0edacb09
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c59ac152be9528ef3e01410f0a3b5f34dd882286
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283986"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596940"
 ---
 # <a name="how-to-customize-the-scroll-bar"></a>Instrukcje: Dostosowywanie paska przewijania
 
@@ -68,8 +70,8 @@ Na poniższej ilustracji przedstawiono opcję **Pokaż podgląd etykietki narzę
 ![Pasek przewijania programu Visual Studio z etykietką](../ide/media/enhancedscrollbarsearchtooltip.png)
 
 > [!TIP]
-> Aby zmienić kolory widoczne w trybie mapy, wybierz opcje **Narzędzia**  >  **Options**  >  **Environment**  >  **czcionki i kolory**środowiska. Następnie w obszarze **Wyświetl elementy**Wybierz dowolne elementy, które są poprzedzone "omówieniem", wprowadź odpowiednie zmiany, a następnie wybierz **OK**.
+> Aby zmienić kolory widoczne w trybie mapy, wybierz opcje **Narzędzia**  >  **Options**  >  **Environment**  >  **czcionki i kolory** środowiska. Następnie w obszarze **Wyświetl elementy** Wybierz dowolne elementy, które są poprzedzone "omówieniem", wprowadź odpowiednie zmiany, a następnie wybierz **OK**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Funkcje edytora kodu](../ide/writing-code-in-the-code-and-text-editor.md)

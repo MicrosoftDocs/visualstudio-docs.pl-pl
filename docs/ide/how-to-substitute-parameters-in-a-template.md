@@ -1,5 +1,7 @@
 ---
 title: Dodawanie parametrów nazw do szablonów projektów i elementów
+description: Dowiedz się, jak zmodyfikować parametry szablonu, aby zastąpić identyfikatory, takie jak nazwy klas i przestrzenie nazw.
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 3c8b6e0570567e8eb696fda61fe9db7bbd4a2f1b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba830035f441421ca0eb83404b37319d9a9e2ca3
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283947"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596862"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>Instrukcje: zastępowanie parametrów w szablonie
 
@@ -40,7 +42,7 @@ W poniższej sekcji pokazano, jak zmodyfikować szablon, aby zastąpić nazwę p
     <ProjectItem ReplaceParameters="true">Class1.cs</ProjectItem>
     ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
 - [Parametry szablonu](../ide/template-parameters.md)

@@ -1,5 +1,7 @@
 ---
 title: Samouczek testów jednostkowych w języku C#
+description: Dowiedz się, jak tworzyć, uruchamiać i dostosowywać serię testów jednostkowych przy użyciu struktury testów jednostkowych firmy Microsoft dla kodu zarządzanego i programu Visual Studio Test Explorer.
+ms.custom: SEO-VS-2020
 ms.date: 05/14/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: b68cb720a636483a0c5e8c3193142d95dbb0afcd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed2e7f11a6e36c797bb6c506c19b0fff11fb5ad1
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81223674"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598552"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Przewodnik: Tworzenie i uruchamianie testów jednostkowych dla kodu zarządzanego
 
@@ -38,7 +40,7 @@ Ten artykuł przeprowadzi Cię przez proces tworzenia, uruchamiania i dostosowyw
 
 3. W kategorii **Visual C#** > **.NET Core** wybierz szablon projektu **aplikacja konsoli (.NET Core)** .
 
-4. Nadaj nazwę **bankowi**projektu, a następnie kliknij przycisk **OK**.
+4. Nadaj nazwę **bankowi** projektu, a następnie kliknij przycisk **OK**.
 
    Projekt banku zostanie utworzony i wyświetlony w **Eksplorator rozwiązań** z plikiem *program.cs* otwartym w edytorze kodu.
 
@@ -55,7 +57,7 @@ Ten artykuł przeprowadzi Cię przez proces tworzenia, uruchamiania i dostosowyw
 
 3. Wyszukaj i wybierz szablon projektu **Aplikacja konsolowa w języku C# (.NET Core)** , a następnie kliknij przycisk **dalej**.
 
-4. Nadaj nazwę **bankowi**projektu, a następnie kliknij przycisk **Utwórz**.
+4. Nadaj nazwę **bankowi** projektu, a następnie kliknij przycisk **Utwórz**.
 
    Projekt banku zostanie utworzony i wyświetlony w **Eksplorator rozwiązań** z plikiem *program.cs* otwartym w edytorze kodu.
 
@@ -165,7 +167,7 @@ Masz teraz projekt z metodami, które możesz przetestować. W tym artykule test
 
 3. Nazwij projekt **BankTests**.
 
-4. Kliknij przycisk **Utwórz**.
+4. Kliknij pozycję **Utwórz**.
 
    Projekt **BankTests** jest dodawany do rozwiązania **bankowego** .
 
@@ -173,7 +175,7 @@ Masz teraz projekt z metodami, które możesz przetestować. W tym artykule test
 
 5. W projekcie **BankTests** Dodaj odwołanie do projektu **bankowego** .
 
-   W **Eksplorator rozwiązań**wybierz pozycję **zależności** w projekcie **BankTests** , a następnie wybierz pozycję **Dodaj odwołanie** z menu dostępnego po kliknięciu prawym przyciskiem myszy.
+   W **Eksplorator rozwiązań** wybierz pozycję **zależności** w projekcie **BankTests** , a następnie wybierz pozycję **Dodaj odwołanie** z menu dostępnego po kliknięciu prawym przyciskiem myszy.
 
 6. W oknie dialogowym **Menedżer odwołań** rozwiń węzeł **projekty**, wybierz pozycję **rozwiązanie**, a następnie sprawdź element **Bank** .
 
@@ -185,7 +187,7 @@ Utwórz klasę testową, aby zweryfikować `BankAccount` klasę. Możesz użyć 
 
 ### <a name="rename-a-file-and-class"></a>Zmiana nazwy pliku i klasy
 
-1. Aby zmienić nazwę pliku, w **Eksplorator rozwiązań**wybierz plik *UnitTest1.cs* w projekcie BankTests. W menu rozwijanym prawym przyciskiem myszy wybierz **Zmień nazwę**, a następnie zmień nazwę pliku na *BankAccountTests.cs*.
+1. Aby zmienić nazwę pliku, w **Eksplorator rozwiązań** wybierz plik *UnitTest1.cs* w projekcie BankTests. W menu rozwijanym prawym przyciskiem myszy wybierz **Zmień nazwę**, a następnie zmień nazwę pliku na *BankAccountTests.cs*.
 
 ::: moniker range="vs-2017"
 
@@ -321,7 +323,7 @@ m_balance -= amount;
 
 ### <a name="rerun-the-test"></a>Uruchom ponownie test
 
-W **Eksploratorze testów**wybierz opcję **Uruchom wszystkie** , aby ponownie uruchomić test. Czerwony/zielony pasek zmieni kolor na zielony, aby wskazać, że test zakończono.
+W **Eksploratorze testów** wybierz opcję **Uruchom wszystkie** , aby ponownie uruchomić test. Czerwony/zielony pasek zmieni kolor na zielony, aby wskazać, że test zakończono.
 
 ![Eksplorator testów w programie Visual Studio 2019 pokazujący zakończony test](media/test-explorer-banktests-passed.png)
 
@@ -462,13 +464,13 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 }
 ```
 
-### <a name="conclusion"></a>Podsumowanie
+### <a name="conclusion"></a>Wniosek
 
 Ulepszenia kodu testowego doprowadziły do bardziej niezawodnych i informacyjnych metod testowych. Ale co ważniejsze, poprawiły się także kod testowy.
 
 > [!TIP]
 > W tym przewodniku zastosowano środowisko testów jednostkowych firmy Microsoft dla kodu zarządzanego. **Eksplorator testów** może również uruchamiać testy z platform testów jednostkowych innych firm, które mają karty w **Eksploratorze testów**. Aby uzyskać więcej informacji, zobacz [Instalowanie platform testów jednostkowych](../test/install-third-party-unit-test-frameworks.md)innych firm.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 Aby uzyskać informacje o sposobach uruchamiania testów z wiersza polecenia, zobacz [VSTest.Console.exe opcje wiersza polecenia](vstest-console-options.md).

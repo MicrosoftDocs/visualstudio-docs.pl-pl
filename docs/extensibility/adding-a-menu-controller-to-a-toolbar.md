@@ -1,5 +1,7 @@
 ---
 title: Dodawanie kontrolera menu do paska narzędzi | Microsoft Docs
+description: Dowiedz się, jak utworzyć kontroler menu i dodać go do paska narzędzi okna narzędzia w programie Visual Studio, a następnie zaimplementować polecenia kontrolera menu i je przetestować.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 32cbbbc7784c112b33b5f720b306b8c93269bb82
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3ce14999913a3928cbe25d9f034c8288651629a3
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903535"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597824"
 ---
 # <a name="add-a-menu-controller-to-a-toolbar"></a>Dodawanie kontrolera menu do paska narzędzi
 Ten przewodnik kompiluje się na stronie [Dodawanie paska narzędzi do](../extensibility/adding-a-toolbar-to-a-tool-window.md) przewodnika po oknie narzędzia i pokazuje, jak dodać kontroler menu do paska narzędzi okna narzędzi. Kroki przedstawione w tym miejscu można również zastosować do paska narzędzi, który został utworzony w przewodniku [Dodawanie paska narzędzi](../extensibility/adding-a-toolbar.md) .
@@ -33,7 +35,7 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
 
 1. Postępuj zgodnie z procedurami opisanymi w temacie [Dodawanie paska narzędzi do okna narzędzi](../extensibility/adding-a-toolbar-to-a-tool-window.md) , aby utworzyć okno narzędzia z paskiem narzędzi.
 
-2. W *TWTestCommandPackage. vsct*przejdź do sekcji symbole. W elemencie GuidSymbol o nazwie **guidTWTestCommandPackageCmdSet**Zadeklaruj kontroler menu, grupę kontrolerów menu i trzy elementy menu.
+2. W *TWTestCommandPackage. vsct* przejdź do sekcji symbole. W elemencie GuidSymbol o nazwie **guidTWTestCommandPackageCmdSet** Zadeklaruj kontroler menu, grupę kontrolerów menu i trzy elementy menu.
 
     ```xml
     <IDSymbol name="TestMenuController" value="0x1300" /><IDSymbol name="TestMenuControllerGroup" value="0x1060" /><IDSymbol name="cmdidMCItem1" value="0x0130" /><IDSymbol name="cmdidMCItem2" value="0x0131" /><IDSymbol name="cmdidMCItem3" value="0x0132" />
@@ -113,15 +115,15 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
 1. W *TWTestCommandPackageGuids.cs*, Dodaj identyfikatory poleceń dla trzech elementów menu po istniejących identyfikatorach poleceń.
 
     ```csharp
-    public const int cmdidMCItem1 = 0x130;
-    public const int cmdidMCItem2 = 0x131;
-    public const int cmdidMCItem3 = 0x132;
+    public const int cmdidMCItem1 = 0x130;
+    public const int cmdidMCItem2 = 0x131;
+    public const int cmdidMCItem3 = 0x132;
     ```
 
-2. W *TWTestCommand.cs*Dodaj następujący kod w górnej części `TWTestCommand` klasy.
+2. W *TWTestCommand.cs* Dodaj następujący kod w górnej części `TWTestCommand` klasy.
 
     ```csharp
-    private int currentMCCommand; // The currently selected menu controller command
+    private int currentMCCommand; // The currently selected menu controller command
     ```
 
 3. W konstruktorze TWTestCommand po ostatnim wywołaniu `AddCommand` metody Dodaj kod, aby skierować zdarzenia dla każdego polecenia za pomocą tych samych programów obsługi.
@@ -136,7 +138,7 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
           EventHandler(OnMCItemClicked), cmdID);
         mc.BeforeQueryStatus += new EventHandler(OnMCItemQueryStatus);
         commandService.AddCommand(mc);
-        // The first item is, by default, checked. 
+        // The first item is, by default, checked. 
         if (TWTestCommandPackageGuids.cmdidMCItem1 == i)
         {
             mc.Checked = true;
@@ -148,7 +150,7 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
 4. Dodaj procedurę obsługi zdarzeń do klasy **TWTestCommand** , aby oznaczyć wybrane polecenie jako zaznaczone.
 
     ```csharp
-    private void OnMCItemQueryStatus(object sender, EventArgs e)
+    private void OnMCItemQueryStatus(object sender, EventArgs e)
     {
         OleMenuCommand mc = sender as OleMenuCommand;
         if (null != mc)
@@ -161,7 +163,7 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
 5. Dodaj program obsługi zdarzeń, który wyświetla element MessageBox, gdy użytkownik wybierze polecenie w kontrolerze menu:
 
     ```csharp
-    private void OnMCItemClicked(object sender, EventArgs e)
+    private void OnMCItemClicked(object sender, EventArgs e)
     {
         OleMenuCommand mc = sender as OleMenuCommand;
         if (null != mc)
@@ -222,6 +224,6 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
 
     Zostanie wyświetlone okno dialogowe z wybranym komunikatem **menu element kontroler 3**. Zauważ, że komunikat odpowiada tekstowi na przycisku kontrolera menu. Przycisk kontroler menu wyświetla teraz **pozycję MC element 3**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dodawanie paska narzędzi do okna narzędzi](../extensibility/adding-a-toolbar-to-a-tool-window.md)
 - [Dodawanie paska narzędzi](../extensibility/adding-a-toolbar.md)

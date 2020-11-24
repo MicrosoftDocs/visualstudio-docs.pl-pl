@@ -1,5 +1,7 @@
 ---
 title: Anatomia pakietu VSIX | Microsoft Docs
+description: Dowiedz się więcej o zawartości pakietu VSIX w programie Visual Studio, pliku, który zawiera co najmniej jedno rozszerzenie programu Visual Studio i plik manifestu metadanych.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33cecb4767193010d7e7ca330d891d1835091875
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 3fc65cda5eb969e361e90771e0245fdaeaeebcd1
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012337"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598162"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Anatomia pakietu VSIX
 Pakiet VSIX to plik *. vsix* , który zawiera co najmniej jedno rozszerzenie programu Visual Studio, wraz z metadanymi, które są używane przez program Visual Studio do klasyfikowania i instalowania rozszerzeń. Metadane są zawarte w manifeście VSIX i pliku *[Content_Types]. XML* . Pakiet VSIX może również zawierać co najmniej jeden plik *rozszerzenia. vsixlangpack* , aby zapewnić zlokalizowany tekst instalacji i może zawierać dodatkowe pakiety VSIX, aby zainstalować zależności.

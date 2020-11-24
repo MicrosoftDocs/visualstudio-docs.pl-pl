@@ -1,5 +1,7 @@
 ---
 title: Dodawanie paska narzędzi | Microsoft Docs
+description: Dowiedz się, jak dodać pasek narzędzi zawierający przyciski, które są powiązane z poleceniami do zintegrowanego środowiska programistycznego (IDE) programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: beb97356daf3c932470bf2598e58e1f5b40ea233
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 434f7470fe5fca13f217c981cc99d6a884117a86
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904079"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597954"
 ---
 # <a name="add-a-toolbar"></a>Dodawanie paska narzędzi
 W tym instruktażu pokazano, jak dodać pasek narzędzi do środowiska IDE programu Visual Studio.
@@ -35,7 +37,7 @@ W tym instruktażu pokazano, jak dodać pasek narzędzi do środowiska IDE progr
 
 ## <a name="create-a-toolbar-for-the-ide"></a>Utwórz pasek narzędzi dla środowiska IDE
 
-1. W *ToolbarTestCommandPackage. vsct*poszukaj sekcji symboli. W elemencie GuidSymbol o nazwie guidToolbarTestCommandPackageCmdSet Dodaj deklaracje dla paska narzędzi i grupy pasków narzędzi w następujący sposób.
+1. W *ToolbarTestCommandPackage. vsct* poszukaj sekcji symboli. W elemencie GuidSymbol o nazwie guidToolbarTestCommandPackageCmdSet Dodaj deklaracje dla paska narzędzi i grupy pasków narzędzi w następujący sposób.
 
     ```xml
     <IDSymbol name="Toolbar" value="0x1000" />
@@ -89,5 +91,5 @@ W tym instruktażu pokazano, jak dodać pasek narzędzi do środowiska IDE progr
 
 7. Pasek narzędzi powinien być teraz widoczny jako ikona z prawej strony ikony Znajdź w plikach. Po kliknięciu ikony zostanie wyświetlone okno komunikatu z informacją o **ToolbarTestCommandPackage. Wewnątrz IDEToolbar. ToolbarTestCommand. MenuItemCallback ()**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)
