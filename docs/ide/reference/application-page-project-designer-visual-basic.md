@@ -1,5 +1,7 @@
 ---
 title: Strona aplikacji właściwości projektu VB
+description: Dowiedz się, jak używać strony aplikacji projektanta projektu Visual Basic, aby określić ustawienia i właściwości aplikacji projektu.
+ms.custom: SEO-VS-2020
 ms.date: 10/30/2018
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe303f86b282e7e803dacc1dd8f4d3c1d6b72121
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 675c3fbaaf1a3e49648befebca4927299649b057
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595816"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871421"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Strona aplikacji, Projektant projektu (Visual Basic)
 
@@ -68,7 +70,7 @@ Aby uzyskać więcej informacji, zobacz temat [Omówienie funkcji określania wa
 
 ### <a name="application-type"></a>Typ aplikacji
 
-Określa typ aplikacji do skompilowania. Wartości są różne w zależności od typu projektu. Na przykład dla projektu **aplikacji Windows Forms** można określić **aplikację Windows Forms**, **bibliotekę klas**, **aplikację konsolową**, **usługę systemu Windows**lub **bibliotekę formantów sieci Web**.
+Określa typ aplikacji do skompilowania. Wartości są różne w zależności od typu projektu. Na przykład dla projektu **aplikacji Windows Forms** można określić **aplikację Windows Forms**, **bibliotekę klas**, **aplikację konsolową**, **usługę systemu Windows** lub **bibliotekę formantów sieci Web**.
 
 Dla projektu aplikacji sieci Web należy określić **bibliotekę klas**.
 
@@ -102,7 +104,7 @@ Kliknij ten przycisk, aby wyświetlić okno [dialogowe informacje o zestawie](..
 
 ### <a name="enable-application-framework"></a>Włącz platformę aplikacji
 
-Określa, czy projekt będzie używać struktury aplikacji. Ustawienie tej opcji ma wpływ na opcje dostępne w **Startup form** / **obiekcie startowym**formularza startowego.
+Określa, czy projekt będzie używać struktury aplikacji. Ustawienie tej opcji ma wpływ na opcje dostępne w **Startup form** / **obiekcie startowym** formularza startowego.
 
 Jeśli to pole wyboru jest zaznaczone, aplikacja używa standardu `Sub Main` . Zaznaczenie tego pola wyboru włącza funkcje w sekcji **Właściwości platformy aplikacji systemu Windows** , a także wymaga wybrania formularza startowego.
 

@@ -1,5 +1,7 @@
 ---
 title: Dostosowywanie środowiska IDE
+description: Dowiedz się, jak spersonalizować środowisko IDE programu Visual Studio w sposób, który najlepiej obsługuje własny styl i wymagania deweloperskie.
+ms.custom: SEO-VS-2020
 ms.date: 11/20/2017
 ms.topic: conceptual
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39c9edbf5e96a59912c0cf16d7b4178f6fba2a62
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4acd399aeb9de1d25cbe6abe2b8bba3f347dbc8a
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585746"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871460"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Personalizowanie środowiska IDE programu Visual Studio
 
@@ -29,7 +31,7 @@ Można wybrać domyślną kolekcję ustawień, które optymalizują program Visu
 
 Wiele opcji personalizacji jest dostępnych w oknie dialogowym [Opcje środowiska](../ide/reference/general-environment-options-dialog-box.md) . Istnieją dwa sposoby uzyskania dostępu do tego okna dialogowego:
 
-- Na pasku menu wybierz **Tools**  >  **Opcje**narzędzia i jeśli nie jest jeszcze rozwinięte, rozwiń węzeł **środowisko** .
+- Na pasku menu wybierz **Tools**  >  **Opcje** narzędzia i jeśli nie jest jeszcze rozwinięte, rozwiń węzeł **środowisko** .
 
 - Naciśnij **klawisze CTRL** + **Q**, wpisz **środowisko** w polu wyszukiwania, a następnie wybierz **środowisko > ogólne** z wyników.
 
@@ -66,7 +68,7 @@ Można definiować i zapisywać wiele układów okien i przełączać się międ
 
 Możesz dostosować menu **Narzędzia** , aby uruchomić zewnętrzne narzędzia. Aby uzyskać więcej informacji, zobacz [Zarządzanie narzędziami zewnętrznymi](../ide/managing-external-tools.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Ustawienia środowiska](environment-settings.md)
 - [Środowisko IDE programu Visual Studio — omówienie](../get-started/visual-studio-ide.md)

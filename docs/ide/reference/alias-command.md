@@ -1,5 +1,7 @@
 ---
 title: Alias — Polecenie
+description: Dowiedz się, jak za pomocą polecenia alias utworzyć nowy alias dla kompletnego polecenia, kompletne polecenie i argumenty lub inny alias.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 031f1a4bab1acee3f3d0999b17c0b607f7808df9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a9521809baf338c542b0c1cba288f643b985f02
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596908"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871512"
 ---
 # <a name="alias-command"></a>Alias — Polecenie
 Tworzy nowy alias dla kompletnego polecenia, kompletne polecenie i argumenty lub inny alias.
@@ -75,7 +77,7 @@ Ten przykład wyświetla listę wszystkich bieżących aliasów i definicji.
 >Tools.Alias
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Okno polecenia](../../ide/reference/command-window.md)

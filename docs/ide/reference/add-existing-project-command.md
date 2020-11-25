@@ -1,5 +1,7 @@
 ---
 title: Dodaj istniejący projekt — Polecenie
+description: Dowiedz się więcej na temat polecenia Dodaj istniejący projekt i sposobu dodawania istniejącego projektu do bieżącego rozwiązania.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 008802546d87bd44137c6d13ee2aef802877e308
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c12106621599d428e9a701de9ba5e468b5e312a
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595881"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871005"
 ---
 # <a name="add-existing-project-command"></a>Dodaj istniejący projekt — Polecenie
 Dodaje istniejący projekt do bieżącego rozwiązania.
@@ -47,7 +49,7 @@ Ten przykład dodaje [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)
 >File.AddExistingProject "c:\visual studio projects\TestProject1.vbproj"
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Okno polecenia](../../ide/reference/command-window.md)

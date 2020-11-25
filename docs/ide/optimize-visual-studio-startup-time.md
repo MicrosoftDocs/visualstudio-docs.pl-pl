@@ -1,5 +1,7 @@
 ---
 title: Zwiększ czas uruchamiania
+description: Dowiedz się, jak kontrolować ustawienia rozszerzeń i okien narzędzi w oknie dialogowym Zarządzanie wydajnością programu Visual Studio w celu usprawnienia czasu uruchamiania programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/15/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +16,12 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: 399bab1b95a7f17166f205902d04a1abec10e6dd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a9cc3309e75e23ff325dd08ef9d2cceacb5f5db5
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770977"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871499"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Optymalizuj czas uruchamiania programu Visual Studio
 
@@ -68,7 +70,7 @@ Można zawsze ponownie włączyć rozszerzenie dla przyszłych sesji za pomocą 
 > [!NOTE]
 > Niektóre starsze wersje programu Visual Studio 2017 miały funkcję o nazwie **uproszczone ładowanie rozwiązań**. W bieżących wersjach, duże rozwiązania zawierające kod zarządzany znacznie szybciej niż wcześniej, nawet bez uproszczonego ładowania rozwiązania.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Optymalizowanie wydajności programu Visual Studio](../ide/optimize-visual-studio-performance.md)
 - [Porady i wskazówki dotyczące wydajności programu Visual Studio](../ide/visual-studio-performance-tips-and-tricks.md)

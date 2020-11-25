@@ -1,5 +1,7 @@
 ---
 title: Dodawanie atrybutu DebuggerDisplay
+description: Dowiedz się, jak dodać atrybut DebuggerDisplay, aby kontrolować sposób wyświetlania przez okno zmiennych debugera obiektu, właściwości lub pola.
+ms.custom: SEO-VS-2020
 ms.date: 05/12/2020
 ms.topic: reference
 author: mikadumont
@@ -7,12 +9,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: db49bfd1672866a755cce6780527520da2cad420
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: fa6baa6e104fca2d3a3b45cac343fd1ceb086271
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810392"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871122"
 ---
 # <a name="add-debuggerdisplay-attribute"></a>Dodawanie atrybutu DebuggerDisplay
 
@@ -36,7 +38,7 @@ Ta generacja kodu ma zastosowanie do:
 
 3. Atrybut DebuggerDisplay zostanie dodany wraz z metodą autodostrajania, która zwraca domyślny element ToString (). 
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Generowanie kodu](../code-generation-in-visual-studio.md)
 - [Podgląd zmian](../../ide/preview-changes.md)

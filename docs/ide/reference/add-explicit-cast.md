@@ -1,5 +1,7 @@
 ---
 title: Dodawanie jawnego rzutowania
+description: Dowiedz się, jak automatycznie dodawać jawne rzutowanie do wyrażenia na podstawie kontekstu kodu.
+ms.custom: SEO-VS-2020
 ms.date: 03/26/2020
 ms.topic: reference
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e159082266b848ce4742e436c706f3f71b2cc9ea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a8208ec9c84eb076ab5c313b3078d3853619fb06
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84182979"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95870849"
 ---
 # <a name="add-explicit-cast"></a>Dodawanie jawnego rzutowania
 
@@ -34,7 +36,7 @@ Ta generacja kodu ma zastosowanie do:
 
    ![Dodaj jawną akcję rzutowania do trybu w programie Visual Studio](media/add-explicit-cast.png)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Generowanie kodu](../code-generation-in-visual-studio.md)
 - [Refaktoryzacja](../refactoring-in-visual-studio.md)

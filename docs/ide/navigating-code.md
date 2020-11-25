@@ -1,5 +1,7 @@
 ---
 title: Polecenia nawigacji kodu
+description: Dowiedz się więcej o różnych opcjach, które należy wykonać, aby poruszać się w kodzie w edytorze.
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,12 +20,12 @@ ms.author: tglee
 manager: tglee
 ms.workload:
 - multiple
-ms.openlocfilehash: 0216a71b675473d54aec9738ea7bdc85b7643841
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 77b0f8782f9ffaf37701f13b30be6e068ce05f8d
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585824"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871525"
 ---
 # <a name="navigate-code"></a>Nawiguj po kodzie
 
@@ -57,7 +59,7 @@ Możesz nawigować wokół pól rozwijanych w następujący sposób:
 
 - Aby zwrócić fokus z paska nawigacyjnego do kodu bez zaznaczania niczego, naciśnij klawisz **ESC** .
 
-Aby ukryć pasek nawigacyjny, należy zmienić opcję **pasek nawigacyjny** w ustawieniach **Edytor tekstu wszystkie języki** (**Tools**  >  **Opcje**narzędzia  >  **Edytor tekstu**  >  **wszystkie języki**) lub zmienić ustawienia dla poszczególnych języków.
+Aby ukryć pasek nawigacyjny, należy zmienić opcję **pasek nawigacyjny** w ustawieniach **Edytor tekstu wszystkie języki** (**Tools**  >  **Opcje** narzędzia  >  **Edytor tekstu**  >  **wszystkie języki**) lub zmienić ustawienia dla poszczególnych języków.
 
 ## <a name="find-all-references"></a>Znajdź wszystkie odwołania
 
@@ -163,7 +165,7 @@ Możesz użyć rozszerzonego paska przewijania w oknie kodu, aby uzyskać wgląd
 
 W edytorze kodu można znaleźć informacje o konkretnym kodzie, takie jak zmiany i osoby, które wprowadziły te zmiany, odwołania, błędy, elementy robocze, przeglądy kodu i stan testu jednostkowego. CodeLens działa jak w przypadku wyświetlania głowic w przypadku używania Visual Studio Enterprise z Team Foundation Server. Zobacz [Znajdowanie zmian w kodzie i innych historii](../ide/find-code-changes-and-other-history-with-codelens.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Funkcje edytora kodu](../ide/writing-code-in-the-code-and-text-editor.md)
 - [Wyświetl hierarchię wywołań](../ide/reference/call-hierarchy.md)

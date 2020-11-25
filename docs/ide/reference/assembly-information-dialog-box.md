@@ -1,5 +1,7 @@
 ---
 title: Informacje o zestawie — Okno dialogowe
+description: Dowiedz się więcej na temat okna dialogowego Informacje o zestawie i sposobu jego użycia, aby określić wartości .NET Framework globalnych atrybutów zestawu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1813c4e399a125aca0185436b4a7216b72b5842
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: ee8738d06c0f02adb6f5e6352d2006e0133c66ef
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809010"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871343"
 ---
 # <a name="assembly-information-dialog-box"></a>Informacje o zestawie — Okno dialogowe
 
@@ -36,7 +38,7 @@ Określa opcjonalny opis manifestu zestawu. Odnosi się do <xref:System.Reflecti
 **Przedsiębiorstwo**\
 Określa nazwę firmy dla manifestu zestawu. Odnosi się do <xref:System.Reflection.AssemblyCompanyAttribute> .
 
-Możesz ustawić lub zmienić wartość domyślną dla firmy w rejestrze. W zależności od używanej wersji systemu Windows poszukaj wartości **RegisteredOrganization** w kluczu **Computer \ HKEY_LOCAL_MACHINE \Software\wow6432node\microsoft\windows NT\CurrentVersion** lub **Computer \ HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\Windows NT\CurrentVersion** .
+Możesz ustawić lub zmienić wartość domyślną dla firmy w rejestrze. Poszukaj wartości **RegisteredOrganization** w kluczu **Computer\HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion** lub **Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion** , w zależności od używanej wersji systemu Windows.
 
 **Iloczyn**\
 Określa nazwę produktu dla manifestu zestawu. Odnosi się do <xref:System.Reflection.AssemblyProductAttribute> .
@@ -65,7 +67,7 @@ Określa, czy typy w zestawie będą dostępne dla modelu COM. Odnosi się do <x
 > [!NOTE]
 > Aby uzyskać więcej informacji na temat ustawiania tych właściwości podczas generowania pakietu NuGet w bibliotece klas .NET Framework, zobacz [Konfigurowanie właściwości projektu dla pakietu](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework#configure-project-properties-for-the-package).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Strona aplikacji, Projektant projektu (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)
 - [Atrybuty](/previous-versions/z0w1kczw(v=vs.140))

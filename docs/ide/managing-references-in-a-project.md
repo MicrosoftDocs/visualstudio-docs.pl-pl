@@ -1,5 +1,7 @@
 ---
 title: Zarządzanie odwołaniami w projekcie
+description: Dowiedz się, jak zarządzać odwołaniami do składników zewnętrznych i połączonych usług w projekcie.
+ms.custom: SEO-VS-2020
 ms.date: 08/02/2019
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c55b0d3487eb18db33805b418882f157d55b1253
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fdf737d26ec14c2a108125425a3b66cdf4a0e519
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183538"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95870953"
 ---
 # <a name="manage-references-in-a-project"></a>Zarządzanie odwołaniami w projekcie
 
@@ -126,7 +128,7 @@ W przeciwieństwie do większości innych typów projektów, *projekt udostępni
 
 Odwołania do plików są bezpośrednimi odwołaniami do zestawów poza kontekstem projektu programu Visual Studio. Można je utworzyć za pomocą karty **Przeglądaj** okna dialogowego Menedżer odwołań. Użyj odwołania do pliku, gdy masz tylko zestaw lub składnik, a nie projekt, który tworzy go jako dane wyjściowe.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Rozwiązywanie problemów z przerwanymi odwołaniami](../ide/troubleshooting-broken-references.md)
 - [Instrukcje: Dodawanie lub usuwanie odwołań](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)

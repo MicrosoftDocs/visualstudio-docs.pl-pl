@@ -1,5 +1,7 @@
 ---
 title: Dodaj nowy element — Polecenie
+description: Dowiedz się, jak za pomocą polecenia Dodaj nowy element dodać nowy element rozwiązania lub zestaw ramek do bieżącego rozwiązania.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38be691ae7c49ffbd6c98c9e4beb25b6ebb021b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac07b374ef08a963426b9bfd44f101a8863f04c8
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585694"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871291"
 ---
 # <a name="add-new-item-command"></a>Dodaj nowy element — Polecenie
 Dodaje nowy element rozwiązania, taki jak. htm, CSS, txt lub FRAMESET do bieżącego rozwiązania i otwiera go.
@@ -63,7 +65,7 @@ W tym przykładzie dodano nowy element rozwiązania MyHTMLpg do bieżącego rozw
 >File.AddNewItem MyHTMLpg /t:"General\HTML Page"
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Okno polecenia](../../ide/reference/command-window.md)

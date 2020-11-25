@@ -1,5 +1,7 @@
 ---
 title: Zaawansowane ustawienia dla usług — Okno dialogowe
+description: Dowiedz się, jak skonfigurować zaawansowane ustawienia usług aplikacji klienta przy użyciu funkcji zaawansowane ustawienia usług.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 967e99102f3b88e82a5466e7ce8d2cac2412d286
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 59ad28dd6890effbac00282a0e9bc388b4191139
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585681"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871317"
 ---
 # <a name="advanced-settings-for-services-dialog-box"></a>Zaawansowane ustawienia dla usług — Okno dialogowe
 Usługi aplikacji klienta zapewniają uproszczony dostęp do danych [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] logowania, ról i usług profilów z aplikacji Windows Forms i Windows Presentation Foundation (WPF). Aby skonfigurować usługi aplikacji klienta, można użyć strony **usługi** w **projektancie projektu** . Aby uzyskać więcej informacji o stronie **usług** , zobacz [stronę usług, Projektant projektu](../../ide/reference/services-page-project-designer.md).
@@ -42,7 +44,7 @@ Dostawca roli uzyskuje dostęp do buforowanych wartości ról lub usługi ról p
 
  **Użyj niestandardowych parametrów połączenia** Określa, czy dostawcy usług klienta będą używać niestandardowego magazynu danych dla lokalnej pamięci podręcznej. Domyślnie dostawcy usług będą używać lokalnego systemu plików dla pamięci podręcznej. Wybranie tej opcji spowoduje automatyczne wypełnienie pola tekstowego domyślnymi parametrami połączenia. Można zachować domyślne parametry połączenia, aby automatycznie generować i korzystać z bazy danych SQL Server Compact Edition, lub określić parametry połączenia do istniejącej bazy danych SQL Server. Aby uzyskać więcej informacji, zobacz [How to: Configure Client usługi aplikacji](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services). Ta opcja jest domyślnie wyczyszczona.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Usługi aplikacji klienckich](/dotnet/framework/common-client-technologies/client-application-services)
 - [Strona usług, Projektant projektu](../../ide/reference/services-page-project-designer.md)

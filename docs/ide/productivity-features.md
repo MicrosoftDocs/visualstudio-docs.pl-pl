@@ -1,5 +1,7 @@
 ---
 title: Przewodnik po produktywności
+description: Poznaj skróty klawiaturowe i funkcje produktywności w programie Visual Studio, które mogą pomóc efektywnie napisać kod, debugować kod i obsłużyć błędy.
+ms.custom: SEO-VS-2020
 ms.date: 4/29/2020
 ms.topic: conceptual
 author: ornellaalt
@@ -7,12 +9,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a10b1f9b3dd6dda643a2775cf7b89221fba71d8
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: bee392ddc4e7a0d185bdcc2d0e31dbd17832c733
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808145"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95870875"
 ---
 # <a name="productivity-guide-for-visual-studio"></a>Przewodnik dotyczący produktywności dla programu Visual Studio
 
@@ -40,17 +42,17 @@ Oszczędź czas przeszukiwanie stosów za pomocą menu, szybko wyszukując potrz
 
 Szybsze pisanie kodu przy użyciu następujących funkcji.
 
-- **Używaj wygodnych poleceń**. Program Visual Studio zawiera różne polecenia ułatwiające szybsze wykonywanie typowych zadań edycji. Na przykład można wybrać polecenie, aby łatwo zduplikować wiersz kodu bez konieczności jego kopiowania, zmiany położenia kursora, a następnie wklejenia. Wybierz pozycję **Edytuj**  >  **duplikat** lub naciśnij **klawisze CTRL** + **E**,**V**. Możesz również szybko rozwijać lub zwijać zaznaczenie tekstu, wybierając opcję **Edytuj**  >  **Zaawansowane**  >  **Rozszerzanie zaznaczenia** lub **Edytuj**  >  **zaawansowaną**  >  **umowę wyboru**lub naciskając klawisze **SHIFT** + **Alt** + **=** lub **SHIFT** + **Alt** + **-** .
+- **Używaj wygodnych poleceń**. Program Visual Studio zawiera różne polecenia ułatwiające szybsze wykonywanie typowych zadań edycji. Na przykład można wybrać polecenie, aby łatwo zduplikować wiersz kodu bez konieczności jego kopiowania, zmiany położenia kursora, a następnie wklejenia. Wybierz pozycję **Edytuj**  >  **duplikat** lub naciśnij **klawisze CTRL** + **E**,**V**. Możesz również szybko rozwijać lub zwijać zaznaczenie tekstu, wybierając opcję **Edytuj**  >  **Zaawansowane**  >  **Rozszerzanie zaznaczenia** lub **Edytuj**  >  **zaawansowaną**  >  **umowę wyboru** lub naciskając klawisze **SHIFT** + **Alt** + **=** lub **SHIFT** + **Alt** + **-** .
 
 - **Użyj funkcji IntelliSense**. Podczas wprowadzania kodu w edytorze informacje o technologii IntelliSense, takie jak elementy członkowskie listy, informacje o parametrach, szybkie informacje, pomoc podpisu i pełny wyraz, pojawiają się. Funkcje te obsługują rozmyte dopasowywanie tekstu; na przykład listy wyników dla członków listy zawierają nie tylko wpisy, które zaczynają się od znaków wprowadzonych, ale także wpisy, które zawierają kombinację znaków w dowolnym miejscu nazwy. Aby uzyskać więcej informacji, zobacz [Korzystanie z funkcji IntelliSense](../ide/using-intellisense.md).
 
 - **Zmień Autouzupełnianie opcji IntelliSense podczas wprowadzania kodu**. Przełączając funkcję IntelliSense do trybu sugestii, można określić, że opcje IntelliSense są wstawiane tylko wtedy, gdy użytkownik jawnie je wybiera.
 
-     Aby włączyć tryb sugestii, wybierz **kombinację klawiszy CTRL** + **Alt**/ + **Spacebar** lub na pasku menu wybierz polecenie **Edytuj**  >  **IntelliSense**  >  **Tryb uzupełniania**funkcji IntelliSense.
+     Aby włączyć tryb sugestii, wybierz **kombinację klawiszy CTRL** + **Alt**/ + **Spacebar** lub na pasku menu wybierz polecenie **Edytuj**  >  **IntelliSense**  >  **Tryb uzupełniania** funkcji IntelliSense.
 
 - **Użyj fragmentów kodu**. Możesz użyć wbudowanych fragmentów kodu lub utworzyć własne fragmenty kodu.
 
-     Aby wstawić fragment kodu, na pasku menu wybierz **Edycja**  >  **IntelliSense**  >  **Wstaw fragment kodu** lub **Otocz za pomocą**lub Otwórz menu skrótów w pliku, a następnie wybierz **Snippet**  >  **Wstaw fragment kodu** lub **Otocz za pomocą**. Aby uzyskać więcej informacji, zobacz [fragmenty kodu](../ide/code-snippets.md).
+     Aby wstawić fragment kodu, na pasku menu wybierz **Edycja**  >  **IntelliSense**  >  **Wstaw fragment kodu** lub **Otocz za pomocą** lub Otwórz menu skrótów w pliku, a następnie wybierz **Snippet**  >  **Wstaw fragment kodu** lub **Otocz za pomocą**. Aby uzyskać więcej informacji, zobacz [fragmenty kodu](../ide/code-snippets.md).
 
 - **Naprawianie błędów kodu w tekście**. Szybkie akcje umożliwiają łatwe refaktoryzację, generowanie lub modyfikowanie kodu przy użyciu jednej akcji. Te akcje mogą być stosowane przy użyciu ikony śrubokręta śrubokrętka lub żarówki ikona żarówki ![ ](media/screwdriver-icon.png) ![ ](media/light-bulb-icon.png) lub przez naciśnięcie klawisza **Alt** + **Enter** lub **Ctrl** + **.** gdy kursor znajduje się w odpowiednim wierszu kodu. Aby uzyskać więcej informacji, zobacz [szybkie akcje](quick-actions.md) .
 
@@ -76,7 +78,7 @@ Możesz użyć różnych technik, aby szybciej znajdować i przechodzić do okre
 
    Aby uzyskać dostęp do tej funkcji, na pasku menu wybierz pozycję **Edytuj**  >  **Przejdź do**.
 
-- **Przeglądaj ogólną strukturę kodu**. W **Eksplorator rozwiązań**można wyszukiwać i przeglądać klasy oraz ich typy i członków w projektach. Możesz również wyszukiwać symbole, wyświetlać hierarchię wywołań metody, znajdować odwołania do symboli i wykonywać inne zadania. Jeśli wybierzesz element kodu w **Eksplorator rozwiązań**, skojarzony plik zostanie otwarty na karcie **podglądu** , a kursor zostanie przeniesiony do elementu w pliku. Aby uzyskać więcej informacji, zobacz [Wyświetlanie struktury kodu](../ide/viewing-the-structure-of-code.md).
+- **Przeglądaj ogólną strukturę kodu**. W **Eksplorator rozwiązań** można wyszukiwać i przeglądać klasy oraz ich typy i członków w projektach. Możesz również wyszukiwać symbole, wyświetlać hierarchię wywołań metody, znajdować odwołania do symboli i wykonywać inne zadania. Jeśli wybierzesz element kodu w **Eksplorator rozwiązań**, skojarzony plik zostanie otwarty na karcie **podglądu** , a kursor zostanie przeniesiony do elementu w pliku. Aby uzyskać więcej informacji, zobacz [Wyświetlanie struktury kodu](../ide/viewing-the-structure-of-code.md).
 
 - **Przejdź do lokalizacji w pliku z trybem mapowania**. Tryb mapy Wyświetla linie kodu w miniaturach na pasku przewijania. Aby uzyskać więcej informacji o tym trybie wyświetlania, zobacz [How to: Dostosowywanie paska przewijania](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md#map-mode).
 
@@ -176,7 +178,7 @@ W dowolnym momencie możesz pracować w wielu plikach kodu i poruszać się po k
 
 - **Dostosuj czcionki, które pojawiają się w programie Visual Studio**. Można zmienić krój, rozmiar i kolor czcionki używany dla tekstu w IDE. Na przykład można dostosować kolor określonych elementów kodu w edytorze i krój czcionki w oknach narzędzi lub w środowisku IDE. Aby uzyskać więcej informacji, zobacz [How to: Change Fonts and Colors](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) i [How to: Change Fonts and Colors in the Editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Visual Studio — porady i wskazówki dotyczące wpisu w blogu](https://devblogs.microsoft.com/visualstudio/visual-studio-tips-and-tricks/)
 - [Domyślne skróty klawiaturowe dla często używanych poleceń](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)

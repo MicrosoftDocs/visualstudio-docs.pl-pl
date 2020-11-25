@@ -1,5 +1,7 @@
 ---
 title: Podgląd zmian w kodzie
+description: Dowiedz się, jak użyć okna Podgląd zmian, aby przejść do modyfikacji, które mają zostać wprowadzone do projektu przed ich zaakceptowaniem.
+ms.custom: SEO-VS-2020
 ms.date: 12/16/2016
 ms.topic: conceptual
 author: TerryGLee
@@ -9,12 +11,12 @@ f1_keywords:
 - vs.codefix.previewchanges
 ms.workload:
 - multiple
-ms.openlocfilehash: f45b186153b4cc046d35fd941f6a80e108476fc0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f8eef438f1dd504120b62e2e0018935489d6c80a
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585772"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871447"
 ---
 # <a name="preview-changes-window"></a>Podgląd okna zmian
 
@@ -28,7 +30,7 @@ Dolna połowa okna pokazuje sformatowany kod z projektu, który zostanie zmienio
 
 Po przejrzeniu zmian kliknij przycisk **Zastosuj** , aby zatwierdzić te zmiany, lub kliknij przycisk **Anuluj** , aby pozostawić elementy, które były takie same.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Refaktoryzacja w programie Visual Studio](../ide/refactoring-in-visual-studio.md)
 - [Szybkie akcje](../ide/quick-actions.md)

@@ -1,5 +1,7 @@
 ---
 title: Strona aplikacji właściwości projektu C#
+description: Dowiedz się, jak używać strony aplikacji projektanta projektu C#, aby określić ustawienia aplikacji i właściwości projektu.
+ms.custom: SEO-VS-2020
 ms.date: 10/30/2018
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ef9a38fc13d0d9c9f6b912f4cb2b83971d105c29
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0b77ee4edca8f9cb8de2079e01d9c9997a24aeff
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595829"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871382"
 ---
 # <a name="application-page-project-designer-c"></a>Strona aplikacji, Projektant projektu (C#)
 
@@ -65,7 +67,7 @@ Aby uzyskać więcej informacji, zobacz temat [Omówienie funkcji określania wa
 
 **Typ danych wyjściowych**
 
-Określa typ aplikacji do skompilowania. Wartości są różne w zależności od typu projektu. Na przykład dla projektu **aplikacji konsoli** można określić **aplikację systemu Windows**, **aplikację konsolową**lub **bibliotekę klas** jako typ danych wyjściowych.
+Określa typ aplikacji do skompilowania. Wartości są różne w zależności od typu projektu. Na przykład dla projektu **aplikacji konsoli** można określić **aplikację systemu Windows**, **aplikację konsolową** lub **bibliotekę klas** jako typ danych wyjściowych.
 
 Dla projektu aplikacji sieci Web należy określić **bibliotekę klas**.
 
@@ -115,7 +117,7 @@ Wybiera opcję generowania manifestu, gdy aplikacja jest uruchamiana w systemie 
 
 - **Utwórz aplikację bez manifestu**. Ta metoda jest znana jako *Wirtualizacja*. Użyj tej opcji, aby zapewnić zgodność ze starszymi aplikacjami.
 
-- **Properties\app.manifest**. Ta opcja jest wymagana w przypadku aplikacji wdrażanych za pomocą technologii ClickOnce lub COM bez rejestracji. Jeśli opublikujesz aplikację przy użyciu wdrożenia ClickOnce, **manifest** jest automatycznie ustawiany na tę opcję.
+- **Properties\app.manifest**. Ta opcja jest wymagana w przypadku aplikacji wdrażanych za pomocą technologii ClickOnce lub Registration-Free COM. Jeśli opublikujesz aplikację przy użyciu wdrożenia ClickOnce, **manifest** jest automatycznie ustawiany na tę opcję.
 
 **Plik zasobów**
 

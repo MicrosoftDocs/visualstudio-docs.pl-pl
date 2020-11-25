@@ -1,5 +1,7 @@
 ---
 title: Dodaj sprawdzanie wartości null dla wszystkich (parametrów)
+description: Dowiedz się, jak tworzyć i dodawać instrukcje if do kodu, który sprawdza wartość null wszystkich niesprawdzonych parametrów.
+ms.custom: SEO-VS-2020
 ms.date: 09/17/2019
 ms.topic: reference
 author: mikadumont
@@ -9,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 573a9e56d3aedd55bc571eaaa363b42a53019566
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5828a2bb28f7b3085cd5d43c452c520a730b8175
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74782308"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95870966"
 ---
 # <a name="add-null-checks-for-all-parameters"></a>Dodawanie kontroli pod kątem wartości null dla wszystkich parametrów 
 
@@ -40,6 +42,6 @@ To Refaktoryzacja dotyczy:
 
    ![Dodaj sprawdzanie wartości null dla wszystkich](media/add-null-checks-for-all.png) 
 
-## <a name="see-also"></a>Zobacz też 
+## <a name="see-also"></a>Zobacz także 
 
 - [Refaktoryzacja](../refactoring-in-visual-studio.md)

@@ -1,6 +1,8 @@
 ---
 title: Zwiększenie wydajności, jeśli program Visual Studio działa wolno
 titleSuffix: ''
+description: Dowiedz się, jak poprawić wydajność programu Visual Studio, jeśli okaże się, że działa wolno.
+ms.custom: SEO-VS-2020
 ms.date: 04/11/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: 6495e8506e12c0c5e5f878a23c609fe53a401bde
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6e6f93b7709144e6682bc54d5686fde5ff650f56
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596999"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871473"
 ---
 # <a name="optimize-visual-studio-performance"></a>Optymalizowanie wydajności programu Visual Studio
 
@@ -49,9 +51,9 @@ Ponadto nie należy uruchamiać rozwiązania z dysku USB. Skopiuj go na dysk twa
 
 ## <a name="help-us-improve"></a>Pomóż nam udoskonalić
 
-Twoja opinia pomoże nam ulepszyć program. Użyj funkcji **Zgłoś problem** , aby "zarejestrować" śledzenie i wysłać do nas. Wybierz ikonę opinii obok pozycji **Szybkie uruchamianie**lub wybierz pozycję **Pomoc**  >  **Wyślij opinię**  >  **Zgłoś problem** z paska menu. Aby uzyskać więcej informacji, zobacz [Jak zgłosić problem w programie Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md).
+Twoja opinia pomoże nam ulepszyć program. Użyj funkcji **Zgłoś problem** , aby "zarejestrować" śledzenie i wysłać do nas. Wybierz ikonę opinii obok pozycji **Szybkie uruchamianie** lub wybierz pozycję **Pomoc**  >  **Wyślij opinię**  >  **Zgłoś problem** z paska menu. Aby uzyskać więcej informacji, zobacz [Jak zgłosić problem w programie Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Porady i wskazówki dotyczące wydajności](../ide/visual-studio-performance-tips-and-tricks.md)
 - [Rozwiązania do ładowania blogów z programu Visual Studio szybciej dzięki programowi Visual Studio 2017 w wersji 15,6](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/)

@@ -1,5 +1,7 @@
 ---
 title: Wybierz elementy paska narzędzi, składniki WPF
+description: Dowiedz się, jak za pomocą karty składniki WPF wyświetlić Windows Presentation Foundation kontrolki dostępne do wyboru na komputerze lokalnym.
+ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28576fab1ed4b39810b6f4cc32fb2955a7a44039
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 7b9727d335607f15101222e40be193de2315b7dc
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099352"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871330"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Wybieranie elementów przybornika, składniki WPF
 
@@ -39,7 +41,7 @@ Kolumny na karcie **składniki WPF** zawierają następujące informacje:
 
 Wyświetla listę nazw formantów WPF, dla których wpisy istnieją w rejestrze komputera.
 
-**Przestrzeń nazw**
+**Obszaru**
 
 Wyświetla hierarchię przestrzeni nazw [interfejsu API platformy .NET](/dotnet/api/?view=netframework-4.7&preserve-view=true) , która definiuje strukturę składnika. Sortuj według tej kolumny, aby wyświetlić listę składników dostępnych w ramach każdej przestrzeni nazw platformy .NET zainstalowanej na komputerze.
 

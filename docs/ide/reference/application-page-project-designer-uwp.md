@@ -1,5 +1,7 @@
 ---
 title: Strona właściwości aplikacji dla aplikacji platformy UWP
+description: Dowiedz się, jak za pomocą strony aplikacji określić zestaw i informacje o projekcie platforma uniwersalna systemu Windows (platformy UWP) oraz wersję docelową systemu Windows 10.
+ms.custom: SEO-VS-2020
 ms.date: 01/23/2018
 ms.topic: reference
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 3c8f72d4e1d1caeacd5dfefef5310dc2cef83b92
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 826d408d8e1a6a2cb8bcad956ce930781a9155db
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77173090"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871369"
 ---
 # <a name="application-property-page-uwp-projects"></a>Strona właściwości aplikacji (projekty platformy UWP)
 
@@ -46,7 +48,7 @@ Możesz ustawić wersję docelową i minimalną wersję systemu Windows 10 dla s
 
 Aby uzyskać informacje dotyczące platformy docelowej w programie Visual Studio, zobacz temat [Określanie platformy docelowej](/visualstudio/productinfo/vs2017-compatibility-vs#platform-targeting).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Tworzenie pierwszej aplikacji platformy UWP](/windows/uwp/get-started/your-first-app)
 - [Wybierz wersję platformy UWP](/windows/uwp/updates-and-versions/choose-a-uwp-version)

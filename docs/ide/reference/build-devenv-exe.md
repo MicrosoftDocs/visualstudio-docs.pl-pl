@@ -1,5 +1,7 @@
 ---
 title: -Build (devenv.exe)
+description: Dowiedz się więcej o przełączniku wiersza polecenia devenv kompilacji i sposobach ich użycia w celu skompilowania rozwiązania lub projektu z określonym plikiem konfiguracji rozwiązania.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1766fe22573554b41ebfaa38fbd9e8d6c90c5790
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4b23a15984c4ded6ca77b1660e14c53be9fd42e3
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595764"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871434"
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
 
@@ -35,7 +37,7 @@ devenv SolutionName /Build [SolnConfigName [/Project ProjName [/ProjectConfig Pr
 
 - *SolutionName*
 
-  Wymagany. Pełna ścieżka i nazwa pliku rozwiązania.
+  Wymagane. Pełna ścieżka i nazwa pliku rozwiązania.
 
 - *SolnConfigName*
 
@@ -73,7 +75,7 @@ Następujące polecenie kompiluje projekt `CSharpWinApp` przy użyciu `Debug` ko
 devenv "%USERPROFILE%\source\repos\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Projekty i rozwiązania — kompilowanie i czyszczenie](../../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [Przełączniki wiersza polecenia Devenv](../../ide/reference/devenv-command-line-switches.md)

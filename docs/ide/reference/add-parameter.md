@@ -1,5 +1,7 @@
 ---
 title: Dodawanie parametru do szybkiej akcji metody
+description: Dowiedz się, jak używać szybkiej akcji do automatycznego dodawania i deklarowania parametru, na podstawie użycia, do metody.
+ms.custom: SEO-VS-2020
 ms.date: 09/28/2018
 ms.topic: reference
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6720421fd5188688214665d85de682542b1c1357
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c2582228426afcefdb2587d646a8668f622309c6
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595868"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871304"
 ---
 # <a name="add-a-parameter-to-a-method-using-a-quick-action"></a>Dodawanie parametru do metody przy użyciu szybkiej akcji
 
@@ -46,6 +48,6 @@ Ta generacja kodu ma zastosowanie do:
 > [!NOTE]
 > Jeśli masz inne wywołania metody, mogą one generować błędy po użyciu tej szybkiej akcji, ponieważ nie określają argumentu dla nowo dodanego parametru.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Dodaj parametr do konstruktora](generate-constructor.md#addparameter)

@@ -1,5 +1,7 @@
 ---
 title: 'Szybki Start: Przewodnik po środowisku IDE programu Visual Studio'
+description: Poznaj niektóre okna, menu i inne funkcje interfejsu użytkownika zintegrowanego środowiska programistycznego (IDE) programu Visual Studio.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/21/2019
 ms.topic: quickstart
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08ec25312068d5c69cdb0df9b7c293ae0575f608
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4511658a454c1431967905e88428842c3ba00c64
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238858"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95870894"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Szybki Start: pierwsze spojrzenie na środowisko IDE programu Visual Studio
 
@@ -35,7 +37,7 @@ Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do stro
 
 ## <a name="start-page"></a>Strona początkowa
 
-Pierwsze czynności, które zobaczysz po otwarciu programu Visual Studio najprawdopodobniej są **stroną początkową**. **Strona startowa** jest zaprojektowana jako "centrum", aby pomóc w znalezieniu poleceń i plików projektu, które są potrzebne szybciej. W sekcji ostatnie są wyświetlane ostatnio **używane** projekty i foldery. W obszarze **Nowy projekt**można kliknąć link, aby wyświetlić okno dialogowe **Nowy projekt** lub w obszarze **Otwórz**, można otworzyć istniejący projekt lub folder kodu. Po prawej stronie znajduje się źródło najnowszych wiadomości dla deweloperów.
+Pierwsze czynności, które zobaczysz po otwarciu programu Visual Studio najprawdopodobniej są **stroną początkową**. **Strona startowa** jest zaprojektowana jako "centrum", aby pomóc w znalezieniu poleceń i plików projektu, które są potrzebne szybciej. W sekcji ostatnie są wyświetlane ostatnio **używane** projekty i foldery. W obszarze **Nowy projekt** można kliknąć link, aby wyświetlić okno dialogowe **Nowy projekt** lub w obszarze **Otwórz**, można otworzyć istniejący projekt lub folder kodu. Po prawej stronie znajduje się źródło najnowszych wiadomości dla deweloperów.
 
 ![Strona początkowa w programie Visual Studio](media/start-page.png)
 
@@ -47,7 +49,7 @@ Jeśli zamkniesz **stronę początkową** i chcesz ją ponownie zobaczyć, może
 
 ::: moniker range=">=vs-2019"
 
-## <a name="start-window"></a>Okno uruchamiania
+## <a name="start-window"></a> Okno uruchamiania
 
 Pierwsze czynności, które zobaczysz po otwarciu programu Visual Studio jest oknem startowym. Okno Start zostało zaprojektowane z założeniami, aby ułatwić szybkie rozpoczęcie pracy z kodem. Dostępne są opcje klonowania lub wyewidencjonowywania kodu, otwierania istniejącego projektu lub rozwiązania, tworzenia nowego projektu lub po prostu otwierania folderu zawierającego niektóre pliki kodu.
 
@@ -105,7 +107,7 @@ Aby kontynuować Eksplorowanie funkcji programu Visual Studio, Utwórz nowy proj
 
 ## <a name="menus"></a>Menu
 
-Pasek menu wzdłuż górnej części poleceń programu Visual Studio grupuje do kategorii. Na przykład menu **projekt** zawiera polecenia związane z projektem, w którym pracujesz. W menu **Narzędzia** można dostosować sposób działania programu Visual Studio, wybierając **Opcje**lub dodając funkcje do instalacji, wybierając pozycję **Pobierz narzędzia i funkcje**.
+Pasek menu wzdłuż górnej części poleceń programu Visual Studio grupuje do kategorii. Na przykład menu **projekt** zawiera polecenia związane z projektem, w którym pracujesz. W menu **Narzędzia** można dostosować sposób działania programu Visual Studio, wybierając **Opcje** lub dodając funkcje do instalacji, wybierając pozycję **Pobierz narzędzia i funkcje**.
 
 ::: moniker range="vs-2017"
 
@@ -197,7 +199,7 @@ Oglądamy zaledwie kilka funkcji programu Visual Studio, aby zapoznać się z in
 > [!div class="nextstepaction"]
 > [Informacje o projektach i rozwiązaniach](../get-started/tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Przegląd środowiska IDE programu Visual Studio](../get-started/visual-studio-ide.md)
 - [Więcej funkcji programu Visual Studio](../ide/advanced-feature-overview.md)

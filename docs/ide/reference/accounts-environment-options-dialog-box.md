@@ -1,5 +1,7 @@
 ---
 title: Informacje o opcjach kont
+description: Dowiedz się, jak ustawić niektóre opcje związane z kontami, które są używane podczas logowania do programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ff457523024db49502ae982a390d9a7be6ba9dd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2cd9f08cb1358d788db661871f6d229d0579ddbd
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595907"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871148"
 ---
 # <a name="accounts-environment-options-dialog-box"></a>Konta, środowisko, Opcje — okno dialogowe
 
@@ -41,7 +43,7 @@ Zarejestruj dodatkową chmurę platformy Azure, wybierając przycisk **Dodaj** .
 
 Po zarejestrowaniu dodatkowej chmury platformy Azure Możesz wybrać chmurę platformy Azure, do której chcesz się zalogować po zalogowaniu się do programu Visual Studio.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Synchronizowanie ustawień na wielu komputerach](../synchronized-settings-in-visual-studio.md)
 - [Logowanie do programu Visual Studio](../signing-in-to-visual-studio.md)
