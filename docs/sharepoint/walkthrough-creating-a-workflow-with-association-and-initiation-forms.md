@@ -1,5 +1,7 @@
 ---
 title: Tworzenie przepływu pracy z formularzami skojarzenia i inicjowania
+description: W tym instruktażu programu SharePoint Utwórz podstawowy sekwencyjny przepływ pracy, który obejmuje użycie formularzy skojarzenia i inicjacji.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6f257dfed2fe439c5ab22ab9951b6258116c6567
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 62501a23695b81ee0437d3210dced7c81f9b054e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017126"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970436"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Przewodnik: tworzenie przepływu pracy z formularzami skojarzenia i inicjowania
   W tym instruktażu pokazano, jak utworzyć podstawowy sekwencyjny przepływ pracy, który obejmuje użycie formularzy skojarzenia i inicjacji. Są to formularze ASPX, które umożliwiają dodawanie parametrów do przepływu pracy, gdy jest on najpierw skojarzony przez administratora programu SharePoint (formularz skojarzenia) i gdy przepływ pracy jest uruchamiany przez użytkownika (formularz inicjacji).
@@ -80,11 +82,11 @@ ms.locfileid: "86017126"
 
      Ten krok ustawia również poziom zaufania dla rozwiązania jako rozwiązanie farmy, które jest jedyną dostępną opcją dla projektów przepływu pracy.
 
-6. W **Eksplorator rozwiązań**wybierz węzeł projektu.
+6. W **Eksplorator rozwiązań** wybierz węzeł projektu.
 
 7. Na pasku menu wybierz **projekt**  >  **Dodaj nowy element**.
 
-8. W obszarze **Visual C#** lub **Visual Basic**rozwiń węzeł **SharePoint** , a następnie wybierz węzeł **2010** .
+8. W obszarze **Visual C#** lub **Visual Basic** rozwiń węzeł **SharePoint** , a następnie wybierz węzeł **2010** .
 
 9. W okienku **Szablony** wybierz szablon **sekwencyjny przepływ pracy (tylko rozwiązanie farmy)** , a następnie wybierz przycisk **Dodaj** .
 
@@ -253,13 +255,13 @@ ms.locfileid: "86017126"
 
 1. Wyświetl przepływ pracy w Projektancie przepływów pracy, otwierając Workflow1 w projekcie.
 
-2. W **przyborniku**rozwiń węzeł **Windows Workflow v 3.0** i Znajdź działanie **jeślilub** .
+2. W **przyborniku** rozwiń węzeł **Windows Workflow v 3.0** i Znajdź działanie **jeślilub** .
 
 3. Dodaj to działanie do przepływu pracy, wykonując jedną z następujących czynności:
 
     - Otwórz menu skrótów dla działania **jeślilub** , wybierz polecenie **Kopiuj**, otwórz menu skrótów dla wiersza w działaniu **onWorkflowActivated1** w Projektancie przepływu pracy, a następnie wybierz **Wklej**.
 
-    - Przeciągnij działanie **jeślilub** z **przybornika**i połącz je z wierszem w obszarze działania **onWorkflowActiviated1** w Projektancie przepływu pracy.
+    - Przeciągnij działanie **jeślilub** z **przybornika** i połącz je z wierszem w obszarze działania **onWorkflowActiviated1** w Projektancie przepływu pracy.
 
 4. W przyborniku rozwiń węzeł **przepływ pracy programu SharePoint** i Znajdź działanie w ramach **zadania** .
 
@@ -283,13 +285,13 @@ ms.locfileid: "86017126"
 
 12. Wybierz kartę **powiąż z nowym członkiem** , wybierz przycisk opcji **Utwórz pole** , a następnie wybierz przycisk **OK** .
 
-13. W **przyborniku**rozwiń węzeł **przepływ pracy programu SharePoint** i Znajdź działanie **LogToHistoryListActivity** .
+13. W **przyborniku** rozwiń węzeł **przepływ pracy programu SharePoint** i Znajdź działanie **LogToHistoryListActivity** .
 
 14. Dodaj to działanie do przepływu pracy, wykonując jedną z następujących czynności:
 
     - Otwórz menu skrótów dla działania **LogToHistoryListActivity** , wybierz polecenie **Kopiuj**, otwórz menu skrótów dla innych **działań upuść** w obszarze **IfElseActivity1** w Projektancie przepływu pracy, a następnie wybierz **Wklej**.
 
-    - Przeciągnij działanie **LogToHistoryListActivity** z **przybornika**i upuść je na inne **działania upuść** w obszarze **IfElseActivity1**.
+    - Przeciągnij działanie **LogToHistoryListActivity** z **przybornika** i upuść je na inne **działania upuść** w obszarze **IfElseActivity1**.
 
 ## <a name="add-code-to-the-workflow"></a>Dodawanie kodu do przepływu pracy
  Następnie Dodaj kod do przepływu pracy, aby zapewnić jego funkcjonalność.

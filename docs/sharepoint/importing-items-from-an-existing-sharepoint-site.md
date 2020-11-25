@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9c2703bfdd4f47281a1fc19060cb69f8b312e7d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017021"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970553"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>Importuj elementy z istniejącej witryny programu SharePoint
   Szablon projektu Importowanie pakietu rozwiązania SharePoint umożliwia ponowne używanie elementów, takich jak typy zawartości i pola z istniejących witryn programu SharePoint w nowym [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] rozwiązaniu programu SharePoint. Chociaż można uruchamiać większość zaimportowanych rozwiązań bez modyfikacji, istnieją pewne ograniczenia i problemy, które należy wziąć pod uwagę, szczególnie w przypadku modyfikacji wszelkich elementów po ich zaimportowaniu.

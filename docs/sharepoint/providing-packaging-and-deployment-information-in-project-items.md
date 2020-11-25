@@ -1,5 +1,7 @@
 ---
 title: Pakowanie & informacji o wdrożeniu w elementach projektu
+description: Dodaj pakowanie i dane wdrożenia w elementach projektu programu SharePoint za pomocą właściwości funkcji, odbiorników funkcji, odwołań do danych wyjściowych projektu i jednostek kontroli bezpiecznego.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -24,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: db805c308fd245554824997b24236eb2e2d80e62
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f73d8727fb960cf519d368d928aa20cae38ae1a9
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72984214"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95970475"
 ---
 # <a name="provide-packaging-and-deployment-information-in-project-items"></a>Udostępnianie informacji o pakowaniu i wdrożeniu w elementach projektu
   Wszystkie elementy projektu programu SharePoint w programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] mają właściwości, których można użyć do dostarczania dodatkowych danych podczas wdrażania projektu w programie SharePoint. Właściwości są następujące:

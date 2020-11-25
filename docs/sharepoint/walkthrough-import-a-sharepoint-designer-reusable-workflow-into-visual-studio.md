@@ -1,6 +1,8 @@
 ---
 title: 'Przewodnik: Importowanie przepływu pracy wielokrotnego użytku programu SharePoint Designer | Microsoft Docs'
 titleSuffix: ''
+description: W tym instruktażu zaimportuj przepływ pracy wielokrotnego użytku utworzony w programie SharePoint Designer do projektu przepływu pracy programu Visual Studio SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -16,18 +18,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8e6680c6ff95808db56e5bb32e02e0775c935011
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 1421b061c50277177b5a30f0357725e9a042f3bd
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298037"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970174"
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow"></a>Przewodnik: Importowanie przepływu pracy wielokrotnego użytku programu SharePoint Designer
 
   W tym instruktażu przedstawiono sposób importowania przepływu pracy wielokrotnego użytku utworzonego w programie SharePoint Designer 2010 do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu przepływu pracy programu SharePoint.
 
- Przepływy pracy utworzone w projektancie programu SharePoint lub *deklaracyjne przepływy pracy*składają się z [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] instrukcji zamiast kodu. Program SharePoint Designer 2010 wprowadza *przepływy pracy wielokrotnego użytku*, które są przenośnymi, deklaratywnymi przepływami pracy, które mogą być używane przez różne listy w witrynach programu SharePoint.
+ Przepływy pracy utworzone w projektancie programu SharePoint lub *deklaracyjne przepływy pracy* składają się z [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] instrukcji zamiast kodu. Program SharePoint Designer 2010 wprowadza *przepływy pracy wielokrotnego użytku*, które są przenośnymi, deklaratywnymi przepływami pracy, które mogą być używane przez różne listy w witrynach programu SharePoint.
 
  Przepływy pracy utworzone w programie [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] , takie jak sekwencyjne i przepływy pracy automatu, są nazywane *przepływami pracy kodu*. Przepływy pracy kodu składają się z plików XML i modułów kodu, w których użytkownicy mogą dostosować zachowanie przepływu pracy.
 
@@ -134,7 +136,7 @@ ms.locfileid: "92298037"
 
 2. W okienku nawigacji wybierz obiekt **przepływy pracy** .
 
-3. W obszarze **przepływ pracy wielokrotnego użytku**wybierz pozycję **przepływ pracy zadania bazy**danych.
+3. W obszarze **przepływ pracy wielokrotnego użytku** wybierz pozycję **przepływ pracy zadania bazy** danych.
 
 4. Na wstążce wybierz przycisk **Zapisz jako szablon** , aby zapisać przepływ pracy jako plik *. wsp* .
 
@@ -180,17 +182,17 @@ ms.locfileid: "92298037"
 
     Po zakończeniu operacji importowania zostanie utworzony projekt o nazwie **WorkflowImportProject1** zawierający przepływ pracy o nazwie **SPD_Workflow_TestFT**. W tym folderze jest plikiem definicji przepływu pracy *Elements.xml* i plikiem projektanta przepływu pracy (*. xoml*). Projektant zawiera dwa pliki: plik reguł (. Rules) i plik związany z kodem ( *. cs* lub *. vb*, w zależności od języka programowania projektu).
 
-8. W **Eksplorator rozwiązań**Usuń folder **inne zaimportowane pliki** .
+8. W **Eksplorator rozwiązań** Usuń folder **inne zaimportowane pliki** .
 
 9. W pliku *Elements.xml* Usuń `InstantiationURL="_layouts/IniErkflIP.sspx"` .
 
-10. W **Eksplorator rozwiązań**wybierz pozycję **WorkflowImportProject1**, a następnie na pasku menu wybierz pozycję **projekt**  >  **Ustaw jako projekt startowy** , aby ustawić **WorkflowImportProject1** jako element startowy.
+10. W **Eksplorator rozwiązań** wybierz pozycję **WorkflowImportProject1**, a następnie na pasku menu wybierz pozycję **projekt**  >  **Ustaw jako projekt startowy** , aby ustawić **WorkflowImportProject1** jako element startowy.
 
      Spowoduje to wyświetlenie listy natychmiast podczas debugowania projektu.
 
 11. Ponieważ szablon **przepływu pracy zaimportuj programu SharePoint 2010** nie importuje wartości właściwości skojarzenia dla zaimportowanego przepływu pracy, należy je wprowadzić. W tym celu:
 
-    1. W **Eksplorator rozwiązań**wybierz węzeł **SPD_Workflow_TestFT** .
+    1. W **Eksplorator rozwiązań** wybierz węzeł **SPD_Workflow_TestFT** .
 
     2. Wybierz przycisk wielokropka (![ASP.net Mobile Designer](../sharepoint/media/mwellipsis.gif "Wielokropek projektanta ASP.NET Mobile")) obok jednej z właściwości listy, takich jak Właściwość **listy docelowej** .
 
@@ -198,7 +200,7 @@ ms.locfileid: "92298037"
 
 12. Wybierz plik xoml, a następnie na pasku menu wybierz polecenie **View**  >  **Projektant** widoków, aby wyświetlić zaimportowany przepływ pracy w Projektancie przepływu pracy.
 
-13. W węźle **Windows Workflow v 3.0** **przybornika**wykonaj jedną z następujących czynności:
+13. W węźle **Windows Workflow v 3.0** **przybornika** wykonaj jedną z następujących czynności:
 
     - Otwórz menu skrótów dla działania **kod** , a następnie wybierz **Kopiuj**. W Projektancie przepływu pracy Otwórz menu skrótów dla wiersza w ramach działania **SequenceActivity1** , a następnie wybierz **Wklej**.
 
@@ -210,7 +212,7 @@ ms.locfileid: "92298037"
 
     - Kliknij dwukrotnie pozycję **CodeActivity1** , aby wygenerować procedurę obsługi zdarzeń i wyświetlić kod.
 
-    - W oknie **Właściwości** dla **CodeActivity1**ustaw wartość właściwości **ExecuteCode** na **codeActivity_ExecuteCode**.
+    - W oknie **Właściwości** dla **CodeActivity1** ustaw wartość właściwości **ExecuteCode** na **codeActivity_ExecuteCode**.
 
 15. Dodaj następujące elementy pod istniejącymi dyrektywami **using** lub **Imports** :
 
@@ -255,7 +257,7 @@ ms.locfileid: "92298037"
 
 11. Wybierz strzałkę obok pozycji **nowe zadanie**, a następnie na liście wybierz pozycję **przepływy pracy**.
 
-12. W sekcji **Rozpocznij nowy przepływ pracy** wybierz łącze do **testu przepływu pracy bazy**danych, a następnie wybierz przycisk **Start** , aby zainicjować przepływ pracy.
+12. W sekcji **Rozpocznij nowy przepływ pracy** wybierz łącze do **testu przepływu pracy bazy** danych, a następnie wybierz przycisk **Start** , aby zainicjować przepływ pracy.
 
     > [!NOTE]
     > Alternatywnie można utworzyć skojarzenie przepływu pracy z listą, uruchamiając Kreatora ustawień przepływu pracy i ustawiając przepływ pracy na wartość autoskojarzenie.

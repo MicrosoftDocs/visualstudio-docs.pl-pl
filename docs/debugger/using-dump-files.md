@@ -23,11 +23,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dbfd8ac877fce4b1808a76e3bb2a66ac595693de
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599492"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970620"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Zrzuć pliki w debugerze programu Visual Studio
 
@@ -69,7 +69,7 @@ Dzięki włączeniu [debugowania just in Time](../debugger/just-in-time-debuggin
 
 1. Po zatrzymaniu z powodu błędu lub punktu przerwania podczas debugowania wybierz kolejno opcje **Debuguj**  >  **Zapisz zrzut jako**.
 
-1. W oknie dialogowym **Zapisz zrzut jako** w obszarze **Zapisz jako typ**wybierz pozycję **minizrzutu** lub **minizrzutu ze stertą** (domyślnie).
+1. W oknie dialogowym **Zapisz zrzut jako** w obszarze **Zapisz jako typ** wybierz pozycję **minizrzutu** lub **minizrzutu ze stertą** (domyślnie).
 
 1. Przejdź do ścieżki i wybierz nazwę pliku zrzutu, a następnie wybierz pozycję **Zapisz**.
 
@@ -88,7 +88,7 @@ Dzięki włączeniu [debugowania just in Time](../debugger/just-in-time-debuggin
 
 1. W obszarze **Akcje**:
    - Aby ustawić lokalizacje ładowania symboli, wybierz opcję **Ustaw ścieżki symboli**.
-   - Aby rozpocząć debugowanie, wybierz opcję **Debuguj z opcją tylko zarządzane**, **Debuguj tylko natywny**, **Debuguj z mieszanym**lub **Debuguj z pamięcią zarządzaną**.
+   - Aby rozpocząć debugowanie, wybierz opcję **Debuguj z opcją tylko zarządzane**, **Debuguj tylko natywny**, **Debuguj z mieszanym** lub **Debuguj z pamięcią zarządzaną**.
 
 ## <a name="find-exe-pdb-and-source-files"></a><a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> Find. exe,. pdb i pliki źródłowe
 
@@ -111,7 +111,7 @@ Program Visual Studio automatycznie przeszukuje te lokalizacje plików *exe* , k
 
 ### <a name="use-the-no-binary-no-symbols-or-no-source-found-pages"></a>Nie znaleziono żadnych stron binarnych, bez symboli ani źródeł
 
-Jeśli program Visual Studio nie może znaleźć plików potrzebnych do debugowania modułu w zrzucie, pokazuje **nie znaleziono pliku binarnego**, **nie znaleziono symboli**lub nie znaleziono **źródła** strony. Te strony zawierają szczegółowe informacje o przyczynie problemu i zawierają linki akcji, które mogą pomóc w znalezieniu plików. Zobacz [Określanie symboli (. pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+Jeśli program Visual Studio nie może znaleźć plików potrzebnych do debugowania modułu w zrzucie, pokazuje **nie znaleziono pliku binarnego**, **nie znaleziono symboli** lub nie znaleziono **źródła** strony. Te strony zawierają szczegółowe informacje o przyczynie problemu i zawierają linki akcji, które mogą pomóc w znalezieniu plików. Zobacz [Określanie symboli (. pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
 ## <a name="see-also"></a>Zobacz też
 

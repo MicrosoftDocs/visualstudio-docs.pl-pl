@@ -1,5 +1,7 @@
 ---
 title: Projekty programu SharePoint i szablony elementów projektu | Microsoft Docs
+description: Przejrzyj opisy dostępnego projektu programu SharePoint oraz szablonów elementów projektu i sposobu ich użycia.
+ms.custom: SEO-VS-2020
 ms.date: 02/22/2017
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2878bd2092e000cf63c2b4fcb531a502a470203e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6cbcc4d0bc99ce7ab495e0a24591b145c58f377
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649225"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95970374"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>Projekty programu SharePoint i szablony elementów projektu
   W poniższych sekcjach opisano dostępne projekty programu SharePoint i szablony elementów projektu oraz sposób ich użycia.
@@ -68,7 +70,7 @@ ms.locfileid: "81649225"
 ## <a name="project-item-templates"></a>Szablony elementów projektu
  Poniżej znajduje się lista szablonów elementów projektu programu SharePoint. Szablony elementów projektu umożliwiają dodanie plików do rozwiązania SharePoint w celu obsługi funkcji programu SharePoint, takich jak kolumny, listy i typy zawartości witryny. Na przykład dodanie kolumny witryny do rozwiązania powoduje dodanie projektu kolumny witryny, który zawiera plik definicji *Elements.xml* . Dodanie wizualnego składnika Web Part powoduje dodanie projektu wizualnego składnika Web Part do rozwiązania, które zawiera plik *Elements.xml* , element kontrolki użytkownika i element wizualnego składnika Web Part.
 
- Aby wyświetlić szablony elementów projektu programu SharePoint, w **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu programu SharePoint, a następnie wybierz **Dodaj**, **nowy element**. Rozwiń węzeł **SharePoint** w **Visual C#** lub **Visual Basic**, a następnie wybierz **2010**.
+ Aby wyświetlić szablony elementów projektu programu SharePoint, w **Eksplorator rozwiązań** Otwórz menu skrótów dla projektu programu SharePoint, a następnie wybierz **Dodaj**, **nowy element**. Rozwiń węzeł **SharePoint** w **Visual C#** lub **Visual Basic**, a następnie wybierz **2010**.
 
 ### <a name="application-page-farm-solution-only"></a>Strona aplikacji (tylko rozwiązanie farmy)
  **Strona aplikacji (tylko rozwiązanie farmy)** umożliwia zaprojektowanie [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] strony sieci Web dla witryny programu SharePoint. Strony aplikacji mogą być używane tylko w rozwiązaniach farmy. Ten element projektu można dodać tylko do rozwiązań farmy. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie strony aplikacji](../sharepoint/how-to-create-an-application-page.md) i [aplikacji _layouts typ strony](/previous-versions/office/aa979604(v=office.14)).

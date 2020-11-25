@@ -1,5 +1,7 @@
 ---
 title: Przewodniki dotyczące projektowania programu SharePoint | Microsoft Docs
+description: Zobacz linki do przewodników, które pokazują, jak opracowywać i wdrażać rozwiązania programu SharePoint przy użyciu programu Visual Studio. Linki są zorganizowane według obszaru funkcji.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0ae7ed434d2f76036f0409fe21d4dd1493cd28b2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d1700958d155801a436cbd00a8a88f7599292a0
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62979474"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95970325"
 ---
 # <a name="sharepoint-development-walkthroughs"></a>Przewodniki dotyczące projektowania programu SharePoint
   W poniższych przewodnikach przedstawiono sposób tworzenia i wdrażania rozwiązań programu SharePoint przy użyciu programu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
@@ -45,7 +47,7 @@ ms.locfileid: "62979474"
 |[Przewodnik: Tworzenie składnika Web Part dla programu SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)|Pokazuje, jak utworzyć składnik Web Part za pomocą szablonu elementu **składnika Web Part** w programie Visual Studio.|
 |[Przewodnik: Tworzenie składnika Web Part dla programu SharePoint przy użyciu narzędzia Projektant](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)|Pokazuje, jak utworzyć składnik Web Part wizualnie przy użyciu szablonu projektu **Visual Web Part** programu SharePoint w programie Visual Studio.|
 
-## <a name="workflows"></a>Przepływy
+## <a name="workflows"></a>Przepływy pracy
 
 |Temat|Opis|
 |-----------|-----------------|

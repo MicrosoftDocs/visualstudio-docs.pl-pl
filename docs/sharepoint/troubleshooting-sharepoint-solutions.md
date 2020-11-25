@@ -1,5 +1,7 @@
 ---
 title: Rozwiązywanie problemów z rozwiązaniami programu SharePoint | Microsoft Docs
+description: Zobacz, jakie problemy mogą wystąpić podczas debugowania rozwiązań programu SharePoint za pomocą debugera programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/22/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e79a08d3f8dbc4b579a52501afb08ffb7dca33f2
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: a9ef5e7d47f72b82e7a8fab52cc2f1f8716c83bf
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "92298396"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95970273"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>Rozwiązywanie problemów z rozwiązaniami programu SharePoint
   Podczas debugowania rozwiązań programu SharePoint za pomocą debugera mogą wystąpić następujące problemy lub alerty [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Aby uzyskać więcej informacji, zobacz [Debugowanie rozwiązań przepływu pracy programu SharePoint 2007](/previous-versions/bb386166(v=vs.100)).
@@ -115,7 +117,7 @@ ms.locfileid: "92298396"
 
 ##### <a name="to-reenter-the-workflow-wizard"></a>Aby ponownie wprowadzić kreatora przepływu pracy
 
-1. W **Eksplorator rozwiązań**wybierz węzeł przepływ pracy.
+1. W **Eksplorator rozwiązań** wybierz węzeł przepływ pracy.
 
 2. W oknie **Właściwości** wybierz przycisk wielokropka (...) we właściwości, która ma przycisk wielokropka.
 
@@ -156,7 +158,7 @@ ms.locfileid: "92298396"
 
 ##### <a name="to-change-the-feature-scope-of-the-event-receiver"></a>Aby zmienić zakres funkcji odbiorcy zdarzeń
 
-1. W **Eksplorator rozwiązań**Otwórz plik *. feature* odbiorcy zdarzeń w **Projektancie funkcji** przez dwukrotne kliknięcie pliku lub otwarcie jego menu skrótów, a następnie wybranie polecenia **Otwórz**.
+1. W **Eksplorator rozwiązań** Otwórz plik *. feature* odbiorcy zdarzeń w **Projektancie funkcji** przez dwukrotne kliknięcie pliku lub otwarcie jego menu skrótów, a następnie wybranie polecenia **Otwórz**.
 
 2. Wybierz strzałkę obok pozycji **zakres**, a następnie wybierz pozycję **lokacja** na wyświetlonej liście.
 
@@ -189,9 +191,9 @@ ms.locfileid: "92298396"
 
 ##### <a name="to-resolve-this-issue"></a>Aby rozwiązać ten problem
 
-1. W **Eksplorator rozwiązań**wybierz plik kontrolki użytkownika, którego rozszerzenie nazwy pliku to *. ascx*.
+1. W **Eksplorator rozwiązań** wybierz plik kontrolki użytkownika, którego rozszerzenie nazwy pliku to *. ascx*.
 
-2. Na pasku menu wybierz **View**  >  **okno właściwości**widoku.
+2. Na pasku menu wybierz **View**  >  **okno właściwości** widoku.
 
 3. W oknie **Właściwości** rozwiń węzeł **Lokalizacja wdrożenia** .
 
@@ -275,7 +277,7 @@ ms.locfileid: "92298396"
  Nie można załadować pliku konfiguracji Web.config. Sprawdź plik pod kątem nieprawidłowych elementów XML i spróbuj ponownie. Wystąpił następujący błąd: podany klucz nie był obecny w słowniku.
 
 ### <a name="resolution"></a>Rozwiązanie
- Aby rozwiązać ten problem, upewnij się, że wartość właściwości adres URL witryny projektu programu SharePoint w programie Visual Studio jest zgodna z adresem URL przypisanym do strefy domyślnej dla mapowań dostępu alternatywnego aplikacji sieci Web. Nie można rozwiązać tego błędu za pomocą innej strefy, takiej jak intranet, dla adresu URL. Adres URL witryny dla projektu i adres URL w strefie domyślnej muszą być zgodne. Aby uzyskać dostęp do mapowań alternatywnego dostępu, Otwórz narzędzie SharePoint 2010 Central Administration, wybierz link **Zarządzanie aplikacjami** , a następnie w obszarze **aplikacje sieci Web**wybierz łącze **Konfiguruj alternatywne mapowania dostępu** . Aby uzyskać więcej informacji, zobacz [Tworzenie stref dla aplikacji sieci Web](/previous-versions/office/sharepoint-2007-products-and-technologies/cc263087(v=office.12)).
+ Aby rozwiązać ten problem, upewnij się, że wartość właściwości adres URL witryny projektu programu SharePoint w programie Visual Studio jest zgodna z adresem URL przypisanym do strefy domyślnej dla mapowań dostępu alternatywnego aplikacji sieci Web. Nie można rozwiązać tego błędu za pomocą innej strefy, takiej jak intranet, dla adresu URL. Adres URL witryny dla projektu i adres URL w strefie domyślnej muszą być zgodne. Aby uzyskać dostęp do mapowań alternatywnego dostępu, Otwórz narzędzie SharePoint 2010 Central Administration, wybierz link **Zarządzanie aplikacjami** , a następnie w obszarze **aplikacje sieci Web** wybierz łącze **Konfiguruj alternatywne mapowania dostępu** . Aby uzyskać więcej informacji, zobacz [Tworzenie stref dla aplikacji sieci Web](/previous-versions/office/sharepoint-2007-products-and-technologies/cc263087(v=office.12)).
 
 ## <a name="see-also"></a>Zobacz też
 

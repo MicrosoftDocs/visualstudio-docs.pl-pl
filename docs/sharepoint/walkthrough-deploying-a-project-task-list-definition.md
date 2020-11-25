@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: wdrażanie definicji Lista zadań projektu | Microsoft Docs'
+description: W tym instruktażu za pomocą programu Visual Studio można tworzyć, dostosowywać, debugować i wdrażać listę programu SharePoint w celu śledzenia zadań projektu.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b5639fe7a1b35dea41b14be3730986ad7c7309b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0be8eed2dc41ad433c0e0514dfd34e3c6e3d7193
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015770"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970424"
 ---
 # <a name="walkthrough-deploy-a-project-task-list-definition"></a>Przewodnik: wdrażanie definicji listy zadań projektu
 
@@ -82,7 +84,7 @@ Na liście zadań można dodać odbiorcę zdarzeń, który automatycznie ustawia
 
 Podczas tworzenia rozwiązania programu SharePoint program Visual Studio automatycznie tworzy funkcje dla domyślnych elementów projektu. Możesz dostosować ustawienia listy zadań projektu dla witryny programu SharePoint za pomocą projektanta funkcji.
 
-1. W **Eksplorator rozwiązań**rozwiń pozycję **funkcje**.
+1. W **Eksplorator rozwiązań** rozwiń pozycję **funkcje**.
 
 2. Otwórz menu skrótów dla **Feature1**, a następnie wybierz polecenie **Projektant widoków**.
 

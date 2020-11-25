@@ -1,5 +1,7 @@
 ---
 title: Rozwiązywanie problemów z pakietami i wdrażaniem programu SharePoint | Microsoft Docs
+description: Zrozumienie i rozwiązywanie różnych problemów, które mogą wystąpić podczas pakowania i wdrażania rozwiązań programu SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/22/2017
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7eafac8015b7a2c51279b7a2d664f0e094d2397b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07ce649a22573041768bfc316f65bfcdf7577b98
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72981936"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95969942"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>Rozwiązywanie problemów z pakietami i wdrażaniem programu SharePoint
   W tym temacie omówiono różne problemy, które mogą wystąpić podczas pakowania i wdrażania rozwiązań programu SharePoint.

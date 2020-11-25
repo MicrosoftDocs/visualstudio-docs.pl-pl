@@ -10,11 +10,11 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: 563531b6dfbf59e33b63dcb4561612d86cd39acc
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90075421"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970235"
 ---
 # <a name="analyze-memory-usage-by-using-the-net-object-allocation-tool"></a>Analizowanie użycia pamięci za pomocą narzędzia alokacji obiektów platformy .NET
 
@@ -68,21 +68,21 @@ Można filtrować dane tabelaryczne w celu wyświetlenia działania tylko dla ok
 
 Widok **alokacja** przedstawia lokalizację obiektów, które przydzielają pamięć i ilość pamięci przydzielanej przez te obiekty.
 
-- Kolumna **Type**   jest listą klas i struktur, które zajmują pamięć. Kliknij dwukrotnie typ, aby wyświetlić jego śledzenie jako odwrócone drzewo wywołań. W widoku **alokacji** można zobaczyć elementy należące do wybranej kategorii, które zajmują pamięć.
+- Kolumna **Type** jest listą klas i struktur, które zajmują pamięć. Kliknij dwukrotnie typ, aby wyświetlić jego śledzenie jako odwrócone drzewo wywołań. W widoku **alokacji** można zobaczyć elementy należące do wybranej kategorii, które zajmują pamięć.
 
-- Kolumna **Alokacje**   zawiera liczbę obiektów, które zajmują pamięć w ramach określonego typu alokacji lub funkcji. Ta kolumna pojawia się tylko w widokach **alokacja**, **drzewo wywołań**i **funkcje**   .
+- Kolumna **Alokacje** zawiera liczbę obiektów, które zajmują pamięć w ramach określonego typu alokacji lub funkcji. Ta kolumna pojawia się tylko w widokach **alokacja**, **drzewo wywołań** i **funkcje** .
 
-- Kolumny **bajtów**   i **średni rozmiar (w bajtach)**   nie są wyświetlane domyślnie. Aby je wyświetlić, kliknij prawym przyciskiem myszy kolumnę **Typ**   lub **Alokacje**   , a następnie wybierz opcje **bajty**   i **średni rozmiar (bajty)**,   Aby dodać je do wykresu. 
+- Kolumny **bajtów** i **średni rozmiar (w bajtach)** nie są wyświetlane domyślnie. Aby je wyświetlić, kliknij prawym przyciskiem myszy kolumnę **Typ** lub **Alokacje** , a następnie wybierz opcje **bajty** i **średni rozmiar (bajty)** , aby dodać je do wykresu. 
 
-   Dwie kolumny są podobne do **sum (alokacji)** i **samodzielnych (alokacji)**, z tą różnicą, że pokazują ilość zajętej pamięci zamiast liczby obiektów zużywających pamięć. Te kolumny są wyświetlane tylko w widoku **alokacja** .
+   Dwie kolumny są podobne do **sum (alokacji)** i **samodzielnych (alokacji)**, z tą różnicą, że pokazują ilość zajętej pamięci zamiast liczby obiektów zużywających pamięć. Te kolumny są wyświetlane tylko w widoku **alokacja** .
 
-- Kolumna **Nazwa modułu**zawiera   moduł, który zawiera funkcję lub proces wywołujący.
+- Kolumna **Nazwa modułu** zawiera moduł, który zawiera funkcję lub proces wywołujący.
 
-Wszystkie te kolumny są sortowane. W przypadku kolumn **typu** i **nazwy modułu** można sortować elementy alfabetycznie w kolejności rosnącej lub malejącej. W przypadku **alokacji**, **bajtów**   i **średniego rozmiaru (w bajtach)** można sortować elementy przez zwiększenie lub zmniejszenie wartości liczbowej.
+Wszystkie te kolumny są sortowane. W przypadku kolumn **typu** i **nazwy modułu** można sortować elementy alfabetycznie w kolejności rosnącej lub malejącej. W przypadku **alokacji**, **bajtów** i **średniego rozmiaru (w bajtach)** można sortować elementy przez zwiększenie lub zmniejszenie wartości liczbowej.
 
 #### <a name="symbols"></a>Symbole
 
-Następujące symbole są wyświetlane w kartach **alokacja**, **drzewo wywołań**i **funkcje** :
+Następujące symbole są wyświetlane w kartach **alokacja**, **drzewo wywołań** i **funkcje** :
 
 - ![Symbol typu wartości](../profiling/media/valuetypeicon.png "Symbol typu wartości") — typ wartości, na przykład liczba całkowita.
 
@@ -96,13 +96,13 @@ Następujące symbole są wyświetlane w kartach **alokacja**, **drzewo wywoła�
 
 ![Widok drzewa wywołań](../profiling/media/calltreelight.png "Widok drzewa wywołań")
 
-Widok **drzewa wywołań**   przedstawia ścieżki wykonywania funkcji, które zawierają obiekty przydzielenia dużo pamięci.
+Widok **drzewa wywołań** przedstawia ścieżki wykonywania funkcji, które zawierają obiekty przydzielenia dużo pamięci.
 
-- Kolumna **nazwa funkcji**   zawiera proces lub nazwę funkcji zawierającej obiekty, które przydzielą pamięć. Ekran jest oparty na poziomie przeglądanego węzła.
-- Kolumny **Suma (alokacja)** i **całkowity rozmiar (w bajtach)**   zawierają liczbę przydzielonych obiektów i ilość pamięci używanej przez funkcję oraz wszystkie inne funkcje, które wywołuje.
+- Kolumna **nazwa funkcji** zawiera proces lub nazwę funkcji zawierającej obiekty, które przydzielą pamięć. Ekran jest oparty na poziomie przeglądanego węzła.
+- Kolumny **Suma (alokacja)** i **całkowity rozmiar (w bajtach)** zawierają liczbę przydzielonych obiektów i ilość pamięci używanej przez funkcję oraz wszystkie inne funkcje, które wywołuje.
 - Kolumny **własne (alokacje)** i **własne rozmiary (bajty)** zawierają liczbę przydzielonych obiektów i ilość pamięci używanej przez pojedynczą wybraną funkcję lub typ alokacji.
 - Kolumna **średni rozmiar (w bajtach)** zawiera te same informacje, które są wyświetlane w widoku **Alokacje** .
-- Kolumna **Nazwa modułu**zawiera   moduł, który zawiera funkcję lub proces wywołujący.
+- Kolumna **Nazwa modułu** zawiera moduł, który zawiera funkcję lub proces wywołujący.
 
    ![Rozszerzona ścieżka gorąca](../profiling/media/hotpathlight.png "Rozszerzona ścieżka gorąca")
 
@@ -135,7 +135,7 @@ Widok **kolekcji** pokazuje, ile obiektów zostało zebranych lub zachowanych po
 
 ### <a name="filtering-tools"></a>Narzędzia filtrowania
 
-Widok **Alokacje**, **drzewo wywołań**i **funkcje** wszystkie zawierają opcje **Pokaż tylko mój kod** i **Pokaż kod natywny** oraz pole filtru.
+Widok **Alokacje**, **drzewo wywołań** i **funkcje** wszystkie zawierają opcje **Pokaż tylko mój kod** i **Pokaż kod natywny** oraz pole filtru.
 
 - **Pokaż tylko mój kod** zwija systemy, struktury i inny kod niebędący użytkownikiem do ramek **[kod zewnętrzny]** , dzięki czemu możesz skupić się na tylko kodzie. Aby uzyskać więcej informacji, zobacz [Debugowanie kodu użytkownika przy użyciu tylko mój kod](../debugger/just-my-code.md).
 - **Pokaż kod natywny** pokazuje kod natywny w elemencie docelowym analizy i może zawierać kod niebędący użytkownikiem.

@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: rozszerzanie typu elementu projektu SharePoint | Microsoft Docs'
+description: W tym instruktażu Utwórz rozszerzenie dla typu elementu projektu programu SharePoint, takie jak element projektu modelu łączności danych biznesowych (BDC).
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e8186b1a1388745527fbb9f4dd37478942c36e62
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: 3a360b6a336f64920c0144f742e98a64282eeeec
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740009"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970414"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Przewodnik: zwiększanie typu elementu projektu SharePoint
   Za pomocą elementu projektu **model usługi łączności danych biznesowych** można utworzyć model usługi łączności danych biznesowych (BDC) w programie SharePoint. Domyślnie, gdy tworzysz model przy użyciu tego elementu projektu, dane w modelu nie są wyświetlane użytkownikom. Należy również utworzyć listę zewnętrzną w programie SharePoint, aby umożliwić użytkownikom wyświetlanie danych.
@@ -85,7 +87,7 @@ ms.locfileid: "90740009"
 
 #### <a name="to-create-the-extension-project"></a>Aby utworzyć projekt rozszerzenia
 
-1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla węzła rozwiązanie **GenerateExternalDataLists** , wybierz polecenie **Dodaj**, a następnie wybierz pozycję **Nowy projekt**.
+1. W **Eksplorator rozwiązań** Otwórz menu skrótów dla węzła rozwiązanie **GenerateExternalDataLists** , wybierz polecenie **Dodaj**, a następnie wybierz pozycję **Nowy projekt**.
 
 2. W oknie dialogowym **Dodaj nowy projekt** rozwiń węzły **Visual C#** lub **Visual Basic** , a następnie wybierz węzeł **systemu Windows** .
 
@@ -159,7 +161,7 @@ ms.locfileid: "90740009"
 
 #### <a name="to-configure-and-create-the-vsix-package"></a>Aby skonfigurować i utworzyć pakiet VSIX
 
-1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla pliku source. Extension. vsixmanifest w projekcie GenerateExternalDataLists, a następnie wybierz polecenie **Otwórz**.
+1. W **Eksplorator rozwiązań** Otwórz menu skrótów dla pliku source. Extension. vsixmanifest w projekcie GenerateExternalDataLists, a następnie wybierz polecenie **Otwórz**.
 
      Program Visual Studio otwiera plik w edytorze manifestu. Plik source. Extension. vsixmanifest jest podstawą dla rozszerzenia. plik vsixmanifest jest wymagany przez wszystkie pakiety VSIX. Aby uzyskać więcej informacji na temat tego pliku, zobacz [Dokumentacja schematu rozszerzenia VSIX 1,0](/previous-versions/dd393700(v=vs.110)).
 
@@ -268,7 +270,7 @@ ms.locfileid: "90740009"
 
 3. Na karcie **Lista** w grupie **Ustawienia** wybierz pozycję **Ustawienia listy**.
 
-4. W obszarze **uprawnienia i zarządzanie**wybierz pozycję **Usuń tę listę**, a następnie wybierz przycisk **OK** , aby potwierdzić, że chcesz wysłać listę do kosza.
+4. W obszarze **uprawnienia i zarządzanie** wybierz pozycję **Usuń tę listę**, a następnie wybierz przycisk **OK** , aby potwierdzić, że chcesz wysłać listę do kosza.
 
 5. Zamknij przeglądarkę internetową.
 

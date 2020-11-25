@@ -1,5 +1,7 @@
 ---
 title: Zabezpieczenia rozwiązań programu SharePoint | Microsoft Docs
+description: Poznaj funkcje programu Visual Studio, które pomagają ulepszyć zabezpieczenia aplikacji programu SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6dc1449a40528670274ea5b275cca3f0a8d2f277
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3290d603de124288a5b176dfe0d2e39f5c1377f
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73983774"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95970447"
 ---
 # <a name="security-for-sharepoint-solutions"></a>Zabezpieczenia rozwiązań programu SharePoint
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Program obejmuje następujące funkcje, które ułatwiają zwiększenie bezpieczeństwa aplikacji programu SharePoint.

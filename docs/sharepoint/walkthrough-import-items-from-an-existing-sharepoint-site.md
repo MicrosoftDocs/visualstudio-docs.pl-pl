@@ -1,6 +1,8 @@
 ---
 title: 'Przewodnik: Importowanie elementów z istniejącej witryny programu SharePoint | Microsoft Docs'
 titleSuffix: ''
+description: W tym instruktażu zaimportuj elementy z istniejącej witryny programu SharePoint do projektu programu Visual Studio SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c5f9fd5e3cc9b0df5feb60149e58e895996bb1f0
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 7eeff880538d98f997f48f82c49d01045e834031
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298642"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970137"
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>Przewodnik: Importowanie elementów z istniejącej witryny programu SharePoint
   W tym instruktażu przedstawiono sposób importowania elementów z istniejącej witryny programu SharePoint do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu programu SharePoint.
@@ -84,7 +86,7 @@ ms.locfileid: "92298642"
 
 2. W sekcji **Akcje witryny** na stronie Ustawienia witryny wybierz łącze **Zapisz lokację jako szablon** .
 
-3. W polu **Nazwa pliku** wprowadź **ExampleSite**i w polu **Nazwa szablonu** wprowadź **przykładową witrynę**.
+3. W polu **Nazwa pliku** wprowadź **ExampleSite** i w polu **Nazwa szablonu** wprowadź **przykładową witrynę**.
 
 4. Na potrzeby tego przykładu pozostaw wyczyść pole wyboru **Dołącz zawartość** .
 

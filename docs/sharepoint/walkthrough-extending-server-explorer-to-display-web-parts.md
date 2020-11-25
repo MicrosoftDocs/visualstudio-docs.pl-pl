@@ -1,6 +1,8 @@
 ---
 title: 'Przewodnik: rozszerzanie Eksplorator serwera w celu wyświetlenia składniki Web Part | Microsoft Docs'
 titleSuffix: ''
+description: W tym instruktażu należy zwiększyć Eksplorator serwera tak, aby była wyświetlana Galeria składników Web Part w każdej połączonej witrynie programu SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52dc3f418c3e86e126cbcf196fca2cf73fad35b2
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 55950d8498b436d38d2145c2692556330718883e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583856"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970218"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Przewodnik: rozszerzona Eksplorator serwera do wyświetlania składników Web Part
   W programie Visual Studio można użyć węzła **połączenia SharePoint** **Eksplorator serwera** , aby wyświetlić składniki w witrynach programu SharePoint. Jednak **Eksplorator serwera** domyślnie nie wyświetla niektórych składników. W tym instruktażu zostanie rozbudowana **Eksplorator serwera** tak, aby była wyświetlana Galeria składników Web Part w każdej połączonej witrynie programu SharePoint.
@@ -52,7 +54,7 @@ ms.locfileid: "91583856"
 
   Znajomość następujących pojęć jest pomocna, ale nie jest wymagana, aby ukończyć Przewodnik:
 
-- Korzystanie z modelu obiektów serwera dla programu SharePoint. Aby uzyskać więcej informacji, zobacz [Korzystanie z modelu obiektów po stronie serwera programu SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ee538251(v=office.14)).
+- Korzystanie z modelu obiektów serwera dla programu SharePoint. Aby uzyskać więcej informacji, zobacz [Korzystanie z modelu obiektów Server-Side SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ee538251(v=office.14)).
 
 - Składniki Web Part w rozwiązaniach programu SharePoint. Aby uzyskać więcej informacji, zobacz [składniki Web Part przegląd](/previous-versions/office/ms432401(v=office.14)).
 
@@ -86,7 +88,7 @@ ms.locfileid: "91583856"
 
 #### <a name="to-create-the-extension-project"></a>Aby utworzyć projekt rozszerzenia
 
-1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla węzła rozwiązanie, wybierz polecenie **Dodaj**, a następnie wybierz pozycję **Nowy projekt**.
+1. W **Eksplorator rozwiązań** Otwórz menu skrótów dla węzła rozwiązanie, wybierz polecenie **Dodaj**, a następnie wybierz pozycję **Nowy projekt**.
 
 2. W oknie dialogowym **Nowy projekt** rozwiń węzeł **Visual C#** Node lub **Visual Basic** , a następnie wybierz węzeł **systemu Windows** .
 
@@ -100,7 +102,7 @@ ms.locfileid: "91583856"
 
 #### <a name="to-create-the-sharepoint-commands-project"></a>Aby utworzyć projekt poleceń programu SharePoint
 
-1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla węzła rozwiązanie, wybierz polecenie **Dodaj**, a następnie wybierz pozycję **Nowy projekt**.
+1. W **Eksplorator rozwiązań** Otwórz menu skrótów dla węzła rozwiązanie, wybierz polecenie **Dodaj**, a następnie wybierz pozycję **Nowy projekt**.
 
 2. W oknie dialogowym  **Nowy projekt** rozwiń węzeł **Visual C#** Node lub **Visual Basic** , a następnie wybierz węzeł **systemu Windows** .
 
@@ -137,7 +139,7 @@ ms.locfileid: "91583856"
 
 4. Wybierz kartę **rozszerzenia** , zaznacz pole wyboru dla zestawu Microsoft. VisualStudio. SharePoint, a następnie wybierz przycisk **OK** .
 
-5. W **Eksplorator rozwiązań**Otwórz menu skrótów dla węzła projektu **WebPartNodeExtension** , a następnie wybierz polecenie **Właściwości**.
+5. W **Eksplorator rozwiązań** Otwórz menu skrótów dla węzła projektu **WebPartNodeExtension** , a następnie wybierz polecenie **Właściwości**.
 
      Zostanie otwarty **Projektant projektu** .
 
@@ -149,7 +151,7 @@ ms.locfileid: "91583856"
 
 1. W projekcie WebPartCommands Dodaj plik kodu o nazwie WebPartCommands.
 
-2. W **Eksplorator rozwiązań**Otwórz menu skrótów dla węzła projektu **WebPartCommands** , wybierz **Dodaj**, a następnie wybierz **istniejący element**.
+2. W **Eksplorator rozwiązań** Otwórz menu skrótów dla węzła projektu **WebPartCommands** , wybierz **Dodaj**, a następnie wybierz **istniejący element**.
 
 3. W oknie dialogowym **Dodaj istniejący element** przejdź do folderu, który zawiera pliki kodu dla projektu WebPartNodeExtension, a następnie wybierz pliki kodu WebPartNodeInfo i WebPartCommandIds.
 
@@ -165,7 +167,7 @@ ms.locfileid: "91583856"
 
     - Microsoft. VisualStudio. SharePoint. Commands
 
-7. W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu **WebPartCommands** , a następnie wybierz polecenie **Właściwości**.
+7. W **Eksplorator rozwiązań** Otwórz menu skrótów dla projektu **WebPartCommands** , a następnie wybierz polecenie **Właściwości**.
 
      Zostanie otwarty **Projektant projektu** .
 
@@ -178,7 +180,7 @@ ms.locfileid: "91583856"
 
 #### <a name="to-create-icons-for-the-nodes"></a>Aby utworzyć ikony dla węzłów
 
-1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu **WebPartNodeExtension** , a następnie wybierz polecenie **Właściwości**.
+1. W **Eksplorator rozwiązań** Otwórz menu skrótów dla projektu **WebPartNodeExtension** , a następnie wybierz polecenie **Właściwości**.
 
 2. Zostanie otwarty **Projektant projektu** .
 
@@ -274,7 +276,7 @@ ms.locfileid: "91583856"
 
 #### <a name="to-configure-the-vsix-package"></a>Aby skonfigurować pakiet VSIX
 
-1. W **Eksplorator rozwiązań**w projekcie WebPartNode Otwórz plik **source. Extension. vsixmanifest** w edytorze manifestu.
+1. W **Eksplorator rozwiązań** w projekcie WebPartNode Otwórz plik **source. Extension. vsixmanifest** w edytorze manifestu.
 
      Plik source. Extension. vsixmanifest jest podstawą dla pliku Extension. vsixmanifest, który wymaga wszystkich pakietów VSIX. Aby uzyskać więcej informacji na temat tego pliku, zobacz [Dokumentacja schematu rozszerzenia VSIX 1,0](/previous-versions/dd393700(v=vs.110)).
 
@@ -335,7 +337,7 @@ ms.locfileid: "91583856"
 
 2. Wykonaj następujące kroki, jeśli witryna programu SharePoint, która ma być używana do testowania, nie jest wyświetlana w węźle **połączenia programu SharePoint** w **Eksplorator serwera**:
 
-    1. W **Eksplorator serwera**Otwórz menu skrótów dla **połączeń programu SharePoint**, a następnie wybierz polecenie **Dodaj połączenie**.
+    1. W **Eksplorator serwera** Otwórz menu skrótów dla **połączeń programu SharePoint**, a następnie wybierz polecenie **Dodaj połączenie**.
 
     2. W oknie dialogowym **Dodawanie połączenia programu SharePoint** wprowadź adres URL witryny programu SharePoint, z którą chcesz nawiązać połączenie, a następnie wybierz przycisk **OK** .
 
@@ -351,7 +353,7 @@ ms.locfileid: "91583856"
 
 7. W eksperymentalnym wystąpieniu programu Visual Studio Sprawdź, czy wszystkie składniki Web Part w połączonej lokacji są wyświetlane w węźle **Galeria składników Web Part** w **Eksplorator serwera**.
 
-8. W **Eksplorator serwera**Otwórz menu skrótów dla jednego z składniki Web Part, a następnie wybierz polecenie **Właściwości**.
+8. W **Eksplorator serwera** Otwórz menu skrótów dla jednego z składniki Web Part, a następnie wybierz polecenie **Właściwości**.
 
 9. W wystąpieniu debugowania należy [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sprawdzić, czy szczegółowe informacje o składniku Web Part pojawiają się w oknie **Właściwości** .
 

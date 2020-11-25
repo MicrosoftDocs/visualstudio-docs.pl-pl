@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4bebca3a27d11015388e45ff6839f446506e716c
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400118"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970602"
 ---
 # <a name="how-to-use-xml-snippets"></a>Instrukcje: używanie fragmentów kodu XML
 
@@ -28,7 +28,7 @@ Po dodaniu fragmentu kodu XML do edytora wszystkie pola edytowalne w fragmencie 
 W poniższych procedurach opisano sposób uzyskiwania dostępu do polecenia **Wstaw fragment kodu** .
 
 > [!NOTE]
-> Polecenie **Wstaw fragment kodu** jest również dostępne za pomocą skrótu klawiaturowego ( **Ctrl** + **K** , a następnie **Ctrl** + **X** ).
+> Polecenie **Wstaw fragment kodu** jest również dostępne za pomocą skrótu klawiaturowego (**Ctrl** + **K**, a następnie **Ctrl** + **X**).
 
 ### <a name="to-insert-snippets-from-the-shortcut-menu"></a>Aby wstawić fragmenty kodu z menu skrótów
 
@@ -44,7 +44,7 @@ W poniższych procedurach opisano sposób uzyskiwania dostępu do polecenia **Ws
 
 1. Umieść kursor w miejscu, w którym chcesz wstawić fragment kodu XML.
 
-2. W menu **Edycja** wskaż polecenie **IntelliSense** , a następnie wybierz polecenie **Wstaw fragment kodu**.
+2. W menu **Edycja** wskaż polecenie **IntelliSense**, a następnie wybierz polecenie **Wstaw fragment kodu**.
 
    Zostanie wyświetlona lista dostępnych fragmentów kodu XML.
 
@@ -54,7 +54,7 @@ W poniższych procedurach opisano sposób uzyskiwania dostępu do polecenia **Ws
 
 1. Umieść kursor w miejscu, w którym chcesz wstawić fragment kodu XML.
 
-2. Rozpocznij wpisywanie fragmentu kodu XML, który chcesz dodać do pliku. Jeśli automatyczne uzupełnianie jest włączone, zostanie wyświetlona lista wyrazów uzupełniających IntelliSense. Jeśli nie jest wyświetlany, naciśnij klawisz **Ctrl** , + **Space** aby go uaktywnić.
+2. Rozpocznij wpisywanie fragmentu kodu XML, który chcesz dodać do pliku. Jeśli automatyczne uzupełnianie jest włączone, zostanie wyświetlona lista wyrazów uzupełniających IntelliSense. Jeśli nie jest wyświetlany, naciśnij klawisz **Ctrl**, + **Space** aby go uaktywnić.
 
 3. Wybierz fragment kodu XML z listy kompletny wyraz.
 
@@ -78,7 +78,7 @@ W poniższych procedurach opisano sposób uzyskiwania dostępu do polecenia **Ws
 W poniższych procedurach opisano, jak uzyskać dostęp do polecenia **przestrzenny z** poleceniem.
 
 > [!NOTE]
-> Polecenie **Otocz za pomocą** polecenia jest również dostępne za pomocą skrótu klawiaturowego ( **Ctrl** + **K** , a następnie **Ctrl** + **S** ).
+> Polecenie **Otocz za pomocą** polecenia jest również dostępne za pomocą skrótu klawiaturowego (**Ctrl** + **K**, a następnie **Ctrl** + **S**).
 
 ### <a name="to-use-surround-with-from-the-context-menu"></a>Aby użyć funkcji Otocz z z menu kontekstowego
 
@@ -94,7 +94,7 @@ W poniższych procedurach opisano, jak uzyskać dostęp do polecenia **przestrze
 
 1. Zaznacz tekst, który ma być otoczony w edytorze XML.
 
-2. W menu **Edycja** wskaż polecenie **IntelliSense** , a następnie wybierz opcję **Otocz za pomocą**.
+2. W menu **Edycja** wskaż polecenie **IntelliSense**, a następnie wybierz opcję **Otocz za pomocą**.
 
    Zostanie wyświetlona lista dostępnych elementów otaczających ze fragmentami kodu XML.
 

@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0fa5d60d7fe662cff31b54bf3a13c203f4b6d8c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350696"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970089"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>Konfigurowanie zapory systemu Windows na potrzeby debugowania zdalnego
 
@@ -22,7 +22,7 @@ W sieci chronionej przez zaporę systemu Windows zapora musi być skonfigurowana
 W tym temacie opisano sposób konfigurowania zapory systemu Windows w celu umożliwienia zdalnego debugowania w systemie Windows 10, 8/8.1 i 7. Komputery z systemem Windows Server 2012 R2, 2012 i 2008 R2. Program Visual Studio i komputer zdalny nie muszą korzystać z tego samego systemu operacyjnego. Na przykład na komputerze z programem Visual Studio można uruchomić system Windows 10, a na komputerze zdalnym można uruchomić system Windows Server 2012 R2.
 
 >[!NOTE]
->Instrukcje dotyczące konfigurowania zapory systemu Windows różnią się nieco w różnych systemach operacyjnych i w przypadku starszych wersji systemu Windows. Ustawienia systemu Windows 8/8.1, Windows 10 i Windows Server 2012 używają *aplikacji*Word, a systemy Windows 7 i windows Server 2008 używają *programu*Word.
+>Instrukcje dotyczące konfigurowania zapory systemu Windows różnią się nieco w różnych systemach operacyjnych i w przypadku starszych wersji systemu Windows. Ustawienia systemu Windows 8/8.1, Windows 10 i Windows Server 2012 używają *aplikacji* Word, a systemy Windows 7 i windows Server 2008 używają *programu* Word.
 
 ## <a name="configure-ports-for-remote-debugging"></a>Konfigurowanie portów do zdalnego debugowania
 
@@ -34,17 +34,17 @@ Program Visual Studio i zdalny debuger próbują otworzyć odpowiednie porty pod
 
 1. W przypadku nowego portu przychodzącego wybierz pozycję **reguły ruchu przychodzącego** , a następnie wybierz pozycję **Nowa reguła**. Dla reguły wychodzącej wybierz zamiast nich **reguły ruchu wychodzącego** .
 
-1. W **kreatorze Nowa reguła ruchu przychodzącego**wybierz pozycję **port**, a następnie wybierz pozycję **dalej**.
+1. W **kreatorze Nowa reguła ruchu przychodzącego** wybierz pozycję **port**, a następnie wybierz pozycję **dalej**.
 
 1. Wybierz opcję **TCP** lub **UDP**, w zależności od numeru portu z poniższych tabel.
 
-1. W obszarze **określone porty lokalne**wprowadź numer portu z poniższych tabel, a następnie wybierz przycisk **dalej**.
+1. W obszarze **określone porty lokalne** wprowadź numer portu z poniższych tabel, a następnie wybierz przycisk **dalej**.
 
 1. Wybierz opcję **Zezwalaj na połączenie**, a następnie wybierz przycisk **dalej**.
 
 1. Wybierz co najmniej jeden typ sieci do włączenia, w tym typ sieci dla połączenia zdalnego, a następnie wybierz przycisk **dalej**.
 
-1. Dodaj nazwę reguły (na przykład **msvsmon**, **IIS**lub **Web Deploy**), a następnie wybierz pozycję **Zakończ**.
+1. Dodaj nazwę reguły (na przykład **msvsmon**, **IIS** lub **Web Deploy**), a następnie wybierz pozycję **Zakończ**.
 
    Nowa reguła powinna zostać wyświetlona i wybrana na liście **reguły ruchu przychodzącego** lub **reguły wychodzące** .
 
@@ -76,8 +76,8 @@ W przypadku wybrania opcji **Użyj zarządzanego trybu zgodności** w obszarze *
 
 |**Porty**|**Przychodzące/wychodzące**|**Protokół**|**Opis**|
 |-|-|-|-|
-|135, 139, 445|Przeznaczony|TCP|Wymagany.|
-|137, 138|Przeznaczony|UDP|Wymagany.|
+|135, 139, 445|Przeznaczony|TCP|Wymagane.|
+|137, 138|Przeznaczony|UDP|Wymagane.|
 
 Jeśli zasady domeny wymagają komunikacji sieciowej za pomocą protokołu IPSec, należy otworzyć dodatkowe porty zarówno dla programu Visual Studio, jak i komputerów zdalnych. Aby debugować na zdalnym serwerze sieci Web usług IIS, otwórz port 80 na komputerze zdalnym.
 
@@ -98,7 +98,7 @@ Na komputerze zdalnym narzędzia debugowania zdalnego znajdują się w:
 
 ### <a name="allow-and-configure-the-remote-debugger-through-windows-firewall"></a>Zezwalaj i Konfiguruj zdalny debuger za pomocą zapory systemu Windows
 
-1. W menu **Start** systemu Windows wyszukaj i Otwórz **zaporę systemu Windows**lub **zaporę Windows Defender**.
+1. W menu **Start** systemu Windows wyszukaj i Otwórz **zaporę systemu Windows** lub **zaporę Windows Defender**.
 
 1. Wybierz pozycję **Zezwalaj aplikacji za poorednictwem zapory systemu Windows**.
 

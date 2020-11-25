@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: Profilowanie aplikacji SharePoint | Microsoft Docs'
+description: W tym instruktażu Użyj narzędzi profilowania w programie Visual Studio, aby zoptymalizować wydajność aplikacji SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9a2e4ca528c7f534cc3a7f04d7e1e2832ee9b412
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: 66e19f7744a56d147fb0760c6f20254ea4308603
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "92298637"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970112"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Przewodnik: Profilowanie aplikacji SharePoint
   W tym instruktażu pokazano, jak za pomocą narzędzi profilowania w programie Visual Studio zoptymalizować wydajność aplikacji SharePoint. Przykładowa aplikacja jest odbiorcą zdarzeń funkcji programu SharePoint, który zawiera pętlę bezczynności, która obniża wydajność odbiorcy zdarzeń funkcji. Program Visual Studio profiler umożliwia znalezienie i wyeliminowanie najbardziej kosztownego (najwolniejszego wykonania) części projektu, zwanej również *ścieżką gorącą*.
@@ -72,9 +74,9 @@ ms.locfileid: "92298637"
 
 ### <a name="to-add-a-feature-and-feature-event-receiver"></a>Aby dodać funkcję i odbiorcę zdarzeń funkcji
 
-1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla węzła **funkcje** , wybierz polecenie **Dodaj funkcję**i pozostaw nazwę domyślną, **Feature1**.
+1. W **Eksplorator rozwiązań** Otwórz menu skrótów dla węzła **funkcje** , wybierz polecenie **Dodaj funkcję** i pozostaw nazwę domyślną, **Feature1**.
 
-2. W **Eksplorator rozwiązań**Otwórz menu skrótów dla **Feature1**, a następnie wybierz polecenie **Dodaj odbiorcę zdarzeń**.
+2. W **Eksplorator rozwiązań** Otwórz menu skrótów dla **Feature1**, a następnie wybierz polecenie **Dodaj odbiorcę zdarzeń**.
 
      Spowoduje to dodanie pliku kodu do funkcji z kilkoma komentarzami do obsługi zdarzeń, a następnie otwarcie pliku do edycji.
 
@@ -178,7 +180,7 @@ ms.locfileid: "92298637"
     }
     ```
 
-6. W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu (**ProfileTest**), a następnie wybierz **Właściwości**.
+6. W **Eksplorator rozwiązań** Otwórz menu skrótów dla projektu (**ProfileTest**), a następnie wybierz **Właściwości**.
 
 7. W oknie dialogowym **Właściwości** wybierz kartę **SharePoint** .
 
@@ -195,19 +197,19 @@ ms.locfileid: "92298637"
 
 1. W menu **Analizuj** wybierz polecenie **Uruchom Kreatora wydajności**.
 
-2. Na pierwszej stronie **Kreatora wydajności**pozostaw metodę profilowania jako **próbkowanie procesora** , a następnie wybierz przycisk **dalej** .
+2. Na pierwszej stronie **Kreatora wydajności** pozostaw metodę profilowania jako **próbkowanie procesora** , a następnie wybierz przycisk **dalej** .
 
      Inne metody profilowania mogą być używane w bardziej zaawansowanych sytuacjach profilowania. Aby uzyskać więcej informacji, zobacz [Omówienie metod zbierania danych o wydajności](../profiling/understanding-performance-collection-methods.md).
 
-3. Na stronie dwóch **Kreatora wydajności**pozostaw obiekt docelowy profilu jako **ProfileTest** , a następnie wybierz przycisk **dalej** .
+3. Na stronie dwóch **Kreatora wydajności** pozostaw obiekt docelowy profilu jako **ProfileTest** , a następnie wybierz przycisk **dalej** .
 
      Jeśli rozwiązanie ma wiele projektów, pojawiają się na tej liście.
 
-4. Na trzeciej stronie **Kreatora wydajności**wyczyść pole wyboru **Włącz profilowanie interakcji między warstwami** , a następnie wybierz przycisk **dalej** .
+4. Na trzeciej stronie **Kreatora wydajności** wyczyść pole wyboru **Włącz profilowanie interakcji między warstwami** , a następnie wybierz przycisk **dalej** .
 
      Funkcja profilowania interakcji między warstwami (TIP) jest przydatna do mierzenia wydajności aplikacji, które wysyłają zapytania do baz danych i pokazują, ile razy żąda się strony sieci Web. Ponieważ te dane nie są wymagane do tego przykładu, ta funkcja nie zostanie włączona.
 
-5. Na stronie cztery w **Kreatorze wydajności**pozostaw zaznaczone pole wyboru **Uruchom profilowanie po zakończeniu pracy Kreatora** , a następnie wybierz przycisk **Zakończ** .
+5. Na stronie cztery w **Kreatorze wydajności** pozostaw zaznaczone pole wyboru **Uruchom profilowanie po zakończeniu pracy Kreatora** , a następnie wybierz przycisk **Zakończ** .
 
      Kreator umożliwia Profilowanie aplikacji na serwerze, wyświetla okno **Eksplorator wydajności** , a następnie kompiluje, wdraża i uruchamia aplikację SharePoint.
 
@@ -262,7 +264,7 @@ ms.locfileid: "92298637"
 
 2. Zapisz projekt.
 
-3. W **Eksplorator wydajności**Otwórz folder targets, a następnie wybierz węzeł **ProfileTest** .
+3. W **Eksplorator wydajności** Otwórz folder targets, a następnie wybierz węzeł **ProfileTest** .
 
 4. Na pasku narzędzi **Eksplorator wydajności** na karcie **Akcje** wybierz przycisk **Rozpocznij profilowanie** .
 

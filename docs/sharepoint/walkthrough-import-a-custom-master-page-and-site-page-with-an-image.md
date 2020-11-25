@@ -1,5 +1,7 @@
 ---
 title: Zaimportuj niestandardową stronę wzorcową & strony witryny z obrazem
+description: W tym instruktażu zaimportuj niestandardową stronę wzorcową programu SharePoint i stronę witryny, która zawiera obraz w projekcie programu Visual Studio SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 311124b2e0b81e70c4c2a7b40754207e6c66b749
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ceb69608a2d1770f082991f3d927d4e4639ae56
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015682"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970150"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>Przewodnik: Importowanie niestandardowej strony wzorcowej i strony witryny z obrazem
   W tym instruktażu przedstawiono sposób importowania niestandardowej strony wzorcowej programu SharePoint i strony witryny z obrazem do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu programu SharePoint.
@@ -158,7 +160,7 @@ ms.locfileid: "86015682"
 
 3. Wybierz przycisk **Zakończ** , aby zaimportować wybrane elementy.
 
-4. W **Eksplorator rozwiązań**wybierz \_ \_ węzeł catalogsmasterpage i ustaw wartość właściwości **Rozwiązywanie konfliktów wdrożenia** na **Automatyczne**.
+4. W **Eksplorator rozwiązań** wybierz \_ \_ węzeł catalogsmasterpage i ustaw wartość właściwości **Rozwiązywanie konfliktów wdrożenia** na **Automatyczne**.
 
     Pozwala to zagwarantować, że konflikty wdrożenia są rozwiązywane automatycznie.
 

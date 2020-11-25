@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 02d26416357ec13b61232f2adb0bc3e5e3c67818
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136605"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970203"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Instrukcje: wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji
 
@@ -32,7 +32,7 @@ W przypadku kompilowania dowolnego rodzaju projektu przy użyciu programu MSBuil
 
 ## <a name="to-view-the-build-log-file-for-a-c-project"></a>Aby wyświetlić plik dziennika kompilacji dla projektu języka C++
 
-1. W **Eksploratorze Windows** lub **Eksploratorze plików**Otwórz następujący plik (względem folderu głównego projektu): *Release* \\ <ProjectName> \> . Log * lub *Debug \\<ProjectName \> . log*
+1. W **Eksploratorze Windows** lub **Eksploratorze plików** Otwórz następujący plik (względem folderu głównego projektu): *Release* \\ <ProjectName> \> . Log * lub *Debug \\<ProjectName \> . log*
 
 ## <a name="to-create-a-build-log-file-for-a-managed-code-project"></a>Aby utworzyć plik dziennika kompilacji dla projektu kodu zarządzanego
 
@@ -65,7 +65,7 @@ Dzienniki można również generować przez uruchomienie programu MSBuild bezpo�
      Aby uzyskać więcej informacji, zobacz [okno dialogowe Opcje, projekty i rozwiązania, kompilacja i uruchomienie](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md) oraz <xref:Microsoft.Build.Framework.LoggerVerbosity> .
 
     > [!IMPORTANT]
-    > Musisz ponownie skompilować projekt, aby zmiany zaczęły obowiązywać w oknie **danych wyjściowych** (wszystkie projekty) i pliku * \<ProjectName> txt* (tylko projekty C++).
+    > Musisz ponownie skompilować projekt, aby zmiany zaczęły obowiązywać w oknie **danych wyjściowych** (wszystkie projekty) i pliku *\<ProjectName> txt* (tylko projekty C++).
 
 ## <a name="use-binary-logs-to-make-it-easier-to-browse-large-log-files"></a>Używanie dzienników binarnych w celu łatwiejszego przeglądania dużych plików dziennika
 

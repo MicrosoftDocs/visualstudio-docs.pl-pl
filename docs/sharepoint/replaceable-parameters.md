@@ -1,5 +1,7 @@
 ---
 title: Parametry wymienne | Microsoft Docs
+description: Przejrzyj parametry wymienne (tokeny), które określają wartości w plikach projektu dla elementów rozwiązania programu SharePoint, których wartości rzeczywiste nie są znane w czasie projektowania.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,18 +16,18 @@ author: John-Hart
 ms.author: johnhart
 manager: jillfra
 ms.workload: office
-ms.openlocfilehash: 165ef1256a0150e0942d85c4f876c8b3f5e15c72
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1cd44b3edfaeae376e5a4a9698d138bd75c03bf8
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64825316"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95970258"
 ---
 # <a name="replaceable-parameters"></a>Parametry wymienne
-  Parametry wymienne lub *tokeny*mogą być używane wewnątrz plików projektu w celu zapewnienia wartości dla elementów rozwiązania programu SharePoint, których wartości rzeczywiste nie są znane w czasie projektowania. Są one podobne do standardowych [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tokenów szablonów. Aby uzyskać więcej informacji, zobacz [Parametry szablonu](../ide/template-parameters.md).
+  Parametry wymienne lub *tokeny* mogą być używane wewnątrz plików projektu w celu zapewnienia wartości dla elementów rozwiązania programu SharePoint, których wartości rzeczywiste nie są znane w czasie projektowania. Są one podobne do standardowych [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tokenów szablonów. Aby uzyskać więcej informacji, zobacz [Parametry szablonu](../ide/template-parameters.md).
 
 ## <a name="token-format"></a>Format tokenu
- Tokeny zaczynają się i kończą znakiem dolara ($). We wdrożeniu wszystkie użyte tokeny są zastępowane wartościami rzeczywistymi, gdy projekt jest spakowany w pakiecie rozwiązania programu SharePoint (plik*wsp* ). Na przykład token **$SharePoint. Package.Name $** może zostać rozpoznany jako ciąg "test Package programu SharePoint".
+ Tokeny zaczynają się i kończą znakiem dolara ($). We wdrożeniu wszystkie użyte tokeny są zastępowane wartościami rzeczywistymi, gdy projekt jest spakowany w pakiecie rozwiązania programu SharePoint (plik *wsp* ). Na przykład token **$SharePoint. Package.Name $** może zostać rozpoznany jako ciąg "test Package programu SharePoint".
 
 ## <a name="token-rules"></a>Reguły tokenów
  Do tokenów mają zastosowanie następujące reguły:

@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 07f0312892d9f4f4073cf6fb2c9537ffa52a6267
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436360"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970073"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Instrukcje: zwiększanie procesu kompilacji programu Visual Studio
 
