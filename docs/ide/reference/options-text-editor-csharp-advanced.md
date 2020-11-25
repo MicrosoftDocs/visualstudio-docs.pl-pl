@@ -1,5 +1,7 @@
 ---
 title: Opcje, edytor tekstu, C#, zaawansowane
+description: Dowiedz się, jak za pomocą strony Zaawansowane w sekcji C# zmodyfikować ustawienia formatowania edytora, refaktoryzacji kodu i komentarzy dokumentacji XML dla języka C#.
+ms.custom: SEO-VS-2020
 ms.date: 11/13/2020
 ms.topic: reference
 f1_keywords:
@@ -10,16 +12,16 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: acd04f80d5ade3a4afea418def69d4bbb6e20fa0
-ms.sourcegitcommit: c1cc3d8e1673c52fbfddc86b089b4a3d46bb3e59
+ms.openlocfilehash: 6e8c235c62eeba394902698ecbfc412ed37b0979
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "94626200"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039895"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opcje, edytor tekstu, C#, zaawansowane
 
-Na stronie opcje **Zaawansowane** można modyfikować ustawienia formatowania edytora, refaktoryzacji kodu i komentarzy dokumentacji XML dla języka C#. Aby uzyskać dostęp do tej strony opcji **Tools** , wybierz  >  **Opcje** narzędzia, a następnie wybierz **Edytor tekstu**  >  **C#**  >  **Advanced**.
+Na stronie opcje **Zaawansowane** można modyfikować ustawienia formatowania edytora, refaktoryzacji kodu i komentarzy dokumentacji XML dla języka C#. Aby uzyskać dostęp do tej strony opcji **Tools**, wybierz  >  **Opcje** narzędzia, a następnie wybierz **Edytor tekstu**  >  **C#**  >  **Advanced**.
 
 > [!NOTE]
 > Nie wszystkie opcje mogą być wyświetlane w tym miejscu.

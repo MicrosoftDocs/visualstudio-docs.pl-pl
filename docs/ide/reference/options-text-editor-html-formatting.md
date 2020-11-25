@@ -1,5 +1,7 @@
 ---
 title: Opcje, Edytor tekstu, HTML (Formularze sieci Web), formatowanie
+description: Informacje na temat używania strony formatowania w sekcji HTML do ustawiania opcji projektu HTML służących do formatowania kodu w edytorze kodu.
+ms.custom: SEO-VS-2020
 ms.date: 1/15/2019
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e28caf7f71af7c7a07634d1732a1001a32a4aee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3c8fe85b7bce856867802d43411816ae2df5d2c
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568324"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040982"
 ---
 # <a name="options-text-editor-html-web-forms-formatting"></a>Opcje, Edytor tekstu, HTML (Formularze sieci Web), formatowanie
 
-Strona Opcje **formatowania** służy do ustawiania opcji projektu HTML służących do formatowania kodu w edytorze kodu. Aby uzyskać dostęp do tej strony, na pasku menu wybierz **Tools**  >  **Opcje**narzędzia, a następnie rozwiń pozycję formatowanie **Edytor tekstu**  >  **HTML (Formularze sieci Web)**  >  **Formatting**.
+Strona Opcje **formatowania** służy do ustawiania opcji projektu HTML służących do formatowania kodu w edytorze kodu. Aby uzyskać dostęp do tej strony, na pasku menu wybierz **Tools**  >  **Opcje** narzędzia, a następnie rozwiń pozycję formatowanie **Edytor tekstu**  >  **HTML (Formularze sieci Web)**  >  **Formatting**.
 
 ## <a name="capitalization"></a>Wielkość liter
 

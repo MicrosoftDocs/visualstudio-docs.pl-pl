@@ -1,5 +1,7 @@
 ---
 title: Opcje, Edytor tekstu, XAML, różne
+description: Dowiedz się, jak używać strony różnej w sekcji XML, aby określić sposób formatowania elementów i atrybutów w dokumentach XAML.
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.topic: reference
 f1_keywords:
@@ -28,12 +30,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: f646d52e3aae3d52f6cd24d75421fbdc71d30d66
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c5662381d025fa2c74ac82ac217122ea9097ab14
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544095"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040969"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>Opcje, Edytor tekstu, XAML, różne
 

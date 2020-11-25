@@ -1,5 +1,7 @@
 ---
 title: Opcje, edytor tekstu, XAML, formatowanie
+description: Dowiedz się, jak za pomocą strony opcje formatowania i jej podstrony ustawić opcje formatowania kodu w edytorze kodu podczas programowania w języku XAML.
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.topic: reference
 f1_keywords:
@@ -29,12 +31,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d340a3b9468ea23c4cab23aabe19a7c1390955a3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ddeb503153eacdcff993405e29bb8b3bdbe0c722
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568246"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040527"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Opcje, edytor tekstu, XAML, formatowanie
 

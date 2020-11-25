@@ -1,5 +1,7 @@
 ---
 title: Opcje, Edytor tekstu, HTML (Formularze sieci Web), różne
+description: Dowiedz się, jak użyć strony różne w sekcji HTML, aby ustawić preferencje dotyczące sposobu, w jaki Edytor HTML obsługuje elementy wklejane na stronie.
+ms.custom: SEO-VS-2020
 ms.date: 1/15/2019
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8aa26144a7c0a2f7edad58ecfb26e3a7d402a994
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf5495f60e92a38c0c43a0751054d41dc4de6970
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770907"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040774"
 ---
 # <a name="options-text-editor-html-web-forms-miscellaneous"></a>Opcje, Edytor tekstu, HTML (Formularze sieci Web), różne
 
-Za pomocą strony **różne** opcje można ustawić preferencje dotyczące sposobu, w jaki Edytor HTML obsługuje elementy wklejone do strony. Aby uzyskać dostęp do tej strony, na pasku menu wybierz **Tools**  >  **Opcje**narzędzia, a następnie rozwiń węzeł **Edytor tekstu**  >  **HTML (Formularze sieci Web)**  >  **Miscellaneous**.
+Za pomocą strony **różne** opcje można ustawić preferencje dotyczące sposobu, w jaki Edytor HTML obsługuje elementy wklejone do strony. Aby uzyskać dostęp do tej strony, na pasku menu wybierz **Tools**  >  **Opcje** narzędzia, a następnie rozwiń węzeł **Edytor tekstu**  >  **HTML (Formularze sieci Web)**  >  **Miscellaneous**.
 
 ## <a name="miscellaneous-html-options"></a>Różne opcje HTML
 

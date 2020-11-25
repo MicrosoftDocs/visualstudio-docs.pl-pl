@@ -1,5 +1,7 @@
 ---
 title: -Command (devenv.exe)
+description: Dowiedz się, jak za pomocą przełącznika wiersza polecenia devenv wykonać określone polecenie po uruchomieniu środowiska IDE programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 434b2ad0f2a6ca4d84c6d82bf9a1a85876a4d975
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bcfff93ac9cb4903c534c0d4d57387a5143b6b40
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75570404"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040878"
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
 
@@ -33,7 +35,7 @@ devenv /Command CommandName
 
 *CommandName*
 
-Wymagany. Pełna nazwa polecenia programu Visual Studio lub jego alias ujęty w znaki podwójnego cudzysłowu. Aby uzyskać więcej informacji na temat składni poleceń i aliasów, zobacz [Visual Studio Commands](../../ide/reference/visual-studio-commands.md).
+Wymagane. Pełna nazwa polecenia programu Visual Studio lub jego alias ujęty w znaki podwójnego cudzysłowu. Aby uzyskać więcej informacji na temat składni poleceń i aliasów, zobacz [Visual Studio Commands](../../ide/reference/visual-studio-commands.md).
 
 ## <a name="remarks"></a>Uwagi
 

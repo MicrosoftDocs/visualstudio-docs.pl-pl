@@ -1,5 +1,7 @@
 ---
 title: Opcje, Edytor tekstu, C/C++, widok
+description: Dowiedz się, jak za pomocą strony widok w sekcji C/C++ zmienić domyślne zachowanie podkreślenia kodu, nieaktywnego kodu, konspektu i innych elementów w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.topic: reference
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 95963245b15828f374e9812a9bb09d015b21a94b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 68d08953ca3c493f3b3e42dd4ddd84bc19bdfd6e
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77278692"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96041077"
 ---
 # <a name="options-text-editor-cc-view"></a>Opcje, Edytor tekstu, C/C++, widok
 

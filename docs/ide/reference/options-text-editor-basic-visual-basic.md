@@ -1,5 +1,7 @@
 ---
 title: Opcje, Edytor tekstu, Basic (VB), zaawansowane
+description: Dowiedz się, w jaki sposób użyć strony Zaawansowane w sekcji podstawowe, aby zmienić domyślne ustawienia analizy, dyrektywy importu i wyróżniania.
+ms.custom: SEO-VS-2020
 ms.date: 08/12/2020
 ms.topic: reference
 f1_keywords:
@@ -18,15 +20,15 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 778cd1f9c126b176cafad8b33a147d284bea1b67
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 530fffdf335232a76a54e66551487a89dc50b09a
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88214652"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040995"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>Opcje, Edytor tekstu, podstawowe (Visual Basic), zaawansowane
-Strona **właściwości specyficzne dla języka vb** w folderze **podstawowa** folderu **Edytor tekstu** okna dialogowego **Opcje** (menu**Narzędzia** ) zawiera następujące właściwości:
+Strona **właściwości specyficzne dla języka vb** w folderze **podstawowa** folderu **Edytor tekstu** okna dialogowego **Opcje** (menu **Narzędzia** ) zawiera następujące właściwości:
 
 ## <a name="analysis"></a>Analiza
 

@@ -1,5 +1,7 @@
 ---
 title: Opcje, edytor tekstu, C#, IntelliSense
+description: Dowiedz się, jak modyfikować ustawienia wpływające na zachowanie funkcji IntelliSense dla języka C# przy użyciu strony IntelliSense w sekcji języka C#.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,16 +18,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 87a167a75f3b06522da77d562b0137df89757975
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e727fad6d3cb15f70cf630b1077170d16d28b7f
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596219"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039747"
 ---
 # <a name="options-text-editor-c-intellisense"></a>Opcje, edytor tekstu, C#, IntelliSense
 
-Na stronie opcje **IntelliSense** można modyfikować ustawienia wpływające na zachowanie funkcji IntelliSense dla języka C#. Aby uzyskać dostęp do tej strony opcji **Tools**, wybierz  >  **Opcje**narzędzia, a następnie wybierz **Edytor tekstu**  >  **C#**  >  **IntelliSense**.
+Na stronie opcje **IntelliSense** można modyfikować ustawienia wpływające na zachowanie funkcji IntelliSense dla języka C#. Aby uzyskać dostęp do tej strony opcji **Tools**, wybierz  >  **Opcje** narzędzia, a następnie wybierz **Edytor tekstu**  >  **C#**  >  **IntelliSense**.
 
 Strona Opcje **IntelliSense** zawiera następujące opcje:
 

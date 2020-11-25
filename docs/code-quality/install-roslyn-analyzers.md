@@ -13,16 +13,16 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3c6978c19f01b278886f72ff21d62ebf6c5cf57f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 93cd01c0a90f2864843549c3ce11e066a16a8843
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348687"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040384"
 ---
 # <a name="install-third-party-analyzers"></a>Instalowanie analizatorów innych firm
 
-Program Visual Studio zawiera podstawowe zestawy .NET Compiler Platform ( *Roslyn* ) analizatorów. Te analizatory są zawsze włączone. Możesz zainstalować dodatkowe analizatory jako pakiety NuGet lub jako rozszerzenia programu Visual Studio w plikach *VSIX* .
+Program Visual Studio zawiera podstawowe zestawy .NET Compiler Platform (*Roslyn*) analizatorów. Te analizatory są zawsze włączone. Możesz zainstalować dodatkowe analizatory jako pakiety NuGet lub jako rozszerzenia programu Visual Studio w plikach *VSIX* .
 
 ## <a name="to-install-nuget-analyzer-packages"></a>Aby zainstalować pakiety analizatora NuGet
 
@@ -63,7 +63,7 @@ Program Visual Studio zawiera podstawowe zestawy .NET Compiler Platform ( *Rosly
 
 2. W lewym okienku rozwiń pozycję **online** , a następnie wybierz pozycję **Visual Studio Marketplace**.
 
-3. W polu wyszukiwania wpisz nazwę rozszerzenia analizatora, które chcesz zainstalować. Na przykład może być konieczne [zainstalowanie analizatorów FxCop firmy Microsoft](install-fxcop-analyzers.md#vsix) w celu sprawdzenia kodu pod kątem problemów z zabezpieczeniami i wydajnością, między innymi.
+3. W polu wyszukiwania wpisz nazwę rozszerzenia analizatora, które chcesz zainstalować.
 
 4. Kliknij pozycję **Pobierz**.
 
@@ -101,4 +101,4 @@ Jeśli chcesz sprawdzić, czy rozszerzenie jest zainstalowane, wybierz pozycję 
 ## <a name="see-also"></a>Zobacz też
 
 - [Przegląd analizatorów kodu w programie Visual Studio](../code-quality/roslyn-analyzers-overview.md)
-- [Instalowanie analizatorów FxCop](../code-quality/install-fxcop-analyzers.md)
+- [Zainstaluj analizatory .NET](../code-quality/install-net-analyzers.md)

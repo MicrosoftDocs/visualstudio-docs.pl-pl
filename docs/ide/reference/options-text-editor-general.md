@@ -1,5 +1,7 @@
 ---
 title: Opcje, edytor tekstów, ogólne
+description: Dowiedz się, jak zmienić ustawienia globalne programu Visual Studio Code i edytora tekstu przy użyciu strony Ogólne.
+ms.custom: SEO-VS-2020
 ms.date: 01/18/2019
 ms.topic: reference
 f1_keywords:
@@ -33,12 +35,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed55d65555425b04749696b5510cfe799d2a1194
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1665db5fff414227c18fd8de4224302cb6d43c2a
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80472819"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040605"
 ---
 # <a name="options-dialog-box-text-editor--general"></a>Opcje — okno dialogowe: Edytor tekstu — \> Ogólne
 

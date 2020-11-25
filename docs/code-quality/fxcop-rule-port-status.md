@@ -1,33 +1,33 @@
 ---
 title: Stan portu reguły FxCop
 ms.date: 05/21/2019
-description: Dowiedz się więcej na temat reguł statycznej analizy kodu, które zostały przeanalizowane do analizatorów FxCop w programie Visual Studio. Wyświetlanie reguł portów i zasobów podczas przenoszenia aktualizacji.
+description: Dowiedz się więcej na temat reguł statycznej analizy kodu, które zostały przeanalizowane do analizatorów .NET w programie Visual Studio. Wyświetlanie reguł portów i zasobów podczas przenoszenia aktualizacji.
 ms.custom: SEO-VS-2020
 ms.topic: reference
 helpviewer_keywords:
 - fxcop rules
-- fxcop analyzers, ported rules
+- .NET analyzers, ported rules
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: cedd96036a6d0725dbde5f0b11400a20360a20ec
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: dde5a3d8ccf5557905395ee03d108e995ecffe7e
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348948"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039578"
 ---
 # <a name="fxcop-rule-port-status"></a>Stan portu reguły FxCop
 
-Jeśli wcześniej użyto statycznej analizy kodu w programie Visual Studio, możesz zastanawiać się, które z tych reguł są dostępne w bieżącej implementacji jako [analizatory FxCop](install-fxcop-analyzers.md). Ta strona zawiera listę reguł, które zostały przemieszczone. Zobacz [nieportowe reguły](fxcop-unported-rules.md) dla tych, które nie zostały przełączone i czy istnieją plany dotyczące ich przenoszenia.
+Jeśli wcześniej użyto statycznej analizy kodu w programie Visual Studio, możesz zastanawiać się, które z tych reguł są dostępne w bieżącej implementacji jako [analizatory .NET](install-net-analyzers.md). Ta strona zawiera listę reguł, które zostały przemieszczone. Zobacz [nieportowe reguły](fxcop-unported-rules.md) dla tych, które nie zostały przełączone i czy istnieją plany dotyczące ich przenoszenia.
 
 ## <a name="ported-rules"></a>Przeniesione reguły
 
-[Strona z automatycznie wygenerowaną dokumentacją](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md) w repozytorium Roslyn-analizators ma najbardziej aktualną listę reguł, które zostały przeanalizowane do analizatorów FxCop. Ta strona zawiera również dodatkowe informacje, takie jak to, czy reguła jest włączona domyślnie i czy ma skojarzoną *poprawkę kodu*. ([Poprawki kodu](../ide/quick-actions.md) są dostępne dla jednego kliknięcia w menu ikony żarówki w programie Visual Studio).
+[Strona z automatycznie wygenerowaną dokumentacją](https://github.com/dotnet/roslyn-analyzers/blob/master/src/NetAnalyzers/Microsoft.CodeAnalysis.NetAnalyzers.md) w repozytorium Roslyn-analizators ma najbardziej aktualną listę reguł, które zostały przeanalizowane do analizatorów Roslyn. Ta strona zawiera również dodatkowe informacje, takie jak to, czy reguła jest włączona domyślnie i czy ma skojarzoną *poprawkę kodu*. ([Poprawki kodu](../ide/quick-actions.md) są dostępne dla jednego kliknięcia w menu ikony żarówki w programie Visual Studio).
 
-Od daty na tej stronie Lista reguł FxCop, które zostały [przeanalizowane do analizatorów FxCop](install-fxcop-analyzers.md) , obejmuje:
+Od daty na tej stronie Lista reguł FxCop, które zostały [przeanalizowane do analizatorów .NET](install-net-analyzers.md) , obejmuje:
 
 Identyfikator zasady | Tytuł
 --------|---------
@@ -64,7 +64,7 @@ Identyfikator zasady | Tytuł
 [CA1050](/dotnet/fundamentals/code-analysis/quality-rules/ca1050) | Deklaruj typy w przestrzeniach nazw
 [CA1051](/dotnet/fundamentals/code-analysis/quality-rules/ca1051) | Nie deklaruj widocznych pól w wystąpieniach
 [CA1052](/dotnet/fundamentals/code-analysis/quality-rules/ca1052) | Statyczne typy posiadaczy powinny być statyczne lub NotInheritable
-[CA1053](/dotnet/fundamentals/code-analysis/quality-rules/ca1053) | Statyczne typy elementów zastępczych nie powinny mieć konstruktorów (CA1053 jest częścią [CA1052](/dotnet/fundamentals/code-analysis/quality-rules/ca1052) dla analizatorów FxCop)
+[CA1053](/dotnet/fundamentals/code-analysis/quality-rules/ca1053) | Statyczne typy posiadaczy nie powinny mieć konstruktorów (CA1053 jest częścią [CA1052](/dotnet/fundamentals/code-analysis/quality-rules/ca1052) dla analizatorów .NET)
 [CA1054](/dotnet/fundamentals/code-analysis/quality-rules/ca1054) | Parametry identyfikatora URI nie powinny być ciągami
 [CA1055](/dotnet/fundamentals/code-analysis/quality-rules/ca1055) | Zwracane wartości identyfikatora URI nie powinny być ciągami
 [CA1056](/dotnet/fundamentals/code-analysis/quality-rules/ca1056) | Właściwości identyfikatora URI nie powinny być ciągami
@@ -204,4 +204,4 @@ CA9999 | Niezgodność wersji analizatora
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Reguły Microsoft. CodeAnalysis. FxCopAnalyzers](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md)
+- [Reguły programu .NET Analyzer](https://github.com/dotnet/roslyn-analyzers/blob/master/src/NetAnalyzers/Microsoft.CodeAnalysis.NetAnalyzers.md)

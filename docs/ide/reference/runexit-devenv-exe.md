@@ -1,5 +1,7 @@
 ---
 title: -RunExit (devenv.exe)
+description: Dowiedz się, jak użyć przełącznika wiersza polecenia RunExit devenv, aby skompilować i uruchomić określony projekt lub rozwiązanie, a następnie zamknąć środowisko IDE.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18ca581c5a8a7f631138e8b3eacff02a031e0931
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2a1e0af28e8a96860039381b958d63e161a24936
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593606"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039853"
 ---
 # <a name="runexit-devenvexe"></a>/RunExit (devenv.exe)
 

@@ -1,5 +1,7 @@
 ---
 title: Opcje, edytor tekstu, C/C++, zaawansowane
+description: Dowiedz się, jak użyć strony Zaawansowane w sekcji C/C++, aby zmienić zachowanie związane z technologią IntelliSense i bazą danych przeglądania.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2e7e031836c9762d9666a5624e78ecc7c8cc7dd9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fe69471d231599c6e3eece0b56ff70fca5b6afab
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77275201"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040345"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Opcje, edytor tekstu, C/C++, zaawansowane
 
@@ -56,7 +58,7 @@ Baza danych przeglądania kodu nie czyści niejawnych plików, które nie są ju
 
 **Wyłącz foldery zależności zewnętrznych**
 
-Folder zależności zewnętrznych dla każdego projektu nie został utworzony ani zaktualizowany. W **Eksplorator rozwiązań**każdy projekt zawiera folder zależności zewnętrznych, który zawiera wszystkie niejawne pliki dla tego projektu. Jeśli wybierzesz tę opcję, ten folder nie zostanie wyświetlony.
+Folder zależności zewnętrznych dla każdego projektu nie został utworzony ani zaktualizowany. W **Eksplorator rozwiązań** każdy projekt zawiera folder zależności zewnętrznych, który zawiera wszystkie niejawne pliki dla tego projektu. Jeśli wybierzesz tę opcję, ten folder nie zostanie wyświetlony.
 
 **Utwórz ponownie bazę danych**
 
@@ -182,7 +184,7 @@ Dodaje wiersz po wybraniu klawisza Enter na końcu w pełni wpisanego wyrazu.
 
 Zastępuje znak "." elementem "->", jeśli jest to możliwe dla listy elementów członkowskich.
 
-## <a name="references"></a>Dokumentacja
+## <a name="references"></a>Odwołania
 
 **Wyłącz Rozwiązywanie**
 

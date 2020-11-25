@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20d566937286743a684ecce2ff54ff2cafe4b3a4
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 567af541b819186bda3dc869628c2812be9888b8
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348398"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039591"
 ---
 # <a name="code-analysis-faq"></a>Analiza kodu — często zadawane pytania
 
@@ -24,13 +24,13 @@ Ta strona zawiera odpowiedzi na kilka często zadawanych pytań dotyczących ana
 
 ## <a name="code-analysis-versus-editorconfig"></a>Analiza kodu w porównaniu z EditorConfig
 
-**P** : czy należy użyć analizy kodu lub EditorConfig do sprawdzania stylu kodu?
+**P**: czy należy użyć analizy kodu lub EditorConfig do sprawdzania stylu kodu?
 
 Odp **.: Analiza** kodu i pliki EditorConfig są dostępne w ręku. Podczas definiowania stylów kodu [w pliku EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options) lub na stronie [Opcje edytora tekstu](../ide/code-styles-and-code-cleanup.md) , można faktycznie skonfigurować analizatory kodu, które są wbudowane w program Visual Studio. Pliki EditorConfig mogą służyć do włączania lub wyłączania reguł analizatora, a także do konfigurowania pakietów analizatora NuGet.
 
 ## <a name="editorconfig-versus-rule-sets"></a>EditorConfig a zestawy reguł
 
-**P** : czy należy skonfigurować moje analizatory przy użyciu zestawu reguł lub pliku EditorConfig?
+**P**: czy należy skonfigurować moje analizatory przy użyciu zestawu reguł lub pliku EditorConfig?
 
 Odp **.: zestawy** reguł i pliki EditorConfig mogą współistnieć i mogą być używane do konfigurowania analizatorów. Zarówno pliki EditorConfig, jak i zestawy reguł umożliwiają włączanie i wyłączanie reguł oraz ustawianie ich ważności.
 
@@ -47,13 +47,13 @@ Oprócz zestawów reguł i plików EditorConfig Niektóre analizatory są konfig
 
 ## <a name="code-analysis-in-ci-builds"></a>Analiza kodu w kompilacjach CI
 
-**P** : czy analiza kodu oparta na .NET compiler platform jest zgodna z kompilacjami ciągłej integracji (ci)?
+**P**: czy analiza kodu oparta na .NET compiler platform jest zgodna z kompilacjami ciągłej integracji (ci)?
 
 Odp **.: tak**. W przypadku analizatorów instalowanych z pakietu NuGet te reguły są [wymuszane w czasie kompilacji](roslyn-analyzers-overview.md#build-errors), w tym w trakcie kompilacji elementu konfiguracji. Analizatory używane w kompilacjach CI respektują konfigurację reguły z obu zestawów reguł i plików EditorConfig. Obecnie analizatory kodu, które są wbudowane w program Visual Studio, nie są dostępne jako pakiet NuGet, dlatego te reguły nie są wymuszane w kompilacji CI.
 
 ## <a name="ide-analyzers-versus-stylecop"></a>Analizatory IDE a StyleCop
 
-**P** : Jaka jest różnica między analizatorami kodu IDE programu Visual Studio i analizatorami StyleCop?
+**P**: Jaka jest różnica między analizatorami kodu IDE programu Visual Studio i analizatorami StyleCop?
 
 Odp **.: środowisko IDE programu Visual** Studio zawiera wbudowane analizatory, które szukają zarówno stylu kodu, jak i problemów z jakością. Te reguły ułatwiają korzystanie z nowych funkcji języka w miarę ich wprowadzania i zwiększają łatwość utrzymania kodu. Analizatory IDE są stale aktualizowane wraz z każdą wersją programu Visual Studio.
 
@@ -61,13 +61,19 @@ Odp **.: środowisko IDE programu Visual** Studio zawiera wbudowane analizatory,
 
 ## <a name="code-analyzers-versus-legacy-analysis"></a>Analizatory kodu i analiza starszej wersji
 
-**P** : Jaka jest różnica między starszą analizą a analizą kodu opartą na .NET compiler platform?
+**P**: Jaka jest różnica między starszą analizą a analizą kodu opartą na .NET compiler platform?
 
-Odp **.: Analiza kodu oparta na .NET compiler platform** analizuje kod źródłowy w czasie rzeczywistym i podczas kompilacji, natomiast Starsza analiza analizuje pliki binarne po zakończeniu kompilacji. Aby uzyskać więcej informacji, zobacz [Analiza oparta na .NET compiler platformach i analiza starszej wersji](../code-quality/fxcop-analyzers-faq.md#whats-the-difference-between-legacy-fxcop-and-fxcop-analyzers).
+Odp **.: Analiza kodu oparta na .NET compiler platform** analizuje kod źródłowy w czasie rzeczywistym i podczas kompilacji, natomiast Starsza analiza analizuje pliki binarne po zakończeniu kompilacji. Aby uzyskać więcej informacji, zobacz [Analiza oparta na .NET compiler platformach i analiza starszej wersji](../code-quality/net-analyzers-faq.md#whats-the-difference-between-legacy-fxcop-and-net-analyzers).
+
+## <a name="fxcop-analyzers-versus-net-analyzers"></a>Analizatory FxCopów a analizatory .NET
+
+**P**: Jaka jest różnica między analizatorami FxCop i analizatorami .NET?
+
+Odp **.: zarówno** analizatory FxCopy, jak i analizatorze .NET odnoszą się .NET compiler platform do implementacji usługi FxCop dla usługi Roslyn. W systemach starszych niż Visual Studio 2019 16,8 i .NET 5,0 te analizatory są dostarczane jako `Microsoft.CodeAnalysis.FxCopAnalyzers` [pakiet NuGet](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers). Począwszy od programu Visual Studio 2019 16,8 i .NET 5,0, te analizatory są [dołączone do zestawu .NET SDK](/dotnet/fundamentals/code-analysis/overview). Są one również dostępne jako `Microsoft.CodeAnalysis.NetAnalyzers` [pakiet NuGet](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers). Rozważ [przeprowadzenie migracji z analizatorów FxCop do analizatorów platformy .NET](migrate-from-fxcop-analyzers-to-net-analyzers.md).
 
 ## <a name="treat-warnings-as-errors"></a>Traktuj ostrzeżenia jako błędy
 
-**P** : mój projekt używa opcji Build, aby traktować ostrzeżenia jako błędy. Po przeprowadzeniu migracji ze starszej wersji analizy do analizy kodu źródłowego wszystkie ostrzeżenia analizy kodu są teraz wyświetlane jako błędy. Jak mogę to zapobiec?
+**P**: mój projekt używa opcji Build, aby traktować ostrzeżenia jako błędy. Po przeprowadzeniu migracji ze starszej wersji analizy do analizy kodu źródłowego wszystkie ostrzeżenia analizy kodu są teraz wyświetlane jako błędy. Jak mogę to zapobiec?
 
 Odp **.: aby** zapobiec potraktowaniu ostrzeżeń analizy kodu jako błędów, wykonaj następujące czynności:
 
@@ -81,18 +87,18 @@ Odp **.: aby** zapobiec potraktowaniu ostrzeżeń analizy kodu jako błędów, w
      </Project>
      ```
 
-  2. Dodaj wiersz do pliku projektu. csproj lub. vbproj, aby zaimportować plik. props, który został utworzony w poprzednim kroku. Ten wiersz musi być umieszczony przed wszystkimi wierszami, które zaimportują Analizator FxCop. props Files. Na przykład, jeśli plik. props ma nazwę CodeAnalysis. props:
+  2. Dodaj wiersz do pliku projektu. csproj lub. vbproj, aby zaimportować plik. props, który został utworzony w poprzednim kroku. Ten wiersz musi być umieszczony przed wszystkimi wierszami, które zaimportują Analizator. props Files. Na przykład, jeśli plik. props ma nazwę CodeAnalysis. props:
 
      ```xml
      ...
      <Import Project="..\..\codeanalysis.props" Condition="Exists('..\..\codeanalysis.props')" />
-     <Import Project="..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.5\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props" Condition="Exists('..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.5\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props')" />
+     <Import Project="..\packages\Microsoft.CodeAnalysis.NetAnalyzers.5.0.0\build\Microsoft.CodeAnalysis.NetAnalyzers.props" Condition="Exists('..\packages\Microsoft.CodeAnalysis.NetAnalyzers.5.0.0\build\Microsoft.CodeAnalysis.NetAnalyzers.props')" />
      ...
      ```
 
 ## <a name="code-analysis-solution-property-page"></a>Strona właściwości rozwiązania analizy kodu
 
-**P** : gdzie jest stroną właściwości analizy kodu dla rozwiązania?
+**P**: gdzie jest stroną właściwości analizy kodu dla rozwiązania?
 
 Odp **.: Strona** właściwości Analiza kodu na poziomie rozwiązania została usunięta na korzyść grupy wspólnych właściwości. Aby zarządzać analizą kodu na poziomie projektu, Strona właściwości Analiza kodu jest nadal dostępna. (W przypadku projektów zarządzanych zalecamy także Migrowanie z zestawów reguł do EditorConfig dla konfiguracji reguł).  W celu udostępniania zestawów reguł w wielu/wszystkich projektach w rozwiązaniu lub repozytorium zaleca się zdefiniowanie grupy właściwości z właściwością CodeAnalysisRuleSet w udostępnionym pliku props/targets lub katalogu. props/Directory. targets. Jeśli nie masz żadnych takich wspólnych właściwości lub obiektów docelowych, które zostały zaimportowane przez wszystkie projekty, rozważ [dodanie takiej grupy właściwości do katalogu. props lub Directory. targets w katalogu rozwiązania najwyższego poziomu, który jest automatycznie importowany we wszystkich plikach projektu zdefiniowanych w katalogu lub jego podkatalogach](../msbuild/customize-your-build.md).
 

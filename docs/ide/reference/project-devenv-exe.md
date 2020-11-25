@@ -1,5 +1,7 @@
 ---
 title: -Project (devenv.exe)
+description: Dowiedz się, jak za pomocą przełącznika wiersza polecenia programu Project devenv identyfikować pojedynczy projekt w ramach określonej konfiguracji rozwiązania do kompilowania, czyszczenia, odbudowywania lub wdrażania projektu.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4b57a5bd51ff20de8da87798aa398db04bc1c7d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 90c1cdf37ddda7209b4f951e42ad07720e5cc40b
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75567778"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040112"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
 
@@ -37,11 +39,11 @@ devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project P
 
 - *SolutionName*
 
-  Wymagany. Pełna ścieżka i nazwa pliku rozwiązania.
+  Wymagane. Pełna ścieżka i nazwa pliku rozwiązania.
 
 - {`/Build`|`/Clean`|`/Deploy`|`/Rebuild`}
 
-  Wymagany. [Kompiluje](build-devenv-exe.md), [czyści](clean-devenv-exe.md), [wdraża](deploy-devenv-exe.md)lub ponownie [kompiluje](rebuild-devenv-exe.md) projekt.
+  Wymagane. [Kompiluje](build-devenv-exe.md), [czyści](clean-devenv-exe.md), [wdraża](deploy-devenv-exe.md)lub ponownie [kompiluje](rebuild-devenv-exe.md) projekt.
 
 - *SolnConfigName*
 

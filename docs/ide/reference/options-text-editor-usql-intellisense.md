@@ -1,5 +1,7 @@
 ---
 title: Opcje, Edytor tekstu, U-SQL, IntelliSense
+description: Dowiedz się, jak używać strony IntelliSense w sekcji U-SQL, aby zmodyfikować ustawienia IntelliSense edytora tekstu dla języka U-SQL.
+ms.custom: SEO-VS-2020
 ms.date: 01/17/2019
 ms.topic: reference
 f1_keywords:
@@ -10,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91d2af8bfcd8c9d80b589e01aedd535afbd1a913
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c1aea741c91f38be9d5b423226e635b77e440d9e
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769469"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040202"
 ---
 # <a name="options-text-editor-u-sql-intellisense"></a>Opcje, Edytor tekstu, U-SQL, IntelliSense
 
-Na stronie opcje **IntelliSense** można modyfikować niektóre ustawienia edytora tekstu dla języka U-SQL. Aby uzyskać dostęp do tej strony opcji **Tools**, wybierz  >  **Opcje**narzędzia, a następnie wybierz **Edytor tekstu**  >  **U-SQL**  >  **IntelliSense**.
+Na stronie opcje **IntelliSense** można modyfikować niektóre ustawienia edytora tekstu dla języka U-SQL. Aby uzyskać dostęp do tej strony opcji **Tools**, wybierz  >  **Opcje** narzędzia, a następnie wybierz **Edytor tekstu**  >  **U-SQL**  >  **IntelliSense**.
 
 ## <a name="intellisense-settings"></a>Ustawienia funkcji IntelliSense
 

@@ -1,5 +1,7 @@
 ---
 title: Analiza kodu, Projektant projektu
+description: Dowiedz się więcej na temat analizy kodu, projektanta projektu i sposobu, w jaki zawiera narzędzie do analizy kodu, które można wybrać do uruchomienia w kodzie.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 350c32ea0904913b20f346243de9cb464667289a
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 7a972e183047b9d8cb7adfd30638be2fd4b0de86
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659358"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96041035"
 ---
 # <a name="code-analysis-project-designer"></a>Analiza kodu, Projektant projektu
 

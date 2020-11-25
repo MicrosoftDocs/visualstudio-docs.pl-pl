@@ -1,5 +1,6 @@
 ---
 title: Konwertuj metodę get na lub z właściwości
+description: Dowiedz się, jak użyć menu szybkie akcje i refaktoryzacje, aby przekonwertować metodę get (i opcjonalnie metodę Set) na właściwość.
 ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
@@ -14,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: ad628f8727ed16c882129c5642c77748cb767908
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 3aa7831c56068c826c9bbecf97d7115331243251
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93045778"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039826"
 ---
 # <a name="convert-get-method-to-property--convert-property-to-get-method-refactorings"></a>Konwertuj metodę get na właściwość/Convert na wartość w celu uzyskania refaktoryzacji metod
 
@@ -46,7 +47,7 @@ Te refaktoryzacji mają zastosowanie do:
    - **Mysz**
       - Kliknij prawym przyciskiem myszy kod, wybierz menu **szybkie akcje i refaktoryzacje** , a następnie wybierz polecenie **Zastąp metodę z właściwością** w menu podręcznym okna podglądu.
 
-1. Obowiązkowe Jeśli masz metodę Set, możesz również skonwertować metodę Set w tym momencie, wybierając **Zastąp metodę get i Set Method with Property** .
+1. Obowiązkowe Jeśli masz metodę Set, możesz również skonwertować metodę Set w tym momencie, wybierając **Zastąp metodę get i Set Method with Property**.
 
 1. Jeśli jesteś zadowolony ze zmian w wersji zapoznawczej, naciśnij klawisz **Enter** lub kliknij poprawkę z menu, a zmiany zostaną zatwierdzone.
 

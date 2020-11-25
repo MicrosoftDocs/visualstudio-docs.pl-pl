@@ -1,5 +1,7 @@
 ---
 title: Opcje, Edytor tekstów, C/C++, eksperymentalne
+description: Dowiedz się, w jaki sposób używać strony eksperymentalnej w sekcji C/C++ do zmiany eksperymentalnych zachowań związanych z technologią IntelliSense i bazą danych przeglądania.
+ms.custom: SEO-VS-2020
 ms.date: 08/02/2017
 ms.topic: reference
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e239ad3d2091f334f18ec00a367fc47d5c21db3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e35bdb8c6a56ef3174277836769201cd00e47dad
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77278700"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040306"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Opcje, Edytor tekstów, C/C++, eksperymentalne
 

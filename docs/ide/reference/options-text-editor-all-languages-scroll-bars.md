@@ -1,5 +1,7 @@
 ---
 title: Opcje, Edytor tekstu, wszystkie języki, paski przewijania
+description: Dowiedz się, jak za pomocą strony paski przewijania w sekcji wszystkie języki zmienić domyślne zachowanie pasków przewijania edytora kodu w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 10/25/2018
 ms.topic: reference
 f1_keywords:
@@ -32,12 +34,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c89be8a79aad9a2e3e0cdbc8601a08a99c1ad1aa
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: f75ba02b65b7025f9cf1e4f2eb9b5b6e3de96be0
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808093"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039799"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>Opcje, Edytor tekstu, wszystkie języki, paski przewijania
 To okno dialogowe umożliwia zmianę domyślnego zachowania paska przewijania edytora kodu. Aby wyświetlić te opcje, wybierz opcję **Opcje** z menu **Narzędzia** . W folderze **Edytor tekstu** rozwiń podfolder **wszystkie języki** , a następnie wybierz **paski przewijania**.

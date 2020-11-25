@@ -1,5 +1,7 @@
 ---
 title: -UseEnv (devenv.exe)
+description: Dowiedz się, jak uruchomić program Visual Studio przy użyciu przełącznika wiersza polecenia UseEnv devenv i załadować pewne zmienne środowiskowe do kompilacji.
+ms.custom: SEO-VS-2020
 ms.date: 01/10/2019
 ms.topic: reference
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35808b27964b3ca8fa0488f1be2ce6dc5530b3dd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51b47156b73d81f427c08e62006dc6e457e5780b
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596399"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040943"
 ---
 # <a name="useenv-devenvexe"></a>/UseEnv (devenv.exe)
 
@@ -51,7 +53,7 @@ devenv /UseEnv {SolutionName|ProjectName}
 
 ## <a name="remarks"></a>Uwagi
 
-Ten przełącznik ma wpływ na środowisko IDE programu Visual Studio we właściwościach projektu dla **katalogów VC + +**. Jeśli określisz `/UseEnv` przełącznik, w węźle **Katalogi VC + +** są wyświetlane wartości zmiennych środowiskowych Path, include, LIBPATH i lib. (Pokazuje również wartości **katalogów źródłowych** i **Wyklucz katalogi**). W przeciwnym razie w węźle są zastępowane zmienne środowiskowe o pięciu wartościach katalogu: **katalogi wykonywalne** **, katalogi,** **katalogi odwołań**, **katalogi bibliotek**i **katalogi WinRT**.
+Ten przełącznik ma wpływ na środowisko IDE programu Visual Studio we właściwościach projektu dla **katalogów VC + +**. Jeśli określisz `/UseEnv` przełącznik, w węźle **Katalogi VC + +** są wyświetlane wartości zmiennych środowiskowych Path, include, LIBPATH i lib. (Pokazuje również wartości **katalogów źródłowych** i **Wyklucz katalogi**). W przeciwnym razie w węźle są zastępowane zmienne środowiskowe o pięciu wartościach katalogu: **katalogi wykonywalne** **, katalogi,** **katalogi odwołań**, **katalogi bibliotek** i **katalogi WinRT**.
 
 > [!TIP]
 > Aby uzyskać dostęp do właściwości projektu, kliknij prawym przyciskiem myszy projekt C++ i wybierz polecenie **Właściwości**. W oknie dialogowym **strony właściwości** wybierz opcję **Właściwości konfiguracji** , a następnie **Katalogi VC + +**.

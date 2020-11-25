@@ -1,5 +1,7 @@
 ---
 title: Opcje, Edytor tekstu, HTML (Formularze sieci Web), Walidacja
+description: Dowiedz się, jak za pomocą strony walidacji w sekcji HTML ustawić preferencje, w jaki sposób Edytor HTML sprawdza składnię znaczników HTML w dokumencie.
+ms.custom: SEO-VS-2020
 ms.date: 1/15/2019
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ede4600cb1fa1df118b4635a193d8bff348d5119
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b65edc2b6c48bc76075e909d0f9bd1341a1b6dd8
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568285"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040566"
 ---
 # <a name="options-text-editor-html-web-forms-validation"></a>Opcje, Edytor tekstu, HTML (Formularze sieci Web), Walidacja
 
-Na stronie opcje **sprawdzania poprawności** można ustawić preferencje, w jaki sposób Edytor HTML sprawdza składnię znaczników HTML w dokumencie. Aby uzyskać dostęp do tej strony, na pasku menu wybierz **Tools**  >  **Opcje**narzędzia, a następnie rozwiń pozycję **Edytor tekstu**  >  **HTML (Formularze sieci Web)**  >  **Walidacja**.
+Na stronie opcje **sprawdzania poprawności** można ustawić preferencje, w jaki sposób Edytor HTML sprawdza składnię znaczników HTML w dokumencie. Aby uzyskać dostęp do tej strony, na pasku menu wybierz **Tools**  >  **Opcje** narzędzia, a następnie rozwiń pozycję **Edytor tekstu**  >  **HTML (Formularze sieci Web)**  >  **Walidacja**.
 
 ## <a name="validation"></a>Walidacja
 
@@ -27,11 +29,11 @@ Na stronie opcje **sprawdzania poprawności** można ustawić preferencje, w jak
 
    Schemat określa, które elementy, atrybuty i wielkie litery są prawidłowe w tym schemacie. Określa również Tagi i atrybuty, które są dostępne w technologii IntelliSense.
 
-   Wybierz tę opcję, jeśli chcesz, aby program Visual Studio korzystał z zawartości< strony ** ! Deklaracja>DOCTYPE ** i element **HTML** , aby określić schemat. Na przykład jeśli wybierzesz tę opcję, a strona zawiera deklarację `<!DOCTYPE html>` , program Visual Studio używa schematu HTML5. Jeśli jednak tag **HTML** ma atrybut **xmlns** , na przykład `<html xmlns="http://www.w3.org/1999/xhtml">` , program Visual Studio używa schematu XHTML5.
+   Wybierz tę opcję, jeśli chcesz, aby program Visual Studio korzystał z zawartości< strony **! Deklaracja>DOCTYPE** i element **HTML** , aby określić schemat. Na przykład jeśli wybierzesz tę opcję, a strona zawiera deklarację `<!DOCTYPE html>` , program Visual Studio używa schematu HTML5. Jeśli jednak tag **HTML** ma atrybut **xmlns** , na przykład `<html xmlns="http://www.w3.org/1999/xhtml">` , program Visual Studio używa schematu XHTML5.
 
 - **Obiekt docelowy, gdy nie znaleziono elementu DOCTYPE**
 
-   Wybierz schemat do sprawdzenia, gdy nie ma **<! Deklaracja>DOCTYPE ** na stronie.
+   Wybierz schemat do sprawdzenia, gdy nie ma **<! Deklaracja>DOCTYPE** na stronie.
 
   - **Pokaż błędy**
 

@@ -1,5 +1,7 @@
 ---
 title: Opcje, Edytor tekstu, XML, różne
+description: Dowiedz się, jak za pomocą strony różne w sekcji XAML zmienić ustawienia autouzupełniania i schematu dla edytora XML.
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.topic: reference
 f1_keywords:
@@ -8,12 +10,12 @@ ms.assetid: b6538cbe-badd-4313-a1fb-39e906736bbe
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: dd468945b1ab9ac83b219b9c8c396f017065e2be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a02a2a133031661ecbf9c3719f3b1993f3b20b5b
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568129"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040124"
 ---
 # <a name="options-text-editor-xml-miscellaneous"></a>Opcje, Edytor tekstu, XML, różne
 

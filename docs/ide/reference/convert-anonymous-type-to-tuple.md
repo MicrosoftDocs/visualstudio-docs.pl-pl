@@ -1,5 +1,7 @@
 ---
 title: Konwertuj typ anonimowy na krotkę
+description: Dowiedz się, jak użyć menu szybkie akcje i refaktoryzacje, aby przekonwertować typ anonimowy na krotkę w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: f7e89c5b5a05900fe42af62ef87f70292e94e662
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 452ba826a2765ef624e6c3d04bb20915a26c51fb
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79094277"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040865"
 ---
 # <a name="convert-anonymous-type-to-tuple"></a>Konwertowanie typu anonimowego na krotkę
 
@@ -40,7 +42,7 @@ To Refaktoryzacja dotyczy:
 
 2. Naciśnij klawisz **Enter** , aby zaakceptować refaktoryzację.
 
-   ![Konwertuj typ anonimowy na krotkę](media/convert-anon-to-tuple-complete.png)
+   ![Konwertuj typ anonimowy na zaakceptowaną krotkę](media/convert-anon-to-tuple-complete.png)
 
 ## <a name="see-also"></a>Zobacz też
 

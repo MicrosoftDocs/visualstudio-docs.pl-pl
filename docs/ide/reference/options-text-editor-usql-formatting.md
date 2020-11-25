@@ -1,5 +1,7 @@
 ---
 title: Opcje formatowania edytora U-SQL
+description: Dowiedz się, jak za pomocą strony opcje formatowania i jej podstrony ustawić opcje formatowania kodu w edytorze kodu podczas programowania w języku U-SQL.
+ms.custom: SEO-VS-2020
 ms.date: 01/17/2019
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 200ec41a1295178f1127d10053985384a7813158
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5bf65c6c80bbcf24d48f5da584349cc4d6b26049
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568272"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040293"
 ---
 # <a name="options-text-editor-u-sql-formatting"></a>Opcje, Edytor tekstu, U-SQL, formatowanie
 
@@ -40,7 +42,7 @@ Te ustawienia mają wpływ na to, *kiedy* Edytor kodu stosuje opcje formatowania
 
 ## <a name="preview-windows"></a>Okna wersji zapoznawczej
 
-Podstrony **wcięcia**, **nowe wiersze**i **odstępy** są wyświetlane u dołu okna podglądu. Okno podglądu pokazuje efekt każdej opcji. Aby użyć okna podglądu, wybierz opcję formatowania. Okno podglądu zawiera przykład wybranej opcji. Gdy zmienisz ustawienie, zaznaczając pole wyboru, okno podglądu zostanie zaktualizowane, aby pokazać efekt nowego ustawienia.
+Podstrony **wcięcia**, **nowe wiersze** i **odstępy** są wyświetlane u dołu okna podglądu. Okno podglądu pokazuje efekt każdej opcji. Aby użyć okna podglądu, wybierz opcję formatowania. Okno podglądu zawiera przykład wybranej opcji. Gdy zmienisz ustawienie, zaznaczając pole wyboru, okno podglądu zostanie zaktualizowane, aby pokazać efekt nowego ustawienia.
 
 ### <a name="indentation-remarks"></a>Uwagi dotyczące wcięć
 

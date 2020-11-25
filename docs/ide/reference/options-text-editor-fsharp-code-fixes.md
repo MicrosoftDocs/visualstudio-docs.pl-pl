@@ -1,5 +1,7 @@
 ---
 title: 'Opcje, Edytor tekstu, F #, poprawki kodu'
+description: 'Dowiedz się, jak za pomocą strony poprawki kodu w sekcji F # określić ustawienia, które mogą pomóc identyfikować błędy kodu i oferować rozwiązania.'
+ms.custom: SEO-VS-2020
 ms.date: 01/16/2019
 ms.topic: reference
 f1_keywords:
@@ -9,16 +11,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c20646c8da4101ac674a64c5ca1ed23a3b1fd7b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 73d66e4f8611a08d6dee3733c30b075d71f6712c
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770932"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039604"
 ---
 # <a name="options-text-editor--f--code-fixes"></a>Opcje: Edytor tekstu > F # > poprawek kodu
 
-Strona Opcje poprawek kodu służy do określania ustawień, które mogą ułatwić identyfikację błędów kodu i oferowanie rozwiązań. Aby uzyskać dostęp do tej strony opcji **Tools**, wybierz  >  **Opcje**narzędzia, a następnie wybierz pozycję **Edytor tekstu**  >  poprawki kodu w**języku F #**  >  **Code Fixes**.
+Strona Opcje poprawek kodu służy do określania ustawień, które mogą ułatwić identyfikację błędów kodu i oferowanie rozwiązań. Aby uzyskać dostęp do tej strony opcji **Tools**, wybierz  >  **Opcje** narzędzia, a następnie wybierz pozycję **Edytor tekstu**  >  poprawki kodu w **języku F #**  >  **Code Fixes**.
 
 ## <a name="code-fixes"></a>Poprawki kodu
 

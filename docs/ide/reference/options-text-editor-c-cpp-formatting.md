@@ -1,5 +1,7 @@
 ---
 title: Opcje, edytor tekstu, C/C++, formatowanie
+description: Dowiedz się, jak za pomocą strony opcje formatowania i jej podstrony ustawić opcje formatowania kodu w edytorze kodu podczas programowania w C i C++.
+ms.custom: SEO-VS-2020
 ms.date: 04/30/2018
 ms.topic: reference
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d7a6029058ab0bc02a623df0e1733eb8548102d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 264485fd8f20ee31046035dba7b208795d0d91b0
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596258"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96041090"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Opcje, edytor tekstu, C/C++, formatowanie
 

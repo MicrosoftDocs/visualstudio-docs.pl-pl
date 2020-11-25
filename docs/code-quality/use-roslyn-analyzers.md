@@ -13,12 +13,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 78dc44f4cebbfd245d8e5a8e1a667b422282c7ee
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: f5ca27d44e611ab3b541dfb5992ef37d230513c3
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349155"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040644"
 ---
 # <a name="overview"></a>Omówienie
 
@@ -34,7 +34,7 @@ Począwszy od programu Visual Studio 2019 w wersji 16,3, można skonfigurować w
 
 ::: moniker range="vs-2017"
 
-Można skonfigurować ważność reguł analizatora lub *diagnostyki* , jeśli [są instalowane analizatory](../code-quality/install-roslyn-analyzers.md) jako pakiet NuGet. Można zmienić ważność reguły [z Eksplorator rozwiązań](#set-rule-severity-from-solution-explorer) lub [w pliku zestawu reguł](#set-rule-severity-in-the-rule-set-file).
+Można skonfigurować ważność reguł analizatora lub *diagnostyki*, jeśli [są instalowane analizatory](../code-quality/install-roslyn-analyzers.md) jako pakiet NuGet. Można zmienić ważność reguły [z Eksplorator rozwiązań](#set-rule-severity-from-solution-explorer) lub [w pliku zestawu reguł](#set-rule-severity-in-the-rule-set-file).
 
 ::: moniker-end
 
@@ -292,7 +292,7 @@ dotnet_diagnostic.CA2231.severity = warning
   Jeśli po raz pierwszy edytujesz zestaw reguł, program Visual Studio tworzy kopię domyślnego pliku zestawu reguł, nazywa go *\<projectname> . zestaw* reguł i dodaje go do projektu. Ten niestandardowy zestaw reguł jest również aktywnym zestawem reguł dla projektu.
 
    > [!NOTE]
-   > Projekty .NET Core i .NET Standard nie obsługują poleceń menu dla zestawów reguł w **Eksplorator rozwiązań** , na przykład **Otwórz aktywny zestaw reguł**. Aby określić regułę niedomyślną dla projektu .NET Core lub .NET Standard, ręcznie [Dodaj właściwość **CodeAnalysisRuleSet**](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) do pliku projektu. Nadal można skonfigurować reguły w ramach zestawu reguł w interfejsie użytkownika edytora zestawu reguł programu Visual Studio.
+   > Projekty .NET Core i .NET Standard nie obsługują poleceń menu dla zestawów reguł w **Eksplorator rozwiązań**, na przykład **Otwórz aktywny zestaw reguł**. Aby określić regułę niedomyślną dla projektu .NET Core lub .NET Standard, ręcznie [Dodaj właściwość **CodeAnalysisRuleSet**](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) do pliku projektu. Nadal można skonfigurować reguły w ramach zestawu reguł w interfejsie użytkownika edytora zestawu reguł programu Visual Studio.
 
 1. Przejdź do reguły, rozszerzając jej zawierający zestaw.
 
@@ -374,7 +374,7 @@ Istnieje wiele sposobów pomijania naruszeń reguł:
   W oknie dialogowym **Podgląd zmian** wybierz pozycję **Zastosuj**.
 
   > [!NOTE]
-  > Jeśli nie widzisz opcji **pomijania** menu w **Eksplorator rozwiązań** , naruszenie może być możliwe z kompilacji, a nie analizy na żywo. **Lista błędów** wyświetla diagnostykę lub naruszenia reguł zarówno z analizy kodu na żywo, jak i do kompilacji. Ponieważ Diagnostyka kompilacji może być nieaktualna, na przykład Jeśli edytujesz kod w celu usunięcia naruszenia, ale nie został on ponownie skompilowany, nie można pominąć tej diagnostyki z **Lista błędów**. Diagnostyka z analizy na żywo lub technologia IntelliSense są zawsze aktualne z bieżącymi źródłami i można je pominąć z poziomu **Lista błędów**. Aby wykluczyć diagnostykę *kompilacji* z wybranej opcji, Przełącz filtr źródła **Lista błędów** z **kompilacja + IntelliSense** na **technologię IntelliSense**. Następnie wybierz diagnostykę, którą chcesz pominąć, i wykonaj instrukcje opisane wcześniej.
+  > Jeśli nie widzisz opcji **pomijania** menu w **Eksplorator rozwiązań**, naruszenie może być możliwe z kompilacji, a nie analizy na żywo. **Lista błędów** wyświetla diagnostykę lub naruszenia reguł zarówno z analizy kodu na żywo, jak i do kompilacji. Ponieważ Diagnostyka kompilacji może być nieaktualna, na przykład Jeśli edytujesz kod w celu usunięcia naruszenia, ale nie został on ponownie skompilowany, nie można pominąć tej diagnostyki z **Lista błędów**. Diagnostyka z analizy na żywo lub technologia IntelliSense są zawsze aktualne z bieżącymi źródłami i można je pominąć z poziomu **Lista błędów**. Aby wykluczyć diagnostykę *kompilacji* z wybranej opcji, Przełącz filtr źródła **Lista błędów** z **kompilacja + IntelliSense** na **technologię IntelliSense**. Następnie wybierz diagnostykę, którą chcesz pominąć, i wykonaj instrukcje opisane wcześniej.
   >
   > ![Filtr źródła Lista błędów w programie Visual Studio](media/error-list-filter.png)
 
@@ -386,7 +386,7 @@ Podczas kompilowania projektu w wierszu polecenia naruszenia reguły pojawiają 
 
 - Co najmniej jedna reguła narusza kod projektu.
 
-- [Ważność](#configure-severity-levels) naruszonej reguły jest ustawiona na wartość **Ostrzeżenie** , w przypadku których naruszenia przypadków nie powodują niepowodzenia kompilacji lub **błąd** , w których wypadek naruszenia przypadku niepowodzenia kompilacji.
+- [Ważność](#configure-severity-levels) naruszonej reguły jest ustawiona na wartość **Ostrzeżenie**, w przypadku których naruszenia przypadków nie powodują niepowodzenia kompilacji lub **błąd**, w których wypadek naruszenia przypadku niepowodzenia kompilacji.
 
 Szczegółowość danych wyjściowych kompilacji nie ma wpływu na to, czy są wyświetlane naruszenia reguł. Nawet z **cichą** szczegółowością, naruszenia reguł pojawiają się w danych wyjściowych kompilacji.
 
@@ -408,7 +408,7 @@ Na poniższej ilustracji przedstawiono dane wyjściowe kompilacji wiersza polece
 W projekcie .NET Core, jeśli dodasz odwołanie do projektu, który ma analizatory NuGet, te analizatory są automatycznie dodawane do projektu zależnego. Aby wyłączyć to zachowanie, na przykład jeśli projekt zależny jest projektem testowym jednostkowym, Oznacz pakiet NuGet jako prywatny w pliku *. csproj* lub *. vbproj* projektu, do którego istnieje odwołanie, ustawiając atrybut **PrivateAssets** :
 
 ```xml
-<PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.0" PrivateAssets="all" />
+<PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="5.0.0" PrivateAssets="all" />
 ```
 
 ## <a name="see-also"></a>Zobacz też

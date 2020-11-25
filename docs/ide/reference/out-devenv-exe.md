@@ -1,5 +1,7 @@
 ---
 title: -Out (devenv.exe)
+description: Dowiedz się, w jaki sposób używać przełącznika wiersza polecenia devenv out, aby określić plik do przechowywania i wyświetlania błędów podczas uruchamiania, uruchamiania i kończenia, uaktualniania, kompilowania, ponownego kompilowania, czyszczenia lub wdrażania rozwiązania.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -18,12 +20,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cda81d37be0246c1181b4d82cbd17c3119b94437
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06409d3b7e3d218fcf2b81dce7ea58d3202b7e21
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568014"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040059"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
 
@@ -39,7 +41,7 @@ devenv /Out FileName
 
 - *Nazwa pliku*
 
-  Wymagany. Ścieżka i nazwa pliku do odbierania danych wyjściowych podczas kompilowania pliku wykonywalnego.
+  Wymagane. Ścieżka i nazwa pliku do odbierania danych wyjściowych podczas kompilowania pliku wykonywalnego.
 
 ## <a name="remarks"></a>Uwagi
 

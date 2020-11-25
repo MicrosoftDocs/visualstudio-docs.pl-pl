@@ -1,5 +1,7 @@
 ---
 title: -Deploy (devenv.exe)
+description: Dowiedz się, jak za pomocą przełącznika wiersza polecenia Wdróż devenv wdrożyć rozwiązanie po kompilacji lub odbudowaniu.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8eeb1a03e584b0b39030ec56ca6945a2d5ced78
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 23064842d89ffb1e7fb5e521afe80caea5ffae56
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75570131"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040711"
 ---
 # <a name="deploy-devenvexe"></a>/Deploy (devenv.exe)
 
@@ -34,7 +36,7 @@ devenv SolutionName /Deploy [SolnConfigName [/Project ProjName [/ProjectConfig P
 
 - *SolutionName*
 
-  Wymagany. Pełna ścieżka i nazwa pliku rozwiązania.
+  Wymagane. Pełna ścieżka i nazwa pliku rozwiązania.
 
 - *SolnConfigName*
 
