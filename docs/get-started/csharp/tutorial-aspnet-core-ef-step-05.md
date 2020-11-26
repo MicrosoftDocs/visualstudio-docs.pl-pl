@@ -17,11 +17,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: fc0729eccc6f1392561959dcdac0cf13dfc8e04a
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91780947"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189761"
 ---
 # <a name="step-5-deploy-your-aspnet-core-app-to-azure"></a>Krok 5. wdrażanie aplikacji ASP.NET Core na platformie Azure
 
@@ -57,7 +57,7 @@ Otwórz aplikację ASP.NET Core w programie Visual Studio 2019. Aplikacja powinn
 
 Teraz Dodaj bazę danych usługi Azure SQL Server.
 
-1. Na karcie **Publikowanie** w obszarze **zależności usługi**obok pozycji **SQL Server baza danych**wybierz pozycję **Konfiguruj**.
+1. Na karcie **Publikowanie** w obszarze **zależności usługi** obok pozycji **SQL Server baza danych** wybierz pozycję **Konfiguruj**.
 
 1. Na następnym ekranie wybierz **Azure SQL Database**.
 

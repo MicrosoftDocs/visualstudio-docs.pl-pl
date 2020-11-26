@@ -1,5 +1,7 @@
 ---
 title: Dopasowywanie nawiasów klamrowych w starszej wersji usługi językowej | Microsoft Docs
+description: Dowiedz się więcej na temat dopasowywania nawiasów klamrowych w starszej wersji usługi językowej, która ułatwia śledzenie elementów języka, które muszą występować razem, takich jak nawiasy i nawiasy klamrowe.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0081be3e3ab5a53f7d85f77475d4288aa5c87092
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7d9f93f0081d45e986ab6845cdaee53209b84e13
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709816"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190008"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>Dopasowywanie nawiasów klamrowych w starszej wersji usługi językowej
 Dopasowywanie nawiasów klamrowych pomaga elementom języka śledzenia dla deweloperów, które muszą występować razem, takich jak nawiasy i nawiasy klamrowe. Gdy programista wprowadzi zamykający nawias klamrowy, otwierający nawias klamrowy zostanie wyróżniony.
@@ -38,7 +40,7 @@ Dopasowywanie nawiasów klamrowych pomaga elementom języka śledzenia dla dewel
  Pełny opis sposobu pisania nawiasów klamrowych wyzwala wyróżnianie nawiasów klamrowych, zapoznaj się z sekcją *Przykładowa operacja analizy* w artykule [Starsza wersja programu Service parser i skaner](../../extensibility/internals/legacy-language-service-parser-and-scanner.md).
 
 ## <a name="enable-support-for-brace-matching"></a>Włącz obsługę dopasowania nawiasów klamrowych
- Ten <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> atrybut może ustawiać wpisy rejestru **MatchBraces**, **MatchBracesAtCaret**i **ShowMatchingBrace** , które ustawiają odpowiednie właściwości <xref:Microsoft.VisualStudio.Package.LanguagePreferences> klasy. Właściwości preferencji języka mogą być również ustawiane przez użytkownika.
+ Ten <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> atrybut może ustawiać wpisy rejestru **MatchBraces**, **MatchBracesAtCaret** i **ShowMatchingBrace** , które ustawiają odpowiednie właściwości <xref:Microsoft.VisualStudio.Package.LanguagePreferences> klasy. Właściwości preferencji języka mogą być również ustawiane przez użytkownika.
 
 |Wpis rejestru|Właściwość|Opis|
 |--------------------|--------------|-----------------|

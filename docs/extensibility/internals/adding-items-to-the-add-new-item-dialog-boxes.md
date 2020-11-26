@@ -1,5 +1,7 @@
 ---
 title: Dodawanie elementów do okien dialogowych Dodawanie nowego elementu | Microsoft Docs
+description: Dowiedz się, jak dodać elementy do okna dialogowego Dodaj nowy element w programie Visual Studio, aby można było wyświetlać szablony i elementy projektu do użycia w projektach.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af7f9e5c792785a23ad1674a50abeb4eb6d3cba9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99377db0e835de8d84485d0254d84892a360f5f0
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710216"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190164"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>Dodaj elementy do okna dialogowego Dodaj nowy element
 Proces dodawania elementów do okna dialogowego **Dodaj nowy element** rozpoczyna się od kluczy rejestru. Jak pokazano w poniższych wpisach rejestru, sekcja **AddItemTemplates** zawiera ścieżkę i nazwę katalogu, w którym są umieszczane elementy udostępniane w oknie dialogowym **Dodaj nowy element** .
@@ -23,7 +25,7 @@ Proces dodawania elementów do okna dialogowego **Dodaj nowy element** rozpoczyn
 > [!NOTE]
 > Tabela bezpośrednio po segmencie kodu zawiera dodatkowe informacje o wpisie rejestru.
 
- Ta sekcja znajduje się w obszarze **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\14.0Exp\Projects**.
+ Ta sekcja znajduje się w obszarze **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0Exp\Projects**.
 
  Pierwszy identyfikator GUID jest identyfikatorem CLSID dla projektów tego typu; drugi identyfikator GUID wskazuje zarejestrowany typ projektu dla szablonów dodawania elementów:
 
@@ -46,7 +48,7 @@ Proces dodawania elementów do okna dialogowego **Dodaj nowy element** rozpoczyn
 > - [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}
 > - [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}
 
- Katalog wymieniony dla **TemplatesDir**, który jest *% Template_Path% \\ &lt; SomeProjectItems &gt; *, jest węzłem po lewej stronie drzewa okna dialogowego **Dodaj nowy element** . Dodatkowe elementy w drzewie są oparte na podkatalogu w katalogu głównym. Pliki dostępne do dodania do projektu to elementy w prawym okienku okna dialogowego **Dodaj nowy element** .
+ Katalog wymieniony dla **TemplatesDir**, który jest *% Template_Path% \\ &lt; SomeProjectItems &gt;*, jest węzłem po lewej stronie drzewa okna dialogowego **Dodaj nowy element** . Dodatkowe elementy w drzewie są oparte na podkatalogu w katalogu głównym. Pliki dostępne do dodania do projektu to elementy w prawym okienku okna dialogowego **Dodaj nowy element** .
 
  Zazwyczaj ten folder będzie zawierać pliki szablonów dla projektu, takie jak plik HTML szablonu lub *. cpp* , a także wszystkie pliki *. vsz* do uruchamiania kreatorów. Aby kontrolować sposób wyświetlania elementów, można również dołączyć pliki *. vsdir* do lokalizowania nazw katalogów i ikon. Zlokalizowany ciąg jest podpisem, który pojawia się w oknie dialogowym, które reprezentuje ten węzeł w drzewie okna dialogowego **Dodaj nowy element** .
 

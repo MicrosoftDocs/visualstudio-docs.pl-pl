@@ -1,5 +1,7 @@
 ---
 title: Dodawanie katalogów do okna dialogowego Dodaj nowy element | Microsoft Docs
+description: Dowiedz się, jak dodać katalogi do okna dialogowego Dodaj nowy element w programie Visual Studio, używając skryptu rejestru w celu zarejestrowania katalogów.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d4af79f95c87271e9a10eece6c728daa9a81305
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d6a8090a47c275e66272ed3ee3e5d5a1eef1926d
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710252"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189735"
 ---
 # <a name="add-directories-to-the-add-new-item-dialog-box"></a>Dodawanie katalogów do okna dialogowego Dodaj nowy element
-Poniższy przykład kodu demonstruje sposób rejestrowania nowego zestawu katalogów dla okna dialogowego **Dodaj nowy element** . Katalogi dla okna dialogowego **Dodawanie nowego elementu** są różne dla każdego projektu. W związku z tym katalogi są rejestrowane w podkluczu **projekty** , które znajdują się w **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\8.0Exp\Projects**.
+Poniższy przykład kodu demonstruje sposób rejestrowania nowego zestawu katalogów dla okna dialogowego **Dodaj nowy element** . Katalogi dla okna dialogowego **Dodawanie nowego elementu** są różne dla każdego projektu. W związku z tym katalogi są rejestrowane w podkluczu **projekty** , które znajdują się w **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\Projects**.
 
 ## <a name="registry-script"></a>Skrypt rejestru
 
@@ -50,7 +52,7 @@ NoRemove Projects
  `SortPriority`Wartość określa priorytet sortowania.
 
 ## <a name="add-items-to-an-existing-project"></a>Dodaj elementy do istniejącego projektu
- Możesz również dodać elementy do istniejącego projektu. Na przykład dla [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] projektu można dodać elementy do folderu * \<root> \Program Files\Microsoft Visual Studio\VC # \CSharpProjectItems\LocalProjectItems* . W tym przypadku `%GUID_Project%` jest identyfikatorem GUID dla projektu C# ({FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}).
+ Możesz również dodać elementy do istniejącego projektu. Na przykład dla [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] projektu można dodać elementy do folderu *\<root> \Program Files\Microsoft Visual Studio\VC # \CSharpProjectItems\LocalProjectItems* . W tym przypadku `%GUID_Project%` jest identyfikatorem GUID dla projektu C# ({FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}).
 
  Można także rozciągnąć istniejący projekt przez programowanie podtypu projektu. W przypadku podtypu projektu można zwiększyć projekt bez tworzenia nowego typu projektu. Aby uzyskać więcej informacji na temat podtypów projektów, zobacz [podtypy projektów](../../extensibility/internals/project-subtypes.md).
 

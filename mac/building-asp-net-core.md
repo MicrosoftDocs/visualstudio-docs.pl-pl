@@ -7,11 +7,11 @@ ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
 ms.topic: how-to
 ms.openlocfilehash: 22dfa4a33005afd64be54828f3b49c45244779d2
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493507"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189878"
 ---
 # <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>Tworzenie aplikacji platformy ASP.NET Core w programie Visual Studio dla komputerów Mac
 
@@ -84,11 +84,11 @@ To laboratorium jest przeznaczone dla deweloperów, którzy znają język C#, ch
 
     ![Zrzut ekranu rozwiązania z plikiem źródłowym C# o nazwie program wybrany.](media/netcore-image10.png)
 
-2. Chociaż w tym miejscu istnieje tylko dwa wiersze kodu, są one istotne. Podziel się nimi. Najpierw zostanie utworzony nowy **WebHostBuilder** . Aplikacje ASP.NET Core wymagają hosta, który ma zostać uruchomiony. Host musi implementować interfejs **IWebHost** , który uwidacznia kolekcje funkcji i usług oraz metodę **startową** . Host jest zwykle tworzony przy użyciu wystąpienia **WebHostBuilder** , które kompiluje i zwraca wystąpienie **webhost** . Serwer **webhost** odwołuje się do serwera, który będzie obsługiwał żądania.
+2. Chociaż w tym miejscu istnieje tylko dwa wiersze kodu, są one istotne. Podziel się nimi. Najpierw zostanie utworzony nowy **WebHostBuilder** . Aplikacje ASP.NET Core wymagają hosta, który ma zostać uruchomiony. Host musi implementować interfejs **IWebHost** , który uwidacznia kolekcje funkcji i usług oraz metodę **startową** . Host jest zwykle tworzony przy użyciu wystąpienia **WebHostBuilder**, które kompiluje i zwraca wystąpienie **webhost** . Serwer **webhost** odwołuje się do serwera, który będzie obsługiwał żądania.
 
     ![Zrzut ekranu przedstawiający metodę Main języka C# z instrukcją, która inicjuje zmienną o nazwie host z typem WebHostBuilder.](media/netcore-image11.png)
 
-3. Mimo że **WebHostBuilder** jest odpowiedzialny za utworzenie hosta, który będzie uruchamiał serwer dla aplikacji, wymaga podania serwera, który implementuje **`IServer`** . Domyślnie jest to **[Kestrel](/aspnet/core/fundamentals/servers/kestrel)** , wieloplatformowy serwer sieci web dla ASP.NET Core oparty na **libuv** , który jest międzyplatformową biblioteką asynchronicznych operacji we/wy.
+3. Mimo że **WebHostBuilder** jest odpowiedzialny za utworzenie hosta, który będzie uruchamiał serwer dla aplikacji, wymaga podania serwera, który implementuje **`IServer`** . Domyślnie jest to **[Kestrel](/aspnet/core/fundamentals/servers/kestrel)**, wieloplatformowy serwer sieci web dla ASP.NET Core oparty na **libuv**, który jest międzyplatformową biblioteką asynchronicznych operacji we/wy.
 
     ![Zrzut ekranu przedstawiający podstawową metodę języka C# wyróżnienie zmiennej hosta ustawiającej serwer przy użyciu metody UseKestrel.](media/netcore-image12.png)
 
@@ -126,7 +126,7 @@ To laboratorium jest przeznaczone dla deweloperów, którzy znają język C#, ch
 
     ![Zrzut ekranu przedstawiający kartę Konfiguracja ogólna uruchamiania z opcją Uruchom w konsoli zewnętrznej i Wstrzymaj dane wyjściowe konsoli nie zostały wybrane.](media/netcore-image19.png)
 
-5. Naciśnij klawisz **F5** , aby skompilować i uruchomić aplikację. Alternatywnie możesz wybrać polecenie **uruchom > Rozpocznij debugowanie**.
+5. Naciśnij klawisz **F5**, aby skompilować i uruchomić aplikację. Alternatywnie możesz wybrać polecenie **uruchom > Rozpocznij debugowanie**.
 
 6. Visual Studio dla komputerów Mac uruchomi dwa okna. Pierwszym z nich jest okno konsoli, które udostępnia widok aplikacji serwera samoobsługowego.
 
@@ -200,7 +200,7 @@ To laboratorium jest przeznaczone dla deweloperów, którzy znają język C#, ch
 
 ## <a name="task-6-inserting-application-middleware"></a>Zadanie 6. Wstawianie oprogramowania pośredniczącego aplikacji
 
-1. Znajdź metodę **Configure** w klasie **Startup** . Jest to miejsce, w którym skonfigurowano wszystkie oprogramowanie pośredniczące, aby można je było wstawić do potoku HTTP i użyć do przetwarzania każdego żądania do serwera. Chociaż ta metoda jest wywoływana tylko raz, zawartość metod (takich jak **UseStaticFiles** ) może być wykonywana dla każdego żądania.
+1. Znajdź metodę **Configure** w klasie **Startup** . Jest to miejsce, w którym skonfigurowano wszystkie oprogramowanie pośredniczące, aby można je było wstawić do potoku HTTP i użyć do przetwarzania każdego żądania do serwera. Chociaż ta metoda jest wywoływana tylko raz, zawartość metod (takich jak **UseStaticFiles**) może być wykonywana dla każdego żądania.
 
     ![Zrzut ekranu przedstawiający metodę Configure w klasie uruchomieniowej.](media/netcore-image36.png)
 
@@ -218,7 +218,7 @@ To laboratorium jest przeznaczone dla deweloperów, którzy znają język C#, ch
 
 4. Możemy użyć przeglądarki do sprawdzenia nagłówków, aby sprawdzić, czy są one dodawane. Poniższe instrukcje dotyczą programu Safari, ale można to zrobić w przeglądarce [Chrome](https://stackoverflow.com/questions/4423061/view-http-headers-in-google-chrome) lub [Firefox](https://stackoverflow.com/questions/33974595/in-firefox-how-do-i-see-http-request-headers-where-in-web-console).
 
-5. Gdy przeglądarka załaduje lokację, wybierz pozycję **Safari > Preferences (Preferencje** ).
+5. Gdy przeglądarka załaduje lokację, wybierz pozycję **Safari > Preferences (Preferencje**).
 
 6. Na karcie **Zaawansowane** zaznacz opcję **Pokaż menu rozwijane na pasku menu** , a następnie zamknij okno dialogowe.
 

@@ -1,5 +1,7 @@
 ---
 title: Wybieranie katalogu instalacyjnego dla pakietu VSPackage | Microsoft Docs
+description: Dowiedz się, jak wybrać katalog instalacji dla pakietu VSPackage i plików pomocniczych, używając takich czynników, jak, czy są zarządzane lub niezarządzane.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,24 +12,24 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ead19e9f50201ab795e3c3f68b661037d309d98d
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: cfb7f339ca9832db8fdfea47a5bc1aa940534823
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011908"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189982"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>Wybierz katalog instalacji dla elementu pakietu VSPackage
 Pakietu VSPackage i jego pliki pomocnicze muszą znajdować się w systemie plików użytkownika. Lokalizacja zależy od tego, czy pakietu VSPackage jest zarządzany, czy niezarządzany, schemat obsługi wersji równoległej i wybór użytkownika.
 
 ## <a name="unmanaged-vspackages"></a>Niezarządzany pakietów VSPackage
- Niezarządzany pakietu VSPackage to serwer COM, który można zainstalować w dowolnej lokalizacji. Informacje o rejestracji muszą dokładnie odzwierciedlać jego lokalizację. Interfejs użytkownika Instalatora (UI) powinien podać domyślną lokalizację jako podkatalog `ProgramFilesFolder` wartości właściwości Instalator Windows. Na przykład:
+ Niezarządzany pakietu VSPackage to serwer COM, który można zainstalować w dowolnej lokalizacji. Informacje o rejestracji muszą dokładnie odzwierciedlać jego lokalizację. Interfejs użytkownika Instalatora (UI) powinien podać domyślną lokalizację jako podkatalog `ProgramFilesFolder` wartości właściwości Instalator Windows. Przykład:
 
 *&lt;Folderprogramfiles &gt; \\ &lt; &gt; \\ &lt; MyVSPackageProduct &gt; \V1.0\\*
 
  Użytkownik powinien mieć możliwość zmiany domyślnego katalogu w celu uwzględnienia użytkowników, którzy przechowują małą partycję rozruchową i woli instalować aplikacje i narzędzia na innym woluminie.
 
- Jeśli schemat równoległy używa wersji pakietu VSPackage, można użyć podkatalogów do przechowywania różnych wersji. Na przykład:
+ Jeśli schemat równoległy używa wersji pakietu VSPackage, można użyć podkatalogów do przechowywania różnych wersji. Przykład:
 
  *&lt;Folderprogramfiles &gt; \\ &lt; &gt; \\ &lt; MyVSPackageProduct &gt; \\ v 1.0 \\ 2002\\*
 
@@ -59,7 +61,7 @@ Pakietu VSPackage i jego pliki pomocnicze muszą znajdować się w systemie plik
 
 Jeśli biblioteka DLL pakietu VSPackage zawiera zasoby i wskazuje na nią wpis rejestru **SatelliteDll\DllName** , program [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] podejmie próbę załadowania ich w powyższej kolejności.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wybierz między udostępnionym i z wersją pakietów VSPackage](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)
 - [Zarządzanie pakietami VSPackage](../../extensibility/managing-vspackages.md)
 - [Zarządzanie rejestracją pakietów](/previous-versions/bb166783(v=vs.100))

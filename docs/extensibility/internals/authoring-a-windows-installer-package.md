@@ -1,5 +1,7 @@
 ---
 title: Tworzenie pakietu Instalator Windows | Microsoft Docs
+description: Dowiedz się, jak utworzyć pakiet Instalator Windows dla programu Visual Studio, który składa się z tabel bazy danych zawierających dane plików i rejestru.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03d30c0e2b3b375e6e0efedddd3a017fbfb8646a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 82c96bdf8e73f7d40b41220524edef022c216f1b
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710036"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190125"
 ---
 # <a name="author-a-windows-installer-package"></a>Tworzenie pakietu Instalator Windows
 Dane są dyskami Instalator Windows modelem. Zamiast pisać skrypt proceduralny do kopiowania plików i zapisywania wpisów rejestru, na przykład w tabelach bazy danych można tworzyć wiersze i kolumny zawierające dane plików i rejestru.

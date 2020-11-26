@@ -1,5 +1,6 @@
 ---
 title: CATID dla obiektów zwykle używanych do rozszerania projektów
+description: Poznaj CATID dla obiektów, które są używane do rozszerania obiektów automatyzacji projektu i ProjectItem dla Visual Basic, Visual C# i Visual C++ projektów.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f69a2de627a0200f7b4eb2185e68d4de5ef2cf08
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 1b0b20425cd1508db29932e9687d00055e4db58c
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037123"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190021"
 ---
 # <a name="catids-for-objects-that-are-typically-used-to-extend-projects"></a>CATID dla obiektów, które są zwykle używane do rozszerania projektów
 Poniższa tabela zawiera listę CATID, które służą do rozbudowywania `Project` i `ProjectItem` automatyzacji obiektów dla [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] , [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] i [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] . Te CATID są zdefiniowane w *VSLangProj. olb*.
@@ -94,6 +95,6 @@ const LPOLESTR CVCReferences::s_wszCATID = L"{FE8299CA-19B6-4f20-ABEA-E1FD9A33B6
 | [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] | {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC} |
 | [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] | {F184B08F-C81C-45F6-A57F-5ABD9991F28F} |
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dodaj projekty i szablony elementów projektu](../../extensibility/internals/adding-project-and-project-item-templates.md)
 - [Rejestruj szablony projektów i elementów](../../extensibility/internals/registering-project-and-item-templates.md)

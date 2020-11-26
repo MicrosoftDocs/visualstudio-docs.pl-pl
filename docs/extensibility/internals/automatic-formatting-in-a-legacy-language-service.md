@@ -1,5 +1,7 @@
 ---
 title: Automatyczne formatowanie w starszej wersji usługi językowej | Microsoft Docs
+description: Dowiedz się więcej o automatycznym formatowaniu w starszej wersji usługi językowej, która automatycznie wstawia fragment kodu po rozpoczęciu wpisywania znanej konstrukcji kodu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,18 +12,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a11e9c1fdef60e71f46cee9986d925e876dcac35
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 651cecb20604069c6e8ccc5a5c7b983ab43d7384
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709977"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190060"
 ---
 # <a name="automatic-formatting-in-a-legacy-language-service"></a>Automatyczne formatowanie w starszej wersji usługi językowej
 W przypadku automatycznego formatowania usługa języka automatycznie wstawia fragment kodu, gdy użytkownik rozpocznie wpisywanie znanej konstrukcji kodu.
 
 ## <a name="automatic-formatting-behavior"></a>Zachowanie automatycznego formatowania
- Na przykład *podczas wpisywania, gdy usługa*językowa automatycznie wstawia pasujące nawiasy klamrowe lub naciśnięcie klawisza ENTER, usługa języka wymusza punkt wstawiania w nowym wierszu do odpowiedniego poziomu wcięcia, w zależności od tego, czy poprzedni wiersz otwiera nowy zakres.
+ Na przykład *podczas wpisywania, gdy usługa* językowa automatycznie wstawia pasujące nawiasy klamrowe lub naciśnięcie klawisza ENTER, usługa języka wymusza punkt wstawiania w nowym wierszu do odpowiedniego poziomu wcięcia, w zależności od tego, czy poprzedni wiersz otwiera nowy zakres.
 
  Filtr poleceń używany dla pozostałej części usługi językowej może być również używany do automatycznego formatowania. Możesz również wyróżnić pasujące nawiasy klamrowe, wywołując metodę <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.HighlightMatchingBrace%2A> .
 

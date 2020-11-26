@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a70199f6a46fc5fd78c9b40dc5c68ed1e1c85a56
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352365"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189865"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Porady i wskazówki dotyczące wydajności programu Visual Studio
 
@@ -39,11 +39,11 @@ Program Visual Studio powiadamia Cię na żółtym pasku, gdy automatyczne przyw
 
 Jeśli wyłączysz automatyczne przywracanie plików, możesz szybko przejść do plików, które chcesz otworzyć, za pomocą jednego z poleceń [Przejdź do](../ide/go-to.md) :
 
-- **Aby uzyskać ogólne funkcje** , wybierz pozycję **Edytuj**  >  **Przejdź do**pozycji  >  **Przejdź do wszystkiego**lub naciśnij klawisz **Ctrl** + **T**.
+- **Aby uzyskać ogólne funkcje** , wybierz pozycję **Edytuj**  >  **Przejdź do** pozycji  >  **Przejdź do wszystkiego** lub naciśnij klawisz **Ctrl** + **T**.
 
-- Przejdź do ostatnio edytowanej lokalizacji w rozwiązaniu za pomocą polecenia **Edytuj**  >  **Przejdź do**  >  **lokalizacji ostatniej edycji**lub naciskając klawisz **Ctrl** + **SHIFT** + **Backspace**.
+- Przejdź do ostatnio edytowanej lokalizacji w rozwiązaniu za pomocą polecenia **Edytuj**  >  **Przejdź do**  >  **lokalizacji ostatniej edycji** lub naciskając klawisz **Ctrl** + **SHIFT** + **Backspace**.
 
-- Użyj **Przejdź do ostatniego pliku** , aby wyświetlić listę ostatnio odwiedzonych plików w rozwiązaniu. Wybierz pozycję **Edytuj**  >  **Przejdź do**pozycji  >  **Przejdź do ostatniego pliku**lub naciśnij **klawisze CTRL** + **1**, **Ctrl** + **R**.
+- Użyj **Przejdź do ostatniego pliku** , aby wyświetlić listę ostatnio odwiedzonych plików w rozwiązaniu. Wybierz pozycję **Edytuj**  >  **Przejdź do** pozycji  >  **Przejdź do ostatniego pliku** lub naciśnij **klawisze CTRL** + **1**, **Ctrl** + **R**.
 
 ## <a name="configure-debugging-options"></a>Konfigurowanie opcji debugowania
 
@@ -53,7 +53,7 @@ Jeśli zwykle zaczyna brakować wolnej pamięci podczas debugowania sesji, możn
 
     Najprostsza Optymalizacja polega na włączeniu funkcji **tylko mój kod** , która ładuje tylko symbole dla projektu. Włączenie tej funkcji może spowodować znaczny zapis pamięci na potrzeby debugowania aplikacji zarządzanych (.NET). Ta opcja jest już włączona domyślnie w niektórych typach projektów.
 
-    Aby włączyć **tylko mój kod**, wybierz **Tools**  >  **Opcje**narzędzia  >  **debugowanie**  >  **Ogólne**, a następnie wybierz pozycję **Włącz tylko mój kod**.
+    Aby włączyć **tylko mój kod**, wybierz **Tools**  >  **Opcje** narzędzia  >  **debugowanie**  >  **Ogólne**, a następnie wybierz pozycję **Włącz tylko mój kod**.
 
 - **Określ symbole do załadowania**
 
@@ -69,7 +69,7 @@ Jeśli zwykle zaczyna brakować wolnej pamięci podczas debugowania sesji, możn
 
     Zaleca się wyłączenie profilowania procesora CPU po użyciu. Ta funkcja może zużywać duże ilości zasobów. Po włączeniu profilowania procesora CPU ten stan jest utrwalany w kolejnych sesjach debugowania, więc warto jawnie wyłączyć go po zakończeniu. Niektóre zasoby można zapisać, wyłączając narzędzia diagnostyczne podczas debugowania, jeśli nie są potrzebne podane funkcje.
 
-    Aby wyłączyć **Narzędzia diagnostyczne**, Rozpocznij sesję debugowania, wybierz pozycję **Narzędzia**  >  **Opcje**  >  **Włącz narzędzia diagnostyczne**i usuń zaznaczenie opcji.
+    Aby wyłączyć **Narzędzia diagnostyczne**, Rozpocznij sesję debugowania, wybierz pozycję **Narzędzia**  >  **Opcje**  >  **Włącz narzędzia diagnostyczne** i usuń zaznaczenie opcji.
 
     Aby uzyskać więcej informacji, zobacz [narzędzia profilowania](../profiling/profiling-feature-tour.md).
 
@@ -88,13 +88,13 @@ Aby uzyskać informacje dotyczące wydajności .NET Compiler Platform ("Roslyn")
 
     Program Visual Studio wykonuje analizę całego rozwiązania, aby zapewnić rozbudowane środowisko o błędach przed wywołaniem kompilacji. Ta funkcja jest przydatna do identyfikowania błędów tak szybko, jak to możliwe. Jednak w przypadku dużych rozwiązań ta funkcja może zużywać znaczną ilość zasobów pamięci. Jeśli występują problemy z ilością pamięci lub podobnymi problemami, możesz wyłączyć to środowisko, aby zwolnić te zasoby. Domyślnie ta opcja jest włączona dla Visual Basic i wyłączone dla języka C#.
 
-    Aby wyłączyć **pełną analizę rozwiązania**, wybierz **Tools**  >  **Opcje**narzędzia  >  **Edytor tekstu**, a następnie wybierz opcję **Visual Basic** lub **C#**. Wybierz pozycję **Zaawansowane** i usuń zaznaczenie opcji **Włącz pełną analizę rozwiązania**.
+    Aby wyłączyć **pełną analizę rozwiązania**, wybierz **Tools**  >  **Opcje** narzędzia  >  **Edytor tekstu**, a następnie wybierz opcję **Visual Basic** lub **C#**. Wybierz pozycję **Zaawansowane** i usuń zaznaczenie opcji **Włącz pełną analizę rozwiązania**.
 
 - **Wyłącz CodeLens**
 
     Program Visual Studio wykonuje zadanie **Znajdź wszystkie odwołania** dla każdej metody w miarę wyświetlania. CodeLens udostępnia funkcje, takie jak wbudowane wyświetlanie liczby odwołań. Prace są wykonywane w osobnym procesie, takim jak *zadanie servicehub. RoslynCodeAnalysisService32*. W dużych rozwiązaniach lub w systemach z ograniczeniami zasobów ta funkcja może mieć znaczący wpływ na wydajność. Jeśli występują problemy z pamięcią, na przykład podczas ładowania dużego rozwiązania na komputerze 4-GB lub dużego użycia procesora CPU dla tego procesu, można wyłączyć CodeLens w celu zwolnienia zasobów.
 
-    Aby wyłączyć **CodeLens**, wybierz **Tools**  >  **Opcje**narzędzia  >  **Edytor tekstu**  >  **wszystkie języki**  >  **CodeLens**i usuń zaznaczenie tej funkcji.
+    Aby wyłączyć **CodeLens**, wybierz **Tools**  >  **Opcje** narzędzia  >  **Edytor tekstu**  >  **wszystkie języki**  >  **CodeLens** i usuń zaznaczenie tej funkcji.
 
     > [!NOTE]
     > CodeLens jest dostępny w wersjach Professional i Enterprise programu Visual Studio.
@@ -113,7 +113,7 @@ Aby uzyskać informacje dotyczące wydajności .NET Compiler Platform ("Roslyn")
 
    ::: moniker range=">=vs-2019"
 
-    Aby wyłączyć rozszerzenia, przejdź do **rozszerzeń** > **Zarządzanie rozszerzeniami**i Wyłącz określone rozszerzenie.
+    Aby wyłączyć rozszerzenia, przejdź do **rozszerzeń** > **Zarządzanie rozszerzeniami** i Wyłącz określone rozszerzenie.
 
    ::: moniker-end
 
@@ -121,7 +121,7 @@ Aby uzyskać informacje dotyczące wydajności .NET Compiler Platform ("Roslyn")
 
     [**Tryb mapy**](how-to-track-your-code-by-customizing-the-scrollbar.md#display-modes) wyświetla linie kodu w miniaturach na pasku przewijania. Tryb mapy jest domyślnie włączony.
 
-    Aby wyłączyć tryb mapy, przejdź do pozycji **Narzędzia**  >  **Opcje**  >  **Edytor tekstu**  >  **wszystkie języki**  >  **paski przewijania**i w sekcji **zachowanie** Usuń zaznaczenie opcji **Użyj trybu mapy dla pionowego paska przewijania** .
+    Aby wyłączyć tryb mapy, przejdź do pozycji **Narzędzia**  >  **Opcje**  >  **Edytor tekstu**  >  **wszystkie języki**  >  **paski przewijania** i w sekcji **zachowanie** Usuń zaznaczenie opcji **Użyj trybu mapy dla pionowego paska przewijania** .
 
 - **Wyłącz Zawijanie wierszy**
 
@@ -129,13 +129,13 @@ Aby uzyskać informacje dotyczące wydajności .NET Compiler Platform ("Roslyn")
 
     Aby wyłączyć zawijanie wyrazów dla projektu, nad którym pracujesz, przejdź do obszaru **Edycja**  >  **Zaawansowane**  >  **Zawijanie wierszy**. (Można przełączać to ustawienie za pomocą tych samych poleceń menu).
 
-    Aby wyłączyć Zawijanie wierszy dla wszystkich projektów, przejdź do pozycji **Narzędzia**  >  **Opcje**  >  **Ogólne**  >  **Edytor tekstu**  >  **wszystkie języki**  >  **Ogólne**i w sekcji **Ustawienia** Usuń zaznaczenie opcji **zawijania wyrazów** .
+    Aby wyłączyć Zawijanie wierszy dla wszystkich projektów, przejdź do pozycji **Narzędzia**  >  **Opcje**  >  **Ogólne**  >  **Edytor tekstu**  >  **wszystkie języki**  >  **Ogólne** i w sekcji **Ustawienia** Usuń zaznaczenie opcji **zawijania wyrazów** .
 
 - **Wyłącz projektant XAML**
 
     Projektant XAML jest domyślnie włączony, ale tylko wtedy, gdy otworzysz plik *. XAML* . Jeśli pracujesz z plikami XAML, ale nie chcesz korzystać z funkcjonalności projektanta, wyłącz tę funkcję, aby zwolnić część pamięci.
 
-    Aby wyłączyć Projektant XAML, przejdź do pozycji **Narzędzia**  >  **Opcje**  >  **Projektant XAML**  >  **Włącz Projektant XAML**i usuń zaznaczenie opcji.
+    Aby wyłączyć Projektant XAML, przejdź do pozycji **Narzędzia**  >  **Opcje**  >  **Projektant XAML**  >  **Włącz Projektant XAML** i usuń zaznaczenie opcji.
 
 - **Usuń obciążenia**
 

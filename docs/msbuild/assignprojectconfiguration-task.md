@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 496b6d538385473d50baec80e30fbc269e06c1f6
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353398"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189709"
 ---
 # <a name="assignprojectconfiguration-task"></a>AssignProjectConfiguration, zadanie
 
@@ -34,8 +34,8 @@ To zadanie akceptuje listę ciągów konfiguracji i przypisuje je do określonyc
 |---------------|-----------------|
 |`ProjectReferences`|Wymagany <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wejściowy.<br /><br /> Projekty do skonfigurowania.|
 |`SolutionConfigurationContents`|Opcjonalny `string` parametr wyjściowy.<br /><br /> Zawiera ciąg XML zawierający konfigurację projektu dla każdego projektu. Konfiguracje są przypisywane do nazwanych projektów.|
-|`DefaultToVcxPlatformMapping`|Opcjonalny `string` parametr wyjściowy.<br /><br /> Zawiera rozdzielaną średnikami listę mapowań z nazw platform używanych przez większość typów do tych, które są używane przez pliki *. vcxproj* .<br /><br /> Na przykład:<br /><br /> `"AnyCPU=Win32;X86=Win32;X64=X64"`|
-|`VcxToDefaultPlatformMapping`|Opcjonalne<br /><br /> `string` parametr wyjściowy.<br /><br /> Zawiera rozdzielaną średnikami listę mapowań z nazw platform *. vcxproj* na nazwy platform używane przez większość typów.<br /><br /> Na przykład:<br /><br /> `"Win32=AnyCPU;X64=X64"`|
+|`DefaultToVcxPlatformMapping`|Opcjonalny `string` parametr wyjściowy.<br /><br /> Zawiera rozdzielaną średnikami listę mapowań z nazw platform używanych przez większość typów do tych, które są używane przez pliki *. vcxproj* .<br /><br /> Przykład:<br /><br /> `"AnyCPU=Win32;X86=Win32;X64=X64"`|
+|`VcxToDefaultPlatformMapping`|Opcjonalne<br /><br /> `string` parametr wyjściowy.<br /><br /> Zawiera rozdzielaną średnikami listę mapowań z nazw platform *. vcxproj* na nazwy platform używane przez większość typów.<br /><br /> Przykład:<br /><br /> `"Win32=AnyCPU;X64=X64"`|
 |`CurrentProjectConfiguration`|Opcjonalny `string` parametr wyjściowy.<br /><br /> Zawiera konfigurację dla bieżącego projektu.|
 |`CurrentProjectPlatform`|Opcjonalny `string` parametr wyjściowy.<br /><br /> Zawiera platformę dla bieżącego projektu.|
 |`OnlyReferenceAndBuildProjectsEnabledInSolutionConfiguration`|Opcjonalny `bool` parametr wyjściowy.<br /><br /> Zawiera flagę wskazującą, że odwołania powinny zostać skompilowane, nawet jeśli zostały wyłączone w konfiguracji projektu.|

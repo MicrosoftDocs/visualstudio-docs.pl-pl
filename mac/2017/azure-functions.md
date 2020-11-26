@@ -8,11 +8,11 @@ ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.topic: how-to
 ms.openlocfilehash: 009df6525696405914aeeb224e3817bbfbe27155
-ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89402629"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189800"
 ---
 # <a name="introduction-to-azure-functions"></a>Wprowadzenie do usługi Azure Functions
 
@@ -123,7 +123,7 @@ Korzystając z powyższej procedury, można dodać więcej funkcji do projektu a
 
 Wszystkie ustawienia dodane w local.settings.jsna komputerze muszą zostać również dodane do aplikacji funkcji na platformie Azure. Te ustawienia nie są przekazywane automatycznie po opublikowaniu projektu.
 
-Aby uzyskać dostęp do ustawień aplikacji, przejdź do witryny Azure Portal pod adresem [https://ms.portal.azure.com/](https://ms.portal.azure.com/) . W obszarze **aplikacje funkcje**wybierz pozycję **aplikacje funkcji** i wyróżnij nazwę funkcji:
+Aby uzyskać dostęp do ustawień aplikacji, przejdź do witryny Azure Portal pod adresem [https://ms.portal.azure.com/](https://ms.portal.azure.com/) . W obszarze **aplikacje funkcje** wybierz pozycję **aplikacje funkcji** i wyróżnij nazwę funkcji:
 
 ![menu usługi Azure Functions](media/azure-functions-image9.png)
 

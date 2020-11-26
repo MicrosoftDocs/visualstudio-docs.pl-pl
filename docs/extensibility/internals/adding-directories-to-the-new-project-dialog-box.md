@@ -1,5 +1,7 @@
 ---
 title: Dodawanie katalogów do okna dialogowego Nowy projekt | Microsoft Docs
+description: Dowiedz się, jak dodać katalogi do okna dialogowego Nowy projekt w programie Visual Studio, dzięki czemu można tworzyć nowe typy projektów i wyświetlać je do użycia jako szablony.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 827e383bba13c9742deb654bf3d680adeb3c109b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 87e4c0bcb44690a36579fe77564962515534338d
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710244"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190151"
 ---
 # <a name="add-directories-to-the-new-project-dialog-box"></a>Dodawanie katalogów do okna dialogowego Nowy projekt
 Podczas tworzenia nowych typów projektów można także zarejestrować nowy katalog w oknie dialogowym **Nowy projekt** , aby wyświetlić je do użycia jako szablony. Poniższy przykład kodu wyjaśnia sposób rejestrowania nowego katalogu, znanego również jako węzeł. W przykładzie zarejestrowano szablony udostępniane przez pakietu VSPackage *CLSID_Package*. W związku z tym lewa strona okna dialogowego **Nowy projekt** oferuje dodany węzeł, z nazwą określoną przez zasób *Folder_Label_ResID* . Ten zasób jest ładowany z satelitarnej biblioteki DLL pakietu VSPackage.

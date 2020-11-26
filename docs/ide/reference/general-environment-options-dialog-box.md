@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dfd1b876e58c05c668fd74087d5131bb1e9fcd40
-ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91135095"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189787"
 ---
 # <a name="options-dialog-box-environment--general"></a>Opcje — okno dialogowe: \> Ogólne środowisko
 
@@ -35,7 +35,7 @@ Ta strona służy do zmiany motywów kolorów, ustawień paska stanu i skojarze�
 
 **Motyw kolorystyczny**
 
-Wybierz motyw koloru **niebieski**, **jasny**, **ciemny**lub **niebieski (dodatkowy kontrast)** dla środowiska IDE.
+Wybierz motyw koloru **niebieski**, **jasny**, **ciemny** lub **niebieski (dodatkowy kontrast)** dla środowiska IDE.
 
 Możesz zainstalować dodatkowe wstępnie zdefiniowane motywy i utworzyć niestandardowe motywy, pobierając i instalując **Edytor motywów kolorów programu Visual Studio** z [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Po zainstalowaniu tego narzędzia w polu listy **motywu kolorów** zostaną wyświetlone dodatkowe motywy koloru.
 
@@ -96,6 +96,6 @@ Określa, że po kliknięciu przycisku **Zamknij** tylko okno narzędzia z fokus
 
 Określa, że po kliknięciu przycisku **Autoukrywanie** tylko okno narzędzia z fokusem jest ukryte automatycznie i nie wszystkie okna narzędzi w zestawie zadokowanym. Domyślnie ta opcja nie jest zaznaczona.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Dostosowywanie układów okien](../../ide/customizing-window-layouts-in-visual-studio.md)

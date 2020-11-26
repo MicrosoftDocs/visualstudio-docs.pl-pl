@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 64c00c10b8b7207e1162aa0041145000126fde87
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809175"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189852"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Przewodnik: brak obiektów spowodowany błędnie skonfigurowanym potokiem
 W tym instruktażu pokazano, jak za pomocą [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] narzędzi Diagnostyka grafiki sprawdzać obiekt, który nie występuje ze względu na nieustawioną cieniowanie pikseli.
@@ -43,7 +43,7 @@ W tym instruktażu pokazano, jak za pomocą [!INCLUDE[vsprvs](../../code-quality
 
 1. W programie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Załaduj dokument dziennika grafiki zawierający ramkę, która wykazuje brakujący obiekt. Zostanie wyświetlona nowa karta graficzny dziennik grafiki w temacie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . W górnej części tej karty są docelowe wyniki renderowania dla wybranej ramki. W dolnej części jest **listą ramek**, która wyświetla każdą przechwyconą ramkę jako obraz miniatury.
 
-2. Na **liście ramka**Wybierz ramkę, która pokazuje, że obiekt nie jest wyświetlany. Obiekt docelowy renderowania zostanie zaktualizowany w celu odzwierciedlenia wybranej ramki. W tym scenariuszu karta Dziennik grafiki wygląda następująco:
+2. Na **liście ramka** Wybierz ramkę, która pokazuje, że obiekt nie jest wyświetlany. Obiekt docelowy renderowania zostanie zaktualizowany w celu odzwierciedlenia wybranej ramki. W tym scenariuszu karta Dziennik grafiki wygląda następująco:
 
     ![Dokument dziennika grafiki w programie Visual Studio](media/gfx_diag_demo_misconfigured_pipeline_step_1.png "gfx_diag_demo_misconfigured_pipeline_step_1")
 

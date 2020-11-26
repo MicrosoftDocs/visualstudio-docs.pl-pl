@@ -1,5 +1,6 @@
 ---
 title: Wskazówki dotyczące kontroli źródła dla projektów i edytorów
+description: Zapoznaj się z wytycznymi, które są zgodne z projektami i edytorami, aby umożliwić obsługę kontroli źródła.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d1066995537ff6c43a587326c1087b66f79ff52
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: fdd7e23840701981eaea46b44355c34b55b37a33
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037637"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190138"
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>Dodatkowe wskazówki dotyczące kontroli źródła dla projektów i edytorów
 Istnieje kilka wytycznych, które są zgodne z projektami i edytorami w celu zapewnienia obsługi kontroli źródła.
@@ -34,5 +35,5 @@ Istnieje kilka wytycznych, które są zgodne z projektami i edytorami w celu zap
 |Utrwalanie obiektów i właściwości w kolejności przewidywalnej|X|X|Utrwalaj pliki w przewidywalnej kolejności, takiej jak kolejność alfabetyczna, aby ułatwić scalanie.|
 |Załaduj ponownie|X|X|Gdy plik jest zmieniany na dysku, Edytor musi mieć możliwość jego ponownego załadowania. Gdy użytkownik uczestniczy w kontroli źródła, środowisko będzie ponownie ładować dane przez wywołanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> implementacji. Najbardziej trudnym przypadkiem ponownego załadowania jest to, że wyewidencjonowanie odbywa się po wywołaniu IVsQueryEditQuerySave:: <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> i przetwarza informacje. Jednak kod ponownego załadowania musi być w stanie działać w tej sytuacji.<br /><br /> Środowisko automatycznie ponownie ładuje pliki projektu. Jednak projekt musi implementować, <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2> Jeśli ma zagnieżdżone hierarchie w celu obsługi ponownego ładowania zagnieżdżonych plików projektu.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Obsługa kontroli źródła](../../extensibility/internals/supporting-source-control.md)

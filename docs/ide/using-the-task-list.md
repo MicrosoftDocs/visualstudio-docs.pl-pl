@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8d19794b4fce3e4a1388f864cecf408e0f7e9c53
-ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91959805"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189839"
 ---
 # <a name="use-the-task-list"></a>Korzystanie z listy zadań
 
@@ -33,7 +33,7 @@ Użyj **Lista zadań** do śledzenia komentarzy do kodu, które używają token�
 
 Gdy **Lista zadań** jest otwarty, pojawia się u dołu okna aplikacji.
 
-Aby otworzyć **Lista zadań**, wybierz pozycję **Wyświetl**  >  **Lista zadań**lub na klawiaturze naciśnij klawisz **Ctrl** + **\\** ,**T**.
+Aby otworzyć **Lista zadań**, wybierz pozycję **Wyświetl**  >  **Lista zadań** lub na klawiaturze naciśnij klawisz **Ctrl** + **\\** ,**T**.
 
 ![okno listy zadań](../ide/media/vs2015_task_list.png)
 
@@ -95,7 +95,7 @@ Aby utworzyć token niestandardowy:
 
 Domyślnie Komentarze do zrobienia w języku C++ są wyświetlane w **Lista zadań**.
 
-Aby wyłączyć Komentarze do wykonania w języku C++, w menu **Narzędzia** wybierz polecenie **Opcje**  >  **Edytor tekstu**  >  **C/C++**  >  **Wyświetl**  >  **Wyliczenie komentarzy zadania**i ustaw wartość **false**.
+Aby wyłączyć Komentarze do wykonania w języku C++, w menu **Narzędzia** wybierz polecenie **Opcje**  >  **Edytor tekstu**  >  **C/C++**  >  **Wyświetl**  >  **Wyliczenie komentarzy zadania** i ustaw wartość **false**.
 
 ## <a name="shortcuts"></a>Skróty
 

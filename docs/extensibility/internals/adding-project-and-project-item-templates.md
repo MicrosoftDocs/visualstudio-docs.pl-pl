@@ -1,5 +1,7 @@
 ---
 title: Dodawanie projektów i szablonów elementów projektu | Microsoft Docs
+description: Dowiedz się więcej na temat dodawania szablonów projektu i elementów projektu do okien dialogowych w zintegrowanym środowisku programistycznym (IDE) programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14eb1a9e2e63fa6e63d3ba2efa4426421e6b5593
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e97b04294f0545c378210d39f343f3b009b6d15
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710208"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190177"
 ---
 # <a name="add-project-and-project-item-templates"></a>Dodaj projekty i szablony elementów projektu
 Podczas tworzenia własnych typów projektów należy zapewnić obsługę dodawania nowych projektów i elementów projektu przy użyciu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] okien dialogowych standardowego zintegrowanego środowiska programistycznego (IDE). W poniższych tematach omówiono różne techniki dodawania projektów i elementów projektu.

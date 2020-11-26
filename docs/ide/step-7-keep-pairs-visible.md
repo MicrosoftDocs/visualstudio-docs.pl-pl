@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e854425bab10174220188b23fb7e292371e9cb48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88168726"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189345"
 ---
 # <a name="step-7-keep-pairs-visible"></a>Krok 7. Zachowywanie widoczności par
 Gra działa dobrze, dopóki gracz wybiera tylko pary ikon, które nie są zgodne. Rozważmy jednak, co się powinno zdarzyć, gdy gracz wybierze pasującą parę. Zamiast sprawiać, że ikony są znikane przez włączenie czasomierza (przy użyciu <xref:System.Windows.Forms.Timer.Start> metody), gra powinna zostać zresetowana tak, aby nie śledzić żadnych etykiet przy użyciu `firstClicked` i `secondClicked` zmiennych odwołania, bez resetowania kolorów dla dwóch wybranych etykiet.
@@ -62,7 +62,7 @@ Gra działa dobrze, dopóki gracz wybiera tylko pary ikon, które nie są zgodne
 2. Zapisz i uruchom program, a następnie zacznij wybierać ikony na formularzu. Jeśli wybierzesz parę, która nie pasuje, wyzwala się zdarzenie czasomierza Takt i obie ikony znikają. W przypadku wybrania pary zgodnej, Nowa `if` instrukcja zostanie wykonana, a instrukcja return powoduje, że metoda pominie kod, który uruchamia czasomierz, więc ikony pozostaną widoczne, jak pokazano na poniższej ilustracji.
 
      ![Gra tworzona w ramach tego samouczka](../ide/media/express_finishedgame.png)<br/>
-***Gra w dopasowywanie*** *z widocznymi parami ikon*
+***Pasująca gra** _ _with widocznych par ikon *
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 

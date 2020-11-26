@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bd13c0a9f64ce484d9ba4e3193f7da94d0b1e446
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136722"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189293"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Instrukcje: Zarządzanie konfiguracjami kompilacji z zastosowaniem ustawień dewelopera Visual Basic
 

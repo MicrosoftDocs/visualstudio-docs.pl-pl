@@ -7,11 +7,11 @@ ms.date: 05/06/2018
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
 ms.custom: video
 ms.openlocfilehash: f547662278d2ae01660312aff2708970a0a9300a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315008"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190255"
 ---
 # <a name="customizing-the-ide"></a>Dostosowywanie środowiska IDE
 
@@ -25,7 +25,7 @@ Możesz przełączyć motywy w Visual Studio dla komputerów Mac, przechodząc d
 
 ![Ciemny wybór motywu](media/customizing-the-ide-image7b.png)
 
-## <a name="localization"></a>Lokalizacja
+## <a name="localization"></a>Localization
 
 Visual Studio dla komputerów Mac jest lokalizowana w następujących 14 językach, dzięki czemu można uzyskać dostęp do większej liczby deweloperów:
 
@@ -116,7 +116,7 @@ Istnieje jednak możliwość utworzenia nowego układu przy użyciu elementu men
 
 Visual Studio dla komputerów Mac pozwala na otwieranie edytorów tekstu obok siebie lub w celu uzyskania edytora jako odłączonego okna.
 
-Tryb 2-kolumnowy można włączyć za pomocą elementu menu Widok, wybierając opcję **wyświetl > kolumny edytora > 2 kolumny**lub przeciągając kartę edytora do jednej z krawędzi obszaru edytora:
+Tryb 2-kolumnowy można włączyć za pomocą elementu menu Widok, wybierając opcję **wyświetl > kolumny edytora > 2 kolumny** lub przeciągając kartę edytora do jednej z krawędzi obszaru edytora:
 
 ![Dwukolumnowy tryb Side-by-Side](media/customizing-the-ide-sbs.png)
 

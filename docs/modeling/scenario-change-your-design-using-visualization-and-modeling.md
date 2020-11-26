@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a6ad330c083a97e8a098f05a9e0398a806a9153b
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "92298587"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189133"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scenariusz: Zmiana projektu z wykorzystaniem wizualizacji i modelowania
 
@@ -412,7 +412,7 @@ Jako punkt początkowy do eksplorowania i omawiania istniejących klas można u�
 
  **Diagram zależności dla obiadu teraz zintegrowany z usługami Lucerny**
 
- Warstwy na tym diagramie łączą się z odpowiednimi artefaktami rozwiązań na obiad teraz i Lucerny. Na przykład warstwa biznesowa łączy się z przestrzenią nazw DinnerNow. Business i jej członkami, która teraz zawiera klasę PaymentApprover. Warstwa dostępu do zasobów łączy się z przestrzenią nazw DinnerNow. Data. Strzałki lub *zależności*określają, że tylko warstwa biznesowa może korzystać z funkcji w warstwie dostępu do zasobów. Gdy zespoły aktualizują swój kod, sprawdzanie poprawności warstwy jest wykonywane regularnie, aby przechwytywać konflikty w miarę ich występowania, a także ułatwić zespołom ich natychmiastowe rozwiązanie.
+ Warstwy na tym diagramie łączą się z odpowiednimi artefaktami rozwiązań na obiad teraz i Lucerny. Na przykład warstwa biznesowa łączy się z przestrzenią nazw DinnerNow. Business i jej członkami, która teraz zawiera klasę PaymentApprover. Warstwa dostępu do zasobów łączy się z przestrzenią nazw DinnerNow. Data. Strzałki lub *zależności* określają, że tylko warstwa biznesowa może korzystać z funkcji w warstwie dostępu do zasobów. Gdy zespoły aktualizują swój kod, sprawdzanie poprawności warstwy jest wykonywane regularnie, aby przechwytywać konflikty w miarę ich występowania, a także ułatwić zespołom ich natychmiastowe rozwiązanie.
 
  Zespoły współpracują ze sobą w celu przyrostowego integrowania i testowania dwóch systemów. Najpierw należy upewnić się, że PaymentApprover i pozostała część obiadu teraz współpracują ze sobą, zanim zadbają o PaymentProcessing.
 

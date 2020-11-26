@@ -1,5 +1,7 @@
 ---
 title: Najlepsze rozwiązania dotyczące zabezpieczeń w programie pakietów VSPackage | Microsoft Docs
+description: Poznaj najlepsze rozwiązania dotyczące zabezpieczeń w pakietu VSPackage, podstawową jednostkę zabezpieczeń i wdrażania aplikacji Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e73be2af3d24a6a719f353fbd0ab25dbdf86fe09
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: f81f682271a949954d113ffd2f6228db0de814e8
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012142"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190047"
 ---
 # <a name="best-practices-for-security-in-vspackages"></a>Najlepsze rozwiązania dotyczące zabezpieczeń w programie pakietów VSPackage
 Aby zainstalować [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] program na komputerze, musisz być uruchomiony w kontekście z poświadczeniami administracyjnymi. Podstawową jednostką zabezpieczeń i wdrażania [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] aplikacji jest [pakietu VSPackage](../../extensibility/internals/vspackages.md). Pakietu VSPackage musi być zarejestrowany przy użyciu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , co wymaga również poświadczeń administracyjnych.
@@ -30,6 +32,6 @@ Aby zainstalować [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)
 
  Aby uzyskać więcej informacji, zobacz [zasady bezpiecznego kodowania dla .NET Framework](/previous-versions/visualstudio/visual-studio-2008/d55zzx87(v=vs.90)).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Zabezpieczenia dodatku](/previous-versions/1326zbk3(v=vs.140))
 - [Zabezpieczenia DDEX](/previous-versions/bb163703(v=vs.140))

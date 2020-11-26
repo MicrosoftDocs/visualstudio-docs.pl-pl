@@ -12,11 +12,11 @@ ms.workload:
 - multiple
 monikerRange: vs-2019
 ms.openlocfilehash: c3a2e14236c2d24bc9650fab81150cc295826844
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006257"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189930"
 ---
 # <a name="how-to-use-visual-studio-with-a-codespace-preview"></a>Jak używać programu Visual Studio z codespace (wersja zapoznawcza)
 
@@ -32,9 +32,9 @@ Program Visual Studio ma doskonałą obsługę tworzenia aplikacji w witrynie Gi
 
 Łączenie z usługą GitHub Codespaces za pomocą programu Visual Studio 2019 Preview nie jest domyślnie włączone, więc najpierw musisz włączyć opcję wersji zapoznawczej.
 
-1. W wersji zapoznawczej programu Visual Studio **Tools**2019 Użyj  >  elementu menu**Opcje** narzędzi, aby otworzyć okno dialogowe Opcje.
+1. W wersji zapoznawczej programu Visual Studio **Tools** 2019 Użyj  >  elementu menu **Opcje** narzędzi, aby otworzyć okno dialogowe Opcje.
 
-2. W obszarze **środowisko**wybierz pozycję **funkcje w wersji zapoznawczej** i Sprawdź funkcję **Połącz z usługą GitHub Codespaces** w wersji zapoznawczej.
+2. W obszarze **środowisko** wybierz pozycję **funkcje w wersji zapoznawczej** i Sprawdź funkcję **Połącz z usługą GitHub Codespaces** w wersji zapoznawczej.
 
    ![Sprawdź funkcję Connect Codespaces w wersji zapoznawczej](media/connect-to-github-codespaces-preview-feature.png)
 
@@ -52,7 +52,7 @@ Jeśli nie masz jeszcze elementu codespace, możesz go utworzyć z poziomu progr
 
    ![Logowanie do usługi GitHub w programie Visual Studio](media/visual-studio-sign-in-to-github.png)
 
-   Po wybraniu opcji **Zaloguj się do usługi GitHub**postępuj zgodnie z przepływem pracy logowania w witrynie GitHub online.
+   Po wybraniu opcji **Zaloguj się do usługi GitHub** postępuj zgodnie z przepływem pracy logowania w witrynie GitHub online.
 
 3. Jeśli nigdy nie utworzono elementu codespace, zostanie wyświetlony monit o jego utworzenie.
 

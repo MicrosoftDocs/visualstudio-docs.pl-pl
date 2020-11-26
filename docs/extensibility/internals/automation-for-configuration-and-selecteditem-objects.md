@@ -1,5 +1,7 @@
 ---
 title: Automatyzacja w zakresie konfiguracji i SelectedItem obiektów | Microsoft Docs
+description: Dowiedz się, jak zautomatyzować procesy kompilacji i wybranych elementów programu Visual Studio przy użyciu obiektów Configuration i SelectedItem w elemencie Interop Shell.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0341cdf56b32b8b1ac77104b3f3e813ae0610767
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5bc4b23662efe688146a7266d1b061d2d9611a45
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709972"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190073"
 ---
 # <a name="automation-for-configuration-and-selecteditem-objects"></a>Automatyzacja dla obiektów Configuration i SelectedItem
 

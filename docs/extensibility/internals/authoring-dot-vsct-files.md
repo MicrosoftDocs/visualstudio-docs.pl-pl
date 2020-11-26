@@ -1,5 +1,7 @@
 ---
 title: Projekt. Pliki vsct | Microsoft Docs
+description: Dowiedz się, jak tworzyć pliki. vsct, które dodają elementy menu, paski narzędzi i inne elementy interfejsu użytkownika do zintegrowanego środowiska programistycznego (IDE) programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54e67a28d59cb739abbeab188ff1f100751f2aa8
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: e0aeb601449ffcc47b7f7786825ee222b8b6ac5b
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93413916"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190086"
 ---
 # <a name="author-vsct-files"></a>Author. vsct — pliki
 W tym dokumencie przedstawiono sposób tworzenia pliku *. vsct* w celu dodania elementów menu, pasków narzędzi i innych elementów interfejsu użytkownika do zintegrowanego środowiska programistycznego (IDE) programu Visual Studio. Poniższe kroki umożliwiają dodanie elementów interfejsu użytkownika do pakietu programu Visual Studio (pakietu VSPackage), który nie ma jeszcze pliku *. vsct* .
@@ -51,9 +53,9 @@ W tym dokumencie przedstawiono sposób tworzenia pliku *. vsct* w celu dodania e
 
 1. W górnej części `CommandTable` elementu Dodaj jeden `Extern` element dla każdego pliku zewnętrznego, który ma zostać przywoływany, a następnie ustaw `href` atrybut na nazwę pliku. Aby uzyskać dostęp do zasobów programu Visual Studio, można odwoływać się do następujących plików nagłówkowych:
 
-   - *Stdidcmd. h* : definiuje identyfikatory wszystkich poleceń udostępnianych przez program Visual Studio.
+   - *Stdidcmd. h*: definiuje identyfikatory wszystkich poleceń udostępnianych przez program Visual Studio.
 
-   - *Vsshlids. h* : zawiera identyfikatory poleceń dla menu programu Visual Studio.
+   - *Vsshlids. h*: zawiera identyfikatory poleceń dla menu programu Visual Studio.
 
 2. Jeśli pakiet wywołuje wszystkie polecenia, które są zdefiniowane przez program Visual Studio lub przez inne pakiety, Dodaj `UsedCommands` element po `Commands` elemencie. Wypełnij ten element elementem [UsedCommand](../../extensibility/usedcommand-element.md) dla każdego wywoływanego polecenia, które nie jest częścią pakietu. Ustaw `guid` atrybuty i `id` `UsedCommand` elementów na identyfikator GUID oraz wartości identyfikatorów poleceń, które mają być wywoływane.
 
@@ -64,7 +66,7 @@ W tym dokumencie przedstawiono sposób tworzenia pliku *. vsct* w celu dodania e
 
 #### <a name="to-declare-ui-elements"></a>Aby zadeklarować elementy interfejsu użytkownika
 
-1. W `Symbols` elemencie Dodaj trzy elementy [GuidSymbol](../../extensibility/guidsymbol-element.md) . Każdy `GuidSymbol` element ma `name` atrybut i `value` atrybut. Ustaw `name` atrybut tak, aby odzwierciedlał cel elementu. `value`Atrybut przyjmuje identyfikator GUID. (Aby wygenerować identyfikator GUID, w menu **Narzędzia** wybierz polecenie **Utwórz identyfikator GUID** , a następnie wybierz pozycję **Format rejestru** ).
+1. W `Symbols` elemencie Dodaj trzy elementy [GuidSymbol](../../extensibility/guidsymbol-element.md) . Każdy `GuidSymbol` element ma `name` atrybut i `value` atrybut. Ustaw `name` atrybut tak, aby odzwierciedlał cel elementu. `value`Atrybut przyjmuje identyfikator GUID. (Aby wygenerować identyfikator GUID, w menu **Narzędzia** wybierz polecenie **Utwórz identyfikator GUID**, a następnie wybierz pozycję **Format rejestru**).
 
      Pierwszy `GuidSymbol` element reprezentuje pakiet i zwykle nie ma elementów podrzędnych. Drugi `GuidSymbol` element reprezentuje zestaw poleceń i będzie zawierać wszystkie symbole, które definiują menu, grupy i polecenia. Trzeci `GuidSymbol` element reprezentuje magazyn obrazów i zawiera symbole dla wszystkich ikon poleceń. Jeśli nie masz poleceń, które używają ikon, możesz pominąć trzeci `GuidSymbol` element.
 
