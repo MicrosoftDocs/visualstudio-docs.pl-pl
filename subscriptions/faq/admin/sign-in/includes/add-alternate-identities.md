@@ -7,13 +7,13 @@ ms.assetid: a8fa961b-4e81-4af4-9913-67dd2c28897e
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
-ms.openlocfilehash: c70ad4093de872ff25a9254d35bc1796a5dd95a4
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: e31cfc372b76fa8cbc0fce4d105c11da9c453fd0
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91838402"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970339"
 ---
 ## <a name="what-does-it-mean-when-my-subscribers-add-alternate-identities"></a>Dlaczego moi subskrybenci dodają alternatywne tożsamości?
 
-Dodanie alternatywnego konta umożliwia deweloperom dostęp do niektórych korzyści z subskrypcji programu Visual Studio (VS IDE, Azure DevOps i platforma Azure) przy użyciu innej tożsamości niż ta, do której jest przypisana subskrypcja. Nie powoduje to udostępnienia kopii subskrypcji dla innego konta. Umożliwia to tylko uzyskanie dostępu do dwóch korzyści za pomocą alternatywnego konta. [Przeczytaj więcej na temat tożsamości usługi Visual Studio Subscription](../../../../vs-alternate-identity.md).
+Dodanie alternatywnego konta umożliwia deweloperom dostęp do niektórych korzyści z subskrypcji programu Visual Studio (VS IDE, Azure DevOps i platforma Azure) przy użyciu innej tożsamości niż ta, do której jest przypisana subskrypcja. Nie powoduje to udostępnienia kopii subskrypcji dla innego konta. Umożliwia to tylko uzyskanie dostępu do dwóch korzyści za pomocą alternatywnego konta. [Przeczytaj więcej na temat tożsamości usługi Visual Studio Subscription](https://docs.microsoft.com/visualstudio/subscriptions/vs-alternate-identity).

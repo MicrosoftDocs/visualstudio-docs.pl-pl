@@ -7,11 +7,11 @@ author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 4/3/2020
 ms.faqid: q5_8
-ms.openlocfilehash: 34094e2a89c2a9808d4f0ba921d97e434be3b66a
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: ba477ecb7e204a395cbe4b2e550beb82ec208479
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/08/2020
+ms.lasthandoff: 11/25/2020
 ms.locfileid: "91838301"
 ---
 ## <a name="are-there-any-other-limitations-i-should-be-aware-of"></a>Czy istnieją inne ograniczenia, o których należy wiedzieć?
@@ -29,4 +29,4 @@ Miesięcznych środków nie można użyć do zakupu następujących usług:
 - Produkty sprzedawane w witrynie [Visual Studio Marketplace](https://marketplace.visualstudio.com/)
 - Produkty sprzedawane niezależnie od platformy Azure (na przykład usługa Azure Active Directory — wersja Premium)
 
-Aby kupić te usługi, należy usunąć [limit wydatków](/azure/billing/billing-spending-limit) i podać kartę kredytową na potrzeby rozliczeń.
+Aby kupić te usługi, należy usunąć [limit wydatków](https://docs.microsoft.com/azure/billing/billing-spending-limit) i podać kartę kredytową na potrzeby rozliczeń.
