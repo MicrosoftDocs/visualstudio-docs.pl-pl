@@ -6,11 +6,11 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
 ms.openlocfilehash: 3a4b2a56e5ac6ed29289c3946a65fc57b54eaa21
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493208"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96188981"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Domyślne skróty klawiaturowe w Visual Studio dla komputerów Mac
 
@@ -32,9 +32,9 @@ Skompilowano najczęściej używane i najbardziej użyteczne skróty klawiaturow
 
 |Polecenia|Skróty klawiaturowe|
 |-|-|
-|Znajdź odwołania|**⇧ ⌘ R** , **F12**|
-|Przejdź do deklaracji|**⌘ D** , **F12**|
-|Następny błąd|**⌥ ⇧ ⇟** , **⇧ ⌘ F12**|
+|Znajdź odwołania|**⇧ ⌘ R**, **F12**|
+|Przejdź do deklaracji|**⌘ D**, **F12**|
+|Następny błąd|**⌥ ⇧ ⇟**, **⇧ ⌘ F12**|
 |Następny problem w pliku|**⌥⇟**|
 |Poprzedni błąd|**⌥⇧⇞**|
 |Poprzedni problem w pliku|**⌥⇞**|
@@ -43,16 +43,16 @@ Skompilowano najczęściej używane i najbardziej użyteczne skróty klawiaturow
 
 |Polecenia|Skróty klawiaturowe|
 |-|-|
-|Włącz lub wyłącz punkt przerwania|**⌥ ⌘/** , **⌘ F9**|
-|Wstrzymanie|**⌥ ⌘ P** , **⌥ ⌘ P5**|
+|Włącz lub wyłącz punkt przerwania|**⌥ ⌘/**, **⌘ F9**|
+|Wstrzymanie|**⌥ ⌘ P**, **⌥ ⌘ P5**|
 |Usuń wszystkie punkty przerwania|**⇧ ⌘ F9**|
 |Uruchom do kursora|**⌘ F10**|
 |Ustaw następną instrukcję|**⇧ ⌘ F10**|
 |Pokaż następną instrukcję|**⌥ \** _|
 |Wkrocz do|_ * ⇧ ⌘ I * *, **⌘ F11**|
-|Wyjdź|**⇧ ⌘ U** , **⇧ ⌘ F11**|
-|Przekrocz nad|**⇧ ⌘ O** , **F10**|
-|Przełącz punkt przerwania|**⌘ \\** , **F9**|
+|Wyjdź|**⇧ ⌘ U**, **⇧ ⌘ F11**|
+|Przekrocz nad|**⇧ ⌘ O**, **F10**|
+|Przełącz punkt przerwania|**⌘ \\**, **F9**|
 |Wyświetl punkty przerwania|**⌥ ⌘ B**|
 
 ## <a name="designer"></a>Projektant
@@ -74,7 +74,7 @@ Skompilowano najczęściej używane i najbardziej użyteczne skróty klawiaturow
 |Wklej|**⌘ V**|
 |Preferencje|**⌘,**|
 |Ponów|**⇧ ⌘ Z**|
-|Zmień nazwę|**⌘ R** , **F2**|
+|Zmień nazwę|**⌘ R**, **F2**|
 |Zaznacz wszystko|**⌘**|
 |Pokaż generowanie kodu|**⌘ I**|
 |Przełącz wszystkie zgięcia|**⌥⇧⌘↑**|
@@ -131,14 +131,14 @@ Skompilowano najczęściej używane i najbardziej użyteczne skróty klawiaturow
 |Polecenia|Skróty klawiaturowe|
 |-|-|
 |Dodaj pliki|**⌥ ⌘ A**|
-|Kompilacja|**⌘ K** , **⇧ F6**|
-|Kompiluj wszystko|**⌘ B** , **F6**|
+|Kompilacja|**⌘ K**, **⇧ F6**|
+|Kompiluj wszystko|**⌘ B**, **F6**|
 |Clean|**⇧ ⌘ K**|
 |Ponowne kompilowanie|**⌃ ⌘ K**|
 |Kompiluj ponownie wszystko|**⌃ ⌘ B**|
-|Rozpocznij debugowanie|**⌘ ⏎** , **F5**|
-|Uruchom bez debugowania|**⌥ ⌘ ⏎** , **⌃ F5**|
-|Stop|**⇧ ⌘ ⏎** , **⇧ F5**|
+|Rozpocznij debugowanie|**⌘ ⏎**, **F5**|
+|Uruchom bez debugowania|**⌥ ⌘ ⏎**, **⌃ F5**|
+|Stop|**⇧ ⌘ ⏎**, **⇧ F5**|
 
 ## <a name="refactoring"></a>Refaktoryzacja
 
@@ -153,9 +153,9 @@ Skompilowano najczęściej używane i najbardziej użyteczne skróty klawiaturow
 |-|-|
 |Polecenie|**⇧ ⌘ P**|
 |Znajdź w plikach|**⇧ ⌘ F**|
-|Znajdź następny|**⌘ G** , **F3**|
-|Znajdź dalej podobne zaznaczenie|**⌘ E** , **⌘ F3**|
-|Znajdź poprzedni|**⇧ ⌘ G** , **⇧ F3**|
+|Znajdź następny|**⌘ G**, **F3**|
+|Znajdź dalej podobne zaznaczenie|**⌘ E**, **⌘ F3**|
+|Znajdź poprzedni|**⇧ ⌘ G**, **⇧ F3**|
 |Znajdź poprzednie podobne zaznaczenie|**⇧ ⌘ F3**|
 |Znajdowanie|**⌘ F**|
 |Przejdź do pliku|**⇧ ⌘ D**|
@@ -180,10 +180,10 @@ Skompilowano najczęściej używane i najbardziej użyteczne skróty klawiaturow
 |Dynamiczny dynamiczne|**⌃/**|
 |Rozwiń wybór|**⌥⇧↓**|
 |Rozwiń wybór|**⌥⇧↑**|
-|Rozszerz zaznaczenie do końca dokumentu|**⇧ ⌘ ↓** , **⇧ ⌘ ↘**|
-|Rozszerz zaznaczenie do początku dokumentu|**⇧ ⌘ ↑** , **⇧ ⌘ ↖**|
-|Rozszerz zaznaczenie do końca linii|**⇧ ↘** , **⇧ ⌘ →**|
-|Rozszerz zaznaczenie do początku wiersza|**⇧ ↖** , **⇧ ⌘ ←**|
+|Rozszerz zaznaczenie do końca dokumentu|**⇧ ⌘ ↓**, **⇧ ⌘ ↘**|
+|Rozszerz zaznaczenie do początku dokumentu|**⇧ ⌘ ↑**, **⇧ ⌘ ↖**|
+|Rozszerz zaznaczenie do końca linii|**⇧ ↘**, **⇧ ⌘ →**|
+|Rozszerz zaznaczenie do początku wiersza|**⇧ ↖**, **⇧ ⌘ ←**|
 |Rozszerz zaznaczenie do następnego wiersza|**⇧↓**|
 |Rozszerz zaznaczenie do następnego wyrazu|**⌥ ⇧ →**|
 |Rozszerz zaznaczenie o stronę w dół|**⇧⇟**|
@@ -196,9 +196,9 @@ Skompilowano najczęściej używane i najbardziej użyteczne skróty klawiaturow
 |Przejdź o jeden znak w lewo|**⌃ B**|
 |Przejdź o jeden znak w prawo|**⌃ F**|
 |Przejdź do początku dokumentu|**⌘↑**|
-|Przejdź do początku wiersza|**⌘ ←** , **⌃**|
+|Przejdź do początku wiersza|**⌘ ←**, **⌃**|
 |Przejdź na koniec dokumentu|**⌘↓**|
-|Przejdź do końca wiersza|**⌘ →** , **⌃ E**|
+|Przejdź do końca wiersza|**⌘ →**, **⌃ E**|
 |Przejdź do pasującego nawiasu klamrowego|**⇧⌘\\**|
 |Przejdź do następnego wiersza|**⌃ N**|
 |Przejdź do następnego wyrazu|**⌥ →**|
@@ -229,11 +229,11 @@ Skompilowano najczęściej używane i najbardziej użyteczne skróty klawiaturow
 |Przejdź do przodu|**⌃ ⌘ →**|
 |Rozmiar normalny|**⌘ 0**|
 |Jedna kolumna edytora|**⌥ ⌘ 1**|
-|Pokaż następny|**⌥ ⌘ ↓** , **F8**|
-|Pokaż poprzedni|**⌥ ⌘ ↑** , **⇧ F8**|
+|Pokaż następny|**⌥ ⌘ ↓**, **F8**|
+|Pokaż poprzedni|**⌥ ⌘ ↑**, **⇧ F8**|
 |Dwie kolumny edytora|**⌥ ⌘ 2**|
-|Powiększ|**⌘ +** , **⌘ =**|
-|Pomniejsz|**⌘-** , **⌘ _**|
+|Powiększ|**⌘ +**, **⌘ =**|
+|Pomniejsz|**⌘-**, **⌘ _**|
 
 ## <a name="window"></a>Okno
 
@@ -251,8 +251,8 @@ Skompilowano najczęściej używane i najbardziej użyteczne skróty klawiaturow
 |Ukryj inne|**⌥ ⌘ H**|
 |Ukryj program Visual Studio|**⌘ H**|
 |Minimalizuj|**⌘ M**|
-|Następny dokument|**⌘}** , **⌘ F6**|
-|Poprzedni dokument|**⌘ {** , **⇧ ⌘ F6**|
+|Następny dokument|**⌘}**, **⌘ F6**|
+|Poprzedni dokument|**⌘ {**, **⇧ ⌘ F6**|
 |Przełącz do następnego dokumentu|**⌃⇥**|
 |Przełącz do następnego okna narzędzi|**⌃⌥⇥**|
 |Przełącz do poprzedniego dokumentu|**⌃⇧⇥**|
@@ -262,13 +262,13 @@ Skompilowano najczęściej używane i najbardziej użyteczne skróty klawiaturow
 
 |Symbol|Klucz|
 |-|-|
-|⌘|**Polecenie** ( **cmd** )|
-|⌥|**Option** ( **Alt** )|
+|⌘|**Polecenie** (**cmd**)|
+|⌥|**Option** (**Alt**)|
 |⇧|**Przesunięcia**|
-|⌃|**Kontrolka** ( **Ctrl** )
-|⇞|**Strona w górę** ( **PG** )|
-|⇟|**Strona w dół** ( **PG DN** )|
-|⌫|**Usuń** ( **Backspace** )|
+|⌃|**Kontrolka** (**Ctrl**)
+|⇞|**Strona w górę** (**PG**)|
+|⇟|**Strona w dół** (**PG DN**)|
+|⌫|**Usuń** (**Backspace**)|
 |⌦|**Usuwanie do przodu**|
 |⏎|**Przesłać**|
 |←→↑↓|**Klawisze strzałek**|
