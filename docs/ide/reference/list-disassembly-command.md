@@ -1,5 +1,7 @@
 ---
 title: Lista dezasemblacji — Polecenie
+description: Dowiedz się więcej na temat polecenia demontażu listy i sposobu rozpoczynania procesu debugowania i pozwala określić sposób obsługi błędów.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91319a8d25aaec6bdd676ed6d709dffc47100195
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 15e9016551b178b0a29656e615d029ddaf0ca279
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770647"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305336"
 ---
 # <a name="list-disassembly-command"></a>Lista dezasemblacji — Polecenie
 Rozpoczyna proces debugowania i pozwala określić, jak błędy są obsługiwane.
@@ -44,15 +46,15 @@ Opcjonalny. Adres, pod który ma zostać zatrzymany demontaż.
 
 /codebytes: `yes`&#124;`no` [lub]/bytes: `yes`&#124;`no` [lub]/b: `yes`&#124;`no`
 
-Opcjonalny. Wskazuje, czy mają być wyświetlane bajty kodu. Wartość domyślna to `no` .
+Opcjonalny. Wskazuje, czy mają być wyświetlane bajty kodu. Wartość domyślna to `no`.
 
 /source: `yes`&#124;`no` [lub]/s: `yes`&#124;`no`
 
-Opcjonalny. Wskazuje, czy ma być wyświetlany kod źródłowy. Wartość domyślna to `no` .
+Opcjonalny. Wskazuje, czy ma być wyświetlany kod źródłowy. Wartość domyślna to `no`.
 
 /symbolnames: `yes`&#124;`no` [lub]/names: `yes`&#124;`no` [lub]/n: `yes`&#124;`no`
 
-Opcjonalny. Wskazuje, czy mają być wyświetlane nazwy symboli. Wartość domyślna to `yes` .
+Opcjonalny. Wskazuje, czy mają być wyświetlane nazwy symboli. Wartość domyślna to `yes`.
 
  [/linenumbers: `yes`&#124;`no` ]
 
@@ -64,7 +66,7 @@ Opcjonalny. Włącza wyświetlanie numerów wierszy skojarzonych z kodem źród�
 >Debug.ListDisassembly
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Listing stosu wywołań — polecenie](../../ide/reference/list-call-stack-command.md)
 - [Lista wątków — polecenie](../../ide/reference/list-threads-command.md)

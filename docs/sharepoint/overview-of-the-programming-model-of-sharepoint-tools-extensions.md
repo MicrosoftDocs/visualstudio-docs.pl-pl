@@ -1,6 +1,8 @@
 ---
 title: Omówienie modelu programowania rozszerzeń narzędzi SharePoint
 titleSuffix: ''
+description: Zapoznaj się z omówieniem modelu programowania rozszerzeń narzędzi programu SharePoint. Zaimplementuj interfejsy rozszerzalności. Zapoznaj się z modelami obiektów.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d2f7b56b372f1f083b441a5d3e6045ffc7aff7ed
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 67e0f4ae5b06e96747a7257b2b9b444566235877
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585735"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305125"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Omówienie modelu programowania rozszerzeń narzędzi SharePoint
   Po utworzeniu rozszerzenia dla narzędzi programu SharePoint w programie Visual Studio Zacznij od zaimplementowania jednego lub większej liczby interfejsów rozszerzalności, które są udostępniane przez narzędzia programu SharePoint. W większości przypadków do zaimplementowania funkcji w rozszerzeniu są również używane inne typy udostępniane przez narzędzia programu SharePoint. W niektórych scenariuszach można także używać typów w innych modelach obiektów udostępnianych przez program Visual Studio i program SharePoint. Musisz zrozumieć przeznaczenie każdego z tych modeli obiektów i wiedzieć, jak z nich korzystać, aby utworzyć rozszerzenia dla narzędzi programu SharePoint.
@@ -93,7 +95,7 @@ ms.locfileid: "91585735"
 
  Możesz użyć modelu obiektów integracji, jeśli chcesz dodać nową funkcję programu Visual Studio, która będzie używana z wbudowanymi narzędziami programu SharePoint. Na przykład jeśli utworzysz niestandardowy element projektu programu SharePoint, który reprezentuje akcję niestandardową dla witryny programu SharePoint, możesz również utworzyć pakietu VSPackage, który implementuje projektanta dla akcji niestandardowej. Możesz skojarzyć projektanta z akcją niestandardową, dodając element menu skrótów do elementu projektu, który reprezentuje akcję niestandardową w **Eksplorator rozwiązań**. Możesz otworzyć projektanta, otwierając jego menu skrótów (klikając prawym przyciskiem myszy element projektu akcji niestandardowej lub wybierając go, a następnie wybierając klawisze **SHIFT** + **F10** ), a następnie wybierając **Otwórz**.
 
- Ten model obiektów jest zdefiniowany w zestawie zestawów, które są zawarte w zestawie SDK programu Visual Studio. Niektóre główne zestawy w tym modelu obiektów obejmują *Microsoft.VisualStudio.Shell.11.0.dll*, *Microsoft.VisualStudio.Shell.Interop.dll*i *Microsoft.VisualStudio.OLE.Interop.dll*.
+ Ten model obiektów jest zdefiniowany w zestawie zestawów, które są zawarte w zestawie SDK programu Visual Studio. Niektóre główne zestawy w tym modelu obiektów obejmują *Microsoft.VisualStudio.Shell.11.0.dll*, *Microsoft.VisualStudio.Shell.Interop.dll* i *Microsoft.VisualStudio.OLE.Interop.dll*.
 
  Aby uzyskać więcej informacji na temat modelu obiektów integracji, zobacz [Omówienie modelu automatyzacji](../extensibility/internals/automation-model-overview.md) i [Informacje o zestawie SDK programu Visual Studio](../extensibility/visual-studio-sdk-reference.md).
 
@@ -104,7 +106,7 @@ ms.locfileid: "91585735"
 
 |Model obiektów|Opis|
 |------------------|-----------------|
-|Model obiektów serwera|Model obiektów serwera zapewnia dostęp do wszystkich funkcji, które można [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] programistycznie uwidocznić. Ten model obiektów jest przeznaczony do użycia przez rozwiązania programu SharePoint, które działają na serwerze programu SharePoint. Większość tego modelu obiektów jest definiowana w zestawie *Microsoft.SharePoint.dll* . Aby uzyskać więcej informacji na temat modelu obiektów serwera, zobacz [Korzystanie z modelu obiektów po stronie serwera programu SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ee538251(v=office.14)).|
+|Model obiektów serwera|Model obiektów serwera zapewnia dostęp do wszystkich funkcji, które można [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] programistycznie uwidocznić. Ten model obiektów jest przeznaczony do użycia przez rozwiązania programu SharePoint, które działają na serwerze programu SharePoint. Większość tego modelu obiektów jest definiowana w zestawie *Microsoft.SharePoint.dll* . Aby uzyskać więcej informacji na temat modelu obiektów serwera, zobacz [Korzystanie z modelu obiektów Server-Side SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ee538251(v=office.14)).|
 |Model obiektów klienta|Model obiektów klienta jest podzbiorem modelu obiektów serwera, który może służyć do współdziałania z danymi programu SharePoint ze zdalnego klienta lub serwera. Zaprojektowano w celu zminimalizowania liczby rejsów, które muszą zostać wykonane w celu wykonywania typowych zadań. Większość modelu obiektów klienta jest definiowana w zestawach *Microsoft.SharePoint.Client.dll* i *Microsoft.SharePoint.Client.Runtime.dll* . Aby uzyskać więcej informacji na temat modelu obiektów klienta, zobacz [model obiektów klienta zarządzanego](/previous-versions/office/developer/sharepoint-2010/ee537247(v=office.14)).|
 
 ## <a name="see-also"></a>Zobacz też

@@ -1,5 +1,7 @@
 ---
 title: Otwórz projekt — Polecenie
+description: Dowiedz się więcej na temat polecenia Otwórz projekt i sposobu otwierania istniejącego projektu lub rozwiązania.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97c1034fbbafa04af2d62526fdbb48812d64e050
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce00713cbfe862c5788a0131c99ba4c5750bb600
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565815"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304143"
 ---
 # <a name="open-project-command"></a>Otwórz projekt — polecenie
 
@@ -36,7 +38,7 @@ File.OpenProject filename
 
 `filename`
 
-Wymagany. Pełna ścieżka i nazwa pliku projektu lub rozwiązania do otwarcia.
+Wymagane. Pełna ścieżka i nazwa pliku projektu lub rozwiązania do otwarcia.
 
 > [!NOTE]
 > Składnia `filename` argumentu wymaga, aby ścieżki zawierające spacje używały znaków cudzysłowu.

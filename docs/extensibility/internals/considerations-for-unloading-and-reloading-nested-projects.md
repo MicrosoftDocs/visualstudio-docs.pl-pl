@@ -1,5 +1,6 @@
 ---
 title: Zwalnianie i ponowne ładowanie zagnieżdżonych projektów
+description: Zapoznaj się z dodatkowymi krokami, które należy wykonać podczas zwalniania i ponownego ładowania zagnieżdżonych projektów w programie Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 154eb51014d9719b601cf87d53383f57941403a8
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 62cb611e927b878b82e1b5a1025331e1a443560e
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036824"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304671"
 ---
 # <a name="considerations-for-unloading-and-reloading-nested-projects"></a>Zagadnienia dotyczące zwalniania i ponownego ładowania zagnieżdżonych projektów
 
@@ -35,7 +36,7 @@ Zwykle po ponownym załadowaniu projektu środowisko IDE wywołuje <xref:Microso
 
 Aby obsłużyć ten proces, projekt nadrzędny jest wywoływany przez ten `QueryInterface` <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents> interfejs. `IVsFireSolutionEvents` Program zawiera funkcje, które informują IDE o podniesieniu `OnBeforeUnloadProject` zdarzenia w celu zwolnienia projektu zagnieżdżonego, a następnie podniesienia `OnAfterLoadProject` zdarzenia w celu ponownego załadowania tego samego projektu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>
 - [Zagnieżdżanie projektów](../../extensibility/internals/nesting-projects.md)

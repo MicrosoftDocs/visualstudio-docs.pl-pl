@@ -1,5 +1,7 @@
 ---
 title: Projekt polecenia | Microsoft Docs
+description: Dowiedz się, jak zaprojektować polecenie dla pakietu VSPackage w programie Visual Studio. W tym, jak określić, gdzie pojawia się, gdy jest dostępny, oraz jak ma być obsługiwane.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6aa58813623dc8150cafb4fbfee6496d09f889ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2ab06ade9be1ccd0683cd298a5e758ddcfa883f8
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709661"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304865"
 ---
 # <a name="command-design"></a>Projekt polecenia
 Po dodaniu polecenia do pakietu VSPackage należy określić, gdzie ma być wyświetlana, gdy jest dostępne, oraz jak ma być obsługiwane.
@@ -41,7 +43,7 @@ Po dodaniu polecenia do pakietu VSPackage należy określić, gdzie ma być wyś
 ### <a name="command-organization"></a>Organizacja poleceń
  Środowisko określa polecenia według grup, priorytetów i menu.
 
-- Grupy są logicznymi kolekcjami powiązanych poleceń, na przykład z grupą poleceń **wycinania**, **kopiowania**i **wklejania** . Grupy są poleceniami, które pojawiają się w menu.
+- Grupy są logicznymi kolekcjami powiązanych poleceń, na przykład z grupą poleceń **wycinania**, **kopiowania** i **wklejania** . Grupy są poleceniami, które pojawiają się w menu.
 
 - Priorytet określa kolejność, w jakiej poszczególne polecenia w grupie pojawiają się w menu.
 

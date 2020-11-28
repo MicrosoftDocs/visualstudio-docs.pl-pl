@@ -1,5 +1,7 @@
 ---
 title: Routing poleceń w pakietów VSPackage | Microsoft Docs
+description: Informacje o routingu poleceń w programie pakietów VSPackage oraz o sposobie kierowania poleceń na podstawie kontekstu, w którym są wykonywane w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 957ddcca46365a882609c15c96d666c2848ace6c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8168fbe3ad5ba9b1b332aebc4675ecd8e752ee7e
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709555"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305224"
 ---
 # <a name="command-routing-in-vspackages"></a>Routing poleceń w pakietów VSPackage
 Polecenie jest kierowane w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zależności od kontekstu, w którym jest wykonywane. Jest on kierowany z kontekstu początkowego do kontekstu globalnego.

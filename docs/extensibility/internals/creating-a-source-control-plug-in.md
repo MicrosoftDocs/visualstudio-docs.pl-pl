@@ -1,5 +1,7 @@
 ---
 title: Tworzenie wtyczki kontroli źródła | Microsoft Docs
+description: Dowiedz się, jak utworzyć wtyczkę kontroli źródła, która dodaje możliwości kontroli źródła do zintegrowanego środowiska programistycznego (IDE) programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e0d9dc54a61cabe7bdd5c21c10abf0def34ff6a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ae887e8752e1603af173ed569d19a6602ac84f0
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709171"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305373"
 ---
 # <a name="create-a-source-control-plug-in"></a>Tworzenie wtyczki kontroli źródła
 Zestaw Visual Studio SDK udostępnia zasoby, które umożliwiają dodawanie funkcji kontroli źródła do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowanego środowiska programistycznego (IDE). Umożliwia korzystanie z dowolnych bibliotek DLL, które są zgodne z interfejsem API kontroli źródła opisanymi w tej dokumentacji.

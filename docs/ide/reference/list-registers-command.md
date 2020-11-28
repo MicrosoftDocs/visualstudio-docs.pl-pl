@@ -1,5 +1,7 @@
 ---
 title: Lista rejestrów — Polecenie
+description: Dowiedz się więcej na temat listy rejestrów i sposobu wyświetlania wartości wybranych rejestrów i pozwala modyfikować listę rejestrów do wyświetlenia.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e87b10a7827b5365b507abb2c72a21506e59c19e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5459ded60ea90ae00a3f943f829065a82548d160
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568688"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305296"
 ---
 # <a name="list-registers-command"></a>Lista rejestrów — Polecenie
 Wyświetla wartość wybranych rejestrów i pozwala modyfikować listę rejestrów do wyświetlenia.
@@ -35,7 +37,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 ## <a name="switches"></a>Przełączniki
 /Display [{ `register`&#124;`registerGroup` }...]
 
-Wyświetla wartości określonego `register` lub `registerGroup` . Jeśli nie `register` `registerGroup` jest określona, zostanie wyświetlona domyślna lista rejestrów. Jeśli nie określono przełącznika, zachowanie jest takie samo. Na przykład:
+Wyświetla wartości określonego `register` lub `registerGroup` . Jeśli nie `register` `registerGroup` jest określona, zostanie wyświetlona domyślna lista rejestrów. Jeśli nie określono przełącznika, zachowanie jest takie samo. Przykład:
 
 `Debug.ListRegisters /Display eax`
 

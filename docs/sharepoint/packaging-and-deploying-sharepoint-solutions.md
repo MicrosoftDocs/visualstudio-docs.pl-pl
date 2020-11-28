@@ -1,5 +1,7 @@
 ---
 title: Pakowanie i wdrażanie rozwiązań SharePoint | Microsoft Docs
+description: Pakowanie i wdrażanie rozwiązań programu SharePoint, które są wdrażane na serwerze programu SharePoint przy użyciu pliku pakietu rozwiązań (wsp).
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9a4bf3394cf47b4f355fbe6a330ff5374e2da1c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd06a5be3c9e7ceea38bdb4560f8b6262175bd45
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015601"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305073"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>Pakowanie i wdrażanie rozwiązań SharePoint
   Zazwyczaj rozwiązanie SharePoint jest wdrażane na serwerze programu SharePoint przy użyciu pliku pakietu rozwiązania (wsp). Za pomocą programu Visual Studio można organizować elementy projektu programu SharePoint w funkcje i utworzyć pakiet do wdrażania funkcji programu SharePoint.
@@ -89,13 +91,13 @@ ms.locfileid: "86015601"
  Możesz również dostosować kroki wdrażania na komputerze deweloperskim. Aby uzyskać więcej informacji, zobacz [wdrażanie, publikowanie i uaktualnianie pakietów rozwiązania SharePoint](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md).
 
 ## <a name="deploy-files-in-sharepoint-solutions"></a>Wdrażanie plików w rozwiązaniach SharePoint
- Zazwyczaj podczas dodawania elementu projektu programu SharePoint do rozwiązania programu SharePoint są uwzględniane wszystkie wymagane pliki. Pliki, które mogą być kompilowane (pliki kodu), są wbudowane w zestaw wyjściowy rozwiązania. Jednak może być również konieczne dodanie plików innych niż nadawać, na przykład plików *XML*, *txt*lub zasobów, do projektu programu SharePoint. Te pliki nie są automatycznie spakowane w rozwiązaniu. Aby upewnić się, że są one spakowane, Dodaj pliki do zamapowanego folderu lub do elementu projektu programu SharePoint.
+ Zazwyczaj podczas dodawania elementu projektu programu SharePoint do rozwiązania programu SharePoint są uwzględniane wszystkie wymagane pliki. Pliki, które mogą być kompilowane (pliki kodu), są wbudowane w zestaw wyjściowy rozwiązania. Jednak może być również konieczne dodanie plików innych niż nadawać, na przykład plików *XML*, *txt* lub zasobów, do projektu programu SharePoint. Te pliki nie są automatycznie spakowane w rozwiązaniu. Aby upewnić się, że są one spakowane, Dodaj pliki do zamapowanego folderu lub do elementu projektu programu SharePoint.
 
  Pliki dodane do zamapowanych folderów są automatycznie kopiowane do gałęzi programu SharePoint po wdrożeniu rozwiązania. Pliki dodane do elementu projektu programu SharePoint są wdrażane w lokalizacji określonej we właściwości **lokalizacji wdrożenia** dla każdego pliku, który jest częściowo ustawiony na podstawie właściwości **typ wdrożenia** . Domyślnie wartość właściwości **typ wdrożenia** to **NoDeployment**, co oznacza, że plik nie jest wdrażany wraz z rozwiązaniem. Należy ustawić inną wartość właściwości, aby dołączyć plik do pakietu.
 
  Na przykład, aby dodać plik *XML* do projektu programu SharePoint, wykonaj jedną z następujących czynności:
 
-- Dodaj zamapowany folder "Layouts" programu SharePoint do projektu. Powoduje to utworzenie w **Eksplorator rozwiązań** folderu o nazwie **Layouts** , który ma podfolder dla projektu. Dodaj plik *XML* do nowego podfolderu. Domyślnie plik jest wdrażany w systemie plików programu SharePoint w obszarze *.. \\\TEMPLATE\LAYOUTS \<Folder Name> *. Aby uzyskać informacje o sposobach dodawania zamapowanych folderów, zobacz [How to: Add and Remove zamapowany Folders](../sharepoint/how-to-add-and-remove-mapped-folders.md).
+- Dodaj zamapowany folder "Layouts" programu SharePoint do projektu. Powoduje to utworzenie w **Eksplorator rozwiązań** folderu o nazwie **Layouts** , który ma podfolder dla projektu. Dodaj plik *XML* do nowego podfolderu. Domyślnie plik jest wdrażany w systemie plików programu SharePoint w obszarze *.. \\\TEMPLATE\LAYOUTS \<Folder Name>*. Aby uzyskać informacje o sposobach dodawania zamapowanych folderów, zobacz [How to: Add and Remove zamapowany Folders](../sharepoint/how-to-add-and-remove-mapped-folders.md).
 
 - Dodaj plik *XML* do folderu elementu projektu programu SharePoint, a następnie zmień właściwość **typ wdrożenia** pliku *XML* z **NoDeployment** na inne ustawienie, takie jak **RootFile** lub **elementu**. Odpowiednie ustawienie **typu wdrożenia** zależy od pliku i projektu. Aby uzyskać więcej informacji na temat ustawień właściwości **typu wdrożenia** , zobacz [opracowywanie rozwiązań programu SharePoint](../sharepoint/developing-sharepoint-solutions.md).
 

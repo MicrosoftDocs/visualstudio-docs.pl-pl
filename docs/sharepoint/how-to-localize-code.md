@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: lokalizowanie kodu | Microsoft Docs'
+description: Dowiedz się, jak zlokalizować kod w programie SharePoint, zamieniając zakodowane ciągi na wywołania GetGlobalResourceObject, metodę odwołującą się do zlokalizowanych zasobów.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6c1963ff0b6ef317dfa1a2c8154a1628710dc562
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2cbe38c55b92514954cc3487544fed89d68cc4dc
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016693"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304586"
 ---
 # <a name="how-to-localize-code"></a>Instrukcje: lokalizowanie kodu
   Kod nielokalny używa zakodowanych wartości ciągu. Aby zlokalizować ciągi kodu, zastąp je wywołaniami <xref:System.Web.HttpContext.GetGlobalResourceObject%2A> , które jest metodą, która odwołuje się do zlokalizowanych zasobów.
@@ -27,7 +29,7 @@ ms.locfileid: "86016693"
 
 #### <a name="to-localize-code"></a>Aby zlokalizować kod
 
-1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla elementu projektu, a następnie wybierz polecenie **Dodaj**  >  **Moduł**.
+1. W **Eksplorator rozwiązań** Otwórz menu skrótów dla elementu projektu, a następnie wybierz polecenie **Dodaj**  >  **Moduł**.
 
      Wybierz szablon **plik zasobów** .
 
@@ -50,7 +52,7 @@ ms.locfileid: "86016693"
 
 7. Skompiluj projekt, aby utworzyć satelitarne biblioteki DLL zasobów.
 
-8. W **projektancie pakietów**wybierz kartę **Zaawansowane** , a następnie Dodaj zestaw satelicki.
+8. W **projektancie pakietów** wybierz kartę **Zaawansowane** , a następnie Dodaj zestaw satelicki.
 
 9. W polu **Lokalizacja** Dołącz folder z identyfikatorem kultury do ścieżki lokalizacji, na przykład *de-de \\ \<Project Item Name>.resources.dll*.
 

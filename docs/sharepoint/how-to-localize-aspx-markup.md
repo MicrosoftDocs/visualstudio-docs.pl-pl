@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Lokalizowanie znacznika ASPX | Microsoft Docs'
+description: Dowiedz się, jak lokalizować znaczniki ASPX w programie SharePoint, zastępując stałe kodowane wartości ciągów wyrażeniami odwołującymi się do zlokalizowanych zasobów.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 63bd8ee614a78752069002820689a2cc6c0be783
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0a4fcf724a8ae1586354f620a68b32e9f281b545
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016290"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304665"
 ---
 # <a name="how-to-localize-aspx-markup"></a>Instrukcje: Lokalizowanie znacznika ASPX
   [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] strony (. aspx) zazwyczaj używają zakodowanych wartości ciągu. Aby zlokalizować te ciągi, zastąp je wyrażeniami odwołującymi się do zlokalizowanych zasobów.
@@ -31,9 +33,9 @@ ms.locfileid: "86016290"
 
      W przypadku lokalizowania tylko znaczników i nie kodu, Dodaj element projektu plik zasobów globalnych. W przypadku lokalizowania kodu i znaczników Dodaj element projektu plik zasobów.
 
-    1. Aby dodać plik zasobów globalnych, w **Eksplorator rozwiązań**Otwórz menu skrótów dla elementu projektu programu SharePoint, a następnie wybierz polecenie **Dodaj**  >  **nowy element**. W węźle SharePoint **2010** wybierz szablon **pliku zasoby globalne** .
+    1. Aby dodać plik zasobów globalnych, w **Eksplorator rozwiązań** Otwórz menu skrótów dla elementu projektu programu SharePoint, a następnie wybierz polecenie **Dodaj**  >  **nowy element**. W węźle SharePoint **2010** wybierz szablon **pliku zasoby globalne** .
 
-    2. Aby dodać plik zasobów, w **Eksplorator rozwiązań**Otwórz menu skrótów dla elementu projektu programu SharePoint, a następnie wybierz polecenie **Dodaj**  >  **nowy element**. W węźle **Visual Basic** lub **Visual C#** wybierz szablon **pliku Resources** .
+    2. Aby dodać plik zasobów, w **Eksplorator rozwiązań** Otwórz menu skrótów dla elementu projektu programu SharePoint, a następnie wybierz polecenie **Dodaj**  >  **nowy element**. W węźle **Visual Basic** lub **Visual C#** wybierz szablon **pliku Resources** .
 
     > [!NOTE]
     > Pamiętaj, aby dodać pliki zasobów do elementu projektu SharePoint, aby włączyć właściwość typ wdrożenia. Ta właściwość jest wymagana w dalszej części tej procedury. Jeśli Twoje rozwiązanie nie ma elementu projektu programu SharePoint, możesz dodać pusty projekt programu SharePoint i usunąć jego domyślny plik *Elements.xml* .

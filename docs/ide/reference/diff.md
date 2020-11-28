@@ -1,5 +1,7 @@
 ---
 title: -Diff (devenv.exe)
+description: Dowiedz się, jak porównać dwa pliki przy użyciu przełącznika wiersza polecenia diff devenv.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bb74501c15e961d8da8e1e29dd0d9979c79a305
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a2ae3da5036134260f48dce8838571312d87bf2
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75570092"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305499"
 ---
 # <a name="diff-devenvexe"></a>/Diff (devenv.exe)
 
@@ -33,11 +35,11 @@ devenv /Diff SourceFile TargetFile [SourceDisplayName [TargetDisplayName]]
 
 - *SourceFile*
 
-  Wymagany. Pełna ścieżka i nazwa pierwszego pliku, który ma zostać porównany.
+  Wymagane. Pełna ścieżka i nazwa pierwszego pliku, który ma zostać porównany.
 
 - *TargetFile*
 
-  Wymagany. Pełna ścieżka i Nazwa drugiego pliku, który ma zostać porównany.
+  Wymagane. Pełna ścieżka i Nazwa drugiego pliku, który ma zostać porównany.
 
 - *SourceDisplayName*
 

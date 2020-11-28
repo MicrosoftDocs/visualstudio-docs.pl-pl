@@ -1,5 +1,7 @@
 ---
 title: Otwórz plik — Polecenie
+description: Dowiedz się więcej na temat polecenia Otwórz plik i sposobu otwierania istniejącego pliku oraz umożliwia określenie edytora.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50e29e3182a19c9f3a667d41725327110b415fd0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 792fe50aea43bc9711a58a895be09f85c041345b
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591518"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304114"
 ---
 # <a name="open-file-command"></a>Otwórz plik — polecenie
 
@@ -35,7 +37,7 @@ File.OpenFile filename [/e:editorname]
 
 `filename`
 
-Wymagany. Pełna lub częściowa ścieżka i nazwa pliku do otwarcia. Ścieżki zawierające spacje muszą być ujęte w cudzysłów.
+Wymagane. Pełna lub częściowa ścieżka i nazwa pliku do otwarcia. Ścieżki zawierające spacje muszą być ujęte w cudzysłów.
 
 ## <a name="switches"></a>Przełączniki
 

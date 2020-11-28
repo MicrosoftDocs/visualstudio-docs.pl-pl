@@ -1,5 +1,7 @@
 ---
 title: Algorytm routingu poleceń | Microsoft Docs
+description: Dowiedz się więcej o kolejności rozpoznawania poleceń w programie Visual Studio, ponieważ polecenia są obsługiwane przez różne składniki i przesyłane od najbardziej wewnętrznego do zewnętrznego kontekstu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af8d3e53e09214ce36a80ca18856085dfb2bb746
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1694e0835add6eac75986538a8abae99adf717b1
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709535"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305231"
 ---
 # <a name="command-routing-algorithm"></a>Algorytm routingu poleceń
 W poleceniach programu Visual Studio są obsługiwane przez wiele różnych składników. Polecenia są kierowane z wewnętrznego kontekstu, który jest oparty na bieżącym zaznaczeniu, do zewnętrznego (znanego również jako globalny) kontekstu. Aby uzyskać więcej informacji, zobacz [dostępność poleceń](../../extensibility/internals/command-availability.md).
@@ -38,7 +40,7 @@ W poleceniach programu Visual Studio są obsługiwane przez wiele różnych skł
 
 7. Bieżąca hierarchia: Bieżąca hierarchia może być projektem, który jest właścicielem okna aktywnego dokumentu lub hierarchią wybraną w **Eksplorator rozwiązań**. Program Visual Studio szuka <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu, który jest zaimplementowany w bieżącej lub aktywnej hierarchii. Hierarchia powinna obsługiwać polecenia, które są prawidłowe za każdym razem, gdy hierarchia jest aktywna, nawet jeśli okno dokumentu elementu projektu ma fokus. Jednak polecenia, które są stosowane tylko wtedy, gdy **Eksplorator rozwiązań** ma fokus, muszą być obsługiwane za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> interfejsu i jego <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> metod.
 
-     Polecenia **wycinanie**, **Kopiowanie**, **wklejanie**, **usuwanie**, **zmiana nazwy**, **wprowadzanie**i **kliknięcie** wymagają specjalnej obsługi. Informacje o sposobie obsługi poleceń **usuwania** i **usuwania** w hierarchiach znajdują się w <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyDeleteHandler> interfejsie.
+     Polecenia **wycinanie**, **Kopiowanie**, **wklejanie**, **usuwanie**, **zmiana nazwy**, **wprowadzanie** i **kliknięcie** wymagają specjalnej obsługi. Informacje o sposobie obsługi poleceń **usuwania** i **usuwania** w hierarchiach znajdują się w <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyDeleteHandler> interfejsie.
 
 8. Globalne: Jeśli polecenie nie zostało obsłużone przez poprzednio wymienione konteksty, program Visual Studio próbuje skierować go do pakietu VSPackage, który jest właścicielem polecenia, które implementuje <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejs. Jeśli pakietu VSPackage nie został jeszcze załadowany, nie jest ładowany, gdy program Visual Studio wywołuje <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metodę. Pakietu VSPackage jest ładowany tylko wtedy, gdy <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> Metoda jest wywoływana.
 

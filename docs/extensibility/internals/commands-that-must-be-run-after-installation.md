@@ -1,5 +1,7 @@
 ---
 title: Polecenia, które muszą zostać uruchomione po instalacji | Microsoft Docs
+description: Informacje o poleceniach, które muszą być uruchamiane w ramach instalacji rozszerzenia wdrożonego za pomocą pliku msi w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77add5afd5d44358f0077a11bb70559a796e74c6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64eda9c95b9c469d8defc8ab0318031e9e43172a
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709472"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305042"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>Polecenia, które muszą zostać uruchomione po instalacji
 W przypadku wdrożenia rozszerzenia za pomocą pliku *MSI* należy uruchomić program **devenv/setup** w ramach instalacji, aby można było odnaleźć rozszerzenia w programie Visual Studio.
@@ -44,7 +46,7 @@ W przypadku wdrożenia rozszerzenia za pomocą pliku *MSI* należy uruchomić pr
 |DEVENV_EXE_2005|RL_DevenvExe_2005|
 |DEVENV_EXE_2008|RL_DevenvExe_2008|
 
- Na przykład Instalator programu Visual Studio zapisuje wartość rejestru **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\9.0\setup\vs\environmentpath** jako *C:\VS2008\Common7\IDE\devenv.exe*, pełną ścieżkę do pliku wykonywalnego, który musi zostać uruchomiony przez Instalatora.
+ Na przykład Instalator programu Visual Studio zapisuje wartość rejestru **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\Setup\VS\EnvironmentPath** jako *C:\VS2008\Common7\IDE\devenv.exe*, pełną ścieżkę do pliku wykonywalnego, który musi zostać uruchomiony przez Instalatora.
 
 > [!NOTE]
 > Ponieważ kolumna typu tabeli RegLocator ma wartość 2, nie trzeba określać informacji o dodatkowych wersjach w tabeli sygnatur.

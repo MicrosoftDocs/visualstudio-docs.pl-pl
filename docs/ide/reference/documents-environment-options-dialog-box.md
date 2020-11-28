@@ -1,5 +1,7 @@
 ---
 title: Dokumenty, środowisko, opcje — Okno dialogowe
+description: Dowiedz się, jak za pomocą strony środowiska w sekcji dokumenty sterować wyświetlaniem dokumentów w środowisku IDE i zarządzać zmianami zewnętrznymi do dokumentów i plików.
+ms.custom: SEO-VS-2020
 ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
@@ -31,16 +33,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7813a2e7686bef5a146e7472bce7f2c24baf9cd2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28b0e7920aca2ae8b789a37fad25509dbb8b4d7a
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75570066"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305479"
 ---
 # <a name="options-dialog-box-environment--documents"></a>Opcje — okno dialogowe: \> dokumenty środowiska
 
-Za pomocą tej strony okna dialogowego **Opcje** można sterować wyświetlaniem dokumentów w zintegrowanym środowisku programistycznym (IDE) i zarządzać zmianami zewnętrznymi do dokumentów i plików. Możesz uzyskać dostęp do tego okna dialogowego, klikając opcję **Opcje** w menu **Narzędzia** , a **Environment**następnie wybierając  >  **dokumenty**środowiska.
+Za pomocą tej strony okna dialogowego **Opcje** można sterować wyświetlaniem dokumentów w zintegrowanym środowisku programistycznym (IDE) i zarządzać zmianami zewnętrznymi do dokumentów i plików. Możesz uzyskać dostęp do tego okna dialogowego, klikając opcję **Opcje** w menu **Narzędzia** , a **Environment** następnie wybierając  >  **dokumenty** środowiska.
 
 **Wykryj, kiedy plik zostanie zmieniony poza środowiskiem**
 

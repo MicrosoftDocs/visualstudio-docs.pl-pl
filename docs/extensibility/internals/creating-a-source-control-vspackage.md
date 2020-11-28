@@ -1,5 +1,7 @@
 ---
 title: Tworzenie pakietu VSPackage kontroli źródła | Microsoft Docs
+description: Dowiedz się, jak utworzyć pakietu VSPackage kontroli źródła, która tworzy ścieżkę głębokiej integracji na potrzeby kontroli źródła w celu integracji z programem Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8608aae718ff9f8bdf2e40c0ab648c1d22c38257
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69e526cea292544c725abc7ffb54d0b29ad88403
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709189"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305590"
 ---
 # <a name="create-a-source-control-vspackage"></a>Tworzenie pakietu VSPackage kontroli źródła
 Ta dokumentacja zawiera linki do omówienia architektury pakietu kontroli źródła zintegrowanego z programem [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , interfejs API, który jest zdefiniowany przez interfejsy do zaimplementowania i usługi, które mają być używane, oraz przykład, który ilustruje prostą implementację pakietu kontroli źródła.

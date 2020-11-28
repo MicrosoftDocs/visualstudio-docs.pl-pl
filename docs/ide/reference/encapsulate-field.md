@@ -1,5 +1,7 @@
 ---
 title: Refaktoryzacja pola do właściwości
+description: Dowiedz się, jak użyć menu szybkie akcje i refaktoryzacje, aby przekonwertować pole na właściwość.
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -12,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: db0bd17cd0bead3807f857b2198b8d4ea4c72ffb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4ac28646af9d68accd18c0d40480dd22e47b023
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75569715"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305469"
 ---
 # <a name="encapsulate-a-field-refactoring"></a>Hermetyzacja refaktoryzacji pola
 

@@ -1,5 +1,7 @@
 ---
 title: Komentowanie kodu w starszej wersji usługi językowej | Microsoft Docs
+description: Dowiedz się więcej o klasach MPF (Managed Package Framework), które zapewniają obsługę dodawania komentarzy do kodu w starszej wersji usługi językowej w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5450199fde29f581dafdf9b2884c88ef26ea4ce7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07205a8e15cd338fa1acf0d3b081301a083bba5d
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709439"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304998"
 ---
 # <a name="comment-code-in-a-legacy-language-service"></a>Dodawanie komentarza do kodu w starszej wersji usługi językowej
 Języki programowania zwykle umożliwiają dodawanie adnotacji do kodu lub komentowanie go. Komentarz to sekcja tekstu, która zawiera dodatkowe informacje o kodzie, ale jest ignorowany podczas kompilowania lub interpretacji.

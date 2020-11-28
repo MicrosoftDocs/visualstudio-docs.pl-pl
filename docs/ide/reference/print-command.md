@@ -1,5 +1,7 @@
 ---
 title: Debuguj. Print
+description: Dowiedz się więcej na temat polecenia Print i sposobu szacowania wyrażenia lub wyświetlania określonego tekstu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3056570e52893f1c21eaf10c7856b21fbbc02c61
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0524ce015ea4675254615c11e5768e59049c37f6
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75567843"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304133"
 ---
 # <a name="print-command"></a>Print — Polecenie
 
@@ -35,7 +37,7 @@ Oblicza wyrażenie lub Wyświetla określony tekst.
 
 `text`
 
-Wymagany. Wyrażenie, które ma zostać obliczone lub tekst do wyświetlenia.
+Wymagane. Wyrażenie, które ma zostać obliczone lub tekst do wyświetlenia.
 
 ## <a name="remarks"></a>Uwagi
 
@@ -59,7 +61,7 @@ Obie wersje tego polecenia zwracają bieżącą wartość wyrażenia `expA` .
 >Debug.Print DateTime.Now.Day
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Polecenie szacowania instrukcji](../../ide/reference/evaluate-statement-command.md)
 - [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)

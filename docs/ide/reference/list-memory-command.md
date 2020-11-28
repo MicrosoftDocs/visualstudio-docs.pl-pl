@@ -1,5 +1,7 @@
 ---
 title: Lista pamięci — Polecenie
+description: Dowiedz się więcej o poleceniu list Memory i sposobie wyświetlania zawartości określonego zakresu pamięci.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c500b1b516c2b1ab1bc66b7970fccc4ec7a85baa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 696cb36f932a1a79388d94d749b4b5d4bff7d0c2
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568714"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305319"
 ---
 # <a name="list-memory-command"></a>Lista pamięci — Polecenie
 Wyświetla zawartość określonego zakresu pamięci.
@@ -70,11 +72,11 @@ Poniżej znajduje się lista dostępnych aliasów dla polecenia **Debug. ListMem
 
 |Alias|Polecenia i przełączniki|
 |-----------| - |
-|**Wykres**|Debuguj. ListMemory —|
+|**d**|Debuguj. ListMemory —|
 |**da**|Debug. ListMemory —/ANSI|
 |**bazą**|Debug. ListMemory —/format: OneByte|
 |**DC**|Debug. ListMemory —/format: FourBytes/ANSI|
-|**Dodaj**|Debug. ListMemory —/format: FourBytes|
+|**dd**|Debug. ListMemory —/format: FourBytes|
 |**DF**|Debug. ListMemory —/format: float|
 |**elemencie DQ**|Debug. ListMemory —/format: EightBytes|
 |**du**|Debug. ListMemory —/Unicode|
@@ -85,7 +87,7 @@ Poniżej znajduje się lista dostępnych aliasów dla polecenia **Debug. ListMem
 >Debug.ListMemory /Format:float /Count:30 /Unicode
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Listing stosu wywołań — polecenie](../../ide/reference/list-call-stack-command.md)
 - [Lista wątków — polecenie](../../ide/reference/list-threads-command.md)

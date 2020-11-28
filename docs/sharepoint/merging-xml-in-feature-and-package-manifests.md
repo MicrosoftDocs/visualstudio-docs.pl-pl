@@ -1,5 +1,7 @@
 ---
 title: Scalanie kodu XML w manifestach funkcji i pakietów | Microsoft Docs
+description: Umożliwia scalanie kodu XML generowanego przez projektanta i dodanego przez użytkownika w funkcjach i manifestach pakietów programu SharePoint. Poznaj funkcje i elementy manifestu pakietu oraz Scalaj wyjątki.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1378cddbc9770af923a98f1b7083a8792874b5b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16305ed63f48d9f14e35aeb8d37e35f23f40be25
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64806752"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304239"
 ---
 # <a name="merge-xml-in-feature-and-package-manifests"></a>Scalanie kodu XML w manifestach funkcji i pakietów
   Funkcje i pakiety są definiowane przez [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] pliki manifestu. Te spakowane manifesty są kombinacją danych wygenerowanych przez projektantów i niestandardowych [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] wprowadzonych w szablonie manifestu przez użytkowników. W czasie pakowania [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Scala [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] instrukcje niestandardowe z udostępnionym projektantem, [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] Aby utworzyć spakowany [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] plik manifestu. Podobne elementy, z wyjątkami zanotowanymi w dalszej części wyjątków scalania, są scalane w celu uniknięcia [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] błędów walidacji po wdrożeniu plików w programie SharePoint i zwiększenia wydajności plików manifestu.

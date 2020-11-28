@@ -1,5 +1,7 @@
 ---
 title: Przegląd opcji konfiguracji | Microsoft Docs
+description: Dowiedz się więcej na temat opcji konfiguracji projektu w programie Visual Studio. Konfiguracja jest typem kompilacji opisanym w nazwanym zestawie właściwości i lokalizacjami plików.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d5ac25fcef7b942b791402baf17982c9810e92a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: df8931066aef5f7163018fba540dd46dcfe5dcc0
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709408"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304739"
 ---
 # <a name="configuration-options-overview"></a>Przegląd opcji konfiguracji
 Projekty w programie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] mogą obsługiwać wiele konfiguracji, które można kompilować, debugować, uruchamiać i/lub wdrażać. Konfiguracja jest typem kompilacji opisanym w nazwanym zestawie właściwości, zazwyczaj przełączników kompilatora i lokalizacjami plików. Domyślnie nowe rozwiązania zawierają dwie konfiguracje, *debugowanie* i *wydanie*. Te konfiguracje można zastosować przy użyciu ich ustawień domyślnych lub zmodyfikować w celu spełnienia określonych wymagań dotyczących rozwiązań i/lub projektu. Niektóre pakiety można utworzyć na dwa sposoby: jako edytor ActiveX lub jako składnik w miejscu. Projekty nie muszą jednak obsługiwać wielu konfiguracji. Jeśli dostępna jest tylko jedna konfiguracja, ta konfiguracja jest mapowana na wszystkie konfiguracje rozwiązań.
@@ -31,14 +33,14 @@ Projekty w programie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)
 
 |Nazwa konfiguracji|Platforma: Win32|Platforma: Win64|
 |------------------------|----------------------|----------------------|
-|*Debugowanie*|\<Debug Win32 settings>|\<Debug Win64 settings>|
+|*Rozpocząć*|\<Debug Win32 settings>|\<Debug Win64 settings>|
 |*Wersja*|\<Release Win32 settings>|\<Release Win64 settings>|
-|*Mojakonfiguracja*|Brak|\<MyConfig Win64 settings>|
+|*Mojakonfiguracja*|Nie dotyczy|\<MyConfig Win64 settings>|
 
 > [!NOTE]
 > Nie można utworzyć konfiguracji *rozwiązania z konfiguracją* , która wyklucza platformę Win32, chyba że docelowy projekt nie obsługuje Win32.
 
- Zmiana aktywnej konfiguracji rozwiązania powoduje wybranie zestawu konfiguracji projektu, które zostały skompilowane, uruchomione, debugowane lub wdrożone w tym rozwiązaniu. Na przykład w przypadku zmiany aktywnej konfiguracji rozwiązania z *wersji* na *Debuguj*wszystkie projekty w tym rozwiązaniu zostaną automatycznie skompilowane przy użyciu konfiguracji projektu wskazanej w konfiguracji debugowania rozwiązania. Konfiguracje projektów są również nazywane *debugowaniem* , chyba że użytkownik wprowadził ręcznie zmiany w Configuration Manager środowiska.
+ Zmiana aktywnej konfiguracji rozwiązania powoduje wybranie zestawu konfiguracji projektu, które zostały skompilowane, uruchomione, debugowane lub wdrożone w tym rozwiązaniu. Na przykład w przypadku zmiany aktywnej konfiguracji rozwiązania z *wersji* na *Debuguj* wszystkie projekty w tym rozwiązaniu zostaną automatycznie skompilowane przy użyciu konfiguracji projektu wskazanej w konfiguracji debugowania rozwiązania. Konfiguracje projektów są również nazywane *debugowaniem* , chyba że użytkownik wprowadził ręcznie zmiany w Configuration Manager środowiska.
 
  Właściwości konfiguracji rozwiązania przechowywane dla każdego projektu obejmują nazwę projektu, nazwę konfiguracji projektu, flagi wskazujące, czy kompilacja lub wdrożenie oraz nazwa platformy. Aby uzyskać więcej informacji, zobacz temat [Konfiguracja rozwiązania](../../extensibility/internals/solution-configuration.md).
 

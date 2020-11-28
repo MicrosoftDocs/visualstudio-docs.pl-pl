@@ -1,5 +1,7 @@
 ---
 title: Współtworzenie modelu automatyzacji | Microsoft Docs
+description: Dowiedz się, jak współtworzyć model automatyzacji programu Visual Studio, postępując zgodnie z zestawem wytycznych podczas projektowania pakietu VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d660edc740229c3e91b99e1f59eb37b4e9312098
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ab43da108a8d4a3339c54973f60bf1bef6a74780
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709267"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305602"
 ---
 # <a name="contribute-to-the-automation-model"></a>Współtworzenie modelu automatyzacji
 Program Visual Studio udostępnia zestaw interfejsów automatyzacji umożliwiających dostosowanie środowiska. Model automatyzacji to model obiektów, który umożliwia użytkownikom końcowym Tworzenie dodatków i rozszerzeń programu Visual Studio.
@@ -65,5 +67,5 @@ Program Visual Studio udostępnia zestaw interfejsów automatyzacji umożliwiaj�
 
  Zawiera informacje o automatyzacji dla obiektów Configuration i SelectedItems.
 
-## <a name="reference"></a>Tematy pomocy
+## <a name="reference"></a>Dokumentacja
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> Zawiera przykładowy kod, który pokazuje, jak pakietu VSPackage uczestniczy w modelu obiektów automatyzacji DTE. Wyświetla listę parametrów, wartości zwracane i wybrane uwagi.

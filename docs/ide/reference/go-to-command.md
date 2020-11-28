@@ -1,5 +1,7 @@
 ---
 title: Przejdź do — Polecenie
+description: Dowiedz się więcej o poleceniu Przejdź do i sposobie przenoszenia kursora do określonego wiersza.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 535906d8b8d7f8ba0c2984d22ceead18a0d47c2d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b0ef161cb8108ed3244c263ee51fee4251fc05d8
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75569208"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305214"
 ---
 # <a name="go-to-command"></a>Przejdź do — Polecenie
 Przenosi kursor do określonego wiersza.
@@ -46,7 +48,7 @@ Alias dla tego polecenia to GoToLn.
 >Edit.GoTo 125
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Okno polecenia](../../ide/reference/command-window.md)

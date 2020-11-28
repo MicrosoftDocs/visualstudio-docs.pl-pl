@@ -1,5 +1,7 @@
 ---
 title: Parametry kontekstu | Microsoft Docs
+description: Dowiedz się więcej na temat parametrów kontekstu w zintegrowanym środowisku programistycznym (IDE) programu Visual Studio, które definiuje stan projektu podczas dodawania lub implementowania kreatora.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +13,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d1a8c83ef9794479c35cd36609d77ef94621732
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 654ebf68efebaa44766079c172e87396134805e3
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012454"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304710"
 ---
 # <a name="context-parameters"></a>Parametry kontekstu
-W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowanym środowisku programistycznym (IDE) można dodać kreatorów do okna dialogowego **Nowy projekt**, **Dodaj nowy element**lub **Dodaj projekt podrzędny** . Dodano kreatory dostępne w menu **plik** lub klikając prawym przyciskiem myszy projekt w **Eksplorator rozwiązań**. IDE przekazuje parametry kontekstu do implementacji kreatora. Parametry kontekstu definiują stan projektu, gdy IDE wywołuje kreatora.
+W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowanym środowisku programistycznym (IDE) można dodać kreatorów do okna dialogowego **Nowy projekt**, **Dodaj nowy element** lub **Dodaj projekt podrzędny** . Dodano kreatory dostępne w menu **plik** lub klikając prawym przyciskiem myszy projekt w **Eksplorator rozwiązań**. IDE przekazuje parametry kontekstu do implementacji kreatora. Parametry kontekstu definiują stan projektu, gdy IDE wywołuje kreatora.
 
  IDE uruchamia kreatory przez ustawienie <xref:Microsoft.VisualStudio.Shell.Interop.VSADDITEMOPERATION> flagi w WYWOŁANIU IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.AddItem%2A> metody dla projektu. Po ustawieniu projekt musi spowodować `IVsExtensibility::RunWizardFile` wykonanie metody przy użyciu nazwy zarejestrowanego kreatora lub identyfikatora GUID oraz innych parametrów kontekstu, które IDE przekazuje do tego.
 
@@ -58,7 +60,7 @@ W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowanym śr
 | `InstallationDirectory` | Ścieżka katalogu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] instalacji. |
 | `Silent` | Wartość logiczna wskazująca, czy Kreator powinien działać w trybie dyskretnym, tak **jakby zostało** kliknięte ( `TRUE` ). |
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2>
 - [Parametry niestandardowe](../../extensibility/internals/custom-parameters.md)

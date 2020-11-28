@@ -1,5 +1,7 @@
 ---
 title: Kontrakty poleceń w zestawach międzyoperacyjnych | Microsoft Docs
+description: Zapoznaj się z podstawową umową dotyczącą obsługi poleceń za pomocą interfejsu Microsoft. VisualStudio. OLE. Interop. IOleCommandTarget.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f20a4f479d62cd1b64c3b13ff6e1a949656a668
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d655bfb3e6f2206156cd3a6d091ea04f18afe91a
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709684"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304913"
 ---
 # <a name="command-contracts-in-interop-assemblies"></a>Kontrakty poleceń w zestawach międzyoperacyjnych
 Podstawową umową dotyczącą obsługi poleceń za pomocą <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu jest to, że środowisko wywołuje <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metodę w celu ustalenia, czy polecenie jest obsługiwane, a jeśli jest obsługiwane, w celu określenia jego stanu i tekstu. Następnie środowisko wywołuje <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> metodę, aby wykonać polecenie.

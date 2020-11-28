@@ -1,5 +1,7 @@
 ---
 title: Właściwości MSBuild obsługiwane przez program SharePoint | Microsoft Docs
+description: Odczytaj listę nazw i opisów właściwości programu MSBuild, które są obsługiwane przez program i są specyficzne dla programu SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5470160c6b0af1af39238a14319ad497e1541a43
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1eab3832121f1e0c926257797ddbc79695546a5
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985165"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305143"
 ---
 # <a name="msbuild-properties-supported-by-sharepoint"></a>Właściwości MsBuild obsługiwane przez program SharePoint
   Wszystkie [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] właściwości zdefiniowane w pliku Microsoft. VisualStudio. SharePoint. targets, pliku projektu lub pliku użytkownika projektu mogą być używane w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektach programu SharePoint. Oprócz wspólnych [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] Właściwości dostarczonych przez projekt, program SharePoint definiuje dodatkowe właściwości, które są specyficzne dla projektów programu SharePoint.

@@ -1,6 +1,8 @@
 ---
 title: Koncepcje programowania & funkcje dla rozszerzeń narzędzi SharePoint
 titleSuffix: ''
+description: Zapoznaj się z ważnymi pojęciami i funkcjami programowania związanymi z narzędziami programu SharePoint w programie Visual Studio, które mogą odgrywać ważną rolę w rozszerzeniach narzędzi programu SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 607f4841ea66a01d64a6c0c2b93b07e3cd0a5a43
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 2513eb99940d45d11bc2360581cbba455e864da2
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585709"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305032"
 ---
 # <a name="programming-concepts-and-features-for-sharepoint-tools-extensions"></a>Koncepcje programowania i funkcje dla rozszerzeń narzędzi SharePoint
   Istnieje kilka istotnych koncepcji i funkcji związanych z programowaniem, które są związane z narzędziami programu SharePoint w programie Visual Studio. Te koncepcje i funkcje odgrywają ważną rolę w większości rozszerzeń narzędzi programu SharePoint.

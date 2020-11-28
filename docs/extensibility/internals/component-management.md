@@ -1,5 +1,7 @@
 ---
 title: Zarządzanie składnikami | Microsoft Docs
+description: Dowiedz się, jak zarządzać składnikami Instalator Windows podczas tworzenia Instalatora pakietu VSPackage w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5dcac9fb14a83021b852be2c52436fcdca84bf5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 648a1c90b143a0f38f8911fcaed3ee1ed16908b6
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709337"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304923"
 ---
 # <a name="component-management"></a>Zarządzanie składnikami
 Jednostki zadań w Instalator Windows są określane jako składniki Instalator Windows (czasami nazywane WICs lub tylko składnikami). Identyfikator GUID identyfikuje każdy WIC, który jest podstawową jednostką instalacji i zliczania odwołań dla konfiguracji, które używają Instalator Windows.
@@ -29,7 +31,7 @@ Jednostki zadań w Instalator Windows są określane jako składniki Instalator 
 
 - Twórz pliki i klucze rejestru, które są współużytkowane przez wersje w ich własnych składnikach.
 
-     Dzięki temu można łatwo korzystać z nich w następnej wersji. Na przykład typy bibliotek, które są rejestrowane globalnie, rozszerzenia plików, inne elementy zarejestrowane w **HKEY_CLASSES_ROOT**itd.
+     Dzięki temu można łatwo korzystać z nich w następnej wersji. Na przykład typy bibliotek, które są rejestrowane globalnie, rozszerzenia plików, inne elementy zarejestrowane w **HKEY_CLASSES_ROOT** itd.
 
 - Grupuj składniki współużytkowane w oddzielne moduły scalania.
 

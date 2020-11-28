@@ -1,5 +1,7 @@
 ---
 title: Find — Polecenie
+description: Dowiedz się więcej na temat polecenia Znajdź i sposobu wyszukiwania plików przy użyciu podzestawu opcji dostępnych na karcie Znajdź w plikach okna Znajdź i Zamień.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 288fb294ab712713d6be116f46ca159ea40a6e67
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 886695cea38909a8efa74797391adb1b6dd97d19
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595647"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305405"
 ---
 # <a name="find-command"></a>Find — Polecenie
 Przeszukuje pliki za pomocą podzestawu opcji dostępnych na karcie **Znajdź w plikach** okna **Znajdź i Zamień** .

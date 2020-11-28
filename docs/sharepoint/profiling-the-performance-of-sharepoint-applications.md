@@ -1,5 +1,7 @@
 ---
 title: Profilowanie wydajności aplikacji programu SharePoint | Microsoft Docs
+description: Profile wydajność aplikacji programu SharePoint, jeśli działają wolno lub nieefektywnie. Użyj funkcji profilowania programu Visual Studio, aby znaleźć problematyczny kod.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 13f2e3f5df236157550aa79af40f0cbc575eb8bf
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: ecdacce58e17c616b22c9a6a8ba6fce9d5cf272c
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414415"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305110"
 ---
 # <a name="profile-the-performance-of-sharepoint-applications"></a>Profilowanie wydajności aplikacji programu SharePoint
 
@@ -39,9 +41,9 @@ Po utworzeniu i uruchomieniu analizy profilu w aplikacji raport zawiera szczegó
 
 ## <a name="performance-session-process"></a>Proces sesji wydajności
 
-Aby profilować aplikację, należy najpierw użyć Kreatora wydajności narzędzia profilowania w celu utworzenia sesji wydajności. Na pasku menu wybierz polecenie **Analizuj** , **Uruchom Kreatora wydajności**. Po zakończeniu pracy kreatora wprowadź wymagane informacje dotyczące sesji wydajności, takie jak wybrana metoda profilu i aplikacja, którą chcesz profilować. Aby uzyskać więcej informacji, zobacz [jak: profilowanie witryny sieci Web lub aplikacji sieci Web za pomocą Kreatora wydajności](../profiling/how-to-collect-performance-data-for-a-web-site.md). Alternatywnie można użyć opcji wiersza polecenia, aby skonfigurować i uruchomić sesję wydajności. Aby uzyskać więcej informacji, zobacz [używanie narzędzia profilowania z wiersza polecenia](../profiling/using-the-profiling-tools-from-the-command-line.md). Jeśli chcesz ręcznie skonfigurować każdy aspekt sesji wydajności, zobacz [jak: ręczne tworzenie sesji wydajności przy użyciu narzędzia profilowania](../profiling/how-to-manually-create-performance-sessions.md). Możesz również utworzyć sesję wydajności na podstawie testu jednostkowego, w oknie **wyniki testów** , otwierając menu skrótów dla testu jednostkowego, a następnie wybierając pozycję **Utwórz sesję wydajności**.
+Aby profilować aplikację, należy najpierw użyć Kreatora wydajności narzędzia profilowania w celu utworzenia sesji wydajności. Na pasku menu wybierz polecenie **Analizuj**, **Uruchom Kreatora wydajności**. Po zakończeniu pracy kreatora wprowadź wymagane informacje dotyczące sesji wydajności, takie jak wybrana metoda profilu i aplikacja, którą chcesz profilować. Aby uzyskać więcej informacji, zobacz [jak: profilowanie witryny sieci Web lub aplikacji sieci Web za pomocą Kreatora wydajności](../profiling/how-to-collect-performance-data-for-a-web-site.md). Alternatywnie można użyć opcji wiersza polecenia, aby skonfigurować i uruchomić sesję wydajności. Aby uzyskać więcej informacji, zobacz [używanie narzędzia profilowania z wiersza polecenia](../profiling/using-the-profiling-tools-from-the-command-line.md). Jeśli chcesz ręcznie skonfigurować każdy aspekt sesji wydajności, zobacz [jak: ręczne tworzenie sesji wydajności przy użyciu narzędzia profilowania](../profiling/how-to-manually-create-performance-sessions.md). Możesz również utworzyć sesję wydajności na podstawie testu jednostkowego, w oknie **wyniki testów** , otwierając menu skrótów dla testu jednostkowego, a następnie wybierając pozycję **Utwórz sesję wydajności**.
 
-Po skonfigurowaniu sesji wydajności konfiguracja sesji jest zapisywana, serwer jest skonfigurowany do udostępniania danych profilowania, a aplikacja zostanie uruchomiona. Podczas korzystania z aplikacji dane o wydajności są zapisywane w pliku dziennika. Sesje wydajności są wymienione w **Eksplorator wydajności** w folderze **targets** . Po zakończeniu sesji wydajności jego raport zostanie wyświetlony w folderze **raporty** w **Eksplorator wydajności**. Aby wyświetlić raport, otwórz go w **Eksplorator wydajności**. Aby wyświetlić lub skonfigurować właściwości sesji wydajności, otwórz jej menu skrótów w **Eksplorator wydajności** , a następnie wybierz **Właściwości**. Aby uzyskać więcej informacji na temat określonych właściwości sesji wydajności, zobacz [Konfigurowanie sesji wydajności dla narzędzia profilowania](../profiling/configuring-performance-sessions.md). Aby uzyskać informacje na temat interpretacji wyników sesji wydajności, zobacz [analizowanie narzędzia profilowania danych](../profiling/analyzing-performance-tools-data.md).
+Po skonfigurowaniu sesji wydajności konfiguracja sesji jest zapisywana, serwer jest skonfigurowany do udostępniania danych profilowania, a aplikacja zostanie uruchomiona. Podczas korzystania z aplikacji dane o wydajności są zapisywane w pliku dziennika. Sesje wydajności są wymienione w **Eksplorator wydajności** w folderze **targets** . Po zakończeniu sesji wydajności jego raport zostanie wyświetlony w folderze **raporty** w **Eksplorator wydajności**. Aby wyświetlić raport, otwórz go w **Eksplorator wydajności**. Aby wyświetlić lub skonfigurować właściwości sesji wydajności, otwórz jej menu skrótów w **Eksplorator wydajności**, a następnie wybierz **Właściwości**. Aby uzyskać więcej informacji na temat określonych właściwości sesji wydajności, zobacz [Konfigurowanie sesji wydajności dla narzędzia profilowania](../profiling/configuring-performance-sessions.md). Aby uzyskać informacje na temat interpretacji wyników sesji wydajności, zobacz [analizowanie narzędzia profilowania danych](../profiling/analyzing-performance-tools-data.md).
 
 ## <a name="stress-test"></a>Test obciążeniowy
 

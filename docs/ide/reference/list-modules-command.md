@@ -1,5 +1,7 @@
 ---
 title: Lista modułów — Polecenie
+description: Informacje na temat poleceń list modułów i sposobu wyświetlania listy modułów dla bieżącego procesu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e083a0e1baeefc6807dccb2199cd0e5a9bd883d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fa0c3f6445a22ee80457e8a7f9f24fb7008f77ed
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595504"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305316"
 ---
 # <a name="list-modules-command"></a>Lista modułów — Polecenie
 Wyświetla listę modułów dla bieżącego procesu.
@@ -35,39 +37,39 @@ Debug.ListModules [/Address:yes|no] [/Name:yes|no] [/Order:yes|no]
 #### <a name="parameters"></a>Parametry
 Ulica`yes|no`
 
-Opcjonalny. Określa, czy mają być pokazywane adresy pamięci modułów. Wartość domyślna to `yes` .
+Opcjonalny. Określa, czy mają być pokazywane adresy pamięci modułów. Wartość domyślna to `yes`.
 
 Nazwij`yes|no`
 
-Opcjonalny. Określa, czy mają być wyświetlane nazwy modułów. Wartość domyślna to `yes` .
+Opcjonalny. Określa, czy mają być wyświetlane nazwy modułów. Wartość domyślna to `yes`.
 
 Porządek`yes|no`
 
-Opcjonalny. Określa, czy ma być wyświetlana kolejność modułów. Wartość domyślna to `no` .
+Opcjonalny. Określa, czy ma być wyświetlana kolejność modułów. Wartość domyślna to `no`.
 
 Ścieżka`yes|no`
 
-Opcjonalny. Określa, czy mają być wyświetlane ścieżki modułów. Wartość domyślna to `yes` .
+Opcjonalny. Określa, czy mają być wyświetlane ścieżki modułów. Wartość domyślna to `yes`.
 
 Podstawowych`yes|no`
 
-Opcjonalny. Określa, czy mają być wyświetlane procesy modułów. Wartość domyślna to `no` .
+Opcjonalny. Określa, czy mają być wyświetlane procesy modułów. Wartość domyślna to `no`.
 
 SymbolFile`yes|no`
 
-Opcjonalny. Określa, czy mają być pokazywane pliki symboli modułów. Wartość domyślna to `no` .
+Opcjonalny. Określa, czy mają być pokazywane pliki symboli modułów. Wartość domyślna to `no`.
 
 Stansymboli`yes|no`
 
-Opcjonalny. Określa, czy mają być pokazywane Stany symboli modułów. Wartość domyślna to `yes` .
+Opcjonalny. Określa, czy mają być pokazywane Stany symboli modułów. Wartość domyślna to `yes`.
 
 Znacznik czasu`yes|no`
 
-Opcjonalny. Określa, czy mają być pokazywane sygnatury czasowe modułów. Wartość domyślna to `no` .
+Opcjonalny. Określa, czy mają być pokazywane sygnatury czasowe modułów. Wartość domyślna to `no`.
 
 Nowszym`yes|no`
 
-Opcjonalny. Określa, czy mają być wyświetlane wersje modułów. Wartość domyślna to `no` .
+Opcjonalny. Określa, czy mają być wyświetlane wersje modułów. Wartość domyślna to `no`.
 
 ## <a name="example"></a>Przykład
 W tym przykładzie wymieniono nazwy modułów, adresy i sygnatury czasowe dla bieżącego procesu.

@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Oznaczanie kontrolek jako bezpiecznych formantów | Microsoft Docs'
+description: Oznacz formanty jako bezpieczne formanty we właściwości wpisy kontroli bezpiecznego elementu projektu programu SharePoint lub w projektancie pakietów po dodaniu zestawu.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,15 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cd7ed13504d3d91f4239a8ea070454e1c31b1114
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 024cd50fc36b84addca11dc3c0f23cdc64fa507d
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016259"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304501"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Instrukcje: Oznaczanie kontrolek jako bezpiecznych formantów
-  W celu zapewnienia bezpieczeństwa program SharePoint rozróżnia kontrolki sieci Web, które są chronione przed iniekcją skryptu i kontrolkami sieci Web, które nie są. Dostęp do formantów chronionych lub *bezpiecznych kontrolek*można uzyskać za pomocą niezaufanych użytkowników. Kontrolki można oznaczyć jako bezpieczne we właściwości wpisy kontroli bezpieczeństwa elementu projektu programu SharePoint lub w **projektancie pakietów** po dodaniu zestawu do pakietu. Aby uzyskać więcej informacji, zobacz
+  W celu zapewnienia bezpieczeństwa program SharePoint rozróżnia kontrolki sieci Web, które są chronione przed iniekcją skryptu i kontrolkami sieci Web, które nie są. Dostęp do formantów chronionych lub *bezpiecznych kontrolek* można uzyskać za pomocą niezaufanych użytkowników. Kontrolki można oznaczyć jako bezpieczne we właściwości wpisy kontroli bezpieczeństwa elementu projektu programu SharePoint lub w **projektancie pakietów** po dodaniu zestawu do pakietu. Aby uzyskać więcej informacji, zobacz
 
 - [web.config zmianę ustawień plików](/previous-versions/office/developer/sharepoint-2007/bb802890(v=office.12)) i [zarejestrowanie zestawu składnika Web Part jako bezpiecznej kontroli](/previous-versions/office/developer/sharepoint2003/dd587360(v=office.11)).
 
@@ -43,7 +45,7 @@ ms.locfileid: "86016259"
 
 4. W oknie dialogowym **bezpieczne wpisy kontroli** kliknij dwukrotnie przycisk **Dodaj** , aby dodać dwa bezpieczne wpisy kontroli do okienka **elementy członkowskie** : jeden dla przycisku i jeden dla pola tekstowego.
 
-5. Wybierz pierwszy wpis bezpiecznego sterowania, a następnie zmień wartość jego właściwości **Safe** na **false**, jej właściwość **type name** na **Button1**i **bezpieczną Właściwość Script** na wartość **false**.
+5. Wybierz pierwszy wpis bezpiecznego sterowania, a następnie zmień wartość jego właściwości **Safe** na **false**, jej właściwość **type name** na **Button1** i **bezpieczną Właściwość Script** na wartość **false**.
 
      Ten krok identyfikuje formant Button jako niebezpieczną kontrolę.
 
@@ -63,15 +65,15 @@ ms.locfileid: "86016259"
 
      Zwróć uwagę na przestrzeń nazw kontrolki, ponieważ jest ona używana później.
 
-3. Na pasku menu wybierz **kompilację**Kompiluj  >  **rozwiązanie** , aby skompilować projekt.
+3. Na pasku menu wybierz **kompilację** Kompiluj  >  **rozwiązanie** , aby skompilować projekt.
 
 4. Utwórz kolejne rozwiązanie programu SharePoint.
 
-5. W **Eksplorator rozwiązań**Otwórz menu skrótów dla pliku *Package. Package* , a następnie wybierz **Otwórz** , aby otworzyć **projektanta pakietów**.
+5. W **Eksplorator rozwiązań** Otwórz menu skrótów dla pliku *Package. Package* , a następnie wybierz **Otwórz** , aby otworzyć **projektanta pakietów**.
 
-6. W **projektancie pakietów**wybierz kartę **Zaawansowane** .
+6. W **projektancie pakietów** wybierz kartę **Zaawansowane** .
 
-7. W obszarze **dodatkowe zestawy**wybierz przycisk **Dodaj** , a następnie wybierz pozycję **Dodaj istniejący zestaw** z listy.
+7. W obszarze **dodatkowe zestawy** wybierz przycisk **Dodaj** , a następnie wybierz pozycję **Dodaj istniejący zestaw** z listy.
 
 8. W oknie dialogowym **Dodaj istniejący zestaw** wybierz przycisk wielokropka (![ASP.net Mobile Designer](../sharepoint/media/mwellipsis.gif "Wielokropek projektanta ASP.NET Mobile")) obok **ścieżki źródłowej**.
 
@@ -94,7 +96,7 @@ ms.locfileid: "86016259"
     |Bezpieczna przed skryptami|Pozostaw wyczyść pole wyboru **bezpieczne względem skryptu** .|
 
     > [!NOTE]
-    > Wartość **nazwy zestawu** dla zestawów dodawanych za pomocą karty **Zaawansowane** **projektanta pakietów** nie może być tokenem, musi to być zestaw o silnej nazwie. Aby uzyskać więcej informacji, zobacz [Tworzenie i używanie zestawów o silnej nazwie](/previous-versions/dotnet/netframework-4.0/xwb8f617(v=vs.100)).
+    > Wartość **nazwy zestawu** dla zestawów dodawanych za pomocą karty **Zaawansowane** **projektanta pakietów** nie może być tokenem, musi to być zestaw o silnej nazwie. Aby uzyskać więcej informacji, zobacz [Tworzenie i używanie zestawów Strong-Named](/previous-versions/dotnet/netframework-4.0/xwb8f617(v=vs.100)).
 
 13. Wybierz klawisz **Tab** , aby utworzyć inny bezpieczny wpis kontroli.
 

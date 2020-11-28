@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Dołączanie plików przy użyciu modułu | Microsoft Docs'
+description: Dowiedz się, jak dołączać pliki przy użyciu modułu, który jest kontenerem, który umożliwia wdrażanie plików, takich jak strony wzorcowe ASPX, pliki tekstowe lub obrazy, do programu SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1ada86be30e207e36c7e0d84d3fd5dd877605e4d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 381cb529db3f4116a9c42041c26e0e1e242073df
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016304"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305419"
 ---
 # <a name="how-to-include-files-by-using-a-module"></a>Instrukcje: Dołączanie plików przy użyciu modułu
   *Moduły* (nie należy mylić z [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] modułami) to kontenery, które umożliwiają wdrażanie plików, takich jak strony wzorcowe aspx, pliki tekstowe lub obrazy, do programu SharePoint.
@@ -33,7 +35,7 @@ ms.locfileid: "86016304"
 
      Aby uzyskać więcej informacji, zobacz [Szablony projektów i elementów projektu programu SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md).
 
-2. W **Eksplorator rozwiązań**wybierz węzeł projektu, a następnie na pasku menu wybierz **projekt**  >  **Dodaj nowy element**.
+2. W **Eksplorator rozwiązań** wybierz węzeł projektu, a następnie na pasku menu wybierz **projekt**  >  **Dodaj nowy element**.
 
      Zostanie otwarte okno dialogowe **Dodaj nowy element** .
 
@@ -53,7 +55,7 @@ ms.locfileid: "86016304"
 
      Po dodaniu pliku do projektu, jego wpis jest automatycznie dodawany do pliku Elements.xml modułu. Po wdrożeniu projektu pliki są kopiowane do programu SharePoint Server względem katalogu głównego projektu, który jest określony przez atrybut **adresu URL** elementu **pliku** , na przykład `Url="Module1/New Folder/SomeFile.doc` . Jeśli chcesz zmienić lokalizację wdrożenia pliku, przenieś go do innego folderu w **Eksplorator rozwiązań** lub zmień jego ustawienie **adresu URL** .
 
-8. Dla wszystkich plików, które mają być wyświetlane w bibliotece dokumentów, Dołącz `Type="GhostableInLibrary"` atrybut do ich wpisu w *Elements.xml*. Przykład:
+8. Dla wszystkich plików, które mają być wyświetlane w bibliotece dokumentów, Dołącz `Type="GhostableInLibrary"` atrybut do ich wpisu w *Elements.xml*. Na przykład
 
     ```xml
     <File Path="Module1\Some Folder\SomePage.aspx" Url="Module1/Some Folder/SomePage.aspx" Type="GhostableInLibrary" />

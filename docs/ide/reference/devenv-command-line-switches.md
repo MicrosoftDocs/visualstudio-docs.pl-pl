@@ -1,5 +1,7 @@
 ---
 title: Przełączniki wiersza polecenia devenv
+description: Dowiedz się więcej o przełącznikach wiersza polecenia devenv i sposobach ich użycia do ustawiania opcji środowiska IDE, a także kompilowania, debugowania i wdrażania projektów, a wszystko to w wierszu polecenia.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed7a36ad561daf87ec65db0f6c51c9dd7833eb9e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 597a3f7e9a9b36d52f55a9215891c40b18f1a9e9
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82255566"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305512"
 ---
 # <a name="devenv-command-line-switches"></a>Przełączniki wiersza polecenia Devenv
 
@@ -76,7 +78,7 @@ Poniższe przełączniki wiersza polecenia wyświetlają IDE i wykonują opisane
 |[/Run lub/R](run-devenv-exe.md)|Kompiluje i uruchamia określone rozwiązanie.<br /><br /> `devenv /run mysln.sln`|
 |[/RunExit](runexit-devenv-exe.md)|Kompiluje i uruchamia określone rozwiązanie, minimalizuje środowisko IDE, gdy rozwiązanie jest uruchomione, i zamyka środowisko IDE po zakończeniu działania rozwiązania.<br /><br /> `devenv /runexit mysln.sln`|
 |[/SafeMode](safemode-devenv-exe.md)|Uruchamia program Visual Studio w trybie awaryjnym. Ten przełącznik ładuje tylko domyślne środowisko, domyślne usługi i wydane wersje pakietów innych firm.<br /><br /> Ten przełącznik nie przyjmuje żadnych argumentów.|
-|[/UseEnv](useenv-devenv-exe.md)|Powoduje, że IDE korzysta ze zmiennych środowiskowych PATH, INCLUDE, LIBPATH i LIB dla kompilacji w języku C++. Ten przełącznik jest instalowany z **programowaniem aplikacji klasycznych w języku C++** . Aby uzyskać więcej informacji, zobacz [Ustawianie zmiennych dotyczących ścieżki i środowiska dla kompilacji w wierszu polecenia](/cpp/build/setting-the-path-and-environment-variables-for-command-line-builds).|
+|[/UseEnv](useenv-devenv-exe.md)|Powoduje, że IDE korzysta ze zmiennych środowiskowych PATH, INCLUDE, LIBPATH i LIB dla kompilacji w języku C++. Ten przełącznik jest instalowany z **programowaniem aplikacji klasycznych w języku C++** . Aby uzyskać więcej informacji, zobacz [Ustawianie zmiennych dotyczących ścieżki i środowiska dla kompilacji Command-Line](/cpp/build/setting-the-path-and-environment-variables-for-command-line-builds).|
 
 Poniższe przełączniki wiersza polecenia nie wyświetlają środowiska IDE.
 

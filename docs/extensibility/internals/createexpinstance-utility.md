@@ -1,5 +1,7 @@
 ---
 title: Narzędzie CreateExpInstance | Microsoft Docs
+description: Dowiedz się więcej na temat narzędzia CreateExpInstance, które umożliwia tworzenie, Resetowanie lub usuwanie eksperymentalnego wystąpienia programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a6b302976495e6067fad14317856cda4ac4625f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c02e85a96d59645787d3018100949369d52c8980
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709240"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305371"
 ---
 # <a name="createexpinstance-utility"></a>Narzędzie CreateExpInstance
 Użyj narzędzia **CreateExpInstance** , aby utworzyć, zresetować lub usunąć eksperymentalne wystąpienie programu Visual Studio. Możesz użyć eksperymentalnego wystąpienia do debugowania i testowania rozszerzeń programu Visual Studio bez zmiany bazowego produktu.
@@ -44,7 +46,7 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
 ## <a name="remarks"></a>Uwagi
  Podczas pracy nad rozszerzeniem programu Visual Studio można nacisnąć klawisz F5, aby otworzyć domyślne wystąpienie eksperymentalne i zainstalować bieżące rozszerzenie. Jeśli żadne wystąpienie eksperymentalne nie jest dostępne, program Visual Studio tworzy taki, który ma ustawienia domyślne.
 
- Domyślna lokalizacja wystąpienia doświadczalnego zależy od numeru wersji programu Visual Studio. Na przykład w przypadku programu Visual Studio 2015 lokalizacją jest *%LocalAppData%\Microsoft\VisualStudio\14.0Exp \\ *. Wszystkie pliki w lokalizacji w katalogu są uważane za część tego wystąpienia. Wszystkie dodatkowe eksperymentalne wystąpienia nie zostaną załadowane przez program Visual Studio, chyba że nazwa katalogu zostanie zmieniona na lokalizację domyślną.
+ Domyślna lokalizacja wystąpienia doświadczalnego zależy od numeru wersji programu Visual Studio. Na przykład w przypadku programu Visual Studio 2015 lokalizacją jest *%LocalAppData%\Microsoft\VisualStudio\14.0Exp \\*. Wszystkie pliki w lokalizacji w katalogu są uważane za część tego wystąpienia. Wszystkie dodatkowe eksperymentalne wystąpienia nie zostaną załadowane przez program Visual Studio, chyba że nazwa katalogu zostanie zmieniona na lokalizację domyślną.
 
  Program Visual Studio nie uzyskuje dostępu do rejestru systemowego, gdy otwiera wystąpienie eksperymentalne. Różni się to od wcześniejszych wersji programu Visual Studio, które używały eksperymentalnej wersji gałęzi rejestru.
 

@@ -1,5 +1,7 @@
 ---
 title: Lokalizowanie rozwiązań SharePoint | Microsoft Docs
+description: Lokalizowanie rozwiązań SharePoint przez usunięcie zakodowanych ciągów z kodu i ich abstrakcję do plików zasobów opartych na języku XML (. resx) zawierających przetłumaczone ciągi.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0a7b04ab1f77eba15f2bc617f89514a8d0952674
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16cb372e5acf719d3edc79f081cff6f4b0396b6a
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017139"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304268"
 ---
 # <a name="localize-sharepoint-solutions"></a>Lokalizowanie rozwiązań SharePoint
 
@@ -86,7 +88,7 @@ $Resources:String ID
 <asp:<class> runat="server" Text="<%$Resources:<Resource File Name>, <String ID>%>" />
 ```
 
- Na przykład:
+ Przykład:
 
 ```aspx-csharp
 <asp:Button ID="btn1" runat="server" onclick="btn1_Click" Text="<%$Resources:Resource1,String7%>"></asp:Button>
@@ -98,7 +100,7 @@ $Resources:String ID
 <asp:literal ID="<ID>" runat="server" Text="<%$Resources:<Resource File Name>, <String ID>%>" />
 ```
 
- Na przykład:
+ Przykład:
 
 ```aspx-csharp
 <asp:literal ID="Literal1" runat="server" Text="<%$Resources:Resource1, String9%>" />

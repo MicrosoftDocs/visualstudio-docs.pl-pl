@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: pobieranie usługi projektu SharePoint | Microsoft Docs'
+description: Dowiedz się, jak uzyskać dostęp do usługi projektu programu SharePoint w rozszerzeniach systemu projektu, rozszerzeniach Eksplorator serwera lub innych rozszerzeniach programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f49883337c5748c0f8bcab5d0a88e02612e51b4c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 553b4ae3b7ecfa9fa49065824020ebdcecf77215
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015554"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304442"
 ---
 # <a name="how-to-retrieve-the-sharepoint-project-service"></a>Instrukcje: pobieranie usługi projektu SharePoint
   Dostęp do usługi projektu SharePoint można uzyskać w następujących typach rozwiązań:
@@ -73,7 +75,7 @@ ms.locfileid: "86015554"
      Aby uzyskać więcej informacji na temat definiowania typów elementów projektu, zobacz [How to: define a SharePoint Project Type Item](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).
 
 ## <a name="retrieve-the-service-in-server-explorer-extensions"></a>Pobieranie usługi przy użyciu rozszerzeń Eksplorator serwera
- W rozszerzeniu węzła **połączenia programu SharePoint** w **Eksplorator serwera**można uzyskać dostęp do usługi projektu przy użyciu <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.ServiceProvider%2A> właściwości <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode> obiektu.
+ W rozszerzeniu węzła **połączenia programu SharePoint** w **Eksplorator serwera** można uzyskać dostęp do usługi projektu przy użyciu <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.ServiceProvider%2A> właściwości <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode> obiektu.
 
 #### <a name="to-retrieve-the-service-in-a-server-explorer-extension"></a>Aby pobrać usługę z rozszerzenia Eksplorator serwera
 

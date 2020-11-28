@@ -1,5 +1,7 @@
 ---
 title: Okno listy błędów
+description: Dowiedz się więcej o oknie Lista błędów i sposobach ich użycia do wykonywania zadań związanych z rozpoznawaniem wyświetlanych błędów.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c6d925f61714c524f97a57690870229b2340d21
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf008bd7c1355f5991890ca5ab8bd999f2a8dd32
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75569666"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305441"
 ---
 # <a name="error-list-window"></a>Okno listy błędów
 
@@ -41,9 +43,9 @@ Okno **Lista błędów** umożliwia wykonywanie następujących zadań:
 
 - Wyszukaj określone terminy i zakres wyszukiwania tylko dla bieżącego projektu lub dokumentu.
 
-Aby wyświetlić **Lista błędów**, wybierz pozycję **Wyświetl**  >  **Lista błędów**lub naciśnij klawisz **Ctrl** + **\\** + **E**.
+Aby wyświetlić **Lista błędów**, wybierz pozycję **Wyświetl**  >  **Lista błędów** lub naciśnij klawisz **Ctrl** + **\\** + **E**.
 
-Możesz wybrać karty **Błędy**, **ostrzeżenia**i **komunikaty** , aby zobaczyć różne poziomy informacji.
+Możesz wybrać karty **Błędy**, **ostrzeżenia** i **komunikaty** , aby zobaczyć różne poziomy informacji.
 
 Aby posortować listę, kliknij dowolny nagłówek kolumny. Aby posortować ponownie według dodatkowej kolumny, przytrzymaj wciśnięty klawisz **SHIFT** i kliknij inny nagłówek kolumny. Aby wybrać kolumny, które są wyświetlane, a które są ukryte, wybierz polecenie **Pokaż kolumny** z menu skrótów. Aby zmienić kolejność wyświetlania kolumn, przeciągnij dowolny nagłówek kolumny w lewo lub w prawo.
 
@@ -62,11 +64,11 @@ Możesz ograniczyć zakres wyszukiwania do analizowania i działania w grupach b
 
 3. **Bieżący dokument**: Pokaż błędy, ostrzeżenia i komunikaty dla aktualnie wybranego dokumentu w **Edytorze** lub **Eksplorator rozwiązań**.
 
-Jeśli filtr jest aktualnie stosowany do wyniku wyszukiwania, nazwa filtru pojawia się na pasku tytułu **Lista błędów** . Przyciski **Błędy**, **ostrzeżenia**i **komunikaty** wyświetlają liczbę elementów filtrowanych, które są wyświetlane wraz z łączną liczbą elementów. Na przykład przyciski pokazują "x z błędów y". Jeśli żaden filtr nie zostanie zastosowany, na pasku tytułu jest wyświetlany tylko komunikat "Lista błędów".
+Jeśli filtr jest aktualnie stosowany do wyniku wyszukiwania, nazwa filtru pojawia się na pasku tytułu **Lista błędów** . Przyciski **Błędy**, **ostrzeżenia** i **komunikaty** wyświetlają liczbę elementów filtrowanych, które są wyświetlane wraz z łączną liczbą elementów. Na przykład przyciski pokazują "x z błędów y". Jeśli żaden filtr nie zostanie zastosowany, na pasku tytułu jest wyświetlany tylko komunikat "Lista błędów".
 
 Lista po prawej stronie paska narzędzi określa, czy mają być wyświetlane błędy kompilacji (błędy spowodowane operacją kompilacji), czy z funkcji IntelliSense (błędy wykryte przed uruchomieniem kompilacji) lub z obu tych elementów.
 
-## <a name="search"></a>Wyszukiwanie
+## <a name="search"></a>Wyszukaj
 
 Użyj pola tekstowego **szukaj Lista błędów** po prawej stronie **Lista błędów** pasku narzędzi, aby znaleźć konkretne błędy na liście błędów. Możesz wyszukać dowolną widoczną kolumnę na liście błędów, a wyniki wyszukiwania są zawsze sortowane na podstawie kolumny, która ma priorytet sortowania zamiast zapytania lub zastosowany filtr. Jeśli wybierzesz klawisz **ESC** , gdy fokus znajduje się w **Lista błędów**, możesz wyczyścić wyszukiwany termin i wyniki wyszukiwania odfiltrowanego. Możesz również kliknąć **symbol X** po prawej stronie pola tekstowego, aby usunąć jego zaznaczenie.
 
@@ -88,7 +90,7 @@ Opis
 
 Wyświetla tekst wpisu.
 
-Projekt
+Project
 
 Wyświetla nazwę bieżącego projektu.
 
