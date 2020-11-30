@@ -1,5 +1,7 @@
 ---
 title: Instalowanie platform testów jednostkowych innych firm
+description: Program Visual Studio Test Explorer może uruchamiać testy z dowolnego środowiska testów jednostkowych, które opracowało interfejs adaptera.
+ms.custom: SEO-VS-2020
 ms.date: 07/09/2020
 ms.topic: how-to
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: c274f203b9bf2746716c0625c61141aaa332977a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6433d665157c186a390e2963ef7ad1447b2f982
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86387190"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329981"
 ---
 # <a name="install-unit-test-frameworks"></a>Zainstaluj platformy testów jednostkowych
 
@@ -33,7 +35,7 @@ Zainstaluj platformy testów jednostkowych innych firm przy użyciu **Menedżera
 
 1. Kliknij prawym przyciskiem myszy projekt, który będzie zawierać kod testu, i wybierz pozycję **Zarządzaj pakietami NuGet**.
 
-2. W **Menedżerze pakietów NuGet**Wyszukaj strukturę testową, którą chcesz zainstalować, a następnie kliknij przycisk **Zainstaluj**.
+2. W **Menedżerze pakietów NuGet** Wyszukaj strukturę testową, którą chcesz zainstalować, a następnie kliknij przycisk **Zainstaluj**.
 
    ![Menedżer pakietów NuGet w programie Visual Studio](media/vs-2019/nuget-package-manager.png)
 
@@ -43,7 +45,7 @@ Zaktualizuj do najnowszej stabilnej karty testowej, aby ułatwić lepsze odnajdy
 
 ### <a name="to-update-to-the-latest-stable-test-adapter-version"></a>Aby zaktualizować do najnowszej stabilnej wersji karty testowej
 
-1. Otwórz Menedżera pakietów NuGet dla swojego rozwiązania, przechodząc do **Narzędzia**  >  **Menedżer pakietów**NuGet zarządzanie pakietami  >  **NuGet dla rozwiązania**.
+1. Otwórz Menedżera pakietów NuGet dla swojego rozwiązania, przechodząc do **Narzędzia**  >  **Menedżer pakietów** NuGet zarządzanie pakietami  >  **NuGet dla rozwiązania**.
 
 2. Kliknij kartę **aktualizacje** i Wyszukaj zainstalowane karty testowe MSTest, nunit lub xUnit.
 

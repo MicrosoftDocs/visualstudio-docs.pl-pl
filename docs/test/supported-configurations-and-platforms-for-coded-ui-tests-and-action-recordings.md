@@ -1,5 +1,7 @@
 ---
 title: Konfiguracje i platformy dla kodowanych testów interfejsu użytkownika
+description: Ten artykuł zawiera obsługiwane konfiguracje i platformy dla kodowanych testów interfejsu użytkownika dla Visual Studio Enterprise.
+ms.custom: SEO-VS-2020
 ms.date: 10/04/2015
 ms.topic: reference
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 3636f87db5c395f1660d9271d0eed5cacec99161
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 2b749375c398b3deb6ac56e8b1a787b0bcb82b22
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036902"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330254"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Obsługiwane konfiguracje i platformy dla kodowanych testów interfejsu użytkownika i nagrań akcji
 
@@ -31,7 +33,7 @@ Obsługiwane konfiguracje i platformy dla kodowanych testów interfejsu użytkow
 
 ## <a name="supported-configurations"></a>Obsługiwane konfiguracje
 
-| Konfigurowanie | Obsługiwane |
+| Konfiguracja | Obsługiwane |
 |-| - |
 | Systemy operacyjne | [!INCLUDE[win7](../debugger/includes/win7_md.md)]<br /><br /> [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)]<br /><br /> [!INCLUDE[win8](../debugger/includes/win8_md.md)]<br /><br /> Windows 10 |
 | Obsługa wersji 32-/64-bitowej | 32-bitowy system Windows z systemem 32-bitowym [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] może testować aplikacje 32-bitowe.<br /><br /> 64 — bit systemu Windows z systemem 32-bitowym [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] może testować 32-bitowe aplikacje Wow z interfejsem użytkownika Synchronization. n.<br /><br /> 64-bitowy system Windows z systemem 32-bitowym [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] może testować 64-bitowe Windows Forms i aplikacje WPF, które nie mają synchronizacji interfejsu użytkownika. |
@@ -60,7 +62,7 @@ Obsługiwane konfiguracje i platformy dla kodowanych testów interfejsu użytkow
 | WPF 3.5 i nowsze wersje | W pełni obsługiwane.<br /><br /> **Uwaga** Formanty NetFx są w pełni obsługiwane, ale nie wszystkie formanty innych firm są obsługiwane. |
 | Windows Win32 | Może pracować z niektórymi znanymi problemami, ale nie jest oficjalnie obsługiwany. |
 | MFC | Obsługiwane częściowo. Zobacz [UITest Framework](/archive/blogs/vstsqualitytools/uitest-framework-mfc-support-in-vs-2010) , aby uzyskać szczegółowe informacje o obsługiwanych funkcjach. |
-| Sharepoint | W pełni obsługiwane. |
+| SharePoint | W pełni obsługiwane. |
 | Aplikacje klienckie pakietu Office | Nieobsługiwane. |
 | Klient sieci web Dynamics CRM | W pełni obsługiwane. |
 | Klient Dynamics (Ax) 2012 | Akcje odtwarzania i nagrywania są obsługiwane częściowo. Aby uzyskać szczegółowe informacje, zobacz Program [Visual Studio 10 kodowanego interfejsu użytkownika i obsługi nagrań akcji dla systemu Microsoft Dynamics](/archive/blogs/dave_froslie/visual-studio-10-coded-ui-action-recordings-support-for-microsoft-dynamics-ax-2012) . |
@@ -70,6 +72,6 @@ Obsługiwane konfiguracje i platformy dla kodowanych testów interfejsu użytkow
 
 Aby uzyskać informacje na temat sposobu tworzenia rozszerzeń do obsługi innych platform, zobacz [Włączanie testowania kodowanego interfejsu użytkownika dla kontrolek](../test/enable-coded-ui-testing-of-your-controls.md) i [rozszerzanie KODOWANYCH testów interfejsu użytkownika i nagrań akcji](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)

@@ -1,5 +1,7 @@
 ---
 title: Kodowane testy interfejsu użytkownika
+description: Dowiedz się, jak utworzyć kodowany test interfejsu użytkownika w programie Visual Studio, przeprowadzając test ręcznie, a Konstruktor kodowanego testu interfejsu użytkownika działa w tle.
+ms.custom: SEO-VS-2020
 ms.date: 12/04/2018
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eaa1e284394bda78c6892647ce9eca20d372a362
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: c3da0a3868b410fbb78ed98265eb8f0920e6482b
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928098"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330111"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>Używanie kodowanego testu interfejsu użytkownika do testowania kodu
 
@@ -46,7 +48,7 @@ Aby uzyskać dostęp do narzędzi i szablonów kodowanych testów interfejsu uż
 
 1. Uruchom **Instalator programu Visual Studio** , wybierając pozycję **Narzędzia**  >  **Pobierz narzędzia i funkcje**.
 
-1. W **Instalator programu Visual Studio**wybierz kartę **poszczególne składniki** , a następnie przewiń w dół do sekcji **debugowanie i testowanie** . Wybierz składnik **kodowanego testu interfejsu użytkownika** .
+1. W **Instalator programu Visual Studio** wybierz kartę **poszczególne składniki** , a następnie przewiń w dół do sekcji **debugowanie i testowanie** . Wybierz składnik **kodowanego testu interfejsu użytkownika** .
 
    ![Składnik kodowanego testu interfejsu użytkownika](media/coded-ui-test-component.png)
 
@@ -281,7 +283,7 @@ Po utworzeniu kodowanego testu interfejsu użytkownika można go edytować przy 
 
 - Użyj **konstruktora kodowanego testu interfejsu użytkownika** , aby dodać dodatkowe kontrolki i weryfikację do testów. Zobacz sekcję [Dodawanie kontrolek i sprawdzanie poprawności ich właściwości](#validate-the-properties-of-ui-controls) w tym temacie.
 
-- **Edytor kodowanego testu interfejsu użytkownika** pozwala łatwo modyfikować kodowane testy interfejsu użytkownika. Za pomocą **edytora kodowanego testu interfejsu użytkownika**można lokalizować, wyświetlać i edytować metody testowe. Możesz również edytować akcje interfejsu użytkownika i ich skojarzone kontrolki na mapie formantów interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [Edytowanie kodowanych testów interfejsu użytkownika za pomocą edytora kodowanego testu interfejsu użytkownika](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
+- **Edytor kodowanego testu interfejsu użytkownika** pozwala łatwo modyfikować kodowane testy interfejsu użytkownika. Za pomocą **edytora kodowanego testu interfejsu użytkownika** można lokalizować, wyświetlać i edytować metody testowe. Możesz również edytować akcje interfejsu użytkownika i ich skojarzone kontrolki na mapie formantów interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [Edytowanie kodowanych testów interfejsu użytkownika za pomocą edytora kodowanego testu interfejsu użytkownika](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
 - **Edytor kodu:**
 

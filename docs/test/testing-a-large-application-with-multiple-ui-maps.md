@@ -1,5 +1,7 @@
 ---
 title: Testowanie dużej aplikacji przy użyciu wielu map interfejsu użytkownika
+description: Dowiedz się, jak używać kodowanych testów interfejsu użytkownika podczas testowania dużej aplikacji przy użyciu wielu map interfejsu użytkownika. Ta funkcja wymaga Visual Studio Enterprise.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99e703d10d2bc6ed8fd573f4973e73f7ad40a937
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 93ae6aaa77a133a0d1805554a38b2714bff5b312
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286586"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330163"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>Testowanie dużej aplikacji przy użyciu wielu map interfejsu użytkownika
 

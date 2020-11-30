@@ -1,5 +1,7 @@
 ---
 title: Zestawy liczników i reguły progowe dla testowania obciążenia
+description: Dowiedz się, jak określić zestawy liczników i reguły progowe w teście obciążenia. Dodaj testowane serwery do listy komputerów, na których mają być zbierane liczniki.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,16 +15,16 @@ ms.assetid: 9e14d955-f3a4-4717-bbfe-7f08cdda5678
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 440bc01b52269c477d9d2f2194fd831041f1d20d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 04348eb2d88c560e9687c687486e6b44d8394371
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596323"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328954"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Określ zestawy liczników i reguły progowe dla komputerów w teście obciążenia
 
-Testy obciążenia zapewniają nazwane zestawy liczników, które są przydatne podczas analizowania danych licznika wydajności. Zestawy liczników są zorganizowane według technologii i obejmują aplikacje, ASP.NET, aplikacje platformy .NET, usługi IIS i SQL. Podczas tworzenia testu obciążenia przy użyciu **nowego Kreator testu obciążeniowego**należy dodać początkowy zestaw liczników. Oferują one zestaw wstępnie zdefiniowanych i ważnych zestawów liczników dla testu obciążenia. Zarządzasz licznikami w **Edytor testu obciążeniowego**.
+Testy obciążenia zapewniają nazwane zestawy liczników, które są przydatne podczas analizowania danych licznika wydajności. Zestawy liczników są zorganizowane według technologii i obejmują aplikacje, ASP.NET, aplikacje platformy .NET, usługi IIS i SQL. Podczas tworzenia testu obciążenia przy użyciu **nowego Kreator testu obciążeniowego** należy dodać początkowy zestaw liczników. Oferują one zestaw wstępnie zdefiniowanych i ważnych zestawów liczników dla testu obciążenia. Zarządzasz licznikami w **Edytor testu obciążeniowego**.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -40,7 +42,7 @@ Ważne jest, aby dodać testowane serwery do listy komputerów, na których maj�
 |Zadania|Skojarzone tematy|
 |-|-----------------------|
 |**Zarządzaj zbiorami liczników dla testu obciążenia:** Po utworzeniu testu obciążenia można edytować zestaw liczników w Edytor testu obciążeniowego. Zarządzanie zbiorami liczników obejmuje wybranie zestawu komputerów, z których mają być zbierane dane dotyczące wydajności, i przypisanie zestawu liczników zbieranych z poszczególnych komputerów. Zarządzasz licznikami w Edytor testu obciążeniowego.|-   [Instrukcje: zarządzanie zbiorami liczników](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)|
-|**Dodaj zestawy liczników do testu obciążenia:** Podczas tworzenia testu obciążenia przy użyciu **nowego Kreator testu obciążeniowego**należy dodać początkowy zestaw liczników. Oferują one zestawy wstępnie zdefiniowanych zbiorów liczników dla testu obciążeniowego. Po utworzeniu testu obciążenia można dodać nowe liczniki do istniejących zestawów liczników przy użyciu Edytor testu obciążeniowego.|-   [Instrukcje: Dodawanie liczników do zestawów liczników](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)<br />-   [Instrukcje: Dodawanie niestandardowych zestawów liczników](../test/how-to-add-custom-counter-sets-using-the-load-test-editor.md)|
+|**Dodaj zestawy liczników do testu obciążenia:** Podczas tworzenia testu obciążenia przy użyciu **nowego Kreator testu obciążeniowego** należy dodać początkowy zestaw liczników. Oferują one zestawy wstępnie zdefiniowanych zbiorów liczników dla testu obciążeniowego. Po utworzeniu testu obciążenia można dodać nowe liczniki do istniejących zestawów liczników przy użyciu Edytor testu obciążeniowego.|-   [Instrukcje: Dodawanie liczników do zestawów liczników](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)<br />-   [Instrukcje: Dodawanie niestandardowych zestawów liczników](../test/how-to-add-custom-counter-sets-using-the-load-test-editor.md)|
 |**Określ regułę progową przy użyciu liczników dla testu obciążenia:** Reguła progu to reguła ustawiona na pojedynczym liczniku wydajności do monitorowania użycia zasobów systemowych podczas testu obciążenia. Definicje zestawu liczników zawierają wstępnie zdefiniowane reguły progów dla wielu kluczowych liczników wydajności. Reguły progowe w testach obciążenia porównują wartość licznika wydajności z wartością stałą lub inną wartością licznika wydajności.|-   [Instrukcje: Dodawanie reguły progu](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)|
 |**Przypisywanie przyjaznych nazw do komputerów, do których są mapowane zestawy liczników:** Można dodać tagi komputera, które umożliwiają zastosowanie łatwej do rozpoznania nazwy na komputerze. Tagi są wyświetlane w węźle **mapowania zestawów liczników** dla drzewa w Edytor testu obciążeniowego. Ważniejsze Tagi są wyświetlane w raportach programu Excel, które pomagają udziałowcom zidentyfikować rolę komputera w teście obciążenia, na przykład "Web serwer1 in lab2" lub "SQL Serwer2 w biurze w Phoenix".<br /><br /> Aby uzyskać więcej informacji, zobacz [raportowanie wyników testów obciążenia dla porównania testów lub analizy trendów](../test/compare-load-test-results.md).||
 
@@ -95,7 +97,7 @@ Podczas tworzenia reguł progu należy również ustawić poziomy dla reguły. P
 
 Ustaw **alert, jeśli właściwość over** ma **wartość true** , aby wskazać, że przyczyną jest przekroczenie progu. Na przykład, jeśli reguła progu jest ustawiona na **czas procesora (%)**, a chcesz otrzymywać alerty, jeśli wartość jest większa niż 90, użyj opcji **PORÓWNAJ** typ reguły stałej, ustaw **wartość progu krytycznego** na 90, a następnie ustaw **alert, jeśli zostanie przekroczona** **wartość true**.
 
-Ustaw **alert, jeśli właściwość over** ma **wartość false** , aby wskazać, że poniżej wartości progowej występuje problem. Na przykład jeśli reguła progu jest ustawiona na **żądania/s**i chcesz otrzymywać alerty, jeśli wartość jest niższa niż 50, użyj opcji Porównaj typ reguły **stałej** , ustaw **wartość progu krytycznego** na 50 i ustaw **alert, jeśli zostanie przekroczona** wartość **false**.
+Ustaw **alert, jeśli właściwość over** ma **wartość false** , aby wskazać, że poniżej wartości progowej występuje problem. Na przykład jeśli reguła progu jest ustawiona na **żądania/s** i chcesz otrzymywać alerty, jeśli wartość jest niższa niż 50, użyj opcji Porównaj typ reguły **stałej** , ustaw **wartość progu krytycznego** na 50 i ustaw **alert, jeśli zostanie przekroczona** wartość **false**.
 
 ## <a name="see-also"></a>Zobacz też
 

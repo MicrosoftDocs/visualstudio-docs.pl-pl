@@ -1,5 +1,7 @@
 ---
 title: Tworzenie projektu testu wydajności i obciążenia sieci Web
+description: Dowiedz się, jak utworzyć i uruchomić projekt testów wydajności i obciążenia sieci Web w programie Visual Studio za pomocą tego przewodnika Szybki Start.
+ms.custom: SEO-VS-2020
 ms.date: 03/14/2018
 ms.topic: quickstart
 helpviewer_keywords:
@@ -7,12 +9,12 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d883d531737caf32ec202955ff951382b5ff9009
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 3833542dc00f347014dabf96f836fbd4fa810862
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928583"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329136"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>Szybki start: Tworzenie projektu testu obciążeniowego
 
@@ -30,7 +32,7 @@ Jeśli składnik narzędzi testowania wydajności sieci Web i obciążenia nie z
 
 1. Otwórz **Instalator programu Visual Studio** z menu **Start** systemu Windows. Możesz również uzyskać do niego dostęp w programie Visual Studio z okna dialogowego Nowy projekt lub wybierając **Narzędzia**  >  **Pobierz narzędzia i funkcje** z paska menu.
 
-1. W **Instalator programu Visual Studio**wybierz kartę **poszczególne składniki** i przewiń w dół do sekcji **debugowanie i testowanie** . Wybierz pozycję **Narzędzia do testowania obciążenia i wydajności sieci Web**.
+1. W **Instalator programu Visual Studio** wybierz kartę **poszczególne składniki** i przewiń w dół do sekcji **debugowanie i testowanie** . Wybierz pozycję **Narzędzia do testowania obciążenia i wydajności sieci Web**.
 
    ![Składnik narzędzi do testowania wydajności sieci Web i testów obciążenia](media/web-perf-load-testing-tools-component.png)
 
@@ -74,7 +76,7 @@ W tej sekcji utworzymy projekt testu obciążenia języka C#. Możesz również 
 
 ## <a name="add-a-load-test-to-the-project"></a>Dodaj test obciążenia do projektu
 
-1. W menu rozwijanym prawym przyciskiem myszy lub menu kontekstowym węzła projektu w **Eksplorator rozwiązań**wybierz pozycję **Dodaj**  >  **test obciążenia**.
+1. W menu rozwijanym prawym przyciskiem myszy lub menu kontekstowym węzła projektu w **Eksplorator rozwiązań** wybierz pozycję **Dodaj**  >  **test obciążenia**.
 
    Zostanie otwarty **nowy Kreator testu obciążeniowego** .
 
@@ -86,11 +88,11 @@ W tej sekcji utworzymy projekt testu obciążenia języka C#. Możesz również 
 
    Zostanie otwarte okno dialogowe **Dodawanie testów** .
 
-1. W obszarze **dostępne testy**wybierz pozycję **WebTest1**, a następnie wybierz strzałkę w prawo, aby przenieść ją do pola **Wybrane testy** . Wybierz przycisk **OK** .
+1. W obszarze **dostępne testy** wybierz pozycję **WebTest1**, a następnie wybierz strzałkę w prawo, aby przenieść ją do pola **Wybrane testy** . Wybierz przycisk **OK** .
 
    ![Okno dialogowe Dodawanie testów](media/add-tests-dialog-box.png)
 
-1. W **nowej Kreator testu obciążeniowego**kliknij przycisk **Zakończ** .
+1. W **nowej Kreator testu obciążeniowego** kliknij przycisk **Zakończ** .
 
    Test obciążenia zostanie dodany do projektu, a plik testu obciążenia zostanie otwarty w oknie edytora.
 
@@ -102,7 +104,7 @@ Z menu po kliknięciu prawym przyciskiem myszy lub menu kontekstowego testu obci
 
 ![Uruchom menu testu obciążenia](media/run-load-test.png)
 
-Test obciążenia rozpocznie działanie. Okno **wyniki testów** pokazuje, że test jest w toku, a Analizator testu obciążenia jest wyświetlany w oknie edytora. Po zakończeniu testu, który powinien być pięć minut, jeśli wartości domyślne zostały zaakceptowane, w edytorze zostanie wyświetlony podsumowanie. Możesz wybrać **wykresy**, **tabele**lub **szczegóły** , aby uzyskać różne informacje dotyczące wyników testu obciążenia.
+Test obciążenia rozpocznie działanie. Okno **wyniki testów** pokazuje, że test jest w toku, a Analizator testu obciążenia jest wyświetlany w oknie edytora. Po zakończeniu testu, który powinien być pięć minut, jeśli wartości domyślne zostały zaakceptowane, w edytorze zostanie wyświetlony podsumowanie. Możesz wybrać **wykresy**, **tabele** lub **szczegóły** , aby uzyskać różne informacje dotyczące wyników testu obciążenia.
 
 ![Okno analizatora testu obciążenia](media/load-test-analyzer.png)
 

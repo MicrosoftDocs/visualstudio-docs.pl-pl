@@ -1,5 +1,7 @@
 ---
 title: Ustawienia kaskadowe | Narzędzie testowe dla deweloperów Microsoft IntelliTest
+description: Dowiedz się więcej o ustawieniach kaskadowych, które organizują ustawienia na poziomie zestawu, osprzętu i eksploracji.
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,16 +11,16 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 95a2029cee1fd13241aba727f671a164d7272543
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bdb053218b65924abfa64053a8a3c7e9e0543d49
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591583"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329513"
 ---
 # <a name="settings-waterfall"></a>Kaskadowy model ustawień
 
-Koncepcja ustawień kaskadowych oznacza, że użytkownik może określić ustawienia na poziomie **zestawu**, **osprzętu**i **eksploracji** :
+Koncepcja ustawień kaskadowych oznacza, że użytkownik może określić ustawienia na poziomie **zestawu**, **osprzętu** i **eksploracji** :
 
 * Zestaw — [PexAssemblySettings](attribute-glossary.md#pexassemblysettings)
 * Armatura — [PexClass](attribute-glossary.md#pexclass)

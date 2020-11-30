@@ -1,5 +1,7 @@
 ---
 title: Przekształć kodowane testy interfejsu użytkownika w celu zaczekania na określone zdarzenia
+description: Dowiedz się, jak wydać Test odtwarzania kodowanego testu interfejsu użytkownika, aby oczekiwać na wystąpienie niektórych zdarzeń, takich jak okno pojawiające się lub znikający pasek postępu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: mikejo5000
@@ -7,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea0bd0135ca90f96c2275248da7d116ecfd92e01
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 401888eee7fb5952c69c953824f3959c2b456a4d
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286781"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329565"
 ---
 # <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>Przekształć kodowane testy interfejsu użytkownika, aby oczekiwać na określone zdarzenia podczas odtwarzania
 

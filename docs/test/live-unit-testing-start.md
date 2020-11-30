@@ -1,5 +1,7 @@
 ---
 title: Dowiedz się, jak testować kod za pomocą testów jednostkowych na żywo
+description: Dowiedz się, jak Live Unit Testing utworzyć prostą bibliotekę klas, która jest przeznaczona dla .NET Standard i tworząca projekt MSTest, który jest przeznaczony dla platformy .NET Core w celu przetestowania.
+ms.custom: SEO-VS-2020
 ms.date: 04/03/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ef0fbd5c422d16df4e361ff95f4ac8deabdd5bae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce2376f2dc3cb6abeb11b328452defb891949558
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287015"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329500"
 ---
 # <a name="get-started-with-live-unit-testing"></a>Rozpoczynanie pracy z funkcją Live Unit Testing
 
@@ -48,7 +50,7 @@ Rozwiązanie to tylko kontener dla jednego lub wielu projektów. Aby utworzyć p
 
 Teraz, po utworzeniu rozwiązania, utworzysz bibliotekę klas o nazwie StringLibrary, która zawiera szereg metod rozszerzających do pracy z ciągami.
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy rozwiązanie UtilityLibraries i wybierz pozycję **Dodaj**  >  **Nowy projekt**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy rozwiązanie UtilityLibraries i wybierz pozycję **Dodaj**  >  **Nowy projekt**.
 
 ::: moniker range="vs-2017"
 
@@ -96,7 +98,7 @@ Teraz, po utworzeniu rozwiązania, utworzysz bibliotekę klas o nazwie StringLib
 
 Następnym krokiem jest utworzenie projektu testów jednostkowych w celu przetestowania biblioteki StringLibrary. Utwórz testy jednostkowe, wykonując następujące czynności:
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy rozwiązanie UtilityLibraries i wybierz pozycję **Dodaj**  >  **Nowy projekt**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy rozwiązanie UtilityLibraries i wybierz pozycję **Dodaj**  >  **Nowy projekt**.
 
 ::: moniker range="vs-2017"
 
@@ -260,7 +262,7 @@ W tej sekcji dowiesz się, jak używać Live Unit Testing do identyfikowania, ro
 
    Zwróć uwagę, że w oknie **samochody** wartość `phrase` zmiennej to "Name\tDescription", która jest drugim elementem tablicy. Metoda testowa oczekuje `HasEmbeddedSpaces` na zwrócenie `true` , gdy przeszedł ten ciąg; zamiast tego zwraca wartość `false` . W oczywisty sposób nie rozpoznaje "\t" znaku tabulacji jako obszaru osadzonego.
 
-1. Wybierz pozycję **Debuguj**  >  **Kontynuuj**, naciśnij klawisz **F5**lub kliknij przycisk **Kontynuuj** na pasku narzędzi, aby kontynuować wykonywanie programu testowego. Ponieważ wystąpił nieobsługiwany wyjątek, test zakończy się.
+1. Wybierz pozycję **Debuguj**  >  **Kontynuuj**, naciśnij klawisz **F5** lub kliknij przycisk **Kontynuuj** na pasku narzędzi, aby kontynuować wykonywanie programu testowego. Ponieważ wystąpił nieobsługiwany wyjątek, test zakończy się.
 Zapewnia to wystarczającą ilość informacji na potrzeby wstępnego badania błędu. Albo `TestHasEmbeddedSpaces` (procedura testowa) wprowadziła nieprawidłowe założenie lub nie `HasEmbeddedSpaces` rozpoznaje poprawnie wszystkich osadzonych miejsc.
 
 1. Aby zdiagnozować i rozwiązać ten problem, Zacznij od `StringLibrary.HasEmbeddedSpaces` metody. Przyjrzyj się porównaniu w `HasEmbeddedSpaces` metodzie. Uważa, że przestrzeń osadzona ma być U + 0020. Standard Unicode zawiera jednak kilka innych znaków spacji. Sugeruje to, że kod biblioteki został niepoprawnie przetestowany pod kątem znaku odstępu.

@@ -1,5 +1,7 @@
 ---
 title: Izolowanie testowanego kodu za pomocą struktury Microsoft Fakes
+description: Dowiedz się, jak fałszywe firmy Microsoft ułatwiają Izolowanie testowanego kodu przez zastąpienie innych części aplikacji za pomocą wycinków lub podkładek.
+ms.custom: SEO-VS-2020
 ms.date: 06/03/2020
 ms.topic: how-to
 ms.author: mikejo
@@ -10,12 +12,12 @@ author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: e837b1a0e9a1d8fe06342352e4eedf5ce0fa9117
-ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
+ms.openlocfilehash: aa1f0505d37059ce65da80fcf483473610cf2f6d
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93325947"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329539"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Izolowanie testowanego kodu za pomocą struktury Microsoft Fakes
 
@@ -83,10 +85,10 @@ Aby uzyskać bardziej szczegółowy opis, zobacz [Używanie wycinków do izolowa
 
 2. **Dodaj zestaw elementów sztucznych**
 
-   1. W **Eksplorator rozwiązań** , 
+   1. W **Eksplorator rozwiązań**, 
        - W przypadku starszego projektu .NET Framework (styl inny niż zestaw SDK) rozwiń węzeł **odwołania** projektu testów jednostkowych.
        ::: moniker range=">=vs-2019"
-       - W przypadku projektu w stylu zestawu SDK .NET Framework lub .NET Core rozwiń węzeł **zależności** , aby znaleźć zestaw, który ma zostać sfałszowany w ramach **zestawów** , **projektów** lub **pakietów**.
+       - W przypadku projektu w stylu zestawu SDK .NET Framework lub .NET Core rozwiń węzeł **zależności** , aby znaleźć zestaw, który ma zostać sfałszowany w ramach **zestawów**, **projektów** lub **pakietów**.
        ::: moniker-end
        - Jeśli pracujesz w Visual Basic, wybierz pozycję **Pokaż wszystkie pliki** na **Eksplorator rozwiązań** pasku narzędzi, aby wyświetlić węzeł **odwołania** .
    2. Wybierz zestaw, który zawiera definicje klas, dla których chcesz utworzyć podkładki. Na przykład, jeśli chcesz określić **datę i godzinę** dla podkładki, wybierz pozycję **System.dll**.

@@ -1,5 +1,7 @@
 ---
 title: Granice eksploracji | Narzędzie testowe dla deweloperów Microsoft IntelliTest
+description: PexSettingsAttributeBase to abstrakcyjna klasa bazowa dla ustawień związanych z atrybutami. Dowiedz się, jak modyfikować ustawienia przy użyciu nazwanych właściwości.
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 2a57d79fb64675f90edf50e6a0d7d50b8a3c6fd7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 713ccf139e4110923f45073308da2c249305eb18
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315216"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328902"
 ---
 # <a name="exploration-bounds"></a>Wiązania eksploracji
 

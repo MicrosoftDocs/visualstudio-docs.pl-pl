@@ -1,5 +1,7 @@
 ---
 title: Użyj Azure Pipelines do testowania automatycznego
+description: Dowiedz się, jak zaimplementować automatyczne testowanie dla automatyzacji Kompilacja-Wdrażanie-test przy użyciu Azure Pipelines i Team Foundation Server.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 052e2c794ba765573923fba89413e0192c582c15
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: bd1ab445093a91875c8e9c20febe37ade3921800
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928596"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329307"
 ---
 # <a name="use-azure-test-plans-instead-of-lab-management-for-automated-testing"></a>Użyj Azure Test Plans zamiast Lab Management do testowania automatycznego
 
@@ -29,7 +31,7 @@ Microsoft Test Manager i Lab Management polegają na definicji kompilacji XAML w
 
 | Kroki | Z kompilacją XAML | W kompilacji lub wersji |
 |-------|----------------------|-----------------|
-| Zidentyfikuj maszyny, na których ma zostać wdrożona kompilacja, i uruchom testy. | Utwórz standardowe środowisko laboratoryjne w Microsoft Test Manager z tymi maszynami. | nie dotyczy |
+| Zidentyfikuj maszyny, na których ma zostać wdrożona kompilacja, i uruchom testy. | Utwórz standardowe środowisko laboratoryjne w Microsoft Test Manager z tymi maszynami. | n/d |
 | Zidentyfikuj testy do uruchomienia. | Utwórz zestaw testów w Microsoft Test Manager, Utwórz przypadki testowe i skojarz automatyzację z każdym przypadkiem testowym. Utwórz ustawienia testu w Microsoft Test Manager identyfikowania roli maszyn w środowisku laboratoryjnym, w której powinny być uruchamiane testy. | Utwórz zautomatyzowany zestaw testów w Microsoft Test Manager w taki sam sposób, jeśli planujesz zarządzać testowaniem za pomocą planów testów. Alternatywnie możesz pominąć tę funkcję, jeśli chcesz uruchomić testy bezpośrednio z plików binarnych testów produkowanych w ramach kompilacji. Nie ma potrzeby tworzenia ustawień testu w obu przypadkach. |
 | Automatyzacja wdrażania i testowania. | Utwórz definicję kompilacji XAML przy użyciu LabDefaultTemplate. *. XAML. Określ środowisko kompilacji, zestawów testów i środowiska laboratoryjnego w definicji kompilacji. | Utwórz [potok kompilacji lub wersji](/azure/devops/pipelines/index?view=vsts&preserve-view=true) za pomocą jednego środowiska. Uruchom ten sam skrypt wdrażania (z definicji kompilacji XAML) przy użyciu zadania wiersza polecenia i uruchom testy automatyczne przy użyciu wdrożenia agenta testowego i Uruchom zadania testów funkcjonalnych. Określ listę maszyn i ich poświadczenia jako dane wejściowe tych zadań. |
 

@@ -1,5 +1,6 @@
 ---
 title: Wymagania dotyczące kontrolera testów/agenta testowego (testowanie obciążenia)
+description: Więcej informacji na temat wymagań dotyczących kontrolera testów i agenta testowego na potrzeby testowania obciążenia. Program Visual Studio obsługuje kilka typów testów.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
@@ -10,12 +11,12 @@ ms.assetid: 372d97ce-12e4-46a9-9863-da508adba68f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a5d4e0562ed15aa44beba858f46870bf672d46ba
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 6668e669fdc26db9d81c7176aeee16e5af42987b
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810552"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330189"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Wymagania dotyczące kontrolera testów i agentów testowych do testowania obciążenia
 
@@ -40,7 +41,7 @@ W poniższej tabeli przedstawiono zalecane wymagania sprzętowe dotyczące wdra�
 |N x 30 komputerów w środowisku testowym. Obejmuje to agentów i serwery objęte testem.|Test Controller|Procesor N 2,6 GHz|||
 
 > [!NOTE]
-> Liczba użytkowników wirtualnych różni się znacznie od testu testowego. Kluczową przyczyną tego wariancji jest Wariancja w *czasie reakcji*lub opóźnienia użytkownika. Aby uzyskać więcej informacji, zobacz [Edytowanie czasów reakcji w celu symulowania opóźnień interakcji z witryną sieci Web](../test/edit-think-times-in-load-test-scenarios.md). W teście obciążenia testy sieci Web są zwykle wydajniejsze i generują więcej obciążenia niż testy jednostkowe. Liczby w powyższej tabeli są prawidłowe dla uruchamiania testów sieci Web z 3-5 sekund czasu reakcji w typowej aplikacji sieci Web.
+> Liczba użytkowników wirtualnych różni się znacznie od testu testowego. Kluczową przyczyną tego wariancji jest Wariancja w *czasie reakcji* lub opóźnienia użytkownika. Aby uzyskać więcej informacji, zobacz [Edytowanie czasów reakcji w celu symulowania opóźnień interakcji z witryną sieci Web](../test/edit-think-times-in-load-test-scenarios.md). W teście obciążenia testy sieci Web są zwykle wydajniejsze i generują więcej obciążenia niż testy jednostkowe. Liczby w powyższej tabeli są prawidłowe dla uruchamiania testów sieci Web z 3-5 sekund czasu reakcji w typowej aplikacji sieci Web.
 
 Przedstawione tutaj wytyczne są dostępne jako ogólne wskazówki dotyczące planowania sprzętu. Wydajność testów będzie się znacznie różnić w zależności od ilości danych testowych i liczby agentów testowych. W przypadku agentów testowych szybkość procesora i dostępna pamięć spowodują ograniczenie obciążenia testowego. Kontrolery testów potrzebują większych zasobów, w zależności od liczby agentów testowych i ilości danych używanych w testach.
 

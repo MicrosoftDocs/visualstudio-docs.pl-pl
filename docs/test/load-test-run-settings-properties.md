@@ -1,5 +1,7 @@
 ---
 title: Parametry uruchomieniowe testu obciążenia
+description: Dowiedz się, jak utworzyć i zapisać wiele parametrów uruchomieniowych dla każdego testu obciążenia, a następnie wybrać określone ustawienie, które ma być używane podczas wykonywania testu.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: de10dabb-02ed-403b-9e6f-0b735524988c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8898a474888ce9efbf4c91a5251bf8fe7036fe5f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 651d3937e51be4ec1deeb748f2e4f32cfd08ee81
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75584468"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329253"
 ---
 # <a name="load-test-run-settings-properties"></a>Właściwości ustawień przebiegu testu obciążenia
 
@@ -35,7 +37,7 @@ Aby uzyskać więcej informacji, zobacz [Konfigurowanie ustawień przebiegu test
 |**Maksymalne naruszenia progu**|Maksymalna liczba naruszeń progowych do zapisania dla tego testu obciążenia.<br /><br /> Tę liczbę można zwiększyć, jeśli trzeba, ale spowoduje to również zwiększenie rozmiaru i czasu przetwarzania wyników testu obciążenia.|
 |**Uruchom testy jednostkowe w domenie aplikacji**|Wartość logiczna określająca, czy każdy zestaw testów jednostkowych będzie uruchamiany w oddzielnej domenie aplikacji, gdy test obciążenia zawiera testy jednostkowe. Ustawieniem domyślnym jest true.<br /><br /> Jeśli testy jednostkowe nie wymagają poprawnego działania oddzielnej domeny aplikacji lub pliku app.config, testy jednostkowe mogą działać szybciej, ustawiając wartość tej właściwości na `False` .|
 |**Nazwa**|Nazwa ustawienia uruchomieniowego wyświetlanego w węźle **Parametry uruchomieniowe** **Edytor testu obciążeniowego**.|
-|**Poziom walidacji**|Definiuje najwyższy poziom reguły walidacji, która będzie uruchamiana w teście obciążenia. Reguły walidacji są skojarzone z żądaniami testów wydajności sieci Web. Każda reguła walidacji ma skojarzony poziom walidacji: **wysoki**, **Średni**lub **niski**. To ustawienie przebiegu testu obciążenia określa, które reguły walidacji będą uruchamiane, gdy test wydajności sieci Web zostanie uruchomiony w teście obciążenia. Jeśli na przykład to ustawienie uruchomieniowe ma wartość **średnia**, wszystkie reguły walidacji oznaczone jako **średnie**lub **niskie** zostaną uruchomione.|
+|**Poziom walidacji**|Definiuje najwyższy poziom reguły walidacji, która będzie uruchamiana w teście obciążenia. Reguły walidacji są skojarzone z żądaniami testów wydajności sieci Web. Każda reguła walidacji ma skojarzony poziom walidacji: **wysoki**, **Średni** lub **niski**. To ustawienie przebiegu testu obciążenia określa, które reguły walidacji będą uruchamiane, gdy test wydajności sieci Web zostanie uruchomiony w teście obciążenia. Jeśli na przykład to ustawienie uruchomieniowe ma wartość **średnia**, wszystkie reguły walidacji oznaczone jako **średnie** lub **niskie** zostaną uruchomione.|
 
 ## <a name="logging-properties"></a>Właściwości rejestrowania
 

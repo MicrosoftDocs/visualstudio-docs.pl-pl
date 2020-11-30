@@ -1,5 +1,7 @@
 ---
 title: Niestandardowy interfejs użytkownika (pakietu VSPackage kontroli źródła) | Microsoft Docs
+description: Dowiedz się, jak utworzyć niestandardowy interfejs użytkownika w programie Visual Studio za pomocą pakietu VSPackage kontroli źródła, aby określić elementy UI.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6ef807cef17a6ca3cddfee05ba57ace27e34a9e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e1426b271ea8db4d486043c9fbe885a0f428b514
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708928"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328525"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>Niestandardowy interfejs użytkownika (pakietu VSPackage kontroli źródła)
 Pakietu VSPackage deklaruje elementy menu i ich domyślne Stany za pomocą pliku programu Visual Studio Command Table (*. vsct*). [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Zintegrowane środowisko programistyczne (IDE) wyświetla elementy menu w ich domyślnych Stanach do momentu załadowania pakietu VSPackage. Następnie <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> Metoda jest wywoływana, aby włączyć lub wyłączyć elementy menu.

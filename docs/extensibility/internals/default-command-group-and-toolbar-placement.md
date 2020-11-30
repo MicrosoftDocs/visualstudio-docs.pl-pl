@@ -1,5 +1,7 @@
 ---
 title: Domyślne położenie poleceń, grup i pasków narzędzi | Microsoft Docs
+description: Dowiedz się więcej na temat poleceń IDE, poleceń produktów i poleceń edytora, które domyślnie są wyświetlane w interfejsie użytkownika programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b432b514231e876dda1393bad8a315030272d998
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cacf8db933c7d56d44351da11b7b310bc0bdb8aa
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708891"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329890"
 ---
 # <a name="default-command-group-and-toolbar-placement"></a>Domyślne położenie poleceń, grup i pasków narzędzi
 W celu zapewnienia jednorodności i stabilności produktu interfejs użytkownika domyślnie wyświetla pewne grupy poleceń i [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zawiera definicje poleceń i grup poleceń. Pakietów VSPackage może również używać standardowych poleceń i grup poleceń.

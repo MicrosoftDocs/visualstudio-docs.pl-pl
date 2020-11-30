@@ -1,5 +1,7 @@
 ---
 title: Podstawy testów jednostkowych
+description: Dowiedz się, jak program Visual Studio Test Explorer zapewnia elastyczny i wydajny sposób uruchamiania testów jednostkowych i wyświetlania ich wyników.
+ms.custom: SEO-VS-2020
 ms.date: 08/07/2019
 ms.topic: conceptual
 f1_keywords:
@@ -9,18 +11,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77ac5ffd14f97fd6fdd753327fe193ceb80ea57e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f563d37e6456ec775b2e70d59e07b0627c82994b
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75846929"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330202"
 ---
 # <a name="unit-test-basics"></a>Podstawowe informacje o teście jednostkowym
 
 Sprawdź, czy kod działa zgodnie z oczekiwaniami, tworząc i uruchamiając testy jednostkowe. Jest to tzw. Testowanie jednostkowe, ponieważ należy podzielić funkcjonalność programu na dyskretne zachowania weryfikowalne, które można testować jako pojedyncze *jednostki*. Program Visual Studio Test Explorer oferuje elastyczny i wydajny sposób uruchamiania testów jednostkowych i wyświetlania ich wyników w programie Visual Studio. Program Visual Studio instaluje struktury testów jednostkowych firmy Microsoft dla kodu zarządzanego i natywnego. Użyj *struktury testów jednostkowych* , aby utworzyć testy jednostkowe, uruchomić je i zgłosić wyniki tych testów. Ponownie uruchom testy jednostkowe, gdy wprowadzisz zmiany w celu przetestowania, że kod nadal działa poprawnie. Visual Studio Enterprise można to zrobić automatycznie przy użyciu [Live Unit Testing](live-unit-testing-intro.md), który wykrywa testy, na które wpłynie zmiana kodu i uruchamia je w tle podczas wpisywania.
 
-Testy jednostkowe mają największy wpływ na jakość kodu, gdy jest to integralna część przepływu pracy tworzenia oprogramowania. Gdy tylko napiszesz funkcję lub inny blok kodu aplikacji, należy utworzyć testy jednostkowe, które weryfikują zachowanie kodu w odpowiedzi na standardowe, graniczne i niepoprawne przypadki danych wejściowych oraz sprawdzają wszelkie jawne lub niejawne założenia wykonane przez kod. W przypadku *projektowania sterowanego testem*należy utworzyć testy jednostkowe przed zapisaniem kodu, więc należy użyć testów jednostkowych jako dokumentacji projektu i specyfikacji funkcjonalnych.
+Testy jednostkowe mają największy wpływ na jakość kodu, gdy jest to integralna część przepływu pracy tworzenia oprogramowania. Gdy tylko napiszesz funkcję lub inny blok kodu aplikacji, należy utworzyć testy jednostkowe, które weryfikują zachowanie kodu w odpowiedzi na standardowe, graniczne i niepoprawne przypadki danych wejściowych oraz sprawdzają wszelkie jawne lub niejawne założenia wykonane przez kod. W przypadku *projektowania sterowanego testem* należy utworzyć testy jednostkowe przed zapisaniem kodu, więc należy użyć testów jednostkowych jako dokumentacji projektu i specyfikacji funkcjonalnych.
 
 Możesz szybko generować projekty testowe i metody testowe z kodu lub ręcznie tworzyć testy w miarę potrzeb. W przypadku korzystania z IntelliTest do eksplorowania kodu platformy .NET można generować dane testowe i zestaw testów jednostkowych. Dla każdej instrukcji w kodzie są generowane dane wejściowe testu, które spowodują wykonanie tej instrukcji. Dowiedz się, jak [generować testy jednostkowe dla kodu](generate-unit-tests-for-your-code-with-intellitest.md).
 
@@ -123,7 +125,7 @@ Projekt testu jednostkowego zazwyczaj odzwierciedla strukturę pojedynczego proj
 
 **Aby dodać projekt testu jednostkowego do rozwiązania:**
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy rozwiązanie i wybierz polecenie **Dodaj**  >  **Nowy** **projekt**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy rozwiązanie i wybierz polecenie **Dodaj**  >  **Nowy** **projekt**.
 
 ::: moniker range="vs-2017"
 
@@ -319,7 +321,7 @@ Odp **.:** Użyj **Eksploratora testów** , aby rozpocząć sesję debugowania d
     > [!NOTE]
     > Ponieważ metody testowe mogą być uruchamiane w dowolnej kolejności, należy ustawić punkty przerwania we wszystkich metodach testowych, które mają być debugowane.
 
-2. W **Eksploratorze testów**wybierz metody testowe, a następnie wybierz **Debuguj wybrane testy** z menu skrótów.
+2. W **Eksploratorze testów** wybierz metody testowe, a następnie wybierz **Debuguj wybrane testy** z menu skrótów.
 
 Dowiedz się więcej na temat [debugowania testów jednostkowych](../debugger/debugger-feature-tour.md).
 

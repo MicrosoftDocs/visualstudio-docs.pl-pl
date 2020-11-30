@@ -1,5 +1,6 @@
 ---
 title: Niestandardowe właściwości dokumentu w starszych usługach językowych
+description: Dowiedz się, jak utworzyć niestandardowe właściwości dokumentu, które są wyświetlane w programie Visual Studio okno Właściwości w ramach starszej wersji usługi językowej.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c38ad28456ab8b9bccf29d2249307b718a5767b
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: d5fa24f3d052ab9122776967607b2c197fb102bf
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036837"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329903"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>Niestandardowe właściwości dokumentu w starszej wersji usługi językowej
 Właściwości dokumentu można wyświetlić w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] oknie **Właściwości** . Języki programowania zazwyczaj nie mają właściwości skojarzonych z poszczególnymi plikami źródłowymi. Plik XML obsługuje jednak właściwości dokumentu, które mają wpływ na kodowanie, schemat i arkusz stylów.
@@ -398,5 +399,5 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Funkcje starszej wersji usługi językowej](../../extensibility/internals/legacy-language-service-features1.md)

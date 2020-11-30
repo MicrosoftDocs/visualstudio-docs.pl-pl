@@ -1,5 +1,7 @@
 ---
 title: Określanie, który Edytor otwiera plik w projekcie | Microsoft Docs
+description: Dowiedz się więcej na temat kluczy rejestru i metod zestawu SDK programu Visual Studio, które są używane przez program Visual Studio do określenia, który Edytor otwiera plik w projekcie.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af7037a3b4bfbae1801e802256af240d017d2789
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f9574a3319d3c43c17d7351e462b6956ae899d84
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708659"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328408"
 ---
 # <a name="determine-which-editor-opens-a-file-in-a-project"></a>Określ, który Edytor otwiera plik w projekcie
 Gdy użytkownik otwiera plik w projekcie, środowisko przechodzi przez proces sondowania, ostatecznie otwierając odpowiedni edytor lub projektanta dla tego pliku. Procedura początkowa stosowana przez środowisko jest taka sama dla edytorów standardowych i niestandardowych. Środowisko używa różnych kryteriów podczas sondowania, który Edytor służy do otwierania pliku, a pakietu VSPackage musi być koordynowany ze środowiskiem w trakcie tego procesu.
@@ -27,9 +29,9 @@ Gdy użytkownik otwiera plik w projekcie, środowisko przechodzi przez proces so
 
  Projekt różne pliki przejmuje wszystkie pliki, które nie zostały przejęte przez inne projekty. W ten sposób niestandardowe edytory mogą otwierać dokumenty przed ich otwarciem przez edytory standardowe. Jeśli projekt różne pliki zgłasza oświadczenia do pliku, środowisko wywołuje metodę, <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> Aby otworzyć plik ze standardowym edytorem. Środowisko sprawdza wewnętrzną listę zarejestrowanych edytorów, które obsługują pliki *. rtf* . Ta lista znajduje się w rejestrze w następującym kluczu:
 
- **HKEY_LOCAL_MACHINE \Software\Microsoft\VisualStudio \\ \<version> \Editors \\ \<editor factory guid> \Extensions**
+ **HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\ \<version> \Editors \\ \<editor factory guid> \Extensions**
 
- Środowisko sprawdza także identyfikatory klas w HKEY_CLASSES_ROOT kluczu **\CLSID** dla wszystkich obiektów, które mają podklucz **DocObject**. Jeśli rozszerzenie pliku zostanie znalezione, w programie Visual Studio zostanie utworzona wbudowana wersja aplikacji, na przykład Microsoft Word. Te obiekty dokumentu muszą być plikami złożonymi implementującymi <xref:Microsoft.VisualStudio.OLE.Interop.IPersistStorage> interfejs lub obiektem musi implementować <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> interfejs.
+ Środowisko sprawdza także identyfikatory klas w kluczu **HKEY_CLASSES_ROOT\CLSID** dla wszystkich obiektów, które mają podklucz **DocObject**. Jeśli rozszerzenie pliku zostanie znalezione, w programie Visual Studio zostanie utworzona wbudowana wersja aplikacji, na przykład Microsoft Word. Te obiekty dokumentu muszą być plikami złożonymi implementującymi <xref:Microsoft.VisualStudio.OLE.Interop.IPersistStorage> interfejs lub obiektem musi implementować <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> interfejs.
 
  Jeśli w rejestrze nie ma fabryki edytora dla plików *RTF* , środowisko szuka w kluczu **HKEY_CLASSES_ROOT \\ . rtf** i otworzy Edytor określony w tym miejscu. Jeśli rozszerzenie pliku nie zostanie znalezione w **HKEY_CLASSES_ROOT**, środowisko używa podstawowego edytora tekstu programu Visual Studio, aby otworzyć plik, jeśli jest to plik tekstowy.
 

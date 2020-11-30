@@ -1,5 +1,7 @@
 ---
 title: Testowanie biblioteki C++ DLL dla aplikacji platformy UWP
+description: Dowiedz się, jak tworzyć testy jednostkowe dla biblioteki DLL języka C++ dla aplikacji platforma uniwersalna systemu Windows przy użyciu platformy Microsoft Test Framework dla języka C++.
+ms.custom: SEO-VS-2020
 ms.date: 05/01/2019
 ms.topic: how-to
 ms.author: corob
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - uwp
 author: corob-msft
-ms.openlocfilehash: 7b556f085ae4e4a9c610aefa87b3f9125fb27042
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a7ae79ff4df783d3c4541720c9fef709087e7da6
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285612"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330098"
 ---
 # <a name="how-to-test-a-c-dll"></a>Testowanie biblioteki DLL języka C++
 
@@ -81,14 +83,14 @@ Zacznij od utworzenia nowego projektu testowego. W menu **plik** wybierz pozycj�
 
 ::: moniker range="vs-2019"
 
-W **Eksplorator rozwiązań**wybierz nazwę rozwiązania. Z menu skrótów wybierz polecenie **Dodaj**, a następnie **Nowy projekt**. W oknie dialogowym **Dodawanie nowego projektu** Ustaw **Język** na C++ i wpisz ciąg "dll" w polu wyszukiwania. Z listy wyników wybierz pozycję **aplikacja testów jednostkowych (uniwersalna platforma Windows-C++/CX)**.
+W **Eksplorator rozwiązań** wybierz nazwę rozwiązania. Z menu skrótów wybierz polecenie **Dodaj**, a następnie **Nowy projekt**. W oknie dialogowym **Dodawanie nowego projektu** Ustaw **Język** na C++ i wpisz ciąg "dll" w polu wyszukiwania. Z listy wyników wybierz pozycję **aplikacja testów jednostkowych (uniwersalna platforma Windows-C++/CX)**.
 
 ![Tworzenie projektu RooterLib](../test/media/vs-2019/cpp-new-uwp-test-project-vs2019.png)
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
-W **Eksplorator rozwiązań**wybierz nazwę rozwiązania. Z menu skrótów wybierz polecenie **Dodaj**, a następnie **Nowy projekt**.
+W **Eksplorator rozwiązań** wybierz nazwę rozwiązania. Z menu skrótów wybierz polecenie **Dodaj**, a następnie **Nowy projekt**.
 
 ![Tworzenie projektu RooterLib](../test/media/ute_cpp_windows_rooterlib_create.png)
 
@@ -124,7 +126,7 @@ W **Eksplorator rozwiązań**wybierz nazwę rozwiązania. Z menu skrótów wybie
 
 3. Dodaj symbol ROOTERLIB_EXPORTS do wiersza polecenia.
 
-    1. W **Eksplorator rozwiązań**wybierz projekt **RooterLib** , a następnie wybierz polecenie **Właściwości** z menu skrótów.
+    1. W **Eksplorator rozwiązań** wybierz projekt **RooterLib** , a następnie wybierz polecenie **Właściwości** z menu skrótów.
 
          ![Dodaj definicję symbolu preprocesora](../test/media/ute_cpp_windows_addpreprocessorsymbol.png)
 
@@ -152,7 +154,7 @@ W **Eksplorator rozwiązań**wybierz nazwę rozwiązania. Z menu skrótów wybie
 
 1. Dodaj RooterLib do projektu RooterLibTests.
 
-   1. W **Eksplorator rozwiązań**wybierz projekt **RooterLibTests** , a następnie wybierz polecenie **Dodaj**  >  **odwołanie** w menu skrótów.
+   1. W **Eksplorator rozwiązań** wybierz projekt **RooterLibTests** , a następnie wybierz polecenie **Dodaj**  >  **odwołanie** w menu skrótów.
 
    1. W oknie dialogowym **Dodaj odwołanie** wybierz pozycję **projekty**. Następnie wybierz element **RouterLib** .
 
@@ -190,7 +192,7 @@ W **Eksplorator rozwiązań**wybierz nazwę rozwiązania. Z menu skrótów wybie
 
     Nowy test zostanie wyświetlony w **Eksploratorze testów** w węźle **nie uruchomiono testy** .
 
-5. W **Eksploratorze testów**wybierz opcję **Uruchom wszystkie**.
+5. W **Eksploratorze testów** wybierz opcję **Uruchom wszystkie**.
 
     ![Test podstawowy zakończony zakończono](../test/media/ute_cpp_testexplorer_basictest.png)
 
@@ -219,7 +221,7 @@ W **Eksplorator rozwiązań**wybierz nazwę rozwiązania. Z menu skrótów wybie
     >
     > Gdy użytkownicy zmienią swoje wymagania, należy wyłączyć testy, które nie są już poprawne. Napisz nowe testy i Przekształć je w jeden raz w ten sam przyrostowy sposób.
 
-2. W **Eksploratorze testów**wybierz opcję **Uruchom wszystkie**.
+2. W **Eksploratorze testów** wybierz opcję **Uruchom wszystkie**.
 
 3. Test zakończy się niepowodzeniem.
 
@@ -249,7 +251,7 @@ W **Eksplorator rozwiązań**wybierz nazwę rozwiązania. Z menu skrótów wybie
 
     ```
 
-5. Skompiluj rozwiązanie, a następnie w **Eksploratorze testów**wybierz opcję **Uruchom wszystkie**.
+5. Skompiluj rozwiązanie, a następnie w **Eksploratorze testów** wybierz opcję **Uruchom wszystkie**.
 
      Oba testy zostały zakończone pomyślnie.
 
@@ -289,7 +291,7 @@ W **Eksplorator rozwiązań**wybierz nazwę rozwiązania. Z menu skrótów wybie
    };
    ```
 
-2. W **Eksploratorze testów**wybierz opcję **Uruchom wszystkie**.
+2. W **Eksploratorze testów** wybierz opcję **Uruchom wszystkie**.
 
     Test zakończy się niepowodzeniem. Wybierz nazwę testu w **Eksploratorze testów**. Niepowodzenie zostało wyróżnione. Komunikat o błędzie jest widoczny w okienku szczegółów w **Eksploratorze testów**.
 
@@ -319,7 +321,7 @@ W **Eksplorator rozwiązań**wybierz nazwę rozwiązania. Z menu skrótów wybie
 
        ```
 
-   1. W **Eksploratorze testów**wybierz opcję **Uruchom wszystkie** , aby przetestować poprawioną metodę i upewnić się, że regresja nie została wprowadzona.
+   1. W **Eksploratorze testów** wybierz opcję **Uruchom wszystkie** , aby przetestować poprawioną metodę i upewnić się, że regresja nie została wprowadzona.
 
    Wszystkie testy są teraz zakończone pomyślnie.
 

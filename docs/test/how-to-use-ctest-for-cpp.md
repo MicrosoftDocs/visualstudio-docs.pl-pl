@@ -1,5 +1,7 @@
 ---
 title: Jak używać narzędzia ctest dla języka C++
+description: Dowiedz się, jak tworzyć i uruchamiać testy z narzędzia ctest, które są domyślnie zintegrowane z programem Visual Studio IDE.
+ms.custom: SEO-VS-2020
 ms.date: 01/23/2020
 ms.topic: how-to
 ms.author: corob
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: c429c9e676ead54bb9f168e3220bf2d4791fac63
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ed713e8b216d64816abd9e25d4d84ce53c44499
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287236"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329994"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio-2017-and-later"></a>Jak używać narzędzia ctest for C++ w programie Visual Studio 2017 i nowszych
 

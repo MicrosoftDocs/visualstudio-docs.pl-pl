@@ -1,5 +1,7 @@
 ---
 title: Wskazówki dotyczące programowania opartego na testach
+description: Dowiedz się, jak opracować przetestowaną metodę w języku C# przy użyciu platformy Microsoft Test Framework, którą można łatwo dostosować do innych języków lub platform testowych, takich jak NUnit.
+ms.custom: SEO-VS-2020
 ms.date: 07/24/2019
 ms.topic: conceptual
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: a264975014fea88126bbca0589fe037e629dae10
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 82cccbc47d26dd9ef74ee02931d6efb4bbfa0054
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75566283"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329162"
 ---
 # <a name="walkthrough-test-driven-development-using-test-explorer"></a>Przewodnik: Programowanie sterowane testami za pomocą Eksploratora testów
 
@@ -60,9 +62,9 @@ W tym instruktażu przedstawiono sposób tworzenia przetestowanej metody w języ
 
 6. Uruchom test jednostkowy.
 
-   1. Aby otworzyć **Eksploratora testów**, w menu **test** wybierz polecenie **Windows**  >  **Eksplorator testów**systemu Windows.
+   1. Aby otworzyć **Eksploratora testów**, w menu **test** wybierz polecenie **Windows**  >  **Eksplorator testów** systemu Windows.
 
-   2. W **Eksploratorze testów**wybierz przycisk **Uruchom wszystko** , aby uruchomić test.
+   2. W **Eksploratorze testów** wybierz przycisk **Uruchom wszystko** , aby uruchomić test.
 
    Rozwiązanie zostanie skompilowane, a testy zakończą się niepowodzeniem.
 
@@ -87,7 +89,7 @@ W tym momencie utworzono test i element zastępczy, który można zmodyfikować 
     }
     ```
 
-2. W **Eksploratorze testów**wybierz opcję **Uruchom wszystkie**.
+2. W **Eksploratorze testów** wybierz opcję **Uruchom wszystkie**.
 
    Rozwiązanie zostanie skompilowane, a testy są wykonywane i przekazywane.
 
@@ -124,7 +126,7 @@ Aby poprawić wiarygodność kodu we wszystkich przypadkach, należy dodać test
     }
     ```
 
-2. W **Eksploratorze testów**wybierz opcję **Uruchom wszystkie**.
+2. W **Eksploratorze testów** wybierz opcję **Uruchom wszystkie**.
 
    Nowy test zakończy się niepowodzeniem (mimo że pierwszy test nadal przebiega). Aby znaleźć punkt awarii, wybierz test zakończony niepowodzeniem, a następnie sprawdź szczegóły w okienku **podsumowania szczegółów testu** .
 
@@ -144,7 +146,7 @@ Aby poprawić wiarygodność kodu we wszystkich przypadkach, należy dodać test
     }
     ```
 
-4. W **Eksploratorze testów**wybierz opcję **Uruchom wszystkie**.
+4. W **Eksploratorze testów** wybierz opcję **Uruchom wszystkie**.
 
    Oba testy są teraz przekazywane.
 
@@ -169,7 +171,7 @@ Aby poprawić wiarygodność kodu we wszystkich przypadkach, należy dodać test
     }
     ```
 
-2. W **Eksploratorze testów**wybierz opcję **Uruchom wszystkie**.
+2. W **Eksploratorze testów** wybierz opcję **Uruchom wszystkie**.
 
    Metoda testowa pętle i musi być anulowana ręcznie.
 
@@ -189,7 +191,7 @@ Aby poprawić wiarygodność kodu we wszystkich przypadkach, należy dodać test
         ...
     ```
 
-5. W **Eksploratorze testów**wybierz opcję **Uruchom wszystkie**.
+5. W **Eksploratorze testów** wybierz opcję **Uruchom wszystkie**.
 
    Wszystkie testy zostały zakończone pomyślnie.
 
@@ -224,6 +226,6 @@ Refaktoryzacja kodu, ale nie zmieniaj testów.
     }
     ```
 
-2. Wybierz pozycję **Uruchom wszystkie**i sprawdź, czy wszystkie testy są nadal zakończone pomyślnie.
+2. Wybierz pozycję **Uruchom wszystkie** i sprawdź, czy wszystkie testy są nadal zakończone pomyślnie.
 
    ![Eksplorator testów przedstawiający 3 testy zakończone](../test/media/test-driven-development-three-passed-tests.png)

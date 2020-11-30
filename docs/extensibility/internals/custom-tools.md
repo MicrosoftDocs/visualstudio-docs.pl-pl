@@ -1,5 +1,7 @@
 ---
 title: Narzędzia niestandardowe | Microsoft Docs
+description: Dowiedz się, jak tworzyć niestandardowe narzędzia w programie Visual Studio, które kojarzą narzędzie z elementem w projekcie i uruchamiają to narzędzie za każdym razem, gdy plik zostanie zapisany.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e60f1d8cb8b25ed50b0b20c5ebb538286687ad72
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2ba8760ce53f222ebbe4626bde0d897d4d12c8a6
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708958"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329968"
 ---
 # <a name="custom-tools"></a>Narzędzia niestandardowe
 *Narzędzia niestandardowe* umożliwiają skojarzenie narzędzia z elementem w projekcie i uruchamianie tego narzędzia za każdym razem, gdy plik zostanie zapisany. Niektóre niestandardowe narzędzia, nazywane czasami *generatorami pojedynczych plików*, są często używane do implementowania tłumaczeń generujących kod na podstawie danych i na odwrót. Na przykład generatory pojedynczych plików tworzą [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] i [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] kodu źródłowego z plików *. Settings* i *. resx* . Wygenerowany kod źródłowy zapewnia dostęp z jednoznacznie określonym dostępem do danych w plikach *. Settings* i *. resx* . [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Typy projektów i obsługują niestandardowe narzędzia; [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] typy projektów nie są. Własne typy projektów również mogą obsługiwać niestandardowe narzędzia.

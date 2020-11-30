@@ -1,5 +1,7 @@
 ---
 title: Wdrażanie typów projektów | Microsoft Docs
+description: Dowiedz się, jak wdrażać typy projektów Managed-Code przy użyciu nowego agregatora typu projektu i pakietu Instalator Windows do redystrybucji, w zestawie SDK programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 835e85ade4d309d0b5692aa9b857476cd6b5927a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b1b015f29b6521482013a77bbcf7c44d8a79afa6
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708791"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329882"
 ---
 # <a name="deploy-project-types"></a>Wdróż typy projektów
 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] instaluje nowy agregator typu projektu (*ProjectAggregator2.dll*), a także pakiet Instalator Windows do redystrybucji (*ProjectAggregator2.msi*). Należy użyć nowego agregatora dla typów projektów z kodem zarządzanym. ProjectAggregator2 działa wokół ograniczeń w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] agregatorze projektu, które uniemożliwiają poprawne działanie typów projektów kodu zarządzanego. W poniższych krokach opisano, jak zmienić pakietu VSPackage na korzystanie z nowego agregatora.

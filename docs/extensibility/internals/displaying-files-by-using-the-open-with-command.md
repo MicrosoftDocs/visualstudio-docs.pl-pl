@@ -1,5 +1,7 @@
 ---
 title: Wyświetlanie plików przy użyciu polecenia Otwórz za pomocą | Microsoft Docs
+description: Dowiedz się, jak projekt może wywoływać polecenie Otwórz za pomocą w zintegrowanym środowisku programistycznym (IDE) programu Visual Studio, aby wyświetlić pliki.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4051793077e613981e1dd5b44f1736878f5853e9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f2cb6bd44148d470cac68addc09db9e9207e9d70
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708577"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329695"
 ---
 # <a name="display-files-by-using-the-open-with-command"></a>Wyświetlanie plików przy użyciu polecenia Otwórz za pomocą
 Projekt może polecić środowisku IDE wyświetlenie okna dialogowego **Otwórz za pomocą** . To żądanie monituje użytkownika o otwarcie pliku, który ma wybór standardowych edytorów. Poniższe kroki opisują ten proces:

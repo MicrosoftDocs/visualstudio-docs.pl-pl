@@ -1,5 +1,7 @@
 ---
 title: Określanie stanu polecenia przy użyciu zestawów międzyoperacyjnych | Microsoft Docs
+description: Dowiedz się, jak określić stan poleceń, które są obsługiwane w pakietu VSPackage, za pomocą interfejsu Microsoft. VisualStudio. OLE. Interop. IOleCommandTarget.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,22 +13,22 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52bea32997b083cd13349a37201411e357f94a90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e46252cea550a2caaa81c92853220db4fa2b5b1a
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708713"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328382"
 ---
 # <a name="determine-command-status-by-using-interop-assemblies"></a>Określanie stanu polecenia przy użyciu zestawów międzyoperacyjnych
-Pakietu VSPackage musi śledzić stan poleceń, które może obsłużyć. Środowisko nie może określić, kiedy polecenie obsługiwane w pakietu VSPackage zostanie włączone lub wyłączone. Użytkownik jest odpowiedzialny za pakietu VSPackage do informowania środowiska o Stanach poleceń, na przykład o stanie poleceń ogólnych, takich jak **wycinanie**, **Kopiowanie**i **wklejanie**.
+Pakietu VSPackage musi śledzić stan poleceń, które może obsłużyć. Środowisko nie może określić, kiedy polecenie obsługiwane w pakietu VSPackage zostanie włączone lub wyłączone. Użytkownik jest odpowiedzialny za pakietu VSPackage do informowania środowiska o Stanach poleceń, na przykład o stanie poleceń ogólnych, takich jak **wycinanie**, **Kopiowanie** i **wklejanie**.
 
 ## <a name="status-notification-sources"></a>Źródła powiadomień o stanie
  Środowisko odbiera informacje o poleceniach za pomocą metody pakietów VSPackage ' <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> , która jest częścią implementacji <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu pakietu VSPackage. Środowisko wywołuje <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metodę pakietu VSPackage w dwóch warunkach:
 
 - Gdy użytkownik otwiera menu główne lub menu kontekstowe (przez kliknięcie prawym przyciskiem myszy), środowisko wykonuje <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metodę we wszystkich poleceniach tego menu, aby określić ich stan.
 
-- Gdy pakietu VSPackage żąda, aby środowisko zaktualizował bieżący interfejs użytkownika (UI). Ta aktualizacja jest wykonywana jako polecenia, które są obecnie widoczne dla użytkownika, takie jak **grupowanie**, **Kopiowanie**i **wklejanie** na standardowym pasku narzędzi, są włączone i wyłączone w odpowiedzi na akcje kontekstowe i użytkownika.
+- Gdy pakietu VSPackage żąda, aby środowisko zaktualizował bieżący interfejs użytkownika (UI). Ta aktualizacja jest wykonywana jako polecenia, które są obecnie widoczne dla użytkownika, takie jak **grupowanie**, **Kopiowanie** i **wklejanie** na standardowym pasku narzędzi, są włączone i wyłączone w odpowiedzi na akcje kontekstowe i użytkownika.
 
   Ponieważ powłoka obsługuje wiele pakietów VSPackage, wydajność powłoki będzie nieakceptowalna, jeśli była wymagana do sondowania każdego pakietu VSPackage w celu określenia stanu polecenia. Zamiast tego pakietu VSPackage powinien aktywnie powiadamiać o środowisku, gdy jego interfejs użytkownika zmienia się w momencie zmiany. Aby uzyskać więcej informacji na temat powiadomienia o aktualizacji, zobacz [aktualizowanie interfejsu użytkownika](../../extensibility/updating-the-user-interface.md).
 

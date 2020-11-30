@@ -1,5 +1,7 @@
 ---
 title: Tworzenie stron opcji | Microsoft Docs
+description: Dowiedz się, jak utworzyć stronę opcji w menu Narzędzia w programie Visual Studio przez implementację klasy typu DialogPage z struktury zarządzanego pakietu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 368efaa78a56723d4a72c482bea9ee739385127e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4759b3590fcde116e6f106ac326ff875e9566c43
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709150"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328642"
 ---
 # <a name="create-options-pages"></a>Tworzenie stron opcji
 W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] strukturze pakietów zarządzanych klasy pochodzące od <xref:Microsoft.VisualStudio.Shell.DialogPage> rozszerzeń [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE przez dodanie stron **opcji** w menu **Narzędzia** .

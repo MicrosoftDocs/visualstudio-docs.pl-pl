@@ -1,5 +1,7 @@
 ---
 title: Opóźnione ładowanie dokumentu | Microsoft Docs
+description: Dowiedz się więcej o opóźnionym ładowaniu dokumentów w programie Visual Studio oraz jak Koduj rozszerzenia, aby nie wykonywać zapytania o elementy w dokumencie przed jego załadowaniem.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: fb07b8e2-a4e3-4cb0-b04f-8eb11c491f35
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f78d49013c1f0bd359d4439b73620a159a9ccc0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c6489c819efe0fd29cd2d120c08414cf0532ad6f
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708810"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328395"
 ---
 # <a name="delayed-document-loading"></a>Opóźnione ładowanie dokumentu
 
@@ -65,4 +67,4 @@ Bardziej wydajnym sposobem uzyskiwania dostępu do dokumentu jest użycie progra
 
 Nie ma widocznej wskazówki wskazującej, czy dokument został zainicjowany, dlatego może być trudne do sprawdzenia, czy rozszerzenie wymusza inicjalizację. Można ustawić klucz rejestru, który ułatwia weryfikację, ponieważ powoduje to, że tytuł każdego dokumentu, który nie jest w pełni zainicjowany, ma tekst *[stub]* w tytule.
 
-W **HKEY_CURRENT_USER \software\microsoft\visualstudio\14.0\backgroundsolutionload**ustaw wartość **StubTabTitleFormatString** na * {0} [stub]*.
+W **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad** ustaw wartość opcji **StubTabTitleFormatString** na *{0} [stub]*.

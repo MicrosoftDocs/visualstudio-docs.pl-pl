@@ -1,5 +1,6 @@
 ---
 title: Ustawianie unikatowej kontrolki platformy UWP dla właściwości automatyzacji
+description: Dowiedz się, jak przypisać unikatową Właściwość automatyzacji na podstawie typu kontrolki XAML w aplikacji platformy UWP opartej na języku XAML w celu uruchomienia kodowanego testu interfejsu użytkownika.
 ms.custom: SEO-VS-2020
 ms.date: 05/31/2018
 ms.topic: how-to
@@ -8,12 +9,12 @@ manager: jillfra
 ms.workload:
 - uwp
 author: mikejo5000
-ms.openlocfilehash: 1790ac51f513ddcb42500eb271212b68a4aefe63
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 5af4f9c70696144e0efb420ab27860a1969bddc6
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810223"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328332"
 ---
 # <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>Ustawianie unikatowej właściwości automatyzacji dla kontrolek platformy UWP do testowania
 
@@ -44,7 +45,7 @@ Ustaw **AutomationProperties.Name** na **przycisk** przy użyciu właściwości 
 Ustaw **AutomationProperties. AutomationId** na **ButtonX** jawnie w kodzie XAML dla kontrolki.
 
 ```xaml
-<Button AutomationProperties.AutomationId="ButtonX" Height="31" HorizontalAlignment="Left" Margin="23,26,0,0"  VerticalAlignment="Top" Width="140" Click="ButtonX_Click" />
+<Button AutomationProperties.AutomationId="ButtonX" Height="31" HorizontalAlignment="Left" Margin="23,26,0,0"  VerticalAlignment="Top" Width="140" Click="ButtonX_Click" />
 ```
 
 Ustaw **AutomationProperties.Name** na **przycisk** jawnie w kodzie XAML dla kontrolki.

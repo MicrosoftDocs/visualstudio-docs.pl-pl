@@ -1,5 +1,7 @@
 ---
 title: Generowanie testu | Narzędzie testowe dla deweloperów Microsoft IntelliTest
+description: Dowiedz się, w jaki sposób usługa IntelliTest generuje przypadki testowe z metod implementacji, a następnie generuje dane wejściowe dla metod i sprawdza potwierdzenia danych.
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: c251a1539b42da2b4e92c2996457075f3c3be135
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 790146e3014765224f22bd247732c7ac3f062269
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315177"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329448"
 ---
 # <a name="test-generation"></a>Generowanie testu
 
@@ -116,7 +118,7 @@ public partial class ListTest {
 
 IntelliTest udostępnia wiele atrybutów walidacji, które pomagają Klasyfikacja wyjątki z oczekiwanymi wyjątkami i nieoczekiwanymi wyjątkami.
 
-Oczekiwane wyjątki generują negatywne przypadki testowe z odpowiednią adnotacją, taką jak **oczekiwano ("TypeOf*xxx***"), podczas gdy nieoczekiwane wyjątki generują błędne przypadki testowe.
+Oczekiwane wyjątki generują negatywne przypadki testowe z odpowiednią adnotacją, taką jak **oczekiwano ("TypeOf *xxx***"), podczas gdy nieoczekiwane wyjątki generują błędne przypadki testowe.
 
 ```csharp
 [PexMethod, PexAllowedException(typeof(ArgumentNullException))]
@@ -235,7 +237,7 @@ namespace MyTests
 ```
 
 <a name="further-reading"></a>
-## <a name="further-reading"></a>Dalsze informacje
+## <a name="further-reading"></a>Dodatkowe informacje
 
 * [Testuj do powiązania kodu](https://devblogs.microsoft.com/devops/smart-unit-tests-test-to-code-binding-test-case-management/)
 * [Jeden test do reguły dla nich](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/)

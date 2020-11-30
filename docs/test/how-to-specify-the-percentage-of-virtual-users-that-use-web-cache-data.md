@@ -1,5 +1,7 @@
 ---
 title: 'Test obciążenia: Ustawianie wartości procentowej wirtualnego użytkownika przy użyciu danych w pamięci podręcznej sieci Web'
+description: Dowiedz się, jak określić wartość procentową właściwości New Users w okno Właściwości. Edytujesz właściwości scenariusza testu obciążenia w Edytor testu obciążeniowego.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,16 +10,16 @@ ms.assetid: f66d5d43-4121-4487-b27f-d0a0baaf7601
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0a31ea50cdedbeb825d03de38a89200b6e8e5200
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 19568cce3fbd7abd4a74922d2a726ff7c92dd09a
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287405"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329058"
 ---
 # <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Instrukcje: Określanie procentu użytkowników wirtualnych korzystających z danych w pamięci podręcznej sieci Web
 
-Po utworzeniu testu obciążenia przy użyciu **nowego Kreator testu obciążeniowego**można zmienić właściwości scenariuszy, aby spełniały potrzeby testowania i cele przy użyciu **Edytor testu obciążeniowego**. Aby uzyskać pełną listę właściwości scenariusza testu obciążenia i ich opisów, zobacz [właściwości scenariusza testu obciążenia](../test/load-test-scenario-properties.md).
+Po utworzeniu testu obciążenia przy użyciu **nowego Kreator testu obciążeniowego** można zmienić właściwości scenariuszy, aby spełniały potrzeby testowania i cele przy użyciu **Edytor testu obciążeniowego**. Aby uzyskać pełną listę właściwości scenariusza testu obciążenia i ich opisów, zobacz [właściwości scenariusza testu obciążenia](../test/load-test-scenario-properties.md).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 

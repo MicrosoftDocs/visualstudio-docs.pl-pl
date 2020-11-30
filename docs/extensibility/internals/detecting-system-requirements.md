@@ -1,5 +1,7 @@
 ---
 title: Wykrywanie wymagań systemowych | Microsoft Docs
+description: Dowiedz się, jak skonfigurować Instalator Windows firmy Microsoft w celu wykrywania wymagań systemowych, takich jak zainstalowana wersja programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ab254df5d53f379704128d8860b8d7fe5655bae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4befcf3950c41beba2440e6f023983269137b1f
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708735"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329812"
 ---
 # <a name="detect-system-requirements"></a>Wykrywanie wymagań systemowych
 Pakietu VSPackage nie może działać, jeśli program Visual Studio nie jest zainstalowany. W przypadku zarządzania instalacją pakietu VSPackage przy użyciu programu Microsoft Instalator Windows można skonfigurować Instalatora w celu wykrycia, czy program Visual Studio jest zainstalowany. Można ją również skonfigurować do sprawdzania systemu pod kątem innych wymagań, na przykład konkretnej wersji systemu Windows lub określonej ilości pamięci RAM.
@@ -33,14 +35,14 @@ Pakietu VSPackage nie może działać, jeśli program Visual Studio nie jest zai
 Gdy jest zainstalowana nowsza wersja, klucze rejestru dla tej wersji są dodawane oraz dla wcześniejszych wersji. Oznacza to, że jeśli jest zainstalowana wersja Enterprise, klucz **instalacji** jest ustawiony na *1* dla przedsiębiorstwa, a także dla wersji Professional i Community. W związku z tym należy sprawdzić tylko najnowszą wymaganą wersję.
 
 > [!NOTE]
-> W 64-bitowej wersji edytora rejestru, klucze 32-bitowe są wyświetlane w obszarze **HKEY_LOCAL_MACHINE \software\wow6432node \\ **. Klucze programu Visual Studio są objęte **HKEY_LOCAL_MACHINE \software\wow6432node\microsoft\devdiv\vs\servicing \\ **.
+> W 64-bitowej wersji edytora rejestru, w obszarze **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\** są wyświetlane klucze 32-bitowe. Klucze programu Visual Studio są objęte **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\**.
 
 |Produkt|Klucz|
 |-------------|---------|
-|Visual Studio Enterprise 2015|HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\enterprise|
-|Visual Studio Professional 2015|HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\professional|
-|Visual Studio Community 2015|HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\community|
-|Powłoka programu Visual Studio 2015 (Zintegrowana i izolowana)|HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell|
+|Visual Studio Enterprise 2015|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\enterprise|
+|Visual Studio Professional 2015|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\professional|
+|Visual Studio Community 2015|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\community|
+|Powłoka programu Visual Studio 2015 (Zintegrowana i izolowana)|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell|
 
 ## <a name="detect-when-visual-studio-is-running"></a>Wykryj, kiedy program Visual Studio jest uruchomiony
  Nie można prawidłowo zarejestrować pakietu VSPackage, jeśli program Visual Studio jest uruchomiony po zainstalowaniu pakietu VSPackage. Instalator musi wykryć, kiedy program Visual Studio jest uruchomiony, a następnie odmówić zainstalowania programu. Instalator Windows nie umożliwia korzystania z wpisów tabeli w celu włączenia takiego wykrywania. Zamiast tego należy utworzyć akcję niestandardową w następujący sposób: należy użyć `EnumProcesses` funkcji, aby wykryć proces *devenv.exe* , a następnie ustawić właściwość Instalatora, która jest używana w warunku uruchamiania, lub warunkowo wyświetlić okno dialogowe, które wyświetla użytkownikowi komunikat o zamknięciu programu Visual Studio.

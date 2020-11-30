@@ -1,5 +1,7 @@
 ---
 title: Testowanie pokrycia kodu
+description: Dowiedz się, jak używać funkcji pokrycia kodu programu Visual Studio, aby określić, jaka część kodu projektu jest testowana przez kodowane testy.
+ms.custom: SEO-VS-2020
 ms.date: 07/23/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2d1b51661d9fc9a5492d123bdacd6c49d241ed87
-ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
+ms.openlocfilehash: c2c7bcb270184bcc140dbadef63af1315df765dc
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91959778"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330059"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Korzystanie z pokrycia kodu do określania, jaka część kodu jest poddawana testom
 
@@ -57,7 +59,7 @@ Funkcja pokrycia kodu jest dostępna tylko w wersji Visual Studio Enterprise.
 2. Po uruchomieniu testów, aby zobaczyć, które wiersze zostały uruchomione, wybierz ![ ikonę Pokaż kolorowanie pokrycia kodu ](../test/media/codecoverage-showcoloringicon.png) **Pokaż kolorowanie pokrycia kodu** w oknie **wyników pokrycia kodu** . Domyślnie kod, który jest objęty testami, jest wyróżniony w jasnoniebieskim kolorze.
 
    > [!TIP]
-   > Aby zmienić kolory lub użyć pogrubienia, wybierz opcje **Narzędzia**  >  **Options**  >  **Environment**  >  **czcionki i kolory**środowiska  >  **Pokaż ustawienia dla: Edytor tekstu**. W obszarze **Wyświetl elementy**Dostosuj ustawienia dla elementów "pokrycie", na przykład **nienaruszony obszar pokrycia**.
+   > Aby zmienić kolory lub użyć pogrubienia, wybierz opcje **Narzędzia**  >  **Options**  >  **Environment**  >  **czcionki i kolory** środowiska  >  **Pokaż ustawienia dla: Edytor tekstu**. W obszarze **Wyświetl elementy** Dostosuj ustawienia dla elementów "pokrycie", na przykład **nienaruszony obszar pokrycia**.
    >
    > ![Czcionki i kolory pokrycia kodu](media/vs-2019/coverage-fonts-and-colors.png)
 
@@ -124,7 +126,7 @@ Można chcieć wykluczyć określone elementy w kodzie z oceny pokrycia, jeśli 
 > [!TIP]
 > Wyłączenie klasy nie wyklucza jej klas pochodnych.
 
-Na przykład:
+Przykład:
 
 ```csharp
 using System.Diagnostics.CodeAnalysis;

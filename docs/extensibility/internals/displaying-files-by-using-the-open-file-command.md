@@ -1,5 +1,7 @@
 ---
 title: Wyświetlanie plików przy użyciu polecenia Otwórz plik | Microsoft Docs
+description: Dowiedz się, w jaki sposób zintegrowane środowisko programistyczne (IDE) programu Visual Studio obsługuje polecenie Otwórz plik w menu plik, aby wyświetlić pliki.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc18442c55b6989c4d8668e1425fdd62a2d4b1b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a932a9b56a63069e010cb2b945de25564c2d135
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708598"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328343"
 ---
 # <a name="display-files-by-using-the-open-file-command"></a>Wyświetlanie plików przy użyciu polecenia Otwórz plik
 Poniższe kroki opisują, jak środowisko IDE obsługuje polecenie **Otwórz plik** , które jest dostępne w menu **plik** w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . W tym kroku opisano również sposób, w jaki projekty powinny odpowiadać na wywołania pochodzące z tego polecenia.

@@ -1,5 +1,7 @@
 ---
 title: Powiększ Wykresy wyników testu obciążenia
+description: Dowiedz się, jak sprawdzać dane wygenerowane podczas przebiegu testu obciążenia przy użyciu pasków powiększenia do powiększania i przewijania do regionu grafu.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 f1_keywords:
@@ -11,12 +13,12 @@ ms.assetid: 729b4c30-4bc3-4698-91b3-17a676897443
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 836e4f30e2c84bf0093366f4cc38a2cb7f58b545
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 172b777111027b4492420185b53086f55ee4084b
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287028"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328668"
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Instrukcje: powiększanie obszaru wykresu w wynikach testu obciążenia
 
@@ -73,7 +75,7 @@ Gdy jest wyświetlanych wiele wykresów, można je synchronizować tak, aby wyś
 
 ### <a name="to-synchronize-zooming-and-scrolling"></a>Aby synchronizować powiększanie i przewijanie
 
-1. W **analizatorze testu obciążenia**wybierz kolejno opcje **Synchronizuj poziomy powiększenia**.
+1. W **analizatorze testu obciążenia** wybierz kolejno opcje **Synchronizuj poziomy powiększenia**.
 
      Po wybraniu przycisku **Synchronizuj kontrolki powiększenia poziomego** , powiększanie i przewijanie skali czasu dla pojedynczego wykresu powoduje również powiększenie i przewinięcie skali czasu dla innych wykresów.
 

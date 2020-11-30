@@ -1,5 +1,7 @@
 ---
 title: Live Unit Testing
+description: Dowiedz się więcej na temat Live Unit Testing podczas opracowywania aplikacji, w tym obsługiwanych platform i konfiguracji Live Unit Testing.
+ms.custom: SEO-VS-2020
 ms.date: 04/07/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ author: mikejo5000
 ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1084b79fceda34cceed51ae8d4a5a84d7ebfb016
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 82ed41514109887d32f38faf4f965c923864ae32
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249899"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329357"
 ---
 # <a name="how-to-configure-and-use-live-unit-testing"></a>Jak skonfigurować i używać Live Unit Testing
 
@@ -79,7 +81,7 @@ Konfigurowalne opcje obejmują:
 
 ## <a name="start-pause-and-stop"></a>Uruchamianie, wstrzymywanie i zatrzymywanie
 
-Aby włączyć Live Unit Testing, wybierz pozycję **Testuj**  >  **Live Unit Testing**  >  **Rozpocznij** od menu programu Visual Studio najwyższego poziomu. Gdy Live Unit Testing jest włączona, opcje dostępne w menu **Live Unit Testing** zmieniają się z jednego elementu, **zaczynają**się, aby **wstrzymywać** i **zatrzymywać**:
+Aby włączyć Live Unit Testing, wybierz pozycję **Testuj**  >  **Live Unit Testing**  >  **Rozpocznij** od menu programu Visual Studio najwyższego poziomu. Gdy Live Unit Testing jest włączona, opcje dostępne w menu **Live Unit Testing** zmieniają się z jednego elementu, **zaczynają** się, aby **wstrzymywać** i **zatrzymywać**:
 
 - **Wstrzymuje** tymczasowo wstrzymywanie Live Unit Testing.
 
@@ -157,7 +159,7 @@ Istnieją pewne różnice między Live Unit Testing automatycznie uruchamiać i 
 **Live Unit Testing**, podobnie jak w **Eksploratorze testów**, udostępnia interfejs, który umożliwia uruchamianie i debugowanie testów oraz analizowanie wyników testów. Po włączeniu Live Unit Testing stan testów jednostkowych w **Eksploratorze testów** zostaje natychmiast zaktualizowany. Nie musisz jawnie uruchamiać testów jednostkowych. Gdy Live Unit Testing nie jest włączona lub zatrzymana, **Live Unit Testing** wyświetla stan testów jednostkowych przy ostatnim uruchomieniu testu. Po ponownym uruchomieniu Live Unit Testing wymagana jest zmiana kodu źródłowego, aby ponownie uruchomić testy.
 
 > [!TIP]
-> Rozpocznij Live Unit Testing, wybierając pozycję **test**  >  **Live Unit Testing**  >  **Rozpocznij** od menu programu Visual Studio najwyższego poziomu. Okno **Live Unit Testing** można również otworzyć, korzystając z okna **Wyświetl**  >  **inne**  >  **okno Live Unit Testing**systemu Windows.
+> Rozpocznij Live Unit Testing, wybierając pozycję **test**  >  **Live Unit Testing**  >  **Rozpocznij** od menu programu Visual Studio najwyższego poziomu. Okno **Live Unit Testing** można również otworzyć, korzystając z okna **Wyświetl**  >  **inne**  >  **okno Live Unit Testing** systemu Windows.
 
 W oknie **Live Unit Testing** można zauważyć, że niektóre testy są wyblakłe. Na przykład po zatrzymaniu i ponownym uruchomieniu Live Unit Testing okno **Live Unit Testing** zanika wszystkie testy, jak pokazano na poniższej ilustracji. Wynikowe wyniki testów wskazują, że test nie był częścią najnowszego przebiegu testu jednostkowego na żywo. Testy są uruchamiane tylko wtedy, gdy zostanie wykryta zmiana lub zależności testu. W przypadku braku zmian nie jest to konieczne do uruchomienia testu. W takim przypadku szary wynik testu nadal jest "aktualny", mimo że nie był częścią ostatniego uruchomienia.
 
@@ -177,7 +179,7 @@ Istnieją pewne różnice między Live Unit Testing automatycznie uruchamiać i 
 Jeśli rozwiązanie ma 10 lub więcej projektów, program Visual Studio wyświetli następujące okno dialogowe:
 
 - Rozpocznij Live Unit Testing i nie ma żadnych utrwalonych danych
-- Wybierz **Tools**  >  **Opcje**narzędzi  >  **Live Unit Testing**  >  **Usuń utrwalone dane**
+- Wybierz **Tools**  >  **Opcje** narzędzi  >  **Live Unit Testing**  >  **Usuń utrwalone dane**
 
 ![Okno dialogowe Live Unit Testing dla dużych projektów](media/lut-large-project.png)
 
@@ -198,8 +200,8 @@ Aby wybrać poszczególne projekty w testach jednostkowych, wykonaj następując
 
 Można użyć okna edytora kodu, aby dołączyć lub wykluczyć poszczególne metody testowe. Kliknij prawym przyciskiem myszy podpis metody testowej w oknie Edytor kodu, a następnie wybierz jedną z następujących opcji:
 
-- **Live Unit Testing**  >  **Uwzględnij \<selected method> **
-- **Live Unit Testing**  >  **Wyklucz \<selected method> **
+- **Live Unit Testing**  >  **Uwzględnij \<selected method>**
+- **Live Unit Testing**  >  **Wyklucz \<selected method>**
 - **Live Unit Testing**  >  **Wyklucz wszystkie \<selected method> oprócz**
 
 ### <a name="exclude-tests-programmatically"></a>Programowe wykluczanie testów

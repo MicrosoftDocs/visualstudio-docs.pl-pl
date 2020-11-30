@@ -1,5 +1,7 @@
 ---
 title: Zarządzanie kontrolerami testów i agentami testowymi
+description: Dowiedz się, jak zarządzać kontrolerami testów i agentami testowymi po zainstalowaniu i skonfigurowaniu ich po raz pierwszy.
+ms.custom: SEO-VS-2020
 ms.date: 09/18/2018
 ms.topic: how-to
 author: mikejo5000
@@ -7,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78bd0143ee2584bcabb5e8ed4946818ee2590789
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8d9a416dc64a9d49d14e367a04023f067c7b595c
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286703"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329643"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Zarządzanie kontrolerami testów i agentami testowymi
 
@@ -45,7 +47,7 @@ Możesz chcieć dodać agenta testowego do innego kontrolera testów lub może b
 
 2. Dostępne są dwie opcje dotyczące sposobu uruchamiania agenta testowego:
 
-   - **Usługa**: Jeśli nie musisz uruchamiać testów automatycznych, które współdziałają z pulpitem, takich jak kodowane testy interfejsu użytkownika, lub Utwórz nagrania wideo podczas przebiegu testu, w obszarze **Uruchom agenta testowego jako**wybierz pozycję **Usługa**. Agent testowy zostanie uruchomiony jako usługa. Wybierz pozycję **Next** (Dalej).
+   - **Usługa**: Jeśli nie musisz uruchamiać testów automatycznych, które współdziałają z pulpitem, takich jak kodowane testy interfejsu użytkownika, lub Utwórz nagrania wideo podczas przebiegu testu, w obszarze **Uruchom agenta testowego jako** wybierz pozycję **Usługa**. Agent testowy zostanie uruchomiony jako usługa. Wybierz pozycję **Next** (Dalej).
 
       Teraz możesz wprowadzić szczegółowe informacje o użytkowniku, gdy agent testowy uruchamia się jako usługa.
 

@@ -1,5 +1,7 @@
 ---
 title: Dynamiczne wykonywanie symboliczne | Narzędzie testowe dla deweloperów Microsoft IntelliTest
+description: Dowiedz się, jak IntelliTest generuje dane wejściowe dla sparametryzowanych testów jednostkowych przez analizowanie warunków gałęzi w programie.
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e5a3248d3f081bcab08c08110d305f0aa6235817
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 771fd167a2dc9fce8278ca53f730872a9f170eb7
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315203"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329913"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Generowanie danych wejściowych przy użyciu dynamicznego wykonywania symbolicznego
 
@@ -59,7 +61,7 @@ W dalszej części analizy, jak bardziej osiągalne metody są odnajdywane, moż
 
 ## <a name="integers-and-floats"></a>Wartości całkowite i zmiennoprzecinkowe
 
-Funkcja IntelliTest [Constraint](#constraint-solver) określa testowe wartości wejściowe typów pierwotnych, takich jak **Byte**, **int**, **float**i others, aby wyzwolić różne ścieżki wykonywania dla testu i testowanego programu.
+Funkcja IntelliTest [Constraint](#constraint-solver) określa testowe wartości wejściowe typów pierwotnych, takich jak **Byte**, **int**, **float** i others, aby wyzwolić różne ścieżki wykonywania dla testu i testowanego programu.
 
 ## <a name="objects"></a>Obiekty
 
@@ -79,7 +81,7 @@ Jeśli typ nie jest widoczny lub pola nie są [widoczne](#visibility), IntelliTe
 
 ## <a name="visibility"></a>Widoczność
 
-Platforma .NET ma rozbudowany model widoczności: typy, metody, pola i inne elementy członkowskie mogą być **prywatne**, **publiczne**, **wewnętrzne**i inne.
+Platforma .NET ma rozbudowany model widoczności: typy, metody, pola i inne elementy członkowskie mogą być **prywatne**, **publiczne**, **wewnętrzne** i inne.
 
 Gdy IntelliTest generuje testy, podejmie próbę wykonania tylko akcji (takich jak konstruktory wywoływania, metody i pola ustawień), które są dozwolone w odniesieniu do reguł widoczności .NET z poziomu kontekstu wygenerowanych testów.
 
@@ -133,6 +135,6 @@ Klasa statyczna [PexChoose](static-helper-classes.md#pexchoose) może służyć 
 
 Opublikuj swoje pomysły i sugestie funkcji w [społeczności deweloperów](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
 
-## <a name="further-reading"></a>Dalsze informacje
+## <a name="further-reading"></a>Dodatkowe informacje
 
 * [Jak to działa?](https://devblogs.microsoft.com/devops/smart-unit-tests-a-mental-model/)

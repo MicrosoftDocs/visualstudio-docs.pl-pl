@@ -1,5 +1,7 @@
 ---
 title: Rozwiązywanie problemów z kontrolerami testów i agentami testowymi
+description: Poznaj typowe problemy, które można napotkać podczas pracy z kontrolerami testów i agentami testowymi w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 10/20/2016
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.assetid: 77329348-3a5d-43de-b6cb-90f93296a081
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 51d7e15ec71eec7134dfc49b3515385970e593a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e86811739df2d59e3de7980cfa346da68cc0eb43
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565958"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330150"
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>Strategie rozwiązywania problemów z kontrolerami testów i agentami testowymi w testach obciążenia
 

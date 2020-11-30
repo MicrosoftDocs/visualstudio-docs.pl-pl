@@ -1,5 +1,7 @@
 ---
 title: Limity czasu dla kontrolerów testów i agentów testowych
+description: Dowiedz się, jak zmienić wartości limitu czasu dla kontrolera testów i agenta testowego, edytując skojarzone pliki konfiguracji XML.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.assetid: 777d0db5-0073-458a-a2a3-58b1c1f24c60
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7b06dc7d363cefd568a6e1432582744f486fa222
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9dc661999eb12bb679aa3622f0f14adc3ffc661a
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287288"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330007"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Instrukcje: Określanie okresów limitu czasu dla kontrolerów testów i agentów testowych
 

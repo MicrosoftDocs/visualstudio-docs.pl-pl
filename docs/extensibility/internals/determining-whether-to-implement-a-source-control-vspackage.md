@@ -1,5 +1,6 @@
 ---
 title: Kiedy zaimplementować pakietu VSPackage kontroli źródła
+description: Dowiedz się więcej na temat możliwości dodatków plug-in kontroli źródła i pakietów VSPackage kontroli źródła, które są dostępne do rozszerzania rozwiązań kontroli źródła programu Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16f96191115a509e07b5263f1d10d53ea3b2cc9c
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: c7b6c0e786f13ff526a1b71861c040cb165bc9e4
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037045"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329825"
 ---
 # <a name="determine-whether-to-implement-a-source-control-vspackage"></a>Określanie, czy zaimplementować pakietu VSPackage kontroli źródła
 
@@ -30,7 +31,7 @@ Ta sekcja zawiera szczegółowe informacje na temat wyboru wtyczek kontroli źr�
 
  Jeśli chcesz zaimplementować rozwiązanie kontroli źródła, które zapewnia bogaty model kontroli źródła, który nie jest odpowiednio przechwytywany przy użyciu wtyczki kontroli źródła, możesz rozważyć pakiet kontroli źródła jako ścieżkę integracji. Ma to zastosowanie szczególnie w przypadku, gdy zastąpisz pakiet adaptera kontroli źródła (który komunikuje się z wtyczkami kontroli źródła i udostępnia podstawowy interfejs użytkownika kontroli źródła) własnym, aby umożliwić obsługę zdarzeń kontroli źródła w sposób niestandardowy. Jeśli masz już zadowalający interfejs użytkownika kontroli źródła i chcesz zachować to środowisko w programie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , opcja pakiet kontroli źródła umożliwia wykonywanie tych czynności. Pakiet kontroli źródła nie jest ogólny i został zaprojektowany wyłącznie do użytku z [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.
 
- Jeśli chcesz zaimplementować rozwiązanie kontroli źródła, które zapewnia elastyczność i bogatszą kontrolę nad logiką i interfejsem użytkownika kontroli źródła, możesz preferować trasę integracji pakietu kontroli źródła. Można:
+ Jeśli chcesz zaimplementować rozwiązanie kontroli źródła, które zapewnia elastyczność i bogatszą kontrolę nad logiką i interfejsem użytkownika kontroli źródła, możesz preferować trasę integracji pakietu kontroli źródła. Oto co możesz zrobić:
 
 1. Zarejestruj własne pakietu VSPackage kontroli źródła (zobacz [rejestracja i wybór](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)).
 
@@ -40,6 +41,6 @@ Ta sekcja zawiera szczegółowe informacje na temat wyboru wtyczek kontroli źr�
 
 4. Obsługa zdarzeń związanych z edycją zapytań i zapisywaniem zapytań (zobacz [zapytanie Edycja zapytania Save](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Tworzenie wtyczki kontroli źródła](../../extensibility/internals/creating-a-source-control-plug-in.md)

@@ -1,5 +1,6 @@
 ---
 title: Określ częstotliwość próbkowania dla ustawienia przebiegu testu obciążenia
+description: Dowiedz się, jak edytować częstotliwość próbkowania dla wartości ustawienia uruchamiania w okno Właściwości przy użyciu Edytor testu obciążeniowego.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -9,20 +10,20 @@ ms.assetid: 51cbe7d6-5dfd-4842-bca3-f7f8a665dc84
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 522ddebaf17a6e1c447c15732e8a60a9c4e7f5da
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: c21e38671a43755c55a3f0c37c5b8ab40ae11530
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810591"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329007"
 ---
 # <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>Instrukcje: Określanie współczynnika próbkowania dla ustawienia przebiegu testu obciążenia
 
-Po utworzeniu testu obciążenia z **nowym Kreator testu obciążeniowego**można użyć **Edytor testu obciążeniowego** , aby zmienić właściwości, aby spełniały potrzeby testowania i cele.
+Po utworzeniu testu obciążenia z **nowym Kreator testu obciążeniowego** można użyć **Edytor testu obciążeniowego** , aby zmienić właściwości, aby spełniały potrzeby testowania i cele.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-Za pomocą **Edytor testu obciążeniowego**można edytować wartość właściwości **częstotliwość próbkowania** ustawienia przebiegu w oknie **Właściwości** . Aby uzyskać pełną listę właściwości parametrów uruchomieniowych i ich opisów, zobacz [właściwości ustawień przebiegu testu obciążenia](../test/load-test-run-settings-properties.md).
+Za pomocą **Edytor testu obciążeniowego** można edytować wartość właściwości **częstotliwość próbkowania** ustawienia przebiegu w oknie **Właściwości** . Aby uzyskać pełną listę właściwości parametrów uruchomieniowych i ich opisów, zobacz [właściwości ustawień przebiegu testu obciążenia](../test/load-test-run-settings-properties.md).
 
 Wybierz odpowiednią wartość dla właściwości **częstotliwość próbkowania** dla ustawienia przebiegu testu obciążenia na podstawie długości testu obciążenia. Mniejsza częstotliwość próbkowania, taka jak domyślna wartość pięć sekund, wymaga więcej miejsca w bazie danych wyników testu obciążenia. W przypadku dłuższych testów obciążenia zwiększenie szybkości próbkowania zmniejsza ilość zbieranych danych. Aby uzyskać więcej informacji, zobacz [How to: Określanie współczynnika próbkowania dla ustawienia przebiegu testu obciążenia](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
 

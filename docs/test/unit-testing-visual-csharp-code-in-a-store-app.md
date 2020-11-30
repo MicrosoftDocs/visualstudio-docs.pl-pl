@@ -1,5 +1,7 @@
 ---
 title: Testowanie jednostkowe kodu Visual C#
+description: Dowiedz się, jak utworzyć testy jednostkowe dla klasy C# w aplikacji platformy UWP. W tym artykule przedstawiono Programowanie oparte na testach.
+ms.custom: SEO-VS-2020
 ms.date: 09/27/2019
 ms.topic: conceptual
 ms.author: mikejo
@@ -7,12 +9,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 31fbbfaa5d16dd51776f592b89a7846936b3013f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 410d5dfefa5980bceabff99d66067987b390a615
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590868"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330085"
 ---
 # <a name="unit-test-c-code"></a>Test jednostkowy kodu w języku C#
 
@@ -30,7 +32,7 @@ W tym artykule przedstawiono *Programowanie oparte na testach*. W tym podejściu
 
 3. Nazwij projekt **matematyczny**.
 
-4. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy rozwiązanie i wybierz polecenie **Dodaj**  >  **Nowy projekt**.
+4. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy rozwiązanie i wybierz polecenie **Dodaj**  >  **Nowy projekt**.
 
 5. Wyszukaj i wybierz szablon projektu **aplikacja testów jednostkowych (uniwersalna systemu Windows)** .
 
@@ -66,7 +68,7 @@ W tym artykule przedstawiono *Programowanie oparte na testach*. W tym podejściu
 
 ## <a name="add-the-rooter-class-to-the-maths-project"></a>Dodawanie klasy Rooter do projektu Maths
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt **matematyczny** , a następnie wybierz polecenie **Dodaj**  >  **klasę**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt **matematyczny** , a następnie wybierz polecenie **Dodaj**  >  **klasę**.
 
 2. Nazwij plik klasy *Rooter.cs*.
 
@@ -96,7 +98,7 @@ W tym artykule przedstawiono *Programowanie oparte na testach*. W tym podejściu
 
 1. Dodaj odwołanie z projektu RooterTests do aplikacji Maths.
 
-    1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt **RooterTests** , a następnie wybierz polecenie **Dodaj**  >  **odwołanie**.
+    1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt **RooterTests** , a następnie wybierz polecenie **Dodaj**  >  **odwołanie**.
 
     2. W oknie dialogowym **Dodawanie odwołania — RooterTests** rozwiń węzeł **rozwiązanie** i wybierz pozycję **projekty**. Wybierz projekt **Maths** .
 
@@ -128,11 +130,11 @@ W tym artykule przedstawiono *Programowanie oparte na testach*. W tym podejściu
 
    Nowy test zostanie wyświetlony w **Eksploratorze testów** w węźle **nie uruchomiono testy** .
 
-4. Aby uniknąć "ładunek zawiera co najmniej dwa pliki z tą samą ścieżką docelową", w **Eksplorator rozwiązań**rozwiń węzeł **Właściwości** w projekcie **Maths** , a następnie usuń plik *Default.rd.xml* .
+4. Aby uniknąć "ładunek zawiera co najmniej dwa pliki z tą samą ścieżką docelową", w **Eksplorator rozwiązań** rozwiń węzeł **Właściwości** w projekcie **Maths** , a następnie usuń plik *Default.rd.xml* .
 
 ::: moniker range="vs-2017"
 
-6. W **Eksploratorze testów**wybierz opcję **Uruchom wszystkie**.
+6. W **Eksploratorze testów** wybierz opcję **Uruchom wszystkie**.
 
    Rozwiązanie zostanie skompilowane i testy są uruchamiane i przekazywane.
 
@@ -142,7 +144,7 @@ W tym artykule przedstawiono *Programowanie oparte na testach*. W tym podejściu
 
 ::: moniker range=">=vs-2019"
 
-6. W **Eksploratorze testów**wybierz opcję **Uruchom wszystkie testy**.
+6. W **Eksploratorze testów** wybierz opcję **Uruchom wszystkie testy**.
 
    Rozwiązanie zostanie skompilowane i testy są uruchamiane i przekazywane.
 
@@ -200,13 +202,13 @@ Zostały skonfigurowane projekty testów i aplikacji oraz sprawdzono, że można
 
 ::: moniker range="vs-2017"
 
-4. W **Eksploratorze testów**wybierz opcję **Uruchom wszystkie**.
+4. W **Eksploratorze testów** wybierz opcję **Uruchom wszystkie**.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. W **Eksploratorze testów**wybierz opcję **Uruchom wszystkie testy**.
+4. W **Eksploratorze testów** wybierz opcję **Uruchom wszystkie testy**.
 
 ::: moniker-end
 

@@ -1,5 +1,7 @@
 ---
 title: Pokrycie kodu — wyszukiwanie błędów
+description: Dowiedz się, jak rozwiązywać błędne puste komunikaty wyników, gdy spodziewasz się, że program Visual Studio gromadzi dane dla zestawów natywnych i zarządzanych.
+ms.custom: SEO-VS-2020
 ms.date: 03/31/2020
 ms.topic: troubleshooting
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 39d5d54021e7b8286bd653941d233a73bcf8cfb4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e960e0729e7d13b27d0c4fbda9b3f8eca0ac57c
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80527986"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330124"
 ---
 # <a name="troubleshoot-code-coverage"></a>Rozwiązywanie problemów z pokryciem kodu
 
@@ -61,9 +63,9 @@ Wyjaśnienie &mdash; aparatu pokrycia kodu wymaga, aby każdy zestaw miał swój
 
 Plik *. pdb* musi być wygenerowany z tej samej kompilacji co pliki *. dll* lub *. exe* .
 
-Rozdzielczość upewnij &mdash; się, że ustawienia kompilacji generują plik *. pdb* . Jeśli pliki *. pdb* nie są aktualizowane po skompilowaniu projektu, Otwórz właściwości projektu, wybierz stronę **kompilacja** , wybierz pozycję **Zaawansowane**i sprawdź **informacje debugowania**.
+Rozdzielczość upewnij &mdash; się, że ustawienia kompilacji generują plik *. pdb* . Jeśli pliki *. pdb* nie są aktualizowane po skompilowaniu projektu, Otwórz właściwości projektu, wybierz stronę **kompilacja** , wybierz pozycję **Zaawansowane** i sprawdź **informacje debugowania**.
 
-W przypadku projektów języka C++ upewnij się, że wygenerowane pliki. pdb mają pełne informacje o debugowaniu. Otwórz właściwości projektu i sprawdź, czy **Linker**  >  **Debugging**  >  dla opcji**Wygeneruj informacje debugowania** dla debugowania konsolidatora jest ustawiona wartość **Generuj informacje o debugowaniu zoptymalizowane pod kątem udostępniania i publikowania (/Debug: Full)**.
+W przypadku projektów języka C++ upewnij się, że wygenerowane pliki. pdb mają pełne informacje o debugowaniu. Otwórz właściwości projektu i sprawdź, czy **Linker**  >  **Debugging**  >  dla opcji **Wygeneruj informacje debugowania** dla debugowania konsolidatora jest ustawiona wartość **Generuj informacje o debugowaniu zoptymalizowane pod kątem udostępniania i publikowania (/Debug: Full)**.
 
 Jeśli pliki *. pdb* i *. dll* lub *. exe* znajdują się w różnych miejscach, skopiuj plik *. pdb* do tego samego katalogu. Istnieje również możliwość skonfigurowania aparatu pokrycia kodu do wyszukiwania plików *. pdb* w innej lokalizacji. Aby uzyskać więcej informacji, zobacz [Dostosowywanie analizy pokrycia kodu](../test/customizing-code-coverage-analysis.md).
 

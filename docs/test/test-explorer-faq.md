@@ -1,5 +1,7 @@
 ---
 title: Eksplorator testów — często zadawane pytania
+description: Zapoznaj się z często zadawanymi pytaniami dotyczącymi programu Visual Studio Test Explorer, które obejmują pewne typowe Rozwiązywanie problemów.
+ms.custom: SEO-VS-2020
 ms.date: 06/25/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: 5d0e98c3201d1e0e58ee972ad38c3a49bc9555de
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: ef6c6bf3cedcccd156e7ae9ae02c2e5f70805521
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037032"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330176"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Eksplorator testów programu Visual Studio — często zadawane pytania
 
@@ -31,7 +33,7 @@ ms.locfileid: "90037032"
 Skompiluj projekt, aby uruchomić odnajdywanie oparte na zestawie.
 ::: moniker-end
 ::: moniker range="vs-2017"
-Skompiluj projekt i upewnij się, że odnajdywanie oparte na zestawie jest włączone **Tools** w > **Options** > **test**Options Tools.
+Skompiluj projekt i upewnij się, że odnajdywanie oparte na zestawie jest włączone **Tools** w > **Options** > **test** Options Tools.
 ::: moniker-end
 [Wykrywanie testów w czasie rzeczywistym](https://devblogs.microsoft.com/dotnet/real-time-test-discovery/) jest odnajdywaniem testów opartym na źródle. Nie można wykryć testów, które używają teorie, niestandardowych kart, cech niestandardowych, `#ifdef` instrukcji i innych, ponieważ są one zdefiniowane w czasie wykonywania. Dla tych testów jest wymagana kompilacja. W programie Visual Studio 2017 w wersji 15,6 lub nowszej odnajdywanie oparte na zestawie (tradycyjny program Discovery) działa tylko po kompilacji. To ustawienie oznacza, że funkcja odnajdywania testów w czasie rzeczywistym znajduje tyle testów, ile jest w trakcie edycji, a funkcja odnajdywania oparta na zestawach umożliwia dynamiczne Definiowanie testów, które są wyświetlane po kompilacji. Wykrywanie testów w czasie rzeczywistym zwiększa czas odpowiedzi, ale nadal umożliwia uzyskanie pełnych i precyzyjnych wyników po kompilacji.
 
@@ -69,7 +71,7 @@ Ta funkcja jest nazywana [odnajdywaniem testów w czasie rzeczywistym](https://d
 
 **Jak włączyć dzienniki dla Eksploratora testów?**
 
-Przejdź do **Tools**  >  **opcji**narzędzia  >  **testy** i Znajdź sekcję rejestrowanie.
+Przejdź do **Tools**  >  **opcji** narzędzia  >  **testy** i Znajdź sekcję rejestrowanie.
 
 ## <a name="uwp-test-discovery"></a>Odnajdywanie testów platformy UWP
 
@@ -124,7 +126,7 @@ Zamiast korzystać z rozszerzeń adaptera testowego, projekty są wymagane do ko
 
 **Moje testy platformy UWP nie są już wykonywane w programie Visual Studio 2017 w wersji 15,7 lub nowszej.**
 
-Ostatnie projekty testów platformy UWP określają Właściwość Build platformy testowej, która umożliwia lepszą wydajność identyfikowania aplikacji testowych. Jeśli masz projekt testu platformy UWP, który został zainicjowany przed programem Visual Studio w wersji 15,7, ten błąd może pojawić **Output**się w  >  **testach**wyjściowych:
+Ostatnie projekty testów platformy UWP określają Właściwość Build platformy testowej, która umożliwia lepszą wydajność identyfikowania aplikacji testowych. Jeśli masz projekt testu platformy UWP, który został zainicjowany przed programem Visual Studio w wersji 15,7, ten błąd może pojawić **Output** się w  >  **testach** wyjściowych:
 
 **System. AggregateException: wystąpił co najmniej jeden błąd. ---> system. InvalidOperationException: nie znaleziono następującego TestContainer {} w firmie Microsoft. VisualStudio. TestWindow. Controller. TestContainerProvider \<GetTestContainerAsync> D__61. MoveNext ()**
 
@@ -164,7 +166,7 @@ vsregedit set “C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterpri
 > [!NOTE]
 > Można wyłączyć flagę z tym samym poleceniem, używając wartości 0 zamiast 1 po DWORD.
 ::: moniker-end
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting?displayProperty=fullName>
 - [Tworzenie i uruchamianie testów jednostkowych dla istniejącego kodu](/previous-versions/dd293546(v=vs.110))

@@ -1,5 +1,7 @@
 ---
 title: Parametry niestandardowe | Microsoft Docs
+description: Dowiedz się, jak utworzyć parametry niestandardowe kontrolujące działanie kreatora po rozpoczęciu pracy przez kreatora, modyfikując plik. vsz.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd52a49daa7d57a21d8cb0896f7108efa09e32b2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f2fd2ba746f10094a79f1b37e57ba4ca90ff117b
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708944"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328447"
 ---
 # <a name="custom-parameters"></a>Parametry niestandardowe
 Parametry niestandardowe kontrolują działanie kreatora po rozpoczęciu pracy przez kreatora. Powiązany plik *vsz* zawiera tablicę parametrów zdefiniowanych przez użytkownika, które są pakowane przez zintegrowane środowisko programistyczne (IDE) i przekazaną do kreatora jako tablicę ciągów, gdy Kreator został uruchomiony. Następnie Kreator analizuje tablicę ciągów i używa tych informacji do sterowania rzeczywistą operacją kreatora. W ten sposób Kreator może dostosować funkcje w zależności od zawartości pliku *. vsz* .

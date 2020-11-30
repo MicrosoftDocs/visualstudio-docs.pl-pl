@@ -1,5 +1,7 @@
 ---
 title: Zapisz testy jednostkowe dla bibliotek DLL języka C++
+description: Poznaj kilka sposobów testowania kodu DLL, w zależności od tego, czy biblioteka DLL eksportuje funkcje, które chcesz przetestować.
+ms.custom: SEO-VS-2020
 ms.date: 05/01/2019
 ms.topic: how-to
 ms.author: corob
@@ -7,12 +9,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 3bfbe5fd0147a04d6fc6142fd1d722f8f2304586
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7eb7b7be524e20ca87c70c3f1f771f4f8a01141
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287041"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328629"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Napisz testy jednostkowe dla bibliotek DLL języka C++ w programie Visual Studio
 
@@ -42,7 +44,7 @@ Przejdź do procedury, [Aby dodać testy jednostkowe w tym samym projekcie](#sam
 
 - Jeśli testy muszą używać elementów członkowskich, które nie są eksportowane przez projekt DLL, a badany projekt jest skompilowany jako Biblioteka dynamiczna, Rozważ przekonwertowanie go na bibliotekę statyczną.
 
-  1. W **Eksplorator rozwiązań**w menu skrótów testowanego projektu wybierz polecenie **Właściwości**. Zostanie otwarte okno **Właściwości** projektu.
+  1. W **Eksplorator rozwiązań** w menu skrótów testowanego projektu wybierz polecenie **Właściwości**. Zostanie otwarte okno **Właściwości** projektu.
 
   2. Wybierz pozycję **Właściwości konfiguracji**  >  **Ogólne**.
 
@@ -68,7 +70,7 @@ Przejdź do procedury, [Aby dodać testy jednostkowe w tym samym projekcie](#sam
 
       ::: moniker-end
 
-  1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt testowy, a następnie wybierz polecenie **Dodaj**  >  **odwołanie**.
+  1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt testowy, a następnie wybierz polecenie **Dodaj**  >  **odwołanie**.
 
   1. Wybierz pozycję **projekty**, a następnie projekt do przetestowania.
 
@@ -104,7 +106,7 @@ Przejdź do procedury, [Aby dodać testy jednostkowe w tym samym projekcie](#sam
 
   3. Wybierz **Właściwości konfiguracji**  >  **konsolidator**  >  **wprowadzanie**  >  **dodatkowych zależności**.
 
-       Wybierz pozycję **Edytuj**i Dodaj nazwy plików **obj** lub **lib** . Nie używaj pełnych nazw ścieżek.
+       Wybierz pozycję **Edytuj** i Dodaj nazwy plików **obj** lub **lib** . Nie używaj pełnych nazw ścieżek.
 
   4. Wybierz **Właściwości konfiguracji**  >  **konsolidator**  >  **Ogólne**  >  **Dodatkowe katalogi biblioteki**.
 
@@ -120,7 +122,7 @@ Przejdź do procedury, [Aby dodać testy jednostkowe w tym samym projekcie](#sam
 
 1. Zmodyfikuj właściwości projektu kodu produktu w celu uwzględnienia nagłówków i plików bibliotek, które są wymagane do testowania jednostkowego.
 
-   1. W **Eksplorator rozwiązań**w menu skrótów testowanego projektu wybierz polecenie **Właściwości**. Zostanie otwarte okno **Właściwości** projektu.
+   1. W **Eksplorator rozwiązań** w menu skrótów testowanego projektu wybierz polecenie **Właściwości**. Zostanie otwarte okno **Właściwości** projektu.
 
    2. Wybierz pozycję **Właściwości konfiguracji**  >  **Katalogi VC + +**.
 
@@ -133,7 +135,7 @@ Przejdź do procedury, [Aby dodać testy jednostkowe w tym samym projekcie](#sam
 
 2. Dodaj plik testu jednostkowego języka C++:
 
-   - W **Eksplorator rozwiązań**w menu skrótów projektu wybierz pozycję **Dodaj**  >  **nowy element**  >  **test jednostkowy C++**.
+   - W **Eksplorator rozwiązań** w menu skrótów projektu wybierz pozycję **Dodaj**  >  **nowy element**  >  **test jednostkowy C++**.
 
    Przejdź do pozycji [Napisz testy jednostkowe](#addTests).
 
@@ -141,7 +143,7 @@ Przejdź do procedury, [Aby dodać testy jednostkowe w tym samym projekcie](#sam
 
 1. W każdym pliku kodu testu jednostkowego Dodaj `#include` instrukcję do nagłówków w badanym projekcie.
 
-2. Dodaj klasy testowe i metody do plików kodu testu jednostkowego. Na przykład:
+2. Dodaj klasy testowe i metody do plików kodu testu jednostkowego. Przykład:
 
     ```cpp
     #include "stdafx.h"
@@ -163,11 +165,11 @@ Przejdź do procedury, [Aby dodać testy jednostkowe w tym samym projekcie](#sam
 
 ## <a name="run-the-tests"></a>Uruchamianie testów
 
-1. W menu **test** wybierz polecenie **Windows**  >  **Eksplorator testów**systemu Windows.
+1. W menu **test** wybierz polecenie **Windows**  >  **Eksplorator testów** systemu Windows.
 
 1. Jeśli wszystkie testy nie są widoczne w oknie, Skompiluj projekt testowy, klikając prawym przyciskiem myszy jego węzeł w **Eksplorator rozwiązań** i wybierając opcję **Kompiluj** lub **Kompiluj ponownie**.
 
-1. W **Eksploratorze testów**wybierz opcję **Uruchom wszystkie**lub wybierz konkretne testy, które chcesz uruchomić. Kliknij prawym przyciskiem myszy Test, aby wyświetlić inne opcje, w tym uruchamianie go w trybie debugowania z włączonymi punktami przerwania.
+1. W **Eksploratorze testów** wybierz opcję **Uruchom wszystkie** lub wybierz konkretne testy, które chcesz uruchomić. Kliknij prawym przyciskiem myszy Test, aby wyświetlić inne opcje, w tym uruchamianie go w trybie debugowania z włączonymi punktami przerwania.
 
 ## <a name="see-also"></a>Zobacz też
 

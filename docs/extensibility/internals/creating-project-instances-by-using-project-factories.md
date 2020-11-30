@@ -1,5 +1,7 @@
 ---
 title: Tworzenie wystąpień projektu przy użyciu fabryk projektów | Microsoft Docs
+description: Dowiedz się, jak utworzyć wystąpienia klasy projektu za pomocą fabryk projektów w zintegrowanym środowisku programistycznym (IDE) programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31ba5dd11af18f8a723b2271544eff2bd292e2e8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 59ad41bda80337fd0adc65d4792adbbbb1cf38f1
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709061"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328603"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>Tworzenie wystąpień projektu przy użyciu fabryk projektów
 Typy projektów w programie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] wykorzystują *fabrykę projektu* do tworzenia wystąpień obiektów projektu. Fabryka projektu jest podobna do standardowej fabryki klas dla współtworzących obiektów COM. Jednak obiekty projektu nie można współistnieć. mogą być tworzone tylko przy użyciu fabryki projektu.
@@ -38,7 +40,7 @@ Typy projektów w programie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs
 
    Typy projektów są skojarzone z określonym rozszerzeniem nazwy pliku. Gdy użytkownik próbuje otworzyć istniejący plik projektu lub próbuje utworzyć nowy projekt przez sklonowanie szablonu, IDE używa rozszerzenia na pliku, aby określić odpowiedni identyfikator GUID projektu.
 
-   Gdy tylko środowisko IDE określi, czy należy utworzyć nowy projekt, czy otworzyć istniejący projekt określonego typu, IDE używa informacji w rejestrze systemowym w obszarze **[HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\8.0\Projects]** , aby znaleźć, który pakietu VSPackage implementuje wymaganą fabrykę projektu. IDE ładuje ten pakietu VSPackage. W <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> metodzie pakietu VSPackage musi zarejestrować swoją fabrykę projektu przy użyciu IDE, wywołując <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes.RegisterProjectType%2A> metodę.
+   Gdy tylko środowisko IDE określi, czy należy utworzyć nowy projekt, czy otworzyć istniejący projekt określonego typu, IDE używa informacji w rejestrze systemowym w obszarze **[HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\8.0\Projects]** , aby sprawdzić, które pakietu VSPackage implementuje wymaganą fabrykę projektu. IDE ładuje ten pakietu VSPackage. W <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> metodzie pakietu VSPackage musi zarejestrować swoją fabrykę projektu przy użyciu IDE, wywołując <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes.RegisterProjectType%2A> metodę.
 
    Podstawową metodą `IVsProjectFactory` interfejsu jest <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> , która powinna obsługiwać dwa scenariusze: Otwieranie istniejącego projektu i tworzenie nowego projektu. Większość projektów przechowuje swój stan projektu w pliku projektu. Zwykle nowe projekty są tworzone przez utworzenie kopii pliku szablonu przekazaną do `CreateProject` metody, a następnie otwarcie kopii. Istniejące projekty są tworzone przez bezpośrednie otwarcie pliku projektu przesłanego do `CreateProject` metody. W `CreateProject` razie potrzeby Metoda może wyświetlać dodatkowe funkcje interfejsu użytkownika.
 

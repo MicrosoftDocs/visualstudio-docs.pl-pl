@@ -1,5 +1,7 @@
 ---
 title: Korzystanie z legendy wykresu podczas przeprowadzania analizy testów obciążenia
+description: Dowiedz się więcej na temat widoku Grafs analizatora testu obciążenia, który zawiera panel legendy, w którym są wyświetlane informacje o licznikach wydajności dla wybranego grafu.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: 0f6ba8e4-1343-419c-8a9f-240cf50efed7
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1455c67c3cb6d8dc99aeab91a7bfa63cce009c51
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25200b691e0bebf2e3bd1c6252efb371ed9caeb2
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590803"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330072"
 ---
 # <a name="use-the-graphs-view-legend-to-analyze-load-tests"></a>Korzystanie z legendy widoku wykresy do analizowania testów obciążenia
 
@@ -33,7 +35,7 @@ Następujące informacje są zawarte wewnątrz legendy:
     > [!NOTE]
     > Można wyłączyć automatyczne dopasowywanie wartości zakresu, blokując zakres do określonej wartości. Gdy zakres jest zablokowany, wszystkie wartości przekraczające zakres, są wyświetlane jako maksymalna wartość, określona w górnej części wykresu. Użyj okna dialogowego **Opcje wykresu** , aby zablokować zakres pod określoną wartością.
 
-- **Licznik:** Cztery kolumny o nazwie **Counter**, **instance**, **Category**i **Computer** jednoznacznie identyfikują licznik wydajności.
+- **Licznik:** Cztery kolumny o nazwie **Counter**, **instance**, **Category** i **Computer** jednoznacznie identyfikują licznik wydajności.
 
 - **Kolor:** Kolumna **Color** pokazuje kolor i styl linii wykreślonego wiersza dla licznika wydajności. Za pomocą okna dialogowego **Opcje wykresu** Zmień kolor lub styl linii licznika wydajności wykresu. Okno dialogowe **Opcje wykresu** jest dostępne z menu skrótów legendy.
 
@@ -46,7 +48,7 @@ Następujące informacje są zawarte wewnątrz legendy:
 
 Zaznaczenie elementu w legendzie, wykonuje następujące czynności:
 
-- Umożliwia usunięcie elementu z legendy i grafu. Kliknij prawym przyciskiem myszy element i wybierz polecenie **Usuń**lub naciśnij klawisz **delete** .
+- Umożliwia usunięcie elementu z legendy i grafu. Kliknij prawym przyciskiem myszy element i wybierz polecenie **Usuń** lub naciśnij klawisz **delete** .
 
 - Podświetla kreślony wiersz na wykresie.
 

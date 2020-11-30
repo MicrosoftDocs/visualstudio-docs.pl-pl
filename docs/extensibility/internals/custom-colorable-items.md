@@ -1,5 +1,7 @@
 ---
 title: Elementy niestandardowe z możliwością kolorowania | Microsoft Docs
+description: Dowiedz się, jak utworzyć niestandardowe elementy do wykonania w ramach usługi językowej, zastępując elementy w oknie dialogowym czcionki i kolory, takie jak słowa kluczowe i komentarze.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: feecd9e8f8178045f66999b775e2d0792f50b288
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 648a8e45b5b472ccc1a37cd69e2043f0bb5b9aa3
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708993"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328538"
 ---
 # <a name="custom-colorable-items"></a>Elementy niestandardowe z możliwością kolorowania
 Możesz przesłonić listę typów do kolorowania, na przykład słowa kluczowe i komentarze, implementując niestandardowe elementy do użycia w ramach usługi językowej.

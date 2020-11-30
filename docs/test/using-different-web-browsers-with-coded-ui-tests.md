@@ -1,5 +1,7 @@
 ---
 title: Korzystanie z różnych przeglądarek sieci Web do przeprowadzania kodowanych testów interfejsu użytkownika
+description: Dowiedz się, jak dostosować test i odtworzyć go przy użyciu różnych przeglądarek dla aplikacji sieci Web.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 507da254d108ddc31f2b1c9fdf7f393d42934f2a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6baddaeac3fdea3d27f60722e728df209bfd768d
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289329"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330033"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Korzystanie z różnych przeglądarek sieci Web z kodowanymi testami interfejsu użytkownika
 
@@ -88,7 +90,7 @@ Aby włączyć debugowanie aplikacji internetowej, należy zastosować następuj
 
     1. W menu **debugowanie** wybierz **wyjątki**.
 
-    2. W przypadku **wyjątków środowiska uruchomieniowego języka wspólnego**Usuń zaznaczenie pola **nieobsługiwane przez użytkownika**.
+    2. W przypadku **wyjątków środowiska uruchomieniowego języka wspólnego** Usuń zaznaczenie pola **nieobsługiwane przez użytkownika**.
 
 Jeśli nie widzisz opcji zmiany `BrowserWindow.CurrentBrowser` w kodowanym teście interfejsu użytkownika, być może używasz wersji programu Visual Studio, która nie obsługuje kodowanych testów interfejsu użytkownika przy użyciu różnych przeglądarek sieci Web. Aby użyć takich kodowanych testów interfejsu użytkownika, należy użyć wersji Visual Studio Enterprise.
 

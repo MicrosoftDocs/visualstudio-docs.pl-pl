@@ -1,5 +1,7 @@
 ---
 title: Testowanie jednostkowe
+description: Dowiedz się więcej o narzędziach testów jednostkowych, których można użyć w celu zapewnienia deweloperom i testerom szybkiego sposobu wyszukiwania błędów logiki w kodzie.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: be0f8f7eeb116a251477ce57027a2176119c2d17
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 8f48a50b39c04df9abab7c11b3b85cc0d2670025
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099313"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330137"
 ---
 # <a name="unit-test-your-code"></a>Testowanie jednostkowe kodu
 
@@ -56,6 +58,6 @@ Skorzystaj z poniższych artykułów, aby zrozumieć i utworzyć testy jednostko
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting> Opisuje przestrzeń nazw UnitTesting, która udostępnia atrybuty, wyjątki, potwierdzenia i inne klasy, które obsługują testy jednostkowe.
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Web> Opisuje przestrzeń nazw UnitTesting. Web, która rozszerza przestrzeń nazw UnitTesting przez zapewnienie wsparcia dla ASP.NET i testów jednostkowych usług sieci Web.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Poprawianie jakości kodu](../test/improve-code-quality.md)

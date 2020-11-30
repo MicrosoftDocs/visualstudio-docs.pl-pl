@@ -1,5 +1,7 @@
 ---
 title: Projektowanie tabeli poleceń XML (. Vsct) | Microsoft Docs
+description: Dowiedz się, jak zaprojektować plik tabeli poleceń XML (. vsct), który opisuje układ i wygląd elementów poleceń, w tym przycisków, pól kombi, menu i pasków narzędzi.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fcd29aee98139bb151c87590b256df6b8370abff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a1ccab1eddf38e2f93cb00f1f5fdea6ce09f2f05
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708752"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328434"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>Projektowanie plików tabeli poleceń XML (. vsct)
 Plik tabeli poleceń XML (*. vsct*) opisuje układ i wygląd elementów poleceń dla pakietu VSPackage. Elementy poleceń obejmują przyciski, pola kombi, menu, paski narzędzi i grupy elementów poleceń. W tym artykule opisano pliki tabeli poleceń XML, ich wpływ na elementy poleceń i menu oraz sposób ich tworzenia.

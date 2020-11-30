@@ -1,5 +1,7 @@
 ---
 title: Tworzenie nadrzędnych folderów kontenerów dla rozwiązań | Microsoft Docs
+description: Dowiedz się, jak używać interfejsu API wtyczki kontroli źródła w wersji 1,2, aby określić jedną lokalizację docelową kontroli źródła dla wszystkich projektów sieci Web w ramach rozwiązania.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e5481e20a12fc05ccba97eef55173e5ce9b30d6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e65da2b50984b0259079a1693dd31d400e1e12e3
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709102"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329942"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>Tworzenie folderów nadrzędnych kontenera dla rozwiązań
 W interfejsie API wtyczki kontroli źródła w wersji 1,2 użytkownik może określić pojedyncze miejsce docelowe kontroli źródła dla wszystkich projektów sieci Web w ramach rozwiązania. Ten pojedynczy katalog główny nosi nazwę nieujednolicony katalog główny (SUR).
@@ -62,7 +64,7 @@ W programie zaleca się, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] domyślnie działa w wersji 1,1, jeśli wtyczka kontroli źródła nie zwraca `SCC_CAP_CREATESUBPROJECT` i `SCC_CAP_GETPARENTPROJECT` flaguje możliwości. Ponadto użytkownicy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] mogą zdecydować się na powracanie do zachowania wersji 1,1 przez ustawienie wartości następującego klucza na *DWORD: 00000001*:
 
- **[HKEY_CURRENT_USER \software\microsoft\visualstudio\8.0\sourcecontrol] DoNotCreateSolutionRootFolderInSourceControl**  =  *DWORD: 00000001*
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] DoNotCreateSolutionRootFolderInSourceControl**  =  *DWORD: 00000001*
 
 ## <a name="see-also"></a>Zobacz też
 - [Co nowego w interfejsie API dodatku plug-in kontroli źródła w wersji 1,2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
