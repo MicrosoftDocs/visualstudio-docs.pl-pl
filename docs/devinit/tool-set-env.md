@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 820cd87f26e4babc7a83d975c3fb480187af564f
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 20f2d142c0e253cf5ad5a7ec5d85974ff5522508
+ms.sourcegitcommit: 593bdd2da62633f8d1f1eef70d0238e2682f3e02
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442285"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96356835"
 ---
 # <a name="set-env"></a>set-env
 
@@ -30,7 +30,7 @@ To narzędzie korzysta z interfejsu API programu .NET Core `Environment.SetEnvir
 |----------------------------------------------|--------|----------|-----------------------------------------------------------------------------|
 | **komentarz**                                 | ciąg | Nie       | Opcjonalna Właściwość komentarzy. Nie używany.                                       |
 | [**klawiatur**](#input)                          | ciąg | Nie       | Dane wejściowe narzędzia. Aby uzyskać szczegółowe informacje, zobacz poniższe [dane wejściowe](#input) .               |
-| [**additionalOptions**](#additional-options) | ciąg | Nie       | Nie używany. Aby uzyskać szczegółowe informacje, zobacz [dodatkowe opcje](#additional-options) poniżej.  |
+| [**additionalOptions**](#additional-options) | ciąg | Nie       | Aby uzyskać szczegółowe informacje, zobacz [dodatkowe opcje](#additional-options) poniżej.            |
 
 ### <a name="input"></a>Dane wejściowe
 
@@ -47,7 +47,7 @@ To narzędzie korzysta z interfejsu API programu .NET Core `Environment.SetEnvir
 
 ### <a name="additional-options"></a>Opcje dodatkowe
 
-Nie używany.
+ `--user`, `--process` lub `--machine` mogą być dołączone do określenia miejsca, w którym należy ustawić zmienne środowiskowe. Domyślnie jest on przeznaczony dla użytkownika. Aby uzyskać więcej informacji o możliwych celach dla zmiennych środowiskowych, zobacz [EnvironmentVariableTarget](https://docs.microsoft.com/dotnet/api/system.environmentvariabletarget).
 
 ### <a name="default-behavior"></a>Zachowanie domyślne
 
@@ -68,6 +68,20 @@ Poniżej znajdują się przykłady sposobu uruchamiania programu `set-env` przy 
     {
       "tool": "set-env",
       "input": "foo=bar",
+    }
+  ]
+}
+```
+
+#### <a name="devinitjson-that-will-set-an-environment-variable-foo-to-value-bar-stored-in-the-environment-block-associated-with-the-current-process"></a>.devinit.jsna to ustawienie zmiennej środowiskowej, `foo` do wartości, `bar` przechowywanej w bloku środowiska skojarzonego z bieżącym procesem:
+```json
+{
+  "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+  "run": [
+    {
+      "tool": "set-env",
+      "input": "foo=bar",
+      "additionalOptions": "--process",
     }
   ]
 }
