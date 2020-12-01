@@ -1,5 +1,7 @@
 ---
 title: Omówienie | Narzędzie do testowania Microsoft IntelliTest dla deweloperów
+description: Dowiedz się, jak narzędzie IntelliTest korzysta z zautomatyzowanego i przejrzystego podejścia do testowania oraz jak narzędzie IntelliTest może generować kandydujący pakiet testów dla kodu platformy .NET.
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: f986d6727433dc01732232754b2d65d0d7c4ef8f
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 6317f7a1f81e6eb6916c10b2f8ce0df91f57a7de
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038286"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329955"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Omówienie narzędzia Microsoft IntelliTest
 
