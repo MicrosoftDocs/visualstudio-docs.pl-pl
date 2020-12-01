@@ -1,7 +1,7 @@
 ---
-title: Włącz lub zainstaluj analizatory .NET
+title: Włącz lub zainstaluj analizatory .NET pierwszej firmy
 ms.date: 08/03/2018
-description: Dowiedz się, jak włączyć analizatory .NET z zestawu SDK platformy .NET lub zainstalować te analizatory jako pakiet NuGet.
+description: Dowiedz się, jak włączyć analizatory .NET pierwszej firmy z zestawu SDK platformy .NET lub zainstalować te analizatory jako pakiet NuGet.
 ms.custom: SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,18 +11,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a14d89caba498a07c2447f9df1109e4da9f6a466
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 60eb4828d4c8450376178c2fdccf7d4c0f63d989
+ms.sourcegitcommit: 208bd1edebfe6dec5d3bb92c63b5c1e093677e35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96112238"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96440377"
 ---
-# <a name="enable-or-install-net-analyzers"></a>Włącz lub zainstaluj analizatory .NET
+# <a name="enable-or-install-first-party-net-analyzers"></a>Włącz lub zainstaluj analizatory .NET pierwszej firmy
 
 ## <a name="overview"></a>Omówienie
 
-Analizatory platformy kompilatora .NET (Roslyn) sprawdzają kod C# lub Visual Basic pod kątem problemów dotyczących jakości i stylu. Można włączać lub instalować te analizatory w jeden z następujących sposobów:
+Analizatory platformy kompilatora .NET (Roslyn) sprawdzają kod C# lub Visual Basic pod kątem problemów dotyczących jakości i stylu. Analizatory .NET pierwszej jednostki można włączać lub instalować w jeden z następujących sposobów:
 
 - **Włącz z zestawu .NET SDK**: począwszy od programu Visual Studio 2019 16,8 i .NET 5,0, te analizatory są [dołączone do zestawu .NET SDK](/dotnet/fundamentals/code-analysis/overview). Analiza jest domyślnie włączona dla projektów przeznaczonych dla platformy .NET 5,0 lub nowszej. Możesz włączyć analizę kodu dla projektów przeznaczonych dla wcześniejszych wersji .NET, ustawiając `EnableNETAnalyzers` Właściwość na `true` . Możesz również wyłączyć analizę kodu dla projektu, ustawiając wartość `EnableNETAnalyzers` na `false` .
 
@@ -35,5 +35,5 @@ Analizatory platformy kompilatora .NET (Roslyn) sprawdzają kod C# lub Visual Ba
 
 - [Przegląd analizatorów kodu w programie Visual Studio](roslyn-analyzers-overview.md)
 - [Korzystanie z analizatorów kodu w programie Visual Studio](use-roslyn-analyzers.md)
-- [Migrowanie ze starszej analizy do analizatorów .NET](migrate-from-legacy-analysis-to-net-analyzers.md)
-- [Migrowanie z analizatorów FxCop do analizatorów .NET](migrate-from-fxcop-analyzers-to-net-analyzers.md)
+- [Przechodzenie z analiz w starszej wersji na analizatory .NET](migrate-from-legacy-analysis-to-net-analyzers.md)
+- [Przechodzenie z analizatorów FxCop na analizatory .NET](migrate-from-fxcop-analyzers-to-net-analyzers.md)
