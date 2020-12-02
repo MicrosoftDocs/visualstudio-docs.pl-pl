@@ -1,5 +1,7 @@
 ---
 title: Krok 9. Przeglądanie, komentowanie i testowanie kodu
+description: Dowiedz się, jak dodać komentarz do kodu i przetestować aplikację.
+ms.custom: SEO-VS-2020
 ms.date: 08/30/2019
 ms.assetid: f26f79ba-c91b-4164-b87f-679a1b231c09
 ms.topic: tutorial
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b31532bf6c26512e471ee787dc7219620e6db62
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8f5be5d8c59d9ef402bd929bd386a7bdaaa9912e
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579748"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479306"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Krok 9. Przeglądanie, komentowanie i testowanie kodu
 
@@ -34,7 +36,7 @@ Właśnie skompilowano coś, co działa, a chociaż nie zostało to jeszcze zrob
 
 - W większości przypadków Metoda wykonuje niewielką liczbę rzeczy w określonej kolejności, jak w przypadku, gdy `showButton_Click()` Metoda (lub `ShowButton_Click()` ) pokazuje okno dialogowe, a następnie ładuje obraz.
 
-- Metoda składa się z *instrukcji*kodu lub wierszy kodu. Należy traktować metodę jako sposób łączenia instrukcji kodu.
+- Metoda składa się z *instrukcji* kodu lub wierszy kodu. Należy traktować metodę jako sposób łączenia instrukcji kodu.
 
 - Gdy metoda jest wykonywana lub *wywoływana*, instrukcje w metodzie są wykonywane w kolejności, jeden po drugim, zaczynając od pierwszego.
 
@@ -65,24 +67,24 @@ Właśnie skompilowano coś, co działa, a chociaż nie zostało to jeszcze zrob
     > [!TIP]
     > Środowisko IDE zostało skompilowane, aby ułatwić pisanie kodu, a *fragmenty kodu* są jednym ze sposobów. Fragment kodu jest skrótem, który jest rozwinięty w niewielkim bloku.
     >
-    >  Zobaczysz wszystkie dostępne fragmenty kodu. Na pasku menu wybierz kolejno pozycje **Narzędzia**  >  **fragmenty kodu Menedżer**. W języku C# `if` fragment kodu jest w **języku Visual C#** . W przypadku Visual Basic `if` fragmenty **kodu**znajdują się w wyrażeniach  >  **warunkowych i pętli**. Za pomocą tego menedżera można przeglądać istniejące fragmenty kodu lub dodawać własne fragmenty kodu.
+    >  Zobaczysz wszystkie dostępne fragmenty kodu. Na pasku menu wybierz kolejno pozycje **Narzędzia**  >  **fragmenty kodu Menedżer**. W języku C# `if` fragment kodu jest w **języku Visual C#** . W przypadku Visual Basic `if` fragmenty **kodu** znajdują się w wyrażeniach  >  **warunkowych i pętli**. Za pomocą tego menedżera można przeglądać istniejące fragmenty kodu lub dodawać własne fragmenty kodu.
     >
     >  Aby uaktywnić fragment kodu przy wpisywaniu tekstu, wpisz go i wybierz klawisz **Tab** . Wiele fragmentów kodu pojawia się w oknie **IntelliSense** , co oznacza, że wybierasz klawisz **Tab** dwa razy: najpierw, aby wybrać wstawkę z okna **IntelliSense** , a następnie wskazać, że IDE używa tego fragmentu kodu. (Technologia IntelliSense obsługuje `if` fragment kodu, ale nie `ifelse` fragment kodu).
 
 1. Przed uruchomieniem aplikacji Zapisz aplikację, wybierając przycisk **Zapisz wszystkie** paski narzędzi, który powinien wyglądać podobnie do poniższego zrzutu ekranu.
 
      ![Przycisk Zapisz wszystkie paski narzędzi](../ide/media/express_iconsaveall.png)<br>
-*Przycisk* ***Zapisz wszystko***
+**_Zapisz wszystko_* _ _button *
 
      Alternatywnie, aby zapisać aplikację, wybierz pozycję **plik**  >  **Zapisz wszystko** na pasku menu (lub naciśnij **klawisze CTRL** + **SHIFT** + **S**). Najlepszym rozwiązaniem jest wczesne i częste zapisywanie.
 
      Po uruchomieniu program powinien wyglądać jak na poniższej ilustracji.
 
-     ![Przeglądarka obrazów](../ide/media/express_pictureviewerdonerun.png)<br>***Przeglądarka obrazów***
+     ![Przeglądarka obrazów](../ide/media/express_pictureviewerdonerun.png)<br>**_Przeglądarka obrazów_* _
 
 ## <a name="to-test-your-app"></a>Aby przetestować aplikację
 
-1. Wybierz klawisz **F5** lub wybierz przycisk paska narzędzi **Rozpocznij debugowanie** .
+1. Wybierz klawisz _ *F5** lub wybierz przycisk paska narzędzi **Rozpocznij debugowanie** .
 
 1. Wybierz przycisk **Pokaż obraz** , aby uruchomić właśnie napisany kod. Najpierw aplikacja otwiera okno dialogowe **Otwórz plik** . Sprawdź, czy Twoje filtry są wyświetlane na liście rozwijanej **Pliki typu** u dołu okna dialogowego. Następnie przejdź do obrazu i otwórz go. Zwykle można znaleźć przykładowe obrazy dostarczane z systemem operacyjnym Windows w folderze *Moje dokumenty* w folderze *Moje obrazy Pictures\Sample* .
 

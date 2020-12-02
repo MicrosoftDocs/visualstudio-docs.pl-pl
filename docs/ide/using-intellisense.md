@@ -1,5 +1,7 @@
 ---
 title: Informacje o parametrach, Lista członków i szybkie informacje
+description: 'Dowiedz się, jak korzystać z tych funkcji IntelliSense: listy członków, informacji o parametrach, szybkich informacji i kompletnego wyrazu.'
+ms.custom: SEO-VS-2020
 ms.date: 05/25/2018
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbd85ece0cf7b84230e37c74c27e746df7a52439
-ms.sourcegitcommit: f78960320798e2c6b33145cee77a2221f031603c
+ms.openlocfilehash: c60372d7268dd76bf9bbd967678490998ffa76c3
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94878286"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479020"
 ---
 # <a name="intellisense-in-visual-studio"></a>Technologia IntelliSense w programie Visual Studio
 
@@ -107,7 +109,7 @@ MessageBox( hWnd, "String literal|")
 
 **Opcje automatyczne są wyłączone.** Domyślnie technologia IntelliSense działa automatycznie, ale można ją wyłączyć. Nawet jeśli automatyczne uzupełnianie instrukcji jest wyłączone, można wywołać funkcję mechanizmu IntelliSense.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md)
 - [C# IntelliSense](../ide/visual-csharp-intellisense.md)

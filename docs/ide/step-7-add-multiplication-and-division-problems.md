@@ -1,5 +1,7 @@
 ---
 title: Krok 7. Dodawanie zadań z mnożeniem i dzieleniem
+description: Dowiedz się, jak dodać problemy mnożenia i dzielenia.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92a1744b68ad043dcee21dcb5995fbd1908bd81b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 84dc1df79392aeefe331746c52d2fbe8dbb91e8e
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579780"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479501"
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>Krok 7. Dodawanie zadań z mnożeniem i dzieleniem
 
@@ -58,7 +60,7 @@ W siódmej części tego samouczka dodasz problemy mnożenia i dzielenia, ale na
      Aby ukończyć quiz, uczestnikom quiz musi odpowiedzieć na cztery problemy, jak pokazano na poniższej ilustracji.
 
      ![Quiz matematyczny z czterema problemami](../ide/media/express_finishedquiz.png)<br/>
-***Quiz matematyczny*** *z czterema problemami*
+***Quiz matematyczny** _ _with cztery problemy *
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 

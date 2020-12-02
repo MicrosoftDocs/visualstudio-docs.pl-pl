@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: tworzenie fragmentu kodu'
+description: 'Dowiedz się, jak utworzyć fragment kodu w trzech krokach: Utwórz plik XML, Wypełnij odpowiednie elementy i Dodaj do niego swój kod.'
+ms.custom: SEO-VS-2020
 ms.date: 03/31/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -17,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 46744decddcc2d50fd05ea86cc6ebfad9d210031
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 61b7f227344f00fe277d4bf062f83bd3c1d79fd5
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800505"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479644"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Przewodnik: tworzenie fragmentu kodu
 
@@ -52,9 +54,9 @@ Poniższy kod XML jest podstawowym szablonem fragmentu kodu:
 
 1. Utwórz nowy plik XML w programie Visual Studio i Dodaj opisany powyżej szablon.
 
-2. Wypełnij tytuł fragmentu w elemencie **title** . Użyj nazwy **głównej kwadratu**tytułu.
+2. Wypełnij tytuł fragmentu w elemencie **title** . Użyj nazwy **głównej kwadratu** tytułu.
 
-3. Wypełnij język fragmentu kodu w atrybucie **Language** elementu **Code** . W języku C# Użyj **CSharp**, aby uzyskać Visual Basic, użyj **języka vb**i języka C++, użyj **CPP**.
+3. Wypełnij język fragmentu kodu w atrybucie **Language** elementu **Code** . W języku C# Użyj **CSharp**, aby uzyskać Visual Basic, użyj **języka vb** i języka C++, użyj **CPP**.
 
    > [!TIP]
    > Aby wyświetlić wszystkie dostępne wartości języka, przejrzyj [sekcję atrybuty elementu kodu](code-snippets-schema-reference.md#attributes) na stronie [Dokumentacja schematu fragmenty kodu](code-snippets-schema-reference.md) .

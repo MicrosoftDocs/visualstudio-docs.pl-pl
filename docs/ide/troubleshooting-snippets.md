@@ -1,5 +1,7 @@
 ---
 title: Rozwiązywanie problemów z fragmentami kodu
+description: Dowiedz się, jak rozwiązywać problemy ze fragmentami kodu IntelliSense, które zwykle są spowodowane przez złą zawartość pliku fragmentu lub uszkodzonego pliku fragmentu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a699c6a158b5a0751824c7634ddd637467da50d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4012298bdc4edf0c174576c739e67781bfffdade
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75588697"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479189"
 ---
 # <a name="troubleshoot-snippets"></a>Rozwiązywanie problemów z fragmentami kodu
 

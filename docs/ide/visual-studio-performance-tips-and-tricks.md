@@ -1,5 +1,7 @@
 ---
 title: Porady dotyczące poprawy wydajności
+description: Dowiedz się, jak zoptymalizować pewne funkcje programu Visual Studio, które mogą nie być używane, aby zwiększyć wydajność.
+ms.custom: SEO-VS-2020
 ms.date: 08/13/2020
 ms.topic: conceptual
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a70199f6a46fc5fd78c9b40dc5c68ed1e1c85a56
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 6f4c36987e198be576d843b984be14ddea824919
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189865"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479618"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Porady i wskazówki dotyczące wydajności programu Visual Studio
 

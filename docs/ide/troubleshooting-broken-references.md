@@ -1,5 +1,7 @@
 ---
 title: Rozwiązywanie problemów z przerwanymi odwołaniami
+description: Dowiedz się, jak rozwiązywać problemy z uszkodzonymi odwołaniami, które mogą być spowodowane przez coś innego niż aplikacje, aby znaleźć składnik, do którego się odwołuje.
+ms.custom: SEO-VS-2020
 ms.date: 03/21/2017
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5116d2487ca9f53c460e1cae8f362f3ff1bcdf8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 627724410ac9e0829faeb23cb5b0eef01b153293
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565919"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479176"
 ---
 # <a name="troubleshoot-broken-references"></a>Rozwiązywanie problemów z przerwanymi odwołaniami
 
@@ -52,7 +54,7 @@ Aby rozwiązać ten problem, można usunąć uszkodzone odwołanie, a następnie
 
 ### <a name="to-fix-a-broken-project-reference-by-correcting-the-reference-path"></a>Aby naprawić uszkodzone odwołanie do projektu poprzez poprawienie ścieżki odwołania
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł projektu, a następnie kliknij polecenie **Właściwości**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł projektu, a następnie kliknij polecenie **Właściwości**.
 
    Zostanie wyświetlony **Projektant projektu** .
 

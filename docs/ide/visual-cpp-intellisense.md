@@ -1,5 +1,7 @@
 ---
 title: Funkcja IntelliSense języka C++
+description: Dowiedz się więcej na temat funkcji IntelliSense, których można użyć podczas kodowania projektu języka C++.
+ms.custom: SEO-VS-2020
 ms.date: 10/08/2018
 ms.topic: conceptual
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c0d1be12f733a858bf223fb1dce6a091c0dc6c50
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 49d555b2e509237e34375e1b85a35c57a6db4f3b
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594217"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96478890"
 ---
 # <a name="visual-c-intellisense-features"></a>Visual C++ funkcje IntelliSense
 
@@ -50,7 +52,7 @@ Po wpisaniu otwierającego nawiasu klamrowego wywołania funkcji lub nawiasu ką
 
 ## <a name="quick-info"></a>Szybkie informacje
 
-Po umieszczeniu wskaźnika myszy nad zmienną wyświetlane jest małe okno, w którym są wyświetlane informacje o typie i nagłówku, w którym jest zdefiniowany typ. Umieść kursor nad wywołaniem funkcji, aby zobaczyć podpis funkcji. Szybkie informacje można wyłączyć w oknie dialogowym **Opcje** , w obszarze **Edytor tekstu**  >  **C/C++**  >  **Zaawansowane**  >  **Informacje o szybkim**użyciu.
+Po umieszczeniu wskaźnika myszy nad zmienną wyświetlane jest małe okno, w którym są wyświetlane informacje o typie i nagłówku, w którym jest zdefiniowany typ. Umieść kursor nad wywołaniem funkcji, aby zobaczyć podpis funkcji. Szybkie informacje można wyłączyć w oknie dialogowym **Opcje** , w obszarze **Edytor tekstu**  >  **C/C++**  >  **Zaawansowane**  >  **Informacje o szybkim** użyciu.
 
 ![Visual C&#43;&#43; sekcji szybkich informacji](../ide/media/vs2015_cpp_quickinfo.png)
 
@@ -62,7 +64,7 @@ Zygzaky w elemencie programu (zmienna, słowo kluczowe, nawiasy, nazwa typu itd.
 
 ### <a name="code-colorization-and-fonts"></a>Kolorowanie i czcionki kodu
 
-Domyślne kolory i czcionki można zmienić w oknie dialogowym **Opcje** , w obszarze **Environment**  >  **czcionki i kolory**środowiska. Czcionki dla wielu okien interfejsu użytkownika można zmienić w tym miejscu, a nie tylko w edytorze. Ustawienia specyficzne dla języka C++ zaczynają się od "C++"; Pozostałe ustawienia dotyczą wszystkich języków.
+Domyślne kolory i czcionki można zmienić w oknie dialogowym **Opcje** , w obszarze **Environment**  >  **czcionki i kolory** środowiska. Czcionki dla wielu okien interfejsu użytkownika można zmienić w tym miejscu, a nie tylko w edytorze. Ustawienia specyficzne dla języka C++ zaczynają się od "C++"; Pozostałe ustawienia dotyczą wszystkich języków.
 
 ## <a name="cross-platform-intellisense"></a>Technologia IntelliSense dla wielu platform
 

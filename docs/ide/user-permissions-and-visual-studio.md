@@ -1,5 +1,6 @@
 ---
 title: Uruchom jako administrator
+description: Dowiedz się, jak uruchomić program Visual Studio jako administrator.
 ms.date: 01/06/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 927031b4755644aeac553367a4f8a08faa0c0992
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d69d916b8b99d6f5b5b3421ae4aea073e24fa67
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75718639"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96478955"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Uprawnienia użytkownika i program Visual Studio
 
@@ -55,7 +56,7 @@ Jeśli musisz uruchomić program Visual Studio jako administrator, wykonaj nast�
 
 1. Otwórz menu **Start** i przewiń do programu Visual Studio 2017.
 
-1. Z menu kontekstowego kliknij prawym przyciskiem myszy lub w **programie Visual Studio 2017**wybierz polecenie **więcej** > **Uruchom jako administrator**.
+1. Z menu kontekstowego kliknij prawym przyciskiem myszy lub w **programie Visual Studio 2017** wybierz polecenie **więcej** > **Uruchom jako administrator**.
 
    Po uruchomieniu programu Visual Studio **(Administrator)** pojawia się po nazwie produktu na pasku tytułu.
 
@@ -65,7 +66,7 @@ Jeśli musisz uruchomić program Visual Studio jako administrator, wykonaj nast�
 
 1. Otwórz menu **Start** i przewiń do programu Visual Studio 2019.
 
-1. Z menu kontekstowego kliknij prawym przyciskiem myszy lub w **programie Visual Studio 2019**wybierz polecenie **więcej** > **Uruchom jako administrator**.
+1. Z menu kontekstowego kliknij prawym przyciskiem myszy lub w **programie Visual Studio 2019** wybierz polecenie **więcej** > **Uruchom jako administrator**.
 
    Po uruchomieniu programu Visual Studio **(Administrator)** pojawia się po nazwie produktu na pasku tytułu.
 

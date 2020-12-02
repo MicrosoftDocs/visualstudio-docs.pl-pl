@@ -1,5 +1,7 @@
 ---
 title: Konfigurowanie projektu w języku C++ pod kątem funkcji IntelliSense
+description: Dowiedz się, jak ręcznie skonfigurować projekt języka C++, aby zapewnić prawidłowe działanie funkcji IntelliSense przy użyciu środowiska IDE programu Visual Studio, aby ułatwić identyfikowanie i rozwiązywanie problemów z technologią IntelliSense.
+ms.custom: SEO-VS-2020
 ms.date: 10/08/2018
 ms.topic: conceptual
 author: corob-msft
@@ -7,12 +9,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 610f3d92d86e227973be9c481adaf830d3d16737
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 34be73203f5c1d01e4674e7892e0f89d4aae4816
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509890"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96478799"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Konfigurowanie projektu w języku C++ pod kątem funkcji IntelliSense
 
@@ -120,6 +122,6 @@ W przypadku ustawienia zmiennej środowiskowej środowiskową TRACEDESIGNTIME na
 
 Aby dowiedzieć się więcej na temat zmiennej środowiskowej środowiskową TRACEDESIGNTIME, zobacz [Roslyn](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Diagnosing-Project-System-Build-Errors.md) i [Common Project System](https://github.com/dotnet/project-system/blob/master/docs/design-time-builds.md). Informacje zawarte w tych artykułach dotyczą projektów języka C++.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Visual C++ IntelliSense](visual-cpp-intellisense.md)

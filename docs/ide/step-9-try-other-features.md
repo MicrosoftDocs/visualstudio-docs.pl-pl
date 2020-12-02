@@ -1,5 +1,7 @@
 ---
 title: Krok 9. Wypróbowywanie innych funkcji
+description: Dowiedz się, jak zmienić ikony i kolory, dodać czasomierz gier, dodać dźwięki i zwiększyć swoją tablicę.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32ac2f1977bb0b8b391651ed7ed459b9dc560330
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4f462d70fda9a212bf848477952ecc7132a60265
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579731"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479254"
 ---
 # <a name="step-9-try-other-features"></a>Krok 9. Wypróbowywanie innych funkcji
 Aby dowiedzieć się więcej, spróbuj zmienić ikony i kolory, dodać czasomierz gry i dźwięki. Aby gra była bardziej wymagająca, spróbuj zwiększyć planszę i dostosować czasomierz.

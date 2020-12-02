@@ -1,5 +1,7 @@
 ---
 title: Krok 7. Dodawanie składników okna dialogowego do formularza
+description: Dowiedz się, jak dodać <xref:System.Windows.Forms.OpenFileDialog> składnik okna dialogowego i <xref:System.Windows.Forms.ColorDialog> składnik okna dialogowego do formularza.
+ms.custom: SEO-VS-2020
 ms.date: 08/30/2019
 ms.assetid: ea98c55e-6213-4893-ba7b-f19d7f119527
 ms.topic: tutorial
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9697bf6cf84c2a74daac2017b4f63d52a7019b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 37cbd2ca1f0207eaf2a41f6a08248bcedcfbe5bb
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579278"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479475"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Krok 7. Dodawanie składników okna dialogowego do formularza
 
@@ -32,7 +34,7 @@ Składnik jest jak kontrolka na kilka sposobów. Za pomocą **przybornika** doda
 
 1. Aby dodać składnik o nazwie **openFileDialog1** do formularza, kliknij dwukrotnie pozycję **OpenFileDialog**. Aby dodać składnik o nazwie **colorDialog1** do formularza, kliknij dwukrotnie pozycję **ColorDialog** w **przyborniku**. (W następnym kroku samouczka używany jest ten krok). Powinien zostać wyświetlony obszar u dołu **Projektant formularzy systemu Windows** (poniżej formularza **przeglądarki obrazów** ), który ma ikonę dla każdego z dwóch składników okna dialogowego, które zostały dodane, jak pokazano na poniższej ilustracji.
 
-     ![Składniki okna dialogowego](../ide/media/express_dialogsadded.png)<br>*Składniki* ***okna dialogowego***
+     ![Składniki okna dialogowego](../ide/media/express_dialogsadded.png)<br>**_Okno dialogowe_* _ _components *
 
 1. Wybierz ikonę **openFileDialog1** w obszarze u dołu **Projektant formularzy systemu Windows**. Ustaw dwie właściwości:
 

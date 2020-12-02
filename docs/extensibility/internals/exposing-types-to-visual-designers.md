@@ -1,5 +1,7 @@
 ---
 title: Uwidacznianie typów dla projektantów wizualizacji | Microsoft Docs
+description: Dowiedz się, jak uwidocznić definicje klas i typów, w tym te w narzędziach niestandardowych, aby program Visual Studio mógł udostępnić je projektantom wizualizacji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 48aa8a729b5cc38d3cee08a7f5ec143d5e84931a
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 43d1e1dca1860faa44d6bb5bc256bb8f0465e8b2
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012533"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479534"
 ---
 # <a name="expose-types-to-visual-designers"></a>Uwidacznianie typów projektantom wizualizacji
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Aby można było wyświetlić projektanta wizualnego, musi mieć dostęp do definicji klas i typów w czasie projektowania. Klasy są ładowane ze wstępnie zdefiniowanego zestawu zestawów, który obejmuje kompletny zestaw zależności bieżącego projektu (odwołania i ich zależności). Może być również konieczne, aby projektanci wizualizacji mogli uzyskiwać dostęp do klas i typów, które są zdefiniowane w plikach generowanych przez narzędzia niestandardowe.
@@ -37,13 +39,13 @@ ms.locfileid: "90012533"
 
 - Wygenerowany kod musi znajdować się w tym samym języku co globalne ustawienie projektu.
 
-     Tymczasowy środowisko PE jest kompilowane niezależnie od tego, co narzędzie niestandardowe raportuje jako żądane rozszerzenie <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A> , pod warunkiem, że **GeneratesDesignTimeSource** jest ustawiony na 1 w rejestrze. Rozszerzenie nie musi być *. vb*, *. cs*lub *. JSL*; może to być dowolne rozszerzenie.
+     Tymczasowy środowisko PE jest kompilowane niezależnie od tego, co narzędzie niestandardowe raportuje jako żądane rozszerzenie <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A> , pod warunkiem, że **GeneratesDesignTimeSource** jest ustawiony na 1 w rejestrze. Rozszerzenie nie musi być *. vb*, *. cs* lub *. JSL*; może to być dowolne rozszerzenie.
 
 - Kod wygenerowany przez narzędzie niestandardowe musi być prawidłowy i musi kompilować się we własnym zakresie przy użyciu tylko zestawu odwołań obecnych w projekcie w momencie <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> zakończenia wykonywania.
 
      Po skompilowaniu tymczasowego środowiska PE jedynym plikiem źródłowym dostarczonym do kompilatora jest dane wyjściowe niestandardowego narzędzia. W związku z tym narzędzie niestandardowe, które używa tymczasowego środowiska PE, musi generować pliki wyjściowe, które mogą być kompilowane niezależnie od innych plików w projekcie.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wprowadzenie do obiektu BuildManager](/previous-versions/8f9kffa8(v=vs.140))
 - [Implementowanie generatorów pojedynczego pliku](../../extensibility/internals/implementing-single-file-generators.md)
 - [Rejestrowanie generatorów pojedynczych plików](../../extensibility/internals/registering-single-file-generators.md)

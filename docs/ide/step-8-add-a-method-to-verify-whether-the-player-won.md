@@ -1,5 +1,7 @@
 ---
 title: Krok 8. Dodawanie metody sprawdzania, czy gracz wygrał
+description: Dowiedz się, jak dodać metodę, aby określić, czy gracz wygrał.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 881fa0d90390a059bea28cb19584381f814396d3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c53afebfd8c39e9c43f82916095d8eeef2ec8b11
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579765"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479293"
 ---
 # <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>Krok 8. Dodawanie metody sprawdzania, czy gracz wygrał
 Utworzyłeś zabawną grę, ale wymaga ona jeszcze jednej rzeczy. Gra powinna zakończyć się, gdy gracz usługi WINS, więc musisz dodać metodę, `CheckForWinner()` Aby sprawdzić, czy odtwarzacz wykupił.
@@ -43,10 +45,10 @@ Utworzyłeś zabawną grę, ale wymaga ona jeszcze jednej rzeczy. Gra powinna za
 3. Zapisz i uruchom program. Zagraj w grę i dopasuj wszystkie ikony. Gdy wygrasz, program wyświetli element **MessageBox** gratulacjami (jak pokazano na poniższym zrzucie ekranu), a następnie zamknie to pole.
 
      ![Gra w dopasowywanie z MessageBox](../ide/media/express_tut4step8.png)<br/>
-***Dopasowywanie gry*** *przy użyciu* ***MessageBox***
+**_Gra w dopasowywanie_* _ _with * ***MessageBox**_
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 
-- Aby przejść do następnego kroku samouczka, zobacz **[krok 9: Wypróbuj inne funkcje](../ide/step-9-try-other-features.md)**.
+- Aby przejść do następnego kroku samouczka, zobacz _ *[krok 9: Wypróbuj inne funkcje](../ide/step-9-try-other-features.md)* *.
 
 - Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 7. Zachowaj widoczne pary](../ide/step-7-keep-pairs-visible.md).
