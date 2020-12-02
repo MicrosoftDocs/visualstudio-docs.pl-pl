@@ -1,5 +1,7 @@
 ---
 title: Czujka — Polecenie
+description: Dowiedz się więcej na temat polecenia Watch i sposobu tworzenia i otwierania określonego wystąpienia okno wyrażeń kontrolnych.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d7c89761dfc12d342747567389e39daeed4a227
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 631c9cf61e6da70b3c7554a1aac0cacc8eef0294
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585655"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480151"
 ---
 # <a name="watch-command"></a>Czujka — Polecenie
 Tworzy i otwiera określone wystąpienie okna **czujka** . Można użyć okna **czujki** do obliczenia wartości zmiennych, wyrażeń i rejestrów, aby edytować te wartości i zapisać wyniki.
@@ -32,7 +34,7 @@ Debug.Watch[index]
 ## <a name="arguments"></a>Argumenty
 
 `index`\
-Wymagany. Numer wystąpienia okna Czujka.
+Wymagane. Numer wystąpienia okna Czujka.
 
 ## <a name="remarks"></a>Uwagi
 
@@ -44,7 +46,7 @@ Wartość `index` musi być liczbą całkowitą. Prawidłowe wartości to 1, 2, 
 >Debug.Watch1
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Okna zmiennych automatycznych i zmiennych lokalnych](../../debugger/autos-and-locals-windows.md)
 - [Ustaw kontrolkę na zmienne przy użyciu okien czujki i QuickWatch w programie Visual Studio](../../debugger/watch-and-quickwatch-windows.md)

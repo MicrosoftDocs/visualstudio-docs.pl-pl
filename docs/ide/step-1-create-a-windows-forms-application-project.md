@@ -1,5 +1,7 @@
 ---
 title: Krok 1. Tworzenie projektu aplikacji Windows Forms
+description: Dowiedz się, jak utworzyć projekt aplikacji Windows Forms dla przeglądarki obrazów.
+ms.custom: SEO-VS-2020
 ms.date: 08/30/2019
 ms.assetid: 16ac2422-e720-4e3a-b511-bc2a54201a86
 ms.topic: tutorial
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d5e34d825d2a4d296a8a394105b412195b4e3fb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76225685a9f68ca6f6cb05f902922f8fa208015d
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579913"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480398"
 ---
 # <a name="step-1-create-a-windows-forms-app-project"></a>Krok 1. Tworzenie projektu aplikacji Windows Forms
 
@@ -27,7 +29,7 @@ Podczas tworzenia przeglądarki obrazów pierwszym krokiem jest utworzenie proje
 
 1. Na pasku menu wybierz pozycję **plik**  >  **Nowy**  >  **projekt**. Okno dialogowe powinno wyglądać podobnie do poniższego zrzutu ekranu.
 
-     ![Okno dialogowe Nowy projekt](../ide/media/newprojectdialogcallouts.png)<br/>***Nowy projekt*** — okno *dialogowe*
+     ![Okno dialogowe Nowy projekt](../ide/media/newprojectdialogcallouts.png)<br/>**_Nowy projekt_* _ _dialog pole *
 
 2. Po lewej stronie okna dialogowego **Nowy projekt** wybierz pozycję **Visual C#** lub **Visual Basic**, a następnie wybierz pozycję **Windows Desktop**.
 
@@ -71,7 +73,7 @@ Program Visual Studio tworzy rozwiązanie dla aplikacji. Rozwiązanie działa ja
 
 ## <a name="about-the-windows-forms-app-project"></a>Informacje o projekcie aplikacji Windows Forms
 
-1. Środowisko deweloperskie zawiera trzy okna: okno główne, **Eksplorator rozwiązań**i okno **Właściwości** .
+1. Środowisko deweloperskie zawiera trzy okna: okno główne, **Eksplorator rozwiązań** i okno **Właściwości** .
 
      Jeśli brakuje któregoś z tych okienek, możesz przywrócić domyślny układ okna. Na pasku menu wybierz kolejno **okna**  >  **Resetuj układ okna**.
 
@@ -105,7 +107,7 @@ Program Visual Studio tworzy rozwiązanie dla aplikacji. Rozwiązanie działa ja
      Alternatywnie wybierz na pasku narzędzi przycisk **Zapisz wszystko** , który zostanie wyświetlony na poniższym obrazie.
 
      ![Przycisk Zapisz wszystkie paski narzędzi](../ide/media/express_iconsaveall.png)<br/>
-     Przycisk ***Zapisz wszystkie*** *paski narzędzi*
+     **_Zapisz wszystko_* _ _toolbar przycisk *
 
      Program Visual Studio automatycznie wypełnia nazwę folderu i nazwę projektu, a następnie zapisuje projekt w folderze projektów.
 

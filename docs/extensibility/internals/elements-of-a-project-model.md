@@ -1,5 +1,7 @@
 ---
 title: Elementy modelu projektu | Microsoft Docs
+description: Dowiedz się więcej o elementach modelu projektu oraz o sposobie, w jaki interfejsy i implementacje wszystkich projektów w programie Visual Studio udostępniają podstawową strukturę.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5cafc167eac28b7560287c6de88ee8c490196007
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: e366b2923d5903f00241db0a6b71017dc25f3dee
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011778"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480047"
 ---
 # <a name="elements-of-a-project-model"></a>Elementy modelu projektu
 Interfejsy i implementacje wszystkich projektów w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] udostępniają podstawową strukturę: model projektu dla typu projektu. W modelu projektu, który jest pakietu VSPackage, tworzysz obiekty, które są zgodne z decyzjami projektowymi i pracują z funkcjami globalnymi dostępnymi przez IDE. Chociaż kontrolujesz sposób utrwalania elementu projektu, na przykład nie kontrolujesz powiadomienia, że plik musi być utrwalony. Gdy użytkownik umieści fokus w otwartym elemencie projektu i wybierze pozycję **Zapisz** w menu **plik** na [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pasku menu, kod typu projektu musi przechwycić polecenie z IDE, zachować plik i wysłać powiadomienie z powrotem do IDE, że plik nie jest już zmieniany.
@@ -40,7 +42,7 @@ Interfejsy i implementacje wszystkich projektów w [!INCLUDE[vsprvs](../../code-
 
   Projekty mogą obsługiwać polecenia i w związku z tym muszą implementować <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejs, aby uczestniczyć w kierowaniu poleceń przez identyfikatory GUID kontekstu poleceń.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Lista kontrolna: tworzenie nowych typów projektów](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Korzystanie z klas projektów HierUtil7 do implementowania typu projektu (C++)](/previous-versions/bb166212(v=vs.100))
 - [Podstawowe składniki modelu projektu](../../extensibility/internals/project-model-core-components.md)

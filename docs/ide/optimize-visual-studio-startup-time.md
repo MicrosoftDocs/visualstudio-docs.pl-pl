@@ -16,12 +16,12 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: a9cc3309e75e23ff325dd08ef9d2cceacb5f5db5
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: c409ad35b3d9c09a5dbe574d00a24d1f2bcb8370
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871499"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479956"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Optymalizuj czas uruchamiania programu Visual Studio
 
@@ -70,7 +70,7 @@ Można zawsze ponownie włączyć rozszerzenie dla przyszłych sesji za pomocą 
 > [!NOTE]
 > Niektóre starsze wersje programu Visual Studio 2017 miały funkcję o nazwie **uproszczone ładowanie rozwiązań**. W bieżących wersjach, duże rozwiązania zawierające kod zarządzany znacznie szybciej niż wcześniej, nawet bez uproszczonego ładowania rozwiązania.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Optymalizowanie wydajności programu Visual Studio](../ide/optimize-visual-studio-performance.md)
 - [Porady i wskazówki dotyczące wydajności programu Visual Studio](../ide/visual-studio-performance-tips-and-tricks.md)

@@ -1,5 +1,7 @@
 ---
 title: Praca z wieloma kontami użytkowników
+description: Dowiedz się, jak dodać wszystkie konta Microsoft do programu Visual Studio, aby uzyskać dostęp do zasobów z dowolnego konta bez konieczności logowania się do niego osobno.
+ms.custom: SEO-VS-2020
 ms.date: 11/16/2020
 ms.topic: conceptual
 author: ornellaalt
@@ -7,12 +9,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe124fc35eabec4b3c48cdf8dfa53ef8f17b0003
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 071c6061417e26b45e5f9e67bc6ac1001bf08530
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671340"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480346"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Praca z wieloma kontami użytkowników
 
@@ -115,7 +117,7 @@ Aby zalogować się za pomocą przepływu kodu urządzenia:
 
 1. W obszarze **Visual Studio** wybierz pozycję **Kontynuuj**.
 
-   ![device-login-page.png](media/work-with-multiple-user-accounts/device-login-page.png)
+   ![Zrzut ekranu przedstawiający stronę logowania do urządzenia z opcją Kontynuuj.](media/work-with-multiple-user-accounts/device-login-page.png)
 
 1. Postępuj zgodnie z monitami, aby wprowadzić poświadczenia konta.
 
@@ -134,7 +136,7 @@ Począwszy od wersji 16,8, można dodać konta usługi GitHub i GitHub dla przed
 Aby uzyskać szczegółowe instrukcje, zobacz temat [współpraca z kontami usługi GitHub w programie Visual Studio](work-with-github-accounts.md).
 ::: moniker-end
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Logowanie do programu Visual Studio](signing-in-to-visual-studio.md)
 - [Zaloguj się do Visual Studio dla komputerów Mac](/visualstudio/mac/signing-in)

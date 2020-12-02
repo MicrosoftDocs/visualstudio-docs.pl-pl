@@ -1,5 +1,7 @@
 ---
 title: Krok 6. Dodawanie zadania z odejmowaniem
+description: Dowiedz się, jak dodać problem odejmowania, a także dowiedzieć się, jak wykonywać zadania.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b6dd2b572074265cca62a45b962c604abf5c849
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8157335e47ec13c66da471f77ddbd2877bcac12d
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579821"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480671"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>Krok 6. Dodawanie zadania z odejmowaniem
 W szóstej części tego samouczka dodasz problem odejmowania i dowiesz się, jak wykonywać następujące zadania:
@@ -60,12 +62,12 @@ W szóstej części tego samouczka dodasz problem odejmowania i dowiesz się, ja
      Można wywołać `Next()` metodę klasy losowej o nazwie "randomer" wcześniej w tym samouczku, na wiele sposobów. Metody, które można wywołać w więcej niż jednym sposobie, są określane jako przeciążone i można użyć funkcji IntelliSense, aby poznać ją. Ponownie Obejrzyj etykietkę narzędzia okna IntelliSense dla `Next()` metody.
 
      ![Etykietka narzędzia okna IntelliSense](../ide/media/express_overloads.png)<br/>
-***IntelliSense*** *Etykietka narzędzia okna* IntelliSense
+**_IntelliSense_* _ _window etykietka narzędzia *
 
      Etykietka narzędzia pokazuje **(+ 2 przeciążenia**), co oznacza, że można wywołać `Next()` metodę na dwa inne sposoby. Przeciążenia zawierają różne liczby lub typy argumentów, dzięki czemu działają nieco inaczej od siebie. Na przykład metoda może przyjmować jeden argument Integer, a jedno z jego przeciążeń może przyjmować liczbę całkowitą i ciąg. Należy wybrać poprawne Przeciążenie w zależności od tego, co ma być wykonywane. Po dodaniu kodu do `StartTheQuiz()` metody w oknie IntelliSense pojawiają się dodatkowe informacje, które wkrótce wprowadzisz `randomizer.Next(` . Aby przechodzić przez przeciążenia, wybierz klawisze **Strzałka w górę** i **Strzałka w dół** , jak pokazano na poniższej ilustracji:
 
      ![Przeciążenie metody Next&#40;&#41; w technologii IntelliSense](../ide/media/express_nextoverload.png)<br/>
-*Przeciążenie* metody ***Next ()*** *w* ***technologii IntelliSense***
+*Przeciążenie dla*  * **Next ()** _ _Metoda w * ***IntelliSense**_
 
      W takim przypadku należy wybrać ostatnie Przeciążenie, ponieważ można określić wartości minimalne i maksymalne.
 
@@ -86,7 +88,7 @@ W szóstej części tego samouczka dodasz problem odejmowania i dowiesz się, ja
      Program zawiera problem odejmowania, jak pokazano na poniższej ilustracji:
 
      ![Quiz matematyczny z problemem odejmowania](../ide/media/express_addsubtract.png)<br/>
-***Quiz matematyczny*** *z problemem odejmowania*
+Problem odejmowania _with _*_quizów matematycznych_*_ *
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 

@@ -1,5 +1,7 @@
 ---
 title: Opcje refaktoryzacji statycznej funkcji lokalnej
+description: Dowiedz się, jak użyć menu szybkie akcje i refaktoryzacje, aby określić, czy funkcja lokalna ma być statyczna i przekazana zmienne zdefiniowane poza funkcją do deklaracji i wywołań funkcji.
+ms.custom: SEO-VS-2020
 ms.date: 02/10/2020
 ms.topic: reference
 author: governesss
@@ -11,12 +13,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: c297457c910c484c05c974c581e89c75e0ad44e5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e85fcc96542b4f3538729aeb50a4e080c902657
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77144837"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479891"
 ---
 # <a name="static-local-function-refactorings-and-quick-actions"></a>Statyczne refaktoryzacje funkcji lokalnych i szybkie akcje
 

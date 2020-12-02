@@ -1,5 +1,7 @@
 ---
 title: Eliminacja plików ~ SAK | Microsoft Docs
+description: Dowiedz się więcej o eliminacji plików SAK z wtyczki kontroli źródła 1,2 i sposobach ich wymiany według flag możliwości i nowych funkcji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0294198bb1560f8df6f17170013f88d4fe11e5cf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e846354b2d48b2f7866daa14987e757f41779c8
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708502"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480515"
 ---
 # <a name="elimination-of-sak-files"></a>Eliminacja plików ~ SAK
 W interfejsie API wtyczki kontroli źródła 1,2 pliki *~ SAK* zostały zastąpione przez flagi możliwości i nowe funkcje, które wykrywają, czy wtyczka do kontroli źródła obsługuje plik *MSSCCPRJ* i udostępnione wyewidencjonowania.
@@ -45,7 +47,7 @@ W przypadku wtyczek, które obsługują zaawansowane funkcje dostępne w interfe
 
  Jeśli wtyczka do kontroli źródła obsługuje tworzenie i używanie pliku *MSSCCPRJ. SCC* , deklaruje `SCC_CAP_SCCFILE` możliwość i implementuje [SccWillCreateSccFile](../../extensibility/sccwillcreatesccfile-function.md). Ta funkcja jest wywoływana z listą plików. Funkcja zwraca `TRUE' or 'FALSE` dla każdego pliku, aby wskazać, czy program Visual Studio ma używać pliku *MSSCCPRJ. SCC* . Jeśli wtyczka do kontroli źródła wybierze nie obsługę tych nowych funkcji i funkcji, może użyć następującego klucza rejestru, aby wyłączyć tworzenie tych plików:
 
- **[HKEY_CURRENT_USER \software\microsoft\visualstudio\8.0\sourcecontrol] DoNotCreateTemporaryFilesInSourceControl**  =  *DWORD: 00000001*
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl]DoNotCreateTemporaryFilesInSourceControl**  =  *DWORD: 00000001*
 
 > [!NOTE]
 > Jeśli ten klucz rejestru jest ustawiony na *wartość DWORD: 00000000*, odpowiada kluczowi nieistniejącemu, a program Visual Studio nadal próbuje utworzyć pliki tymczasowe. Jeśli jednak klucz rejestru jest ustawiony na *wartość DWORD: 00000001*, program Visual Studio nie próbuje utworzyć plików tymczasowych. Zamiast tego przyjmuje się, że wtyczka do kontroli źródła nie obsługuje pliku *MSSCCPRJ. SCC* i nie obsługuje udostępnionych wyewidencjonowania.

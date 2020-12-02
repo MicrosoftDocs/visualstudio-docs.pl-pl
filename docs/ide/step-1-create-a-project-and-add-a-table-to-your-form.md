@@ -1,5 +1,7 @@
 ---
 title: Krok 1. Tworzenie projektu i dodawanie tabeli do formularza
+description: Dowiedz się, jak utworzyć pasujący projekt gry i dodać tabelę do formularza.
+ms.custom: SEO-VS-2020
 ms.date: 10/15/2019
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1134fb5bb02bd8c78f347ef582f12da35074c36
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a8ae9b17df85431945b19d65f5435ac081b4a1c
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579921"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480723"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Krok 1. Tworzenie projektu i dodawanie tabeli do formularza
 
@@ -71,7 +73,7 @@ Pierwszym krokiem w tworzeniu gry w dopasowanie jest stworzenie projektu i dodan
 
    1. Zmień właściwość **Text** formularza z **Form1** na **pasującą grę**. Ten tekst jest wyświetlany w górnej części okna gry.
 
-   2. Ustaw rozmiar formularza na 550 pikseli szerokości i 550 pikseli wysokości. Można to zrobić, ustawiając właściwość **size** na **550, 550**lub przeciągając róg formularza do momentu, gdy zobaczysz właściwy rozmiar w prawym dolnym rogu zintegrowanego środowiska programistycznego (IDE).
+   2. Ustaw rozmiar formularza na 550 pikseli szerokości i 550 pikseli wysokości. Można to zrobić, ustawiając właściwość **size** na **550, 550** lub przeciągając róg formularza do momentu, gdy zobaczysz właściwy rozmiar w prawym dolnym rogu zintegrowanego środowiska programistycznego (IDE).
 
 2. Wyświetl Przybornik, wybierając kartę **Przybornik** po lewej stronie IDE.
 

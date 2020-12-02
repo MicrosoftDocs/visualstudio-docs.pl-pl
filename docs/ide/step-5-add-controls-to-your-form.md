@@ -1,5 +1,7 @@
 ---
 title: Krok 5. Dodawanie kontrolek do formularza
+description: Dowiedz się, jak dodać kontrolki, takie jak <xref:System.Windows.Forms.PictureBox> kontrolka i <xref:System.Windows.Forms.CheckBox> kontrolka, do formularza.
+ms.custom: SEO-VS-2020
 ms.date: 08/30/2019
 ms.assetid: dc2746f4-0b5c-4674-9ef7-f40f94150f52
 ms.topic: tutorial
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 631def96fc7e4b5d7858ea3474492b41c526da65
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4ff3e132087b97339bc710555428ba7488fa2e06
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579362"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480580"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Krok 5. Dodawanie kontrolek do formularza
 
@@ -29,21 +31,21 @@ W tym kroku dodasz kontrolki, takie jak <xref:System.Windows.Forms.PictureBox> k
 
 1. Wybierz nowy formant **PictureBox** , aby go zaznaczyć, a następnie wybierz czarny trójkąt w nowym formancie PictureBox, aby wyświetlić jego listę zadań, jak pokazano na poniższym zrzucie ekranu.
 
-    ![PictureBox — zadania](../ide/media/express_pictureboxtasks.png)<br/>PictureBox * * * *zadania**
+    ![PictureBox — zadania](../ide/media/express_pictureboxtasks.png)<br/>PictureBox **_ _tasks**
 
     > [!NOTE]
-    > Jeśli przypadkowo dodasz niewłaściwy typ kontrolki do TableLayoutPanel, możesz go usunąć. Kliknij prawym przyciskiem myszy kontrolkę, a następnie wybierz polecenie **Usuń** w menu kontekstowym. Można również usunąć kontrolki z formularza przy użyciu paska menu. Na pasku menu wybierz **Edytuj**  >  **Cofnij**lub **Edytuj**  >  **Usuń**.
+    > Jeśli przypadkowo dodasz niewłaściwy typ kontrolki do TableLayoutPanel, możesz go usunąć. Kliknij prawym przyciskiem myszy kontrolkę, a następnie wybierz polecenie **Usuń** w menu kontekstowym. Można również usunąć kontrolki z formularza przy użyciu paska menu. Na pasku menu wybierz **Edytuj**  >  **Cofnij** lub **Edytuj**  >  **Usuń**.
 
 1. W menu **zadania PictureBox** w formancie **PictureBox** wybierz łącze **Dock w kontenerze nadrzędnym** . Spowoduje to automatyczne ustawienie właściwości **Dock dokowania** do **wypełnienia**. Aby to zobaczyć, wybierz formant **PictureBox** , aby go zaznaczyć, przejdź do okna **Właściwości** i upewnij się, że właściwość **Dock** jest ustawiona na **Fill**.
 
-1. Ustaw element PictureBox w obu kolumnach, zmieniając jego właściwość **ColumnSpan** . W elemencie **PictureBox**wybierz formant **PictureBox** i ustaw jego właściwość **ColumnSpan** na **2**. Ponadto, gdy element PictureBox jest pusty, chcesz wyświetlić pustą ramkę. Ustaw właściwość **BorderStyle** na **Fixed3D**.
+1. Ustaw element PictureBox w obu kolumnach, zmieniając jego właściwość **ColumnSpan** . W elemencie **PictureBox** wybierz formant **PictureBox** i ustaw jego właściwość **ColumnSpan** na **2**. Ponadto, gdy element PictureBox jest pusty, chcesz wyświetlić pustą ramkę. Ustaw właściwość **BorderStyle** na **Fixed3D**.
 
     > [!NOTE]
     > Jeśli właściwość **ColumnSpan** nie jest widoczna dla elementu PictureBox, prawdopodobnie element PictureBox został dodany do formularza zamiast TableLayoutPanel. Aby rozwiązać ten problem, wybierz element **PictureBox**, usuń go, wybierz **TableLayoutPanel**, a następnie Dodaj nowy PictureBox.
 
 1. Wybierz **TableLayoutPanel** w formularzu, a następnie Dodaj kontrolkę pola wyboru do formularza. Kliknij dwukrotnie element **CheckBox** w **przyborniku** , aby dodać nową kontrolkę CheckBox do następnej wolnej komórki w tabeli. Ponieważ element PictureBox przyjmuje pierwsze dwie komórki w TableLayoutPanel, formant CheckBox zostanie dodany do lewej dolnej komórki. Wybierz właściwość **Text** i wpisz **ciąg Rozciągnij**, jak pokazano na poniższej ilustracji.
 
-    ![TextBox — formant z właściwością rozciągania](../ide/media/express_pictureviewercheckbox.png)<br/>***TextBox*** — *formant z* *właściwością* ***rozciągania***
+    ![TextBox — formant z właściwością rozciągania](../ide/media/express_pictureviewercheckbox.png)<br/>**_TextBox_* _ _kontrolka z * ***rozciąganie**_ _property *
 
 1. Wybierz **TableLayoutPanel** w formularzu, a następnie przejdź do grupy **kontenery** w **przyborniku** (gdzie masz formant TableLayoutPanel), a następnie kliknij dwukrotnie element **FlowLayoutPanel** , aby dodać nową kontrolkę do ostatniej komórki (prawy dolny). Następnie zadokuj FlowLayoutPanel w TableLayoutPanel. Możesz to zrobić, wybierając pozycję **Dock w kontenerze nadrzędnym** na liście zadań czarny trójkąta FlowLayoutPanel lub ustawiając właściwość **Dock** FlowLayoutPanel na **Fill**.
 
@@ -59,7 +61,7 @@ W tym kroku dodasz kontrolki, takie jak <xref:System.Windows.Forms.PictureBox> k
     > [!NOTE]
     > Można kopiować i wklejać dowolną kontrolkę. Nazwy IDE i umieszczają w sposób logiczny nowe kontrolki. W przypadku wklejenia kontrolki do kontenera IDE wybiera następne miejsce logiczne dla umieszczania.
 
-1. Wybierz pierwszy przycisk i ustaw jego właściwość **Text** , aby **wyświetlić obraz**. Następnie ustaw właściwości **tekst** dla kolejnych trzech przycisków, aby **wyczyścić obraz**, **Ustaw kolor tła**i **Zamknij**.
+1. Wybierz pierwszy przycisk i ustaw jego właściwość **Text** , aby **wyświetlić obraz**. Następnie ustaw właściwości **tekst** dla kolejnych trzech przycisków, aby **wyczyścić obraz**, **Ustaw kolor tła** i **Zamknij**.
 
 1. Zmień rozmiar przycisków i rozmieść je tak, aby były wyrównane do prawej strony panelu. Wybierz **FlowLayoutPanel** i przyjrzyj się jego właściwości **FlowDirection** . Zmień to ustawienie na wartość **RightToLeft**.
 
@@ -74,7 +76,7 @@ W tym kroku dodasz kontrolki, takie jak <xref:System.Windows.Forms.PictureBox> k
 
    Przyciski powinny mieć teraz rozmiar prawidłowy i być w odpowiedniej kolejności. (Pod warunkiem, że wszystkie cztery przyciski są zaznaczone, można zmienić wszystkie cztery właściwości **autorozmiaru** w tym samym czasie). Na poniższej ilustracji przedstawiono cztery przyciski.
 
-    ![Przeglądarka obrazów z czterema przyciskami](../ide/media/express_autosize.png)<br/>***Przeglądarka obrazów*** *z czterema przyciskami*
+    ![Przeglądarka obrazów z czterema przyciskami](../ide/media/express_autosize.png)<br/>**_Przeglądarka obrazów_* _ _with cztery przyciski *
 
 1. Teraz ponownie uruchom program, aby zobaczyć zmiany.
 

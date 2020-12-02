@@ -1,5 +1,7 @@
 ---
 title: Krok 4. Dodawanie obsługi zdarzeń kliknięcia do każdej etykiety
+description: Dowiedz się, jak dodać program obsługi zdarzeń kliknięcia do każdej etykiety.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7049271dddb4e763bf5ecb3760358bdd63e38df5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f620b097e2a565bbacf3322d03385aa70fd0356f
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579349"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480606"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>Krok 4. Dodawanie obsługi zdarzeń kliknięcia do każdej etykiety
 
@@ -34,7 +36,7 @@ Gra w dopasowywanie działa w następujący sposób:
 
 ## <a name="to-add-a-click-event-handler-to-each-label"></a>Aby dodać program obsługi zdarzeń kliknięcia do każdej etykiety
 
-1. Otwórz formularz w **Projektant formularzy systemu Windows**. W **Eksplorator rozwiązań**wybierz pozycję *Form1.cs* lub *Form1. vb*. Na pasku menu wybierz polecenie Projektant **widoków**  >  **Designer**.
+1. Otwórz formularz w **Projektant formularzy systemu Windows**. W **Eksplorator rozwiązań** wybierz pozycję *Form1.cs* lub *Form1. vb*. Na pasku menu wybierz polecenie Projektant **widoków**  >  **Designer**.
 
 2. Wybierz pierwszy formant etykiety, aby go zaznaczyć. Następnie naciśnij i przytrzymaj klawisz **Ctrl** podczas wybierania każdej z pozostałych etykiet, aby je wybrać. Pamiętaj, że każda etykieta jest zaznaczona.
 

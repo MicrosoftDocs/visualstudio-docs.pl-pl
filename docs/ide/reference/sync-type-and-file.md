@@ -1,5 +1,7 @@
 ---
 title: Zmień nazwę pliku na zgodną z typem
+description: Dowiedz się, jak użyć menu szybkie akcje i refaktoryzacje, aby zmienić nazwę typu na zgodną z nazwą pliku, lub Zmień nazwę pliku na zgodną z typem, który zawiera.
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5b7a42a174fecd078e804f2ab3c35fbe442364a6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 020dcedd6b0cb2117984d45548b5c1e099c67aee
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594399"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479826"
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-refactoring"></a>Synchronizuj typ do nazwy pliku lub nazwę pliku z refaktoryzacją typu
 
@@ -50,10 +52,10 @@ To Refaktoryzacja dotyczy:
 
    - **Klawiatura**
       - Naciśnij klawisz **Ctrl** + **.** Aby wyzwolić menu **szybkie akcje i refaktoryzacje** , a następnie wybierz polecenie **Zmień nazwę pliku na *TypeName*. cs** z okna podręcznego okno podglądu, gdzie *TypeName* jest nazwą wybranego typu.
-      - Naciśnij klawisz **Ctrl** + **.** Aby wyzwolić menu **szybkie akcje i refaktoryzacje** , a następnie wybierz pozycję **Zmień nazwę typu na _filename_ ** w oknie podręcznym okna podglądu, gdzie *filename* jest nazwą bieżącego pliku.
+      - Naciśnij klawisz **Ctrl** + **.** Aby wyzwolić menu **szybkie akcje i refaktoryzacje** , a następnie wybierz pozycję **Zmień nazwę typu na _filename_** w oknie podręcznym okna podglądu, gdzie *filename* jest nazwą bieżącego pliku.
    - **Mysz**
       - Kliknij prawym przyciskiem myszy kod, wybierz menu **szybkie akcje i refaktoryzacje** , a następnie wybierz polecenie **Zmień nazwę pliku na *TypeName*. cs** z okna podręcznego okno podglądu, gdzie *TypeName* jest nazwą wybranego typu.
-      - Kliknij prawym przyciskiem myszy kod, zaznacz menu **szybkie akcje i refaktoryzacje** , a następnie wybierz polecenie **Zmień nazwę typu na _filename_ ** w menu podręcznym okna podglądu, gdzie *filename* jest nazwą bieżącego pliku.
+      - Kliknij prawym przyciskiem myszy kod, zaznacz menu **szybkie akcje i refaktoryzacje** , a następnie wybierz polecenie **Zmień nazwę typu na _filename_** w menu podręcznym okna podglądu, gdzie *filename* jest nazwą bieżącego pliku.
 
    Zmieniono nazwę typu lub pliku.
 

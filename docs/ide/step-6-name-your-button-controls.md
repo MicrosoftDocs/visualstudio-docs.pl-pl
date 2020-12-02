@@ -1,5 +1,7 @@
 ---
 title: Krok 6. Nadawanie nazw kontrolkom przycisków
+description: Dowiedz się, jak nazwać kontrolki przycisków.
+ms.custom: SEO-VS-2020
 ms.date: 08/30/2016
 ms.assetid: 56b3baa3-651e-4ad4-8942-e334c5c57158
 ms.topic: tutorial
@@ -13,32 +15,32 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5c23f48e803665e00155d1b546ace4e4ec7bc54
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bfa5b69cc106aeae18012a7116fd511263423b2c
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579793"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480320"
 ---
 # <a name="step-6-name-your-button-controls"></a>Krok 6. Nadawanie nazw kontrolkom przycisków
 
 W formularzu występuje tylko jeden <xref:System.Windows.Forms.PictureBox> . Po dodaniu, IDE automatycznie nazywa go **PictureBox1**. Istnieje tylko jeden <xref:System.Windows.Forms.CheckBox> o nazwie **checkBox1**. Wkrótce napiszesz kod i ten kod będzie się odnosił do pola CheckBox i PictureBox. Ponieważ istnieje tylko jedna z tych kontrolek, wiadomo, co oznacza, gdy zobaczysz **PictureBox1** lub **checkBox1** w kodzie.
 
 > [!TIP]
-> W Visual Basic domyślną pierwszą literą każdej nazwy kontrolki jest Inicjał, więc nazwy to **PictureBox1**, **checkBox1**i tak dalej.
+> W Visual Basic domyślną pierwszą literą każdej nazwy kontrolki jest Inicjał, więc nazwy to **PictureBox1**, **checkBox1** i tak dalej.
 
-W formularzu znajdują się cztery przyciski i IDE o nazwie im **Button1**, **Button2**, **button3**i **button4**. Po prostu patrząc na swoje bieżące nazwy nie wiesz, który przycisk jest przyciskiem **Close** i który jest przyciskiem **Pokaż obraz** . Z tego względu, jeśli przycisk steruje bardziej informacyjnymi nazwami, pomocne są.
+W formularzu znajdują się cztery przyciski i IDE o nazwie im **Button1**, **Button2**, **button3** i **button4**. Po prostu patrząc na swoje bieżące nazwy nie wiesz, który przycisk jest przyciskiem **Close** i który jest przyciskiem **Pokaż obraz** . Z tego względu, jeśli przycisk steruje bardziej informacyjnymi nazwami, pomocne są.
 
 ## <a name="to-name-your-button-controls"></a>Aby nazwać kontrolki przycisku
 
 1. W formularzu wybierz przycisk **Zamknij** . (Jeśli nadal masz zaznaczone wszystkie przyciski, wybierz klawisz **ESC** , aby anulować wybór). Przewiń w oknie **Właściwości** do momentu wyświetlenia właściwości **(Name)** . (Właściwość **(Name)** znajduje się najbliżej góry, gdy właściwości są alfabetyczne.) Zmień nazwę na **CloseButton**, jak pokazano na poniższym zrzucie ekranu.
 
-    ![okno Właściwości z nazwą closeButton](../ide/media/express_setnameproperty.png)<br>Okno ***Właściwości*** *o* ***closeButton*** *nazwie* CloseButton
+    ![okno Właściwości z nazwą closeButton](../ide/media/express_setnameproperty.png)<br>**_Właściwości_* _ _okno z * ***CloseButton**_ _name *
 
     > [!NOTE]
     > Spróbuj zmienić nazwę przycisku na **przycisk Zamknij**, spację między wyrazami "Zamknij" i "przycisk". Gdy to zrobisz, IDE wyświetli komunikat o błędzie: "wartość właściwości jest nieprawidłowa." Spacje (i kilka innych znaków) nie są dozwolone w nazwach kontrolek.
 
-1. Zmień nazwy pozostałych trzech przycisków na **backgroundButton**, **clearButton**i **showButton**.
+1. Zmień nazwy pozostałych trzech przycisków na **backgroundButton**, **clearButton** i **showButton**.
 Nazwy można sprawdzić, wybierając listę rozwijaną selektor formantów w oknie **Właściwości** . Pojawią się nowe nazwy przycisków.
 
 1. Kliknij dwukrotnie przycisk **Pokaż obraz** w formularzu. Alternatywnie wybierz przycisk **Pokaż obraz** na formularzu, a następnie naciśnij klawisz **Enter** . Gdy to zrobisz, IDE otworzy dodatkową kartę w oknie głównym o nazwie **Form1.cs**. (Jeśli używasz Visual Basic, karta nosi nazwę **Form1. vb**).
@@ -46,7 +48,7 @@ Nazwy można sprawdzić, wybierając listę rozwijaną selektor formantów w okn
    Na tej karcie jest wyświetlany plik kodu znajdujący się za formularzem, jak pokazano na poniższym zrzucie ekranu.
 
     ![Karta Form1.cs z kodem&#35; języka Visual C](../ide/media/express_showbuttoncode.png)<br>
-Karta ***Form1.cs*** *z kodem C#*
+**_Form1.cs_* _ _tab z kodem C# *
 
     > [!NOTE]
     > Karta Form1.cs lub Form1. vb może w zamian wyświetlić **showButton** jako **showButton** .
@@ -74,7 +76,7 @@ Karta ***Form1.cs*** *z kodem C#*
 1. Aby dodać jeszcze jedną metodę, Otwórz plik kodu dla kontrolki **CheckBox** w **Projektant formularzy systemu Windows** , aby umożliwić IDE dodanie `checkBox1_CheckedChanged()` metody. Ta metoda jest wywoływana za każdym razem, gdy użytkownik zaznaczy lub wyczyści to pole wyboru.
 
    > [!TIP]
-   > Podczas pracy nad aplikacją często przechodzą między edytorem kodu a **Projektant formularzy systemu Windows**. Środowisko IDE ułatwia nawigowanie w projekcie. Użyj **Eksplorator rozwiązań** , aby **otworzyć Projektant formularzy systemu Windows** przez dwukrotne kliknięcie *Form1.cs* w języku C# lub *Form1. vb* w Visual Basic lub na pasku menu wybierz polecenie **View**  >  **Projektant**widoków.
+   > Podczas pracy nad aplikacją często przechodzą między edytorem kodu a **Projektant formularzy systemu Windows**. Środowisko IDE ułatwia nawigowanie w projekcie. Użyj **Eksplorator rozwiązań** , aby **otworzyć Projektant formularzy systemu Windows** przez dwukrotne kliknięcie *Form1.cs* w języku C# lub *Form1. vb* w Visual Basic lub na pasku menu wybierz polecenie **View**  >  **Projektant** widoków.
 
     Poniżej przedstawiono nowy kod widoczny w edytorze kodu.
 

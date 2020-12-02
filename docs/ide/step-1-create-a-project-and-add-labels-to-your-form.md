@@ -1,5 +1,7 @@
 ---
 title: Krok 1. Tworzenie projektu i dodawanie etykiet do formularza
+description: Dowiedz się, jak utworzyć projekt, dodać etykiety, przycisk i inne kontrolki do formularza, a następnie ustawić właściwości dla każdej dodawanej kontrolki.
+ms.custom: SEO-VS-2020
 ms.date: 10/15/2019
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bf904fca84fba88e81306ff91add6c2156b4544
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd84b7b11f58b8deb62f6138255b4c8d942b5a00
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579446"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480112"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Krok 1. Tworzenie projektu i dodawanie etykiet do formularza
 
@@ -78,7 +80,7 @@ Pierwszym etapem tworzenia tego quizu jest utworzenie projektu i dodanie etykiet
 
      Można zmienić rozmiar formularza, przeciągając jego krawędzie do momentu pojawienia się w lewym dolnym rogu zintegrowanego środowiska programistycznego (IDE). Alternatywnie można zmienić wartości właściwości **size** .
 
-1. Zmień wartość właściwości **FormBorderStyle** na **Fixed3D**i ustaw właściwość **MaximizeBox** na **false**.
+1. Zmień wartość właściwości **FormBorderStyle** na **Fixed3D** i ustaw właściwość **MaximizeBox** na **false**.
 
      Te wartości uniemożliwiają uczestnikomom quizu zmianę rozmiarów formularza.
 
@@ -142,7 +144,7 @@ Pierwszym etapem tworzenia tego quizu jest utworzenie projektu i dodanie etykiet
 
 13. Ustaw wartość właściwości **tekst** czwartej etykiety na **=** (znak równości).
 
-14. Dodaj <xref:System.Windows.Forms.NumericUpDown> formant z **przybornika**, ustaw jego rozmiar czcionki na **18**i ustaw jego szerokość na **100**.
+14. Dodaj <xref:System.Windows.Forms.NumericUpDown> formant z **przybornika**, ustaw jego rozmiar czcionki na **18** i ustaw jego szerokość na **100**.
 
      Dowiesz się więcej o tym rodzaju kontrolce później.
 
@@ -170,13 +172,13 @@ Pierwszym etapem tworzenia tego quizu jest utworzenie projektu i dodanie etykiet
 
 5. Nadaj drugiej nazwie etykietę **minusRightLabel**.
 
-6. Nazwij **różnicę**kontrolki NumericUpDown.
+6. Nazwij **różnicę** kontrolki NumericUpDown.
 
 7. Wklej pięć kontrolek dwa razy.
 
-8. W trzecim wierszu nadaj pierwszej etykiecie **timesLeftLabel**, Zmień właściwość **tekst** drugiej etykiety na **×** (znak mnożenia), nazwij trzecią etykietę **timesRightLabel**i nazwij **produkt**Control NumericUpDown.
+8. W trzecim wierszu nadaj pierwszej etykiecie **timesLeftLabel**, Zmień właściwość **tekst** drugiej etykiety na **×** (znak mnożenia), nazwij trzecią etykietę **timesRightLabel** i nazwij **produkt** Control NumericUpDown.
 
-9. W czwartym wierszu nadaj pierwszej etykiecie **dividedLeftLabel**, Zmień właściwość **tekst** drugiej etykiety na **÷** (znak dzielenia), nadaj trzecią etykietę **dividedRightLabel**i nadaj jej nazwę **ilorazu**.
+9. W czwartym wierszu nadaj pierwszej etykiecie **dividedLeftLabel**, Zmień właściwość **tekst** drugiej etykiety na **÷** (znak dzielenia), nadaj trzecią etykietę **dividedRightLabel** i nadaj jej nazwę **ilorazu**.
 
     > [!NOTE]
     > Możesz skopiować znak mnożenia × i ÷ znak dzielenia z tego samouczka i wkleić je do formularza.

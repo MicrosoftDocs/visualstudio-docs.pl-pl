@@ -1,5 +1,7 @@
 ---
 title: C# IntelliSense
+description: Dowiedz się więcej na temat funkcji IntelliSense, których można użyć podczas kodowania projektu C#.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2ed5d86599fa99b9c1360b414b37ef95ab59082d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e725a06a2bc90c91cff11b05ad32b20a0db8e4fc
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89313435"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479787"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -82,7 +84,7 @@ Technologia IntelliSense zapamiętuje członków, którzy zostali ostatnio wybra
 
 ### <a name="override"></a>override
 
-Po wpisaniu [przesłonięcia](/dotnet/csharp/language-reference/keywords/override) , a **następnie naciśnięciu**klawisza, IntelliSense wyświetla wszystkie prawidłowe elementy członkowskie klasy bazowej, które można przesłonić w oknie listy rozwijanej. Wpisanie zwracanego typu metody po `override` wyświetleniu przez funkcję IntelliSense tylko metod, które zwracają ten sam typ. Gdy technologia IntelliSense nie może znaleźć dopasowań, wyświetla wszystkie elementy członkowskie klasy bazowej.
+Po wpisaniu [przesłonięcia](/dotnet/csharp/language-reference/keywords/override) , a **następnie naciśnięciu** klawisza, IntelliSense wyświetla wszystkie prawidłowe elementy członkowskie klasy bazowej, które można przesłonić w oknie listy rozwijanej. Wpisanie zwracanego typu metody po `override` wyświetleniu przez funkcję IntelliSense tylko metod, które zwracają ten sam typ. Gdy technologia IntelliSense nie może znaleźć dopasowań, wyświetla wszystkie elementy członkowskie klasy bazowej.
 
 ### <a name="ai-enhanced-intellisense"></a>Ulepszona funkcja IntelliSense
 
@@ -148,14 +150,14 @@ Po wpisaniu `+=` operatora po polu zdarzenia w pliku *CS* funkcja IntelliSense p
 
 ![Autohak przycisku](../ide/media/vxautohookup.gif)
 
-Po naciśnięciu klawisza **Tab**funkcja IntelliSense automatycznie kończy instrukcję dla Ciebie i wyświetla odwołanie programu obsługi zdarzeń jako zaznaczony tekst w edytorze kodu. Aby ukończyć automatyczne podłączenie zdarzeń, IntelliSense poprosi o ponowne naciśnięcie klawisza **Tab** , aby utworzyć pustą procedurę dla programu obsługi zdarzeń.
+Po naciśnięciu klawisza **Tab** funkcja IntelliSense automatycznie kończy instrukcję dla Ciebie i wyświetla odwołanie programu obsługi zdarzeń jako zaznaczony tekst w edytorze kodu. Aby ukończyć automatyczne podłączenie zdarzeń, IntelliSense poprosi o ponowne naciśnięcie klawisza **Tab** , aby utworzyć pustą procedurę dla programu obsługi zdarzeń.
 
 ![Generuj procedurę obsługi zdarzeń](../ide/media/vxgenerateeventhandler.gif)
 
 > [!NOTE]
 > Jeśli nowy delegat tworzony przez funkcję IntelliSense odwołuje się do istniejącej procedury obsługi zdarzeń, technologia IntelliSense komunikuje te informacje w etykietce narzędzia. Następnie można zmodyfikować to odwołanie; tekst jest już zaznaczony w edytorze kodu. W przeciwnym razie na tym etapie zostanie ukończone automatyczne podłączenie zdarzeń.
 
-Po naciśnięciu klawisza **Tab**funkcja IntelliSense odtworzy metodę o poprawnym podpisie i umieści kursor w treści programu obsługi zdarzeń.
+Po naciśnięciu klawisza **Tab** funkcja IntelliSense odtworzy metodę o poprawnym podpisie i umieści kursor w treści programu obsługi zdarzeń.
 
 > [!NOTE]
 > Użyj polecenia **Nawiguj wstecz** w menu **Widok** (**Ctrl** + **-** ), aby wrócić do instrukcji Event podłączenie.

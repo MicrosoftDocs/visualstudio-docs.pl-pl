@@ -1,5 +1,7 @@
 ---
 title: Krok 5. Dodawanie odwołań do etykiet
+description: Dowiedz się, jak dodać odwołania do etykiet do formularza.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de89d7194425e1a8cba9e11f2734372d80b256b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 95a4286feb778e17b345f964b1b7ccca5343e461
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579328"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480567"
 ---
 # <a name="step-5-add-label-references"></a>Krok 5. Dodawanie odwołań do etykiet
 Program musi śledzić, które kontrolki etykiet wybiera gracz. W tej chwili program pokazuje wszystkie etykiety wybrane przez gracza. Ale zaraz to zmienimy. Po wybraniu pierwszej etykiety program powinien wyświetlać ikonę etykiety. Po wybraniu drugiej etykiety program powinien wyświetlić obie ikony przez krótki czas i potem ponownie je ukryć. Program będzie teraz śledził, który formant Etykieta jest wybierany jako pierwszy, a który jest wybierany drugi przy użyciu *zmiennych odwołania*.
@@ -47,7 +49,7 @@ Program musi śledzić, które kontrolki etykiet wybiera gracz. W tej chwili pro
 4. Wybierz następny formant etykiety i zauważ, że nic się nie dzieje. Program śledzi już pierwszą etykietę, którą wybrał gracz, tak więc `firstClicked` nie jest równa `null` w języku C# lub `Nothing` w Visual Basic. Gdy `if` instrukcja sprawdzi, `firstClicked` czy jest równa `null` lub `Nothing` , stwierdza, że nie, i nie wykonuje instrukcji w `if` instrukcji. Dlatego tylko pierwsza wybrana ikona powoduje zmianę czerni, a inne ikony są niewidoczne, jak pokazano na poniższej ilustracji.
 
      ![Gra w dopasowywanie pokazująca jedną ikonę](../ide/media/express_tut4step5.png)<br/>
-***Gra w dopasowywanie*** *pokazująca jedną ikonę*
+***Gra pasująca** _ _showing jedną ikonę *
 
      Tę sytuację należy rozwiązać w następnym kroku samouczka, dodając kontrolkę **czasomierz** .
 

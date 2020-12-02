@@ -1,5 +1,7 @@
 ---
 title: Synchronizowanie przestrzeni nazw i nazwy folderu
+description: Dowiedz się, jak za pomocą menu szybkie akcje i refabryki zsynchronizować przestrzeń nazw i nazwę folderu.
+ms.custom: SEO-VS-2020
 ms.date: 06/12/2019
 ms.topic: reference
 author: mikadumont
@@ -9,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: d7073edaf6ecc261c58bf1e5607323b9214c5ed0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 10dff5d9129d1a91f01ef7541397d86f5a71468c
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67160727"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479813"
 ---
 # <a name="sync-namespace-and-folder-name"></a>Synchronizowanie przestrzeni nazw i nazwy folderu
 
@@ -32,7 +34,7 @@ To Refaktoryzacja dotyczy:
 
 1. Umieść kursor w nazwie przestrzeni nazw.
 2. Naciśnij klawisz **Ctrl** + **.** Aby wyzwolić menu **szybkie akcje i operacje refaktoryzacji** .
-3. Wybierz pozycję **Zmień przestrzeń \<folder name> nazw na **.
+3. Wybierz pozycję **Zmień przestrzeń \<folder name> nazw na**.
 
    ![Synchronizuj przestrzeń nazw i nazwę folderu](media/sync-namespace-and-folder-name.png)
 

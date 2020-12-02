@@ -1,5 +1,7 @@
 ---
 title: Kontrolka symbolu (pakietu VSPackage kontroli źródła) | Microsoft Docs
+description: Dowiedz się, jak wyświetlać niestandardowe symbole w pakietu VSPackage kontroli źródła, aby można było użyć własnych ikon do wskazywania stanu elementów pod kontrolą źródła.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9db1b4542eae293e39cda674fac3eb984aa77d3e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eaf7f40224e2f197627bb995dc6cccdf297b46e5
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708321"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480476"
 ---
 # <a name="glyph-control-source-control-vspackage"></a>Kontrolka symbolu (pakietu VSPackage kontroli źródła)
 Częścią głębokiej integracji dostępną do kontroli źródła pakietów VSPackage jest możliwość wyświetlania własnych symboli, aby wskazać stan elementów pod kontrolą źródła.

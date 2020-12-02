@@ -1,5 +1,7 @@
 ---
 title: Identyfikator GUID i identyfikatory poleceń programu Visual Studio | Microsoft Docs
+description: Dowiedz się, jak zlokalizować identyfikator GUID i wartości identyfikatorów poleceń zawartych w zintegrowanym środowisku programistycznym (IDE) programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8932f23d301eabc97414bf76453d70336e0dabae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cabf5c9452cf0a6809673d488f9cf01252d7b0ef
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708253"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480450"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Identyfikator GUID i identyfikatory poleceń programu Visual Studio
 Wartości identyfikatora GUID i identyfikatora poleceń zawartych w zintegrowanym środowisku programistycznym (IDE) programu Visual Studio są zdefiniowane w plikach. vsct, które są instalowane w ramach zestawu Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [polecenia, menu i grupy zdefiniowane przez środowisko IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -31,7 +33,7 @@ Wartości identyfikatora GUID i identyfikatora poleceń zawartych w zintegrowany
 
 ### <a name="to-locate-a-command-definition"></a>Aby zlokalizować definicję polecenia
 
-1. W programie Visual Studio Otwórz następujące pliki w *<ścieżka instalacji zestawu SDK programu Visual Studio \> \VisualStudioIntegration\Common\Inc \\ * folder: *SharedCmdDef. vsct*, *ShellCmdDef. vsct*, *VsDbgCmdUsed. vsct*, *Venusmenu. vsct*.
+1. W programie Visual Studio Otwórz następujące pliki w *<ścieżka instalacji zestawu SDK programu Visual Studio \> \VisualStudioIntegration\Common\Inc \\* folder: *SharedCmdDef. vsct*, *ShellCmdDef. vsct*, *VsDbgCmdUsed. vsct*, *Venusmenu. vsct*.
 
     Większość poleceń programu Visual Studio jest zdefiniowanych w *SharedCmdDef. vsct* i *ShellCmdDef. vsct*. *VsDbgCmdUsed. vsct* definiuje polecenia, które odnoszą się do debugera, a *Venusmenu. vsct* definiuje polecenia, które są specyficzne dla programowania w sieci Web.
 
@@ -54,11 +56,11 @@ Wartości identyfikatora GUID i identyfikatora poleceń zawartych w zintegrowany
 
 - Elementy menu, które zawierają podkreślony znak, taki jak polecenie **Print** w menu **plik** , w którym *P* jest podkreślony.
 
-     Znaki, które są poprzedzone znakiem handlowego "i" (&) w nazwach elementów menu, są wyświetlane jako podkreślone. Jednak pliki *. vsct* są napisane w języku XML, który używa znaku handlowego "i" (&), aby wskazać znaki specjalne i wymaga, aby wyświetlić znak "i", musi być wpisany jako * &amp; amp;*. W związku z tym w pliku *. vsct* polecenie **Print** jest wyświetlane jako * &amp; amp; Drukuj*.
+     Znaki, które są poprzedzone znakiem handlowego "i" (&) w nazwach elementów menu, są wyświetlane jako podkreślone. Jednak pliki *. vsct* są napisane w języku XML, który używa znaku handlowego "i" (&), aby wskazać znaki specjalne i wymaga, aby wyświetlić znak "i", musi być wpisany jako *&amp; amp;*. W związku z tym w pliku *. vsct* polecenie **Print** jest wyświetlane jako *&amp; amp; Drukuj*.
 
 - Polecenia, które mają dynamiczny tekst, takie jak **Zapisz** \<Current Filename\> i dynamicznie generowane elementy menu, takie jak elementy na liście **ostatnie pliki** .
 
-     Nie istnieje niezawodny sposób wyszukiwania tekstu dynamicznego. Zamiast tego Znajdź grupę, która hostuje odpowiednie polecenie, sprawdzając identyfikatory [GUID i identyfikatory menu programu Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) lub identyfikatorów [GUID i identyfikatory pasków narzędzi programu Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md), a następnie wyszukaj identyfikator tej grupy. Jeśli definicja polecenia nie ma grupy jako [elementu nadrzędnego](../../extensibility/parent-element.md), Wyszukaj *SharedCmdPlace. vsct* i *ShellCmdPlace. vsct* (lub *VsDbgCmdPlace. vsct* dla poleceń debugera) dla `<CommandPlacement>` elementu, który ustawia element nadrzędny polecenia. *SharedCmdPlace. vsct*, *ShellCmdPlace. vsct*i *VsDbgCmdPlace. vsct* znajdują się w folderze * \<Visual Studio SDK installation path\> \VisualStudioIntegration\Common\Inc \\ * .
+     Nie istnieje niezawodny sposób wyszukiwania tekstu dynamicznego. Zamiast tego Znajdź grupę, która hostuje odpowiednie polecenie, sprawdzając identyfikatory [GUID i identyfikatory menu programu Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) lub identyfikatorów [GUID i identyfikatory pasków narzędzi programu Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md), a następnie wyszukaj identyfikator tej grupy. Jeśli definicja polecenia nie ma grupy jako [elementu nadrzędnego](../../extensibility/parent-element.md), Wyszukaj *SharedCmdPlace. vsct* i *ShellCmdPlace. vsct* (lub *VsDbgCmdPlace. vsct* dla poleceń debugera) dla `<CommandPlacement>` elementu, który ustawia element nadrzędny polecenia. *SharedCmdPlace. vsct*, *ShellCmdPlace. vsct* i *VsDbgCmdPlace. vsct* znajdują się w folderze *\<Visual Studio SDK installation path\> \VisualStudioIntegration\Common\Inc \\* .
 
 ## <a name="see-also"></a>Zobacz też
 

@@ -1,5 +1,7 @@
 ---
 title: Hierarchie i wybór | Microsoft Docs
+description: Dowiedz się, w jaki sposób program Visual Studio obsługuje takie hierarchie jak projekty i w jaki sposób używa kontekstu wyboru, aby określić, co jest wyświetlane użytkownikowi.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0e38c2cea464abded5ecf6ee2c8ac087868b07e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 04f433e3da45e10d2b1721ac13254856489d2d0a
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708137"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480424"
 ---
 # <a name="hierarchies-and-selection"></a>Hierarchie i wybór
 Podczas dostosowywania [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] należy zrozumieć, jak program [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] obsługuje hierarchie, takie jak projekty i jak używa kontekstu wyboru, aby określić, co jest wyświetlane użytkownikowi. W tej sekcji omówiono koncepcje [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] hierarchii i wyboru.

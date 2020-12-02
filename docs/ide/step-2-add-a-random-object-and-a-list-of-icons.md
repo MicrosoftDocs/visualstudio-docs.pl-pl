@@ -1,5 +1,7 @@
 ---
 title: Krok 2. Dodawanie losowego obiektu i listy ikon
+description: Dowiedz się, jak utworzyć zestaw pasujących symboli dla gry.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f4731778ebb3acbdc3bb7d9b5827c1015541d98
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1018b390f6ebbf67fab88554aa85fe6a8ecec88d
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579419"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480697"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Krok 2. Dodawanie losowego obiektu i listy ikon
 
@@ -26,7 +28,7 @@ W tym kroku utworzysz zestaw pasujących symboli dla gry. Każdy symbol jest dod
 
 ## <a name="to-add-a-random-object-and-a-list-of-icons"></a>Aby dodać losowy obiekt i listę ikon
 
-1. W **Eksplorator rozwiązań**wybierz opcję *Form1.cs* , jeśli używasz języka C# lub *Form1. vb* , jeśli używasz Visual Basic, a następnie na pasku menu wybierz polecenie **Wyświetl**  >  **kod**. Alternatywnie można wybrać klawisz **F7** lub kliknąć dwukrotnie przycisk **Form1** w **Eksplorator rozwiązań**.
+1. W **Eksplorator rozwiązań** wybierz opcję *Form1.cs* , jeśli używasz języka C# lub *Form1. vb* , jeśli używasz Visual Basic, a następnie na pasku menu wybierz polecenie **Wyświetl**  >  **kod**. Alternatywnie można wybrać klawisz **F7** lub kliknąć dwukrotnie przycisk **Form1** w **Eksplorator rozwiązań**.
 
      Spowoduje to wyświetlenie modułu kodu formularza Form1.
 
@@ -42,7 +44,7 @@ W tym kroku utworzysz zestaw pasujących symboli dla gry. Każdy symbol jest dod
 
 3. Podczas dodawania obiektu list należy zauważyć, że zostanie otwarte okno **IntelliSense** . Poniżej znajduje się przykładowy kod w języku C#, ale podobny tekst pojawia się po dodaniu listy w Visual Basic.
 
-     ![Okno Właściwości pokazujące zdarzenie Kliknij](../ide/media/express_listintellisense.png)<br/>*Okno **IntelliSense***
+     ![Okno Właściwości pokazujące zdarzenie Kliknij](../ide/media/express_listintellisense.png)<br/>*Okno *_IntelliSense_**
 
     > [!NOTE]
     > Okno IntelliSense pojawia się tylko wtedy, gdy ręcznie wprowadzasz kod. Nie pojawia się, jeśli kopiujesz i wklejasz kod.

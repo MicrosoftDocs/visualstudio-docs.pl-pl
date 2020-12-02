@@ -1,5 +1,7 @@
 ---
 title: Wprowadzenie z wtyczkami do kontroli źródła | Microsoft Docs
+description: Dowiedz się więcej na temat tworzenia wtyczki kontroli źródła, która implementuje funkcje zdefiniowane w interfejsie API wtyczki kontroli źródła do użycia w kontroli wersji kodu źródłowego.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: efc21e07830614d9d3041b2d2d231fd82c652114
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1524e4c4f08b272fd17973597d558efdabec41af
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708346"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480502"
 ---
 # <a name="get-started-with-source-control-plug-ins"></a>Wprowadzenie do wtyczek kontroli źródła
 Aby utworzyć wtyczkę kontroli źródła, należy utworzyć bibliotekę DLL, która implementuje funkcje zdefiniowane w interfejsie API dodatku plug-in kontroli źródła, a następnie zarejestrować bibliotekę DLL w programie, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] aby była dostępna do użycia w kontroli wersji kodu źródłowego.

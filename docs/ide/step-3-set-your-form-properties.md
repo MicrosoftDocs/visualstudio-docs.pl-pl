@@ -1,5 +1,7 @@
 ---
 title: Krok 3. Ustawianie właściwości formularza
+description: Dowiedz się, jak używać okno Właściwości, aby zmienić wygląd formularza.
+ms.custom: SEO-VS-2020
 ms.date: 08/30/2019
 ms.assetid: 634ef037-1525-48c8-ac7f-abf04be69376
 ms.topic: tutorial
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82dbef4baee72be8ff96f83e436b2587e9a020ea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0b858ed302c7fe89049585edb7cc5c4391a4789b
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579853"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480619"
 ---
 # <a name="step-3-set-your-form-properties"></a>Krok 3. Ustawianie właściwości formularza
 
@@ -33,7 +35,7 @@ Następnie użyj okna **Właściwości** , aby zmienić wygląd formularza.
 1. Po wybraniu formularza Znajdź właściwość **tekst** w oknie **Właściwości** . W zależności od tego, jak lista jest sortowana, może być konieczne przewinięcie w dół. Wybierz **tekst**, wpisz **Podgląd obrazów**, a następnie wybierz **klawisz ENTER**.  Formularz powinien teraz mieć **obraz** tekstu na pasku tytułu, a okno **Właściwości** powinno wyglądać podobnie do poniższego zrzutu ekranu.
 
     ![Okno właściwości](../ide/media/express_edittextproperty.png)<br>
-   ***Properties*** *Okno* właściwości
+   **_Właściwości_* _ _window *
 
    > [!NOTE]
    > Właściwości mogą być uporządkowane według **kategorii** lub widoku **alfabetycznego** . Można przełączać się między tymi dwoma widokami za pomocą przycisków w oknie **Właściwości** . W tym samouczku łatwiej jest znaleźć właściwości w widoku **alfabetycznym** .
@@ -56,7 +58,7 @@ Następnie użyj okna **Właściwości** , aby zmienić wygląd formularza.
    - Na pasku narzędzi wybierz przycisk **Rozpocznij debugowanie** , który pojawia się w następujący sposób.
 
       ![Przycisk paska narzędzi Rozpocznij debugowanie](../ide/media/express_icondebug.png)<br>
-     *Przycisk paska narzędzi* ***Rozpocznij debugowanie***
+     **_Rozpocznij debugowanie_* _ _toolbar przycisk *
 
      Tak jak wcześniej, środowisko IDE kompiluje i uruchamia aplikację, a zostanie wyświetlone okno.
 

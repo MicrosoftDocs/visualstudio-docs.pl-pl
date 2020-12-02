@@ -1,5 +1,7 @@
 ---
 title: Krok 2. Uruchamianie aplikacji Przeglądarka obrazów
+description: Dowiedz się, jak uruchomić aplikację Picture Viewer.
+ms.custom: SEO-VS-2020
 ms.date: 09/06/2019
 ms.assetid: 9a8fe90e-c97b-4e98-b6c8-0c6b3962c49d
 ms.topic: tutorial
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8204f2a32a1bb29203c75af55aa383141f17853f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ddc016df63a7bb6ffbe3923de72c4f23cb32739c
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579404"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480658"
 ---
 # <a name="step-2-run-your-picture-viewer-app"></a>Krok 2. Uruchamianie aplikacji Przeglądarka obrazów
 
@@ -32,17 +34,17 @@ Oto jak uruchomić aplikację.
     - Na pasku narzędzi wybierz przycisk **Rozpocznij debugowanie** , który jest wyświetlany w następujący sposób:
 
       ![Przycisk paska narzędzi Rozpocznij debugowanie](../ide/media/express_icondebug.png)<br>
-      *Przycisk paska narzędzi* ***Rozpocznij debugowanie***
+      **_Rozpocznij debugowanie_* _ _toolbar przycisk *
 
 1. Program Visual Studio uruchamia aplikację i zostanie wyświetlone okno o nazwie **Form1** . Poniższy zrzut ekranu przedstawia utworzoną aplikację. Aplikacja jest uruchomiona i wkrótce zostanie dodana do niej.
 
      ![Windows Forms uruchomiona aplikacja](../ide/media/express_firstrun.png)<br>
-***Aplikacja Windows Forms*** *uruchomiona*
+**_Windows Forms App_* _, _running *
 
 1. Wróć do zintegrowanego środowiska programistycznego (IDE) programu Visual Studio, a następnie spójrz na nowy pasek narzędzi. Po uruchomieniu aplikacji na pasku narzędzi są wyświetlane dodatkowe przyciski. Te przyciski umożliwiają wykonywanie takich czynności, jak zatrzymywanie i uruchamianie aplikacji oraz śledzenie wszelkich błędów (usterek), które może on mieć. Na potrzeby tego przykładu używamy go do uruchamiania i zatrzymywania aplikacji.
 
      ![Pasek narzędzi debugowania](../ide/media/express_debugtoolbar.png)<br>
-***Debugging*** *Pasek narzędzi* debugowania
+***Debugowanie** _ _toolbar *
 
 1. Aby zatrzymać aplikację, użyj jednej z następujących metod:
 

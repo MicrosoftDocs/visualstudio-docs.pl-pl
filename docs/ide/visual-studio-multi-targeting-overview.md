@@ -1,5 +1,6 @@
 ---
 title: Platformy .NET dla określonych platform
+description: Dowiedz się, jak określić wersję .NET Framework, do której ma być przeznaczony projekt, aby aplikacja mogła korzystać tylko z funkcji dostępnych w określonej wersji.
 ms.date: 03/31/2020
 ms.topic: overview
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b7c3c2b6b81f8f7793bda35c6b220e43caee9b5f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9bc20c2ee08a2b838e0fd1ab14ee9a8388912542
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770445"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479735"
 ---
 # <a name="framework-targeting-overview"></a>Omówienie określania celu platformy
 
@@ -81,7 +82,7 @@ Podczas tworzenia projektu .NET Framework można wybrać docelową wersję .NET 
 
 W istniejącym projekcie Visual Basic, C# lub F # można zmienić docelową wersję platformy .NET w oknie dialogowym właściwości projektu. Aby uzyskać informacje o sposobie zmiany wersji docelowej dla projektów języka C++, zobacz [Jak zmodyfikować platformę docelową i zestaw narzędzi platformy](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset) .
 
-1. W **Eksplorator rozwiązań**Otwórz menu dostępne po kliknięciu prawym przyciskiem myszy dla projektu, który chcesz zmienić, a następnie wybierz polecenie **Właściwości**.
+1. W **Eksplorator rozwiązań** Otwórz menu dostępne po kliknięciu prawym przyciskiem myszy dla projektu, który chcesz zmienić, a następnie wybierz polecenie **Właściwości**.
 
 1. W lewej kolumnie okna **Właściwości** wybierz kartę **aplikacja** .
 

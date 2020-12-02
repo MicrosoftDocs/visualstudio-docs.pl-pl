@@ -1,5 +1,7 @@
 ---
 title: Krok 2. Tworzenie zadania z dodawaniem losowych liczb
+description: Dowiedz się, jak zwiększyć wyzwanie quizu, dodając problemy matematyczne, które są oparte na liczbie losowej.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2febef6987cf3440f92f6a6c505840cfe3ca3448
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c23b85dec73c6810420dc5e8ab2d3f4121fc903
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579890"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480684"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Krok 2. Tworzenie zadania z dodawaniem losowych liczb
 
@@ -42,7 +44,7 @@ W drugiej części tego samouczka nastąpi wyzwanie quizu poprzez dodanie proble
 
      [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
-     Do formularza został dodany losowy obiekt i nazwany się **losowo**obiekt.
+     Do formularza został dodany losowy obiekt i nazwany się **losowo** obiekt.
 
      `Random` jest znany jako obiekt. Prawdopodobnie wysłuchuje ten wyraz wcześniej i dowiesz się więcej na temat tego, co oznacza programowanie w następnym samouczku. Na razie Pamiętaj, że możesz użyć instrukcji, `new` Aby tworzyć przyciski, etykiety, panele, OpenFileDialogs, ColorDialog, SoundPlayer, losowo i nawet formularze, a te elementy są określane jako obiekty. Po uruchomieniu programu formularz jest uruchamiany, a związany z nim kod tworzy losowy obiekt i nazywa je **losowo**.
 

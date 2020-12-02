@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Tworzenie. Plik vsct | Microsoft Docs'
+description: Dowiedz się, jak ręcznie utworzyć plik. vsct, oparty na języku XML plik konfiguracyjny tabeli poleceń programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a571098deeeca0e8262d855c24d0bf1ce66be08e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 47d38e68494f29947131bcc8ce3a2a59b2e8d48b
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905527"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480372"
 ---
 # <a name="how-to-create-a-vsct-file"></a>Instrukcje: Tworzenie pliku. vsct
 
@@ -61,7 +63,7 @@ Można utworzyć plik *. vsct* opartego na języku XML z istniejącej tabeli pol
 
 1. Uzyskaj kopię języka Perl.
 
-2. Uzyskaj kopię skryptu języka Perl *ConvertCTCToVSCT.pl*, zazwyczaj znajdującą się w folderze * \<Visual Studio SDK installation path> \VisualStudioIntegration\Tools\bin* .
+2. Uzyskaj kopię skryptu języka Perl *ConvertCTCToVSCT.pl*, zazwyczaj znajdującą się w folderze *\<Visual Studio SDK installation path> \VisualStudioIntegration\Tools\bin* .
 
 3. Uzyskaj kopię pliku źródłowego *. CTC* , który chcesz skonwertować.
 
@@ -138,7 +140,7 @@ Można utworzyć plik *vsct* oparty na języku XML z istniejącego pliku binarne
 
      Ten znacznik powinien być umieszczony wewnątrz `ItemGroup` elementu, który zawiera osadzone zasoby.
 
-4. Otwórz plik pakietu, zazwyczaj o nazwie * \<ProjectName\> Package.cs* lub * \<ProjectName\> Package. vb*, w edytorze.
+4. Otwórz plik pakietu, zazwyczaj o nazwie *\<ProjectName\> Package.cs* lub *\<ProjectName\> Package. vb*, w edytorze.
 
 5. Dodaj `ProvideMenuResource` atrybut do klasy pakietu, jak pokazano w poniższym przykładzie.
 

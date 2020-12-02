@@ -1,5 +1,7 @@
 ---
 title: Identyfikatory GUID i identyfikator pasków narzędzi programu Visual Studio | Microsoft Docs
+description: Wyświetl listę wartości identyfikatora GUID i identyfikatora dla pasków narzędzi i zawartych w nich grup, które znajdują się w zintegrowanym środowisku programistycznym (IDE) programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe42821cdacc038d767e52373d45ddd7b8954323
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b44cda401faa0d7e34bf9ce7579aa3cca026fa13
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708225"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480385"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>Identyfikatory GUID i identyfikator pasków narzędzi programu Visual Studio
 W tym temacie przedstawiono identyfikatory GUID i identyfikator pasków narzędzi, które znajdują się w zintegrowanym środowisku programistycznym (IDE) programu Visual Studio, oraz zawartych w nich grup. Te wartości są zdefiniowane w plikach *. vsct* , które są instalowane w ramach zestawu Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [polecenia, menu i grupy zdefiniowane przez środowisko IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -40,7 +42,7 @@ W tym temacie przedstawiono identyfikatory GUID i identyfikator pasków narzędz
 
 |Pasek narzędzi|ID|
 |-------------|--------|
-|Standard|IDM_VS_TOOL_STANDARD|
+|Standardowa|IDM_VS_TOOL_STANDARD|
 |Kompilacja|IDM_VS_TOOL_BUILD|
 |Edytor tekstu|IDM_VS_TOOL_TEXTEDITOR|
 |Debugowanie|guidVSDebugGroup: IDM_DEBUG_TOOLBAR|
@@ -95,7 +97,7 @@ W tym temacie przedstawiono identyfikatory GUID i identyfikator pasków narzędz
 |----------|--------|
 |Wykonanie|IDM_DEBUG_TOOLBAR|
 |Wzmacnia|IDG_DEBUG_TOOLBAR_STEPPING|
-|Obejrzyj|IDG_DEBUG_TOOLBAR_WATCH|
+|Zegarek|IDG_DEBUG_TOOLBAR_WATCH|
 |Windows|IDG_DEBUG_TOOLBAR_WINDOWS|
 
 ### <a name="debug-location-toolbar-groups"></a>Grupy paska narzędzi lokalizacji debugowania

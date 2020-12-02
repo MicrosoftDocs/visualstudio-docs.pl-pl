@@ -1,5 +1,7 @@
 ---
 title: Krok 3. Dodawanie czasomierza odliczającego w dół
+description: Dowiedz się, jak dodać czasomierz odliczania, aby śledzić liczbę sekund, które pozostaną na zakończenie dla modułu quizu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ca2dce7f6f9ddc484b67f250f34d69747c6e46e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 723b5daabd19d2e49462bf62d2657c6a6cd14b7f
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579873"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480645"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>Krok 3. Dodawanie czasomierza odliczającego w dół
 
@@ -94,7 +96,7 @@ W trzeciej części tego samouczka dodasz czasomierz odliczania, aby śledzić l
 
      Instrukcja `addend1 + addend2` dodaje wartości w obu zmiennych jednocześnie. Pierwsza część ( `sum.Value` ) używa właściwości **wartość** kontrolki sum NumericUpDown, aby wyświetlić poprawną odpowiedź. Użyj tej samej właściwości później, aby sprawdzić odpowiedzi dla quizu.
 
-     Program Quiz uczestnikom może łatwiej wprowadzać liczby przy użyciu <xref:System.Windows.Forms.NumericUpDown> kontrolki, co oznacza, że można ją użyć do odpowiedzi na problemy matematyczne. Wszystkie potencjalne odpowiedzi są liczbami całkowitymi od 0 do 100. Pozostawiając wartości domyślne właściwości **minimum**, **maksimum**i **DecimalPlaces** , upewnij się, że w uczestnikom quizu nie można wprowadzać cyfr dziesiętnych, liczb ujemnych ani liczb, które są zbyt duże. (Jeśli chcesz zezwolić uczestnikomowi quizu na wprowadzenie 3,141, ale nie 3,1415, możesz ustawić właściwość **DecimalPlaces** na 3).
+     Program Quiz uczestnikom może łatwiej wprowadzać liczby przy użyciu <xref:System.Windows.Forms.NumericUpDown> kontrolki, co oznacza, że można ją użyć do odpowiedzi na problemy matematyczne. Wszystkie potencjalne odpowiedzi są liczbami całkowitymi od 0 do 100. Pozostawiając wartości domyślne właściwości **minimum**, **maksimum** i **DecimalPlaces** , upewnij się, że w uczestnikom quizu nie można wprowadzać cyfr dziesiętnych, liczb ujemnych ani liczb, które są zbyt duże. (Jeśli chcesz zezwolić uczestnikomowi quizu na wprowadzenie 3,141, ale nie 3,1415, możesz ustawić właściwość **DecimalPlaces** na 3).
 
 6. Dodaj trzy wiersze na końcu `StartTheQuiz()` metody, tak aby kod wyglądał następująco.
 

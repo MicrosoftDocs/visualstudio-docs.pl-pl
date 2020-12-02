@@ -1,5 +1,7 @@
 ---
 title: Rozwiązania i projekty
+description: Poznaj projekty i rozwiązania programu Visual Studio i Dowiedz się, jak utworzyć nowy projekt za pomocą narzędzia Eksplorator rozwiązań.
+ms.custom: SEO-VS-2020
 ms.date: 06/26/2020
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad0ee64afa78a962271d2b702ee525287c5b2457
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 949da02ac074e9740038fef7917655ca552a12f6
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468733"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480710"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Rozwiązania i projekty w programie Visual Studio
 
@@ -42,7 +44,7 @@ Podczas tworzenia aplikacji lub witryny sieci Web w programie Visual Studio rozp
 
 Program Visual Studio używa programu [MSBuild](../msbuild/msbuild.md) do kompilowania każdego projektu w rozwiązaniu, a każdy projekt zawiera plik projektu MSBuild. Rozszerzenie pliku odzwierciedla typ projektu, na przykład projekt C# (. csproj), projekt Visual Basic (. vbproj) lub projekt bazy danych (. DBPROJ). Plik projektu to dokument XML, który zawiera wszystkie informacje i instrukcje wymagane przez MSBuild w celu skompilowania projektu, w tym zawartość, wymagania dotyczące platformy, informacje o wersji, ustawienia serwera sieci Web lub serwera bazy danych oraz zadania do wykonania.
 
-Pliki projektu są oparte na [schemacie XML programu MSBuild](../msbuild/msbuild-project-file-schema-reference.md). Aby sprawdzić zawartość nowszych [plików projektu w stylu zestawu SDK](../msbuild/how-to-use-project-sdk.md) w programie Visual Studio, kliknij prawym przyciskiem myszy węzeł projektu w **Eksplorator rozwiązań** i wybierz polecenie **Edytuj \<projectname\> **. Aby przyjrzeć się zawartości .NET Framework i innych projektów tego stylu, najpierw Zwolnij projekt (kliknij prawym przyciskiem myszy węzeł projektu w **Eksplorator rozwiązań** i wybierz polecenie **Zwolnij projekt**). Następnie kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Edytuj \<projectname\> **.
+Pliki projektu są oparte na [schemacie XML programu MSBuild](../msbuild/msbuild-project-file-schema-reference.md). Aby sprawdzić zawartość nowszych [plików projektu w stylu zestawu SDK](../msbuild/how-to-use-project-sdk.md) w programie Visual Studio, kliknij prawym przyciskiem myszy węzeł projektu w **Eksplorator rozwiązań** i wybierz polecenie **Edytuj \<projectname\>**. Aby przyjrzeć się zawartości .NET Framework i innych projektów tego stylu, najpierw Zwolnij projekt (kliknij prawym przyciskiem myszy węzeł projektu w **Eksplorator rozwiązań** i wybierz polecenie **Zwolnij projekt**). Następnie kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Edytuj \<projectname\>**.
 
 > [!NOTE]
 > Nie musisz używać rozwiązań ani projektów w programie Visual Studio do edytowania, kompilowania i debugowania kodu. Możesz po prostu otworzyć folder zawierający pliki źródłowe w programie Visual Studio i rozpocząć edycję. Aby uzyskać więcej informacji, zobacz [Programowanie kodu w programie Visual Studio bez projektów i rozwiązań](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).

@@ -1,5 +1,7 @@
 ---
 title: Uwidacznianie zdarzeń w zestawie Visual Studio SDK | Microsoft Docs
+description: Dowiedz się więcej o metodach i wpisach rejestru programu Visual Studio SDK, które uwidaczniają zdarzenia dla projektów i elementów projektu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 48f1e0ea0dcd07bbc26fc89d5c61a6a5941d4727
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5eec842f989497fda618482916154aabdcdd406
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708489"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480541"
 ---
 # <a name="expose-events-in-the-visual-studio-sdk"></a>Uwidacznianie zdarzeń w zestawie Visual Studio SDK
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] umożliwia źródło zdarzeń przy użyciu automatyzacji. Zalecamy źródło zdarzeń dla projektów i elementów projektu.
@@ -27,7 +29,7 @@ ms.locfileid: "80708489"
 
 1. Środowisko zostanie uruchomione.
 
-2. Odczytuje z rejestru wszystkie nazwy wartości w kluczach **Automation**, **AutomationEvents**i **AutomationProperties** wszystkich pakietów VSPackage i przechowuje te nazwy w tabeli.
+2. Odczytuje z rejestru wszystkie nazwy wartości w kluczach **Automation**, **AutomationEvents** i **AutomationProperties** wszystkich pakietów VSPackage i przechowuje te nazwy w tabeli.
 
 3. Wywołania konsumenta usługi Automation, w tym przykładzie `DTE.Events.AutomationProjectsEvents` lub `DTE.Events.AutomationProjectItemsEvents` .
 
@@ -46,7 +48,7 @@ ms.locfileid: "80708489"
 ## <a name="registry-entries-from-the-basic-project-sample"></a>Wpisy rejestru z przykładu podstawowego projektu
  W tej sekcji przedstawiono, gdzie dodać wartości zdarzeń automatyzacji do rejestru.
 
- **[HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\8.0\Packages \\<PkgGUID \> \AutomationEvents]**
+ **[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Packages\\<PkgGUID \> \AutomationEvents]**
 
  **AutomationProjectEvents** = zwraca `AutomationProjectEvents` obiekt.
 
@@ -62,7 +64,7 @@ ms.locfileid: "80708489"
 
  ![Zdarzenia projektu programu Visual Studio](../../extensibility/internals/media/projectevents.gif "ProjectEvents") Model automatyzacji dla zdarzeń
 
- Klasa `CProjectEventsContainer` reprezentuje obiekt źródłowy dla *BscProjectsEvents*i `CProjectItemsEventsContainer` reprezentuje obiekt źródłowy dla *BscProjectItemsEvents*.
+ Klasa `CProjectEventsContainer` reprezentuje obiekt źródłowy dla *BscProjectsEvents* i `CProjectItemsEventsContainer` reprezentuje obiekt źródłowy dla *BscProjectItemsEvents*.
 
  W większości przypadków należy zwrócić nowy obiekt dla każdego żądania zdarzenia, ponieważ większość obiektów zdarzeń pobiera obiekt Filter. Gdy uruchamiasz zdarzenie, zaznacz ten filtr, aby sprawdzić, czy program obsługi zdarzeń jest wywoływany.
 
