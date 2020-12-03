@@ -2,17 +2,17 @@
 title: WhiteSource w subskrypcjach programu Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 5e5d3f1a-533d-42eb-960e-01bb6bc7ca16
-ms.date: 10/22/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Dowiedz się, jak aktywować subskrypcję usługi WhiteSource w ramach subskrypcji programu Visual Studio.
-ms.openlocfilehash: 7d0e95bf82f31b92ef5b581a0b7d8b7d082d3237
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: dffa4645795e771b2f947426907ed3e03caedf80
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435994"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537685"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource w subskrypcjach programu Visual Studio
 
@@ -43,9 +43,9 @@ Znajdź i napraw luki w zabezpieczeniach typu "open source" i Generuj kompleksow
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialny?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standardowa)   | LICENCJONOWANie, Azure, sprzedaż detaliczna, wybrane NFR<sup>1</sup> | 6 miesięcy       |  Tak       |
-| Visual Studio Enterprise z usługą GitHub Enterprise | Licencja | 6 miesięcy       |  Tak       |
+| Visual Studio Enterprise subskrypcję z usługą GitHub Enterprise | Licencja | 6 miesięcy       |  Tak       |
 | Visual Studio Professional (standardowa) | LICENCJONOWANie, Azure, sprzedaż detaliczna                                       | Niedostępne                                                           |Nie dotyczy         |
-| Visual Studio Professional z usługą GitHub Enterprise | Licencja                                      | Niedostępne                                                           |Nie dotyczy         |
+| Visual Studio Professional subskrypcję z usługą GitHub Enterprise | Licencja                                      | Niedostępne                                                           |Nie dotyczy         |
 | Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Niedostępne                                                           |Nie dotyczy         |
 | Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Niedostępne                                                           |Nie dotyczy         |
 | Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure                                       | Niedostępne                                                           |Nie dotyczy|
@@ -63,7 +63,7 @@ Znajdź i napraw luki w zabezpieczeniach typu "open source" i Generuj kompleksow
 
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Azure DevOps documentation (Dokumentacja usługi Azure DevOps)](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)
 - [Dokumentacja Microsoft 365](/microsoft-365/)
 

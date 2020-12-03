@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: e5768153-2758-46d3-a323-3272def213ee
-ms.date: 03/25/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Dowiedz się więcej na temat korzyści z usługi CODE Magazine dostępnych w ramach subskrypcji programu Visual Studio.
-ms.openlocfilehash: 30bc728db5aea53d442552ed9b79f506b0f6b6d7
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: ff65a47df129eaf59d1404335cd8fd98df7474d6
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970490"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538114"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Magazyn kodu uwzględniony w subskrypcjach programu Visual Studio
 
@@ -50,9 +50,9 @@ Po zakończeniu zamówienia subskrypcji zobaczysz stronę potwierdzenia zawieraj
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialny?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standardowa)   | LICENCJONOWANie, Azure, sprzedaż detaliczna, wybrane NFR<sup>1</sup> | Dostępne       |  Nie          |
-| Visual Studio Enterprise z usługą GitHub Enterprise   | Licencja| Dostępne       |  Nie          |
+| Visual Studio Enterprise subskrypcję z usługą GitHub Enterprise   | Licencja| Dostępne       |  Nie          |
 | Visual Studio Professional (standardowa) | LICENCJONOWANie, Azure, sprzedaż detaliczna                                       | Dostępne                                                            |  Nie          |
-| Visual Studio Professional z usługą GitHub Enterprise | Licencja                                      | Dostępne                                                            |  Nie          |
+| Visual Studio Professional subskrypcję z usługą GitHub Enterprise | Licencja                                      | Dostępne                                                            |  Nie          |
 | Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Dostępne                                             |  Nie          |
 | Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Dostępne                                              |  Nie          |
 | Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure | Niedostępne | Nie dotyczy |

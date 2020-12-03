@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
-ms.date: 11/05/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Dowiedz się, jak aktywować korzyść pomocy technicznej w ramach subskrypcji programu Visual Studio.
-ms.openlocfilehash: 9ae88bcc066473752a600284d815378bc8870f64
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: ea67dde54dd66af6d20b7f9af84d2bfe80211444
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93413984"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537971"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktywuj korzyść pomocy technicznej i korzystaj z niej w subskrypcjach programu Visual Studio
 Korzyść pomocy technicznej w ramach subskrypcji programu Visual Studio służy do rozwiązywania problemów z uszkodzeniem w **środowiskach nieprodukcyjnych** dla produktów, które są nadal w fazie wsparcia podstawowego dla [cyklu](https://support.microsoft.com/lifecycle/search)pomocy technicznej. Visual Studio Enterprise standardowa i roczna subskrypcja chmury otrzymuje cztery incydenty, podczas Visual Studio Professional standardowa i roczna subskrypcja chmury odbiera dwa zdarzenia, przez maksymalnie 1 rok od aktywacji korzyści. Aktywacja korzyści musi nastąpić, gdy subskrypcja jest aktualna.
@@ -30,7 +30,7 @@ Narzędzia deweloperskie, takie jak środowisko IDE programu Visual Studio i Azu
 
 Produkty niebędące deweloperami (takie jak SQL, Windows, SharePoint) pobrane z subskrypcji programu Visual Studio kwalifikują się tylko do wsparcia podstawowego. Te produkty są licencjonowane wyłącznie w środowiskach deweloperskich, które umożliwiają projektowanie, opracowywanie, testowanie i prezentowanie aplikacji. Te produkty nie są licencjonowane dla środowisk produkcyjnych.
 
-Opisy poziomów produktów: rozwiń węzeł **niedostępne plany pomocy technicznej**. Jeśli nie można **użyć planu pomocy technicznej w celu uzyskania pomocy technicznej dotyczącej określonego produktu (kod: 8)** , nie można użyć umowy serwisowej dla wybranej wersji produktu.
+Opisy poziomów produktów: rozwiń węzeł **niedostępne plany pomocy technicznej**. Jeśli nie można **użyć planu pomocy technicznej w celu uzyskania pomocy technicznej dotyczącej określonego produktu (kod: 8)**, nie można użyć umowy serwisowej dla wybranej wersji produktu.
 
 > [!IMPORTANT]
 > Podane zdarzenia pomocy technicznej są przeznaczone do obsługi poprawek przerwania.  Nie mogą być używane w celu uzyskania pomocy w przypadku problemów z kodowaniem/programowaniem obejmujących następujące produkty:
@@ -86,7 +86,7 @@ Aby przesłać zdarzenie za pośrednictwem portalu pomocy technicznej dla firm, 
 0. Nowy kontrakt pomocy technicznej zostanie wyświetlony w **kroku 2**.  Wybierz go.
 0. Wskaż ważność problemu.  Wartość domyślna to "ważne". 
 0. Wybierz, Kiedy chcesz uzyskać pomoc techniczną. Domyślnie wybrana jest wartość "tylko w godzinach pracy". Opcja dla "24/7 Support" jest dostępna tylko w przypadku wybrania opcji "krytyczna" jako ważności.
-0. Kliknij przycisk **Dalej** , aby kontynuować. 
+0. Kliknij pozycję **Next** (Dalej), aby kontynuować. 
 0. W **kroku 3** podaj informacje kontaktowe, które mają być używane przez agenta pomocy technicznej, aby skontaktować się z Tobą. 
    > [!div class="mx-imgBorder"]
    > ![Weryfikowanie informacji kontaktowych](_img/vs-tech-support/vs-tech-support-contact-info.png "Zweryfikuj swoje informacje kontaktowe i preferowaną metodę kontaktu.") 
@@ -108,9 +108,9 @@ Aby skorzystać z pomocy technicznej subskrypcji programu Visual Studio w przypa
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialny?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standardowa)   | LICENCJONOWANie, Azure, sprzedaż detaliczna, wybrane NFR<sup>1</sup> | 4 zdarzenia       |  Tak|
-| Visual Studio Enterprise z usługą GitHub Enterprise | Licencja | 4 zdarzenia       |  Tak|
+| Visual Studio Enterprise subskrypcję z usługą GitHub Enterprise | Licencja | 4 zdarzenia       |  Tak|
 | Visual Studio Professional (standardowa) | LICENCJONOWANie, Azure, sprzedaż detaliczna, wybrane NFR<sup>2</sup>                                        | 2 zdarzenia                                                          |Tak         |
-| Visual Studio Professional z usługą GitHub Enterprise | Licencja                                     | 2 zdarzenia                                                          |Tak         |
+| Visual Studio Professional subskrypcję z usługą GitHub Enterprise | Licencja                                     | 2 zdarzenia                                                          |Tak         |
 | Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | 2 zdarzenia                                             |  Tak         |
 | Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | 2 zdarzenia                                               | Tak         |
 | Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure                                       | Niedostępne                                                           |Nie dotyczy|
@@ -124,12 +124,12 @@ Nie masz pewności, której subskrypcji używasz?  Połącz się z, [https://my.
 
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Azure DevOps documentation (Dokumentacja usługi Azure DevOps)](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)
 - [Dokumentacja Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
 Pamiętaj, aby aktywować te doskonałe korzyści, aby zapewnić największą subskrypcję programu Visual Studio:
-- [Visual Studio](vs-ide-benefit.md)
+- [Program Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
 - [Indywidualne środki na korzystanie z usługi Azure DevTest](vs-azure.md)

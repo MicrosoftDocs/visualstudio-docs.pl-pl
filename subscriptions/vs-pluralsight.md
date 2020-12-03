@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
-ms.date: 08/04/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Dowiedz się więcej na temat subskrypcji szkoleniowej Pluralsight dołączonej do wybranych subskrypcji programu Visual Studio.
-ms.openlocfilehash: 26056c823dc4ab67f576eb430b85caac26d854af
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 02ed0d2417317116182800980206a1fcc7fbfc16
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "91005345"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537984"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Korzyści z szkolenia Pluralsight w subskrypcjach programu Visual Studio
 
@@ -31,7 +31,7 @@ W poniższej tabeli szczegółowo opisano, jakie korzyści z subskrypcji Plurals
 1. Nastąpi przekierowanie do strony Pluralsight, która jest dostępna w ramach subskrypcji programu Visual Studio.
    - Podaj informacje kontaktowe wymagane w formularzu
    - Kliknij pole wyboru, aby zaakceptować warunki użytkowania
-   - Kliknij pozycję **Zrealizuj** .
+   - Kliknij pozycję **Zrealizuj**.
    > [!div class="mx-imgBorder"]
    > ![Rejestracja Pluralsight](_img/vs-pluralsight/vs-pluralsight-registration.png "Wypełnij formularz rejestracji, kliknij pole wyboru, aby zaakceptować warunki, a następnie kliknij pozycję Zrealizuj.")
 
@@ -43,9 +43,9 @@ W poniższej tabeli szczegółowo opisano, jakie korzyści z subskrypcji Plurals
    > [!NOTE]
    > Jeśli Twoje konto nie kwalifikuje się do skorzystania z nowych ofert, otrzymasz wiadomość e-mail z informacją, że wystąpił problem podczas tworzenia konta, ponieważ nie jest on uprawniony.  Zawiera również informacje ułatwiające kontaktowanie się z zespołem pomocy technicznej firmy Pluralsight, który może odpowiedzieć na pytania dotyczące Twojego konta.
 
-1. Kliknij pozycję **Ustaw hasło** .
+1. Kliknij pozycję **Ustaw hasło**.
 
-1. Wprowadź wymagane hasło w polu **nowe hasło** , wprowadź je ponownie w polu **Potwierdź hasło** , a następnie kliknij przycisk **Zapisz** .
+1. Wprowadź wymagane hasło w polu **nowe hasło** , wprowadź je ponownie w polu **Potwierdź hasło** , a następnie kliknij przycisk **Zapisz**.
 
 1. Gotowe.  Teraz możesz zacząć uczenie się z tysiącami kursów Pluralsight!
 
@@ -73,9 +73,9 @@ Po wygaśnięciu subskrypcji Pluralsight stan zmieni się na "0 dni pozostało",
 |                          Poziom subskrypcji                          |     Kanały      |    Korzyść    |   Odnawialny?   |
 |----------------------------------------------------------------------|-------------------|---------------|----------------|
 |          Visual Studio Enterprise (standardowa)           | LICENCJONOWANie, Azure, sprzedaż detaliczna |   6 miesięcy    | Tak<sup>2</sup> |
-|          Visual Studio Enterprise z usługą GitHub Enterprise          | Licencja  |   6 miesięcy    | Tak<sup>2</sup> |
+|          Visual Studio Enterprise subskrypcję z usługą GitHub Enterprise          | Licencja  |   6 miesięcy    | Tak<sup>2</sup> |
 |         Visual Studio Professional (standardowa)          | LICENCJONOWANie, Azure, sprzedaż detaliczna |   3 miesiące    | Tak<sup>2</sup> |
-|         Visual Studio Professional z usługą GitHub Enterprise          | Licencja  |   3 miesiące    | Tak<sup>2</sup> |
+|         Visual Studio Professional subskrypcję z usługą GitHub Enterprise          | Licencja  |   3 miesiące    | Tak<sup>2</sup> |
 |              Visual Studio Test Professional (standardowa)              |    LICENCJONOWANie detaliczne     |   Niedostępne    | Nie dotyczy  |
 |                      Platformy MSDN (standardowa)                       |    LICENCJONOWANie detaliczne     |   Niedostępne    | Nie dotyczy  |
 | Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) |       Azure       | Niedostępne |       Nie dotyczy       |
@@ -112,7 +112,7 @@ Odp.: na koniec bezpłatnej subskrypcji usługi Pluralsight możesz zakupić sub
 
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Azure DevOps documentation (Dokumentacja usługi Azure DevOps)](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)
 - [Dokumentacja Microsoft 365](/microsoft-365/)
 

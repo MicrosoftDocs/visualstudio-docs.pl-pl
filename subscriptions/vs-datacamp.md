@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: fc33d419-78cf-485e-b558-5b7efa900f14
-ms.date: 10/22/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Dowiedz się więcej o subskrypcji szkoleniowej usługi datacamp dołączonej do wybranych subskrypcji programu Visual Studio.
-ms.openlocfilehash: 54f2cf98d6e726e8abf8a0a863a54cc891c12523
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: c675d49f1a099c53dfdabe08a71f1c5545010f97
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435894"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538088"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Korzyść szkoleniowa datacamp w subskrypcjach programu Visual Studio
 Kwalifikujące się subskrypcje programu Visual Studio obejmują subskrypcje do datacamp.  W przypadku usługi datacamp możesz poznać wszystkie potrzebne umiejętności analizy danych. Możesz wybrać, kiedy i w jaki sposób uczysz. W przypadku braku oprogramowania do zainstalowania i braku specjalnych wymagań sprzętowych nauka uczenia danych jest łatwiejsze niż kiedykolwiek.
@@ -60,9 +60,9 @@ Możesz zatrzymać w dowolnym momencie i wznowić szkolenia w następnej sesji. 
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialny?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standardowa)   | LICENCJONOWANie, Azure, sprzedaż detaliczna, | 3 miesiące       |  Nie.  Dostępne tylko dla nowych subskrybentów          |
-| Visual Studio Enterprise z usługą GitHub Enterprise   | Licencja | 3 miesiące       |  Nie.  Dostępne tylko dla nowych subskrybentów          |
+| Visual Studio Enterprise subskrypcję z usługą GitHub Enterprise   | Licencja | 3 miesiące       |  Nie.  Dostępne tylko dla nowych subskrybentów          |
 | Visual Studio Professional (standardowa) | LICENCJONOWANie, Azure, sprzedaż detaliczna                                       | 3 miesiące                                                            |  Nie.  Dostępne tylko dla nowych subskrybentów           |
-| Visual Studio Professional z usługą GitHub Enterprise| Licencja | 3 miesiące                                                            |  Nie.  Dostępne tylko dla nowych subskrybentów           |
+| Visual Studio Professional subskrypcję z usługą GitHub Enterprise| Licencja | 3 miesiące                                                            |  Nie.  Dostępne tylko dla nowych subskrybentów           |
 | Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | 3 miesiące                                             |  Nie.  Dostępne tylko dla nowych subskrybentów           |
 | Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | 3 miesiące                                              |  Nie.  Dostępne tylko dla nowych subskrybentów           |
 | Visual Studio Enterprise (standardowa)  | NFR<sup>1</sup> |Niedostępne  | Nie dotyczy |
@@ -85,7 +85,7 @@ Nie masz pewności, której subskrypcji używasz?  Połącz się z, [https://my.
 
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Azure DevOps documentation (Dokumentacja usługi Azure DevOps)](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)
 - [Dokumentacja Microsoft 365](/microsoft-365/)
 

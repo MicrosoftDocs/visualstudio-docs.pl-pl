@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: a747100c-6f08-41a4-aaad-05099741742b
-ms.date: 10/28/2020
+ms.date: 12/02/2020
 ms.topic: conceptual
 description: Dowiedz się, jak Administratorzy mogą rozwiązywać nadmiernie przydzieloną subskrypcje
-ms.openlocfilehash: bf3c23cad87dc88b24bae3e8b31ebf8b7d9e1dfe
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: c2876223d2aa4f8da5f267595a193a2fecc3ace2
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904294"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537750"
 ---
 # <a name="over-allocated-subscriptions"></a>Nadmiernie przydzieloną subskrypcje
 Czasami zamówienia są zmieniane po dodaniu subskrybentów, co może spowodować, że masz więcej przypisanych subskrypcji niż licencje należące do firmy. Jest to nazywane "nadwyżką alokacji".  
@@ -37,9 +37,9 @@ Istnieje kilka sposobów rozwiązywania nadmiernych alokacji:
 Jeśli Twoja organizacja ma Umowa Enterprise (EA), Administratorzy mogą przypisywać subskrypcje bez ich zakupu i uregulować je później za pomocą procesu uzgadniania znanego jako "true-up".  Po przekroczeniu przydziału organizacja będzie rozliczana za maksymalną liczbę subskrypcji przypisanych do użytkowników podczas "prawdziwej konfiguracji".  Ta wartość jest prawdziwa, nawet jeśli nie masz już maksymalnej liczby subskrypcji przypisanych w czasie rzeczywistym.  Aby dowiedzieć się więcej o monitorowaniu maksymalnego użycia, przejdź do tematu [maksymalne użycie](maximum-usage.md) .
 
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Azure DevOps documentation (Dokumentacja usługi Azure DevOps)](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)
 - [Dokumentacja Microsoft 365](/microsoft-365/)
 

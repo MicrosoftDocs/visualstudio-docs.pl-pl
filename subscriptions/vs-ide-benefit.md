@@ -1,18 +1,18 @@
 ---
-title: Korzyść środowiska IDE programu Visual Studio w Visual Studio Subscription | Microsoft Docs
+title: Korzyść środowiska IDE programu Visual Studio w ramach subskrypcji programu Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: c4b13464-76be-40f1-ad60-ed79ee264b12
-ms.date: 10/22/2020
+ms.date: 12/02/2020
 ms.topic: how-to
-description: Dowiedz się, jak pobrać i zainstalować środowisko IDE programu Visual Studio zawarte w subskrypcji programu Visual Studio.
-ms.openlocfilehash: 2baf2e452e86d44d814e3f4a511ebb5442b83578
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+description: Dowiedz się, jak pobrać i zainstalować środowisko IDE programu Visual Studio zawarte w subskrypcji programu Visual Studio
+ms.openlocfilehash: edabaa21e8f8b6c7fe8fee33d2c1a4252efa7a1c
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435758"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538062"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>Korzyść dla programu Visual Studio 2019
 
@@ -63,9 +63,9 @@ Aby pobrać środowisko IDE:
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialny?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standardowa, miesięczna chmura)   | LICENCJONOWANie, Azure, sprzedaż detaliczna, wybrane NFR<sup>1</sup> | Dostępne       |  Tak          |
-| Visual Studio Enterprise z usługą GitHub Enterprise   | Licencja | Dostępne       |  Tak          |
+| Visual Studio Enterprise subskrypcję z usługą GitHub Enterprise   | Licencja | Dostępne       |  Tak          |
 | Visual Studio Professional (standardowa, miesięczna chmura) | LICENCJONOWANie, Azure, sprzedaż detaliczna                                       | Dostępne                                                            |  Tak          |
-| Visual Studio Professional z usługą GitHub Enterprise | Licencja   | Dostępne              |  Tak          |
+| Visual Studio Professional subskrypcję z usługą GitHub Enterprise | Licencja   | Dostępne              |  Tak          |
 | Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Dostępne                                             |  Tak         |
 | Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Niedostępne                                              |  Nie dotyczy          |
 
@@ -84,7 +84,7 @@ Nie masz pewności, której subskrypcji używasz?  Połącz się z, [https://my.
 
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Azure DevOps documentation (Dokumentacja usługi Azure DevOps)](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)
 - [Dokumentacja Microsoft 365](/microsoft-365/)
 

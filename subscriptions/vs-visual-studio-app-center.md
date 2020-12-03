@@ -2,17 +2,17 @@
 title: Visual Studio App Center korzyść w subskrypcjach programu Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabushcl
 ms.assetid: badd1d4a-90a6-46de-a037-945a91e6019b
-ms.date: 10/22/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Dowiedz się więcej o korzyściach Visual Studio App Center uwzględnionych w subskrypcjach programu Visual Studio.
-ms.openlocfilehash: 6b1fc94d596f3b771f8354c0857ef533c00e1449
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 8468b7641d12eca4db09d55d8d308ef5a913bc3c
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435728"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537776"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center w subskrypcjach programu Visual Studio
 
@@ -43,9 +43,9 @@ Wprowadzenie do Visual Studio App Center jest proste.
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialny?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standardowa, miesięczna chmura)   | LICENCJONOWANie, Azure, sprzedaż detaliczna, NFR<sup>1</sup> | Dołączono       |  Tak          |
-| Visual Studio Enterprise z usługą GitHub Enterprise  | Licencja | Dołączono       |  Tak          |
+| Visual Studio Enterprise subskrypcję z usługą GitHub Enterprise  | Licencja | Dołączono       |  Tak          |
 | Visual Studio Professional (standardowa, miesięczna chmura) | LICENCJONOWANie, Azure, sprzedaż detaliczna                                       | Dołączono                                                            |Tak |
-| Visual Studio Professional z usługą GitHub Enterprise | Licencja                                      | Dołączono                                                            |Tak |
+| Visual Studio Professional subskrypcję z usługą GitHub Enterprise | Licencja                                      | Dołączono                                                            |Tak |
 | Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Dołączono                                                            |Tak |
 | Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Dołączono                                                            |Tak |
 ||
@@ -76,7 +76,7 @@ Teraz powinno być możliwe uzyskanie dostępu do portalu App Center i utworzeni
 
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Azure DevOps documentation (Dokumentacja usługi Azure DevOps)](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)
 - [Dokumentacja Microsoft 365](/microsoft-365/)
 

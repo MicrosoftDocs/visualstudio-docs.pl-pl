@@ -1,18 +1,18 @@
 ---
-title: Korzyść z rozmowy Concierge w Visual Studio Subscription | Microsoft Docs
+title: Korzyść usługi concierge chat w ramach subskrypcji programu Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: dcd99e32-c9f3-4e19-8428-319dfa220463
-ms.date: 10/21/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Dowiedz się więcej na temat korzyści z rozmowy Concierge zawartej w subskrypcjach programu Visual Studio.
-ms.openlocfilehash: 0aab627d7c870720c0cc0d043ffb6ce556568703
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: 4f5f188ee7b6662549e5ade80a97c57f24bce64c
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353385"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538101"
 ---
 # <a name="concierge-chat-in-visual-studio-subscriptions"></a>Concierge rozmowę w subskrypcjach programu Visual Studio
 Usługa czatu Concierge zapewnia pomoc w zakresie znajdowania informacji o produktach i dokumentacji technicznej, a także pomoc przy korzystaniu z korzyści z subskrypcji programu Visual Studio.
@@ -39,9 +39,9 @@ Uzyskiwanie pomocy za pośrednictwem usługi rozmów Concierge jest bardzo prost
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialny?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standardowa)   | LICENCJONOWANie, Azure, sprzedaż detaliczna, wybrane NFR<sup>1</sup> | Dostępne       |  Tak          |
-| Visual Studio Enterprise z usługą GitHub Enterprise | Licencja| Dostępne       |  Tak          |
+| Visual Studio Enterprise subskrypcję z usługą GitHub Enterprise | Licencja| Dostępne       |  Tak          |
 | Visual Studio Professional (standardowa) | LICENCJONOWANie, Azure, sprzedaż detaliczna                                       | Dostępne                                                            |  Tak          |
-| Visual Studio Professional z usługą GitHub Enterprise | Licencja | Dostępne                                                            |  Tak          |
+| Visual Studio Professional subskrypcję z usługą GitHub Enterprise | Licencja | Dostępne                                                            |  Tak          |
 | Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Dostępne                                             |  Tak          |
 | Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Dostępne                                              |  Tak          |
 | Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure | Niedostępne | Nie dotyczy |
@@ -63,7 +63,7 @@ Nie masz pewności, której subskrypcji używasz?  Połącz się z, [https://my.
 
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Azure DevOps documentation (Dokumentacja usługi Azure DevOps)](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)
 - [Dokumentacja Microsoft 365](/microsoft-365/)
 

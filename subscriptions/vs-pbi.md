@@ -2,17 +2,17 @@
 title: Power BI Pro korzyść w subskrypcjach programu Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 383fc910-3f4c-474a-a3f8-0f13525f05e9
-ms.date: 10/22/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Dowiedz się więcej o subskrypcji Power BI Pro dołączonej do wybranych subskrypcji programu Visual Studio.
-ms.openlocfilehash: efc7aca0c5729a65a7f622721dbf25931eb89fb8
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 6d64c9e5d15e24dcf53dd5b45261305dffb43353
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435785"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538075"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro w subskrypcjach programu Visual Studio
 
@@ -64,9 +64,9 @@ Aby użyć Power BI Pro, musisz skonfigurować konto lub zalogować się przy u�
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialny?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standardowa)   | LICENCJONOWANie, Azure, sprzedaż detaliczna, wybrane NFR<sup>1</sup> | Dostępne       |  Tak|
-| Visual Studio Enterprise z usługą GitHub Enterprise  | Licencja | Dostępne       |  Tak|
+| Visual Studio Enterprise subskrypcję z usługą GitHub Enterprise  | Licencja | Dostępne       |  Tak|
 | Visual Studio Professional (standardowa, miesięczna chmura) | LICENCJONOWANie, Azure, sprzedaż detaliczna                                       | Niedostępne                                                            |Nie dotyczy         |
-| Visual Studio Professional z usługą GitHub Enterprise | Licencja                                      | Niedostępne                                                            |Nie dotyczy         |
+| Visual Studio Professional subskrypcję z usługą GitHub Enterprise | Licencja                                      | Niedostępne                                                            |Nie dotyczy         |
 | Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Niedostępne                                                            |Nie dotyczy         |
 | Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Dostępne       |  Tak|
 | Visual Studio Enterprise (chmura miesięczna) | Azure                                       | Niedostępne                                  |Nie dotyczy|
@@ -115,7 +115,7 @@ Odp.: nie.  Korzyści Power BI Pro nie można dodać do dzierżawców instytucji
 
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Azure DevOps documentation (Dokumentacja usługi Azure DevOps)](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)
 - [Dokumentacja Microsoft 365](/microsoft-365/)
 

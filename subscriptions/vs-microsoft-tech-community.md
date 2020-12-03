@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 8fccb5f6-ff61-488f-a91e-447faeda798d
-ms.date: 11/17/2020
+ms.date: 12/02/2020
 ms.topic: conceptual
 description: Dowiedz się więcej na temat korzyści z działu pomocy technicznej firmy Microsoft dla użytkowników w wybranych subskrypcjach programu Visual Studio.
-ms.openlocfilehash: b579f407e61b4cd0b051c603bdef736e7c52fa44
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 2bdd6b638ba490c2643374b15bc8b9644d519ebd
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94905500"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537815"
 ---
 # <a name="microsoft-tech-community-forum-support-in-visual-studio-subscriptions"></a>Pomoc techniczna na forum społeczności firmy Microsoft w ramach subskrypcji programu Visual Studio
 Nawiąż połączenie z innymi użytkownikami i ekspertami technicznymi firmy Microsoft, korzystając z najlepszych rozwiązań, projektowania architektury i najnowszych aktualizacji.
@@ -44,9 +44,9 @@ Dostępność korzyści społeczności platformy Azure zależy od poziomu subskr
 |                                          Poziom subskrypcji                                           |     Kanały      |    Korzyść    | Odnawialny? |
 |-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
 |                           Visual Studio Enterprise (standard), NFR<sup>1</sup>                            | LICENCJONOWANie, Azure, sprzedaż detaliczna |   Dostępne    |    Tak     |
-|                           Visual Studio Enterprise z usługą GitHub Enterprise                           | LICENCJONOWANie, Azure, sprzedaż detaliczna |   Dostępne    |    Tak     |
+|                           Visual Studio Enterprise subskrypcję z usługą GitHub Enterprise                           | LICENCJONOWANie, Azure, sprzedaż detaliczna |   Dostępne    |    Tak     |
 |                          Visual Studio Professional (standardowa)                          | LICENCJONOWANie, Azure, sprzedaż detaliczna |   Dostępne    |    Tak     |
-|                          Visual Studio Professional z usługą GitHub Enterprise                          | LICENCJONOWANie, Azure, sprzedaż detaliczna |   Dostępne    |    Tak     |
+|                          Visual Studio Professional subskrypcję z usługą GitHub Enterprise                          | LICENCJONOWANie, Azure, sprzedaż detaliczna |   Dostępne    |    Tak     |
 |                              Visual Studio Test Professional (standardowa)                               |    LICENCJONOWANie detaliczne     |   Dostępne    |    Tak     |
 |                                       Platformy MSDN (standardowa)                                       |    LICENCJONOWANie detaliczne     |   Dostępne    |    Tak     |
 | Visual Studio Enterprise (chmura miesięczna), Visual Studio Professional (chmura miesięczna)|        Wszystko        | Niedostępne |     Nie     |
@@ -62,7 +62,7 @@ Nie masz pewności, której subskrypcji używasz?  Połącz się z, [https://my.
 - Potrzebujesz pomocy w zakresie sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio?  Skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)
 - [Azure DevOps documentation (Dokumentacja usługi Azure DevOps)](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 5bba2205-d32f-413d-9b58-724a24993842
-ms.date: 10/21/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Dowiedz się więcej na temat korzyści z uczenia serwisu LinkedIn dostępnych w ramach subskrypcji usługi LinkedIn Premium zawartej w wybranych subskrypcjach programu Visual Studio.
-ms.openlocfilehash: 7a5e15ad5d1101123a03b98da30d48895410313b
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: b3c8d0b61dbde3f9e45d6000e1de409255750931
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970313"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537893"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Korzyść szkoleniowa serwisu LinkedIn w ramach subskrypcji programu Visual Studio
 
@@ -72,9 +72,9 @@ Aby aktywować subskrypcję serwisu LinkedIn Premium i korzyść uczenia serwisu
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialny?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standardowa)   | Licencja zbiorcza, Azure, sprzedaż detaliczna<sup>1</sup> | 6 miesięcy       |  Nie.  Dostępne tylko dla nowych subskrybentów          |
-| Visual Studio Enterprise z usługą GitHub Enterprise   | Licencja | 6 miesięcy       |  Nie.  Dostępne tylko dla nowych subskrybentów          |
+| Visual Studio Enterprise subskrypcję z usługą GitHub Enterprise   | Licencja | 6 miesięcy       |  Nie.  Dostępne tylko dla nowych subskrybentów          |
 | Visual Studio Professional (standardowa) | LICENCJONOWANie, Azure, sprzedaż detaliczna                                       | 3 miesiące                                                            |Nie.  Dostępne tylko dla nowych subskrybentów         |
-| Visual Studio Professional z usługą GitHub Enterprise | Licencja | 3 miesiące      | Nie.  Dostępne tylko dla nowych subskrybentów         |
+| Visual Studio Professional subskrypcję z usługą GitHub Enterprise | Licencja | 3 miesiące      | Nie.  Dostępne tylko dla nowych subskrybentów         |
 | Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Niedostępne                                            |  Nie dotyczy         |
 | Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Niedostępne                                              | Nie dotyczy         |
 | Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure                                       | Niedostępne                                                           |Nie dotyczy|

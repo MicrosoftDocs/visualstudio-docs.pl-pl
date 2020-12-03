@@ -2,22 +2,22 @@
 title: CloudPilot korzyści w ramach subskrypcji programu Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 6255b6a3-f101-4b2c-b7fa-851eccc944b2
-ms.date: 03/24/2020
+ms.date: 12/02/2020
 ms.topic: conceptual
 description: Poznaj korzyści CloudPilot dostępne w wybranych subskrypcjach programu Visual Studio
-ms.openlocfilehash: 642a5b35f41676c76d9eb4e5f1319fbbf57c55df
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 505e4caad5ee6d9b70fc50769c8a008469aa1345
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005927"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538153"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Korzyść CloudPilot w subskrypcjach programu Visual Studio
 Przenieś swoje aplikacje do Microsoft Azure w kilku prostych krokach. W ciągu kilku minut Sprawdź, czy wszystkie wymagane kody zostały zmienione w dół do wiersza kodu w celu pomyślnej migracji: kontenery, maszyny wirtualne, App Services, SQL Azure i/lub SQL MI. Następnie należy przeprowadzić migrację aplikacji na platformę Azure przy użyciu kreatorów korzystających z funkcji ASR, DMA i DMS.
 
-## <a name="overview"></a>Przegląd
+## <a name="overview"></a>Omówienie
 CloudPilot, według UnifyCloud, zaprojektowano w celu ułatwienia deweloperom szybkiego i łatwego przenoszenia aplikacji na platformę Azure.  W części czasu można przeprowadzić ręczną ocenę, CloudPilot precyzyjnie określa koszty migracji usługi Azure PaaS & IaaS i zawiera szczegółowe zalecenia, w dół do wiersza kodu, na temat tego, jakie zmiany w kodzie muszą zostać wprowadzone w celu uruchomienia aplikacji w chmurze. CloudPilot pomaga w wstępnej ocenie nakładu migracji w chmurze i planowaniu rozwoju w procesie ponownego refaktoryzacji przez oferowanie szczegółowych zmian na poziomie kodu dla chmury oraz w końcowym testowaniu z kontrolkami i zasadami technologii korporacyjnej.
 
 ## <a name="activation-steps"></a>Kroki aktywacji
@@ -60,13 +60,13 @@ CloudPilot, według UnifyCloud, zaprojektowano w celu ułatwienia deweloperom sz
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialny?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standardowa)   | LICENCJONOWANie, Azure, sprzedaż detaliczna, | 2 licencje, 90 dni, nieograniczone skanowania       |  Nie.  Dostępne tylko dla nowych subskrybentów          |
-| Visual Studio Enterprise z usługą GitHub Enterprise   | Licencja | 2 licencje, 90 dni, nieograniczone skanowania       |  Nie.  Dostępne tylko dla nowych subskrybentów          |
+| Visual Studio Enterprise subskrypcję z usługą GitHub Enterprise   | Licencja | 2 licencje, 90 dni, nieograniczone skanowania       |  Nie.  Dostępne tylko dla nowych subskrybentów          |
 | Visual Studio Professional (standardowa) | LICENCJONOWANie, Azure, sprzedaż detaliczna                                       | 1 Licencja, 30 dni, jedno skanowanie                                                            |  Nie.  Dostępne tylko dla nowych subskrybentów           |
-| Visual Studio Professional z usługą GitHub Enterprise | Licencja | 1 Licencja, 30 dni, jedno skanowanie                                                            |  Nie.  Dostępne tylko dla nowych subskrybentów           |
-| Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Niedostępne                                             |  Brak           |
-| Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Niedostępne                                              |  Brak          |
-| Visual Studio Enterprise (standardowa)  | NFR<sup>1</sup> |Niedostępne  | Brak |
-| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure | Niedostępne | Brak |
+| Visual Studio Professional subskrypcję z usługą GitHub Enterprise | Licencja | 1 Licencja, 30 dni, jedno skanowanie                                                            |  Nie.  Dostępne tylko dla nowych subskrybentów           |
+| Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Niedostępne                                             |  Nie dotyczy           |
+| Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Niedostępne                                              |  Nie dotyczy          |
+| Visual Studio Enterprise (standardowa)  | NFR<sup>1</sup> |Niedostępne  | Nie dotyczy |
+| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure | Niedostępne | Nie dotyczy |
 
 <sup>1</sup>  *obejmuje: nie do odsprzedaży (NFR), ekwiwalentu, najbardziej cennych profesjonalistów (MVP), regionalnego dyrektora (RD), Microsoft Partner Network (MPN), Visual Studio Industry partner (VSIP), Microsoft Certified Trainer, BizSpark, Wyobraź sobie*
 
@@ -86,7 +86,7 @@ Nie masz pewności, której subskrypcji używasz?  Połącz się z, [https://my.
 
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Azure DevOps documentation (Dokumentacja usługi Azure DevOps)](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)
 - [Dokumentacja Microsoft 365](/microsoft-365/)
 

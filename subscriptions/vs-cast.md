@@ -7,12 +7,12 @@ ms.assetid: 92e8957f-c690-46bd-a812-3efd06a2bc6b
 ms.date: 10/21/2020
 ms.topic: how-to
 description: Poznaj korzyści wynikające z wyróżniania RZUTowania dostępne w wybranych subskrypcjach programu Visual Studio
-ms.openlocfilehash: a6c1836724f05255c5120a336b8976ccae3cadbd
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: fbc7b6278d29d96ed8d97933c295468c7d3e2754
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353372"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538140"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Korzyść wyróżniania RZUTowania w subskrypcjach programu Visual Studio
 Deweloperzy potrzebują ważnych szczegółowych informacji na temat oprogramowania podczas migracji do chmury. Dzięki wykreśleniu RZUTcy Subskrybenci programu Visual Studio mogą szybko skanować swój kod źródłowy aplikacji, aby identyfikować gotowość do użycia w chmurze do migracji na platformę Azure i monitorować postęp swojej aplikacji zarówno podczas migracji, jak i po niej.
@@ -78,9 +78,9 @@ Po zatwierdzeniu żądania otrzymasz drugą wiadomość e-mail z potwierdzeniem 
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialny?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standardowa)   | LICENCJONOWANie, Azure, sprzedaż detaliczna, | Ocenianie 5 aplikacji przez trzy miesiące|  Nie.  Dostępne tylko dla nowych subskrybentów          |
-| Visual Studio Enterprise z usługą GitHub Enterprise  | Licencja | Ocenianie 5 aplikacji przez trzy miesiące|  Nie.  Dostępne tylko dla nowych subskrybentów          |
+| Visual Studio Enterprise subskrypcję z usługą GitHub Enterprise  | Licencja | Ocenianie 5 aplikacji przez trzy miesiące|  Nie.  Dostępne tylko dla nowych subskrybentów          |
 | Visual Studio Professional (standardowa) | LICENCJONOWANie, Azure, sprzedaż detaliczna                                       | Ocenianie 1 aplikacji przez trzy miesiące                                                             |  Nie.  Dostępne tylko dla nowych subskrybentów                  |
-| Visual Studio Professional z usługą GitHub Enterprise | Licencja                                       | Ocenianie 1 aplikacji przez trzy miesiące                                                            |  Nie.  Dostępne tylko dla nowych subskrybentów                  |
+| Visual Studio Professional subskrypcję z usługą GitHub Enterprise | Licencja                                       | Ocenianie 1 aplikacji przez trzy miesiące                                                            |  Nie.  Dostępne tylko dla nowych subskrybentów                  |
 | Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Niedostępne                                             |  Nie dotyczy           |
 | Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Niedostępne                                              |  Nie dotyczy          |
 | Visual Studio Enterprise (standardowa)  | NFR<sup>1</sup> |Niedostępne  | Nie dotyczy |
@@ -103,7 +103,7 @@ Nie masz pewności, której subskrypcji używasz?  Połącz się z, [https://my.
 
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Azure DevOps documentation (Dokumentacja usługi Azure DevOps)](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)
 - [Dokumentacja Microsoft 365](/microsoft-365/)
 

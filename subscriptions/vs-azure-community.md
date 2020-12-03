@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: c15f7e18-b280-4902-a60d-2c2598653207
-ms.date: 11/17/2020
+ms.date: 12/02/2020
 ms.topic: conceptual
 description: Dowiedz się więcej na temat korzyści z pomocy technicznej dla społeczności platformy Azure zawartych w wybranych subskrypcjach programu Visual Studio.
-ms.openlocfilehash: 21f984d3c41ae4f654fea638792b5db4f3c8acb2
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 58f587d5e9c27197b28457c512e4eb94f07851ef
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903926"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538023"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Forum pomocy technicznej platformy Azure w ramach subskrypcji programu Visual Studio
 Uzyskaj pomoc bezpośrednio z zespołu platformy Azure w ramach wybranych forów pomocy technicznej za pośrednictwem społeczności platformy Azure.  Korzyść społeczność platformy Azure zapewnia dostęp do kolekcji forów skoncentrowanych na tematach związanych z platformą Azure.
@@ -49,7 +49,7 @@ Uzyskaj pomoc bezpośrednio z zespołu platformy Azure w ramach wybranych forów
     :::column-end:::
 :::row-end:::
 
-## <a name="get-started"></a>Rozpoczęcie pracy
+## <a name="get-started"></a>Wprowadzenie
 Wprowadzenie do społeczności platformy Azure jest proste.
 1. Zaloguj się do witryny [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
@@ -71,9 +71,9 @@ Dostępność korzyści społeczności platformy Azure zależy od poziomu subskr
 |                                          Poziom subskrypcji                                           |     Kanały      |    Korzyść    | Odnawialny? |
 |-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
 |                           Visual Studio Enterprise (standard), NFR<sup>1</sup>                            | LICENCJONOWANie, Azure, sprzedaż detaliczna |   Dostępne    |    Tak     |
-|                           Visual Studio Enterprise z usługą GitHub Enterprise                           | LICENCJONOWANie, Azure, sprzedaż detaliczna |   Dostępne    |    Tak     |
+|                           Visual Studio Enterprise subskrypcję z usługą GitHub Enterprise                           | LICENCJONOWANie, Azure, sprzedaż detaliczna |   Dostępne    |    Tak     |
 |                          Visual Studio Professional (standardowa)                          | LICENCJONOWANie, Azure, sprzedaż detaliczna |   Dostępne    |    Tak     |
-|                          Visual Studio Professional z usługą GitHub Enterprise                          | LICENCJONOWANie, Azure, sprzedaż detaliczna |   Dostępne    |    Tak     |
+|                          Visual Studio Professional subskrypcję z usługą GitHub Enterprise                          | LICENCJONOWANie, Azure, sprzedaż detaliczna |   Dostępne    |    Tak     |
 |                              Visual Studio Test Professional (standardowa)                               |    LICENCJONOWANie detaliczne     |   Dostępne    |    Tak     |
 |                                       Platformy MSDN (standardowa)                                       |    LICENCJONOWANie detaliczne     |   Dostępne    |    Tak     |
 | Visual Studio Enterprise (chmura miesięczna), Visual Studio Professional (chmura miesięczna)|        Wszystko        | Niedostępne |     Nie     |
@@ -91,7 +91,7 @@ Nie masz pewności, której subskrypcji używasz?  Połącz się z, [https://my.
 - Potrzebujesz pomocy w zakresie sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio?  Skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)
 - [Azure DevOps documentation (Dokumentacja usługi Azure DevOps)](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)
