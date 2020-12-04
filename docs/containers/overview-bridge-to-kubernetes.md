@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 manager: jillfra
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: d1a92433a90e6e6b7f71d0c7db6ced3a52c33315
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: c6a85faf2d1451dcab9bc822fcdf228513b90dca
+ms.sourcegitcommit: ab60fd7b4a8219e378d100df1386e1b038ecdafc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440613"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96595269"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Jak działa Mostek na platformę Kubernetes
 
@@ -72,7 +72,8 @@ Po włączeniu pracy w izolacji program Bridge do Kubernetes wykonuje następuj�
 Jeśli program Bridge do Kubernetes wykryje, że Azure Dev Spaces jest włączona w klastrze Kubernetes, zostanie wyświetlony monit o wyłączenie Azure Dev Spaces, zanim będzie można użyć programu Bridge do Kubernetes.
 
 Podczas uruchamiania Menedżer routingu wykonuje następujące czynności:
-* Duplikuje wszystkie ingresses Znalezione w przestrzeni nazw za pomocą *GENERATED_NAME* dla domeny podrzędnej.
+
+* Duplikuje wszystkie ingresses (w tym moduł równoważenia obciążenia ingresses) znajdujące się w przestrzeni nazw za pomocą *GENERATED_NAME* dla domeny podrzędnej.
 * Tworzy wysłannika pod dla każdej usługi skojarzonej z powielonym ingresses z poddomeną *GENERATED_NAME* .
 * Tworzy dodatkowy wysłannika pod względem usługi, w której pracujesz w izolacji. Pozwala to na kierowanie żądań z poddomeną do komputera deweloperskiego.
 * Konfiguruje reguły routingu dla każdego wysłannika pod względem obsługi routingu dla usług z poddomeną.
@@ -144,7 +145,7 @@ Mostek do Kubernetes ma następujące ograniczenia:
 * Aby można było połączyć się z tą usługą, usługa musi być objęta usługą. Nie można nawiązać połączenia z usługą z wieloma zasobnikami, takimi jak usługa z replikami.
 * Może istnieć tylko jeden kontener uruchomiony w tym pod, aby most Kubernetes pomyślnie nawiązać połączenie. Mostek do Kubernetes nie może nawiązać połączenia z usługami za pomocą zasobników z dodatkowymi kontenerami, takimi jak kontenery przyczepek z systemem.
 * Obecnie mostek do Kubernetesy są kontenerami systemu Linux. Kontenery systemu Windows nie są obsługiwane.
-* Nie można używać izolacji z protokołem HTTPS.
+* Nie można używać izolacji z protokołem HTTPS w przypadku używania mostka do Kubernetes z programem Visual Studio. Protokół HTTPS jest obsługiwany tylko w trybie izolacji w przypadku używania Visual Studio Code.
 * Mostek do Kubernetes wymaga podniesionych uprawnień do uruchomienia na komputerze deweloperskim, aby można było edytować plik Hosts.
 * Nie można używać mostu do Kubernetes w przypadku klastrów z włączonym Azure Dev Spaces.
 
