@@ -1,5 +1,7 @@
 ---
 title: Różne pliki
+description: Dowiedz się, jak korzystać z plików, które nie są uwzględnione w projekcie lub rozwiązaniu programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 793500faf217c74772506b4b7394d926447ffd40
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dc797fe7676d24a80867cc318cbe02f94e90e7d0
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585300"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96561100"
 ---
 # <a name="miscellaneous-files"></a>Różne pliki
 
@@ -48,7 +50,7 @@ Menu, paski narzędzi i polecenia, które zawierają zmiany, na podstawie format
 
 Można ustawić opcje wyświetlania dla folderu **różne pliki** , tak aby folder pojawił się, mimo że nie zostały otwarte żadne różne pliki. Plik rozwiązania nie umożliwia trwałego zarządzania listą różnych plików. Używa opcjonalnej funkcji, która pozwala na zapamiętanie listy plików dla użytkownika, ostatnio używanych (MRU).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Tworzenie kodu w programie Visual Studio bez projektów ani rozwiązań](../develop-code-in-visual-studio-without-projects-or-solutions.md)
 - [Rozwiązania i projekty](../../ide/solutions-and-projects-in-visual-studio.md)

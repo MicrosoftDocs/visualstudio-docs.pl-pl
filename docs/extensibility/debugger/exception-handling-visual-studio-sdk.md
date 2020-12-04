@@ -1,5 +1,7 @@
 ---
 title: Obsługa wyjątków (Visual Studio SDK) | Microsoft Docs
+description: Dowiedz się więcej na temat procesu, który występuje, gdy zostaną zgłoszone wyjątki. W tym artykule opisano wszystkie kroki, które należy wykonać.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34b83c7181a7ba405e642d9911e2c53df3f4401d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: af5dc1007a4624a24bef59dd822f6e9fe3861551
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738761"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559657"
 ---
 # <a name="exception-handling-visual-studio-sdk"></a>Obsługa wyjątków (Visual Studio SDK)
 Poniżej opisano proces, który występuje, gdy są zgłaszane wyjątki.
@@ -48,5 +50,5 @@ Poniżej opisano proces, który występuje, gdy są zgłaszane wyjątki.
 
 10. Jeśli metoda zwraca S_OK, wywołuje `IDebugExceptionEvent2::PassToDebuggee` .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Zdarzenia debugera wywołań](../../extensibility/debugger/calling-debugger-events.md)

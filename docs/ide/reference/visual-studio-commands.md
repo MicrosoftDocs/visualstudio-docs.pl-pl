@@ -1,5 +1,7 @@
 ---
 title: Polecenia
+description: Dowiedz się więcej na temat różnych poleceń, do których masz dostęp w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac0284ce274791f21c9c0f85d265d92a7097cb09
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7928c03e52e4a72fb354bd7202e041ec2264fcd6
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596375"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560957"
 ---
 # <a name="visual-studio-commands"></a>Visual Studio — Polecenia
 
@@ -64,7 +66,7 @@ Następujące polecenia przyjmują argumenty lub przełączniki:
 | [Nowy plik](../../ide/reference/new-file-command.md) | Tworzy nowy plik i dodaje go do aktualnie wybranego projektu. |
 | [Otwórz plik](../../ide/reference/open-file-command.md) | Otwiera istniejący plik i umożliwia określenie edytora. |
 | [Otwórz projekt](../../ide/reference/open-project-command.md) | Otwiera istniejący projekt i umożliwia dodanie projektu do bieżącego rozwiązania. |
-| [Drukowanie](../../ide/reference/print-command.md) | Oblicza wyrażenie i wyświetla wyniki lub określony tekst. |
+| [Drukuj](../../ide/reference/print-command.md) | Oblicza wyrażenie i wyświetla wyniki lub określony tekst. |
 | [Szybkie czujka — polecenie](../../ide/reference/quick-watch-command.md) | Wyświetla wybrany lub określony tekst w polu **wyrażenie** w oknie dialogowym **szybkie czujka** . |
 | [Stępować](../../ide/reference/replace-command.md) | Zamienia tekst w plikach za pomocą podzestawu opcji dostępnych w kontrolce **Znajdowanie i zamienianie** . |
 | [Zastąp w plikach](../../ide/reference/replace-in-files-command.md) | Zamienia tekst w plikach za pomocą podzestawu opcji dostępnych w [Zamień w plikach](../../ide/replace-in-files.md). |
@@ -78,7 +80,7 @@ Następujące polecenia przyjmują argumenty lub przełączniki:
 | [Przełącz punkt przerwania](../../ide/reference/toggle-breakpoint-command.md) | Włącza lub wyłącza punkt przerwania w zależności od bieżącego stanu w bieżącej lokalizacji pliku. |
 | [Watch — polecenie](../../ide/reference/watch-command.md) | Tworzy i otwiera określone wystąpienie okna **czujka** . |
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Okno polecenia](../../ide/reference/command-window.md)
 - [Znajdź/pole polecenia](../../ide/find-command-box.md)

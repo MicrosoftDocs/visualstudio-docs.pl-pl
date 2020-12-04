@@ -1,5 +1,7 @@
 ---
-title: Debugowanie kontrolki ActiveX powiązanej z danymi | Microsoft Docs
+title: Debugowanie Data-Bound kontrolki ActiveX | Microsoft Docs
+description: Informacje o debugowaniu kontrolki ActiveX powiązanej z kontrolką źródła danych przez utworzenie aplikacji kontenera do debugowania.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccca00387e701d62e47eee0a93adff44a4765fa2
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: a999014309c4545067967b77d1b91794e4bd3c99
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600071"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560723"
 ---
 # <a name="debugging-a-data-bound-activex-control"></a>Debugowanie kontrolki ActiveX powiązanego z danymi
 Jeśli tworzysz formant ActiveX, który zostanie powiązany z kontrolą źródła danych, możesz utworzyć własną aplikację kontenera i użyć tego kontenera do debugowania kontrolki ActiveX.
@@ -34,6 +36,6 @@ Jeśli tworzysz formant ActiveX, który zostanie powiązany z kontrolą źródł
 
  Jeśli musisz umieścić w kodzie kontenera podczas debugowania, użyj wersji debugowania kontenera lub użyj wersji debugowania kontenera testów ActiveX. Aby uzyskać więcej informacji, zobacz [przykład TSTCON: kontener testów kontrolki ActiveX](/previous-versions/f9adb5t5(v=vs.100)).
 
-## <a name="see-also"></a>Zobacz też
-- [COM i debugowanie ActiveX](../debugger/com-and-activex-debugging.md)
+## <a name="see-also"></a>Zobacz także
+- [Debugowanie modelu COM i ActiveX](../debugger/com-and-activex-debugging.md)
 - [Kontrolki ActiveX](/cpp/mfc/activex-controls)

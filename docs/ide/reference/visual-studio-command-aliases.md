@@ -1,5 +1,7 @@
 ---
 title: Aliasy poleceń
+description: Dowiedz się, jak używać aliasów poleceń do wpisywania mniejszej liczby znaków, gdy chcesz wykonać polecenie.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b420644672309371ab61f1499e22d4745c69c569
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9dda564939652a09b64fec65747ca14d1315b3f1
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596414"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96561074"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio — Aliasy poleceń
 
@@ -51,16 +53,16 @@ Poniższa tabela zawiera listę wstępnie zdefiniowanych aliasów poleceń progr
 |Wyświetl kod|kod|View.ViewCode|
 |[List Memory — polecenie](../../ide/reference/list-memory-command.md)|d|Debuguj. ListMemory —|
 |[Wyświetl pamięć polecenia](../../ide/reference/list-memory-command.md) jako ANSI|da|Debug. ListMemory —/ANSI|
-|[List Memory — polecenie](../../ide/reference/list-memory-command.md) Format jednobajtowy|bazy danych|Debug. ListMemory —/format: OneByte|
-|[Wyświetl pamięć polecenia](../../ide/reference/list-memory-command.md) jako ANSI z formatem czterocyfrowym|DC|Debug. ListMemory —/format: FourBytes/ANSI|
-|[List Memory — polecenie](../../ide/reference/list-memory-command.md) Format czterocyfrowy|dd|Debug. ListMemory —/format: FourBytes|
+|[Lista One-Byte format polecenia pamięci](../../ide/reference/list-memory-command.md)|bazy danych|Debug. ListMemory —/format: OneByte|
+|[Wyświetl listę poleceń](../../ide/reference/list-memory-command.md) jako ANSI w formacie Four-Byte|DC|Debug. ListMemory —/format: FourBytes/ANSI|
+|[Lista Four-Byte format polecenia pamięci](../../ide/reference/list-memory-command.md)|dd|Debug. ListMemory —/format: FourBytes|
 |Usuń do BOL|DelBOL|Edytuj. DeleteToBOL|
 |Usuń do EOL|DelEOL|Edytuj. DeleteToEOL|
 |Usuń odstępy w poziomie|DelHSp|Edytuj. DeleteHorizontalWhitespace|
 |Projektant widoków|projektant|View.ViewDesigner|
 |[List Memory — polecenie](../../ide/reference/list-memory-command.md) Format zmiennoprzecinkowy|DF|Debug. ListMemory —/format: float|
 |Dezasemblacja, okno|DISASM|Debug.Disassembly|
-|[List Memory — polecenie](../../ide/reference/list-memory-command.md) Format 8-bajtowy|elemencie DQ|Debug. ListMemory —/format: EightBytes|
+|[Lista Eight-Byte format polecenia pamięci](../../ide/reference/list-memory-command.md)|elemencie DQ|Debug. ListMemory —/format: EightBytes|
 |[Wyświetl pamięć polecenia](../../ide/reference/list-memory-command.md) jako Unicode|du|Debug. ListMemory —/Unicode|
 |[Polecenie szacowania instrukcji](../../ide/reference/evaluate-statement-command.md)|powiadomienie|Debuguj. EvaluateStatement|
 |Zakończ|Zakończ|File.Exit|
@@ -78,7 +80,7 @@ Poniższa tabela zawiera listę wstępnie zdefiniowanych aliasów poleceń progr
 |Usuń wiersz|LineDel|Edit.LineDelete|
 |Lista składników|Wyświetlanie członków|Edit.ListMembers|
 |okno zmiennych lokalnych|Zmienne lokalne|Debug.Locals|
-|[Polecenie dziennika danych wyjściowych okna polecenia](../../ide/reference/log-command-window-output-command.md)|Log|Tools. LogCommandWindowOutput|
+|[Polecenie dziennika danych wyjściowych okna polecenia](../../ide/reference/log-command-window-output-command.md)|Dziennik|Tools. LogCommandWindowOutput|
 |Tryb oznaczania okna polecenia|znacznik|Tools. CommandWindowMarkMode|
 |okno pamięci|Memory1 pamięci|Debug.Memory1|
 |Okno pamięci 2|Memory2|Debug.Memory2|
@@ -94,7 +96,7 @@ Poniższa tabela zawiera listę wstępnie zdefiniowanych aliasów poleceń progr
 |Zwiń do definicji/Zatrzymaj tworzenie konspektu|OutlineDefs StopOutlining|Edytuj. CollapseToDefinitions|
 |Przekrocz nad|p|Debug.StepOver|
 |Informacje o parametrach|ParamInfo|Edit.ParameterInfo|
-|Wyjdź|Public|Debug.StepOut|
+|Wyjdź|pr|Debug.StepOut|
 |Poprzednia zakładka|PrevBook|Edit.PreviousBookmark|
 |Drukowanie pliku|drukowanie|File.Print|
 |Okno Właściwości|props|View.PropertiesWindow|
@@ -120,12 +122,12 @@ Poniższa tabela zawiera listę wstępnie zdefiniowanych aliasów poleceń progr
 |Zmień wielkie litery|Ucase|Edit.MakeUppercase|
 |Cofnij|Anulowanie|Edit.Undo|
 |Tabulatory na zaznaczenie|Tabulatory na|Edytuj. UntabifySelection|
-|okno czujki|Obejrzyj|Debuguj. WatchN|
+|okno czujki|Zegarek|Debuguj. WatchN|
 |Przełącz Zawijanie wierszy|WordWrap|Edit.ToggleWordWrap|
 |Wyświetlanie listy procesów|&#124;|Debuguj. ListProcesses|
 |[Lista wątków — polecenie](../../ide/reference/list-threads-command.md)|~ ~ * k ~ \* KB|Debug. Listthreads — Debug. ListTheads/AllThreads|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Okno polecenia](../../ide/reference/command-window.md)

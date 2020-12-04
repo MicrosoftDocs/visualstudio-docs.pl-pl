@@ -1,5 +1,7 @@
 ---
 title: Operator kontekstu w debugerze (C++) | Microsoft Docs
+description: Może być konieczne podanie kontekstu dla nazwy języka C++, która znajduje się w zewnętrznym zakresie i jest ukryta przy użyciu nazwy lokalnej. Dowiedz się, jak to zrobić za pomocą operatora kontekstu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -22,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aa16bd6f93198e5360139dbc5a6a0d96f02a1e41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1bc238cc56e1b815e79ba381a7cd4866085d3bef
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62564707"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559761"
 ---
 # <a name="context-operator-in-the-visual-studio-debugger-c"></a>Operator kontekstu w debugerze programu Visual Studio (C++)
 Operatora kontekstu w języku C++ można użyć do kwalifikowania lokalizacji punktu przerwania, nazwy zmiennej lub wyrażenia. Operator kontekstu jest przydatny do określania nazwy z zewnętrznego zakresu, który jest w inny sposób ukryty przez lokalną nazwę.

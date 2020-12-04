@@ -1,5 +1,7 @@
 ---
 title: Tworzenie niestandardowych wizualizatorów danych | Microsoft Docs
+description: Wizualizatory debugera programu Visual Studio to składniki, które wyświetlają dane. Poznaj sześć standardowych wizualizatorów, a także informacje na temat pisania i pobierania innych elementów.
+ms.custom: SEO-VS-2020
 ms.date: 05/27/2020
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e184507415810f64060b0d2b2e92a825d642d2e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4c39fae399cd735d09218699f10c1eaead8e40ee
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85280879"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560684"
 ---
 # <a name="create-custom-data-visualizers"></a>Tworzenie niestandardowych wizualizatorów danych
 
@@ -93,11 +95,11 @@ W kodzie debugowanego obiektu:
 
    Są to jedyne obsługiwane TFMs.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Przewodnik: Pisanie wizualizatora w języku C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
 - [Przewodnik: Pisanie wizualizatora w języku Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
 - [Instrukcje: instalowanie wizualizatora](../debugger/how-to-install-a-visualizer.md)
 - [Instrukcje: testowanie i debugowanie wizualizatora](../debugger/how-to-test-and-debug-a-visualizer.md)
-- [Dokumentacja interfejsu API wizualizatora](../debugger/visualizer-api-reference.md)
+- [Interfejs API wizualizatora — dokumentacja](../debugger/visualizer-api-reference.md)
 - [Wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)

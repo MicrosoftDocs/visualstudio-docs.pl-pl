@@ -1,5 +1,7 @@
 ---
 title: Przybornik, karta Dane
+description: Dowiedz się więcej na temat obiektów danych, które znajdziesz na karcie dane w oknie Przybornik.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e79b80890925bdf4d6d191db759516b5545fc403
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 78a697ae8d9f3f551c8bb734c28c1f53551b1f81
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590257"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96561087"
 ---
 # <a name="toolbox-data-tab"></a>Przybornik, karta dane
 
@@ -37,7 +39,7 @@ Aby przejść bezpośrednio do strony odniesienia platformy .NET dla składnika,
 |<xref:System.Windows.Forms.BindingSource>|Upraszcza proces kontroli powiązań z bazowym źródłem danych.|
 |<xref:System.Windows.Forms.BindingNavigator>|Reprezentuje interfejs użytkownika nawigacji i manipulowania dla kontrolek w formularzu, które są powiązane z danymi.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Dostęp do danych w programie Visual Studio](../../data-tools/accessing-data-in-visual-studio.md)
 - [Narzędzia do obsługi danych programu Visual Studio dla platformy .NET](../../data-tools/visual-studio-data-tools-for-dotnet.md)

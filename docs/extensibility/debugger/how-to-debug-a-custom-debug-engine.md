@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: debugowanie niestandardowego aparatu debugowania | Microsoft Docs'
+description: Dowiedz się więcej na temat kroków, które umożliwiają debugowanie niestandardowego aparatu debugowania lub niestandardowego typu projektu przy użyciu programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a65e69655c4e8699bd267f1835ec0c49603014d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e79ceea58fc78922cd07bb6635ed2f399e97dd1c
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903313"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560814"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>Instrukcje: debugowanie niestandardowego aparatu debugowania
 Typ projektu uruchamia aparat debugowania (DE) z <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> metody. Oznacza to, że DE jest uruchamiany pod kontrolą wystąpienia kontroli nad [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] typem projektu. Jednak to wystąpienie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nie może debugować elementu de. Poniżej przedstawiono kroki, które pozwalają debugować niestandardowe DE.
@@ -31,7 +33,7 @@ Typ projektu uruchamia aparat debugowania (DE) z <xref:Microsoft.VisualStudio.Sh
 
 1. Rozpocznij *msvsmon.exe*, Monitor zdalnego debugowania.
 
-2. W menu **Narzędzia** w *msvsmon.exe*wybierz pozycję **Opcje** , aby otworzyć okno dialogowe **Opcje** .
+2. W menu **Narzędzia** w *msvsmon.exe* wybierz pozycję **Opcje** , aby otworzyć okno dialogowe **Opcje** .
 
 3. Wybierz opcję "bez uwierzytelniania" i kliknij przycisk **OK**.
 
@@ -57,9 +59,9 @@ Typ projektu uruchamia aparat debugowania (DE) z <xref:Microsoft.VisualStudio.Sh
 
 1. Rozpocznij [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] w normalnej gałęzi rejestru i Załaduj projekt typu projektu (to jest źródło do typu projektu, a nie wystąpienia typu projektu).
 
-2. Otwórz właściwości projektu i przejdź do strony **debugowanie** . Dla **polecenia**wpisz ścieżkę do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (domyślnie jest to *[dysk]* \Program Files\Microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 8\Common7\IDE\devenv.exe).
+2. Otwórz właściwości projektu i przejdź do strony **debugowanie** . Dla **polecenia** wpisz ścieżkę do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (domyślnie jest to *[dysk]* \Program Files\Microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 8\Common7\IDE\devenv.exe).
 
-3. Dla **argumentów polecenia**wpisz `/rootsuffix exp` dla eksperymentalnej gałęzi rejestru (utworzonej podczas instalowania VSIP).
+3. Dla **argumentów polecenia** wpisz `/rootsuffix exp` dla eksperymentalnej gałęzi rejestru (utworzonej podczas instalowania VSIP).
 
 4. Kliknij przycisk **OK** , aby zaakceptować zmiany.
 
@@ -73,5 +75,5 @@ Typ projektu uruchamia aparat debugowania (DE) z <xref:Microsoft.VisualStudio.Sh
 
 9. W przypadku wybrania debugowania procesu uruchamiania programu a można wykonać kroki opisane w procedurze "Debugowanie niestandardowego aparatu debugowania" w celu dołączenia do programu po jego uruchomieniu. Zapewnia to trzy wystąpienia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] uruchamiania: jeden dla źródła typu projektu, drugi dla typu projektu wystąpienia i trzecią dołączoną do de.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Tworzenie niestandardowego aparatu debugowania](../../extensibility/debugger/creating-a-custom-debug-engine.md)

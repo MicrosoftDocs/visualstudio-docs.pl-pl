@@ -1,5 +1,7 @@
 ---
 title: Zabezpieczenia
+description: Dowiedz się więcej na temat niektórych pojęć dotyczących zabezpieczeń i funkcji zabezpieczeń, które mogą pomóc efektywnie opracowywać bezpieczne aplikacje.
+ms.custom: SEO-VS-2020
 ms.date: 06/01/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e02900c96991a402d7ea7b789a47f8f2dea447c3
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: 07f0c685b61ab72d3db9ada79b29dcb5b4e4a1f1
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91781020"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560827"
 ---
 # <a name="secure-applications"></a>Zabezpieczanie aplikacji
 
@@ -38,7 +40,7 @@ Bezpieczeństwo jest również ważnym zagadnieniem w procesie kompilacji. Kilka
 - [Dotfuscator](dotfuscator/index.md) jest bezpłatna i pomaga w ochronie zestawów .NET przed odtwarzaniem i nieautoryzowanym użyciem, takim jak debugowanie nieautoryzowane.
 - [Podpisywanie silnej nazwy](managing-assembly-and-manifest-signing.md) może służyć do unikatowego identyfikowania składników oprogramowania i zapobiegania fałszowaniu nazw.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Zabezpieczenia w .NET](/dotnet/standard/security/index)
 - [Zabezpieczenia platformy Azure](/azure/security/)

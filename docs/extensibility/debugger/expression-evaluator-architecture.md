@@ -1,5 +1,7 @@
 ---
 title: Architektura ewaluatora wyrażeń | Microsoft Docs
+description: Dowiedz się więcej o integrowaniu języka własnościowego z pakietem debugowania programu Visual Studio, w tym ewaluatora wyrażeń i dostawcami symboli/interfejsów spinacza.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aac782c653f230d5598a49d43eb70f548de6dc41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 216bf2f19d528084685a2361a158e105e2284010
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738697"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560164"
 ---
 # <a name="expression-evaluator-architecture"></a>Architektura ewaluatora wyrażeń
 > [!IMPORTANT]
@@ -51,7 +53,7 @@ ms.locfileid: "80738697"
 
  [Interfejsy ewaluatora wyrażeń klucza](../../extensibility/debugger/key-expression-evaluator-interfaces.md) Opisuje kluczowe interfejsy, które są niezbędne podczas pisania EE, wraz z kontekstem oceny.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Pisanie ewaluatora wyrażeń CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
 - [Wyświetlanie ustawień lokalnych](../../extensibility/debugger/displaying-locals.md)
 - [Zmiana wartości elementu lokalnego](../../extensibility/debugger/changing-the-value-of-a-local.md)

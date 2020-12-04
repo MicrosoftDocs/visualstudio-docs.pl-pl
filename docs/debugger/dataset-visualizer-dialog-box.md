@@ -1,5 +1,7 @@
 ---
 title: Wizualizator zestawu danych — okno dialogowe | Microsoft Docs
+description: Wizualizatory debugera programu Visual Studio to składniki, które wyświetlają dane. Użyj wizualizatora zestawu danych, aby wyświetlić zawartość obiektu DataSet, DataTable, DataView lub DataViewManager.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e215d4a52965b4e89bc3a01b15da57fc8919437
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f57247d23a318da6bf492534c1ff060bb4116bb
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72745603"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560476"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>Dataset Visualizer — Okno dialogowe
 Wizualizator zestawu danych umożliwia wyświetlenie zawartości obiektu DataSet, DataTable, DataView lub DataViewManager. Możesz uzyskać dostęp do tego wizualizatora, klikając ikonę lupy, która pojawia się obok wartości jednego z tych obiektów w oknie zmiennych debugera lub w etykietki danych.
@@ -34,7 +36,7 @@ Wizualizator zestawu danych umożliwia wyświetlenie zawartości obiektu DataSet
 ## <a name="uielement-list"></a>Lista elementów UI
  Użyj tej listy rozwijanej, aby wybrać tabelę w zestawie danych, którą chcesz wizualizować.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)
 - [Tworzenie niestandardowych wizualizatorów](../debugger/create-custom-visualizers-of-data.md)

@@ -3,15 +3,15 @@ title: Konfigurowanie repozytorium git
 description: Nawiązywanie połączenia z repozytorium git przy użyciu Visual Studio dla komputerów Mac.
 author: therealjohn
 ms.author: johmil
-ms.date: 11/09/2020
+ms.date: 12/03/2020
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
 ms.topic: how-to
-ms.openlocfilehash: 862f073d3c6d535d612a67f215aee740cea175bd
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: bacd533bf5c28c6f431fe7088fad36b6bbd3d04b
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493130"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96561061"
 ---
 # <a name="set-up-a-git-repository"></a>Konfigurowanie repozytorium git
 
@@ -45,6 +45,9 @@ Aby skonfigurować repozytorium git, wykonaj następujące czynności:
 
 Jeśli masz istniejący projekt, który _nie jest_ jeszcze w kontroli wersji, wykonaj następujące kroki, aby skonfigurować go w usłudze git:
 
+> [!TIP]
+> Użyj pliku. gitignore, aby kontrolować foldery i pliki, które są śledzone i publikowane w usłudze git. Może być konieczne wykluczenie katalogów kompilacji, plików binarnych lub plików wygenerowanych. Więcej informacji znajduje się w [dokumentacji usługi GitHub w przypadku ignorowania plików](https://docs.github.com/en/free-pro-team@latest/github/using-git/ignoring-files).
+
 1. Wybierz nazwę rozwiązania z okna rozwiązanie w Visual Studio dla komputerów Mac.
 
 2. Na pasku menu wybierz pozycję **Kontrola wersji > publikowanie w kontroli wersji** , aby wyświetlić okno dialogowe **klonowanie repozytorium** :
@@ -67,14 +70,14 @@ Jeśli masz istniejący projekt, który _nie jest_ jeszcze w kontroli wersji, wy
 
     ![Próba opublikowania projektu w usłudze git](media/version-control-git7.png)
 
-6. Kliknij przycisk **OK** , a następnie **Opublikuj** w oknie dialogowym alertu.
+6. Kliknij przycisk **OK**, a następnie **Opublikuj** w oknie dialogowym alertu.
 
 7. W oknie **poświadczenia git** wprowadź nazwę użytkownika i hasło usługi GitHub. 
 
 > [!NOTE]
 > Jeśli konto ma włączone uwierzytelnianie dwuskładnikowe (funkcji 2FA), musisz utworzyć token dostępu, który będzie używany zamiast hasła. Jeśli nie utworzono tokenu dostępu, wykonaj kroki opisane w dokumentacji [tokenu dostępu](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) git.
 
-8. Wprowadź nazwę użytkownika i token dostępu osobistego, a następnie naciśnij przycisk **OK** :
+8. Wprowadź nazwę użytkownika i token dostępu osobistego, a następnie naciśnij przycisk **OK**:
 
     ![Wprowadź nazwę użytkownika i hasło do usługi git](media/version-control-git9-sml.png)
 
@@ -101,7 +104,7 @@ Wykonaj poniższe kroki, aby wypchnąć nowe repozytorium lokalne do nowego repo
 
 2. Na karcie stan wybierz pozycję **Zatwierdź** w lewym górnym rogu.
 
-3. Napisz wiadomość zatwierdzania, na przykład "pierwsze zatwierdzenie", a następnie kliknij pozycję **Zatwierdź** :
+3. Napisz wiadomość zatwierdzania, na przykład "pierwsze zatwierdzenie", a następnie kliknij pozycję **Zatwierdź**:
 
     ![Zatwierdzanie początkowych zmian w repozytorium git](media/version-control-git-publish-new2.png)
 
@@ -109,7 +112,7 @@ Wykonaj poniższe kroki, aby wypchnąć nowe repozytorium lokalne do nowego repo
 
 5. Przejdź do karty **źródła zdalne** , a następnie kliknij przycisk **Dodaj**.
 
-6. W oknie **Źródło zdalne** Dodaj szczegóły utworzonego wcześniej repozytorium GitHub i kliknij przycisk **OK** :
+6. W oknie **Źródło zdalne** Dodaj szczegóły utworzonego wcześniej repozytorium GitHub i kliknij przycisk **OK**:
 
     ![Konfigurowanie źródeł zdalnych dla repozytorium git](media/version-control-git-publish-new3.png)
 
@@ -132,7 +135,7 @@ Visual Studio dla komputerów Mac teraz wypchnij zmiany do zdalnego repozytorium
 
 Prawdopodobnie trzeba będzie pracować z repozytorium GitHub, które istnieje tylko na pilocie, a nie na komputerze lokalnym. Visual Studio dla komputerów Mac umożliwia szybkie klonowanie tego repozytorium. Wykonaj poniższe kroki, aby sklonować je do maszyny:
 
-1. Na pasku menu wybierz pozycję **Kontrola wersji > repozytorium klonowania** :
+1. Na pasku menu wybierz pozycję **Kontrola wersji > repozytorium klonowania**:
 
 2. Spowoduje to wyświetlenie karty **Połącz z adresem URL** :
 
@@ -163,6 +166,6 @@ Jeśli masz problemy z zainicjowaniem projektu za pomocą pustego repozytorium z
 1. Przejdź do menu kontroli wersji i wybierz polecenie **Publikuj w kontroli wersji**.
 1. Wykonaj kroki opisane powyżej samouczka, rozpoczynając od kroku 6.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Kontrola wersji w programie Visual Studio (w systemie Windows)](/visualstudio/version-control/)

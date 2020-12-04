@@ -1,5 +1,7 @@
 ---
 title: Odwołanie do właściwości projektu
+description: Dowiedz się, jak konfigurować i dostosowywać właściwości projektu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc3ec00ed771caba7e779e708801d611ca16b8c5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f76e34f0a806a524c1305796bddabebd155e680c
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75567726"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560346"
 ---
 # <a name="project-properties-reference"></a>Informacje o właściwościach projektu
 
@@ -38,6 +40,6 @@ Dowiedz się więcej o konfigurowaniu i dostosowywaniu właściwości projektu.
 | [Strona zabezpieczeń, Projektant projektu](../../ide/reference/security-page-project-designer.md) | Ta strona służy do konfigurowania ustawień zabezpieczeń dostępu kodu dla aplikacji wdrożonych przy użyciu [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)] wdrożenia. |
 | [Strona podpisywania, Projektant projektu](../../ide/reference/signing-page-project-designer.md) | Ta strona służy do podpisywania manifestów aplikacji i wdrażania oraz podpisywania zestawu. |
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Rozwiązania i projekty](../../ide/solutions-and-projects-in-visual-studio.md)

@@ -1,5 +1,7 @@
 ---
 title: Strona opcji projektant XAML
+description: Dowiedz się, jak używać strony Ogólne w sekcji projektant XAML, aby określić sposób formatowania elementów i atrybutów w dokumentach XAML.
+ms.custom: SEO-VS-2020
 ms.date: 03/02/2017
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 45c7a5ba87c006332b601b93143cbf8acfda16b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0955a6644e8f1dc1d42a1b22b15399a6d1ca452d
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547306"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560983"
 ---
 # <a name="xaml-designer-options-page"></a>Strona opcji projektant XAML
 
@@ -48,7 +50,7 @@ Użyj tego ustawienia, aby określić, kiedy i jak projektant XAML pojawia się 
 |-|-|
 |**Pionowa**|Źródło XAML pojawia się po lewej stronie widoku XAML, a projektant XAML pojawia się po drugiej stronie.|
 |**Układ**|Projektant XAML pojawia się w górnej części widoku XAML, a źródło XAML pojawia się poniżej.|
-|**Wartooć**|Dokument XAML stosuje orientację podziału zalecaną dla platformy wskazywanej przez projekt dokumentu. W przypadku większości platform jest to odpowiednik w **poziomie**.|
+|**Domyślne**|Dokument XAML stosuje orientację podziału zalecaną dla platformy wskazywanej przez projekt dokumentu. W przypadku większości platform jest to odpowiednik w **poziomie**.|
 
 ## <a name="zoom-by-using"></a>Powiększ przy użyciu
 
@@ -106,7 +108,7 @@ Użyj tych ustawień, aby określić, czy efekty są renderowane podczas edytowa
 |**Efekty renderowania**|Określa, czy efekty mają być renderowane podczas edytowania plików XAML w projektant XAML przy użyciu programu Blend.|
 |**Próg powiększenia**|Określa wartość procentową powiększania efektów renderowania, gdy zaznaczone jest pole wyboru **efekty renderowania** . Jeśli powiększysz wartość tego ustawienia, efekty nie będą już renderowane w projektant XAML.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [XAML w WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)
 - [Przewodnik: Moja pierwsza aplikacja klasyczna WPF](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)

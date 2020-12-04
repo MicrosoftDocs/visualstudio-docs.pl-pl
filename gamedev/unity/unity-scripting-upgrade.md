@@ -10,12 +10,12 @@ ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.workload:
 - unity
-ms.openlocfilehash: 5b7e36d0f0c29e997b4b39506fb27d73ceb45146
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: c1b745e4a1da85324b2dc73e30bebb873e2d0720
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "94341720"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559813"
 ---
 # <a name="using-net-4x-in-unity"></a>Używanie platformy .NET 4.x w aparacie Unity
 
@@ -40,7 +40,7 @@ Aby włączyć środowisko uruchomieniowe skryptów .NET 4. x, wykonaj następuj
 
 ## <a name="choosing-between-net-4x-and-net-standard-20-profiles"></a>Wybieranie między profilami .NET 4. x i .NET Standard 2,0
 
-Po przełączeniu się do środowiska uruchomieniowego skryptów programu .NET 4. x można określić **poziom zgodności interfejsu API** za pomocą menu rozwijanego w PlayerSettings ( **edytuj ustawienia projektu > > Player** ). Dostępne są dwie opcje:
+Po przełączeniu się do środowiska uruchomieniowego skryptów programu .NET 4. x można określić **poziom zgodności interfejsu API** za pomocą menu rozwijanego w PlayerSettings (**edytuj ustawienia projektu > > Player**). Dostępne są dwie opcje:
 
 * **.NET Standard 2,0**. Ten profil jest zgodny z [profilem .NET Standard 2,0](https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0.md) opublikowanym przez platformę .NET Foundation. Środowisko Unity zaleca .NET Standard 2,0 dla nowych projektów. Jest to mniejsze niż .NET 4. x, co jest korzystne dla platform z ograniczoną wielkością. Ponadto aparat Unity zatwierdził obsługę tego profilu na wszystkich platformach obsługiwanych przez środowisko Unity.
 
@@ -58,9 +58,9 @@ Na przykład, jeśli używasz profilu .NET 4. x i chcesz użyć `HttpClient` , m
 
 ![Brak odwołania do zestawu](media/vs/vstu-missing-reference.png)
 
-Program Visual Studio generuje pliki. csproj i. sln dla projektów Unity przy każdym otwarciu. W związku z tym nie można dodać odwołań do zestawu bezpośrednio w programie Visual Studio, ponieważ zostaną one utracone po ponownym otwarciu projektu. Zamiast tego należy użyć specjalnego pliku tekstowego o nazwie **MCS. rsp** :
+Program Visual Studio generuje pliki. csproj i. sln dla projektów Unity przy każdym otwarciu. W związku z tym nie można dodać odwołań do zestawu bezpośrednio w programie Visual Studio, ponieważ zostaną one utracone po ponownym otwarciu projektu. Zamiast tego należy użyć specjalnego pliku tekstowego o nazwie **CSC. rsp** :
 
-1. Utwórz nowy plik tekstowy o nazwie **MCS. rsp** w katalogu głównych **zasobów** projektu środowiska Unity.
+1. Utwórz nowy plik tekstowy o nazwie **CSC. rsp** w katalogu głównych **zasobów** projektu aparatu Unity.
 
 1. W pierwszym wierszu pustego pliku tekstowego wpisz:, `-r:System.Net.Http.dll` a następnie Zapisz plik. Można zamienić "System.Net.Http.dll" z dowolnym dołączonym zestawem, który może brakować odwołania.
 

@@ -1,5 +1,7 @@
 ---
 title: Implementowanie wizualizatorów typów i podglądów niestandardowych | Microsoft Docs
+description: Dowiedz się więcej na temat implementowania wizualizatorów typów i niestandardowych recenzentów, które umożliwiają użytkownikom wyświetlanie danych w sposób bardziej zrozumiały niż zrzut liczby.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2ebbb5c8e27df4ae4baf2d9a9f1c3314188e2b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc3b1f2510742e2d0656727826e5b4aeae935b6f
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738504"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559904"
 ---
 # <a name="implement-type-visualizers-and-custom-viewers"></a>Implementowanie wizualizatorów typów i podglądów niestandardowych
 > [!IMPORTANT]
@@ -55,7 +57,7 @@ ms.locfileid: "80738504"
 
 - [IDebugBinder3](../../extensibility/debugger/reference/idebugbinder3.md)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Pisanie ewaluatora wyrażeń CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
 - [Wizualizacja i wyświetlanie danych](../../extensibility/debugger/visualizing-and-viewing-data.md)
 - [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md)

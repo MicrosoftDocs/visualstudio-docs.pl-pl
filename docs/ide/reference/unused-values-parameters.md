@@ -1,5 +1,7 @@
 ---
 title: Nieużywane wartości i parametry
+description: Dowiedz się więcej o nieużywanych przypisaniach wartości, zmiennych i parametrach oraz sposobie ich wyświetlania w edytorze kodu w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/15/2019
 ms.topic: reference
 author: kendrahavens
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: ce2b0f1e0c0db45c478c3917306683b314da0564
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8768992ce3ef9f40ab0adba1724d43b32e5bde5c
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "65531874"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560710"
 ---
 # <a name="unused-value-assignments-variables-and-parameters"></a>Nieużywane przypisania wartości, zmienne i parametry
 
@@ -40,7 +42,7 @@ To Refaktoryzacja dotyczy:
    ![ przypisywania wartości ](media/unused-value-assignment.png)
    ![ niewykorzystanej wartości](media/unused-value-discard.png)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Refaktoryzacja](../refactoring-in-visual-studio.md)
 - [Porady dla deweloperów platformy .NET](../csharp-developer-productivity.md)

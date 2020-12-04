@@ -1,5 +1,7 @@
 ---
 title: Obliczanie wyrażeń (zestaw SDK debugowania Visual Studio) | Microsoft Docs
+description: W trybie przerwania IDE szacuje wyrażenia obejmujące zmienne programu. Dowiedz się, jak aparat debugowania analizuje i szacuje wyrażenie.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e41179fd530818f5ac59aa54420ede1b4eafa1ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c398d9eb79a6b5fcd1a6851596ab8913faf32fa
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738712"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560892"
 ---
 # <a name="expression-evaluation-visual-studio-debugging-sdk"></a>Obliczanie wyrażeń (zestaw SDK debugowania programu Visual Studio)
 W trybie przerwania IDE musi oszacować proste wyrażenia obejmujące kilka zmiennych programu. Aby wykonać swoją ocenę, aparat debugowania (DE) musi analizować i oceniać wyrażenie, które jest wprowadzane do jednego z okien IDE.
@@ -38,5 +40,5 @@ W trybie przerwania IDE musi oszacować proste wyrażenia obejmujące kilka zmie
 
  Obliczanie synchroniczne i asynchroniczne wymagają wykonania metody [IDebugProperty2:: GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) . Obliczanie wyrażeń asynchronicznych wymaga implementacji elementu [IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Kontrola wykonywania i Ocena stanu](../../extensibility/debugger/execution-control-and-state-evaluation.md)

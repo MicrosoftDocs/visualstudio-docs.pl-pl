@@ -1,16 +1,18 @@
 ---
 title: Dokumentacja wtyczki Team Explorer
+description: Poznaj różne funkcje w Team Explorer, aby zarządzać pracą i koordynować z innymi członkami zespołu, aby opracować projekt.
+ms.custom: SEO-VS-2020
 ms.date: 12/04/2018
 ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
-ms.openlocfilehash: fa73894d713ded42696f5e47d40dffb2d2405b1a
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: a7089defb41c3ba8379d1020cbf1225d6333b912
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928085"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560996"
 ---
 # <a name="team-explorer-reference"></a>Dokumentacja wtyczki Team Explorer
 
@@ -20,7 +22,7 @@ Użyj okna narzędzia **Team Explorer** , aby koordynować wysiłki kodu z innym
 
 ## <a name="home-page"></a>Strona główna
 
-Po [nawiązaniu połączenia z projektem](../connect-team-project.md) w **Team Explorer**następujące linki staną się dostępne w sekcji **projektu** :
+Po [nawiązaniu połączenia z projektem](../connect-team-project.md) w **Team Explorer** następujące linki staną się dostępne w sekcji **projektu** :
 
 - [Klonowanie repozytorium](/azure/devops/repos/git/clone)
 - [Portal sieci Web](/azure/devops/project/navigation/index)
@@ -102,10 +104,10 @@ Zobacz:
 
 Strona **Ustawienia** umożliwia skonfigurowanie funkcji administracyjnych dla projektu lub kolekcji projektów. Zobacz następujące artykuły:
 
-| Projekt | Kolekcja projektów | Inne |
+| Project | Kolekcja projektów | Inne |
 | - | - | - |
 | [Zabezpieczenia, członkostwo w grupie](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[Zabezpieczenia, kontrola źródła (TFVC)](/azure/devops/organizations/security/set-git-tfvc-repository-permissions)<br/>[Obszary elementu pracy](/azure/devops/organizations/settings/set-area-paths)<br/>[Iteracje elementu pracy](/azure/devops/organizations/settings/set-iteration-paths-sprints)<br/>[Ustawienia portalu](/azure/devops/report/sharepoint-dashboards/configure-or-add-a-project-portal)<br/>[Alerty projektu](/azure/devops/notifications/howto-manage-team-notifications) | [Zabezpieczenia, członkostwo w grupie](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[Kontrola źródła (TFVC)](/azure/devops/repos/tfvc/decide-between-using-local-server-workspace)<br/>[Menedżer szablonu procesu](/azure/devops/boards/work-items/guidance/manage-process-templates) | [Ustawienia globalne git](/azure/devops/repos/git/git-config)<br/>[Ustawienia repozytorium git](/azure/devops/repos/git/git-config) |
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Nawiązywanie połączenia z projektami w Team Explorer](../../ide/connect-team-project.md)

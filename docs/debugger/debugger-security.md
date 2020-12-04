@@ -1,5 +1,7 @@
 ---
 title: Zabezpieczenia debugera | Microsoft Docs
+description: Zapoznaj się z zagrożeniami związanymi z debugowaniem, zagrożeniami zarówno dla maszyny debugowania, jak i debugowaną maszyną. Postępuj zgodnie z zaleceniami, aby zminimalizować ryzyko.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8b7ac2aed43bcb39b4bb5924ad6f1cf2c438b64
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: f6d0c09a7f54157bd2ace9a6be09a357eb436ceb
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600083"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559748"
 ---
 # <a name="debugger-security"></a>Zabezpieczenia debugera
 Możliwość debugowania innego procesu daje użytkownikowi wyjątkowo szerokie uprawnienia, zwłaszcza w przypadku zdalnego debugowania. Złośliwy debuger może spowodować rozległe uszkodzenie na debugowanym komputerze.
@@ -37,7 +39,7 @@ Możliwość debugowania innego procesu daje użytkownikowi wyjątkowo szerokie 
 ### <a name="managed-debugging-security"></a>Zabezpieczenia debugowania zarządzanego
  Poniżej przedstawiono niektóre ogólne zalecenia dotyczące wszystkich zarządzanych debugowania.
 
-- Należy zachować ostrożność podczas dołączania do procesu niezaufanego użytkownika: po wykonaniu tej czynności należy założyć, że jest ona godna zaufania. Podczas próby dołączenia do procesu niezaufanego użytkownika zostanie wyświetlone potwierdzenie okna dialogowego ostrzeżenia o zabezpieczeniach z pytaniem, czy chcesz dołączyć do procesu. "Zaufani użytkownicy" obejmują użytkownika i zestaw standardowych użytkowników, które są powszechnie zdefiniowane na komputerach, na których zainstalowano .NET Framework, takich jak **ASPNET**, **LocalSystem**, **NetworkService**i **LocalService**. Aby uzyskać więcej informacji, zobacz [Ostrzeżenie o zabezpieczeniach: dołączanie do procesu należącego do niezaufanego użytkownika może być niebezpieczne. Jeśli poniższe informacje wyglądają podejrzanie lub nie masz pewności, nie dołączaj do tego procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).
+- Należy zachować ostrożność podczas dołączania do procesu niezaufanego użytkownika: po wykonaniu tej czynności należy założyć, że jest ona godna zaufania. Podczas próby dołączenia do procesu niezaufanego użytkownika zostanie wyświetlone potwierdzenie okna dialogowego ostrzeżenia o zabezpieczeniach z pytaniem, czy chcesz dołączyć do procesu. "Zaufani użytkownicy" obejmują użytkownika i zestaw standardowych użytkowników, które są powszechnie zdefiniowane na komputerach, na których zainstalowano .NET Framework, takich jak **ASPNET**, **LocalSystem**, **NetworkService** i **LocalService**. Aby uzyskać więcej informacji, zobacz [Ostrzeżenie o zabezpieczeniach: dołączanie do procesu należącego do niezaufanego użytkownika może być niebezpieczne. Jeśli poniższe informacje wyglądają podejrzanie lub nie masz pewności, nie dołączaj do tego procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).
 
 - Należy zachować ostrożność podczas pobierania projektu z Internetu i ładowania go do programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Jest to bardzo ryzykowne, nawet bez debugowania. Gdy to zrobisz, zakładasz, że projekt i kod, który zawiera, są wiarygodne.
 
@@ -77,7 +79,7 @@ Możliwość debugowania innego procesu daje użytkownikowi wyjątkowo szerokie 
 
   Zobacz [Określanie symboli (. pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)
 - [Ostrzeżenie o zabezpieczeniach: dołączanie do procesu należącego do niezaufanego użytkownika może być niebezpieczne. Jeśli poniższe informacje wyglądają podejrzanie lub nie masz pewności, nie dołączaj do tego procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)

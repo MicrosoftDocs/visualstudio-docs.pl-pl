@@ -1,5 +1,7 @@
 ---
 title: Przełącz punkt przerwania — Polecenie
+description: Dowiedz się, jak użyć polecenia Przełącz punkt przerwania, aby włączyć lub wyłączyć punkt przerwania, w zależności od jego bieżącego stanu w bieżącej lokalizacji w pliku.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d393890e6166b4a4ef53c9520a556e9a9edd64d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b65144271f91d518dd6649fa1e97fc627d1b0009
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597324"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560970"
 ---
 # <a name="toggle-breakpoint-command"></a>Przełącz punkt przerwania — Polecenie
 Włącza lub wyłącza punkt przerwania w zależności od bieżącego stanu w bieżącej lokalizacji pliku.
@@ -42,7 +44,7 @@ Poniższy przykład przełącza bieżący punkt przerwania.
 >Debug.ToggleBreakpoint
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Okno polecenia](../../ide/reference/command-window.md)

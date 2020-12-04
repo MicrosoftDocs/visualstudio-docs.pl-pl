@@ -1,5 +1,7 @@
 ---
 title: Źródła zdarzeń (Visual Studio SDK) | Microsoft Docs
+description: 'Poznaj dwa źródła zdarzeń w debugowaniu programu Visual Studio: aparat debugowania i Menedżer debugowania sesji.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13842ab7b231d04bdbcafdf32534edc4eb2a9af6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1ab0bc2bb61069e20276c471d1245d167715cc7a
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738771"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559670"
 ---
 # <a name="event-sources-visual-studio-sdk"></a>Źródła zdarzeń (Visual Studio SDK)
 Istnieją dwa źródła zdarzeń: aparat debugowania (DE) i Menedżer debugowania sesji (SDM). Zdarzenia wysyłane z niepustego aparatu, podczas gdy zdarzenia wysyłane z modelu SDM mają aparat o wartości NULL.
@@ -72,5 +74,5 @@ HRESULT CEvent::SendAsynchronousEvent(IDebugEventCallback2 *pCallback, IDebugEng
 
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wysyłanie zdarzeń](../../extensibility/debugger/sending-events.md)

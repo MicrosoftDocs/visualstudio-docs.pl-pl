@@ -1,5 +1,7 @@
 ---
 title: Implementowanie ewaluatora wyrażeń | Microsoft Docs
+description: Dowiedz się więcej na temat oceniania wyrażenia, które obejmuje aparat debugowania, dostawcę symboli, obiekt spinacza oraz ewaluatora wyrażeń.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8c7c9a1130794dd4c28f212afd6cb3c030f5a1b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28989178ab726a9b274f66e0a9296f2bf49ead4a
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738538"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559969"
 ---
 # <a name="implement-an-expression-evaluator"></a>Implementowanie ewaluatora wyrażeń
 > [!IMPORTANT]
@@ -46,7 +48,7 @@ ms.locfileid: "80738538"
 
 - [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)
 
-  Na stronie EE są uruchamiane [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md). `IDebugProperty2` zapewnia mechanizm do opisywania wyniku oceny wyrażenia, takiego jak zmienna lokalna, pierwotna lub obiekt do programu Visual Studio, który następnie wyświetla odpowiednie informacje w oknie **zmiennych lokalnych**, **czujka**lub **natychmiastowe** .
+  Na stronie EE są uruchamiane [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md). `IDebugProperty2` zapewnia mechanizm do opisywania wyniku oceny wyrażenia, takiego jak zmienna lokalna, pierwotna lub obiekt do programu Visual Studio, który następnie wyświetla odpowiednie informacje w oknie **zmiennych lokalnych**, **czujka** lub **natychmiastowe** .
 
   Po otrzymaniu monitu o podanie informacji odnosi się do EE. SP uruchamia interfejsy, które opisują adresy i pola, takie jak następujące interfejsy i ich pochodne:
 
@@ -61,5 +63,5 @@ ms.locfileid: "80738538"
 ## <a name="in-this-section"></a>W tej sekcji
  [Strategia implementacji ewaluatora wyrażeń](../../extensibility/debugger/expression-evaluator-implementation-strategy.md) Definiuje proces trzech etapów dla strategii implementacji dla ewaluatora wyrażeń.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Pisanie ewaluatora wyrażeń CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

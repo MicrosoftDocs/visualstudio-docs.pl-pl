@@ -1,5 +1,7 @@
 ---
 title: Naciśnięcie punktu przerwania | Microsoft Docs
+description: W tym artykule opisano proces, który ma miejsce, gdy silnik debugowania trafi w punkt przerwania podczas uruchamiania lub wykonywania kroków.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e75eb1e807e72f3bd035b5dd0534860f5fd8df2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dc796689b56518948c62196407ddeaefe3ea822f
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738566"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560853"
 ---
 # <a name="hit-a-breakpoint"></a>Trafienie punktu przerwania
 W poniższej sekcji opisano proces, w którym aparat debugowania (DE) trafi do punktu przerwania podczas uruchamiania lub wykonywania kroków:
@@ -27,5 +29,5 @@ W poniższej sekcji opisano proces, w którym aparat debugowania (DE) trafi do p
 
 2. Menedżer debugowania sesji (SDM) wywołuje [IDebugBreakpointEvent2::: EnumBreakpoints](../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md) , aby uzyskać punkt przerwania, który został trafiony.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Zdarzenia debugera wywołań](../../extensibility/debugger/calling-debugger-events.md)

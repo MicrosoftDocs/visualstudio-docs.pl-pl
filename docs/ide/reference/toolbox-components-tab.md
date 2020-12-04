@@ -1,5 +1,7 @@
 ---
 title: Przybornik, karta Składniki
+description: Dowiedz się więcej na temat składników znalezionych na karcie składniki okna przybornika.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,18 +15,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5eb8c320a3190121d95395f7b359aa9ed978408
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 40ba84712a343a071d6213dc9cd985727fc20ebf
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597311"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560944"
 ---
 # <a name="toolbox-components-tab"></a>Przybornik, karta składniki
 
 Wyświetla składniki, które można dodać do Visual Basic i projektantów C# dla Windows Forms. Oprócz składników .NET, które są dołączone do programu Visual Studio, takich jak <xref:System.Messaging.MessageQueue> <xref:System.Diagnostics.EventLog> składniki i, można dodać własne składniki programu lub innych firm do tej karty.
 
-Aby wyświetlić tę kartę, Otwórz projektanta Windows Forms. Wybierz pozycję **Widok**  >  **Przybornik**. W **przyborniku**wybierz kartę **składniki** .
+Aby wyświetlić tę kartę, Otwórz projektanta Windows Forms. Wybierz pozycję **Widok**  >  **Przybornik**. W **przyborniku** wybierz kartę **składniki** .
 
 ## <a name="components"></a>Składniki
 
@@ -87,7 +89,7 @@ Tworzy <xref:System.Windows.Forms.Timer> wystąpienie składnika, którego możn
 > [!NOTE]
 > Istnieje również system <xref:System.Timers.Timer> , który można dodać do **przybornika** <xref:System.Timers.Timer> , który jest zoptymalizowany pod kątem aplikacji serwera, a Windows Forms <xref:System.Windows.Forms.Timer> jest najlepiej dostosowany do korzystania z Windows Forms.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Kontrolki do użycia na Windows Forms](/dotnet/framework/winforms/controls/controls-to-use-on-windows-forms)
 - [Wybieranie elementów przybornika, składniki WPF](choose-toolbox-items-wpf-components.md)

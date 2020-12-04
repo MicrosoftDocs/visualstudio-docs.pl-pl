@@ -1,5 +1,7 @@
 ---
 title: Szczegóły sterty debugowania CRT | Microsoft Docs
+description: Sterta debugowania oferuje zaawansowane narzędzia ułatwiające rozwiązywanie problemów z alokacją pamięci. Dowiedz się więcej o narzędziach i sposobach ich rozwiązywania problemów, takich jak wycieki i przepełnienia.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -73,12 +75,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22307c44e4f82056887fadf6e8fde9e1449a19a5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 774c6c03d0485664eb01e1a7967003ef2f5bd2bc
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247933"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560619"
 ---
 # <a name="crt-debug-heap-details"></a>Szczegóły dotyczące sterty debugowania CRT
 Ten temat zawiera szczegółowy opis sterty debugowania CRT.
@@ -181,10 +183,10 @@ Flaga **_crtDbgFlag** zawiera następujące pola bitowe:
 |Pole bitowe|Domyślne<br /><br /> value|Opis|
 |---------------|-----------------------|-----------------|
 |**_CRTDBG_ALLOC_MEM_DF**|Włączone|Włącza alokację debugowania. Gdy ten bit jest wyłączony, alokacje pozostają powiązane ze sobą, ale ich typ bloku jest **_IGNORE_BLOCK**.|
-|**_CRTDBG_DELAY_FREE_MEM_DF**|Wyłączony|Uniemożliwia rzeczywiste zwolnienie pamięci, co w przypadku symulowania warunków braku pamięci. Gdy ten bit jest włączony, zwolnione bloki są przechowywane na połączonej liście sterty debugowania, ale są oznaczone jako **_FREE_BLOCK** i wypełnione specjalną wartością bajtową.|
-|**_CRTDBG_CHECK_ALWAYS_DF**|Wyłączony|Powoduje, że **_CrtCheckMemory** być wywoływana przy każdej alokacji i cofa alokacji. To spowalnia wykonywanie, ale szybko przechwytuje błędy.|
-|**_CRTDBG_CHECK_CRT_DF**|Wyłączony|Powoduje, że bloki oznaczone jako typu **_CRT_BLOCK** mają być uwzględniane w operacjach wykrywania przecieków i różnic stanu. Gdy ten bit jest wyłączony, pamięć używana wewnętrznie przez bibliotekę wykonawczą jest ignorowana podczas takich operacji.|
-|**_CRTDBG_LEAK_CHECK_DF**|Wyłączony|Powoduje, że sprawdzanie wycieków odbywa się przy zamykaniu programu za pośrednictwem wywołania do **_CrtDumpMemoryLeaks**. Raport o błędach jest generowany, jeśli aplikacja nie może zwolnić całej przypisanej pamięci.|
+|**_CRTDBG_DELAY_FREE_MEM_DF**|Wyłączone|Uniemożliwia rzeczywiste zwolnienie pamięci, co w przypadku symulowania warunków braku pamięci. Gdy ten bit jest włączony, zwolnione bloki są przechowywane na połączonej liście sterty debugowania, ale są oznaczone jako **_FREE_BLOCK** i wypełnione specjalną wartością bajtową.|
+|**_CRTDBG_CHECK_ALWAYS_DF**|Wyłączone|Powoduje, że **_CrtCheckMemory** być wywoływana przy każdej alokacji i cofa alokacji. To spowalnia wykonywanie, ale szybko przechwytuje błędy.|
+|**_CRTDBG_CHECK_CRT_DF**|Wyłączone|Powoduje, że bloki oznaczone jako typu **_CRT_BLOCK** mają być uwzględniane w operacjach wykrywania przecieków i różnic stanu. Gdy ten bit jest wyłączony, pamięć używana wewnętrznie przez bibliotekę wykonawczą jest ignorowana podczas takich operacji.|
+|**_CRTDBG_LEAK_CHECK_DF**|Wyłączone|Powoduje, że sprawdzanie wycieków odbywa się przy zamykaniu programu za pośrednictwem wywołania do **_CrtDumpMemoryLeaks**. Raport o błędach jest generowany, jeśli aplikacja nie może zwolnić całej przypisanej pamięci.|
 
 ![Z powrotem do najwyższej](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [zawartości](#BKMK_Contents)
 
@@ -353,5 +355,5 @@ Teraz nazwa pliku źródłowego i numer wiersza, gdzie `addNewRecord` został wy
 
 ![Z powrotem do najwyższej](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [zawartości](#BKMK_Contents)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)

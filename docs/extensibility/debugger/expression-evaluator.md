@@ -1,5 +1,7 @@
 ---
 title: Ewaluatora wyrażeń | Microsoft Docs
+description: Dowiedz się więcej na temat ocen wyrażeń, które badają składnię języka, aby analizować i oceniać zmienne i wyrażenia w czasie wykonywania w trybie przerwania.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a477aaceb57e6ccd2eb5125fcf9d8af9be59472b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a8223e39eb804684fede50ceb2f7c859e198a272
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738690"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560138"
 ---
 # <a name="expression-evaluator"></a>Ewaluatora wyrażeń
 Oceny wyrażeń (EE) sprawdzają składnię języka, aby analizować i oceniać zmienne i wyrażenia w czasie wykonywania, umożliwiając ich wyświetlanie przez użytkownika, gdy IDE jest w trybie przerwania.
@@ -40,5 +42,5 @@ Oceny wyrażeń (EE) sprawdzają składnię języka, aby analizować i oceniać 
 ## <a name="implementation-notes"></a>Uwagi o implementacji
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Aparaty debugowania oczekują na rozmowę z ewaluatora wyrażeń przy użyciu interfejsów aparatu plików wykonywalnych języka wspólnego (CLR). W związku z tym, ewaluatora wyrażeń, która współpracuje z [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] aparatami debugowania, musi obsługiwać środowisko CLR (kompletna lista wszystkich interfejsów debugowania CLR znajduje się w debugref.doc, który jest częścią [!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)] ).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Składniki debugera](../../extensibility/debugger/debugger-components.md)

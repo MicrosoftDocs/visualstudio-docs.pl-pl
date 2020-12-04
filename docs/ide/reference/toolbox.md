@@ -1,5 +1,7 @@
 ---
 title: Okno przybornika
+description: Dowiedz się więcej na temat okna przybornika i sposobu wyświetlania formantów, które można dodać do projektów programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 06/01/2020
 ms.topic: reference
 f1_keywords:
@@ -13,18 +15,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9807762a4573cdbc68a4af26bf9d73b46827c7af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 905288d4a580f5633196273666fbea3954d1767c
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285344"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560281"
 ---
 # <a name="toolbox"></a>Przybornik
 
 Okno **przybornika** wyświetla kontrolki, które można dodać do projektów programu Visual Studio. Aby otworzyć **Przybornik**, wybierz pozycję **Wyświetl**  >  **Przybornik** z paska menu lub naciśnij **klawisze CTRL** + **Alt** + **X**.
 
-![Okno przybornika](media/vs-2019/toolbox.png "Zrzut ekranu przedstawiający okno przybornika")
+![Zrzut ekranu przedstawiający okno przybornika z opcjami w sekcji kontenery.](media/vs-2019/toolbox.png "Zrzut ekranu przedstawiający okno przybornika")
 
 Możesz przeciągać i upuszczać różne kontrolki na powierzchnię projektanta, którego używasz, i zmieniać rozmiar i położenie formantów.
 
@@ -37,7 +39,7 @@ Wersja platformy .NET przeznaczona dla projektu ma także wpływ na zestaw kontr
 
 ::: moniker range="vs-2019"
 
-![Okno przybornika](media/vs-2019/toolbox-change-dotnet-version.png "Zrzut ekranu przedstawiający okno dialogowe, w którym można zmienić wersję platformy .NET")
+![Zrzut ekranu przedstawiający okno dialogowe aplikacji z opcjami na liście rozwijanej platforma docelowa.](media/vs-2019/toolbox-change-dotnet-version.png "Zrzut ekranu przedstawiający okno dialogowe, w którym można zmienić wersję platformy .NET")
 
 ::: moniker-end
 
@@ -80,6 +82,6 @@ Zapoznania następujące linki, aby dowiedzieć się więcej na temat niektóryc
 - [Przybornik, karta Składniki](../../ide/reference/toolbox-components-tab.md)
 - [Przybornik, karta HTML](../../ide/reference/toolbox-html-tab.md)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Wybieranie elementów przybornika, składniki WPF](choose-toolbox-items-wpf-components.md)

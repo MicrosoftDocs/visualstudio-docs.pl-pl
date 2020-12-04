@@ -1,5 +1,7 @@
 ---
 title: Ustawianie opcji Edytora specyficznych dla języka
+description: Dowiedz się, jak ustawić różne opcje edytora tekstu, które mają zastosowanie do określonych języków programowania.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 988e89b9019b149e89ed569cf3ff585fdd4641bc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1060abe1b16b9391eadb88be1499fa2231fb1859
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590842"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560749"
 ---
 # <a name="set-language-specific-editor-options"></a>Ustawianie opcji edytora specyficznych dla języka
 
@@ -45,7 +47,7 @@ Opisuje ustawienia określające zachowanie listy uzupełniania IntelliSense pod
 [Opcje, Edytor tekstu, XAML, formatowanie](../../ide/reference/options-text-editor-xaml-formatting.md)\
 Zawiera opis ustawień rozmieszczenia elementów i atrybutów w dokumentach w języku XAML.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Dopasowywanie edytora](../how-to-change-text-case-in-the-editor.md)
 - [Tworzenie przenośnych, niestandardowych ustawień edytora za pomocą wtyczki EditorConfig](../../ide/create-portable-custom-editor-options.md)

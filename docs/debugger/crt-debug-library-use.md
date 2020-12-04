@@ -1,5 +1,7 @@
 ---
 title: Biblioteka debugowania CRT Użyj | Microsoft Docs
+description: Dowiedz się, w jaki sposób biblioteka środowiska uruchomieniowego C (CRT) obsługuje Twoje działania związane z debugowaniem i co należy zrobić, aby użyć bibliotek debugowania CRT.
+ms.custom: SEO-VS-2020
 ms.date: 10/03/2019
 ms.topic: conceptual
 f1_keywords:
@@ -28,24 +30,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20aeee220bec600c2232286d18600b04201ad03b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d145ccd8764e488a5d1270985050b29bcd8987d
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72745612"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560567"
 ---
 # <a name="crt-debug-library-use"></a>Korzystanie z biblioteki debugowania CRT
-Biblioteka wykonawcza C zapewnia rozbudowaną obsługę debugowania. Aby użyć jednej z bibliotek debugowania CRT, należy połączyć za pomocą [/Debug](/cpp/build/reference/debug-generate-debug-info) i kompilować z **/MDD**, **/MTD**lub **/LDD**.
+Biblioteka wykonawcza C zapewnia rozbudowaną obsługę debugowania. Aby użyć jednej z bibliotek debugowania CRT, należy połączyć za pomocą [/Debug](/cpp/build/reference/debug-generate-debug-info) i kompilować z **/MDD**, **/MTD** lub **/LDD**.
 
 ## <a name="remarks"></a>Uwagi
  Główne definicje i makra dotyczące debugowania CRT można znaleźć w pliku nagłówkowym CRTDBG. h.
 
  Funkcje w bibliotekach debugowania CRT są kompilowane z informacjami o debugowaniu ([/Z7,/ZD,/Zi,/ZI (format informacji o debugowaniu)](/cpp/build/reference/z7-zi-zi-debug-information-format)i bez optymalizacji. Niektóre funkcje zawierają potwierdzenia do sprawdzenia parametrów, które są przekazywane do nich, a kod źródłowy jest podany. Za pomocą tego kodu źródłowego można wkroczyć do funkcji CRT, aby upewnić się, że funkcje działają zgodnie z oczekiwaniami i sprawdzają, czy istnieją nieprawidłowe parametry lub Stany pamięci. (Niektóre technologie CRT są zastrzeżone i nie dostarczają kodu źródłowego dla obsługi wyjątków, liczby zmiennoprzecinkowej i kilku innych procedur).
 
- Aby uzyskać więcej informacji na temat różnych bibliotek czasu wykonywania, których można użyć, zobacz [biblioteki uruchomieniowe języka C](/cpp/c-runtime-library/crt-library-features).
+ Aby uzyskać więcej informacji na temat różnych bibliotek w czasie wykonywania, których można użyć, zobacz [biblioteki C Run-Time](/cpp/c-runtime-library/crt-library-features).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
-- [Techniki testowania CRT](../debugger/crt-debugging-techniques.md)
-- [/MD,/MT,/LD (Korzystaj z bibliotek Run-Time)](/cpp/build/reference/md-mt-ld-use-run-time-library)
+- [Techniki debugowania CRT](../debugger/crt-debugging-techniques.md)
+- [/MD,/MT,/LD (Użyj biblioteki Run-Time)](/cpp/build/reference/md-mt-ld-use-run-time-library)

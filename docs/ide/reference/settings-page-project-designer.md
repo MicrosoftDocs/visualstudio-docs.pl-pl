@@ -1,5 +1,7 @@
 ---
 title: Strona usług, Projektant projektu
+description: Dowiedz się, jak użyć strony Ustawienia projektanta projektu, aby określić ustawienia aplikacji projektu.
+ms.custom: SEO-VS-2020
 ms.date: 06/14/2018
 ms.topic: reference
 f1_keywords:
@@ -12,18 +14,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f4ca1def334241999445e3f11cf142aa426d962
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b5aa077043b16c01a05e8730bcd2b42719edaf0
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75566777"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560320"
 ---
 # <a name="settings-page-project-designer"></a>Strona Ustawienia, Projektant projektu
 
 Użyj strony **Ustawienia** projektanta projektu, aby określić ustawienia aplikacji projektu. Ustawienia aplikacji umożliwiają dynamiczne przechowywanie i pobieranie ustawień właściwości oraz innych informacji dotyczących aplikacji. Umożliwiają one również obsługę niestandardowych preferencji aplikacji i użytkowników na komputerze klienckim. Aby uzyskać więcej informacji, zobacz [Zarządzanie ustawieniami aplikacji](../managing-application-settings-dotnet.md).
 
-Aby uzyskać dostęp do strony **Ustawienia** , wybierz węzeł projektu w **Eksplorator rozwiązań**, a następnie wybierz **Project**pozycję  >  **Właściwości**projektu. Gdy zostanie wyświetlony Projektant projektu, wybierz kartę **Ustawienia** .
+Aby uzyskać dostęp do strony **Ustawienia** , wybierz węzeł projektu w **Eksplorator rozwiązań**, a następnie wybierz **Project** pozycję  >  **Właściwości** projektu. Gdy zostanie wyświetlony Projektant projektu, wybierz kartę **Ustawienia** .
 
 ## <a name="header-bar"></a>Pasek nagłówka
 
@@ -85,7 +87,7 @@ Ustawienia o zakresie użytkownika, takie jak czcionki systemowe, są przeznaczo
 
 Dane lub wartość skojarzona z ustawieniem aplikacji. Na przykład, jeśli ustawienie jest czcionką, jej wartością może być **Verdana, 9.75 pt, style = Bold**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Zarządzanie ustawieniami aplikacji](../managing-application-settings-dotnet.md)
 - [Dostęp do ustawień aplikacji (Visual Basic)](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings)

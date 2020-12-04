@@ -1,5 +1,7 @@
 ---
 title: Okno wyniku
+description: Informacje o oknie danych wyjściowych i sposobie wyświetlania komunikatów o stanie dla różnych funkcji w środowisku IDE.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,16 +18,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f820fe2f3cca0eddb709462961f328c906f6f2d
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: b8615fcdb7e6751087c499967478aaf63e68d624
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810366"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560385"
 ---
 # <a name="output-window"></a>Okno wyniku
 
-W oknie **dane wyjściowe** są wyświetlane komunikaty o stanie dla różnych funkcji w zintegrowanym środowisku programistycznym (IDE). Aby otworzyć okno **dane wyjściowe** , na pasku menu wybierz polecenie **Wyświetl**  >  **dane wyjściowe**lub naciśnij **klawisze CTRL** + **Alt** + **O**.
+W oknie **dane wyjściowe** są wyświetlane komunikaty o stanie dla różnych funkcji w zintegrowanym środowisku programistycznym (IDE). Aby otworzyć okno **dane wyjściowe** , na pasku menu wybierz polecenie **Wyświetl**  >  **dane wyjściowe** lub naciśnij **klawisze CTRL** + **Alt** + **O**.
 
 ## <a name="toolbar"></a>Pasek narzędzi
 
@@ -73,7 +75,7 @@ W języku C++ można utworzyć niestandardowe kroki kompilacji i zdarzenia kompi
 
 Jeśli używasz autoprzewijania w oknie **danych wyjściowych** , a następnie nawiguj za pomocą klawiszy myszy lub strzałek, Autoprzewijanie zostanie zatrzymane. Aby wznowić Autoprzewijanie, naciśnij **klawisze CTRL** + **End**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Komunikaty diagnostyczne w oknie danych wyjściowych](../../debugger/diagnostic-messages-in-the-output-window.md)
 - [Instrukcje: kontrolowanie okna danych wyjściowych](/previous-versions/ht6z4e28(v=vs.140))

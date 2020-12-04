@@ -1,5 +1,7 @@
 ---
 title: Strategia implementacji ewaluatora wyrażeń | Microsoft Docs
+description: Poznaj strategię tworzenia ewaluatora wyrażeń, wykonując najpierw kod, aby wyświetlić zmienne lokalne w oknie zmiennych lokalnych.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3922689c20c839b3c0c2b2440bc9fefd5d25c80a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b936b465c3a7becbdcb3ea4f36a16b839260ad74
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738667"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560151"
 ---
 # <a name="expression-evaluator-implementation-strategy"></a>Strategia implementacji ewaluatora wyrażeń
 > [!IMPORTANT]
@@ -29,6 +31,6 @@ ms.locfileid: "80738667"
 
  Metoda [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) powinna zostać zaimplementowana dalej. Aparat debugowania (DE) wywołuje tę metodę, aby uzyskać listę zmiennych lokalnych i argumentów przez przekazanie `IDebugProperty2::EnumChildren` `guidFilter` argumentu `guidFilterLocalsPlusArgs` . `IDebugProperty2::EnumChildren` wywołuje metody [EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md) i [EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md), łącząc wyniki w jednym wyliczeniu. Aby uzyskać więcej informacji, zobacz temat [Wyświetlanie elementów lokalnych](../../extensibility/debugger/displaying-locals.md) .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Implementowanie ewaluatora wyrażeń](../../extensibility/debugger/implementing-an-expression-evaluator.md)
 - [Wyświetl elementy lokalne](../../extensibility/debugger/displaying-locals.md)

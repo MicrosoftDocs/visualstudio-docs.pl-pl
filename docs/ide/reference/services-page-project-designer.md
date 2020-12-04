@@ -1,5 +1,7 @@
 ---
 title: Strona usług, Projektant projektu
+description: Dowiedz się, jak używać strony usługi projektanta projektu, aby włączyć i skonfigurować usługi aplikacji klienta dla projektu.
+ms.custom: SEO-VS-2020
 ms.date: 01/18/2018
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d30d8e8ddcdc8c1fa4fe1935da1f1dedd1b18f4b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c286dbd632e09a9a9c2c2b62ac2002f2e48f283
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593567"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560801"
 ---
 # <a name="services-page-project-designer"></a>Strona usług, Projektant projektu
 
@@ -69,11 +71,11 @@ Określa lokalizację usługi ról.
 
 Określa lokalizację usługi profilu (Ustawienia sieci Web).
 
- **Zaawansowany**
+ **Zaawansowane**
 
 Otwiera okno [dialogowe Ustawienia zaawansowane dla usług](../../ide/reference/advanced-settings-for-services-dialog-box.md), za pomocą którego można przesłonić zachowanie domyślne. Na przykład można użyć tego okna dialogowego, aby określić bazę danych do przechowywania w trybie offline, zamiast korzystać z lokalnego systemu plików. Aby uzyskać więcej informacji, zobacz [okno dialogowe Ustawienia zaawansowane dla usług](../../ide/reference/advanced-settings-for-services-dialog-box.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Usługi aplikacji klienckich](/dotnet/framework/common-client-technologies/client-application-services)
 - [Zaawansowane ustawienia dla usług — Okno dialogowe](../../ide/reference/advanced-settings-for-services-dialog-box.md)

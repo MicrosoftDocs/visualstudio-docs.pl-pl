@@ -1,5 +1,7 @@
 ---
 title: Ustawianie zakładek kodu
+description: Dowiedz się, jak oznaczyć linie w kodzie przy użyciu zakładek, aby szybko wrócić do określonej lokalizacji lub przeskoczyć między lokalizacjami.
+ms.custom: SEO-VS-2020
 ms.date: 02/23/2018
 ms.topic: conceptual
 f1_keywords:
@@ -10,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c62ded0b94db9d39a197dde55fbc77434c5325d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ded48fcea0630bf07311cbb92ed2e258cdf4afb1
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595439"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560866"
 ---
 # <a name="set-bookmarks-in-code"></a>Ustawianie zakładek w kodzie
 
-Przy użyciu zakładek można oznaczyć linie w kodzie, aby szybko wrócić do określonej lokalizacji lub przeskoczyć między lokalizacjami. Polecenia i ikony zakładki są dostępne w dwóch miejscach: **okno zakładki** (okno**wyświetlania**  >  **zakładki**) i pasek narzędzi Edytor tekstu.
+Przy użyciu zakładek można oznaczyć linie w kodzie, aby szybko wrócić do określonej lokalizacji lub przeskoczyć między lokalizacjami. Polecenia i ikony zakładki są dostępne w dwóch miejscach: **okno zakładki** (okno **wyświetlania**  >  **zakładki**) i pasek narzędzi Edytor tekstu.
 
 ![Pasek narzędzi zakładki](media/bookmark-toolbar.png)
 
@@ -40,6 +42,6 @@ Zakładki można organizować w foldery wirtualne, wybierając pozycję **Nowy f
 
 Zakładki (bez ich usuwania) można wyłączyć, wybierając przycisk **Wyłącz wszystkie zakładki** w oknie zakładek. Można je ponownie włączyć, wybierając przycisk (który jest teraz nazywany **wszystkimi zakładkami**).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Funkcje edytora kodu](../ide/writing-code-in-the-code-and-text-editor.md)

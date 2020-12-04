@@ -1,5 +1,7 @@
 ---
 title: Debugowanie usług platformy Azure | Microsoft Docs
+description: Można debugować usługi platformy Azure za pomocą programu Visual Studio. Skorzystaj z linków w tym artykule, aby dowiedzieć się więcej na temat różnych sposobów wykonania tej czynności.
+ms.custom: SEO-VS-2020
 ms.date: 09/14/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 18635e4ecbbdb3c3c52be20b197c01168cdb12ff
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 36619ae1b1cfc1d380eb85a3e7a2273493ebaa13
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91878738"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560372"
 ---
 # <a name="debug-azure-services-in-visual-studio"></a>Debugowanie usług platformy Azure w programie Visual Studio
 
@@ -37,6 +39,6 @@ Do zdalnego debugowania:
 
 - ASP.NET na platformie Azure Service Fabric, zobacz [debugowanie aplikacji zdalnej Service Fabric](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Debugowanie w Visual Studio](../debugger/index.yml)

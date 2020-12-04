@@ -1,5 +1,7 @@
 ---
 title: Techniki debugowania CRT | Microsoft Docs
+description: Istnieją różne techniki, których można użyć do debugowania programu, który używa biblioteki środowiska uruchomieniowego C (CRT). Skorzystaj z tego artykułu i jego linków, aby dowiedzieć się więcej na temat tych technik.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,40 +21,40 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88cdc78fd739de412b4cf796d0ca7a42f9174e0a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b71c91dbcc420fd4cc89a5e86fb976cca738bdcc
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62564038"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560528"
 ---
 # <a name="crt-debugging-techniques"></a>Techniki testowania CRT
 W przypadku debugowania programu korzystającego z biblioteki wykonawczej C te techniki debugowania mogą być przydatne.
 
 ## <a name="in-this-section"></a>W tej sekcji
- [Korzystanie z biblioteki debugowania CRT](../debugger/crt-debug-library-use.md)
+ [Użycie biblioteki debugowania CRT](../debugger/crt-debug-library-use.md)
 
- Zawiera opis obsługi debugowania dostarczonej przez bibliotekę wykonawczą C i instrukcje dotyczące uzyskiwania dostępu do narzędzi.
+ Zawiera opis obsługi debugowania dostarczonej przez bibliotekę C Run-Time i zawiera instrukcje dotyczące uzyskiwania dostępu do narzędzi.
 
  [Makra raportowania](../debugger/macros-for-reporting.md)
 
  Zawiera informacje dotyczące **_RPTn** i **_RPTFn** makr (zdefiniowane w CRTDBG. H), która zastąpi stosowanie `printf` instrukcji dla debugowania.
 
- [Wersja debugowania funkcji alokacji stosu](../debugger/debug-versions-of-heap-allocation-functions.md)
+ [Wersje debugowania funkcji alokacji sterty](../debugger/debug-versions-of-heap-allocation-functions.md)
 
  Omawia specjalne wersje debugowania funkcji alokacji sterty, w tym: jak są wywoływane mapowania CRT, zalety wywołania ich jawnie, sposób zapobiegania konwersji, śledzenie oddzielnych typów alokacji w blokach klienta oraz wyniki niedefiniowania _DEBUG.
 
- [Szczegóły dotyczące sterty debugowania CRT](../debugger/crt-debug-heap-details.md)
+ [Szczegóły sterty debugowania CRT](../debugger/crt-debug-heap-details.md)
 
  Oferuje linki do zarządzania pamięcią i sterty debugowania, typy bloków na stercie debugowania, używanie sterty debugowania, funkcji raportowania stanu sterty i śledzenie żądań alokacji sterty.
 
- [Pisanie debugowanie funkcji punktów zaczepienia](../debugger/debug-hook-function-writing.md)
+ [Zapisywanie funkcji punktu zaczepienia debugowania](../debugger/debug-hook-function-writing.md)
 
  Wyświetla listę linków do funkcji punktu zaczepienia bloku klienta, funkcje punktu zaczepienia alokacji, punkty zaczepienia alokacji i alokacje pamięci CRT oraz raporty funkcji punktu zaczepienia.
 
  [Wyszukiwanie przecieków pamięci za pomocą biblioteki CRT](../debugger/finding-memory-leaks-using-the-crt-library.md)
 
- Obejmuje techniki wykrywania i izolowania przecieków pamięci przy użyciu debugera i biblioteki wykonawczej C.
+ Obejmuje techniki wykrywania i izolowania przecieków pamięci przy użyciu debugera i biblioteki języka C Run-Time.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
 

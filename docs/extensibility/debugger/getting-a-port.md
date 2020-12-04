@@ -1,5 +1,7 @@
 ---
 title: Pobieranie portu | Microsoft Docs
+description: Dowiedz się, w jaki sposób program Visual Studio dostarcza port do aparatu debugowania, aby zarejestrować węzły programu z portem i spełnić żądania dotyczące informacji o procesie.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7bf4948e7cb2590136774eab76fbafec91dbfa40
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd86d84ba4187df70d2aa02181249336c38dda41
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738628"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560051"
 ---
 # <a name="get-a-port"></a>Pobierz port
 Port reprezentuje połączenie z komputerem, na którym są uruchomione procesy. Może to być maszyna lokalna lub maszyna zdalna (w przypadku których może być uruchomiony system operacyjny inny niż Windows). Aby uzyskać więcej informacji, zobacz [porty](../../extensibility/debugger/ports.md) .
@@ -96,7 +98,7 @@ HRESULT CDebugEngine::ResumeProcess(IDebugProcess2 *pDebugProcess)
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Rejestrowanie programu](../../extensibility/debugger/registering-the-program.md)
 - [Włączanie debugowania programu](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
 - [Dostawcy portów](../../extensibility/debugger/port-suppliers.md)

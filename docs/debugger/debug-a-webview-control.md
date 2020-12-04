@@ -1,5 +1,7 @@
 ---
 title: Debugowanie kontrolki WebView (platformy UWP) | Microsoft Docs
+description: Dowiedz się, jak sprawdzać i debugować kontrolki WebView używane w aplikacji środowisko wykonawcze systemu Windows. Możesz użyć DOM Explorer i okna konsoli JavaScript.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: f0cab4a77c601414e766851aaf048fb3c32f6458
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 5439f9f253126e159df5dd9ea58bad04c3f6c649
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211118"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560554"
 ---
 # <a name="debug-a-webview-control-in-a-uwp-app"></a>Debugowanie kontrolki WebView w aplikacji platformy UWP
 
@@ -68,7 +70,7 @@ ms.locfileid: "91211118"
 
 2. Jeśli jeszcze tego nie zrobiono, Dodaj `WebView` kontrolkę do aplikacji i naciśnij klawisz F5, aby rozpocząć debugowanie.
 
-3. Otwórz okno konsoli JavaScript dla `WebView` kontrolki, wybierając kolejno opcje **Debuguj**, **Windows**i **JavaScript**.
+3. Otwórz okno konsoli JavaScript dla `WebView` kontrolki, wybierając kolejno opcje **Debuguj**, **Windows** i **JavaScript**.
 
      Zostanie wyświetlone okno konsoli JavaScript.
 
@@ -83,6 +85,6 @@ ms.locfileid: "91211118"
 
 6. Wyświetlaj i Modyfikuj zmienne w aplikacji lub korzystaj z poleceń konsoli, zgodnie z opisem w [przewodniku szybki start: debugowanie](../debugger/quickstart-debug-javascript-using-the-console.md) [poleceń konsoli](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true)JavaScript i JavaScript.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Szybki start: debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md)
