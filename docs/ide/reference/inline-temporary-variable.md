@@ -1,5 +1,7 @@
 ---
 title: Zastąp zmienną tymczasową wartością
+description: Dowiedz się, jak użyć menu szybkie akcje i refaktoryzacje, aby usunąć zmienną tymczasową i zastąpić ją wartością.
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8f0199436f5f9b1013a4c49cfb5909e760c73dcc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d24c63bdc1908ecc15c206faeda3e9de511f8f9b
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568870"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617412"
 ---
 # <a name="inline-a-temporary-variable-refactoring"></a>Wewnętrznie Refaktoryzacja zmiennej tymczasowej
 
@@ -62,6 +64,6 @@ To Refaktoryzacja dotyczy:
 
       ![Wynik wbudowany — Visual Basic](media/inline-result-vb.png)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Refaktoryzacja](../refactoring-in-visual-studio.md)

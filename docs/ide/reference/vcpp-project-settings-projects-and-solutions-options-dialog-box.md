@@ -1,5 +1,7 @@
 ---
 title: Opcje ustawień projektu C++
+description: Dowiedz się, jak używać strony ustawień projektu VC + + w sekcji projekty i rozwiązania, aby definiować ustawienia kompilacji i projektu C++ dotyczące rejestrowania, wydajności i typów plików pomocniczych.
+ms.custom: SEO-VS-2020
 ms.date: 08/02/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c7acd0d8f9c6d15f9f20c42f59c3bd5562884ac3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16226cd66c2cf46d1dc46f1cb3f90dc3bad9658c
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68918882"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616281"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Ustawienia projektu VC++, projekty i rozwiązania, opcje — Okno dialogowe
 
@@ -101,7 +103,7 @@ Umożliwia programowi Visual Studio buforowanie danych projektu w taki sposób, 
 
 Nie używaj danych projektu w pamięci podręcznej. Analizuj pliki projektu za każdym razem, gdy projekt jest ładowany.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Kompilowanie programów C/C++](/cpp/build/projects-and-build-systems-cpp)
 - [Odwołanie kompilacji C/C++](/cpp/build/reference/c-cpp-building-reference)

@@ -1,5 +1,7 @@
 ---
 title: Generuj prywatne pole i właściwość z konstruktora
+description: Dowiedz się, jak użyć menu szybkie akcje i refaktoryzacje w celu wygenerowania prywatnego pola lub właściwości z konstruktora.
+ms.custom: SEO-VS-2020
 ms.date: 06/20/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 56bd361d2bffb4ff17b03ac6743837032d1934e1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e989efed8b58746312ed5f5a510efa049393f3db
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283726"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617464"
 ---
 # <a name="generate-private-field-and-property-from-constructor"></a>Generuj prywatne pole i właściwość z konstruktora
 
@@ -41,6 +43,6 @@ To Refaktoryzacja dotyczy:
 
    ![Generowanie pola prywatnego z poziomu konstruktora](media/generate-private-field-from-constructor.png)
 
-## <a name="see-also"></a>Zobacz też 
+## <a name="see-also"></a>Zobacz także 
 
 - [Refaktoryzacja](../refactoring-in-visual-studio.md)

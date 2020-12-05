@@ -1,5 +1,7 @@
 ---
 title: Generuj szybką akcję dekonstruktora
+description: Dowiedz się, jak za pomocą menu szybkie akcje i refaktoryzacje natychmiast wygenerować element zastępczy metody dla nowego dekonstruktora.
+ms.custom: SEO-VS-2020
 ms.date: 02/19/2019
 ms.topic: reference
 author: kendrahavens
@@ -9,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5a3a89d15d05b44575fede98d3043d706b24c1d9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff2ac7682eff1c3da0597a95945a6a0b016d9213
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "65531886"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617256"
 ---
 # <a name="generate-a-deconstructor-in-visual-studio"></a>Generuj Konstruktor w programie Visual Studio
 
@@ -40,7 +42,7 @@ Ta generacja kodu ma zastosowanie do:
       - Za pomocą kursora w deklaracji wybierz pozycję Ctrl +. Aby wyzwolić menu **szybkie akcje i operacje refaktoryzacji** .
    - **Mysz**
       - Kliknij prawym przyciskiem myszy i wybierz menu **szybkie akcje i operacje refaktoryzacji** .
-      - Wybierz ikonę ![śrubokręt](media/screwdriver.png) ikona wyświetlana na lewym marginesie, jeśli kursor tekstu znajduje się już w pustym wierszu w klasie.
+      - Wybierz :::image type="icon" source="media/screwdriver.png"::: ikonę, która pojawia się na lewym marginesie, jeśli kursor tekstu znajduje się już w pustym wierszu w klasie.
 
       ![Generuj poprawkę kodu dekonstruktora](media/deconstruct-codefix.png)
 
@@ -48,7 +50,7 @@ Ta generacja kodu ma zastosowanie do:
 
    ![Otrzymany kod dekonstruktora](media/deconstruct-result.png)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Generowanie kodu](../code-generation-in-visual-studio.md)
 - [Podgląd zmian](../../ide/preview-changes.md)

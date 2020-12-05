@@ -1,5 +1,7 @@
 ---
 title: Ustaw bieżący proces
+description: Dowiedz się więcej na temat polecenia Set Current Process i sposobu Ustawia określony proces jako aktywny proces w debugerze.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3440c66d79fef3eac3744681870c9ce1ed0e97b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4b6a5c2f010b60546fe1ece16f66bf437d2dc633
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593554"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616587"
 ---
 # <a name="set-current-process"></a>Ustaw bieżący proces
 Ustawia określony proces jako aktywny proces w debugerze.
@@ -30,7 +32,7 @@ Debug.SetCurrentProcess index
 ## <a name="arguments"></a>Argumenty
 `index`
 
-Wymagany. Indeks procesu.
+Wymagane. Indeks procesu.
 
 ## <a name="remarks"></a>Uwagi
 Podczas debugowania można dołączyć do wielu procesów, ale tylko jeden proces jest aktywny w programie w danym momencie. Możesz użyć polecenia, `SetCurrentProcess` Aby ustawić aktywny proces.
@@ -41,7 +43,7 @@ Podczas debugowania można dołączyć do wielu procesów, ale tylko jeden proce
 >Debug.SetCurrentProcess 1
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Okno polecenia](../../ide/reference/command-window.md)

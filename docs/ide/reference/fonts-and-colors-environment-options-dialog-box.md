@@ -1,5 +1,7 @@
 ---
 title: Czcionki i kolory, środowisko, opcje — Okno dialogowe
+description: Dowiedz się, jak za pomocą strony czcionki i kolory w sekcji środowisko utworzyć niestandardową czcionkę i schemat kolorów dla różnych elementów interfejsu użytkownika w IDE.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -25,16 +27,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d5c9edd47e3db43735d3c6e8f6a4ec1a881214e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbbd42b0e4eae6d124fc59d68592155bf2c9bd49
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595621"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617529"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Czcionki i kolory, środowisko, opcje — Okno dialogowe
 
-Na stronie **czcionki i kolory** okna dialogowego **Opcje** można utworzyć niestandardową czcionkę i schemat kolorów dla różnych elementów interfejsu użytkownika w zintegrowanym środowisku programistycznym (IDE). Możesz uzyskać dostęp do tego okna dialogowego, **Tools**klikając  >  **Opcje**narzędzia, a następnie wybierając **Environment**  >  **czcionki i kolory**środowiska.
+Na stronie **czcionki i kolory** okna dialogowego **Opcje** można utworzyć niestandardową czcionkę i schemat kolorów dla różnych elementów interfejsu użytkownika w zintegrowanym środowisku programistycznym (IDE). Możesz uzyskać dostęp do tego okna dialogowego, **Tools** klikając  >  **Opcje** narzędzia, a następnie wybierając **Environment**  >  **czcionki i kolory** środowiska.
 
 Zmiany schematu kolorów nie są stosowane podczas sesji, w której zostały wprowadzone. Zmiany kolorów można oszacować, otwierając inne wystąpienie programu Visual Studio i podając warunki, w których zmiany mają być stosowane.
 
@@ -155,7 +157,7 @@ Do niektórych elementów wyświetlanych należą:
 |**Dane pamięci**|Kolor tekstu używanego do wyświetlania danych w oknie **pamięci** .|
 |**Pamięć nieczytelna**|Kolor tekstu służący do wyświetlania nieczytelnych obszarów pamięci w oknie **pamięci** .|
 |**Liczba**|Liczba w kodzie, która reprezentuje rzeczywistą wartość liczbową.|
-|**Zakład**|Operatory, takie jak +,-i! =.|
+|**Operator**|Operatory, takie jak +,-i! =.|
 |**Inny błąd**|Inne typy błędów, które nie są objęte innymi zygzakami błędów. Obecnie obejmuje to edycję prosta w obszarze Edytuj i Kontynuuj.|
 |**Preprocesor — słowo kluczowe**|Słowa kluczowe używane przez preprocesor, takie jak #include.|
 |**Region tylko do odczytu**|Kod, którego nie można edytować. Przykład kodu wyświetlanego w oknie widoku definicji kodu lub w kodzie, którego nie można modyfikować podczas Edytuj i Kontynuuj.|
@@ -216,7 +218,7 @@ Wyświetla listę dostępnych kolorów, które można wybrać dla pierwszego pla
 
 Elementy mogą dziedziczyć kolor pierwszego planu z innych elementów wyświetlanych, takich jak **zwykły tekst**. Przy użyciu tej opcji, gdy zmienisz kolor dziedziczonego elementu wyświetlanego, kolor elementów wyświetlanych jest również zmieniany automatycznie. Na przykład jeśli wybrano wartość **Automatyczna** dla **błędu kompilatora** , a później zmieniono kolor **zwykłego tekstu** na czerwony, **błąd kompilatora** również automatycznie odziedziczy kolor czerwony.
 
-**Wartooć**
+**Domyślne**
 
 Kolor wyświetlany dla elementu przy pierwszym otwarciu programu Visual Studio. Kliknięcie przycisku **Użyj ustawień domyślnych** spowoduje zresetowanie do tego koloru.
 
@@ -235,7 +237,7 @@ Udostępnia paletę kolorów, z której można wybrać kolor tła dla elementu w
 
 Elementy mogą dziedziczyć kolor tła z innych elementów wyświetlanych, takich jak **zwykły tekst**. Przy użyciu tej opcji, gdy zmienisz kolor dziedziczonego elementu wyświetlanego, kolor elementów wyświetlanych jest również zmieniany automatycznie. Na przykład jeśli wybrano wartość **Automatyczna** dla **błędu kompilatora** , a później zmieniono kolor **zwykłego tekstu** na czerwony, **błąd kompilatora** również automatycznie odziedziczy kolor czerwony.
 
-**Wartooć**
+**Domyślne**
 
 Kolor wyświetlany dla elementu przy pierwszym otwarciu programu Visual Studio. Kliknięcie przycisku **Użyj ustawień domyślnych** spowoduje zresetowanie do tego koloru.
 
@@ -243,7 +245,7 @@ Kolor wyświetlany dla elementu przy pierwszym otwarciu programu Visual Studio. 
 
 Wyświetla okno dialogowe Kolor umożliwiające ustawienie niestandardowego koloru dla elementu zaznaczonego na liście elementy wyświetlania.
 
-**Pogrubiona**
+**Pogrubienie**
 
 Zaznacz tę opcję, aby wyświetlić tekst wybranych **elementów wyświetlanych** w postaci pogrubionego tekstu. Tekst pogrubiony jest łatwiejszy do zidentyfikowania w edytorze.
 
@@ -251,7 +253,7 @@ Zaznacz tę opcję, aby wyświetlić tekst wybranych **elementów wyświetlanych
 
 Wyświetla przykładowy styl czcionki, rozmiar i schemat kolorów dla wybranych elementów **Pokaż ustawienia dla** i **wyświetlania** . To pole służy do wyświetlania podglądu wyników podczas eksperymentu z różnymi opcjami formatowania.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Opcje — okno dialogowe](../../ide/reference/options-dialog-box-visual-studio.md)
 - [Porady: Zmiana czcionek i kolorów](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

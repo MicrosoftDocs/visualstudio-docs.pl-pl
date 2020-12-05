@@ -1,5 +1,7 @@
 ---
 title: Zmiana nazwy elementu refaktoryzacji
+description: Dowiedz się, jak za pomocą funkcji refaktoryzacji Zmień nazwy identyfikatorów dla symboli kodu, takich jak pola, zmienne lokalne, metody, przestrzenie nazw, właściwości i typy.
+ms.custom: SEO-VS-2020
 ms.date: 05/04/2020
 ms.topic: reference
 author: TerryGLee
@@ -12,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8d5b3d32b23b336dc86a92c33bcb97d02312f2dc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 43a6e93815732c4f9d2ec7f29d6d6bef4c1f3451
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84182963"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616723"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>Zmiana nazwy refaktoryzacji symbolu kodu
 
@@ -78,11 +80,11 @@ To Refaktoryzacja dotyczy:
 
    ![Konflikt zmiany nazwy](media/rename-conflict-cs.png)
 
-- Innym sposobem zmiany nazwy symbolu jest zmiana jego nazwy w edytorze. Następnie za pomocą kursora w nazwie symbolu naciśnij klawisz **Ctrl** + **.** lub po prostu rozwiń wyświetlone menu ikony żarówki i wybierz polecenie **Zmień \<old name> nazwę \<new name> na **.
+- Innym sposobem zmiany nazwy symbolu jest zmiana jego nazwy w edytorze. Następnie za pomocą kursora w nazwie symbolu naciśnij klawisz **Ctrl** + **.** lub po prostu rozwiń wyświetlone menu ikony żarówki i wybierz polecenie **Zmień \<old name> nazwę \<new name> na**.
 
    ![Zmień nazwę w edytorze](media/rename-with-editor-cs.png)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Refaktoryzacja](../refactoring-in-visual-studio.md)
 - [Podgląd zmian](../../ide/preview-changes.md)

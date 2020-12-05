@@ -1,5 +1,7 @@
 ---
 title: Generowanie operatorów IEquatable dla struktur
+description: Dowiedz się, jak za pomocą menu szybkie akcje i refabryki wygenerować operatory Equals i IEquatable dla struktur.
+ms.custom: SEO-VS-2020
 ms.date: 05/12/2020
 ms.topic: reference
 author: mikadumont
@@ -7,12 +9,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5ee695169f52036858fc70598f81f375638ab03f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 28d70c0ea95c9373eb87e6199d53f1b43fadd508
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808119"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617204"
 ---
 # <a name="generate-iequatable-operators-when-generating-equals-for-structs"></a>Generuj operatory IEquatable podczas generowania elementu Equals dla struktur
 
@@ -46,7 +48,7 @@ Ta generacja kodu ma zastosowanie do:
 
 3. Wybierz pozycję **Generuj wartość Equals (obiekt)** z menu rozwijanego.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Generowanie kodu](../code-generation-in-visual-studio.md)
 - [Podgląd zmian](../../ide/preview-changes.md)

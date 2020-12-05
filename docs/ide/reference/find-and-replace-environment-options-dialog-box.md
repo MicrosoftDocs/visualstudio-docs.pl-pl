@@ -1,5 +1,7 @@
 ---
 title: Znajdź i zamień, Środowisko, Opcje — Okno dialogowe
+description: Dowiedz się, jak za pomocą strony Znajdź i Zamień w sekcji środowisko kontrolować okna komunikatów i inne aspekty operacji znajdowania i zamieniania.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ef53be4d3894dd1d22a3afbde9dbf631b472aa2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 29f5fb6034c693c14cd04c83fe4c71f8763a0b0c
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75569572"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617321"
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>Znajdź i zamień, Środowisko, Opcje — Okno dialogowe
 
@@ -53,6 +55,6 @@ Po wyczyszczeniu opcji **Zawsze pokazuj ten komunikat** na niektórych, ale nie 
 
 Zaznacz tę opcję, aby wkleić tekst po obu stronach punktu wstawiania bieżącego edytora do pola **Znajdź co** w przypadku wybrania dowolnego widoku okna **Znajdź i Zamień** w menu **Edycja** . Usuń zaznaczenie tej opcji, aby użyć ostatniego wzorca wyszukiwania z poprzedniego wyszukiwania jako **Znajdź** ciąg.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Znajdowanie i zastępowanie tekstu](../../ide/finding-and-replacing-text.md)

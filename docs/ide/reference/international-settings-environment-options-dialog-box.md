@@ -1,5 +1,6 @@
 ---
 title: Ustawienia międzynarodowe w oknie dialogowym Opcje
+description: Informacje na temat używania strony ustawień międzynarodowych w sekcji środowisko w celu zmiany języka domyślnego, gdy jest zainstalowana więcej niż jedna wersja językowa środowiska IDE.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1210f217c9e1dc1f8a90eb99fec9e55970aa8eff
-ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
+ms.openlocfilehash: 37be8d3e5a652bb55b1d71f66c0e9c8ca4cc2f16
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93102496"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617373"
 ---
 # <a name="options-dialog-box-environment--international-settings"></a>Opcje — okno dialogowe: \> międzynarodowe ustawienia środowiska
 
@@ -31,11 +32,11 @@ Strona Ustawienia międzynarodowe umożliwia zmianę języka domyślnego w przyp
 
 **Język**
 
-Wyświetla listę języków dostępnych dla zainstalowanych wersji językowych produktu. Jeśli wiele języków produktów lub instalacja języka mieszanego współużytkuje środowisko, wybór języka zostanie zmieniony na **taki sam, jak system Microsoft Windows** .
+Wyświetla listę języków dostępnych dla zainstalowanych wersji językowych produktu. Jeśli wiele języków produktów lub instalacja języka mieszanego współużytkuje środowisko, wybór języka zostanie zmieniony na **taki sam, jak system Microsoft Windows**.
 
 > [!CAUTION]
 > W systemie, w którym zainstalowano wiele języków, to ustawienie nie ma wpływ na narzędzia do kompilacji Visual C++ (cl.exe, link.exe, nmake.exe, bscmake.exe i powiązane pliki). Narzędzia te korzystają z wersji dla ostatniego zainstalowanego języka. Narzędzia kompilacji dla zainstalowanego wcześniej języka są zastępowane, ponieważ narzędzia do kompilowania Visual C++ nie używają satelitarnego modelu DLL.
 
-### <a name="see-also"></a>Zobacz też
+### <a name="see-also"></a>Zobacz także
 
 - [Instalowanie pakietów językowych](../../install/install-visual-studio.md#step-6---install-language-packs-optional)

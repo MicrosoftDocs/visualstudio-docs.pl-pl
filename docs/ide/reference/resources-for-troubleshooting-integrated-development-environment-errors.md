@@ -1,5 +1,7 @@
 ---
 title: Zasoby do rozwiązywania problemów z błędami
+description: Dowiedz się, jak korzystać z artykułów bazy wiedzy, forów lub pomocy technicznej w celu rozwiązywania problemów z błędami w środowisku IDE, które nie są wystarczająco sformatowane, aby pomóc w rozwiązaniu problemu.
+ms.custom: SEO-VS-2020
 ms.date: 07/23/2020
 ms.topic: troubleshooting
 f1_keywords:
@@ -93,12 +95,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f18ef8a0bf8ffc6b7478f307b6c2a37247bef034
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f3fdf18c67be8188bd03c498778fe8e6ad9409ee
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87234734"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616592"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Zasoby do rozwiązywania błędów zintegrowanego środowiska programistycznego
 
@@ -121,7 +123,7 @@ Dostęp do forów, blogów, rozmów i innych zasobów można uzyskać w witrynie
 
 Jeśli nadal masz pytania po wypróbie innych zasobów, możesz skontaktować się z pomocą techniczną firmy Microsoft, odwiedzając witrynę [Pomoc techniczna firmy Microsoft](https://support.microsoft.com/en-us) . Aby uzyskać informacje na temat pomocy technicznej dotyczącej produktów dostępnych w Twoim regionie, zobacz stronę [Opcje opinii programu Visual Studio](../../ide/feedback-options.md) .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 * [Rozwiązywanie problemów z błędami związanymi z siecią lub serwerem proxy](../../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md#troubleshoot-network-related-errors)
 * [Rozwiązywanie problemów (Visual Studio dla systemu Windows)](/troubleshoot/visualstudio/welcome-visual-studio/)

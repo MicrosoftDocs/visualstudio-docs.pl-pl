@@ -1,5 +1,7 @@
 ---
 title: Ustaw Radix — Polecenie
+description: Dowiedz się więcej o poleceniu Set podstawy i sposobie jego ustawiania lub zwraca wartość numeryczną używaną do wyświetlania wartości całkowitych.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e88dc1318e29ddf35073b78218eb113fe8952aac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b47c30ed938a83a2b4c47f73f55b5f7ca1db6a62
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769648"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616411"
 ---
 # <a name="set-radix-command"></a>Ustaw Radix — Polecenie
 Ustawia lub zwraca wartość numeryczną używaną do wyświetlania wartości całkowitych.
@@ -41,7 +43,7 @@ W tym przykładzie ustawiono środowisko do wyświetlania wartości całkowitych
 >Debug.SetRadix hex
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Okno polecenia](../../ide/reference/command-window.md)

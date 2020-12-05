@@ -1,5 +1,7 @@
 ---
 title: Projekty i rozwiązania, okno dialogowe lokalizacje
+description: Dowiedz się, jak używać strony lokalizacje w sekcji projekty i rozwiązania, aby ustawić domyślne lokalizacje projektów, szablonów projektów i szablonów elementów.
+ms.custom: SEO-VS-2020
 ms.date: 07/26/2019
 ms.topic: reference
 f1_keywords:
@@ -9,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2be4f2977f34ec57198ed3e87f58bdacb4daae4a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 171635e9f08b0c427679d874dee3466d9eb5e3f6
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565724"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616827"
 ---
 # <a name="options-dialog-box-projects-and-solutions--locations"></a>Opcje — okno dialogowe: projekty i \> lokalizacje rozwiązań
 
@@ -34,7 +36,7 @@ Określa domyślną lokalizację używaną do wyszukiwania szablonów projektu u
 
 Określa domyślną lokalizację używaną do wyszukiwania szablonów elementów utworzonych przez użytkownika. Aby uzyskać więcej informacji, zobacz [How to: Lokalizowanie i organizowanie szablonów](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Opcje — okno dialogowe: projekty i rozwiązania \> Ogólne](projects-and-solutions-options-dialog-box.md)
 - [Okno dialogowe Opcje, projekty i rozwiązania, kompilacja i uruchomienie](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)

@@ -1,5 +1,7 @@
 ---
 title: Zawijanie wierszy
+description: Dowiedz się, jak włączyć i wyłączyć opcję zawijania wyrazów w edytorze kodu.
+ms.custom: SEO-VS-2020
 ms.date: 11/07/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4bf76643ce1ea6e2f449c54fbc31d441418becf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 20540fe7cc124c44cd1af0e031e10d5ee0b06ba1
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770337"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617425"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Instrukcje: Zarządzanie zawijaniem wierszy w edytorze
 
@@ -36,7 +38,7 @@ Możesz ustawić i wyczyścić opcję **zawijania wyrazów** . Gdy ta opcja jest
 
      Wybierz **Ogólne** opcje w podfolderze języka, w którym planujesz programowanie.
 
-3. W obszarze **Ustawienia**wybierz lub wyczyść opcję **zawijania wyrazów** .
+3. W obszarze **Ustawienia** wybierz lub wyczyść opcję **zawijania wyrazów** .
 
      Gdy zaznaczona jest opcja **zawijania wyrazów** , opcja **Pokaż wizualne glify dla zawijania wyrazów** jest włączona.
 
@@ -52,6 +54,6 @@ Jeśli znasz opcję zawijania wyrazów w Notatniku + +, tekście subwapna lub Vi
 * [Potrójne kliknięcie nie zaznacza cały wiersz](https://developercommunity.visualstudio.com/content/problem/268989/triple-click-doesnt-select-whole-line-when-word-wr.html)
 * [Naciśnięcie klawisza End dwa razy nie powoduje przeniesienia kursora do końca wiersza](https://developercommunity.visualstudio.com/content/problem/138274/pressing-end-key-twice-should-move-cursor-to-end-o.html)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Funkcje edytora kodu](../../ide/writing-code-in-the-code-and-text-editor.md)

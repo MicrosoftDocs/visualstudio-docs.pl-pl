@@ -1,5 +1,7 @@
 ---
 title: Ścieżka symboli — Polecenie
+description: Dowiedz się więcej o ścieżce symboli polecenia i sposobie ustawiania listy katalogów dla debugera, aby wyszukać symbole.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83acc551c778fdb245b3bacec164a7544253d55f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: bd3268f3c40736f85a18b35e33c6cc78c96d6c88
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808694"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616450"
 ---
 # <a name="symbol-path-command"></a>Ścieżka symboli — Polecenie
 Ustawia listę katalogów dla debugera do wyszukiwania symboli.
@@ -52,7 +54,7 @@ Ten przykład wyświetla listę rozdzielonych średnikami dla bieżących ście�
 Debug.SymbolPath
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Okno polecenia](../../ide/reference/command-window.md)
 - [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)

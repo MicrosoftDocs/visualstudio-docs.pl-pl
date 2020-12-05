@@ -1,5 +1,7 @@
 ---
 title: Wstawianie komentarzy dokumentacji XML
+description: Dowiedz się, jak wstawiać komentarze dokumentacji XML w kodzie, którego można użyć do utworzenia pliku XML generowanego przez kompilator do dystrybucji wraz z zestawem platformy .NET.
+ms.custom: SEO-VS-2020
 ms.date: 01/22/2020
 ms.topic: reference
 author: mikadumont
@@ -7,12 +9,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0e21d0617f954c0cc34975b7f8626b83966f6b5d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 250e07994b04e03b015bf3893633ebce0f36a90d
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77706400"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617477"
 ---
 # <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Instrukcje: wstawianie komentarzy XML do generacji dokumentacji
 
@@ -46,16 +48,16 @@ Plik XML wygenerowany przez kompilator może być dystrybuowany wraz z zestawem 
 
 3. Wprowadź opisy dla każdego elementu XML, aby w pełni udokumentować element kodu.
 
-   ![Ukończony komentarz](media/doc-result-cs.png)
+   ![Zrzut ekranu przedstawiający ukończony komentarz.](media/doc-result-cs.png)
 
 Możesz użyć stylów w komentarzach XML, które będą renderowane w szybkich informacjach, gdy wskaźnik myszy znajduje się nad elementem. Te style obejmują: kursywę, pogrubienie, punktor i link do kliknięcia.
 
-   ![Ukończony komentarz](media/doc-style-cs.png) 
+   ![Zrzut ekranu przedstawiający ukończony komentarz ze znacznikami stylu dla kursywy, pogrubienia, punktora i linku do kliknięcia.](media/doc-style-cs.png) 
 
 > [!NOTE]
 > Istnieje [możliwość](../../ide/reference/options-text-editor-csharp-advanced.md) przełączania komentarzy dokumentacji XML po wpisaniu kodu `///` w języku C# lub `'''` Visual Basic. Na pasku menu wybierz **Narzędzia**  >  **Opcje** , aby otworzyć okno dialogowe **Opcje** . Następnie przejdź do **edytora tekstu**  >  **C#** lub **Basic**  >  **Advanced**. W sekcji **Pomoc edytora** Znajdź opcję **Generuj komentarze dokumentacji XML** .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Komentarze dokumentacji XML (Przewodnik programowania w języku C#)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
 - [Dokumentowanie kodu za pomocą komentarzy XML (Przewodnik C#)](/dotnet/csharp/codedoc)

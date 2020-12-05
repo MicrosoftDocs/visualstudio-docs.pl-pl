@@ -1,5 +1,7 @@
 ---
 title: Ściąganie członków
+description: Dowiedz się, jak używać menu szybkie akcje i refaktoryzacje do ściągania elementów członkowskich do typu podstawowego.
+ms.custom: SEO-VS-2020
 ms.date: 02/13/2019
 ms.topic: reference
 author: kendrahavens
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2d1f7deb7aca1fed7b75b66b17ce2e4d63768a0d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 159608644cb641aa2c84e4d55e92156215069030
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62969183"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616879"
 ---
 # <a name="pull-members-up"></a>Ściąganie członków
 
@@ -48,6 +50,6 @@ To Refaktoryzacja dotyczy:
 
    ![Ukończono ściąganie członków](media/pull-members-up-completed.png)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Refaktoryzacja](../refactoring-in-visual-studio.md)

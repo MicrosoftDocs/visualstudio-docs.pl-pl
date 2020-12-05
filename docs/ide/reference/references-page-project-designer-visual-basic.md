@@ -1,5 +1,7 @@
 ---
 title: Strona odwołań, Projektant projektu (Visual Basic)
+description: Dowiedz się, jak za pomocą strony odwołań projektanta projektu zarządzać odwołaniami do projektu, odwołaniami sieci Web i importowanymi przestrzeniami nazw.
+ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.topic: reference
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b80427999ad841c493e61cd704b64435f81c3914
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6cc06bd51d66b49991e12db8bb03a63a5a742fe1
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565607"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616671"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Strona odwołań, Projektant projektu (Visual Basic)
 
@@ -44,7 +46,7 @@ Kliknij ten przycisk, aby uzyskać dostęp do okna dialogowego **ścieżki odwo�
 > 3. Foldery, które wyświetlają pliki w oknie dialogowym **Dodaj odwołanie** .
 > 4. Folder obj projektu. (Po dodaniu odwołania COM do projektu można dodać jeden lub więcej zestawów do folderu obj projektu).
 
- **Dokumentacja**
+ **Odwołania**
 
 Ta lista zawiera wszystkie odwołania w projekcie, używane lub nieużywane.
 
@@ -68,7 +70,7 @@ Wybierz odwołanie sieci Web na liście **odwołań** i kliknij ten przycisk, ab
 
 W tym polu można wpisać własną przestrzeń nazw, a następnie kliknąć pozycję **Dodaj Import użytkowników** , aby dodać go do listy przestrzeni nazw.
 
-Można tworzyć aliasy dla przestrzeni nazw zaimportowanych przez użytkownika. W tym celu wprowadź alias i przestrzeń nazw w formacie *alias* = *przestrzeni nazw*aliasu. Jest to przydatne, jeśli używasz długich przestrzeni nazw, na przykład: `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http` .
+Można tworzyć aliasy dla przestrzeni nazw zaimportowanych przez użytkownika. W tym celu wprowadź alias i przestrzeń nazw w formacie *alias* = *przestrzeni nazw* aliasu. Jest to przydatne, jeśli używasz długich przestrzeni nazw, na przykład: `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http` .
 
  **Dodaj Import użytkownika**
 
@@ -88,7 +90,7 @@ Wybierz określoną przez użytkownika przestrzeń nazw na liście przestrzenie 
 
 - Przestrzenie nazw XML, takie jak `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">` .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Zarządzanie odwołaniami w projekcie](../../ide/managing-references-in-a-project.md)
 - [Instrukcje: Dodawanie lub usuwanie importowanych przestrzeni nazw (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)

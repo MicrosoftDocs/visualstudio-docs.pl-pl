@@ -1,5 +1,7 @@
 ---
 title: Ustaw bieżącą ramkę stosu — Polecenie
+description: Zapoznaj się z poleceniem Ustaw bieżącą ramkę stosu i jak można ustawić konkretną ramkę stosu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f70f5ebfc80933f38f1543d5eb42f01fb470298f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 032602744247ded5cb38d8a3ae3e1157ccbc5cee
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769729"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616606"
 ---
 # <a name="set-current-stack-frame-command"></a>Ustaw bieżącą ramkę stosu — Polecenie
 Pozwala ustawić konkretną ramkę stosu.
@@ -32,7 +34,7 @@ Debug.SetCurrentStackFrame index
 ## <a name="arguments"></a>Argumenty
 `index`
 
-Wymagany. Wybiera ramkę stosu według jej indeksu.
+Wymagane. Wybiera ramkę stosu według jej indeksu.
 
 ## <a name="example"></a>Przykład
 
@@ -40,7 +42,7 @@ Wymagany. Wybiera ramkę stosu według jej indeksu.
 >Debug.SetCurrentStackFrame 1
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Okno polecenia](../../ide/reference/command-window.md)

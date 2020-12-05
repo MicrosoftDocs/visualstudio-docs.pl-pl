@@ -1,5 +1,7 @@
 ---
 title: Generuj szybką akcję konstruktora
+description: Dowiedz się, jak za pomocą menu szybkie akcje i refaktoryzacje natychmiast wygenerować kod dla nowego konstruktora w klasie.
+ms.custom: SEO-VS-2020
 ms.date: 07/10/2020
 ms.topic: reference
 author: mikadumont
@@ -7,12 +9,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ead3242c348acdf846fb57ec06057cc50c4b1c3b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 80de8b5c8b5699f4ddbf5148e16afd2da42388f2
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86285419"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617555"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Generowanie konstruktora w programie Visual Studio
 
@@ -49,9 +51,9 @@ Ta generacja kodu ma zastosowanie do:
       - Naciśnij klawisz **Ctrl** + **.** Aby wyzwolić menu **szybkie akcje i operacje refaktoryzacji** .
    - **Mysz**
       - Kliknij prawym przyciskiem myszy i wybierz menu **szybkie akcje i operacje refaktoryzacji** .
-      - Kliknij pozycję ![śrubokręt](media/screwdriver.png) ikona wyświetlana na lewym marginesie, jeśli kursor tekstu znajduje się już w pustym wierszu w klasie.
+      - Kliknij :::image type="icon" source="media/screwdriver.png"::: ikonę widoczną na lewym marginesie, jeśli kursor tekstu znajduje się już w pustym wierszu w klasie.
 
-   ![Generuj Podgląd konstruktora](media/constructor1-preview-cs.png)
+   ![Zrzut ekranu przedstawiający opcję Generuj Konstruktor.](media/constructor1-preview-cs.png)
 
 1. Wybierz pozycję **Generuj Konstruktor** z menu rozwijanego.
 
@@ -66,7 +68,7 @@ Ta generacja kodu ma zastosowanie do:
 
    Konstruktor jest tworzony z określonymi parametrami.
 
-   ![Generuj wynik konstruktora](media/constructor1-result-cs.png)
+   ![Zrzut ekranu przedstawiający ten konstruktor jest tworzony z określonymi parametrami.](media/constructor1-result-cs.png)
 
 ## <a name="generate-constructor-with-properties-c-only"></a><a id = "with"></a> Generuj Konstruktor z właściwościami (tylko w języku C#)
 
@@ -76,7 +78,7 @@ Ta generacja kodu ma zastosowanie do:
 
 3. Wybierz pozycję **Generuj Konstruktor w `<QualifiedName>` (z właściwościami)**.
 
-   ![Generuj Podgląd konstruktora](media/generate-constructor-with-properties.png)
+   ![Zrzut ekranu przedstawiający polecenie Generuj Konstruktor w kluczu (z właściwościami).](media/generate-constructor-with-properties.png)
 
 ## <a name="generate-constructor-from-selected-fields-c-only"></a><a id="selection"></a> Generuj Konstruktor z wybranych pól (tylko w języku C#)
 
@@ -90,15 +92,15 @@ Ta generacja kodu ma zastosowanie do:
       - Naciśnij klawisz **Ctrl** + **.** Aby wyzwolić menu **szybkie akcje i operacje refaktoryzacji** .
    - **Mysz**
       - Kliknij prawym przyciskiem myszy i wybierz menu **szybkie akcje i operacje refaktoryzacji** .
-      - Kliknij pozycję ![śrubokręt](media/screwdriver.png) ikona wyświetlana na lewym marginesie, jeśli kursor tekstu znajduje się już w wierszu z zaznaczeniem.
+      - Kliknij :::image type="icon" source="media/screwdriver.png"::: ikonę widoczną na lewym marginesie, jeśli kursor tekstu znajduje się już w wierszu z zaznaczeniem.
 
-      ![Generuj Podgląd konstruktora](media/constructor2-preview-cs.png)
+      ![Zrzut ekranu przedstawiający opcję Generuj ciąg ciągu osoby konstruktora.](media/constructor2-preview-cs.png)
 
 1. Wybierz pozycję **Generuj Konstruktor "TypeName (...)"** z menu rozwijanego.
 
    Konstruktor jest tworzony z wybranymi parametrami.
 
-   ![Generuj wynik konstruktora](media/constructor2-result-cs.png)
+   ![Zrzut ekranu przedstawiający, że Konstruktor został utworzony z wybranymi parametrami.](media/constructor2-result-cs.png)
 
 ## <a name="generate-constructor-from-new-usage-c-and-visual-basic"></a><a id="usage"></a> Generuj Konstruktor przy użyciu nowego użycia (C# i Visual Basic)
 
@@ -118,10 +120,10 @@ Ta generacja kodu ma zastosowanie do:
       - Naciśnij klawisz **Ctrl** + **.** Aby wyzwolić menu **szybkie akcje i operacje refaktoryzacji** .
    - **Mysz**
       - Kliknij prawym przyciskiem myszy i wybierz menu **szybkie akcje i operacje refaktoryzacji** .
-      - Umieść kursor na czerwono, a następnie kliknij przycisk ![Żarówka błędów](media/error-bulb.png) zostanie wyświetlona ikona.
-      - Kliknij pozycję ![Żarówka błędów](media/error-bulb.png) ikona wyświetlana na lewym marginesie, jeśli kursor tekstu znajduje się już w wierszu z czerwonym obramowaniem.
+      - Umieść kursor nad czerwoną zygzaką i kliknij :::image type="icon" source="media/error-bulb.png"::: ikonę, która zostanie wyświetlona.
+      - Kliknij :::image type="icon" source="media/error-bulb.png"::: ikonę, która pojawia się na lewym marginesie, jeśli kursor tekstu znajduje się już w wierszu z czerwonym obramowaniem.
 
-      ![Generuj Podgląd konstruktora](media/constructor-preview-cs.png)
+      ![Zrzut ekranu przedstawiający Konstruktor Wygeneruj w ramach osoby.](media/constructor-preview-cs.png)
 
 3. Wybierz pozycję **Generuj Konstruktor w elemencie "*TypeName*"** z menu rozwijanego.
 
@@ -144,7 +146,7 @@ Ta generacja kodu ma zastosowanie do:
 
 2. Umieść kursor w wierszu, w którym znajduje się czerwony zygzak wskazujący, że użyto konstruktora, który jeszcze nie istnieje.
 
-    ![Wyróżnij generowanie konstruktora](media/constructor4-highlight-cs.png)
+    ![Zrzut ekranu przedstawiający linię, w której występuje czerwona zygzakowata.](media/constructor4-highlight-cs.png)
 
 3. Następnie wykonaj jedną z następujących czynności:
 
@@ -152,16 +154,16 @@ Ta generacja kodu ma zastosowanie do:
       - Naciśnij klawisz **Ctrl** + **.** Aby wyzwolić menu **szybkie akcje i operacje refaktoryzacji** .
    - **Mysz**
       - Kliknij prawym przyciskiem myszy i wybierz menu **szybkie akcje i operacje refaktoryzacji** .
-      - Umieść kursor na czerwono, a następnie kliknij przycisk ![Żarówka błędów](media/error-bulb.png) zostanie wyświetlona ikona.
-      - Kliknij pozycję ![Żarówka błędów](media/error-bulb.png) ikona wyświetlana na lewym marginesie, jeśli kursor tekstu znajduje się już w wierszu z czerwonym obramowaniem.
+      - Umieść kursor nad czerwoną zygzaką i kliknij :::image type="icon" source="media/error-bulb.png"::: ikonę, która zostanie wyświetlona.
+      - Kliknij :::image type="icon" source="media/error-bulb.png"::: ikonę, która pojawia się na lewym marginesie, jeśli kursor tekstu znajduje się już w wierszu z czerwonym obramowaniem.
 
-      ![Generuj Podgląd konstruktora](media/constructor4-preview-cs.png)
+      ![Zrzut ekranu przedstawiający opcję Dodawanie parametru do ciągu osoby.](media/constructor4-preview-cs.png)
 
 4. Wybierz pozycję **Dodaj parametr do elementu "TypeName (...)"** z menu rozwijanego.
 
    Parametr jest dodawany do konstruktora, z którego typ został wywnioskowany na podstawie jego użycia.
 
-   ![Generuj wynik konstruktora](media/constructor4-result-cs.png)
+   ![Zrzut ekranu przedstawiający, że parametr jest dodawany do konstruktora, z jego typem wywnioskowanym z użycia.](media/constructor4-result-cs.png)
 
 Możesz również dodać parametr do istniejącej metody. Aby uzyskać więcej informacji, zobacz [Dodawanie parametru do metody](add-parameter.md).
 
@@ -169,7 +171,7 @@ Możesz również dodać parametr do istniejącej metody. Aby uzyskać więcej i
 
 1. Znajdź istniejący Konstruktor i Dodaj parametr:
 
-   ![Wyróżnij generowanie konstruktora](media/constructor5-highlight-cs.png)
+   ![Zrzut ekranu przedstawiający istniejący Konstruktor.](media/constructor5-highlight-cs.png)
 
 1. Umieść kursor wewnątrz nowo dodanego parametru.
 
@@ -179,17 +181,17 @@ Możesz również dodać parametr do istniejącej metody. Aby uzyskać więcej i
       - Naciśnij klawisz **Ctrl** + **.** Aby wyzwolić menu **szybkie akcje i operacje refaktoryzacji** .
    - **Mysz**
       - Kliknij prawym przyciskiem myszy i wybierz menu **szybkie akcje i operacje refaktoryzacji** .
-      - Kliknij pozycję ![śrubokręt](media/screwdriver.png) ikona wyświetlana na lewym marginesie, jeśli kursor tekstu znajduje się już w wierszu z dodanym parametrem.
+      - Kliknij :::image type="icon" source="media/screwdriver.png"::: ikonę widoczną na lewym marginesie, jeśli kursor tekstu znajduje się już w wierszu z dodanym parametrem.
 
-   ![Generuj Podgląd konstruktora](media/constructor5-preview-cs.png)
+   ![Zrzut ekranu z opcją tworzenia i inicjowania wieku właściwości.](media/constructor5-preview-cs.png)
 
 1. Wybierz opcję **Utwórz i zainicjuj Właściwość** lub **Utwórz i zainicjuj pole** z menu rozwijanego.
 
    Pole lub właściwość są zadeklarowane i automatycznie nazwane, aby odpowiadały typom. Wiersz kodu jest również dodawany do zainicjowania pola lub właściwości w treści konstruktora.
 
-   ![Generuj wynik konstruktora](media/constructor5-result-cs.png)
+   ![Zrzut ekranu pokazujący, że pole lub właściwość są zadeklarowane i automatycznie nazwane, aby odpowiadały typom.](media/constructor5-result-cs.png)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Generowanie kodu](../code-generation-in-visual-studio.md)
 - [Podgląd zmian](../../ide/preview-changes.md)

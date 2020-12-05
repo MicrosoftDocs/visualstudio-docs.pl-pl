@@ -1,5 +1,7 @@
 ---
 title: Ogólne, środowisko, opcje — Okno dialogowe
+description: Dowiedz się, jak za pomocą strony Ogólne w sekcji środowisko zmienić Motywy kolorów, ustawienia paska stanu, skojarzenia rozszerzeń plików i inne dla środowiska IDE.
+ms.custom: SEO-VS-2020
 ms.date: 07/26/2019
 ms.topic: reference
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfd1b876e58c05c668fd74087d5131bb1e9fcd40
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 6068f63cc9c2e7abe36b6eac804beaaa6603303e
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189787"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617269"
 ---
 # <a name="options-dialog-box-environment--general"></a>Opcje — okno dialogowe: \> Ogólne środowisko
 
@@ -96,6 +98,6 @@ Określa, że po kliknięciu przycisku **Zamknij** tylko okno narzędzia z fokus
 
 Określa, że po kliknięciu przycisku **Autoukrywanie** tylko okno narzędzia z fokusem jest ukryte automatycznie i nie wszystkie okna narzędzi w zestawie zadokowanym. Domyślnie ta opcja nie jest zaznaczona.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Dostosowywanie układów okien](../../ide/customizing-window-layouts-in-visual-studio.md)

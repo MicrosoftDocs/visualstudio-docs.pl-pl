@@ -1,5 +1,6 @@
 ---
 title: Uzupełnianie wyrażenia regularnego za poorednictwem menu IntelliSense
+description: Dowiedz się, jak używać menu IntelliSense do pisania wyrażenia regularnego za pomocą funkcji IntelliSense.
 ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 68b5cb480184a287d9fcb088b0a74ac9d607f3f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 750869abbad079f3c109113f8cd65b5e8f11c147
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79093859"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616697"
 ---
 # <a name="regex-completion-through-intellisense-menu"></a>Uzupełnianie wyrażenia regularnego za poorednictwem menu IntelliSense
 
@@ -39,6 +40,6 @@ To Refaktoryzacja dotyczy:
 
    ![Funkcja IntelliSense uzupełniania wyrażenia](../media/regex-completion-intellisense.png)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Refaktoryzacja](../refactoring-in-visual-studio.md)

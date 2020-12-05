@@ -1,5 +1,7 @@
 ---
 title: Wyodrębnianie refaktoryzacji interfejsu
+description: Dowiedz się, jak za pomocą menu szybkie akcje i refaktoryzacje utworzyć interfejs przy użyciu istniejących członków z klasy, struktury lub interfejsu.
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -12,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5055f50d07cf9362c9be1bdc8135e31240a7cc66
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13e9b684c81abf491b5836c96190c6a89bdc0643
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595673"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617399"
 ---
 # <a name="extract-an-interface-refactoring"></a>Wyodrębnianie refaktoryzacji interfejsu
 
@@ -60,8 +62,8 @@ To Refaktoryzacja dotyczy:
 
    | Pole | Opis |
    | - | - |
-   | **Nazwa nowego interfejsu** | Nazwa interfejsu, który ma zostać utworzony. Nazwa będzie domyślnie równa I*ClassName*, gdzie *ClassName* jest nazwą klasy wybranej powyżej. |
-   | **Nowa nazwa pliku** | Nazwa wygenerowanego pliku, który będzie zawierać interfejs. Podobnie jak w przypadku nazwy interfejsu, ta nazwa będzie domyślnie równa I*ClassName*, gdzie *ClassName* jest nazwą klasy wybranej powyżej. Możesz również wybrać opcję, która ma zostać **dodana do bieżącego pliku**. |
+   | **Nazwa nowego interfejsu** | Nazwa interfejsu, który ma zostać utworzony. Nazwa będzie domyślnie równa I *ClassName*, gdzie *ClassName* jest nazwą klasy wybranej powyżej. |
+   | **Nowa nazwa pliku** | Nazwa wygenerowanego pliku, który będzie zawierać interfejs. Podobnie jak w przypadku nazwy interfejsu, ta nazwa będzie domyślnie równa I *ClassName*, gdzie *ClassName* jest nazwą klasy wybranej powyżej. Możesz również wybrać opcję, która ma zostać **dodana do bieżącego pliku**. |
    | **Wybierz publiczne elementy członkowskie do interfejsu formularza** | Elementy do wyodrębnienia do interfejsu. Możesz wybrać dowolną liczbę. |
 
 4. Wybierz przycisk **OK**.
@@ -80,7 +82,7 @@ To Refaktoryzacja dotyczy:
 
       ![Interfejs uzyskany Visual Basic](media/extractinterface-interface-vb.png)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Refaktoryzacja](../refactoring-in-visual-studio.md)
 - [Porady dla deweloperów platformy .NET](../csharp-developer-productivity.md)

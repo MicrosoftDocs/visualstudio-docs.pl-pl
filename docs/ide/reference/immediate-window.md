@@ -1,5 +1,7 @@
 ---
 title: Okno bezpośrednie
+description: Dowiedz się, jak używać okna bezpośredniego do debugowania i obliczania wyrażeń, wykonywania instrukcji i drukowania wartości zmiennych.
+ms.custom: SEO-VS-2020
 ms.date: 02/25/2019
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b21cdb9136abe1e960e5b74bbf09e7d1694519d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 342a2a34528134ed1174058b6701c77c9217fc63
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568961"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617022"
 ---
 # <a name="immediate-window"></a>Okno bezpośrednie
 
@@ -129,7 +131,7 @@ W niektórych konfiguracjach ustawień powiadomienia o wyjątkach pierwszej szan
 
 2. Kliknij prawym przyciskiem myszy obszar tekstu okna **dane wyjściowe** , a następnie wybierz lub usuń zaznaczenie **komunikatów o wyjątkach**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Nawigowanie po kodzie za pomocą debugera](../../debugger/navigating-through-code-with-the-debugger.md)
 - [Okno polecenia](../../ide/reference/command-window.md)

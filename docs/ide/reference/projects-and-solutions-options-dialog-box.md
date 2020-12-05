@@ -1,5 +1,7 @@
 ---
 title: Projekty i rozwiązania, Opcje — okno dialogowe
+description: Dowiedz się, jak użyć strony Ogólne w sekcji projekty i rozwiązania, aby zdefiniować zachowanie programu Visual Studio związanego z projektami i rozwiązaniami.
+ms.custom: SEO-VS-2020
 ms.date: 07/26/2019
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ed60e07c625665f92838cfbc671b03c605fda0d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 01ee7e0da5fab8ceba2e5dc0642148033e2415da
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75567648"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616905"
 ---
 # <a name="options-dialog-box-projects-and-solutions--general"></a>Opcje — okno dialogowe: projekty i rozwiązania \> Ogólne
 
@@ -38,7 +40,7 @@ Po wybraniu **Eksplorator rozwiązań** automatycznie otwierane, a aktywny eleme
 
 Po wybraniu opcji konfiguracji kompilacji są wyświetlane w oknie dialogowym **strony właściwości projektu** i w oknie dialogowym **strony właściwości rozwiązania** . Po wyczyszczeniu opcji konfiguracji kompilacji nie są wyświetlane w oknie dialogowym **strony właściwości projektu** i w oknie dialogowym **strony właściwości rozwiązania** dla projektów Visual Basic i C#, które zawierają jedną konfigurację lub dwie konfiguracje debugowania i wydania. Jeśli projekt zawiera konfigurację zdefiniowaną przez użytkownika, są wyświetlane opcje konfiguracji kompilacji.
 
-W przypadku usunięcia zaznaczenia polecenia w menu **kompilacja** , takie jak **rozwiązanie do kompilowania**, ponowne **Kompilowanie rozwiązania**i **czyste rozwiązanie**, są wykonywane w konfiguracji wydania i polecenia w menu **Debuguj** , takie jak **Rozpocznij debugowanie** i **Uruchom bez debugowania**, są wykonywane w konfiguracji debugowania.
+W przypadku usunięcia zaznaczenia polecenia w menu **kompilacja** , takie jak **rozwiązanie do kompilowania**, ponowne **Kompilowanie rozwiązania** i **czyste rozwiązanie**, są wykonywane w konfiguracji wydania i polecenia w menu **Debuguj** , takie jak **Rozpocznij debugowanie** i **Uruchom bez debugowania**, są wykonywane w konfiguracji debugowania.
 
 ## <a name="always-show-solution"></a>Zawsze pokazuj rozwiązanie
 
@@ -92,11 +94,11 @@ Gdy ta opcja jest zaznaczona, kliknij dwukrotnie węzeł projektu w stylu zestaw
 Jeśli ta opcja nie jest zaznaczona i chcesz edytować plik projektu w stylu zestawu SDK, kliknij prawym przyciskiem myszy węzeł projektu w Eksplorator rozwiązań a następnie wybierz polecenie **Edytuj plik projektu**. W przypadku innych typów projektów należy najpierw zwolnić projekt przed jego edycją w programie Visual Studio.
 
 > [!TIP]
-> *Projekt w stylu zestawu SDK*lub [zestaw SDK projektu](../../msbuild/how-to-use-project-sdk.md)ma nowszy, bardziej zoptymalizowany format pliku projektu, który został wprowadzony w programie MSBuild 15,0. Projekt w stylu zestawu SDK zawiera `Sdk` atrybut w `Project` elemencie, na przykład `<Project Sdk="Microsoft.NET.Sdk">` . Program Visual Studio tworzy projekt w stylu zestawu SDK podczas tworzenia nowego projektu .NET Core z jednego z szablonów programu Visual Studio, na przykład.
+> *Projekt w stylu zestawu SDK* lub [zestaw SDK projektu](../../msbuild/how-to-use-project-sdk.md)ma nowszy, bardziej zoptymalizowany format pliku projektu, który został wprowadzony w programie MSBuild 15,0. Projekt w stylu zestawu SDK zawiera `Sdk` atrybut w `Project` elemencie, na przykład `<Project Sdk="Microsoft.NET.Sdk">` . Program Visual Studio tworzy projekt w stylu zestawu SDK podczas tworzenia nowego projektu .NET Core z jednego z szablonów programu Visual Studio, na przykład.
 
 ::: moniker-end
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Opcje — okno dialogowe: projekty i \> lokalizacje rozwiązań](projects-solutions-locations-options.md)
 - [Okno dialogowe Opcje, projekty i rozwiązania, kompilacja i uruchomienie](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)

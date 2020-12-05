@@ -1,5 +1,7 @@
 ---
 title: Generuj klasę lub typ
+description: Dowiedz się, jak za pomocą menu szybkie akcje i refaktoryzacje natychmiast wygenerować kod dla klasy lub typu.
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -12,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 94786ef10e427a0deb4f80471305509124f1638b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fe38cacf9f33acfac6b1634b6be6a8a3e45de820
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595634"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617542"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Generowanie klasy lub typu w programie Visual Studio
 
@@ -75,7 +77,7 @@ Ta generacja kodu ma zastosowanie do:
    Dostęp | Ustaw typ na *domyślny*, *wewnętrzny* lub *publiczny* .
    Rodzaj | Tę wartość można ustawić jako *klasę* lub *strukturę*.
    Nazwa | Nie można jej zmienić i będzie to nazwa, która została już wpisana.
-   Projekt | Jeśli w rozwiązaniu istnieje wiele projektów, możesz wybrać miejsce, w którym ma się pojawić Klasa/struktura.
+   Project | Jeśli w rozwiązaniu istnieje wiele projektów, możesz wybrać miejsce, w którym ma się pojawić Klasa/struktura.
    Nazwa pliku | Można utworzyć nowy plik lub dodać typ do istniejącego pliku.
 
 Tworzona jest Klasa lub struktura. Dla języka C# tworzony jest również Konstruktor.
@@ -88,7 +90,7 @@ Tworzona jest Klasa lub struktura. Dla języka C# tworzony jest również Konstr
 
    ![Generuj wynik klasy VB](media/class-result-vb.png)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Generowanie kodu](../code-generation-in-visual-studio.md)
 - [Podgląd zmian](../../ide/preview-changes.md)

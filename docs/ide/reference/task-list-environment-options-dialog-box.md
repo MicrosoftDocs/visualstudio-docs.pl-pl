@@ -1,5 +1,7 @@
 ---
 title: Lista zadań, środowisko, opcje — Okno dialogowe
+description: Dowiedz się, jak za pomocą strony Lista zadań w sekcji Environment dodać, usunąć i zmienić tokeny komentarza generujące Lista zadań przypomnień.
+ms.custom: SEO-VS-2020
 ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
@@ -22,12 +24,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e28b3b9c3fe4d6e89228dc18ba8b98aa5e0d2e76
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4b7b29c477bf046cfd47db9e39cb57360d999dee
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80233129"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616294"
 ---
 # <a name="options-dialog-box-environment--task-list"></a>Opcje — okno dialogowe: \> Lista zadań środowiska
 
@@ -61,7 +63,7 @@ Kliknij, aby wprowadzić zmiany w istniejącym tokenie przy użyciu wartości wp
 > [!NOTE]
 > Nie można zmienić ani usunąć domyślnego tokenu komentarza, ale można zmienić jego poziom priorytetu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Korzystanie z listy zadań](../../ide/using-the-task-list.md)
 - [Ustawianie zakładek w kodzie](../../ide/setting-bookmarks-in-code.md)

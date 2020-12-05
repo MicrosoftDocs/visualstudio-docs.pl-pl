@@ -1,5 +1,7 @@
 ---
 title: Szybkie uruchamianie, środowisko, opcje — okno dialogowe
+description: Dowiedz się, jak używać strony szybkiego uruchamiania w sekcji środowisko, aby szybko wyszukiwać i wykonywać akcje dla zasobów IDE, takich jak opcje, szablony i menu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +17,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 706b54e3ee925b1833f860da2f84c8d28af9617e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e055906dd4cddabd16b39e3b2cad66d07dddd38d
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565672"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616749"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Szybkie uruchamianie, środowisko, opcje — okno dialogowe
 
@@ -30,7 +32,7 @@ Funkcja **szybkiego uruchamiania** umożliwia szybkie wyszukiwanie i wykonywanie
 
 ## <a name="category-list"></a>Lista kategorii
 
-Wyniki wyszukiwania szybkiego uruchamiania są wyświetlane w czterech kategoriach: **ostatnio używane**, **menu**, **Opcje**i **otwarte dokumenty**wraz z liczbą elementów w kategorii. Aby przechodzić przez wyniki wyszukiwania według kategorii, wybierz klawisze **Ctrl** + **Q** , aby wyświetlić wszystkie wyniki z kolejnej kategorii. Po wyświetleniu ostatniej kategorii **Ctrl** + **Q** pokazuje kilka wyników z każdej kategorii. Naciśnij **klawisze CTRL** + **SHIFT** + **Q** , aby przejść przez kategorie w odwrotnej kolejności. Aby wyświetlić wszystkie wyniki wyszukiwania w kategorii, wybierz nazwę kategorii.
+Wyniki wyszukiwania szybkiego uruchamiania są wyświetlane w czterech kategoriach: **ostatnio używane**, **menu**, **Opcje** i **otwarte dokumenty** wraz z liczbą elementów w kategorii. Aby przechodzić przez wyniki wyszukiwania według kategorii, wybierz klawisze **Ctrl** + **Q** , aby wyświetlić wszystkie wyniki z kolejnej kategorii. Po wyświetleniu ostatniej kategorii **Ctrl** + **Q** pokazuje kilka wyników z każdej kategorii. Naciśnij **klawisze CTRL** + **SHIFT** + **Q** , aby przejść przez kategorie w odwrotnej kolejności. Aby wyświetlić wszystkie wyniki wyszukiwania w kategorii, wybierz nazwę kategorii.
 
 Możesz użyć następujących skrótów, aby ograniczyć wyszukiwanie do określonych kategorii.
 

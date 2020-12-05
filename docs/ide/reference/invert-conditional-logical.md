@@ -1,5 +1,7 @@
 ---
 title: Odwracanie wyrażeń warunkowych i operacji logicznych
+description: Dowiedz się, jak za pomocą menu szybkie akcje i refaktoryzacje odwrócić wyrażenie warunkowe lub operator warunkowy i/OR.
+ms.custom: SEO-VS-2020
 ms.date: 02/19/2019
 ms.topic: reference
 author: kendrahavens
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3931ae53fc29b0ffd8b8b6e96951a0f4786ff756
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 180e42d5399116df95289e4e5fd0aed1255bf3de
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "65531675"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617386"
 ---
 # <a name="invert-conditional-expressions-and-conditional-andor-operators"></a>Odwróć wyrażenia warunkowe i operatory warunkowe i/OR
 
@@ -36,11 +38,11 @@ To Refaktoryzacja dotyczy:
 2. Naciśnij klawisz **Ctrl** + **.** Aby wyzwolić menu **szybkie akcje i operacje refaktoryzacji** .
 3. Wybierz opcję **Odwróć warunkowo** lub **Zastąp element "&&" elementem "| |"**
 
-    ![Odwróć warunkowo](media/invert-conditional.png)
+    ![Zrzut ekranu opcji odwrotnej.](media/invert-conditional.png)
 
-    ![Odwróć warunkowo](media/invert-logical-operator.png)
+    ![Zrzut ekranu przedstawiający && Zamień na element | | zaznaczyć.](media/invert-logical-operator.png)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Refaktoryzacja](../refactoring-in-visual-studio.md)
 - [Porady dla deweloperów platformy .NET](../csharp-developer-productivity.md)

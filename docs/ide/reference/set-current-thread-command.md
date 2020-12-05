@@ -1,5 +1,7 @@
 ---
 title: Ustaw bieżący wątek — Polecenie
+description: Dowiedz się więcej na temat polecenia Set Current Thread i sposobu ustawiania określonego wątku jako bieżącego wątku.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54c2dabeea14293fdb86120f822eb396a028757a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3cedd37ece7bcc0eb79ad52cc426b07f8cb2ca57
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768688"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616567"
 ---
 # <a name="set-current-thread-command"></a>Ustaw bieżący wątek — Polecenie
 Ustawia określony wątek jako bieżący wątek.
@@ -32,7 +34,7 @@ Debug.SetCurrentThread index
 ## <a name="arguments"></a>Argumenty
 `index`
 
-Wymagany. Wybiera wątek według indeksu.
+Wymagane. Wybiera wątek według indeksu.
 
 ## <a name="example"></a>Przykład
 
@@ -40,7 +42,7 @@ Wymagany. Wybiera wątek według indeksu.
 >Debug.SetCurrentThread 1
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Okno polecenia](../../ide/reference/command-window.md)
