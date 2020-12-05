@@ -1,5 +1,7 @@
 ---
 title: Porty | Microsoft Docs
+description: W tym artykule opisano definicje i rolę portu w architekturze debugera w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b42e7fa97c12afa07923e99d8b084840ee7ccad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f13ca62f841525ef91ac7d66b67c09da54cabeb3
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738300"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606565"
 ---
 # <a name="ports"></a>Porty
 W architekturze debugera *port*:
@@ -31,7 +33,7 @@ W architekturze debugera *port*:
 
   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dostarcza domyślny port obsługujący wszystkie procesy oparte na systemie Windows, zarówno natywne, jak i zarządzane. Port niestandardowy musi być skonfigurowany do połączeń z urządzeniami zewnętrznymi, które nie są oparte na systemie Windows. Aby określić takie porty niestandardowe, należy również skonfigurować niestandardowego dostawcę portu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Serwery](../../extensibility/debugger/servers-visual-studio-sdk.md)
 - [Procesy](../../extensibility/debugger/processes.md)
 - [Pojęcia dotyczące debugera](../../extensibility/debugger/debugger-concepts.md)

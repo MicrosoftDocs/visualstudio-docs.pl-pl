@@ -1,5 +1,7 @@
 ---
 title: Procesy | Microsoft Docs
+description: W tym artykule opisano definicje i rolę procesu w architekturze debugera w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 392c59b90bb117dded0f528bc33a617370b091a7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4a707d62443004795824c8bd437c29802635cf41
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738248"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606505"
 ---
 # <a name="processes"></a>Procesy
 W architekturze debugera, *proces*:
@@ -34,7 +36,7 @@ W architekturze debugera, *proces*:
 
   Pakiet debugowania może dołączyć aparat debugowania (Anuluj) do procesu przez wywołanie metody [Attach](../../extensibility/debugger/reference/idebugprocess2-attach.md), co oznacza, że wszystkie możliwe programy działają w procesie, który może obsłużyć. Na przykład jeśli środowisko uruchomieniowe języka wspólnego nie dołącza do procesu, dołącza tylko do programów, które są uruchomione w kodzie zarządzanym.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Programy](../../extensibility/debugger/programs.md)
 - [Wątki](../../extensibility/debugger/threads.md)
 - [Pojęcia dotyczące debugera](../../extensibility/debugger/debugger-concepts.md)

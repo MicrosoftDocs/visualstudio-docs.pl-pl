@@ -1,5 +1,7 @@
 ---
 title: Powiadamianie portu | Microsoft Docs
+description: Dowiedz się, jak port zostanie powiadomiony po uruchomieniu programu. Ten artykuł zawiera szczegółowy opis.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff94c20969e77bcc70af2f5a16137e09366a0d7d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e9a838879e7c1eb590bb16cd12a6bf345de8031a
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738326"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606622"
 ---
 # <a name="notify-the-port"></a>Powiadom port
 Po uruchomieniu programu należy powiadomić port w następujący sposób:
@@ -44,7 +46,7 @@ Po uruchomieniu programu należy powiadomić port w następujący sposób:
 
  Gdy tożsamość jest znana, model SDM jest gotowy do dołączenia do programu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Uruchamianie programu](../../extensibility/debugger/launching-a-program.md)
 - [Dołączanie po uruchomieniu](../../extensibility/debugger/attaching-after-a-launch.md)
 - [Zadania debugowania](../../extensibility/debugger/debugging-tasks.md)

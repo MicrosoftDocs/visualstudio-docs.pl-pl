@@ -1,5 +1,7 @@
 ---
 title: Uruchamianie programu | Microsoft Docs
+description: Zapoznaj się z serią zdarzeń, które należy wykonać podczas debugowania programu przy użyciu klawisza F5 w celu uruchomienia debugera z poziomu środowiska IDE.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf638e0c96c7df1de2650260427a972a07efce23
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0dce13e49eeadf4dc02fec07707bebcfe164ed9c
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738475"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606700"
 ---
 # <a name="launch-a-program"></a>Uruchamianie programu
 Użytkownicy, którzy chcą debugować program, mogą nacisnąć klawisz **F5** , aby uruchomić debuger z poziomu środowiska IDE. Spowoduje to rozpoczęcie szeregu zdarzeń, które ostatecznie spowodują połączenie IDE z silnikiem debugowania (DE), który jest z kolei podłączony lub dołączony do programu w następujący sposób:

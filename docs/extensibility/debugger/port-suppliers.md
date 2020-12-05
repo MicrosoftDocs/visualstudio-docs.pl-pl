@@ -1,5 +1,7 @@
 ---
 title: Dostawcy portów | Microsoft Docs
+description: W tym artykule opisano definicje i rolę dostawcy portów w architekturze debugera w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6313a7afce9ed272177a26d8da1a9d1516c8022e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b3226053a23a45c42a45de038e44829d4a150af6
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738301"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606583"
 ---
 # <a name="port-suppliers"></a>Dostawcy portów
 W architekturze debugera *dostawca portu*:
@@ -31,7 +33,7 @@ W architekturze debugera *dostawca portu*:
 
   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zapewnia domyślnego dostawcę portu i domyślny port. Jeśli należy zaimplementować port niestandardowy, należy również zaimplementować niestandardowego dostawcę portu w celu dostarczenia tych portów niestandardowych.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Serwery](../../extensibility/debugger/servers-visual-studio-sdk.md)
 - [Porty](../../extensibility/debugger/ports.md)
 - [Pojęcia dotyczące debugera](../../extensibility/debugger/debugger-concepts.md)

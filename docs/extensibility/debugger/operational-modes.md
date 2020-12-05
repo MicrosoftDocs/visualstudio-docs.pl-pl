@@ -1,5 +1,7 @@
 ---
 title: Tryby operacyjne | Microsoft Docs
+description: Poznaj trzy tryby, w których może działać środowisko IDE, które są trybem projektowania, trybem uruchamiania i trybem przerwania.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 027152b2b2fc18b509a687220e5d963ea1b7e721
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cabf32dcbe8b4d2e925bcfd48635063ecd0a5b74
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738277"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606609"
 ---
 # <a name="operational-modes"></a>Tryby operacyjne
 Istnieją trzy tryby, w których środowisko IDE może działać w następujący sposób:
@@ -43,7 +45,7 @@ Istnieją trzy tryby, w których środowisko IDE może działać w następujący
 
  Zdarzenia zatrzymywania są kontynuowane przez wywołanie jednej z następujących metod, które przechodzą przez debuger z trybu przerwania na uruchamianie lub tryb krokowy:
 
-- [Realizacja](../../extensibility/debugger/reference/idebugprocess3-execute.md)
+- [Wykonaj polecenie](../../extensibility/debugger/reference/idebugprocess3-execute.md)
 
 - [Krok](../../extensibility/debugger/reference/idebugprocess3-step.md)
 
@@ -54,5 +56,5 @@ Istnieją trzy tryby, w których środowisko IDE może działać w następujący
 
  Gdy program pomyślnie wykona kroki do następnego wiersza kodu lub do funkcji, lub przechodzi do kursora lub do zestawu punktów przerwania, automatycznie przechodzi do trybu przerwania.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Kontrola wykonywania](../../extensibility/debugger/control-of-execution.md)

@@ -1,5 +1,7 @@
 ---
 title: Pomocnicy zestawu SDK na potrzeby debugowania | Microsoft Docs
+description: Więcej informacji na temat funkcji i deklaracji, które są globalnymi funkcjami pomocniczymi do implementowania aparatów debugowania, ocen wyrażeń i dostawców symboli w języku C++.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9edb7c508fdea6736a71c0f70c0d2ff305d4a399
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 32d0dd7dbeee70b8c4eb566a07cf9a44d40d4f49
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713650"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606544"
 ---
 # <a name="sdk-helpers-for-debugging"></a>Pomocnicy zestawu SDK do debugowania
 Te funkcje i deklaracje to globalne funkcje pomocnicze służące do implementowania aparatów debugowania, oceniania wyrażeń i dostawców symboli w języku C++.
@@ -262,7 +264,7 @@ HRESULT EnumMetricSections(
 |Symbol zastępczy|Opis|
 |-----------------|-----------------|
 |*[klucz rejestru]*|`HKEY_CURRENT_USER` lub `HKEY_LOCAL_MACHINE`.|
-|*[wersja główna]*|Wersja programu Visual Studio (na przykład,, `7.0` `7.1` lub `8.0` ). Jednak ten katalog główny można także zmodyfikować przy użyciu przełącznika **/rootsuffix** , aby **devenv.exe**. W przypadku VSIP ten modyfikator zazwyczaj jest przypadany, więc wersja główna powinna mieć **wartość, na**przykład 8.0 EXP.|
+|*[wersja główna]*|Wersja programu Visual Studio (na przykład,, `7.0` `7.1` lub `8.0` ). Jednak ten katalog główny można także zmodyfikować przy użyciu przełącznika **/rootsuffix** , aby **devenv.exe**. W przypadku VSIP ten modyfikator zazwyczaj jest przypadany, więc wersja główna powinna mieć **wartość, na** przykład 8.0 EXP.|
 |*[główny Metryka]*|Jest to albo `AD7Metrics` lub `AD7Metrics(Debug)` , w zależności od tego, czy jest używana wersja debugowana dbgmetric. lib. **Uwaga:**  Niezależnie od tego, czy dbgmetric. lib jest używana, Konwencja nazewnictwa powinna być przestrzegana w przypadku różnic między wersjami Debug i Release, które muszą być odzwierciedlone w rejestrze.|
 |*[typ metryki]*|Typ metryki do zapisania: `Engine` , `ExpressionEvaluator` , `SymbolProvider` itp. Wszystkie te dane są zdefiniowane jako w dbgmetric. h jako `metricTypeXXXX` , gdzie `XXXX` jest nazwą określonego typu.|
 |*metryki*|Nazwa wpisu, do którego ma zostać przypisana wartość w celu ustawienia metryki. Rzeczywista organizacja metryk zależy od typu metryki.|
@@ -414,7 +416,7 @@ HRESULT EnumMetricSections(
 |Symbol zastępczy|Opis|
 |-----------------|-----------------|
 |*[identyfikator GUID aparatu debugowania]*|Identyfikator GUID aparatu debugowania, który obsługuje wyjątki.|
-|*[typy wyjątków]*|Ogólny tytuł podklucza identyfikujący klasę wyjątków, które mogą być obsługiwane. Typowe nazwy to **wyjątki języka C++**, **wyjątki Win32**, **wyjątki środowiska uruchomieniowego języka wspólnego**i **natywne testy w czasie wykonywania**. Te nazwy są również używane do identyfikowania konkretnej klasy wyjątku dla użytkownika.|
+|*[typy wyjątków]*|Ogólny tytuł podklucza identyfikujący klasę wyjątków, które mogą być obsługiwane. Typowe nazwy to **wyjątki języka C++**, **wyjątki Win32**, **wyjątki środowiska uruchomieniowego języka wspólnego** i **natywne testy Run-Time**. Te nazwy są również używane do identyfikowania konkretnej klasy wyjątku dla użytkownika.|
 |*Oprócz*|Nazwa wyjątku: na przykład **_com_error** lub **Break**. Te nazwy są również używane do identyfikowania konkretnego wyjątku dla użytkownika.|
 
 ## <a name="requirements"></a>Wymagania
@@ -424,5 +426,5 @@ HRESULT EnumMetricSections(
 
  Biblioteka: libs\ad2de.lib, libs\dbgmetric.lib
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dokumentacja interfejsu API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

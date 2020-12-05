@@ -1,5 +1,7 @@
 ---
 title: Reference (interfejsy API debugowania Visual Studio) | Microsoft Docs
+description: Zestaw SDK debugowania programu Visual Studio odwołuje się do podstawowego modelu dla architektury czasu wykonywania i funkcjonalności debugera oraz jego składników.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a85979c53d61d4b8d5a4f4b26d3ed3a1e19e952
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d281ad2f7df73a42835d0f0670a96af07e036d72
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713637"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606466"
 ---
 # <a name="reference-visual-studio-debugging-apis"></a>Dokumentacja (Interfejsy API debugowania programu Visual Studio)
 
@@ -35,6 +37,6 @@ Zawiera dokumentację interfejsów, modułów wyliczających i struktur interfej
 
 Zawiera listę warunków związanych z debugowaniem oraz ich definicje.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Rozszerzalność debugera programu Visual Studio](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)

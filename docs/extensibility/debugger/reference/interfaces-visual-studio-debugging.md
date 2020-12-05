@@ -1,5 +1,7 @@
 ---
 title: Interfejsy (debugowanie Visual Studio) | Microsoft Docs
+description: Użyj tych zasobów, aby uzyskać informacje na temat podstawowych interfejsów, interfejsów oceny wyrażeń i interfejsów dostawcy symboli w debugowaniu programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d31eb6900841dee9d2675e87bac573b432ff2acb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 508cf5d324a62b0ada056fe0c2495ff97334b8cf
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715082"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606568"
 ---
 # <a name="interfaces-visual-studio-debugging"></a>Interfejsy (Debugowanie w programie Visual Studio)
 Metody są wyświetlane alfabetycznie w każdym interfejsie w spisie treści i na stronie interfejsu w kolejności tablic wirtualnych.
@@ -38,5 +40,5 @@ Metody są wyświetlane alfabetycznie w każdym interfejsie w spisie treści i n
 
  Zawiera dokumentację dla interfejsów, modułów wyliczających i struktur [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] zestawu SDK debugowania.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dokumentacja interfejsu API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
