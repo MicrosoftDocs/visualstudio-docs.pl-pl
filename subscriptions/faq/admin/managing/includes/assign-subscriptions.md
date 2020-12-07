@@ -6,13 +6,13 @@ ms.topic: include
 ms.assetid: 59eb35fd-ec94-41ce-b24c-a8a120976bac
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 09/30/2020
-ms.openlocfilehash: add0bac2a9e7eb053c183d66fcee17c8133bb921
-ms.sourcegitcommit: 593bdd2da62633f8d1f1eef70d0238e2682f3e02
+ms.date: 12/03/2020
+ms.openlocfilehash: 5a12d59f90ee2a09002efcb99c78cfd563060006
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "91838449"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96584455"
 ---
 ## <a name="how-do-i-assign-visual-studio-subscriptions"></a>Jak mogę przypisać subskrypcje programu Visual Studio?
 
@@ -43,7 +43,7 @@ Aby przypisać subskrypcje zbiorczo:
 
 ## <a name="what-is-the-github-enterprise-setup-process"></a>Jaki jest proces konfigurowania usługi GitHub Enterprise? 
 
-Usługa GitHub Enterprise jest konfigurowana i zarządzana niezależnie od subskrypcji programu Visual Studio. Po zakupie programu Visual Studio z usługą GitHub Enterprise inicjowany jest proces konfigurowania konta w usłudze GitHub Enterprise, który odbywa się równolegle z zawarciem umowy w witrynie manage.visualstudio.com (ale oddzielnie). Ustanowienie tego konta usługi GitHub Enterprise może trochę potrwać.  
+Usługa GitHub Enterprise jest konfigurowana i zarządzana niezależnie od subskrypcji programu Visual Studio. Po zakupie subskrypcji programu Visual Studio z usługą GitHub Enterprise inicjowany jest proces konfigurowania konta w usłudze GitHub Enterprise, który odbywa się równolegle z zawarciem umowy w witrynie manage.visualstudio.com (ale oddzielnie). Ustanowienie tego konta usługi GitHub Enterprise może trochę potrwać.  
 
 Gdy firma skonfiguruje konto usługi GitHub Enterprise, subskrybenci, którym przypisano subskrypcje programu Visual Studio z usługą GitHub Enterprise, otrzymają wiadomość e-mail od usługi GitHub z powiadomieniem o połączeniu ich subskrypcji programu Visual Studio. Po otrzymaniu tej wiadomości e-mail subskrybenci mogą skontaktować się ze swoim administratorem organizacji w usłudze GitHub, aby otrzymać zaproszenie do odpowiedniej organizacji. 
 

@@ -7,12 +7,12 @@ author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 10/13/2020
 ms.faqid: q3_2
-ms.openlocfilehash: 6533a68c334f52310c20a79cf1e6d93d0b967be0
-ms.sourcegitcommit: 296ab61c40bf090c577ef20e84d581939bd1855b
+ms.openlocfilehash: 3c13e82af88030a33d5bedc6b8e9d8f518b8c88e
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "92526123"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560782"
 ---
 ## <a name="how-do-i-use-my-benefits"></a>Jak mogę użyć moich korzyści?
 
@@ -26,7 +26,7 @@ Subskrypcjami programu Visual Studio z usługą GitHub Enterprise zarządza się
 - Subskrypcja programu Visual Studio (Enterprise lub Professional)  
 - GitHub Enterprise  
 
-Po przypisaniu subskrypcji programu Visual Studio z usługą GitHub otrzymasz wiadomość e-mail z informacją o tym, że administrator subskrypcji programu Visual Studio przypisał Ci subskrypcję. Wtedy możesz wyświetlić dostępne korzyści subskrypcji w witrynie <https://my.visualstudio.com/benefits>. Obejmuje to korzyść usługi GitHub Enterprise. 
+Po przypisaniu subskrypcji programu Visual Studio z usługą GitHub Enterprise otrzymasz wiadomość e-mail z informacją o tym, że administrator subskrypcji programu Visual Studio przypisał Ci subskrypcję. Wtedy możesz wyświetlić dostępne korzyści subskrypcji w witrynie <https://my.visualstudio.com/benefits>. Obejmuje to korzyść usługi GitHub Enterprise. 
 
 Usługa GitHub Enterprise jest zarządzana przez administratora usługi GitHub niezależnie od subskrypcji programu Visual Studio. Gdy firma skonfiguruje konto w usłudze GitHub Enterprise, otrzymasz wiadomość e-mail od usługi GitHub z powiadomieniem, że Twoja subskrypcja programu Visual Studio została połączona, a kafelek korzyści zostanie zaktualizowany. Skonfigurowanie tego konta może trochę potrwać i zależy od tego, czy firma ukończy proces konfiguracji. Po otrzymaniu wiadomości e-mail możesz skontaktować się z odpowiednim administratorem organizacji w usłudze GitHub i poprosić o zaproszenie do jego organizacji i/lub repozytorium. 
 
