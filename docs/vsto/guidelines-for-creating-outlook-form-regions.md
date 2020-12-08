@@ -1,5 +1,7 @@
 ---
 title: Wytyczne dotyczące tworzenia regionów formularzy programu Outlook
+description: Zapoznaj się z wytycznymi dotyczącymi tworzenia regionów formularzy programu Outlook, które mogą pomóc zoptymalizować regiony formularzy i uniknąć potencjalnych problemów.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a962b1ae2bff7b9a954204485a6ee73a3b63eb7b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aaf6b96548a9856833fcd1768764ed914da30a07
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255950"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848095"
 ---
 # <a name="guidelines-to-create-outlook-form-regions"></a>Wytyczne dotyczące tworzenia regionów formularzy programu Outlook
   Poniższe informacje mogą pomóc zoptymalizować regiony formularzy i uniknąć potencjalnych problemów:
@@ -86,7 +88,7 @@ ms.locfileid: "71255950"
 
   Ikona **okna** jest wyświetlana w obszarze powiadomień, a w oknie dialogowym **Alt** + **Tab** dla otwartych elementów wyświetlających zastępowanie lub zastępowanie — wszystkie regiony formularza.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dostęp do regionu formularza w czasie wykonywania](../vsto/accessing-a-form-region-at-run-time.md)
 - [Tworzenie regionów formularzy programu Outlook](../vsto/creating-outlook-form-regions.md)
 - [Przewodnik: Projektowanie regionu formularza programu Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)

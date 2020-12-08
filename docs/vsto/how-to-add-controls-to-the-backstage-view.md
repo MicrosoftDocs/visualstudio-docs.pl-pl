@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Dodawanie kontrolek do widoku Backstage '
+description: Dowiedz się, jak za pomocą projektanta wstążki dodać kontrolki do menu, które jest otwierane po kliknięciu karty plik.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5b4ea5cdcd869f16f987e9431359511831af9573
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9f0fa33318e2407b01178971c6965b8ea035dd42
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538349"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848173"
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>Instrukcje: Dodawanie kontrolek do widoku Backstage
   Za pomocą projektanta wstążki można dodać kontrolki do menu, które otwiera się po kliknięciu karty **plik** . Po uruchomieniu aplikacji, kontrolki dodawane do karty **plik** wyświetlają grupę o nazwie **Dodatki**.
@@ -44,7 +46,7 @@ ms.locfileid: "85538349"
 
      Zostanie wyświetlony Projektant menu. Ta powierzchnia projektowa nie zawiera żadnych kontrolek.
 
-3. Na karcie **kontrolki wstążki pakietu Office** w **przyborniku**Przeciągnij dowolną z następujących kontrolek do projektanta menu:
+3. Na karcie **kontrolki wstążki pakietu Office** w **przyborniku** Przeciągnij dowolną z następujących kontrolek do projektanta menu:
 
     - Przycisk
 
@@ -62,9 +64,9 @@ ms.locfileid: "85538349"
 
 4. Przeciągnij kontrolki, aby przenieść je do nowych pozycji w menu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Omówienie wstążki](../vsto/ribbon-overview.md)
 - [Projektant wstążki](../vsto/ribbon-designer.md)
-- [XML — wstążka](../vsto/ribbon-xml.md)
+- [XML — Wstążka](../vsto/ribbon-xml.md)
 - [Instrukcje: wprowadzenie dostosowywanie wstążki](../vsto/how-to-get-started-customizing-the-ribbon.md)
 - [Przewodnik: Tworzenie niestandardowej karty przy użyciu projektanta wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)

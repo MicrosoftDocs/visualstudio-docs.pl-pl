@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: programowe Zamykanie dokumentów'
+description: Dowiedz się, jak zamknąć aktywny dokument lub możesz określić Microsoft Office dokument programu Word do zamknięcia.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 18dc4099f4c1df17efbe2dd3c213332bb73b52c4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52914e60d0519eb923e5c4f327d58afdfa858c1c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547462"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848276"
 ---
 # <a name="how-to-programmatically-close-documents"></a>Instrukcje: programowe Zamykanie dokumentów
   Możesz zamknąć aktywny dokument lub określić dokument do zamknięcia.
@@ -61,7 +63,7 @@ ms.locfileid: "85547462"
      [!code-vb[Trin_VstcoreWordAutomation#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#4)]
      [!code-csharp[Trin_VstcoreWordAutomation#4](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#4)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Instrukcje: programowe otwieranie istniejących dokumentów](../vsto/how-to-programmatically-open-existing-documents.md)
 - [Instrukcje: programowe zapisywanie dokumentów](../vsto/how-to-programmatically-save-documents.md)
 - [Elementy hosta i formanty hosta — Omówienie](../vsto/host-items-and-host-controls-overview.md)

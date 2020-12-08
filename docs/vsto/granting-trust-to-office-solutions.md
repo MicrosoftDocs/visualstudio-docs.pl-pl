@@ -1,5 +1,7 @@
 ---
 title: Udzielanie zaufania do rozwiązań pakietu Office
+description: Aby udzielić zaufania do rozwiązań pakietu Office, należy zmodyfikować zasady zabezpieczeń każdego komputera docelowego w celu zaufania do zestawu rozwiązań, manifestu wdrożenia i dokumentu.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cf7a68d5d3567305e4f70049d76a1c260ddecf25
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f0b81c034ed0f8934da378dc214191d3be1f4506
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315242"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848329"
 ---
 # <a name="grant-trust-to-office-solutions"></a>Udzielanie zaufania do rozwiązań pakietu Office
   Udzielanie zaufania do rozwiązań pakietu Office oznacza modyfikację zasad zabezpieczeń każdego komputera docelowego w celu zaufania do zestawu rozwiązań, manifestu aplikacji, manifestu wdrażania i dokumentu. Zaufaniem można udzielić do rozwiązania pakietu Office przez użytkownika lub użytkowników końcowych.
@@ -45,7 +47,7 @@ ms.locfileid: "89315242"
 
  Administratorzy mogą wyłączyć [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] monit zaufania lub wymagać, aby monit zarejestrował się tylko w przypadku rozwiązań podpisanych za pomocą certyfikatu Authenticode. Aby uzyskać więcej informacji na temat zmiany tych ustawień dla stref mójkomputer, LocalIntranet, Internet, TrustedSites i UntrustedSites, zobacz How to [: Configure the ClickOnce Trust Prompt Behavior](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Zabezpieczanie rozwiązań pakietu Office](../vsto/securing-office-solutions.md)
 - [Udzielanie zaufania do dokumentów](../vsto/granting-trust-to-documents.md)

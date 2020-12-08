@@ -1,5 +1,7 @@
 ---
 title: Architektura dodatków narzędzi VSTO
+description: Dodatki VSTO utworzone w programie Visual Studio mają funkcje architektury, które podkreślają stabilność i bezpieczeństwo oraz umożliwiają ścisłą pracę z Microsoft Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 401ce9b8421cd636fc72c59dcd6641ff4e05d968
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 451ae0bd466403819a5b4e53d76070876d762c38
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64814520"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848355"
 ---
 # <a name="architecture-of-vsto-add-ins"></a>Architektura dodatków narzędzi VSTO
   Dodatki VSTO utworzone przy użyciu narzędzi deweloperskich pakietu Office w programie Visual Studio mają funkcje architektury, które podkreślają stabilność i bezpieczeństwo oraz umożliwiają ścisłą pracę z Microsoft Office. W tym temacie opisano następujące aspekty dodatków narzędzi VSTO:
@@ -104,7 +106,7 @@ ms.locfileid: "64814520"
 
 11. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]Wywołuje `ThisAddIn_Startup` metodę w dodatku VSTO. Ta metoda jest domyślnym programem obsługi zdarzeń dla <xref:Microsoft.Office.Tools.AddInBase.Startup> zdarzenia. Aby uzyskać więcej informacji, zobacz [zdarzenia w projektach pakietu Office](../vsto/events-in-office-projects.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Architektura rozwiązań pakietu Office w programie Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 - [Architektura dostosowań na poziomie dokumentu](../vsto/architecture-of-document-level-customizations.md)
 - [Visual Studio Tools dla środowiska uruchomieniowego pakietu Office — omówienie](../vsto/visual-studio-tools-for-office-runtime-overview.md)

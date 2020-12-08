@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: zarządzanie układem sterowania w okienkach akcji'
+description: Dowiedz się, jak zarządzać układem sterowania w okienkach akcji, pisząc kod w celu prawidłowego stosu formantów użytkownika.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b6df90847000560299b8b1a6f259ffa6e7df0729
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbee49a97ab6cb3e6084950e53f30b3cb6ce1b7c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520150"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848251"
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>Instrukcje: zarządzanie układem sterowania w okienkach akcji
   Okienko akcji jest domyślnie zadokowane po prawej stronie dokumentu lub arkusza; można go jednak zadokować do lewej, do góry lub do dołu. Jeśli używasz wielu kontrolek użytkownika, możesz napisać kod, aby prawidłowo ułożyć kontrolki użytkownika w okienku Akcje. Aby uzyskać więcej informacji, zobacz [Omówienie okienka Akcje](../vsto/actions-pane-overview.md).
@@ -65,7 +67,7 @@ ms.locfileid: "85520150"
 
 - Projekt na poziomie dokumentu programu Word z okienkiem akcje zawierającym wiele kontrolek użytkownika lub okienka akcji zagnieżdżonych.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Przegląd okienka Akcje](../vsto/actions-pane-overview.md)
 - [Instrukcje: Dodawanie okienka akcji do dokumentów programu Word lub skoroszytów programu Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
 - [Instrukcje: Dodawanie okienka akcji do dokumentów programu Word lub skoroszytów programu Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)

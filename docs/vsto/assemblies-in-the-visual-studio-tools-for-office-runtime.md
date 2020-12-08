@@ -1,5 +1,7 @@
 ---
 title: Zestawy w Visual Studio Tools dla środowiska uruchomieniowego pakietu Office
+description: Dowiedz się, że program Visual Studio automatycznie dodaje odwołania do Visual Studio Tools dla zestawów środowiska uruchomieniowego pakietu Office.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b2fc47aa917fa9c9d5351fd313ec46ae4aaa0664
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 86c3c2b77b6bbea1e609bbea092b44bd1dee1dd4
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75918782"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848303"
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>Zestawy w Visual Studio Tools dla środowiska uruchomieniowego pakietu Office
   Podczas tworzenia projektu pakietu Office Program Visual Studio automatycznie dodaje odwołania do [!INCLUDE[vsto_runtime](includes/vsto-runtime-md.md)] zestawów, które są używane dla typu projektu i docelowego .NET Framework projektu. Istnieją różne zestawy w rozszerzeniach pakietu Office dla .NET Framework 3,5, [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] i [!INCLUDE[net_v45](includes/net-v45-md.md)] . Aby uzyskać więcej informacji o rozszerzeniach pakietu Office, zobacz [Visual Studio Tools dla środowiska uruchomieniowego pakietu Office](visual-studio-tools-for-office-runtime-overview.md).
@@ -41,7 +43,7 @@ ms.locfileid: "75918782"
 
 |Nazwa zestawu|Opis|
 |-------------------|-----------------|
-|Microsoft.Office.Tools.Common.v4.0.Utilities.dll|Dostarcza klasy bazowe dla wygenerowanej `ThisAddIn` klasy w projektach dodatków VSTO i wygenerowanej klasy wstążki we wszystkich projektach.|
+|Microsoft.Office.Tools.Common.v4.0.Utilities.dll|Udostępnia klasy bazowe dla wygenerowanej `ThisAddIn` klasy w programie VSTO Add-In projekty i wygenerowaną klasę wstążki we wszystkich projektach.|
 |Microsoft.Office.Tools.Excel.v4.0.Utilities.dll|Program udostępnia następujące typy:<br /><br /> -Klasy bazowe dla wygenerowanych `ThisWorkbook` i `Sheet` klas w projektach na poziomie dokumentu dla programu Excel.<br />-Windows Forms kontrolki, których można używać w arkuszach w projektach programu Excel.|
 |Microsoft.Office.Tools.Outlook.v4.0.Utilities.dll|Udostępnia klasy bazowe dla `ThisAddIn` klas i regionów formularzy wygenerowanych i w projektach programu Outlook.|
 |Microsoft.Office.Tools.Word.v4.0.Utilities.dll|Program udostępnia następujące typy:<br /><br /> -Klasy bazowe dla wygenerowanej `ThisDocument` klasy w projektach na poziomie dokumentu dla programu Word.<br />-Windows Forms kontrolki, których można używać na dokumentach w projektach programu Word.|
@@ -61,6 +63,6 @@ ms.locfileid: "75918782"
 |Microsoft.VisualStudio.Tools.Applications.ServerDocument.v10.0.dll|Program udostępnia następujące typy:<br /><br /> - <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> Klasa, której można użyć do programistycznego dołączania zestawów dostosowania do dokumentów i uzyskiwania dostępu do danych w pamięci podręcznej w dokumentach. Aby uzyskać więcej informacji, zobacz [Zarządzanie dokumentami na serwerze za pomocą klasy ServerDocument](managing-documents-on-a-server-by-using-the-serverdocument-class.md).<br />-Kilka klas, które reprezentują hierarchię danych w pamięci podręcznej w dostosowaniu na poziomie dokumentu. Aby uzyskać więcej informacji, zobacz [dostęp do danych w dokumentach na serwerze](accessing-data-in-documents-on-the-server.md).|
 |Microsoft.VisualStudio.Tools.Office.Runtime.v10.0.dll|Program udostępnia następujące typy:<br /><br /> — Klasy Microsoft. VisualStudio. Tools. Office. Runtime. Security. AddInSecurityEntry i Microsoft. VisualStudio. Tools. Office. Runtime. Security. UserInclusionList, których można użyć do tworzenia wpisów listy dołączania użytkowników w celu udzielenia zaufania do rozwiązań pakietu Office przeznaczonych dla .NET Framework 3,5.<br />-Inne typy, które są częścią Visual Studio Tools dla infrastruktury środowiska uruchomieniowego pakietu Office i nie są przeznaczone do użycia bezpośrednio w kodzie.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Visual Studio Tools dla środowiska uruchomieniowego pakietu Office — omówienie](visual-studio-tools-for-office-runtime-overview.md)
 - [Visual Studio Tools dla scenariuszy instalacji środowiska uruchomieniowego pakietu Office](visual-studio-tools-for-office-runtime-installation-scenarios.md)

@@ -1,7 +1,8 @@
 ---
 title: '&lt;customHostSpecified — &gt; element (Programowanie Office w Visual Studio)'
+description: Dowiedz się, w jaki sposób element customHostSpecified wskazuje, że to rozwiązanie nie jest aplikacją autonomiczną.
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 689848f14b4540a54489b4ea5bbad67e493fe276
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e8327c6e154f051f5ce79d41ceaa696e330c794f
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544914"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848134"
 ---
 # <a name="ltcustomhostspecifiedgt-element-office-development-in-visual-studio"></a>&lt;customHostSpecified — &gt; element (Programowanie Office w Visual Studio)
   `customHostSpecified`Element wskazuje, że to rozwiązanie nie jest aplikacją autonomiczną. Rozwiązania pakietu Office zawierają składniki hostowane w aplikacjach Microsoft Office.
@@ -48,7 +49,7 @@ ms.locfileid: "85544914"
 </entryPoint>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md)
 - [Manifesty wdrożenia dla rozwiązań pakietu Office](../vsto/deployment-manifests-for-office-solutions.md)

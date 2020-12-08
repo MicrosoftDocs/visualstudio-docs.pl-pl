@@ -1,7 +1,8 @@
 ---
 title: 'Instrukcje: mapowanie schematów do arkuszy w programie Visual Studio'
+description: Dowiedz się, jak można zmapować schemat XML do Microsoft Office arkusza programu Excel, gdy arkusz jest otwarty w programie Visual Studio.
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c8a0437b940953e89e24969314f63df34d223496
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7a7e1a06e644536ce9ce881d9b9f1dc23aae03f1
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538141"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848212"
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>Instrukcje: mapowanie schematów do arkuszy w programie Visual Studio
   Możesz zmapować schemat XML do arkusza, gdy arkusz jest otwarty w programie Visual Studio. Używasz tych samych Microsoft Office narzędzi programu Excel, które są używane, gdy skoroszyt jest otwarty poza programem Visual Studio. Projekt pakietu Office tworzy te same obiekty niezależnie od tego, czy schemat jest mapowany do arkusza przed lub po utworzeniu rozwiązania programu Excel.
@@ -65,6 +66,6 @@ ms.locfileid: "85538141"
 
      Jeśli przeciągniesz powtarzający się element schematu, projekt pakietu Office wygeneruje <xref:Microsoft.Office.Tools.Excel.ListObject> formant, który nie jest automatycznie powiązany ze źródłem danych. Aby uzyskać więcej informacji, zobacz [schematy XML i dane w obszarze dostosowania na poziomie dokumentu](../vsto/xml-schemas-and-data-in-document-level-customizations.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Instrukcje: mapowanie schematów do dokumentów programu Word w programie Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)
 - [Schematy XML i dane w dostosowaniach na poziomie dokumentu](../vsto/xml-schemas-and-data-in-document-level-customizations.md)

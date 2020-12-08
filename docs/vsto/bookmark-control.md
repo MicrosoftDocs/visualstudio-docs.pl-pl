@@ -1,5 +1,7 @@
 ---
 title: 'Bookmark, formant:'
+description: Dowiedz się, jak kontrolka zakładka jest zakładką, która ma unikatową nazwę, uwidacznia zdarzenia i może być powiązana z danymi.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2b8557581e93c8d2ba5a54a13c04d5de74b24f71
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 53f68bfd9abd26d9dfcb9e253c412a1ddf3c0e28
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255148"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848368"
 ---
 # <a name="bookmark-control"></a>Bookmark, formant:
   <xref:Microsoft.Office.Tools.Word.Bookmark>Kontrolka jest zakładką, która ma unikatową nazwę, uwidacznia zdarzenia i może być powiązana z danymi. Zakładka może służyć jako symbol zastępczy do oznaczania elementu lub lokalizacji w Microsoft Office dokumencie programu Word. <xref:Microsoft.Office.Tools.Word.Bookmark>Kontrolka jest kombinacją <xref:Microsoft.Office.Interop.Word.Bookmark> obiektu i <xref:Microsoft.Office.Interop.Word.Range> obiektu.
@@ -109,7 +111,7 @@ Dla kontrolki dostępne są następujące zdarzenia <xref:Microsoft.Office.Tools
 
 - <xref:Microsoft.Office.Tools.Word.Bookmark.SelectionChange>
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Automatyzowanie programu Word za pomocą obiektów rozszerzonych](../vsto/automating-word-by-using-extended-objects.md)
 - [Instrukcje: Dodawanie kontrolek zakładek do dokumentów programu Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)

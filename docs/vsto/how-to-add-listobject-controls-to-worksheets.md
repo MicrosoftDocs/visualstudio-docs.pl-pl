@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Dodawanie formantów ListObject do arkuszy'
+description: Dowiedz się, jak dodać kontrolki ListObject do Microsoft Office arkusza programu Excel w czasie projektowania i w czasie wykonywania w projektach na poziomie dokumentu.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c53d820170c359e568b0a7b0ab5711a632d9eba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5dd72db2678f448158f268b790d39d4f6e44a737
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538323"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848160"
 ---
 # <a name="how-to-add-listobject-controls-to-worksheets"></a>Instrukcje: Dodawanie formantów ListObject do arkuszy
   Możesz dodać <xref:Microsoft.Office.Tools.Excel.ListObject> kontrolki do Microsoft Office arkusza programu Excel w czasie projektowania i w czasie wykonywania w projektach na poziomie dokumentu.
@@ -38,7 +40,7 @@ ms.locfileid: "85538323"
   Aby uzyskać więcej informacji na temat <xref:Microsoft.Office.Tools.Excel.ListObject> kontrolek, zobacz [ListObject Control](../vsto/listobject-control.md).
 
 ## <a name="add-listobject-controls-at-design-time"></a><a name="designtime"></a> Dodawanie formantów ListObject w czasie projektowania
- Istnieje kilka sposobów dodawania <xref:Microsoft.Office.Tools.Excel.ListObject> formantów do arkusza w projekcie na poziomie dokumentu w czasie projektowania: z poziomu programu Excel, z **przybornika**programu Visual Studio i z okna **źródła danych** .
+ Istnieje kilka sposobów dodawania <xref:Microsoft.Office.Tools.Excel.ListObject> formantów do arkusza w projekcie na poziomie dokumentu w czasie projektowania: z poziomu programu Excel, z **przybornika** programu Visual Studio i z okna **źródła danych** .
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -50,7 +52,7 @@ ms.locfileid: "85538323"
 
 #### <a name="to-use-the-toolbox"></a>Aby użyć przybornika
 
-1. Na karcie **formanty programu Excel** **przybornika**przeciągnij element <xref:Microsoft.Office.Tools.Excel.ListObject> do arkusza.
+1. Na karcie **formanty programu Excel** **przybornika** przeciągnij element <xref:Microsoft.Office.Tools.Excel.ListObject> do arkusza.
 
      Zostanie wyświetlone okno dialogowe **Dodawanie kontrolki ListObject** .
 
@@ -86,7 +88,7 @@ ms.locfileid: "85538323"
      [!code-csharp[Trin_Excel_Dynamic_Controls#8](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#8)]
      [!code-vb[Trin_Excel_Dynamic_Controls#8](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#8)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Rozwiń dokumenty programu Word i skoroszyty programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Formanty w dokumentach pakietu Office](../vsto/controls-on-office-documents.md)
 - [ListObject — formant](../vsto/listobject-control.md)

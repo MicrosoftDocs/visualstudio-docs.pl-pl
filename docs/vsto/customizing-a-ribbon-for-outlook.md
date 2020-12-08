@@ -1,5 +1,7 @@
 ---
 title: Dostosowywanie wstążki dla programu Outlook
+description: Dowiedz się, że po dostosowaniu wstążki w Microsoft Office Outlook należy rozważyć, gdzie wstążka niestandardowa będzie wyświetlana w aplikacji.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2865bd89da3b59a24208e07739e8c56254959c88
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25b4faa994a99bccdc2122ad6b9d124f7391e9f8
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986103"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848108"
 ---
 # <a name="customize-a-ribbon-for-outlook"></a>Dostosowywanie wstążki dla programu Outlook
   Po dostosowaniu wstążki w Microsoft Office Outlook należy rozważyć, gdzie wstążka niestandardowa będzie wyświetlana w aplikacji. W programie Outlook wstążka jest wyświetlana w głównym interfejsie użytkownika aplikacji oraz w oknach, które są otwierane, gdy użytkownicy wykonują określone zadania, takie jak tworzenie wiadomości e-mail. Te okna aplikacji są nazwanymi inspektorami.
@@ -48,8 +50,8 @@ ms.locfileid: "72986103"
  [!code-csharp[Trin_RibbonOutlookBasic#1](../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs#1)]
  [!code-vb[Trin_RibbonOutlookBasic#1](../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb#1)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Uzyskiwanie dostępu do wstążki w czasie wykonywania](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Omówienie wstążki](../vsto/ribbon-overview.md)
 - [Projektant wstążki](../vsto/ribbon-designer.md)
-- [XML — wstążka](../vsto/ribbon-xml.md)
+- [XML — Wstążka](../vsto/ribbon-xml.md)

@@ -1,5 +1,7 @@
 ---
 title: rozwiązania programu Excel
+description: Dowiedz się, w jaki sposób można używać szablonów projektów do automatyzowania programu Excel, rozszerzeń funkcji programu Excel i dostosowywania interfejsu użytkownika programu Excel
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -26,12 +28,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 53351354a470eb5770f07b9afd527b81c4e587b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6ca4cfd45c1147d10ffaf8d3308b9adb09c689e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986082"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848121"
 ---
 # <a name="excel-solutions"></a>rozwiązania programu Excel
   Program Visual Studio zawiera szablony projektów, których można użyć do tworzenia dostosowań na poziomie dokumentu i dodatków narzędzi VSTO dla programu Microsoft Office Excel. Można używać tych rozwiązań do automatyzowania programu Excel, rozszerzeń funkcji programu Excel i dostosowywania interfejsu użytkownika programu Excel. Aby uzyskać więcej informacji o różnicach między dostosowaniami dostosowań na poziomie dokumentu a dodatkami programu VSTO, zobacz temat [programowanie rozwiązań pakietu Office — omówienie &#40;narzędzi vsto&#41;](../vsto/office-solutions-development-overview-vsto.md).

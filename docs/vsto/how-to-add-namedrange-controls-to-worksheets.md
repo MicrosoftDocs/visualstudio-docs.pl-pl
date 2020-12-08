@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Dodawanie kontrolek NamedRange do arkuszy'
+description: Dowiedz się, jak dodać kontrolki NamedRange do arkusza programu Excel Microsoft Office w czasie projektowania i w czasie wykonywania w projektach na poziomie dokumentu.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 448a44c8f4bc9380a4ef1ebfec33b264e797cac8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 54487ed7f7cdcb7e7da024e4b96fcbb6d5c2cfe4
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543523"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848147"
 ---
 # <a name="how-to-add-namedrange-controls-to-worksheets"></a>Instrukcje: Dodawanie kontrolek NamedRange do arkuszy
   Możesz dodać <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolki do Microsoft Office arkusza programu Excel w czasie projektowania i w czasie wykonywania w projektach na poziomie dokumentu.
@@ -39,7 +41,7 @@ ms.locfileid: "85543523"
   Aby uzyskać więcej informacji na temat <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolek, zobacz [NamedRange Control](../vsto/namedrange-control.md).
 
 ## <a name="add-namedrange-controls-at-design-time"></a><a name="designtime"></a> Dodawanie kontrolek NamedRange w czasie projektowania
- Istnieje kilka sposobów dodawania <xref:Microsoft.Office.Tools.Excel.NamedRange> formantów do arkusza w projekcie na poziomie dokumentu w czasie projektowania: z poziomu programu Excel, z **przybornika**programu Visual Studio i z okna **źródła danych** .
+ Istnieje kilka sposobów dodawania <xref:Microsoft.Office.Tools.Excel.NamedRange> formantów do arkusza w projekcie na poziomie dokumentu w czasie projektowania: z poziomu programu Excel, z **przybornika** programu Visual Studio i z okna **źródła danych** .
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -47,7 +49,7 @@ ms.locfileid: "85543523"
 
 1. Wybierz komórkę lub komórki, które mają zostać uwzględnione w nazwanym zakresie.
 
-2. W **polu Nazwa**wpisz nazwę zakresu i naciśnij klawisz **Enter**.
+2. W **polu Nazwa** wpisz nazwę zakresu i naciśnij klawisz **Enter**.
 
      **Pole Nazwa** znajduje się obok paska formuły, po prostu powyżej kolumny **A** arkusza.
 
@@ -93,7 +95,7 @@ ms.locfileid: "85543523"
      [!code-csharp[Trin_Excel_Dynamic_Controls#7](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#7)]
      [!code-vb[Trin_Excel_Dynamic_Controls#7](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#7)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Rozwiń dokumenty programu Word i skoroszyty programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Formanty w dokumentach pakietu Office](../vsto/controls-on-office-documents.md)
 - [NamedRange — formant](../vsto/namedrange-control.md)

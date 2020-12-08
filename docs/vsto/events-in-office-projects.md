@@ -1,5 +1,7 @@
 ---
 title: Zdarzenia w projektach pakietu Office
+description: Dowiedz się, w jaki sposób każdy szablon projektu pakietu Office generuje kilka obsługi zdarzeń i jak te programy obsługi zdarzeń są nieco inne niż procedury obsługi zdarzeń dla dodatków narzędzi VSTO.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -32,12 +34,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c8e8aca881ba25df134c675ac504ea0794c4b051
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 381d6ffad2afadd90278577ad0e247a2f20ec375
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986117"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848186"
 ---
 # <a name="events-in-office-projects"></a>Zdarzenia w projektach pakietu Office
   Każdy szablon projektu pakietu Office automatycznie generuje kilka programów obsługi zdarzeń. Programy obsługi zdarzeń dla dostosowań na poziomie dokumentu różnią się nieco od programów obsługi zdarzeń dla dodatków narzędzi VSTO.
@@ -152,7 +154,7 @@ ms.locfileid: "72986117"
 > [!NOTE]
 > Można wymusić, aby program Outlook zgłaszał <xref:Microsoft.Office.Tools.AddInBase.Shutdown> zdarzenie po jego zakończeniu przez zmodyfikowanie rejestru. Jeśli jednak administrator powróci to ustawienie, dowolny kod, który zostanie dodany do metody, `ThisAddIn_Shutdown` nie będzie już działać po zamknięciu programu Outlook. Aby uzyskać więcej informacji, zobacz temat [zmiany w zamknięciu programu Outlook 2010](/previous-versions/office/developer/office-2010/ee720183(v=office.14)).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Opracowywanie rozwiązań pakietu Office](../vsto/developing-office-solutions.md)
 - [Instrukcje: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Dostosowywanie na poziomie dokumentu programu](../vsto/programming-document-level-customizations.md)
