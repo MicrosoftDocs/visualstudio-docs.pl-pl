@@ -1,5 +1,7 @@
 ---
 title: Jak pakietów VSPackage dodawać elementy interfejsu użytkownika | Microsoft Docs
+description: Dowiedz się, w jaki sposób pakietów VSPackage dodawać elementy interfejsu użytkownika, takie jak menu, paski narzędzi i okna narzędzi, do programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d9cc3184009dd98e743064db1b8eb2abe6059d1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3e2fe51c365e3e6936a73aef9d4de9d52024d47
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649595"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761091"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Jak pakietów VSPackage Dodawanie elementów interfejsu użytkownika
 Pakietu VSPackage może dodawać elementy interfejsu użytkownika, na przykład menu, paski narzędzi i okna narzędzi, do programu Visual Studio za pomocą pliku *. vsct* .
@@ -185,7 +187,7 @@ Poniższe reguły określają, jak element może wywoływać inny element jako e
 
 |Element|Zdefiniowane w tej sekcji tabeli poleceń|Może być zawarta (jako element nadrzędny lub przez umieszczenie w `CommandPlacements` sekcji lub obie)|Może zawierać (określany jako element nadrzędny)|
 |-------------| - | - | - |
-|Group (Grupa)|[Grupy, element](../../extensibility/groups-element.md)IDE, inne pakietów VSPackage|Menu, grupy, samego elementu|Menu, grupy i polecenia|
+|Grupa|[Grupy, element](../../extensibility/groups-element.md)IDE, inne pakietów VSPackage|Menu, grupy, samego elementu|Menu, grupy i polecenia|
 |Menu|[Element menu](../../extensibility/menus-element.md), IDE, inne pakietów VSPackage|od 1 do *n* grup|od 0 do *n* grup|
 |Pasek narzędzi|[Element menu](../../extensibility/menus-element.md), IDE, inne pakietów VSPackage|Sam element|od 0 do *n* grup|
 |Element menu|[Button — element](../../extensibility/buttons-element.md), IDE, inne pakietów VSPackage|1 do *n* grup, sam element|-0 do *n* grup|
@@ -288,5 +290,5 @@ Zagadnienia dotyczące wybierania i pozycjonowania elementów poleceń są nast�
 
 - Aby spowodować, że niektóre elementy interfejsu użytkownika mają być wyświetlane w IDE, należy zaimplementować jeden lub więcej interfejsów lub napisać kod.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Poszerzanie menu i poleceń](../../extensibility/extending-menus-and-commands.md)

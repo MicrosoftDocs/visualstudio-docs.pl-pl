@@ -1,5 +1,7 @@
 ---
 title: Implementowanie obsługi poleceń dla zagnieżdżonych projektów | Microsoft Docs
+description: Dowiedz się, jak zaimplementować obsługę poleceń dla zagnieżdżonych projektów w zintegrowanym środowisku programistycznym (IDE) programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2092fc8033d5a5cc53b12bd63a945bd9865ca30e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13cfa6ebb8cae645202339c511f15ca15e2b3490
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707607"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761156"
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>Implementowanie obsługi poleceń dla zagnieżdżonych projektów
 IDE może przekazać polecenia, które są przekazywane za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> i <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsów do projektów zagnieżdżonych, lub projekty nadrzędne mogą filtrować lub przesłaniać polecenia.
@@ -51,7 +53,7 @@ IDE może przekazać polecenia, które są przekazywane za pomocą <xref:Microso
 
     Projekt nadrzędny nie musi kierować polecenia do projektu podrzędnego. IDE wykonuje to zadanie...
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>
 - [Polecenia, menu i paski narzędzi](../../extensibility/internals/commands-menus-and-toolbars.md)
 - [Zagnieżdżanie projektów](../../extensibility/internals/nesting-projects.md)

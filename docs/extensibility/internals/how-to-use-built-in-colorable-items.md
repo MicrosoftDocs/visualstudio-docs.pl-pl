@@ -1,5 +1,7 @@
 ---
-title: 'Instrukcje: korzystanie z wbudowanych elementów z możliwością kolorowania | Microsoft Docs'
+title: 'Instrukcje: korzystanie z Built-In elementów z możliwością kolorowania | Microsoft Docs'
+description: Dowiedz się, jak używać wbudowanych elementów z możliwością kolorowania w zintegrowanym środowisku programistycznym (IDE) programu Visual Studio dla usługi językowej.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,19 +13,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 762d1e53f7aafa11ed345859e68fc98766eec77d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 926cb77fe9477b7dc78c35c2ab58f9b73530e4fa
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905220"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761013"
 ---
 # <a name="how-to-use-built-in-colorable-items"></a>Instrukcje: korzystanie z wbudowanych elementów z możliwością kolorowania
 Przed użyciem wbudowanych elementów, należy najpierw zasygnalizować zintegrowane środowisko programistyczne (IDE), które nie udostępniają własnych niestandardowych elementów, które w tym przypadku byłyby <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> obiektami. W tym celu należy ustawić wpis rejestru dla usługi językowej.
 
 ## <a name="to-use-built-in-colorable-items"></a>Aby używać wbudowanych elementów z możliwością kolorowania
 
-1. W obszarze **HKEY_LOCAL_MACHINE \visualstudio \\<X. Y> \languages\language Services \\<nazwa \> języka**, gdzie \<X.Y> jest wersją [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] i \<Language Name> jest nazwą języka, utwórz wartość wpisu rejestru DWORD o nazwie **RequestStockColors**.
+1. W obszarze **HKEY_LOCAL_MACHINE\VisualStudio\\<X. Y> \languages\language Services \\<nazwa \> języka**, gdzie \<X.Y> jest wersją [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] i \<Language Name> jest nazwą języka, utwórz wartość wpisu rejestru DWORD o nazwie **RequestStockColors**.
 
 2. Ustaw wartość wpisu rejestru **RequestStockColors** na *1*.
 
@@ -32,7 +34,7 @@ Przed użyciem wbudowanych elementów, należy najpierw zasygnalizować zintegro
    > [!NOTE]
    > Nie ustawiaj tego wpisu rejestru, jeśli udostępniasz elementy niestandardowe. Aby uzyskać więcej informacji, zobacz [niestandardowe elementy do wykonania](../../extensibility/internals/custom-colorable-items.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Kolorowanie składni w edytorach niestandardowych](../../extensibility/syntax-coloring-in-custom-editors.md)
 - [Kolorowanie składni w starszej wersji usługi językowej](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
 - [Implementowanie kolorowania składni](../../extensibility/internals/implementing-syntax-coloring.md)

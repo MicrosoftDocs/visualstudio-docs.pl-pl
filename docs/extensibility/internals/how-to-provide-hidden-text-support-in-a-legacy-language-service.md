@@ -1,5 +1,7 @@
 ---
 title: Zapewnianie obsługi tekstu ukrytego w starszej wersji usługi językowej
+description: Dowiedz się, jak zapewnić obsługę tekstu ukrytego w starszej wersji usługi językowej przez dodanie regionów tekstu ukrytego kontrolowanych przez Edytor lub przez klienta.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a9d5fe85932f87eb68b6b5a0f5868ebbf8f2b5f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1f51f8e0c5ca268c1171804f663e5d01bd7c2530
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707929"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761312"
 ---
 # <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Instrukcje: zapewnianie obsługi tekstu ukrytego w starszej wersji usługi językowej
 Oprócz regionów konspektu można tworzyć ukryte regiony tekstowe. Ukryte regiony tekstu mogą być sterowane przez klienta lub kontrolowane przez Edytor i służą do całkowitego ukrywania regionu tekstu. Edytor wyświetla ukryty region jako poziome linie. Przykładem jest widok **tylko skrypt** w edytorze html.

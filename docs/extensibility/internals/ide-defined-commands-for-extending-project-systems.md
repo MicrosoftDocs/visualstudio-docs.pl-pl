@@ -1,5 +1,7 @@
 ---
-title: Polecenia zdefiniowane w środowisku IDE służące do rozszerzania systemów projektów | Microsoft Docs
+title: Polecenia IDE-Defined rozszerzające systemy projektów | Microsoft Docs
+description: Zapoznaj się z poleceniami i grupami poleceń zdefiniowanymi w zintegrowanym środowisku programistycznym (IDE) programu Visual Studio, które są używane do rozszerzania systemów projektów.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61c0b2924548f50ad650389e3ad81759be1986a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d5147f4e03b019b083613a77afe95b95e9e033a
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707734"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761169"
 ---
 # <a name="ide-defined-commands-for-extending-project-systems"></a>Polecenia definiowane w środowisku IDE do rozszerzania systemów projektu
 Gdy chcesz rozciągnąć systemy projektów, możesz użyć poleceń i grup poleceń dostarczonych przez [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.
@@ -32,7 +34,7 @@ Gdy chcesz rozciągnąć systemy projektów, możesz użyć poleceń i grup pole
 |IDM_VS_TOOL_PROJWIN|Pasek narzędzi **Eksplorator rozwiązań** .|
 
 ## <a name="shortcut-menus"></a>Menu skrótów
- W poniższej tabeli przedstawiono menu skrótów, które są stosowane w przypadku wybrania jednego węzła w **Eksplorator rozwiązań**lub gdy w **Eksplorator rozwiązań**znajduje się wiele opcji jednorodnych, co oznacza, że wszystkie wybrane węzły są tego samego typu.
+ W poniższej tabeli przedstawiono menu skrótów, które są stosowane w przypadku wybrania jednego węzła w **Eksplorator rozwiązań** lub gdy w **Eksplorator rozwiązań** znajduje się wiele opcji jednorodnych, co oznacza, że wszystkie wybrane węzły są tego samego typu.
 
 |Menu skrótów|Opis|
 |-------------------|-----------------|
@@ -69,7 +71,7 @@ Gdy chcesz rozciągnąć systemy projektów, możesz użyć poleceń i grup pole
 |IDG_VS_CTXT_PROJECT_TRANSFER|Polecenia dla operacji wycinania, kopiowania i wklejania.|
 |IDG_VS_CTXT_PROJECT_PROPERTIES|Polecenia, które zapewniają dostęp do okna dialogowego **właściwości projektu** .|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Dodawanie elementów interfejsu użytkownika przy użyciu pakietów VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Tworzenie grup przycisków do wielokrotnego użytku](../../extensibility/creating-reusable-groups-of-buttons.md)

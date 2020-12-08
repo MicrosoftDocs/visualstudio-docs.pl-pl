@@ -1,5 +1,7 @@
 ---
 title: Implementowanie starszej wersji językowej Językowej2 | Microsoft Docs
+description: Dowiedz się, jak zaimplementować starszą wersję usługi językowej, która obsługuje rozszerzone funkcje usługi językowej przy użyciu struktury pakietu zarządzanego (MPF). Część 2 z 2.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: df44b92cdf311689397a062b127d4c3e514a15e6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a7da218a9ada593731e6205e017861084e73adc
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238702"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761143"
 ---
 # <a name="implementing-a-legacy-language-service-2"></a>Implementowanie starszej wersji usługi językowej 2
 Aby zaimplementować usługę języka przy użyciu struktury zarządzanego pakietu (MPF), należy utworzyć klasę z <xref:Microsoft.VisualStudio.Package.LanguageService> klasy i zaimplementować następujące metody abstrakcyjne i właściwości:
@@ -32,7 +34,7 @@ Aby zaimplementować usługę języka przy użyciu struktury zarządzanego pakie
 
   Aby zapewnić obsługę dodatkowych funkcji, może być konieczne uzyskanie klasy z jednej z klas usługi językowej MPF. na przykład aby obsłużyć dodatkowe polecenia menu, należy utworzyć klasę z <xref:Microsoft.VisualStudio.Package.ViewFilter> klasy i zastąpić kilka metod obsługi poleceń (Zobacz, <xref:Microsoft.VisualStudio.Package.ViewFilter> Aby uzyskać szczegółowe informacje). <xref:Microsoft.VisualStudio.Package.LanguageService>Klasa zawiera wiele metod, które są wywoływane w celu utworzenia nowych wystąpień różnych klas i przesłonięcia odpowiedniej metody tworzenia w celu zapewnienia wystąpienia klasy. Na przykład należy zastąpić <xref:Microsoft.VisualStudio.Package.LanguageService.CreateViewFilter%2A> metodę w <xref:Microsoft.VisualStudio.Package.LanguageService> klasie, aby zwrócić wystąpienie własnej <xref:Microsoft.VisualStudio.Package.ViewFilter> klasy. Aby uzyskać więcej informacji, zobacz sekcję "Tworzenie wystąpień klas niestandardowych".
 
-  Usługa językowa może również dostarczać własne ikony, które są używane w wielu miejscach. Na przykład gdy zostanie wyświetlona lista uzupełniania IntelliSense, każdy element na liście może mieć skojarzoną z nią ikonę, oznaczanie elementu jako metody, klasy, przestrzeni nazw, właściwości lub dowolnego, co jest niezbędne dla danego języka. Te ikony są używane we wszystkich listach IntelliSense, na **pasku nawigacyjnym**i w oknie zadania **Lista błędów** . Aby uzyskać szczegółowe informacje, zobacz sekcję "obrazy usługi językowej" poniżej.
+  Usługa językowa może również dostarczać własne ikony, które są używane w wielu miejscach. Na przykład gdy zostanie wyświetlona lista uzupełniania IntelliSense, każdy element na liście może mieć skojarzoną z nią ikonę, oznaczanie elementu jako metody, klasy, przestrzeni nazw, właściwości lub dowolnego, co jest niezbędne dla danego języka. Te ikony są używane we wszystkich listach IntelliSense, na **pasku nawigacyjnym** i w oknie zadania **Lista błędów** . Aby uzyskać szczegółowe informacje, zobacz sekcję "obrazy usługi językowej" poniżej.
 
 ## <a name="getlanguagepreferences-method"></a>GetLanguagePreferences, Metoda
  <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A>Metoda zawsze zwraca to samo wystąpienie <xref:Microsoft.VisualStudio.Package.LanguagePreferences> klasy. Klasy bazowej można użyć, <xref:Microsoft.VisualStudio.Package.LanguagePreferences> Jeśli nie są potrzebne dodatkowe preferencje dotyczące usługi językowej. Klasy usługi języka MPF zakładają obecność co najmniej <xref:Microsoft.VisualStudio.Package.LanguagePreferences> klasy bazowej.
@@ -358,7 +360,7 @@ public enum IconImageIndex
         }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Implementowanie starszej wersji usługi językowej](../../extensibility/internals/implementing-a-legacy-language-service1.md)
 - [Omówienie starszej wersji usługi językowej](../../extensibility/internals/legacy-language-service-overview.md)
 - [Rejestrowanie starszej wersji usługi językowej](../../extensibility/internals/registering-a-legacy-language-service1.md)

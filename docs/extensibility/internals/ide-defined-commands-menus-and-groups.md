@@ -1,5 +1,7 @@
 ---
-title: Polecenia, menu i grupy zdefiniowane w środowisku IDE | Microsoft Docs
+title: IDE-Defined polecenia, menu i grupy | Microsoft Docs
+description: Dowiedz się więcej na temat menu, poleceń i grup poleceń, które są zdefiniowane w zintegrowanym środowisku programistycznym (IDE) programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,17 +14,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6557f49b019a6793698dabe852919ec2e9f28cfd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6314199fdf850c377825ee31e58cd9f315c5f672
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707716"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761026"
 ---
 # <a name="ide-defined-commands-menus-and-groups"></a>Polecenia, menu i grupy definiowane w środowisku IDE
 Wiele menu, poleceń i grup poleceń jest już zdefiniowanych do użycia przez [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE. Te polecenia są również dostępne do użycia podczas jego rozszerania [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="finding-environment-defined-commands"></a>Znajdowanie poleceń zdefiniowanych w środowisku
+## <a name="finding-environment-defined-commands"></a>Znajdowanie Environment-Defined poleceń
  Polecenia środowiska są zdefiniowane w zbiorze czterech plików vsct:
 
 - SharedCmdDef. vsct
@@ -48,7 +50,7 @@ Wiele menu, poleceń i grup poleceń jest już zdefiniowanych do użycia przez [
 
  Zawiera identyfikatory GUID i identyfikator poleceń zdefiniowanych przez środowisko IDE programu Visual Studio.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Tabela poleceń programu Visual Studio (pliki Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Polecenia definiowane w środowisku IDE do rozszerzania systemów projektu](../../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
 - [Dodawanie elementów interfejsu użytkownika przy użyciu pakietów VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

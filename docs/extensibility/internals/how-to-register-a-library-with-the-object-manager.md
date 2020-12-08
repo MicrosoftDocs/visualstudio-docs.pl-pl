@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: rejestrowanie biblioteki przy użyciu Menedżera obiektów | Microsoft Docs'
+description: Dowiedz się, jak zarejestrować bibliotekę za pomocą Menedżera obiektów programu Visual Studio, aby można było wyświetlać symbole w narzędziach do przeglądania, takie jak Widok klasy i Przeglądarka obiektów.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7179bd87fdfd9a2c3fc36958a9d964ec4f790dbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8036a0f4fe073473891805766ea8e3bb941951f8
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905227"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761390"
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>Instrukcje: rejestrowanie biblioteki przy użyciu Menedżera obiektów
 Symbole — narzędzia do przeglądania, takie jak **Widok klasy**, **Przeglądarka obiektów**, **przeglądarka wywołań** i **Znajdź wyniki symboli**, umożliwiają wyświetlanie symboli w projekcie lub w składnikach zewnętrznych. Symbole obejmują obszary nazw, klasy, interfejsy, metody i inne elementy języka. Biblioteki śledzą te symbole i uwidaczniają je [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] menedżerowi obiektów, który wypełnia narzędzia danymi.
@@ -164,7 +166,7 @@ Symbole — narzędzia do przeglądania, takie jak **Widok klasy**, **Przegląda
 
     ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Rozszerzalność starszej wersji usługi językowej](../../extensibility/internals/legacy-language-service-extensibility.md)
 - [Obsługa narzędzi do przeglądania symboli](../../extensibility/internals/supporting-symbol-browsing-tools.md)
 - [Instrukcje: Uwidacznianie list symboli dostarczonych przez bibliotekę do Menedżera obiektów](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

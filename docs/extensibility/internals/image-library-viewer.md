@@ -1,5 +1,7 @@
 ---
 title: Podgląd biblioteki obrazów | Microsoft Docs
+description: Dowiedz się więcej na temat narzędzia do przeglądania bibliotek obrazów programu Visual Studio, które ładuje i przeszukuje manifesty obrazu, co pozwala na wyświetlanie atrybutów obrazu i manipulowanie nimi.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9714879f93af052e244134ce225b07317455921
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ae9090604a16196c43b80140395eb3401215d665
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536347"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761274"
 ---
 # <a name="image-library-viewer"></a>Przeglądarka biblioteki obrazów
 Narzędzie przeglądarka obrazów programu Visual Studio może ładować i przeszukiwać manifesty obrazów, umożliwiając użytkownikowi manipulowanie nimi w taki sam sposób, jak w programie Visual Studio. Użytkownik może zmienić ustawienia tła, rozmiarów, DPI, dużego kontrastu i innych ustawień. Narzędzie wyświetla również informacje o ładowaniu dla każdego manifestu obrazu i wyświetla informacje o źródle dla każdego obrazu w manifeście obrazu. To narzędzie jest przydatne w przypadku:
@@ -72,8 +74,8 @@ Narzędzie przeglądarka obrazów programu Visual Studio może ładować i przes
 |-|-|
 |Importuj|Importuje symbole danego pliku manifestu do użycia w bieżącym manifeście.|
 |Guid (identyfikator GUID)|Symbol reprezentuje identyfikator GUID i musi pasować do formatowania identyfikatora GUID.|
-|ID|Symbol reprezentuje identyfikator i musi być nieujemną liczbą całkowitą.|
-|String|Symbol reprezentuje dowolną wartość ciągu.|
+|ID (Identyfikator)|Symbol reprezentuje identyfikator i musi być nieujemną liczbą całkowitą.|
+|Ciąg|Symbol reprezentuje dowolną wartość ciągu.|
 
  W symbolach jest rozróżniana wielkość liter i istnieje odwołanie do niej przy użyciu składni $ (symbol-nazwa):
 
@@ -85,7 +87,7 @@ Narzędzie przeglądarka obrazów programu Visual Studio może ładować i przes
 
  Niektóre symbole są wstępnie zdefiniowane dla wszystkich manifestów. Mogą one być używane w atrybucie URI \<Source> \<Import> elementu lub do odwoływania się do ścieżek na komputerze lokalnym.
 
-|**Symboliczn**|**Opis**|
+|**Symbol**|**Opis**|
 |-|-|
 |CommonProgramFiles|Wartość zmiennej środowiskowej% CommonProgramFiles%|
 |LocalAppData|Wartość zmiennej środowiskowej% LocalAppData%|
@@ -111,7 +113,7 @@ Narzędzie przeglądarka obrazów programu Visual Studio może ładować i przes
 |**Atrybut**|**Definicja**|
 |-|-|
 |Guid (identyfikator GUID)|Potrzeb Część identyfikatora GUID obrazu monikera|
-|ID|Potrzeb Część identyfikatora monikera obrazu|
+|ID (Identyfikator)|Potrzeb Część identyfikatora monikera obrazu|
 |AllowColorInversion|[Opcjonalne, wartość domyślna true] Wskazuje, czy obraz może być programowo odwrócony, gdy jest używany na ciemnym tle.|
 
  **Element źródłowy**
@@ -127,11 +129,11 @@ Narzędzie przeglądarka obrazów programu Visual Studio może ładować i przes
 |**Atrybut**|**Definicja**|
 |-|-|
 |Adresu|Potrzeb Identyfikator URI, który definiuje miejsce, z którego można załadować obraz. Może być jedną z następujących czynności:<br /><br /> - [Identyfikator URI pakietu](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) przy użyciu urzędu Application:///<br /><br /> -Bezwzględne odwołanie do zasobu składnika<br /><br /> -Ścieżka do pliku zawierającego zasób natywny|
-|Tło|Obowiązkowe Wskazuje, jaki rodzaj tła ma być używany.<br /><br /> Może być jedną z następujących czynności:<br /><br /> - *Jasne*: Źródło może być używane na jasnym tle.<br /><br /> - *Ciemny*: Źródło może być używane w ciemnym tle.<br /><br /> - *HighContrast*: Źródło może być używane na dowolnym tle w trybie duży kontrast.<br /><br /> - *HighContrastLight*: Źródło może być używane na jasnym tle w trybie duży kontrast.<br /><br /> -*HighContrastDark*: Źródło może być używane na ciemnym tle w trybie duży kontrast.<br /><br /> Jeśli atrybut **Background** zostanie pominięty, źródło może być używane w dowolnym tle.<br /><br /> Jeśli **tło** jest *jasne*, *ciemne*, *HighContrastLight*lub *HighContrastDark*, kolory źródła nigdy nie są odwracane. Jeśli **tło** zostanie pominięte lub ustawiona na *HighContrast*, inwersja kolorów źródła jest kontrolowana przez atrybut **AllowColorInversion** obrazu.|
+|Tło|Obowiązkowe Wskazuje, jaki rodzaj tła ma być używany.<br /><br /> Może być jedną z następujących czynności:<br /><br /> - *Jasne*: Źródło może być używane na jasnym tle.<br /><br /> - *Ciemny*: Źródło może być używane w ciemnym tle.<br /><br /> - *HighContrast*: Źródło może być używane na dowolnym tle w trybie duży kontrast.<br /><br /> - *HighContrastLight*: Źródło może być używane na jasnym tle w trybie duży kontrast.<br /><br /> -*HighContrastDark*: Źródło może być używane na ciemnym tle w trybie duży kontrast.<br /><br /> Jeśli atrybut **Background** zostanie pominięty, źródło może być używane w dowolnym tle.<br /><br /> Jeśli **tło** jest *jasne*, *ciemne*, *HighContrastLight* lub *HighContrastDark*, kolory źródła nigdy nie są odwracane. Jeśli **tło** zostanie pominięte lub ustawiona na *HighContrast*, inwersja kolorów źródła jest kontrolowana przez atrybut **AllowColorInversion** obrazu.|
 
  \<Source>Element może mieć dokładnie jeden z następujących opcjonalnych podelementów:
 
-|**Element**|**Atrybuty (wszystkie wymagane)**|**Definicja**|
+|**Postaci**|**Atrybuty (wszystkie wymagane)**|**Definicja**|
 |-|-|-|
 |\<Size>|Wartość|Źródło będzie używane dla obrazów o danym rozmiarze (w jednostkach urządzeń). Obraz będzie kwadratowy.|
 |\<SizeRange>|MinSize, brak|Źródło będzie używane dla obrazów z MinSize do rozmiaru całkowitego (w jednostkach urządzeń) włącznie. Obraz będzie kwadratowy.|
@@ -147,7 +149,7 @@ Narzędzie przeglądarka obrazów programu Visual Studio może ładować i przes
 |**Atrybut**|**Definicja**|
 |-|-|
 |Typ|Potrzeb Typ zasobu natywnego, XAML lub PNG|
-|ID|Potrzeb Część identyfikatora całkowitego zasobu natywnego|
+|ID (Identyfikator)|Potrzeb Część identyfikatora całkowitego zasobu natywnego|
 
  **Obrazów**
 
@@ -163,7 +165,7 @@ Narzędzie przeglądarka obrazów programu Visual Studio może ładować i przes
 |**Atrybut**|**Definicja**|
 |-|-|
 |Guid (identyfikator GUID)|Potrzeb Część identyfikatora GUID obrazu monikera|
-|ID|Potrzeb Część identyfikatora monikera obrazu|
+|ID (Identyfikator)|Potrzeb Część identyfikatora monikera obrazu|
 |Zewnętrzna|[Opcjonalne, wartość domyślna to false] Wskazuje, czy moniker obrazu odwołuje się do obrazu w bieżącym manifeście.|
 
  Moniker zawartego obrazu nie musi odwoływać się do obrazu zdefiniowanego w bieżącym manifeście. Jeśli w bibliotece obrazów nie można znaleźć zawartego obrazu, w jego miejscu zostanie użyty pusty obraz zastępczy.
@@ -179,7 +181,7 @@ Narzędzie przeglądarka obrazów programu Visual Studio może ładować i przes
 
  Domyślnie narzędzie spróbuje znaleźć katalog instalacyjny programu Visual Studio i dodać te katalogi do listy katalogów wyszukiwania. Można ręcznie dodawać katalogi, które nie znajdują się w narzędziu.
 
- Po załadowaniu wszystkich manifestów narzędzie może służyć do przełączania kolorów **tła** , **dpi**, **dużego kontrastu**lub **grayscaling** obrazów, dzięki czemu użytkownik może wizualnie zbadać zasoby obrazu, aby upewnić się, że są one prawidłowo renderowane dla różnych ustawień.
+ Po załadowaniu wszystkich manifestów narzędzie może służyć do przełączania kolorów **tła** , **dpi**, **dużego kontrastu** lub **grayscaling** obrazów, dzięki czemu użytkownik może wizualnie zbadać zasoby obrazu, aby upewnić się, że są one prawidłowo renderowane dla różnych ustawień.
 
  ![Tło podglądu biblioteki obrazów](../../extensibility/internals/media/image-library-viewer-background.png "Tło podglądu biblioteki obrazów")
 

@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: dostarczanie automatyzacji dla systemu Windows | Microsoft Docs'
+description: Dowiedz się, jak zapewnić automatyzację okien dokumentów i narzędzi w programie Visual Studio przy użyciu metod Microsoft. VisualStudio. Shell. Interop.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fec2b9ef6612a294dc70d129cf4bdd3dde843262
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a22e397a4c55ae23241e6fc89fb7d896fffa78f4
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905254"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761299"
 ---
 # <a name="how-to-provide-automation-for-windows"></a>Instrukcje: zapewnianie automatyzacji dla systemu Windows
 
@@ -40,6 +42,6 @@ Obiekt standardowy <xref:EnvDTE.Document> jest również dostępny ze środowisk
 
 Ponadto edytor może dostarczyć obiekt automatyzacji specyficzny dla pakietu VSPackage, pobrany przez <xref:EnvDTE.Document.Object%2A> metodę, implementując `IVsExtensibleObject` `IExtensibleObject` interfejsy lub. [Przykłady VSSDK](https://github.com/Microsoft/VSSDK-Extensibility-Samples) współtworzą obiekt automatyzacji specyficzny dla dokumentu RTF.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>

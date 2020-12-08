@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: generowanie informacji rejestru dla Instalatora | Microsoft Docs'
+description: Dowiedz się, jak za pomocą narzędzia RegPkg.exe w programie Visual Studio wygenerować informacje rejestru pakietu VSPackage dla programu w pakiecie instalacyjnym Instalatora Windows.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,19 +14,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0140ea2e1b894754b0cf35bc75676f277b12a0a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 082833c97706868261e39b50377c158f90b46a4a
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905460"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761228"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>Instrukcje: generowanie informacji rejestru dla Instalatora
 
 Za pomocą narzędzia *RegPkg.exe* można wygenerować manifest rejestracji dla zarządzanego pakietu VSPackage. Manifest można włączyć do pakietu instalacyjnego Instalator Windows. RegPkg może również generować plik, który może być dołączany do pliku źródłowego Instalatora na podstawie zestawu [narzędzi Instalator Windows XML](https://wixtoolset.org/).
 
 > [!IMPORTANT]
-> RegPkg generuje nazwy ścieżek, które są specyficzne dla systemu deweloperskiego, więc za każdym razem, gdy używasz RegPkg, musisz edytować dane wyjściowe, aby użyć odpowiednich Instalator Windows sformatowanych właściwości. Na przykład `InprocServer32` wartość powinna być * \<SystemFolder\>mscoree.dll* , a ścieżki powinny używać *\<#filekey\>* i *\<$componentkey\>* . Dostosowanie danych wyjściowych w ten sposób obsługuje komputery z systemem Windows zainstalowane na innym dysku lub w innym katalogu, zlokalizowanych nazwach katalogów i ścieżkach, które użytkownicy mogą wybrać. Aby uzyskać więcej informacji, zobacz [Formatowanie](https://msdn.microsoft.com/library?url=/library/msi/setup/formatted.asp) w Instalator Windows SDK. Jeśli przestrzegasz Konwencji RegPkg dla ścieżek systemu deweloperskiego, na przykład identyfikatorów plików *File_ \<filename\> *, musisz wprowadzić mniejszą liczbę zmian.
+> RegPkg generuje nazwy ścieżek, które są specyficzne dla systemu deweloperskiego, więc za każdym razem, gdy używasz RegPkg, musisz edytować dane wyjściowe, aby użyć odpowiednich Instalator Windows sformatowanych właściwości. Na przykład `InprocServer32` wartość powinna być *\<SystemFolder\>mscoree.dll* , a ścieżki powinny używać *\<#filekey\>* i *\<$componentkey\>* . Dostosowanie danych wyjściowych w ten sposób obsługuje komputery z systemem Windows zainstalowane na innym dysku lub w innym katalogu, zlokalizowanych nazwach katalogów i ścieżkach, które użytkownicy mogą wybrać. Aby uzyskać więcej informacji, zobacz [Formatowanie](https://msdn.microsoft.com/library?url=/library/msi/setup/formatted.asp) w Instalator Windows SDK. Jeśli przestrzegasz Konwencji RegPkg dla ścieżek systemu deweloperskiego, na przykład identyfikatorów plików *File_ \<filename\>*, musisz wprowadzić mniejszą liczbę zmian.
 
 ## <a name="to-create-a-registration-manifest"></a>Aby utworzyć manifest rejestracji
 
@@ -181,7 +183,7 @@ Za pomocą narzędzia *RegPkg.exe* można wygenerować manifest rejestracji dla 
     </Include>
     ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Zarejestruj pakietów VSPackage](../../extensibility/registering-and-unregistering-vspackages.md)
 - [Pakiety VSPackage](../../extensibility/internals/vspackages.md)
