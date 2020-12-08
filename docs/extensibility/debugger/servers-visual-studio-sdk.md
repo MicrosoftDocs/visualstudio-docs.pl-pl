@@ -1,5 +1,7 @@
 ---
 title: Serwery (Visual Studio SDK) | Microsoft Docs
+description: W tym artykule opisano definicje i rolę serwera w architekturze debugera w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +13,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 32fdbb5afca40c3b4fced468d2f9ef0ea5226c00
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9eaccebf874fa5fc0e7aaf63823547742215a568
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712895"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845300"
 ---
 # <a name="servers-visual-studio-sdk"></a>Serwery (zestaw SDK programu Visual Studio)
-W architekturze debugera *serwer*programu:
+W architekturze debugera *serwer* programu:
 
 - Jest kontenerem portów i dostawców portów, który komunikuje porty i dostawcy portów z menedżerem debugowania sesji (SDM) i aparatami debugowania.
 
@@ -27,7 +29,7 @@ W architekturze debugera *serwer*programu:
 
 - Jest reprezentowany przez interfejs [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) , który jest implementowany tylko przez program Visual Studio (jedno wystąpienie serwera dla każdego wystąpienia programu Visual Studio uruchomionego).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Porty](../../extensibility/debugger/ports.md)
 - [Dostawcy portów](../../extensibility/debugger/port-suppliers.md)
 - [Pojęcia dotyczące debugera](../../extensibility/debugger/debugger-concepts.md)

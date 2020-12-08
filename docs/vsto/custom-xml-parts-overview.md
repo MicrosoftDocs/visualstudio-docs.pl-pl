@@ -1,5 +1,7 @@
 ---
 title: Niestandardowe części XML — Omówienie
+description: Dowiedz się, jak osadzić dane XML w dokumentach dla niektórych Microsoft Office aplikacji. Po osadzeniu danych XML w dokumencie dane są nazywane niestandardowym elementem XML.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b94deacad38f40d76b4c8485186bfd563808d912
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7998f2a47edd85a65b1e81dd45a046de80d0cdb
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64784416"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844130"
 ---
 # <a name="custom-xml-parts-overview"></a>Niestandardowe części XML — Omówienie
   Możesz osadzić dane XML w dokumentach dla niektórych Microsoft Office aplikacji. Po osadzeniu danych XML w dokumencie dane są nazywane *niestandardowym elementem XML*.
@@ -41,9 +43,9 @@ ms.locfileid: "64784416"
 > Program Visual Studio umożliwia również buforowanie obiektów danych w dostosowaniach na poziomie dokumentu. Ta funkcja różni się od niestandardowych części XML, chociaż istnieją inne podobieństwa. Aby uzyskać więcej informacji, zobacz [buforowane dane w dostosowywaniu na poziomie dokumentu](../vsto/cached-data-in-document-level-customizations.md).
 
 ## <a name="understand-custom-xml-parts"></a>Zrozumienie niestandardowych części XML
- Niestandardowe części XML wprowadzono w systemie 2007 Microsoft Office wraz z otwartymi formatami XML. Te formaty zawierają nowe formaty plików XML dla programów Excel, PowerPoint i Word (takie jak *xlsx*, *pptx*i *docx*). Dokumenty w tych formatach składają się z plików XML (nazywanych również *częściami XML*), które są zorganizowane w folderach w archiwum zip. Większość części XML to wbudowane części, które ułatwiają Definiowanie struktury i stanu dokumentu. Jednak dokumenty mogą również zawierać niestandardowe części XML, których można użyć do przechowywania dowolnych danych XML w dokumentach.
+ Niestandardowe części XML wprowadzono w systemie 2007 Microsoft Office wraz z otwartymi formatami XML. Te formaty zawierają nowe formaty plików XML dla programów Excel, PowerPoint i Word (takie jak *xlsx*, *pptx* i *docx*). Dokumenty w tych formatach składają się z plików XML (nazywanych również *częściami XML*), które są zorganizowane w folderach w archiwum zip. Większość części XML to wbudowane części, które ułatwiają Definiowanie struktury i stanu dokumentu. Jednak dokumenty mogą również zawierać niestandardowe części XML, których można użyć do przechowywania dowolnych danych XML w dokumentach.
 
- Formaty plików XML umożliwiają aplikacjom współpracę z dokumentami w sposób, który nie jest możliwy w przypadku starszych formatów plików binarnych (takich jak *xls*, *PPT*i *. doc*). Wszystkie aplikacje, które mogą odczytywać archiwa ZIP, mogą przeglądać i modyfikować zawartość dokumentów, nawet jeśli nie zainstalowano Microsoft Office.
+ Formaty plików XML umożliwiają aplikacjom współpracę z dokumentami w sposób, który nie jest możliwy w przypadku starszych formatów plików binarnych (takich jak *xls*, *PPT* i *. doc*). Wszystkie aplikacje, które mogą odczytywać archiwa ZIP, mogą przeglądać i modyfikować zawartość dokumentów, nawet jeśli nie zainstalowano Microsoft Office.
 
  Aby uzyskać więcej informacji na temat struktury otwartych składników XML i niestandardowych części XML, zobacz następujące artykuły:
 
@@ -78,7 +80,7 @@ ms.locfileid: "64784416"
 ## <a name="bind-custom-xml-parts-to-word-content-controls"></a>Powiązywanie niestandardowych części XML z kontrolkami zawartości programu Word
  Można powiązać kontrolki zawartości w rozwiązaniu programu Word z elementami w niestandardowym składniku XML. Gdy formant zawartości jest powiązany z niestandardowym elementem XML, dane w niestandardowej części XML są wyświetlane w interfejsie użytkownika formantu zawartości. Jeśli użytkownik edytuje tekst w kontrolce, odpowiedni element XML zostanie automatycznie zaktualizowany. Podobnie, jeśli wartości elementów w niestandardowych częściach XML są zmieniane, formanty zawartości, które są powiązane z elementami XML, wyświetlają nowe dane. Aby uzyskać więcej informacji, zobacz [formanty zawartości](../vsto/content-controls.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Schematy XML i dane w dostosowaniach na poziomie dokumentu](../vsto/xml-schemas-and-data-in-document-level-customizations.md)
 - [Instrukcje: Dodawanie niestandardowych części XML do dostosowywania na poziomie dokumentu](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)
 - [Instrukcje: Dodawanie niestandardowych części XML do dokumentów za pomocą dodatków narzędzi VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: wprowadzenie do dostosowywania wstążki'
+description: Dowiedz się, że aby dostosować Wstążkę Microsoft Office aplikacji, Dodaj Wstążkę (Visual Designer) lub Wstążkę (XML) do projektu pakietu Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: be311f87862f4447d903294508927735d3507b08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3974fe85a97226a920959b41256fa7e29923c9d1
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520071"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845950"
 ---
 # <a name="how-to-get-started-customizing-the-ribbon"></a>Instrukcje: wprowadzenie do dostosowywania wstążki
   Aby dostosować Wstążkę Microsoft Office aplikacji, Dodaj **Wstążkę (Visual Designer)** lub **Wstążkę (XML)** do projektu pakietu Office.
@@ -69,9 +71,9 @@ ms.locfileid: "85520071"
 
    Element wstążki zostanie wyświetlony w **Eksplorator rozwiązań**. Aby uzyskać informacje o następnych krokach, zobacz [Omówienie wstążki](../vsto/ribbon-overview.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Uzyskiwanie dostępu do wstążki w czasie wykonywania](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Projektant wstążki](../vsto/ribbon-designer.md)
-- [XML — wstążka](../vsto/ribbon-xml.md)
+- [XML — Wstążka](../vsto/ribbon-xml.md)
 - [Przewodnik: Tworzenie niestandardowej karty przy użyciu projektanta wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [Przewodnik: Tworzenie niestandardowej karty przy użyciu języka XML wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)

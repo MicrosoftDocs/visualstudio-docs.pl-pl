@@ -1,5 +1,7 @@
 ---
 title: Struktury i związki | Microsoft Docs
+description: Ten artykuł zawiera linki do dokumentacji dotyczącej struktur i Unii w zestawie SDK debugowania programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 19d8f547d98488edffc6049be7619e5b5e921d93
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c1f477b46083b5abd5b8e93593cc728b660b58d9
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713493"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845768"
 ---
 # <a name="structures-and-unions"></a>Struktury i związki
 Poniżej przedstawiono struktury i związki w zestawie SDK debugowania programu Visual Studio.
@@ -139,5 +141,5 @@ Poniżej przedstawiono struktury i związki w zestawie SDK debugowania programu 
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dokumentacja interfejsu API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

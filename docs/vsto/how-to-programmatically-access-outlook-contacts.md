@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: programowe uzyskiwanie dostępu do kontaktów programu Outlook'
+description: Dowiedz się, jak można programistycznie uzyskiwać dostęp do kontaktów programu Outlook. Ten przykład umożliwia znalezienie wszystkich kontaktów, których nazwiska zawierają określony ciąg wyszukiwania.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2f6d64512af660392c10082e3bcd3c26b6bc6885
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 68fe58f2f70a68c37d9171eb01f9294bb5e4d4af
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520098"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844690"
 ---
 # <a name="how-to-programmatically-access-outlook-contacts"></a>Instrukcje: programowe uzyskiwanie dostępu do kontaktów programu Outlook
   Ten przykład umożliwia znalezienie wszystkich kontaktów, których nazwiska zawierają określony ciąg wyszukiwania.
@@ -34,7 +36,7 @@ ms.locfileid: "85520098"
 
 - Kontakty, których nazwiska zawierają ciąg "**na"** (na przykład Tzipi Butnaru) w folderze **kontaktów** .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Pracuj z elementami kontaktów](../vsto/working-with-contact-items.md)
 - [Instrukcje: programowe Dodawanie wpisu do kontaktów programu Outlook](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)
 - [Instrukcje: programowe wyszukiwanie określonego kontaktu](../vsto/how-to-programmatically-search-for-a-specific-contact.md)

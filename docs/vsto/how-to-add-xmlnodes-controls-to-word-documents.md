@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Dodawanie kontrolek XMLNodes do dokumentów programu Word'
+description: Zapoznaj się z tym, że po zmapowaniu powtarzalnego elementu schematu XML do dokumentu programu Microsoft Office Word program Visual Studio automatycznie doda do dokumentu formant XMLNodes.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 95fc165c1a3123d68529f6ccaea99fea963c2a67
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 256c62fc69be2c057d3ffc2588577fa87910c161
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543497"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844442"
 ---
 # <a name="how-to-add-xmlnodes-controls-to-word-documents"></a>Instrukcje: Dodawanie kontrolek XMLNodes do dokumentów programu Word
   **Ważne** Informacje przedstawione w tym temacie dotyczące programu Microsoft Word są prezentowane wyłącznie na korzyść i użytkowanie przez osoby i organizacje, które znajdują się poza Stany Zjednoczoneą i jej terytoriami, lub opracowywaniem programów, które są uruchamiane w programie Microsoft Word, które zostały licencjonowane przez firmę Microsoft przed 2010 stycznia, gdy firma Microsoft usunie implementację konkretnych funkcji związanych z niestandardowym kodem XML z programu Microsoft Word. Te informacje dotyczące programu Microsoft Word mogą nie być odczytane lub używane przez osoby lub organizacje w Stany Zjednoczone lub na terytoriach, którzy korzystają z programu lub opracowywania programów, które są uruchamiane w programie, produkty Microsoft Word, które zostały licencjonowane przez firmę Microsoft po 10 stycznia 2010; te produkty nie będą działać tak samo jak produkty licencjonowane przed tą datą lub zakupione i licencjonowane do użycia poza Stany Zjednoczone.
@@ -67,7 +69,7 @@ ms.locfileid: "85543497"
 
      <xref:Microsoft.Office.Tools.Word.XMLNodes>Kontrolka jest tworzona i dodawana do projektu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Formant XMLNodes](../vsto/xmlnodes-control.md)
 - [Automatyzowanie programu Word za pomocą obiektów rozszerzonych](../vsto/automating-word-by-using-extended-objects.md)
 - [Elementy hosta i formanty hosta — Omówienie](../vsto/host-items-and-host-controls-overview.md)

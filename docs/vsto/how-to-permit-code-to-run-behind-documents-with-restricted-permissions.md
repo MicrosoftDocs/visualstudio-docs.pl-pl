@@ -1,5 +1,7 @@
 ---
 title: Zezwalaj na uruchamianie kodu w tle z ograniczonymi uprawnieniami
+description: Dowiedz się, jak można zezwolić na uruchamianie kodu w tle dokumentów z ograniczonymi uprawnieniami przy użyciu narzędzi programistycznych pakietu Office w programie Visual Studio.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 14c468a806160fd31c84b164a4b995f904e71fc6
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ac15302e81a68d8866c69a30a8368d36648ef1d9
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298488"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844897"
 ---
 # <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Instrukcje: Zezwalanie na uruchamianie kodu w tle dokumentów z ograniczonymi uprawnieniami
   Za pomocą funkcji Rights Management informacji (IRM) Microsoft Office można ograniczyć uprawnienia do dokumentu lub skoroszytu. Domyślnie nie można uruchamiać kodu związanego z Microsoft Office ograniczonym dokumentem programu Word lub Microsoft Office skoroszycie programu Excel. Można zmienić wartość domyślną, aby rozszerzenia kodu zarządzanego mogły uzyskać dostęp do modelu obiektów, a Twoje rozwiązanie będzie działało.
@@ -43,11 +45,11 @@ ms.locfileid: "92298488"
 
 3. W oknie dialogowym **uprawnienia** wybierz opcję **Ogranicz uprawnienie do tego dokumentu**, a następnie kliknij przycisk **więcej opcji**.
 
-4. W obszarze **dodatkowe uprawnienia dla użytkowników**wybierz pozycję **dostęp do zawartości programowo**.
+4. W obszarze **dodatkowe uprawnienia dla użytkowników** wybierz pozycję **dostęp do zawartości programowo**.
 
    Program Word lub Excel zezwoli programistycznemu dostępowi do modelu obiektów.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Zarządzanie prawami do informacji i rozszerzenia kodu zarządzanego — Omówienie](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
 - [Ochrona dokumentów w rozwiązaniach na poziomie dokumentu](../vsto/document-protection-in-document-level-solutions.md)
 - [Ochrona hasłem w dokumentach pakietu Office](../vsto/password-protection-on-office-documents.md)

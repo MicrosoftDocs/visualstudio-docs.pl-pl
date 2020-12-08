@@ -1,5 +1,7 @@
 ---
 title: Dodatkowa obsługa błędów w rozwiązaniach pakietu Office
+description: Dowiedz się, jak za pomocą zasobów pomocy technicznej można znaleźć odpowiedzi na problemy występujące podczas tworzenia rozwiązań pakietu Office w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -56,12 +58,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 01b225b27dfe9c5e1f006105b8e2676a509234b9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e307c839dfb0aa764ccd0aa5727f009635ecabce
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72984635"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844780"
 ---
 # <a name="additional-support-for-errors-in-office-solutions"></a>Dodatkowa obsługa błędów w rozwiązaniach pakietu Office
 
@@ -91,7 +93,7 @@ Umożliwia dostęp do artykułów w bazie wiedzy Knowledge Base (KB), plików do
 
 Oferuje linki do dodatkowych zasobów, aby dowiedzieć się więcej na temat opracowywania rozwiązań biurowych i programowania Office przy użyciu programu Visual Studio.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Rozwiązywanie problemów z błędami w rozwiązaniach pakietu Office](../vsto/troubleshooting-errors-in-office-solutions.md)
 - [Rozwiązywanie problemów z zabezpieczeniami rozwiązań pakietu Office](../vsto/troubleshooting-office-solution-security.md)

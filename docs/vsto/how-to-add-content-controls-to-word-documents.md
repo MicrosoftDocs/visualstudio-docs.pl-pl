@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Dodawanie kontrolek zawartości do dokumentów programu Word'
+description: Dowiedz się, że w projektach programu Word na poziomie dokumentu, możesz dodać kontrolki zawartości do dokumentu w projekcie w czasie projektowania lub w czasie wykonywania.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -26,12 +28,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2f15adeb801e33a134c681c206e3a5b38ccce70f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa1528371a1466ec2886bf652ed33561b66b7028
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538388"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845560"
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>Instrukcje: Dodawanie kontrolek zawartości do dokumentów programu Word
   W projektach programu Word na poziomie dokumentu można dodawać kontrolki zawartości do dokumentu w projekcie w czasie projektowania lub w czasie wykonywania. W projektach dodatku programu Word VSTO można dodać kontrolki zawartości do dowolnego otwartego dokumentu w czasie wykonywania.
@@ -182,7 +184,7 @@ ms.locfileid: "85538388"
 
      [!code-csharp[Trin_WordAddInDynamicControls#6](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#6)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Automatyzowanie programu Word za pomocą obiektów rozszerzonych](../vsto/automating-word-by-using-extended-objects.md)
 - [Elementy hosta i formanty hosta — Omówienie](../vsto/host-items-and-host-controls-overview.md)
 - [Dodawanie kontrolek do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md)

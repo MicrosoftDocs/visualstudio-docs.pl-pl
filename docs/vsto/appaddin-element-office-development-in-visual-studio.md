@@ -1,5 +1,7 @@
 ---
 title: '&lt;appAddin — &gt; element (Programowanie Office w Visual Studio)'
+description: Dowiedz się, w jaki sposób element appAddin przestrzeni nazw vstov4 przechowuje informacje dotyczące dostosowywania dla dodatków narzędzi VSTO.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1bf9ea990d12bd24adee3f6a24a39fa43c74fb71
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a22015fe6183dfd74fff54c34bc6896e1d33d217
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85531641"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844754"
 ---
 # <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;appAddin — &gt; element (Programowanie Office w Visual Studio)
   Element **appAddin** `vstov4` przestrzeni nazw przechowuje informacje specyficzne dla dostosowywania dla dodatków narzędzi VSTO.
@@ -43,20 +45,20 @@ ms.locfileid: "85531641"
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|**aplikacja**|Wymagany. Identyfikuje aplikację Microsoft Office. Może to być jedna z następujących wartości: Excel, InfoPath, Outlook, PowerPoint, Project, Visio lub Word.|
+|**aplikacja**|Wymagane. Identyfikuje aplikację Microsoft Office. Może to być jedna z następujących wartości: Excel, InfoPath, Outlook, PowerPoint, Project, Visio lub Word.|
 |**loadBehavior**|Opcjonalny. Domyślnie **LoadBehavior** jest włączane przez ustawienie tej wartości na. W przypadku debugowania można wyłączyć dodatek VSTO, ustawiając wartość na dwa. Więcej informacji można znaleźć w tabeli zatytułowanej LoadBehavior wartości w [wpisach rejestru dla dodatków narzędzi VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|
-|**keyName**|Wymagany. Ta wartość jest nazwą klucza rejestru, która będzie używana przez aplikację do ładowania dodatku VSTO. Aby uzyskać więcej informacji, zobacz [wpisy rejestru dotyczące dodatków narzędzi VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|
+|**keyName**|Wymagane. Ta wartość jest nazwą klucza rejestru, która będzie używana przez aplikację do ładowania dodatku VSTO. Aby uzyskać więcej informacji, zobacz [wpisy rejestru dotyczące dodatków narzędzi VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|
 
  Element **appAddin** ma następujące elementy podrzędne.
 
 ### <a name="friendlyname"></a>friendlyName
- Opcjonalny. Element **FriendlyName** jest wyjaśniony w [&#60;FriendlyName&#62; elementu &#40;programowanie Office w&#41;programu Visual Studio ](../vsto/friendlyname-element-office-development-in-visual-studio.md).
+ Opcjonalny. Element **FriendlyName** jest wyjaśniony w [&#60;FriendlyName&#62; elementu &#40;programowanie Office w&#41;programu Visual Studio](../vsto/friendlyname-element-office-development-in-visual-studio.md).
 
 ### <a name="description"></a>description
- Opcjonalny. Element **Description** został wyjaśniony w [ opisie&#60;&#62; elementu &#40;programowanie Office w&#41;Visual Studio ](../vsto/description-element-office-development-in-visual-studio.md).
+ Opcjonalny. Element **Description** został wyjaśniony w [ opisie&#60;&#62; elementu &#40;programowanie Office w&#41;Visual Studio](../vsto/description-element-office-development-in-visual-studio.md).
 
 ### <a name="formregions"></a>formRegions
- Wymagane tylko w przypadku dodatków VSTO programu Outlook, które obejmują regiony formularzy. Element **FormRegions** jest wyjaśniony w [&#60;formRegions&#62; elementu &#40;programowanie Office w&#41;Visual Studio ](../vsto/formregions-element-office-development-in-visual-studio.md).
+ Wymagane tylko w przypadku dodatków VSTO programu Outlook, które obejmują regiony formularzy. Element **FormRegions** jest wyjaśniony w [&#60;formRegions&#62; elementu &#40;programowanie Office w&#41;Visual Studio](../vsto/formregions-element-office-development-in-visual-studio.md).
 
 ## <a name="vsto-add-in-example"></a>Przykład dodatku narzędzi VSTO
 
@@ -88,7 +90,7 @@ ms.locfileid: "85531641"
 </vstov4:appAddIn>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md)
 - [Manifesty wdrożenia dla rozwiązań pakietu Office](../vsto/deployment-manifests-for-office-solutions.md)

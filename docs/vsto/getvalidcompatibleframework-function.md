@@ -1,5 +1,7 @@
 ---
 title: GetValidCompatibleFramework, funkcja
+description: Dowiedz się, jak interfejs API GetValidCompatibleFramework obsługuje infrastrukturę pakietu Office i nie jest przeznaczony do użycia bezpośrednio w kodzie.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -10,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2219417fe8ddae3d11d0e624ad12d3de80e290dd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 96f536b3ab8e28b87a59a637fcf6dbaadeb21bf7
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520227"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845079"
 ---
 # <a name="getvalidcompatibleframework-function"></a>GetValidCompatibleFramework, funkcja
   Ten interfejs API obsługuje infrastrukturę pakietu Office i nie jest przeznaczony do użycia bezpośrednio w kodzie.

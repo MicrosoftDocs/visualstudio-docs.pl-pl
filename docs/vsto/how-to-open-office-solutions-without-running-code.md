@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: otwieranie rozwiązań pakietu Office bez uruchamiania kodu'
+description: Dowiedz się, jak otworzyć dokument lub skoroszyt zawierający rozszerzenia kodu zarządzanego bez uruchamiania kodu zestawu.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d84515c2c3159b61b96f77555b23eef0df0ae961
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8339f21fbf7add4335941360b73d42700ef6e635
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543484"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844923"
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>Instrukcje: otwieranie rozwiązań pakietu Office bez uruchamiania kodu
   Rozwiązanie Microsoft Office utworzone przy użyciu rozszerzeń kodu zarządzanego działa nawet wtedy, gdy ustawienie zabezpieczeń w aplikacji pakietu Office użytkownika końcowego jest ustawione na wartość wysoki. Wynika to z faktu, że zabezpieczenia kodu zestawu .NET są zarządzane przez strukturę Microsoft .NET, a nie przez Microsoft Office.
@@ -49,7 +51,7 @@ ms.locfileid: "85543484"
 
      Jeśli rozwiązanie jest używane przez wiele osób, ta metoda uniemożliwia działanie rozwiązania dla wszystkich z nich. Może to być przydatne w przypadku znalezienia problemu w kodzie lub serwerze, którego dotyczy odwołanie, i chcesz zatrzymać jego wykonywanie przez wszystkich użytkowników.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Zabezpieczanie rozwiązań pakietu Office](../vsto/securing-office-solutions.md)
 - [Wdróż rozwiązanie pakietu Office](../vsto/deploying-an-office-solution.md)
 - [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)

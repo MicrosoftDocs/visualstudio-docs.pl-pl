@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Programowane dodawanie i usuwanie komentarzy do arkusza'
+description: Dowiedz się, w jaki sposób można programowo dodawać i usuwać komentarze w Microsoft Office arkuszach programu Excel. Komentarze można dodawać tylko do pojedynczych komórek, a nie do zakresów wielokomórek.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c87851afb70e9207f9a24fc18826a4c2b218ec08
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: f845197de6664728a812e2795e51605ed962c575
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583804"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844611"
 ---
 # <a name="how-to-programmatically-add-and-delete-worksheet-comments"></a>Instrukcje: Programowane dodawanie i usuwanie komentarzy do arkusza
   Można programowo dodawać i usuwać komentarze w Microsoft Office arkuszach programu Excel. Komentarze można dodawać tylko do pojedynczych komórek, a nie do zakresów wielokomórek.
@@ -61,7 +63,7 @@ ms.locfileid: "91583804"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#19](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#19)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#19](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#19)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Pracuj z arkuszami](../vsto/working-with-worksheets.md)
 - [Instrukcje: Programowane wyświetlanie komentarzy do arkusza](../vsto/how-to-programmatically-display-worksheet-comments.md)
 - [NamedRange — formant](../vsto/namedrange-control.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Eksportowanie wstążki z projektanta wstążki do XML wstążki'
+description: Dowiedz się, że aby dostosować Wstążkę, możesz wyeksportować Wstążkę z projektanta do kodu XML wstążki i bezpośrednio edytować kod XML.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cf3101a062fa8b30ae821bf6a157319b6f37862a
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: f39131eb7e3469d389ad2d50aaeb1ee97e3865b9
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298439"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844143"
 ---
 # <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Instrukcje: Eksportowanie wstążki z projektanta wstążki do XML wstążki
   Element **wstążki (projektant graficzny)** nie obsługuje wszystkich możliwych typów dostosowań Wstążki. Aby dostosować Wstążkę w zaawansowanych sposobach, można wyeksportować Wstążkę z projektanta do kodu XML wstążki i bezpośrednio edytować plik XML.
@@ -44,11 +46,11 @@ ms.locfileid: "92298439"
 
 3. W klasie kodu wstążki Znajdź komentarze, które zaczynają się od `TODO:` .
 
-4. Skopiuj blok kodu z tych komentarzy do klasy **ThisAddIn**, **ThisWorkbook**lub **ThisDocument** , w zależności od typu rozwiązania, które tworzysz.
+4. Skopiuj blok kodu z tych komentarzy do klasy **ThisAddIn**, **ThisWorkbook** lub **ThisDocument** , w zależności od typu rozwiązania, które tworzysz.
 
      Ten kod umożliwia aplikacji Microsoft Office odnajdywanie i ładowanie Wstążki niestandardowej. Aby uzyskać więcej informacji, zobacz [kod XML wstążki](../vsto/ribbon-xml.md).
 
-5. W klasie **ThisAddIn**, **ThisWorkbook**lub **ThisDocument** Usuń komentarz z bloku kodu.
+5. W klasie **ThisAddIn**, **ThisWorkbook** lub **ThisDocument** Usuń komentarz z bloku kodu.
 
      Po usunięciu komentarza do kodu powinien on wyglądać podobnie do poniższego przykładu. W tym przykładzie Klasa wstążki jest wywoływana `MyRibbon` .
 
@@ -65,7 +67,7 @@ ms.locfileid: "92298439"
 
      Aby uzyskać informacje na temat pisania metod wywołania zwrotnego i korzystania z modelu programowania RibbonX, zobacz [kod XML wstążki](../vsto/ribbon-xml.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Omówienie wstążki](../vsto/ribbon-overview.md)
 - [Projektant wstążki](../vsto/ribbon-designer.md)
 - [XML — Wstążka](../vsto/ribbon-xml.md)

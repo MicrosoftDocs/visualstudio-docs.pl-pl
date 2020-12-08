@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Programowane dodawanie nowych arkuszy do skoroszytów'
+description: Dowiedz się, jak można programowo utworzyć arkusz, a następnie dodać arkusz do kolekcji arkuszy w skoroszycie.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3c014d8ea1701dde4e83e6849cce337656579f5d
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 3397b2ad8f656a7ada82ce0be17dcf21064d0ee3
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585408"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96843987"
 ---
 # <a name="how-to-programmatically-add-new-worksheets-to-workbooks"></a>Instrukcje: Programowane dodawanie nowych arkuszy do skoroszytów
   Można programowo utworzyć arkusz, a następnie dodać arkusz do kolekcji arkuszy w skoroszycie.
@@ -46,7 +48,7 @@ ms.locfileid: "91585408"
 
      Nowy arkusz jest <xref:Microsoft.Office.Interop.Excel.Worksheet> obiektem macierzystym, a nie elementem hosta. Można również wygenerować <xref:Microsoft.Office.Tools.Excel.Worksheet> element hosta z <xref:Microsoft.Office.Interop.Excel.Worksheet> obiektu macierzystego. Aby uzyskać więcej informacji, zobacz [Rozszerzanie dokumentów programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Pracuj z arkuszami](../vsto/working-with-worksheets.md)
 - [Elementy hosta i formanty hosta — Omówienie](../vsto/host-items-and-host-controls-overview.md)
 - [Instrukcje: programowe usuwanie arkuszy ze skoroszytów](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)

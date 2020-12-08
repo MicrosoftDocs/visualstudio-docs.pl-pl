@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Dodawanie uruchamiania okna dialogowego do grupy wstążki'
+description: Możesz dodać przycisk Uruchom okno dialogowe do dowolnej grupy na Wstążce, która może otwierać powiązane okna dialogowe lub okienka zadań, które udostępniają więcej opcji odnoszących się do grupy.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 29b260929d0478749296496db5b454326497d3ad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85b5d6f127c6f8b2b8140e778792aa1088efe05c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541623"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844936"
 ---
 # <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Instrukcje: Dodawanie uruchamiania okna dialogowego do grupy wstążki
   Możesz dodać przycisk uruchamiania okna dialogowego do dowolnej grupy na Wstążce. Uruchamia okno dialogowe jest małą ikoną wyświetlaną w grupie. Użytkownicy klikają tę ikonę, aby otworzyć powiązane okna dialogowe lub okienka zadań, które zawierają więcej opcji odnoszących się do grupy.
@@ -27,7 +29,7 @@ ms.locfileid: "85541623"
 
 ### <a name="to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Aby dodać Uruchamianie okna dialogowego do grupy wstążki
 
-1. Wybierz plik kodu wstążki (plik*VB* lub *cs* ) w **Eksplorator rozwiązań**.
+1. Wybierz plik kodu wstążki (plik *VB* lub *cs* ) w **Eksplorator rozwiązań**.
 
 2. W menu **Widok** kliknij pozycję **Projektant**.
 
@@ -35,13 +37,13 @@ ms.locfileid: "85541623"
 
      Dodaj kod do <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup.DialogLauncherClick> zdarzenia grupy w celu otworzenia niestandardowego lub wbudowanego okna dialogowego.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Omówienie wstążki](../vsto/ribbon-overview.md)
 - [Uzyskiwanie dostępu do wstążki w czasie wykonywania](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Przykłady i przewodniki dotyczące programowania pakietu Office](../vsto/office-development-samples-and-walkthroughs.md)
 - [Projektant wstążki](../vsto/ribbon-designer.md)
 - [Omówienie modelu obiektów wstążki](../vsto/ribbon-object-model-overview.md)
-- [XML — wstążka](../vsto/ribbon-xml.md)
+- [XML — Wstążka](../vsto/ribbon-xml.md)
 - [Instrukcje: Eksportowanie wstążki z Projektanta wstążki do XML wstążki](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
 - [Instrukcje: zmiana położenia karty na Wstążce](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
 - [Instrukcje: dostosowywanie wbudowanej karty](../vsto/how-to-customize-a-built-in-tab.md)

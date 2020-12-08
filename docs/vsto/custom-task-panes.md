@@ -1,5 +1,7 @@
 ---
 title: Niestandardowe okienka zadań
+description: Dowiedz się, że niestandardowe okienka zadań umożliwiają utworzenie własnego okienka zadań i udostępnienie użytkownikom znanego interfejsu umożliwiającego dostęp do funkcji rozwiązania.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -25,12 +27,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 361b04edf2b677c2842376bd9d8fee0d6f3bda12
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: b08e0e3bbc9f45b33ecd0248179011113db7a779
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862355"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844183"
 ---
 # <a name="custom-task-panes"></a>Niestandardowe okienka zadań
   Okienka zadań to panele interfejsu użytkownika, które zwykle są zadokowane po jednej stronie okna w aplikacji Microsoft Office. Niestandardowe okienka zadań umożliwiają utworzenie własnego okienka zadań i udostępnienie użytkownikom znanego interfejsu umożliwiającego dostęp do funkcji rozwiązania. Na przykład interfejs może zawierać kontrolki, które uruchamiają kod, aby modyfikować dokumenty lub wyświetlać dane ze źródła danych.
@@ -215,7 +217,7 @@ ms.locfileid: "91862355"
 
 - [Microsoft.Office.Interop.PowerPoint.EApplication_Event. WindowDeactivate](/previous-versions/office/developer/office-2010/ff763093(v=office.14))
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Instrukcje: Dodawanie niestandardowego okienka zadań do aplikacji](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
 - [Przewodnik: Automatyzowanie aplikacji z niestandardowego okienka zadań](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)
 - [Przewodnik: synchronizowanie niestandardowego okienka zadań z przyciskiem wstążki](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)

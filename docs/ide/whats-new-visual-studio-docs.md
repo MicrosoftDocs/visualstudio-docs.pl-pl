@@ -1,8 +1,8 @@
 ---
-title: 'Dokumentacja programu Visual Studio: co nowego w październiku 2020 '
+title: 'Dokumentacja programu Visual Studio: co nowego w listopadzie 2020 '
 titleSuffix: ''
-description: Co nowego w dokumentacji programu Visual Studio dla października 2020.
-ms.date: 11/04/2020
+description: Co nowego w dokumentacji programu Visual Studio dla listopada 2020.
+ms.date: 12/04/2020
 helpviewer_keywords:
 - Visual Studio, what's new, docs
 - what's new [Visual Studio]
@@ -15,114 +15,166 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: bbc723661b0556acd6c8e020709e0055a398f22d
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 2926e5eb7d2b46309488d167402aee205f0f816c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414493"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844000"
 ---
-# <a name="visual-studio-docs-whats-new-for-october-2020"></a>Dokumentacja programu Visual Studio: co nowego w październiku 2020
+# <a name="visual-studio-docs-whats-new-for-november-2020"></a>Dokumentacja programu Visual Studio: co nowego w listopadzie 2020
 
-Witamy w nowościach w dokumentacji programu Visual Studio dla października 2020. W tym artykule wymieniono niektóre istotne zmiany w dokumentach w tym okresie. Aby uzyskać informacje o nowościach w poprzednich miesiącach, zobacz artykuł dotyczący [historii nowości](whats-new-visual-studio-docs-history.md) .
+Witamy w nowościach w dokumentacji programu Visual Studio dla listopada 2020. W tym artykule wymieniono niektóre istotne zmiany w dokumentach w tym okresie. Aby uzyskać informacje o nowościach w poprzednich miesiącach, zobacz artykuł dotyczący [historii nowości](whats-new-visual-studio-docs-history.md) .
 
 ## <a name="code-quality"></a>Jakość kodu
 
+**Nowe artykuły**
+
+- [Włączanie lub instalowanie analizatorów .NET](../code-quality/install-net-analyzers.md) — Dodawanie dokumentacji do migracji z analizatorów FxCop do analizatorów .NET
+- [Migrowanie z analizatorów FxCop do analizatorów .NET](../code-quality/migrate-from-fxcop-analyzers-to-net-analyzers.md) — Dodawanie dokumentacji do migracji z analizatorów FxCop do analizatorów .NET
+- [Migrowanie ze starszej wersji analizy (FxCop) do analizy źródłowej (analizatory .NET)](../code-quality/migrate-from-legacy-analysis-to-net-analyzers.md) — Dodawanie dokumentacji do migracji z analizatorów FxCop do analizatorów .NET
+- [Często zadawane pytania dotyczące starszych analizatorów FxCop i .NET](../code-quality/net-analyzers-faq.md) — Dodawanie dokumentacji do migracji z analizatorów FxCop do analizatorów .NET
+
 **Zaktualizowane artykuły**
-- [Analizatory kodu](../code-quality/index.yml) — Refaktoryzacja urzędu certyfikacji dla platformy .NET 5
+
+- [Często zadawane pytania dotyczące analizy kodu](../code-quality/analyzers-faq.md) — Dodano dokumentację do migracji z analizatorów FxCop do analizatorów .NET
+- [Stan portu reguły FxCop](../code-quality/fxcop-rule-port-status.md) — Dodano dokumentację do migracji z analizatorów FxCop do analizatorów .NET
+- [Przestarzałe reguły](../code-quality/fxcop-unported-deprecated-rules.md) — Dodano dokumentację do migracji z analizatorów FxCop do analizatorów .NET
+- [Nieportowe reguły, które mogą zostać przeniesione](../code-quality/fxcop-unported-rules-may-get-ported.md) — Dodano dokumentację do migracji z analizatorów FxCop do analizatorów .NET
+- [Reguły nieportowe](../code-quality/fxcop-unported-rules.md) — Dodano dokumentację do migracji z analizatorów FxCop do analizatorów .NET
+- [Zainstaluj program analizatory innych firm](../code-quality/install-roslyn-analyzers.md) — dodaliśmy dokumentację do migracji z analizatorów FxCop do analizatorów .NET
+- [Przegląd](../code-quality/use-roslyn-analyzers.md) — Dodano dokumentację do migracji z analizatorów FxCop do analizatorów .NET
 
 ## <a name="containers"></a>Kontenery
 
 **Zaktualizowane artykuły**
 
-- [Szybki Start: korzystanie z platformy Docker z aplikacją jednostronicową do reagowania w programie Visual Studio](../containers/container-tools-react.md)
-  - Narzędzia kontenera: usuwanie odwołań do starego repozytorium obrazów
-  - Samouczek aktualizacji dla platformy .NET 3,1 i programu VS 16,7
-- [Jak mostek Kubernetes Works](../containers/overview-bridge-to-kubernetes.md) -Bridge do Kubernetes: dodawanie ograniczeń
-- [Debugowanie aplikacji w lokalnym kontenerze platformy Docker](../containers/edit-and-refresh.md) — Przybornik platformy Docker
+- [Jak Bridge Kubernetes Works](../containers/overview-bridge-to-kubernetes.md) — sekcja uprawnień Kubernetes
 
 ## <a name="debugger"></a>Debuger
 
 **Nowe artykuły**
 
-- [Obsługa DirectX 12 w programie Visual Studio](../debugger/graphics/visual-studio-graphics-diagnostics-directx-12.md) — Vsdg DX12
+- [Dołącz do procesu uruchomionego na kontenerze platformy Docker](../debugger/attach-to-process-running-in-docker-container.md) — załączanie do usługi docs
 
 **Zaktualizowane artykuły**
 
-- [Debuguj ASP.NET lub ASP.NET Core aplikacje w programie Visual Studio](../debugger/how-to-enable-debugging-for-aspnet-applications.md) — poprawki zawartości debugera dotyczące problemów z usługą GitHub
-- [Używanie punktów przerwania w programie Visual Studio debugger](../debugger/using-breakpoints.md) — poprawki zawartości debugera dotyczące problemów z usługą GitHub
-- [Debugowanie usług platformy Azure w programie Visual Studio](../debugger/debug-azure-apps.md) — narzędzie do wyszukiwania migawek i łącza do nich
-- [Debuguj aplikacje platformy Azure ASP.NET na żywo przy użyciu funkcji Snapshot Debugger](../debugger/debug-live-azure-applications.md) -optymalizacji i linków dla debugera migawek
-- [Debugowanie zdalne](../debugger/remote-debugging.md) — narzędzie do wyszukiwania migawek i linków do usługi Snapshot Debugger
-- [Omówienie programu Visual Studio Diagnostyka grafiki](../debugger/graphics/overview-of-visual-studio-graphics-diagnostics.md) — Vsdg DX12
-- [Visual Studio Diagnostyka grafiki](../debugger/graphics/visual-studio-graphics-diagnostics.md) — Vsdg DX12
+- [Dołączanie do uruchomionych procesów za pomocą debugera programu Visual Studio](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md) — załączanie do dokumentów przetwarzanych w przypadku scenariuszy z systemem Linux
+- [Debugowanie programu .NET Core w systemie Linux przy użyciu protokołu SSH przez](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md) dołączenie do procesu
+
+## <a name="deployment"></a>Wdrożenie
+
+**Nowe artykuły**
+
+- [Wdrażanie aplikacji klasycznych systemu Windows z użyciem technologii ClickOnce](../deployment/quickstart-deploy-using-clickonce-folder.md) — Dodaj szybki start do projektów systemu Windows dla platformy .NET
+
+**Zaktualizowane artykuły**
+
+- [Pierwsze spojrzenie na wdrożenie w programie Visual Studio](../deployment/deploying-applications-services-and-components.md)
+  - Edytuj przebieg
+  - Odnajdywanie i łączenie aktualizacji dla programu .NET 5
+- [Wdrożenie w programie Visual Studio # jest wymagane; Tytuł strony wyświetlany w wynikach wyszukiwania. Uwzględnij markę. < znaków 60.](../deployment/index.yml) -Odnajdywanie i łączenie aktualizacji dla programu .NET 5
+- [Tworzenie aplikacji ClickOnce z wiersza polecenia](../deployment/building-clickonce-applications-from-the-command-line.md) — Dodawanie szybkiego startu technologii ClickOnce dla projektów .NET Windows
+- [Wdrażanie aplikacji w folderze, usługach IIS, na platformie Azure lub w innym miejscu docelowym](../deployment/deploying-applications-services-and-components-resources.md) — Dodawanie szybkiego startu technologii ClickOnce dla projektów systemu Windows
+- [Wdrażanie aplikacji w folderze przy użyciu programu Visual Studio](../deployment/quickstart-deploy-to-local-folder.md) — Dodawanie szybkiego startu technologii ClickOnce dla projektów .NET systemu Windows
+
+## <a name="designers"></a>Projektanci
+
+**Zaktualizowane artykuły**
+
+- [Samouczek: wprowadzenie do Projektant formularzy systemu Windows](../designers/walkthrough-windows-forms-designer.md) — poprawione literówki
 
 ## <a name="get-started"></a>Rozpoczęcie pracy
 
 **Zaktualizowane artykuły**
 
-- [Samouczek: rozszerzanie prostej aplikacji konsolowej c#](../get-started/csharp/tutorial-console-part-2.md) — Dodatki do debugowania dla rozszerzonego samouczka języka c#
+- [Poznaj projekty i rozwiązania](../get-started/tutorial-projects-solutions.md) — zaktualizowany tekst alternatywny & metadane, a także dodanie uwagi dotyczące pustego szablonu rozwiązania
+- [Samouczek: Otwieranie projektu z](../get-started/tutorial-open-project-from-repo.md) notatki dodanej do repozytorium i wyświetlanie linku do nowego środowiska git
 
 ## <a name="ide"></a>IDE
 
 **Nowe artykuły**
 
-- [Użyj dokumentu wyszukiwania programu Visual Studio Search](./visual-studio-search.md) — vs
+- [Praca z kontami usługi GitHub w programie Visual Studio](./work-with-github-accounts.md) — dodano pracę ze stroną usługi GitHub i informacjami o logowaniu do innych stron w witrynie GitHub
+- [Wyodrębnij klasy bazowe](./reference/extract-base-class.md) — Dodano funkcje produktywności dotnet
+- [Metoda wbudowana](./reference/inline-method.md) — dodaliśmy funkcje produktywności dotnet
+- [Ustaw abstrakcyjną klasę](./reference/make-class-abstract.md) — Dodano funkcje produktywności dotnet
+- [Użyj `new()` ](./reference/use-new.md) -Dodano funkcje produktywności dotnet
+- [Używanie dopasowania wzorców](./reference/use-pattern-matching.md) — Dodano funkcje produktywności dotnet
 
-## <a name="install"></a>Zainstaluj
+**Zaktualizowane artykuły**
+
+- [Środowisko Git w programie Visual Studio](./git-with-visual-studio.md)
+  - Zaktualizowany tekst alternatywny & metadanych
+  - Aktualizacje nowej zawartości środowiska git dla 16,8 GA
+- [Co nowego w programie Visual Studio 2019](./whats-new-visual-studio-2019.md)
+  - Zaktualizowany tekst alternatywny & metadanych
+  - Zaktualizowano stronę co nowego w programie Visual Studio 2019 dla 16,8 GA
+- [Nawiązywanie połączenia z projektami w programie Team Explorer](./connect-team-project.md) — Zaktualizowano stronę Team Explorer za pomocą nowej funkcji git & link
+- [Współpraca z wieloma kontami użytkowników](./work-with-multiple-user-accounts.md) — dodano informacje dotyczące logowania do usługi GitHub na innych stronach
+- [Konwencje formatowania języka C++ w narzędziu EditorConfig](./cpp-editorconfig-properties.md)
+  - Prefiks jest cpp_, a nie _CPP_ _ dla ustawień języka C++. editorconfig
+  - Usunięto nieprawidłowy znak w języku C++. editorconfig — przykład
+- [Konwertuj `typeof` na `nameof` ](./reference/convert-typeof-to-nameof.md) dodane funkcje produktywności dotnet
+
+## <a name="install"></a>Instalowanie
 
 **Zaktualizowane artykuły**
 
 - [Numery wersji i daty wydania programu Visual Studio](../install/visual-studio-build-numbers-and-release-dates.md)
-  - Dodawanie danych 16.7.7 i 16,8 w wersji zapoznawczej 6
-  - Dodaj informacje 16,8 w wersji zapoznawczej 5
+  - Dodano dane 16.8.2
+  - Dodano 16.8.1
+  - Zaktualizowane numery kompilacji dla 16,8 GA i więcej
+- [Obrazy programu Visual Studio na platformie Azure](../install/using-visual-studio-vm.md) — zmieniono datę opublikowania i Zaktualizowano drobne wersje poprawek
+- Pakiety [robocze i identyfikatory składników programu Visual Studio](../install/workload-and-component-ids.md) — zaktualizowane dokumenty składników dla 16,8
+- [Visual Studio Build Tools katalog składników](../install/workload-component-id-vs-build-tools.md) — zaktualizowane dokumenty składników dla 16,8
+- [Katalog składników społeczności programu Visual Studio](../install/workload-component-id-vs-community.md) — zaktualizowane dokumenty składników dla 16,8
+- [Visual Studio Enterprise katalog składników](../install/workload-component-id-vs-enterprise.md) — zaktualizowane dokumenty składników dla 16,8
+- [Katalog składników Team Explorer programu Visual Studio](../install/workload-component-id-vs-team-explorer.md) — zaktualizowane dokumenty składników dla 16,8
+- [Katalog składników programu Visual Studio Test Agent](../install/workload-component-id-vs-test-agent.md) — zaktualizowane dokumenty składników dla 16,8
+- [Katalog składników Test Controller programu Visual Studio](../install/workload-component-id-vs-test-controller.md) — zaktualizowane dokumenty składników dla 16,8
+- [Instalowanie i używanie usług Visual Studio i platformy Azure za zaporą lub serwerem proxy](../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md) — dodano brakującą domenę
 
 ## <a name="msbuild"></a>MSBuild
 
+**Nowe artykuły**
+
+- [Change Fales](../msbuild/change-waves.md) -MSBuild: Change fale nowy temat
+
 **Zaktualizowane artykuły**
 
-- [Przewodnik: Korzystanie](../msbuild/walkthrough-using-msbuild.md) z programu MSBuild — Przewodnik po programie MSBuild: Dodawanie autonomicznych kroków instalacji
+- [Funkcje właściwości](../msbuild/property-functions.md) — wersja 16,8
+- [Wspólne elementy projektu MSBuild](../msbuild/common-msbuild-project-items.md) — przywraca zawartość dla elementu InternalsVisibleTo
 
 ## <a name="profiling"></a>Profilowanie
 
 **Zaktualizowane artykuły**
 
-- [Analizowanie użycia pamięci](../profiling/analyze-memory-usage.md)
-  - Aktualizacje użycia pamięci do profilowania — linki i wyjaśnienia
-  - Aktualizacje narzędzia użycie pamięci
-- [Analizowanie użycia pamięci bez debugowania w profilerze wydajności](../profiling/memory-usage-without-debugging2.md)
-  - Aktualizacje użycia pamięci do profilowania — linki i wyjaśnienia
-  - Aktualizacje narzędzia użycie pamięci
-- [Pierwsze spojrzenie na narzędzia profilowania](../profiling/profiling-feature-tour.md)
-  - Aktualizacje użycia pamięci do profilowania — linki i wyjaśnienia
-  - Aktualizacje narzędzia użycie pamięci
-- [Uruchamianie narzędzi profilowania z debugerem lub bez debugera](../profiling/running-profiling-tools-with-or-without-the-debugger.md)
-  - Aktualizacje użycia pamięci do profilowania — linki i wyjaśnienia
-  - Aktualizacje narzędzia użycie pamięci
-- [Analizowanie użycia procesora bez debugowania w programie Profiler wydajności](../profiling/cpu-usage.md) aktualizacje narzędzia użycie pamięci
+- [Mierzenie wydajności aplikacji z wiersza polecenia](../profiling/profile-apps-from-command-line.md) — aktualizowanie profilowania z poziomu dokumentów z wiersza polecenia
 
-## <a name="windows"></a>Windows
+## <a name="test"></a>Testowanie
 
 **Zaktualizowane artykuły**
 
-- [Dokumentacja programu Visual Studio | Microsoft Docs](../windows/index.yml) — aktualizacje centrum systemu Windows
+- [Uruchamianie testów jednostkowych za pomocą Eksploratora testów](../test/run-unit-tests-with-test-explorer.md) — dodano krótką sekcję w formacie XML listy odtwarzania
+- [Izolowanie testowanego kodu za pomocą sfałszowanych przez firmę Microsoft](../test/isolating-code-under-test-with-microsoft-fakes.md) dokumentacji z obsługą platformy .NET Core
+- [Używanie podkładki do izolowania aplikacji do testowania jednostkowego](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md) — zaktualizowana dokumentacja z obsługą platformy .NET Core
 
 ## <a name="xaml-tools"></a>Narzędzia XAML
 
-**Nowe artykuły**
+**Zaktualizowane artykuły**
 
 - [Używanie danych czasu projektowania z projektant XAML w programie Visual Studio](../xaml-tools/xaml-designtime-data.md)
-  - Dodano sekcję rozszerzalności do dokumentów w czasie projektowania XAML
-  - Nowy artykuł języka XAML w czasie projektowania
+  - Zaktualizowano sekcję wymagania dotyczącej 16,8 GA
+  - Zmodyfikowano sekcję wymagań
+  - Aktualizacja 16,8 komentarza i linku do wersji zapoznawczej
 
 ## <a name="community-contributors"></a>Współautorzy społeczności
 
 Następujące osoby współczyniły się do dokumentacji programu Visual Studio w tym okresie. Dziękujemy! Dowiedz się, jak współtworzyć dokumentację programu Visual Studio, postępując zgodnie ze wskazówkami w [przewodniku współautora](/contribute/).
 
-- [bmarshalsea](https://github.com/bmarshalsea) (1)
-- [DavidJohnWilliams](https://github.com/DavidJohnWilliams) -David Jan Williams (1)
-- [JesseTG](https://github.com/JesseTG) -Jesse Talavera-Greenberg (1)
-- [matkoch](https://github.com/matkoch) -Matthias Koch (1)
-- [philipwolfe](https://github.com/philipwolfe) -Philip Wolfe (1)
-- [podsvirov](https://github.com/podsvirov) -Konstantin podsvirov (1)
-- [drryder](https://github.com/drryder) (1)
+- [alexvy86](https://github.com/alexvy86) -Alex Villarreal (1)
+- [andyrosa2](https://github.com/andyrosa2) (1)
+- [b099l3](https://github.com/b099l3) – Iain Kowalski (1)
+- [hyoshioka0128](https://github.com/hyoshioka0128) -Hiroshi Yoshioka (1)
+- [MrCull](https://github.com/MrCull) -Mark (1)

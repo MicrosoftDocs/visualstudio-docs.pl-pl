@@ -1,5 +1,7 @@
 ---
 title: Manifesty wdrożenia dla rozwiązań pakietu Office
+description: Informacje o tym, że manifest wdrożenia jest plikiem XML, który opisuje ustawienia wdrażania rozwiązania pakietu Office i identyfikuje bieżącą wersję aplikacji.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3540420d07bd158b19f0b078f01cfdb37ce18beb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31909d2a6765c357635cd0a8c039132f14b5967d
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547553"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845508"
 ---
 # <a name="deployment-manifests-for-office-solutions"></a>Manifesty wdrożenia dla rozwiązań pakietu Office
   Manifest wdrożenia to plik XML, który opisuje ustawienia wdrażania rozwiązania pakietu Office i identyfikuje bieżącą wersję aplikacji.
@@ -183,6 +185,6 @@ ms.locfileid: "85547553"
 </asmv1:assembly>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md)

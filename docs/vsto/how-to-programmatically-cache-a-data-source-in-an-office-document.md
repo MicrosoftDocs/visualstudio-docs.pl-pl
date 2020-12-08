@@ -1,5 +1,7 @@
 ---
 title: Programowe buforowanie źródła danych w dokumencie pakietu Office
+description: Dowiedz się, jak można programistycznie dodać obiekt danych do pamięci podręcznej danych w dokumencie, wywołując metodę StartCaching elementu hosta.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8ec3a38d109de561e3cba77951764dd8dd9479df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c0b739a7671f19b126b0566dfc8f4775a2c91063
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544771"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845015"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>Instrukcje: programowane buforowanie źródła danych w dokumencie pakietu Office
   Można programowo dodać obiekt danych do pamięci podręcznej danych w dokumencie, wywołując `StartCaching` metodę elementu hosta, taką jak <xref:Microsoft.Office.Tools.Word.Document> , <xref:Microsoft.Office.Tools.Excel.Workbook> , lub <xref:Microsoft.Office.Tools.Excel.Worksheet> . Usuń obiekt danych z pamięci podręcznej danych, wywołując `StopCaching` metodę elementu hosta.
@@ -54,7 +56,7 @@ ms.locfileid: "85544771"
     > [!NOTE]
     > Nie wywołuj `StopCaching` z programu obsługi zdarzeń dla `Shutdown` zdarzenia dokumentu lub arkusza. Przez czas, gdy `Shutdown` zdarzenie jest zgłaszane, zbyt późno na modyfikację pamięci podręcznej danych. Aby uzyskać więcej informacji o `Shutdown` zdarzeniu, zobacz [zdarzenia w projektach pakietu Office](../vsto/events-in-office-projects.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Dane pamięci podręcznej](../vsto/caching-data.md)
 - [Instrukcje: dane z pamięci podręcznej do użycia w trybie offline lub na serwerze](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)

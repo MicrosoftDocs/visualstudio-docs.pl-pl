@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: programowe Dodawanie nagłówków i stopek do dokumentów'
+description: Dowiedz się, jak dodać tekst do nagłówków i stopek w dokumencie przy użyciu właściwości nagłówki i stopek w sekcji.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c6a60f58a116cd01c59145de0fcd29a2f55a787e
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 1abf9c0726a6b4afd1764aec095f129a4fcaf510
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585421"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844521"
 ---
 # <a name="how-to-programmatically-add-headers-and-footers-to-documents"></a>Instrukcje: programowe Dodawanie nagłówków i stopek do dokumentów
   Możesz dodać tekst do nagłówków i stopek w dokumencie przy użyciu <xref:Microsoft.Office.Interop.Word.Section.Headers%2A> właściwości i <xref:Microsoft.Office.Interop.Word.Section.Footers%2A> właściwości <xref:Microsoft.Office.Interop.Word.Section> . Każda sekcja dokumentu zawiera trzy nagłówki i stopki:
@@ -70,7 +72,7 @@ ms.locfileid: "91585421"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#116](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#116)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#116](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#116)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Instrukcje: Programowane tworzenie nowych dokumentów](../vsto/how-to-programmatically-create-new-documents.md)
 - [Instrukcje: Programowane poszerzanie zakresów w dokumentach](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
 - [Instrukcje: programowe przechodzenie w pętli poprzez znalezione elementy w dokumentach](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)

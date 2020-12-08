@@ -1,5 +1,7 @@
 ---
 title: Elementy hosta i formanty hosta — Omówienie
+description: Dowiedz się, że elementy hosta i formanty hosta są typami, które ułatwiają zapewnienie modelu programowania dla rozwiązań pakietu Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -36,12 +38,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c349756eb12fe66800e209bd6a1aad5b8d2337ab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: edc8939f2a9e5f41f81c8176d5268528c273a7ce
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255932"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845573"
 ---
 # <a name="host-items-and-host-controls-overview"></a>Elementy hosta i formanty hosta — Omówienie
   Elementy hosta i formanty hosta są typami, które ułatwiają zapewnienie modelu programowania dla rozwiązań pakietu Office utworzonych przy użyciu narzędzi programistycznych pakietu Office w programie Visual Studio. Elementy hosta i kontrolki hosta współpracują z modelami obiektów Microsoft Office Word i Microsoft Office Excel, które są oparte na modelu COM, podobnie jak w przypadku współpracy z obiektami zarządzanymi, takimi jak formanty Windows Forms.
@@ -145,7 +147,7 @@ ms.locfileid: "71255932"
 - [Instrukcje: Dodawanie kontrolek XMLNodes do dokumentów programu Word](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)
 
 ### <a name="name-host-controls"></a>Nazwy formantów hosta
- Gdy przeciągasz kontrolkę hosta z **przybornika** do dokumentu, formant jest automatycznie nazwany przy użyciu typu kontrolki z liczbą przyrostową na końcu. Na przykład zakładki mają nazwę **Bookmark1**, **bookmark2**i tak dalej. Jeśli używasz natywnej funkcji programu Word lub Excel do dodawania formantu, możesz nadać mu określoną nazwę w momencie utworzenia. Możesz również zmienić nazwy kontrolek, zmieniając wartość właściwości **Nazwa** w oknie **Właściwości** .
+ Gdy przeciągasz kontrolkę hosta z **przybornika** do dokumentu, formant jest automatycznie nazwany przy użyciu typu kontrolki z liczbą przyrostową na końcu. Na przykład zakładki mają nazwę **Bookmark1**, **bookmark2** i tak dalej. Jeśli używasz natywnej funkcji programu Word lub Excel do dodawania formantu, możesz nadać mu określoną nazwę w momencie utworzenia. Możesz również zmienić nazwy kontrolek, zmieniając wartość właściwości **Nazwa** w oknie **Właściwości** .
 
 > [!NOTE]
 > Nie można używać słów zarezerwowanych do nazwy kontrolek hosta. Na przykład jeśli dodasz <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolkę do arkusza i zmienisz nazwę na **system**, wystąpią błędy podczas kompilowania projektu.
@@ -168,7 +170,7 @@ ms.locfileid: "71255932"
 > [!NOTE]
 > Nie należy ustawiać <xref:Microsoft.Office.Interop.Excel._Application.EnableEvents%2A> właściwości <xref:Microsoft.Office.Interop.Excel.Application> obiektu w programie Excel na **wartość false**. Ustawienie dla tej właściwości **wartości false** uniemożliwia programowi Excel podnoszenie jakichkolwiek zdarzeń, w tym zdarzeń kontrolek hosta.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Dodatki narzędzi VSTO programu](../vsto/programming-vsto-add-ins.md)
 - [Dostosowywanie na poziomie dokumentu programu](../vsto/programming-document-level-customizations.md)

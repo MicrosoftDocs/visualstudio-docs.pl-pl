@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Dodawanie kontrolek XMLMappedRange do arkuszy'
+description: Dowiedz się, że podczas mapowania elementu XML do komórki w Microsoft Office Excel program Visual Studio automatycznie doda do arkusza formant XmlMappedRange.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1d69e705e8f537ba3636422ad6883a7633e03322
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e807a5673f27da6a852fd2c83347d1348f1f6fd
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544888"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844416"
 ---
 # <a name="how-to-add-xmlmappedrange-controls-to-worksheets"></a>Instrukcje: Dodawanie kontrolek XMLMappedRange do arkuszy
   Po zmapowaniu elementu XML do komórki w Microsoft Office Excel program Visual Studio automatycznie dodaje <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> kontrolkę do arkusza.
@@ -60,7 +62,7 @@ ms.locfileid: "85544888"
     > [!NOTE]
     > Jeśli przeciągniesz element nadrzędny z okienka zadań **Źródło XML** , <xref:Microsoft.Office.Tools.Excel.ListObject> zostanie utworzony formant.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [XmlMappedRange — formant](../vsto/xmlmappedrange-control.md)
 - [Automatyzowanie programu Excel za pomocą obiektów rozszerzonych](../vsto/automating-excel-by-using-extended-objects.md)
 - [Elementy hosta i formanty hosta — Omówienie](../vsto/host-items-and-host-controls-overview.md)

@@ -1,5 +1,7 @@
 ---
 title: Architektura dostosowań na poziomie dokumentu
+description: Dowiedz się więcej o aspektach dostosowania na poziomie dokumentu, w tym składników dostosowywania oraz o sposobie działania dostosowań z aplikacjami Microsoft Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f5028f5a9b16ecfc2461c0d29cbedb44be70a64c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a522446f9109d996088dff9389f267ef5ff39447
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68926559"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845964"
 ---
 # <a name="architecture-of-document-level-customizations"></a>Architektura dostosowań na poziomie dokumentu
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] obejmuje projekty służące do tworzenia dostosowań na poziomie dokumentu dla programów Microsoft Office Word i Microsoft Office Excel. W tym temacie opisano następujące aspekty dostosowywania na poziomie dokumentu:
@@ -91,11 +93,11 @@ ms.locfileid: "68926559"
 ### <a name="support-for-word-documents-that-have-xml-file-name-extensions"></a>Obsługa dokumentów programu Word z rozszerzeniami nazw plików XML
  Szablony projektów na poziomie dokumentu nie umożliwiają tworzenia projektów opartych na następujących formatach plików:
 
-- Dokument XML programu Word (* \* XML*).
+- Dokument XML programu Word (*\* XML*).
 
-- Dokument XML programu Word 2003 (* \* XML*).
+- Dokument XML programu Word 2003 (*\* XML*).
 
-  Jeśli chcesz, aby użytkownicy końcowi korzystali z dostosowań w tych formatach plików, skompiluj i Wdróż dostosowanie, które używa jednego z obsługiwanych formatów plików określonych w powyższej tabeli. Po zainstalowaniu dostosowania użytkownicy końcowi mogą zapisać dokument w formacie Word XML Document (* \* XML*) lub Word 2003 XML Document Format (* \* XML*), a dostosowanie będzie nadal działało zgodnie z oczekiwaniami.
+  Jeśli chcesz, aby użytkownicy końcowi korzystali z dostosowań w tych formatach plików, skompiluj i Wdróż dostosowanie, które używa jednego z obsługiwanych formatów plików określonych w powyższej tabeli. Po zainstalowaniu dostosowania użytkownicy końcowi mogą zapisać dokument w formacie Word XML Document (*\* XML*) lub Word 2003 XML Document Format (*\* XML*), a dostosowanie będzie nadal działało zgodnie z oczekiwaniami.
 
 ## <a name="components-of-customizations"></a><a name="Components"></a> Składniki dostosowań
  Głównymi składnikami dostosowania są dokumenty i zestawy. Oprócz tych składników istnieje kilka innych części, które odgrywają ważną rolę w sposobie odnajdywania i pobierania przez aplikacje Microsoft Office aplikacji.
@@ -141,7 +143,7 @@ ms.locfileid: "68926559"
 
 9. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]Wywołuje program obsługi zdarzeń **uruchamiania** w zestawie dostosowywania. Aby uzyskać więcej informacji, zobacz [zdarzenia w projektach pakietu Office](../vsto/events-in-office-projects.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Architektura rozwiązań pakietu Office w programie Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 - [Architektura dodatków narzędzi VSTO](../vsto/architecture-of-vsto-add-ins.md)
 - [Visual Studio Tools dla środowiska uruchomieniowego pakietu Office — omówienie](../vsto/visual-studio-tools-for-office-runtime-overview.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Konfigurowanie komputera do opracowywania rozwiązań pakietu Office'
+description: Dowiedz się, jak skonfigurować komputer deweloperski, aby można było używać narzędzi deweloperskich Microsoft Office w programie Visual Studio.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 93c8287b0b2234c45056829ba78d993658b0428d
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: d6504ac9682c4cd4e7691c651f1ee5c2b3818bf2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585500"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844312"
 ---
 # <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>Instrukcje: Konfigurowanie komputera do opracowywania rozwiązań pakietu Office
   Aby skonfigurować komputer deweloperski w taki sposób, aby można było użyć Microsoft Office narzędzia deweloperskie w programie Visual Studio, postępuj zgodnie z instrukcjami podanymi w tym temacie. Aby wykonać te kroki, musisz mieć uprawnienia administracyjne na komputerze deweloperskim.
@@ -34,7 +36,7 @@ ms.locfileid: "91585500"
 
 3. Jeśli masz angielską wersję programu Visual Studio, ale używasz ustawień innych niż angielskie dla systemu Windows, możesz zainstalować [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] pakiet językowy, aby zobaczyć [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] komunikaty w tym samym języku co system Windows. Wersje inne niż angielskie programu Visual Studio automatycznie instalują pakiet językowy. Pakiet językowy jest dostępny w [Centrum pobierania Microsoft](https://www.microsoft.com/download/details.aspx?id=54246).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Wprowadzenie &#40;Programowanie Office w programie Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Instrukcje: Instalowanie pakietu redystrybucyjnego środowiska uruchomieniowego Office Visual Studio Tools](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)

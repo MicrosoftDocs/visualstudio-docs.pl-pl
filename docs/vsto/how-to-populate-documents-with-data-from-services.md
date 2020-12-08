@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: zapełnianie dokumentów danymi z usług'
+description: Dowiedz się, jak używać danych z usług w rozwiązaniu oraz jak można użyć formantów Windows Forms, aby wyświetlić dane w dokumencie.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 01e2a83f464576d1ca780daa17c0d9478f0caa14
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b4d8fb377896762672574c6ef5ff15b4e12b9e59
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547150"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845833"
 ---
 # <a name="how-to-populate-documents-with-data-from-services"></a>Instrukcje: zapełnianie dokumentów danymi z usług
 
@@ -49,7 +51,7 @@ Poniższy przykład pokazuje, jak dodać formanty powiązane z danymi do dokumen
 
 Po uruchomieniu projektu kontrolki wyświetlają pierwszy rekord w źródle danych. Możesz włączyć przewijanie rekordów przez obsługę zdarzeń walutowych przy użyciu obiektów w <xref:System.Windows.Forms.BindingSource> .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Powiązywanie danych z kontrolkami w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Dodawanie nowych źródeł danych](../data-tools/add-new-data-sources.md)

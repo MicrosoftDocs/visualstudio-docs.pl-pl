@@ -1,5 +1,7 @@
 ---
 title: Wysyłanie wymaganych zdarzeń | Microsoft Docs
+description: Informacje o uporządkowanych zdarzeniach, które są wymagane podczas tworzenia aparatu debugowania i dołączania do programu w programie Visual Studio Debug.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc83b47e53607fe1111ececbbf892c96f7bbb639
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 49c85e3d371bfd729d55e9d17a6c8de61924e35f
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712995"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845313"
 ---
 # <a name="send-the-required-events"></a>Wyślij wymagane zdarzenia
 Użyj tej procedury, aby wysłać wymagane zdarzenia.
@@ -36,5 +38,5 @@ Użyj tej procedury, aby wysłać wymagane zdarzenia.
 > [!NOTE]
 > W wielu językach są używane globalne inicjatory lub zewnętrzne, wstępnie skompilowane funkcje (z biblioteki CRT lub _Main) na początku ich kodu. Jeśli język debugowania programu zawiera jeden z tych typów elementów przed początkowym punktem wejścia, ten kod jest uruchamiany, a zdarzenie punktu wejścia jest wysyłane, gdy punkt wejścia użytkownika, taki jak **Main** lub `WinMain` , zostanie osiągnięty.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Włączanie debugowania programu](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

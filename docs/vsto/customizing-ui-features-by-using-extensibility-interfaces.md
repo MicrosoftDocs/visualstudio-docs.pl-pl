@@ -1,5 +1,7 @@
 ---
 title: Dostosowywanie funkcji interfejsu użytkownika przy użyciu interfejsów rozszerzalności
+description: Dowiedz się, że narzędzia programistyczne pakietu Office w programie Visual Studio zapewniają interfejsy rozszerzalności, które ułatwiają Dostosowywanie funkcji interfejsu użytkownika.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -21,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 07b62903388012dac3459c86011e349f8053762c
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 436f426eee6c90476997f416bab907c8e17f94cc
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583843"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845625"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>Dostosowywanie funkcji interfejsu użytkownika przy użyciu interfejsów rozszerzalności
   Narzędzia programistyczne pakietu Office w programie Visual Studio udostępniają klasy i projektanci, którzy obsługują wiele szczegółów implementacji, gdy są używane do tworzenia niestandardowych okienek zadań, dostosowań Wstążki i regionów formularzy programu Outlook w dodatku VSTO. Można jednak również zaimplementować *interfejs rozszerzalności* dla każdej funkcji, jeśli masz specjalne wymagania.
@@ -77,7 +79,7 @@ ms.locfileid: "91583843"
  [!code-vb[Trin_SimpleExtensibilityInterface#2](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#2)]
  [!code-csharp[Trin_SimpleExtensibilityInterface#2](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#2)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Przykłady i przewodniki dotyczące programowania pakietu Office](../vsto/office-development-samples-and-walkthroughs.md)
 - [Dodatki narzędzi VSTO programu](../vsto/programming-vsto-add-ins.md)
 - [Opracowywanie rozwiązań pakietu Office](../vsto/developing-office-solutions.md)

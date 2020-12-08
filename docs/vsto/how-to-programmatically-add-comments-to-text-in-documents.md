@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Programowane dodawanie komentarzy do tekstu w dokumentach'
+description: Programowe Dodawanie komentarzy do tekstu w dokumentach. Właściwość Comment klasy Document dodaje komentarz do zakresu tekstu w dokumencie programu Microsoft Word.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 04d4ffdc747823a3df9a884b054b39ad484e09a4
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 2a39c02cfb7b170fd923e8e7409a0f4215d67583
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583791"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844598"
 ---
 # <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>Instrukcje: Programowane dodawanie komentarzy do tekstu w dokumentach
   Właściwość Comment klasy Document dodaje komentarz do zakresu tekstu w dokumencie programu Microsoft Office Word.
@@ -47,6 +49,6 @@ ms.locfileid: "91583791"
 ## <a name="robust-programming"></a>Niezawodne programowanie
  Aby zmienić inicjały użytkownika, które program Word dodaje do komentarzy, użyj <xref:Microsoft.Office.Interop.Word._Application.UserInitials%2A> właściwości.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Instrukcje: programowe usuwanie wszystkich komentarzy z dokumentów](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)
 - [Element hosta dokumentu](../vsto/document-host-item.md)

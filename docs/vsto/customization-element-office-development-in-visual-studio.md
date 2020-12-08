@@ -1,7 +1,8 @@
 ---
 title: '&lt;&gt;element dostosowania (Programowanie Office w Visual Studio)'
+description: Dowiedz się, w jaki sposób element Customization przestrzeni nazw vstov4 opisuje określone rozwiązanie pakietu Office.
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1239c6749f25bf4bce7a1f5cc89a2a8430c98a4d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0f50b441393e9d07dcd0b409248f199484022654
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544875"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844117"
 ---
 # <a name="ltcustomizationgt-element-office-development-in-visual-studio"></a>&lt;&gt;element dostosowania (Programowanie Office w Visual Studio)
   `customization`Element `vstov4` przestrzeni nazw opisuje określone rozwiązanie pakietu Office. Elementy podrzędne są różne w przypadku dostosowań na poziomie dokumentu i dodatków narzędzi VSTO.
@@ -61,7 +62,7 @@ ms.locfileid: "85544875"
 |---------------|-----------------|
 |`id`|Wymagane dla wdrożenia z obsługą kilku projektów. `id`Element jednoznacznie identyfikuje rozwiązanie pakietu Office.|
 
-### <a name="document-level-customizations"></a>Dostosowania na poziomie dokumentu
+### <a name="document-level-customizations"></a>Document-Level dostosowania
  `customization`Element ma następujący element podrzędny.
 
 #### <a name="document"></a>dokument
@@ -119,7 +120,7 @@ ms.locfileid: "85544875"
 </vstov4:customization>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md)
 - [Manifesty wdrożenia dla rozwiązań pakietu Office](../vsto/deployment-manifests-for-office-solutions.md)

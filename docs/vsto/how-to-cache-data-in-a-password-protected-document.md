@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: buforowanie danych w dokumencie chronionym hasłem'
+description: Dowiedz się, że jeśli dodasz dane do pamięci podręcznej danych w dokumencie lub skoroszycie chronionym hasłem, możesz zapisać zmiany w pamięci podręcznej, zastępując dwie metody w projekcie.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 12b04b985d54161343d26cdd32178b67bd6e6b91
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2a11b70da4bdd2500f70d2b45f025340af21ea94
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547241"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846002"
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>Instrukcje: buforowanie danych w dokumencie chronionym hasłem
   W przypadku dodania danych do pamięci podręcznej danych w dokumencie lub skoroszycie chronionym hasłem zmiany w buforowanych danych nie są zapisywane automatycznie. Zmiany w buforowanych danych można zapisać przez zastępowanie dwóch metod w projekcie.
@@ -73,7 +75,7 @@ ms.locfileid: "85547241"
 ### <a name="compile-the-code"></a>Kompiluj kod
  Dodaj ten kod do `ThisWorkbook` klasy w projekcie. W tym kodzie założono, że hasło jest przechowywane w polu o nazwie `securelyStoredPassword` .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dane pamięci podręcznej](../vsto/caching-data.md)
 - [Instrukcje: dane z pamięci podręcznej do użycia w trybie offline lub na serwerze](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)
 - [Instrukcje: programowane buforowanie źródła danych w dokumencie pakietu Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)

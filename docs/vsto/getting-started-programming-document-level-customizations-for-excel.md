@@ -1,5 +1,7 @@
 ---
 title: 'Excel: wprowadzenie Programowanie dostosowań na poziomie dokumentu'
+description: Dowiedz się, co musisz wiedzieć, aby rozpocząć tworzenie dostosowań na poziomie dokumentu dla programu Microsoft Office Excel przy użyciu programu Visual Studio.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cb3b27a4020e2b8947ca0868bb46b5945b5d89de
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 1fb048fd015126e5438a007be1950cddffbac9e1
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585683"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846041"
 ---
 # <a name="get-started-programming-document-level-customizations-for-excel"></a>Wprowadzenie do programowania dostosowań na poziomie dokumentu dla programu Excel
   Jeśli dopiero zaczynasz tworzyć dostosowania na poziomie dokumentu dla programu Microsoft Office Excel przy użyciu programu Visual Studio, Oto co należy wiedzieć.
@@ -64,7 +66,7 @@ ms.locfileid: "91585683"
 
  Aby zapoznać się z listą tematów, które przeprowadzą Cię przez niektóre typowe zadania w projektach programu Excel, zobacz [typowe zadania w programowaniu pakietu Office](../vsto/common-tasks-in-office-programming.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Instrukcje: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Dostosowywanie na poziomie dokumentu programu](../vsto/programming-document-level-customizations.md)
 - [Rozwiązania programu Excel](../vsto/excel-solutions.md)

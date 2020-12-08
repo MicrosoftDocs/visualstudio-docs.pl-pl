@@ -1,5 +1,7 @@
 ---
 title: Wprowadzenie do programowania dodatków narzędzi VSTO
+description: Dowiedz się, jak używać dodatków VSTO do automatyzowania Microsoft Office aplikacji, rozszerzenia funkcji aplikacji i dostosowywania interfejsu użytkownika aplikacji.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39cf3e8d59a2ced26f878da979fa87fc663b5bab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be4e129de68d2a7f7690ba24acc92fb09400cfb2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71253591"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845118"
 ---
 # <a name="get-started-programming-vsto-add-ins"></a>Wprowadzenie do programowania dodatków narzędzi VSTO
   Dodatków VSTO można używać do automatyzowania Microsoft Office aplikacji, rozszerzenia funkcji aplikacji i dostosowywania interfejsu użytkownika aplikacji. Aby uzyskać informacje na temat sposobu, w jaki Dodatki VSTO są porównywane z innymi typami rozwiązań pakietu Office, które można utworzyć przy użyciu programu Visual Studio, zobacz [Omówienie rozwiązań programistycznych dla pakietu office &#40;narzędzi VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -74,7 +76,7 @@ ms.locfileid: "71253591"
 
 - [Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)
 
-- [Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)
+- [Przewodnik: Tworzenie pierwszego Add-In narzędzia VSTO dla programu Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)
 
 - [Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)
 
@@ -86,7 +88,7 @@ ms.locfileid: "71253591"
 
   Aby zapoznać się z listą tematów, które przeprowadzą Cię przez niektóre typowe zadania w projektach pakietu Office, zobacz [typowe zadania w programowaniu pakietu Office](../vsto/common-tasks-in-office-programming.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Instrukcje: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Wprowadzenie &#40;Programowanie Office w programie Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Pisanie kodu w rozwiązaniach pakietu Office](../vsto/writing-code-in-office-solutions.md)

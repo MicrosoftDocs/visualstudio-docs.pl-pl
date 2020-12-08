@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: dołączanie rozszerzeń kodu zarządzanego do dokumentów'
+description: Dowiedz się, jak dołączyć zestaw dostosowywania do Microsoft Office istniejącego dokumentu programu Word lub Microsoft Office skoroszytu programu Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f44b153ac7d55704ba649a7dc09860518a5e76b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1929daaa82dbfec6f58513bf94eefe01f9520601
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547527"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844391"
 ---
 # <a name="how-to-attach-managed-code-extensions-to-documents"></a>Instrukcje: dołączanie rozszerzeń kodu zarządzanego do dokumentów
   Zestaw dostosowania można dołączyć do istniejącego dokumentu programu Microsoft Office Word lub Microsoft Office skoroszytu programu Excel. Dokument lub skoroszyt może być w dowolnym formacie pliku, który jest obsługiwany przez projekty Microsoft Office i narzędzia programistyczne w programie Visual Studio. Aby uzyskać więcej informacji, zobacz [Architektura dostosowywania na poziomie dokumentu](../vsto/architecture-of-document-level-customizations.md).
@@ -48,7 +50,7 @@ ms.locfileid: "85547527"
 
 4. Skompiluj projekt i uruchom aplikację na komputerze, na którym chcesz dołączyć dostosowanie. Na komputerze musi być zainstalowany program Visual Studio 2010 Tools for Office Runtime.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Zarządzanie dokumentami na serwerze za pomocą klasy ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)
 - [Instrukcje: usuwanie rozszerzeń kodu zarządzanego z dokumentów](../vsto/how-to-remove-managed-code-extensions-from-documents.md)
 - [Aplikacje i manifesty wdrożenia w rozwiązaniach pakietu Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)

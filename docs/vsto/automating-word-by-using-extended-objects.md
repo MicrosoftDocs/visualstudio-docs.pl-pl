@@ -1,5 +1,7 @@
 ---
 title: Automatyzowanie programu Word za pomocą obiektów rozszerzonych
+description: Dowiedz się, jak używać elementów hosta i kontrolek hosta w rozwiązaniach podczas opracowywania rozwiązań programu Word w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -20,15 +22,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 083fe8cdd3bf9d0e4de4809aacfb78b537e4ed8e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 39ac9d50d0f75f595568c66b02bda1c5ed46a3d6
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255534"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844455"
 ---
 # <a name="automate-word-by-using-extended-objects"></a>Automatyzowanie programu Word za pomocą obiektów rozszerzonych
-  Podczas opracowywania rozwiązań programu Word w programie Visual Studio można używać *elementów hosta* i *kontrolek hosta*w swoich rozwiązaniach. Są to obiekty, które rozszerzają niektóre często używane obiekty w modelu obiektów programu Word (czyli model obiektów, który jest udostępniany przez podstawowy zestaw międzyoperacyjny dla programu Word), taki <xref:Microsoft.Office.Interop.Word.Document> jak <xref:Microsoft.Office.Interop.Word.ContentControl> obiekty i. Obiekty rozszerzone zachowują się jak obiekty programu Word, na których się opierają, ale dodają do obiektów dodatkowe zdarzenia i możliwości powiązania danych.
+  Podczas opracowywania rozwiązań programu Word w programie Visual Studio można używać *elementów hosta* i *kontrolek hosta* w swoich rozwiązaniach. Są to obiekty, które rozszerzają niektóre często używane obiekty w modelu obiektów programu Word (czyli model obiektów, który jest udostępniany przez podstawowy zestaw międzyoperacyjny dla programu Word), taki <xref:Microsoft.Office.Interop.Word.Document> jak <xref:Microsoft.Office.Interop.Word.ContentControl> obiekty i. Obiekty rozszerzone zachowują się jak obiekty programu Word, na których się opierają, ale dodają do obiektów dodatkowe zdarzenia i możliwości powiązania danych.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
@@ -54,7 +56,7 @@ ms.locfileid: "71255534"
 
 - [Formant XMLNodes](../vsto/xmlnodes-control.md)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Instrukcje: Dodawanie kontrolek zawartości do dokumentów programu Word](../vsto/how-to-add-content-controls-to-word-documents.md)
 - [Instrukcje: Dodawanie kontrolek zakładek do dokumentów programu Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
 - [Instrukcje: Dodawanie formantów XMLNode do dokumentów programu Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)

@@ -1,5 +1,7 @@
 ---
 title: Przegląd okienka Akcje
+description: Dowiedz się, jak okienko akcje to okienko zadań akcje dostosowywalne, które jest dołączone do określonego Microsoft Office dokumentu programu Word lub skoroszytu programu Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 82bf3ac9515effaa1053a011085849f0afea67f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d03ba8968b08fb07eb2cc9c17839af57cf06eca
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986310"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844832"
 ---
 # <a name="actions-pane-overview"></a>Przegląd okienka Akcje
   Okienko akcji to dostosowywalne okienko zadań **Akcje dokumentu** , które jest dołączone do określonego Microsoft Office dokumentu programu Word Microsoft Office lub skoroszytu programu Excel. Okienko akcje jest hostowane wewnątrz okienka zadań pakietu Office wraz z innymi wbudowanymi okienkami zadań, takimi jak okienko zadań **Źródło XML** w programie Excel lub w okienku zadania **Style i formatowanie** w programie Word. Aby zaprojektować interfejs użytkownika okienka akcji, można użyć formantów Windows Forms lub formantów WPF.
@@ -148,7 +150,7 @@ ms.locfileid: "72986310"
  [!code-csharp[Trin_VstcoreActionsPaneWord#101](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#101)]
  [!code-vb[Trin_VstcoreActionsPaneWord#101](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#101)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Korzystanie z formantów WPF w rozwiązaniach pakietu Office](../vsto/using-wpf-controls-in-office-solutions.md)
 - [Dostosowywanie interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md)
 - [Globalny dostęp do obiektów w projektach pakietu Office](../vsto/global-access-to-objects-in-office-projects.md)

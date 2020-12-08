@@ -1,5 +1,7 @@
 ---
 title: Dodawanie kontrolek do dokumentów pakietu Office w czasie wykonywania
+description: Dowiedz się, jak dodać kontrolki do Microsoft Office dokumentu programu Word i Microsoft Office skoroszytu programu Excel w czasie wykonywania.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -22,12 +24,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 44bf1de5d550a264a63ba7293fe1bdc0c9630aee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e971556605a120b4ef475f434390c6dcf7b17938
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986323"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844845"
 ---
 # <a name="add-controls-to-office-documents-at-run-time"></a>Dodawanie kontrolek do dokumentów pakietu Office w czasie wykonywania
   Możesz dodać kontrolki do Microsoft Office dokumentu programu Word i Microsoft Office skoroszytu programu Excel w czasie wykonywania. Można je również usunąć w czasie wykonywania. Kontrolki dodawane lub usuwane w czasie wykonywania są nazywane *kontrolkami dynamicznymi*.
@@ -54,7 +56,7 @@ ms.locfileid: "72986323"
 - W projekcie dodatku VSTO dla programu Excel lub Word Użyj `Controls` właściwości <xref:Microsoft.Office.Tools.Excel.Worksheet> lub <xref:Microsoft.Office.Tools.Word.Document> , która jest generowana w czasie wykonywania. Aby uzyskać więcej informacji na temat generowania tych obiektów w czasie wykonywania, zobacz sekcję [rozszerzając dokumenty programu Word i skoroszyty programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
 ### <a name="add-controls"></a>Dodawanie kontrolek
- <xref:Microsoft.Office.Tools.Excel.ControlCollection>Typy i <xref:Microsoft.Office.Tools.Word.ControlCollection> zawierają metody pomocnika, których można użyć do dodawania formantów hosta i wspólnych formantów Windows Forms do dokumentów i arkuszy. Każda nazwa metody ma `Add` *klasę kontrolki*format, gdzie *Klasa sterowania* jest nazwą klasy kontrolki, która ma zostać dodana. Na przykład, aby dodać <xref:Microsoft.Office.Tools.Excel.NamedRange> formant do dokumentu, użyj <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddNamedRange%2A> metody.
+ <xref:Microsoft.Office.Tools.Excel.ControlCollection>Typy i <xref:Microsoft.Office.Tools.Word.ControlCollection> zawierają metody pomocnika, których można użyć do dodawania formantów hosta i wspólnych formantów Windows Forms do dokumentów i arkuszy. Każda nazwa metody ma `Add` *klasę kontrolki* format, gdzie *Klasa sterowania* jest nazwą klasy kontrolki, która ma zostać dodana. Na przykład, aby dodać <xref:Microsoft.Office.Tools.Excel.NamedRange> formant do dokumentu, użyj <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddNamedRange%2A> metody.
 
  Poniższy przykład kodu dodaje <xref:Microsoft.Office.Tools.Excel.NamedRange> do `Sheet1` w projekcie na poziomie dokumentu dla programu Excel.
 
@@ -137,7 +139,7 @@ Po zapisaniu i zamknięciu dokumentu wszystkie dynamicznie utworzone formanty ho
   [!code-vb[Trin_VstcoreProgrammingControlsExcel#3](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#3)]
   [!code-csharp[Trin_VstcoreProgrammingControlsExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#3)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Formanty w dokumentach pakietu Office](../vsto/controls-on-office-documents.md)
 - [Utrwalanie formantów dynamicznych w dokumentach pakietu Office](../vsto/persisting-dynamic-controls-in-office-documents.md)
 - [Instrukcje: Dodawanie formantów ListObject do arkuszy](../vsto/how-to-add-listobject-controls-to-worksheets.md)

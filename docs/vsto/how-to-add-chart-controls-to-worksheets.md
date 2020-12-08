@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Dodawanie kontrolek wykresu do arkuszy'
+description: Dowiedz się, jak dodać kontrolki wykresu do Microsoft Office arkusza programu Excel w czasie projektowania i w czasie wykonywania w przypadku dostosowań na poziomie dokumentu.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fdb1f738fe6e68f7470ae65e6ce08b2f3be0ef6d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e48b8cfbcf4ee1c7340aef4cd59e09698f89412
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546240"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845469"
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>Instrukcje: Dodawanie kontrolek wykresu do arkuszy
   Możesz dodać <xref:Microsoft.Office.Tools.Excel.Chart> kontrolki do Microsoft Office arkusza programu Excel w czasie projektowania i w czasie wykonywania w przypadku dostosowań na poziomie dokumentu. Możesz również dodać <xref:Microsoft.Office.Tools.Excel.Chart> kontrolki w czasie wykonywania w dodatkach narzędzi VSTO.
@@ -82,7 +84,7 @@ ms.locfileid: "85546240"
 
 - Dane do wykresu, przechowywane w zakresie od A5 do D8 w arkuszu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Rozwiń dokumenty programu Word i skoroszyty programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Formanty w dokumentach pakietu Office](../vsto/controls-on-office-documents.md)
 - [Kontrolka wykresu](../vsto/chart-control.md)

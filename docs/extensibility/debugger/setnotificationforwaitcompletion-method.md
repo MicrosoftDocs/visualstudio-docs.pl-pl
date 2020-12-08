@@ -1,5 +1,7 @@
 ---
 title: SetNotificationForWaitCompletion — Metoda | Microsoft Docs
+description: Dowiedz się, jak debuger używa bitu stanu, aby ułatwić wyjście z metody asynchronicznej do zadań w stylu obietnicy.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 226ac41c8e3b7427ac3b9aba7bea08dbb7329d16
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 80904e95c1561dd20ed2a6cc9ad561e6c18ee93a
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712873"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845222"
 ---
 # <a name="setnotificationforwaitcompletion-method"></a>SetNotificationForWaitCompletion, metoda
 Ustawia lub czyści bit stanu TASK_STATE_WAIT_COMPLETION_NOTIFICATION.
@@ -42,5 +44,5 @@ internal void SetNotificationForWaitCompletion(bool enabled)
 
 ## <a name="requirements"></a>Wymagania
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Klasa zadania](../../extensibility/debugger/task-class-internal-members.md)

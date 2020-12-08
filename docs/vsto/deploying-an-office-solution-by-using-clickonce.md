@@ -1,5 +1,7 @@
 ---
 title: Wdrażanie rozwiązania pakietu Office przy użyciu technologii ClickOnce
+description: Jeśli używasz technologii ClickOnce, Dowiedz się, jak wdrożyć rozwiązanie pakietu Office w mniejszej liczbie kroków. Podczas publikowania aktualizacji rozwiązanie automatycznie je wykryje i zainstaluje.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bb495b30950105d1ff19a1f4fb13da1ee624b228
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: d808348528a64cc184c7a6c50359c057b2325a75
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809352"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845651"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Wdrażanie rozwiązania pakietu Office przy użyciu technologii ClickOnce
   Jeśli używasz technologii ClickOnce, możesz wdrożyć rozwiązanie pakietu Office w mniejszej liczbie kroków. Podczas publikowania aktualizacji rozwiązanie automatycznie je wykryje i zainstaluje. Niedogodność polega na tym, że w technologii ClickOnce rozwiązanie trzeba zainstalować osobno dla każdego użytkownika komputera. W związku z tym należy rozważyć użycie Instalator Windows (*. msi*), jeśli na tym samym komputerze zostanie uruchomione rozwiązanie na jednym z nich.
@@ -50,11 +52,11 @@ ms.locfileid: "90809352"
 
 #### <a name="to-publish-the-solution"></a>Aby opublikować rozwiązanie
 
-1. W **Eksplorator rozwiązań**wybierz węzeł, który jest nazwany dla projektu.
+1. W **Eksplorator rozwiązań** wybierz węzeł, który jest nazwany dla projektu.
 
 2. Na pasku menu wybierz **projekt**, **Właściwości** *ProjectName* .
 
-3. W **projektancie projektu**wybierz kartę **Publikowanie** , która przedstawia poniższą ilustrację.
+3. W **projektancie projektu** wybierz kartę **Publikowanie** , która przedstawia poniższą ilustrację.
 
     ![Karta publikowanie projektanta projektu](../vsto/media/vsto-publishtab.png "Karta publikowanie projektanta projektu")
 
@@ -64,9 +66,9 @@ ms.locfileid: "90809352"
 
    - Ścieżka lokalna (na przykład *C:\FolderName\FolderName*).
 
-   - Ścieżka UNC (Uniform Naming Convention) do folderu w sieci (na przykład * \\ \ServerName\FolderName*).
+   - Ścieżka UNC (Uniform Naming Convention) do folderu w sieci (na przykład *\\ \ServerName\FolderName*).
 
-   - Ścieżka względna (na przykład *PublishFolder \\ *, która jest folderem, w którym projekt jest domyślnie publikowany).
+   - Ścieżka względna (na przykład *PublishFolder \\*, która jest folderem, w którym projekt jest domyślnie publikowany).
 
 5. W polu **adres URL folderu instalacyjnego** wprowadź w pełni kwalifikowaną ścieżkę lokalizacji, w której użytkownicy końcowi znajdą Twoje rozwiązanie.
 
@@ -85,7 +87,7 @@ ms.locfileid: "90809352"
     > [!NOTE]
     > Domyślnie to pole wyboru nie jest wyświetlane. Aby było widoczne, należy utworzyć pakiet programu inicjującego. Zobacz [Tworzenie pakietu programu inicjującego dla dodatku VSTO dla pakietu Office 2013 przy użyciu programu Visual Studio 2012](create-vsto-add-ins-for-office-by-using-visual-studio.md).
 
-10. W obszarze **Określ lokalizację instalacji dla wymagań wstępnych**wybierz jedną z opcji, która zostanie wyświetlona, a następnie wybierz przycisk **OK** .
+10. W obszarze **Określ lokalizację instalacji dla wymagań wstępnych** wybierz jedną z opcji, która zostanie wyświetlona, a następnie wybierz przycisk **OK** .
 
      W tabeli poniżej opisano wszystkie opcje.
 
@@ -202,7 +204,7 @@ ms.locfileid: "90809352"
 
 4. W polu **Nazwa** wprowadź **FileCopyPDA**, a następnie wybierz przycisk **OK** .
 
-5. W **Eksplorator rozwiązań**wybierz projekt **FileCopyPDA** .
+5. W **Eksplorator rozwiązań** wybierz projekt **FileCopyPDA** .
 
 6. Na pasku menu wybierz kolejno pozycje **projekt**  >  **Dodaj odwołanie**.
 
@@ -221,7 +223,7 @@ ms.locfileid: "90809352"
 
 ### <a name="build-and-publish-the-solution"></a>Kompilowanie i publikowanie rozwiązania
 
-1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu **FileCopyPDA** , a następnie wybierz polecenie **Kompiluj**.
+1. W **Eksplorator rozwiązań** Otwórz menu skrótów dla projektu **FileCopyPDA** , a następnie wybierz polecenie **Kompiluj**.
 
 2. Otwórz menu skrótów dla projektu **ExcelWorkbook** , a następnie wybierz polecenie **Kompiluj**.
 
@@ -229,13 +231,13 @@ ms.locfileid: "90809352"
 
 4. W oknie dialogowym **Dodaj odwołanie** wybierz kartę **projekty** , wybierz pozycję **FileCopyPDA**, a następnie wybierz przycisk **OK** .
 
-5. W **Eksplorator rozwiązań**wybierz projekt **ExcelWorkbook** .
+5. W **Eksplorator rozwiązań** wybierz projekt **ExcelWorkbook** .
 
 6. Na pasku menu wybierz **projekt**  >  **Nowy folder**.
 
 7. Wprowadź **dane**, a następnie wybierz klawisz **Enter** .
 
-8. W **Eksplorator rozwiązań**wybierz folder **dane** .
+8. W **Eksplorator rozwiązań** wybierz folder **dane** .
 
 9. Na pasku menu wybierz **projekt**  >  **Dodaj istniejący element**.
 
@@ -342,18 +344,18 @@ ms.locfileid: "90809352"
 
  *%CommonProgramFiles%\Microsoft shared\VSTO\10.0\VSTOInstaller.exe*
 
- Jeśli narzędzie nie znajduje się w tej lokalizacji, można znaleźć ścieżkę do tego narzędzia przy HKEY_LOCAL_MACHINE użyciu klucza rejestru **\Software\microsoft\vsto Runtime Setup\v4\InstallerPath** lub **HKEY_LOCAL_MACHINE \software\wow6432node\microsoft\vsto Runtime Setup\v4\InstallerPath** .
+ Jeśli narzędzie nie znajduje się w tej lokalizacji, możesz użyć klucza rejestru **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSTO Runtime Setup\v4\InstallerPath** lub **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSTO Runtime Setup\v4\InstallerPath** , aby znaleźć ścieżkę do tego narzędzia.
 
- Przy użyciu *VSTOinstaller.exe*można użyć następujących parametrów.
+ Przy użyciu *VSTOinstaller.exe* można użyć następujących parametrów.
 
 | Parametr | Definicja |
 |------------------| - |
-| /Install lub /I | Instalowanie rozwiązania. Po tej opcji należy podać ścieżkę manifestu wdrażania. Możesz określić ścieżkę na komputerze lokalnym, udział plików UNC (Universal Naming Convention). Można określić ścieżkę lokalną (*C:\FolderName\PublishFolder*), ścieżkę względną (* \\ Publish*) lub w pełni kwalifikowaną lokalizację (* \\ \ServerName\FolderName* lub http://<em>servername/nazwa_folderu</em>). |
-| /Uninstall lub /U | Odinstalowywanie rozwiązania. Po tej opcji należy podać ścieżkę manifestu wdrażania. Ścieżkę można określić na komputerze lokalnym, udziale plików UNC. Można określić ścieżkę lokalną (*c:\FolderName\PublishFolder*), ścieżkę względną (* \\ Publish*) lub w pełni kwalifikowaną lokalizację (* \\ \ServerName\FolderName* lub http://<em>servername/nazwa_folderu</em>). |
+| /Install lub /I | Instalowanie rozwiązania. Po tej opcji należy podać ścieżkę manifestu wdrażania. Możesz określić ścieżkę na komputerze lokalnym, udział plików UNC (Universal Naming Convention). Można określić ścieżkę lokalną (*C:\FolderName\PublishFolder*), ścieżkę względną (*\\ Publish*) lub w pełni kwalifikowaną lokalizację (*\\ \ServerName\FolderName* lub http://<em>servername/nazwa_folderu</em>). |
+| /Uninstall lub /U | Odinstalowywanie rozwiązania. Po tej opcji należy podać ścieżkę manifestu wdrażania. Ścieżkę można określić na komputerze lokalnym, udziale plików UNC. Można określić ścieżkę lokalną (*c:\FolderName\PublishFolder*), ścieżkę względną (*\\ Publish*) lub w pełni kwalifikowaną lokalizację (*\\ \ServerName\FolderName* lub http://<em>servername/nazwa_folderu</em>). |
 | /Silent lub /S | Instalowanie lub odinstalowywanie bez monitowania użytkownika o wprowadzenie danych ani wyświetlania jakichkolwiek komunikatów. Jeśli wymagany jest monit dotyczący zaufania, dostosowanie nie jest zainstalowane ani zaktualizowane. |
 | /Help lub /? | Wyświetlanie informacji Pomocy. |
 
- Po uruchomieniu *VSTOinstaller.exe*mogą pojawić się następujące kody błędów.
+ Po uruchomieniu *VSTOinstaller.exe* mogą pojawić się następujące kody błędów.
 
 |Kod błędu|Definicja|
 |----------------|----------------|
@@ -456,7 +458,7 @@ ms.locfileid: "90809352"
 > [!NOTE]
 > Dane lokalne są zapisywane tylko dla jednej poprzedniej wersji rozwiązania. Jeśli wycofasz dwie wersje, dane lokalne nie są zachowywane. Aby uzyskać więcej informacji na temat danych lokalnych, zobacz [dostęp do danych lokalnych i zdalnych w aplikacjach ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Wdróż rozwiązanie pakietu Office](../vsto/deploying-an-office-solution.md)
 - [Publikowanie rozwiązań pakietu Office](../vsto/deploying-an-office-solution-by-using-clickonce.md)

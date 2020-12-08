@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: programowe zamykanie skoroszytów'
+description: Dowiedz się, jak zamknąć aktywny skoroszyt lub można określić skoroszyt do zamykania programistycznie.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3d3fe0f929632bd7021def9f6597182aa8fea87b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13b487054e4e8a12c2479ddfc167ca0b8e90285a
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547501"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846067"
 ---
 # <a name="how-to-programmatically-close-workbooks"></a>Instrukcje: programowe zamykanie skoroszytów
   Możesz zamknąć aktywny skoroszyt lub określić skoroszyt do zamknięcia.
@@ -52,7 +54,7 @@ ms.locfileid: "85547501"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#2](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#2)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#2](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#2)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Pracuj ze skoroszytami](../vsto/working-with-workbooks.md)
 - [Instrukcje: programowe zapisywanie skoroszytów](../vsto/how-to-programmatically-save-workbooks.md)
 - [Instrukcje: Programowane otwieranie skoroszytów](../vsto/how-to-programmatically-open-workbooks.md)

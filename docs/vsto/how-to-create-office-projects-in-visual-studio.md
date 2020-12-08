@@ -1,7 +1,8 @@
 ---
 title: 'Instrukcje: Tworzenie projektów Office w Visual Studio'
+description: Dowiedz się, w jaki sposób można użyć programu Visual Studio do utworzenia dodatku VSTO i dostosowań na poziomie dokumentu dla aplikacji Microsoft Office.
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -23,12 +24,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c70668f2d4cb9597e00a7e3848b78b9f2ed49db7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 652b7676ddf5d7e095010e711ab0dabc5b5f2ab7
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547566"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844377"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Instrukcje: Tworzenie projektów Office w Visual Studio
   Programu można użyć [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] do utworzenia dodatku narzędzi VSTO i dostosowań na poziomie dokumentu dla aplikacji Microsoft Office. Aby uzyskać więcej informacji na temat tych typów projektów, zobacz [Omówienie tworzenia rozwiązań pakietu Office &#40;narzędzi VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -159,7 +160,7 @@ ms.locfileid: "85547566"
 
      Aby uzyskać więcej informacji na temat dodawania dokumentu do zaufanych lokalizacji, zobacz witrynę sieci Web w Microsoft Office Online [Tworzenie, usuwanie lub zmienianie zaufanej lokalizacji plików](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Szablony projektów pakietu Office — omówienie](../vsto/office-project-templates-overview.md)
 - [Programowanie zespołowe rozwiązań pakietu Office](../vsto/collaborative-development-of-office-solutions.md)
 - [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)

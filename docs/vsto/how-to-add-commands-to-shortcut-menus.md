@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Dodawanie poleceń do menu skrótów'
+description: Dowiedz się, jak dodawać polecenia do menu skrótów w aplikacji pakietu Office przy użyciu dodatku VSTO.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1ad27481799718d9d2b0872d7a43837fc822ca40
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 95cc6a9dc773c9a0cb07eff518566af9dcc49e96
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546201"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845495"
 ---
 # <a name="how-to-add-commands-to-shortcut-menus"></a>Instrukcje: Dodawanie poleceń do menu skrótów
   W tym temacie pokazano, jak dodać polecenia do menu skrótów w aplikacji pakietu Office przy użyciu dodatku VSTO.
@@ -40,7 +42,7 @@ ms.locfileid: "85546201"
      [!code-csharp[Trin_WordAddIn_Menus#1](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs#1)]
      [!code-vb[Trin_WordAddIn_Menus#1](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb#1)]
 
-5. W **Eksplorator rozwiązań**wybierz plik XML wstążki. Domyślnie plik XML wstążki ma nazwę *Ribbon1.xml*.
+5. W **Eksplorator rozwiązań** wybierz plik XML wstążki. Domyślnie plik XML wstążki ma nazwę *Ribbon1.xml*.
 
 6. Na pasku menu wybierz polecenie **Wyświetl**  >  **kod**.
 
@@ -70,7 +72,7 @@ ms.locfileid: "85546201"
     </customUI>
     ```
 
-8. W **Eksplorator rozwiązań**wybierz pozycję **MyRibbon.cs** lub **wstążka. vb**.
+8. W **Eksplorator rozwiązań** wybierz pozycję **MyRibbon.cs** lub **wstążka. vb**.
 
 9. Dodaj metodę wywołania zwrotnego do `Ribbon1` klasy dla każdej kontrolki, która ma być obsługiwana.
 
@@ -79,7 +81,7 @@ ms.locfileid: "85546201"
      [!code-vb[Trin_WordAddIn_Menus#2](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/ribbon1.vb#2)]
      [!code-csharp[Trin_WordAddIn_Menus#2](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/ribbon1.cs#2)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dostosowywanie interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md)
 - [Przewodnik: Tworzenie menu skrótów dla zakładek](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
 - [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)

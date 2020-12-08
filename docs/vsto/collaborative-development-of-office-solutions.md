@@ -1,5 +1,7 @@
 ---
 title: Programowanie zespołowe rozwiązań pakietu Office
+description: Dowiedz się, jak wielu deweloperów może pracować w projekcie pakietu Office w taki sam sposób, jak współpraca w innych projektach programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76c26a110d88d3dee8bf7540647ea0bfde4e7c4f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d30f28b3e97469bc9e0bf921438960206b4f89c0
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62949490"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845807"
 ---
 # <a name="collaborative-development-of-office-solutions"></a>Programowanie zespołowe rozwiązań pakietu Office
   Wielu deweloperów może pracować nad projektem pakietu Office w taki sam sposób, w jaki współpracują z innymi projektami programu Visual Studio. Program Visual Studio poprawnie lokalizuje instalację Microsoft Office na każdym komputerze, nawet jeśli pakiet Office jest zainstalowany w różnych lokalizacjach. Należy jednak wziąć pod uwagę pewne ważne zagadnienia.
@@ -33,7 +35,7 @@ ms.locfileid: "62949490"
  Jeśli projekt jest przechowywany w udziale sieciowym, a nie w kontroli źródła, należy podjąć pewne dodatkowe kroki, aby umożliwić deweloperom współpracy i przetestowanie zestawu.
 
 ## <a name="source-control-requires-checking-out-all-files"></a>Kontrola źródła wymaga wyewidencjonowania wszystkich plików
- W przypadku korzystania z kontroli źródła dla projektów należy wyewidencjonować wszystkie pliki w pliku z kodem w **Eksplorator rozwiązań** (na przykład pliki *ThisDocument*, *ThisWorkbook*lub *ThisAddIn* ) za każdym razem, gdy zmieniany jest plik kodu, nawet pliki, które są domyślnie ukryte. W przypadku wyewidencjonowania tylko pliku z kodem najwyższego poziomu zmiany mogą zostać utracone.
+ W przypadku korzystania z kontroli źródła dla projektów należy wyewidencjonować wszystkie pliki w pliku z kodem w **Eksplorator rozwiązań** (na przykład pliki *ThisDocument*, *ThisWorkbook* lub *ThisAddIn* ) za każdym razem, gdy zmieniany jest plik kodu, nawet pliki, które są domyślnie ukryte. W przypadku wyewidencjonowania tylko pliku z kodem najwyższego poziomu zmiany mogą zostać utracone.
 
  Po wprowadzeniu zmian zaznacz wszystkie pliki ponownie. Aby uzyskać więcej informacji o plikach ukrytych kodu w projektach, zobacz [projekty pakietu Office w środowisku programu Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md).
 
@@ -42,7 +44,7 @@ ms.locfileid: "62949490"
 
  Certyfikaty tymczasowe, które są generowane automatycznie w czasie kompilacji, nie są chronione przez hasła. Certyfikaty zawierają nazwę logowania programisty oraz inne dane osobowe. Po wdrożeniu dostosowań, które są podpisane przez certyfikaty tymczasowe, inne osoby mogą mieć dostęp do tych informacji.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Zabezpieczanie rozwiązań pakietu Office](../vsto/securing-office-solutions.md)
 - [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)
 - [Tworzenie rozwiązań pakietu Office](../vsto/building-office-solutions.md)

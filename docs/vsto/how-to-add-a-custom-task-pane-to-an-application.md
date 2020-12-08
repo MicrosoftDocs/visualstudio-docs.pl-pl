@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Dodawanie niestandardowego okienka zadań do aplikacji'
+description: Dowiedz się, jak dodać niestandardowe okienko zadań do aplikacji przy użyciu dodatku Visual Studio Tools pakietu Office (VSTO).
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0df4d51795f01c98790f1d5b0525c45cc71899ab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e8056eddef6329aeb10ed5545c4146f0af0f167
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546214"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845053"
 ---
 # <a name="how-to-add-a-custom-task-pane-to-an-application"></a>Instrukcje: Dodawanie niestandardowego okienka zadań do aplikacji
   Możesz dodać niestandardowe okienko zadań do aplikacji wymienionych powyżej przy użyciu dodatku VSTO. Aby uzyskać więcej informacji, zobacz [niestandardowe okienka zadań](../vsto/custom-task-panes.md).
@@ -44,7 +46,7 @@ ms.locfileid: "85546214"
 
 5. Otwórz plik kodu **ThisAddIn.cs** lub **ThisAddIn. vb** .
 
-6. Dodaj następujący kod do `ThisAddIn` klasy. Ten kod deklaruje wystąpienia `MyUserControl` <xref:Microsoft.Office.Tools.CustomTaskPane> elementów i jako elementy członkowskie `ThisAddIn` klasy.
+6. Dodaj poniższy kod do klasy `ThisAddIn`. Ten kod deklaruje wystąpienia `MyUserControl` <xref:Microsoft.Office.Tools.CustomTaskPane> elementów i jako elementy członkowskie `ThisAddIn` klasy.
 
      [!code-vb[Trin_TaskPaneBasic#1](../vsto/codesnippet/VisualBasic/Trin_TaskPaneBasic/ThisAddIn.vb#1)]
      [!code-csharp[Trin_TaskPaneBasic#1](../vsto/codesnippet/CSharp/Trin_TaskPaneBasic/ThisAddIn.cs#1)]
@@ -57,7 +59,7 @@ ms.locfileid: "85546214"
     > [!NOTE]
     > Ten kod kojarzy niestandardowe okienko zadań z aktywnym oknem w aplikacji. W przypadku niektórych aplikacji można zmodyfikować ten kod, aby upewnić się, że okienko zadań pojawia się z innymi dokumentami lub elementami w aplikacji. Aby uzyskać więcej informacji, zobacz [niestandardowe okienka zadań](../vsto/custom-task-panes.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dostosowywanie interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md)
 - [Niestandardowe okienka zadań](../vsto/custom-task-panes.md)
 - [Przewodnik: Automatyzowanie aplikacji z niestandardowego okienka zadań](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)

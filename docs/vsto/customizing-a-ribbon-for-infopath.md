@@ -1,5 +1,7 @@
 ---
 title: Dostosowywanie wstążki dla programu InfoPath
+description: Dowiedz się, że po dostosowaniu wstążki w Microsoft Office InfoPath należy rozważyć, gdzie wstążka niestandardowa będzie wyświetlana w aplikacji.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76ec069ef71890a69fdbd41f40bd91cf75d93cd4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: baf5a7edbdd9452c4b7ce55e109eee9c79798b5e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255507"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844170"
 ---
 # <a name="customize-a-ribbon-for-infopath"></a>Dostosowywanie wstążki dla programu InfoPath
   Po dostosowaniu wstążki w Microsoft Office InfoPath należy rozważyć, gdzie wstążka niestandardowa będzie wyświetlana w aplikacji. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] można wyświetlić Wstążkę w następujących trzech typach okien aplikacji programu InfoPath:
@@ -61,8 +63,8 @@ ms.locfileid: "71255507"
  [!code-csharp[Trin_RibbonInfoPathBasic#1](../vsto/codesnippet/CSharp/myinfopathproject/ribbon.cs#1)]
  [!code-vb[Trin_RibbonInfoPathBasic#1](../vsto/codesnippet/VisualBasic/myinfopathproject/ribbon.vb#1)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Uzyskiwanie dostępu do wstążki w czasie wykonywania](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Omówienie wstążki](../vsto/ribbon-overview.md)
 - [Projektant wstążki](../vsto/ribbon-designer.md)
-- [XML — wstążka](../vsto/ribbon-xml.md)
+- [XML — Wstążka](../vsto/ribbon-xml.md)
