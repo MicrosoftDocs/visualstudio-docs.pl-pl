@@ -1,5 +1,7 @@
 ---
 title: Kontrolka wykresu
+description: Dowiedz się, że po dodaniu wykresu do arkusza program Visual Studio tworzy obiekt wykresu, który można bezpośrednio obsłużyć.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 864422aac695fbf474e6ed6b8cf6d765247eabf9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 45de5170ca8a8b7e8a71521e18523e73ebc24046
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255308"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847832"
 ---
 # <a name="chart-control"></a>Kontrolka wykresu
   <xref:Microsoft.Office.Tools.Excel.Chart>Kontrolka jest obiektem wykresu, który uwidacznia zdarzenia. Po dodaniu wykresu do arkusza program Visual Studio tworzy <xref:Microsoft.Office.Tools.Excel.Chart> obiekt, który można bezpośrednio programować bez konieczności przechodzenia do Microsoft Office modelu obiektów programu Excel.
@@ -72,7 +74,7 @@ ms.locfileid: "71255308"
 
 - <xref:Microsoft.Office.Tools.Excel.Chart.SeriesChange>
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Przykłady i przewodniki dotyczące programowania pakietu Office](../vsto/office-development-samples-and-walkthroughs.md)
 - [Rozwiń dokumenty programu Word i skoroszyty programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Formanty w dokumentach pakietu Office](../vsto/controls-on-office-documents.md)

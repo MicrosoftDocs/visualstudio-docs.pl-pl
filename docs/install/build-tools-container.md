@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 61ec972bd5e361c4417e49092de5976000a6da5f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd584a977900de83af454f26722d3e4ba2bd8ac8
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80273897"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847666"
 ---
 # <a name="install-build-tools-into-a-container"></a>Instalowanie narzędzi kompilacji do kontenera
 
@@ -72,7 +72,7 @@ Zapisz Poniższy przykład pliku dockerfile do nowego pliku na dysku. Jeśli pli
    ADD https://aka.ms/vs/15/release/vs_buildtools.exe C:\TEMP\vs_buildtools.exe
 
    # Install Build Tools with the Microsoft.VisualStudio.Workload.AzureBuildTools workload, excluding workloads and components with known issues.
-   RUN C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache `
+   RUN start /wait C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache `
        --installPath C:\BuildTools `
        --add Microsoft.VisualStudio.Workload.AzureBuildTools `
        --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 `
@@ -205,7 +205,7 @@ Aby użyć tego obrazu dla przepływu pracy ciągłej integracji/ciągłego dost
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 * [Zaawansowany przykład dotyczący kontenerów](advanced-build-tools-container.md)
 * [Znane problemy z kontenerami](build-tools-container-issues.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: programowe Dodawanie wierszy i kolumn do tabel programu Word'
+description: Dowiedz się, jak za pomocą metody Add obiektu Rows dodać wiersze do tabeli. Można również użyć metody Add obiektu Columns, aby dodać kolumny.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3887f80a5c2a0cb775059f58876135d91350133c
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 10154033c23cccc134752afb7f8b1e9c67099671
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585382"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846366"
 ---
 # <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>Instrukcje: programowe Dodawanie wierszy i kolumn do tabel programu Word
   W tabeli programu Microsoft Office Word komórki są zorganizowane w wiersze i kolumny. Możesz użyć <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> metody <xref:Microsoft.Office.Interop.Word.Rows> obiektu, aby dodać wiersze do tabeli i <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> metodę <xref:Microsoft.Office.Interop.Word.Columns> obiektu, aby dodać kolumny.
@@ -76,7 +78,7 @@ ms.locfileid: "91585382"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#96](codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#96)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#96](codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#96)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Instrukcje: Programowane tworzenie tabel programu Word](how-to-programmatically-create-word-tables.md)
 - [Instrukcje: Programowane dodawanie tekstu i formatowania do komórek w tabelach programu Word](how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)
 - [Instrukcje: Programowane Wypełnianie tabel programu Word przy użyciu właściwości dokumentu](how-to-programmatically-populate-word-tables-with-document-properties.md)

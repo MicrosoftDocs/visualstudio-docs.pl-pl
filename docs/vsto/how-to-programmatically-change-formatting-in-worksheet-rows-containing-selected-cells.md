@@ -1,5 +1,7 @@
 ---
 title: Zmień formaty w wierszach zawierających wybrane komórki za poorednictwem kodu
+description: Dowiedz się, w jaki sposób można zmienić czcionkę całego wiersza, który zawiera wybraną komórkę, tak aby tekst był pogrubiony.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 31fe16436b09696b79bf760db7b346d1092c0439
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 088b24a93cb82cc7807a996c26c9b2bbbabec04e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585304"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847952"
 ---
 # <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>Instrukcje: Programowane zmienianie formatowania w wierszach arkusza zawierających zaznaczone komórki
   Można zmienić czcionkę całego wiersza, który zawiera wybraną komórkę, tak aby tekst był pogrubiony.
@@ -70,7 +72,7 @@ ms.locfileid: "91585304"
  [!code-csharp[Trin_VstcoreExcelAutomation#36](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#36)]
  [!code-vb[Trin_VstcoreExcelAutomation#36](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#36)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Pracuj z arkuszami](../vsto/working-with-worksheets.md)
 - [Instrukcje: Programowane stosowanie stylów do zakresów w skoroszytach](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
 - [Instrukcje: Programowane kopiowanie danych i formatowania w arkuszach](../vsto/how-to-programmatically-copy-data-and-formatting-across-worksheets.md)

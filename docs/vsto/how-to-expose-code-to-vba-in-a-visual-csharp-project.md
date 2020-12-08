@@ -1,6 +1,7 @@
 ---
 title: 'Instrukcje: Uwidacznianie kodu w języku VBA w projekcie w języku C#'
-ms.custom: seodec18
+description: Dowiedz się, jak udostępnić kod w projekcie Visual C# do kodu Visual Basic for Applications (VBA), jeśli chcesz, aby dwa typy kodu mogły współdziałać ze sobą.
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 21d7672d3c08012e75d73ee8bf4d9816b850eb2c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a830ec75e3997bee8d4bed9e275fc6229fec3405
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544836"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846600"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>Instrukcje: Uwidacznianie kodu w języku VBA w projekcie Visual C#
   Można uwidocznić kod w projekcie Visual C# do kodu Visual Basic for Applications (VBA), jeśli chcesz, aby dwa typy kodu współpracowali ze sobą.
@@ -101,7 +102,7 @@ ms.locfileid: "85544836"
 
 12. Skompiluj projekt.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Instrukcje: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)
 - [Łączenie języka VBA i dostosowań na poziomie dokumentu](../vsto/combining-vba-and-document-level-customizations.md)

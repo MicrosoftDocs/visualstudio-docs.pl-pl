@@ -1,5 +1,7 @@
 ---
 title: Konfigurowanie komputera do opracowywania rozwiązań pakietu Office
+description: Dowiedz się, jak zainstalować obsługiwaną wersję programu Visual Studio, .NET Framework i Microsoft Office, aby można było utworzyć Dodatki i dostosowania narzędzia VSTO dla Microsoft Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7a0304c217599e790b8cfa9e738245927336470e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3658f655c50c9d1a0775a8cc69dd65baf32d1408
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801844"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847264"
 ---
 # <a name="configure-a-computer-to-develop-office-solutions"></a>Konfigurowanie komputera do opracowywania rozwiązań pakietu Office
 
@@ -47,7 +49,7 @@ W przypadku zainstalowania obsługiwanej wersji programu Visual Studio, .NET Fra
 
 Jeśli nadal występują problemy, zobacz [dodatkowe wsparcie dla błędów w rozwiązaniach pakietu Office](../vsto/additional-support-for-errors-in-office-solutions.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wprowadzenie &#40;Programowanie Office w programie Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Instrukcje: Konfigurowanie komputera do opracowywania rozwiązań pakietu Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)
 - [Instrukcje: Instalowanie pakietu redystrybucyjnego środowiska uruchomieniowego Office Visual Studio Tools](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)

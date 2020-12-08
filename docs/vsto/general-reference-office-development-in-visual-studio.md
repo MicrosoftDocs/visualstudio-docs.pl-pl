@@ -1,7 +1,8 @@
 ---
 title: Informacje ogólne (Programowanie Office w Visual Studio)
+description: Poznaj ogólne informacje referencyjne na temat projektów deweloperskich Microsoft Office w programie Visual Studio.
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8e8b8dee20b67338bbe1c8c78ebe1d8bcc730175
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c47f4360f63640f869231bc21929c43543d5c72e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "69551506"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847783"
 ---
 # <a name="general-reference-office-development-in-visual-studio"></a>Informacje ogólne (Programowanie Office w Visual Studio)
   Ta sekcja zawiera szczegółowe informacje techniczne dotyczące projektów Microsoft Office w programie Visual Studio.

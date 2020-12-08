@@ -1,5 +1,7 @@
 ---
 title: Wdrażanie rozwiązania VSTO przy użyciu Instalator Windows
+description: Dowiedz się, jak wdrożyć dodatek narzędzi Microsoft Visual Studio Tools dla pakietu Office (VSTO) lub rozwiązanie na poziomie dokumentu przy użyciu projektu Instalator programu Visual Studio.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 08/18/2010
 ms.topic: conceptual
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a6fd2824ae10ad36a7ed50250620e98575e9ea60
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e49705c99801cd6e09f4bf6d9be3c411cc2c53e3
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585696"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846548"
 ---
 # <a name="deploying-a-vsto-solution-using-windows-installer"></a>Wdrażanie rozwiązania VSTO przy użyciu Instalator Windows
 
@@ -144,7 +146,7 @@ Projekt instalacyjny musi wdrożyć ExcelAddIn. Możesz skonfigurować projekt k
 
 ### <a name="to-add-the-exceladdin-project-output"></a>Aby dodać dane wyjściowe projektu ExcelAddIn
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **OfficeAddInSetup**, kliknij polecenie **Dodaj** , a następnie **dane wyjściowe projektu**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję **OfficeAddInSetup**, kliknij polecenie **Dodaj** , a następnie **dane wyjściowe projektu**.
 2. W oknie dialogowym **Dodaj grupę wyjściową projektu** wybierz pozycję **ExcelAddIn** z listy projekt i pozycję **podstawowe dane wyjściowe**.
 3. Kliknij przycisk **OK** , aby dodać dane wyjściowe projektu do projektu Instalatora.
 
@@ -156,8 +158,8 @@ Projekt instalacyjny musi wdrożyć manifest wdrożenia i manifest aplikacji. Do
 
 ### <a name="to-add-the-deployment-and-application-manifests"></a>Aby dodać manifesty wdrożenia i aplikacji
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **OfficeAddInSetup**, kliknij pozycję **Dodaj**, a następnie kliknij pozycję **plik**.
-2. W oknie dialogowym **Dodaj pliki** przejdź do katalogu wyjściowego **ExcelAddIn** . Zazwyczaj katalog wyjściowy jest podfolderem ** \\ zwolnienia** z katalogu głównego projektu, w zależności od wybranej konfiguracji kompilacji.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję **OfficeAddInSetup**, kliknij pozycję **Dodaj**, a następnie kliknij pozycję **plik**.
+2. W oknie dialogowym **Dodaj pliki** przejdź do katalogu wyjściowego **ExcelAddIn** . Zazwyczaj katalog wyjściowy jest podfolderem **\\ zwolnienia** z katalogu głównego projektu, w zależności od wybranej konfiguracji kompilacji.
 3. Wybierz pliki **ExcelAddIn. VSTO** i **ExcelAddIn.dll. manifest** , a następnie kliknij przycisk **Otwórz** , aby dodać te dwa pliki do projektu Instalatora.
 
     ![Zrzut ekranu aplikacji i manifestów wdrożenia w Eksplorator rozwiązań](media/setup-project-figure-3.jpg)
@@ -168,7 +170,7 @@ Odwołanie do ExcelAddIn obejmuje wszystkie składniki, których wymaga ExcelAdd
 
 ### <a name="to-exclude-the-exceladdin-project-dependencies"></a>Aby wykluczyć zależności projektu ExcelAddIn
 
-1. W **Eksplorator rozwiązań**w węźle **OfficeAddInSetup** zaznacz pozycję Wszystkie elementy zależności pod **wykrytymi elementami zależnymi** , z wyjątkiem **platformy Microsoft .NET Framework** lub dowolnego zestawu kończącego się na ** \*.Utilities.dll**. Zestawy narzędzi są przeznaczone do wdrożenia wraz z Twoją aplikacją.
+1. W **Eksplorator rozwiązań** w węźle **OfficeAddInSetup** zaznacz pozycję Wszystkie elementy zależności pod **wykrytymi elementami zależnymi** , z wyjątkiem **platformy Microsoft .NET Framework** lub dowolnego zestawu kończącego się na **\*.Utilities.dll**. Zestawy narzędzi są przeznaczone do wdrożenia wraz z Twoją aplikacją.
 2. Kliknij prawym przyciskiem myszy grupę i wybierz pozycję **Właściwości**.
 3. W oknie **Właściwości** Zmień właściwość **exclude** na **true** , aby wykluczyć zestawy zależne z projektu Instalatora. Upewnij się, że żadne zestawy narzędzi nie zostały wykluczone.
 
@@ -178,14 +180,14 @@ Odwołanie do ExcelAddIn obejmuje wszystkie składniki, których wymaga ExcelAdd
 
 Można skonfigurować pakiet Instalator Windows, aby zainstalować wstępnie wymagane składniki przez dodanie programu instalacyjnego, znanego również jako program inicjujący. Ten program instalacyjny może zainstalować wstępnie wymagane składniki, proces nazywany uruchomieniem.
 
-W przypadku **ExcelAddIn**należy zainstalować te wymagania wstępne, aby dodatek mógł działać poprawnie:
+W przypadku **ExcelAddIn** należy zainstalować te wymagania wstępne, aby dodatek mógł działać poprawnie:
 
 - Wersja platformy Microsoft .NET, której celem jest rozwiązanie pakietu Office.
 - Microsoft Visual Studio 2010 Tools for Office Runtime.
 
 Aby skonfigurować składniki zależne jako wymagania wstępne
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt **OfficeAddInSetup** i wybierz polecenie **Właściwości**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt **OfficeAddInSetup** i wybierz polecenie **Właściwości**.
 2. Zostanie wyświetlone okno dialogowe **strony właściwości OfficeAddInSetup** .
 3. Kliknij przycisk **wymagania wstępne** .
 4. W oknie dialogowym wymagania wstępne Wybierz poprawną wersję .NET Framework i narzędzia Microsoft Visual Studio dla środowiska uruchomieniowego pakietu Office.
@@ -201,13 +203,13 @@ Microsoft Office lokalizuje Dodatki przy użyciu kluczy rejestru. Klucze w \_ ga
 
 ### <a name="to-configure-the-registry"></a>Aby skonfigurować rejestr
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **OfficeAddInSetup**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję **OfficeAddInSetup**.
 2. Rozwiń **Widok**.
 3. Kliknij pozycję **Rejestr** , aby otworzyć okno Edytor rejestru.
 4. W edytorze **rejestru (OfficeAddInSetup)** rozwiń węzeł **HKEY \_ Local \_ Machine** , a następnie **Software**.
-5. Usuń klucz ** \[ producenta \] **? znaleziony w obszarze **HKEY \_ Local \_ Machine \\ **.
+5. Usuń klucz **\[ producenta \]**? znaleziony w obszarze **HKEY \_ Local \_ Machine \\**.
 6. Rozwiń węzeł **HKEY \_ bieżący \_ użytkownik** , a następnie pozycję **oprogramowanie**.
-7. Usuń klucz ** \[ producenta \] ** znaleziony w obszarze **HKEY \_ bieżące \_ \\ oprogramowanie użytkownika**.
+7. Usuń klucz **\[ producenta \]** znaleziony w obszarze **HKEY \_ bieżące \_ \\ oprogramowanie użytkownika**.
 8. Aby dodać klucze rejestru dla instalacji dodatku, kliknij prawym przyciskiem myszy klucz **Hive User/Machine** , wybierz pozycję **nowy klucz**. Użyj **oprogramowania** tekstowego jako nazwy nowego klucza. Kliknij prawym przyciskiem myszy nowo utworzony klucz **oprogramowania** i Utwórz nowy klucz z tekstem **firmy Microsoft**.
 9. Użyj podobnego procesu, aby utworzyć całą hierarchię kluczy wymaganą dla rejestracji dodatku:
 
@@ -221,11 +223,11 @@ Microsoft Office lokalizuje Dodatki przy użyciu kluczy rejestru. Klucze w \_ ga
     - **LoadBehavior** typu **DWORD**
     - **Manifest** typu **String**
 
-12. Kliknij prawym przyciskiem myszy wartość **Opis** w Edytorze rejestru, a następnie kliknij pozycję **okno właściwości**. W **oknie właściwości**wprowadź dla właściwości Value **dodatek demonstracji programu Excel** .
-13. Wybierz klucz **FriendlyName** w Edytorze rejestru. W **oknie właściwości**Zmień właściwość **wartość** na **dodatek demonstracyjny programu Excel**.
-14. Wybierz klucz **LoadBehavior** w Edytorze rejestru. W **oknie właściwości**Zmień właściwość **wartość** na **3.** Wartość 3 dla LoadBehavior wskazuje, że dodatek należy załadować przy uruchamianiu aplikacji hosta. Aby uzyskać więcej informacji na temat zachowania ładowania, zobacz [wpisy rejestru dotyczące dodatków narzędzi VSTO](registry-entries-for-vsto-add-ins.md).
+12. Kliknij prawym przyciskiem myszy wartość **Opis** w Edytorze rejestru, a następnie kliknij pozycję **okno właściwości**. W **oknie właściwości** wprowadź dla właściwości Value **dodatek demonstracji programu Excel** .
+13. Wybierz klucz **FriendlyName** w Edytorze rejestru. W **oknie właściwości** Zmień właściwość **wartość** na **dodatek demonstracyjny programu Excel**.
+14. Wybierz klucz **LoadBehavior** w Edytorze rejestru. W **oknie właściwości** Zmień właściwość **wartość** na **3.** Wartość 3 dla LoadBehavior wskazuje, że dodatek należy załadować przy uruchamianiu aplikacji hosta. Aby uzyskać więcej informacji na temat zachowania ładowania, zobacz [wpisy rejestru dotyczące dodatków narzędzi VSTO](registry-entries-for-vsto-add-ins.md).
 
-15. Wybierz klucz **manifestu** w Edytorze rejestru. W **oknie właściwości**Zmień właściwość **wartość** na **plik:///[TARGETDIR] ExcelAddIn. VSTO | vstolocal**
+15. Wybierz klucz **manifestu** w Edytorze rejestru. W **oknie właściwości** Zmień właściwość **wartość** na **plik:///[TARGETDIR] ExcelAddIn. VSTO | vstolocal**
 
     ![Zrzut ekranu edytora rejestru](media/setup-project-figure-6.png)
 
@@ -252,7 +254,7 @@ Jeśli pakiet MSI jest używany do instalowania dodatku lub rozwiązania, może 
 
 ### <a name="configure-a-launch-condition-to-detect-the-vsto-runtime"></a>Skonfiguruj warunek uruchomienia w celu wykrycia środowiska uruchomieniowego programu VSTO
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **OfficeAddInSetup**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję **OfficeAddInSetup**.
 2. Rozwiń **Widok**.
 3. Kliknij pozycję **warunki uruchamiania**.
 4. W edytorze **warunki uruchamiania (OfficeAddInSetup)** kliknij prawym przyciskiem myszy pozycję **wymagania na komputerze docelowym**, a następnie kliknij polecenie **Dodaj warunek uruchomienia rejestru**. Ten warunek wyszukiwania może przeszukać w rejestrze klucz, który jest instalowany przez środowisko uruchomieniowe programu VSTO. Wartość klucza jest następnie dostępna dla różnych elementów Instalatora za pomocą nazwanej właściwości. Warunek uruchamiania używa właściwości zdefiniowanej przez warunek wyszukiwania do sprawdzenia określonej wartości.
@@ -314,7 +316,7 @@ Aby uzyskać więcej informacji, zobacz [równoważność typów i osadzone typy
 
 1. W edytorze **warunki uruchamiania (OfficeAddInSetup)** kliknij prawym przyciskiem myszy pozycję **wymagania na komputerze docelowym**, a następnie **kliknij polecenie Dodaj Instalator Windows warunek uruchomienia**. Ten warunek uruchomienia wyszukuje zestaw PIA pakietu Office przez wyszukiwanie określonego identyfikatora składnika.
 2. Kliknij prawym przyciskiem myszy pozycję **Wyszukaj Component1** , a następnie kliknij pozycję **okno właściwości** , aby wyświetlić właściwości warunku uruchamiania.
-3. W **oknie właściwości**ustaw następujące właściwości:
+3. W **oknie właściwości** ustaw następujące właściwości:
 
     1. Zmień wartość właściwości **(Name)** w celu **wyszukania udostępnionego PIA pakietu Office**
     2. Zmień wartość **ComponentID** na identyfikator składnika dla używanego składnika pakietu Office. Listę identyfikatorów składników można znaleźć w poniższej tabeli, na przykład **{64E2917E-AA13-4CA4-BFFE-EA6EDA3AFCB4}**.
@@ -347,7 +349,7 @@ Aby uzyskać więcej informacji, zobacz [równoważność typów i osadzone typy
 |Microsoft Graph|{011B9112-EBB1-4A6C-86CB-C2FDC9EA7B0E}|{52DA4B37-B8EB-4B7F-89C1-824654CE4C70}|{24706F33-F0CE-4EB4-BC91-9E935394F510}|-|-|
 |Tag inteligentny|{7102C98C-EF47-4F04-A227-FE33650BF954}|{487A7921-EB3A-4262-BB5B-A5736B732486}|{74EFC1F9-747D-4867-B951-EFCF29F51AF7}|-|-|
 |Udostępnianie pakietu Office|{64E2917E-AA13-4CA4-BFFE-EA6EDA3AFCB4}|{6A174BDB-0049-4D1C-86EF-3114CB0C4C4E}|{76601EBB-44A7-49EE-8DE3-7B7B9D7EBB05}|{625F5772-C1B3-497E-8ABE-7254EDB00506}|{625F5772-C1B3-497E-8ABE-7254EDB00506}|
-|Project|{957A4EC0-E67B-4E86-A383-6AF7270B216A}|{1C50E422-24FA-44A9-A120-E88280C8C341}|{706D7F44-8231-489D-9B25-3025ADE9F114}|{107BCD9A-F1DC-4004-A444-33706FC10058}|{107BCD9A-F1DC-4004-A444-33706FC10058}|
+|Projekt|{957A4EC0-E67B-4E86-A383-6AF7270B216A}|{1C50E422-24FA-44A9-A120-E88280C8C341}|{706D7F44-8231-489D-9B25-3025ADE9F114}|{107BCD9A-F1DC-4004-A444-33706FC10058}|{107BCD9A-F1DC-4004-A444-33706FC10058}|
 
   ![Zrzut ekranu przedstawiający końcowe warunki uruchamiania](media/setup-project-figure-11.jpg)
 
@@ -357,7 +359,7 @@ Można dokładniej zawęzić warunki uruchamiania instalacji usługi ExcelAddIn.
 
 ### <a name="to-build-the-setup-project"></a>Aby skompilować projekt instalacyjny
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt **OfficeAddInSetup** , a następnie kliknij pozycję **Kompiluj**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt **OfficeAddInSetup** , a następnie kliknij pozycję **Kompiluj**.
 2. Korzystając z **Eksploratora Windows**, przejdź do katalogu wyjściowego projektu **OfficeAddInSetup** i przejdź do folderu wersja lub Debuguj, w zależności od wybranej konfiguracji kompilacji. Skopiuj wszystkie pliki z folderu do lokalizacji, do której użytkownicy mogą uzyskać dostęp.
 
 Aby przetestować konfigurację ExcelAddIn
@@ -514,14 +516,14 @@ Aby dodać dostosowanie do dokumentu, musisz mieć identyfikator rozwiązania dl
 Aby pobrać identyfikator rozwiązania
 
 1. W menu **kompilacja** kliknij pozycję **Kompiluj rozwiązanie** , aby skompilować rozwiązanie na poziomie dokumentu, a następnie Dodaj właściwość identyfikator rozwiązania do pliku projektu.
-2. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt na poziomie dokumentu **ExcelWorkbookProject**
+2. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt na poziomie dokumentu **ExcelWorkbookProject**
 3. Kliknij pozycję **UnloadProject** , aby uzyskać dostęp do pliku projektu z programu Visual Studio.
 
     ![Zrzut ekranu przedstawiający Eksplorator rozwiązań rozładowywanie rozwiązania dokumentu programu Excel](media/setup-project-figure-16.jpg)
 
     **Ilustracja 13. rozładowywanie rozwiązania dokumentu programu Excel**
 
-4. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **ExcelWorkbookProject** , a następnie kliknij pozycję **EditExcelWorkbookProject. vbproj** lub **Edytuj ExcelWorkbookProject. csproj**.
+4. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję **ExcelWorkbookProject** , a następnie kliknij pozycję **EditExcelWorkbookProject. vbproj** lub **Edytuj ExcelWorkbookProject. csproj**.
 5. W edytorze **ExcelWorkbookProject** Znajdź element **solutionId** wewnątrz elementu **Właściwości** .
 6. Skopiuj wartość identyfikatora GUID tego elementu.
 
@@ -529,7 +531,7 @@ Aby pobrać identyfikator rozwiązania
 
     **Ilustracja 14. Pobieranie SolutionID**
 
-7. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **ExcelWorkbookProject** , a następnie kliknij pozycję **Załaduj ponownie projekt**.
+7. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję **ExcelWorkbookProject** , a następnie kliknij pozycję **Załaduj ponownie projekt**.
 8. Kliknij przycisk **tak** w wyświetlonym oknie dialogowym, aby zamknąć Edytor **ExcelWorkbookProject** .
 9. **Identyfikator rozwiązania** zostanie użyty w akcji Zainstaluj niestandardową.
 
@@ -537,7 +539,7 @@ Ostatnim krokiem jest skonfigurowanie akcji niestandardowej dla kroków **instal
 
 ### <a name="to-configure-the-setup-project"></a>Aby skonfigurować projekt instalacyjny
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **ExcelWorkbookSetup**, rozwiń węzeł **Dodaj** i kliknij pozycję **dane wyjściowe projektu**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję **ExcelWorkbookSetup**, rozwiń węzeł **Dodaj** i kliknij pozycję **dane wyjściowe projektu**.
 2. W oknie dialogowym **Dodaj grupę wyjściową projektu** , na liście **projekt** kliknij pozycję **AddCustomizationCustomAction**.
 3. Wybierz pozycję **podstawowe dane wyjściowe** , a następnie kliknij przycisk **OK** , aby zamknąć okno dialogowe i dodać zestaw zawierający akcję niestandardową do projektu Instalatora.
 
@@ -545,12 +547,12 @@ Ostatnim krokiem jest skonfigurowanie akcji niestandardowej dla kroków **instal
 
     **Ilustracja 15. akcja niestandardowa manifestu dokumentu — Dodaj grupę wyjściową projektu**
 
-4. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **ExcelWorkbookSetup**.
+4. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję **ExcelWorkbookSetup**.
 5. Rozwiń węzeł **Widok** i kliknij pozycję **Akcje niestandardowe**.
 6. W edytorze **Akcje niestandardowe (ExcelWorkbookSetup)** kliknij prawym przyciskiem myszy **Akcje niestandardowe** i kliknij polecenie **Dodaj akcję niestandardową**.
 7. W oknie dialogowym **Wybierz element w projekcie** , na liście **Szukaj w** kliknij pozycję **folder aplikacji**. Wybierz pozycję **podstawowe wyjście z AddCustomizationCustomAction (aktywny)** , a następnie kliknij przycisk **OK** , aby dodać akcję niestandardową do kroku instalacji.
-8. W **węźle instalacja**kliknij prawym przyciskiem myszy pozycję **podstawowe dane wyjściowe z AddCustomizationCustomAction (aktywny)**, a następnie kliknij polecenie **Zmień nazwę**. Nadaj nazwę akcji niestandardowej **Kopiuj dokument do folderu Moje dokumenty i Dołącz dostosowanie**.
-9. W **węźle Odinstaluj**kliknij prawym przyciskiem myszy pozycję **podstawowe dane wyjściowe z AddCustomizationCustomAction (aktywny)** i kliknij polecenie **Zmień nazwę**. Nadaj nazwę akcji niestandardowej **Usuń dokument z folderu dokumenty**.
+8. W **węźle instalacja** kliknij prawym przyciskiem myszy pozycję **podstawowe dane wyjściowe z AddCustomizationCustomAction (aktywny)**, a następnie kliknij polecenie **Zmień nazwę**. Nadaj nazwę akcji niestandardowej **Kopiuj dokument do folderu Moje dokumenty i Dołącz dostosowanie**.
+9. W **węźle Odinstaluj** kliknij prawym przyciskiem myszy pozycję **podstawowe dane wyjściowe z AddCustomizationCustomAction (aktywny)** i kliknij polecenie **Zmień nazwę**. Nadaj nazwę akcji niestandardowej **Usuń dokument z folderu dokumenty**.
 
     ![Zrzut ekranu okna akcji niestandardowych manifestu dokumentu](media/setup-project-figure-19.jpg)
 

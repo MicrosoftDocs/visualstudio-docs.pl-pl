@@ -1,5 +1,7 @@
 ---
 title: Ochrona dokumentów w rozwiązaniach na poziomie dokumentu
+description: Dowiedz się, jak za pomocą funkcji ochrony programów Microsoft Office Word i Microsoft Office Excel w projektach na poziomie dokumentu.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6c5f019907495c3cad3fddef501455aedf345bb2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2898781a3603e7cb9582d246e4fa7edaaf6bddb9
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71253810"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846197"
 ---
 # <a name="document-protection-in-document-level-solutions"></a>Ochrona dokumentów w rozwiązaniach na poziomie dokumentu
   Funkcji ochrony programu Microsoft Office Word i Microsoft Office Excel można użyć w projektach na poziomie dokumentu. Te funkcje blokują nieautoryzowanym użytkownikom wprowadzanie zmian do chronionych części dokumentu.
@@ -52,7 +54,7 @@ ms.locfileid: "71253810"
 ## <a name="setting-the-password"></a>Ustawianie hasła
  Program Visual Studio automatycznie włącza ochronę, ale domyślnie nie udostępnia hasła. Jeśli chcesz, aby ochrona dokumentów miała hasło, musisz ją dodać przed wdrożeniem rozwiązania. Dodanie hasła umożliwia autoryzowanym użytkownikom usuwanie ochrony dokumentu; bez hasła nie można łatwo usunąć ochrony. Aby uzyskać szczegółowe informacje na temat ustawiania hasła, zobacz Pomoc w określonej aplikacji pakietu Office.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Instrukcje: programowe Włączanie ochrony dokumentów i części dokumentów](../vsto/how-to-programmatically-protect-documents-and-parts-of-documents.md)
 - [Przykłady i przewodniki dotyczące programowania pakietu Office](../vsto/office-development-samples-and-walkthroughs.md)
 - [Zarządzanie prawami do informacji i rozszerzenia kodu zarządzanego — Omówienie](../vsto/information-rights-management-and-managed-code-extensions-overview.md)

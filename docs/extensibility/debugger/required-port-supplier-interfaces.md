@@ -1,5 +1,7 @@
 ---
 title: Wymagane interfejsy dostawcy portów | Microsoft Docs
+description: Dowiedz się więcej o interfejsach, które muszą zostać uruchomione przez dostawcę portów. Dostawca portu dostarcza porty i implementuje je.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf2aeb1f26f81d773e171aa3fed6b0f2ef976c91
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13e3ac8dc0c229f0c0a00bd22131251c71893224
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713149"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847133"
 ---
 # <a name="required-port-supplier-interfaces"></a>Wymagane interfejsy dostawcy portów
 Dostawca portu musi implementować interfejs [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) . [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)
@@ -72,7 +74,7 @@ Dostawca portu musi implementować interfejs [IDebugPortSupplier2](../../extensi
 
   - [GetName](../../extensibility/debugger/reference/idebugprogram2-getname.md)
 
-  - [GetProcess —](../../extensibility/debugger/reference/idebugprogram2-getprocess.md)
+  - [GetProcess](../../extensibility/debugger/reference/idebugprogram2-getprocess.md)
 
   - [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)
 
@@ -80,5 +82,5 @@ Dostawca portu musi implementować interfejs [IDebugPortSupplier2](../../extensi
 
   Umożliwia dołączenie modelu SDM do tego programu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Implementowanie dostawcy portu](../../extensibility/debugger/implementing-a-port-supplier.md)

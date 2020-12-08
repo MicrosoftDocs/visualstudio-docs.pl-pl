@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: zapełnianie dokumentów danymi z bazy danych'
+description: Dowiedz się, jak można użyć danych z bazy danych w rozwiązaniu oraz jak można użyć formantów Windows Forms, aby wyświetlić dane w dokumencie.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8470ec4acf686c016088c5f474539a1ab7ed85df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0915d0ef57da5cba7fe73b6b374babe95b1a09c7
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547202"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848082"
 ---
 # <a name="how-to-populate-documents-with-data-from-a-database"></a>Instrukcje: zapełnianie dokumentów danymi z bazy danych
 
@@ -66,7 +68,7 @@ Po uruchomieniu projektu, formant Wyświetla pierwszy rekord w źródle danych. 
 
 Informacje o sposobach wysyłania aktualizacji do określonego zestawu danych i bazy danych znajdują się w temacie [How to: Update a Data Source with Data from a host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Powiązywanie danych z kontrolkami w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Dodawanie nowych źródeł danych](../data-tools/add-new-data-sources.md)

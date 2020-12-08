@@ -1,5 +1,7 @@
 ---
 title: Wdróż rozwiązanie pakietu Office przy użyciu Instalator Windows
+description: Informacje na temat tworzenia Instalator Windows można wdrożyć za pomocą programu Visual Studio, które wymaga dostępu administracyjnego na komputerze użytkownika końcowego.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1336af7469b030492b486004940b730d372760bb
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: c001b3ce308c9e991cee747bdcab3ad646b226ab
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90807966"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847120"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Wdróż rozwiązanie pakietu Office przy użyciu Instalator Windows
 
@@ -91,7 +93,7 @@ Plik Instalator Windows można utworzyć przy użyciu narzędzia InstallShield L
 
 2. W okienku szablony rozwiń pozycję **Inne typy projektów**, a następnie wybierz szablon **Konfiguracja i wdrożenie** .
 
-3. Na liście typów projektów na potrzeby **instalacji i wdrażania**wybierz opcję **Włącz InstallShield Limited Edition**, a następnie wybierz przycisk **OK** .
+3. Na liście typów projektów na potrzeby **instalacji i wdrażania** wybierz opcję **Włącz InstallShield Limited Edition**, a następnie wybierz przycisk **OK** .
 
    Zostanie wyświetlona strona zawierająca informacje o sposobie pobrania programu InstallShield Limited Edition.
 
@@ -113,7 +115,7 @@ Plik Instalator Windows można utworzyć przy użyciu narzędzia InstallShield L
 
 3. W okienku szablony rozwiń pozycję **Inne typy projektów**, a następnie wybierz szablon **Konfiguracja i wdrożenie** .
 
-4. Na liście typów projektów na potrzeby **instalacji i wdrażania**wybierz opcję **projekt InstallShield Limited Edition**, nazwij projekt, a następnie wybierz przycisk **OK** .
+4. Na liście typów projektów na potrzeby **instalacji i wdrażania** wybierz opcję **projekt InstallShield Limited Edition**, nazwij projekt, a następnie wybierz przycisk **OK** .
 
    Utworzony projekt instalacji InstallShield zostanie wyświetlony w rozwiązaniu.
 
@@ -125,7 +127,7 @@ Projekt **OfficeAddInSetup** można skonfigurować tak, aby zawierał dane wyjś
 
 ### <a name="to-add-the-project-output"></a>Aby dodać dane wyjściowe projektu
 
-1. W **Eksplorator rozwiązań**rozwiń węzeł projektu **OfficeAddInSetup** , a następnie wybierz plik **Asystenta projektu** , który przedstawiono na poniższej ilustracji.
+1. W **Eksplorator rozwiązań** rozwiń węzeł projektu **OfficeAddInSetup** , a następnie wybierz plik **Asystenta projektu** , który przedstawiono na poniższej ilustracji.
 
    ![Plik Asystenta projektu w Eksplorator rozwiązań](../vsto/media/installshield-projectassistant.png "Plik Asystenta projektu w Eksplorator rozwiązań")
 
@@ -163,7 +165,7 @@ W aplikacji Instalatora należy uwzględnić nie tylko poniższe składniki, ale
 
 ### <a name="add-the-net-framework-4-or-the-net-framework-45-as-a-prerequisite"></a>Dodaj .NET Framework 4 lub .NET Framework 4,5 jako warunek wstępny
 
-1. W **Eksplorator rozwiązań**rozwiń węzeł projektu **OfficeAddInSetup** , rozwiń węzeł **Określ dane aplikacji** , a następnie wybierz plik **redystrybucyjny** , który przedstawiono na poniższej ilustracji.
+1. W **Eksplorator rozwiązań** rozwiń węzeł projektu **OfficeAddInSetup** , rozwiń węzeł **Określ dane aplikacji** , a następnie wybierz plik **redystrybucyjny** , który przedstawiono na poniższej ilustracji.
 
    ![Plik redystrybucyjny w Eksplorator rozwiązań](../vsto/media/installshield-redistributablesfile.png "Plik redystrybucyjny w Eksplorator rozwiązań")
 
@@ -209,7 +211,7 @@ Strona **redystrybucyjna** zawiera element o nazwie **Microsoft VSTO 2010 Runtim
 
 4. W Notatniku Zastąp tekst, w którym znajduje się **Identyfikator GUID** , WKLEJAJĄC identyfikator GUID w jego miejscu.
 
-   Element ** &lt; właściwości &gt; ** pliku jest podobny do poniższego.
+   Element **&lt; właściwości &gt;** pliku jest podobny do poniższego.
 
    ```xml
    <properties Id="{87989B73-21DC-4403-8FD1-0C68A41A6D8C}" Description="This prerequisite installs the most recent version of the Microsoft Visual Studio 2010 Tools for Office Runtime." >
@@ -247,7 +249,7 @@ Strona **redystrybucyjna** zawiera element o nazwie **Microsoft VSTO 2010 Runtim
 
 ## <a name="specify-where-to-install-the-solution-on-the-users-computer"></a><a name="Location"></a>Określ, gdzie zainstalować rozwiązanie na komputerze użytkownika
 
-1. W **Eksplorator rozwiązań**rozwiń węzeł **OfficeAddInSetup** , rozwiń węzeł **Organizuj ustawienia** , a następnie wybierz plik **Informacje ogólne** .
+1. W **Eksplorator rozwiązań** rozwiń węzeł **OfficeAddInSetup** , rozwiń węzeł **Organizuj ustawienia** , a następnie wybierz plik **Informacje ogólne** .
 
 2. Na pasku menu wybierz **Widok**  >  **Otwórz**.
 
@@ -271,7 +273,7 @@ Instalacje dla poszczególnych użytkowników wymagają tylko jednego Instalator
 
 ### <a name="to-specify-whether-you-want-to-support-per-user-or-per-computer-installations"></a>Aby określić, czy mają być obsługiwane instalacje dla poszczególnych użytkowników i komputerów
 
-1. W **Eksplorator rozwiązań**rozwiń węzeł projektu **OfficeAddInSetup** , rozwiń węzeł **Organizuj ustawienia** , a następnie wybierz plik **Informacje ogólne** .
+1. W **Eksplorator rozwiązań** rozwiń węzeł projektu **OfficeAddInSetup** , rozwiń węzeł **Organizuj ustawienia** , a następnie wybierz plik **Informacje ogólne** .
 
 2. Na pasku menu wybierz **Widok**  >  **Otwórz**.
 
@@ -285,7 +287,7 @@ Instalacje dla poszczególnych użytkowników wymagają tylko jednego Instalator
 
 ### <a name="to-create-registry-keys"></a>Aby utworzyć klucze rejestru
 
-1. W **Eksplorator rozwiązań**wybierz węzeł **Asystent projektu** .
+1. W **Eksplorator rozwiązań** wybierz węzeł **Asystent projektu** .
 
    Na pasku menu wybierz **Widok**  >  **Otwórz**.
 
@@ -303,21 +305,21 @@ Instalacje dla poszczególnych użytkowników wymagają tylko jednego Instalator
 
    **Instalator dla poszczególnych użytkowników**
 
-   **HKEY_CURRENT_USER \Software\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**
+   **HKEY_CURRENT_USER\Software\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**
 
    **Instalatory dla komputera na podstawie wersji pakietu Office**
 
 | Wersja pakietu Office<br /><br /> | Ścieżka konfiguracji InstallShield<br /><br /> |
 |----------------------------| - |
-| 32-bitowa<br /><br /> | **HKEY_LOCAL_MACHINE \SOFTWARE (wersja 32-bitowa) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
-| 64-bitowa<br /><br /> | **HKEY_LOCAL_MACHINE \SOFTWARE (64-bitowy) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 32-bitowa<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 64-bitowa<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
 
    **Instalatory dla komputera na podstawie wersji systemu Windows**
 
 | Wersja systemu Windows<br /><br /> | Ścieżka konfiguracji InstallShield<br /><br /> |
 |-----------------------------| - |
-| 32-bitowa<br /><br /> | **HKEY_LOCAL_MACHINE \SOFTWARE (wersja 32-bitowa) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
-| 64-bitowa<br /><br /> | **HKEY_LOCAL_MACHINE \SOFTWARE (wersja 32-bitowa) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />**HKEY_LOCAL_MACHINE \SOFTWARE (64-bitowy) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 32-bitowa<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 64-bitowa<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />**HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
 
    > [!NOTE]
    > Instalator programu dla 64-bitowego systemu Windows wymaga dwóch ścieżek rejestru, ponieważ jest możliwe, aby użytkownicy uruchamiali 32-bitowe i 64-bitowe wersje pakietu Office na komputerze z systemem 64-bitowym.
@@ -390,11 +392,11 @@ Aby zmodyfikować właściwości niestandardowe, należy utworzyć program, któ
 
 2. W okienku szablony w obszarze węzła dla języka, którego chcesz użyć, wybierz folder **Windows** .
 
-3. Na liście typów projektów dla **systemu Windows**wybierz szablon **aplikacja konsoli** .
+3. Na liście typów projektów dla **systemu Windows** wybierz szablon **aplikacja konsoli** .
 
 4. Nazwij projekt **SetExcelDocumentProperties**, a następnie wybierz przycisk **OK** .
 
-5. W **Eksplorator rozwiązań**wybierz przycisk **Pokaż wszystkie pliki** , otwórz menu skrótów dla węzła projektu **SetExcelDocumentProperties** , a następnie wybierz **Dodaj odwołanie**.
+5. W **Eksplorator rozwiązań** wybierz przycisk **Pokaż wszystkie pliki** , otwórz menu skrótów dla węzła projektu **SetExcelDocumentProperties** , a następnie wybierz **Dodaj odwołanie**.
 
 6. W oknie dialogowym **Menedżer odwołań** wybierz kartę **rozszerzenia** , a następnie zaznacz pole wyboru obok następujących zestawów, a następnie wybierz przycisk **OK** .
 
@@ -402,7 +404,7 @@ Aby zmodyfikować właściwości niestandardowe, należy utworzyć program, któ
 
    - Microsoft. VisualStudio. Tools. Applications. ServerDocument
 
-7. W **Eksplorator rozwiązań**wybierz plik **program.cs** (dla aplikacji C#) lub plik **Module1. vb** (dla aplikacji Visual Basic).
+7. W **Eksplorator rozwiązań** wybierz plik **program.cs** (dla aplikacji C#) lub plik **Module1. vb** (dla aplikacji Visual Basic).
 
 8. Na pasku menu wybierz **Widok**  >  **Otwórz**.
 
@@ -415,7 +417,7 @@ Aby zmodyfikować właściwości niestandardowe, należy utworzyć program, któ
 
 ### <a name="to-add-a-custom-action-that-runs-your-program"></a>Aby dodać akcję niestandardową, która uruchamia program
 
-1. W **Eksplorator rozwiązań**rozwiń węzeł projektu **OfficeAddInSetup** , a następnie wybierz plik **Asystenta projektu** , który przedstawiono na poniższej ilustracji.
+1. W **Eksplorator rozwiązań** rozwiń węzeł projektu **OfficeAddInSetup** , a następnie wybierz plik **Asystenta projektu** , który przedstawiono na poniższej ilustracji.
 
    ![Plik Asystenta projektu w Eksplorator rozwiązań](../vsto/media/installshield-projectassistant.png "Plik Asystenta projektu w Eksplorator rozwiązań")
 
@@ -431,7 +433,7 @@ Aby zmodyfikować właściwości niestandardowe, należy utworzyć program, któ
 
 5. W węźle **SetExcelDocumentProperties** zaznacz pole wyboru **podstawowe dane wyjściowe** , a następnie wybierz przycisk **OK** .
 
-6. W **Eksplorator rozwiązań**w węźle **OfficeAddInSetup** rozwiń węzeł **Zdefiniuj wymagania instalacji i akcje** , a następnie wybierz folder **Akcje niestandardowe** .
+6. W **Eksplorator rozwiązań** w węźle **OfficeAddInSetup** rozwiń węzeł **Zdefiniuj wymagania instalacji i akcje** , a następnie wybierz folder **Akcje niestandardowe** .
 
 7. Na pasku menu wybierz **Widok**  >  **Otwórz**.
 
@@ -440,7 +442,7 @@ Aby zmodyfikować właściwości niestandardowe, należy utworzyć program, któ
    > [!NOTE]
    > Tylko kilka zdarzeń, które pojawiają się na tej liście, są dostępne w programie InstallShield Limited Edition. W tej procedurze zostanie uruchomiony program przy użyciu zdarzenia **okna dialogowego po zakończeniu instalacji** .
 
-8. Na liście zdarzeń w obszarze **Akcje niestandardowe podczas instalacji**Otwórz menu skrótów dla zdarzenia **okna dialogowego po zakończeniu instalacji** , a następnie wybierz polecenie **nowy plik exe**.
+8. Na liście zdarzeń w obszarze **Akcje niestandardowe podczas instalacji** Otwórz menu skrótów dla zdarzenia **okna dialogowego po zakończeniu instalacji** , a następnie wybierz polecenie **nowy plik exe**.
 
    Akcja niestandardowa o nazwie **NewCustomAction1** pojawia się w obszarze zdarzenia **okna dialogowego po pomyślnym zakończeniu instalacji** . Zestaw właściwości dla akcji niestandardowej pojawia się w okienku obok zdarzeń.
 
@@ -453,7 +455,7 @@ Aby zmodyfikować właściwości niestandardowe, należy utworzyć program, któ
 
 11. W oknie dialogowym **Przeglądaj w poszukiwaniu pliku docelowego** przejdź do pliku **SetExcelDocumentProperties. Primary. Output** , a następnie wybierz przycisk **Otwórz** .
 
-    Lokalizacja tego pliku zależy od folderu określonego dla właściwości **INSTALLDIR** projektu Instalatora. Na przykład w przypadku ustawienia tej właściwości do folderu o nazwie **[osobistyfolder] DemoWorkbookApp**można znaleźć plik **SetExcelDocumentProperties. Primary. Output** , przechodząc do elementu **[folderprogramfiles] \DemoWorkbookApp**.
+    Lokalizacja tego pliku zależy od folderu określonego dla właściwości **INSTALLDIR** projektu Instalatora. Na przykład w przypadku ustawienia tej właściwości do folderu o nazwie **[osobistyfolder] DemoWorkbookApp** można znaleźć plik **SetExcelDocumentProperties. Primary. Output** , przechodząc do elementu **[folderprogramfiles] \DemoWorkbookApp**.
 
     W następnych kilku krokach otrzymasz Identyfikator rozwiązania dokumentu, a następnie przekażesz ten identyfikator jako parametr do aplikacji konsoli. Przejdziesz również do lokalizacji dokumentu, manifestu wdrażania i zestawu dokumentów.
 
@@ -463,11 +465,11 @@ Aby zmodyfikować właściwości niestandardowe, należy utworzyć program, któ
 
 13. Otwórz plik projektu rozwiązania w Notatniku. W przypadku projektów Visual Basic nazwa pliku to *ExcelWorkbook. vbproj*. W przypadku projektów C# Nazwa pliku to *ExcelWorkbook. csproj*.
 
-14. W pliku projektu Wyszukaj element ** &lt; solutionId &gt; ** , skopiuj jego wartość do schowka, a następnie zamknij Notatnik.
+14. W pliku projektu Wyszukaj element **&lt; solutionId &gt;** , skopiuj jego wartość do schowka, a następnie zamknij Notatnik.
 
     Ta wartość jest przekazywany do aplikacji konsoli jako parametr.
 
-15. Na stronie właściwości **NewCustomAction1**ustaw właściwość **wiersza polecenia** na następujący wiersz tekstu.
+15. Na stronie właściwości **NewCustomAction1** ustaw właściwość **wiersza polecenia** na następujący wiersz tekstu.
 
    ```cmd
    /assemblyLocation="[INSTALLDIR]ExcelWorkbook.dll" /deploymentManifestLocation="[INSTALLDIR]ExcelWorkbook.vsto" /documentLocation="[INSTALLDIR]ExcelWorkbook.xlsx" /solutionID="Your Solution ID"
@@ -480,7 +482,7 @@ Aby zmodyfikować właściwości niestandardowe, należy utworzyć program, któ
 
 ## <a name="build-the-setup-project"></a><a name="Build"></a>Tworzenie projektu Instalatora
 
-1. W **Eksplorator rozwiązań**rozwiń węzeł **przygotowanie do wydania** , a następnie wybierz plik **wydań** .
+1. W **Eksplorator rozwiązań** rozwiń węzeł **przygotowanie do wydania** , a następnie wybierz plik **wydań** .
 
 2. Na pasku menu wybierz **Widok**  >  **Otwórz**.
 
@@ -500,9 +502,9 @@ Aby zmodyfikować właściwości niestandardowe, należy utworzyć program, któ
 
 9. Na pasku menu wybierz kolejno opcje **Kompiluj**  >  **kompilacje OfficeAddInSetup**.
 
-   Po zakończeniu kompilacji można zlokalizować plik *setup.exe* projektu **OfficeAddInSetup** w następującej lokalizacji: <em>OfficeAddInSetupProjectRoot</em>**\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1 \\ **
+   Po zakończeniu kompilacji można zlokalizować plik *setup.exe* projektu **OfficeAddInSetup** w następującej lokalizacji: <em>OfficeAddInSetupProjectRoot</em>**\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1 \\**
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Wymagania wstępne dotyczące wdrażania pakietu Office](/previous-versions/bb608617(v=vs.110))
 - [Wdróż rozwiązanie pakietu Office](../vsto/deploying-an-office-solution.md)

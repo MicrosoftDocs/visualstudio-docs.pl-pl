@@ -1,5 +1,7 @@
 ---
 title: Projektowanie i tworzenie rozwiązań pakietu Office
+description: Dowiedz się, w jaki sposób program Visual Studio udostępnia szablony projektów, których można użyć do tworzenia kilku różnych typów rozwiązań pakietu Office.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cd51c377ed20807c5e5e2b26f842c6152bf7c222
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 191de013c94bfede7d1ddac5f3dd0392143e08dc
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808223"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847536"
 ---
 # <a name="design-and-create-office-solutions"></a>Projektowanie i tworzenie rozwiązań pakietu Office
 
@@ -91,7 +93,7 @@ Program Visual Studio zawiera szablony projektów, których można użyć do two
 ## <a name="referenced-assemblies"></a>Przywoływane zestawy
  Zestaw może odwoływać się do innych zestawów, które są wymienione w odwołaniach projektu. Jednak jeden zestaw projektów na poziomie dokumentu nie może odwoływać się do innego zestawu projektu na poziomie dokumentu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Szablony projektów pakietu Office — omówienie](../vsto/office-project-templates-overview.md)
 - [Instrukcje: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Projekty pakietu Office w środowisku programu Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md)

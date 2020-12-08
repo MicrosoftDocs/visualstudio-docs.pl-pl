@@ -1,5 +1,7 @@
 ---
 title: Jak automatyczne zapisywanie w rozwiązaniach pakietu Office
+description: Dowiedz się, jak funkcja Autozapisu jest funkcją dla programów Excel, PowerPoint i Word, która automatycznie i ciągle zapisuje zmiany.
+ms.custom: SEO-VS-2020
 ms.date: 10/26/2018
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ceaf13e24d56060e3d962e108d43c4d87d69fb8c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6108ee35c79ec475de70e874ce0dc6d872cc62c6
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62826686"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846795"
 ---
 # <a name="how-autosave-impacts-office-solutions"></a>Jak automatyczne zapisywanie w rozwiązaniach pakietu Office
 
@@ -26,5 +28,5 @@ Funkcja Autozapisu jest funkcją dla programów Excel, PowerPoint i Word, która
 > [!NOTE]
 > Automatyczne zapisywanie w systemie Windows Desktop, Excel i PowerPoint zostało wprowadzone w 2017 i jest obecnie dostępne dla subskrybentów usługi Office 365. Jeśli zakupiono licencję bezterminową do pakietu Office 2016 lub starszej wersji, obecnie nie masz dostępu do funkcji współtworzenia. (W przypadku usługi Excel Online, programu Excel dla systemu Android, programu Excel dla systemu iOS i programu Excel Mobile w Sklepie Windows jest obsługiwana ta funkcja, chociaż).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Opracowywanie rozwiązań pakietu Office](./developing-office-solutions.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Dodawanie formantów formularzy systemu Windows do dokumentów pakietu Office'
+description: Dowiedz się, jak dodać kontrolki Windows Forms do Microsoft Office Excel i Microsoft Office dokumentów programu Word w czasie projektowania w projektach na poziomie dokumentu.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b12d51ffe3a2e647a067b95d320e8beb70cac384
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a8f073a72db1a18574dff6ab060b1ea069475fbb
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547540"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846782"
 ---
 # <a name="how-to-add-windows-forms-controls-to-office-documents"></a>Instrukcje: Dodawanie formantów Windows Forms do dokumentów pakietu Office
   Możesz dodać kontrolki Windows Forms, aby Microsoft Office Excel i Microsoft Office dokumenty programu Word w czasie projektowania w projektach na poziomie dokumentu. W czasie wykonywania można dodać kontrolki w obszarze dostosowania na poziomie dokumentu i w dodatkach narzędzi VSTO. Na przykład można dodać <xref:Microsoft.Office.Tools.Excel.Controls.ComboBox> kontrolkę do arkusza, aby użytkownicy mogli wybierać z listy opcji.
@@ -44,7 +46,7 @@ ms.locfileid: "85547540"
 
 1. Utwórz lub Otwórz projekt skoroszytu programu Excel lub projekt dokumentu programu Word w programie Visual Studio, aby dokument był widoczny w projektancie. Aby uzyskać informacje na temat tworzenia projektów, zobacz [How to: Create Office projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-2. Na karcie **Formanty standardowe** **przybornika**kliknij kontrolkę, którą chcesz dodać, a następnie przeciągnij ją do dokumentu.
+2. Na karcie **Formanty standardowe** **przybornika** kliknij kontrolkę, którą chcesz dodać, a następnie przeciągnij ją do dokumentu.
 
     > [!NOTE]
     > Po wybraniu kontrolki w programie Excel zobaczysz wartość " **Osadź" (WinForms. Control. host "," ")** na **pasku formuły**. Ten tekst jest wymagany i nie należy go usuwać.
@@ -53,7 +55,7 @@ ms.locfileid: "85547540"
 
 1. Utwórz lub Otwórz projekt skoroszytu programu Excel lub projekt dokumentu programu Word w programie Visual Studio, aby dokument był widoczny w projektancie. Aby uzyskać informacje na temat tworzenia projektów, zobacz [How to: Create Office projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-2. Na karcie **Formanty standardowe** **przybornika**kliknij kontrolkę, którą chcesz dodać.
+2. Na karcie **Formanty standardowe** **przybornika** kliknij kontrolkę, którą chcesz dodać.
 
 3. W dokumencie kliknij miejsce w lewym górnym rogu kontrolki, a następnie przeciągnij się do miejsca, w którym ma się znajdować prawy dolny róg kontrolki.
 
@@ -66,7 +68,7 @@ ms.locfileid: "85547540"
 
 1. Utwórz lub Otwórz projekt skoroszytu programu Excel lub projekt dokumentu programu Word w programie Visual Studio, aby dokument był widoczny w projektancie. Aby uzyskać informacje na temat tworzenia projektów, zobacz [How to: Create Office projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-2. Na karcie **Formanty standardowe** **przybornika**kliknij kontrolkę, którą chcesz dodać.
+2. Na karcie **Formanty standardowe** **przybornika** kliknij kontrolkę, którą chcesz dodać.
 
 3. Jeden dokument, kliknij miejsce, do którego chcesz dodać formant.
 
@@ -79,7 +81,7 @@ ms.locfileid: "85547540"
 
 1. Utwórz lub Otwórz projekt skoroszytu programu Excel lub projekt dokumentu programu Word w programie Visual Studio, aby dokument był widoczny w projektancie. Aby uzyskać informacje na temat tworzenia projektów, zobacz [How to: Create Office projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-2. Na karcie **Formanty standardowe** **przybornika**kliknij dwukrotnie formant, który chcesz dodać.
+2. Na karcie **Formanty standardowe** **przybornika** kliknij dwukrotnie formant, który chcesz dodać.
 
      Kontrolka zostanie dodana do dokumentu w centrum dokumentu lub aktywnego okienka.
 
@@ -90,7 +92,7 @@ ms.locfileid: "85547540"
 
 1. Utwórz lub Otwórz projekt skoroszytu programu Excel lub projekt dokumentu programu Word w programie Visual Studio, aby dokument był widoczny w projektancie. Aby uzyskać informacje na temat tworzenia projektów, zobacz [How to: Create Office projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-2. Na karcie **Formanty standardowe** **przybornika**kliknij kontrolkę, którą chcesz dodać, a następnie naciśnij klawisz **Enter** .
+2. Na karcie **Formanty standardowe** **przybornika** kliknij kontrolkę, którą chcesz dodać, a następnie naciśnij klawisz **Enter** .
 
      Kontrolka zostanie dodana do dokumentu w centrum dokumentu lub aktywnego okienka.
 
@@ -130,7 +132,7 @@ ms.locfileid: "85547540"
      [!code-vb[Trin_WordAddInDynamicControls#7](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#7)]
      [!code-csharp[Trin_WordAddInDynamicControls#7](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#7)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Kontrolki Windows Forms w dokumentach pakietu Office — omówienie](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [Dodawanie kontrolek do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [Instrukcje: zmiana rozmiaru kontrolek w komórkach arkusza](../vsto/how-to-resize-controls-within-worksheet-cells.md)

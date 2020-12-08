@@ -1,5 +1,7 @@
 ---
 title: Kojarzenie regionu formularza z klasą wiadomości programu Outlook
+description: Dowiedz się, w jaki sposób można określić, które Microsoft Office elementy programu Outlook będą wyświetlać region formularza, kojarząc region formularza z klasą wiadomości każdego elementu.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 45db262b6bf7843a3893c5d60f0b6eaea5fcb70b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 213b167bf7fe10c83b028fce2d97c67cd837d272
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254573"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847003"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Kojarzenie regionu formularza z klasą wiadomości programu Outlook
   Można określić, które Microsoft Office elementy programu Outlook będą wyświetlać region formularza, kojarząc region formularza z klasą wiadomości każdego elementu. Na przykład jeśli chcesz dołączyć region formularza do dołu elementu poczty, możesz skojarzyć region formularza z `IPM.Note` klasą wiadomości.
@@ -103,7 +105,7 @@ ms.locfileid: "71254573"
 > [!NOTE]
 > Program Visual Studio nie sprawdza, czy nazwy klas komunikatów, które zostały wprowadzone są poprawne lub prawidłowe.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dostęp do regionu formularza w czasie wykonywania](../vsto/accessing-a-form-region-at-run-time.md)
 - [Tworzenie regionów formularzy programu Outlook](../vsto/creating-outlook-form-regions.md)
 - [Przewodnik: Projektowanie regionu formularza programu Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)

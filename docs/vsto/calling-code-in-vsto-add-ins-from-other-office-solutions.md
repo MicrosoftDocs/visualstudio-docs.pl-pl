@@ -1,5 +1,7 @@
 ---
 title: Wywoływanie kodu w dodatkach VSTO z innych rozwiązań pakietu Office
+description: Dowiedz się, jak udostępnić obiekt w dodatku VSTO do innych rozwiązań, w tym innych rozwiązań Microsoft Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 584406098f058c17b3dd215dda9c8c4e9498cf46
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fad3f107487e4736ccd0a6aa59ea5a801b5f72e5
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255326"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847848"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>Wywoływanie kodu w dodatkach VSTO z innych rozwiązań pakietu Office
   Można uwidocznić obiekt w dodatku VSTO dla innych rozwiązań, w tym innych rozwiązań Microsoft Office. Jest to przydatne, jeśli dodatek narzędzi VSTO udostępnia usługę, która umożliwia korzystanie z innych rozwiązań. Na przykład jeśli masz dodatek narzędzi VSTO dla programu Microsoft Office Excel, który wykonuje obliczenia dotyczące danych finansowych z usługi sieci Web, inne rozwiązania mogą wykonywać te obliczenia przez wywołanie dodatku VSTO programu Excel w czasie wykonywania.
@@ -56,7 +58,7 @@ ms.locfileid: "71255326"
 2. Zastąp <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> metodę w `ThisAddIn` klasie. Zwróć wystąpienie klasy, które chcesz uwidocznić dla innych rozwiązań.
 
 ### <a name="define-the-class-you-want-to-expose-to-other-solutions"></a>Zdefiniuj klasę, którą chcesz uwidocznić dla innych rozwiązań
- Co najmniej Klasa, którą chcesz uwidocznić musi być publiczna, musi mieć <xref:System.Runtime.InteropServices.ComVisibleAttribute> atrybut ustawiony na **wartość true**i musi uwidaczniać Interfejs [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) .
+ Co najmniej Klasa, którą chcesz uwidocznić musi być publiczna, musi mieć <xref:System.Runtime.InteropServices.ComVisibleAttribute> atrybut ustawiony na **wartość true** i musi uwidaczniać Interfejs [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) .
 
  Zalecanym sposobem uwidocznienia interfejsu [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) jest wykonanie następujących czynności:
 
@@ -142,7 +144,7 @@ utilities.ImportData();
 
  W tym przykładzie, jeśli spróbujesz rzutować wartość właściwości COMAddIn. Object na `AddInUtilities` klasę zamiast `IAddInUtilities` interfejsu, kod zgłosi <xref:System.InvalidCastException> .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dodatki narzędzi VSTO programu](../vsto/programming-vsto-add-ins.md)
 - [Przewodnik: wywoływanie kodu w dodatku VSTO z języka VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)
 - [Opracowywanie rozwiązań pakietu Office](../vsto/developing-office-solutions.md)

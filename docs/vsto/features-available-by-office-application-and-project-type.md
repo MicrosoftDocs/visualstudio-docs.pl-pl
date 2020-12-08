@@ -1,5 +1,7 @@
 ---
 title: Funkcje dostępne według aplikacji pakietu Office i typu projektu
+description: Dowiedz się, w jaki sposób program Visual Studio zawiera kilka typów szablonów projektów, które obsługują różne scenariusze biznesowe dla Microsoft Office aplikacji.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ba24bdeac9ad51d0173e765c8cb793be2473baf6
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 24db499602642f6ec980628d290ec8b5dd07fed3
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585435"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847809"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Funkcje dostępne według aplikacji pakietu Office i typu projektu
   Program Visual Studio zawiera kilka typów szablonów projektów, które obsługują różne scenariusze biznesowe dla Microsoft Office aplikacji, w tym następujące typy:
@@ -50,7 +52,7 @@ ms.locfileid: "91585435"
 ## <a name="features-available-in-different-project-types"></a>Funkcje dostępne w różnych typach projektów
  W poniższej tabeli pokazano, które typy projektów zapewniają każdą funkcję.
 
-|Cechy|Typy projektów, które udostępniają funkcję|Dodatkowe informacje|
+|Cechy|Typy projektów, które udostępniają funkcję|Dalsze informacje|
 |-------------|--------------------------------------------|---------------------|
 |Okienko akcji.|Projekty na poziomie dokumentu.|[Przegląd okienka Akcje](../vsto/actions-pane-overview.md)|
 |Wdrożenie ClickOnce.|Projekty a i na poziomie dokumentu.|[Wdróż rozwiązanie pakietu Office](../vsto/deploying-an-office-solution.md)|
@@ -66,7 +68,7 @@ ms.locfileid: "91585435"
 |Dostosowania wstążki.|Projekty na poziomie dokumentu.<br /><br /> Projekty dodatków VSTO dla następujących aplikacji:<br /><br /> — Excel<br />— InfoPath (tylko InfoPath 2013 i InfoPath 2010)<br />-Outlook<br />— PowerPoint<br />— Projekt<br />— Visio<br />-Word|[Omówienie wstążki](../vsto/ribbon-overview.md)|
 |Visual Document Designer.|Projekty na poziomie dokumentu.|[Projekty pakietu Office w środowisku programu Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md)|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wprowadzenie &#40;Programowanie Office w programie Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Omówienie programowania rozwiązań dla pakietu Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Przegląd okienka Akcje](../vsto/actions-pane-overview.md)

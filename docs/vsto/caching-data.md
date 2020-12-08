@@ -1,5 +1,7 @@
 ---
 title: Dane pamięci podręcznej
+description: Dowiedz się, jak można buforować obiekty danych w dostosowaniu na poziomie dokumentu, tak aby dane mogły być dostępne w trybie offline lub bez otwierania Microsoft Office Word lub Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c6e0f6d7fcf9920ddb8861712b7c5f8bf04506fc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: db22378477daffd4562a9d60c6b30bc7b96e58e2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62939418"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847874"
 ---
 # <a name="cache-data"></a>Dane pamięci podręcznej
   Można buforować obiekty danych w dostosowaniu na poziomie dokumentu, aby można było uzyskać dostęp do danych w trybie offline lub bez otwierania Microsoft Office Word lub Microsoft Office Excel. Aby można było buforować obiekt, obiekt musi mieć typ danych spełniający określone wymagania. Wiele typowych typów danych w .NET Framework spełnia te wymagania, w tym <xref:System.String> , <xref:System.Data.DataSet> i <xref:System.Data.DataTable> .
@@ -79,11 +81,11 @@ ms.locfileid: "62939418"
  Aby uzyskać więcej informacji, zobacz [jak: dane w pamięci podręcznej w dokumencie chronionym hasłem](../vsto/how-to-cache-data-in-a-password-protected-document.md).
 
 ## <a name="prevent-data-loss-when-adding-null-values-to-the-data-cache"></a>Zapobiegaj utracie danych podczas dodawania wartości null do pamięci podręcznej danych
- Po dodaniu obiektów do pamięci podręcznej danych, wszystkie obiekty w pamięci podręcznej muszą zostać zainicjowane do wartości innej niż**null** przed zapisaniem i zamknięciem dokumentu. Jeśli dowolny buforowany obiekt ma wartość **null** , gdy dokument jest zapisywany i zamknięty, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] program automatycznie usunie wszystkie obiekty z pamięci podręcznej.
+ Po dodaniu obiektów do pamięci podręcznej danych, wszystkie obiekty w pamięci podręcznej muszą zostać zainicjowane do wartości innej niż **null** przed zapisaniem i zamknięciem dokumentu. Jeśli dowolny buforowany obiekt ma wartość **null** , gdy dokument jest zapisywany i zamknięty, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] program automatycznie usunie wszystkie obiekty z pamięci podręcznej.
 
  Jeśli dodasz obiekt z wartością **null** do pamięci podręcznej danych przy użyciu <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> atrybutu w czasie projektowania, możesz użyć <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> klasy, aby zainicjować buforowane obiekty danych przed otwarciem dokumentu. Jest to przydatne, jeśli chcesz zainicjować dane z pamięci podręcznej na serwerze bez zainstalowanego programu Word lub Excel, zanim dokument zostanie otwarty przez użytkownika końcowego. Aby uzyskać więcej informacji, zobacz [dostęp do danych w dokumentach na serwerze](../vsto/accessing-data-in-documents-on-the-server.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Instrukcje: dane z pamięci podręcznej do użycia w trybie offline lub na serwerze](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)
 - [Instrukcje: programowane buforowanie źródła danych w dokumencie pakietu Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)
 - [Instrukcje: buforowanie danych w dokumencie chronionym hasłem](../vsto/how-to-cache-data-in-a-password-protected-document.md)

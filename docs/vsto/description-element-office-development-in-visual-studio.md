@@ -1,7 +1,8 @@
 ---
 title: '&lt;Description — &gt; element (Programowanie Office w Visual Studio)'
+description: Dowiedz się, że element Description w przestrzeni nazw vstov4 przechowuje opis rozwiązania pakietu Office, które pojawia się w oknie dialogowym Dodatki COM.
 titleSuffix: ''
-ms.custom: secdec18
+ms.custom: secdec18, SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c8b54f8ccf2181a053ae5d2fe221b49840cd72c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 377599e770a93faca9e283ec543091508b773bc7
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520270"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846236"
 ---
 # <a name="ltdescriptiongt-element-office-development-in-visual-studio"></a>&lt;Description — &gt; element (Programowanie Office w Visual Studio)
   `description`Element `vstov4` przestrzeni nazw przechowuje opis rozwiązania pakietu Office, które pojawia się w oknie dialogowym dodatki COM Microsoft Office aplikacji.
@@ -52,7 +53,7 @@ ms.locfileid: "85520270"
 </vstov4:description>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md)
 - [Manifesty wdrożenia dla rozwiązań pakietu Office](../vsto/deployment-manifests-for-office-solutions.md)

@@ -1,5 +1,7 @@
 ---
 title: Przykładowa implementacja oceny wyrażeń | Microsoft Docs
+description: Dowiedz się, w jaki sposób program Visual Studio wywołuje ParseText w celu utworzenia obiektu IDebugExpression2 dla wyrażenia w systemie Windows.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf994a61ed9283463cd01aa468018f6acce5e209
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba5baf52f18f638730ecc5f3b7c016889503cbbb
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713099"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847705"
 ---
 # <a name="sample-implementation-of-expression-evaluation"></a>Przykładowa implementacja oceny wyrażenia
 > [!IMPORTANT]
@@ -107,6 +109,6 @@ STDMETHODIMP CExpressionEvaluator::Parse(
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Oceń wyrażenie okno wyrażeń kontrolnych](../../extensibility/debugger/evaluating-a-watch-window-expression.md)
 - [Oceń wyrażenie kontrolne](../../extensibility/debugger/evaluating-a-watch-expression.md)

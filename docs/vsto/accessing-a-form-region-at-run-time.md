@@ -1,5 +1,7 @@
 ---
 title: Dostęp do regionu formularza w czasie wykonywania
+description: Dowiedz się, jak uzyskać dostęp do regionu formularza w różnych typach projektów i wersjach Microsoft Office w czasie wykonywania.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5dd8818b57a1aa33b70254303150d8f00e36cc02
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d0276405c023717c88f334d6231939d59f79ee4e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255796"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847419"
 ---
 # <a name="access-a-form-region-at-run-time"></a>Dostęp do regionu formularza w czasie wykonywania
 
@@ -72,7 +74,7 @@ ms.locfileid: "71255796"
 
  Aby uzyskać więcej informacji na temat sposobu tworzenia właściwości w Visual Basic, zobacz [How to: Create a Property (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/procedures/how-to-create-a-property).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wytyczne dotyczące tworzenia regionów formularzy programu Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)
 - [Przewodnik: Projektowanie regionu formularza programu Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
 - [Instrukcje: Dodawanie regionu formularza do projektu dodatku programu Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)

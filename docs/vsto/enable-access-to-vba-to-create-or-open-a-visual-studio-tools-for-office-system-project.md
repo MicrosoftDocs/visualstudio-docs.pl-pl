@@ -1,8 +1,8 @@
 ---
 title: Dostęp VBA do tworzenia/otwierania projektu systemu narzędzi VSTO
 titleSuffix: ''
-decsprition: You must explicitly enable access to the Office VBA project system before you can create or open a Visual Studio Tools for Office system project
-ms.custom: seodec18
+description: Przed utworzeniem lub otwarciem Visual Studio Tools projektu systemu Office należy dowiedzieć się, że należy jawnie włączyć dostęp do systemu projektów VBA w pakiecie Office.
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 71e30a89bdf8547eab9ed9c51b07c49e014b7302
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 62477f7cd37a7d5a416e8f42fb7eb2d2a8e43828
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584862"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846132"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>Włącz dostęp do języka VBA, aby utworzyć lub otworzyć Visual Studio Tools dla projektu systemu Microsoft Office
 
@@ -55,7 +55,7 @@ Aby można było utworzyć lub otworzyć Visual Studio Tools dla projektu system
 
 3. Kliknij pozycję **Centrum zaufania**, a następnie kliknij pozycję **Ustawienia Centrum zaufania**.
 
-4. W **Centrum zaufania**kliknij pozycję **Ustawienia makr**.
+4. W **Centrum zaufania** kliknij pozycję **Ustawienia makr**.
 
 5. Zaznacz lub usuń zaznaczenie **zaufania dostępu do modelu obiektów projektu VBA,** aby włączyć lub wyłączyć dostęp do projektów Visual Basic.
 
@@ -79,7 +79,7 @@ Aby można było utworzyć lub otworzyć Visual Studio Tools dla projektu system
 
 3. Kliknij pozycję **Centrum zaufania**, a następnie kliknij pozycję **Ustawienia Centrum zaufania**.
 
-4. W **Centrum zaufania**kliknij pozycję **Ustawienia makr**.
+4. W **Centrum zaufania** kliknij pozycję **Ustawienia makr**.
 
 5. W sekcji **Ustawienia makr** wybierz odpowiednie ustawienie.
 
@@ -109,7 +109,7 @@ Aby można było utworzyć lub otworzyć Visual Studio Tools dla projektu system
 
 7. Otwórz menu rozwijane obok **Visual Basic for Applications**, a następnie kliknij pozycję **Uruchom z mojego komputera**.
 
-8. Kliknij pozycję **Kontynuuj**.
+8. Kliknij przycisk **Kontynuuj**.
 
 9. Kliknij przycisk **Zamknij**.
 
@@ -125,5 +125,5 @@ Aby można było utworzyć lub otworzyć Visual Studio Tools dla projektu system
 
 5. Wybierz pozycję **Wykryj i napraw błędy w instalacji pakietu Office**, a następnie kliknij przycisk **Instaluj**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Zabezpieczanie rozwiązań pakietu Office](../vsto/securing-office-solutions.md)

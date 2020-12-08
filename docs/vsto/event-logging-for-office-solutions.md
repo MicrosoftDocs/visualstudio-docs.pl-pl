@@ -1,5 +1,7 @@
 ---
 title: Rejestrowanie zdarzeń dla rozwiązań pakietu Office
+description: Dowiedz się, jak za pomocą podglądu zdarzeń w systemie Windows zobaczyć komunikaty o wyjątkach, które są przechwytywane przez Visual Studio Tools dla środowiska uruchomieniowego pakietu Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 480a355ee2af321341c54b90edcc582d49102186
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 74aaf7c1c07c349fa3669332a41e4e7d06ba86f1
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62951947"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847770"
 ---
 # <a name="event-logging-for-office-solutions"></a>Rejestrowanie zdarzeń dla rozwiązań pakietu Office
   Podgląd zdarzeń w systemie Windows może służyć do wyświetlania komunikatów o wyjątkach, które są przechwytywane przez [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] program podczas instalowania lub odinstalowywania rozwiązań pakietu Office. Możesz użyć tych komunikatów z rejestratora zdarzeń, aby rozwiązać problemy dotyczące instalacji i wdrażania.
@@ -96,6 +98,6 @@ ms.locfileid: "62951947"
 
 6. Kliknij przycisk **OK**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wdróż rozwiązanie pakietu Office](../vsto/deploying-an-office-solution.md)
 - [Rozwiązywanie problemów z wdrażaniem rozwiązań pakietu Office](../vsto/troubleshooting-office-solution-deployment.md)

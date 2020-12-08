@@ -1,5 +1,7 @@
 ---
 title: Typowe zadania w programowaniu pakietu Office
+description: Dowiedz się, jak programować względem danych w dostosowaniu na poziomie dokumentu bez konieczności używania modelu obiektów programu Microsoft Office Word lub Office Excel.
+ms.custom: SEO-VS-2020SS
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c82b4dec0c92f19933b045040ed0f1fcecb5b10b
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 4f6fae2b7d446035a08e3fcb77bcffaaed6de3a9
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809862"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846301"
 ---
 # <a name="common-tasks-in-office-programming"></a>Typowe zadania w programowaniu pakietu Office
   Ten temat ma pomóc w znalezieniu odpowiedzi na następujące kategorie typowych pytań dotyczących programowania rozwiązań pakietu Office przy użyciu programu Visual Studio.
@@ -230,7 +232,7 @@ ms.locfileid: "90809862"
 
 - [Instrukcje: zmiana ścieżki instalacji rozwiązania pakietu Office](/previous-versions/bb608626(v=vs.110)).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wprowadzenie &#40;Programowanie Office w programie Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Funkcje dostępne według aplikacji pakietu Office i typu projektu](../vsto/features-available-by-office-application-and-project-type.md)
 - [Przykłady i przewodniki dotyczące programowania pakietu Office](../vsto/office-development-samples-and-walkthroughs.md)

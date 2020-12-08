@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: zmiana położenia karty na Wstążce'
+description: Można zmienić kolejność kart niestandardowych na Wstążce i umieścić karty niestandardowe przed lub po karcie wbudowanej na Wstążce przy użyciu edytora kolekcji kart.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8f821ea2a469fc06f80a7aaea96d07274d02a81d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 21fd7f17f7a990f95ce5c8b781e85807a10608c4
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544862"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846769"
 ---
 # <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>Instrukcje: zmiana położenia karty na Wstążce
   Można zmienić kolejność kart niestandardowych na Wstążce przy użyciu **edytora kolekcji kart**. Możesz umieścić karty niestandardowe przed lub po karcie wbudowanej na Wstążce. Karta wbudowana to karta, która znajduje się już na Wstążce aplikacji Microsoft Office. Na przykład karta **dane** jest wbudowaną kartą w programie Excel.
@@ -26,7 +28,7 @@ ms.locfileid: "85544862"
 
 ### <a name="to-change-the-order-of-tabs-on-the-ribbon"></a>Aby zmienić kolejność kart na Wstążce
 
-1. Wybierz plik kodu wstążki (plik*VB* lub *cs* ) w **Eksplorator rozwiązań**.
+1. Wybierz plik kodu wstążki (plik *VB* lub *cs* ) w **Eksplorator rozwiązań**.
 
 2. W menu **Widok** kliknij pozycję **Projektant**.
 
@@ -36,7 +38,7 @@ ms.locfileid: "85544862"
 
      Zostanie wyświetlony **Edytor kolekcji kart** .
 
-5. W **edytorze kolekcji kart**na liście **Członkowie** wybierz kartę, którą chcesz przenieść, a następnie kliknij strzałkę w górę lub w dół, aby zmienić kolejność tabulacji.
+5. W **edytorze kolekcji kart** na liście **Członkowie** wybierz kartę, którą chcesz przenieść, a następnie kliknij strzałkę w górę lub w dół, aby zmienić kolejność tabulacji.
 
 ### <a name="to-position-a-tab-before-or-after-a-built-in-tab-on-the-ribbon"></a>Aby umieścić kartę przed lub po karcie wbudowanej na Wstążce
 
@@ -56,9 +58,9 @@ ms.locfileid: "85544862"
 
      Aby uzyskać listę identyfikatorów sterowania, zobacz [pliki pomocy pakietu office 2010: identyfikatory formantów interfejsu użytkownika pakietu Office Fluent](https://www.microsoft.com/download/details.aspx?id=6627).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Omówienie wstążki](../vsto/ribbon-overview.md)
 - [Projektant wstążki](../vsto/ribbon-designer.md)
-- [XML — wstążka](../vsto/ribbon-xml.md)
+- [XML — Wstążka](../vsto/ribbon-xml.md)
 - [Przewodnik: Tworzenie niestandardowej karty przy użyciu projektanta wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [Przewodnik: Tworzenie niestandardowej karty przy użyciu języka XML wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)

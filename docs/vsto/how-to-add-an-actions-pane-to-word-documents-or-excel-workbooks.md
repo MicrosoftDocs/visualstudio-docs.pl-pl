@@ -1,5 +1,7 @@
 ---
 title: Dodawanie okienka akcji do dokumentów programu Word lub skoroszytów programu Excel
+description: Dowiedz się, że w celu dodania okienka akcji do dokumentu programu Word Microsoft Office lub skoroszytu programu Microsoft Excel należy najpierw utworzyć Windows Forms kontrolkę użytkownika.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2d24ec3a17c9e0824c6b7aaffeaaac02c1c4f76e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69d675209f2a3ac47e8681da8fca73c5cd86e95d
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546227"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848069"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>Porady: dodawanie okienek akcji do dokumentów programu Word lub arkuszy programu Excel
   Aby dodać okienko akcji do dokumentu programu Word Microsoft Office lub skoroszytu programu Microsoft Excel, najpierw utwórz Windows Forms kontrolkę użytkownika. Następnie Dodaj kontrolkę użytkownika do <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> właściwości `ThisDocument.ActionsPane` pola (Word) lub `ThisWorkbook.ActionsPane` pola (Excel) w projekcie.
@@ -75,7 +77,7 @@ ms.locfileid: "85546227"
      [!code-csharp[Trin_VstcoreActionsPaneWord#15](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#15)]
      [!code-vb[Trin_VstcoreActionsPaneWord#15](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#15)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Przegląd okienka Akcje](../vsto/actions-pane-overview.md)
 - [Przewodnik: wstawianie tekstu do dokumentu z okienka akcji](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)
 - [Instrukcje: zarządzanie układem sterowania w okienkach akcji](../vsto/how-to-manage-control-layout-on-actions-panes.md)

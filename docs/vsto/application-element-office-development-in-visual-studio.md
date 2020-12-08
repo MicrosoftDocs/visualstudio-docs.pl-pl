@@ -1,5 +1,7 @@
 ---
 title: '&lt;Application — &gt; element (Programowanie Office w Visual Studio)'
+description: Dowiedz się, w jaki sposób element aplikacji przestrzeni nazw vstav3 otacza opis rozwiązań pakietu Office.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3540df77b4498376dcde389730e17e7506647fb8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 37ab88939b6a5a753f67621697a63903c5a35eb2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543744"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847042"
 ---
 # <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;Application — &gt; element (Programowanie Office w Visual Studio)
   `application`Element `vstav3` przestrzeni nazw otacza opis rozwiązań pakietu Office. Elementy podrzędne są różne w przypadku dostosowań na poziomie dokumentu i dodatków narzędzi VSTO.
@@ -119,7 +121,7 @@ ms.locfileid: "85543744"
 </vstav3:application>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md)
 - [Manifesty wdrożenia dla rozwiązań pakietu Office](../vsto/deployment-manifests-for-office-solutions.md)

@@ -1,5 +1,7 @@
 ---
 title: Przykładowa implementacja zmiany wartości | Microsoft Docs
+description: Wszystkie elementy lokalne wyświetlane w oknie zmiennych lokalnych mają skojarzony obiekt IDebugProperty2. Dowiedz się, w jaki sposób program Visual Studio aktualizuje wartość lokalną w pamięci.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d7b712d2a97b02bed215c4996d3309341fb8ff9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5193fd07c1a891f052814446815bfbc836c6a9a7
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713115"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847731"
 ---
 # <a name="sample-implementation-of-changing-values"></a>Przykładowa implementacja zmieniających się wartości
 > [!IMPORTANT]
@@ -420,6 +422,6 @@ HRESULT FieldSetValue(
 
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Zmiana wartości elementu lokalnego](../../extensibility/debugger/changing-the-value-of-a-local.md)
 - [Kontekst oceny](../../extensibility/debugger/evaluation-context.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Konfigurowanie zabezpieczeń listy dołączania'
+description: Skonfiguruj monit zaufania ClickOnce, aby określić, czy użytkownicy końcowi mają możliwość instalowania rozwiązań pakietu Office przez zapisanie decyzji zaufania do listy dołączania.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 459cf3f33197939a916a5f11a94bbaf09e8142e3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1f9eca5150e019906805adf40e5c9b6af8a3c14e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541638"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846730"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>Instrukcje: Konfigurowanie zabezpieczeń listy dołączania
   Jeśli masz uprawnienia administratora, możesz skonfigurować [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] monit zaufania, aby kontrolować, czy użytkownicy końcowi mają możliwość instalacji rozwiązań pakietu Office, zapisując decyzję zaufania do listy dołączania. Aby uzyskać informacje na temat list dołączanych, zobacz [zaufanie do rozwiązań pakietu Office przy użyciu list dołączania](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).
@@ -46,7 +48,7 @@ ms.locfileid: "85541638"
 
 2. Znajdź następujący klucz rejestru:
 
-     **\ HKEY_LOCAL_MACHINE \SOFTWARE\MICROSOFT \\ . NETFramework\Security\TrustManager\PromptingLevel**
+     **\ HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\ . NETFramework\Security\TrustManager\PromptingLevel**
 
      Jeśli klucz nie istnieje, utwórz go.
 
@@ -55,10 +57,10 @@ ms.locfileid: "85541638"
     |Podklucz wartości ciągu|Wartość|
     |-------------------------|-----------|
     |**Internet**|**AuthenticodeRequired**|
-    |**UntrustedSites**|**Wyłączone**|
-    |**MójKomputer**|**Włączone**|
-    |**LocalIntranet**|**Włączone**|
-    |**TrustedSites**|**Włączone**|
+    |**UntrustedSites**|**Disabled**|
+    |**MójKomputer**|**Włączono**|
+    |**LocalIntranet**|**Włączono**|
+    |**TrustedSites**|**Włączono**|
 
      Domyślnie **Internet** ma wartość **AuthenticodeRequired** , a **UntrustedSites** ma wartość **Disabled**.
 
@@ -105,7 +107,7 @@ ms.locfileid: "85541638"
 
 2. Znajdź następujący klucz rejestru:
 
-     **\ HKEY_LOCAL_MACHINE \SOFTWARE\MICROSOFT \\ . NETFramework\Security\TrustManager\PromptingLevel**
+     **\ HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\ . NETFramework\Security\TrustManager\PromptingLevel**
 
      Jeśli klucz nie istnieje, utwórz go.
 
@@ -113,7 +115,7 @@ ms.locfileid: "85541638"
 
     |Podklucz wartości ciągu|Wartość|
     |-------------------------|-----------|
-    |**UntrustedSites**|**Wyłączone**|
+    |**UntrustedSites**|**Disabled**|
     |**Internet**|**AuthenticodeRequired**|
     |**MójKomputer**|**AuthenticodeRequired**|
     |**LocalIntranet**|**AuthenticodeRequired**|
@@ -164,17 +166,17 @@ ms.locfileid: "85541638"
 
 2. Utwórz następujący klucz rejestru, jeśli ten jeszcze nie istnieje:
 
-     **\ HKEY_LOCAL_MACHINE \SOFTWARE\MICROSOFT \\ . NETFramework\Security\TrustManager\PromptingLevel**
+     **\ HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\ . NETFramework\Security\TrustManager\PromptingLevel**
 
 3. Dodaj następujące podklucze jako **wartość ciągu**, jeśli jeszcze nie istnieją, ze skojarzonymi wartościami.
 
     |Podklucz wartości ciągu|Wartość|
     |-------------------------|-----------|
-    |**UntrustedSites**|**Wyłączone**|
-    |**Internet**|**Wyłączone**|
-    |**MójKomputer**|**Wyłączone**|
-    |**LocalIntranet**|**Wyłączone**|
-    |**TrustedSites**|**Wyłączone**|
+    |**UntrustedSites**|**Disabled**|
+    |**Internet**|**Disabled**|
+    |**MójKomputer**|**Disabled**|
+    |**LocalIntranet**|**Disabled**|
+    |**TrustedSites**|**Disabled**|
 
 ### <a name="to-disable-the-inclusion-list-programmatically"></a>Aby programowo wyłączyć listę dołączania
 
@@ -207,6 +209,6 @@ ms.locfileid: "85541638"
 
 3. Skompiluj i uruchom aplikację.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Ufanie rozwiązaniom pakietu Office przy użyciu list dołączania](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)
 - [Zabezpieczanie rozwiązań pakietu Office](../vsto/securing-office-solutions.md)

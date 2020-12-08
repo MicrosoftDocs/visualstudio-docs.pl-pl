@@ -1,5 +1,7 @@
 ---
 title: Automatyzowanie programu Excel za pomocą obiektów rozszerzonych
+description: Dowiedz się, że podczas opracowywania rozwiązań programu Excel w programie Visual Studio można używać elementów hosta i kontrolek hosta w swoich rozwiązaniach.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -20,15 +22,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 65734f5397bae8c35fb8e312041d0600b8fa84e9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 912385950721de1d1e0b98c1b6582552210aa04a
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254346"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846964"
 ---
 # <a name="automate-excel-by-using-extended-objects"></a>Automatyzowanie programu Excel za pomocą obiektów rozszerzonych
-  Podczas opracowywania rozwiązań programu Excel w programie Visual Studio można używać *elementów hosta* i *kontrolek hosta*w swoich rozwiązaniach. Są to obiekty rozszerzające niektóre często używane obiekty w modelu obiektów programu Excel (czyli model obiektów, który jest udostępniany przez podstawowy zestaw międzyoperacyjny dla programu Excel), taki jak <xref:Microsoft.Office.Interop.Excel.Worksheet> obiekty i <xref:Microsoft.Office.Interop.Excel.Range> . Obiekty rozszerzone zachowują się jak obiekty programu Excel, na których się opierają, ale dodają do obiektów dodatkowe funkcje, takie jak nowe zdarzenia i możliwości powiązania danych.
+  Podczas opracowywania rozwiązań programu Excel w programie Visual Studio można używać *elementów hosta* i *kontrolek hosta* w swoich rozwiązaniach. Są to obiekty rozszerzające niektóre często używane obiekty w modelu obiektów programu Excel (czyli model obiektów, który jest udostępniany przez podstawowy zestaw międzyoperacyjny dla programu Excel), taki jak <xref:Microsoft.Office.Interop.Excel.Worksheet> obiekty i <xref:Microsoft.Office.Interop.Excel.Range> . Obiekty rozszerzone zachowują się jak obiekty programu Excel, na których się opierają, ale dodają do obiektów dodatkowe funkcje, takie jak nowe zdarzenia i możliwości powiązania danych.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
@@ -60,7 +62,7 @@ ms.locfileid: "71254346"
 
 - [XmlMappedRange — formant](../vsto/xmlmappedrange-control.md)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Instrukcje: wypełnianie kontrolek ListObject danymi](../vsto/how-to-fill-listobject-controls-with-data.md)
 - [Instrukcje: Dodawanie kontrolek wykresu do arkuszy](../vsto/how-to-add-chart-controls-to-worksheets.md)
 - [Instrukcje: Dodawanie formantów ListObject do arkuszy](../vsto/how-to-add-listobject-controls-to-worksheets.md)

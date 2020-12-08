@@ -1,5 +1,7 @@
 ---
 title: Rejestrowanie niestandardowego aparatu debugowania | Microsoft Docs
+description: Dowiedz się, w jaki sposób aparat debugowania rejestruje się jako fabrykę klas, zgodnie z konwencjami COM, jak również w przypadku rejestracji w programie Visual Studio za pomocą rejestru.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a664385594f139e2c3c5a18a0d8a59e23c13df0a
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 01d7190bbf087bb60ac670341d82078e94c81c52
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011843"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847185"
 ---
 # <a name="register-a-custom-debug-engine"></a>Rejestrowanie niestandardowego aparatu debugowania
 Aparat debugowania musi się zarejestrować jako fabryka klas, w ramach Konwencji COM, a także zarejestrować się w programie Visual Studio za pomocą podklucza rejestru programu Visual Studio.

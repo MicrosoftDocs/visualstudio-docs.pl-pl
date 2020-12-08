@@ -1,5 +1,7 @@
 ---
 title: Przegląd właściwości dokumentu niestandardowego
+description: Dowiedz się, że podczas kompilowania projektu na poziomie dokumentu program Visual Studio dodaje dwie właściwości niestandardowe do dokumentu w projekcie.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3d9fd14753f447b929faf5aecd37277529e0dd19
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 8c30e0b3253e19316eed24fa26500cd55a3dd515
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "92298463"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847796"
 ---
 # <a name="custom-document-properties-overview"></a>Przegląd właściwości dokumentu niestandardowego
 
@@ -50,7 +52,7 @@ Ta właściwość zawiera ciąg, który zawiera szczegółowe informacje dotycz�
 
   *SolutionId* jest identyfikatorem GUID, który służy [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] do identyfikowania rozwiązania. *SolutionId* jest generowany automatycznie podczas kompilowania projektu. Termin **vstolocal** wskazuje [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , że zestaw powinien być załadowany z tego samego folderu co dokument.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Architektura rozwiązań pakietu Office w programie Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 - [Architektura dostosowań na poziomie dokumentu](../vsto/architecture-of-document-level-customizations.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Programowane stosowanie koloru do zakresów programu Excel'
+description: Dowiedz się, że aby zastosować kolor do tekstu w zakresie komórek, użyj kontrolki NamedRange lub natywnego obiektu zakresu programu Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0d4a99e2e71e6a87b304ceea45a3cd595f911ff1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 63a38bb4fb6f8f8ab35b9e1104a1b93d6d757446
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543458"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848004"
 ---
 # <a name="how-to-programmatically-apply-color-to-excel-ranges"></a>Instrukcje: Programowane stosowanie koloru do zakresów programu Excel
   Aby zastosować kolor do tekstu w obrębie zakresu komórek, użyj <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolki lub natywnego obiektu zakresu programu Excel.
@@ -50,7 +52,7 @@ ms.locfileid: "85543458"
      [!code-csharp[Trin_VstcoreExcelAutomation#67](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#67)]
      [!code-vb[Trin_VstcoreExcelAutomation#67](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#67)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Pracuj z zakresami](../vsto/working-with-ranges.md)
 - [NamedRange — formant](../vsto/namedrange-control.md)
 - [Instrukcje: Programowane stosowanie stylów do zakresów w skoroszytach](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)

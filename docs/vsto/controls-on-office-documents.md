@@ -1,5 +1,7 @@
 ---
 title: Formanty w dokumentach pakietu Office
+description: Dowiedz się, jak za pomocą narzędzi programistycznych pakietu Office w programie Visual Studio dodać kontrolki Windows Forms i formanty hosta do dokumentów programu Word i arkuszy programu Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 160897a37ff6a8b335479b42a80f4186f176cab6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 203edcf2b77cfff3fb557ce7c1c8fea7592e17ea
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254401"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847991"
 ---
 # <a name="controls-on-office-documents"></a>Formanty w dokumentach pakietu Office
   Możesz użyć narzędzi programistycznych pakietu Office w programie Visual Studio, aby dodać kontrolki Windows Forms i *kontrolki hosta* do dokumentów programu Word i arkuszy programu Excel. Formanty hosta to obiekty, które poszerzają różne obiekty interfejsu użytkownika w modelach programów Word i Excel.

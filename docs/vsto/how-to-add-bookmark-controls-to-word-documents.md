@@ -1,5 +1,6 @@
 ---
 title: 'Instrukcje: Dodawanie kontrolek zakładek do dokumentów programu Word'
+description: Należy dowiedzieć się, że w projektach na poziomie dokumentu można dodać kontrolki zakładki do dokumentu w projekcie w czasie projektowania lub w czasie wykonywania.
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: de5868674790239b8374ef9796308280588ae96e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a6ccf3f5a355cdad682026453691a4203c95a814
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547254"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847471"
 ---
 # <a name="how-to-add-bookmark-controls-to-word-documents"></a>Instrukcje: Dodawanie kontrolek zakładek do dokumentów programu Word
   W projektach na poziomie dokumentu można dodać <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki do dokumentu w projekcie w czasie projektowania lub w czasie wykonywania. W projektach dodatku VSTO można dodać <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki do dowolnego otwartego dokumentu w czasie wykonywania.
@@ -41,7 +42,7 @@ ms.locfileid: "85547254"
 ## <a name="add-bookmark-controls-at-design-time"></a><a name="designtime"></a> Dodawanie kontrolek zakładek w czasie projektowania
  Istnieje kilka sposobów dodawania <xref:Microsoft.Office.Tools.Word.Bookmark> formantów do dokumentu w projekcie na poziomie dokumentu w czasie projektowania:
 
-- Z **przybornika**programu Visual Studio.
+- Z **przybornika** programu Visual Studio.
 
    Możesz przeciągnąć <xref:Microsoft.Office.Tools.Word.Bookmark> formant z **przybornika** do dokumentu. Możesz wybrać ten sposób, jeśli używasz już **przybornika** , aby dodać kontrolki Windows Forms do dokumentu.
 
@@ -125,7 +126,7 @@ ms.locfileid: "85547254"
      [!code-vb[Trin_WordAddInDynamicControls#5](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#5)]
      [!code-csharp[Trin_WordAddInDynamicControls#5](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#5)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Automatyzowanie programu Word za pomocą obiektów rozszerzonych](../vsto/automating-word-by-using-extended-objects.md)
 - [Elementy hosta i formanty hosta — Omówienie](../vsto/host-items-and-host-controls-overview.md)
 - [Dodawanie kontrolek do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md)

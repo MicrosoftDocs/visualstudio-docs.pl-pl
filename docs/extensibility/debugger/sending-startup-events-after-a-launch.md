@@ -1,5 +1,7 @@
 ---
 title: Wysyłanie zdarzeń uruchamiania po uruchomieniu | Microsoft Docs
+description: Zapoznaj się z serią zdarzeń uruchamiania wysyłanych przez aparat debugowania do sesji debugowania po dołączeniu aparatu debugowania do programu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c71db002420a2b822bffd34f2ae05e712f6a4bb9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99b094fd1019e0d7dea09e2953cb4f31e03b80dc
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713013"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847887"
 ---
 # <a name="send-startup-events-after-a-launch"></a>Wysyłaj zdarzenia uruchamiania po uruchomieniu
 Po dołączeniu aparatu debugowania (DE) do programu wysyła on serię zdarzeń uruchomienia z powrotem do sesji debugowania.
@@ -43,6 +45,6 @@ Po dołączeniu aparatu debugowania (DE) do programu wysyła on serię zdarzeń 
 
   Gdy kod jest ładowany i gotowy do uruchomienia, ale przed wykonaniem dowolnego kodu, ANULUJe to zdarzenie załadowania modelu SDM [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) . Na koniec, jeśli program nie jest jeszcze uruchomiony, kończy wysyłanie zdarzenia punktu wejścia [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) , sygnalizując, że program osiągnął główny punkt wejścia i jest gotowy do debugowania.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Kontrola wykonywania](../../extensibility/debugger/control-of-execution.md)
 - [Zadania debugowania](../../extensibility/debugger/debugging-tasks.md)

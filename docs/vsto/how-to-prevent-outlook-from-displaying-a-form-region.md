@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: zapobieganie wyświetlaniu regionu formularza przez program Outlook'
+description: Dowiedz się, jak zapobiegać wyświetlaniu przez Microsoft Office programu Outlook regionu formularza dla określonego elementu.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 90da255beb0a85a302158feb1f9d5cc4981437eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f247bf82d51fda6d321b45c16f91b857300cc1e4
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520137"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847679"
 ---
 # <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>Instrukcje: zapobieganie wyświetlaniu regionu formularza przez program Outlook
   Mogą wystąpić sytuacje, w których nie chcesz, aby program Microsoft Office Outlook wyświetlał region formularza dla określonego elementu. Na przykład jeśli element Contact nie zawiera adresu służbowego, można zapobiec wyświetlaniu regionu formularza, który pokazuje lokalizację firmy na mapie.
@@ -39,7 +41,7 @@ ms.locfileid: "85520137"
  [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]
  [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Tworzenie regionów formularzy programu Outlook](../vsto/creating-outlook-form-regions.md)
 - [Przewodnik: Projektowanie regionu formularza programu Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
 - [Instrukcje: Dodawanie regionu formularza do projektu dodatku programu Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)

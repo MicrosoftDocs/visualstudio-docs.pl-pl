@@ -1,5 +1,7 @@
 ---
 title: Dodawanie niestandardowych części XML do dokumentów za pomocą dodatków narzędzi VSTO
+description: Dowiedz się, jak przechowywać dane XML w następujących typach dokumentów, tworząc niestandardową część XML w dodatku VSTO.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 92c00ea69069b7374f5f595cc6f198aac23d1f91
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b153fe3e7c68ed6a8288ff69a30e16dd32c448a
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538297"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847718"
 ---
 # <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>Instrukcje: Dodawanie niestandardowych części XML do dokumentów za pomocą dodatków narzędzi VSTO
   Dane XML można przechowywać w następujących typach dokumentów, tworząc niestandardową część XML w dodatku VSTO:
@@ -67,7 +69,7 @@ ms.locfileid: "85538297"
 
 ## <a name="to-add-a-custom-xml-part-to-a-powerpoint-presentation"></a>Aby dodać niestandardową część XML do prezentacji programu PowerPoint
 
-1. Dodaj nowy <xref:Microsoft.Office.Core.CustomXMLPart> obiekt do kolekcji [Microsoft. Office. Interop. PowerPoint. _Presentation. CustomXMLParts](/previous-versions/office/developer/office-2010/ff760806%28v%3doffice.14%29) w prezentacji. <xref:Microsoft.Office.Core.CustomXMLPart>Zawiera ciąg XML, który ma być przechowywany w prezentacji.
+1. Dodaj nowy <xref:Microsoft.Office.Core.CustomXMLPart> obiekt do kolekcji [Microsoft.Office.Interop.PowerPoint._Presentation. CustomXMLParts](/previous-versions/office/developer/office-2010/ff760806%28v%3doffice.14%29) w prezentacji. <xref:Microsoft.Office.Core.CustomXMLPart>Zawiera ciąg XML, który ma być przechowywany w prezentacji.
 
      Poniższy przykład kodu dodaje niestandardową część XML do określonej prezentacji.
 
@@ -76,11 +78,11 @@ ms.locfileid: "85538297"
 
 2. Dodaj `AddCustomXmlPartToPresentation` metodę do `ThisAddIn` klasy w projekcie dodatku VSTO dla programu PowerPoint.
 
-3. Wywołaj metodę z innego kodu w projekcie. Na przykład, aby utworzyć niestandardową część XML, gdy użytkownik otwiera prezentację, wywołaj metodę z procedury obsługi zdarzeń dla zdarzenia [Microsoft. Office. Interop. PowerPoint. EApplication_Event. AfterPresentationOpen](/previous-versions/office/developer/office-2010/ff762843(v=office.14)) .
+3. Wywołaj metodę z innego kodu w projekcie. Na przykład, aby utworzyć niestandardową część XML, gdy użytkownik otwiera prezentację, wywołaj metodę z procedury obsługi zdarzeń dla zdarzenia [Microsoft.Office.Interop.PowerPoint.EApplication_Event. AfterPresentationOpen](/previous-versions/office/developer/office-2010/ff762843(v=office.14)) .
 
 ## <a name="robust-programming"></a>Niezawodne programowanie
  Dla uproszczenia w tym przykładzie użyto ciągu XML, który jest definiowany jako zmienna lokalna w metodzie. Zazwyczaj należy uzyskać kod XML ze źródła zewnętrznego, takiego jak plik lub baza danych.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Niestandardowe części XML — Omówienie](../vsto/custom-xml-parts-overview.md)
 - [Instrukcje: Dodawanie niestandardowych części XML do dostosowywania na poziomie dokumentu](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)

@@ -1,5 +1,7 @@
 ---
 title: Tworzenie rozwiązań pakietu Office
+description: Poznaj różnice między kompilowaniem i debugowaniem projektów pakietu Office oraz kompilowaniem i debugowaniem innych typów projektów w programie Visual Studio, takich jak Windows Forms.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -26,12 +28,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3f89e20b710584c678c035f4d85034e90bb11323
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d942a7818c3c71e0859c9271b329688734682f2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "69551844"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847939"
 ---
 # <a name="build-office-solutions"></a>Tworzenie rozwiązań pakietu Office
   Ogólnie rzecz biorąc, kompilowanie i Debugowanie projektów pakietu Office jest takie samo jak Kompilowanie i debugowanie innych typów projektów w programie Visual Studio, takich jak Windows Forms. W tematach w tej sekcji opisano różnice, które istnieją. Aby uzyskać ogólne informacje o sposobie tworzenia aplikacji, zobacz [Kompilowanie i kompilowanie w programie Visual Studio](../ide/compiling-and-building-in-visual-studio.md).

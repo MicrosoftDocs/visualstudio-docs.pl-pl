@@ -1,5 +1,7 @@
 ---
 title: Wysyłanie zdarzeń | Microsoft Docs
+description: Dowiedz się, w jaki sposób debuger i aparat debugowania wykorzystują model zdarzeń oparty na modelu DCOM. Zdarzenia są wysyłane jako obiekty COM.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ec0d3aa29da562147b71b8efde49baf07d8ae0b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0262868ae442bfdd8b99c16f59e000f4ebfc35c5
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713043"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847913"
 ---
 # <a name="send-events"></a>Wysyłanie zdarzeń
 Mechanizm komunikacji między debugerem a aparatem debugowania (DE) jest modelem zdarzeń opartym na modelu DCOM. Zdarzenia są wysyłane jako obiekty COM, a każde zdarzenie ma parametry, które określają:

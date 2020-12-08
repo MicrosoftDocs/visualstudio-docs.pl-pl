@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Programowane dodawanie kształtów do dokumentu programu Visio'
+description: Dowiedz się, jak dodać kształty do dokumentu programu Microsoft Office Visio, pobierając wzorce z wzornika i upuszczając kształty na aktywnej stronie.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e8eb3ad837f699a1bb0bbc327b6e892a20866e0a
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 819560d584f267bfa54ae2bcfc61a162f45e0383
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584233"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848030"
 ---
 # <a name="how-to-programmatically-add-shapes-to-a-visio-document"></a>Instrukcje: Programowane dodawanie kształtów do dokumentu programu Visio
   Możesz dodać kształty do dokumentu programu Microsoft Office Visio, pobierając wzorce z wzornika i upuszczając kształty na aktywnej stronie.
@@ -37,7 +39,7 @@ ms.locfileid: "91584233"
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#13](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#13)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#13](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#13)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Rozwiązania programu Visio](../vsto/visio-solutions.md)
 - [Model obiektów programu Visio — Omówienie](../vsto/visio-object-model-overview.md)
 - [Współpraca z kształtami programu Visio](../vsto/working-with-visio-shapes.md)

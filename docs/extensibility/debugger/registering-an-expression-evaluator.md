@@ -1,5 +1,7 @@
 ---
 title: Rejestrowanie ewaluatora wyrażeń | Microsoft Docs
+description: Dowiedz się, w jaki sposób ewaluatora wyrażeń musi się zarejestrować jako fabryka klas zarówno w środowisku Windows COM, jak i w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 600f7c8a2e2957cddf23ccc82b0872617e491940
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8f26eddf7191ee4393dd2ca986fe7a1d2c3af9e2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713196"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847146"
 ---
 # <a name="register-an-expression-evaluator"></a>Rejestrowanie ewaluatora wyrażeń
 > [!IMPORTANT]
@@ -25,7 +27,7 @@ ms.locfileid: "80713196"
  Ewaluatora wyrażeń (EE) musi być zarejestrowana jako fabryka klas zarówno w środowisku Windows COM, jak i w programie Visual Studio. Konfiguracja EE jest ustawiana jako biblioteka DLL, aby została wprowadzona do przestrzeni adresowej aparatu debugowania (DE) lub przestrzeni adresowej programu Visual Studio, w zależności od tego, który obiekt tworzy wystąpienie programu EE.
 
 ## <a name="managed-code-expression-evaluator"></a>Ewaluatora wyrażeń kodu zarządzanego
- Zarządzany kod EE jest implementowany jako Biblioteka klas, która jest biblioteką DLL, która zarejestruje się ze środowiskiem COM, zazwyczaj uruchamiana przez wywołanie *regpkg.exe*programu VSIP. Rzeczywisty proces zapisywania kluczy rejestru dla środowiska COM jest obsługiwany automatycznie.
+ Zarządzany kod EE jest implementowany jako Biblioteka klas, która jest biblioteką DLL, która zarejestruje się ze środowiskiem COM, zazwyczaj uruchamiana przez wywołanie *regpkg.exe* programu VSIP. Rzeczywisty proces zapisywania kluczy rejestru dla środowiska COM jest obsługiwany automatycznie.
 
  Metoda klasy głównej jest oznaczona przy użyciu <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> , wskazując, że metoda ma być wywoływana, gdy biblioteka DLL jest zarejestrowana w modelu com. Ta metoda rejestracji, często wywoływana `RegisterClass` , wykonuje zadanie rejestrowania biblioteki DLL w programie Visual Studio. Odpowiadająca `UnregisterClass` (oznaczona znakiem <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> ), powoduje, że nie ma wpływu `RegisterClass` na to, kiedy Biblioteka DLL zostanie odinstalowana.
 Te same wpisy rejestru są wykonywane jak w przypadku EE pisanych w kodzie niezarządzanym. Jedyną różnicą jest to, że nie ma żadnych funkcji pomocnika, takich jak `SetEEMetric` wykonywanie pracy. Poniżej znajduje się przykład procesu rejestracji i wyrejestrowywania.
@@ -120,7 +122,7 @@ namespace EEMC
     > [!NOTE]
     > `metricLanguage``GUID`Identyfikuje język według nazwy, ale jest `guidLang` argumentem `SetEEMetric` , który wybiera język. Po wygenerowaniu przez kompilator pliku informacji o debugowaniu należy napisać odpowiednie polecenie, aby uzyskać informacje o tym, które `guidLang` EE mają być używane. Zwykle prosi dostawcę symboli dla tego języka `GUID` , który jest przechowywany w pliku informacji o debugowaniu.
 
-3. Rejestruje w programie Visual Studio, tworząc klucze w obszarze HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio \\ *x. y*, gdzie *x. y* jest wersją programu Visual Studio do zarejestrowania.
+3. Rejestruje w programie Visual Studio, tworząc klucze w obszarze HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *x. y*, gdzie *x. y* jest wersją programu Visual Studio do zarejestrowania.
 
 ### <a name="example"></a>Przykład
  Poniższa funkcja pokazuje, jak kod niezarządzany (C++) EE rejestruje się i wyrejestrowuje z programu Visual Studio.
@@ -209,6 +211,6 @@ static HRESULT RegisterMetric( bool registerIt )
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Pisanie ewaluatora wyrażeń CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
 - [Pomocnicy zestawu SDK na potrzeby debugowania](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: dostosowywanie wbudowanej karty'
+description: Dowiedz się, jak dodać grupy i kontrolki do wbudowanej karty. Karta wbudowana to karta, która znajduje się już na Wstążce aplikacji Microsoft Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5f73ec7a8555a5e5d569d4316ca619747550bf11
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ac002b4c9ebacaf9cb522b583d6c4c9580b7bf2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547189"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846639"
 ---
 # <a name="how-to-customize-a-built-in-tab"></a>Instrukcje: dostosowywanie wbudowanej karty
   Do wbudowanej karty można dodać grupy i kontrolki. Karta wbudowana to karta, która znajduje się już na Wstążce aplikacji Microsoft Office. Na przykład karta **dane** jest wbudowaną kartą w programie Excel. Po utworzeniu grupy niestandardowej pojawia się ona jako Ostatnia na karcie, ale można ją przenieść w dowolnym miejscu na karcie.
@@ -45,7 +47,7 @@ ms.locfileid: "85547189"
 
      Aby uzyskać listę identyfikatorów sterowania, zobacz [pliki pomocy pakietu office 2010: identyfikatory formantów interfejsu użytkownika pakietu Office Fluent](https://www.microsoft.com/download/details.aspx?id=6627).
 
-5. Na karcie **kontrolki wstążki pakietu Office** w **przyborniku**przeciągnij grupy na kartę.
+5. Na karcie **kontrolki wstążki pakietu Office** w **przyborniku** przeciągnij grupy na kartę.
 
     > [!NOTE]
     > Wbudowane grupy nie są wyświetlane w projektancie. W związku z tym jedynym sposobem ustalenia, czy pracujesz z wbudowaną kartą, jest sprawdzenie właściwości **ControlID** karty.
@@ -66,10 +68,10 @@ ms.locfileid: "85547189"
 
      Aby uzyskać listę identyfikatorów sterowania, zobacz [pliki pomocy pakietu office 2010: identyfikatory formantów interfejsu użytkownika pakietu Office Fluent](https://www.microsoft.com/download/details.aspx?id=6627).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Omówienie wstążki](../vsto/ribbon-overview.md)
 - [Projektant wstążki](../vsto/ribbon-designer.md)
-- [XML — wstążka](../vsto/ribbon-xml.md)
+- [XML — Wstążka](../vsto/ribbon-xml.md)
 - [Przewodnik: Tworzenie niestandardowej karty przy użyciu projektanta wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [Przewodnik: Tworzenie niestandardowej karty przy użyciu języka XML wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)
 - [Instrukcje: wprowadzenie do dostosowywania wstążki](../vsto/how-to-get-started-customizing-the-ribbon.md)

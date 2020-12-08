@@ -1,5 +1,7 @@
 ---
 title: Wdróż rozwiązanie pakietu Office
+description: Rozwiązania dla pakietu Office można wdrażać za technologii ClickOnce lub Instalatora Windows. Korzystając z technologii ClickOnce, można zmniejszyć liczbę kroków, które wymagają wdrożenia rozwiązania.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24ec10c42935ac961218f910fbef98d51f5f5569
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e10e922e346dc2ff1d289de94b398b7afd8f3f18
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79416513"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846314"
 ---
 # <a name="deploy-an-office-solution"></a>Wdróż rozwiązanie pakietu Office
   Rozwiązania dla pakietu Office można wdrażać za technologii ClickOnce lub Instalatora Windows. Funkcja ClickOnce pozwala zmniejszyć liczbę kroków niezbędnych do wdrożenia i aktualizowania rozwiązania. Z kolei Instalator Windows umożliwia pełną kontrolę nad sposobem instalowania rozwiązania oraz doborem stron wyświetlanych przez instalatora podczas instalacji rozwiązania przez użytkowników.
@@ -41,7 +43,7 @@ ms.locfileid: "79416513"
 ## <a name="deploy-a-solution-by-using-windows-installer"></a>Wdróż rozwiązanie przy użyciu Instalator Windows
  Podczas wdrażania rozwiązania przy użyciu Instalatora Windows następuje rozpowszechnienie programu instalacyjnego do użytkowników, którzy następnie sami instalują z niego rozwiązanie. Program instalacyjny może zainstalować rozwiązanie równocześnie dla wszystkich użytkowników komputera, a nie tylko dla bieżącego użytkownika. Oferuje również nieco więcej kontroli nad opcjami wyświetlanymi użytkownikom podczas instalowania rozwiązania. Można na przykład ustawić wyświetlanie umowy licencyjnej albo pozwolić użytkownikom na instalowanie określonych składników rozwiązania. Jednak w przypadku aktualizacji rozwiązania trzeba dostarczyć nowy program instalacyjny. Zobacz [wdrażanie rozwiązania pakietu Office przy użyciu Instalator Windows](../vsto/deploying-a-vsto-solution-by-using-windows-installer.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Zabezpieczanie rozwiązań pakietu Office](../vsto/securing-office-solutions.md)
 - [Wdrażanie rozwiązania pakietu Office przy użyciu technologii ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)
 - [Wdróż rozwiązanie pakietu Office przy użyciu Instalator Windows](../vsto/deploying-a-vsto-solution-by-using-windows-installer.md)

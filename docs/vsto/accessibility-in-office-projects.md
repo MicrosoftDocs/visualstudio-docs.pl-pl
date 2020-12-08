@@ -1,5 +1,7 @@
 ---
 title: Ułatwienia dostępu w projektach pakietu Office
+description: Dowiedz się, w jaki sposób projekty Microsoft Office zawierają wiele funkcji ułatwień dostępu, które umożliwiają tworzenie niestandardowych rozwiązań spełniających standardowe wymagania dotyczące ułatwień dostępu.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8bd74f4d61c74a4dc348f7a615e103b283a15fc0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: de877ccc2d2a036bf03b0888a7edf455b17788a4
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73189619"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847367"
 ---
 # <a name="accessibility-in-office-projects"></a>Ułatwienia dostępu w projektach pakietu Office
 
@@ -84,7 +86,7 @@ Program Visual Studio ma następujące ograniczenia związane z trybami wyświet
 
 Aby obejść te ograniczenia, można użyć lupy. Lupa to narzędzie do wyświetlania w systemie Windows, które tworzy osobne okno, które wyświetla powiększoną część ekranu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Opracowywanie rozwiązań pakietu Office](../vsto/developing-office-solutions.md)
 - [Formanty w dokumentach pakietu Office](../vsto/controls-on-office-documents.md)

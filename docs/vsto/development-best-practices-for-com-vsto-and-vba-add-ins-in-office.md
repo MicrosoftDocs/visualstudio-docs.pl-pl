@@ -1,5 +1,7 @@
 ---
 title: 'Najlepsze rozwiązania programistyczne: COM, VSTO, & Dodatki VBA w pakiecie Office'
+description: Zapoznaj się z zalecanymi najlepszymi rozwiązaniami dotyczącymi tworzenia dodatków COM, VSTO i VBA dla Microsoft Office.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 07/25/2017
 ms.topic: conceptual
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4e536c48004d9c8ff729ac5fb064e04e02c6884b
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e7387b58bae486588687fe018453fafb5d6571f7
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91581199"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846899"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Najlepsze rozwiązania w zakresie programowania dla dodatków COM, VSTO i VBA w pakiecie Office
   Jeśli tworzysz Dodatki COM, VSTO lub VBA dla pakietu Office, postępuj zgodnie z najlepszymi rozwiązaniami programistycznymi opisanymi w tym artykule.   Dzięki temu:

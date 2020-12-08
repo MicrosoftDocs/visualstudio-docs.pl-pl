@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Tworzenie obsługi zdarzeń w projektach pakietu Office'
+description: Dowiedz się więcej o kilku sposobach tworzenia domyślnych programów obsługi zdarzeń dla formantów w Visual Basic i C#.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee85d89dcb990cebd595dadbd7b28add4a7b371a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f87889c13021a7c0a43b58564210db34301abdf4
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538310"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846704"
 ---
 # <a name="how-to-create-event-handlers-in-office-projects"></a>Instrukcje: Tworzenie obsługi zdarzeń w projektach pakietu Office
   Istnieje kilka sposobów tworzenia programów obsługi zdarzeń w Visual Basic i C#. W widoku Projekt można utworzyć domyślne programy obsługi zdarzeń dla kontrolek, klikając dwukrotnie formant lub korzystając z okienka zdarzenia okna **Właściwości** , aby utworzyć programy obsługi dla każdego zdarzenia na kontrolce. Jeśli jednak Jesteś w widoku kodu, możesz nie chcieć przełączyć się do widok Projekt, aby utworzyć procedurę obsługi zdarzeń.
@@ -50,7 +52,7 @@ ms.locfileid: "85538310"
 
      Program Visual Studio automatycznie uzupełnia wiersz kodu, tworzy program obsługi zdarzeń i przenosi punkt wstawiania do nowo utworzonego programu obsługi zdarzeń.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Pisanie kodu w rozwiązaniach pakietu Office](../vsto/writing-code-in-office-solutions.md)
 - [Przewodnik: program dla zdarzeń kontrolki NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)
 - [Tworzenie rozwiązań pakietu Office](../vsto/building-office-solutions.md)

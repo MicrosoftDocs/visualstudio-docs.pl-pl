@@ -1,5 +1,7 @@
 ---
 title: Łączenie języka VBA i dostosowań na poziomie dokumentu
+description: Dowiedz się, jak używać kodu Visual Basic for Applications (VBA) w dokumencie, który jest częścią dostosowania na poziomie dokumentu dla Microsoft Office Word lub Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -24,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b3bab9c132439c6efa53842f1e13c6c5be31db00
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 59d0e9122bf35ac6f40799d91d3b52614d027f50
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "70977604"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846405"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>Łączenie języka VBA i dostosowań na poziomie dokumentu
   Możesz użyć kodu Visual Basic for Applications (VBA) w dokumencie, który jest częścią dostosowania na poziomie dokumentu dla Microsoft Office Word lub Microsoft Office Excel. Można wywołać kod języka VBA w dokumencie z zestawu dostosowania lub można skonfigurować projekt, aby umożliwić kod VBA w dokumencie, aby wywołać kod w zestawie dostosowywania.
@@ -90,7 +92,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 
   - Dla programu Word: *. docm* lub *. doc*
 
-  - Dla programu Excel: *xlsm*, *. xltm*, *. xls*lub *. xlt*
+  - Dla programu Excel: *xlsm*, *. xltm*, *. xls* lub *. xlt*
 
 - Dokument musi już zawierać projekt VBA, który zawiera kod VBA.
 
@@ -213,7 +215,7 @@ GetManagedClass(pdispInteropObject Object) As Object
 
 3. Ustawia właściwość **ReferenceAssemblyFromVbaProject** elementu hosta na **wartość true**.
 
-   Po ustawieniu właściwości **EnableVbaCallers** z powrotem na **wartość false**program Visual Studio wykonuje następujące zadania:
+   Po ustawieniu właściwości **EnableVbaCallers** z powrotem na **wartość false** program Visual Studio wykonuje następujące zadania:
 
 4. Usuwa <xref:Microsoft.VisualBasic.ComClassAttribute> <xref:System.Runtime.InteropServices.ComVisibleAttribute> atrybuty i z `ThisDocument` klasy.
 
@@ -249,7 +251,7 @@ GetManagedClass(pdispInteropObject Object) As Object
 |Po ustawieniu właściwości **EnableVbaCallers** lub **ReferenceAssemblyFromVbaProject** komunikat o błędzie stwierdza, że numer wersji określony przez <xref:System.Reflection.AssemblyVersionAttribute> jest nieprawidłowy.|Upewnij się, że <xref:System.Reflection.AssemblyVersionAttribute> Deklaracja w pliku *AssemblyInfo.cs* lub *AssemblyInfo. vb* w projekcie ma ustawiony prawidłowy numer wersji zestawu. Aby uzyskać informacje o prawidłowych numerach wersji zestawu, zobacz <xref:System.Reflection.AssemblyVersionAttribute> Klasa.|
 |Po zmianie nazwy zestawu dostosowania kod języka VBA, który wywołuje do zestawu dostosowania, przestanie działać.|Jeśli zmienisz nazwę zestawu dostosowania po udostępnieniu go w kodzie VBA, link między projektem VBA w dokumencie a zestawem dostosowywania zostanie przerwany. Aby rozwiązać ten problem, Zmień właściwość **ReferenceFromVbaAssembly** w projekcie na **Fałsz** , a następnie z powrotem na **wartość true**, a następnie Zastąp wszystkie odwołania do starej nazwy zestawu w kodzie VBA z nową nazwą zestawu.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Instrukcje: Uwidacznianie kodu w języku VBA w projekcie Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)
 - [Instrukcje: Uwidacznianie kodu w języku VBA w projekcie programu Visual C&#35;](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)
 - [Przewodnik: wywoływanie kodu z VBA w projekcie Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)

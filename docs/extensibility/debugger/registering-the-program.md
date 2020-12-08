@@ -1,5 +1,7 @@
 ---
 title: Rejestrowanie programu | Microsoft Docs
+description: Dowiedz się, jak debugowany program jest rejestrowany przy użyciu portu, gdy silnik debugowania uzyska port.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b68fa67f784d155288482ad724b632ed5ba5fa41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 80c3d13cc7319e43390a7e9e6f4eb42a5a87c780
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713169"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847099"
 ---
 # <a name="register-the-program"></a>Rejestrowanie programu
 Po uzyskaniu przez aparat debugowania portu reprezentowanego przez interfejs [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) , następnym krokiem w celu debugowania programu jest zarejestrowanie go z portem. Po zarejestrowaniu program jest dostępny do debugowania przy użyciu jednej z następujących metod:
@@ -104,6 +106,6 @@ Po uzyskaniu przez aparat debugowania portu reprezentowanego przez interfejs [ID
 
     ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Pobieranie portu](../../extensibility/debugger/getting-a-port.md)
 - [Włączanie debugowania programu](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

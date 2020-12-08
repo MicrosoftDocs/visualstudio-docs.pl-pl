@@ -1,5 +1,7 @@
 ---
 title: Tworzenie regionów formularzy programu Outlook
+description: Dowiedz się, jak za pomocą regionów formularzy dostosować formularze programu Microsoft Outlook w celu ułatwienia projektowania, opracowywania i debugowania regionów formularzy.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8a999ca11427533690628fb92f28e93d22cf0971
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f3273c02416cac54dfd244ba4f163fb5d726413c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255912"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847965"
 ---
 # <a name="create-outlook-form-regions"></a>Tworzenie regionów formularzy programu Outlook
   Za pomocą regionów formularza można dostosowywać Microsoft Office formularzy programu Outlook. Program Visual Studio udostępnia zaawansowane narzędzia, które ułatwiają projektowanie, opracowywanie i debugowanie regionów formularzy.
@@ -116,11 +118,11 @@ ms.locfileid: "71255912"
 
  Istnieją trzy sposoby otwierania projektanta regionów formularza:
 
-- W **Eksplorator rozwiązań**kliknij dwukrotnie plik kodu regionu formularza.
+- W **Eksplorator rozwiązań** kliknij dwukrotnie plik kodu regionu formularza.
 
-- W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy plik kodu regionu formularza, a następnie kliknij pozycję **Projektant widoków**.
+- W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy plik kodu regionu formularza, a następnie kliknij pozycję **Projektant widoków**.
 
-- W **Eksplorator rozwiązań**wybierz plik kodu regionu formularza, a następnie w menu **Widok** kliknij polecenie **Projektant**.
+- W **Eksplorator rozwiązań** wybierz plik kodu regionu formularza, a następnie w menu **Widok** kliknij polecenie **Projektant**.
 
   Projektant regionów formularza obsługuje tylko formanty zarządzane. Nie można dodać natywnych kontrolek programu Outlook.
 

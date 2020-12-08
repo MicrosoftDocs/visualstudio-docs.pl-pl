@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Programowane Dołączanie plików do elementów poczty e-mail programu Outlook'
+description: Dowiedz się, jak dołączać pliki do Microsoft Office elementów programu Outlook. Ten przykład dołącza plik do nowego elementu poczty i wysyła go do Armando Pinto.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2427ffc634976462e27eb788259184ce69347769
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 54617bd61a6b45e3b105bce71342ea1a97f63050
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585330"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847393"
 ---
 # <a name="how-to-programmatically-attach-files-to-outlook-email-items"></a>Instrukcje: Programowane Dołączanie plików do elementów poczty e-mail programu Outlook
   Ten przykład dołącza plik do nowego elementu poczty i wysyła go do Armando Pinto. W przykładzie założono, że osoba o nazwie Armando Pinto istnieje jako odbiorca.
@@ -32,7 +34,7 @@ ms.locfileid: "91585330"
  [!code-csharp[Trin_Outlook_RL_AttachFiles#1](../vsto/codesnippet/CSharp/Trin_Outlook_RL_AttachFiles/thisaddin.cs#1)]
  [!code-vb[Trin_Outlook_RL_AttachFiles#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_AttachFiles/thisaddin.vb#1)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Pracuj z elementami poczty](../vsto/working-with-mail-items.md)
 - [Instrukcje: Programowane wysyłanie wiadomości e-mail](../vsto/how-to-programmatically-send-e-mail-programmatically.md)
 - [Instrukcje: programowe zapisywanie załączników z elementów poczty e-mail programu Outlook](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)
