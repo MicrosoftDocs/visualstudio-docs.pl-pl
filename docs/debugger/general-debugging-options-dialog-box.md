@@ -1,5 +1,7 @@
 ---
 title: Ogólne, debugowanie, Opcje — okno dialogowe | Microsoft Docs
+description: Ustaw opcje debugera programu Visual Studio, aby spełniały Twoje potrzeby debugowania. Można skonfigurować zachowanie przerwania, poziomy debugowania, zachowanie wyświetlania i wiele innych.
+ms.custom: SEO-VS-2020
 ms.date: 06/04/2020
 ms.topic: reference
 f1_keywords:
@@ -21,16 +23,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5b03d7b45e488d7e8026a7d6835bbfba1efa210
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b052c2cce3d396debb4fbaf8ce688ede3effb98
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286560"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863013"
 ---
 # <a name="general-debugging-options"></a>Ogólne opcje debugowania
 
-Aby ustawić opcje debugera programu Visual Studio, **Tools**wybierz  >  **Opcje**narzędzia i w obszarze **debugowanie** zaznacz lub usuń zaznaczenie pól obok opcji **Ogólne** . Wszystkie ustawienia domyślne można przywrócić za pomocą **Narzędzia**  >  **Importuj i Eksportuj ustawienia**  >  **Zresetuj wszystkie ustawienia**. Aby zresetować podzbiór ustawień, Zapisz ustawienia za pomocą **Kreatora importowania i eksportowania ustawień** przed wprowadzeniem zmian, które chcesz przetestować, a następnie zaimportuj zapisane ustawienia później.
+Aby ustawić opcje debugera programu Visual Studio, **Tools** wybierz  >  **Opcje** narzędzia i w obszarze **debugowanie** zaznacz lub usuń zaznaczenie pól obok opcji **Ogólne** . Wszystkie ustawienia domyślne można przywrócić za pomocą **Narzędzia**  >  **Importuj i Eksportuj ustawienia**  >  **Zresetuj wszystkie ustawienia**. Aby zresetować podzbiór ustawień, Zapisz ustawienia za pomocą **Kreatora importowania i eksportowania ustawień** przed wprowadzeniem zmian, które chcesz przetestować, a następnie zaimportuj zapisane ustawienia później.
 
 Można ustawić następujące opcje **Ogólne** :
 

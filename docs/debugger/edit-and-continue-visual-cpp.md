@@ -1,5 +1,7 @@
 ---
 title: Edytuj i Kontynuuj (C++) | Microsoft Docs
+description: Edytuj i Kontynuuj jest dostępny dla projektów C++. Dowiedz się, jakie zmiany są obsługiwane i jak można kontrolować, czy są stosowane zmiany.
+ms.custom: SEO-VS-2020
 ms.date: 05/31/2018
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c32c161d1df70fc81eee4186aa9d1ac102afa69
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 2a8cb40850aefe83ac048c708192bc24533a8296
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599654"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863065"
 ---
 # <a name="edit-and-continue-c"></a>Edytuj i kontynuuj (C++)
 Możesz użyć Edytuj i Kontynuuj w projektach języka C++. Zobacz [obsługiwane zmiany kodu (C++)](../debugger/supported-code-changes-cpp.md) , aby uzyskać informacje o ograniczeniach Edytuj i Kontynuuj.

@@ -1,5 +1,6 @@
 ---
 title: Karta Ogólne, okno dialogowe właściwości wątku | Microsoft Docs
+description: Wyświetl okno dialogowe właściwości wątku, aby uzyskać informacje na temat wątku, w tym nazwę modułu, identyfikator wątku, identyfikator procesu, stan wątku, przyczynę oczekiwania i czas procesora CPU.
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e8604c2d31f6bb50e9e77efbf6423f56ed719c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dd4c2bf24058ce8a69f05d8d2cee17a18ff9505d
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62896370"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863000"
 ---
 # <a name="general-tab-thread-properties-dialog-box"></a>Karta ogólna, okno dialogowe właściwości wątku
 Użyj tego okna dialogowego, aby dowiedzieć się więcej o określonym wątku. Aby wyświetlić to okno dialogowe, Przenieś fokus do okna [Widok wątków](../debugger/threads-view.md) lub Otwórz [komunikaty Wyświetl](../debugger/messages-view.md) i rozwiń komunikat. Wybierz dowolny węzeł wątku w drzewie, a następnie wybierz polecenie **Właściwości** z menu **Widok** .

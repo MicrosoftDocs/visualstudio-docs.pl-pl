@@ -1,5 +1,7 @@
 ---
 title: Edytuj i Kontynuuj — okno dialogowe | Microsoft Docs
+description: Okno dialogowe Edytuj i Kontynuuj pojawia się, Jeśli edytowano kod podczas debugowania. Dowiedz się, jak kontrolować, czy będą stosować zmiany kodu bez pytania o uprawnienia.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 824ee989f17b6a341679f541f95906056cf6f8de
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: ed625d98cc4f3fe793ba0982771b0a57ff189526
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599539"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863104"
 ---
 # <a name="edit-and-continue-dialog-box"></a>Edytuj i kontynuuj — okno dialogowe
 (Tylko kod natywny) To okno dialogowe pojawia się, gdy edytowano kod podczas debugowania, a **Edycja i kontynuacja** uznaje, że można zastosować zmiany kodu. Aby uzyskać więcej informacji, zobacz [Edytuj i Kontynuuj](../debugger/edit-and-continue.md).

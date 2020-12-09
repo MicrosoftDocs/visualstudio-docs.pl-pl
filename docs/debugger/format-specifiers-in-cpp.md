@@ -1,5 +1,7 @@
 ---
 title: Specyfikatory formatu w debugerze (C++) | Microsoft Docs
+description: Użyj specyfikatora formatu, aby zmienić format, w którym wartość jest wyświetlana w oknie Czujka, autostarty lub lokalne. Ten artykuł zawiera szczegółowe informacje dotyczące użycia.
+ms.custom: SEO-VS-2020
 ms.date: 3/11/2019
 ms.topic: conceptual
 f1_keywords:
@@ -24,15 +26,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 287ef3ccfd344786bd98098c5f28d0a2bd6573f6
-ms.sourcegitcommit: 4a9689890f271f9b8b73c3333e0699cce84a95d8
+ms.openlocfilehash: 64166768dea1da015c223a74c74440ae09a0d106
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90832323"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863039"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Specyfikatory formatu dla języka C++ w debugerze programu Visual Studio
-Można zmienić format, w którym wartość jest wyświetlana w oknach **czujka**, **autostarty**i **lokalne** przy użyciu specyfikatorów formatu.
+Można zmienić format, w którym wartość jest wyświetlana w oknach **czujka**, **autostarty** i **lokalne** przy użyciu specyfikatorów formatu.
 
 Można również użyć specyfikatorów formatu w oknie **bezpośrednim** , oknie **polecenia** , w [punkty śledzenia](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints), a nawet w oknach źródłowych. Jeśli wstrzymasz w wyrażeniu w tych oknach, wynik zostanie wyświetlony w [etykietki danych](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). Etykietki danych wyświetla specyfikator formatu.
 
@@ -50,7 +52,7 @@ int main() {
 }
 ```
 
-Dodaj `my_var1` zmienną do okna **czujki** podczas debugowania, **Debuguj**  >  **Windows**  >  czujkę**czujki**w systemie Windows  >  **1**. Następnie kliknij prawym przyciskiem myszy zmienną i wybierz pozycję **Wyświetlanie w formacie szesnastkowym**. Teraz okno **czujki** pokazuje wartość 0x0065. Aby wyświetlić tę wartość wyrażoną jako znak, a nie liczbę całkowitą, najpierw kliknij prawym przyciskiem myszy i usuń zaznaczenie w **formacie szesnastkowym**. Następnie Dodaj specyfikator formatu znaku **, c** w kolumnie **Nazwa** po nazwie zmiennej. Kolumna **wartość** zawiera teraz **101 ' e '**.
+Dodaj `my_var1` zmienną do okna **czujki** podczas debugowania, **Debuguj**  >  **Windows**  >  czujkę **czujki** w systemie Windows  >  **1**. Następnie kliknij prawym przyciskiem myszy zmienną i wybierz pozycję **Wyświetlanie w formacie szesnastkowym**. Teraz okno **czujki** pokazuje wartość 0x0065. Aby wyświetlić tę wartość wyrażoną jako znak, a nie liczbę całkowitą, najpierw kliknij prawym przyciskiem myszy i usuń zaznaczenie w **formacie szesnastkowym**. Następnie Dodaj specyfikator formatu znaku **, c** w kolumnie **Nazwa** po nazwie zmiennej. Kolumna **wartość** zawiera teraz **101 ' e '**.
 
 ![WatchFormatCPlus1](../debugger/media/watchformatcplus1.png "WatchFormatCPlus1")
 
@@ -70,7 +72,7 @@ W poniższych tabelach opisano specyfikatory formatu, których można użyć w p
 |---------------|------------|--------------------------|---------------------|
 |d|Liczba całkowita dziesiętna|0x00000066|102|
 |o|Liczba całkowita bez znaku|0x00000066|000000000146|
-|x<br /><br /> **c**|Szesnastkowa liczba całkowita|102|0xcccccccc|
+|x<br /><br /> **h**|Szesnastkowa liczba całkowita|102|0xcccccccc|
 |X<br /><br /> **H**|Szesnastkowa liczba całkowita|102|0xCCCCCCCC|
 |XB<br /><br /> **HB**|Szesnastkowa liczba całkowita (bez wiodącego 0x)|102|cccccccc|
 |XB<br /><br /> **HB**|Szesnastkowa liczba całkowita (bez wiodącego 0x)|102|CCCCCCCC|
@@ -91,7 +93,7 @@ W poniższych tabelach opisano specyfikatory formatu, których można użyć w p
 |**s32b**|Ciąg UTF-32 (bez cudzysłowów)|\<location> U "Hello World"|Cześć ludzie|
 |**en**|enum|Sobota (6)|Sobota|
 |**HV**|Typ wskaźnika — wskazuje, że testowana wartość wskaźnika jest wynikiem alokacji sterty tablicy, na przykład `new int[3]` .|\<location>{\<first member>}|\<location>{\<first member>, \<second member>, ...}|
-|**potrącon**|Pomija adres pamięci wskaźnika do obiektu.|\<location>, {member = Value...}|{member = wartość...}|
+|**nie dotyczy**|Pomija adres pamięci wskaźnika do obiektu.|\<location>, {member = Value...}|{member = wartość...}|
 |**ND**|Wyświetla tylko informacje o klasie bazowej, ignorując klasy pochodne|`(Shape*) square` zawiera klasę bazową i informacje o klasie pochodnej|Wyświetla tylko informacje o klasie bazowej|
 |godz.|Kod błędu HRESULT lub Win32. Ten specyfikator nie jest już wymagany dla HRESULT, ponieważ debuger dekoduje je automatycznie.|S_OK|S_OK|
 |w górę|Flaga klasy okna|0x0010|WC_DEFAULTCHAR|
@@ -108,7 +110,7 @@ W poniższych tabelach opisano specyfikatory formatu, których można użyć w p
 |---------------|------------|--------------------------|---------------------|
 |d|Liczba całkowita dziesiętna|0x00000066|102|
 |o|Liczba całkowita bez znaku|0x00000066|000000000146|
-|x<br /><br /> **c**|Szesnastkowa liczba całkowita|102|0xcccccccc|
+|x<br /><br /> **h**|Szesnastkowa liczba całkowita|102|0xcccccccc|
 |X<br /><br /> **H**|Szesnastkowa liczba całkowita|102|0xCCCCCCCC|
 |c|pojedynczy znak|0x0065, c|101 ' e '|
 |s|ciąg const char * (ze znakami cudzysłowu)|\<location> "Hello World"|"Hello World"|
@@ -123,7 +125,7 @@ W poniższych tabelach opisano specyfikatory formatu, których można użyć w p
 |**s32b**|Ciąg UTF-32 (bez cudzysłowów)|\<location> U "Hello World"|Cześć ludzie|
 |**en**|enum|Sobota (6)|Sobota|
 |**HV**|Typ wskaźnika — wskazuje, że testowana wartość wskaźnika jest wynikiem alokacji sterty tablicy, na przykład `new int[3]` .|\<location>{\<first member>}|\<location>{\<first member>, \<second member>, ...}|
-|**potrącon**|Pomija adres pamięci wskaźnika do obiektu.|\<location>, {member = Value...}|{member = wartość...}|
+|**nie dotyczy**|Pomija adres pamięci wskaźnika do obiektu.|\<location>, {member = Value...}|{member = wartość...}|
 |**ND**|Wyświetla tylko informacje o klasie bazowej, ignorując klasy pochodne|`(Shape*) square` zawiera klasę bazową i informacje o klasie pochodnej|Wyświetla tylko informacje o klasie bazowej|
 |godz.|Kod błędu HRESULT lub Win32. Ten specyfikator nie jest już wymagany dla HRESULT, ponieważ debuger dekoduje je automatycznie.|S_OK|S_OK|
 |w górę|Flaga klasy okna|0x0010|WC_DEFAULTCHAR|
@@ -149,11 +151,11 @@ Specyfikatory **pogrubione** są obsługiwane tylko na potrzeby debugowania kodu
 
 |Specyfikator|Format|Oryginalna wartość czujki|Wyświetlana wartość|
 |---------------|------------|--------------------------|---------------------|
-|**Wykres**<br /><br />**i**|cyfra dziesiętna ze znakiem|0xF000F065|-268373915|
+|**d**<br /><br />**i**|cyfra dziesiętna ze znakiem|0xF000F065|-268373915|
 |**'t**|Liczba całkowita dziesiętna bez znaku|0x0065|101|
 |o|Liczba całkowita bez znaku|0xF065|0170145|
 |x<br /><br />X|Szesnastkowa liczba całkowita|61541|0x0000f065|
-|**&**<br /><br />**c**|długi lub krótki prefiks dla: d, i, u, o, x, X|00406042|0x0c22|
+|**&**<br /><br />**h**|długi lub krótki prefiks dla: d, i, u, o, x, X|00406042|0x0c22|
 |**n**|podpisany zmiennoprzecinkowy|(3./2.), f|1,500000|
 |**adres**|Notacja naukowa ze znakiem|(3.0/2.0)|1.500000 e + 000|
 |**g**|podpisany element zmiennoprzecinkowy lub podpisany Zapis naukowy,<br/> w zależności od tego co jest krótsze|(3.0/2.0)|1.5|
@@ -173,7 +175,7 @@ W poniższej tabeli opisano symbole formatowania używane dla lokalizacji pamię
 |Symbol|Format|Oryginalna wartość czujki|Wyświetlana wartość|
 |------------|------------|--------------------------|---------------------|
 |**ruchom**|64 znaków ASCII|0x0012ffac|0x0012ffac. 4... 0... ". 0W&...... 1W&.0.: W... 1.... ".. 1.JO&.1,2... 1... 0y... jedno|
-|**mol**|16 bajtów w formacie szesnastkowym, po których następuje 16 znaków ASCII|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00.4... 0.... 0W&..|
+|**m**|16 bajtów w formacie szesnastkowym, po których następuje 16 znaków ASCII|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00.4... 0.... 0W&..|
 |**megabit**|16 bajtów w formacie szesnastkowym, po których następuje 16 znaków ASCII|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00.4... 0.... 0W&..|
 |**MW**|8 słów|0x0012ffac|0x0012ffac 34B3 00CB 3084 8094 22FF 308A 2657 0000|
 |**algorytmu**|4 doublewords|0x0012ffac|0x0012ffac 00CB34B3 80943084 308A22FF 00002657|

@@ -1,5 +1,7 @@
 ---
 title: Edytuj i Kontynuuj (Visual C#) | Microsoft Docs
+description: Edytuj i Kontynuuj jest dostępny dla projektów Visual C#. Dowiedz się, jakie zmiany są obsługiwane i jak można kontrolować, czy są stosowane zmiany.
+ms.custom: SEO-VS-2020
 ms.date: 10/11/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 62411229acd2d2f8462984789037fc832dac09b8
-ms.sourcegitcommit: 822e61c69514e9f564d37ba6ca6832ccf7fbc60d
+ms.openlocfilehash: 55406001e4017c853895002445d9bd5d614b4b20
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91421644"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862884"
 ---
 # <a name="edit-and-continue-visual-c"></a>Edytuj i kontynuuj (Visual C#)
  Za pomocą Edytuj i Kontynuuj dla języka C# można wprowadzać zmiany w kodzie w trybie przerwania podczas debugowania. Zmiany można zastosować bez konieczności zatrzymywania i ponownego uruchamiania sesji debugowania. W trybie uruchamiania Edytor źródła jest tylko do odczytu.
@@ -34,11 +36,11 @@ ms.locfileid: "91421644"
  > [!NOTE]
  > Nieobsługiwane aplikacje i platformy obejmują program Silverlight 5 i Windows 8.1.
 
- Gdy funkcja Edytuj i Kontynuuj jest włączona, obsługiwane zmiany są stosowane automatycznie podczas korzystania z polecenia debugger Execution, takiego jak **Kontynuuj**, **Step**, **Set Next**lub przeprowadź ocenę funkcji w oknie debugera.
+ Gdy funkcja Edytuj i Kontynuuj jest włączona, obsługiwane zmiany są stosowane automatycznie podczas korzystania z polecenia debugger Execution, takiego jak **Kontynuuj**, **Step**, **Set Next** lub przeprowadź ocenę funkcji w oknie debugera.
 
  Aby uzyskać więcej informacji, zobacz [How to: use Edit and Continue (C#)](../debugger/how-to-use-edit-and-continue-csharp.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: używanie funkcji Edytuj i kontynuuj (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
 - [Obsługiwane zmiany kodu (C# i Visual Basic)](../debugger/supported-code-changes-csharp.md)
 - [Pisanie i debugowanie uruchomionego kodu XAML przy użyciu gorącego ponownego ładowania XAML w programie Visual Studio](../xaml-tools/xaml-hot-reload.md)

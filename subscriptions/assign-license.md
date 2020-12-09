@@ -7,12 +7,12 @@ ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
 ms.date: 09/21/2020
 ms.topic: conceptual
 description: Dowiedz się, jak Administratorzy mogą przypisywać licencje do subskrybentów
-ms.openlocfilehash: 044cf4e9df3eb2ebf1d10aa8c08be804ca98f393
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: 95e0358a39ccb88ed93f8e5bcee11d2b36d12d48
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467534"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863117"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Przypisywanie licencji w portalu administratora subskrypcji programu Visual Studio
 Jako administrator subskrypcji programu Visual Studio można używać portalu administracyjnego do przypisywania subskrypcji do poszczególnych użytkowników i grup użytkowników.
@@ -35,7 +35,7 @@ Obejrzyj wideo lub przeczytaj, aby dowiedzieć się, jak przypisać subskrypcję
 2. Aby przypisać licencję do pojedynczego subskrybenta programu Visual Studio, w górnej części tabeli wybierz pozycję **Dodaj**, a następnie wybierz opcję **indywidualny subskrybent**.
    > [!div class="mx-imgBorder"]
    > ![Dodaj pojedynczego abonenta](_img/assign-license-add/add-subscriber-individual.png "Wybierz pozycję Dodaj, a następnie wybierz opcję indywidualny subskrybent, aby przypisać pojedynczą subskrypcję.")
-3. Wprowadź informacje w polach formularza dla nowego subskrybenta. Jeśli Twoja organizacja używa Azure Active Directory, pole **name** działa jako funkcja wyszukiwania, aby znaleźć osoby w bieżącym katalogu, dzięki czemu można wybrać odpowiedniego użytkownika z wyników wyszukiwania. Po wybraniu tej osoby wiadomość e-mail z logowaniem i wiadomości e-mail z powiadomieniem będą automatycznie wypełniane.
+3. Wprowadź informacje w polach formularza dla nowego subskrybenta. Jeśli Twoja organizacja używa Azure Active Directory, pole **name** działa jako funkcja wyszukiwania, aby znaleźć osoby w bieżącym katalogu, dzięki czemu można wybrać odpowiedniego użytkownika z wyników wyszukiwania. Po wybraniu tej osoby wiadomość e-mail z logowaniem i wiadomości e-mail z powiadomieniem będą automatycznie wypełniane.  Jeśli subskrybent nie zostanie znaleziony w organizacji, wiadomość e-mail z powiadomieniem nie zostanie automatycznie wypełniona, ale będzie można ręcznie dodać inny adres e-mail, na który będą wysyłane wiadomości e-mail powiązane z subskrypcją.  Jeśli usługa poczty e-mail blokuje przychodzące wiadomości e-mail na adresy e-mail logowania, ważne jest, aby określić inny adres e-mail z powiadomieniem, aby Subskrybenci i Administratorzy otrzymywali ważne wiadomości e-mail powiązane z subskrypcją firmy Microsoft.
    > [!div class="mx-imgBorder"]
    > ![Szczegóły subskrybenta](_img/assign-license-add/subscriber-details.png "Wprowadź nazwę abonenta i inne szczegóły lub wybierz spośród członków dzierżawy.")
 
@@ -45,7 +45,7 @@ Obejrzyj wideo lub przeczytaj, aby dowiedzieć się, jak przypisać subskrypcję
 
     Jeśli chcesz, aby ten subskrybent miał dostęp do pobierania oprogramowania po zalogowaniu się do [portalu subskrypcji programu Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), upewnij się, że włączono przełącznik pobierania w sekcji **ustawienia pobierania** . Jeśli zdecydujesz się wyłączyć pobieranie, użytkownik nie będzie miał dostępu do pobierania oprogramowania.  Dostęp do kluczy produktów również zostanie wyłączony.  Subskrybenci nadal będą mieć dostęp do wszystkich innych korzyści uwzględnionych w subskrypcji.
    > [!div class="mx-imgBorder"]
-   > ! [Dostęp do plików do pobrania] (Media/access-to-downloads.png "Wybierz" Zezwól ", aby zapewnić subskrybentowi dostęp do pobierania oprogramowania").
+   > ![Dostęp do plików do pobrania](media/access-to-downloads.png "Wybierz opcję "Zezwól", aby zapewnić subskrybentowi dostęp do pobierania oprogramowania.")
 
     Jeśli chcesz dodać własne informacje referencyjne do subskrypcji, możesz to zrobić w sekcji **Dodaj odwołanie** .
    > [!div class="mx-imgBorder"]
@@ -55,12 +55,22 @@ Obejrzyj wideo lub przeczytaj, aby dowiedzieć się, jak przypisać subskrypcję
    > [!div class="mx-imgBorder"]
    > ![Wybierz przycisk Dodaj](media/add-button.png "Wybierz pozycję Dodaj, aby zapisać informacje i przypisać subskrypcję do subskrybenta.")
 
+## <a name="why-use-a-different-notification-email-address"></a>Dlaczego warto używać innego adresu e-mail powiadomienia?
+Niektóre organizacje konfigurują swoje usługi poczty e-mail, aby blokować przychodzące wiadomości e-mail z innych domen.  Zablokowanie przychodzących wiadomości e-mail oznacza, że Subskrybenci i Administratorzy nie będą mieć ważnej komunikacji:
+- Subskrybenci nie otrzymają powiadomienia o przypisaniu do nich subskrypcji.  Uniemożliwi to również aktywację niektórych z uwzględnionych korzyści.  
+- Subskrybenci, którym przypisano subskrypcje programu Visual Studio z usługą GitHub Enterprise, nie otrzymają zaproszenia do wzięcia udziału w organizacji GitHub, co oznacza, że nie będą w stanie zaakceptować zaproszenia. Aby uzyskać dostęp do organizacji usługi GitHub, należy zaakceptować zaproszenie wysłane pocztą e-mail. 
+- Administratorzy nie będą powiadamiani, gdy zostaną dodani do umowy, otrzymują comiesięczne instrukcje administratora lub powiadomienia o zmianach funkcji, które mają wpływ na sposób zarządzania subskrypcjami.
+
+Przy użyciu adresu e-mail z powiadomieniem można zezwolić subskrybentom na otrzymywanie ważnych informacji o ich subskrypcjach bez zmiany ich adresów e-mail logowania.  
+
 ## <a name="resend-assignment-emails"></a>Wyślij ponownie wiadomości e-mail z przypisaniem
 Po dodaniu subskrybenta wiadomość e-mail z przypisaniem zostanie automatycznie wysłana do nowego subskrybenta z dodatkowymi instrukcjami. W dowolnym momencie możesz wysłać wiadomość e-mail z przypisaniem, wybierając subskrybenta, a następnie wybierając przycisk **Wyślij ponownie** w górnym menu.  Aby ponownie wysyłać wiadomości e-mail do wielu użytkowników, przytrzymaj wciśnięty klawisz **Ctrl** podczas wybierania subskrybentów.  Po wybraniu przycisku **Wyślij ponownie** zobaczysz okno dialogowe z prośbą o potwierdzenie, że chcesz ponownie wysłać do tych subskrybentów.  
 
+
+
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Azure DevOps documentation (Dokumentacja usługi Azure DevOps)](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)
 - [Dokumentacja Microsoft 365](/microsoft-365/)
 

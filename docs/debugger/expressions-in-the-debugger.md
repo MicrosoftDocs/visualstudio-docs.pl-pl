@@ -1,5 +1,7 @@
 ---
 title: Wyrażenia w debugerze | Microsoft Docs
+description: Edytuj i Kontynuuj jest dostępny dla projektów Visual C#. Dowiedz się, jakie zmiany są obsługiwane i jak można kontrolować, czy są stosowane zmiany.
+ms.custom: SEO-VS-2020
 ms.date: 03/02/2020
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4a06a249fee38ca7fd8521459eda7bbf4100a97
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 28d04ce836316024eb4aef9f1b4a9955d98dbba8
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600296"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862870"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Wyrażenia w debugerze programu Visual Studio
 Debuger programu Visual Studio zawiera oszacowania wyrażeń, które działają po wprowadzeniu wyrażenia w oknie dialogowym **QuickWatch** , oknie **czujki** lub w oknie **bezpośrednim** . Oceny wyrażeń są również w pracy w oknie **punkty przerwania** i wiele innych miejsc w debugerze.
@@ -207,5 +209,5 @@ Nie można zadeklarować jawnych nowych zmiennych w oknach debugera. Można jedn
 ## <a name="see-also"></a>Zobacz też
 - [Specyfikatory formatu w języku C++](../debugger/format-specifiers-in-cpp.md)
 - [Operator kontekstu (C++)](../debugger/context-operator-cpp.md)
-- [Specyfikatory formatu w C#](../debugger/format-specifiers-in-csharp.md)
+- [Specyfikatory formatu w języku C #](../debugger/format-specifiers-in-csharp.md)
 - [Pseudozmienne](../debugger/pseudovariables.md)

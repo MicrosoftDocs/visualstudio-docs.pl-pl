@@ -1,5 +1,6 @@
 ---
 title: Karta Ogólne, okno dialogowe Właściwości okna | Microsoft Docs
+description: Wyświetl kartę Ogólne, aby uzyskać informacje na temat okna, w tym podpis, uchwyt, prostokąt, uchwyt wystąpienia aplikacji, uchwyt menu i dane użytkownika.
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5160c79e2c8dae474927e6af7ebdc9e371e9edc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 125420655af4fb021e264c3885a739fc90cfff59
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62849561"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862753"
 ---
 # <a name="general-tab-window-properties-dialog-box"></a>Karta ogólna, okno dialogowe właściwości okna
 Karta **Ogólne** służy do wyświetlania informacji o wybranym oknie. Aby wyświetlić okno [dialogowe Właściwości okna](../debugger/window-properties-dialog-box.md), Przenieś fokus do okna [Widok systemu Windows](../debugger/windows-view.md) . Wybierz dowolny węzeł okna w drzewie, a następnie wybierz polecenie **Właściwości** z menu **Widok** .

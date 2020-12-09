@@ -1,5 +1,7 @@
 ---
 title: Edytuj i Kontynuuj (Visual Basic) | Microsoft Docs
+description: Edycja i kontynuacja jest dostępna dla projektów Visual Basic. Dowiedz się, jakie zmiany są obsługiwane i jak można kontrolować, czy są stosowane zmiany.
+ms.custom: SEO-VS-2020
 ms.date: 10/11/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f73b67ac4268c04dfa9ff7ab020891623f528f9b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4560973cd6ccd2bbfee48028494731935945a4c
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62851252"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862974"
 ---
 # <a name="edit-and-continue-visual-basic"></a>Edytuj i kontynuuj (Visual Basic)
 Edytuj i Kontynuuj to funkcja [!INCLUDE [vbprvb](../code-quality/includes/vbprvb_md.md)] debugowania, która umożliwia zmianę kodu podczas wykonywania w trybie przerwania. Po zastosowaniu zmian w kodzie można wznowić wykonywanie kodu przy użyciu nowych zmian w miejscu i zobaczyć efekt.

@@ -1,5 +1,7 @@
 ---
 title: Włączanie funkcji debugowania w projektach C++ (-D_DEBUG) | Microsoft Docs
+description: W Visual C++ włączeniu funkcji debugowania przez zdefiniowanie _DEBUG. Dowiedz się, jak to zrobić, i Dowiedz się, jak połączyć program MFC w celu jego debugowania.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -24,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 19d341cba47e0a3d2259cc57d239c63420095347
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a2ead92108d66b54342019fc19702e7a6e53575
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72737954"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862936"
 ---
 # <a name="enabling-debug-features-in-c-projects-d_debug"></a>Włączanie funkcji debugowania w projektach C++ (/D_DEBUG)
 W programie [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] funkcje debugowania, takie jak potwierdzenia, są włączane podczas kompilowania programu z zdefiniowanym symbolem **_DEBUG** . **_DEBUG** można definiować na jeden z dwóch sposobów:
@@ -44,4 +46,4 @@ W programie [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] funkcje de
 
 ## <a name="see-also"></a>Zobacz też
 - [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)
-- [Ustawienia projektu dla konfiguracji debugowania w C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
+- [Ustawienia projektu dla konfiguracji debugowania języka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)

@@ -1,5 +1,7 @@
 ---
 title: Specyfikatory formatu w debugerze (C#) | Microsoft Docs
+description: Użyj specyfikatora formatu, aby zmienić format, w którym wartość jest wyświetlana w okno wyrażeń kontrolnych. Ten artykuł zawiera szczegółowe informacje dotyczące użycia.
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: conceptual
 dev_langs:
@@ -25,12 +27,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: caaf36e286f1bdc664ebdbb10e3baf7ed28183e7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31739b9c8fecc862c891173a792986b467730400
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62849859"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862792"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Specyfikatory formatu w języku C# w debugerze programu Visual Studio
 Można zmienić format, w którym wartość jest wyświetlana w oknie **czujki** przy użyciu specyfikatorów formatu. W oknie **bezpośrednim** można także używać specyfikatorów formatu, okna **poleceń** , w [punkty śledzenia](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)i w oknach źródłowych. W przypadku wstrzymania na wyrażeniu w tych oknach wynik będzie wyświetlany w  [etykietki danych](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) w określonym formacie.
@@ -48,7 +50,7 @@ Użyjemy następującego przykładowego kodu:
 }
 ```
 
-Dodaj `my_var1` zmienną do okna **czujki** podczas debugowania, **Debuguj**  >  **Windows**  >  czujkę**czujki**w systemie Windows  >  **1**. Następnie kliknij prawym przyciskiem myszy zmienną i wybierz pozycję **Wyświetlanie w formacie szesnastkowym**. Teraz okno **czujki** pokazuje wartość 0x0065. Aby wyświetlić tę wartość jako liczbę całkowitą dziesiętną, a nie szesnastkową liczbą całkowitą, Dodaj specyfikator formatu dziesiętnego **, d** w kolumnie **Nazwa** po nazwie zmiennej. Kolumna **wartość** zawiera teraz **101**.
+Dodaj `my_var1` zmienną do okna **czujki** podczas debugowania, **Debuguj**  >  **Windows**  >  czujkę **czujki** w systemie Windows  >  **1**. Następnie kliknij prawym przyciskiem myszy zmienną i wybierz pozycję **Wyświetlanie w formacie szesnastkowym**. Teraz okno **czujki** pokazuje wartość 0x0065. Aby wyświetlić tę wartość jako liczbę całkowitą dziesiętną, a nie szesnastkową liczbą całkowitą, Dodaj specyfikator formatu dziesiętnego **, d** w kolumnie **Nazwa** po nazwie zmiennej. Kolumna **wartość** zawiera teraz **101**.
 
 ![WatchFormatCSharp](../debugger/media/watchformatcsharp.png "WatchFormatCSharp")
 

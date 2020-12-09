@@ -1,5 +1,7 @@
 ---
 title: Znajdowanie przecieków pamięci za pomocą biblioteki CRT | Microsoft Docs
+description: Dowiedz się, jak debuger C/C++ i biblioteka uruchomieniowa C (CRT) mogą pomóc w znalezieniu przecieków pamięci. Techniki obejmują raporty przecieków pamięci i porównywanie migawek pamięci.
+ms.custom: SEO-VS-2020
 ms.date: 10/04/2018
 ms.topic: how-to
 dev_langs:
@@ -26,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5deb42b2ab708bae572aebbcac15af2d077b14fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f5c906bd06fd4107166a45e93bf11be579c2270
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350488"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863078"
 ---
 # <a name="find-memory-leaks-with-the-crt-library"></a>Znajdowanie przecieków pamięci za pomocą biblioteki CRT
 
@@ -108,7 +110,7 @@ Niezależnie `_CRTDBG_MAP_ALLOC` od tego, czy jest zdefiniowany, raport przeciek
 - `64 bytes`W przykładzie rozmiar bloku.
 - Pierwsze 16 bajtów danych w bloku w postaci szesnastkowej.
 
-Typy bloków pamięci to *Normal*, *Client*lub *CRT*. *Zwykły blok* to zwykłe pamięci przydzielone przez program. *Blok klienta* jest specjalnym typem bloku pamięci używanym przez programy MFC dla obiektów, które wymagają destruktora. Operator MFC `new` tworzy blok normalny lub blok klienta, zgodnie z potrzebami dla tworzonego obiektu.
+Typy bloków pamięci to *Normal*, *Client* lub *CRT*. *Zwykły blok* to zwykłe pamięci przydzielone przez program. *Blok klienta* jest specjalnym typem bloku pamięci używanym przez programy MFC dla obiektów, które wymagają destruktora. Operator MFC `new` tworzy blok normalny lub blok klienta, zgodnie z potrzebami dla tworzonego obiektu.
 
 *Blok CRT* jest przypisywany przez bibliotekę CRT do własnego użytku. Biblioteka CRT obsługuje cofanie alokacji dla tych bloków, więc bloki CRT nie będą wyświetlane w raporcie przecieku pamięci, chyba że występują poważne problemy z biblioteką CRT.
 
@@ -182,7 +184,7 @@ Możesz użyć numeru alokacji, aby ustawić punkt przerwania dla alokacji pami�
 
 1. Ustaw punkt przerwania w bliskim początku aplikacji i Rozpocznij debugowanie.
 
-1. Gdy aplikacja wstrzymuje się w punkcie przerwania, Otwórz okno **czujki** , wybierając pozycję **Debuguj**  >  **Windows**  >  **Watch 1** (lub **Obejrzyj 2**, **Obejrzyj 3**lub **Obejrzyj 4**).
+1. Gdy aplikacja wstrzymuje się w punkcie przerwania, Otwórz okno **czujki** , wybierając pozycję **Debuguj**  >  **Windows**  >  **Watch 1** (lub **Obejrzyj 2**, **Obejrzyj 3** lub **Obejrzyj 4**).
 
 1. W oknie **czujki** wpisz `_crtBreakAlloc` w kolumnie **Nazwa** .
 
@@ -262,6 +264,6 @@ Jedna z technik znajdowania przecieków pamięci rozpoczyna się od umieszczenia
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Szczegóły sterty debugowania CRT](../debugger/crt-debug-heap-details.md)
+- [Szczegóły dotyczące sterty debugowania CRT](../debugger/crt-debug-heap-details.md)
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)
 - [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)

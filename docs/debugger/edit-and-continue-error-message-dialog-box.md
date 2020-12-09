@@ -1,5 +1,7 @@
 ---
 title: Okno dialogowe Edytuj i Kontynuuj komunikat o błędzie | Microsoft Docs
+description: Edytuj i Kontynuuj mogą zgłaszać, że nie jest dostępny dla zmian w kodzie. Ten artykuł zawiera możliwe przyczyny.
+ms.custom: SEO-VS-2020
 ms.date: 10/15/2018
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7df95eae689f7c3abbb0d75a7557ce749bdceee5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ef34889b838e2f7eaa92420eec90db9def57e65
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73188233"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862849"
 ---
 # <a name="edit-and-continue-error-message"></a>Komunikat o błędzie Edytuj i Kontynuuj
 
@@ -40,7 +42,7 @@ Możliwe przyczyny tego komunikatu o błędzie:
 - Próba edycji kodu podczas debugowania zrzutu programu Dr. Watson.
 - Podjęto próbę edycji kodu po wystąpieniu nieobsługiwanego wyjątku, a opcja **odwinięcia stosu wywołań w przypadku nieobsługiwanych wyjątków** nie jest zaznaczona.
 - Próba edycji kodu podczas debugowania osadzonej aplikacji środowiska uruchomieniowego.
-- Podjęto próbę edycji kodu zarządzanego przy użyciu wersji .NET Framework wcześniejszej niż 4.5.1 z 64-bitową aplikacją docelową. Aby użyć opcji Edytuj i Kontynuuj dla .NET Framework wcześniejszej niż 4.5.1, ustaw wartość docelowy na **x86** na **\<ProjectName>**  >  **Properties**  >  karcie**Kompilowanie** właściwości, **Zaawansowane ustawienia kompilatora** .
+- Podjęto próbę edycji kodu zarządzanego przy użyciu wersji .NET Framework wcześniejszej niż 4.5.1 z 64-bitową aplikacją docelową. Aby użyć opcji Edytuj i Kontynuuj dla .NET Framework wcześniejszej niż 4.5.1, ustaw wartość docelowy na **x86** na **\<ProjectName>**  >  **Properties**  >  karcie **Kompilowanie** właściwości, **Zaawansowane ustawienia kompilatora** .
 - Podjęto próbę edycji kodu w zestawie, który został zmodyfikowany podczas debugowania i został ponownie załadowany.
 - Podjęto próbę edycji kodu w zestawie, który nie został załadowany.
 - Rozpoczynanie debugowania starej wersji aplikacji, ponieważ Najnowsza wersja zawiera błędy kompilacji.

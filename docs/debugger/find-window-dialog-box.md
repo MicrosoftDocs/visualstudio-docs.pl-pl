@@ -1,5 +1,7 @@
 ---
 title: Okno dialogowe Znajdowanie okna | Microsoft Docs
+description: Okno dialogowe Znajdowanie okna służy do wybierania okna i wyświetlania jego właściwości lub komunikatów.  Ten artykuł zawiera szczegółowe informacje dotyczące użycia.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 392c0150c9bfb653a3a52c11c0d31097e04c9cc1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 571cee3b1e3a391a8dc328fcc76a0ca0d06ed14f
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62849991"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863026"
 ---
 # <a name="find-window-dialog-box"></a>Okno dialogowe Znajdź okno
 To okno dialogowe służy do wybierania okna i wyświetlania jego właściwości lub komunikatów. Aby wyświetlić to okno dialogowe, wybierz pozycję **Znajdź okno** z menu **Spy** .

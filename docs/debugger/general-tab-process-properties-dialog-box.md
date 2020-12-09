@@ -1,5 +1,7 @@
 ---
 title: Karta Ogólne, okno dialogowe właściwości procesu | Microsoft Docs
+description: Na karcie Ogólne można znaleźć informacje o procesie, w tym nazwę modułu, identyfikator procesu, priorytet podstawowy, liczbę wątków, czas procesora, czas użytkownika i czas, który upłynął.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6116beb67baf072d9c9762a1e8c67408cc915f29
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4980437c63348050db1a007e8f541e9af9e186cc
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62849819"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862740"
 ---
 # <a name="general-tab-process-properties-dialog-box"></a>Karta ogólna, okno dialogowe właściwości procesu
 Skorzystaj z karty **Ogólne** , aby dowiedzieć się więcej o określonym procesie. Aby wyświetlić okno [dialogowe właściwości procesu](../debugger/process-properties-dialog-box.md), Przenieś fokus do okna [widok procesów](../debugger/processes-view.md) . Wybierz dowolny węzeł procesu w drzewie, a następnie wybierz polecenie **Właściwości** z menu **Widok** .
