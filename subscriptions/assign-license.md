@@ -7,12 +7,12 @@ ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
 ms.date: 09/21/2020
 ms.topic: conceptual
 description: Dowiedz się, jak Administratorzy mogą przypisywać licencje do subskrybentów
-ms.openlocfilehash: 95e0358a39ccb88ed93f8e5bcee11d2b36d12d48
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: dd80a14a3ff57100f210fd7ae1b882c0ab7a9faf
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96863117"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915417"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Przypisywanie licencji w portalu administratora subskrypcji programu Visual Studio
 Jako administrator subskrypcji programu Visual Studio można używać portalu administracyjnego do przypisywania subskrypcji do poszczególnych użytkowników i grup użytkowników.
@@ -58,7 +58,7 @@ Obejrzyj wideo lub przeczytaj, aby dowiedzieć się, jak przypisać subskrypcję
 ## <a name="why-use-a-different-notification-email-address"></a>Dlaczego warto używać innego adresu e-mail powiadomienia?
 Niektóre organizacje konfigurują swoje usługi poczty e-mail, aby blokować przychodzące wiadomości e-mail z innych domen.  Zablokowanie przychodzących wiadomości e-mail oznacza, że Subskrybenci i Administratorzy nie będą mieć ważnej komunikacji:
 - Subskrybenci nie otrzymają powiadomienia o przypisaniu do nich subskrypcji.  Uniemożliwi to również aktywację niektórych z uwzględnionych korzyści.  
-- Subskrybenci, którym przypisano subskrypcje programu Visual Studio z usługą GitHub Enterprise, nie otrzymają zaproszenia do wzięcia udziału w organizacji GitHub, co oznacza, że nie będą w stanie zaakceptować zaproszenia. Aby uzyskać dostęp do organizacji usługi GitHub, należy zaakceptować zaproszenie wysłane pocztą e-mail. 
+- Subskrybenci, którym przypisano subskrypcje programu Visual Studio z usługą GitHub Enterprise, nie otrzymają zaproszenia do wzięcia udziału w organizacji GitHub, co oznacza, że nie będą w stanie zaakceptować zaproszenia. Aby uzyskać dostęp do organizacji usługi GitHub **, należy zaakceptować zaproszenie wysłane pocztą e-mail** . 
 - Administratorzy nie będą powiadamiani, gdy zostaną dodani do umowy, otrzymują comiesięczne instrukcje administratora lub powiadomienia o zmianach funkcji, które mają wpływ na sposób zarządzania subskrypcjami.
 
 Przy użyciu adresu e-mail z powiadomieniem można zezwolić subskrybentom na otrzymywanie ważnych informacji o ich subskrypcjach bez zmiany ich adresów e-mail logowania.  

@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Dodawanie metody usuwania | Microsoft Docs'
+description: Dowiedz się, jak dodać metodę usuwania w Projektancie usługi BDC programu Visual Studio, aby użytkownik końcowy mógł usunąć rekord danych z listy zewnętrznej w witrynie programu SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -19,21 +21,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dd97d28936e9f0cc50e9064fdc1a6a64bb20fc77
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5e41fbb4f70bd3f5ae2db72b630ae6e524d3def
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017038"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915443"
 ---
 # <a name="how-to-add-a-deleter-method"></a>Instrukcje: Dodawanie metody usuwania
   Można umożliwić użytkownikowi końcowemu usunięcie rekordu danych z listy zewnętrznej w witrynie programu SharePoint, dodając metodę usuwania do modelu. Aby uzyskać więcej informacji, zobacz [Projektowanie modelu łączności danych firmowych](../sharepoint/designing-a-business-data-connectivity-model.md).
 
 ### <a name="to-create-a-deleter-method"></a>Aby utworzyć metodę usuwania
 
-1. W **projektancie BDC**wybierz jednostkę.
+1. W **projektancie BDC** wybierz jednostkę.
 
-2. Na pasku menu wybierz pozycję **Wyświetl**  >  **inne**  >  **Szczegóły metody BDC**systemu Windows.
+2. Na pasku menu wybierz pozycję **Wyświetl**  >  **inne**  >  **Szczegóły metody BDC** systemu Windows.
 
     Zostanie otwarte okno **Szczegóły metody BDC** . Aby uzyskać więcej informacji na temat tego okna, zobacz [narzędzia projektowania modelu usługi BDC — Omówienie](../sharepoint/bdc-model-design-tools-overview.md).
 
@@ -51,7 +53,7 @@ ms.locfileid: "86017038"
 
      Aby uzyskać więcej informacji, zobacz [Projektowanie modelu łączności danych firmowych](../sharepoint/designing-a-business-data-connectivity-model.md).
 
-4. W **Eksplorator rozwiązań**Otwórz menu skrótów pliku kodu usługi, który został wygenerowany dla jednostki, a następnie wybierz polecenie **Wyświetl kod**.
+4. W **Eksplorator rozwiązań** Otwórz menu skrótów pliku kodu usługi, który został wygenerowany dla jednostki, a następnie wybierz polecenie **Wyświetl kod**.
 
     Plik kodu usługi jednostki zostanie otwarty w edytorze kodu. Aby uzyskać więcej informacji na temat pliku kodu usługi jednostki, zobacz [Tworzenie modelu łączności danych firmowych](../sharepoint/creating-a-business-data-connectivity-model.md).
 

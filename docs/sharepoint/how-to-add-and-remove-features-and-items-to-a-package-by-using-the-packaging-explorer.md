@@ -1,6 +1,8 @@
 ---
 title: 'Eksplorator pakietów: Dodawanie & usuwanie funkcji & elementów do pakietu'
 titleSuffix: ''
+description: Dodawanie i usuwanie funkcji oraz elementów do pakietu programu SharePoint za pomocą Eksploratora pakietów w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9bc4546d598a2fcca822f1921f778034fb768c2b
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ee9b2a12c9eaa168f0223dff29a3379a12b3d691
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585592"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915352"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Instrukcje: Dodawanie i usuwanie funkcji oraz elementów do pakietu przy użyciu Eksploratora pakietów
   Aby skonfigurować pakiet do wdrażania elementów i funkcji programu SharePoint, można użyć Eksploratora pakietów. Elementy projektu programu SharePoint i funkcje można dostosować wewnątrz pliku. wsp.
@@ -32,7 +34,7 @@ ms.locfileid: "91585592"
 
 #### <a name="to-open-the-packaging-explorer"></a>Aby otworzyć Eksploratora pakietów
 
-1. Na pasku menu wybierz pozycję **Wyświetl**  >  **inne**  >  **Eksplorator pakietów**systemu Windows.
+1. Na pasku menu wybierz pozycję **Wyświetl**  >  **inne**  >  **Eksplorator pakietów** systemu Windows.
 
      **Eksplorator pakietów** zostanie wyświetlony w **przyborniku**.
 

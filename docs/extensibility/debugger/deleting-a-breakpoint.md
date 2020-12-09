@@ -1,5 +1,7 @@
 ---
 title: Usuwanie punktu przerwania | Microsoft Docs
+description: Dowiedz się, jak Menedżer debugowania sesji usuwa oczekujący punkt przerwania i wszystkie powiązane punkty przerwania powiązane z nim, gdy zostanie usunięty oczekujący punkt przerwania.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a77be200a11eb7b3985a4c1a47e4cddaa543f900
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 061175326a19af1866262421b381eb14267c7efd
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738952"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915560"
 ---
 # <a name="deleting-a-breakpoint"></a>Usuwanie punktu przerwania
 Poniżej opisano proces usuwania oczekujących punktów przerwania:

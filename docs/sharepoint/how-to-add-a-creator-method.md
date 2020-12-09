@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Dodawanie metody Creator | Microsoft Docs'
+description: Dowiedz się, jak dodać metodę Creator, która dodaje nowe dane do źródła danych jednostki w usłudze łączności danych biznesowych (BDC) w programie SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,21 +19,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 962e353b5ae82f6dd3eccc2898385fd4b9ee30ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 790b4265b232c71ff3e0613cffcb45e710081fa3
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017059"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915456"
 ---
 # <a name="how-to-add-a-creator-method"></a>Instrukcje: Dodawanie metody Creator
   Metoda Creator dodaje nowe dane do źródła danych jednostki. Usługa łączności danych biznesowych (BDC) wywołuje tę metodę, gdy użytkownicy wybierają przycisk **nowy element** na **Wstążce** listy, która jest oparta na modelu. Aby uzyskać więcej informacji, zobacz [Projektowanie modelu łączności danych firmowych](../sharepoint/designing-a-business-data-connectivity-model.md).
 
 ### <a name="to-add-a-creator-method"></a>Aby dodać metodę Creator
 
-1. W **projektancie BDC**wybierz jednostkę.
+1. W **projektancie BDC** wybierz jednostkę.
 
-2. Na pasku menu wybierz pozycję **Wyświetl**  >  **inne**  > **Szczegóły metody BDC**systemu Windows.
+2. Na pasku menu wybierz pozycję **Wyświetl**  >  **inne**  > **Szczegóły metody BDC** systemu Windows.
 
     Zostanie otwarte okno **Szczegóły metody BDC** . Aby uzyskać więcej informacji na temat tego okna, zobacz [narzędzia projektowania modelu usługi BDC — Omówienie](../sharepoint/bdc-model-design-tools-overview.md).
 
@@ -51,7 +53,7 @@ ms.locfileid: "86017059"
 
      Aby uzyskać więcej informacji, zobacz [Projektowanie modelu łączności danych firmowych](../sharepoint/designing-a-business-data-connectivity-model.md).
 
-4. W **Eksplorator rozwiązań**Otwórz menu skrótów pliku kodu usługi, który został wygenerowany dla jednostki, a następnie wybierz polecenie **Wyświetl kod**.
+4. W **Eksplorator rozwiązań** Otwórz menu skrótów pliku kodu usługi, który został wygenerowany dla jednostki, a następnie wybierz polecenie **Wyświetl kod**.
 
     Plik kodu usługi jednostki zostanie otwarty w edytorze kodu. Aby uzyskać więcej informacji na temat pliku kodu usługi jednostki, zobacz [Tworzenie modelu łączności danych firmowych](../sharepoint/creating-a-business-data-connectivity-model.md).
 

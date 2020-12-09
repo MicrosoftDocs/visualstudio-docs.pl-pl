@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: Dodawanie odbiorników zdarzeń funkcji | Microsoft Docs'
+description: W tym instruktażu Dodaj odbiorniki zdarzeń funkcji, które są metodami wykonywanymi po zainstalowaniu, aktywowaniu, dezaktywowaniu lub usunięciu funkcji programu SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,15 +18,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f40358c157ec24557947f36b0c6eadb6d8a2622d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98b85222fca4da6dfca653ad74e1315801798d83
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015357"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915599"
 ---
 # <a name="walkthrough-add-feature-event-receivers"></a>Przewodnik: dodawanie odbiorców zdarzeń funkcji
-  Odbiorcy zdarzeń funkcji to metody, które są wykonywane po wystąpieniu jednego z następujących zdarzeń związanych z funkcjami w programie SharePoint:
+Odbiorcy zdarzeń funkcji to metody, które są wykonywane po wystąpieniu jednego z następujących zdarzeń związanych z funkcjami w programie SharePoint:
 
 - Zainstalowana jest funkcja.
 
@@ -34,7 +36,7 @@ ms.locfileid: "86015357"
 
 - Funkcja jest usuwana.
 
-  W tym instruktażu pokazano, jak dodać odbiorcę zdarzeń do funkcji w projekcie programu SharePoint. Przedstawiono w nim następujące zadania:
+W tym instruktażu pokazano, jak dodać odbiorcę zdarzeń do funkcji w projekcie programu SharePoint. Przedstawiono w nim następujące zadania:
 
 - Tworzenie pustego projektu z odbiorcą zdarzeń funkcji.
 

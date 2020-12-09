@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: Tworzenie strony aplikacji SharePoint | Microsoft Docs'
+description: W tym instruktażu Utwórz stronę aplikacji (wyspecjalizowaną postać strony ASP.NET), a następnie Debuguj ją przy użyciu lokalnej witryny programu SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76375c15077bf672eaba01c840ba406228046435
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 95addb145312de85a3525c228297e7ff9636ea0d
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016496"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914884"
 ---
 # <a name="walkthrough-create-a-sharepoint-application-page"></a>Przewodnik: Tworzenie strony aplikacji SharePoint
 
@@ -59,7 +61,7 @@ Najpierw Utwórz **pusty projekt programu SharePoint**. Później dodasz element
 
 Aby utworzyć stronę aplikacji, Dodaj element **strony aplikacji** do projektu.
 
-1. W **Eksplorator rozwiązań**wybierz projekt **MyShareProject** .
+1. W **Eksplorator rozwiązań** wybierz projekt **MyShareProject** .
 
 2. Na pasku menu wybierz **projekt**  >  **Dodaj nowy element**.
 
@@ -75,7 +77,7 @@ Element Strona aplikacji umożliwia dodawanie formantów ASP.NET do strony aplik
 
 1. Na pasku menu wybierz **Widok**  >  **Przybornik**.
 
-2. W węźle standardowy **przybornika**wykonaj jedną z następujących czynności:
+2. W węźle standardowy **przybornika** wykonaj jedną z następujących czynności:
 
     - Otwórz menu skrótów dla elementu **etykieta** , wybierz **Kopiuj**, otwórz menu skrótów dla wiersza pod kontrolką zawartości **PlaceHolderMain** w projektancie, a następnie wybierz **Wklej**.
 
@@ -127,7 +129,7 @@ Obsłuż kontrolki na stronie aplikacji tak samo jak każda strona ASP.NET. W te
 
 Po uruchomieniu projektu zostanie otwarta witryna programu SharePoint, na której zostanie wyświetlona strona aplikacji.
 
-1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla strony aplikacji, a następnie wybierz polecenie **Ustaw jako element startowy**.
+1. W **Eksplorator rozwiązań** Otwórz menu skrótów dla strony aplikacji, a następnie wybierz polecenie **Ustaw jako element startowy**.
 
 2. Wybierz klawisz **F5** .
 

@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: Dodawanie strony aplikacji do przepływu pracy | Microsoft Docs'
+description: W tym instruktażu Dodaj stronę aplikacji do rozwiązania przepływu pracy programu SharePoint. Popraw kod przepływu pracy. Tworzenie, kod i testowanie strony aplikacji.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f54914e6676e0cc2400fa04ebb089fac08f58c3c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c862c1de3b0630b3a5144f821e6266c34a88a5db
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015496"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915664"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Przewodnik: Dodawanie strony aplikacji do przepływu pracy
   W tym instruktażu przedstawiono sposób dodawania strony aplikacji, która wyświetla dane pochodzące z przepływu pracy do projektu przepływu pracy. Kompiluje się on na projekcie opisanym w [przewodniku tematu: tworzenie przepływu pracy z formularzami skojarzenia i inicjowania](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
@@ -44,7 +46,7 @@ ms.locfileid: "86015496"
 
 - Należy również ukończyć projekt w [przewodniku tematu: tworzenie przepływu pracy przy użyciu formularzy skojarzenia i inicjowania](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
 
-## <a name="ammend-the-workflow-code"></a>Ammend kod przepływu pracy
+## <a name="amend-the-workflow-code"></a>Zmiana kodu przepływu pracy
  Najpierw Dodaj wiersz kodu do przepływu pracy, aby ustawić wartość kolumny wynik na ilość raportu wydatków. Ta wartość jest używana później w obliczeniach podsumowania raportów wydatków.
 
 #### <a name="to-set-the-value-of-the-outcome-column-in-the-workflow"></a>Aby ustawić wartość kolumny wynik w przepływie pracy

@@ -1,5 +1,7 @@
 ---
 title: Tworzenie listy zewnętrznej w programie SharePoint przy użyciu danych firmy
+description: Utwórz model usługi BDC, który zwraca informacje o kontaktach z biznesową bazą danych, a następnie utwórz listę zewnętrzną w programie SharePoint przy użyciu tego modelu.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9f4fe79c3a6f158eb61d624ce6c5e1566925e3fd
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: a791f94e46e16369392465e075ade92a833e2868
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740061"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915339"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Przewodnik: Tworzenie listy zewnętrznej w programie SharePoint przy użyciu danych firmowych
 
@@ -54,7 +56,7 @@ Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
 
      Zostanie otwarte okno dialogowe **Nowy projekt** .
 
-2. W obszarze **Visual C#** lub **Visual Basic**rozwiń węzeł **SharePoint** , a następnie wybierz element **2010** .
+2. W obszarze **Visual C#** lub **Visual Basic** rozwiń węzeł **SharePoint** , a następnie wybierz element **2010** .
 
 3. W okienku **Szablony** wybierz **projekt SharePoint 2010**, nazwij projekt **AdventureWorksTest**, a następnie wybierz przycisk **OK** .
 
@@ -64,7 +66,7 @@ Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
 
 5. Wybierz przycisk **Zakończ** , aby zaakceptować domyślną lokalną witrynę programu SharePoint.
 
-6. W **Eksplorator rozwiązań**wybierz węzeł projektu programu SharePoint.
+6. W **Eksplorator rozwiązań** wybierz węzeł projektu programu SharePoint.
 
 7. Na pasku menu wybierz **projekt**  >  **Dodaj nowy element**.
 
@@ -82,7 +84,7 @@ Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
 
      Aby uzyskać więcej informacji, zobacz [Dodawanie/modyfikowanie połączenia (Microsoft SQL Server)](/previous-versions/dxb6fxah(v=vs.140)).
 
-3. W **Eksplorator rozwiązań**wybierz węzeł projektu.
+3. W **Eksplorator rozwiązań** wybierz węzeł projektu.
 
 4. Na pasku menu wybierz **projekt**  >  **Dodaj nowy element**.
 
@@ -96,7 +98,7 @@ Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
 
 8. Na pasku menu wybierz polecenie **Wyświetl**  >  **Eksplorator serwera**.
 
-9. W **Eksplorator serwera**rozwiń węzeł, który reprezentuje przykładową bazę danych AdventureWorks, a następnie rozwiń węzeł **tabele** .
+9. W **Eksplorator serwera** rozwiń węzeł, który reprezentuje przykładową bazę danych AdventureWorks, a następnie rozwiń węzeł **tabele** .
 
 10. Dodaj tabelę **Contact (osoba)** do projektanta O/R.
 
@@ -106,13 +108,13 @@ Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
 
 Projekt **model usługi łączności danych firmowych** dodaje do modelu jednostkę domyślną o nazwie jednostki Entity1. Usuń tę jednostkę. Później dodasz nową jednostkę. Rozpoczęcie od pustego modelu zmniejsza liczbę czynności wymaganych do ukończenia tego przewodnika.
 
-1. W **Eksplorator rozwiązań**rozwiń węzeł **BdcModel1** , a następnie otwórz plik *BdcModel1. bdcm* .
+1. W **Eksplorator rozwiązań** rozwiń węzeł **BdcModel1** , a następnie otwórz plik *BdcModel1. bdcm* .
 
 2. Plik modelu usługi łączności danych biznesowych zostanie otwarty w Projektancie usługi BDC.
 
 3. W projektancie Otwórz menu skrótów dla **jednostki Entity1**, a następnie wybierz polecenie **Usuń**.
 
-4. W **Eksplorator rozwiązań**Otwórz menu skrótów dla *jednostki Entity1. vb* (w Visual Basic) lub *Entity1.cs* (w języku C#), a następnie wybierz polecenie **Usuń**.
+4. W **Eksplorator rozwiązań** Otwórz menu skrótów dla *jednostki Entity1. vb* (w Visual Basic) lub *Entity1.cs* (w języku C#), a następnie wybierz polecenie **Usuń**.
 
 5. Otwórz menu skrótów dla *Entity1Service. vb* (w Visual Basic) lub *Entity1Service.cs* (w języku C#), a następnie wybierz polecenie **Usuń**.
 
@@ -122,11 +124,11 @@ Dodaj jednostkę do modelu. Możesz dodać jednostki z **przybornika** programu 
 
 1. Na pasku menu wybierz **Widok**  >  **Przybornik**.
 
-2. Na karcie **BusinessDataConnectivity** w **przyborniku**Dodaj **jednostkę** do projektanta usługi BDC.
+2. Na karcie **BusinessDataConnectivity** w **przyborniku** Dodaj **jednostkę** do projektanta usługi BDC.
 
      Nowa jednostka zostanie wyświetlona w projektancie. Program Visual Studio dodaje plik o nazwie *EntityService. vb* (w Visual Basic) lub *EntityService.cs* (w języku C#) do projektu.
 
-3. Na pasku menu wybierz **View**  >  **Properties**  >  **okno**właściwości widoku.
+3. Na pasku menu wybierz **View**  >  **Properties**  >  **okno** właściwości widoku.
 
 4. W oknie **Właściwości** ustaw wartość właściwości **Nazwa** na **kontakt**.
 
@@ -146,7 +148,7 @@ Dodaj określoną metodę wyszukiwania do jednostki Contact przy użyciu okna **
 
 1. W projektancie BDC wybierz jednostkę **kontakt** .
 
-2. Na pasku menu wybierz pozycję **Wyświetl**  >  **inne**  >  **Szczegóły metody BDC**systemu Windows.
+2. Na pasku menu wybierz pozycję **Wyświetl**  >  **inne**  >  **Szczegóły metody BDC** systemu Windows.
 
      Zostanie otwarte okno Szczegóły metody BDC.
 
@@ -170,7 +172,7 @@ Dodaj określoną metodę wyszukiwania do jednostki Contact przy użyciu okna **
 
 5. W oknie **Właściwości** Otwórz listę obok właściwości **TypeName** , wybierz kartę **bieżący projekt** , a następnie wybierz właściwość **kontakt** .
 
-6. W **Eksploratorze BDC**Otwórz menu skrótów **kontaktu**, a następnie wybierz **Dodaj deskryptor typu**.
+6. W **Eksploratorze BDC** Otwórz menu skrótów **kontaktu**, a następnie wybierz **Dodaj deskryptor typu**.
 
      Nowy deskryptor typu o nazwie **TypeDescriptor1** pojawia się w **Eksploratorze BDC**.
 
@@ -182,7 +184,7 @@ Dodaj określoną metodę wyszukiwania do jednostki Contact przy użyciu okna **
 
 10. Powtórz krok 6, aby utworzyć deskryptor typu dla każdego z poniższych pól.
 
-    |Nazwa|Nazwa typu|
+    |Name|Nazwa typu|
     |----------|---------------|
     |FirstName (Imię)|System. String|
     |LastName (Nazwisko)|System. String|
@@ -252,7 +254,7 @@ Po uruchomieniu projektu zostanie otwarta witryna programu SharePoint, a program
 
 3. Na stronie **Tworzenie** wybierz szablon **Lista zewnętrzna** , a następnie wybierz przycisk **Utwórz** .
 
-4. Nazwij listę **kontaktów**niestandardowych.
+4. Nazwij listę **kontaktów** niestandardowych.
 
 5. Wybierz przycisk Przeglądaj obok pola **Typ zawartości zewnętrznej** .
 

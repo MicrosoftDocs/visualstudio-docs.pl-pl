@@ -1,5 +1,7 @@
 ---
 title: Tworzenie grup przycisków do wielokrotnego użytku | Microsoft Docs
+description: Dowiedz się, jak utworzyć grupę poleceń, która jest kolekcją poleceń, które pojawiają się razem w menu lub pasku narzędzi.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 477014ed77b60821ad191ba6842999be6f528fee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b9d1d8b985f7184ffdfbf083dc3f6b8ab03d894
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903647"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915586"
 ---
 # <a name="create-reusable-groups-of-buttons"></a>Tworzenie grup przycisków do wielokrotnego użytku
 Grupa poleceń to kolekcja poleceń, które zawsze pojawiają się w menu lub pasku narzędzi. Każdą grupę poleceń można ponownie użyć, przypisując ją do różnych menu nadrzędnych w sekcji CommandPlacements pliku *. vsct* .
@@ -28,7 +30,7 @@ Grupa poleceń to kolekcja poleceń, które zawsze pojawiają się w menu lub pa
 
 1. Utwórz projekt VSIX o nazwie `ReusableButtons` . Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md).
 
-2. Po otwarciu projektu Dodaj niestandardowy szablon elementu polecenia o nazwie **ReusableCommand**. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >  **nowy element**. W oknie dialogowym **Dodaj nowy element** przejdź do rozszerzalności **Visual C#**  >  **Extensibility** i wybierz **polecenie niestandardowe**. W polu **Nazwa** w dolnej części okna Zmień nazwę pliku polecenia na *ReusableCommand.cs*.
+2. Po otwarciu projektu Dodaj niestandardowy szablon elementu polecenia o nazwie **ReusableCommand**. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >  **nowy element**. W oknie dialogowym **Dodaj nowy element** przejdź do rozszerzalności **Visual C#**  >  **Extensibility** i wybierz **polecenie niestandardowe**. W polu **Nazwa** w dolnej części okna Zmień nazwę pliku polecenia na *ReusableCommand.cs*.
 
 3. W pliku *. vsct* przejdź do sekcji symbole i Znajdź element GuidSymbol, który zawiera grupy i polecenia dla projektu. Powinien być nazwany guidReusableCommandPackageCmdSet.
 

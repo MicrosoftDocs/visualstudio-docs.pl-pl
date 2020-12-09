@@ -1,5 +1,7 @@
 ---
 title: Wytyczne dotyczące importowania przepływów pracy wielokrotnego użytku | Microsoft Docs
+description: Zapoznaj się z wytycznymi dotyczącymi importowania przepływów pracy wielokrotnego użytku utworzonych w programie SharePoint Designer do programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bb386a2d80931ece415b0b3939f2947678808261
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aab3d3b73fac086c4ff5aee8b5319a76e9aaea15
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62557191"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915521"
 ---
 # <a name="guidelines-for-importing-reusable-workflows"></a>Wytyczne dotyczące importowania przepływów pracy wielokrotnego użytku
   Aby zaimportować przepływy pracy wielokrotnego użytku utworzonych w programie SharePoint Designer, użyj szablonu projektu przepływu pracy programu SharePoint 2010 do ponownego wykorzystania [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Ten szablon polega na zaimportowaniu *deklaratywnego* *przepływu pracy* ( [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] tylko-) i przekonwertowaniu go do *przepływu pracy w kodzie*, który jest przepływem pracy, który można rozszerzyć za pomocą [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] kodu lub. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Przewodnik: Importowanie przepływu pracy wielokrotnego użytku programu SharePoint Designer do programu Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md).

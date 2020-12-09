@@ -1,6 +1,8 @@
 ---
 title: Wprowadzenie (Programowanie SharePoint w Visual Studio) | Microsoft Docs
 titleSuffix: ''
+description: Rozpocznij pracę z programowaniem programu SharePoint w programie Visual Studio. Program SharePoint oferuje platformy współpracy opartej na sieci Web.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ba96887e8a3c8bc3cb1db43b7c24fa90223a2947
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 40eb9444ec72787e154ddd0cd7bc93e786c84397
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585631"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915170"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>Wprowadzenie (Programowanie SharePoint w Visual Studio)
   Ta sekcja ułatwia rozpoczęcie pracy z programem [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] w celu opracowania rozwiązań programu SharePoint, które korzystają z systemów [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] i [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] .

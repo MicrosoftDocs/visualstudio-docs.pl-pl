@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Dodawanie metody Aktualizator | Microsoft Docs'
+description: Dowiedz się, jak umożliwić użytkownikom aktualizowanie danych firmowych na liście zewnętrznej programu SharePoint przez dodanie metody Aktualizator.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c76373c710908a8ae7edc49c4e26ff7e94336a6d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d06737de7df40efa2bc6259cc0ea53bdda17b8c
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014989"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915378"
 ---
 # <a name="how-to-add-an-updater-method"></a>Instrukcje: Dodawanie metody Aktualizator
   Można umożliwić użytkownikom aktualizowanie danych firmowych na liście zewnętrznej programu SharePoint, tworząc metodę *Aktualizator* . Aby uzyskać więcej informacji, zobacz [Projektowanie modelu łączności danych firmowych](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -31,7 +33,7 @@ ms.locfileid: "86014989"
 
 1. W projektancie BDC wybierz jednostkę.
 
-2. Na pasku menu wybierz pozycję **Wyświetl**  >  **inne**  >  **Szczegóły metody BDC**systemu Windows.
+2. Na pasku menu wybierz pozycję **Wyświetl**  >  **inne**  >  **Szczegóły metody BDC** systemu Windows.
 
     Zostanie otwarte okno Szczegóły metody BDC. Aby uzyskać więcej informacji na temat tego okna, zobacz [narzędzia projektowania modelu usługi BDC — Omówienie](../sharepoint/bdc-model-design-tools-overview.md).
 
@@ -52,7 +54,7 @@ ms.locfileid: "86014989"
    > [!NOTE]
    > Jeśli identyfikator typu jednostki reprezentuje pole w tabeli bazy danych, które nie jest generowane automatycznie, ustaw właściwość **Aktualizator pola** na **wartość true**.
 
-4. W **Eksplorator rozwiązań**Otwórz menu skrótów pliku kodu usługi, który został wygenerowany dla jednostki, a następnie wybierz polecenie **Wyświetl kod**.
+4. W **Eksplorator rozwiązań** Otwórz menu skrótów pliku kodu usługi, który został wygenerowany dla jednostki, a następnie wybierz polecenie **Wyświetl kod**.
 
     Plik kodu usługi jednostki zostanie otwarty w **edytorze kodu**. Aby uzyskać więcej informacji na temat tego pliku, zobacz [Tworzenie modelu łączności danych firmowych](../sharepoint/creating-a-business-data-connectivity-model.md).
 

@@ -1,5 +1,7 @@
 ---
 title: Obsługa formularzy w przepływach pracy | Microsoft Docs
+description: 'Przeczytaj informacje o obsłudze formularzy w przepływach pracy programu SharePoint. W przepływie pracy można używać czterech typów formularzy: skojarzenia, inicjacji, zadania i modyfikacji.'
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b064df6729b914af7758cde86b03b886fd0e5d26
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52939fe00dcbca1cfd633c81d4b0a00ea6b517b9
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986261"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915508"
 ---
 # <a name="form-support-in-workflows"></a>Obsługa formularzy w przepływach pracy
   W przepływie pracy można używać czterech typów formularzy: skojarzenia, inicjacji, zadania i modyfikacji. Te typy formularzy mogą opierać się na formularzu ASPX lub formularzu programu InfoPath. Poziom obsługi [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] zapewniany dla określonego formularza zależy od kilku czynników, które są opisane w poniższych tabelach. Aby uzyskać więcej informacji na temat typów formularzy przepływu pracy, zobacz [Omówienie formularzy przepływu pracy](/previous-versions/office/developer/sharepoint-2010/ms457061(v=office.14)).

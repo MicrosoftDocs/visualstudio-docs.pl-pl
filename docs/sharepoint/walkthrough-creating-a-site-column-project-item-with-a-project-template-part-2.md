@@ -1,6 +1,8 @@
 ---
 title: Utwórz element projektu kolumny witryny z szablonem projektu, część 2
 titleSuffix: ''
+description: Dodawanie kreatora do szablonu projektu kolumny witryny w celu zbierania danych od użytkowników, gdy używają tego szablonu do tworzenia projektu programu SharePoint zawierającego element projektu.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 51fb7a4fb3d2ccba8c0a811619d7793e730a8ec4
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e6e5c9a0bb461f6b81b9cb7e1aa5f0134a7bdcbd
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585461"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915144"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Przewodnik: Tworzenie elementu projektu kolumny witryny z szablonem projektu, część 2
   Po zdefiniowaniu niestandardowego typu elementu projektu programu SharePoint i skojarzeniu go z szablonem projektu w programie Visual Studio, można również udostępnić Kreator szablonu. Za pomocą kreatora można zbierać informacje od użytkowników, gdy używają szablonu do tworzenia nowego projektu, który zawiera element projektu. Zbierane informacje mogą służyć do inicjowania elementu projektu.
@@ -80,7 +82,7 @@ ms.locfileid: "91585461"
 
 1. W programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Otwórz rozwiązanie SiteColumnProjectItem.
 
-2. W **Eksplorator rozwiązań**Otwórz menu skrótów dla węzła rozwiązanie **SiteColumnProjectItem** , wybierz polecenie **Dodaj**, a następnie wybierz pozycję **Nowy projekt**.
+2. W **Eksplorator rozwiązań** Otwórz menu skrótów dla węzła rozwiązanie **SiteColumnProjectItem** , wybierz polecenie **Dodaj**, a następnie wybierz pozycję **Nowy projekt**.
 
 3. Na początku okna dialogowego **Dodawanie nowego projektu** upewnij się, że na liście wersji .NET Framework wybrano **.NET Framework 4,5** .
 
@@ -94,7 +96,7 @@ ms.locfileid: "91585461"
 
 #### <a name="to-create-the-sharepoint-commands-project"></a>Aby utworzyć projekt poleceń programu SharePoint
 
-1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla węzła rozwiązanie SiteColumnProjectItem, wybierz polecenie **Dodaj**, a następnie wybierz pozycję **Nowy projekt**.
+1. W **Eksplorator rozwiązań** Otwórz menu skrótów dla węzła rozwiązanie SiteColumnProjectItem, wybierz polecenie **Dodaj**, a następnie wybierz pozycję **Nowy projekt**.
 
 2. W górnej części okna dialogowego **Dodaj nowy projekt** wybierz pozycję **.NET Framework 3,5** na liście wersji .NET Framework.
 
@@ -111,9 +113,9 @@ ms.locfileid: "91585461"
 
 #### <a name="to-configure-the-wizard-project"></a>Aby skonfigurować projekt Kreatora
 
-1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla węzła projektu **ProjectTemplateWizard** , a następnie wybierz polecenie **Właściwości**.
+1. W **Eksplorator rozwiązań** Otwórz menu skrótów dla węzła projektu **ProjectTemplateWizard** , a następnie wybierz polecenie **Właściwości**.
 
-2. W **projektancie projektu**wybierz kartę **aplikacja** dla projektu Visual C# lub kartę **kompilacja** dla projektu Visual Basic.
+2. W **projektancie projektu** wybierz kartę **aplikacja** dla projektu Visual C# lub kartę **kompilacja** dla projektu Visual Basic.
 
 3. Upewnij się, że dla platformy docelowej ustawiono .NET Framework 4,5, a nie profil klienta .NET Framework 4,5.
 
@@ -165,7 +167,7 @@ ms.locfileid: "91585461"
 
 #### <a name="to-configure-the-sharepointcommands-project"></a>Aby skonfigurować projekt SharePointcommands
 
-1. W **Eksplorator rozwiązań**wybierz węzeł projektu **SharePointCommands** .
+1. W **Eksplorator rozwiązań** wybierz węzeł projektu **SharePointCommands** .
 
 2. Na pasku menu wybierz **projekt**,  **Dodaj istniejący element**.
 
@@ -325,7 +327,7 @@ ms.locfileid: "91585461"
 
 #### <a name="to-remove-the-keysnk-file-from-the-project-template"></a>Aby usunąć plik Key. snk z szablonu projektu
 
-1. W **Eksplorator rozwiązań**w węźle **SiteColumnProjectTemplate** Otwórz menu skrótów dla pliku **Key. snk** , a następnie wybierz polecenie **Usuń**.
+1. W **Eksplorator rozwiązań** w węźle **SiteColumnProjectTemplate** Otwórz menu skrótów dla pliku **Key. snk** , a następnie wybierz polecenie **Usuń**.
 
 2. W wyświetlonym oknie dialogowym potwierdzenia wybierz przycisk **OK** .
 
@@ -365,7 +367,7 @@ ms.locfileid: "91585461"
 
 #### <a name="to-sign-the-wizard-assembly-with-a-strong-name"></a>Aby podpisać zestaw kreatora silną nazwą
 
-1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu **ProjectTemplateWizard** , a następnie wybierz polecenie **Właściwości**.
+1. W **Eksplorator rozwiązań** Otwórz menu skrótów dla projektu **ProjectTemplateWizard** , a następnie wybierz polecenie **Właściwości**.
 
 2. Na karcie **podpisywanie** wybierz pole wyboru **podpisz zestaw** .
 
@@ -377,7 +379,7 @@ ms.locfileid: "91585461"
 
 #### <a name="to-get-the-public-key-token-for-the-wizard-assembly"></a>Aby uzyskać token klucza publicznego dla zestawu Kreatora
 
-1. W **menu Start**wybierz polecenie **Wszystkie programy**, wybierz **Microsoft Visual Studio**, wybierz **Visual Studio Tools**, a następnie wybierz **wiersz polecenia dla deweloperów**.
+1. W **menu Start** wybierz polecenie **Wszystkie programy**, wybierz **Microsoft Visual Studio**, wybierz **Visual Studio Tools**, a następnie wybierz **wiersz polecenia dla deweloperów**.
 
      Zostanie otwarte okno wiersza polecenia programu Visual Studio.
 
@@ -393,7 +395,7 @@ ms.locfileid: "91585461"
 
 #### <a name="to-add-a-reference-to-the-wizard-assembly-in-the-vstemplate-file"></a>Aby dodać odwołanie do zestawu Kreatora w pliku. vstemplate
 
-1. W **Eksplorator rozwiązań**rozwiń węzeł projektu **SiteColumnProjectTemplate** i Otwórz plik SiteColumnProjectTemplate. vstemplate.
+1. W **Eksplorator rozwiązań** rozwiń węzeł projektu **SiteColumnProjectTemplate** i Otwórz plik SiteColumnProjectTemplate. vstemplate.
 
 2. W prawie na końcu pliku Dodaj następujący `WizardExtension` element między `</TemplateContent>` `</VSTemplate>` tagami i. Zastąp wartość *tokenu* `PublicKeyToken` klucza publicznego, który został uzyskany w poprzedniej procedurze.
 
@@ -493,9 +495,9 @@ ms.locfileid: "91585461"
 
 5. Kontynuuj debugowanie projektu, wybierając klawisz **F5** lub na pasku menu wybierz **Debuguj**  >  **Kontynuuj**.
 
-6. W **Kreatorze dostosowania programu SharePoint**wprowadź adres URL witryny, która ma być używana do debugowania, a następnie wybierz przycisk **dalej** .
+6. W **Kreatorze dostosowania programu SharePoint** wprowadź adres URL witryny, która ma być używana do debugowania, a następnie wybierz przycisk **dalej** .
 
-7. Na drugiej stronie **Kreatora dostosowania programu SharePoint**wykonaj następujące czynności:
+7. Na drugiej stronie **Kreatora dostosowania programu SharePoint** wykonaj następujące czynności:
 
    - Z listy **Typ** wybierz **wartość Boolean**.
 
@@ -503,7 +505,7 @@ ms.locfileid: "91585461"
 
    - W polu **Nazwa** wprowadź **wartość my/No Column**, a następnie wybierz przycisk **Zakończ** .
 
-     W **Eksplorator rozwiązań**pojawia się nowy projekt zawierający element projektu o nazwie **pole1**, a program Visual Studio otwiera plik *Elements.xml* projektu w edytorze.
+     W **Eksplorator rozwiązań** pojawia się nowy projekt zawierający element projektu o nazwie **pole1**, a program Visual Studio otwiera plik *Elements.xml* projektu w edytorze.
 
 8. Sprawdź, czy *Elements.xml* zawiera wartości, które zostały określone w kreatorze.
 
@@ -518,7 +520,7 @@ ms.locfileid: "91585461"
 
 2. W menu **Akcje witryny** wybierz pozycję **Ustawienia lokacji**.
 
-3. Na stronie Ustawienia lokacji w obszarze **Galerie**wybierz łącze **kolumny witryny** .
+3. Na stronie Ustawienia lokacji w obszarze **Galerie** wybierz łącze **kolumny witryny** .
 
 4. Na liście kolumn lokacji Sprawdź, czy grupa **niestandardowa tak/nie** zawiera kolumny o nazwie **My No/No Column**, a następnie zamknij przeglądarkę sieci Web.
 

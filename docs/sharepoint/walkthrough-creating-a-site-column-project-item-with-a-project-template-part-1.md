@@ -1,6 +1,8 @@
 ---
 title: Utwórz element projektu kolumny witryny z szablonem projektu, część 1
 titleSuffix: ''
+description: Zdefiniuj typ elementu projektu na potrzeby tworzenia kolumny witryny, a następnie Utwórz szablon projektu, który będzie używany do tworzenia projektu programu SharePoint zawierającego element projektu.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a740d96fb6ae846188fc4fa457c5baeb7b5e907d
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 32f56f282dc5755b8162c4f19a9c036dc2e9cc5f
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585553"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915222"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>Przewodnik: Tworzenie elementu projektu kolumny witryny z szablonem projektu, część 1
   Projekty programu SharePoint są kontenerami dla co najmniej jednego elementu projektu programu SharePoint. System projektu programu SharePoint w programie Visual Studio można rozłożyć przez utworzenie własnych typów elementów projektu programu SharePoint, a następnie skojarzenie ich z szablonem projektu. W tym instruktażu zdefiniujesz typ elementu projektu do tworzenia kolumny witryny, a następnie utworzysz szablon projektu, którego można użyć do utworzenia nowego projektu zawierającego element projektu kolumny witryny.
@@ -86,7 +88,7 @@ ms.locfileid: "91585553"
 
 #### <a name="to-create-the-project-template-project"></a>Aby utworzyć projekt szablonu projektu
 
-1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla węzła rozwiązanie, wybierz polecenie **Dodaj**, a następnie wybierz pozycję **Nowy projekt**.
+1. W **Eksplorator rozwiązań** Otwórz menu skrótów dla węzła rozwiązanie, wybierz polecenie **Dodaj**, a następnie wybierz pozycję **Nowy projekt**.
 
 2. W górnej części okna dialogowego **Nowy projekt** upewnij się, że na liście wersji .NET Framework wybrano **.NET Framework 4,5** .
 
@@ -116,7 +118,7 @@ ms.locfileid: "91585553"
 
 #### <a name="to-create-the-extension-project"></a>Aby utworzyć projekt rozszerzenia
 
-1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla węzła rozwiązanie, wybierz polecenie **Dodaj**, a następnie wybierz pozycję **Nowy projekt**.
+1. W **Eksplorator rozwiązań** Otwórz menu skrótów dla węzła rozwiązanie, wybierz polecenie **Dodaj**, a następnie wybierz pozycję **Nowy projekt**.
 
 2. W górnej części okna dialogowego **Nowy projekt** upewnij się, że na liście wersji .NET Framework wybrano **.NET Framework 4,5** .
 
@@ -163,13 +165,13 @@ ms.locfileid: "91585553"
 2. Utwórz projekt programu SharePoint 2010 o nazwie **BaseSharePointProject**.
 
    > [!IMPORTANT]
-   > W **Kreatorze dostosowania programu SharePoint**wybierz przycisk opcji **Wdróż jako rozwiązanie farmy** .
+   > W **Kreatorze dostosowania programu SharePoint** wybierz przycisk opcji **Wdróż jako rozwiązanie farmy** .
 
 3. Dodaj pusty element do projektu, a następnie nadaj mu nazwę **pole1**.
 
 4. Zapisz projekt, a następnie zamknij drugie wystąpienie elementu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
-5. W wystąpieniu, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] które ma otwarte rozwiązanie SiteColumnProjectItem, w **Eksplorator rozwiązań**Otwórz menu skrótów dla węzła projektu **SiteColumnProjectTemplate** , wybierz polecenie **Dodaj**, a następnie wybierz pozycję **istniejący element**.
+5. W wystąpieniu, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] które ma otwarte rozwiązanie SiteColumnProjectItem, w **Eksplorator rozwiązań** Otwórz menu skrótów dla węzła projektu **SiteColumnProjectTemplate** , wybierz polecenie **Dodaj**, a następnie wybierz pozycję **istniejący element**.
 
 6. W oknie dialogowym **Dodaj istniejący element** Otwórz listę rozszerzeń plików, a następnie wybierz pozycję **wszystkie pliki ( \* . \* )**.
 
@@ -196,7 +198,7 @@ ms.locfileid: "91585553"
 
 #### <a name="to-configure-how-developers-discover-the-project-template-in-the-new-project-dialog-box"></a>Aby skonfigurować sposób odnajdywania szablonu projektu przez deweloperów w oknie dialogowym Nowy projekt
 
-1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla węzła projektu **SiteColumnProjectTemplate** , a następnie wybierz polecenie **Zwolnij projekt**. Jeśli zostanie wyświetlony monit o zapisanie zmian w dowolnych plikach, wybierz przycisk **tak** .
+1. W **Eksplorator rozwiązań** Otwórz menu skrótów dla węzła projektu **SiteColumnProjectTemplate** , a następnie wybierz polecenie **Zwolnij projekt**. Jeśli zostanie wyświetlony monit o zapisanie zmian w dowolnych plikach, wybierz przycisk **tak** .
 
 2. Otwórz menu skrótów dla węzła **SiteColumnProjectTemplate** , a następnie wybierz polecenie **Edytuj SiteColumnProjectTemplate. csproj** lub **Edytuj SiteColumnProjectTemplate. vbproj**.
 
@@ -218,7 +220,7 @@ ms.locfileid: "91585553"
 
 5. Zapisz i zamknij plik.
 
-6. W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu **SiteColumnProjectTemplate** , a następnie wybierz polecenie **Załaduj ponownie projekt**.
+6. W **Eksplorator rozwiązań** Otwórz menu skrótów dla projektu **SiteColumnProjectTemplate** , a następnie wybierz polecenie **Załaduj ponownie projekt**.
 
 ## <a name="edit-the-project-template-files"></a>Edytowanie plików szablonów projektu
  W projekcie SiteColumnProjectTemplate Edytuj następujące pliki, aby zdefiniować zachowanie szablonu projektu:
@@ -428,7 +430,7 @@ ms.locfileid: "91585553"
 
     Nowy kod XML wprowadza następujące zmiany do pliku:
 
-   - Ustawia `Name` element w **kolumnie witryna**wartości. (Ta nazwa pojawia się w oknie dialogowym **Nowy projekt** ).
+   - Ustawia `Name` element w **kolumnie witryna** wartości. (Ta nazwa pojawia się w oknie dialogowym **Nowy projekt** ).
 
    - Dodaje `ProjectItem` elementy dla każdego filethatu dołączonego do każdego wystąpienia projektu.
 
@@ -697,11 +699,11 @@ ms.locfileid: "91585553"
 
 4. W polu **Nazwa** wprowadź **SiteColumnTest** , a następnie wybierz przycisk **OK** .
 
-     W **Eksplorator rozwiązań**nowy projekt pojawia się z elementem projektu o nazwie **pole1**.
+     W **Eksplorator rozwiązań** nowy projekt pojawia się z elementem projektu o nazwie **pole1**.
 
 5. Sprawdź, czy kod w innym wystąpieniu programu Visual Studio jest zatrzymany w punkcie przerwania, który został ustawiony we wcześniejszej części `InitializeType` metody, a następnie wybierz klawisz **F5** , aby kontynuować debugowanie projektu.
 
-6. W **Eksplorator rozwiązań**wybierz węzeł **pole1** , a następnie wybierz klawisz **F4** .
+6. W **Eksplorator rozwiązań** wybierz węzeł **pole1** , a następnie wybierz klawisz **F4** .
 
      Zostanie otwarte okno **Właściwości** .
 
@@ -709,7 +711,7 @@ ms.locfileid: "91585553"
 
 #### <a name="to-test-the-site-column-in-sharepoint"></a>Aby przetestować kolumnę witryny w programie SharePoint
 
-1. W **Eksplorator rozwiązań**wybierz węzeł **SiteColumnTest** .
+1. W **Eksplorator rozwiązań** wybierz węzeł **SiteColumnTest** .
 
 2. W oknie **Właściwości** w polu tekstowym obok właściwości **adres URL witryny** wprowadź wartość **http://localhost** .
 

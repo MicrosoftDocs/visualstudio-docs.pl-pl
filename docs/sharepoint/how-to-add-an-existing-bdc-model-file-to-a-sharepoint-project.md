@@ -1,6 +1,8 @@
 ---
 title: 'Instrukcje: Dodawanie istniejącego pliku modelu BDC do projektu programu SharePoint | Microsoft Docs'
 titleSuffix: ''
+description: Dodaj istniejący plik modelu łączności danych biznesowych (BDC) do projektu programu SharePoint w programie Visual Studio, aby można było dostosować, spakować i ponownie wdrożyć model usługi BDC.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -18,19 +20,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fbfbd4e485a359b7e760188217326d23d3b0aa47
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ce65f286c3de760ff74e5ef7239aac54d760f003
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584623"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914962"
 ---
 # <a name="how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project"></a>Instrukcje: Dodawanie istniejącego pliku modelu BDC do projektu programu SharePoint
   Można dostosować, spakować i ponownie wdrożyć model łączności danych biznesowych (BDC) przy użyciu programu Visual Studio, aby dodać plik modelu (*. bdcm*) do dowolnego projektu farmy programu SharePoint. Aby uzyskać więcej informacji, zobacz [Tworzenie modelu łączności danych firmowych](../sharepoint/creating-a-business-data-connectivity-model.md).
 
 ### <a name="to-add-a-bdc-model-file-to-a-sharepoint-project"></a>Aby dodać plik modelu usługi BDC do projektu programu SharePoint
 
-1. W **Eksplorator rozwiązań**wybierz folder dla projektu programu SharePoint.
+1. W **Eksplorator rozwiązań** wybierz folder dla projektu programu SharePoint.
 
 2. Na pasku menu wybierz **projekt**  >  **Dodaj istniejący element**.
 

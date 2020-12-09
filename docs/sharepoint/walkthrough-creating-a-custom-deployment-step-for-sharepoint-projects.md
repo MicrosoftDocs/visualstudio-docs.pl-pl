@@ -1,5 +1,7 @@
 ---
 title: Tworzenie niestandardowego kroku wdrożenia dla projektów programu SharePoint
+description: W tym instruktażu Utwórz niestandardowy krok wdrożenia w celu uaktualnienia rozwiązań projektu programu SharePoint na serwerze, na którym działa program SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8b739db2755336958492a0aa67c9d5f0809f74bb
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: ea8e6a09c512ed5edb6098183c66361e96537f54
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740022"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914936"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Przewodnik: Tworzenie niestandardowego kroku wdrożenia dla projektów programu SharePoint
   Podczas wdrażania projektu programu SharePoint, program Visual Studio wykonuje serię kroków wdrożenia w określonej kolejności. Program Visual Studio zawiera wiele wbudowanych kroków wdrażania, ale można również utworzyć własne.
@@ -48,7 +50,7 @@ ms.locfileid: "90740022"
 
   Znajomość następujących pojęć jest pomocna, ale nie jest wymagana, aby ukończyć Przewodnik:
 
-- Korzystanie z modelu obiektów serwera dla programu SharePoint. Aby uzyskać więcej informacji, zobacz [Korzystanie z modelu obiektów po stronie serwera programu SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ee538251(v=office.14)).
+- Korzystanie z modelu obiektów serwera dla programu SharePoint. Aby uzyskać więcej informacji, zobacz [Korzystanie z modelu obiektów Server-Side SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ee538251(v=office.14)).
 
 - Rozwiązania programu SharePoint. Aby uzyskać więcej informacji, zobacz [Omówienie rozwiązań](/previous-versions/office/developer/sharepoint-2010/aa543214(v=office.14)).
 
@@ -84,7 +86,7 @@ ms.locfileid: "90740022"
 
 #### <a name="to-create-the-extension-project"></a>Aby utworzyć projekt rozszerzenia
 
-1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla węzła rozwiązanie UpgradeDeploymentStep, wybierz polecenie **Dodaj**, a następnie wybierz pozycję **Nowy projekt**.
+1. W **Eksplorator rozwiązań** Otwórz menu skrótów dla węzła rozwiązanie UpgradeDeploymentStep, wybierz polecenie **Dodaj**, a następnie wybierz pozycję **Nowy projekt**.
 
 2. W oknie dialogowym **Nowy projekt** rozwiń węzły **Visual C#** lub **Visual Basic** , a następnie wybierz węzeł **systemu Windows** .
 
@@ -98,7 +100,7 @@ ms.locfileid: "90740022"
 
 #### <a name="to-create-the-sharepoint-command-project"></a>Aby utworzyć projekt polecenia programu SharePoint
 
-1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla węzła rozwiązanie UpgradeDeploymentStep, wybierz polecenie **Dodaj**, a następnie wybierz pozycję **Nowy projekt**.
+1. W **Eksplorator rozwiązań** Otwórz menu skrótów dla węzła rozwiązanie UpgradeDeploymentStep, wybierz polecenie **Dodaj**, a następnie wybierz pozycję **Nowy projekt**.
 
 2. W oknie dialogowym **Nowy projekt** rozwiń pozycję **Visual C#** lub **Visual Basic**, a następnie wybierz węzeł **systemu Windows** .
 
@@ -131,7 +133,7 @@ ms.locfileid: "90740022"
 
 1. W projekcie **SharePointCommands** Dodaj plik kodu o nazwie Commands.
 
-2. W **Eksplorator rozwiązań**Otwórz menu skrótów węzła projektu **SharePointCommands** , a następnie wybierz polecenie **Dodaj odwołanie**.
+2. W **Eksplorator rozwiązań** Otwórz menu skrótów węzła projektu **SharePointCommands** , a następnie wybierz polecenie **Dodaj odwołanie**.
 
 3. Na karcie **rozszerzenia** zaznacz pola wyboru dla następujących zestawów, a następnie kliknij przycisk **OK** .
 
@@ -179,7 +181,7 @@ ms.locfileid: "90740022"
 
 #### <a name="to-build-the-projects"></a>Aby skompilować projekty
 
-1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu **DeploymentStepExtension** , a następnie wybierz polecenie **Kompiluj**.
+1. W **Eksplorator rozwiązań** Otwórz menu skrótów dla projektu **DeploymentStepExtension** , a następnie wybierz polecenie **Kompiluj**.
 
 2. Otwórz menu skrótów dla projektu **SharePointCommands** , a następnie wybierz polecenie **Kompiluj**.
 
@@ -257,9 +259,9 @@ ms.locfileid: "90740022"
 
 4. Na liście szablonów projektu wybierz **projekt SharePoint 2010**, nazwij projekt **EmployeesListDefinition**, a następnie wybierz przycisk **OK** .
 
-5. W **Kreatorze dostosowania programu SharePoint**wprowadź adres URL witryny, która ma być używana do debugowania.
+5. W **Kreatorze dostosowania programu SharePoint** wprowadź adres URL witryny, która ma być używana do debugowania.
 
-6. W obszarze **jaki jest poziom zaufania dla tego rozwiązania programu SharePoint**wybierz przycisk opcji **Wdróż jako farmę** .
+6. W obszarze **jaki jest poziom zaufania dla tego rozwiązania programu SharePoint** wybierz przycisk opcji **Wdróż jako farmę** .
 
    > [!NOTE]
    > Krok Uaktualnij wdrożenie nie obsługuje rozwiązań w trybie piaskownicy.
@@ -298,7 +300,7 @@ ms.locfileid: "90740022"
 
 13. Zapisz wszystkie pliki, a następnie zamknij projektanta list.
 
-14. W **Eksplorator rozwiązań**rozwiń węzeł **Lista pracownicy** , a następnie rozwiń węzeł podrzędny **wystąpienia listy pracowników** .
+14. W **Eksplorator rozwiązań** rozwiń węzeł **Lista pracownicy** , a następnie rozwiń węzeł podrzędny **wystąpienia listy pracowników** .
 
 15. W pliku *Elements.xml* Zastąp domyślny kod XML w tym pliku następującym kodem XML. Ten kod XML zmienia nazwę listy na **pracowników** i dodaje informacje dla pracownika o nazwie Jim Hance.
 
@@ -335,7 +337,7 @@ ms.locfileid: "90740022"
 
 #### <a name="to-deploy-the-list-definition-and-list-instance"></a>Aby wdrożyć definicję listy i wystąpienie listy
 
-1. W **Eksplorator rozwiązań**wybierz węzeł projektu **EmployeesListDefinition** .
+1. W **Eksplorator rozwiązań** wybierz węzeł projektu **EmployeesListDefinition** .
 
 2. W oknie **Właściwości** upewnij się, że właściwość **Konfiguracja aktywnego wdrożenia** ma wartość **domyślne**.
 
@@ -416,7 +418,7 @@ ms.locfileid: "90740022"
 
 #### <a name="to-test-the-upgrade-deployment-step"></a>Aby przetestować krok wdrożenia uaktualniania
 
-1. W eksperymentalnym wystąpieniu programu Visual Studio, w **Eksplorator rozwiązań**Otwórz menu skrótów dla węzła projektu **EmployeesListDefinition** , a następnie wybierz polecenie **Właściwości**.
+1. W eksperymentalnym wystąpieniu programu Visual Studio, w **Eksplorator rozwiązań** Otwórz menu skrótów dla węzła projektu **EmployeesListDefinition** , a następnie wybierz polecenie **Właściwości**.
 
     Zostanie otwarty Edytor właściwości/Projektant.
 
@@ -463,7 +465,7 @@ ms.locfileid: "90740022"
 
 3. W grupie **Ustawienia** wybierz element **Ustawienia listy** .
 
-4. W obszarze **uprawnienia i zarządzanie**wybierz polecenie **Usuń tę listę** , wybierz **przycisk OK** , aby potwierdzić, że chcesz wysłać listę do kosza, a następnie zamknij przeglądarkę sieci Web.
+4. W obszarze **uprawnienia i zarządzanie** wybierz polecenie **Usuń tę listę** , wybierz **przycisk OK** , aby potwierdzić, że chcesz wysłać listę do kosza, a następnie zamknij przeglądarkę sieci Web.
 
 #### <a name="to-remove-the-list-definition-from-the-sharepoint-site"></a>Aby usunąć definicję listy z witryny programu SharePoint
 

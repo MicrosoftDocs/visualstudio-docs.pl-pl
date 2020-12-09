@@ -1,5 +1,7 @@
 ---
 title: Wchodzenie do trybu przerwania | Microsoft Docs
+description: Dowiedz się więcej na temat procesu, który występuje dla punktu przerwania w funkcji, działającego w wierszu kodu źródłowego w kursorze lub w punkcie przerwania.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4bbcec8adf6468f70d95df5f291ce1e5540406cf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e73c64d17aee48cdb67a110e93aa556f112a1014
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738876"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915235"
 ---
 # <a name="enter-break-mode"></a>Przejdź do trybu przerwania
 Poniższe informacje opisują proces, który występuje, gdy punkt przerwania zostanie napotkany po przejściu do funkcji, działający w wierszu kodu źródłowego, który zawiera kursor lub działa do punktu przerwania.

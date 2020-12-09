@@ -1,5 +1,7 @@
 ---
 title: Utwórz & Debuguj rozwiązanie przepływu pracy programu SharePoint
+description: W tym instruktażu Utwórz i Debuguj rozwiązanie przepływu pracy programu SharePoint. Utwórz szablon podstawowego sekwencyjnego przepływu pracy. Twórz działania przepływu pracy i obsługują zdarzenia.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 65af3cbfc799a90d640579f8eed0e051fd5888f0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c8d5ca5b941a7ae6e6ebada21f1eafaef2b6f43
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014623"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915313"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>Przewodnik: Tworzenie i debugowanie rozwiązania przepływu pracy programu SharePoint
   W tym instruktażu przedstawiono sposób tworzenia podstawowego sekwencyjnego szablonu przepływu pracy. Przepływ pracy sprawdza Właściwość udostępnionej biblioteki dokumentów, aby określić, czy dokument został sprawdzony. Jeśli dokument został zrecenzowany, przepływ pracy zakończy się.
@@ -103,9 +105,9 @@ ms.locfileid: "86014623"
 
      Ten krok powoduje ustawienie poziomu zaufania dla rozwiązania jako rozwiązania farmy — jedynej dostępnej opcji dla projektów przepływu pracy. Aby uzyskać więcej informacji, zobacz [zagadnienia dotyczące rozwiązania w trybie piaskownicy](../sharepoint/sandboxed-solution-considerations.md).
 
-7. W **Eksplorator rozwiązań**wybierz węzeł projektu, a następnie na pasku menu wybierz **projekt**  >  **Dodaj nowy element**.
+7. W **Eksplorator rozwiązań** wybierz węzeł projektu, a następnie na pasku menu wybierz **projekt**  >  **Dodaj nowy element**.
 
-8. W obszarze **Visual C#** lub **Visual Basic**rozwiń węzeł **SharePoint** , a następnie wybierz węzeł **2010** .
+8. W obszarze **Visual C#** lub **Visual Basic** rozwiń węzeł **SharePoint** , a następnie wybierz węzeł **2010** .
 
 9. W okienku **Szablony** wybierz szablon **sekwencyjny przepływ pracy (tylko rozwiązanie farmy)** , a następnie wybierz przycisk **Dodaj** .
 
@@ -136,7 +138,7 @@ ms.locfileid: "86014623"
 
 4. Przełącz się z powrotem do projektanta przepływów pracy, Otwórz przybornik, a następnie rozwiń węzeł **Windows Workflow v 3.0** .
 
-5. W węźle **Windows Workflow v 3.0** **przybornika**wykonaj jeden z następujących zestawów czynności:
+5. W węźle **Windows Workflow v 3.0** **przybornika** wykonaj jeden z następujących zestawów czynności:
 
     1. Otwórz menu skrótów dla działania **while** , a następnie wybierz **Kopiuj**. W Projektancie przepływu pracy Otwórz menu skrótów dla wiersza w ramach działania **onWorkflowActivated1** , a następnie wybierz **Wklej**.
 
@@ -152,7 +154,7 @@ ms.locfileid: "86014623"
 
 9. Przełącz się z powrotem do projektanta przepływów pracy, Otwórz przybornik, a następnie rozwiń węzeł **przepływ pracy programu SharePoint** .
 
-10. W węźle **przepływ pracy programu SharePoint** **przybornika**wykonaj jeden z następujących zestawów czynności:
+10. W węźle **przepływ pracy programu SharePoint** **przybornika** wykonaj jeden z następujących zestawów czynności:
 
     - Otwórz menu skrótów dla działania **onWorkflowItemChanged** , a następnie wybierz **Kopiuj**. W Projektancie przepływu pracy Otwórz menu skrótów dla wiersza wewnątrz działania **whileActivity1** , a następnie wybierz **Wklej**.
 
@@ -172,7 +174,7 @@ ms.locfileid: "86014623"
 
 #### <a name="to-handle-activity-events"></a>Aby obsłużyć zdarzenia aktywności
 
-1. W *Workflow1.cs* lub *Workflow1. vb*Dodaj następujące pole na początku `Workflow1` klasy. To pole jest używane w działaniu, aby określić, czy przepływ pracy został ukończony.
+1. W *Workflow1.cs* lub *Workflow1. vb* Dodaj następujące pole na początku `Workflow1` klasy. To pole jest używane w działaniu, aby określić, czy przepływ pracy został ukończony.
 
     ```vb
     Dim workflowPending As Boolean = True
@@ -248,7 +250,7 @@ ms.locfileid: "86014623"
 
 #### <a name="to-test-the-sharepoint-workflow-template"></a>Aby przetestować szablon przepływu pracy programu SharePoint
 
-1. W *Workflow1.cs* lub *Workflow1. vb*Ustaw punkt przerwania obok metody **onWorkflowActivated** .
+1. W *Workflow1.cs* lub *Workflow1. vb* Ustaw punkt przerwania obok metody **onWorkflowActivated** .
 
 2. Wybierz klawisz **F5** , aby skompilować i uruchomić rozwiązanie.
 

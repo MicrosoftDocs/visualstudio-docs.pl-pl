@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: Tworzenie rozszerzenia projektu SharePoint | Microsoft Docs'
+description: Utwórz rozszerzenie projektu programu SharePoint, którego można użyć w celu reagowania na zdarzenia na poziomie projektu, takie jak w przypadku dodania, usunięcia lub zmiany nazwy projektu.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,17 +16,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9d79bf66f88a7cbaa5321887b676cc9eca798a92
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: b815f8ea4656cc5a144f8cf12396391e55123ece
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739931"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914871"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>Przewodnik: Tworzenie rozszerzenia projektu SharePoint
   W tym instruktażu pokazano, jak utworzyć rozszerzenie dla projektów programu SharePoint. Możesz użyć rozszerzenia projektu, aby odpowiedzieć na zdarzenia na poziomie projektu, takie jak w przypadku dodania, usunięcia lub zmiany nazwy projektu. Możesz również dodać właściwości niestandardowe lub odpowiedzieć, gdy zmieni się wartość właściwości. W przeciwieństwie do rozszerzeń elementu projektu, rozszerzenia projektu nie mogą być skojarzone z konkretnym typem projektu programu SharePoint. Podczas tworzenia rozszerzenia projektu rozszerzenie jest ładowane, gdy dowolny rodzaj projektu programu SharePoint jest otwarty w programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
- W tym instruktażu utworzysz niestandardową Właściwość logiczną, która jest dodawana do dowolnego projektu programu SharePoint utworzonego w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Po ustawieniu na **wartość true**Nowa właściwość dodaje lub mapuje folder zasobów obrazów do projektu. Po ustawieniu na **wartość false**folder images jest usuwany, jeśli istnieje. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie i usuwanie mapowanych folderów](../sharepoint/how-to-add-and-remove-mapped-folders.md).
+ W tym instruktażu utworzysz niestandardową Właściwość logiczną, która jest dodawana do dowolnego projektu programu SharePoint utworzonego w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Po ustawieniu na **wartość true** Nowa właściwość dodaje lub mapuje folder zasobów obrazów do projektu. Po ustawieniu na **wartość false** folder images jest usuwany, jeśli istnieje. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie i usuwanie mapowanych folderów](../sharepoint/how-to-add-and-remove-mapped-folders.md).
 
  W tym instruktażu przedstawiono następujące zadania:
 
@@ -75,7 +77,7 @@ ms.locfileid: "90739931"
 
 #### <a name="to-create-the-extension-project"></a>Aby utworzyć projekt rozszerzenia
 
-1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla węzła rozwiązanie, wybierz polecenie **Dodaj**, a następnie wybierz pozycję **Nowy projekt**.
+1. W **Eksplorator rozwiązań** Otwórz menu skrótów dla węzła rozwiązanie, wybierz polecenie **Dodaj**, a następnie wybierz pozycję **Nowy projekt**.
 
 2. W oknie dialogowym **Nowy projekt** rozwiń węzeł **Visual C#** lub **Visual Basic** , a następnie wybierz pozycję **Windows**.
 
@@ -126,7 +128,7 @@ ms.locfileid: "90739931"
 
 #### <a name="to-configure-and-create-the-vsix-package"></a>Aby skonfigurować i utworzyć pakiet VSIX
 
-1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla pliku source. Extension. vsixmanifest, a następnie wybierz przycisk **Otwórz** .
+1. W **Eksplorator rozwiązań** Otwórz menu skrótów dla pliku source. Extension. vsixmanifest, a następnie wybierz przycisk **Otwórz** .
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] otwiera plik w Projektancie manifestów. Informacje wyświetlane na karcie **metadane** są również wyświetlane w obszarze **rozszerzenia i aktualizacje**. Wszystkie pakiety VSIX wymagają pliku Extension. vsixmanifest. Aby uzyskać więcej informacji na temat tego pliku, zobacz [Dokumentacja schematu rozszerzenia VSIX 1,0](/previous-versions/dd393700(v=vs.110)).
 
@@ -157,9 +159,9 @@ ms.locfileid: "90739931"
 
 11. Na pasku menu wybierz kompilacja Kompiluj **Build**  >  **rozwiązanie**, a następnie upewnij się, że projekt kompiluje się bez błędów.
 
-12. W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu **ProjectExtensionPackage** i wybierz polecenie **Otwórz folder w Eksploratorze plików** .
+12. W **Eksplorator rozwiązań** Otwórz menu skrótów dla projektu **ProjectExtensionPackage** i wybierz polecenie **Otwórz folder w Eksploratorze plików** .
 
-13. W **Eksploratorze plików**Otwórz folder danych wyjściowych kompilacji dla projektu ProjectExtensionPackage, a następnie sprawdź, czy folder zawiera plik o nazwie ProjectExtensionPackage. VSIX.
+13. W **Eksploratorze plików** Otwórz folder danych wyjściowych kompilacji dla projektu ProjectExtensionPackage, a następnie sprawdź, czy folder zawiera plik o nazwie ProjectExtensionPackage. VSIX.
 
      Domyślnie folder wyjściowy kompilacji to... folder \bin\Debug w folderze, który zawiera plik projektu.
 
@@ -186,7 +188,7 @@ ms.locfileid: "90739931"
 
     4. Wybierz szablon **projektu programu SharePoint 2010** , a następnie wprowadź **ModuleTest** jako nazwę projektu.
 
-4. W **Eksplorator rozwiązań**wybierz węzeł projektu **ModuleTest** .
+4. W **Eksplorator rozwiązań** wybierz węzeł projektu **ModuleTest** .
 
      Nowy **folder obrazów mapy** właściwości niestandardowych pojawi się w oknie **Właściwości** z wartością domyślną **false**.
 

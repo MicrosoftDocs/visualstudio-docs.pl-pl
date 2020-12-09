@@ -1,5 +1,7 @@
 ---
 title: Tworzenie niestandardowych szablonów projektów i elementów | Microsoft Docs
+description: Dowiedz się, jak szablony tworzenia szablonów w zestawie SDK programu Visual Studio umożliwiają uwzględnianie szablonów w większych rozszerzeniach.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: overview
 ms.assetid: 586da5dc-f678-402b-afd0-0332959fd7a6
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb6bcd63896a11f9ca1eabddddc17b3e52865e5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 78770c74e5b866ad6791db01a448d46231edfd2a
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801259"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915625"
 ---
 # <a name="create-custom-project-and-item-templates"></a>Tworzenie niestandardowych szablonów projektów i elementów
 
@@ -32,7 +34,7 @@ W przypadku scenariuszy tworzenia szablonu podstawowego należy użyć kreatora 
 
 1. Utwórz projekt szablonu projektu. Szablon projektu można znaleźć w oknie dialogowym **Nowy projekt** , wyszukując frazę "szablon projektu" i wybierając wersję C# lub Visual Basic.
 
-     Szablon generuje plik klasy, ikonę, plik *. vstemplate* , edytowalny plik projektu o nazwie *ProjectTemplate. vbproj* lub *ProjectTemplate. csproj*i niektóre pliki, które są zwykle generowane przez inne typy projektów, takie jak plik *zasobów. resx* , plik *AssemblyInfo* i plik *. Settings* . Każdy plik kodu zawiera wspólne podstawienia parametrów, tam gdzie jest to konieczne.
+     Szablon generuje plik klasy, ikonę, plik *. vstemplate* , edytowalny plik projektu o nazwie *ProjectTemplate. vbproj* lub *ProjectTemplate. csproj* i niektóre pliki, które są zwykle generowane przez inne typy projektów, takie jak plik *zasobów. resx* , plik *AssemblyInfo* i plik *. Settings* . Każdy plik kodu zawiera wspólne podstawienia parametrów, tam gdzie jest to konieczne.
 
 ![wybór projektu szablonu projektu](media/project-template-selection.png)
 
@@ -72,7 +74,7 @@ W przypadku scenariuszy tworzenia szablonu podstawowego należy użyć kreatora 
 
 1. Utwórz projekt VSIX. Aby uzyskać więcej informacji, zobacz [szablon projektu VSIX](../extensibility/vsix-project-template.md).
 
-2. Ustaw projekt VSIX jako projekt startowy. W **Eksplorator rozwiązań**wybierz węzeł projektu VSIX, kliknij prawym przyciskiem myszy, a następnie wybierz pozycję **Ustaw jako projekt startowy**.
+2. Ustaw projekt VSIX jako projekt startowy. W **Eksplorator rozwiązań** wybierz węzeł projektu VSIX, kliknij prawym przyciskiem myszy, a następnie wybierz pozycję **Ustaw jako projekt startowy**.
 
 3. Ustaw projekt szablonu projektu jako element zawartości projektu VSIX. Otwórz plik *. vsixmanifest* . Przejdź do karty **składniki** i wybierz pozycję **Nowy**.
 
@@ -82,7 +84,7 @@ W przypadku scenariuszy tworzenia szablonu podstawowego należy użyć kreatora 
 
 4. Skompiluj rozwiązanie i naciśnij klawisz **F5**. Zostanie wyświetlone wystąpienie eksperymentalne.
 
-5. W przypadku projektu szablonu projektu powinien zostać wyświetlony szablon projektu w oknie dialogowym **Nowy projekt** (**plik**  >  **Nowy**  >  **projekt**) w węźle Visual C# lub Visual Basic. Dla projektu szablonu elementu powinien zostać wyświetlony szablon elementu na liście w oknie dialogowym **Dodaj nowy element** . Aby wyświetlić okno dialogowe **Dodawanie nowego elementu** , w **Eksplorator rozwiązań**wybierz węzeł projektu i wybierz pozycję **Dodaj**  >  **nowy element**).
+5. W przypadku projektu szablonu projektu powinien zostać wyświetlony szablon projektu w oknie dialogowym **Nowy projekt** (**plik**  >  **Nowy**  >  **projekt**) w węźle Visual C# lub Visual Basic. Dla projektu szablonu elementu powinien zostać wyświetlony szablon elementu na liście w oknie dialogowym **Dodaj nowy element** . Aby wyświetlić okno dialogowe **Dodawanie nowego elementu** , w **Eksplorator rozwiązań** wybierz węzeł projektu i wybierz pozycję **Dodaj**  >  **nowy element**).
 
 ## <a name="see-also"></a>Zobacz też
 

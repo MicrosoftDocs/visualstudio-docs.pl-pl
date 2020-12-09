@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Dodawanie deskryptora filtru do metody wyszukiwania | Microsoft Docs'
+description: Dowiedz się, jak dodać Deskryptor filtru do metody wyszukiwania przy użyciu okna Szczegóły metody BDC w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 228afb2f49f4d528fa9b806e9bf8d2531f7de901
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff312753be07867d8978dc4d5f60d5dfc0eee557
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016736"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915430"
 ---
 # <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>Instrukcje: Dodawanie deskryptora filtru do metody wyszukiwania
   Deskryptory filtru umożliwiają odbiorcom modelu przekazywanie wartości do metod przed ich wykonaniem. Aby uzyskać więcej informacji, zobacz [Projektowanie modelu łączności danych firmowych](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -33,7 +35,7 @@ ms.locfileid: "86016736"
 
 2. W oknie **Szczegóły metody** wybierz deskryptor typu parametru.
 
-3. Na pasku menu wybierz **View**  >  **okno właściwości**widoku.
+3. Na pasku menu wybierz **View**  >  **okno właściwości** widoku.
 
 4. W oknie **Właściwości** ustaw właściwość **Nazwa typu** na typ danych, który jest odpowiedni dla filtra.
 
@@ -45,7 +47,7 @@ ms.locfileid: "86016736"
 
      Nowy Deskryptor filtru pojawia się pod węzłem **deskryptorów filtru** .
 
-7. Na pasku menu wybierz **View**  >  **okno właściwości**widoku.
+7. Na pasku menu wybierz **View**  >  **okno właściwości** widoku.
 
 8. W oknie **Właściwości** wybierz właściwość **Typ** .
 

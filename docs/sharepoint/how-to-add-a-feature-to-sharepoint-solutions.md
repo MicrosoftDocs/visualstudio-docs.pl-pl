@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Dodawanie funkcji do rozwiązań SharePoint | Microsoft Docs'
+description: Dowiedz się, jak dodać funkcję do rozwiązań programu SharePoint w programie Visual Studio. Aby zorganizować różne typy plików programu SharePoint, można dodać więcej elementów funkcji.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,19 +14,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 07d939a12e47f4ba63f51310efb36cc0a59d20e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5b31c650beff880340090b7548a18962fa276e36
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017001"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915118"
 ---
 # <a name="how-to-add-a-feature-to-sharepoint-solutions"></a>Instrukcje: Dodawanie funkcji do rozwiązań SharePoint
   Podczas tworzenia rozwiązania programu SharePoint do rozwiązania dodawane są jedną funkcję i jeden pakiet. Aby zorganizować różne typy plików programu SharePoint, można dodać więcej elementów funkcji.
 
 ### <a name="to-add-a-feature-through-solution-explorer"></a>Aby dodać funkcję za pomocą Eksplorator rozwiązań
 
-1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla **funkcji**, a następnie wybierz polecenie **Dodaj funkcję**.
+1. W **Eksplorator rozwiązań** Otwórz menu skrótów dla **funkcji**, a następnie wybierz polecenie **Dodaj funkcję**.
 
 ## <a name="see-also"></a>Zobacz też
 - [Pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

@@ -1,5 +1,7 @@
 ---
 title: Zadania debugowania | Microsoft Docs
+description: Dowiedz się więcej o zadaniach niezbędnych do debugowania programu, takich jak dołączanie go do aparatu debugowania, generowanie zdarzeń uruchamiania i naciśnięcie punktów przerwania.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 070068853d962bdf9b209edb9410d33d46ccf853
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 83d351e2b995922d1a8257f7ea9fc0cdad67ab3e
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903557"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915573"
 ---
 # <a name="debug-tasks"></a>Debuguj zadania
 Aby debugować program, musi on zostać uruchomiony, a aparat debugowania (DE) musi być dołączony do niego lub w przeciwnym razie element DE musi być dołączony do wcześniej uruchomionego programu. Po dołączeniu Usuń musi generować pewne zdarzenia uruchamiania. W odpowiedzi pakiet debugowania próbuje powiązać punkty przerwania ustawione w IDE. Gdy program trafi związany z punktem przerwania, zatrzymuje i czeka na dane wejściowe użytkownika.

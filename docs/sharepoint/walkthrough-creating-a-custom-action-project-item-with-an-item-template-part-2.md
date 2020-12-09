@@ -1,6 +1,8 @@
 ---
 title: Utwórz niestandardowy element projektu akcji z szablonem elementu, część 2
 titleSuffix: ''
+description: W tym instruktażu Dodaj kreatora, aby zbierać informacje od użytkowników, gdy używają szablonu elementu do dodawania niestandardowego elementu projektu akcji w witrynie programu SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 957af3fdb4a86f4973ff8ac24251bae923ec299c
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: fe283da2c2a81827ca70414315278cebd775873a
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585474"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915214"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Przewodnik: Tworzenie niestandardowego elementu projektu akcji z szablonem elementu część 2
   Po zdefiniowaniu niestandardowego typu elementu projektu programu SharePoint i skojarzeniu go z szablonem elementu w programie Visual Studio, można również udostępnić Kreator szablonu. Za pomocą kreatora można zbierać informacje od użytkowników, gdy używają one szablonu, aby dodać nowe wystąpienie elementu projektu do projektu. Zbierane informacje mogą służyć do inicjowania elementu projektu.
@@ -59,7 +61,7 @@ ms.locfileid: "91585474"
 
 1. W programie Visual Studio Otwórz rozwiązanie CustomActionProjectItem
 
-2. W **Eksplorator rozwiązań**Otwórz menu skrótów dla węzła rozwiązanie, wybierz polecenie **Dodaj**, a następnie wybierz pozycję **Nowy projekt**.
+2. W **Eksplorator rozwiązań** Otwórz menu skrótów dla węzła rozwiązanie, wybierz polecenie **Dodaj**, a następnie wybierz pozycję **Nowy projekt**.
 
 3. W oknie dialogowym **Nowy projekt** rozwiń węzły **Visual C#** lub **Visual Basic** , a następnie wybierz węzeł **systemu Windows** .
 
@@ -76,9 +78,9 @@ ms.locfileid: "91585474"
 
 #### <a name="to-configure-the-wizard-project"></a>Aby skonfigurować projekt Kreatora
 
-1. W **Eksplorator rozwiązań**Otwórz menu skrótów z węzła projektu **ItemTemplateWizard** , a następnie wybierz polecenie **Właściwości**.
+1. W **Eksplorator rozwiązań** Otwórz menu skrótów z węzła projektu **ItemTemplateWizard** , a następnie wybierz polecenie **Właściwości**.
 
-2. W **projektancie projektu**upewnij się, że struktura docelowa jest ustawiona na .NET Framework 4,5.
+2. W **projektancie projektu** upewnij się, że struktura docelowa jest ustawiona na .NET Framework 4,5.
 
      W przypadku projektów Visual C# można ustawić tę wartość na karcie **aplikacja** . W przypadku projektów Visual Basic można ustawić tę wartość na karcie **Kompilowanie** . Aby uzyskać więcej informacji, zobacz [How to: Target of a wersja .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
 
@@ -172,7 +174,7 @@ ms.locfileid: "91585474"
 
 #### <a name="to-sign-the-wizard-assembly-with-a-strong-name"></a>Aby podpisać zestaw kreatora silną nazwą
 
-1. W **Eksplorator rozwiązań**Otwórz menu skrótów z węzła projektu **ItemTemplateWizard** , a następnie wybierz polecenie **Właściwości**.
+1. W **Eksplorator rozwiązań** Otwórz menu skrótów z węzła projektu **ItemTemplateWizard** , a następnie wybierz polecenie **Właściwości**.
 
 2. Na karcie **podpisywanie** wybierz pole wyboru **podpisz zestaw** .
 
@@ -196,7 +198,7 @@ ms.locfileid: "91585474"
 
 #### <a name="to-add-a-reference-to-the-wizard-assembly-in-the-vstemplate-file"></a>Aby dodać odwołanie do zestawu Kreatora w pliku. vstemplate
 
-1. W **Eksplorator rozwiązań**rozwiń węzeł projektu **ItemTemplate** , a następnie otwórz plik *ItemTemplate. vstemplate* .
+1. W **Eksplorator rozwiązań** rozwiń węzeł projektu **ItemTemplate** , a następnie otwórz plik *ItemTemplate. vstemplate* .
 
 2. W prawie na końcu pliku Dodaj następujący `WizardExtension` element między `</TemplateContent>` `</VSTemplate>` tagami i. Zastąp wartość *YourToken* `PublicKeyToken` atrybutu tokenem klucza publicznego uzyskanym w poprzedniej procedurze.
 
@@ -243,7 +245,7 @@ ms.locfileid: "91585474"
 
 #### <a name="to-add-the-wizard-to-the-vsix-package"></a>Aby dodać kreatora do pakietu VSIX
 
-1. W **Eksplorator rozwiązań**Otwórz menu skrótów z pliku **source. Extension. vsixmanifest** w projekcie CustomActionProjectItem, a następnie wybierz **Otwórz** , aby otworzyć plik w edytorze manifestu.
+1. W **Eksplorator rozwiązań** Otwórz menu skrótów z pliku **source. Extension. vsixmanifest** w projekcie CustomActionProjectItem, a następnie wybierz **Otwórz** , aby otworzyć plik w edytorze manifestu.
 
 2. W edytorze manifestu wybierz kartę **zasoby** , a następnie wybierz przycisk **Nowy** .
 
@@ -282,9 +284,9 @@ ms.locfileid: "91585474"
 
 3. Na liście szablonów projektu wybierz **projekt SharePoint 2010**, nazwij projekt **CustomActionWizardTest**, a następnie wybierz przycisk **OK** .
 
-4. W **Kreatorze dostosowania programu SharePoint**wprowadź adres URL witryny, która ma być używana do debugowania, a następnie wybierz przycisk **Zakończ** .
+4. W **Kreatorze dostosowania programu SharePoint** wprowadź adres URL witryny, która ma być używana do debugowania, a następnie wybierz przycisk **Zakończ** .
 
-5. W **Eksplorator rozwiązań**Otwórz menu skrótów dla węzła projektu, wybierz **Dodaj**, a następnie wybierz **nowy element**.
+5. W **Eksplorator rozwiązań** Otwórz menu skrótów dla węzła projektu, wybierz **Dodaj**, a następnie wybierz **nowy element**.
 
 6. W oknie dialogowym **Dodaj nowy element — CustomItemWizardTest** rozwiń węzeł **SharePoint** , a następnie rozwiń węzeł **2010** .
 
@@ -296,7 +298,7 @@ ms.locfileid: "91585474"
 
      Zostanie wyświetlony Kreator dostosowania programu SharePoint.
 
-10. W obszarze **Lokalizacja**wybierz przycisk opcji **Edytuj listę** .
+10. W obszarze **Lokalizacja** wybierz przycisk opcji **Edytuj listę** .
 
 11. Na liście **Identyfikator grupy** wybierz pozycję **komunikacja**.
 

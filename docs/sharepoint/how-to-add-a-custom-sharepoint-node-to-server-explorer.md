@@ -1,6 +1,8 @@
 ---
 title: 'Instrukcje: Dodawanie niestandardowego węzła programu SharePoint do Eksplorator serwera | Microsoft Docs'
 titleSuffix: ''
+description: Dodaj niestandardowy węzeł programu SharePoint do Eksplorator serwera w programie Visual Studio. Wyświetl dodatkowe składniki programu SharePoint, które domyślnie nie są wyświetlane w Eksplorator serwera.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5a74c9c879df57a5ff6444626870ee9f021fb4e9
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: bbee6d780c7f447c8b47f7b478531cb58cef94fd
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584888"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915469"
 ---
 # <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>Instrukcje: Dodawanie niestandardowego węzła programu SharePoint do Eksplorator serwera
   Węzły niestandardowe można dodać w węźle **połączenia programu SharePoint** w **Eksplorator serwera**. Jest to przydatne, gdy chcesz wyświetlić dodatkowe składniki programu SharePoint, które nie są domyślnie wyświetlane w **Eksplorator serwera** . Aby uzyskać więcej informacji, zobacz sekcję Rozpoznaj [węzeł połączenia SharePoint w Eksplorator serwera](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).

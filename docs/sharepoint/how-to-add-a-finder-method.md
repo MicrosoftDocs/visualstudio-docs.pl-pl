@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Dodawanie metody wyszukiwania | Microsoft Docs'
+description: Dodaj metodę wyszukiwania w programie Visual Studio, która umożliwia usłudze łączności danych biznesowych (BDC) wyświetlanie listy jednostek w składniku Web Part lub liście programu SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,23 +19,23 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1fa8f8eb34943cc17bc6cabca8e93ea7569a7ba6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7e2bb74278194878ed4496c12c918707cdc1e6e
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016725"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915092"
 ---
 # <a name="how-to-add-a-finder-method"></a>Instrukcje: Dodawanie metody wyszukiwania
   Aby włączyć usługę łączności danych biznesowych (BDC) do wyświetlania listy jednostek w składniku Web Part lub liście, należy utworzyć metodę *wyszukiwania* . Metoda wyszukiwania to specjalna metoda zwracająca kolekcję wystąpień jednostek. Aby uzyskać więcej informacji, zobacz [Projektowanie modelu łączności danych firmowych](../sharepoint/designing-a-business-data-connectivity-model.md).
 
 ### <a name="to-create-a-finder-method"></a>Aby utworzyć metodę wyszukiwania
 
-1. W **projektancie BDC**wybierz jednostkę.
+1. W **projektancie BDC** wybierz jednostkę.
 
     Aby uzyskać więcej informacji, zobacz [jak: Dodawanie jednostki do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md).
 
-2. Na pasku menu wybierz pozycję **Wyświetl**  >  **inne**  >  **Szczegóły metody BDC**systemu Windows.
+2. Na pasku menu wybierz pozycję **Wyświetl**  >  **inne**  >  **Szczegóły metody BDC** systemu Windows.
 
     Zostanie otwarte okno **Szczegóły metody BDC** . Aby uzyskać więcej informacji na temat okna **Szczegóły metody BDC** , zobacz [Omówienie narzędzi projektowania modelu usługi BDC](../sharepoint/bdc-model-design-tools-overview.md).
 
@@ -46,7 +48,7 @@ ms.locfileid: "86016725"
    > [!NOTE]
    > Nie trzeba wykonywać tego kroku, jeśli dodano określoną metodę wyszukiwania do jednostki. Program Visual Studio używa deskryptora typu zdefiniowanego w określonej metodzie wyszukiwania.
 
-5. W **Eksplorator rozwiązań**Otwórz menu skrótów pliku kodu usługi, który został wygenerowany dla jednostki, a następnie wybierz polecenie **Wyświetl kod**. Aby uzyskać więcej informacji na temat pliku kodu usługi, zobacz [Tworzenie modelu łączności danych firmowych](../sharepoint/creating-a-business-data-connectivity-model.md).
+5. W **Eksplorator rozwiązań** Otwórz menu skrótów pliku kodu usługi, który został wygenerowany dla jednostki, a następnie wybierz polecenie **Wyświetl kod**. Aby uzyskać więcej informacji na temat pliku kodu usługi, zobacz [Tworzenie modelu łączności danych firmowych](../sharepoint/creating-a-business-data-connectivity-model.md).
 
 6. Dodaj kod do metody wyszukiwania. Ten kod wykonuje następujące zadania:
 
