@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Dodawanie i usuwanie zamapowanych folderów | Microsoft Docs'
+description: Dodawanie i usuwanie mapowanych folderów do projektu w programie SharePoint.  Zmień lokalizację wdrożenia zamapowanego folderu. Zmień nazwę lub Usuń zamapowane foldery.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 80fbd3e18b8d440eae2873c73013ad7468073640
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4d29be9b008bfaa9ad6694725b03e25bf6847df
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014652"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914812"
 ---
 # <a name="how-to-add-and-remove-mapped-folders"></a>Instrukcje: Dodawanie i usuwanie mapowanych folderów
   Niektóre często używane foldery w programie SharePoint, takie jak obrazy i układy, są głęboko osadzone w hierarchii plików. Te foldery można mapować do projektu programu SharePoint, aby łatwiej uzyskać do nich dostęp. Mapowane foldery to foldery w projekcie programu SharePoint, które odpowiadają lokalizacji fizycznej plików w instalacji programu SharePoint Server.
@@ -41,13 +43,13 @@ Do projektu można dodać mapowane foldery przy użyciu poleceń na pasku menu l
 
 4. W polu **Nazwa** wprowadź **TestProject1**, a następnie wybierz przycisk **OK** .
 
-5. W **Kreatorze dostosowania programu SharePoint**wybierz przycisk **Zakończ** , aby zachować ustawienia domyślne.
+5. W **Kreatorze dostosowania programu SharePoint** wybierz przycisk **Zakończ** , aby zachować ustawienia domyślne.
 
-6. W **Eksplorator rozwiązań**wybierz węzeł projektu, a następnie na pasku menu wybierz pozycję **projekt**  >  **Dodaj SharePoint "obrazy" folder zamapowany**.
+6. W **Eksplorator rozwiązań** wybierz węzeł projektu, a następnie na pasku menu wybierz pozycję **projekt**  >  **Dodaj SharePoint "obrazy" folder zamapowany**.
 
      Folder o nazwie **obrazy** pojawia się w projekcie i zawiera podfolder o nazwie TestProject1. Ten zamapowany folder będzie zawierać obrazy dla projektu wizualnego składnika Web Part.
 
-7. W **Eksplorator rozwiązań**wybierz węzeł projektu, a następnie na pasku menu wybierz **projekt**  >  **Dodaj zamapowany folder programu SharePoint** , aby wyświetlić okno dialogowe **Dodaj zamapowany folder programu SharePoint** .
+7. W **Eksplorator rozwiązań** wybierz węzeł projektu, a następnie na pasku menu wybierz **projekt**  >  **Dodaj zamapowany folder programu SharePoint** , aby wyświetlić okno dialogowe **Dodaj zamapowany folder programu SharePoint** .
 
 8. W widoku drzewa folderów, które są dostępne do mapowania, wybierz folder **resources** , a następnie wybierz przycisk **OK** .
 
@@ -72,7 +74,7 @@ Do projektu można dodać mapowane foldery przy użyciu poleceń na pasku menu l
 
 1. W projekcie, który został utworzony wcześniej, wybierz zamapowany folder.
 
-2. Aby zmienić nazwę zamapowanego folderu, otwórz jego menu skrótów, wybierz polecenie **Zmień**nazwę, wprowadź nową wartość, a następnie wybierz klawisz ENTER.
+2. Aby zmienić nazwę zamapowanego folderu, otwórz jego menu skrótów, wybierz polecenie **Zmień** nazwę, wprowadź nową wartość, a następnie wybierz klawisz ENTER.
 
      Alternatywnie możesz wybrać mapowany folder, którego nazwę chcesz zmienić, Otwórz okno **Właściwości** , a następnie ustaw wartość właściwości **Nazwa folderu** na nową nazwę.
 

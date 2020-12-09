@@ -1,5 +1,7 @@
 ---
 title: Składniki debugera | Microsoft Docs
+description: Dowiedz się więcej o elementach, które tworzą sesję debugowania, zarządzaną przez debuger programu Visual Studio, zaimplementowaną jako pakietu VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03c400fd03c5ee0f2629e9f436b65f53f8f2ac8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2fa0a7feb85437cc8173d52695ddb1ba0d2c06b7
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739009"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914117"
 ---
 # <a name="debugger-components"></a>Składniki debugera
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Debuger jest zaimplementowany jako pakietu VSPackage i zarządza całą sesją debugowania. Sesja debugowania obejmuje następujące elementy:

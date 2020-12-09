@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: Tworzenie składnika Web Part dla programu SharePoint | Microsoft Docs'
+description: Utwórz składnik Web Part dla programu SharePoint. Składniki Web Part pozwalają użytkownikom bezpośrednio zmieniać zawartość, wygląd i zachowanie stron witryny programu SharePoint za pomocą przeglądarki.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7fe560ae0c639ec8c400719738ea1f52b5315a9a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98e0c21fa4e3f119b32e19dd1be6e7d9148a17f4
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247649"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914663"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Przewodnik: Tworzenie składnika Web Part dla programu SharePoint
 
@@ -80,7 +82,7 @@ Dodaj element **składnika Web Part** do projektu. Element **składnika Web Part
 
 Możesz określić, które kontrolki mają być wyświetlane w składniku Web Part, dodając je do kolekcji Controls klasy Web Part.
 
-1. W **Eksplorator rozwiązań**Otwórz *WebPart1. vb* (w Visual Basic) lub *WebPart1.cs* (w języku C#).
+1. W **Eksplorator rozwiązań** Otwórz *WebPart1. vb* (w Visual Basic) lub *WebPart1.cs* (w języku C#).
 
      Plik kodu składnika Web Part zostanie otwarty w edytorze kodu.
 
@@ -89,7 +91,7 @@ Możesz określić, które kontrolki mają być wyświetlane w składniku Web Pa
      [!code-csharp[SP_WebPart#1](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#1)]
      [!code-vb[SP_WebPart#1](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#1)]
 
-3. Dodaj następujący kod do `WebPart1` klasy. Ten kod deklaruje następujące pola:
+3. Dodaj poniższy kod do klasy `WebPart1`. Ten kod deklaruje następujące pola:
 
    - Siatka danych służąca do wyświetlania pracowników w składniku Web Part.
 
@@ -102,7 +104,7 @@ Możesz określić, które kontrolki mają być wyświetlane w składniku Web Pa
      [!code-csharp[SP_WebPart#2](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#2)]
      [!code-vb[SP_WebPart#2](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#2)]
 
-4. Dodaj następujący kod do `WebPart1` klasy. Ten kod dodaje niestandardową właściwość o nazwie `DataFilePath` do składnika Web Part. Właściwość niestandardowa jest właściwością, którą użytkownik może ustawić w programie SharePoint. Ta właściwość pobiera i ustawia lokalizację pliku danych XML, który jest używany do wypełniania siatki danych.
+4. Dodaj poniższy kod do klasy `WebPart1`. Ten kod dodaje niestandardową właściwość o nazwie `DataFilePath` do składnika Web Part. Właściwość niestandardowa jest właściwością, którą użytkownik może ustawić w programie SharePoint. Ta właściwość pobiera i ustawia lokalizację pliku danych XML, który jest używany do wypełniania siatki danych.
 
      [!code-csharp[SP_WebPart#3](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#3)]
      [!code-vb[SP_WebPart#3](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#3)]

@@ -1,5 +1,7 @@
 ---
 title: Debuguj pakiet | Microsoft Docs
+description: Dowiedz się, jak działa pakiet debugowania w programie Visual Studio Shell i obsługuje interfejs użytkownika, wykorzystując interfejsy debugowania i komunikując się z menedżerem debugowania sesji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: de6240ea5d938d02f8415009203962e124ff049e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ad62a487d38500617999a276aa3ae15a75089736
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739018"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914130"
 ---
 # <a name="debug-package"></a>Debuguj pakiet
 Pakiet debugowania działa w programie Visual Studio Shell i obsługuje cały interfejs użytkownika. Korzysta ona z interfejsów debugowania programu Visual Studio i komunikuje się z menedżerem debugowania sesji (SDM).

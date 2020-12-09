@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: Tworzenie niestandardowego działania przepływu pracy witryny | Microsoft Docs'
+description: W tym instruktażu zapoznaj się z tematem jak utworzyć niestandardowe działanie dla przepływu pracy programu SharePoint na poziomie witryny przy użyciu programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dc7eef8b0924be745de436e06acc36785b1cb99b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 86302a0b8eef4344a909ae3b8fb2c513c86c4ad6
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016529"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913959"
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Przewodnik: Tworzenie niestandardowego działania przepływu pracy witryny
   W tym instruktażu pokazano, jak utworzyć niestandardowe działanie dla przepływu pracy na poziomie witryny przy użyciu programu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . (Przepływy pracy na poziomie witryny mają zastosowanie do całej lokacji, a nie tylko na liście w witrynie). Działanie niestandardowe tworzy listę anonsów kopii zapasowych, a następnie kopiuje do niej zawartość listy anonsów.
@@ -66,9 +68,9 @@ ms.locfileid: "86016529"
 
      Ten krok powoduje ustawienie poziomu zaufania dla rozwiązania jako rozwiązania farmy — jedynej dostępnej opcji dla projektów przepływu pracy.
 
-6. W **Eksplorator rozwiązań**wybierz węzeł projektu, a następnie na pasku menu wybierz **projekt**  >  **Dodaj nowy element**.
+6. W **Eksplorator rozwiązań** wybierz węzeł projektu, a następnie na pasku menu wybierz **projekt**  >  **Dodaj nowy element**.
 
-7. W obszarze **Visual C#** lub **Visual Basic**rozwiń węzeł **SharePoint** , a następnie wybierz węzeł **2010** .
+7. W obszarze **Visual C#** lub **Visual Basic** rozwiń węzeł **SharePoint** , a następnie wybierz węzeł **2010** .
 
 8. W okienku **Szablony** wybierz szablon **sekwencyjny przepływ pracy (tylko rozwiązanie farmy)** , a następnie wybierz przycisk **Dodaj** .
 
@@ -114,7 +116,7 @@ ms.locfileid: "86016529"
 
 1. Wybierz klawisz **F5** , aby uruchomić projekt i wdrożyć go w programie SharePoint.
 
-2. Na pasku szybkiego uruchamiania wybierz link **listy** , aby wyświetlić wszystkie listy, które są dostępne w witrynie programu SharePoint. Należy zauważyć, że dla anonsów o nazwie **Anonsy**jest tylko jedna lista.
+2. Na pasku szybkiego uruchamiania wybierz link **listy** , aby wyświetlić wszystkie listy, które są dostępne w witrynie programu SharePoint. Należy zauważyć, że dla anonsów o nazwie **Anonsy** jest tylko jedna lista.
 
 3. W górnej części strony sieci Web programu SharePoint wybierz łącze **przepływy pracy witryny** .
 

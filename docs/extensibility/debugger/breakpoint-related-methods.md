@@ -1,5 +1,7 @@
 ---
-title: Metody związane z punktem przerwania | Microsoft Docs
+title: Metody Breakpoint-Related | Microsoft Docs
+description: Debugowanie programu Visual Studio obsługuje powiązane punkty przerwania, które zostały pomyślnie powiązane z lokalizacją w kodzie i oczekujące punkty przerwania, które nie są jeszcze powiązane.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c72ec63e500ac86a4a5bd66a2956fe0fb06c8834
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9472f1ff4105790951ddd687d7e71c3e57fa39da
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739212"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914468"
 ---
 # <a name="breakpoint-related-methods"></a>Metody związane z punktem przerwania
 Aparat debugowania (DE) musi obsługiwać ustawienie punktów przerwania. Debugowanie programu Visual Studio obsługuje następujące typy punktów przerwania:
@@ -45,7 +47,7 @@ Aparat debugowania (DE) musi obsługiwać ustawienie punktów przerwania. Debugo
 |[Włączenie](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)|Przełącza włączony stan oczekującego punktu przerwania.|
 |[EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)|Wylicza wszystkie punkty przerwania powiązane z oczekującego punktu przerwania.|
 |[EnumErrorBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)|Wylicza wszystkie punkty przerwania błędów wynikające z oczekującego punktu przerwania.|
-|[Usuń](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|Usuwa oczekujący punkt przerwania i wszystkie punkty przerwania powiązane z nim.|
+|[Usuwanie](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|Usuwa oczekujący punkt przerwania i wszystkie punkty przerwania powiązane z nim.|
 
  Aby wyliczyć powiązane punkty przerwania i punkty przerwania błędów, należy zaimplementować wszystkie metody [IEnumDebugBoundBreakpoints2](../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) i [IEnumDebugErrorBreakpoints2](../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md).
 
@@ -57,7 +59,7 @@ Aparat debugowania (DE) musi obsługiwać ustawienie punktów przerwania. Debugo
 |[GetState](../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)|Pobiera stan powiązanego punktu przerwania.|
 |[GetBreakpointResolution](../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md)|Pobiera rozdzielczość punktu przerwania opisującą punkt przerwania.|
 |[Włączenie](../../extensibility/debugger/reference/idebugboundbreakpoint2-enable.md)|Włącza lub wyłącza punkt przerwania.|
-|[Usuń](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md)|Usuwa powiązany punkt przerwania.|
+|[Usuwanie](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md)|Usuwa powiązany punkt przerwania.|
 
  Informacje o rozwiązywaniu i żądaniu wymagają implementacji następujących metod [IDebugBreakpointResolution2](../../extensibility/debugger/reference/idebugbreakpointresolution2.md) .
 

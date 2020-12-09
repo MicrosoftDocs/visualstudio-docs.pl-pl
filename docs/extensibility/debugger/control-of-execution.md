@@ -1,5 +1,7 @@
 ---
 title: Kontrola wykonywania | Microsoft Docs
+description: Dowiedz się więcej na temat zatrzymywania zdarzeń, co oznacza, że odczeka na odpowiedź od użytkownika za pomocą środowiska IDE.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c59831efb2fc97ad1bb2891fd93a67fe79f8eff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 88adaad3092e084841c40b5e04d45f94985a2ee8
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86387008"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913883"
 ---
 # <a name="control-of-execution"></a>Kontrola wykonywania
 Aparat debugowania (DE) zwykle wysyła jedno z następujących zdarzeń jako ostatnie zdarzenie uruchamiania:
@@ -57,7 +59,7 @@ Aparat debugowania (DE) zwykle wysyła jedno z następujących zdarzeń jako ost
 
    Jeśli pakietem debugowania jest ignorowanie określonego zdarzenia zatrzymania, pakiet debugowania wywołuje model SDM, który wywołuje [IDebugProgram2:: Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md). Jeśli program przeprowadził do, przekroczenia lub z funkcji po napotkaniu warunku zatrzymania, kontynuuje ten krok. Oznacza to, że program zachowuje stan stopniowania, dzięki czemu wie, jak kontynuować.
 
-   Wywołania modelu SDM `Step` są **wykonywane**, a i **kontynuuje** są asynchroniczne, co oznacza, że model SDM oczekuje, że wywołanie ma być szybko zwracane. Jeśli po stronie Anuluj wyśle zdarzenie zatrzymywania modelu SDM w tym samym wątku przed `Step` , **Execute**lub **Continue** , model SDM przestanie odpowiadać.
+   Wywołania modelu SDM `Step` są **wykonywane**, a i **kontynuuje** są asynchroniczne, co oznacza, że model SDM oczekuje, że wywołanie ma być szybko zwracane. Jeśli po stronie Anuluj wyśle zdarzenie zatrzymywania modelu SDM w tym samym wątku przed `Step` , **Execute** lub **Continue** , model SDM przestanie odpowiadać.
 
 ## <a name="see-also"></a>Zobacz też
 - [Debuguj zadania](../../extensibility/debugger/debugging-tasks.md)

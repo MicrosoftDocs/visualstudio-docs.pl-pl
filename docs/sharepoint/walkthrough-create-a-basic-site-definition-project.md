@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: Tworzenie podstawowego projektu definicji lokacji | Microsoft Docs'
+description: W tym instruktażu programu SharePoint, zobacz jak utworzyć podstawową definicję witryny, która zawiera wizualny składnik Web Part z niektórymi kontrolkami.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d1c06f4df5d1efe06ad2537bd2e65f2c239f3be2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0411f027b105622d806e123bd80f38c4b05281ca
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016772"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913857"
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>Przewodnik: Tworzenie podstawowego projektu definicji lokacji
   W tym instruktażu pokazano, jak utworzyć podstawową definicję witryny, która zawiera wizualny składnik Web Part z niektórymi kontrolkami. Dla jasności, tworzony składnik Web Part ma tylko kilka kontrolek. Można jednak utworzyć bardziej zaawansowane definicje witryn programu SharePoint, które zawierają więcej funkcji.
@@ -69,9 +71,9 @@ ms.locfileid: "86016772"
 
     Projekt pojawia się w **Eksplorator rozwiązań**.
 
-8. W **Eksplorator rozwiązań**wybierz węzeł projektu, a następnie na pasku menu wybierz **projekt**  >  **Dodaj nowy element**.
+8. W **Eksplorator rozwiązań** wybierz węzeł projektu, a następnie na pasku menu wybierz **projekt**  >  **Dodaj nowy element**.
 
-9. W obszarze **Visual C#** lub **Visual Basic**rozwiń węzeł **SharePoint** , a następnie wybierz węzeł **2010** .
+9. W obszarze **Visual C#** lub **Visual Basic** rozwiń węzeł **SharePoint** , a następnie wybierz węzeł **2010** .
 
 10. W okienku **Szablony** wybierz szablon **Definicja witryny** , pozostaw **nazwę** jako **SiteDefinition1**, a następnie wybierz przycisk **Dodaj** .
 
@@ -80,7 +82,7 @@ ms.locfileid: "86016772"
 
 #### <a name="to-create-a-visual-web-part"></a>Aby utworzyć wizualny składnik Web Part
 
-1. W **Eksplorator rozwiązań**wybierz przycisk **Pokaż wszystkie pliki** .
+1. W **Eksplorator rozwiązań** wybierz przycisk **Pokaż wszystkie pliki** .
 
 2. Wybierz węzeł projektu **SiteDefinition1** , a następnie na pasku menu wybierz kolejno opcje **projekt**  >  **Dodaj nowy element**.
 
@@ -92,7 +94,7 @@ ms.locfileid: "86016772"
 
      Zostanie otwarty plik *VisualWebPart1. ascx* .
 
-5. W dolnej części *VisualWebPart1. ascx*Dodaj następujące znaczniki, aby dodać trzy kontrolki do formularza: pole tekstowe, przycisk i etykieta:
+5. W dolnej części *VisualWebPart1. ascx* Dodaj następujące znaczniki, aby dodać trzy kontrolki do formularza: pole tekstowe, przycisk i etykieta:
 
     ```aspx-csharp
     <table>
@@ -110,7 +112,7 @@ ms.locfileid: "86016772"
     </table>
     ```
 
-6. W obszarze *VisualWebPart1. ascx*otwórz plik *VisualWebPart1.ascx.cs* (dla [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] ) lub *VisualWebPart1. ascx. vb* (dla [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] ), a następnie Dodaj następujący kod:
+6. W obszarze *VisualWebPart1. ascx* otwórz plik *VisualWebPart1.ascx.cs* (dla [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] ) lub *VisualWebPart1. ascx. vb* (dla [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] ), a następnie Dodaj następujący kod:
 
      [!code-vb[SP_SimpleSiteDef#1](../sharepoint/codesnippet/VisualBasic/testsitedefvb/sitedefinition/visualwebpart1/visualwebpart1usercontrol.ascx.vb#1)]
      [!code-csharp[SP_SimpleSiteDef#1](../sharepoint/codesnippet/CSharp/testsitedef/sitedefinition/visualwebpart1/visualwebpart1usercontrol.ascx.cs#1)]
@@ -140,7 +142,7 @@ ms.locfileid: "86016772"
 
      Ten kod tworzy odwołanie do utworzonego wcześniej elementu Visual Web Part.
 
-3. W **Eksplorator rozwiązań**Otwórz menu skrótów dla węzła **SiteDefinition1** , a następnie wybierz polecenie **Ustaw jako element startowy**.
+3. W **Eksplorator rozwiązań** Otwórz menu skrótów dla węzła **SiteDefinition1** , a następnie wybierz polecenie **Ustaw jako element startowy**.
 
 ## <a name="deploy-and-run-the-site-definition-solution"></a>Wdrażanie i uruchamianie rozwiązania definicji lokacji
  Następnie wdróż projekt w programie SharePoint, a następnie Uruchom projekt.

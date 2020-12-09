@@ -1,5 +1,7 @@
 ---
 title: Ocenianie wyrażeń | Microsoft Docs
+description: Dowiedz się więcej na temat oceniania wyrażeń, które są tworzone na podstawie ciągów przewidzianych w oknach autostarts, Watch, QuickWatch lub natychmiastowe.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +14,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18e342704cbb4abd7de9667576ce331ef8fbf60a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b43fc91de129407f2fd01e12951cffee4028186f
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738827"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914598"
 ---
 # <a name="evaluate-expressions"></a>Oceń wyrażenia
-Wyrażenia są tworzone na podstawie ciągów przewidzianych z okna **autostarts**, **Watch**, **QuickWatch**lub **Immediate** . Gdy wyrażenie jest oceniane, generuje ciąg drukowalny, który zawiera nazwę i typ zmiennej lub argumentu i jego wartości. Ten ciąg jest wyświetlany w odpowiednim oknie środowiska IDE.
+Wyrażenia są tworzone na podstawie ciągów przewidzianych z okna **autostarts**, **Watch**, **QuickWatch** lub **Immediate** . Gdy wyrażenie jest oceniane, generuje ciąg drukowalny, który zawiera nazwę i typ zmiennej lub argumentu i jego wartości. Ten ciąg jest wyświetlany w odpowiednim oknie środowiska IDE.
 
 ## <a name="implementation"></a>Implementacja
  Wyrażenia są oceniane, gdy program został zatrzymany w punkcie przerwania. Samo wyrażenie jest reprezentowane przez interfejs [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) , który reprezentuje wyrażenie analizowane, które jest gotowe do powiązania i oceny w ramach danego kontekstu oceny wyrażenia. Ramka stosu określa kontekst oceny wyrażenia, który aparat debugowania (DE) dostarcza przez implementację interfejsu [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) .

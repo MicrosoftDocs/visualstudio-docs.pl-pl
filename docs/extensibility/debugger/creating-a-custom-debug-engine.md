@@ -1,5 +1,7 @@
 ---
 title: Tworzenie niestandardowego aparatu debugowania | Microsoft Docs
+description: Skorzystaj z poniższych artykułów, aby dowiedzieć się więcej o tworzeniu aparatu debugowania, który umożliwia debugowanie określonych architektur w czasie wykonywania.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 241bc016d8a64905951bffef07ba425f1351a727
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 673b08bf5680e04c90376c9eb3d63f6f03df9723
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903581"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914195"
 ---
 # <a name="create-a-custom-debug-engine"></a>Tworzenie niestandardowego aparatu debugowania
 Aparat debugowania (DE) to składnik, który umożliwia debugowanie określonych architektur w czasie wykonywania. Zazwyczaj istnieje tylko jedna cofnięta implementacja dla środowiska wykonawczego.

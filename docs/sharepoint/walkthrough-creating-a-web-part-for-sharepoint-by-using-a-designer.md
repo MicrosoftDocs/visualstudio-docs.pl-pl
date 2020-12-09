@@ -1,5 +1,7 @@
 ---
 title: Tworzenie składnika Web Part dla programu SharePoint przy użyciu narzędzia Projektant
+description: W tym instruktażu należy utworzyć składnik Web Part wizualnie przy użyciu szablonu projektu Visual Web Part programu SharePoint w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 732bd9fe3d34a768e0c6f71315f212c49bdf02af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cc214e98b2ec0ed6feb31c9aaa6e8170b3ddd2c8
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016386"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913987"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>Przewodnik: Tworzenie składnika Web Part dla programu SharePoint przy użyciu narzędzia Projektant
 
@@ -53,7 +55,7 @@ Najpierw utwórz projekt składnika Web Part przy użyciu szablonu projektu **Vi
 
      Zostanie wyświetlone okno dialogowe **Nowy projekt**.
 
-3. W oknie dialogowym **Nowy projekt** w obszarze **Visual C#** lub **Visual Basic**rozwiń węzeł **Office/SharePoint**, a następnie wybierz kategorię **rozwiązania SharePoint** .
+3. W oknie dialogowym **Nowy projekt** w obszarze **Visual C#** lub **Visual Basic** rozwiń węzeł **Office/SharePoint**, a następnie wybierz kategorię **rozwiązania SharePoint** .
 
 4. Na liście szablonów wybierz szablon **SharePoint 2013-Visual Web Part** , a następnie wybierz przycisk **OK** .
 
@@ -71,17 +73,17 @@ Zaprojektuj składnik Web Part poprzez dodanie kontrolek z **przybornika** do po
 
 2. Na pasku menu wybierz **Widok**  >  **Przybornik**.
 
-3. W węźle **Standardowy** **przybornika**Wybierz kontrolkę **formant CheckBoxList** , a następnie wykonaj jedną z następujących czynności:
+3. W węźle **Standardowy** **przybornika** Wybierz kontrolkę **formant CheckBoxList** , a następnie wykonaj jedną z następujących czynności:
 
     - Otwórz menu skrótów dla kontrolki **formant CheckBoxList** , wybierz polecenie **Kopiuj**, otwórz menu skrótów dla pierwszego wiersza w projektancie, a następnie wybierz **Wklej**.
 
-    - Przeciągnij kontrolkę **formant CheckBoxList** z **przybornika**i Połącz formant z pierwszym wierszem w projektancie.
+    - Przeciągnij kontrolkę **formant CheckBoxList** z **przybornika** i Połącz formant z pierwszym wierszem w projektancie.
 
 4. Powtórz poprzedni krok, ale Przenieś przycisk do następnego wiersza projektanta.
 
 5. W Projektancie wybierz przycisk **Button1** .
 
-6. Na pasku menu wybierz **View**  >  **okno właściwości**widoku.
+6. Na pasku menu wybierz **View**  >  **okno właściwości** widoku.
 
      Zostanie otwarte okno **Właściwości** .
 
@@ -139,7 +141,7 @@ Po uruchomieniu projektu zostanie otwarta witryna programu SharePoint. Składnik
 
      Zostanie otwarta witryna programu SharePoint, a [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] na stronie zostanie wyświetlony pasek Szybkie uruchamianie.
 
-2. Na pasku Szybkie uruchamianie w obszarze **listy**wybierz łącze **Kalendarz** .
+2. Na pasku Szybkie uruchamianie w obszarze **listy** wybierz łącze **Kalendarz** .
 
      Zostanie wyświetlona strona **Kalendarz** .
 

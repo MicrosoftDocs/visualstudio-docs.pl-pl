@@ -1,5 +1,7 @@
 ---
 title: Aparat debugowania | Microsoft Docs
+description: Dowiedz się, jak aparat debugowania współpracuje z interpreterem lub systemem operacyjnym w celu świadczenia usług takich jak kontrola wykonywania, punkty przerwania i Obliczanie wyrażenia.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a4cb00796f8db23a43cd81a06d80d0fac40f075e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c31d095a3e340bf7e8f7a61a8db5bcbed53f0d5f
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739069"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914221"
 ---
 # <a name="debug-engine"></a>Aparat debugowania
 Aparat debugowania (DE) współpracuje z interpreterem lub systemem operacyjnym w celu zapewnienia usług debugowania, takich jak kontrola wykonywania, punkty przerwania i Obliczanie wyrażenia. DE jest odpowiedzialny za monitorowanie stanu debugowanego programu. Aby to zrobić, w środowisku uruchomieniowym są dostępne wszystkie metody, niezależnie od tego, czy procesor CPU, czy z interfejsów API dostarczonych przez środowisko uruchomieniowe.

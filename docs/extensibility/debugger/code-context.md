@@ -1,5 +1,7 @@
 ---
 title: Kontekst kodu | Microsoft Docs
+description: Dowiedz się więcej o kontekście kodu w debugowaniu programu Visual Studio, który opisuje położenie w kodzie, który istnieje, gdy program został zatrzymany w punkcie przerwania.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6424c1182f30b1bbfe6c166209b94afb7ec45549
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60eabaca8d39d40649e20e022b25ce1b02bd8faf
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739151"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914312"
 ---
 # <a name="code-context"></a>Kontekst kodu
 W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debugowaniu, **kontekst kodu**:

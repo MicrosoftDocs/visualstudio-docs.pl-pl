@@ -1,6 +1,8 @@
 ---
 title: Tworzenie kolumny witryny, typu zawartości i listy dla programu SharePoint
 titleSuffix: ''
+description: W tym instruktażu Utwórz niestandardową kolumnę witryny (pole), niestandardowy typ zawartości korzystającej z kolumny lokacja i listę, która używa typu zawartości w programie SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 041c0ba5174450fca7acf7247b1cf40a98ac147d
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: b1670dfa3c7202e8ebbdb28396f161daeffac491
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298376"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914013"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Przewodnik: Tworzenie kolumny witryny, typu zawartości i listy dla programu SharePoint
   W poniższych procedurach pokazano, jak utworzyć niestandardowe kolumny witryny programu SharePoint — lub *pola*— a także typ zawartości, która używa kolumn witryny. Przedstawiono w nim również sposób tworzenia listy korzystającej z nowego typu zawartości.
@@ -56,7 +58,7 @@ ms.locfileid: "92298376"
 
 1. W menu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] **plik** wybierz pozycję **Nowy**  >  **projekt**.
 ::: moniker range="=vs-2017"
-2. W oknie dialogowym **Nowy projekt** w obszarze **Visual C#** lub **Visual Basic**rozwiń węzeł **Office/SharePoint** , a następnie wybierz pozycję **rozwiązania programu SharePoint**.
+2. W oknie dialogowym **Nowy projekt** w obszarze **Visual C#** lub **Visual Basic** rozwiń węzeł **Office/SharePoint** , a następnie wybierz pozycję **rozwiązania programu SharePoint**.
 
 3. W okienku **Szablony** wybierz **pusty projekt programu SharePoint** dla konkretnej zainstalowanej wersji programu SharePoint. Na przykład jeśli masz instalację programu SharePoint 2016, wybierz szablon **programu sharepoint 2016-pusty** .  
 
@@ -87,7 +89,7 @@ ms.locfileid: "92298376"
 
 #### <a name="to-add-site-columns"></a>Aby dodać kolumny witryny
 
-1. Dodaj nową kolumnę witryny. W tym celu w **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt **kliniki** , a następnie wybierz polecenie **Dodaj**  >  **nowy element**.
+1. Dodaj nową kolumnę witryny. W tym celu w **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt **kliniki** , a następnie wybierz polecenie **Dodaj**  >  **nowy element**.
 
 2. W oknie dialogowym **Dodaj nowy element** wybierz **kolumnę lokacja**, Zmień nazwę na **pacjentname**, a następnie wybierz przycisk **Dodaj** .
 
@@ -115,11 +117,11 @@ ms.locfileid: "92298376"
 
 #### <a name="to-create-a-custom-content-type"></a>Aby utworzyć niestandardowy typ zawartości
 
-1. Dodaj typ zawartości do projektu. W tym celu w **Eksplorator rozwiązań**wybierz węzeł projektu
+1. Dodaj typ zawartości do projektu. W tym celu w **Eksplorator rozwiązań** wybierz węzeł projektu
 
 2. Na pasku menu wybierz **projekt**  >  **Dodaj nowy element**.
 
-3. W obszarze **Visual C#** lub **Visual Basic**rozwiń węzeł **SharePoint** , a następnie wybierz węzeł **2010** .
+3. W obszarze **Visual C#** lub **Visual Basic** rozwiń węzeł **SharePoint** , a następnie wybierz węzeł **2010** .
 
 4. W okienku **Szablony** wybierz szablon **Typ zawartości** , Zmień nazwę na dane **pacjenta**, a następnie wybierz przycisk **Dodaj** .
 
@@ -129,7 +131,7 @@ ms.locfileid: "92298376"
 
      W ten sposób można uzyskać dostęp do innych potencjalnie przydatnych kolumn witryny w typie zawartości kontakt, a także zdefiniowanych wcześniej kolumn lokacji.
 
-6. Po pojawieniu się projektanta typów zawartości na karcie **kolumny** Dodaj trzy zdefiniowane wcześniej kolumny lokacji: **nazwę pacjenta**, **identyfikator pacjenta**i **nazwę lekarza**. Aby dodać te kolumny, wybierz pierwsze pole listy z listy kolumny witryny w obszarze **Nazwa wyświetlana**, a następnie wybierz kolumnę każdej witryny na liście po jednej naraz.
+6. Po pojawieniu się projektanta typów zawartości na karcie **kolumny** Dodaj trzy zdefiniowane wcześniej kolumny lokacji: **nazwę pacjenta**, **identyfikator pacjenta** i **nazwę lekarza**. Aby dodać te kolumny, wybierz pierwsze pole listy z listy kolumny witryny w obszarze **Nazwa wyświetlana**, a następnie wybierz kolumnę każdej witryny na liście po jednej naraz.
 
     > [!TIP]
     > Aby szybciej wybierać kolumny witryny, przefiltruj listę, wprowadzając kilka pierwszych liter nazwy kolumny.
@@ -149,11 +151,11 @@ ms.locfileid: "92298376"
 
 #### <a name="to-create-a-list"></a>Aby utworzyć listę
 
-1. Dodaj listę do projektu. W tym celu w **Eksplorator rozwiązań**wybierz węzeł projektu.
+1. Dodaj listę do projektu. W tym celu w **Eksplorator rozwiązań** wybierz węzeł projektu.
 
 2. Na pasku menu wybierz **projekt**  >  **Dodaj nowy element**.
 
-3. W obszarze **Visual C#** lub **Visual Basic**rozwiń węzeł **SharePoint** .
+3. W obszarze **Visual C#** lub **Visual Basic** rozwiń węzeł **SharePoint** .
 
 4. W okienku **Szablony** wybierz szablon **listy** , Zmień nazwę na **pacjentów**, a następnie wybierz przycisk **Dodaj** .
 
@@ -179,7 +181,7 @@ ms.locfileid: "92298376"
 
     - Komentarze
 
-9. W obszarze **Nazwa wyświetlana kolumny**Wybierz pusty wiersz, Dodaj niestandardową kolumnę listy i nadaj jej nazwę **Szpital**. Pozostaw swój typ danych jako **pojedynczy wiersz tekstu**.
+9. W obszarze **Nazwa wyświetlana kolumny** Wybierz pusty wiersz, Dodaj niestandardową kolumnę listy i nadaj jej nazwę **Szpital**. Pozostaw swój typ danych jako **pojedynczy wiersz tekstu**.
 
      Niestandardowa kolumna listy ma zastosowanie tylko do tej listy. Po dodaniu niestandardowej kolumny listy do listy jest tworzony i ustawiany nowy typ zawartości listy, w tym wszystkie kolumny dodane do listy.
 

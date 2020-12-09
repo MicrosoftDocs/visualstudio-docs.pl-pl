@@ -1,5 +1,7 @@
 ---
 title: Powiązywanie punktów przerwania | Microsoft Docs
+description: Dowiedz się, w jaki sposób środowisko IDE ustala żądanie dla punktu przerwania, a następnie Monituj sesję debugowania, aby utworzyć punkt przerwania, gdy użytkownik ustawi punkt przerwania.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e839b6e0e7967c4802bee5617da3334c5d4033c5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 606c1f4cb5559722028b78ef4ef21c41c0ba5556
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903236"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914715"
 ---
 # <a name="bind-breakpoints"></a>Powiązywanie punktów przerwania
 Jeśli użytkownik ustawi punkt przerwania, na przykład przez naciśnięcie klawisza **F9**, IDE formułuje żądanie i poprosi o sesję debugowania, aby utworzyć punkt przerwania.

@@ -1,6 +1,8 @@
 ---
 title: 'Eksplorator serwera: rozszerzanie węzła połączeń programu SharePoint'
 titleSuffix: ''
+description: W tym instruktażu zapoznaj się z tematem jak wywołać model obiektów klienta programu SharePoint z rozszerzenia dla węzła połączenia programu SharePoint w Eksplorator serwera.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d7f1ac5b0fb1f25d04139d76efa816ebd059d7da
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: c323f05d341af810eecafae43e8d04d3cba29054
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585579"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913948"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Przewodnik: wywoływanie modelu obiektów klienta programu SharePoint w rozszerzeniu Eksplorator serwera
   W tym instruktażu pokazano, jak wywołać model obiektów klienta programu SharePoint z rozszerzenia dla węzła **połączenia programu SharePoint** w **Eksplorator serwera**. Aby uzyskać więcej informacji o sposobach korzystania z modelu obiektów klienta programu SharePoint, zobacz [Wywoływanie modeli obiektów programu SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
@@ -84,7 +86,7 @@ Znajomość następujących pojęć jest pomocna, ale nie jest wymagana, aby uko
 
 #### <a name="to-create-the-extension-project"></a>Aby utworzyć projekt rozszerzenia
 
-1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla węzła rozwiązanie, wybierz polecenie **Dodaj**, a następnie wybierz pozycję **Nowy projekt**.
+1. W **Eksplorator rozwiązań** Otwórz menu skrótów dla węzła rozwiązanie, wybierz polecenie **Dodaj**, a następnie wybierz pozycję **Nowy projekt**.
 
 2. W oknie dialogowym  **Nowy projekt** rozwiń węzeł **Visual C#** lub **Visual Basic** , a następnie wybierz pozycję **Windows**.
 
@@ -148,7 +150,7 @@ Znajomość następujących pojęć jest pomocna, ale nie jest wymagana, aby uko
 
 7. Powtórz kroki od 3 do 7, aby dodać drugą ikonę do zasobów projektu i nazwać ten **składnik**.
 
-8. W **Eksplorator rozwiązań**w folderze **resources** projektu **WebPartNodeExtension** wybierz *WebPartsNode. ico*.
+8. W **Eksplorator rozwiązań** w folderze **resources** projektu **WebPartNodeExtension** wybierz *WebPartsNode. ico*.
 
 9. W oknie **Właściwości** Otwórz listę **Akcja kompilacji** , a następnie wybierz pozycję **zasób osadzony**.
 
@@ -184,7 +186,7 @@ Znajomość następujących pojęć jest pomocna, ale nie jest wymagana, aby uko
 
 #### <a name="to-build-the-project"></a>Aby skompilować projekt
 
-1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu **WebPartNodeExtension** , a następnie wybierz polecenie **Kompiluj**.
+1. W **Eksplorator rozwiązań** Otwórz menu skrótów dla projektu **WebPartNodeExtension** , a następnie wybierz polecenie **Kompiluj**.
 
 ## <a name="create-a-vsix-package-to-deploy-the-extension"></a>Tworzenie pakietu VSIX w celu wdrożenia rozszerzenia
  Aby wdrożyć rozszerzenie, użyj projektu VSIX w rozwiązaniu, aby utworzyć pakiet VSIX. Najpierw skonfiguruj pakiet VSIX, modyfikując plik source. Extension. vsixmanifest, który znajduje się w projekcie. Następnie Utwórz pakiet VSIX, tworząc rozwiązanie.
@@ -257,7 +259,7 @@ Znajomość następujących pojęć jest pomocna, ale nie jest wymagana, aby uko
 
 9. W oknie **Właściwości** Sprawdź, czy są wyświetlane szczegółowe informacje o części sieci Web.
 
-10. W **Eksplorator serwera**Otwórz menu skrótów dla tego samego składnika Web Part, a następnie wybierz polecenie **Wyświetl komunikat**.
+10. W **Eksplorator serwera** Otwórz menu skrótów dla tego samego składnika Web Part, a następnie wybierz polecenie **Wyświetl komunikat**.
 
      W wyświetlonym oknie komunikatu wybierz przycisk **OK** .
 
