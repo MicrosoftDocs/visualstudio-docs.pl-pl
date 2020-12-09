@@ -1,0 +1,91 @@
+### YamlMime:Hub
+title: Dokumentacja dotycząca programowania gier w programie Visual Studio
+summary: Dowiedz się, jak tworzyć gry przy użyciu programu Visual Studio, Visual Studio dla komputerów Mac i wiodących narzędzi, które integrują się z takimi jak Unity, aparat Unreal i nie tylko.
+brand: visual-studio
+metadata:
+  title: Dokumentacja dotycząca programowania gier w programie Visual Studio | Microsoft Docs
+  description: W tym artykule wprowadzono funkcje programu Visual Studio na potrzeby programowania gier.
+  author: therealjohn
+  ms.author: johmil
+  ms.date: 08/05/2020
+  ms.topic: hub-page
+  ms.openlocfilehash: 5cd2470d62d90f686cc5175ac15e7c49eadfc014
+  ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+  ms.translationtype: MT
+  ms.contentlocale: pl-PL
+  ms.lasthandoff: 11/05/2020
+  ms.locfileid: "96926496"
+highlightedContent:
+  items:
+  - title: Tworzenie gier w programie Visual Studio
+    itemType: overview
+    url: https://visualstudio.microsoft.com/vs/features/game-development
+  - title: Programowanie gier w języku C# przy użyciu aparatu Unity
+    itemType: learn
+    url: unity/get-started/visual-studio-tools-for-unity.md
+  - title: Co nowego w Visual Studio Tools for Unity?
+    itemType: whats-new
+    url: unity/change-log-visual-studio-tools-for-unity.md
+  - title: Tworzenie pierwszej aplikacji 3W przy użyciu aparatu Unity
+    itemType: quickstart
+    url: https://dotnet.microsoft.com/learn/games/unity-tutorial/intro
+  - title: Dowiedz się więcej na temat programowania gier w środowisku .NET
+    itemType: learn
+    url: https://dotnet.microsoft.com/apps/gaming
+productDirectory:
+  title: Projektowanie gier
+  summary: Dowiedz się więcej na temat wiodących narzędzi i technologii zintegrowanych z programem Visual Studio i platformą .NET
+  items:
+  - title: Unity
+    imageSrc: unity/media/unity-logo.png
+    links:
+    - url: unity/get-started/visual-studio-tools-for-unity.md
+      text: Visual Studio Tools for Unity samouczka
+    - url: unity/get-started/getting-started-with-visual-studio-tools-for-unity.md
+      text: Wprowadzenie do programu Visual Studio i aparatu Unity
+    - url: unity/troubleshooting/troubleshooting-and-known-issues-visual-studio-tools-for-unity.md
+      text: Visual Studio Tools for Unity rozwiązywania problemów
+  - title: MonoGame
+    imageSrc: monogame/media/monogame-logo.png
+    links:
+    - url: https://www.monogame.net/
+      text: Omówienie gry wielogramowej
+    - url: https://docs.monogame.net/articles/getting_started/0_getting_started.html
+      text: Wprowadzenie do korzystania z platformy wielogramowej
+    - url: https://docs.monogame.net/articles/getting_started/0_getting_started.html#setting-up-your-development-environment
+      text: Konfigurowanie programu Visual Studio dla gry wielogramowej
+  - title: Unreal Engine
+    imageSrc: unreal/media/unreal-engine-logo.png
+    links:
+    - url: https://www.unrealengine.com/features
+      text: Przegląd aparatu Unreal
+    - url: https://docs.unrealengine.com/GettingStarted/index.html
+      text: Wprowadzenie do aparatu Unreal
+    - url: https://docs.unrealengine.com/Programming/Development/VisualStudioSetup/index.html
+      text: Konfigurowanie aparatu programu Visual Studio for Unreal
+conceptualContent:
+  title: Bilansuj w górę przy użyciu programu Visual Studio
+  summary: Dowiedz się więcej na temat edytowania kodu, debugowania, kompilowania i innych elementów przy użyciu programu Visual Studio.
+  items:
+  - title: Dowiedz się, jak używać programu Visual Studio
+    links:
+    - text: Uruchom przewodnik
+      url: /docs/get-started/visual-studio-ide.md
+      itemType: overview
+    - text: Pisanie i edytowanie kodu
+      url: /docs/ide/index-writing-code.yml
+      itemType: tutorial
+    - text: Ogólne funkcje debugowania
+      itemType: tutorial
+      url: /docs/debugger/debugger-feature-tour.md
+  - title: Postępuj zgodnie z samouczkiem
+    links:
+    - text: Twoja pierwsza gra z programem Unity
+      url: https://dotnet.microsoft.com/learn/games/unity-tutorial/intro
+      itemType: tutorial
+    - text: Przykłady z gier & demonstracje
+      url: https://docs.monogame.net/articles/samples.html
+      itemType: tutorial
+    - text: Samouczki dotyczące aparatu Unreal
+      url: https://www.unrealengine.com/en-US/onlinelearning-courses
+      itemType: learn
