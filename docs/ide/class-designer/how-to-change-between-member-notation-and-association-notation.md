@@ -1,6 +1,6 @@
 ---
-title: Zmiana między notacją skojarzenia & elementu członkowskiego (Projektant klas)
-description: Dowiedz się, jak zmienić sposób, w jaki Diagram klas reprezentuje relację skojarzenia między dwoma typami z notacji elementu członkowskiego i odwrotnie.
+title: Zmiana między notacją skojarzenia & składowej
+description: Dowiedz się, jak zmienić sposób, w jaki Diagram klas reprezentuje relację skojarzenia w Projektant klas między dwoma typami z notacji składowej a notacją skojarzenia i na odwrót.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64d26b6ca1c71fe3484544f02006a27866ff4843
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: f96fe04ee84be50bd241db6bf9f73280c40dec02
+ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901664"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96933573"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>Instrukcje: zmiana między notacją składowej i notacją skojarzenia w Projektant klas
 
@@ -44,7 +44,7 @@ W **Projektant klas** można zmienić sposób, w jaki Diagram klas reprezentuje 
 
 Na diagramie klas kliknij prawym przyciskiem myszy linię skojarzenia, a następnie wybierz polecenie **Pokaż jako właściwość** lub **Pokaż jako odpowiednie pole** . Wiersz skojarzenia znika, a właściwość jest wyświetlana w odpowiednim przedziale w obrębie kształtu typ na diagramie.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Instrukcje: Tworzenie dziedziczenia między typami](how-to-create-inheritance-between-types.md)
 - [Instrukcje: wyświetlanie dziedziczenia między typami](how-to-view-inheritance-between-types.md)

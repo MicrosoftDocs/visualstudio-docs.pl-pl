@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Tworzenie dziedziczenia między typami (Projektant klas)'
+title: Tworzenie dziedziczenia między typami
 description: Dowiedz się, jak utworzyć relację dziedziczenia między dwoma typami na diagramie klas przy użyciu Projektant klas.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 199f220529b28d4ca0c668d30564da65f6553e0e
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 064ae443c264187e7666b7aaabde27d6705388a4
+ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901469"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96933482"
 ---
 # <a name="how-to-create-inheritance-between-types-in-class-designer"></a>Instrukcje: Tworzenie dziedziczenia między typami w Projektant klas
 
@@ -49,7 +49,7 @@ Aby utworzyć relację dziedziczenia między dwoma typami na diagramie klasy prz
     >
     >  Chociaż można wizualizować istniejące typy ogólne, nie można tworzyć nowych typów ogólnych. Nie można również zmienić parametrów typu dla istniejących typów ogólnych.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Dziedziczenie](/dotnet/csharp/programming-guide/classes-and-structs/inheritance)
 - [Podstawowe informacje o dziedziczeniu](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)

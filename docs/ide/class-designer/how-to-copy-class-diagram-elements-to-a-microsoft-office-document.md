@@ -1,6 +1,6 @@
 ---
-title: 'Porady: kopiowanie elementów diagramu klasy do dokumentu pakietu Microsoft Office (Projektant klas)'
-description: Dowiedz się, jak kopiować kształty z diagramu klas platformy .NET do innych dokumentów. Otrzymasz kopię kształtu lub jego kodu źródłowego.
+title: Kopiowanie elementów diagramu klas do dokumentu pakietu Office
+description: Dowiedz się, jak używać Projektant klas do kopiowania kształtów z diagramu klas platformy .NET do innych dokumentów. otrzymasz kopię kształtu lub jego kodu źródłowego.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe473dfdfdf78934ad018a507c6386a1da9babb6
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 35776073679e43be99260108a72a22f33017a682
+ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901625"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96933599"
 ---
 # <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>Instrukcje: kopiowanie elementów diagramu klas do dokumentu Microsoft Office
 
@@ -42,7 +42,7 @@ Kliknij prawym przyciskiem myszy kształt i wybierz polecenie **Kopiuj obraz**.
 
 Możesz również wybrać opcję **Kopiuj** zamiast **obrazu Kopiuj**. **Kopiuj** kopiuje obraz jako zwykłą mapę bitową. **Kopiuj obraz** kopiuje obraz jako obraz oparty na wektorach, co jest lepszym rozwiązaniem w przypadku większości aplikacji pakietu Office.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Instrukcje: Drukowanie diagramów klas](how-to-print-class-diagrams.md)
 - [Instrukcje: eksportowanie diagramów klas jako obrazów](how-to-export-class-diagrams-as-images.md)

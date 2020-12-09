@@ -1,6 +1,6 @@
 ---
-title: 'Porady: podział klas na klasy częściowe (Projektant klas)'
-description: Dowiedz się, jak używać słowa kluczowego częściowe do dzielenia deklaracji klasy lub struktury między kilka deklaracji.
+title: Podział klasy na klasy częściowe
+description: Dowiedz się, jak używać słowa kluczowego częściowe do dzielenia deklaracji klasy lub struktury między kilka deklaracji w Projektant klas.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,12 +16,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ac0726851aec0d86223c2d95027b92137682c8a9
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: d6eb6e72dc409a642dcf8e1a4c7a7389529375c7
+ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901352"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96933522"
 ---
 # <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>Instrukcje: dzielenie klasy na klasy częściowe w Projektant klas
 
@@ -78,7 +78,7 @@ Partial Public Class Employee
 End Class
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Klasy częściowe i metody](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)
 - [częściowe (Type) (odwołanie w C#)](/dotnet/csharp/language-reference/keywords/partial-type)
