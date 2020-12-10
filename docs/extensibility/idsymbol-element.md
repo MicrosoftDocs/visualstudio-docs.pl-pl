@@ -1,5 +1,7 @@
 ---
 title: IDSymbol — element | Microsoft Docs
+description: 'Element IDSymbol zawiera identyfikator pary GUID: ID, która reprezentuje menu, grupę lub polecenie.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d02a26a6874165738d917a14986d16d142c01915
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4feb477f8507bc3fe57e6db355538ab98ceeeaa
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710376"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995541"
 ---
 # <a name="idsymbol-element"></a>IDSymbol, element
 `IDSymbol`Element zawiera identyfikator pary GUID: ID, która reprezentuje menu, grupę lub polecenie. Identyfikator GUID pochodzi z elementu nadrzędnego `GuidSymbol` . `IDSymbol`Element ma `name` atrybut, który zawiera przyjazną nazwę dla identyfikatora, który jest zawarty w `value` atrybucie.
@@ -34,8 +36,8 @@ ms.locfileid: "80710376"
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|name|Wymagany. Nazwa symbolu identyfikatora.|
-|value|Wymagany. Wartość identyfikatora numerycznego symbolu identyfikatora.|
+|name|Wymagane. Nazwa symbolu identyfikatora.|
+|wartość|Wymagane. Wartość identyfikatora numerycznego symbolu identyfikatora.|
 
 ### <a name="child-elements"></a>Elementy podrzędne
  Brak.

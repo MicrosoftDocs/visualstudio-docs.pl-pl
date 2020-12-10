@@ -1,5 +1,7 @@
 ---
 title: Rozszerzanie i dostosowywanie okien narzędzi | Microsoft Docs
+description: Dowiedz się więcej na temat rozszerzania i dostosowywania okien narzędzi dostępnych w programie Visual Studio, w tym okno Właściwości, okna danych wyjściowych i okna Lista zadań.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76c094ec73a69baa46a5e8313dd26febd57e5887
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ca7f6aa0c029cd3d85ba569aa93d6ae2087afd52
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711818"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995866"
 ---
 # <a name="extend-and-customize-tool-windows"></a>Rozszerzone i dostosowane okna narzędzi
 Program Visual Studio udostępnia kilka różnych typów okien, na przykład okna narzędzi, okna dokumentów i okna dialogowe. Inne okna, takie jak okno **Właściwości** , okno **dane wyjściowe** i okno **Lista zadań** , są typami okien narzędzi.

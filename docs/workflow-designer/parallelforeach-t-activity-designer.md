@@ -1,6 +1,6 @@
 ---
-title: Projektant przepływu pracy — &lt; &gt; Projektant działań w ParallelForEach T
-description: Dowiedz się, jak <T> działanie ParallelForEach wylicza elementy kolekcji i wykonuje osadzoną instrukcję dla każdego elementu kolekcji równolegle.
+title: ParallelForEach &lt; T, &gt; Projektant działań
+description: W Projektant przepływu pracy, Dowiedz się, jak <T> działanie ParallelForEach wylicza elementy kolekcji i wykonuje osadzoną instrukcję dla każdego elementu kolekcji równolegle.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,18 +12,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57c8414637d767a57cf9021d907bfb6e1fe467ef
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: e732c6d9d791d789471c49a319ab9945fdd5dc06
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435563"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996178"
 ---
 # <a name="parallelforeach-activity-designer"></a>ParallelForEach, projektant działań
 
 <xref:System.Activities.Statements.ParallelForEach%601>Działanie wylicza elementy kolekcji i wykonuje osadzoną instrukcję dla każdego elementu kolekcji równolegle, czyli asynchronicznie w tym samym wątku. Użyj tego działania sterowania przepływem zamiast <xref:System.Activities.Statements.Sequence> działania, jeśli działania podrzędne tego działania powinny być bezczynne.
 
-<xref:System.Activities.Statements.ParallelForEach%601>Działanie ma <xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A> Właściwość, która zawiera wyrażenie Visual Basic określone przez użytkownika. <xref:System.Activities.Statements.ParallelForEach%601>Działanie oblicza tę właściwość po zakończeniu każdej gałęzi. Jeśli wartość jest **równa true** , <xref:System.Activities.Statements.ParallelForEach%601> działanie kończy się bez wykonywania innych gałęzi. Jeśli nie zostanie <xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A> obliczona **wartość true** , <xref:System.Activities.Statements.ParallelForEach%601> działanie kończy się po zakończeniu wszystkich działań podrzędnych.
+<xref:System.Activities.Statements.ParallelForEach%601>Działanie ma <xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A> Właściwość, która zawiera wyrażenie Visual Basic określone przez użytkownika. <xref:System.Activities.Statements.ParallelForEach%601>Działanie oblicza tę właściwość po zakończeniu każdej gałęzi. Jeśli wartość jest **równa true**, <xref:System.Activities.Statements.ParallelForEach%601> działanie kończy się bez wykonywania innych gałęzi. Jeśli nie zostanie <xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A> obliczona **wartość true**, <xref:System.Activities.Statements.ParallelForEach%601> działanie kończy się po zakończeniu wszystkich działań podrzędnych.
 
 ## <a name="the-parallelforeacht-activity"></a>Działanie ParallelForEach<T \>
 

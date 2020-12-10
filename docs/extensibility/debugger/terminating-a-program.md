@@ -1,5 +1,7 @@
 ---
 title: Kończenie pracy programu | Microsoft Docs
+description: W tym artykule opisano, jak środowisko IDE używa aparatu debugowania do kończenia jednego programu z pojedynczym wątkiem.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 985b20fe75f8ceee3d434ac681b437c51baf85e8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b2b883611d5479f0febc169b32f7f378230be4c
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712519"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995983"
 ---
 # <a name="terminating-a-program"></a>Kończenie programu
 W poniższej sekcji opisano zakończenie jednego programu z jednym wątkiem.

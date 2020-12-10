@@ -1,5 +1,7 @@
 ---
 title: Obsługiwane typy zdarzeń | Microsoft Docs
+description: Dowiedz się więcej na temat typów zdarzeń obsługiwanych przez funkcję debugowania programu Visual Studio, w tym zdarzeń asynchronicznych, zdarzeń synchronicznych i zdarzeń zatrzymywania.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94e26897c50fd7e10a8b831655610848cb93043f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 215256cbbcff45dfa0b85a480f0900e6f8ddfa71
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712802"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996035"
 ---
 # <a name="supported-event-types"></a>Obsługiwane typy zdarzeń
 Debugowanie programu Visual Studio obsługuje obecnie następujące typy zdarzeń:
@@ -34,7 +36,7 @@ Debugowanie programu Visual Studio obsługuje obecnie następujące typy zdarze�
 
    Powiadom model SDM i IDE, że debugowana aplikacja zatrzymała wykonywanie kodu. W przypadku wysyłania zdarzenia zatrzymania przy użyciu [zdarzenia](../../extensibility/debugger/reference/idebugeventcallback2-event.md)metody, parametr [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) jest wymagany. Zdarzenia zatrzymywania są kontynuowane przez wywołanie jednej z następujących metod:
 
-  - [Realizacja](../../extensibility/debugger/reference/idebugprogram2-execute.md)
+  - [Wykonaj polecenie](../../extensibility/debugger/reference/idebugprogram2-execute.md)
 
   - [Krok](../../extensibility/debugger/reference/idebugprogram2-step.md)
 

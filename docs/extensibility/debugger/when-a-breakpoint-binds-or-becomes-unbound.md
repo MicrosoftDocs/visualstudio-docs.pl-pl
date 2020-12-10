@@ -1,5 +1,7 @@
 ---
 title: Gdy punkt przerwania tworzy powiązanie lub zostaje niepowiązany | Microsoft Docs
+description: Poznaj niepowiązane punkty przerwania. Gdy punkt przerwania nie może być powiązany w czasie wywołania, czas powiązania i czas utworzenia punktu przerwania są różne.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3253841778fe5a07e00b644423495b8ceee1a335
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a48bd7ff011b6e8de6e9321a00b6bc20d54f0f0b
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712332"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995918"
 ---
 # <a name="when-a-breakpoint-binds-or-becomes-unbound"></a>Gdy punkt przerwania tworzy powiązanie lub zostaje niepowiązany
 Gdy punkt przerwania nie może być powiązany w momencie wywołania metody [IDebugPendingBreakpoint2:: NOBIND](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md) , czas powiązania i czas utworzenia punktu przerwania są różne.

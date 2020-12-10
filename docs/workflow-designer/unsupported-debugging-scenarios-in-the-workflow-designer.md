@@ -1,5 +1,5 @@
 ---
-title: Nieobsługiwane scenariusze debugowania w Projektancie przepływu pracy
+title: Nieobsługiwane scenariusze debugowania
 description: Dowiedz się więcej na temat nieobsługiwanych scenariuszy debugowania w Projektant przepływu pracy, na przykład "nie można kontynuować wykonywania po edycji kodu".
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: d9ce8d15e44fecca673fdaa9fccd70ff13eb6783
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 4e98e2a75905f4c0a4c007691a99961dbcf1477c
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433521"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996269"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>Nieobsługiwane scenariusze debugowania w Projektancie przepływu pracy
 
@@ -49,7 +49,7 @@ Projektant przepływu pracy nie obsługuje następujących scenariuszy debugowan
 
   - Po trafieniu
 
-  - Function
+  - Funkcja
 
   - Dane
 

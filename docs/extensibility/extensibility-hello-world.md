@@ -1,5 +1,7 @@
 ---
 title: Samouczek rozszerzenia Hello world | Microsoft Docs
+description: Dowiedz się, jak dodać nowe polecenie jako rozszerzenie do programu Visual Studio, które polega na tworzeniu projektu, dodawaniu polecenia i modyfikowaniu kodu źródłowego.
+ms.custom: SEO-VS-2020
 ms.date: 03/14/2019
 ms.topic: tutorial
 ms.assetid: f74e1ad1-1ee5-4360-9bd5-d82467b884ca
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 796cb53ea5124662c695cce55241794802f042c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6ba4d6cbca8d55cdaceb04a1a773fde376a8670a
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905940"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995723"
 ---
 # <a name="tutorial---create-your-first-extension-hello-world"></a>Samouczek — Tworzenie pierwszego rozszerzenia: Hello world
 
@@ -92,7 +94,7 @@ W tym momencie tekst polecenia i przycisku są generowane automatycznie i nie je
 
 ::: moniker range="vs-2017"
 
-Krok 1. W **Eksplorator rozwiązań**Znajdź plik vsct dla nowego polecenia. W takim przypadku zostanie on wywołany *CommandPackage. vsct*.
+Krok 1. W **Eksplorator rozwiązań** Znajdź plik vsct dla nowego polecenia. W takim przypadku zostanie on wywołany *CommandPackage. vsct*.
 
 ![Pakiet poleceń vsct](media/hello-world-command-package-vsct.png)
 
@@ -100,7 +102,7 @@ Krok 1. W **Eksplorator rozwiązań**Znajdź plik vsct dla nowego polecenia. W t
 
 ::: moniker range=">=vs-2019"
 
-Krok 1. W **Eksplorator rozwiązań**Znajdź plik vsct dla rozszerzenia programu vs. W takim przypadku zostanie on wywołany *HelloWorldPackage. vsct*.
+Krok 1. W **Eksplorator rozwiązań** Znajdź plik vsct dla rozszerzenia programu vs. W takim przypadku zostanie on wywołany *HelloWorldPackage. vsct*.
 
 ::: moniker-end
 
@@ -156,11 +158,11 @@ Na pasku tytułu programu Visual Studio zobaczysz **wystąpienie eksperymentalne
 
 ::: moniker-end
 
-Krok 2. W menu **Narzędzia** **wystąpienia eksperymentalnego**kliknij polecenie **powiedz Hello World!**.
+Krok 2. W menu **Narzędzia** **wystąpienia eksperymentalnego** kliknij polecenie **powiedz Hello World!**.
 
 ![wynik końcowy](media/hello-world-final-result.png)
 
-Powinny zostać wyświetlone dane wyjściowe z nowego polecenia niestandardowego, w tym przypadku okno dialogowe na środku ekranu, który zapewnia **Hello World!** .
+Powinny zostać wyświetlone dane wyjściowe z nowego polecenia niestandardowego, w tym przypadku okno dialogowe na środku ekranu, który zapewnia **Hello World!** „Hello world!”.
 
 ## <a name="next-steps"></a>Następne kroki
 

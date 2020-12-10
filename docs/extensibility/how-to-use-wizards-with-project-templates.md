@@ -1,5 +1,7 @@
 ---
 title: 'Porady: korzystanie z kreatora z szablonami projektu'
+description: Dowiedz się, jak używać interfejsu IWizard w zestawie SDK programu Visual Studio, który umożliwia uruchamianie kodu niestandardowego, gdy użytkownik tworzy projekt na podstawie szablonu.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9d36ae9b3a4a4fbbb3c54cc3f3320e9878b6745
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 21e0e35b43fc3b94a8d029c97f56bd573ebac95f
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905524"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996373"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Instrukcje: korzystanie z kreatorów z szablonami projektu
 
@@ -38,11 +40,11 @@ Utwórz szablon niestandardowy z projektem szablonu projektu, który jest częś
    > [!NOTE]
    > Może zostać wyświetlony monit o zainstalowanie zestawu Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [Instalowanie zestawu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
-2. Dodaj nowy projekt VSIX w tym samym rozwiązaniu co projekt szablonu projektu (w **Eksplorator rozwiązań**wybierz węzeł rozwiązania, kliknij prawym przyciskiem myszy, a następnie wybierz pozycję **Dodaj**  >  **Nowy projekt** i wyszukaj ciąg "VSIX"). Nadaj mu nazwę **MyProjectWizard.**
+2. Dodaj nowy projekt VSIX w tym samym rozwiązaniu co projekt szablonu projektu (w **Eksplorator rozwiązań** wybierz węzeł rozwiązania, kliknij prawym przyciskiem myszy, a następnie wybierz pozycję **Dodaj**  >  **Nowy projekt** i wyszukaj ciąg "VSIX"). Nadaj mu nazwę **MyProjectWizard.**
 
-3. Ustaw projekt VSIX jako projekt startowy. W **Eksplorator rozwiązań**wybierz węzeł projektu VSIX, kliknij prawym przyciskiem myszy, a następnie wybierz pozycję **Ustaw jako projekt startowy**.
+3. Ustaw projekt VSIX jako projekt startowy. W **Eksplorator rozwiązań** wybierz węzeł projektu VSIX, kliknij prawym przyciskiem myszy, a następnie wybierz pozycję **Ustaw jako projekt startowy**.
 
-4. Dodaj projekt szablonu jako element zawartości projektu VSIX. W **Eksplorator rozwiązań**w WĘŹLE projekt VSIX Znajdź plik *source. Extension. vsixmanifest* . Kliknij go dwukrotnie, aby otworzyć go w edytorze manifestu.
+4. Dodaj projekt szablonu jako element zawartości projektu VSIX. W **Eksplorator rozwiązań** w WĘŹLE projekt VSIX Znajdź plik *source. Extension. vsixmanifest* . Kliknij go dwukrotnie, aby otworzyć go w edytorze manifestu.
 
 5. W edytorze manifestu wybierz kartę **zasoby** po lewej stronie okna.
 
@@ -58,7 +60,7 @@ Ta procedura pokazuje, jak utworzyć Kreatora niestandardowego, który otwiera f
 
 1. Skonfiguruj projekt VSIX, aby umożliwić mu Tworzenie zestawu.
 
-2. W **Eksplorator rozwiązań**wybierz węzeł projektu VSIX. Poniżej **Eksplorator rozwiązań**powinien zostać wyświetlony okno **Właściwości** . Jeśli tego nie zrobisz, wybierz pozycję **Wyświetl**  >  **okno właściwości**lub naciśnij klawisz **F4**. W oknie **Właściwości** wybierz następujące pola, aby `true` :
+2. W **Eksplorator rozwiązań** wybierz węzeł projektu VSIX. Poniżej **Eksplorator rozwiązań** powinien zostać wyświetlony okno **Właściwości** . Jeśli tego nie zrobisz, wybierz pozycję **Wyświetl**  >  **okno właściwości** lub naciśnij klawisz **F4**. W oknie **Właściwości** wybierz następujące pola, aby `true` :
 
    - **Dołącz zestaw do kontenera VSIX**
 
@@ -68,9 +70,9 @@ Ta procedura pokazuje, jak utworzyć Kreatora niestandardowego, który otwiera f
 
 3. Dodaj zestaw jako element zawartości do projektu VSIX. Otwórz plik *source. Extension. vsixmanifest* i wybierz kartę **Assets (zasoby** ). W oknie **Dodawanie nowego elementu zawartości** dla pozycji **Typ** wybierz pozycję **Microsoft. VisualStudio. Assembly**, w polu **Źródło** wybierz **projekt w bieżącym rozwiązaniu**, a następnie wybierz pozycję **Project** SELECT **MyProjectWizard**.
 
-4. Dodaj następujące odwołania do projektu VSIX. (W **Eksplorator rozwiązań**w WĘŹLE projekt VSIX wybierz pozycję **odwołania**, kliknij prawym przyciskiem myszy, a następnie wybierz polecenie **Dodaj odwołanie**.) W oknie dialogowym **Dodawanie odwołania** na karcie **Struktura** znajdź zestaw **System. Windows Forms** i wybierz go. Znajdź również i wybierz zestawy **systemowe** i **System. Drawing** . Teraz wybierz kartę **rozszerzenia** . Znajdź zestaw **EnvDTE** i wybierz go. Znajdź również zestaw **Microsoft. VisualStudio. TemplateWizardInterface** i wybierz go. Kliknij przycisk **OK**.
+4. Dodaj następujące odwołania do projektu VSIX. (W **Eksplorator rozwiązań** w WĘŹLE projekt VSIX wybierz pozycję **odwołania**, kliknij prawym przyciskiem myszy, a następnie wybierz polecenie **Dodaj odwołanie**.) W oknie dialogowym **Dodawanie odwołania** na karcie **Struktura** znajdź zestaw **System. Windows Forms** i wybierz go. Znajdź również i wybierz zestawy **systemowe** i **System. Drawing** . Teraz wybierz kartę **rozszerzenia** . Znajdź zestaw **EnvDTE** i wybierz go. Znajdź również zestaw **Microsoft. VisualStudio. TemplateWizardInterface** i wybierz go. Kliknij przycisk **OK**.
 
-5. Dodaj klasę dla implementacji kreatora do projektu VSIX. (W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł projektu VSIX i wybierz polecenie **Dodaj**, następnie **nowy element**, a następnie **klasy**.) Nadaj klasie nazwę **WizardImplementation**.
+5. Dodaj klasę dla implementacji kreatora do projektu VSIX. (W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł projektu VSIX i wybierz polecenie **Dodaj**, następnie **nowy element**, a następnie **klasy**.) Nadaj klasie nazwę **WizardImplementation**.
 
 6. Zastąp kod w pliku *WizardImplementationClass.cs* następującym kodem:
 
@@ -208,19 +210,19 @@ Ta procedura pokazuje, jak utworzyć Kreatora niestandardowego, który otwiera f
 
 Aby niestandardowy szablon projektu mógł korzystać z niestandardowego kreatora, należy podpisać zestaw kreatora i dodać kilka wierszy do niestandardowego szablonu projektu, aby wiedzieć, gdzie znaleźć implementację kreatora podczas tworzenia nowego projektu.
 
-1. Podpisz zestaw. W **Eksplorator rozwiązań**wybierz projekt VSIX, kliknij prawym przyciskiem myszy, a następnie wybierz **właściwości projektu**.
+1. Podpisz zestaw. W **Eksplorator rozwiązań** wybierz projekt VSIX, kliknij prawym przyciskiem myszy, a następnie wybierz **właściwości projektu**.
 
 2. W oknie **właściwości projektu** wybierz kartę **podpisywanie** . na karcie **podpisywanie** zaznacz pozycję **podpisz zestaw**. W polu **Wybierz plik klucza o silnej nazwie** wybierz opcję **\<New>** . W oknie **Tworzenie klucza o silnej nazwie** w polu **Nazwa pliku klucza** wpisz polecenie **Key. snk**. Usuń zaznaczenie pola **Chroń mój klucz przy użyciu hasła** .
 
-3. W **Eksplorator rozwiązań**wybierz projekt VSIX i Znajdź okno **Właściwości** .
+3. W **Eksplorator rozwiązań** wybierz projekt VSIX i Znajdź okno **Właściwości** .
 
 4. W polu **Kopiuj dane wyjściowe kompilacji do katalogu wyjściowego** Ustaw **wartość true**. Dzięki temu zestaw będzie kopiowany do katalogu wyjściowego, gdy rozwiązanie zostanie odbudowane. Nadal znajduje się w `.vsix` pliku. Aby można było znaleźć swój klucz podpisywania, należy wyświetlić zestaw.
 
 5. Ponownie skompiluj rozwiązanie.
 
-6. Teraz można znaleźć plik Key. snk w katalogu projektu MyProjectWizard (* \<your disk location> \MyProjectTemplate\MyProjectWizard\key.snk*). Skopiuj plik *Key. snk* .
+6. Teraz można znaleźć plik Key. snk w katalogu projektu MyProjectWizard (*\<your disk location> \MyProjectTemplate\MyProjectWizard\key.snk*). Skopiuj plik *Key. snk* .
 
-7. Przejdź do katalogu wyjściowego i Znajdź zestaw (* \<your disk location> \ MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll*). Wklej tutaj plik *Key. snk* . (Nie jest to bezwzględnie konieczne, ale ułatwia wykonywanie następujących czynności).
+7. Przejdź do katalogu wyjściowego i Znajdź zestaw (*\<your disk location> \ MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll*). Wklej tutaj plik *Key. snk* . (Nie jest to bezwzględnie konieczne, ale ułatwia wykonywanie następujących czynności).
 
 8. Otwórz okno polecenia i przejdź do katalogu, w którym został utworzony zestaw.
 
@@ -246,7 +248,7 @@ Aby niestandardowy szablon projektu mógł korzystać z niestandardowego kreator
 
      Zanotuj tę wartość.
 
-12. Dodaj odwołanie do kreatora niestandardowego do pliku *vstemplate* szablonu projektu. W **Eksplorator rozwiązań**Znajdź plik o nazwie *MyProjectTemplate. vstemplate*i otwórz go. Po zakończeniu \<TemplateContent> sekcji Dodaj następującą sekcję:
+12. Dodaj odwołanie do kreatora niestandardowego do pliku *vstemplate* szablonu projektu. W **Eksplorator rozwiązań** Znajdź plik o nazwie *MyProjectTemplate. vstemplate* i otwórz go. Po zakończeniu \<TemplateContent> sekcji Dodaj następującą sekcję:
 
     ```xml
     <WizardExtension>
@@ -263,7 +265,7 @@ Aby niestandardowy szablon projektu mógł korzystać z niestandardowego kreator
 
 W tym przykładzie projekt używany jako szablon wyświetla komunikat określony w formularzu danych wejściowych użytkownika Kreatora niestandardowego.
 
-1. W **Eksplorator rozwiązań**przejdź do projektu **MyProjectTemplate** i Otwórz *Class1.cs*.
+1. W **Eksplorator rozwiązań** przejdź do projektu **MyProjectTemplate** i Otwórz *Class1.cs*.
 
 2. W `Main` metodzie aplikacji Dodaj następujący wiersz kodu.
 
@@ -309,7 +311,7 @@ Teraz można utworzyć projekt na podstawie szablonu i użyć Kreatora niestanda
 
      Formularz wprowadzania użytkownika kreatora zostanie zamknięty, a projekt zostanie utworzony na podstawie szablonu.
 
-5. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy plik kodu źródłowego i kliknij polecenie **Wyświetl kod**.
+5. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy plik kodu źródłowego i kliknij polecenie **Wyświetl kod**.
 
      Należy zauważyć, że został `$custommessage$` zastąpiony tekstem wprowadzonym w formularzu danych wejściowych użytkownika kreatora.
 

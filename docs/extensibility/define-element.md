@@ -1,5 +1,7 @@
 ---
 title: Zdefiniuj element | Microsoft Docs
+description: Element define definiuje nazwę symbolu i parę wartości. Ten symbol może być oceniany przez atrybuty warunkowe.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc09de1d822f41b25397c7a56c7cce4449a9e551
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a427371afe55b6ea4ee20f658e683b9dcdb8fbe2
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712272"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996243"
 ---
 # <a name="define-element"></a>Zdefiniuj element
 Definiuje nazwę symbolu i parę wartości. Ten symbol może być oceniany przez atrybuty warunkowe. Aby uzyskać więcej informacji, zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md). Zobacz również [element Symbols](../extensibility/symbols-element.md).
@@ -34,8 +36,8 @@ Definiuje nazwę symbolu i parę wartości. Ten symbol może być oceniany przez
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|name|Wymagany. Nazwa symbolu:<br /><br /> Nazwa = "tryb"|
-|value|Wymagany. Wartość symbolu:<br /><br /> wartość = "Standardowa"|
+|name|Wymagane. Nazwa symbolu:<br /><br /> Nazwa = "tryb"|
+|wartość|Wymagane. Wartość symbolu:<br /><br /> wartość = "Standardowa"|
 |Warunek|Opcjonalny. Aby uzyskać więcej informacji, zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementy podrzędne
@@ -54,5 +56,5 @@ Definiuje nazwę symbolu i parę wartości. Ten symbol może być oceniany przez
 <Define name="MODE" value="Standard"/>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Pliki tabeli poleceń programu Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -1,7 +1,7 @@
 ---
 title: Omówienie diagnostyki grafiki | Microsoft Docs
-description: Ogólne omówienie programu Visual Studio Diagnostyka grafiki
-ms.custom: seodec18
+description: Visual Studio Diagnostyka grafiki to zestaw narzędzi do rejestrowania aktywności Direct3D i analizowania dzienników w celu rozwiązywania problemów z renderowaniem i wydajnością.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 02/09/2017
 ms.topic: conceptual
 author: mikejo5000
@@ -9,18 +9,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f9193555ef3c9c69f494a78ac779a3724417f63
-ms.sourcegitcommit: a1cb4e2025045c2ad79167645c4c0f33b94b1152
+ms.openlocfilehash: 1ccf3b77c9b1f4dee7183aac32e8810417ba69c5
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91671409"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996139"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Omówienie diagnostyki grafiki w programie Visual Studio
 Visual Studio *Diagnostyka grafiki* to zestaw narzędzi do nagrywania, a następnie analizowania problemów z renderowaniem i wydajnością w aplikacjach Direct3D. Diagnostyka grafiki można używać w aplikacjach, które są uruchamiane lokalnie na komputerze z systemem Windows lub na komputerze zdalnym lub urządzeniu.
 
 ## <a name="using-graphics-diagnostics-to-debug-rendering-problems"></a>Używanie Graphics Diagnostics do debugowania problemów z renderowaniem
- Debugowanie problemów z renderowaniem w aplikacji rozbudowanej graficznie nie jest tak proste, jak uruchomienie debugera i krokowe wykonywanie kodu. W każdej klatce są produkowane setki tysięcy unikatowych pikseli, każdy na podstawie złożonego zestawu stanu, danych, parametrów i kodu — możliwe, że tylko kilka z powyższych pikseli pokaże problem, który próbujesz zdiagnozować. Aby jeszcze bardziej skomplikować sprawy, kod, który generuje każdy piksel, jest wykonywany na wyspecjalizowanym sprzęcie, który przetwarza setki pikseli równolegle. Tradycyjne narzędzia i techniki debugowania, z których trudno się korzysta nawet w kodzie mało skomplikowanym pod względem wątków, są nieskuteczne w obliczu tak dużej ilości danych.
+ Debugowanie problemów z renderowaniem w rozbudowanej graficznie aplikacji nie jest tak proste jak uruchamianie debugera i przechodzenie przez jakiś kod. W każdej klatce są produkowane setki tysięcy unikatowych pikseli, każdy na podstawie złożonego zestawu stanu, danych, parametrów i kodu — możliwe, że tylko kilka z powyższych pikseli pokaże problem, który próbujesz zdiagnozować. Aby jeszcze bardziej skomplikować sprawy, kod, który generuje każdy piksel, jest wykonywany na wyspecjalizowanym sprzęcie, który przetwarza setki pikseli równolegle. Tradycyjne narzędzia i techniki debugowania, z których trudno się korzysta nawet w kodzie mało skomplikowanym pod względem wątków, są nieskuteczne w obliczu tak dużej ilości danych.
 
  Narzędzia Diagnostyka grafiki w programie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] mają pomóc w znalezieniu problemów z renderowaniem, rozpoczynając od artefaktów wizualizacji, które wskazują na problem, a następnie śledzenia z powrotem do źródła problemu przez skoncentrowanie się tylko na odpowiednim kodzie programu do cieniowania, etapach potoku, nawiązaniu połączenia, zasobach i stanie urządzenia — w kodzie źródłowym aplikacji.
 
@@ -64,7 +64,7 @@ Visual Studio *Diagnostyka grafiki* to zestaw narzędzi do nagrywania, a następ
 
 #### <a name="to-open-the-directx-control-panel"></a>Aby otworzyć panel sterowania DirectX
 
-- Na pasku menu wybierz kolejno opcje **Debuguj**, **grafika**i **Panel sterowania DirectX**.
+- Na pasku menu wybierz kolejno opcje **Debuguj**, **grafika** i **Panel sterowania DirectX**.
 
 ## <a name="graphics-analyzer"></a>Analizator grafiki
  Analizator grafiki programu Visual Studio to dedykowany interfejs do badania problemów z renderowaniem i wydajnością w ramkach, które zostały już przechwycone. Wewnątrz analizatora grafiki znajdziesz kilka narzędzi ułatwiających eksplorowanie i zrozumienie zachowań aplikacji. Każde narzędzie uwidacznia różne rodzaje informacji na temat testowanej ramki, a narzędzia te są przeznaczone do użycia w sposób intuicyjny w sposób niezgodny ze źródłem problemu z renderowaniem, rozpoczynając od jego wyglądu w bufor ramki.

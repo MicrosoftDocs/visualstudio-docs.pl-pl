@@ -1,5 +1,7 @@
 ---
 title: Odwołanie (przechwycenie programowe) | Microsoft Docs
+description: Użyj interfejsu API przechwytywania programistycznego, aby przejąć kontrolę programistyczną dla funkcji przechwytywania Diagnostyka grafiki.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ef60eb8d-1ac2-4e3a-9b4b-f6da0bdd9da8
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a462d22df9768d2ffc8b344933e9f5c1f556575a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 30cf44d6d16da46e9d6f08ffae4971d35136db58
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62895524"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996113"
 ---
 # <a name="reference-programmatic-capture"></a>Odwołanie (przechwycenie programowe)
 Diagnostyka grafiki obsługuje kontrolę programistyczną nad jej funkcjami przechwytywania za pośrednictwem interfejsu API przechwytywania programowego. Za pomocą tego interfejsu API można przełączać i dodawać komunikaty do HUD diagnostyki grafiki (na potrzeby wyświetlania), inicjować i tworzyć pliki dzienników grafiki, a także przechwytywać informacje graficzne.

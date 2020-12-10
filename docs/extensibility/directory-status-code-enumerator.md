@@ -1,5 +1,7 @@
 ---
 title: Moduł wyliczający kod stanu katalogu | Microsoft Docs
+description: Moduł wyliczający SccDirStatus zawiera nazwane wartości stałe, które określają stan katalogu w systemie kontroli źródła i jest używany przez SccDirQueryInfo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b5ebf61f2baa6e4277e27cd3c4d18a51e64f835
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: af72b9e14695cb954084abebc3a3c336c90af73d
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712155"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996126"
 ---
 # <a name="directory-status-code-enumerator"></a>Moduł wyliczający kod stanu katalogu
 `SccDirStatus`Moduł wyliczający zawiera nazwane wartości stałe, które określają stan katalogu w systemie kontroli źródła. To wyliczenie jest używane przez [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md). Została wprowadzona w wersji 1,2 interfejsu API dodatku plug-in kontroli źródła.
@@ -25,10 +27,10 @@ ms.locfileid: "80712155"
 
 ```
 enum SccDirStatus {
-   SCC_DIRSTATUS_INVALID       = -1L,
-   SCC_DIRSTATUS_NOTCONTROLLED = 0x0000L,
-   SCC_DIRSTATUS_CONTROLLED    = 0x0001L,
-   SCC_DIRSTATUS_EMPTYPROJ     = 0x0002L
+   SCC_DIRSTATUS_INVALID       = -1L,
+   SCC_DIRSTATUS_NOTCONTROLLED = 0x0000L,
+   SCC_DIRSTATUS_CONTROLLED    = 0x0001L,
+   SCC_DIRSTATUS_EMPTYPROJ     = 0x0002L
 };
 ```
 

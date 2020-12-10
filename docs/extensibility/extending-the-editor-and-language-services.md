@@ -1,5 +1,7 @@
 ---
 title: Rozszerzanie edytora i usług językowych | Microsoft Docs
+description: Funkcje usługi językowej można dodać do edytora i rozłożyć funkcje edytora kodu programu Visual Studio. Dowiedz się więcej na temat Managed Extensibility Framework.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 321bd82eb83ef37dc3981e38cc23d1d4b5685802
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 49d4b76fe7feadb4458ef68acb351b81c6fa494c
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93413947"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995749"
 ---
 # <a name="extend-the-editor-and-language-services"></a>Poszerzanie edytora i usług językowych
 Funkcje usługi językowej (na przykład IntelliSense) można dodać do własnego edytora i rozłożyć większość funkcji edytora kodu programu Visual Studio.  Aby uzyskać pełną listę elementów, które można rozszerzać, zobacz [punkty rozszerzenia usługi językowej i edytora](../extensibility/language-service-and-editor-extension-points.md).

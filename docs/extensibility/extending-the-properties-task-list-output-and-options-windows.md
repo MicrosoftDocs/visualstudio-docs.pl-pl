@@ -1,5 +1,6 @@
 ---
 title: Rozszerzone właściwości, Lista zadań, dane wyjściowe, Opcje systemu Windows
+description: Dowiedz się, jak zintegrować informacje o oknie narzędzia w programie Visual Studio z nową stroną opcji i nowym ustawieniem na stronie właściwości.
 ms.date: 11/04/2016
 ms.custom: SEO-VS-2020
 ms.topic: conceptual
@@ -16,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c968544c6bf52a901052fc7aedbbee66dcc10e62
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 54b78197be71dca9fbabbfded90c4e07660a74db
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038481"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995801"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>Rozwiń okna właściwości, Lista zadań, dane wyjściowe i opcje
 Możesz uzyskać dostęp do dowolnego okna narzędzi w programie Visual Studio. W tym instruktażu pokazano, jak zintegrować informacje o oknie narzędzia z nową stroną **opcji** oraz nowe ustawienie na stronie **Właściwości** , a także jak zapisywać w oknach **Lista zadań** i **wyjściowych** .
@@ -39,16 +40,16 @@ Możesz uzyskać dostęp do dowolnego okna narzędzi w programie Visual Studio. 
 ## <a name="set-up-the-tool-window"></a>Skonfiguruj okno narzędzi
  Dodaj pole tekstowe, w którym ma zostać wpisane nowe zadanie do wykonania, przycisk umożliwiający dodanie nowego elementu do listy, a pole listy, aby wyświetlić elementy na liście.
 
-1. W *TodoWindow. XAML*Usuń kontrolki Button, TextBox i StackPanel z obiektu UserControl.
+1. W *TodoWindow. XAML* Usuń kontrolki Button, TextBox i StackPanel z obiektu UserControl.
 
     > [!NOTE]
     > Nie spowoduje to usunięcia programu obsługi zdarzeń **Button1_Click** , którego użyjesz ponownie w późniejszym kroku.
 
-2. Z sekcji **wszystkie kontrolki WPF** w **przyborniku**przeciągnij kontrolkę **kanwy** do siatki.
+2. Z sekcji **wszystkie kontrolki WPF** w **przyborniku** przeciągnij kontrolkę **kanwy** do siatki.
 
-3. Przeciągnij **pole tekstowe**, **przycisk**i element **ListBox** do kanwy. Rozmieść elementy w taki sposób, aby pole tekstowe i przycisk były na tym samym poziomie, a pole listy wypełnia resztę poniższego okna, jak na poniższej ilustracji.
+3. Przeciągnij **pole tekstowe**, **przycisk** i element **ListBox** do kanwy. Rozmieść elementy w taki sposób, aby pole tekstowe i przycisk były na tym samym poziomie, a pole listy wypełnia resztę poniższego okna, jak na poniższej ilustracji.
 
-     ![Zakończono okno narzędzia](../extensibility/media/t5-toolwindow.png "T5 — ToolWindow")
+     ![Zakończono okno narzędzia](../extensibility/media/t5-toolwindow.png "T5-ToolWindow")
 
 4. W okienku XAML Znajdź przycisk i ustaw jego właściwość content na **Dodaj**. Połącz ponownie program obsługi zdarzeń przycisku z kontrolką przycisku przez dodanie `Click="button1_Click"` atrybutu. Blok kanwy powinien wyglądać następująco:
 
@@ -80,7 +81,7 @@ Możesz uzyskać dostęp do dowolnego okna narzędzi w programie Visual Studio. 
     }
     ```
 
-3. W *TodoWindow.cs*Zmień konstruktora TodoWindowControl, tak aby zawierał parametr TodoWindow. Kod powinien wyglądać następująco:
+3. W *TodoWindow.cs* Zmień konstruktora TodoWindowControl, tak aby zawierał parametr TodoWindow. Kod powinien wyglądać następująco:
 
     ```csharp
     public TodoWindow() : base(null)
@@ -126,7 +127,7 @@ Możesz uzyskać dostęp do dowolnego okna narzędzi w programie Visual Studio. 
 
 ### <a name="make-the-options-page-available-to-users"></a>Udostępnienie strony opcji użytkownikom
 
-1. W *TodoWindowPackage.cs*Dodaj <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> do `TodoWindowPackage` klasy:
+1. W *TodoWindowPackage.cs* Dodaj <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> do `TodoWindowPackage` klasy:
 
     ```csharp
     [ProvideOptionPage(typeof(ToolsOptions), "ToDo", "General", 101, 106, true)]
@@ -240,7 +241,7 @@ Możesz uzyskać dostęp do dowolnego okna narzędzi w programie Visual Studio. 
     }
     ```
 
-6. W *TodoWindowControl.XAML.cs*Dodaj metody zastępcze do `TodoWindowControl` klasy dla `CheckForError` `UpdateList` metod i. Umieść je po ProcessDialogChar i przed końcem pliku.
+6. W *TodoWindowControl.XAML.cs* Dodaj metody zastępcze do `TodoWindowControl` klasy dla `CheckForError` `UpdateList` metod i. Umieść je po ProcessDialogChar i przed końcem pliku.
 
     ```csharp
     public void CheckForErrors()
@@ -302,7 +303,7 @@ Możesz uzyskać dostęp do dowolnego okna narzędzi w programie Visual Studio. 
     }
     ```
 
-6. Teraz Wypełnij funkcję TrackSelection, która zapewni integrację z oknem **Właściwości** . Ta funkcja jest wywoływana, gdy użytkownik dodaje element do elementu ListBox lub klika element w polu listy. Dodaje zawartość ListBox do SelectionContainer i przekazuje SelectionContainer do **Properties** <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> procedury obsługi zdarzeń okna właściwości. Usługa TrackSelection śledzi wybrane obiekty w interfejsie użytkownika (UI) i wyświetla ich właściwości
+6. Teraz Wypełnij funkcję TrackSelection, która zapewni integrację z oknem **Właściwości** . Ta funkcja jest wywoływana, gdy użytkownik dodaje element do elementu ListBox lub klika element w polu listy. Dodaje zawartość ListBox do SelectionContainer i przekazuje SelectionContainer do  <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> procedury obsługi zdarzeń okna właściwości. Usługa TrackSelection śledzi wybrane obiekty w interfejsie użytkownika (UI) i wyświetla ich właściwości
 
     ```csharp
     private SelectionContainer mySelContainer;
@@ -366,7 +367,7 @@ Możesz uzyskać dostęp do dowolnego okna narzędzi w programie Visual Studio. 
 
 8. Przetestuj swój kod. Skompiluj projekt i Rozpocznij debugowanie. Powinno zostać wyświetlone wystąpienie eksperymentalne.
 
-9. Otwórz stronę **Tools**  >  **Opcje** narzędzi. Kategoria zadań do wykonania powinna zostać wyświetlona w okienku po lewej stronie. Kategorie są wyświetlane w kolejności alfabetycznej, dlatego w obszarze TS.
+9. Otwórz stronę   >  **Opcje** narzędzi. Kategoria zadań do wykonania powinna zostać wyświetlona w okienku po lewej stronie. Kategorie są wyświetlane w kolejności alfabetycznej, dlatego w obszarze TS.
 
 10. Na stronie **Opcje do** wykonania powinna zostać wyświetlona `DaysAhead` Właściwość o wartości **0**. Zmień ją na **2**.
 
@@ -375,7 +376,7 @@ Możesz uzyskać dostęp do dowolnego okna narzędzi w programie Visual Studio. 
 12. W polu listy powinna zostać wyświetlona data dwie dni późniejsze od dzisiaj.
 
 ## <a name="add-text-to-the-output-window-and-items-to-the-task-list"></a>Dodaj tekst do okna danych wyjściowych i elementów do Lista zadań
- Dla **Lista zadań**można utworzyć nowy obiekt typu zadanie, a następnie dodać ten obiekt zadania do **Lista zadań** , wywołując jego `Add` metodę. Aby zapisać w oknie **danych wyjściowych** , należy wywołać `GetPane` metodę w celu uzyskania obiektu okienka, a następnie wywołać `OutputString` metodę obiektu okienka.
+ Dla **Lista zadań** można utworzyć nowy obiekt typu zadanie, a następnie dodać ten obiekt zadania do **Lista zadań** , wywołując jego `Add` metodę. Aby zapisać w oknie **danych wyjściowych** , należy wywołać `GetPane` metodę w celu uzyskania obiektu okienka, a następnie wywołać `OutputString` metodę obiektu okienka.
 
 1. W *TodoWindowControl.XAML.cs*, w `button1_Click` metodzie, Dodaj kod w celu uzyskania okienka **Ogólne** okna **danych wyjściowych** (czyli domyślnego) i Zapisz w nim. Metoda powinna teraz wyglądać następująco:
 
@@ -479,7 +480,7 @@ Możesz uzyskać dostęp do dowolnego okna narzędzi w programie Visual Studio. 
     }
     ```
 
-## <a name="try-it-out"></a>Wypróbowywanie działania
+## <a name="try-it-out"></a>Czas to wypróbować
 
 1. Skompiluj projekt i Rozpocznij debugowanie. Zostanie wyświetlone wystąpienie eksperymentalne.
 
@@ -489,7 +490,7 @@ Możesz uzyskać dostęp do dowolnego okna narzędzi w programie Visual Studio. 
 
      Data ukończenia przypada 2 dni po dniu dzisiejszym zostanie dodana do pola listy. Nie Wygenerowano żadnych błędów, a **Lista zadań** (**Widok**  >  **Lista zadań**) nie powinien zawierać żadnych wpisów.
 
-4. Teraz zmień ustawienie na stronie opcje **narzędzi**do  >  **Options**  >  **zrobienia** z **2** z powrotem na **0**.
+4. Teraz zmień ustawienie na stronie opcje **narzędzi** do  >    >  **zrobienia** z **2** z powrotem na **0**.
 
 5. Wpisz coś innego w **TodoWindow** , a następnie ponownie kliknij przycisk **Dodaj** . Powoduje to wyzwolenie błędu, a także wpis w **Lista zadań**.
 

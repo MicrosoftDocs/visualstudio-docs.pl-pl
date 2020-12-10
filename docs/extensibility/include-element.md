@@ -1,5 +1,7 @@
 ---
 title: Include — element | Microsoft Docs
+description: Element include określa plik, który może znajdować się w podanej ścieżce include do wstawienia do bieżącego pliku.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ea89185d28be2816a690d867dbb3eccbb739e04
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 71da1241863e41529af33bdd5e45dcf0a8bfbdb1
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710357"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996347"
 ---
 # <a name="include-element"></a>Include — element
 Element include określa plik, który może znajdować się w podanej ścieżce include do wstawienia do bieżącego pliku.  Wszystkie zdefiniowane symbole i typy staną się częścią skompilowanego wyniku.
@@ -36,7 +38,7 @@ Element include określa plik, który może znajdować się w podanej ścieżce 
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|Tag|Wymagany. Ścieżka do pliku nagłówkowego:<br /><br /> href = "Stdidcmd. h"|
+|Tag|Wymagane. Ścieżka do pliku nagłówkowego:<br /><br /> href = "Stdidcmd. h"|
 |Warunek|Opcjonalny. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementy podrzędne
@@ -57,5 +59,5 @@ Element include określa plik, który może znajdować się w podanej ścieżce 
 <Include href="PackagePlacements.vsct"/>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Pliki tabeli poleceń programu Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -1,6 +1,6 @@
 ---
-title: Projektant przepływu pracy — Projektant działań działanie CompensableActivity
-description: Dowiedz się, jak za pomocą projektanta działań działanie CompensableActivity utworzyć i skonfigurować działanie działanie CompensableActivity.
+title: CompensableActivity, projektant działań
+description: Dowiedz się, jak za pomocą programu działanie CompensableActivity Projektant przepływu pracy Designer utworzyć i skonfigurować działanie działanie CompensableActivity.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e170bd47af7c84eb9ddb26a4946422c418365d2
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 3d05809b1e370fee2505470be1c06366f76bf9ca
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434340"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996230"
 ---
 # <a name="compensableactivity-activity-designer"></a>CompensableActivity, projektant działań
 
@@ -27,7 +27,7 @@ Projektant działań **działanie CompensableActivity** służy do tworzenia i k
  <xref:System.Activities.Statements.CompensableActivity>Definiuje jednostkę pracy, którą można potwierdzić lub skompensować po pomyślnym zakończeniu.
 
 ### <a name="using-the-compensableactivity-activity-designer"></a>Korzystanie z projektanta działań działanie CompensableActivity
- Projektanta działań **działanie CompensableActivity** można znaleźć w kategorii **transakcji** **przybornika**. Aby otworzyć **Przybornik** , wybierz kartę **Przybornik** po lewej stronie Projektant przepływu pracy. Alternatywnie możesz wybrać **Przybornik** z menu **Widok** lub nacisnąć **klawisze CTRL** + **Alt** + **X**.
+ Projektanta działań **działanie CompensableActivity** można znaleźć w kategorii **transakcji** **przybornika**. Aby otworzyć **Przybornik**, wybierz kartę **Przybornik** po lewej stronie Projektant przepływu pracy. Alternatywnie możesz wybrać **Przybornik** z menu **Widok** lub nacisnąć **klawisze CTRL** + **Alt** + **X**.
 
  Projektanta działań **działanie CompensableActivity** można przeciągnąć z **przybornika** i porzucić na Projektant przepływu pracy powierzchnię. Można upuścić projektanta działań wewnątrz <xref:System.Activities.Statements.Sequence> . Porzucenie projektanta działań powoduje utworzenie <xref:System.Activities.Statements.CompensableActivity> działania z wartością domyślną <xref:System.Activities.Activity.DisplayName%2A> działanie CompensableActivity. Edytuj <xref:System.Activities.Activity.DisplayName%2A> wartość w nagłówku projektanta działań **działanie CompensableActivity** . Można go również edytować w polu **DisplayName** siatki właściwości.
 

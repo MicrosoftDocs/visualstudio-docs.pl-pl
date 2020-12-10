@@ -1,5 +1,7 @@
 ---
 title: Obsługa błędów i zwracane wartości | Microsoft Docs
+description: Dowiedz się, w jaki sposób zestaw SDK programu Visual Studio zawiera zestawy międzyoperacyjne do rejestrowania szczegółowych informacji o błędach podczas uzyskiwania powiadomienia o błędzie.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30b6b9bff9056360f9ea840f47b1488f05bee872
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b8e8385e0b270cd6e359ef03a3060d5eefb97479
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711934"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995853"
 ---
 # <a name="error-handling-and-return-values"></a>Obsługa błędów i zwracane wartości
 Pakietów VSPackage i COM używają tej samej architektury w przypadku błędów. `SetErrorInfo`Funkcje i `GetErrorInfo` są częścią interfejsu programowania aplikacji Win32 (API). Wszystkie pakietu VSPackage w zintegrowanym środowisku programistycznym (IDE) mogą wywoływać te globalne interfejsy API Win32 do rejestrowania szczegółowych informacji o błędach podczas otrzymywania powiadomienia o błędzie. [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]Zawiera zestawy międzyoperacyjności do zarządzania informacjami o błędzie.

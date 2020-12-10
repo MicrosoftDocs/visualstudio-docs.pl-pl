@@ -1,5 +1,7 @@
 ---
 title: Inicjowanie projektanta i konfiguracja metadanych | Microsoft Docs
+description: Dowiedz się, w jaki sposób zestaw SDK programu Visual Studio ułatwia kontrolowanie inicjalizacji i metadanych składnika projektanta oraz jego metadane przez pakietu VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +13,16 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f48d8ebb285bdc8211f590f49e615042b7029d70
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 9907298cf730d6e51c108dc92f633d0b50451f12
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011712"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996165"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Inicjowanie projektanta i konfiguracja metadanych
 
-Manipulowanie metadanymi i atrybutami filtrów skojarzonymi z projektantem lub składnikiem projektanta zapewnia mechanizm do definiowania, które narzędzia są używane przez określony Projektant do obsługi różnych <xref:System.Type> obiektów (takich jak struktury danych, klasy lub jednostki graficzne), gdy Projektant jest dostępny, a także sposób, w jaki środowisko IDE programu Visual Studio jest skonfigurowane do obsługi projektanta (na przykład **Toolbox** dostępność kategorii lub karty).
+Manipulowanie metadanymi i atrybutami filtrów skojarzonymi z projektantem lub składnikiem projektanta zapewnia mechanizm do definiowania, które narzędzia są używane przez określony Projektant do obsługi różnych <xref:System.Type> obiektów (takich jak struktury danych, klasy lub jednostki graficzne), gdy Projektant jest dostępny, a także sposób, w jaki środowisko IDE programu Visual Studio jest skonfigurowane do obsługi projektanta (na przykład  dostępność kategorii lub karty).
 
 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]Zapewnia kilka mechanizmów ułatwiających kontrolę inicjalizacji składnika projektanta lub projektanta oraz manipulowanie jego metadanymi przez pakietu VSPackage.
 
@@ -97,7 +99,7 @@ Jeśli Flaga globalna została ustawiona na `false` , wówczas zmiana metadanych
 > [!NOTE]
 > Powierzchnia projektowa obsługuje tylko Tworzenie składników, a w związku z tym tylko składniki mogą mieć lokalne metadane. W powyższym przykładzie podjęto próbę zmodyfikowania właściwości, takiej jak `Color` właściwość obiektu. Jeśli `false` została przeniesiona do flagi globalnej, `CustomBrowser` nigdy nie zostanie wyświetlona, ponieważ Projektant nigdy nie tworzy wystąpienia `Color` . Ustawienie flagi globalnej na `false` jest przydatne w przypadku składników, takich jak kontrolki, czasomierze i okna dialogowe.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>
 - <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>

@@ -1,5 +1,7 @@
 ---
 title: Rozszerzanie paska stanu | Microsoft Docs
+description: Dowiedz się, jak rozciągnąć pasek stanu programu Visual Studio u dołu IDE, który wyświetla informacje.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa62326d82d81f7ee4d10a838209364355cc488e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ddce0cdf62d803dac1a5981442424a45d6550193
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711541"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995697"
 ---
 # <a name="extend-the-status-bar"></a>Rozwiń pasek stanu
 Aby wyświetlić informacje, można użyć paska stanu programu Visual Studio znajdującego się u dołu IDE.
@@ -34,7 +36,7 @@ Aby wyświetlić informacje, można użyć paska stanu programu Visual Studio zn
 
 1. Utwórz projekt VSIX o nazwie **TestStatusBarExtension** i Dodaj polecenie menu o nazwie **TestStatusBarCommand**.
 
-2. W *TestStatusBarCommand.cs*Zastąp kod metody procedury obsługi polecenia ( `MenuItemCallback` ) następującym:
+2. W *TestStatusBarCommand.cs* Zastąp kod metody procedury obsługi polecenia ( `MenuItemCallback` ) następującym:
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -110,9 +112,9 @@ Aby wyświetlić informacje, można użyć paska stanu programu Visual Studio zn
 
 ### <a name="display-an-animation"></a>Wyświetlanie animacji
 
-1. Na pasku stanu jest wyświetlana animacja pętli, która wskazuje długotrwałą operację (na przykład budowanie wielu projektów w rozwiązaniu). Jeśli animacja nie jest widoczna, upewnij się, że masz prawidłowe ustawienia opcji **narzędzi**  >  **Options** :
+1. Na pasku stanu jest wyświetlana animacja pętli, która wskazuje długotrwałą operację (na przykład budowanie wielu projektów w rozwiązaniu). Jeśli animacja nie jest widoczna, upewnij się, że masz prawidłowe ustawienia opcji **narzędzi**  >   :
 
-     Przejdź do karty **Tools**  >  **Opcje**narzędzia  >  **Ogólne** i usuń zaznaczenie pola wyboru **automatycznie Dostosuj środowisko wizualne na podstawie wydajności klienta**. Następnie zaznacz opcję sub, aby **włączyć rozbudowane wizualizacje klientów**. Teraz po skompilowaniu projektu w eksperymentalnym wystąpieniu programu Visual Studio powinna być widoczna animacja.
+     Przejdź do karty   >  **Opcje** narzędzia  >  **Ogólne** i usuń zaznaczenie pola wyboru **automatycznie Dostosuj środowisko wizualne na podstawie wydajności klienta**. Następnie zaznacz opcję sub, aby **włączyć rozbudowane wizualizacje klientów**. Teraz po skompilowaniu projektu w eksperymentalnym wystąpieniu programu Visual Studio powinna być widoczna animacja.
 
      W tej procedurze zostanie wyświetlona standardowa animacja programu Visual Studio, która przedstawia Kompilowanie projektu lub rozwiązania.
 

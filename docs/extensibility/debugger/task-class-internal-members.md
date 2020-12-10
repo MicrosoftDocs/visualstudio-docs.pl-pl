@@ -1,5 +1,7 @@
 ---
 title: Task — Klasa — składowe wewnętrzne | Microsoft Docs
+description: Zapoznaj się z wewnętrznymi elementami członkowskimi klasy System. Threading. Tasks. Task, która ułatwia implementowanie niestandardowego debugera.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcf278c0248b344cea4be7cf161ecc91581f5f2e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f18de66a524fbc652b8153c5b34b4464cda60f5
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712732"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996022"
 ---
 # <a name="task-class---internal-members"></a>Task — Klasa — składowe wewnętrzne
 W tym artykule opisano wewnętrzne elementy członkowskie <xref:System.Threading.Tasks.Task?displayProperty=fullName> klasy, które ułatwiają zaimplementowanie niestandardowego debugera. Aby uzyskać ogólne informacje o tej klasie, zobacz <xref:System.Threading.Tasks.Task> artykuł referencyjny.
