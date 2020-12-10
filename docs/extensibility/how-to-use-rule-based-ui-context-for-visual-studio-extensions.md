@@ -1,6 +1,7 @@
 ---
 title: Użyj kontekstu interfejsu użytkownika opartego na regułach dla rozszerzeń programu Visual Studio
 titleSuffix: ''
+description: Dowiedz się, jak używać kontekstowych interfejsów użytkownika opartych na regułach, które umożliwiają autorom rozszerzeń Definiowanie warunków w przypadku aktywowania kontekstu interfejsu użytkownika i ładowania pakietów VSPackage.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ author: acangialosi
 ms.author: anthc
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc24fe3f5b27b3c92f0629ed378c1a97c820cd0a
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 41b804d3f7697890773b4b6888bcffa108b7a11b
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037110"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993461"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Instrukcje: używanie kontekstu interfejsu użytkownika opartego na regułach dla rozszerzeń programu Visual Studio
 
@@ -82,7 +83,7 @@ Kontekst interfejsu użytkownika oparty na regułach może być używany na ró�
    <GuidSymbol name="UIContextGuid" value="{8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B}" />
    ```
 
-    Teraz polecenia menu kontekstowego dla plików * \* . config* będą widoczne tylko wtedy, gdy wybrany element w Eksploratorze rozwiązań jest plikiem *. config* , a pakiet nie zostanie załadowany do momentu wybrania jednego z tych poleceń.
+    Teraz polecenia menu kontekstowego dla plików *\* . config* będą widoczne tylko wtedy, gdy wybrany element w Eksploratorze rozwiązań jest plikiem *. config* , a pakiet nie zostanie załadowany do momentu wybrania jednego z tych poleceń.
 
    Następnie użyj debugera, aby potwierdzić, że pakiet ładuje się tylko wtedy, gdy oczekiwano. Aby debugować TestPackage:
 
@@ -131,7 +132,7 @@ Kontekst interfejsu użytkownika oparty na regułach może być używany na ró�
 
 Poniżej przedstawiono różne typy warunków, które są obsługiwane:
 
-|Okres|Opis|
+|Termin|Opis|
 |-|-|
 |{nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn}|Identyfikator GUID odwołuje się do kontekstu interfejsu użytkownika. Termin będzie prawdziwy, gdy kontekst interfejsu użytkownika jest aktywny i w przeciwnym razie ma wartość false.|
 |HierSingleSelectionName:\<pattern>|Termin będzie prawdziwy, gdy wybór w aktywnej hierarchii jest pojedynczym elementem, a nazwa wybranego elementu jest zgodna z wyrażeniem regularnym programu .NET podanym przez "wzorzec".|

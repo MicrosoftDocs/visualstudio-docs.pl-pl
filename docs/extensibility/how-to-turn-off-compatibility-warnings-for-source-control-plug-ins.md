@@ -1,5 +1,6 @@
 ---
 title: Wyłącz ostrzeżenia dla wtyczek kontroli źródła
+description: Podczas stosowania kontroli źródła w programie Visual Studio użytkownik może zobaczyć kilka ostrzeżeń dotyczących zgodności. Dowiedz się, jak wyłączyć te ostrzeżenia.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 406d063bd2df6dd1d831c3a8220d8d513596a79a
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: f5607f4a92a14b692f20d509e014991d461815bd
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037188"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993552"
 ---
 # <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>Instrukcje: wyłączanie ostrzeżeń dotyczących zgodności dla wtyczek kontroli źródła
 
@@ -27,7 +28,7 @@ Podczas stosowania kontroli źródła w programie użytkownik może zobaczyć ki
 
 - Ustaw następujący wpis rejestru (w razie potrzeby Dodaj wartość):
 
-   **HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\8.0\SourceControl\DontDisplayCheckDotNETCompatible = DWORD: 00000001**
+   **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\DontDisplayCheckDotNETCompatible = DWORD: 00000001**
 
    To ostrzeżenie jest wyświetlane dla wszystkich [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] niewtyczek.
 
@@ -35,14 +36,14 @@ Podczas stosowania kontroli źródła w programie użytkownik może zobaczyć ki
 
 - Ustaw następujące dwie wartości rejestru (w razie potrzeby dodaj wartości):
 
-     **HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\8.0\SourceControl\WarnedOldMSSCCIProvider = wartość DWORD: 00000000**
+     **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\WarnedOldMSSCCIProvider = DWORD: 00000000**
 
-    **HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\8.0\SourceControl\UseOldSCC = DWORD: 00000001**
+    **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\UseOldSCC = DWORD: 00000001**
 
      To ostrzeżenie jest wyświetlane, jeśli wtyczka do kontroli źródła nie obsługuje jawnie współużytkowania wątkowości dla wielu projektów (oznacza to, że w danym momencie może zaewidencjonować tylko jeden plik i projekt).
 
      Najlepiej jest obsługiwać współużytkowania wątkowości ( `SCC_CAP_REENTRANT` możliwości). spowoduje to usunięcie tego ostrzeżenia. Jeśli jednak ta obsługa nie jest możliwa, można ustawić te wpisy rejestru.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Flagi możliwości](../extensibility/capability-flags.md)

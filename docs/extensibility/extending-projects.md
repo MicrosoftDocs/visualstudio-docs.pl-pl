@@ -1,5 +1,7 @@
 ---
 title: Rozszerzanie projektów | Microsoft Docs
+description: Dowiedz się, jak tworzyć własne niestandardowe typy projektów w zestawie Visual Studio SDK oraz jak zarządzać różnymi typami rozwiązań programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14108a304cc5f85c9a870bc66804df7daa98f3ca
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 181acea9a5188ba28a4ef109b5bec0e7c040b5da
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711750"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994618"
 ---
 # <a name="extend-projects"></a>Rozwiń projekty
 Projekty i rozwiązania są sposobem, w jaki program Visual Studio organizuje kod i pliki zasobów w ramach kompilacji i jednostek wdrożenia. Więcej informacji na temat projektów można znaleźć w [projektach (Visual Studio SDK)](../extensibility/extending-projects.md).

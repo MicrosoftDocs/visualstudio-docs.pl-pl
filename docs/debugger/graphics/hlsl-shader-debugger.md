@@ -1,5 +1,6 @@
 ---
 title: Debuger cieniowania HLSL | Microsoft Docs
+description: Użyj debugera HLSL w analizatorze grafiki, aby opanujesz, w jaki sposób kod HLSL działa w aplikacji. Debuger może symulować dokładny HLSL wątek, który Cię interesuje.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 164c404f3bce6b8216092635e3489843039fb1eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 65f643d0f03f9754d580de8be95fb5c1f65a940d
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72735299"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995138"
 ---
 # <a name="hlsl-shader-debugger"></a>Debuger programu do cieniowania HLSL
 Debuger HLSL w analizator grafiki programu Visual Studio pomaga zrozumieć, w jaki sposób kod programu do cieniowania HLSL działa w rzeczywistych warunkach aplikacji.

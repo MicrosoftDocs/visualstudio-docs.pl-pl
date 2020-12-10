@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: tworzenie źródła danych Atom dla galerii prywatnej | Microsoft Docs'
+description: Można utworzyć źródło danych Atom (RSS) do lokalizacji intranetowej zawierającej rozszerzenia oraz dodać kanał informacyjny do rozszerzeń i aktualizacji jako galerii prywatnej.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 269161e831fdb176dbfea844e951597efb467312
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 833d75d7dfd18e863664e6d3d17d65a4e08b4d77
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905852"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994150"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Instrukcje: tworzenie kanału informacyjnego Atom dla galerii prywatnej
 Można utworzyć źródło danych Atom (RSS) do lokalizacji intranetowej zawierającej rozszerzenia oraz dodać kanał informacyjny do **rozszerzeń i aktualizacji** jako galerii prywatnej. Aby uzyskać więcej informacji, zobacz [prywatne galerie](../extensibility/private-galleries.md).

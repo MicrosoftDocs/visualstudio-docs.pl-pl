@@ -1,6 +1,6 @@
 ---
-title: Projektant przepływu pracy — &lt; &gt; Projektant działań w ExistsInCollection T
-description: Dowiedz się, jak za pomocą <T> projektanta działań ExistsInCollection utworzyć i skonfigurować działanie ExistsInCollection <T> .
+title: ExistsInCollection &lt; T, &gt; Projektant działań
+description: Dowiedz się, jak za pomocą programu ExistsInCollection <T> Projektant przepływu pracy Designer utworzyć i skonfigurować <T> działanie ExistsInCollection.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 357001651018b1b9211efc75d3b9397fb2a943cf
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9012bb936c2a9a8944639458d4165e08f5e7081e
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438025"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995411"
 ---
 # <a name="existsincollectiont-activity-designer"></a>ExistsInCollection\<T>, projektant działań
 
@@ -29,7 +29,7 @@ Projektant **działań \<T> ExistsInCollection** służy do tworzenia i konfigur
 
 ### <a name="using-the-existsincollectiont-activity-designer"></a>Korzystanie z \<T> projektanta działań ExistsInCollection
 
-Projektanta **działań \<T> ExistsInCollection** można znaleźć w kategorii **Kolekcja** **przybornika** , do którego uzyskuje się dostęp przez kliknięcie karty **przybornika** w Projektant przepływu pracy. Alternatywnie możesz wybrać **Przybornik** z menu **Widok** lub nacisnąć **klawisze CTRL** + **Alt** + **X**.
+Projektanta **działań \<T> ExistsInCollection** można znaleźć w kategorii **Kolekcja** **przybornika**, do którego uzyskuje się dostęp przez kliknięcie karty **przybornika** w Projektant przepływu pracy. Alternatywnie możesz wybrać **Przybornik** z menu **Widok** lub nacisnąć **klawisze CTRL** + **Alt** + **X**.
 
 Projektanta **działań \<T> ExistsInCollection** można przeciągnąć z **przybornika** i porzucić na Projektant przepływu pracy powierzchnię, wszędzie tam, gdzie działania są zwykle umieszczane, na przykład wewnątrz <xref:System.Activities.Statements.Sequence> . Spowoduje to utworzenie <xref:System.Activities.Statements.ExistsInCollection%601> działania z wartością domyślną <xref:System.Activities.Activity.DisplayName%2A> ExistsInCollection<Int32 \> . (Domyślnie *elementu TypeArgument* jest **Int32**. Można ją zmienić w siatce właściwości.  <xref:System.Activities.Activity.DisplayName%2A>Wartość można edytować w nagłówku **ExistsInCollection<T \>** Activity Designer lub w polu **DisplayName** siatki właściwości. Inne właściwości muszą być edytowane w siatce właściwości.
 
@@ -40,7 +40,7 @@ W poniższej tabeli przedstawiono <xref:System.Activities.Statements.ExistsInCol
 |Nazwa właściwości|Wymagany|Użycie|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Fałsz|Przyjazna nazwa <xref:System.Activities.Statements.ExistsInCollection%601> działania. Wartość domyślna to ExistsInCollection<Int32 \> . Chociaż <xref:System.Activities.Activity.DisplayName%2A> wartość nie jest ściśle wymagana, najlepszym rozwiązaniem jest użycie jednego z nich.|
-|<xref:System.Activities.Statements.ExistsInCollection%601.Item%2A>|Prawda|Element do wyszukania w kolekcji \<T> . Ten element jest typu *T* , który jest typu *elementu TypeArgument*. Aby określić element, wpisz wyrażenie Visual Basic w siatce właściwości.|
+|<xref:System.Activities.Statements.ExistsInCollection%601.Item%2A>|Prawda|Element do wyszukania w kolekcji \<T> . Ten element jest typu *T*, który jest typu *elementu TypeArgument*. Aby określić element, wpisz wyrażenie Visual Basic w siatce właściwości.|
 |<xref:System.Activities.Statements.ExistsInCollection%601.Collection%2A>|Prawda|Kolekcja, w której należy sprawdzić, czy element istnieje. Ta kolekcja jest typu **ICollection<elementu TypeArgument \> .** Aby określić kolekcję, wpisz wyrażenie Visual Basic w siatce właściwości.|
 |*Elementu TypeArgument*|Prawda|Typ T elementów zawartych w <xref:System.Collections.Generic.ICollection%601> . Domyślnie ten typ *elementu TypeArgument* jest ustawiony na **Int32**. Aby zmienić typ, Zmień wartość *elementu TypeArgument* w polu kombi w siatce właściwości.|
 |<xref:System.Activities.Activity%601.Result%2A>|Fałsz|Wartość wskazująca, czy określony element istnieje w kolekcji. Aby określić zmienną, która ma zostać powiązana z wynikiem, wpisz zmienną Visual Basicną w siatce właściwości.|

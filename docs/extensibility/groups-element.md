@@ -1,5 +1,7 @@
 ---
 title: Grupy — element | Microsoft Docs
+description: Element Groups zawiera wpisy, które definiują grupy poleceń elementu pakietu VSPackage. Ten artykuł zawiera przykład.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6383c3c7a28f9aa7778fddcbfe36b237d21323f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31b5885ad6e08bd9e22049033d6191c97fdc857b
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711173"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994293"
 ---
 # <a name="groups-element"></a>Groups, element
 Zawiera wpisy, które definiują grupy poleceń elementu pakietu VSPackage.
@@ -62,6 +64,6 @@ Zawiera wpisy, które definiują grupy poleceń elementu pakietu VSPackage.
 </Groups>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Jak pakietów VSPackage Dodawanie elementów interfejsu użytkownika](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)

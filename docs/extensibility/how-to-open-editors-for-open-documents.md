@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: otwieranie edytorów dla otwartych dokumentów | Microsoft Docs'
+description: Dowiedz się, jak otworzyć plik w standardowym lub specyficznym dla projektu edytorze. Gdy projekt otwiera okno dokumentu, musi określić, czy plik jest już otwarty.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f67a7fad5944e82087f520508ef9f4a66b7109d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d329ce7b4f4b74b8ff77357393ffe9383a3977e
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905816"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993864"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>Instrukcje: otwieranie edytorów dla otwartych dokumentów
 Przed otwarciem okna dokumentu przez projekt najpierw należy określić, czy plik jest już otwarty w oknie dokumentu dla innego edytora. Plik może być otwarty w edytorze specyficznym dla projektu lub jednym z edytorów standardowych zarejestrowanych w programie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .

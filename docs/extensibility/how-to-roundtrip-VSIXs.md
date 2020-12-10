@@ -1,5 +1,7 @@
 ---
 title: Jak przełączać się do obu rozszerzeń
+description: Dowiedz się, jak przekonywać rundy projektów rozszerzalności programu Visual Studio między programem Visual Studio 2015 i programem Visual Studio 2019 lub Visual Studio 2017.
+ms.custom: SEO-VS-2020
 ms.date: 06/25/2017
 ms.topic: how-to
 ms.assetid: 2d6cf53c-011e-4c9e-9935-417edca8c486
@@ -8,12 +10,12 @@ ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: ca1f367510aa9730c1b3b212438579a8eaeb0e8f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3db3264bf5226b5679452659928e451e7975b001
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86387281"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993617"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-20192017-and-visual-studio-2015"></a>Instrukcje: Udostępnianie rozszerzeń dla programu Visual Studio 2019/2017 i Visual Studio 2015
 
@@ -55,7 +57,7 @@ W dalszej części tego dokumentu dodamy instrukcje importu warunkowego do pliku
 Jeśli projekt zawiera *project.jsw* pliku:
 
 * Zanotuj odwołania w *project.js*.
-* Z **Eksplorator rozwiązań**Usuń *project.jsna* pliku z projektu. Spowoduje to usunięcie *project.js* pliku i usunięcie go z projektu.
+* Z **Eksplorator rozwiązań** Usuń *project.jsna* pliku z projektu. Spowoduje to usunięcie *project.js* pliku i usunięcie go z projektu.
 * Dodaj odwołania NuGet z powrotem do projektu:
   * Kliknij prawym przyciskiem myszy **rozwiązanie** i wybierz polecenie **Zarządzaj pakietami NuGet dla rozwiązania**.
   * Program Visual Studio automatycznie tworzy plik *packages.config* .

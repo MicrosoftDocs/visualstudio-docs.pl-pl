@@ -1,5 +1,7 @@
 ---
 title: Pobieranie informacji o usłudze z magazynu ustawień | Microsoft Docs
+description: Dowiedz się, jak za pomocą magazynu ustawień znaleźć wszystkie dostępne usługi lub określić, czy dana usługa jest zainstalowana.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 7028d440-d16d-4b08-9b94-eb8cc93b25fc
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b15d5c9f122ca66d21940b9998969b0d39d1a74d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 15efb14d2cee36e5f2a8559c3ffa3844251aa982
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711372"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994436"
 ---
 # <a name="get-service-information-from-the-settings-store"></a>Pobierz informacje o usłudze z magazynu ustawień
 Aby znaleźć wszystkie dostępne usługi lub określić, czy dana usługa jest zainstalowana, można użyć magazynu ustawień. Musisz znać typ klasy usługi.
@@ -22,7 +24,7 @@ Aby znaleźć wszystkie dostępne usługi lub określić, czy dana usługa jest 
 
 1. Utwórz projekt VSIX o nazwie `FindServicesExtension` , a następnie dodaj polecenie niestandardowe o nazwie `FindServicesCommand` . Aby uzyskać więcej informacji na temat tworzenia polecenia niestandardowego, zobacz [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 
-2. W *FindServicesCommand.cs*Dodaj następujące dyrektywy using:
+2. W *FindServicesCommand.cs* Dodaj następujące dyrektywy using:
 
     ```csharp
     using System.Collections.Generic;

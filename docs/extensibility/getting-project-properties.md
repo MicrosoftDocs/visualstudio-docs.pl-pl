@@ -1,5 +1,7 @@
 ---
 title: Pobieranie właściwości projektu | Microsoft Docs
+description: Dowiedz się, jak wyświetlić właściwości projektu w oknie narzędzi. Ten przykład pokazuje formant drzewa w oknie narzędzi.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ddfd48827bc762c9189f9b7600cfe9200e5c866
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dd8e23b859577301d28cf23ac59462d08ad9a447
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711414"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994462"
 ---
 # <a name="get-project-properties"></a>Pobierz właściwości projektu
 
@@ -30,7 +32,7 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
 
 1. Każde rozszerzenie programu Visual Studio rozpoczyna się od projektu wdrożenia VSIX, który będzie zawierać zasoby rozszerzenia. Utwórz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projekt VSIX o nazwie `ProjectPropertiesExtension` . Szablon projektu VSIX można znaleźć w oknie dialogowym **Nowy projekt** , wyszukując frazę "VSIX".
 
-2. Dodaj okno narzędzi, dodając szablon elementu niestandardowego okna narzędzi o nazwie `ProjectPropertiesToolWindow` . W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >  **nowy element**. W **oknie dialogowym Dodaj nowy element**przejdź do obszaru rozszerzanie **elementów Visual C#**  >  **Extensibility** i wybierz **niestandardowe okno narzędzi**. W polu **Nazwa** w dolnej części okna dialogowego Zmień nazwę pliku na `ProjectPropertiesToolWindow.cs` . Aby uzyskać więcej informacji na temat tworzenia niestandardowego okna narzędzi, zobacz [Tworzenie rozszerzenia przy użyciu okna narzędzi](../extensibility/creating-an-extension-with-a-tool-window.md).
+2. Dodaj okno narzędzi, dodając szablon elementu niestandardowego okna narzędzi o nazwie `ProjectPropertiesToolWindow` . W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >  **nowy element**. W **oknie dialogowym Dodaj nowy element** przejdź do obszaru rozszerzanie **elementów Visual C#**  >   i wybierz **niestandardowe okno narzędzi**. W polu **Nazwa** w dolnej części okna dialogowego Zmień nazwę pliku na `ProjectPropertiesToolWindow.cs` . Aby uzyskać więcej informacji na temat tworzenia niestandardowego okna narzędzi, zobacz [Tworzenie rozszerzenia przy użyciu okna narzędzi](../extensibility/creating-an-extension-with-a-tool-window.md).
 
 3. Skompiluj rozwiązanie i sprawdź, czy jest ono kompilowane bez błędów.
 
@@ -44,9 +46,9 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
 
     ```
 
-2. W *ProjectPropertiesToolWindowControl. XAML*usuń istniejący przycisk i Dodaj element TreeView z przybornika. Możesz również usunąć procedurę obsługi zdarzeń kliknięcia z pliku *ProjectPropertiesToolWindowControl.XAML.cs* .
+2. W *ProjectPropertiesToolWindowControl. XAML* usuń istniejący przycisk i Dodaj element TreeView z przybornika. Możesz również usunąć procedurę obsługi zdarzeń kliknięcia z pliku *ProjectPropertiesToolWindowControl.XAML.cs* .
 
-3. W *ProjectPropertiesToolWindowCommand.cs*Użyj metody, `ShowToolWindow()` Aby otworzyć projekt i odczytać jego właściwości, a następnie Dodaj właściwości do widoku TreeView. Kod dla ShowToolWindow powinien wyglądać następująco:
+3. W *ProjectPropertiesToolWindowCommand.cs* Użyj metody, `ShowToolWindow()` Aby otworzyć projekt i odczytać jego właściwości, a następnie Dodaj właściwości do widoku TreeView. Kod dla ShowToolWindow powinien wyglądać następująco:
 
     ```csharp
     private void ShowToolWindow(object sender, EventArgs e)

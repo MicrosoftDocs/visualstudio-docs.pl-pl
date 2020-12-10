@@ -1,5 +1,7 @@
 ---
 title: Dynamiczne dodawanie elementów menu | Microsoft Docs
+description: Dowiedz się, jak dodać elementy menu w czasie wykonywania przy użyciu flagi polecenia DynamicItemStart. W tym artykule pokazano, jak ustawić projekt startowy w rozwiązaniu programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4387c1930e09e49c0ec5c36ccedc1bb83dc273f3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 81fd495c51eff456f66275f33876038d14e43203
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712066"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994813"
 ---
 # <a name="dynamically-add-menu-items"></a>Dynamicznie Dodaj elementy menu
 Możesz dodać elementy menu w czasie wykonywania, określając `DynamicItemStart` flagę polecenia w definicji przycisku zastępczego w pliku tabeli programu Visual Studio (*. vsct*), a następnie definiując (w kodzie) liczbę elementów menu do wyświetlenia i obsługi poleceń. Po załadowaniu pakietu VSPackage symbol zastępczy jest zastępowany dynamicznymi elementami menu.
@@ -43,7 +45,7 @@ Możesz dodać elementy menu w czasie wykonywania, określając `DynamicItemStar
 
 - Dwa przyciski, takie jak symbol zastępczy dla elementów menu i inne, które dostarczają ikonę i etykietkę narzędzia na pasku narzędzi.
 
-1. W *DynamicMenuPackage. vsct*Zdefiniuj identyfikatory poleceń. Przejdź do sekcji symbole i Zastąp elementy IDSymbol w bloku **guidDynamicMenuPackageCmdSet** GuidSymbol. Należy zdefiniować elementy IDSymbol dla dwóch grup, kontrolera menu, polecenia PlaceHolder i polecenia zakotwiczenia.
+1. W *DynamicMenuPackage. vsct* Zdefiniuj identyfikatory poleceń. Przejdź do sekcji symbole i Zastąp elementy IDSymbol w bloku **guidDynamicMenuPackageCmdSet** GuidSymbol. Należy zdefiniować elementy IDSymbol dla dwóch grup, kontrolera menu, polecenia PlaceHolder i polecenia zakotwiczenia.
 
     ```xml
     <GuidSymbol name="guidDynamicMenuPackageCmdSet" value="{ your GUID here }">
@@ -142,7 +144,7 @@ Możesz dodać elementy menu w czasie wykonywania, określając `DynamicItemStar
 ## <a name="implement-the-dynamic-menu-command"></a>Implementowanie polecenia menu dynamicznego
  Tworzysz klasę poleceń menu dynamicznego, która dziedziczy z <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> . W tej implementacji Konstruktor Określa predykat, który ma być używany do dopasowywania poleceń. Należy zastąpić <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.DynamicItemMatch%2A> metodę, aby użyć tego predykatu do ustawienia <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.MatchedCommandId%2A> właściwości, która identyfikuje polecenie, które ma być wywoływane.
 
-1. Utwórz nowy plik klasy C# o nazwie *DynamicItemMenuCommand.cs*i Dodaj klasę o nazwie **DynamicItemMenuCommand** , która dziedziczy z <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> :
+1. Utwórz nowy plik klasy C# o nazwie *DynamicItemMenuCommand.cs* i Dodaj klasę o nazwie **DynamicItemMenuCommand** , która dziedziczy z <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> :
 
     ```csharp
     class DynamicItemMenuCommand : OleMenuCommand
@@ -205,7 +207,7 @@ Możesz dodać elementy menu w czasie wykonywania, określając `DynamicItemStar
 ## <a name="add-the-command"></a>Dodaj polecenie
  Konstruktor wywołaniu to miejsce, w którym można skonfigurować polecenia menu, w tym dynamiczne menu i elementy menu.
 
-1. W *DynamicMenuPackage.cs*Dodaj identyfikator GUID zestawu poleceń i identyfikator polecenia:
+1. W *DynamicMenuPackage.cs* Dodaj identyfikator GUID zestawu poleceń i identyfikator polecenia:
 
     ```csharp
     public const string guidDynamicMenuPackageCmdSet = "00000000-0000-0000-0000-00000000";  // get the GUID from the .vsct file

@@ -1,6 +1,6 @@
 ---
-title: Projektant przepływu pracy — przeglądanie i wybieranie typu .NET okno dialogowe
-description: Dowiedz się, jak można użyć okna dialogowego Przeglądaj i wybierz typ platformy .NET, aby wybrać typ z widoku drzewa zespołów i projektów.
+title: Przeglądanie i wybieranie typu .NET okno dialogowe
+description: Dowiedz się, jak można użyć okna dialogowego Przeglądaj i wybierz typ platformy .NET, aby wybrać typ z widoku drzewa zespołów i projektów w Projektant przepływu pracy.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7e887cf339647df9bca7fdc3d07a45dd44901c42
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9c479cbad884a8a21197c945f8f6f1ae13947991
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438181"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995489"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Wyszukiwanie i wybieranie typu .NET, okno dialogowe
 
@@ -57,7 +57,7 @@ To okno dialogowe jest stosowane w wielu scenariuszach użytkowników, w tym:
 
 ## <a name="types-displayed-in-the-type-browser"></a>Typy wyświetlane w przeglądarce typów
 
-Typy wyświetlane w przeglądarce typów mogą się różnić w zależności od sposobu uruchomienia przeglądarki typów. Jeśli przeglądarka typów została uruchomiona z projektu przepływu pracy wewnątrz **VS2010** , domyślnie są wyświetlane wszystkie typy w przywoływanych zestawach i projektach, do których istnieją odwołania. Jeśli przeglądarka typów została uruchomiona spoza systemu projektu **VS2010** (na przykład w aplikacji do przeszukanego przepływu pracy lub w autonomicznym pliku przepływu pracy), domyślnie są wyświetlane typy ze wszystkich zestawów załadowanych w domenie aplikacji.
+Typy wyświetlane w przeglądarce typów mogą się różnić w zależności od sposobu uruchomienia przeglądarki typów. Jeśli przeglądarka typów została uruchomiona z projektu przepływu pracy wewnątrz **VS2010**, domyślnie są wyświetlane wszystkie typy w przywoływanych zestawach i projektach, do których istnieją odwołania. Jeśli przeglądarka typów została uruchomiona spoza systemu projektu **VS2010** (na przykład w aplikacji do przeszukanego przepływu pracy lub w autonomicznym pliku przepływu pracy), domyślnie są wyświetlane typy ze wszystkich zestawów załadowanych w domenie aplikacji.
 
 Typy w przeglądarce typów mogą być filtrowane przez deweloperów projektanta działań. Dla danego działania może zostać wyświetlony tylko podzbiór typów. Na przykład w <xref:System.Activities.Statements.TryCatch> działaniu w <xref:System.Exception> przeglądarce typów są wyświetlane tylko typy pochodne od.
 

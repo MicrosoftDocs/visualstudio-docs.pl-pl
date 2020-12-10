@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: brak obiektów ze względu na cieniowanie wierzchołków | Microsoft Docs'
+description: Postępuj zgodnie z badaniem, w którym znajduje się błąd cieniowania wierzchołka. Pokazuje listę zdarzeń użycia grafiki, etapy potoku grafiki, debuger HLSL oraz stos wywołań zdarzeń grafiki.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e42b54a0-8092-455c-945b-9ecafb129d93
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc3bd288044c9fea1da648b64cabc87148b8463a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a7e4c01a990ce4d3fff6769ba016c168b190687f
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64825518"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995001"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Przewodnik: brak obiektów spowodowany cieniowaniem wierzchołków
 W tym instruktażu pokazano, jak za pomocą [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] narzędzi Diagnostyka grafiki sprawdzać nieobecny obiekt z powodu błędu występującego podczas etapu cieniowania wierzchołka.
@@ -42,7 +44,7 @@ W tym instruktażu pokazano, jak za pomocą [!INCLUDE[vsprvs](../../code-quality
 
 1. W programie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Załaduj dziennik grafiki zawierający ramkę, która wykazuje brakujący obiekt. Zostanie wyświetlona nowa karta graficzny dziennik grafiki w temacie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . W górnej części tej karty są docelowe wyniki renderowania dla wybranej ramki. W dolnej części jest **listą ramek**, która wyświetla każdą przechwyconą ramkę jako obraz miniatury.
 
-2. Na **liście ramka**Wybierz ramkę, która pokazuje, że obiekt nie jest wyświetlany. Obiekt docelowy renderowania zostanie zaktualizowany w celu odzwierciedlenia wybranej ramki. W tym scenariuszu karta Dziennik grafiki wygląda następująco:
+2. Na **liście ramka** Wybierz ramkę, która pokazuje, że obiekt nie jest wyświetlany. Obiekt docelowy renderowania zostanie zaktualizowany w celu odzwierciedlenia wybranej ramki. W tym scenariuszu karta Dziennik grafiki wygląda następująco:
 
     ![Dokument dziennika grafiki w programie Visual Studio](media/gfx_diag_demo_missing_object_shader_step_1.png "gfx_diag_demo_missing_object_shader_step_1")
 

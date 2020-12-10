@@ -1,6 +1,6 @@
 ---
-title: 'Projektant przepływu pracy: Definiowanie delegatów działań i korzystanie z nich'
-description: Dowiedz się, jak .NET Framework 4,5 zawiera projektanta poza ramką dla działania InvokeDelegate, którego można użyć do definiowania delegatów działań i korzystania z nich.
+title: Definiowanie i używanie delegatów działań
+description: W Projektant przepływu pracy, Dowiedz się, w jaki sposób .NET Framework 4,5 zawiera projektanta poza ramką dla działania InvokeDelegate, którego można użyć do definiowania delegatów działań i korzystania z nich.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: c59c828f380e47a06f8feb7b72788e76ad7ee08f
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 48cab69de11ce006792e0fda72245048c6897acf
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437921"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993279"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Instrukcje: Definiowanie i stosowanie delegowania działania w Projektancie przepływu pracy
 
@@ -52,7 +52,7 @@ ms.locfileid: "94437921"
 
 13. Wybierz pozycję **Utwórz zmienną**. Nazwij nowy **indeks** zmiennych.
 
-14. W kolumnie **Typ zmiennej** wybierz wartość **Int32**. Pozostaw **zakres** **jako nieokreślony** , a kolumna **Domyślna** jest pusta.
+14. W kolumnie **Typ zmiennej** wybierz wartość **Int32**. Pozostaw **zakres** **jako nieokreślony**, a kolumna **Domyślna** jest pusta.
 
 15. Ustaw właściwość **Condition** <xref:System.Activities.Statements.While> działania na **indeksowanie < elementów. length;**.
 
@@ -64,7 +64,7 @@ ms.locfileid: "94437921"
 
 19. W kolumnie **wartość** argumentu nazwanego **argumentu** wpisz **elementy [index]**. Kliknij przycisk **OK** , aby zamknąć okno dialogowe **DelegateArguments** .
 
-20. Przeciągnij <xref:System.Activities.Statements.Assign> działanie na linię poziomą poniżej <xref:System.Activities.Statements.InvokeDelegate> działania. To <xref:System.Activities.Statements.Assign> działanie jest tworzone, a <xref:System.Activities.Statements.Sequence> działanie jest tworzone automatycznie, aby zawierało dwa działania w sekcji **Body** działania. **MyForEach** Sekwencja jest wymagana, ponieważ sekcja **treści** może zawierać tylko jedno działanie. Automatyczne tworzenie nowego <xref:System.Activities.Statements.Sequence> działania jest nową funkcją .NET Framework 4,5.
+20. Przeciągnij <xref:System.Activities.Statements.Assign> działanie na linię poziomą poniżej <xref:System.Activities.Statements.InvokeDelegate> działania. To <xref:System.Activities.Statements.Assign> działanie jest tworzone, a <xref:System.Activities.Statements.Sequence> działanie jest tworzone automatycznie, aby zawierało dwa działania w sekcji **Body** działania.  Sekwencja jest wymagana, ponieważ sekcja **treści** może zawierać tylko jedno działanie. Automatyczne tworzenie nowego <xref:System.Activities.Statements.Sequence> działania jest nową funkcją .NET Framework 4,5.
 
 21. Ustaw właściwość **na** dla <xref:System.Activities.Statements.Assign> działania na **indeks**. Ustaw właściwość **wartość** działania **Przypisz** na wartość **index + 1**.
 
@@ -80,7 +80,7 @@ ms.locfileid: "94437921"
 
 4. Ustaw właściwość **Items** działania elementu **foreach** na **nowy obiekt [] {1, "ABC"}**.
 
-5. Przeciągnij <xref:System.Activities.Statements.WriteLine> działanie z sekcji elementy **pierwotne** w przyborniku do sekcji **Delegat: Body** działania elementu. **MyForEach**
+5. Przeciągnij <xref:System.Activities.Statements.WriteLine> działanie z sekcji elementy **pierwotne** w przyborniku do sekcji **Delegat: Body** działania elementu. 
 
 6. Ustaw właściwość **Text** <xref:System.Activities.Statements.WriteLine> działania na **argument. ToString ()**.
 

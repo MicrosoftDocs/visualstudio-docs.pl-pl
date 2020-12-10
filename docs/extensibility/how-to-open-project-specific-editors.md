@@ -1,5 +1,7 @@
 ---
-title: 'Instrukcje: otwieranie edytorów specyficznych dla projektu | Microsoft Docs'
+title: 'Instrukcje: otwieranie edytorów Project-Specific | Microsoft Docs'
+description: Dowiedz się, jak zaimplementować metodę OpenItem z edytorem specyficznym dla projektu, aby projekt mógł otworzyć plik powiązany z edytorem dla tego projektu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22106ea09f86e3d61fe7aaa6e86e6e99c002f32d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4cbba1f4d6cf0a2a5a45dd2999afa5bbf3443fca
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905803"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993786"
 ---
 # <a name="how-to-open-project-specific-editors"></a>Instrukcje: otwieranie edytorów specyficznych dla projektu
 Jeśli plik elementu, który jest otwierany przez projekt, jest w sposób wewnętrzny powiązany z określonym edytorem dla danego projektu, projekt musi otworzyć plik przy użyciu edytora specyficznego dla projektu. Nie można delegować pliku do mechanizmu IDE w celu wybrania edytora. Na przykład zamiast używać standardowego edytora mapy bitowej, można użyć tej opcji edytora dla danego projektu, aby określić konkretny Edytor mapy bitowej, który rozpoznaje informacje w pliku, który jest unikatowy dla Twojego projektu.

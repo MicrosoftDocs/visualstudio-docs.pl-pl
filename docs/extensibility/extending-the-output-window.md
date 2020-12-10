@@ -1,5 +1,7 @@
 ---
 title: Rozszerzanie Okno Dane wyjściowe | Microsoft Docs
+description: Dowiedz się, jak rozłożyć okno danych wyjściowych w zestawie SDK programu Visual Studio oraz utworzyć własne okienka niestandardowe i zarządzać nimi.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 800b443b079111d1d09fffdd900b246a020578f4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 39ee69f934a9962d2beefb83b1ada08b920ce53d
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711641"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994670"
 ---
 # <a name="extend-the-output-window"></a>Rozwiń okno danych wyjściowych
 Okno **dane wyjściowe** to zestaw okienek tekstu do odczytu i zapisu. Program Visual Studio zawiera następujące wbudowane okienka: **kompilacja**, w której projekty komunikują się z komunikatami o kompilacjach, a **Ogólne**, w którym [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] KOMUNIKUJĄ się komunikaty dotyczące środowiska IDE. Projekty uzyskują odwołanie do okienka **kompilacji** automatycznie za pośrednictwem <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> metod interfejsu, a program Visual Studio oferuje bezpośredni dostęp do okienka **Ogólne** za pośrednictwem <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> usługi. Oprócz wbudowanych okienek można tworzyć własne okienka niestandardowe i zarządzać nimi.
@@ -33,14 +35,14 @@ Okno **dane wyjściowe** to zestaw okienek tekstu do odczytu i zapisu. Program V
 
     2. EnvDTE80
 
-3. W *TestOutput.cs*Dodaj następującą instrukcję using:
+3. W *TestOutput.cs* Dodaj następującą instrukcję using:
 
     ```f#
     using EnvDTE;
     using EnvDTE80;
     ```
 
-4. W *TestOutput.cs*Usuń `ShowMessageBox` metodę. Dodaj następujący skrót metody:
+4. W *TestOutput.cs* Usuń `ShowMessageBox` metodę. Dodaj następujący skrót metody:
 
     ```csharp
     private void OutputCommandHandler(object sender, EventArgs e)

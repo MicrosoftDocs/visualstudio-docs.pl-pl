@@ -1,5 +1,7 @@
 ---
 title: Wdrażanie niestandardowych stron początkowych | Microsoft Docs
+description: Dowiedz się, jak wdrażać niestandardowe strony startowe przy użyciu wdrożenia VSIX lub kopiując pliki do odpowiednich lokalizacji na komputerze docelowym.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 210b4589c0e2165af537c3fa9129affb06197e9b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76c2fc23a2b76b48152a4d3d44d687f165abf106
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712229"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993890"
 ---
 # <a name="deploy-custom-start-pages"></a>Wdróż niestandardowe strony początkowe
 
@@ -58,9 +60,9 @@ Jeśli pakiet strony początkowej zawiera zestawy, należy dodać rejestrację �
 ```
 
 ### <a name="vsix-deployment-for-all-users"></a>Wdrożenie VSIX dla wszystkich użytkowników
- Domyślnie rozszerzenia wdrożone w pakietach VSIX instalują tylko dla bieżącego użytkownika. Możesz wykonać instalację strony startowej dla wszystkich użytkowników maszyny docelowej, tworząc wdrożenie wszyscy użytkownicy.
+ Domyślnie rozszerzenia wdrożone w pakietach VSIX instalują tylko dla bieżącego użytkownika. Aby zainstalować stronę początkową dla wszystkich użytkowników maszyny docelowej, można utworzyć wdrożenie All-Users.
 
-### <a name="to-create-an-all-users-deployment"></a>Aby utworzyć wdrożenie wszystkich użytkowników
+### <a name="to-create-an-all-users-deployment"></a>Aby utworzyć wdrożenie All-Users
 
 1. Otwórz plik *Extension. vsixmanifest* w widoku kodu.
 
@@ -83,7 +85,7 @@ Jeśli pakiet strony początkowej zawiera zestawy, należy dodać rejestrację �
      To nakazuje programowi Visual Studio wyszukanie nowej lokalizacji strony początkowej.
 
 ## <a name="file-copy-deployment"></a>Wdrożenie kopiowania plików
- Nie ma potrzeby tworzenia pliku *. vsix* w celu wdrożenia niestandardowej strony początkowej. Zamiast tego można skopiować znaczniki i pliki pomocnicze bezpośrednio do <em>folderu \StartPages użytkownika \* . Na liście **Dostosuj stronę początkową</em> * na stronie opcje **uruchamiania** znajduje się każdy plik *XAML* w tym folderze wraz ze ścieżką — na przykład *%USERPROFILE%\My Documents\Visual Studio {Version} \StartPages \\ {File Name}. XAML*. Jeśli strona początkowa zawiera odwołania do zestawów prywatnych, należy je skopiować i wkleić do folderu * \PrivateAssemblies \* .
+ Nie ma potrzeby tworzenia pliku *. vsix* w celu wdrożenia niestandardowej strony początkowej. Zamiast tego można skopiować znaczniki i pliki pomocnicze bezpośrednio do <em>folderu \StartPages użytkownika \* . Na liście **Dostosuj stronę początkową</em>* na stronie opcje **uruchamiania** znajduje się każdy plik *XAML* w tym folderze wraz ze ścieżką — na przykład *%USERPROFILE%\My Documents\Visual Studio {Version} \StartPages \\ {File Name}. XAML*. Jeśli strona początkowa zawiera odwołania do zestawów prywatnych, należy je skopiować i wkleić do folderu * \PrivateAssemblies \* .
 
  Aby dystrybuować stronę początkową utworzoną bez pakowania jej w pliku *. vsix* , zalecamy użycie podstawowej strategii kopiowania plików, na przykład skryptu wsadowego, lub dowolnej innej technologii wdrażania, która umożliwia umieszczenie plików w wymaganych katalogach.
 

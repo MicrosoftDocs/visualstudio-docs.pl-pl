@@ -1,5 +1,7 @@
 ---
 title: Element grupy | Microsoft Docs
+description: Element Group definiuje grupę poleceń pakietu VSPackage. W tym artykule opisano atrybuty, elementy podrzędne i elementy nadrzędne.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26479257511d74f122dd4064330f5b6a1e8dadd3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d0d39d4e4f795ddecab21765db43ba1a2f629dd7
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711234"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993857"
 ---
 # <a name="group-element"></a>Element grupy
 Definiuje grupę poleceń pakietu VSPackage.
@@ -36,8 +38,8 @@ Definiuje grupę poleceń pakietu VSPackage.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|guid|Wymagany. Identyfikator GUID identyfikatora polecenia GUID/ID.|
-|identyfikator|Wymagany. Identyfikator identyfikatora polecenia GUID/ID.|
+|guid|Wymagane. Identyfikator GUID identyfikatora polecenia GUID/ID.|
+|identyfikator|Wymagane. Identyfikator identyfikatora polecenia GUID/ID.|
 |priority|Opcjonalny. Wartość liczbowa, która określa priorytet.|
 |Warunek|Opcjonalny. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
@@ -62,5 +64,5 @@ Definiuje grupę poleceń pakietu VSPackage.
 </Group>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Pliki tabeli poleceń programu Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

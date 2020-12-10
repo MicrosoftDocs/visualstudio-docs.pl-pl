@@ -1,5 +1,7 @@
 ---
 title: Importy edytora | Microsoft Docs
+description: Dowiedz się, jak importować usługi edytora, fabryki i brokerów, które udostępniają swoje rozszerzenia różnym rodzajom dostępu do podstawowego edytora.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6af95b452166aa71950ac1e869d333d12d857b9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d4e3a128f0f2873ad1946788b34761aadd1e7021
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712013"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994774"
 ---
 # <a name="editor-imports"></a>Importy edytora
 Istnieje możliwość zaimportowania wielu usług edytora, fabryk i brokerów, które zapewniają rozszerzenie z różnymi rodzajami dostępu do podstawowego edytora. Na przykład można zaimportować program w <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> celu zapewnienia <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> dla danego typu zawartości. (Ten Nawigator umożliwia wykonywanie różnych rodzajów wyszukiwania w buforze tekstu).

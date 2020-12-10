@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: brak obiektów ze względu na stan urządzenia | Microsoft Docs'
+description: Postępuj zgodnie z badaniem, w którym znajduje się niepoprawnie skonfigurowany stan urządzenia. Pokazuje on użycie listy zdarzeń grafiki, etapów potoku grafiki i historii pikseli grafiki.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 1b0d2bbd-0729-4aa5-8308-70c5bf1468c5
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e85aa8fc5af3f32f117b112e8624962a49d90c6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c29e240d4be2f66fb0684bf5372d59fe5d4d825a
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62895453"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995060"
 ---
 # <a name="walkthrough-missing-objects-due-to-device-state"></a>Przewodnik: brak obiektów spowodowany stanem urządzenia
 W tym instruktażu pokazano, jak za pomocą [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Diagnostyka grafiki zbadać nieobecny obiekt z powodu nieprawidłowego skonfigurowania stanu urządzenia.
@@ -44,7 +46,7 @@ W tym instruktażu pokazano, jak za pomocą [!INCLUDE[vsprvs](../../code-quality
 
 1. W programie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Załaduj dziennik grafiki zawierający ramkę, która wykazuje brakujący model. Zostanie wyświetlona nowa karta Diagnostyka grafiki [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . W górnej części tej karty są docelowe wyniki renderowania dla wybranej ramki. W dolnej części jest **listą ramek**, która wyświetla każdą przechwyconą ramkę jako obraz miniatury.
 
-2. Na **liście ramka**Wybierz ramkę, która pokazuje, że model nie jest wyświetlany. Obiekt docelowy renderowania zostanie zaktualizowany w celu odzwierciedlenia wybranej ramki. W tym scenariuszu karta Dziennik grafiki wygląda następująco:
+2. Na **liście ramka** Wybierz ramkę, która pokazuje, że model nie jest wyświetlany. Obiekt docelowy renderowania zostanie zaktualizowany w celu odzwierciedlenia wybranej ramki. W tym scenariuszu karta Dziennik grafiki wygląda następująco:
 
     ![Karta. vsglog w wersji zapoznawczej i lista ramek](media/vsg_walkthru1_experiment.png "vsg_walkthru1_experiment")
 

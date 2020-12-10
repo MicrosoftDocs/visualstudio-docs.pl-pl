@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: Przechwytywanie informacji graficznych | Microsoft Docs'
+description: Zapoznaj się z tematem jak używać programu Visual Studio Diagnostyka grafiki do ręcznego przechwytywania informacji graficznych z aplikacji Direct3D.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 48f12f6e-57b4-48ec-a145-89fa71a42424
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aab86d42cd158ad64ebb16497b8d2d9f5a7002df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3acd9df9dbb5a430171ae7a283bbf4292e07e26a
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72734723"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994982"
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>Przewodnik: Przechwytywanie informacji graficznych
 W tym instruktażu pokazano, jak używać [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Diagnostyka grafiki do ręcznego przechwytywania informacji graficznych z aplikacji Direct3D.
@@ -39,7 +41,7 @@ W tym instruktażu pokazano, jak używać [!INCLUDE[vsprvs](../../code-quality/i
 
 2. Zamiast pliku projektu lub rozwiązania, określ plik wykonywalny dla aplikacji, z której chcesz przechwytywać informacje graficzne, a następnie wybierz **Otwórz**.
 
-3. Na pasku menu wybierz kolejno opcje **Debuguj**, **grafika**i **Uruchom diagnostykę**.
+3. Na pasku menu wybierz kolejno opcje **Debuguj**, **grafika** i **Uruchom diagnostykę**.
 
    Po uruchomieniu aplikacji i wyrenderowaniu ramek można przechwytywać informacje o grafice.
 

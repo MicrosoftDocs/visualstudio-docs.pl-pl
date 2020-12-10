@@ -1,5 +1,6 @@
 ---
 title: Wprowadzenie do rozszerzeń usługi językowej i edytora
+description: Dowiedz się, jak dodać funkcje usługi językowej do dowolnego typu zawartości i dostosować wygląd i zachowanie edytora programu Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55d9f018324c32a8b39c96037058593cebf52bc2
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 471acaef0145b3bf1a73925b42e17a6343439ea2
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037767"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994397"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>Wprowadzenie do rozszerzeń usługi językowej i edytora
 
@@ -95,6 +96,6 @@ Rozszerzenia edytora umożliwiają dodawanie funkcji usługi językowej, takich 
 
 - [Przewodnik: używanie klawisza skrótu z rozszerzeniem edytora](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Punkty rozszerzenia usługi językowej i edytora](../extensibility/language-service-and-editor-extension-points.md)

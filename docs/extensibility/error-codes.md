@@ -1,5 +1,7 @@
 ---
 title: Kody błędów | Microsoft Docs
+description: Ten artykuł zawiera listę kodów błędów, wartości i opisy funkcji interfejsu API wtyczki kontroli źródła.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34072f6ddbd632f83dd308c6cb63427e02bb110b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a77f869936531dbc41cc3bd1d9b510bf44c35cec
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711841"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994722"
 ---
 # <a name="error-codes"></a>Kody błędów
 Gdy funkcja interfejsu API wtyczki kontroli źródła zwraca błąd, oczekiwany jest jeden z następujących kodów błędów. Wszystkie błędy są negatywne, ostrzeżenia lub kody błędów informacyjnych są pozytywne, a powodzenie to 0.
@@ -34,7 +36,7 @@ Gdy funkcja interfejsu API wtyczki kontroli źródła zwraca błąd, oczekiwany 
 |`SCC_OK`|0|Powodzenie.|
 |`SCC_E_INITIALIZEFAILED`|-1|Błąd: inicjowanie nie powiodło się.|
 |`SCC_E_UNKNOWNPROJECT`|-2|Błąd: projekt jest nieznany.|
-|`SCC_E_COULDNOTCREATEPROJECT`|-3|Błąd: nie można utworzyć projektu.|
+|`SCC_E_COULDNOTCREATEPROJECT`|–3|Błąd: nie można utworzyć projektu.|
 |`SCC_E_NOTCHECKEDOUT`|-4|Błąd: plik nie został wyewidencjonowany.|
 |`SCC_E_ALREADYCHECKEDOUT`|-5|Błąd: plik jest już wyewidencjonowany.|
 |`SCC_E_FILEISLOCKED`|-6|Błąd: plik jest zablokowany.|

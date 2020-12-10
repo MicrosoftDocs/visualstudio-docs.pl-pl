@@ -1,17 +1,19 @@
 ---
 title: Diagnozowanie opóźnień interfejsu użytkownika w programie Visual Studio | Microsoft Docs
+description: Program Visual Studio powiadamia o tym, czy opóźnienia interfejsu użytkownika mogą być spowodowane przez rozszerzenie. Dowiedz się, jak zdiagnozować zawartość kodu rozszerzenia, powodując opóźnienia interfejsu użytkownika.
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: conceptual
 author: PooyaZv
 ms.author: pozandev
 manager: jillfra
 ms.workload: multiple
-ms.openlocfilehash: e8b35a566eb0f2457d6eb8ae3a33235df2a64cd3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 965e96a7881e20eca035b61ed7fd6f29398e71c6
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75849151"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994267"
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Instrukcje: diagnozowanie opóźnień w interfejsie użytkownika powodowanych przez rozszerzenia
 
@@ -102,7 +104,7 @@ Następnie otwórz plik śledzenia. Można to zrobić przy użyciu tego samego w
 Następnie wybierz plik śledzenia w okienku po lewej stronie i otwórz go, wybierając pozycję **Otwórz** w menu kontekstowym lub prawym przyciskiem myszy.
 
 > [!NOTE]
-> Domyślnie narzędzia PerfView wyprowadza archiwum zip. Po otwarciu *trace.zip*automatycznie dekompresuje archiwum i otwiera śledzenie. Możesz to pominąć, usuwając zaznaczenie pola **zip** podczas zbierania śladu. Jeśli jednak planujesz transfer i używanie śladów na różnych komputerach, zdecydowanie zalecamy, aby nie sprawdzać pola **zip** . Bez tej opcji wymagane plików PDB dla zestawów NGen nie towarzyszy śledzeniu i w rezultacie symbole z zestawów NGen nie zostaną rozwiązane na maszynie docelowej. (Zobacz [ten wpis w blogu](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) , aby uzyskać więcej informacji na temat plików PDB dla zestawów NGen).
+> Domyślnie narzędzia PerfView wyprowadza archiwum zip. Po otwarciu *trace.zip* automatycznie dekompresuje archiwum i otwiera śledzenie. Możesz to pominąć, usuwając zaznaczenie pola **zip** podczas zbierania śladu. Jeśli jednak planujesz transfer i używanie śladów na różnych komputerach, zdecydowanie zalecamy, aby nie sprawdzać pola **zip** . Bez tej opcji wymagane plików PDB dla zestawów NGen nie towarzyszy śledzeniu i w rezultacie symbole z zestawów NGen nie zostaną rozwiązane na maszynie docelowej. (Zobacz [ten wpis w blogu](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) , aby uzyskać więcej informacji na temat plików PDB dla zestawów NGen).
 
 Przetworzenie i otwieranie śledzenia przez narzędzia PerfView może potrwać kilka minut. Po otwarciu śledzenia zostanie wyświetlona lista różnych "widoków".
 

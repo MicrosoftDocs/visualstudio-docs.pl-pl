@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: Debugowanie błędów renderowania spowodowanych cieniowaniem | Microsoft Docs'
+description: Postępuj zgodnie z badaniem, który znajdzie usterkę programu do cieniowania. Przedstawia on korzystanie z programu Visual Studio Diagnostyka grafiki, w tym historii pikseli grafiki i debugera HLSL.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 01875b05-cc7b-4add-afba-f2b776f86974
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44e542bcbb801ee4035ba501b50bad81b53e8bdf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b42aa5638b668d90fa44335c2d532c9bcddddc2b
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62849314"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995086"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Przewodnik: debugowanie błędów renderowania spowodowanych cieniowaniem
 W tym instruktażu pokazano, jak za pomocą [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Diagnostyka grafiki zbadać obiekt, który jest niepoprawnie kolorowy ze względu na usterkę programu do cieniowania.
@@ -40,7 +42,7 @@ W tym instruktażu pokazano, jak za pomocą [!INCLUDE[vsprvs](../../code-quality
 
 1. W programie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Załaduj dziennik grafiki z ramką, która pokazuje brakujący model. Zostanie wyświetlone nowe okno graficznego dokumentu dziennika [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . W górnej części tego okna są dane wyjściowe docelowej renderowania zaznaczonej ramki. W dolnej części jest **listą ramek**, która wyświetla każdą przechwyconą ramkę jako obraz miniatury.
 
-2. Na **liście ramka**Wybierz ramkę, w której obiekt nie ma poprawnego wyglądu. Obiekt docelowy renderowania zostanie zaktualizowany w celu odzwierciedlenia wybranej ramki. W tym scenariuszu okno dokumentu dziennika grafiki wygląda podobnie do tego obrazu:
+2. Na **liście ramka** Wybierz ramkę, w której obiekt nie ma poprawnego wyglądu. Obiekt docelowy renderowania zostanie zaktualizowany w celu odzwierciedlenia wybranej ramki. W tym scenariuszu okno dokumentu dziennika grafiki wygląda podobnie do tego obrazu:
 
     ![Dokument dziennika grafiki w programie Visual Studio.](media/gfx_diag_demo_render_error_shader_step_1.png "gfx_diag_demo_render_error_shader_step_1")
 
@@ -64,7 +66,7 @@ W tym instruktażu pokazano, jak za pomocą [!INCLUDE[vsprvs](../../code-quality
 
 #### <a name="to-examine-the-pixel-shader"></a>Aby przejrzeć cieniowanie pikseli
 
-1. Rozpocznij debugowanie cieniowania pikseli. W oknie **Historia pikseli grafiki** , w obszarze pierwotny obiekt, obok **cieniowania pikseli**wybierz przycisk **Rozpocznij debugowanie** .
+1. Rozpocznij debugowanie cieniowania pikseli. W oknie **Historia pikseli grafiki** , w obszarze pierwotny obiekt, obok **cieniowania pikseli** wybierz przycisk **Rozpocznij debugowanie** .
 
 2. W tym scenariuszu, ponieważ program do cieniowania pikseli przeszedł po prostu kolor za pośrednictwem programu do cieniowania wierzchołków, można łatwo obserwować, że program do cieniowania pikseli nie jest źródłem problemu.
 
@@ -78,7 +80,7 @@ W tym instruktażu pokazano, jak za pomocą [!INCLUDE[vsprvs](../../code-quality
 
 #### <a name="to-examine-the-vertex-shader"></a>Aby przejrzeć cieniowanie wierzchołków
 
-1. Rozpocznij debugowanie cieniowania wierzchołków. W oknie **Historia pikseli grafiki** w obszarze pierwotnym obiektu obok opcji **cieniowania wierzchołka**wybierz przycisk **Rozpocznij debugowanie** .
+1. Rozpocznij debugowanie cieniowania wierzchołków. W oknie **Historia pikseli grafiki** w obszarze pierwotnym obiektu obok opcji **cieniowania wierzchołka** wybierz przycisk **Rozpocznij debugowanie** .
 
 2. Znajdź strukturę wyjściową programu do cieniowania wierzchołków — jest to dane wejściowe cieniowania pikseli. W tym scenariuszu nazwa tej struktury jest `output` . Sprawdź kod programu do cieniowania wierzchołków i Zauważ, że `color` element członkowski `output` struktury został jawnie ustawiony jako całkowicie nieprzezroczysty, na przykład w wyniku wysiłków debugowania przez kogoś.
 

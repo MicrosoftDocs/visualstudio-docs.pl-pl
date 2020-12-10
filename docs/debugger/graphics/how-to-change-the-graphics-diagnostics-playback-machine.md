@@ -1,5 +1,6 @@
 ---
 title: Zmień komputer odtwarzania diagnostyki grafiki
+description: Odtwórz informacje graficzne z dziennika grafiki przy użyciu komputera lokalnego lub komputera zdalnego lub urządzenia, które lepiej odtwarzają problem.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7b7f3f09495b760d4ee3ab8c20781bc337b1bb2
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 8b6ae19fde7397b97ebe087557d71a52303605ec
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810695"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995073"
 ---
 # <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>Instrukcje: zmiana maszyny odtwarzania diagnostyki grafiki
 Możesz odtworzyć informacje graficzne przy użyciu komputera lokalnego lub komputera zdalnego lub urządzenia.
@@ -28,7 +29,7 @@ Możesz odtworzyć informacje graficzne przy użyciu komputera lokalnego lub kom
 
 2. W obszarze **Konfiguracja ręczna**, we właściwości **adres** wprowadź wartość `localhost` .
 
-3. Ustaw wartość **Brak**dla właściwości **tryb uwierzytelniania** .
+3. Ustaw wartość **Brak** dla właściwości **tryb uwierzytelniania** .
 
 4. Wybierz przycisk **Wybierz** .
 

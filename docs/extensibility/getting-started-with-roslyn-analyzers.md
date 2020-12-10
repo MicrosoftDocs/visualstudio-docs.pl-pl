@@ -1,5 +1,7 @@
 ---
 title: Wprowadzenie z analizatorami Roslyn | Microsoft Docs
+description: Użyj tych zasobów, aby rozpocząć pracę z analizatorami Roslyn w programie Visual Studio; zawiera samouczek i kilka przykładów.
+ms.custom: SEO-VS-2020
 ms.date: 04/02/2018
 ms.topic: conceptual
 ms.assetid: 367c2ec8-3059-46a5-9d1c-57bead0419e7
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4d572c49f7d528b9dbb624bf31ad5e28dc3799aa
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: c63510083f227f617b2a11ddec07510ffd792433
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012246"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994358"
 ---
 # <a name="get-started-with-roslyn-analyzers"></a>Wprowadzenie do analizatorów Roslyn
 
@@ -31,7 +33,7 @@ Korzystając z na żywo analizatorów kodu opartego na projekcie w programie Vis
 
 [Kilka przykładów w witrynie GitHub pogrupowanych na trzy rodzaje analizatorów](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Dokumentacja wersji pakietu platformy kompilatora .NET](roslyn-version-support.md)
 - [Więcej dokumentów w witrynie usługi GitHub](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)

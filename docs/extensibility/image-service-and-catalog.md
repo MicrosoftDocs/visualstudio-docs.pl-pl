@@ -1,5 +1,7 @@
 ---
 title: Usługa obrazów i wykaz | Microsoft Docs
+description: Ten artykuł zawiera wskazówki i najlepsze rozwiązania dotyczące wdrażania usługi obrazów programu Visual Studio i wykazu obrazów.
+ms.custom: SEO-VS-2020
 ms.date: 04/01/2019
 ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a098e78e8895aea72d830a88e436a06f15de6133
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 41adcbe97f9d0779fbad465bac673a3f7cf086c7
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584545"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993539"
 ---
 # <a name="image-service-and-catalog"></a>Usługa obrazów i wykaz
 Ten Cookbook zawiera wskazówki i najlepsze rozwiązania dotyczące wdrażania usługi obrazów programu Visual Studio i katalogu obrazów wprowadzonego w programie Visual Studio 2015.
@@ -103,9 +105,9 @@ Ten Cookbook zawiera wskazówki i najlepsze rozwiązania dotyczące wdrażania u
 
 |**Podelementu**|**Definicja**|
 |-|-|
-|Import|Importuje symbole danego pliku manifestu do użycia w bieżącym manifeście|
+|Importuj|Importuje symbole danego pliku manifestu do użycia w bieżącym manifeście|
 |Guid (identyfikator GUID)|Symbol reprezentuje identyfikator GUID i musi pasować do formatowania identyfikatora GUID|
-|ID|Symbol reprezentuje identyfikator i musi być nieujemną liczbą całkowitą|
+|ID (Identyfikator)|Symbol reprezentuje identyfikator i musi być nieujemną liczbą całkowitą|
 |Ciąg|Symbol reprezentuje arbitralną wartość ciągu|
 
  W symbolach jest rozróżniana wielkość liter i istnieje odwołanie do niej przy użyciu składni $ (symbol-nazwa):
@@ -118,7 +120,7 @@ Ten Cookbook zawiera wskazówki i najlepsze rozwiązania dotyczące wdrażania u
 
  Niektóre symbole są wstępnie zdefiniowane dla wszystkich manifestów. Mogą one być używane w atrybucie URI \<Source> \<Import> elementu lub do odwoływania się do ścieżek na komputerze lokalnym.
 
-|**Symboliczn**|**Opis**|
+|**Symbol**|**Opis**|
 |-|-|
 |CommonProgramFiles|Wartość zmiennej środowiskowej% CommonProgramFiles%|
 |LocalAppData|Wartość zmiennej środowiskowej% LocalAppData%|
@@ -144,10 +146,10 @@ Ten Cookbook zawiera wskazówki i najlepsze rozwiązania dotyczące wdrażania u
 |**Atrybut**|**Definicja**|
 |-|-|
 |Guid (identyfikator GUID)|Potrzeb Część identyfikatora GUID obrazu monikera|
-|ID|Potrzeb Część identyfikatora monikera obrazu|
+|ID (Identyfikator)|Potrzeb Część identyfikatora monikera obrazu|
 |AllowColorInversion|[Opcjonalne, wartość domyślna true] Wskazuje, czy obraz może być programowo odwrócony, gdy jest używany na ciemnym tle.|
 
- **Źródło**
+ **Element źródłowy**
 
  \<Source>Element definiuje pojedynczy zasób źródłowy obrazu (XAML i PNG).
 
@@ -160,7 +162,7 @@ Ten Cookbook zawiera wskazówki i najlepsze rozwiązania dotyczące wdrażania u
 |**Atrybut**|**Definicja**|
 |-|-|
 |Adresu|Potrzeb Identyfikator URI, który definiuje miejsce, z którego można załadować obraz. Może być jedną z następujących czynności:<br /><br /> - [Identyfikator URI pakietu](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) przy użyciu urzędu Application:///<br />-Bezwzględne odwołanie do zasobu składnika<br />-Ścieżka do pliku zawierającego zasób natywny|
-|Tło|Obowiązkowe Wskazuje, jaki rodzaj tła ma być używany.<br /><br /> Może być jedną z następujących czynności:<br /><br /> *Jasne:* Źródło może być używane na jasnym tle.<br /><br /> *Ciemny:* Źródło może być używane w ciemnym tle.<br /><br /> *HighContrast:* Źródło może być używane na dowolnym tle w trybie duży kontrast.<br /><br /> *HighContrastLight:* Źródło może być używane na jasnym tle w trybie duży kontrast.<br /><br /> *HighContrastDark:* Źródło może być używane na ciemnym tle w trybie duży kontrast.<br /><br /> Jeśli atrybut Background zostanie pominięty, źródło może być używane w dowolnym tle.<br /><br /> Jeśli tło jest *jasne*, *ciemne*, *HighContrastLight*lub *HighContrastDark*, kolory źródła nigdy nie są odwracane. Jeśli tło zostanie pominięte lub ustawiona na *HighContrast*, inwersja kolorów źródła jest kontrolowana przez atrybut **AllowColorInversion** obrazu.|
+|Tło|Obowiązkowe Wskazuje, jaki rodzaj tła ma być używany.<br /><br /> Może być jedną z następujących czynności:<br /><br /> *Jasne:* Źródło może być używane na jasnym tle.<br /><br /> *Ciemny:* Źródło może być używane w ciemnym tle.<br /><br /> *HighContrast:* Źródło może być używane na dowolnym tle w trybie duży kontrast.<br /><br /> *HighContrastLight:* Źródło może być używane na jasnym tle w trybie duży kontrast.<br /><br /> *HighContrastDark:* Źródło może być używane na ciemnym tle w trybie duży kontrast.<br /><br /> Jeśli atrybut Background zostanie pominięty, źródło może być używane w dowolnym tle.<br /><br /> Jeśli tło jest *jasne*, *ciemne*, *HighContrastLight* lub *HighContrastDark*, kolory źródła nigdy nie są odwracane. Jeśli tło zostanie pominięte lub ustawiona na *HighContrast*, inwersja kolorów źródła jest kontrolowana przez atrybut **AllowColorInversion** obrazu.|
 
 \<Source>Element może mieć dokładnie jeden z następujących opcjonalnych podelementów:
 
@@ -180,7 +182,7 @@ Ten Cookbook zawiera wskazówki i najlepsze rozwiązania dotyczące wdrażania u
 |**Atrybut**|**Definicja**|
 |-|-|
 |Typ|Potrzeb Typ zasobu natywnego, XAML lub PNG|
-|ID|Potrzeb Część identyfikatora całkowitego zasobu natywnego|
+|ID (Identyfikator)|Potrzeb Część identyfikatora całkowitego zasobu natywnego|
 
  **Obrazów**
 
@@ -196,7 +198,7 @@ Ten Cookbook zawiera wskazówki i najlepsze rozwiązania dotyczące wdrażania u
 |**Atrybut**|**Definicja**|
 |-|-|
 |Guid (identyfikator GUID)|Potrzeb Część identyfikatora GUID obrazu monikera|
-|ID|Potrzeb Część identyfikatora monikera obrazu|
+|ID (Identyfikator)|Potrzeb Część identyfikatora monikera obrazu|
 |Zewnętrzna|[Opcjonalne, wartość domyślna to false] Wskazuje, czy moniker obrazu odwołuje się do obrazu w bieżącym manifeście.|
 
  Moniker zawartego obrazu nie musi odwoływać się do obrazu zdefiniowanego w bieżącym manifeście. Jeśli w bibliotece obrazów nie można znaleźć zawartego obrazu, w jego miejscu zostanie użyty pusty obraz zastępczy.
@@ -245,7 +247,7 @@ Ten Cookbook zawiera wskazówki i najlepsze rozwiązania dotyczące wdrażania u
 
 - **KnownImageIds. h**
 
-  - Wymagane, jeśli używasz wbudowanego **KnownMonikers**wykazu obrazów, ale nie można użyć typu **ImageMoniker** , takiego jak podczas zwracania wartości z **IVsHierarchy GetGuidProperty** lub **GetProperty** wywołania.
+  - Wymagane, jeśli używasz wbudowanego **KnownMonikers** wykazu obrazów, ale nie można użyć typu **ImageMoniker** , takiego jak podczas zwracania wartości z **IVsHierarchy GetGuidProperty** lub **GetProperty** wywołania.
 
 - **KnownMonikers. h**
 
@@ -283,7 +285,7 @@ Ten Cookbook zawiera wskazówki i najlepsze rozwiązania dotyczące wdrażania u
 
 1. Zacznij od dodania odwołań do zestawu wymaganych w powyższej sekcji pierwsze kroki do projektu. Nie musisz dodawać wszystkich z nich, więc Dodaj tylko potrzebne odwołania. (Uwaga: Jeśli używasz lub masz dostęp do **kolorów** zamiast **pędzli**, możesz pominąć odwołanie do **narzędzi**, ponieważ nie będziesz potrzebować konwertera).
 
-2. Wybierz żądany obraz i uzyskaj jego moniker. Użyj **KnownMoniker**lub własne obrazy niestandardowe i monikery, korzystając z własnych obrazów.
+2. Wybierz żądany obraz i uzyskaj jego moniker. Użyj **KnownMoniker** lub własne obrazy niestandardowe i monikery, korzystając z własnych obrazów.
 
 3. Dodaj **CrispImages** do języka XAML. (Zobacz poniżej przykład).
 
@@ -465,7 +467,7 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
 
  Są to kluczowe miejsca do używania monikerów w oknie narzędzi. Postępuj zgodnie z instrukcjami dla każdej z nich:
 
-1. Karta okno narzędzi, gdy karty są wystarczająco małe (używane również w **Ctrl** + przełączniku okna**karty** Ctrl).
+1. Karta okno narzędzi, gdy karty są wystarczająco małe (używane również w  + przełączniku okna **karty** Ctrl).
 
     Dodaj ten wiersz do konstruktora dla klasy, która pochodzi od typu **elementu toolwindowpane** :
 
@@ -497,7 +499,7 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
 
    Są to kluczowe miejsca do używania monikerów w oknie narzędzi. Postępuj zgodnie z instrukcjami dla każdej z nich:
 
-3. Karta okno narzędzi, gdy karty są wystarczająco małe (używane również w **Ctrl** + przełączniku okna**karty** Ctrl).
+3. Karta okno narzędzi, gdy karty są wystarczająco małe (używane również w  + przełączniku okna **karty** Ctrl).
 
    1. Usuń te wiersze (jeśli istnieją) w konstruktorze dla klasy, która pochodzi od typu **elementu toolwindowpane** :
 
@@ -576,7 +578,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 ## <a name="how-do-i-port-a-project-system"></a>Jak mogę portu system projektu?
  **Jak dostarczyć ImageMonikers dla projektu**
 
-1. Zaimplementuj **VSHPROPID_SupportsIconMonikers** w **IVsHierarchy**projektu i zwróć wartość true.
+1. Zaimplementuj **VSHPROPID_SupportsIconMonikers** w **IVsHierarchy** projektu i zwróć wartość true.
 
 2. Zaimplementuj **VSHPROPID_IconMonikerImageList** (jeśli oryginalny projekt jest używany **VSHPROPID_IconImgList**) lub **VSHPROPID_IconMonikerGuid**, **VSHPROPID_IconMonikerId**, **VSHPROPID_OpenFolderIconMonikerGuid**, **VSHPROPID_OpenFolderIconMonikerId** (jeśli oryginalny projekt jest używany **VSHPROPID_IconHandle** i **VSHPROPID_OpenFolderIconHandle**).
 
@@ -638,7 +640,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
    - Zalecane: Zmień nazwę symbolu AssetsGuid i symbol paska obrazu, aby dopasować go do użycia.
 
-   - Zamień identyfikator GUID każdego z **ContainedImage**na $ (ImageCatalogGuid), Zastąp każdy identyfikator **ContainedImage**z $ ( \<moniker> ) i Dodaj atrybut External = "true" do każdego **ContainedImage**
+   - Zamień identyfikator GUID każdego z **ContainedImage** na $ (ImageCatalogGuid), Zastąp każdy identyfikator **ContainedImage** z $ ( \<moniker> ) i Dodaj atrybut External = "true" do każdego **ContainedImage**
 
        - \<moniker> należy zastąpić **KnownMoniker** , który pasuje do obrazu, ale z "KnownMonikers". usunięte z nazwy.
 

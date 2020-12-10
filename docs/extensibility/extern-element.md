@@ -1,5 +1,7 @@
 ---
 title: Element extern | Microsoft Docs
+description: Element extern odwołuje się do wszystkich plików zewnętrznego nagłówka (. h) do scalenia z plikiem. vsct w czasie kompilacji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2cf6f9db77abaa7034af8d074b9833a4c1560f07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e975c3f721d65b64fc7994824406b0c9af13022
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711488"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994527"
 ---
 # <a name="extern-element"></a>Element extern
 Element extern odwołuje się do wszystkich plików zewnętrznego nagłówka (*. h*) do scalenia z plikiem *. vsct* w czasie kompilacji. Pliki, które mają zostać scalone, muszą znajdować się na ścieżce dołączania do kompilatora VSCT lub odwołania do [elementu include](../extensibility/include-element.md). Pliki mogą być innymi plikami *. vsct* lub plikami nagłówkowe języka C++.
@@ -40,7 +42,7 @@ Element extern odwołuje się do wszystkich plików zewnętrznego nagłówka (*.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|Tag|Wymagany. Ścieżka do pliku nagłówkowego:<br /><br /> href = "Stdidcmd. h"|
+|Tag|Wymagane. Ścieżka do pliku nagłówkowego:<br /><br /> href = "Stdidcmd. h"|
 |Warunek|Opcjonalny. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 |language|Opcjonalny. Język domyślny wszystkich [\<Strings>](../extensibility/strings-element.md) elementów w tabeli poleceń:<br /><br /> Language = "pl-US"|
 
@@ -68,7 +70,7 @@ Element extern odwołuje się do wszystkich plików zewnętrznego nagłówka (*.
 </CommandTable>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Pliki tabeli poleceń programu Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Jak pakietów VSPackage Dodawanie elementów interfejsu użytkownika](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)

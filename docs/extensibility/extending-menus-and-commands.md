@@ -1,5 +1,7 @@
 ---
 title: Rozszerzanie menu i poleceń | Microsoft Docs
+description: Informacje o poleceniach, które dodają akcje i procesy do programu Visual Studio. Szablon projektu pakietu VSPackage pokazuje, jak zaimplementować bardzo podstawowe polecenie.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c344d996c70012ef1516fa2bebe52394739bea35
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d99b1b0f5ba0f80af3aadcff0404357b57fbe265
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768585"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994605"
 ---
 # <a name="extend-menus-and-commands"></a>Poszerzanie menu i poleceń
 Polecenia służą do dodawania akcji i procesów do programu Visual Studio. W większości przypadków polecenia są wyświetlane w menu lub paskach narzędzi. Szablon projektu pakietu VSPackage pokazuje, jak zaimplementować bardzo podstawowe polecenie. Aby uzyskać nieco więcej, ale nadal podstawową implementację, zobacz [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md).

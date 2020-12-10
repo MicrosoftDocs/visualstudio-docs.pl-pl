@@ -1,6 +1,7 @@
 ---
 title: Migrowanie projektów rozszerzalności do programu Visual Studio 2017
 titleSuffix: ''
+description: Dowiedz się, jak uaktualnić projekty rozszerzalności do programu Visual Studio 2017 i jak uaktualnić manifest rozszerzenia w wersji 2 do manifestu VSIX w wersji 3.
 ms.custom: SEO-VS-2020
 ms.date: 11/09/2016
 ms.topic: how-to
@@ -11,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 9212add38f877e76aa3eaaa98c3d0d863c97d62e
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.openlocfilehash: 58d802ad97018a3d84e2b6a9f5e759db3a7cb2e3
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352286"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993968"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Instrukcje: Migrowanie projektów rozszerzalności do programu Visual Studio 2017
 
@@ -109,14 +110,14 @@ Zamiast bezpośrednio edytować manifest XML, można użyć karty nowe **wymagan
 
 ## <a name="update-debug-settings-for-the-project"></a>Aktualizuj ustawienia debugowania dla projektu
 
-Jeśli chcesz debugować rozszerzenie w eksperymentalnym wystąpieniu programu Visual Studio, upewnij się, że ustawienia projektu dla **Debug**  >  **akcji Rozpocznij** debugowanie mają wartość **Uruchom zewnętrzny program:** Value ustawiony jako plik *devenv.exe* instalacji programu Visual Studio 2017.
+Jeśli chcesz debugować rozszerzenie w eksperymentalnym wystąpieniu programu Visual Studio, upewnij się, że ustawienia projektu dla   >  **akcji Rozpocznij** debugowanie mają wartość **Uruchom zewnętrzny program:** Value ustawiony jako plik *devenv.exe* instalacji programu Visual Studio 2017.
 
 Może wyglądać następująco: *C:\Program Files (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\devenv.exe*
 
 ![Uruchom program zewnętrzny](media/start-external-program.png)
 
 > [!Note]
-> Akcja uruchamiania debugowania jest zazwyczaj przechowywana w pliku *. csproj. User* . Ten plik jest zwykle zawarty w pliku *. gitignore* , dlatego nie jest zwykle zapisywany z innymi plikami projektu w przypadku zatwierdzenia do kontroli źródła. W związku z tym w przypadku ściągnięcia rozwiązania z kontroli źródła prawdopodobnie projekt nie będzie miał wartości ustawionych dla akcji Rozpocznij. Nowe projekty VSIX utworzone za pomocą programu Visual Studio 2017 będą mieć utworzony plik *. csproj. User* z wartościami domyślnymi wskazującymi bieżący katalog instalacyjny programu Visual Studio. Jednak w przypadku migrowania rozszerzenia VSIX v2 prawdopodobnie plik *. csproj. User* będzie zawierał odwołania do poprzedniego katalogu instalacyjnego wersji programu Visual Studio. Ustawienie wartości **Debug**  >  **akcji Rozpocznij** debugowanie spowoduje, że podczas próby debugowania rozszerzenia zostanie uruchomione poprawne wystąpienie eksperymentalne programu Visual Studio.
+> Akcja uruchamiania debugowania jest zazwyczaj przechowywana w pliku *. csproj. User* . Ten plik jest zwykle zawarty w pliku *. gitignore* , dlatego nie jest zwykle zapisywany z innymi plikami projektu w przypadku zatwierdzenia do kontroli źródła. W związku z tym w przypadku ściągnięcia rozwiązania z kontroli źródła prawdopodobnie projekt nie będzie miał wartości ustawionych dla akcji Rozpocznij. Nowe projekty VSIX utworzone za pomocą programu Visual Studio 2017 będą mieć utworzony plik *. csproj. User* z wartościami domyślnymi wskazującymi bieżący katalog instalacyjny programu Visual Studio. Jednak w przypadku migrowania rozszerzenia VSIX v2 prawdopodobnie plik *. csproj. User* będzie zawierał odwołania do poprzedniego katalogu instalacyjnego wersji programu Visual Studio. Ustawienie wartości   >  **akcji Rozpocznij** debugowanie spowoduje, że podczas próby debugowania rozszerzenia zostanie uruchomione poprawne wystąpienie eksperymentalne programu Visual Studio.
 
 ## <a name="check-that-the-extension-builds-correctly-as-a-vsix-v3"></a>Sprawdź, czy rozszerzenie jest poprawnie skompilowane (jako VSIX v3)
 
@@ -187,7 +188,7 @@ Jeśli nie masz pewności, który składnik zawiera określony plik binarny, Pob
 
 ### <a name="vs2017-componentbinarymappingxlsx"></a>vs2017-ComponentBinaryMapping.xlsx
 
-Arkusz programu Excel zawiera cztery kolumny: **nazwę składnika**, **ComponentID**, **wersję**i **nazwy plików binarnych/nazw**.  Filtrów można użyć do wyszukiwania i znajdowania określonych składników i plików binarnych.
+Arkusz programu Excel zawiera cztery kolumny: **nazwę składnika**, **ComponentID**, **wersję** i **nazwy plików binarnych/nazw**.  Filtrów można użyć do wyszukiwania i znajdowania określonych składników i plików binarnych.
 
 W przypadku wszystkich odwołań należy najpierw określić, które z nich znajdują się w składniku podstawowego edytora (Microsoft. VisualStudio. Component. CoreEditor).  Minimalnym wymaganiem jest określenie podstawowego składnika edytora jako wymagań wstępnych dla wszystkich rozszerzeń. Odwołań, które nie znajdują się w podstawowym edytorze, Dodaj filtry w sekcji **nazwy plików binarnych/nazw** , aby znaleźć składniki, które mają dowolne z podzestawów tych odwołań.
 
@@ -198,7 +199,7 @@ Przykłady:
 
 ## <a name="specify-a-visual-studio-2017-release"></a>Określ wersję 2017 programu Visual Studio
 
-Jeśli rozszerzenie wymaga określonej wersji programu Visual Studio 2017, na przykład zależy od funkcji wydanej w 15,3, należy określić numer kompilacji w **INSTALLATIONTARGET**VSIX. Na przykład wersja 15,3 ma numer kompilacji "15.0.26730.3". W [tym miejscu](../install/visual-studio-build-numbers-and-release-dates.md)możesz zobaczyć mapowanie wydań, aby kompilować numery. Użycie numeru wydania "15,3" nie będzie działało poprawnie.
+Jeśli rozszerzenie wymaga określonej wersji programu Visual Studio 2017, na przykład zależy od funkcji wydanej w 15,3, należy określić numer kompilacji w **INSTALLATIONTARGET** VSIX. Na przykład wersja 15,3 ma numer kompilacji "15.0.26730.3". W [tym miejscu](../install/visual-studio-build-numbers-and-release-dates.md)możesz zobaczyć mapowanie wydań, aby kompilować numery. Użycie numeru wydania "15,3" nie będzie działało poprawnie.
 
 Jeśli rozszerzenie wymaga 15,3 lub nowszego, należy zadeklarować **wersję InstallationTarget** jako [15.0.26730.3, 16,0):
 

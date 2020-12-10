@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: otwieranie edytorów standardowych | Microsoft Docs'
+description: Dowiedz się, jak zaimplementować metodę OpenItem przy użyciu standardowego edytora. IDE określa standardowy edytor dla wyszukanego typu pliku.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c12e831654e7e138289d33b6e6f0409328e22c8c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff03ed508fc11377861556bc27bdc33aaa1ec069
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905786"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993773"
 ---
 # <a name="how-to-open-standard-editors"></a>Instrukcje: otwieranie edytorów standardowych
 Po otwarciu standardowego edytora, można pozwolić IDE określić standardowy edytor dla wyznaczony typ pliku, zamiast określać Edytor specyficzny dla projektu dla tego pliku.

@@ -1,5 +1,7 @@
 ---
 title: Etapy potoku grafiki | Microsoft Docs
+description: Rozwiąż problemy z renderowaniem, sprawdzając, jak wywołanie rysowania jest przekształcane na każdym etapie potoku grafiki Direct3D.
+ms.custom: SEO-VS-2020
 ms.date: 02/09/2017
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d697313289bbf00234764cc04603b7bc256f174
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 150c61e271e7951332848a601aaddc619a1c37e5
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72735464"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993929"
 ---
 # <a name="graphics-pipeline-stages"></a>Etapy potoku grafiki
 Okno etapy potoku grafiki ułatwia zrozumienie, w jaki sposób poszczególne wywołania rysowania są przekształcane przez poszczególne etapy potoku grafiki Direct3D.
@@ -50,7 +52,7 @@ Okno etapy potoku grafiki ułatwia zrozumienie, w jaki sposób poszczególne wyw
 
 #### <a name="to-debug-a-shader"></a>Aby debugować cieniowanie
 
-- W oknie **etapy potoku grafiki** zlokalizuj Etap cieniowania, który odnosi się do programu do cieniowania, który ma być debugowany. Następnie, poniżej obrazu podglądu, wybierz **Rozpocznij debugowanie**. Ten punkt wejścia do debugera HLSL jest domyślnie używany do pierwszego wywołania cieniowania dla odpowiedniego etapu — czyli pierwszego piksela, wierzchołka lub elementu pierwotnego, który jest przetwarzany przez program do cieniowania podczas tego wywołania. Za pomocą **historii pikseli grafiki**można uzyskać dostęp do wywołań tego modułu cieniującego w określonym pikselu lub wierzchołku.
+- W oknie **etapy potoku grafiki** zlokalizuj Etap cieniowania, który odnosi się do programu do cieniowania, który ma być debugowany. Następnie, poniżej obrazu podglądu, wybierz **Rozpocznij debugowanie**. Ten punkt wejścia do debugera HLSL jest domyślnie używany do pierwszego wywołania cieniowania dla odpowiedniego etapu — czyli pierwszego piksela, wierzchołka lub elementu pierwotnego, który jest przetwarzany przez program do cieniowania podczas tego wywołania. Za pomocą **historii pikseli grafiki** można uzyskać dostęp do wywołań tego modułu cieniującego w określonym pikselu lub wierzchołku.
 
 ### <a name="the-pipeline-stages"></a>Etapy potoku
  Okno etapy potoku wizualizuje tylko etapy potoku, które były aktywne podczas wywołania rysowania. Każdy etap potoku grafiki przekształca dane wejściowe z poprzedniego etapu i przekazuje wynik do kolejnego etapu. Pierwszy etap — Asembler wejściowy — pobiera dane indeksów i wierzchołków z aplikacji jako dane wejściowe; bardzo ostatni etap — scalanie danych wyjściowych — łączy nowo renderowane piksele z bieżącą zawartością bufor ramki lub obiektu docelowego renderowania jako dane wyjściowe, aby utworzyć obraz końcowy widoczny na ekranie.

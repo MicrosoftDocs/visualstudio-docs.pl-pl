@@ -1,5 +1,7 @@
 ---
 title: Rozszerzanie filtru Eksplorator rozwiązań | Microsoft Docs
+description: Dowiedz się, jak rozłożyć funkcję filtrowania Eksplorator rozwiązań, aby pokazać lub ukryć różne pliki w zestawie SDK programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af0824edd4188481bec8c0703d71043354f5dbcc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cde3377582c3bac0c27371e25f28e5151d641db1
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711572"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994566"
 ---
 # <a name="extend-the-solution-explorer-filter"></a>Rozwiń filtr Eksplorator rozwiązań
 Można rozłożyć funkcję filtrowania **Eksplorator rozwiązań** , aby pokazać lub ukryć różne pliki. Na przykład można utworzyć filtr, który pokazuje tylko pliki fabryki klas języka C# w **Eksplorator rozwiązań**, jak pokazano w tym instruktażu.
@@ -174,7 +176,7 @@ Można rozłożyć funkcję filtrowania **Eksplorator rozwiązań** , aby pokaza
 
      Usuń `ShowMessageBox()` również metodę.
 
-5. W *FileFilterPackage.cs*Zastąp kod w `Initialize()` metodzie następującymi:
+5. W *FileFilterPackage.cs* Zastąp kod w `Initialize()` metodzie następującymi:
 
     ```csharp
     protected override void Initialize()

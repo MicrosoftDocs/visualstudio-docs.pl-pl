@@ -1,5 +1,7 @@
 ---
 title: Rozszerzanie rozwiązań | Microsoft Docs
+description: Dowiedz się więcej na temat rozszerzania rozwiązań. Rozwiązanie to grupa składająca się z jednego lub wielu projektów, które współpracują ze sobą w celu utworzenia aplikacji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 5cb60183-2a87-4551-a19f-c7c4e65d60c0
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40a9591418dd3d2fb53bee29dfb8192a368e4047
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fa8fe001c66f1c37ce9c823d485dcc60e88815a2
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711725"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994592"
 ---
 # <a name="extend-solutions"></a>Rozszeranie rozwiązań
 Rozwiązanie to grupa składająca się z jednego lub wielu projektów, które współpracują ze sobą w celu utworzenia aplikacji.

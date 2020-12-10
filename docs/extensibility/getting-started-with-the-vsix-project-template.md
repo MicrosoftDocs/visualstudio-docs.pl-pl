@@ -1,5 +1,7 @@
 ---
 title: Wprowadzenie z szablonem projektu VSIX | Microsoft Docs
+description: Dowiedz się, jak utworzyć rozszerzenie lub spakować istniejące rozszerzenie na potrzeby wdrożenia przy użyciu szablonu projektu VSIX.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18ca9672b22120718f63638d8668812d0e42e41f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c6c7c2e12f01b008be6937a8c974f2eea183d594
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905885"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994345"
 ---
 # <a name="get-started-with-the-vsix-project-template"></a>Wprowadzenie do szablonu projektu VSIX
 
@@ -35,7 +37,7 @@ Możesz użyć szablonu projektu VSIX, aby utworzyć rozszerzenie lub spakować 
 
     2. W menu **projekt** kliknij polecenie **Eksportuj szablon**. Wykonaj kroki kreatora.
 
-         Plik *. zip* jest tworzony w programie *%USERPROFILE%\My Documents\Visual Studio {Version} \Moje wyeksportowane szablony \\ *.
+         Plik *. zip* jest tworzony w programie *%USERPROFILE%\My Documents\Visual Studio {Version} \Moje wyeksportowane szablony \\*.
 
 2. Utwórz pusty projekt VSIX.
 
@@ -43,7 +45,7 @@ Możesz użyć szablonu projektu VSIX, aby utworzyć rozszerzenie lub spakować 
 
 3. Dodaj plik *. zip* do projektu. Ustaw właściwość **Kopiuj do katalogu wyjściowego** na `Copy Always` .
 
-4. W **Eksplorator rozwiązań**kliknij dwukrotnie plik source. *Extension. vsixmanifest* , aby otworzyć go w **Projektancie manifestów VSIX**, a następnie wprowadź następujące zmiany:
+4. W **Eksplorator rozwiązań** kliknij dwukrotnie plik source. *Extension. vsixmanifest* , aby otworzyć go w **Projektancie manifestów VSIX**, a następnie wprowadź następujące zmiany:
 
     - W polu **Nazwa produktu** ustaw wartość **mój szablon projektu**.
 

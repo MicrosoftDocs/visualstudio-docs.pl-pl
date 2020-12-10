@@ -1,6 +1,6 @@
 ---
-title: 'Projektant schematu XML: pobieranie zestawu schematów — Omówienie przy użyciu widoku wykresu'
-description: Dowiedz się, jak używać widoku grafu w Eksploratorze schematu XML, aby wyświetlić widok wysokiego poziomu węzłów w zestawie schematów i relacje między węzłami.
+title: Omówienie zestawu schematów
+description: 'Projektant schematu XML: informacje na temat używania widoku grafu w Eksploratorze schematu XML, aby wyświetlić widok wysokiego poziomu węzłów w zestawie schematów i relacje między węzłami.'
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,14 +10,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 553b9f2d84f70c75ebcee40cdffe044237c23a5f
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 699167f8fe3662bbb162706f3f9fc6e5d53d82dc
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398491"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995294"
 ---
-# <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Instrukcje: uzyskiwanie przeglądu zestawu schematu przy użyciu widoku wykresu
+# <a name="how-to-get-an-overview-of-a-schema-set-by-using-the-graph-view"></a>Instrukcje: uzyskiwanie przeglądu zestawu schematu przy użyciu widoku wykresu
 
 W tym temacie opisano, jak za pomocą [widoku wykresu](../xml-tools/graph-view.md) wyświetlić widok wysokiego poziomu węzłów w zestawie schematów i relacje między węzłami.
 

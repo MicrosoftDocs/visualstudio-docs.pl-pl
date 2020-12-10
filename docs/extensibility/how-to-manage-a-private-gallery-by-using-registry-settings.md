@@ -1,5 +1,6 @@
 ---
 title: Zarządzanie galerią prywatną przy użyciu ustawień rejestru
+description: Dowiedz się, jak kontrolować dostęp do kontrolek, szablonów i narzędzi w galerii programu Visual Studio, galerii przykładów lub w galeriach prywatnych.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2dcbacbe415eac6829dc51e95442905bba932d6a
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: d15d845f07310e3efcba6f05538a2207d9c416e4
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038546"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994015"
 ---
 # <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Instrukcje: Zarządzanie galerią prywatną przy użyciu ustawień rejestru
 Jeśli jesteś administratorem lub deweloperem rozszerzenia izolowanej powłoki, możesz kontrolować dostęp do kontrolek, szablonów i narzędzi w galerii programu Visual Studio, galerii przykładów lub w galeriach prywatnych. Aby udostępnić galerię lub niedostępny, Utwórz plik *. pkgdef* , który opisuje zmodyfikowane klucze rejestru i ich wartości.
@@ -27,7 +28,7 @@ Jeśli jesteś administratorem lub deweloperem rozszerzenia izolowanej powłoki,
 
 ```
 [$RootKey$\ExtensionManager\Repositories\{UniqueGUID}]
-@={URI}  (REG_SZ)
+@={URI}  (REG_SZ)
 Disabled=0 | 1 (DWORD)
 Priority=0 (highest priority) ... MaxInt (lowest priority) (DWORD) (uint)
 Protocol=Atom Feed|Sharepoint (REG_SZ)
@@ -68,5 +69,5 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Galerie prywatne](../extensibility/private-galleries.md)

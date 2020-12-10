@@ -1,5 +1,6 @@
 ---
 title: Użyj AsyncPackage do załadowania pakietów VSPackage w tle
+description: Dowiedz się, w jaki sposób używać klasy AsyncPackage, która umożliwia ładowanie pakietów w wątku w tle, co może zapobiec problemom z odpowiedziami z operacji we/wy dysku.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -8,18 +9,18 @@ author: acangialosi
 ms.author: anthc
 ms.workload:
 - vssdk
-ms.openlocfilehash: fef717ba7ec135038dcb35348eff870d9eeb3e33
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: e8b5917a42e7083f7357ce76762bf8b51a1b60f9
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037292"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993487"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Instrukcje: używanie AsyncPackage do ładowania pakietów VSPackage w tle
 Załadowanie i zainicjowanie pakietu programu VS może spowodować powstanie we/wy dysku. Jeśli takie operacje we/wy wystąpią w wątku interfejsu użytkownika, może to prowadzić do problemów z czasem odpowiedzi. W programie Visual Studio 2015 wprowadzono  <xref:Microsoft.VisualStudio.Shell.AsyncPackage> klasę, która umożliwia ładowanie pakietów w wątku w tle.
 
 ## <a name="create-an-asyncpackage"></a>Utwórz AsyncPackage
- Możesz rozpocząć od utworzenia projektu VSIX (**plik**  >  **Nowy**  >  **projekt**  >  **Visual C#**  >  **rozszerzalności**Visual C#  >  ,**Projekt VSIX**) i dodanie pakietu VSPackage do projektu (kliknij prawym przyciskiem myszy projekt i **Dodaj**  >  **nowy element**  >  **C# item**  >  **Rozszerzalny**element kodu w języku C#  >  **Visual Studio Package**). Następnie możesz utworzyć usługi i dodać te usługi do pakietu.
+ Możesz rozpocząć od utworzenia projektu VSIX (**plik**  >  **Nowy**  >  **projekt**  >    >  **rozszerzalności** Visual C#  >  ,**Projekt VSIX**) i dodanie pakietu VSPackage do projektu (kliknij prawym przyciskiem myszy projekt i **Dodaj**  >  **nowy element**  >    >  **Rozszerzalny** element kodu w języku C#  >  ). Następnie możesz utworzyć usługi i dodać te usługi do pakietu.
 
 1. Utwórz pakiet z programu <xref:Microsoft.VisualStudio.Shell.AsyncPackage> .
 

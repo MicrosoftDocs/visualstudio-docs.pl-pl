@@ -1,5 +1,5 @@
 ---
-title: Organizowanie obiektów w kontenery układów w projektancie XAML
+title: Organizowanie obiektów w kontenery układów
 description: Poznaj panele i kontrolki układu w projektant XAML, które są używane do porządkowania obiektów na stronie, takich jak siatka, Kanwa, obramowanie i Viewbox.
 ms.custom: SEO-VS-2020
 ms.date: 07/17/2020
@@ -8,12 +8,12 @@ ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 6df200c5adb4993d13e896eaa6d2041e0e9db044
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 1dbde9c270e0b83a5d85ef3b95c8fb438e43e1b1
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047349"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995528"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organizowanie obiektów w kontenery układów w projektancie XAML
 
@@ -21,7 +21,7 @@ W tym artykule opisano panele i kontrolki układu dla projektant XAML.
 
 Załóżmy, gdzie obiekty mają być wyświetlane na &mdash; obiektach stron, takich jak obrazy, przyciski i wideo. Być może chcesz, aby były wyświetlane w wierszach i kolumnach, w jednym wierszu w pionie lub w poziomie lub w stałej pozycji.
 
-Po dodaniu szansy myślisz, jak może wyglądać Strona, wybierz Panel układu. Wszystkie strony zaczynają się od siebie, ponieważ potrzebujesz czegoś, do którego chcesz dodać obiekty. Domyślnie jest to **Siatka** , ale można ją zmienić.
+Po dodaniu szansy myślisz, jak może wyglądać Strona, wybierz Panel układu. Wszystkie strony zaczynają się od siebie, ponieważ potrzebujesz czegoś, do którego chcesz dodać obiekty. Domyślnie jest to **Siatka**, ale można ją zmienić.
 
 Panele układów ułatwiają rozmieszczanie obiektów na stronie, ale nie wykonują tych czynności. Ułatwiają one projektowanie dla różnych rozmiarów i rozdzielczości ekranu. Gdy użytkownicy uruchamiają aplikację, wszystko w panelu układu zmienia rozmiar tak, aby pasował do zawartości ekranu na urządzeniu. Oczywiście, jeśli nie chcesz, aby układ został przesłonięty, możesz przesłonić to zachowanie dla części układu lub całego układu. Możesz użyć właściwości Height i Width, aby to sterować.
 
@@ -67,7 +67,7 @@ Rozmieść obiekty sekwencyjnie od lewej do prawej. Gdy panel nie jest widoczny 
 
 ### <a name="dockpanel"></a>DockPanel
 
-Rozmieść obiekty w taki sposób, aby stały się one lub *zadokowane* , do jednej krawędzi panelu.
+Rozmieść obiekty w taki sposób, aby stały się one lub *zadokowane*, do jednej krawędzi panelu.
 
 (Dostępne tylko dla projektów WPF).
 
@@ -83,23 +83,23 @@ Następujące kontrolki układu są najbardziej popularne, ale istnieją inne. W
 
 ### <a name="border"></a>Obramowanie
 
-Utwórz obramowanie, tło lub oba elementy wokół obiektu. Do **obramowania** można dodać tylko jeden obiekt. Jeśli chcesz zastosować obramowanie lub tło dla więcej niż jednego obiektu, Dodaj panel układu do **obramowania** . Następnie Dodaj obiekty do tego panelu lub kontrolki.
+Utwórz obramowanie, tło lub oba elementy wokół obiektu. Do **obramowania** można dodać tylko jeden obiekt. Jeśli chcesz zastosować obramowanie lub tło dla więcej niż jednego obiektu, Dodaj panel układu do **obramowania**. Następnie Dodaj obiekty do tego panelu lub kontrolki.
 
 ![Kontrolka układu obramowania](../designers/media/e761238b-99fd-43c5-bbc4-57538b8289ff.png)
 
 ### <a name="popup"></a>Okno podręczne
 
-Pokaż informacje lub opcje dla użytkowników w oknie. Do **okna podręcznego** można dodać tylko jeden obiekt. Domyślnie **okno podręczne** zawiera **siatkę** , ale można to zmienić.
+Pokaż informacje lub opcje dla użytkowników w oknie. Do **okna podręcznego** można dodać tylko jeden obiekt. Domyślnie **okno podręczne** zawiera **siatkę**, ale można to zmienić.
 
 ### <a name="scrollviewer"></a>ScrollViewer
 
-Zezwól użytkownikom na przewijanie w dół strony lub obszaru strony. Można dodać tylko jeden obiekt do **ScrollViewer** , więc warto dodać Panel układu, taki jak **Siatka** lub **StackPanel** .
+Zezwól użytkownikom na przewijanie w dół strony lub obszaru strony. Można dodać tylko jeden obiekt do **ScrollViewer**, więc warto dodać Panel układu, taki jak **Siatka** lub **StackPanel**.
 
 ![Kontrolka układu ScrollViewer](../designers/media/06b326d4-f23d-41a6-b26b-e1aff37572a7.png)
 
 ### <a name="viewbox"></a>Okno widoku
 
-Skaluj obiekty w taki sam sposób, jak w przypadku kontrolki powiększenia. Do **Viewbox** można dodać tylko jeden obiekt. Jeśli chcesz zastosować ten efekt do więcej niż jednego obiektu, Dodaj panel układu do **Viewbox** , a następnie Dodaj kontrolki do tego panelu układu.
+Skaluj obiekty w taki sam sposób, jak w przypadku kontrolki powiększenia. Do **Viewbox** można dodać tylko jeden obiekt. Jeśli chcesz zastosować ten efekt do więcej niż jednego obiektu, Dodaj panel układu do **Viewbox**, a następnie Dodaj kontrolki do tego panelu układu.
 
 ![Kontrolka układu ViewBox](../designers/media/f5b13c66-d918-4141-8a16-bd8f8628687a.png)
 

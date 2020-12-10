@@ -1,5 +1,7 @@
 ---
 title: Stan grafiki | Microsoft Docs
+description: Rozwiązywanie problemów z renderowaniem przez wyświetlanie stanu grafiki dla każdego wywołania rysowania. Elementy stanu, które zmieniły się od poprzedniego wywołania są wyróżnione.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a07e198c6ff4e432f708ac1751e69bbef77a22c4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: de8f3c356cfe05aade3e4f2197b3f7429967a259
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67823774"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994018"
 ---
 # <a name="graphics-state"></a>Stan grafiki
 Okno stanu w diagnostyce grafiki programu Visual Studio pomaga zrozumieć stan grafiki, który jest aktywny w chwili obecnej zdarzenia, na przykład wywołanie rysowania.

@@ -1,6 +1,6 @@
 ---
-title: Projektant przepływu pracy — Projektant działań TerminateWorkflow
-description: Dowiedz się, jak za pomocą projektanta działań TerminateWorkflow utworzyć i skonfigurować działanie TerminateWorkflow.
+title: TerminateWorkflow, Projektant działań
+description: W Projektant przepływu pracy należy dowiedzieć się, jak za pomocą projektanta działań TerminateWorkflow utworzyć i skonfigurować działanie TerminateWorkflow.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5af1f8656e796d9551e1d140b07868551d563a90
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 6fc52153ca71320ebe2ebc1e1a12780e37cac08e
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433872"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995454"
 ---
 # <a name="terminateworkflow-activity-designer"></a>TerminateWorkflow, projektant działań
 
@@ -29,7 +29,7 @@ Projektant działań **TerminateWorkflow** służy do tworzenia i konfigurowania
 
 ### <a name="using-the-terminateworkflow-activity-designer"></a>Korzystanie z projektanta działań TerminateWorkflow
 
-Projektanta działań **TerminateWorkflow** można znaleźć w kategorii **środowiska uruchomieniowego** **przybornika** , do którego uzyskuje się dostęp przez kliknięcie karty **przybornika** (można również wybrać **Przybornik** z menu **Widok** lub CTRL + ALT + X).
+Projektanta działań **TerminateWorkflow** można znaleźć w kategorii **środowiska uruchomieniowego** **przybornika**, do którego uzyskuje się dostęp przez kliknięcie karty **przybornika** (można również wybrać **Przybornik** z menu **Widok** lub CTRL + ALT + X).
 
 Projektanta działań **TerminateWorkflow** można przeciągnąć z **przybornika** i porzucić na Projektant przepływu pracy powierzchnię, wszędzie tam, gdzie działania są zwykle umieszczane, na przykład wewnątrz <xref:System.Activities.Statements.Sequence> . Spowoduje to utworzenie <xref:System.Activities.Statements.TerminateWorkflow> działania z domyślną wartością **DisplayName** elementu TerminateWorkflow. <xref:System.Activities.Activity.DisplayName%2A>Można edytować w nagłówku projektanta działań **TerminateWorkflow** lub w polu **DisplayName** siatki właściwości.
 

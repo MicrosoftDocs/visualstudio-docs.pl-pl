@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Uzyskiwanie usługi | Microsoft Docs'
+description: Dowiedz się, jak uzyskać dostęp do różnych funkcji usługi Visual Studio. Większość usług można uzyskać za pomocą pakietu VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a401103112096a1089b59ba3733d19480f93e891
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0a8f97900f1d400f3208a24ccc45ff9bbd774aeb
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905836"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994085"
 ---
 # <a name="how-to-get-a-service"></a>Instrukcje: Uzyskiwanie usługi
 
@@ -29,9 +31,9 @@ Gdy program Visual Studio ładuje <xref:Microsoft.VisualStudio.Shell.Package> , 
 
 1. Każde rozszerzenie programu Visual Studio rozpoczyna się od projektu wdrożenia VSIX, który będzie zawierać zasoby rozszerzenia. Utwórz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projekt VSIX o nazwie `GetServiceExtension` . Szablon projektu VSIX można znaleźć w oknie dialogowym **Nowy projekt** , wyszukując frazę "VSIX".
 
-2. Teraz Dodaj niestandardowy szablon elementu polecenia o nazwie **GetServiceCommand**. W oknie dialogowym **Dodaj nowy element** przejdź do rozszerzalności **Visual C#**  >  **Extensibility** i wybierz **polecenie niestandardowe**. W polu **Nazwa** w dolnej części okna Zmień nazwę pliku polecenia na *GetServiceCommand.cs*. Aby uzyskać więcej informacji na temat tworzenia polecenia niestandardowego, [Utwórz rozszerzenie za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md)
+2. Teraz Dodaj niestandardowy szablon elementu polecenia o nazwie **GetServiceCommand**. W oknie dialogowym **Dodaj nowy element** przejdź do rozszerzalności **Visual C#**  >   i wybierz **polecenie niestandardowe**. W polu **Nazwa** w dolnej części okna Zmień nazwę pliku polecenia na *GetServiceCommand.cs*. Aby uzyskać więcej informacji na temat tworzenia polecenia niestandardowego, [Utwórz rozszerzenie za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 
-3. W *GetServiceCommand.cs*Usuń treść `MenuItemCommand` metody i Dodaj następujący kod:
+3. W *GetServiceCommand.cs* Usuń treść `MenuItemCommand` metody i Dodaj następujący kod:
 
    ```csharp
    IVsActivityLog activityLog = ServiceProvider.GetService(typeof(SVsActivityLog)) as IVsActivityLog;
@@ -70,7 +72,7 @@ Implementuje obiekt DTE <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvide
 Oto jak uzyskać usługę z obiektu DTE.
 
 ```csharp
-// Start with the DTE object, for example: 
+// Start with the DTE object, for example: 
 // using EnvDTE;
 // DTE dte = (DTE)GetService(typeof(DTE));
 
