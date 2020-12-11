@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8e0718eb01f422ad435492304e77d73c14b4dee
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 2956372882d4449345d026e691a12afb2988054a
+ms.sourcegitcommit: 6ef4e46c786c5bbcc52cd9c30e5ddfca12ea8b3c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211178"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97050833"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Jak zgłosić problem z programem Visual Studio lub Instalator programu Visual Studio
 
@@ -23,7 +23,7 @@ ms.locfileid: "91211178"
 
 Możesz zgłosić problem z programu Visual Studio lub jego Instalatora. Wbudowane narzędzie do przesyłania opinii pozwala łatwo dodać informacje diagnostyczne ułatwiające zespołom programu Visual Studio diagnozowanie i rozwiązywanie problemów. Poniżej przedstawiono procedurę zgłaszania problemu.
 
-1. **W programie Visual Studio**wybierz ikonę opinii w prawym górnym rogu, a następnie wybierz pozycję Zgłoś problem. Możesz również uzyskać dostęp do narzędzia opinii z menu **Pomoc**w  >  **wysyłaniu opinii**  >  **Zgłoś problem**.
+1. **W programie Visual Studio** wybierz ikonę opinii w prawym górnym rogu, a następnie wybierz pozycję Zgłoś problem. Możesz również uzyskać dostęp do narzędzia opinii z menu **Pomoc** w  >  **wysyłaniu opinii**  >  **Zgłoś problem**.
 ![Zgłoś problem w oknie podręcznym w społeczności deweloperów programu Visual Studio ](media/feedback-button.png) , zgłoś problem w programie **Instalator programu Visual Studio** , jeśli nie możesz zainstalować programu Visual Studio lub nie możesz uzyskać dostępu do narzędzia opinii w programie Visual Studio.  W instalatorze wybierz ikonę opinii w prawym górnym rogu, a następnie wybierz pozycję Zgłoś problem.
 ![Zgłoś problem w oknie podręcznym w społeczności deweloperów programu Visual Studio](media/installer.png)
 
@@ -65,7 +65,7 @@ Możesz zgłosić problem z programu Visual Studio lub jego Instalatora. Wbudowa
 
 Gdy w przypadku problemu brakuje ważnych informacji, przypiszemy stan **więcej informacji** . Prosimy o problem z konkretnymi informacjami, których potrzebujemy, i otrzymasz powiadomienie e-mail. Jeśli nie otrzymasz informacji w ciągu siedmiu dni, wyślemy Ci przypomnienie. Po tym czasie będziemy zamykać bilet po 14 dniach braku aktywności.
 
-1. Aby wyświetlić wszystkie raporty w stanie **więcej informacji** , Skorzystaj z linku w wiadomości e-mail lub przejdź do strony Moje opinie.
+1. Skorzystaj z linku w wiadomości e-mail do raportu problemu lub przejdź do strony głównej, aby zobaczyć wszystkie raporty w stanie **więcej informacji** .
 
     ![Moja opinia](../ide/media/feedback-my-feedback.png)
 
@@ -85,7 +85,7 @@ Jeśli nie chcesz lub nie możesz użyć programu Visual Studio, aby zgłosić p
 
 Jeśli nie masz problemu z raportowaniem, ale chcesz zasugerować funkcję, istnieje już miejsce. Aby uzyskać więcej informacji, zobacz stronę [Sugeruj funkcję](https://developercommunity.visualstudio.com/content/idea/post.html?space=8) .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 * [Wskazówki dotyczące społeczności deweloperów](./developer-community-guidelines.md)
 * [Opcje opinii programu Visual Studio](../ide/feedback-options.md)
