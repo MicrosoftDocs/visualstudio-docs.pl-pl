@@ -1,7 +1,6 @@
 - name: MSBuild
+  href: msbuild.md
   items:
-    - name: MSBuild
-      href: msbuild.md
     - name: Co nowego w programie MSBuild 16.0
       href: whats-new-msbuild-16-0.md
     - name: Co nowego w programie MSBuild 15.0
