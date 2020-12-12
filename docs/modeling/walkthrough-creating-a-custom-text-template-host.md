@@ -1,5 +1,7 @@
 ---
 title: 'Wskazówki: tworzenie niestandardowego hosta szablonu tekstowego'
+description: Dowiedz się, jak można napisać hosta niestandardowego, jeśli chcesz użyć funkcji transformacji szablonu tekstu spoza programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 3979f93de6040078a5b1e4315cadc4f7faa4728e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1cc1681d7c761aca123217cbf28cc33b0dbb584c
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532226"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361056"
 ---
 # <a name="walkthrough-create-a-custom-text-template-host"></a>Przewodnik: tworzenie niestandardowego hosta szablonu tekstowego
 
@@ -801,7 +803,7 @@ Aby przetestować niestandardowego hosta, napisz szablon tekstowy, a następnie 
 
      Aplikacja niestandardowego hosta uruchamia się i wykonuje proces przekształcania szablonu tekstu.
 
-5. W **Eksploratorze Windows**przejdź do folderu, który zawiera plik TestTemplate.tt.
+5. W **Eksploratorze Windows** przejdź do folderu, który zawiera plik TestTemplate.tt.
 
      Ten folder zawiera także plik TestTemplate1.txt.
 

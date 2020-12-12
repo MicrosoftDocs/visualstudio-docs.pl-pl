@@ -1,5 +1,7 @@
 ---
 title: 'Wskazówki: tworzenie niestandardowego procesora dyrektywy'
+description: Dowiedz się, jak za pomocą programu Visual Studio napisać niestandardowe procesory dyrektywy w celu dostosowania szablonów tekstowych.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,16 +15,16 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 4efe12b9871dc07bd7427e1567973701d3c6c527
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: efe32db6f8d5aadb815d845bdc9f06be36ec06c9
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532239"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361888"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>Przewodnik: tworzenie niestandardowego procesora dyrektywy
 
-*Procesory dyrektywy* działają przez dodanie kodu do *wygenerowanej klasy transformacji*. W przypadku wywołania *dyrektywy* z *szablonu tekstu*reszta kodu, który można napisać w szablonie tekstu, może opierać się na funkcjach dostępnych w dyrektywie.
+*Procesory dyrektywy* działają przez dodanie kodu do *wygenerowanej klasy transformacji*. W przypadku wywołania *dyrektywy* z *szablonu tekstu* reszta kodu, który można napisać w szablonie tekstu, może opierać się na funkcjach dostępnych w dyrektywie.
 
 Można napisać własne niestandardowe procesory dyrektyw. Dzięki temu można dostosowywać szablony tekstowe. Aby utworzyć niestandardowy procesor dyrektywy, należy utworzyć klasę, która dziedziczy po obu <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> lub <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> .
 
@@ -599,7 +601,7 @@ End Property
     End Namespace
     ```
 
-4. W przypadku tylko Visual Basic Otwórz menu **projekt** , a następnie kliknij pozycję **Właściwości CustomDP**. Na karcie **aplikacja** w **obszarze główny obszar nazw**usuń wartość domyślną `CustomDP` .
+4. W przypadku tylko Visual Basic Otwórz menu **projekt** , a następnie kliknij pozycję **Właściwości CustomDP**. Na karcie **aplikacja** w **obszarze główny obszar nazw** usuń wartość domyślną `CustomDP` .
 
 5. W menu **File** kliknij pozycję **Save All**.
 
@@ -637,9 +639,9 @@ W tej sekcji dodajesz klucz dla niestandardowego procesora dyrektywy do rejestru
 
 1. Uruchom `regedit` polecenie przy użyciu menu Start lub wiersza polecenia.
 
-2. Przejdź do lokalizacji **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio \\ \* 0 \ TextTemplating\DirectiveProcessors**i kliknij węzeł.
+2. Przejdź do lokalizacji **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ \* 0 \ TextTemplating\DirectiveProcessors**, a następnie kliknij węzeł.
 
-   W systemach 64-bitowych należy używać **HKEY_LOCAL_MACHINE \software\wow6432node\microsoft\visualstudio \\ \* . 0 \ TextTemplating\DirectiveProcessors**
+   W systemach 64-bitowych Użyj **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\\ \* . 0 \ TextTemplating\DirectiveProcessors**
 
 3. Dodaj nowy klucz o nazwie CustomDirectiveProcessor.
 
@@ -830,11 +832,11 @@ W tym przykładzie szablon tekstowy wywołuje dyrektywę i przekazuje nazwę pli
 
 ### <a name="to-test-the-directive-processor"></a>Aby przetestować procesor dyrektywy
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję TestDP.TT, a następnie kliknij polecenie **Uruchom narzędzie niestandardowe**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję TestDP.TT, a następnie kliknij polecenie **Uruchom narzędzie niestandardowe**.
 
    W przypadku użytkowników Visual Basic TestDP.txt mogą nie być wyświetlane w **Eksplorator rozwiązań** domyślnie. Aby wyświetlić wszystkie pliki przypisane do projektu, otwórz menu **projekt** , a następnie kliknij przycisk **Pokaż wszystkie pliki**.
 
-2. W **Eksplorator rozwiązań**rozwiń węzeł TestDP.txt, a następnie kliknij dwukrotnie przycisk TestDP.txt, aby otworzyć go w edytorze.
+2. W **Eksplorator rozwiązań** rozwiń węzeł TestDP.txt, a następnie kliknij dwukrotnie przycisk TestDP.txt, aby otworzyć go w edytorze.
 
     Wyświetli się wygenerowany tekst wyjściowy. Dane wyjściowe powinny wyglądać następująco:
 
@@ -961,6 +963,6 @@ Po przetestowaniu niestandardowego procesora dyrektywy możesz dodać kod HTML d
 
 2. W menu **plik** kliknij polecenie **Zapisz TestDP.txt**.
 
-3. Aby wyświetlić dane wyjściowe w przeglądarce, w **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję TestDP.htm, a następnie kliknij pozycję **Wyświetl w przeglądarce**.
+3. Aby wyświetlić dane wyjściowe w przeglądarce, w **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję TestDP.htm, a następnie kliknij pozycję **Wyświetl w przeglądarce**.
 
    Dane wyjściowe powinny być takie same jak oryginalne teksty, z tą różnicą, że jest on stosowany w formacie HTML. Nazwy poszczególnych elementów są wyświetlane pogrubione.

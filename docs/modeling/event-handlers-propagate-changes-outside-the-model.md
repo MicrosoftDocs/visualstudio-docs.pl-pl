@@ -1,5 +1,7 @@
 ---
 title: Programy obsługi zdarzeń propagujące zmiany poza modelem
+description: Zapoznaj się z tym, że w zestawie SDK wizualizacji i modelowania można definiować programy obsługi zdarzeń magazynu, aby propagować zmiany do zasobów poza magazynem.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76234eea6c689459728e0da876b6a9cce7c290a5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b0780007361115aa485b91db70cc413029a6f8f
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114591"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361680"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Programy obsługi zdarzeń propagujące zmiany poza modelem
 

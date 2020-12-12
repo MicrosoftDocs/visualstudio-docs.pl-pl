@@ -1,5 +1,7 @@
 ---
 title: Pisanie szablonu tekstowego T4
+description: Dowiedz się więcej o szablonach tekstu T4 i sposobach pisania szablonu tekstu zawierającego dyrektywy, bloki tekstu i bloki sterujące.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1990377bffe0c663a70520c07bd3ab60b91f8bbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 086e7ecf568d043142cdc80f020897ed1793b86c
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593489"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361225"
 ---
 # <a name="writing-a-t4-text-template"></a>Pisanie szablonu tekstowego T4
 Szablon tekstu zawiera tekst, który zostanie z niego wygenerowany. Na przykład szablon, który tworzy stronę sieci Web, będzie zawierał " \<html> ..." i wszystkie inne standardowe części strony HTML. Wstawione do szablonu są *blokami sterowania*, które są fragmentami kodu programu. Bloki sterujące zawierają zmienne wartości i umożliwiają warunkowość oraz powtarzalność części tekstu.
@@ -238,7 +240,7 @@ private void WriteSquareLine(int i)
 
  **Załaduj plik jako model nawigacji**. Bardziej zaawansowaną metodą jest odczyt danych jako modelu, po którym może się poruszać kod źródłowy szablonu tekstu. Na przykład można wczytać plik XML i nawigować po nim przy użyciu wyrażeń XPath. Można również użyć [xsd.exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe) , aby utworzyć zestaw klas, za pomocą których można odczytywać dane XML.
 
- **Edytuj plik modelu w diagramie lub formularzu.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] oferuje narzędzia, które pozwalają edytować model jako diagram lub formularz systemu Windows. Ułatwia to przedyskutowanie modelu z użytkownikami wygenerowanej aplikacji. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] tworzy również zestaw klas o jednoznacznie określonym typie, które odzwierciedlają strukturę modelu. Aby uzyskać więcej informacji, zobacz [generowanie kodu z języka specyficznego dla domeny](../modeling/generating-code-from-a-domain-specific-language.md).
+ **Edytuj plik modelu w diagramie lub formularzu.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] oferuje narzędzia, które pozwalają edytować model jako diagram lub formularz systemu Windows. Ułatwia to przedyskutowanie modelu z użytkownikami wygenerowanej aplikacji. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] tworzy również zestaw klas o jednoznacznie określonym typie, które odzwierciedlają strukturę modelu. Aby uzyskać więcej informacji, zobacz [generowanie kodu z poziomu Domain-Specific języka](../modeling/generating-code-from-a-domain-specific-language.md).
 
 ### <a name="relative-file-paths-in-design-time-templates"></a>Względne ścieżki plików w szablonach czasu projektowania
  Jeśli chcesz odwołać się do pliku w lokalizacji względem szablonu tekstu, w [szablonie tekstu czasu projektowania](../modeling/design-time-code-generation-by-using-t4-text-templates.md)Użyj `this.Host.ResolvePath()` . Ponadto w dyrektywie `hostspecific="true"` trzeba ustawić wartość `template`:

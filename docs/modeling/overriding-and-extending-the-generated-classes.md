@@ -1,5 +1,7 @@
 ---
 title: Zastępowanie i rozszerzanie wygenerowanych klas
+description: Dowiedz się, w jaki sposób Definicja DSL jest platformą, na której można utworzyć zaawansowany zestaw narzędzi opartych na języku specyficznym dla domeny.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3374f67f4fba11543e3dbbca47fef621dd2e714
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c1b36a7524530df7f9a18ce9abe1de2d430156d6
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595894"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362096"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>Przesłoń i rozwiń wygenerowane klasy
 
@@ -46,7 +48,7 @@ public partial class Book
 
 Aby poznać metody, które można przesłonić, wpisz **przesłonięcie** w klasie, po którym następuje spacja. Etykietka narzędzia IntelliSense informuje, jakie metody można przesłaniać.
 
-### <a name="double-derived-classes"></a>Klasy pochodne podwójnie
+### <a name="double-derived-classes"></a>Klasy Double-Derived
 
 Większość metod w wygenerowanych klasach jest dziedziczona ze stałego zestawu klas w przestrzeni nazw modelowania. Jednak niektóre metody są zdefiniowane w wygenerowanym kodzie. Zwykle oznacza to, że nie można ich zastąpić; nie można przesłonić w jednej częściowej klasie metod, które są zdefiniowane w innej częściowej definicji tej samej klasy.
 

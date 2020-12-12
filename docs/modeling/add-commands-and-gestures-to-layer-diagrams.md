@@ -1,5 +1,7 @@
 ---
 title: Dodawanie poleceń i gestów do diagramów zależności
+description: Dowiedz się, jak definiować polecenia menu prawym przyciskiem myszy i programy obsługi gestów w diagramach zależności w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ff23e07bd6e81b11d94a8256c33b57b4b0c558c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc91e2c160d2081db868daf8d8dbaeb041172297
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85531394"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362226"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Dodawanie poleceń i gestów do diagramów zależności
 
@@ -73,15 +75,15 @@ Jeśli chcesz utworzyć jeden VSIX zawierający polecenia, moduły sprawdzania w
 
 2. Dodaj lub Utwórz projekt VSIX w rozwiązaniu. Projekt VSIX zawiera plik o nazwie **source. Extension. vsixmanifest**.
 
-3. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt VSIX i wybierz polecenie **Ustaw jako projekt startowy**.
+3. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt VSIX i wybierz polecenie **Ustaw jako projekt startowy**.
 
-4. W polu **source. Extension. vsixmanifest**w obszarze **zasoby**Dodaj polecenie lub projekt programu obsługi gestów jako składnik MEF.
+4. W polu **source. Extension. vsixmanifest** w obszarze **zasoby** Dodaj polecenie lub projekt programu obsługi gestów jako składnik MEF.
 
-    1. Na karcie **zasoby**kliknij pozycję **Nowy**.
+    1. Na karcie **zasoby** kliknij pozycję **Nowy**.
 
-    2. W obszarze **Typ**wybierz pozycję **Microsoft. VisualStudio. MefComponent**.
+    2. W obszarze **Typ** wybierz pozycję **Microsoft. VisualStudio. MefComponent**.
 
-    3. W obszarze **Źródło**wybierz pozycję **projekt w bieżącym rozwiązaniu** , a następnie wybierz nazwę projektu polecenia lub programu obsługi gestów.
+    3. W obszarze **Źródło** wybierz pozycję **projekt w bieżącym rozwiązaniu** , a następnie wybierz nazwę projektu polecenia lub programu obsługi gestów.
 
     4. Zapisz plik.
 

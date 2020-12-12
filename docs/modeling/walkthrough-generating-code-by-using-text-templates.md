@@ -1,5 +1,7 @@
 ---
 title: 'Wskazówki: generowanie kodu przy użyciu szablonów tekstowych'
+description: Zapoznaj się z generowaniem kodu programu, który jest silnie określony, i jeszcze łatwo można go zmienić po zmianie modelu źródłowego.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 181c1ccbeaff0aadee1b3d5ebd255b854b915277
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a39630f8a12ad2c1d7d2bc89f6830fc694e89087
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532063"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360991"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>Przewodnik: generowanie kodu przy użyciu szablonów tekstowych
 
@@ -93,7 +95,7 @@ Celem tego pliku jest dostarczenie próbek typów węzłów XML, które aplikacj
 
 Plik powinien być częścią projektu, dzięki czemu szablon może go odczytać, ale nie zostanie skompilowany do skompilowanej aplikacji.
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt, kliknij polecenie **Dodaj** , a następnie kliknij pozycję **nowy element**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt, kliknij polecenie **Dodaj** , a następnie kliknij pozycję **nowy element**.
 
 2. W oknie dialogowym **Dodaj nowy element** wybierz pozycję **plik XML** w okienku **Szablony** .
 
@@ -131,7 +133,7 @@ Bardziej kompleksowy test może sprawdzić dane wyjściowe tej funkcji testowej 
 
 Dodaj plik szablonu tekstu i ustaw rozszerzenie danych wyjściowych na *. cs*.
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt, kliknij polecenie **Dodaj**, a następnie kliknij pozycję **nowy element**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt, kliknij polecenie **Dodaj**, a następnie kliknij pozycję **nowy element**.
 
 2. W oknie dialogowym **Dodaj nowy element** wybierz **szablon tekstowy** z okienka **Szablony** .
 
@@ -408,7 +410,7 @@ Po zmianie schematu XML nowe klasy mogą być łatwo generowane. Kompilator prze
 
 Aby ponownie wygenerować klasy po zmianie przykładowego pliku XML, kliknij przycisk **Przekształć wszystkie szablony** na pasku narzędzi **Eksplorator rozwiązań** .
 
-## <a name="conclusion"></a>Podsumowanie
+## <a name="conclusion"></a>Wniosek
 
 W tym instruktażu przedstawiono kilka technik i korzyści wynikające z generowania kodu:
 
@@ -426,7 +428,7 @@ W tym instruktażu kod programu jest faktycznie generowany na podstawie wystąpi
 
 ## <a name="troubleshoot-the-text-template"></a>Rozwiązywanie problemów z szablonem tekstu
 
-Jeśli widzisz błędy transformacji szablonu lub kompilacji w **Lista błędów**lub jeśli plik wyjściowy nie został prawidłowo wygenerowany, możesz rozwiązać problem z szablonem tekstu przy użyciu technik opisanych w temacie [generowanie plików za pomocą narzędzia TextTransform](../modeling/generating-files-with-the-texttransform-utility.md).
+Jeśli widzisz błędy transformacji szablonu lub kompilacji w **Lista błędów** lub jeśli plik wyjściowy nie został prawidłowo wygenerowany, możesz rozwiązać problem z szablonem tekstu przy użyciu technik opisanych w temacie [generowanie plików za pomocą narzędzia TextTransform](../modeling/generating-files-with-the-texttransform-utility.md).
 
 ## <a name="see-also"></a>Zobacz też
 

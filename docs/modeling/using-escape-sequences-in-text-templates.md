@@ -1,5 +1,7 @@
 ---
 title: Korzystanie z sekwencji unikowych w szablonach tekstowych
+description: Dowiedz się, jak używać sekwencji unikowych w szablonach tekstowych do generowania tagów szablonu tekstu oraz do ucieczki znaków kontrolnych i cudzysłowów w kodzie C#.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83e6e5cf163037077d0517e5f7ea460f9124f27c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b007a9b5ccf41a27cda7d9833064eb60394c4dc
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594048"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361329"
 ---
 # <a name="use-escape-sequences-in-text-templates"></a>Korzystanie z sekwencji ucieczki w szablonach tekstowych
 

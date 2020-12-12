@@ -1,5 +1,7 @@
 ---
 title: Nawigowanie i aktualizowanie modelu w kodzie programu
+description: Dowiedz się, w jaki sposób można napisać kod, aby tworzyć i usuwać elementy modelu, ustawiać ich właściwości oraz tworzyć i usuwać linki między elementami.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 521ad703b92133f56d38e061123bf13db13d6375
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fb7c78351ccd03247d458ca403c81d379ec18d29
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75566179"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362213"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>Nawigowanie po modelu i aktualizowanie go w kodzie programu
 
@@ -55,7 +57,7 @@ Można napisać kod, aby tworzyć i usuwać elementy modelu, ustawiać ich wła�
 
  `henry.Name = "Henry VIII";`
 
- Jeśli w definicji DSL jest **obliczana**wartość **rodzaju** właściwości, nie można jej ustawić. Aby uzyskać więcej informacji, zobacz [właściwości magazynu obliczeniowego i niestandardowego](../modeling/calculated-and-custom-storage-properties.md).
+ Jeśli w definicji DSL jest **obliczana** wartość **rodzaju** właściwości, nie można jej ustawić. Aby uzyskać więcej informacji, zobacz [właściwości magazynu obliczeniowego i niestandardowego](../modeling/calculated-and-custom-storage-properties.md).
 
 ### <a name="relationships"></a>Relacje
  Relacje domeny zdefiniowane w definicji DSL stają się parami właściwości, jeden w klasie na każdym końcu relacji. Nazwy właściwości są wyświetlane na diagramie DslDefinition jako etykiety na rolach na każdej stronie relacji. W zależności od liczebności roli typ właściwości jest albo klasą na drugim końcu relacji, albo kolekcją tej klasy.
@@ -288,7 +290,7 @@ W niektórych przypadkach usuwanie jest uniemożliwione przez istnienie blokady,
 ## <a name="locks"></a><a name="locks"></a> Zamki
  Zmiany mogą być blokowane przez blokadę. Blokady można ustawić dla poszczególnych elementów, partycji i magazynu. Jeśli którykolwiek z tych poziomów ma blokadę uniemożliwiającą rodzaj zmiany, którą chcesz wprowadzić, wyjątek może zostać wygenerowany podczas próby. Można stwierdzić, czy blokady są ustawiane za pomocą elementu. GetLocks (), która jest metodą rozszerzenia, która jest zdefiniowana w przestrzeni nazw <xref:Microsoft.VisualStudio.Modeling.Immutability> .
 
- Aby uzyskać więcej informacji, zobacz [Definiowanie zasad blokowania w celu utworzenia segmentów tylko do odczytu](../modeling/defining-a-locking-policy-to-create-read-only-segments.md).
+ Aby uzyskać więcej informacji, zobacz [Definiowanie zasad blokowania na potrzeby tworzenia segmentów Read-Only](../modeling/defining-a-locking-policy-to-create-read-only-segments.md).
 
 ## <a name="copy-and-paste"></a><a name="copy"></a> Kopiuj i wklej
  Elementy lub grupy elementów można kopiować do <xref:System.Windows.Forms.IDataObject> :

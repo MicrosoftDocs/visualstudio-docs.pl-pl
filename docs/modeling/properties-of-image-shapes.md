@@ -1,5 +1,7 @@
 ---
 title: Właściwości kształtów obrazu
+description: Dowiedz się więcej o kształtach obrazów i sposobach używania kształtów obrazu w celu określenia sposobu wyświetlania klas domeny w wygenerowanym projektancie.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d05b82a74fba4273838d378bc52822653bb6bfa
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 50785a4f37b4f3e9e6eaae1bb2a58dcf206af672
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811178"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361917"
 ---
 # <a name="properties-of-image-shapes"></a>Właściwości kształtów obrazu
 
@@ -39,7 +41,7 @@ Można użyć kształtów obrazu, aby określić sposób wyświetlania klas dome
 
 Domyślnie pliki zasobów projektanta, takie jak pliki obrazów, znajdują się w folderze **resources** w projekcie **DSL** .
 
-Aby uzyskać więcej informacji, zobacz [jak zdefiniować język specyficzny dla domeny](../modeling/how-to-define-a-domain-specific-language.md). Aby uzyskać więcej informacji o sposobach korzystania z tych właściwości, zobacz [Dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).
+Aby uzyskać więcej informacji, zobacz [How to define a Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md). Aby uzyskać więcej informacji na temat sposobu korzystania z tych właściwości, zobacz [Dostosowywanie i rozszerzanie języka Domain-Specific](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
 Kształty obrazów mają właściwości, które są wymienione w poniższej tabeli.
 
@@ -52,7 +54,7 @@ Kształty obrazów mają właściwości, które są wymienione w poniższej tabe
 |Styl kreskowania konturu|Styl kreskowania konturu tego kształtu (pełny, kreska, kropka, DashDot, DashDotDot lub niestandardowy).|Ciągła|
 |Grubość konturu|Grubość konturu tego kształtu.|0,03125|
 |Kolor tekstu|Kolor używany dla dekoratory tekstu, które są skojarzone z tym kształtem.|Czarnoskórzy|
-|Modyfikator dostępu|Modyfikator dostępu kształtu geometrycznego (publiczny lub wewnętrzny).|Public|
+|Modyfikator dostępu|Modyfikator dostępu kształtu geometrycznego (publiczny lub wewnętrzny).|Publiczne|
 |Atrybuty niestandardowe|Służy do dodawania atrybutów do klasy kodu źródłowego, która jest generowana z tego kształtu.|\<none>|
 |Generuje podwójny pochodny|Jeśli `True` , zostanie wygenerowany zarówno klasę bazową, jak i Klasa częściowa (do obsługi dostosowywania za pomocą przesłonięć). Aby uzyskać więcej informacji, zobacz [przesłanianie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md).|Fałsz|
 |Ma Konstruktor niestandardowy|Jeśli `True` w kodzie źródłowym zostanie podany Konstruktor niestandardowy. Aby uzyskać więcej informacji, zobacz [przesłanianie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md).|Fałsz|

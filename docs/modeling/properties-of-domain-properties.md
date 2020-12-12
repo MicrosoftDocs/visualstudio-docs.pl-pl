@@ -1,5 +1,7 @@
 ---
 title: Właściwości właściwości domeny
+description: Dowiedz się, jak właściwość domeny jest funkcją elementu modelu, która może zawierać wartość i jak właściwości domeny są wyświetlane w polu Klasa domeny na diagramie.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,15 +11,15 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d5ecb87fa23dbf2705eb1df39e3e19e1b2bf578
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 97bfbcf73a950692d5736b7a6e0b529cfe658caa
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810018"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361524"
 ---
 # <a name="properties-of-domain-properties"></a>Właściwości właściwości domeny
-*Właściwość domeny* jest funkcją elementu modelu, która może zawierać wartość. Na przykład `Person` Klasa domeny może mieć właściwości `Name` i `BirthDate` . W definicji DSL właściwości domeny są wyświetlane w polu Klasa domeny na diagramie i w obszarze klasy domeny w Eksploratorze DSL. Aby uzyskać więcej informacji, zobacz [jak zdefiniować język specyficzny dla domeny](../modeling/how-to-define-a-domain-specific-language.md).
+*Właściwość domeny* jest funkcją elementu modelu, która może zawierać wartość. Na przykład `Person` Klasa domeny może mieć właściwości `Name` i `BirthDate` . W definicji DSL właściwości domeny są wyświetlane w polu Klasa domeny na diagramie i w obszarze klasy domeny w Eksploratorze DSL. Aby uzyskać więcej informacji, zobacz [How to define a Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md).
 
 > [!NOTE]
 > Słowo "Property" ma dwa zastosowania. *Właściwość domeny* to funkcja zdefiniowana w klasie domeny. Z kolei wiele elementów DSL ma *Właściwości*, które są wyświetlane w oknie **Właściwości** w definicji DSL. Na przykład Każda właściwość domeny ma zestaw właściwości, które są opisane w tym temacie.
@@ -30,7 +32,7 @@ ms.locfileid: "90810018"
 
 - Transakcje uniemożliwiają niespójne Stany. Aby uzyskać więcej informacji, zobacz [nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
-  Po wybraniu właściwości domeny w diagramie lub w Eksploratorze DSL można zobaczyć następujące elementy w okno Właściwości. Aby uzyskać więcej informacji na temat sposobu korzystania z tych elementów, zobacz [Dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).
+  Po wybraniu właściwości domeny w diagramie lub w Eksploratorze DSL można zobaczyć następujące elementy w okno Właściwości. Aby uzyskać więcej informacji na temat sposobu korzystania z tych elementów, zobacz [Dostosowywanie i rozszerzanie języka Domain-Specific](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
 |Właściwość|Opis|Wartość domyślna|
 |-|-|-|

@@ -1,5 +1,7 @@
 ---
 title: Praca z eksploratorem języka specyficznego dla domeny
+description: Dowiedz się więcej na temat Eksploratora DSL, narzędzia, które wyświetla kilka rodzajów informacji w widoku drzewa i zawiera wiele węzłów do definiowania języka specyficznego dla domeny.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,15 +11,15 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 971114a95fa43dbbcda985587d08f03ac3c7fd72
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 0bb08f7d6dc6ea41c64cfc9aeb6898eac4df0ae5
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810786"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360926"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>Praca z eksploratorem języka specyficznego dla domeny
-**Eksplorator DSL** wyświetla kilka rodzajów informacji w widoku drzewa. Aby uzyskać więcej informacji na temat większości elementów w Eksploratorze DSL, zobacz [jak zdefiniować język specyficzny dla domeny](../modeling/how-to-define-a-domain-specific-language.md).
+**Eksplorator DSL** wyświetla kilka rodzajów informacji w widoku drzewa. Aby uzyskać więcej informacji na temat większości elementów w Eksploratorze DSL, zobacz [How to define a Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md).
 
  Ma następujące węzły:
 
@@ -33,7 +35,7 @@ ms.locfileid: "90810786"
 
 - **Typy domeny**. Lista wbudowanych i zewnętrznych typów, które są używane w modelu.
 
-- **Edytor**. Lista kart **przybornika** i zawartych w nich elementów oraz ustawień weryfikacji dla modelu. Aby uzyskać więcej informacji na temat weryfikacji, zobacz [Walidacja w języku specyficznym dla domeny](../modeling/validation-in-a-domain-specific-language.md).
+- **Edytor**. Lista kart **przybornika** i zawartych w nich elementów oraz ustawień weryfikacji dla modelu. Aby uzyskać więcej informacji na temat weryfikacji, zobacz [Walidacja w języku Domain-Specific](../modeling/validation-in-a-domain-specific-language.md).
 
 - **Zachowanie Eksploratora**. Ustawienia określające zachowanie Eksploratora w wygenerowanym projektancie. Aby uzyskać więcej informacji na temat dostosowywania Eksploratora, zobacz [Dostosowywanie Eksploratora modeli](../modeling/customizing-the-model-explorer.md).
 

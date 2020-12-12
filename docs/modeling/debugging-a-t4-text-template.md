@@ -1,5 +1,7 @@
 ---
 title: Debugowanie szablonu tekstowego T4
+description: Aby debugować szablon tekstu czasu projektowania, Zapisz plik szablonu tekstu, a następnie wybierz Debuguj szablon T4 w menu skrótów pliku w Eksplorator rozwiązań.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1570061feb5da034e2e8fab7168658577f6f990d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 26ad1545918a02fbcf530b439e801a656a425864
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75589685"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361472"
 ---
 # <a name="debugging-a-t4-text-template"></a>Debugowanie szablonu tekstowego T4
 Możesz ustawić punkty przerwania w szablonach tekstowych. Aby debugować szablon tekstu czasu projektowania, Zapisz plik szablonu tekstu, a następnie wybierz **Debuguj szablon T4** w menu skrótów pliku w Eksplorator rozwiązań. Aby debugować szablon tekstu czasu wykonywania, po prostu Debuguj aplikację, do której należy.

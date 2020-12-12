@@ -1,5 +1,7 @@
 ---
 title: Właściwości klas domeny
+description: Dowiedz się więcej o różnych właściwościach klas domen, takich jak modyfikator dostępu, atrybuty niestandardowe i generowanie podwójnych pochodnych.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,15 +11,15 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b3ff1ece9e57239b49c5dcbef5091a14d8b0fa5
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: fd36973a9c355dcaec32b6da4149e6efd88282da
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810031"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360796"
 ---
 # <a name="properties-of-domain-classes"></a>Właściwości klas domeny
-Klasy domeny mają właściwości w poniższej tabeli. Aby uzyskać informacje o klasach domen, zobacz [Opis modeli, klas i relacji](../modeling/understanding-models-classes-and-relationships.md). Aby uzyskać więcej informacji o sposobach korzystania z tych właściwości, zobacz [Dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).
+Klasy domeny mają właściwości w poniższej tabeli. Aby uzyskać informacje o klasach domen, zobacz [Opis modeli, klas i relacji](../modeling/understanding-models-classes-and-relationships.md). Aby uzyskać więcej informacji na temat sposobu korzystania z tych właściwości, zobacz [Dostosowywanie i rozszerzanie języka Domain-Specific](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
 |Właściwość|Opis|Domyślny|
 |-|-|-|

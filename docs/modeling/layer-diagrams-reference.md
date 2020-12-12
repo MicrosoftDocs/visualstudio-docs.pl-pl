@@ -1,5 +1,7 @@
 ---
 title: Odwołania do diagramów zależności
+description: Dowiedz się, że w programie Visual Studio można użyć diagramu zależności do wizualizacji logicznej architektury systemu.
+ms.custom: SEO-VS-2020
 ms.date: 09/28/2018
 ms.topic: reference
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 774716dff6562b7792c6fa885c40db2a0a133136
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 265bb31dd95aa3a84bdb497a3306278acfd8838e
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594568"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360575"
 ---
 # <a name="dependency-diagrams-reference"></a>Diagramy zależności: odwołanie
 
@@ -56,7 +58,7 @@ W tym temacie opisano elementy, których można użyć na diagramie zależności
 
 W poniższej tabeli opisano elementy, których można użyć na diagramie zależności.
 
-|**Kształt**|**Element**|**Opis**|
+|**Kształt**|**Postaci**|**Opis**|
 |-|-|-|
 |1|**Warstwa**|Logiczna Grupa artefaktów fizycznych w systemie. Te artefakty mogą być przestrzeniami nazw, projektami, klasami, metodami i tak dalej.<br /><br /> Aby wyświetlić artefakty, które są połączone z warstwą, otwórz menu skrótów dla warstwy, a następnie wybierz polecenie **Wyświetl linki** , aby otworzyć **Eksploratora warstw**.<br /><br /> Aby uzyskać więcej informacji, zobacz [Eksplorator warstw](#Explorer).<br /><br /> -   **Zależności przestrzeni nazw zabronione** — określa, że artefakty skojarzone z tą warstwą nie mogą zależeć od określonych przestrzeni nazw.<br />-   **Niedozwolone przestrzenie nazw** — określa, że artefakty skojarzone z tą warstwą nie mogą należeć do określonych przestrzeni nazw.<br />-   **Wymagane przestrzenie nazw** — określa, że artefakty skojarzone z tą warstwą muszą należeć do jednej z określonych przestrzeni nazw.|
 |2|**Zależność**|Wskazuje, że jedna warstwa może korzystać z funkcjonalności w innej warstwie, ale nie odwrotnie.<br /><br /> -   **Direction** — określa kierunek zależności.|
@@ -93,7 +95,7 @@ Na diagramie zależności Otwórz menu skrótów dla jednej lub wielu warstw, a 
 |-|-|
 |**Kategorie**|Rodzaj artefaktu, taki jak Klasa, przestrzeń nazw, plik źródłowy itd.|
 |**Warstwa**|Warstwa, która łączy się z artefaktem|
-|**Obsługuje walidację**|W przypadku **wartości true**proces walidacji warstwy może sprawdzić, czy projekt jest zgodny z zależnościami lub z tego elementu.<br /><br /> W przypadku **wartości false**link nie uczestniczy w procesie walidacji warstwy.<br /><br /> Aby uzyskać więcej informacji, zobacz [diagramy zależności: wytyczne](../modeling/layer-diagrams-guidelines.md).|
+|**Obsługuje walidację**|W przypadku **wartości true** proces walidacji warstwy może sprawdzić, czy projekt jest zgodny z zależnościami lub z tego elementu.<br /><br /> W przypadku **wartości false** link nie uczestniczy w procesie walidacji warstwy.<br /><br /> Aby uzyskać więcej informacji, zobacz [diagramy zależności: wytyczne](../modeling/layer-diagrams-guidelines.md).|
 |**Identyfikator**|Odwołanie do połączonego artefaktu|
 
 ## <a name="see-also"></a>Zobacz też

@@ -1,5 +1,7 @@
 ---
 title: Dostosowywanie języka specyficznego dla domeny
+description: Dowiedz się, jak używać niestandardowego kodu, aby uzyskać dostęp do modelu w języku specyficznym dla domeny (DSL) i zmodyfikować go.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b67a50623eb1924c4a18b57524c409f7eba6ab20
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31b97b113b763a8f294386d4fa5fe66233a3f980
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546877"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360458"
 ---
 # <a name="write-code-to-customize-a-domain-specific-language"></a>Pisanie kodu pod kątem dostosowywania języka specyficznego dla domeny
 
@@ -24,11 +26,11 @@ Istnieje kilka kontekstów, w których można napisać kod, który działa z DSL
 
 - **Polecenia niestandardowe.** Można utworzyć polecenie, które użytkownicy mogą wywołać, klikając prawym przyciskiem myszy diagram, a następnie modyfikując model. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie polecenia do menu skrótów](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
 
-- **Zatwierdzenia.** Można napisać kod, który weryfikuje, czy model jest w poprawnym stanie. Aby uzyskać więcej informacji, zobacz [Walidacja w języku specyficznym dla domeny](../modeling/validation-in-a-domain-specific-language.md).
+- **Zatwierdzenia.** Można napisać kod, który weryfikuje, czy model jest w poprawnym stanie. Aby uzyskać więcej informacji, zobacz [Walidacja w języku Domain-Specific](../modeling/validation-in-a-domain-specific-language.md).
 
 - **Zastępowanie zachowania domyślnego.** Można modyfikować wiele aspektów kodu, który jest generowany z DslDefinition. DSL. Aby uzyskać więcej informacji, zobacz [przesłanianie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md).
 
-- **Przekształcanie tekstu.** Można napisać szablony tekstowe, które zawierają kod, który uzyskuje dostęp do modelu i generuje plik tekstowy, na przykład w celu wygenerowania kodu programu. Aby uzyskać więcej informacji, zobacz [generowanie kodu z języka specyficznego dla domeny](../modeling/generating-code-from-a-domain-specific-language.md).
+- **Przekształcanie tekstu.** Można napisać szablony tekstowe, które zawierają kod, który uzyskuje dostęp do modelu i generuje plik tekstowy, na przykład w celu wygenerowania kodu programu. Aby uzyskać więcej informacji, zobacz [generowanie kodu z poziomu Domain-Specific języka](../modeling/generating-code-from-a-domain-specific-language.md).
 
 - **Inne rozszerzenia programu Visual Studio.** Można napisać oddzielne rozszerzenia VSIX, które odczytują i modyfikują modele. Aby uzyskać więcej informacji, zobacz [jak to zrobić: otwieranie modelu z pliku w kodzie programu](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 

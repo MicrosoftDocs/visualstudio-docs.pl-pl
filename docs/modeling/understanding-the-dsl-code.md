@@ -1,5 +1,7 @@
 ---
 title: Znajomość kodu DSL
+description: Dowiedz się, jak rozwiązanie Domain-Specific Language (DSL) generuje interfejs API, za pomocą którego można odczytywać i aktualizować wystąpienia DSL w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,16 +11,16 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1196faa5831ae44a93f21ab1808915357690a0ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd739a7780a2a2c858efc14aa72205e9be161900
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565945"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361459"
 ---
 # <a name="understanding-the-dsl-code"></a>Znajomość kodu DSL
 
-Rozwiązanie języka specyficznego dla domeny (DSL) generuje interfejs API, za pomocą którego można odczytywać i aktualizować wystąpienia DSL w programie Visual Studio. Ten interfejs API jest zdefiniowany w kodzie, który jest generowany na podstawie definicji DSL. W tym temacie opisano wygenerowany interfejs API.
+Rozwiązanie Domain-Specific Language (DSL) generuje interfejs API, za pomocą którego można odczytywać i aktualizować wystąpienia DSL w programie Visual Studio. Ten interfejs API jest zdefiniowany w kodzie, który jest generowany na podstawie definicji DSL. W tym temacie opisano wygenerowany interfejs API.
 
 ## <a name="the-example-solution-component-diagrams"></a>Przykładowe rozwiązanie: diagramy składników
 
@@ -60,17 +62,17 @@ Naciśnij klawisz **F5** i Eksperymentuj, jeśli nie znasz tego szablonu rozwią
 
  *YourDsl*`Schema.xsd`
 
- Schemat dla plików, które zawierają wystąpienia elementu DSL. Ten plik jest kopiowany do katalogu kompilacji (**bin**). Podczas instalowania programu DSL można skopiować ten plik do **folderu \Program Files\Microsoft Visual Studio 11.0 \ Xml\Schemas** , aby umożliwić zweryfikowanie plików modelu. Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązań językowych właściwych dla domeny](msi-and-vsix-deployment-of-a-dsl.md).
+ Schemat dla plików, które zawierają wystąpienia elementu DSL. Ten plik jest kopiowany do katalogu kompilacji (**bin**). Podczas instalowania programu DSL można skopiować ten plik do **folderu \Program Files\Microsoft Visual Studio 11.0 \ Xml\Schemas** , aby umożliwić zweryfikowanie plików modelu. Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązań językowych Domain-Specific](msi-and-vsix-deployment-of-a-dsl.md).
 
  W przypadku dostosowania serializacji przez ustawienie opcji w Eksploratorze DSL schemat zostanie odpowiednio zmieniony. Jednak jeśli piszesz własny kod serializacji, ten plik może już nie reprezentować rzeczywistego schematu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie serializacji File Storage i XML](../modeling/customizing-file-storage-and-xml-serialization.md).
 
  `ConnectionBuilders.cs`
 
- Konstruktor połączeń jest klasą, która tworzy relacje. Jest to kod za narzędziem połączenia. Ten plik zawiera parę klas dla każdego narzędzia połączenia. Ich nazwy są uzyskiwane z nazw i narzędzi do łączenia z domeną: Konstruktor *relacji*i *ConnectorTool*ConnectAction.
+ Konstruktor połączeń jest klasą, która tworzy relacje. Jest to kod za narzędziem połączenia. Ten plik zawiera parę klas dla każdego narzędzia połączenia. Ich nazwy są uzyskiwane z nazw i narzędzi do łączenia z domeną: Konstruktor *relacji* i *ConnectorTool* ConnectAction.
 
  (W przykładowym rozwiązaniu składnika jeden z konstruktorów połączeń nosi nazwę elemencie ConnectionBuilder, jest to współdziałanie, ponieważ relacja domeny nosi nazwę połączenie).
 
- Relacja jest tworzona w *Relationship* `Builder.Connect()` metodzie Relationship. Wersja domyślna sprawdza, czy źródłowe i docelowe elementy modelu są akceptowalne, a następnie tworzy wystąpienie relacji. Na przykład:
+ Relacja jest tworzona w  `Builder.Connect()` metodzie Relationship. Wersja domyślna sprawdza, czy źródłowe i docelowe elementy modelu są akceptowalne, a następnie tworzy wystąpienie relacji. Na przykład:
 
  `CommentReferencesSubject(sourceAccepted, targetAccepted);`
 
@@ -102,7 +104,7 @@ Naciśnij klawisz **F5** i Eksperymentuj, jeśli nie znasz tego szablonu rozwią
 
  Ten procesor dyrektywy ułatwia użytkownikom pisanie szablonów tekstowych, które odczytują wystąpienie DSL. Procesor dyrektywy ładuje zestawy (dll) dla DSL i efektywnie wstawia `using` instrukcje dla przestrzeni nazw. Pozwala to kodowi w szablonach tekstowych używać klas i relacji zdefiniowanych w DSL.
 
- Aby uzyskać więcej informacji, zobacz [generowanie kodu z języka specyficznego dla domeny](../modeling/generating-code-from-a-domain-specific-language.md) i [Tworzenie niestandardowych procesorów dyrektywy T4](../modeling/creating-custom-t4-text-template-directive-processors.md).
+ Aby uzyskać więcej informacji, zobacz [generowanie kodu z Domain-Specific języka](../modeling/generating-code-from-a-domain-specific-language.md) i [Tworzenie niestandardowych procesorów dyrektywy T4](../modeling/creating-custom-t4-text-template-directive-processors.md).
 
  `DomainClasses.cs`
 
@@ -139,7 +141,7 @@ Naciśnij klawisz **F5** i Eksperymentuj, jeśli nie znasz tego szablonu rozwią
 
  Zawiera ona ciągi takie jak opisy klas domen i właściwości, nazwy właściwości, etykiety przybornika, standardowe komunikaty o błędach i inne ciągi, które mogą być wyświetlane użytkownikowi. Zawiera również ikony narzędzi i obrazy dla kształtów obrazów.
 
- Ten plik jest powiązany z skompilowanym zestawem i zawiera wartości domyślne tych zasobów. Możesz lokalizować DSL, tworząc zestaw satelicki zawierający zlokalizowaną wersję zasobów. Ta wersja zostanie użyta, gdy program DSL zostanie zainstalowany w kulturze zgodnej z zlokalizowanymi zasobami. Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązań językowych właściwych dla domeny](msi-and-vsix-deployment-of-a-dsl.md).
+ Ten plik jest powiązany z skompilowanym zestawem i zawiera wartości domyślne tych zasobów. Możesz lokalizować DSL, tworząc zestaw satelicki zawierający zlokalizowaną wersję zasobów. Ta wersja zostanie użyta, gdy program DSL zostanie zainstalowany w kulturze zgodnej z zlokalizowanymi zasobami. Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązań językowych Domain-Specific](msi-and-vsix-deployment-of-a-dsl.md).
 
  `DomainRelationships.cs`
 
@@ -153,7 +155,7 @@ Naciśnij klawisz **F5** i Eksperymentuj, jeśli nie znasz tego szablonu rozwią
 
  W rolach relacji, w których można określić liczebność 1.. 1 lub 1.. *, należy ostrzec użytkownika, że wymagane jest co najmniej jedno wystąpienie relacji. Ten plik zawiera ograniczenia walidacji, które implementują te ostrzeżenia. Link 1.. 1 do osadzania elementu nadrzędnego nie został zweryfikowany.
 
- Aby można było wykonać te ograniczenia, należy ustawić jedną z opcji **użycia...** w węźle **EDITOR\VALIDATION** w Eksploratorze DSL. Aby uzyskać więcej informacji, zobacz [Walidacja w języku specyficznym dla domeny](../modeling/validation-in-a-domain-specific-language.md).
+ Aby można było wykonać te ograniczenia, należy ustawić jedną z opcji **użycia...** w węźle **EDITOR\VALIDATION** w Eksploratorze DSL. Aby uzyskać więcej informacji, zobacz [Walidacja w języku Domain-Specific](../modeling/validation-in-a-domain-specific-language.md).
 
  `PropertiesGrid.cs`
 
@@ -342,11 +344,11 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
 > [!WARNING]
 > Jeśli edytujesz plik TT w celu uwzględnienia zasobów, takich jak ikony lub obrazy, upewnij się, że zasób jest uwzględniony w kompilacji VSIX. W Eksplorator rozwiązań wybierz plik i upewnij się, że właściwość **include in VSIX** ma wartość `True` .
 
- Ten plik kontroluje sposób pakowania DSL do rozszerzenia integracji z programem Visual Studio (VSIX). Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązań językowych właściwych dla domeny](msi-and-vsix-deployment-of-a-dsl.md).
+ Ten plik kontroluje sposób pakowania DSL do rozszerzenia integracji z programem Visual Studio (VSIX). Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązań językowych Domain-Specific](msi-and-vsix-deployment-of-a-dsl.md).
 
 ## <a name="see-also"></a>Zobacz też
 
 - [Instrukcje: Definiowanie języka właściwego dla domeny](../modeling/how-to-define-a-domain-specific-language.md)
 - [Opis modeli, klas i relacji](../modeling/understanding-models-classes-and-relationships.md)
 - [Dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md)
-- [Pisanie kodu w celu dostosowania języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+- [Pisanie kodu w celu dostosowania języka Domain-Specific](../modeling/writing-code-to-customise-a-domain-specific-language.md)

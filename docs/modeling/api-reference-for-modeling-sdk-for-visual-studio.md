@@ -1,5 +1,7 @@
 ---
 title: Dokumentacja interfejsu API dla zestawu SDK modelowania
+description: Dowiedz się, jak zestaw SDK wizualizacji i modelowania programu Visual Studio zapewnia platformę, na której są kompilowane narzędzia dla języków specyficznych dla domeny (językami DSL).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e4be65a94892aa87dbc7f146ce3671336a37558
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 721527b71e12b2c6143fa952d663cccc2786b34f
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76113734"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361082"
 ---
 # <a name="api-reference-for-modeling-sdk-for-visual-studio"></a>Odwołania API do modelowania SDK dla Visual Studio
 

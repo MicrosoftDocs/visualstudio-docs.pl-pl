@@ -1,5 +1,7 @@
 ---
 title: Mapy kodu
+description: Dowiedz się, jak mapy kodu pomagają zobaczyć, jak kod pasuje do siebie, bez odczytywania plików i wierszy kodu.
+ms.custom: SEO-VS-2020
 ms.date: 05/16/2018
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 771a6ccf4749a3464204d3da75f4d403d1ab2dd5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 39b34bb124d663d81769c6d3086d6b36803d60eb
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532720"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362239"
 ---
 # <a name="map-dependencies-with-code-maps"></a>Mapowanie zależności za pomocą map kodu
 
@@ -43,7 +45,7 @@ Można mapować zależności dla kodu w następujących językach:
 - Projekty X + + i zestawy wykonane z modułów .NET dla systemu Microsoft Dynamics AX
 
 > [!NOTE]
-> W przypadku projektów innych niż C# lub Visual Basic istnieje mniej opcji uruchamiania mapy kodu lub dodawania elementów do istniejącej mapy kodu. Na przykład nie można kliknąć prawym przyciskiem myszy obiektu w edytorze tekstu projektu C++ i dodać go do mapy kodu. Można jednak przeciągać i upuszczać poszczególne elementy kodu lub pliki z **Eksplorator rozwiązań**, **Widok klasy**i **Przeglądarka obiektów**.
+> W przypadku projektów innych niż C# lub Visual Basic istnieje mniej opcji uruchamiania mapy kodu lub dodawania elementów do istniejącej mapy kodu. Na przykład nie można kliknąć prawym przyciskiem myszy obiektu w edytorze tekstu projektu C++ i dodać go do mapy kodu. Można jednak przeciągać i upuszczać poszczególne elementy kodu lub pliki z **Eksplorator rozwiązań**, **Widok klasy** i **Przeglądarka obiektów**.
 
 ## <a name="install-code-map-and-live-dependency-validation"></a>Instalowanie mapy kodu i walidacji na żywo zależności
 
@@ -67,9 +69,9 @@ Można utworzyć pustą mapę kodu i przeciągnąć do niej elementy, takie jak 
 
 Aby dodać pustą mapę kodu:
 
-1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla węzła rozwiązania najwyższego poziomu. Wybierz pozycję **Dodaj**  >  **nowy element**.
+1. W **Eksplorator rozwiązań** Otwórz menu skrótów dla węzła rozwiązania najwyższego poziomu. Wybierz pozycję **Dodaj**  >  **nowy element**.
 
-2. W oknie dialogowym **Dodaj nowy element** w obszarze **zainstalowane**wybierz kategorię **Ogólne** .
+2. W oknie dialogowym **Dodaj nowy element** w obszarze **zainstalowane** wybierz kategorię **Ogólne** .
 
 3. Wybierz szablon **dokument wykresu bezpośredniego (. dgml)** , a następnie wybierz pozycję **Dodaj**.
 
@@ -158,13 +160,13 @@ Załóżmy, że masz przegląd kodu do wykonania w niektórych plikach z oczekuj
 
    ![Pokaż określone zależności na mapie kodu](../modeling/media/codemapsspecificdependenciesintro.png)
 
-1. W **Eksplorator rozwiązań**wybierz projekty, odwołania do zestawów, foldery, pliki, typy lub elementy członkowskie, które mają być mapowane.
+1. W **Eksplorator rozwiązań** wybierz projekty, odwołania do zestawów, foldery, pliki, typy lub elementy członkowskie, które mają być mapowane.
 
    ![Wybierz elementy, które chcesz zmapować](../modeling/media/codemapsselectinsolutionexplorer.png)
 
 1. Na pasku narzędzi **Eksplorator rozwiązań** wybierz przycisk **Pokaż na mapie kodu** ![ Utwórz nowy Graf z wybranych węzłów ](../modeling/media/createnewgraphfromselectedbutton.gif) . Lub Otwórz menu skrótów dla jednej lub grupy elementów i wybierz **Pokaż na mapie kodu**.
 
-   Możesz również przeciągać elementy z **Eksplorator rozwiązań**, **Widok klasy**lub **Przeglądarka obiektów**do [nowej](#add-a-code-map) lub istniejącej mapy kodu. Aby uwzględnić hierarchię nadrzędną dla elementów, naciśnij i przytrzymaj klawisz **Ctrl** podczas przeciągania elementów lub użyj przycisku **Dołącz obiekty nadrzędne** na pasku narzędzi Mapa kodu, aby określić akcję domyślną. Możesz również przeciągać pliki zestawu spoza programu Visual Studio, na przykład z **Eksploratora Windows**.
+   Możesz również przeciągać elementy z **Eksplorator rozwiązań**, **Widok klasy** lub **Przeglądarka obiektów** do [nowej](#add-a-code-map) lub istniejącej mapy kodu. Aby uwzględnić hierarchię nadrzędną dla elementów, naciśnij i przytrzymaj klawisz **Ctrl** podczas przeciągania elementów lub użyj przycisku **Dołącz obiekty nadrzędne** na pasku narzędzi Mapa kodu, aby określić akcję domyślną. Możesz również przeciągać pliki zestawu spoza programu Visual Studio, na przykład z **Eksploratora Windows**.
 
    > [!NOTE]
    > Po dodaniu elementów z projektu, który jest współużytkowany przez wiele aplikacji, takich jak Windows Phone lub Microsoft Store, te elementy są wyświetlane na mapie z aktualnie aktywnym projektem aplikacji. Po zmianie kontekstu do innego projektu aplikacji i dodaniu większej liczby elementów z udostępnionego projektu pojawiają się elementy z projektem nowych aktywnych aplikacji. Operacje wykonywane za pomocą elementu na mapie dotyczą tylko tych elementów, które współużytkują ten sam kontekst.
@@ -187,14 +189,14 @@ Załóżmy, że masz przegląd kodu do wykonania w niektórych plikach z oczekuj
 
 6. Aby wyświetlić więcej elementów związanych z tymi elementami na mapie, wybierz jeden z nich i wybierz **Pokaż powiązane** z paskiem narzędzi Mapa kodu, a następnie wybierz typ powiązanych elementów do dodania do mapy. Alternatywnie wybierz co najmniej jeden element, otwórz menu skrótów, a następnie wybierz opcję **Pokaż** dla typu elementów pokrewnych, które mają zostać dodane do mapy. Na przykład:
 
-    Dla **zestawu**wybierz:
+    Dla **zestawu** wybierz:
 
     |Opcja|Opis|
     |-|-|
     |**Pokaż zestawy te odwołania**|Dodaj zestawy, do których odwołuje się ten zestaw. Zestawy zewnętrzne pojawiają się w grupie **zewnętrzne** .|
     |**Pokaż zestawy odwołujące się do tego**|Dodaj zestawy w rozwiązaniu odwołującym się do tego zestawu.|
 
-    W przypadku **przestrzeni nazw**wybierz pozycję **Pokaż zawierający zestaw**, jeśli nie jest ona widoczna.
+    W przypadku **przestrzeni nazw** wybierz pozycję **Pokaż zawierający zestaw**, jeśli nie jest ona widoczna.
 
     Dla **klasy** lub **interfejsu**, wybierz:
 
@@ -209,7 +211,7 @@ Załóżmy, że masz przegląd kodu do wykonania w niektórych plikach z oczekuj
     |**Pokaż wszystkie typy podstawowe**|Dodaj cyklicznie klasę bazową lub hierarchię interfejsu.|
     |**Pokaż wszystkie typy pochodne**|Dla klasy dodaj wszystkie klasy pochodne cyklicznie.<br /><br /> Dla interfejsu, dodaj wszystkie interfejsy pochodne i cyklicznie implementujące klasy lub struktury.|
 
-     Dla **metody**należy wybrać:
+     Dla **metody** należy wybrać:
 
     |Opcja|Opis|
     |-|-|
@@ -219,7 +221,7 @@ Załóżmy, że masz przegląd kodu do wykonania w niektórych plikach z oczekuj
     |**Pokaż zawierający typ, przestrzeń nazw i zestaw**|Dodaj hierarchię kontenera nadrzędnego.|
     |**Pokaż przesłonięte metody**|Dla metody, która zastępuje inne metody lub implementuje metodę interfejsu, należy dodać wszystkie metody abstrakcyjne lub wirtualne w klasach bazowych, które są zastępowane, oraz — jeśli istnieje — implementowaną metodę interfejsu.|
 
-     Dla **pola** lub **Właściwości**wybierz:
+     Dla **pola** lub **Właściwości** wybierz:
 
     |Opcja|Opis|
     |-|-|

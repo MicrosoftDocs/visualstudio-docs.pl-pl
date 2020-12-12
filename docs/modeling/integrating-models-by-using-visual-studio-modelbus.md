@@ -1,5 +1,7 @@
 ---
 title: Integrowanie modeli za pomocą ModelBus
+description: Dowiedz się, że Visual Studio ModelBus zapewnia metodę tworzenia linków między modelami i z innych narzędzi do modeli.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a222d5f69d19d2891b4aa20239c1874f55a056e0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 46705c7a614cd67d81c9e55c03e937f72c29a2fe
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536945"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360731"
 ---
 # <a name="integrate-models-by-using-visual-studio-modelbus"></a>Integrowanie modeli za pomocą programu Visual Studio ModelBus
 
@@ -303,7 +305,7 @@ using (FamilyTreeAdapter adapter =
 
 1. DSL, do którego chcesz uzyskać dostęp, musi mieć adapter ModelBus, który został skonfigurowany do dostępu za pomocą szablonów tekstowych. Aby uzyskać więcej informacji, zobacz [zapewnianie dostępu do DSL](#provide).
 
-2. Zwykle uzyskujesz dostęp do docelowego języka DSL przy użyciu odwołania do magistrali modelu (MBR) przechowywanego w źródłowym DSL. W związku z tym szablon zawiera dyrektywę źródłowego DSL oraz kod, który umożliwia rozpoznanie rekordu MBR. Aby uzyskać więcej informacji na temat szablonów tekstowych, zobacz [generowanie kodu z języka specyficznego dla domeny](../modeling/generating-code-from-a-domain-specific-language.md).
+2. Zwykle uzyskujesz dostęp do docelowego języka DSL przy użyciu odwołania do magistrali modelu (MBR) przechowywanego w źródłowym DSL. W związku z tym szablon zawiera dyrektywę źródłowego DSL oraz kod, który umożliwia rozpoznanie rekordu MBR. Aby uzyskać więcej informacji na temat szablonów tekstowych, zobacz [generowanie kodu z poziomu Domain-Specific języka](../modeling/generating-code-from-a-domain-specific-language.md).
 
    ```
    <#@ template debug="true" hostspecific="true"
@@ -492,7 +494,7 @@ Po kliknięciu prawym przyciskiem myszy diagramu definicji DSL kliknij pozycję 
 
 Po ustawieniu typu właściwości domeny na ModelBusReference, a następnie kliknięciu prawym przyciskiem myszy właściwości i kliknięciu opcji **Włącz określone właściwości ModelBusReference**:
 
-- Do właściwości domeny dodawane są kilka atrybutów CLR. Można je wyświetlić w polu atrybuty niestandardowe w okno Właściwości. W **Dsl\GeneratedCode\DomainClasses.cs**można zobaczyć atrybuty deklaracji właściwości:
+- Do właściwości domeny dodawane są kilka atrybutów CLR. Można je wyświetlić w polu atrybuty niestandardowe w okno Właściwości. W **Dsl\GeneratedCode\DomainClasses.cs** można zobaczyć atrybuty deklaracji właściwości:
 
   ```csharp
   [System.ComponentModel.TypeConverter(typeof(
@@ -506,7 +508,7 @@ Po ustawieniu typu właściwości domeny na ModelBusReference, a następnie klik
     ("Choose a model file", "Target model|*.target")]
   ```
 
-Po kliknięciu prawym przyciskiem myszy diagramu definicji DSL kliknij pozycję **Włącz ModelBus**i wybierz opcję **Uwidocznij ten DSL w ModelBus**:
+Po kliknięciu prawym przyciskiem myszy diagramu definicji DSL kliknij pozycję **Włącz ModelBus** i wybierz opcję **Uwidocznij ten DSL w ModelBus**:
 
 - Nowy projekt `ModelBusAdapter` zostanie dodany do rozwiązania.
 

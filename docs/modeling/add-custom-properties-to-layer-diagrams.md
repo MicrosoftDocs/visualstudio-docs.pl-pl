@@ -1,5 +1,7 @@
 ---
 title: Dodawanie właściwości niestandardowych do diagramów zależności
+description: Dowiedz się, w jaki sposób można przechowywać wartości z dowolnym elementem w diagramie zależności podczas pisania kodu rozszerzenia dla diagramów zależności.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c68d8a75ca8203a790684506ffd44b3d890648a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d3073a42faf0dcc6fbf586847382ba3a83d88ed4
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546920"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360770"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Dodawanie właściwości niestandardowych do diagramów zależności
 

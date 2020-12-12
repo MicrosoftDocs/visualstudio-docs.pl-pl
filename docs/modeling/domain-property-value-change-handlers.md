@@ -1,5 +1,7 @@
 ---
 title: Obsługa zmian wartości właściwości domeny
+description: Dowiedz się więcej o obsłudze zmian wartości właściwości domeny, które mogą być używane w języku specyficznym dla domeny programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f23984d6c4723b020b361e1da30363442966ea7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 34f7dcf97498895f841f2a68fd3bc1abac224824
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594711"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361732"
 ---
 # <a name="domain-property-value-change-handlers"></a>Obsługa zmian wartości właściwości domeny
 
@@ -22,7 +24,7 @@ W języku specyficznym dla domeny programu Visual Studio, gdy wartość właści
 
 ## <a name="override-the-property-handler-methods"></a>Przesłoń metody obsługi właściwości
 
-Każda właściwość domeny języka właściwego dla domeny jest obsługiwana przez klasę, która jest zagnieżdżona wewnątrz klasy domeny nadrzędnej. Jego nazwa jest zgodna z formatem *PropertyName*PropertyHandler. Tę klasę programu obsługi właściwości można sprawdzić w pliku **Dsl\Generated Code\DomainClasses.cs**. W klasie, `OnValueChanging()` jest wywoływana bezpośrednio przed zmianą wartości i `OnValueChanged()` jest wywoływana natychmiast po zmianie wartości.
+Każda właściwość domeny języka właściwego dla domeny jest obsługiwana przez klasę, która jest zagnieżdżona wewnątrz klasy domeny nadrzędnej. Jego nazwa jest zgodna z formatem *PropertyName* PropertyHandler. Tę klasę programu obsługi właściwości można sprawdzić w pliku **Dsl\Generated Code\DomainClasses.cs**. W klasie, `OnValueChanging()` jest wywoływana bezpośrednio przed zmianą wartości i `OnValueChanged()` jest wywoływana natychmiast po zmianie wartości.
 
 Załóżmy na przykład, że masz klasę domeny o nazwie `Comment` , która ma właściwość domeny typu String o nazwie `Text` i Właściwość Integer o nazwie `TextLengthCount` . Aby `TextLengthCount` zawsze zawierać długość `Text` ciągu, można napisać następujący kod w osobnym pliku w projekcie DSL:
 

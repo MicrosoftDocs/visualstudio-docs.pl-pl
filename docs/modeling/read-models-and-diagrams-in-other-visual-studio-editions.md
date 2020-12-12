@@ -1,5 +1,7 @@
 ---
 title: Odczytywanie modeli i diagramów w innych wersjach programu Visual Studio
+description: Dowiedz się więcej na temat odczytywania modeli i diagramów w programie Visual Studio, a także zachowania tylko do odczytu w przypadku korzystania z wersji programu Visual Studio, która nie obsługuje tworzenia modelu.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebe4cdcefb7b823090cca8976055de5a3ebb9b1a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffbf39421f507338d14a6b05a667ec4301375067
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595413"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360692"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Odczytywanie modeli i diagramów w innych wersjach programu Visual Studio
 
@@ -45,7 +47,7 @@ Aby odczytać diagram zależności, minimalny zestaw wymaganych plików jest nas
 
 - Pliki pakietu dla dowolnego pakietu, do którego odwołuje się Diagram (**ModelDefinition\MyPackage.UML**)
 
-## <a name="changes-that-you-can-make-in-read-only-mode"></a>Zmiany, które można wprowadzić w trybie tylko do odczytu
+## <a name="changes-that-you-can-make-in-read-only-mode"></a>Zmiany, które można wprowadzić w trybie Read-Only
 
 Jeśli otworzysz model i jego diagramy w wersji programu Visual Studio, która nie obsługuje tworzenia modelu, nie możesz zmienić modelu. Oznacza to, że nie można zmienić elementów i relacji, które są wyświetlane na diagramach lub w Eksploratorze modelu. Można jednak wprowadzić pewne zmiany w układzie diagramów:
 

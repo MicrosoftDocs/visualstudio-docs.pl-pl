@@ -1,5 +1,7 @@
 ---
 title: Przegląd narzędzi językowych właściwych dla domeny
+description: Dowiedz się, jak narzędzia DSL umożliwiają projektowanie języka specyficznego dla domeny, a następnie generowanie wszystkich elementów, które muszą być wymagane przez użytkowników w celu tworzenia modeli opartych na języku.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -9,15 +11,15 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d9f2446aa793fcd80c3c6786bf1b2002a7ccbc0
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: e88a6157e5c9db7914ac6f7470d793be11dfdfc8
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808080"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362031"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Przegląd narzędzi językowych właściwych dla domeny
-Narzędzia języka specyficznego dla domeny (narzędzia DSL), które są hostowane w programie Visual Studio, umożliwiają projektowanie języka specyficznego dla domeny, a następnie generowanie wszystkich elementów, które muszą być potrzebne użytkownikom do tworzenia modeli opartych na języku.
+Domain-Specific narzędzia języka (narzędzia DSL), które są hostowane w programie Visual Studio, umożliwiają projektowanie języka specyficznego dla domeny, a następnie generowanie wszystkich elementów, które użytkownicy muszą utworzyć, aby tworzyć modele oparte na języku.
 
  Narzędzia DSL zawierają następujące narzędzia:
 
@@ -30,7 +32,7 @@ Narzędzia języka specyficznego dla domeny (narzędzia DSL), które są hostowa
 - Generator kodu, który pobiera definicję języka specyficznego dla domeny jako dane wejściowe i tworzy kod źródłowy jako dane wyjściowe.
 
 ## <a name="the-dsl-tools-solution"></a>Rozwiązanie narzędzi DSL
- W Kreatorze projektanta specyficznego dla domeny dostępne są następujące szablony rozwiązań:
+ Kreator Domain-Specific Designer udostępnia następujące szablony rozwiązań:
 
 - Przepływ zadań
 
@@ -46,7 +48,7 @@ Narzędzia języka specyficznego dla domeny (narzędzia DSL), które są hostowa
 
 - Biblioteka DSL
 
-  Aby uzyskać więcej informacji, zobacz [Wybieranie szablonu rozwiązania dotyczącego języka specyficznego dla domeny](../modeling/choosing-a-domain-specific-language-solution-template.md).
+  Aby uzyskać więcej informacji, zobacz [Wybieranie szablonu rozwiązania Domain-Specific Language](../modeling/choosing-a-domain-specific-language-solution-template.md).
 
   Kreator tworzy rozwiązanie programu Visual Studio, które ma następujące projekty:
 
@@ -62,9 +64,9 @@ Narzędzia języka specyficznego dla domeny (narzędzia DSL), które są hostowa
  Interfejs graficzny narzędzi DSL umożliwia dodawanie elementów i relacji do języka specyficznego dla domeny. Po dodaniu elementów można zdefiniować ich wygląd, mapując je do kształtów, dostosowując kolory i dodając dekoratory. Możesz również dodać elementy do przybornika.
 
 ## <a name="validation-in-dsl-tools"></a>Walidacja w narzędziach DSL
- Język DSL zapewnia jeden poziom walidacji, aby upewnić się, że model domeny spełnia podstawowe wymagania dotyczące generowania kodu. Zazwyczaj podczas tworzenia własnego języka specyficznego dla domeny należy dodać własne sprawdzanie poprawności, aby przedstawić reguły logiki biznesowej. Aby uzyskać więcej informacji na temat weryfikacji niestandardowej, zobacz [Walidacja w języku specyficznym dla domeny](../modeling/validation-in-a-domain-specific-language.md).
+ Język DSL zapewnia jeden poziom walidacji, aby upewnić się, że model domeny spełnia podstawowe wymagania dotyczące generowania kodu. Zazwyczaj podczas tworzenia własnego języka specyficznego dla domeny należy dodać własne sprawdzanie poprawności, aby przedstawić reguły logiki biznesowej. Aby uzyskać więcej informacji na temat weryfikacji niestandardowej, zobacz [Walidacja w języku Domain-Specific](../modeling/validation-in-a-domain-specific-language.md).
 
- Zalecamy, aby sprawdzać, czy język specyficzny dla domeny jest często używany podczas projektowania. Jeśli w języku specyficznym dla domeny występują błędy walidacji, nie można wygenerować kodu źródłowego. Proces generowania kodu źródłowego z szablonów jest wykonywany przez kliknięcie przycisku **Przekształć wszystkie szablony** na pasku narzędzi Eksplorator rozwiązań. Za każdym razem, gdy modyfikujesz definicję języka, pamiętaj również o **przekształceniu wszystkich szablonów**. Aby uzyskać więcej informacji, zobacz [How to: Create a specyficzne dla domeny rozwiązanie językowe](../modeling/how-to-create-a-domain-specific-language-solution.md).
+ Zalecamy, aby sprawdzać, czy język specyficzny dla domeny jest często używany podczas projektowania. Jeśli w języku specyficznym dla domeny występują błędy walidacji, nie można wygenerować kodu źródłowego. Proces generowania kodu źródłowego z szablonów jest wykonywany przez kliknięcie przycisku **Przekształć wszystkie szablony** na pasku narzędzi Eksplorator rozwiązań. Za każdym razem, gdy modyfikujesz definicję języka, pamiętaj również o **przekształceniu wszystkich szablonów**. Aby uzyskać więcej informacji, zobacz [How to: Create a Domain-Specific Language Solution](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
 ## <a name="customization-of-dsl-tools"></a>Dostosowanie narzędzi DSL
  Możesz podać dodatkowy kod, aby uściślić zachowanie modelu i definiować ograniczenia w Twoim języku. W razie potrzeby można wprowadzić znaczące zmiany, modyfikując szablony tekstowe.
@@ -72,7 +74,7 @@ Narzędzia języka specyficznego dla domeny (narzędzia DSL), które są hostowa
 ## <a name="distributing-your-dsl-solution"></a>Dystrybuowanie rozwiązania DSL
  Narzędzia DSL generują pakiet, który jest hostowany w programie Visual Studio. Pakiet wyświetla Przybornik, Eksplorator DSL i inne elementy interfejsu użytkownika, które umożliwiają użytkownikom tworzenie modeli przy użyciu języka specyficznego dla domeny.
 
- Podczas kompilowania i uruchamiania rozwiązania narzędzi DSL w programie Visual Studio drugie wystąpienie programu Visual Studio pokazuje, w jaki sposób język specyficzny dla domeny będzie wyglądał użytkownikowi w języku. Po zweryfikowaniu, że wszystko działa prawidłowo, można rozpowszechnić `.vsix` plik, który można znaleźć w folderze Build projektu DslPackage. Ten plik może służyć do instalowania programu DSL jako rozszerzenia programu Visual Studio na innych komputerach.  Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązań językowych właściwych dla domeny](msi-and-vsix-deployment-of-a-dsl.md).
+ Podczas kompilowania i uruchamiania rozwiązania narzędzi DSL w programie Visual Studio drugie wystąpienie programu Visual Studio pokazuje, w jaki sposób język specyficzny dla domeny będzie wyglądał użytkownikowi w języku. Po zweryfikowaniu, że wszystko działa prawidłowo, można rozpowszechnić `.vsix` plik, który można znaleźć w folderze Build projektu DslPackage. Ten plik może służyć do instalowania programu DSL jako rozszerzenia programu Visual Studio na innych komputerach.  Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązań językowych Domain-Specific](msi-and-vsix-deployment-of-a-dsl.md).
 
 ## <a name="see-also"></a>Zobacz też
 

@@ -1,5 +1,7 @@
 ---
 title: Uzyskiwanie dostępu do modeli z poziomu szablonów tekstu
+description: Dowiedz się, jak używać szablonów tekstowych do tworzenia plików raportów, plików kodu źródłowego i innych plików tekstowych, które są oparte na modelach języka właściwych dla domeny.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,19 +11,19 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a66f160d25ccacbdaaaf2238dfc738ade4a4200f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64d937f9a63207e16664bbd9254ae60470caeb41
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85531472"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362291"
 ---
 # <a name="access-models-from-text-templates"></a>Dostęp do modeli z szablonów tekstowych
 
 Za pomocą szablonów tekstowych można tworzyć pliki raportów, pliki kodu źródłowego i inne pliki tekstowe, które są oparte na modelach języka właściwych dla domeny. Aby uzyskać podstawowe informacje na temat szablonów tekstowych, zobacz [generowanie kodu i szablony tekstowe T4](../modeling/code-generation-and-t4-text-templates.md). Szablony tekstowe będą działały w trybie eksperymentalnym podczas debugowania DSL, a także będą działały na komputerze, na którym wdrożono DSL.
 
 > [!NOTE]
-> Podczas tworzenia rozwiązania DSL, ** \* przykładowy szablon tekstowy** jest generowany w projekcie debugowania. Zmiany nazw klas domen nie będą już działać. Jednak zawierają one wymagane dyrektywy podstawowe i zawierają przykłady, które można zaktualizować w celu dopasowania do języka DSL.
+> Podczas tworzenia rozwiązania DSL, **\* przykładowy szablon tekstowy** jest generowany w projekcie debugowania. Zmiany nazw klas domen nie będą już działać. Jednak zawierają one wymagane dyrektywy podstawowe i zawierają przykłady, które można zaktualizować w celu dopasowania do języka DSL.
 
  Aby uzyskać dostęp do modelu z szablonu tekstu:
 

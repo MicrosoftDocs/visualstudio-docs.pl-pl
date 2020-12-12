@@ -1,5 +1,7 @@
 ---
 title: Generowanie kodu z języka specyficznego dla domeny
+description: Dowiedz się, jak narzędzia języka Domain-Specific zapewniają zaawansowany sposób generowania kodu, dokumentów i innych artefaktów z danych przedstawionych w modelach.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34b834957dfe18e3fc03a86130a95071dda0badf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58a2537f2c2cab0123bc90e8d0e32a8da89874f6
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596583"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362200"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>Generowanie kodu z języka specyficznego dla domeny
 
@@ -28,7 +30,7 @@ Na przykład firma Fabrikam ma plik XML z nazwami klientów i adresami e-mail. D
 <# } #>  </table>
 ```
 
-Podczas przetwarzania bazy danych klienta plik XML jest odczytywany do magazynu modeli. *Procesor dyrektywy*utworzony przy użyciu [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] , sprawia, że Klasa klienta jest dostępna dla kodu w szablonie tekstu. Wiele szablonów tekstowych można uruchamiać w ramach tego samego magazynu.
+Podczas przetwarzania bazy danych klienta plik XML jest odczytywany do magazynu modeli. *Procesor dyrektywy* utworzony przy użyciu [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] , sprawia, że Klasa klienta jest dostępna dla kodu w szablonie tekstu. Wiele szablonów tekstowych można uruchamiać w ramach tego samego magazynu.
 
 Szablony tekstowe mają kluczowe znaczenie [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] . Są one używane do generowania kodu źródłowego dla elementów modelu domeny, a także dla pakietu VSPackage i formantów, które są używane do integracji narzędzi z programem Visual Studio.
 

@@ -1,5 +1,7 @@
 ---
 title: Właściwości definicji DSL
+description: Dowiedz się, że właściwości DslDefinition definiują specyficzne dla domeny właściwości definicji języka, takie jak numer wersji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,17 +11,17 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 650e4db75b3896a04b2dd4ef9056191d4a83d46a
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 48771a61577c5c7ca910cc3b4f8496db37ada281
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810096"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360523"
 ---
 # <a name="properties-of-a-dsl-definition"></a>Właściwości definicji DSL
 Właściwości DslDefinition definiują *specyficzne dla domeny* właściwości definicji języka, takie jak numer wersji. Właściwości DslDefinition są wyświetlane w oknie **Właściwości** po kliknięciu otwartego obszaru diagramu w *Projektant języka specyficznego dla domeny*.
 
- Aby uzyskać więcej informacji, zobacz [jak zdefiniować język specyficzny dla domeny](../modeling/how-to-define-a-domain-specific-language.md). Aby uzyskać więcej informacji o sposobach korzystania z tych właściwości, zobacz [Dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).
+ Aby uzyskać więcej informacji, zobacz [How to define a Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md). Aby uzyskać więcej informacji na temat sposobu korzystania z tych właściwości, zobacz [Dostosowywanie i rozszerzanie języka Domain-Specific](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
  DslDefinition ma właściwości w poniższej tabeli:
 

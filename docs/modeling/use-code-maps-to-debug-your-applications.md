@@ -1,5 +1,7 @@
 ---
 title: Używanie map kodu do debugowania aplikacji
+description: Dowiedz się, jak używać map kodu, aby uniknąć utraty w dużych bazach kodu, nieznanego kodu lub starszego kodu.
+ms.custom: SEO-VS-2020
 ms.date: 09/28/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e01857878f927c619529d3bbfc63728f84f0b81d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7af24dbbb510fb1d5c9c62b40d5986ea5c74d35b
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594113"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361654"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>Używanie map kodu do debugowania aplikacji
 
@@ -39,7 +41,7 @@ Aby uzyskać szczegółowe informacje o poleceniach i akcjach, których można u
 ## <a name="understand-the-problem"></a>Omówienie problemu
  Przypuśćmy, że w programie graficznym, nad którym pracujesz, znajduje się błąd. Aby odtworzyć usterkę, należy otworzyć rozwiązanie w programie Visual Studio i nacisnąć klawisz **F5** , aby rozpocząć debugowanie.
 
- Po narysowaniu linii i wybraniu **polecenia Cofnij moje ostatnie pociągnięcie**nic się nie dzieje, aż do rysowania następnego wiersza.
+ Po narysowaniu linii i wybraniu **polecenia Cofnij moje ostatnie pociągnięcie** nic się nie dzieje, aż do rysowania następnego wiersza.
 
  ![&#45; błędów Odtwórz mapy kodu](../modeling/media/codemapstoryboardpaint0.png)
 

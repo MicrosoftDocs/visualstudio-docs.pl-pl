@@ -1,5 +1,7 @@
 ---
 title: Analizowanie i modelowanie architektury
+description: Dowiedz się, jak za pomocą narzędzi do projektowania i modelowania programu Visual Studio możesz zaprojektować i modelować aplikację, aby upewnić się, że Twoja aplikacja spełnia wymagania architektury.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -17,12 +19,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1db28867ea47752aa74b7898c44e797c0704594
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 71296b9ccb2e442d1bd9bc13865e0086821bf030
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544225"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361160"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Analizowanie i modelowanie architektury
 
@@ -43,7 +45,7 @@ Zobacz [Scenariusz: Zmień projekt przy użyciu wizualizacji i modelowania](../m
 |**Wizualizuj kod**:<br /><br />— Zobacz temat organizacja i relacje kodu, tworząc mapy kodu. Wizualizuj zależności między zestawami, przestrzeniami nazw, klasami, metodami i tak dalej.<br />-Zobacz strukturę klas i składowe dla określonego projektu, tworząc diagramy klas z kodu.<br />— Znajdź konflikty między kodem i jego projektem, tworząc diagramy zależności do walidacji kodu.|- [Wizualizuj kod](../modeling/visualize-code.md)<br />- [Praca z klasami i innymi typami (Projektant klas)](../ide/class-designer/designing-and-viewing-classes-and-types.md)<br />- [Wideo: zrozumienie projektu na podstawie kodu za pomocą map kodu programu Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)<br />- [Wideo: Weryfikuj zależności architektury w czasie rzeczywistym](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)|
 |**Zdefiniuj architekturę**:<br /><br />-Definiowanie i wymuszanie ograniczeń zależności między składnikami kodu przez tworzenie diagramów zależności.|- [Wideo: weryfikowanie zależności architektury za pomocą programu Visual Studio (Channel 9)](https://channel9.msdn.com/Events/Connect/2016/170)|
 |**Sprawdź, czy system spełnia wymagania i zamierzony projekt:**<br /><br />-Weryfikuj zależności kodu przy użyciu diagramów zależności, które opisują zamierzoną architekturę i zapobiegają zmianom, które mogą powodować konflikty z projektem.|- [Wideo: weryfikowanie zależności architektury za pomocą programu Visual Studio (Channel 9)](https://channel9.msdn.com/Events/Connect/2016/170)|
-|**Dostosuj modele i diagramy**:<br /><br />— Tworzenie własnych języków specyficznych dla domeny.|- [Modeling SDK dla programu Visual Studio — Języki specyficzne dla domeny](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)|
+|**Dostosuj modele i diagramy**:<br /><br />— Tworzenie własnych języków specyficznych dla domeny.|- [Modelowanie SDK dla Visual Studio — Języki Domain-Specific](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)|
 |**Generuj tekst przy użyciu szablonów T4**:<br /><br />-Używaj bloków tekstowych i logiki formantów wewnątrz szablonów do generowania plików tekstowych.<br /> — Kompilacja szablonów T4 z użyciem MSBuild w programie Visual Studio|- [Generowanie kodu i szablony tekstowe T4](../modeling/code-generation-and-t4-text-templates.md)|
 |**Udostępnianie modeli, diagramów i map kodu przy użyciu kontroli wersji programu Team Foundation**:<br /><br />— Umieść mapy kodu, projekty i diagramy zależności w ramach kontroli wersji programu Team Foundation, aby można było je udostępnić.| |
 

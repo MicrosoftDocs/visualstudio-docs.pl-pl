@@ -1,5 +1,7 @@
 ---
 title: Wywoływanie transformacji tekstu w rozszerzeniu VS
+description: Dowiedz się, jak używać usługi Text tworzenia szablonów do przekształcania szablonów tekstowych. Dowiedz się również, jak uzyskać usługę STextTemplating i rzutować ją na ITextTemplating.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ab846d1d7121d0c36c4187d937330d2ade52eb1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 40e781e08bba5e01b5e453e4545b5dd19e5a4d16
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594594"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360874"
 ---
 # <a name="invoke-text-transformation-in-a-visual-studio-extension"></a>Wywoływanie transformacji tekstu w rozszerzeniu programu Visual Studio
 

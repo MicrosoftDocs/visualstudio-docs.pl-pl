@@ -1,5 +1,7 @@
 ---
 title: Właściwości ról w domenie
+description: Zapoznaj się z właściwościami skojarzonymi z rolą domeny, takimi jak typ kolekcji, atrybuty niestandardowe i jest właściwością umożliwia przeglądania.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,17 +9,17 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c1c62126d65107bb25e3c4a475a794116c47193
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6dda8e7c5538b0517c181a451072c4f8a9544965
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544147"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362343"
 ---
 # <a name="properties-of-domain-roles"></a>Właściwości ról w domenie
-Właściwości w poniższej tabeli są skojarzone z rolą domeny. Aby uzyskać informacje na temat ról domeny, zobacz [Opis modeli, klas i relacji](../modeling/understanding-models-classes-and-relationships.md). Aby uzyskać więcej informacji o sposobach korzystania z tych właściwości, zobacz [Dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).
+Właściwości w poniższej tabeli są skojarzone z rolą domeny. Aby uzyskać informacje na temat ról domeny, zobacz [Opis modeli, klas i relacji](../modeling/understanding-models-classes-and-relationships.md). Aby uzyskać więcej informacji na temat sposobu korzystania z tych właściwości, zobacz [Dostosowywanie i rozszerzanie języka Domain-Specific](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-|Właściwość|Opis|Domyślne|
+|Właściwość|Opis|Domyślny|
 |-|-|-|
 |Typ kolekcji|Jeśli ta rola ma liczebność równą 0.. * lub 1.. \* , ta właściwość dostosowuje typ ogólny, który jest używany do przechowywania kolekcji linków.|`(none)` - <xref:Microsoft.VisualStudio.Modeling.LinkedElementCollection%601> jest używany|
 |Atrybuty niestandardowe|Atrybuty określone w tym miejscu zostaną dodane jako atrybuty do wygenerowanej klasy kodu.|<brak\>|

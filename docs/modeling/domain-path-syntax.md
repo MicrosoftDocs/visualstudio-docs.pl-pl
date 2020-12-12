@@ -1,5 +1,7 @@
 ---
 title: Składnia ścieżki domeny
+description: Informacje na temat składni ścieżki domeny i sposobu, w jaki definicje DSL używają składni podobnej do XPath do lokalizowania określonych elementów w modelu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d7ab5f080328338e40bed080ec8a4c7a85eabdb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a24e2c9bcbecb095282c0914fa09f93e5c21e699
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114641"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361746"
 ---
 # <a name="domain-path-syntax"></a>Składnia ścieżki domeny
 Definicje DSL używają składni podobnej do XPath do lokalizowania określonych elementów w modelu.

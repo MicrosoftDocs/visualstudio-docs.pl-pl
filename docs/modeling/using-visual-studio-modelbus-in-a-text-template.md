@@ -1,5 +1,6 @@
 ---
 title: Używanie ModelBus w szablonie tekstowym
+description: Dowiedz się, jak rozpoznać odwołania do modeli docelowych w przypadku pisania szablonów tekstowych, które odczytają model, który zawiera Visual Studio ModelBus odwołania.
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +8,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22a6c9cb035637347ffd501b5cf3b1038cd09369
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1025e7d35c20dc18c87942e23cf71b598d85637a
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535944"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361368"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Użycie programu Visual Studio ModelBus w szablonie tekstu
 
@@ -53,7 +54,7 @@ Aby można było rozpoznać odwołanie ModelBus w szablonie tekstowym, docelowy 
 
     2. Zmień nazwę pliku projektu (na przykład na **T4ModelBusAdapter. csproj**).
 
-    3. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł rozwiązanie, wskaż polecenie **Dodaj**, a następnie kliknij pozycję **istniejący projekt**. Znajdź nowy projekt karty, **T4ModelBusAdapter. csproj**.
+    3. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł rozwiązanie, wskaż polecenie **Dodaj**, a następnie kliknij pozycję **istniejący projekt**. Znajdź nowy projekt karty, **T4ModelBusAdapter. csproj**.
 
     4. W każdym `*.tt` pliku nowego projektu Zmień przestrzeń nazw.
 

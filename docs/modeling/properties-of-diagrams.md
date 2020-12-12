@@ -1,5 +1,7 @@
 ---
 title: Właściwości diagramów
+description: Dowiedz się więcej o diagramach i sposobach ustawiania właściwości, które określają sposób wyświetlania diagramów w wygenerowanym projektancie.
+ms.custom: SEO-VS-2020
 ms.date: 10/31/2018
 ms.topic: reference
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fd1ab781fd838c8e5379e38fdcb3a6fddd65230
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: fe27eb7dcfb8a984fceaee0700e1df44b6de4ef1
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810044"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361953"
 ---
 # <a name="properties-of-diagrams"></a>Właściwości diagramów
 Można ustawić właściwości określające sposób wyświetlania diagramów w wygenerowanym projektancie. Na przykład można określić domyślny kolor tekstu na diagramie.
@@ -29,7 +31,7 @@ Można ustawić właściwości określające sposób wyświetlania diagramów w 
 |-|-|-|
 |Kolor wypełnienia|Kolor wypełnienia dla diagramu.|Biały|
 |Kolor tekstu|Kolor tekstu, który jest wyświetlany na diagramie.|Czarnoskórzy|
-|Modyfikator dostępu|Modyfikator dostępu klasy (Public lub internal).|Public|
+|Modyfikator dostępu|Modyfikator dostępu klasy (Public lub internal).|Publiczne|
 |Atrybuty niestandardowe|Służy do dodawania atrybutów do wygenerowanej klasy kodu.|\<none>|
 |Generuje podwójny pochodny|Jeśli `True` , zostanie wygenerowany zarówno klasę bazową, jak i Klasa częściowa (do obsługi dostosowywania za pomocą przesłonięć). Aby uzyskać więcej informacji, zobacz [Przesłoń i rozwiń wygenerowane klasy](../modeling/overriding-and-extending-the-generated-classes.md).|Fałsz|
 |Ma Konstruktor niestandardowy|Jeśli `True` w kodzie źródłowym zostanie podany Konstruktor niestandardowy. Aby uzyskać więcej informacji, zobacz [Przesłoń i rozwiń wygenerowane klasy](../modeling/overriding-and-extending-the-generated-classes.md).|Fałsz|

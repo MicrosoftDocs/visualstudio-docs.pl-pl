@@ -1,5 +1,7 @@
 ---
 title: Przetwarzanie szablonów tekstowych przy użyciu hosta niestandardowego
+description: Dowiedz się, że proces przekształcania szablonu tekstu pobiera plik szablonu tekstu jako dane wejściowe i tworzy plik tekstowy jako dane wyjściowe.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f7ecd6508df780f570d10b3d615094fae15209d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3dbaa7cf80ba281f085590802127e3ab96776aa6
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591687"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360588"
 ---
 # <a name="process-text-templates-by-using-a-custom-host"></a>Przetwarzanie szablonów tekstowych przy użyciu hosta niestandardowego
 
@@ -53,7 +55,7 @@ string output = engine.ProcessTemplate(templateString, host);
 ## <a name="in-this-section"></a>W tej sekcji
  [Przewodnik: Tworzenie niestandardowego hosta szablonu tekstu](../modeling/walkthrough-creating-a-custom-text-template-host.md) Pokazuje, jak utworzyć niestandardowy host szablonu tekstu, który sprawia, że funkcjonalność szablonu tekstu jest dostępna poza programem Visual Studio.
 
-## <a name="reference"></a>Tematy pomocy
+## <a name="reference"></a>Dokumentacja
  [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))
 
 ## <a name="related-sections"></a>Sekcje pokrewne

@@ -1,5 +1,7 @@
 ---
 title: Modelowanie &apos; architektury aplikacji
+description: Dowiedz się, jak tworzyć modele w programie Visual Studio jako część opisu ogólnej struktury i zachowania systemu oprogramowania lub aplikacji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 449f528264f2101a45bc809a5002ce4e88659d05
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c284532a1e7f6407ebea987873665edb4e940019
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88711732"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361030"
 ---
 # <a name="model-your-app39s-architecture"></a>Modelowanie aplikacji&#39;s architektura
 Aby zapewnić, że system oprogramowania lub aplikacja spełnia potrzeby użytkowników, możesz tworzyć modele w programie Visual Studio jako część opisu ogólnej struktury i zachowania systemu oprogramowania lub aplikacji. Korzystając z modeli, można również opisać wzorce, które są używane w całym projekcie. Te modele pomagają zrozumieć istniejącą architekturę, omawiać zmiany i informować o zamiarach jasno.

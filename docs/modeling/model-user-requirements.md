@@ -1,5 +1,7 @@
 ---
 title: Wymagania modelu użytkownika
+description: Dowiedz się, w jaki sposób program Visual Studio pomaga zrozumieć, omówić i komunikować się z potrzebami użytkowników, rysując diagramy związane z ich działaniami.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c09e45250ad95d50d5d2cd0ca2753a70bb95748
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 40418b2d188ac5482a12dd4ffdddd221bf5d2f97
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590244"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361967"
 ---
 # <a name="model-user-requirements"></a>Wymagania modelu użytkownika
 

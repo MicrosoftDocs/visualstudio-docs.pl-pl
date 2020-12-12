@@ -1,5 +1,7 @@
 ---
 title: Języki specyficzne dla domeny — informacje
+description: Dowiedz się, w jaki sposób język specyficzny dla domeny (DSL) jest zaprojektowany do instrukcji ekspresowych w konkretnym obszarze problemu lub w domenie.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bfd073b07902e3c0a9e33dfe9ae50d4947a50ef2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7a1e9b1f853ad540f65101bffabea922f8fdcef1
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597272"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360893"
 ---
 # <a name="about-domain-specific-languages"></a>Języki specyficzne dla domeny — informacje
 
@@ -54,11 +56,11 @@ Zazwyczaj język specyficzny dla domeny jest tworzony, gdy zespół programistyc
 
 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] umożliwia utworzenie języka specyficznego dla domeny z własnym projektantem graficznym i własną notacją diagramu, a następnie użycie tego języka do wygenerowania odpowiedniego kodu źródłowego dla każdego projektu.
 
-## <a name="domain-specific-development"></a>Programowanie specyficzne dla domeny
+## <a name="domain-specific-development"></a>Opracowywanie Domain-Specific
 
 Programowanie specyficzne dla domeny to proces identyfikowania części aplikacji, które można modelować przy użyciu języka specyficznego dla domeny, a następnie konstruowania języka i wdrażania go dla deweloperów aplikacji. Deweloperzy wykorzystują język specyficzny dla domeny do konstruowania modeli, które są specyficzne dla aplikacji, używają modeli do generowania kodu źródłowego, a następnie używają kodu źródłowego do tworzenia aplikacji.
 
-## <a name="aspects-of-graphical-domain-specific-development"></a>Aspekty graficznego programowania specyficznego dla domeny
+## <a name="aspects-of-graphical-domain-specific-development"></a>Aspekty tworzenia Domain-Specific graficznych
 
 Graficzny język specyficzny dla domeny musi zawierać następujące funkcje:
 
@@ -94,7 +96,7 @@ Ponieważ usługa [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] jest hostowana
 
 Możesz również utworzyć modelową kartę magistrali dla języka specyficznego dla domeny. Ta karta umożliwia odwołuje się do modelu i elementów w ramach modelu i pozwala napisać kod, który może uzyskać dostęp do wystąpienia DSL i zaktualizować go. Korzystając z zaawansowanego mechanizmu magistrali modelu, można napisać rozszerzenia programu Visual Studio, które działają z wieloma modelami. Możesz również pisać aplikacje autonomiczne, które pracują z modelami. Aby uzyskać więcej informacji, zobacz [integrowanie modeli za pomocą programu Visual Studio ModelBus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
 
-## <a name="benefits-of-domain-specific-development"></a>Zalety programowania specyficznego dla domeny
+## <a name="benefits-of-domain-specific-development"></a>Zalety tworzenia Domain-Specific
 
 Język specyficzny dla domeny może mieć następujące zalety:
 
@@ -110,7 +112,7 @@ Język specyficzny dla domeny może mieć następujące zalety:
 
      Deweloperzy mogą używać kodu, który generuje model, aby utworzyć prototypową aplikację, którą mogą pokazać klientom.
 
-## <a name="the-process-of-domain-specific-development"></a>Proces opracowywania specyficznego dla domeny
+## <a name="the-process-of-domain-specific-development"></a>Proces opracowywania Domain-Specific
 
 Większość zespołów programistycznych oprogramowania korzystających z języków specyficznych dla domeny wykonaj następujące kroki, aby utworzyć i używać ich modeli:
 
