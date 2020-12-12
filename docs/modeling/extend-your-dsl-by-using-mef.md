@@ -1,5 +1,7 @@
 ---
 title: Rozszerzanie DSL za pomocą MEF
+description: Dowiedz się, jak można zwiększyć język specyficzny dla domeny (DSL) za pomocą Managed Extensibility Framework (MEF).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04d14b3b17953ef30620d9f616bb471b186e9c9f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 20dc9b6ac1bd4e565fd10793889c611f9b039778
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547644"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363175"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Rozszerzanie DSL za pomocą MEF
 
@@ -129,7 +131,7 @@ Jeśli masz dostęp do MEF DSL utworzonego przez siebie lub inną osobę, możes
 
    - Ten zestaw ma zwykle nazwę kończącą się ciągiem ".Dsl.dll".
 
-   - Jeśli masz dostęp do projektu DSL, możesz znaleźć plik zestawu w ** \\ \\ \* koszu katalogu DSL**
+   - Jeśli masz dostęp do projektu DSL, możesz znaleźć plik zestawu w katalogu **\\ \\ \* bin DSL* _
 
    - Jeśli masz dostęp do pliku VSIX DSL, możesz znaleźć zestaw, zmieniając rozszerzenie nazwy pliku VSIX na ". zip". Dekompresowanie pliku zip.
 
@@ -145,23 +147,23 @@ Jeśli masz dostęp do MEF DSL utworzonego przez siebie lub inną osobę, możes
 
    - System.Windows.Forms.dll
 
-4. Utwórz nowy projekt **projektu VSIX** .
+4. Utwórz nowy obiekt _ *Project** Project.
 
-5. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt VSIX i wybierz polecenie **Ustaw jako projekt startowy**.
+5. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt VSIX i wybierz polecenie **Ustaw jako projekt startowy**.
 
 6. W nowym projekcie Otwórz **Źródło. Extension. vsixmanifest**.
 
-7. Kliknij pozycję **Dodaj zawartość**. W oknie dialogowym Ustaw **Typ zawartości** na **składnik MEF**i **projekt źródłowy** do projektu biblioteki klas.
+7. Kliknij pozycję **Dodaj zawartość**. W oknie dialogowym Ustaw **Typ zawartości** na **składnik MEF** i **projekt źródłowy** do projektu biblioteki klas.
 
 8. Dodaj odwołanie VSIX do DSL.
 
-   1. W polu **source. Extension. vsixmanifest**kliknij pozycję **Dodaj odwołanie** .
+   1. W polu **source. Extension. vsixmanifest** kliknij pozycję **Dodaj odwołanie** .
 
-   2. W oknie dialogowym kliknij pozycję **Dodaj ładunek** , a następnie Znajdź plik VSIX DSL. Plik VSIX jest skompilowany w rozwiązaniu DSL w **DslPackage \\ bin \\ \* **.
+   2. W oknie dialogowym kliknij pozycję **Dodaj ładunek** , a następnie Znajdź plik VSIX DSL. Plik VSIX jest skompilowany w rozwiązaniu DSL, w **DslPackage \\ bin \\ \** _.
 
        Dzięki temu użytkownicy mogą instalować jednocześnie DSL i Twoje rozszerzenie. Jeśli użytkownik zainstalował już modem DSL, zostanie zainstalowane tylko rozszerzenie.
 
-9. Przejrzyj i zaktualizuj pozostałe pola **source. Extension. vsixmanifest**. Kliknij pozycję **Wybierz wersje** i sprawdź, czy są ustawione poprawne wersje programu Visual Studio.
+9. Przejrzyj i zaktualizuj pozostałe pola _ * source. Extension. vsixmanifest * *. Kliknij pozycję **Wybierz wersje** i sprawdź, czy są ustawione poprawne wersje programu Visual Studio.
 
 10. Dodaj kod do projektu biblioteki klas. Skorzystaj z przykładów w następnej sekcji jako przewodnika.
 
@@ -323,7 +325,7 @@ namespace MefExtension
 
 Metody walidacji są oznaczane przez `ValidationExtension` atrybut generowany przez DSL, a także przez <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> . Metoda może pojawić się w dowolnej klasie, która nie jest oznaczona przez atrybut.
 
-Aby uzyskać więcej informacji, zobacz [Walidacja w języku specyficznym dla domeny](../modeling/validation-in-a-domain-specific-language.md).
+Aby uzyskać więcej informacji, zobacz [Walidacja w języku Domain-Specific](../modeling/validation-in-a-domain-specific-language.md).
 
 ```csharp
 using Company.MyDsl;

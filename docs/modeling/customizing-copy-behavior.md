@@ -1,5 +1,7 @@
 ---
 title: Dostosowywanie zachowania dotyczącego kopiowania
+description: Dowiedz się, że w DSL utworzonych za pomocą wizualizacji programu Visual Studio i zestawu SDK modelowania można zmienić to, co się dzieje, gdy użytkownik kopiuje i wklei elementy.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b189d3dbd5c1872094b0c1be2a64eb2c02bf1e2e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8eee81440c0dda7f193d3e37eab700ada3ff259f
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547345"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363110"
 ---
 # <a name="customizing-copy-behavior"></a>Dostosowywanie zachowania dotyczącego kopiowania
 W języku specyficznym dla domeny (DSL) utworzonym za pomocą wizualizacji programu Visual Studio i zestawu SDK modelowania można zmienić to, co się dzieje, gdy użytkownik kopiuje i wklei elementy.

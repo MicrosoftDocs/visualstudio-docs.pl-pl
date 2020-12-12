@@ -1,5 +1,7 @@
 ---
 title: Dostosowywanie tworzenia i przesuwania elementów
+description: Dowiedz się, jak można zezwolić na przeciąganie elementu na inny obiekt z przybornika lub operacji wklejania lub przenoszenia.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -11,18 +13,18 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a94f1e3321d846578ea42c69e50d48713ff618fb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 96ef956980b08e688970ad0a00d7d1a0804da7c3
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547267"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363123"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Dostosowywanie tworzenia i przesuwania elementów
 
 Można zezwolić na przeciąganie elementu do innego, z przybornika lub operacji wklejania lub przenoszenia. Elementy przeniesione mogą być połączone z elementami docelowymi przy użyciu określonych relacji.
 
-Dyrektywa scalania elementów (EMD) określa, co się dzieje, gdy jeden element modelu zostanie *scalony* z innym elementem modelu. Dzieje się tak w przypadku:
+Dyrektywa scalania elementów (EMD) określa, co się dzieje, gdy jeden element modelu zostanie *scalony* z innym elementem modelu. Dzieje się tak w następujących sytuacjach:
 
 - Użytkownik przeciągnie z przybornika na diagram lub kształt.
 
@@ -87,7 +89,7 @@ Użytkownicy mogą również wklejać elementy do innych elementów.
 
 2. Aby umożliwić użytkownikom scalanie elementów na `ExampleElement` kształtach, Utwórz nowy EMD w `ExampleElement` klasie domeny:
 
-   1. W **Eksploratorze DSL**rozwiń węzeł **klasy domeny**. Kliknij prawym przyciskiem myszy `ExampleElement` , a następnie kliknij pozycję **Dodaj nową dyrektywę scalenia elementów**.
+   1. W **Eksploratorze DSL** rozwiń węzeł **klasy domeny**. Kliknij prawym przyciskiem myszy `ExampleElement` , a następnie kliknij pozycję **Dodaj nową dyrektywę scalenia elementów**.
 
    2. Upewnij się, że okno **Szczegóły DSL** jest otwarte, aby wyświetlić szczegóły nowego EMD. (Menu: **Wyświetl**, **inne okna**, **szczegóły języka DSL**)
 
@@ -97,7 +99,7 @@ Użytkownicy mogą również wklejać elementy do innych elementów.
 
     Należy zauważyć, że Klasa indeksowania jest nazwą EMD w Eksploratorze DSL.
 
-4. W obszarze **Scal proces przez utworzenie linków**Dodaj dwie ścieżki:
+4. W obszarze **Scal proces przez utworzenie linków** Dodaj dwie ścieżki:
 
    - Jedna ścieżka łączy nowy element z modelem nadrzędnym. Wyrażenie ścieżki, które należy wprowadzić nawiguje z istniejącego elementu, w górę za pośrednictwem relacji osadzania z modelem nadrzędnym. Na koniec określa ona rolę w nowym linku, do którego zostanie przypisany nowy element. Ścieżka jest następująca:
 
@@ -109,7 +111,7 @@ Użytkownicy mogą również wklejać elementy do innych elementów.
 
       Możesz użyć narzędzia do nawigacji ścieżki, aby utworzyć każdą ścieżkę:
 
-      1. W obszarze **proces scalania przez tworzenie linków w ścieżkach**kliknij pozycję **\<add path>** .
+      1. W obszarze **proces scalania przez tworzenie linków w ścieżkach** kliknij pozycję **\<add path>** .
 
       2. Kliknij strzałkę listy rozwijanej z prawej strony elementu listy. Zostanie wyświetlony widok drzewa.
 
@@ -200,7 +202,7 @@ Dodając kod niestandardowy do EMD, można zdefiniować bardziej złożone zacho
 
         - Przeciągnij z **przykładowego narzędzia elementu** na diagram.
 
-        - W **przykładowym Eksploratorze modelu**kliknij prawym przyciskiem myszy węzeł główny, a następnie kliknij polecenie **Dodaj nowy przykładowy element**.
+        - W **przykładowym Eksploratorze modelu** kliknij prawym przyciskiem myszy węzeł główny, a następnie kliknij polecenie **Dodaj nowy przykładowy element**.
 
         - Skopiuj i Wklej element na diagramie.
 
@@ -262,7 +264,7 @@ W niestandardowym kodzie scalania można zdefiniować, co się stanie, gdy użyt
 
     Sprawdź również metody o nazwie `MergeDisconnect` . Te metody odłączą element od modelu, gdy zostanie on usunięty.
 
-2. W **Eksploratorze DSL**wybierz lub Utwórz dyrektywę scalania elementów, którą chcesz dostosować. W oknie **Szczegóły DSL** ustaw opcję **Użyj scalania niestandardowego**.
+2. W **Eksploratorze DSL** wybierz lub Utwórz dyrektywę scalania elementów, którą chcesz dostosować. W oknie **Szczegóły DSL** ustaw opcję **Użyj scalania niestandardowego**.
 
     Po ustawieniu tej opcji Opcje **scalania procesów** i scalania do **przodu** są ignorowane. Zamiast tego używany jest kod.
 
@@ -288,7 +290,7 @@ W rozwiązaniu modelu składników można utworzyć dyrektywę scalania do przod
 
 2. Wyświetl **Eksplorator DSL** , otwierając DslDefinition. DSL.
 
-3. W **Eksploratorze DSL**rozwiń węzeł **klasy domeny**.
+3. W **Eksploratorze DSL** rozwiń węzeł **klasy domeny**.
 
 4. Klasa abstrakcyjna **ComponentPort** jest klasą bazową obu **portów** **.** Kliknij prawym przyciskiem myszy pozycję **ComponentPort** , a następnie kliknij pozycję **Dodaj nową dyrektywę scalenia elementów**.
 
@@ -310,7 +312,7 @@ W rozwiązaniu modelu składników można utworzyć dyrektywę scalania do przod
 
 10. Skompiluj i uruchom rozwiązanie. Pojawia się nowe wystąpienie programu Visual Studio.
 
-11. W **Eksplorator rozwiązań**Otwórz przykład. mydsl. Zostanie wyświetlony diagram i **Przybornik ComponentLanguage** .
+11. W **Eksplorator rozwiązań** Otwórz przykład. mydsl. Zostanie wyświetlony diagram i **Przybornik ComponentLanguage** .
 
 12. Przeciągnij **port wejściowy** z **przybornika** do innego **portu wejściowego.** Następnie przeciągnij **OutputPort** do **InputPort** , a następnie do innego **OutputPort**.
 

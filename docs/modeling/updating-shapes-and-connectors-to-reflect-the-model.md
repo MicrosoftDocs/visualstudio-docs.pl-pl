@@ -1,5 +1,7 @@
 ---
 title: Aktualizowanie kształtów i łączników, aby odzwierciedlały model
+description: Informacje o tym, że w języku specyficznym dla domeny w programie Visual Studio, można sprawić, aby wygląd kształtu odzwierciedlał stan modelu bazowego.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83a43e8570ea65373b8cac0bd3e3e7a8dc1f5791
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3d16cbc35c468c0101db479799215bcccf64ef6
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76115027"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362603"
 ---
 # <a name="update-shapes-and-connectors-to-reflect-the-model"></a>Aktualizowanie kształtów i łączników, aby odzwierciedlały model
 
@@ -27,7 +29,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
 ## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>Ustaw właściwości mapy kształtów, aby kontrolować widoczność elementu Dekoratora
 
-Można kontrolować widoczność dekoratora bez pisania kodu programu, konfigurując mapowanie między kształtem i klasą domeny w definicji DSL. Aby uzyskać więcej informacji, zobacz [jak zdefiniować język specyficzny dla domeny](../modeling/how-to-define-a-domain-specific-language.md).
+Można kontrolować widoczność dekoratora bez pisania kodu programu, konfigurując mapowanie między kształtem i klasą domeny w definicji DSL. Aby uzyskać więcej informacji, zobacz [How to define a Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md).
 
 ## <a name="expose-the-color-and-style-of-a-shape-as-properties"></a>Uwidocznienie koloru i stylu kształtu jako właściwości
 

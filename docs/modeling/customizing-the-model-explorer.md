@@ -1,5 +1,7 @@
 ---
 title: Dostosowywanie Eksploratora modelu
+description: Dowiedz się, jak można zmienić wygląd i zachowanie Eksploratora dla projektanta języka specyficznego dla domeny.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b69748ef44ce0ca2e16f431c0d13d99bfa449411
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 7d4bdfcea6cbc54fd620e9aacbdc6250493ca426
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90807875"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362893"
 ---
 # <a name="customizing-the-model-explorer"></a>Dostosowywanie Eksploratora modelu
 Wygląd i zachowanie Eksploratora dla projektanta języka specyficznego dla domeny można zmienić w następujący sposób:
@@ -44,7 +46,7 @@ Wygląd i zachowanie Eksploratora dla projektanta języka specyficznego dla dome
 
 2. Umieść plik BMP, który zawiera ikonę 16x16 pikseli w folderze **Dsl\Resources** w rozwiązaniu.
 
-3. W **Eksploratorze DSL**kliknij prawym przyciskiem myszy pozycję **zachowanie Eksploratora** , a następnie kliknij polecenie **Dodaj nowe ustawienia węzła Eksploratora**.
+3. W **Eksploratorze DSL** kliknij prawym przyciskiem myszy pozycję **zachowanie Eksploratora** , a następnie kliknij polecenie **Dodaj nowe ustawienia węzła Eksploratora**.
 
     Węzeł **ExplorerNodeSettings** jest wyświetlany w węźle **niestandardowe ustawienia węzła** .
 
@@ -70,7 +72,7 @@ Wygląd i zachowanie Eksploratora dla projektanta języka specyficznego dla dome
 
 2. Upewnij się, że **komentarz** odwołuje się tylko do pojedynczej klasy domeny, ustawiając liczebność roli z **tematami** nazw właściwości na 0.. 1. Nazwa właściwości powinna być **podmiotem**, a nazwa relacji powinna być **CommentReferencesSubject**.
 
-3. W **Eksploratorze DSL**kliknij prawym przyciskiem myszy pozycję **zachowanie Eksploratora** , a następnie kliknij polecenie **Dodaj nowe ustawienia węzła Eksploratora**.
+3. W **Eksploratorze DSL** kliknij prawym przyciskiem myszy pozycję **zachowanie Eksploratora** , a następnie kliknij polecenie **Dodaj nowe ustawienia węzła Eksploratora**.
 
      Węzeł **ExplorerNodeSettings** jest wyświetlany w węźle **niestandardowe ustawienia węzła** .
 
@@ -82,7 +84,7 @@ Wygląd i zachowanie Eksploratora dla projektanta języka specyficznego dla dome
 
 6. Wybierz pozycję **Właściwość wyświetlana**, a następnie w oknie **Właściwości** kliknij pole wartość **ścieżka do właściwości**. Wybierz pozycję **komentarz**, a następnie **CommentReferencesSubject**, a następnie pozycję **FlowElement**. Ścieżka wyników powinna wyglądać podobnie do **CommentReferencesSubject. Subject/! Temat**.
 
-7. W polu wartość **Właściwości**wybierz pozycję **Nazwa**.
+7. W polu wartość **Właściwości** wybierz pozycję **Nazwa**.
 
 8. Przekształć wszystkie szablony, a następnie Skompiluj i uruchom swoje rozwiązanie.
 
@@ -99,7 +101,7 @@ Wygląd i zachowanie Eksploratora dla projektanta języka specyficznego dla dome
 
 1. Otwórz rozwiązanie, które zostało utworzone we wcześniejszej procedurze.
 
-2. W **Eksploratorze DSL**kliknij prawym przyciskiem myszy pozycję **zachowanie Eksploratora** , a następnie kliknij polecenie **Dodaj nową ścieżkę domeny**.
+2. W **Eksploratorze DSL** kliknij prawym przyciskiem myszy pozycję **zachowanie Eksploratora** , a następnie kliknij polecenie **Dodaj nową ścieżkę domeny**.
 
      Węzeł **ścieżki domeny** jest wyświetlany w obszarze **ukryte węzły**.
 

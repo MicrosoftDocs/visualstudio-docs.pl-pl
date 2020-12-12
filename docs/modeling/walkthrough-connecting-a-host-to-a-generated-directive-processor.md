@@ -1,5 +1,7 @@
 ---
 title: Połącz hosta z wygenerowanym procesorem dyrektywy
+description: Dowiedz się, jak można rozszerzyć niestandardowy host, aby obsługiwał szablony tekstowe, które wywołują procesory dyrektywy.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 8dfca47159192c1f6fe25f703b54745b55d8e384
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a98e432c7eb9508d32f52e51acc1447035b9058b
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238000"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362499"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Przewodnik: łączenie hosta z wygenerowanym procesorem dyrektywy
 
@@ -51,9 +53,9 @@ Aby zdefiniować DSL, należy zainstalować następujące składniki:
 
 Ponadto musisz mieć niestandardowe przekształcenia szablonu tekstu utworzonego w [przewodniku: Tworzenie niestandardowego hosta szablonu tekstu](../modeling/walkthrough-creating-a-custom-text-template-host.md).
 
-## <a name="use-domain-specific-language-tools-to-generate-a-directive-processor"></a>Użyj narzędzia języka specyficznego dla domeny do wygenerowania procesora dyrektywy
+## <a name="use-domain-specific-language-tools-to-generate-a-directive-processor"></a>Korzystanie z narzędzi do Domain-Specific języka w celu wygenerowania procesora dyrektywy
 
-W tym instruktażu użyjesz kreatora projektant języka specyficznego dla domeny, aby utworzyć język specyficzny dla domeny dla rozwiązania DSLMinimalTest.
+W tym instruktażu użyjesz kreatora Domain-Specific projektanta języka, aby utworzyć język specyficzny dla domeny dla rozwiązania DSLMinimalTest.
 
 1. Utwórz rozwiązanie w języku specyficznym dla domeny, które ma następujące cechy:
 
@@ -65,7 +67,7 @@ W tym instruktażu użyjesz kreatora projektant języka specyficznego dla domeny
 
    - Nazwa firmy: fabrikam
 
-   Aby uzyskać więcej informacji na temat tworzenia rozwiązania dotyczącego języka specyficznego dla domeny, zobacz [How to: Create a specyficzne dla domeny rozwiązanie językowe](../modeling/how-to-create-a-domain-specific-language-solution.md).
+   Aby uzyskać więcej informacji na temat tworzenia rozwiązania dotyczącego języka specyficznego dla domeny, zobacz [How to: Create a Domain-Specific Language Solution](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
 2. W menu **Kompilacja** kliknij pozycję **Kompiluj rozwiązanie**.
 
@@ -76,13 +78,13 @@ W tym instruktażu użyjesz kreatora projektant języka specyficznego dla domeny
 
     Zostanie otwarte drugie wystąpienie programu Visual Studio.
 
-4. W przypadku kompilacji eksperymentalnej w **Eksplorator rozwiązań**kliknij dwukrotnie plik **Sample. min**.
+4. W przypadku kompilacji eksperymentalnej w **Eksplorator rozwiązań** kliknij dwukrotnie plik **Sample. min**.
 
     Plik zostanie otwarty w projektancie. Należy zauważyć, że model ma dwa elementy, ExampleElement1 i ExampleElement2, oraz link między nimi.
 
 5. Zamknij drugie wystąpienie programu Visual Studio.
 
-6. Zapisz rozwiązanie, a następnie zamknij projektant języka specyficznego dla domeny.
+6. Zapisz rozwiązanie, a następnie zamknij Domain-Specific projektanta języka.
 
 ## <a name="connect-a-custom-text-template-host-to-a-directive-processor"></a>Łączenie hosta niestandardowego szablonu tekstu z procesorem dyrektywy
 
@@ -342,7 +344,7 @@ Aby przetestować hosta niestandardowego tekstu, najpierw należy napisać szabl
 
      Niestandardowa aplikacja hosta uruchamia proces transformacji szablonu tekstu.
 
-5. W **Eksploratorze Windows**przejdź do folderu, który zawiera plik TestTemplateWithDP.txt.
+5. W **Eksploratorze Windows** przejdź do folderu, który zawiera plik TestTemplateWithDP.txt.
 
      Folder zawiera również TestTemplateWithDP1.txt pliku.
 

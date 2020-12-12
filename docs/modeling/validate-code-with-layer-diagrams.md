@@ -1,5 +1,7 @@
 ---
 title: Weryfikacja kodu przy użyciu diagramów zależności
+description: Aby upewnić się, że kod nie powoduje konfliktu z projektem, należy sprawdzić poprawność kodu przy użyciu diagramów zależności w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 09/28/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -19,12 +21,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 975fe8eac5657e245027a4811e50bbc93528cfe5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc8b36768cbac4249b964b167988119b5700d5c7
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80759702"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362551"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Weryfikacja kodu przy użyciu diagramów zależności
 
@@ -80,13 +82,13 @@ Możesz połączyć warstwy z witrynami sieci Web, dokumentami pakietu Office, z
 
 1. Na diagramie zależności zaznacz jedną lub więcej warstw, kliknij prawym przyciskiem myszy zaznaczenie, a następnie kliknij przycisk **Wyświetl linki**.
 
-2. W **Eksploratorze warstwy**zapoznaj się z kolumną **Obsługa walidacji** . Jeśli wartością jest false, element nie obsługuje walidacji.
+2. W **Eksploratorze warstwy** zapoznaj się z kolumną **Obsługa walidacji** . Jeśli wartością jest false, element nie obsługuje walidacji.
 
 ## <a name="include-other-net-assemblies-and-projects-for-validation"></a>Uwzględnienia innych projektów i zestawów .NET w walidacji
 
 Gdy przeciągasz elementy do diagramu zależności, odwołania do odpowiednich zestawów .NET lub projektów są dodawane automatycznie do folderu odwołania do **warstwy** w projekcie modelowania. Folder ten zawiera odwołania do zestawów i projektów, które są analizowane podczas walidacji. Można dołączać inne zestawy i projekty platformy .NET do walidacji bez ręcznego przeciągania ich do diagramu zależności.
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt modelowania lub folder **odwołania do warstwy** , a następnie kliknij pozycję **Dodaj odwołanie**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt modelowania lub folder **odwołania do warstwy** , a następnie kliknij pozycję **Dodaj odwołanie**.
 
 2. W oknie dialogowym **Dodaj odwołanie** wybierz zespoły lub projekty, a następnie kliknij przycisk **OK**.
 
@@ -161,7 +163,7 @@ Podczas procesu projektowania możesz pominąć niektóre konflikty zgłoszone p
 
 Te zadania umożliwiają zarządzanie błędami walidacji w oknie **Lista błędów** :
 
-|**Działanie**|**Wykonaj następujące kroki**|
+|**Do**|**Wykonaj te kroki**|
 |-|-|
 |Pomijanie wybranych błędów podczas walidacji|Kliknij prawym przyciskiem myszy jeden lub wiele wybranych błędów, wskaż **zarządzanie błędami walidacji**, a następnie kliknij przycisk **Pomiń błędy**.<br /><br /> Pominięte błędy są wyświetlane jako przekreślone. Przy następnym uruchomieniu walidacji te błędy nie pojawią się.<br /><br /> Pominięte błędy są śledzone w pliku. pominięć dla odpowiedniego pliku diagramu zależności.|
 |Zaprzestanie pomijania wybranych błędów|Kliknij prawym przyciskiem myszy wybrany pominięty błąd lub błędy, wskaż polecenie **Zarządzaj błędami walidacji**, a następnie kliknij przycisk **Zatrzymaj pomijanie błędów**.<br /><br /> Wybrane pominięte błędy pojawią się przy następnym uruchomieniu walidacji.|
@@ -182,13 +184,13 @@ Użyj edytora tekstów, aby otworzyć plik projektu modelowania (.modelproj), a 
 
 \- oraz
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt modelowania zawierający diagram zależności lub diagramy, a następnie kliknij polecenie **Właściwości**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt modelowania zawierający diagram zależności lub diagramy, a następnie kliknij polecenie **Właściwości**.
 
 2. W oknie **Właściwości** ustaw właściwość **Architektura walidacji** projektu modelowania na **wartość true**.
 
     Dotyczy to projektów modelowania w trakcie procesu walidacji.
 
-3. W **Eksplorator rozwiązań**kliknij plik diagramu zależności (layerdiagram), który ma być używany do walidacji.
+3. W **Eksplorator rozwiązań** kliknij plik diagramu zależności (layerdiagram), który ma być używany do walidacji.
 
 4. W oknie **Właściwości** upewnij się, że właściwość **Akcja kompilacji** diagramu jest ustawiona na **Sprawdź poprawność**.
 
@@ -200,7 +202,7 @@ Aby zarządzać błędami w oknie Lista błędów, zobacz [Rozwiązywanie błęd
 
 W poniższej tabeli opisano problemy związane z walidacją warstwy i ich rozwiązania. Problemy te różnią się od błędów, które wynikają z konfliktów między kodem i projektem. Aby uzyskać więcej informacji o tych błędach, zobacz [Rozwiązywanie problemów z walidacją warstwy](#troubleshoot-layer-validation-issues).
 
-|**Problem**|**Możliwa przyczyna**|**Rozdzielczość**|
+|**Problem**|**Możliwa przyczyna**|**Rozwiązanie**|
 |-|-|-|
 |Błędy walidacji nie występują w oczekiwany sposób.|Walidacja nie działa na diagramach zależności, które są kopiowane z innych diagramów zależności w Eksplorator rozwiązań i które znajdują się w tym samym projekcie modelowania. Diagramy zależności, które są kopiowane w ten sposób, zawierają te same odwołania, jak oryginalny diagram zależności.|Dodaj nowy diagram zależności do projektu modelowania.<br /><br /> Skopiuj elementy z diagramu zależności źródłowej do nowego diagramu.|
 

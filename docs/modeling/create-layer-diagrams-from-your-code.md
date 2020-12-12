@@ -1,5 +1,7 @@
 ---
 title: Tworzenie diagramów zależności z kodu
+description: Dowiedz się, jak utworzyć diagram zależności w programie Visual Studio w celu wizualizacji architektury logicznej wysokiego poziomu systemu oprogramowania.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 463e73a989deecf90e6bbfb7e8b92409b15695a5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ea19089fe8660b1169d790e25ed7ccf845404238
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545733"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363526"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Tworzenie diagramów zależności z kodu
 
@@ -45,11 +47,11 @@ Przed utworzeniem diagramu zależności upewnij się, że rozwiązanie ma projek
 
 1. W menu **Architektura** wybierz polecenie **Nowy diagram zależności**.
 
-2. W obszarze **Szablony**wybierz pozycję **Diagram zależności**.
+2. W obszarze **Szablony** wybierz pozycję **Diagram zależności**.
 
 3. Nadaj nazwę diagramowi.
 
-4. W obszarze **Dodaj do projektu modelowania**przejdź do i wybierz istniejący projekt modelowania w rozwiązaniu.
+4. W obszarze **Dodaj do projektu modelowania** przejdź do i wybierz istniejący projekt modelowania w rozwiązaniu.
 
      -lub-
 
@@ -70,7 +72,7 @@ Przed utworzeniem diagramu zależności upewnij się, że rozwiązanie ma projek
 
 4. Utwórz nowy diagram zależności dla rozwiązania przy użyciu menu **Architektura**
 
-5. Zaznacz wszystkie węzły na mapie kodu (Użyj _klawisza Ctrl_  +  _A_lub Skorzystaj z opcji _przesuwania_ , naciskając klawisz Shift przed kliknięciem, przeciągnij i zwolnij.
+5. Zaznacz wszystkie węzły na mapie kodu (Użyj _klawisza Ctrl_  +  _A_ lub Skorzystaj z opcji _przesuwania_ , naciskając klawisz Shift przed kliknięciem, przeciągnij i zwolnij.
 
 6. Przeciągnij i upuść, lub skopiuj i wklej wybrane elementy do nowego diagramu walidacji zależności.
 
@@ -85,13 +87,13 @@ Przed utworzeniem diagramu zależności upewnij się, że rozwiązanie ma projek
 
  Aby sprawdzić, czy połączony element obsługuje walidację, Otwórz **Eksploratora warstw** i sprawdź Właściwość **obsługuje walidację** elementu. Zobacz [Zarządzanie łączami do artefaktów](#Managing).
 
-|**Działanie**|**Wykonaj następujące kroki**|
+|**Do**|**Wykonaj te kroki**|
 |-|-|
-|Utworzyć warstwę dla pojedynczego artefakt|<ol><li>Przeciągnij element na diagram zależności z następujących źródeł:<br /><br /> <ul><li>**Eksplorator rozwiązań**<br /><br />         Możesz na przykład przeciągać pliki lub projekty.</li><li>Mapy kodu<br /><br />         Zapoznaj się z [zależnościami mapy w swoich rozwiązaniach](../modeling/map-dependencies-across-your-solutions.md) i [korzystaj z map kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md).</li><li>**Widok klasy** lub **Przeglądarka obiektów**</li></ul><br />     Warstwy jest wyświetlana na diagramie i jest połączona z artefaktem.</li><li>Zmień nazwę warstwy, aby odzwierciedlała obowiązki skojarzonego kodu lub artefaktów.</li></ol> **Ważne:**  Przeciąganie plików binarnych do diagramu zależności nie powoduje automatycznego dodania odwołań do projektu modelowania. Musisz ręcznie dodać do projektu modelowania pliki binarne, które chcesz walidować. **Aby dodać pliki binarne do projektu modelowania** <ol><li>W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu modelowania, a następnie wybierz **Dodaj istniejący element**.</li><li>W oknie dialogowym **Dodaj istniejący element** przejdź do plików binarnych, zaznacz je, a następnie wybierz **przycisk OK**.     Pliki binarne pojawią się w projekcie modelowania.</li><li>W **Eksplorator rozwiązań**wybierz plik binarny, który został dodany, a następnie naciśnij klawisz **F4** , aby otworzyć okno **Właściwości** .</li><li>Dla każdego pliku binarnego ustaw właściwość **Akcja kompilacji** na **Sprawdź poprawność**.</li></ol>|
+|Utworzyć warstwę dla pojedynczego artefakt|<ol><li>Przeciągnij element na diagram zależności z następujących źródeł:<br /><br /> <ul><li>**Eksplorator rozwiązań**<br /><br />         Możesz na przykład przeciągać pliki lub projekty.</li><li>Mapy kodu<br /><br />         Zapoznaj się z [zależnościami mapy w swoich rozwiązaniach](../modeling/map-dependencies-across-your-solutions.md) i [korzystaj z map kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md).</li><li>**Widok klasy** lub **Przeglądarka obiektów**</li></ul><br />     Warstwy jest wyświetlana na diagramie i jest połączona z artefaktem.</li><li>Zmień nazwę warstwy, aby odzwierciedlała obowiązki skojarzonego kodu lub artefaktów.</li></ol> **Ważne:**  Przeciąganie plików binarnych do diagramu zależności nie powoduje automatycznego dodania odwołań do projektu modelowania. Musisz ręcznie dodać do projektu modelowania pliki binarne, które chcesz walidować. **Aby dodać pliki binarne do projektu modelowania** <ol><li>W **Eksplorator rozwiązań** Otwórz menu skrótów dla projektu modelowania, a następnie wybierz **Dodaj istniejący element**.</li><li>W oknie dialogowym **Dodaj istniejący element** przejdź do plików binarnych, zaznacz je, a następnie wybierz **przycisk OK**.     Pliki binarne pojawią się w projekcie modelowania.</li><li>W **Eksplorator rozwiązań** wybierz plik binarny, który został dodany, a następnie naciśnij klawisz **F4** , aby otworzyć okno **Właściwości** .</li><li>Dla każdego pliku binarnego ustaw właściwość **Akcja kompilacji** na **Sprawdź poprawność**.</li></ol>|
 |Utwórz jedną warstwę dla wszystkich zaznaczonych artefaktów|Przeciągnij wszystkie artefakty do diagramu zależności w tym samym czasie.<br /><br /> Warstw pojawi się na diagramie i będzie połączona z artefaktami.|
 |Tworzenie warstwy dla każdego zaznaczonego artefaktu|Naciśnij i przytrzymaj klawisz **SHIFT** podczas przeciągania wszystkich artefaktów do diagramu zależności w tym samym czasie. **Uwaga:**  Jeśli używasz klawisza **SHIFT** , aby wybrać zakres elementów, po wybraniu artefaktów zwolnij klawisz. Naciśnij i przytrzymaj go ponownie podczas przeciągania artefaktów do diagramu. <br /><br /> Warstwa dla każdego artefaktu pojawia się na diagramie i jest połączona z poszczególnymi artefaktami.|
 |Dodawanie artefaktu do warstwy|Przeciągnij artefakt do warstwy.|
-|Tworzenie nowej niepołączonej warstwy|W **przyborniku**rozwiń sekcję **Diagram zależności** , a następnie przeciągnij **warstwę** do diagramu zależności.<br /><br /> Aby dodać wiele warstw, kliknij dwukrotnie narzędzie. Gdy skończysz, wybierz narzędzie **wskaźnik** lub naciśnij klawisz **ESC** .<br /><br /> — lub —<br /><br /> Otwórz menu skrótów dla diagramu zależności, wybierz polecenie **Dodaj**, a następnie wybierz **warstwa**.|
+|Tworzenie nowej niepołączonej warstwy|W **przyborniku** rozwiń sekcję **Diagram zależności** , a następnie przeciągnij **warstwę** do diagramu zależności.<br /><br /> Aby dodać wiele warstw, kliknij dwukrotnie narzędzie. Gdy skończysz, wybierz narzędzie **wskaźnik** lub naciśnij klawisz **ESC** .<br /><br /> — lub —<br /><br /> Otwórz menu skrótów dla diagramu zależności, wybierz polecenie **Dodaj**, a następnie wybierz **warstwa**.|
 |Tworzenie zagnieżdżonych warstw|Przeciągnij istniejącą warstwę na inną warstwę.<br /><br /> — lub —<br /><br /> Otwórz menu skrótów dla warstwy, wybierz polecenie **Dodaj**, a następnie wybierz **warstwa**.|
 |Tworzenie nowej warstwy zawierającej dwie lub więcej istniejących warstw|Zaznacz warstwy, otwórz menu skrótów dla zaznaczenia, a następnie wybierz **grupę**.|
 |Zmienianie koloru warstwy|Ustaw jej właściwość **Color** na odpowiedni kolor.|
@@ -115,7 +117,7 @@ Przed utworzeniem diagramu zależności upewnij się, że rozwiązanie ma projek
 
 2. Wykonaj następujące zadania, aby zarządzać tymi łączami:
 
-|**Działanie**|**W Eksploratorze warstwy**|
+|**Do**|**W Eksploratorze warstwy**|
 |-|-|
 |Usuwanie łącza między warstwą i artefaktem|Otwórz menu skrótów dla łącza artefaktu, a następnie wybierz polecenie **Usuń**.|
 |Przenoszenie łącza z jednej warstwy na drugą|Przeciągnij łącze artefaktu do istniejącej warstwy na diagramie.<br /><br /> — lub —<br /><br /> 1. Otwórz menu skrótów dla łącza artefaktu, a następnie wybierz polecenie **Wytnij**.<br />2. na diagramie zależności Otwórz menu skrótów dla warstwy, a następnie wybierz **Wklej**.|
@@ -127,7 +129,7 @@ Przed utworzeniem diagramu zależności upewnij się, że rozwiązanie ma projek
  Zależność istnieje wszędzie tam, gdzie artefakt, który jest skojarzony z jedną warstwą zawiera odwołanie do artefaktu skojarzonego z inną warstwą. Na przykład klasa w jednej warstwie deklaruje zmienną, która zawiera klasę w innej warstwie. Możesz odtwarzać istniejące zależności dla artefaktów, które są połączone z warstwami na diagramie.
 
 > [!NOTE]
-> Zależności nie mogą być odtwarzane dla niektórych rodzajów artefaktów. Na przykład nie zostaną odtworzone żadne zależności z lub do warstwy, która jest połączona z plikiem tekstowym. Aby sprawdzić, które artefakty mają zależności, które można odtworzyć, otwórz menu skrótów dla jednej lub wielu warstw, a następnie wybierz polecenie **Wyświetl linki**. W **Eksploratorze warstwy**zapoznaj się z kolumną **Obsługa walidacji** . Zależności nie będą odtwarzane w przypadku artefaktów, dla których ta kolumna pokazuje **wartość false**.
+> Zależności nie mogą być odtwarzane dla niektórych rodzajów artefaktów. Na przykład nie zostaną odtworzone żadne zależności z lub do warstwy, która jest połączona z plikiem tekstowym. Aby sprawdzić, które artefakty mają zależności, które można odtworzyć, otwórz menu skrótów dla jednej lub wielu warstw, a następnie wybierz polecenie **Wyświetl linki**. W **Eksploratorze warstwy** zapoznaj się z kolumną **Obsługa walidacji** . Zależności nie będą odtwarzane w przypadku artefaktów, dla których ta kolumna pokazuje **wartość false**.
 
 - Wybierz jedną lub wiele warstw, otwórz menu skrótów dla wybranej warstwy, a następnie wybierz polecenie **Generuj zależności**.
 
@@ -136,7 +138,7 @@ Przed utworzeniem diagramu zależności upewnij się, że rozwiązanie ma projek
 ## <a name="edit-layers-and-dependencies-to-show-the-intended-design"></a><a name="EditDependencies"></a> Edycja warstw i zależności w celu pokazania zamierzonego projektu
  Aby opisać zmiany, które planujesz wprowadzić do systemu lub zamierzonej architektury, Edytuj diagram zależności:
 
-|**Działanie**|**Wykonaj następujące kroki**|
+|**Do**|**Wykonaj następujące kroki**|
 |-|-|
 |Zmień lub ogranicz kierunek zależności|Ustaw jej właściwość **Direction** .|
 |Tworzenie nowych zależności|Użyj **zależności** i **dwukierunkowych narzędzi zależności** .<br /><br /> Aby narysować wiele zależności, kliknij dwukrotnie narzędzie. Gdy skończysz, wybierz narzędzie **wskaźnik** lub naciśnij klawisz **ESC** .|

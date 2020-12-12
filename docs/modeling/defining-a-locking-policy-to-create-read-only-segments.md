@@ -1,5 +1,7 @@
 ---
 title: Definiowanie zasad blokowania na potrzeby tworzenia segmentów tylko do odczytu
+description: Dowiedz się, jak zdefiniować zasady dla programu, aby zablokować część lub wszystkie modele języka specyficznego dla domeny (DSL), aby można było je odczytać, ale nie zmieniać.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0778df98ff5f9665da7220fe40972c9a8f8d8e1d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a76ae38b686e1c77acd9561e9c48fd3444565b0a
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536087"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363201"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definiowanie zasad blokowania na potrzeby tworzenia segmentów tylko do odczytu
 Interfejs API niezmienności w programie Visual Studio Wizualizacja i Modeling SDK umożliwia programowi zablokowanie części lub całego modelu języka specyficznego dla domeny (DSL), który może być odczytywany, ale nie zmieniany. Tej opcji tylko do odczytu można na przykład użyć, aby użytkownik mógł poproś współpracowników o dodawanie adnotacji i przeglądanie modelu DSL, ale może uniemożliwić im zmianę oryginalnego.

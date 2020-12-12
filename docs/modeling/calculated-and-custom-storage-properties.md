@@ -1,5 +1,7 @@
 ---
 title: Obliczone i niestandardowe właściwości przechowywania
+description: Dowiedz się, w jaki sposób wszystkie właściwości domeny w języku specyficznym dla domeny (DSL) mogą być wyświetlane użytkownikowi na diagramie i w Eksploratorze języka.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52915f0bac2bd172daf909541ecfa86396d90a5d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c50d205745917b3af7de638a17921f4bcdca509
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76115197"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363552"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Obliczone i niestandardowe właściwości przechowywania
 Wszystkie właściwości domeny w języku specyficznym dla domeny (DSL) mogą być wyświetlane użytkownikowi na diagramie i w Eksploratorze języka, a dostęp do niego można uzyskać za pomocą kodu programu. Jednak właściwości różnią się w sposób, w jaki są przechowywane ich wartości.
@@ -43,11 +45,11 @@ Wszystkie właściwości domeny w języku specyficznym dla domeny (DSL) mogą by
 
 4. W menu **Kompilacja** kliknij pozycję **Kompiluj rozwiązanie**.
 
-     Zostanie wyświetlony następujący komunikat o błędzie: "*YourClass* nie zawiera definicji dla get*YourProperty*".
+     Zostanie wyświetlony następujący komunikat o błędzie: "*YourClass* nie zawiera definicji dla get *YourProperty*".
 
 5. Kliknij dwukrotnie komunikat o błędzie.
 
-     Zostanie otwarty Dsl\GeneratedCode\DomainClasses.cs lub DomainRelationships.cs. Nad wyróżnionym wywołaniem metody komentarz jest monitowany o podanie implementacji dla get*YourProperty*().
+     Zostanie otwarty Dsl\GeneratedCode\DomainClasses.cs lub DomainRelationships.cs. Nad wyróżnionym wywołaniem metody komentarz jest monitowany o podanie implementacji dla get *YourProperty*().
 
     > [!NOTE]
     > Ten plik jest generowany z DslDefinition. DSL. Jeśli edytujesz ten plik, zmiany zostaną utracone przy następnym kliknięciu pozycji **Przekształć wszystkie szablony**. Zamiast tego należy dodać wymaganą metodę w oddzielnym pliku.
@@ -66,7 +68,7 @@ Wszystkie właściwości domeny w języku specyficznym dla domeny (DSL) mogą by
     }  }
     ```
 
-8. W przypadku ustawienia **rodzaju** na **Magazyn niestandardowy**należy również podać `Set` metodę. Na przykład:
+8. W przypadku ustawienia **rodzaju** na **Magazyn niestandardowy** należy również podać `Set` metodę. Na przykład:
 
     ```
     void SetAgeValue(int value)
@@ -79,7 +81,7 @@ Wszystkie właściwości domeny w języku specyficznym dla domeny (DSL) mogą by
 
 9. Skompiluj i uruchom rozwiązanie.
 
-10. Przetestuj właściwość. Upewnij się, że próbujesz **cofnąć** i **ponownie**wykonać operację.
+10. Przetestuj właściwość. Upewnij się, że próbujesz **cofnąć** i **ponownie** wykonać operację.
 
 ## <a name="transactions-and-custom-setters"></a><a name="setters"></a> Transakcje i niestandardowe metody ustawiające
  W metodzie Set niestandardowej właściwości magazynu nie trzeba otwierać transakcji, ponieważ metoda jest zwykle wywoływana wewnątrz aktywnej transakcji.

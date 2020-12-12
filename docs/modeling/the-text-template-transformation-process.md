@@ -1,5 +1,7 @@
 ---
 title: Proces transformacji szablonu tekstowego
+description: Dowiedz się, że proces przekształcania szablonu tekstu pobiera plik szablonu tekstu jako dane wejściowe i generuje nowy plik tekstowy jako dane wyjściowe.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d6cca9a4a98c4afcffa8322acb75a4cef8a7527
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f0caadfe9abf38b2d83995da7efa32d618b4bfe0
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565867"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362655"
 ---
 # <a name="the-text-template-transformation-process"></a>Proces transformacji szablonu tekstowego
 Proces przekształcania szablonu tekstu pobiera plik szablonu tekstu jako dane wejściowe i generuje nowy plik tekstowy jako dane wyjściowe. Na przykład można użyć szablonów tekstowych do generowania kodu Visual Basic lub C# lub można wygenerować raport HTML.

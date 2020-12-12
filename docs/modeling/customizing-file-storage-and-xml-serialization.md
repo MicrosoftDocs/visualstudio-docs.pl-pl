@@ -1,5 +1,7 @@
 ---
 title: Dostosowywanie przechowywania plików i serializacji XML
+description: Zapoznaj się z plikiem XML utworzonym lub zaktualizowanym podczas zapisywania wystąpienia lub modelu w języku specyficznym dla domeny (DSL) w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -11,23 +13,23 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07592247e0afb870f3c4774c6f2023a6e8141cd1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e889bb81b4c13d003beb15f733d053ef159b197f
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542743"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362941"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>Dostosowywanie przechowywania plików i serializacji XML
 
-Gdy użytkownik zapisuje wystąpienie lub *model*w języku specyficznym dla domeny (DSL) w programie Visual Studio, zostanie utworzony lub zaktualizowany plik XML. Plik można ponownie załadować, aby ponownie utworzyć model w sklepie.
+Gdy użytkownik zapisuje wystąpienie lub *model* w języku specyficznym dla domeny (DSL) w programie Visual Studio, zostanie utworzony lub zaktualizowany plik XML. Plik można ponownie załadować, aby ponownie utworzyć model w sklepie.
 
 Można dostosować schemat serializacji, dostosowując ustawienia w obszarze **zachowanie serializacji kodu XML** w Eksploratorze DSL. Istnieje węzeł w ramach **zachowania serializacji kodu XML** dla każdej klasy domeny, właściwości i relacji. Relacje znajdują się w obszarze ich klas źródłowych. Istnieją również węzły odpowiadające klasom kształtu, łącznika i diagramu.
 
 Możesz również napisać kod programu, aby uzyskać bardziej zaawansowane dostosowywanie.
 
 > [!NOTE]
-> Jeśli chcesz zapisać model w określonym formacie, ale nie musisz go ponownie załadować z tego formularza, rozważ użycie szablonów tekstowych do wygenerowania danych wyjściowych z modelu zamiast niestandardowego schematu serializacji. Aby uzyskać więcej informacji, zobacz [generowanie kodu z języka specyficznego dla domeny](../modeling/generating-code-from-a-domain-specific-language.md).
+> Jeśli chcesz zapisać model w określonym formacie, ale nie musisz go ponownie załadować z tego formularza, rozważ użycie szablonów tekstowych do wygenerowania danych wyjściowych z modelu zamiast niestandardowego schematu serializacji. Aby uzyskać więcej informacji, zobacz [generowanie kodu z poziomu Domain-Specific języka](../modeling/generating-code-from-a-domain-specific-language.md).
 
 ## <a name="model-and-diagram-files"></a>Pliki modelu i diagramu
 
@@ -79,7 +81,7 @@ Ten model został zapisany, a następnie ponownie otwarty w edytorze tekstu XML:
 
 Zwróć uwagę na następujące kwestie dotyczące serializowanego modelu:
 
-- Każdy węzeł XML ma nazwę, która jest taka sama jak nazwa klasy domeny, z tą różnicą, że inicjał jest pisany małymi literami. Na przykład `familyTreeModel` i `person`.
+- Każdy węzeł XML ma nazwę, która jest taka sama jak nazwa klasy domeny, z tą różnicą, że inicjał jest pisany małymi literami. Przykład: `familyTreeModel` i `person`.
 
 - Właściwości domeny, takie jak Name i BirthYear, są serializowane jako atrybuty w węzłach XML. Ponownie początkowy znak nazwy właściwości jest konwertowany na małe litery.
 
@@ -124,7 +126,7 @@ Kwalifikowane monikery kluczy są łatwiejsze do odczytania niż monikery identy
 
 1. Upewnij się, że **jest to klucz moniker** `false` dla każdej właściwości domeny w klasie i jej klasach bazowych.
 
-    1. W Eksploratorze DSL rozwiń pozycję **XML serializacji Behavior\Class dane \\ \<the domain class> \Element**danych.
+    1. W Eksploratorze DSL rozwiń pozycję **XML serializacji Behavior\Class dane \\ \<the domain class> \Element** danych.
 
     2. Sprawdź, czy **jest to klucz moniker** `false` dla każdej właściwości domeny.
 
@@ -166,7 +168,7 @@ Istnieje kilka metod, które pomagają uniknąć tej sytuacji:
 
      Jest automatycznie generowana Metoda walidacji, która sprawdza, czy niejasności. Metoda jest w `Load` kategorii walidacji. Pozwala to upewnić się, że użytkownik otrzyma ostrzeżenie, że może nie być możliwe ponowne otwarcie pliku.
 
-     Aby uzyskać więcej informacji, zobacz [Walidacja w języku specyficznym dla domeny](../modeling/validation-in-a-domain-specific-language.md).
+     Aby uzyskać więcej informacji, zobacz [Walidacja w języku Domain-Specific](../modeling/validation-in-a-domain-specific-language.md).
 
 ### <a name="moniker-paths-and-qualifiers"></a>Ścieżki i kwalifikatory monikera
 
@@ -230,7 +232,7 @@ Aby wprowadzić następujące dostosowania, rozwiń węzeł **zachowanie seriali
     </familyTreeModel>
     ```
 
-- Ustaw **element reprezentacji**,  =  **Element** aby miał Właściwość domena zapisana jako element, a nie jako wartość atrybutu.
+- Ustaw **element reprezentacji**,  =   aby miał Właściwość domena zapisana jako element, a nie jako wartość atrybutu.
 
     ```xml
     <person name="Elizabeth I" birthYear="1533">
@@ -274,7 +276,7 @@ Te elementy są dostępne w Eksploratorze DSL w obszarze **dane serializacji XML
 |Nazwa elementu|Nazwa węzła XML dla elementów tej klasy. Wartością domyślną jest mała wersja klasy domeny.|
 |Nazwa atrybutu monikera|Nazwa atrybutu używanego w elementach monikera, który będzie zawierać odwołanie. Jeśli pole pozostanie puste, zostanie użyta nazwa właściwości klucza lub identyfikatora.<br /><br /> W tym przykładzie jest to "nazwa":  `<personMoniker name="/Mike Nash"/>`|
 |Nazwa elementu monikera|Nazwa elementu XML używanego dla monikerów odwołujących się do elementów tej klasy.<br /><br /> Wartość domyślna to mała wersja nazwy klasy z sufiksem "moniker". Na przykład `personMoniker`.|
-|Nazwa typu monikera|Nazwa typu XSD wygenerowanego dla monikerów elementów tej klasy. XSD znajduje się w ** \\ \* schemacie Code Dsl\Generated. xsd**|
+|Nazwa typu monikera|Nazwa typu XSD wygenerowanego dla monikerów elementów tej klasy. XSD znajduje się w **\\ \* schemacie Code Dsl\Generated. xsd**|
 |Identyfikator serializacji|W przypadku wartości true identyfikator GUID elementu jest dołączany do pliku. Musi to być prawdziwe, jeśli nie istnieje właściwość, która jest oznaczona jako **klucz monikera** , a DSL definiuje relacje odwołania do tej klasy.|
 |Nazwa typu|Nazwa typu XML wygenerowanego w formacie XSD z wytworzonej klasy domeny.|
 |Uwagi|Nieformalne uwagi skojarzone z tym elementem|

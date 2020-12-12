@@ -1,5 +1,7 @@
 ---
 title: 'Diagramy zależności: Wskazówki'
+description: Dowiedz się, jak opisać architekturę aplikacji na wysokim poziomie, tworząc diagramy zależności w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 09/28/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f8ec90d045259cd5d10533db6096154376d48fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5bfef2f9397fbe8dfeceaa8789cf8d118315b26d
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594633"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363968"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Diagramy zależności: wskazówki
 
@@ -30,7 +32,7 @@ Aby sprawdzić, które wersje programu Visual Studio obsługują tę funkcję, z
 
 ## <a name="what-is-a-dependency-diagram"></a>Co to jest diagram zależności?
 
-Podobnie jak w przypadku tradycyjnego diagramu architektury, diagram zależności identyfikuje główne składniki lub jednostki funkcjonalne projektu i ich współzależności. Każdy węzeł na diagramie o nazwie *warstwa*reprezentuje logiczną grupę przestrzeni nazw, projektów lub innych artefaktów. Możesz narysować zależności, które powinny istnieć w projekcie. W przeciwieństwie do tradycyjnego diagramu architektury można sprawdzić, czy rzeczywiste zależności w kodzie źródłowym są zgodne z zamierzonymi zależnościami określonymi przez użytkownika. Dzięki wprowadzeniu częściowej walidacji regularnej kompilacji w [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] programie można upewnić się, że kod programu będzie nadal przestrzegać architektury systemu przy użyciu przyszłych zmian. Zobacz [diagramy zależności: odwołanie](../modeling/layer-diagrams-reference.md).
+Podobnie jak w przypadku tradycyjnego diagramu architektury, diagram zależności identyfikuje główne składniki lub jednostki funkcjonalne projektu i ich współzależności. Każdy węzeł na diagramie o nazwie *warstwa* reprezentuje logiczną grupę przestrzeni nazw, projektów lub innych artefaktów. Możesz narysować zależności, które powinny istnieć w projekcie. W przeciwieństwie do tradycyjnego diagramu architektury można sprawdzić, czy rzeczywiste zależności w kodzie źródłowym są zgodne z zamierzonymi zależnościami określonymi przez użytkownika. Dzięki wprowadzeniu częściowej walidacji regularnej kompilacji w [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] programie można upewnić się, że kod programu będzie nadal przestrzegać architektury systemu przy użyciu przyszłych zmian. Zobacz [diagramy zależności: odwołanie](../modeling/layer-diagrams-reference.md).
 
 ## <a name="how-to-design-or-update-your-app-with-dependency-diagrams"></a>Jak projektować lub aktualizować aplikację przy użyciu diagramów zależności
 
@@ -90,7 +92,7 @@ Zobacz:
 Zależność istnieje wszędzie tam, gdzie artefakt, który jest skojarzony z jedną warstwą zawiera odwołanie do artefaktu skojarzonego z inną warstwą. Na przykład klasa w jednej warstwie deklaruje zmienną, która zawiera klasę w innej warstwie. Istniejące zależności można wykrywać przez odbudowane.
 
 > [!NOTE]
-> Zależności nie mogą być odtwarzane dla niektórych rodzajów artefaktów. Na przykład nie zostaną odtworzone żadne zależności z lub do warstwy, która jest połączona z plikiem tekstowym. Aby sprawdzić, które artefakty mają zależności, które można odtworzyć, kliknij prawym przyciskiem myszy jedną lub wiele warstw, a następnie kliknij pozycję **Wyświetl linki**. W **Eksploratorze warstwy**zapoznaj się z kolumną **Obsługa walidacji** . Zależności nie będą odtwarzane w przypadku artefaktów, dla których ta kolumna pokazuje **wartość false**.
+> Zależności nie mogą być odtwarzane dla niektórych rodzajów artefaktów. Na przykład nie zostaną odtworzone żadne zależności z lub do warstwy, która jest połączona z plikiem tekstowym. Aby sprawdzić, które artefakty mają zależności, które można odtworzyć, kliknij prawym przyciskiem myszy jedną lub wiele warstw, a następnie kliknij pozycję **Wyświetl linki**. W **Eksploratorze warstwy** zapoznaj się z kolumną **Obsługa walidacji** . Zależności nie będą odtwarzane w przypadku artefaktów, dla których ta kolumna pokazuje **wartość false**.
 
 ### <a name="to-reverse-engineer-existing-dependencies-between-layers"></a>Aby odtworzyć istniejące zależności między warstwami
 
@@ -102,7 +104,7 @@ Zazwyczaj zobaczysz niektóre zależności, które nie powinny istnieć. Możesz
 
 Aby opisać zmiany, które planujesz wprowadzić do systemu lub zamierzonej architektury, wykonaj następujące kroki, aby edytować diagram zależności. Można również rozważyć wprowadzenie zmian refaktoryzacji w celu poprawy struktury kodu przed jego rozszerzeniem. Zobacz [ulepszanie struktury kodu](#Improving).
 
-|**Działanie**|**Wykonaj następujące kroki**|
+|**Do**|**Wykonaj następujące kroki**|
 |-|-|
 |Usuń zależność, która nie powinna istnieć|Kliknij zależność, a następnie naciśnij klawisz **delete**.|
 |Zmień lub ogranicz kierunek zależności|Ustaw jej właściwość **Direction** .|

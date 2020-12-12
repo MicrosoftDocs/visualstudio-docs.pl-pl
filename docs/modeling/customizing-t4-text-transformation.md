@@ -1,5 +1,7 @@
 ---
 title: Dopasowanie transformacji tekstu T4
+description: Dowiedz się, jak można zwiększyć domyślny proces transformacji szablonu, dostosowując procesor dyrektywy tekstu lub hosta szablonu tekstu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e35c279f397f1228c17fb6a41a18a2fe583ab88
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b168e0e66b7704c3e78a241f76ee4122278c9ed
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75589737"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362915"
 ---
 # <a name="customize-t4-text-transformation"></a>Dostosowywanie przekształcenia tekstu T4
 
@@ -33,6 +35,6 @@ Szablony tekstowe to funkcja programu Visual Studio, która umożliwia generowan
 
  Jeśli piszesz rozszerzenie programu Visual Studio, rozważ użycie istniejącej usługi transformacji tekstu zamiast pisania własnego hosta. Aby uzyskać więcej informacji, zobacz [Wywoływanie transformacji tekstu w rozszerzeniu programu vs](../modeling/invoking-text-transformation-in-a-vs-extension.md).
 
-## <a name="reference"></a>Tematy pomocy
+## <a name="reference"></a>Dokumentacja
 
 - [Napisz szablon tekstowy T4](../modeling/writing-a-t4-text-template.md) zawiera składnię dyrektyw szablonu tekstu i bloków sterujących.

@@ -1,5 +1,7 @@
 ---
 title: Tworzenie języka specyficznego dla domeny opartego na WPF
+description: Dowiedz się, jak utworzyć język specyficzny dla domeny, który ma projektanta WPF zamiast projektanta graficznego.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf68270a55ae121e223251d035659459723fc045
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ef1aaf4f26e6459f48345a2f9552ab09a89da9d3
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114855"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363448"
 ---
 # <a name="create-a-wpf-based-domain-specific-language"></a>Tworzenie języka specyficznego dla domeny opartego na podsystemie WPF
 

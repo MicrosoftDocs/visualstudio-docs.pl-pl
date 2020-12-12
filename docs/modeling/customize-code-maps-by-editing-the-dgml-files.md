@@ -1,5 +1,7 @@
 ---
 title: Dostosowanie map kodu przez edycję plików DGML
+description: Dowiedz się, jak dostosować mapę kodu, edytując jej plik DGML (Direct Markup Language).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -20,12 +22,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24afbfcfe31de52ac51329bb67df41cc59dd6f1e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2e9b1126b258e36c0aeffd18b9319b15da2b4639
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547280"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363431"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Dostosowanie map kodu przez edycję plików DGML
 
@@ -603,7 +605,7 @@ Edytuj plik. dgml mapy kodu w edytorze tekstu lub XML. Jeśli mapa jest części
 
       2. Ustaw `Id` atrybut na nazwę nowego atrybutu odwołania.
 
-      3. Dodaj `IsReference` atrybut i ustaw go tak `True` , aby odwołanie pojawiło się w menu kontekstowym elementu **Go To Reference** kodu.
+      3. Dodaj `IsReference` atrybut i ustaw go tak `True` , aby odwołanie pojawiło się w menu kontekstowym elementu  kodu.
 
       4. Użyj `Label` atrybutu, aby określić tekst wyświetlany dla elementu kodu **Przejdź do** menu skrótów.
 

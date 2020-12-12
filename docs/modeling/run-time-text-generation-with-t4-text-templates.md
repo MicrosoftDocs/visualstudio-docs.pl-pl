@@ -1,5 +1,7 @@
 ---
 title: Generowanie tekstu czasu wykonywania przy użyciu szablonów tekstowych T4
+description: Dowiedz się, w jaki sposób można generować ciągi tekstowe w aplikacji w czasie wykonywania przy użyciu szablonów tekstowych środowiska uruchomieniowego programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 344e15b69bf3e8308c62c6fa1074720b0cd7618d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fcb7048b4319d1edb46911a74e96f440540e4299
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520838"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363942"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generowanie tekstu czasu wykonywania przy użyciu szablonów tekstowych T4
 
@@ -49,7 +51,7 @@ Zwróć uwagę, że szablon jest stroną HTML, w której części zmiennych zost
 
 Użycie szablonu w aplikacji sprawia, że można łatwiej zobaczyć ostateczną postać danych wyjściowych niż na przykład długa seria instrukcji Write. Wprowadzanie zmian w formularzu danych wyjściowych jest łatwiejsze i bardziej niezawodne.
 
-## <a name="creating-a-run-time-text-template-in-any-application"></a>Tworzenie szablonu tekstu w czasie wykonywania w dowolnej aplikacji
+## <a name="creating-a-run-time-text-template-in-any-application"></a>Tworzenie szablonu tekstu Run-Time w dowolnej aplikacji
 
 ### <a name="to-create-a-run-time-text-template"></a>Aby utworzyć szablon tekstu czasu wykonywania
 
@@ -74,7 +76,7 @@ Użycie szablonu w aplikacji sprawia, że można łatwiej zobaczyć ostateczną 
     <#@ import namespace="System.Collections.Generic" #>
     ```
 
-## <a name="converting-an-existing-file-to-a-run-time-template"></a>Konwertowanie istniejącego pliku na szablon czasu wykonywania
+## <a name="converting-an-existing-file-to-a-run-time-template"></a>Konwertowanie istniejącego pliku na szablon Run-Time
 
 Dobrym sposobem na utworzenie szablonu jest przekonwertowanie istniejącego przykładu danych wyjściowych. Na przykład, jeśli aplikacja będzie generować pliki HTML, możesz zacząć od utworzenia zwykłego pliku HTML. Upewnij się, że działa prawidłowo i że jego wygląd jest poprawny. Następnie Uwzględnij je w projekcie programu Visual Studio i Konwertuj go na szablon.
 
@@ -95,7 +97,7 @@ Dobrym sposobem na utworzenie szablonu jest przekonwertowanie istniejącego przy
 
     `<#@ template language="C#" #>`
 
-## <a name="the-content-of-the-run-time-template"></a>Zawartość szablonu czasu wykonywania
+## <a name="the-content-of-the-run-time-template"></a>Zawartość szablonu Run-Time
 
 ### <a name="template-directive"></a>Szablon — dyrektywa
 
@@ -191,7 +193,7 @@ partial class MyWebPage
     public MyWebPage(MyData data) { this.m_data = data; }}
 ```
 
-W pliku szablonu **MyWebPage.tt**można napisać:
+W pliku szablonu **MyWebPage.tt** można napisać:
 
 ```html
 <h2>Sales figures</h2>
@@ -294,7 +296,7 @@ Dołączona zawartość może zawierać dowolną kombinację kodu programu i zwy
 
 Dyrektywy include można użyć w dowolnym miejscu tekstu pliku szablonu lub w dołączonym pliku.
 
-### <a name="inheritance-between-run-time-text-templates"></a>Dziedziczenie między szablonami tekstu w czasie wykonywania
+### <a name="inheritance-between-run-time-text-templates"></a>Dziedziczenie między szablonami tekstu Run-Time
 
 Zawartość między szablonami czasu wykonywania można udostępnić, pisząc szablon klasy bazowej, który może być abstrakcyjny. Użyj `inherits` parametru `<@#template#>` dyrektywy, aby odwołać się do innej klasy szablonu środowiska uruchomieniowego.
 

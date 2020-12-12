@@ -1,5 +1,7 @@
 ---
 title: Tworzenie struktury rozwiązania modelowania
+description: Poznaj schemat modelowania służący do dzielenia aplikacji na różne części, które odpowiadają warstwom na ogólnym diagramie warstwowym.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc4eba7dc4d185cbd8eb4f1b073fce8b0c9fb07e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d2f865cf66da0bb4496a3d754a49d1f4dcc70ff
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545044"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363734"
 ---
 # <a name="structure-your-modeling-solution"></a>Tworzenie struktury rozwiązania modelowania
 
@@ -52,7 +54,7 @@ W średnim lub dużym projekcie struktura zespołu opiera się na strukturze apl
 
    Teraz masz model dla każdej warstwy oraz model architektury aplikacji. Każdy model jest zawarty we własnym rozwiązaniu. Dzięki temu członkowie zespołu mogą korzystać z warstw w tym samym czasie.
 
-2. Do rozwiązania architektury Dodaj projekt modelowania dla każdego rozwiązania warstwy. Aby to zrobić, Otwórz rozwiązanie architektury. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł rozwiązanie, wskaż polecenie Dodaj, a następnie kliknij pozycję **istniejący projekt**. Przejdź do projektu modelowania (. modelproj) w jednym rozwiązaniu warstwy.
+2. Do rozwiązania architektury Dodaj projekt modelowania dla każdego rozwiązania warstwy. Aby to zrobić, Otwórz rozwiązanie architektury. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł rozwiązanie, wskaż polecenie Dodaj, a następnie kliknij pozycję **istniejący projekt**. Przejdź do projektu modelowania (. modelproj) w jednym rozwiązaniu warstwy.
 
    Każdy model jest teraz widoczny w dwóch rozwiązaniach: jego rozwiązanie "Home" i rozwiązanie architektury.
 
@@ -72,9 +74,9 @@ W średnim lub dużym projekcie struktura zespołu opiera się na strukturze apl
 
 #### <a name="use-a-separate-package-for-each-layer"></a>Użyj oddzielnego pakietu dla każdej warstwy
 
-1. W rozwiązaniu dla każdej warstwy Dodaj projekt z modelem architektury. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł rozwiązanie, wskaż polecenie **Dodaj**, a następnie kliknij pozycję **istniejący projekt**. Dostęp do pojedynczego projektu modelowania można teraz uzyskać z każdego rozwiązania: projektu architektury i projektu deweloperskiego dla każdej warstwy.
+1. W rozwiązaniu dla każdej warstwy Dodaj projekt z modelem architektury. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł rozwiązanie, wskaż polecenie **Dodaj**, a następnie kliknij pozycję **istniejący projekt**. Dostęp do pojedynczego projektu modelowania można teraz uzyskać z każdego rozwiązania: projektu architektury i projektu deweloperskiego dla każdej warstwy.
 
-2. W modelu udostępnionym Utwórz pakiet dla każdej warstwy: w **Eksplorator rozwiązań**wybierz projekt modelowania. W **Eksploratorze modelu UML**kliknij prawym przyciskiem myszy węzeł główny modelu, wskaż polecenie **Dodaj**, a następnie kliknij pozycję **pakiet**.
+2. W modelu udostępnionym Utwórz pakiet dla każdej warstwy: w **Eksplorator rozwiązań** wybierz projekt modelowania. W **Eksploratorze modelu UML** kliknij prawym przyciskiem myszy węzeł główny modelu, wskaż polecenie **Dodaj**, a następnie kliknij pozycję **pakiet**.
 
    Każdy pakiet będzie zawierać diagramy opisujące wymagania i projekt odpowiedniej warstwy.
 

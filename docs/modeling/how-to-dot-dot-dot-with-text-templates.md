@@ -1,5 +1,7 @@
 ---
 title: How to ... with — Szablony tekstowe
+description: Poznaj odpowiedzi na często zadawane pytania dotyczące generowania tekstu przy użyciu szablonów tekstowych.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7ecabc00f37cb199f203bcd71a1b72bdbfbe1a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50844ce8c6943fcf6b2a0b91c7fd2cfcb6184094
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594659"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363188"
 ---
 # <a name="how-to--with-text-templates"></a>How to ... with — Szablony tekstowe
 Szablony tekstowe w programie Visual Studio zapewniają przydatny sposób generowania tekstu dowolnego rodzaju. Za pomocą szablonów tekstowych można generować tekst w czasie wykonywania jako część aplikacji i w czasie projektowania, aby wygenerować część kodu projektu. W tym temacie przedstawiono podsumowanie najczęściej zaproszonych "Jak mogę...?" masz.
@@ -75,7 +77,7 @@ Jeśli piszesz metody samodzielnie:
 
      `foreach (Book book in this.Library) { ... }`
 
-     Aby uzyskać więcej informacji, zobacz [wprowadzenie z językami specyficznymi dla domeny](../modeling/getting-started-with-domain-specific-languages.md) i [generowanie kodu z języka specyficznego dla domeny](../modeling/generating-code-from-a-domain-specific-language.md).
+     Aby uzyskać więcej informacji, zobacz [wprowadzenie w językach Domain-Specific](../modeling/getting-started-with-domain-specific-languages.md) i [generowanie kodu z poziomu języka Domain-Specific](../modeling/generating-code-from-a-domain-specific-language.md).
 
 ### <a name="get-data-from-visual-studio"></a>Pobieranie danych z programu Visual Studio
  Aby korzystać z usług oferowanych w programie Visual Studio, ustaw `hostSpecific` atrybut i Załaduj `EnvDTE` zestaw. Na przykład:

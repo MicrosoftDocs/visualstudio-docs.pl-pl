@@ -1,5 +1,7 @@
 ---
 title: Wiele języków DSL w jednym rozwiązaniu
+description: Dowiedz się, w jaki sposób można spakować kilka języków specyficznych dla domeny (językami DSL) jako część jednego rozwiązania, aby zostały zainstalowane razem.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2eef29db24da3be0a9376ea76a9a1a551af9e1a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1fbadc93f6245427284ea10c1cdd7cf99c5a7f68
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542600"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363095"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Wiele języków DSL w jednym rozwiązaniu
 
@@ -32,7 +34,7 @@ Do integracji wielu językami DSL można użyć kilku technik. Aby uzyskać wię
 
    - Zmień nazwy projektów **DSL** i **DslPackage** tak, aby były różne. Na przykład: `Dsl1` , `DslPackage1` , `Dsl2` , `DslPackage2` .
 
-   - W każdym **DslPackage \* \ source.Extension.tt**zaktualizuj ten wiersz do prawidłowej nazwy projektu DSL:
+   - W każdym **DslPackage \* \ source.Extension.tt** zaktualizuj ten wiersz do prawidłowej nazwy projektu DSL:
 
       `string dslProjectName = "Dsl2";`
 

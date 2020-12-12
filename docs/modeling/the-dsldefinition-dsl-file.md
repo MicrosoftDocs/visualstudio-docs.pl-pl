@@ -1,5 +1,7 @@
 ---
 title: Plik DslDefinition.dsl
+description: Zapoznaj się ze strukturą pliku DslDefinition. DSL w projekcie DSL rozwiązania narzędzi DSL, które definiuje język specyficzny dla domeny.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 893f39149a9000f3672c5b3043551bcbd53e6b87
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: c5db379447f39ed3d0c2b82aee23c1ac94aad34d
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808958"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362785"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Plik DslDefinition.dsl
 
@@ -22,7 +24,7 @@ W tym temacie opisano strukturę pliku DslDefinition. DSL w projekcie DSL [!INCL
 
 Ogólnie rzecz biorąc, użyj *Projektant języka specyficznego dla domeny* , aby edytować plik DslDefinition. DSL. Jednak jego pierwotna postać to XML, a plik DslDefinition. DSL można otworzyć w edytorze XML. Przydatne może być zrozumienie, jakie informacje zawiera plik i jak są zorganizowane na potrzeby debugowania i rozszerzania.
 
-Przykłady w tym temacie są pobierane z szablonu rozwiązania diagram składników. Aby zapoznać się z przykładem, Utwórz rozwiązanie dotyczące języka specyficznego dla domeny, które jest oparte na szablonie rozwiązania model składników. Po utworzeniu rozwiązania plik DslDefinition. DSL zostanie wyświetlony w projektant języka specyficznego dla domeny. Zamknij plik, kliknij go prawym przyciskiem myszy w **Eksplorator rozwiązań**, wskaż polecenie **Otwórz za pomocą**, kliknij **Edytor XML**, a następnie kliknij przycisk **OK**.
+Przykłady w tym temacie są pobierane z szablonu rozwiązania diagram składników. Aby zapoznać się z przykładem, Utwórz rozwiązanie dotyczące języka specyficznego dla domeny, które jest oparte na szablonie rozwiązania model składników. Po utworzeniu rozwiązania plik DslDefinition. DSL zostanie wyświetlony w projektancie języka Domain-Specific. Zamknij plik, kliknij go prawym przyciskiem myszy w **Eksplorator rozwiązań**, wskaż polecenie **Otwórz za pomocą**, kliknij **Edytor XML**, a następnie kliknij przycisk **OK**.
 
 ## <a name="sections-of-the-dsldefinitiondsl-file"></a>Sekcje pliku DslDefinition. DSL
 
@@ -166,7 +168,7 @@ Każda klasa ma zestaw właściwości i może mieć klasę bazową. W przykładz
 
 Każda klasa domeny (w tym relacje, kształty, łączniki i diagramy) może mieć te atrybuty i węzły podrzędne:
 
-- **Identyfikator.** Ten atrybut jest identyfikatorem GUID. Jeśli nie podasz wartości w pliku, projektant języka specyficznego dla domeny utworzy wartość. (Na ilustracjach w tym dokumencie ten atrybut jest zwykle pomijany w celu zaoszczędzenia miejsca).
+- **Identyfikator.** Ten atrybut jest identyfikatorem GUID. Jeśli nie podasz wartości w pliku, Projektant języka Domain-Specific utworzy wartość. (Na ilustracjach w tym dokumencie ten atrybut jest zwykle pomijany w celu zaoszczędzenia miejsca).
 
 - **Nazwa i przestrzeń nazw.** Te atrybuty określają nazwę i przestrzeń nazw klasy w wygenerowanym kodzie. Ze sobą muszą być unikatowe w języku specyficznym dla domeny.
 
@@ -267,7 +269,7 @@ Oprócz atrybutów i węzłów podrzędnych, które są dostępne dla wszystkich
 
 ## <a name="designer-and-toolbox-tabs"></a>Zakładki projektanta i przybornika
 
-Główną częścią sekcji **projektanta** pliku DslDefinition. DSL jest elementy **ToolboxTab** . Jeden Projektant może mieć kilka z tych elementów, z których każdy reprezentuje sekcję w **przyborniku**wygenerowanego projektanta. Każdy element **ToolboxTab** może zawierać jeden lub więcej elementów **Narzędzie ElementTool** , elementów **ConnectionTool** lub obu.
+Główną częścią sekcji **projektanta** pliku DslDefinition. DSL jest elementy **ToolboxTab** . Jeden Projektant może mieć kilka z tych elementów, z których każdy reprezentuje sekcję w **przyborniku** wygenerowanego projektanta. Każdy element **ToolboxTab** może zawierać jeden lub więcej elementów **Narzędzie ElementTool** , elementów **ConnectionTool** lub obu.
 
 Narzędzia elementów mogą tworzyć wystąpienia określonej klasy domeny. Gdy użytkownik przeciągnie narzędzie elementu na diagram, wynik jest określany przez dyrektywy scalania elementów zgodnie z opisem w sekcji dyrektywy scalania elementów w dalszej części tego tematu.
 
@@ -296,7 +298,7 @@ W tym przykładzie InPort jest podklasą elementu ComponentPort i ma relację el
 Podczas pisania języka C# względem tego modelu można przechodzić przez łącze w jednym kroku, używając właściwości, która jest generowana przez relację na każdej z klas, z którą się odnoszą:
 
 ```
-     InPort port; ...  Component c = port.Component;
+     InPort port; ...  Component c = port.Component;
 ```
 
 Jednak w składni ścieżki należy jawnie wykonać oba przeskoki. Ze względu na to wymaganie można łatwiej uzyskać dostęp do pośredniego linku. Poniższy kod uzupełnia przeskok z linku do składnika:
@@ -474,13 +476,13 @@ Jeśli atrybut **pomijaelement** ma wartość true, nazwa roli relacji zostanie 
      <targets> ...
 ```
 
-### <a name="serialization-of-a-domain-specific-language-definition"></a>Serializacja definicji języka specyficznego dla domeny
+### <a name="serialization-of-a-domain-specific-language-definition"></a>Serializacja definicji języka Domain-Specific
 
 Plik DslDefinition. DSL jest samym zserializowanym plikiem i jest zgodny z definicją języka specyficznego dla domeny. Poniżej przedstawiono kilka przykładów definicji serializacji XML:
 
 - **DSL** jest węzłem RootClass i klasą diagramu. DomainClass, DomainRelationship i inne elementy są osadzone w kategorii `Dsl` .
 
-- **Klasy** to **RoleElementName** relacji między językiem specyficznym dla domeny a DomainClass.
+- **Klasy** to **RoleElementName** relacji między językami Domain-Specific i DomainClass.
 
 ```xml
 <Dsl Name="CmptDsl5" ...>

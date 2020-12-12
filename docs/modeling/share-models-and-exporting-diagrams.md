@@ -1,5 +1,7 @@
 ---
 title: Udostępnianie modeli i eksportowanie diagramów
+description: Dowiedz się, jak za pomocą programu Visual Studio tworzyć i edytować modele, diagramy zależności oraz wykresy ukierunkowane.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2347ad9f01634fe7fee243a7d5e1a24a6d9ba3b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ecf972974ff2c84cb47cd93d944aced4758d1cb7
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591921"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363747"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>Udostępnianie modeli i eksportowanie diagramów
 W programie Visual Studio można udostępniać modele i diagramy współpracownikom na kilka sposobów.

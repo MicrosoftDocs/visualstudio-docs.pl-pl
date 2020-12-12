@@ -1,5 +1,7 @@
 ---
 title: Eksportowanie i Zapisywanie map kodu
+description: Dowiedz się, jak zapisywać mapy kodu w ramach projektu programu Visual Studio jako obrazu lub pliku XPS.
+ms.custom: SEO-VS-2020
 ms.date: 05/16/2018
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef7f72010623d20e79a327877a512f0b7352bac5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9898b720e51c2750b67054d1f095200372f426da
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542574"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363773"
 ---
 # <a name="share-code-maps"></a>Udostępnianie map kodu
 

@@ -1,5 +1,7 @@
 ---
 title: Wdrażanie pakietów MSI i VSIX języka DSL
+description: Dowiedz się, jak zainstalować język specyficzny dla domeny (DSL) na komputerze lub na innych komputerach.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d4de8d7560cb43115a30e29516e0e88b4d02d21
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 623cbdcfaae6acd1889e265fecafec805e5a9440
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542619"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363136"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Wdrażanie pakietów MSI i VSIX języka DSL
 Język specyficzny dla domeny można zainstalować na własnym komputerze lub na innych komputerach. Program Visual Studio musi być już zainstalowany na komputerze docelowym.
@@ -33,9 +35,9 @@ Gdy linia DSL jest instalowana przez tę metodę, użytkownik może otworzyć pl
 
 1. Zlokalizuj plik **VSIX** , który został skompilowany przez projekt pakietu DSL:
 
-   1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt **DslPackage** , a następnie kliknij polecenie **Otwórz folder w Eksploratorze plików**.
+   1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt **DslPackage** , a następnie kliknij polecenie **Otwórz folder w Eksploratorze plików**.
 
-   2. Znajdź plik ** \\ \* \\ bin**_YourProject_**. DslPackage. vsix**
+   2. Znajdź plik **\\ \* \\ bin**_YourProject_**. DslPackage. vsix**
 
 2. Skopiuj plik **. vsix** do komputera docelowego, na którym chcesz zainstalować DSL. Może to być własny komputer lub inny.
 
@@ -94,7 +96,7 @@ Gdy linia DSL jest instalowana przez tę metodę, użytkownik może otworzyć pl
 
    - Kliknij węzeł **Edytor** i w okno właściwości kliknij **ikonę**. Ustaw wartość, aby odwoływać się do pliku ikony w **DslPackage\Resources**, na przykład **plik. ico**
 
-   - W menu **kompilacja** Otwórz **Configuration Manager**i wybierz konfigurację, którą chcesz skompilować, taką jak **wersja** lub **Debuguj**.
+   - W menu **kompilacja** Otwórz **Configuration Manager** i wybierz konfigurację, którą chcesz skompilować, taką jak **wersja** lub **Debuguj**.
 
 4. Przejdź do [strony głównej wizualizacji i modelowania SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db), a następnie na karcie **pliki do** pobrania Pobierz **CreateMsiSetupProject.tt**.
 
@@ -106,7 +108,7 @@ Gdy linia DSL jest instalowana przez tę metodę, użytkownik może otworzyć pl
 
     (Jeśli chcesz, możesz teraz wykluczyć CreateMsiSetupProject.tt z projektu DSL).
 
-7. W **Eksplorator rozwiązań**należy dodać **Setup \\ \* . VDPROJ** jako istniejący projekt.
+7. W **Eksplorator rozwiązań** należy dodać **Setup \\ \* . VDPROJ** jako istniejący projekt.
 
 8. W menu **projekt** kliknij pozycję **zależności projektu**.
 

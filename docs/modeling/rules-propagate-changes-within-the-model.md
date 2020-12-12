@@ -1,5 +1,7 @@
 ---
 title: Reguły propagujące zmiany w modelu
+description: Dowiedz się, jak utworzyć regułę magazynu, aby propagować zmianę z jednego elementu do innego w programie wizualizacji i modelowania SDK (VMSDK).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2050fe0ea2d1a9bb0bf278c13c2beb587412c643
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4ff2273c8c71582c3ef634eeb398b12e29401d0
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542561"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363955"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Reguły propagujące zmiany w modelu
 Można utworzyć regułę sklepu, aby propagować zmianę z jednego elementu do innego w programie Wizualizacja i Modeling SDK (VMSDK). Gdy zmiana dotyczy dowolnego elementu w magazynie, reguły są planowane do wykonania, zazwyczaj gdy zostanie zatwierdzona nietypowa transakcja. Istnieją różne typy reguł dla różnych rodzajów zdarzeń, takich jak dodawanie elementu lub usuwanie go. Można dołączyć reguły do określonych typów elementów, kształtów lub diagramów. Wiele wbudowanych funkcji jest definiowanych przez reguły: na przykład, gdy model zmienia się, należy zaktualizować diagram. Język specyficzny dla domeny można dostosować przez dodanie własnych reguł.

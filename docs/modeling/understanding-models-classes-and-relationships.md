@@ -1,5 +1,7 @@
 ---
 title: Opis modeli, klas i relacji
+description: Dowiedz się, w jaki sposób język specyficzny dla domeny (DSL) jest zdefiniowany przez plik definicji DSL i czy w tym pliku jest generowany większość kodu programu w rozwiązaniu DSL.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08981e4f63c84d19d4086c75fe33a8b19a515ccf
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: d912e98d01448a378acbed79e2278f70f62436e7
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809979"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362694"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Opis modeli, klas i relacji
 Język specyficzny dla domeny (DSL) jest zdefiniowany przez plik definicji DSL, wraz z dowolnym niestandardowym kodem programu, który można napisać. Większość kodu programu w rozwiązaniu DSL jest generowana z tego pliku.

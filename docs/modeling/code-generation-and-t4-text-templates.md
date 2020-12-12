@@ -1,5 +1,7 @@
 ---
 title: Generowanie kodu i szablony tekstowe T4
+description: Dowiedz się, jak szablon tekstu T4 jest mieszaniną bloków tekstowych i logiki formantów, które mogą generować plik tekstowy.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fbcd41461ab57e3bbb5fb48849ddde8593c587fb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 871aa20fe4fc95ea1641b7f478cb9b01d71284aa
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85548242"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363578"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Generowanie kodu i szablony tekstowe T4
 
@@ -56,7 +58,7 @@ Aby uzyskać więcej informacji, zobacz [Generowanie tekstu w czasie wykonywania
 
 ## <a name="design-time-t4-text-templates"></a>Szablony tekstu T4 w czasie projektowania
 
-Szablony czasu projektowania definiują część kodu źródłowego i innych zasobów aplikacji. Zwykle używasz kilku szablonów, które odczytują dane w pojedynczym pliku wejściowym lub w bazie danych, i wygenerujesz niektóre z plików *. cs*, *. vb*lub inne pliki źródłowe. Każdy szablon generuje jeden plik. Są one wykonywane w programie Visual Studio lub MSBuild.
+Szablony czasu projektowania definiują część kodu źródłowego i innych zasobów aplikacji. Zwykle używasz kilku szablonów, które odczytują dane w pojedynczym pliku wejściowym lub w bazie danych, i wygenerujesz niektóre z plików *. cs*, *. vb* lub inne pliki źródłowe. Każdy szablon generuje jeden plik. Są one wykonywane w programie Visual Studio lub MSBuild.
 
 Na przykład dane wejściowe mogą być plikiem XML danych konfiguracyjnych. Za każdym razem, gdy edytujesz plik XML podczas opracowywania, szablony tekstowe ponownie generują część kodu aplikacji. Jeden z szablonów może wyglądać podobnie do poniższego przykładu:
 
@@ -90,7 +92,7 @@ Aby utworzyć szablon czasu projektowania, Dodaj plik **szablonu tekstu** do pro
 Aby uzyskać więcej informacji, zobacz [generowanie kodu w czasie projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Aby uzyskać więcej informacji na temat składni szablonów, zobacz [pisanie szablonu tekstowego T4](../modeling/writing-a-t4-text-template.md).
 
 > [!NOTE]
-> Termin *model* jest czasami używany do opisywania danych odczytywanych przez jeden lub więcej szablonów. Model może być w dowolnym formacie w dowolnym rodzaju pliku lub bazy danych. Nie musi być modelem UML ani modelem języka specyficznym dla domeny. "Model" oznacza, że dane mogą być zdefiniowane w warunkach koncepcji biznesowej, a nie podobne do kodu.
+> Termin *model* jest czasami używany do opisywania danych odczytywanych przez jeden lub więcej szablonów. Model może być w dowolnym formacie w dowolnym rodzaju pliku lub bazy danych. Nie musi być modelem UML ani modelem języka Domain-Specific. "Model" oznacza, że dane mogą być zdefiniowane w warunkach koncepcji biznesowej, a nie podobne do kodu.
 
 Funkcja transformacji szablonu tekstu jest nazywana *T4*.
 

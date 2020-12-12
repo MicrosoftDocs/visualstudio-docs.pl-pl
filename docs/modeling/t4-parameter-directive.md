@@ -1,5 +1,7 @@
 ---
 title: Dyrektywa T4 dotycząca parametru
+description: Dowiedz się, że w programie Visual Studio dyrektywa Parameter deklaruje właściwości w kodzie szablonu, które są inicjowane z wartości przekazywania z zewnętrznego kontekstu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f833eb651efda0edb837515e1bf2b3567e1a759
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: df739f10764f20b415ac74ee4b4e529433c7dc96
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591804"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363630"
 ---
 # <a name="t4-parameter-directive"></a>Dyrektywa T4 dotycząca parametru
 
@@ -82,7 +84,7 @@ string result = t4.ProcessTemplate("",
 //     Test 32 test
 ```
 
-## <a name="passing-values-to-a-run-time-preprocessed-text-template"></a>Przekazywanie wartości do szablonu tekstu czasu wykonywania (wstępnie przetworzonym)
+## <a name="passing-values-to-a-run-time-preprocessed-text-template"></a>Przekazywanie wartości do szablonu tekstu w Run-Time (wstępnie przetworzonym)
  Nie jest zazwyczaj konieczne używanie `<#@parameter#>` dyrektywy z szablonami tekstu czasu wykonywania (wstępnie przetworzonym). Zamiast tego można zdefiniować dodatkowy Konstruktor lub właściwość settable dla wygenerowanego kodu, za pomocą którego są przekazywane wartości parametrów. Aby uzyskać więcej informacji, zobacz [Generowanie tekstu w czasie wykonywania przy użyciu szablonów tekstowych T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
  Jeśli jednak chcesz użyć `<#@parameter>` w szablonie czasu wykonywania, możesz przekazać do niego wartości przy użyciu słownika sesji. Załóżmy na przykład, że plik został utworzony jako wstępnie przetworzony szablon o nazwie `PreTextTemplate1` . Możesz wywołać szablon w programie przy użyciu następującego kodu.

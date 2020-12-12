@@ -1,5 +1,7 @@
 ---
 title: Tworzenie wizualizacji kodu
+description: Dowiedz się, jak za pomocą narzędzi do wizualizacji i modelowania w programie Visual Studio poznać istniejący kod i opisać swoją aplikację.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9886ea905a4997d5735e4dd2cabbfc4798a5c4c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b522ae21de3d0ea115bc83446f0585e1dc9ab1e7
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535879"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362512"
 ---
 # <a name="visualize-code"></a>Tworzenie wizualizacji kodu
 

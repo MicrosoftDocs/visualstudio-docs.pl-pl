@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: de5027024956c03341ac3e2d851bf85430f48f18
-ms.sourcegitcommit: f78960320798e2c6b33145cee77a2221f031603c
+ms.openlocfilehash: 69fb3d8b5e8af13ec8781e65e60bd060ad69d365
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94878299"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362395"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Co nowego w programie Visual Studio 2019
 
@@ -136,9 +136,9 @@ Aby uzyskać więcej informacji, zobacz artykuł [wprowadzenie do kodu: jak zapr
 
 ### <a name="git-productivity"></a>Wydajność usługi git
 
-**Nowość w 16,8** Git jest teraz domyślnym interfejsem kontroli wersji w programie Visual Studio 2019. Na podstawie opinii użytkowników w ostatnich dwóch wersjach została wbudowana funkcja zestawu funkcji i iteracji. Nowe środowisko zostało teraz włączone domyślnie dla wszystkich użytkowników. Z nowego menu usługi git można klonować, tworzyć i otwierać repozytoria. Zintegrowane okna narzędzi git służą do zatwierdzania i wypychania zmian w kodzie, zarządzania gałęziami, pozostawania na bieżąco z zdalnymi repozytoriami i rozwiązywania konfliktów scalania.
+**Nowość w 16,8**: git jest teraz domyślnym interfejsem kontroli wersji w programie Visual Studio 2019. Na podstawie opinii użytkowników w ostatnich dwóch wersjach została wbudowana funkcja zestawu funkcji i iteracji. Nowe środowisko zostało teraz włączone domyślnie dla wszystkich użytkowników. Z nowego menu usługi git można klonować, tworzyć i otwierać repozytoria. Zintegrowane okna narzędzi git służą do zatwierdzania i wypychania zmian w kodzie, zarządzania gałęziami, pozostawania na bieżąco z zdalnymi repozytoriami i rozwiązywania konfliktów scalania.
 
-Aby uzyskać więcej informacji, zobacz stronę [wydajność usługi Git w programie Visual Studio](git-with-visual-studio.md) .
+Aby uzyskać więcej informacji, zobacz [środowisko Git na stronie programu Visual Studio](git-with-visual-studio.md) .
 
 ### <a name="live-share"></a>Live Share
 
@@ -226,7 +226,7 @@ W tym miejscu poniżej przedstawiono kilka nowych funkcji dostępnych obecnie w 
 
    Mimo że nowe środowisko kontroli wersji Git jest teraz domyślnie włączone w programie Visual Studio 2019 w [wersji 16,8](/visualstudio/releases/2019/release-notes/), będziemy nadal dodawać funkcje w celu ulepszenia środowiska w najnowszej wersji zapoznawczej.
 
-   Aby uzyskać więcej informacji, zobacz stronę [wydajność usługi Git w programie Visual Studio](git-with-visual-studio.md) .
+   Aby uzyskać więcej informacji, zobacz [środowisko Git na stronie programu Visual Studio](git-with-visual-studio.md) .
 
 Aby uzyskać więcej informacji na temat wersji zapoznawczej &mdash; i linku pobierania, jeśli chcesz ją wypróbować, &mdash; Zobacz stronę **[wersji zapoznawczej programu Visual Studio](https://aka.ms/vspreview/)** .
 
@@ -238,8 +238,9 @@ Dlaczego warto wysłać opinię do zespołu programu Visual Studio? Ze względu 
 
 * Jeśli wystąpi problem polegający na tym, że program Visual Studio przestaje odpowiadać, ulegnie awarii lub inny problem z wydajnością, można łatwo udostępnić Odtwórz kroki i pliki pomocnicze za pomocą narzędzia [Zgłoś problem](how-to-report-a-problem-with-visual-studio.md) .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
+* [Co nowego w dokumentacji programu Visual Studio](whats-new-visual-studio-docs.md)
 * [Informacje o wersji programu Visual Studio 2019](/visualstudio/releases/2019/release-notes/)
 * [Informacje o wersji programu Visual Studio 2019 dla komputerów Mac](/visualstudio/releasenotes/vs2019-mac-relnotes/)
 * [Co nowego w zestawie SDK programu Visual Studio 2019](../extensibility/whats-new-visual-studio-2019-sdk.md)

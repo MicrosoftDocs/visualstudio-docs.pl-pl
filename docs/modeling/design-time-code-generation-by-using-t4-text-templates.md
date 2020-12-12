@@ -1,5 +1,7 @@
 ---
 title: Generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4
+description: Dowiedz się, jak szablony tekstu T4 w czasie projektowania pozwalają generować kod programu i inne pliki w projekcie programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -15,12 +17,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c392862f884fd8082b30cbb673aab116756fdfe
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: 698dde24cb66d27a12a0f8785c8ac97e4cfb0eb0
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426775"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363812"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4
 
@@ -29,19 +31,19 @@ Szablony tekstu T4 w czasie projektowania pozwalają generować kod programu i i
 Na przykład można mieć model, który definiuje przepływ pracy jako tabelę lub diagram. Z modelu można wygenerować oprogramowanie, które wykonuje przepływ pracy. W przypadku zmiany wymagań użytkowników można łatwo omówić nowy przepływ pracy z użytkownikami. Ponowne generowanie kodu z przepływu pracy jest bardziej niezawodne niż ręczne aktualizowanie kodu.
 
 > [!NOTE]
-> *Model* to źródło danych opisujące konkretny aspekt aplikacji. Może to być dowolny formularz w dowolnym rodzaju pliku lub bazy danych. Nie musi znajdować się w żadnej konkretnej formie, takiej jak model UML lub model języka specyficznego dla domeny. Typowe modele są w postaci tabel lub plików XML.
+> *Model* to źródło danych opisujące konkretny aspekt aplikacji. Może to być dowolny formularz w dowolnym rodzaju pliku lub bazy danych. Nie musi znajdować się w żadnej konkretnej formie, takiej jak model UML lub model języka Domain-Specific. Typowe modele są w postaci tabel lub plików XML.
 
 Prawdopodobnie masz już doświadczenie z generowaniem kodu. Podczas definiowania zasobów w pliku **resx** w rozwiązaniu programu Visual Studio zestaw klas i metod jest generowany automatycznie. Plik resources sprawia, że edytowanie zasobów jest znacznie prostsze i bardziej niezawodne niż w przypadku konieczności edytowania klas i metod. Za pomocą szablonów tekstowych można generować kod w taki sam sposób, jak w przypadku źródła własnego projektu.
 
 Szablon tekstowy zawiera kombinację tekstu, który ma zostać wygenerowany, i kod programu generujący zmienne części tekstu. Kod programu umożliwia powtarzanie lub warunkowe pominięcie części wygenerowanego tekstu. Wygenerowany tekst może być kodem programu, który będzie częścią aplikacji.
 
-## <a name="create-a-design-time-t4-text-template"></a>Tworzenie szablonu tekstu T4 w czasie projektowania
+## <a name="create-a-design-time-t4-text-template"></a>Tworzenie Design-Time szablonu tekstu T4
 
 1. Utwórz nowy projekt programu Visual Studio lub Otwórz istniejący.
 
 2. Dodaj plik szablonu tekstu do projektu i nadaj mu nazwę, która ma rozszerzenie **. tt**.
 
-    W tym celu w **Eksplorator rozwiązań**w menu skrótów projektu wybierz pozycję **Dodaj**  >  **nowy element**. W oknie dialogowym **Dodaj nowy element** wybierz pozycję **szablon tekstowy** w środkowym okienku.
+    W tym celu w **Eksplorator rozwiązań** w menu skrótów projektu wybierz pozycję **Dodaj**  >  **nowy element**. W oknie dialogowym **Dodaj nowy element** wybierz pozycję **szablon tekstowy** w środkowym okienku.
 
     Zwróć uwagę, że właściwość **niestandardowego narzędzia** pliku to **TextTemplatingFileGenerator**.
 
@@ -54,7 +56,7 @@ Szablon tekstowy zawiera kombinację tekstu, który ma zostać wygenerowany, i k
 
     Jeśli szablon został dodany do [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projektu, atrybut Language będzie " `VB` ".
 
-4. Dodaj tekst na końcu pliku. Przykład:
+4. Dodaj tekst na końcu pliku. Na przykład:
 
    ```
    Hello, world!
@@ -64,7 +66,7 @@ Szablon tekstowy zawiera kombinację tekstu, który ma zostać wygenerowany, i k
 
     Może zostać wyświetlone okno komunikatu z **ostrzeżeniem o zabezpieczeniach** z prośbą o potwierdzenie, że chcesz uruchomić szablon. Kliknij przycisk **OK**.
 
-6. W **Eksplorator rozwiązań**rozwiń węzeł plik szablonu i znajdziesz plik z rozszerzeniem **txt**. Plik zawiera tekst wygenerowany na podstawie szablonu.
+6. W **Eksplorator rozwiązań** rozwiń węzeł plik szablonu i znajdziesz plik z rozszerzeniem **txt**. Plik zawiera tekst wygenerowany na podstawie szablonu.
 
    > [!NOTE]
    > Jeśli projekt jest projektem Visual Basic, należy kliknąć przycisk **Pokaż wszystkie pliki** , aby wyświetlić plik wyjściowy.
@@ -119,11 +121,11 @@ Szablony tekstowe umożliwiają użycie kodu programu w celu zróżnicowania zaw
 
    Jeśli napiszesz kod generujący w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] , `template` dyrektywa powinna zawierać `language="VB"` . Wartość domyślna to `"C#"`.
 
-## <a name="debugging-a-design-time-t4-text-template"></a>Debugowanie szablonu tekstu T4 w czasie projektowania
+## <a name="debugging-a-design-time-t4-text-template"></a>Debugowanie Design-Time szablonu tekstu T4
 
 Aby debugować szablon tekstowy:
 
-- Wstaw `debug="true"` do `template` dyrektywy. Przykład:
+- Wstaw `debug="true"` do `template` dyrektywy. Na przykład:
 
    `<#@ template debug="true" hostspecific="false" language="C#" #>`
 
@@ -221,7 +223,7 @@ Aby uzyskać dostęp do pliku modelu lub bazy danych, kod szablonu może używa�
 
 `assembly`Dyrektywa sprawia, że określony zestaw jest dostępny dla kodu szablonu w taki sam sposób jak sekcja References w projekcie programu Visual Studio. Nie trzeba dołączać odwołania do System.dll, które jest przywoływane automatycznie. `import`Dyrektywa pozwala używać typów bez użycia ich w pełni kwalifikowanych nazw w taki sam sposób jak w przypadku `using` dyrektywy w zwykłym pliku programu.
 
-Na przykład po zaimportowaniu **System.IO**można napisać:
+Na przykład po zaimportowaniu **System.IO** można napisać:
 
 ```csharp
 
@@ -272,7 +274,7 @@ Typ `this.Host` (w języku VB `Me.Host` ) to `Microsoft.VisualStudio.TextTemplat
 
 ### <a name="getting-data-from-visual-studio"></a>Pobieranie danych z programu Visual Studio
 
-Aby skorzystać z usług oferowanych w programie Visual Studio, ustaw `hostSpecific` atrybut i Załaduj `EnvDTE` zestaw. Importuj `Microsoft.VisualStudio.TextTemplating` , który zawiera `GetCOMService()` metodę rozszerzenia.  Następnie można użyć IServiceProvider. GetCOMService (), aby uzyskać dostęp do DTE i innych usług. Przykład:
+Aby skorzystać z usług oferowanych w programie Visual Studio, ustaw `hostSpecific` atrybut i Załaduj `EnvDTE` zestaw. Importuj `Microsoft.VisualStudio.TextTemplating` , który zawiera `GetCOMService()` metodę rozszerzenia.  Następnie można użyć IServiceProvider. GetCOMService (), aby uzyskać dostęp do DTE i innych usług. Na przykład:
 
 ```src
 <#@ template hostspecific="true" language="C#" #>

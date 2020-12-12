@@ -1,5 +1,7 @@
 ---
 title: Kontrolowanie widoczności ikony lub elementu Decorator
+description: Dowiedz się, jak kontrolować widoczność ikony lub dekoratora w zależności od stanu właściwości w modelu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,18 +9,18 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d2082f7e26d3e335ed88bbced0f59d6d6c4780c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bdf97cc10543f066665506d3e238386dc39f0d4f
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546650"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363500"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Kontrolowanie widoczności ikony lub elementu Decorator
 *Dekoratora* jest ikoną lub wierszem tekstu, który pojawia się na kształcie w języku specyficznym dla domeny (DSL). Można sprawić, aby dekoratora pojawiał się i znikał w zależności od stanu właściwości w modelu. Na przykład na kształcie reprezentującym osobę można mieć różne ikony, które są wyświetlane w zależności od płci osoby, liczby elementów podrzędnych itd.
 
 ## <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Kontrolowanie widoczności ikony lub Dekoratora
- W poniższej procedurze przyjęto założenie, że zdefiniowano już kształt i jego mapowanie na klasę domeny. Aby uzyskać więcej informacji, zobacz [jak zdefiniować język specyficzny dla domeny](../modeling/how-to-define-a-domain-specific-language.md).
+ W poniższej procedurze przyjęto założenie, że zdefiniowano już kształt i jego mapowanie na klasę domeny. Aby uzyskać więcej informacji, zobacz [How to define a Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md).
 
 #### <a name="to-control-the-visibility-of-an-icon-or-text-decorator"></a>Aby kontrolować widoczność ikony lub tekstu Dekoratora
 
@@ -74,9 +76,9 @@ ms.locfileid: "85546650"
 
     2. Zaznacz pole wyboru **Filtr widoczności** .
 
-    3. W **Właściwości filtru**zaznacz właściwość **DecoratorControl**.
+    3. W **Właściwości filtru** zaznacz właściwość **DecoratorControl**.
 
-    4. W obszarze **wpisy widoczności**wprowadź `True` .
+    4. W obszarze **wpisy widoczności** wprowadź `True` .
 
 3. Kliknij pozycję **Przekształć wszystkie szablony** na pasku narzędzi **Eksplorator rozwiązań** .
 

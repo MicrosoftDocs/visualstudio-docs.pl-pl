@@ -1,5 +1,7 @@
 ---
 title: Zalecenia dotyczące pisania szablonów tekstowych T4
+description: Zapoznaj się z ogólnymi wskazówkami, które są przydatne w przypadku generowania kodu programu lub innych zasobów aplikacji w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,18 +9,18 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24c8afd5e34d4957dac3d9f4d5b0e4409ad20895
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f5f7be4ce9b8beb7699844397de3e1fc206d017c
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596544"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363409"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Zalecenia dotyczące pisania szablonów tekstowych T4
 
 Te ogólne wskazówki mogą być przydatne w przypadku generowania kodu programu lub innych zasobów aplikacji w programie Visual Studio. Nie są to reguły ustalone.
 
-## <a name="guidelines-for-design-time-t4-templates"></a>Wskazówki dotyczące szablonów T4 czasu projektowania
+## <a name="guidelines-for-design-time-t4-templates"></a>Wskazówki dotyczące Design-Time szablonów T4
 
 Szablony T4 w czasie projektowania to szablony generujące kod w projekcie programu Visual Studio w czasie projektowania. Aby uzyskać więcej informacji, zobacz [generowanie kodu w czasie projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
 
@@ -91,7 +93,7 @@ MyProject
    AnotherClass.cs
 ```
 
-## <a name="guidelines-for-run-time-preprocessed-t4-templates"></a>Wytyczne dotyczące czasu wykonywania (wstępnie przetworzonych) szablonów T4
+## <a name="guidelines-for-run-time-preprocessed-t4-templates"></a>Wytyczne dotyczące Run-Time (wstępnie przetworzonych) szablonów T4
 
 Przenieś wspólny materiał do dziedziczonych szablonów.
 

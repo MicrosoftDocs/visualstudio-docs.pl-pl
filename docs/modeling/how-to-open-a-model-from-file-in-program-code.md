@@ -1,5 +1,7 @@
 ---
 title: 'Porady: otwieranie modelu z pliku w kodzie programu'
+description: Dowiedz się, że ModelBus zapewnia standardowy mechanizm odwołujący się do modelu lub elementów w modelu i znajdowania modelu, jeśli został przeniesiony.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19cec066d66b08d3f02f3885908722aad047172b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f854edc45724f0e1f3db5bda22cb6aa006d77e60
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532486"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363877"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Porady: otwieranie modelu z pliku w kodzie programu
 
@@ -26,14 +28,14 @@ Ustaw **platformę docelową** projektu aplikacji na .NET Framework 4 lub nowszy
 
 1. Otwórz projekt programu Visual Studio dla aplikacji, w której ma zostać odczytany model DSL.
 
-2. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt, a następnie kliknij polecenie **Właściwości**.
+2. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt, a następnie kliknij polecenie **Właściwości**.
 
 3. W oknie właściwości projektu na karcie **aplikacja** Ustaw pole **platformy docelowej** na **.NET Framework 4** (lub nowsze).
 
 > [!NOTE]
 > Struktura docelowa nie powinna być **.NET Framework 4 profilu klienta**.
 
-## <a name="references"></a>Dokumentacja
+## <a name="references"></a>Materiały źródłowe
 
 Dodaj te odwołania do projektu aplikacji Visual Studio:
 
@@ -45,7 +47,7 @@ Dodaj te odwołania do projektu aplikacji Visual Studio:
 
 ## <a name="important-classes-in-the-dsl"></a>Ważne klasy w DSL
 
-Zanim będzie można napisać kod, który odczytuje dane DSL, należy znać nazwy niektórych klas generowanych przez DSL. W rozwiązaniu DSL Otwórz projekt **DSL** i Znajdź w folderze **GeneratedCode** . Alternatywnie, kliknij dwukrotnie zestaw DSL w **odwołaniach**projektu, a następnie otwórz przestrzeń nazw dsl w **Przeglądarka obiektów**.
+Zanim będzie można napisać kod, który odczytuje dane DSL, należy znać nazwy niektórych klas generowanych przez DSL. W rozwiązaniu DSL Otwórz projekt **DSL** i Znajdź w folderze **GeneratedCode** . Alternatywnie, kliknij dwukrotnie zestaw DSL w **odwołaniach** projektu, a następnie otwórz przestrzeń nazw dsl w **Przeglądarka obiektów**.
 
 Oto klasy, które należy zidentyfikować:
 

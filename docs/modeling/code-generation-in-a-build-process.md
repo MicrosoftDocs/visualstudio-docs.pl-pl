@@ -1,5 +1,7 @@
 ---
 title: Generowanie kodu w procesie kompilacji
+description: Dowiedz się, w jaki sposób można wywołać transformację tekstu w ramach procesu kompilacji rozwiązania programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: af0039fb8c945062bc19fa647b477c40c44d5346
-ms.sourcegitcommit: a876fcc75321f9c30729121cae83f400973f9d9d
+ms.openlocfilehash: 3000a02621f7e2c274522a199cfe499e2335c4c2
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92298202"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363565"
 ---
 # <a name="invoke-text-transformation-in-the-build-process"></a>Wywołaj transformację tekstu w procesie kompilacji
 
@@ -57,7 +59,7 @@ Jeśli [serwer kompilacji](/azure/devops/pipelines/agents/agents) działa na kom
 
 Edytuj plik projektu, aby skonfigurować niektóre funkcje programu MSBuild, na przykład importując elementy docelowe transformacji tekstu.
 
-W **Eksplorator rozwiązań**wybierz pozycję **Zwolnij** z menu dostępnego po kliknięciu prawym przyciskiem myszy projektu. Pozwala to na edycję pliku .csproj lub .vbproj w edytorze XML. Po zakończeniu edycji wybierz pozycję **Załaduj ponownie**.
+W **Eksplorator rozwiązań** wybierz pozycję **Zwolnij** z menu dostępnego po kliknięciu prawym przyciskiem myszy projektu. Pozwala to na edycję pliku .csproj lub .vbproj w edytorze XML. Po zakończeniu edycji wybierz pozycję **Załaduj ponownie**.
 
 ## <a name="import-the-text-transformation-targets"></a>Importuj cele transformacji tekstu
 

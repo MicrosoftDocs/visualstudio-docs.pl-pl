@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Dodawanie polecenia do menu skrótów'
+description: Dowiedz się, w jaki sposób można dodać polecenia menu do języka specyficznego dla domeny (DSL), aby umożliwić użytkownikom wykonywanie zadań specyficznych dla DSL.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6aac779a3c165d10262c078ff431731d9d248f3a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7dc51de28162471262d8c4bd35ddd09bc156896e
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545720"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363344"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Instrukcje: Dodawanie polecenia do menu skrótów
 
@@ -57,7 +59,7 @@ Użyj metody w tym temacie, jeśli:
 
 ### <a name="to-add-the-command"></a>Aby dodać polecenie
 
-1. W **Eksplorator rozwiązań**w projekcie **DslPackage** Otwórz polecenie Commands. vsct.
+1. W **Eksplorator rozwiązań** w projekcie **DslPackage** Otwórz polecenie Commands. vsct.
 
 2. W `Commands` elemencie Zdefiniuj jeden lub więcej przycisków i grupę. *Przycisk* jest elementem menu. *Grupa* jest sekcją w menu. Aby zdefiniować te elementy, Dodaj następujące elementy:
 
@@ -135,7 +137,7 @@ Użyj metody w tym temacie, jeśli:
 
 ### <a name="to-update-the-packagett-file"></a>Aby zaktualizować plik Package.tt
 
-1. W **Eksplorator rozwiązań**w projekcie **DslPackage** w folderze **GeneratedCode** Otwórz plik Package.tt.
+1. W **Eksplorator rozwiązań** w projekcie **DslPackage** w folderze **GeneratedCode** Otwórz plik Package.tt.
 
 2. Znajdź `ProvideMenuResource` atrybut.
 
@@ -157,7 +159,7 @@ Klasa zestawu poleceń pochodzi od <xref:Microsoft.VisualStudio.Modeling.Shell.C
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2. W **DslPackage**Utwórz folder o nazwie **kod niestandardowy**. W tym folderze Utwórz nowy plik klasy o nazwie `CommandSet.cs` .
+2. W **DslPackage** Utwórz folder o nazwie **kod niestandardowy**. W tym folderze Utwórz nowy plik klasy o nazwie `CommandSet.cs` .
 
 3. W nowym pliku Napisz deklarację częściową, która ma taką samą przestrzeń nazw i nazwę jak wygenerowana Klasa częściowa. Na przykład:
 
@@ -333,7 +335,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 **Polecenie nie jest wyświetlane w menu:**
 
-- Polecenie będzie wyświetlane tylko w przypadku debugowania wystąpień programu Visual Studio, dopóki nie zostanie zainstalowany pakiet DSL. Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązań językowych właściwych dla domeny](msi-and-vsix-deployment-of-a-dsl.md).
+- Polecenie będzie wyświetlane tylko w przypadku debugowania wystąpień programu Visual Studio, dopóki nie zostanie zainstalowany pakiet DSL. Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązań językowych Domain-Specific](msi-and-vsix-deployment-of-a-dsl.md).
 
 - Upewnij się, że próbka eksperymentalna ma poprawne rozszerzenie nazwy pliku dla tego języka DSL. Aby sprawdzić rozszerzenie nazwy pliku, Otwórz DslDefinition. DSL w głównym wystąpieniu programu Visual Studio. Następnie w Eksploratorze DSL kliknij prawym przyciskiem myszy węzeł Edytor, a następnie kliknij polecenie Właściwości. W okno Właściwości, zapoznaj się z właściwością FileExtension.
 

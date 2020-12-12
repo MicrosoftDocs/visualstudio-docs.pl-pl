@@ -1,5 +1,7 @@
 ---
 title: Ustawienie obrazu tła w diagramie
+description: Aby dowiedzieć się, jak w programie Visual Studio Wizualizacja i Modeling SDK, można ustawić obraz tła dla wygenerowanego projektanta przy użyciu kodu niestandardowego.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7701bf0ba1467b481f6da64d3c2e229be77a7fe7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8f99ce329d4b88037901db2336076bb1d12d411f
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542587"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363786"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Ustawienie obrazu tła w diagramie
 W programie Visual Studio Wizualizacja i Modeling SDK można ustawić obraz tła dla wygenerowanego projektanta przy użyciu kodu niestandardowego.
@@ -23,7 +25,7 @@ W programie Visual Studio Wizualizacja i Modeling SDK można ustawić obraz tła
 
 1. Skopiuj plik obrazu, który ma być używany jako tło diagramu w katalogu Dsl\Resources dla bieżącego projektu.
 
-2. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy folder Dsl\Resources, wskaż polecenie **Dodaj**, a następnie kliknij pozycję **istniejący element**.
+2. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy folder Dsl\Resources, wskaż polecenie **Dodaj**, a następnie kliknij pozycję **istniejący element**.
 
 3. W oknie dialogowym **Dodaj istniejący element** przejdź do folderu Dsl\Resources.
 
@@ -45,11 +47,11 @@ W programie Visual Studio Wizualizacja i Modeling SDK można ustawić obraz tła
 
 12. W oknie **Właściwości** Ustaw `Custom Tool` Właściwość na `ResXFileCodeGenerator` .
 
-13. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt DSL, wskaż polecenie **Dodaj**, a następnie kliknij pozycję **Nowy folder**.
+13. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt DSL, wskaż polecenie **Dodaj**, a następnie kliknij pozycję **Nowy folder**.
 
 14. Nadaj nazwę folderowi **niestandardowemu**.
 
-15. Kliknij prawym przyciskiem myszy folder niestandardowy, wskaż polecenie **Dodaj**i kliknij pozycję **nowy element**.
+15. Kliknij prawym przyciskiem myszy folder niestandardowy, wskaż polecenie **Dodaj** i kliknij pozycję **nowy element**.
 
 16. W oknie dialogowym **Dodaj nowy element** na liście **Szablony** kliknij pozycję **plik kodu**.
 

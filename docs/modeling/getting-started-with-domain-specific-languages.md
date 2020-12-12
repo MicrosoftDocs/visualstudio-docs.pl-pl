@@ -1,5 +1,7 @@
 ---
 title: Wprowadzenie do języków specyficznych dla domeny
+description: Zapoznaj się z podstawowymi pojęciami dotyczącymi definiowania i używania języka specyficznego dla domeny (DSL) utworzonego przy użyciu zestawu SDK modelowania dla programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a4761703610a87818cd1512f96530a0f865faf0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eaab198edae66fc334e854ae1f47dae313dce76b
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238546"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363487"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Wprowadzenie do języków specyficznych dla domeny
 
@@ -23,7 +25,7 @@ W tym temacie objaśniono podstawowe pojęcia związane z definiowaniem i używa
 
 Jeśli dopiero zaczynasz korzystać z programu językami DSL, zalecamy przechodzenie przez **laboratorium narzędzi DSL**, które można znaleźć w tej witrynie: [Wizualizacja i Modeling SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)
 
-## <a name="what-can-you-do-with-a-domain-specific-language"></a>Co można zrobić przy użyciu języka specyficznego dla domeny?
+## <a name="what-can-you-do-with-a-domain-specific-language"></a>Co możesz zrobić przy użyciu języka Domain-Specificowego?
 
 Język specyficzny dla domeny jest zapisem, zwykle graficznym, który jest przeznaczony do użycia w konkretnym celu. Z kolei, języki takie jak UML są ogólnego przeznaczenia. W DSL można zdefiniować typy elementów modelu i ich relacji oraz sposób ich wyświetlania na ekranie.
 
@@ -51,11 +53,11 @@ Aby zdefiniować DSL, należy zainstalować następujące składniki:
 
 ## <a name="create-a-dsl-solution"></a>Tworzenie rozwiązania DSL
 
-Aby utworzyć nowy język specyficzny dla domeny, należy utworzyć nowe rozwiązanie programu Visual Studio przy użyciu szablonu projektu języka specyficznego dla domeny.
+Aby utworzyć nowy język specyficzny dla domeny, należy utworzyć nowe rozwiązanie programu Visual Studio przy użyciu szablonu projektu Domain-Specific Language.
 
 1. W menu **plik** wskaż polecenie **Nowy**, a następnie kliknij pozycję **projekt**.
 
-2. W obszarze **typy projektów**rozwiń węzeł **Inne typy projektów** , a następnie kliknij pozycję **rozszerzalność**.
+2. W obszarze **typy projektów** rozwiń węzeł **Inne typy projektów** , a następnie kliknij pozycję **rozszerzalność**.
 
 3. Kliknij **Projektant języka specyficznego dla domeny**.
 
@@ -88,7 +90,7 @@ Interfejs użytkownika jest teraz podobny do poniższego obrazu.
 
 ![Projektant DSL](../modeling/media/dsl_designer.png)
 
-To rozwiązanie definiuje język specyficzny dla domeny. Aby uzyskać więcej informacji, zobacz [Omówienie interfejsu użytkownika narzędzia języka specyficznego dla domeny](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).
+To rozwiązanie definiuje język specyficzny dla domeny. Aby uzyskać więcej informacji, zobacz [Omówienie interfejsu użytkownika narzędzi języka Domain-Specific](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).
 
 ## <a name="the-important-parts-of-the-dsl-solution"></a>Ważne części rozwiązania DSL
 
@@ -109,9 +111,9 @@ Rozwiązanie DSL można uruchomić zaraz po jego utworzeniu. Później można zm
 1. Kliknij pozycję **Przekształć wszystkie szablony** na pasku narzędzi **Eksplorator rozwiązań** . Spowoduje to ponowne wygenerowanie większości kodu źródłowego z DslDefinition. DSL.
 
     > [!NOTE]
-    > Po zmianie *DslDefinition. DSL*należy kliknąć pozycję **Przekształć wszystkie szablony** przed odbudowaniem rozwiązania. Możesz zautomatyzować ten krok. Aby uzyskać więcej informacji, zobacz [jak zautomatyzować transformację wszystkie szablony](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\)).
+    > Po zmianie *DslDefinition. DSL* należy kliknąć pozycję **Przekształć wszystkie szablony** przed odbudowaniem rozwiązania. Możesz zautomatyzować ten krok. Aby uzyskać więcej informacji, zobacz [jak zautomatyzować transformację wszystkie szablony](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\)).
 
-2. Naciśnij klawisz **F5**lub w menu **debugowanie** kliknij **Rozpocznij debugowanie**.
+2. Naciśnij klawisz **F5** lub w menu **debugowanie** kliknij **Rozpocznij debugowanie**.
 
      Kompilacja DSL jest instalowana w eksperymentalnym wystąpieniu programu Visual Studio.
 
@@ -141,7 +143,7 @@ Eksperymentalny program Visual Studio będzie wyglądać podobnie do poniższego
 
 ### <a name="the-content-of-a-model"></a>Zawartość modelu
 
-Zawartość pliku, który jest wystąpieniem DSL, nazywa się *modelem*. Model zawiera elementy *modelu* <em>elements</em> i *linki* między elementami. Definicja DSL określa, jakie typy elementów modelu i linków mogą znajdować się w modelu. Na przykład w przypadku użycia DSL utworzonego na podstawie szablonu minimalnego języka istnieje jeden typ elementu modelu i jeden typ łącza.
+Zawartość pliku, który jest wystąpieniem DSL, nazywa się *modelem*. Model zawiera elementy *modelu* <em></em> i *linki* między elementami. Definicja DSL określa, jakie typy elementów modelu i linków mogą znajdować się w modelu. Na przykład w przypadku użycia DSL utworzonego na podstawie szablonu minimalnego języka istnieje jeden typ elementu modelu i jeden typ łącza.
 
 Definicja DSL pozwala określić, jak model pojawia się na diagramie. Można wybierać spośród różnych stylów kształtów i łączników. Można określić, że niektóre kształty są wyświetlane wewnątrz innych kształtów.
 
@@ -180,7 +182,7 @@ Do projektu można dodać dowolną liczbę plików szablonów tekstowych. Każdy
 > [!NOTE]
 > Po zmianie definicji DSL, kod szablonu tekstu przykładowego nie będzie działał, chyba że zostanie zaktualizowany.
 
-Aby uzyskać więcej informacji, zobacz [generowanie kodu z języka specyficznego dla domeny](../modeling/generating-code-from-a-domain-specific-language.md) i [pisanie kodu w celu dostosowania języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md).
+Aby uzyskać więcej informacji, zobacz [generowanie kodu z Domain-Specific języku](../modeling/generating-code-from-a-domain-specific-language.md) i [pisanie kodu w celu dostosowania języka Domain-Specific](../modeling/writing-code-to-customise-a-domain-specific-language.md).
 
 ## <a name="customizing-the-dsl"></a>Dostosowywanie DSL
 
@@ -199,7 +201,7 @@ Zmień nazwy istniejących klas i relacji domeny. Na przykład rozpoczynając od
 
 #### <a name="to-rename-domain-classes-relationships-and-tools"></a>Aby zmienić nazwy klas domen, relacji i narzędzi
 
-1. Na diagramie DslDefinition Zmień nazwę **ExampleModel** na **FamilyTreeModel**, **example** dla **osoba**, **cele** do **rodziców**i **źródła** do **elementów podrzędnych**. Możesz kliknąć każdą etykietę, aby ją zmienić.
+1. Na diagramie DslDefinition Zmień nazwę **ExampleModel** na **FamilyTreeModel**, **example** dla **osoba**, **cele** do **rodziców** i **źródła** do **elementów podrzędnych**. Możesz kliknąć każdą etykietę, aby ją zmienić.
 
      ![Diagram definicji DSL &#45; Model drzewa genealogicznego](../modeling/media/familyt_person.png)
 
@@ -268,7 +270,7 @@ Zmień nazwy istniejących klas i relacji domeny. Na przykład rozpoczynając od
 
    2. Na diagramie definicji DSL kliknij wiersz, który łączy klasę **Persona** z klasą Shape.
 
-   3. W obszarze **szczegóły języka DSL**na karcie **mapy dekoratora** kliknij pole wyboru na niezamapowanym dekoratora. W oknie **właściwości wyświetlania**wybierz właściwość domeny, do której ma zostać zamapowana. Na przykład zamapuj **BirthDecorator** na **urodzenie**.
+   3. W obszarze **szczegóły języka DSL** na karcie **mapy dekoratora** kliknij pole wyboru na niezamapowanym dekoratora. W oknie **właściwości wyświetlania** wybierz właściwość domeny, do której ma zostać zamapowana. Na przykład zamapuj **BirthDecorator** na **urodzenie**.
 
 4. Zapisz DSL, kliknij pozycję Przekształć wszystkie szablony i naciśnij klawisz F5.
 
@@ -287,7 +289,7 @@ Zmień nazwy istniejących klas i relacji domeny. Na przykład rozpoczynając od
 
 1. Dodaj klasę domeny i Uczyń ją elementem podrzędnym modelu głównego.
 
-    1. Na diagramie definicji DSL kliknij narzędzie **osadzanie relacji** , kliknij **FamilyTreeModel**klasy głównej, a następnie kliknij w pustej części diagramu.
+    1. Na diagramie definicji DSL kliknij narzędzie **osadzanie relacji** , kliknij **FamilyTreeModel** klasy głównej, a następnie kliknij w pustej części diagramu.
 
          Zostanie wyświetlona nowa klasa domeny, która jest połączona z FamilyTreeModel z relacją osadzania.
 
@@ -331,7 +333,7 @@ Zmień nazwy istniejących klas i relacji domeny. Na przykład rozpoczynając od
 
 6. Utwórz narzędzie elementu do tworzenia nowego miasta.
 
-    1. W **Eksploratorze DSL**rozwiń węzeł **Edytor** , a następnie **kartę Przybornik**.
+    1. W **Eksploratorze DSL** rozwiń węzeł **Edytor** , a następnie **kartę Przybornik**.
 
     2. Kliknij prawym przyciskiem myszy *\<your DSL>* , a następnie kliknij polecenie **Dodaj nowy element**.
 
@@ -345,7 +347,7 @@ Zmień nazwy istniejących klas i relacji domeny. Na przykład rozpoczynając od
 
     2. Ustaw właściwość Name nowego narzędzia.
 
-    3. We właściwości **elemencie ConnectionBuilder** wybierz konstruktora, który zawiera nazwę relacji osoba-miejscowość.
+    3. We właściwości **elemencie ConnectionBuilder** wybierz konstruktora, który zawiera nazwę relacji Person-Town.
 
     4. Ustaw **ikonę przybornika**.
 
@@ -378,10 +380,10 @@ Zmień nazwy istniejących klas i relacji domeny. Na przykład rozpoczynając od
 
     ```
 
-     Po zapisaniu pliku *. tt zostanie utworzony plik pomocniczy zawierający listę osób i ich Residences. Aby uzyskać więcej informacji, zobacz [generowanie kodu z języka specyficznego dla domeny](../modeling/generating-code-from-a-domain-specific-language.md).
+     Po zapisaniu pliku *. tt zostanie utworzony plik pomocniczy zawierający listę osób i ich Residences. Aby uzyskać więcej informacji, zobacz [generowanie kodu z poziomu Domain-Specific języka](../modeling/generating-code-from-a-domain-specific-language.md).
 
 ## <a name="validation-and-commands"></a>Walidacja i polecenia
- Możesz również opracować ten DSL, dodając ograniczenia walidacji. Te ograniczenia to metody, które można zdefiniować, aby upewnić się, że model jest w poprawnym stanie. Na przykład można zdefiniować ograniczenie, aby upewnić się, że data urodzenia elementu podrzędnego jest późniejsza niż jego nadrzędna. Funkcja walidacji wyświetla ostrzeżenie, jeśli użytkownik DSL próbuje zapisać model, który przerywa dowolne ograniczenia. Aby uzyskać więcej informacji, zobacz [Walidacja w języku specyficznym dla domeny](../modeling/validation-in-a-domain-specific-language.md).
+ Możesz również opracować ten DSL, dodając ograniczenia walidacji. Te ograniczenia to metody, które można zdefiniować, aby upewnić się, że model jest w poprawnym stanie. Na przykład można zdefiniować ograniczenie, aby upewnić się, że data urodzenia elementu podrzędnego jest późniejsza niż jego nadrzędna. Funkcja walidacji wyświetla ostrzeżenie, jeśli użytkownik DSL próbuje zapisać model, który przerywa dowolne ograniczenia. Aby uzyskać więcej informacji, zobacz [Walidacja w języku Domain-Specific](../modeling/validation-in-a-domain-specific-language.md).
 
  Można także definiować polecenia menu, które użytkownik może wywołać. Polecenia mogą modyfikować model. Mogą również korzystać z innych modeli w programie Visual Studio i z zasobami zewnętrznymi. Aby uzyskać więcej informacji, zobacz [How to: Modify a standardowe polecenie menu](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
@@ -392,7 +394,7 @@ Zmień nazwy istniejących klas i relacji domeny. Na przykład rozpoczynając od
 
  Możesz użyć tej samej procedury, aby zainstalować DSL na własnym komputerze, aby nie trzeba było korzystać z eksperymentalnego wystąpienia programu Visual Studio.
 
- Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązań językowych właściwych dla domeny](msi-and-vsix-deployment-of-a-dsl.md).
+ Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązań językowych Domain-Specific](msi-and-vsix-deployment-of-a-dsl.md).
 
 ## <a name="removing-old-experimental-dsls"></a><a name="Reset"></a> Usuwanie starej eksperymentalnej językami DSL
  Jeśli utworzono eksperymentalne językami DSL, które nie są już potrzebne, możesz je usunąć z komputera przez zresetowanie wystąpienia eksperymentalnego programu Visual Studio.

@@ -1,5 +1,7 @@
 ---
 title: Wdrażanie niestandardowego procesora dyrektywy
+description: Dowiedz się więcej o metodach dostępnych do wdrożenia niestandardowego procesora dyrektywy w programie Visual Studio lub na dowolnym komputerze.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4762ad21f117bebe22ecfce1c846f15d154b1bf5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 638367f2c3a1238edc257a255280c5197e11d3f0
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536022"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363929"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Wdrażanie niestandardowego procesora dyrektywy
 
@@ -48,7 +50,7 @@ Istnieje kilka sposobów tworzenia plików .vsix. Poniższa procedura opisuje je
 
 1. Utwórz nowy projekt **projektu VSIX** .
 
-2. W polu **source. Extension. vsixmanifest**Ustaw typ zawartości i obsługiwane wersje.
+2. W polu **source. Extension. vsixmanifest** Ustaw typ zawartości i obsługiwane wersje.
 
     1. W edytorze manifestu VSIX na karcie **zasoby** wybierz pozycję **Nowy** i ustaw właściwości nowego elementu:
 
@@ -124,7 +126,7 @@ Istnieje kilka sposobów tworzenia plików .vsix. Poniższa procedura opisuje je
 
 - `IsDirectiveSupported`Metoda musi zwrócić `true` , gdy zostanie przeniesiona nazwa `CustomDirective` .
 
-- Jeśli nie widzisz rozszerzenia w Menedżerze rozszerzeń, ale system nie zezwoli na jego instalację, Usuń rozszerzenie z **%LocalAppData%\Microsoft\VisualStudio \\ \* 0 \ Extensions \\ **.
+- Jeśli nie widzisz rozszerzenia w Menedżerze rozszerzeń, ale system nie zezwoli na jego instalację, Usuń rozszerzenie z **%LocalAppData%\Microsoft\VisualStudio \\ \* 0 \ Extensions \\**.
 
 - Otwórz plik .vsix i sprawdź jego zawartość. Aby go otworzyć, zmień rozszerzenie nazwy pliku na .zip. Sprawdź, czy zawiera on pliki .dll, .pkgdef i extension.vsixmanifest. Plik extension.vsixmanifest powinien zawierać odpowiednią listę w węźle SupportedProducts i powinien też zawierać węzeł VsPackage w węźle Content:
 
@@ -164,7 +166,7 @@ Istnieje kilka sposobów tworzenia plików .vsix. Poniższa procedura opisuje je
 
 2. W edytorze regedit przejdź do
 
-    **HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio \\ \* . 0 \ TextTemplating\DirectiveProcessors**
+    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ \* . 0 \ TextTemplating\DirectiveProcessors**
 
     Jeśli chcesz zainstalować procesor dyrektywy w eksperymentalnej wersji programu Visual Studio, Wstaw "EXP" po "11,0".
 

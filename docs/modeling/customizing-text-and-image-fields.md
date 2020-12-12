@@ -1,5 +1,7 @@
 ---
 title: Dostosowywanie pól tekstowych i obrazu
+description: Dowiedz się więcej na temat dostosowywania plików tekstowych i obrazów. Należy również dowiedzieć się, że podczas definiowania dekoratora tekstu w kształcie jest ono reprezentowane przez TextField.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29210ec667bffd6b632bcfbee0b87c0cbb2d5f38
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6effda90580a184bb8ebfb8c4f4830dc6cb844d5
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542717"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362863"
 ---
 # <a name="customizing-text-and-image-fields"></a>Dostosowywanie pól tekstowych i obrazu
 Po zdefiniowaniu dekoratora tekstu w kształcie jest on reprezentowany przez TextField. Aby zapoznać się z przykładami inicjalizacji textfields i innych ShapeFields, należy sprawdzić Dsl\GeneratedCode\Shapes.cs w rozwiązaniu DSL.

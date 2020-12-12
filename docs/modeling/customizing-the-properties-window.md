@@ -1,5 +1,7 @@
 ---
 title: Dostosowywanie okna właściwości
+description: Dowiedz się, jak dostosować wygląd i zachowanie okna właściwości w języku specyficznym dla domeny (DSL) w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4dac40177c3df2a346039a08cf557b6083ed9fc2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f7d4ac76b8b10fde0c193e3eda73cec611c1441
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85548281"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362878"
 ---
 # <a name="customize-the-properties-window"></a>Dostosowywanie okno Właściwości
 
@@ -40,13 +42,13 @@ Niektóre funkcje dynamiczne elementów graficznych mogą być reprezentowane lu
 
 Kliknij prawym przyciskiem myszy klasę Shape w definicji DSL, wskaż polecenie **Dodaj uwidocznione**, a następnie wybierz funkcję.
 
-Na kształtach można uwidocznić właściwości **FillColor**, **OutlineColor**, **TextColor**, **OutlineDashStyle**, **OutlineThickness** i **FillGradientMode** . Na łącznikach można uwidocznić właściwości **Color** `,` **TextColor**, **DashStyle**i **grubość** . Na diagramach można uwidocznić właściwości **FillColor** i **TextColor** .
+Na kształtach można uwidocznić właściwości **FillColor**, **OutlineColor**, **TextColor**, **OutlineDashStyle**, **OutlineThickness** i **FillGradientMode** . Na łącznikach można uwidocznić właściwości **Color** `,` , **DashStyle** i **grubość** . Na diagramach można uwidocznić właściwości **FillColor** i **TextColor** .
 
 ## <a name="forwarding-display-properties-of-related-elements"></a>Przekazywanie: właściwości wyświetlania powiązanych elementów
 
 Gdy użytkownik DSL wybiera element w modelu, właściwości tego elementu są wyświetlane w oknie właściwości. Można jednak również wyświetlić właściwości określonych powiązanych elementów. Jest to przydatne, jeśli zdefiniowano grupę elementów, które współdziałają ze sobą. Na przykład można zdefiniować element główny i opcjonalny element wtyczki. Jeśli element główny jest mapowany do kształtu, a drugi nie jest, warto zobaczyć wszystkie jego właściwości, tak jakby znajdowały się one w jednym elemencie.
 
-Ten efekt jest nazwany *przekazywaniem właściwości*i odbywa się automatycznie w kilku przypadkach. W innych przypadkach można osiągnąć przekazywanie właściwości przez zdefiniowanie deskryptora typu domeny.
+Ten efekt jest nazwany *przekazywaniem właściwości* i odbywa się automatycznie w kilku przypadkach. W innych przypadkach można osiągnąć przekazywanie właściwości przez zdefiniowanie deskryptora typu domeny.
 
 ### <a name="default-property-forwarding-cases"></a>Domyślne przypadki przekazywania właściwości
 
@@ -71,11 +73,11 @@ W poniższej procedurze przyjęto założenie, że utworzono DSL. Pierwsze kilka
 
 #### <a name="forward-a-property-from-another-element"></a>Przekazywanie właściwości z innego elementu
 
-1. Utwórz [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] rozwiązanie, które zawiera co najmniej dwie klasy, które w tym przykładzie nazywa się **książką** i **autorem**. Między **książką** i **autorem**powinna istnieć relacja między nimi.
+1. Utwórz [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] rozwiązanie, które zawiera co najmniej dwie klasy, które w tym przykładzie nazywa się **książką** i **autorem**. Między **książką** i **autorem** powinna istnieć relacja między nimi.
 
     Liczebność roli źródłowej (rola na stronie **książki** ) powinna mieć wartość 0.. 1 lub 1.. 1, tak aby każda **książka** miała jednego **autora**.
 
-2. W **Eksploratorze DSL**kliknij prawym przyciskiem myszy klasę domena **książki** , a następnie kliknij polecenie **Dodaj nowe element DomainTypeDescriptor**.
+2. W **Eksploratorze DSL** kliknij prawym przyciskiem myszy klasę domena **książki** , a następnie kliknij polecenie **Dodaj nowe element DomainTypeDescriptor**.
 
     Węzeł o nazwie **ścieżki deskryptorów właściwości niestandardowych** jest wyświetlany w węźle **deskryptora typu niestandardowego** .
 
@@ -119,7 +121,7 @@ Można jednak określić następujące edytory i typy:
 
 2. Dodaj typ do listy **typów domen** , chyba że jeszcze nie zostało to zrobione.
 
-   1. Otwórz DslDefinition. DSL i w **Eksploratorze DSL**kliknij prawym przyciskiem myszy węzeł główny, a następnie kliknij polecenie **Dodaj nowy typ zewnętrzny**.
+   1. Otwórz DslDefinition. DSL i w **Eksploratorze DSL** kliknij prawym przyciskiem myszy węzeł główny, a następnie kliknij polecenie **Dodaj nowy typ zewnętrzny**.
 
         Nowy wpis zostanie wyświetlony w węźle **typy domen** .
 
