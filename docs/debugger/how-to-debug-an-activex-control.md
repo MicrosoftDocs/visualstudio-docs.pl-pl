@@ -1,5 +1,7 @@
 ---
 title: Debugowanie kontrolki ActiveX | Microsoft Docs
+Description: Dowiedz się, jak debugować formant ActiveX. Należy określić zawierający plik wykonywalny, który można wykonać na stronach właściwości projektu lub po rozpoczęciu debugowania.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -24,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc15d42aa2984a7257687eeb051ce754bace9e81
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: a0458fb4981642d3f8386edd4c3605ae7b902a14
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852168"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398678"
 ---
 # <a name="how-to-debug-an-activex-control"></a>Porady: debugowanie formantu ActiveX
 
@@ -60,6 +62,6 @@ Aby debugować formant ActiveX, należy określić kontener (plik wykonywalny), 
 
 - [Kontrolki ActiveX](/cpp/mfc/activex-controls)
 - [Testowanie właściwości i zdarzeń za pomocą kontenera testów](/cpp/mfc/testing-properties-and-events-with-test-container)
-- [COM i debugowanie ActiveX](../debugger/com-and-activex-debugging.md)
+- [Debugowanie modelu COM i ActiveX](../debugger/com-and-activex-debugging.md)
 - [Debugowanie w Visual Studio](../debugger/index.yml)
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)

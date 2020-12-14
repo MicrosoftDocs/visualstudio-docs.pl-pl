@@ -1,5 +1,7 @@
 ---
 title: Debuguj .NET Framework Źródło | Microsoft Docs
+Description: Dowiedz się, jak debugować źródło .NET Framework. Należy je skonfigurować i pobrać symbole debugowania.
+ms.custom: SEO-VS-2020
 ms.date: 11/19/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f054564ff36c538b18525ec9d8adf9b6f3d060b9
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 13a575ec2e77f1b715ec5f17324a6933d8cf0805
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852129"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398626"
 ---
 # <a name="how-to-debug-net-framework-source"></a>Instrukcje: debugowanie źródła .NET Framework
 
@@ -29,7 +31,7 @@ Aby debugować źródło .NET Framework, musisz:
 
 ### <a name="to-enable-stepping-into-net-framework-source"></a>Aby włączyć przechodzenie do .NET Framework źródła
 
-1. W obszarze **Narzędzia** (lub **Debuguj**) > **Opcje**  >  **debugowania**  >  **Ogólne**wybierz pozycję **Włącz .NET Framework Źródło**.
+1. W obszarze **Narzędzia** (lub **Debuguj**) > **Opcje**  >  **debugowania**  >  **Ogólne** wybierz pozycję **Włącz .NET Framework Źródło**.
 
    - Jeśli Tylko mój kod włączone, okno dialogowe ostrzeżenia informuje, że Tylko mój kod jest teraz wyłączone. Wybierz przycisk **OK**.
 
@@ -39,7 +41,7 @@ Aby debugować źródło .NET Framework, musisz:
 
 ### <a name="to-set-or-change-symbol-source-locations-and-loading-behavior"></a>Aby ustawić lub zmienić lokalizację źródłową symboli i zachowanie ładowania
 
-1. Wybierz kategorię **symbole** w obszarze **Narzędzia** (lub **Debuguj**) > **Options**  >  **debugowanie**opcji.
+1. Wybierz kategorię **symbole** w obszarze **Narzędzia** (lub **Debuguj**) >   >  **debugowanie** opcji.
 
 1. Na stronie **symbole** w obszarze **lokalizacje pliku symboli (. pdb)** wybierz pozycję **serwery symboli firmy Microsoft** , aby uzyskać dostęp do symboli z publicznych serwerów symboli firmy Microsoft. Wybierz przyciski paska narzędzi, aby dodać inne lokalizacje symboli i zmienić kolejność ładowania.
 
@@ -53,7 +55,7 @@ Aby debugować źródło .NET Framework, musisz:
 
 ### <a name="to-load-symbols-from-the-modules-or-call-stack-windows"></a>Aby załadować symbole z modułów lub okien stosu wywołań
 
-1. Podczas debugowania Otwórz okno, wybierając kolejno **opcje Debuguj**  >  **moduły systemu Windows**  >  **Modules** (lub naciśnij **klawisze CTRL + ALT + U**) lub **Debuguj**  >  **Windows**  >  **stos wywołań** systemu Windows (**Ctrl + Alt + C**).
+1. Podczas debugowania Otwórz okno, wybierając kolejno **opcje Debuguj**  >  **moduły systemu Windows**  >   (lub naciśnij **klawisze CTRL + ALT + U**) lub **Debuguj**  >    >  **stos wywołań** systemu Windows (**Ctrl + Alt + C**).
 
 1. Kliknij prawym przyciskiem myszy moduł, dla którego symbole nie zostały załadowane. W oknie **moduły** stan ładowania symboli znajduje się w kolumnie **Stan symboli** . W oknie **stos wywołań** stan znajduje się w kolumnie **stan ramki** i ramka jest wyszarzona.
 

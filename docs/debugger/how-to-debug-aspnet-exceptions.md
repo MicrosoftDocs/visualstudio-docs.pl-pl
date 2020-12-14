@@ -1,5 +1,7 @@
 ---
 title: Debuguj wyjątki ASP.NET | Microsoft Docs
+Description: Dowiedz się, jak skonfigurować, aby debuger zatrzymał Nieobsłużone wyjątki w aplikacji ASP.NET. Można upewnić się, że przerwanie występuje w kodzie niesystemowym.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 011094eed88245e3cd83b092a3f1b2e47bc77ae8
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 945e289f3da55c8884f4ec2cd115c65dbe3be237
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852155"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398652"
 ---
 # <a name="how-to-debug-aspnet-exceptions"></a>Porady: debugowanie wyjątków ASP.NET
 Debugowanie wyjątków jest ważną częścią opracowywania niezawodnej [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji. Ogólne informacje o sposobie debugowania wyjątków polegają na [zarządzaniu wyjątkami za pomocą debugera](../debugger/managing-exceptions-with-the-debugger.md).

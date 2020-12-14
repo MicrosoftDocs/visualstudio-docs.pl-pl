@@ -1,7 +1,8 @@
 ---
 title: Debugowanie aplikacji, która nie jest częścią rozwiązania programu Visual Studio
 titleSuffix: ''
-ms.custom: ''
+Description: Dowiedz się, jak debugować aplikację, która nie jest częścią rozwiązania programu Visual Studio. Może być możliwe dołączenie debugera programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2020
 ms.topic: how-to
 dev_langs:
@@ -20,16 +21,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8cb71acb9c1c332f269f77129fa2d11a9a874f8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd4d5497a4c29502fe4d7e4825b1767991c79298
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350150"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398665"
 ---
 # <a name="debug-an-app-that-isnt-part-of-a-visual-studio-solution-c-c-visual-basic-f"></a>Debugowanie aplikacji, która nie jest częścią rozwiązania programu Visual Studio (C++, C#, Visual Basic, F #)
 
-Możesz chcieć debugować aplikację (plik*exe* ), która nie jest częścią rozwiązania programu Visual Studio. Może to być [otwarty projekt folderu](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) lub ktoś inny mógł utworzyć aplikację poza programem Visual Studio lub uzyskać aplikację z innej lokalizacji.
+Możesz chcieć debugować aplikację (plik *exe* ), która nie jest częścią rozwiązania programu Visual Studio. Może to być [otwarty projekt folderu](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) lub ktoś inny mógł utworzyć aplikację poza programem Visual Studio lub uzyskać aplikację z innej lokalizacji.
 
 - W przypadku projektu otwartego folderu w programie Visual Studio (który nie ma pliku projektu lub rozwiązania), zobacz [Uruchamianie i debugowanie kodu](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md#run-and-debug-your-code) lub, w przypadku języka C++, [Konfigurowanie parametrów debugowania z launch.vs.json](/cpp/build/open-folder-projects-cpp#configure-debugging-parameters-with-launchvsjson).
 
@@ -70,7 +71,7 @@ Możesz chcieć debugować aplikację (plik*exe* ), która nie jest częścią r
 
 1. Po wybraniu nowego pliku Rozpocznij debugowanie aplikacji, wybierając polecenie wykonywania, takie jak **Rozpocznij debugowanie**, z menu **debugowanie** .
 
-### <a name="see-also"></a>Zobacz też
+### <a name="see-also"></a>Zobacz także
 - [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)
 - [DBG, pliki](/previous-versions/visualstudio/visual-studio-2010/da528y14(v=vs.100))

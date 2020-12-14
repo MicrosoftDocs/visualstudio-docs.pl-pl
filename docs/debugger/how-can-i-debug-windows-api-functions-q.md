@@ -1,6 +1,7 @@
 ---
 title: Debugowanie funkcji interfejsu API systemu Windows | Microsoft Docs
-ms.custom: seodec18
+Description: Dowiedz się, jak debugować funkcję interfejsu API systemu Windows z załadowanymi symbolami NT. W 32-bitowym kodzie używasz formularza o nazwie funkcji, aby ustawić punkt przerwania.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 06/03/2020
 ms.topic: how-to
 f1_keywords:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f7b293270facbbfa0d2174121ff6a3ac736b75a
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 7ab50205d1ade2447b85ad7eee2ffb6aaf38363d
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599890"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398393"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>Jak można debugować funkcje API systemu Windows?
 Jeśli chcesz debugować funkcję interfejsu API systemu Windows z załadowanymi symbolami NT, należy wykonać następujące czynności.
@@ -50,6 +51,6 @@ Jeśli chcesz debugować funkcję interfejsu API systemu Windows z załadowanymi
     {,,USER32.DLL}MessageBeep
     ```
 
-## <a name="see-also"></a>Zobacz też
-- [Debugowanie kodu natywnego — Często zadawane pytania](../debugger/debugging-native-code-faqs.md)
+## <a name="see-also"></a>Zobacz także
+- [Debugowanie często zadawanych pytań dotyczących kodu natywnego](../debugger/debugging-native-code-faqs.md)
 - [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)

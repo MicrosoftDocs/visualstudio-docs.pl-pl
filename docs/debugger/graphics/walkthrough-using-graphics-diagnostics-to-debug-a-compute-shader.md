@@ -1,5 +1,7 @@
 ---
 title: Debugowanie cieniowania obliczeń przy użyciu diagnostyki grafiki
+description: Wykonaj przykład rozwiązywania problemów z cieniem obliczeniowym. Zobaczysz listę zdarzeń grafiki, stos wywołań zdarzeń grafiki i etapy potoku grafiki.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 69287456-644b-4aff-bd03-b1bbb2abb82a
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19ae8472aaafbad1a04485ff2e3a2637f345bc00
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 939b1906a32c48aa1ad32f2fb03372a74afc43ec
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66262869"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398717"
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Przewodnik: używanie diagnostyki grafiki do debugowania cieniowania obliczenia
 W tym instruktażu pokazano, jak za pomocą narzędzi Diagnostyka grafiki programu Visual Studio zbadać cieniowanie obliczeniowe, które generuje nieprawidłowe wyniki.
@@ -40,7 +42,7 @@ W tym instruktażu pokazano, jak za pomocą narzędzi Diagnostyka grafiki progra
 
 1. W programie Visual Studio załaduj dziennik grafiki zawierający ramkę, która wykazuje nieprawidłowe wyniki symulacji. Zostanie wyświetlona nowa karta Diagnostyka grafiki w programie Visual Studio. W górnej części tej karty są docelowe wyniki renderowania dla wybranej ramki. W dolnej części jest **listą ramek**, która wyświetla miniaturę każdej przechwyconej ramki.
 
-2. Na **liście ramka**Wybierz ramkę, która pokazuje nieprawidłowe zachowanie symulacji. Mimo że błąd pojawia się w kodzie symulacji, a nie w kodzie renderowania, nadal trzeba wybrać ramkę, ponieważ zdarzenia DirectCompute są przechwytywane w oparciu o ramy między ramkami oraz zdarzenia Direct3D. W tym scenariuszu karta Dziennik grafiki wygląda następująco:
+2. Na **liście ramka** Wybierz ramkę, która pokazuje nieprawidłowe zachowanie symulacji. Mimo że błąd pojawia się w kodzie symulacji, a nie w kodzie renderowania, nadal trzeba wybrać ramkę, ponieważ zdarzenia DirectCompute są przechwytywane w oparciu o ramy między ramkami oraz zdarzenia Direct3D. W tym scenariuszu karta Dziennik grafiki wygląda następująco:
 
     ![Dokument dziennika grafiki w programie Visual Studio.](media/gfx_diag_demo_compute_shader_fluid_step_1.png "gfx_diag_demo_compute_shader_fluid_step_1")
 

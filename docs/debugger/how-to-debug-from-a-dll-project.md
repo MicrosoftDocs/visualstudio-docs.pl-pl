@@ -1,5 +1,7 @@
 ---
 title: Debugowanie z projektu DLL | Microsoft Docs
+Description: Debugowanie projektu DLL można rozpocząć od samego projektu, określając aplikację wywołującą we właściwościach projektu. Zobacz ten artykuł, aby uzyskać szczegółowe informacje.
+ms.custom: SEO-VS-2020
 ms.date: 10/10/2018
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1102eb61f6cfda42f6e4e879f5c592c0c064ce0
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 723f35142ec125c016caa3653be450b61fb05d02
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852142"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398561"
 ---
 # <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>Instrukcje: debugowanie z projektu DLL w programie Visual Studio (C#, C++, Visual Basic, F #)
 
@@ -35,11 +37,11 @@ Natywne i zarządzane projekty DLL mają różne ustawienia, aby określić apli
 
 ## <a name="specify-a-calling-app-in-a-native-dll-project"></a>Określ aplikację wywołującą w macierzystym projekcie DLL
 
-1. Wybierz projekt biblioteki DLL C++ w **Eksplorator rozwiązań**. Wybierz ikonę **Właściwości** , naciśnij klawisz **Alt** + **Enter**lub kliknij prawym przyciskiem myszy i wybierz polecenie **Właściwości**.
+1. Wybierz projekt biblioteki DLL C++ w **Eksplorator rozwiązań**. Wybierz ikonę **Właściwości** , naciśnij klawisz **Alt** + **Enter** lub kliknij prawym przyciskiem myszy i wybierz polecenie **Właściwości**.
 
-1. W oknie dialogowym ** \<Project> strony właściwości** upewnij się, że pole **konfiguracji** w górnej części okna ma wartość **Debuguj**.
+1. W oknie dialogowym **\<Project> strony właściwości** upewnij się, że pole **konfiguracji** w górnej części okna ma wartość **Debuguj**.
 
-1. Wybierz pozycję Debugowanie **Właściwości konfiguracji**  >  **Debugging**.
+1. Wybierz pozycję Debugowanie **Właściwości konfiguracji**  >  .
 
 1. Na liście **debuger do uruchomienia** wybierz pozycję **lokalny debuger systemu Windows** lub **zdalny debuger systemu Windows**.
 
@@ -53,7 +55,7 @@ Natywne i zarządzane projekty DLL mają różne ustawienia, aby określić apli
 
 ## <a name="specify-a-calling-app-in-a-managed-dll-project"></a>Określanie aplikacji wywołującej w zarządzanym projekcie DLL
 
-1. Wybierz projekt C# lub Visual Basic DLL w **Eksplorator rozwiązań**. Wybierz ikonę **Właściwości** , naciśnij klawisz **Alt** + **Enter**lub kliknij prawym przyciskiem myszy i wybierz polecenie **Właściwości**.
+1. Wybierz projekt C# lub Visual Basic DLL w **Eksplorator rozwiązań**. Wybierz ikonę **Właściwości** , naciśnij klawisz **Alt** + **Enter** lub kliknij prawym przyciskiem myszy i wybierz polecenie **Właściwości**.
 
 1. Upewnij się, że pole **konfiguracji** w górnej części okna ma wartość **Debuguj**.
 
@@ -69,7 +71,7 @@ Natywne i zarządzane projekty DLL mają różne ustawienia, aby określić apli
 
    ![Okno Właściwości debugowania C#](../debugger/media/dbg-debugging-properties-dll-csharp.png "Okno Właściwości debugowania C#")
 
-1. Użyj **File**  >  **pozycji Zapisz wybrane elementy** lub **Ctrl** + **S** , aby zapisać zmiany.
+1. Użyj   >  **pozycji Zapisz wybrane elementy** lub **Ctrl** + **S** , aby zapisać zmiany.
 
 ## <a name="debug-from-the-dll-project"></a>Debugowanie z projektu DLL
 
@@ -79,10 +81,10 @@ Natywne i zarządzane projekty DLL mają różne ustawienia, aby określić apli
 
 1. Upewnij się, że w polu **Konfiguracja rozwiązań** jest ustawiona wartość **Debuguj**. Naciśnij klawisz **F5**, kliknij zieloną strzałkę **startową** lub wybierz **Debuguj**  >  **Rozpocznij debugowanie**.
 
-Jeśli debugowanie nie trafi w punkty przerwania, upewnij się, że dane wyjściowe biblioteki DLL (domyślnie folder * \<project> \debug.* ) są lokalizacją, którą wywołuje aplikacja wywołująca.
+Jeśli debugowanie nie trafi w punkty przerwania, upewnij się, że dane wyjściowe biblioteki DLL (domyślnie folder *\<project> \debug.* ) są lokalizacją, którą wywołuje aplikacja wywołująca.
 
 ## <a name="see-also"></a>Zobacz także
 - [Debugowanie projektów DLL](../debugger/debugging-dll-projects.md)
 - [Ustawienia projektu dla konfiguracji debugowania w języku C#](../debugger/project-settings-for-csharp-debug-configurations.md)
-- [Ustawienia projektu dla konfiguracji debugowania Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
-- [Ustawienia projektu dla konfiguracji debugowania języka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
+- [Ustawienia projektu dla konfiguracji debugowania w języku Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
+- [Ustawienia projektu dla konfiguracji debugowania w języku C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)

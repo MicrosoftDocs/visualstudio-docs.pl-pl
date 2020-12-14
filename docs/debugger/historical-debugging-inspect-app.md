@@ -1,5 +1,7 @@
 ---
 title: Zbadaj aplikację za pomocą debugowania historycznego | Microsoft Docs
+description: Postępuj zgodnie z badaniem korzystającym z debugowania historycznego IntelliTrace, aby śledzić usterkę w aplikacji konsolowej C#.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 629b5d93-39b2-430a-b8ba-d2a47fdf2584
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: efabc8cd185daed4f018e3e4209e391b5bc39f44
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d51327f67429071d08f6dfd02c0ec0a1fc55822f
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350449"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398704"
 ---
 # <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio-c-visual-basic-c"></a>Sprawdzanie aplikacji za pomocą debugowania historycznego IntelliTrace w programie Visual Studio (C#, Visual Basic, C++)
 
@@ -53,7 +55,7 @@ private static int AddInt(int add)
 
 Przyjęto założenie, że oczekiwana wartość `resultInt` po wywołaniu `AddAll()` to 20 (wynik zwiększania `testInt` 20 razy). (Założono również, że błąd nie jest widoczny w programie `AddInt()` ). Jednak wynik jest w rzeczywistości 44. Jak można znaleźć usterkę bez przechodzenia przez `AddAll()` 10 razy? Możemy użyć debugowania historycznego, aby szybciej i łatwiej znaleźć usterkę. Oto kroki tej procedury:
 
-1. W obszarze **narzędzia > opcje > IntelliTrace > ogólne**upewnij się, że IntelliTrace jest włączona, a następnie wybierz pozycję **zdarzenia IntelliTrace i informacje o wywołaniu**. Jeśli nie wybierzesz tej opcji, nie będzie można zobaczyć odstępu nawigacyjnego (jak wyjaśniono poniżej).
+1. W obszarze **narzędzia > opcje > IntelliTrace > ogólne** upewnij się, że IntelliTrace jest włączona, a następnie wybierz pozycję **zdarzenia IntelliTrace i informacje o wywołaniu**. Jeśli nie wybierzesz tej opcji, nie będzie można zobaczyć odstępu nawigacyjnego (jak wyjaśniono poniżej).
 
 2. Ustaw punkt przerwania w `Console.WriteLine(resultInt);` wierszu.
 
@@ -71,7 +73,7 @@ Przyjęto założenie, że oczekiwana wartość `resultInt` po wywołaniu `AddAl
 
     ![okno kodu w trybie debugowania historycznego](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")
 
-6. Teraz możesz przejść do `AddAll()` metody (**F11**lub **Wkrocz do** przycisku na marginesie nawigacyjnym). Krok do przodu (**F10**lub **Przejdź do następnego wywołania** na marginesie nawigacyjnym. Różowa linia znajduje się teraz w `j = AddInt(j);` wierszu. W tym przypadku **F10** nie przechodzi do następnego wiersza kodu. Zamiast tego należy wykonać kroki do następnego wywołania funkcji. Debugowanie historyczne prowadzi od wywołania wywołania i pomija wiersze kodu, które nie zawierają wywołania funkcji.
+6. Teraz możesz przejść do `AddAll()` metody (**F11** lub **Wkrocz do** przycisku na marginesie nawigacyjnym). Krok do przodu (**F10** lub **Przejdź do następnego wywołania** na marginesie nawigacyjnym. Różowa linia znajduje się teraz w `j = AddInt(j);` wierszu. W tym przypadku **F10** nie przechodzi do następnego wiersza kodu. Zamiast tego należy wykonać kroki do następnego wywołania funkcji. Debugowanie historyczne prowadzi od wywołania wywołania i pomija wiersze kodu, które nie zawierają wywołania funkcji.
 
 7. Teraz przejdź do `AddInt()` metody. Usterka powinna być natychmiast widoczna w tym kodzie.
 

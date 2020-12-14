@@ -1,6 +1,7 @@
 ---
 title: Dowiedz się, czy moje wskaźniki uszkadzają adres pamięci | Microsoft Docs
-ms.custom: seodec18
+Description: Aby określić, czy wskaźnik powoduje uszkodzenie pamięci, można wyszukać uszkodzenie sterty i można ustawić punkt przerwania danych, aby dowiedzieć się, w jaki sposób wartość jest modyfikowana.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -21,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 075569815d55ea30f688c5ce86c56990fca03cd1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 310ec0b881c3b4a299a3d933511e54db0e288ddf
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350358"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398367"
 ---
 # <a name="how-can-i-find-out-if-my-pointers-corrupt-a-memory-address"></a>Jak można sprawdzić, czy wskaźniki uszkadzają adresy pamięci?
 ## <a name="problem-description"></a>Opis problemu
@@ -44,6 +45,6 @@ ms.locfileid: "85350358"
 
 2. Po trafieniu punktu przerwania Użyj okna **pamięci** , aby wyświetlić zawartość pamięci, zaczynając od 0x00408000. Aby uzyskać więcej informacji, zobacz [pamięć systemu Windows](../debugger/memory-windows.md).
 
-## <a name="see-also"></a>Zobacz też
-- [Debugowanie kodu natywnego — Często zadawane pytania](../debugger/debugging-native-code-faqs.md)
+## <a name="see-also"></a>Zobacz także
+- [Debugowanie często zadawanych pytań dotyczących kodu natywnego](../debugger/debugging-native-code-faqs.md)
 - [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)

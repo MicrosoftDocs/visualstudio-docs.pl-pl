@@ -1,6 +1,7 @@
 ---
 title: Zastosuj edycje w trybie przerwania za pomocą Edytuj i Kontynuuj | Microsoft Docs
-ms.custom: seodec18
+Description: Zobacz, jak używać Edytuj i Kontynuuj, aby edytować kod Visual Basic w trybie przerwania. Istnieją różne sposoby wprowadzania trybu przerwania.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -23,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: acdd5b85c77b177dfb5f6d8129594967e902337c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b8e6ef8c41fbaf5aafa6b1fc9ef4216c773e75e
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350304"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398691"
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>Instrukcje: stosowanie edycji w trybie przerwania za pomocą Edytuj i Kontynuuj (Visual Basic)
 Możesz użyć Edytuj i Kontynuuj, aby edytować swój kod w trybie przerwania, a następnie kontynuować bez zatrzymywania i ponownego uruchamiania.
@@ -60,6 +61,6 @@ Aby uzyskać ograniczenia dotyczące używania funkcji Edytuj i Kontynuuj podcza
 
      Kod jest teraz wykonywany z zastosowaniem zmian wprowadzonych w projekcie.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Obsługiwane zmiany kodu (C# i Visual Basic)](../debugger/supported-code-changes-csharp.md)
 - [Edytuj i kontynuuj (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)

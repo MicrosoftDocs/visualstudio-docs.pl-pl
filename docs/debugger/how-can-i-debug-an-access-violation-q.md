@@ -1,6 +1,7 @@
 ---
 title: Debugowanie naruszenia dostępu w języku C++ | Microsoft Docs
-ms.custom: seodec18
+description: Zobacz Porady dotyczące rozwiązywania problemów z naruszeniem dostępu, gdy więcej niż jeden wskaźnik jest kandydatem. Najnowsze wersje programu Visual Studio mają nazwę wskaźnik errant.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 02/05/2019
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 803f81d1a26438c2134349a85369d341353e17cf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b0fb7e6f5ae71cf336f9fe206bc7b0208566b615
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350423"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398574"
 ---
 # <a name="how-can-i-debug-a-c-access-violation"></a>Jak debugować naruszenie zasad dostępu w języku C++?
 
@@ -79,5 +80,5 @@ W przypadku uruchomienia tego kodu w programie Visual Studio 2015 Update 1 powin
 
 Jeśli nie możesz określić, dlaczego wskaźnik spowodował naruszenie zasad dostępu, śledź kod, aby upewnić się, że wskaźnik powodujący problem został poprawnie przypisany.  Jeśli jest ona przenoszona jako parametr, upewnij się, że jest prawidłowo przenoszona i nie utworzysz przypadkowo [kopii płytki](https://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy). Następnie sprawdź, czy wartości nie są przypadkowo zmieniane w programie, tworząc punkt przerwania danych dla danego wskaźnika, aby upewnić się, że nie jest on modyfikowany w innym miejscu programu. Aby uzyskać więcej informacji na temat punktów przerwania danych, zobacz sekcję punkt przerwania danych w temacie [Używanie punktów przerwania](../debugger/using-breakpoints.md).
 
-## <a name="see-also"></a>Zobacz też
-- [Debugowanie kodu natywnego — Często zadawane pytania](../debugger/debugging-native-code-faqs.md)
+## <a name="see-also"></a>Zobacz także
+- [Debugowanie często zadawanych pytań dotyczących kodu natywnego](../debugger/debugging-native-code-faqs.md)
