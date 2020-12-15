@@ -1,5 +1,7 @@
 ---
 title: Ograniczenia Windows Forms formantów w dokumentach pakietu Office
+description: Zapoznaj się z ograniczeniami Windows Forms metod kontroli i właściwościami Microsoft Office dokumentów.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -21,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ade7da21a8d07fbd429a88303ad2be375877c1ec
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 63459f4daf1f9fe717946491a997ba47510fbab8
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583739"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524458"
 ---
 # <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Ograniczenia Windows Forms formantów w dokumentach pakietu Office
 
@@ -71,7 +73,7 @@ Nie można również ustawić <xref:System.Windows.Forms.Control.Left> właściw
 
 Formanty Windows Forms zwykle mają takie samo zachowanie w dokumencie pakietu Office jak w formularzu systemu Windows, ale istnieją pewne różnice. W poniższej tabeli opisano różnice występujące w przypadku formantów Windows Forms w dokumentach pakietu Office.
 
-|Funkcjonalność|Różnica|
+|Funkcja|Różnica|
 |-------------------|----------------|
 |Kolejność tabulacji kontrolki|Nie można tabulatorować formantów umieszczonych w arkuszu programu Excel lub dokumencie programu Word.|
 |Grupowanie formantów|Nie można użyć <xref:System.Windows.Forms.GroupBox> kontrolki, aby zawierać inne kontrolki dokumentu pakietu Office. Po dodaniu wielu przycisków radiowych bezpośrednio do dokumentu, przyciski radiowe nie wykluczają się wzajemnie. Można napisać kod, aby przyciski radiowe wykluczają się wzajemnie. Jednak preferowanym podejściem jest dodanie przycisków radiowych do kontrolki użytkownika, a następnie dodanie kontrolki użytkownika do dokumentu. Aby uzyskać więcej informacji, zobacz przykładowe kontrolki programu Word lub kontrolki programu Excel w przykładach na potrzeby [tworzenia i instruktażu pakietu Office](../vsto/office-development-samples-and-walkthroughs.md).|

@@ -1,5 +1,7 @@
 ---
 title: Model obiektów programu Word — omówienie
+description: Model obiektów programu Word składa się z klas i interfejsów, które są dostępne w podstawowym zestawie międzyoperacyjnym dla programu Word i są zdefiniowane w przestrzeni nazw programu Word.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 71e66d6cda802b2b1243911e1927af751e2cdbe9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d8ca92fdebb3504331ec38937dd79786fdb8b42
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985388"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523494"
 ---
 # <a name="word-object-model-overview"></a>Model obiektów programu Word — omówienie
   Podczas opracowywania rozwiązań programu Word w programie Visual Studio można korzystać z modelu obiektów programu Word. Ten model obiektów składa się z klas i interfejsów, które są dostępne w podstawowym zestawie międzyoperacyjnym dla programu Word i są zdefiniowane w <xref:Microsoft.Office.Interop.Word> przestrzeni nazw.

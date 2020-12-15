@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: Importowanie regionów formularzy zaprojektowanych w programie Outlook'
+description: Dowiedz się, jak zaprojektować region formularza w programie Microsoft Outlook, a następnie zaimportować region formularza do projektu dodatku VSTO programu Outlook za pomocą Kreatora nowego regionu formularza.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2a0de1a25a5309e99193b7be8bce2819808665b8
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 9b65502bbf29f6e0df7435f6a27d3c51e8082e41
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584979"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522677"
 ---
 # <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>Przewodnik: Importowanie regionów formularzy zaprojektowanych w programie Outlook
   W tym instruktażu przedstawiono sposób projektowania regionu formularza w programie Microsoft Office Outlook, a następnie importowania regionu formularza do projektu dodatku VSTO programu Outlook za pomocą kreatora **nowego regionu formularza** . Projektowanie regionu formularza w programie Outlook umożliwia dodawanie natywnych kontrolek programu Outlook do regionu formularza powiązanego z danymi programu Outlook. Po zaimportowaniu regionu formularza można obsłużyć zdarzenia poszczególnych kontrolek.
@@ -97,7 +99,7 @@ ms.locfileid: "91584979"
 
 21. W oknie **Właściwości** , ustaw **nazwę** na **AddDependentTask**, ustaw **podpis** , aby **dodać zadanie zależne**, ustaw **Szerokość** na **100**, a następnie kliknij przycisk **Zastosuj**.
 
-22. W oknie **wybór pól**kliknij pozycję **Nowy**.
+22. W oknie **wybór pól** kliknij pozycję **Nowy**.
 
 23. W oknie dialogowym **Nowy pole** wpisz **HiddenField** w polu **Nazwa** , a następnie kliknij przycisk **OK**.
 
@@ -131,7 +133,7 @@ ms.locfileid: "91584979"
 
 ### <a name="to-import-the-form-region-into-the-outlook-vsto-add-in-project"></a>Aby zaimportować region formularza do projektu dodatku VSTO programu Outlook
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt **TaskAddIn** , wskaż polecenie **Dodaj**, a następnie kliknij pozycję **nowy element**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt **TaskAddIn** , wskaż polecenie **Dodaj**, a następnie kliknij pozycję **nowy element**.
 
 2. W okienku **Szablony** wybierz pozycję **region formularza programu Outlook**, Nazwij plik **TaskFormRegion**, a następnie kliknij przycisk **Dodaj**.
 
@@ -158,7 +160,7 @@ ms.locfileid: "91584979"
 
 ### <a name="to-handle-the-events-of-controls-on-the-form-region"></a>Aby obsłużyć zdarzenia formantów w regionie formularza
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję *TaskFormRegion.cs* lub *TaskFormRegion. vb*, a następnie kliknij polecenie **Wyświetl kod**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję *TaskFormRegion.cs* lub *TaskFormRegion. vb*, a następnie kliknij polecenie **Wyświetl kod**.
 
     *TaskFormRegion.cs* lub *TaskFormRegion. vb* zostanie otwarty w edytorze kodu.
 

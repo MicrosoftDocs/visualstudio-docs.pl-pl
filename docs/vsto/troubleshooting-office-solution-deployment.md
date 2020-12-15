@@ -1,5 +1,7 @@
 ---
 title: Rozwiązywanie problemów z wdrażaniem rozwiązań pakietu Office
+description: Dowiedz się, jak rozwiązywać typowe problemy, które mogą wystąpić podczas wdrażania rozwiązań pakietu Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: troubleshooting
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c7db4a699fcc8b28e4f2f423f612738de6a6836
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: b70b03e8342564de828059d1a335f6347c19b5a3
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90806736"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522965"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Rozwiązywanie problemów z wdrażaniem rozwiązań pakietu Office
   Ten temat zawiera informacje o sposobach rozwiązywania typowych problemów, które mogą wystąpić podczas wdrażania rozwiązań pakietu Office.
@@ -45,7 +47,7 @@ ms.locfileid: "90806736"
 
 1. W rejestrze przejdź do następującego klucza:
 
-     **HKEY_CURRENT_USER \Software\Microsoft\VSTA**
+     **HKEY_CURRENT_USER\Software\Microsoft\VSTA**
 
 2. W podkluczu **AddInTimeout** ustaw wartość limitu czasu (w milisekundach).
 

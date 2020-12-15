@@ -1,5 +1,7 @@
 ---
 title: Rozwiązywanie problemów z rozwiązaniami pakietu Office
+description: Poznaj kilka porad dotyczących rozwiązywania typowych problemów, które mogą wystąpić podczas tworzenia rozwiązań przy użyciu narzędzi programistycznych pakietu Office w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: troubleshooting
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 82fbb41bb1bf0d7ba3da046eb7d22eb8606a7529
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3ee25ea397af3805ac88b51d12a862bffdb20a00
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87234721"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522827"
 ---
 # <a name="troubleshoot-office-solutions"></a>Rozwiązywanie problemów z rozwiązaniami pakietu Office
   Ta sekcja zawiera wskazówki dotyczące rozwiązywania typowych problemów, które mogą wystąpić podczas tworzenia rozwiązań przy użyciu narzędzi programistycznych pakietu Office w programie Visual Studio.

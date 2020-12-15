@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: Automatyzowanie aplikacji z niestandardowego okienka zadań'
+description: Utwórz niestandardowe okienko zadań, które automatyzuje program Microsoft PowerPoint przez Wstawianie dat do slajdu, gdy użytkownik kliknie formant MonthCalendar w niestandardowym okienku zadań.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52474aeebfbc03fba2a2e119e1b3366c30cf6959
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 7bb53d56a83c74a0ab1719f62377e2da426a83fd
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585083"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522797"
 ---
 # <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>Przewodnik: Automatyzowanie aplikacji z niestandardowego okienka zadań
   W tym instruktażu przedstawiono sposób tworzenia niestandardowego okienka zadań, które automatyzuje program PowerPoint. Niestandardowe okienko zadań wstawia daty do slajdu, gdy użytkownik kliknie <xref:System.Windows.Forms.MonthCalendar> formant, który znajduje się w okienku zadania niestandardowego.
@@ -70,7 +72,7 @@ ms.locfileid: "91585083"
 
      Formant użytkownika zostanie otwarty w projektancie.
 
-3. Na karcie **Formanty standardowe** **przybornika**przeciągnij kontrolkę **MonthCalendar** do kontrolki użytkownika.
+3. Na karcie **Formanty standardowe** **przybornika** przeciągnij kontrolkę **MonthCalendar** do kontrolki użytkownika.
 
      Jeśli formant **MonthCalendar** jest większy niż powierzchnia projektowa kontrolki użytkownika, Zmień rozmiar kontrolki użytkownika tak, aby pasował do kontrolki **MonthCalendar** .
 
@@ -98,14 +100,14 @@ ms.locfileid: "91585083"
      [!code-csharp[Trin_TaskPaneMonthCalendar#3](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#3)]
      [!code-vb[Trin_TaskPaneMonthCalendar#3](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#3)]
 
-5. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt **addin** , a następnie kliknij polecenie **Kompiluj**. Upewnij się, że projekt kompiluje się bez błędów.
+5. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt **addin** , a następnie kliknij polecenie **Kompiluj**. Upewnij się, że projekt kompiluje się bez błędów.
 
 ## <a name="display-the-custom-task-pane"></a>Wyświetlanie niestandardowego okienka zadań
  Aby wyświetlić niestandardowe okienko zadań po uruchomieniu dodatku VSTO, Dodaj kontrolkę użytkownika do okienka zadań w <xref:Microsoft.Office.Tools.AddIn.Startup> obsłudze zdarzeń dodatku VSTO.
 
 ### <a name="to-display-the-custom-task-pane"></a>Aby wyświetlić niestandardowe okienko zadań
 
-1. W **Eksplorator rozwiązań**rozwiń węzeł **PowerPoint**.
+1. W **Eksplorator rozwiązań** rozwiń węzeł **PowerPoint**.
 
 2. Kliknij prawym przyciskiem myszy pozycję **ThisAddIn.cs** lub **ThisAddIn. vb** i kliknij polecenie **Wyświetl kod**.
 

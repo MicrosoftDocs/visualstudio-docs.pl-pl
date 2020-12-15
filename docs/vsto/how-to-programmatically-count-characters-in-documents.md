@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Programowane zliczanie znaków w dokumentach'
+description: Dowiedz się, jak określić liczbę znaków w dokumencie przy użyciu właściwości count kolekcji characters.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 81ee7c3d798ae2c38ed80b261a6d87190daa59a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 42e80cf1a466867fbb7394181efe28bcfe3631e4
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546071"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523149"
 ---
 # <a name="how-to-programmatically-count-characters-in-documents"></a>Instrukcje: Programowane zliczanie znaków w dokumentach
   Pierwszy znak w dokumencie znajduje się na pozycji znaku 0, która reprezentuje punkt wstawiania. Ostatnia pozycja znaku jest równa łącznej liczbie znaków w dokumencie. Możesz określić liczbę znaków w dokumencie przy użyciu <xref:Microsoft.Office.Interop.Word.Characters.Count%2A> właściwości <xref:Microsoft.Office.Interop.Word.Characters> kolekcji.

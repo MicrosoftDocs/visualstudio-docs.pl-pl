@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Programowane korzystanie z okien dialogowych programu Word w trybie ukrytym'
+description: Dowiedz się, jak używać programu Visual Studio do programistycznego używania okien dialogowych programu Microsoft Word w trybie ukrytym.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 54178ecc94026499eed42da4f40f84cfe4eb831f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 263041fe15f07e8041bb771a6f3abd8b3311b0f2
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583765"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523171"
 ---
 # <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>Instrukcje: Programowane korzystanie z okien dialogowych programu Word w trybie ukrytym
   Można wykonywać złożone operacje przy użyciu jednego wywołania metody przez wywoływanie wbudowanych okien dialogowych w Microsoft Office Word bez wyświetlania ich użytkownikowi. Można to zrobić za pomocą <xref:Microsoft.Office.Interop.Word.Dialog.Execute%2A> metody <xref:Microsoft.Office.Interop.Word.Dialog> obiektu bez wywoływania <xref:Microsoft.Office.Interop.Word.Dialog.Display%2A> metody.

@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Programowane Używanie wbudowanych okien dialogowych w programie Word'
+description: Dowiedz się, jak za pomocą programu Visual Studio programowo używać wbudowanych okien dialogowych w programie Microsoft Word.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6edba0b1fe9f06dbf7dba8dd1a3d01c4041ba8fe
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: b2c1a748d38c2b649705fa1ad2de21553b710634
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585657"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523625"
 ---
 # <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>Instrukcje: Programowane Używanie wbudowanych okien dialogowych w programie Word
   Podczas pracy z programem Microsoft Office Word istnieją przypadki, gdy konieczne jest wyświetlenie okien dialogowych dotyczących danych wejściowych użytkownika. Mimo że możesz utworzyć własne, możesz również użyć wbudowanych okien dialogowych w programie Word, które są uwidocznione w <xref:Microsoft.Office.Interop.Word.Dialogs> kolekcji <xref:Microsoft.Office.Interop.Word.Application> obiektów. Dzięki temu można uzyskać dostęp do ponad 200 wbudowanych okien dialogowych, które są reprezentowane jako wyliczenia.

@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: proste powiązanie danych w projekcie na poziomie dokumentu'
+description: Poznaj podstawowe informacje o powiązaniu danych w projekcie na poziomie dokumentu i czy pojedyncze pole danych w bazie danych SQL Server jest powiązane z nazwanym zakresem w programie Microsoft Excel.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0c22947e572a29c2b49a5ce9bb808c3cf2fe2902
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 868a120baa8207d922d3dee55e10c8e903381e19
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584927"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524101"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Przewodnik: proste powiązanie danych w projekcie na poziomie dokumentu
   W tym instruktażu przedstawiono podstawowe informacje o powiązaniu danych w projekcie na poziomie dokumentu. Pojedyncze pole danych w bazie danych SQL Server jest powiązane z nazwanym zakresem w programie Microsoft Office Excel. W tym przewodniku pokazano również, jak dodać kontrolki, które umożliwiają przewijanie wszystkich rekordów w tabeli.
@@ -55,7 +57,7 @@ ms.locfileid: "91584927"
 
 ### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt
 
-1. Utwórz projekt skoroszytu programu Excel o nazwie **My prostego powiązania danych**przy użyciu Visual Basic lub C#. Upewnij się, że wybrano **Utwórz nowy dokument** . Aby uzyskać więcej informacji, zobacz [How to: Create Office projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Utwórz projekt skoroszytu programu Excel o nazwie **My prostego powiązania danych** przy użyciu Visual Basic lub C#. Upewnij się, że wybrano **Utwórz nowy dokument** . Aby uzyskać więcej informacji, zobacz [How to: Create Office projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
    Program Visual Studio otwiera nowy skoroszyt programu Excel w Projektancie i dodaje projekt **My Simple Data Binding** do **Eksplorator rozwiązań**.
 
@@ -64,7 +66,7 @@ ms.locfileid: "91584927"
 
 ### <a name="to-create-the-data-source"></a>Aby utworzyć źródło danych
 
-1. Jeśli okno **źródła danych** nie jest widoczne, Wyświetl je na pasku menu, wybierając opcję **Wyświetl**  >  **inne**  >  **źródła danych**systemu Windows.
+1. Jeśli okno **źródła danych** nie jest widoczne, Wyświetl je na pasku menu, wybierając opcję **Wyświetl**  >  **inne**  >  **źródła danych** systemu Windows.
 
 2. Wybierz pozycję **Dodaj nowe źródło danych** , aby uruchomić **Kreatora konfiguracji źródła danych**.
 
@@ -80,7 +82,7 @@ ms.locfileid: "91584927"
 
 8. Zaznacz pole wyboru obok tabeli **Customers** .
 
-9. Kliknij przycisk **Zakończ**.
+9. Kliknij przycisk **Finish** (Zakończ).
 
    Kreator dodaje tabelę **Customers** do okna **źródła danych** . Dodaje również typ DataSet do projektu, który jest widoczny w **Eksplorator rozwiązań**.
 
@@ -103,11 +105,11 @@ ms.locfileid: "91584927"
 
 6. Kliknij pozycję **NamedRange** na liście rozwijanej, a następnie przeciągnij kolumnę **CustomerID** do komórki **B1**.
 
-7. Inna <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolka o nazwie `customerIDNamedRange` została utworzona w komórce **B1**i powiązana z <xref:System.Windows.Forms.BindingSource> .
+7. Inna <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolka o nazwie `customerIDNamedRange` została utworzona w komórce **B1** i powiązana z <xref:System.Windows.Forms.BindingSource> .
 
 ### <a name="to-add-four-buttons"></a>Aby dodać cztery przyciski
 
-1. Na karcie **Formanty standardowe** **przybornika**Dodaj <xref:System.Windows.Forms.Button> kontrolkę do komórki **a3** arkusza.
+1. Na karcie **Formanty standardowe** **przybornika** Dodaj <xref:System.Windows.Forms.Button> kontrolkę do komórki **a3** arkusza.
 
     Ten przycisk ma nazwę `Button1` .
 
@@ -126,7 +128,7 @@ ms.locfileid: "91584927"
 
 ### <a name="to-initialize-the-controls"></a>Aby zainicjować formanty
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **Arkusz1. vb** lub **Sheet1.cs**, a następnie kliknij polecenie **Wyświetl kod** w menu skrótów.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję **Arkusz1. vb** lub **Sheet1.cs**, a następnie kliknij polecenie **Wyświetl kod** w menu skrótów.
 
 2. Dodaj następujący kod do metody, `Sheet1_Startup` Aby ustawić tekst dla każdego przycisku.
 

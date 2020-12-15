@@ -1,5 +1,7 @@
 ---
 title: Obsługa wątkowości w pakiecie Office
+description: Obsługa wątków jest obsługiwana w modelu obiektów Microsoft Office. Model obiektów pakietu Office nie jest bezpieczny dla wątków, ale może współdziałać z wieloma wątkami w rozwiązaniu pakietu Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3218a12add86739c76cd50f82fdda5d845e2b069
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d44c86e17b5df79c44f85cd555b3036e925ae61
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62978770"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524190"
 ---
 # <a name="threading-support-in-office"></a>Obsługa wątkowości w pakiecie Office
   Ten artykuł zawiera informacje dotyczące sposobu obsługi wątków w modelu obiektów Microsoft Office. Model obiektów pakietu Office nie jest bezpieczny wątkowo, ale możliwe jest współdziałanie z wieloma wątkami w rozwiązaniu pakietu Office. Aplikacje pakietu Office to serwery Component Object Model (COM). COM umożliwia klientom wywoływanie serwerów COM w dowolnych wątkach. W przypadku serwerów COM, które nie są bezpieczne wątkowo, COM udostępnia mechanizm serializowania współbieżnych wywołań, tak aby tylko jeden wątek logiczny był wykonywany na serwerze w dowolnym momencie. Ten mechanizm jest znany jako model jednowątkowego apartamentu (STA). Ponieważ wywołania są serializowane, obiekty wywołujące mogą być blokowane przez okres czasu, gdy serwer jest zajęty lub obsługuje inne wywołania w wątku w tle.

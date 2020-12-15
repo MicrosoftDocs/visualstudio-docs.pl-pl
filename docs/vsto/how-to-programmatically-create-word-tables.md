@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Programowane tworzenie tabel programu Word'
+description: Dowiedz się, jak za pomocą metody Add kolekcji Tables dodać tabelę z określonego zakresu w dokumencie programu Microsoft Word.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a1bc20b277df90ae963d257137373457a0196e72
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f2d31f656f0f383ec63fb50f10b19ee26fe2509e
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544758"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523927"
 ---
 # <a name="how-to-programmatically-create-word-tables"></a>Instrukcje: Programowane tworzenie tabel programu Word
   <xref:Microsoft.Office.Interop.Word.Tables>Kolekcja jest składową <xref:Microsoft.Office.Interop.Word.Document> <xref:Microsoft.Office.Tools.Word.Document> klas,, <xref:Microsoft.Office.Interop.Word.Selection> , i <xref:Microsoft.Office.Interop.Word.Range> , co oznacza, że można utworzyć tabelę w dowolnym z tych kontekstów. <xref:Microsoft.Office.Interop.Word.Tables.Add%2A>Metoda <xref:Microsoft.Office.Interop.Word.Tables> kolekcji służy do dodawania tabeli w określonym zakresie.

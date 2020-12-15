@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: Tworzenie menu skrótów dla zakładek'
+description: Dowiedz się, jak tworzyć menu skrótów dla kontrolek zakładek w dostosowaniu na poziomie dokumentu dla programu Microsoft Word.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9b4b412d2e9456142c1be1af388e2803634d15c0
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 8b018687ec10eb725ece7d776277ea1c699dbbec
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "64834312"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524220"
 ---
 # <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>Przewodnik: Tworzenie menu skrótów dla zakładek
   W tym instruktażu przedstawiono sposób tworzenia menu skrótów dla <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolek w dostosowaniu na poziomie dokumentu dla programu Word. Gdy użytkownik kliknie prawym przyciskiem myszy tekst w zakładce, pojawi się menu skrótów i nadaje Opcje użytkownika do formatowania tekstu.
@@ -90,7 +92,7 @@ ms.locfileid: "64834312"
 
 1. Dodaj element **XML wstążki** do projektu. Aby uzyskać więcej informacji, zobacz [How to: wprowadzenie dostosowywanie wstążki](../vsto/how-to-get-started-customizing-the-ribbon.md).
 
-2. W **Eksplorator rozwiązań**wybierz pozycję **ThisDocument.cs** lub **ThisDocument. vb**.
+2. W **Eksplorator rozwiązań** wybierz pozycję **ThisDocument.cs** lub **ThisDocument. vb**.
 
 3. Na pasku menu wybierz polecenie **Wyświetl**  >  **kod**.
 
@@ -101,7 +103,7 @@ ms.locfileid: "64834312"
      [!code-csharp[Trin_Word_Document_Menus#1](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#1)]
      [!code-vb[Trin_Word_Document_Menus#1](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#1)]
 
-5. W **Eksplorator rozwiązań**wybierz plik XML wstążki. Domyślnie plik XML wstążki ma nazwę Ribbon1.xml.
+5. W **Eksplorator rozwiązań** wybierz plik XML wstążki. Domyślnie plik XML wstążki ma nazwę Ribbon1.xml.
 
 6. Na pasku menu wybierz polecenie **Wyświetl**  >  **kod**.
 
@@ -125,14 +127,14 @@ ms.locfileid: "64834312"
 
      Ten kod dodaje dwa przyciski do menu skrótów, które pojawia się po kliknięciu prawym przyciskiem myszy dokumentu.
 
-8. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy `ThisDocument` , a następnie kliknij polecenie **Wyświetl kod**.
+8. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy `ThisDocument` , a następnie kliknij polecenie **Wyświetl kod**.
 
 9. Zadeklaruj następujące zmienne i zmienną zakładki na poziomie klasy.
 
      [!code-csharp[Trin_Word_Document_Menus#2](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#2)]
      [!code-vb[Trin_Word_Document_Menus#2](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#2)]
 
-10. W **Eksplorator rozwiązań**wybierz plik kodu wstążki. Domyślnie plik kodu wstążki ma nazwę **Ribbon1.cs** lub **Ribbon1. vb**.
+10. W **Eksplorator rozwiązań** wybierz plik kodu wstążki. Domyślnie plik kodu wstążki ma nazwę **Ribbon1.cs** lub **Ribbon1. vb**.
 
 11. Na pasku menu wybierz polecenie **Wyświetl**  >  **kod**.
 
@@ -192,7 +194,7 @@ ms.locfileid: "64834312"
 
 - Użyj pola wyboru, aby zmienić formatowanie w zakładce. Aby uzyskać więcej informacji, zobacz [Przewodnik: zmienianie formatowania dokumentu przy użyciu kontrolek CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wskazówki dotyczące korzystania z programu Word](../vsto/walkthroughs-using-word.md)
 - [Dostosowywanie interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md)
 - [Automatyzowanie programu Word za pomocą obiektów rozszerzonych](../vsto/automating-word-by-using-extended-objects.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: programowe wyszukiwanie tekstu w zakresach arkusza'
+description: Dowiedz się, jak można użyć programu Visual Studio do programistycznego wyszukiwania tekstu w zakresach arkuszy programu Microsoft Excel.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f69a0b2c7191f608e4d18c6c3990c1ce19f1ed7e
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 01ce01e76aa56a834f4f63cd2bd0f6f16c4ab03a
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584758"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524559"
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Instrukcje: programowe wyszukiwanie tekstu w zakresach arkusza
   <xref:Microsoft.Office.Interop.Excel.Range.Find%2A>Metoda <xref:Microsoft.Office.Interop.Excel.Range> obiektu umożliwia wyszukiwanie tekstu w zakresie. Ten tekst może być również dowolnym z ciągów błędów, które mogą pojawić się w komórce arkusza, takiej jak `#NULL!` lub `#VALUE!` . Aby uzyskać więcej informacji o ciągach błędów, zobacz [komórki wartości błędów](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values).
@@ -75,7 +77,7 @@ ms.locfileid: "91584758"
  [!code-csharp[Trin_VstcoreExcelAutomation#57](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#57)]
  [!code-vb[Trin_VstcoreExcelAutomation#57](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#57)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Pracuj z zakresami](../vsto/working-with-ranges.md)
 - [Instrukcje: Programowane stosowanie stylów do zakresów w skoroszytach](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
 - [Instrukcje: programowe odwoływanie się do zakresów arkusza w kodzie](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)

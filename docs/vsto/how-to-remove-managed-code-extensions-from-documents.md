@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: usuwanie rozszerzeń kodu zarządzanego z dokumentów'
+description: Programowe usuwanie zestawu dostosowania z dokumentu lub skoroszytu będącego częścią dostosowania na poziomie dokumentu dla programu Microsoft Word lub Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3b4f5cb3098289463cea7e650332583ec7b12258
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be32109e2a34df8605c0dbe5ba9f1df4e32cfc55
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541313"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524468"
 ---
 # <a name="how-to-remove-managed-code-extensions-from-documents"></a>Instrukcje: usuwanie rozszerzeń kodu zarządzanego z dokumentów
   Można programowo usunąć zestaw dostosowań z dokumentu lub skoroszytu, który jest częścią dostosowania na poziomie dokumentu dla Microsoft Office Word lub Microsoft Office Excel. Następnie użytkownicy mogą otwierać dokumenty i wyświetlać zawartość, ale nie będą wyświetlane żadne niestandardowe interfejsy użytkownika (UI) dodawane do dokumentów, a kod nie zostanie uruchomiony.

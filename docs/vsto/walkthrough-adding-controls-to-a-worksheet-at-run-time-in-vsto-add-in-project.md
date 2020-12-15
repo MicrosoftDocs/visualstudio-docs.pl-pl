@@ -1,5 +1,7 @@
 ---
 title: Dodawanie kontrolek do arkusza w czasie wykonywania w projekcie dodatku narzędzi VSTO
+description: Dowiedz się, jak za pomocą wstążki zezwolić użytkownikom na Dodawanie przycisku, elementu NamedRange i Listyobject do arkusza.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ec1d1361d7ca58d4292cbbb7bc4ea3b707a748ff
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e9987e9427c0fe982cf3ddcb88ce8071caab04b0
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584350"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522771"
 ---
 # <a name="walkthrough-add-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project"></a>Przewodnik: Dodawanie kontrolek do arkusza w czasie wykonywania w projekcie dodatku narzędzi VSTO
   Możesz dodać kontrolki do dowolnego otwartego arkusza przy użyciu dodatku narzędzi VSTO dla programu Excel. W tym instruktażu pokazano, jak za pomocą wstążki umożliwić użytkownikom dodawanie <xref:Microsoft.Office.Tools.Excel.Controls.Button> , a <xref:Microsoft.Office.Tools.Excel.NamedRange> i <xref:Microsoft.Office.Tools.Excel.ListObject> do arkusza. Aby uzyskać więcej informacji, zobacz [Dodawanie kontrolek do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md).
@@ -65,7 +67,7 @@ ms.locfileid: "91584350"
 
      Plik o nazwie **Ribbon1.cs** lub **Ribbon1. vb** zostanie otwarty w Projektancie wstążki i zostanie wyświetlona domyślna karta i Grupa.
 
-3. Na karcie **kontrolki wstążki pakietu Office** w **przyborniku**przeciągnij kontrolkę CheckBox na **grupa1**.
+3. Na karcie **kontrolki wstążki pakietu Office** w **przyborniku** przeciągnij kontrolkę CheckBox na **grupa1**.
 
 4. Kliknij pozycję **checkBox1** , aby ją zaznaczyć.
 
@@ -106,7 +108,7 @@ ms.locfileid: "91584350"
      [!code-csharp[Trin_Excel_Dynamic_Controls#2](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs#2)]
      [!code-vb[Trin_Excel_Dynamic_Controls#2](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#2)]
 
-3. W **Eksplorator rozwiązań**wybierz pozycję *Ribbon1.cs* lub *Ribbon1. vb*.
+3. W **Eksplorator rozwiązań** wybierz pozycję *Ribbon1.cs* lub *Ribbon1. vb*.
 
 4. W menu **Widok** kliknij pozycję **Projektant**.
 
@@ -138,7 +140,7 @@ ms.locfileid: "91584350"
 
 ### <a name="to-remove-controls-from-the-worksheet"></a>Aby usunąć kontrolki z arkusza
 
-1. W **Eksplorator rozwiązań**wybierz pozycję *ThisAddIn.cs* lub *ThisAddIn. vb*.
+1. W **Eksplorator rozwiązań** wybierz pozycję *ThisAddIn.cs* lub *ThisAddIn. vb*.
 
 2. W menu **Widok** kliknij polecenie **kod**.
 

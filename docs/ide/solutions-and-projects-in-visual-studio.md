@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2889729ae539d640bb9d43c64956edc04b74f26
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 7a24f56d94d470ca5ff04a99f524af3c76df3a15
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 12/15/2020
-ms.locfileid: "97488196"
+ms.locfileid: "97524066"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Rozwiązania i projekty w programie Visual Studio
 
@@ -62,7 +62,7 @@ Program Visual Studio używa dwóch typów plików (*. sln* i *. suo*) do przech
 
 ### <a name="solution-folder"></a>Folder rozwiązania
 
-W tym kontekście "folder rozwiązania" jest folderem wirtualnym, który jest tylko w **Eksplorator rozwiązań**, w którym można go użyć do grupowania projektów w rozwiązaniu. Jeśli chcesz zlokalizować plik rozwiązania na komputerze, przejdź do pozycji **Narzędzia**  >  **Opcje**  >  **projekty i rozwiązania**  >  . Aby uzyskać więcej informacji, zobacz [okno dialogowe Opcje: projekty i rozwiązania > lokalizacje](./reference/projects-solutions-locations-options.md)
+W tym kontekście "folder rozwiązania" jest folderem wirtualnym, który jest tylko w **Eksplorator rozwiązań**, w którym można go użyć do grupowania projektów w rozwiązaniu. Jeśli chcesz zlokalizować plik rozwiązania na komputerze, przejdź do pozycji **Narzędzia**  >  **Opcje**  >  **projekty i rozwiązania**  >  . Aby uzyskać więcej informacji, zobacz [okno dialogowe Opcje: projekty i rozwiązania > lokalizacje](./reference/projects-solutions-locations-options.md).
 
 ## <a name="create-new-projects"></a>Utwórz nowe projekty
 
@@ -87,7 +87,7 @@ W przypadku projektów ASP.NET Core można dostosować sposób zagnieżdżania p
 
 Aby wyświetlić listę niektórych ikon, które pojawiają się w Eksplorator rozwiązań, zobacz [ikony widok klasy i Przeglądarka obiektów](class-view-and-object-browser-icons.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Visual Studio IDE](../get-started/visual-studio-ide.md)
 - [Przenoszenie, migrowanie i uaktualnianie projektów](../porting/port-migrate-and-upgrade-visual-studio-projects.md)

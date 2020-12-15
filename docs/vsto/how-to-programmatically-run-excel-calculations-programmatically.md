@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Programowane uruchamianie obliczeń programu Excel'
+description: Dowiedz się, jak używać programu Visual Studio do programistycznego uruchamiania obliczeń w skoroszycie programu Microsoft Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a02e86864065d2c626de2f6e7fea7528554f1391
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e9f385e7c58972844c30320c680f42d8394580d8
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547384"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524703"
 ---
 # <a name="how-to-programmatically-run-excel-calculations"></a>Instrukcje: Programowane uruchamianie obliczeń programu Excel
   Podobny proces służy do uruchamiania obliczeń w <xref:Microsoft.Office.Tools.Excel.NamedRange> formancie lub natywnym obiekcie zakresu programu Excel.

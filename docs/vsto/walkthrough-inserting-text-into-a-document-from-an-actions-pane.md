@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: wstawianie tekstu do dokumentu z okienka akcji'
+description: Utwórz okienko akcji w dokumencie programu Microsoft Word. Dowiedz się, że okienko akcje zawiera dwie kontrolki, które zbierają dane wejściowe, a następnie wysyłają tekst do dokumentu.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c65027d7670c4d6789f32eb4d9080df061d904a
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 44fd876dfad99e1a1320a5e5d743ea8e30dfdb98
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584966"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524168"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Przewodnik: wstawianie tekstu do dokumentu z okienka akcji
   W tym instruktażu przedstawiono sposób tworzenia okienka akcji w dokumencie programu Microsoft Office Word. Okienko akcje zawiera dwie kontrolki, które zbierają dane wejściowe, a następnie wysyłają tekst do dokumentu.
@@ -72,18 +74,18 @@ ms.locfileid: "91584966"
 
 ### <a name="to-add-a-bookmark-control-to-your-document"></a>Aby dodać kontrolkę zakładki do dokumentu
 
-1. Na karcie **formanty programu Word** **przybornika**przeciągnij <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolkę do dokumentu.
+1. Na karcie **formanty programu Word** **przybornika** przeciągnij <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolkę do dokumentu.
 
      Zostanie wyświetlone okno dialogowe **Dodawanie kontrolki zakładki** .
 
-2. Wybierz **nazwę**słowa, bez zaznaczania znacznika akapitu, i kliknij przycisk **OK**.
+2. Wybierz **nazwę** słowa, bez zaznaczania znacznika akapitu, i kliknij przycisk **OK**.
 
     > [!NOTE]
     > Znacznik akapitu powinien znajdować się poza zakładką. Jeśli znaczniki akapitu nie są widoczne w dokumencie, kliknij menu **Narzędzia** , wskaż polecenie **Microsoft Office narzędzia programu Word** , a następnie kliknij przycisk **Opcje**. Kliknij kartę **Widok** , a następnie zaznacz pole wyboru **znaczniki akapitu** w sekcji **znaczniki formatowania** okna dialogowego **Opcje** .
 
 3. W oknie **Właściwości** Zmień właściwość **Nazwa** **Bookmark1** na **showName**.
 
-4. Wybierz **adres**słowa, bez zaznaczania znacznika akapitu.
+4. Wybierz **adres** słowa, bez zaznaczania znacznika akapitu.
 
 5. Na karcie **Wstawianie** wstążki w grupie **linki** kliknij pozycję **zakładka**.
 
@@ -104,7 +106,7 @@ ms.locfileid: "91584966"
 
 1. Jeśli formant okienka Akcje nie jest widoczny w projektancie, kliknij dwukrotnie pozycję **InsertTextControl**.
 
-2. Na karcie **Formanty standardowe** **przybornika**przeciągnij kontrolkę **etykieta** do kontrolki okienko akcji.
+2. Na karcie **Formanty standardowe** **przybornika** przeciągnij kontrolkę **etykieta** do kontrolki okienko akcji.
 
 3. Zmień właściwość **Text** kontrolki etykieta na **Nazwa**.
 

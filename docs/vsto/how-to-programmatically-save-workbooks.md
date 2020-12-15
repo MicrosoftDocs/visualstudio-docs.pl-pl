@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: programowe zapisywanie skoroszytów'
+description: Programowo zapisuj skoroszyty programu Microsoft Excel bez zmiany ścieżki i Zapisz kopię skoroszytu bez modyfikowania otwartych skoroszytów w pamięci.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6b45449f72275ac154a433cad725a2867062cc5e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbc228a703d6c9224fda545a93132ccb45c94b0f
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547085"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524626"
 ---
 # <a name="how-to-programmatically-save-workbooks"></a>Instrukcje: programowe zapisywanie skoroszytów
   Istnieje kilka sposobów zapisywania skoroszytu. Skoroszyt można zapisać bez zmiany ścieżki. Jeśli skoroszyt nie został wcześniej zapisany, Zapisz go, określając ścieżkę. Bez ścieżki jawnej Microsoft Office program Excel zapisuje plik w bieżącym folderze z nazwą, która została podaną podczas tworzenia. Możesz również zapisać kopię skoroszytu bez modyfikowania otwartego skoroszytu w pamięci.

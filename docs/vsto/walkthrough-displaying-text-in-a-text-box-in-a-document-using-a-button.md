@@ -1,5 +1,7 @@
 ---
 title: Wyświetlanie tekstu w polu tekstowym w dokumencie za pomocą przycisku
+description: Dowiedz się, jak używać przycisków i pól tekstowych w dostosowaniu na poziomie dokumentu dla programu Microsoft Word.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8f3c467abcee8fb4faafd2da06ba261e7f3039fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1cda1fe3e7430ff30dcc3b3921eb2bcd4d31b699
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328752"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522754"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>Przewodnik: wyświetlanie tekstu w polu tekstowym w dokumencie za pomocą przycisku
   W tym instruktażu pokazano, jak używać przycisków i pól tekstowych w dostosowaniu na poziomie dokumentu dla programu Microsoft Office Word.
@@ -57,7 +59,7 @@ ms.locfileid: "67328752"
 
 1. Sprawdź, czy dokument jest otwarty w projektancie programu Visual Studio.
 
-2. Na karcie **Formanty standardowe** **przybornika**przeciągnij <xref:Microsoft.Office.Tools.Word.Controls.TextBox> kontrolkę do dokumentu.
+2. Na karcie **Formanty standardowe** **przybornika** przeciągnij <xref:Microsoft.Office.Tools.Word.Controls.TextBox> kontrolkę do dokumentu.
 
    > [!NOTE]
    > W programie Word formanty są domyślnie upuszczane z tekstem. Można zmodyfikować sposób, w jaki kontrolki i obiekty kształtu są wstawiane przez zmianę wartości domyślnej na karcie **Edycja** okna dialogowego **Opcje** w programie Word.
@@ -80,7 +82,7 @@ ms.locfileid: "67328752"
 
 ### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>Aby zapisać w polu tekstowym po kliknięciu przycisku
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **ThisDocument**, a następnie kliknij polecenie **Wyświetl kod** w menu skrótów.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję **ThisDocument**, a następnie kliknij polecenie **Wyświetl kod** w menu skrótów.
 
 2. Dodaj następujący kod do <xref:System.Windows.Forms.Control.Click> procedury obsługi zdarzeń przycisku.
 

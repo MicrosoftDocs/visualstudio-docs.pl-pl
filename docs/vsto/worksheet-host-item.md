@@ -1,5 +1,7 @@
 ---
 title: Element hosta arkusza
+description: Dowiedz się, że element hosta arkusza jest typem, który rozszerza typ arkusza z podstawowego zestawu międzyoperacyjnego dla programu Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 301b0a62efae4674432b1051451e5d982899c1b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b25b921d29bee832ef37b943fd57edc38b7518db
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254871"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523213"
 ---
 # <a name="worksheet-host-item"></a>Element hosta arkusza
   <xref:Microsoft.Office.Tools.Excel.Worksheet>Element hosta jest typem, który rozszerza <xref:Microsoft.Office.Interop.Excel.Worksheet> Typ z podstawowego zestawu międzyoperacyjnego dla programu Excel. <xref:Microsoft.Office.Tools.Excel.Worksheet>Element hosta zawiera wszystkie te same właściwości, metody i zdarzenia co <xref:Microsoft.Office.Interop.Excel.Worksheet> obiekt, ale udostępnia także dodatkowe zdarzenia i działa jako kontener dla formantów hosta i formantów Windows Forms.

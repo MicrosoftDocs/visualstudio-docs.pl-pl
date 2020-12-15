@@ -1,5 +1,7 @@
 ---
 title: Programowe przechowywanie & pobierania wartości daty w zakresach programu Excel
+description: Dowiedz się, jak można użyć programu Visual Studio do programistycznego przechowywania i pobierania wartości daty w zakresach programu Microsoft Excel.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c2bd76d37a9c9b6e51de7bbe01b54d1be6c93128
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 673969e13b2f49b91416d730533be0f075813781
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583778"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523575"
 ---
 # <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>Instrukcje: Programowane przechowywanie i pobieranie wartości daty w zakresach programu Excel
   Można przechowywać i pobierać wartości w <xref:Microsoft.Office.Tools.Excel.NamedRange> formancie lub natywnym obiekcie zakresu programu Excel.

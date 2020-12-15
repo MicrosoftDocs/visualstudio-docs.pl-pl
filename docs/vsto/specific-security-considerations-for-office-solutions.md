@@ -1,5 +1,7 @@
 ---
 title: Szczególne zagadnienia dotyczące zabezpieczeń rozwiązań pakietu Office
+description: Dowiedz się, jak funkcje zabezpieczeń zapewniane przez Microsoft .NET Framework i Microsoft Office mogą pomóc w ochronie rozwiązań pakietu Office przed zagrożeniami bezpieczeństwa.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 571b604b87fb7fac4e78c83a791c265d910fae94
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0da77067931d35ee63a9ccc9b0de85752157772b
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985583"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524297"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>Szczególne zagadnienia dotyczące zabezpieczeń rozwiązań pakietu Office
   Funkcje zabezpieczeń zapewniane przez Microsoft .NET Framework i Microsoft Office mogą pomóc w ochronie rozwiązań pakietu Office przed potencjalnymi zagrożeniami bezpieczeństwa. W tym temacie objaśniono niektóre z tych zagrożeń i udostępniono zalecenia ułatwiające ochronę przed nimi. Zawiera również informacje dotyczące sposobu, w jaki Microsoft Office ustawienia zabezpieczeń mają wpływ na rozwiązania pakietu Office.
@@ -105,7 +107,7 @@ ms.locfileid: "72985583"
 
 1. Wybierz kartę **plik** .
 
-2. Wybierz przycisk *ApplicationName* **Opcje** ApplicationName.
+2. Wybierz przycisk  **Opcje** ApplicationName.
 
 3. W okienku Kategorie wybierz pozycję **Centrum zaufania**.
 

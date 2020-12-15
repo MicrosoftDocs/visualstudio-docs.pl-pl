@@ -8,12 +8,12 @@ ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: e640d19659861a03d0f97abc799344bebb14b936
-ms.sourcegitcommit: f78960320798e2c6b33145cee77a2221f031603c
+ms.openlocfilehash: 7eed02ffda47de9c6a788d186d41dcc087852e64
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94878312"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524088"
 ---
 # <a name="git-experience-in-visual-studio"></a>Środowisko Git w programie Visual Studio
 
@@ -183,13 +183,13 @@ Można również użyć przełączników, aby pokazać/ukryć różnice, pokaza�
 
 ## <a name="personalize-your-git-settings"></a>Personalizowanie ustawień usługi git
 
-Aby spersonalizować i dostosować ustawienia Git na poziomie repozytorium, a także na poziomie globalnym, przejdź do pozycji **Git**  >  **Ustawienia** Git na pasku menu lub **Narzędzia**  >  **Opcje**  >  **kontroli źródła** na pasku menu. Następnie wybierz odpowiednie opcje.
+Aby spersonalizować i dostosować ustawienia Git na poziomie repozytorium, a także na poziomie globalnym, przejdź do pozycji   >  **Ustawienia** Git na pasku menu lub **Narzędzia**  >  **Opcje**  >  **kontroli źródła** na pasku menu. Następnie wybierz odpowiednie opcje.
 
 :::image type="content" source="media/git-options-settings.png" alt-text="Okno dialogowe Opcje, w którym można wybrać ustawienia personalizacji i dostosowywania w środowisku IDE programu Visual Studio ":::
 
-## <a name="how-to-use-the-legacy-team-explorer-experience-in-visual-studio"></a>Jak korzystać ze starszego środowiska Team Explorer w programie Visual Studio
+## <a name="how-to-use-the-full-team-explorer-experience-in-visual-studio"></a>Jak korzystać z pełnego środowiska Team Explorer w programie Visual Studio
 
-Nowe środowisko git to domyślny system kontroli wersji w programie Visual Studio 2019 od [wersji 16,8](/visualstudio/releases/2019/release-notes/) lub nowszej. Jeśli jednak chcesz ją wyłączyć, możesz to zrobić. Przejdź do pozycji **Narzędzia**  >  **Opcje**  >  **środowiska**  >  **Podgląd funkcje** , a następnie przełączenia **nowego środowiska użytkownika git** , które spowoduje przełączenie się z powrotem do starszego środowiska Team Explorer.
+Nowe środowisko git to domyślny system kontroli wersji w programie Visual Studio 2019 od [wersji 16,8](/visualstudio/releases/2019/release-notes/) lub nowszej. Jeśli jednak chcesz ją wyłączyć, możesz to zrobić. Przejdź do pozycji **Narzędzia**  >  **Opcje**  >  **środowiska**  >  **Podgląd funkcje** , a następnie Przełącz nowe pole wyboru środowisko **użytkownika systemu Git** , które spowoduje przełączenie się z powrotem do Team Explorer dla usługi git.
 
 :::image type="content" source="media/git-opt-new-user-experience.png" alt-text="Sekcja funkcje w wersji zapoznawczej okna dialogowego Opcje w programie Visual Studio ":::
 
@@ -200,7 +200,7 @@ Mimo że nowe środowisko git jest teraz domyślnie włączone w programie Visua
 > [!IMPORTANT]
 > Jeśli masz sugestię, daj nam znać! Doceniamy okazję do skontaktowania się z informacjami na temat decyzji projektowych za pośrednictwem portalu [**społeczności deweloperów**](https://aka.ms/vs-suggest) .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Ogłaszanie wersji środowiska Git w blogu programu Visual Studio](https://devblogs.microsoft.com/visualstudio/announcing-the-release-of-the-git-experience-in-visual-studio/)
 - [Uruchomienie nowego środowiska git](https://www.youtube.com/watch?v=UHrAg3iKoe0&t) w serwisie YouTube

@@ -1,5 +1,7 @@
 ---
 title: Przewodniki dotyczące zabezpieczeń i wdrażania
+description: Dowiedz się, w jaki sposób można ustawić zasady zabezpieczeń, aby umożliwić działanie Twojego rozwiązania oraz jak można wdrożyć rozwiązanie pakietu Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 014b59efb945f6390877a2e9764e24b6c4cd639b
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 0a750aa97c371ce25c7b6797ee773e82d8ab8eb6
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810944"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524378"
 ---
 # <a name="security-and-deployment-walkthroughs"></a>Przewodniki dotyczące zabezpieczeń i wdrażania
   W poniższych tematach opisano, jak można ustawić zasady zabezpieczeń, aby umożliwić działanie Twojego rozwiązania oraz jak można wdrożyć rozwiązanie pakietu Office.

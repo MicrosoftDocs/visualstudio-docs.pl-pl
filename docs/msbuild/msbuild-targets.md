@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a257299d22b5ba5050ee9027e6bbb97bbaf3a75
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 19d6a95ceeab9af2b6a6f874ae4f889dd2180ba6
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049095"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524019"
 ---
 # <a name="msbuild-targets"></a>Obiekty docelowe w programie MSBuild
 
@@ -33,7 +33,7 @@ Zadania grupy są obiektami docelowymi w określonej kolejności i umożliwiają
 </Target>
 ```
 
- Podobnie jak w przypadku właściwości programu MSBuild, można ponownie zdefiniować elementy docelowe. Przykład:
+ Podobnie jak w przypadku właściwości programu MSBuild, można ponownie zdefiniować elementy docelowe. Na przykład
 
 ```xml
 <Target Name="AfterBuild" >
@@ -70,7 +70,7 @@ Aby uzyskać szczegółowe informacje i uzyskać więcej informacji na temat doc
 
 ## <a name="target-batching"></a>Przetwarzanie wsadowe docelowe
 
-Element docelowy może mieć `Outputs` atrybut, który określa metadane w postaci%( \<Metadata> ). W takim przypadku MSBuild uruchamia element docelowy raz dla każdej unikatowej wartości metadanych, grupując lub "wsadowe" elementy, które mają tę wartość metadanych. Przykład:
+Element docelowy może mieć `Outputs` atrybut, który określa metadane w postaci%( \<Metadata> ). W takim przypadku MSBuild uruchamia element docelowy raz dla każdej unikatowej wartości metadanych, grupując lub "wsadowe" elementy, które mają tę wartość metadanych. Na przykład
 
 ```xml
 <ItemGroup>
@@ -419,7 +419,7 @@ $(TargetFileName) -          The file name of the build target.
 ===================================================
 GenerateBindingRedirectsUpdateAppConfig
 Updates the project to use the generated app.config content.  This needs to run regardless of 
-inputs/outputs so it is seperate from GenerateBindingRedirects.
+inputs/outputs so it is separate from GenerateBindingRedirects.
 ===================================================
 <Target Name="GenerateBindingRedirectsUpdateAppConfig"
         AfterTargets="GenerateBindingRedirects"

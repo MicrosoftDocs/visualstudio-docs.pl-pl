@@ -1,5 +1,7 @@
 ---
 title: Programistyczne kopiowanie i wklejanie kształtów w dokumencie programu Visio
+description: Dowiedz się, jak można programistycznie kopiować kształty na jednej stronie dokumentu i wklejać je do nowej strony w tym samym dokumencie.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4f54f98a055ef834100c5c58274d72f92568b7c4
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 4643d1527d078639e2f2f09add42fff96e345091
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585278"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523198"
 ---
 # <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>Instrukcje: Programowane kopiowanie i wklejanie kształtów w dokumencie programu Visio
   Można programowo skopiować kształty na jednej stronie dokumentu i wkleić je do nowej strony w tym samym dokumencie. Możesz wkleić je do lokalizacji domyślnej (centrum aktywnego okna) lub do tych samych lokalizacji współrzędnych, które znajdowały się na oryginalnej stronie.

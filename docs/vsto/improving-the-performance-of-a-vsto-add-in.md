@@ -1,5 +1,7 @@
 ---
 title: Poprawianie wydajności dodatku VSTO
+description: Dowiedz się, w jaki sposób zoptymalizować Dodatki VSTO utworzone dla aplikacji pakietu Office, aby szybko uruchamiać, zamykać, otwierać elementy i wykonywać inne zadania.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -10,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7529c69270b5f33cde32e8a7907f1b80589c43b7
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 83ba2e9cc2cd55b3e3f6362250ffc1e9489b1626
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "92298511"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524440"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>Poprawianie wydajności dodatku VSTO
   Możesz dać użytkownikom lepszy komfort, optymalizując dodatki narzędzi VSTO tworzone dla aplikacji pakietu Office, aby szybko uruchamiać, zamykać, otwierać elementy i wykonywać inne zadania. Jeśli dodatek VSTO jest przeznaczony dla programu Outlook, można również zmniejszyć prawdopodobieństwo wyłączenia dodatku VSTO z powodu niskiej wydajności. Możesz zwiększyć wydajność dodatku VSTO, implementując następujące strategie:
@@ -41,7 +43,7 @@ ms.locfileid: "92298511"
 
 ### <a name="to-configure-a-clickonce-solution-to-load-vsto-add-ins-on-demand"></a>Aby skonfigurować rozwiązanie ClickOnce do ładowania dodatków VSTO na żądanie
 
-1. W **Eksplorator rozwiązań**wybierz węzeł projektu.
+1. W **Eksplorator rozwiązań** wybierz węzeł projektu.
 
 2. Na pasku menu wybierz polecenie **Wyświetl**  >  **strony właściwości**.
 
@@ -51,13 +53,13 @@ ms.locfileid: "92298511"
 
 ### <a name="to-configure-a-windows-installer-solution-to-load-vsto-add-ins-on-demand"></a>Aby skonfigurować Instalator Windows rozwiązanie do ładowania dodatków VSTO na żądanie
 
-1. W rejestrze Ustaw `LoadBehavior` klucz ** _Root_ \\ \\ _identyfikatora dodatku_ głównego \Software\Microsoft\Office_ApplicationName_\Addins** na **0x10**.
+1. W rejestrze Ustaw `LoadBehavior` klucz **\\ \\ _identyfikatora dodatku_ głównego \Software\Microsoft\Office _ApplicationName_\Addins** na **0x10**.
 
      Aby uzyskać więcej informacji, zobacz [wpisy rejestru dotyczące dodatków narzędzi VSTO](../vsto/registry-entries-for-vsto-add-ins.md).
 
 ### <a name="to-configure-a-solution-to-load-vsto-add-ins-on-demand-while-you-debug-the-solution"></a>Aby skonfigurować rozwiązanie do ładowania dodatków VSTO na żądanie podczas debugowania rozwiązania
 
-1. Utwórz skrypt ustawiający `LoadBehavior` wpis ** _głównego_klucza \\ \\ _identyfikatora dodatku_ \Software\Microsoft\Office_ApplicationName_\Addins** na **0x10**.
+1. Utwórz skrypt ustawiający `LoadBehavior` wpis **_głównego_ klucza \\ \\ _identyfikatora dodatku_ \Software\Microsoft\Office _ApplicationName_\Addins** na **0x10**.
 
      Poniższy kod przedstawia przykład tego skryptu.
 

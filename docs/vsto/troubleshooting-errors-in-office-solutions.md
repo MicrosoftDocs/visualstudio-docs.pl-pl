@@ -1,5 +1,7 @@
 ---
 title: Rozwiązywanie problemów z błędami w rozwiązaniach pakietu Office
+description: Dowiedz się, jak rozwiązywać problemy, które mogą wystąpić podczas opracowywania rozwiązań Microsoft Office w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: troubleshooting
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4f0d4eee6714d29a1609f6f6531ab18c132d5527
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd12c3dd9cd3c90564351dd1c64cebfe5df6e99d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87234695"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523039"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Rozwiązywanie problemów z błędami w rozwiązaniach pakietu Office
   Podczas opracowywania rozwiązań pakietu Office w programie Visual Studio mogą wystąpić problemy związane z wykonywaniem następujących zadań:
@@ -111,11 +113,11 @@ ms.locfileid: "87234695"
 ### <a name="some-events-of-office-objects-are-not-accessible-when-using-c"></a>Niektóre zdarzenia obiektów pakietu Office są niedostępne przy użyciu języka C\#
  W niektórych przypadkach podczas próby uzyskania dostępu do określonego zdarzenia wystąpienia podstawowego zestawu międzyoperacyjnego (PIA) pakietu Office w projekcie Visual C# może zostać wyświetlony błąd kompilatora podobny do poniższego.
 
- "Niejednoznaczność między elementami" Microsoft. Office. Interop. Excel. _Application. NewWorkbook "i" Microsoft. Office. Interop. Excel. AppEvents_Event. NewWorkbook ""
+ "Niejednoznaczność między elementami" Microsoft.Office.Interop.Excel._Application. NewWorkbook "i" Microsoft.Office.Interop.Excel.AppEvents_Event. NewWorkbook ""
 
  Ten błąd oznacza, że próbujesz uzyskać dostęp do zdarzenia, które ma taką samą nazwę jak inna właściwość lub metoda obiektu. Aby uzyskać dostęp do zdarzenia, należy rzutować obiekt na jego *interfejs zdarzenia*.
 
- Typy PIA pakietu Office ze zdarzeniami implementujących dwa interfejsy: podstawowy interfejs ze wszystkimi właściwościami i metodami oraz interfejsem zdarzenia, który zawiera zdarzenia, które są udostępniane przez obiekt. Te interfejsy zdarzeń używają konwencji nazewnictwa *NazwaObiektu*zdarzenia*n*_Event, takich jak <xref:Microsoft.Office.Interop.Excel.AppEvents_Event> i <xref:Microsoft.Office.Interop.Word.ApplicationEvents2_Event> . Jeśli nie możesz uzyskać dostępu do zdarzenia, które oczekujesz znaleźć na obiekcie, rzutowanie obiektu na interfejs zdarzenia.
+ Typy PIA pakietu Office ze zdarzeniami implementujących dwa interfejsy: podstawowy interfejs ze wszystkimi właściwościami i metodami oraz interfejsem zdarzenia, który zawiera zdarzenia, które są udostępniane przez obiekt. Te interfejsy zdarzeń używają konwencji nazewnictwa *NazwaObiektu* zdarzenia *n* _Event, takich jak <xref:Microsoft.Office.Interop.Excel.AppEvents_Event> i <xref:Microsoft.Office.Interop.Word.ApplicationEvents2_Event> . Jeśli nie możesz uzyskać dostępu do zdarzenia, które oczekujesz znaleźć na obiekcie, rzutowanie obiektu na interfejs zdarzenia.
 
  Na przykład <xref:Microsoft.Office.Interop.Excel.Application> obiekty mają <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook> zdarzenie i <xref:Microsoft.Office.Interop.Excel._Application.NewWorkbook%2A> Właściwość. Aby obsłużyć <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook> zdarzenie, należy rzutować <xref:Microsoft.Office.Interop.Excel.Application> do <xref:Microsoft.Office.Interop.Excel.AppEvents_Event> interfejsu. Poniższy przykład kodu demonstruje, jak to zrobić w projekcie na poziomie dokumentu dla programu Excel.
 
@@ -124,7 +126,7 @@ ms.locfileid: "87234695"
  Aby uzyskać więcej informacji na temat interfejsów zdarzeń w usłudze Office zestawów Pia, zobacz [Omówienie klas i interfejsów w podstawowych zestawach międzyoperacyjnych pakietu Office](/previous-versions/office/office-12//ms247299(v=office.12)).
 
 ### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-net_v40_short-or-the-net_v45"></a>Nie można odwołać się do klas PIA pakietu Office w projektach przeznaczonych dla [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]
- W projektach przeznaczonych dla [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] , kod, który odwołuje się do klasy, która jest zdefiniowana w Piau pakietu Office nie zostanie domyślnie skompilowana. Klasy w zestawów Pia używają klasy *NazwaObiektu*konwencji nazewnictwa, takiej jak <xref:Microsoft.Office.Interop.Word.DocumentClass> i <xref:Microsoft.Office.Interop.Excel.WorkbookClass> . Na przykład następujący kod z projektu dodatku VSTO programu Word nie zostanie skompilowany.
+ W projektach przeznaczonych dla [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] , kod, który odwołuje się do klasy, która jest zdefiniowana w Piau pakietu Office nie zostanie domyślnie skompilowana. Klasy w zestawów Pia używają klasy *NazwaObiektu* konwencji nazewnictwa, takiej jak <xref:Microsoft.Office.Interop.Word.DocumentClass> i <xref:Microsoft.Office.Interop.Excel.WorkbookClass> . Na przykład następujący kod z projektu dodatku VSTO programu Word nie zostanie skompilowany.
 
 ```vb
 Dim document As Word.DocumentClass = Globals.ThisAddIn.Application.ActiveDocument
@@ -158,7 +160,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
  [!code-csharp[Trin_VstcoreTroubleshootingWord#2](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs#2)]
  [!code-vb[Trin_VstcoreTroubleshootingWord#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb#2)]
 
- To użycie instrukcji **Imports** / **using** wymaga odróżnienia odwołań do klas pakietu Office z kwalifikatorem Word lub Excel, na przykład:
+ To użycie instrukcji **Imports** /  wymaga odróżnienia odwołań do klas pakietu Office z kwalifikatorem Word lub Excel, na przykład:
 
  [!code-csharp[Trin_VstcoreTroubleshootingWord#3](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs#3)]
  [!code-vb[Trin_VstcoreTroubleshootingWord#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb#3)]
@@ -197,7 +199,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
  W przypadku tworzenia projektu na poziomie dokumentu dla programu Excel lub Word w lokalizacji sieciowej UNC należy dodać lokalizację dokumentu do listy zaufanych lokalizacji w programie Excel lub Word. W przeciwnym razie dostosowanie nie zostanie załadowane podczas próby uruchomienia lub debugowania projektu w programie Visual Studio. Aby uzyskać więcej informacji na temat zaufanych lokalizacji, zobacz [udzielanie zaufania do dokumentów](../vsto/granting-trust-to-documents.md).
 
 ### <a name="threads-are-not-stopped-correctly-after-debugging"></a>Wątki nie są prawidłowo zatrzymane po debugowaniu
- Projekty pakietu Office w programie Visual Studio są zgodne z konwencją nazewnictwa wątków, która umożliwia debugerowi poprawne zamknięcie programu. Jeśli tworzysz wątki w rozwiązaniu, należy nazwać każdy wątek z prefiksem VSTA_, aby upewnić się, że te wątki są prawidłowo obsługiwane po zatrzymaniu debugowania. Na przykład możesz ustawić `Name` Właściwość wątku, który czeka na **VSTA_NetworkListener**zdarzenie sieciowe.
+ Projekty pakietu Office w programie Visual Studio są zgodne z konwencją nazewnictwa wątków, która umożliwia debugerowi poprawne zamknięcie programu. Jeśli tworzysz wątki w rozwiązaniu, należy nazwać każdy wątek z prefiksem VSTA_, aby upewnić się, że te wątki są prawidłowo obsługiwane po zatrzymaniu debugowania. Na przykład możesz ustawić `Name` Właściwość wątku, który czeka na **VSTA_NetworkListener** zdarzenie sieciowe.
 
 ### <a name="cannot-run-or-debug-any-office-solution-on-the-development-computer"></a>Nie można uruchomić lub debugować żadnego rozwiązania pakietu Office na komputerze deweloperskim
  Jeśli nie można uruchomić lub opracować projektu pakietu Office na komputerze deweloperskim, może zostać wyświetlony następujący komunikat o błędzie.

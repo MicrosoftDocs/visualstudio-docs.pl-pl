@@ -1,5 +1,7 @@
 ---
 title: Współpraca z dokumentami programu Visio
+description: Zapoznaj się z procedurami krok po kroku i przykładami kodu dotyczącymi używania modelu obiektów programu Microsoft Visio do pracy z dokumentami w projektach pakietu Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 82dbf0858266fe2f07d4ae51c8171e0e8a900861
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8835e3ef668e060798c515a89868d800ca737f34
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62815053"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523337"
 ---
 # <a name="work-with-visio-documents"></a>Współpraca z dokumentami programu Visio
   Tematy w tej sekcji zawierają procedury krok po kroku i przykłady kodu umożliwiające korzystanie z modelu obiektów programu Microsoft Office Visio do pracy z dokumentami w projektach pakietu Office.

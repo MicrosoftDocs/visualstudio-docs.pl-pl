@@ -1,5 +1,7 @@
 ---
 title: Wyświetlanie tekstu w polu tekstowym w arkuszu za pomocą przycisku
+description: Poznaj podstawy używania przycisków i pól tekstowych w arkuszach programu Microsoft Excel. Twórz również projekty programu Excel przy użyciu narzędzi programistycznych pakietu Office w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b30eea0152b75cdd0869ececac674ee5aeee7933
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c499800efa783ce252dbf925f307bc64e814420f
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328707"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522646"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>Przewodnik: wyświetlanie tekstu w polu tekstowym w arkuszu za pomocą przycisku
   W tym instruktażu przedstawiono podstawowe informacje dotyczące używania przycisków i pól tekstowych w Microsoft Office arkuszach programu Excel oraz sposobu tworzenia projektów programu Excel przy użyciu narzędzi programistycznych pakietu Office w programie Visual Studio. Aby zobaczyć wynik jako ukończony przykład, zobacz przykład kontrolki programu Excel w programie [Office przykłady i przewodniki dotyczące projektowania](../vsto/office-development-samples-and-walkthroughs.md).
@@ -81,7 +83,7 @@ ms.locfileid: "67328707"
 
 ### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>Aby zapisać w polu tekstowym po kliknięciu przycisku
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **Arkusz1**, a następnie kliknij polecenie **Wyświetl kod** w menu skrótów.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję **Arkusz1**, a następnie kliknij polecenie **Wyświetl kod** w menu skrótów.
 
 2. Dodaj następujący kod do <xref:System.Windows.Forms.Control.Click> procedury obsługi zdarzeń przycisku:
 

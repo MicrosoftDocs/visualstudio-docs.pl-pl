@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Programowane aktualizowanie tekstu zakładki'
+description: Dowiedz się, jak można użyć programu Visual Studio do programistycznego wstawiania tekstu do zakładki zastępczej w dokumencie programu Microsoft Word.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9b76c239606a4bf0d6da203bd4eea45a11162706
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b9fa4b5ef19fdcaae38ef477952580f6568fcc0
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546955"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523560"
 ---
 # <a name="how-to-programmatically-update-bookmark-text"></a>Instrukcje: Programowane aktualizowanie tekstu zakładki
   Możesz wstawić tekst do zakładki zastępczej w Microsoft Office dokumencie programu Word, aby można było pobrać tekst w późniejszym czasie lub zamienić tekst w zakładce. Jeśli tworzysz dostosowanie na poziomie dokumentu, możesz również zaktualizować tekst w <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolce, która jest powiązana z danymi. Aby uzyskać więcej informacji, zobacz temat [Powiązywanie danych z kontrolkami w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md).

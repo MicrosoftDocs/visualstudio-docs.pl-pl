@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu Outlook'
+description: Utwórz dodatek na poziomie aplikacji dla programu Microsoft Outlook. Ta funkcja jest dostępna dla samej aplikacji, niezależnie od tego, który element programu Outlook jest otwarty.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: baedd24b7eba14b3f2fa6496a7a681773b81cb9b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7950858d3205cf910eb09e5b0a99b5f67c71c4bd
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "69547978"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524226"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-outlook"></a>Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu Outlook
   W tym instruktażu pokazano, jak utworzyć dodatek narzędzi VSTO dla programu Microsoft Office Outlook. Funkcje, które tworzysz w tym rodzaju rozwiązanie, są dostępne dla samej aplikacji, niezależnie od tego, który element programu Outlook jest otwarty. Aby uzyskać więcej informacji, zobacz [Omówienie tworzenia rozwiązań pakietu Office &#40;narzędzi VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -46,7 +48,7 @@ ms.locfileid: "69547978"
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
-- Program Microsoft Outlook
+- Microsoft Outlook
 
 ## <a name="create-the-project"></a>Tworzenie projektu
 

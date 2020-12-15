@@ -1,5 +1,7 @@
 ---
 title: Pracuj z arkuszami
+description: Dowiedz się, że klasy arkusza i arkusza zawierają metody i właściwości używane do wykonywania zadań z arkuszami.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1f518a3d6e271c4f457e50ad6f9affcc3afccdf9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d58576c999d11441122bb0b2115d2367b7ce04ce
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62814593"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522541"
 ---
 # <a name="work-with-worksheets"></a>Pracuj z arkuszami
   <xref:Microsoft.Office.Tools.Excel.Worksheet>Klasy i <xref:Microsoft.Office.Interop.Excel.Worksheet> zawierają metody i właściwości używane do wykonywania zadań z arkuszami.

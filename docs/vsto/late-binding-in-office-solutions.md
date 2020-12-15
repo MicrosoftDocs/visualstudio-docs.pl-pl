@@ -1,5 +1,7 @@
 ---
 title: Późne powiązania w rozwiązaniach pakietu Office
+description: Dowiedz się, w jaki sposób niektóre typy w modelach obiektów w aplikacjach Microsoft Office udostępniają funkcje, które są dostępne za pomocą funkcji późnego wiązania.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 62224006d04e0a1e7447053e868dd9946f00c97e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 201b850d8a577f8cc76aff97e2370998b6f885ed
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62583949"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523571"
 ---
 # <a name="late-binding-in-office-solutions"></a>Późne powiązania w rozwiązaniach pakietu Office
   Niektóre typy w modelach obiektów aplikacji pakietu Office udostępniają funkcje, które są dostępne za pomocą funkcji późnego wiązania. Na przykład niektóre metody i właściwości mogą zwracać różne typy obiektów w zależności od kontekstu aplikacji pakietu Office, a niektóre typy mogą uwidaczniać różne metody lub właściwości w różnych kontekstach.

@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: aktualizowanie źródła danych przy użyciu danych z kontrolki hosta'
+description: Dowiedz się, jak powiązać formant hosta ze źródłem danych i zaktualizować źródło danych przy użyciu zmian wprowadzonych w danych w formancie.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52540f0cf94a12efda891657ec4aae9452ad6f86
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 2f79b8ae8716631a7adc68446b0c5fe267a30a88
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585122"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523605"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Instrukcje: aktualizowanie źródła danych przy użyciu danych z kontrolki hosta
   Formant hosta można powiązać ze źródłem danych i zaktualizować źródło danych przy użyciu zmian wprowadzonych w danych w formancie. W tym procesie istnieją dwa główne kroki:

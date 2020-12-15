@@ -1,5 +1,7 @@
 ---
 title: Wyświetlanie niestandardowych okienek zadań z wiadomościami e-mail w programie Outlook
+description: Dowiedz się, jak wyświetlić unikatowe wystąpienie niestandardowego okienka zadań z każdą wiadomością e-mail w programie Microsoft Outlook, która została utworzona lub otwarta.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 00a8eae3f0beea7482c5fd7a1ac1ebd1994b9c35
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ac14eff05c6f776181c20acde4cff4e2ed7a87b6
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584285"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522711"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>Przewodnik: Wyświetlanie niestandardowych okienek zadań z wiadomościami e-mail w programie Outlook
   W tym instruktażu pokazano, jak wyświetlić unikatowe wystąpienie niestandardowego okienka zadań z każdą wiadomością e-mail, która została utworzona lub otwarta. Użytkownicy mogą wyświetlać lub ukrywać niestandardowe okienko zadań przy użyciu przycisku na Wstążce każdej wiadomości e-mail.
@@ -72,7 +74,7 @@ ms.locfileid: "91584285"
 
 ### <a name="to-design-the-user-interface-of-the-custom-task-pane"></a>Aby zaprojektować interfejs użytkownika niestandardowego okienka zadań
 
-1. W **Eksplorator rozwiązań**kliknij projekt **OutlookMailItemTaskPane** .
+1. W **Eksplorator rozwiązań** kliknij projekt **OutlookMailItemTaskPane** .
 
 2. W menu **projekt** kliknij polecenie **Dodaj kontrolkę użytkownika**.
 
@@ -80,7 +82,7 @@ ms.locfileid: "91584285"
 
      Formant użytkownika zostanie otwarty w projektancie.
 
-4. Na karcie **Formanty standardowe** **przybornika**przeciągnij kontrolkę **TextBox** do kontrolki użytkownika.
+4. Na karcie **Formanty standardowe** **przybornika** przeciągnij kontrolkę **TextBox** do kontrolki użytkownika.
 
 ## <a name="design-the-user-interface-of-the-ribbon"></a>Projektowanie interfejsu użytkownika wstążki
  Jednym z celów tego dodatku narzędzi VSTO jest udostępnienie użytkownikom możliwości ukrycia lub wyświetlenia niestandardowego okienka zadań na Wstążce każdej wiadomości e-mail. Aby zapewnić interfejs użytkownika, Utwórz niestandardowy interfejs użytkownika wstążki, który wyświetla przycisk przełączania, który użytkownicy mogą kliknąć, aby wyświetlić lub ukryć niestandardowe okienko zadań.
@@ -99,7 +101,7 @@ ms.locfileid: "91584285"
 
 5. W oknie **Właściwości** ustaw właściwość **etykieta** na **Menedżer okienka zadań**.
 
-6. Na karcie **kontrolki wstążki pakietu Office** w **przyborniku**przeciągnij kontrolkę ToggleButton na grupę **Menedżera okienka zadań** .
+6. Na karcie **kontrolki wstążki pakietu Office** w **przyborniku** przeciągnij kontrolkę ToggleButton na grupę **Menedżera okienka zadań** .
 
 7. Kliknij pozycję **toggleButton1**.
 
@@ -127,7 +129,7 @@ ms.locfileid: "91584285"
 
 ### <a name="to-create-a-class-to-manage-inspector-windows-and-custom-task-panes"></a>Aby utworzyć klasę do zarządzania oknami inspektorów i niestandardowymi okienkami zadań
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy plik *ThisAddIn.cs* lub *ThisAddIn. vb* , a następnie kliknij polecenie **Wyświetl kod**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy plik *ThisAddIn.cs* lub *ThisAddIn. vb* , a następnie kliknij polecenie **Wyświetl kod**.
 
 2. Dodaj poniższe instrukcje na początku pliku.
 
@@ -200,7 +202,7 @@ ms.locfileid: "91584285"
 
 ### <a name="to-build-your-project"></a>Aby skompilować projekt
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt **OutlookMailItemTaskPane** , a następnie kliknij pozycję **Kompiluj**. Upewnij się, że projekt kompiluje się bez błędów.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt **OutlookMailItemTaskPane** , a następnie kliknij pozycję **Kompiluj**. Upewnij się, że projekt kompiluje się bez błędów.
 
 ## <a name="synchronize-the-ribbon-toggle-button-with-the-custom-task-pane"></a>Synchronizuj przycisk przełączania wstążki z okienkiem zadania niestandardowego
  Przycisk przełączania zostanie naciśnięty, gdy okienko zadań będzie widoczne i pojawi się, gdy okienko zadań jest ukryte. Aby zsynchronizować stan przycisku przy użyciu niestandardowego okienka zadań, należy zmodyfikować <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> procedurę obsługi zdarzeń przycisku przełączania.

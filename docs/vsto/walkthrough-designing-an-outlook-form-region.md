@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: Projektowanie regionu formularza programu Outlook'
+description: Dowiedz się, w jaki sposób można zaprojektować niestandardowy region formularza programu Microsoft Outlook, który pojawia się jako nowa strona w oknie Inspektora elementu kontaktu.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 01cfe55964a1d61c2ad200c9538ced9ff0aa5599
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e306814512c6cab2d331a26128f22bb94d7dbbf4
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985470"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524211"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>Przewodnik: Projektowanie regionu formularza programu Outlook
   Niestandardowe regiony formularzy poszerzają standardowe lub niestandardowe formularze programu Outlook Microsoft Office. W tym instruktażu zaprojektujesz niestandardowy region formularza, który pojawia się jako nowa strona w oknie Inspektora elementu kontaktu. Ten region formularza przedstawia mapę każdego adresu wymienionego dla kontaktu, wysyłając informacje o adresie do witryny sieci Web lokalnego wyszukiwania w usłudze Windows Live. Aby uzyskać informacje na temat regionów formularzy, zobacz [Tworzenie regionów formularzy w programie Outlook](../vsto/creating-outlook-form-regions.md).
@@ -66,7 +68,7 @@ ms.locfileid: "72985470"
 
 ### <a name="to-add-a-form-region-to-the-outlook-vsto-add-in-project"></a>Aby dodać region formularza do projektu dodatku VSTO programu Outlook
 
-1. W **Eksplorator rozwiązań**wybierz projekt **MapItAddIn** .
+1. W **Eksplorator rozwiązań** wybierz projekt **MapItAddIn** .
 
 2. W menu **projekt** kliknij polecenie **Dodaj nowy element**.
 
@@ -95,7 +97,7 @@ ms.locfileid: "72985470"
 
 ### <a name="to-design-the-layout-of-the-form-region"></a>Aby zaprojektować układ regionu formularza
 
-1. W **Eksplorator rozwiązań**rozwiń projekt **MapItAddIn** , a następnie kliknij dwukrotnie pozycję *MapIt.cs* lub *MAPI. vb* , aby otworzyć projektanta regionów formularza.
+1. W **Eksplorator rozwiązań** rozwiń projekt **MapItAddIn** , a następnie kliknij dwukrotnie pozycję *MapIt.cs* lub *MAPI. vb* , aby otworzyć projektanta regionów formularza.
 
 2. Kliknij prawym przyciskiem myszy projektanta, a następnie kliknij polecenie **Właściwości**.
 
@@ -105,7 +107,7 @@ ms.locfileid: "72985470"
 
 4. W menu **Widok** kliknij pozycję **Przybornik**.
 
-5. Na karcie **Formanty standardowe** **przybornika**Dodaj do regionu formularza **formant WebBrowser** .
+5. Na karcie **Formanty standardowe** **przybornika** Dodaj do regionu formularza **formant WebBrowser** .
 
      Program **WebBrowser** wyświetli mapę każdego adresu, który jest wyświetlany na liście dla kontaktu.
 
@@ -114,7 +116,7 @@ ms.locfileid: "72985470"
 
 ### <a name="to-customize-the-behavior-of-the-form-region"></a>Aby dostosować zachowanie regionu formularza
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję *MapIt.cs* lub *MAPI. vb*, a następnie kliknij polecenie **Wyświetl kod**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję *MapIt.cs* lub *MAPI. vb*, a następnie kliknij polecenie **Wyświetl kod**.
 
     *MapIt.cs* lub *MAPI. vb* zostanie otwarty w edytorze kodu.
 
@@ -154,7 +156,7 @@ ms.locfileid: "72985470"
     |Typ adresu|Adres|
     |------------------|-------------|
     |**Firmowe**|**4567 Main St. Buffalo, NY**|
-    |**Strona główna**|**1234 północny St. Buffalo, NY**|
+    |**Ekran główny**|**1234 północny St. Buffalo, NY**|
     |**Inne**|**3456 Main St. Seattle, WA**|
 
 4. Zapisz i Zamknij element Contact.
@@ -165,7 +167,7 @@ ms.locfileid: "72985470"
 
 6. W grupie **Pokaż** Wstążkę elementu kliknij pozycję **Mapuj ją** , aby otworzyć region formularza Mapa IT.
 
-     Zostanie wyświetlony region formularza Mapa IT i zostanie wyświetlona lokalna witryna sieci Web wyszukiwania. **Firma**, **Strona główna**i **inne** adresy są wyświetlane w konsoli. W konsoli do wykreślania wybierz adres, który chcesz zmapować.
+     Zostanie wyświetlony region formularza Mapa IT i zostanie wyświetlona lokalna witryna sieci Web wyszukiwania. **Firma**, **Strona główna** i **inne** adresy są wyświetlane w konsoli. W konsoli do wykreślania wybierz adres, który chcesz zmapować.
 
 ## <a name="next-steps"></a>Następne kroki
  Więcej informacji na temat sposobu dostosowywania interfejsu użytkownika aplikacji Outlook można znaleźć w następujących tematach:
