@@ -1,5 +1,7 @@
 ---
 title: Powłoka programu Visual Studio | Microsoft Docs
+description: Program Visual Studio Shell to podstawowy Agent integracji w programie Visual Studio, który zapewnia podstawowe funkcje i obsługuje komunikację między pakietów vspackageami.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb89fc3b82dc7f142714608d8a669e368216c729
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 546a76d1533efaef28ddafb14b04514f64e9d4f9
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704004"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97488053"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Powłoka jest głównym agentem integracji w programie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Powłoka zawiera niezbędne funkcje umożliwiające pakietów VSPackage udostępniania wspólnych usług. Ponieważ celem architektury [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] jest przyjęcie podstawowych funkcji w pakietów VSPackage, powłoka jest strukturą, która zapewnia podstawowe funkcje i obsługuje komunikację między składnikami pakietów VSPackage.
@@ -78,7 +80,7 @@ ms.locfileid: "80704004"
 
 - **Przybornik**
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>
 - <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>

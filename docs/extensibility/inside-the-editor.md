@@ -1,5 +1,7 @@
 ---
 title: Wewnątrz edytora
+description: Dowiedz się więcej o podsystemach i funkcjach edytora. Można rozciągnąć funkcje edytora programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bba0b5192df53b6ec837b0030c7b236bf8e08dea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 14193c0806c4b45f721ee97b101969de8437448d
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710328"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487533"
 ---
 # <a name="inside-the-editor"></a>Wewnątrz edytora
 
@@ -35,7 +37,7 @@ W tych sekcjach opisano funkcje edytora:
 
 - [Zakończeń](../extensibility/inside-the-editor.md#adornments)
 
-- [Rzut](../extensibility/inside-the-editor.md#projection)
+- [Projekcja](../extensibility/inside-the-editor.md#projection)
 
 - [Tworzenie konspektu](../extensibility/inside-the-editor.md#outlining)
 
@@ -206,7 +208,7 @@ Funkcje edytora są zaprojektowane tak, aby definicja funkcji była oddzielona o
 
 - Zakończeń
 
-- Rzut
+- Projekcja
 
 - Tworzenie konspektu
 
@@ -318,7 +320,7 @@ Technologia IntelliSense obsługuje uzupełnianie instrukcji, pomoc w sygnaturac
 
 Uzupełnianie instrukcji zawiera listę podręcznych potencjalnych uzupełniania dla nazw metod, elementów XML i innych elementów kodowania lub znaczników. Ogólnie rzecz biorąc, gest użytkownika wywołuje sesję ukończenia. Sesja wyświetla listę potencjalnych popełnień, a użytkownik może wybrać jedną lub odrzucić listę. <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>Jest odpowiedzialny za tworzenie i wyzwalanie <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSession> . <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>Oblicza <xref:Microsoft.VisualStudio.Language.Intellisense.CompletionSet> elementy ukończenia dla sesji.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Punkty rozszerzenia usługi językowej i edytora](../extensibility/language-service-and-editor-extension-points.md)
 - [Importy edytora](../extensibility/editor-imports.md)

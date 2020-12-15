@@ -1,5 +1,7 @@
 ---
 title: Kiedy tworzyć typy projektów | Microsoft Docs
+description: Dowiedz się, jak ustalić, czy nowy typ projektu jest wymagany do dostosowywania programu Visual Studio dla użytkowników.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd5caea4d07ff34af8c8cee83c24ae20e8b8f108
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 458ca77ebcd8017b9834a8925edec255ca04cc13
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012012"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487832"
 ---
 # <a name="when-to-create-project-types"></a>Kiedy należy tworzyć typy projektów
 Tworzenie nowego typu projektu stanowi podstawę do dostosowania [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dla użytkowników. Jednak tworzenie nowego typu projektu nie jest wymagane dla wszystkich [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dostosowań. Poniższe wskazówki powinny pomóc w ustaleniu, czy dla danego scenariusza jest wymagany nowy typ projektu.

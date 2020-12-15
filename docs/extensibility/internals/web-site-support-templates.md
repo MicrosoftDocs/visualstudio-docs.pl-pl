@@ -1,5 +1,7 @@
 ---
 title: Szablony obsługi witryny sieci Web | Microsoft Docs
+description: Dowiedz się więcej o szablonach pomocy technicznej witryny sieci Web. Szablony projektów i elementów witryny sieci Web programu Visual Studio zapewniają wielokrotny i Dostosowywalny projekt witryny sieci Web.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e3c139ae6f2f9ec618e6382a1551a9e35eee7ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7bb3d669dadf7c33fa81231adf26ae30e999c51
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703451"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487858"
 ---
 # <a name="web-site-support-templates"></a>Szablony pomocy technicznej dotyczącej witryn internetowych
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Szablony projektów i elementów witryny sieci Web zapewniają możliwość wielokrotnego użytku i dostosowywania projektu witryny sieci Web oraz elementów, które przyspieszają proces opracowywania, usuwając konieczność tworzenia nowych projektów i danych witryn sieci Web od podstaw. Aby uzyskać więcej informacji na temat [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] szablonów, zobacz [Tworzenie szablonów projektów i elementów](../../ide/creating-project-and-item-templates.md).
@@ -184,5 +186,5 @@ ms.locfileid: "80703451"
 
      Plik szablonu, który określa zawartość nowej strony wzorcowej i jej pliku zależnego, jeśli istnieje.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Pomoc techniczna dotycząca witryny internetowej](../../extensibility/internals/web-site-support.md)

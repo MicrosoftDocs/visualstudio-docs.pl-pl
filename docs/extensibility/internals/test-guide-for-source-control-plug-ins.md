@@ -1,5 +1,7 @@
 ---
 title: Przewodnik testowy dla wtyczek kontroli źródła | Microsoft Docs
+description: Dowiedz się więcej na temat testowania wtyczki kontroli źródła w programie Visual Studio. To omówienie obejmuje typowe obszary testowania.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 321d61175068f135aae87bff73f13ac800f4793c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a288beb618b0b539f53270928366349f47aee9e9
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905156"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487728"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Przewodnik testowania wtyczek kontroli kodu źródłowego
 Ta sekcja zawiera wskazówki dotyczące testowania wtyczki kontroli źródła za pomocą programu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Jest to obszerne omówienie najpopularniejszych obszarów testowania, a także niektóre bardziej Intricate obszary, które mogą być problematyczne. Tego omówienia nie jest to pełna lista przypadków testowych.
@@ -51,7 +53,7 @@ Ta sekcja zawiera wskazówki dotyczące testowania wtyczki kontroli źródła za
 
 ## <a name="test-areas-covered-in-this-section"></a>Obszary testowe omówione w tej sekcji
 
-- [Obszar testowy 1: Dodaj do lub Otwórz z kontroli źródła](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)
+- [Obszar testowy 1: dodawanie do kontroli kodu źródłowego i otwieranie z poziomu kontroli kodu źródłowego](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)
 
   - Przypadek 1a: Dodawanie rozwiązania do kontroli źródła
 
@@ -61,7 +63,7 @@ Ta sekcja zawiera wskazówki dotyczące testowania wtyczki kontroli źródła za
 
 - [Obszar testowy 2: pobieranie z kontroli kodu źródłowego](../../extensibility/internals/test-area-2-get-from-source-control.md)
 
-- [Obszar testowy 3: wyewidencjonowywanie/cofanie wyewidencjonowania](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)
+- [Obszar testowy 3: wyewidencjonowywanie i cofanie wyewidencjonowania](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)
 
   - Przypadek 3: wyewidencjonowywanie/cofanie wyewidencjonowania
 
@@ -101,5 +103,5 @@ Ta sekcja zawiera wskazówki dotyczące testowania wtyczki kontroli źródła za
 
   - Przypadek 8b: zmiana oparta na rozwiązaniu
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wtyczki kontroli źródła](../../extensibility/source-control-plug-ins.md)

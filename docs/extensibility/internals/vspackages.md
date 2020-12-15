@@ -1,5 +1,7 @@
 ---
 title: Pakietów VSPackage | Microsoft Docs
+description: Dowiedz się więcej na temat pakietów VSPackage, które są modułami oprogramowania rozszerzającymi środowisko IDE programu Visual Studio przez udostępnienie elementów interfejsu użytkownika, usług, projektów, edytorów i projektantów.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24dec363d261b8dbfa2135dec34e28c247c47251
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 440e2517a0138ca84be87090d9636288a7a5d9af
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703823"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487949"
 ---
 # <a name="vspackages"></a>Pakiety VSPackage
 Pakietów VSPackage to moduły oprogramowania, które zwiększają [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowane środowisko programistyczne (IDE) przez udostępnienie elementów interfejsu użytkownika, usług, projektów, edytorów i projektantów.

@@ -1,5 +1,7 @@
 ---
 title: Podstawowe informacje o projekcie sieci Web | Microsoft Docs
+description: Zapoznaj się ze szczegółami wewnętrznymi dotyczącymi działania projektów sieci Web w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09e33248ca264fefa79a8d5d5fa5d0cfa3d2da1d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1bf16582cdc9bba6529d237d74d56ebded299fb9
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703549"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487923"
 ---
 # <a name="web-project-essentials"></a>Podstawowe informacje dotyczące projektów internetowych
 Projekty sieci Web tworzą aplikacje sieci Web. Możesz użyć projektu sieci Web, aby utworzyć aplikację sieci Web, która ma inteligentne strony sieci Web. Inteligentna Strona sieci Web zawiera kod po stronie serwera, który renderuje stronę sieci Web na żądanie.
@@ -57,5 +59,5 @@ Projekty sieci Web tworzą aplikacje sieci Web. Możesz użyć projektu sieci We
 
   - Znaczniki błędów (Red squigglies) powinny zawsze być tworzone w podstawowym buforze edytora kodu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Projekty internetowe](../../extensibility/internals/web-projects.md)

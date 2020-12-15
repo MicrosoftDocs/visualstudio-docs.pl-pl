@@ -1,5 +1,7 @@
 ---
 title: Obsługa witryny sieci Web | Microsoft Docs
+description: Informacje o systemach projektów witryn sieci Web, które są tworzone przez dodanie szablonów i atrybutów rejestracji do istniejącego systemu projektu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22047ad1b0709cefa200656e61f8e0d39ace94c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06f8ffdd504182dd82b11d4b5ce5f57e0a7629c3
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703447"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487845"
 ---
 # <a name="web-site-support"></a>Pomoc techniczna dotycząca witryny internetowej
 System projektu witryny sieci Web to system projektu, który tworzy projekty sieci Web. Projekty sieci Web z kolei tworzą aplikacje sieci Web. Projekt witryny sieci Web generuje jeden plik wykonywalny dla każdej strony sieci Web, która ma skojarzony kod. Dodatkowe pliki wykonywalne są generowane na podstawie plików kodu źródłowego w folderze/App_Code.
@@ -25,7 +27,7 @@ System projektu witryny sieci Web to system projektu, który tworzy projekty sie
  Kompilator języka używany do kompilowania stron sieci Web musi być zarejestrowany w usłudze [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)] . Aby zarejestrować kompilator, można użyć [ \<compiler> elementu](/dotnet/framework/configure-apps/file-schema/compiler/compiler-element) w pliku Web.config, jak w poniższym przykładzie:
 
 ```
-<system.codedom>  <compilers>    <compiler language="py;IronPython" extension=".py"       type="IronPython.CodeDom.PythonProvider, IronPython,       Version=1.0.2391.18146, Culture=neutral,       PublicKeyToken=b03f5f7f11d50a3a" />  </compilers></system.codedom>
+<system.codedom>  <compilers>    <compiler language="py;IronPython" extension=".py"       type="IronPython.CodeDom.PythonProvider, IronPython,       Version=1.0.2391.18146, Culture=neutral,       PublicKeyToken=b03f5f7f11d50a3a" />  </compilers></system.codedom>
 ```
 
 ## <a name="in-this-section"></a>W tej sekcji

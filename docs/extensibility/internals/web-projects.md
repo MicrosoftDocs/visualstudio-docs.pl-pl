@@ -1,5 +1,7 @@
 ---
 title: Projekty sieci Web | Microsoft Docs
+description: Zapoznaj się ze szczegółami wewnętrznymi dotyczącymi działania systemu projektu sieci Web w programie Visual Studio, dla deweloperów, którzy chcą zwiększyć program Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23194ba5ad59a113e5599b7fe1f5f39bed557351
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6afdbff1e844f45cac56b68909e1327a190f7a74
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703531"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487884"
 ---
 # <a name="web-projects"></a>Projekty internetowe
 System projektu sieci Web to system projektu, który tworzy projekty sieci Web. Projekty sieci Web z kolei tworzą aplikacje sieci Web. Możesz programować stronę sieci Web przy użyciu tradycyjnych języków programowania, takich jak [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] lub [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] , aby zbierać i przetwarzać informacje od użytkownika, przechowywać je w bazie danych i tak dalej. Strony sieci Web z skojarzonym kodem są nazywane inteligentnymi stronami sieci Web.

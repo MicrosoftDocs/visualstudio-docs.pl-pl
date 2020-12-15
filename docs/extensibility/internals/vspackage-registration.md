@@ -1,5 +1,7 @@
 ---
 title: Rejestracja pakietu VSPackage | Microsoft Docs
+description: Dowiedz się więcej o rejestrowaniu pakietu VSPackage, gdzie pakiety doradzają programowi Visual Studio, że są zainstalowane i powinny zostać załadowane przez zapisanie informacji w rejestrze.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5941a0bc5d9f9f983a616dcc22cf1260d0911fa8
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 88c8294042bb61939a52f4053f5b27ae915e01df
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012129"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487988"
 ---
 # <a name="vspackage-registration"></a>Rejestracja pakietu VSPackage
 Pakietów VSPackage musi poinformować [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , że są one zainstalowane i powinny zostać załadowane. Ten proces jest realizowany przez zapisanie informacji w rejestrze. Jest to typowe zadanie Instalatora.
@@ -40,7 +42,7 @@ Pakietów VSPackage musi poinformować [!INCLUDE[vsprvs](../../code-quality/incl
 > [!NOTE]
 > Narzędzie RegPkg nie jest oddystrybuowane i nie można go użyć do zarejestrowania pakietu VSPackage w systemie użytkownika.
 
-## <a name="why-vspackages-should-not-self-register-at-install-time"></a>Dlaczego pakietów VSPackage nie powinny być rejestrowane w czasie instalacji
+## <a name="why-vspackages-should-not-self-register-at-install-time"></a>Dlaczego pakietów VSPackage nie powinna Self-Register w czasie instalacji
  Instalatory pakietu VSPackage nie należy polegać na rejestracji samoobsługowej. Na pierwszy rzut oka, zachowując wartości rejestru pakietu VSPackage tylko w samej pakietu VSPackage, wygląda jak dobry pomysł. Mając na względzie, że deweloperzy potrzebują wartości rejestru dostępnych dla ich rutynowej pracy i testowania, warto unikać obsługi oddzielnej kopii danych rejestru w instalatorze. Instalator może polegać na pakietu VSPackage sam do zapisu wartości rejestru.
 
  Chociaż jest dobrym rozwiązaniem, samodzielna rejestracja ma kilka wad, które nie są odpowiednie do instalacji pakietu VSPackage:

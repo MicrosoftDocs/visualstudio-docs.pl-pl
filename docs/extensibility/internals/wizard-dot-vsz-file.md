@@ -1,5 +1,7 @@
 ---
 title: Kreator (. Vsz) | Microsoft Docs
+description: Dowiedz się więcej na temat plików. vsz używanych przez środowisko IDE do uruchamiania kreatorów. Pliki zawierają informacje o tym, który Kreator jest wywoływany i co należy przekazać do kreatora.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fedf409c0ca320c054ddf1cc16318d08d25463a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5fe32028f271d02dd518509bb86906197e6acb4e
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703310"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487741"
 ---
 # <a name="wizard-vsz-file"></a>Kreator (plik Vsz)
 
@@ -46,7 +48,7 @@ Parametry umożliwiają plikowi. vsz przekazywanie dodatkowych parametrów niest
 
 Aby dodać domyślny identyfikator ustawień regionalnych do pliku. vsz, określ `FALLBACK_LCID` = xxxx, gdzie xxxx jest identyfikatorem ustawień regionalnych, na przykład 1033 dla języka angielskiego. Gdy `FALLBACK_LCID` parametr jest zdefiniowany, Kreator używa podanego identyfikatora ustawień regionalnych w przypadku nieznalezienia bieżącego identyfikatora.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Parametry niestandardowe](../../extensibility/internals/custom-parameters.md)
 - [Kreatory](../../extensibility/internals/wizards.md)

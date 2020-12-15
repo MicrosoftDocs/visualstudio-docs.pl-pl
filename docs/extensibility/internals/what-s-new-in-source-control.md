@@ -1,5 +1,7 @@
 ---
 title: Co nowego w kontroli źródła w zestawie SDK programu Visual Studio 2015 | Microsoft Docs
+description: Poznaj funkcje kontroli źródła pakietów VSPackage i przejrzyj przegląd kroków implementacji.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f90ae3e1d327b10e99713ad28aa2d5a06c0be34b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2af2c321eb91407808e71f4c0126b86d79980c53
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703408"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487819"
 ---
 # <a name="whats-new-in-source-control-for-the-visual-studio-2015-sdk"></a>Co nowego w kontroli źródła dla zestawu SDK programu Visual Studio 2015
 
@@ -45,7 +47,7 @@ Poniższe kroki zawierają ogólny przegląd informacji potrzebnych do zaimpleme
 
 6. Pakietu VSPackage kontroli źródła musi nasłuchiwać zdarzeń, takich jak te implementujące <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> interfejs, a także śledzić zdarzenia dokumentu projektu (TPD) (zgodnie z implementacją <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> interfejsu) i podejmować odpowiednie działania.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider>

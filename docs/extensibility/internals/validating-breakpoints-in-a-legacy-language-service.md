@@ -1,5 +1,7 @@
 ---
 title: Sprawdzanie poprawności punktów przerwania w starszej wersji usługi językowej | Microsoft Docs
+description: Dowiedz się, jak zastąpić metodę ValidateBreakpointLocation w starszej wersji usługi językowej, aby sprawdzić poprawność punktów przerwania przed uruchomieniem debugera.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af09e4f8f2156100bea9267c92ffebeb64ce1aa3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d48db7397e2f9a5921315036bea15551fb7baa9
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704097"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97488027"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>Sprawdzanie poprawności punktów przerwania w starszej wersji usługi językowej
 Punkt przerwania wskazuje, że wykonanie programu powinno zostać zatrzymane w określonym momencie, gdy jest uruchamiane w debugerze. Użytkownik może umieścić punkt przerwania w dowolnym wierszu w pliku źródłowym, ponieważ Edytor nie ma informacji o tym, co stanowi prawidłową lokalizację punktu przerwania. Po uruchomieniu debugera wszystkie oznaczone punkty przerwania (nazywane punktami przerwania w toku) są powiązane z odpowiednią lokalizacją w uruchomionym programie. W tym samym czasie punkty przerwania są sprawdzane, aby upewnić się, że oznaczają poprawne lokalizacje kodu. Na przykład punkt przerwania komentarza jest nieprawidłowy, ponieważ nie ma kodu w tej lokalizacji w kodzie źródłowym. Debuger wyłącza nieprawidłowe punkty przerwania.
@@ -98,5 +100,5 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Funkcje starszej wersji usługi językowej](../../extensibility/internals/legacy-language-service-features1.md)

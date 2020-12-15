@@ -1,5 +1,7 @@
 ---
 title: Korzystanie z modelu automatyzacji | Microsoft Docs
+description: Dowiedz się, jak uzyskać właściwości i metody pakietu VSPackage po połączeniu z modelem automatyzacji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d014627161666473d3b674f72cfec339a66fdc05
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: ad8c02f846a946933ac07d4aa546ad3ce3a2a82f
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012493"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97488170"
 ---
 # <a name="using-the-automation-model"></a>Korzystanie z modelu automatyzacji
 Po nawiązaniu połączenia pakietu VSPackage z automatyzacją można uzyskać właściwości i metody, wywołując <xref:EnvDTE.DTEClass.GetObject%2A> metodę dla <xref:EnvDTE._DTE> obiektu, przekazując ciąg reprezentujący obiekt, który ma zostać pobrany.

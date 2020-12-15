@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42250d4b60cf272f041fea6f44abd24f99645b93
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: d2889729ae539d640bb9d43c64956edc04b74f26
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363461"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97488196"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Rozwiązania i projekty w programie Visual Studio
 
@@ -62,7 +62,7 @@ Program Visual Studio używa dwóch typów plików (*. sln* i *. suo*) do przech
 
 ### <a name="solution-folder"></a>Folder rozwiązania
 
-W tym kontekście "folder rozwiązania" jest folderem wirtualnym, który jest tylko w **Eksplorator rozwiązań**, w którym można go użyć do grupowania projektów w rozwiązaniu. Jeśli chcesz zlokalizować, gdzie są przechowywane projekty na komputerze, przejdź do pozycji **Narzędzia**  >  **Opcje**  >  **projekty i rozwiązania**  >  .
+W tym kontekście "folder rozwiązania" jest folderem wirtualnym, który jest tylko w **Eksplorator rozwiązań**, w którym można go użyć do grupowania projektów w rozwiązaniu. Jeśli chcesz zlokalizować plik rozwiązania na komputerze, przejdź do pozycji **Narzędzia**  >  **Opcje**  >  **projekty i rozwiązania**  >  . Aby uzyskać więcej informacji, zobacz [okno dialogowe Opcje: projekty i rozwiązania > lokalizacje](./reference/projects-solutions-locations-options.md)
 
 ## <a name="create-new-projects"></a>Utwórz nowe projekty
 
@@ -70,7 +70,7 @@ Najprostszym sposobem tworzenia nowego projektu jest rozpoczęcie od szablonu pr
 
 Jeśli często dostosowujesz projekty w określony sposób, możesz utworzyć niestandardowy szablon projektu, za pomocą którego można tworzyć nowe projekty z programu. Aby uzyskać więcej informacji, zobacz [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md).
 
-Podczas tworzenia nowego projektu jest on domyślnie zapisywany w *%USERPROFILE%\source\repos*. Tę lokalizację można zmienić w ustawieniu **Lokalizacja projektów** w obszarze **Narzędzia**  >  **Opcje**  >  **projekty i rozwiązania**  >  . Aby uzyskać więcej informacji, zobacz [Strona projekty i rozwiązania, opcje okna dialogowego](../ide/reference/projects-and-solutions-options-dialog-box.md).
+Podczas tworzenia nowego projektu jest on domyślnie zapisywany w *%USERPROFILE%\source\repos*. Tę lokalizację można zmienić w ustawieniu **Lokalizacja projektów** w obszarze **Narzędzia**  >  **Opcje**  >  **projekty i rozwiązania**  >  . Aby uzyskać więcej informacji, zobacz [Strona projekty i rozwiązania, opcje okna dialogowego](./reference/projects-and-solutions-options-dialog-box.md).
 
 ## <a name="solution-explorer"></a>Eksplorator rozwiązań
 
@@ -87,7 +87,7 @@ W przypadku projektów ASP.NET Core można dostosować sposób zagnieżdżania p
 
 Aby wyświetlić listę niektórych ikon, które pojawiają się w Eksplorator rozwiązań, zobacz [ikony widok klasy i Przeglądarka obiektów](class-view-and-object-browser-icons.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Visual Studio IDE](../get-started/visual-studio-ide.md)
 - [Przenoszenie, migrowanie i uaktualnianie projektów](../porting/port-migrate-and-upgrade-visual-studio-projects.md)

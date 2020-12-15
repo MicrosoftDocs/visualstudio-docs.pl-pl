@@ -1,5 +1,7 @@
 ---
 title: Kreatorzy | Microsoft Docs
+description: Dowiedz się, jak wyświetlać listę kreatorów spośród dostępnych kreatorów i szablonów w programie Visual Studio oraz o wymaganiach, które Kreator musi spełnić w środowisku IDE.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d65cf2dcc10380b0ac750c8e1b0e7fd56eab95b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f367723a3c819635f2d7cf20ed812a36cda12830
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703211"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487754"
 ---
 # <a name="wizards"></a>Kreatory
 Po utworzeniu kreatora zazwyczaj należy dodać go do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowanego środowiska programistycznego (IDE), aby inne osoby mogły z niego korzystać. Dodany Kreator zostanie wyświetlony w oknach dialogowych **Dodaj nowy projekt** lub **Dodaj nowy element** . Aby wyświetlić okna dialogowe **Dodaj nowy projekt** lub **Dodaj nowy element** , kliknij prawym przyciskiem myszy otwarte rozwiązanie w **Eksplorator rozwiązań**, wskaż polecenie **Dodaj**, a następnie kliknij przycisk **Nowy projekt** lub **nowy element**.

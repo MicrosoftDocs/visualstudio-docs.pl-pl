@@ -1,5 +1,7 @@
 ---
-title: Flagi wiersza polecenia kompilatora VSCT | Microsoft Docs
+title: Flagi Command-Line kompilatora VSCT | Microsoft Docs
+description: Kompilator tabeli poleceń programu Visual Studio udostępnia opcje wiersza polecenia, aby zapewnić pomyślne skompilowanie plików. vsct.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4ee29710049453c3163c366eccf96e257b6028d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8d60b248a4941d176ac6ba4e808a94dbc67efbe7
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703967"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97488014"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>Flagi wiersza polecenia kompilatora VSCT
 Kompilator programu Visual Studio Command Table (VSCT) zapewnia przełączniki wiersza polecenia, aby zapewnić pomyślne Kompilowanie plików. vsct.
@@ -59,7 +61,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 |-D|Określ wszelkie dodatkowe zdefiniowane symbole.|
 |-I|Wskaż dodatkowe ścieżki dołączania, które powinny być używane podczas rozpoznawania odwołań do plików.|
 |-L|Określ <xref:System.Globalization.CultureInfo> nazwę kultury, na przykład "en-us".|
-|-E|Emituj obiekty w języku C# w określonej przestrzeni nazw dla elementów polecenia, a następnie [C&#124;H&#124;N]:*filename*gdzie C = C#, H = nagłówek C++, N = przestrzeń nazw. Przestrzeń nazw jest wymagana dla języka C#.|
+|-E|Emituj obiekty w języku C# w określonej przestrzeni nazw dla elementów polecenia, a następnie [C&#124;H&#124;N]:*filename* gdzie C = C#, H = nagłówek C++, N = przestrzeń nazw. Przestrzeń nazw jest wymagana dla języka C#.|
 |-v|Pełne dane wyjściowe.|
 
  Przełącznik-L instruuje kompilator, aby wybierał grupę ciągów, aby utworzyć plik binarny. Dyrektor ds, który odnosi się do podanej <xref:System.Globalization.CultureInfo> nazwy kultury. Określona nazwa kultury powinna być zgodna z atrybutem Language jednego lub więcej [elementów String](../../extensibility/strings-element.md) w pliku. vsct. Jeśli element Strings nie ma atrybutu language, jest Dziedziczony z zawierającego [element](../../extensibility/commandtable-element.md).
@@ -74,7 +76,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 
  Kompilator VSCT może również dekompilować wcześniej skompilowany plik binarny. W tym celu podaj plik binarny dla \<infile> .   Jeśli plik binarny został utworzony przez kompilator VSCT, będzie miał już osadzone symbole i spowoduje wygenerowanie danych wyjściowych z symbolicznymi nazwami w \<Symbols> sekcji danych wyjściowych. Jeśli plik binarny został utworzony przez kompilator CTC, dane wyjściowe będą zawierać faktyczne identyfikatory GUID i identyfikator. Jeśli plik *. CTSYM, który jest tworzony przez bieżące wersje Ctc.exe, znajduje się w tym samym folderze co plik wejściowy binarny, symbole zostaną załadowane z tego pliku i użyte do danych wyjściowych.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Tabela poleceń programu Visual Studio (pliki Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Odwołanie do schematu XML VSCT](../../extensibility/vsct-xml-schema-reference.md)
 - [Dodawanie elementów interfejsu użytkownika przy użyciu pakietów VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

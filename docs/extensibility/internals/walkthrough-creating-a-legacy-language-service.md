@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: Tworzenie starszej wersji usługi językowej | Microsoft Docs'
+description: Dowiedz się, jak wdrożyć usługę języka w języku Visual C# przy użyciu klas języka struktury zarządzanego pakietu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbdad85dd1c0f62b22bb33b5ed6ab2c597e62164
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4fcc4004542f9a566d6c6bfa820cbb8c2e1846fa
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905988"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487936"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>Przewodnik: Tworzenie starszej wersji usługi językowej
 Korzystanie z klas języka Managed Package Framework (MPF) w celu zaimplementowania usługi językowej w programie [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] jest proste. Potrzebujesz pakietu VSPackage do hostowania usługi językowej, samej usługi językowej i analizatora dla danego języka.
@@ -50,19 +52,19 @@ Korzystanie z klas języka Managed Package Framework (MPF) w celu zaimplementowa
 
     Jeśli nie planujesz obsługi fragmentów kodu, po prostu kliknij przycisk Zakończ i zignoruj następny krok.
 
-6. Wprowadź **Wstaw fragment kodu** jako **nazwę polecenia** i `cmdidInsertSnippet` dla **identyfikatora polecenia**. Kliknij przycisk **Zakończ**.
+6. Wprowadź **Wstaw fragment kodu** jako **nazwę polecenia** i `cmdidInsertSnippet` dla **identyfikatora polecenia**. Kliknij przycisk **Finish** (Zakończ).
 
     **Nazwa polecenia** i **Identyfikator polecenia** mogą być takie same, jak na przykład.
 
 ### <a name="create-the-language-service-class"></a>Tworzenie klasy usługi językowej
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt MyLanguagePackage, wybierz polecenie **Dodaj**, **odwołanie**, a następnie wybierz przycisk **Dodaj nowe odwołanie** .
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt MyLanguagePackage, wybierz polecenie **Dodaj**, **odwołanie**, a następnie wybierz przycisk **Dodaj nowe odwołanie** .
 
 2. W oknie dialogowym **Dodaj odwołanie** wybierz pozycję **Microsoft. VisualStudio. Package. LanguageService** na karcie **.NET** , a następnie kliknij przycisk **OK**.
 
      Należy to zrobić tylko raz dla projektu pakietu językowego.
 
-3. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt pakietu VSPackage i wybierz polecenie **Dodaj**, **Klasa**.
+3. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt pakietu VSPackage i wybierz polecenie **Dodaj**, **Klasa**.
 
 4. Upewnij się, że **Klasa** została wybrana na liście szablony.
 
@@ -104,7 +106,7 @@ Korzystanie z klas języka Managed Package Framework (MPF) w celu zaimplementowa
 
 #### <a name="deriving-from-an-mpf-class"></a>Wyprowadzanie z klasy MPF
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt pakietu VSPackage i wybierz polecenie **Dodaj**, **Klasa**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt pakietu VSPackage i wybierz polecenie **Dodaj**, **Klasa**.
 
 2. Upewnij się, że **Klasa** została wybrana na liście szablony.
 
@@ -130,5 +132,5 @@ Korzystanie z klas języka Managed Package Framework (MPF) w celu zaimplementowa
 
      Na przykład wpisz, `public override` Aby wyświetlić listę wszystkich metod, które mogą zostać zastąpione w tej klasie.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Implementowanie starszej wersji usługi językowej](../../extensibility/internals/implementing-a-legacy-language-service1.md)

@@ -1,5 +1,6 @@
 ---
 title: Używanie struktury pakietu zarządzanego dla typu projektu (C#)
+description: Dowiedz się więcej na temat zarządzanej struktury pakietów, która dostarcza klasy .NET, których można użyć lub dziedziczyły z, aby zaimplementować własne typy projektów.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fca3f95780d548b4482c502f5b3eaa44005fd2e2
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 4b425962ed0f664b8255b6489ac8f0d38be7c13c
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038650"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487546"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>Implementowanie typu projektu przy użyciu środowiska pakietu zarządzanego (C#)
 Struktura pakietu zarządzanego (MPF) zawiera klasy języka C#, których można użyć lub dziedziczyły z, aby zaimplementować własne typy projektów. MPF implementuje wiele interfejsów program Visual Studio oczekuje typu projektu, który należy podać, dzięki czemu możesz skoncentrować się na implementowaniu szczegółowych informacji o typie projektu.
@@ -84,7 +85,7 @@ Struktura pakietu zarządzanego (MPF) zawiera klasy języka C#, których można 
 |`Microsoft.VisualStudio.Package.AssemblyReferenceNode`|
 |`Microsoft.VisualStudio.Package.BuildDependency`|
 
-## <a name="document-handling-classes"></a>Klasy obsługi dokumentów
+## <a name="document-handling-classes"></a>Klasy Document-Handling
  Poniższa tabela zawiera listę klas w MPF, które obsługują obsługę dokumentów. Aby uzyskać więcej informacji, zobacz [otwieranie i zapisywanie elementów projektu](../../extensibility/internals/opening-and-saving-project-items.md).
 
 |Nazwa klasy|
@@ -103,7 +104,7 @@ Struktura pakietu zarządzanego (MPF) zawiera klasy języka C#, których można 
 |`Microsoft.VisualStudio.Package.OutputGroup`|
 |`Microsoft.VisualStudio.Package.ProjectElement`|
 
-## <a name="automation-support-classes"></a>Klasy obsługi automatyzacji
+## <a name="automation-support-classes"></a>Klasy Automation-Support
  Poniższa tabela zawiera listę klas w MPF, które obsługują automatyzację, tak aby użytkownicy typu projektu mogli pisać dodatki.
 
 |Nazwa klasy|

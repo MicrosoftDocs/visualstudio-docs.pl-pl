@@ -1,5 +1,7 @@
 ---
 title: Instalator Windows podstawowe | Microsoft Docs
+description: Dowiedz się więcej na temat Instalator Windows do użycia podczas instalowania pakietu VSPackage, w tym organizowania funkcji pakietu VSPackage w składniki Instalator Windows.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aeea0b17a3c234bb7670642fb9ae0a442c9d60cd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1f4ca1908fbd54c0e8d12212bed19fc77e1dff51
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703416"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487780"
 ---
 # <a name="windows-installer-basics"></a>Podstawowe informacje dotyczące Instalatora Windows
 Instalator Windows instaluje i odinstalowuje aplikacje lub oprogramowanie na komputerze użytkownika, wykonując te zadania w jednostkach o nazwie składniki Instalator Windows (czasami nazywane WICs lub tylko składnikami). Identyfikator GUID identyfikuje każdy WIC, który jest podstawową jednostką instalacji i zliczania odwołań dla Instalatora przy użyciu Instalator Windows.
@@ -55,17 +57,17 @@ Instalator Windows instaluje i odinstalowuje aplikacje lub oprogramowanie na kom
 > [!NOTE]
 > Wymuszanie reguł Instalator Windows występuje tylko wtedy, gdy uruchomisz weryfikację pliku msi. Jednak należy zachować ostrożność traktowania tych reguł zgodnie z najlepszymi rozwiązaniami. Aby uzyskać więcej informacji, zobacz [Walidacja bazy danych instalacji](/windows/desktop/Msi/validating-an-installation-database) i [Walidacja pakietu](/windows/desktop/Msi/package-validation).
 
-#### <a name="installer-enforced-rules"></a>Zasady wymuszane przez Instalatora
+#### <a name="installer-enforced-rules"></a>Reguły Installer-Enforced
 
 - Wszystkie pliki w danym składniku muszą być zainstalowane w tym samym katalogu. Z drugiej strony pliki zainstalowane w oddzielnych folderach muszą należeć do osobnych składników.
 
 - Dla każdego składnika może istnieć tylko jedna ścieżka klucza. Ścieżka klucza to po prostu plik lub klucz rejestru reprezentujący cały składnik.
 
-#### <a name="component-provider-responsibilities"></a>Obowiązki dostawcy składników
+#### <a name="component-provider-responsibilities"></a>Component-Provider obowiązki
 
 - Wszystkie dwa zasoby, które mogą być dostarczane osobno w kolejnych wersjach, powinny znajdować się w oddzielnych składnikach. Zasoby powinny być pogrupowane w ten sam składnik tylko wtedy, gdy masz pewność, że te zasoby nigdy nie będą dostarczane osobno. W rzeczywistości zaleca się, aby wszystkie podstawowe zasoby (na przykład dll) zawsze istniały w oddzielnych WICs. Aby uzyskać więcej informacji, zobacz [Definiowanie składników Instalatora](/windows/desktop/Msi/defining-installer-components).
 
 - Żaden zasób z wersjami powinien być kiedykolwiek dostarczany w więcej niż jednym WIC.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Co się stanie w przypadku przerwania reguł składników?](/windows/desktop/Msi/what-happens-if-the-component-rules-are-broken)

@@ -1,5 +1,7 @@
 ---
 title: Interfejs kreatora (IDTWizard) | Microsoft Docs
+description: IDE używa interfejsu IDTWizard do komunikowania się z kreatorami. Kreatory muszą zaimplementować ten interfejs, aby można go było zainstalować w środowisku IDE.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb1c8d728a76097321e4e1f16640cab97599d6ba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e87759a979d0c680018d99a1e18a12e645f430c6
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703277"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487767"
 ---
 # <a name="wizard-interface-idtwizard"></a>Interfejs kreatora (IDTWizard)
 Zintegrowane środowisko programistyczne (IDE) używa <xref:EnvDTE.IDTWizard> interfejsu do komunikowania się z kreatorami. Kreatory muszą zaimplementować ten interfejs, aby można go było zainstalować w środowisku IDE.
@@ -63,7 +65,7 @@ STDMETHOD(Execute)(THIS_
     wizardResultBackout = 2
     ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Parametry kontekstu](../../extensibility/internals/context-parameters.md)
 - [Parametry niestandardowe](../../extensibility/internals/custom-parameters.md)
 - [Kreatory](../../extensibility/internals/wizards.md)
