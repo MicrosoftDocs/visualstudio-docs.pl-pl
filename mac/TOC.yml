@@ -202,6 +202,8 @@
       href: visual-studio-experience-improvement-program.md
     - name: Zgłaszanie problemu
       href: report-a-problem.md
+    - name: 'Rozwiązywanie problemów: Jak mogę wydać nową wersję istniejącego rozszerzenia?'
+      href: migrate-extensions.md
     - name: 'Rozwiązywanie problemów: Czy program Visual Studio dla komputerów Mac obsługuje kontrolę wersji programu Team Foundation?'
       href: tf-version-control.md
     - name: 'Rozwiązywanie problemów: Dlaczego nie mogę wyświetlić wszystkich szablonów?'
