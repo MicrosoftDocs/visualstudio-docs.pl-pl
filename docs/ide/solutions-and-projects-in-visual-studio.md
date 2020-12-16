@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6504d3e7fe278e8713a897ffacefa1f22cec6a09
-ms.sourcegitcommit: f43e669f3597a4b07975b2bd2dce362a41a2e83f
+ms.openlocfilehash: ebe6e5c7479ce4e3cda435c51a883c4d5db8cc45
+ms.sourcegitcommit: 6f37100d4b8c15a21d3858335ded3c26ab275b93
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 12/16/2020
-ms.locfileid: "97578256"
+ms.locfileid: "97599502"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Rozwiązania i projekty w programie Visual Studio
 
@@ -57,7 +57,7 @@ Projekt jest zawarty w *rozwiązaniu*. Pomimo nazwy, rozwiązanie nie jest "odpo
 
 Program Visual Studio używa dwóch typów plików (*. sln* i *. suo*) do przechowywania ustawień rozwiązań:
 
-|Rozszerzenie|Nazwa|Opis|
+|Wewnętrzny|Nazwa|Opis|
 |---------------|----------|-----------------|
 |. sln|Rozwiązanie programu Visual Studio|Organizuje projekty, elementy projektu i elementy rozwiązania w rozwiązaniu.|
 |. suo|Opcje użytkownika rozwiązania|Przechowuje ustawienia i dostosowania na poziomie użytkownika, takie jak punkty przerwania.|
@@ -68,11 +68,11 @@ Program Visual Studio używa dwóch typów plików (*. sln* i *. suo*) do przech
 
 ## <a name="create-new-projects"></a>Utwórz nowe projekty
 
-Najprostszym sposobem tworzenia nowego projektu jest rozpoczęcie od szablonu projektu dla określonego typu aplikacji lub witryny sieci Web. Szablon projektu składa się z podstawowego zestawu wstępnie wygenerowanych plików kodu, plików konfiguracji, zasobów i ustawień. Te szablony są dostępne w oknie dialogowym, w którym tworzysz nowy projekt (**plik**  >  **Nowy**  >  **projekt**). Aby uzyskać więcej informacji, zobacz [Tworzenie nowego projektu w programie Visual Studio](create-new-project.md) i [Tworzenie rozwiązań i projektów](../ide/creating-solutions-and-projects.md).
+Najprostszym sposobem tworzenia nowego projektu jest rozpoczęcie od szablonu projektu dla określonego typu aplikacji lub witryny sieci Web. Szablon projektu składa się z podstawowego zestawu wstępnie wygenerowanych plików kodu, plików konfiguracji, zasobów i ustawień. Te szablony są dostępne w oknie dialogowym, w którym tworzysz nowy projekt (**plik**  >  **Nowy**  >  **projekt**). Aby uzyskać więcej informacji, zobacz [Tworzenie nowego projektu](create-new-project.md) i [opracowywanie rozwiązań i projektów](../ide/creating-solutions-and-projects.md).
 
 Jeśli często dostosowujesz projekty w określony sposób, możesz utworzyć niestandardowy szablon projektu, za pomocą którego można tworzyć nowe projekty z programu. Aby uzyskać więcej informacji, zobacz [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md).
 
-Podczas tworzenia nowego projektu jest on domyślnie zapisywany w *%USERPROFILE%\source\repos*. Tę lokalizację można zmienić w ustawieniu **Lokalizacja projektów** w obszarze **Narzędzia**  >  **Opcje**  >  **projekty i rozwiązania**  >  . Aby uzyskać więcej informacji, zobacz [Strona projekty i rozwiązania, opcje okna dialogowego](./reference/projects-and-solutions-options-dialog-box.md).
+Podczas tworzenia nowego projektu jest on domyślnie zapisywany w *%USERPROFILE%\source\repos*. Tę lokalizację można zmienić w ustawieniu **Lokalizacja projektów** w obszarze **Narzędzia**  >  **Opcje**  >  **projekty i rozwiązania**  >  . Aby uzyskać więcej informacji na temat tego i innych ustawień projektów i rozwiązań, zobacz [Strona projekty i rozwiązania, opcje okna dialogowego](./reference/projects-and-solutions-options-dialog-box.md).
 
 ## <a name="solution-explorer"></a>Eksplorator rozwiązań
 
@@ -89,7 +89,7 @@ W przypadku projektów ASP.NET Core można dostosować sposób zagnieżdżania p
 
 Aby wyświetlić listę niektórych ikon, które pojawiają się w Eksplorator rozwiązań, zobacz [ikony widok klasy i Przeglądarka obiektów](class-view-and-object-browser-icons.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Visual Studio IDE](../get-started/visual-studio-ide.md)
 - [Przenoszenie, migrowanie i uaktualnianie projektów](../porting/port-migrate-and-upgrade-visual-studio-projects.md)

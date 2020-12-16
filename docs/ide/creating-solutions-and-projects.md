@@ -1,5 +1,5 @@
 ---
-title: Tworzenie rozwiązań i projektów
+title: Praca z rozwiązaniami i projektami
 description: Dowiedz się więcej o różnicach między rozwiązaniami i projektami oraz sposobami ich używania w programie Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 02/06/2018
@@ -16,14 +16,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bd893c06da9bc2c2c8d95fc4c085affa815edd2
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: 9bbfa16273dc323d2ad175e965a19a22ad0d17ce
+ms.sourcegitcommit: 6f37100d4b8c15a21d3858335ded3c26ab275b93
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006448"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97599482"
 ---
-# <a name="create-solutions-and-projects"></a>Tworzenie rozwiązań i projektów
+# <a name="work-with-solutions-and-projects"></a>Praca z rozwiązaniami i projektami
 
 *Projekty* przechowują elementy, które są konieczne do kompilowania aplikacji w programie Visual Studio, takie jak pliki kodu źródłowego, mapy bitowe, ikony i odwołania do składników i usług. Podczas tworzenia nowego projektu program Visual Studio tworzy *rozwiązanie* , które zawiera projekt. Jeśli chcesz, możesz dodać inne nowe lub istniejące projekty do rozwiązania. Rozwiązania mogą również zawierać pliki, które nie są połączone z żadnym konkretnym projektem.
 
