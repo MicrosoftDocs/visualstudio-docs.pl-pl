@@ -16,9 +16,9 @@
     - name: Tworzenie pierwszej aplikacji C#
       expanded: true
       items:
-        - name: Część 1. Tworzenie aplikacji konsolowej C#
+        - name: Tworzenie aplikacji konsolowej C#
           href: tutorial-console.md
-        - name: Część 2. Rozszerzanie aplikacji konsolowej C#
+        - name: Rozszerzanie aplikacji konsolowej C#
           href: tutorial-console-part-2.md
     - name: tworzenie aplikacji internetowej
       href: tutorial-aspnet-core.md
