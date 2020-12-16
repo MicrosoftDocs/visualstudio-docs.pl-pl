@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: podpisywanie rozwiązań pakietu Office'
+description: Dowiedz się, w jaki sposób można udzielić zaufania do rozwiązania Microsoft Office przy użyciu certyfikatu jako dowodu.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 23afc171fd97620b3e6801b8d199da6890198d8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7451630570e6d557dc5d2b635d149ebc07cfb388
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545759"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528123"
 ---
 # <a name="how-to-sign-office-solutions"></a>Instrukcje: podpisywanie rozwiązań pakietu Office
   Po podpisaniu rozwiązania można udzielić zaufania do rozwiązania przy użyciu certyfikatu jako dowodu. Możesz użyć tego samego certyfikatu dla wielu rozwiązań, a wszystkie rozwiązania będą zaufane bez dodatkowych aktualizacji zasad zabezpieczeń.
@@ -35,7 +37,7 @@ ms.locfileid: "85545759"
 
 ### <a name="to-sign-an-office-solution-by-using-a-certificate"></a>Aby podpisać rozwiązanie pakietu Office przy użyciu certyfikatu
 
-1. W menu **projekt** kliknij pozycję właściwości _rozwiązania_**Properties**.
+1. W menu **projekt** kliknij pozycję właściwości _rozwiązania_.
 
 2. Kliknij kartę **podpisywanie** .
 

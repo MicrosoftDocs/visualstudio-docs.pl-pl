@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: złożone powiązanie danych w projekcie dodatku VSTO'
+description: Dowiedz się, jak dodać kontrolki do arkusza programu Microsoft Excel i powiązać kontrolki z danymi w czasie wykonywania.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c0d65bd96a3860070addc6dc05a791d71959f5ea
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 573f15001dcbd678c576512349c36ae9594e10e8
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585044"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527095"
 ---
 # <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>Przewodnik: złożone powiązanie danych w projekcie dodatku VSTO
   Można powiązać dane z kontrolkami hosta i formantami Windows Forms w projektach dodatku VSTO. W tym instruktażu pokazano, jak dodać kontrolki do Microsoft Office arkusza programu Excel i powiązać kontrolki z danymi w czasie wykonywania.
@@ -53,7 +55,7 @@ ms.locfileid: "91585044"
 
 ### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt
 
-1. Utwórz projekt dodatku VSTO programu Excel z nazwami **zapełniania arkuszami z bazy danych**przy użyciu Visual Basic lub C#.
+1. Utwórz projekt dodatku VSTO programu Excel z nazwami **zapełniania arkuszami z bazy danych** przy użyciu Visual Basic lub C#.
 
      Aby uzyskać więcej informacji, zobacz [How to: Create Office projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
@@ -64,7 +66,7 @@ ms.locfileid: "91585044"
 
 ### <a name="to-add-a-typed-dataset-to-the-project"></a>Aby dodać typ DataSet do projektu
 
-1. Jeśli okno **źródła danych** nie jest widoczne, Wyświetl je na pasku menu, wybierając opcję **Wyświetl**  >  **inne**  >  **źródła danych**systemu Windows.
+1. Jeśli okno **źródła danych** nie jest widoczne, Wyświetl je na pasku menu, wybierając opcję **Wyświetl**  >  **inne**  >  **źródła danych** systemu Windows.
 
 2. Wybierz pozycję **Dodaj nowe źródło danych** , aby uruchomić **Kreatora konfiguracji źródła danych**.
 
@@ -78,7 +80,7 @@ ms.locfileid: "91585044"
 
 6. Na stronie **Wybierz obiekty bazy danych** rozwiń pozycję **tabele** i wybierz pozycję **adres (tabeli SalesLT)**.
 
-7. Kliknij przycisk **Zakończ**.
+7. Kliknij przycisk **Finish** (Zakończ).
 
     Plik *AdventureWorksLTDataSet. xsd* zostanie dodany do **Eksplorator rozwiązań**. Ten plik definiuje następujące elementy:
 

@@ -1,5 +1,7 @@
 ---
 title: Zmiana formatowania arkusza za pomocą kontrolek CheckBox
+description: Dowiedz się, jak za pomocą narzędzi programistycznych pakietu Office w programie Visual Studio utworzyć i dodać kod do projektu.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 42d2c46f6fd61d74476933cfda3dea8c62b00c95
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28b9f000c2e8517304387e2b203dfa7888b33d64
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328702"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527220"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>Przewodnik: zmiana formatowania arkusza za pomocą kontrolek CheckBox
   W tym instruktażu przedstawiono podstawowe informacje dotyczące używania pól wyboru w arkuszu programu Excel Microsoft Office, aby zmienić formatowanie. W programie Visual Studio będziesz używać narzędzi programistycznych pakietu Office do tworzenia i dodawania kodu do projektu. Aby zobaczyć wynik jako ukończony przykład, zobacz przykład kontrolki programu Excel w programie [Office przykłady i przewodniki dotyczące projektowania](../vsto/office-development-samples-and-walkthroughs.md).
@@ -60,7 +62,7 @@ ms.locfileid: "67328702"
 
 1. Upewnij się, że skoroszyt jest otwarty w projektancie programu Visual Studio i `Sheet1` jest otwarty.
 
-2. Na karcie **Formanty standardowe** **przybornika**przeciągnij <xref:Microsoft.Office.Tools.Excel.Controls.CheckBox> formant do lub blisko komórki **B2** w **arkuszu Arkusz1**.
+2. Na karcie **Formanty standardowe** **przybornika** przeciągnij <xref:Microsoft.Office.Tools.Excel.Controls.CheckBox> formant do lub blisko komórki **B2** w **arkuszu Arkusz1**.
 
 3. Z menu **Widok** wybierz polecenie okno **Właściwości** .
 
@@ -69,7 +71,7 @@ ms.locfileid: "67328702"
     |Właściwość|Wartość|
     |--------------|-----------|
     |**Nazwa**|**applyBoldFont**|
-    |**Tekst**|**Pogrubiona**|
+    |**Tekst**|**Pogrubienie**|
 
 5. Przeciągnij drugie pole wyboru do lub blisko komórki **B4** i Zmień następujące właściwości:
 

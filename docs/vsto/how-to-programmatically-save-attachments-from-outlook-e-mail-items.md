@@ -1,5 +1,7 @@
 ---
 title: Programowo Zapisuj załączniki z elementów poczty e-mail programu Outlook
+description: Dowiedz się, jak za pomocą programu Visual Studio programistycznie zapisywać załączniki z elementów poczty e-mail programu Microsoft Outlook.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3ade05e936397f72a0b370cb69d8be3310c3aee8
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: d33c2c820f03d7fb40c953165f62943e44648082
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584771"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528246"
 ---
 # <a name="how-to-programmatically-save-attachments-from-outlook-email-items"></a>Instrukcje: programowe zapisywanie załączników z elementów poczty e-mail programu Outlook
 
@@ -36,7 +38,7 @@ Ten przykład zapisuje załączniki wiadomości e-mail do określonego folderu p
 
 [!code-csharp[Trin_OL_SaveAttachments#1](../vsto/codesnippet/CSharp/Trin_OL_SaveAttachments/thisaddin.cs#1)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Pracuj z elementami poczty](../vsto/working-with-mail-items.md)
 - [Instrukcje: programowe pobieranie folderu według nazwy](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)

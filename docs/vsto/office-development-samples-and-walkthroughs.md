@@ -1,5 +1,7 @@
 ---
 title: Przykłady i przewodniki dotyczące programowania pakietu Office
+description: Dowiedz się więcej na temat przykładowych aplikacji, przykładowego kodu i przewodników krok po kroku, które pokazują składnię, strukturę i techniki używane do tworzenia rozwiązań pakietu Office.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a9a8e71395190647fa7a908949a186c511b24610
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5b5b1c34ef295558c42d181032dcf3dd7c456289
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "69551683"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527724"
 ---
 # <a name="office-development-samples-and-walkthroughs"></a>Przykłady i przewodniki dotyczące programowania pakietu Office
   Ta sekcja zawiera przykładowe aplikacje, przykładowy kod i Instruktaż krok po kroku przedstawiające składnię, strukturę i techniki używane do tworzenia rozwiązań Microsoft Office.

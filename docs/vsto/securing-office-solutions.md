@@ -1,5 +1,7 @@
 ---
 title: Zabezpieczanie rozwiązań pakietu Office
+description: Dowiedz się, jak model zabezpieczeń dla rozwiązań pakietu Office obejmuje kilka technologii, w tym Visual Studio Tools dla środowiska uruchomieniowego pakietu Office i technologii ClickOnce.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 31a17fdf51e838405c93efca79d7994cd40ece5c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bedb49a6d5d17e3c9f79a652183c2b4cd748ff6c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62978608"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528483"
 ---
 # <a name="secure-office-solutions"></a>Zabezpieczanie rozwiązań pakietu Office
   Model zabezpieczeń dla rozwiązań pakietu Office obejmuje kilka technologii: [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] , Centrum zaufania w Microsoft Office i strefy witryn z ograniczeniami programu Internet Explorer. W poniższych sekcjach opisano, jak działają różne funkcje zabezpieczeń:
@@ -62,7 +64,7 @@ ms.locfileid: "62978608"
 ### <a name="document-level-solutions"></a>Rozwiązania na poziomie dokumentu
  W pełni kwalifikowana ścieżka dokumentu musi zostać dodana do listy zaufanych lokalizacji w aplikacji Microsoft Office, jeśli tworzysz następujące typy projektów:
 
-- Rozwiązania na poziomie dokumentu, które znajdują się w sieciowym udziale plików, np. * \\ \servername\sharename*.
+- Rozwiązania na poziomie dokumentu, które znajdują się w sieciowym udziale plików, np. *\\ \servername\sharename*.
 
 - Rozwiązania na poziomie dokumentu dla programu Word, które używają plików *doc* lub *docm* .
 
@@ -71,7 +73,7 @@ ms.locfileid: "62978608"
 ### <a name="temporary-certificates"></a>Certyfikaty tymczasowe
  Program Visual Studio tworzy certyfikat tymczasowy, jeśli certyfikat podpisywania jeszcze nie istnieje. Tego certyfikatu tymczasowego należy używać tylko podczas opracowywania i zakupić oficjalny certyfikat do wdrożenia.
 
- Tymczasowy certyfikat jest generowany po pierwszym skompilowaniu projektu pakietu Office. Przy następnym naciśnięciu klawisza **F5**projekt zostanie odbudowany, ponieważ projekt jest oznaczony jako zmieniony podczas dodawania certyfikatu.
+ Tymczasowy certyfikat jest generowany po pierwszym skompilowaniu projektu pakietu Office. Przy następnym naciśnięciu klawisza **F5** projekt zostanie odbudowany, ponieważ projekt jest oznaczony jako zmieniony podczas dodawania certyfikatu.
 
  Za chwilę może istnieć wiele certyfikatów tymczasowych, dlatego należy wyczyścić tymczasowe certyfikaty sporadycznie.
 

@@ -1,5 +1,7 @@
 ---
 title: Kreator publikacji (Office Development w Visual Studio)
+description: Dowiedz się, jak można użyć Kreatora publikacji do kopiowania plików rozwiązania do określonej lokalizacji, tworzenia plików manifestu i tworzenia programów instalacyjnych w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: be5742533280ab2ff7da04ee287b0534980d9436
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 25821a0f245f2f0ed30fcbfb10137a772dd0dd01
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810983"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528017"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Kreator publikacji (Office Development w Visual Studio)
   Użyj **Kreatora publikacji** do kopiowania plików rozwiązania do określonej lokalizacji, tworzenia plików manifestu i tworzenia programu instalacyjnego.
@@ -39,14 +41,14 @@ ms.locfileid: "90810983"
 
 - Ścieżka względna lub bezwzględna w standardowym formacie systemu Windows, na przykład *C:\Deploy\MyApplication* lub *\MyApplication*.
 
-- Ścieżka Universal Naming Convention (UNC), taka jak * \\ \ServerName\MyApplication \\ *.
+- Ścieżka Universal Naming Convention (UNC), taka jak *\\ \ServerName\MyApplication \\*.
 
 - Adres URL witryny sieci Web, na przykład `http://www.contoso.com/MyApplication` .
 
   Domyślnie lokalizacja publikowania to *http://localhost/projectname/* , czy program IIS jest zainstalowany, lub polecenie Publikuj \ katalog, jeśli nie zainstalowano usług IIS.
 
 > [!NOTE]
-> Jeśli na komputerze docelowym jest uruchomiony system Windows Vista, należy wziąć pod uwagę więcej zagadnień. Aby użyć opcji publikowania lokalnego, musisz być administratorem na komputerze z systemem Windows Vista. Ponadto domyślną lokalizacją jest zawsze katalog *publikowania \\ * , niezależnie od tego, czy są zainstalowane usługi IIS.
+> Jeśli na komputerze docelowym jest uruchomiony system Windows Vista, należy wziąć pod uwagę więcej zagadnień. Aby użyć opcji publikowania lokalnego, musisz być administratorem na komputerze z systemem Windows Vista. Ponadto domyślną lokalizacją jest zawsze katalog *publikowania \\* , niezależnie od tego, czy są zainstalowane usługi IIS.
 
 ## <a name="what-is-the-default-installation-path-on-end-user-computers"></a>Jaka jest domyślna ścieżka instalacji na komputerach użytkowników końcowych?
  Ścieżka instalacji jest opcjonalna. Możesz ustawić ścieżkę instalacji później, jeśli wolisz. Aby uzyskać szczegółowe informacje, zobacz [jak to zrobić: zmiana ścieżki instalacji rozwiązania pakietu Office](/previous-versions/bb608626(v=vs.110)).

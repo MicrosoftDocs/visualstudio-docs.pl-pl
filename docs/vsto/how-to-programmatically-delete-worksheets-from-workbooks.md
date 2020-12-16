@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: programowe usuwanie arkuszy ze skoroszytów'
+description: Dowiedz się, jak można programowo usunąć dowolny arkusz w skoroszycie programu Microsoft Excel przy użyciu elementu hosta arkusza, na przykład.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5fbcffdf56ea2168974658477579428ef546f061
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e9d1330c454e0b9b9f5ad4624c18e4ed1055343d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585252"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527780"
 ---
 # <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>Instrukcje: programowe usuwanie arkuszy ze skoroszytów
   Możesz usunąć dowolny arkusz w skoroszycie. Aby usunąć arkusz, użyj elementu hosta arkusza lub uzyskaj dostęp do arkusza przy użyciu kolekcji arkusze skoroszytu.

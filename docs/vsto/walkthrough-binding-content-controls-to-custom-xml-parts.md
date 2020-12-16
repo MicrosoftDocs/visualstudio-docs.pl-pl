@@ -1,5 +1,7 @@
 ---
 title: 'Wskazówki: powiązywanie kontrolek zawartości z niestandardowymi częściami XML'
+description: Dowiedz się, jak powiązać kontrolki zawartości w dostosowaniu na poziomie dokumentu dla programu Word na dane XML, które są przechowywane w dokumencie.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,19 +19,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a80488408f680530ed3c9b4094b2997e97484ce3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a82a8fd98bbf1a735661f3e1cf01e2452eb7ee58
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544446"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527960"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>Wskazówki: powiązywanie kontrolek zawartości z niestandardowymi częściami XML
   W tym instruktażu pokazano, jak powiązać kontrolki zawartości w dostosowaniu na poziomie dokumentu dla programu Word na dane XML, które są przechowywane w dokumencie.
 
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
 
- Program Word umożliwia przechowywanie danych XML o nazwach *niestandardowych części XML*w dokumencie. Można kontrolować wyświetlanie tych danych przez wiązanie kontrolek zawartości do elementów w niestandardowym składniku XML. Przykładowy dokument w tym instruktażu przedstawia informacje o pracownikach, które są przechowywane w niestandardowym składniku XML. Po otwarciu dokumentu kontrolki zawartości wyświetlają wartości elementów XML. Wszelkie zmiany wprowadzane do tekstu w kontrolkach zawartości są zapisywane w niestandardowym składniku XML.
+ Program Word umożliwia przechowywanie danych XML o nazwach *niestandardowych części XML* w dokumencie. Można kontrolować wyświetlanie tych danych przez wiązanie kontrolek zawartości do elementów w niestandardowym składniku XML. Przykładowy dokument w tym instruktażu przedstawia informacje o pracownikach, które są przechowywane w niestandardowym składniku XML. Po otwarciu dokumentu kontrolki zawartości wyświetlają wartości elementów XML. Wszelkie zmiany wprowadzane do tekstu w kontrolkach zawartości są zapisywane w niestandardowym składniku XML.
 
  W instruktażu przedstawiono następujące zagadnienia:
 
@@ -70,7 +72,7 @@ ms.locfileid: "85544446"
 
 1. W dokumencie programu Word, który jest hostowany w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektancie, na wstążce wybierz kartę **Wstawianie** .
 
-2. W grupie **tabele** wybierz **tabelę**i Wstaw tabelę z 2 kolumnami i 3 wierszami.
+2. W grupie **tabele** wybierz **tabelę** i Wstaw tabelę z 2 kolumnami i 3 wierszami.
 
 3. Wpisz tekst w pierwszej kolumnie, tak aby wyglądał następująco:
 
@@ -110,7 +112,7 @@ ms.locfileid: "85544446"
 
 2. W okienku **Szablony** wybierz pozycję **plik XML**.
 
-3. Nazwij plik **employees.xml**a następnie wybierz przycisk **Dodaj** .
+3. Nazwij plik **employees.xml** a następnie wybierz przycisk **Dodaj** .
 
      Plik **employees.xml** zostanie otwarty w edytorze kodu.
 
@@ -127,7 +129,7 @@ ms.locfileid: "85544446"
     </employees>
     ```
 
-5. W **Eksplorator rozwiązań**wybierz plik **employees.xml** .
+5. W **Eksplorator rozwiązań** wybierz plik **employees.xml** .
 
 6. W oknie **Właściwości** wybierz właściwość **Akcja kompilacji** , a następnie zmień wartość na **zasób osadzony**.
 
@@ -148,7 +150,7 @@ ms.locfileid: "85544446"
 
      Zostanie otwarty projektant schematów.
 
-4. W **Eksplorator rozwiązań**Otwórz menu skrótów dla  **Employees. xsd**, a następnie wybierz polecenie  **Wyświetl kod**.
+4. W **Eksplorator rozwiązań** Otwórz menu skrótów dla  **Employees. xsd**, a następnie wybierz polecenie  **Wyświetl kod**.
 
 5. Zastąp zawartość pliku **Employees. xsd** następującym schematem.
 
@@ -225,7 +227,7 @@ ms.locfileid: "85544446"
 
 ### <a name="to-add-a-custom-xml-part-to-the-document"></a>Aby dodać niestandardową część XML do dokumentu
 
-1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla  **ThisDocument.cs** lub **ThisDocument. vb**, a następnie wybierz polecenie **Wyświetl kod**.
+1. W **Eksplorator rozwiązań** Otwórz menu skrótów dla  **ThisDocument.cs** lub **ThisDocument. vb**, a następnie wybierz polecenie **Wyświetl kod**.
 
 2. Dodaj następujące deklaracje do `ThisDocument` klasy. Ten kod deklaruje kilka obiektów, które zostaną użyte do dodania niestandardowej części XML do dokumentu.
 
@@ -277,7 +279,7 @@ ms.locfileid: "85544446"
     |-|-|
     |**Nazwa pracownika**|**Karina Leal**|
     |**Data zatrudnienia**|**1 kwietnia 1999**|
-    |**Tytuł**|**Manager**|
+    |**Tytuł**|**Menedżer**|
 
 3. Wybierz komórkę z prawej strony komórki **Nazwa pracownika** i wpisz inną nazwę.
 

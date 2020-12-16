@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: wywoływanie kodu z VBA w projekcie Visual C#'
+description: Dowiedz się, jak wywołać metodę w dostosowaniu na poziomie dokumentu dla programu Microsoft Excel z kodu Visual Basic for Applications (VBA) w skoroszycie.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1c089a3156d005da7d49976f6c96bb10daac0662
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: daf25a1e2e80d2c5918d0d11c4b31c75a2e40c87
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "92297945"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527305"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>Przewodnik: wywoływanie kodu z VBA w projekcie Visual C#
   W tym instruktażu pokazano, jak wywołać metodę w dostosowaniu na poziomie dokumentu dla Microsoft Office Excel z kodu Visual Basic for Applications (VBA) w skoroszycie. Procedura obejmuje trzy podstawowe kroki: Dodaj metodę do `Sheet1` klasy Item hosta, Uwidocznij metodę w kodzie VBA w skoroszycie, a następnie Wywołaj metodę z kodu VBA w skoroszycie.
@@ -153,7 +155,7 @@ ms.locfileid: "92297945"
 
 ### <a name="to-add-a-method-to-the-sheet1-class"></a>Aby dodać metodę do klasy Arkusz1
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **Sheet1.cs**, a następnie kliknij pozycję **Wyświetl kod**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję **Sheet1.cs**, a następnie kliknij pozycję **Wyświetl kod**.
 
      Plik **Sheet1.cs** zostanie otwarty w edytorze kodu.
 
@@ -195,7 +197,7 @@ ms.locfileid: "92297945"
 
 ### <a name="to-expose-the-method-to-vba-code"></a>Aby udostępnić metodę do kodu VBA
 
-1. W **Eksplorator rozwiązań**kliknij dwukrotnie pozycję **Sheet1.cs**.
+1. W **Eksplorator rozwiązań** kliknij dwukrotnie pozycję **Sheet1.cs**.
 
      Plik **WorkbookWithVBA** zostanie otwarty w projektancie, a obszar Arkusz1 widoczny.
 

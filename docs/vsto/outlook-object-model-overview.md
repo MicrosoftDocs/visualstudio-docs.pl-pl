@@ -1,5 +1,7 @@
 ---
 title: Model obiektów programu Outlook — Omówienie
+description: Dowiedz się, w jaki sposób można korzystać z obiektów dostarczanych przez model obiektów programu Outlook w celu opracowania dodatków narzędzi VSTO dla programu Microsoft Outlook.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6545815a0a24a3ba8579298151194fdd81edee77
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 83ada85ba346e83e5bc5ebc01e91b11be0e844e1
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985691"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528056"
 ---
 # <a name="outlook-object-model-overview"></a>Model obiektów programu Outlook — Omówienie
   Aby opracowywać dodatki narzędzi VSTO dla Microsoft Office Outlook, można korzystać z obiektów dostarczanych przez model obiektów programu Outlook. Model obiektów programu Outlook zawiera klasy i interfejsy, które reprezentują elementy w interfejsie użytkownika. Na przykład <xref:Microsoft.Office.Interop.Outlook.Application> obiekt reprezentuje całą aplikację, <xref:Microsoft.Office.Interop.Outlook.Folder> obiekt reprezentuje folder zawierający wiadomości e-mail lub inne elementy, a <xref:Microsoft.Office.Interop.Outlook.MailItem> obiekt reprezentuje wiadomość e-mail.
@@ -90,14 +92,14 @@ ms.locfileid: "72985691"
 ### <a name="folder-object"></a>Obiekt folderu
  <xref:Microsoft.Office.Interop.Outlook.Folder>Obiekt reprezentuje folder zawierający wiadomości e-mail, kontakty, zadania i inne elementy. Program Outlook udostępnia 16 <xref:Microsoft.Office.Interop.Outlook.Folder> obiektów domyślnych.
 
- Obiekty domyślne <xref:Microsoft.Office.Interop.Outlook.Folder> są definiowane przez <xref:Microsoft.Office.Interop.Outlook.OlDefaultFolders> wartości wyliczenia. Przykład:
+ Obiekty domyślne <xref:Microsoft.Office.Interop.Outlook.Folder> są definiowane przez <xref:Microsoft.Office.Interop.Outlook.OlDefaultFolders> wartości wyliczenia. Na przykład
 
  Microsoft. Office. Interop. Outlook. OlDefaultFolders. olFolderInbox odpowiada folderowi **skrzynki odbiorczej** w programie Outlook.
 
  Aby zapoznać się z przykładem, który pokazuje, jak uzyskać dostęp do domyślnych <xref:Microsoft.Office.Interop.Outlook.Folder> i utworzyć nowy <xref:Microsoft.Office.Interop.Outlook.Folder> , zobacz [How to: programowe tworzenie niestandardowych elementów folderów](../vsto/how-to-programmatically-create-custom-folder-items.md).
 
 ### <a name="mailitem-object"></a>Obiekt MailItem
- <xref:Microsoft.Office.Interop.Outlook.MailItem>Obiekt reprezentuje wiadomość e-mail. <xref:Microsoft.Office.Interop.Outlook.MailItem> obiekty są zwykle w folderach, takich jak **Skrzynka odbiorcza**, **wysłane elementy**i **Skrzynka nadawcza**. <xref:Microsoft.Office.Interop.Outlook.MailItem> Opisuje właściwości i metody, których można użyć do tworzenia i wysyłania wiadomości e-mail.
+ <xref:Microsoft.Office.Interop.Outlook.MailItem>Obiekt reprezentuje wiadomość e-mail. <xref:Microsoft.Office.Interop.Outlook.MailItem> obiekty są zwykle w folderach, takich jak **Skrzynka odbiorcza**, **wysłane elementy** i **Skrzynka nadawcza**. <xref:Microsoft.Office.Interop.Outlook.MailItem> Opisuje właściwości i metody, których można użyć do tworzenia i wysyłania wiadomości e-mail.
 
  Przykład pokazujący sposób tworzenia wiadomości e-mail można znaleźć w temacie [How to: programowe tworzenie elementu poczty e-mail](../vsto/how-to-programmatically-create-an-e-mail-item.md).
 
@@ -127,7 +129,7 @@ ms.locfileid: "72985691"
 ### <a name="vba-object-model-reference"></a>Odwołanie do modelu obiektów VBA
  Dokumentacja modelu obiektów VBA dokumentuje model obiektów programu Outlook, który jest udostępniany w kodzie Visual Basic for Applications (VBA). Aby uzyskać więcej informacji, zobacz temat informacje o [modelu obiektów w programie Outlook 2010](/office/vba/api/overview/Outlook/object-model).
 
- Wszystkie obiekty i elementy członkowskie w odniesieniu do modelu obiektów VBA odpowiadają typom i członkom w PIAu programu Outlook. Na przykład obiekt inspektora w odniesieniu do modelu obiektów VBA odnosi się do <xref:Microsoft.Office.Interop.Outlook.Inspector> obiektu w Piau programu Outlook. Mimo że dokumentacja modelu obiektów VBA zawiera przykłady kodu dla większości właściwości, metod i zdarzeń, należy przetłumaczyć kod VBA w tym odwołaniu do Visual Basic lub Visual C#, jeśli chcesz użyć ich w projekcie dodatku VSTO dla programu Outlook utworzonym przy użyciu programu Visual Studio.
+ Wszystkie obiekty i elementy członkowskie w odniesieniu do modelu obiektów VBA odpowiadają typom i członkom w PIAu programu Outlook. Na przykład obiekt inspektora w odniesieniu do modelu obiektów VBA odnosi się do <xref:Microsoft.Office.Interop.Outlook.Inspector> obiektu w Piau programu Outlook. Mimo że dokumentacja modelu obiektów VBA zawiera przykłady kodu dla większości właściwości, metod i zdarzeń, należy przetłumaczyć kod języka VBA w tym odwołaniu do Visual Basic lub Visual C#, jeśli chcesz użyć ich w projekcie Add-In VSTO programu Outlook utworzonym przy użyciu programu Visual Studio.
 
 ### <a name="related-topics"></a>Powiązane tematy
 

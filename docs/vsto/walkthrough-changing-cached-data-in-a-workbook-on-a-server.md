@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: zmiana danych buforowanych w skoroszycie na serwerze'
+description: Dowiedz się, jak zmodyfikować zestaw danych, który jest buforowany w skoroszycie programu Microsoft Excel bez uruchamiania programu Excel przy użyciu klasy ServerDocument.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 08/14/2019
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 16d3d69482476149b9a340cabe81e957f39ef6f8
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 01ae4894d76e22f619bf498b4ac6a53f1232b5d5
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584337"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527268"
 ---
 # <a name="walkthrough-change-cached-data-in-a-workbook-on-a-server"></a>Przewodnik: zmiana danych buforowanych w skoroszycie na serwerze
   W tym instruktażu przedstawiono sposób modyfikowania zestawu danych, który jest buforowany w Microsoft Office skoroszycie programu Excel bez uruchamiania programu Excel przy użyciu <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> klasy.
@@ -84,7 +86,7 @@ ms.locfileid: "91584337"
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje projekt **AdventureWorksDataSet** do **Eksplorator rozwiązań** i otwiera plik kodu **Class1.cs** lub **Class1. vb** .
 
-9. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **Class1.cs** lub **Class1. vb**, a następnie kliknij polecenie **Usuń**. Ten plik nie jest potrzebny do tego przewodnika.
+9. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję **Class1.cs** lub **Class1. vb**, a następnie kliknij polecenie **Usuń**. Ten plik nie jest potrzebny do tego przewodnika.
 
 ## <a name="define-a-dataset-in-the-class-library-project"></a>Zdefiniuj zestaw danych w projekcie biblioteki klas
  Zdefiniuj zestaw danych, który zawiera dane z bazy danych AdventureWorksLT dla SQL Server 2005. W dalszej części tego przewodnika odwołujesz się do tego zestawu danych z projektu skoroszytu programu Excel i projektu aplikacji konsolowej.
@@ -93,9 +95,9 @@ ms.locfileid: "91584337"
 
 ### <a name="to-define-a-typed-dataset-in-the-class-library-project"></a>Aby zdefiniować określony zestaw danych w projekcie biblioteki klas
 
-1. W **Eksplorator rozwiązań**kliknij projekt **AdventureWorksDataSet** .
+1. W **Eksplorator rozwiązań** kliknij projekt **AdventureWorksDataSet** .
 
-2. Jeśli okno **źródła danych** nie jest widoczne, Wyświetl je na pasku menu, wybierając opcję **Wyświetl**  >  **inne**  >  **źródła danych**systemu Windows.
+2. Jeśli okno **źródła danych** nie jest widoczne, Wyświetl je na pasku menu, wybierając opcję **Wyświetl**  >  **inne**  >  **źródła danych** systemu Windows.
 
 3. Wybierz pozycję **Dodaj nowe źródło danych** , aby uruchomić **Kreatora konfiguracji źródła danych**.
 
@@ -109,7 +111,7 @@ ms.locfileid: "91584337"
 
 7. Na stronie **Wybierz obiekty bazy danych** rozwiń węzeł **tabele** i wybierz pozycję **produkt (tabeli SalesLT)**.
 
-8. Kliknij przycisk **Zakończ**.
+8. Kliknij przycisk **Finish** (Zakończ).
 
     Plik *AdventureWorksLTDataSet. xsd* zostanie dodany do projektu **AdventureWorksDataSet** . Ten plik definiuje następujące elementy:
 
@@ -119,7 +121,7 @@ ms.locfileid: "91584337"
 
      Oba te obiekty będą używane w dalszej części tego przewodnika.
 
-9. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **AdventureWorksDataSet** , a następnie kliknij pozycję **Kompiluj**.
+9. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję **AdventureWorksDataSet** , a następnie kliknij pozycję **Kompiluj**.
 
      Upewnij się, że projekt kompiluje się bez błędów.
 
@@ -128,7 +130,7 @@ ms.locfileid: "91584337"
 
 ### <a name="to-create-the-excel-workbook-project"></a>Aby utworzyć projekt skoroszytu programu Excel
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy rozwiązanie **AdventureWorksDataSet** , wskaż polecenie **Dodaj**, a następnie kliknij pozycję **Nowy projekt**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy rozwiązanie **AdventureWorksDataSet** , wskaż polecenie **Dodaj**, a następnie kliknij pozycję **Nowy projekt**.
 
 2. W okienku szablony rozwiń pozycję **Visual C#** lub **Visual Basic**, a następnie rozwiń węzeł **Office**.
 
@@ -151,7 +153,7 @@ ms.locfileid: "91584337"
 
 ### <a name="to-add-the-dataset-to-the-data-sources-in-the-excel-workbook-project"></a>Aby dodać zestaw danych do źródeł danych w projekcie skoroszytu programu Excel
 
-1. W **Eksplorator rozwiązań**kliknij dwukrotnie pozycję **Sheet1.cs** lub **Arkusz1. vb** w projekcie **AdventureWorksReport** .
+1. W **Eksplorator rozwiązań** kliknij dwukrotnie pozycję **Sheet1.cs** lub **Arkusz1. vb** w projekcie **AdventureWorksReport** .
 
      Skoroszyt zostanie otwarty w projektancie.
 
@@ -200,7 +202,7 @@ ms.locfileid: "91584337"
 
 ### <a name="to-initialize-the-dataset-in-the-workbook"></a>Aby zainicjować zestaw danych w skoroszycie
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy plik **Sheet1.cs** lub **Arkusz1. vb** , a następnie kliknij polecenie **Wyświetl kod**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy plik **Sheet1.cs** lub **Arkusz1. vb** , a następnie kliknij polecenie **Wyświetl kod**.
 
 2. Zastąp `Sheet1_Startup` procedurę obsługi zdarzeń poniższym kodem. Ten kod używa instancji `ProductTableAdapter` klasy, która jest zdefiniowana w projekcie **AdventureWorksDataSet** , aby wypełnić buforowany zestaw danych danymi, jeśli jest to obecnie puste.
 
@@ -212,7 +214,7 @@ ms.locfileid: "91584337"
 
 ### <a name="to-build-and-run-the-project"></a>Aby skompilować i uruchomić projekt
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt **AdventureWorksReport** , wybierz polecenie **Debuguj**, a następnie kliknij polecenie **Uruchom nowe wystąpienie**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt **AdventureWorksReport** , wybierz polecenie **Debuguj**, a następnie kliknij polecenie **Uruchom nowe wystąpienie**.
 
      Projekt został skompilowany, a skoroszyt zostanie otwarty w programie Excel. Sprawdź następujące informacje:
 
@@ -229,7 +231,7 @@ ms.locfileid: "91584337"
 
 ### <a name="to-create-the-console-application-project"></a>Aby utworzyć projekt aplikacji konsolowej
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy rozwiązanie **AdventureWorksDataSet** , wskaż polecenie **Dodaj**, a następnie kliknij pozycję **Nowy projekt**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy rozwiązanie **AdventureWorksDataSet** , wskaż polecenie **Dodaj**, a następnie kliknij pozycję **Nowy projekt**.
 
 2. W okienku **typy projektów** rozwiń pozycję **Visual C#** lub **Visual Basic**, a następnie kliknij pozycję **Windows**.
 
@@ -246,13 +248,13 @@ ms.locfileid: "91584337"
 
 ### <a name="to-change-data-in-the-cached-dataset"></a>Aby zmienić dane w buforowanym zestawie danych
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt **datawrite** i kliknij polecenie **Dodaj odwołanie**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt **datawrite** i kliknij polecenie **Dodaj odwołanie**.
 
 2. Na karcie **.NET** wybierz pozycję **Microsoft. VisualStudio. Tools. Applications**.
 
 3. Kliknij przycisk **OK**.
 
-4. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt **datawrite** i kliknij polecenie **Dodaj odwołanie**.
+4. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt **datawrite** i kliknij polecenie **Dodaj odwołanie**.
 
 5. Na karcie **projekty** wybierz pozycję **AdventureWorksDataSet**, a następnie kliknij przycisk **OK**.
 
@@ -290,7 +292,7 @@ ms.locfileid: "91584337"
      [!code-csharp[Trin_CachedDataWalkthroughs#7](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#7)]
      [!code-vb[Trin_CachedDataWalkthroughs#7](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#7)]
 
-10. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt **datawrite** , wskaż polecenie **Debuguj**, a następnie kliknij polecenie **Uruchom nowe wystąpienie**.
+10. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt **datawrite** , wskaż polecenie **Debuguj**, a następnie kliknij polecenie **Uruchom nowe wystąpienie**.
 
      Aplikacja konsolowa wyświetla komunikaty, podczas gdy odczytuje buforowany zestaw danych do lokalnego zestawu danych, modyfikuje ceny produktu w lokalnym zestawie danych i zapisuje nowe wartości do buforowanego zestawu danych. Naciśnij klawisz **Enter** , aby zamknąć aplikację.
 

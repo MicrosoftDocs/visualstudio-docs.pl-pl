@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: wywoływanie kodu w dodatku VSTO z języka VBA'
+description: Dowiedz się, jak uwidocznić obiekt w dodatku VSTO do innych rozwiązań Microsoft Office, w tym Visual Basic for Applications (VBA) i dodatków VSTO dla modelu COM.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6fdbd2cf85086bac0aa7bb56c128a7ad6fe36f94
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0cbf03ef234ea6cf4eab790d96082d23b7ed5199
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72650783"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527281"
 ---
 # <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>Przewodnik: wywoływanie kodu w dodatku VSTO z języka VBA
   W tym instruktażu pokazano, jak uwidocznić obiekt w dodatku narzędzi VSTO do innych rozwiązań Microsoft Office, w tym Visual Basic for Applications (VBA) i dodatków VSTO dla modelu COM.
@@ -54,7 +56,7 @@ ms.locfileid: "72650783"
 
 ### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt
 
-1. Utwórz projekt dodatku VSTO programu Excel o nazwie **ExcelImportData**przy użyciu szablonu projektu dodatku programu Excel VSTO. Aby uzyskać więcej informacji, zobacz [How to: Create Office projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Utwórz projekt dodatku VSTO programu Excel o nazwie **ExcelImportData** przy użyciu szablonu projektu dodatku programu Excel VSTO. Aby uzyskać więcej informacji, zobacz [How to: Create Office projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] otwiera plik kodu **ThisAddIn.cs** lub **ThisAddIn. vb** i dodaje projekt **ExcelImportData** do **Eksplorator rozwiązań**.
 
@@ -88,11 +90,11 @@ ms.locfileid: "72650783"
 
 ### <a name="to-expose-the-addinutilities-class-to-other-office-solutions"></a>Aby uwidocznić klasę AddInUtilities w innych rozwiązaniach pakietu Office
 
-1. W **Eksplorator rozwiązań**rozwiń węzeł **Excel**.
+1. W **Eksplorator rozwiązań** rozwiń węzeł **Excel**.
 
 2. Kliknij prawym przyciskiem myszy pozycję **ThisAddIn.cs** lub **ThisAddIn. vb**, a następnie kliknij polecenie **Wyświetl kod**.
 
-3. Dodaj następujący kod do `ThisAddIn` klasy.
+3. Dodaj poniższy kod do klasy `ThisAddIn`.
 
      [!code-csharp[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/ThisAddIn.cs#1)]
      [!code-vb[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/ThisAddIn.vb#1)]
@@ -108,7 +110,7 @@ ms.locfileid: "72650783"
 
 1. Naciśnij klawisz **F5** , aby uruchomić projekt.
 
-2. W programie Excel Zapisz aktywny skoroszyt jako skoroszyt programu Excel z obsługą makr (*. xlsm). Zapisz ją w wygodnej lokalizacji, na przykład na pulpicie.
+2. W programie Excel Zapisz aktywny skoroszyt jako skoroszyt programu Excel Macro-Enabled (*. xlsm). Zapisz ją w wygodnej lokalizacji, na przykład na pulpicie.
 
 3. Na wstążce kliknij kartę **deweloper** .
 

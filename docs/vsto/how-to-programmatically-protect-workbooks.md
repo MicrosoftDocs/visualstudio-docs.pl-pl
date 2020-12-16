@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: programowane włączanie ochrony skoroszytów'
+description: Dowiedz się, jak chronić skoroszyt programu Microsoft Excel, aby użytkownicy nie mogli dodawać ani usuwać arkuszy, a także programowo chronić skoroszyt.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee7444c63c2d774e9b22ea612049f09429729c79
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b35b0fc234c3015275650ddb51e8ea3011c97a6
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537634"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528290"
 ---
 # <a name="how-to-programmatically-protect-workbooks"></a>Instrukcje: programowane włączanie ochrony skoroszytów
   Możesz chronić Microsoft Office skoroszyt programu Excel, aby użytkownicy nie mogli dodawać ani usuwać arkuszy, a także programowo wyłączyć ochronę skoroszytu. Opcjonalnie możesz określić hasło, wskazać, czy ma być chroniona struktura (w związku z czym użytkownicy nie mogą przenosić arkuszy) i wskazać, czy ma być chroniona w systemie Windows.

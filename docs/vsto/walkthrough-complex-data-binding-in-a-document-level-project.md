@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: złożone powiązanie danych w projekcie na poziomie dokumentu'
+description: Dowiedz się, w jaki sposób można powiązać wiele komórek w arkuszu programu Microsoft Excel do pól w bazie danych Northwind SQL Server.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7aba307bcd76cc055e42c11418d42f3dd0cfba1f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 988394595e8aa4710a22e1fedf22a921481c7396
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584324"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527112"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Przewodnik: złożone powiązanie danych w projekcie na poziomie dokumentu
   W tym instruktażu przedstawiono podstawowe powiązanie złożonych danych w projekcie na poziomie dokumentu. W Microsoft Office arkuszu programu Excel można powiązać wiele komórek z polami w bazie danych Northwind SQL Server.
@@ -65,7 +67,7 @@ ms.locfileid: "91584324"
 
 ### <a name="to-create-the-data-source"></a>Aby utworzyć źródło danych
 
-1. Jeśli okno **źródła danych** nie jest widoczne, Wyświetl je na pasku menu, wybierając opcję **Wyświetl**  >  **inne**  >  **źródła danych**systemu Windows.
+1. Jeśli okno **źródła danych** nie jest widoczne, Wyświetl je na pasku menu, wybierając opcję **Wyświetl**  >  **inne**  >  **źródła danych** systemu Windows.
 
 2. Wybierz pozycję **Dodaj nowe źródło danych** , aby uruchomić **Kreatora konfiguracji źródła danych**.
 
@@ -81,7 +83,7 @@ ms.locfileid: "91584324"
 
 8. Zaznacz pole wyboru obok tabeli **Employees** .
 
-9. Kliknij przycisk **Zakończ**.
+9. Kliknij przycisk **Finish** (Zakończ).
 
    Kreator dodaje tabelę **Employees** do okna **źródła danych** . Dodaje również typ DataSet do projektu, który jest widoczny w **Eksplorator rozwiązań**.
 
@@ -102,11 +104,11 @@ ms.locfileid: "91584324"
 
 5. Przeciągnij tabelę **Employees** do komórki **a6**.
 
-     <xref:Microsoft.Office.Tools.Excel.ListObject> `EmployeesListObject` W komórce **a6**zostanie utworzony formant o nazwie. W tym samym czasie <xref:System.Windows.Forms.BindingSource> nazwa `EmployeesBindingSource` , karta tabeli i <xref:System.Data.DataSet> wystąpienie są dodawane do projektu. Formant jest powiązany z <xref:System.Windows.Forms.BindingSource> , który z kolei jest powiązany z <xref:System.Data.DataSet> wystąpieniem.
+     <xref:Microsoft.Office.Tools.Excel.ListObject> `EmployeesListObject` W komórce **a6** zostanie utworzony formant o nazwie. W tym samym czasie <xref:System.Windows.Forms.BindingSource> nazwa `EmployeesBindingSource` , karta tabeli i <xref:System.Data.DataSet> wystąpienie są dodawane do projektu. Formant jest powiązany z <xref:System.Windows.Forms.BindingSource> , który z kolei jest powiązany z <xref:System.Data.DataSet> wystąpieniem.
 
 ### <a name="to-add-a-button"></a>Aby dodać przycisk
 
-1. Na karcie **Formanty standardowe** **przybornika**Dodaj <xref:System.Windows.Forms.Button> kontrolkę do komórki **a4** arkusza.
+1. Na karcie **Formanty standardowe** **przybornika** Dodaj <xref:System.Windows.Forms.Button> kontrolkę do komórki **a4** arkusza.
 
    Następnym krokiem jest dodanie tekstu do przycisku po otwarciu arkusza.
 
@@ -115,7 +117,7 @@ ms.locfileid: "91584324"
 
 ### <a name="to-initialize-the-control"></a>Aby zainicjować formant
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **Arkusz1. vb** lub **Sheet1.cs**, a następnie kliknij polecenie **Wyświetl kod** w menu skrótów.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję **Arkusz1. vb** lub **Sheet1.cs**, a następnie kliknij polecenie **Wyświetl kod** w menu skrótów.
 
 2. Dodaj następujący kod do metody, `Sheet1_Startup` Aby ustawić tekst dla b `utton` .
 
@@ -175,7 +177,7 @@ ms.locfileid: "91584324"
 
 1. Zaznacz komórkę wewnątrz obiektu listy.
 
-    Nowy wiersz pojawia się u dołu listy, a gwiazdka ( **\*** ) w pierwszej komórce nowego wiersza.
+    Nowy wiersz pojawia się u dołu listy, a gwiazdka (* *\** _) w pierwszej komórce nowego wiersza.
 
 2. Dodaj następujące informacje w pustym wierszu.
 
@@ -185,7 +187,7 @@ ms.locfileid: "91584324"
 
 ### <a name="to-delete-rows"></a>Aby usunąć wiersze
 
-- Kliknij prawym przyciskiem myszy liczbę 16 (wiersz 16) z lewej strony arkusza, a następnie kliknij pozycję **Usuń**.
+- Kliknij prawym przyciskiem myszy liczbę 16 (wiersz 16) z lewej strony arkusza, a następnie kliknij _ * Delete * *.
 
 ### <a name="to-sort-the-rows-in-the-list"></a>Aby posortować wiersze na liście
 

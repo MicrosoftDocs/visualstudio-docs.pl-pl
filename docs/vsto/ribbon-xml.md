@@ -1,5 +1,7 @@
 ---
 title: XML — Wstążka
+description: Dowiedz się, jak używać elementu wstążki (XML), jeśli chcesz dostosować Wstążkę w sposób, który nie jest obsługiwany przez Wstążkę (Projektant wizualizacji).
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e9ce2388dbf61ef3af524f0debc776891dca004f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c9e1cf4c6af266495b3d85d96aa8cce1697cca7
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64792755"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528423"
 ---
 # <a name="ribbon-xml"></a>XML — Wstążka
   Element wstążki (XML) umożliwia dostosowanie wstążki przy użyciu kodu XML. Użyj elementu wstążki (XML), jeśli chcesz dostosować Wstążkę w sposób, który nie jest obsługiwany przez Wstążkę (projektant graficzny). Aby zapoznać się z porównaniem możliwości poszczególnych elementów, zobacz [Omówienie wstążki](../vsto/Ribbon-overview.md).
@@ -45,7 +47,7 @@ ms.locfileid: "64792755"
   Domyślnie te pliki dodają grupę niestandardową do karty **Dodatki** na Wstążce.
 
 ## <a name="display-the-custom-ribbon-in-a-microsoft-office-application"></a>Wyświetlanie Wstążki niestandardowej w aplikacji Microsoft Office
- Po dodaniu elementu **wstążki (XML)** do projektu, musisz dodać kod do klasy **ThisAddIn**, **ThisWorkbook**lub **ThisDocument** , która zastępuje `CreateRibbonExtensibilityObject` metodę i zwraca klasę XML wstążki do aplikacji pakietu Office.
+ Po dodaniu elementu **wstążki (XML)** do projektu, musisz dodać kod do klasy **ThisAddIn**, **ThisWorkbook** lub **ThisDocument** , która zastępuje `CreateRibbonExtensibilityObject` metodę i zwraca klasę XML wstążki do aplikacji pakietu Office.
 
  Poniższy przykład kodu przesłania `CreateRibbonExtensibilityObject` metodę i zwraca klasę XML wstążki o nazwie Moja wstążka.
 

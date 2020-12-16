@@ -1,5 +1,7 @@
 ---
 title: Szablony projektów pakietu Office — omówienie
+description: Dowiedz się, jak narzędzia deweloperskie Microsoft Office w programie Visual Studio zawierają szablony projektów służące do tworzenia różnych typów rozwiązań pakietu Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -30,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d83b04795386cfec80a8a309a9a84da04f6df105
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5e3203eb4bbd7339f5e59ecffea8436b02180b8b
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68926599"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528077"
 ---
 # <a name="office-project-templates-overview"></a>Szablony projektów pakietu Office — omówienie
   Narzędzia deweloperskie Microsoft Office w programie Visual Studio zawierają szablony projektów służące do tworzenia następujących typów rozwiązań pakietu Office:
@@ -164,7 +166,7 @@ ms.locfileid: "68926599"
  Jeśli szablon programu Microsoft Office Word zawiera rozszerzenia kodu zarządzanego, a szablon jest dołączony jako szablon globalny lub ładowany z katalogu Startup programu Word, nie dochodzi do wywołania zestawu projektu. Ponadto dokument nie rozpoznaje formatu szablonu będącego częścią rozwiązania utworzonego dla pakietu Office.
 
 ## <a name="excel-add-ins-xla-files"></a>Dodatki programu Excel (pliki. xla)
- Brak projektu pakietu Office do tworzenia dodatku narzędzi VSTO programu Excel (plik *. xla* ). Istnieje możliwość zapisania skoroszytu jako pliku .xla, jednak operacja ta nie jest obsługiwana i jej nie zalecamy. Jeśli zapiszesz skoroszyt zawierający rozszerzenia kodu zarządzanego jako **Microsoft Office plik dodatku programu Excel ( \* . xla)** , możesz go wybrać w oknie dialogowym **dodatków** , aby zastosować go do innego skoroszytu. W niektórych przypadkach kod zostanie uruchomiony w skoroszycie docelowym po zastosowaniu dodatku VSTO, ale takie użycie rozwiązania pakietu Office nie jest obsługiwane.
+ Brak projektu pakietu Office do tworzenia dodatku narzędzi VSTO programu Excel (plik *. xla* ). Istnieje możliwość zapisania skoroszytu jako pliku .xla, jednak operacja ta nie jest obsługiwana i jej nie zalecamy. Jeśli zapiszesz skoroszyt zawierający rozszerzenia kodu zarządzanego jako plik **Microsoft Office programu Excel Add-In ( \* . xla)** , możesz wybrać go w oknie dialogowym **dodatków** , aby zastosować go do innego skoroszytu. W niektórych przypadkach kod zostanie uruchomiony w skoroszycie docelowym po zastosowaniu dodatku VSTO, ale takie użycie rozwiązania pakietu Office nie jest obsługiwane.
 
 ## <a name="see-also"></a>Zobacz też
 - [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)

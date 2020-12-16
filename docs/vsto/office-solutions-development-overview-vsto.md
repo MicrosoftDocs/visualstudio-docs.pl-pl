@@ -1,5 +1,7 @@
 ---
 title: Omówienie programowania rozwiązań dla pakietu Office (VSTO)
+description: Dowiedz się, jak opracowywać dostosowania znanych Microsoft Office interfejsów użytkownika i narzędzi, takich jak funkcje przetwarzania słów w programie Word i funkcje analizy danych w programie Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c1e9ce9ff2ab0a55de0a7e51325885d86c2fbf1
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 9bb964e90c44c4e0b41e0f09df8931665426dc70
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811022"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527710"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Omówienie programowania rozwiązań dla pakietu Office (VSTO)
   Korzystając z Microsoft Office jako frontonu dla rozwiązań, możesz skorzystać ze znanych Microsoft Office interfejsów użytkownika i narzędzi, takich jak funkcje przetwarzania słów w programie Word, funkcje analizy danych programu Excel i funkcje zarządzania pocztą e-mail w programie Outlook. W programie Visual Studio można opracowywać rozwiązania umożliwiające dostosowywanie aplikacji pakietu Office i dodawanie określonych funkcji potrzebnych dla procesów firmy. Można na przykład obrócić program Word do generatora kontraktu, który składa kontrakty z istniejących części, które mogą być edytowane lub niemożliwe do edycji. W programie Excel można utworzyć zautomatyzowany arkusz budżetu dostosowany do różnych projektów. Użytkownicy mogą również korzystać z rozwiązań pakietu Office w trybie offline, co sprawia, że złożone rozwiązania są bardziej praktyczne niż w przypadku używania architektury opartej na sieci Web.

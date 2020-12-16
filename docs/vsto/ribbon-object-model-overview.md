@@ -1,5 +1,7 @@
 ---
 title: Omówienie modelu obiektów wstążki
+description: Dowiedz się, w jaki sposób Visual Studio Tools pakietu Office Runtime uwidacznia model obiektów o jednoznacznie określonym typie, za pomocą którego można pobierać i ustawiać właściwości kontrolek wstążki w czasie wykonywania.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6ca22704345fefb4944bda7dd9f71942fe8dfb50
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f97bbbab4b867f503e5b5befff27844df8a4b4bc
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71256015"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527983"
 ---
 # <a name="ribbon-object-model-overview"></a>Omówienie modelu obiektów wstążki
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]Uwidacznia model obiektów o jednoznacznie określonym typie, którego można użyć do pobierania i ustawiania właściwości kontrolek wstążki w czasie wykonywania. Na przykład można dynamicznie wypełniać kontrolki menu lub wyświetlać i ukrywać kontrolki w sposób kontekstowy. Możesz również dodawać karty, grupy i kontrolki do wstążki, ale tylko przed załadowaniem Wstążki przez aplikację pakietu Office. Aby uzyskać więcej informacji, zobacz [Ustawianie właściwości, które stają się tylko do odczytu](#SettingReadOnlyProperties).
@@ -34,7 +36,7 @@ ms.locfileid: "71256015"
 ## <a name="ribbon-events"></a><a name="RibbonEvents"></a> Zdarzenia wstążki
  Klasa **wstążki** zawiera trzy następujące zdarzenia:
 
-|Wydarzenie|Opis|
+|Zdarzenie|Opis|
 |-----------|-----------------|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Load>|Uruchamiany, gdy aplikacja pakietu Office załaduje dostosowanie wstążki. <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load>Procedura obsługi zdarzeń jest automatycznie dodawana do pliku kodu wstążki. Użyj tego programu obsługi zdarzeń, aby uruchomić kod niestandardowy podczas ładowania wstążki.|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|Umożliwia buforowanie obrazów na potrzeby dostosowywania wstążki podczas ładowania wstążki. Możesz uzyskać niewielki wzrost wydajności, jeśli piszesz kod w celu buforowania obrazów wstążki w tym obsłudze zdarzeń. Aby uzyskać więcej informacji, zobacz <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>.|
@@ -60,7 +62,7 @@ ms.locfileid: "71256015"
 |**Menu**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|
 |**Separator**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator>|
 |**SplitButton**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|
-|**Tabulator**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|
+|**Tab**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|
 |**ToggleButton**|<xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|
 
  <xref:Microsoft.Office.Tools.Ribbon>Przestrzeń nazw używa prefiksu "wstążka" dla tych typów, aby uniknąć kolizji nazw z nazwami klas kontroli w <xref:System.Windows.Forms> przestrzeni nazw.
@@ -168,7 +170,7 @@ ms.locfileid: "71256015"
 ## <a name="ribbon-control-events"></a>Zdarzenia kontrolki wstążki
  Każda Klasa kontrolki zawiera jedno lub więcej zdarzeń. W poniższej tabeli opisano te zdarzenia.
 
-|Wydarzenie|Opis|
+|Zdarzenie|Opis|
 |-----------|-----------------|
 |Kliknij|Występuje, gdy formant zostanie kliknięty.|
 |TextChanged.|Występuje, gdy zostanie zmieniony tekst pola edycji lub pola kombi.|

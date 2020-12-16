@@ -1,5 +1,7 @@
 ---
 title: Praca z tabelami
+description: Zapoznaj się z procedurami krok po kroku i przykładami kodu dotyczącymi używania modelu obiektów programu Microsoft Word do pracy z tabelami w projektach pakietu Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f1102a996f06634396f8bec3a02400fa952810e5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 27fdc776589879af6757967b18a7cac47f9f66df
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62815355"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526861"
 ---
 # <a name="work-with-tables"></a>Praca z tabelami
   Tematy w tej sekcji zawierają procedury krok po kroku i przykłady kodu umożliwiające używanie modelu obiektów programu Microsoft Office Word do pracy z tabelami w projektach pakietu Office. W niektórych przypadkach sposoby wykonywania tych zadań w dodatkach narzędzia VSTO różnią się od sposobów ich wykonywania w dostosowywaniu na poziomie dokumentu.

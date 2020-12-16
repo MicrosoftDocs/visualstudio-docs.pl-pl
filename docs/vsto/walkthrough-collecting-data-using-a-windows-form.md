@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: zbieranie danych przy użyciu formularza systemu Windows'
+description: Otwórz formularz systemu Windows na podstawie dostosowania na poziomie dokumentu dla programu Microsoft Excel, Zbierz informacje od użytkownika i Zapisz te informacje w komórce arkusza.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 893418ca5eb82e9466ea13a12088b38fd496e695
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58d6f58f732d4a52aade6ff3678842900f1c29cd
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64789833"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527170"
 ---
 # <a name="walkthrough-collect-data-by-using-a-windows-form"></a>Przewodnik: zbieranie danych przy użyciu formularza systemu Windows
   W tym instruktażu pokazano, jak otworzyć formularz systemu Windows na podstawie dostosowania na poziomie dokumentu dla Microsoft Office Excel, zebrać informacje od użytkownika i zapisać te informacje w komórce arkusza.

@@ -1,5 +1,7 @@
 ---
 title: Omówienie wstążki
+description: Dowiedz się, w jaki sposób wstążka jest sposobem organizowania powiązanych poleceń, aby ułatwić ich znalezienie i sposób wyświetlania poleceń jako kontrolek na Wstążce.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 668517705caa7ba6baef0b85305bf4470bc3b26b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ca7f7757cddf89b97f7a374385ea834728f0e975
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985610"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527977"
 ---
 # <a name="ribbon-overview"></a>Omówienie wstążki
   Wstążka jest sposobem organizowania powiązanych poleceń, aby ułatwić ich znalezienie. Polecenia są wyświetlane jako kontrolki na Wstążce. Kontrolki są zorganizowane w *grupy* wzdłuż górnej krawędzi okna aplikacji. Powiązane grupy są zorganizowane na kartach.
@@ -83,7 +85,7 @@ ms.locfileid: "72985610"
 
  Aby uzyskać więcej informacji o sposobach eksportowania wstążki do formatu XML, zobacz [How to: Export a wstążka z projektanta wstążki do XML wstążki](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md).
 
-### <a name="update-the-code"></a>Zaktualizuj kod
+### <a name="update-the-code"></a>Aktualizacja kodu
  Nowy plik kodu wstążki zostanie dodany do **Eksplorator rozwiązań**. Ten plik zawiera klasę XML wstążki. `Ribbon Callbacks`Aby obsłużyć akcje użytkownika, takie jak kliknięcie przycisku, należy utworzyć metody wywołania zwrotnego w regionie tej klasy. Przenieś swój kod z obsługi zdarzeń do tych metod wywołania zwrotnego i zmodyfikuj kod, aby działał z modelem programowania rozszerzalności wstążki (RibbonX). Aby uzyskać więcej informacji, zobacz [kod XML wstążki](../vsto/ribbon-xml.md).
 
  Należy również dodać kod do `ThisAddIn` `ThisWorkbook` klasy,, lub, `ThisDocument` która zastępuje `CreateRibbonExtensibilityObject` metodę i zwraca klasę XML wstążki do aplikacji pakietu Office.
@@ -93,7 +95,7 @@ ms.locfileid: "72985610"
 ## <a name="add-multiple-ribbon-items-to-a-project"></a>Dodawanie wielu elementów wstążki do projektu
  Można dodać więcej niż jeden element wstążki do pojedynczego projektu. Jest to przydatne, jeśli chcesz wykonać jedną z następujących dwóch zadań:
 
-- Tworzenie wstążki dla *inspektorów*programu Outlook. Aby uzyskać więcej informacji, zobacz [Dostosowywanie wstążki dla programu Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
+- Tworzenie wstążki dla *inspektorów* programu Outlook. Aby uzyskać więcej informacji, zobacz [Dostosowywanie wstążki dla programu Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
 
     > [!NOTE]
     > Inspektor to okno otwierane, gdy użytkownicy wykonują określone zadania, takie jak tworzenie wiadomości e-mail.
@@ -130,5 +132,5 @@ ms.locfileid: "72985610"
 |[Instrukcje: Dodawanie kontrolek do widoku Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)|Pokazuje, jak dodać kontrolki do menu, które jest otwierane po kliknięciu **pliku**.|
 |[Instrukcje: Dodawanie uruchamiania okna dialogowego do grupy wstążki](../vsto/how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md)|Pokazuje, jak dodać przycisk Uruchom okno dialogowe do każdej grupy na Wstążce.|
 |[Instrukcje: Eksportowanie wstążki z projektanta wstążki do XML wstążki](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)|Pokazuje, jak dostosować Wstążkę w zaawansowanych sposobach, eksportując Wstążkę z projektanta do kodu XML wstążki.|
-|[XML — wstążka](../vsto/ribbon-xml.md)|Wyjaśniono, jak można dostosować Wstążkę przy użyciu kodu XML wstążki.|
+|[XML — Wstążka](../vsto/ribbon-xml.md)|Wyjaśniono, jak można dostosować Wstążkę przy użyciu kodu XML wstążki.|
 |[Przewodnik: Tworzenie niestandardowej karty przy użyciu projektanta wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Pokazuje, jak utworzyć niestandardową kartę wstążki przy użyciu elementu **wstążki (XML)** .|

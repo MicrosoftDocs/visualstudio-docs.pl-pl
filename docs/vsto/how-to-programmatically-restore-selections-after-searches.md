@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Programowane przywracanie zaznaczenia po wyszukiwaniu'
+description: Dowiedz się, jak używać programu Visual Studio do programistycznego przywracania wybranych elementów po przeszukiwaniu w dokumencie programu Microsoft Word.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 452e483600f6da0eacd5337b42c728145bcfe8aa
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: d396602a5d2bc0c3a90d32256bf226348abff3f3
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584784"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528268"
 ---
 # <a name="how-to-programmatically-restore-selections-after-searches"></a>Instrukcje: Programowane przywracanie zaznaczenia po wyszukiwaniu
   Jeśli odnajdziesz i zastąpisz tekst w dokumencie, możesz chcieć przywrócić oryginalny wybór użytkownika po zakończeniu wyszukiwania.
@@ -52,7 +54,7 @@ ms.locfileid: "91584784"
  [!code-vb[Trin_VstcoreWordAutomation#82](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#82)]
  [!code-csharp[Trin_VstcoreWordAutomation#82](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#82)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Instrukcje: programowe wyszukiwanie i zastępowanie tekstu w dokumentach](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)
 - [Instrukcje: Programowane Ustawianie opcji wyszukiwania w programie Word](../vsto/how-to-programmatically-set-search-options-in-word.md)
 - [Instrukcje: programowe przechodzenie w pętli poprzez znalezione elementy w dokumentach](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)

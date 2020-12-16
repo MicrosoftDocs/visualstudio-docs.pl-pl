@@ -1,5 +1,7 @@
 ---
 title: rozwiązania InfoPath
+description: Dowiedz się, jak za pomocą programu Visual Studio utworzyć dodatki narzędzi VSTO dla programów Microsoft InfoPath 2013 i InfoPath 2010.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bf3223b5c8211719ad04b2ea7af8079932f6631e
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 8d5e26614c7f06c803093cd7e19b7e9842b397fb
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808805"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527746"
 ---
 # <a name="infopath-solutions"></a>rozwiązania InfoPath
   Program Visual Studio zawiera szablony projektów, których można użyć do tworzenia dodatków narzędzi VSTO dla Microsoft Office InfoPath 2013 i InfoPath 2010. Program InfoPath nie jest dostępny w pakiecie Office 2016.

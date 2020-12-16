@@ -1,5 +1,7 @@
 ---
 title: Projektant wstążki
+description: Dowiedz się, jak za pomocą projektanta wstążki dodać niestandardowe karty, grupy i kontrolki do wstążki aplikacji Microsoft Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -26,12 +28,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e1c2941b0c088a832540fd3380c993fe2c380b44
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b72270da75d27ed2837540369f74e9c5e87b417b
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985627"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527997"
 ---
 # <a name="ribbon-designer"></a>Projektant wstążki
   Projektant wstążki jest kanwą projektu wizualizacji. Użyj projektanta wstążki, aby dodać niestandardowe karty, grupy i kontrolki do wstążki aplikacji Microsoft Office.
@@ -65,11 +67,11 @@ ms.locfileid: "72985627"
 ## <a name="design-a-ribbon"></a><a name="DesigningRibbonLayout"></a> Projektowanie wstążki
  Istnieją trzy sposoby otwierania projektanta wstążki:
 
-- W **Eksplorator rozwiązań**kliknij dwukrotnie plik kodu wstążki.
+- W **Eksplorator rozwiązań** kliknij dwukrotnie plik kodu wstążki.
 
-- W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy plik kodu wstążki, a następnie kliknij pozycję **Projektant widoków**.
+- W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy plik kodu wstążki, a następnie kliknij pozycję **Projektant widoków**.
 
-- W **Eksplorator rozwiązań**wybierz plik kodu wstążki, a następnie kliknij pozycję **Projektant** w menu **Widok** .
+- W **Eksplorator rozwiązań** wybierz plik kodu wstążki, a następnie kliknij pozycję **Projektant** w menu **Widok** .
 
   Projektant wstążki zawiera domyślną kartę i grupę. Możesz usunąć domyślną kartę i grupę z projektanta wstążki. Aby usunąć grupę domyślną, kliknij prawym przyciskiem myszy pozycję **grupa1**, a następnie kliknij polecenie **Usuń**. Aby usunąć kartę domyślną, kliknij prawym przyciskiem myszy pusty obszar na powierzchni projektowej, a następnie kliknij polecenie **Usuń kartę wstążki**.
 
@@ -179,10 +181,10 @@ ms.locfileid: "72985627"
 |------------|-----------------------|
 |Przenieś kontrolkę przed poprzednią kontrolką na liście.|**Ctrl** + W **górę**<br /><br /> **Ctrl** + Z **lewej**|
 |Przenieś kontrolkę po następnej kontrolce na liście.|**Ctrl** + **W dół**<br /><br /> **Ctrl** + Z **prawej**|
-|Przeniesienie zaznaczenia z jednej kontrolki do innej w tej samej grupie. Dla panelu listy rozwijanej Przechodź między kontrolką nadrzędną a kontrolkami w panelu rozwijanym.|**W górę**<br /><br /> **Notuj**|
-|Wykonaj iterację w przód przez wszystkie kontrolki.|**Tabulator**|
+|Przeniesienie zaznaczenia z jednej kontrolki do innej w tej samej grupie. Dla panelu listy rozwijanej Przechodź między kontrolką nadrzędną a kontrolkami w panelu rozwijanym.|**W górę**<br /><br /> **W dół**|
+|Wykonaj iterację w przód przez wszystkie kontrolki.|**Tab**|
 |Iterowanie do tyłu przez wszystkie kontrolki.|**SHIFT** + **Karta**|
-|Usuń wybraną kontrolkę lub zestaw kontrolek.|**Usuń**|
+|Usuń wybraną kontrolkę lub zestaw kontrolek.|**Usuwanie**|
 |Skopiuj wybrane kontrolki.|**Ctrl** + **C**|
 |Wytnij zaznaczone kontrolki.|**Ctrl** + **X**|
 |Wklej kontrolki ze schowka.|**Ctrl** + **V**|
@@ -202,7 +204,7 @@ ms.locfileid: "72985627"
 ## <a name="see-also"></a>Zobacz też
 
 - [Omówienie wstążki](../vsto/ribbon-overview.md)
-- [XML — wstążka](../vsto/ribbon-xml.md)
+- [XML — Wstążka](../vsto/ribbon-xml.md)
 - [Przewodnik: Tworzenie niestandardowej karty przy użyciu projektanta wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [Instrukcje: Eksportowanie wstążki z projektanta wstążki do XML wstążki](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
 - [Instrukcje: wprowadzenie do dostosowywania wstążki](../vsto/how-to-get-started-customizing-the-ribbon.md)

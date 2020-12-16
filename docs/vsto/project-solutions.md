@@ -1,5 +1,7 @@
 ---
 title: Rozwiązania projektu
+description: Dowiedz się, jak można użyć dodatków VSTO do automatyzowania projektu, rozszerzenia funkcji projektu lub dostosowywania interfejsu użytkownika projektu.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 84dfe7cf86df2139b06a320d1c6441665a08a1b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c44e1208daaef11cb7fd9bd22e3e3ae574ca610d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985636"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527510"
 ---
 # <a name="project-solutions"></a>Rozwiązania projektu
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] zawiera szablony projektów, których można użyć do tworzenia dodatków narzędzi VSTO dla Microsoft Office projektu. Dodatków VSTO można używać do automatyzowania projektu, rozszerzenia funkcji projektu lub dostosowywania interfejsu użytkownika projektu.

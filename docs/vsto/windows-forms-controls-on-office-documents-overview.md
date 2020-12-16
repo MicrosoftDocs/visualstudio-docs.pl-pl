@@ -1,5 +1,7 @@
 ---
 title: Kontrolki Windows Forms w dokumentach pakietu Office — omówienie
+description: Dowiedz się, w jaki sposób formanty Windows Forms są obiektami, z którymi użytkownicy mogą wprowadzać dane lub manipulować nimi.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -27,12 +29,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a101f22bccb3624eccff1edcea502c9350991392
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0309ea22444062b117d3684e32b56960585aa184
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254916"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527049"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Kontrolki Windows Forms w dokumentach pakietu Office — omówienie
   Kontrolki Windows Forms są obiektami, z którymi użytkownicy mogą wprowadzać dane lub manipulować nimi. W projektach na poziomie dokumentu dla Microsoft Office Excel i Microsoft Office Word, można dodać kontrolki Windows Forms do dokumentu lub skoroszytu w projekcie w czasie projektowania lub można programowo dodać te kontrolki w czasie wykonywania. Można programowo dodać te kontrolki do dowolnego otwartego dokumentu lub arkusza w czasie wykonywania w dodatku narzędzi VSTO dla programu Excel lub Word.

@@ -1,5 +1,7 @@
 ---
 title: Zmienianie formatowania dokumentu przy użyciu kontrolek CheckBox
+description: Dowiedz się, jak używać formantów Windows Forms w dostosowaniu na poziomie dokumentu dla programu Microsoft Word, aby zmienić formatowanie tekstu.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24c3cb8d76551bb477f9c13cc56c313519f3b617
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 931e9554a10e0e1525d9ee4a10505633b211610b
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328723"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527246"
 ---
 # <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>Przewodnik: zmienianie formatowania dokumentu przy użyciu kontrolek CheckBox
   W tym instruktażu pokazano, jak używać formantów Windows Forms w dostosowaniu na poziomie dokumentu dla Microsoft Office Word, aby zmienić formatowanie tekstu.
@@ -63,14 +65,14 @@ ms.locfileid: "67328723"
 
 1. Sprawdź, czy dokument jest otwarty w projektancie programu Visual Studio.
 
-2. Na karcie **Formanty standardowe** **przybornika**przeciągnij pierwszy <xref:Microsoft.Office.Tools.Word.Controls.CheckBox> formant do dokumentu.
+2. Na karcie **Formanty standardowe** **przybornika** przeciągnij pierwszy <xref:Microsoft.Office.Tools.Word.Controls.CheckBox> formant do dokumentu.
 
 3. W oknie **Właściwości** Zmień następujące właściwości.
 
     |Właściwość|Wartość|
     |--------------|-----------|
     |**Nazwa**|**applyBoldFont**|
-    |**Tekst**|**Pogrubiona**|
+    |**Tekst**|**Pogrubienie**|
 
 4. Naciśnij klawisz **Enter** , aby przenieść punkt wstawiania poniżej pierwszego pola wyboru.
 
@@ -96,7 +98,7 @@ ms.locfileid: "67328723"
 
     **Kliknij pole wyboru, aby zmienić formatowanie tego tekstu.**
 
-2. Na karcie **formanty programu Word** **przybornika**przeciągnij <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolkę do dokumentu.
+2. Na karcie **formanty programu Word** **przybornika** przeciągnij <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolkę do dokumentu.
 
     Zostanie wyświetlone okno dialogowe **Dodawanie kontrolki zakładki** .
 

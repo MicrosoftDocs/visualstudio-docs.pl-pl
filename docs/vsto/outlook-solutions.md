@@ -1,5 +1,7 @@
 ---
 title: rozwiązania programu Outlook
+description: Dowiedz się, jak używać dodatków VSTO do automatyzowania programu Outlook, rozszerzenia funkcji programu Outlook lub dostosowywania interfejsu użytkownika programu Outlook.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 21e6478bb0f02383066a2c63dad1bdaf980a0b5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ded4652704a47252f0839aed151f0557ae5e6766
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985672"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527542"
 ---
 # <a name="outlook-solutions"></a>rozwiązania programu Outlook
   Program Visual Studio zawiera szablony projektów, których można użyć do tworzenia dodatków narzędzi VSTO dla Microsoft Office Outlook. Dodatki VSTO umożliwiają Automatyzowanie programu Outlook, rozszerzenia funkcji programu Outlook lub Dostosowywanie interfejsu użytkownika programu Outlook. Aby uzyskać więcej informacji na temat dodatków narzędzi VSTO, zobacz [Architektura dodatków narzędzi VSTO](../vsto/architecture-of-vsto-add-ins.md).
@@ -70,5 +72,5 @@ ms.locfileid: "72985672"
 |-----------|-----------------|
 |[Model obiektów programu Outlook — Omówienie](../vsto/outlook-object-model-overview.md)|Zawiera omówienie obiektów dostarczanych przez model obiektów programu Outlook.|
 |[Tworzenie regionów formularzy programu Outlook](../vsto/creating-outlook-form-regions.md)|Wyjaśnia Narzędzia udostępniane przez program Visual Studio, które ułatwiają projektowanie, opracowywanie i debugowanie regionów formularzy.|
-|[Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)|Pokazuje, jak utworzyć dodatek narzędzi VSTO dla programu Microsoft Office Outlook.|
+|[Przewodnik: Tworzenie pierwszego Add-In narzędzia VSTO dla programu Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)|Pokazuje, jak utworzyć dodatek narzędzi VSTO dla programu Microsoft Office Outlook.|
 |[Outlook 2010 w programowaniu pakietu Office](/previous-versions/office/developer/office-2010/ff458122(v=office.14))|Obszar biblioteki MSDN, w którym można znaleźć artykuły i dokumentację referencyjną dotyczącą opracowywania rozwiązań programu Outlook (niespecyficznych dla rozwoju pakietu Office przy użyciu programu Visual Studio).|

@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: pokazywanie karty dewelopera na Wstążce'
+description: Dowiedz się, jak można użyć programu Visual Studio, aby programowo wyświetlić kartę Deweloper na Wstążce w dokumencie programu Microsoft Word.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 41070c92d0c27c1ee8fbf480f7461c22421b8fdc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4dc38b941d27cab0653b923ddd03ba8b78eeab58
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545850"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528148"
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Instrukcje: pokazywanie karty dewelopera na Wstążce
   Aby uzyskać dostęp do karty **deweloper** na Wstążce aplikacji pakietu Office, należy ją skonfigurować tak, aby wyświetlała tę kartę, ponieważ nie jest wyświetlana domyślnie. Na przykład należy wyświetlić tę kartę, jeśli chcesz dodać <xref:Microsoft.Office.Tools.Word.GroupContentControl> do dostosowania na poziomie dokumentu dla programu Word.
@@ -52,7 +54,7 @@ ms.locfileid: "85545850"
 
      ![Przycisk Opcje w programie Outlook 2013 (wersja zapoznawcza)](../vsto/media/vsto-office2013-optionsbutton.png "Przycisk Opcje w programie Outlook 2013 (wersja zapoznawcza)")
 
-3. W oknie dialogowym**Opcje** _ApplicationName_wybierz przycisk **Dostosuj Wstążkę** .
+3. W oknie dialogowym **Opcje** _ApplicationName_ wybierz przycisk **Dostosuj Wstążkę** .
 
      Na poniższej ilustracji przedstawiono okno dialogowe **Opcje** i przycisk **Dostosuj Wstążkę** w programie Excel 2010. Lokalizacja tego przycisku jest podobna we wszystkich innych aplikacjach wymienionych w sekcji "dotyczy" w górnej części tego tematu.
 

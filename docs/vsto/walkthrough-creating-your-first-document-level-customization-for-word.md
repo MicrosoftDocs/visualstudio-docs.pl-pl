@@ -1,5 +1,6 @@
 ---
 title: Utwórz swoje pierwsze dostosowanie na poziomie dokumentu dla programu Word
+description: Utwórz dostosowanie na poziomie dokumentu dla programu Microsoft Word. Funkcje utworzone w tym rodzaju rozwiązaniu są dostępne tylko wtedy, gdy określony dokument jest otwarty.
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c1f5d1d6d373a5bbcd3f10d600175a88e88823ad
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: c1f827346c30720cefd781dade3039416504b9c0
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584992"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527072"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>Przewodnik: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Word
 
@@ -91,11 +92,11 @@ ms.locfileid: "91584992"
 
 1. Zamknij dokument, klikając przycisk **Zamknij** (X) dla okna projektanta.
 
-2. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy plik kodu **ThisDocument** , a następnie kliknij pozycję **Projektant widoków**.
+2. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy plik kodu **ThisDocument** , a następnie kliknij pozycję **Projektant widoków**.
 
      \- oraz
 
-     W **Eksplorator rozwiązań**kliknij dwukrotnie plik kodu **ThisDocument** .
+     W **Eksplorator rozwiązań** kliknij dwukrotnie plik kodu **ThisDocument** .
 
 ## <a name="add-text-to-the-document-in-the-designer"></a>Dodawanie tekstu do dokumentu w projektancie
 
@@ -117,7 +118,7 @@ ms.locfileid: "91584992"
 
 ### <a name="to-add-a-second-paragraph-of-text-to-the-document-by-using-code"></a>Aby dodać drugi akapit tekstu do dokumentu przy użyciu kodu
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **ThisDocument**, a następnie kliknij pozycję **Wyświetl kod**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję **ThisDocument**, a następnie kliknij pozycję **Wyświetl kod**.
 
      Plik kodu zostanie otwarty w programie Visual Studio.
 

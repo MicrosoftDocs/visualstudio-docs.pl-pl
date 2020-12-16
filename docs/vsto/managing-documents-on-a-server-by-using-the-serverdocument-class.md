@@ -1,5 +1,7 @@
 ---
 title: Zarządzanie dokumentami na serwerze za pomocą klasy ServerDocument
+description: Dowiedz się, jak można użyć klasy ServerDocument w Visual Studio Tools dla środowiska uruchomieniowego pakietu Office, aby zarządzać kilkoma aspektami dostosowań na poziomie dokumentu.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e91653734b804693584808478e44443563cdb823
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 585ec1842daeb4e4c4c59047383e5d53b3599bcf
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298273"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528489"
 ---
 # <a name="manage-documents-on-a-server-by-using-the-serverdocument-class"></a>Zarządzanie dokumentami na serwerze za pomocą klasy ServerDocument
   `ServerDocument`Klasy w programie można użyć [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] do zarządzania kilkoma aspektami dostosowań na poziomie dokumentu, nawet jeśli nie zainstalowano programów Microsoft Office Word i Microsoft Office Excel. W tym miejscu można wykonywać następujące zadania:

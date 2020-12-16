@@ -1,5 +1,7 @@
 ---
 title: Dostosowywanie interfejsu użytkownika pakietu Office
+description: Dowiedz się, jak dostosować interfejs użytkownika Microsoft Office aplikacji przy użyciu narzędzi deweloperskich pakietu Office w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 257f87aedf5d4337e81fb6f251cc8df07f4e577c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 289b055ab84dd9c2c440b55f3d64fe1fe39b8e1b
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88041067"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527585"
 ---
 # <a name="office-ui-customization"></a>Dostosowywanie interfejsu użytkownika pakietu Office
   Interfejs użytkownika (UI) aplikacji Microsoft Office można dostosować przy użyciu narzędzi Office Developer Tools w programie Visual Studio. W tym temacie opisano funkcje interfejsu użytkownika, które można dostosować w następujących sekcjach:

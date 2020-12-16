@@ -1,5 +1,7 @@
 ---
 title: Powiąż z danymi z usługi w projekcie dodatku VSTO
+description: Dowiedz się, jak dodać kontrolki do dokumentu programu Microsoft Word, powiązać kontrolki z danymi pobranymi z usługi zawartości MSDN i odpowiadać na zdarzenia w czasie wykonywania.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 75d984617b56525e640a74aa4badd6f520c0b892
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6b65308cfc0ba4dee33dd6b20d3fd4028e9ea22e
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72381320"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527478"
 ---
 # <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Przewodnik: powiązanie z danymi z usługi w projekcie dodatku narzędzi VSTO
   Można powiązać dane z kontrolkami hosta w projektach dodatku VSTO. W tym instruktażu pokazano, jak dodać kontrolki do dokumentu programu Word Microsoft Office, powiązać kontrolki z danymi pobranymi z usługi zawartości MSDN i odpowiadać na zdarzenia w czasie wykonywania.
@@ -48,7 +50,7 @@ ms.locfileid: "72381320"
 
 ### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt
 
-1. Utwórz projekt dodatku VSTO programu Word o nazwie **MTPS Content Service**przy użyciu albo Visual Basic lub C#.
+1. Utwórz projekt dodatku VSTO programu Word o nazwie **MTPS Content Service** przy użyciu albo Visual Basic lub C#.
 
      Aby uzyskać więcej informacji, zobacz [How to: Create Office projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
@@ -61,7 +63,7 @@ ms.locfileid: "72381320"
 
 1. W menu **dane** kliknij polecenie **Dodaj nowe źródło danych**.
 
-2. W **Kreatorze konfiguracji źródła danych**kliknij pozycję **Usługa**, a następnie kliknij przycisk **dalej**.
+2. W **Kreatorze konfiguracji źródła danych** kliknij pozycję **Usługa**, a następnie kliknij przycisk **dalej**.
 
 3. W polu **adres** wpisz następujący adres URL:
 

@@ -1,5 +1,7 @@
 ---
 title: NamedRange — formant
+description: Dowiedz się, w jaki sposób formant NamedRange jest zakresem, który ma unikatową nazwę, uwidacznia zdarzenia i może być powiązany z danymi.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e2b5b5d246e1033148bc199da6e7d2bdfb7aa9b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1881afb0dd718eec3815ab9de3becbeaf070f5d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254713"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528097"
 ---
 # <a name="namedrange-control"></a>NamedRange — formant
   <xref:Microsoft.Office.Tools.Excel.NamedRange>Kontrolka jest zakresem, który ma unikatową nazwę, uwidacznia zdarzenia i może być powiązany z danymi. Aby uzyskać więcej informacji, zobacz [model obiektów programu Excel — Omówienie](../vsto/excel-object-model-overview.md).
@@ -50,7 +52,7 @@ ms.locfileid: "71254713"
  Formatowanie, które można zastosować do elementu, <xref:Microsoft.Office.Interop.Excel.Range> można zastosować do <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolki. Obejmuje to obramowania, czcionki, formaty liczb i style.
 
 ## <a name="rename-the-control"></a>Zmiana nazwy kontrolki
- Po dodaniu <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolki do arkusza z **przybornika**program Visual Studio automatycznie generuje nazwę dla kontrolki. Nazwę można zmienić w oknie **Właściwości** .
+ Po dodaniu <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolki do arkusza z **przybornika** program Visual Studio automatycznie generuje nazwę dla kontrolki. Nazwę można zmienić w oknie **Właściwości** .
 
 ## <a name="events"></a>Zdarzenia
  Dla kontrolki dostępne są następujące zdarzenia <xref:Microsoft.Office.Tools.Excel.NamedRange> :

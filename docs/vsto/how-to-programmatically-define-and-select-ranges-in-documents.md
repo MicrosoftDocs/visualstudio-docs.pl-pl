@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: programowe Definiowanie i wybieranie zakresów w dokumentach'
+description: Dowiedz się, jak można programowo definiować i wybierać zakresy w dokumentach programu Microsoft Word przy użyciu obiektu Range.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5af4ceeb37574fef6eb55d80f3c173b71ac090e0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d1cc0475f7b25550b85018477d7c842f012445e2
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545954"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528324"
 ---
 # <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>Instrukcje: programowe Definiowanie i wybieranie zakresów w dokumentach
   Można zdefiniować zakres w Microsoft Office dokumencie programu Word przy użyciu <xref:Microsoft.Office.Interop.Word.Range> obiektu. Można wybrać cały dokument na wiele sposobów, na przykład przy użyciu <xref:Microsoft.Office.Interop.Word.Range.Select%2A> metody <xref:Microsoft.Office.Interop.Word.Range> obiektu lub przy użyciu właściwości content <xref:Microsoft.Office.Tools.Word.Document> klasy (w dostosowaniu na poziomie dokumentu) lub <xref:Microsoft.Office.Interop.Word.Document> klasy (w dodatku narzędzi VSTO).

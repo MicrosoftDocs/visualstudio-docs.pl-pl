@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 691e6c3b994649a9f0fa2d0e92a990f317a16208
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b28d87cc0842d5a3de8634ae50378915196366ff
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88508181"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527929"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Samouczek: tworzenie prostej aplikacji konsolowej w języku C# w programie Visual Studio
 
@@ -49,13 +49,13 @@ Aby rozpocząć, utworzymy projekt aplikacji w języku C#. Typ projektu jest dos
 2. Na górnym pasku menu wybierz pozycję **plik**  >  **Nowy**  >  **projekt**.
    (Alternatywnie naciśnij klawisz **Ctrl** + **SHIFT** + **N**).
 
-3. W lewym okienku okna dialogowego **Nowy projekt** rozwiń węzeł **C#**, a następnie wybierz pozycję **.NET Core**. W środkowym okienku wybierz pozycję **aplikacja konsoli (.NET Core)**. Następnie nazwij ***Kalkulator***plików.
+3. W lewym okienku okna dialogowego **Nowy projekt** rozwiń węzeł **C#**, a następnie wybierz pozycję **.NET Core**. W środkowym okienku wybierz pozycję **aplikacja konsoli (.NET Core)**. Następnie Nazwij plik **_Kalkulator_* _.
 
    ![Szablon projektu aplikacji konsolowej (.NET Core) w oknie dialogowym Nowy projekt w programie Visual Studio IDE](./media/new-project-csharp-calculator-console-app.png)
 
 ### <a name="add-a-workload-optional"></a>Dodaj obciążenie (opcjonalnie)
 
-Jeśli szablon projektu **Aplikacja konsolowa (.NET Core)** nie jest widoczny, można go uzyskać, dodając obciążenie **Międzyplatformowe platformy .NET Core** . Oto jak to zrobić.
+Jeśli nie widzisz szablonu projektu _ *aplikacji konsolowej (.NET Core)**, możesz uzyskać go, dodając obciążenie dla **wielu platform platformy .NET Core** . Oto jak to zrobić.
 
 #### <a name="option-1-use-the-new-project-dialog-box"></a>Opcja 1: korzystanie z okna dialogowego Nowy projekt
 
@@ -245,7 +245,7 @@ Naprawianie kodu, aby obsługiwały miejsca dziesiętne.
 
 1. Zmień każde wystąpienie `int` zmiennej na `float` .
 
-   Upewnij się, że w kontrolce Znajdź i Zamień zostanie przełączona wartość **Uwzględnij wielkość liter** (**Alt** + **C**) i **dopasowanie do całego wyrazu** (**Alt** + **W**). **Find and Replace**
+   Upewnij się, że w kontrolce Znajdź i Zamień zostanie przełączona wartość **Uwzględnij wielkość liter** (**Alt** + **C**) i **dopasowanie do całego wyrazu** (**Alt** + **W**). 
 
     ![Animacja kontrolki Znajdź i Zamień pokazująca, jak zmienić zmienną int na wartość zmiennoprzecinkową](./media/find-replace-control-animation.gif)
 
@@ -311,7 +311,7 @@ Zmieńmy kod, aby obsłużyć ten błąd.
 
 Teraz, gdy podzielę dowolną liczbę przez zero, aplikacja będzie pytać o inną liczbę. Jeszcze lepsze: nie będzie ono zatrzymywać, dopóki nie zostanie wprowadzona liczba różna od zera.
 
-   ![Edytor kodu programu Visual Studio pokazuje błąd dzielenia przez zero](./media/csharp-console-calculator-dividebyzero.png)
+   ![Naprawiono błąd dzielenia przez zero](./media/csharp-console-calculator-dividebyzero.png)
 
 ### <a name="fix-the-format-error"></a>Popraw błąd "format"
 
@@ -327,7 +327,7 @@ Zamiast polegać na `program` klasie, aby obsłużyć cały kod, Podziel aplikac
 
 `Calculator`Klasa będzie obsługiwać zbiorcze zadania obliczeniowe, a `Program` Klasa będzie obsługiwać interfejs użytkownika i przechwytywanie błędów.
 
-Zacznijmy.
+Zaczynajmy.
 
 1. Usuń wszystkie elementy w `Calculator` przestrzeni nazw między otwierającym i zamykającym nawiasem klamrowym:
 
@@ -600,10 +600,25 @@ namespace Calculator
 
 ## <a name="next-steps"></a>Następne kroki
 
+:::moniker range="vs-2017"
+
+Kontynuuj, aby uzyskać więcej samouczków:
+
+> [!div class="nextstepaction"]
+> [Samouczki języka C#](/dotnet/csharp/tutorials)
+
+> [!div class="nextstepaction"]
+> [Przewodnik po środowisku IDE programu Visual Studio](../visual-studio-ide.md)
+
+:::moniker-end
+
+:::moniker range="vs-2019"
+
 Przejdź do drugiej części tego samouczka:
 
 > [!div class="nextstepaction"]
 > [Kontynuuj z częścią 2](tutorial-console-part-2.md)
+:::moniker-end
 
 ## <a name="see-also"></a>Zobacz też
 

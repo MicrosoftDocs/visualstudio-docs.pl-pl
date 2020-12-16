@@ -1,5 +1,7 @@
 ---
 title: Ochrona hasłem w dokumentach pakietu Office
+description: Dowiedz się, jak ustawić hasło dla dokumentów programu Microsoft Word i skoroszytów programu Excel, aby nie mogły być otwierane przez nieautoryzowanych użytkowników.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e3c9521389ce348a482f35ec95c9766edea49f5f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6beaf85000438846e5d440e48c9722b9660f9bd
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62977903"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528065"
 ---
 # <a name="password-protection-on-office-documents"></a>Ochrona hasłem w dokumentach pakietu Office
   Istnieje możliwość ustawienia hasła Microsoft Office dokumentów programu Word i Microsoft Office skoroszytów programu Excel, aby nie mogły zostać otwarte przez kogoś, kto nie zna hasła. Ta opcja jest nazywana **hasłem przy otwarciu**.

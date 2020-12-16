@@ -1,5 +1,7 @@
 ---
 title: Pracuj z elementami poczty
+description: Dowiedz się, że Klasa MailItem zawiera metody i właściwości używane do wykonywania zadań z wiadomościami e-mail.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1a0e5007163d10aee15e39759448928e44ae5a68
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce91f9773bf4fc212a47bf64d76c8f1131457c38
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62815436"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526887"
 ---
 # <a name="work-with-mail-items"></a>Pracuj z elementami poczty
   <xref:Microsoft.Office.Interop.Outlook.MailItem>Klasa zawiera metody i właściwości używane do wykonywania zadań z wiadomościami e-mail.

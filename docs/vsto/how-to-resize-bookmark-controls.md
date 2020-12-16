@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: zmiana rozmiaru kontrolek zakładek'
+description: Dowiedz się, jak można użyć programu Visual Studio, aby ustawić rozmiar kontrolki zakładki po dodaniu jej do dokumentu programu Microsoft Word.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6cc7b26bb767c233ed8699519261d4b5b708306b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0d577f825337862de4ef967bb4f92f61ebbb0b45
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545863"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528197"
 ---
 # <a name="how-to-resize-bookmark-controls"></a>Instrukcje: zmiana rozmiaru kontrolek zakładek
   Należy ustawić rozmiar <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki, gdy dodasz ją do dokumentu programu Microsoft Office Word. Możesz również zmienić jego rozmiar w późniejszym czasie.

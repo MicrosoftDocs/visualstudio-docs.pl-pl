@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: wywoływanie kodu z VBA w projekcie Visual Basic'
+description: Dowiedz się, jak wywołać metodę w dostosowaniu na poziomie dokumentu dla programu Microsoft Word z kodu Visual Basic for Applications (VBA) w dokumencie.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad50ed0f55a148a05c0fedc6fe0ccb0dd5b890b9
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 6016dbf53413f6e55c88edfe930af677472bdaf5
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298258"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527384"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>Przewodnik: wywoływanie kodu z VBA w projekcie Visual Basic
   W tym instruktażu pokazano, jak wywołać metodę w dostosowaniu na poziomie dokumentu dla Microsoft Office Word z kodu Visual Basic for Applications (VBA) w dokumencie. Procedura obejmuje trzy podstawowe kroki: Dodaj metodę do `ThisDocument` klasy Item hosta, Uwidocznij metodę w kodzie VBA, a następnie Wywołaj metodę z kodu VBA w dokumencie.
@@ -152,7 +154,7 @@ ms.locfileid: "92298258"
 
 ### <a name="to-add-a-method-to-the-thisdocument-class"></a>Aby dodać metodę do klasy ThisDocument
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy **ThisDocument. vb**, a następnie kliknij polecenie **Wyświetl kod**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy **ThisDocument. vb**, a następnie kliknij polecenie **Wyświetl kod**.
 
      Plik **ThisDocument. vb** zostanie otwarty w edytorze kodu.
 
@@ -167,7 +169,7 @@ ms.locfileid: "92298258"
 
 ### <a name="to-expose-the-method-to-vba-code"></a>Aby udostępnić metodę do kodu VBA
 
-1. W **Eksplorator rozwiązań**kliknij dwukrotnie pozycję **ThisDocument. vb**.
+1. W **Eksplorator rozwiązań** kliknij dwukrotnie pozycję **ThisDocument. vb**.
 
      Plik **DocumentWithVBA** zostanie otwarty w projektancie.
 

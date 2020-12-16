@@ -1,5 +1,7 @@
 ---
 title: rozwiązania programu Word
+description: Dowiedz się, jak używać rozwiązań programu Visual Studio do automatyzowania programu Word, rozszerzeń funkcji programu Word i dostosowywania interfejsu użytkownika programu Word.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -26,12 +28,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c2d3b9ea3257db11eed766079b169a7bc81fe28a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 55ffb54e00af0291a33bd635ea81d3d865cc4c9a
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985376"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528369"
 ---
 # <a name="word-solutions"></a>rozwiązania programu Word
   Program Visual Studio zawiera szablony projektów, których można użyć do tworzenia dostosowań na poziomie dokumentu i dodatków narzędzi VSTO dla programu Microsoft Office Word. Można używać tych rozwiązań do automatyzowania programu Word, rozszerzeń funkcji programu Word i dostosowywania interfejsu użytkownika programu Word. Aby uzyskać więcej informacji o różnicach między dostosowaniami dostosowań na poziomie dokumentu a dodatkami programu VSTO, zobacz temat [programowanie rozwiązań pakietu Office — omówienie &#40;narzędzi vsto&#41;](../vsto/office-solutions-development-overview-vsto.md).

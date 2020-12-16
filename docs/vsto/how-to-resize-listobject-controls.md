@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Zmienianie rozmiaru formantów ListObject'
+description: Dowiedz się, jak za pomocą programu Visual Studio programowo zmienić rozmiar formantów ListObject w skoroszycie programu Microsoft Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 68a9841d8471189538959a311bf9349199d55f78
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c401f3938679c72cee3a07c4bff79a5777fcbc1
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545837"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528534"
 ---
 # <a name="how-to-resize-listobject-controls"></a>Instrukcje: Zmienianie rozmiaru formantów ListObject
   Można ustawić rozmiar <xref:Microsoft.Office.Tools.Excel.ListObject> kontrolki, gdy dodasz ją do Microsoft Office skoroszytu programu Excel. można jednak zmienić jej rozmiar w późniejszym czasie. Na przykład możesz chcieć zmienić listę dwóch kolumn na trzy kolumny.
@@ -42,7 +44,7 @@ ms.locfileid: "85545837"
 
 ### <a name="to-resize-a-list-by-using-the-resize-list-dialog-box"></a>Aby zmienić rozmiar listy przy użyciu okna dialogowego Zmienianie rozmiaru listy
 
-1. Kliknij gdziekolwiek w  <xref:Microsoft.Office.Tools.Excel.ListObject> tabeli. **Table Tools**  >  Zostanie wyświetlona karta**projektowanie** narzędzi tabel na Wstążce.
+1. Kliknij gdziekolwiek w  <xref:Microsoft.Office.Tools.Excel.ListObject> tabeli.   >  Zostanie wyświetlona karta **projektowanie** narzędzi tabel na Wstążce.
 
 2. W sekcji Właściwości kliknij pozycję **Zmień rozmiar tabeli**.
 

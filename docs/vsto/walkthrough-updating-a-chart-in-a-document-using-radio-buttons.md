@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: aktualizowanie wykresu w dokumencie za pomocą przycisków radiowych'
+description: Dowiedz się, w jaki sposób można użyć przycisków radiowych w dostosowaniu na poziomie dokumentu dla programu Microsoft Word, aby umożliwić użytkownikom wybranie stylów wykresu w dokumencie.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f4b39949deb3bcbf3d9330ca8d820a5841b0f4c4
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: df2996d99e752fbe0f7f36bcab537ee8c19d4f06
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584298"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528392"
 ---
 # <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>Przewodnik: aktualizowanie wykresu w dokumencie za pomocą przycisków radiowych
   W tym instruktażu pokazano, jak używać przycisków radiowych w dostosowaniu na poziomie dokumentu dla programu Microsoft Office Word, aby umożliwić użytkownikom wybranie stylów wykresu dla dokumentu.
@@ -89,7 +91,7 @@ ms.locfileid: "91584298"
 
 1. Jeśli formant użytkownika nie jest widoczny w projektancie, kliknij dwukrotnie pozycję **ChartOptions** w **Eksplorator rozwiązań**.
 
-2. Na karcie **Formanty standardowe** **przybornika**przeciągnij pierwszy formant **przycisk radiowy** do kontrolki użytkownika i Zmień następujące właściwości.
+2. Na karcie **Formanty standardowe** **przybornika** przeciągnij pierwszy formant **przycisk radiowy** do kontrolki użytkownika i Zmień następujące właściwości.
 
     |Właściwość|Wartość|
     |--------------|-----------|
@@ -133,7 +135,7 @@ ms.locfileid: "91584298"
 
 ### <a name="to-create-an-event-and-property-on-a-user-control"></a>Aby utworzyć zdarzenie i właściwość na kontrolce użytkownika
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy kontrolkę użytkownika, a następnie kliknij polecenie **Wyświetl kod**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy kontrolkę użytkownika, a następnie kliknij polecenie **Wyświetl kod**.
 
 2. Dodaj kod, aby utworzyć `SelectionChanged` zdarzenie i `Selection` Właściwość do `ChartOptions` klasy.
 
@@ -175,7 +177,7 @@ ms.locfileid: "91584298"
 
      Kontrolka użytkownika **ChartOptions** jest dodawana do **przybornika**.
 
-2. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **ThisDocument. vb** lub **ThisDocument.cs**, a następnie kliknij pozycję **Projektant widoków**.
+2. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję **ThisDocument. vb** lub **ThisDocument.cs**, a następnie kliknij pozycję **Projektant widoków**.
 
 3. Przeciągnij `ChartOptions` formant z **przybornika** do dokumentu.
 
