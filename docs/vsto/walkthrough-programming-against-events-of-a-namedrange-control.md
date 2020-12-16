@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: program dla zdarzeń kontrolki NamedRange'
+description: Dowiedz się, jak dodać kontrolkę NamedRange do arkusza programu Microsoft Excel i programu dla jego zdarzeń przy użyciu narzędzi programistycznych pakietu Office w programie Visual Studio.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2e5ce12e2de8274afd2c27d4ece36529563a6386
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 9e311a567d32ee083bcc13f417c248f5f3d3ee5a
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584940"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526135"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>Przewodnik: program dla zdarzeń kontrolki NamedRange
   W tym instruktażu pokazano, jak dodać <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolkę do Microsoft Office arkusza i programu Excel z jego zdarzeń przy użyciu narzędzi programistycznych pakietu Office w programie Visual Studio.
@@ -54,10 +56,10 @@ ms.locfileid: "91584940"
 
 1. Utwórz projekt skoroszytu programu Excel z nazwą **Moje nazwane zdarzenia zakresu**. Upewnij się, że wybrano **Utwórz nowy dokument** . Aby uzyskać więcej informacji, zobacz [How to: Create Office projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     Program Visual Studio otwiera nowy skoroszyt programu Excel w Projektancie i dodaje do **Eksplorator rozwiązań**projekt **Moje nazwane zdarzenia zakresu** .
+     Program Visual Studio otwiera nowy skoroszyt programu Excel w Projektancie i dodaje do **Eksplorator rozwiązań** projekt **Moje nazwane zdarzenia zakresu** .
 
 ## <a name="add-text-and-named-ranges-to-the-worksheet"></a>Dodaj tekst i nazwane zakresy do arkusza
- Ponieważ formanty hosta są rozszerzonymi obiektami pakietu Office, można je dodać do dokumentu w taki sam sposób, jak dodać obiekt macierzysty. Na przykład można dodać kontrolkę programu Excel <xref:Microsoft.Office.Tools.Excel.NamedRange> do arkusza, otwierając menu **Wstaw** , wskazując **nazwę**i wybierając **Definiuj**. Możesz również dodać <xref:Microsoft.Office.Tools.Excel.NamedRange> formant, przeciągając go z **przybornika** do arkusza.
+ Ponieważ formanty hosta są rozszerzonymi obiektami pakietu Office, można je dodać do dokumentu w taki sam sposób, jak dodać obiekt macierzysty. Na przykład można dodać kontrolkę programu Excel <xref:Microsoft.Office.Tools.Excel.NamedRange> do arkusza, otwierając menu **Wstaw** , wskazując **nazwę** i wybierając **Definiuj**. Możesz również dodać <xref:Microsoft.Office.Tools.Excel.NamedRange> formant, przeciągając go z **przybornika** do arkusza.
 
  W tym kroku dodasz dwie kontrolki z nazwanymi zakresami do arkusza za pomocą **przybornika**, a następnie dodasz tekst do arkusza.
 
@@ -85,7 +87,7 @@ ms.locfileid: "91584940"
 
 ### <a name="to-add-text-to-your-worksheet"></a>Aby dodać tekst do arkusza
 
-1. W komórce **a1**wpisz następujący tekst:
+1. W komórce **a1** wpisz następujący tekst:
 
     **Jest to przykład kontrolki NamedRange.**
 
@@ -99,7 +101,7 @@ ms.locfileid: "91584940"
 
 ### <a name="to-insert-text-into-namedrange2-based-on-the-beforedoubleclick-event"></a>Aby wstawić tekst do NamedRange2 na podstawie zdarzenia BeforeDoubleClick
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **Arkusz1. vb** lub **Sheet1.cs** i wybierz polecenie **Wyświetl kod**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję **Arkusz1. vb** lub **Sheet1.cs** i wybierz polecenie **Wyświetl kod**.
 
 2. Dodaj kod, aby `namedRange1_BeforeDoubleClick` program obsługi zdarzeń wyglądał następująco:
 

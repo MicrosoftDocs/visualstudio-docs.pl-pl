@@ -1,5 +1,7 @@
 ---
 title: Wskazówki dotyczące korzystania z programu Excel
+description: Dowiedz się, jak używać dostosowań na poziomie dokumentu i dodatków VSTO do automatyzowania programu Microsoft Excel. Możesz również dostosować interfejs użytkownika.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b802d61c4e30fa9dd13279c54c2a9bfa343f322f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba8a52e615a8e3d40b5c76be66f4b639aec6c07e
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255049"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525957"
 ---
 # <a name="walkthroughs-using-excel"></a>Wskazówki dotyczące korzystania z programu Excel
   W poniższych przewodnikach przedstawiono sposoby używania dostosowań na poziomie dokumentu i dodatków narzędzi VSTO do automatyzowania Microsoft Office programu Excel i dostosowywania interfejsu użytkownika.

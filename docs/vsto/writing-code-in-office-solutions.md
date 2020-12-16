@@ -1,5 +1,7 @@
 ---
 title: Pisanie kodu w rozwiązaniach pakietu Office
+description: Dowiedz się, jak napisać kod w Microsoft Office rozwiązaniach i poznać sposób, w jaki modele obiektów pakietu Office są uwidocznione w kodzie zarządzanym.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -33,12 +35,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cead0569ae067fcc503f7f2074807c609e6eed75
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 40ea589cb4406a383876b1f16721f18fc48ebadd
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255046"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526029"
 ---
 # <a name="write-code-in-office-solutions"></a>Pisanie kodu w rozwiązaniach pakietu Office
   Istnieją pewne aspekty pisania kodu w projektach pakietu Office, które różnią się od innych typów projektów w programie Visual Studio. Wiele z tych różnic jest związanych ze sposobem, w jaki modele obiektów pakietu Office są uwidocznione w kodzie zarządzanym. Inne różnice są związane z projektowaniem projektów pakietu Office.

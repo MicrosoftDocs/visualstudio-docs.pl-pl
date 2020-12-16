@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: aktualizowanie kontrolek na Wstążce w czasie wykonywania'
+description: Dowiedz się, jak można użyć modelu obiektów wstążki do aktualizowania formantów na Wstążce po załadowaniu wstążki do aplikacji pakietu Office.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9c2e870f028b3337fd162adde881281d7050e142
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 2246dcdca1e754c885dd610f98986306a256228c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298049"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526045"
 ---
 # <a name="walkthrough-update-the-controls-on-a-ribbon-at-run-time"></a>Przewodnik: aktualizowanie kontrolek na Wstążce w czasie wykonywania
 
@@ -92,13 +94,13 @@ Wstążka dla tego przykładu będzie wyświetlana, gdy użytkownik utworzy now�
 
 7. W oknie **Właściwości** ustaw wartość **etykieta** na **zakupy dla klientów**.
 
-8. Na karcie **kontrolki wstążki pakietu Office** w **przyborniku**przeciągnij **pole kombi** na grupę **zakupy klienta** .
+8. Na karcie **kontrolki wstążki pakietu Office** w **przyborniku** przeciągnij **pole kombi** na grupę **zakupy klienta** .
 
 9. Kliknij pozycję **ComboBox1** , aby ją zaznaczyć.
 
 10. W oknie **Właściwości** ustaw wartość **etykieta** na **klienci**.
 
-11. Na karcie **kontrolki wstążki pakietu Office** w **przyborniku**przeciągnij **menu** do grupy **zakupy klienta** .
+11. Na karcie **kontrolki wstążki pakietu Office** w **przyborniku** przeciągnij **menu** do grupy **zakupy klienta** .
 
 12. W oknie **Właściwości** ustaw wartość **etykieta** na **zakupione produkty**.
 
@@ -178,7 +180,7 @@ Użyj modelu obiektów wstążki, aby wykonać następujące zadania:
 
     Ten zestaw zawiera klasy służące do korzystania z zapytań Language-Integrated (LINQ). Program LINQ służy do wypełniania kontrolek w grupie niestandardowej danymi z bazy danych Northwind.
 
-3. W **Eksplorator rozwiązań**kliknij pozycję **CustomerRibbon.cs** lub **CustomerRibbon. vb** , aby ją zaznaczyć.
+3. W **Eksplorator rozwiązań** kliknij pozycję **CustomerRibbon.cs** lub **CustomerRibbon. vb** , aby ją zaznaczyć.
 
 4. W menu **Widok** kliknij polecenie **kod**.
 
@@ -219,7 +221,7 @@ Użyj modelu obiektów wstążki, aby wykonać następujące zadania:
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#6](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#6)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#6](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#6)]
 
-10. W **Eksplorator rozwiązań**kliknij dwukrotnie plik kodu wstążki.
+10. W **Eksplorator rozwiązań** kliknij dwukrotnie plik kodu wstążki.
 
      Zostanie otwarty projektant wstążki.
 

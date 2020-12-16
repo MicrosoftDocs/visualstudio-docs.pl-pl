@@ -1,5 +1,7 @@
 ---
 title: Visual Studio Tools dla scenariuszy instalacji środowiska uruchomieniowego pakietu Office
+description: Dowiedz się, jak zainstalować narzędzia Visual Studio 2010 Tools for Office Runtime. W tym artykule opisano trzy scenariusze instalacji.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 95d183d2b767738156fc63f95d2a83ed6a1e5714
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 484627c01a5385a6da4b2b0a41a966ac31d0e6d8
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584376"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526403"
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Visual Studio Tools dla scenariuszy instalacji środowiska uruchomieniowego pakietu Office
   Program Visual Studio 2010 Tools for Office Runtime można zainstalować na trzy sposoby:

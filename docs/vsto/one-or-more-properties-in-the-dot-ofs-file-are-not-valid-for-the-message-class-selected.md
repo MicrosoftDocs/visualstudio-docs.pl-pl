@@ -1,5 +1,7 @@
 ---
 title: Nieprawidłowe właściwości w pliku. ofs dla klasy Message "
+description: Dowiedz się, jak poprawić błąd występujący, gdy co najmniej jedna z właściwości w pliku OFS jest nieprawidłowa dla wybranej klasy wiadomości.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 66e8ecacffb58e945a3f80d03f47edc1329668d1
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: b655a7bb6ab4b9ab971c0edd775aa8f29150dead
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584662"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525088"
 ---
 # <a name="invalid-properties-in-the-ofs-file-for-the-message-class"></a>Nieprawidłowe właściwości w pliku. ofs dla klasy Message
 

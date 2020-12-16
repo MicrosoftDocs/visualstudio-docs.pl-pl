@@ -1,5 +1,7 @@
 ---
 title: Rozwiązania programu Visio
+description: Dowiedz się, jak używać dodatków VSTO do automatyzowania programu Visio, rozszerzenia funkcji programu Visio lub dostosowywania interfejsu użytkownika programu Visio.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a79b3c9964a24daf0a12ab90f47fb5903d89cdd0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5b4cbdfe6cceff279ae20518edf83b4f4ec8912
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985510"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526376"
 ---
 # <a name="visio-solutions"></a>Rozwiązania programu Visio
   Program Visual Studio zawiera szablony projektów, których można użyć do tworzenia dodatków narzędzi VSTO dla programu Microsoft Office Visio. Za pomocą dodatków VSTO można zautomatyzować program Visio, zwiększyć funkcjonalność programu Visio lub dostosować interfejs użytkownika programu Visio.
@@ -60,7 +62,7 @@ ms.locfileid: "72985510"
 
 |Zadanie|Więcej informacji|
 |----------|--------------------------|
-|Dostosuj Wstążkę.|[Wstążka — omówienie](../vsto/ribbon-overview.md)|
+|Dostosuj Wstążkę.|[Wstążka ― Omówienie](../vsto/ribbon-overview.md)|
 
  Aby uzyskać informacje na temat dostosowywania interfejsu użytkownika programu Visio, zobacz dokumentację referencyjną języka VBA dla klasy [Visio. UIObject](/office/vba/api/Visio.UIObject) .
 

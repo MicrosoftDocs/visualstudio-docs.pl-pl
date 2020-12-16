@@ -1,5 +1,7 @@
 ---
 title: Aktualizowanie wykresu w arkuszu za pomocą przycisków radiowych
+description: Poznaj podstawy używania przycisków radiowych w arkuszu programu Microsoft Excel, aby dać użytkownikowi możliwość szybkiego przełączania się między opcjami.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e63d7d09a09fe4c051d8137428fdae90490cbae5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e375f394cd3d8be35ace8e3df07920fb824a07e
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238819"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526065"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Wskazówki: aktualizacja wykresu w arkuszu za pomocą przycisków radiowych
   W tym instruktażu przedstawiono podstawowe informacje dotyczące używania przycisków radiowych w arkuszu programu Excel Microsoft Office, aby dać użytkownikowi możliwość szybkiego przełączania się między opcjami. W takim przypadku opcje zmieniają styl wykresu.
@@ -130,7 +132,7 @@ ms.locfileid: "88238819"
 
 1. Jeśli formant użytkownika nie jest widoczny w projektancie, kliknij dwukrotnie pozycję **ChartOptions** w **Eksplorator rozwiązań**.
 
-2. Na karcie **Formanty standardowe** **przybornika**przeciągnij kontrolkę **przycisk radiowy** do kontrolki użytkownika i Zmień następujące właściwości.
+2. Na karcie **Formanty standardowe** **przybornika** przeciągnij kontrolkę **przycisk radiowy** do kontrolki użytkownika i Zmień następujące właściwości.
 
    | Właściwość | Wartość |
    |----------|------------------|
@@ -165,7 +167,7 @@ ms.locfileid: "88238819"
 
 ### <a name="to-create-an-event-and-property-on-a-user-control"></a>Aby utworzyć zdarzenie i właściwość na kontrolce użytkownika
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy kontrolkę użytkownika, a następnie kliknij polecenie **Wyświetl kod**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy kontrolkę użytkownika, a następnie kliknij polecenie **Wyświetl kod**.
 
 2. Dodaj kod do `ChartOptions` klasy, aby utworzyć `SelectionChanged` zdarzenie i `Selection` Właściwość.
 
@@ -207,7 +209,7 @@ ms.locfileid: "88238819"
 
      Kontrolka użytkownika **ChartOptions** jest dodawana do **przybornika**.
 
-2. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **Arkusz1. vb** lub **Sheet1.cs**, a następnie kliknij pozycję **Projektant widoków**.
+2. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję **Arkusz1. vb** lub **Sheet1.cs**, a następnie kliknij pozycję **Projektant widoków**.
 
 3. Przeciągnij formant **ChartOptions** z **przybornika** do arkusza.
 

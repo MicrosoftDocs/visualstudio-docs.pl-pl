@@ -1,5 +1,7 @@
 ---
 title: Przykłady programowania dla pakietu Office
+description: Dowiedz się więcej na temat przykładowych aplikacji Visual Studio, które pokazują, jak używać narzędzi deweloperskich Microsoft Office do tworzenia rozwiązań pakietu Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b9e20f0d14b2940fdbe8096442848f38183b1db7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d80598033c834e8567ab58368da73350b3cd9ff3
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985728"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525168"
 ---
 # <a name="office-development-samples"></a>Przykłady programowania dla pakietu Office
   Program Visual Studio zawiera przykładowe aplikacje, które pokazują, jak używać narzędzi deweloperskich Microsoft Office do tworzenia rozwiązań pakietu Office. Kod w tych przykładach ilustruje składnię, strukturę i techniki używane do tworzenia rozwiązań pakietu Office.

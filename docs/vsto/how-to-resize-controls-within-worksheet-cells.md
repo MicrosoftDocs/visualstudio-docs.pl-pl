@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: zmiana rozmiaru kontrolek w komórkach arkusza'
+description: Dowiedz się, jak można użyć programu Visual Studio do zmiany rozmiaru formantów w komórkach arkusza programu Microsoft Excel zarówno w czasie projektowania, jak i w czasie wykonywania.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f2d22973e13ee77b66de303041f8b6a765b4b93a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba2a77dc44618c0415e645718aff3ead542b4b48
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545876"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525349"
 ---
 # <a name="how-to-resize-controls-within-worksheet-cells"></a>Instrukcje: zmiana rozmiaru kontrolek w komórkach arkusza
   W przypadku zmiany rozmiaru kolumn lub wierszy w arkuszu wszystkie kontrolki hosta w komórkach są automatycznie zmieniane na wysokość lub szerokość komórki, której rozmiar został zmieniony. Kontrolki Windows Forms domyślnie nie są zmieniane automatycznie.
@@ -35,13 +37,13 @@ ms.locfileid: "85545876"
 
 ### <a name="to-make-controls-resize-with-cells-at-design-time"></a>Aby zmienić rozmiar formantów w komórkach w czasie projektowania
 
-1. Z **przybornika**przeciągnij formant Windows Forms do arkusza.
+1. Z **przybornika** przeciągnij formant Windows Forms do arkusza.
 
 2. Kliknij prawym przyciskiem myszy kontrolkę, a następnie kliknij polecenie **Formatuj kontrolkę**.
 
 3. W **kontrolce formatowanie** okna dialogowego kliknij kartę **Właściwości** .
 
-4. W obszarze **pozycjonowanie obiektów**wybierz opcję **Przenieś i Skaluj z komórkami** , a następnie kliknij przycisk **OK**.
+4. W obszarze **pozycjonowanie obiektów** wybierz opcję **Przenieś i Skaluj z komórkami** , a następnie kliknij przycisk **OK**.
 
      Gdy zmieniasz rozmiar komórki, która zawiera kontrolkę, zmienia rozmiar kontrolki, aby dopasować ją do komórki.
 

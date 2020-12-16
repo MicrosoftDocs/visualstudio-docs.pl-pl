@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Programowane formatowanie tekstu w dokumentach'
+description: Dowiedz się, jak można użyć obiektu Range do programistycznego formatowania tekstu w dokumencie programu Microsoft Word.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76af290b0e32126689dbe7b60f27889d9742ea7f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 931991529b160fedfe65a92e8243183792abf518
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85519850"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525728"
 ---
 # <a name="how-to-programmatically-format-text-in-documents"></a>Instrukcje: Programowane formatowanie tekstu w dokumentach
   Można użyć <xref:Microsoft.Office.Interop.Word.Range> obiektu do formatowania tekstu w Microsoft Office dokumencie programu Word.

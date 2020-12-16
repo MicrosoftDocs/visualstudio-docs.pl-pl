@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: programowe Wyświetlanie listy wszystkich arkuszy w skoroszycie'
+description: Dowiedz się, jak można programowo wyświetlić listę wszystkich arkuszy w skoroszycie programu Microsoft Excel przy użyciu programu Visual Studio.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2b3132ee83d4752c0bc2f053e7c65e3c7b84831b
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 74ff02d6458e643e9a143a8132ad16f10899ec74
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585174"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525666"
 ---
 # <a name="how-to-programmatically-list-all-worksheets-in-a-workbook"></a>Instrukcje: programowe Wyświetlanie listy wszystkich arkuszy w skoroszycie
   <xref:Microsoft.Office.Interop.Excel.Workbook>Klasa udostępnia <xref:Microsoft.Office.Interop.Excel.Worksheets> obiekt. Ten obiekt zawiera kolekcję wszystkich <xref:Microsoft.Office.Interop.Excel.Worksheet> obiektów w skoroszycie.

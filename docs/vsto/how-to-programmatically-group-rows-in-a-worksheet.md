@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Programowane Grupowanie wierszy w arkuszu'
+description: Dowiedz się, w jaki sposób można programowo grupować jeden lub więcej całych wierszy w programie Microsoft Excel przy użyciu formantu NamedRange lub natywnego obiektu zakresu programu Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 759ba8c6e0796b25a87e8bf0b08795aed5bade05
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 203ea7d17a02a224c290e5dd3c6070c06a1d26e4
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537881"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525713"
 ---
 # <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>Instrukcje: Programowane Grupowanie wierszy w arkuszu
   Można grupować jeden lub więcej całych wierszy. Aby utworzyć grupę w arkuszu, użyj <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolki lub natywnego obiektu zakresu programu Excel.

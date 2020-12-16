@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Programowane wstawianie tekstu do dokumentów programu Word'
+description: Dowiedz się, jak programowo wstawić tekst do dokumentu programu Microsoft Word przy użyciu programu Visual Studio.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 08/14/2019
 ms.topic: how-to
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bbd73a60b05d48eea0252cec9881d6eefca6cdd2
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 9567ea197c9a181141aeb52db0cca56ad4776237
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585187"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525683"
 ---
 # <a name="how-to-programmatically-insert-text-into-word-documents"></a>Instrukcje: Programowane wstawianie tekstu do dokumentów programu Word
   Istnieją trzy podstawowe sposoby wstawiania tekstu do Microsoft Office dokumentów programu Word:

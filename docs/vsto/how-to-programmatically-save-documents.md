@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: programowe zapisywanie dokumentów'
+description: Dowiedz się, jak można użyć programu Visual Studio do programistycznego zapisywania dokumentu bez zmiany nazwy dokumentu lub nowej nazwy.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 464d131261ecfb0a64a3ca279007ff9332cdb2e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2221ec6576e7ac0de399613a1cda3cdcb8dcea6c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537595"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525470"
 ---
 # <a name="how-to-programmatically-save-documents"></a>Instrukcje: programowe zapisywanie dokumentów
 
@@ -56,7 +58,7 @@ Istnieje kilka sposobów zapisywania dokumentów programu Microsoft Office Word.
 Użyj `SaveAs` metody, aby zapisać dokument z nową nazwą. Tej metody można użyć dla <xref:Microsoft.Office.Tools.Word.Document> elementu hosta w projekcie programu Word na poziomie dokumentu lub obiektu natywnego <xref:Microsoft.Office.Interop.Word.Document> w dowolnym projekcie programu Word. Ta metoda wymaga określenia nowej nazwy pliku, ale inne argumenty są opcjonalne.
 
 > [!NOTE]
-> Jeśli w programie obsługi **SaveAs** zdarzeń zostanie wyświetlone okno dialogowe SaveAs <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> `ThisDocument` i ustawisz **wartość false**dla parametru *Cancel* , aplikacja może zostać nieoczekiwanie zakończona. Jeśli ustawisz dla parametru *Cancel* **wartość true**, zostanie wyświetlony komunikat o błędzie z informacją, że Autozapisywanie zostało wyłączone.
+> Jeśli w programie obsługi  zdarzeń zostanie wyświetlone okno dialogowe SaveAs <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> `ThisDocument` i ustawisz **wartość false** dla parametru *Cancel* , aplikacja może zostać nieoczekiwanie zakończona. Jeśli ustawisz dla parametru *Cancel* **wartość true**, zostanie wyświetlony komunikat o błędzie z informacją, że Autozapisywanie zostało wyłączone.
 
 ### <a name="to-save-the-document-associated-with-a-document-level-customization-with-a-new-name"></a>Aby zapisać dokument skojarzony z dostosowaniem na poziomie dokumentu przy użyciu nowej nazwy
 

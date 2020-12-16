@@ -1,5 +1,7 @@
 ---
 title: Język VBA i rozwiązania pakietu Office w programie Visual Studio
+description: Dowiedz się więcej o różnicach między programem Microsoft Visual Basic for Applications (VBA) i rozwiązaniami Microsoft Office w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24e7d3674712a17d940b94637db808c0d91d2d6a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d07975061a7b2f5f655bf7f4339671f28fe14c9
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62982119"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526419"
 ---
 # <a name="vba-and-office-solutions-in-visual-studio-compared"></a>Język VBA i rozwiązania pakietu Office w programie Visual Studio
   Program Microsoft Visual Basic for Applications (VBA) korzysta z niezarządzanego kodu, który jest ściśle zintegrowany z aplikacjami pakietu Office. Projekty Microsoft Office utworzone za pomocą programu Visual Studio umożliwiają korzystanie z narzędzi do projektowania .NET Framework i programu Visual Studio.

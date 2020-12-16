@@ -1,5 +1,7 @@
 ---
 title: Dodawanie kontrolek do dokumentów w czasie wykonywania w dodatku narzędzi VSTO
+description: Dowiedz się, jak za pomocą wstążki zezwolić użytkownikom na Dodawanie klasy przycisków lub interfejsu RichTextContentControl do dokumentu.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9e8cde57ece3774e94f923387e1a8f7ca71cf797
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbf6313f4788a0bd224d04639d3ab588a6469842
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254170"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526290"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-run-time-in-a-vsto-add-in"></a>Przewodnik: Dodawanie kontrolek do dokumentu w czasie wykonywania w dodatku narzędzi VSTO
   Możesz dodać kontrolki do dowolnego otwartego dokumentu programu Microsoft Office Word przy użyciu dodatku VSTO. W tym instruktażu przedstawiono sposób użycia wstążki, aby umożliwić użytkownikom dodawanie <xref:Microsoft.Office.Tools.Word.Controls.Button> lub <xref:Microsoft.Office.Tools.Word.RichTextContentControl> do dokumentu.
@@ -64,7 +66,7 @@ ms.locfileid: "71254170"
 
 2. W oknie dialogowym **Dodaj nowy element** wybierz pozycję **wstążka (projektant wizualny)**.
 
-3. Zmień nazwę nowej wstążki **na Wstążkę, a**następnie kliknij przycisk **Dodaj**.
+3. Zmień nazwę nowej wstążki **na Wstążkę, a** następnie kliknij przycisk **Dodaj**.
 
     Plik **MyRibbon.cs** lub **webwstążka. vb** zostanie otwarty w Projektancie wstążki i zostanie wyświetlona domyślna karta i Grupa.
 
@@ -72,7 +74,7 @@ ms.locfileid: "71254170"
 
 5. W oknie **Właściwości** , Zmień właściwość **etykieta** dla **grupa1** , aby **dodać kontrolki**.
 
-6. Na karcie **kontrolki wstążki pakietu Office** w **przyborniku**przeciągnij kontrolkę **CheckBox** na **grupa1**.
+6. Na karcie **kontrolki wstążki pakietu Office** w **przyborniku** przeciągnij kontrolkę **CheckBox** na **grupa1**.
 
 7. Kliknij pozycję **checkBox1** , aby ją zaznaczyć.
 
@@ -107,9 +109,9 @@ ms.locfileid: "71254170"
 
 ### <a name="to-add-and-remove-controls-on-the-active-document"></a>Aby dodać i usunąć kontrolki w aktywnym dokumencie
 
-1. W **Eksplorator rozwiązań**kliknij dwukrotnie pozycję *ThisAddIn.cs* lub *ThisAddIn. vb* , aby otworzyć plik w edytorze kodu.
+1. W **Eksplorator rozwiązań** kliknij dwukrotnie pozycję *ThisAddIn.cs* lub *ThisAddIn. vb* , aby otworzyć plik w edytorze kodu.
 
-2. Dodaj następujący kod do `ThisAddIn` klasy. Ten kod deklaruje <xref:Microsoft.Office.Tools.Word.Controls.Button> i <xref:Microsoft.Office.Tools.Word.RichTextContentControl> obiekty reprezentujące kontrolki, które zostaną dodane do dokumentu.
+2. Dodaj poniższy kod do klasy `ThisAddIn`. Ten kod deklaruje <xref:Microsoft.Office.Tools.Word.Controls.Button> i <xref:Microsoft.Office.Tools.Word.RichTextContentControl> obiekty reprezentujące kontrolki, które zostaną dodane do dokumentu.
 
      [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#1](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb#1)]
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#1](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#1)]
@@ -178,7 +180,7 @@ ms.locfileid: "71254170"
 ## <a name="next-steps"></a>Następne kroki
  Więcej informacji na temat kontrolek w dodatkach narzędzia VSTO można znaleźć w następujących tematach:
 
-- Aby uzyskać przykład, który pokazuje, jak dodać wiele innych typów kontrolek do dokumentu w czasie wykonywania i ponownie utworzyć formanty po ponownym otwarciu dokumentu, Zobacz przykładowo formanty dynamiczne dodatków programu Word w programie [Office przykłady i instruktaże](../vsto/office-development-samples-and-walkthroughs.md).
+- Aby uzyskać przykład, który pokazuje, jak dodać wiele innych typów formantów do dokumentu w czasie wykonywania i ponownie utworzyć formanty po ponownym otwarciu dokumentu, zapoznaj się z artykułem {Add-In Dynamic Controls ( [przykłady i przewodniki dotyczące projektowania) w pakiecie Office](../vsto/office-development-samples-and-walkthroughs.md).
 
 - Aby zapoznać się z przewodnikiem, który pokazuje, jak dodać kontrolki do arkusza przy użyciu dodatku VSTO dla programu Excel, zobacz [Przewodnik: Dodawanie kontrolek do arkusza w czasie wykonywania w projekcie dodatku VSTO](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md).
 

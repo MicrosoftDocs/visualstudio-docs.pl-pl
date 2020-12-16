@@ -1,5 +1,7 @@
 ---
 title: Strona publikowania, Projektant projektu (Programowanie Office)
+description: Dowiedz się, jak strona publikowanie projektanta projektu w programie Visual Studio służy do konfigurowania właściwości wdrożenia.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,17 +18,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4dfa575bea4e629c7521cc7f4c5a79707462714c
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 7f68ab8f0ee9efde903148d4702e85e99aad77d2
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810996"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525011"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Strona publikowania, Projektant projektu (Office Development w Visual Studio)
   Strona **Publikowanie** **projektanta projektu** służy do konfigurowania właściwości wdrożenia.
 
- Aby uzyskać dostęp do tej strony, zaznacz projekt w **Eksplorator rozwiązań**, a następnie w menu **projekt** wybierz polecenie właściwości *ProjectName* **Properties**. Jeśli strona **Publikowanie** nie jest wyświetlana, wybierz kartę **Publikowanie** .
+ Aby uzyskać dostęp do tej strony, zaznacz projekt w **Eksplorator rozwiązań**, a następnie w menu **projekt** wybierz polecenie właściwości *ProjectName* . Jeśli strona **Publikowanie** nie jest wyświetlana, wybierz kartę **Publikowanie** .
 
 > [!NOTE]
 > Możesz również ustawić lokalizację publikacji w **Kreatorze publikacji**. Aby uzyskać więcej informacji, zobacz [jak: publikowanie rozwiązania pakietu Office przy użyciu technologii ClickOnce](/previous-versions/bb386095(v=vs.110)).
@@ -36,15 +38,15 @@ ms.locfileid: "90810996"
 
  Lokalizacja folderu publikowania to katalog, do którego program Visual Studio kopiuje pliki rozwiązania, takie jak manifesty, zestawy i inne pliki z kompilacji. Musisz mieć dostęp do zapisu w tym katalogu.
 
- Dostępne opcje to: komputer lokalny, udział plików UNC lub witryna sieci Web HTTP/HTTPS. Ścieżka może być ścieżką lokalną (*c:\FolderName\PublishFolder*), względną (* \\ Publish*) lub w pełni kwalifikowaną lokalizacją (* \\ \servername\foldername* lub http://<em>servername/nazwa_folderu</em>).
+ Dostępne opcje to: komputer lokalny, udział plików UNC lub witryna sieci Web HTTP/HTTPS. Ścieżka może być ścieżką lokalną (*c:\FolderName\PublishFolder*), względną (*\\ Publish*) lub w pełni kwalifikowaną lokalizacją (*\\ \servername\foldername* lub http://<em>servername/nazwa_folderu</em>).
 
- Domyślnie lokalizacja publikowania jest *http://localhost/projectname/* zainstalowana, jeśli są zainstalowane usługi IIS lub katalog *publikacji \\ * , jeśli nie zainstalowano usług IIS.
+ Domyślnie lokalizacja publikowania jest *http://localhost/projectname/* zainstalowana, jeśli są zainstalowane usługi IIS lub katalog *publikacji \\* , jeśli nie zainstalowano usług IIS.
 
  **Adres URL folderu instalacji** Obowiązkowe.
 
  Adres URL folderu instalacji to katalog, z którego użytkownik końcowy zainstaluje dostosowanie. Jest to również ścieżka, która będzie używana przez rozwiązanie do sprawdzania dostępności aktualizacji. Ścieżka może być taka sama jak lokalizacja folderu publikowania, ale nie jest to wymagane.
 
- Dostępne opcje to: komputer lokalny, udział plików UNC lub witryna sieci Web HTTP/HTTPS. Ścieżka może być ścieżką lokalną (*c:\FolderName\PublishFolder*), względną (* \\ Publish*) lub w pełni kwalifikowaną lokalizacją (* \\ \servername\foldername* lub http://<em>servername/nazwa_folderu</em>). Wszystkie lokalizacje HTTP/HTTPS muszą być tworzone przy użyciu znaków US-ASCII. Znaki Unicode nie są obsługiwane.
+ Dostępne opcje to: komputer lokalny, udział plików UNC lub witryna sieci Web HTTP/HTTPS. Ścieżka może być ścieżką lokalną (*c:\FolderName\PublishFolder*), względną (*\\ Publish*) lub w pełni kwalifikowaną lokalizacją (*\\ \servername\foldername* lub http://<em>servername/nazwa_folderu</em>). Wszystkie lokalizacje HTTP/HTTPS muszą być tworzone przy użyciu znaków US-ASCII. Znaki Unicode nie są obsługiwane.
 
  Jeśli ścieżka instalacji jest ustawiona, pliki dostosowania muszą znajdować się w tej lokalizacji, aby użytkownicy mogli instalować dostosowanie. Lokalizacja powinna być ustawiona tylko wtedy, gdy znasz końcową lokalizację wdrożenia.
 
@@ -64,7 +66,7 @@ ms.locfileid: "90810996"
 
   Sprawdzanie dostępności aktualizacji za każdym razem, gdy zostanie załadowane dostosowanie na poziomie dokumentu lub dodatek VSTO, będzie on aktualizowany, ale wpłynie to na wydajność uruchamiania.
 
-  Jeśli wdrażasz program przy użyciu dysku CD lub dysku wymiennego, ustaw tę opcję na wartość **nigdy nie sprawdzaj, czy**są używane aktualizacje.
+  Jeśli wdrażasz program przy użyciu dysku CD lub dysku wymiennego, ustaw tę opcję na wartość **nigdy nie sprawdzaj, czy** są używane aktualizacje.
 
   **Opcje (opis)** Można ustawić opcje publikowania dla następujących właściwości:
 

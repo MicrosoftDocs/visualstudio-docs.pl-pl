@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: Tworzenie niestandardowej karty przy użyciu projektanta wstążki'
+description: Dowiedz się, w jaki sposób można utworzyć kartę niestandardową, a następnie dodać do niej kontrolki przy użyciu projektanta wstążki.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5f311f35ba4a8c443f47941a905ee4cf4d3ebfb2
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 539f75b7770abab75e912a28bc62ed51b7fb61d8
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585018"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524831"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>Przewodnik: Tworzenie niestandardowej karty przy użyciu projektanta wstążki
   Za pomocą projektanta wstążki można utworzyć niestandardową kartę, a następnie dodać do niej kontrolki i położenia.
@@ -68,7 +70,7 @@ ms.locfileid: "91585018"
 
      Plik **ActionsPaneControl1.cs** lub **ActionsPaneControl1. vb** zostanie otwarty w projektancie.
 
-3. Na karcie **Formanty standardowe** **przybornika**Dodaj etykietę do powierzchni projektanta.
+3. Na karcie **Formanty standardowe** **przybornika** Dodaj etykietę do powierzchni projektanta.
 
 4. W oknie **Właściwości** ustaw właściwość **Text** elementu Label1 na **Actions Window 1**.
 
@@ -83,7 +85,7 @@ ms.locfileid: "91585018"
 
 2. W oknie dialogowym **Dodaj nowy element** wybierz pozycję **wstążka (projektant wizualny)**.
 
-3. Zmień nazwę nowej wstążki **na Wstążkę, a**następnie wybierz pozycję **Dodaj**.
+3. Zmień nazwę nowej wstążki **na Wstążkę, a** następnie wybierz pozycję **Dodaj**.
 
      Plik **MyRibbon.cs** lub **webwstążka. vb** zostanie otwarty w Projektancie wstążki i zostanie wyświetlona domyślna karta i Grupa.
 
@@ -97,15 +99,15 @@ ms.locfileid: "91585018"
 
 8. W oknie **Właściwości** ustaw wartość **etykieta** **Menedżer okienka akcji**.
 
-9. Na karcie **kontrolki wstążki pakietu Office** w **przyborniku**przeciągnij przycisk na **grupa1**.
+9. Na karcie **kontrolki wstążki pakietu Office** w **przyborniku** przeciągnij przycisk na **grupa1**.
 
 10. Wybierz pozycję **Button1**.
 
 11. W oknie **Właściwości** Ustaw **etykietę** , aby **wyświetlić okienko akcje 1**.
 
-12. Dodaj drugi przycisk do **grupa1**i ustaw właściwość **etykieta** na **Pokaż okienko akcji 2**.
+12. Dodaj drugi przycisk do **grupa1** i ustaw właściwość **etykieta** na **Pokaż okienko akcji 2**.
 
-13. Na karcie **kontrolki wstążki pakietu Office** w **przyborniku**przeciągnij kontrolkę **ToggleButton** na **grupa1**.
+13. Na karcie **kontrolki wstążki pakietu Office** w **przyborniku** przeciągnij kontrolkę **ToggleButton** na **grupa1**.
 
 14. Ustaw właściwość **etykieta** na **Ukryj okienko akcje**.
 
@@ -114,7 +116,7 @@ ms.locfileid: "91585018"
 
 ### <a name="to-hide-and-show-actions-panes-by-using-buttons-in-the-custom-tab"></a>Aby ukryć i wyświetlić okienka akcji przy użyciu przycisków na karcie niestandardowe
 
-1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla *MyRibbon.cs* lub *wstążki. vb*, a następnie wybierz polecenie **Wyświetl kod**.
+1. W **Eksplorator rozwiązań** Otwórz menu skrótów dla *MyRibbon.cs* lub *wstążki. vb*, a następnie wybierz polecenie **Wyświetl kod**.
 
 2. Dodaj następujący kod na górze `MyRibbon` klasy. Ten kod tworzy dwa obiekty okienka akcji.
 

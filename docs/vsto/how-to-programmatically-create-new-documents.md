@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Programowane tworzenie nowych dokumentów'
+description: Dowiedz się, jak można programowo tworzyć nowe dokumenty w programie Microsoft Word przy użyciu programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8e82c5ca62c407481b73de9394c584c3039a8f57
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a7168c6b80657fe0e5ba7c8ae8511c1e000db4cb
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545993"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525882"
 ---
 # <a name="how-to-programmatically-create-new-documents"></a>Instrukcje: Programowane tworzenie nowych dokumentów
   Gdy tworzysz dokument programowo, nowy dokument jest <xref:Microsoft.Office.Interop.Word.Document> obiektem macierzystym. Ten obiekt nie ma dodatkowych zdarzeń i możliwości powiązania danych <xref:Microsoft.Office.Tools.Word.Document> elementu hosta. Aby uzyskać więcej informacji, zobacz Ograniczenia programowe [elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).

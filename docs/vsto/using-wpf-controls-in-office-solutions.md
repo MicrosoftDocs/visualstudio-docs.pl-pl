@@ -1,5 +1,7 @@
 ---
 title: Korzystanie z formantów WPF w rozwiązaniach pakietu Office
+description: Dowiedz się, jak używać formantów Windows Presentation Foundation (WPF) do projektowania interfejsów użytkownika w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 717e24315d1f6e57eda224ef17cc4ea5b5d550c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e041cda914cbf8aced4b19adfc80c601984c30e0
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73189749"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526441"
 ---
 # <a name="use-wpf-controls-in-office-solutions"></a>Korzystanie z formantów WPF w rozwiązaniach pakietu Office
 
@@ -45,7 +47,7 @@ Nie można dodać formantów WPF bezpośrednio do elementów interfejsu użytkow
 
 2. Dodaj element **kontrolki użytkownika (WPF)** do projektu.
 
-3. Z **przybornika**Dodaj formanty WPF do powierzchni projektu kontrolki użytkownika WPF.
+3. Z **przybornika** Dodaj formanty WPF do powierzchni projektu kontrolki użytkownika WPF.
 
      Domyślnie gdy projektant formantów użytkownika WPF jest otwarty, **Przybornik** zawiera tylko formanty WPF.
 
@@ -59,7 +61,7 @@ Nie można dodać formantów WPF bezpośrednio do elementów interfejsu użytkow
 
     - W przypadku niestandardowych okienek zadań Dodaj element **kontrolki użytkownika** do projektu. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie niestandardowego okienka zadań do aplikacji](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).
 
-6. Na karcie *ProjectName* **formanty użytkownika WPF** ProjectName w **przyborniku**przeciągnij kontrolkę użytkownika WPF do projektanta dla okienka Akcje, regionu formularza lub niestandardowego okienka zadań.
+6. Na karcie  **formanty użytkownika WPF** ProjectName w **przyborniku** przeciągnij kontrolkę użytkownika WPF do projektanta dla okienka Akcje, regionu formularza lub niestandardowego okienka zadań.
 
      Program Visual Studio automatycznie tworzy <xref:System.Windows.Forms.Integration.ElementHost> obiekt, który hostuje kontrolkę użytkownika WPF dla elementu interfejsu użytkownika.
 
@@ -71,7 +73,7 @@ Nie można dodać formantów WPF bezpośrednio do elementów interfejsu użytkow
 
 2. Dodaj element **kontrolki użytkownika (WPF)** do projektu.
 
-3. Z **przybornika**Dodaj formanty WPF do powierzchni projektu kontrolki użytkownika WPF.
+3. Z **przybornika** Dodaj formanty WPF do powierzchni projektu kontrolki użytkownika WPF.
 
 4. Skompiluj projekt.
 
@@ -79,7 +81,7 @@ Nie można dodać formantów WPF bezpośrednio do elementów interfejsu użytkow
 
 6. Otwórz projektanta dla kontrolki użytkownika Windows Forms.
 
-7. Na karcie *ProjectName* **formanty użytkownika WPF** ProjectName w **przyborniku**przeciągnij kontrolkę użytkownika WPF do projektanta.
+7. Na karcie  **formanty użytkownika WPF** ProjectName w **przyborniku** przeciągnij kontrolkę użytkownika WPF do projektanta.
 
      Program Visual Studio automatycznie tworzy <xref:System.Windows.Forms.Integration.ElementHost> obiekt, który hostuje kontrolkę użytkownika WPF w kontrolce użytkownika Windows Forms.
 
@@ -92,7 +94,7 @@ Nie można dodać formantów WPF bezpośrednio do elementów interfejsu użytkow
 
 ## <a name="host-wpf-controls-by-using-the-elementhost-class"></a>Hostowanie formantów WPF za pomocą klasy ElementHost
 
-Program Visual Studio udostępnia funkcje, które ułatwiają korzystanie z Windows Forms formantów w rozwiązaniach pakietu Office, ale nie udostępniają podobnych funkcji dla formantów WPF. Na przykład można dodać kontrolki Windows Forms do dokumentów i arkuszy w czasie projektowania, przeciągając kontrolki z **przybornika**lub w czasie wykonywania przy użyciu metod pomocnika. Jednak te narzędzia nie są dostępne dla formantów WPF.
+Program Visual Studio udostępnia funkcje, które ułatwiają korzystanie z Windows Forms formantów w rozwiązaniach pakietu Office, ale nie udostępniają podobnych funkcji dla formantów WPF. Na przykład można dodać kontrolki Windows Forms do dokumentów i arkuszy w czasie projektowania, przeciągając kontrolki z **przybornika** lub w czasie wykonywania przy użyciu metod pomocnika. Jednak te narzędzia nie są dostępne dla formantów WPF.
 
 Formanty WPF używają <xref:System.Windows.Forms.Integration.ElementHost> klasy jako warstwy integracji między formantem Windows Forms lub formularzem i kontrolkami WPF. Po dodaniu formantów WPF do rozwiązania w czasie projektowania program Visual Studio automatycznie generuje <xref:System.Windows.Forms.Integration.ElementHost> obiekt.
 

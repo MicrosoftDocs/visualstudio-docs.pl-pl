@@ -1,5 +1,7 @@
 ---
 title: ListObject — formant
+description: Formant ListObject to lista, która ujawnia zdarzenia i może być powiązana z danymi. Ponadto można dodać kontrolki ListObject do arkusza w czasie projektowania lub w czasie wykonywania.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3b5286a4bddff2b529abd0a565bb4dbeef7ffaf3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a80b56134f59975a39d24e824b6c83b2513b163
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71251867"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526593"
 ---
 # <a name="listobject-control"></a>ListObject — formant
   <xref:Microsoft.Office.Tools.Excel.ListObject>Kontrolka jest listą, która ujawnia zdarzenia i może być powiązana z danymi. Po dodaniu listy do arkusza program Visual Studio tworzy <xref:Microsoft.Office.Tools.Excel.ListObject> kontrolkę, którą można bezpośrednio programować bez konieczności przechodzenia przez model obiektów programu Microsoft Office Excel.

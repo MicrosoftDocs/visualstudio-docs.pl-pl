@@ -1,5 +1,7 @@
 ---
 title: Wpisy rejestru dotyczące dodatków narzędzi VSTO
+description: Dowiedz się, jak utworzyć konkretny zbiór wpisów rejestru podczas wdrażania dodatków VSTO utworzonych przy użyciu programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b02b50c42692ec2fd455358df5157e0b8481562b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d90b341fb4233c10c54947a6349480ea0c33b23a
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79416526"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524995"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Wpisy rejestru dotyczące dodatków narzędzi VSTO
   Podczas wdrażania dodatków VSTO utworzonych przy użyciu programu Visual Studio należy utworzyć określony zbiór wpisów rejestru. Te wpisy rejestru zawierają informacje umożliwiające aplikacji Microsoft Office odnajdywania i ładowania dodatku VSTO.
@@ -54,13 +56,13 @@ ms.locfileid: "79416526"
 
 |Aplikacja pakietu Office|Ścieżka konfiguracyjna|
 |------------------|------------------|
-|Visio|*Root* \\ Identyfikator dodatku \Software\Microsoft*programu Visio*\Addins \\ *add-in ID*|
-|Wszystkie inne|*Root*\Software\Microsoft\Office \\ *Nazwa aplikacji pakietu Office*root \Addins \\ *Identyfikator dodatku*|
+|Visio| \\ Identyfikator dodatku \Software\Microsoft *programu Visio*\Addins \\ |
+|Wszystkie inne|\Software\Microsoft\Office \\ *Nazwa aplikacji pakietu Office* root \Addins \\ *Identyfikator dodatku*|
 
 > [!NOTE]
-> Jeśli Instalator jest przeznaczony dla wszystkich użytkowników w systemie 64-bitowym, zaleca się, aby zawierał dwa wpisy rejestru, jeden pod HKEY_LOCAL_MACHINE \Software\Microsoft i jeden w ramach HKEY_LOCAL_MACHINE \Software \\ **Wow6432Node**\Microsoft Hive. Wynika to z faktu, że użytkownicy mogą korzystać z wersji pakietu Office 32-bitowej lub 64-bitowej na komputerze.
+> Jeśli Instalator jest przeznaczony dla wszystkich użytkowników w systemie 64-bitowym, zaleca się, aby zawierał dwa wpisy rejestru, jeden pod HKEY_LOCAL_MACHINE\Software\Microsoft i jeden pod HKEY_LOCAL_MACHINE\Software\\ **Wow6432Node**\Microsoft Hive. Wynika to z faktu, że użytkownicy mogą korzystać z wersji pakietu Office 32-bitowej lub 64-bitowej na komputerze.
 >
->Jeśli Instalator jest przeznaczony dla bieżącego użytkownika, nie trzeba go instalować do WOW6432Node, ponieważ ścieżka \Software HKEY_CURRENT_USER jest udostępniona.
+>Jeśli Instalator jest przeznaczony dla bieżącego użytkownika, nie trzeba go instalować do WOW6432Node, ponieważ ścieżka HKEY_CURRENT_USER\Software jest udostępniana.
 >
 >Aby uzyskać więcej informacji [, zobacz 32-bitowe i 64-bitowe dane aplikacji w rejestrze](/windows/win32/sysinfo/32-bit-and-64-bit-application-data-in-the-registry)
 
@@ -68,10 +70,10 @@ ms.locfileid: "79416526"
 
 |Wpis|Typ|Wartość|
 |-----------|----------|-----------|
-|**Opis**|REG_SZ|Wymagany. Krótki opis dodatku narzędzi VSTO.<br /><br /> Ten opis jest wyświetlany, gdy użytkownik wybierze dodatek VSTO w okienku **dodatków** okna dialogowego **opcje** w aplikacji Microsoft Office.|
-|**FriendlyName**|REG_SZ|Wymagany. Opisowa nazwa dodatku VSTO, który jest wyświetlany w oknie dialogowym **dodatków COM** w aplikacji Microsoft Office. Wartość domyślna to identyfikator dodatku VSTO.|
-|**LoadBehavior**|REG_DWORD|Wymagany. Wartość określająca, kiedy aplikacja próbuje załadować dodatek narzędzi VSTO i bieżący stan dodatku VSTO (załadowany lub zwolniony).<br /><br /> Domyślnie ten wpis jest ustawiony na 3, co oznacza, że dodatek VSTO jest ładowany podczas uruchamiania. Aby uzyskać więcej informacji, zobacz [LoadBehavior wartości](#LoadBehavior). **Uwaga:**  Jeśli użytkownik wyłączy dodatek VSTO, ta akcja modyfikuje wartość **LoadBehavior** w gałęzi rejestru **HKEY_CURRENT_USER** . Dla każdego użytkownika wartość **LoadBehavior** w gałęzi HKEY_CURRENT_USER zastępuje domyślny **LoadBehavior** zdefiniowany w gałęzi **HKEY_LOCAL_MACHINE** .|
-|**Manifestu**|REG_SZ|Wymagany. Pełna ścieżka manifestu wdrożenia dla dodatku VSTO. Ścieżka może być lokalizacją na komputerze lokalnym, udziałem sieciowym (UNC) lub serwerem sieci Web (HTTP).<br /><br /> Jeśli używasz Instalator Windows do wdrożenia rozwiązania, musisz dodać prefiks **File:///** do ścieżki **manifestu** . Należy również dołączyć ciąg **&#124;vstolocal** (czyli znak potoku **&#124;** po którym następuje **vstolocal**) na końcu tej ścieżki. Dzięki temu Twoje rozwiązanie zostanie załadowane z folderu instalacji, a nie z pamięci podręcznej ClickOnce. Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązania biurowego przy użyciu Instalator Windows](../vsto/deploying-a-vsto-solution-by-using-windows-installer.md). **Uwaga:**  Po utworzeniu dodatku narzędzi VSTO na komputerze deweloperskim program Visual Studio automatycznie dołącza **&#124;ciąg vstolocal** do tego wpisu rejestru.|
+|**Opis**|REG_SZ|Wymagane. Krótki opis dodatku narzędzi VSTO.<br /><br /> Ten opis jest wyświetlany, gdy użytkownik wybierze dodatek VSTO w okienku **dodatków** okna dialogowego **opcje** w aplikacji Microsoft Office.|
+|**FriendlyName**|REG_SZ|Wymagane. Opisowa nazwa dodatku VSTO, który jest wyświetlany w oknie dialogowym **dodatków COM** w aplikacji Microsoft Office. Wartość domyślna to identyfikator dodatku VSTO.|
+|**LoadBehavior**|REG_DWORD|Wymagane. Wartość określająca, kiedy aplikacja próbuje załadować dodatek narzędzi VSTO i bieżący stan dodatku VSTO (załadowany lub zwolniony).<br /><br /> Domyślnie ten wpis jest ustawiony na 3, co oznacza, że dodatek VSTO jest ładowany podczas uruchamiania. Aby uzyskać więcej informacji, zobacz [LoadBehavior wartości](#LoadBehavior). **Uwaga:**  Jeśli użytkownik wyłączy dodatek VSTO, ta akcja modyfikuje wartość **LoadBehavior** w gałęzi rejestru **HKEY_CURRENT_USER** . Dla każdego użytkownika wartość **LoadBehavior** w gałęzi HKEY_CURRENT_USER zastępuje domyślny **LoadBehavior** zdefiniowany w gałęzi **HKEY_LOCAL_MACHINE** .|
+|**Manifestu**|REG_SZ|Wymagane. Pełna ścieżka manifestu wdrożenia dla dodatku VSTO. Ścieżka może być lokalizacją na komputerze lokalnym, udziałem sieciowym (UNC) lub serwerem sieci Web (HTTP).<br /><br /> Jeśli używasz Instalator Windows do wdrożenia rozwiązania, musisz dodać prefiks **File:///** do ścieżki **manifestu** . Należy również dołączyć ciąg **&#124;vstolocal** (czyli znak potoku **&#124;** po którym następuje **vstolocal**) na końcu tej ścieżki. Dzięki temu Twoje rozwiązanie zostanie załadowane z folderu instalacji, a nie z pamięci podręcznej ClickOnce. Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązania biurowego przy użyciu Instalator Windows](../vsto/deploying-a-vsto-solution-by-using-windows-installer.md). **Uwaga:**  Po utworzeniu dodatku narzędzi VSTO na komputerze deweloperskim program Visual Studio automatycznie dołącza **&#124;ciąg vstolocal** do tego wpisu rejestru.|
 
 ### <a name="registry-entries-for-outlook-form-regions"></a><a name="OutlookEntries"></a> Wpisy rejestru dla regionów formularzy programu Outlook
  Jeśli utworzysz niestandardowy region formularza w dodatku VSTO dla programu Outlook, do zarejestrowania regionu formularza w programie Outlook są używane dodatkowe wpisy rejestru. Te wpisy są tworzone w innym kluczu rejestru dla każdej klasy komunikatów obsługiwanej przez region formularza. Te klucze rejestru znajdują się w następującej lokalizacji, gdzie *root* jest **HKEY_CURRENT_USER** lub **HKEY_LOCAL_MACHINE**.

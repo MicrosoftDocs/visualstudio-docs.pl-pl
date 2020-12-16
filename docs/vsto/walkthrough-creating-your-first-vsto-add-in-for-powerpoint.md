@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu PowerPoint'
+description: Utwórz dodatek na poziomie aplikacji dla programu Microsoft PowerPoint. Ta funkcja jest dostępna dla samej aplikacji, niezależnie od tego, które prezentacje są otwarte.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a50a47a813891151427707c371f1ebf3f75c336f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 3e02da3484ce7c2beb35e643d3d90d8e37225e11
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584311"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524858"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu PowerPoint
   W tym instruktażu pokazano, jak utworzyć dodatek narzędzi VSTO dla programu Microsoft Office PowerPoint. Funkcje, które tworzysz w tym rodzaju rozwiązanie, są dostępne dla samej aplikacji, niezależnie od tego, które prezentacje są otwarte. Aby uzyskać więcej informacji, zobacz [Omówienie tworzenia rozwiązań pakietu Office &#40;narzędzi VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -76,14 +78,14 @@ ms.locfileid: "91584311"
 
 ### <a name="to-add-a-text-box-to-each-new-slide"></a>Aby dodać pole tekstowe do każdego nowego slajdu
 
-1. W pliku kodu ThisAddIn Dodaj następujący kod do `ThisAddIn` klasy. Ten kod definiuje procedurę obsługi zdarzeń dla zdarzenia [Microsoft. Office. Interop. PowerPoint. EApplication_Event. PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) obiektu [Application](/previous-versions/office/developer/office-2010/ff764034(v=office.14)) .
+1. W pliku kodu ThisAddIn Dodaj następujący kod do `ThisAddIn` klasy. Ten kod definiuje procedurę obsługi zdarzeń dla zdarzenia [Microsoft.Office.Interop.PowerPoint.EApplication_Event. PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) obiektu [aplikacji](/previous-versions/office/developer/office-2010/ff764034(v=office.14)) .
 
     Gdy użytkownik doda nowy slajd do aktywnej prezentacji, ten program obsługi zdarzeń dodaje pole tekstowe na początku nowego slajdu i dodaje jakiś tekst do pola tekstowego.
 
     [!code-vb[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_PowerPointAddInTutorial/ThisAddIn.vb#1)]
     [!code-csharp[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#1)]
 
-2. Jeśli używasz języka C#, Dodaj następujący kod do `ThisAddIn_Startup` programu obsługi zdarzeń. Ten kod jest wymagany do nawiązania połączenia z programem `Application_PresentationNewSlide` obsługi zdarzeń przy użyciu zdarzenia [Microsoft. Office. Interop. PowerPoint. EApplication_Event. PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) .
+2. Jeśli używasz języka C#, Dodaj następujący kod do `ThisAddIn_Startup` programu obsługi zdarzeń. Ten kod jest wymagany do połączenia `Application_PresentationNewSlide` programu obsługi zdarzeń ze zdarzeniem [Microsoft.Office.Interop.PowerPoint.EApplication_Event. PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) .
 
     [!code-csharp[Trin_PowerPointAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#2)]
 
@@ -91,7 +93,7 @@ ms.locfileid: "91584311"
 
 - `Application`Pole `ThisAddIn` klasy. `Application`Pole zwraca obiekt [aplikacji](/previous-versions/office/developer/office-2010/ff764034(v=office.14)) , który reprezentuje bieżące wystąpienie programu PowerPoint.
 
-- `Sld`Parametr programu obsługi zdarzeń dla zdarzenia [Microsoft. Office. Interop. PowerPoint. EApplication_Event. PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) . `Sld`Parametr jest obiektem [slajdu](/previous-versions/office/developer/office-2010/ff763417(v=office.14)) , który reprezentuje nowy slajd. Aby uzyskać więcej informacji, zobacz [rozwiązania programu PowerPoint](../vsto/powerpoint-solutions.md).
+- `Sld`Parametr programu obsługi zdarzeń dla zdarzenia [Microsoft.Office.Interop.PowerPoint.EApplication_Event. PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) . `Sld`Parametr jest obiektem [slajdu](/previous-versions/office/developer/office-2010/ff763417(v=office.14)) , który reprezentuje nowy slajd. Aby uzyskać więcej informacji, zobacz [rozwiązania programu PowerPoint](../vsto/powerpoint-solutions.md).
 
 ## <a name="test-the-project"></a>Testowanie projektu
  Podczas kompilowania i uruchamiania projektu, sprawdź, czy pole tekstowe pojawia się w nowych slajdach dodawanych do prezentacji.

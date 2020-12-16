@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: programowe przechodzenie w pętli poprzez znalezione elementy w dokumentach'
+description: Dowiedz się, w jaki sposób można programowo zapętlać przez znalezione elementy w dokumencie programu Microsoft Word przy użyciu programu Visual Studio.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e033b3d43f40736d7c77d11b489c0a6c2e91434e
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 634012cae7f12f5346ec83bbd2b41c1019ef066d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585148"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525628"
 ---
 # <a name="how-to-programmatically-loop-through-found-items-in-documents"></a>Instrukcje: programowe przechodzenie w pętli poprzez znalezione elementy w dokumentach
   <xref:Microsoft.Office.Interop.Word.Find>Klasa ma <xref:Microsoft.Office.Interop.Word.Find.Found%2A> Właściwość, która zwraca **wartość true** za każdym razem, gdy zostanie znaleziony przeszukiwany element. Możesz przechodzić między wszystkimi wystąpieniami znajdującymi się w <xref:Microsoft.Office.Interop.Word.Range> <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> metodzie przy użyciu metody.

@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: powiązywanie danych z kontrolkami w okienku akcji programu Word'
+description: Powiąż dane z kontrolkami w okienku Akcje w programie Microsoft Word. Kontrolki ilustrują relację wzorzec/szczegóły między tabelami w bazie danych SQL Server.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 05df38bf6056b392c0b991617316ba2c1c657306
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 76dffda9b332b9b76d6c0e0a423073959bcc7a56
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585070"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526208"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>Przewodnik: powiązywanie danych z kontrolkami w okienku akcji programu Word
   Ten Instruktaż przedstawia powiązanie danych z kontrolkami w okienku Akcje w programie Word. Kontrolki ilustrują relację wzorzec/szczegóły między tabelami w bazie danych SQL Server.
@@ -76,7 +78,7 @@ ms.locfileid: "91585070"
 
 ### <a name="to-add-a-data-source-to-the-project"></a>Aby dodać źródło danych do projektu
 
-1. Jeśli okno **źródła danych** nie jest widoczne, Wyświetl je na pasku menu, wybierając opcję **Wyświetl**  >  **inne**  >  **źródła danych**systemu Windows.
+1. Jeśli okno **źródła danych** nie jest widoczne, Wyświetl je na pasku menu, wybierając opcję **Wyświetl**  >  **inne**  >  **źródła danych** systemu Windows.
 
    > [!NOTE]
    > Jeśli **Pokaż źródła danych** nie są dostępne, kliknij dokument programu Word, a następnie sprawdź ponownie.
@@ -95,7 +97,7 @@ ms.locfileid: "91585070"
 
 8. Zaznacz pole wyboru obok tabel **dostawcy** i **produkty** .
 
-9. Kliknij przycisk **Zakończ**.
+9. Kliknij przycisk **Finish** (Zakończ).
 
    Kreator dodaje tabelę tabele i **produkty** **dostawcy** do okna **źródła danych** . Dodaje również typ DataSet do projektu, który jest widoczny w **Eksplorator rozwiązań**.
 
@@ -202,7 +204,7 @@ ms.locfileid: "91585070"
 
 ### <a name="to-show-the-actions-pane"></a>Aby wyświetlić okienko akcje
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy **ThisDocument. vb** lub **ThisDocument.cs**, a następnie kliknij polecenie **Wyświetl kod** w menu skrótów.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy **ThisDocument. vb** lub **ThisDocument.cs**, a następnie kliknij polecenie **Wyświetl kod** w menu skrótów.
 
 2. Utwórz nowe wystąpienie formantu w górnej części `ThisDocument` klasy, tak aby wyglądało jak w poniższym przykładzie.
 

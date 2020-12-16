@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Programowane wyświetlanie dokumentów w podglądzie wydruku'
+description: Dowiedz się, jak programowo wyświetlać dokumenty w podglądzie wydruku w dokumencie programu Microsoft Word.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 17671ab5d544341cbd3a02713a8b29b55863f5ac
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 69c5014958d137b534a283b0d07fa048966092be
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585213"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525852"
 ---
 # <a name="how-to-programmatically-display-documents-in-print-preview"></a>Instrukcje: Programowane wyświetlanie dokumentów w podglądzie wydruku
   Jeśli rozwiązanie generuje raport, możesz chcieć wyświetlić raport dla użytkownika w trybie Podgląd wydruku.

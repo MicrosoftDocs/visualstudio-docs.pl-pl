@@ -1,5 +1,7 @@
 ---
 title: Projekty pakietu Office w środowisku programu Visual Studio
+description: Dowiedz się, w jaki sposób projekty Microsoft Office mają środowisko programistyczne podobne do innych typów projektów w programie Visual Studio, takich jak projekty Windows Forms.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -41,12 +43,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 65f3a3abfe7e49872c7131a247d74612200bf42a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0e183d5aca3fa856f45f322c2b79a76524b28005
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62978061"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525159"
 ---
 # <a name="office-projects-in-the-visual-studio-environment"></a>Projekty pakietu Office w środowisku programu Visual Studio
   Dla projektów pakietu Microsoft Office przygotowano środowisko programistyczne podobne jak do innych typów projektów w programie, np. projektów interfejsu Windows Forms. Po utworzeniu lub otwarciu projektu pakietu Office elementy projektu są wyświetlane w **Eksplorator rozwiązań**. W projektach na poziomie dokumentu dokument (tzn. dokument programu Word lub skoroszyt programu Excel) jest otwierany w programie Visual Studio i zachowuje się jak projektant wizualny.
@@ -64,14 +66,14 @@ ms.locfileid: "62978061"
 
   W projekcie dodatku VSTO **Eksplorator rozwiązań** wyświetla następujące domyślne elementy:
 
-- Węzeł aplikacji. Ten węzeł ma taką samą nazwę jak aplikacja hosta, taka jak **Word**, **Excel**lub **Outlook**. Węzeł aplikacji zawiera plik kodu ThisAddIn. Udostępnia również **przestrzeń nazw dla właściwości element hosta** . Aby uzyskać więcej informacji na temat tej właściwości, zobacz [właściwości w projektach pakietu Office](../vsto/properties-in-office-projects.md).
+- Węzeł aplikacji. Ten węzeł ma taką samą nazwę jak aplikacja hosta, taka jak **Word**, **Excel** lub **Outlook**. Węzeł aplikacji zawiera plik kodu ThisAddIn. Udostępnia również **przestrzeń nazw dla właściwości element hosta** . Aby uzyskać więcej informacji na temat tej właściwości, zobacz [właściwości w projektach pakietu Office](../vsto/properties-in-office-projects.md).
 
 - Plik kodu ThisAddIn. Ten plik zawiera wygenerowaną `ThisAddIn` klasę dla dodatku VSTO. Aby uzyskać więcej informacji na temat tej klasy, zobacz [dodatki narzędzi VSTO dla programu](../vsto/programming-vsto-add-ins.md).
 
 - Ukryte pliki projektu, które nie są przeznaczone do bezpośredniej edycji. Aby uzyskać więcej informacji, zobacz [ukryte pliki projektu](#hiddenfiles).
 
 ### <a name="temporary-certificates"></a>Tymczasowe certyfikaty
- Projekty pakietu Office zawierają również tymczasowy certyfikat o nazwie *projekt*_TemporaryKey. pfx. Certyfikat służy do podpisywania manifestów aplikacji i wdrażania projektu w trakcie programowania. Aby uzyskać więcej informacji, zobacz [udzielanie zaufania do rozwiązań pakietu Office](../vsto/granting-trust-to-office-solutions.md) i [bezpiecznych rozwiązań pakietu Office](../vsto/securing-office-solutions.md).
+ Projekty pakietu Office zawierają również tymczasowy certyfikat o nazwie *projekt* _TemporaryKey. pfx. Certyfikat służy do podpisywania manifestów aplikacji i wdrażania projektu w trakcie programowania. Aby uzyskać więcej informacji, zobacz [udzielanie zaufania do rozwiązań pakietu Office](../vsto/granting-trust-to-office-solutions.md) i [bezpiecznych rozwiązań pakietu Office](../vsto/securing-office-solutions.md).
 
 ### <a name="hidden-project-files"></a><a name="hiddenfiles"></a> Ukryte pliki projektu
  Niektóre pliki projektu są domyślnie ukryte. Pliki te są generowane przez program Visual Studio i różnią się w zależności od typu projektu. Aby wyświetlić ukryte pliki, kliknij przycisk **Pokaż wszystkie pliki** w **Eksplorator rozwiązań**.
@@ -113,7 +115,7 @@ ms.locfileid: "62978061"
  Aby uzyskać więcej informacji na temat edytora kodu, zobacz [pisanie kodu w edytorze kodu i tekstu](../ide/writing-code-in-the-code-and-text-editor.md). Aby uzyskać więcej informacji na temat pisania kodu w projektach pakietu Office, zobacz [pisanie kodu w rozwiązaniach pakietu Office](../vsto/writing-code-in-office-solutions.md).
 
 ## <a name="properties-window"></a>Okno właściwości
- W oknie **Właściwości** są wyświetlane właściwości elementów projektu, które są wybrane w **Eksplorator rozwiązań**i dla elementów interfejsu użytkownika wybranych w projektancie, takich jak formanty czy dokument w projekcie na poziomie dokumentu. Niektóre właściwości są specyficzne dla aplikacji i dokumentu, a inne takie same we wszystkich projektach.
+ W oknie **Właściwości** są wyświetlane właściwości elementów projektu, które są wybrane w **Eksplorator rozwiązań** i dla elementów interfejsu użytkownika wybranych w projektancie, takich jak formanty czy dokument w projekcie na poziomie dokumentu. Niektóre właściwości są specyficzne dla aplikacji i dokumentu, a inne takie same we wszystkich projektach.
 
 ## <a name="data-sources-window"></a>Data Sources — Okno
  Możesz użyć okna **źródła danych** w projektach pakietu Office na poziomie dokumentu, aby przeciągnąć źródło danych do dokumentu i utworzyć formant, który jest powiązany ze źródłem danych. Aby uzyskać więcej informacji, zobacz [Powiązywanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).

@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: proste powiązanie danych w projekcie dodatku VSTO'
+description: Dowiedz się, jak dodać kontrolki do dokumentu programu Microsoft Word i powiązać kontrolki z danymi w czasie wykonywania.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 67264800fd2baa1ca685bcc578fb4d400e6538dd
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: bc0b4f18e0f9a45f19148fde9e3d289ccad9e73f
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584914"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526157"
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>Przewodnik: proste powiązanie danych w projekcie dodatku VSTO
 
@@ -58,7 +60,7 @@ Pierwszym krokiem jest utworzenie projektu dodatku VSTO dla programu Word.
 
 ### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt
 
-1. Utwórz projekt dodatku VSTO programu Word z nazwą **wypełniania dokumentów z bazy danych**przy użyciu Visual Basic lub C#.
+1. Utwórz projekt dodatku VSTO programu Word z nazwą **wypełniania dokumentów z bazy danych** przy użyciu Visual Basic lub C#.
 
      Aby uzyskać więcej informacji, zobacz [How to: Create Office projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
@@ -72,7 +74,7 @@ Użyj okna **źródła danych** , aby dodać do projektu typ zestawu danych.
 
 ### <a name="to-add-a-typed-dataset-to-the-project"></a>Aby dodać typ DataSet do projektu
 
-1. Jeśli okno **źródła danych** nie jest widoczne, Wyświetl je na pasku menu, wybierając opcję **Wyświetl**  >  **inne**  >  **źródła danych**systemu Windows.
+1. Jeśli okno **źródła danych** nie jest widoczne, Wyświetl je na pasku menu, wybierając opcję **Wyświetl**  >  **inne**  >  **źródła danych** systemu Windows.
 
 2. Wybierz pozycję **Dodaj nowe źródło danych** , aby uruchomić **Kreatora konfiguracji źródła danych**.
 
@@ -86,7 +88,7 @@ Użyj okna **źródła danych** , aby dodać do projektu typ zestawu danych.
 
 6. Na stronie **Wybierz obiekty bazy danych** rozwiń węzeł **tabele** i wybierz pozycję **klient (tabeli SalesLT)**.
 
-7. Kliknij przycisk **Zakończ**.
+7. Kliknij przycisk **Finish** (Zakończ).
 
     Plik *AdventureWorksLTDataSet. xsd* zostanie dodany do **Eksplorator rozwiązań**. Ten plik definiuje następujące elementy:
 

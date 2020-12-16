@@ -1,5 +1,7 @@
 ---
 title: Aktualizowanie regionów formularzy programu Outlook podczas migracji do .NET Framework 4,5
+description: Należy zmodyfikować kod, jeśli struktura docelowa projektu dodatku programu Outlook VSTO z regionami formularza została zmieniona na .NET Framework 4 lub nowszy.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9d8978703630e99ecb930e18e7d128eddff8792f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 507132a28526e4ce008957fa0b988c23c09d686f
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584402"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526579"
 ---
 # <a name="update-outlook-form-regions-when-migrated-to-net-framework-45"></a>Aktualizowanie regionów formularzy programu Outlook podczas migracji do .NET Framework 4,5
 

@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Programowane poszerzanie zakresów w dokumentach'
+description: Dowiedz się, jak programowo zwiększyć zakres początkowy i punkt końcowy w dokumencie programu Microsoft Word na poziomie dokumentu lub na poziomie aplikacji.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 35ef0ea0352141f18945632f996237c2d9d90204
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 61ed056b5cebcebb6fe2dffd66dc374e4e1f9205
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547423"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525745"
 ---
 # <a name="how-to-programmatically-extend-ranges-in-documents"></a>Instrukcje: Programowane poszerzanie zakresów w dokumentach
   Po zdefiniowaniu <xref:Microsoft.Office.Interop.Word.Range> obiektu w Microsoft Office dokumencie programu Word można zmienić jego początkową i końcową punkty za pomocą <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> metod i <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> . <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A>Metody i <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> przyjmują te same dwa argumenty, *jednostkę* i *liczbę*. Argument *Count* to liczba jednostek do przeniesienia, a argument *Unit* może być jedną z następujących <xref:Microsoft.Office.Interop.Word.WdUnits> wartości:

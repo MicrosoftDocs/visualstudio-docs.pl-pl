@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: powiązywanie danych z kontrolkami w okienku akcji programu Excel'
+description: Powiąż dane z kontrolkami w okienku Akcje w programie Microsoft Excel. Kontrolki ilustrują relację wzorzec/szczegóły między tabelami w bazie danych SQL Server.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3801aff53a5bf9a9a8d77263ab74127c1b2a9846
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 6c53f4c1dfe9838fe4522dcc71b675a7f6b868d4
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585057"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524974"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-an-excel-actions-pane"></a>Przewodnik: powiązywanie danych z kontrolkami w okienku akcji programu Excel
   W tym instruktażu przedstawiono powiązanie danych z kontrolkami w okienku Akcje w programie Microsoft Office Excel. Kontrolki ilustrują relację wzorzec/szczegóły między tabelami w bazie danych SQL Server.
@@ -67,7 +69,7 @@ ms.locfileid: "91585057"
 
 ### <a name="to-add-a-new-data-source-to-the-project"></a>Aby dodać nowe źródło danych do projektu
 
-1. Jeśli okno **źródła danych** nie jest widoczne, Wyświetl je na pasku menu, wybierając opcję **Wyświetl**  >  **inne**  >  **źródła danych**systemu Windows.
+1. Jeśli okno **źródła danych** nie jest widoczne, Wyświetl je na pasku menu, wybierając opcję **Wyświetl**  >  **inne**  >  **źródła danych** systemu Windows.
 
 2. Wybierz pozycję **Dodaj nowe źródło danych** , aby uruchomić **Kreatora konfiguracji źródła danych**.
 
@@ -83,9 +85,9 @@ ms.locfileid: "91585057"
 
 8. Zaznacz pole wyboru obok tabeli **dostawcy** .
 
-9. Rozwiń tabelę **Products (produkty** ) i wybierz pozycję **ProductName**, **IDDostawcy**, **QuantityPerUnit**i **CenaJednostkowa**.
+9. Rozwiń tabelę **Products (produkty** ) i wybierz pozycję **ProductName**, **IDDostawcy**, **QuantityPerUnit** i **CenaJednostkowa**.
 
-10. Kliknij przycisk **Zakończ**.
+10. Kliknij przycisk **Finish** (Zakończ).
 
     Kreator dodaje tabelę tabele i **produkty** **dostawcy** do okna **źródła danych** . Dodaje również typ DataSet do projektu, który jest widoczny w **Eksplorator rozwiązań**.
 
@@ -94,7 +96,7 @@ ms.locfileid: "91585057"
 
 ### <a name="to-add-a-namedrange-control-and-a-listobject-control"></a>Aby dodać formant NamedRange i formant ListObject
 
-1. Sprawdź, czy w projektancie programu Visual Studio jest otwarty skoroszyt **Pane.xlsxakcje w programie Excel ** `Sheet1` .
+1. Sprawdź, czy w projektancie programu Visual Studio jest otwarty skoroszyt **Pane.xlsxakcje w programie Excel** `Sheet1` .
 
 2. W oknie **źródła danych** Rozwiń tabelę **dostawcy** .
 
@@ -108,7 +110,7 @@ ms.locfileid: "91585057"
 
 6. Na liście rozwijanej kliknij pozycję **Lista** , a następnie przeciągnij tabelę **Products** do komórki **a6** w `Sheet1` .
 
-     <xref:Microsoft.Office.Tools.Excel.ListObject> `ProductNameListObject` W komórce **a6**zostanie utworzony formant o nazwie. W tym samym czasie <xref:System.Windows.Forms.BindingSource> nazwa `productsBindingSource` i adapter tabeli są dodawane do projektu. Formant jest powiązany z <xref:System.Windows.Forms.BindingSource> , który z kolei jest powiązany z <xref:System.Data.DataSet> wystąpieniem.
+     <xref:Microsoft.Office.Tools.Excel.ListObject> `ProductNameListObject` W komórce **a6** zostanie utworzony formant o nazwie. W tym samym czasie <xref:System.Windows.Forms.BindingSource> nazwa `productsBindingSource` i adapter tabeli są dodawane do projektu. Formant jest powiązany z <xref:System.Windows.Forms.BindingSource> , który z kolei jest powiązany z <xref:System.Data.DataSet> wystąpieniem.
 
 7. W przypadku języka C# wybierz pozycję **suppliersBindingSource** na pasku składnika i zmień właściwość **Modyfikatory** na **Internal** w oknie **Właściwości** .
 
@@ -125,7 +127,7 @@ ms.locfileid: "91585057"
 
 ### <a name="to-add-data-bound-windows-forms-controls-to-an-actions-pane-control"></a>Aby dodać kontrolki Windows Forms powiązane z danymi do kontrolki okienka akcji
 
-1. Na kartach **Formanty standardowe** **przybornika**przeciągnij <xref:System.Windows.Forms.ComboBox> kontrolkę do okienka Akcje.
+1. Na kartach **Formanty standardowe** **przybornika** przeciągnij <xref:System.Windows.Forms.ComboBox> kontrolkę do okienka Akcje.
 
 2. Zmień właściwość **size** na **171, 21**.
 
@@ -152,7 +154,7 @@ ms.locfileid: "91585057"
 
 #### <a name="to-show-the-actions-pane"></a>Aby wyświetlić okienko akcje
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy *ThisWorkbook. vb* lub *ThisWorkbook.cs*, a następnie kliknij polecenie **Wyświetl kod**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy *ThisWorkbook. vb* lub *ThisWorkbook.cs*, a następnie kliknij polecenie **Wyświetl kod**.
 
 2. Utwórz nowe wystąpienie kontrolki użytkownika w `ThisWorkbook` klasie.
 

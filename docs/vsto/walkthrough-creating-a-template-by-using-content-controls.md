@@ -1,5 +1,6 @@
 ---
 title: 'Przewodnik: Tworzenie szablonu za pomocą kontrolek zawartości'
+description: Dowiedz się, jak utworzyć dostosowanie na poziomie dokumentu, które używa formantów zawartości do tworzenia zawartości strukturalnej i wielokrotnego użytku w szablonie programu Microsoft Word.
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 30f2443c724d547afe3c510e64f2c50fd9dd4db9
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 2dd7e75048a84a4e235390b99d17d48dfad039ec
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585031"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524980"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>Przewodnik: Tworzenie szablonu za pomocą kontrolek zawartości
   W tym instruktażu pokazano, jak utworzyć dostosowanie na poziomie dokumentu, które używa formantów zawartości do tworzenia zawartości strukturalnej i wielokrotnego użytku w szablonie programu Microsoft Office Word.
@@ -138,7 +139,7 @@ ms.locfileid: "91585031"
 
 ### <a name="to-modify-the-ui-of-the-content-controls-programmatically"></a>Aby programowo zmodyfikować interfejs użytkownika formantów zawartości
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **ThisDocument.cs** lub **ThisDocument. vb**, a następnie kliknij polecenie **Wyświetl kod**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję **ThisDocument.cs** lub **ThisDocument. vb**, a następnie kliknij polecenie **Wyświetl kod**.
 
 2. Dodaj poniższy kod do klasy `ThisDocument`. Ten kod deklaruje kilka obiektów, które zostaną użyte w dalszej części tego przewodnika.
 

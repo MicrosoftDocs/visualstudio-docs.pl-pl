@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: pobieranie danych z pamięci podręcznej ze skoroszytu na serwerze'
+description: Dowiedz się, jak można pobrać dane z zestawu danych, który jest buforowany w skoroszycie programu Microsoft Excel bez uruchamiania programu Excel przy użyciu klasy ServerDocument.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 69d5a9932a781260609a0b00c8576c9ecc85ad1d
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: f32ad4ffe44eb725953bc664acf4c4c38da4b11e
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584953"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524837"
 ---
 # <a name="walkthrough-retrieve-cached-data-from-a-workbook-on-a-server"></a>Przewodnik: pobieranie danych z pamięci podręcznej ze skoroszytu na serwerze
   W tym instruktażu pokazano, jak pobrać dane z zestawu danych, który jest buforowany w Microsoft Office skoroszycie programu Excel bez uruchamiania programu Excel przy użyciu <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> klasy.
@@ -82,7 +84,7 @@ ms.locfileid: "91584953"
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje projekt **AdventureWorksDataSet** do **Eksplorator rozwiązań** i otwiera plik kodu *Class1.cs* lub *Class1. vb* .
 
-9. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję *Class1.cs* lub *Class1. vb*, a następnie kliknij polecenie **Usuń**. Ten plik nie jest potrzebny do tego przewodnika.
+9. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję *Class1.cs* lub *Class1. vb*, a następnie kliknij polecenie **Usuń**. Ten plik nie jest potrzebny do tego przewodnika.
 
 ## <a name="define-a-dataset-in-the-class-library-project"></a>Zdefiniuj zestaw danych w projekcie biblioteki klas
  Zdefiniuj zestaw danych, który zawiera dane z bazy danych AdventureWorksLT dla SQL Server 2005. W dalszej części tego przewodnika odwołujesz się do tego zestawu danych z projektu skoroszytu programu Excel i projektu aplikacji konsolowej.
@@ -91,9 +93,9 @@ ms.locfileid: "91584953"
 
 ### <a name="define-a-typed-dataset-in-the-class-library-project"></a>Zdefiniuj zestaw danych o określonym typie w projekcie biblioteki klas
 
-1. W **Eksplorator rozwiązań**kliknij projekt **AdventureWorksDataSet** .
+1. W **Eksplorator rozwiązań** kliknij projekt **AdventureWorksDataSet** .
 
-2. Jeśli okno **źródła danych** nie jest widoczne, Wyświetl je na pasku menu, wybierając opcję **Wyświetl**  >  **inne**  >  **źródła danych**systemu Windows.
+2. Jeśli okno **źródła danych** nie jest widoczne, Wyświetl je na pasku menu, wybierając opcję **Wyświetl**  >  **inne**  >  **źródła danych** systemu Windows.
 
 3. Wybierz pozycję **Dodaj nowe źródło danych** , aby uruchomić **Kreatora konfiguracji źródła danych**.
 
@@ -107,7 +109,7 @@ ms.locfileid: "91584953"
 
 7. Na stronie **Wybierz obiekty bazy danych** rozwiń węzeł **tabele** i wybierz pozycję **produkt (tabeli SalesLT)**.
 
-8. Kliknij przycisk **Zakończ**.
+8. Kliknij przycisk **Finish** (Zakończ).
 
     Plik *AdventureWorksLTDataSet. xsd* zostanie dodany do projektu **AdventureWorksDataSet** . Ten plik definiuje następujące elementy:
 
@@ -117,7 +119,7 @@ ms.locfileid: "91584953"
 
      Oba te obiekty będą używane w dalszej części tego przewodnika.
 
-9. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **AdventureWorksDataSet** , a następnie kliknij pozycję **Kompiluj**.
+9. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję **AdventureWorksDataSet** , a następnie kliknij pozycję **Kompiluj**.
 
      Upewnij się, że projekt kompiluje się bez błędów.
 
@@ -126,7 +128,7 @@ ms.locfileid: "91584953"
 
 ### <a name="create-the-excel-workbook-project"></a>Utwórz projekt skoroszytu programu Excel
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy rozwiązanie **AdventureWorksDataSet** , wskaż polecenie **Dodaj**, a następnie kliknij pozycję **Nowy projekt**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy rozwiązanie **AdventureWorksDataSet** , wskaż polecenie **Dodaj**, a następnie kliknij pozycję **Nowy projekt**.
 
 2. W okienku szablony rozwiń pozycję **Visual C#** lub **Visual Basic**, a następnie rozwiń węzeł **Office/SharePoint**.
 
@@ -147,7 +149,7 @@ ms.locfileid: "91584953"
 ## <a name="add-the-dataset-to-data-sources-in-the-excel-workbook-project"></a>Dodawanie zestawu danych do źródeł danych w projekcie skoroszytu programu Excel
  Zanim będzie można wyświetlić zestaw danych w skoroszycie programu Excel, musisz najpierw dodać zestaw danych do źródeł danych w projekcie skoroszytu programu Excel.
 
-1. W **Eksplorator rozwiązań**kliknij dwukrotnie pozycję *Sheet1.cs* lub *Arkusz1. vb* w projekcie **AdventureWorksReport** .
+1. W **Eksplorator rozwiązań** kliknij dwukrotnie pozycję *Sheet1.cs* lub *Arkusz1. vb* w projekcie **AdventureWorksReport** .
 
      Skoroszyt zostanie otwarty w projektancie.
 
@@ -190,7 +192,7 @@ ms.locfileid: "91584953"
 ## <a name="initialize-the-dataset-in-the-workbook"></a>Zainicjuj zestaw danych w skoroszycie
  Aby można było pobrać dane z buforowanego zestawu danych przy użyciu aplikacji konsolowej, należy najpierw wypełnić buforowany zestaw danych danymi.
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy plik *Sheet1.cs* lub *Arkusz1. vb* , a następnie kliknij polecenie **Wyświetl kod**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy plik *Sheet1.cs* lub *Arkusz1. vb* , a następnie kliknij polecenie **Wyświetl kod**.
 
 2. Zastąp `Sheet1_Startup` procedurę obsługi zdarzeń poniższym kodem. Ten kod używa instancji `ProductTableAdapter` klasy, która jest zdefiniowana w projekcie **AdventureWorksDataSet** , aby wypełnić buforowany zestaw danych danymi, jeśli jest to obecnie puste.
 
@@ -202,7 +204,7 @@ ms.locfileid: "91584953"
 
 ### <a name="build-and-run-the-project"></a>Kompilowanie i uruchamianie projektu
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt **AdventureWorksReport** , wybierz polecenie **Debuguj**, a następnie kliknij polecenie **Uruchom nowe wystąpienie**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt **AdventureWorksReport** , wybierz polecenie **Debuguj**, a następnie kliknij polecenie **Uruchom nowe wystąpienie**.
 
      Projekt został skompilowany, a skoroszyt zostanie otwarty w programie Excel. Sprawdź następujące informacje:
 
@@ -217,7 +219,7 @@ ms.locfileid: "91584953"
 ## <a name="create-a-console-application-project"></a>Tworzenie projektu aplikacji konsolowej
  Utwórz projekt aplikacji konsoli, który ma być używany do modyfikowania danych w buforowanym zestawie danych w skoroszycie.
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy rozwiązanie **AdventureWorksDataSet** , wskaż polecenie **Dodaj**, a następnie kliknij pozycję **Nowy projekt**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy rozwiązanie **AdventureWorksDataSet** , wskaż polecenie **Dodaj**, a następnie kliknij pozycję **Nowy projekt**.
 
 2. W okienku **typy projektów** rozwiń pozycję **Visual C#** lub **Visual Basic**, a następnie kliknij pozycję **Windows**.
 
@@ -234,13 +236,13 @@ ms.locfileid: "91584953"
 
 ### <a name="retrieve-data-from-the-cached-dataset"></a>Pobieranie danych z buforowanego zestawu danych
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt **DataReader** i kliknij polecenie **Dodaj odwołanie**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt **DataReader** i kliknij polecenie **Dodaj odwołanie**.
 
 2. Na karcie **.NET** wybierz pozycję **Microsoft. VisualStudio. Tools. Applications. ServerDocument**.
 
 3. Kliknij przycisk **OK**.
 
-4. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt **DataReader** i kliknij polecenie **Dodaj odwołanie**.
+4. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt **DataReader** i kliknij polecenie **Dodaj odwołanie**.
 
 5. Na karcie **projekty** wybierz pozycję **AdventureWorksDataSet**, a następnie kliknij przycisk **OK**.
 
@@ -283,7 +285,7 @@ ms.locfileid: "91584953"
 
 ### <a name="test-the-workbook"></a>Testowanie skoroszytu
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt **DataReader** , wskaż polecenie **Debuguj**, a następnie kliknij polecenie **Uruchom nowe wystąpienie**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt **DataReader** , wskaż polecenie **Debuguj**, a następnie kliknij polecenie **Uruchom nowe wystąpienie**.
 
      Sprawdź, czy aplikacja raportuje, że lokalny zestaw danych ma 295 wierszy.
 

@@ -1,5 +1,7 @@
 ---
 title: podstawowe zestawy międzyoperacyjne pakietu Office
+description: Dowiedz się, jak używać podstawowego zestawu międzyoperacyjnego (PIA), aby uzyskać dostęp do funkcji aplikacji Microsoft Office z projektu pakietu Office.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 25dad2d4601974e70e80377e634d05b60523318e
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: 190c5785be9d17ee0a25d16ad6342368b658f252
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91830759"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525229"
 ---
 # <a name="office-primary-interop-assemblies"></a>podstawowe zestawy międzyoperacyjne pakietu Office
 

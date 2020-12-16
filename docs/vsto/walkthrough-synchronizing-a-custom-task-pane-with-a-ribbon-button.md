@@ -1,5 +1,7 @@
 ---
 title: Synchronizowanie niestandardowego okienka zadań z przyciskiem wstążki
+description: Dowiedz się, w jaki sposób można utworzyć niestandardowe okienko zadań, które użytkownicy mogą ukryć lub wyświetlić, klikając przycisk przełączania na Wstążce.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad910f94c6b6a4345f6973e84e02c85d4fe1f0e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7453d221cf57188a2c2f589492e4df59817f2cd9
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328335"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526089"
 ---
 # <a name="walkthrough-synchronize-a-custom-task-pane-with-a-ribbon-button"></a>Przewodnik: synchronizowanie niestandardowego okienka zadań z przyciskiem wstążki
   W tym instruktażu pokazano, jak utworzyć niestandardowe okienko zadań, które użytkownicy mogą ukryć lub wyświetlić, klikając przycisk przełączania na Wstążce. Należy zawsze utworzyć element interfejsu użytkownika (UI), taki jak przycisk, który użytkownicy mogą kliknąć, aby wyświetlić lub ukryć niestandardowe okienko zadań, ponieważ Microsoft Office aplikacje nie zapewniają użytkownikom domyślnego sposobu wyświetlania lub ukrywania niestandardowych okienek zadań.
@@ -60,7 +62,7 @@ ms.locfileid: "67328335"
 
 ### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt
 
-1. Utwórz projekt dodatku programu Excel o nazwie **SynchronizeTaskPaneAndRibbon**przy użyciu szablonu projektu dodatku programu Excel. Aby uzyskać więcej informacji, zobacz [How to: Create Office projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Utwórz projekt dodatku programu Excel o nazwie **SynchronizeTaskPaneAndRibbon** przy użyciu szablonu projektu dodatku programu Excel. Aby uzyskać więcej informacji, zobacz [How to: Create Office projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] otwiera plik kodu **ThisAddIn.cs** lub **ThisAddIn. vb** i dodaje projekt **SynchronizeTaskPaneAndRibbon** do **Eksplorator rozwiązań**.
 
@@ -81,7 +83,7 @@ ms.locfileid: "67328335"
 
 5. W oknie **Właściwości** ustaw właściwość **etykieta** na **Menedżer okienka zadań**.
 
-6. Na karcie **kontrolki wstążki pakietu Office** w **przyborniku**przeciągnij **ToggleButton** do grupy **Menedżer okienka zadań** .
+6. Na karcie **kontrolki wstążki pakietu Office** w **przyborniku** przeciągnij **ToggleButton** do grupy **Menedżer okienka zadań** .
 
 7. Kliknij pozycję **toggleButton1**.
 
@@ -98,18 +100,18 @@ ms.locfileid: "67328335"
 
      Formant użytkownika zostanie otwarty w projektancie.
 
-3. Na karcie **Formanty standardowe** **przybornika**przeciągnij kontrolkę **TextBox** do kontrolki użytkownika.
+3. Na karcie **Formanty standardowe** **przybornika** przeciągnij kontrolkę **TextBox** do kontrolki użytkownika.
 
 ## <a name="create-the-custom-task-pane"></a>Tworzenie niestandardowego okienka zadań
  Aby utworzyć niestandardowe okienko zadań po uruchomieniu dodatku VSTO, Dodaj kontrolkę użytkownika do okienka zadań w <xref:Microsoft.Office.Tools.AddIn.Startup> obsłudze zdarzeń dodatku VSTO. Domyślnie niestandardowe okienko zadań nie będzie widoczne. W dalszej części tego instruktażu dodasz kod, który będzie wyświetlany lub ukryty w okienku zadań, gdy użytkownik kliknie przycisk przełączania dodany do wstążki.
 
 ### <a name="to-create-the-custom-task-pane"></a>Aby utworzyć niestandardowe okienko zadań
 
-1. W **Eksplorator rozwiązań**rozwiń węzeł **Excel**.
+1. W **Eksplorator rozwiązań** rozwiń węzeł **Excel**.
 
 2. Kliknij prawym przyciskiem myszy pozycję **ThisAddIn.cs** lub **ThisAddIn. vb** i kliknij polecenie **Wyświetl kod**.
 
-3. Dodaj następujący kod do `ThisAddIn` klasy. Ten kod deklaruje wystąpienie `TaskPaneControl` jako element członkowski `ThisAddIn` .
+3. Dodaj poniższy kod do klasy `ThisAddIn`. Ten kod deklaruje wystąpienie `TaskPaneControl` jako element członkowski `ThisAddIn` .
 
      [!code-csharp[Trin_TaskPaneRibbonSynchronize#1](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs#1)]
      [!code-vb[Trin_TaskPaneRibbonSynchronize#1](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb#1)]

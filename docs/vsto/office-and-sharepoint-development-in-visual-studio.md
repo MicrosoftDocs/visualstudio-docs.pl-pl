@@ -1,5 +1,7 @@
 ---
 title: Programowanie dla pakietu Office i programu SharePoint w programie Visual Studio
+description: Dowiedz się, jak można rozciągnąć Microsoft Office i SharePoint, tworząc lekkie aplikacje lub dodatki pobierane przez użytkowników ze Sklepu Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bc1241a39707eedc4b34e0ef3531ab65e49b8238
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: abd9d3aac289df702554790673cb6561a6e2488d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811035"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525333"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Programowanie dla pakietu Office i programu SharePoint w programie Visual Studio
   Możesz rozciągnąć Microsoft Office i SharePoint, tworząc lekkie aplikacje lub dodatki pobierane przez użytkowników ze [sklepu Office](https://store.office.com/) lub wykazu organizacji lub tworząc rozwiązanie oparte na .NET Framework, które użytkownicy instalują na komputerze.

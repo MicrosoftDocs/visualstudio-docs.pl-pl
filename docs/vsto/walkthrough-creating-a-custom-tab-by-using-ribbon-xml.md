@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: Tworzenie niestandardowej karty przy użyciu języka XML wstążki'
+description: Dowiedz się, jak dodać przyciski do karty Add-Ins i zautomatyzować program Microsoft Word przy użyciu wstążki (XML).
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e05bd9173b83ec3303a058dcf61ea48a7ef7675c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e81d20dc179df76b759223c1460ca13bfceb5706
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64785937"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524880"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-ribbon-xml"></a>Przewodnik: Tworzenie niestandardowej karty przy użyciu języka XML wstążki
   W tym instruktażu pokazano, jak utworzyć niestandardową kartę wstążki przy użyciu elementu **wstążki (XML)** .
@@ -65,27 +67,27 @@ ms.locfileid: "64785937"
 
 2. W oknie dialogowym **Dodaj nowy element** wybierz pozycję **wstążka (XML)**.
 
-3. Zmień nazwę nowej wstążki **na Wstążkę, a**następnie kliknij przycisk **Dodaj**.
+3. Zmień nazwę nowej wstążki **na Wstążkę, a** następnie kliknij przycisk **Dodaj**.
 
      Plik **MyRibbon.cs** lub **webwstążka. vb** zostanie otwarty w projektancie. Plik XML o nazwie **MyRibbon.xml** jest również dodawany do projektu.
 
-4. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **ThisAddIn.cs** lub **ThisAddIn. vb**, a następnie kliknij polecenie **Wyświetl kod**.
+4. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję **ThisAddIn.cs** lub **ThisAddIn. vb**, a następnie kliknij polecenie **Wyświetl kod**.
 
 5. Dodaj następujący kod do klasy **ThisAddIn** . Ten kod przesłania `CreateRibbonExtensibilityObject` metodę i zwraca klasę XML wstążki do aplikacji pakietu Office.
 
      [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs#1)]
      [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb#1)]
 
-6. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt **MyRibbonAddIn** , a następnie kliknij pozycję **Kompiluj**. Upewnij się, że projekt kompiluje się bez błędów.
+6. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt **MyRibbonAddIn** , a następnie kliknij pozycję **Kompiluj**. Upewnij się, że projekt kompiluje się bez błędów.
 
 ## <a name="add-buttons-to-the-add-ins-tab"></a>Dodawanie przycisków do karty Dodatki
  Celem tego dodatku VSTO jest nadanie użytkownikom sposobu na dodawanie tekstu standardowego i konkretnej tabeli do aktywnego dokumentu. Aby zapewnić interfejs użytkownika, Dodaj dwa przyciski do karty **Dodatki** , MODYFIKUJĄC plik XML wstążki. W dalszej części tego instruktażu określisz metody wywołania zwrotnego dla przycisków. Aby uzyskać więcej informacji na temat pliku XML wstążki, zobacz [kod XML wstążki](../vsto/ribbon-xml.md).
 
 ### <a name="to-add-buttons-to-the-add-ins-tab"></a>Aby dodać przyciski do karty Dodatki
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy **MyRibbon.xml** a następnie kliknij polecenie **Otwórz**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy **MyRibbon.xml** a następnie kliknij polecenie **Otwórz**.
 
-2. Zamień zawartość elementu **Tab** na następujący kod XML. Ten kod XML zmienia etykietę domyślnej grupy formantów na **zawartość**i dodaje dwa nowe przyciski z etykietami **Wstaw tekst** i **Wstaw**.
+2. Zamień zawartość elementu **Tab** na następujący kod XML. Ten kod XML zmienia etykietę domyślnej grupy formantów na **zawartość** i dodaje dwa nowe przyciski z etykietami **Wstaw tekst** i **Wstaw**.
 
     ```xml
     <tab idMso="TabAddIns">
@@ -105,7 +107,7 @@ ms.locfileid: "64785937"
 
 ### <a name="to-add-callback-methods-for-the-buttons"></a>Aby dodać metody wywołania zwrotnego dla przycisków
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **MyRibbon.cs** lub **wstążka. vb**, a następnie kliknij polecenie **Otwórz**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję **MyRibbon.cs** lub **wstążka. vb**, a następnie kliknij polecenie **Otwórz**.
 
 2. Dodaj następujący kod na górze pliku **MyRibbon.cs** lub **webwstążkę. vb** . Ten kod tworzy alias dla <xref:Microsoft.Office.Interop.Word> przestrzeni nazw.
 
@@ -156,5 +158,5 @@ ms.locfileid: "64785937"
 
 ## <a name="see-also"></a>Zobacz też
 - [Omówienie wstążki](../vsto/ribbon-overview.md)
-- [XML — wstążka](../vsto/ribbon-xml.md)
+- [XML — Wstążka](../vsto/ribbon-xml.md)
 - [Przewodnik: Tworzenie niestandardowej karty przy użyciu projektanta wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
