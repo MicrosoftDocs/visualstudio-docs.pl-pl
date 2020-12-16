@@ -1,8 +1,8 @@
 ---
 title: Rozwiązania i projekty
-description: Poznaj projekty i rozwiązania programu Visual Studio i Dowiedz się, jak utworzyć nowy projekt za pomocą narzędzia Eksplorator rozwiązań.
+description: Dowiedz się więcej o projektach i rozwiązaniach programu Visual Studio, sposobach tworzenia nowych projektów na podstawie szablonu oraz sposobie wyświetlania & zarządzania projektami w programie Eksplorator rozwiązań.
 ms.custom: SEO-VS-2020
-ms.date: 12/11/2020
+ms.date: 12/15/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.addnewitem
@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a24f56d94d470ca5ff04a99f524af3c76df3a15
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 6504d3e7fe278e8713a897ffacefa1f22cec6a09
+ms.sourcegitcommit: f43e669f3597a4b07975b2bd2dce362a41a2e83f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524066"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97578256"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Rozwiązania i projekty w programie Visual Studio
 
@@ -53,6 +53,8 @@ Pliki projektu są oparte na [schemacie XML programu MSBuild](../msbuild/msbuild
 
 Projekt jest zawarty w *rozwiązaniu*. Pomimo nazwy, rozwiązanie nie jest "odpowiedzią". Jest to po prostu kontener dla co najmniej jednego powiązanego projektu, a także informacje o kompilacji, ustawienia okna programu Visual Studio oraz inne pliki, które nie są skojarzone z określonym projektem. Rozwiązanie jest opisane przez plik tekstowy (rozszerzenie *. sln*) z własnym unikatowym formatem; nie jest przeznaczona do edycji.
 
+### <a name="solution-file"></a>Plik rozwiązania
+
 Program Visual Studio używa dwóch typów plików (*. sln* i *. suo*) do przechowywania ustawień rozwiązań:
 
 |Rozszerzenie|Nazwa|Opis|
@@ -62,7 +64,7 @@ Program Visual Studio używa dwóch typów plików (*. sln* i *. suo*) do przech
 
 ### <a name="solution-folder"></a>Folder rozwiązania
 
-W tym kontekście "folder rozwiązania" jest folderem wirtualnym, który jest tylko w **Eksplorator rozwiązań**, w którym można go użyć do grupowania projektów w rozwiązaniu. Jeśli chcesz zlokalizować plik rozwiązania na komputerze, przejdź do pozycji **Narzędzia**  >  **Opcje**  >  **projekty i rozwiązania**  >  . Aby uzyskać więcej informacji, zobacz [okno dialogowe Opcje: projekty i rozwiązania > lokalizacje](./reference/projects-solutions-locations-options.md).
+"Folder rozwiązania" to folder wirtualny, który jest tylko w **Eksplorator rozwiązań**, w którym można go użyć do grupowania projektów w rozwiązaniu. Jeśli chcesz zlokalizować plik rozwiązania na komputerze, przejdź do pozycji **Narzędzia**  >  **Opcje**  >  **projekty i rozwiązania**  >  . Aby uzyskać więcej informacji, zobacz [okno dialogowe Opcje: projekty i rozwiązania > lokalizacje](./reference/projects-solutions-locations-options.md).
 
 ## <a name="create-new-projects"></a>Utwórz nowe projekty
 
