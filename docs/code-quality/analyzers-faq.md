@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 567af541b819186bda3dc869628c2812be9888b8
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 48dcb2d01e53502c371595048666fd94c267b6ec
+ms.sourcegitcommit: fed8782b2fb2ca18a90746b6e7e0b33f3fde10f1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96039591"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97646388"
 ---
 # <a name="code-analysis-faq"></a>Analiza kodu — często zadawane pytania
 
@@ -100,9 +100,9 @@ Odp **.: aby** zapobiec potraktowaniu ostrzeżeń analizy kodu jako błędów, w
 
 **P**: gdzie jest stroną właściwości analizy kodu dla rozwiązania?
 
-Odp **.: Strona** właściwości Analiza kodu na poziomie rozwiązania została usunięta na korzyść grupy wspólnych właściwości. Aby zarządzać analizą kodu na poziomie projektu, Strona właściwości Analiza kodu jest nadal dostępna. (W przypadku projektów zarządzanych zalecamy także Migrowanie z zestawów reguł do EditorConfig dla konfiguracji reguł).  W celu udostępniania zestawów reguł w wielu/wszystkich projektach w rozwiązaniu lub repozytorium zaleca się zdefiniowanie grupy właściwości z właściwością CodeAnalysisRuleSet w udostępnionym pliku props/targets lub katalogu. props/Directory. targets. Jeśli nie masz żadnych takich wspólnych właściwości lub obiektów docelowych, które zostały zaimportowane przez wszystkie projekty, rozważ [dodanie takiej grupy właściwości do katalogu. props lub Directory. targets w katalogu rozwiązania najwyższego poziomu, który jest automatycznie importowany we wszystkich plikach projektu zdefiniowanych w katalogu lub jego podkatalogach](../msbuild/customize-your-build.md).
+Odp **.: Strona** właściwości Analiza kodu na poziomie rozwiązania została usunięta na korzyść grupy wspólnych właściwości. Aby zarządzać analizą kodu na poziomie projektu, Strona właściwości Analiza kodu jest nadal dostępna. (W przypadku projektów zarządzanych zalecamy także Migrowanie z zestawów reguł do EditorConfig dla konfiguracji reguł).  W celu udostępniania zestawów reguł w wielu/wszystkich projektach w rozwiązaniu lub repozytorium zaleca się zdefiniowanie grupy właściwości z właściwością [CodeAnalysisRuleSet](../code-quality/using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) w udostępnionym pliku props/targets lub *katalogu. props/Directory. targets* . Jeśli nie masz takich wspólnych właściwości lub obiektów docelowych, które zostały zaimportowane przez wszystkie projekty, rozważ dodanie takiej grupy właściwości do [katalogu. props lub pliku Directory. targets](../msbuild/customize-your-build.md) w katalogu rozwiązania najwyższego poziomu, który jest automatycznie importowany we wszystkich plikach projektu zdefiniowanych w katalogu lub jego podkatalogach.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Przegląd analizatorów](roslyn-analyzers-overview.md)
 - [Ustawienia konwencji kodowania .NET dla EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options)

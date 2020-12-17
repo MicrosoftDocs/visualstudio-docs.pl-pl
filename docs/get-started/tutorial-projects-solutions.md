@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b22695dac3f75b9e90950ee5428bb906436d661
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 48fb0f1c22b2f7055005640baff2239a0ad4a32a
+ms.sourcegitcommit: fed8782b2fb2ca18a90746b6e7e0b33f3fde10f1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903939"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97646414"
 ---
 # <a name="learn-about-projects-and-solutions"></a>Informacje o projektach i rozwiązaniach
 
@@ -201,6 +201,8 @@ Dodajmy projekt testu jednostkowego do naszego rozwiązania. Tym razem zaczniemy
 
 Będziemy używać nowego projektu testów jednostkowych do testowania naszej metody w projekcie **QuickDate** , więc musimy dodać odwołanie do tego projektu. Powoduje to utworzenie *zależności kompilacji* między dwoma projektami, co oznacza, że podczas kompilowania rozwiązania **QuickDate** jest tworzona przed **Quicktest**.
 
+::: moniker range="vs-2017"
+
 1. Wybierz węzeł **zależności** w projekcie **Quicktest** i z menu kontekstowego kliknij prawym przyciskiem myszy lub wybierz polecenie **Dodaj odwołanie**.
 
    Zostanie otwarte okno dialogowe **Menedżer odwołań** .
@@ -210,6 +212,22 @@ Będziemy używać nowego projektu testów jednostkowych do testowania naszej me
    Dodano odwołanie do projektu **QuickDate** .
 
    ![Program Visual Studio 2019 Eksplorator rozwiązań pokazujący odwołanie do projektu](media/vs-2019/tutorial-projects-solution-explorer-reference.png "Eksplorator rozwiązań pokazujący odwołanie do projektu w programie Visual Studio.")
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Wybierz węzeł **zależności** w projekcie **Quicktest** i z menu kontekstowego kliknij prawym przyciskiem myszy lub wybierz polecenie **Dodaj odwołanie do projektu.**...
+
+   Zostanie otwarte okno dialogowe **Menedżer odwołań** .
+
+1. W lewym okienku rozwiń węzeł **projekty** i wybierz pozycję **rozwiązanie**. W środkowym okienku zaznacz pole wyboru obok pozycji **QuickDate**, a następnie wybierz przycisk **OK**.
+
+   Dodano odwołanie do projektu **QuickDate** .
+
+   ![Program Visual Studio 2019 Eksplorator rozwiązań pokazujący odwołanie do projektu](media/vs-2019/tutorial-projects-solution-explorer-reference.png)
+   
+::: moniker-end
 
 ## <a name="add-test-code"></a>Dodaj kod testu
 
@@ -268,14 +286,14 @@ Jeśli chcesz sprawdzić, czy test jednostkowy działa, wybierz pozycję **Testu
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> Jeśli **Eksplorator testów** nie zostanie otwarty automatycznie, otwórz go, wybierając pozycję **Testuj**  >  **Windows**  >  **Eksplorator testów** systemu Windows na pasku menu.
+> Jeśli **Eksplorator testów** nie zostanie otwarty automatycznie, otwórz go, wybierając pozycję **Testuj**  >    >  **Eksplorator testów** systemu Windows na pasku menu.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
 > [!TIP]
-> Jeśli **Eksplorator testów** nie zostanie otwarty automatycznie, otwórz go, **Test** wybierając  >  z paska menu test **Eksploratora testów** .
+> Jeśli **Eksplorator testów** nie zostanie otwarty automatycznie, otwórz go, wybierając  >  z paska menu test **Eksploratora testów** .
 
 ::: moniker-end
 
