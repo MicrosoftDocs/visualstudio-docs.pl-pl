@@ -1,5 +1,7 @@
 ---
 title: Uruchamianie programu Visual Studio przy użyciu DTE
+description: Dowiedz się, jak uruchomić program Visual Studio przy użyciu DTE, aby zapewnić obsługę równoległych instalacji wersji głównych. Ten artykuł zawiera przykład kodu.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 04/26/2019
 ms.topic: conceptual
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3217835571ac659ac2cef2b46cb45a1c02ba2584
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c84d44b3f775f384ed15a0ede1ef9c68ad2fd5a6
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703044"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615880"
 ---
 # <a name="launch-visual-studio-using-dte"></a>Uruchamianie programu Visual Studio przy użyciu DTE
 
@@ -185,7 +187,7 @@ namespace ConsoleLauncherApp
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Znajdowanie programu Visual Studio](locating-visual-studio.md)
 - [Przewodnik: uzyskiwanie dostępu do obiektu DTE z rozszerzenia edytora](walkthrough-accessing-the-dte-object-from-an-editor-extension.md)

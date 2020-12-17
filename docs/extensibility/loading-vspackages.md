@@ -1,5 +1,7 @@
 ---
 title: Ładowanie pakietów VSPackage | Microsoft Docs
+description: Dowiedz się więcej o ładowaniu pakietów VSPackage w programie Visual Studio, w tym opóźnione ładowanie, które jest używane, gdy jest to możliwe, aby zwiększyć wydajność.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1c221bf06ef3b7e37e2afc1856f3e54fe5ad95e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0aeab78a2f64be2df6f601ad8ed224f13071eb8c
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702966"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616107"
 ---
 # <a name="load-vspackages"></a>Ładuj pakietów VSPackage
 Pakietów VSPackage są ładowane do programu Visual Studio tylko wtedy, gdy ich funkcjonalność jest wymagana. Na przykład pakietu VSPackage jest ładowany, gdy program Visual Studio używa fabryki projektu lub usługi implementującej implementację pakietu VSPackage. Ta funkcja jest nazywana opóźnionym ładowaniem, które jest używane w miarę możliwości w celu zwiększenia wydajności.
@@ -35,7 +37,7 @@ Pakietów VSPackage są ładowane do programu Visual Studio tylko wtedy, gdy ich
     [PackageRegistration(UseManagedResourcesOnly = true)]
     [ProvideAutoLoad(UIContextGuids80.SolutionExists)]
     [Guid("00000000-0000-0000-0000-000000000000")] // your specific package GUID
-    public class MyAutoloadedPackage : Package
+    public class MyAutoloadedPackage : Package
     {. . .}
     ```
 
@@ -71,5 +73,5 @@ Pakietów VSPackage są ładowane do programu Visual Studio tylko wtedy, gdy ich
 
      Wymuś ładowanie nie należy używać do komunikacji pakietu VSPackage. Użyj zamiast tego [usług](../extensibility/using-and-providing-services.md) .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Pakiety VSPackage](../extensibility/internals/vspackages.md)

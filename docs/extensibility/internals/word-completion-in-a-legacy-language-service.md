@@ -1,5 +1,7 @@
 ---
 title: Uzupełnianie wyrazów w starszej wersji usługi językowej | Microsoft Docs
+description: Uzupełnianie wyrazów może być obsługiwane w przypadku starszej wersji usługi językowej w zestawie SDK programu Visual Studio. Dowiedz się, jak starsze usługi językowe są zaimplementowane w pakietu VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 948751cde5b6b710d911a30ca26a61e5411bba4d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 489b43c825e3512e1bd33bc732833de84aed54c3
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703175"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616278"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>Uzupełnianie wyrazów w starszej wersji usługi językowej
 Uzupełnianie wyrazów wypełnia brakujące znaki w częściowo określonym słowie. Jeśli istnieje tylko jedno możliwe zakończenie, słowo zostanie zakończone po wprowadzeniu znaku uzupełniania. Jeśli częściowy wyraz jest zgodny z więcej niż jedną możliwością, zostanie wyświetlona lista możliwych uzupełnień. Znak uzupełniania może być dowolnym znakiem, który nie jest używany do identyfikatorów.

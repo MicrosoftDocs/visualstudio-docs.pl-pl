@@ -1,5 +1,7 @@
 ---
 title: Zarządzanie pakietów VSPackage | Microsoft Docs
+description: Dowiedz się więcej na temat zarządzania usługą pakietów VSPackage, aby wiedzieć, kiedy można po prostu użyć domyślnego zarządzania pakietu VSPackage, które jest dostępne w programie Visual Studio, oraz jak i kiedy należy je dostosować.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60745d07679ae53b85d169473ed37ab314b67624
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a040777671a5d6a4378e9b2ad68b2ffa2fabaeb
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702650"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615743"
 ---
 # <a name="manage-vspackages"></a>Zarządzanie pakietami VSPackage
 W większości przypadków nie trzeba martwić się o zarządzanie pakietów VSPackage, ponieważ szablony projektów i elementów rejestrują i ładują pakiet automatycznie. Jednak w niektórych sytuacjach może być konieczne poznanie nieco więcej informacji w celu zarządzania pakietem.
@@ -44,5 +46,5 @@ Rozszerzenia mogą mieć wpływ na wydajność uruchamiania i ładowania rozwią
 ## <a name="troubleshoot-vspackages"></a>Rozwiązywanie problemów z pakietów VSPackage
  Poznaj techniki rozwiązywania problemów z pakietów VSPackage, które nie ładują ani nie występują błędy: [Rozwiązywanie problemów z pakietów VSPackage](../extensibility/troubleshooting-vspackages.md)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Pakiety VSPackage](../extensibility/internals/vspackages.md)

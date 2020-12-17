@@ -1,5 +1,7 @@
 ---
 title: Managed Extensibility Framework w edytorze | Microsoft Docs
+description: Dowiedz się więcej na temat Managed Extensibility Framework, który umożliwia tworzenie własnych składników w celu rozbudowy edytora w Visual Studio SDK.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 888c5206b87079cf9fa91cb68e9801cb3c4f8c1a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dd6ed0e495056bf2924e46bfdfcd074daf1faf87
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702865"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615593"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>Managed Extensibility Framework w edytorze
 Edytor jest skompilowany przy użyciu składników Managed Extensibility Framework (MEF). Możesz utworzyć własne składniki MEF w celu rozbudowy edytora, a kod może również zużywać składniki edytora.
@@ -102,5 +104,5 @@ internal IClassificationTypeRegistryService ClassificationRegistry;
 
 5. Po skompilowaniu zestawu należy umieścić go w *.. \* Folder \Common7\IDE\Components instalacji programu Visual Studio.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Punkty rozszerzenia usługi językowej i edytora](../extensibility/language-service-and-editor-extension-points.md)

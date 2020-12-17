@@ -1,5 +1,5 @@
 ---
-title: Rozwiązania i projekty
+title: Przegląd rozwiązań i projektów
 description: Dowiedz się więcej o projektach i rozwiązaniach programu Visual Studio, sposobach tworzenia nowych projektów na podstawie szablonu oraz sposobie wyświetlania & zarządzania projektami w programie Eksplorator rozwiązań.
 ms.custom: SEO-VS-2020
 ms.date: 12/15/2020
@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebe6e5c7479ce4e3cda435c51a883c4d5db8cc45
-ms.sourcegitcommit: 6f37100d4b8c15a21d3858335ded3c26ab275b93
+ms.openlocfilehash: 1981bc5c9d1c2589607f355528c332d01284917e
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97599502"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615756"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Rozwiązania i projekty w programie Visual Studio
 
@@ -68,11 +68,11 @@ Program Visual Studio używa dwóch typów plików (*. sln* i *. suo*) do przech
 
 ## <a name="create-new-projects"></a>Utwórz nowe projekty
 
-Najprostszym sposobem tworzenia nowego projektu jest rozpoczęcie od szablonu projektu dla określonego typu aplikacji lub witryny sieci Web. Szablon projektu składa się z podstawowego zestawu wstępnie wygenerowanych plików kodu, plików konfiguracji, zasobów i ustawień. Te szablony są dostępne w oknie dialogowym, w którym tworzysz nowy projekt (**plik**  >  **Nowy**  >  **projekt**). Aby uzyskać więcej informacji, zobacz [Tworzenie nowego projektu](create-new-project.md) i [opracowywanie rozwiązań i projektów](../ide/creating-solutions-and-projects.md).
+Najprostszym sposobem tworzenia nowego projektu jest użycie szablonu projektu dla tego typu projektu. Szablon projektu zawiera podstawowy zestaw wstępnie wygenerowanych plików kodu, plików konfiguracji, zasobów i ustawień. Użyj opcji **plik**  >  **Nowy**  >  **projekt** , aby wybrać szablon projektu. Aby uzyskać więcej informacji, zobacz [Tworzenie nowego projektu](create-new-project.md).
 
-Jeśli często dostosowujesz projekty w określony sposób, możesz utworzyć niestandardowy szablon projektu, za pomocą którego można tworzyć nowe projekty z programu. Aby uzyskać więcej informacji, zobacz [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md).
+Można również utworzyć niestandardowy szablon projektu, za pomocą którego można tworzyć nowe projekty z programu. Aby uzyskać więcej informacji, zobacz [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md).
 
-Podczas tworzenia nowego projektu jest on domyślnie zapisywany w *%USERPROFILE%\source\repos*. Tę lokalizację można zmienić w ustawieniu **Lokalizacja projektów** w obszarze **Narzędzia**  >  **Opcje**  >  **projekty i rozwiązania**  >  . Aby uzyskać więcej informacji na temat tego i innych ustawień projektów i rozwiązań, zobacz [Strona projekty i rozwiązania, opcje okna dialogowego](./reference/projects-and-solutions-options-dialog-box.md).
+Podczas tworzenia nowego projektu program Visual Studio zapisuje go w domyślnej lokalizacji *%USERPROFILE%\source\repos*. Aby zmienić tę lokalizację, przejdź do **lokalizacji narzędzia**  >  **Opcje**  >  **projekty i rozwiązania**  >  . Aby uzyskać więcej informacji, zobacz [okno dialogowe Opcje: projekty i rozwiązania > lokalizacje](./reference/projects-solutions-locations-options.md).
 
 ## <a name="solution-explorer"></a>Eksplorator rozwiązań
 
@@ -94,4 +94,3 @@ Aby wyświetlić listę niektórych ikon, które pojawiają się w Eksplorator r
 - [Visual Studio IDE](../get-started/visual-studio-ide.md)
 - [Przenoszenie, migrowanie i uaktualnianie projektów](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
 - [Projekty i rozwiązania (Visual Studio dla komputerów Mac)](/visualstudio/mac/projects-and-solutions)
-- [Dodawanie i usuwanie elementów projektu (Visual Studio dla komputerów Mac)](/visualstudio/mac/add-and-remove-project-items)

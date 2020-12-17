@@ -1,5 +1,7 @@
 ---
 title: Powiązanie klawiszy — element | Microsoft Docs
+description: Element powiązanie klawiszy określa skróty klawiaturowe dla poleceń. Polecenia mogą zawierać skojarzone z nimi powiązania z pojedynczym i podwójnym kluczem.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +13,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b458e70a9a85c11707c50da2e16e3aa73f51bc12
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 33b2c1638b41afbdae56e0c4374937e7230dfffe
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703142"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616120"
 ---
 # <a name="keybinding-element"></a>Powiązanie klawiszy, element
 Element powiązanie klawiszy określa skróty klawiaturowe dla poleceń.
 
- Polecenia mogą zawierać skojarzone z nimi powiązania z pojedynczym i podwójnym kluczem. Przykładem pojedynczego powiązania klucza jest **Ctrl** + **S** dla polecenia **Zapisz** . Podwójne powiązania klawiszy wymagają dwóch kolejnych kombinacji klawiszy, aby wyzwolić polecenie. Przykładem podwójnego powiązania klawiszy jest <strong>Ctrl *+</strong> k<strong>,</strong>Ctrl <strong>+</strong> k** w celu ustawienia zakładki.
+ Polecenia mogą zawierać skojarzone z nimi powiązania z pojedynczym i podwójnym kluczem. Przykładem pojedynczego powiązania klucza jest **Ctrl** + **S** dla polecenia **Zapisz** . Podwójne powiązania klawiszy wymagają dwóch kolejnych kombinacji klawiszy, aby wyzwolić polecenie. Przykładem podwójnego powiązania klawiszy jest <strong>Ctrl *+</strong> k <strong>,</strong>Ctrl <strong>+</strong> k** w celu ustawienia zakładki.
 
 ## <a name="syntax"></a>Składnia
 
@@ -36,13 +38,13 @@ Element powiązanie klawiszy określa skróty klawiaturowe dla poleceń.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|guid|Wymagany.|
-|identyfikator|Wymagany.|
-|edytor|Wymagany. Identyfikator GUID edytora wskazuje kontekst edycji, dla którego będzie aktywny ten skrót klawiaturowy. Globalna wartość zakresu powiązania to "guidVSStd97".|
-|key1|Wymagany. Prawidłowe wartości to wszystkie typable alfanumeryczne, a także dwucyfrowe wartości szesnastkowe poprzedzone 0x i [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|
-|mod1|Opcjonalny. Dowolna kombinacja kombinacji **klawiszy CTRL**, **Alt**i **SHIFT** oddzielona spacją.|
+|guid|Wymagane.|
+|identyfikator|Wymagane.|
+|edytor|Wymagane. Identyfikator GUID edytora wskazuje kontekst edycji, dla którego będzie aktywny ten skrót klawiaturowy. Globalna wartość zakresu powiązania to "guidVSStd97".|
+|key1|Wymagane. Prawidłowe wartości to wszystkie typable alfanumeryczne, a także dwucyfrowe wartości szesnastkowe poprzedzone 0x i [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|
+|mod1|Opcjonalny. Dowolna kombinacja kombinacji **klawiszy CTRL**, **Alt** i **SHIFT** oddzielona spacją.|
 |key2|Opcjonalny. Prawidłowe wartości to wszystkie typable alfanumeryczne, a także dwucyfrowe wartości szesnastkowe poprzedzone 0x i [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|
-|mod2|Opcjonalny. Dowolna kombinacja kombinacji **klawiszy CTRL**, **Alt**i **SHIFT** oddzielona spacją.|
+|mod2|Opcjonalny. Dowolna kombinacja kombinacji **klawiszy CTRL**, **Alt** i **SHIFT** oddzielona spacją.|
 |emulator|Opcjonalny.|
 |Warunek|Opcjonalny. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
@@ -70,6 +72,6 @@ Element powiązanie klawiszy określa skróty klawiaturowe dla poleceń.
 </KeyBindings>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Element powiązań klawiszy](../extensibility/keybindings-element.md)
 - [Pliki tabeli poleceń programu Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

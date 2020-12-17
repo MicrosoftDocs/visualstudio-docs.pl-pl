@@ -1,5 +1,7 @@
 ---
 title: Lokalizowanie pakietów VSIX | Microsoft Docs
+description: Dowiedz się, jak lokalizować pakiet VSIX, tworząc plik rozszerzenia vsixlangpack dla każdego języka docelowego, a następnie umieszczając je w prawidłowym folderze.
+ms.custom: SEO-VS-2020
 ms.date: 10/26/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d2d4222e45d56447951e86d558af9983a0d1cc9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cc9f7055145748e0625788e7487bb978911bae7f
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702897"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615541"
 ---
 # <a name="localizing-vsix-packages"></a>Lokalizowanie pakietów VSIX
 
@@ -51,9 +53,9 @@ Podczas tworzenia pliku vsixlangpack należy ustawić `Include in Vsix` Właści
 
 ### <a name="to-set-the-include-in-vsix-property"></a>Aby ustawić właściwość include w VSIX
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy plik Extension. vsixlangpack, a następnie kliknij polecenie **Właściwości**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy plik Extension. vsixlangpack, a następnie kliknij polecenie **Właściwości**.
 
-2. W **siatce właściwości**kliknij pozycję **Dołącz w VSIX**i ustaw jej wartość na `true` .
+2. W **siatce właściwości** kliknij pozycję **Dołącz w VSIX** i ustaw jej wartość na `true` .
 
 ## <a name="example"></a>Przykład
 
@@ -99,7 +101,7 @@ Poniższy przykład przedstawia istotne fragmenty pliku *Extension. vsixmanifest
 </PackageLanguagePackManifest>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 |Tytuł|Opis|
 |-----------|-----------------|

@@ -1,5 +1,7 @@
 ---
 title: Zarządzanie skojarzeniami plików Side-by-Side | Microsoft Docs
+description: Jeśli pakietu VSPackage zapewnia skojarzenia plików, zdecyduj, jak obsługiwać instalacje równoległe, w których konkretna wersja programu Visual Studio otwiera plik.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c284fe7ef4c2d07051a8524860583cb634e13bf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 477afbd5bc4586d8c46db11b036364f8058133b0
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702762"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616347"
 ---
 # <a name="manage-side-by-side-file-associations"></a>Zarządzaj skojarzeniami plików obok siebie
 
@@ -65,7 +67,7 @@ Jeśli chcesz, aby wiele równoległych pakietów VSPackage używać tego samego
   |CA_SetDevenvLatest_2003|DEVENV_EXE_2003, A NIE DEVENV_EXE_2005|420|
   |CA_SetDevenvLatest_2005|DEVENV_EXE_2005|430|
 
-   Możesz użyć właściwości DEVENV_EXE_LATEST w tabeli rejestru pakietu Instalator Windows, aby zapisać wartość domyślną klucza **HKEY_CLASSES_ROOT*ProgID*ShellOpenCommand** , [DEVENV_EXE_LATEST] "%1"
+   Możesz użyć właściwości DEVENV_EXE_LATEST w tabeli rejestru pakietu Instalator Windows, aby zapisać wartość domyślną klucza **HKEY_CLASSES_ROOT *ProgID* ShellOpenCommand** , [DEVENV_EXE_LATEST] "%1"
 
 - Uruchom współużytkowany program do uruchamiania, który może wybrać najlepszy wybór spośród dostępnych wersji pakietu VSPackage.
 
@@ -85,7 +87,7 @@ Dezinstalacja pakietu VSPackage, która zapisuje wpisy rejestru dla skojarzeń p
 
 - Podaj stronę opcji konfiguracji lub okno dialogowe, które umożliwia użytkownikom wybieranie skojarzeń plików i odzyskiwanie utraconych skojarzeń. Poinstruuj użytkowników, aby uruchomili ją po odinstalowaniu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Rejestrowanie rozszerzeń nazw plików dla wdrożeń równoległych](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)
 - [Rejestrowanie czasowników dla rozszerzeń nazw plików](../extensibility/registering-verbs-for-file-name-extensions.md)

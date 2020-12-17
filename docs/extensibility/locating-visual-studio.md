@@ -1,5 +1,7 @@
 ---
 title: Lokalizowanie programu Visual Studio | Microsoft Docs
+description: Można zainstalować wiele wystąpień tej samej wersji programu Visual Studio. Dowiedz się, jak używać interfejsu API zapytań COM do znajdowania żądanego wystąpienia.
+ms.custom: SEO-VS-2020
 ms.date: 08/21/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: heaths
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93a6f39a9240002cd8008c9368799e10ab63b78d
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 8935af62b16ed6dd6d0d5d61412f347a95f32f23
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012480"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616291"
 ---
 # <a name="locate-visual-studio"></a>Znajdowanie programu Visual Studio
 
@@ -25,11 +27,11 @@ Jest to szybki interfejs API tylko do odczytu z pakietami NuGet dostępnymi dla 
 | Kod | Pakiet |
 | ---- | --- |
 | Natywna | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Native |
-| Zarządzany | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
+| Zarządzanie | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
 
 Można zlokalizować pojedyncze wystąpienie z daną ścieżką lub bieżącym procesem lub wyliczyć wszystkie wystąpienia. Zapoznaj się z [naszymi](https://github.com/Microsoft/vs-setup-samples) przykładami, aby uzyskać pełne Przykłady sposobu lokalizowania programu Visual Studio.
 
-## <a name="tools"></a>narzędzia
+## <a name="tools"></a>Narzędzia
 
 Aby znaleźć program Visual Studio i inne narzędzia w środowiskach kompilacji, skryptach programu PowerShell, instalatorach i więcej scenariuszach, istnieje wiele narzędzi typu "open source", których można używać bezpośrednio lub ponownie rozpowszechniać wraz z własnymi skryptami.
 

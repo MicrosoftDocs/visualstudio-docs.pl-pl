@@ -1,5 +1,7 @@
 ---
 title: Omówienie protokołu serwera języka | Microsoft Docs
+description: Dowiedz się więcej o tym, jak protokół serwera języka zapewnia przydatną strukturę do udostępniania funkcji języka w różnych narzędziach.
+ms.custom: SEO-VS-2020
 ms.date: 11/14/2017
 ms.topic: conceptual
 ms.assetid: 6a7d93c2-31ea-4bae-8b29-6988a567ddf2
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3bd5dce3cfb7022a8abb6397dc87b418144cbe1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2d642d1168cbd2a8bd7abadbcdbd7c1e2851b00e
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703099"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616133"
 ---
 # <a name="language-server-protocol"></a>Language Server Protocol
 

@@ -1,5 +1,7 @@
 ---
 title: Lokalizowanie poleceń menu | Microsoft Docs
+description: Dowiedz się, jak zapewnić zlokalizowany tekst dla poleceń menu i pasków narzędzi, tworząc zlokalizowane pliki vsct i zlokalizowane pliki RESX dla pakietu VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 10/08/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -15,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c1c158fd689cbcae18fec5d3306e6d6fadb169f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51f3692a4539eddbf35e24de8024eadd39031080
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904552"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615606"
 ---
 # <a name="localize-menu-commands"></a>Lokalizowanie poleceń menu
 
@@ -32,7 +34,7 @@ Informacje o sposobie lokalizowania środowiska instalacji znajdują się w tema
 
 W pakietów VSPackage, polecenia menu i przyciski paska narzędzi są zdefiniowane w pliku *. vsct* .
 
-1. W **Eksplorator rozwiązań**Zmień nazwę pliku *. vsct* z *filename. vsct* na *filename. en-us. vsct*.
+1. W **Eksplorator rozwiązań** Zmień nazwę pliku *. vsct* z *filename. vsct* na *filename. en-us. vsct*.
 
 2. Utwórz kopię *pliku filename. en-us. vsct* dla każdego zlokalizowanego języka.
 
@@ -112,7 +114,7 @@ Zasoby tekstowe inne niż nazwy poleceń są zdefiniowane w plikach zasobów (*.
 
 Należy zmodyfikować plik *AssemblyInfo.cs* i plik projektu, aby uwzględnić zlokalizowane zasoby.
 
-1. W węźle **Właściwości** w **Eksplorator rozwiązań**Otwórz *AssemblyInfo.cs* lub *AssemblyInfo. vb* w edytorze.
+1. W węźle **Właściwości** w **Eksplorator rozwiązań** Otwórz *AssemblyInfo.cs* lub *AssemblyInfo. vb* w edytorze.
 
 2. Dodaj następujący wpis.
 
@@ -165,7 +167,7 @@ Należy zmodyfikować plik *AssemblyInfo.cs* i plik projektu, aby uwzględnić z
 
      Spowoduje to utworzenie zestawu głównego i zestawów zasobów dla każdego języka. Aby uzyskać informacje na temat lokalizowania procesu wdrażania, zobacz [lokalizowanie pakietów VSIX](../extensibility/localizing-vsix-packages.md) .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Poszerzanie menu i poleceń](../extensibility/extending-menus-and-commands.md)
 - [Globalizacja i lokalizowanie aplikacji](../ide/globalizing-and-localizing-applications.md)

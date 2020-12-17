@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f7dfa1c79af832cc54d9aee72eeafbf20bbde707
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: ea13fde64f6214cf3c219de45c79458b75e1caf8
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398419"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615528"
 ---
 # <a name="enable-or-install-first-party-net-analyzers"></a>Włącz lub zainstaluj analizatory .NET pierwszej firmy
 
@@ -31,7 +31,7 @@ Analizatory .NET pierwszej jednostki można włączać lub instalować w jeden z
 - **Zainstaluj jako pakiet NuGet**: Jeśli nie chcesz przenosić do programu .NET 5 lub zestawu SDK lub wolisz model oparty na pakiecie NuGet, analizatory są również dostępne w `Microsoft.CodeAnalysis.NetAnalyzers` [pakiecie NuGet](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers) w programie Visual Studio 2019.  Można preferować model oparty na pakiecie dla aktualizacji wersji na żądanie. Jeśli korzystasz z programu Visual Studio 2017, `2.9.x` zamiast tego zainstaluj najnowszą wersję `Microsoft.CodeAnalysis.FxCopAnalyzers` [pakietu NuGet](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) .
 
 > [!NOTE]
-> Zaleca się włączenie analizatorów z zestawu .NET SDK zamiast instalowania `Microsoft.CodeAnalysis.NetAnalyzers` [pakietu NuGet](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers), jeśli jest to możliwe. Włączenie analizatorów z zestawu SDK platformy .NET gwarantuje, że podczas aktualizacji zestawu SDK automatycznie pobierzesz poprawki błędów i nowych analiz.
+> Zaleca się włączenie analizatorów z zestawu .NET SDK zamiast instalowania `Microsoft.CodeAnalysis.NetAnalyzers` [pakietu NuGet](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers), jeśli jest to możliwe. Włączenie analizatorów z zestawu SDK platformy .NET gwarantuje, że podczas aktualizacji zestawu SDK automatycznie pobierzesz poprawki błędów i nowych analiz. W modelu NuGet należy zaktualizować pakiet NuGet za każdym razem, gdy chcesz użyć najnowszych poprawek błędów. Pakiet NuGet jest aktualizowany częściej.
 
 ## <a name="see-also"></a>Zobacz także
 

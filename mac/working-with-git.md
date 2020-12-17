@@ -6,12 +6,12 @@ ms.author: jomatthi
 ms.date: 11/09/2020
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
 ms.custom: video
-ms.openlocfilehash: 148a72fb13ff34e3fa15f0c56e145a70fa16608d
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: dc865ec593f53149d9c004f252015def32325d18
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493234"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616180"
 ---
 # <a name="working-with-git"></a>Praca z usługą Git
 
@@ -59,13 +59,13 @@ Umożliwiają one wykonywanie następujących czynności:
 
 ## <a name="switching-branches"></a>Przełączanie gałęzi
 
-Domyślnie pierwsza gałąź utworzona w repozytorium jest określana jako gałąź **główna** . Między gałęzią główną a innymi nie istnieje technicznie wszystko, ale gałąź główna jest taka, która najczęściej jest przemyślana w zespołach programistycznych jako gałąź "na żywo" lub "produkcja".
+Domyślnie pierwsza gałąź utworzona w repozytorium jest określana jako gałąź **główna** . Między główną gałęzią i innymi nie ma różnych aspektów, ale główna gałąź jest taka, która najczęściej jest uważana za zespół programistyczny jako gałąź "na żywo" lub "produkcja".
 
-Niezależny wiersz rozwoju może być tworzony przez rozgałęzienie (lub inne gałęzie). Zapewnia to nową wersję gałęzi głównej w danym momencie, umożliwiając programowanie niezależnie od tego, co to jest "Live". Używanie gałęzi w ten sposób często jest używane do tworzenia oprogramowania
+Niezależna linia programistyczna może być tworzona przez rozgałęzienie w głównej (lub innej gałęzi). Zapewnia to nową wersję głównej gałęzi w danym momencie, umożliwiając programowanie niezależnie od tego, co to jest "Live". Używanie gałęzi w ten sposób często jest używane do tworzenia oprogramowania
 
 Użytkownicy mogą utworzyć dowolną liczbę gałęzi dla każdego repozytorium, ale zaleca się, aby po zakończeniu korzystania z gałęzi była ona usuwana, aby zachować zorganizowanie repozytorium.
 
-Gałęzie są wyświetlane w Visual Studio dla komputerów Mac przez przechodzenie do **kontroli wersji > zarządzanie gałęziami i zdalnymi...** :
+Gałęzie są wyświetlane w Visual Studio dla komputerów Mac przez przechodzenie do **kontroli wersji > zarządzanie gałęziami i zdalnymi...**:
 
 ![Widok gałęzi](media/version-control-gitBranch2.png)
 
@@ -91,7 +91,7 @@ Przejrzyj wszystkie zmiany w projekcie, przechodząc do okna **Kontrola wersji >
 
 Umożliwia to wyświetlanie wszystkich zmian w każdym pliku projektu z opcją przywracania, tworzenia poprawki lub zatwierdzania.
 
-Aby zatwierdzić plik do repozytorium zdalnego, naciśnij przycisk **Zatwierdź** , Wprowadź wiadomość dotyczącą zatwierdzenia i Potwierdź przy użyciu przycisku zatwierdzania:
+Aby zatwierdzić plik do repozytorium zdalnego, naciśnij przycisk **Zatwierdź**, Wprowadź wiadomość dotyczącą zatwierdzenia i Potwierdź przy użyciu przycisku zatwierdzania:
 
 ![Zatwierdzanie pliku](media/version-control-gitCommit.png)
 
@@ -101,6 +101,6 @@ Po zatwierdzeniu zmian wypchnij je do zdalnego repozytorium, aby umożliwić inn
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Manage-Projects-with-Git/player]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 * [Udostępnianie kodu w programie Visual Studio 2017 i Azure Repos git](/azure/devops/repos/git/share-your-code-in-git-vs-2017)

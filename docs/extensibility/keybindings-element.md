@@ -1,5 +1,7 @@
 ---
 title: Element powiązania klawiszy | Microsoft Docs
+description: Element powiązania klawiszy Grupuje elementy powiązanie klawiszy i inne grupowania powiązań klawiszy. Ten artykuł zawiera przykład.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: df1720286007d8f6acf073c21f5b2dcc8486782c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 928637d8103a69eafd3bda4446a55bb7523f83a8
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703128"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616094"
 ---
 # <a name="keybindings-element"></a>Element powiązań klawiszy
 Element powiązania klawiszy Grupuje elementy powiązanie klawiszy i inne grupowania powiązań klawiszy.
@@ -65,6 +67,6 @@ Element powiązania klawiszy Grupuje elementy powiązanie klawiszy i inne grupow
 </KeyBindings>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Powiązanie klawiszy, element](../extensibility/keybinding-element.md)
 - [Pliki tabeli poleceń programu Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

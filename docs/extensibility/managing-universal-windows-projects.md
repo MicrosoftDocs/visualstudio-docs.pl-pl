@@ -1,5 +1,7 @@
 ---
 title: Zarządzanie projektami uniwersalnymi systemu Windows | Microsoft Docs
+description: Aby obsługiwać aplikacje uniwersalne systemu Windows, rozszerzenia programu Visual Studio, które zarządzają projektami, powinny mieć świadomość struktury projektu aplikacji uniwersalnej systemu Windows.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83e3b07bc3373070953709ffe913f37529e74bc7
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: f86edd33e7719dc326aa2c5d252d11322509de64
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012311"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615567"
 ---
 # <a name="manage-universal-windows-projects"></a>Zarządzanie projektami uniwersalnymi systemu Windows
 
@@ -25,7 +27,7 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
 
 ### <a name="navigate-the-shared-project"></a>Nawigowanie po projekcie udostępnionym
 
-1. Utwórz projekt w języku C# o nazwie **TestUniversalProject**. (**Plik**  >  **Nowe**  >  **Projekt** , a następnie język **C#**  >  **Rozszerzalny**  >  **pakiet Visual Studio**). Dodaj niestandardowy szablon elementu projektu **polecenia** (na **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >  **nowy element**, a następnie przejdź do obszaru **rozszerzalności**). Nazwij plik **TestUniversalProject**.
+1. Utwórz projekt w języku C# o nazwie **TestUniversalProject**. (**Plik**  >  **Nowe**  >  **Projekt** , a następnie język **C#**  >  **Rozszerzalny**  >  **pakiet Visual Studio**). Dodaj niestandardowy szablon elementu projektu **polecenia** (na **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >  **nowy element**, a następnie przejdź do obszaru **rozszerzalności**). Nazwij plik **TestUniversalProject**.
 
 2. Dodaj odwołanie do *Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll* i *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll* (w sekcji **rozszerzenia** ).
 
@@ -291,7 +293,7 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
     output.OutputStringThreadSafe("set active project: " + platformCaption +'\n');
     ```
 
-16. Wypróbuj teraz. Naciśnij klawisz F5, aby uruchomić wystąpienie eksperymentalne. Tworzenie projektu aplikacji uniwersalnej w języku C# w eksperymentalnym wystąpieniu (w oknie dialogowym **Nowy projekt** , **Visual C#**  >  **Windows**  >  **Windows 8**  >  **Universal**  >  **aplikacja Universal Hub**systemu Windows w języku Visual C#). Po załadowaniu rozwiązania przejdź do menu **Narzędzia** , a następnie kliknij pozycję **Wywołaj TestUniversalProject**, a następnie sprawdź tekst w okienku **dane wyjściowe** . Powinna zostać wyświetlona zawartość podobna do tej:
+16. Wypróbuj teraz. Naciśnij klawisz F5, aby uruchomić wystąpienie eksperymentalne. Tworzenie projektu aplikacji uniwersalnej w języku C# w eksperymentalnym wystąpieniu (w oknie dialogowym **Nowy projekt** ,   >    >    >    >  **aplikacja Universal Hub** systemu Windows w języku Visual C#). Po załadowaniu rozwiązania przejdź do menu **Narzędzia** , a następnie kliknij pozycję **Wywołaj TestUniversalProject**, a następnie sprawdź tekst w okienku **dane wyjściowe** . Powinna zostać wyświetlona zawartość podobna do tej:
 
     ```
     Found shared project: HubApp.Shared
@@ -353,7 +355,7 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
     output.OutputStringThreadSafe(string.Format("Shared item full path: {0}\n", fullPath));
     ```
 
-4. Wypróbuj teraz. Naciśnij klawisz **F5** , aby uruchomić wystąpienie eksperymentalne. Utwórz projekt aplikacji uniwersalnej w języku C# w eksperymentalnym wystąpieniu (w oknie dialogowym **Nowy projekt** , aplikacji uniwersalnej centrum systemu Windows w języku **Visual C#**  >  **Windows**  >  **Windows 8**  >  **Universal**  >  **Hub App**) przejdź do menu **Narzędzia** i kliknij polecenie **Wywołaj TestUniversalProject**, a następnie sprawdź tekst w okienku **danych wyjściowych** . Powinna zostać wyświetlona zawartość podobna do tej:
+4. Wypróbuj teraz. Naciśnij klawisz **F5** , aby uruchomić wystąpienie eksperymentalne. Utwórz projekt aplikacji uniwersalnej w języku C# w eksperymentalnym wystąpieniu (w oknie dialogowym **Nowy projekt** , aplikacji uniwersalnej centrum systemu Windows w języku **Visual C#**  >    >    >    >  ) przejdź do menu **Narzędzia** i kliknij polecenie **Wywołaj TestUniversalProject**, a następnie sprawdź tekst w okienku **danych wyjściowych** . Powinna zostać wyświetlona zawartość podobna do tej:
 
     ```
     Found shared project: HubApp.Shared
@@ -549,7 +551,7 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
     this.ModifyFileNameInProject(sharedHier, fullPath);
     ```
 
-11. Skompiluj i Uruchom projekt. Utwórz aplikację uniwersalną centrum w języku C# w eksperymentalnym wystąpieniu, przejdź do menu **Narzędzia** i kliknij polecenie **Wywołaj TestUniversalProject**i zaznacz tekst w okienku danych wyjściowych ogólne. Nazwa pierwszego elementu w projekcie udostępnionym (oczekujemy, że plik *App. XAML* ) powinien zostać zmieniony i należy zobaczyć, że <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed> zdarzenie zostało wyzwolone. W takim przypadku zmiana nazwy pliku *App. XAML* powoduje, że zmiany nazwy *App.XAML.cs* również powinny być widoczne cztery zdarzenia (dwa dla każdego projektu platformy). (Zdarzenia DTE nie śledzą elementów w projekcie udostępnionym). Powinny być widoczne dwa <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> zdarzenia (po jednym dla każdego projektu platformy), ale nie <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> zdarzenia.
+11. Skompiluj i Uruchom projekt. Utwórz aplikację uniwersalną centrum w języku C# w eksperymentalnym wystąpieniu, przejdź do menu **Narzędzia** i kliknij polecenie **Wywołaj TestUniversalProject** i zaznacz tekst w okienku danych wyjściowych ogólne. Nazwa pierwszego elementu w projekcie udostępnionym (oczekujemy, że plik *App. XAML* ) powinien zostać zmieniony i należy zobaczyć, że <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed> zdarzenie zostało wyzwolone. W takim przypadku zmiana nazwy pliku *App. XAML* powoduje, że zmiany nazwy *App.XAML.cs* również powinny być widoczne cztery zdarzenia (dwa dla każdego projektu platformy). (Zdarzenia DTE nie śledzą elementów w projekcie udostępnionym). Powinny być widoczne dwa <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> zdarzenia (po jednym dla każdego projektu platformy), ale nie <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> zdarzenia.
 
 12. Teraz spróbuj zmienić nazwę pliku w projekcie platformy i zobaczyć różnicę w zdarzeniach, które są wywoływane. Dodaj następujący kod do programu `ShowMessageBox` po wywołaniu metody `ModifyFileName` .
 
@@ -566,4 +568,4 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
     this.ModifyFileNameInProject(activePlatformHier, unsharedPath);
     ```
 
-13. Skompiluj i Uruchom projekt. Utwórz projekt uniwersalny C# w eksperymentalnym wystąpieniu, przejdź do menu **Narzędzia** i kliknij polecenie **Wywołaj TestUniversalProject**i zaznacz tekst w okienku danych wyjściowych ogólne. Po zmianie nazwy pliku w projekcie platformy powinno być widoczne <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> zdarzenie i <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> zdarzenie. Ponieważ zmiana pliku spowodowała, że nie można zmienić plików, a ponieważ zmiany elementów w projekcie platformy nie są propagowane w dowolnym miejscu, istnieje tylko jedno z tych zdarzeń.
+13. Skompiluj i Uruchom projekt. Utwórz projekt uniwersalny C# w eksperymentalnym wystąpieniu, przejdź do menu **Narzędzia** i kliknij polecenie **Wywołaj TestUniversalProject** i zaznacz tekst w okienku danych wyjściowych ogólne. Po zmianie nazwy pliku w projekcie platformy powinno być widoczne <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> zdarzenie i <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> zdarzenie. Ponieważ zmiana pliku spowodowała, że nie można zmienić plików, a ponieważ zmiany elementów w projekcie platformy nie są propagowane w dowolnym miejscu, istnieje tylko jedno z tych zdarzeń.
