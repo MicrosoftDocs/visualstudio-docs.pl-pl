@@ -3,18 +3,18 @@ title: Ustawianie ciemnego motywu programu Visual Studio i Zmienianie kolorów t
 description: Dowiedz się, jak zmienić domyślny motyw kolorów programu Visual Studio do trybu ciemnego i zmienić kolory czcionki w edytorze kodu.
 ms.date: 08/20/2020
 ms.topic: how-to
-ms.custom: contperfq1
+ms.custom: contperf-fy21q1
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d58bf3a00d3db208abfad23a67bd115914f14a15
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d261d6c13572be6df80ca36f37e19792d53e2a32
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801402"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97684048"
 ---
 # <a name="how-to-personalize-the-visual-studio-ide-and-the-editor"></a>Instrukcje: personalizowanie środowiska IDE programu Visual Studio i edytora
 
@@ -38,7 +38,7 @@ Domyślny motyw kolorów dla interfejsu użytkownika programu Visual Studio jest
 
 1. Na pasku menu, który jest wierszem menu, takim jak **plik** i **Edycja**, wybierz pozycję **Narzędzia**  >  **Opcje**.
 
-1. Na stronie **Environment**  >  **Ogólne** opcje środowiska Zmień wybór **motywu koloru** na **ciemny**, a następnie wybierz przycisk **OK**.
+1. Na stronie   >  **Ogólne** opcje środowiska Zmień wybór **motywu koloru** na **ciemny**, a następnie wybierz przycisk **OK**.
 
    Motyw kolorów dla całego środowiska projektowego programu Visual Studio (IDE) zmienia się na **ciemny**.
 
@@ -108,9 +108,9 @@ Teraz dostosowujemy niektóre kolory tekstu dla edytora. Najpierw utwórz nowy p
 
    ![Kolory czcionki pliku XML](media/quickstart-personalize-xml-file.png)
 
-1. Aby otworzyć okno dialogowe **Opcje** , wybierz opcje **Narzędzia**  >  **Options** z paska menu.
+1. Aby otworzyć okno dialogowe **Opcje** , wybierz opcje **Narzędzia**  >   z paska menu.
 
-1. W obszarze **środowisko**wybierz kategorię **czcionki i kolory** .
+1. W obszarze **środowisko** wybierz kategorię **czcionki i kolory** .
 
    Zwróć uwagę, że tekst w obszarze **Pokaż ustawienia dla** mówi **Edytor tekstu** &mdash; to wszystko, czego szukamy. Rozwiń listę rozwijaną, aby wyświetlić obszerną listę miejsc, w których można dostosować czcionki i kolor tekstu.
 
@@ -128,7 +128,7 @@ Teraz dostosowujemy niektóre kolory tekstu dla edytora. Najpierw utwórz nowy p
 
 Eksplorujemy kilka sposobów dostosowywania kolorów w programie Visual Studio. Mamy nadzieję, że zapoznajesz się z innymi opcjami dostosowywania w oknie dialogowym [**Opcje**](../ide/reference/fonts-and-colors-environment-options-dialog-box.md) , aby naprawdę wprowadzić własne Visual Studio.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Instrukcje: zmienianie czcionek, kolorów i motywów w programie Visual Studio](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 - [Instrukcje: zmiana wielkości liter w edytorze](../ide/how-to-change-text-case-in-the-editor.md)

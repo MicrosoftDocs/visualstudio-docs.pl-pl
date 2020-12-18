@@ -1,8 +1,8 @@
 ---
 title: Informacje o rozwiązaniach i projektach
 description: Dowiedz się więcej o projektach i rozwiązaniach programu Visual Studio, sposobach tworzenia nowych projektów na podstawie szablonu oraz sposobie wyświetlania & zarządzania projektami w programie Eksplorator rozwiązań.
-ms.custom: SEO-VS-2020
-ms.date: 12/15/2020
+ms.custom: SEO-VS-2020, contperf-fy21q2
+ms.date: 12/17/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.addnewitem
@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19d0d2fc862572fdf7226a78e0b34d0af0d57541
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 51a2f9683dd2285cc71dfff67020687f0c48afa4
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668095"
+ms.locfileid: "97683914"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Rozwiązania i projekty w programie Visual Studio
 
@@ -77,11 +77,14 @@ Można również utworzyć niestandardowy szablon projektu, za pomocą którego 
 
 Podczas tworzenia nowego projektu program Visual Studio zapisuje go w domyślnej lokalizacji *%USERPROFILE%\source\repos*. Aby zmienić tę lokalizację, przejdź do **lokalizacji narzędzia**  >  **Opcje**  >  **projekty i rozwiązania**  >  . Aby uzyskać więcej informacji, zobacz [okno dialogowe Opcje: projekty i rozwiązania > lokalizacje](./reference/projects-solutions-locations-options.md).
 
+> [!TIP]
+> Aby zapoznać się z przykładem projektu i rozwiązania utworzonego od podstaw, wykonaj instrukcje krok po kroku i przykładowy kod, zobacz [wprowadzenie do projektów i rozwiązań](../get-started/tutorial-projects-solutions.md).
+
 ## <a name="solution-explorer"></a>Eksplorator rozwiązań
 
 Po utworzeniu nowego projektu można użyć **Eksplorator rozwiązań** , aby wyświetlić projekt i rozwiązanie oraz ich skojarzone elementy i zarządzać nimi. Na poniższej ilustracji przedstawiono **Eksplorator rozwiązań** z rozwiązaniem w języku C# zawierającym dwa projekty:
 
-![Eksplorator rozwiązań](../ide/media/vs2015_solution_explorer.png)
+![Zrzut ekranu przedstawiający Eksplorator rozwiązań.](../ide/media/vs2015_solution_explorer.png)
 
 Wiele poleceń menu jest dostępnych w menu po kliknięciu prawym przyciskiem myszy na różnych elementach w **Eksplorator rozwiązań**. Te polecenia obejmują Kompilowanie projektu, zarządzanie pakietami NuGet, Dodawanie odwołania, zmiana nazwy pliku i uruchamianie testów, po prostu do nazwy a. Pasek narzędzi w górnej części **Eksplorator rozwiązań** zawiera przyciski do przełączenia z widoku rozwiązania do widoku folderu, wyświetlania ukrytych plików, zwijania wszystkich węzłów i innych.
 

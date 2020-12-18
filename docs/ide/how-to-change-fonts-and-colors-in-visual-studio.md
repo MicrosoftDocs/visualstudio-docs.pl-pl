@@ -3,7 +3,7 @@ title: Zmień motywy, czcionki, tekst i kontrast na potrzeby ułatwień dostępu
 description: Dowiedz się, jak zmienić Motywy kolorów programu Visual Studio, kolory czcionek, rozmiary tekstu i kolory dodatkowe, aby ułatwić korzystanie z nich i ułatwień dostępu.
 ms.date: 08/20/2020
 ms.topic: how-to
-ms.custom: contperfq1
+ms.custom: contperf-fy21q1
 helpviewer_keywords:
 - Visual Studio, color themes
 - color themes, Visual Studio
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bfe2b73f7f2ba771875355279043558f3c4cf105
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 7c52be25c007a16d7e6221663c434767c02d8d50
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 12/18/2020
-ms.locfileid: "97667913"
+ms.locfileid: "97683893"
 ---
 # <a name="how-to-change-fonts-colors-and-themes-in-visual-studio"></a>Instrukcje: zmienianie czcionek, kolorów i motywów w programie Visual Studio
 

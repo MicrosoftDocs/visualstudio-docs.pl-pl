@@ -3,17 +3,17 @@ title: Zmień klawisz pomocy F1
 description: Opisuje, jak ponownie mapować lub usunąć mapowanie klawisza F1
 ms.date: 08/20/2020
 ms.topic: how-to
-ms.custom: contperfq1
+ms.custom: contperf-fy21q1
 robots: noindex,nofollow
 manager: jillfra
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: debf469248a8ec1906f3692c37835d9f96476f54
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d9add6996949a97d6140ab6d063f13e02b677e79
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88802273"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97684077"
 ---
 # <a name="change-the-f1-help-key-in-visual-studio"></a>Zmiana klawisza pomocy F1 w programie Visual Studio
 
@@ -24,7 +24,7 @@ Jeśli chcesz użyć klawisza F1 dla innej funkcji niż usługa pomocy F1 lub po
 
 **Aby wyłączyć Pomoc F1:**
 
-1. W programie Visual Studio wybierz pozycję **Narzędzia**  >  **Opcje**, a następnie w obszarze **środowisko**wybierz pozycję **Klawiatura**.
+1. W programie Visual Studio wybierz pozycję **Narzędzia**  >  **Opcje**, a następnie w obszarze **środowisko** wybierz pozycję **Klawiatura**.
 
 1. W polu tekstowym **Pokaż polecenia zawierające** wpisz **help. F1** , aby odfiltrować widok poleceń.
 

@@ -4,7 +4,7 @@ titleSuffix: ''
 description: Dowiedz się, jak modyfikować program Visual Studio, krok po kroku.
 ms.date: 10/12/2020
 ms.topic: how-to
-ms.custom: contperfq2
+ms.custom: contperf-fy21q2
 helpviewer_keywords:
 - modify Visual Studio
 - change visual studio
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: dad71e4f52350357106ee9a9ef9ce90d18204bfb
-ms.sourcegitcommit: 4eb8fe6eb7f1dc639f1d213db05a7a3007e8087e
+ms.openlocfilehash: 17a02fb8c05c6f1720aa1b352e30c46e04a8b69d
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92157378"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97684097"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Modyfikowanie programu Visual Studio przez dodawanie lub usuwanie obciążeń i składników
 
@@ -157,7 +157,7 @@ Domyślnie Instalator jest zgodny z językiem systemu operacyjnego, gdy jest uru
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 * [Lista identyfikatorów składników & obciążeń programu Visual Studio](workload-and-component-ids.md)
 * [Aktualizowanie programu Visual Studio](update-visual-studio.md)

@@ -1,7 +1,7 @@
 ---
 title: Praca z rozwiązaniami i projektami
 description: Dowiedz się więcej o różnicach między rozwiązaniami i projektami oraz sposobami ich używania w programie Visual Studio.
-ms.custom: SEO-VS-2020
+ms.custom: SEO-VS-2020, contperf-fy21q2
 ms.date: 02/06/2018
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bbfa16273dc323d2ad175e965a19a22ad0d17ce
-ms.sourcegitcommit: 6f37100d4b8c15a21d3858335ded3c26ab275b93
+ms.openlocfilehash: c6649b313d4ab03c1f096a6bcbc466cb338f427c
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97599482"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97684033"
 ---
 # <a name="work-with-solutions-and-projects"></a>Praca z rozwiązaniami i projektami
 
@@ -67,7 +67,7 @@ Podczas tworzenia projektu .NET Framework można określić określoną wersję 
 
 ::: moniker range="vs-2017"
 
-Aby określić wersję .NET Framework, wybierz menu rozwijane **Framework** w oknie dialogowym **Nowy projekt** .
+Aby określić wersję .NET Framework, wybierz menu rozwijane **Struktura** w oknie dialogowym **Nowy projekt** .
 
 ![Lista rozwijana platformy w oknie dialogowym Nowy projekt](./media/vside-newproject-framework.png)
 
@@ -98,7 +98,7 @@ Można również tworzyć puste rozwiązania, które nie mają projektów. Może
 
 3. W środkowym okienku wybierz pozycję **puste rozwiązanie**.
 
-4. Wprowadź wartości w **nazwach** i **lokalizacji** dla rozwiązania, a następnie wybierz przycisk **OK**.
+4. Wprowadź wartości **nazwy** i **lokalizacji** dla rozwiązania, a następnie wybierz przycisk **OK**.
 
 ::: moniker-end
 

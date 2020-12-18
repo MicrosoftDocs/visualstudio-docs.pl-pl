@@ -3,7 +3,7 @@ title: Korzystanie z programu MSBuild
 description: Poznaj różne części pliku projektu programu MSBuild, w tym elementy, metadane elementów, właściwości, elementy docelowe i zadania.
 ms.date: 10/19/2020
 ms.topic: conceptual
-ms.custom: contperfq2
+ms.custom: contperf-fy21q2
 helpviewer_keywords:
 - MSBuild, tutorial
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b26c13765daf5a82a9961e6509b36e24e18f4e0c
-ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
+ms.openlocfilehash: adc1a191e8fe3869273df546191f7701956018dd
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92298546"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97684012"
 ---
 # <a name="walkthrough-use-msbuild"></a>Przewodnik: korzystanie z programu MSBuild
 
@@ -60,12 +60,12 @@ W instalatorze upewnij się, że są zaznaczone narzędzia MSBuild dla używanyc
     ::: moniker range=">=vs-2019"
     Naciśnij klawisz **ESC** , aby zamknąć okno uruchamiania. **Naciśnij klawisze CTRL + Q** , aby otworzyć pole wyszukiwania, wpisz **WinForms**, a następnie wybierz pozycję **utwórz nową aplikację Windows Forms (.NET Framework)**. W wyświetlonym oknie dialogowym wybierz pozycję **Utwórz**.
 
-    W polu **Nazwa** wpisz `BuildApp`. Wprowadź **lokalizację** rozwiązania, na przykład *D: \\ *. Zaakceptuj wartości domyślne dla **rozwiązania**, **nazwy rozwiązania** (**BuildApp**) i **struktury**.
+    W polu **Nazwa** wpisz `BuildApp`. Wprowadź **lokalizację** rozwiązania, na przykład *D: \\*. Zaakceptuj wartości domyślne dla **rozwiązania**, **nazwy rozwiązania** (**BuildApp**) i **struktury**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Na górnym pasku menu wybierz pozycję **plik**  >  **Nowy**  >  **projekt**. W lewym okienku okna dialogowego **Nowy projekt** rozwiń węzeł **Visual C#**  >  **Windows Desktop**, a następnie wybierz pozycję **Windows Forms App (.NET Framework)**. Następnie wybierz przycisk **OK**.
 
-    W polu **Nazwa** wpisz `BuildApp`. Wprowadź **lokalizację** rozwiązania, na przykład *D: \\ *. Zaakceptuj wartości domyślne dla opcji **Utwórz katalog dla rozwiązania** (wybrane), **Dodaj do kontroli źródła** (nie wybrano) i **nazwę rozwiązania** (**BuildApp**).
+    W polu **Nazwa** wpisz `BuildApp`. Wprowadź **lokalizację** rozwiązania, na przykład *D: \\*. Zaakceptuj wartości domyślne dla opcji **Utwórz katalog dla rozwiązania** (wybrane), **Dodaj do kontroli źródła** (nie wybrano) i **nazwę rozwiązania** (**BuildApp**).
     ::: moniker-end
 
 1. Kliknij przycisk **OK** lub **Utwórz** , aby utworzyć plik projektu.
@@ -76,7 +76,7 @@ W instalatorze upewnij się, że są zaznaczone narzędzia MSBuild dla używanyc
 
 **Aby przejrzeć plik projektu**
 
-1. W **Eksplorator rozwiązań**kliknij węzeł projektu **BuildApp**.
+1. W **Eksplorator rozwiązań** kliknij węzeł projektu **BuildApp**.
 
 1. W przeglądarce **Właściwości** należy zauważyć, że właściwość **pliku projektu** to *BuildApp. csproj*. Wszystkie pliki projektu mają nazwę z elementem *proj*. Jeśli utworzono projekt Visual Basic, nazwa pliku projektu byłaby *BuildApp. vbproj*.
 
@@ -243,7 +243,7 @@ Użyj tej składni do sprawdzenia niektórych właściwości w pliku projektu.
 
 1. Zapisz plik projektu.
 
-1. W **oknie polecenia**wpisz i wykonaj ten wiersz:
+1. W **oknie polecenia** wpisz i wykonaj ten wiersz:
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
@@ -294,7 +294,7 @@ Właściwości można definiować w wierszu polecenia przy użyciu przełącznik
 
 **Aby ustawić wartość właściwości z wiersza polecenia:**
 
-1. W **oknie polecenia**wpisz i wykonaj ten wiersz:
+1. W **oknie polecenia** wpisz i wykonaj ten wiersz:
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld -p:Configuration=Release
@@ -324,7 +324,7 @@ Zmień zadanie, aby wyświetlić wartość właściwości Configuration ze znaka
 
 1. Zapisz plik projektu.
 
-1. W **oknie polecenia**wpisz i wykonaj ten wiersz:
+1. W **oknie polecenia** wpisz i wykonaj ten wiersz:
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
@@ -388,7 +388,7 @@ Użyj tej składni, aby przeanalizować typ elementu kompilacji w pliku projektu
 
 1. Zapisz plik projektu.
 
-1. W **oknie polecenia**wpisz i wykonaj ten wiersz:
+1. W **oknie polecenia** wpisz i wykonaj ten wiersz:
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
@@ -420,7 +420,7 @@ Zmień zadanie, aby użyć powrotu karetki i wysuwu wiersza (% 0A% 0D), aby wyś
 
 2. Zapisz plik projektu.
 
-3. W **oknie polecenia**wpisz i wykonaj ten wiersz:
+3. W **oknie polecenia** wpisz i wykonaj ten wiersz:
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
@@ -472,7 +472,7 @@ Zmień zadanie, aby użyć powrotu karetki i wysuwu wiersza (% 0A% 0D), aby wyś
 <Compile Include="*.cs" Exclude="*Designer*">
 ```
 
- dodaje wszystkie pliki z rozszerzeniem pliku *CS* do typu elementu kompilacji, z wyjątkiem plików, których nazwy zawierają *projektanta*ciągów. Aby uzyskać więcej przykładów, zobacz [How to: wykluczanie plików z kompilacji](../msbuild/how-to-exclude-files-from-the-build.md).
+ dodaje wszystkie pliki z rozszerzeniem pliku *CS* do typu elementu kompilacji, z wyjątkiem plików, których nazwy zawierają *projektanta* ciągów. Aby uzyskać więcej przykładów, zobacz [How to: wykluczanie plików z kompilacji](../msbuild/how-to-exclude-files-from-the-build.md).
 
 Atrybut Exclude ma wpływ tylko na elementy dodane przez atrybut Include w elemencie Item, który je zawiera. Przykład:
 
@@ -481,7 +481,7 @@ Atrybut Exclude ma wpływ tylko na elementy dodane przez atrybut Include w eleme
 <Compile Include="*.res" Exclude="Form1.cs">
 ```
 
-nie wykluczają *Form1.cs*pliku, który został dodany w poprzednim elemencie elementu.
+nie wykluczają *Form1.cs* pliku, który został dodany w poprzednim elemencie elementu.
 
 **Aby uwzględnić i wykluczyć elementy**
 
@@ -501,7 +501,7 @@ nie wykluczają *Form1.cs*pliku, który został dodany w poprzednim elemencie el
 
 3. Zapisz plik projektu.
 
-4. W **oknie polecenia**wpisz i wykonaj ten wiersz:
+4. W **oknie polecenia** wpisz i wykonaj ten wiersz:
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
@@ -543,7 +543,7 @@ nie wykluczają *Form1.cs*pliku, który został dodany w poprzednim elemencie el
 
 2. Zapisz plik projektu.
 
-3. W **oknie polecenia**wpisz i wykonaj ten wiersz:
+3. W **oknie polecenia** wpisz i wykonaj ten wiersz:
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
@@ -574,7 +574,7 @@ Zwróć uwagę, jak fraza "Kompiluj. DependentUpon" występuje kilka razy. Użyc
 
 2. Zapisz plik projektu.
 
-3. W **oknie polecenia**wpisz i wykonaj ten wiersz:
+3. W **oknie polecenia** wpisz i wykonaj ten wiersz:
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
@@ -613,7 +613,7 @@ Na przykład lista elementów plików źródłowych może być przekształcana d
 
 2. Zapisz plik projektu.
 
-3. W **oknie polecenia**wpisz i wykonaj ten wiersz:
+3. W **oknie polecenia** wpisz i wykonaj ten wiersz:
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
@@ -631,7 +631,7 @@ Zwróć uwagę, że metadane wyrażone w tej składni nie powodują przetwarzani
 
  Aby dowiedzieć się, jak utworzyć prosty plik projektu w jednym kroku, wypróbuj [Przewodnik: Tworzenie pliku projektu MSBuild od podstaw](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Omówienie programu MSBuild](../msbuild/msbuild.md)
 - [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)

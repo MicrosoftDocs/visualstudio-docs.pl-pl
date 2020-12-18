@@ -1,8 +1,8 @@
 ---
 title: Tworzenie nowego projektu
-description: Dowiedz się, jak utworzyć nowy projekt w programie Visual Studio, krok po kroku.
-ms.custom: SEO-VS-2020
-ms.date: 03/19/2019
+description: Dowiedz się, jak utworzyć nowy projekt w programie Visual Studio.
+ms.custom: SEO-VS-2020, contperf-fy21q2
+ms.date: 12/17/2020
 ms.topic: how-to
 f1_keywords:
 - vs.newproject
@@ -13,14 +13,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c46ad7630717ca6500ddbedf284125e085ddb780
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: cd8b6cb4819ae13b526eb5106bc7de3919d1a74f
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668174"
+ms.locfileid: "97683974"
 ---
 # <a name="create-a-new-project-in-visual-studio"></a>Utworzenie nowego projektu w Visual Studio
+
+W tym artykule przedstawiono sposób szybkiego tworzenia nowego projektu w programie Visual Studio.
 
 ::: moniker range="vs-2017"
 
@@ -57,9 +59,9 @@ Kliknij przycisk **OK** , aby utworzyć rozwiązanie i projekt.
 
 ## <a name="open-the-create-a-new-project-page"></a>Otwórz stronę Tworzenie nowego projektu
 
-Istnieje wiele sposobów tworzenia nowego projektu w programie Visual Studio 2019. Po pierwszym otwarciu programu Visual Studio zostanie wyświetlone okno uruchamiania, a następnie można wybrać opcję **Utwórz nowy projekt**.
+Istnieje wiele sposobów tworzenia nowego projektu w programie Visual Studio 2019. Po pierwszym otwarciu programu Visual Studio pojawi się okno uruchamiania, a w tym miejscu możesz wybrać opcję **Utwórz nowy projekt**.
 
-![Utwórz nowy projekt z okna uruchamiania w programie VS 2019](media/vs-2019/start-window-create-new-project.png)
+![Utwórz nowy projekt z okna uruchamiania w programie Visual Studio 2019](media/vs-2019/start-window-create-new-project.png)
 
 Jeśli środowisko programistyczne programu Visual Studio jest już otwarte, możesz utworzyć nowy projekt, wybierając pozycję **plik** > **Nowy** > **projekt** na pasku menu lub klikając przycisk **Nowy projekt** na pasku narzędzi.
 
@@ -78,7 +80,7 @@ Znaczniki, które są wyświetlane pod każdym szablonem, odpowiadają trzem fil
 > [!TIP]
 > Jeśli nie widzisz szablonu, którego szukasz, może brakować obciążenia dla programu Visual Studio. Aby zainstalować dodatkowe obciążenia, na przykład Programowanie na **platformie Azure** lub **opracowywanie aplikacji mobilnych przy użyciu platformy .NET**, kliknij link **Zainstaluj więcej narzędzi i funkcji** , aby otworzyć Instalator programu Visual Studio. W tym miejscu wybierz obciążenia, które chcesz zainstalować, a następnie wybierz polecenie **Modyfikuj**. Po wykonaniu tych dodatkowych szablonów projektu będą dostępne do wyboru.
 >
-> ![Zainstaluj więcej narzędzi i funkcji link w programie VS 2019](media/vs-2019/install-more-tools-features.png)
+> ![Połącz więcej narzędzi i funkcji w programie Visual Studio 2019](media/vs-2019/install-more-tools-features.png)
 
 Wybierz szablon, a następnie kliknij przycisk **dalej**.
 
@@ -86,12 +88,12 @@ Wybierz szablon, a następnie kliknij przycisk **dalej**.
 
 Na stronie **Konfiguruj nowy projekt** są dostępne opcje nazwy projektu (i rozwiązania), wybierz lokalizację dysku i wybierz wersję platformy (jeśli dotyczy wybranego szablonu).
 
-![Skonfiguruj nową stronę projektu w programie VS 2019](media/vs-2019/configure-new-project.png)
+![Skonfiguruj nową stronę projektu w programie Visual Studio 2019](media/vs-2019/configure-new-project.png)
 
 > [!NOTE]
 > Jeśli tworzysz nowy projekt, gdy masz już otwarty projekt lub rozwiązanie w programie Visual Studio, dostępna jest opcja dodatkowa konfiguracja. Możesz utworzyć nowe rozwiązanie lub dodać nowy projekt do rozwiązania, które jest już otwarte.
 >
-> ![Utwórz nowe rozwiązanie lub Dodaj je do istniejącego rozwiązania w programie VS 2019](media/vs-2019/configure-new-project-solution.png)
+> ![Utwórz nowe rozwiązanie lub Dodaj je do istniejącego rozwiązania w programie Visual Studio 2019](media/vs-2019/configure-new-project-solution.png)
 
 Kliknij przycisk **Utwórz** , aby utworzyć nowy projekt.
 
@@ -99,7 +101,10 @@ Kliknij przycisk **Utwórz** , aby utworzyć nowy projekt.
 
 ## <a name="add-additional-projects-to-a-solution"></a>Dodawanie kolejnych projektów do rozwiązania
 
-Jeśli chcesz dodać dodatkowy projekt do rozwiązania, kliknij prawym przyciskiem myszy węzeł rozwiązanie w **Eksplorator rozwiązań** i wybierz polecenie **Dodaj**  >  **Nowy projekt**.
+Jeśli chcesz dodać dodatkowy projekt do rozwiązania, kliknij prawym przyciskiem myszy węzeł rozwiązanie w **Eksplorator rozwiązań** a następnie wybierz pozycję **Dodaj**  >  **Nowy projekt**.
+
+> [!TIP]
+> Aby zapoznać się z przykładem projektu i rozwiązania utworzonego od podstaw, wykonaj instrukcje krok po kroku i przykładowy kod, zobacz [wprowadzenie do projektów i rozwiązań](../get-started/tutorial-projects-solutions.md).
 
 ## <a name="see-also"></a>Zobacz także
 
