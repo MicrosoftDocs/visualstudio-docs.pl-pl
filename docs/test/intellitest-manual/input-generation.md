@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 771fd167a2dc9fce8278ca53f730872a9f170eb7
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 62c06333af1e296c7e9745b70f33577d45ede68b
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329913"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668771"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Generowanie danych wejściowych przy użyciu dynamicznego wykonywania symbolicznego
 
@@ -133,8 +133,8 @@ Klasa statyczna [PexChoose](static-helper-classes.md#pexchoose) może służyć 
 
 ## <a name="got-feedback"></a>Chcesz przesłać opinię?
 
-Opublikuj swoje pomysły i sugestie funkcji w [społeczności deweloperów](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
+Opublikuj swoje pomysły i sugestie funkcji w [społeczności deweloperów](https://aka.ms/feedback/suggest?space=8).
 
-## <a name="further-reading"></a>Dodatkowe informacje
+## <a name="further-reading"></a>Dalsze informacje
 
 * [Jak to działa?](https://devblogs.microsoft.com/devops/smart-unit-tests-a-mental-model/)

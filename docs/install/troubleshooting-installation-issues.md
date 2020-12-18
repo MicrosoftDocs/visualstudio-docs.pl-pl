@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 418cc9f75842cb4f3e9d8c0c0753084e2f0633c2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 54bd53f5c63a2f126f4aeae264c4dff745633cf6
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350813"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668316"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Rozwiązywanie problemów z instalacją i uaktualnieniem programu Visual Studio
 
@@ -53,7 +53,7 @@ Naprawa rozwiązuje wiele typowych problemów z aktualizacją. Aby uzyskać wię
 
 ### <a name="step-3---check-with-the-developer-community"></a>Krok 3. sprawdzenie społeczności deweloperów
 
-Wyszukaj komunikat o błędzie za pomocą [społeczności deweloperów programu Visual Studio](https://developercommunity.visualstudio.com/spaces/8/index.html). Inni członkowie społeczności mogą udokumentować rozwiązanie problemu.
+Wyszukaj komunikat o błędzie za pomocą [społeczności deweloperów programu Visual Studio](https://aka.ms/feedback/suggest?space=8). Inni członkowie społeczności mogą udokumentować rozwiązanie problemu.
 
 ### <a name="step-4---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems"></a>Krok 4. Usuwanie katalogu Instalator programu Visual Studio, aby rozwiązać problemy z uaktualnianiem
 
@@ -147,7 +147,7 @@ Aby zebrać dzienniki:
 
 Jeśli rozwiązania wymienione w tym przewodniku rozwiązywania problemów nie pozwalają na pomyślne zainstalowanie lub uaktualnienie programu Visual Studio, Skorzystaj z naszej opcji obsługi [**czatu na żywo**](https://visualstudio.microsoft.com/vs/support/#talktous) (tylko w języku angielskim), aby uzyskać dalszą pomoc.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 * [Napraw program Visual Studio](repair-visual-studio.md)
 * [Usuń program Visual Studio](remove-visual-studio.md)

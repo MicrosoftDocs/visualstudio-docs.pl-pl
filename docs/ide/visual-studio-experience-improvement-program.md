@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6c785b755b64f0dd7e367a01d9c05c1981ea558
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eae7e4726f720b1c9974682525bbe2a28ee38d5f
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71693014"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97667939"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Program poprawy jakości obsługi klienta systemu Visual Studio
 
@@ -31,7 +31,7 @@ VSCEIP jest domyślnie włączona. Można ją wyłączyć lub ponownie włączy�
 
    Zostanie otwarte okno dialogowe **program poprawy jakości obsługi programu Visual Studio** .
 
-1. Aby zrezygnować z korzystania z programu, wybierz pozycję **nie, nie chcę uczestniczyć**w programie, a następnie wybierz przycisk **OK**. Wybierz opcję **tak, chcę uczestniczyć**, a następnie wybierz przycisk **OK**.
+1. Aby zrezygnować z korzystania z programu, wybierz pozycję **nie, nie chcę uczestniczyć** w programie, a następnie wybierz przycisk **OK**. Wybierz opcję **tak, chcę uczestniczyć**, a następnie wybierz przycisk **OK**.
 
    ![Okno dialogowe Program poprawy jakości obsługi programu Visual Studio](media/experience-improvement-program.png)
 
@@ -43,17 +43,17 @@ Odpowiedni klucz rejestru i ustawienia są następujące:
 
 ::: moniker range="vs-2017"
 
-- W 64-bitowym systemie operacyjnym, Key = **HKEY_LOCAL_MACHINE \software\wow6432node\microsoft\vscommon\15.0\sqm**
-- W 32-bitowym systemie operacyjnym, Key = **HKEY_LOCAL_MACHINE \software\microsoft\vscommon\15.0\sqm**
-- Gdy zasady grupy jest włączona, klucz = **HKEY_LOCAL_MACHINE \software\policies\microsoft\visualstudio\sqm**
+- W 64-bitowym systemie operacyjnym, Key = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\15.0\SQM**
+- W 32-bitowym systemie operacyjnym, Key = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\15.0\SQM**
+- Gdy zasady grupy jest włączona, klucz = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-- W 64-bitowym systemie operacyjnym, Key = **HKEY_LOCAL_MACHINE \software\wow6432node\microsoft\vscommon\16.0\sqm**
-- W 32-bitowym systemie operacyjnym, Key = **HKEY_LOCAL_MACHINE \software\microsoft\vscommon\16.0\sqm**
-- Gdy zasady grupy jest włączona, klucz = **HKEY_LOCAL_MACHINE \software\policies\microsoft\visualstudio\sqm**
+- W 64-bitowym systemie operacyjnym, Key = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\16.0\SQM**
+- W 32-bitowym systemie operacyjnym, Key = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\16.0\SQM**
+- Gdy zasady grupy jest włączona, klucz = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
 
 ::: moniker-end
 
@@ -69,10 +69,10 @@ Wartość = (DWORD)
 
 Aby uzyskać więcej informacji na temat informacji zbieranych, przetwarzanych lub przesyłanych przez VSCEIP, zobacz [zasady zachowania poufności informacji firmy Microsoft](https://privacy.microsoft.com/privacystatement).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 * [Informacje diagnostyczne zebrane przez program Visual Studio](diagnostic-data-collection.md)
 * [Opcje opinii programu Visual Studio](../ide/feedback-options.md)
 * [Jak zgłosić problem w programie Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md)
-* [Społeczność deweloperów programu Visual Studio](https://developercommunity.visualstudio.com/)
+* [Społeczność deweloperów programu Visual Studio](https://aka.ms/feedback/suggest?space=8)
 * [Oświadczenie o ochronie prywatności w firmie Microsoft](https://privacy.microsoft.com/privacystatement)

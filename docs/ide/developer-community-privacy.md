@@ -12,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82c89f2f6ec2a1a9bc6c87a600c355226b2f3da4
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: dccf962aef39227388f86134a9dd1f8c96440a3c
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95005941"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668550"
 ---
 # <a name="developer-community-data-privacy"></a>Prywatność danych w społeczności deweloperów
 
-Domyślnie wszystkie informacje w raportach o problemach w [społeczności deweloperów](https://developercommunity.visualstudio.com/), w tym wszelkie komentarze i odpowiedzi, są widoczne publicznie. Jest to korzystne, ponieważ umożliwia całej społeczności przeglądanie problemów, rozwiązań i obejściów znalezionych przez innych użytkowników. Jeśli jednak obawiasz się o prywatność danych lub tożsamości, możesz korzystać z opcji.
+Domyślnie wszystkie informacje w raportach o problemach w [społeczności deweloperów](https://aka.ms/feedback/suggest?space=8), w tym wszelkie komentarze i odpowiedzi, są widoczne publicznie. Jest to korzystne, ponieważ umożliwia całej społeczności przeglądanie problemów, rozwiązań i obejściów znalezionych przez innych użytkowników. Jeśli jednak obawiasz się o prywatność danych lub tożsamości, możesz korzystać z opcji.
 
 ## <a name="identity-privacy"></a>Prywatność tożsamości
 

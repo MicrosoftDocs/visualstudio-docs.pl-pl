@@ -1,5 +1,6 @@
 ---
 title: Kolory udostępnione dla programu Visual Studio | Microsoft Docs
+description: Dowiedz się, jak używać typowych elementów i motywów powłoki programu Visual Studio, aby zaprojektować własny niestandardowy interfejs użytkownika, który jest zgodny ze środowiskiem programu Visual Studio.
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
@@ -8,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e31e5d9c3d1dc284694bd2db2a9f37d863462ad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 939a327100b1fcf0908c56a4fc67540e646eac7e
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699932"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668914"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Kolory udostępnione dla programu Visual Studio
 Gdy projektujesz interfejs użytkownika, który używa typowych elementów powłoki programu Visual Studio, lub chcesz, aby element interfejsu był spójny z podobnymi funkcjami, Użyj istniejących nazw tokenów w plikach definicji pakietów, aby wybrać i przypisać kolory. Dzięki temu interfejs użytkownika pozostaje spójny z ogólnym środowiskiem programu Visual Studio i jest aktualizowany automatycznie po dodaniu lub zaktualizowaniu motywów.
@@ -703,7 +704,7 @@ Pole wyszukiwania może być jednym z kilku stanów, z których niektóre wykluc
 | Pierwszy plan (symbol wyszukiwania) | `SearchControl.SearchGlyph` |
 | Pierwszy plan (symbol STOP) | `SearchControl.StopGlyph` |
 | Pierwszy plan (czysty symbol) | `SearchControl.ClearGlyph` |
-| Obramowanie | Brak |
+| Obramowanie | Nie dotyczy |
 
 **Przycisk akcji wyszukiwania nieskoncentrowanego**
 
@@ -711,11 +712,11 @@ Pole wyszukiwania może być jednym z kilku stanów, z których niektóre wykluc
 
 | Element | Nazwa tokenu: Category. Color |
 | --- | --- |
-| Tło | Brak |
+| Tło | Nie dotyczy |
 | Pierwszy plan (symbol wyszukiwania) | `SearchControl.SearchGlyph` |
 | Pierwszy plan (symbol STOP) | `SearchControl.StopGlyph` |
 | Pierwszy plan (czysty symbol) | `SearchControl.ClearGlyph` |
-| Obramowanie | Brak |
+| Obramowanie | Nie dotyczy |
 
 **Przycisk akcji wyszukiwania naciśniętego**
 
@@ -1226,7 +1227,7 @@ Grupa paska poleceń składa się z powiązanego zestawu kontrolek paska polece�
 | --- | --- |
 | Tło | Nie dotyczy (dziedziczy z poziomu tła paska poleceń) |
 | Pierwszy plan (tekst) | `Environment.CommandBarTextActive` |
-| Obramowanie | Brak |
+| Obramowanie | Nie dotyczy |
 
 **Ikona polecenia: stan domyślny, wybrane**
 
@@ -1276,7 +1277,7 @@ Grupa paska poleceń składa się z powiązanego zestawu kontrolek paska polece�
 | --- | --- |
 | Tło | Nie dotyczy (dziedziczy z poziomu tła paska poleceń) |
 | Pierwszy plan (tekst) | `Environment.CommandBarTextInactive` |
-| Obramowanie | Brak |
+| Obramowanie | Nie dotyczy |
 
 #### <a name="command-bar-combo-boxes"></a><a name="BKMK_CommandComboBox"></a> Pola kombi paska poleceń
 
@@ -1333,7 +1334,7 @@ Grupa paska poleceń składa się z powiązanego zestawu kontrolek paska polece�
 
  **Przycisk listy rozwijanej pasek poleceń: stan aktywowania**
 
-![Przycisk listy rozwijanej paska poleceń po aktywowaniu](../../extensibility/ux-guidelines/media/0303-034_comboboxdropdownbuttonhover.png "0303 — 034_ComboBoxDropdownButtonHover")<br />Przycisk listy rozwijanej paska poleceń po aktywowaniu
+![Przycisk rozwijany pasek poleceń pole kombi po umieszczeniu wskaźnika myszy](../../extensibility/ux-guidelines/media/0303-034_comboboxdropdownbuttonhover.png "0303 — 034_ComboBoxDropdownButtonHover")<br />Przycisk listy rozwijanej paska poleceń po aktywowaniu
 
 | Element | Nazwa tokenu: Category. Color |
 | --- | --- |
@@ -1342,7 +1343,7 @@ Grupa paska poleceń składa się z powiązanego zestawu kontrolek paska polece�
 
 **Lista rozwijana paska poleceń: stan aktywowania**
 
- ![Lista rozwijana paska poleceń przy aktywowaniu](../../extensibility/ux-guidelines/media/0303-035_comboboxdropdownlisthover.png "0303 — 035_ComboBoxDropdownListHover")<br />Lista rozwijana paska poleceń przy aktywowaniu
+ ![Lista rozwijana pola kombi paska poleceń przy aktywowaniu](../../extensibility/ux-guidelines/media/0303-035_comboboxdropdownlisthover.png "0303 — 035_ComboBoxDropdownListHover")<br />Lista rozwijana paska poleceń przy aktywowaniu
 
 | Element | Nazwa tokenu: Category. Color |
 | --- | --- |
@@ -1383,7 +1384,7 @@ Grupa paska poleceń składa się z powiązanego zestawu kontrolek paska polece�
 
 **Przycisk listy rozwijanej pasek poleceń: stan naciśnięte**
 
-![Przycisk listy rozwijanej naciśniętego paska poleceń](../../extensibility/ux-guidelines/media/0303-039_comboboxdropdownbuttonpressed.png "0303 — 039_ComboBoxDropdownButtonPressed")<br />Przycisk listy rozwijanej naciśniętego paska poleceń
+![Przycisk rozwijany pola kombi naciśniętego paska poleceń](../../extensibility/ux-guidelines/media/0303-039_comboboxdropdownbuttonpressed.png "0303 — 039_ComboBoxDropdownButtonPressed")<br />Przycisk listy rozwijanej naciśniętego paska poleceń
 
 | Element | Nazwa tokenu: Category. Color |
 | --- | --- |
@@ -1403,7 +1404,7 @@ Grupa paska poleceń składa się z powiązanego zestawu kontrolek paska polece�
 
 **Przycisk listy rozwijanej pasek poleceń: stan wyłączony**
 
-![Przycisk listy rozwijanej wyłączony pasek poleceń](../../extensibility/ux-guidelines/media/0303-040_comboboxdropdownbuttondisabled.png "0303 — 040_ComboBoxDropdownButtonDisabled")<br />Przycisk listy rozwijanej wyłączony pasek poleceń
+![Przycisk listy rozwijanej pole kombi wyłączonego paska poleceń](../../extensibility/ux-guidelines/media/0303-040_comboboxdropdownbuttondisabled.png "0303 — 040_ComboBoxDropdownButtonDisabled")<br />Przycisk listy rozwijanej wyłączony pasek poleceń
 
 | Element | Nazwa tokenu: Category. Color |
 | --- | --- |
@@ -1520,7 +1521,7 @@ Grupa paska poleceń składa się z powiązanego zestawu kontrolek paska polece�
 
 | Element | Nazwa tokenu: Category. Color |
 | --- | --- |
-| Tło | Brak |
+| Tło | Nie dotyczy |
 | Pierwszy plan (symbol) | `Environment.DropDownDisabledGlyph` |
 
 #### <a name="command-bar-split-buttons"></a>Przyciski podziału paska poleceń
@@ -1542,8 +1543,8 @@ Przyciski podziału współdzielą wiele nazw tokenów z innymi kontrolkami pask
 | Tło | Brak |
 | Pierwszy plan (tekst) | `Environment.CommandBarTextActive` |
 | Pierwszy plan (symbol) | `Environment.CommandBarSplitButtonGlyph` |
-| Obramowanie | Brak |
-| Separator | Brak |
+| Obramowanie | Nie dotyczy |
+| Separator | Nie dotyczy |
 
 **Przycisk podziału paska poleceń: stan aktywowania**
 
@@ -1567,7 +1568,7 @@ Przyciski podziału współdzielą wiele nazw tokenów z innymi kontrolkami pask
 | Pierwszy plan (tekst) | `Environment.CommandBarTextMouseDown` |
 | Pierwszy plan (symbol) | `Environment.CommandBarSplitButtonMouseDownGlyph` |
 | Obramowanie | `Environment.CommandBarBorder` |
-| Separator | Brak |
+| Separator | Nie dotyczy |
 
 **Przycisk podziału paska poleceń: wyłączony stan**
 
@@ -1575,11 +1576,11 @@ Przyciski podziału współdzielą wiele nazw tokenów z innymi kontrolkami pask
 
 | Element | Nazwa tokenu: Category. Color |
 | --- | --- |
-| Tło | Brak |
+| Tło | Nie dotyczy |
 | Pierwszy plan (tekst) | `Environment.ComboBoxItemTextInactive` |
 | Pierwszy plan (symbol) | `Environment.CommandBarTextInactive` |
-| Obramowanie | Brak |
-| Separator | Brak |
+| Obramowanie | Nie dotyczy |
+| Separator | Nie dotyczy |
 
 #### <a name="command-bar-more-options-and-overflow-buttons"></a>Przyciski "więcej opcji" i "overflow" paska poleceń
 Przycisk "więcej opcji" jest używany, gdy grupy paska poleceń można dostosowywać przez dodawanie lub usuwanie powiązanych przycisków paska poleceń. Przycisk "przepełnienie" pojawia się, gdy pasek poleceń został obcięty z powodu braku miejsca w poziomie, a w obszarze kliknij Pokaż menu zawierające przyciski paska poleceń, których nie można wyświetlić. Kolory tych dwóch przycisków są kontrolowane przez ten sam zestaw nazw tokenów.
@@ -1836,7 +1837,7 @@ Przycisk przepełnienia dokumentu jest obecny, jeśli istnieje co najmniej jeden
 | --- | --- |
 | Tło | `Environment.DocWellOverflowButtonBackground` |
 | Pierwszy plan (symbol) | `Environment.DocWellOverflowButtonGlyph` |
-| Obramowanie | Brak |
+| Obramowanie | Nie dotyczy |
 
 **Przycisk przepełnienia dokumentu: stan aktywowania**
 
@@ -1913,7 +1914,7 @@ Program Visual Studio obsługuje tagowanie, dzięki czemu użytkownik może zade
 
 | Element | Nazwa tokenu: Category. Color |
 | --- | --- |
-| Tło | Brak |
+| Tło | Nie dotyczy |
 | Pierwszy plan (symbol) | `Tag.TagHoverGlyph` |
 
 **&times;Symbol tagu Close (): stan aktywowania**
@@ -1942,7 +1943,7 @@ Program Visual Studio obsługuje tagowanie, dzięki czemu użytkownik może zade
 
 | Element | Nazwa tokenu: Category. Color |
 | --- | --- |
-| Tło | Brak |
+| Tło | Nie dotyczy |
 | Pierwszy plan (symbol) | `Tag.TagSelectedGlyph` |
 
 **Zaznaczony tag z symbolem zamykającym ( &times; ): stan aktywowany**
@@ -2097,7 +2098,7 @@ Obramowanie paska tytułu nie jest obramowaniem prawda, jest to gruby wiersz w g
 | --- | --- |
 | Tło | `Environment.TitleBarInactiveGradientBegin`<br />(Zatrzymanie gradientu dla tego tokenu nie jest używane w interfejsie użytkownika). |
 | Pierwszy plan (tekst) | `Environment.TitleBarInactiveText` |
-| Obramowanie | Brak |
+| Obramowanie | Nie dotyczy |
 | Przeciągnij uchwyt | `Environment.TitleBarDragHandle` |
 
 #### <a name="tool-window-title-bar-buttons"></a>Przyciski paska tytułu okna narzędzi
@@ -2114,9 +2115,9 @@ Obramowanie paska tytułu nie jest obramowaniem prawda, jest to gruby wiersz w g
 
 | Element | Nazwa tokenu: Category. Color |
 | --- | --- |
-| Tło | Brak |
+| Tło | Nie dotyczy |
 | Pierwszy plan (symbol) | `Environment.ToolWindowButtonActiveGlyph` |
-| Obramowanie | Brak |
+| Obramowanie | Nie dotyczy |
 
 **Przyciski paska tytułu nieskoncentrowane: stan domyślny**
 
@@ -2124,9 +2125,9 @@ Obramowanie paska tytułu nie jest obramowaniem prawda, jest to gruby wiersz w g
 
 | Element | Nazwa tokenu: Category. Color |
 | --- | --- |
-| Tło | Brak |
+| Tło | Nie dotyczy |
 | Pierwszy plan (symbol) | `Environment.ToolWindowButtonInactiveGlyph` |
-| Obramowanie | Brak |
+| Obramowanie | Nie dotyczy |
 
 **Przyciski paska tytułu z fokusem: stan aktywowania**
 

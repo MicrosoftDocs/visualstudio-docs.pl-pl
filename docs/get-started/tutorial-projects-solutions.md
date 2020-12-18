@@ -12,14 +12,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48fb0f1c22b2f7055005640baff2239a0ad4a32a
-ms.sourcegitcommit: fed8782b2fb2ca18a90746b6e7e0b33f3fde10f1
+ms.openlocfilehash: 8cdc30b34c85a799827519af3cd2bba2c9f1735a
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97646414"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668810"
 ---
-# <a name="learn-about-projects-and-solutions"></a>Informacje o projektach i rozwiązaniach
+# <a name="introduction-to-projects-and-solutions"></a>Wprowadzenie do projektów i rozwiązań
 
 W tym artykule wprowadzającym zapoznajemy znaczenie tworzenia *rozwiązania* i *projektu* w programie Visual Studio. Rozwiązanie jest kontenerem, który służy do organizowania jednego lub więcej powiązanych projektów kodu, na przykład projektu biblioteki klas i odpowiedniego projektu testowego. Zobaczymy właściwości projektu i niektóre z plików, które może zawierać. Utworzymy również odwołanie z jednego projektu do innego.
 
@@ -56,7 +56,7 @@ Rozpocznie nasze eksplorację, tworząc puste rozwiązanie. Po uzyskaniu informa
 
    Zostanie otwarte okno dialogowe **Nowy projekt** .
 
-1. W okienku po lewej stronie rozwiń pozycję **Inne typy projektów**, a następnie wybierz pozycję **rozwiązania programu Visual Studio**. W środkowym okienku wybierz szablon **pustego rozwiązania** . Nazwij rozwiązanie **QuickSolution**, a następnie wybierz przycisk **OK** .
+1. W okienku po lewej stronie rozwiń pozycję **Inne typy projektów**, a następnie wybierz pozycję **rozwiązania Visual Studio**. W środkowym okienku wybierz szablon **pustego rozwiązania** . Nazwij rozwiązanie **QuickSolution**, a następnie wybierz przycisk **OK** .
 
    ![Pusty szablon rozwiązania w programie Visual Studio 2017](media/tutorial-projects-new-solution.png "Pusty szablon rozwiązania w programie Visual Studio 2017.")
 
@@ -89,11 +89,11 @@ Teraz Dodajmy nasz pierwszy projekt do rozwiązania. Zaczniemy od pustego projek
 
 ::: moniker range="vs-2017"
 
-1. W obszarze **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy lub menu kontekstowe **rozwiązania "QuickSolution"** , wybierz polecenie **Dodaj** > **Nowy projekt**.
+1. W obszarze **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy lub menu kontekstowe **rozwiązania "QuickSolution"** , wybierz pozycję **Dodaj** > **Nowy projekt**.
 
    Zostanie otwarte okno dialogowe **Dodaj nowy projekt** .
 
-1. W okienku po lewej stronie rozwiń pozycję **Visual C#** i wybierz pozycję **Windows Desktop**. Następnie w środkowym okienku wybierz szablon **pusty projekt (.NET Framework)** . Nazwij projekt **QuickDate**, a następnie wybierz przycisk **OK**.
+1. W okienku po lewej stronie rozwiń pozycję **Visual C#** i wybierz pozycję **Windows Desktop**. Następnie w środkowym okienku wybierz szablon **pustego projektu (.NET Framework)** . Nazwij projekt **QuickDate**, a następnie wybierz przycisk **OK**.
 
    Projekt o nazwie QuickDate pojawia się poniżej rozwiązania w **Eksplorator rozwiązań**. Obecnie zawiera pojedynczy plik o nazwie *App.config*.
 
@@ -106,7 +106,7 @@ Teraz Dodajmy nasz pierwszy projekt do rozwiązania. Zaczniemy od pustego projek
 
 ::: moniker range=">=vs-2019"
 
-1. W obszarze **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy lub menu kontekstowe **rozwiązania "QuickSolution"** , wybierz polecenie **Dodaj** > **Nowy projekt**.
+1. W obszarze **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy lub menu kontekstowe **rozwiązania "QuickSolution"** , wybierz pozycję **Dodaj** > **Nowy projekt**.
 
    Zostanie otwarte okno dialogowe z komunikatem **Dodawanie nowego projektu**.
 
@@ -171,7 +171,7 @@ Rozwiązanie to często dotyczy rozwiązań zawierających więcej niż jeden pr
 
 Dodajmy projekt testu jednostkowego do naszego rozwiązania. Tym razem zaczniemy od szablonu projektu, więc nie trzeba dodawać dodatkowego pliku kodu do projektu.
 
-1. W obszarze **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy lub menu kontekstowe **rozwiązania "QuickSolution"** , wybierz polecenie **Dodaj**  >  **Nowy projekt**.
+1. W obszarze **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy lub menu kontekstowe **rozwiązania "QuickSolution"** , wybierz pozycję **Dodaj**  >  **Nowy projekt**.
 
 ::: moniker range="vs-2017"
 
@@ -203,7 +203,7 @@ Będziemy używać nowego projektu testów jednostkowych do testowania naszej me
 
 ::: moniker range="vs-2017"
 
-1. Wybierz węzeł **zależności** w projekcie **Quicktest** i z menu kontekstowego kliknij prawym przyciskiem myszy lub wybierz polecenie **Dodaj odwołanie**.
+1. Wybierz węzeł **zależności** w projekcie **Quicktest** i z menu kontekstowego kliknij prawym przyciskiem myszy lub wybierz pozycję **Dodaj odwołanie**.
 
    Zostanie otwarte okno dialogowe **Menedżer odwołań** .
 
@@ -211,7 +211,7 @@ Będziemy używać nowego projektu testów jednostkowych do testowania naszej me
 
    Dodano odwołanie do projektu **QuickDate** .
 
-   ![Program Visual Studio 2019 Eksplorator rozwiązań pokazujący odwołanie do projektu](media/vs-2019/tutorial-projects-solution-explorer-reference.png "Eksplorator rozwiązań pokazujący odwołanie do projektu w programie Visual Studio.")
+   ![Zrzut ekranu przedstawiający Eksplorator rozwiązań pokazujący odwołanie do projektu w programie Visual Studio](media/vs-2019/tutorial-projects-solution-explorer-reference.png "Zrzut ekranu przedstawiający Eksplorator rozwiązań pokazujący odwołanie do projektu w programie Visual Studio.")
 
 ::: moniker-end
 
@@ -221,12 +221,12 @@ Będziemy używać nowego projektu testów jednostkowych do testowania naszej me
 
    Zostanie otwarte okno dialogowe **Menedżer odwołań** .
 
-1. W lewym okienku rozwiń węzeł **projekty** i wybierz pozycję **rozwiązanie**. W środkowym okienku zaznacz pole wyboru obok pozycji **QuickDate**, a następnie wybierz przycisk **OK**.
+1. W lewym okienku rozwiń węzeł **projekty**, a następnie wybierz pozycję **rozwiązanie**. W środkowym okienku zaznacz pole wyboru obok pozycji **QuickDate**, a następnie wybierz przycisk **OK**.
 
    Dodano odwołanie do projektu **QuickDate** .
 
-   ![Program Visual Studio 2019 Eksplorator rozwiązań pokazujący odwołanie do projektu](media/vs-2019/tutorial-projects-solution-explorer-reference.png)
-   
+   ![Zrzut ekranu przedstawiający Eksplorator rozwiązań pokazujący odwołanie do projektu w programie Visual Studio 2019](media/vs-2019/tutorial-projects-solution-explorer-reference.png)
+
 ::: moniker-end
 
 ## <a name="add-test-code"></a>Dodaj kod testu
@@ -299,7 +299,7 @@ Jeśli chcesz sprawdzić, czy test jednostkowy działa, wybierz pozycję **Testu
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Tworzenie projektów i rozwiązań](../ide/creating-solutions-and-projects.md)
+- [Pracuj z projektami i rozwiązaniami](../ide/creating-solutions-and-projects.md)
 - [Zarządzanie właściwościami projektów i rozwiązań](../ide/managing-project-and-solution-properties.md)
 - [Zarządzanie odwołaniami w projekcie](../ide/managing-references-in-a-project.md)
 - [Tworzenie kodu w programie Visual Studio bez projektów ani rozwiązań](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)

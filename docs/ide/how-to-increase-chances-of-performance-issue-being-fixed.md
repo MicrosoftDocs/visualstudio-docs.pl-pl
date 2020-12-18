@@ -7,12 +7,12 @@ ms.author: madsk
 manager: jillfra
 ms.date: 11/19/2019
 ms.topic: conceptual
-ms.openlocfilehash: 1567e75d5e0a6f27aee68cd783b9ebd4a70815f4
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 57009326857672ea648bdf8f531f9509cf8487ff
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211191"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668447"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Jak zwiększyć szanse na rozwiązywanie problemów z wydajnością
 
@@ -28,7 +28,7 @@ Poszukaj unikatowych podpisów zgłaszanego problemu i Dołącz możliwie jak na
 
 **W razie wątpliwości Zarejestruj nowy raport o problemie**
 
-Wiele problemów może nie mieć żadnych odrębnych podpisów ani kroków do odtworzenia. W takich przypadkach nowy raport jest lepszy niż zagłosowanie lub komentarz dotyczący innego raportu, który zgłasza podobny *objaw*zewnętrzny. W zależności od typu raportu Dołącz do raportu dodatkowe pliki diagnostyczne zgodnie z opisem w dalszej części tego dokumentu.
+Wiele problemów może nie mieć żadnych odrębnych podpisów ani kroków do odtworzenia. W takich przypadkach nowy raport jest lepszy niż zagłosowanie lub komentarz dotyczący innego raportu, który zgłasza podobny *objaw* zewnętrzny. W zależności od typu raportu Dołącz do raportu dodatkowe pliki diagnostyczne zgodnie z opisem w dalszej części tego dokumentu.
 
 **Najlepsze rozwiązania dotyczące problemów**
 
@@ -193,10 +193,10 @@ Co sprawia, że te typy problemów są najbardziej funkcjonalne, należy dostarc
 2. Pobierz [Narzędzie do](https://www.microsoft.com/download/details.aspx?id=12493)zbierania dzienników Microsoft Visual Studio i .NET Framework.
 3. Uruchom narzędzie. Spowoduje to wyjście z pliku zip do **% temp%/vslogs.zip**. Dołącz ten plik do swojej opinii.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 * [Opcje opinii programu Visual Studio](../ide/feedback-options.md)
 * [Zgłoś problem z Visual Studio dla komputerów Mac](/visualstudio/mac/report-a-problem)
 * [Zgłoś problem w języku C++](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
-* [Społeczność deweloperów programu Visual Studio](https://developercommunity.visualstudio.com/)
+* [Społeczność deweloperów programu Visual Studio](https://aka.ms/feedback/suggest?space=8)
 * [Prywatność danych w społeczności deweloperów](developer-community-privacy.md)

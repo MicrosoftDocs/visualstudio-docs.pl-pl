@@ -1,5 +1,6 @@
 ---
 title: Obrazy i ikony dla programu Visual Studio | Microsoft Docs
+description: Poznaj koncepcje projektowania używane do tworzenia obrazów i ikon dla programu Visual Studio.
 ms.date: 04/26/2017
 ms.topic: overview
 ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
@@ -8,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: edbf1542277189f37565e7ff415a52025094e595
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f29fd0a69ceafa33c00593b67f6775a723780c26
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85906113"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668654"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Obrazy i ikony dla programu Visual Studio
 ## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a> Używanie obrazów w programie Visual Studio
@@ -293,7 +294,7 @@ ms.locfileid: "85906113"
 
  Niebieska jest stosowana do modyfikatorów akcji neutralnych najczęściej reprezentowanych jako strzałki, takich jak "Open", "dalej" "Previous", "Import" i "Export".
 
-|Przejdź do pola|Wsadowe ewidencjonowanie|Edytor adresów|Edytor skojarzeń|
+|Przejdź do pola|Check-In wsadowe|Edytor adresów|Edytor skojarzeń|
 |-|-|-|-|
 |![Ikona przejdź do pola](../../extensibility/ux-guidelines/media/0405-11_gotofield.png "0405 — 11_GoToField")|![&#45;sprawdzanie wsadowe w ikonie](../../extensibility/ux-guidelines/media/0405-12_batchedcheckin.png "0405 — 12_BatchedCheckIn")|![Ikona edytora adresów](../../extensibility/ux-guidelines/media/0405-13_addresseditor.png "0405 — 13_AddressEditor")|![Ikona edytora skojarzeń](../../extensibility/ux-guidelines/media/0405-14_associationeditor.png "0405 — 14_AssociationEditor")|
 
@@ -308,7 +309,7 @@ ms.locfileid: "85906113"
 
 |Uruchom|Stop|Usuń|Zapisz|Nawiguj wstecz|
 |-|-|-|-|-|
-|![Ikona uruchamiania](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405 — 03_ActionModifierRun")|![Ikona zatrzymania](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405 — 19_Stop")|![Ikona usuwania](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405 — 20_Delete")|![Ikona zapisywania](../../extensibility/ux-guidelines/media/0405-21_save.png "0405 — 21_Save")|![Ikona nawigacji Wstecz](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405 — 22_NavigateBack")|
+|![Ikona uruchamiania](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405 — 03_ActionModifierRun")|![Ikona zatrzymania — Solid czerwony kwadrat.](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405 — 19_Stop")|![Ikona usuwania](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405 — 20_Delete")|![Ikona zapisywania](../../extensibility/ux-guidelines/media/0405-21_save.png "0405 — 21_Save")|![Ikona nawigacji Wstecz](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405 — 22_NavigateBack")|
 
 ### <a name="code-hierarchy-palette"></a>Paleta hierarchii kodu
 
@@ -360,7 +361,7 @@ ms.locfileid: "85906113"
 |-|-|-|-|-|
 |![Ikona klasy IntelliSense](../../extensibility/ux-guidelines/media/0405-36_intellisenseclass.png "0405 — 36_IntelliSenseClass")|![Ikona prywatnego zdarzenia IntelliSense](../../extensibility/ux-guidelines/media/0405-37_intellisenseprivateevent.png "0405 — 37_IntelliSensePrivateEvent")|![Ikona delegata IntelliSense](../../extensibility/ux-guidelines/media/0405-38_intellisensedelegate.png "0405 — 38_IntelliSenseDelegate")|![Ikona zaprzyjaźnionej metody IntelliSense](../../extensibility/ux-guidelines/media/0405-39_intellisensemethodfriend.png "0405 — 39_IntelliSenseMethodFriend")|![Ikona pola](../../extensibility/ux-guidelines/media/0405-40_field.png "0405 — 40_Field")|
 
-|Chroniony element Enum|Obiekt|Szablon|Skrót wyjątku|
+|Chroniony element Enum|Obiekt|Template|Skrót wyjątku|
 |-|-|-|-|
 |![Ikona elementu Enum chronionego przez funkcję IntelliSense](../../extensibility/ux-guidelines/media/0405-41_intellisenseprotectedenumitem.png "0405 — 41_IntelliSenseProtectedEnumItem")|![Ikona obiektu IntelliSense](../../extensibility/ux-guidelines/media/0405-42_intellisenseobject.png "0405 — 42_IntelliSenseObject")|![Ikona szablonu IntelliSense](../../extensibility/ux-guidelines/media/0405-43_intellisensetemplate.png "0405 — 43_IntelliSenseTemplate")|![Ikona skrótu wyjątku IntelliSense](../../extensibility/ux-guidelines/media/0405-44_intellisenseexceptionshortcut.png "0405 — 44_IntelliSenseExceptionShortcut")|
 
@@ -380,4 +381,4 @@ ms.locfileid: "85906113"
 
 |Alerty|Ostrzeżenie|Ukończ|Stop|
 |-|-|-|-|
-|![Ikona alertu](../../extensibility/ux-guidelines/media/0405-45_alert.png "0405 — 45_Alert")|![Ikona ostrzeżenia](../../extensibility/ux-guidelines/media/0405-48_warning.png "0405 — 48_Warning")|![Ikona ukończenia](../../extensibility/ux-guidelines/media/0405-46_complete.png "0405 — 46_Complete")|![Ikona zatrzymania](../../extensibility/ux-guidelines/media/0405-47_stop.png "0405 — 47_Stop")|
+|![Ikona alertu](../../extensibility/ux-guidelines/media/0405-45_alert.png "0405 — 45_Alert")|![Ikona ostrzeżenia](../../extensibility/ux-guidelines/media/0405-48_warning.png "0405 — 48_Warning")|![Ikona ukończenia](../../extensibility/ux-guidelines/media/0405-46_complete.png "0405 — 46_Complete")|![Ikona zatrzymania — Solid czerwony okrąg z białym kwadratem w środku.](../../extensibility/ux-guidelines/media/0405-47_stop.png "0405 — 47_Stop")|

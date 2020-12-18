@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a864f1ef623197a44c7d816b051efd0106e86ece
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cf8473a8de1c9afa5ed73ce9dcb6b9b8462e6548
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77611129"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668404"
 ---
 # <a name="known-issues-for-containers"></a>Znane problemy dotyczące kontenerów
 
@@ -50,7 +50,7 @@ Podczas instalowania Visual Studio Build Tools w kontenerze systemu Windows wyst
 
 ## <a name="build-tools-container"></a>Kontener narzędzi kompilacji
 
-W przypadku korzystania z kontenera narzędzi kompilacji mogą wystąpić następujące znane problemy. Aby sprawdzić, czy problemy zostały rozwiązane lub czy istnieją inne znane problemy, odwiedź stronę https://developercommunity.visualstudio.com .
+W przypadku korzystania z kontenera narzędzi kompilacji mogą wystąpić następujące znane problemy. Aby sprawdzić, czy problemy zostały rozwiązane lub czy istnieją inne znane problemy, odwiedź [społeczność deweloperów](https://aka.ms/feedback/suggest?space=8).
 
 * IntelliTrace może nie funkcjonować w [niektórych scenariuszach](https://github.com/Microsoft/vstest/issues/940) w kontenerze.
 * W starszych wersjach Docker for Windows domyślny rozmiar obrazu kontenera jest tylko 20 GB i nie będzie pasował do narzędzi kompilacji. Postępuj zgodnie [z instrukcjami, aby zmienić rozmiar obrazu](/virtualization/windowscontainers/manage-containers/container-storage#storage-limits) na 127 GB lub więcej.
@@ -61,7 +61,7 @@ Pre-check verification failed with error(s) :  SizePreCheckEvaluator.
 ```
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 * [Instalowanie narzędzi do kompilacji w kontenerze](build-tools-container.md)
 * [Zaawansowany przykład dotyczący kontenerów](advanced-build-tools-container.md)

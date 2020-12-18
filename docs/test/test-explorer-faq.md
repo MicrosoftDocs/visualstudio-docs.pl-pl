@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: ef6c6bf3cedcccd156e7ae9ae02c2e5f70805521
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: b69274058ea939251a772dfb30ddf7b42861542c
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330176"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668589"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Eksplorator testów programu Visual Studio — często zadawane pytania
 
@@ -33,7 +33,7 @@ ms.locfileid: "96330176"
 Skompiluj projekt, aby uruchomić odnajdywanie oparte na zestawie.
 ::: moniker-end
 ::: moniker range="vs-2017"
-Skompiluj projekt i upewnij się, że odnajdywanie oparte na zestawie jest włączone **Tools** w > **Options** > **test** Options Tools.
+Skompiluj projekt i upewnij się, że odnajdywanie oparte na zestawie jest włączone  w >  > **test** Options Tools.
 ::: moniker-end
 [Wykrywanie testów w czasie rzeczywistym](https://devblogs.microsoft.com/dotnet/real-time-test-discovery/) jest odnajdywaniem testów opartym na źródle. Nie można wykryć testów, które używają teorie, niestandardowych kart, cech niestandardowych, `#ifdef` instrukcji i innych, ponieważ są one zdefiniowane w czasie wykonywania. Dla tych testów jest wymagana kompilacja. W programie Visual Studio 2017 w wersji 15,6 lub nowszej odnajdywanie oparte na zestawie (tradycyjny program Discovery) działa tylko po kompilacji. To ustawienie oznacza, że funkcja odnajdywania testów w czasie rzeczywistym znajduje tyle testów, ile jest w trakcie edycji, a funkcja odnajdywania oparta na zestawach umożliwia dynamiczne Definiowanie testów, które są wyświetlane po kompilacji. Wykrywanie testów w czasie rzeczywistym zwiększa czas odpowiedzi, ale nadal umożliwia uzyskanie pełnych i precyzyjnych wyników po kompilacji.
 
@@ -71,7 +71,7 @@ Ta funkcja jest nazywana [odnajdywaniem testów w czasie rzeczywistym](https://d
 
 **Jak włączyć dzienniki dla Eksploratora testów?**
 
-Przejdź do **Tools**  >  **opcji** narzędzia  >  **testy** i Znajdź sekcję rejestrowanie.
+Przejdź do   >  **opcji** narzędzia  >  **testy** i Znajdź sekcję rejestrowanie.
 
 ## <a name="uwp-test-discovery"></a>Odnajdywanie testów platformy UWP
 
@@ -97,13 +97,13 @@ Ikony obok projektu, obszaru nazw i grup klas przedstawiają stan testów w rama
 
 **W polu wyszukiwania Eksploratora testów nie ma już filtru "ścieżka do pliku".**
 
-Filtr ścieżka pliku w polu wyszukiwania programu **Test Explorer** został usunięty z programu Visual Studio 2017 w wersji 15,7. Ta funkcja ma niskie użycie i Eksplorator testów może szybciej pobrać metody testowe, pozostawiając tę funkcję. Jeśli ta zmiana przerwie przepływ tworzenia, powiadom nas o przesłaniu opinii na temat [społeczności deweloperów](https://developercommunity.visualstudio.com/).
+Filtr ścieżka pliku w polu wyszukiwania programu **Test Explorer** został usunięty z programu Visual Studio 2017 w wersji 15,7. Ta funkcja ma niskie użycie i Eksplorator testów może szybciej pobrać metody testowe, pozostawiając tę funkcję. Jeśli ta zmiana przerwie przepływ tworzenia, powiadom nas o przesłaniu opinii na temat [społeczności deweloperów](https://aka.ms/feedback/suggest?space=8).
 
 ## <a name="remove-undocumented-interfaces"></a>Usuń nieudokumentowane interfejsy
 
 **Niektóre interfejsy API związane z testami nie są już obecne w programie Visual Studio 2019. Co się zmieniło?**
 
-W programie Visual Studio 2019 niektóre interfejsy API okna testowego, które zostały wcześniej oznaczone jako publiczne, ale nigdy nie zostały oficjalnie udokumentowane, zostaną usunięte. Zostały one oznaczone jako "przestarzałe" w programie Visual Studio 2017, aby zapewnić obsłudze rozszerzenia wczesne ostrzeżenie. W naszej wiedzy bardzo kilka rozszerzeń odnalazło te interfejsy API i pobrano od nich zależność. Należą `IGroupByProvider` do nich, `IGroupByProvider<T>` ,,,, `KeyComparer` `ISearchFilter` `ISearchFilterToken` `ISearchToken` i `SearchFilterTokenType` . Jeśli ta zmiana wpłynie na Twoje rozszerzenie, poinformuj nas o błędzie w [społeczności deweloperów](https://developercommunity.visualstudio.com).
+W programie Visual Studio 2019 niektóre interfejsy API okna testowego, które zostały wcześniej oznaczone jako publiczne, ale nigdy nie zostały oficjalnie udokumentowane, zostaną usunięte. Zostały one oznaczone jako "przestarzałe" w programie Visual Studio 2017, aby zapewnić obsłudze rozszerzenia wczesne ostrzeżenie. W naszej wiedzy bardzo kilka rozszerzeń odnalazło te interfejsy API i pobrano od nich zależność. Należą `IGroupByProvider` do nich, `IGroupByProvider<T>` ,,,, `KeyComparer` `ISearchFilter` `ISearchFilterToken` `ISearchToken` i `SearchFilterTokenType` . Jeśli ta zmiana wpłynie na Twoje rozszerzenie, poinformuj nas o błędzie w [społeczności deweloperów](https://aka.ms/feedback/suggest?space=8).
 
 ## <a name="test-adapter-nuget-reference"></a>Dokumentacja NuGet adaptera testowego
 
@@ -126,7 +126,7 @@ Zamiast korzystać z rozszerzeń adaptera testowego, projekty są wymagane do ko
 
 **Moje testy platformy UWP nie są już wykonywane w programie Visual Studio 2017 w wersji 15,7 lub nowszej.**
 
-Ostatnie projekty testów platformy UWP określają Właściwość Build platformy testowej, która umożliwia lepszą wydajność identyfikowania aplikacji testowych. Jeśli masz projekt testu platformy UWP, który został zainicjowany przed programem Visual Studio w wersji 15,7, ten błąd może pojawić **Output** się w  >  **testach** wyjściowych:
+Ostatnie projekty testów platformy UWP określają Właściwość Build platformy testowej, która umożliwia lepszą wydajność identyfikowania aplikacji testowych. Jeśli masz projekt testu platformy UWP, który został zainicjowany przed programem Visual Studio w wersji 15,7, ten błąd może pojawić się w  >  **testach** wyjściowych:
 
 **System. AggregateException: wystąpił co najmniej jeden błąd. ---> system. InvalidOperationException: nie znaleziono następującego TestContainer {} w firmie Microsoft. VisualStudio. TestWindow. Controller. TestContainerProvider \<GetTestContainerAsync> D__61. MoveNext ()**
 
@@ -166,7 +166,7 @@ vsregedit set “C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterpri
 > [!NOTE]
 > Można wyłączyć flagę z tym samym poleceniem, używając wartości 0 zamiast 1 po DWORD.
 ::: moniker-end
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting?displayProperty=fullName>
 - [Tworzenie i uruchamianie testów jednostkowych dla istniejącego kodu](/previous-versions/dd293546(v=vs.110))

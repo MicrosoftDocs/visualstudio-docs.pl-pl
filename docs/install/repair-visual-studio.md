@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 7b2fd0a49a235827d3a9094aad6cc0f59a0cd403
-ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
+ms.openlocfilehash: f27ccf9440d0f01a5a41d69e753a6d83f81c5263
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92007126"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668537"
 ---
 # <a name="repair-visual-studio"></a>Napraw program Visual Studio
 
@@ -32,7 +32,7 @@ Czasami instalacja programu Visual Studio przestała być uszkodzona lub uszkodz
 > Jeśli problem z instalacją jest spowodowany problemem związanym z usługą systemu Windows, na przykład Instalator Windows, naprawa może wystąpić z tym samym problemem. Problemy systemowe mogą obejmować przerwane Instalator Windows lub niestabilne połączenie internetowe. Aby wyszukać problem systemowy, użyj raportu o błędach wygenerowanego podczas operacji instalacji.
 
 > [!NOTE] 
-> Naprawianie programu Visual Studio powoduje zresetowanie ustawień użytkownika i ponowne zainstalowanie już posiadanych zestawów. Jeśli występuje problem z produktem, Utwórz [bilet opinii programu Visual Studio](https://developercommunity.visualstudio.com/content/problem/post.html?space=8), ponieważ naprawa może nie rozwiązać problemu.
+> Naprawianie programu Visual Studio powoduje zresetowanie ustawień użytkownika i ponowne zainstalowanie już posiadanych zestawów. Jeśli występuje problem z produktem, Utwórz [bilet opinii programu Visual Studio](https://aka.ms/feedback/suggest?space=8), ponieważ naprawa może nie rozwiązać problemu.
 
 ## <a name="how-to-repair"></a>Jak naprawić
 ::: moniker range="vs-2017"
@@ -89,7 +89,7 @@ Czasami instalacja programu Visual Studio przestała być uszkodzona lub uszkodz
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 * [Instalowanie programu Visual Studio](install-visual-studio.md)
 * [Aktualizowanie programu Visual Studio](update-visual-studio.md)

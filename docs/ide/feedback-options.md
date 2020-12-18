@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 3b50ec910c6d5880ead2df48db2ef763753379bb
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 11caf55a8412477ac94d290add667b9393435fb6
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90807888"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668745"
 ---
 # <a name="visual-studio-feedback-options"></a>Opcje opinii programu Visual Studio
 
@@ -34,7 +34,7 @@ W przypadku wystąpienia problemów z programem Visual Studio &mdash; , takich j
 
 ![Ikona wysyłania opinii w środowisku IDE programu Visual Studio 2019](./media/vs-2019/send-feedback-icon.png)
 
-Następnie program Visual Studio otwiera interfejs [społeczności deweloperów](https://developercommunity.visualstudio.com) , w którym można się zalogować, aby zgłosić problem. Aby uzyskać więcej informacji, zobacz [Jak zgłosić problem w programie Visual Studio](how-to-report-a-problem-with-visual-studio.md).
+Następnie program Visual Studio otwiera interfejs [społeczności deweloperów](https://aka.ms/feedback/suggest?space=8) , w którym można się zalogować, aby zgłosić problem. Aby uzyskać więcej informacji, zobacz [Jak zgłosić problem w programie Visual Studio](how-to-report-a-problem-with-visual-studio.md).
 
 ::: moniker-end
 
@@ -44,7 +44,7 @@ W przypadku wystąpienia problemów z programem Visual Studio &mdash; , takich j
 
 ![Ikona wysyłania opinii w środowisku IDE programu Visual Studio 2019](./media/send-feedback-icon.png)
 
-Następnie program Visual Studio otwiera interfejs [społeczności deweloperów](https://developercommunity.visualstudio.com) , w którym można się zalogować, aby zgłosić problem. Aby uzyskać więcej informacji, zobacz [Jak zgłosić problem w programie Visual Studio](how-to-report-a-problem-with-visual-studio.md).
+Następnie program Visual Studio otwiera interfejs [społeczności deweloperów](https://aka.ms/feedback/suggest?space=8) , w którym można się zalogować, aby zgłosić problem. Aby uzyskać więcej informacji, zobacz [Jak zgłosić problem w programie Visual Studio](how-to-report-a-problem-with-visual-studio.md).
 
 ::: moniker-end
 
@@ -54,7 +54,7 @@ Następnie program Visual Studio otwiera interfejs [społeczności deweloperów]
 
 Jeśli masz pomysł lub sugestię, aby ulepszyć program Visual Studio, poinformuj nas za pomocą narzędzia **Zasugeruj funkcję** . W programie Visual Studio wybierz ikonę opinii w prawym górnym rogu lub wybierz pozycję **Pomoc**  >  **Wyślij opinię**  >  **Sugeruj funkcję** z paska menu.
 
-Następnie program Visual Studio otwiera interfejs [społeczności deweloperów](https://developercommunity.visualstudio.com) , który umożliwia zalogowanie się w celu udostępnienia pomysłu. Aby uzyskać więcej informacji, zobacz temat [Zasugeruj funkcję dla programu Visual Studio](suggest-a-feature.md).
+Następnie program Visual Studio otwiera interfejs [społeczności deweloperów](https://aka.ms/feedback/suggest?space=8) , który umożliwia zalogowanie się w celu udostępnienia pomysłu. Aby uzyskać więcej informacji, zobacz temat [Zasugeruj funkcję dla programu Visual Studio](suggest-a-feature.md).
 
 ::: moniker-end
 
@@ -62,7 +62,7 @@ Następnie program Visual Studio otwiera interfejs [społeczności deweloperów]
 
 Jeśli masz pomysł lub sugestię, aby ulepszyć program Visual Studio, poinformuj nas za pomocą narzędzia do **tworzenia sugestii** . W programie Visual Studio wybierz ikonę opinii obok pola wyszukiwania lub wybierz pozycję **Pomoc**  >  **Wyślij opinię**, aby  >  **uzyskać sugestię** z paska menu.
 
-Następnie w programie Visual Studio zostanie otwarta strona [społeczność deweloperów](https://developercommunity.visualstudio.com) , na której możesz zalogować się w celu udostępnienia pomysłu. Aby uzyskać więcej informacji, zobacz temat [Zasugeruj funkcję dla programu Visual Studio](suggest-a-feature.md).
+Następnie w programie Visual Studio zostanie otwarta strona [społeczność deweloperów](https://aka.ms/feedback/suggest?space=8) , na której możesz zalogować się w celu udostępnienia pomysłu. Aby uzyskać więcej informacji, zobacz temat [Zasugeruj funkcję dla programu Visual Studio](suggest-a-feature.md).
 
 ::: moniker-end
 
@@ -96,7 +96,7 @@ Jeśli chcesz udostępniać pytania i odpowiedzi innym deweloperom, Rozważ poł
 
 Możesz również wyświetlić kod od innych deweloperów i udostępnić własne przykłady na stronie [przeglądania przykładów kodu](/samples/browse/) .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 * [Rozwiązywanie problemów z instalacją i uaktualnieniem](../install/troubleshooting-installation-issues.md)
 * [Prywatność danych w społeczności deweloperów](developer-community-privacy.md)

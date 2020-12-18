@@ -8,12 +8,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: d213a7add358c46f7088f504d8c54352cda44a1c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 964b360806f6f834aa57c475d2117c124f2cf8af
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905971"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668641"
 ---
 # <a name="open-folder-extensibility"></a>Rozszerzalność folderu Open
 
@@ -51,7 +51,7 @@ Do obsługi otwartych folderów należy zastosować nowe interfejsy API, które 
 
 ## <a name="feedback-comments-issues"></a>Opinie, komentarze, problemy
 
-Otwarte foldery i `Microsoft.VisualStudio.Workspace.*` interfejsy API są w trakcie aktywnego programowania. Jeśli widzisz nieoczekiwane zachowanie, zobacz znane problemy związane z jego wersją. [Społeczność deweloperów](https://developercommunity.visualstudio.com) jest zalecanym miejscem do głosowania i tworzenia wszelkich problemów. Dla każdej opinii zdecydowanie zalecamy szczegółowy opis problemu. Uwzględnij wersję programu Visual Studio, z której korzystasz, używane interfejsy API (zarówno zaimplementowane elementy, jak i informacje, z którymi prowadzisz działania), oczekiwany wynik i rzeczywisty wynik. Jeśli to możliwe, Uwzględnij zrzut procesu devenv.exe. Skorzystaj ze śledzenia problemów usługi GitHub, aby przekazać opinię na temat tej i powiązanej dokumentacji.
+Otwarte foldery i `Microsoft.VisualStudio.Workspace.*` interfejsy API są w trakcie aktywnego programowania. Jeśli widzisz nieoczekiwane zachowanie, zobacz znane problemy związane z jego wersją. [Społeczność deweloperów](https://aka.ms/feedback/suggest?space=8) jest zalecanym miejscem do głosowania i tworzenia wszelkich problemów. Dla każdej opinii zdecydowanie zalecamy szczegółowy opis problemu. Uwzględnij wersję programu Visual Studio, z której korzystasz, używane interfejsy API (zarówno zaimplementowane elementy, jak i informacje, z którymi prowadzisz działania), oczekiwany wynik i rzeczywisty wynik. Jeśli to możliwe, Uwzględnij zrzut procesu devenv.exe. Skorzystaj ze śledzenia problemów usługi GitHub, aby przekazać opinię na temat tej i powiązanej dokumentacji.
 
 ## <a name="next-steps"></a>Następne kroki
 

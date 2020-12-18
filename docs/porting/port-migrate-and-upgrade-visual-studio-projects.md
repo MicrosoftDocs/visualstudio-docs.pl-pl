@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: f13500c4d65287dfbafdb681a3fc47ffcd2c397e
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: ca13ff5263ab43fd6fbdf5764b506091dd9aa3bd
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414324"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97667991"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Dokumentacja migracji i uaktualniania projektu dla programu Visual Studio
 
@@ -32,7 +32,7 @@ ms.locfileid: "93414324"
 
 Każda wersja programu Visual Studio zwykle obsługuje większość poprzednich typów projektów, plików i innych zasobów. Można z nich korzystać, [gdy zawsze się znajdują](../ide/solutions-and-projects-in-visual-studio.md), i pod warunkiem, że nie zależą od nowszych funkcji, program Visual Studio próbuje zachować zgodność wstecz z poprzednimi wersjami, takimi jak Visual Studio 2015, Visual Studio 2013 i visual Studio 2012. (Zobacz [Informacje o wersji](/visualstudio/releasenotes/vs2017-relnotes/) , dla których funkcje są specyficzne dla których wersji).
 
-Obsługa niektórych typów projektów zmienia się również w miarę upływu czasu. Nowsza wersja programu Visual Studio może nie obsługiwać już niektórych projektów lub wymaga aktualizacji projektu, tak aby nie był już zgodny z poprzednią wersją. Bieżący stan problemów dotyczących migracji można znaleźć w [witrynie społeczności deweloperów programu Visual Studio](https://developercommunity.visualstudio.com).
+Obsługa niektórych typów projektów zmienia się również w miarę upływu czasu. Nowsza wersja programu Visual Studio może nie obsługiwać już niektórych projektów lub wymaga aktualizacji projektu, tak aby nie był już zgodny z poprzednią wersją. Bieżący stan problemów dotyczących migracji można znaleźć w [witrynie społeczności deweloperów programu Visual Studio](https://aka.ms/feedback/suggest?space=8).
 
 Ten artykuł zawiera szczegółowe informacje dotyczące typów projektów, które program Visual Studio 2017 może migrować. Artykuł wyklucza typy projektów, które nie są już obsługiwane w programie Visual Studio 2017 i dlatego nie można przeprowadzić migracji. Artykuł wyklucza również obsługiwane typy projektów, które nie mają problemów z migracją; Ta lista jest dostępna na [platformie docelowej i zgodności](/visualstudio/productinfo/vs2017-compatibility-vs).
 
@@ -104,7 +104,7 @@ Więcej informacji można znaleźć w następujących artykułach:
 - [Wskazówki dotyczące ToolsVersion](../msbuild/msbuild-toolset-toolsversion.md)
 - [Wskazówki dotyczące struktury docelowej](../ide/visual-studio-multi-targeting-overview.md)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Dokumentacja migracji i uaktualniania projektu dla programu Visual Studio 2019](port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2019&preserve-view=true)
 - [Cykl życia produktu Visual Studio i obsługa](/visualstudio/releases/2019/servicing/)
@@ -118,7 +118,7 @@ Każda nowa wersja programu Visual Studio obsługuje większość typów projekt
 Staramy się zachować zgodność z poprzednimi wersjami, takich jak Visual Studio 2017, Visual Studio 2015, Visual Studio 2013 i Visual Studio 2012. Jednak obsługa niektórych typów projektów zmienia się w miarę upływu czasu. Nowsza wersja programu Visual Studio może nie obsługiwać niektórych projektów lub może wymagać aktualizacji projektu, aby nie był już zgodny z poprzednimi wersjami.
 
 > [!NOTE]
-> Bieżący stan problemów dotyczących migracji można znaleźć w [społeczności deweloperów programu Visual Studio](https://developercommunity.visualstudio.com). Aby dowiedzieć się więcej o tym, które funkcje są specyficzne dla wersji programu Visual Studio, zobacz [Informacje o wersji](/visualstudio/releases/2019/release-notes/).
+> Bieżący stan problemów dotyczących migracji można znaleźć w [społeczności deweloperów programu Visual Studio](https://aka.ms/feedback/suggest?space=8). Aby dowiedzieć się więcej o tym, które funkcje są specyficzne dla wersji programu Visual Studio, zobacz [Informacje o wersji](/visualstudio/releases/2019/release-notes/).
 
 > [!IMPORTANT]
 > Niektóre typy projektów wymagają określonych obciążeń. Jeśli nie masz zainstalowanego obciążenia, program Visual Studio zgłosi nieznany lub niezgodny typ projektu. W takim przypadku sprawdź [Opcje instalacji w Instalator programu Visual Studio](../install/modify-visual-studio.md) i spróbuj ponownie. Aby uzyskać więcej informacji o obsłudze projektu w programie Visual Studio 2019, zobacz stronę [dotyczącą platformy docelowej i zgodności](/visualstudio/releases/2019/compatibility) .
@@ -157,7 +157,7 @@ Jeśli nie widzisz tutaj projektu lub typu pliku, który powinien być wymienion
 | SQL — Redgate | Redgate usługi SQL Change Automation Core (wcześniej o nazwie Core ReadyRoll), podstawowe polecenie SQL Prompt i wyszukiwanie SQL nie są już w trakcie wysyłania w Instalatorze programu Visual Studio.<br/><br/>Do tych funkcji można nadal korzystać z programu Visual Studio 2017. W programie Visual Studio 2019 możesz przeprowadzić uaktualnienie do płatnych produktów SQL Change Automation i SQL Prompt, które są dostępne w Redgate SQL toolbelt.|
 | SQL Server Reporting Services i SQL Server Analysis Services (SSRS, SSDT, SSAS, kont MSA) | Obsługa tych typów projektów jest zapewniana przez dwa rozszerzenia w galerii programu Visual Studio:  [Microsoft Analysis Services modelowania projekty](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects) i [projekty usług Microsoft Reporting Services](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio). Obsługa SSDT jest również dołączana do obciążenia magazynu i przetwarzania danych w programie Visual Studio 2019. Aby uzyskać więcej informacji, zobacz stronę [pobieranie i instalowanie SQL Server Data Tools (SSDT) dla programu Visual Studio](/sql/ssdt/download-sql-server-data-tools-ssdt) . |
 | Usługi SQL Server Integration Services (SSIS) | Dostępna jest pomoc techniczna dla programu Visual Studio 2019. Aby uzyskać więcej informacji, zobacz stronę [pobieranie i instalowanie SQL Server Data Tools (SSDT) dla programu Visual Studio](/sql/ssdt/download-sql-server-data-tools-ssdt) , blog zespołu [SQL Server Integration Services (SSIS)](https://techcommunity.microsoft.com/t5/SQL-Server-Integration-Services/bg-p/SSIS) i [SQL Server Integration Services projekty](https://marketplace.visualstudio.com/items?itemName=SSIS.SqlServerIntegrationServicesProjects&ssr=false#overview) w portalu Marketplace. |
-| Rozszerzenie okna testowego | W programie Visual Studio 2019 usunięto część interfejsów API okna testowego, które wcześniej były oznaczone jako publiczne, ale nigdy nie zostały oficjalnie udokumentowane. Szeroko widoczne interfejsy API zostały oznaczone jako przestarzałe w programie Visual Studio 2017, aby zapewnić obsłudze rozszerzenia wczesne ostrzeżenie. W naszej wiedzy Niektóre rozszerzenia zostały wykonane zależnie od tych interfejsów API. Aby uzyskać więcej informacji i aktualizacji, zapoznaj się z [pełną listą przestarzałych interfejsów API związanych z testami](https://github.com/Microsoft/vstest/issues/1830). Jeśli ma to wpływ na Twój scenariusz, daj nam znać w [społeczności deweloperów](https://developercommunity.visualstudio.com). |
+| Rozszerzenie okna testowego | W programie Visual Studio 2019 usunięto część interfejsów API okna testowego, które wcześniej były oznaczone jako publiczne, ale nigdy nie zostały oficjalnie udokumentowane. Szeroko widoczne interfejsy API zostały oznaczone jako przestarzałe w programie Visual Studio 2017, aby zapewnić obsłudze rozszerzenia wczesne ostrzeżenie. W naszej wiedzy Niektóre rozszerzenia zostały wykonane zależnie od tych interfejsów API. Aby uzyskać więcej informacji i aktualizacji, zapoznaj się z [pełną listą przestarzałych interfejsów API związanych z testami](https://github.com/Microsoft/vstest/issues/1830). Jeśli ma to wpływ na Twój scenariusz, daj nam znać w [społeczności deweloperów](https://aka.ms/feedback/suggest?space=8). |
 | Visual C++ | Możesz użyć programu Visual Studio 2019 do pracy w projektach, które zostały utworzone we wcześniejszych wersjach programu Visual Studio z powrotem do programu Visual Studio 2010. Po pierwszym otwarciu projektu można skorzystać z opcji uaktualnienia do najnowszego kompilatora i zestawu narzędzi lub do dalszego używania oryginalnych. Jeśli zdecydujesz się nadal korzystać z oryginalnych, program Visual Studio 2019 nie zmodyfikuje pliku projektu i używa zestawu narzędzi z wcześniejszej instalacji programu Visual Studio do skompilowania projektu. Pozostawienie oryginalnych opcji oznacza, że w razie potrzeby będzie można otworzyć projekt w oryginalnej wersji programu Visual Studio. Aby uzyskać więcej informacji, zobacz [Używanie natywnego wielu elementów docelowych w programie Visual Studio do kompilowania starych projektów](/cpp/porting/use-native-multi-targeting). |
 | Rozszerzalność programu Visual Studio/VSIX | Projekty z MinimumVersion 14,0 lub mniej są aktualizowane w celu zadeklarować MinimumVersion 15,0, co uniemożliwia Otwieranie projektu we wcześniejszych wersjach programu Visual Studio. Aby zezwolić na otwieranie projektu we wcześniejszych wersjach, ustaw MinimumVersion na `$(VisualStudioVersion)` . Zobacz również [instrukcje: Migrowanie projektów rozszerzalności do programu Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md). |
 | Visual Studio Lab Management | Aby otworzyć środowiska utworzone w dowolnej z tych wersji, można użyć Microsoft Test Manager lub programu Visual Studio 2010 z dodatkiem SP1 lub nowszego. Jednak w przypadku programu Visual Studio 2010 SP1 wersja Microsoft Test Manager musi być zgodna z wersją Team Foundation Server, aby można było tworzyć środowiska. |
@@ -198,7 +198,7 @@ Więcej informacji można znaleźć w następujących artykułach:
 - [Wskazówki dotyczące ToolsVersion](../msbuild/msbuild-toolset-toolsversion.md)
 - [Wskazówki dotyczące struktury docelowej](../ide/visual-studio-multi-targeting-overview.md)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Dokumentacja migracji i uaktualniania projektu dla programu Visual Studio 2017](?view=vs-2017&preserve-view=true)
 - [Cykl życia produktu Visual Studio i obsługa](/visualstudio/releases/2019/servicing/)

@@ -1,5 +1,6 @@
 ---
 title: Tekst interfejsu użytkownika i pomoc dla programu Visual Studio | Microsoft Docs
+description: Dowiedz się więcej na temat tekstu interfejsu użytkownika i terminologii używanej w informacjach pomocy dla programu Visual Studio.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
@@ -8,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3247aeaa702b59722471c7d28e98957f04f3e07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2795d766c43d6119fa50a12c4dcd1e2c72d79186
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698297"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668602"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Tekst interfejsu użytkownika i pomoc dla programu Visual Studio
 ## <a name="ui-text-and-terminology"></a><a name="BKMK_UITextAndTerminology"></a> Tekst i terminologia interfejsu użytkownika
@@ -60,11 +61,11 @@ ms.locfileid: "80698297"
 #### <a name="supplemental-instructions"></a>Instrukcje uzupełniające
  Instrukcje uzupełniające zawierają dodatkowe informacje, które ułatwiają użytkownikowi zrozumienie formantów lub grup kontroli. Może to również obejmować tekst wskazówki, który jest niezbędny do zrozumienia formatu, który jest oczekiwany przez kontrolkę wejściową. Korzystaj z dodatkowych instrukcji. Zarezerwuj je w przypadkach, gdy użytkownik jest w stanie w pełni zrozumieć konsekwencje wyboru przez nie.
 
- ![Tekst uzupełniający w programie Visual Studio](../../extensibility/ux-guidelines/media/0601-b_supplementaltext1.png "0601 — b_SupplementalText1")
+ ![Zrzut ekranu przedstawiający przycisk Opcje programu Internet Explorer z tekstem uzupełniającym poniżej, który opisuje wpływ zmiany ustawień opcji.](../../extensibility/ux-guidelines/media/0601-b_supplementaltext1.png "0601 — b_SupplementalText1")
 
  **Tekst uzupełniający w programie Visual Studio**
 
- ![Tekst uzupełniający w programie Visual Studio](../../extensibility/ux-guidelines/media/0601-c_supplementaltext2.png "0601 — c_SupplementalText2")
+ ![Zrzut ekranu przedstawiający okno dialogowe Wybieranie kontroli źródła w programie Visual Studio z tekstem uzupełniającym opisującym każdą z opcji systemu kontroli źródła.](../../extensibility/ux-guidelines/media/0601-c_supplementaltext2.png "0601 — c_SupplementalText2")
 
  **Tekst uzupełniający w programie Visual Studio**
 
@@ -136,15 +137,15 @@ ms.locfileid: "80698297"
 
 - Zamiast etykiety kontrolki:
 
-     ![Tekst wskazówki w programie Visual Studio](../../extensibility/ux-guidelines/media/0601-f_hinttext1.png "0601 — f_HintText1")
+     ![Zrzut ekranu przedstawiający kontrolkę rozwijaną z tekstem wskazówki zamiast etykiety kontrolki, która odczytuje "Eksplorator rozwiązań wyszukiwania (Ctrl +;)".](../../extensibility/ux-guidelines/media/0601-f_hinttext1.png "0601 — f_HintText1")
 
 - Z czasownikiem, podając instrukcje:
 
-     ![Tekst wskazówki w programie Visual Studio](../../extensibility/ux-guidelines/media/0601-g_hinttext2.png "0601 — g_HintText2")
+     ![Zrzut ekranu przedstawiający pole tekstowe z tekstem wskazówki w kontrolce, która odczytuje "Wprowadź swoją nazwę".](../../extensibility/ux-guidelines/media/0601-g_hinttext2.png "0601 — g_HintText2")
 
 - Z tekstem wskazującym wymagany wpis:
 
-     ![Tekst wskazówki w programie Visual Studio](../../extensibility/ux-guidelines/media/0601-h_hinttext3.png "0601 — h_HintText3")
+     ![Zrzut ekranu przedstawiający pole tekstowe z tekstem wskazówki w kontrolce, która odczytuje " \< wymagane \> ".](../../extensibility/ux-guidelines/media/0601-h_hinttext3.png "0601 — h_HintText3")
 
 #### <a name="watermark-text"></a>Tekst znaku wodnego
  Na pustej powierzchni projektowej tekst powinien wskazywać, co należy zrobić, a także udostępniać linki do otwierania innych powiązanych okien, jeśli jest to konieczne:
@@ -247,7 +248,7 @@ ms.locfileid: "80698297"
 
 - **Courteous.** Nie polecenia Blame użytkownika ani nie należy ich Stupid. Unikaj nieszkodliwości lub wulgarnego języka (Kill, wykonaj, Przerwij, krytyczne, niedozwolone). Unikaj wielkich liter, które często są postrzegane jako Shouting i nie są odczytywane. Nie używaj humor.
 
-- **Odpowiedź prawidłowa.** Używaj poprawnej pisowni i gramatyki (nawet w przypadku alfa). Literówki są nieprofesjonalne i gorzej.
+- **Niepoprawne.** Używaj poprawnej pisowni i gramatyki (nawet w przypadku alfa). Literówki są nieprofesjonalne i gorzej.
 
 - **Odpowiednio odpowiednie.** Użyj odpowiedniego tekstu przycisku. Należy unikać przycisku "OK" i zamiast tego użyć "Continue" lub "yes/no".
 
@@ -420,7 +421,7 @@ public class HelpForm : Form
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Czcionki i formatowanie dla programu Visual Studio](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md)
 - [Układ dla programu Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md)
 - [Powiadomienia i postęp dla programu Visual Studio](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)

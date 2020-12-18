@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9427895644686c5c3b50311c8a3ab3ee036a6f4
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 6ba78ff7d38d993394072aa9dd18a7a8fa8cbb9d
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862465"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668706"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Rozszerzalność systemu projektów Visual Studio C++ i integracja zestawu narzędzi
 
@@ -72,17 +72,17 @@ Te wartości właściwości określają nazwy folderów w `$(VCTargetsPath)` fol
 
 ### <a name="add-a-new-platform-toolset"></a>Dodaj nowy zestaw narzędzi platformy
 
-Aby dodać *Nowy zestaw narzędzi* , na przykład "PlatformToolsets" dla istniejącej platformy Win32, należy utworzyć folder środowiska w obszarze `$(VCTargetsPath)` * \\ platform \\ Win32 \\ \\ *i utworzyć zestaw *narzędzi. props* i zestaw *narzędzi. targets* .
+Aby dodać *Nowy zestaw narzędzi* , na przykład "PlatformToolsets" dla istniejącej platformy Win32, należy utworzyć folder środowiska w obszarze `$(VCTargetsPath)` *\\ platform \\ Win32 \\ \\* i utworzyć zestaw *narzędzi. props* i zestaw *narzędzi. targets* .
 
 Nazwa każdego folderu w obszarze *PlatformToolsets* pojawia się w oknie dialogowym **właściwości projektu** jako dostępny zestaw **narzędzi platformy** dla określonej platformy, jak pokazano poniżej:
 
 ![Właściwość zestawu narzędzi platformy w oknie dialogowym strony właściwości projektu](media/vc-project-extensibility-platform-toolset-property.png "Właściwość zestawu narzędzi platformy w oknie dialogowym strony właściwości projektu")
 
-Twórz podobne *foldery* i *zestawy narzędzi. props* i zestaw *Toolset.targets* narzędzi programu.
+Twórz podobne *foldery* i *zestawy narzędzi. props* i zestaw  narzędzi programu.
 
 ### <a name="add-a-new-platform"></a>Dodaj nową platformę
 
-Aby dodać nową platformę, na przykład "Moja platforma", Utwórz folder *platformy* w obszarze `$(VCTargetsPath)` * \\ \\ platforms*i Utwórz w nim pliki *platform. default. props*, *platform. props*i *platform. targets* . Utwórz także folder `$(VCTargetsPath)` * \\ platform \\ ** \\ PlatformToolsets \\ * platformy<strong><em>WebPlatform</em></strong>i Utwórz co najmniej jeden zestaw narzędzi.
+Aby dodać nową platformę, na przykład "Moja platforma", Utwórz folder *platformy* w obszarze `$(VCTargetsPath)` *\\ \\ platforms* i Utwórz w nim pliki *platform. default. props*, *platform. props* i *platform. targets* . Utwórz także folder `$(VCTargetsPath)` *\\ platform \\**\\ PlatformToolsets \\* platformy <strong><em>WebPlatform</em></strong>i Utwórz co najmniej jeden zestaw narzędzi.
 
 Wszystkie nazwy folderów w folderze *platforms* for each `$(ApplicationType)` i `$(ApplicationTypeRevision)` pojawiają się w środowisku IDE jako dostępne opcje **platformy** dla projektu.
 
@@ -90,7 +90,7 @@ Wszystkie nazwy folderów w folderze *platforms* for each `$(ApplicationType)` i
 
 ### <a name="add-a-new-application-type"></a>Dodaj nowy typ aplikacji
 
-Aby dodać nowy typ aplikacji, należy utworzyć folder *webapplicationtype* w obszarze `$(VCTargetsPath)` * \\ Typ \\ aplikacji* i utworzyć *Ustawienia domyślne.* Co najmniej jedna poprawka jest wymagana dla typu aplikacji, dlatego należy również utworzyć folder `$(VCTargetsPath)` * \\ typu aplikacji \\ serviceapplicationtype \\ 1,0* i utworzyć *Ustawienia domyślne.* w tym pliku są wyświetlane. Należy również utworzyć `$(VCTargetsPath)` folder * \\ platformy ApplicationType aplikacji \\ \\ 1,0 \\ platforms* i utworzyć co najmniej jedną platformę.
+Aby dodać nowy typ aplikacji, należy utworzyć folder *webapplicationtype* w obszarze `$(VCTargetsPath)` *\\ Typ \\ aplikacji* i utworzyć *Ustawienia domyślne.* Co najmniej jedna poprawka jest wymagana dla typu aplikacji, dlatego należy również utworzyć folder `$(VCTargetsPath)` *\\ typu aplikacji \\ serviceapplicationtype \\ 1,0* i utworzyć *Ustawienia domyślne.* w tym pliku są wyświetlane. Należy również utworzyć `$(VCTargetsPath)` folder *\\ platformy ApplicationType aplikacji \\ \\ 1,0 \\ platforms* i utworzyć co najmniej jedną platformę.
 
 `$(ApplicationType)` i `$(ApplicationTypeRevision)` właściwości nie są widoczne w interfejsie użytkownika. Są one zdefiniowane w szablonach projektu i nie można ich zmienić po utworzeniu projektu.
 
@@ -103,7 +103,7 @@ Uproszczone drzewo importu dla plików Microsoft C++ props i targets wygląda na
 &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportBefore* \\ *Wartość domyślna* \\ \* . *Właściwości* \
 &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Typ* \\ `$(ApplicationType)` aplikacji \\ *Default. props* \
 &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Typ* \\ `$(ApplicationType)` aplikacji \\ `$(ApplicationTypeRevision)` \\ *Default. props* \
-&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Typ* \\ `$(ApplicationType)` aplikacji \\ `$(ApplicationTypeRevision)` \\ *Platforms* \\ `$(Platform)` Platformy \\ *Platform. default. props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Typ* \\ `$(ApplicationType)` aplikacji \\ `$(ApplicationTypeRevision)` \\  \\ `$(Platform)` Platformy \\ *Platform. default. props* \
 &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportAfter* \\ *Wartość domyślna* \\ \* . *Właściwości*
 
 Projekty klasyczne systemu Windows nie definiują `$(ApplicationType)` , więc importują tylko
@@ -111,7 +111,7 @@ Projekty klasyczne systemu Windows nie definiują `$(ApplicationType)` , więc i
 > `$(VCTargetsPath)`\\*Microsoft. cpp. default. props* \
 &nbsp;&nbsp;&nbsp;&nbsp;`$(MSBuildExtensionsPath)`\\`$(MSBuildToolsVersion)`\\*Microsoft. Common. props* \
 &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportBefore* \\ *Wartość domyślna* \\ \* . *Właściwości* \
-&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Platforms* \\ `$(Platform)` Platformy \\ *Platform. default. props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\ \\ `$(Platform)` Platformy \\ *Platform. default. props* \
 &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportAfter* \\ *Wartość domyślna* \\ \* . *Właściwości*
 
 Użyjemy `$(_PlatformFolder)` właściwości do przechowywania `$(Platform)` lokalizacji folderów platformy. Ta właściwość jest
@@ -130,7 +130,7 @@ Pliki props są importowane w następującej kolejności:
 &nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*Obiekt platform. props* \
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Microsoft. cpp. platform. props* \
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportBefore* \\ \* . *Właściwości* \
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*PlatformToolsets* \\ `$(PlatformToolset)` PlatformToolsets \\ Zestaw *narzędzi. props* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\ \\ `$(PlatformToolset)` PlatformToolsets \\ Zestaw *narzędzi. props* \
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportAfter* \\ \* . *Właściwości*
 
 Pliki docelowe są importowane w następującej kolejności:
@@ -140,7 +140,7 @@ Pliki docelowe są importowane w następującej kolejności:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*Obiekt platform. targets* \
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Microsoft. cpp. platform. targets* \
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportBefore* \\ \* . *elementy docelowe* \
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*PlatformToolsets* \\ `$(PlatformToolset)` PlatformToolsets \\ Zestaw *narzędzi. Target* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\ \\ `$(PlatformToolset)` PlatformToolsets \\ Zestaw *narzędzi. Target* \
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportAfter* \\ \* . *elementy docelowe*
 
 Jeśli konieczne jest zdefiniowanie niektórych właściwości domyślnych zestawu narzędzi, można dodać pliki do odpowiednich folderów ImportBefore i ImportAfter.
@@ -291,7 +291,7 @@ Jeśli musisz utworzyć nowe zadanie dla narzędzia kompilacji, możesz wybrać 
 
 1. Jeśli potrzebujesz lepszej wydajności zadania lub potrzebujesz bardziej złożonej funkcjonalności, użyj zwykłego procesu [zapisywania zadania](../msbuild/task-writing.md) programu MSBuild.
 
-   Jeśli nie wszystkie dane wejściowe i wyjściowe narzędzia znajdują się na liście w wierszu polecenia narzędzia, jak w `CL` `MIDL` przypadku, i, `RC` a jeśli chcesz, aby automatyczne wprowadzanie danych wejściowych i wyjściowych było możliwe, należy utworzyć zadanie z `Microsoft.Build.CPPTasks.TrackedVCToolTask` klasy. Obecnie, gdy istnieje dokumentacja bazowej klasy [ToolTask](/dotnet/api/microsoft.build.utilities.tooltask) , nie istnieją przykłady ani Dokumentacja dla szczegółów `TrackedVCToolTask` klasy. Jeśli będzie to szczególnie ważne, Dodaj swój głos do żądania w witrynie [developercommunity.VisualStudio.com](https://developercommunity.visualstudio.com/spaces/62/index.html).
+   Jeśli nie wszystkie dane wejściowe i wyjściowe narzędzia znajdują się na liście w wierszu polecenia narzędzia, jak w `CL` `MIDL` przypadku, i, `RC` a jeśli chcesz, aby automatyczne wprowadzanie danych wejściowych i wyjściowych było możliwe, należy utworzyć zadanie z `Microsoft.Build.CPPTasks.TrackedVCToolTask` klasy. Obecnie, gdy istnieje dokumentacja bazowej klasy [ToolTask](/dotnet/api/microsoft.build.utilities.tooltask) , nie istnieją przykłady ani Dokumentacja dla szczegółów `TrackedVCToolTask` klasy. Jeśli będzie to szczególnie ważne, Dodaj swój głos do żądania w [społeczności deweloperów](https://aka.ms/feedback/suggest?space=62).
 
 ## <a name="incremental-builds-and-up-to-date-checks"></a>Kompilacje przyrostowe i aktualne sprawdzenia
 
@@ -308,7 +308,7 @@ Alternatywnie można je utworzyć przy użyciu zadania podrzędnego `WriteLinesT
 
 ## <a name="tlog-files"></a>pliki. tlog
 
-Istnieją trzy typy plików. tlog: *Odczyt*, *zapis*i *wiersz polecenia*. Pliki Read i Write. tlog są używane przez Kompilacje przyrostowe i przez aktualne sprawdzanie w IDE. Pliki tlog wiersza polecenia są używane tylko w kompilacjach przyrostowych.
+Istnieją trzy typy plików. tlog: *Odczyt*, *zapis* i *wiersz polecenia*. Pliki Read i Write. tlog są używane przez Kompilacje przyrostowe i przez aktualne sprawdzanie w IDE. Pliki tlog wiersza polecenia są używane tylko w kompilacjach przyrostowych.
 
 Program MSBuild udostępnia te klasy pomocników do odczytu i zapisu plików. tlog:
 

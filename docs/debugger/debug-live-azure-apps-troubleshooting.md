@@ -11,16 +11,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16d55c4e729a39f46b4b038490e92f7cb43bf98d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64ea7f1ea1f665f5180851e42814ad4e8c12c8c5
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84182875"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668524"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Rozwiązywanie problemów i znane problemy dotyczące debugowania migawek w programie Visual Studio
 
-Jeśli kroki opisane w tym artykule nie rozwiążą problemu, wyszukaj problem dotyczący [społeczności deweloperów](https://developercommunity.visualstudio.com/spaces/8/index.html) lub zgłoś nowy problem, wybierając pozycję **Pomoc**  >  **Wyślij opinię**  >  **Zgłoś problem** w programie Visual Studio.
+Jeśli kroki opisane w tym artykule nie rozwiążą problemu, wyszukaj problem dotyczący [społeczności deweloperów](https://aka.ms/feedback/suggest?space=8) lub zgłoś nowy problem, wybierając pozycję **Pomoc**  >  **Wyślij opinię**  >  **Zgłoś problem** w programie Visual Studio.
 
 ## <a name="issue-attach-snapshot-debugger-encounters-an-http-status-code-error"></a>Problem: "Attach Snapshot Debugger" napotka błąd kodu stanu HTTP
 
@@ -34,7 +34,7 @@ Ten błąd wskazuje, że wywołanie REST wystawione przez program Visual Studio 
 
 Wykonaj następujące kroki:
 
-* Upewnij się, że konto personalizacji programu Visual Studio ma uprawnienia do subskrypcji i zasobu platformy Azure, do którego dołączasz. Aby szybko ustalić, czy zasób jest dostępny w oknie dialogowym z **Debug**  >  **dołączania debugowania Snapshot Debugger...**  >  **Zasób**  >  platformy Azure **Wybierz pozycję istniejący**lub w Eksploratorze chmury.
+* Upewnij się, że konto personalizacji programu Visual Studio ma uprawnienia do subskrypcji i zasobu platformy Azure, do którego dołączasz. Aby szybko ustalić, czy zasób jest dostępny w oknie dialogowym z   >  **dołączania debugowania Snapshot Debugger...**  >  **Zasób**  >  platformy Azure **Wybierz pozycję istniejący** lub w Eksploratorze chmury.
 * Jeśli ten błąd będzie nadal występował, użyj jednego z kanałów opinii opisanych na początku tego artykułu.
 
 Jeśli włączono uwierzytelnianie/autoryzację (EasyAuth) na App Service, w komunikacie o błędzie stosu wywołań może wystąpić błąd 401 z LaunchAgentAsync. Upewnij się, że **Jeśli żądanie nie zostało uwierzytelnione** , jest ustawione tak, aby **zezwalać na żądania anonimowe (bez akcji)** w Azure Portal i zamiast tego podać authorization.jsw D:\Home\sites\wwwroot z następującą zawartością. 
@@ -67,7 +67,7 @@ Ten błąd wskazuje, że uprawnienie jest odrzucane. Może to być spowodowane p
 
 Wykonaj następujące kroki:
 
-* Sprawdź, czy Twoje konto programu Visual Studio ma prawidłową subskrypcję platformy Azure z wymaganymi uprawnieniami Access Control opartymi na rolach (RBAC) dla zasobu. W przypadku usługi AppService Sprawdź, czy masz uprawnienia do [wykonywania zapytań](/rest/api/appservice/appserviceplans/get) dotyczących planu App Service, który obsługuje aplikację.
+* Sprawdź, czy Twoje konto programu Visual Studio ma prawidłową subskrypcję platformy Azure z wymaganymi uprawnieniami Role-Based Access Control (RBAC) dla zasobu. W przypadku usługi AppService Sprawdź, czy masz uprawnienia do [wykonywania zapytań](/rest/api/appservice/appserviceplans/get) dotyczących planu App Service, który obsługuje aplikację.
 * Sprawdź, czy sygnatura czasowa komputera klienckiego jest prawidłowa i aktualna. Serwery z sygnaturami czasowymi wyciętymi przez ponad 15 minut sygnatury czasowej żądania zwykle powodują ten błąd.
 * Jeśli ten błąd będzie nadal występował, użyj jednego z kanałów opinii opisanych na początku tego artykułu.
 
@@ -202,7 +202,7 @@ Aby włączyć i wyłączyć rejestrowanie agenta, Otwórz program Visual Studio
 Dzienniki agentów można znaleźć w następujących lokalizacjach:
 
 - App Services:
-  - Przejdź do witryny kudu App Service (czyli yourappservice.** SCM**. azurewebsites.NET) i przejdź do konsoli debugowania.
+  - Przejdź do witryny kudu App Service (czyli yourappservice.**SCM**. azurewebsites.NET) i przejdź do konsoli debugowania.
   - Dzienniki agentów są przechowywane w następującym katalogu: D:\home\LogFiles\SiteExtensions\DiagnosticsAgentLogs\
 - MASZYNA WIRTUALNA/VMSS:
   - Zaloguj się do maszyny wirtualnej, dzienniki agentów są przechowywane w następujący sposób: C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics \<Version> \ SnapshotDebuggerAgent_ *. txt
@@ -242,7 +242,7 @@ Debugowanie migawek i Application Insights zależą od ICorProfiler, które są 
 - Rozpocznij pracę z miejscem. Zalecamy odwiedzanie witryny w celu jej ponownego rozgrzania.
 - Zamień miejsce na środowisko produkcyjne.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Debugowanie w Visual Studio](../debugger/index.yml)
 - [Debuguj aplikacje Live ASP.NET przy użyciu Snapshot Debugger](../debugger/debug-live-azure-applications.md)

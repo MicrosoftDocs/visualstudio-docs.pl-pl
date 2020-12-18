@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 790146e3014765224f22bd247732c7ac3f062269
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: a2ccb54995107bbd22e961f14ff3755b4a6f543a
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329448"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668082"
 ---
 # <a name="test-generation"></a>Generowanie testu
 
@@ -118,7 +118,7 @@ public partial class ListTest {
 
 IntelliTest udostępnia wiele atrybutów walidacji, które pomagają Klasyfikacja wyjątki z oczekiwanymi wyjątkami i nieoczekiwanymi wyjątkami.
 
-Oczekiwane wyjątki generują negatywne przypadki testowe z odpowiednią adnotacją, taką jak **oczekiwano ("TypeOf *xxx***"), podczas gdy nieoczekiwane wyjątki generują błędne przypadki testowe.
+Oczekiwane wyjątki generują negatywne przypadki testowe z odpowiednią adnotacją, taką jak **oczekiwano ("TypeOf**"), podczas gdy nieoczekiwane wyjątki generują błędne przypadki testowe.
 
 ```csharp
 [PexMethod, PexAllowedException(typeof(ArgumentNullException))]
@@ -237,11 +237,11 @@ namespace MyTests
 ```
 
 <a name="further-reading"></a>
-## <a name="further-reading"></a>Dodatkowe informacje
+## <a name="further-reading"></a>Dalsze informacje
 
 * [Testuj do powiązania kodu](https://devblogs.microsoft.com/devops/smart-unit-tests-test-to-code-binding-test-case-management/)
 * [Jeden test do reguły dla nich](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/)
 
 ## <a name="got-feedback"></a>Chcesz przesłać opinię?
 
-Opublikuj swoje pomysły i sugestie funkcji w [społeczności deweloperów](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
+Opublikuj swoje pomysły i sugestie funkcji w [społeczności deweloperów](https://aka.ms/feedback/suggest?space=8).

@@ -17,20 +17,20 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 52eee3535590842db53cd80ac761286fb4a23fa9
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 1fc40c826499b36d5d713d0842a2c0e8dae462d1
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398998"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668368"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalowanie i używanie programu Visual Studio i usług platformy Azure za zaporą lub serwerem proxy
 
 Jeśli ty lub Twoja organizacja korzysta z środków zabezpieczeń, takich jak zapora lub serwer proxy, istnieją adresy URL domeny, które można dodać do listy "Lista dozwolonych" oraz portów i protokołów, które mogą być otwierane, aby zapewnić najlepsze środowisko podczas instalowania i używania usług Visual Studio i Azure.
 
-* **[Zainstaluj program Visual Studio](#install-visual-studio)** : te tabele zawierają adresy URL domeny, które mają zostać dodane do listy dozwolonych, dzięki czemu masz dostęp do wszystkich składników i obciążeń, które chcesz.
+* **[Zainstaluj program Visual Studio](#install-visual-studio)**: te tabele zawierają adresy URL domeny, które mają zostać dodane do listy dozwolonych, dzięki czemu masz dostęp do wszystkich składników i obciążeń, które chcesz.
 
-* **[Użyj programu Visual Studio i usług platformy Azure](#use-visual-studio-and-azure-services)** : Ta tabela zawiera adresy URL domeny, które mają zostać dodane do listy dozwolonych, oraz porty i protokoły do otwarcia, aby mieć dostęp do wszystkich żądanych funkcji i usług.
+* **[Użyj programu Visual Studio i usług platformy Azure](#use-visual-studio-and-azure-services)**: Ta tabela zawiera adresy URL domeny, które mają zostać dodane do listy dozwolonych, oraz porty i protokoły do otwarcia, aby mieć dostęp do wszystkich żądanych funkcji i usług.
 
 > [!NOTE]
 > Ten artykuł został zapisany dla programu Visual Studio w systemie Windows, ale pewne informacje dotyczą również [instalowania Visual Studio dla komputerów Mac](/visualstudio/mac/install-behind-a-firewall-or-proxy-server) za zaporą lub serwerem proxy.
@@ -95,7 +95,7 @@ Aby mieć pewność, że masz dostęp do wszystkiego, czego potrzebujesz, gdy ko
 | Adres URL<br>rozwiązanie | go.microsoft.com<br><br>aka.ms | | Służy do skracania adresów URL, które następnie są rozpoznawane jako dłuższe adresy URL |
 | Strona początkowa | vsstartpage.blob.core.windows.net | 443 | Służy do wyświetlania wiadomości dla deweloperów wyświetlanych na stronie startowej (tylko w programie Visual Studio 2017) |
 | Docelowe<br> Powiadomienie <br>Usługa | targetednotifications-tm.trafficmanager.net <br><br>www.research.net | 443<br><br>443 | Służy do filtrowania globalnej listy powiadomień do listy, która ma zastosowanie tylko do określonych typów maszyn/scenariuszy użycia |
-| Rozszerzenie <br>sprawdzenie aktualizacji | marketplace.visualstudio.com<br><br>&#42;. windows.net <br>&#42;. microsoftonline.com <br>&#42;. live.com | 443 | Służy do dostarczania powiadomień, gdy dostępne jest aktualizacje z zainstalowanym rozszerzeniem <br><br> Używane jako lokalizacja logowania |
+| Wewnętrzny <br>sprawdzenie aktualizacji | marketplace.visualstudio.com<br><br>&#42;. windows.net <br>&#42;. microsoftonline.com <br>&#42;. live.com | 443 | Służy do dostarczania powiadomień, gdy dostępne jest aktualizacje z zainstalowanym rozszerzeniem <br><br> Używane jako lokalizacja logowania |
 | Projekt AI <br>Integracja | az861674.vo.msecnd.net | 443<br> | Służy do konfigurowania nowych projektów w celu wysyłania danych użycia do zarejestrowanego konta Application Insights |
 | Soczewki kodu | codelensprodscus1su0. app.<br>codelens.visualstudio.com | 443 | Służy do przekazywania informacji w edytorze o momencie ostatniej aktualizacji pliku, osi czasu zmian, elementów roboczych, do których te zmiany są skojarzone, autorów itd. |
 | Eksperymentalne <br>Włączanie funkcji | visualstudio-devdiv-c2s.msedge.net | 80 | Służy do uaktywniania eksperymentalnych nowych funkcji lub zmian funkcji |
@@ -119,7 +119,7 @@ Aby mieć pewność, że masz dostęp do wszystkiego, czego potrzebujesz, gdy ko
 | Zaktualizowano narzędzia do publikacji w sieci Web <br>sprawdzenia i rozszerzenie <br>zalecenia | marketplace.visualstudio.com | https/443 | Służy do sprawdzania dostępności zaktualizowanych narzędzi publikacji. Jeśli ta wartość jest wyłączona, możliwe jest, że zalecane rozszerzenie publikacji w sieci Web nie może być wyświetlane |
 | Zaktualizowano zasób platformy Azure <br>Informacje o punkcie końcowym tworzenia | \*.blob.core.windows.net | https/443 | Służy do aktualizowania punktów końcowych używanych do tworzenia zasobów platformy Azure dla niektórych usług platformy Azure. Jeśli ta wartość jest wyłączona, zamiast tego są używane ostatnio pobierane lub wbudowane lokalizacje punktów końcowych |
 | Debugowanie zdalne i <br>Zdalne profilowanie <br>Azure Websites | &#42;. cloudapp.net <br> &#42;. azurewebsites.net | 4022 | Służy do dołączania zdalnego debugera do usługi Azure Websites. Po wyłączeniu dołączenie zdalnego debugera do usługi Azure Websites nie będzie działało |
-| Active Directory <br>Graph | graph.windows.net | https/443 | Używane do aprowizacji nowych aplikacji Azure Active Directory. Używany także przez Microsoft 365 MSGraph-Connected Service Provider |
+| Usługa Active Directory <br>Graph | graph.windows.net | https/443 | Używane do aprowizacji nowych aplikacji Azure Active Directory. Używany także przez Microsoft 365 MSGraph-Connected Service Provider |
 | Azure Functions <br>Aktualizacja interfejsu wiersza polecenia <br>Zaznacz | functionscdn.azureedge.net | https/443 | Służy do sprawdzania dostępności zaktualizowanych wersji interfejsu wiersza polecenia Azure Functions. Jeśli ta wartość jest wyłączona, zamiast tego zostanie użyty buforowana kopia (lub kopia wykonywana przez składnik Azure Functions) interfejsu wiersza polecenia |
 | Cordova | npmjs.org<br>gradle.org | & http/80<br/>https/443 | Protokół HTTP jest używany do pobierania Gradle podczas kompilacji; Protokół HTTPS jest używany do dołączania wtyczek Cordova do projektów |
 | Eksplorator chmury | 1. &#60;clusterendpoint&#62; <br>Service Fabric <br>2. &#60;punkt końcowy zarządzania&#62;<br>Ogólna usługa wydatków w chmurze <br>3. &#60;punkt końcowy programu Graph&#62;<br>Ogólna usługa wydatków w chmurze<br>4. &#60;punktu końcowego konta magazynu&#62;<br>Węzły magazynu <br>5. &#60;adresy URL Azure Portal&#62;<br>Ogólna usługa wydatków w chmurze <br>6. &#60;punkty końcowe magazynu kluczy&#62; <br>Azure Resource Manager węzły maszyny wirtualnej<br>7. &#60;PublicIPAddressOfCluster&#62;<br>Service Fabric debugowanie zdalne i śledzenie ETW | <br>1. https/19080<br>2. https/443<br>3. https/443<br>4. https/443<br>5. https/443<br>6. https/443<br>7. TCP/dynamiczny | 1. przykład: test12.eastus.cloudapp.com<br>2. pobiera subskrypcje i pobiera/zarządza zasobami platformy Azure<br>3. pobiera Azure Stack subskrypcje<br>4. zarządza zasobami magazynu (przykład: mystorageaccount.blob.core.windows.net)<br>5. opcja menu kontekstowego "Otwórz w portalu" (otwiera zasób w Azure Portal)<br>6. tworzy i używa magazynów kluczy na potrzeby debugowania maszyn wirtualnych (przykład: myvault.vault.azure.net) <br><br>7. dynamicznie przydziela blok portów na podstawie liczby węzłów w klastrze i dostępnych portów. <br><br>Blok portu spróbuje uzyskać trzykrotnie liczbę węzłów z co najmniej 10 portami.<br><br>W przypadku śladów przesyłania strumieniowego jest podejmowana próba pobrania bloku portu z 810. Jeśli którykolwiek z tych bloków portu jest już używany, podejmowana jest próba pobrania następnego bloku i tak dalej. (Moduł równoważenia obciążenia jest pusty, a następnie porty z 810 są najprawdopodobniej używane) <br><br>Podobnie w przypadku debugowania są zarezerwowane cztery zestawy bloków portów: <br>-connectorPort: 30398, <br>-forwarderPort: 31398, <br>-forwarderPortx86:31399,<br>-fileUploadPort: 32398<br> |
@@ -155,10 +155,10 @@ Oferujemy opcję obsługi programu [**Chat**](https://visualstudio.microsoft.com
 Oto kilka dodatkowych opcji pomocy technicznej:
 
 * Zgłoś problemy dotyczące produktów w firmie Microsoft za pomocą narzędzia [Zgłoś problem](../ide/how-to-report-a-problem-with-visual-studio.md) , które pojawia się zarówno w Instalator programu Visual Studio, jak i w środowisku IDE programu Visual Studio.
-* Zaproponuj funkcję, śledź problemy dotyczące produktów i Znajdź odpowiedzi w [społeczności deweloperów programu Visual Studio](https://developercommunity.visualstudio.com/).
+* Zaproponuj funkcję, śledź problemy dotyczące produktów i Znajdź odpowiedzi w [społeczności deweloperów programu Visual Studio](https://aka.ms/feedback/suggest?space=8).
 * Użyj swojego konta w usłudze [GitHub](https://github.com/) , aby komunikować się z nami i innych deweloperów programu Visual Studio w [konwersacji programu Visual Studio w społeczności warunkom](https://gitter.im/Microsoft/VisualStudio).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 * [Wymagania dotyczące łączności dla rozszerzenia Live Share](/visualstudio/liveshare/reference/connectivity/)
 * [Tworzenie instalacji sieciowej programu Visual Studio](create-a-network-installation-of-visual-studio.md)

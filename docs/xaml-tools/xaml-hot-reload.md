@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37d4bc0417d30d64a05cc7f283784d3b23d9adee
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 25819d8d691836c12c73d9d76e334e36d50b83b4
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134030"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668875"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Pisanie i debugowanie uruchomionego kodu XAML przy użyciu gorącego ponownego ładowania XAML w programie Visual Studio
 
@@ -41,7 +41,7 @@ Na poniższej ilustracji przedstawiono użycie aktywnego drzewa wizualnego, aby 
 ![Ponowne ładowanie przy aktywnym kodzie XAML](../debugger/media/xaml-hot-reload-using.gif)
 
 > [!NOTE]
-> Hot reload programu Visual Studio XAML jest obecnie obsługiwany tylko w przypadku uruchamiania aplikacji w programie Visual Studio lub Blend for Visual Studio z dołączonym debugerem ( **F5** lub **Start Debug** ). Nie można włączyć tego środowiska przy użyciu funkcji [dołączania do procesu](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md) , chyba że [ręcznie ustawisz zmienną środowiskową](xaml-hot-reload-troubleshooting.md#verify-that-you-use-start-debugging-rather-than-attach-to-process).
+> Hot reload programu Visual Studio XAML jest obecnie obsługiwany tylko w przypadku uruchamiania aplikacji w programie Visual Studio lub Blend for Visual Studio z dołączonym debugerem (**F5** lub **Start Debug**). Nie można włączyć tego środowiska przy użyciu funkcji [dołączania do procesu](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md) , chyba że [ręcznie ustawisz zmienną środowiskową](xaml-hot-reload-troubleshooting.md#verify-that-you-use-start-debugging-rather-than-attach-to-process).
 
 ## <a name="known-limitations"></a>Znane ograniczenia
 
@@ -49,7 +49,7 @@ Poniżej przedstawiono znane ograniczenia dotyczące gorącego ładowania kodu X
 
 |Ograniczenie|WPF|Platforma UWP|Uwagi|
 |-|-|-|-|
-|Zdarzenia okablowania do kontrolek, gdy aplikacja jest uruchomiona|Nieobsługiwane|Nieobsługiwane|Zobacz błąd: *upewnij się, że zdarzenie nie powiodło się* . Należy pamiętać, że w WPF można odwołać się do istniejącej procedury obsługi zdarzeń. W aplikacjach platformy UWP odwoływanie się do istniejącej procedury obsługi zdarzeń nie jest obsługiwane.|
+|Zdarzenia okablowania do kontrolek, gdy aplikacja jest uruchomiona|Nieobsługiwane|Nieobsługiwane|Zobacz błąd: *upewnij się, że zdarzenie nie powiodło się*. Należy pamiętać, że w WPF można odwołać się do istniejącej procedury obsługi zdarzeń. W aplikacjach platformy UWP odwoływanie się do istniejącej procedury obsługi zdarzeń nie jest obsługiwane.|
 |Tworzenie obiektów zasobów w słowniku zasobów, takich jak te znajdujące się w pliku/oknie lub pliku *App. XAML* aplikacji|Obsługiwane począwszy od programu Visual Studio 2019 Update 2|Obsługiwane|Przykład: Dodawanie `SolidColorBrush` do słownika zasobów do użycia jako `StaticResource` .</br>Uwaga: zasoby statyczne, konwertery stylów i inne elementy, które są zapisywane w słowniku zasobów, można stosować/używać podczas korzystania z usługi XAML. Tylko tworzenie zasobu nie jest obsługiwane.</br> Zmiana właściwości słownik zasobów `Source` .|
 |Dodawanie nowych kontrolek, klas, okien lub innych plików do projektu, gdy aplikacja jest uruchomiona|Nieobsługiwane|Nieobsługiwane|Brak|
 |Zarządzanie pakietami NuGet (Dodawanie/usuwanie/aktualizowanie pakietów)|Nieobsługiwane|Nieobsługiwane|Brak|
@@ -64,9 +64,9 @@ Podczas korzystania ze gorącego ładowania kodu XAML mogą występować następ
 |Komunikat o błędzie|Opis|
 |-|-|
 |Sprawdź, czy zdarzenie nie powiodło się|Błąd oznacza, że próbujesz obsłużyć zdarzenie do jednej z kontrolek, co nie jest obsługiwane, gdy aplikacja jest uruchomiona.|
-|Ta zmiana nie jest obsługiwana przez kod XAML gorącego ładowania i nie zostanie zastosowana podczas sesji debugowania.|Błąd oznacza, że próba zmiany nie jest obsługiwana przez kod XAML. Zatrzymaj sesję debugowania, wprowadź zmianę, a następnie ponownie uruchom sesję debugowania. Jeśli znajdziesz nieobsługiwany scenariusz, który chcesz zobaczyć, użyj nowej opcji "Sugeruj funkcję" w [społeczności deweloperów programu Visual Studio](https://developercommunity.visualstudio.com/spaces/8/index.html). |
+|Ta zmiana nie jest obsługiwana przez kod XAML gorącego ładowania i nie zostanie zastosowana podczas sesji debugowania.|Błąd oznacza, że próba zmiany nie jest obsługiwana przez kod XAML. Zatrzymaj sesję debugowania, wprowadź zmianę, a następnie ponownie uruchom sesję debugowania. Jeśli znajdziesz nieobsługiwany scenariusz, który chcesz zobaczyć, użyj nowej opcji "Sugeruj funkcję" w [społeczności deweloperów programu Visual Studio](https://aka.ms/feedback/suggest?space=8). |
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 * [Rozwiązywanie problemów z ponownym ładowaniem przy aktywnym kodzie XAML](xaml-hot-reload-troubleshooting.md)
 * [Przeładowywanie kodu XAML na gorąco dla zestawu narzędzi Xamarin.Forms](/xamarin/xamarin-forms/xaml/hot-reload)

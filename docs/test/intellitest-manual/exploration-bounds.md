@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 713ccf139e4110923f45073308da2c249305eb18
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 075eaa4613a1afe6bdeb83a9e46e639b073a200a
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328902"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97667926"
 ---
 # <a name="exploration-bounds"></a>Wiązania eksploracji
 
@@ -188,4 +188,4 @@ Wartość domyślna dla tej opcji to **TestEmissionBranchHits = 2**, która gene
 
 ## <a name="got-feedback"></a>Chcesz przesłać opinię?
 
-Opublikuj swoje pomysły i sugestie funkcji w [społeczności deweloperów](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
+Opublikuj swoje pomysły i sugestie funkcji w [społeczności deweloperów](https://aka.ms/feedback/suggest?space=8).

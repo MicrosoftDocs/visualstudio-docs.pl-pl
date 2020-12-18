@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5103d9a053a1a2a8bd3a672c33037695ee3d2836
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: d21784169e541e2f4353fd6d16772b5315940166
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928700"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668836"
 ---
 # <a name="advanced-example-for-containers"></a>Zaawansowany przykład dla kontenerów
 
@@ -213,11 +213,11 @@ The command 'cmd /S /C C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe ...' return
 
 ::: moniker-end
 
-Po zakończeniu ostatniego wiersza Otwórz pozycję "% TEMP% \vslogs.zip" na swojej maszynie lub Prześlij problem do witryny internetowej [społeczności deweloperów](https://developercommunity.visualstudio.com) .
+Po zakończeniu ostatniego wiersza Otwórz pozycję "% TEMP% \vslogs.zip" na swojej maszynie lub Prześlij problem do witryny internetowej [społeczności deweloperów](https://aka.ms/feedback/suggest?space=8) .
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 * [Instalowanie narzędzi do kompilacji w kontenerze](build-tools-container.md)
 * [Znane problemy z kontenerami](build-tools-container-issues.md)

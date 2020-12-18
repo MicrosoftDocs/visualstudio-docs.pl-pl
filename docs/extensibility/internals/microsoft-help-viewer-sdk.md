@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4181fd11e6f1ba86e2965991aab704995210e6bc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 901a5a5eea7835720ab9d5963f0ab1be36df3685
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88168739"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668862"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Zestaw SDK Podglądu Pomocy firmy Microsoft
 
@@ -296,13 +296,13 @@ Ustaw następujące wartości rejestru, aby włączyć rezerwę klawisza F1 dla 
 
    - W przypadku 32-bitowych systemów operacyjnych:
 
-        HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\Help\v2.3\Catalogs\VisualStudio15
+        HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
         "VendorContent" = DWORD: 00000001
 
    - W przypadku 64-bitowych systemów operacyjnych:
 
-        HKEY_LOCAL_MACHINE \SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
+        HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
         "VendorContent" = DWORD: 00000001
 
@@ -310,13 +310,13 @@ Ustaw następujące wartości rejestru, aby włączyć rezerwę klawisza F1 dla 
 
    - W przypadku 32-bitowych systemów operacyjnych:
 
-      HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\Help\v2.3\Partner<em> \\<przestrzeni \> nazw</em>
+      HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.3\Partner<em> \\<przestrzeni \> nazw</em>
 
       "lokalizacja" = "offline"
 
    - W przypadku 64-bitowych systemów operacyjnych:
 
-      HKEY_LOCAL_MACHINE \SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Partner<em> \\<przestrzeni \> nazw</em>
+      HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Partner<em> \\<przestrzeni \> nazw</em>
 
       "lokalizacja" = "offline"
 
@@ -324,7 +324,7 @@ Ustaw następujące wartości rejestru, aby włączyć rezerwę klawisza F1 dla 
 
 Aby włączyć analizę podstawowej przestrzeni nazw natywnych, w rejestrze Dodaj nową wartość DWORD o nazwie: BaseNativeNamespaces i ustaw ją na 1 (w kluczu katalogu, który ma zostać objęty pomocą techniczną).  Jeśli na przykład chcesz użyć wykazu programu Visual Studio, możesz dodać klucz do ścieżki:
 
-HKEY_LOCAL_MACHINE \SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
+HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
 Gdy napotkasz słowo kluczowe F1 w NAGŁÓWKu lub METODzie formatu, znak "/" zostanie przeanalizowany, co spowoduje powstanie następującej konstrukcji:
 
@@ -342,13 +342,13 @@ Dodaj następujący klucz rejestru i wartość:
 
 ::: moniker range="vs-2017"
 
-**HKEY_CURRENT_USER pomoc \Software\Microsoft\VisualStudio\15.0\Dynamic**
+**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic Help**
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-**HKEY_CURRENT_USER pomoc \Software\Microsoft\VisualStudio\16.0\Dynamic**
+**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Dynamic Help**
 
 ::: moniker-end
 
@@ -449,12 +449,12 @@ Uwaga: zmienne zapisane przez "{n}" mają zależności kodu — usunięcie lub z
 | - | - |
 | Ona | **CollapsibleArea** |
 | Używanych | Rozwiń Zwiń tekst kontrolki zawartości |
-| **Element** | **Wartość** |
+| **Postaci** | **Wartość** |
 | ExpandText | Rozwiń |
 | CollapseText | Zwiń |
 | Ona | **CodeSnippet** |
 | Używanych | Tekst kontrolki fragmentu kodu.  Uwaga: zawartość fragmentu kodu z rozrywanym miejscem zostanie zmieniona na spacja. |
-| **Element** | **Wartość** |
+| **Postaci** | **Wartość** |
 | CopyToClipboard | Kopiuj do schowka |
 | ViewColorizedText | Wyświetl kolory |
 | CombinedVBTabDisplayLanguage | Visual Basic (przykład) |
@@ -462,16 +462,16 @@ Uwaga: zmienne zapisane przez "{n}" mają zależności kodu — usunięcie lub z
 | VBUsage | Użycie |
 | Ona | **Opinie, stopki i logo** |
 | Używanych | Podaj kontrolę opinii dla klienta, aby przesłać opinię na temat bieżącego tematu za pośrednictwem poczty e-mail.  Tekst praw autorskich dla zawartości.  Definicja logo. |
-| **Element** | **Wartość (te ciągi mogą być modyfikowane w celu spełnienia wymagań dotyczących przyjmowanego przez zawartość).** |
+| **Postaci** | **Wartość (te ciągi mogą być modyfikowane w celu spełnienia wymagań dotyczących przyjmowanego przez zawartość).** |
 | Prawo | © 2013 Microsoft Corporation. All rights reserved. |
 | SendFeedback | \<a href="{0}" {1}>Prześlij opinię \</a> na temat tego tematu do firmy Microsoft. |
 | FeedbackLink | |
 | LogoTitle | [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] |
 | LogoFileName | vs_logo_bk.gif |
 | LogoFileNameHC | vs_logo_wh.gif |
-| Ona | **Disclaimer** |
+| Ona | **Zastrzeżenie** |
 | Używanych | Zbiór odrzutów specyficznych dla każdego przypadku dla zawartości przetłumaczonej maszynowo. |
-| **Element** | **Wartość** |
+| **Postaci** | **Wartość** |
 | MT_Editable | Ten artykuł został przetłumaczony maszynowo. Jeśli masz połączenie z Internetem, wybierz pozycję "Wyświetl ten temat online", aby wyświetlić tę stronę w trybie edycji razem z pierwotną zawartością w języku angielskim w tym samym czasie. |
 | MT_NonEditable | Ten artykuł został przetłumaczony maszynowo. Jeśli masz połączenie z Internetem, wybierz pozycję "Wyświetl ten temat online", aby wyświetlić tę stronę w trybie edycji razem z pierwotną zawartością w języku angielskim w tym samym czasie. |
 | MT_QualityEditable | Ten artykuł został przetłumaczony ręcznie. Jeśli masz połączenie z Internetem, wybierz pozycję "Wyświetl ten temat online", aby wyświetlić tę stronę w trybie edycji razem z pierwotną zawartością w języku angielskim w tym samym czasie. |
@@ -480,14 +480,14 @@ Uwaga: zmienne zapisane przez "{n}" mają zależności kodu — usunięcie lub z
 | MT_BetaRecycledContents | Ten artykuł został przetłumaczony ręcznie w wersji wstępnej. Jeśli masz połączenie z Internetem, wybierz pozycję "Wyświetl ten temat online", aby wyświetlić tę stronę w trybie edycji razem z pierwotną zawartością w języku angielskim w tym samym czasie. |
 | Ona | **Połącz z** |
 | Używanych | Obsługa linków tematów online |
-| **Element** | **Wartość** |
+| **Postaci** | **Wartość** |
 | LinkTableTitle | Tabela łączy |
 | TopicEnuLinkText | Zapoznaj się z angielską wersją \</a> tego tematu, która jest dostępna na komputerze. |
 | TopicOnlineLinkText | Wyświetl ten temat \<a href="{0}" {1}> online\</a> |
 | OnlineText | Tryb online |
 | Ona | **Kontrolka audio wideo** |
 | Używanych | Wyświetlanie elementów i tekstu dla zawartości wideo |
-| **Element** | **Wartość** |
+| **Postaci** | **Wartość** |
 | MultiMediaNotSupported | Aby można było obsługiwać zawartość, musi być zainstalowany program Internet Explorer 9 lub nowszy {0} . |
 | VideoText | Wyświetlanie wideo |
 | AudioText | przesyłanie strumieniowe audio |
@@ -495,25 +495,25 @@ Uwaga: zmienne zapisane przez "{n}" mają zależności kodu — usunięcie lub z
 | OnlineAudioLinkText | \<p>Aby nawiązać połączenie z dźwiękiem skojarzonym z tym tematem, kliknij {0} \<a href="{1}"> {2} tutaj \</a> .\</p> |
 | Ona | **Niezainstalowana Kontrola zawartości** |
 | Używanych | Elementy tekstowe (ciągi) używane do renderowania contentnotinstalled.htm |
-| **Element** | **Wartość** |
+| **Postaci** | **Wartość** |
 | ContentNotInstalledTitle | Nie znaleziono zawartości na komputerze. |
 | ContentNotInstalledDownloadContentText | \<p>Aby pobrać zawartość na komputer, \<a href="{0}" {1}> kliknij kartę Zarządzanie \</a> .\</p> |
 | ContentNotInstalledText | \<p>Na komputerze nie jest zainstalowana żadna zawartość. Skontaktuj się z administratorem w celu zainstalowania lokalnej zawartości pomocy.\</p> |
 | Ona | **Nie znaleziono tematu — formant** |
 | Używanych | Elementy tekstowe (ciągi) używane do renderowania topicnotfound.htm |
-| **Element** | **Wartość** |
+| **Postaci** | **Wartość** |
 | TopicNotFoundTitle | Nie można znaleźć żądanego tematu na komputerze. |
 | TopicNotFoundViewOnlineText | \<p>Nie znaleziono żądanego tematu na komputerze, ale można \<a href="{0}" {1}> wyświetlić temat w trybie online \</a> .\</p> |
 | TopicNotFoundDownloadContentText | \<p>Zobacz okienko nawigacji, aby uzyskać linki do podobnych tematów, lub \<a href="{0}" {1}> kliknij kartę Zarządzanie, \</a> Aby pobrać zawartość do komputera.\</p> |
 | TopicNotFoundText | \<p>Nie znaleziono żądanego tematu na komputerze.\</p> |
 | Ona | **Formant uszkodzony** |
 | Używanych | Elementy tekstowe (ciągi) używane do renderowania topiccorrupted.htm |
-| **Element** | **Wartość** |
+| **Postaci** | **Wartość** |
 | TopicCorruptedTitle | Nie można wyświetlić żądanego tematu. |
 | TopicCorruptedViewOnlineText | \<p>Podgląd pomocy nie może wyświetlić żądanego tematu. Może wystąpić błąd w zawartości tematu lub podstawowej zależności od systemu.\</p> |
 | Ona | **Strona główna — formant** |
 | Używanych | Tekst obsługujący wyświetlanie zawartości węzła najwyższego poziomu podglądu pomocy. |
-| **Element** | **Wartość** |
+| **Postaci** | **Wartość** |
 | HomePageTitle | Strona główna podglądu pomocy |
 | HomePageIntroduction | \<p>Witamy w Podgląd Pomocy firmy Microsoft, podstawowe źródło informacji dla wszystkich osób korzystających z narzędzi, produktów, technologii i usług firmy Microsoft. Podgląd pomocy zapewnia dostęp do informacji o sposobach i odwołaniach, przykładowym kodzie, artykułach technicznych i innych. Aby znaleźć potrzebną zawartość, przejrzyj Spis treści, użyj wyszukiwania pełnotekstowego lub przejdź przez zawartość przy użyciu indeksu słowa kluczowego.\</p> |
 | HomePageContentInstallText | \<p>\<br />Za pomocą \<a href="{0}" {1}> karty Zarządzanie zawartością \</a> można wykonać następujące czynności: \<ul> \<li> Dodaj zawartość do komputera. \</li> \<li> Sprawdź, czy są aktualizacje zawartości lokalnej. \</li> \<li> Usuń zawartość z komputera.\</li>\</ul>\</p> |
@@ -563,7 +563,7 @@ Plik branding.js zawiera kod JavaScript używany przez elementy oznakowania podg
 
 Pakiet znakowania zawiera zestaw plików HTM, które obsługują scenariusze przekazywania informacji o kluczach w celu ułatwienia użytkownikom zawartości, na przykład Strona główna zawierająca sekcję opisującą, które zestawy zawartości są zainstalowane, oraz strony informujące użytkownika o tym, że nie można znaleźć tematów w lokalnym zestawie tematów. Te pliki HTM można modyfikować na produkt.  Dostawcy powłoki ISO mogą korzystać z domyślnego pakietu znakowania i zmieniać zachowanie i zawartość tych stron w celu ich potrzeby.  Te pliki odnoszą się do odpowiedniego pakietu markowego, aby Tagi znakowania pobierają odpowiednią zawartość z pliku branding.xml.
 
-|**Plik**|**Używanych**|**Wyświetlone źródło zawartości**|
+|**Plik**|**Zastosowanie**|**Wyświetlone źródło zawartości**|
 |-|-|-|
 |homepage.htm|Jest to strona wyświetlająca aktualnie zainstalowaną zawartość oraz wszelkie inne komunikaty, które są odpowiednie dla użytkownika dotyczące ich zawartości.  Ten plik ma dodatkowy atrybut metadanych "Microsoft.Help.Id" Content = "-1", który umieszcza tę zawartość w górnej części lokalnego SPISu treści zawartości.||
 ||<META_HOME_PAGE_TITLE_ADD/>|Branding.xml, tag \<HomePageTitle>|
@@ -597,7 +597,7 @@ Marking. pliki CSS zawierają definicje dla prezentacji tematu programu Visual S
 
 Zawartość programu Visual Studio zawiera logo programu Visual Studio, a także inne grafiki.  Poniżej przedstawiono kompletną listę plików graficznych w pakiecie znakowania podglądu pomocy programu Visual Studio.
 
-|**Plik**|**Używanych**|**Przykłady**|
+|**Plik**|**Zastosowanie**|**Przykłady**|
 |-|-|-|
 |clear.gif|Używane do renderowania zwijanego obszaru||
 |footer_slice.gif|Prezentacja stopki||
@@ -741,11 +741,11 @@ Zdefiniuj magazyn zawartości w rejestrze. Dla zintegrowanej powłoki Zmień Vis
 
 Aby utworzyć rozszerzenie powłoki izolowanej:
 
-1. W programie Visual Studio w **obszarze plik**wybierz pozycję **Nowy projekt**, w obszarze **Inne typy projektów** wybierz pozycję **rozszerzalność**, a następnie wybierz pozycję  **izolowany powłoka programu Visual Studio**. Nazwij projekt `ContosoHelpShell` ), aby utworzyć projekt rozszerzalności oparty na szablonie powłoki izolowanej programu Visual Studio.
+1. W programie Visual Studio w **obszarze plik** wybierz pozycję **Nowy projekt**, w obszarze **Inne typy projektów** wybierz pozycję **rozszerzalność**, a następnie wybierz pozycję  **izolowany powłoka programu Visual Studio**. Nazwij projekt `ContosoHelpShell` ), aby utworzyć projekt rozszerzalności oparty na szablonie powłoki izolowanej programu Visual Studio.
 
 2. W Eksplorator rozwiązań w projekcie ContosoHelpShellUI w folderze pliki zasobów Otwórz ApplicationCommands. vsct. Upewnij się, że ten wiersz jest oznaczony jako komentarz (Wyszukaj ciąg "No_Help"): `<!-- <define name="No_HelpMenuCommands"/> -->`
 
-3. Wybierz klawisz F5, aby skompilować i uruchomić **debugowanie**. W eksperymentalnym wystąpieniu środowiska IDE izolowanej powłoki wybierz menu **Pomoc** . Upewnij się, że są wyświetlane polecenia **Wyświetl pomoc**, **Dodaj i Usuń zawartość pomocy**oraz **Ustaw polecenie preferencji pomocy** .
+3. Wybierz klawisz F5, aby skompilować i uruchomić **debugowanie**. W eksperymentalnym wystąpieniu środowiska IDE izolowanej powłoki wybierz menu **Pomoc** . Upewnij się, że są wyświetlane polecenia **Wyświetl pomoc**, **Dodaj i Usuń zawartość pomocy** oraz **Ustaw polecenie preferencji pomocy** .
 
 4. W Eksplorator rozwiązań w projekcie ContosHelpShell w folderze Dostosowywanie powłoki Otwórz ContosoHelpShell. pkgdef. Aby zdefiniować wykaz pomocy firmy Contoso, Dodaj następujące wiersze:
 
@@ -773,7 +773,7 @@ Aby utworzyć rozszerzenie powłoki izolowanej:
     @="{4A791146-19E4-11D3-B86B-00C04F79F802}"
     ```
 
-6. W Eksplorator rozwiązań, w menu kontekstowym rozwiązania ContosoHelpShell wybierz element menu **Właściwości** . W obszarze **Właściwości konfiguracji**wybierz pozycję **Configuration Manager**. W kolumnie **Konfiguracja** Zmień wartości każdej "debug" na "Release".
+6. W Eksplorator rozwiązań, w menu kontekstowym rozwiązania ContosoHelpShell wybierz element menu **Właściwości** . W obszarze **Właściwości konfiguracji** wybierz pozycję **Configuration Manager**. W kolumnie **Konfiguracja** Zmień wartości każdej "debug" na "Release".
 
 7. Skompiluj rozwiązanie. Spowoduje to utworzenie zestawu plików w folderze wersji, który zostanie użyty w następnej sekcji.
 
@@ -822,7 +822,7 @@ Aby przetestować ten sposób jako jeśli został wdrożony:
 
 10. Uruchom aplikację contoso (z poziomu katalogu głównego aplikacji Contoso). W obszarze powłoki ISO wybierz element menu **Pomoc** i Zmień **preferencję Ustaw pomoc** na korzystanie z **pomocy lokalnej**.
 
-11. W obrębie powłoki wybierz element menu **Pomoc** , a następnie **Wyświetl pomoc**. Lokalna przeglądarka pomocy powinna zostać uruchomiona. Wybierz kartę **Zarządzanie zawartością** . W obszarze **Źródło instalacji**wybierz przycisk opcji **dysk** . Wybierz przycisk **...** i przejdź do folderu lokalnego zawierającego zawartość contoso (skopiowane do folderu lokalnego w powyższym kroku). Wybierz HelpContentSetup. msha. Firma Contoso powinna teraz być wyświetlana jako książka w wybranych książkach. Wybierz pozycję **Dodaj**, a następnie wybierz przycisk **Aktualizuj** (prawy dolny róg).
+11. W obrębie powłoki wybierz element menu **Pomoc** , a następnie **Wyświetl pomoc**. Lokalna przeglądarka pomocy powinna zostać uruchomiona. Wybierz kartę **Zarządzanie zawartością** . W obszarze **Źródło instalacji** wybierz przycisk opcji **dysk** . Wybierz przycisk **...** i przejdź do folderu lokalnego zawierającego zawartość contoso (skopiowane do folderu lokalnego w powyższym kroku). Wybierz HelpContentSetup. msha. Firma Contoso powinna teraz być wyświetlana jako książka w wybranych książkach. Wybierz pozycję **Dodaj**, a następnie wybierz przycisk **Aktualizuj** (prawy dolny róg).
 
 12. W środowisku IDE firmy Contoso wybierz klawisz F1, aby przetestować funkcję F1.
 
@@ -832,4 +832,4 @@ Aby uzyskać interfejs API środowiska uruchomieniowego, zobacz [interfejs API p
 
 Aby uzyskać więcej informacji na temat korzystania z interfejsu API pomocy, zobacz [przykłady kodu podglądu pomocy](https://marketplace.visualstudio.com/items?itemName=RobChandlerHelpMVP.HelpViewer20CodeExamples).
 
-Sugestie dotyczące funkcji można przesłać w [społeczności deweloperów](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
+Sugestie dotyczące funkcji można przesłać w [społeczności deweloperów](https://aka.ms/feedback/suggest?space=8).

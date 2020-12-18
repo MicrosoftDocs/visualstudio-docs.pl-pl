@@ -1,5 +1,5 @@
 ---
-title: Przegląd rozwiązań i projektów
+title: Informacje o rozwiązaniach i projektach
 description: Dowiedz się więcej o projektach i rozwiązaniach programu Visual Studio, sposobach tworzenia nowych projektów na podstawie szablonu oraz sposobie wyświetlania & zarządzania projektami w programie Eksplorator rozwiązań.
 ms.custom: SEO-VS-2020
 ms.date: 12/15/2020
@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1981bc5c9d1c2589607f355528c332d01284917e
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: 19d0d2fc862572fdf7226a78e0b34d0af0d57541
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97615756"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668095"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Rozwiązania i projekty w programie Visual Studio
 
@@ -51,7 +51,7 @@ Pliki projektu są oparte na [schemacie XML programu MSBuild](../msbuild/msbuild
 
 ## <a name="solutions"></a>Rozwiązania
 
-Projekt jest zawarty w *rozwiązaniu*. Pomimo nazwy, rozwiązanie nie jest "odpowiedzią". Jest to po prostu kontener dla co najmniej jednego powiązanego projektu, a także informacje o kompilacji, ustawienia okna programu Visual Studio oraz inne pliki, które nie są skojarzone z określonym projektem. Rozwiązanie jest opisane przez plik tekstowy (rozszerzenie *. sln*) z własnym unikatowym formatem; nie jest przeznaczona do edycji.
+Projekt jest zawarty w *rozwiązaniu*. Pomimo nazwy, rozwiązanie nie jest "odpowiedzią". Jest to po prostu kontener dla co najmniej jednego powiązanego projektu, a także informacje o kompilacji, ustawienia okna programu Visual Studio oraz inne pliki, które nie są skojarzone z określonym projektem.
 
 ### <a name="solution-file"></a>Plik rozwiązania
 
@@ -61,6 +61,9 @@ Program Visual Studio używa dwóch typów plików (*. sln* i *. suo*) do przech
 |---------------|----------|-----------------|
 |. sln|Rozwiązanie programu Visual Studio|Organizuje projekty, elementy projektu i elementy rozwiązania w rozwiązaniu.|
 |. suo|Opcje użytkownika rozwiązania|Przechowuje ustawienia i dostosowania na poziomie użytkownika, takie jak punkty przerwania.|
+
+> [!IMPORTANT]
+> Rozwiązanie jest opisane przez plik tekstowy (rozszerzenie *. sln*) z własnym unikatowym formatem; nie jest przeznaczona do edycji. Z kolei plik *. suo* to ukryty plik, który nie jest wyświetlany w domyślnych ustawieniach Eksploratora plików. Aby wyświetlić ukryte pliki, w menu **Widok** w Eksploratorze plików zaznacz pole wyboru **ukryte elementy** .
 
 ### <a name="solution-folder"></a>Folder rozwiązania
 

@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2410974ed95b1aa8dca3dc3e31a39c39df2d4a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bfe2b73f7f2ba771875355279043558f3c4cf105
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801441"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97667913"
 ---
 # <a name="how-to-change-fonts-colors-and-themes-in-visual-studio"></a>Instrukcje: zmienianie czcionek, kolorów i motywów w programie Visual Studio
 
@@ -61,7 +61,7 @@ Możesz zmienić czcionkę i rozmiar tekstu dla wszystkich okienek i narzędzi I
 
 1. Na pasku menu wybierz **Narzędzia**  >  **Opcje**.
 
-1. Na liście Opcje wybierz pozycję **Environment**  >  **czcionki i kolory**środowiska.
+1. Na liście Opcje wybierz pozycję   >  **czcionki i kolory** środowiska.
 
 1. Na liście **Pokaż ustawienia dla** wybierz **środowisko**.
 
@@ -78,7 +78,7 @@ Możesz zmienić czcionkę i rozmiar tekstu dla wszystkich okienek i narzędzi I
 
 1. Na pasku menu wybierz **Narzędzia**  >  **Opcje**.
 
-1. Na liście Opcje wybierz pozycję **Environment**  >  **czcionki i kolory**środowiska.
+1. Na liście Opcje wybierz pozycję   >  **czcionki i kolory** środowiska.
 
 1. Na liście **Pokaż ustawienia dla** wybierz opcję **Edytor tekstu**.
 
@@ -98,7 +98,7 @@ Jeśli napotkasz słabą wizję, są dostępne opcje motywu kolorów. Można uż
 
 Użyj jednej z następujących procedur, aby przełączyć opcję dużego kontrastu systemu Windows:
 
-- W systemie Windows lub w dowolnej aplikacji firmy Microsoft naciśnij **Left Alt**klawisz + **SHIFT**w lewym klawiszem Alt + **PrtScn** .
+- W systemie Windows lub w dowolnej aplikacji firmy Microsoft naciśnij klawisz + **SHIFT** w lewym klawiszem Alt +  .
 
 - W systemie Windows wybierz pozycję **Rozpocznij**  >  **Ustawienia**  >  **łatwość dostępu**  >  **wysoki kontrast**.
 
@@ -116,13 +116,13 @@ Poniższe procedury służą do przełączania opcji dodatkowego kontrastu progr
 Aby dowiedzieć się więcej o innych dostępnych opcjach ułatwień dostępu programu Visual Studio, zobacz [funkcje ułatwień dostępu programu Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md) .
 
 > [!TIP]
-> Jeśli istnieje opcja dostępności dla kolorów lub czcionek, które mogą być przydatne, ale nie są obecnie dostępne w programie Visual Studio, daj nam znać, wybierając pozycję **Sugeruj funkcję** w [społeczności deweloperów programu Visual Studio](https://developercommunity.visualstudio.com/). Aby uzyskać więcej informacji na temat tego forum i sposobu jego działania, zobacz stronę [Sugeruj funkcję](../ide/suggest-a-feature.md) .
+> Jeśli istnieje opcja dostępności dla kolorów lub czcionek, które mogą być przydatne, ale nie są obecnie dostępne w programie Visual Studio, daj nam znać, wybierając pozycję **Sugeruj funkcję** w [społeczności deweloperów programu Visual Studio](https://aka.ms/feedback/suggest?space=8). Aby uzyskać więcej informacji na temat tego forum i sposobu jego działania, zobacz stronę [Sugeruj funkcję](../ide/suggest-a-feature.md) .
 
 ## <a name="next-steps"></a>Następne kroki
 
 Aby dowiedzieć się więcej na temat wszystkich elementów interfejsu użytkownika, dla których można zmienić czcionkę i schematy kolorów, zobacz stronę [okna dialogowego czcionki i kolory, środowisko, opcje](../ide/reference/fonts-and-colors-environment-options-dialog-box.md) .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Instrukcje: zmiana czcionek i kolorów dla edytora w programie Visual Studio](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
 - [Funkcje edytora kodu programu Visual Studio](../ide/writing-code-in-the-code-and-text-editor.md)

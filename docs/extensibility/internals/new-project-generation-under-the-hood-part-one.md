@@ -1,5 +1,6 @@
 ---
 title: 'Nowa generacja projektu: pod okapem, część jednej | Microsoft Docs'
+description: Zapoznaj się ze szczegółowymi informacjami o tym, co się dzieje w programie Visual Studio Integrated Development Environment (IDE) podczas tworzenia własnego typu projektu (część 1 z 2).
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aca35e85e57a07a2b411a23d81b99cff9983b9c2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ec16895e71788f160e0ce6025f35b4dff02d7d2f
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707054"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668888"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Generowanie nowego projektu: szczegółowe informacje (część pierwsza)
 Kiedykolwiek myślisz, jak utworzyć własny typ projektu? Zastanawiasz się, co faktycznie się dzieje podczas tworzenia nowego projektu? Przyjrzyjmy się pod okap i zobacz, co naprawdę się dzieje.
@@ -36,7 +37,7 @@ Kiedykolwiek myślisz, jak utworzyć własny typ projektu? Zastanawiasz się, co
 ## <a name="the-new-project-dialog-box"></a>Okno dialogowe Nowy projekt
  Wszystko zaczyna się po wybraniu typu projektu dla nowego projektu. Zacznijmy od kliknięcia przycisku **Nowy projekt** w menu **plik** . Pojawi się okno dialogowe **Nowy projekt** , które wygląda następująco:
 
- ![Okno dialogowe Nowy projekt](../../extensibility/internals/media/newproject.gif "NewProject")
+ ![Zrzut ekranu przedstawiający okno dialogowe Nowy projekt.](../../extensibility/internals/media/newproject.gif)
 
  Przyjrzyjmy się temu bliżej. Drzewo **typy projektów** zawiera listę różnych typów projektów, które można utworzyć. Po wybraniu typu projektu, takiego jak **Visual C#**, zobaczysz listę szablonów aplikacji, które ułatwią rozpoczęcie pracy. **Zainstalowane szablony programu Visual Studio** są instalowane przez program Visual Studio i są dostępne dla każdego użytkownika komputera. Nowe szablony, które tworzysz lub zbierasz, można dodać do **moich szablonów** i są dostępne tylko dla Ciebie.
 
@@ -63,7 +64,7 @@ devenv /installvstemplates
  Pozycja i nazwy węzłów głównych **typu projektu** , takich jak **Visual C#** i **inne języki**, są określane przez wpisy rejestru systemowego. Organizacja węzłów podrzędnych, taka jak **baza danych** i **urządzenie inteligentne**, odzwierciedla hierarchię folderów zawierających odpowiednie pliki. vstemplate. Najpierw przyjrzyjmy się węzłom głównym.
 
 #### <a name="project-type-root-nodes"></a>Węzły główne typu projektu
- Gdy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] jest inicjowany, przechodzi podklucze rejestru systemowego HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\14.0\NewProjectTemplates\TemplateDirs, aby kompilować i nazwać węzły główne drzewa **typów projektu** . Te informacje są przechowywane w pamięci podręcznej do późniejszego użycia. Spójrz na klucz TemplateDirs \\ {FAE04EC1-301F-11D3-BF4B-00C04F79EFBC} \\ /1. Każdy wpis jest identyfikatorem GUID pakietu VSPackage. Nazwa podklucza (/1) jest ignorowana, ale jego obecność wskazuje, że jest to węzeł główny **typu projektu** . Węzeł główny może z kolei mieć kilka podkluczy kontrolujących jego wygląd w drzewie **typów projektu** . Przyjrzyjmy się niektórym z nich.
+ Gdy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] jest zainicjowany, przechodzi podklucze klucza rejestru systemu HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0\NewProjectTemplates\TemplateDirs, aby kompilować i nazwać węzły główne drzewa **typów projektu** . Te informacje są przechowywane w pamięci podręcznej do późniejszego użycia. Spójrz na klucz TemplateDirs \\ {FAE04EC1-301F-11D3-BF4B-00C04F79EFBC} \\ /1. Każdy wpis jest identyfikatorem GUID pakietu VSPackage. Nazwa podklucza (/1) jest ignorowana, ale jego obecność wskazuje, że jest to węzeł główny **typu projektu** . Węzeł główny może z kolei mieć kilka podkluczy kontrolujących jego wygląd w drzewie **typów projektu** . Przyjrzyjmy się niektórym z nich.
 
 ##### <a name="default"></a>(Domyślnie)
  Jest to identyfikator zasobu zlokalizowanego ciągu, który nazywa węzeł główny. Zasób ciągu znajduje się w satelickiej bibliotece DLL wybranej przez identyfikator GUID pakietu VSPackage.
@@ -88,7 +89,7 @@ devenv /installvstemplates
  Im mniejsza liczba priorytetów, tym większa pozycja w drzewie.
 
 ##### <a name="developeractivity"></a>Programowanie
- Jeśli ten podklucz jest obecny, położenie węzła głównego jest kontrolowane przez okno dialogowe Ustawienia dewelopera. Przykład:
+ Jeśli ten podklucz jest obecny, położenie węzła głównego jest kontrolowane przez okno dialogowe Ustawienia dewelopera. Na przykład
 
  Programowanie REG_SZ VC #
 
@@ -97,7 +98,7 @@ devenv /installvstemplates
 ##### <a name="folder"></a>Folder
  Jeśli ten podklucz jest obecny, węzeł główny będzie węzłem podrzędnym określonego folderu. W kluczu zostanie wyświetlona lista możliwych folderów
 
- HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\11.0\NewProjectTemplates\PseudoFolders
+ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\NewProjectTemplates\PseudoFolders
 
  Na przykład wpis projekty bazy danych ma klucz folderu pasujący do innego typu projektu w PseudoFolders. Dlatego w drzewie **typów projektu** **projekty bazy danych** będą węzłem podrzędnym **innych typów projektów**.
 
@@ -106,11 +107,11 @@ devenv /installvstemplates
 
  W przypadku programu Visual Studio z ustawieniami dewelopera C# drzewo **typów projektu** wygląda następująco:
 
- ![Typy projektów](../../extensibility/internals/media/projecttypes.png "ProjectTypes")
+ ![Zrzut ekranu drzewa folderów typów projektów w programie Visual Studio z ustawieniami dewelopera języka C#.](../../extensibility/internals/media/projecttypes.png)
 
  Odpowiedni folder ProjectTemplates wygląda następująco:
 
- ![Szablony projektów](../../extensibility/internals/media/projecttemplates.png "ProjectTemplates")
+ ![Zrzut ekranu drzewa folderów szablonów projektu w programie Visual Studio z ustawieniami dewelopera języka C#.](../../extensibility/internals/media/projecttemplates.png)
 
  Gdy zostanie otwarte okno dialogowe **Nowy projekt** , przejdziesz [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] do folderu ProjectTemplates i utworzysz jego strukturę w drzewie **typów projektu** z pewnymi zmianami:
 
@@ -208,9 +209,9 @@ devenv /installvstemplates
 
 10. Otwórz okno dialogowe **Nowy projekt** i rozwiń węzeł projektu **Visual C#** .
 
-    ![MyProjectNode](../../extensibility/internals/media/myprojectnode.png "MyProjectNode")
+    ![Zrzut ekranu przedstawiający drzewo folderów typów projektów w oknie dialogowym Nowy projekt z wyróżnioną pozycją MyProjectNode w rozwiniętym węźle projektu Visual C#.](../../extensibility/internals/media/myprojectnode.png)
 
     **MyProjectNode** pojawia się jako węzeł podrzędny języka Visual C# tuż pod węzłem systemu Windows.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Generowanie nowego projektu: szczegółowe informacje (część druga)](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

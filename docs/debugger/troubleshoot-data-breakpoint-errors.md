@@ -15,12 +15,12 @@ ms.author: waan
 manager: caslan
 ms.workload:
 - multiple
-ms.openlocfilehash: c9f06b72673ea73e68f6c224ec9734568d70e25a
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 4cded3bfdb6adc206f02ef54402964f4e7276f93
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852260"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668784"
 ---
 # <a name="troubleshooting-data-breakpoint-errors"></a>Rozwiązywanie problemów z błędami punktów przerwania danych
 Ta strona zawiera instrukcje dotyczące rozwiązywania typowych błędów, które pojawiają się podczas korzystania z funkcji "Przerwij przy zmianie wartości".
@@ -81,7 +81,7 @@ Architektura (Konfiguracja platformy), w której działa program, zawiera ograni
 
 ## <a name="provide-feedback"></a>Przekazywanie opinii
 
-Aby dowiedzieć się więcej na temat problemów lub sugestii dotyczących tej funkcji, skontaktuj się z pomocą techniczną, aby uzyskać pomoc w > wysłania opinii > [zgłosić problem](../ide/how-to-report-a-problem-with-visual-studio.md) w środowisku IDE lub [społeczności deweloperów](https://developercommunity.visualstudio.com/).
+Aby dowiedzieć się więcej na temat problemów lub sugestii dotyczących tej funkcji, skontaktuj się z pomocą techniczną, aby uzyskać pomoc w > wysłania opinii > [zgłosić problem](../ide/how-to-report-a-problem-with-visual-studio.md) w środowisku IDE lub [społeczności deweloperów](https://aka.ms/feedback/suggest?space=8).
 
 ## <a name="see-also"></a>Zobacz także
 

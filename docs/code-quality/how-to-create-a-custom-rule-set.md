@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6ad55d3d678a26489983bf276359f2141688272
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 69af1534740ddec2c804f0b7dafec61d985a4b24
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348817"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97667887"
 ---
 # <a name="customize-a-rule-set"></a>Dostosowywanie zestawu reguł
 
@@ -53,7 +53,7 @@ Aby utworzyć niestandardowy zestaw reguł, można otworzyć Wbudowany zestaw re
 4. Wybierz pozycję **Otwórz** , aby wyświetlić reguły w edytorze zestawu reguł.
 
 > [!NOTE]
-> Jeśli masz projekt .NET Core lub .NET Standard, proces jest nieco inny, ponieważ nie ma karty właściwości **analizy kodu** . Postępuj zgodnie z instrukcjami, aby [skopiować wstępnie zdefiniowany zestaw reguł do projektu i ustawić go jako aktywny zestaw reguł](/dotnet/fundamentals/code-analysis/code-quality-rule-options). Po skopiowaniu zestawu reguł można [go edytować w edytorze zestawu reguł programu Visual Studio](working-in-the-code-analysis-rule-set-editor.md) , otwierając go z **Eksplorator rozwiązań**.
+> Jeśli masz projekt .NET Core lub .NET Standard, proces jest nieco inny, ponieważ karta **Analiza kodu** we właściwościach projektu nie obsługuje tych samych opcji. Postępuj zgodnie z instrukcjami, aby [skopiować wstępnie zdefiniowany zestaw reguł do projektu i ustawić go jako aktywny zestaw reguł](/dotnet/fundamentals/code-analysis/code-quality-rule-options). Po skopiowaniu zestawu reguł można [go edytować w edytorze zestawu reguł programu Visual Studio](working-in-the-code-analysis-rule-set-editor.md) , otwierając go z **Eksplorator rozwiązań**.
 
 ## <a name="create-a-new-rule-set"></a>Utwórz nowy zestaw reguł
 
@@ -70,7 +70,7 @@ Nowy plik zestawu reguł można utworzyć przy użyciu okna dialogowego **nowy p
 ## <a name="create-a-custom-rule-set-from-multiple-rule-sets"></a>Tworzenie niestandardowego zestawu reguł na podstawie wielu zestawów reguł
 
 > [!NOTE]
-> Poniższa procedura nie dotyczy projektów platformy .NET Core, które nie mają karty właściwości **analizy kodu** .
+> Poniższa procedura nie dotyczy projektów .NET Core lub .NET Standard, które nie obsługują tych samych funkcji na karcie właściwości **analizy kodu** .
 
 1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt, a następnie wybierz polecenie **Właściwości**.
 
@@ -92,7 +92,7 @@ Nowy plik zestawu reguł można utworzyć przy użyciu okna dialogowego **nowy p
 
    ![Okno dialogowe Dodawanie lub usuwanie zestawów reguł](media/add-remove-rule-sets.png)
 
-5. Wybierz pozycję **Zapisz jako** , wprowadź nazwę pliku *. zestawu reguł* , a następnie wybierz pozycję **Zapisz**.
+5. Wybierz pozycję **Zapisz jako**, wprowadź nazwę pliku *. zestawu reguł* , a następnie wybierz pozycję **Zapisz**.
 
    Nowy zestaw reguł zostanie wybrany na liście **Uruchom ten zestaw reguł** .
 
@@ -138,7 +138,7 @@ Nowy plik zestawu reguł można utworzyć przy użyciu okna dialogowego **nowy p
 
 ## <a name="name-and-description"></a>Nazwa i opis
 
-Aby zmienić nazwę wyświetlaną zestawu reguł, który jest otwarty w edytorze, Otwórz okno **Właściwości** , wybierając **View**  >  **okno właściwości** widoku na pasku menu. Wprowadź nazwę wyświetlaną w polu **Nazwa** . Możesz również wprowadzić opis zestawu reguł.
+Aby zmienić nazwę wyświetlaną zestawu reguł, który jest otwarty w edytorze, Otwórz okno **Właściwości** , wybierając   >  **okno właściwości** widoku na pasku menu. Wprowadź nazwę wyświetlaną w polu **Nazwa** . Możesz również wprowadzić opis zestawu reguł.
 
 ## <a name="next-steps"></a>Następne kroki
 
@@ -147,7 +147,7 @@ Teraz, gdy masz zestaw reguł, następnym krokiem jest dostosowanie reguł poprz
 > [!div class="nextstepaction"]
 > [Modyfikuj reguły w edytorze zestawu reguł](../code-quality/working-in-the-code-analysis-rule-set-editor.md)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Instrukcje: Konfigurowanie analizy kodu dla projektu kodu zarządzanego](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
 - [Odwołanie zestawu reguł analizy kodu](../code-quality/rule-set-reference.md)

@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 348e3997f5136ab343639062f2b1d4dbdda08e78
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 99d8f93dc21925b997828adb541b7ee2f0337b6c
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136995"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668680"
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>Instrukcje: Ustawianie wielu projektów startowych
 
@@ -26,7 +26,7 @@ Program Visual Studio umożliwia określenie, jak w momencie uruchamiania debuge
 
 ## <a name="to-set-multiple-startup-projects"></a>Aby ustawić wiele projektów startowych
 
-1. W **Eksplorator rozwiązań**wybierz rozwiązanie (górny węzeł).
+1. W **Eksplorator rozwiązań** wybierz rozwiązanie (górny węzeł).
 
 2. Wybierz menu kontekstowe węzła rozwiązania (kliknij prawym przyciskiem myszy), a następnie wybierz polecenie **Właściwości**. Zostanie wyświetlone okno dialogowe **strony właściwości rozwiązania** .
 
@@ -34,8 +34,8 @@ Program Visual Studio umożliwia określenie, jak w momencie uruchamiania debuge
 
 4. Wybierz opcję **wiele projektów startowych** i ustaw odpowiednie akcje.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Kompilowanie i tworzenie kompilacji](../ide/compiling-and-building-in-visual-studio.md)
-- [Tworzenie rozwiązań i projektów](../ide/creating-solutions-and-projects.md)
+- [Praca z rozwiązaniami i projektami](../ide/creating-solutions-and-projects.md)
 - [Zarządzanie właściwościami projektów i rozwiązań](../ide/managing-project-and-solution-properties.md)

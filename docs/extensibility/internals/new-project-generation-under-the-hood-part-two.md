@@ -1,5 +1,6 @@
 ---
 title: 'Generowanie nowego projektu: pod okapem, część dwie | Microsoft Docs'
+description: Zapoznaj się ze szczegółowymi informacjami o tym, co się dzieje w programie Visual Studio Integrated Development Environment (IDE) podczas tworzenia własnego typu projektu (część 2 z 2).
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8692f2012e5f2733982f04e35a7fed415e49c636
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9e45c9643a1fd2e6dcf9d5520fbb2982736b5109
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707020"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668849"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>Generowanie nowego projektu: szczegółowe informacje (część druga)
 
@@ -68,7 +69,7 @@ namespace Simple
  Plik Basic. vstemplate ma ten format
 
 ```xml
-<VSTemplate Version="2.0.0"     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005"     Type="Project">
+<VSTemplate Version="2.0.0"     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005"     Type="Project">
     <TemplateData>
     </TemplateData>
     <TemplateContent>
@@ -90,13 +91,13 @@ namespace Simple
     <ProjectItem TargetFileName="Properties\Resources.resx">
       Resources.resx
     </ProjectItem>
-    <ProjectItem ReplaceParameters="true"       TargetFileName="Properties\Resources.Designer.cs">
+    <ProjectItem ReplaceParameters="true"       TargetFileName="Properties\Resources.Designer.cs">
       Resources.Designer.cs
     </ProjectItem>
     <ProjectItem TargetFileName="Properties\Settings.settings">
       Settings.settings
     </ProjectItem>
-    <ProjectItem ReplaceParameters="true"       TargetFileName="Properties\Settings.Designer.cs">
+    <ProjectItem ReplaceParameters="true"       TargetFileName="Properties\Settings.Designer.cs">
       Settings.Designer.cs
     </ProjectItem>
     <ProjectItem ReplaceParameters="true" OpenInEditor="true">
@@ -118,7 +119,7 @@ namespace Simple
 
  Wynikowa struktura folderów aplikacji systemu Windows wygląda następująco:
 
- ![SimpleSolution](../../extensibility/internals/media/simplesolution.png "SimpleSolution")
+ ![Zrzut ekranu przedstawiający strukturę folderów aplikacji systemu Windows dla rozwiązania "Simple" w programie Visual Studio Eksplorator rozwiązań.](../../extensibility/internals/media/simplesolution.png)
 
  Pierwszy i jedyny \<Project> tag w szablonie odczytuje:
 
@@ -154,7 +155,7 @@ namespace Simple
 </ItemGroup>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Generowanie nowego projektu: szczegółowe informacje (część pierwsza)](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)
 - [MSBuild](../../msbuild/msbuild.md)

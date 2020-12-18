@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfcdcfc309fb951b2f7e490f0d03dcfe9d381b83
-ms.sourcegitcommit: 54ec951bcfa87fd80a42e3ab4539084634a5ceb4
+ms.openlocfilehash: 3e30dcb6a9d65cb562851ed90e350530759975d2
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92116153"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668563"
 ---
 # <a name="developer-community-guidelines"></a>Wytyczne od społeczności deweloperów
 
@@ -21,7 +21,7 @@ Społeczność deweloperów śledzi problemy i sugestie funkcji dla programu Vis
 
 ## <a name="submitting-problems-and-suggestions"></a>Przesyłanie problemów i sugestii
 
-[Społeczność deweloperów programu Visual Studio](https://developercommunity.visualstudio.com/) śledzi problemy i sugestie dotyczące funkcji dla programu Visual Studio.
+[Społeczność deweloperów programu Visual Studio](https://aka.ms/feedback/suggest?space=8) śledzi problemy i sugestie dotyczące funkcji dla programu Visual Studio.
 
 ### <a name="before-submitting-an-issue"></a>Przed przesłaniem problemu
 
@@ -117,4 +117,4 @@ Komentarze i odpowiedzi są publicznie widoczne, ale wszystkie dołączone pliki
 
 ## <a name="next-steps"></a>Następne kroki
 
-Przejdź do [społeczności deweloperów programu Visual Studio](https://developercommunity.visualstudio.com/) , aby zgłosić problemy, zasugerować funkcje lub przejrzeć istniejące bilety. Owocnej pracy.
+Przejdź do [społeczności deweloperów programu Visual Studio](https://aka.ms/feedback/suggest?space=8) , aby zgłosić problemy, zasugerować funkcje lub przejrzeć istniejące bilety. Owocnej pracy.

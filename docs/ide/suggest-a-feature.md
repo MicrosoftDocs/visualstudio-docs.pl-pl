@@ -8,16 +8,16 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d8106463f306ddbc3fe6aefb337935cbe0d316c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a17f196f48b053f8b834b8fd25b8c0295e42b547
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88114217"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668901"
 ---
 # <a name="suggest-a-feature-for-visual-studio"></a>Zaproponuj funkcję programu Visual Studio
 
-Wprowadziliśmy nowe środowisko do sugerowania funkcji wraz z bieżącą możliwością zgłaszania problemów w [społeczności deweloperów programu Visual Studio](https://developercommunity.visualstudio.com). Jest to nowy sposób, aby można było mieć możliwość bezpośredniego zaangażowania się z przepływem pracy inżynierów programu Visual Studio.
+Wprowadziliśmy nowe środowisko do sugerowania funkcji wraz z bieżącą możliwością zgłaszania problemów w [społeczności deweloperów programu Visual Studio](https://aka.ms/feedback/suggest?space=8). Jest to nowy sposób, aby można było mieć możliwość bezpośredniego zaangażowania się z przepływem pracy inżynierów programu Visual Studio.
 
 ![Zaproponuj przycisk funkcji w społeczności deweloperów](media/suggest-a-feature/suggest-feature-button.png)
 
@@ -25,7 +25,7 @@ Możesz również uruchomić sugestię funkcji bezpośrednio z poziomu programu 
 
 ![Udostępnianie menu sugestii w programie Visual Studio](media/suggest-a-feature/provide-suggestion.png)
 
-Wybranie pozycji **Podaj sugestię** spowoduje przejście do [społeczności deweloperów](https://developercommunity.visualstudio.com), w której można wprowadzić sugestię.
+Wybranie pozycji **Podaj sugestię** spowoduje przejście do [społeczności deweloperów](https://aka.ms/feedback/suggest?space=8), w której można wprowadzić sugestię.
 
 ## <a name="user-voice"></a>User Voice
 
@@ -108,7 +108,7 @@ Znaleziono szukane informacje? Jeśli masz dodatkowe informacje, możesz poprosi
 
 - - -
 
-## <a name="faq"></a>Najczęściej zadawane pytania
+## <a name="faq"></a>Często zadawane pytania
 
 ### <a name="why-cant-i-see-my-user-voice-idea-in-developer-community"></a>Dlaczego nie mogę zobaczyć pomysłu dotyczącego głosu użytkownika w społeczności deweloperów?
 
@@ -134,6 +134,6 @@ W pełni zobowiązujemy się do nasłuchiwania sugestii dotyczących funkcji i p
 
 Czas odpowiedzi zależy od stanu opinii użytkownika. Przejrzyj wyjaśnienie stanu w tym dokumencie, aby zrozumieć czas odpowiedzi.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Wprowadzenie do "sugerowania funkcji" w społeczności deweloperów (blog programu Visual Studio)](https://devblogs.microsoft.com/visualstudio/introducing-suggest-a-feature-in-developer-community/?utm_source=vs_developer_news&utm_medium=referral)
