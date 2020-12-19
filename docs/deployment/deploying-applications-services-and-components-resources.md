@@ -4,7 +4,7 @@ titleSuffix: ''
 description: Dowiedz się więcej o opcjach publikowania aplikacji za pomocą narzędzia do publikowania.
 ms.custom:
 - SEO-VS-2020
-- contperfq1
+- contperf-fy21q1
 ms.date: 08/21/2020
 ms.topic: troubleshooting
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45fc0a58262a533416f630ede795d0060f9fc909
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 86a771b1eae096227a46378c8146e6aa5d9e2a06
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434496"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97683921"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>Wdrażanie aplikacji w folderze, usługach IIS, na platformie Azure lub w innym miejscu docelowym
 
@@ -221,7 +221,7 @@ Aby uzyskać pomoc dotyczącą rozwiązywania problemów ASP.NET Core w usługac
 
 ## <a name="import-profile"></a>Importuj profil
 
-Możesz zaimportować profil podczas publikowania w usługach IIS lub Azure App Service. Wdrożenie można skonfigurować przy użyciu *pliku ustawień publikowania* ( *\* . publishsettings* ). Plik ustawień publikowania jest tworzony przez usługi IIS lub Azure App Service lub można go utworzyć ręcznie, a następnie można go zaimportować do programu Visual Studio.
+Możesz zaimportować profil podczas publikowania w usługach IIS lub Azure App Service. Wdrożenie można skonfigurować przy użyciu *pliku ustawień publikowania* (*\* . publishsettings*). Plik ustawień publikowania jest tworzony przez usługi IIS lub Azure App Service lub można go utworzyć ręcznie, a następnie można go zaimportować do programu Visual Studio.
 
 Użycie pliku ustawień publikowania może uprościć konfigurację wdrożenia i działać lepiej w środowisku zespołu, a jednocześnie ręcznie skonfigurować każdy profil wdrożenia.
 
