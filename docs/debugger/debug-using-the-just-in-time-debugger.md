@@ -1,5 +1,7 @@
 ---
 title: Debugowanie przy użyciu debugera just-in-Time | Microsoft Docs
+description: Debuguj przy użyciu debugera just in Time w programie Visual Studio. Debugowanie just in time może automatycznie uruchamiać program Visual Studio w przypadku wystąpienia błędów lub awarii aplikacji.
+ms.custom: SEO-VS-2020
 ms.date: 09/24/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40b6a0e43a8d0980615087c946e5dd14deef1b0b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a03afa64d19e3ccd0efbb170b4305049f6bfee30
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350579"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761345"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Debugowanie przy użyciu debugera just-in-Time w programie Visual Studio
 
@@ -31,7 +33,7 @@ Debugowanie just in Time działa w przypadku aplikacji klasycznych systemu Windo
 >[!NOTE]
 >Aby włączyć lub wyłączyć debugowanie just-in-Time, musisz mieć uruchomiony program Visual Studio jako administrator. Włączenie lub wyłączenie debugowania just in Time ustawia klucz rejestru, a uprawnienia administratora mogą być wymagane do zmiany tego klucza. Aby otworzyć program Visual Studio jako administrator, kliknij prawym przyciskiem myszy aplikację Visual Studio i wybierz polecenie **Uruchom jako administrator**.
 
-Debugowanie just in time można skonfigurować za pomocą okna dialogowego Opcje **narzędzi**programu Visual Studio  >  **Options** (lub **Debug**  >  **Opcje**debugowania).
+Debugowanie just in time można skonfigurować za pomocą okna dialogowego Opcje **narzędzi** programu Visual Studio  >   (lub   >  **Opcje** debugowania).
 
 **Aby włączyć lub wyłączyć debugowanie just in Time:**
 
@@ -39,9 +41,9 @@ Debugowanie just in time można skonfigurować za pomocą okna dialogowego Opcje
 
    ![Włącz lub Wyłącz debugowanie JIT](../debugger/media/dbg-jit-enable-or-disable.png "Włącz lub Wyłącz debugowanie JIT")
 
-1. W polu **Włącz debugowanie just in Time dla tych typów kodu** wybierz typy kodu, które mają być debugowane debugowania just-in-Time: **zarządzane**, **natywne**i/lub **skrypt**.
+1. W polu **Włącz debugowanie just in Time dla tych typów kodu** wybierz typy kodu, które mają być debugowane debugowania just-in-Time: **zarządzane**, **natywne** i/lub **skrypt**.
 
-1. Wybierz przycisk **OK**.
+1. Wybierz pozycję **OK**.
 
 Jeśli włączysz debuger just in Time, ale nie zostanie on otwarty w przypadku awarii lub błędów aplikacji, zobacz [Rozwiązywanie problemów z debugowaniem just in Time](#jit_errors).
 
@@ -55,17 +57,17 @@ Debugowanie just in Time nadal może być włączone nawet wtedy, gdy program Vi
 
 2. W oknie **Edytor rejestru** zlokalizuj i Usuń następujące wpisy rejestru:
 
-    - **HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft \\ . NETFramework\DbgManagedDebugger**
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\ . NETFramework\DbgManagedDebugger**
 
-    - **HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
 
     ![Klucz rejestru JIT](../debugger/media/dbg-jit-registry.png "Klucz rejestru JIT")
 
 3. Jeśli na komputerze jest uruchomiony 64-bitowy system operacyjny, Usuń również następujące wpisy rejestru:
 
-    - **HKEY_LOCAL_MACHINE \SOFTWARE\Wow6432Node\Microsoft \\ . NETFramework\DbgManagedDebugger**
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\ . NETFramework\DbgManagedDebugger**
 
-    - **HKEY_LOCAL_MACHINE \SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
 
     Pamiętaj, aby nie usuwać ani zmieniać żadnych innych kluczy rejestru.
 
@@ -79,7 +81,7 @@ Domyślnie aplikacje formularzy systemu Windows mają program obsługi wyjątkó
 
 Aby włączyć debugowanie just in Time zamiast standardowej obsługi błędów formularzy systemu Windows, Dodaj następujące ustawienia:
 
-- W `system.windows.forms` sekcji pliku *machine.config* lub * \<app name>.exe.config* Ustaw `jitDebugging` wartość na `true` :
+- W `system.windows.forms` sekcji pliku *machine.config* lub *\<app name>.exe.config* Ustaw `jitDebugging` wartość na `true` :
 
     ```xml
     <configuration>
@@ -100,7 +102,7 @@ Ten przykład przeprowadzi Cię przez debugowanie just in Time, gdy aplikacja zg
 
 - Aby wykonać te kroki, musisz mieć zainstalowany program Visual Studio. Jeśli nie masz programu Visual Studio, możesz pobrać bezpłatny [program Visual Studio Community Edition](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15).
 
-- Upewnij się, że debugowanie just in time jest [włączone](#BKMK_Enabling) w **Tools**  >  **opcjach**narzędzi  >  **debugowanie**  >  **just in Time**.
+- Upewnij się, że debugowanie just in time jest [włączone](#BKMK_Enabling) w   >  **opcjach** narzędzi  >  **debugowanie**  >  **just in Time**.
 
 W tym przykładzie utworzysz aplikację konsolową w języku C# w programie Visual Studio, która zgłasza [NullReferenceException](/dotnet/api/system.nullreferenceexception).
 
@@ -128,19 +130,19 @@ W tym przykładzie utworzysz aplikację konsolową w języku C# w programie Visu
 
    Powinno zostać wyświetlone następujące okno poleceń:
 
-   ![ThrowsNullExceptionConsole](../debugger/media/throwsnullexceptionconsole.png "ThrowsNullExceptionConsole")
+   ![Zrzut ekranu konsoli programu dla ThrowsNullException.exe, który zgłasza nieobsługiwany wyjątek odwołania o wartości null (System. NullReferenceException).](../debugger/media/throwsnullexceptionconsole.png)
 
 1. Zostanie otwarte okno dialogowe **Wybierz debuger just in Time** .
 
-   ![JustInTimeDialog](../debugger/media/justintimedialog.png "JustInTimeDialog")
+   ![Zrzut ekranu okna dialogowego wybierz debuger just in Time, który pojawia się po pojawieniu się wyjątku w oknie konsoli ThrowsNullException.exe.](../debugger/media/justintimedialog.png)
 
-   W obszarze **dostępne debugery**wybierz pozycję ** \<your preferred Visual Studio version/edition> nowe wystąpienie **, jeśli nie została jeszcze wybrana.
+   W obszarze **dostępne debugery** wybierz pozycję **\<your preferred Visual Studio version/edition> nowe wystąpienie**, jeśli nie została jeszcze wybrana.
 
-1. Wybierz przycisk **OK**.
+1. Wybierz pozycję **OK**.
 
    Projekt ThrowsNullException zostanie otwarty w nowym wystąpieniu programu Visual Studio, a wykonywanie zostało zatrzymane w wierszu, który wywołał wyjątek:
 
-   ![NullReferenceSecondInstance](../debugger/media/nullreferencesecondinstance.png "NullReferenceSecondInstance")
+   ![Zrzut ekranu przedstawiający projekt ThrowsNullException w programie Visual Studio z wyróżnieniem wiersza kodu źródłowego, który wywołał wyjątek.](../debugger/media/nullreferencesecondinstance.png)
 
 Debugowanie można rozpocząć od tego momentu. W przypadku debugowania rzeczywistej aplikacji należy dowiedzieć się, dlaczego kod zgłasza wyjątek.
 
@@ -153,21 +155,21 @@ Jeśli debugowanie just in Time nie rozpocznie się, gdy aplikacja ulega awarii,
 
 - Raportowanie błędów systemu Windows może przejąć obsługę błędów na komputerze.
 
-  Aby rozwiązać ten problem, użyj Edytora rejestru w celu dodania **wartości DWORD** z **wyłączonymi** **danymi o wartości** **1**do następujących kluczy rejestru:
+  Aby rozwiązać ten problem, użyj Edytora rejestru w celu dodania **wartości DWORD** z **wyłączonymi** **danymi o wartości** **1** do następujących kluczy rejestru:
 
-  - **Raportowanie błędów \Software\Microsoft\Windows\Windows HKEY_LOCAL_MACHINE**
+  - **HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\Windows Error Reporting**
 
-  - (Dla maszyn 64-bitowych): **HKEY_LOCAL_MACHINE \Software\wow6432node\microsoft\windows\windows raportowanie błędów**
+  - (Dla maszyn 64-bitowych): **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows Error Reporting**
 
   Aby uzyskać więcej informacji, zobacz [. Ustawienia raportowania błędów systemu Windows](/windows/desktop/wer/wer-settings).
 
 - Znany problem z systemem Windows może spowodować niepowodzenie debugera just in Time.
 
-  Poprawka polega na dodaniu **wartości DWORD** z danymi **o** **wartości** **1**do następujących kluczy rejestru:
+  Poprawka polega na dodaniu **wartości DWORD** z danymi **o** **wartości** **1** do następujących kluczy rejestru:
 
-  - **HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug**
+  - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug**
 
-  - (Dla maszyn 64-bitowych): **HKEY_LOCAL_MACHINE \Software\wow6432node\microsoft\windows NT\CurrentVersion\AeDebug**
+  - (Dla maszyn 64-bitowych): **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug**
 
 Podczas debugowania just in Time mogą pojawić się następujące komunikaty o błędach:
 
@@ -175,7 +177,7 @@ Podczas debugowania just in Time mogą pojawić się następujące komunikaty o 
 
     Debuger podjął próbę dołączenia do procesu działającego w innym użytkowniku.
 
-    Aby obejść ten problem, w programie Visual Studio Otwórz pozycję **Debuguj**  >  **dołączanie do procesu**i Znajdź proces, który chcesz debugować, na liście **dostępne procesy** . Jeśli nie znasz nazwy procesu, Znajdź identyfikator procesu w oknie dialogowym **debuger just in Time programu Visual Studio** . Wybierz proces z listy **dostępne procesy** , a następnie wybierz pozycję **Dołącz**. Wybierz pozycję **nie** , aby odrzucić okno dialogowe debugera just in Time.
+    Aby obejść ten problem, w programie Visual Studio Otwórz pozycję **Debuguj**  >  **dołączanie do procesu** i Znajdź proces, który chcesz debugować, na liście **dostępne procesy** . Jeśli nie znasz nazwy procesu, Znajdź identyfikator procesu w oknie dialogowym **debuger just in Time programu Visual Studio** . Wybierz proces z listy **dostępne procesy** , a następnie wybierz pozycję **Dołącz**. Wybierz pozycję **nie** , aby odrzucić okno dialogowe debugera just in Time.
 
 - **Nie można uruchomić debugera, ponieważ żaden użytkownik nie jest zalogowany.**
 

@@ -1,6 +1,6 @@
 ---
 title: Debugowanie maszyn wirtualnych i zestawów skalowania na żywo usługi Live ASP.NET
-description: Dowiedz się, jak ustawić punkty przyciągania i wyświetlić migawki przy użyciu Snapshot Debugger.
+description: Dowiedz się, w jaki sposób używać Snapshot Debugger w programie Visual Studio, aby ustawiać punkty przyciągania i wykonywać migawki podczas debugowania aplikacji Live ASP.NET na maszynach wirtualnych i zestawach skalowania platformy Azure.
 ms.custom: SEO-VS-2020
 ms.date: 02/06/2019
 ms.topic: how-to
@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 040fdee43262279a834978a4619b62fb62b10345
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 9ed85616080859cd69c44c66b442f3f46d81f51a
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809560"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846952"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>Debuguj aplikacje Live ASP.NET na maszynach wirtualnych platformy Azure i w zestawach skalowania maszyn wirtualnych platformy Azure przy użyciu Snapshot Debugger
 
@@ -104,7 +104,7 @@ Po ustawieniu punkt przyciągania można ręcznie wygenerować migawkę, przecho
 
     ![Sprawdzanie danych migawek](../debugger/media/snapshot-inspect-data.png)
 
-    Z tego widoku można przesuwać się nad zmiennymi, aby wyświetlać etykietki danych, korzystać z okien zmiennych **lokalnych**, **zegarki**i **stosu wywołań** , a także szacować wyrażenia.
+    Z tego widoku można przesuwać się nad zmiennymi, aby wyświetlać etykietki danych, korzystać z okien zmiennych **lokalnych**, **zegarki** i **stosu wywołań** , a także szacować wyrażenia.
 
     Sama witryna sieci Web jest nadal na żywo, a użytkownicy końcowi nie mają do nich wpływu. Tylko jedna migawka jest domyślnie przechwytywana na punkt przyciągania: Po przechwyceniu migawki punkt przyciągania wyłączone. Jeśli chcesz przechwycić kolejną migawkę w punkt przyciągania, możesz włączyć punkt przyciągania ponownie, klikając polecenie **Aktualizuj kolekcję**.
 

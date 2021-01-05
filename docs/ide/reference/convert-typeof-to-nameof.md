@@ -1,5 +1,6 @@
 ---
 title: Konwertuj element typeof na element nameof
+description: Dowiedz się, jak używać menu szybkie akcje i refaktoryzacje w programie Visual Studio, aby konwertować typeof na nameof w języku C# i GetType do NameOf w Visual Basic.
 ms.date: 08/12/2020
 ms.topic: reference
 author: m-redding
@@ -10,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 96bd4d67302fb09e5c1cb7837ad73b345ad88c81
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: ce76b82e2ebc68634be7cf4d463f6b8216d81e06
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400327"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761202"
 ---
 # <a name="convert-typeof-to-nameof"></a>Konwertuj `typeof` na `nameof`
 
@@ -39,10 +40,10 @@ To Refaktoryzacja dotyczy:
 3. Wybierz jedną z następujących opcji:
 
     - C#
-      <br>Wybierz opcję **Konwertuj modyfikator "typeof" na "nameof"** : ![ Konwertuj element typeof na nameof](media/convert-type-of.PNG)
+      <br>Wybierz opcję **Konwertuj modyfikator "typeof" na "nameof"**: ![ zrzut ekranu przedstawiający menu szybkie akcje i refaktoryzacje w programie Visual Studio z wybraną opcją Konwertuj wartość "typeof" na wartość "nameof", a pokazane zmiany kodu w języku C#.](media/convert-type-of.PNG)
 
     - Visual Basic
-      <br>Wybierz pozycję **Konwertuj "GetType" na "nameof"** : ![ Konwertuj element typeof na nameof](media/convert-get-type.PNG)
+      <br>Wybierz pozycję **Konwertuj "GetType" na "nameof"**: ![ zrzut ekranu przedstawiający menu szybkie akcje i refaktoryzacje w programie Visual Studio z wybraną opcją Konwertuj wartość "GetType" na wartość "NameOf" i Visual Basic wyświetlenia zmian w kodzie.](media/convert-get-type.PNG)
 
 ## <a name="see-also"></a>Zobacz też
 

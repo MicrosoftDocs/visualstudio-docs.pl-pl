@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d743749ebf1c31c25345c89922fee2434c3284bd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 49da1f46ee5e182741d3aaa56432faac39bfe0f1
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86386735"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833289"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Tworzenie kodu w programie Visual Studio
 
@@ -76,7 +76,7 @@ Analizatory kodu szukają typowych problemów z kodem, które mogą prowadzić d
 
 Program Visual Studio zawiera wbudowany zestaw [.NET compiler platform analizatorów](../code-quality/roslyn-analyzers-overview.md) , które sprawdzają kod C# i Visual Basic podczas pisania. Dodatkowe analizatory można zainstalować jako rozszerzenie programu Visual Studio lub jako pakiet NuGet. Jeśli zostaną znalezione naruszenia zasad, są one raportowane zarówno w Lista błędów, jak i w edytorze kodu jako zygzak w kodzie nieprawidłowym.
 
-### <a name="c-code-analysis"></a>Analiza kodu w języku C++
+### <a name="c-code-analysis"></a>Analiza kodu C++
 
 Aby analizować kod języka C++, uruchom [analizę kodu statycznego](/cpp/code-quality/quick-start-code-analysis-for-c-cpp). Zapoznaj się z wykonywać, aby uruchomić go po usunięciu oczywistych błędów, które uniemożliwiają pomyślne skompilowanie, i Poświęć trochę czasu na wygenerowanie ostrzeżeń. Zarządzaniem mu towarzyszą się na siebie i możesz poznać kilka technik stylu kodu.
 
@@ -146,13 +146,13 @@ Aby uzyskać więcej informacji na temat używania punktów przerwania, przeczyt
 
 Gdy uruchomiony kod trafi punkt przerwania i zatrzymuje, wiersz kodu oznaczony kolorem żółtym (Bieżąca instrukcja) nie został jeszcze wykonany. W tym momencie możesz chcieć wykonać bieżącą instrukcję, a następnie sprawdzić zmienione wartości. Aby wykonać kod w debugerze, można użyć kilku poleceń *kroków* . Jeśli oznaczony kod jest wywołaniem metody, możesz przejść do niego, naciskając klawisz **F11**. Możesz również *przekroczyć* linię kodu, naciskając klawisz **F10**. Aby uzyskać dodatkowe polecenia i szczegółowe informacje na temat sposobu przechodzenia przez kod, Przeczytaj [Przechodzenie do kodu za pomocą debugera](../debugger/navigating-through-code-with-the-debugger.md).
 
-![Inspekcja wartości w czasie wykonywania programu Visual Studio](../ide/media/vs_ide_gs_debug_hit_breakpoint.png)
+![Zrzut ekranu przedstawiający okno programu Visual Studio Code. Czerwona kropka na lewym marginesie wskazuje punkt przerwania w wierszu kodu oznaczonym kolorem żółtym.](../ide/media/vs_ide_gs_debug_hit_breakpoint.png)
 
 Na powyższej ilustracji możesz przejść do jednej instrukcji debugera, naciskając klawisz **F10** lub **F11** (ponieważ w tym miejscu nie ma żadnego wywołania metody, oba polecenia mają ten sam wynik).
 
 Gdy debuger jest wstrzymany, można sprawdzić zmienne i wywoływać stosy, aby określić, co się dzieje. Czy wartości w zakresach powinny być widoczne? Czy wywołania są wykonywane w odpowiedniej kolejności?
 
-![Inspekcja wartości w czasie wykonywania programu Visual Studio](../ide/media/vs_ide_gs_debug_inspect_value.png)
+![Zrzut ekranu przedstawiający okno programu Visual Studio Code. W wierszu kodu oznaczonym kolorem żółtym zaznaczona jest zmienna, a na liście rozwijanej zostanie wyświetlona jego bieżąca wartość i odwołania.](../ide/media/vs_ide_gs_debug_inspect_value.png)
 
 Umieść kursor nad zmienną, aby zobaczyć jej bieżącą wartość i odwołania. Jeśli zobaczysz nieoczekiwaną wartość, prawdopodobnie masz usterkę w powyższym lub wywoływanym kodzie. Aby uzyskać bardziej szczegółowe informacje dotyczące debugowania, [Dowiedz się więcej](../debugger/debugger-feature-tour.md) o korzystaniu z debugera.
 

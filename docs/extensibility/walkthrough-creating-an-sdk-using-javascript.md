@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: Tworzenie zestawu SDK przy użyciu języka JavaScript | Microsoft Docs'
+description: Dowiedz się, jak używać języka JavaScript do tworzenia prostego zestawu SDK matematycznego jako rozszerzenia programu Visual Studio za pomocą tego przewodnika.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: a8c89d5d-5b78-4435-817f-c5f25ca6d715
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 29dac6cca7936dde8be2ebc57366f6370b8bcbc6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd138638a1f8bb4c0fe8dc73504059f0c9dd4023
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904946"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97862918"
 ---
 # <a name="walkthrough-create-an-sdk-using-javascript"></a>Przewodnik: Tworzenie zestawu SDK przy użyciu języka JavaScript
 W tym instruktażu przedstawiono sposób użycia języka JavaScript w celu utworzenia prostego zestawu Math SDK jako rozszerzenia programu Visual Studio (VSIX).  Przewodnik jest podzielony na te części:
@@ -35,11 +37,11 @@ W tym instruktażu przedstawiono sposób użycia języka JavaScript w celu utwor
 
 3. W polu tekstowym **Nazwa** Określ `SimpleMathVSIX` i wybierz przycisk **OK** .
 
-4. Jeśli zostanie wyświetlony **Kreator pakietu programu Visual Studio** , wybierz przycisk **dalej** na stronie **powitalnej** , a następnie na **stronie 1.7**wybierz przycisk **Zakończ** .
+4. Jeśli zostanie wyświetlony **Kreator pakietu programu Visual Studio** , wybierz przycisk **dalej** na stronie **powitalnej** , a następnie na **stronie 1.7** wybierz przycisk **Zakończ** .
 
      Mimo że **projektant manifestu** zostanie otwarty, utrzymujemy ten Instruktaż, modyfikując plik manifestu bezpośrednio.
 
-5. W **Eksplorator rozwiązań**Otwórz menu skrótów dla pliku **source. Extension. vsixmanifest** , a następnie wybierz polecenie **Wyświetl kod**. Użyj tego kodu, aby zastąpić istniejącą zawartość pliku.
+5. W **Eksplorator rozwiązań** Otwórz menu skrótów dla pliku **source. Extension. vsixmanifest** , a następnie wybierz polecenie **Wyświetl kod**. Użyj tego kodu, aby zastąpić istniejącą zawartość pliku.
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -61,11 +63,11 @@ W tym instruktażu przedstawiono sposób użycia języka JavaScript w celu utwor
     </PackageManifest>
     ```
 
-6. W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu **SimpleMathVSIX** , a następnie wybierz polecenie **Dodaj**  >  **nowy element**.
+6. W **Eksplorator rozwiązań** Otwórz menu skrótów dla projektu **SimpleMathVSIX** , a następnie wybierz polecenie **Dodaj**  >  **nowy element**.
 
 7. W kategorii **dane** wybierz pozycję **plik XML**, Nazwij plik `SDKManifest.xml` , a następnie wybierz przycisk **Dodaj** .
 
-8. W **Eksplorator rozwiązań**Otwórz menu skrótów dla pliku **SDKManifest.xml** , a następnie wybierz **Otwórz** , aby wyświetlić plik w **edytorze XML**.
+8. W **Eksplorator rozwiązań** Otwórz menu skrótów dla pliku **SDKManifest.xml** , a następnie wybierz **Otwórz** , aby wyświetlić plik w **edytorze XML**.
 
 9. Dodaj następujący kod do pliku **SDKManifest.xml** .
 
@@ -94,7 +96,7 @@ W tym instruktażu przedstawiono sposób użycia języka JavaScript w celu utwor
 
      *\Redist\CommonConfiguration\Neutral\SimpleMath\js\\*
 
-14. W menu skrótów dla folderu **\js \\ ** wybierz pozycję **Dodaj**  >  **nowy element**.
+14. W menu skrótów dla folderu **\js \\** wybierz pozycję **Dodaj**  >  **nowy element**.
 
 15. W obszarze **elementy Visual C#** wybierz kategorię **Sieć Web** , a następnie wybierz element **plik JavaScript** . Nazwij plik `arithmetic.js` , a następnie wybierz przycisk **Dodaj** .
 
@@ -132,7 +134,7 @@ W tym instruktażu przedstawiono sposób użycia języka JavaScript w celu utwor
 
 18. W **Eksplorator rozwiązań**, w menu skrótów dla projektu **SimpleMathVSIX** , wybierz polecenie **Kompiluj**.
 
-19. Po pomyślnym zakończeniu kompilacji w menu skrótów projektu wybierz polecenie **Otwórz folder w Eksploratorze plików**. Przejdź do **\bin\debug \\ **, a następnie uruchom polecenie, `SimpleMathVSIX.vsix` Aby go zainstalować.
+19. Po pomyślnym zakończeniu kompilacji w menu skrótów projektu wybierz polecenie **Otwórz folder w Eksploratorze plików**. Przejdź do **\bin\debug \\**, a następnie uruchom polecenie, `SimpleMathVSIX.vsix` Aby go zainstalować.
 
 20. Wybierz przycisk **Instaluj** i pozwól na ukończenie instalacji.
 
@@ -142,17 +144,17 @@ W tym instruktażu przedstawiono sposób użycia języka JavaScript w celu utwor
 
 1. Na pasku menu wybierz pozycję **plik**  >  **Nowy**  >  **projekt**.
 
-2. Na liście kategorii szablonów w obszarze **JavaScript**wybierz pozycję **Sklep Windows**, a następnie wybierz szablon **pustej aplikacji** .
+2. Na liście kategorii szablonów w obszarze **JavaScript** wybierz pozycję **Sklep Windows**, a następnie wybierz szablon **pustej aplikacji** .
 
 3. W polu **Nazwa** Określ `ArithmeticUI` . Wybierz przycisk **OK** .
 
-4. W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu **ArithmeticUI** , a następnie wybierz **Dodaj**  >  **odwołanie**.
+4. W **Eksplorator rozwiązań** Otwórz menu skrótów dla projektu **ArithmeticUI** , a następnie wybierz **Dodaj**  >  **odwołanie**.
 
-5. W obszarze **Windows**wybierz **rozszerzenia**i Zauważ, że jest wyświetlana **prosta matematyczna** .
+5. W obszarze **Windows** wybierz **rozszerzenia** i Zauważ, że jest wyświetlana **prosta matematyczna** .
 
 6. Zaznacz pole wyboru **proste wyrażenie matematyczne** , a następnie wybierz przycisk **OK** .
 
-7. W **Eksplorator rozwiązań**w obszarze **odwołania**należy zauważyć, że jest wyświetlane **proste odwołanie matematyczne** . Rozwiń go i zwróć uwagę na to, że istnieje folder **\js \\ ** , który zawiera **arithmetic.js**. Możesz otworzyć **arithmetic.js** , aby upewnić się, że kod źródłowy został zainstalowany.
+7. W **Eksplorator rozwiązań** w obszarze **odwołania** należy zauważyć, że jest wyświetlane **proste odwołanie matematyczne** . Rozwiń go i zwróć uwagę na to, że istnieje folder **\js \\** , który zawiera **arithmetic.js**. Możesz otworzyć **arithmetic.js** , aby upewnić się, że kod źródłowy został zainstalowany.
 
 8. Użyj poniższego kodu, aby zamienić zawartość *default.htm*.
 

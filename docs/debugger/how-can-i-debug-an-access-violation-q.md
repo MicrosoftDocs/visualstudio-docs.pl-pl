@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b0fb7e6f5ae71cf336f9fe206bc7b0208566b615
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: 1786085e2f68a1d1196158ac56a62b87b80858be
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398574"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761371"
 ---
 # <a name="how-can-i-debug-a-c-access-violation"></a>Jak debugować naruszenie zasad dostępu w języku C++?
 
@@ -76,9 +76,9 @@ int main() {
 
 W przypadku uruchomienia tego kodu w programie Visual Studio 2015 Update 1 powinno zostać wyświetlone następujące okno dialogowe wyjątku:
 
-![AccessViolationCPlus](../debugger/media/accessviolationcplus.png "AccessViolationCPlus")
+![Zrzut ekranu przedstawiający okno dialogowe wyjątku Microsoft Visual Studio, w którym podano naruszenie dostępu do odczytu dla elementu "A->B nullptr". Wybrano przycisk Przerwij.](../debugger/media/accessviolationcplus.png)
 
 Jeśli nie możesz określić, dlaczego wskaźnik spowodował naruszenie zasad dostępu, śledź kod, aby upewnić się, że wskaźnik powodujący problem został poprawnie przypisany.  Jeśli jest ona przenoszona jako parametr, upewnij się, że jest prawidłowo przenoszona i nie utworzysz przypadkowo [kopii płytki](https://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy). Następnie sprawdź, czy wartości nie są przypadkowo zmieniane w programie, tworząc punkt przerwania danych dla danego wskaźnika, aby upewnić się, że nie jest on modyfikowany w innym miejscu programu. Aby uzyskać więcej informacji na temat punktów przerwania danych, zobacz sekcję punkt przerwania danych w temacie [Używanie punktów przerwania](../debugger/using-breakpoints.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Debugowanie często zadawanych pytań dotyczących kodu natywnego](../debugger/debugging-native-code-faqs.md)

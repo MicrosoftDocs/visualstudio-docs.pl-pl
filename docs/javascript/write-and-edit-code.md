@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a033c0fe1fd80edc7959c5f49993714982ecc805
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd1b12be2dba1526301cd0ea9a4356fb9cc14c14
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238183"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815740"
 ---
 # <a name="learn-to-use-the-code-editor-for-javascript"></a>Dowiedz się, jak używać edytora kodu dla języka JavaScript
 
@@ -40,11 +40,11 @@ Aby dodać nowe pliki do projektu, można użyć IDE.
 
 Technologia IntelliSense jest niecennym zasobem podczas kodowania. Można wyświetlić informacje o dostępnych elementach członkowskich typu lub szczegółach parametrów dla różnych przeciążeń metody. W poniższym kodzie, gdy wpiszesz `Router()` , zobaczysz typy argumentów, które można przekazać. Jest to tzw. Pomoc dotycząca podpisu.
 
-![Korzystanie z funkcji IntelliSense](../javascript/media/write-code-signature-checking.png)
+![Zrzut ekranu przedstawiający okno programu Visual Studio Code z wprowadzanym kodem JavaScript. Informacje o technologii IntelliSense są wyświetlane dla funkcji router ().](../javascript/media/write-code-signature-checking.png)
 
 Możesz również użyć funkcji IntelliSense, aby zakończyć wyraz po wpisaniu wystarczającej liczby znaków, aby odróżnić go. Jeśli umieścisz kursor po `data` ciągu w poniższym kodzie i typie `get` , funkcja IntelliSense wyświetli funkcje zdefiniowane wcześniej w kodzie lub zdefiniowane w bibliotece innej firmy, która została dodana do projektu.
 
-![Korzystanie z funkcji IntelliSense](../javascript/media/write-code-intellisense.png)
+![Zrzut ekranu przedstawiający okno programu Visual Studio Code z wprowadzonym słowem "Get". Informacje IntelliSense są wyświetlane dla wszystkich funkcji rozpoczynających się od "Get".](../javascript/media/write-code-intellisense.png)
 
 Funkcja IntelliSense może również wyświetlać informacje o typach po umieszczeniu wskaźnika myszy na elementach programistycznych.
 
@@ -100,7 +100,7 @@ Zamknij okno Definicja wglądu, wybierając małe pole z symbolem "x" w prawym g
 
 Program Visual Studio oferuje przydatne *fragmenty kodu* , za pomocą których można szybko i łatwo generować często używane bloki kodu. [Fragmenty kodu](../ide/code-snippets.md) są dostępne dla różnych języków programowania, w tym JavaScript. Dodajmy `for` pętlę do pliku z kodem.
 
-Umieść kursor w miejscu, w którym chcesz wstawić fragment kodu, kliknij prawym przyciskiem myszy **i wybierz Wstaw fragment kodu**  >  **Insert Snippet**.
+Umieść kursor w miejscu, w którym chcesz wstawić fragment kodu, kliknij prawym przyciskiem myszy **i wybierz Wstaw fragment kodu**  >  .
 
 ![Fragment kodu w programie Visual Studio](../javascript/media/write-code-insert-snippet.png)
 
@@ -116,7 +116,7 @@ for (var i = 0; i < length; i++) {
 }
 ```
 
-Możesz sprawdzić dostępne fragmenty kodu dla danego języka, wybierając pozycję **Edytuj**  >  **IntelliSense**  >  **wstawkę**IntelliSense, a następnie wybierając folder języka.
+Możesz sprawdzić dostępne fragmenty kodu dla danego języka, wybierając pozycję **Edytuj**  >    >  **wstawkę** IntelliSense, a następnie wybierając folder języka.
 
 ## <a name="see-also"></a>Zobacz też
 

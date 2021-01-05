@@ -6,12 +6,12 @@ ms.author: tglee
 author: TerryGLee
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 03e5f806b428b7ecf08038ef34d6b1dddcd92f9e
-ms.sourcegitcommit: cea9e5787ff33e0e18aa1942bf4236748e0ef547
+ms.openlocfilehash: fbbd2278a59197601afe02e777e89245fc6bb421
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92210949"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97844733"
 ---
 *Zintegrowane środowisko programistyczne* programu Visual Studio to twórczy pad do uruchamiania, który umożliwia edytowanie, debugowanie i kompilowanie kodu, a następnie publikowanie aplikacji. Zintegrowane środowisko programistyczne (IDE) to program bogaty w funkcje, który może być używany w wielu aspektach tworzenia oprogramowania. W porównaniu z standardowym edytorem i debugerem, który środowisk IDE zapewnia, program Visual Studio obejmuje kompilatory, narzędzia do uzupełniania kodu, graficzne projektanci i wiele innych funkcji, które ułatwiają proces tworzenia oprogramowania.
 
@@ -171,7 +171,7 @@ Szczegółowemy i utworzysz prosty program.
 
    ![Plik > nowy projekt na pasku menu](../media/file-new-project-menu.png)
 
-   Okno dialogowe **Nowy projekt** zawiera kilka *szablonów*projektów. Szablon zawiera podstawowe pliki i ustawienia, które są zbędne dla danego typu projektu.
+   Okno dialogowe **Nowy projekt** zawiera kilka *szablonów* projektów. Szablon zawiera podstawowe pliki i ustawienia, które są zbędne dla danego typu projektu.
 
 1. Wybierz kategorię szablon **.NET Core** w obszarze **Visual C#**, a następnie wybierz szablon **Aplikacja konsolowa (.NET Core)** . W polu tekstowym **Nazwa** wpisz **HelloWorld**, a następnie wybierz przycisk **OK** .
 
@@ -198,7 +198,7 @@ Szczegółowemy i utworzysz prosty program.
 
    Program Visual Studio kompiluje aplikację i zostanie otwarte okno konsoli z komunikatem **Hello World!**. Masz teraz działającą aplikację.
 
-   ![Okno konsoli](../media/overview-console-window.png)
+   ![Zrzut ekranu przedstawiający okno konsoli cmd.exe z danymi wyjściowymi "Hello Word!" i "naciśnij dowolny klawisz, aby kontynuować".](../media/overview-console-window.png)
 
 1. Aby zamknąć okno konsoli, naciśnij dowolny klawisz na klawiaturze.
 
@@ -239,7 +239,7 @@ Szczegółowemy i utworzysz prosty program.
 
    ![Okno uruchamiania programu Visual Studio — Tworzenie nowego projektu](../media/vs-2019/start-window-create-new-project.png)
 
-   Zostanie otwarte okno **Utwórz nowy projekt** zawierające kilka *szablonów*projektów. Szablon zawiera podstawowe pliki i ustawienia, które są zbędne dla danego typu projektu.
+   Zostanie otwarte okno **Utwórz nowy projekt** zawierające kilka *szablonów* projektów. Szablon zawiera podstawowe pliki i ustawienia, które są zbędne dla danego typu projektu.
 
 1. Aby znaleźć żądany szablon, wpisz lub wprowadź w polu wyszukiwania **konsolę .NET Core** . Lista dostępnych szablonów jest automatycznie filtrowana na podstawie wprowadzonych słów kluczowych. Można bardziej filtrować wyniki szablonu, wybierając **C#** z listy rozwijanej **Język** . Wybierz szablon **Aplikacja konsolowa (.NET Core)** , a następnie wybierz przycisk **dalej**.
 
@@ -267,7 +267,7 @@ Szczegółowemy i utworzysz prosty program.
 
    Program Visual Studio kompiluje aplikację i zostanie otwarte okno konsoli z komunikatem **Hello World!**. Masz teraz działającą aplikację.
 
-   ![Okno konsoli](../media/vs-2019/overview-console-window.png)
+   ![Zrzut ekranu przedstawiający okno konsoli debugowania Microsoft Visual Studio z danymi wyjściowymi "Hello Word!" i "naciśnij dowolny klawisz, aby zamknąć to okno".](../media/vs-2019/overview-console-window.png)
 
 1. Aby zamknąć okno konsoli, naciśnij dowolny klawisz na klawiaturze.
 
@@ -292,7 +292,7 @@ Szczegółowemy i utworzysz prosty program.
 
 1. Wprowadź swoją nazwę w oknie konsoli i naciśnij klawisz **Enter**.
 
-   ![Okno konsoli](../media/vs-2019/overview-console-input.png)
+   ![Zrzut ekranu przedstawiający okno Microsoft Visual Studio konsoli debugowania z monitem o podanie nazwy, dane wejściowe i dane wyjściowe Hello Georgette!.](../media/vs-2019/overview-console-input.png)
 
 1. Naciśnij dowolny klawisz, aby zamknąć okno konsoli i zatrzymać uruchomiony program.
 
@@ -366,7 +366,7 @@ Najpierw Zmień nazwę `name` zmiennej:
 
 10. Ponownie uruchom program, naciskając klawisz **Ctrl** + **F5**. Dane wyjściowe wyglądają następująco:
 
-    ![Okno konsoli z danymi wyjściowymi programu](../media/overview-console-final.png)
+    ! Zrzut ekranu przedstawiający okno konsoli cmd.exe z monitem o podanie nazwy, dane wejściowe i dane wyjściowe Hello Georgette! Dzień roku: 151 '.] (.. /Media/overview-console-final.png)
 
 ::: moniker-end
 
@@ -374,7 +374,7 @@ Najpierw Zmień nazwę `name` zmiennej:
 
 10. Ponownie uruchom program, naciskając klawisz **Ctrl** + **F5**. Dane wyjściowe wyglądają następująco:
 
-    ![Okno konsoli z danymi wyjściowymi programu](../media/vs-2019/overview-console-final.png)
+    ![Zrzut ekranu przedstawiający okno Microsoft Visual Studio konsoli debugowania z monitem o podanie nazwy, dane wejściowe i dane wyjściowe Hello Georgette! Dzień roku: 43 '.](../media/vs-2019/overview-console-final.png)
 
 ::: moniker-end
 
@@ -412,7 +412,7 @@ Możesz spersonalizować interfejs użytkownika programu Visual Studio, w tym zm
 
 ::: moniker range="vs-2017"
 
-2. Na stronie **Environment** > **Ogólne** opcje środowiska Zmień wybór **motywu koloru** na **ciemny**, a następnie wybierz przycisk **OK**.
+2. Na stronie  > **Ogólne** opcje środowiska Zmień wybór **motywu koloru** na **ciemny**, a następnie wybierz przycisk **OK**.
 
    Motyw kolorów dla całego środowiska IDE zmieni się na **ciemny**.
 
@@ -422,7 +422,7 @@ Możesz spersonalizować interfejs użytkownika programu Visual Studio, w tym zm
 
 ::: moniker range=">=vs-2019"
 
-2. Na stronie **Environment** > **Ogólne** opcje środowiska Zmień wybór **motywu koloru** na **ciemny**, a następnie wybierz przycisk **OK**.
+2. Na stronie  > **Ogólne** opcje środowiska Zmień wybór **motywu koloru** na **ciemny**, a następnie wybierz przycisk **OK**.
 
    Motyw kolorów dla całego środowiska IDE zmieni się na **ciemny**.
 

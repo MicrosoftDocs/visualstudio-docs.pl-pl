@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: b28d87cc0842d5a3de8634ae50378915196366ff
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 484cb82a3659e306bd4c6bd14a3133c4677160db
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527929"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833341"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Samouczek: tworzenie prostej aplikacji konsolowej w języku C# w programie Visual Studio
 
@@ -282,7 +282,7 @@ Zapoznaj się z kilkoma typowymi błędami danych wejściowych użytkownika, Zna
 
 Przy próbie podzielenia liczby przez zero Aplikacja konsolowa może zostać zamrożona, a następnie pokazać, co jest niewłaściwe w edytorze kodu.
 
-   ![Edytor kodu programu Visual Studio pokazuje błąd dzielenia przez zero](./media/csharp-console-calculator-dividebyzero-error.png)
+   ![Zrzut ekranu przedstawiający Edytor kodu programu Visual Studio z wyróżnioną linią żółtą i nieobsługiwany wyjątek dla "próbował podzielić przez zero".](./media/csharp-console-calculator-dividebyzero-error.png)
 
 > [!NOTE]
 > Czasami aplikacja nie zawiesza się, a debuger nie pokazuje błędu dzielenia przez zero. Zamiast tego aplikacja może zwrócić nieoczekiwany wynik nienumeryczny, taki jak symbol nieskończoności. Następująca poprawka kodu nadal ma zastosowanie.
@@ -311,7 +311,7 @@ Zmieńmy kod, aby obsłużyć ten błąd.
 
 Teraz, gdy podzielę dowolną liczbę przez zero, aplikacja będzie pytać o inną liczbę. Jeszcze lepsze: nie będzie ono zatrzymywać, dopóki nie zostanie wprowadzona liczba różna od zera.
 
-   ![Naprawiono błąd dzielenia przez zero](./media/csharp-console-calculator-dividebyzero.png)
+   ![Zrzut ekranu przedstawiający Edytor kodu programu Visual Studio pokazujący kod instrukcji switch z zaznaczeniem wpisu o niezerowym dzielniku.](./media/csharp-console-calculator-dividebyzero.png)
 
 ### <a name="fix-the-format-error"></a>Popraw błąd "format"
 

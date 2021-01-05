@@ -7,12 +7,12 @@ monikerRange: vs-2019
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 6421fd0139b04262ac5f1e835f010c1372c034ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 29fa854ab00764fc0166a53d8b48989f2c74f036
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329179"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833302"
 ---
 # <a name="xaml-code-editor"></a>Edytor kodu XAML
 
@@ -109,7 +109,7 @@ Oto kroki tej procedury:
 
     ![Opcja "Usuń niepotrzebne użycie" edytora IDE z menu szybkie akcje](media/xaml-code-editor-remove-usings.png "Zrzut ekranu przedstawiający opcję Usuń niepotrzebne użycie edytora IDE z menu szybkie akcje")
 
-1. Wybierz, czy chcesz naprawić wszystkie wystąpienia w **dokumencie**, **projekcie**lub **rozwiązaniu**.
+1. Wybierz, czy chcesz naprawić wszystkie wystąpienia w **dokumencie**, **projekcie** lub **rozwiązaniu**.
 1. Wyświetl okno dialogowe **Podgląd** , a następnie wybierz pozycję **Zastosuj**.
 
 Możesz również uzyskać dostęp do tej funkcji z paska menu. W tym celu wybierz pozycję **Edytuj**  >  **IntelliSense**  >  **Usuń i Sortuj użycia**.
@@ -128,7 +128,7 @@ Kolor lewego marginesu umożliwia śledzenie zmian wprowadzonych w pliku. Oto, j
 
     ![Edycja edytora kodu z zielonym paskiem](media/code-editor-edit-green.png "Zrzut ekranu edytora kodu z zmianą oznaczoną zielonym paskiem na marginesie zaznaczenia.")
 
-Aby wyłączyć tę funkcję i włączyć ją, Zmień opcję **Śledź zmiany** w obszarze Ustawienia **edytora tekstu** (opcje**Narzędzia**  >  **Options**  >  **Edytor tekstu**).
+Aby wyłączyć tę funkcję i włączyć ją, Zmień opcję **Śledź zmiany** w obszarze Ustawienia **edytora tekstu** (opcje **Narzędzia**  >    >  **Edytor tekstu**).
 
 Aby uzyskać więcej informacji na temat śledzenia zmian &mdash; w celu uwzględnienia linii falistych (nazywanych także "zygzakami"), które są wyświetlane w obszarze ciągi kodu, &mdash; Zobacz sekcję **[funkcje edytora](../ide/writing-code-in-the-code-and-text-editor.md#editor-features)** w temacie [funkcje strony Edytor kodu programu Visual Studio](../ide/writing-code-in-the-code-and-text-editor.md) .
 
@@ -136,7 +136,7 @@ Aby uzyskać więcej informacji na temat śledzenia zmian &mdash; w celu uwzglę
 
 Gdy edytujesz kod w edytorze kodu XAML, istnieje kilka funkcji, do których można uzyskać dostęp za pomocą menu kontekstowego po kliknięciu prawym przyciskiem myszy. Większość z tych funkcji jest ogólnie dostępna w środowisku IDE programu Visual Studio, a niektóre z nich są specyficzne dla programu przy użyciu edytora kodu wraz z oknem projektowania.
 
-![Menu kontekstowe edytora kodu XAML prawym przyciskiem myszy w programie Visual Studio](media/xaml-code-editor-right-click-menu.png "Zrzut ekranu przedstawiający menu kontekstowe prawym przyciskiem myszy w edytorze kodu XAML w programie Visual Studio 2019")
+![Zrzut ekranu przedstawiający menu kontekstowe prawym przyciskiem myszy w edytorze kodu XAML w programie Visual Studio 2019.](media/xaml-code-editor-right-click-menu.png)
 
 Oto, co robią każda funkcja i jak jest to przydatne:
 
@@ -163,7 +163,7 @@ Pasek przewijania może robić więcej niż przewijanie kodu. Można go równie�
 
 Na pasku przewijania edytora kodu znajduje się przycisk **podziału** w prawym górnym rogu. Po wybraniu tej opcji możesz otworzyć inne okienko edytora kodu. Jest to przydatne, ponieważ działają niezależnie od siebie, więc można używać ich do pracy nad kodem w różnych lokalizacjach.
 
-![Edytor kodu XAML, tylko środkowe okienko, w programie Visual Studio](media/code-editor-split-window-button.png "Zrzut ekranu edytora kodu XAML, tylko w środkowym okienku, w programie Visual Studio 2019")
+![Zrzut ekranu przedstawiający środkowe okienko edytora kodu XAML w programie Visual Studio 2019 z wyróżnionym przyciskiem podziału w prawym górnym rogu okienka.](media/code-editor-split-window-button.png)
 
 Więcej informacji o sposobie dzielenia okna edytora znajduje się na stronie [Zarządzanie oknami edytora](../ide/how-to-manage-editor-windows.md) .
 
@@ -230,7 +230,7 @@ Poniżej przedstawiono kilka przykładów, w których można skorzystać ze śro
 
   ![Opcja Usuń niepotrzebne przestrzenie nazw edytora kodu XAML z szybkich akcji żarówki](media/xaml-code-editor-dimmed-namespaces-preview.png "Zrzut ekranu przedstawiający opcję Usuń niepotrzebne przestrzenie nazw edytora kodu XAML, która jest wyświetlana przy użyciu szybkich akcji żarówki")
 
-- **Zmień nazwę przestrzeni nazw**. Ta funkcja dostępna w menu kontekstowym po kliknięciu prawym przyciskiem myszy po zaznaczeniu przestrzeni nazw ułatwia zmianę wielu wystąpień ustawienia jednocześnie. Możesz również uzyskać dostęp do tej funkcji przy użyciu paska menu, **edytować**  >  **nazwę refaktoryzacji**  >  **Rename**lub naciskając **Ctrl** + **r**, a następnie ponownie **Ctrl** + **r** .
+- **Zmień nazwę przestrzeni nazw**. Ta funkcja dostępna w menu kontekstowym po kliknięciu prawym przyciskiem myszy po zaznaczeniu przestrzeni nazw ułatwia zmianę wielu wystąpień ustawienia jednocześnie. Możesz również uzyskać dostęp do tej funkcji przy użyciu paska menu, **edytować**  >  **nazwę refaktoryzacji**  >  lub naciskając **Ctrl** + **r**, a następnie ponownie **Ctrl** + **r** .
 
   ![Opcja Zmień nazwę przestrzeni nazw edytora kodu XAML z menu kontekstowego po kliknięciu prawym przyciskiem myszy](media/code-editor-rename-namespace.png "Zrzut ekranu opcji Zmień nazwę przestrzeni nazw edytora kodu XAML, która pojawia się za pomocą menu kontekstowego po kliknięciu prawym przyciskiem myszy")
 
@@ -264,7 +264,7 @@ Aby uzyskać więcej informacji na temat *wszystkich* ustawień w środowisku ID
 
 ## <a name="xaml-optional-settings"></a>Ustawienia opcjonalne XAML
 
-Za pomocą okna dialogowego [Opcje](../ide/reference/options-dialog-box-visual-studio.md) można zmienić ustawienia domyślne dla edytora kodu XAML. Aby wyświetlić ustawienia, wybierz opcje **Narzędzia**  >  **Options**  >  **Edytor tekstu**  >  **XAML**.
+Za pomocą okna dialogowego [Opcje](../ide/reference/options-dialog-box-visual-studio.md) można zmienić ustawienia domyślne dla edytora kodu XAML. Aby wyświetlić ustawienia, wybierz opcje **Narzędzia**  >    >  **Edytor tekstu**  >  **XAML**.
 
 ![Lista opcji dla edytora tekstu XAML](media/xaml-tools-options.png "Zrzut ekranu przedstawiający listę opcji dla edytora tekstu XAML")
 

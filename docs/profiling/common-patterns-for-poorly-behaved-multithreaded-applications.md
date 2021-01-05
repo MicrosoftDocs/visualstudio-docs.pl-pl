@@ -1,5 +1,6 @@
 ---
 title: Typowe wzorce dla źle działających aplikacji wielowątkowych
+description: Poznaj typowe wzorce dla źle działających aplikacji wielowątkowych, które znajdują się w narzędziu Concurrency Visualizer programu Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f45c22684ef737de7235caebd4ad0b1b4189155
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 36e14640da4d66134ca961607f66f6a355f6b9d9
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808945"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815792"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Typowe nieprawidłowo działające wzorce dla aplikacji wielowątkowych
 
@@ -27,7 +28,7 @@ Narzędzie Concurrency Visualizer pomaga deweloperom wizualizować zachowanie ap
 
 ![Zablokuj rywalizację z powodu serializowanego wykonania](../profiling/media/lockcontention_serialized.png "LockContention_Serialized")
 
-Czasami równoległe aplikacje stubbornly nadal są wykonywane szeregowo nawet wtedy, gdy ma kilka wątków, a komputer ma wystarczającą liczbę rdzeni logicznych. Pierwszy objaw ma niską wydajność wielowątkową, a nawet nieco mniejszą niż implementacja szeregowa. W widoku wątki nie widzisz równolegle wielu wątków. Zamiast tego zobaczysz, że w dowolnym momencie wykonujesz tylko jeden wątek. Jeśli w tym momencie klikniesz segment synchronizacji w wątku, zobaczysz stos wywołań dla zablokowanego wątku (blokujący stos wywołań) i wątek, który usunął warunek blokowania (odblokowywanie stosu wywołań). Ponadto, jeśli stos wywołań odblokowywania występuje w procesie analizowanym, zostanie wyświetlony łącznik gotowy do wątku. Od tego momentu można nawigować do kodu z stosów wywołań blokujących i odblokowywania, aby badać przyczynę serializacji jeszcze więcej.
+Czasami równoległe aplikacje stubbornly nadal są wykonywane szeregowo nawet wtedy, gdy ma kilka wątków, a komputer ma wystarczającą liczbę rdzeni logicznych. Pierwszy objaw ma niską wydajność wielowątkową, a nawet nieco mniejszą niż implementacja szeregowa. W widoku wątki nie widzisz równolegle wielu wątków. Zamiast tego zobaczysz, że w dowolnym momencie wykonujesz tylko jeden wątek. Jeśli w tym momencie klikniesz segment synchronizacji w wątku, zobaczysz stos wywołań dla zablokowanego wątku (blokujący stos wywołań) i wątek, który usunął warunek blokowania (odblokowywanie stosu wywołań). Ponadto, jeśli stos wywołań odblokowywania występuje w procesie analizowanym, zostanie wyświetlony łącznik Thread-Ready. Od tego momentu można nawigować do kodu z stosów wywołań blokujących i odblokowywania, aby badać przyczynę serializacji jeszcze więcej.
 
 Jak pokazano na poniższej ilustracji, Wizualizator współbieżności może również uwidocznić ten objaw w widoku wykorzystania procesora CPU, gdzie mimo obecności wielu wątków aplikacja korzysta tylko z jednego rdzenia logicznego.
 
@@ -37,17 +38,17 @@ Aby uzyskać więcej informacji, zobacz sekcję "Rozpoczynanie pracy z sekcją p
 
 ## <a name="uneven-workload-distribution"></a>Nierównomierny rozkład obciążenia
 
-![Nierówne obciążenie](../profiling/media/unevenworkload_1.png "UnevenWorkLoad_1")
+![Zrzut ekranu przedstawiający wykres obciążenia dla wątków równoległych w wizualizatorze współbieżności. Wątki kończą się w różnym czasie, pokazując wzorzec etapu schodów.](../profiling/media/unevenworkload_1.png)
 
 Gdy nieregularna dystrybucja pracy odbywa się w kilku wątkach równoległych w aplikacji, typowy wzorzec etapu schodów pojawia się, gdy każdy wątek ukończy swoją pracę, jak pokazano na poprzedniej ilustracji. Wizualizator współbieżności najczęściej pokazuje godziny rozpoczęcia dla każdego współbieżnego wątku. Jednak te wątki zazwyczaj kończą się nieregularnym sposobem, a nie kończąc jednocześnie. Ten wzorzec wskazuje nieregularną dystrybucję pracy między grupą wątków równoległych, co może prowadzić do zmniejszenia wydajności. Najlepszym podejściem do takiego problemu jest przeszacowanie algorytmu, za pomocą którego działa podzielona między wątki równoległe.
 
 Jak pokazano na poniższej ilustracji, Wizualizator współbieżności może również uwidocznić ten objaw w widoku wykorzystania procesora CPU jako stopniowy krok w mocy procesora CPU.
 
-![Nierówne obciążenie](../profiling/media/unevenworkload_2.png "UnevenWorkload_2")
+![Zrzut ekranu przedstawiający widok użycie procesora CPU w wizualizatorze współbieżności pokazujący wzorzec etapu schodów na końcu wykresu użycia procesora.](../profiling/media/unevenworkload_2.png)
 
 ## <a name="oversubscription"></a>Nadsubskrypcji
 
-![Nadsubskrypcji](../profiling/media/oversubscription.png "Nadsubskrypcji")
+![Zrzut ekranu przedstawiający wykres obciążenia dla wszystkich aktywnych wątków w wizualizatorze współbieżności. Legenda przedstawia ilość czasu spędzonego na wykonywaniu i zastępująniu.](../profiling/media/oversubscription.png)
 
 W przypadku nadsubskrypcji liczba aktywnych wątków w procesie jest większa niż liczba dostępnych rdzeni logicznych w systemie. Poprzednia ilustracja przedstawia wyniki nadsubskrypcji, dzięki czemu można przewyższyć liczbę przedziałów na wszystkie aktywne wątki. Ponadto legenda pokazuje znaczną część czasu poświęcaną na przepełnienie (84 procent w tym przykładzie). Może to wskazywać, że proces żąda od systemu wykonania większej liczby współbieżnych wątków niż liczba rdzeni logicznych. Może to jednak wskazywać, że inne procesy w systemie korzystają z zasobów, które zostały założono, że są dostępne dla tego procesu.
 

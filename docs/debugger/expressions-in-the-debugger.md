@@ -1,6 +1,6 @@
 ---
 title: Wyrażenia w debugerze | Microsoft Docs
-description: Edytuj i Kontynuuj jest dostępny dla projektów Visual C#. Dowiedz się, jakie zmiany są obsługiwane i jak można kontrolować, czy są stosowane zmiany.
+description: Dowiedz się, które wyrażenia języka nie są obsługiwane przez oceny wyrażeń w debugerze programu Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 03/02/2020
 ms.topic: conceptual
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28d04ce836316024eb4aef9f1b4a9955d98dbba8
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: 5b05af635ba7774cdb31291ad7c2b7eb52686bcf
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96862870"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846728"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Wyrażenia w debugerze programu Visual Studio
 Debuger programu Visual Studio zawiera oszacowania wyrażeń, które działają po wprowadzeniu wyrażenia w oknie dialogowym **QuickWatch** , oknie **czujki** lub w oknie **bezpośrednim** . Oceny wyrażeń są również w pracy w oknie **punkty przerwania** i wiele innych miejsc w debugerze.

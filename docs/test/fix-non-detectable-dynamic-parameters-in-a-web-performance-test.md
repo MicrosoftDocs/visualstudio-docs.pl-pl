@@ -12,12 +12,12 @@ ms.assetid: 92dff25c-36ee-4135-acdd-315c4962fa11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 713d711847d798c617074d2d620e09f914c1a147
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 9f670c9cf543ae209ebed63ce185fadfbbe253d0
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190239"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815727"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Naprawa niewykrywalnych parametrów dynamicznych w teście wydajności sieci Web
 
@@ -190,13 +190,13 @@ Aby przedstawić zarówno wykrywalny, jak i niewykrywalny parametr dynamiczny, u
 
 3. Wróć do przeglądarki Wyniki testów wydajności sieci Web i wybierz stronę *JScriptQuery. aspx* , która się nie powiodła. Następnie wybierz kartę żądanie, sprawdź, czy pole wyboru Pokaż nieprzetworzone dane jest wyczyszczone, przewiń w dół i wybierz pozycję Szybkie wyszukiwanie w CustomQueryString.
 
-     ![Używanie szybkiego wyszukiwania do izolowania parametru dynamicznego](../test/media/web_test_dynamicparameter_runresultsquckfind.png)
+     ![Zrzut ekranu przedstawiający kartę żądanie w podglądzie wyników tekstu wydajności sieci Web. Wybrano parametr QueryString, a QuickFind jest wyróżniony w menu kontekstowym.](../test/media/web_test_dynamicparameter_runresultsquckfind.png)
 
 4. Wiemy, że szukasz w edytorze testów, że CustomQueryString żądania *JScriptQuery. aspx* został przypisany do wartości: `jScriptQueryString___1v0yhyiyr0raa2w4j4pwf5zl` , a podejrzana część dynamiczna to "1v0yhyiyr0raa2w4j4pwf5zl". Na liście rozwijanej Znajdź, Usuń podejrzaną część ciągu wyszukiwania. Ciąg powinien mieć wartość "CustomQueryString = jScriptQueryString___".
 
      Do parametrów dynamicznych są przypisywane wartości w jednym z żądań poprzedzających żądanie, które zawiera błąd. W związku z tym zaznacz pole wyboru Przeszukaj w górę i wybierz pozycję Znajdź dalej do momentu wyświetlenia poprzedniego żądania *QueryString. aspx* wyróżnionego w panelu żądania. Powinno to nastąpić po trzykrotnym wybraniu pozycji Znajdź dalej.
 
-     ![Używanie szybkiego wyszukiwania do izolowania parametru dynamicznego](../test/media/web_test_dynamicparameter_runresultsquckfind4.png)
+     ![Zrzut ekranu przedstawiający Podgląd wyników w postaci tekstu wydajności sieci Web. Wybrano ciąg zapytania i zostanie wyświetlone okno dialogowe Znajdź z SearchUp i Znajdź następny.](../test/media/web_test_dynamicparameter_runresultsquckfind4.png)
 
      Jak pokazano na karcie odpowiedź i w języku JavaScript zaimplementowanym wcześniej pokazano poniżej, parametr ciągu zapytania CustomQueryString ma przypisaną wartość "jScriptQueryString___" i jest również łączona z wartością zwracaną z var sessionId.
 

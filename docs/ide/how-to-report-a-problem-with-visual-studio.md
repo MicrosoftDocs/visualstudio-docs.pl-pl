@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c6c09bbf74cca803156842d185b5bf86ff52439
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: a6f0d126853c518692725d495586b3adfa57c9aa
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668823"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761358"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Jak zgłosić problem z programem Visual Studio lub Instalator programu Visual Studio
 
@@ -24,8 +24,9 @@ ms.locfileid: "97668823"
 Możesz zgłosić problem z programu Visual Studio lub jego Instalatora. Wbudowane narzędzie do przesyłania opinii pozwala łatwo dodać informacje diagnostyczne ułatwiające zespołom programu Visual Studio diagnozowanie i rozwiązywanie problemów. Poniżej przedstawiono procedurę zgłaszania problemu.
 
 1. **W programie Visual Studio** wybierz ikonę opinii w prawym górnym rogu, a następnie wybierz pozycję Zgłoś problem. Możesz również uzyskać dostęp do narzędzia opinii z menu **Pomoc** w  >  **wysyłaniu opinii**  >  **Zgłoś problem**.
-![Zgłoś problem w oknie podręcznym w społeczności deweloperów programu Visual Studio ](media/feedback-button.png) , zgłoś problem w programie **Instalator programu Visual Studio** , jeśli nie możesz zainstalować programu Visual Studio lub nie możesz uzyskać dostępu do narzędzia opinii w programie Visual Studio.  W instalatorze wybierz ikonę opinii w prawym górnym rogu, a następnie wybierz pozycję Zgłoś problem.
-![Zgłoś problem w okienku wyskakującym w społeczności deweloperów programu Visual Studio w instalatorze](media/installer.png)
+![Zrzut ekranu przedstawiający ikonę opinii wybraną w prawym górnym rogu okna programu Visual Studio i Zgłoś problem wybrany w menu kontekstowym.](media/feedback-button.png)
+Alternatywnie Zgłoś problem w programie **Instalator programu Visual Studio** , jeśli nie możesz zainstalować programu Visual Studio lub nie można uzyskać dostępu do narzędzia opinii w programie Visual Studio.  W instalatorze wybierz ikonę opinii w prawym górnym rogu, a następnie wybierz pozycję Zgłoś problem.
+![Zrzut ekranu przedstawiający ikonę opinii wybraną w prawym górnym rogu Instalator programu Visual Studio i Zgłoś problem wybrany w menu kontekstowym.](media/installer.png)
 
 1. Kliknięcie przycisku **Zgłoś problem** spowoduje otwarcie domyślnej przeglądarki i zalogowanie się przy użyciu tego samego konta, którego używasz do logowania się do programu Visual Studio
 
@@ -67,11 +68,11 @@ Gdy w przypadku problemu brakuje ważnych informacji, przypiszemy stan **więcej
 
 1. Skorzystaj z linku w wiadomości e-mail do raportu problemu lub przejdź do strony głównej, aby zobaczyć wszystkie raporty w stanie **więcej informacji** .
 
-    ![Moja opinia](../ide/media/feedback-my-feedback.png)
+    ![Zrzut ekranu przedstawiający stronę główną okna Opinie programu Visual Studio. Zostanie wyświetlony jeden element opinii, który jest oznaczony etykietą "Potrzebuję większej ilości informacji" w kolorze czerwonym.](../ide/media/feedback-my-feedback.png)
 
 1. Po wybraniu linku podaj więcej informacji w raporcie o problemie przejdź do nowego ekranu. W tym miejscu możesz zobaczyć, jakie informacje są żądane.
 
-   ![Szczegóły informacji do wysłania do firmy Microsoft](../ide/media/feedback-need-more-info.png)
+   ![Zrzut ekranu przedstawiający okno opinii programu Visual Studio pokazujący informacje wymagane przez firmę Microsoft w celu rozwiązania problemu.](../ide/media/feedback-need-more-info.png)
 
 1. Więcej informacji można uzyskać, dodając komentarze, załączniki lub kroki nagrywania. To środowisko jest podobne do zgłaszania nowego problemu lub podawania dodatkowych informacji podczas głosowania na temat problemu.
 
@@ -85,7 +86,7 @@ Jeśli nie chcesz lub nie możesz użyć programu Visual Studio, aby zgłosić p
 
 Jeśli nie masz problemu z raportowaniem, ale chcesz zasugerować funkcję, istnieje już miejsce. Aby uzyskać więcej informacji, zobacz stronę [Sugeruj funkcję](https://aka.ms/feedback/suggest?space=8) .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [Wskazówki dotyczące społeczności deweloperów](./developer-community-guidelines.md)
 * [Opcje opinii programu Visual Studio](../ide/feedback-options.md)

@@ -1,6 +1,6 @@
 ---
 title: Tworzenie Node.js i reagowanie aplikacji
-description: W tym samouczku utworzysz aplikację przy użyciu narzędzi Node.js Tools for Visual Studio
+description: Dowiedz się, jak utworzyć projekt aplikacji sieci Web Node.js na podstawie szablonu programu Visual Studio.
 ms.custom: ''
 ms.date: 4/21/2020
 ms.topic: tutorial
@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: c6813e0ad482bb211269c9da3950842dda7f6abd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 08e04407c5fc25a2835bd3209ffcd60fdc86d0b1
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81760123"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815779"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Samouczek: Tworzenie Node.js i reagowanie aplikacji w programie Visual Studio
 
@@ -60,10 +60,10 @@ Pakiet WebPack służy do łączenia plików JavaScript, dzięki czemu mogą by�
 * Musisz mieć zainstalowany program Visual Studio i Node.js obciążenie programowaniem.
 
     ::: moniker range=">=vs-2019"
-    Jeśli program Visual Studio 2019 nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads/),   Aby zainstalować ją bezpłatnie.
+    Jeśli program Visual Studio 2019 nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads/) , aby zainstalować ją bezpłatnie.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Jeśli program Visual Studio 2017 nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads/),   Aby zainstalować ją bezpłatnie.
+    Jeśli program Visual Studio 2017 nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads/) , aby zainstalować ją bezpłatnie.
     ::: moniker-end
 
     Jeśli musisz zainstalować obciążenie, ale masz już program Visual Studio, przejdź do pozycji **Narzędzia**  >  **Pobierz narzędzia i funkcje..**., co spowoduje otwarcie Instalator programu Visual Studio. Wybierz **Node.js obciążenie programowaniem** , a następnie wybierz **Modyfikuj**.
@@ -76,7 +76,7 @@ Pakiet WebPack służy do łączenia plików JavaScript, dzięki czemu mogą by�
 
     Jeśli go nie zainstalowano, zalecamy zainstalowanie wersji LTS z witryny internetowej [Node.js](https://nodejs.org/en/download/) w celu uzyskania najlepszej zgodności z zewnętrznymi platformami i bibliotekami. Node.js jest oparta na architekturze 32-bitowej i 64-bitowej. Narzędzia Node.js w programie Visual Studio, zawarte w obciążeniu Node.js, obsługują obie wersje. Tylko jeden jest wymagany, a Instalator Node.js obsługuje tylko jeden instalowany w danym momencie.
     
-    Ogólnie rzecz biorąc, program Visual Studio automatycznie wykrywa zainstalowane Node.js środowiska uruchomieniowego. Jeśli nie wykryje zainstalowanego środowiska uruchomieniowego, można skonfigurować projekt do odwoływania się do zainstalowanego środowiska uruchomieniowego na stronie właściwości (po utworzeniu projektu kliknij prawym przyciskiem myszy węzeł projektu, wybierz polecenie **Właściwości**, a następnie ustaw ** ścieżkęNode.exe**). Można użyć globalnej instalacji Node.js lub można określić ścieżkę do lokalnego interpretera w każdym z projektów Node.js. 
+    Ogólnie rzecz biorąc, program Visual Studio automatycznie wykrywa zainstalowane Node.js środowiska uruchomieniowego. Jeśli nie wykryje zainstalowanego środowiska uruchomieniowego, można skonfigurować projekt do odwoływania się do zainstalowanego środowiska uruchomieniowego na stronie właściwości (po utworzeniu projektu kliknij prawym przyciskiem myszy węzeł projektu, wybierz polecenie **Właściwości**, a następnie ustaw **ścieżkęNode.exe**). Można użyć globalnej instalacji Node.js lub można określić ścieżkę do lokalnego interpretera w każdym z projektów Node.js. 
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 
@@ -367,9 +367,9 @@ Począwszy od programu Visual Studio 2019, wymagany jest skrypt kompilacji. Zami
 
 ## <a name="set-a-breakpoint-and-run-the-app"></a>Ustawianie punktu przerwania i uruchamianie aplikacji
 
-1. W *server.js*kliknij przycisk na marginesie po lewej stronie `staticPath` deklaracji, aby ustawić punkt przerwania:
+1. W *server.js* kliknij przycisk na marginesie po lewej stronie `staticPath` deklaracji, aby ustawić punkt przerwania:
 
-    ![Ustawianie punktu przerwania](../javascript/media/tutorial-nodejs-react-set-breakpoint.png)
+    ![Zrzut ekranu przedstawiający okno programu Visual Studio Code dla server.js. Czerwona kropka na lewym marginesie wskazuje, że punkt przerwania jest ustawiony dla deklaracji staticPath.](../javascript/media/tutorial-nodejs-react-set-breakpoint.png)
 
     Punkty przerwania są najbardziej podstawową i istotną funkcją niezawodnego debugowania. Punkt przerwania wskazuje, gdzie program Visual Studio powinien zawiesić uruchomiony kod, aby można było przyjrzeć się wartościom zmiennych lub działaniu pamięci lub niezależnie od tego, czy gałąź kodu jest uruchamiana.
 
@@ -434,15 +434,15 @@ W tym scenariuszu należy użyć programu Chrome.
 
 1. Przejdź do programu Visual Studio, a następnie ustaw punkt przerwania w kodzie źródłowym, *app-bundle.js*  lub *App. TSX*.
 
-    Dla *app-bundle.js*Ustaw punkt przerwania w `render()` funkcji, jak pokazano na poniższej ilustracji:
+    Dla *app-bundle.js* Ustaw punkt przerwania w `render()` funkcji, jak pokazano na poniższej ilustracji:
 
-    ![Ustawianie punktu przerwania](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
+    ![Zrzut ekranu przedstawiający okno programu Visual Studio Code dla app-bundle.js. Czerwona kropka na lewym marginesie wskazuje, że punkt przerwania jest ustawiony w funkcji renderowania.](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
     Aby znaleźć `render()` funkcję w pliku *app-bundle.js* , użyj **klawiszy CTRL** + **F** (**Edycja**  >  **Znajdź i Zamień**  >  **szybkie wyszukiwanie**).
 
-    W przypadku *aplikacji App. TSX*Ustaw punkt przerwania wewnątrz `render()` funkcji na `return` instrukcji.
+    W przypadku *aplikacji App. TSX* Ustaw punkt przerwania wewnątrz `render()` funkcji na `return` instrukcji.
 
-    ![Ustawianie punktu przerwania](../javascript/media/tutorial-nodejs-react-set-breakpoint-in-tsx-file.png)
+    ![Zrzut ekranu przedstawiający okno programu Visual Studio Code dla App. TSX. Czerwona kropka na lewym marginesie wskazuje, że punkt przerwania jest ustawiony w instrukcji return funkcji renderowania.](../javascript/media/tutorial-nodejs-react-set-breakpoint-in-tsx-file.png)
 
 2. Jeśli ustawiasz punkt przerwania w pliku *TSX* (a nie *app-bundle.js*), musisz zaktualizować *webpack-config.js*. Zastąp następujący kod:
 
@@ -461,7 +461,7 @@ W tym scenariuszu należy użyć programu Chrome.
     },
     ```
 
-    Jest to ustawienie tylko do programowania, aby włączyć debugowanie w programie Visual Studio. To ustawienie umożliwia przesłonięcie wygenerowanych odwołań w pliku mapy źródłowej, *app-bundle.js. map*podczas kompilowania aplikacji. Domyślnie odwołania do pakietu WebPack w pliku mapy źródłowej zawierają prefiks *WebPack:///* , który uniemożliwia programowi Visual Studio znalezienie pliku źródłowego, *App. TSX*. W przypadku wprowadzenia tej zmiany odwołanie do pliku źródłowego, *App. TSX*można zmienić z *WebPack:///./app.TSX* na *./app.TSX*, co umożliwia debugowanie.
+    Jest to ustawienie tylko do programowania, aby włączyć debugowanie w programie Visual Studio. To ustawienie umożliwia przesłonięcie wygenerowanych odwołań w pliku mapy źródłowej, *app-bundle.js. map* podczas kompilowania aplikacji. Domyślnie odwołania do pakietu WebPack w pliku mapy źródłowej zawierają prefiks *WebPack:///* , który uniemożliwia programowi Visual Studio znalezienie pliku źródłowego, *App. TSX*. W przypadku wprowadzenia tej zmiany odwołanie do pliku źródłowego, *App. TSX* można zmienić z *WebPack:///./app.TSX* na *./app.TSX*, co umożliwia debugowanie.
 
 3. Wybierz docelową przeglądarkę jako element docelowy debugowania w programie Visual Studio, a następnie naciśnij klawisz **Ctrl** + **F5** (**Debuguj**  >  **Rozpocznij bez debugowania**), aby uruchomić aplikację w przeglądarce.
 
@@ -492,10 +492,10 @@ W tym scenariuszu należy użyć programu Chrome.
     ::: moniker range=">=vs-2019"
     Poniższy przykład pokazuje, jak wygląda wyszukiwanie w przeglądarce Microsoft Edge (chrom).
 
-    ![Dołącz do procesu](../javascript/media/tutorial-nodejs-react-attach-to-process-edge.png)
+    ![Dołączanie do procesu](../javascript/media/tutorial-nodejs-react-attach-to-process-edge.png)
     ::: moniker-end
     ::: moniker range="vs-2017"
-    ![Dołącz do procesu](../javascript/media/tutorial-nodejs-react-attach-to-process.png)
+    ![Dołączanie do procesu](../javascript/media/tutorial-nodejs-react-attach-to-process.png)
 
     Wiadomo, że debuger został prawidłowo dołączony, gdy DOM Explorer i konsola JavaScript zostanie otwarta w programie Visual Studio. Te narzędzia debugowania są podobne do narzędzi Chrome Narzędzia deweloperskie i F12 dla przeglądarki Microsoft Edge.
     ::: moniker-end
@@ -505,7 +505,7 @@ W tym scenariuszu należy użyć programu Chrome.
 
 7. Ponieważ kod z punktem przerwania został już wykonany, Odśwież stronę przeglądarki, aby trafić punkt przerwania.
 
-    W debugerze można przeanalizować stan aplikacji, umieszczając kursor nad zmiennymi i korzystając z okien debugera. Debuger można uzyskać, przechodząc przez kod (**F5**, **F10**i **F11**). Aby uzyskać więcej informacji na temat podstawowych funkcji debugowania, zobacz [pierwsze spojrzenie na debuger](../debugger/debugger-feature-tour.md).
+    W debugerze można przeanalizować stan aplikacji, umieszczając kursor nad zmiennymi i korzystając z okien debugera. Debuger można uzyskać, przechodząc przez kod (**F5**, **F10** i **F11**). Aby uzyskać więcej informacji na temat podstawowych funkcji debugowania, zobacz [pierwsze spojrzenie na debuger](../debugger/debugger-feature-tour.md).
 
     Punkt przerwania można napotkać w *app-bundle.js* lub w jego zamapowanej lokalizacji w *App. TSX*, w zależności od tego, które czynności zostały wcześniej wykonane, wraz ze środowiskiem i stanem przeglądarki. W obu przypadkach możesz przejść przez kod i przeanalizować zmienne.
 
@@ -514,7 +514,7 @@ W tym scenariuszu należy użyć programu Chrome.
       * Zamknięto wszystkie wystąpienia przeglądarki, w tym rozszerzenia programu Chrome (przy użyciu Menedżera zadań), dzięki czemu można uruchomić przeglądarkę w trybie debugowania. Upewnij się, że przeglądarka została uruchomiona w trybie debugowania.
 
       * Upewnij się, że plik mapy źródłowej zawiera odwołanie do *./app.TSX* , a nie *WebPack:///./app.TSX*, co uniemożliwia debugerowi programu Visual Studio lokalizowanie *aplikacji App. TSX*.
-       Alternatywnie, jeśli konieczne jest zabicie do kodu w *App. TSX* i nie można tego zrobić, spróbuj użyć `debugger;` instrukcji w *App. TSX*lub ustawić punkty przerwania w programie Chrome narzędzia deweloperskie (lub F12 Tools for Microsoft Edge).
+       Alternatywnie, jeśli konieczne jest zabicie do kodu w *App. TSX* i nie można tego zrobić, spróbuj użyć `debugger;` instrukcji w *App. TSX* lub ustawić punkty przerwania w programie Chrome narzędzia deweloperskie (lub F12 Tools for Microsoft Edge).
 
    * Jeśli musisz przerwać wykonywanie kodu w *app-bundle.js* i nie można tego zrobić, usuń plik mapy źródłowej, *app-bundle.js. map*.
 

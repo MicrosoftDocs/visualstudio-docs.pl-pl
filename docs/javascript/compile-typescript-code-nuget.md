@@ -1,6 +1,6 @@
 ---
 title: Kompilowanie i kompilowanie kodu TypeScript przy użyciu narzędzia NuGet
-description: Dowiedz się, jak kompilować i kompilować TypeScript w programie Visual Studio.
+description: Dowiedz się, jak dodać obsługę języka TypeScript do projektów programu Visual Studio przy użyciu pakietu NuGet.
 ms.date: 7/23/2020
 ms.topic: conceptual
 author: mikejo5000
@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 16ff335fdf8ca76889562cfd94807ec1adc516d2
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 929c17c9cbd2a0987bebca02c70b3b751c19fc9a
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91927929"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846828"
 ---
 # <a name="compile-typescript-code-aspnet-core"></a>Kompiluj kod języka TypeScript (ASP.NET Core)
 
@@ -106,7 +106,7 @@ Jeśli program Visual Studio jest zainstalowany, node.exe powiązane z nim zosta
 
 Aby zapoznać się z przykładem użycia Gulp z modułem uruchamiającego zadań do kompilowania aplikacji, zobacz [ASP.NET Core i TypeScript](https://www.typescriptlang.org/docs/handbook/asp-net-core.html).
 
-Jeśli występują problemy, w których program Visual Studio używa wersji Node.js lub narzędzia innej firmy, które różni się od oczekiwanej wersji, może być konieczne ustawienie ścieżki programu Visual Studio do użycia. Wybierz pozycję **Narzędzia**  >  **Opcje**. W obszarze **projekty i rozwiązania**wybierz pozycję **Sieć Web zarządzanie pakietami**  >  **zewnętrzne narzędzia sieci Web**.
+Jeśli występują problemy, w których program Visual Studio używa wersji Node.js lub narzędzia innej firmy, które różni się od oczekiwanej wersji, może być konieczne ustawienie ścieżki programu Visual Studio do użycia. Wybierz pozycję **Narzędzia**  >  **Opcje**. W obszarze **projekty i rozwiązania** wybierz pozycję **Sieć Web zarządzanie pakietami**  >  **zewnętrzne narzędzia sieci Web**.
 
 ### <a name="run-the-application"></a>Uruchamianie aplikacji
 
@@ -163,7 +163,7 @@ Jeśli używasz pakietu NuGet do obsługi programu MSBuild dla projektu, plik pr
 
 1. Kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Zwolnij projekt**.
 
-1. Kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Edytuj \<*project file name*\> **.
+1. Kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Edytuj \<*project file name*\>**.
 
    Plik projektu zostanie otwarty.
 

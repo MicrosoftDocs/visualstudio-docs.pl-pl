@@ -1,6 +1,7 @@
 ---
 title: Inspekcja zmiennych — autostarts i okien lokalnych | Microsoft Docs
-ms.custom: seodec18
+description: Podczas debugowania w programie Visual Studio Sprawdź zmienne w oknach autostarts i Locals. Okna zmiennych i zmienne lokalne wyświetlają wartości zmiennej podczas debugowania.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 10/18/2018
 ms.topic: how-to
 f1_keywords:
@@ -15,22 +16,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ae67fadf5d9710f2088f47617b74eeeb8212826
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b57c27d038193a5c73bee48814a2aa457a94b6a6
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350748"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97760916"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Inspekcja zmiennych w oknach autouzupełniania i lokalnych
 
-Okna **zmiennych i** zmienne **lokalne** wyświetlają wartości zmiennej podczas debugowania. System Windows jest dostępny tylko podczas sesji debugowania. W oknie **samochody** są wyświetlane zmienne używane wokół bieżącego punktu przerwania. Okno zmiennych **lokalnych** zawiera zmienne zdefiniowane w zakresie lokalnym, które zwykle jest bieżącą funkcją lub metodą. Jeśli po raz pierwszy podjęto próbę debugowania kodu, przed przeprowadzeniem tego artykułu warto przeczytać [debugowanie dla bezwzględnych](../debugger/debugging-absolute-beginners.md) [technik i narzędzi debugowania](../debugger/write-better-code-with-visual-studio.md) .
+Okna **zmiennych i** zmienne **lokalne** wyświetlają wartości zmiennej podczas debugowania. System Windows jest dostępny tylko podczas sesji debugowania. W oknie **samochody** są wyświetlane zmienne używane wokół bieżącego punktu przerwania. Okno zmiennych **lokalnych** zawiera zmienne zdefiniowane w zakresie lokalnym, które zwykle jest bieżącą funkcją lub metodą.
+
+> [!NOTE]
+> Jeśli po raz pierwszy podjęto próbę debugowania kodu, przed przeprowadzeniem tego artykułu warto przeczytać [debugowanie dla bezwzględnych](../debugger/debugging-absolute-beginners.md) [technik i narzędzi debugowania](../debugger/write-better-code-with-visual-studio.md) .
 
  Okno **samochody** jest dostępne dla kodu C#, Visual Basic, C++ i Python, ale nie dla języka JavaScript lub F #.
 
-Aby otworzyć okno **autostarty** , podczas debugowania zaznacz opcję **Debuguj**  >  **Windows**  >  **autostarty**systemu Windows lub naciśnij **klawisze CTRL** + **Alt** + **V**  >  **A**.
+Aby otworzyć okno **autostarty** , podczas debugowania zaznacz opcję **Debuguj**  >    >  **autostarty** systemu Windows lub naciśnij **klawisze CTRL** + **Alt** + **V**  >  **A**.
 
-Aby otworzyć okno zmienne **lokalne** , podczas debugowania wybierz opcję **Debuguj**  >  Ustawienia lokalne**systemu Windows**  >  **Locals**lub naciśnij klawisze **Alt** + **4**.
+Aby otworzyć okno zmienne **lokalne** , podczas debugowania wybierz opcję **Debuguj**  >  Ustawienia lokalne **systemu Windows**  >  lub naciśnij klawisze **Alt** + **4**.
 
 > [!NOTE]
 > Ten temat ma zastosowanie do programu Visual Studio w systemie Windows. Aby uzyskać Visual Studio dla komputerów Mac, zobacz [wizualizacje danych w programie Visual Studio dla komputerów Mac](/visualstudio/mac/data-visualizations).
@@ -39,7 +43,7 @@ Aby otworzyć okno zmienne **lokalne** , podczas debugowania wybierz opcję **De
 
 Tablice i obiekty są wyświetlane w oknach **Autostarty** i **lokalne** jako kontrolki drzewa. Wybierz strzałkę po lewej stronie nazwy zmiennej, aby rozwinąć widok, aby wyświetlić pola i właściwości. Oto przykład <xref:System.IO.FileStream?displayProperty=fullName> obiektu w oknie **zmiennych lokalnych** :
 
-![Elementy lokalne — FileStream](../debugger/media/locals-filestream.png "Elementy lokalne — FileStream")
+![Zrzut ekranu okna zmiennych lokalnych z ustawionym ustawieniem File na wartość System. IO. FileStream.](../debugger/media/locals-filestream.png)
 
 Czerwona wartość w oknie zmienne **lokalne** **lub** autozmienne oznacza, że wartość została zmieniona od czasu ostatniej oceny. Zmiana może być z poprzedniej sesji debugowania lub zmieniono wartość w oknie.
 
@@ -89,9 +93,9 @@ Można również przełączać nazwy właściwości i odfiltrować przypięte w�
 
 ## <a name="change-the-context-for-the-autos-or-locals-window"></a>Zmień kontekst okna autostarts lub locale
 
-Możesz użyć paska narzędzi **Lokalizacja debugowania** , aby wybrać żądaną funkcję, wątek lub proces, co powoduje zmianę kontekstu okien zmiennych i **Autos** **lokalnych** .
+Możesz użyć paska narzędzi **Lokalizacja debugowania** , aby wybrać żądaną funkcję, wątek lub proces, co powoduje zmianę kontekstu okien zmiennych i  **lokalnych** .
 
-Aby włączyć pasek narzędzi **Lokalizacja debugowania** , kliknij w pustej części obszaru paska narzędzi, a następnie wybierz opcję **Lokalizacja debugowania** z listy rozwijanej lub wybierz pozycję **Wyświetl**  >  **paski zadań**  >  **Debug Location**.
+Aby włączyć pasek narzędzi **Lokalizacja debugowania** , kliknij w pustej części obszaru paska narzędzi, a następnie wybierz opcję **Lokalizacja debugowania** z listy rozwijanej lub wybierz pozycję **Wyświetl**  >  **paski zadań**  >  .
 
 Ustaw punkt przerwania i Rozpocznij debugowanie. Po trafieniu punktu przerwania wykonywanie jest wstrzymywane i będzie można zobaczyć lokalizację na pasku narzędzi **Lokalizacja debugowania** .
 
@@ -116,7 +120,7 @@ Różne języki kodu wyświetlają różne zmienne w oknie **samochody** .
 
    Ustaw punkt przerwania w wierszu `c = 3;` i uruchom debuger. Po wstrzymaniu wykonywania zostanie wyświetlone okno **samochody** :
 
-   ![Samochody — CSharp](../debugger/media/autos-csharp.png "Samochody — CSharp")
+   ![Zrzut ekranu przedstawiający okno samochody z wartością c ustawioną na 0.](../debugger/media/autos-csharp.png)
 
    Wartość `c` jest równa 0, ponieważ wiersz `c = 3` nie został jeszcze wykonany.
 
@@ -136,7 +140,7 @@ Różne języki kodu wyświetlają różne zmienne w oknie **samochody** .
 
     Ustaw punkt przerwania w wierszu `e = 5;` i uruchom debuger. Po zatrzymaniu zostanie wyświetlone okno **samochody** :
 
-    ![Samochody — C + +](../debugger/media/autos-cplus.png "Samochody — C + +")
+    ![Zrzut ekranu okna autostarts z wyróżnionym wierszem, który pokazuje int c o wartości 3.](../debugger/media/autos-cplus.png)
 
     Zmienna `e` nie została zainicjowana, ponieważ wiersz `e = 5` nie został jeszcze wykonany.
 

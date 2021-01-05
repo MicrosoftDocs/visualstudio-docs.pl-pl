@@ -12,16 +12,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffaeff850c739cd81569a88ae980acf837c413c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c6d451735042374f0e3c6fb2154cd54520a069fc
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84184214"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761436"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Najpierw Spójrz na debuger programu Visual Studio
 
-W tym temacie przedstawiono narzędzia debugera udostępniane przez program Visual Studio. W kontekście programu Visual Studio podczas *debugowania aplikacji*zazwyczaj oznacza to, że aplikacja jest uruchamiana z dołączonym debugerem (to znaczy w trybie debugera). Po wykonaniu tej czynności debuger zapewnia wiele sposobów, aby zobaczyć, co Twój kod działa podczas jego uruchamiania. Możesz przechodzić przez kod i przeglądać wartości przechowywane w zmiennych, można ustawić zegarki dla zmiennych, aby zobaczyć, kiedy zmieniają się wartości, można sprawdzić ścieżkę wykonywania kodu, et al. Jeśli po raz pierwszy podjęto próbę debugowania kodu, przed przeprowadzeniem tego tematu warto odczytać [debugowanie dla bezwzględnych początkujących](../debugger/debugging-absolute-beginners.md) .
+W tym temacie przedstawiono narzędzia debugera udostępniane przez program Visual Studio. W kontekście programu Visual Studio podczas *debugowania aplikacji* zazwyczaj oznacza to, że aplikacja jest uruchamiana z dołączonym debugerem (to znaczy w trybie debugera). Po wykonaniu tej czynności debuger zapewnia wiele sposobów, aby zobaczyć, co Twój kod działa podczas jego uruchamiania. Możesz przechodzić przez kod i przeglądać wartości przechowywane w zmiennych, można ustawić zegarki dla zmiennych, aby zobaczyć, kiedy zmieniają się wartości, można sprawdzić ścieżkę wykonywania kodu, et al. Jeśli po raz pierwszy podjęto próbę debugowania kodu, przed przeprowadzeniem tego tematu warto odczytać [debugowanie dla bezwzględnych początkujących](../debugger/debugging-absolute-beginners.md) .
 
 Opisane tutaj funkcje dotyczą języków C#, C++, Visual Basic, JavaScript i innych obsługiwanych przez program Visual Studio (z wyjątkiem sytuacji, w których zaznaczono inaczej).
 
@@ -64,17 +64,17 @@ Jak wspomniano wcześniej, domyślnie debuger pomija zarządzane właściwości 
 
 Kliknij prawym przyciskiem myszy właściwość lub pole i wybierz opcję **Wkrocz do określonego**, a następnie wybierz jedną z dostępnych opcji.
 
-![Wkrocz do określonego](../debugger/media/dbg-tour-step-into-specific.png "Wkrocz do określonego")
+![Zrzut ekranu przedstawiający debuger programu Visual Studio z wyróżnionym wierszem kodu. Wybrano opcję określony krokowo w menu kontekstowym, a została wybrana metoda Path. Set.](../debugger/media/dbg-tour-step-into-specific.png)
 
 W tym przykładzie **krokowo do określonego** kodu pobiera nam kod dla `Path.set` .
 
-![Wkrocz do określonego](../debugger/media/dbg-tour-step-into-specific-2.png "Wkrocz do określonego")
+![Zrzut ekranu przedstawiający debuger programu Visual Studio z kodem Path. Set. Nawiasy klamrowe otaczające funkcję Set są wyróżnione kolorem żółtym.](../debugger/media/dbg-tour-step-into-specific-2.png)
 
 ## <a name="run-to-a-point-in-your-code-quickly-using-the-mouse"></a>Szybkie uruchamianie do punktu w kodzie przy użyciu myszy
 
-W debugerze Umieść kursor nad wierszem kodu do momentu **kliknięcia** przycisku (uruchom wykonywanie do tego miejsca) do ![kliknięcia](../debugger/media/dbg-tour-run-to-click.png "RunToClick") po lewej stronie.
+W debugerze Umieść kursor nad wierszem kodu do momentu kliknięcia przycisku Uruchom do, aby **kliknąć** przycisk Uruchom do w tym miejscu w ![ debugerze programu Visual Studio. Przycisk wskazuje, że wykonanie powinno być uruchamiane w wierszu, w którym znajduje się przycisk.](../debugger/media/dbg-tour-run-to-click.png) pojawia się po lewej stronie.
 
-![Uruchom do kliknięcia](../debugger/media/dbg-tour-run-to-click-2.png "Uruchom do kliknięcia")
+![Zrzut ekranu przedstawiający debuger programu Visual Studio pokazujący przycisk Uruchom do kliknięcia pojawiający się tuż po lewej stronie wywołania funkcji Update.](../debugger/media/dbg-tour-run-to-click-2.png)
 
 > [!NOTE]
 > Przycisk **Uruchom do kliknięcia** (uruchom wykonywanie do tego miejsca) jest dostępny w programie [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] .
@@ -110,13 +110,13 @@ To polecenie jest przydatne, gdy edytujesz kod i chcesz szybko ustawić tymczaso
 
 Kliknij przycisk **Uruchom** ponownie ![Uruchom aplikację](../debugger/media/dbg-tour-restart.png "Uruchom ponownie aplikację") na pasku narzędzi debugowania (**Ctrl + Shift + F5**).
 
-Po naciśnięciu przycisku **Uruchom ponownie**program zapisze czas w przeciwieństwie do zatrzymywania aplikacji i ponownego uruchomienia debugera. Debuger zatrzymuje się w pierwszym punkcie przerwania, który jest wywoływany przez wykonanie kodu.
+Po naciśnięciu przycisku **Uruchom ponownie** program zapisze czas w przeciwieństwie do zatrzymywania aplikacji i ponownego uruchomienia debugera. Debuger zatrzymuje się w pierwszym punkcie przerwania, który jest wywoływany przez wykonanie kodu.
 
 Jeśli chcesz zatrzymać debuger i wrócić do edytora kodu, możesz nacisnąć czerwony przycisk Zatrzymaj ![debugowanie](../debugger/media/dbg-tour-stop-debugging.png "Zatrzymaj debugowanie") zamiast **ponownego uruchomienia**.
 
 ## <a name="edit-your-code-and-continue-debugging-c-vb-c-xaml"></a>Edytuj swój kod i Kontynuuj debugowanie (C#, VB, C++, XAML)
 
-W większości języków obsługiwanych przez program Visual Studio można edytować kod w trakcie sesji debugowania i kontynuować debugowanie. Aby skorzystać z tej funkcji, kliknij swój kod z kursorem podczas wstrzymania w debugerze, dokonaj edycji, a następnie naciśnij klawisz **F5**, **F10**lub **F11** , aby kontynuować debugowanie.
+W większości języków obsługiwanych przez program Visual Studio można edytować kod w trakcie sesji debugowania i kontynuować debugowanie. Aby skorzystać z tej funkcji, kliknij swój kod z kursorem podczas wstrzymania w debugerze, dokonaj edycji, a następnie naciśnij klawisz **F5**, **F10** lub **F11** , aby kontynuować debugowanie.
 
 ![Edytuj i Kontynuuj debugowanie](../debugger/media/dbg-tips-edit-and-continue.gif "EditAndContinue")
 

@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e1e6951aebac63494aada4e64c5c072eb79c6a9
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: 3d259c6fa69821d1fecd26944227bff86cc82104
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90074985"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815857"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Mierzenie użycia pamięci w programie Visual Studio
 
@@ -23,7 +23,7 @@ Znajdowanie przecieków pamięci i niewydajnej pamięci podczas debugowania za p
 Chociaż w dowolnym momencie można zbierać migawki pamięci w narzędziu **użycie pamięci** , można użyć debugera programu Visual Studio, aby kontrolować sposób wykonywania aplikacji podczas badania problemów z wydajnością. Ustawianie punktów przerwania, krokowe, przerwanie i inne akcje debugera mogą pomóc skupić się na dochodzeniu do wydajności na najbardziej istotnych ścieżkach kodu. Wykonywanie tych akcji, gdy aplikacja jest uruchomiona, może wyeliminować szum z kodu, który nie jest interesujący, i może znacznie skrócić czas, w którym można zdiagnozować problem.
 
 > [!Important]
-> Narzędzia diagnostyczne zintegrowane z debugerem są obsługiwane przez Programowanie dla platformy .NET w programie Visual Studio, w tym ASP.NET, ASP.NET Core, programowanie natywne/C++ oraz aplikacje trybu mieszanego (.NET i Native). System Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania przy użyciu debugera (okno**Narzędzia diagnostyczne** ).
+> Narzędzia diagnostyczne zintegrowane z debugerem są obsługiwane przez Programowanie dla platformy .NET w programie Visual Studio, w tym ASP.NET, ASP.NET Core, programowanie natywne/C++ oraz aplikacje trybu mieszanego (.NET i Native). System Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania przy użyciu debugera (okno **Narzędzia diagnostyczne** ).
 
 W tym samouczku wykonasz następujące czynności:
 
@@ -124,7 +124,7 @@ Aby analizować użycie pamięci, kliknij jedno z linków otwierających szczeg�
 
  Aby wyświetlić wystąpienia wybranego typu w górnym okienku, wybierz ikonę ![wystąpienia](../profiling/media/dbgdiag_mem_instanceicon.png "DBGDIAG_MEM_InstanceIcon") ikona.
 
- ![Widok wystąpień](../profiling/media/dbgdiag_mem_managedtypesreport_instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")
+ ![Zrzut ekranu przedstawiający Widok wystąpień w narzędziu Użycie pamięci programu Visual Studio, w okienku wystąpienia i ścieżki do okienka obiekty główne i odwołania.](../profiling/media/dbgdiag_mem_managedtypesreport_instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")
 
  Widok **wystąpienia** wyświetla wystąpienia wybranego obiektu w migawce w górnym okienku. Okienko **ścieżki do katalogu głównego** i **przywoływanych obiektów** wyświetla obiekty odwołujące się do wybranego wystąpienia i typy, do których odwołuje się wybrane wystąpienie. Gdy debuger zostanie zatrzymany w punkcie, w którym zrobiono migawkę, możesz umieścić wskaźnik myszy nad komórką **wartości** , aby wyświetlić wartości obiektu w etykietce narzędzia.
 
@@ -139,7 +139,7 @@ Aby analizować użycie pamięci, kliknij jedno z linków otwierających szczeg�
 
      Widok **wystąpienia** wyświetla każde wystąpienie wybranego typu. Wybranie wystąpienia powoduje wyświetlenie stosu wywołań, który spowodowało utworzenie wystąpienia w okienku **stosu wywołań alokacji** .
 
-     ![Widok wystąpień](../profiling/media/dbgdiag_mem_native_instances.png "DBGDIAG_MEM_Native_Instances")
+     ![Zrzut ekranu przedstawiający Widok wystąpień w narzędziu Użycie pamięci programu Visual Studio, w okienku wystąpienia i w okienku stos wywołań alokacji.](../profiling/media/dbgdiag_mem_native_instances.png "DBGDIAG_MEM_Native_Instances")
 
 - Wybierz **Widok stosów** na liście **tryb wyświetlania** , aby wyświetlić stos alokacji dla wybranego typu.
 

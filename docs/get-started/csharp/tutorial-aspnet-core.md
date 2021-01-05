@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: a6b089309ca7202c01028b3323ccabfd3668e909
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: 15fcc5981c5711c7c3ddcf7262649a9d3473ee55
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91780981"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833328"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Samouczek: wprowadzenie do języka C# i ASP.NET Core w programie Visual Studio
 
@@ -154,7 +154,7 @@ To rozwiązanie jest zgodne ze wzorcem projektowania **strony Razor** . Jest to 
 
  1. Wyświetl plik **about. cshtml** w edytorze kodu.
 
-     ![Wyświetlanie pliku about. cshtml w edytorze kodu programu Visual Studio](media/csharp-aspnet-razor-aboutcshtml-mycoreapp-code.png)
+     ![Zrzut ekranu przedstawiający pierwsze dziesięć wierszy pliku about. cshtml w edytorze kodu programu Visual Studio.](media/csharp-aspnet-razor-aboutcshtml-mycoreapp-code.png)
 
  1. Wybierz plik **about.cshtml.cs** .
 
@@ -162,7 +162,7 @@ To rozwiązanie jest zgodne ze wzorcem projektowania **strony Razor** . Jest to 
 
  1. Wyświetl plik **about.cshtml.cs** w edytorze kodu.
 
-     ![Wyświetlanie pliku about. cshtml w edytorze kodu programu Visual Studio](media/csharp-aspnet-razor-aboutcshtmlcs-mycoreapp-code.png)
+     ![Zrzut ekranu przedstawiający pierwsze 18 wierszy pliku About.cshtml.cs w edytorze kodu programu Visual Studio. ](media/csharp-aspnet-razor-aboutcshtmlcs-mycoreapp-code.png)
 
  1. Projekt zawiera folder **wwwroot** , który jest katalogiem głównym witryny sieci Web. Rozwiń folder, aby wyświetlić jego zawartość.
 
@@ -176,7 +176,7 @@ To rozwiązanie jest zgodne ze wzorcem projektowania **strony Razor** . Jest to 
 
 ## <a name="run-debug-and-make-changes"></a>Uruchamianie, debugowanie i wprowadzanie zmian
 
-1. Wybierz przycisk **IIS Express** w IDE, aby skompilować i uruchomić aplikację w trybie debugowania. (Alternatywnie naciśnij klawisz **F5**lub wybierz polecenie **Debuguj**  >  **Rozpocznij debugowanie** z paska menu.
+1. Wybierz przycisk **IIS Express** w IDE, aby skompilować i uruchomić aplikację w trybie debugowania. (Alternatywnie naciśnij klawisz **F5** lub wybierz polecenie **Debuguj**  >  **Rozpocznij debugowanie** z paska menu.
 
      ![Wybierz przycisk IIS Express w programie Visual Studio](media/csharp-aspnet-razor-iisexpress.png)
 
@@ -185,7 +185,7 @@ To rozwiązanie jest zgodne ze wzorcem projektowania **strony Razor** . Jest to 
      >
      > Może również zostać wyświetlony komunikat z pytaniem, czy chcesz zaakceptować certyfikat Express SSL protokołu IIS. Aby wyświetlić kod w przeglądarce sieci Web, wybierz opcję **tak**, a następnie wybierz opcję **tak** , jeśli zostanie wyświetlony komunikat ostrzegawczy o zabezpieczeniach.
 
-1. Program Visual Studio uruchamia okno przeglądarki. Na pasku menu powinna zostać wyświetlona **Strona główna**, **informacje**i **kontakty** . (Jeśli nie, wybierz element menu "Hamburger", aby je wyświetlić).
+1. Program Visual Studio uruchamia okno przeglądarki. Na pasku menu powinna zostać wyświetlona **Strona główna**, **informacje** i **kontakty** . (Jeśli nie, wybierz element menu "Hamburger", aby je wyświetlić).
 
     ![Wybierz element menu "Hamburger" z paska menu w aplikacji sieci Web.](media/csharp-aspnet-razor-browser-page.png)
 
@@ -199,7 +199,7 @@ To rozwiązanie jest zgodne ze wzorcem projektowania **strony Razor** . Jest to 
 
 1. Wróć do programu Visual Studio, a następnie naciśnij klawisze **Shift + F5** , aby zatrzymać tryb debugowania. Spowoduje to również zamknięcie projektu w oknie przeglądarki.
 
-1. W programie Visual Studio wybierz pozycję **about. cshtml**. Następnie Usuń słowo _dodatkowe_ i w tym miejscu Dodaj _plik i katalog_wyrazów.
+1. W programie Visual Studio wybierz pozycję **about. cshtml**. Następnie Usuń słowo _dodatkowe_ i w tym miejscu Dodaj _plik i katalog_ wyrazów.
 
     ![Zmień tekst w pliku about. cshtml](media/csharp-aspnet-razor-aboutcshtml-mycoreapp-code-changed.png)
 
@@ -279,7 +279,7 @@ To rozwiązanie jest zgodne ze wzorcem projektowania **strony Razor** . Jest to 
 
 ## <a name="run-debug-and-make-changes"></a>Uruchamianie, debugowanie i wprowadzanie zmian
 
-1. Wybierz przycisk **IIS Express** w IDE, aby skompilować i uruchomić aplikację w trybie debugowania. (Alternatywnie naciśnij klawisz **F5**lub wybierz polecenie **Debuguj**  >  **Rozpocznij debugowanie** z paska menu.
+1. Wybierz przycisk **IIS Express** w IDE, aby skompilować i uruchomić aplikację w trybie debugowania. (Alternatywnie naciśnij klawisz **F5** lub wybierz polecenie **Debuguj**  >  **Rozpocznij debugowanie** z paska menu.
 
      ![Wybierz przycisk IIS Express w programie Visual Studio](media/csharp-aspnet-razor-iisexpress.png)
 
@@ -288,7 +288,7 @@ To rozwiązanie jest zgodne ze wzorcem projektowania **strony Razor** . Jest to 
      >
      > Może również zostać wyświetlony komunikat z pytaniem, czy chcesz zaakceptować certyfikat Express SSL protokołu IIS. Aby wyświetlić kod w przeglądarce sieci Web, wybierz opcję **tak**, a następnie wybierz opcję **tak** , jeśli zostanie wyświetlony komunikat ostrzegawczy o zabezpieczeniach.
 
-1. Program Visual Studio uruchamia okno przeglądarki. Na pasku menu powinna zostać wyświetlona **Strona główna**i **prywatność** .
+1. Program Visual Studio uruchamia okno przeglądarki. Na pasku menu powinna zostać wyświetlona **Strona główna** i **prywatność** .
 
 1. Wybierz opcję **prywatność** z paska menu.
 

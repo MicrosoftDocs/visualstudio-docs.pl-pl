@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: Tworzenie symbolu marginesu | Microsoft Docs'
+description: Dowiedz się, jak dostosować wygląd marginesów edytora przy użyciu rozszerzeń edytora niestandardowego, korzystając z tego przewodnika.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b94ab61f56d74537758c189adc9c104516f67f92
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d8a2ac481ebf76fc2b34be841cd20d15b97fcfa9
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905055"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863085"
 ---
 # <a name="walkthrough-create-a-margin-glyph"></a>Przewodnik: Tworzenie symbolu marginesu
 Możesz dostosować wygląd marginesów edytora przy użyciu rozszerzeń edytora niestandardowego. Ten Instruktaż umieszcza niestandardowy symbol na marginesie wskaźnika za każdym razem, gdy słowo "do zrobienia" pojawia się w komentarzu do kodu.

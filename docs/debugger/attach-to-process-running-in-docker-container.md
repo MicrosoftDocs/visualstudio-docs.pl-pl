@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b32b402e2bbf85cf5c028ec2dc94821ec463644
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: f6e2b851057d924353e6e1e9a211fcbb294353c8
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94674780"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761267"
 ---
 # <a name="attach-to-a-process-running-on-a-docker-container"></a>Dołączanie do procesu działającego w kontenerze platformy Docker 
 
@@ -34,7 +34,7 @@ Debuger programu Visual Studio można dołączyć do procesu działającego w ko
 
 1. W programie Visual Studio wybierz kolejno opcje **debuguj > Dołącz do procesu (Ctrl + Alt + P)** , aby otworzyć okno dialogowe **Dołącz do procesu** .
 
-![Dołącz do menu procesu](../debugger/media/attach-process-menu.png "Attach_To_Process_Menu")
+![Zrzut ekranu przedstawiający okno dialogowe Dołączanie do procesu w programie Visual Studio z informacją o typie połączenia platformy Docker (kontener systemu Linux).](../debugger/media/attach-process-menu.png "Attach_To_Process_Menu")
 
 2. Ustaw **Typ połączenia** na **Docker (kontener systemu Linux)**.
 3. Wybierz pozycję **Znajdź...** , aby ustawić **cel połączenia** za pomocą okna dialogowego **Wybieranie kontenera platformy Docker** .
@@ -63,7 +63,7 @@ Debuger programu Visual Studio można dołączyć do procesu działającego w ko
 
 4. Wybierz odpowiedni proces kontenera z listy **dostępnych procesów** , a następnie wybierz pozycję **Dołącz** , aby rozpocząć debugowanie procesu kontenera języka C# w programie Visual Studio.
 
-    ![Gotowe menu dołączone do platformy Docker](../debugger/media/docker-attach-complete.png "Ukończono menu dołączania Docker systemu Linux")
+    ![Zrzut ekranu przedstawiający okno dialogowe Dołączanie do procesu w programie Visual Studio. Typ połączenia jest ustawiony na Docker (kontener systemu Linux), a wybrano proces dotnet.](../debugger/media/docker-attach-complete.png "Ukończono menu dołączania Docker systemu Linux")
 
 ## <a name="attach-to-a-process-running-on-a-windows-docker-container"></a>Dołączanie do procesu działającego w kontenerze platformy Docker systemu Windows
 
@@ -76,7 +76,7 @@ Debuger programu Visual Studio można dołączyć do procesu działającego w ko
 
 1. W programie Visual Studio wybierz kolejno opcje **debuguj > Dołącz do procesu** (lub **Ctrl + Alt + P**), aby otworzyć okno dialogowe **Dołącz do procesu** .
 
-   ![Dołącz do menu procesu](../debugger/media/attach-process-menu-docker-windows.png "Attach_To_Process_Menu")
+   ![Zrzut ekranu przedstawiający okno dialogowe Dołączanie do procesu w programie Visual Studio z informacją o typie połączenia platformy Docker (kontener systemu Windows).](../debugger/media/attach-process-menu-docker-windows.png "Attach_To_Process_Menu")
 
 2. Ustaw **Typ połączenia** na **Docker (kontener systemu Windows)**.
 3. Wybierz pozycję **Znajdź...** , aby ustawić **cel połączenia** przy użyciu okna dialogowego **Wybieranie kontenera platformy Docker** .
@@ -93,6 +93,6 @@ Debuger programu Visual Studio można dołączyć do procesu działającego w ko
 
 4. Wybierz odpowiedni proces kontenera z listy **dostępnych procesów** , a następnie wybierz pozycję **Dołącz** , aby rozpocząć debugowanie procesu kontenera języka C#.
 
-    ![Gotowe menu dołączone do platformy Docker](../debugger/media/docker-attach-complete-windows.png "Zakończono menu dołączania Docker systemu Windows")
+    ![Zrzut ekranu przedstawiający okno dialogowe Dołączanie do procesu w programie Visual Studio. Typ połączenia jest ustawiony na Docker (kontener systemu Windows), a wybrano proces dotnet.exe.](../debugger/media/docker-attach-complete-windows.png "Zakończono menu dołączania Docker systemu Windows")
 
-5.  Wybierz odpowiedni proces kontenera z listy dostępnych procesów, a następnie wybierz pozycję **Dołącz** , aby rozpocząć debugowanie procesu kontenera języka C#.
+5. Wybierz odpowiedni proces kontenera z listy dostępnych procesów, a następnie wybierz pozycję **Dołącz** , aby rozpocząć debugowanie procesu kontenera języka C#.

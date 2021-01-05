@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: 6badbb7723bf4d8ed0c9385558204c2dc4907574
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 3f90a3d42eb1390adbb242242172aea152a0a54f
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441251"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833237"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Instrukcje: Konfigurowanie testów jednostkowych pod kątem wcześniejszej wersji .NET Framework
 
@@ -62,7 +62,7 @@ Następujące ograniczenia są stosowane po ponownym nakierowaniu projektów tes
 
 4. Użyj listy rozwijanej **platformy docelowej (wszystkie konfiguracje)** , aby zmienić platformę docelową na **.NET Framework 3,5** lub nowszą, jak pokazano w objaśnieniu B na poniższej ilustracji. Nie należy określać wersji klienta.
 
-     ![Docelowa lista rozwijana platformy docelowej&#45;](../test/media/howtoconfigureunitest35frameworkstepb.png)
+     ![Zrzut ekranu przedstawiający okno dialogowe Zaawansowane ustawienia kompilatora. Lista rozwijana platformy docelowej jest wyróżniona, a wartość jest równa ".NET Frameowrk 3,5".](../test/media/howtoconfigureunitest35frameworkstepb.png)
 
 ## <a name="retargeting-for-c-unit-test-projects"></a>Przekierowywanie dla projektów testów jednostkowych C#
 
@@ -74,7 +74,7 @@ Następujące ograniczenia są stosowane po ponownym nakierowaniu projektów tes
 
 3. Na karcie **aplikacja** wybierz pozycję **platforma docelowa**. Z listy rozwijanej wybierz **.NET Framework 3,5** lub nowszą wersję, jak pokazano na poniższej ilustracji. Nie należy określać wersji klienta.
 
-   ![Docelowa lista rozwijana platformy docelowej&#45;](../test/media/howtoconfigureunittest35frameworkcsharp.png)
+   ![Ilustracja karty aplikacja w okienku właściwości Eksplorator rozwiązań, która wyróżnia lokalizację listy rozwijanej platforma docelowa.](../test/media/howtoconfigureunittest35frameworkcsharp.png)
 
 ## <a name="retargeting-for-ccli-unit-test-projects"></a>Przekierowywanie dla projektów testów jednostkowych C++/CLI
 
@@ -106,7 +106,7 @@ Następujące ograniczenia są stosowane po ponownym nakierowaniu projektów tes
 
 6. W **Eksplorator rozwiązań** wybierz opcję Wybierz **Załaduj ponownie projekt** z menu rozwijanego prawym przyciskiem myszy nowego projektu testowego języka C++.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Tworzenie rozwiązań SharePoint](../sharepoint/create-sharepoint-solutions.md)
 - [Kompilowanie i debugowanie rozwiązań SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)

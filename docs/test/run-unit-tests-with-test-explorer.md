@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58faf100c61a25ae014bdcc0b09d161e924ad5c9
-ms.sourcegitcommit: 21ac4a0c8ffac3964b75604678b12e0955e0159b
+ms.openlocfilehash: b934c6cb7c2a6ba98113a5e68091ab53f54b1423
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97098530"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833367"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów
 
@@ -70,7 +70,7 @@ Można uruchomić wszystkie testy w rozwiązaniu, wszystkie testy w grupie lub z
 
 - Wybierz pojedyncze testy, które chcesz uruchomić, otwórz menu dostępne po kliknięciu prawym przyciskiem myszy, a następnie wybierz polecenie **Uruchom wybrane testy**.
 
-- Jeśli pojedyncze testy nie mają żadnych zależności, które uniemożliwiają ich uruchomienie w dowolnej kolejności, należy włączyć równoległe wykonywanie testów przy użyciu ![Wykonaj&#95;parallelicon&#45;mały](../test/media/ute_parallelicon-small.png) przycisk przełączania na pasku narzędzi. Może to znacznie skrócić czas potrzebny do uruchomienia wszystkich testów.
+- Jeśli pojedyncze testy nie mają żadnych zależności, które uniemożliwiają ich uruchomienie w dowolnej kolejności, należy włączyć równoległe wykonywanie testów przy użyciu ![Zrzut ekranu przedstawiający przycisk przełączania równoległego wykonywania testu na pasku narzędzi programu Visual Studio Test Explorer. Po wybraniu tego przycisku testy będą wykonywane równolegle.](../test/media/ute_parallelicon-small.png) przycisk przełączania na pasku narzędzi. Może to znacznie skrócić czas potrzebny do uruchomienia wszystkich testów.
 
 **Pasek przekazywania/niepowodzenia** w górnej części okna **Eksploratora testów** jest animowany w miarę przebiegu testów. Po zakończeniu przebiegu testu **pasek powodzenia/niepowodzenia** zmieni kolor na zielony, jeśli wszystkie testy zakończyły się powodzeniem lub zmienią kolor na czerwony, jeśli którykolwiek z testów nie powiódł się.
 ::: moniker-end
@@ -150,7 +150,7 @@ Eksplorator testów pozwala grupować testy w hierarchię. Domyślnym grupowanie
 
 Można zdefiniować własne poziomy hierarchii i według **stanu** , a następnie **klasy** , na przykład wybierając pozycję Grupuj według opcji w preferowanej kolejności.
 
-![Grupuj według stanu, a następnie klasy](../test/media/vs-2019/test-explorer-groupby-state-16-2.png)
+![Zrzut ekranu przedstawiający Eksploratora testów programu Visual Studio z hierarchią testów w jednym okienku i menu Grupuj według w drugim z zaznaczonymi opcjami klasy i stanu.](../test/media/vs-2019/test-explorer-groupby-state-16-2.png)
 ::: moniker-end
 
 ### <a name="test-explorer-groups"></a>Grupy Eksploratora testów
@@ -167,7 +167,7 @@ Można zdefiniować własne poziomy hierarchii i według **stanu** , a następni
 |Grupa|Opis|
 |-|-----------------|
 |**Czas trwania**|Grupuje testy według czasu wykonywania: **szybka**, **średnia** i **wolna**.|
-|**Stan**|Grupuje testy według wyników wykonywania: **testy zakończone niepomyślnie**, **testy pominięte**, **testy zakończone powodzeniem**, **nie uruchomiono**|
+|**Państwu**|Grupuje testy według wyników wykonywania: **testy zakończone niepomyślnie**, **testy pominięte**, **testy zakończone powodzeniem**, **nie uruchomiono**|
 |**Struktura docelowa** | Grupuje testy według struktury obiektów docelowych projektów |
 |**Przestrzeń nazw**|Grupuje testy według przestrzeni nazw zawierającej.|
 |**Project**|Grupuje testy według projektu zawierającego.|
@@ -207,7 +207,7 @@ Można utworzyć i zapisać listę testów, które chcesz uruchomić lub wyświe
 
 **Aby otworzyć listę odtwarzania**, wybierz pozycję **Testuj** > **listę odtwarzania** z menu programu Visual Studio, a następnie wybierz pozycję z listy ostatnio używanych list odtwarzania lub wybierz pozycję **Otwórz listę odtwarzania** , aby określić nazwę i lokalizację listy odtwarzania.
 
-Jeśli pojedyncze testy nie mają żadnych zależności, które uniemożliwiają ich uruchomienie w dowolnej kolejności, należy włączyć równoległe wykonywanie testów przy użyciu ![Wykonaj&#95;parallelicon&#45;mały](../test/media/ute_parallelicon-small.png) przycisk przełączania na pasku narzędzi. Może to znacznie skrócić czas potrzebny do uruchomienia wszystkich testów.
+Jeśli pojedyncze testy nie mają żadnych zależności, które uniemożliwiają ich uruchomienie w dowolnej kolejności, należy włączyć równoległe wykonywanie testów przy użyciu ![Zrzut ekranu przedstawiający przycisk przełączania równoległego wykonywania testu na pasku narzędzi programu Visual Studio Test Explorer.](../test/media/ute_parallelicon-small.png) przycisk przełączania na pasku narzędzi. Może to znacznie skrócić czas potrzebny do uruchomienia wszystkich testów.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 Można utworzyć i zapisać listę testów, które chcesz uruchomić lub wyświetlić jako grupę. Po wybraniu listy odtwarzania testy z listy są wyświetlane na nowej karcie programu Test Explorer. Test można dodać do więcej niż jednej listy odtwarzania.
@@ -264,7 +264,7 @@ Użyj następującego formatu dla xUnit. Upewnij się, że istnieje spacja międ
 
 [Grupy](#test-explorer-groups) są również dostępne jako kolumny w Eksploratorze testów oraz cechy, ślad stosu, komunikat o błędzie i w pełni kwalifikowana nazwa. Większość kolumn nie jest domyślnie widoczna i można dostosować wyświetlane kolumny oraz kolejność ich wyświetlania.
 
-![Grupuj według stanu, a następnie klasy](../test/media/vs-2019/test-explorer-columns-16-2.png)
+![Zrzut ekranu przedstawiający Eksploratora testów programu Visual Studio pokazujący menu z wybranymi kolumnami i podmenu z wybranym czasem trwania, cechami i komunikatem o błędzie.](../test/media/vs-2019/test-explorer-columns-16-2.png)
 
 ### <a name="filter-sort-and-rearrange-test-columns"></a>Filtrowanie, sortowanie i zmiana rozmieszczenia kolumn testowych
 
@@ -318,7 +318,7 @@ Aby odfiltrować według innych kryteriów:
 ::: moniker range=">=vs-2019"
 |Kwalifikator|Opis|
 |-|-----------------|
-|**Stan**|Wyszukuje dopasowania w nazwach kategorii Eksploratora testów: **testy zakończone niepomyślnie**, **testy pominięte**, **testy zakończone powodzeniem**.|
+|**Państwu**|Wyszukuje dopasowania w nazwach kategorii Eksploratora testów: **testy zakończone niepomyślnie**, **testy pominięte**, **testy zakończone powodzeniem**.|
 |**Cech**|Wyszukuje dopasowania kategorii i wartości. Składnia określająca kategorie i wartości cech jest definiowana przez strukturę testów jednostkowych.|
 |**W pełni kwalifikowana nazwa**|Przeszukuje w pełni kwalifikowaną nazwę testowanych przestrzeni nazw, klas i metod w celu dopasowania.|
 |**Project**|Wyszukuje dopasowania w nazwach projektów testowych.|
@@ -377,7 +377,7 @@ Testy można uruchomić z poziomu Eksploratora testów, klikając prawym przycis
 > [!NOTE]
 > Nie można uruchomić testu w klasie abstrakcyjnej, ponieważ testy są zdefiniowane tylko w klasach abstrakcyjnych i nie są tworzone. Aby uruchomić testy w klasach abstrakcyjnych, należy utworzyć klasę, która dziedziczy z klasy abstrakcyjnej.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Testowanie jednostkowe kodu](../test/unit-test-your-code.md)
 - [Debugowanie testów jednostkowych za pomocą narzędzia Eksplorator testów](../test/debug-unit-tests-with-test-explorer.md)

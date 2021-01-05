@@ -1,17 +1,17 @@
 ---
 title: Właściwości kompilacji narzędzi kontenera programu Visual Studio
 author: ghogen
-description: Przegląd procesu kompilacji narzędzi kontenera
+description: Dowiedz się, jak edytować właściwości kompilacji narzędzi kontenera, aby dostosować sposób, w jaki program Visual Studio kompiluje i uruchamia projekt kontenera.
 ms.author: ghogen
 ms.date: 06/06/2019
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: 427a70d9bc4f6ef326ffb16e7d26df9d8fae2365
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e8675bd0ea12b30ce678ce454bcedee457ddacd
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283206"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846733"
 ---
 # <a name="container-tools-build-properties"></a>Właściwości kompilacji narzędzi kontenera
 
@@ -39,7 +39,7 @@ W poniższej tabeli przedstawiono właściwości programu MSBuild dostępne dla 
 | DockerDebuggeeWorkingDirectory | Podczas debugowania, w debugerze jest nakazuje użycie tej ścieżki jako katalogu roboczego. | C:\app (Windows) lub/App (Linux) |1.7.8 lub nowszy|
 | DockerDefaultTargetOS | Domyślny docelowy system operacyjny używany podczas kompilowania obrazu platformy Docker. | Ustawione przez program Visual Studio. |1.0.1985401 lub nowszy|
 | DockerImageLabels | Domyślny zestaw etykiet stosowany do obrazu platformy Docker. | com. Microsoft. Created-by = Visual-Studio; com. Microsoft. Visual-Studio. Project-Name = $ (MSBuildProjectName) |1.5.4 lub nowszy|
-| DockerFastModeProjectMountDirectory|W **trybie szybkim**ta właściwość kontroluje, gdzie katalog wyjściowy projektu jest instalowany woluminowo w działającym kontenerze.|C:\app (Windows) lub/App (Linux)|1.9.2 lub nowszy|
+| DockerFastModeProjectMountDirectory|W **trybie szybkim** ta właściwość kontroluje, gdzie katalog wyjściowy projektu jest instalowany woluminowo w działającym kontenerze.|C:\app (Windows) lub/App (Linux)|1.9.2 lub nowszy|
 | DockerfileBuildArguments | Dodatkowe argumenty przekazane do polecenia [Docker Build](https://docs.docker.com/engine/reference/commandline/build/) . | Nie dotyczy. |1.0.1872750 lub nowszy|
 | DockerfileContext | Domyślny kontekst używany podczas kompilowania obrazu platformy Docker jako ścieżki względnej do pliku dockerfile. | Ustawione przez program Visual Studio. |1.0.1872750 lub nowszy|
 | DockerfileFastModeStage | Etap pliku dockerfile (czyli element docelowy), który ma być używany podczas kompilowania obrazu w trybie debugowania. | Pierwszy etap znaleziono w pliku dockerfile (podstawowy) |

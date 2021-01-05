@@ -2,7 +2,7 @@
 title: Informacje o rozwiązaniach i projektach
 description: Dowiedz się więcej o projektach i rozwiązaniach programu Visual Studio, sposobach tworzenia nowych projektów na podstawie szablonu oraz sposobie wyświetlania & zarządzania projektami w programie Eksplorator rozwiązań.
 ms.custom: SEO-VS-2020, contperf-fy21q2
-ms.date: 12/17/2020
+ms.date: 12/31/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.addnewitem
@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51a2f9683dd2285cc71dfff67020687f0c48afa4
-ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
+ms.openlocfilehash: 3b34d96f49370a71a63e986a79584caffbc00adf
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97683914"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847042"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Rozwiązania i projekty w programie Visual Studio
 
@@ -49,6 +49,14 @@ Pliki projektu są oparte na [schemacie XML programu MSBuild](../msbuild/msbuild
 > [!NOTE]
 > Nie musisz używać rozwiązań ani projektów w programie Visual Studio do edytowania, kompilowania i debugowania kodu. Możesz po prostu otworzyć folder zawierający pliki źródłowe w programie Visual Studio i rozpocząć edycję. Aby uzyskać więcej informacji, zobacz [Programowanie kodu w programie Visual Studio bez projektów i rozwiązań](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
 
+### <a name="create-new-projects"></a>Utwórz nowe projekty
+
+Najprostszym sposobem tworzenia nowego projektu jest użycie szablonu projektu dla tego typu projektu. Szablon projektu zawiera podstawowy zestaw wstępnie wygenerowanych plików kodu, plików konfiguracji, zasobów i ustawień. Użyj opcji **plik**  >  **Nowy**  >  **projekt** , aby wybrać szablon projektu. Aby uzyskać więcej informacji, zobacz [Tworzenie nowego projektu](create-new-project.md).
+
+Można również utworzyć niestandardowy szablon projektu, za pomocą którego można tworzyć nowe projekty z programu. Aby uzyskać więcej informacji, zobacz [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md).
+
+Podczas tworzenia nowego projektu program Visual Studio zapisuje go w domyślnej lokalizacji *%USERPROFILE%\source\repos*. Aby zmienić tę lokalizację, przejdź do **lokalizacji narzędzia**  >  **Opcje**  >  **projekty i rozwiązania**  >  . Aby uzyskać więcej informacji, zobacz [okno dialogowe Opcje: projekty i rozwiązania > lokalizacje](./reference/projects-solutions-locations-options.md).
+
 ## <a name="solutions"></a>Rozwiązania
 
 Projekt jest zawarty w *rozwiązaniu*. Pomimo nazwy, rozwiązanie nie jest "odpowiedzią". Jest to po prostu kontener dla co najmniej jednego powiązanego projektu, a także informacje o kompilacji, ustawienia okna programu Visual Studio oraz inne pliki, które nie są skojarzone z określonym projektem.
@@ -69,14 +77,6 @@ Program Visual Studio używa dwóch typów plików (*. sln* i *. suo*) do przech
 
 "Folder rozwiązania" to folder wirtualny, który jest tylko w **Eksplorator rozwiązań**, w którym można go użyć do grupowania projektów w rozwiązaniu. Jeśli chcesz zlokalizować plik rozwiązania na komputerze, przejdź do pozycji **Narzędzia**  >  **Opcje**  >  **projekty i rozwiązania**  >  . Aby uzyskać więcej informacji, zobacz [okno dialogowe Opcje: projekty i rozwiązania > lokalizacje](./reference/projects-solutions-locations-options.md).
 
-## <a name="create-new-projects"></a>Utwórz nowe projekty
-
-Najprostszym sposobem tworzenia nowego projektu jest użycie szablonu projektu dla tego typu projektu. Szablon projektu zawiera podstawowy zestaw wstępnie wygenerowanych plików kodu, plików konfiguracji, zasobów i ustawień. Użyj opcji **plik**  >  **Nowy**  >  **projekt** , aby wybrać szablon projektu. Aby uzyskać więcej informacji, zobacz [Tworzenie nowego projektu](create-new-project.md).
-
-Można również utworzyć niestandardowy szablon projektu, za pomocą którego można tworzyć nowe projekty z programu. Aby uzyskać więcej informacji, zobacz [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md).
-
-Podczas tworzenia nowego projektu program Visual Studio zapisuje go w domyślnej lokalizacji *%USERPROFILE%\source\repos*. Aby zmienić tę lokalizację, przejdź do **lokalizacji narzędzia**  >  **Opcje**  >  **projekty i rozwiązania**  >  . Aby uzyskać więcej informacji, zobacz [okno dialogowe Opcje: projekty i rozwiązania > lokalizacje](./reference/projects-solutions-locations-options.md).
-
 > [!TIP]
 > Aby zapoznać się z przykładem projektu i rozwiązania utworzonego od podstaw, wykonaj instrukcje krok po kroku i przykładowy kod, zobacz [wprowadzenie do projektów i rozwiązań](../get-started/tutorial-projects-solutions.md).
 
@@ -84,19 +84,34 @@ Podczas tworzenia nowego projektu program Visual Studio zapisuje go w domyślnej
 
 Po utworzeniu nowego projektu można użyć **Eksplorator rozwiązań** , aby wyświetlić projekt i rozwiązanie oraz ich skojarzone elementy i zarządzać nimi. Na poniższej ilustracji przedstawiono **Eksplorator rozwiązań** z rozwiązaniem w języku C# zawierającym dwa projekty:
 
-![Zrzut ekranu przedstawiający Eksplorator rozwiązań.](../ide/media/vs2015_solution_explorer.png)
+::: moniker range="vs-2017"
 
-Wiele poleceń menu jest dostępnych w menu po kliknięciu prawym przyciskiem myszy na różnych elementach w **Eksplorator rozwiązań**. Te polecenia obejmują Kompilowanie projektu, zarządzanie pakietami NuGet, Dodawanie odwołania, zmiana nazwy pliku i uruchamianie testów, po prostu do nazwy a. Pasek narzędzi w górnej części **Eksplorator rozwiązań** zawiera przyciski do przełączenia z widoku rozwiązania do widoku folderu, wyświetlania ukrytych plików, zwijania wszystkich węzłów i innych.
+![Zrzut ekranu przedstawiający Eksplorator rozwiązań z dwoma projektami.](../ide/media/vs2015_solution_explorer.png)
+
+Pasek narzędzi w górnej części **Eksplorator rozwiązań** zawiera przyciski do przełączenia z widoku rozwiązania do widoku folderu, wyświetlania ukrytych plików, zwijania wszystkich węzłów i innych.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+![Zrzut ekranu przedstawiający Eksplorator rozwiązań z dwoma projektami w programie Visual Studio 2019.](../ide/media/solution-explorer.png)
+
+Pasek narzędzi w górnej części **Eksplorator rozwiązań** zawiera przyciski do przełączania z widoku rozwiązania do widoku folderu, filtrowania oczekujących zmian, wyświetlania wszystkich plików, zwijania wszystkich węzłów, wyświetlania stron [Właściwości](managing-project-and-solution-properties.md) , podglądu kodu w [edytorze kodu](writing-code-in-the-code-and-text-editor.md)i innych.
+
+::: moniker-end
+
+Wiele poleceń menu jest dostępnych w menu kontekstowym po kliknięciu prawym przyciskiem myszy dla różnych elementów w **Eksplorator rozwiązań**. Te polecenia obejmują Kompilowanie projektu, zarządzanie pakietami NuGet, Dodawanie odwołania, zmiana nazwy pliku i uruchamianie testów, po prostu do nazwy a.
 
 > [!TIP]
 > Jeśli zamknięto Eksplorator rozwiązań i chcesz go otworzyć ponownie, wybierz pozycję **okno**  >  **Ustawienia układ okna** z paska menu.
 
 W przypadku projektów ASP.NET Core można dostosować sposób zagnieżdżania plików w **Eksplorator rozwiązań**. Aby uzyskać więcej informacji, zobacz [Dostosowywanie zagnieżdżania plików w Eksplorator rozwiązań](file-nesting-solution-explorer.md).
 
-Aby wyświetlić listę niektórych ikon, które pojawiają się w Eksplorator rozwiązań, zobacz [ikony widok klasy i Przeglądarka obiektów](class-view-and-object-browser-icons.md).
+## <a name="see-also"></a>Zobacz też
 
-## <a name="see-also"></a>Zobacz także
-
-- [Visual Studio IDE](../get-started/visual-studio-ide.md)
+- [Wprowadzenie do projektów i rozwiązań](../get-started/tutorial-projects-solutions.md)
+- [Zarządzanie właściwościami projektów i rozwiązań](managing-project-and-solution-properties.md)
+- [Rozwiązania filtrowane w programie Visual Studio](filtered-solutions.md)
 - [Przenoszenie, migrowanie i uaktualnianie projektów](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
+- [Zasoby do rozwiązywania problemów z błędami środowiska IDE programu Visual Studio](./reference/resources-for-troubleshooting-integrated-development-environment-errors.md)
 - [Projekty i rozwiązania (Visual Studio dla komputerów Mac)](/visualstudio/mac/projects-and-solutions)

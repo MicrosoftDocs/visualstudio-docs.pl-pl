@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: be0ba7b32af5247bb0dccccb68d900cb6797cc13
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8be766e078a04d713ed69aa0b9cc464433dcb73d
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801181"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761397"
 ---
 # <a name="get-started-with-r-tools-for-visual-studio"></a>Wprowadzenie do R Tools for Visual Studio
 
@@ -29,7 +29,7 @@ Po zainstalowaniu programu R Tools for Visual Studio (zobacz temat [Instalacja](
 
 1. Po utworzeniu projektu zostaną wyświetlone następujące okna:
 
-    - Po prawej stronie jest program Visual Studio Eksplorator rozwiązań, w którym Twój projekt jest widoczny w ramach *rozwiązania*zawierającego. (Rozwiązania mogą zawierać dowolną liczbę projektów różnych typów; Aby uzyskać szczegółowe informacje, zobacz [projekty](r-projects-in-visual-studio.md) .
+    - Po prawej stronie jest program Visual Studio Eksplorator rozwiązań, w którym Twój projekt jest widoczny w ramach *rozwiązania* zawierającego. (Rozwiązania mogą zawierać dowolną liczbę projektów różnych typów; Aby uzyskać szczegółowe informacje, zobacz [projekty](r-projects-in-visual-studio.md) .
     - W lewym górnym rogu znajduje się nowy plik języka R ( `script.R` ), w którym można edytować kod źródłowy ze wszystkimi funkcjami edycji programu Visual Studio.
     - W lewym dolnym rogu znajduje się okno **R Interactive** , w którym można interaktywnie opracowywać i testować kod.
 
@@ -62,7 +62,7 @@ Po zainstalowaniu programu R Tools for Visual Studio (zobacz temat [Instalacja](
 
 1. Niektóre polecenia, takie jak `plot(1:100)` , otwierają nowe okno w programie Visual Studio, gdy dane wyjściowe nie mogą być wyświetlane bezpośrednio w oknie interaktywnym:
 
-    ![Wyświetlanie wykresu w programie Visual Studio](media/getting-started-07-plot-window.png)
+    ![Zrzut ekranu przedstawiający okno programu Visual Studio R Graph zawierające dane wyjściowe wykresu funkcji grafu (1:100).](media/getting-started-07-plot-window.png)
 
 Okno interaktywne pozwala także przeglądać historię, ładować i zapisywać obszary robocze, dołączać do debugera oraz korzystać z plików kodu źródłowego zamiast używać kopiowania i wklejania. Aby uzyskać szczegółowe informacje [, zobacz Praca z oknem R Interactive](interactive-repl-for-r-in-visual-studio.md) .
 
@@ -86,12 +86,12 @@ Na przykład następujące kroki tworzą mały kod, aby poznać [centralny limit
 
 1. Aby szybko zobaczyć wyniki, zaznacz cały kod (**Ctrl** + **A**), a następnie naciśnij klawisz **Ctrl** + **Enter** lub kliknij prawym przyciskiem myszy i wybierz pozycję **wykonaj w trybie interaktywnym**. Cały wybrany kod jest uruchamiany w oknie interaktywnym, tak jak w przypadku jego wpisania bezpośrednio, pokazując wynik w oknie wykresu:
 
-    ![Wyświetlanie wykresu w programie Visual Studio](media/getting-started-08-plot1.png)
+    ![Zrzut ekranu przedstawiający okno wykresu programu Visual Studio R przedstawiające wykres gęstości populacji.](media/getting-started-08-plot1.png)
 
 1. W przypadku pojedynczego wiersza po prostu naciśnij klawisz **Ctrl** + **Enter** w dowolnym momencie, aby uruchomić ten wiersz w oknie interaktywnym.
 
 > [!Tip]
-> Zapoznaj się z wzorcem wprowadzania zmian i naciśnięciem klawisza **Ctrl** + **Enter** (lub Zaznacz wszystko przy użyciu **kombinacji Ctrl** + **a** i naciśnij klawisz **Ctrl** + **Enter**), aby szybko uruchomić kod. Wykonanie tej czynności jest znacznie bardziej wydajne niż używanie myszy na potrzeby tych samych operacji.
+> Zapoznaj się z wzorcem wprowadzania zmian i naciśnięciem klawisza **Ctrl** +  (lub Zaznacz wszystko przy użyciu **kombinacji Ctrl** + **a** i naciśnij klawisz **Ctrl** + **Enter**), aby szybko uruchomić kod. Wykonanie tej czynności jest znacznie bardziej wydajne niż używanie myszy na potrzeby tych samych operacji.
 >
 > Ponadto możesz przeciągnąć i upuścić okno kreolenia poza ramką programu Visual Studio i umieścić je w dowolnym miejscu na ekranie. Następnie można zmienić rozmiar okna wykresu na żądany wymiar, a następnie zapisać go do obrazu lub pliku PDF.
 
@@ -103,7 +103,7 @@ Na przykład następujące kroki tworzą mały kod, aby poznać [centralny limit
     lines(density(samp.means))
     ```
 
-1. Naciśnij klawisze **Ctrl** + **a** i **Ctrl** + **Enter** ponownie, aby uruchomić kod, generując następujący wynik:
+1. Naciśnij klawisze **Ctrl** + **a** i **Ctrl** +  ponownie, aby uruchomić kod, generując następujący wynik:
 
     ![Zaktualizowany podwójny wykres w programie Visual Studio](media/getting-started-09-plot2.png)
 
@@ -135,13 +135,13 @@ Można to zrobić w edytorze. Aby uzyskać szczegółowe informacje, zobacz [Edy
 
 Jedną z najważniejszych zalet programu Visual Studio jest interfejs użytkownika debugowania. RTVS kompiluje się w oparciu o tę silną podstawę i dodaje innowacyjny interfejs użytkownika, taki jak [Eksplorator zmiennych](variable-explorer.md). Po prostu Przyjrzyjmy się najpierw debugowaniu.
 
-1. Aby rozpocząć, zresetuj bieżący obszar roboczy, aby wyczyścić wszystkie zrobione dotąd operacje przy użyciu **R Tools**  >  **Session**  >  polecenia menu**resetowania** sesji języka R. Domyślnie wszystkie czynności wykonywane w oknie interaktywnym naliczane są do bieżącej sesji, która jest również używana przez debuger. Przez zresetowanie sesji, należy się upewnić, że sesja debugowania rozpoczyna się od braku istniejących danych. Polecenie **Reset** nie ma jednak wpływu na *skrypt. Plik źródłowy języka R* , ponieważ jest zarządzany i zapisywany poza obszarem roboczym.
+1. Aby rozpocząć, zresetuj bieżący obszar roboczy, aby wyczyścić wszystkie zrobione dotąd operacje przy użyciu   >    >  polecenia menu **resetowania** sesji języka R. Domyślnie wszystkie czynności wykonywane w oknie interaktywnym naliczane są do bieżącej sesji, która jest również używana przez debuger. Przez zresetowanie sesji, należy się upewnić, że sesja debugowania rozpoczyna się od braku istniejących danych. Polecenie **Reset** nie ma jednak wpływu na *skrypt. Plik źródłowy języka R* , ponieważ jest zarządzany i zapisywany poza obszarem roboczym.
 
-1. Za pomocą *skryptu. Plik R* utworzony w poprzedniej sekcji Ustaw punkt przerwania w wierszu, który rozpoczyna się od `pop <-` przez umieszczenie karetki w tym wierszu, a następnie naciśnięcie klawisza **F9**lub wybranie polecenia **Debuguj**  >  **Przełącz punkt przerwania** . Alternatywnie możesz kliknąć na lewym marginesie (lub marginesie) dla tego wiersza, gdzie pojawia się czerwona kropka punktu przerwania:
+1. Za pomocą *skryptu. Plik R* utworzony w poprzedniej sekcji Ustaw punkt przerwania w wierszu, który rozpoczyna się od `pop <-` przez umieszczenie karetki w tym wierszu, a następnie naciśnięcie klawisza **F9** lub wybranie polecenia **Debuguj**  >  **Przełącz punkt przerwania** . Alternatywnie możesz kliknąć na lewym marginesie (lub marginesie) dla tego wiersza, gdzie pojawia się czerwona kropka punktu przerwania:
 
     ![Ustawianie punktu przerwania w edytorze](media/getting-started-11-debug1.png)
 
-1. Uruchom Debuger z kodem w *skrypcie. R* przez wybranie przycisku **źródłowy plik startowy** na pasku narzędzi, wybranie **Debug**  >  pozycji menu**plik startowy źródła** debugowania lub naciśnięcie klawisza **F5**. Program Visual Studio przechodzi w tryb debugowania i zaczyna działać w kodzie. W wierszu, w którym ustawiany jest punkt przerwania:
+1. Uruchom Debuger z kodem w *skrypcie. R* przez wybranie przycisku **źródłowy plik startowy** na pasku narzędzi, wybranie   >  pozycji menu **plik startowy źródła** debugowania lub naciśnięcie klawisza **F5**. Program Visual Studio przechodzi w tryb debugowania i zaczyna działać w kodzie. W wierszu, w którym ustawiany jest punkt przerwania:
 
     ![Zatrzymywanie w punkcie przerwania w debugerze programu Visual Studio](media/getting-started-12-debug2.png)
 
@@ -163,7 +163,7 @@ Aby dowiedzieć się więcej, zobacz [debugowanie](debugging-r-in-visual-studio.
 
 ## <a name="next-steps"></a>Następne kroki
 
-W tym instruktażu przedstawiono podstawowe zagadnienia dotyczące projektów języka R, przy użyciu okna interaktywnego, edytowania kodu i debugowania w programie Visual Studio. Aby kontynuować Eksplorowanie więcej możliwości, zobacz następujące artykuły, a także artykuły widoczne w spisie treści:
+W tym instruktażu przedstawiono podstawowe zagadnienia dotyczące projektów języka R, przy użyciu okna interaktywnego, edytowania kodu i debugowania w programie Visual Studio. Aby kontynuować Eksplorowanie więcej możliwości, zobacz następujące artykuły i artykuły widoczne w spisie treści:
 
 - [Przykładowe projekty](getting-started-samples.md)
 - [Edytowanie kodu](editing-r-code-in-visual-studio.md)

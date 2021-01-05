@@ -1,5 +1,6 @@
 ---
 title: Użycie procesora GPU | Microsoft Docs
+description: Dowiedz się, jak używać narzędzia użycie procesora GPU w profilerze wydajności, aby lepiej zrozumieć użycie sprzętu przez aplikację Direct3D na wysokim poziomie.
 ms.date: 11/01/2018
 ms.topic: conceptual
 author: mikejo5000
@@ -7,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a738490933c6f2d1cdf89e7e974a268540af991
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: a6b143cc0b3001f0a182de43f1b6eea554025eda
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90074972"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815655"
 ---
 # <a name="gpu-usage"></a>Użycie procesora GPU
 
@@ -62,11 +63,11 @@ Aby wygenerować i wyświetlić raport użycia procesora GPU:
 
 1. W dolnej części okna sesji diagnostycznej wybierz łącze **Zatrzymaj zbieranie** lub wybierz pozycję **Zatrzymaj** w lewym górnym rogu.
 
-   ![Zrzut ekranu przedstawiający okno sesji diagnostyki](media/gfx_diag_gpu_usage_collect.png "gfx_diag_gpu_usage_collect")
+   ![Zrzut ekranu przedstawiający okno sesji diagnostyki w narzędziu Użycie procesora GPU, pokazujący ramki na sekundę, użycie procesora GPU, przycisk Zatrzymaj i łącze Zatrzymaj zbieranie.](media/gfx_diag_gpu_usage_collect.png "gfx_diag_gpu_usage_collect")
 
 2. W górnej części raportu wybierz sekcję z jednego z grafów, który pokazuje problem, który chcesz zbadać. Wybór może być dłuższy niż 3 sekundy. Dłuższe sekcje są obcinane do początku.
 
-   ![Zrzut ekranu przedstawiający okno sesji diagnostyki](media/gfx_diag_gpu_usage_select1.png "gfx_diag_gpu_usage_select1")
+   ![Zrzut ekranu przedstawiający okno sesji diagnostyki w narzędziu Użycie procesora GPU z wybraną częścią osi czasu sesji diagnostycznej.](media/gfx_diag_gpu_usage_select1.png "gfx_diag_gpu_usage_select1")
 
 3. Aby wyświetlić szczegółową oś czasu zaznaczenia, w dolnej części raportu w **... Kliknij tutaj, aby wyświetlić szczegóły użycia procesora GPU dla tego komunikatu zakresu** , wybierz pozycję **Wyświetl szczegóły**.
 
@@ -84,7 +85,7 @@ Począwszy od programu Visual Studio 2017, można otworzyć te dane za pomocą [
 
 ## <a name="use-the-gpu-usage-report"></a>Korzystanie z raportu użycia procesora GPU
 
-W górnej części raportu o użyciu procesora GPU przedstawiono osie czasu dla działania przetwarzania procesora CPU, działania renderowania procesora GPU i działania kopiowania procesora GPU. Te osie czasu są podzielone przez jasne Szare słupki pionowe, które wskazują pionie wyświetlania. Częstotliwość wyświetlania słupków jest zgodna z szybkością odświeżania jednego z ekranów (wybraną przy użyciu listy rozwijanej **Display** ), z której zostały zebrane dane użycia procesora GPU.
+W górnej części raportu o użyciu procesora GPU przedstawiono osie czasu dla działania przetwarzania procesora CPU, działania renderowania procesora GPU i działania kopiowania procesora GPU. Te osie czasu są podzielone przez jasne Szare słupki pionowe, które wskazują synchronizację w pionie ekranu (pionie). Częstotliwość wyświetlania słupków jest zgodna z szybkością odświeżania jednego z ekranów (wybraną przy użyciu listy rozwijanej **Display** ), z której zostały zebrane dane użycia procesora GPU.
 
 Ponieważ wyświetlacz może mieć wyższą częstotliwość odświeżania niż wartość docelową wydajności aplikacji, może nie być relacji 1-do-1 między pionie i szybkością klatek, która ma osiągnąć aplikacja. Aby sprostać obiektowi docelowemu wydajności, aplikacja musi ukończyć wszystkie przetwarzanie, wykonać renderowanie i `Present()` nawiązać połączenie z ukierunkowaną szybkością klatek. Renderowane ramka nie będzie pokazywana do następnej pionie po `Present()` , chociaż.
 
@@ -126,9 +127,9 @@ Aby odłożyć profilowanie od początku aplikacji:
 
 1. W menu głównym wybierz kolejno opcje **Debuguj**  >  **wydajność i Diagnostyka** (lub na klawiaturze naciśnij kombinację klawiszy Alt + F2).
 
-2. W centrum **wydajności i diagnostyki** obok opcji **użycie procesora GPU**wybierz link **Ustawienia** .
+2. W centrum **wydajności i diagnostyki** obok opcji **użycie procesora GPU** wybierz link **Ustawienia** .
 
-3. W obszarze **Konfiguracja profilowania procesora GPU**na stronie właściwości **Ogólne** Usuń zaznaczenie pola wyboru **Rozpocznij profilowanie podczas uruchamiania aplikacji** , aby odroczyć profilowanie.
+3. W obszarze **Konfiguracja profilowania procesora GPU** na stronie właściwości **Ogólne** Usuń zaznaczenie pola wyboru **Rozpocznij profilowanie podczas uruchamiania aplikacji** , aby odroczyć profilowanie.
 
    ![Zrzut ekranu przedstawiający strony właściwości obiektu, pokazujący opcje kolekcji](media/gfx_diag_gpu_usage_config.png "gfx_diag_gpu_usage_config")
 

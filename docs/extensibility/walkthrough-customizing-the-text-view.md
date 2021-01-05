@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: Dostosowywanie widoku tekstu | Microsoft Docs'
+description: Dowiedz się, jak dostosować widok tekstowy, modyfikując dowolne z kilku właściwości w mapie formatu edytora, korzystając z tego przewodnika.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b7a62ee2b55bf2b56ae1d8e28fc1910ed444c29
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 057e2a68e1d9a130f69441d8aec4b6a7fe0249e9
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904927"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97862961"
 ---
 # <a name="walkthrough-customize-the-text-view"></a>Przewodnik: Dostosowywanie widoku tekstu
 Widok tekstu można dostosować, modyfikując dowolne z następujących właściwości w mapie formatu edytora:

@@ -1,5 +1,6 @@
 ---
 title: Wyświetlanie zdarzeń za pomocą IntelliTrace | Microsoft Docs
+description: Dowiedz się, jak za pomocą IntelliTrace w Visual Studio Enterprise zbierać dane dotyczące określonych zdarzeń, kategorii zdarzeń i pojedynczych wywołań funkcji.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e1c9c91a-0009-4c4e-9b4f-c9ab3a6022a7
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ffbe0b8365948dc5a69edca390f308cb55ba5a3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6fef839b5473881450581db77a885da158e67bbc
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62929399"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815753"
 ---
 # <a name="view-events-with-intellitrace-in-visual-studio-enterprise-c-visual-basic"></a>Wyświetlanie zdarzeń za pomocą IntelliTrace w Visual Studio Enterprise (C#, Visual Basic)
 
@@ -60,17 +61,17 @@ Możesz wypróbować debugowanie za pomocą tylko zdarzeń IntelliTrace. Zdarzen
 
 2. Wykonywanie jest zatrzymane w punkcie przerwania. Jeśli nie widzisz okna **Narzędzia diagnostyczne** , kliknij pozycję **Debuguj > zdarzenia IntelliTrace systemu Windows >**.
 
-    W oknie **Narzędzia diagnostyczne** Znajdź kartę **zdarzenia** (powinny być widoczne 3 karty, **zdarzenia**, **użycie pamięci**i **użycie procesora**). Karta **zdarzenia** zawiera chronologiczną listę zdarzeń kończącą się ostatnim zdarzeniem, zanim debuger przerwał wykonywanie operacji. Powinno zostać wyświetlone zdarzenie o nazwie **WordSearchInputs.txtdostępu **.
+    W oknie **Narzędzia diagnostyczne** Znajdź kartę **zdarzenia** (powinny być widoczne 3 karty, **zdarzenia**, **użycie pamięci** i **użycie procesora**). Karta **zdarzenia** zawiera chronologiczną listę zdarzeń kończącą się ostatnim zdarzeniem, zanim debuger przerwał wykonywanie operacji. Powinno zostać wyświetlone zdarzenie o nazwie **WordSearchInputs.txtdostępu**.
 
     Poniższy zrzut ekranu pochodzi z programu Visual Studio 2015 Update 1.
 
-    ![IntelliTrace&#45;Update1](../debugger/media/intellitrace-update1.png "IntelliTrace — Update1")
+    ![Zrzut ekranu przedstawiający okno programu Visual Studio Code. Wykonywanie jest zatrzymane w punkcie przerwania, a na karcie zdarzenia w oknie narzędzia diagnostyczne są wyświetlane zdarzenia.](../debugger/media/intellitrace-update1.png)
 
 3. Wybierz zdarzenie, aby rozwinąć jego szczegóły.
 
     Poniższy zrzut ekranu pochodzi z programu Visual Studio 2015 Update 1.
 
-    ![IntelliTraceUpdate1&#45;SingleEvent](../debugger/media/intellitraceupdate1-singleevent.png "IntelliTraceUpdate1-SingleEvent")
+    ![Zrzut ekranu przedstawiający kartę zdarzenia w oknie narzędzia diagnostyczne programu Visual Studio. Zdarzenie jest wybierane i rozwinięte, aby wyświetlić jego szczegóły.](../debugger/media/intellitraceupdate1-singleevent.png)
 
     Możesz wybrać link ścieżki, aby otworzyć plik. Jeśli pełna nazwa ścieżki jest niedostępna, pojawi się okno dialogowe **Otwórz plik** .
 
@@ -78,7 +79,7 @@ Możesz wypróbować debugowanie za pomocą tylko zdarzeń IntelliTrace. Zdarzen
 
     Poniższy zrzut ekranu pochodzi z programu Visual Studio 2015 Update 1.
 
-    ![HistoricalDebugging&#45;Update1](../debugger/media/historicaldebugging-update1.png "HistoricalDebugging — Update1")
+    ![Zrzut ekranu przedstawiający okno programu Visual Studio Code. Wykonywanie jest zatrzymane w punkcie przerwania, zdarzenie jest zaznaczone, a odpowiedni wiersz kodu jest wyróżniony.](../debugger/media/historicaldebugging-update1.png)
 
 4. Jeśli usterka nie została znaleziona, spróbuj sprawdzić inne zdarzenia prowadzące do błędu. Istnieje również możliwość rejestrowania informacji o wywołaniach IntelliTrace, dzięki czemu można przechodzić przez wywołania funkcji.
 

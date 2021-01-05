@@ -1,7 +1,7 @@
 ---
 title: Pakiety robocze i identyfikatory składników programu Visual Studio Community
 titleSuffix: ''
-description: Używanie obciążeń i identyfikatorów składników do instalowania programu Visual Studio przy użyciu wiersza polecenia lub do określenia jako zależność w manifeście VSIX
+description: Użyj obciążeń programu Visual Studio Community i identyfikatorów składników, aby zainstalować program Visual Studio z poziomu wiersza polecenia lub określić zależność w manifeście VSIX.
 keywords: ''
 author: ornellaalt
 ms.author: ornella
@@ -16,12 +16,12 @@ ms.assetid: 58494fc3-12de-4761-bd4a-74b54f72bfb3
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 94b1ab6182bff28d41a1da326eb88c99341f2e5a
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 744364dd18a784567dad49a960da08dc48de9606
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437391"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847022"
 ---
 # <a name="visual-studio-community-component-directory"></a>Katalog składnika społeczności programu Visual Studio
 

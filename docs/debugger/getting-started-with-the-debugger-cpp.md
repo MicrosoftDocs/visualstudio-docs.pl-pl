@@ -1,6 +1,6 @@
 ---
 title: 'Samouczek: Debugowanie kodu C++'
-description: Dowiedz się, jak uruchomić debuger programu Visual Studio, przejść przez kod i sprawdzić dane.
+description: Dowiedz się więcej o funkcjach debugera programu Visual Studio oraz o sposobie uruchamiania debugera, przechodzenia przez kod i inspekcji danych w aplikacji C++.
 ms.custom: debug-experiment, seodec18, get-started
 ms.date: 02/04/2020
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47b1a031a6c4e4e823a1fcc12aba228750aee27e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4cc5d0b85ac1406f214784976ca23467a0e0eb6c
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77091811"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847099"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Samouczek: uczenie się debugowania kodu C++ za pomocą programu Visual Studio
 
@@ -107,7 +107,7 @@ Najpierw utworzysz projekt aplikacji konsolowej w języku C++. Typ projektu jest
 
 ## <a name="create-the-application"></a>Tworzenie aplikacji
 
-1. W *Get-Started-Debugging. cpp*Zastąp cały kod domyślny następującym kodem:
+1. W *Get-Started-Debugging. cpp* Zastąp cały kod domyślny następującym kodem:
 
     ```cpp
     #include <string>
@@ -220,7 +220,7 @@ W większości przypadków używamy skrótów klawiaturowych w tym miejscu, poni
 
 1. Naciśnij klawisz **F5** , aby przejść do punktu przerwania.
 
-1. W edytorze kodu przewiń w dół i umieść kursor nad `std::wcout` funkcją w `SendMessage` metodzie do momentu, **Run to Click** gdy zielony przycisk Uruchom ![do kliknięcia](../debugger/media/dbg-tour-run-to-click.png "RunToClick") zostanie wyświetlony po lewej stronie. Etykietka narzędzia dla przycisku pokazuje "uruchom wykonywanie do tego miejsca".
+1. W edytorze kodu przewiń w dół i umieść kursor nad `std::wcout` funkcją w `SendMessage` metodzie do momentu,  gdy zielony przycisk Uruchom ![do kliknięcia](../debugger/media/dbg-tour-run-to-click.png "RunToClick") zostanie wyświetlony po lewej stronie. Etykietka narzędzia dla przycisku pokazuje "uruchom wykonywanie do tego miejsca".
 
      ![Korzystanie z funkcji uruchamiania do kliknięcia](../debugger/media/get-started-run-to-click-cpp.png "Uruchom do kliknięcia")
 
@@ -237,7 +237,7 @@ W większości przypadków używamy skrótów klawiaturowych w tym miejscu, poni
 
 Kliknij przycisk **Uruchom** ponownie ![Uruchom aplikację](../debugger/media/dbg-tour-restart.png "RestartApp") na pasku narzędzi debugowania (**Ctrl**  +  **SHIFT**  +  **F5**).
 
-Po naciśnięciu przycisku **Uruchom ponownie**program zapisze czas w przeciwieństwie do zatrzymywania aplikacji i ponownego uruchomienia debugera. Debuger zatrzymuje się w pierwszym punkcie przerwania, który jest wywoływany przez wykonanie kodu.
+Po naciśnięciu przycisku **Uruchom ponownie** program zapisze czas w przeciwieństwie do zatrzymywania aplikacji i ponownego uruchomienia debugera. Debuger zatrzymuje się w pierwszym punkcie przerwania, który jest wywoływany przez wykonanie kodu.
 
 Debuger zatrzyma się ponownie w punkcie przerwania, który został wcześniej ustawiony wewnątrz `for` pętli.
 
@@ -287,7 +287,7 @@ Funkcje, które umożliwiają inspekcję zmiennych, są jedną z najbardziej prz
 
 1. Po wstrzymaniu w `for` pętli kliknij okno **stos wywołań** , które jest domyślnie otwarte w prawym dolnym okienku.
 
-    Jeśli jest zamknięte, otwórz je w debugerze, wybierając pozycję **Debuguj**  >  **Windows**  >  **stos wywołań**systemu Windows.
+    Jeśli jest zamknięte, otwórz je w debugerze, wybierając pozycję **Debuguj**  >    >  **stos wywołań** systemu Windows.
 
 2. Klikaj polecenie **F11** kilka razy, aż zobaczysz debuger pauzy w `SendMessage` metodzie. Sprawdź okno **stosu wywołań** .
 
@@ -302,7 +302,7 @@ Funkcje, które umożliwiają inspekcję zmiennych, są jedną z najbardziej prz
 
     Możesz kliknąć dwukrotnie wiersz kodu, aby przejść do tego kodu źródłowego, a także zmienić bieżący zakres, który jest sprawdzany przez debuger. Ta akcja nie powoduje przejścia do debugera.
 
-    Możesz również użyć menu dostępnych po kliknięciu prawym przyciskiem myszy w oknie **stos wywołań** , aby wykonać inne czynności. Na przykład można wstawiać punkty przerwania do określonych funkcji, przełączać debuger za pomocą polecenia **Uruchom do kursora**i testować kod źródłowy. Aby uzyskać więcej informacji, zobacz [How to: badanie stosu wywołań](../debugger/how-to-use-the-call-stack-window.md).
+    Możesz również użyć menu dostępnych po kliknięciu prawym przyciskiem myszy w oknie **stos wywołań** , aby wykonać inne czynności. Na przykład można wstawiać punkty przerwania do określonych funkcji, przełączać debuger za pomocą polecenia **Uruchom do kursora** i testować kod źródłowy. Aby uzyskać więcej informacji, zobacz [How to: badanie stosu wywołań](../debugger/how-to-use-the-call-stack-window.md).
 
 ## <a name="change-the-execution-flow"></a>Zmień przepływ wykonywania
 

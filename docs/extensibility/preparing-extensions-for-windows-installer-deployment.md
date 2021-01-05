@@ -1,5 +1,7 @@
 ---
 title: Przygotowywanie rozszerzeń wdrożenia Instalator Windows | Microsoft Docs
+description: Dowiedz się, jak przygotować projekt, którego domyślne dane wyjściowe są pakietem VSIX do uwzględnienia w projekcie instalacji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0084cfc6c08db1c1d15013362a186fec175b4ee4
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: ba494af91d3d40720493b27e7381660ece3fba69
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012220"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97862902"
 ---
 # <a name="prepare-extensions-for-windows-installer-deployment"></a>Przygotuj rozszerzenia dla wdrożenia Instalator Windows
 Nie można użyć pakietu Instalator Windows (MSI) do wdrożenia pakietu VSIX. Można jednak wyodrębnić zawartość pakietu VSIX dla wdrożenia MSI. W tym dokumencie przedstawiono sposób przygotowania projektu, którego domyślne dane wyjściowe są pakietem VSIX do uwzględnienia w projekcie instalacji.
@@ -54,6 +56,6 @@ Nie można użyć pakietu Instalator Windows (MSI) do wdrożenia pakietu VSIX. M
 
 5. Dodaj pozostałe pliki do projektu Instalatora.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wdrożenie Instalatora programu Visual Studio](/previous-versions/2kt85ked(v=vs.120))
 - [Przewodnik: Tworzenie akcji niestandardowej](/previous-versions/visualstudio/visual-studio-2010/d9k65z2d(v=vs.100))

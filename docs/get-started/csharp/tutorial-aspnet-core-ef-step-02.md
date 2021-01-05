@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 6852ac1148c9a8001476eb9bb68e9e97d66e3eed
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: 21052d59205c7ddc14247f180348fea3b8d5652a
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91780996"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833250"
 ---
 # <a name="step-2-create-your-first-aspnet-core-web-app"></a>Krok 2. Tworzenie pierwszej aplikacji sieci Web ASP.NET Core
 
@@ -33,7 +33,7 @@ _Obejrzyj ten film wideo i postępuj zgodnie z instrukcjami, aby utworzyć swoj�
 
 ## <a name="start-visual-studio-2019-and-create-a-new-project"></a>Uruchom program Visual Studio 2019 i Utwórz nowy projekt
 
-Uruchom program Visual Studio 2019 i kliknij pozycję **Utwórz nowy projekt**. Wybierz **ASP.NET Core aplikacji sieci Web**. Wybierz szablon **aplikacja sieci Web** i Zachowaj domyślną nazwę projektu i lokalizację. Na liście rozwijanej z wersją ASP.NET Core wybierz **ASP.NET Core 2,1** lub **ASP.NET Core 2,2**. Kliknij pozycję **Utwórz**. Aby uzyskać bardziej szczegółowe instrukcje, zobacz [poprzednie wideo w tej serii samouczków](tutorial-aspnet-core-ef-step-01.md).
+Uruchom program Visual Studio 2019 i kliknij pozycję **Utwórz nowy projekt**. Wybierz **ASP.NET Core aplikacji sieci Web**. Wybierz szablon **aplikacja sieci Web** i Zachowaj domyślną nazwę projektu i lokalizację. Na liście rozwijanej z wersją ASP.NET Core wybierz **ASP.NET Core 2,1** lub **ASP.NET Core 2,2**. Kliknij przycisk **Utwórz**. Aby uzyskać bardziej szczegółowe instrukcje, zobacz [poprzednie wideo w tej serii samouczków](tutorial-aspnet-core-ef-step-01.md).
 
 ![Visual Studio 2019 wybierz opcje projektu ASP.NET Core](media/vs-2019/vs2019-choose-aspnetcore-project.png)
 
@@ -68,7 +68,7 @@ Host sieci Web utworzony w *program.cs* odwołuje się do klasy uruchomieniowej 
 
 ### <a name="indexcshtml"></a>Index.cshtml
 
-Strona główna witryny zawiera część znaczników HTML i jakiś kod Razor po stronie serwera. Używa Razor do określenia modelu strony, `IndexModel` który znajduje się w skojarzonym pliku *index.cshtml.cs* . Ustawia również tytuł strony przez ustawienie wartości w ViewData. Ta wartość ViewData jest odczytywana w pliku * \_ Layout. cshtml* znajdującym się w folderze udostępnionym wewnątrz folderu strony. Plik układu jest współużytkowany przez wiele Razor Pages i zapewnia typowy wygląd i działanie aplikacji. Zawartość każdej strony jest renderowana w kodzie HTML pliku układu.
+Strona główna witryny zawiera część znaczników HTML i jakiś kod Razor po stronie serwera. Używa Razor do określenia modelu strony, `IndexModel` który znajduje się w skojarzonym pliku *index.cshtml.cs* . Ustawia również tytuł strony przez ustawienie wartości w ViewData. Ta wartość ViewData jest odczytywana w pliku *\_ Layout. cshtml* znajdującym się w folderze udostępnionym wewnątrz folderu strony. Plik układu jest współużytkowany przez wiele Razor Pages i zapewnia typowy wygląd i działanie aplikacji. Zawartość każdej strony jest renderowana w kodzie HTML pliku układu.
 
 ## <a name="run-the-application"></a>Uruchamianie aplikacji
 
@@ -92,9 +92,9 @@ Zastąp `<div>` zawartość w *index. cshtml* tym znacznikiem:
 <h2>It's @Model.Time right now on the server!</h2>
 ```
 
-Uruchom ponownie aplikację. Powinna zostać wyświetlona strona, która wyświetla bieżącą godzinę, ale zawsze jest Północna! To nie jest właściwe.
+Uruchom ponownie aplikację. Powinna zostać wyświetlona strona, która wyświetla bieżącą godzinę, ale zawsze jest Północna! To nie jest prawidłowa wartość.
 
-![Projekt programu Visual Studio 2019 ASP.NET Core w przeglądarce](media/vs-2019/vs2019-app-in-browser.png)
+![Zrzut ekranu strony głównej aplikacji w oknie przeglądarki. Zawartość strony odczytuje: "jest 12:00 AM teraz na serwerze!".](media/vs-2019/vs2019-app-in-browser.png)
 
 ## <a name="debug-the-application"></a>Debugowanie aplikacji
 
@@ -102,7 +102,7 @@ Dodaj punkt przerwania do `OnGet` metody, do której przypiszemy wartość `Time
 
 Wykonywanie jest zatrzymane w wierszu i widać, że `DateTime.Today` zawiera datę, ale czas jest zawsze północny, ponieważ nie obejmuje danych czasowych.
 
-![Projekt programu Visual Studio 2019 ASP.NET Core w przeglądarce](media/vs-2019/vs2019-breakpoint.png)
+![Zrzut ekranu przedstawiający kod dla Index.cshtml.cs w programie Visual Studio. Punkt przerwania jest ustawiony w wierszu, "Time = DateTime. Today. ToShortTimeString ();".](media/vs-2019/vs2019-breakpoint.png)
 
 Zmień go na Użyj `DateTime.Now` i Kontynuuj. Nowy kod dla `OnGet` powinien:
 
@@ -118,7 +118,7 @@ Po przejściu do aplikacji powinien zostać wyświetlony rzeczywisty czas serwer
 > [!NOTE]
 > Dane wyjściowe mogą się różnić od obrazu, ponieważ format danych wyjściowych ToShortDateTimeString zależy od bieżącego ustawienia kultury. Zobacz: <xref:System.DateTime.ToShortTimeString>.
 
-![Projekt programu Visual Studio 2019 ASP.NET Core w przeglądarce](media/vs-2019/vs2019-app-fixed-in-browser.png)
+![Zrzut ekranu strony głównej aplikacji w oknie przeglądarki. Zawartość strony odczytuje: "jest 1:46 AM teraz na serwerze!".](media/vs-2019/vs2019-app-fixed-in-browser.png)
 
 ## <a name="next-steps"></a>Następne kroki
 

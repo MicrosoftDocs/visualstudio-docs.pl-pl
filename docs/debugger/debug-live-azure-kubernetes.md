@@ -1,6 +1,6 @@
 ---
 title: Debuguj usługi Live ASP.NET Azure Kubernetes Services
-description: Dowiedz się, jak ustawić punkty przyciągania i wyświetlić migawki przy użyciu Snapshot Debugger.
+description: Dowiedz się, w jaki sposób używać Snapshot Debugger w programie Visual Studio, aby ustawić punkty przyciągania i wykonać migawki podczas debugowania usługi Live ASP.NET Azure Kubernetes Services.
 ms.custom: ''
 ms.date: 02/11/2019
 ms.topic: how-to
@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: e0f062108f19b38c6bf6514eda78098f493b3f78
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 823da6da0a842766739cb50c700bb723a47d0309
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350657"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846974"
 ---
 # <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>Debuguj usługi Live ASP.NET Azure Kubernetes Services przy użyciu Snapshot Debugger
 
@@ -98,7 +98,7 @@ Po ustawieniu punkt przyciągania można ręcznie wygenerować migawkę, przecho
 
     ![Sprawdzanie danych migawek](../debugger/media/snapshot-inspect-data.png)
 
-    Z tego widoku można przesuwać się nad zmiennymi, aby wyświetlać etykietki danych, korzystać z okien zmiennych **lokalnych**, **zegarki**i **stosu wywołań** , a także szacować wyrażenia.
+    Z tego widoku można przesuwać się nad zmiennymi, aby wyświetlać etykietki danych, korzystać z okien zmiennych **lokalnych**, **zegarki** i **stosu wywołań** , a także szacować wyrażenia.
 
     Sama witryna sieci Web jest nadal na żywo, a użytkownicy końcowi nie mają do nich wpływu. Tylko jedna migawka jest domyślnie przechwytywana na punkt przyciągania: Po przechwyceniu migawki punkt przyciągania wyłączone. Jeśli chcesz przechwycić kolejną migawkę w punkt przyciągania, możesz włączyć punkt przyciągania ponownie, klikając polecenie **Aktualizuj kolekcję**.
 

@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: a7bf174191a6a2fb013aa3d25880b01bc2e7f070
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d11ffcb2c43d2c519d75d43afad6383e0bfaa44a
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801675"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761280"
 ---
 # <a name="quickstart-open-and-run-python-code-in-a-folder"></a>Szybki Start: otwieranie i uruchamianie kodu w języku Python w folderze
 
@@ -43,7 +43,7 @@ Po [zainstalowaniu obsługi języka Python w programie Visual studio 2019](insta
 
     ![Widok ukrytych folderów w Eksplorator rozwiązań](media/quickstart-open-folder/05-view-hidden-folders.png)
 
-1. Aby uruchomić kod, należy najpierw zidentyfikować plik startowy lub podstawowy programu. W przykładzie przedstawionym tutaj *contemplate-koans.py*plik startowy. Kliknij prawym przyciskiem myszy ten plik i wybierz polecenie **Ustaw jako element startowy**.
+1. Aby uruchomić kod, należy najpierw zidentyfikować plik startowy lub podstawowy programu. W przykładzie przedstawionym tutaj *contemplate-koans.py* plik startowy. Kliknij prawym przyciskiem myszy ten plik i wybierz polecenie **Ustaw jako element startowy**.
 
     ![Ustawianie elementu startowego w Eksplorator rozwiązań](media/quickstart-open-folder/06-set-as-startup-item-command.png)
 
@@ -60,7 +60,7 @@ Po [zainstalowaniu obsługi języka Python w programie Visual studio 2019](insta
 
 1. Aby uruchomić kod w innym środowisku, wybierz to środowisko z kontrolki listy rozwijanej na pasku narzędzi, a następnie ponownie uruchom element startowy.
 
-1. Aby zamknąć folder w programie Visual Studio, wybierz **File**  >  polecenie menu**Zamknij folder** .
+1. Aby zamknąć folder w programie Visual Studio, wybierz   >  polecenie menu **Zamknij folder** .
 
 ## <a name="set-a-working-directory"></a>Ustawianie katalogu roboczego
 
@@ -70,11 +70,11 @@ W takich przypadkach należy również dodać wiersz do pliku JSON konfiguracji 
 
 1. Kliknij prawym przyciskiem myszy plik startowy języka Python (*. PR*) w **Eksplorator rozwiązań** i wybierz pozycję **Ustawienia debugowania i uruchamiania**.
 
-    ![Polecenie Ustawienia debugowania i uruchamiania dla pliku języka Python](media/quickstart-open-folder/09-debug-launch-settings-menu-command.png)
+    ![Zrzut ekranu przedstawiający widok folderu Eksplorator rozwiązań z wybranym plikiem contemplate-koans.py oraz ustawienia debugowania i uruchamiania wybrane w menu kontekstowym.](media/quickstart-open-folder/09-debug-launch-settings-menu-command.png)
 
 1. W wyświetlonym oknie dialogowym **Wybierz debuger** wybierz pozycję **domyślne** , a następnie wybierz **pozycję Wybierz**.
 
-    ![Polecenie Ustawienia debugowania i uruchamiania dla pliku języka Python](media/quickstart-open-folder/10-select-debugger.png)
+    ![Zrzut ekranu przedstawiający okno dialogowe Wybieranie debugera z wybranym debugerem domyślnym oraz wybrany przycisk Wybierz.](media/quickstart-open-folder/10-select-debugger.png)
 
     > [!Note]
     > Jeśli nie widzisz **Domyślnie** jako wyboru, upewnij się, że wybrano plik Python *. PR* podczas wybierania polecenia **Debuguj i Uruchom ustawienia** . Program Visual Studio używa typu pliku, aby określić, które opcje debugera mają być wyświetlane.

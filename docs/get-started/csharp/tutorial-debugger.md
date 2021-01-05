@@ -1,6 +1,6 @@
 ---
 title: 'Samouczek: Debugowanie kodu C#'
-description: Dowiedz się, jak uruchomić debuger programu Visual Studio, przejść przez kod i sprawdzić dane.
+description: Dowiedz się więcej o funkcjach debugera programu Visual Studio oraz o sposobie uruchamiania debugera, przechodzenia przez kod i inspekcji danych w aplikacji języka C#.
 ms.custom: debug-experiment, seodec18, get-started
 ms.date: 04/23/2020
 ms.technology: vs-ide-debug
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d6e9ee79602f3a0db8f68d701120c450bfee721
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 435564a9bf4e90dd25ed5fee3a44d0578c201a99
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82153072"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846939"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Samouczek: informacje na temat debugowania kodu w języku C# przy użyciu programu Visual Studio
 
@@ -106,7 +106,7 @@ Najpierw utworzysz projekt aplikacji konsolowej .NET Core. Typ projektu jest dos
 
 ## <a name="create-the-application"></a>Tworzenie aplikacji
 
-1. W programie *program.cs*zamiast tego Zastąp cały kod domyślny następującym kodem:
+1. W programie *program.cs* zamiast tego Zastąp cały kod domyślny następującym kodem:
 
     ```csharp
     using System;
@@ -187,7 +187,7 @@ W większości przypadków używamy skrótów klawiaturowych w tym miejscu, poni
 
 1. Rozwiń `letters` zmienną, aby wyświetlić jej właściwości, które obejmują wszystkie elementy, które zawiera zmienna.
 
-     ![Wyświetlanie etykietki danych](../csharp/media/get-started-view-data-tip.png "Wyświetlanie etykietki danych")
+     ![Zrzut ekranu debugera programu Visual Studio z wyróżnioną instrukcją "name + = litery [I]" oraz listą rozwijaną przedstawiającą elementy w tablicy litery.](../csharp/media/get-started-view-data-tip.png)
 
 1. Następnie umieść wskaźnik myszy nad `name` zmienną i zobaczysz jej bieżącą wartość, pusty ciąg.
 
@@ -197,7 +197,7 @@ W większości przypadków używamy skrótów klawiaturowych w tym miejscu, poni
 
 1. Naciśnij klawisz **F10** (lub **Debuguj**  >  **krokowo**) kilka razy, aby wielokrotnie wykonać iterację w `for` pętli, zatrzymując ponownie w punkcie przerwania i umieścić wskaźnik myszy nad `name` zmienną za każdym razem, aby sprawdzić jej wartość.
 
-     ![Wyświetlanie etykietki danych](../csharp/media/get-started-data-tip.gif "Wyświetlanie etykietki danych")
+     ![Animowany zrzut ekranu debugera programu Visual Studio pokazujący efekt naciskania klawisza F10 na "krok po kroku" i Iterowanie przez pętlę podczas debugowania.](../csharp/media/get-started-data-tip.gif)
 
      Wartość zmiennej zmienia się z każdą iteracją `for` pętli, wyświetlając wartości `f` , then, `fr` `fre` i tak dalej. Aby szybciej korzystać z debugera przez pętlę w tym scenariuszu, możesz nacisnąć klawisz **F5** (lub wybrać polecenie **Debuguj**  >  **dalej**), co spowoduje przejście do punktu przerwania zamiast następnej instrukcji.
 
@@ -229,7 +229,7 @@ W większości przypadków używamy skrótów klawiaturowych w tym miejscu, poni
 
 1. Naciśnij klawisz **F5** , aby ponownie przejść do punktu przerwania.
 
-1. W edytorze kodu przewiń w dół i umieść kursor nad `Console.WriteLine` metodą w `SendMessage` metodzie do momentu, **Run to Click** gdy zielony przycisk Uruchom ![do kliknięcia](../../debugger/media/dbg-tour-run-to-click.png "RunToClick") zostanie wyświetlony po lewej stronie. Etykietka narzędzia dla przycisku pokazuje "uruchom wykonywanie do tego miejsca".
+1. W edytorze kodu przewiń w dół i umieść kursor nad `Console.WriteLine` metodą w `SendMessage` metodzie do momentu,  gdy zielony przycisk Uruchom ![do kliknięcia](../../debugger/media/dbg-tour-run-to-click.png "RunToClick") zostanie wyświetlony po lewej stronie. Etykietka narzędzia dla przycisku pokazuje "uruchom wykonywanie do tego miejsca".
 
      ![Korzystanie z funkcji uruchamiania do kliknięcia](../csharp/media/get-started-run-to-click.png "Uruchom do kliknięcia")
 
@@ -246,7 +246,7 @@ W większości przypadków używamy skrótów klawiaturowych w tym miejscu, poni
 
 Kliknij przycisk **Uruchom** ponownie ![Uruchom aplikację](../../debugger/media/dbg-tour-restart.png "RestartApp") na pasku narzędzi debugowania (**Ctrl**  +  **SHIFT**  +  **F5**).
 
-Po naciśnięciu przycisku **Uruchom ponownie**program zapisze czas w przeciwieństwie do zatrzymywania aplikacji i ponownego uruchomienia debugera. Debuger zatrzymuje się w pierwszym punkcie przerwania, który jest wywoływany przez wykonanie kodu.
+Po naciśnięciu przycisku **Uruchom ponownie** program zapisze czas w przeciwieństwie do zatrzymywania aplikacji i ponownego uruchomienia debugera. Debuger zatrzymuje się w pierwszym punkcie przerwania, który jest wywoływany przez wykonanie kodu.
 
 Debuger zatrzyma się ponownie w punkcie przerwania, który został wcześniej ustawiony wewnątrz `for` pętli.
 
@@ -278,7 +278,7 @@ Debuger zatrzyma się ponownie w punkcie przerwania, który został wcześniej u
 
 1. Po wstrzymaniu w `for` pętli kliknij okno **stos wywołań** , które jest domyślnie otwarte w prawym dolnym okienku.
 
-    Jeśli jest zamknięte, otwórz je w debugerze, wybierając pozycję **Debuguj**  >  **Windows**  >  **stos wywołań**systemu Windows.
+    Jeśli jest zamknięte, otwórz je w debugerze, wybierając pozycję **Debuguj**  >    >  **stos wywołań** systemu Windows.
 
 2. Klikaj polecenie **F11** kilka razy, aż zobaczysz debuger pauzy w `SendMessage` metodzie. Sprawdź okno **stosu wywołań** .
 
@@ -293,7 +293,7 @@ Debuger zatrzyma się ponownie w punkcie przerwania, który został wcześniej u
 
     Możesz kliknąć dwukrotnie wiersz kodu, aby przejść do tego kodu źródłowego, a także zmienić bieżący zakres, który jest sprawdzany przez debuger. Ta akcja nie powoduje przejścia do debugera.
 
-    Możesz również użyć menu dostępnych po kliknięciu prawym przyciskiem myszy w oknie **stos wywołań** , aby wykonać inne czynności. Na przykład można wstawiać punkty przerwania do określonych funkcji, przełączać debuger za pomocą polecenia **Uruchom do kursora**i testować kod źródłowy. Aby uzyskać więcej informacji, zobacz [How to: badanie stosu wywołań](../../debugger/how-to-use-the-call-stack-window.md).
+    Możesz również użyć menu dostępnych po kliknięciu prawym przyciskiem myszy w oknie **stos wywołań** , aby wykonać inne czynności. Na przykład można wstawiać punkty przerwania do określonych funkcji, przełączać debuger za pomocą polecenia **Uruchom do kursora** i testować kod źródłowy. Aby uzyskać więcej informacji, zobacz [How to: badanie stosu wywołań](../../debugger/how-to-use-the-call-stack-window.md).
 
 ## <a name="change-the-execution-flow"></a>Zmień przepływ wykonywania
 

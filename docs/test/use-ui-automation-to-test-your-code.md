@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3da0a3868b410fbb78ed98265eb8f0920e6482b
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 68d6d2823a4944ec74aaa477fb7b3913943a7296
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330111"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833276"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>Używanie kodowanego testu interfejsu użytkownika do testowania kodu
 
@@ -217,7 +217,7 @@ Jeśli formant, który chcesz wybrać, utraci fokus i znika po wybraniu narzędz
 
 Czasami podczas dodawania kontrolek i weryfikowania ich właściwości może być konieczne korzystanie z klawiatury. Na przykład podczas próby zarejestrowania kodowanego testu interfejsu użytkownika, który używa kontrolki menu dostępnego po kliknięciu prawym przyciskiem myszy, lista elementów menu w kontrolce spowoduje utratę fokusu i znika przy próbie wybrania narzędzia **Dodaj potwierdzenia** z **konstruktora KODOWANEGO testu interfejsu użytkownika**. Jest to zademonstrowane na poniższej ilustracji, gdzie menu dostępne po kliknięciu prawym przyciskiem myszy w programie Internet Explorer traci fokus i znika, gdy użytkownik próbuje wybrać go za pomocą narzędzia **dodawania potwierdzeń** .
 
-![Zestaw SDK CodedUITest&#95;SelectControlKeyboard](../test/media/codeduitest_selectcontrolkeyboard.png)
+![Zrzut ekranu przedstawiający narzędzie Dodawanie potwierdzeń w konstruktorze kodowanego testu interfejsu użytkownika nakładający się na menu dostępne po kliknięciu prawym przyciskiem myszy z poziomu programu Internet Explorer.](../test/media/codeduitest_selectcontrolkeyboard.png)
 
 Aby użyć klawiatury do wybrania kontrolki interfejsu użytkownika, umieść kursor nad kontrolką za pomocą myszy. Następnie trzymaj wciśnięty klawisz **Ctrl** i klawisz **i** w tym samym czasie. Zwolnij klawisze. Formant jest rejestrowany przez **konstruktora kodowanego testu interfejsu użytkownika**.
 
@@ -229,7 +229,7 @@ W pewnych okolicznościach konkretna kontrolka, która jest używana w kodowanym
 
 Po wykonaniu kodowanego testu interfejsu użytkownika Umieść wskaźnik myszy nad kontrolką. Naciśnij i przytrzymaj klawisz **Ctrl**, a następnie naciśnij i przytrzymaj klawisze **SHIFT** i **R** na klawiaturze. Zwolnij klawisze. Zdarzenie przesuwania myszy jest rejestrowane przez **konstruktora kodowanego testu interfejsu użytkownika**.
 
-![CodedUI&#95;aktywowania](../test/media/codedui_hover.png)
+![Zrzut ekranu przedstawiający pasek poleceń konstruktora kodowanego testu interfejsu użytkownika z wybraną ikoną Wstrzymaj. Okno etykietki narzędzi pokazuje lokalizację zdarzenia przesuwania myszy.](../test/media/codedui_hover.png)
 
 Po wygenerowaniu metody testowej kod podobny do następującego przykładu zostanie dodany do pliku *UIMap.Designer.cs* :
 

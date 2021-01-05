@@ -1,16 +1,16 @@
 ---
 title: Praca z podwersją
-description: Używanie Subversion w Visual Studio dla komputerów Mac.
+description: Dowiedz się, jak korzystać z Subversion jako scentralizowanego systemu kontroli wersji w Visual Studio dla komputerów Mac.
 author: jmatthiesen
 ms.author: jomatthi
 ms.date: 05/06/2018
 ms.assetid: 2400ED9C-6236-4C0A-A3AB-9D7CBE1F0CF4
-ms.openlocfilehash: 909da0bcb1ad3ca080d6bf4ba4e5184c1c2da98f
-ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
+ms.openlocfilehash: 512432a7210999e1d432494ec67bb2bf7a0e6a11
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89402642"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846859"
 ---
 # <a name="working-with-subversion"></a>Praca z podwersją
 

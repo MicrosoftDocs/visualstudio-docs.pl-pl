@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c3cf9d5e4d72ed316344d1bda930d0416e9efe5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6202fa019aed8e6fc9eb9ff93bdb390bf22f2911
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77416400"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761254"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Jak debugować dla bezwzględnych początkujących
 
@@ -76,9 +76,9 @@ Aby ułatwić zilustrowanie tych koncepcji, przeprowadzimy Cię przez przykłado
 
 Następnie utworzymy aplikację, która zawiera kilka błędów.
 
-1. W zależności od typu aplikacji, który chcesz utworzyć, musisz mieć zainstalowany program Visual **.NET Core cross platform development** Studio i obciążenie **Programowanie aplikacji klasycznych platformy .NET** .
+1. W zależności od typu aplikacji, który chcesz utworzyć, musisz mieć zainstalowany program Visual  Studio i obciążenie **Programowanie aplikacji klasycznych platformy .NET** .
 
-    Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads/),   Aby zainstalować ją bezpłatnie.
+    Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads/) , aby zainstalować ją bezpłatnie.
 
     Jeśli musisz zainstalować obciążenie, ale masz już program Visual Studio, kliknij przycisk **Narzędzia**  >  **Pobierz narzędzia i funkcje**. Zostanie uruchomiona Instalator programu Visual Studio. Wybierz obciążenie programu **.NET Desktop Development** (lub **Programowanie dla wielu platform w środowisku .NET Core**), a następnie wybierz polecenie **Modyfikuj**.
 
@@ -95,7 +95,7 @@ Następnie utworzymy aplikację, która zawiera kilka błędów.
 
     Program Visual Studio tworzy projekt konsoli, który pojawia się w Eksplorator rozwiązań w okienku po prawej stronie.
 
-1. W *program.cs*Zastąp cały kod domyślny następującym kodem:
+1. W *program.cs* Zastąp cały kod domyślny następującym kodem:
 
     ```csharp
     using System;
@@ -229,17 +229,17 @@ Następnie utworzymy aplikację, która zawiera kilka błędów.
 
 1. Umieść kursor nad `GalaxyType` zmienną po prawej stronie, a następnie po lewej stronie ikony klucz rozwiń węzeł `theGalaxy.GalaxyType` . Zobaczysz, że `GalaxyType` zawiera właściwość `MyGType` , a wartość właściwości jest ustawiona na `Spiral` .
 
-    ![Inspekcja zmiennej](../debugger/media/beginners-inspect-variable.png)
+    ![Zrzut ekranu debugera programu Visual Studio z wierszem kodu żółtym i menu rozwiniętym pod właściwością theGalaxy. Galaxytype na końcu wiersza.](../debugger/media/beginners-inspect-variable.png)
 
     "Spirala" jest w rzeczywistości poprawną wartością, którą spodziewasz się wydrukować w konsoli. Dlatego warto uzyskać dostęp do tej wartości w tym kodzie podczas uruchamiania aplikacji. W tym scenariuszu używamy nieprawidłowego interfejsu API. Zobaczymy, czy możemy rozwiązać ten problem podczas uruchamiania kodu w debugerze.
 
 1. W tym samym kodzie, podczas gdy nadal trwa debugowanie, umieść kursor na końcu `theGalaxy.GalaxyType` i zmień go na `theGalaxy.GalaxyType.MyGType` . Chociaż można wprowadzić tę zmianę, w edytorze kodu zostanie wyświetlony komunikat o błędzie informujący o tym, że nie można skompilować tego kodu.
 
-    ![Błąd składniowy](../debugger/media/beginners-edit.png)
+    ![Zrzut ekranu przedstawiający debuger programu Visual Studio z wierszem kodu wyróżnionym czerwonym i polem komunikatu Edytuj i Kontynuuj z wybranym przyciskiem Edytuj.](../debugger/media/beginners-edit.png)
 
 1. Kliknij przycisk **Edytuj** w oknie wiadomości **Edytuj i Kontynuuj** . W oknie **Lista błędów** zostanie wyświetlony komunikat o błędzie. Błąd wskazuje, że `'object'` nie zawiera definicji dla elementu `MyGType` .
 
-    ![Błąd składniowy](../debugger/media/beginners-no-definition.png)
+    ![Zrzut ekranu przedstawiający debuger programu Visual Studio z wierszem kodu wyróżnionym kolorem czerwonym i oknem Lista błędów zawierającym dwa błędy wymienione poniżej.](../debugger/media/beginners-no-definition.png)
 
     Mimo że ustawimy każdy element Galaxy przy użyciu obiektu typu `GType` (który ma `MyGType` Właściwość), debuger nie rozpoznaje `theGalaxy` obiektu jako obiektu typu `GType` . Co się dzieje? Chcesz sprawdzić kod, który ustawia typ Galaxy. Gdy to zrobisz, zobaczysz, że `GType` Klasa ma właściwość `MyGType` , ale coś nie jest właściwe. Komunikat o błędzie informujący o tym, że `object` jest to wskazówki; w interpreterze języka typ wydaje się być obiektem typu, `object` a nie obiektem typu `GType` .
 
@@ -259,7 +259,7 @@ Następnie utworzymy aplikację, która zawiera kilka błędów.
 
     Teraz, gdy debuger zatrzymuje się w programie `Console.WriteLine` , można umieścić wskaźnik myszy nad `theGalaxy.GalaxyType.MyGType` i zobaczyć, że wartość jest prawidłowo ustawiona.
 
-1. Usuń punkt przerwania, klikając okrąg punktu przerwania na lewym marginesie (lub kliknij prawym przyciskiem myszy i wybierz polecenie **punkt**przerwania  >  **Usuń punkt przerwania**), a następnie naciśnij klawisz **F5** , aby kontynuować.
+1. Usuń punkt przerwania, klikając okrąg punktu przerwania na lewym marginesie (lub kliknij prawym przyciskiem myszy i wybierz polecenie **punkt** przerwania  >  **Usuń punkt przerwania**), a następnie naciśnij klawisz **F5** , aby kontynuować.
 
     Aplikacja zostanie uruchomiona i wyświetli dane wyjściowe. Jest to bardzo dobre teraz, ale należy zauważyć, że jest to konieczne. oczekiwano, że mały Magellanic Cloud Galaxy będzie widoczny jako nieregularne oprogramowanie Galaxy w danych wyjściowych w konsoli, ale w ogóle nie pokazuje typu Galaxy.
 
@@ -288,7 +288,7 @@ Następnie utworzymy aplikację, która zawiera kilka błędów.
 
 1. Naciśnij klawisz **F5** i ponownie umieść wskaźnik myszy na `type` zmiennej. Powtórz ten krok, dopóki nie zostanie wyświetlona wartość `I` `type` zmiennej.
 
-    ![Inspekcja zmiennej](../debugger/media/beginners-inspecting-data.png)
+    ![Zrzut ekranu debugera programu Visual Studio z wierszem kodu żółtym i małym oknem wyświetlającym wartość zmiennej typu jako 73 "I".](../debugger/media/beginners-inspecting-data.png)
 
 1. Teraz naciśnij klawisz **F11** (**Debuguj**  >  **krok do** lub przycisk **Wkrocz** na pasku narzędzi debugowania).
 

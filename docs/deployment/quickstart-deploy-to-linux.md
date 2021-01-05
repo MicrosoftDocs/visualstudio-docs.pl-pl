@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 4e474cc96e4b950aee2f509a8e2879b0c31f912a
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 27002d9360d36330249167b2cc8b75b7cd832135
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350725"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815636"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>Publikowanie aplikacji ASP.NET Core App Service w systemie Linux przy użyciu programu Visual Studio
 
@@ -50,24 +50,24 @@ W tym artykule opisano sposób korzystania z narzędzia do **publikowania** na p
 
     ![Link do tworzenia nowego wystąpienia Azure App Service](../deployment/media/quickstart-publish-linux-create-new-link.png)
 
-1. W oknie dialogowym **tworzenie Azure App Service (Linux)** pola **Nazwa aplikacji** , **grupa zasobów** i zapis **planu App Service** są wypełniane. Te nazwy można zachować lub zmienić. Gdy wszystko będzie gotowe, wybierz pozycję **Utwórz**.
+1. W oknie dialogowym **tworzenie Azure App Service (Linux)** pola **Nazwa aplikacji**, **grupa zasobów** i zapis **planu App Service** są wypełniane. Te nazwy można zachować lub zmienić. Gdy wszystko będzie gotowe, wybierz pozycję **Utwórz**.
 
-    ![Wybierz Azure App Service](../deployment/media/quickstart-publish-linux-create-new-dialog.png)
+    ![Zrzut ekranu okna dialogowego Tworzenie Azure App Service (Linux) z wypełnionymi polami nazwa, subskrypcja, Grupa zasobów i plan hostingu.](../deployment/media/quickstart-publish-linux-create-new-dialog.png)
 
 1. W oknie dialogowym **Publikowanie** nowo utworzone wystąpienie zostało automatycznie zaznaczone. Gdy wszystko będzie gotowe, kliknij przycisk **Zakończ**.
 
-    ![Wybierz Azure App Service](../deployment/media/quickstart-publish-linux-select-instance.png)
+    ![Zrzut ekranu okna dialogowego publikowanie z nowo utworzoną usługą MyASpCoreWebAppOnAzure wybraną jako App Service do opublikowania.](../deployment/media/quickstart-publish-linux-select-instance.png)
 
-1. Kliknij pozycję **Opublikuj**. Program Visual Studio wdraża aplikację w Azure App Service, a aplikacja sieci Web ładuje się w przeglądarce. W okienku **Publikowanie** właściwości projektu wyświetlany jest adres URL witryny i inne szczegóły.
+1. Kliknij opcję **Opublikuj**. Program Visual Studio wdraża aplikację w Azure App Service, a aplikacja sieci Web ładuje się w przeglądarce. W okienku **Publikowanie** właściwości projektu wyświetlany jest adres URL witryny i inne szczegóły.
 
     ![Okienko właściwości publikowania przedstawiające Podsumowanie profilu](../deployment/media/quickstart-publish-linux-summary-page.png)
 
-## <a name="clean-up-resources"></a>Oczyszczanie zasobów
+## <a name="clean-up-resources"></a>Czyszczenie zasobów
 
 W poprzednich krokach utworzono zasoby platformy Azure w grupie zasobów. Jeśli nie będziesz już potrzebować tych zasobów w przyszłości, możesz je usunąć przez usunięcie grupy zasobów.
-W menu znajdującym się po lewej stronie w witrynie Azure Portal wybierz pozycję **Grupy zasobów** , a następnie wybierz pozycję **myResourceGroup**.
+W menu znajdującym się po lewej stronie w witrynie Azure Portal wybierz pozycję **Grupy zasobów**, a następnie wybierz pozycję **myResourceGroup**.
 Na stronie grupy zasobów upewnij się, że zasoby na liście są tymi, które chcesz usunąć.
-Wybierz pozycję **Usuń** , wpisz ciąg **myResourceGroup** w polu tekstowym, a następnie wybierz opcję **Usuń**.
+Wybierz pozycję **Usuń**, wpisz ciąg **myResourceGroup** w polu tekstowym, a następnie wybierz opcję **Usuń**.
 
 ## <a name="next-steps"></a>Następne kroki
 

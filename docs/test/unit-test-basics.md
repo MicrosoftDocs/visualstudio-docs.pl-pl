@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f563d37e6456ec775b2e70d59e07b0627c82994b
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 5660d67ac2c8c3bff589c34dd4303d36a3e20cff
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330202"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833315"
 ---
 # <a name="unit-test-basics"></a>Podstawowe informacje o teście jednostkowym
 
@@ -24,17 +24,17 @@ Sprawdź, czy kod działa zgodnie z oczekiwaniami, tworząc i uruchamiając test
 
 Testy jednostkowe mają największy wpływ na jakość kodu, gdy jest to integralna część przepływu pracy tworzenia oprogramowania. Gdy tylko napiszesz funkcję lub inny blok kodu aplikacji, należy utworzyć testy jednostkowe, które weryfikują zachowanie kodu w odpowiedzi na standardowe, graniczne i niepoprawne przypadki danych wejściowych oraz sprawdzają wszelkie jawne lub niejawne założenia wykonane przez kod. W przypadku *projektowania sterowanego testem* należy utworzyć testy jednostkowe przed zapisaniem kodu, więc należy użyć testów jednostkowych jako dokumentacji projektu i specyfikacji funkcjonalnych.
 
-Możesz szybko generować projekty testowe i metody testowe z kodu lub ręcznie tworzyć testy w miarę potrzeb. W przypadku korzystania z IntelliTest do eksplorowania kodu platformy .NET można generować dane testowe i zestaw testów jednostkowych. Dla każdej instrukcji w kodzie są generowane dane wejściowe testu, które spowodują wykonanie tej instrukcji. Dowiedz się, jak [generować testy jednostkowe dla kodu](generate-unit-tests-for-your-code-with-intellitest.md).
-
 Eksplorator testów może również uruchamiać platformy testów jednostkowych innych firm i open source, które mają zaimplementowane interfejsy dodatków w Eksploratorze testów. Wiele z tych platform można dodać za pomocą Menedżera rozszerzeń programu Visual Studio i galerii programu Visual Studio. Aby uzyskać więcej informacji, zobacz [Instalowanie platform testów jednostkowych](../test/install-third-party-unit-test-frameworks.md)innych firm.
+
+Możesz szybko generować projekty testowe i metody testowe z kodu lub ręcznie tworzyć testy w miarę potrzeb. W przypadku korzystania z IntelliTest do eksplorowania kodu platformy .NET można generować dane testowe i zestaw testów jednostkowych. Dla każdej instrukcji w kodzie są generowane dane wejściowe testu, które spowodują wykonanie tej instrukcji. Dowiedz się, jak [generować testy jednostkowe dla kodu platformy .NET](generate-unit-tests-for-your-code-with-intellitest.md).
 
 ## <a name="get-started"></a>Rozpoczęcie pracy
 
 Aby zapoznać się z wprowadzeniem do testów jednostkowych, które są bezpośrednio wprowadzane do kodu, zobacz jeden z następujących tematów:
 
-- [Przewodnik: Tworzenie i uruchamianie testów jednostkowych dla kodu zarządzanego](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
+- [Przewodnik: Tworzenie i uruchamianie testów jednostkowych dla kodu platformy .NET](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 
-- [Szybki Start: Programowanie sterowane testami za pomocą Eksploratora testów](../test/quick-start-test-driven-development-with-test-explorer.md)
+- [Przewodnik: Programowanie sterowane testami za pomocą Eksploratora testów](../test/quick-start-test-driven-development-with-test-explorer.md)
 
 - [Zapisz testy jednostkowe dla C/C++ w programie Visual Studio](../test/writing-unit-tests-for-c-cpp.md)
 
@@ -85,7 +85,7 @@ Teraz, gdy mamy jakiś kod, czas na przetestowanie.
 
 ## <a name="create-unit-test-projects-and-test-methods"></a>Tworzenie projektów testów jednostkowych i metod testowych
 
-Często jest szybsze generowanie projektu testów jednostkowych i testów jednostkowych w kodzie. Możesz też utworzyć projekt testu jednostkowego i testy ręcznie, w zależności od wymagań. Jeśli chcesz utworzyć testy jednostkowe za pomocą struktury innej firmy, konieczne będzie zainstalowanie jednego z tych rozszerzeń: [nunit](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371) lub [xUnit](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator).
+W języku C# często jest szybsze generowanie projektu testów jednostkowych i testów jednostkowych w kodzie. Możesz też utworzyć projekt testu jednostkowego i testy ręcznie, w zależności od wymagań. Jeśli chcesz utworzyć testy jednostkowe z kodu za pomocą struktury innej firmy, konieczne będzie zainstalowanie jednego z tych rozszerzeń: [nunit](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371) lub [xUnit](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator). Jeśli nie używasz języka C#, Pomiń tę sekcję i przejdź do sekcji [Tworzenie projektu testów jednostkowych i testów jednostkowych ręcznie](#create-the-unit-test-project-and-unit-tests-manually).
 
 ### <a name="generate-unit-test-project-and-unit-test-stubs"></a>Generuj projekty testów jednostkowych i testy jednostkowe
 
@@ -101,7 +101,7 @@ Często jest szybsze generowanie projektu testów jednostkowych i testów jednos
    ![W oknie Edytor Wyświetl menu kontekstowe.](../test/media/vs-2019/basics-create-unit-tests.png)
 
    > [!NOTE]
-   > Polecenie **Utwórz testy jednostkowe** jest dostępne tylko dla kodu zarządzanego.
+   > Polecenie **Utwórz testy jednostkowe** jest dostępne tylko dla kodu w języku C#.
    ::: moniker-end
 
 2. Kliknij przycisk **OK** , aby zaakceptować wartości domyślne, aby utworzyć testy jednostkowe, lub Zmień wartości używane do utworzenia i nazwy projektu testów jednostkowych i testów jednostkowych. Można wybrać kod, który jest domyślnie dodawany do metod testów jednostkowych.
@@ -264,7 +264,7 @@ Możesz wybrać opcję **Uruchom wszystkie** , aby uruchomić wszystkie testy, l
 
 ::: moniker range="vs-2017"
 
-Jeśli pojedyncze testy nie mają żadnych zależności, które uniemożliwiają ich uruchomienie w dowolnej kolejności, należy włączyć równoległe wykonywanie testów przy użyciu ![Wykonaj&#95;parallelicon&#45;mały](../test/media/ute_parallelicon-small.png) przycisk przełączania na pasku narzędzi. Może to znacznie skrócić czas potrzebny do uruchomienia wszystkich testów.
+Jeśli pojedyncze testy nie mają żadnych zależności, które uniemożliwiają ich uruchomienie w dowolnej kolejności, należy włączyć równoległe wykonywanie testów przy użyciu ![Zrzut ekranu przedstawiający przycisk przełączania równoległego wykonywania testu na pasku narzędzi programu Visual Studio Test Explorer.](../test/media/ute_parallelicon-small.png) przycisk przełączania na pasku narzędzi. Może to znacznie skrócić czas potrzebny do uruchomienia wszystkich testów.
 
 ::: moniker-end
 

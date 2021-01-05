@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 447725fd27ab81b85890d37a8f0df8a35ad5fbee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03c5dca96b4e20e36bc6c69b907423f27ac4af71
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328476"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833224"
 ---
 # <a name="troubleshooting-xaml-hot-reload"></a>Rozwiązywanie problemów z ponownym ładowaniem przy aktywnym kodzie XAML
 
@@ -34,13 +34,13 @@ Funkcja jest domyślnie włączona. Po rozpoczęciu debugowania aplikacji upewni
 
 ![Dostępny jest dostęp do gorącego ładowania XAML](../debugger/media/xaml-hot-reload-available.png)
 
-Jeśli nie widzisz paska narzędzi w aplikacji, Otwórz Opcje **debugowania**  >  **Options**  >  **Ogólne**. Upewnij się, że są zaznaczone obie opcje, **Włącz narzędzia debugowania interfejsu użytkownika dla języka XAML** i wybierz **opcję Włącz funkcję dynamicznego ponownego ładowania XAML** .
+Jeśli nie widzisz paska narzędzi w aplikacji, Otwórz Opcje **debugowania**  >    >  **Ogólne**. Upewnij się, że są zaznaczone obie opcje, **Włącz narzędzia debugowania interfejsu użytkownika dla języka XAML** i wybierz **opcję Włącz funkcję dynamicznego ponownego ładowania XAML** .
 
-![Włącz gorącą ponowną ładowanie XAML](../debugger/media/xaml-hot-reload-enable.png)
+![Zrzut ekranu okna Opcje debugowania programu Visual Studio. Opcje debugowania ogólne są zaznaczone i zaznaczona jest opcja Włącz gorącą ponowną ładowanie XAML.](../debugger/media/xaml-hot-reload-enable.png)
 
 W przypadku wybrania tych opcji przejdź do aktywnego drzewa wizualnego (**Debuguj**  >  **Windows**  >  **Live Visual Tree**) i upewnij się, że wybrano przycisk **Pokaż narzędzia środowiska uruchomieniowego na** pasku narzędzi aplikacji (po lewej stronie).
 
-![Włącz gorącą ponowną ładowanie XAML](../debugger/media/xaml-hot-reload-show-runtime-tools.png)
+![Zrzut ekranu przedstawiający pasek narzędzi u góry okna aktywnego drzewa wizualnego z wybranym przyciskiem "Pokaż narzędzia środowiska uruchomieniowego w aplikacji".](../debugger/media/xaml-hot-reload-show-runtime-tools.png)
 
 ## <a name="verify-that-you-use-start-debugging-rather-than-attach-to-process"></a>Sprawdź, czy używasz debugowania początkowego zamiast dołączania do procesu
 

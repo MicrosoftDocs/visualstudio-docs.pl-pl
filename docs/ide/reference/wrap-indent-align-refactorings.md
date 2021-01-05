@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: d801f052cb02e6a5b53189eeae342b9015d30f9b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d8a98ebd1fa1e8a9ec937cf4e0965d804a8a9387
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79093877"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761228"
 ---
 # <a name="wrap-indent-and-align-refactorings"></a>Opakowywanie, wcięcia i wyrównywanie refaktoryzacji
 
@@ -40,7 +40,7 @@ To Refaktoryzacja dotyczy:
 2. Naciśnij klawisz **Ctrl** + **.** Aby wyzwolić menu **szybkie akcje i operacje refaktoryzacji** .
 3. Wybierz opcję **Zawijaj łańcuch wywołań** lub **Otocz i Wyrównaj łańcuch wywołań** , aby zaakceptować refaktoryzację.
 
-   ![Zawijanie i wyrównywanie łańcuchów wywołań](media/wrap-call-chain.png)
+   ![Screeenshot z menu szybkie akcje i refaktoryzacje w programie Visual Studio z wybranym łańcuchem wywołań Warap i wyświetlanymi zmianami kodu w języku C#.](media/wrap-call-chain.png)
 
 ## <a name="wrap-indent-and-align-parameters-or-arguments"></a>Zawijanie, wcięcie i wyrównywanie parametrów lub argumentów
 
@@ -85,7 +85,7 @@ To Refaktoryzacja dotyczy:
 2. Naciśnij klawisz **Ctrl** + **.** Aby wyzwolić menu **szybkie akcje i operacje refaktoryzacji** .
 3. Wybierz opcję **Otocz wyrażenie** , aby zaakceptować refaktoryzację.
 
-   ![Zawijanie i wyrównywanie łańcuchów wywołań](media/wrap-binary-expression.png)
+   ![Screeenshot z menu szybkie akcje i refaktoryzacje w programie Visual Studio z wybranym wyrażeniem Warap i wyświetlanymi zmianami kodu w języku C#.](media/wrap-binary-expression.png)
 
 ## <a name="see-also"></a>Zobacz też
 

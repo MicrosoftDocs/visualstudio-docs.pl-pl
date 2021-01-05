@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: Dodawanie niestandardowego kodu XAML do strony startowej | Microsoft Docs'
+description: Dowiedz się, jak utworzyć niestandardową stronę początkową programu Visual Studio, która zawiera przeglądarkę internetową, korzystając z tego przewodnika.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 85cc6520ea86db664de676232e8d61a643483ca4
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 8f23b1331b2c083a38f6b11d9a4a3647474b2f04
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012077"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97862782"
 ---
 # <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>Przewodnik: Dodawanie niestandardowego kodu XAML do strony początkowej
 
@@ -81,13 +83,13 @@ W tym instruktażu pokazano, jak utworzyć niestandardową stronę początkową 
 
 7. Zamknij wystąpienie eksperymentalne.
 
-Aby zastosować niestandardową stronę początkową, w obszarze **Narzędzia**  >  **Opcje**  >  **środowisko**wybierz pozycję **Uruchamianie**. Na liście **Dostosuj stronę początkową** wybierz plik *XAML* , a następnie kliknij przycisk **OK**.
+Aby zastosować niestandardową stronę początkową, w obszarze **Narzędzia**  >  **Opcje**  >  **środowisko** wybierz pozycję **Uruchamianie**. Na liście **Dostosuj stronę początkową** wybierz plik *XAML* , a następnie kliknij przycisk **OK**.
 
 ## <a name="next-steps"></a>Następne kroki
 
 Strona startowa programu Visual Studio zawiera teraz kartę wyświetlającą kartę przeglądarki sieci Web i kartę z przyciskiem. Można utworzyć niestandardowe strony startowe, które mają inne funkcje przy użyciu modelu *związanego z kodem* do dodania pliku Custom. dll, jak pokazano w temacie [Dodawanie kontrolki użytkownika do strony Start](../extensibility/adding-user-control-to-the-start-page.md). Niestandardowe strony startowe można udostępniać innym użytkownikom, publikując plik. vsix w witrynie sieci Web [Visual Studio Marketplace](https://marketplace.visualstudio.com/) lub do innej witryny sieci Web lub udziału sieciowego. Aby uzyskać więcej informacji, zobacz [wdrażanie niestandardowych stron początkowych](../extensibility/deploying-custom-start-pages.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Dostosuj stronę początkową](../ide/customizing-the-start-page-for-visual-studio.md)
 - [Formanty kontenera WPF](/previous-versions/bb675291(v=vs.110))

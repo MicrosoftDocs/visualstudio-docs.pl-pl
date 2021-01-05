@@ -11,16 +11,19 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 6317f7a1f81e6eb6916c10b2f8ce0df91f57a7de
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
-ms.translationtype: HT
+ms.openlocfilehash: 6853ef6040df943ac3050621a5b3a2528d599d9f
+ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329955"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97756620"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Omówienie narzędzia Microsoft IntelliTest
 
 Narzędzie IntelliTest umożliwia wczesne znajdowanie usterek i zmniejsza koszty konserwacji testów. Stosując zautomatyzowane i przejrzyste podejście do testowania, narzędzie IntelliTest może generować kandydujący pakiet testów dla kodu platformy .NET. Generowaniem zestawu testów można dokładniej sterować za pomocą *właściwości poprawności* określonych przez użytkownika. Narzędzie IntelliTest będzie nawet automatycznie rozwijać zestaw testów w miarę rozwoju testowanego kodu.
+
+> [!NOTE]
+> IntelliTest jest dostępna tylko w wersji Enterprise Edition. Jest on obsługiwany dla kodu C#, który jest przeznaczony dla .NET Framework. Platformy .NET Core i .NET Standard nie są obecnie obsługiwane.
 
 **Testy charakterystyki** Narzędzie IntelliTest umożliwia ustalanie zachowania kodu pod względem zestawu tradycyjnych testów jednostkowych.
 Taki zestaw testów może służyć jako zestaw regresji, stanowiący podstawę do rozwiązywania problemów ze złożonością podczas refaktoryzacji starszego lub nieznanego kodu.

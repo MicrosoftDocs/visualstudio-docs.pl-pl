@@ -1,6 +1,7 @@
 ---
 title: Dołączanie do uruchomionych procesów za pomocą debugera
-ms.custom: seodec18
+description: Dowiedz się, jak dołączyć debuger programu Visual Studio do uruchomionego procesu na komputerze lokalnym lub zdalnym.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 06/12/2020
 ms.topic: conceptual
 f1_keywords:
@@ -28,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a33af839406497a2a30fba2f5103a64a1da36ed7
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 1fd1ff5ff0f8c7510185236c425ddd870f8b500f
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671469"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97760929"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Dołączanie do uruchomionego procesu za pomocą debugera programu Visual Studio
 
@@ -58,7 +59,7 @@ Aby szybko ponownie dołączyć do dołączonego wcześniej procesu, zobacz Pono
 
 1. Ustaw adres **docelowy połączenia** jako nazwę komputera lokalnego.
 
-   ![DBG_Basics_Attach_To_Process](../debugger/media/DBG_Basics_Attach_To_Process.png "DBG_Basics_Attach_To_Process")
+   ![Zrzut ekranu przedstawiający okno dialogowe Dołączanie do procesu z docelowym połączeniem ustawionym na nazwę komputera lokalnego.](../debugger/media/DBG_Basics_Attach_To_Process.png)
 
 1. Z listy **dostępne procesy** Znajdź i wybierz proces lub procesy, do których chcesz dołączyć.
 
@@ -78,7 +79,7 @@ Aby szybko ponownie dołączyć do dołączonego wcześniej procesu, zobacz Pono
    1. W oknie dialogowym **Wybierz typ kodu** wybierz **Debuguj te typy kodu**.
       Jeśli wystąpi błąd podczas próby dołączenia do procesu na liście, możesz użyć okna dialogowego [Wybierz typ kodu](../debugger/select-code-type-dialog-box.md) , aby pomóc w [rozwiązaniu](#BKMK_Troubleshoot_attach_errors) problemu.
    1. Wybierz typy kodu do debugowania.
-   1. Wybierz przycisk **OK**.
+   1. Wybierz pozycję **OK**.
 
 1. Wybierz pozycję **Dołącz**.
 
@@ -148,7 +149,7 @@ Aby uzyskać pełniejsze instrukcje dotyczące debugowania aplikacji ASP.NET, kt
    1. Kliknij pozycję **Wybierz**.
    1. W oknie dialogowym **Wybierz typ kodu** wybierz **Debuguj te typy kodu**.
       Jeśli wystąpi błąd podczas próby dołączenia do procesu na liście, możesz użyć okna dialogowego [Wybierz typ kodu](../debugger/select-code-type-dialog-box.md) , aby pomóc w [rozwiązaniu](#BKMK_Troubleshoot_attach_errors) problemu.
-   1. Wybierz przycisk **OK**.
+   1. Wybierz pozycję **OK**.
 
 6. Wybierz pozycję **Dołącz**.
 
@@ -197,7 +198,7 @@ Aby szybko wybrać uruchomiony proces do dołączenia, w programie Visual Studio
 |Debugowanie skryptu po stronie klienta na lokalnym serwerze usług IIS, dla obsługiwanych typów aplikacji |Użyj **dołączania do procesu**|*chrome.exe*, *MicrosoftEdgeCP.exe* lub *iexplore.exe*|Debugowanie skryptów musi być włączone. Dla programu Chrome należy również uruchomić polecenie Chrome w trybie debugowania (typ `chrome.exe --remote-debugging-port=9222` z wiersza polecenia) i wybrać **JavaScript (Chrome)** w polu **Dołącz do** .|
 |Debugowanie aplikacji C#, Visual Basic lub C++ na komputerze lokalnym|Użyj standardowego debugowania (**F5**) lub **Dołącz do procesu**|*\<appname>. exe*|W większości scenariuszy należy używać debugowania standardowego i nie **dołączać do procesu**.|
 |Debugowanie zdalne aplikacji klasycznej systemu Windows|Zdalne narzędzia|Nie dotyczy| Zobacz [debugowanie zdalne w języku C# lub aplikacji Visual Basic](../debugger/remote-debugging-csharp.md) lub [zdalne debugowanie aplikacji w języku C++](../debugger/remote-debugging-cpp.md)|
-|Debugowanie programu .NET Core w systemie Linux|Użyj **dołączania do procesu**|*dotnet.exe* lub unikatowa nazwa procesu|Aby korzystać z protokołu SSH, zobacz [zdalne debugowanie programu .NET Core działającego w systemie Linux przy użyciu protokołu SSH](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md). W przypadku aplikacji kontenerowych zobacz [dołączanie do procesu działającego w kontenerze platformy Docker](../debugger/attach-to-process-running-in-docker-container.md#attach-to-a-process-running-on-a-linux-docker-container).|
+|Debugowanie na platformie .NET Core w systemie Linux|Użyj **dołączania do procesu**|*dotnet.exe* lub unikatowa nazwa procesu|Aby korzystać z protokołu SSH, zobacz [zdalne debugowanie programu .NET Core działającego w systemie Linux przy użyciu protokołu SSH](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md). W przypadku aplikacji kontenerowych zobacz [dołączanie do procesu działającego w kontenerze platformy Docker](../debugger/attach-to-process-running-in-docker-container.md#attach-to-a-process-running-on-a-linux-docker-container).|
 |Debugowanie aplikacji w kontenerze|*dotnet.exe* lub unikatowa nazwa procesu|Zobacz [dołączanie do procesu działającego w kontenerze platformy Docker](../debugger/attach-to-process-running-in-docker-container.md)|
 |Zdalne debugowanie Python w systemie Linux|Użyj **dołączania do procesu**|*debugpy*|Zobacz [dołączanie zdalnie z narzędzi Python](../python/debugging-python-code-on-remote-linux-machines.md#attach-remotely-from-python-tools)|
 |Debuguj aplikację ASP.NET na maszynie lokalnej po uruchomieniu aplikacji bez debugera|Użyj **dołączania do procesu**|*iiexpress.exe*|Może to być przydatne do szybszego ładowania aplikacji, takich jak (na przykład), podczas profilowania. |
@@ -242,13 +243,13 @@ Jeśli potrzebujesz bardziej szczegółowych informacji o tym, dlaczego debuger 
 
     3. W oknie dialogowym **Wybierz typ kodu** wybierz **Debuguj te typy kodu** i typ kodu, który nie mógł zostać dołączony. Usuń zaznaczenie innych typów kodu.
 
-    4. Wybierz przycisk **OK**.
+    4. Wybierz pozycję **OK**.
 
     5. W oknie dialogowym **Dołącz do procesu** wybierz pozycję **Dołącz**.
 
     Tym razem dołączenie zakończy się niepowodzeniem i zostanie wyświetlony konkretny komunikat o błędzie.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Debugowanie wielu procesów](../debugger/debug-multiple-processes.md)
 - [Debugowanie just in Time](../debugger/just-in-time-debugging-in-visual-studio.md)

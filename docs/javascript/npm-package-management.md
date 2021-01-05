@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: fed525f62466d096aa7868cc57c7fd7c75bf46f8
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: d2c7ec425767e432105bfcec493599197e2fd5ec
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91781025"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815688"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Zarządzanie pakietami npm w programie Visual Studio
 
@@ -29,7 +29,7 @@ Integracja programu Visual Studio z usługą npm różni się w zależności od 
 * [Otwórz folder (Node.js)](../javascript/develop-javascript-code-without-solutions-projects.md)
 
 > [!Important]
-> npm oczekuje folderu *node_modules* ipackage.jsw * elemencie* głównym projektu. Jeśli struktura folderów aplikacji jest inna, należy zmodyfikować strukturę folderów, jeśli chcesz zarządzać pakietami npm za pomocą programu Visual Studio.
+> npm oczekuje folderu *node_modules* ipackage.jsw *elemencie* głównym projektu. Jeśli struktura folderów aplikacji jest inna, należy zmodyfikować strukturę folderów, jeśli chcesz zarządzać pakietami npm za pomocą programu Visual Studio.
 
 ## <a name="nodejs-projects"></a>Projekty Node.js
 
@@ -42,7 +42,7 @@ Te funkcje współpracują i synchronizują z systemem projektu oraz *package.js
 
 ### <a name="prerequisites"></a>Wymagania wstępne
 
-PotrzebujeszNode.js obciążenie ** programowaniem** i zainstalowanym środowiskiem uruchomieniowym Node.js, aby dodać obsługę npm do projektu. Aby uzyskać szczegółowe instrukcje, zobacz [Tworzenie projektu Node.js](../ide/quickstart-nodejs.md?toc=%252fvisualstudio%252fjavascript%252ftoc.json).
+PotrzebujeszNode.js obciążenie **programowaniem** i zainstalowanym środowiskiem uruchomieniowym Node.js, aby dodać obsługę npm do projektu. Aby uzyskać szczegółowe instrukcje, zobacz [Tworzenie projektu Node.js](../ide/quickstart-nodejs.md?toc=%252fvisualstudio%252fjavascript%252ftoc.json).
 
 > [!NOTE]
 > W przypadku istniejących projektów Node.js Użyj szablonu **z istniejącego Node.js kod** rozwiązania lub typu projektu [otwórz folder (Node.js)](../javascript/develop-javascript-code-without-solutions-projects.md) , aby włączyć npm w projekcie.
@@ -55,9 +55,9 @@ W przypadku projektów Node.js Najprostszym sposobem instalowania pakietów npm 
 
 W tym oknie można wyszukać pakiet, określić opcje i zainstalować.
 
-![Wyszukaj pakiet npm](../javascript/media/search-package.png)
+![Zrzut ekranu przedstawiający okno dialogowe instalowanie nowych pakietów npm. Wybrano pakiet Azure 2.2.1 — wersja zapoznawcza, a szczegóły i opcje dla tego pakietu są wyświetlane.](../javascript/media/search-package.png)
 
-* **Typ zależności** — wybierany między pakietami **Standard**, **Development**i **Optional** . Standard określa, że pakiet jest zależnością czasu wykonywania, podczas gdy programowanie określa, że pakiet jest wymagany tylko podczas tworzenia.
+* **Typ zależności** — wybierany między pakietami **Standard**, **Development** i **Optional** . Standard określa, że pakiet jest zależnością czasu wykonywania, podczas gdy programowanie określa, że pakiet jest wymagany tylko podczas tworzenia.
 * **Dodaj do package.js** — zalecane. Ta konfigurowalna opcja jest przestarzała.
 * **Wybrana wersja** — wybierz wersję pakietu do zainstalowania.
 * **Inne argumenty npm** — Określ inne standardowe argumenty npm. Można na przykład wprowadzić wartość wersji `@~0.8` , na przykład w celu zainstalowania określonej wersji, która nie jest dostępna na liście wersje.
@@ -73,7 +73,7 @@ Postęp instalacji można zobaczyć w danych wyjściowych **npm** w oknie **dany
 
 pakiety npm są wyświetlane w Eksplorator rozwiązań. Wpisy w węźle **npm** powodują naśladowanie zależności w *package.js* pliku.
 
-![Wyszukaj pakiet npm](../javascript/media/solution-explorer-status.png)
+![Zrzut ekranu węzła npm w Eksplorator rozwiązań pokazujący stan instalacji pakietów npm.](../javascript/media/solution-explorer-status.png)
 
 ### <a name="package-status"></a>Stan pakietu
 
@@ -86,12 +86,12 @@ Kliknij prawym przyciskiem myszy węzeł **npm** , aby wykonać jedną z następ
 
 * **Instalowanie nowych pakietów npm** Otwiera interfejs użytkownika, aby zainstalować nowe pakiety.
 * **Zainstaluj pakiety npm** Uruchamia polecenie instalacji npm, aby zainstalować wszystkie pakiety wymienione w *package.jsna*. (Działa `npm install` ).
-* **Aktualizowanie pakietów npm** Aktualizuje pakiety do najnowszych wersji, zgodnie z zakresem wersji semantycznej (semver) określonym w *package.json*. (Działa `npm update --save` .). Zakresy Semver są zwykle określane przy użyciu "~" lub "^". Aby uzyskać więcej informacji, [package.jsw konfiguracji](../javascript/configure-packages-with-package-json.md).
+* **Aktualizowanie pakietów npm** Aktualizuje pakiety do najnowszych wersji, zgodnie z zakresem wersji semantycznej (SemVer) określonym w *package.json*. (Działa `npm update --save` .). Zakresy SemVer są zwykle określane przy użyciu "~" lub "^". Aby uzyskać więcej informacji, [package.jsw konfiguracji](../javascript/configure-packages-with-package-json.md).
 
 Kliknij prawym przyciskiem myszy węzeł pakietu, aby wykonać jedną z następujących czynności:
 
 * **Zainstaluj pakiety npm** Uruchamia polecenie instalacji npm w celu zainstalowania wersji pakietu wymienionej w *package.js*. (Działa `npm install` ).
-* **Aktualizowanie pakietów npm** Aktualizuje pakiet do najnowszej wersji, zgodnie z zakresem semver określonym w *package.js*. (Uruchom `npm update --save` ). Zakresy Semver są zwykle określane przy użyciu "~" lub "^".
+* **Aktualizowanie pakietów npm** Aktualizuje pakiet do najnowszej wersji, zgodnie z zakresem SemVer określonym w *package.js*. (Uruchom `npm update --save` ). Zakresy SemVer są zwykle określane przy użyciu "~" lub "^".
 * **Odinstaluj pakiety npm** Odinstalowuje pakiet i usuwa go z *package.json* (działa `npm uninstall --save` ).
 ::: moniker-end
 ::: moniker range="vs-2017"
@@ -160,11 +160,11 @@ Po zapisaniu pliku program Visual Studio dodaje pakiet w węźle **zależności/
 
 W przypadku projektów z dołączoną npm można skonfigurować pakiety npm przy użyciu programu `package.json` . Kliknij prawym przyciskiem myszy węzeł npm w Eksplorator rozwiązań i wybierz polecenie **otwórz package.jsna**.
 
-![Wyszukaj pakiet npm](../javascript/media/npm-add-package.png)
+![Zrzut ekranu przedstawiający Eksplorator rozwiązań z wybranym węzłem npm. Menu kontekstowe kliknij prawym przyciskiem myszy jest otwarte i otwarte package.jsna jest zaznaczone.](../javascript/media/npm-add-package.png)
 
 Funkcja IntelliSense w *package.js* jest pomocna w przypadku wybrania konkretnej wersji pakietu npm.
 
-:::image type="content" source="../javascript/media/npm-add-package-intellisense.png" alt-text="Zainstaluj nowy pakiet npm z Eksploratora rozwiązań" border="true":::
+:::image type="content" source="../javascript/media/npm-add-package-intellisense.png" alt-text="Wybierz wersję pakietu npm" border="true":::
 
 Po zapisaniu pliku program Visual Studio dodaje pakiet w węźle **zależności/npm** w Eksplorator rozwiązań. Jeśli węzeł nie jest widoczny, kliknij prawym przyciskiem myszy pozycję **package.jsna** i wybierz polecenie **Przywróć pakiety**.
 

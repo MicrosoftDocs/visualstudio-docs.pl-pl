@@ -1,5 +1,7 @@
 ---
 title: Tworzenie zakończenia, poleceń i ustawień widoku Microsoft Docs
+description: Dowiedz się, jak rozciągnąć Edytor kodu programu Visual Studio za pomocą prowadnic kolumn, korzystając z tego przewodnika.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 392c4be60f2285edb986d5ca7a1cf4a2202e03c7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2108abe89a47fa276da53a14439a52451d936eea
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905042"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863077"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>Przewodnik: Tworzenie zakończenia, poleceń i ustawień widoku (prowadnice kolumn)
 Można rozwinąć Edytor tekstu/kodu programu Visual Studio za pomocą poleceń i efektów wyświetlania. W tym artykule pokazano, jak zacząć korzystać z popularnej funkcji rozszerzenia, prowadnic kolumn. Prowadnice kolumn są wizualnie jasne linie rysowane w widoku edytora tekstów, aby ułatwić zarządzanie kodem do określonych szerokości kolumn. W odniesieniu do kodu sformatowanego można zwrócić uwagę na przykłady dołączone do dokumentów, wpisów w blogu lub raportów o błędach.
@@ -43,11 +45,11 @@ Najpierw należy utworzyć projekt VSIX, dodać zakończenia definiowania widoku
 
   **VSIX**. Użyj polecenia **File &#124; New...** , aby utworzyć projekt. Wybierz węzeł **rozszerzalności** w obszarze **C#** w lewym okienku nawigacji, a następnie wybierz **Projekt VSIX** w okienku po prawej stronie. Wprowadź nazwę **ColumnGuides** i wybierz **przycisk OK** , aby utworzyć projekt.
 
-  **Wyświetl moduł definiowania**układu. Naciśnij przycisk prawy wskaźnik w węźle projektu w Eksplorator rozwiązań. Wybierz polecenie **dodaj &#124; nowy element...** , aby dodać nowy element zakończenia widoku. Wybierz pozycję **rozszerzalność &#124; Edytor** w lewym okienku nawigacji, a następnie wybierz pozycję **Edytor definiowania okienka ekranu edytora** w okienku po prawej stronie. Wprowadź nazwę **ColumnGuideAdornment** jako nazwę elementu, a następnie wybierz pozycję **Dodaj** , aby ją dodać.
+  **Wyświetl moduł definiowania** układu. Naciśnij przycisk prawy wskaźnik w węźle projektu w Eksplorator rozwiązań. Wybierz polecenie **dodaj &#124; nowy element...** , aby dodać nowy element zakończenia widoku. Wybierz pozycję **rozszerzalność &#124; Edytor** w lewym okienku nawigacji, a następnie wybierz pozycję **Edytor definiowania okienka ekranu edytora** w okienku po prawej stronie. Wprowadź nazwę **ColumnGuideAdornment** jako nazwę elementu, a następnie wybierz pozycję **Dodaj** , aby ją dodać.
 
   Można zobaczyć, że ten szablon elementu dodał dwa pliki do projektu (jak również odwołania i tak dalej): **ColumnGuideAdornment.cs** i **ColumnGuideAdornmentTextViewCreationListener.cs**. Szablony rysują purpurowy prostokąt w widoku. W poniższej sekcji zmienisz kilka wierszy w odbiorniku tworzenia widoku i zastąpisz zawartość **ColumnGuideAdornment.cs**.
 
-  **Polecenia**. W **Eksplorator rozwiązań**naciśnij przycisk prawy wskaźnik w węźle projektu. Wybierz polecenie **dodaj &#124; nowy element...** , aby dodać nowy element zakończenia widoku. Wybierz pozycję **rozszerzalność &#124; pakietu VSPackage** w lewym okienku nawigacji, a następnie w okienku po prawej stronie wybierz **polecenie niestandardowe** . Wprowadź nazwę **ColumnGuideCommands** jako nazwę elementu, a następnie wybierz pozycję **Dodaj**. Oprócz kilku odwołań, Dodawanie poleceń i pakietów Dodaliśmy również **ColumnGuideCommands.cs**, **ColumnGuideCommandsPackage.cs**i **ColumnGuideCommandsPackage. vsct**. W poniższej sekcji zastąpisz zawartość pierwszego i ostatniego pliku w celu zdefiniowania i zaimplementowania poleceń.
+  **Polecenia**. W **Eksplorator rozwiązań** naciśnij przycisk prawy wskaźnik w węźle projektu. Wybierz polecenie **dodaj &#124; nowy element...** , aby dodać nowy element zakończenia widoku. Wybierz pozycję **rozszerzalność &#124; pakietu VSPackage** w lewym okienku nawigacji, a następnie w okienku po prawej stronie wybierz **polecenie niestandardowe** . Wprowadź nazwę **ColumnGuideCommands** jako nazwę elementu, a następnie wybierz pozycję **Dodaj**. Oprócz kilku odwołań, Dodawanie poleceń i pakietów Dodaliśmy również **ColumnGuideCommands.cs**, **ColumnGuideCommandsPackage.cs** i **ColumnGuideCommandsPackage. vsct**. W poniższej sekcji zastąpisz zawartość pierwszego i ostatniego pliku w celu zdefiniowania i zaimplementowania poleceń.
 
 ## <a name="set-up-the-text-view-creation-listener"></a>Konfigurowanie odbiornika tworzenia widoku tekstu
 Otwórz *ColumnGuideAdornmentTextViewCreationListener.cs* w edytorze. Ten kod implementuje procedurę obsługi dla każdego programu Visual Studio tworzącego widoki tekstu. Istnieją atrybuty kontrolujące, kiedy program obsługi jest wywoływany w zależności od właściwości widoku.

@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 1873c11d8f2e6243a0dc0f867e579f1927cd1607
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e7c6eec178d0ba3b2934e390cc02310044c4dfa
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579966"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833354"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Szybki Start: Tworzenie ASP.NET Core pierwszej aplikacji sieci Web za pomocą programu Visual Studio
 
@@ -122,9 +122,9 @@ Wkrótce po program Visual Studio otworzy plik projektu.
 
 ::: moniker range="vs-2017"
 
-1. W **Eksplorator rozwiązań**rozwiń folder **strony** , a następnie wybierz pozycję **about. cshtml**.
+1. W **Eksplorator rozwiązań** rozwiń folder **strony** , a następnie wybierz pozycję **about. cshtml**.
 
-   ![Wybierz plik about. cshtml z Eksplorator rozwiązań](../ide/media/csharp-aspnet-about-page-html-file.png)
+   ![Zrzut ekranu programu Visual Studio Eksplorator rozwiązań pokazujący pliki w projekcie HelloWorld. Folder strony jest rozwinięty i wybrano około. cshtml.](../ide/media/csharp-aspnet-about-page-html-file.png)
 
    Ten plik odpowiada stronie o nazwie **informacje** w aplikacji sieci Web, która działa w przeglądarce sieci Web.
 
@@ -138,9 +138,9 @@ Wkrótce po program Visual Studio otworzy plik projektu.
 
    ![Zmiana domyślnego kodu HTML dla obszaru informacji dodatkowych w edytorze programu Visual Studio](../ide/media/csharp-aspnet-about-cshtml-page-hello-world.png)
 
-1. W **Eksplorator rozwiązań**rozwiń pozycję **about. cshtml**, a następnie wybierz pozycję **about.cshtml.cs**. (Ten plik odpowiada również stronie **informacje** w przeglądarce internetowej).
+1. W **Eksplorator rozwiązań** rozwiń pozycję **about. cshtml**, a następnie wybierz pozycję **about.cshtml.cs**. (Ten plik odpowiada również stronie **informacje** w przeglądarce internetowej).
 
-   ![Wybierz plik about. cshtml z Eksplorator rozwiązań](../ide/media/csharp-aspnet-about-page-code-file.png)
+   ![Zrzut ekranu programu Visual Studio Eksplorator rozwiązań pokazujący pliki w projekcie HelloWorld. About. cshtml jest rozwinięta, a wybrano About.cshtml.cs.](../ide/media/csharp-aspnet-about-page-code-file.png)
 
    W edytorze zobaczysz kod C#, który zawiera tekst dla obszaru "Opis aplikacji" na stronie **informacje** .
 
@@ -175,7 +175,7 @@ Gratulujemy zakończenia tego przewodnika Szybki Start! Mamy nadzieję, że uczy
 
 ::: moniker range="vs-2019"
 
-1. W **Eksplorator rozwiązań**rozwiń folder **strony** , a następnie wybierz polecenie **index. cshtml**.
+1. W **Eksplorator rozwiązań** rozwiń folder **strony** , a następnie wybierz polecenie **index. cshtml**.
 
    ![Wybierz plik index. cshtml z Eksplorator rozwiązań](../ide/media/vs-2019/csharp-aspnet-index-page-cshtml-file.png)
 

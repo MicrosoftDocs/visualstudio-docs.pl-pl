@@ -1,5 +1,6 @@
 ---
 title: Debugowanie zdalne projektu w języku C++ | Microsoft Docs
+description: Dowiedz się, jak debugować aplikację Visual Studio C++ z komputera zdalnego, wykonując następujące instrukcje krok po kroku.
 ms.custom: remotedebugging
 ms.date: 08/14/2018
 ms.topic: conceptual
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0173ed557afa47129e0cc92d9ef9b2d94a7b198f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a8d3b578e62b917a7553b42a04e53062c406c4fd
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "92298738"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815805"
 ---
 # <a name="remote-debugging-a-c-project-in-visual-studio"></a>Zdalne debugowanie projektu języka C++ w programie Visual Studio
 Aby debugować aplikację programu Visual Studio na innym komputerze, zainstaluj i Uruchom narzędzia zdalne na komputerze, na którym zostanie wdrożona aplikacja, skonfiguruj projekt do łączenia się z komputerem zdalnym z programu Visual Studio, a następnie wdróż i uruchom aplikację.
@@ -63,7 +64,7 @@ Zdalny debuger jest obsługiwany w systemie Windows 7 i nowszych (nie Phone) ora
 
 4. Ustaw **debuger do uruchamiania** na **zdalny debuger systemu Windows**.
 
-    ![RemoteDebuggingCPlus](../debugger/media/remotedebuggingcplus.png "RemoteDebuggingCPlus")
+    ![Zrzut ekranu karty debugowanie we właściwościach Eksplorator rozwiązań programu Visual Studio. Właściwość debuger do uruchomienia jest ustawiona na zdalny debuger systemu Windows.](../debugger/media/remotedebuggingcplus.png)
 
 5. Wprowadź następujące zmiany właściwości:
 
@@ -83,9 +84,9 @@ Zdalny debuger jest obsługiwany w systemie Windows 7 i nowszych (nie Phone) ora
 
 7. W obszarze Konfiguracja **debugowania** zaznacz pole wyboru **Wdróż** .
 
-    ![RemoteDebugCplusDeploy](../debugger/media/remotedebugcplusdeploy.png "RemoteDebugCplusDeploy")
+    ![Zrzut ekranu przedstawiający Configuration Manager w Eksplorator rozwiązań programu Visual Studio. Wybrana jest Konfiguracja debugowania, a wdrożenie jest zaznaczone.](../debugger/media/remotedebugcplusdeploy.png)
 
-8. Rozpocznij debugowanie (**debuguj > rozpocząć debugowanie**lub **F5**).
+8. Rozpocznij debugowanie (**debuguj > rozpocząć debugowanie** lub **F5**).
 
 9. Plik wykonywalny jest automatycznie wdrażany na komputerze zdalnym.
 
@@ -110,6 +111,6 @@ Zdalny debuger jest obsługiwany w systemie Windows 7 i nowszych (nie Phone) ora
 - [Debugowanie w Visual Studio](../debugger/index.yml)
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)
 - [Konfigurowanie zapory systemu Windows na potrzeby debugowania zdalnego](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
-- [Przypisania portów debugera zdalnego](../debugger/remote-debugger-port-assignments.md)
+- [Przypisania portów zdalnego debugera](../debugger/remote-debugger-port-assignments.md)
 - [Zdalne debugowanie platformy ASP.NET na komputerze zdalnym usług IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)
-- [Błędy związane z debugowaniem zdalnym i rozwiązywanie problemów](../debugger/remote-debugging-errors-and-troubleshooting.md)
+- [Błędy debugowania zdalnego i rozwiązywanie problemów](../debugger/remote-debugging-errors-and-troubleshooting.md)

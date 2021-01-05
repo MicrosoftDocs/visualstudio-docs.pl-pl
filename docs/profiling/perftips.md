@@ -1,5 +1,6 @@
 ---
 title: Funkcja PerfTip | Microsoft Docs
+description: Dowiedz się, jak używać debugera programu Visual Studio funkcja PerfTip i zintegrowanych narzędzia diagnostyczne do monitorowania i analizowania wydajności aplikacji podczas debugowania.
 ms.date: 9/11/2020
 ms.topic: how-to
 ms.assetid: 509d2d4f-48a5-4cdf-acad-6f7b75421303
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f260307b677046be54e6d80b0d8fe122b13292e4
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: 481113e9f5e2f5b66aec5f4dad29f581462165ca
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90075473"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815831"
 ---
 # <a name="perftips"></a>Wskazówki dotyczące wydajności
 
@@ -33,7 +34,7 @@ Punkty przerwania i powiązane dane chronometrażu są rejestrowane w oknie **Na
 
 Na poniższej ilustracji przedstawiono okno **Narzędzia diagnostyczne** .
 
-![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools — Update1")
+![Zrzut ekranu okna narzędzia diagnostyczne w debugerze programu Visual Studio, pokazujący oś czasu i wykresy zdarzeń dla pamięci i użycia procesora CPU.](../profiling/media/diagnostictools-update1.png)
 
 - Oś czasu dla **zdarzeń przerwania** oznacza punkty przerwania, które zostały trafione w sesji debugowania. Kliknij zdarzenie, aby wybrać je na liście szczegóły **debugera** .
 
@@ -59,7 +60,7 @@ Aby włączyć lub wyłączyć okno narzędzia diagnostyczne:
 
 2. Zaznacz lub wyczyść **opcję Włącz narzędzia diagnostyczne podczas debugowania**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Profilowanie w programie Visual Studio](../profiling/index.yml)
 - [Pierwsze spojrzenie na narzędzia profilowania](../profiling/profiling-feature-tour.md)

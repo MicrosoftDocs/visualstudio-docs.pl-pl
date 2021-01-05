@@ -1,5 +1,6 @@
 ---
 title: Zdalne debugowanie ASP.NET Core w usługach IIS i na platformie Azure | Microsoft Docs
+description: Dowiedz się, jak skonfigurować i skonfigurować aplikację ASP.NET Core programu Visual Studio, wdrożyć ją w usługach IIS przy użyciu platformy Azure i dołączyć zdalny debuger z programu Visual Studio.
 ms.custom: remotedebugging
 ms.date: 05/06/2020
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 926bd4a6630d9d99726ee6c1479d04c476756c18
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: b6535bb52221de780b9a8862be22a6a4deb79b57
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "92298746"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815844"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>Zdalne debugowanie ASP.NET Core w usługach IIS na platformie Azure w programie Visual Studio
 
@@ -29,13 +30,13 @@ Zalecany sposób zdalnego debugowania na platformie Azure zależy od Twojego sce
 
     W tym scenariuszu należy wdrożyć aplikację z programu Visual Studio na platformie Azure, ale nie musisz ręcznie instalować ani konfigurować usług IIS ani zdalnego debugera (te składniki są reprezentowane przez linie kropkowane), jak pokazano na poniższej ilustracji.
 
-    ![Składniki debugera zdalnego](../debugger/media/remote-debugger-azure-app-service.png "Remote_debugger_components")
+    ![Diagram przedstawiający relację między programem Visual Studio, Azure App Service i aplikacją ASP.NET. Usługi IIS i zdalny debuger są reprezentowane z kropkowanymi liniami.](../debugger/media/remote-debugger-azure-app-service.png)
 
 * Aby debugować usługi IIS na maszynie wirtualnej platformy Azure, wykonaj kroki opisane w tym temacie (zobacz sekcję [debugowanie zdalne na maszynie wirtualnej platformy Azure](#remote_debug_azure_vm)). Pozwala to na użycie niestandardowej konfiguracji usług IIS, ale kroki instalacji i wdrażania są bardziej skomplikowane.
 
     W przypadku maszyny wirtualnej platformy Azure należy wdrożyć aplikację z programu Visual Studio na platformie Azure, a także ręcznie zainstalować rolę usług IIS i zdalny debuger, jak pokazano na poniższej ilustracji.
 
-    ![Składniki debugera zdalnego](../debugger/media/remote-debugger-azure-vm.png "Remote_debugger_components")
+    ![Diagram przedstawiający relację między programem Visual Studio, maszyną wirtualną platformy Azure i aplikacją ASP.NET. Usługi IIS i zdalny debuger są reprezentowane z pełnymi wierszami.](../debugger/media/remote-debugger-azure-vm.png)
 
 * Aby debugować ASP.NET Core na platformie Azure Service Fabric, zobacz [debugowanie aplikacji zdalnej Service Fabric](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application).
 
@@ -78,7 +79,7 @@ W programie Visual Studio można szybko publikować i debugować aplikację w w 
 
     Jeśli wszystkie profile publikowania zostały wcześniej skonfigurowane, zostanie wyświetlone okienko **Publikowanie** . Kliknij pozycję **Nowy profil**.
 
-1. Wybierz **Azure App Service** z okna dialogowego **Publikowanie** , wybierz pozycję **Utwórz nowy**i postępuj zgodnie z monitami, aby utworzyć profil.
+1. Wybierz **Azure App Service** z okna dialogowego **Publikowanie** , wybierz pozycję **Utwórz nowy** i postępuj zgodnie z monitami, aby utworzyć profil.
 
     Aby uzyskać szczegółowe instrukcje, zobacz [wdrażanie aplikacji sieci web ASP.NET Core na platformie Azure przy użyciu programu Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 
@@ -159,7 +160,7 @@ Tej opcji można użyć do utworzenia pliku ustawień publikowania i zaimportowa
 
 ### <a name="configure-the-aspnet-core-web-site"></a>Skonfiguruj witrynę sieci Web ASP.NET Core
 
-1. W Menedżerze usług IIS w lewym okienku w obszarze **połączenia**wybierz pozycję **Pule aplikacji**. Otwórz przystawkę **Domyślna** i ustaw **wersję środowiska .NET CLR** na **Brak kodu zarządzanego**. Jest to wymagane w przypadku ASP.NET Core. Domyślna witryna sieci Web używa tej domyślnej.
+1. W Menedżerze usług IIS w lewym okienku w obszarze **połączenia** wybierz pozycję **Pule aplikacji**. Otwórz przystawkę **Domyślna** i ustaw **wersję środowiska .NET CLR** na **Brak kodu zarządzanego**. Jest to wymagane w przypadku ASP.NET Core. Domyślna witryna sieci Web używa tej domyślnej.
 
 2. Zatrzymaj i uruchom ponownie tę samą wartość.
 
@@ -201,13 +202,13 @@ W przypadku importowania ustawień publikowania można pominąć tę sekcję.
 
 3. W polu **alias** ustaw wartość **MyASPApp** , a pole Pula aplikacji **nie ma kodu zarządzanego**. Ustaw **ścieżkę fizyczną** na **C:\Publish** (w którym później zostanie wdrożony projekt ASP.NET Core).
 
-4. Po wybraniu lokacji w Menedżerze usług IIS wybierz pozycję **Edytuj uprawnienia**i upewnij się, że konto IUSR, IIS_IUSRS lub użytkownik skonfigurowany dla puli aplikacji jest autoryzowanym użytkownikiem z uprawnieniami do odczytu & wykonywania.
+4. Po wybraniu lokacji w Menedżerze usług IIS wybierz pozycję **Edytuj uprawnienia** i upewnij się, że konto IUSR, IIS_IUSRS lub użytkownik skonfigurowany dla puli aplikacji jest autoryzowanym użytkownikiem z uprawnieniami do odczytu & wykonywania.
 
     Jeśli nie widzisz jednego z tych użytkowników z dostępem, wykonaj kroki, aby dodać IUSR jako użytkownik z uprawnieniami do odczytu & wykonywania.
 
 ### <a name="optional-publish-and-deploy-the-app-by-publishing-to-a-local-folder-from-visual-studio"></a>Obowiązkowe Publikowanie i wdrażanie aplikacji przez publikowanie do folderu lokalnego z programu Visual Studio
 
-Jeśli nie używasz Web Deploy, musisz opublikować i wdrożyć aplikację przy użyciu systemu plików lub innych narzędzi. Możesz rozpocząć od utworzenia pakietu przy użyciu systemu plików, a następnie wdrożyć pakiet ręcznie lub użyć innych narzędzi, takich jak PowerShell, RoboCopy lub XCopy. W tej sekcji założono, że ręcznie skopiujesz pakiet, jeśli nie używasz Web Deploy.
+Jeśli nie używasz Web Deploy, musisz opublikować i wdrożyć aplikację przy użyciu systemu plików lub innych narzędzi. Możesz rozpocząć od utworzenia pakietu przy użyciu systemu plików, a następnie wdrożyć pakiet ręcznie lub użyć innych narzędzi, takich jak PowerShell, Robocopy lub XCopy. W tej sekcji założono, że ręcznie skopiujesz pakiet, jeśli nie używasz Web Deploy.
 
 [!INCLUDE [remote-debugger-deploy-app-local](../debugger/includes/remote-debugger-deploy-app-local.md)]
 
@@ -234,13 +235,13 @@ Pobierz wersję narzędzi zdalnych, która pasuje do używanej wersji programu V
 
 3. Ustaw pole kwalifikator na **\<remote computer name>** i naciśnij klawisz **Enter**.
 
-    Sprawdź, czy program Visual Studio dodaje wymagany port do nazwy komputera, która jest wyświetlana w formacie: ** \<remote computer name> :p** .
+    Sprawdź, czy program Visual Studio dodaje wymagany port do nazwy komputera, która jest wyświetlana w formacie: **\<remote computer name> :p** .
 
     ::: moniker range=">=vs-2019"
-    W programie Visual Studio 2019 powinna zostać wyświetlona ** \<remote computer name> : 4024**
+    W programie Visual Studio 2019 powinna zostać wyświetlona **\<remote computer name> : 4024**
     ::: moniker-end
     ::: moniker range="vs-2017"
-    W programie Visual Studio 2017 powinna zostać wyświetlona ** \<remote computer name> : 4022**
+    W programie Visual Studio 2017 powinna zostać wyświetlona **\<remote computer name> : 4022**
     ::: moniker-end
     Port jest wymagany. Jeśli nie widzisz numeru portu, Dodaj go ręcznie.
 
@@ -270,7 +271,7 @@ Pobierz wersję narzędzi zdalnych, która pasuje do używanej wersji programu V
 
 7. Kliknij przycisk **Dołącz**.
 
-8. Otwórz witrynę sieci Web komputera zdalnego. W przeglądarce przejdź do **http:// \<remote computer name> **.
+8. Otwórz witrynę sieci Web komputera zdalnego. W przeglądarce przejdź do **http:// \<remote computer name>**.
 
     Powinna zostać wyświetlona strona sieci Web ASP.NET.
 9. W uruchomionej aplikacji ASP.NET kliknij link do strony **informacje** .

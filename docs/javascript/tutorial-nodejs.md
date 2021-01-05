@@ -1,6 +1,6 @@
 ---
-title: Tworzenie aplikacji Node.js i Express
-description: W tym samouczku utworzysz aplikację przy użyciu narzędzi Node.js Tools for Visual Studio
+title: Tworzenie aplikacji platformy Node.js i Express
+description: W tym samouczku dowiesz się, jak utworzyć prostą aplikację Node.js przy użyciu struktury aplikacji sieci Web Express w programie Visual Studio.
 ms.date: 04/20/2020
 ms.topic: tutorial
 ms.devlang: javascript
@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 3d91f20dec22379d79b5f295fccf49aae0733a24
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ce7b4af783149a53e0eacadaa5753d596f69563
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81744889"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846919"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Samouczek: Tworzenie aplikacji Node.js i ekspresowej w programie Visual Studio
 
@@ -63,10 +63,10 @@ Express to struktura aplikacji sieci Web, używana jako struktura serwera do Nod
 * Musisz mieć zainstalowany program Visual Studio i Node.js obciążenie programowaniem.
 
     ::: moniker range=">=vs-2019"
-    Jeśli program Visual Studio 2019 nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads/),   Aby zainstalować ją bezpłatnie.
+    Jeśli program Visual Studio 2019 nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads/) , aby zainstalować ją bezpłatnie.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Jeśli program Visual Studio 2017 nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads/),   Aby zainstalować ją bezpłatnie.
+    Jeśli program Visual Studio 2017 nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads/) , aby zainstalować ją bezpłatnie.
     ::: moniker-end
 
     Jeśli musisz zainstalować obciążenie, ale masz już program Visual Studio, przejdź do pozycji **Narzędzia**  >  **Pobierz narzędzia i funkcje..**., co spowoduje otwarcie Instalator programu Visual Studio. Wybierz **Node.js obciążenie programowaniem** , a następnie wybierz **Modyfikuj**.
@@ -77,7 +77,7 @@ Express to struktura aplikacji sieci Web, używana jako struktura serwera do Nod
 
     Jeśli go nie zainstalowano, zalecamy zainstalowanie wersji LTS z witryny internetowej [Node.js](https://nodejs.org/en/download/) w celu uzyskania najlepszej zgodności z zewnętrznymi platformami i bibliotekami. Node.js jest oparta na architekturze 32-bitowej i 64-bitowej. Narzędzia Node.js w programie Visual Studio, zawarte w obciążeniu Node.js, obsługują obie wersje. Tylko jeden jest wymagany, a Instalator Node.js obsługuje tylko jeden instalowany w danym momencie.
     
-    Ogólnie rzecz biorąc, program Visual Studio automatycznie wykrywa zainstalowane Node.js środowiska uruchomieniowego. Jeśli nie wykryje zainstalowanego środowiska uruchomieniowego, można skonfigurować projekt do odwoływania się do zainstalowanego środowiska uruchomieniowego na stronie właściwości (po utworzeniu projektu kliknij prawym przyciskiem myszy węzeł projektu, wybierz polecenie **Właściwości**, a następnie ustaw ** ścieżkęNode.exe**). Można użyć globalnej instalacji Node.js lub można określić ścieżkę do lokalnego interpretera w każdym z projektów Node.js. 
+    Ogólnie rzecz biorąc, program Visual Studio automatycznie wykrywa zainstalowane Node.js środowiska uruchomieniowego. Jeśli nie wykryje zainstalowanego środowiska uruchomieniowego, można skonfigurować projekt do odwoływania się do zainstalowanego środowiska uruchomieniowego na stronie właściwości (po utworzeniu projektu kliknij prawym przyciskiem myszy węzeł projektu, wybierz polecenie **Właściwości**, a następnie ustaw **ścieżkęNode.exe**). Można użyć globalnej instalacji Node.js lub można określić ścieżkę do lokalnego interpretera w każdym z projektów Node.js. 
 
     Ten samouczek został przetestowany przy użyciu Node.js 8.10.0.
 
@@ -97,7 +97,7 @@ W tym samouczku Zacznij od prostego projektu zawierającego kod dla Node.js i ap
     ::: moniker range="vs-2017"
     Na górnym pasku menu wybierz pozycję **plik**  >  **Nowy**  >  **projekt**. W lewym okienku okna dialogowego **Nowy projekt** rozwiń opcję **JavaScript**, a następnie wybierz **Node.js**. W środkowym okienku wybierz pozycję **podstawowa aplikacja Azure Node.js Express 4**, a następnie wybierz przycisk **OK**.
     ::: moniker-end
-    Jeśli nie widzisz szablonu projektu **podstawowe aplikacje platformy Azure Node.js Express 4** , musisz dodaćNode.js obciążenie ** programowaniem** . Aby uzyskać szczegółowe instrukcje, zobacz [wymagania wstępne](#prerequisites).
+    Jeśli nie widzisz szablonu projektu **podstawowe aplikacje platformy Azure Node.js Express 4** , musisz dodaćNode.js obciążenie **programowaniem** . Aby uzyskać szczegółowe instrukcje, zobacz [wymagania wstępne](#prerequisites).
 
     Program Visual Studio tworzy nowe rozwiązanie i otwiera projekt w okienku po prawej stronie. Plik projektu *app.js* zostanie otwarty w edytorze (po lewej stronie).
 
@@ -180,7 +180,7 @@ Aplikacja używa Pug dla platformy języka JavaScript frontonu. Pug używa prost
 
 IntelliSense to narzędzie programu Visual Studio, które ułatwia pisanie kodu.
 
-1. W *index.js*przejdź do wiersza kodu zawierającego `res.render` .
+1. W *index.js* przejdź do wiersza kodu zawierającego `res.render` .
 
 1. Umieść kursor po `data` ciągu, `: get` a funkcja IntelliSense wyświetli `getData` funkcję zdefiniowaną wcześniej w kodzie. Wybierz pozycję `getData`.
 
@@ -208,7 +208,7 @@ IntelliSense to narzędzie programu Visual Studio, które ułatwia pisanie kodu.
 
 Następnie uruchomisz aplikację z dołączonym debugerem programu Visual Studio. Przed wykonaniem tej czynności należy ustawić punkt przerwania.
 
-1. W *index.js*kliknij przycisk na lewym marginesie przed następującym wierszem kodu, aby ustawić punkt przerwania:
+1. W *index.js* kliknij przycisk na lewym marginesie przed następującym wierszem kodu, aby ustawić punkt przerwania:
 
     `res.render('index', { title: 'Express', "data": getData() });`
 

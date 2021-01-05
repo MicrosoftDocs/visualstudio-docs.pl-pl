@@ -17,16 +17,16 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 99274d3884d002f6dee29a632f8a7c08ac90a56f
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: fc6260bdac6f4313daddc1ca59f8541bc4fda7c8
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211131"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761306"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Opcje języka Python w programie Visual Studio
 
-Aby wyświetlić opcje języka Python, użyj **Tools**  >  menu**Opcje** narzędzi, upewnij się, że wybrano opcję **Pokaż wszystkie ustawienia** , a następnie przejdź do języka **Python**:
+Aby wyświetlić opcje języka Python, użyj   >  menu **Opcje** narzędzi, upewnij się, że wybrano opcję **Pokaż wszystkie ustawienia** , a następnie przejdź do języka **Python**:
 
 ::: moniker range="vs-2017"
 ![Okno dialogowe Opcje środowiska Python, karta Ogólne](media/options-general.png)
@@ -35,7 +35,7 @@ Aby wyświetlić opcje języka Python, użyj **Tools**  >  menu**Opcje** narzęd
 ![Okno dialogowe Opcje środowiska Python, karta Ogólne](media/options-general-2019.png)
 ::: moniker-end
 
-Dostępne są również dodatkowe opcje specyficzne dla języka Python na karcie Zaawansowane **Edytor tekstu**w języku  >  **Python**  >  **Advanced** , a na **Environment**  >  karcie**czcionki i kolory** środowiska w grupie **Edytor tekstu** .
+Dostępne są również dodatkowe opcje specyficzne dla języka Python na karcie Zaawansowane **Edytor tekstu** w języku  >  **Python**  >   , a na   >  karcie **czcionki i kolory** środowiska w grupie **Edytor tekstu** .
 
 > [!Note]
 > Grupa **eksperymentalna** zawiera opcje dla funkcji, które są nadal opracowywane i nie są udokumentowane w tym miejscu. Są one często omówione w wpisach w usłudze [Python inżynierów w blogu firmy Microsoft](https://devblogs.microsoft.com/python/).
@@ -44,7 +44,7 @@ Dostępne są również dodatkowe opcje specyficzne dla języka Python na karcie
 
 (**Narzędzia**  >  **Opcje**  >  Karta **Python** ).
 
-| Opcja | Domyślny | Opis |
+| Opcja | Domyślne | Opis |
 | --- | --- | --- |
 | **Pokaż Okno Dane wyjściowe podczas tworzenia środowisk wirtualnych**| Włączone | Wyczyść, aby zapobiec wyświetlaniu okna **danych wyjściowych** . |
 | **Pokaż Okno Dane wyjściowe podczas instalowania lub usuwania pakietów** | Włączone | Wyczyść, aby zapobiec wyświetlaniu okna **danych wyjściowych** . |
@@ -56,8 +56,8 @@ Dostępne są również dodatkowe opcje specyficzne dla języka Python na karcie
 | **Zaktualizuj ścieżki wyszukiwania podczas dodawania połączonych plików** | Włączone | Po ustawieniu, dodanie [połączonego pliku](managing-python-projects-in-visual-studio.md#linked-files) do projektu aktualizuje [ścieżki wyszukiwania](search-paths.md) , dzięki czemu technologia IntelliSense może uwzględnić zawartość folderu połączonego pliku w jego bazie danych uzupełniania. Usuń zaznaczenie tej opcji, aby wykluczyć taką zawartość z bazy danych uzupełniania. |
 | **Ostrzegaj, jeśli nie można znaleźć importowanego modułu** | Włączone | Usuń zaznaczenie tej opcji, aby pominąć ostrzeżenia, gdy wiadomo, że zaimportowany moduł nie jest dostępny, ale w przeciwnym razie nie wpływa na operację kodu. |
 | **Zgłoś niespójne wcięcie jako** | **Ostrzeżenia** | Ponieważ interpreter języka Python jest w dużym stopniu zależny od poprawnego wcięcia, aby określić zakres, domyślne błędy programu Visual Studio, gdy wykryje niespójne wcięcia, które mogą wskazywać na błędy kodowania. Ustaw na **Błędy** , aby były jeszcze bardziej rygorystyczne, co spowoduje zakończenie działania programu w takich przypadkach. Aby całkowicie wyłączyć to zachowanie, wybierz pozycję **nie**. |
-| **Sprawdź ankiety/wiadomości** | **Raz w tygodniu** | *Program Visual Studio 2017 i jego starsze wersje.* Ustawia częstotliwość, z jaką program Visual Studio ma otwierać okno zawierające stronę sieci Web z ankietami i elementami wiadomości związanymi z językiem Python, jeśli są dostępne. Opcje **nigdy nie**są **, raz dziennie**, raz w **tygodniu**i **raz na miesiąc**. |
-| Przycisk **Resetuj wszystkie trwałe ukryte okna dialogowe** | nie dotyczy | Różne okna dialogowe zawierają opcje, takie jak **nie pokazuj mi tego ponownie**. Użyj tego przycisku, aby wyczyścić te opcje i spowodować, że okna dialogowe zostaną wyświetlone ponownie. |
+| **Sprawdź ankiety/wiadomości** | **Raz w tygodniu** | *Program Visual Studio 2017 i jego starsze wersje.* Ustawia częstotliwość, z jaką program Visual Studio ma otwierać okno zawierające stronę sieci Web z ankietami i elementami wiadomości związanymi z językiem Python, jeśli są dostępne. Opcje **nigdy nie** są **, raz dziennie**, raz w **tygodniu** i **raz na miesiąc**. |
+| Przycisk **Resetuj wszystkie trwałe ukryte okna dialogowe** | n/d | Różne okna dialogowe zawierają opcje, takie jak **nie pokazuj mi tego ponownie**. Użyj tego przycisku, aby wyczyścić te opcje i spowodować, że okna dialogowe zostaną wyświetlone ponownie. |
 
 ::: moniker range="vs-2017"
 ![Okno dialogowe Opcje środowiska Python, karta Ogólne](media/options-general.png)
@@ -71,11 +71,11 @@ Dostępne są również dodatkowe opcje specyficzne dla języka Python na karcie
 
 (**Narzędzia** > **Opcje** > Język **Python** > Karta **Conda** ).
 
-| Opcja | Domyślny | Opis |
+| Opcja | Domyślne | Opis |
 | --- | --- | --- |
 | **Ścieżka pliku wykonywalnego Conda** | puste | Określa dokładną ścieżkę do pliku wykonywalnego *conda.exe* , zamiast polegać na domyślnej instalacji Miniconda dołączonej do obciążenia języka Python. Jeśli w tym miejscu zostanie podana inna ścieżka, ma ona pierwszeństwo przed instalacją domyślną i innymi conda.exe plikami wykonywalnymi określonymi w rejestrze. To ustawienie można zmienić, jeśli ręcznie zainstalujesz nowszą wersję programu Anaconda lub Miniconda lub chcesz użyć 32-bitowego dystrybucji zamiast domyślnego 64-bitowego dystrybucji. |
 
-![Okno dialogowe Opcje środowiska Python, karta serwer języka](media/options-conda.png)
+![Zrzut ekranu okna dialogowego Opcje Visual Studio Tools z Conda wybranym w opcjach języka Python i polu Ścieżka pliku wykonywalnego Conda wyświetlanego w okienku po prawej stronie.](media/options-conda.png)
 
 ::: moniker-end
 
@@ -83,7 +83,7 @@ Dostępne są również dodatkowe opcje specyficzne dla języka Python na karcie
 
 (**Narzędzia**  >  **Opcje**  >  Język **Python**  >  Karta **debugowanie** .)
 
-| Opcja | Domyślny | Opis |
+| Opcja | Domyślne | Opis |
 | --- | --- | --- |
 | **Monituj przed uruchomieniem, gdy są obecne błędy** | Włączone | Po ustawieniu program prosi o potwierdzenie, że chcesz uruchomić kod zawierający błędy. Usuń zaznaczenie tej opcji, aby wyłączyć ostrzeżenie. |
 | **Zaczekaj na dane wejściowe, gdy proces kończy się nienormalnie**<br/><br/>**Zaczekaj na dane wejściowe, gdy proces kończy się normalnie** | On (dla obu) | Program Python uruchomiony z programu Visual Studio jest uruchamiany w osobnym oknie konsoli. Domyślnie okno czeka na naciśnięcie klawisza przed zamknięciem, bez względu na zakończenie działania programu. Aby usunąć ten monit i zamknąć okno automatycznie, usuń zaznaczenie jednej lub obu tych opcji. |
@@ -104,11 +104,11 @@ Dostępne są również dodatkowe opcje specyficzne dla języka Python na karcie
 
 (**Narzędzia**  >  **Opcje**  >  Język **Python**  >  Karta **Diagnostyka** ).
 
-| Opcja | Domyślny | Opis |
+| Opcja | Domyślne | Opis |
 | --- | --- | --- |
 | **Uwzględnij dzienniki analizy** | Włączone | Zawiera szczegółowe dzienniki dotyczące analizy zainstalowanych środowisk języka Python podczas zapisywania diagnostyki do pliku lub kopiowania ich do schowka przy użyciu przycisków. Ta opcja może znacząco zwiększyć rozmiar wygenerowanego pliku, ale często jest wymagana do diagnozowania problemów z technologią IntelliSense. |
-| Przycisk **zapisywania diagnostyki do pliku** | nie dotyczy | W polu Nazwa pliku zostanie wyświetlony komunikat z pytaniem, a następnie zostanie zapisany dziennik. |
-| Przycisk **kopiowania diagnostyki do schowka** | nie dotyczy | Umieszcza pełny dziennik w schowku; Ta operacja może zająć trochę czasu w zależności od rozmiaru dziennika. |
+| Przycisk **zapisywania diagnostyki do pliku** | n/d | W polu Nazwa pliku zostanie wyświetlony komunikat z pytaniem, a następnie zostanie zapisany dziennik. |
+| Przycisk **kopiowania diagnostyki do schowka** | n/d | Umieszcza pełny dziennik w schowku; Ta operacja może zająć trochę czasu w zależności od rozmiaru dziennika. |
 
 ![Okno dialogowe Opcje środowiska Python, karta Diagnostyka](media/options-diagnostics.png)
 
@@ -116,9 +116,9 @@ Dostępne są również dodatkowe opcje specyficzne dla języka Python na karcie
 
 (**Narzędzia**  >  **Opcje**  >  Język **Python**  >  Karta **interaktywne okna** .)
 
-| Opcja | Domyślny | Opis |
+| Opcja | Domyślne | Opis |
 | --- | --- | --- |
-| **Skrypty** | nie dotyczy | Określa folder ogólny dla skryptów uruchamiania, który ma być stosowany do **interaktywnych** okien dla wszystkich środowisk. Zobacz [skrypty uruchamiania](python-environments-window-tab-reference.md#startup-scripts). Należy jednak pamiętać, że ta funkcja aktualnie nie działa. |
+| **Skrypty** | n/d | Określa folder ogólny dla skryptów uruchamiania, który ma być stosowany do **interaktywnych** okien dla wszystkich środowisk. Zobacz [skrypty uruchamiania](python-environments-window-tab-reference.md#startup-scripts). Należy jednak pamiętać, że ta funkcja aktualnie nie działa. |
 | **Strzałki w górę/w dół — przejdź do historii** | Włączone | Używa klawiszy strzałek, aby nawigować przez historię w oknie **interaktywnym** . Wyczyść to ustawienie, aby użyć klawiszy strzałek do nawigowania w danych wyjściowych okna **interaktywnego** . |
 | **Tryb uzupełniania** | **Obliczaj tylko wyrażenia bez wywołań funkcji** | Proces określania dostępnych elementów członkowskich w wyrażeniu w oknie **interaktywnym** może wymagać oceny bieżącego nieukończonego wyrażenia, co może spowodować wielokrotne wywoływanie efektów ubocznych lub funkcji. Ustawienie domyślne **tylko oblicza wyrażenia bez wywołań funkcji** wyklucza wyrażenia, które pojawiają się, aby wywołać funkcję, ale oblicza inne wyrażenia. Na przykład szacuje się, `a.b` ale nie `a().b` .  **Nigdy nie oceniaj wyrażeń** uniemożliwia wszystkie efekty uboczne, używając tylko standardowego aparatu IntelliSense dla sugestii. **Oceń wszystkie wyrażenia** oblicza pełne wyrażenie, aby uzyskać sugestie, niezależnie od efektów ubocznych. |
 | **Ukryj sugestie analizy statycznej** | Wyłączone | Po ustawieniu program wyświetla tylko sugestie, które są uzyskiwane przez obliczenie wyrażenia. W połączeniu z wartością **Tryb uzupełniania** **nigdy nie Obliczaj wyrażeń**, w oknie **interaktywnym** nie są wyświetlane żadne użyteczne zakończenia. |
@@ -130,12 +130,12 @@ Dostępne są również dodatkowe opcje specyficzne dla języka Python na karcie
 
 (**Narzędzia** > **Opcje** > Język **Python** > Karta **serwer języka** ).
 
-| Opcja | Domyślny | Opis |
+| Opcja | Domyślne | Opis |
 | --- | --- | --- |
 | **Wyłącz uzupełnianie z zbioru typeshed** | Wyłączone | Program Visual Studio IntelliSense zwykle używa powiązanej wersji programu zbioru typeshed (zestawu plików *. Pyi* ), aby znaleźć wskazówki dotyczące typów dla biblioteki standardowej i bibliotek innych firm dla języka Python 2 i Python 3. Ustawienie tej opcji powoduje wyłączenie powiązanego zachowania zbioru typeshed. |
 | **Niestandardowa ścieżka zbioru typeshed** | puste | Jeśli ta wartość jest ustawiona, program Visual Studio używa plików zbioru typeshed w tej ścieżce zamiast jej powiązanej wersji. Zignoruj, jeśli ustawiono ustawienie **Wyłącz uzupełniania z zbioru typeshed** . |
 
-![Okno dialogowe Opcje środowiska Python, karta serwer języka](media/options-language-server.png)
+![Zrzut ekranu przedstawiający okno dialogowe Opcje Visual Studio Tools z serwerem języka wybranym w opcjach środowiska Python i opcjami serwera języka wyświetlanymi w okienku po prawej stronie.](media/options-language-server.png)
 
 ::: moniker-end
 
@@ -145,7 +145,7 @@ Dostępne są również dodatkowe opcje specyficzne dla języka Python na karcie
 
 ### <a name="completion-results"></a>Wyniki ukończenia
 
-| Opcja | Domyślny | Opis |
+| Opcja | Domyślne | Opis |
 | --- | --- | --- |
 | **Uzupełnianie elementu członkowskiego Wyświetla część wspólną elementów członkowskich** | Wyłączone | Gdy ustawiona, pokazuje tylko uzupełniania, które są obsługiwane przez wszystkie możliwe typy. |
 | **Lista filtrów oparta na ciągu wyszukiwania** | Włączone | Stosuje filtrowanie sugestii uzupełniania podczas pisania (domyślnie zaznaczone). |
@@ -153,7 +153,7 @@ Dostępne są również dodatkowe opcje specyficzne dla języka Python na karcie
 
 ### <a name="selection-in-completion-list"></a>Wybór na liście uzupełniania
 
-| Opcja | Domyślny | Opis |
+| Opcja | Domyślne | Opis |
 | --- | --- | --- |
 | **Zatwierdzone przez wpisanie następujących znaków** | **{}\[\]().,:; +-*/% &&#124;^ ~ =<> #@\\** | Te znaki zwykle są zgodne z identyfikatorem, który może zostać wybrany z listy uzupełniania, dzięki czemu można zatwierdzić zakończenie po prostu wpisując znak. W razie potrzeby można usunąć określone znaki lub dodać je do listy.  |
 | **Wprowadź bieżące uzupełnianie zatwierdzeń** | Włączone | Gdy ta opcja jest ustawiona, klawisz **Enter** wybiera i stosuje aktualnie wybrane uzupełnienie, jak w przypadku powyższych znaków (ale oczywiście nie jest znakiem do **wprowadzenia** , więc nie można bezpośrednio przejść do tej listy). |
@@ -161,7 +161,7 @@ Dostępne są również dodatkowe opcje specyficzne dla języka Python na karcie
 
 ### <a name="miscellaneous-options"></a>Różne opcje
 
-| Opcja | Domyślny | Opis |
+| Opcja | Domyślne | Opis |
 | --- | --- | --- |
 | **Wejdź do trybu konspektu przy otwieraniu plików** | Włączone | Automatycznie Włącz funkcję tworzenia konspektu programu Visual Studio w edytorze podczas otwierania pliku kodu w języku Python. |
 | **Wklej usunięte wiersze REPL** | Włączone | Usuwa **>>>** i **...** z wklejonego tekstu, co pozwala na łatwe przenoszenie kodu z okna **interaktywnego** do edytora. Usuń zaznaczenie tej opcji, jeśli chcesz zachować te znaki podczas wklejania z innych źródeł. |
@@ -173,6 +173,6 @@ Dostępne są również dodatkowe opcje specyficzne dla języka Python na karcie
 
 (**Środowisko**  >  Karta **czcionki i kolory** w grupie **Edytor tekstu** .
 
-Nazwy opcji w języku Python są wszystkie poprzedzone językiem **Python** i nie mają wyjaśnień. Domyślną czcionką dla wszystkich motywów kolorów programu Visual Studio jest 10pt Consolas Regular (niepogrubiony). Kolory domyślne różnią się w zależności od motywu. Zazwyczaj można zmienić czcionkę lub kolor, jeśli okaże się trudne odczytanie tekstu z ustawieniami domyślnymi.
+Nazwy opcji w języku Python są wszystkie poprzedzone językiem **Python** i nie mają wyjaśnień. Domyślną czcionką dla wszystkich motywów kolorów programu Visual Studio jest 10 pt Consolas (niepogrubiony). Kolory domyślne różnią się w zależności od motywu. Zazwyczaj można zmienić czcionkę lub kolor, jeśli okaże się trudne odczytanie tekstu z ustawieniami domyślnymi.
 
 ![Opcje czcionek i kolorów w języku Python](media/options-fonts-and-colors.png)

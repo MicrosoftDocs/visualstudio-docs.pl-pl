@@ -1,5 +1,7 @@
 ---
 title: Rejestrowanie czasowników dla rozszerzeń nazw plików | Microsoft Docs
+description: Dowiedz się, jak zarejestrować zlecenie, które jest skojarzone z identyfikatorem programowym dla rozszerzenia nazwy pliku przy użyciu klucza powłoki.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac2854f1799075cc14d9beb557335be5228be21d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: df0dfe90bd5e3bccbb6bb0f9dab400082f539fbf
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701531"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863049"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>Rejestrowanie czasowników dla rozszerzeń nazw plików
 Skojarzenie rozszerzenia nazwy pliku z aplikacją zwykle ma preferowaną akcję, która występuje, gdy użytkownik kliknie dwukrotnie plik. Ta preferowana akcja jest połączona z czasownikiem, na przykład Otwórz, który odpowiada akcji.
@@ -25,13 +27,13 @@ Skojarzenie rozszerzenia nazwy pliku z aplikacją zwykle ma preferowaną akcję,
 ## <a name="register-standard-verbs"></a>Zarejestruj czasowniki standardowe
  System operacyjny rozpoznaje następujące czasowniki standardowe:
 
-- Otwarte
+- Otwórz
 
 - Edytuj
 
 - Graj.
 
-- Drukowanie
+- Drukuj
 
 - Wersja zapoznawcza
 
@@ -106,7 +108,7 @@ Skojarzenie rozszerzenia nazwy pliku z aplikacją zwykle ma preferowaną akcję,
 ```
 
 ## <a name="set-the-default-verb"></a>Ustawianie domyślnego zlecenia
- Domyślne zlecenie jest akcją wykonywaną, gdy użytkownik kliknie dwukrotnie plik w Eksploratorze Windows. Domyślne zlecenie to zlecenie określone jako wartość domyślna HKEY_CLASSES_ROOT dla klucza ** \\ \Shell*ProgID*** . Jeśli żadna wartość nie zostanie określona, zlecenie domyślne to pierwsze zlecenie określone HKEY_CLASSES_ROOT na liście **kluczy \\ \Shell*ProgID*** .
+ Domyślne zlecenie jest akcją wykonywaną, gdy użytkownik kliknie dwukrotnie plik w Eksploratorze Windows. Domyślne zlecenie to zlecenie określone jako wartość domyślna HKEY_CLASSES_ROOT dla klucza **\\ \Shell *ProgID*** . Jeśli żadna wartość nie zostanie określona, zlecenie domyślne to pierwsze zlecenie określone HKEY_CLASSES_ROOT na liście **kluczy \\ \Shell *ProgID*** .
 
 > [!NOTE]
 > Jeśli planujesz zmienić domyślne zlecenie rozszerzenia w ramach wdrożenia równoległego, weź pod uwagę wpływ instalacji i usuwania. Podczas instalacji oryginalna wartość domyślna jest zastępowana.

@@ -8,24 +8,24 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: 3fa0569739ee81ec4b2aa0eec8157068ffc949cd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1d049bc8b74b83028e04fe92e7ce96f45907d042
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89324285"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97762618"
 ---
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Publikuj** (dla formularzy sieci Web, **Opublikuj aplikację sieci Web**).
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Publikuj** (dla formularzy sieci Web, **Opublikuj aplikację sieci Web**).
 
     Jeśli wszystkie profile publikowania zostały wcześniej skonfigurowane, zostanie wyświetlone okienko **Publikowanie** . Kliknij pozycję **Nowy profil**.
 
 1. W oknie dialogowym **Publikowanie** wybierz pozycję **folder**, kliknij pozycję **Przeglądaj**, a następnie utwórz nowy folder **C:\Publish**.
 
-    ![RemoteDBG_Publish_Local](../media/remotedbg_publish_local.png "RemoteDBG_Publish_Local")
+    ![Zrzut ekranu przedstawiający okno dialogowe Wybieranie elementu docelowego publikowania w programie Visual Studio z folderem "bin\Release\Publish" wybranym jako element docelowy publikowania.](../media/remotedbg_publish_local.png)
 
     W przypadku aplikacji formularzy sieci Web wybierz pozycję **niestandardowe** w oknie dialogowym Publikowanie, wprowadź nazwę profilu, a następnie wybierz **przycisk OK**.
 
-1. Na liście rozwijanej kliknij pozycję **Utwórz profil** (wartość domyślna to**Opublikuj** ).
+1. Na liście rozwijanej kliknij pozycję **Utwórz profil** (wartość domyślna to **Opublikuj** ).
 
 1. W oknie dialogowym **Publikowanie** kliknij link **Ustawienia** , a następnie wybierz kartę **Ustawienia** .
 
@@ -36,7 +36,7 @@ ms.locfileid: "89324285"
 
 1. Kliknij przycisk **Opublikuj**.
 
-    ![RemoteDBG_Publish_Debug_Config](../media/remotedbg_publish_debug_config.png "RemoteDBG_Publish_Debug_Config")
+    ![Zrzut ekranu przedstawiający kartę Ustawienia w oknie dialogowym Publikowanie. Konfiguracja jest ustawiona na Debuguj i wybrano przycisk Publikuj.](../media/remotedbg_publish_debug_config.png)
 
     Aplikacja publikuje konfigurację **debugowania** projektu w folderze lokalnym. Postęp jest wyświetlany w oknie danych wyjściowych.
 

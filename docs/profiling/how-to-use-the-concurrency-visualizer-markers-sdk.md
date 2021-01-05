@@ -1,5 +1,6 @@
 ---
 title: Korzystanie z zestawu znaczniki wizualizatora współbieżności | Microsoft Docs
+description: Dowiedz się, jak używać zestawu SDK znaczników Concurrency Visualizer w programie Visual Studio do tworzenia zakresów i flag zapisu, komunikatów i alertów.
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 19a45032-f8a7-4137-890e-2ceeec938b8d
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cf33ad094716ee0f8f4c8cc4bb06220db1237e5
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 24659a101da59ed3a8ca6389debfde6c08a038ed
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851583"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815610"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Instrukcje: korzystanie z zestawu SDK znaczników Concurrency Visualizer
 W tym temacie pokazano, jak używać zestawu SDK wizualizatora współbieżności do tworzenia zakresów i flag zapisu, komunikatów i alertów.
@@ -70,7 +71,7 @@ W tym temacie pokazano, jak używać zestawu SDK wizualizatora współbieżnośc
 
 6. Uruchom bieżący projekt, aby wyświetlić Wizualizator współbieżności. Dwie serie znaczników pojawiają się w ich własnych tory w widoku wątki. Na poniższej ilustracji przedstawiono dwa nowe zakresy.
 
-     ![Wizualizator współbieżności z 3 seriami niestandardowych znaczników](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")
+     ![Zrzut ekranu przedstawiający Widok wątków w wizualizatorze współbieżności, pokazujący znacznik, flagę i sekwencję wiadomości, z zakresem flagi i zakresem komunikatów.](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")
 
 ### <a name="to-use-visual-basic-or-c"></a>Aby użyć Visual Basic lub C\#
 
@@ -164,7 +165,7 @@ W tym temacie pokazano, jak używać zestawu SDK wizualizatora współbieżnośc
 
 6. Uruchom bieżący projekt, aby wyświetlić Wizualizator współbieżności. Trzy serie znaczników pojawiają się w swoich własnych tory w widoku wątki. Na poniższej ilustracji przedstawiono trzy nowe zakresy.
 
-     ![Wizualizator współbieżności z 3 seriami niestandardowych znaczników](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")
+     ![Zrzut ekranu przedstawiający Widok wątków w wizualizatorze współbieżności, pokazujący znacznik, flagę i sekwencję wiadomości, z komunikatem, alertem i zakresem flagi.](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Concurrency Visualizer SDK](../profiling/concurrency-visualizer-sdk.md)

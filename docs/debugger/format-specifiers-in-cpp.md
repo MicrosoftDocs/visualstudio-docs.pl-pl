@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 64166768dea1da015c223a74c74440ae09a0d106
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: 74b6b6b6a8f7a9f5f234a9b46c799e6e0580536f
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96863039"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761332"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Specyfikatory formatu dla języka C++ w debugerze programu Visual Studio
 Można zmienić format, w którym wartość jest wyświetlana w oknach **czujka**, **autostarty** i **lokalne** przy użyciu specyfikatorów formatu.
@@ -52,9 +52,9 @@ int main() {
 }
 ```
 
-Dodaj `my_var1` zmienną do okna **czujki** podczas debugowania, **Debuguj**  >  **Windows**  >  czujkę **czujki** w systemie Windows  >  **1**. Następnie kliknij prawym przyciskiem myszy zmienną i wybierz pozycję **Wyświetlanie w formacie szesnastkowym**. Teraz okno **czujki** pokazuje wartość 0x0065. Aby wyświetlić tę wartość wyrażoną jako znak, a nie liczbę całkowitą, najpierw kliknij prawym przyciskiem myszy i usuń zaznaczenie w **formacie szesnastkowym**. Następnie Dodaj specyfikator formatu znaku **, c** w kolumnie **Nazwa** po nazwie zmiennej. Kolumna **wartość** zawiera teraz **101 ' e '**.
+Dodaj `my_var1` zmienną do okna **czujki** podczas debugowania, **Debuguj**  >    >  czujkę **czujki** w systemie Windows  >  **1**. Następnie kliknij prawym przyciskiem myszy zmienną i wybierz pozycję **Wyświetlanie w formacie szesnastkowym**. Teraz okno **czujki** pokazuje wartość 0x0065. Aby wyświetlić tę wartość wyrażoną jako znak, a nie liczbę całkowitą, najpierw kliknij prawym przyciskiem myszy i usuń zaznaczenie w **formacie szesnastkowym**. Następnie Dodaj specyfikator formatu znaku **, c** w kolumnie **Nazwa** po nazwie zmiennej. Kolumna **wartość** zawiera teraz **101 ' e '**.
 
-![WatchFormatCPlus1](../debugger/media/watchformatcplus1.png "WatchFormatCPlus1")
+![Zrzut ekranu programu Visual Studio okno wyrażeń kontrolnych z jednym zaznaczonym wierszem, który pokazuje my_var1. c z wartością 101 "e" i typem int.](../debugger/media/watchformatcplus1.png)
 
 ::: moniker range=">= vs-2019" 
 Można wyświetlić i wybrać listę dostępnych specyfikatorów formatu, dołączając przecinek (,) do wartości w oknie **czujki** . 
@@ -73,7 +73,7 @@ W poniższych tabelach opisano specyfikatory formatu, których można użyć w p
 |d|Liczba całkowita dziesiętna|0x00000066|102|
 |o|Liczba całkowita bez znaku|0x00000066|000000000146|
 |x<br /><br /> **h**|Szesnastkowa liczba całkowita|102|0xcccccccc|
-|X<br /><br /> **H**|Szesnastkowa liczba całkowita|102|0xCCCCCCCC|
+|X<br /><br /> **C**|Szesnastkowa liczba całkowita|102|0xCCCCCCCC|
 |XB<br /><br /> **HB**|Szesnastkowa liczba całkowita (bez wiodącego 0x)|102|cccccccc|
 |XB<br /><br /> **HB**|Szesnastkowa liczba całkowita (bez wiodącego 0x)|102|CCCCCCCC|
 |b|Liczba całkowita bez znaku|25|0b00000000000000000000000000011001|
@@ -93,7 +93,7 @@ W poniższych tabelach opisano specyfikatory formatu, których można użyć w p
 |**s32b**|Ciąg UTF-32 (bez cudzysłowów)|\<location> U "Hello World"|Cześć ludzie|
 |**en**|enum|Sobota (6)|Sobota|
 |**HV**|Typ wskaźnika — wskazuje, że testowana wartość wskaźnika jest wynikiem alokacji sterty tablicy, na przykład `new int[3]` .|\<location>{\<first member>}|\<location>{\<first member>, \<second member>, ...}|
-|**nie dotyczy**|Pomija adres pamięci wskaźnika do obiektu.|\<location>, {member = Value...}|{member = wartość...}|
+|**potrącon**|Pomija adres pamięci wskaźnika do obiektu.|\<location>, {member = Value...}|{member = wartość...}|
 |**ND**|Wyświetla tylko informacje o klasie bazowej, ignorując klasy pochodne|`(Shape*) square` zawiera klasę bazową i informacje o klasie pochodnej|Wyświetla tylko informacje o klasie bazowej|
 |godz.|Kod błędu HRESULT lub Win32. Ten specyfikator nie jest już wymagany dla HRESULT, ponieważ debuger dekoduje je automatycznie.|S_OK|S_OK|
 |w górę|Flaga klasy okna|0x0010|WC_DEFAULTCHAR|
@@ -111,7 +111,7 @@ W poniższych tabelach opisano specyfikatory formatu, których można użyć w p
 |d|Liczba całkowita dziesiętna|0x00000066|102|
 |o|Liczba całkowita bez znaku|0x00000066|000000000146|
 |x<br /><br /> **h**|Szesnastkowa liczba całkowita|102|0xcccccccc|
-|X<br /><br /> **H**|Szesnastkowa liczba całkowita|102|0xCCCCCCCC|
+|X<br /><br /> **C**|Szesnastkowa liczba całkowita|102|0xCCCCCCCC|
 |c|pojedynczy znak|0x0065, c|101 ' e '|
 |s|ciąg const char * (ze znakami cudzysłowu)|\<location> "Hello World"|"Hello World"|
 |**SB**|ciąg const char * (bez cudzysłowów)|\<location> "Hello World"|Cześć ludzie|
@@ -125,7 +125,7 @@ W poniższych tabelach opisano specyfikatory formatu, których można użyć w p
 |**s32b**|Ciąg UTF-32 (bez cudzysłowów)|\<location> U "Hello World"|Cześć ludzie|
 |**en**|enum|Sobota (6)|Sobota|
 |**HV**|Typ wskaźnika — wskazuje, że testowana wartość wskaźnika jest wynikiem alokacji sterty tablicy, na przykład `new int[3]` .|\<location>{\<first member>}|\<location>{\<first member>, \<second member>, ...}|
-|**nie dotyczy**|Pomija adres pamięci wskaźnika do obiektu.|\<location>, {member = Value...}|{member = wartość...}|
+|**potrącon**|Pomija adres pamięci wskaźnika do obiektu.|\<location>, {member = Value...}|{member = wartość...}|
 |**ND**|Wyświetla tylko informacje o klasie bazowej, ignorując klasy pochodne|`(Shape*) square` zawiera klasę bazową i informacje o klasie pochodnej|Wyświetla tylko informacje o klasie bazowej|
 |godz.|Kod błędu HRESULT lub Win32. Ten specyfikator nie jest już wymagany dla HRESULT, ponieważ debuger dekoduje je automatycznie.|S_OK|S_OK|
 |w górę|Flaga klasy okna|0x0010|WC_DEFAULTCHAR|

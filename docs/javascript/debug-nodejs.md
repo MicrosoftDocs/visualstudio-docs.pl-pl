@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 801ea23430d13dbefd9498c57b07881235275961
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 369fa3c080705f552aed25ecef6bd87a3db43a64
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285195"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815623"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Debugowanie aplikacji JavaScript lub TypeScript w programie Visual Studio
 
@@ -29,7 +29,7 @@ Program Visual Studio umożliwia debugowanie kodu JavaScript i języka TypeScrip
 
 1. Gdy projekt zostanie otwarty w programie Visual Studio, Otwórz plik JavaScript po stronie serwera (na przykład *server.js*), kliknij przycisk na odstępie po lewej stronie, aby ustawić punkt przerwania:
 
-    ![Ustawianie punktu przerwania](../javascript/media/tutorial-nodejs-react-set-breakpoint.png)
+    ![Zrzut ekranu przedstawiający okno programu Visual Studio Code z kodem JavaScript. Czerwona kropka na lewym marginesie wskazuje, że punkt przerwania jest ustawiony.](../javascript/media/tutorial-nodejs-react-set-breakpoint.png)
 
     Punkty przerwania są najbardziej podstawową i istotną funkcją niezawodnego debugowania. Punkt przerwania wskazuje, gdzie program Visual Studio powinien zawiesić uruchomiony kod, aby można było przyjrzeć się wartościom zmiennych lub działaniu pamięci lub niezależnie od tego, czy gałąź kodu jest uruchamiana.
 
@@ -107,11 +107,11 @@ Aby dołączyć debuger z programu Visual Studio i trafić punkty przerwania w k
 
 1. Przejdź do programu Visual Studio, a następnie ustaw punkt przerwania w kodzie źródłowym, który może być plikiem JavaScript, plikiem TypeScript lub plikiem JSX. (Ustaw punkt przerwania w wierszu kodu, który umożliwia używanie punktów przerwania, takich jak instrukcja return lub Deklaracja wariancji).
 
-    ![Ustawianie punktu przerwania](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
+    ![Zrzut ekranu przedstawiający okno programu Visual Studio Code. Zaznaczona jest instrukcja return, a czerwona kropka na lewym marginesie wskazuje, że punkt przerwania jest ustawiony.](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
     Aby znaleźć konkretny kod w profilowanym pliku, użyj **klawiszy CTRL** + **F** (**Edycja**  >  **Znajdź i Zamień**  >  **szybkie wyszukiwanie**).
 
-    W przypadku kodu po stronie klienta, aby napotkać punkt przerwania w pliku TypeScript, plik *. Vue*lub JSX zazwyczaj wymaga użycia [map źródeł](#generate_source_maps). Mapa źródłowa musi być poprawnie skonfigurowana do obsługi debugowania w programie Visual Studio.
+    W przypadku kodu po stronie klienta, aby napotkać punkt przerwania w pliku TypeScript, plik *. Vue* lub JSX zazwyczaj wymaga użycia [map źródeł](#generate_source_maps). Mapa źródłowa musi być poprawnie skonfigurowana do obsługi debugowania w programie Visual Studio.
 
 2. Wybierz docelową przeglądarkę jako element docelowy debugowania w programie Visual Studio, a następnie naciśnij klawisz **Ctrl** + **F5** (**Debuguj**  >  **Rozpocznij bez debugowania**), aby uruchomić aplikację w przeglądarce.
 
@@ -141,10 +141,10 @@ Aby dołączyć debuger z programu Visual Studio i trafić punkty przerwania w k
     ::: moniker range=">=vs-2019"
     Poniższy przykład pokazuje, jak wygląda wyszukiwanie w przeglądarce Microsoft Edge (chrom).
 
-    ![Dołącz do procesu](../javascript/media/tutorial-nodejs-react-attach-to-process-edge.png)
+    ![Dołączanie do procesu](../javascript/media/tutorial-nodejs-react-attach-to-process-edge.png)
     ::: moniker-end
     ::: moniker range="vs-2017"
-    ![Dołącz do procesu](../javascript/media/tutorial-nodejs-react-attach-to-process.png)
+    ![Dołączanie do procesu](../javascript/media/tutorial-nodejs-react-attach-to-process.png)
 
     Wiadomo, że debuger został prawidłowo dołączony, gdy DOM Explorer i konsola JavaScript zostanie otwarta w programie Visual Studio. Te narzędzia debugowania są podobne do narzędzi Chrome Narzędzia deweloperskie i F12 dla przeglądarki Microsoft Edge.
     ::: moniker-end
@@ -154,7 +154,7 @@ Aby dołączyć debuger z programu Visual Studio i trafić punkty przerwania w k
 
 6. Ponieważ kod z punktem przerwania mógł już zostać wykonany, Odśwież stronę przeglądarki. W razie potrzeby podejmij działanie, aby spowodować wykonanie kodu z punktem przerwania.
 
-    W debugerze można przeanalizować stan aplikacji, umieszczając kursor nad zmiennymi i korzystając z okien debugera. Debuger można uzyskać, przechodząc przez kod (**F5**, **F10**i **F11**). Aby uzyskać więcej informacji na temat podstawowych funkcji debugowania, zobacz [pierwsze spojrzenie na debuger](../debugger/debugger-feature-tour.md).
+    W debugerze można przeanalizować stan aplikacji, umieszczając kursor nad zmiennymi i korzystając z okien debugera. Debuger można uzyskać, przechodząc przez kod (**F5**, **F10** i **F11**). Aby uzyskać więcej informacji na temat podstawowych funkcji debugowania, zobacz [pierwsze spojrzenie na debuger](../debugger/debugger-feature-tour.md).
 
     Punkt przerwania może zostać trafiony w pliku *. js* lub pliku źródłowym, w zależności od typu aplikacji, które wykonane wcześniej, oraz innych czynników, takich jak stan przeglądarki. W obu przypadkach możesz przejść przez kod i przeanalizować zmienne.
 
@@ -189,7 +189,7 @@ Aby skonfigurować ustawienia zaawansowane dla map źródła, użyj *tsconfig.js
 
 Aby włączyć debugowanie przy użyciu programu Visual Studio, należy się upewnić, że odwołania do pliku źródłowego na wygenerowanej mapie źródłowej są poprawne (może to wymagać testowania). Na przykład jeśli używasz pakietu WebPack, odwołania w pliku mapy źródłowej zawierają prefiks *WebPack:///* , co uniemożliwia programowi Visual Studio znalezienie pliku źródłowego TYPESCRIPT lub JSX. W związku z tym, gdy poprawisz ten element do celów debugowania, odwołanie do pliku źródłowego (na przykład *App. TSX*) musi zostać zmienione z dowolnego elementu, takiego jak *WebPack:///./app.TSX* , na coś, na przykład *./app.TSX*, które umożliwia debugowanie (ścieżka jest względna do pliku źródłowego). Poniższy przykład pokazuje, jak można skonfigurować mapy źródłowe w pakiecie WebPack, który jest jednym z najbardziej popularnych pakietów, dzięki czemu współpracują z programem Visual Studio.
 
-(Tylko pakiet WebPack) Jeśli ustawiasz punkt przerwania w pliku JSX (a nie w pliku JavaScript), musisz zaktualizować konfigurację pakietu WebPack. Na przykład w *webpack-config.js*może być konieczne zastąpienie następującego kodu:
+(Tylko pakiet WebPack) Jeśli ustawiasz punkt przerwania w pliku JSX (a nie w pliku JavaScript), musisz zaktualizować konfigurację pakietu WebPack. Na przykład w *webpack-config.js* może być konieczne zastąpienie następującego kodu:
 
 ```javascript
   output: {
