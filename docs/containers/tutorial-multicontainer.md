@@ -7,12 +7,12 @@ ms.author: ghogen
 ms.date: 01/10/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 0fa7d186623b69fd83c3ed7e4ab9cc12128847d2
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 93f9d5ba8bd84341e1b314c1fabca07690114e39
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037214"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729291"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Samouczek: Tworzenie aplikacji z obsługą kontenera przy użyciu Docker Compose
 
@@ -46,11 +46,11 @@ Nie wybieraj opcji **Włącz obsługę platformy Docker**. Później dodasz obs�
 
 ::: moniker range="vs-2019"
 
-![Zrzut ekranu przedstawiający tworzenie projektu sieci Web](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project1.png)
+![Zrzut ekranu przedstawiający ekran Konfigurowanie nowego projektu dla ASP.NET Core aplikacji sieci Web, nazwy projektu i nazwy rozwiązania są ustawione na "webfronton".](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project1.png)
 
 Nie wybieraj opcji **Włącz obsługę platformy Docker**. Później dodasz obsługę platformy Docker.
 
-![Zrzut ekranu przedstawiający tworzenie projektu sieci Web](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project.png)
+![Zrzut ekranu przedstawiający ekran Tworzenie nowej ASP.NET Core aplikacji sieci Web z wybraną aplikacją sieci Web. Opcja włączania obsługi platformy Docker nie jest zaznaczona.](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project.png)
 
 ::: moniker-end
 
@@ -179,7 +179,7 @@ Dodaj projekt do tego samego rozwiązania i Wywołaj go *MyWebAPI*. Wybierz pozy
 
 1. Uruchom witrynę lokalnie teraz (F5 lub CTRL + F5), aby sprawdzić, czy działa zgodnie z oczekiwaniami. Jeśli wszystko jest poprawnie skonfigurowane w wersji .NET Core 2. x, zobaczysz komunikat "Hello z webfrontonu i WebAPI (z wartością 1)".  W przypadku platformy .NET Core 3 widoczne są dane prognozy pogody.
 
-   Pierwszy projekt używany podczas dodawania aranżacji kontenera jest ustawiany do uruchamiania lub debugowania. Akcję uruchamiania można skonfigurować we **właściwościach projektu** dla projektu Docker-Zredaguj.  W węźle Docker-redagowanie projektu kliknij prawym przyciskiem myszy, aby otworzyć menu kontekstowe, a następnie wybierz polecenie **Właściwości**lub użyj klawiszy Alt + Enter.  Poniższy zrzut ekranu przedstawia właściwości, które mają być używane w tym miejscu.  Na przykład można zmienić stronę, która jest ładowana, dostosowując Właściwość **adresu URL usługi** .
+   Pierwszy projekt używany podczas dodawania aranżacji kontenera jest ustawiany do uruchamiania lub debugowania. Akcję uruchamiania można skonfigurować we **właściwościach projektu** dla projektu Docker-Zredaguj.  W węźle Docker-redagowanie projektu kliknij prawym przyciskiem myszy, aby otworzyć menu kontekstowe, a następnie wybierz polecenie **Właściwości** lub użyj klawiszy Alt + Enter.  Poniższy zrzut ekranu przedstawia właściwości, które mają być używane w tym miejscu.  Na przykład można zmienić stronę, która jest ładowana, dostosowując Właściwość **adresu URL usługi** .
 
    ![Zrzut ekranu przedstawiający właściwości projektu platformy Docker](media/tutorial-multicontainer/launch-action.png)
 
@@ -193,7 +193,7 @@ Dodaj projekt do tego samego rozwiązania i Wywołaj go *MyWebAPI*. Wybierz pozy
 
 Zapoznaj się z opcjami wdrażania [kontenerów na platformie Azure](/azure/containers).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
   
 [Docker Compose](https://docs.docker.com/compose/)  
 [Narzędzia kontenera](./index.yml)

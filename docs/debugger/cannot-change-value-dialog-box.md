@@ -1,5 +1,7 @@
 ---
 title: Nie można zmienić wartości — okno dialogowe | Microsoft Docs
+description: Sprawdź okno dialogowe nie można zmienić wartości, które pojawia się w programie Visual Studio, jeśli spróbujesz zmienić zmienną na niedozwoloną wartość w oknie debugera lub QuickWatch.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97f057edefefd590c37b49d709ecf8a6e029b905
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf4181d7ff56bd1a5cf3f195bcea5b02aa023629
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72745740"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729057"
 ---
 # <a name="cannot-change-value-dialog-box"></a>Nie można zmienić wartości — okno dialogowe
 ## <a name="error"></a>Błąd

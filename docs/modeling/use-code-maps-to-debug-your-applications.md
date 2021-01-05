@@ -18,12 +18,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7af24dbbb510fb1d5c9c62b40d5986ea5c74d35b
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: d935ee5c4341a2d625c6f85226cc649d696d6e6e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361654"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729395"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>Używanie map kodu do debugowania aplikacji
 
@@ -62,9 +62,9 @@ Aby uzyskać szczegółowe informacje o poleceniach i akcjach, których można u
 ## <a name="navigate-and-examine-code-from-the-map"></a>Nawigowanie i sprawdzanie kodu z mapy
  Aby zobaczyć definicję kodu dla każdego pola, kliknij dwukrotnie pole na mapie lub zaznacz pole i naciśnij klawisz **F12**. Zielona strzałka przesuwa się między elementami na mapie. Kursor w edytorze kodu również przesuwa się automatycznie.
 
- ![Mapa kodu &#45; przeanalizować definicji pola](../modeling/media/codemapstoryboardpaint5.png)
+ ![Zrzut ekranu okna mapy kodu z wybranym polem historii i oknem edytora kodu, w którym są wyróżnione wszystkie wystąpienia historii.](../modeling/media/codemapstoryboardpaint5.png)
 
- ![Mapa kodu &#45; przeanalizować definicji pola](../modeling/media/codemapstoryboardpaint5a.png)
+ ![Zrzut ekranu okna mapy kodu z wybranym polem paintObjects oraz oknem edytora kodu, w którym są wyróżnione wszystkie wystąpienia elementu paintObjects.](../modeling/media/codemapstoryboardpaint5a.png)
 
 > [!TIP]
 > Zieloną strzałkę na mapie możesz również przesunąć, przesuwając kursor w edytorze kodu.
@@ -81,24 +81,24 @@ Aby uzyskać szczegółowe informacje o poleceniach i akcjach, których można u
 
  Zmień układ, aby przeorganizować przepływ relacji i poprawić czytelność mapy. Elementy na mapie możesz również przesuwać, przeciągając je.
 
- ![Układ zmiany &#45; mapy kodu](../modeling/media/codemapstoryboardpaint7a.png)
+ ![Zrzut ekranu okna mapy kodu z otwartym menu Układ i poleceniem Left to Rgiht.](../modeling/media/codemapstoryboardpaint7a.png)
 
 > [!TIP]
 > Domyślnie opcja **Układ przyrostowy** jest włączona. Dzięki temu mapa jest reorganizowana w możliwie najmniejszym stopniu przy dodawaniu nowych elementów. Aby ponownie rozmieścić całą mapę przy każdym dodawaniu nowych elementów, wyłącz opcję **Układ przyrostowy**.
 
- ![Układ zmiany &#45; mapy kodu](../modeling/media/codemapstoryboardpaint7.png)
+ ![Zrzut ekranu przedstawiający okno mapy kodu z strzałkami relationshiop między polami wskazującymi od lewej do prawej.](../modeling/media/codemapstoryboardpaint7.png)
 
  Zbadajmy te metody. Na mapie kliknij dwukrotnie metodę **metodę PaintCanvas** lub wybierz tę metodę i naciśnij klawisz **F12**. Dowiesz się, że ta metoda tworzy `history` i `paintObjects` jako puste listy.
 
- ![Mapa kodu &#45; badanie definicji metody](../modeling/media/codemapstoryboardpaint8.png)
+ ![Zrzut ekranu okna mapy kodu z wybraną metodą metodę PaintCanvas i obrazem fragmentu kodu pokazującym wyróżnioną nazwę metody PainCanvas.](../modeling/media/codemapstoryboardpaint8.png)
 
  Teraz Powtórz te same kroki, aby przeanalizować `clear` definicję metody. Nauczysz się, że program `clear` wykonuje pewne zadania z `paintObjects` i `history` . Następnie wywołuje `Repaint` metodę.
 
- ![Mapa kodu &#45; badanie definicji metody](../modeling/media/codemapstoryboardpaint9.png)
+ ![Zrzut ekranu okna mapy kodu z wybraną metodą Clear i obrazem fragmentu kodu pokazującym kod metody Clear.](../modeling/media/codemapstoryboardpaint9.png)
 
  Teraz sprawdź `addPaintObject` definicję metody. Wykonuje również pewne zadania z `history` i `paintObjects` . Również wywołuje `Repaint` .
 
- ![Mapa kodu &#45; badanie definicji metody](../modeling/media/codemapstoryboardpaint10.png)
+ ![Zrzut ekranu okna mapy kodu z wybraną metodą addPaintObject i obrazem fragmentu kodu pokazującym kod dla metody addPaintObject.](../modeling/media/codemapstoryboardpaint10.png)
 
 ## <a name="find-the-problem-by-examining-the-map"></a>Znajdowanie problemu poprzez analizowanie mapy
  Wydaje się, że wszystkie metody, które modyfikują `history` i `paintObjects` wywołują `Repaint` . `undo`Metoda nie jest jeszcze wywoływana `Repaint` , mimo że `undo` modyfikuje te same pola. Dlatego możesz rozwiązać ten problem, wywołując `Repaint` od `undo` .

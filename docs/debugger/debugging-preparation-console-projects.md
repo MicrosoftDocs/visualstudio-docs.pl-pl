@@ -1,6 +1,7 @@
 ---
 title: Przygotowanie do debugowania projektów konsoli | Microsoft Docs
-ms.custom: seodec18
+description: 'Uzyskaj informacje na temat przygotowania do debugowania projektów konsolowych (C#, C++, Visual Basic, F #) w programie Visual Studio.'
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e612228bf5440936c336d286962820a02d6bd071
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9de54feeb77f1bff31fc0b41e385e5a10393aba2
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75916273"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728268"
 ---
 # <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>Przygotowanie debugowania: Projekty konsoli (C#, C++, Visual Basic, F #)
 
@@ -41,7 +42,7 @@ Przygotowanie do debugowania projektu konsoli jest podobne do przygotowania do d
 
 Może być konieczne określenie argumentów wiersza polecenia dla aplikacji konsolowej. Aby uzyskać więcej informacji, zobacz [Ustawienia projektu dla konfiguracji debugowania języka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md), [Ustawienia projektu dla konfiguracji debugowania Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)lub [Ustawienia projektu dla konfiguracji debugowania w języku C#](../debugger/project-settings-for-csharp-debug-configurations.md).
 
-Podobnie jak wszystkie właściwości projektu, te argumenty są utrwalane między sesjami debugowania i między sesjami programu Visual Studio. W związku z tym, jeśli aplikacja konsolowa jest już debugowana, należy pamiętać, że w oknie dialogowym ** \<Project> strony właściwości** mogą istnieć argumenty z poprzednich sesji.
+Podobnie jak wszystkie właściwości projektu, te argumenty są utrwalane między sesjami debugowania i między sesjami programu Visual Studio. W związku z tym, jeśli aplikacja konsolowa jest już debugowana, należy pamiętać, że w oknie dialogowym **\<Project> strony właściwości** mogą istnieć argumenty z poprzednich sesji.
 
 ## <a name="start-the-application"></a>Uruchamianie aplikacji
 
@@ -49,7 +50,7 @@ Podobnie jak wszystkie właściwości projektu, te argumenty są utrwalane międ
 
 - Ustaw punkt przerwania w kodzie i uruchom aplikację.
 
-- Uruchom aplikację przy użyciu klawisza **F10** (**Debuguj**  >  **krok**od) lub**Debug** **F11** (  >  **Wkrocz krok do**), a następnie przejdź przez kod przy użyciu innych opcji, takich jak **Uruchom do kliknięcia**.
+- Uruchom aplikację przy użyciu klawisza **F10** (**Debuguj**  >  **krok** od) lub **F11** (  >  **Wkrocz krok do**), a następnie przejdź przez kod przy użyciu innych opcji, takich jak **Uruchom do kliknięcia**.
 
 - W edytorze kodu kliknij prawym przyciskiem myszy wiersz i wybierz polecenie **Uruchom do kursora**.
 
@@ -62,5 +63,5 @@ Podobnie jak wszystkie właściwości projektu, te argumenty są utrwalane międ
 - [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)
 - [Przygotowanie do debugowania projektów C++](../debugger/debugging-preparation-visual-cpp-project-types.md)
 - [Typy projektów C#, F# i Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
-- [Ustawienia projektu dla konfiguracji debugowania w C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
+- [Ustawienia projektu dla konfiguracji debugowania języka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)

@@ -1,5 +1,7 @@
 ---
 title: Nieudane okno dialogowe potwierdzenia | Microsoft Docs
+description: Dowiedz się więcej na temat okna dialogowego potwierdzenie nie powiodło się, czyli okna dialogowego, które może wystąpić w interfejsie użytkownika debugowania programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -20,20 +22,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb42067bb4c88777a6c25ace71f53b9d9b3aa36b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: acc8f5abaa0c839232bbcedc63d24387444bd749
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72745766"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729083"
 ---
 # <a name="assertion-failed-dialog-box"></a>Błędy potwierdzenia — Okno dialogowe
 Instrukcja Assert określa warunek, który powinien zostać przetrzymany w pewnym konkretnym punkcie w programie. Jeśli ten warunek nie ma wartości true, potwierdzenie nie powiedzie się, wykonywanie programu zostanie przerwane i zostanie wyświetlone okno dialogowe.
 
 |Kliknij|Działanie|
 |-----------|--------|
-|Ponawianie próby|Debuguj potwierdzenie lub uzyskaj pomoc dotyczącą potwierdzeń.|
-|Ignoruj|Zignoruj potwierdzenie i kontynuuj wykonywanie programu.|
+|Ponów próbę|Debuguj potwierdzenie lub uzyskaj pomoc dotyczącą potwierdzeń.|
+|Zignoruj|Zignoruj potwierdzenie i kontynuuj wykonywanie programu.|
 |Przerwanie|Zatrzymanie wykonywania programu i zakończenie sesji debugowania.|
 
 ## <a name="see-also"></a>Zobacz też

@@ -1,5 +1,7 @@
 ---
 title: Tabela obiektów graficznych | Microsoft Docs
+description: Dowiedz się więcej na temat tabeli obiektów graficznych, która w analizie grafiki programu Visual Studio ułatwia zrozumienie obiektów Direct3D, które obsługują ramkę gry lub aplikacji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea80420b2146bd8c604a95d71012009dcb940ef5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7e746d37edaca87abfca42f315a65a470369e7e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72735449"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727583"
 ---
 # <a name="graphics-object-table"></a>Tabela obiektów graficznych
 Tabela obiektów graficznych w analizie grafiki programu Visual Studio ułatwia zrozumienie obiektów Direct3D, które obsługują ramkę gry lub aplikacji.
@@ -31,21 +33,21 @@ Tabela obiektów graficznych w analizie grafiki programu Visual Studio ułatwia 
 
  Tabela obiektów obsługuje kopiowanie i wklejanie, aby można było użyć innego narzędzia — na przykład programu Microsoft Excel — do badania jego zawartości.
 
- Ponadto można użyć listy rozwijanej **Typ** w lewym górnym rogu, aby przełączyć obiekty typu **bufory**, programy do **cieniowania** lub **tekstury**lub wszystkie te elementy jednocześnie.  Ponadto możesz użyć pola wyszukiwania w prawym górnym rogu, aby znaleźć określone wiersze dla wszystkich prezentowanych danych.  Można na przykład wyszukać *D32_FLOAT* , aby znaleźć na liście wszystkie wystąpienia obiektów tego formatu.
+ Ponadto można użyć listy rozwijanej **Typ** w lewym górnym rogu, aby przełączyć obiekty typu **bufory**, programy do **cieniowania** lub **tekstury** lub wszystkie te elementy jednocześnie.  Ponadto możesz użyć pola wyszukiwania w prawym górnym rogu, aby znaleźć określone wiersze dla wszystkich prezentowanych danych.  Można na przykład wyszukać *D32_FLOAT* , aby znaleźć na liście wszystkie wystąpienia obiektów tego formatu.
 
 ### <a name="graphics-object-table-format"></a>Format tabeli obiektów graficznych
  W tabeli obiektów są wyświetlane obiekty i zasoby Direct3D, które obsługują ramkę, która jest skojarzona z wybranym zdarzeniem — na przykład obiekty stanu, bufory, cieniowanie, tekstury i inne zasoby. Obiekty, które zostały utworzone w poprzedniej klatce, ale nie są używane w przechwyconej ramce, są pomijane w tabeli obiektów. Obiekty, które zostały zniszczone przez poprzednie zdarzenia w przechwyconej ramce, są pomijane w kolejnych zdarzeniach. Obiekty, które nie są ustawione na D3D10Device lub D3D11DeviceContext są wyświetlane jako szary tekst. Obiekty są wyświetlane w formacie tabeli.
 
 |Kolumna|Opis|
 |------------|-----------------|
-|**Identyfikator**|Identyfikator obiektu.|
+|**Identyfikatora**|Identyfikator obiektu.|
 |**Nazwa**|Informacje specyficzne dla aplikacji, które zostały ustawione dla obiektu za pomocą funkcji Direct3D `SetPrivateData` — zwykle do dostarczania dodatkowych informacji identyfikujących obiekt.|
 |**Typ**|Typ obiektu.|
 |**Aktywny**|Wyświetla wartość "*" dla obiektu, który został ustawiony w D3D10Device lub D3D11DeviceContext w przechwyconej ramce.<br /><br /> Odnosi się to do obiektów, które są wyświetlane w postaci szarego tekstu, ale zawiera wpis kolumny, którego można użyć w celu sortowania tabeli obiektów.|
 |**Rozmiar**|Rozmiar obiektu w bajtach.|
 |**Format**|Format obiektu. Na przykład format obiektu tekstury lub model cieniowania obiektu cieniowania.|
-|**Width**|Szerokość obiektu tekstury. Nie dotyczy innych typów obiektów.|
-|**Height**|Wysokość obiektu tekstury. Nie dotyczy innych typów obiektów.|
+|**Szerokość**|Szerokość obiektu tekstury. Nie dotyczy innych typów obiektów.|
+|**Proporcj**|Wysokość obiektu tekstury. Nie dotyczy innych typów obiektów.|
 |**Ścisł**|Głębokość obiektu tekstury trójwymiarowej. Jeśli teksturą nie jest 3-D, wówczas wartość jest równa 0. Nie dotyczy innych typów obiektów.|
 |**MIPS**|Liczba poziomów MIP, które ma obiekt tekstury. Nie dotyczy innych typów obiektów.|
 |**Rozmiaru tablicy**|Liczba tekstur w tablicy tekstury. Zakres jest z przedziału od 1 do górnej granicy zdefiniowanej przez bieżący poziom funkcji. W przypadku mapy modułu ta wartość jest 6 razy większa od liczby map modułów w tablicy.|

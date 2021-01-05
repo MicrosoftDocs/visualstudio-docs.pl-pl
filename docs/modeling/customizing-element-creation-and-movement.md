@@ -13,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96ef956980b08e688970ad0a00d7d1a0804da7c3
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: b84f638876270658be2f08a7e375540f0329a1d6
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363123"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729343"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Dostosowywanie tworzenia i przesuwania elementów
 
@@ -40,7 +40,7 @@ Chociaż operacje tworzenia mogą się różnić od operacji kopiowania, faktycz
 
 Odpowiedzialnością EMD jest podjęcie decyzji o sposobie scalania obiektu lub grupy obiektów w konkretną lokalizację w modelu. W szczególności decyduje o tym, jakie relacje należy utworzyć, aby połączyć scaloną grupę z modelem. Można również dostosować ją do ustawiania właściwości i tworzenia dodatkowych obiektów.
 
-![Scalanie&#45;EMD&#95;DSL](../modeling/media/dsl-emd_merge.png)
+![Diagram pokazujący przed i po obejrzenie drzewa elementów i ich relacji odwołania, gdy E M D Określa sposób dodawania nowego elementu.](../modeling/media/dsl-emd_merge.png)
 
 EMD jest generowany automatycznie podczas definiowania relacji osadzania. Ta wartość domyślna EMD tworzy wystąpienie relacji, gdy użytkownicy dodają nowe wystąpienia podrzędne do elementu nadrzędnego. Można modyfikować te domyślne EMDs, na przykład dodając kod niestandardowy.
 
@@ -50,7 +50,7 @@ Możesz również dodać własne EMDs w definicji DSL, aby umożliwić użytkown
 
 Można dodać dyrektywy scalania elementów do klas domeny, relacji domeny, kształtów, łączników i diagramów. Można je dodać lub znaleźć w Eksploratorze DSL w klasie odbiorczej domeny. Klasa odbiorczej jest klasą domeny elementu, który znajduje się już w modelu, i na którym zostanie scalony nowy lub skopiowany element.
 
-![Szczegóły&#95;&#45;DSL EMD](../modeling/media/dsl-emd_details.png)
+![Zrzut ekranu przedstawiający Eksplorator DSL pokazujący, że dodawany jest znak E M D z wybranym jako Klasa indeksowania i zaznaczona jest opcja Zastosuj do podklas.](../modeling/media/dsl-emd_details.png)
 
 **Klasa indeksowania** jest klasą domeny elementów, które można scalić do elementów członkowskich klasy odbiorczej. Wystąpienia podklas klasy indeksowania również zostaną scalone przez ten EMD, chyba że ustawisz **dla podklasy** wartości false.
 

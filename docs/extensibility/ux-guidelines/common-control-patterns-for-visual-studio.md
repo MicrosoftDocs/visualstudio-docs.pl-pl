@@ -1,5 +1,7 @@
 ---
 title: Wzorce formantów wspólnych dla programu Visual Studio | Microsoft Docs
+description: Dowiedz się więcej na temat sposobu, w jaki program Visual Studio Common Controls postępuje zgodnie ze wskazówkami dotyczącymi interakcji z pulpitem systemu Windows, a szczególnie
+ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0b5a1904c01f5688a00e45de7feed7ae326d9b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c1caccebf1dc14146bef214a4d33e1216243780
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698713"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715889"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Typowe wzorce kontrolek dla programu Visual Studio
 ## <a name="common-controls"></a><a name="BKMK_CommonControls"></a> Formanty standardowe
@@ -41,7 +43,7 @@ Formanty standardowe składają się na większość interfejsu użytkownika w p
 
 - [Widoki drzewa](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TreeViews)
 
-#### <a name="visual-style"></a>Styl wizualizacji
+#### <a name="visual-style"></a>Styl wizualny
 Pierwszy aspekt, który należy wziąć pod uwagę, gdy kontrolki określają, czy kontrolki będą używane w interfejsie użytkownika. Kontrolki w standardowym interfejsie użytkownika są nienależącymi do siebie interfejsami użytkownika i muszą być zgodne z [normalnym stylem pulpitu systemu Windows](/windows/desktop/uxguide/controls), co oznacza, że nie są ponownie obsługiwane i powinny być wyświetlane w domyślnym wyglądzie formantu.
 
 - **Okna dialogowe standardowe (narzędzia):** nie są one jeszcze obsługiwane. Nie należy powtarzać szablonu. Użyj podstawowych ustawień domyślnych stylu formantu.
@@ -54,7 +56,7 @@ Pierwszy aspekt, który należy wziąć pod uwagę, gdy kontrolki określają, c
 ### <a name="input-fields"></a><a name="BKMK_InputFields"></a> Pola wejściowe
  W przypadku typowego zachowania interakcji postępuj zgodnie z [zaleceniami pulpitu systemu Windows dla pól tekstowych](/windows/desktop/uxguide/ctrl-text-boxes).
 
-#### <a name="visual-style"></a>Styl wizualizacji
+#### <a name="visual-style"></a>Styl wizualny
 
 - Pola wejściowe nie powinny mieć stylu w oknach dialogowych. Użyj podstawowego stylu do kontrolki.
 
@@ -77,7 +79,7 @@ Pierwszy aspekt, który należy wziąć pod uwagę, gdy kontrolki określają, c
 ### <a name="combo-boxes-and-drop-down-lists"></a><a name="BKMK_ComboBoxesAndDropDowns"></a> Pola kombi i listy rozwijane
 W przypadku typowego zachowania interakcji postępuj zgodnie z [zaleceniami dla komputerów stacjonarnych z systemem Windows, aby uzyskać listę rozwijaną i pola kombi](/windows/desktop/uxguide/ctrl-drop).
 
-#### <a name="visual-style"></a>Styl wizualizacji
+#### <a name="visual-style"></a>Styl wizualny
 
 - W oknie dialogowym narzędzia nie należy zmienić szablonu kontrolki. Użyj podstawowego stylu do kontrolki.
 
@@ -93,7 +95,7 @@ Pola kombi i listy rozwijane powinny mieć rozmiar w celu dopasowania do zawarto
 ### <a name="check-boxes"></a><a name="BKMK_CheckBoxes"></a> Pola wyboru
 W przypadku typowego zachowania interakcji postępuj zgodnie z [zaleceniami dla komputerów stacjonarnych z systemem Windows](/windows/desktop/uxguide/ctrl-check-boxes).
 
-#### <a name="visual-style"></a>Styl wizualizacji
+#### <a name="visual-style"></a>Styl wizualny
 
 - W oknie dialogowym narzędzia nie należy zmienić szablonu kontrolki. Użyj podstawowego stylu do kontrolki.
 
@@ -112,7 +114,7 @@ W przypadku typowego zachowania interakcji postępuj zgodnie z [zaleceniami dla 
 ### <a name="radio-buttons"></a><a name="BKMK_RadioButtons"></a> Przyciski radiowe
 W przypadku typowych zachowań interakcji postępuj zgodnie z [zaleceniami dla komputerów stacjonarnych z systemem Windows](/windows/desktop/uxguide/ctrl-radio-buttons).
 
-#### <a name="visual-style"></a>Styl wizualizacji
+#### <a name="visual-style"></a>Styl wizualny
 W oknach dialogowych narzędzi, nie należy określać przycisków radiowych. Użyj podstawowego stylu do kontrolki.
 
 #### <a name="specialized-interactions"></a>Wyspecjalizowane interakcje
@@ -121,7 +123,7 @@ Nie jest konieczne użycie ramki grupy w celu zamieszczenia opcji radiowych, chy
 ### <a name="group-frames"></a><a name="BKMK_GroupFrames"></a> Grupuj ramki
 W przypadku typowych zachowań interakcji postępuj zgodnie ze [wskazówkami dla komputerów z systemem Windows dla ramek grup](/windows/desktop/uxguide/ctrl-group-boxes).
 
-#### <a name="visual-style"></a>Styl wizualizacji
+#### <a name="visual-style"></a>Styl wizualny
 W oknach dialogowych, nie należy grupować ramek. Użyj podstawowego stylu do kontrolki.
 
 #### <a name="layout"></a>Layout
@@ -152,7 +154,7 @@ W oknie dialogowym, w którym istnieją inne zgrupowane obszary i zawiera inform
 
 Umożliwia to użytkownikowi wybranie tekstu wewnątrz pola, ale nie jego edytowanie. Te pola tekstowe są obramowane według zwykłej linii trójwymiarowej z `ButtonShadow` wypełnieniem.
 
-Pole tekstowe może stać się aktywne (można je edytować), gdy użytkownik zmienia skojarzoną kontrolkę, taką jak zaznaczenie/odzaznaczenie pola wyboru lub wybranie/odzaznaczenie przycisku radiowego. Na przykład na stronie ** &gt; Opcje narzędzi** pokazanej poniżej pole tekstowe **strony głównej** jest aktywne po usunięciu zaznaczenia pola wyboru **Użyj domyślnego** .
+Pole tekstowe może stać się aktywne (można je edytować), gdy użytkownik zmienia skojarzoną kontrolkę, taką jak zaznaczenie/odzaznaczenie pola wyboru lub wybranie/odzaznaczenie przycisku radiowego. Na przykład na stronie **&gt; Opcje narzędzi** pokazanej poniżej pole tekstowe **strony głównej** jest aktywne po usunięciu zaznaczenia pola wyboru **Użyj domyślnego** .
 
 ![Pole tekstowe tylko do odczytu, zawierające Stany nieaktywne i aktywne](../../extensibility/ux-guidelines/media/ReadOnlyTextBox.png "ReadOnlyTextBox.png")<br />Pole tekstowe tylko do odczytu, zawierające Stany nieaktywne i aktywne
 
@@ -255,7 +257,7 @@ Unikaj przycisków poleceń w oknach narzędzi lub jeśli potrzebujesz więcej n
 #### <a name="text"></a>Tekst
 Postępuj zgodnie z instrukcjami dotyczącymi pisania w [tekście i terminologii interfejsu użytkownika](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology).
 
-#### <a name="visual-style"></a>Styl wizualizacji
+#### <a name="visual-style"></a>Styl wizualny
 
 ##### <a name="standard-unthemed"></a>Standardowa (niemotywnie)
 Większość przycisków w programie Visual Studio będzie wyświetlana w oknach dialogowych narzędzi i nie powinna mieć stylu. Powinny one odzwierciedlać standardowy wygląd przycisków, które są podyktowane przez system operacyjny.
@@ -320,7 +322,7 @@ Hiperłącza są dobrze dopasowane do akcji opartych na nawigacji, takich jak ot
 #### <a name="writing-style"></a>Styl pisania
 Postępuj zgodnie ze [wskazówkami dla pulpitu systemu Windows dotyczącymi tekstu interfejsu użytkownika](/windows/desktop/uxguide/text-ui). Nie używaj "Dowiedz się więcej na temat", "" więcej informacji o "lub" Uzyskaj pomoc dotyczącą tego "sformułować". Zamiast tego fraza Pomoc dotycząca łączenia tekstu w postaci pytania podstawowego odpowiada treści pomocy. Na przykład "**Jak mogę dodać serwer do Eksplorator serwera?**"
 
-#### <a name="visual-style"></a>Styl wizualizacji
+#### <a name="visual-style"></a>Styl wizualny
 
 - Hiperlinki powinny zawsze używać [usługi VSColor](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService). Jeśli hiperłącze nie ma poprawnie stylu, błyskuje kolor czerwony, gdy aktywny lub pokazuje inny kolor po odwiedzeniu.
 

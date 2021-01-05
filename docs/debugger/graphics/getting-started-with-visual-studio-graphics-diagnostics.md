@@ -1,6 +1,7 @@
 ---
 title: Wprowadzenie do diagnostyki grafiki | Microsoft Docs
-ms.custom: seodec18
+description: Przygotuj się do użycia Diagnostyka grafiki po raz pierwszy, a następnie Przechwyć ramki z aplikacji Direct3D i Przeanalizuj je w analizatorze grafiki.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 06/08/2020
 ms.topic: how-to
 author: mikejo5000
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00a802c0083a9e67a145077ff8ec5842b30eb607
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 88b22364c92a17c7200ddb261d154c7896cd1696
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600100"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727867"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Wprowadzenie do diagnostyki grafiki w programie Visual Studio
 W tej sekcji utworzysz Diagnostyka grafiki po raz pierwszy, następnie przechwytuje ramki z aplikacji Direct3D i przeanalizuje je w analizatorze grafiki.
@@ -66,7 +67,7 @@ Pobierz przykład z [przykładu gry Direct3D](/samples/microsoft/windows-univers
 Przed przejściem do programu upewnij się, że możesz skompilować i uruchomić aplikację. Wybierz pozycję **Kompiluj**  >  **kompilację rozwiązania** , aby upewnić się, że kompiluje się bez błędów. Następnie wybierz **Debuguj**  >  **Uruchom bez debugowania** (**Ctrl + F5**), aby upewnić się, że działa poprawnie. W zależności od testowanej maszyny za pomocą narzędzia może być konieczne dostosowanie platformy i celu debugowania dla przykładu. Na przykład aby przeprowadzić test względem platformy x64 na maszynie hosta programu Visual Studio, wybierz pozycję **x64** jako platformę rozwiązania i **maszynę lokalną** jako miejsce docelowe debugowania. 
 
 ### <a name="2---start-a-graphics-diagnostics-session"></a>2 — Uruchamianie sesji Diagnostyka grafiki
- Teraz wszystko jest gotowe do rozpoczęcia pierwszej sesji diagnostyki grafiki. W programie Visual Studio w menu głównym wybierz kolejno opcje **Debuguj, grafika, Rozpocznij debugowanie grafiki**lub po prostu naciśnij klawisze **Alt + F5**. Spowoduje to uruchomienie aplikacji w obszarze Diagnostyka grafiki i wyświetlenie okien sesji diagnostyki w programie Visual Studio.
+ Teraz wszystko jest gotowe do rozpoczęcia pierwszej sesji diagnostyki grafiki. W programie Visual Studio w menu głównym wybierz kolejno opcje **Debuguj, grafika, Rozpocznij debugowanie grafiki** lub po prostu naciśnij klawisze **Alt + F5**. Spowoduje to uruchomienie aplikacji w obszarze Diagnostyka grafiki i wyświetlenie okien sesji diagnostyki w programie Visual Studio.
 
 > [!IMPORTANT]
 > Jeśli uruchamiasz aplikację w systemie Windows 10 i nie zainstalowano jeszcze opcjonalnych narzędzi graficznych, zostanie wyświetlony monit o to, aby to zrobić teraz. Należy ją zainstalować przed użyciem Diagnostyka grafiki w systemie Windows 10.

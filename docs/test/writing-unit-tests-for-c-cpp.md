@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 0eaf41dc0bf3e21dfbf4018261844181d594f0d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cf6287ebdb4c2df6145a0e60e22ac1197a517fde
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649613"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729369"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Zapisz testy jednostkowe dla C/C++ w programie Visual Studio
 
@@ -37,7 +37,7 @@ Projekty testów jednostkowych języka C++ obsługują [CodeLens](../ide/find-co
 
 **Visual Studio 2017 i nowsze (wszystkie wersje)**
 
-- **Karta Google test** jest dołączana jako domyślny składnik **tworzenia aplikacji klasycznych w ramach obciążeń języka C++** . Ma szablon projektu, który można dodać do rozwiązania. Użyj menu **Dodaj nowy projekt** prawym przyciskiem myszy w węźle rozwiązanie w **Eksplorator rozwiązań** , aby go dodać. Dostępne są również opcje, które można skonfigurować **Tools**za pomocą  >  **opcji**narzędzia. Aby uzyskać więcej informacji, zobacz [How to: Use Google test in Visual Studio](how-to-use-google-test-for-cpp.md).
+- **Karta Google test** jest dołączana jako domyślny składnik **tworzenia aplikacji klasycznych w ramach obciążeń języka C++** . Ma szablon projektu, który można dodać do rozwiązania. Użyj menu **Dodaj nowy projekt** prawym przyciskiem myszy w węźle rozwiązanie w **Eksplorator rozwiązań** , aby go dodać. Dostępne są również opcje, które można skonfigurować za pomocą  >  **opcji** narzędzia. Aby uzyskać więcej informacji, zobacz [How to: Use Google test in Visual Studio](how-to-use-google-test-for-cpp.md).
 
 - **Zwiększenie wydajności. test** jest uwzględniany jako domyślny składnik **tworzenia aplikacji klasycznych w ramach obciążeń języka C++** . Jest ona zintegrowana z **Eksploratorem testów**, ale obecnie nie ma szablonu projektu. Należy ją skonfigurować ręcznie. Aby uzyskać więcej informacji, zobacz [jak: użyć Zwiększ. test w programie Visual Studio](how-to-use-boost-test-for-cpp.md).
 
@@ -85,9 +85,9 @@ Jeśli kod testu nie eksportuje funkcji, które mają zostać przetestowane, mo�
 
 Następnie w pliku *. cpp* testu jednostkowego Dodaj `#include` dyrektywę dla wszystkich plików nagłówkowych, które deklarują typy i funkcje, które chcesz przetestować. Typ `#include "` , a następnie technologia IntelliSense zostanie aktywowana, aby ułatwić wybór. Powtórz te czynności dla wszystkich dodatkowych nagłówków.
 
-![Dodaj dyrektywy include](media/cpp-add-includes-test-project.png)
+![Zrzut ekranu przedstawiający Eksplorator rozwiązań, w którym jest wyświetlana Dyrektywa #include dodawana przy użyciu funkcji IntelliSense wyróżniania pliku nagłówkowego do uwzględnienia.](media/cpp-add-includes-test-project.png)
 
-Aby uniknąć konieczności wpisywania pełnej ścieżki w każdej instrukcji include w pliku źródłowym, można dodać wymagane foldery we **Project**  >  **właściwościach**projektu  >  **C/C++**  >  **Ogólne**  >  **Dodatkowe katalogi dołączania**.
+Aby uniknąć konieczności wpisywania pełnej ścieżki w każdej instrukcji include w pliku źródłowym, można dodać wymagane foldery we   >  **właściwościach** projektu  >    >  **Ogólne**  >  **Dodatkowe katalogi dołączania**.
 
 ### <a name="write-test-methods"></a>Pisanie metod testowych
 
@@ -96,7 +96,7 @@ Aby uniknąć konieczności wpisywania pełnej ścieżki w każdej instrukcji in
 
 Plik *. cpp* w projekcie testowym ma klasę zastępczą i metodę zdefiniowaną dla Ciebie. Przedstawiają przykład sposobu pisania kodu testu. Podpisy używają makr TEST_CLASS i TEST_METHOD, które umożliwiają odnajdywanie metod z okna **Eksplorator testów** .
 
-![Dodaj dyrektywy include](media/cpp-write-test-methods.png)
+![Zrzut ekranu okna Eksplorator testów, który pokazuje plik kodu UnitTest1. cpp zawierający klasę zastępczą i metodę za pomocą makr TEST_CLASS i TEST_METHOD.](media/cpp-write-test-methods.png)
 
 TEST_CLASS i TEST_METHOD są częścią [natywnego środowiska testowego firmy Microsoft](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). **Eksplorator testów** odnajduje metody testowe w innych obsługiwanych platformach w podobny sposób.
 
@@ -117,7 +117,7 @@ Można dodać *cechy* do metod testowych, aby określić właścicieli testów, 
 
 ### <a name="run-the-tests"></a>Uruchamianie testów
 
-1. W menu **test** wybierz polecenie **Windows**  >  **Eksplorator testów**systemu Windows. Na poniższej ilustracji przedstawiono projekt testowy, którego testy nie zostały jeszcze uruchomione.
+1. W menu **test** wybierz polecenie   >  **Eksplorator testów** systemu Windows. Na poniższej ilustracji przedstawiono projekt testowy, którego testy nie zostały jeszcze uruchomione.
 
    ![Eksplorator testów przed uruchomieniem testów](media/cpp-test-explorer.png)
 
@@ -126,7 +126,7 @@ Można dodać *cechy* do metod testowych, aby określić właścicieli testów, 
 
 1. Jeśli nie wszystkie testy są widoczne w oknie, Skompiluj projekt testowy, klikając prawym przyciskiem myszy jego węzeł w **Eksplorator rozwiązań** i wybierając opcję **Kompiluj** lub **Kompiluj ponownie**.
 
-1. W **Eksploratorze testów**wybierz opcję **Uruchom wszystkie**lub wybierz konkretne testy, które chcesz uruchomić. Kliknij prawym przyciskiem myszy Test, aby wyświetlić inne opcje, w tym uruchamianie go w trybie debugowania z włączonymi punktami przerwania. Po uruchomieniu wszystkich testów okno pokazuje, które testy zakończyły się powodzeniem, a które nie powiodły się:
+1. W **Eksploratorze testów** wybierz opcję **Uruchom wszystkie** lub wybierz konkretne testy, które chcesz uruchomić. Kliknij prawym przyciskiem myszy Test, aby wyświetlić inne opcje, w tym uruchamianie go w trybie debugowania z włączonymi punktami przerwania. Po uruchomieniu wszystkich testów okno pokazuje, które testy zakończyły się powodzeniem, a które nie powiodły się:
 
 ![Eksplorator testów po uruchomieniu testów](media/cpp-test-explorer-passed.png)
 

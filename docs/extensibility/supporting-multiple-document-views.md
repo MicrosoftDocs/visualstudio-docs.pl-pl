@@ -1,5 +1,7 @@
 ---
 title: Obsługa widoków wielu dokumentów | Microsoft Docs
+description: Dowiedz się, jak udostępnić więcej niż jeden widok dokumentu przy użyciu oddzielnych danych dokumentu i obiektów widoku dokumentu dla niestandardowego edytora w Visual Studio SDK.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a952414fa7156d80675564e519e556ccedd524a3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c1d99f4beb000d4b48435b9215a01f31ef8e936
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699539"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716097"
 ---
 # <a name="supporting-multiple-document-views"></a>Obsługa wielu widoków dokumentu
 Można podać więcej niż jeden widok dokumentu, tworząc oddzielne dane dokumentu i obiekty widoku dokumentu dla edytora. Niektóre przypadki, w których będzie przydatny dodatkowy widok dokumentu, są następujące:

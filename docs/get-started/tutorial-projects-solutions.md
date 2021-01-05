@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cdc30b34c85a799827519af3cd2bba2c9f1735a
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 3aa347b7f789e24e7cdd3baa19a6267f0ecdf2e5
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668810"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727519"
 ---
 # <a name="introduction-to-projects-and-solutions"></a>Wprowadzenie do projektów i rozwiązań
 
@@ -279,7 +279,17 @@ Wiersz w pliku *Calendar.cs* , który zawiera <xref:System.Runtime.CompilerServi
 
 ## <a name="next-steps"></a>Następne kroki
 
+::: moniker range="vs-2017"
+
 Jeśli chcesz sprawdzić, czy test jednostkowy działa, wybierz pozycję **Testuj**  >  **Uruchom**  >  **wszystkie testy** z paska menu. Zostanie otwarte okno o nazwie **Eksplorator testów** i zobaczysz, że test **TestGetCurrentDate** kończy się powodzeniem.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Jeśli chcesz sprawdzić, czy test jednostkowy działa, wybierz pozycję **Testuj**  >  **Uruchom wszystkie testy** z paska menu. Zostanie otwarte okno o nazwie **Eksplorator testów** i zobaczysz, że test **TestGetCurrentDate** kończy się powodzeniem.
+
+::: moniker-end
 
 ![Eksplorator testów w programie Visual Studio pokazujący zakończony test](media/tutorial-projects-test-explorer.png "Eksplorator testów w programie Visual Studio pokazujący przetestowany test.")
 
@@ -297,7 +307,7 @@ Jeśli chcesz sprawdzić, czy test jednostkowy działa, wybierz pozycję **Testu
 
 ::: moniker-end
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Pracuj z projektami i rozwiązaniami](../ide/creating-solutions-and-projects.md)
 - [Zarządzanie właściwościami projektów i rozwiązań](../ide/managing-project-and-solution-properties.md)

@@ -1,6 +1,7 @@
 ---
 title: Przygotowanie do debugowania usług systemu Windows | Microsoft Docs
-ms.custom: seodec18
+description: Przygotuj się do debugowania usług systemu Windows, które są programami uruchamianymi w tle w systemie Windows w programie Visual Studio.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3161f6d2c328e8e33dd82ed206aa8aa20e654cc9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4fe922106181633f506147decc3b578e7dc6e704
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72738089"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728216"
 ---
 # <a name="debugging-preparation-windows-services"></a>Przygotowanie debugowania: usługi systemu Windows
 Usługa systemu Windows to program uruchomiony w tle w systemie Microsoft Windows. Przykładami mogą być usługa Telnet i usługa czas systemu Windows, która aktualizuje zegar widoczny dla komputera. Nie można uruchomić usługi systemu Windows z poziomu programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ; musi ona działać w kontekście menedżera kontroli usług. Aby uzyskać więcej informacji, zobacz [Tworzenie usług systemu Windows](/dotnet/framework/windows-services/how-to-create-windows-services), [debugowanie aplikacji usług systemu Windows](/dotnet/framework/windows-services/how-to-debug-windows-service-applications)i [aplikacji usług systemu Windows](/dotnet/framework/windows-services/index).
@@ -30,6 +31,6 @@ Usługa systemu Windows to program uruchomiony w tle w systemie Microsoft Window
 ## <a name="see-also"></a>Zobacz też
 - [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)
 - [Typy projektów C#, F# i Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
-- [Ustawienia projektu dla konfiguracji debugowania w C#](../debugger/project-settings-for-csharp-debug-configurations.md)
-- [Ustawienia projektu dla konfiguracji debugowania w Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
+- [Ustawienia projektu dla konfiguracji debugowania w języku C#](../debugger/project-settings-for-csharp-debug-configurations.md)
+- [Ustawienia projektu dla konfiguracji debugowania Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
 - [Porady: debugowanie metody OnStart](../debugger/how-to-debug-the-onstart-method.md)

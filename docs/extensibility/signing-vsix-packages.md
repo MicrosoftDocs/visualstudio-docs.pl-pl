@@ -1,5 +1,7 @@
 ---
 title: Podpisywanie pakietów VSIX | Microsoft Docs
+description: Dowiedz się więcej o zestawach rozszerzeń podpisywania. Instalator VSIX wyświetla komunikat informujący o tym, że VSIX jest podpisany i informacje o podpisie.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 17179c35496fc19322c5bb951f4d04bc28e5d7bc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e9152e45b402294dfd0bbb41bfda2c685588f01e
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700086"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716084"
 ---
 # <a name="signing-vsix-packages"></a>Podpisywanie pakietów VSIX
 Zestawy rozszerzeń nie muszą być podpisane, zanim będą mogły działać w programie Visual Studio, ale jest to dobre rozwiązanie.

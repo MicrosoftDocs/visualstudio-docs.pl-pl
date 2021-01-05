@@ -1,5 +1,7 @@
 ---
 title: Konfigurowanie zapory systemu Windows na potrzeby zdalnego debugowania | Microsoft Docs
+description: Skonfiguruj zaporę systemu Windows na potrzeby debugowania zdalnego. Skonfiguruj porty do zdalnego debugowania. Rozwiązywanie problemów z połączeniem zdalnego debugowania.
+ms.custom: SEO-VS-2020
 ms.date: 10/31/2018
 ms.topic: how-to
 ms.assetid: 66e3230a-d195-4473-bbce-8ca198516014
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fa5d60d7fe662cff31b54bf3a13c203f4b6d8c9
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: be73b8392f6b92bf48bd9150197be9bf8fe380dd
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970089"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728953"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>Konfigurowanie zapory systemu Windows na potrzeby debugowania zdalnego
 
@@ -72,7 +74,7 @@ W przypadku zdalnego debugowania na komputerze zdalnym muszą być otwarte nast�
 
 ::: moniker-end
 
-W przypadku wybrania opcji **Użyj zarządzanego trybu zgodności** w obszarze **Narzędzia**  >  **Options**  >  **debugowanie**, otwórz te dodatkowe porty zdalnego debugera. Tryb zgodności zarządzany przez debuger umożliwia używanie starszej wersji programu Visual Studio 2010 debugera.
+W przypadku wybrania opcji **Użyj zarządzanego trybu zgodności** w obszarze **Narzędzia**  >    >  **debugowanie**, otwórz te dodatkowe porty zdalnego debugera. Tryb zgodności zarządzany przez debuger umożliwia używanie starszej wersji programu Visual Studio 2010 debugera.
 
 |**Porty**|**Przychodzące/wychodzące**|**Protokół**|**Opis**|
 |-|-|-|-|

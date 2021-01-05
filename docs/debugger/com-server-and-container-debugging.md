@@ -1,5 +1,7 @@
 ---
 title: Debugowanie kontenera i serwera COM | Microsoft Docs
+description: Dowiedz się więcej o debugowaniu serwera COM i kontenera. Debugowanie serwera COM i kontenera w tym samym rozwiązaniu, aplikacji serwerowej bez informacji o kontenerach lub aplikacji SDI.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec5ed51c72ad7fd64bbdfd0135f53a13bb8c6e4b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b1d4ceecae385ac6e5444c60f6634b260f2e887
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72745679"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728979"
 ---
 # <a name="com-server-and-container-debugging"></a>Debugowanie kontenera i serwera COM
 Aplikacje COM wykonują wiele zadań poza bezpośrednią kontrolą programisty. Komunikacja między bibliotekami DLL, licznikami użycia obiektów i operacjami schowka to tylko kilka obszarów, w których może wystąpić nieoczekiwane zachowanie. W takim przypadku pierwszym krokiem jest śledzenie źródła problemu.
@@ -56,4 +58,4 @@ Aplikacje COM wykonują wiele zadań poza bezpośrednią kontrolą programisty. 
 
 ## <a name="see-also"></a>Zobacz też
 
-- [COM i debugowanie ActiveX](../debugger/com-and-activex-debugging.md)
+- [Debugowanie modelu COM i ActiveX](../debugger/com-and-activex-debugging.md)

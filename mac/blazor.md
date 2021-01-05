@@ -10,18 +10,18 @@ no-loc:
 - Blazor
 - Blazor WebAssembly
 ms.topic: how-to
-ms.openlocfilehash: 3280e63ae92a99cfa076b79e499a7b18952285c4
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 30e9a62e8bf0364a76cbd43995cbb77c1a5bd0c4
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584038"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729421"
 ---
 # <a name="create-no-locblazor-web-apps"></a>Tworzenie Blazor aplikacji sieci Web
 
 Ten przewodnik zawiera wprowadzenie do tworzenia pierwszej Blazor aplikacji sieci Web. Aby uzyskać bardziej szczegółowe wskazówki, zobacz [wprowadzenie do ASP.NET Core Blazor ](/aspnet/core/blazor/index).
 
-ASP.NET Core Blazor obsługuje dwie różne opcje hostingu: Blazor WebAssembly (WASM) lub Blazor serwer. Visual Studio dla komputerów Mac obsługuje oba modele hostingu. Visual Studio dla komputerów Mac 8.4 + obsługuje Blazor serwer i Visual Studio dla komputerów Mac 8.6 +. Aby uzyskać więcej informacji na temat Blazor modeli hostingu, zobacz [ASP.NET Core Blazor modele hostingu ](/aspnet/core/blazor/hosting-models?view=aspnetcore-3.1). Obsługa debugowania Blazor WebAssembly projektów w Visual Studio dla komputerów Mac jest dostępna w wersji zapoznawczej programu v 8.8 (dostępnej za pośrednictwem kanału aktualizacji w wersji zapoznawczej w programie **Visual Studio > Sprawdź dostępność aktualizacji...** menu).
+ASP.NET Core Blazor obsługuje dwie różne opcje hostingu: Blazor WebAssembly (WASM) lub Blazor serwer. Visual Studio dla komputerów Mac obsługuje oba modele hostingu. Visual Studio dla komputerów Mac 8.4 + obsługuje Blazor serwer i Visual Studio dla komputerów Mac 8.6 +. Aby uzyskać więcej informacji na temat Blazor modeli hostingu, zobacz [ASP.NET Core Blazor modele hostingu ](/aspnet/core/blazor/hosting-models?view=aspnetcore-3.1&preserve-view=true). Obsługa debugowania Blazor WebAssembly projektów w Visual Studio dla komputerów Mac jest dostępna w wersji zapoznawczej programu v 8.8 (dostępnej za pośrednictwem kanału aktualizacji w wersji zapoznawczej w programie **Visual Studio > Sprawdź dostępność aktualizacji...** menu).
 
 Co to jest Blazor ? Blazor to platforma służąca do tworzenia interakcyjnego interfejsu użytkownika sieci Web po stronie klienta w programie .NET, który oferuje następujące korzyści dla deweloperów sieci Web:
 
@@ -33,11 +33,11 @@ Co to jest Blazor ? Blazor to platforma służąca do tworzenia interakcyjnego i
 * Twórz w oparciu o wspólny zestaw języków, struktur i narzędzi, które są stabilne, bogate w funkcje i łatwe w użyciu.
 
 ## <a name="create-a-new-no-locblazor-webassembly-project"></a>Utwórz nowy Blazor WebAssembly projekt
-1. W **oknie uruchamiania**wybierz pozycję **Nowy** , aby utworzyć nowy projekt:
+1. W **oknie uruchamiania** wybierz pozycję **Nowy** , aby utworzyć nowy projekt:
 
    ![Visual Studio dla komputerów Mac okno uruchamiania z wyróżnionym nowym wyborem](media/blazor-new-project.png)
 
-1. W oknie dialogowym **Nowy projekt** wybierz pozycję Aplikacja **platformy .NET Core** > **App** > ** Blazor WebAssembly ** i wybierz pozycję **dalej**: ![ Wybierz szablon okna dialogowego nowego projektu z::: No-Loc (Blazor)::: serwer — wybrany szablon aplikacji](media/blazor-wasm-project-template.png)
+1. W oknie dialogowym **Nowy projekt** wybierz pozycję Aplikacja **platformy .NET Core** >  > **Blazor WebAssembly** i wybierz pozycję **dalej**: ![ zrzut ekranu przedstawiający okno dialogowe Nowy projekt z::: No-Loc (Blazor webassembly)::: aplikacja wyróżniona w okienku aplikacji w obszarze ASP.NET Core i wybranym przyciskiem dalej.](media/blazor-wasm-project-template.png)
 
 1. Wybierz pozycję .NET Core 3,1 jako platformę docelową, a następnie wybierz pozycję **dalej**. 
    ![Skonfiguruj nowy plik::: No-Loc (Blazor webassembly)::: App okno dialogowe z wybraną platformą docelową dla platformy .NET Core 3,1](media/blazor-wasm-select-target-framework.png)
@@ -55,10 +55,10 @@ Co to jest Blazor ? Blazor to platforma służąca do tworzenia interakcyjnego i
 
 ## <a name="creating-a-new-no-locblazor-server-project"></a>Tworzenie nowego Blazor projektu serwera
 
-1. W **oknie uruchamiania**wybierz pozycję **Nowy** , aby utworzyć nowy projekt:
+1. W **oknie uruchamiania** wybierz pozycję **Nowy** , aby utworzyć nowy projekt:
 
    ![Visual Studio dla komputerów Mac okno uruchamiania z wyróżnionym nowym wyborem](media/blazor-new-project.png)
-1. W oknie dialogowym **Nowy projekt** wybierz pozycję Aplikacja **.NET Core** > **App** > ** Blazor Server** , a następnie wybierz pozycję **dalej**: ![ Wybierz szablon okna dialogowego nowego projektu z::: No-Loc (Blazor)::: serwer — wybrany szablon aplikacji](media/blazor-project-template.png)
+1. W oknie dialogowym **Nowy projekt** wybierz pozycję Aplikacja **.NET Core** > **App** > **Blazor Server** i wybierz pozycję **dalej**: ![ zrzut ekranu przedstawiający okno dialogowe Nowy projekt z::: No-Loc (Blazor)::: aplikacja serwera wyróżniona w okienku aplikacji w obszarze ASP.NET Core i wybrany przycisk Dalej.](media/blazor-project-template.png)
 
 1. Wybierz pozycję .NET Core 3,1 jako platformę docelową, a następnie wybierz pozycję **dalej**. 
    ![Skonfiguruj nową aplikację::: No-Loc (Blazor)::: serwer okno dialogowe wyświetlane z platformą docelową wybraną dla platformy .NET Core 3,1](media/blazor-select-target-framework.png)

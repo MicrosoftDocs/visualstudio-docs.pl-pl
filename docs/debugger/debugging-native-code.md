@@ -1,5 +1,7 @@
 ---
 title: Debugowanie kodu natywnego | Microsoft Docs
+description: Dowiedz się więcej na temat typowych problemów z debugowaniem i technik wysokiego poziomu dla aplikacji natywnych w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 04/11/2017
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f98b99a31d9215d661879aa7fa52d4b671024496
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4fee3044e4eaa1e7dd3549923082f9b843951b28
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72738165"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728320"
 ---
 # <a name="debugging-native-code"></a>Debugowanie kodu natywnego
 Sekcja dotyczy niektórych typowych problemów z debugowaniem i technik dla aplikacji natywnych. Techniki omówione w tej sekcji są technikami wysokiego poziomu. Aby Mechanics za pomocą debugera programu Visual Studio, zobacz [pierwsze spojrzenie na debuger](../debugger/debugger-feature-tour.md)).
@@ -41,7 +43,7 @@ Sekcja dotyczy niektórych typowych problemów z debugowaniem i technik dla apli
 
  [Techniki debugowania MFC](../debugger/mfc-debugging-techniques.md) Łącza do technik debugowania dla programów MFC, w tym: afxDebugBreak, makro śledzenia, Wykrywanie przecieków pamięci w MFC, potwierdzenia MFC i zmniejszanie rozmiaru kompilacji debugowania MFC.
 
- [Techniki debugowania CRT](../debugger/crt-debugging-techniques.md) Łącza do technik debugowania dla biblioteki wykonawczej C, w tym przy użyciu biblioteki debugowania CRT, makr dla raportowania, różnic między funkcjami malloc i _malloc_dbg, pisania funkcji punktu zaczepienia debugowania i sterty debugowania CRT.
+ [Techniki debugowania CRT](../debugger/crt-debugging-techniques.md) Linki do technik debugowania dla biblioteki C Run-Time, w tym przy użyciu biblioteki debugowania CRT, makr do raportowania, różnic między funkcjami malloc i _malloc_dbg, pisania funkcji punktów zaczepienia debugowania i sterty debugowania CRT.
 
  [Debugowanie często zadawanych pytań dotyczących kodu natywnego](../debugger/debugging-native-code-faqs.md) Zawiera odpowiedzi na często zadawane pytania dotyczące debugowania programów C++
 

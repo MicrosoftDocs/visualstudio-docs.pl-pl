@@ -1,5 +1,7 @@
 ---
 title: Wariant formatu docelowego renderowania 16bpp | Microsoft Docs
+description: Zastosuj liczbę 16 bitów na piksel (BPP) typ docelowy renderowania, ustawiając Format piksela na DXGI_FORMAT_B5G6R5_UNORM dla wszystkich obiektów docelowych renderowania i buforów z tyłu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 24b22ad9-5ad0-4161-809a-9b518eb924bf
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a63261a4ef8a6304bec8c2bdde1d9ec9113405e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa73637244469d781ac77acba362886b5656f8d8
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74188590"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728047"
 ---
 # <a name="16-bpp-render-target-format-variant"></a>Wariant formatu docelowego renderowania BPP
 Ustawia format pikseli do DXGI_FORMAT_B5G6R5_UNORM dla wszystkich elementów docelowych renderowania i buforów zwrotnych.

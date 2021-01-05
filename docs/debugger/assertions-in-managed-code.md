@@ -1,5 +1,7 @@
 ---
 title: Potwierdzenia w kodzie zarządzanym | Microsoft Docs
+description: 'Dowiedz się więcej na temat potwierdzeń jako narzędzia debugowania dla kodu zarządzanego w języku C#, Visual Basic lub F # w programie Visual Studio.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -22,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 824c711fc0ebb26a78338a65808c6fdbed768919
-ms.sourcegitcommit: fed8782b2fb2ca18a90746b6e7e0b33f3fde10f1
+ms.openlocfilehash: 2d546beb45be7f1473992ab9c2afc5f02ced1a1b
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97646401"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729096"
 ---
 # <a name="assertions-in-managed-code"></a>Potwierdzenia w zarządzanym kodzie
 Potwierdzenie (lub instrukcja `Assert`) testuje warunek, który określasz jako argument instrukcji `Assert`. Jeśli warunek ma wartość „true” (prawda), nie są wykonywane żadne akcje. Jeśli warunek ma wartość „false” (fałsz), asercja kończy się niepowodzeniem. W przypadku uruchamiania programu z kompilacją debugowania program przechodzi do trybu przerwania.
@@ -214,7 +216,7 @@ Trace.Assert ( stacksize > 0, "Out of stack space", "Failed in inctemp" );
 ## <a name="setting-assertions-in-configuration-files"></a><a name="BKMK_Setting_assertions_in_configuration_files"></a> Ustawianie potwierdzeń w plikach konfiguracji
  Można ustawić potwierdzenia w pliku konfiguracyjnym programu oraz w kodzie. Aby uzyskać więcej informacji, zobacz <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> lub <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>
 - <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>

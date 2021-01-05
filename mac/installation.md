@@ -8,12 +8,12 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: f971237ecc829fcc4ab660263a1b66c701f86f62
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 5155c37a89f566841fc342bbd8213f5a38eb399d
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583960"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727570"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Zainstaluj program Visual Studio 2019 dla komputerów Mac
 
@@ -49,7 +49,7 @@ Do kompilowania aplikacji platformy Xamarin dla systemu iOS lub macOS potrzebne 
 
 6. Zostanie wyświetlona lista dostępnych obciążeń. Wybierz składniki, których chcesz użyć:
 
-    [![Wybierz opcjonalne funkcje obciążenia, które chcesz zainstalować](media/install-selection.png)](media/install-selection.png#lightbox)
+    [![Zrzut ekranu przedstawiający ekran "co chcesz zainstalować?" w Instalatorze programu Visual Studio Mac z listą składników dostępnych do instalacji.](media/install-selection.png)](media/install-selection.png#lightbox)
 
    Jeśli nie chcesz instalować wszystkich platform, Skorzystaj z poniższego przewodnika, aby ułatwić podjęcie decyzji o tym, które platformy instalować:
 
@@ -67,7 +67,7 @@ Do kompilowania aplikacji platformy Xamarin dla systemu iOS lub macOS potrzebne 
 7. Po dokonaniu wyboru Naciśnij przycisk **Zainstaluj** .
 8. Instalator wyświetli postęp, gdy pobiera i instaluje Visual Studio dla komputerów Mac i wybrane obciążenia. Zostanie wyświetlony monit o wprowadzenie hasła w celu udzielenia uprawnień niezbędnych do instalacji.
 
-    [![Wybierz opcjonalne funkcje obciążenia, które chcesz zainstalować](media/installation-progress.png)](media/installation-progress.png#lightbox)
+    [![Zrzut ekranu z Instalatora programu Visual Studio dla komputerów Mac z ekranem postępu instalacji dla programu .NET Developer Toolkit dla komputerów Mac.](media/installation-progress.png)](media/installation-progress.png#lightbox)
 
 9. Po zainstalowaniu programu Visual Studio dla komputerów Mac wyświetli monit o spersonalizowanie instalacji, logując się i wybierając kluczowe powiązania, których chcesz użyć:
 

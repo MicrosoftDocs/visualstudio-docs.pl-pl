@@ -1,5 +1,7 @@
 ---
 title: Okno dialogowe Wybieranie punktów przerwania | Microsoft Docs
+description: Przeczytaj informacje o oknie dialogowym Wybieranie punktów przerwania, które jest otwierane w przypadku próby ustawienia punktu przerwania z niejednoznacznych danych wejściowych w oknie dialogowym Nowy punkt przerwania w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdec8c8d1b53f87e14700f5c14099cf0d2e6e392
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 876cc88756f6230585dce72b984b7ac40390a7f4
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72745729"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729044"
 ---
 # <a name="choose-breakpoints-dialog-box"></a>Wybierz punkty przerwania — okno dialogowe
 Okno dialogowe **Wybieranie punktów przerwania** zostanie otwarte podczas próby ustawienia punktu przerwania z niejednoznacznych danych wejściowych w oknie dialogowym **nowy punkt przerwania** . Typowym przykładem niejednoznacznych danych wejściowych jest przeciążona nazwa funkcji.

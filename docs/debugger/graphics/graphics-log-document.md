@@ -1,5 +1,7 @@
 ---
 title: Dokument dziennika grafiki | Microsoft Docs
+description: Zapoznaj się z dokumentem dziennika grafiki w programie Visual Studio, który rejestruje zdarzenia grafiki, które wystąpiły, gdy aplikacja była uruchomiona w ramach sesji diagnostyki grafiki.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d9bdfdb23d199c50b8d7ec6520964043dee8aa6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 38dc7452493ebcd39bee5ee55c59fc70e0a6493c
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72735520"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727661"
 ---
 # <a name="graphics-log-document"></a>Dokument dziennika grafiki
 Dokument dziennika grafiki to rekord zdarzeń graficznych, które wystąpiły, gdy aplikacja była uruchomiona w ramach sesji diagnostyki grafiki. Po zarejestrowaniu można przejrzeć dziennik w analizator grafiki programu Visual Studio, aby zdiagnozować problemy z renderowaniem i wydajnością.
@@ -33,7 +35,7 @@ Dokument dziennika grafiki to rekord zdarzeń graficznych, które wystąpiły, g
 
 #### <a name="to-inspect-a-frame"></a>Aby przeprowadzić inspekcję ramki
 
-- Na **liście ramka**Wybierz ramkę, którą chcesz sprawdzić. Dane wyjściowe docelowej renderowania w górnej części dokumentu dziennika grafiki zostały zaktualizowane w celu wyświetlenia wybranej ramki.
+- Na **liście ramka** Wybierz ramkę, którą chcesz sprawdzić. Dane wyjściowe docelowej renderowania w górnej części dokumentu dziennika grafiki zostały zaktualizowane w celu wyświetlenia wybranej ramki.
 
 #### <a name="to-inspect-a-pixel"></a>Aby sprawdzić piksel
 

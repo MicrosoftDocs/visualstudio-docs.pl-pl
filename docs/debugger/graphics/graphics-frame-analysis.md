@@ -1,5 +1,7 @@
 ---
 title: analiza klatek grafiki | Microsoft Docs
+description: Użyj analiza klatek grafiki w analizator grafiki programu Visual Studio, aby przeanalizować i zoptymalizować wydajność renderowania gry lub aplikacji Direct3D.
+ms.custom: SEO-VS-2020
 ms.date: 02/09/2017
 ms.topic: conceptual
 f1_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 943436a64f50523905a03ed2a87e91508d1b7471
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f87686290842e0bbc3c575b5c72e3d1eeb24f351
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911482"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727726"
 ---
 # <a name="graphics-frame-analysis"></a>Analiza ramek grafiki
 Użyj analiza klatek grafiki w analizator grafiki programu Visual Studio, aby przeanalizować i zoptymalizować wydajność renderowania gry lub aplikacji Direct3D.

@@ -1,5 +1,7 @@
 ---
 title: Debugowanie modelu COM i ActiveX | Microsoft Docs
+description: Odkryj wskazówki dotyczące debugowania aplikacji COM i kontrolek ActiveX w programie Visual Studio. Dowiedz się więcej o debugowaniu serwera COM i kontenera. Znajdź narzędzia debugowania modelu COM.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a818cfde2996b26bd9d5f31b128e41f2a9fe2e1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1df80e8486cb8f8667494137392fadb0a9754e8b
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73188684"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729005"
 ---
 # <a name="com-and-activex-debugging"></a>COM i debugowanie ActiveX
 Ta sekcja zawiera wskazówki dotyczące debugowania aplikacji COM i kontrolek ActiveX.

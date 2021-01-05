@@ -1,6 +1,7 @@
 ---
 title: Debugowanie zainstalowanego pakietu aplikacji platformy UWP | Microsoft Docs
-ms.custom: ''
+description: Debuguj zainstalowany pakiet aplikacji platforma uniwersalna systemu Windows (platformy UWP) w programie Visual Studio na urządzeniach z systemem Windows 10, Xbox i Internet rzeczy (IoT).
+ms.custom: SEO-VS-2020
 ms.date: 11/07/2018
 ms.topic: how-to
 f1_keywords:
@@ -20,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: eabc694665bede7d193a360a01c42366568e33c5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 04ed043dbcb09c862fcdfc5f34d77fd938bd24dc
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350735"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728927"
 ---
 # <a name="debug-an-installed-uwp-app-package-in-visual-studio"></a>Debugowanie zainstalowanego pakietu aplikacji platformy UWP w programie Visual Studio
 
@@ -40,16 +41,16 @@ Aby uzyskać więcej informacji na temat debugowania aplikacji platformy UWP, za
 
 1. W programie Visual Studio wybierz kolejno opcje **Debuguj**  >  **inne elementy docelowe debugowania**  >  **Debuguj zainstalowany pakiet aplikacji**.
 
-1. W oknie dialogowym **Debuguj zainstalowany pakiet aplikacji** w obszarze **Typ połączenia**wybierz pozycję **komputer lokalny**.
+1. W oknie dialogowym **Debuguj zainstalowany pakiet aplikacji** w obszarze **Typ połączenia** wybierz pozycję **komputer lokalny**.
 
-1. W obszarze **zainstalowane pakiety aplikacji**wybierz aplikację, którą chcesz debugować, lub wpisz jej nazwę w polu wyszukiwania. Nieuruchomione zainstalowane pakiety aplikacji są wyświetlane w obszarze **nie działa** **i uruchomione aplikacje działają.**
+1. W obszarze **zainstalowane pakiety aplikacji** wybierz aplikację, którą chcesz debugować, lub wpisz jej nazwę w polu wyszukiwania. Nieuruchomione zainstalowane pakiety aplikacji są wyświetlane w obszarze **nie działa** **i uruchomione aplikacje działają.**
 
    ![DebugInstalledAppPackage](../debugger/media/debug-installed-app-pkg.png "DebugInstalledAppPackage")
 
-1. W razie potrzeby zmień typ kodu w obszarze **Debuguj ten typ kodu**i wybierz inne opcje.
+1. W razie potrzeby zmień typ kodu w obszarze **Debuguj ten typ kodu** i wybierz inne opcje.
    - Wybierz pozycję nie **uruchamiaj, ale Debuguj mój kod po** rozpoczęciu uruchamiania debugowania podczas uruchamiania aplikacji. Rozpoczęcie debugowania, gdy aplikacja jest uruchomiona, jest skutecznym sposobem debugowania ścieżek kontroli z [różnych metod uruchamiania](/windows/uwp/xbox-apps/automate-launching-uwp-apps), takich jak aktywacja protokołu z parametrami niestandardowymi.
 
-1. Wybierz pozycję **Start**lub, jeśli aplikacja jest uruchomiona, a następnie wybierz pozycję **Dołącz**.
+1. Wybierz pozycję **Start** lub, jeśli aplikacja jest uruchomiona, a następnie wybierz pozycję **Dołącz**.
 
 > [!NOTE]
 > Możesz również dołączyć do dowolnego działającego platformy UWP lub innego procesu aplikacji, wybierając pozycję **Debuguj**  >  **Dołącz do procesu** w programie Visual Studio. Oryginalny projekt programu Visual Studio nie jest potrzebny do dołączenia do uruchomionego procesu, ale załadowanie symboli aplikacji pomoże znacząco podczas debugowania procesu, w którym nie jest używany oryginalny kod. Zobacz [Określanie symboli i plików źródłowych w debugerze](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
@@ -64,13 +65,13 @@ Gdy program Visual Studio po raz pierwszy debuguje zainstalowaną aplikację pla
 
 1. Na komputerze z Visual Studio wybierz pozycję **Debuguj**  >  **inne elementy docelowe debugowania**  >  **Debuguj zainstalowany pakiet aplikacji**.
 
-1. W oknie dialogowym **Debuguj zainstalowany pakiet aplikacji** w obszarze **Typ połączenia**wybierz pozycję **maszyna zdalna** lub **urządzenie**.
+1. W oknie dialogowym **Debuguj zainstalowany pakiet aplikacji** w obszarze **Typ połączenia** wybierz pozycję **maszyna zdalna** lub **urządzenie**.
 
-   W przypadku wybrania opcji **urządzenie**komputer musi być fizycznie podłączony do urządzenia z systemem Windows 10.
+   W przypadku wybrania opcji **urządzenie** komputer musi być fizycznie podłączony do urządzenia z systemem Windows 10.
 
    W przypadku komputera zdalnego, jeśli adres komputera nie pojawia się obok pozycji **adres**, wybierz pozycję **Zmień**.
 
-   1. W oknie dialogowym **połączenie zdalne** obok pozycji **adres**wpisz nazwę lub adres IP komputera, z którym chcesz nawiązać połączenie.
+   1. W oknie dialogowym **połączenie zdalne** obok pozycji **adres** wpisz nazwę lub adres IP komputera, z którym chcesz nawiązać połączenie.
 
       ![ChooseRemoteComputer](../debugger/media/debug-remote-app-pkg.png "ChooseRemoteComputer")
 
@@ -80,12 +81,12 @@ Gdy program Visual Studio po raz pierwszy debuguje zainstalowaną aplikację pla
       W przypadku większości aplikacji należy zachować wartość domyślną, **uniwersalną (niezaszyfrowany protokół)**.
    1. Wybierz pozycję **Wybierz**.
 
-1. W obszarze **zainstalowane pakiety aplikacji**wybierz aplikację, którą chcesz debugować, lub wpisz jej nazwę w polu wyszukiwania. Nieuruchomione zainstalowane pakiety aplikacji są wyświetlane w obszarze **nie działa** **i uruchomione aplikacje działają.**
+1. W obszarze **zainstalowane pakiety aplikacji** wybierz aplikację, którą chcesz debugować, lub wpisz jej nazwę w polu wyszukiwania. Nieuruchomione zainstalowane pakiety aplikacji są wyświetlane w obszarze **nie działa** **i uruchomione aplikacje działają.**
 
-1. W razie potrzeby zmień typ kodu w obszarze **Debuguj ten typ kodu**i wybierz inne opcje.
+1. W razie potrzeby zmień typ kodu w obszarze **Debuguj ten typ kodu** i wybierz inne opcje.
    - Wybierz pozycję nie **uruchamiaj, ale Debuguj mój kod po** rozpoczęciu uruchamiania debugowania podczas uruchamiania aplikacji. Rozpoczęcie debugowania, gdy aplikacja jest uruchomiona, jest skutecznym sposobem debugowania ścieżek kontroli z [różnych metod uruchamiania](/windows/uwp/xbox-apps/automate-launching-uwp-apps), takich jak aktywacja protokołu z parametrami niestandardowymi.
 
-1. Wybierz pozycję **Start**lub, jeśli aplikacja jest uruchomiona, a następnie wybierz pozycję **Dołącz**.
+1. Wybierz pozycję **Start** lub, jeśli aplikacja jest uruchomiona, a następnie wybierz pozycję **Dołącz**.
 
 Po rozpoczęciu debugowania zainstalowanego pakietu aplikacji na podłączonym urządzeniu Xbox, HoloLens lub IoT po raz pierwszy program Visual Studio zainstaluje poprawną wersję debugera zdalnego dla urządzenia docelowego. Zainstalowanie zdalnego debugera może zająć trochę czasu, a komunikat, który **uruchamia zdalny debuger** , pojawia się w czasie, gdy występuje.
 
@@ -100,5 +101,5 @@ Aby uzyskać więcej informacji na temat zdalnego wdrażania aplikacji platformy
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)
 - [Debugowanie zdalne](../debugger/remote-debugging.md)
 - [Konfigurowanie zapory systemu Windows na potrzeby debugowania zdalnego](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
-- [Przypisania portów zdalnego debugera](../debugger/remote-debugger-port-assignments.md)
-- [Błędy debugowania zdalnego i rozwiązywanie problemów](../debugger/remote-debugging-errors-and-troubleshooting.md)
+- [Przypisania portów debugera zdalnego](../debugger/remote-debugger-port-assignments.md)
+- [Błędy związane z debugowaniem zdalnym i rozwiązywanie problemów](../debugger/remote-debugging-errors-and-troubleshooting.md)

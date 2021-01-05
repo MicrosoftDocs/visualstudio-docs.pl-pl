@@ -1,5 +1,7 @@
 ---
 title: ArrayType | Microsoft Docs
+description: Znajdź informacje referencyjne o typie symboli arrayType (SymTagArray) w zestawie SDK dostępu do interfejsu debugowania programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cc60a27e220620fa4e3e222e1ef9bf0aa00be63
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ca89747bc2c3826df4ac2893d4d2edf92449379e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462373"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728896"
 ---
 # <a name="arraytype"></a>ArrayType
 Tablica jest identyfikowana przez `SymTagArray` symbol.

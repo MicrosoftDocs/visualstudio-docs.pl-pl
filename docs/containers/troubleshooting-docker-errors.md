@@ -11,12 +11,12 @@ ms.topic: troubleshooting
 ms.workload: multiple
 ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: 31b9d8649abed0f9901aa872ff3939c25e3025b8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9535a7d88cb375d97867092eddf969095c327329
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87235111"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729257"
 ---
 # <a name="troubleshoot-visual-studio-development-with-docker"></a>Rozwiązywanie problemów związanych z opracowywaniem zwartości w programie Visual Studio przy użyciu platformy Docker
 
@@ -24,22 +24,15 @@ Podczas pracy z narzędziami kontenera programu Visual Studio mogą wystąpić p
 
 ## <a name="volume-sharing-is-not-enabled-enable-volume-sharing-in-the-docker-ce-for-windows-settings--linux-containers-only"></a>Udostępnianie woluminów nie jest włączone. Włącz udostępnianie woluminów w ustawieniach Docker CE for Windows (tylko kontenery systemu Linux)
 
-Aby rozwiązać ten problem:
+Udostępnianie plików musi być zarządzane tylko w przypadku korzystania z funkcji Hyper-V z platformą Docker. Jeśli używasz WSL 2, następujące kroki nie są konieczne, a opcja udostępniania plików nie będzie widoczna. Aby rozwiązać ten problem:
 
 1. Kliknij prawym przyciskiem myszy **Docker for Windows** w obszarze powiadomień, a następnie wybierz pozycję **Ustawienia**.
-1. Wybierz pozycję **dyski udostępnione** i Udostępnij dysk systemowy wraz z dyskiem, na którym znajduje się projekt.
+1. Wybierz pozycję **zasoby**  >  **udostępnianie plików** i Udostępnij folder, do którego należy uzyskać dostęp. Udostępnianie całego dysku systemowego jest możliwe, ale nie jest to zalecane.
 
-> [!NOTE]
-> Jeśli pliki są udostępnione, nadal może być konieczne kliknięcie przycisku "Resetuj poświadczenia..." link w dolnej części okna dialogowego, aby ponownie włączyć udostępnianie woluminu. Aby kontynuować po zresetowaniu poświadczeń, może być konieczne ponowne uruchomienie programu Visual Studio.
-
-![udostępnione dyski](media/troubleshooting-docker-errors/shareddrives.png)
+    ![udostępnione dyski](media/troubleshooting-docker-errors/docker-settings-image.png)
 
 > [!TIP]
-> Program Visual Studio w wersji nowszej niż Visual Studio 2017 w wersji 15,6 wyświetla monit, gdy **dyski udostępnione** nie są skonfigurowane.
-
-### <a name="container-type"></a>Typ kontenera
-
-Podczas dodawania obsługi platformy Docker do projektu należy wybrać kontener systemu Windows lub Linux. Na hoście platformy Docker musi być uruchomiony ten sam typ kontenera. Aby zmienić typ kontenera w uruchomionym wystąpieniu platformy Docker, kliknij prawym przyciskiem myszy ikonę platformy Docker na pasku zadań i wybierz polecenie **Switch to Windows containers...** (Przełącz do kontenerów systemu Windows...) lub polecenie **Switch to Linux containers...** (Przełącz do kontenerów systemu Linux...).
+> Program Visual Studio w wersji nowszej niż Visual Studio 2017 w wersji 15,6 wyświetli monit, gdy **dyski udostępnione** nie są skonfigurowane.
 
 ## <a name="unable-to-start-debugging"></a>Nie można uruchomić debugowania
 
@@ -54,7 +47,7 @@ Spróbuj wykonać pobieranie skryptu z [sieci hostowania kontenerów oczyszczani
 
 ## <a name="mounts-denied"></a>Odmowa instalacji
 
-W przypadku korzystania z platformy Docker for macOS może wystąpić błąd odwołujący się do folderu/usr/local/share/dotnet/sdk/NuGetFallbackFolder. Dodaj folder do karty Udostępnianie plików w programie Docker
+W przypadku korzystania z platformy Docker for macOS może wystąpić błąd odwołujący się do folderu/usr/local/share/dotnet/sdk/NuGetFallbackFolder. Dodaj folder do karty Udostępnianie plików w platformie Docker.
 
 ## <a name="docker-users-group"></a>Grupa użytkowników platformy Docker
 
@@ -83,15 +76,29 @@ W programie PowerShell Użyj funkcji [Add-LocalGroupMember](/powershell/module/m
 
 ## <a name="low-disk-space"></a>Mało miejsca na dysku
 
-Domyślnie program Docker przechowuje obrazy w folderze *% ProgramData%/Docker/* , który zazwyczaj znajduje się na dysku systemowym * C:\ProgramData\Docker \* . Aby zapobiec wykorzystaniu przez obrazy cennego miejsca na dysku systemowym, można zmienić lokalizację folderu obrazu.  Z poziomu ikony platformy Docker na pasku zadań Otwórz ustawienia platformy Docker, wybierz **demon**i przejdź z warstwy **podstawowa** na **Zaawansowane**. W okienku Edycja Dodaj `graph` ustawienie właściwości z wartością żądanej lokalizacji obrazów platformy Docker:
+Domyślnie program Docker przechowuje obrazy w folderze *% ProgramData%/Docker/* , który zazwyczaj znajduje się na dysku systemowym * C:\ProgramData\Docker \* . Aby zapobiec wykorzystaniu przez obrazy cennego miejsca na dysku systemowym, można zmienić lokalizację folderu obrazu. W tym celu:
+
+ 1. Kliknij prawym przyciskiem myszy ikonę Docker na pasku zadań, a następnie wybierz pozycję **Ustawienia**.
+ 1. Wybierz **aparat platformy Docker**. 
+ 1. W okienku Edycja Dodaj `graph` ustawienie właściwości z wartością żądanej lokalizacji obrazów platformy Docker:
 
 ```json
     "graph": "D:\\mypath\\images"
 ```
 
-![Zrzut ekranu przedstawiający ustawienie lokalizacji obrazu platformy Docker](media/troubleshooting-docker-errors/docker-settings-image-location.png)
+![Zrzut ekranu przedstawiający udostępnianie plików platformy Docker](media/troubleshooting-docker-errors/docker-daemon-settings.png)
 
-Kliknij przycisk **Zastosuj** , aby ponownie uruchomić platformę Docker. Te kroki modyfikują plik konfiguracyjny w lokalizacji *% ProgramData% \docker\config\daemon.jsna*. Poprzednio skompilowane obrazy nie są przenoszone.
+Kliknij przycisk **zastosuj & Uruchom ponownie**. Te kroki modyfikują plik konfiguracyjny w lokalizacji *% ProgramData% \docker\config\daemon.jsna*. Poprzednio skompilowane obrazy nie są przenoszone.
+
+## <a name="container-type-mismatch"></a>Niezgodność typu kontenera
+
+Podczas dodawania obsługi platformy Docker do projektu należy wybrać kontener systemu Windows lub Linux. Jeśli host serwera platformy Docker nie jest skonfigurowany do uruchamiania tego samego typu kontenera co obiekt docelowy projektu, prawdopodobnie zostanie wyświetlony komunikat o błędzie podobny do przedstawionego poniżej:
+
+![Zrzut ekranu hosta i niezgodności projektu platformy Docker](media/troubleshooting-docker-errors/docker-host-config-change-linux-to-windows.png)
+
+Aby rozwiązać ten problem:
+
+- Kliknij prawym przyciskiem myszy ikonę Docker for Windows na pasku zadań i wybierz polecenie **Przełącz do kontenerów systemu Windows...** lub **Przejdź do kontenerów z systemem Linux.**...
 
 ## <a name="microsoftdockertools-github-repo"></a>Repozytorium GitHub firmy Microsoft/DockerTools
 

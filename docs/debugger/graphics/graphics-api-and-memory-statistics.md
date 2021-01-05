@@ -1,5 +1,7 @@
 ---
 title: Interfejs API grafiki i statystyka pamięci | Microsoft Docs
+description: Zapoznaj się z narzędziami statystyki interfejsu API grafiki i statystyk pamięci, które zawierają informacje na temat użycia interfejsu API Direct3D i wykorzystania pamięci procesora GPU dla różnych zasobów.
+ms.custom: SEO-VS-2020
 ms.date: 03/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa808e76e6655c5d57108c923b19794d0398b80c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0e0ad2bc48e1e15e1b061cdb600ce65773523e70
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72735574"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727893"
 ---
 # <a name="graphics-api-and-memory-statistics"></a>Interfejs API grafiki i statystyka pamięci
 <!-- VERSIONLESS -->

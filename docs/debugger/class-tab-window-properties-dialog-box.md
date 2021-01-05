@@ -1,5 +1,7 @@
 ---
 title: Karta Klasa, okno dialogowe Właściwości okna | Microsoft Docs
+description: Wybierz kartę Klasa w programie Visual Studio, Przenieś fokus do okna widok systemu Windows, wybierz węzeł okna i wybierz polecenie Wyświetl > właściwości, aby wyświetlić okno dialogowe Właściwości okna.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0917c9a038b42e6302ec1f1782f095ca397a92ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3bf37d9e5d672f0ecce262699fdd5d704cde9efe
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62565016"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729031"
 ---
 # <a name="class-tab-window-properties-dialog-box"></a>Karta Klasa, okno dialogowe właściwości okna
 Użyj karty **klasy** , aby wyświetlić informacje o klasie wybranego okna. Aby wyświetlić okno [dialogowe Właściwości okna](../debugger/window-properties-dialog-box.md), Przenieś fokus do okna [Widok systemu Windows](../debugger/windows-view.md) . Wybierz dowolny węzeł okna w drzewie, a następnie wybierz polecenie **Właściwości** z menu **Widok** .

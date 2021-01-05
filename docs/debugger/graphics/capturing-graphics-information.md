@@ -1,5 +1,7 @@
 ---
 title: Przechwytywanie informacji graficznych | Microsoft Docs
+description: Przechwyć informacje graficzne z aplikacji Direct3D, aby móc używać analizator grafiki programu Visual Studio do diagnozowania problemów z renderowaniem i problemów z wydajnością.
+ms.custom: SEO-VS-2020
 ms.date: 02/09/2017
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b38dd994eca30bfee071f00431f3b111c2ea444a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a11a5dc3a02959ff7bec4cfaac9aac2ca231b2ba
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72736187"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727927"
 ---
 # <a name="capturing-graphics-information"></a>Przechwytywanie informacji graficznych
 Przechwyć informacje graficzne z aplikacji Direct3D, aby móc używać analizator grafiki programu Visual Studio do diagnozowania problemów z renderowaniem i problemów z wydajnością.
@@ -27,7 +29,7 @@ Przechwyć informacje graficzne z aplikacji Direct3D, aby móc używać analizat
 
 ### <a name="to-run-your-app-under-graphics-diagnostics"></a>Aby uruchomić aplikację w obszarze Diagnostyka grafiki
 
-- Na pasku menu wybierz kolejno opcje **Debuguj**, **grafika**i **Uruchom debugowanie grafiki**. (Klawiatura: naciśnij klawisze Alt+F5)
+- Na pasku menu wybierz kolejno opcje **Debuguj**, **grafika** i **Uruchom debugowanie grafiki**. (Klawiatura: naciśnij klawisze Alt+F5)
 
 - Na pasku narzędzi **grafiki** wybierz przycisk **Rozpocznij debugowanie grafiki** .
 

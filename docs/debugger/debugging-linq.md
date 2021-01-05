@@ -1,5 +1,7 @@
 ---
 title: Debugowanie LINQ | Microsoft Docs
+description: Debuguj języka Integrated Query (LINQ) w programie Visual Studio. Wyświetl wyniki LINQ. Zrozumienie różnic zachowań podczas wykonywania kroków w kodzie LINQ.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 146519b33be19da1103aed958e42ec5ffaee8bd0
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 903ffb5d3187da3bda961caca42cf7436a816b6d
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509773"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728372"
 ---
 # <a name="debugging-linq"></a>Debugowanie LINQ
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] obsługuje debugowanie kodu programu Query Integrated Language (LINQ) z pewnymi ograniczeniami. Większość funkcji debugowania współpracuje z instrukcjami LINQ, w tym krokowe, ustawianie punktów przerwania i wyświetlanie wyników w oknach debugera. W tym temacie opisano główne ograniczenia debugowania LINQ.
@@ -43,7 +45,7 @@ ms.locfileid: "89509773"
 ## <a name="stepping-and-linq"></a><a name="BKMK_SteppingAndLinq"></a> Krokowe i LINQ
  Podczas debugowania kodu LINQ, krok po kroku ma pewne różnice behawioralne, o których należy wiedzieć.
 
-### <a name="linq-to-sql"></a>LINQ do SQL
+### <a name="linq-to-sql"></a>LINQ to SQL
  W LINQ to SQL zapytaniach kod predykatu jest poza kontrolą debugera. W związku z tym nie można wkroczyć do kodu predykatu. Wszystkie zapytania, które kompilują do drzewa wyrażenia, tworzą kod, który jest poza kontrolą debugera.
 
 ### <a name="stepping-in-visual-basic"></a>Krokowe Visual Basic
@@ -107,7 +109,7 @@ End Function
 ## <a name="edit-and-continue-not-supported-for-linq"></a><a name="BKMK_EditandContinueNotSupportedforLINQ"></a> Edytowanie i kontynuowanie nie jest obsługiwane w przypadku LINQ
  Edytuj i Kontynuuj obsługuje zmiany zapytań LINQ z ograniczeniami. Aby uzyskać szczegółowe informacje, zobacz temat [obsługiwane zmiany](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md) w programie Enc
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Debugowanie SQL](/previous-versions/visualstudio/visual-studio-2010/zefbf0t6\(v\=vs.100\))
 - [Zarządzanie wyjątkami za pomocą debugera](../debugger/managing-exceptions-with-the-debugger.md)

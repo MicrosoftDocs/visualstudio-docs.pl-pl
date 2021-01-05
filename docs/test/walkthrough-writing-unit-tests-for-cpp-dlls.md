@@ -9,12 +9,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 178fef548bc52346a78c7f9e4607aad7b1c56f65
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 2d145e1383e8f6c0d7c25ae72232fdbe2a8d703d
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598409"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727544"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Instrukcje: zapisywanie testów jednostkowych dla bibliotek DLL języka C++
 
@@ -328,7 +328,7 @@ Poniższe kroki pokazują, jak utworzyć projekt DLL w programie Visual Studio 2
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> Jeśli pojedyncze testy nie mają żadnych zależności, które uniemożliwiają ich uruchomienie w dowolnej kolejności, Włącz równoległe wykonywanie testów przy użyciu ![ przycisku wykonaj&#95;parallelicon&#45;mały ](../test/media/ute_parallelicon-small.png) przełącznik na pasku narzędzi. Może to znacznie skrócić czas potrzebny do uruchomienia wszystkich testów.
+> Jeśli pojedyncze testy nie mają żadnych zależności, które uniemożliwiają ich uruchomienie w dowolnej kolejności, należy włączyć równoległe wykonywanie testów za pomocą ![ zrzutu ekranu przycisku przełącznika równoległego wykonywania testów na pasku narzędzi Eksploratora testów. Po wybraniu tego przycisku testy będą wykonywane równolegle.](../test/media/ute_parallelicon-small.png) przycisk przełączania na pasku narzędzi. Może to znacznie skrócić czas potrzebny do uruchomienia wszystkich testów.
 
 ::: moniker-end
 
@@ -368,7 +368,7 @@ Poniższe kroki pokazują, jak utworzyć projekt DLL w programie Visual Studio 2
 
    Istnieje również możliwość przydzielenia minimalnego poziomu pokrycia kodu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Dodawanie testów jednostkowych do istniejących aplikacji C++](../test/how-to-use-microsoft-test-framework-for-cpp.md)
 - [Korzystanie z Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md)

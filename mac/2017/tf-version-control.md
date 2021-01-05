@@ -7,12 +7,12 @@ ms.date: 06/25/2019
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.topic: troubleshooting
-ms.openlocfilehash: d2ba7f5d044b82c44d719b251a7d803212cf7b07
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: b9aa9b718ad4618502a58185c27333d689c74300
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860564"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729382"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Nawiązywanie połączenia z Kontrola wersji serwera Team Foundation
 
@@ -21,7 +21,7 @@ ms.locfileid: "91860564"
 >
 > Jeśli wcześniej była używana wersja zapoznawcza rozszerzenia TFVC dla Visual Studio dla komputerów Mac, nie jest już obsługiwana w przypadku uaktualniania do programu Visual Studio 2019 for Mac.
 
-Azure Repos oferuje dwa modele kontroli wersji: [git](/azure/devops/repos/git/?view=azure-devops), rozproszony system kontroli wersji i [Kontrola wersji serwera Team Foundation](/azure/devops/repos/tfvc/index?view=azure-devops) (TFVC), scentralizowany system kontroli wersji.
+Azure Repos oferuje dwa modele kontroli wersji: [git](/azure/devops/repos/git/?view=azure-devops&preserve-view=true), rozproszony system kontroli wersji i [Kontrola wersji serwera Team Foundation](/azure/devops/repos/tfvc/index?view=azure-devops&preserve-view=true) (TFVC), scentralizowany system kontroli wersji.
 
 Visual Studio dla komputerów Mac zapewnia pełną obsługę repozytoriów Git, ale wymaga zastosowania niektórych rozwiązań do pracy z usługą TFVC. Jeśli obecnie używasz usługi TFVC na potrzeby kontroli wersji, Oto kilka rozwiązań, których można użyć w celu uzyskania dostępu do kodu źródłowego hostowanego w TFVC:
 
@@ -54,7 +54,7 @@ Istnieją dwa sposoby uzyskania Instalatora za pomocą TEE-CLC.
 * Użyj oprogramowania homebrew, aby zainstalować klienta programu lub
 * Pobierz i ręcznie zainstaluj klienta
 
-Najprostszym rozwiązaniem jest **Korzystanie**z programu oprogramowania homebrew, który jest menedżerem pakietów dla macOS. Aby zainstalować za pomocą tej metody:
+Najprostszym rozwiązaniem jest **Korzystanie** z programu oprogramowania homebrew, który jest menedżerem pakietów dla macOS. Aby zainstalować za pomocą tej metody:
 
 1. Uruchom aplikację terminala macOS.
 1. Zainstaluj program oprogramowania Homebrew przy użyciu terminalu i instrukcje na [stronie głównej oprogramowania Homebrew](https://brew.sh/).
@@ -69,7 +69,7 @@ Aby **ręcznie skonfigurować tee-CLC**:
 
 Po zainstalowaniu TEE-CLC można uruchomić polecenie, `tf eula` Aby wyświetlić i zaakceptować umowę licencyjną dla klienta.
 
-Na koniec, aby uwierzytelnić się w środowisku DevOps TFS/Azure, musisz utworzyć osobisty token dostępu na serwerze. Dowiedz się więcej o [uwierzytelnianiu z osobistymi tokenami dostępu](/azure/devops/integrate/get-started/authentication/pats?view=azure-devops). Podczas tworzenia osobistego tokenu dostępu do używania z usługą TFVC należy zapewnić pełen dostęp podczas konfigurowania tokenu.
+Na koniec, aby uwierzytelnić się w środowisku DevOps TFS/Azure, musisz utworzyć osobisty token dostępu na serwerze. Dowiedz się więcej o [uwierzytelnianiu z osobistymi tokenami dostępu](/azure/devops/integrate/get-started/authentication/pats?view=azure-devops&preserve-view=true). Podczas tworzenia osobistego tokenu dostępu do używania z usługą TFVC należy zapewnić pełen dostęp podczas konfigurowania tokenu.
 
 ### <a name="using-the-tee-clc-to-connect-to-your-repo"></a>Nawiązywanie połączenia z repozytorium przy użyciu TEE-CLC
 
@@ -238,7 +238,7 @@ Po skonfigurowaniu obszaru roboczego można go zmienić lub usunąć, klikając 
 Do uwierzytelniania za pomocą serwera można użyć następujących opcji:
 
 - Oauth
-- Podstawowy
+- Podstawowe
 - NTLM
 
 Aby korzystać z uwierzytelniania podstawowego, należy włączyć **alternatywne poświadczenia uwierzytelniania** w Azure DevOps Services, wykonując poniższe kroki:
@@ -247,11 +247,11 @@ Aby korzystać z uwierzytelniania podstawowego, należy włączyć **alternatywn
 
 2. Na pasku narzędzi organizacji wybierz ikonę koła zębatego i wybierz pozycję **zasady**:
 
-    ![Wybrana opcja ustawień zasad](media/tfvc-auth2.png)
+    ![Zrzut ekranu przedstawiający pasek narzędzi organizacji usługi Azure DevOps z wybraną ikoną koła zębatego i zasadami wybranymi w menu rozwijanym.](media/tfvc-auth2.png)
 
 3. Sprawdź ustawienia połączenia aplikacji. Zmień te ustawienia na podstawie zasad zabezpieczeń:
 
-    ![Wybrana opcja ustawień zasad](media/tfvc-auth.png)
+    ![Zrzut ekranu przedstawiający ekran zasad w Azure DevOps Services, pokazujący ustawienia zasad połączenia aplikacji.](media/tfvc-auth.png)
 
 #### <a name="i-do-not-see-anything-in-tfvc"></a>Nie widzę niczego w TFVC
 

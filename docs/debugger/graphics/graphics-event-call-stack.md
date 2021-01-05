@@ -1,5 +1,7 @@
 ---
 title: Stos wywołań zdarzeń grafiki | Microsoft Docs
+description: Przejrzyj stos wywołań zdarzeń grafiki w analizator grafiki programu Visual Studio, aby zmapować relacje między problematycznymi zdarzeniami graficznymi a kodem źródłowym aplikacji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c221a572264bf6a6aaed9edbec66fb3c0c3ff4b9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85712f2b8971b2b5284dab89d90eecec9010e9b4
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72735513"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727753"
 ---
 # <a name="graphics-event-call-stack"></a>Stos wywołań zdarzeń grafiki
 Stos wywołań zdarzeń grafiki w analizator grafiki programu Visual Studio ułatwia Mapowanie relacji między problematycznymi zdarzeniami graficznymi a kodem źródłowym aplikacji.

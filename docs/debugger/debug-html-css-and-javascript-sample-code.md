@@ -1,5 +1,7 @@
 ---
 title: Debuguj kod przykładowy HTML i CSS | Microsoft Docs
+description: Znajdź przykładowy kod HTML i CSS, który jest używany w artykule dotyczącym debugowania przewodnika Szybki Start. Błędy, które są obecne w projekcie w przewodniku Szybki Start, zostały rozwiązane w tym artykule.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 460419d976211747c44f156a5821b88b75aa2e6b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 245676d084485ee46647112f5409cdb1854d6913
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72745546"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728914"
 ---
 # <a name="debug-html-and-css-sample-code"></a>Debugowanie przykładowego kodu HTML i CSS
 

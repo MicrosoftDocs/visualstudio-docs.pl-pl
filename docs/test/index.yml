@@ -10,12 +10,12 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 03/23/2020
-  ms.openlocfilehash: b2b60b7208fe06aa7e2c2e327174e7536941f204
-  ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
-  ms.translationtype: HT
+  ms.openlocfilehash: 8967405f3b743b2449a90817a700fec092319245
+  ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
+  ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 10/08/2020
-  ms.locfileid: "91830690"
+  ms.lasthandoff: 12/23/2020
+  ms.locfileid: "97756581"
 landingContent:
 - title: Informacje o narzędziach do testowania
   linkLists:
@@ -23,36 +23,44 @@ landingContent:
     links:
     - text: Pierwsze spojrzenie na narzędzia do testowania
       url: improve-code-quality.md
-    - text: Omówienie narzędzi do testów jednostkowych
+    - text: Narzędzia testów jednostkowych & zadania
       url: unit-test-your-code.md
-    - text: Omówienie testów jednostkowych na żywo
+    - text: Przegląd Live Unit Testing (.NET)
       url: live-unit-testing-intro.md
-- title: Testowanie jednostek
+- title: Rozpoczęcie pracy
   linkLists:
   - linkListType: tutorial
     links:
     - text: Rozpoczynanie pracy z testami jednostkowymi
       url: getting-started-with-unit-testing.md
-    - text: Tworzenie i uruchamianie testów jednostkowych dla kodu zarządzanego
-      url: walkthrough-creating-and-running-unit-tests-for-managed-code.md
     - text: Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów
       url: run-unit-tests-with-test-explorer.md
+  - linkListType: how-to-guide
+    links:
+    - text: Podstawowe informacje o teście jednostkowym
+      url: unit-test-basics.md
+    - text: Pokrycie kodu — określanie, jaka część kodu jest poddawana testom
+      url: using-code-coverage-to-determine-how-much-code-is-being-tested.md
+- title: Testowanie jednostkowe .NET
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Tworzenie i uruchamianie testów jednostkowych dla kodu zarządzanego
+      url: walkthrough-creating-and-running-unit-tests-for-managed-code.md
     - text: Rozpoczynanie pracy z funkcją Live Unit Testing
       url: live-unit-testing-start.md
     - text: Generowanie testów jednostkowych (IntelliTest)
       url: generate-unit-tests-for-your-code-with-intellitest.md
-- title: Więcej narzędzi do testowania
-  linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Pokrycie kodu — określanie, jaka część kodu jest poddawana testom
-      url: using-code-coverage-to-determine-how-much-code-is-being-tested.md
     - text: Microsoft Fakes — izolowanie testowanego kodu
       url: isolating-code-under-test-with-microsoft-fakes.md
-    - text: Kodowany interfejs użytkownika (przestarzałe)
-      url: use-ui-automation-to-test-your-code.md
-    - text: Testowanie obciążenia (przestarzałe)
-      url: quickstart-create-a-load-test-project.md
+- title: Testowanie jednostkowe języka C++
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Zapisz testy jednostkowe dla C/C++
+      url: writing-unit-tests-for-c-cpp.md
 - title: Powiązane narzędzia (Azure DevOps)
   linkLists:
   - linkListType: how-to-guide
@@ -63,3 +71,11 @@ landingContent:
       url: /azure/devops/test/load-test/getting-started-with-performance-testing?view=azure-devops&preserve-view=true
     - text: Testowanie ciągłe (Azure Pipelines)
       url: /azure/devops/pipelines/?view=azure-devops&preserve-view=true
+- title: Więcej narzędzi do testowania
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Kodowany interfejs użytkownika (przestarzałe)
+      url: use-ui-automation-to-test-your-code.md
+    - text: Testowanie obciążenia (przestarzałe)
+      url: quickstart-create-a-load-test-project.md

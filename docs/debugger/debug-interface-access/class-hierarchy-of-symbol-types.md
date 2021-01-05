@@ -1,5 +1,7 @@
 ---
 title: Hierarchia klas typów symboli | Microsoft Docs
+description: Przejrzyj listę typów symboli w hierarchii klas zestawu SDK dostępu do interfejsu debugowania programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed6817c5c01b66143739b2f81899f2b58886d8e8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 36f97702f41f72efab970617da2a40a70f339e2a
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462274"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728796"
 ---
 # <a name="class-hierarchy-of-symbol-types"></a>Hierarchia klas typów symboli
 W poniższej tabeli opisano typy symboli w hierarchii klas.

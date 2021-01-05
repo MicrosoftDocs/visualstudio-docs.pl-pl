@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.date: 01/20/2020
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: 626666fc912fcff85fcfcc49425d59018778d1f6
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: fd876e86cefcd0ce50aab02de8e7f4cf37d3ab51
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742788"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729226"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>Jak wyświetlać i diagnozować kontenery oraz obrazy w programie Visual Studio
 
@@ -25,11 +25,11 @@ Możesz zobaczyć, co się dzieje w kontenerach, które obsługują aplikację p
 
 ## <a name="view-information-about-your-containers"></a>Wyświetlanie informacji o kontenerach
 
-Okno **kontenery** jest otwierane automatycznie po uruchomieniu kontenera projektu .NET. Aby w dowolnym momencie wyświetlić kontenery w programie Visual Studio, użyj **klawisza Ctrl** + **Q** , aby aktywować pole wyszukiwania programu Visual Studio, a `Containers` następnie wpisz i wybierz pierwszy element. Możesz również otworzyć okno **kontenery** z menu głównego. Użyj ścieżki menu **Przeglądaj**  >  **inne**  >  **kontenery**systemu Windows.  
+Okno **kontenery** jest otwierane automatycznie po uruchomieniu kontenera projektu .NET. Aby w dowolnym momencie wyświetlić kontenery w programie Visual Studio, użyj **klawisza Ctrl** + **Q** , aby aktywować pole wyszukiwania programu Visual Studio, a `Containers` następnie wpisz i wybierz pierwszy element. Możesz również otworzyć okno **kontenery** z menu głównego. Użyj ścieżki menu **Przeglądaj**  >  **inne**  >  **kontenery** systemu Windows.  
 
-![Zrzut ekranu karty środowisko w oknie kontenery](media/view-and-diagnose-containers/container-window.png)
+![Zrzut ekranu okna kontenery w programie Visual Studio z kontenerem wybranym w okienku po lewej stronie i karty środowisko wybrane w okienku po prawej stronie.](media/view-and-diagnose-containers/container-window.png)
 
-Po lewej stronie zostanie wyświetlona lista kontenerów na komputerze lokalnym. Kontenery skojarzone z rozwiązaniem są wyświetlane w obszarze **kontenery rozwiązań**. Po prawej stronie zobaczysz okienko z kartami dla **środowiska**, **portów**, **dzienników**i **plików**.
+Po lewej stronie zostanie wyświetlona lista kontenerów na komputerze lokalnym. Kontenery skojarzone z rozwiązaniem są wyświetlane w obszarze **kontenery rozwiązań**. Po prawej stronie zobaczysz okienko z kartami dla **środowiska**, **portów**, **dzienników** i **plików**.
 
 > [!TIP]
 > Możesz łatwo dostosować lokalizację okna narzędzia **kontenerów** w programie Visual Studio. Zobacz [Dostosowywanie układów okien w programie Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md). Domyślnie okno **kontenerów** jest zadokowane przy użyciu okna **czujki** , gdy debuger jest uruchomiony.
@@ -38,7 +38,7 @@ Po lewej stronie zostanie wyświetlona lista kontenerów na komputerze lokalnym.
 
 Na karcie **środowisko** są wyświetlane zmienne środowiskowe w kontenerze. W przypadku kontenera aplikacji można ustawić te zmienne na wiele sposobów, na przykład w pliku dockerfile, w pliku. ENV lub przy użyciu opcji-e podczas uruchamiania kontenera przy użyciu polecenia Docker.
 
-![Zrzut ekranu karty środowisko w oknie kontenery](media/view-and-diagnose-containers/containers-environment-vars.png)
+![Zrzut ekranu okna kontenery w programie Visual Studio przedstawiający zmienne środowiskowe kontenera WebApplication11.](media/view-and-diagnose-containers/containers-environment-vars.png)
 
 > [!NOTE]
 > Wszelkie zmiany zmiennych środowiskowych nie są odzwierciedlone w czasie rzeczywistym. Ponadto zmienne środowiskowe na tej karcie są systemowymi zmiennymi środowiskowymi w kontenerze i nie odzwierciedlają zmiennych środowiskowych użytkownika lokalnych dla aplikacji.
@@ -102,13 +102,13 @@ Można dołączyć do zarządzanych procesów w kontenerze. Aby wyszukać proces
 
 Możesz również wyświetlać obrazy na komputerze lokalnym za pomocą karty **obrazy** w oknie **kontenery** . Obrazy pobierane z zewnętrznych repozytoriów są pogrupowane w widoku TreeView. Wybierz obraz, aby sprawdzić szczegóły dotyczące obrazu.
 
-Aby usunąć obraz, kliknij prawym przyciskiem myszy obraz w widoku drzewa, a następnie wybierz polecenie **Usuń**lub wybierz obraz, a następnie użyj przycisku **Usuń** na pasku narzędzi.
+Aby usunąć obraz, kliknij prawym przyciskiem myszy obraz w widoku drzewa, a następnie wybierz polecenie **Usuń** lub wybierz obraz, a następnie użyj przycisku **Usuń** na pasku narzędzi.
 
 ## <a name="next-steps"></a>Następne kroki
 
 Dowiedz się więcej o narzędziach kontenera dostępnych w programie Visual Studio, odczytując informacje o narzędziach [kontenerów](overview.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 [Programowanie kontenerów w programie Visual Studio](./index.yml)
 

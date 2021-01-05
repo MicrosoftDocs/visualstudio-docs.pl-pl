@@ -1,5 +1,7 @@
 ---
 title: CompilandEnv | Microsoft Docs
+description: Znajdź informacje referencyjne o typie symboli CompilandEnv (SymTagCompilandEnv) w zestawie SDK dostępu do interfejsu debugowania programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94a27ada5f56d4525824335faebf1e19426241ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e71dd47c75b7cfcef9580119563a7c8f2227268a
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462247"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728763"
 ---
 # <a name="compilandenv"></a>CompilandEnv
 Kompilator może zawierać dodatkowe zmienne środowiskowe z symbolami. Istnieje jeden `SymTagCompilandEnv` symbol dla każdej z tych zmiennych.

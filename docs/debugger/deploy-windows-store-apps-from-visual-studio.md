@@ -1,6 +1,7 @@
 ---
 title: Wdrażanie aplikacji platformy UWP | Microsoft Docs
-ms.custom: seodec18
+description: Wdróż aplikacje platforma uniwersalna systemu Windows (platformy UWP) z programu Visual Studio. Określ lokalne lub zdalne urządzenie docelowe dla wdrożenia. Poznaj opcje wdrażania.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 01/16/2018
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 4c58dbb32ef0a476ac7e22a840e27e389c710f97
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 70b4d862b69eeb34028fb0f782cc5c8d6acbdbce
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73188280"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728203"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Wdrażanie aplikacji platformy UWP przy użyciu programu Visual Studio
 
@@ -66,9 +67,9 @@ Wdrożenie używa kanału sieciowego debugera zdalnego do wysyłania plików apl
 
 3. Następnie wybierz węzeł **debugowanie** w oknie strony właściwości.
 
-4. W przypadku **urządzenia docelowego**wybierz pozycję **maszyna zdalna**.
+4. W przypadku **urządzenia docelowego** wybierz pozycję **maszyna zdalna**.
 
-5. W obszarze **maszyna zdalna**kliknij przycisk **Znajdź**.
+5. W obszarze **maszyna zdalna** kliknij przycisk **Znajdź**.
 
 6. Można wpisać nazwę lub adres IP urządzenia zdalnego lub wybrać urządzenie z okna dialogowego **połączenie zdalne** .
 

@@ -1,5 +1,7 @@
 ---
 title: Funkcje punktu zaczepienia bloku klienta | Microsoft Docs
+description: Napisz funkcję punktu zaczepienia bloku klienta, aby sprawdzić poprawność lub zgłosić zawartość danych przechowywanych w blokach _CLIENT_BLOCK.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 881809dda7e8254f9d337b68f0c317eccfd9093d
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 720087e3c109c6dec4db06d993d0357dc1eddcd4
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600196"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729018"
 ---
 # <a name="client-block-hook-functions"></a>Funkcje punktu zaczepienia bloku klienta
 Jeśli chcesz sprawdzić poprawność lub zgłosić zawartość danych przechowywanych w `_CLIENT_BLOCK` blokach, można napisać funkcję specjalnie do tego celu. Funkcja, którą pisze, musi mieć prototyp podobny do poniższego, zgodnie z definicją w CRTDBG. C
@@ -48,6 +50,6 @@ typedef void (__cdecl *_CRT_DUMP_CLIENT)
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Pisanie debugowanie funkcji punktów zaczepienia](../debugger/debug-hook-function-writing.md)
+- [Zapisywanie funkcji punktu zaczepienia debugowania](../debugger/debug-hook-function-writing.md)
 - [Przykład crt_dbg2](/previous-versions/b31tft51(v=vs.100))
 - [_CrtReportBlockType](/cpp/c-runtime-library/reference/crtreportblocktype)

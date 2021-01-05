@@ -1,5 +1,7 @@
 ---
 title: 'Debugowanie ASP.NET: Wymagania systemowe | Microsoft Docs'
+description: Zapoznaj się z wymaganiami dotyczącymi oprogramowania i zabezpieczeń na potrzeby debugowania lokalnego ASP.NET, w którym program Visual Studio i aplikacja internetowa działają na tym samym komputerze, i zdalne debugowanie.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 78f947c7ab9fcc1031d457526240ecdd7e9119a3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2002d6ccbbe8f2cd3e186c49aca7a846568eedb2
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72745809"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729122"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>ASP.NET Debugowanie: wymagania systemu
 W tym temacie opisano wymagania dotyczące oprogramowania i zabezpieczeń dla [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] scenariuszy debugowania:
@@ -37,7 +39,7 @@ W tym temacie opisano wymagania dotyczące oprogramowania i zabezpieczeń dla [!
 ## <a name="security-requirements"></a>Wymagania dotyczące zabezpieczeń
  W przypadku zdalnego debugowania na komputerach lokalnych i zdalnych musi znajdować się konfiguracja domeny lub Konfiguracja grupy roboczej.
 
- Aby debugować [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] proces roboczy (hostowany przez pulę aplikacji), musisz mieć uprawnienia do debugowania tego procesu. Domyślnie [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacje przed usługami IIS 6,0 są uruchamiane jako użytkownik **ASPNET** . W usługach IIS 6,0 i IIS 7,0 konto **usługi sieciowej** jest domyślnie. Jeśli proces roboczy jest uruchomiony jako **ASPNET**lub jako **Usługa sieciowa**, musisz mieć uprawnienia administratora, aby go debugować.
+ Aby debugować [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] proces roboczy (hostowany przez pulę aplikacji), musisz mieć uprawnienia do debugowania tego procesu. Domyślnie [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacje przed usługami IIS 6,0 są uruchamiane jako użytkownik **ASPNET** . W usługach IIS 6,0 i IIS 7,0 konto **usługi sieciowej** jest domyślnie. Jeśli proces roboczy jest uruchomiony jako **ASPNET** lub jako **Usługa sieciowa**, musisz mieć uprawnienia administratora, aby go debugować.
 
  > [!IMPORTANT]
  > Począwszy od systemu Windows Server 2008 R2 zaleca się użycie [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) jako tożsamości dla każdej puli aplikacji.

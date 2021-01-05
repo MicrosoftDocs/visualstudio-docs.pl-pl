@@ -1,5 +1,7 @@
 ---
 title: Adnotacja | Microsoft Docs
+description: Znajdź informacje referencyjne na temat typu symbolu adnotacji (SymTagAnnotation) w zestawie SDK dostępu do interfejsu debugowania programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e1adc922021d1e2bcc9b55de0b5986ee0c1766d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cadd93b935e102cee2108be5c6fd6274f5a29e15
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462380"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728903"
 ---
 # <a name="annotation"></a>Adnotacja
 Kod programu lokalizacji może być oznaczony `SymTagAnnotation` symbolem.

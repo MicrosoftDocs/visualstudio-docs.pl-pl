@@ -1,5 +1,7 @@
 ---
 title: Sprawdzanie poprawności ramki graficznej | Microsoft Docs
+description: Dowiedz się więcej na temat narzędzia sprawdzania poprawności ramki dla grafiki w programie Visual Studio. To narzędzie wyświetla błędy i ostrzeżenia skojarzone z listą zdarzeń.
+ms.custom: SEO-VS-2020
 ms.date: 03/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49248c6209f9e56e51551f6cd3d4af66ecac8b56
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0fe9b1ed3acbe588b342ba6550bc45558a2070d2
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72735495"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727648"
 ---
 # <a name="graphics-frame-validation"></a>Sprawdzanie poprawności ramki graficznej
 <!-- VERSIONLESS -->
@@ -31,7 +33,7 @@ Kliknij przycisk **Uruchom weryfikację** w lewym górnym rogu, aby zainicjować
 | Ważność | Uszkodzenie, błąd, ostrzeżenie, informacje lub komunikat. |
 | Kategoria | Zdefiniowane przez aplikację, różne, inicjalizacje, czyszczenie, kompilacja, tworzenie stanu, ustawienie stanu, pobieranie stanu, wykonywanie, manipulowanie zasobami, cieniowanie, nadmiarowe i nieużywane. |
 | Komunikat | Wiadomość skojarzona ze zdarzeniem. |
-| Wydarzenie | Zdarzenie skojarzone z błędem lub ostrzeżeniem. |
+| Zdarzenie | Zdarzenie skojarzone z błędem lub ostrzeżeniem. |
 
 ## <a name="see-also"></a>Zobacz też
 [Diagnostyka grafiki (debugowanie grafiki DirectX)](visual-studio-graphics-diagnostics.md)

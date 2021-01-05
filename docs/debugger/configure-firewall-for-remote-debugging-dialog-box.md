@@ -1,5 +1,7 @@
 ---
 title: Okno dialogowe Konfigurowanie zapory dla zdalnego debugowania | Microsoft Docs
+description: Przeczytaj informacje o oknie dialogowym Konfigurowanie zapory dla zdalnego debugowania, które pojawia się, gdy Zapora systemu Windows przestanie być odbierać dane przez sieć.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a2511fc2adfa63ff28f8459f48cbdf4b4623ff5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 86a0cac2e42e1271e689f2b1880eef8ca6d14644
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72745664"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728966"
 ---
 # <a name="configure-firewall-for-remote-debugging-dialog-box"></a>Konfigurowanie zapory do zdalnego debugowania — Okno dialogowe
 To okno dialogowe pojawia się, gdy Zapora systemu Windows zablokuje dostęp do informacji za pośrednictwem sieci. Aby kontynuować debugowanie zdalne, musisz otworzyć otwór w zaporze, aby debuger mógł odbierać informacje.

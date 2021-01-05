@@ -1,5 +1,7 @@
 ---
 title: Debuguj projekty DLL | Microsoft Docs
+description: Debuguj pliki bibliotek dołączanych dynamicznie (DLL) w programie Visual Studio. Użyj programu Visual Studio, aby tworzyć, kompilować, konfigurować i debugować biblioteki DLL.
+ms.custom: SEO-VS-2020
 ms.date: 11/06/2018
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 898eb0eb1489d83e97ec9f0a5b38b475bda0199d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ec78e9a04062699ea699f45671e1210fc2306631
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315073"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728507"
 ---
 # <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Debugowanie bibliotek DLL w programie Visual Studio (C#, C++, Visual Basic, F #)
 
@@ -35,7 +37,7 @@ Następujące szablony projektów programu Visual Studio mogą tworzyć bibliote
 
 - Biblioteka klas C#, Visual Basic lub F #
 - Biblioteka formantów Windows Forms C# lub Visual Basic (WCF)
-- Biblioteka dołączana dynamicznie (DLL) języka C++
+- Biblioteka Dynamic-Link języka C++ (DLL)
 
 Aby uzyskać więcej informacji, zobacz [techniki debugowania MFC](../debugger/mfc-debugging-techniques.md).
 
@@ -47,9 +49,9 @@ Zazwyczaj wywoływana jest biblioteka DLL z innego projektu. Podczas debugowania
 
 W przypadku tworzenia aplikacji za pomocą szablonu projektu programu Visual Studio program [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatycznie tworzy wymagane ustawienia dla konfiguracji debugowania i wydania kompilacji. W razie potrzeby możesz zmienić te ustawienia. Aby uzyskać więcej informacji, zobacz następujące artykuły:
 
-- [Ustawienia projektu dla konfiguracji debugowania języka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
+- [Ustawienia projektu dla konfiguracji debugowania w języku C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Ustawienia projektu dla konfiguracji debugowania w języku C#](../debugger/project-settings-for-csharp-debug-configurations.md)
-- [Ustawienia projektu dla konfiguracji debugowania Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
+- [Ustawienia projektu dla konfiguracji debugowania w języku Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
 - [Instrukcje: Ustawianie konfiguracji debugowania i wydania](../debugger/how-to-set-debug-and-release-configurations.md)
 
 ### <a name="set-c-debuggableattribute"></a>Set C++ DebuggableAttribute
@@ -60,13 +62,13 @@ Aby debuger mógł dołączyć do biblioteki DLL języka C++, kod języka C++ mu
 
 1. Wybierz projekt biblioteki DLL C++ w **Eksplorator rozwiązań** i wybierz ikonę **Właściwości** lub kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Właściwości**.
 
-1. W okienku **Właściwości** w obszarze Debugowanie **konsolidatora**  >  **Debugging**wybierz pozycję **tak (/ASSEMBLYDEBUG)** dla **zestawu możliwością debugowania**.
+1. W okienku **Właściwości** w obszarze Debugowanie **konsolidatora**  >  wybierz pozycję **tak (/ASSEMBLYDEBUG)** dla **zestawu możliwością debugowania**.
 
 Aby uzyskać więcej informacji, zobacz [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute).
 
 ### <a name="set-cc-dll-file-locations"></a><a name="vxtskdebuggingdllprojectsexternal"></a> Ustaw lokalizacje plików DLL C/C++
 
-Aby debugować zewnętrzną bibliotekę DLL, wywołujący projekt musi być w stanie znaleźć bibliotekę DLL, jej [plik. pdb](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)oraz inne pliki wymagane przez bibliotekę DLL. Można utworzyć niestandardowe zadanie kompilacji, aby skopiować te pliki do folderu wyjściowego * \<project folder> \debug.* lub ręcznie skopiować pliki.
+Aby debugować zewnętrzną bibliotekę DLL, wywołujący projekt musi być w stanie znaleźć bibliotekę DLL, jej [plik. pdb](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)oraz inne pliki wymagane przez bibliotekę DLL. Można utworzyć niestandardowe zadanie kompilacji, aby skopiować te pliki do folderu wyjściowego *\<project folder> \debug.* lub ręcznie skopiować pliki.
 
 W przypadku projektów C/C++ można ustawić nagłówki i lokalizacje plików LIB na stronach właściwości projektu, zamiast kopiować je do folderu wyjściowego.
 
@@ -74,13 +76,13 @@ W przypadku projektów C/C++ można ustawić nagłówki i lokalizacje plików LI
 
 1. Wybierz projekt DLL C/C++ w **Eksplorator rozwiązań** i wybierz ikonę **Właściwości** lub kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Właściwości**.
 
-1. W górnej części okienka **Właściwości** w obszarze **Konfiguracja**wybierz pozycję **wszystkie konfiguracje**.
+1. W górnej części okienka **Właściwości** w obszarze **Konfiguracja** wybierz pozycję **wszystkie konfiguracje**.
 
-1. W obszarze Ogólne **C/C++**  >  **General**  >  **Dodatkowe katalogi dołączania**określ folder, w którym znajdują się pliki nagłówkowe.
+1. W obszarze Ogólne **C/C++**  >    >  **Dodatkowe katalogi dołączania** określ folder, w którym znajdują się pliki nagłówkowe.
 
-1. W obszarze **konsolidator**  >  **Ogólne**  >  **dodatkowe biblioteki katalogi**określ folder, w którym znajdują się pliki lib.
+1. W obszarze **konsolidator**  >  **Ogólne**  >  **dodatkowe biblioteki katalogi** określ folder, w którym znajdują się pliki lib.
 
-1. W **obszarze**dołączanie  >  **Input**  >  **dodatkowe zależności**wprowadź pełną ścieżkę i nazwę pliku dla plików lib.
+1. W **obszarze** dołączanie  >    >  **dodatkowe zależności** wprowadź pełną ścieżkę i nazwę pliku dla plików lib.
 
 1. Wybierz pozycję **OK**.
 
@@ -90,7 +92,7 @@ Aby uzyskać więcej informacji na temat ustawień projektu C++, zobacz [informa
 
 Przed rozpoczęciem debugowania upewnij się, że została utworzona wersja debugowania biblioteki DLL. Aby debugować bibliotekę DLL, aplikacja wywołująca musi być w stanie znaleźć swój [plik. pdb](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) oraz inne pliki wymagane przez bibliotekę DLL.
 
-Można utworzyć niestandardowe zadanie kompilacji w celu skopiowania plików DLL do folderu wyjściowego * \<calling project folder> \debug.* lub ręcznie skopiować pliki.
+Można utworzyć niestandardowe zadanie kompilacji w celu skopiowania plików DLL do folderu wyjściowego *\<calling project folder> \debug.* lub ręcznie skopiować pliki.
 
 Upewnij się, że plik DLL jest wywoływany w prawidłowej lokalizacji. Może wydawać się oczywiste, ale jeśli aplikacja wywołująca znajdzie i załaduje inną kopię biblioteki DLL, debuger nigdy nie osiągnie ustawionych punktów przerwania.
 
@@ -121,7 +123,7 @@ Aby debugować bibliotekę DLL z aplikacji wywołującej, możesz:
 
 Przed rozpoczęciem debugowania aplikacji wywołującej Ustaw punkt przerwania w bibliotece DLL. Zobacz [Używanie punktów przerwania](../debugger/using-breakpoints.md). Po trafieniu punktu przerwania biblioteki DLL można przejść przez kod, obserwując akcję w każdym wierszu. Aby uzyskać więcej informacji, zobacz [nawigowanie po kodzie w debugerze](../debugger/navigating-through-code-with-the-debugger.md).
 
-Podczas debugowania można użyć okna **moduły** do zweryfikowania plików DLL i *exe* ładowanych przez aplikację. Aby otworzyć okno **moduły** , podczas debugowania wybierz kolejno opcje **Debuguj**  >  moduły**systemu Windows**  >  **Modules**. Aby uzyskać więcej informacji, zobacz [How to: Use the modules Window](../debugger/how-to-use-the-modules-window.md).
+Podczas debugowania można użyć okna **moduły** do zweryfikowania plików DLL i *exe* ładowanych przez aplikację. Aby otworzyć okno **moduły** , podczas debugowania wybierz kolejno opcje **Debuguj**  >  moduły **systemu Windows**  >  . Aby uzyskać więcej informacji, zobacz [How to: Use the modules Window](../debugger/how-to-use-the-modules-window.md).
 
 ### <a name="use-the-immediate-window"></a><a name="vxtskdebuggingdllprojectstheimmediatewindow"></a> Korzystanie z okna bezpośredniego
 

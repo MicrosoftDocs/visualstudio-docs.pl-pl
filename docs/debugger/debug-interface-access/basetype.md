@@ -1,5 +1,7 @@
 ---
 title: Typ BaseType | Microsoft Docs
+description: Znajdź informacje referencyjne o typie symbolu BaseType (SymTagBaseType) w zestawie SDK dostępu do interfejsu debugowania programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d49969f1897529de770063be1a7acc0f035e5ef9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ecbcc24e1558039490a17838cdef4d72e7e95e0
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462289"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728881"
 ---
 # <a name="basetype"></a>BaseType
 Typy podstawowe są identyfikowane przez `SymTagBaseType` symbole.

@@ -1,5 +1,7 @@
 ---
 title: Debugowanie usług WCF | Microsoft Docs
+description: Znajdź linki do artykułów na temat debugowania usług Windows Communication Foundation (WCF) w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92349fe14aef8204c67b88ad0f6a4b34346d2347
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6381a00216e0eabe97277d8c04b71f6377634497
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72738075"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728190"
 ---
 # <a name="debugging-wcf-services"></a>Debugowanie usług WCF
 ## <a name="in-this-section"></a>W tej sekcji
@@ -29,7 +31,7 @@ ms.locfileid: "72738075"
 
  [Instrukcje: przechodzenie do usług WCF](../debugger/how-to-step-into-wcf-services.md) Zawiera opis obsługi debugera w celu przechodzenia do usługi WCF.
 
- [Instrukcje: debugowanie Samohostowanej usługi WCF](../debugger/how-to-debug-a-self-hosted-wcf-service.md) Opisuje sposób debugowania usługi WCF, która działa poza programem IIS lub [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] serwerem deweloperskim.
+ [Instrukcje: debugowanie Self-Hosted usługi WCF](../debugger/how-to-debug-a-self-hosted-wcf-service.md) Opisuje sposób debugowania usługi WCF, która działa poza programem IIS lub [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] serwerem deweloperskim.
 
 ## <a name="see-also"></a>Zobacz też
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)

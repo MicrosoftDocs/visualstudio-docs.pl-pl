@@ -1,5 +1,7 @@
 ---
 title: CV_CFL_LANG | Microsoft Docs
+description: Pobierz informacje o CV_CFL_LANG typie wyliczeniowy, który określa język kodu aplikacji lub modułu połączonego w zestawie SDK dostępu do interfejsu debugowania.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac8910ebe012e1edbaa6c26695027214db4e66c2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07fff0b927fcc271c7671ab98683571adfa9830f
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462135"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728590"
 ---
 # <a name="cv_cfl_lang"></a>CV_CFL_LANG
 Określa język kodu źródłowego aplikacji lub połączonego modułu.

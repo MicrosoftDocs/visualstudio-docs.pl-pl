@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.workload: multiple
 ms.date: 07/25/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 32f6535e92f41d8030b6e060960940339da91fc9
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: de7065ebdf5426077418e50d2c03118de9f9d68f
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92298217"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729304"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>Debugowanie aplikacji w lokalnym kontenerze platformy Docker
 
@@ -62,7 +62,7 @@ Aby szybko wykonać iterację zmian, możesz uruchomić aplikację w kontenerze.
 
 1. Upewnij się, że platforma Docker została skonfigurowana do korzystania z typu kontenera (Linux lub Windows), którego używasz. Kliknij prawym przyciskiem myszy ikonę platformy Docker na pasku zadań, a następnie wybierz polecenie **Przełącz do kontenerów systemu Linux** lub **Przejdź do kontenerów z systemem Windows** w zależności od potrzeb.
 
-1. (Tylko program .NET Core 3 i nowsze) Edytowanie kodu i odświeżanie uruchomionej lokacji zgodnie z opisem w tej sekcji nie jest włączone w szablonach domyślnych w programie .NET Core >= 3,0. Aby ją włączyć, Dodaj pakiet NuGet [Microsoft. AspNetCore. MVC. Razor. RuntimeCompilation](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation/). W *Startup.cs*Dodaj wywołanie metody Extension `IMvcBuilder.AddRazorRuntimeCompilation` do kodu w `ConfigureServices` metodzie. Ta funkcja jest wymagana tylko w trybie debugowania, dlatego należy ją kod w następujący sposób:
+1. (Tylko program .NET Core 3 i nowsze) Edytowanie kodu i odświeżanie uruchomionej lokacji zgodnie z opisem w tej sekcji nie jest włączone w szablonach domyślnych w programie .NET Core >= 3,0. Aby ją włączyć, Dodaj pakiet NuGet [Microsoft. AspNetCore. MVC. Razor. RuntimeCompilation](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation/). W *Startup.cs* Dodaj wywołanie metody Extension `IMvcBuilder.AddRazorRuntimeCompilation` do kodu w `ConfigureServices` metodzie. Ta funkcja jest wymagana tylko w trybie debugowania, dlatego należy ją kod w następujący sposób:
 
     ```csharp
     public IWebHostEnvironment Env { get; set; }
@@ -120,7 +120,7 @@ Zmiany zostały zastosowane.
 Często zmiany wymagają dalszej kontroli. Dla tego zadania można użyć funkcji debugowania programu Visual Studio.
 
 1. W programie Visual Studio Otwórz *index.cshtml.cs*.
-2. Zastąp zawartość `OnGet` metody następującym kodem:
+2. Zastąp zawartość metody `OnGet` następującym kodem:
 
    ```csharp
        ViewData["Message"] = "Your application description page from within a container";
@@ -130,7 +130,7 @@ Często zmiany wymagają dalszej kontroli. Dla tego zadania można użyć funkcj
 4. Aby rozpocząć debugowanie i trafić punkt przerwania, naciśnij klawisz F5.
 5. Przełącz się do programu Visual Studio, aby wyświetlić punkt przerwania. Sprawdź wartości.
 
-   ![Punkt](media/edit-and-refresh/breakpoint.png)
+   ![Zrzut ekranu przedstawiający część kodu dla Index.cshtml.cs w programie Visual Studio z punktem przerwania ustawionym na lewo od wiersza kodu, który jest wyróżniony kolorem żółtym.](media/edit-and-refresh/breakpoint.png)
 
 ## <a name="create-a-net-framework-console-app"></a>Tworzenie aplikacji konsolowej .NET Framework
 
@@ -142,7 +142,7 @@ W przypadku korzystania z projektów aplikacji konsolowych .NET Framework opcja 
 ### <a name="debug-with-breakpoints"></a>Debuguj z punktami przerwania
 
 1. W Eksplorator rozwiązań Otwórz *program.cs*.
-2. Zastąp zawartość `Main` metody następującym kodem:
+2. Zastąp zawartość metody `Main` następującym kodem:
 
    ```csharp
        System.Console.WriteLine("Hello, world!");
@@ -152,7 +152,7 @@ W przypadku korzystania z projektów aplikacji konsolowych .NET Framework opcja 
 4. Naciśnij klawisz F5, aby rozpocząć debugowanie i kliknij punkt przerwania.
 5. Przełącz się do programu Visual Studio, aby wyświetlić punkt przerwania i sprawdzić wartości.
 
-   ![Punkt](media/edit-and-refresh/breakpoint-console.png)
+   ![Zrzut ekranu okna kod dla Program.cs w programie Visual Studio z punktem przerwania ustawionym na lewo od wiersza kodu, który jest wyróżniony kolorem żółtym.](media/edit-and-refresh/breakpoint-console.png)
 
 ## <a name="container-reuse"></a>Ponowne użycie kontenera
 

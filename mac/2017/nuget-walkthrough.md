@@ -7,12 +7,12 @@ ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: 58d749a1d014288754dcd9eb7e620730933d742a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 274e8defe25fa78c30aee72834e486b302a9af4e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950406"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729434"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Dołącz pakiet NuGet do projektu
 
@@ -76,7 +76,7 @@ Aktualizacje pakietu można wykonać w dowolnym momencie, klikając prawym przyc
 
 Kliknij prawym przyciskiem myszy pozycję **pakiety** , aby uzyskać dostęp do menu kontekstowego:
 
-![Menu pakiety](media/nuget-walkthrough-PackagesMenu.png)
+![Zrzut ekranu przedstawiający wybrany węzeł pakiety, a menu kontekstowe kliknij prawym przyciskiem myszy otwarte z poleceniami Dodaj pakiety, zaktualizuj, Przywróć i Odśwież.](media/nuget-walkthrough-PackagesMenu.png)
 
 * **Dodaj pakiety** — otwiera okno, aby dodać więcej pakietów do projektu.
 * **Update** — sprawdza serwer źródłowy dla każdego pakietu i pobiera nowsze wersje.
@@ -86,7 +86,7 @@ Opcje aktualizacji i przywracania są również dostępne na poziomie rozwiązan
 
 Możesz również kliknąć prawym przyciskiem myszy poszczególne pakiety, aby uzyskać dostęp do menu kontekstowego:
 
-![Menu pakiety](media/nuget-walkthrough-PackageMenu.png)
+![Zrzut ekranu przedstawiający wybrany pojedynczy pakiet, a menu kontekstowe kliknij prawym przyciskiem myszy otwarte z poleceniami do aktualizacji, usuwania i odświeżania.](media/nuget-walkthrough-PackageMenu.png)
 
 * **Numer wersji** — numer wersji to wyłączony element menu, który jest dostarczany tylko do celów informacyjnych.
 * **Update** — sprawdza serwer źródłowy i pobiera nowszą wersję (jeśli istnieje).
@@ -102,11 +102,11 @@ W Visual Studio dla komputerów Mac przejdź do **okna preferencje > programu Vi
 
 Kliknij przycisk **Dodaj** , aby skonfigurować nowe źródło. Wprowadź przyjazną nazwę i adres URL (lub ścieżkę pliku) do źródła pakietu. Jeśli źródłem jest bezpieczny serwer sieci Web, wprowadź nazwę użytkownika i hasło. w przeciwnym razie pozostaw te wpisy puste:
 
-![Dodawanie źródeł pakietów](media/nuget-walkthrough-PackageSource2.png)
+![Zrzut ekranu przedstawiający okno dialogowe Dodawanie źródła pakietu zawierające pola Nazwa, lokalizacja, nazwa użytkownika i hasło.](media/nuget-walkthrough-PackageSource2.png)
 
 Podczas wyszukiwania pakietów można wybrać różne źródła:
 
-![Dodawanie źródeł pakietów](media/nuget-walkthrough-PackageSource3.png)
+![Zrzut ekranu przedstawiający ekran dodawanie pakietów z podaną listą rozwijaną źródeł, które można wybrać podczas wyszukiwania pakietów.](media/nuget-walkthrough-PackageSource3.png)
 
 ## <a name="version-control"></a>Kontrola wersji
 

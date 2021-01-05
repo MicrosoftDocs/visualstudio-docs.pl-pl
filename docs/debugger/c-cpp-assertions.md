@@ -1,5 +1,7 @@
 ---
 title: Potwierdzenia C/C++ | Microsoft Docs
+description: Przeczytaj o tym, jak potwierdzenia języka C/C++ działają w debugowaniu w programie Visual Studio. Potwierdzenie określa warunek, który powinien być prawdziwy w punkcie w programie.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -28,12 +30,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: abea0f45609c74e02cd95d6c21bbe8879d46eea1
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 0b585ce001692ab5b4451acc8d2938741bfacd78
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600208"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729070"
 ---
 # <a name="cc-assertions"></a>Potwierdzenia C/C++
 Instrukcja Assert określa warunek, który powinien być prawdziwy w punkcie w programie. Jeśli ten warunek nie ma wartości true, potwierdzenie nie powiedzie się, wykonywanie programu zostanie przerwane i zostanie wyświetlone okno [dialogowe potwierdzenie nie powiodło](../debugger/assertion-failed-dialog-box.md) się.
@@ -341,4 +343,4 @@ Ten kod opiera się na instrukcji Assert, aby obsłużyć warunek błędu. W zwi
 
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)
 - [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)
-- [Potwierdzenia w zarządzanym kodzie](../debugger/assertions-in-managed-code.md)
+- [Potwierdzenia w kodzie zarządzanym](../debugger/assertions-in-managed-code.md)

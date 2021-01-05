@@ -1,5 +1,7 @@
 ---
 title: Określanie programów obsługi plików dla rozszerzeń nazw plików | Microsoft Docs
+description: Dowiedz się, jak określić, która aplikacja obsługuje rozszerzenie pliku w zestawie SDK programu Visual Studio za pomocą OpenWithList i OpenWithProgids.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af195aea09c91696843c6be42c20053bb8c095a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 421244cd88af43e7602298e7384a632c8aa51833
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699753"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715603"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>Określanie programów obsługi plików dla rozszerzeń nazw plików
 Istnieje kilka sposobów na określenie aplikacji, która obsługuje plik, który ma rozszerzenie określonego pliku. Zlecenia OpenWithList i OpenWithProgids są dwa sposoby określania programów obsługi plików w ramach wpisu rejestru dla rozszerzenia pliku.
@@ -34,7 +36,7 @@ HKEY_CLASSES_ROOT\
 ```
 
 > [!NOTE]
-> Klucze określające aplikacje znajdują się na liście w obszarze HKEY_CLASSES_ROOT \Applications.
+> Klucze określające aplikacje znajdują się na liście w obszarze HKEY_CLASSES_ROOT\Applications.
 
  Dodając klucz OpenWithList, deklarujesz, że aplikacja obsługuje rozszerzenie pliku, nawet jeśli inna aplikacja przejmuje własność rozszerzenia. Może to być przyszła wersja aplikacji lub innej aplikacji.
 
@@ -52,7 +54,7 @@ HKEY_CLASSES_ROOT\
 > [!NOTE]
 > Ten `OpenWithProgids` klucz jest obsługiwany tylko w systemie Windows XP. Ponieważ inne systemy operacyjne ignorują ten klucz, nie należy używać go jako jedynej rejestracji dla programów obsługi plików. Użyj tego klucza, aby zapewnić lepsze środowisko użytkownika w systemie Windows XP.
 
- Dodaj żądane identyfikatory ProgID jako wartości typu REG_NONE. Poniższy kod zawiera przykład rejestrowania ProgID dla rozszerzenia pliku (.* EXT*).
+ Dodaj żądane identyfikatory ProgID jako wartości typu REG_NONE. Poniższy kod zawiera przykład rejestrowania ProgID dla rozszerzenia pliku (.*EXT*).
 
 ```
 HKEY_CLASSES_ROOT\

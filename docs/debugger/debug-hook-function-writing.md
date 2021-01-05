@@ -1,5 +1,7 @@
 ---
 title: Zastępowanie funkcji punktu zaczepienia debugowania | Microsoft Docs
+description: Przeczytaj o kilku niestandardowych funkcjach punktu zaczepienia debugowania, które można napisać, aby umożliwić wstawienie kodu do wstępnie zdefiniowanych punktów wewnątrz normalnego przetwarzania debugera.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 038c976380ff1e1f0a1a7c4c150fc462f6b1d1db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5e2f05005d0b43d526936bfbc8018739cb1ed88
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350722"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728940"
 ---
 # <a name="debug-hook-function-writing"></a>Pisanie debugowanie funkcji punktów zaczepienia
 W tej sekcji opisano szereg funkcji niestandardowego punktu zaczepienia debugowania, które można napisać, aby umożliwić Wstawianie kodu do niektórych wstępnie zdefiniowanych punktów wewnątrz normalnego przetwarzania debugera.
@@ -42,4 +44,4 @@ W tej sekcji opisano szereg funkcji niestandardowego punktu zaczepienia debugowa
 
 ## <a name="related-sections"></a>Sekcje pokrewne
 
-- [Techniki debugowania CRT](../debugger/crt-debugging-techniques.md) — linki do technik debugowania dla biblioteki wykonawczej C, w tym przy użyciu biblioteki debugowania CRT, makra do raportowania, różnice między `malloc` i `_malloc_dbg` , pisanie funkcji punktów zaczepienia debugowania oraz sterty debugowania CRT.
+- [Techniki debugowania CRT](../debugger/crt-debugging-techniques.md) — linki do technik debugowania dla biblioteki języka C Run-Time, w tym przy użyciu biblioteki debugowania CRT, makr do raportowania, różnic między `malloc` i `_malloc_dbg` , pisania funkcji punktów zaczepienia debugowania oraz sterty debugowania CRT.

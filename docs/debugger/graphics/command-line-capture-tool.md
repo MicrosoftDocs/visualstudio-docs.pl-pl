@@ -1,5 +1,7 @@
 ---
-title: Narzędzie do przechwytywania wiersza polecenia | Microsoft Docs
+title: Narzędzie do przechwytywania Command-Line | Microsoft Docs
+description: Dowiedz się więcej na temat DXCap.exe, narzędzia wiersza polecenia do przechwytywania i odtwarzania diagnostyki grafiki, które obsługuje program Direct3D 10 za pośrednictwem programu Direct3D 12 na wszystkich poziomach funkcji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: db75b3a7-80b2-4a74-91d2-fd6e0f73b45d
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4d88e62b1520677ddac3ff66a6891eb805af30d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3618c1d6e929d40108abd5fd0b0cc3a3361964bf
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64808457"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727880"
 ---
 # <a name="command-line-capture-tool"></a>Narzędzie wiersza polecenia do przechwytywania
 DXCap.exe to narzędzie wiersza polecenia do przechwytywania i odtwarzania diagnostyki grafiki. Obsługuje ona program Direct3D 10 za pośrednictwem Direct3D 12 na wszystkich poziomach funkcji.
@@ -137,7 +139,7 @@ DXCap.exe -e map
 
  Powyższe polecenie wylicza aplikacje platformy UWP, które pasują do "map"; Oto dane wyjściowe:
 
- **Pakiet "Microsoft. BingMaps":** **InstallDirectory: C:\program files\windowsapps\microsoft. BingMaps_2.1.2914.1734_X64__8wekyb3d8bbwe** **FullName: Microsoft BingMaps_2.1.2914. UserSID. 1734_x64__8wekyb3d8bbwe** **BingMaps: S-1-5-21-2127521184-1604012920-1887927527-5603533** **name: Microsoft.** **Publisher: CN = Microsoft Corporation, O = Microsoft Corporation, L = Redmond, S = Waszyngton, C = US** **Version: 2.1.2914.1734** **aplikacje do uruchomienia:** **Identyfikator: AppexMaps** **exe: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe** **IsWWA: brak** **appspec (do uruchomienia): DXCap.exe-C Microsoft. BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe, AppexMaps** ostatni wiersz danych wyjściowych dla każdej wyliczonej aplikacji wyświetla polecenie, którego można użyć do przechwytywania z niego informacji graficznych.
+ **Package "Microsoft. BingMaps":** **InstallDirectory: C: \ Program Files \ WindowsApps \ Microsoft. BingMaps_2.1.2914.1734_X64__8wekyb3d8bbwe** **FullName: Microsoft. BingMaps_2.1.2914.1734 _x64__8wekyb3d8bbwe** **UserSID: S-1-5-21-2127521184-1604012920-1887927527-5603533** **Nazwa: Microsoft. BingMaps** **Publisher: CN = Microsoft Corporation, O = Microsoft Corporation, L = Redmond, S = Waszyngton, C = wersja US** **: 2.1.2914.1734** **aplikacje do uruchomienia:** **Identyfikator: AppexMaps** **exe: C: \ Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe** **IsWWA: brak** **appspec (do uruchomienia): DXCap.exe-C Microsoft. BingMaps_2.1.2914.1734 _x64__8wekyb3d8bbwe, AppexMaps** ostatni wiersz danych wyjściowych dla każdej wyliczeniowej aplikacji wyświetla polecenie, którego można użyć do przechwytywania z niego informacji graficznych.
 
 ### <a name="capture-specific-frames-or-frames-between-specific-times"></a>Przechwyć określone ramki lub ramki między określonymi czasami.
  Użyj `-frame` , aby określić ramki, które mają być przechwytywane przy użyciu przecinków i zakresów:

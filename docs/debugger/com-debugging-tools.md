@@ -1,5 +1,7 @@
 ---
 title: Narzędzia debugowania modelu COM | Microsoft Docs
+description: Uzyskaj opisy narzędzi debugowania, które mogą pomóc w testowaniu i sprawdzaniu programów COM, takich jak Przeglądarka obiektów OLE/COM.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6a3c0961d541aaac1f2fd81fee7a0a8e06583dd
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 216d820e455ad9902f19fe3c48caa927b21a2f0f
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600168"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728992"
 ---
 # <a name="com-debugging-tools"></a>Narzędzia debugowania COM
 
@@ -42,8 +44,8 @@ Przykłady kontrolek ActiveX MFC OCLIENT i SUPERPAD są również dostępne do t
 
 ### <a name="see-also"></a>Zobacz też
 
-- [COM i debugowanie ActiveX](../debugger/com-and-activex-debugging.md)
-- [Narzędzia debugowania COM](../debugger/com-debugging-tools.md)
+- [Debugowanie modelu COM i ActiveX](../debugger/com-and-activex-debugging.md)
+- [Narzędzia debugowania modelu COM](../debugger/com-debugging-tools.md)
 - [Debugowanie w Visual Studio](../debugger/index.yml)
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)
 - [Przykład OCLIENT: ilustruje wizualną edycję kontenera aplikacji](/previous-versions/c2f86tzd(v=vs.100))

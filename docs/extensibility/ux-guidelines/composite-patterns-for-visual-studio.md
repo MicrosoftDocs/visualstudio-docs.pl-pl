@@ -1,5 +1,7 @@
 ---
 title: Wzorce złożone dla programu Visual Studio | Microsoft Docs
+description: Dowiedz się więcej na temat ważnych wzorców złożonych dla spójności w programie Visual Studio. Wzorce złożone łączą elementy interakcji i projektu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ebc8f4f6c17af54f4dfdcfc0d0d05c5da9d2d88b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 719ce0ac88761599fbed7da90643fd8a9d79db69
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88114079"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715824"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Wzorce złożone dla programu Visual Studio
 Wzorce złożone łączą elementy interakcji i projektu w różnych konfiguracjach. Niektóre z najważniejszych wzorców złożonych w programie Visual Studio w odniesieniu do spójności obejmują:
@@ -68,7 +70,7 @@ Wzorce złożone łączą elementy interakcji i projektu w różnych konfiguracj
 
 ### <a name="other-charting-considerations"></a>Inne zagadnienia dotyczące wykresów
 
-#### <a name="color"></a>Kolor
+#### <a name="color"></a>Color (Kolor)
  Istnieje określona paleta kolorów wykresów zdefiniowanych do użycia w programie Visual Studio. Paleta jest dostępna dla głównych typów kolorów, a kolory można rozróżnić nawet wtedy, gdy są używane jako bardzo wąskie fragmenty koloru. Możesz użyć tych kolorów w dowolnej kombinacji dla dowolnego typu wykresu lub grafu w interfejsie użytkownika. Nie musisz używać wszystkich siedmiu kolorów, jeśli nie potrzebujesz wielu różnych kolorów. Te kolory nie zostały zaprojektowane do użycia z żadnymi elementami pierwszego planu, dlatego nie umieszczaj tekstu ani glifów na podstawie tych kolorów. Te odcieni powinny być trwale kodowane i narażone na dostosowanie użytkowników w obszarze **narzędzia > opcje** (zobacz [udostępnianie kolorów dla użytkowników końcowych](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)).
 
 |Spowoduje|Hex|RGB|
@@ -270,7 +272,7 @@ Wzorce złożone łączą elementy interakcji i projektu w różnych konfiguracj
 
 - Rozłączny
 
-- Region
+- Region (Region)
 
 #### <a name="scope"></a>Zakres
  Najważniejszym składnikiem wyboru jest upewnienie się, że użytkownik wie, w jakim oknie pracują (aktywacja) i gdzie fokus się znajduje (wybór). Program Visual Studio rozszerza funkcje zarządzania oknami w systemie Windows, ale schemat aktywacji jest taki sam: korzystanie z okna przenosi fokus do okna. Program Visual Studio ma dwa wskaźniki do aktywacji: jeden dla okien dokumentu i jeden dla okien narzędzi.
@@ -439,7 +441,7 @@ Wzorce złożone łączą elementy interakcji i projektu w różnych konfiguracj
 |--------|------------|
 | Lista | Sąsiadując |
 | Lista | Rozłączny |
-| Lista | Region |
+| Lista | Region (Region) |
 
  Kliknięcie raz na liście wybiera wiersz, w którym nastąpiło kliknięcie. Jeśli użytkownik kliknie w komórce listy, która obsługuje edycję w miejscu, komórka jest również natychmiast aktywowana do edycji w miejscu. W przeciwnym razie cały wiersz jest wybierany natychmiast i zostanie wyświetlona.
 
@@ -482,7 +484,7 @@ Wzorce złożone łączą elementy interakcji i projektu w różnych konfiguracj
 |Oknie dialogowym|Lokalizacja okna dialogowego, jeśli została przeniesiona<br /><br /> Widok, który ostatnio używał użytkownika w oknie dialogowym|Gdy okno dialogowe zostanie zamknięte<br /><br /> Po zakończeniu sesji programu Visual Studio|W pamięci<br /><br /> Rejestr w **HKEY_CURRENT_USER**|
 |Okno|Rozmiar i lokalizacja okna|Gdy okno zostanie zamknięte<br /><br /> Po zmianie trybu programu Visual Studio<br /><br /> Po zakończeniu sesji programu Visual Studio|Plik **opcji użytkownika (. suo)** dla projektu<br /><br /> Plik opcji niestandardowych dla ustawień okna|
 |Dokument|Bieżące zaznaczenie w dokumencie<br /><br /> Widok dokumentu<br /><br /> Ostatnie miejsce odwiedzone przez użytkownika|Gdy dokument zostanie zapisany|Plik **opcji użytkownika (. suo)** dla projektu|
-|Projekt|Odwołania do plików<br /><br /> Odwołania do katalogów na dysku<br /><br /> Odwołania do innego oprogramowania<br /><br /> Składniki<br /><br /> Informacje o stanie dotyczące samego projektu|Gdy projekt jest zapisywany|Plik projektu|
+|Project|Odwołania do plików<br /><br /> Odwołania do katalogów na dysku<br /><br /> Odwołania do innego oprogramowania<br /><br /> Składniki<br /><br /> Informacje o stanie dotyczące samego projektu|Gdy projekt jest zapisywany|Plik projektu|
 |Rozwiązanie|Odwołania do projektów<br /><br /> Odwołania do plików|Gdy projekt lub rozwiązanie zostanie zapisane|Plik **rozwiązania (. sln)**|
 |Ustawienia w **narzędziach > opcje**|Dostosowanie klawiatury<br /><br /> Dostosowania paska narzędzi<br /><br /> Schematy kolorów|Gdy okno dialogowe **opcje > narzędzia** zostanie zamknięte<br /><br /> Po zakończeniu sesji programu Visual Studio|Rejestr w **HKEY_CURRENT_USER**|
 

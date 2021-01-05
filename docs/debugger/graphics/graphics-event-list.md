@@ -1,5 +1,7 @@
 ---
 title: Lista zdarzeń grafiki | Microsoft Docs
+description: Użyj listy zdarzeń grafiki w analizator grafiki programu Visual Studio, aby eksplorować zdarzenia Direct3D, które zostały zarejestrowane podczas renderowania ramki gry lub aplikacji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5c4e8f39ff77779985536e53d98ddc2785b109b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7f987d8dc6decf90e44eef0123f6ad4fc194805
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89312733"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727766"
 ---
 # <a name="graphics-event-list"></a>Lista zdarzeń grafiki
 Użyj listy zdarzeń grafiki w analizator grafiki programu Visual Studio, aby eksplorować zdarzenia Direct3D, które zostały zarejestrowane podczas renderowania ramki gry lub aplikacji.
@@ -32,7 +34,7 @@ Użyj listy zdarzeń grafiki w analizator grafiki programu Visual Studio, aby ek
 ### <a name="color-coded-events-in-direct3d-12"></a>Zdarzenia kodowane kolorem w programie Direct3D 12
  Direct3D 12 uwidacznia wiele kolejek, które odpowiadają różnym funkcjom sprzętowym. Aby ułatwić zidentyfikowanie kolejki skojarzonej z konkretnym zdarzeniem grafiki w programie Direct3D 12, zdarzenia są kodowane kolorami na liście zdarzeń zgodnie z ich kolejką podczas pracy z funkcją przechwytywania aplikacji Direct3D 12.
 
-|Kolejka Direct3D|Kolor|
+|Kolejka Direct3D|Color (Kolor)|
 |-----------------------|-----------|
 |Kolejka renderowania|Green (Zielony)|
 |Kolejka obliczeń|Yellow|
@@ -109,7 +111,7 @@ To okno umożliwia wyświetlenie historii wybranego elementu na liście zdarzeń
 |-----------| - |
 | **Typ** | Pokazuje typ wpisu, zazwyczaj *Tworzenie*, *Odczyt* i *zapis*. |
 | **Wyświetlanie** | Pokazuje w tym momencie miniaturę zasobu.  Kliknij dwukrotnie miniaturę, aby otworzyć w tym momencie widok szczegółów zasobu. |
-| **Wydarzenie** | Pokazuje wywołanie metody, które wygenerowało zdarzenie.  Każdą dodatkową historię poszczególnych elementów można wyświetlić, wybierając ikonę czujki Obejrzyj ikonę ![ Obserwuj ](media/gfx_watch.png) w odpowiednim wierszu.  Ponadto, `m_commandList` Aby uzyskać więcej szczegółów, można wybrać każdy element, który jest rysowany w niebieskim tekście, na przykład na poniższym zrzucie ekranu. |
+| **Zdarzenie** | Pokazuje wywołanie metody, które wygenerowało zdarzenie.  Każdą dodatkową historię poszczególnych elementów można wyświetlić, wybierając ikonę czujki Obejrzyj ikonę ![ Obserwuj ](media/gfx_watch.png) w odpowiednim wierszu.  Ponadto, `m_commandList` Aby uzyskać więcej szczegółów, można wybrać każdy element, który jest rysowany w niebieskim tekście, na przykład na poniższym zrzucie ekranu. |
 
 <!-- /VERSIONLESS -->
 

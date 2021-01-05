@@ -1,5 +1,7 @@
 ---
 title: Aktualizowanie interfejsu użytkownika | Microsoft Docs
+description: Dowiedz się, jak dodać kod, aby zaktualizować interfejs użytkownika po zaimplementowaniu nowego polecenia w pakietu VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c51ae790eb35645fbe9aec5d9c422e1051aaa69
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fae228b3fab1e25f92c02da2512abdd78edda0db
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698888"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716032"
 ---
 # <a name="updating-the-user-interface"></a>Aktualizowanie interfejsu użytkownika
 Po zaimplementowaniu polecenia można dodać kod, aby zaktualizować interfejs użytkownika do stanu nowych poleceń.

@@ -1,5 +1,7 @@
 ---
 title: Przykłady Diagnostyka grafiki | Microsoft Docs
+description: Zapoznaj się z przykładami dotyczącymi debugowania problemów z renderowaniem w aplikacjach opartych na technologii DirectX za pomocą programu Visual Studio Diagnostyka grafiki.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 45dd86b2-801e-4b07-a8c4-7bd25641d7f8
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4df2fafb523d04a8ec222b10e1ac9ed3aa95454d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2ab1c01ef0f0b82f80a521929f90e90c6a4e4bc7
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73187932"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727807"
 ---
 # <a name="graphics-diagnostics-examples"></a>Przykłady diagnostyki grafiki
 W poniższych przykładach pokazano, jak debugować problemy z renderowaniem w aplikacjach opartych na technologii DirectX przy użyciu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Diagnostyka grafiki.

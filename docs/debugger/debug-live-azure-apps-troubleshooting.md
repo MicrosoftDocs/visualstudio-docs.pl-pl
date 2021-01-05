@@ -1,6 +1,7 @@
 ---
 title: Rozwiązywanie problemów z debugowaniem migawek | Microsoft Docs
-ms.custom: ''
+description: Poznaj Rozwiązywanie problemów i znane problemy dotyczące debugowania migawek w programie Visual Studio. Ładuj ICorProfiler bez powodowania przestojów w witrynie produkcyjnej.
+ms.custom: SEO-VS-2020
 ms.date: 04/24/2019
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64ea7f1ea1f665f5180851e42814ad4e8c12c8c5
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: b5a76c1cae508acd08e5f077d466facf02e0211a
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668524"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728647"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Rozwiązywanie problemów i znane problemy dotyczące debugowania migawek w programie Visual Studio
 
@@ -242,7 +243,7 @@ Debugowanie migawek i Application Insights zależą od ICorProfiler, które są 
 - Rozpocznij pracę z miejscem. Zalecamy odwiedzanie witryny w celu jej ponownego rozgrzania.
 - Zamień miejsce na środowisko produkcyjne.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Debugowanie w Visual Studio](../debugger/index.yml)
 - [Debuguj aplikacje Live ASP.NET przy użyciu Snapshot Debugger](../debugger/debug-live-azure-applications.md)

@@ -1,6 +1,7 @@
 ---
 title: Przygotowanie do debugowania projektów C++ | Microsoft Docs
-ms.custom: seodec18
+description: Uzyskaj informacje na temat przygotowania do debugowania podstawowych typów projektów utworzonych przez szablony projektów Visual C++ w programie Visual Studio.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dc663115e98d7553e03a186874d59b75eb68cb90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e399b28d3ddce07cae263550b536c21ad1db028
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75916322"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728307"
 ---
 # <a name="debugging-preparation-c-project-types"></a>Przygotowanie debugowania: typy projektów C++
 W tej sekcji opisano sposób debugowania podstawowych typów projektów utworzonych przez [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] Szablony projektu.
@@ -80,7 +81,7 @@ W tej sekcji opisano sposób debugowania podstawowych typów projektów utworzon
 
 2. Kliknij węzeł **Właściwości konfiguracji** , aby go otworzyć, jeśli nie jest jeszcze
 
-3. Wybierz pozycję **Ogólne**i ustaw wartość wiersza **danych wyjściowych** na **Debuguj**.
+3. Wybierz pozycję **Ogólne** i ustaw wartość wiersza **danych wyjściowych** na **Debuguj**.
 
 4. Otwórz węzeł **C/C++** i wybierz pozycję **Ogólne**.
 
@@ -101,7 +102,7 @@ W tej sekcji opisano sposób debugowania podstawowych typów projektów utworzon
 
  Debugowanie tego typu aplikacji w programie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jest podobne do programu w zarządzanych aplikacjach Windows Forms.
 
- Podczas tworzenia projektu Windows Forms przy użyciu szablonu projektu program [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatycznie tworzy wymagane ustawienia dla konfiguracji debugowania i wydania. W razie potrzeby możesz zmienić te ustawienia w oknie dialogowym ** \<project name> strony właściwości** . Aby uzyskać więcej informacji, zobacz [debugowanie i wydawanie konfiguracji](../debugger/how-to-set-debug-and-release-configurations.md).
+ Podczas tworzenia projektu Windows Forms przy użyciu szablonu projektu program [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatycznie tworzy wymagane ustawienia dla konfiguracji debugowania i wydania. W razie potrzeby możesz zmienić te ustawienia w oknie dialogowym **\<project name> strony właściwości** . Aby uzyskać więcej informacji, zobacz [debugowanie i wydawanie konfiguracji](../debugger/how-to-set-debug-and-release-configurations.md).
 
  Aby uzyskać więcej informacji, zobacz [Ustawienia projektu dla konfiguracji debugowania języka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).
 
@@ -111,7 +112,7 @@ W tej sekcji opisano sposób debugowania podstawowych typów projektów utworzon
 
 ## <a name="see-also"></a>Zobacz też
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)
-- [Ustawienia projektu dla konfiguracji debugowania w C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
+- [Ustawienia projektu dla konfiguracji debugowania języka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Dołączanie do uruchomionego programu lub wielu programów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
 - [Konfiguracje debugowania i wydania](../debugger/how-to-set-debug-and-release-configurations.md)
 - [Instrukcje: Tworzenie projektu aplikacji systemu Windows](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))
