@@ -1,5 +1,7 @@
 ---
 title: Projektant manifestu VSIX | Microsoft Docs
+description: Dowiedz się, jak projektant manifestu VSIX modyfikuje plik manifestu pakietu VSIX, który ustawia zachowanie instalacji rozszerzenia programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,19 +16,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30620e0fe91d0e90995d2d2f721950f878c65fdc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6323b4330279848bc0453bdc7413904e2582d13a
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697896"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863964"
 ---
 # <a name="vsix-manifest-designer"></a>Projektant manifestu VSIX
 Modyfikuje plik manifestu pakietu VSIX, który ustawia zachowanie instalacji rozszerzenia programu Visual Studio.
 
  **Projektant manifestu VSIX** mapuje na bazowy schemat VSIX. Każdy element w schemacie można ustawić przy użyciu odpowiadającego im formantu w projektancie. Aby uzyskać więcej informacji na temat schematu, zobacz [odwołanie do schematu rozszerzenia VSIX 2,0](../extensibility/vsix-extension-schema-2-0-reference.md).
 
- Aby otworzyć **projektanta manifestu VSIX**, zlokalizuj plik *source. Extension. vsixmanifest* w **Eksplorator rozwiązań**i Otwórz plik. Jeśli plik nie zawiera prawidłowego kodu XML, projektant manifestu nie zostanie otwarty.
+ Aby otworzyć **projektanta manifestu VSIX**, zlokalizuj plik *source. Extension. vsixmanifest* w **Eksplorator rozwiązań** i Otwórz plik. Jeśli plik nie zawiera prawidłowego kodu XML, projektant manifestu nie zostanie otwarty.
 
 > [!NOTE]
 > Plik *source. Extension. vsixmanifest* jest wyprowadzany do *rozszerzenia vsixmanifest* , gdy pakiet został skompilowany.
@@ -94,7 +96,7 @@ Modyfikuje plik manifestu pakietu VSIX, który ustawia zachowanie instalacji roz
 
   **Ten VSIX jest instalowany dla wszystkich użytkowników (wymaga podniesienia uprawnień przy instalacji)** Jeśli zaznaczysz to pole wyboru, rozszerzenie zostanie zainstalowane dla wszystkich użytkowników. w przeciwnym razie jest zainstalowana tylko dla bieżącego użytkownika.
 
-  **Ten VSIX jest instalowany przez Instalator Windows** Jeśli zaznaczysz to pole wyboru, rozszerzenie zostanie zainstalowane przez Instalator Windows (plik*MSI* ); w przeciwnym razie jest instalowany jako typowy pakiet VSIX (plik*VSIX* ).
+  **Ten VSIX jest instalowany przez Instalator Windows** Jeśli zaznaczysz to pole wyboru, rozszerzenie zostanie zainstalowane przez Instalator Windows (plik *MSI* ); w przeciwnym razie jest instalowany jako typowy pakiet VSIX (plik *VSIX* ).
 
   Karta **zasoby** zawiera następujące kontrolki.
 

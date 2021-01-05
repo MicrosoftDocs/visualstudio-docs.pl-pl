@@ -1,5 +1,7 @@
 ---
 title: Użycie RDT_ReadLock | Microsoft Docs
+description: Dowiedz się więcej na temat _VSRDTFLAGS. Flaga RDT_ReadLock, która zapewnia logikę blokowania dokumentu w uruchomionej tabeli dokumentów.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb897fab61e1e14b52863b5853748c685200d5ba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c946d69cf1aded072d27e7c6ccbdf28f1122571
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705930"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875391"
 ---
 # <a name="rdt_readlock-usage"></a>Użycie flagi RDT_ReadLock
 

@@ -1,5 +1,7 @@
 ---
 title: Visual Studio SDK | Microsoft Docs
+description: Zestaw Visual Studio SDK ułatwia poszerzanie funkcji i dodawanie nowych funkcji do programu Visual Studio. Dowiedz się więcej na temat sposobów, w których można rozciągnąć program Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2dbe2832d52d17047795d1898f0e0bfd8a275bb9
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 4be4b07e322b5be148593c70136eb44ec7fcfdf7
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414389"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863848"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Zestaw Visual Studio SDK ułatwia poszerzanie funkcji programu Visual Studio lub integrowanie nowych funkcji w programie Visual Studio. Rozszerzenia można dystrybuować do innych użytkowników, a także do Visual Studio Marketplace. Poniżej przedstawiono kilka sposobów, w których można rozciągnąć program Visual Studio:

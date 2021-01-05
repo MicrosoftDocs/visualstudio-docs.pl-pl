@@ -1,5 +1,7 @@
 ---
 title: Obiekt VSTextBuffer | Microsoft Docs
+description: Obiekt VSTextBuffer reprezentuje strumień tekstu Unicode, który jest zazwyczaj skojarzony z plikiem. W tym artykule wymieniono interfejsy VSTextBuffer.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 193d96be91839143893ac0798db723f3e94ea26c
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: e5c2afa08e9c480342bff95d417dfb9174250b83
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93413919"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863949"
 ---
 # <a name="vstextbuffer-object"></a>Obiekt VSTextBuffer
 Obiekt buforu tekstu reprezentuje strumień tekstu Unicode, który jest zazwyczaj skojarzony z plikiem. <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>Obiekt może być używany poza kontekstem podstawowego edytora, jak w, w kreatorze.

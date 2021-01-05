@@ -1,5 +1,7 @@
 ---
 title: Rejestrowanie generatorów pojedynczych plików | Microsoft Docs
+description: Dowiedz się, jak zarejestrować niestandardowe narzędzie w programie Visual Studio, aby utworzyć jego wystąpienie i skojarzyć je z typem określonego projektu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 185e60daac2aef2c8aeeb4f087547984e6fcf510
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 7a0ce4afeddebdec8519467e1f4249095ce98f6b
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012038"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875261"
 ---
 # <a name="registering-single-file-generators"></a>Rejestrowanie generatorów jednoplikowych
 Aby udostępnić niestandardowe narzędzie w programie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , należy je zarejestrować, aby [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] można było je utworzyć i kojarzyć z określonym typem projektu.
@@ -36,7 +38,7 @@ Aby udostępnić niestandardowe narzędzie w programie [!INCLUDE[vsprvs](../../c
    "Assembly"="Microsoft.VSDesigner, Version=14.0.0.0, Culture=Neutral, PublicKeyToken=b03f5f7f11d50a3a"
    ```
 
-2. Utwórz klucz rejestru w odpowiedniej gałęzi, w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] obszarze Identyfikator GUID generatorów \\ *GUID* , gdzie *GUID* jest identyfikatorem GUID zdefiniowanym przez system lub usługę projektu określonego języka. Nazwa klucza jest programowaną nazwą narzędzia niestandardowego. Klucz niestandardowego narzędzia ma następujące wartości:
+2. Utwórz klucz rejestru w odpowiedniej gałęzi, w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] obszarze Identyfikator GUID generatorów \\  , gdzie *GUID* jest identyfikatorem GUID zdefiniowanym przez system lub usługę projektu określonego języka. Nazwa klucza jest programowaną nazwą narzędzia niestandardowego. Klucz niestandardowego narzędzia ma następujące wartości:
 
    - (Domyślnie)
 
@@ -44,11 +46,11 @@ Aby udostępnić niestandardowe narzędzie w programie [!INCLUDE[vsprvs](../../c
 
    - Identyfikator
 
-        Wymagany. Określa identyfikator biblioteki klas składnika COM, który implementuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> .
+        Wymagane. Określa identyfikator biblioteki klas składnika COM, który implementuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> .
 
    - GeneratesDesignTimeSource
 
-        Wymagany. Wskazuje, czy typy z plików utworzonych przez to narzędzie niestandardowe są udostępniane projektantom wizualizacji. Wartość tego parametru musi być równa (zero) 0 dla typów niedostępnych dla projektantów wizualizacji lub (jeden) 1 dla typów dostępnych dla projektantów wizualizacji.
+        Wymagane. Wskazuje, czy typy z plików utworzonych przez to narzędzie niestandardowe są udostępniane projektantom wizualizacji. Wartość tego parametru musi być równa (zero) 0 dla typów niedostępnych dla projektantów wizualizacji lub (jeden) 1 dla typów dostępnych dla projektantów wizualizacji.
 
    > [!NOTE]
    > Narzędzie niestandardowe należy zarejestrować osobno dla każdego języka, dla którego ma być dostępne narzędzie niestandardowe.
@@ -67,7 +69,7 @@ Aby udostępnić niestandardowe narzędzie w programie [!INCLUDE[vsprvs](../../c
    "GeneratesDesignTimeSource"=dword:00000001
    ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>
 - [Implementowanie generatorów jednoplikowych](../../extensibility/internals/implementing-single-file-generators.md)
 - [Udostępnianie typów dla projektantów wizualnych](../../extensibility/internals/exposing-types-to-visual-designers.md)

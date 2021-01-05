@@ -1,5 +1,7 @@
 ---
 title: Rejestrowanie szablonów projektów i elementów | Microsoft Docs
+description: Dowiedz się, w jaki sposób program Visual Studio używa informacji rejestracyjnych dla typów projektów, aby określić, co ma być wyświetlane w oknach dialogowych Dodaj nowy projekt i Dodaj nowy element.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b64504c39b1fc3c4a82530b265cfd0e96832b4f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 999b435719113883201b7619daca9a84d095294e
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705823"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875274"
 ---
 # <a name="registering-project-and-item-templates"></a>Rejestrowanie szablonów projektów i elementów
 Typy projektów muszą rejestrować katalogi, w których znajdują się szablony projektów i elementów projektu. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] używa informacji o rejestracji skojarzonych z typami projektów, aby określić, co ma być wyświetlane w oknach dialogowych **Dodaj nowy projekt** i **Dodaj nowy element** .
@@ -27,7 +29,7 @@ Typy projektów muszą rejestrować katalogi, w których znajdują się szablony
  Aby uzyskać więcej informacji na temat szablonów, zobacz [Dodawanie projektów i szablonów elementów projektów](../../extensibility/internals/adding-project-and-project-item-templates.md).
 
 ## <a name="registry-entries-for-projects"></a>Wpisy rejestru dla projektów
- W poniższych przykładach przedstawiono wpisy rejestru w obszarze HKEY_LOCAL_MACHINE \\ < *wersja* \software\microsoft\visualstudio>. Towarzyszące tabele objaśniają elementy używane w przykładach.
+ W poniższych przykładach przedstawiono wpisy rejestru w obszarze HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\ < *wersja*>. Towarzyszące tabele objaśniają elementy używane w przykładach.
 
 ```
 [Projects\{ProjectGUID}]
@@ -67,7 +69,7 @@ Typy projektów muszą rejestrować katalogi, w których znajdują się szablony
 
  **Pliki Visual C# ( \* . cs, \* . resx, \* . Settings, \* . xsd, \* . WSDL); \* . CS, \* . resx, \* . Settings, \* . xsd, \* . WSDL)**
 
- W celu obsługi rejestracji wielu filtrów każdy filtr jest rejestrowany w jego własnym podkluczu, w obszarze HKEY_LOCAL_MACHINE \software\microsoft\visualstudio \\ < *wersja*> \Projects \\ { \<*ProjectGUID*> } \Filters \\ < *Subkey*>. Nazwa podklucza jest dowolnie. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ignoruje nazwę podklucza i używa tylko jego wartości.
+ W celu obsługi rejestracji wielu filtrów każdy filtr jest rejestrowany we własnym podkluczu w obszarze HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\ < *wersja*> \Projects \\ { \<*ProjectGUID*> } \Filters \\ < *podklucza*>. Nazwa podklucza jest dowolnie. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ignoruje nazwę podklucza i używa tylko jego wartości.
 
  Można kontrolować konteksty, w których filtr jest używany, ustawiając flagi, pokazane w poniższej tabeli. Jeśli filtr nie ma ustawionych flag, będzie wyświetlany po wspólnych filtrach w oknie dialogowym **Dodaj istniejący element** i oknie dialogowym **Otwórz plik** , ale nie będzie używany w oknie dialogowym **Znajdź w plikach** .
 

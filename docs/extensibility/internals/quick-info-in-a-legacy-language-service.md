@@ -1,5 +1,7 @@
 ---
 title: Szybkie informacje w starszej wersji usługi językowej | Microsoft Docs
+description: Dowiedz się więcej o obsłudze operacji funkcji IntelliSense Quick info do wyświetlania informacji o identyfikatorze.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d070c607313b406f036a5b6f071eaa371070408
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 255022c2722104d3790d1c417eee644730ddc1e8
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705943"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875079"
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>Szybkie informacje w starszej wersji usługi językowej
 Funkcja IntelliSense — szybkie informacje wyświetla informacje o identyfikatorze w źródle, gdy użytkownik umieści karetkę w identyfikatorze i wybiera **szybkie informacje** z menu **IntelliSense** lub utrzymuje wskaźnik myszy nad identyfikatorem. Powoduje to wyświetlenie etykietki narzędzia z informacjami o identyfikatorze. Te informacje zwykle składają się z typu identyfikatora. Gdy aparat debugowania jest aktywny, te informacje mogą zawierać bieżącą wartość. Aparat debugowania dostarcza wartości wyrażeń, podczas gdy usługa języka obsługuje tylko identyfikatory.

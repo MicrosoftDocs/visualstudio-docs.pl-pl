@@ -1,5 +1,7 @@
 ---
 title: Odwołanie do schematu manifestu szablonu programu Visual Studio | Microsoft Docs
+description: Ten schemat zawiera opis formatu plików manifestu szablonu programu Visual Studio, które są generowane dla szablonów projektów lub elementów programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbe46851d9df85569be796b4147217bd7db450ed
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d712f2cb95b2df9680c4476805e9dfb6809cf038
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697989"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863840"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Odwołanie do schematu manifestu szablonu programu Visual Studio
 Ten schemat opisuje format plików manifestu szablonu programu Visual Studio (*. vstman*), które są generowane dla szablonów projektów lub elementów programu Visual Studio. Schemat opisuje również lokalizację i inne istotne informacje dotyczące szablonu.
@@ -28,7 +30,7 @@ Ten schemat opisuje format plików manifestu szablonu programu Visual Studio (*.
 
 ### <a name="attributes"></a>Atrybuty
 
-- **Wersja**: ciąg reprezentujący wersję manifestu szablonu. Wymagany.
+- **Wersja**: ciąg reprezentujący wersję manifestu szablonu. Wymagane.
 
 - **Ustawienia regionalne**: ciąg reprezentujący ustawienia regionalne lub wartości lokalne manifestu szablonu. Wartość ustawień regionalnych dotyczy wszystkich szablonów. Należy użyć oddzielnego manifestu dla każdego ustawienia regionalnego. Opcjonalny.
 

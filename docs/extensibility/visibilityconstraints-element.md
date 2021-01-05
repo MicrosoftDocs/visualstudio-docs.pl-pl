@@ -1,5 +1,7 @@
 ---
 title: VisibilityConstraints — Element | Microsoft Docs
+description: Element VisibilityConstraints określa statyczną widoczność grup poleceń i pasków narzędzi.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1aaa9573b883910ac6fa5d921a9bc79ce1c1cf3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f50f23847da8f6d56da6763146efd147aebca8c6
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698192"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863911"
 ---
 # <a name="visibilityconstraints-element"></a>VisibilityConstraints, element
 Element VisibilityConstraints określa statyczną widoczność grup poleceń i pasków narzędzi. Widoczność jest najpierw kontrolowana przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zintegrowane środowisko programistyczne (IDE) bez ładowania pakietu VSPackage.
@@ -58,11 +60,11 @@ Element VisibilityConstraints określa statyczną widoczność grup poleceń i p
 
 ```xml
 <VisibilityConstraints>
-  <VisibilityItem guid="cmdSetGuidMyProductCommands"     id="cmdidAddWidget"
+  <VisibilityItem guid="cmdSetGuidMyProductCommands"     id="cmdidAddWidget"
     context="guidNotViewSourceMode"/>
 </VisibilityConstraints>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [VisibilityItem, element](../extensibility/visibilityitem-element.md)
 - [Tabela poleceń programu Visual Studio (. Vsct) — pliki](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

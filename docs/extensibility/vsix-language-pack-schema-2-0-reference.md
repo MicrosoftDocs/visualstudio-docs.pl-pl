@@ -1,5 +1,7 @@
 ---
 title: Pakiet językowy VSIX schemat 2,0 Dokumentacja | Microsoft Docs
+description: Schemat pakietu Language Pack VSIX zawiera zlokalizowane informacje o instalacji pakietów VSIX. Wersja 2,0 obsługuje dodatkowe elementy lokalizacji.
+ms.custom: SEO-VS-2020
 ms.date: 10/26/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.assetid: 2a2932bc-cdbe-4d32-91fa-a3e0474f9098
 author: acangialosi
 ms.author: anthc
 manager: jillfra
-ms.openlocfilehash: f0eee51c0654c6e517209e23baf43c6b262d8f73
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: fc9c3c1aa7f8cf77ebf165a3e10a67ccbd5887f7
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91830708"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863829"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>Dokumentacja schematu pakietu języka VSIX 2,0
 

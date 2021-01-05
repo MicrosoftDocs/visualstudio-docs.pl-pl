@@ -1,5 +1,7 @@
 ---
 title: Układ dla programu Visual Studio | Microsoft Docs
+description: Dowiedz się więcej o układzie dla okien dialogowych programu Visual Studio, w tym okna dialogowe z motywami i nowe okna dialogowe z motywem.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4eb8eb7468751d46b922c15530389c554a8d3e36
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3e6c90831c39f0e378dd9060397c68592ec73384
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698394"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863671"
 ---
 # <a name="layout-for-visual-studio"></a>Układ dla programu Visual Studio
 Większość okien dialogowych programu Visual Studio to [układ okien](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout)dialogowych, które są nienależącymi do nich oknach dialogowych, które są zgodne ze standardowymi [zasadami układu okien dialogowych systemu Windows](/windows/desktop/uxguide/win-dialog-box). Ponieważ program Visual Studio przechodzi do odświeżania interfejsu użytkownika, niektóre z bardziej widocznych okien dialogowych mają nowy projekt, który określa je jako środowiska definiowania produktu. Ten [Układ okna dialogowego z motywem](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) ma wygląd z motywem.
@@ -107,7 +109,7 @@ Większość okien dialogowych programu Visual Studio to [układ okien](../../ex
 
 - Użyj wyrównania poziomego (wiersz) przycisków wewnętrznych, gdy przycisk **OK** / **Anuluj** jest zorientowany pionowo w prawym górnym rogu. Ta sytuacja jest mniej wspólna.
 
-- Rozmiar wnętrza przycisku powinien być ukierunkowany na standardowy przycisk 75x23 pikseli, dopasowując do rozmiaru przycisków **OK** / **Cancel** . Jeśli etykieta przycisku powoduje przekroczenie rozmiaru przycisku standardowego, pozostałe przyciski w tym zestawie powinny być wyrównane z tym szerszym rozmiarem.
+- Rozmiar wnętrza przycisku powinien być ukierunkowany na standardowy przycisk 75x23 pikseli, dopasowując do rozmiaru przycisków **OK** /  . Jeśli etykieta przycisku powoduje przekroczenie rozmiaru przycisku standardowego, pozostałe przyciski w tym zestawie powinny być wyrównane z tym szerszym rozmiarem.
 
   ![Przyciski OK i Anuluj](../../extensibility/ux-guidelines/media/0801-f_horizokcan.png "0801 — f_HorizOKCan")
 

@@ -1,5 +1,7 @@
 ---
 title: Odwołanie do schematu rozszerzenia VSIX 2,0 | Microsoft Docs
+description: Schemat rozszerzenia VSIX 2,0 definiuje format pliku manifestu wdrożenia VSIX, który opisuje zawartość pakietu VSIX.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78e260c62d67afc10fea25d52169c48b64c82f72
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b2edd0349555380f6d98d24f7a40c22e48797d12
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697910"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863761"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Dokumentacja schematu rozszerzenia VSIX 2,0
 Plik manifestu wdrożenia VSIX opisuje zawartość pakietu VSIX. Format pliku podlega schematowi. Wersja 2,0 tego schematu obsługuje Dodawanie niestandardowych typów i atrybutów.  Schemat manifestu jest rozszerzalny. Moduł ładujący manifest ignoruje elementy XML i atrybuty, które nie są zrozumiałe.

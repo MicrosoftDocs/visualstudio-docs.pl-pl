@@ -1,5 +1,7 @@
 ---
 title: Dostarczanie automatyzacji dla pakietów VSPackage | Microsoft Docs
+description: Dowiedz się, jak zapewnić automatyzację pakietów VSPackage przez implementację obiektów pakietu VSPackage i implementujących standardowe obiekty automatyzacji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +13,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6364f9cbaf3409e076eeb77365e5d793c7be96cb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 939de72d672b750d2f2fc61a6c412368df5523d8
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705946"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875404"
 ---
 # <a name="providing-automation-for-vspackages"></a>Zapewnianie automatyzacji pakietów VSPackage
 Istnieją dwa podstawowe sposoby zapewnienia automatyzacji dla pakietów VSPackage: przez implementację obiektów pakietu VSPackage i implementowanie standardowych obiektów automatyzacji. Ogólnie rzecz biorąc, są one używane razem w celu rozbudowania modelu automatyzacji środowiska.
 
-## <a name="vspackage-specific-objects"></a>Pakietu VSPackage — obiekty
+## <a name="vspackage-specific-objects"></a>VSPackage-Specific obiektów
  Niektóre miejsca w modelu automatyzacji wymagają podania obiektów automatyzacji, które są unikatowe dla pakietu VSPackage. Na przykład nowe projekty wymagają odrębnych obiektów, które są dostępne tylko dla pakietu VSPackage. Nazwy tych obiektów są wprowadzane w rejestrze i uzyskiwane za pomocą wywołań do `DTE` obiektu Environment.
 
  Obiektów specyficznych dla pakietu VSPackage można także uzyskać, gdy odbiorca usługi Automation używa obiektu dostarczonego za pośrednictwem właściwości Object obiektu standardowego. Na przykład `Window` obiekt standardowy ma `Object` Właściwość, znaną często jako `Windows.Object` Właściwość. Gdy konsumenci wywołują w `Window.Object` oknie zaimplementowanym w pakietu VSPackage, przekazujesz określony obiekt automatyzacji własny projekt.

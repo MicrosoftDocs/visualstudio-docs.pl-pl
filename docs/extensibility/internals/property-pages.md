@@ -1,5 +1,7 @@
 ---
 title: Strony właściwości | Microsoft Docs
+description: Dowiedz się więcej na temat pracy ze stronami właściwości dla nowego typu projektu w Visual Studio SDK, który umożliwia użytkownikom wyświetlanie i zmienianie właściwości projektu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac788f51bcdc52cd39469a272909890333c5016b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d446e731c08b85c2c903c2414528ac2a7370c26
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706057"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875534"
 ---
 # <a name="property-pages"></a>Strony właściwości
 Użytkownicy mogą wyświetlać i zmieniać właściwości zależne od konfiguracji projektu i niezależne za pomocą stron właściwości. Przycisk **strony właściwości** jest włączony w oknie **właściwości** lub na Eksplorator rozwiązań pasku narzędzi dla obiektów, które udostępniają widok strony właściwości zaznaczonego obiektu. Strony właściwości są tworzone przez środowisko i są dostępne dla rozwiązań i projektów. Mogą one być jednak dostępne dla elementów projektu, które wykorzystują właściwości zależne od konfiguracji. Tej funkcji można użyć, gdy pliki w projekcie wymagają różnych ustawień przełącznika kompilatora w celu poprawnego skompilowania.

@@ -1,5 +1,7 @@
 ---
 title: Obiekty kontekstu wyboru | Microsoft Docs
+description: Dowiedz się więcej na temat wewnętrznych informacji o tym, jak środowisko IDE programu Visual Studio używa globalnego obiektu kontekstu wyboru, aby określić, co powinno być wyświetlane w IDE.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e4f33dd0168a667b8f266ea606cecf0c26d62f1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf5e54f00ecbac03eaebe68c6fb4de410987b63f
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705511"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875573"
 ---
 # <a name="selection-context-objects"></a>Obiekty kontekstu wyboru
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Zintegrowane środowisko programistyczne (IDE) używa obiektu kontekstu globalnego wyboru, aby określić, co powinno być wyświetlane w środowisku IDE. Każde okno w IDE może mieć własny obiekt kontekstu zaznaczenia wypychany do globalnego kontekstu wyboru. IDE aktualizuje kontekst zaznaczenia globalnego z wartościami z okna, gdy to okno ma fokus. Aby uzyskać więcej informacji, zobacz [informacje zwrotne dla użytkownika](../../extensibility/internals/feedback-to-the-user.md).

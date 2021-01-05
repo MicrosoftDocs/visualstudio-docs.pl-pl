@@ -1,5 +1,7 @@
 ---
 title: Weryfikowanie podtypów projektu w czasie wykonywania | Microsoft Docs
+description: Dowiedz się, jak mieć pakietu VSPackage weryfikują obecność określonego niestandardowego podtypu projektu, od którego zależy.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0d739a9f8734dd8941e3254d03364cbf4c77350
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b5d69c54117f6e88ef57fc57f7588b2f9b6c72e3
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698184"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863934"
 ---
 # <a name="verify-subtypes-of-a-project-at-run-time"></a>Weryfikuj podtypy projektu w czasie wykonywania
 Pakietu VSPackage, który zależy od niestandardowego podtypu projektu, powinien zawierać logikę do wyszukania tego podtypu, aby można było bezpiecznie kończyć się niepowodzeniem, jeśli podtyp nie jest obecny. Poniższa procedura pokazuje, jak sprawdzić obecność określonego podtypu.

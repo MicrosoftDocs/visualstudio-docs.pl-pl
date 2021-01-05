@@ -1,5 +1,7 @@
 ---
 title: Atrybuty warunkowe schematu XML VSCT | Microsoft Docs
+description: Dowiedz się, jak zastosować atrybuty warunkowe do list i elementów schematu XML VSCT. Atrybuty mają wartość PRAWDA lub FAŁSZ, kontrolując wynikowe dane wyjściowe.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2b1fb3ee1b2cd396f25ec5591a585f8d87648d0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5f9f51e9380585d4191c5969d96fbb3a93ea42a
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697947"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863717"
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>Atrybuty warunkowe schematu XML VSCT
 Można zastosować atrybuty warunkowe do wszystkich list i elementów. Operatory logiczne i wyrażenia rozszerzania symboli mają wartość PRAWDA lub FAŁSZ. W przypadku wartości true skojarzona lista lub element zostanie uwzględniony w wynikowym wyjściu.

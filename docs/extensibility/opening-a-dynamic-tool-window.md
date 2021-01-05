@@ -1,5 +1,7 @@
 ---
 title: Otwieranie okna narzędzia dynamicznego | Microsoft Docs
+description: Informacje o oknach narzędzi dynamicznych, które są otwierane za każdym razem, gdy określony kontekst interfejsu użytkownika ma zastosowanie i zostanie zamknięty, gdy kontekst interfejsu użytkownika już nie ma zastosowania.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a06cea6d9de4271572457dc9fe6473b5c969b66
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 12b08f676e02a9023374c709aa18edfc0e8815db
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903715"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863514"
 ---
 # <a name="open-a-dynamic-tool-window"></a>Otwieranie okna narzędzia dynamicznego
 Okna narzędzi są zwykle otwierane za pomocą polecenia w menu lub równoważnego skrótu klawiaturowego. Czasami jednak może być konieczne okno narzędzi, które jest otwierane za każdym razem, gdy określony kontekst interfejsu użytkownika zostanie zastosowany, i zamyka się, gdy kontekst interfejsu użytkownika już nie ma zastosowania. Te typy okien narzędzi są nazywane *dynamicznym* lub *autowidocznością*.

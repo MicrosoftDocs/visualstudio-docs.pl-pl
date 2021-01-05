@@ -1,5 +1,7 @@
 ---
 title: Wskazówki dotyczące środowiska użytkownika programu Visual Studio | Microsoft Docs
+description: Wskazówki dotyczące środowiska użytkownika programu Visual Studio zawierają popularne modele użytkowników i wzorce interakcji, które ułatwiają tworzenie spójnych środowisk użytkownika dla nowych funkcji.
+ms.custom: SEO-VS-2020
 ms.date: 10/05/2018
 ms.topic: conceptual
 ms.assetid: 3abbe495-cbbc-4982-a809-38bda34553a7
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 994d0029e7dfdc3559adae0e1c022acd38d7f5a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c8200d5d0dbb18240f67214abecca4d066ce6270
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698203"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863948"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Wskazówki dotyczące interfejsu użytkownika w programie Visual Studio
 Postępuj zgodnie z instrukcjami dotyczącymi środowiska użytkownika programu Visual Studio, jeśli projektujesz nowe funkcje programu Visual Studio. Te wytyczne zawierają informacje o typowych modelach użytkowników i wzorcach interakcji, dzięki którym projektanci nowych interfejsów użytkownika mogą tworzyć środowiska użytkownika, które są bezproblemowe i spójne w środowisku programistycznym.

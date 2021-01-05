@@ -1,5 +1,7 @@
 ---
 title: Menu i polecenia dla programu Visual Studio | Microsoft Docs
+description: Dowiedz się, jak paski poleceń umożliwiają elastyczność w interfejsie użytkownika podczas tworzenia nowych funkcji dla programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0a1ed675-2bd1-4603-ba3a-f40dfb5cfb69
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1f22b7ac4377b600208c079b6af1eff7fc3cbfc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7abb0249efc1a8da5d7e65572777e192e72c25e7
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698384"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863543"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Menu i polecenia dla programu Visual Studio
 ## <a name="command-usage"></a>Użycie polecenia
@@ -49,13 +51,13 @@ ms.locfileid: "80698384"
  Warto umieścić polecenia w pobliżu obszaru fokusu użytkownika. W tym celu należy utworzyć osadzony pasek narzędzi u góry okna narzędzi lub edytora dokumentów. Polecenia umieszczone na pasku narzędzi powinny być specyficzne dla obszaru zawartości w oknie. Nie należy duplikować poleceń udostępnionych na tych paskach narzędzi. Na przykład nigdy nie należy umieszczać ikony "Save" w osadzonym pasku narzędzi.
 
 ### <a name="content-and-command-visibility"></a>Widoczność zawartości i poleceń
- Polecenia istnieją w następujących zakresach: **Environment**, **Hierarchy**i **Document**. Należy znać każdy zakres, aby mieć pewność, że w rozmieszczeniu poleceń.
+ Polecenia istnieją w następujących zakresach: **Environment**, **Hierarchy** i **Document**. Należy znać każdy zakres, aby mieć pewność, że w rozmieszczeniu poleceń.
 
- Polecenia w zakresie **środowiska** określają kontekst podstawowy i są współużytkowane przez wiele kontekstów. Zmieniają widoczność lub rozmieszczenie dokumentów i okien narzędzi. Między poleceniami w zakresie środowiska są **nowe projekty**, **Połącz z serwerem**, **Dołączaj proces**, **Wytnij**, **Kopiuj**, **Wklej**, **Znajdź**, **Opcje**, **Dostosuj**, **nowe okno**i **Wyświetlaj pomoc**.
+ Polecenia w zakresie **środowiska** określają kontekst podstawowy i są współużytkowane przez wiele kontekstów. Zmieniają widoczność lub rozmieszczenie dokumentów i okien narzędzi. Między poleceniami w zakresie środowiska są **nowe projekty**, **Połącz z serwerem**, **Dołączaj proces**, **Wytnij**, **Kopiuj**, **Wklej**, **Znajdź**, **Opcje**, **Dostosuj**, **nowe okno** i **Wyświetlaj pomoc**.
 
- Polecenia w zakresie **hierarchii** zarządzają hierarchiami w programie Visual Studio, w tym **projektami**, **zespołem**i **danymi**. Są one powiązane z podkontekstem projektu — na przykład **debugowanie**, **Kompilowanie**, **testowanie**, **Architektura**lub **Analizowanie**. Między poleceniami w zakresie hierarchii są **dodawane nowe elementy**, **nowe zapytania**, **Ustawienia projektu**, **Dodaj nowe źródło danych**, **Uruchom Kreatora wydajności**i **Nowy diagram**.
+ Polecenia w zakresie **hierarchii** zarządzają hierarchiami w programie Visual Studio, w tym **projektami**, **zespołem** i **danymi**. Są one powiązane z podkontekstem projektu — na przykład **debugowanie**, **Kompilowanie**, **testowanie**, **Architektura** lub **Analizowanie**. Między poleceniami w zakresie hierarchii są **dodawane nowe elementy**, **nowe zapytania**, **Ustawienia projektu**, **Dodaj nowe źródło danych**, **Uruchom Kreatora wydajności** i **Nowy diagram**.
 
- Polecenia w zakresie **dokumentu** działają dla zawartości dokumentu, takiego jak kod, projekt lub kwerenda elementu pracy (wiq). Działają one również w widoku okna narzędzi lub są specyficzne dla tego okna narzędzia. Polecenia zakresu dokumentu działają również na obiektach plików, które są same dla hierarchii, na przykład **Usuń z projektu**. Między poleceniami w zakresie dokumentu są **refaktoryzacje > Zmień nazwę**, **Utwórz kopię elementu pracy**, **Rozwiń wszystko**, **Zwiń wszystko**i **Utwórz zadanie użytkownika**.
+ Polecenia w zakresie **dokumentu** działają dla zawartości dokumentu, takiego jak kod, projekt lub kwerenda elementu pracy (wiq). Działają one również w widoku okna narzędzi lub są specyficzne dla tego okna narzędzia. Polecenia zakresu dokumentu działają również na obiektach plików, które są same dla hierarchii, na przykład **Usuń z projektu**. Między poleceniami w zakresie dokumentu są **refaktoryzacje > Zmień nazwę**, **Utwórz kopię elementu pracy**, **Rozwiń wszystko**, **Zwiń wszystko** i **Utwórz zadanie użytkownika**.
 
 ### <a name="command-placement-decisions"></a>Decyzje dotyczące umieszczania poleceń
  Po podjęciu decyzji o utworzeniu polecenia należy określić jego odpowiednie położenie i zdecydować, czy ma zostać utworzony skrót klawiaturowy. Postępuj zgodnie z tą ścieżką decyzji, aby określić, gdzie umieścić polecenie:
@@ -81,7 +83,7 @@ ms.locfileid: "80698384"
 
 - Widok
 
-- narzędzia
+- Narzędzia
 
 - Okno
 
@@ -89,7 +91,7 @@ ms.locfileid: "80698384"
 
 ##### <a name="project-specific-menus"></a>Menu specyficzne dla projektu
 
-- Projekt
+- Project
 
 - Kompilacja
 
@@ -101,7 +103,7 @@ ms.locfileid: "80698384"
 
 - Dane
 
-- Testowanie
+- Test
 
 - Architektura
 

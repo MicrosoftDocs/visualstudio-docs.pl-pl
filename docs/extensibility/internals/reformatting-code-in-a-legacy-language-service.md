@@ -1,5 +1,7 @@
 ---
 title: Ponowne formatowanie kodu w starszej wersji usługi językowej | Microsoft Docs
+description: Dowiedz się więcej na temat włączania obsługi ponownego formatowania kodu źródłowego dla starszej wersji usługi językowej programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd3e83c7299298b16a6fb3178b189479a80e1728
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3fcd9871cb0eeec69b98ada83af15f0daa624cb4
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705913"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875365"
 ---
 # <a name="reformatting-code-in-a-legacy-language-service"></a>Ponowne formatowanie kodu w starszej wersji usługi językowej
 
@@ -27,7 +29,7 @@ W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kodzie źródłow
 
 Użytkownicy mogą rozpocząć operację ponownego formatowania, wybierając **opcję Formatuj zaznaczenie** lub **Formatuj dokument** z menu **Zaawansowane** w menu **Edycja** . Operację ponownego formatowania można również wyzwolić, gdy zostanie wstawiony fragment kodu lub określony znak. Na przykład po wpisaniu zamykającego nawiasu klamrowego w języku C# wszystkie elementy między odpowiednim otwierającym nawiasem klamrowym i zamykanym nawiasem klamrowym są automatycznie wcięte do odpowiedniego poziomu.
 
-Gdy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] program wysyła **Format Selection** polecenie formatowania lub **Formatuj dokument** do usługi językowej, <xref:Microsoft.VisualStudio.Package.ViewFilter> Klasa wywołuje <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> metodę w <xref:Microsoft.VisualStudio.Package.Source> klasie. Aby obsługiwać formatowanie, należy zastąpić <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> metodę i podać własny kod formatowania.
+Gdy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] program wysyła  polecenie formatowania lub **Formatuj dokument** do usługi językowej, <xref:Microsoft.VisualStudio.Package.ViewFilter> Klasa wywołuje <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> metodę w <xref:Microsoft.VisualStudio.Package.Source> klasie. Aby obsługiwać formatowanie, należy zastąpić <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> metodę i podać własny kod formatowania.
 
 ## <a name="enabling-support-for-reformatting"></a>Włączanie obsługi ponownego formatowania
 

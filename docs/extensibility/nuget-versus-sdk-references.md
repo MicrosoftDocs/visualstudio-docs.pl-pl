@@ -1,5 +1,7 @@
 ---
 title: Różnice pomiędzy dodawaniem odwołań za pomocą NuGet a Extension SDK
+description: Dowiedz się więcej o różnicach między oprogramowaniem pakietu jako pakietem NuGet lub zestawem SDK, gdy istnieje odwołanie w projekcie programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 08/02/2019
 ms.topic: conceptual
 author: acangialosi
@@ -7,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad7fc9132647988aee46a2bb07e992505109d33c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50197eeda1828156113fbbfa507447484618861a
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702430"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863771"
 ---
 # <a name="nuget-versus-sdk-as-a-project-reference"></a>Pakiet NuGet a zestaw SDK jako odwołanie do projektu
 
@@ -31,7 +33,7 @@ Poniższa tabela zawiera porównanie funkcji odwołujących się do zestawu SDK 
 | Mechanizm odwołuje się do jednej jednostki, a następnie wszystkie pliki i funkcje są dostępne. | Y | Zestaw SDK można dodać przy użyciu okna dialogowego **Menedżer odwołań** , a wszystkie pliki i funkcje są dostępne podczas pracy deweloperskiej. | Y | |
 | Program MSBuild automatycznie korzysta z zestawów i plików metadanych systemu Windows (*winmd*). | Y | Odwołania w zestawie SDK są automatycznie przenoszone do kompilatora. | Y | |
 | Program MSBuild automatycznie korzysta z plików. h lub. lib. | Y | Plik *SDKName. props* informuje program Visual Studio, jak skonfigurować katalog Visual C++ i tak dalej, aby umożliwić użycie plików *. h* lub *. lib* . | N | |
-| Program MSBuild automatycznie wykorzystuje pliki  *js* lub *CSS* . | Y | W **Eksplorator rozwiązań**można rozwinąć węzeł odwołania zestawu SDK języka JavaScript w celu wyświetlenia pojedynczych plików *js* lub *CSS* , a następnie wygenerować `<source include/>` Tagi, przeciągając te pliki do plików źródłowych. Zestaw SDK obsługuje ustawienia F5 i Automatic Package. | Y | |
+| Program MSBuild automatycznie wykorzystuje pliki  *js* lub *CSS* . | Y | W **Eksplorator rozwiązań** można rozwinąć węzeł odwołania zestawu SDK języka JavaScript w celu wyświetlenia pojedynczych plików *js* lub *CSS* , a następnie wygenerować `<source include/>` Tagi, przeciągając te pliki do plików źródłowych. Zestaw SDK obsługuje ustawienia F5 i Automatic Package. | Y | |
 | Program MSBuild automatycznie dodaje formant w **przyborniku**. | Y | **Przybornik** może korzystać z zestawów SDK i wyświetlać kontrolki na kartach, które określisz. | N | |
 | Mechanizm obsługuje Instalator programu Visual Studio rozszerzenia (VSIX). | Y | VSIX ma specjalny manifest i logikę do tworzenia pakietów SDK | Y | VSIX można osadzić w innym programie instalacyjnym. |
 | **Przeglądarka obiektów** wylicza odwołania. | Y | **Przeglądarka obiektów** automatycznie pobiera listę odwołań w zestawach SDK i wylicza je. | N | |
@@ -50,9 +52,9 @@ Poniższa tabela zawiera porównanie funkcji odwołujących się do zestawu SDK 
 | Mechanizm wdraża pliki niebędące odwołaniami (na przykład wdrożenie środowiska testowego, na którym mają być uruchamiane testy [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplikacji). | Y | Pliki w folderze *\redist* są wdrażane automatycznie. | Y | |
 | Mechanizm automatycznie dodaje zestawy SDK platformy w środowisku IDE programu Visual Studio. | Y | W przypadku porzucenia [!INCLUDE[win8](../debugger/includes/win8_md.md)] zestawu SDK lub zestawu Windows Phone SDK w określonej lokalizacji z określonym układem zestaw SDK zostanie automatycznie zintegrowany ze wszystkimi funkcjami programu Visual Studio. | N | |
 | Mechanizm obsługuje czystą maszynę dewelopera. (Oznacza to, że instalacja nie jest wymagana, a proste pobieranie z kontroli kodu źródłowego będzie działało). | N | Ponieważ odwołanie do zestawu SDK, należy najpierw zaewidencjonować rozwiązanie i zestaw SDK. Zestaw SDK można zaewidencjonować z poziomu dwóch domyślnych lokalizacji niezwiązanych z rejestrem, z których MSBuild iteruje zestawy SDK (Aby uzyskać szczegółowe informacje, zobacz [Tworzenie zestawu Software Development Kit](../extensibility/creating-a-software-development-kit.md)). Alternatywnie, jeśli lokalizacja niestandardowa składa się z zestawów SDK, można określić następujący kod w pliku projektu:<br /><br />`<PropertyGroup>`<br />&nbsp;&nbsp;`<SDKReferenceDirectoryRoot>`<br />&nbsp;&nbsp;`C:\MySDKs`<br />&nbsp;&nbsp;`</SDKReferenceDirectoryRoot>`<br />`</PropertyGroup>`<br /><br /> Następnie sprawdź zestawy SDK w tej lokalizacji. | Y | Możesz wyewidencjonować rozwiązanie, a program Visual Studio natychmiast rozpoznaje pliki i działa z nich. |
-| Możesz dołączyć do dużej istniejącej społeczności autorów pakietów. | Brak | Społeczność jest nowością. | Y | |
-| Możesz dołączyć do dużej istniejącej społeczności odbiorców pakietu. | Brak | Społeczność jest nowością. | Y | |
-| Możesz dołączyć do ekosystemu partnerów (galerii niestandardowych, repozytoriów itd.). | Brak | Dostępne repozytoria obejmują Visual Studio Marketplace, centrum pobierania Microsoft i [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)] . | Y | |
+| Możesz dołączyć do dużej istniejącej społeczności autorów pakietów. | Nie dotyczy | Społeczność jest nowością. | Y | |
+| Możesz dołączyć do dużej istniejącej społeczności odbiorców pakietu. | Nie dotyczy | Społeczność jest nowością. | Y | |
+| Możesz dołączyć do ekosystemu partnerów (galerii niestandardowych, repozytoriów itd.). | Nie dotyczy | Dostępne repozytoria obejmują Visual Studio Marketplace, centrum pobierania Microsoft i [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)] . | Y | |
 | Mechanizm integruje się z serwerami kompilacji ciągłej integracji na potrzeby tworzenia i używania pakietów. | Y | Zestaw SDK musi przekazać zaznaczoną lokalizację (Właściwość SDKReferenceDirectoryRoot) w wierszu polecenia do programu MSBuild. | Y | |
 | Mechanizm obsługuje zarówno wersje stabilne, jak i w wersji wstępnej. | Y | Zestaw SDK obsługuje Dodawanie odwołań do wielu wersji. | Y | |
 | Mechanizm obsługuje funkcję autoaktualizowania zainstalowanych pakietów. | Y | Jeśli jest dostarczany jako VSIX lub część aktualizacji automatycznych programu Visual Studio, zestaw SDK udostępnia automatyczne powiadomienia. | Y | |
@@ -60,7 +62,7 @@ Poniższa tabela zawiera porównanie funkcji odwołujących się do zestawu SDK 
 | Pakiety mogą być zaewidencjonowane do kontroli wersji. | Y | Nie można zaewidencjonować niczego poza węzłem dokumentów, co oznacza, że zestawy SDK rozszerzeń mogą nie zostać zaewidencjonowane. Rozmiar rozszerzenia SDK może być duży. | Y | |
 | Za pomocą interfejsu programu PowerShell można tworzyć pakiety i korzystać z nich. | T (zużycie), N (Tworzenie) | Brak narzędzi do tworzenia zestawu SDK. Użycie wykonuje MSBuild w wierszu polecenia. | Y | |
 | Możesz użyć pakietu symboli do obsługi debugowania. | Y | Jeśli porzucasz pliki *. pdb* w zestawie SDK, pliki zostaną automatycznie pobrane. | Y | |
-| Mechanizm obsługuje aktualizacje za pomocą Menedżera pakietów. | Brak | Zestaw SDK jest aktualizowany przy użyciu programu MSBuild. | Y | |
+| Mechanizm obsługuje aktualizacje za pomocą Menedżera pakietów. | Nie dotyczy | Zestaw SDK jest aktualizowany przy użyciu programu MSBuild. | Y | |
 | Mechanizm obsługuje uproszczony format manifestu. | Y | *SDKManifest.xml* obsługuje wiele atrybutów, ale zazwyczaj niezbędny jest mały podzbiór. | Y | |
 | Mechanizm jest dostępny dla wszystkich wersji programu Visual Studio. | Y | Zestaw SDK obsługuje wszystkie wersje programu Visual Studio. | Y | Pakiet NuGet obsługuje wszystkie wersje programu Visual Studio. |
 

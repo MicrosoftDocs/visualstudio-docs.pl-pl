@@ -1,5 +1,7 @@
 ---
 title: Narzędzia do oceny dla programu Visual Studio | Microsoft Docs
+description: Ta lista kontrolna służy do szacowania jakości środowiska użytkownika dla wizualizacji i szczegółów interakcji dla nowych funkcji projektowanych dla programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 94e0e9a3-440c-4943-ad7b-772ed742e034
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ae5ae2d3be49a797ff1d594aab4517efab53330
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 42c8ef3033d1c9f897f891310c4ddea89ab0074e
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698428"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863457"
 ---
 # <a name="evaluation-tools-for-visual-studio"></a>Narzędzia do oceny dla programu Visual Studio
 ## <a name="craftsmanship-checklist-for-visual-studio"></a>Lista kontrolna Craftsmanship dla programu Visual Studio

@@ -1,5 +1,7 @@
 ---
 title: 'Obszar testowy 4: Zaewidencjonuj | Microsoft Docs'
+description: Ten obszar testowania wtyczki kontroli źródła obejmuje wysyłanie zaktualizowanych elementów do magazynu wersji za pomocą polecenia Zaewidencjonuj.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2386a217de228c5c47b467e6e083d978702927f4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffe0e7838c3bde048df2514c54e534cf7a9b3475
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704572"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875232"
 ---
 # <a name="test-area-4-check-in"></a>Obszar testowy 4: ewidencjonowanie
 Ten obszar testowania wtyczki kontroli źródła obejmuje wysyłanie zaktualizowanych elementów do magazynu wersji za pomocą polecenia **Zaewidencjonuj** .
@@ -47,7 +49,7 @@ Ten obszar testowania wtyczki kontroli źródła obejmuje wysyłanie zaktualizow
 
 |Akcja|Kroki testu|Oczekiwane wyniki do zweryfikowania|
 |------------|----------------|--------------------------------|
-|Modyfikuj plik tekstowy, który został wyewidencjonowany, Zaewidencjonuj tylko plik (okno dialogowe**Zaewidencjonuj** )|1. Utwórz nowy projekt z plikiem tekstowym.<br />2. Dodaj rozwiązanie do kontroli źródła.<br />3. Wyewidencjonuj i zmodyfikuj plik tekstowy.<br />4. Zaewidencjonuj przy użyciu okna dialogowego ewidencjonowanie (**plik**, **Kontrola źródła**, **ewidencjonowanie**).|Typowe oczekiwane zachowanie.|
+|Modyfikuj plik tekstowy, który został wyewidencjonowany, Zaewidencjonuj tylko plik (okno dialogowe **Zaewidencjonuj** )|1. Utwórz nowy projekt z plikiem tekstowym.<br />2. Dodaj rozwiązanie do kontroli źródła.<br />3. Wyewidencjonuj i zmodyfikuj plik tekstowy.<br />4. Zaewidencjonuj przy użyciu okna dialogowego ewidencjonowanie (**plik**, **Kontrola źródła**, **ewidencjonowanie**).|Typowe oczekiwane zachowanie.|
 |Zmodyfikuj plik tekstowy, który został wyewidencjonowany, Zaewidencjonuj tylko plik (**oczekujące okno zaewidencjonowania** )|1. Utwórz nowy projekt z plikiem tekstowym.<br />2. Dodaj rozwiązanie do kontroli źródła.<br />3. Wyewidencjonuj i zmodyfikuj plik tekstowy.<br />4. Zaewidencjonuj przy użyciu okna **Oczekujące zaewidencjonowania** .|Typowe oczekiwane zachowanie.|
 
 ### <a name="case-4b-adding-files"></a>Przypadek 4B: Dodawanie plików
@@ -63,8 +65,8 @@ Ten obszar testowania wtyczki kontroli źródła obejmuje wysyłanie zaktualizow
 
 |Akcja|Kroki testu|Oczekiwane wyniki do zweryfikowania|
 |------------|----------------|--------------------------------|
-|Dodaj projekt do pustego rozwiązania w obszarze kontroli źródła (okno dialogowe**ewidencjonowanie** )|1. Utwórz puste rozwiązanie.<br />2. Dodaj rozwiązanie do kontroli źródła.<br />3. Dodaj nowy projekt.<br />4. Zaakceptuj Wyewidencjonuj rozwiązanie, jeśli zostanie wyświetlony monit.<br />5. Zaewidencjonuj z okna dialogowego **Zaewidencjonuj** .|Typowe oczekiwane zachowanie.|
-|Dodaj projekt do pustego rozwiązania w obszarze kontroli źródła (okno**oczekujące na zaewidencjonowania** )|1. Utwórz puste rozwiązanie.<br />2. Dodaj rozwiązanie do kontroli źródła.<br />3. Dodaj nowy projekt.<br />4. Zaakceptuj Wyewidencjonuj rozwiązanie, jeśli zostanie wyświetlony monit.<br />5. Sprawdź rozwiązanie w oknie **Oczekujące zaewidencjonowania** .|Typowe oczekiwane zachowanie.|
+|Dodaj projekt do pustego rozwiązania w obszarze kontroli źródła (okno dialogowe **ewidencjonowanie** )|1. Utwórz puste rozwiązanie.<br />2. Dodaj rozwiązanie do kontroli źródła.<br />3. Dodaj nowy projekt.<br />4. Zaakceptuj Wyewidencjonuj rozwiązanie, jeśli zostanie wyświetlony monit.<br />5. Zaewidencjonuj z okna dialogowego **Zaewidencjonuj** .|Typowe oczekiwane zachowanie.|
+|Dodaj projekt do pustego rozwiązania w obszarze kontroli źródła (okno **oczekujące na zaewidencjonowania** )|1. Utwórz puste rozwiązanie.<br />2. Dodaj rozwiązanie do kontroli źródła.<br />3. Dodaj nowy projekt.<br />4. Zaakceptuj Wyewidencjonuj rozwiązanie, jeśli zostanie wyświetlony monit.<br />5. Sprawdź rozwiązanie w oknie **Oczekujące zaewidencjonowania** .|Typowe oczekiwane zachowanie.|
 
 ## <a name="see-also"></a>Zobacz też
 - [Przewodnik testowania wtyczek kontroli kodu źródłowego](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

@@ -1,5 +1,7 @@
 ---
 title: Moduł wyliczający komunikatów | Microsoft Docs
+description: Elementy członkowskie tego modułu wyliczającego są używane dla funkcji TEXTOUTPROC, która jest funkcją wywołania zwrotnego, która zapewnia środowisko IDE, gdy wywołuje SccOpenProject.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e09b72bd228839268cffc228dd0dc503cc82bd9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a7d4607afd9b46d35db416baed73007c67a7832
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702505"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863738"
 ---
 # <a name="message-enumerator"></a>Moduł wyliczający komunikatów
 Poniższe flagi są używane dla `TEXTOUTPROC` funkcji, która jest funkcją wywołania zwrotnego, która zapewnia IDE, gdy wywołuje [SccOpenProject](../extensibility/sccopenproject-function.md) (zobacz [lpTextOutProc](../extensibility/lptextoutproc.md) , aby uzyskać szczegółowe informacje o funkcji wywołania zwrotnego).
@@ -26,16 +28,16 @@ Poniższe flagi są używane dla `TEXTOUTPROC` funkcji, która jest funkcją wyw
 ## <a name="syntax"></a>Składnia
 
 ```
-enum { 
-   SCC_MSG_RTN_CANCEL = -1, 
-   SCC_MSG_RTN_OK = 0, 
-   SCC_MSG_INFO = 1 
-   SCC_MSG_WARNING, 
-   SCC_MSG_ERROR, 
-   SCC_MSG_STATUS, 
-   SCC_MSG_DOCANCEL, 
-   SCC_MSG_STARTCANCEL, 
-   SCC_MSG_STOPCANCEL 
+enum { 
+   SCC_MSG_RTN_CANCEL = -1, 
+   SCC_MSG_RTN_OK = 0, 
+   SCC_MSG_INFO = 1 
+   SCC_MSG_WARNING, 
+   SCC_MSG_ERROR, 
+   SCC_MSG_STATUS, 
+   SCC_MSG_DOCANCEL, 
+   SCC_MSG_STARTCANCEL, 
+   SCC_MSG_STOPCANCEL 
 };
 ```
 

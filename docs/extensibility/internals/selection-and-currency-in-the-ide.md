@@ -1,5 +1,7 @@
 ---
 title: Wybór i waluta w środowisku IDE | Microsoft Docs
+description: Dowiedz się, jak pakietów VSPackage wziąć udział w śledzeniu walut. Środowisko IDE programu Visual Studio zachowuje informacje o aktualnie wybranych obiektach przy użyciu kontekstu wyboru.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,15 +15,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f580b7c8e1651dcbcd053476ae756399a0ac3482
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b2d745619be8bff77503bc14a1d7a87d84cc7864
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705570"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875599"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>Wybór i aktualność w środowisku IDE
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Zintegrowane środowisko programistyczne (IDE) obsługuje informacje o aktualnie wybranych obiektach użytkowników przy użyciu *kontekstu*wyboru. W przypadku kontekstu wyboru pakietów VSPackage może wziąć udział w śledzeniu walut na dwa sposoby:
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Zintegrowane środowisko programistyczne (IDE) obsługuje informacje o aktualnie wybranych obiektach użytkowników przy użyciu *kontekstu* wyboru. W przypadku kontekstu wyboru pakietów VSPackage może wziąć udział w śledzeniu walut na dwa sposoby:
 
 - Propagowanie informacji o walucie pakietów VSPackage do IDE.
 

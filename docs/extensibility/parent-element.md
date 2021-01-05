@@ -1,5 +1,7 @@
 ---
 title: Element nadrzędny | Microsoft Docs
+description: Element nadrzędny określa, że element jest elementem nadrzędnym przycisku, pola kombi, menu lub grupy.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c018505ba06762bf8426f266b24ee1835313c29
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03f1709184126d31845bfe1145afdebfeffcd1d1
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702218"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863335"
 ---
 # <a name="parent-element"></a>Element nadrzędny
 Element nadrzędny przycisku lub pola kombi może być tylko grupą. Element nadrzędny menu lub grupy może być dowolnym innym menu lub grupą. W [elemencie CommandPlacement](../extensibility/commandplacement-element.md), ten element jest wymagany; we wszystkich innych przypadkach jest to opcjonalne. Jeśli ten element zostanie pominięty, `Group_Undefined:0` zostanie implikowany element nadrzędny elementu.
@@ -34,8 +36,8 @@ Element nadrzędny przycisku lub pola kombi może być tylko grupą. Element nad
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|guid|Wymagany. Identyfikator GUID identyfikatora polecenia GUID/ID.|
-|identyfikator|Wymagany. Identyfikator identyfikatora polecenia GUID/ID.|
+|guid|Wymagane. Identyfikator GUID identyfikatora polecenia GUID/ID.|
+|identyfikator|Wymagane. Identyfikator identyfikatora polecenia GUID/ID.|
 
 ### <a name="child-elements"></a>Elementy podrzędne
  Brak

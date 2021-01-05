@@ -1,5 +1,7 @@
 ---
 title: Lista obiektów okna właściwości | Microsoft Docs
+description: Dowiedz się więcej o interfejsach używanych do współdziałania z listą obiektów w okno Właściwości w środowisku IDE programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ffe11ae6ebb4e692686c884b663a4f93d1466535
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 92fcce4dc62cdc84d15ca6dc51420791d4460340
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706147"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875430"
 ---
 # <a name="properties-window-object-list"></a>Lista obiektów okna właściwości
 Lista obiektów w oknie **Właściwości** jest listą rozwijaną, która umożliwia zmianę zaznaczenia na inne obiekty dostępne w jednym lub kilku wybranych oknach. Wybranie innego obiektu z tej listy wyzwala wywołanie do <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A> powiadomienia o środowisku, w którym został wybrany nowy obiekt. Informacje wyświetlane w oknie **Właściwości** są następnie zmieniane, aby pokazać właściwości skojarzone z nowo wybranym obiektem.

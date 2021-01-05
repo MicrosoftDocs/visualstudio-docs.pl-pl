@@ -1,5 +1,7 @@
 ---
 title: OPTNAMECHANGEPFN | Microsoft Docs
+description: Dowiedz się więcej o funkcji wywołania zwrotnego OPTNAMECHANGEPFN, która komunikuje zmiany nazw z wtyczki kontroli źródła do środowiska IDE programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 603bd08c1ec3832bf732e0b33101076738d009e3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e18a3e5004a86bb96ad77112f4c81ebca3e59cbf
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702250"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863441"
 ---
 # <a name="optnamechangepfn"></a>OPTNAMECHANGEPFN
 Jest to funkcja wywołania zwrotnego określona w wywołaniu [SccSetOption](../extensibility/sccsetoption-function.md) (przy użyciu opcji `SCC_OPT_NAMECHANGEPFN` ) i służy do przekazywania zmian nazw dokonanych przez wtyczkę kontroli źródła z powrotem do IDE.

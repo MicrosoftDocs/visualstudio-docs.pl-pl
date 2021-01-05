@@ -1,5 +1,7 @@
 ---
 title: Rejestrowanie starszej wersji językowej Językowej2 | Microsoft Docs
+description: W tym artykule przedstawiono listę wpisów rejestru dla różnych opcji usługi językowej dostępnych w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,20 +14,20 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a41f3f507579cbd2649e33e81d1368fb5404799
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 08b9e88440fcb7b488e479e4188279d82a526e4c
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238845"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875185"
 ---
 # <a name="registering-a-legacy-language-service-2"></a>Rejestrowanie starszej wersji usługi językowej 2
 W poniższych sekcjach znajdują się listy wpisów rejestru dla różnych opcji usługi językowej dostępnych w programie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
- Na poniższej liście wpisów rejestru program *vs reg root* jest równy HKEY_LOCAL_MACHINE \software\microsoft\visualstudio \\ *X. y*, gdzie *x. y* jest [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] numerem wersji.
+ Na poniższej liście wpisów rejestru programu *vs reg root* jest równa HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *X. y*, gdzie *x. y* jest [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] numerem wersji.
 
 ## <a name="registry-entries-for-language-service-options"></a>Wpisy rejestru dotyczące opcji usługi językowej
- Klucz nazwy języka głównego usług \Languages\Language Services programu *vs reg* \\ *Language Name* może zawierać następujące wartości.
+ Klucz nazwy języka głównego usług \Languages\Language Services programu *vs reg* \\  może zawierać następujące wartości.
 
 |Nazwa|Typ|Zakres|Opis|
 |----------|----------|-----------|-----------------|
@@ -132,7 +134,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ```
 
 ## <a name="registry-entries-for-editor-options"></a>Wpisy rejestru dla opcji edytora
- Główny klucz \Editors programu *vs reg*może zawierać następujące wartości:
+ Główny klucz \Editors programu *vs reg* może zawierać następujące wartości:
 
 |Nazwa|Typ|Zakres|Opis|
 |----------|----------|-----------|-----------------|
@@ -157,7 +159,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ```
 
 ## <a name="registry-entries-for-logical-view-options"></a>Wpisy rejestru dotyczące opcji widoku logicznego
- *VS Reg Root* \\ *Graficzny interfejs użytkownika edytora *\Editors programu vs reg>klucz \LogicalViews może zawierać następujące wartości.
+  \\ *Graficzny interfejs użytkownika edytora*\Editors programu vs reg>klucz \LogicalViews może zawierać następujące wartości.
 
 |Nazwa|Typ|Zakres|Opis|
 |----------|----------|-----------|-----------------|
@@ -179,14 +181,14 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ```
 
 ## <a name="registry-entries-for-editor-extension-options"></a>Wpisy rejestru dla opcji rozszerzenia edytora
- Klucz \Extensions \Editors głównego edytora programu *vs reg* \\ *Editor GUID*może zawierać następujące wartości. Rozszerzenie nazwy pliku nie zawiera kropki wiodącej.
+ Klucz \Extensions \Editors głównego edytora programu *vs reg* \\ może zawierać następujące wartości. Rozszerzenie nazwy pliku nie zawiera kropki wiodącej.
 
 |Nazwa|Typ|Zakres|Opis|
 |----------|----------|-----------|-----------------|
 |(Domyślnie)|REG_SZ||Nieużywany.|
 |*\<ext>*|REG_DWORD|0 – 0xFFFFFFFF|Względny priorytet rozszerzeń. Jeśli co najmniej dwa języki korzystają z tego samego rozszerzenia, wybierany jest język o wyższym priorytecie.|
 
- Ponadto domyślny wybór bieżącego użytkownika dla edytora jest przechowywany w HKEY_Current_User \Software\Microsoft\VisualStudio \\ *X. Y*\Default Editors \\ *ext*. Identyfikator GUID wybranej usługi językowej znajduje się w niestandardowym wpisie. Ma to pierwszeństwo dla bieżącego użytkownika.
+ Ponadto domyślny wybór bieżącego użytkownika dla edytora jest przechowywany w HKEY_Current_User \Software\Microsoft\VisualStudio \\ *X. Y*\Default Editors \\ . Identyfikator GUID wybranej usługi językowej znajduje się w niestandardowym wpisie. Ma to pierwszeństwo dla bieżącego użytkownika.
 
 ### <a name="example"></a>Przykład
 

@@ -1,5 +1,7 @@
 ---
 title: Galerie prywatne | Microsoft Docs
+description: Dowiedz się, jak udostępniać kontrolki, szablony i narzędzia, które tworzysz w zestawie SDK programu Visual Studio, publikując je w galerii prywatnej.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: afd1d79d7f1846e60386d2a9478466bf7eae72e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1ec7390acf753af20bc0edbe20194ba17c2d9d80
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81444651"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863497"
 ---
 # <a name="private-galleries"></a>Galerie prywatne
 Możesz udostępniać kontrolki, szablony i narzędzia, które tworzysz, publikując je w *prywatnej galerii* w intranecie w organizacji, w następujący sposób:
@@ -51,7 +53,7 @@ Możesz udostępniać kontrolki, szablony i narzędzia, które tworzysz, publiku
 
 ```
 [$RootKey$\ExtensionManager\Repositories\{UniqueGUID}]
-@={URI}  (REG_SZ)
+@={URI}  (REG_SZ)
 Disabled=0 | 1 (DWORD)
 Priority=0 (highest priority) ... MaxInt (lowest priority) (DWORD) (uint)
 Protocol=Atom|Sharepoint (REG_SZ)

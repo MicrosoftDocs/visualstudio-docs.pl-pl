@@ -1,5 +1,7 @@
 ---
 title: Podstawowa ochrona środowiska użytkownika dla programu Visual Studio | Microsoft Docs
+description: Zapoznaj się z najlepszymi rozwiązaniami dotyczącymi obsługi nowych funkcji dla programu Visual Studio, w tym wiedzą o rozdzielczości ekranu.
+ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6c329eda477d77ab73be2ad913ac18d67ff3c08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 616837c358c804198818df659cb7b7ee76716305
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698330"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97864042"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Podstawy środowiska użytkownika dla programu Visual Studio
 
@@ -124,7 +126,7 @@ Nieco lepsza, ale nadal niepożądane, umieszcza ustawienia tego typu na paskach
 
 ![Rysunek B: lepszy, ale nadal pasek poleceń Antywzorzec](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "Commandbaranti — wzorzec FigureB")<br />Rysunek B: lepszy, ale nadal pasek poleceń Antywzorzec
 
-W poprawnym podejściu pokazanym na **rysunku C**ustawienie jest powiązane z serią poleceń. Nie ma ustawionego ustawienia globalnego i przełączamy się między czterema poleceniami. Jest to jedyną sytuacją, w której polecenia na pasku narzędzi są akceptowalne.
+W poprawnym podejściu pokazanym na **rysunku C** ustawienie jest powiązane z serią poleceń. Nie ma ustawionego ustawienia globalnego i przełączamy się między czterema poleceniami. Jest to jedyną sytuacją, w której polecenia na pasku narzędzi są akceptowalne.
 
 ![Rysunek C: Popraw użycie wzorca paska poleceń programu Visual Studio](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "Commandbaranti — wzorzec FigureC")<br />Rysunek C: Popraw użycie wzorca paska poleceń programu Visual Studio
 

@@ -1,5 +1,7 @@
 ---
 title: Rejestrowanie okna narzędzi | Microsoft Docs
+description: Dowiedz się, jak zarejestrować swoje okna narzędzi w programie Visual Studio przy użyciu atrybutu ProvideToolWindowAttribute i ProvideToolWindowVisibilityAttribute.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d70924ea503bc4e230eb30b0551b59bc5f45ae6d
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 140375c3c708957343762b72102dcb8920628aba
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414337"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863800"
 ---
 # <a name="register-a-tool-window"></a>Rejestrowanie okna narzędzi
 Możesz zarejestrować swoje okna narzędzi za pomocą <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> i  <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute> .
@@ -35,4 +37,4 @@ public class PackageToolWindow : Package
 {
 ```
 
- W powyższym kodzie, <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> rejestruje okna `PersistedWindowPane` i `DynamicWindowPane` Narzędzia w programie Visual Studio. Utrwalone okno narzędzi jest zadokowane i z kartami **Eksplorator rozwiązań** , a okno dynamiczne ma domyślną pozycję początkową i rozmiar. Okno dynamiczne jest wykonywane przejściowo, co oznacza, że nie jest tworzone podczas uruchamiania. Spowoduje to zapisanie `DontForceCreate` wartości w `ToolWindows` kluczu rejestru systemowego. Aby uzyskać więcej informacji, zobacz [Konfiguracja wyświetlania okna narzędzi](/previous-versions/visualstudio/visual-studio-2015/extensibility/tool-window-display-configuration?preserve-view=true&view=vs-2015).
+ W powyższym kodzie, <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> rejestruje okna `PersistedWindowPane` i `DynamicWindowPane` Narzędzia w programie Visual Studio. Utrwalone okno narzędzi jest zadokowane i z kartami **Eksplorator rozwiązań**, a okno dynamiczne ma domyślną pozycję początkową i rozmiar. Okno dynamiczne jest wykonywane przejściowo, co oznacza, że nie jest tworzone podczas uruchamiania. Spowoduje to zapisanie `DontForceCreate` wartości w `ToolWindows` kluczu rejestru systemowego. Aby uzyskać więcej informacji, zobacz [Konfiguracja wyświetlania okna narzędzi](/previous-versions/visualstudio/visual-studio-2015/extensibility/tool-window-display-configuration?preserve-view=true&view=vs-2015).

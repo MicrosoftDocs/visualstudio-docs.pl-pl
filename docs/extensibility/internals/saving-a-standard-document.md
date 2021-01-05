@@ -1,5 +1,7 @@
 ---
 title: Zapisywanie standardowego dokumentu | Microsoft Docs
+description: Dowiedz się więcej na temat procesu, który występuje w przypadku standardowego dokumentu dla typu projektu, który można dodać do środowiska IDE programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +14,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8d50a9e62e69f925564717020a51f88620f5f3b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 81c79ece83bc8aaaf7ca4dd28642de5973ad94c1
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705553"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875669"
 ---
 # <a name="saving-a-standard-document"></a>Zapisywanie standardowego dokumentu
-Środowisko obsługuje polecenia Zapisz, Zapisz jako i Zapisz wszystkie. Gdy użytkownik wybierze pozycję **Zapisz**, **Zapisz jako**lub **Zapisz wszystko** w menu **plik** lub zamknie rozwiązanie, spowoduje to wystąpienie następującego procesu: **Zapisz wszystko**.
+Środowisko obsługuje polecenia Zapisz, Zapisz jako i Zapisz wszystkie. Gdy użytkownik wybierze pozycję **Zapisz**, **Zapisz jako** lub **Zapisz wszystko** w menu **plik** lub zamknie rozwiązanie, spowoduje to wystąpienie następującego procesu: **Zapisz wszystko**.
 
  ![Edytor standardowy](../../extensibility/internals/media/public.gif "Publiczne") Zapisz, Zapisz jako i Zapisz całą obsługę poleceń dla edytora standardowego
 

@@ -1,5 +1,7 @@
 ---
 title: Rejestrowanie programów obsługi poleceń zestawu międzyoperacyjnego | Microsoft Docs
+description: Dowiedz się więcej o podstawowym kontrakcie poleceń używanym przez wszystkie pakietów VSPackage implementację poleceń przy użyciu zestawów międzyoperacyjnych.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dfff8e4e6cc8ba3974ec70e6466b25e9ff7432e4
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: b45fe06722b190569e067dccd325ba4acac4fb0f
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012051"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875160"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Rejestrowanie programów obsługi zestawu międzyoperacyjnego
 Pakietu VSPackage musi się zarejestrować w programie, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Aby zintegrowane środowisko programistyczne (IDE) prawidłowo kieruje swoje polecenia.
@@ -28,10 +30,10 @@ Pakietu VSPackage musi się zarejestrować w programie, [!INCLUDE[vsprvs](../../
 - Zasoby [referencyjne w formacie tabeli poleceń](/previous-versions/bb164647(v=vs.100)) znajdują się w niezarządzanych satelitach DLL interfejsu użytkownika.
 
 ## <a name="command-handler-registration-of-a-vspackage"></a>Rejestracja procedury obsługi poleceń pakietu VSPackage
- Pakietu VSPackage działający jako program obsługi poleceń opartych na interfejsie użytkownika wymaga wpisu rejestru o nazwie po pakietu VSPackage `GUID` . Ten wpis rejestru określa lokalizację pliku zasobów interfejsu użytkownika pakietu VSPackage i zasobu menu w tym pliku. Sam wpis rejestru znajduje się w obszarze HKEY_LOCAL_MACHINE \Software\Microsoft\VisualStudio \\ *\<Version>* \Menus, gdzie *\<Version>* jest wersją programu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , na przykład 9,0.
+ Pakietu VSPackage działający jako program obsługi poleceń opartych na interfejsie użytkownika wymaga wpisu rejestru o nazwie po pakietu VSPackage `GUID` . Ten wpis rejestru określa lokalizację pliku zasobów interfejsu użytkownika pakietu VSPackage i zasobu menu w tym pliku. Sam wpis rejestru znajduje się w obszarze HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\ *\<Version>* \Menus, gdzie *\<Version>* jest wersją programu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , na przykład 9,0.
 
 > [!NOTE]
-> Ścieżka katalogu głównego HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio \\ *\<Version>* może zostać zastąpiona alternatywnym elementem głównym, gdy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] powłoka zostanie zainicjowana. Aby uzyskać więcej informacji na temat ścieżki katalogu głównego, zobacz [Installing pakietów VSPackage With Instalator Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md).
+> Ścieżka katalogu głównego HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<Version>* może zostać zastąpiona alternatywnym elementem głównym, gdy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] powłoka zostanie zainicjowana. Aby uzyskać więcej informacji na temat ścieżki katalogu głównego, zobacz [Installing pakietów VSPackage With Instalator Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md).
 
 ### <a name="the-ctmenu-resource-registry-entry"></a>Wpis rejestru zasobów CTMENU
  Struktura wpisu rejestru to:
@@ -66,6 +68,6 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\9.0Exp\
     {1b027a40-8f43-11d0-8d11-00a0c91bc942} = , 10211, 3
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dodawanie elementów interfejsu użytkownika przy użyciu pakietów VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Polecenia i menu, w których używane są zestawy międzyoperacyjne](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)

@@ -1,5 +1,7 @@
 ---
 title: Rejestrowanie typu projektu | Microsoft Docs
+description: Dowiedz się więcej na temat tworzenia wpisów rejestru, które umożliwiają programowi Visual Studio rozpoznawanie i współpracują z nowym typem projektu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7267060f2207b0842885dc3001c3926874be30a9
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: 9a34f5c7f1ae3a214a0a72932ae80dbc44845a45
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407734"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875202"
 ---
 # <a name="registering-a-project-type"></a>Rejestrowanie typu projektu
 Podczas tworzenia nowego typu projektu należy utworzyć wpisy rejestru, które umożliwiają [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] rozpoznawanie i współpracują z typem projektu. Te wpisy rejestru są zwykle tworzone przy użyciu pliku skryptu rejestru (. RGS).

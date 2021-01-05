@@ -1,5 +1,7 @@
 ---
 title: Informacje o zestawie SDK programu Visual Studio | Microsoft Docs
+description: Te artykuły zawierają informacje o przestrzeniach nazw programu Visual Studio, powiązanych obszarach nazw i innych obszarach interesujących deweloperów korzystających z zestawu SDK programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93c1f6eaa2019e602efc760003c960a9b62f9ebd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8f53d122138845c0b9711a78d2237972512710cb
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698103"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863865"
 ---
 # <a name="visual-studio-sdk-reference"></a>Dokumentacja zestawu Visual Studio SDK
 

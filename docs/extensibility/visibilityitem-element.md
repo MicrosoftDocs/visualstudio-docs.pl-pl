@@ -1,5 +1,7 @@
 ---
 title: VisibilityItem — element | Microsoft Docs
+description: Element VisibilityItem określa statyczną widoczność poleceń i pasków narzędzi. Wpisy identyfikują polecenie lub menu oraz skojarzony kontekst interfejsu użytkownika polecenia.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9129d64e430d661bbdd8f7682e64c93650570211
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 637fea7d203e58c59f85794eeb0f8894eb62e777
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698149"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863889"
 ---
 # <a name="visibilityitem-element"></a>VisibilityItem, element
 `VisibilityItem`Element określa statyczną widoczność poleceń i pasków narzędzi. Każdy wpis identyfikuje polecenie lub menu, a także kontekst interfejsu użytkownika skojarzonego z poleceniem. Program Visual Studio wykrywa polecenia, menu i paski narzędzi oraz ich widoczność bez ładowania pakietów VSPackage, które je definiują. IDE używa metody, <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> Aby określić, czy kontekst interfejsu użytkownika polecenia jest aktywny.
@@ -43,9 +45,9 @@ ms.locfileid: "80698149"
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|guid|Wymagany. Identyfikator GUID identyfikatora polecenia GUID/ID.|
-|identyfikator|Wymagany. Identyfikator identyfikatora polecenia GUID/ID.|
-|kontekst|Wymagany. Kontekst interfejsu użytkownika, w którym polecenie jest widoczne.|
+|guid|Wymagane. Identyfikator GUID identyfikatora polecenia GUID/ID.|
+|identyfikator|Wymagane. Identyfikator identyfikatora polecenia GUID/ID.|
+|kontekst|Wymagane. Kontekst interfejsu użytkownika, w którym polecenie jest widoczne.|
 |Warunek|Opcjonalny. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementy podrzędne
@@ -64,12 +66,12 @@ ms.locfileid: "80698149"
 
 ```xml
 <VisibilityConstraints>
-  <VisibilityItem guid="cmdSetGuidMyProductCommands"     id="cmdidAddWidget"
+  <VisibilityItem guid="cmdSetGuidMyProductCommands"     id="cmdidAddWidget"
     context="guidNotViewSourceMode"/>
 </VisibilityConstraints>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A>
 - <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus>
 - <xref:Microsoft.VisualStudio.VSConstants>

@@ -1,5 +1,7 @@
 ---
 title: Rejestrowanie starszej wersji językowej Service1 | Microsoft Docs
+description: Dowiedz się więcej na temat rejestrowania starszej wersji usługi językowej z pakietu VSPackage za pomocą programu Visual Studio przez dodanie kluczy i wpisów rejestru.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0076eeee0ebcb0a80925efdde212097a3ec3e7e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e92c831ad3d2f4d75d57c48cfc7ba666d19b7a5e
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238884"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875223"
 ---
 # <a name="registering-a-legacy-language-service-1"></a>Rejestrowanie starszej wersji usługi językowej 1
 W strukturze pakietów zarządzanych (MPF) usługa języka jest proffered przez pakietu VSPackage (zobacz [pakietów VSPackage](../../extensibility/internals/vspackages.md)) i jest zarejestrowana w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] przez dodanie kluczy rejestru i wpisów. Ten proces rejestracji odbywa się częściowo podczas instalacji i częściowo w czasie wykonywania.
@@ -128,7 +130,7 @@ namespace TestLanguagePackage
  Ten atrybut rejestruje stronę właściwości, która zostanie wyświetlona w oknie dialogowym **Opcje** w kategorii **Edytor tekstu** . Użyj jednego z tych atrybutów dla każdej strony, która ma być wyświetlana dla usługi językowej. Jeśli musisz zorganizować strony w strukturze drzewa, użyj dodatkowych atrybutów, aby zdefiniować każdy węzeł drzewa.
 
 ### <a name="example"></a>Przykład
- Ten przykład przedstawia dwie strony właściwości, **Opcje** i **wcięcia**oraz jeden węzeł, który zawiera drugą stronę właściwości.
+ Ten przykład przedstawia dwie strony właściwości, **Opcje** i **wcięcia** oraz jeden węzeł, który zawiera drugą stronę właściwości.
 
 ```csharp
 using Microsoft.VisualStudio.Shell;
