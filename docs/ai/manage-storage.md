@@ -10,12 +10,12 @@ ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: ae419c67b493ef03b08f6fcf627ad0fbe42ca6d0
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: b145c4acf4047356b8996d09d746679900314f1b
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099209"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726569"
 ---
 # <a name="browse-storage-to-upload-data-or-download-models-and-logs"></a>Przeglądaj magazyn, aby przekazać dane lub pobrać modele i dzienniki
 
@@ -27,7 +27,7 @@ Możesz przeglądać wszystkie magazyny na komputerze zdalnym lub udziale plikó
 2. Rozwiń węzeł maszyny zdalnej lub Batch AI kontekstu obliczeniowego.
 3. Kliknij prawym przyciskiem myszy pozycję **Magazyn**; następnie kliknij przycisk **Przeglądaj**.
 
-    ![magazyn](media/manage-storage/browse-storage.png)
+    ![Zrzut ekranu przedstawiający Eksplorator serwera z folderem komputery zdalne rozwinięte. Magazyn jest wyróżniony w drzewie folderów, a w menu kontekstowym wybrano pozycję Przeglądaj.](media/manage-storage/browse-storage.png)
 
 ## <a name="to-access-job-specific-data-on-the-remote-machine-or-file-share"></a>Aby uzyskać dostęp do danych specyficznych dla zadania na komputerze zdalnym lub w udziale plików
 
@@ -35,4 +35,4 @@ Możesz przeglądać wszystkie magazyny na komputerze zdalnym lub udziale plikó
 2. Wybierz zadanie.
 3. Kliknij pozycję **folder roboczy** lub kliknij pozycję **stdout/stderr** , aby uzyskać szybki dostęp do tych ważnych plików dziennika.
 
-    ![magazyn](media/manage-storage/job-workingfolder.png)
+    ![Zrzut ekranu okna przeglądarki zadań w Eksplorator serwera. Wybrane jest zadanie train_mnist, a w obszarze Szczegóły zadania zostanie wybrane łącze do folderu roboczego.](media/manage-storage/job-workingfolder.png)

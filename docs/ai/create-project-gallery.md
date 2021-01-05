@@ -10,12 +10,12 @@ ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bcc1932bad5b34d9695257feb163654f6b99514
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a6813e834af00330b4018f16d4a19be945be2be9
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371628"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726647"
 ---
 # <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Tworzenie projektu AI z Galerii Azure Machine Learning w programie Visual Studio
 
@@ -52,12 +52,12 @@ Po [zainstalowaniu Visual Studio Tools for AI](installation.md)można łatwo utw
 
 5. Program Visual Studio tworzy plik projektu ( `.pyproj` plik na dysku) wraz z innymi plikami zdefiniowanymi w przykładzie. W przypadku szablonu "MNIST ręcznie" projekt zawiera kilka plików.
 
-    ![mnist ręcznie](media/create-project-gallery/azml-mnist.png)
+    ![Zrzut ekranu przedstawiający program Visual Studio Eksplorator rozwiązań pokazujący pliki projektu TensorFlowMNIST. Kod dla tf_mnist. PR jest wyświetlany w oknie głównym.](media/create-project-gallery/azml-mnist.png)
 
 6. Prześlij zadanie do Azure Machine Learning.
 
-    ![mnist ręcznie](media/create-project-gallery/submit-azml.png)
+    ![Zrzut ekranu przedstawiający Eksplorator rozwiązań programu Visual Studio z menu kontekstowego dla projektu TensorFlowMNIST z "Prześlij zadanie..." niezaznaczone.](media/create-project-gallery/submit-azml.png)
 
 7. Uruchom w kontenerze platformy Docker lub na komputerze lokalnym
 
-    ![mnist ręcznie](media/create-project-gallery/azml-local.png)
+    ![Zrzut ekranu przedstawiający okno dialogowe przesyłania zadania z opcją Użyj klastra o wartości "Azure:/local" i skrypcie uruchamiania ustawionym na "tf_mnist. pr".](media/create-project-gallery/azml-local.png)

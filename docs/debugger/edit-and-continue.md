@@ -1,6 +1,7 @@
 ---
 title: Edytuj kod i Kontynuuj debugowanie | Microsoft Docs
-ms.custom: seodec18
+description: Użyj polecenia Edytuj i Kontynuuj podczas debugowania w programie Visual Studio, aby można było wprowadzać zmiany w kodzie źródłowym, gdy program jest w trybie przerwania.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 05/31/2018
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d3da21a833764745a7b6fc7dd001eeb4995f44d
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: c335ce5a394454daacd86338a96ba51d04c88c0e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599644"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726543"
 ---
 # <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>Edytuj kod i Kontynuuj debugowanie w programie Visual Studio (C#, VB, C++)
 Edytuj i Kontynuuj to funkcja, która umożliwia wprowadzanie zmian w kodzie źródłowym, gdy program jest w trybie przerwania. Po wznowieniu wykonywania programu przez wybranie polecenia wykonywania, takiego jak **Kontynuuj** lub **krok**, polecenie Edytuj i Kontynuuj automatycznie stosuje zmiany kodu z pewnymi ograniczeniami. Pozwala to na wprowadzanie zmian w kodzie podczas sesji debugowania, a nie konieczności zatrzymywania, ponownego kompilowania całego programu, a następnie ponowne uruchomienie sesji debugowania.
@@ -43,7 +44,7 @@ Edytuj i Kontynuuj to funkcja, która umożliwia wprowadzanie zmian w kodzie źr
 
  [Edytuj i kontynuuj (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)
 
- [Opcje edytuj i kontynuuj nie są obsługiwane w F#](../debugger/edit-and-continue-not-supported-for-f-hash.md)
+ [Edytuj i Kontynuuj nie są obsługiwane w przypadku języka F #](../debugger/edit-and-continue-not-supported-for-f-hash.md)
 
 ## <a name="see-also"></a>Zobacz też
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)

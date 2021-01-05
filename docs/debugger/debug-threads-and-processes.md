@@ -1,5 +1,7 @@
 ---
 title: Narzędzia do debugowania wątków i procesów | Microsoft Docs
+description: Przejrzyj narzędzia do debugowania wątków i procesów w programie Visual Studio. Wątki i procesy reprezentują sekwencje instrukcji, które muszą być wykonywane w określonej kolejności.
+ms.custom: SEO-VS-2020
 ms.date: 04/21/2018
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dcdaf083462b75485449cae05894681e2bb5c900
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51917065e8764f7edbebbdb3bfcc7a03cc9723d4
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72738378"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727154"
 ---
 # <a name="tools-to-debug-threads-and-processes-in-visual-studio"></a>Narzędzia do debugowania wątków i procesów w programie Visual Studio
 *Wątki* i *procesy* to powiązane koncepcje w nauce komputerowej. Obie reprezentują sekwencje instrukcji, które muszą być wykonywane w określonej kolejności. Jednak instrukcje w oddzielnych wątkach lub procesach mogą być wykonywane równolegle.
@@ -65,5 +67,5 @@ Narzędzia, których należy użyć w programie, [!INCLUDE[vsprvs](../code-quali
 ## <a name="see-also"></a>Zobacz też
 
 - [Dołączanie do uruchomionych procesów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
-- [Debuguj wielowątkowe aplikacje](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [Debuguj aplikacje wielowątkowe](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Debugowanie kodu GPU](../debugger/debugging-gpu-code.md)

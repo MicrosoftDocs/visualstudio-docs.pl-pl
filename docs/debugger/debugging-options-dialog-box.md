@@ -1,5 +1,7 @@
 ---
 title: Debugowanie, Opcje — okno dialogowe | Microsoft Docs
+description: Znajdź linki opisujące okno dialogowe Opcje dla ogólnego debugowania, debugowanie just in Time, debugowanie okna danych wyjściowych i debugowanie symboli w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -21,21 +23,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 407da10e5a10ea08a75618046189a87a4ad6c5f3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ae93f22249540da0121472ce07db52e3747abf85
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72738149"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726907"
 ---
 # <a name="debugging-options-dialog-box"></a>Debugowanie, opcje ― Okno dialogowe
 Folder **debugowanie** w oknie dialogowym **Opcje** w menu **Narzędzia** zawiera następujące strony, które umożliwiają określenie opcji narzędzia debugera.
 
-- [Ogólne, debugowanie, okno dialogowe Opcje](../debugger/general-debugging-options-dialog-box.md)
+- [Ogólne, debugowanie, Opcje — okno dialogowe](../debugger/general-debugging-options-dialog-box.md)
 
-- [Just-in-time, debugowanie, opcje ― Okno dialogowe](../debugger/just-in-time-debugging-options-dialog-box.md)
+- [Debugowanie just in Time, okno dialogowe Opcje](../debugger/just-in-time-debugging-options-dialog-box.md)
 
-- [Okno danych wyjściowych, debugowanie, opcje ― Okno dialogowe](../debugger/output-window-debugging-options-dialog-box.md)
+- [Okno Dane wyjściowe, debugowanie, Opcje — okno dialogowe](../debugger/output-window-debugging-options-dialog-box.md)
 
 - [Symbole, debugowanie, Opcje — okno dialogowe](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 

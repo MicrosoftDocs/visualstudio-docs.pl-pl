@@ -1,5 +1,7 @@
 ---
 title: Zapisywanie danych w plikach projektu | Microsoft Docs
+description: Dowiedz się więcej o interfejsach udostępnianych przez strukturę pakietu zarządzanego w celu zapisywania i pobierania danych specyficznych dla określonego typu w pliku projektu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5fd6cfaa450bc268665ae0f58109c99002da6152
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4746ebb4a92d5c2688063336cb3772de8d72ee1b
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701356"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715694"
 ---
 # <a name="save-data-in-project-files"></a>Zapisz dane w plikach projektu
 Podtyp projektu może zapisać i pobrać dane specyficzne dla określonego typu w pliku projektu. Struktura pakietu zarządzanego (MPF) udostępnia dwa interfejsy do wykonania tego zadania:

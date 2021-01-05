@@ -1,5 +1,7 @@
 ---
 title: Debugowanie aplikacji | Microsoft Docs
+description: Dowiedz się, jak używać debugowania w programie Visual Studio dla różnych typów aplikacji, takich jak aplikacje platformy UWP, kod zarządzany, kod natywny, kod procesora GPU i aplikacje sieci Web.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1849d6918c1fd5607c97b82c17e385d3c6521fc4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dfe7bb45d2979a62d07e34b2ee44076394ff936c
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535164"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727011"
 ---
 # <a name="debugging-applications"></a>Debugowanie aplikacji
 Poniższe sekcje dotyczą debugowania dla określonych typów aplikacji. Różne typy aplikacji i różne języki wymagają różnych ustawień i technik oraz stwarzają różne problemy, które muszą być debugowane.
@@ -35,5 +37,5 @@ Poniższe sekcje dotyczą debugowania dla określonych typów aplikacji. Różne
 |[Debugowanie aplikacji ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|Opisuje sposób debugowania aplikacji ASP.NET.|
 |[Debuguj kod w języku Python](../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md)|Opisuje sposób debugowania kodu w języku Python|
 |[Debugowanie aplikacji JavaScript i TypeScript](../javascript/debug-nodejs.md)|Opisuje sposób debugowania aplikacji JavaScript, TypeScript i Node.js|
-|[Debugowanie aplikacji sieci Web](../debugger/debugging-web-applications.md)|Opisuje sposób debugowania aplikacji sieci Web i skryptów.|
+|[Debugowanie aplikacji internetowych](../debugger/debugging-web-applications.md)|Opisuje sposób debugowania aplikacji sieci Web i skryptów.|
 |[Debugowanie usług WCF](../debugger/debugging-wcf-services.md)|Opisuje sposób debugowania usług Windows Communication Foundation.|

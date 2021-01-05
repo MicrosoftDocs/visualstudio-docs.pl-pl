@@ -1,5 +1,7 @@
 ---
 title: Często zadawane pytania dotyczące debugowania migawek | Microsoft Docs
+description: Zapoznaj się z listą często zadawanych pytań (FAQ), które mogą wystąpić podczas debugowania aktywnych aplikacji platformy Azure przy użyciu Snapshot Debugger w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/07/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8afc67b92a943dd571847bb1a00fb7e4db4514b
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 5276127f0d6755b9fdabdfa965b5c1b8c4d94823
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851102"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727206"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Często zadawane pytania dotyczące debugowania migawek w programie Visual Studio
 
@@ -50,7 +52,7 @@ Tak, debugowanie migawek może współpracować z serwerami w ramach obciążeni
 Na App Service można odinstalować rozszerzenie witryny Snapshot Debugger, wykonując następujące czynności:
 
 1. Wyłącz App Service za pomocą programu Cloud Explorer w programie Visual Studio lub Azure Portal.
-1. Przejdź do witryny kudu App Service (czyli yourappservice.** SCM**. azurewebsites.NET) i przejdź do **rozszerzeń witryny**.
+1. Przejdź do witryny kudu App Service (czyli yourappservice.**SCM**. azurewebsites.NET) i przejdź do **rozszerzeń witryny**.
 1. Kliknij przycisk X na rozszerzeniu witryny Snapshot Debugger, aby go usunąć.
 
 #### <a name="why-are-ports-opened-during-a-snapshot-debugger-session"></a>Dlaczego porty są otwierane podczas sesji Snapshot Debugger?
@@ -196,7 +198,7 @@ Istnieje kilka sposobów wyłączenia Snapshot Debugger:
       Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name Microsoft.Insights.VMDiagnosticsSettings
    ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Debugowanie w Visual Studio](../debugger/index.yml)
 - [Debuguj aplikacje Live ASP.NET przy użyciu Snapshot Debugger](../debugger/debug-live-azure-applications.md)

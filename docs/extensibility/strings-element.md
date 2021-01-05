@@ -1,5 +1,7 @@
 ---
 title: String — element | Microsoft Docs
+description: Element Strings zawiera element podrzędny ButtonText oraz inne opcjonalne elementy podrzędne. Znak "i" w ciągu tekstowym określa skrót klawiaturowy.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db44db8926b523665a21c00b710dcee55749ab89
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f517d350f3383dcaeb99d651872ffb8ed09814fe
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699721"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715252"
 ---
 # <a name="strings-element"></a>Strings, element
 Element Strings musi zawierać co najmniej element podrzędny **ButtonText** . Wszystkie inne elementy podrzędne są opcjonalne. Nieprawidłowe znaki XML, takie jak "&" i "<", muszą być kodowane jako jednostki (" &amp; " i " &lt; " itd.).

@@ -13,12 +13,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f5ca27d44e611ab3b541dfb5992ef37d230513c3
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: fc74a556fe6baf21b6270b21951018fc246aa962
+ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040644"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97696627"
 ---
 # <a name="overview"></a>Omówienie
 
@@ -261,7 +261,7 @@ dotnet_diagnostic.CA2231.severity = warning
 
 ### <a name="set-rule-severity-from-solution-explorer"></a>Ustaw ważność reguły na podstawie Eksplorator rozwiązań
 
-1. W Eksplorator rozwiązań rozwiń węzeł analizatory **odwołań**  >  **Analyzers** (lub **Dependencies**  >  **analizatory** zależności dla projektów .NET Core).
+1. W Eksplorator rozwiązań rozwiń węzeł analizatory **odwołań**  >   (lub   >  **analizatory** zależności dla projektów .NET Core).
 
 2. Rozwiń zestaw, który zawiera regułę, dla której chcesz ustawić ważność.
 
@@ -286,7 +286,7 @@ dotnet_diagnostic.CA2231.severity = warning
 
 1. Otwórz plik aktywnego zestawu reguł w jeden z następujących sposobów:
 
-- W **Eksplorator rozwiązań** kliknij dwukrotnie plik, kliknij prawym przyciskiem myszy **References**  >  węzeł **analizatory** odwołań, a następnie wybierz **Otwórz aktywny zestaw reguł**.
+- W **Eksplorator rozwiązań** kliknij dwukrotnie plik, kliknij prawym przyciskiem myszy   >  węzeł **analizatory** odwołań, a następnie wybierz **Otwórz aktywny zestaw reguł**.
 - Na stronie właściwości **Analiza kodu** dla projektu wybierz pozycję **Otwórz** .
 
   Jeśli po raz pierwszy edytujesz zestaw reguł, program Visual Studio tworzy kopię domyślnego pliku zestawu reguł, nazywa go *\<projectname> . zestaw* reguł i dodaje go do projektu. Ten niestandardowy zestaw reguł jest również aktywnym zestawem reguł dla projektu.
@@ -382,7 +382,9 @@ Istnieje wiele sposobów pomijania naruszeń reguł:
 
 Podczas kompilowania projektu w wierszu polecenia naruszenia reguły pojawiają się w danych wyjściowych kompilacji w przypadku spełnienia następujących warunków:
 
-- Analizatory są instalowane jako pakiet NuGet, a nie jako rozszerzenie VSIX.
+- Analizatory są instalowane z zestawem SDK .NET lub pakietem NuGet, a nie jako rozszerzeniem VSIX.
+
+  W przypadku analizatorów zainstalowanych przy użyciu zestawu .NET SDK może być konieczne [włączenie analizatorów](../code-quality/install-net-analyzers.md). W przypadku stylów kodu można również [wymuszać style kodu podczas kompilowania](/dotnet/fundamentals/code-analysis/overview#code-style-analysis) przez ustawienie właściwości programu MSBuild.
 
 - Co najmniej jedna reguła narusza kod projektu.
 

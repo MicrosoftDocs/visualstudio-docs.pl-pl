@@ -1,5 +1,7 @@
 ---
 title: Wersje debugowania funkcji alokacji sterty | Microsoft Docs
+description: Używaj debugowania wersji funkcji alokacji sterty w bibliotece wykonawczej C. Te funkcje mają takie same nazwy, jak wersje wersji z dołączoną _dbg.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0fde776e9f2bd48aca92c7ba6d7f1fe1e23f01a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4be03c96f9c6ffdf8745ab8890e524ca98b4f4f
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72738370"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727076"
 ---
 # <a name="debug-versions-of-heap-allocation-functions"></a>Wersja debugowania funkcji alokacji stosu
 Biblioteka wykonawcza C zawiera specjalne wersje debugowania funkcji alokacji sterty. Te funkcje mają takie same nazwy, jak wersje wersji z _dbg dołączone do nich. W tym temacie opisano różnice między wydaną wersją funkcji CRT a wersją _dbg, przy użyciu `malloc` i `_malloc_dbg` jako przykłady.
@@ -49,4 +51,4 @@ Biblioteka wykonawcza C zawiera specjalne wersje debugowania funkcji alokacji st
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Techniki testowania CRT](../debugger/crt-debugging-techniques.md)
+- [Techniki debugowania CRT](../debugger/crt-debugging-techniques.md)

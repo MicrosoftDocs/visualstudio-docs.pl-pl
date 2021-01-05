@@ -1,5 +1,7 @@
 ---
 title: Animacje dla programu Visual Studio | Microsoft Docs
+description: Dowiedz się więcej o regułach, które pomagają zapewnić spójne i przyjazne dla użytkownika style animacji w środowisku IDE programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc11eb7bab69728be5ceaa55143f56e93cd1fca4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c86b033986511100415989e76f4f1e6ef7702f10
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698608"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715954"
 ---
 # <a name="animations-for-visual-studio"></a>Animacje dla programu Visual Studio
 ## <a name="animation-fundamentals"></a>Podstawy animacji
@@ -43,7 +45,7 @@ Postępuj zgodnie z tymi regułami, aby zapewnić spójne i przyjazne dla użytk
 
 - **Subtlety jest ważna.** W większości przypadków animacja nie musi zażądać uwagi użytkownika w celu jej przeprowadzenia. Subtelne zmiany w czasie, sekwencjonowaniu i zachowaniu mogą znacząco wpływać na percepcję i mogą powodować różnice między skuteczną i nieskuteczną animacją.
 
-- W przypadku używania animacji do narysowania uwagi do czegoś należy **się upewnić, że nastąpi przerwanie**uczenia się użytkownika.
+- W przypadku używania animacji do narysowania uwagi do czegoś należy **się upewnić, że nastąpi przerwanie** uczenia się użytkownika.
 
 - **Podczas wyświetlania postępu lub stanu** przez animację:
 

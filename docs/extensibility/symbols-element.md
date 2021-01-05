@@ -1,5 +1,7 @@
 ---
 title: Symbols — element | Microsoft Docs
+description: Element symboli definiuje identyfikatory GUID i identyfikatory, które są używane przez inne elementy VSCT. Ten artykuł zawiera przykład.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c24c3f84df23a07b6b16272b66b29e32ad7b911
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e86406c4c10c2f65e8e43d8f3cb67f413ed3c63
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699348"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715564"
 ---
 # <a name="symbols-element"></a>Symbols, element
 Definiuje identyfikatory GUID i identyfikatorów, które są używane przez inne elementy VSCT. W przypadku kodu niezarządzanego te informacje zazwyczaj pochodzą z plików nagłówkowych, które są określone przez [element extern](../extensibility/extern-element.md). Kod zarządzany używa elementów podrzędnych elementu Symbols do definiowania tych informacji.
@@ -69,5 +71,5 @@ Definiuje identyfikatory GUID i identyfikatorów, które są używane przez inne
 </Symbols>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Tabela poleceń programu Visual Studio (pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

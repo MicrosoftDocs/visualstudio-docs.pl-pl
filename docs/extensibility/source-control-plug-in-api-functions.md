@@ -1,5 +1,7 @@
 ---
 title: Funkcje interfejsu API wtyczki kontroli źródła | Microsoft Docs
+description: Dowiedz się więcej o funkcjach udostępnianych przez interfejs API kontroli źródła, które muszą zostać zaimplementowane przez wtyczkę kontroli źródła.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce685729dda8750d772e244398b736cff4951b72
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 114862bb3358cc2a5400d6f40031deb030e4e4df
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699920"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715993"
 ---
 # <a name="source-control-plug-in-api-functions"></a>Funkcje interfejsu API wtyczki kontroli źródła
 Interfejs API wtyczki kontroli źródła udostępnia następujące funkcje, które muszą zostać zaimplementowane przez wtyczkę kontroli źródła zgodnie z tym interfejsem API. Sygnatury każdej funkcji i semantyki skojarzonej z flagami bitowymi i innymi parametrami są szczegółowo opisane w tym odwołaniu.

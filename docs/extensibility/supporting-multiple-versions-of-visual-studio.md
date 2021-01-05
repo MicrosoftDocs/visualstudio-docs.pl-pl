@@ -1,5 +1,7 @@
 ---
 title: Obsługa wielu wersji programu Visual Studio | Microsoft Docs
+description: Dowiedz się, w jaki sposób można obsługiwać kilka wersji programu Visual Studio, dzięki którym pakietów VSPackage można ładować do różnych wersji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d571f1be4da45ff5ed6b2538cfb515930bde1de
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d1309c6fcda2b27efdc78e7b31189d3a58edfb8
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699473"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715629"
 ---
 # <a name="supporting-multiple-versions-of-visual-studio"></a>Obsługiwanie wielu wersji programu Visual Studio
 Termin *równoczesny* oznacza, że można zainstalować i zachować wiele wersji produktu na tym samym komputerze. W przypadku pakietów VSPackage oznacza, że użytkownik może mieć kilka wersji programu Visual Studio zainstalowanych na tym samym komputerze. Nie można jednak korzystać ze równoległych wersji pakietów VSPackage załadowanych w jednej wersji programu Visual Studio.

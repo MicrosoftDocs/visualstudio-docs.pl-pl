@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 84be6698c62e3a2a205ceb9d404673ee1d0c6f64
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 68fbdef0e86b125971480ae1bd6a7ba6d3108cd8
+ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668615"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97696535"
 ---
 # <a name="supported-visual-studio-features-preview"></a>Obsługiwane funkcje programu Visual Studio (wersja zapoznawcza)
 
@@ -108,8 +108,8 @@ Jeszcze niedostępne:
 
 Podczas pracy z programem Visual Studio połączonym z codespace uzyskasz te same funkcje ułatwień dostępu jak podczas pracy lokalnie.
 
-* Kontrola źródła — pełna obsługa Git za pomocą nowego [okna usługi git](https://devblogs.microsoft.com/visualstudio/improved-git-experience-in-visual-studio-2019/).
-* Ułatwienia dostępu — istnieje jeden znany problem z technologią pomocniczą, która nie może uzyskać dostępu do appcasting debugowanej aplikacji. Oprócz tego ograniczenia nie uważamy, że istnieją inne problemy ze zgodnością, które jeszcze nie istnieją w lokalnym środowisku programu Visual Studio. Skontaktuj się z nami, jeśli wykryjesz usterki przez zgłoszenie problemu w [społeczności deweloperów](https://aka.ms/feedback/suggest?space=8).
+* Kontrola źródła — pełna obsługa Git za pomocą nowego [zintegrowanego środowiska git](../git-with-visual-studio.md).
+* Ułatwienia dostępu — istnieje jeden znany problem z technologią pomocniczą, która nie może uzyskać dostępu do appcasting debugowanej aplikacji. Oprócz tego ograniczenia nie uważamy, że istnieją inne problemy ze zgodnością, które jeszcze nie istnieją w lokalnym środowisku programu Visual Studio. Skontaktuj się z nami, jeśli wykryjesz usterki przez zgłoszenie problemu w [społeczności deweloperów](https://aka.ms/feedback/report?space=8).
 * Publikowanie-publikowanie na platformie Azure za pomocą akcji GitHub jest obsługiwane.
 * Połączone usługi — Usługa App Insights, Magazyn kluczy, magazyn, SQL, Redis, Cosmos, openAPI i gRPC są częściowo obsługiwane.
 * Eksplorator testów * — głównie obsługiwane.
@@ -121,7 +121,7 @@ Jeszcze niedostępne:
 * Funkcje testowania dla przedsiębiorstw — Live Unit Testing, fałszywe firmy Microsoft, pokrycie kodu i IntelliTest nie są obsługiwane.
 * Zaawansowane scenariusze publikowania — publikowanie selektywne, publikowanie FTP, Podgląd zmian, pasek narzędzi szybkiej publikacji itp.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [Co to jest GitHub Codespaces?](codespaces-overview.md)
 * [Jak używać programu Visual Studio z codespace](use-visual-studio-with-codespaces.md)

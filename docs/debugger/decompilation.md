@@ -1,5 +1,7 @@
 ---
 title: Dekompilowanie kodu platformy .NET podczas debugowania | Microsoft Docs
+description: Generuj i osadzaj kod źródłowy z zestawów .NET podczas debugowania w programie Visual Studio. Wyodrębnij i Wyświetl osadzony kod źródłowy.
+ms.custom: SEO-VS-2020
 ms.date: 2/2/2020
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 87f8fbec389e3735b6f1c39cdd671a391c7334d7
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 8ad919b14642dff98746c194ad8c05bbb3aea529
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600114"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726738"
 ---
 # <a name="generate-source-code-from-net-assemblies-while-debugging"></a>Generuj kod źródłowy z zestawów .NET podczas debugowania
 
@@ -57,7 +59,7 @@ Pliki źródłowe, które są osadzone w pliku symboli, można wyodrębnić przy
 
 ![Zrzut ekranu przedstawiający menu kontekstowe zestawu w oknie modułów z poleceniem Wyodrębnij źródła.](media/decompilation-extract-source-code.png)
 
-Wyodrębnione pliki źródłowe są dodawane do rozwiązania jako [różne pliki](../ide/reference/miscellaneous-files.md). Funkcja różne pliki jest domyślnie wyłączona w programie Visual Studio. Tę funkcję można włączyć z poziomu opcji **Narzędzia**  >  **Options**  >  **Environment**  >  **dokumenty**środowiska  >  **Pokaż różne pliki w Eksplorator rozwiązań** pole wyboru. Bez włączania tej funkcji nie będzie można otworzyć wyodrębnionego kodu źródłowego.
+Wyodrębnione pliki źródłowe są dodawane do rozwiązania jako [różne pliki](../ide/reference/miscellaneous-files.md). Funkcja różne pliki jest domyślnie wyłączona w programie Visual Studio. Tę funkcję można włączyć z poziomu opcji **Narzędzia**  >    >    >  **dokumenty** środowiska  >  **Pokaż różne pliki w Eksplorator rozwiązań** pole wyboru. Bez włączania tej funkcji nie będzie można otworzyć wyodrębnionego kodu źródłowego.
 
 ![Zrzut ekranu strony opcji narzędzia z włączoną opcją różne pliki.](media/decompilation-tools-options-misc-files.png)
 
@@ -101,7 +103,7 @@ Więcej szczegółów można znaleźć w temacie problem z usługą plików [PDB
 
 Ustawienia [tylko mój kod (JMC)](./just-my-code.md) pozwalają programowi Visual Studio na przechodzenie przez system, strukturę, bibliotekę i inne wywołania niebędące użytkownikami. Podczas sesji debugowania w oknie **moduły** są wyświetlane moduły kodu, które debuger jest traktowany jako mój kod (kod użytkownika).
 
-Dekompilacja modułów zoptymalizowanych lub wydań generuje kod niebędący użytkownikiem. Jeśli debuger przerwie w nieskompilowanym kodzie nieużywanym przez użytkownika, na przykład okno **nie** zostanie wyświetlone. Aby wyłączyć tylko mój kod, przejdź do **Tools**  >  **opcji** narzędzia (lub **Debug**  >  **Opcje**debugowania) > **debugowania**  >  **Ogólne**, a następnie usuń zaznaczenie opcji **Włącz tylko mój kod**.
+Dekompilacja modułów zoptymalizowanych lub wydań generuje kod niebędący użytkownikiem. Jeśli debuger przerwie w nieskompilowanym kodzie nieużywanym przez użytkownika, na przykład okno **nie** zostanie wyświetlone. Aby wyłączyć tylko mój kod, przejdź do   >  **opcji** narzędzia (lub   >  **Opcje** debugowania) > **debugowania**  >  **Ogólne**, a następnie usuń zaznaczenie opcji **Włącz tylko mój kod**.
 
 ### <a name="extracted-sources"></a>Wyodrębnione źródła
 

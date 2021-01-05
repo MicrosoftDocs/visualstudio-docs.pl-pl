@@ -1,5 +1,7 @@
 ---
 title: Struktura pliku [Content_types]. XML | Microsoft Docs
+description: Dowiedz się więcej na temat struktury pliku typów zawartości, który zawiera informacje o rodzaju zawartości w pakiecie VSIX.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e96af4936f27d869409a7215c720d9bb64e4128
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 7117845e4756f8b0e09a8fa603e66448e705b903
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012520"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715226"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>Struktura pliku [Content_types].xml
 Zawiera informacje o rodzaju zawartości w pakiecie VSIX. Program Visual Studio używa pliku XML [Content_Types] do zainstalowania pakietu, ale nie instaluje samego pliku.
@@ -99,7 +101,7 @@ Zawiera informacje o rodzaju zawartości w pakiecie VSIX. Program Visual Studio 
 </Types>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Anatomia pakietu VSIX](../extensibility/anatomy-of-a-vsix-package.md)
 - [Dokumentacja schematu rozszerzenia VSIX 1,0](/previous-versions/dd393700(v=vs.110))
 - [OPC: nowy standard tworzenia pakietów danych](/archive/msdn-magazine/2007/august/opc-a-new-standard-for-packaging-your-data)

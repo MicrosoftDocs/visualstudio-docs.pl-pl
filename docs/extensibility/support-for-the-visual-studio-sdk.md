@@ -1,5 +1,7 @@
 ---
 title: Obsługa zestawu SDK programu Visual Studio | Microsoft Docs
+description: Dowiedz się więcej na temat opcji pomocy technicznej, które są dostępne dla klientów, jak rozbudować środowisko IDE programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ddcdf62fbfe6d683159cccce24280bdb08cedc2a
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 40e2ceb39931ce7779a7e13de6d0f13ee68f32b7
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099378"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715291"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Obsługa zestawu Visual Studio SDK
 Dostępne są różne opcje pomocy technicznej dla klientów z pytaniami dotyczącymi sposobu rozwinięcia zintegrowanego środowiska programistycznego (IDE) programu Visual Studio.
@@ -62,6 +64,6 @@ Pytania dotyczące ofert pomoc techniczna Premier w połączeniu z programem VSI
 
 Informacje o poszczególnych żądaniach pomocy technicznej można znaleźć w [poszczególnych żądaniach pomocy technicznej](https://support.microsoft.com/supportforbusiness/productselection).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Porozmawiaj z nami](../ide/feedback-options.md)

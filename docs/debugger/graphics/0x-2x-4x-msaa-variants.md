@@ -1,5 +1,7 @@
 ---
 title: Odmiany "0x-2x" 4x MSAA | Microsoft Docs
+description: Dowiedz się, jak przesłonić wiele przykładowych ustawień wygładzania (MSAA) dla wszystkich obiektów docelowych renderowania i łańcuchów wymiany przy użyciu funkcji 0x, 2x lub 4x MSAA.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 668a6603-5082-4c78-98e6-f3dc871aa55b
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e77c0d7b5cbba2faf73fcca85ffcd0db063d618e
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: 1d4de52fb135e465e7adc938bb29c571bfcc1973
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407552"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726556"
 ---
 # <a name="0x2x4x-msaa-variants"></a>Warianty 0x/2x/4x MSAA
 Przesłania wiele przykładowych ustawień wygładzania (MSAA) dla wszystkich obiektów docelowych renderowania i łańcuchów wymiany.

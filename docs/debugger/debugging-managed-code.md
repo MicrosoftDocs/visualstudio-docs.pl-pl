@@ -1,5 +1,7 @@
 ---
 title: Debugowanie kodu zarządzanego | Microsoft Docs
+description: Zobacz typowe problemy z debugowaniem i techniki w programie Visual Studio dla aplikacji zarządzanych lub aplikacje w językach przeznaczonych dla środowiska uruchomieniowego języka wspólnego.
+ms.custom: SEO-VS-2020
 ms.date: 09/23/2019
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 76b841d94aee93a1bc88f6d01161239828dee166
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e7dadfbc6a02382165b623aeff9d866e9edc975a
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73188412"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727024"
 ---
 # <a name="debug-managed-code-c-visual-basic-f-ccli"></a>Debuguj kod zarządzany (C#, Visual Basic, F #, C++/CLI)
 

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ab66089de25b7648b13e1ba05f88ab55b7868df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7e2a05fe84b023a60ef75f0cb262a08fc02587a
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348031"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727427"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Obejrzyj zmienne z oknami Watch i QuickWatch
 
@@ -30,7 +30,8 @@ Gdy debugujesz, możesz użyć okien kontrolnych **Watch** i **QuickWatch** , ab
 
 Okna **czujki** mogą wyświetlać kilka zmiennych jednocześnie podczas debugowania. W oknie dialogowym **QuickWatch** jest wyświetlana pojedyncza zmienna i musi być ZAMKNIĘTA, zanim będzie można kontynuować debugowanie.
 
-Jeśli po raz pierwszy podjęto próbę debugowania kodu, przed przeprowadzeniem tego artykułu warto przeczytać [debugowanie dla bezwzględnych](../debugger/debugging-absolute-beginners.md) [technik i narzędzi debugowania](../debugger/write-better-code-with-visual-studio.md) .
+> [!NOTE]
+> Jeśli po raz pierwszy podjęto próbę debugowania kodu, przed przeprowadzeniem tego artykułu warto przeczytać [debugowanie dla bezwzględnych](../debugger/debugging-absolute-beginners.md) [technik i narzędzi debugowania](../debugger/write-better-code-with-visual-studio.md) .
 
 ## <a name="observe-variables-with-a-watch-window"></a>Obserwuj zmienne z okno wyrażeń kontrolnych
 
@@ -58,19 +59,19 @@ int main()
 
 ```
 
-1. Ustaw punkt przerwania w `c = a + b;` wierszu, klikając na lewym marginesie pozycję **Debuguj**  >  **Przełącz punkt przerwania**lub naciskając klawisz **F9**.
+1. Ustaw punkt przerwania w `c = a + b;` wierszu, klikając na lewym marginesie pozycję **Debuguj**  >  **Przełącz punkt przerwania** lub naciskając klawisz **F9**.
 
-1. Rozpocznij debugowanie, wybierając zieloną strzałkę **startową** lub **Debuguj**  >  **Rozpocznij debugowanie**lub naciśnij klawisz **F5**. Wykonywanie jest wstrzymywane w punkcie przerwania.
+1. Rozpocznij debugowanie, wybierając zieloną strzałkę **startową** lub **Debuguj**  >  **Rozpocznij debugowanie** lub naciśnij klawisz **F5**. Wykonywanie jest wstrzymywane w punkcie przerwania.
 
-1. Otwórz okno **czujki** , wybierając **Debuguj**  >  **Windows**  >  **Watch**  >  **Watch 1**lub naciśnij **klawisze CTRL** + **Alt** + **W**  >  **1**.
+1. Otwórz okno **czujki** , wybierając **Debuguj**  >  **Windows**  >  **Watch**  >  **Watch 1** lub naciśnij **klawisze CTRL** + **Alt** + **W**  >  **1**.
 
-   Możesz otworzyć dodatkowe okna **czujki** , wybierając pozycję Windows **2**, **3**lub **4**.
+   Możesz otworzyć dodatkowe okna **czujki** , wybierając pozycję Windows **2**, **3** lub **4**.
 
 1. W oknie **czujka** zaznacz pusty wiersz i wpisz zmienna `a` . Wykonaj te same czynności dla `b` i `c` .
 
    ![Obserwowanie zmiennych](../debugger/media/watchvariables.png "WatchVariables")
 
-1. Kontynuuj debugowanie, wybierając pozycję **Debuguj**do  >  **kroku** lub naciskając klawisz **F11** w razie potrzeby. Wartości zmiennych w oknie **czujki** zmieniają się podczas iteracji `for` pętli.
+1. Kontynuuj debugowanie, wybierając pozycję **Debuguj** do  >  **kroku** lub naciskając klawisz **F11** w razie potrzeby. Wartości zmiennych w oknie **czujki** zmieniają się podczas iteracji `for` pętli.
 
 >[!NOTE]
 >Tylko w języku C++
@@ -134,7 +135,7 @@ Jeśli zostanie wyświetlona ikona odświeżenia, ponieważ automatyczna Ocena w
 
 Aby zademonstrować przy użyciu ikony odświeżania:
 
-1. W obszarze **Narzędzia**  >  **Opcje**  >  **debugowania**  >  **Ogólne**wyczyść pole wyboru **Włącz Obliczanie właściwości i inne niejawne wywołania funkcji** .
+1. W obszarze **Narzędzia**  >  **Opcje**  >  **debugowania**  >  **Ogólne** wyczyść pole wyboru **Włącz Obliczanie właściwości i inne niejawne wywołania funkcji** .
 
 1. Wprowadź następujący kod, a następnie w oknie **czujki** Ustaw kontrolkę na `list.Count` właściwości.
 
@@ -165,7 +166,7 @@ Ten kod może spowodować [efekt uboczny](https://en.wikipedia.org/wiki/Side_eff
 
 Wyrażenie z efektami ubocznymi jest oceniane tylko raz, po jego wprowadzeniu po raz pierwszy. Następnie wyrażenie pojawia się wyszarzone w oknie **czujki** , a dalsze oceny są wyłączone. Kolumna etykietka narzędzia lub **wartość** objaśnia, że wyrażenie powoduje efekt uboczny. Możesz wymusić ponowną ocenę, wybierając ikonę odświeżania, która pojawia się obok wartości.
 
-Jednym ze sposobów zapobiegania wyznaczeniu efektów ubocznych jest wyłączenie automatycznej oceny funkcji. W obszarze **Narzędzia**  >  **Opcje**  >  **debugowania**  >  **Ogólne**wybierz opcję **Włącz Obliczanie właściwości i inne niejawne wywołania funkcji**.
+Jednym ze sposobów zapobiegania wyznaczeniu efektów ubocznych jest wyłączenie automatycznej oceny funkcji. W obszarze **Narzędzia**  >  **Opcje**  >  **debugowania**  >  **Ogólne** wybierz opcję **Włącz Obliczanie właściwości i inne niejawne wywołania funkcji**.
 
 Tylko w przypadku języka C#, gdy Ocena właściwości lub niejawne wywołania funkcji jest wyłączona, można wymusić Obliczanie przez dodanie modyfikatora w formacie **AC** do **nazwy** zmiennej w oknie **czujka** . Zobacz [specyfikatory formatu w języku C#](../debugger/format-specifiers-in-csharp.md).
 
@@ -217,7 +218,7 @@ Aby sprawdzić nazwę `Person` w `DoSomething()` metodzie, można dodać odwoła
 
 1. Uruchom debugowanie.
 
-1. Po wstrzymaniu wykonywania w punkcie przerwania Otwórz okno zmienne **lokalne** , wybierając pozycję **Debuguj**  >  **Windows**  >  **Ustawienia regionalne**systemu Windows.
+1. Po wstrzymaniu wykonywania w punkcie przerwania Otwórz okno zmienne **lokalne** , wybierając pozycję **Debuguj**  >    >  **Ustawienia regionalne** systemu Windows.
 
 1. W oknie zmiennych **lokalnych** kliknij prawym przyciskiem myszy `Person` zmienną i wybierz pozycję **Utwórz identyfikator obiektu**.
 
@@ -230,7 +231,7 @@ Aby sprawdzić nazwę `Person` w `DoSomething()` metodzie, można dodać odwoła
 1. Kontynuuj debugowanie. Gdy wykonywanie jest wstrzymywane w `DoSomething()` metodzie, okno **czujki** wyświetla `Person` obiekt.
 
    > [!NOTE]
-   > Jeśli chcesz zobaczyć właściwości obiektu, takie jak `Person.Name` , musisz włączyć obliczanie właściwości, wybierając opcje **Narzędzia**  >  **Options**  >  **debugowanie**  >  **Ogólne**  >  **Włącz Obliczanie właściwości i inne niejawne wywołania funkcji**.
+   > Jeśli chcesz zobaczyć właściwości obiektu, takie jak `Person.Name` , musisz włączyć obliczanie właściwości, wybierając opcje **Narzędzia**  >    >  **debugowanie**  >  **Ogólne**  >  **Włącz Obliczanie właściwości i inne niejawne wywołania funkcji**.
 
 ## <a name="dynamic-view-and-the-watch-window"></a>Widok dynamiczny i okno wyrażeń kontrolnych
 
@@ -255,9 +256,9 @@ Aby wyświetlić tylko **Widok dynamiczny** dla obiektu, należy dodać specyfik
 1. Kliknij prawym przyciskiem myszy dowolny element podrzędny **widoku dynamicznego**.
 1. Wybierz pozycję **Dodaj czujkę**. Zostanie `object.name` `((dynamic) object).name` wyświetlona w nowym oknie **czujki** .
 
-Debuger dodaje również węzeł podrzędny **widoku dynamicznego** obiektu do okna **automatycznie** . Aby otworzyć okno **autostarts** , podczas debugowania wybierz opcję **Debuguj**  >  **Windows**  >  **autostarty**systemu Windows.
+Debuger dodaje również węzeł podrzędny **widoku dynamicznego** obiektu do okna **automatycznie** . Aby otworzyć okno **autostarts** , podczas debugowania wybierz opcję **Debuguj**  >    >  **autostarty** systemu Windows.
 
-**Widok dynamiczny** rozszerza również debugowanie obiektów com. Gdy debuger przyjdzie do obiektu COM opakowanego w **System. __ComObject**, dodaje dynamiczny węzeł **widoku** dla obiektu.
+**Widok dynamiczny** rozszerza również debugowanie obiektów com. Gdy debuger odzyskuje obiekt COM otoczony **System.__ComObject**, dodaje **dynamiczny węzeł widoku** dla obiektu.
 
 ## <a name="observe-a-single-variable-or-expression-with-quickwatch"></a>Obserwuj pojedynczą zmienną lub wyrażenie z QuickWatch
 
@@ -286,13 +287,13 @@ Aby obserwować `a` zmienną,
 
 1. Wybierz zmienną `a` w kodzie.
 
-1. Wybierz pozycję **Debuguj**  >  **QuickWatch**, naciśnij klawisz **SHIFT** + **F9**lub kliknij prawym przyciskiem myszy, a następnie wybierz pozycję **QuickWatch**.
+1. Wybierz pozycję **Debuguj**  >  **QuickWatch**, naciśnij klawisz **SHIFT** + **F9** lub kliknij prawym przyciskiem myszy, a następnie wybierz pozycję **QuickWatch**.
 
    Zostanie wyświetlone okno dialogowe **QuickWatch** . `a`Zmienna znajduje się w polu **wyrażenie** z **wartością** **1**.
 
    ![Zmienna QuickWatch](../debugger/media/quickwatchvariable.png "Zmienna QuickWatch")
 
-1. Aby oszacować wyrażenie przy użyciu zmiennej, wpisz wyrażenie, takie jak `a + b` w polu **wyrażenie** , a następnie wybierz pozycję **Oblicz**ponownie.
+1. Aby oszacować wyrażenie przy użyciu zmiennej, wpisz wyrażenie, takie jak `a + b` w polu **wyrażenie** , a następnie wybierz pozycję **Oblicz** ponownie.
 
    ![Wyrażenie QuickWatch](../debugger/media/quickwatchexpression.png "Wyrażenie QuickWatch")
 

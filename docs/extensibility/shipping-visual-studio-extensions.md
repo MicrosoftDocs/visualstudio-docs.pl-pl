@@ -1,5 +1,7 @@
 ---
 title: Wysyłanie rozszerzeń programu Visual Studio | Microsoft Docs
+description: Dowiedz się, jak publikować i konserwować rozszerzenie Visual Studio SDK, włącznie z pracą z plikami. vsix, publikowaniem, lokalizowaniem i aktualizowaniem.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 767bb24bb5cb47f1af1452aa04ebdc91c778e284
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 812fc4f4e2f8dcf54876e2764f0c091f16348496
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700112"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716006"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Dostarczanie rozszerzeń programu Visual Studio
 Po zakończeniu opracowywania rozszerzenia można go zainstalować na innych maszynach, udostępnić go znajomym i współpracownikom albo opublikować na Visual Studio Marketplace. W tej sekcji wyjaśnimy wszystkie czynności, które należy wykonać w celu opublikowania i utrzymania rozszerzenia: Praca z plikami. vsix, publikowanie, lokalizowanie i aktualizowanie.

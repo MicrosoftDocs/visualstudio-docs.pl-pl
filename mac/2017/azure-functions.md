@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.topic: how-to
-ms.openlocfilehash: 009df6525696405914aeeb224e3817bbfbe27155
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 63793548bd3ea1098cc1113724cd9a3b513adbf5
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189800"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727466"
 ---
 # <a name="introduction-to-azure-functions"></a>Wprowadzenie do usługi Azure Functions
 
@@ -91,10 +91,10 @@ Korzystając z powyższej procedury, można dodać więcej funkcji do projektu a
 
 ## <a name="publish-to-azure"></a>Publikowanie na platformie Azure
 
-1. Kliknij prawym przyciskiem myszy nazwę projektu i wybierz opcję **publikuj > publikowanie na platformie Azure**:  ![ Publikowanie w usłudze Azure — opcja menu](media/azure-functions-image5.png)
+1. Kliknij prawym przyciskiem myszy nazwę projektu i wybierz pozycję **publikuj > Opublikuj na platformie Azure**:  ![ zrzut ekranu z Azure Functions, Pokazywanie wybranego projektu AF-httptrigger, a następnie polecenia Publikuj i Publikuj do platformy Azure wyróżnione w menu kontekstowym.](media/azure-functions-image5.png)
 2. Jeśli masz już połączenie z kontem platformy Azure w celu Visual Studio dla komputerów Mac zostanie wyświetlona lista dostępnych usług App Services. Jeśli użytkownik nie zalogował się, zostanie wyświetlony odpowiedni monit.
 3. W oknie dialogowym **Publikowanie w Azure App Service** możesz wybrać istniejącą usługę App Service lub utworzyć nową, klikając przycisk **Nowy**.
-4. W oknie dialogowym **Tworzenie nowego App Service** wprowadź ustawienia:  ![ Publikowanie w usłudze Azure — opcja menu](media/azure-functions-image7.png)
+4. W oknie dialogowym **Tworzenie nowego App Service** wprowadź ustawienia:  ![ zrzut ekranu przedstawiający nowe okno App Service w Azure Functions, pokazujący ustawienia tworzenia nowej App Service na platformie Azure.](media/azure-functions-image7.png)
 
     |Ustawienie  |Opis  |
     |---------|---------|
@@ -108,13 +108,13 @@ Korzystając z powyższej procedury, można dodać więcej funkcji do projektu a
 
 5. Kliknij przycisk **dalej** , aby utworzyć konto magazynu. Środowisko uruchomieniowe usługi Functions wymaga konta magazynu platformy Azure. Kliknij pozycję **niestandardowy** , aby utworzyć konto magazynu ogólnego przeznaczenia, lub Użyj istniejącego:
 
-    ![Opcja menu Publikuj w systemie Azure](media/azure-functions-image8.png)
+    ![Zrzut ekranu przedstawiający ekran Konfigurowanie konta magazynu w Azure Functions. Wybrano opcję Niestandardowa dla konta magazynu, a nazwa konta i typ konta są wypełnione.](media/azure-functions-image8.png)
 
 6. Kliknij przycisk **Utwórz**, aby utworzyć aplikację funkcji i powiązane zasoby na platformie Azure przy użyciu tych ustawień i wdrożyć kod projektu funkcji.
 
 7. Podczas publikowania może pojawić się okno dialogowe z informacją o tym, jak zaktualizować wersję funkcji na platformie Azure. Kliknij przycisk **tak**:
 
-    ![Opcja menu Publikuj w systemie Azure](media/azure-functions-image12.png)
+    ![Zrzut ekranu przedstawiający wersję funkcji aktualizacji w oknie dialogowym platformy Azure z prośbą o wprowadzenie do aktualizacji ustawień aplikacji platformy Azure w celu dopasowania do wersji funkcji lokalnych.](media/azure-functions-image12.png)
 
 > [!CAUTION]
 > Istnieje usterka w wersji 7,6 Visual Studio dla komputerów Mac, w której `FUNCTIONS_EXTENSION_VERSION` nie ustawiono prawidłowo "beta", co oznacza, że funkcja może nie działać. Aby rozwiązać ten problem, przejdź do [ustawień aplikacji funkcji](#function-app-settings) i ustaw wartość `FUNCTIONS_EXTENSION_VERSION` "-1" na "beta".

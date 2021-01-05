@@ -1,5 +1,7 @@
 ---
 title: UsedCommand — element | Microsoft Docs
+description: Element UsedCommand umożliwia pakietu VSPackage dostęp do polecenia, które jest zdefiniowane w innym pliku. vsct.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65030c3fe24c3456b0c4c99a667362d2a4c67703
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d1dcef25413bddbb1eb5c35a47a9dc0d30f4a8f
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698824"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715967"
 ---
 # <a name="usedcommand-element"></a>UsedCommand, element
 Umożliwia pakietu VSPackage dostęp do polecenia, które jest zdefiniowane w innym pliku. vsct. Na przykład jeśli pakietu VSPackage używa polecenia **kopiowania** standardowego, które jest zdefiniowane przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] powłokę, można dodać polecenie do menu lub paska narzędzi bez jego ponownego wdrożenia.
@@ -34,8 +36,8 @@ Umożliwia pakietu VSPackage dostęp do polecenia, które jest zdefiniowane w in
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|guid|Wymagany. Identyfikator GUID pary identyfikatora identyfikatora GUID, który identyfikuje polecenie.|
-|identyfikator|Wymagany. Identyfikator pary identyfikatorów identyfikatora GUID, który identyfikuje polecenie.|
+|guid|Wymagane. Identyfikator GUID pary identyfikatora identyfikatora GUID, który identyfikuje polecenie.|
+|identyfikator|Wymagane. Identyfikator pary identyfikatorów identyfikatora GUID, który identyfikuje polecenie.|
 |Warunek|Opcjonalny. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementy podrzędne
@@ -63,6 +65,6 @@ Umożliwia pakietu VSPackage dostęp do polecenia, które jest zdefiniowane w in
 </UsedCommands>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [UsedCommands, element](../extensibility/usedcommands-element.md)
 - [Tabela poleceń programu Visual Studio (pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

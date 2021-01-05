@@ -1,5 +1,7 @@
 ---
 title: Debugowanie kodu GPU | Microsoft Docs
+description: Informacje o debugowaniu kodu C++ uruchomionego w procesorze GPU w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02900bc7e0d3746e465c8e4741036605a76190d4
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 36359f8d5f2044c97e3479981290aff07d3f2e31
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599947"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727037"
 ---
 # <a name="debugging-gpu-code"></a>Debugowanie kodu GPU
 Można debugować kod języka C++, który jest uruchomiony w procesorze GPU. Obsługa debugowania GPU w programie Visual Studio obejmuje wykrywanie wyścigu, uruchamianie procesów i ich dołączanie oraz integrację z oknami debugowania.
@@ -81,5 +83,5 @@ Można debugować kod języka C++, który jest uruchomiony w procesorze GPU. Obs
 
 ## <a name="see-also"></a>Zobacz też
 - [Przewodnik: debugowanie aplikacji C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
-- [Ustawienia projektu dla konfiguracji debugowania w C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
+- [Ustawienia projektu dla konfiguracji debugowania języka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Rozpocznij debugowanie procesora GPU w programie Visual Studio](/archive/blogs/nativeconcurrency/start-gpu-debugging-in-visual-studio-2012)

@@ -1,5 +1,7 @@
 ---
 title: Debugowanie błędów i okien dialogowych ostrzeżeń | Microsoft Docs
+description: Zobacz listę błędów i okien dialogowych ostrzeżeń, które mogą wystąpić podczas debugowania aplikacji w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,18 +23,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: beeba55c873e008b3e096da66f888695d719c882
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 73432c1693db1543095643a998396967b7aa2bdf
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599936"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726985"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Błędy i ostrzeżenia debugowania — Okna dialogowe
 Poniżej znajdują się okna dialogowe błędy i ostrzeżenia, które mogą wystąpić podczas debugowania aplikacji.
 
 ## <a name="in-this-section"></a>W tej sekcji
- [Błędy potwierdzenia — Okno dialogowe](../debugger/assertion-failed-dialog-box.md)
+ [Nieudane okno dialogowe potwierdzenia](../debugger/assertion-failed-dialog-box.md)
 
  [Nie można zmienić wartości — okno dialogowe](../debugger/cannot-change-value-dialog-box.md)
 
@@ -40,19 +42,19 @@ Poniżej znajdują się okna dialogowe błędy i ostrzeżenia, które mogą wyst
  
  [Za mało pamięci w usługach debugera](../debugger/error-debugger-services-no-memory.md)
 
- [Wykonywalny dla sesji debugowania — Okno dialogowe](../debugger/executable-for-debugging-session-dialog-box.md)
+ [Plik wykonywalny dla sesji debugowania — okno dialogowe](../debugger/executable-for-debugging-session-dialog-box.md)
 
  [Nie można zastosować zmiany kodu — okno dialogowe](../debugger/edit-and-continue-dialog-box-cpp.md)
 
- [Microsoft Visual Studio Debugger (wystąpienie wyjątku) ― okno dialogowe](../debugger/microsoft-visual-studio-debugger-exception-thrown-dialog-box.md)
+ [Debuger Microsoft Visual Studio (zgłoszony wyjątek) — okno dialogowe](../debugger/microsoft-visual-studio-debugger-exception-thrown-dialog-box.md)
 
  [Brak dostępnego kodu źródłowego dla bieżącej lokalizacji — okno dialogowe](../debugger/no-source-available.md)
 
  [Okno dialogowe bez informacji symbolicznych](/previous-versions/d493t3ew(v=vs.100))
 
- [Rozwiązywania niejednoznaczności — Okno dialogowe](../debugger/resolve-ambiguity-dialog-box.md)
+ [Okno dialogowe Rozwiązywanie niejednoznaczności](../debugger/resolve-ambiguity-dialog-box.md)
 
- [Ostrzeżenie o kodzie nieodświeżonym — Okno dialogowe](../debugger/stale-code-warning-dialog-box.md)
+ [Okno dialogowe ostrzeżenia o nieodświeżonym kodzie](../debugger/stale-code-warning-dialog-box.md)
 
  [Nie można nawiązać połączenia z maszyną](../debugger/error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md)
 
@@ -67,6 +69,6 @@ Poniżej znajdują się okna dialogowe błędy i ostrzeżenia, które mogą wyst
 
  [Rozwiązywanie problemów z konfiguracją debugowania SQL](/previous-versions/visualstudio/visual-studio-2010/s7ahaxtd(v=vs.100))
 
- [Debugowanie często zadawanych pytań dotyczących kodu natywnego](../debugger/debugging-native-code-faqs.md)
+ [Debugowanie kodu natywnego — często zadawane pytania](../debugger/debugging-native-code-faqs.md)
 
  [Zabezpieczenia debugera](../debugger/debugger-security.md)

@@ -1,5 +1,7 @@
 ---
 title: Korzystanie z magazynu ustawień | Microsoft Docs
+description: Dowiedz się, jak odczytywać dane z magazynu ustawień konfiguracji, które są ustawieniami programu Visual Studio i pakietu VSPackage tylko do odczytu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3bbc09586f883e067e32f525a0331c1a9e253f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aeb147c245f7dc09cf91db8a1b810a7c5f30b46b
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698517"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715915"
 ---
 # <a name="using-the-settings-store"></a>Korzystanie z magazynu ustawień
 Istnieją dwa rodzaje magazynów ustawień:
@@ -79,7 +81,7 @@ Istnieją dwa rodzaje magazynów ustawień:
 
 1. Otwórz Regedit.exe.
 
-2. Przejdź do HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\14.0Exp_Config \InstalledProducts \\ .
+2. Przejdź do HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts\\ .
 
     > [!NOTE]
     > Upewnij się, że przeglądasz klucz zawierający \ 14.0Exp_Config \ i nie \ 14.0_Config \\ . Po uruchomieniu eksperymentalnego wystąpienia programu Visual Studio ustawienia konfiguracji znajdują się w gałęzi rejestru "14.0Exp_Config".

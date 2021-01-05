@@ -10,12 +10,12 @@ ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: 15e788cca7cb27b36e3f3567aff96cd33bf5aaae
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 28eccd9c564b7d368e823288311a823fdff86fb3
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099235"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726401"
 ---
 # <a name="create-an-ai-project-from-a-template-in-visual-studio"></a>Tworzenie projektu AI na podstawie szablonu w programie Visual Studio
 
@@ -37,10 +37,10 @@ Po [zainstalowaniu Visual Studio Tools for AI](installation.md)można łatwo utw
 
 6. Projekt ma także pewne właściwości, które zostały utworzone, aby ułatwić debugowanie aplikacji przez automatyczne przekazywanie argumentów wiersza polecenia do tych parametrów wejściowych. **Kliknij prawym przyciskiem myszy** projekt, a następnie wybierz polecenie **Właściwości**
 
-    ![Właściwości](media/create-project/project-properties.png)
+    ![Zrzut ekranu przedstawiający Eksplorator rozwiązań programu Visual Studio z menu kontekstowego dla TensorFlowApplication1 z wybranymi właściwościami.](media/create-project/project-properties.png)
 
 7. Kliknij kartę **debugowanie** , aby zobaczyć automatycznie dodane argumenty skryptu. można je zmienić w razie potrzeby w miejscu, w którym znajdują się dane wejściowe, oraz miejsce przechowywania danych wyjściowych.
 
-    ![Właściwości](media/create-project//project-properties_1.png)
+    ![Zrzut ekranu karty debugowanie w ustawieniach właściwości dla TensorFlowApplication1, pokazujący argumenty skryptu dla projektu.](media/create-project//project-properties_1.png)
 
 8. Uruchom program, naciskając klawisze CTRL + F5 lub wybierając pozycję **debuguj > Rozpocznij bez debugowania** w menu. Wyniki są wyświetlane w oknie konsoli.

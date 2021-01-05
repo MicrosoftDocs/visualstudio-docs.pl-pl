@@ -1,5 +1,7 @@
 ---
 title: Wtyczki kontroli źródła | Microsoft Docs
+description: W artykułach w tej sekcji opisano pełną specyfikację interfejsu, która umożliwia integrację systemów kontroli źródła z programem Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc5f092e0ae93109d071af0b1a67999947e73e90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 617b06e46bb150026f49af3e23761dfd6cb4e902
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699889"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715837"
 ---
 # <a name="source-control-plug-ins"></a>Wtyczki kontroli źródła
 Sekcja Dokumentacja zestawu SDK wtyczki kontroli źródła zawiera kompletną specyfikację interfejsu, która umożliwia zintegrowane systemy kontroli źródła [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Określa składnię i semantykę różnych funkcji i typów danych, które Wtyczka kontroli źródła musi zaimplementować do interfejsu za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zintegrowanego środowiska programistycznego (IDE).

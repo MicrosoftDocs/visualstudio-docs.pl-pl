@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: d26b2aa89ad295b63f0115acae11148c505720a5
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 586f503569f7218e78cda79e7a40e33f7ec30ff6
+ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440511"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97696525"
 ---
 # <a name="choco-install"></a>choco-install
 
@@ -34,11 +34,14 @@ Jeśli obie `input` właściwości i `additionalOptions` zostaną pominięte lub
 
 ### <a name="input"></a>Dane wejściowe
 
-`input`Właściwość służy do określenia nazwy pakietu do zainstalowania (na przykład "MongoDB") lub ścieżki do pliku konfiguracji następujących formatów _packages.config_, _. nuspec_ i _. nupkg_. Wartość `input` zostanie dołączona do `choco install` polecenia (na przykład `choco install mongodb` ) wraz z dowolnymi argumentami określonymi w [`additionalOptions`](#additional-options) i wbudowane `choco` Opcje (zdefiniowane [poniżej](#built-in-options)). Pakiety można znaleźć w [Galerii pakietów czekolady](https://chocolatey.org/packages). Przy użyciu pliku konfiguracji można przekazać ścieżkę do tego pliku we `input` właściwości, na przykład `"input":"packages.config"` .
+`input`Właściwość służy do określenia nazwy pakietu do zainstalowania (na przykład "MongoDB") lub ścieżki do pliku konfiguracji następujących formatów _packages.config_, _. nuspec_ i _. nupkg_. Wartość `input` zostanie dołączona do `choco install` polecenia (na przykład `choco install mongodb` ) wraz z dowolnymi argumentami określonymi w [`additionalOptions`](#additional-options) i wbudowane `choco` Opcje (zdefiniowane [poniżej](#built-in-options)). Pakiety znajdują się w [Galerii pakietów czekolady](https://chocolatey.org/packages). Przy użyciu pliku konfiguracji można przekazać ścieżkę do tego pliku we `input` właściwości, na przykład `"input":"packages.config"` .
 
 ### <a name="additional-options"></a>Opcje dodatkowe
 
 Dodatkowe opcje konfiguracji mogą być przesyłane jako wartość `additionalOptions` . Te argumenty są bezpośrednim przekazywaniem do argumentów używanych przez [`choco install`](https://chocolatey.org/docs/commands-install) i są zdefiniowane w dokumentacji czekoladowej.
+
+#### <a name="adding-new-feeds-to-chocolatey"></a>Dodawanie nowych źródeł danych do czekolady
+Jeśli chcesz dodać nowe źródło danych do czekolady, podobnie jak `choco source add` polecenie, możesz przekazać `additionalOptions` do tego celu. Przykładem dodania nowego źródła danych jest [użycie przykładu](#example-usage). Jeśli chcesz dodać prywatne źródło danych, zalecamy uruchomienie tego narzędzia w wierszu polecenia, ponieważ wymaga ono poświadczeń. Na przykład,, `devinit run -t choco-install -i {package} -s "{feed link}" -u {user} -p {password}` gdzie `{package}` , `{feed link}` , `{user}` i `{password}` zapoznaj się z określonym pakietem, linkiem kanału informacyjnego, nazwą użytkownika i hasłem. Więcej informacji znajduje się w dokumentacji dotyczącej czekolady, do której odwołuje się powyżej. 
 
 ### <a name="built-in-options"></a>Wbudowane opcje
 
@@ -92,6 +95,20 @@ Poniżej znajdują się przykłady sposobu uruchamiania programu `choco-install`
             "tool": "choco-install",
             "input": "mongodb",
             "additionalOptions": "--version 4.2.7"
+        }
+    ]
+}
+```
+
+#### <a name="devinitjson-that-adds-a-new-feed-to-chocolatey"></a>.devinit.js, który dodaje nowe źródło danych do czekolady:
+```json
+{
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+    "run": [
+        {
+            "tool": "choco-install",
+            "input": "packages.config",
+            "additionalOptions": "-s '{feed link}'"
         }
     ]
 }

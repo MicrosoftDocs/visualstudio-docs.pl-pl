@@ -1,5 +1,7 @@
 ---
 title: Diagnozowanie problemów po wdrożeniu | Microsoft Docs
+description: Diagnozowanie problemów po wdrożeniu za pomocą IntelliTrace w programie Visual Studio. Dołącz informacje o kompilacji do wydania. Zwolnij i monitoruj aplikację, aby znaleźć problem.
+ms.custom: SEO-VS-2020
 ms.date: 04/10/2018
 ms.topic: how-to
 ms.assetid: a3463eab-a352-4d17-8551-adbaad526db0
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97499a88a04b2ae7b61b847c4aec133d297e613a
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 9be00d1ad040f6daca52417e4ab6dfa93f0f44cf
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928059"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726829"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>Diagnozowanie problemów po wdrożeniu za pomocą IntelliTrace (C#, Visual Basic)
 
@@ -32,7 +34,7 @@ Aby zdiagnozować problemy w aplikacji sieci Web ASP.NET po wdrożeniu przy uży
 - Visual Studio Enterprise (ale nie wersje Professional i Community) do przeglądania danych diagnostycznych i debugowania kodu za pomocą IntelliTrace
 
 ## <a name="step-1-include-build-information-with-your-release"></a><a name="SetUpBuild"></a> Krok 1. uwzględnianie informacji o kompilacji w wersji
- Skonfiguruj proces kompilacji, aby utworzyć manifest kompilacji (plik*BuildInfo.config* ) dla projektu sieci Web i dołączyć ten manifest do swojej wersji. Ten manifest zawiera informacje o projekcie, kontroli źródła i systemie kompilacji, które zostały użyte do utworzenia określonej kompilacji. Te informacje ułatwiają programowi Visual Studio znalezienie pasującego źródła i symboli po otwarciu dziennika IntelliTrace w celu przejrzenia zarejestrowanych zdarzeń.
+ Skonfiguruj proces kompilacji, aby utworzyć manifest kompilacji (plik *BuildInfo.config* ) dla projektu sieci Web i dołączyć ten manifest do swojej wersji. Ten manifest zawiera informacje o projekcie, kontroli źródła i systemie kompilacji, które zostały użyte do utworzenia określonej kompilacji. Te informacje ułatwiają programowi Visual Studio znalezienie pasującego źródła i symboli po otwarciu dziennika IntelliTrace w celu przejrzenia zarejestrowanych zdarzeń.
 
 ### <a name="create-the-build-manifest-for-an-automated-build-using-team-foundation-server"></a><a name="AutomatedBuild"></a> Utwórz manifest kompilacji dla zautomatyzowanej kompilacji przy użyciu Team Foundation Server
 
@@ -119,7 +121,7 @@ Program Visual Studio 2017 i jego nowsze wersje nie zawierają pliku *BuildInfo.
 ### <a name="create-the-build-manifest-for-a-manual-build-using-visual-studio"></a><a name="ManualBuild"></a> Tworzenie manifestu kompilacji dla kompilacji ręcznej przy użyciu programu Visual Studio
  Wykonaj następujące kroki, aby automatycznie utworzyć manifest kompilacji (plik BuildInfo.config) dla projektu i umieścić plik w folderze wyjściowym projektu. Plik jest wyświetlany jako "*ProjectName*.BuildInfo.config" w folderze wyjściowym, ale jego nazwa zostanie zmieniona na "BuildInfo.config" w folderze wdrażania po opublikowaniu aplikacji.
 
-1. W **Eksplorator rozwiązań**Zwolnij projekt sieci Web.
+1. W **Eksplorator rozwiązań** Zwolnij projekt sieci Web.
 
 2. Otwórz plik projektu (. csproj,. vbproj). Dodaj następujące wiersze:
 
@@ -191,7 +193,7 @@ Program Visual Studio 2017 i jego nowsze wersje nie zawierają pliku *BuildInfo.
 
 ### <a name="diagnose-a-performance-problem"></a>Diagnozowanie problemów z wydajnością
 
-1. W obszarze **naruszenia wydajności**Sprawdź zarejestrowane zdarzenia wydajności, ich łączny czas wykonywania i inne informacje o zdarzeniach. Następnie zagłęb się w metody, które zostały wywołane podczas zdarzenia dotyczącego wydajności.
+1. W obszarze **naruszenia wydajności** Sprawdź zarejestrowane zdarzenia wydajności, ich łączny czas wykonywania i inne informacje o zdarzeniach. Następnie zagłęb się w metody, które zostały wywołane podczas zdarzenia dotyczącego wydajności.
 
      ![Wyświetl szczegóły zdarzenia wydajności](../debugger/media/ffr_itsummarypageperformance.png "FFR_ITSummaryPagePerformance")
 
@@ -219,7 +221,7 @@ Program Visual Studio 2017 i jego nowsze wersje nie zawierają pliku *BuildInfo.
 
 ### <a name="diagnose-an-exception"></a>Diagnozowanie wyjątku
 
-1. W obszarze **dane wyjątku**Przejrzyj zarejestrowane zdarzenia wyjątków, ich typy, komunikaty i czas wystąpienia wyjątków. Aby poznać więcej szczegółów związanych z kodem, rozpocznij debugowanie od ostatniego zdarzenia w grupie wyjątków.
+1. W obszarze **dane wyjątku** Przejrzyj zarejestrowane zdarzenia wyjątków, ich typy, komunikaty i czas wystąpienia wyjątków. Aby poznać więcej szczegółów związanych z kodem, rozpocznij debugowanie od ostatniego zdarzenia w grupie wyjątków.
 
      ![Rozpocznij debugowanie od zdarzenia wyjątku](../debugger/media/ffr_itsummarypageexception.png "FFR_ITSummaryPageException")
 
@@ -293,7 +295,7 @@ Program Visual Studio 2017 i jego nowsze wersje nie zawierają pliku *BuildInfo.
     </SourceControl>
     ```
 
-  - **Git**
+  - **Narzędzia**
 
     - **GitSourceControl**: Lokalizacja schematu **GitSourceControl**
 
@@ -345,7 +347,7 @@ Program Visual Studio 2017 i jego nowsze wersje nie zawierają pliku *BuildInfo.
     </Build>
     ```
 
-  - **Git**
+  - **Narzędzia**
 
     ```xml
     <Build type="MSBuild">

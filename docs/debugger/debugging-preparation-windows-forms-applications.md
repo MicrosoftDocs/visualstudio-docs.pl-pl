@@ -1,6 +1,7 @@
 ---
 title: Przygotowywanie do debugowania aplikacji Windows Forms | Microsoft Docs
-ms.custom: seodec18
+description: Wykonaj kroki przygotowania, aby debugować Windows Forms aplikacje, które są tworzone przez szablon projektu Windows Forms w programie Visual Studio.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -20,17 +21,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9e98411a009ea4345b567cbc38e6cf94c037323
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3ccb195d6c4a35e4ca3b89c5505ab14c45a5d555
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75916392"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726816"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>Przygotowanie debugowania: aplikacje Windows Forms
 Szablon projektu Windows Forms tworzy aplikację Windows Forms. Debugowanie tego typu aplikacji w programie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jest proste. Aby uzyskać więcej informacji, zobacz [Tworzenie projektu aplikacji systemu Windows](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).
 
- Podczas tworzenia projektu Windows Forms przy użyciu szablonu projektu program [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatycznie tworzy wymagane ustawienia dla konfiguracji debugowania i wydania. W razie potrzeby możesz zmienić te ustawienia. Te ustawienia można zmienić w oknie dialogowym ** \<project name> strony właściwości** (**mój projekt** w Visual Basic).
+ Podczas tworzenia projektu Windows Forms przy użyciu szablonu projektu program [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatycznie tworzy wymagane ustawienia dla konfiguracji debugowania i wydania. W razie potrzeby możesz zmienić te ustawienia. Te ustawienia można zmienić w oknie dialogowym **\<project name> strony właściwości** (**mój projekt** w Visual Basic).
 
  Aby uzyskać więcej informacji, zobacz [zalecane ustawienia właściwości](../debugger/managed-debugging-recommended-property-settings.md).
 
@@ -68,7 +69,7 @@ Szablon projektu Windows Forms tworzy aplikację Windows Forms. Debugowanie tego
 - [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)
 - [Typy projektów C#, F# i Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
 - [Instrukcje: Ustawianie konfiguracji debugowania i wydania](../debugger/how-to-set-debug-and-release-configurations.md)
-- [Ustawienia projektu dla konfiguracji debugowania w C#](../debugger/project-settings-for-csharp-debug-configurations.md)
-- [Ustawienia projektu dla konfiguracji debugowania w Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
+- [Ustawienia projektu dla konfiguracji debugowania w języku C#](../debugger/project-settings-for-csharp-debug-configurations.md)
+- [Ustawienia projektu dla konfiguracji debugowania Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
 - [Dołączanie do uruchomionych procesów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
 - [Windows Forms](/dotnet/framework/winforms/index)

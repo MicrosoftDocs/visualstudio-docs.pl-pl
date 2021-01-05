@@ -1,6 +1,7 @@
 ---
 title: Debugowanie aplikacji wielowątkowych | Microsoft Docs
-ms.custom: seodec18
+description: Debuguj aplikacje wielowątkowe w programie Visual Studio. Przejrzyj narzędzia i inne artykuły dotyczące debugowania aplikacji wielowątkowych.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/06/2018
 ms.topic: conceptual
 f1_keywords:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b99f7b44168a451e8e927e5e0d2ca1a7f8d0bf93
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 4fed6580219964ab71f5a5010060c1af193375df
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600326"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727141"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Debugowanie aplikacji wielowątkowych w programie Visual Studio
 Wątek jest sekwencją instrukcji, do których system operacyjny przyznaje czas procesora. Każdy proces, który jest uruchomiony w systemie operacyjnym, składa się z co najmniej jednego wątku. Procesy, które mają więcej niż jeden wątek, są nazywane wielowątkowymi.
@@ -104,5 +105,5 @@ Nadaj wątkowi nazwę, która jest wyświetlana w oknie **wątki** .
 - [Wątkowość](/dotnet/standard/threading/index)
 - [Wielowątkowość w składnikach](/previous-versions/3es4b6yy(v=vs.140))
 - [Obsługa wielowątkowości dla starszego kodu](/cpp/parallel/multithreading-support-for-older-code-visual-cpp)
-- [Debuguj wątki i procesy](../debugger/debug-threads-and-processes.md)
+- [Debugowanie wątków i procesów](../debugger/debug-threads-and-processes.md)
 - [Debugowanie zdalne](../debugger/remote-debugging.md)

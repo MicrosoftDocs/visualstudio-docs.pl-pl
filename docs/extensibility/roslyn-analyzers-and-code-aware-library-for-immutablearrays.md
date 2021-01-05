@@ -1,7 +1,8 @@
 ---
 title: Analizatory Roslyn i biblioteki obsługujące kod ImmutableArrays
-titleSuffix: ''
+description: Dowiedz się, jak utworzyć prawdziwą Roslyn Analizator, aby przechwytywać typowe błędy podczas korzystania z pakietu NuGet system. Collections.
 ms.custom: SEO-VS-2020
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db3ebbd289feb227506d8c188ade9261dfb53da2
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 04b65ae8c81f381ee996da5f20ec15588b9180de
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037650"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715772"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analizatory Roslyn i Biblioteka obsługująca kod ImmutableArrays
 
@@ -26,8 +27,8 @@ ms.locfileid: "90037650"
 Aby skompilować ten przykład, potrzebne są następujące elementy:
 
 * Visual Studio 2015 (nie wersja Express) ani nowsza. Możesz użyć bezpłatnej [wersji programu Visual Studio Community](https://visualstudio.microsoft.com/vs/community/)
-* [Visual Studio SDK](../extensibility/visual-studio-sdk.md). Podczas instalowania programu Visual Studio można także sprawdzić, **Visual Studio Extensibility Tools** w obszarze **popularne narzędzia** , aby zainstalować zestaw SDK w tym samym czasie. Jeśli masz już zainstalowany program Visual Studio, możesz również zainstalować ten zestaw SDK, przechodząc do **pliku**głównego menu  >  **Nowy**  >  **projekt**, wybierając **C#** w lewym okienku nawigacji, a następnie wybierając **rozszerzalność**. Po wybraniu szablonu projektu z łączami "**zainstaluj Visual Studio Extensibility Tools**" zostanie wyświetlony komunikat z prośbą o pobranie i zainstalowanie zestawu SDK.
-* [.NET compiler platform ("Roslyn") SDK](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.NETCompilerPlatformSDK). Możesz również zainstalować ten zestaw SDK, przechodząc do **pliku**głównego menu  >  **Nowy**  >  **projekt**, wybierając **C#** w lewym okienku nawigacji, a następnie wybierając **rozszerzalność**. Po wybraniu opcji "Pobierz szablon projektu z łączami **.NET COMPILER Platform SDK**" zostanie wyświetlony komunikat z prośbą o pobranie i zainstalowanie zestawu SDK. Ten zestaw SDK zawiera [Syntax Visualizer Roslyn](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Syntax-Visualizer.md). To przydatne narzędzie pomaga ustalić, jakie typy modeli kodu należy wyszukać w analizatorze. Infrastruktura analizatora wywołuje kod dla określonych typów modelu kodu, więc kod jest wykonywany tylko w razie potrzeby i może skupić się tylko na analizie odpowiedniego kodu.
+* [Visual Studio SDK](../extensibility/visual-studio-sdk.md). Podczas instalowania programu Visual Studio można także sprawdzić, **Visual Studio Extensibility Tools** w obszarze **popularne narzędzia** , aby zainstalować zestaw SDK w tym samym czasie. Jeśli masz już zainstalowany program Visual Studio, możesz również zainstalować ten zestaw SDK, przechodząc do **pliku** głównego menu  >  **Nowy**  >  **projekt**, wybierając **C#** w lewym okienku nawigacji, a następnie wybierając **rozszerzalność**. Po wybraniu szablonu projektu z łączami "**zainstaluj Visual Studio Extensibility Tools**" zostanie wyświetlony komunikat z prośbą o pobranie i zainstalowanie zestawu SDK.
+* [.NET compiler platform ("Roslyn") SDK](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.NETCompilerPlatformSDK). Możesz również zainstalować ten zestaw SDK, przechodząc do **pliku** głównego menu  >  **Nowy**  >  **projekt**, wybierając **C#** w lewym okienku nawigacji, a następnie wybierając **rozszerzalność**. Po wybraniu opcji "Pobierz szablon projektu z łączami **.NET COMPILER Platform SDK**" zostanie wyświetlony komunikat z prośbą o pobranie i zainstalowanie zestawu SDK. Ten zestaw SDK zawiera [Syntax Visualizer Roslyn](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Syntax-Visualizer.md). To przydatne narzędzie pomaga ustalić, jakie typy modeli kodu należy wyszukać w analizatorze. Infrastruktura analizatora wywołuje kod dla określonych typów modelu kodu, więc kod jest wykonywany tylko w razie potrzeby i może skupić się tylko na analizie odpowiedniego kodu.
 
 ## <a name="whats-the-problem"></a>Jaki jest problem?
 
@@ -141,7 +142,7 @@ Nadal widzisz czerwoną literę w obszarze `ImmutableArray` , dlatego Umieść k
 
 W pierwszym wystąpieniu programu Visual Studio Ustaw punkt przerwania na początku `AnalyzeObjectCreation` metody, naciskając klawisz **F9** z karetką w pierwszym wierszu.
 
-Ponownie uruchom Analizator przy użyciu klawisza **F5**i w drugim wystąpieniu programu Visual Studio ponownie otwórz utworzoną przez siebie aplikację konsolową.
+Ponownie uruchom Analizator przy użyciu klawisza **F5** i w drugim wystąpieniu programu Visual Studio ponownie otwórz utworzoną przez siebie aplikację konsolową.
 
 Powrócisz do pierwszego wystąpienia programu Visual Studio w punkcie przerwania, ponieważ kompilator Roslyn napotkał wyrażenie tworzenia obiektu i wywołało je do analizatora.
 
@@ -300,7 +301,7 @@ Następnie Metoda pobiera element główny dokumentu i ponieważ może to dotycz
 
 Teraz możesz nacisnąć klawisz **F5** , aby uruchomić analizator w drugim wystąpieniu programu Visual Studio. Otwórz projekt konsoli, który był wcześniej używany. Teraz powinna zostać wyświetlona Żarówka, w której znajduje się nowe wyrażenie tworzenia obiektów `ImmutableArray<int>` . Po naciśnięciu klawisza **Ctrl** + **.** (kropka), a następnie zobaczysz poprawkę kodu i zobaczysz automatycznie wygenerowaną różnicę kodu w interfejsie użytkownika żarówki. Roslyn tworzy to za Ciebie.
 
-**Porada pakietu Pro:** Jeśli uruchomisz drugie wystąpienie programu Visual Studio i nie zobaczysz żarówki z poprawkami kodu, może być konieczne wyczyszczenie pamięci podręcznej składnika programu Visual Studio. Wyczyszczenie pamięci podręcznej wymusza, aby program Visual Studio ponownie przebadał składniki, więc program Visual Studio powinien następnie pobrać najnowszy składnik. Najpierw zamknij drugie wystąpienie programu Visual Studio. Następnie w **Eksploratorze Windows**przejdź do *%LocalAppData%\Microsoft\VisualStudio\16.0Roslyn \\ *. ("16,0" zmiany z wersji do wersji za pomocą programu Visual Studio). Usuń podkatalog *ComponentModelCache*.
+**Porada pakietu Pro:** Jeśli uruchomisz drugie wystąpienie programu Visual Studio i nie zobaczysz żarówki z poprawkami kodu, może być konieczne wyczyszczenie pamięci podręcznej składnika programu Visual Studio. Wyczyszczenie pamięci podręcznej wymusza, aby program Visual Studio ponownie przebadał składniki, więc program Visual Studio powinien następnie pobrać najnowszy składnik. Najpierw zamknij drugie wystąpienie programu Visual Studio. Następnie w **Eksploratorze Windows** przejdź do *%LocalAppData%\Microsoft\VisualStudio\16.0Roslyn \\*. ("16,0" zmiany z wersji do wersji za pomocą programu Visual Studio). Usuń podkatalog *ComponentModelCache*.
 
 ## <a name="talk-video-and-finish-code-project"></a>Porozmawiaj z projektem wideo i Zakończ kod
 
@@ -308,7 +309,7 @@ Ten przykład został opracowany i omówiony w [tym](https://channel9.msdn.com/e
 
 Cały ukończony kod można zobaczyć [tutaj](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers). Podfoldery *DoNotUseImmutableArrayCollectionInitializer* i *DoNotUseImmutableArrayCtor* każdy z nich ma plik języka c# do znajdowania problemów i plik języka c#, który implementuje poprawki kodu, które są wyświetlane w interfejsie użytkownika żarówki programu Visual Studio. Należy zauważyć, że ukończony kod ma nieco bardziej abstrakcję, aby uniknąć pobierania \<T> obiektu typu element ImmutableArray w trybie i. Używa zagnieżdżonych zarejestrowanej akcji do zapisania obiektu typu w kontekście, który jest dostępny przy każdym akcji podrzędnej (analiza tworzenia obiektów i analiza inicjalizacji kolekcji).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [\\\Build 2015](https://channel9.msdn.com/events/Build/2015/3-725)
 * [Ukończony kod w usłudze GitHub](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)

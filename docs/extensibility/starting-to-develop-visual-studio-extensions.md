@@ -1,5 +1,7 @@
 ---
 title: Rozpoczynanie tworzenia rozszerzeń programu Visual Studio | Microsoft Docs
+description: Zapoznaj się z typowymi pytaniami, które mogą wystąpić podczas pierwszego rozpoczęcia pisania rozszerzenia programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 09/18/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 812c5b2366e40226011a15acfc1cae2327e4b897
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: da8bd850413d32e5453b7dc312e863832e5f5218
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099391"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715265"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Rozpoczynanie tworzenia rozszerzeń Visual Studio
 
@@ -49,7 +51,7 @@ W tej sprawie znaleźliśmy, że funkcje, które większość osób chce zwięks
 
 - [Rozszerzanie menu i poleceń](../extensibility/extending-menus-and-commands.md): Dodaj własne elementy do menu i pasków narzędzi programu Visual Studio. Można ich używać do uruchamiania nowych funkcji programu Visual Studio lub własnych zewnętrznych aplikacji pomocniczych. Możesz również udostępnić niestandardowe skróty dla elementów menu.
 
-- [Rozszerzanie i dostosowywanie okien narzędzi](../extensibility/extending-and-customizing-tool-windows.md): rozszerzanie istniejących okien narzędzi lub tworzenie własnych okien narzędzi. Na przykład można dodać nowe właściwości do **Właściwości**lub utworzyć nowe okno narzędzi, aby dodać dodatkowe funkcje.
+- [Rozszerzanie i dostosowywanie okien narzędzi](../extensibility/extending-and-customizing-tool-windows.md): rozszerzanie istniejących okien narzędzi lub tworzenie własnych okien narzędzi. Na przykład można dodać nowe właściwości do **Właściwości** lub utworzyć nowe okno narzędzi, aby dodać dodatkowe funkcje.
 
 - [Rozszerzenia edytora i usługi językowej](../extensibility/editor-and-language-service-extensions.md): Dodaj własne dostosowania do funkcji IntelliSense dostarczonej dla języków programu Visual Studio lub Utwórz obsługę nowych języków programowania. Można tworzyć nowe uzupełniania instrukcji, sugestie i nowe etykietki narzędzi sekcji szybkich informacji. Żarówki umożliwiają dodawanie sugestii refaktoryzacji i poprawek kodu do obsługi nowych języków programowania.
 
@@ -93,7 +95,7 @@ W tej sprawie znaleźliśmy, że funkcje, które większość osób chce zwięks
 
  Możesz również opublikować swoje rozszerzenie na Visual Studio Marketplace, co sprawia, że jest widoczne dla dużej liczby klientów programu Visual Studio. Przykład pakowania rozszerzenia do portalu Marketplace zawiera [Przewodnik: Publikowanie rozszerzenia programu Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Aby uzyskać więcej informacji o tym, co należy zrobić w celu opublikowania w portalu Marketplace, zobacz [produkty i rozszerzenia dla programu Visual Studio](/azure/devops/extend/overview?view=vsts&preserve-view=true).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Rozszerzenie programu Visual Studio dla komputerów Mac](/visualstudio/mac/extending-visual-studio-mac)
 - [Rozszerzanie Visual Studio Code](https://code.visualstudio.com/api)

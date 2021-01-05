@@ -1,5 +1,7 @@
 ---
 title: Debugowanie kodu natywnego — Często zadawane pytania | Microsoft Docs
+description: Znajdź linki do często zadawanych pytań i odpowiedzi dotyczących debugowania kodu natywnego w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -20,31 +22,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 15a94d20ade7bfe3e5aaac2c90bb3ba452ef4330
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 43c6bf4e817f78867534abdca69c7e975397d287
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72738173"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726972"
 ---
 # <a name="debugging-native-code-faqs"></a>Debugowanie kodu natywnego — Często zadawane pytania
 Poniższe tematy zawierają odpowiedzi na kilka często zadawanych pytań:
 
 - [Jak można debugować naruszenia zasad dostępu podczas uruchamiania samodzielnego programu?](../debugger/how-can-i-debug-access-violations-when-running-my-program-outside-the-debugger-q.md)
 
-- [Jak można debugować naruszenia zasad dostępu?](../debugger/how-can-i-debug-an-access-violation-q.md)
+- [Jak można debugować naruszenie zasad dostępu?](../debugger/how-can-i-debug-an-access-violation-q.md)
 
 - [Jak mogę sprawdzić, czy moje wskaźniki mają uszkodzony adres pamięci?](../debugger/how-can-i-find-out-if-my-pointers-corrupt-a-memory-address-q.md)
 
-- [Jak można sprawdzić, kto przekazuje błędną wartość parametru?](../debugger/how-can-i-find-out-who-is-passing-a-wrong-parameter-value-q.md)
+- [Jak można sprawdzić, kto przekazuje nieprawidłową wartość parametru?](../debugger/how-can-i-find-out-who-is-passing-a-wrong-parameter-value-q.md)
 
 - [Wywołanie funkcji nie powiodło się, gdy jest wywoływana funkcja setek razy?](../debugger/when-calling-a-function-hundreds-of-times-how-do-i-know-which-call-failed-q.md)
 
 - [Gdzie można sprawdzić kody błędów Win32?](../debugger/where-can-i-look-up-win32-error-codes-q.md)
 
-- [Jak utrzymać fokus przy przechodzeniu przez program?](../debugger/how-can-i-keep-focus-when-stepping-through-my-program-q.md)
+- [Jak zachować fokus w przypadku przechodzenia przez program?](../debugger/how-can-i-keep-focus-when-stepping-through-my-program-q.md)
 
-- [Jak można używać okien debugera przy debugowaniu programu pierwszego planu?](../debugger/how-can-i-use-debugger-windows-while-debugging-a-foreground-program-q.md)
+- [Jak można używać okien debugera podczas debugowania programu pierwszego planu?](../debugger/how-can-i-use-debugger-windows-while-debugging-a-foreground-program-q.md)
 
 - [Jeśli zostało zatrzymane w MFC, jak mogę wrócić do funkcji o nazwie MFC?](../debugger/how-to-get-back-to-the-function-that-called-mfc-if-halted.md)
 

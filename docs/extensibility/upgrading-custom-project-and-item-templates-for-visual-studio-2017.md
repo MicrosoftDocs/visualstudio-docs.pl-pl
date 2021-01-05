@@ -1,6 +1,8 @@
 ---
 title: Uaktualnianie niestandardowych szablonów projektów i elementów dla programu Visual Studio 2017
 titleSuffix: ''
+description: Dowiedz się, jak zaktualizować niestandardowy szablon projektu i elementu z poprzednich wersji programu Visual Studio SDK do użycia z programem Visual Studio 2017 i nowszymi wersjami.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
@@ -10,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 5f807e142b376d05e5a44600e8f6b24ddb3593be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 089baadcb60afcc8b32e287095b10ab30196ce17
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698857"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715980"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>Uaktualnij niestandardowy Szablony projektów i elementów dla programu Visual Studio 2017
 
@@ -27,7 +29,7 @@ Jeśli chcesz utworzyć projekt lub szablon elementu jako część rozszerzenia 
 
 ## <a name="template-scanning"></a>Skanowanie szablonu
 
-W poprzednich wersjach programu Visual Studio **devenv/setup** lub **devenv/InstallVSTemplates** przeskanował dysk lokalny, aby znaleźć szablony projektów i elementów. Począwszy od programu Visual Studio 2017, skanowanie jest wykonywane tylko dla lokalizacji na poziomie użytkownika. Domyślna lokalizacja na poziomie użytkownika to **%USERPROFILE%\Documents \\<Visual Studio w wersji \> \Templates \\ **. Ta lokalizacja jest używana w szablonach wygenerowanych przez **Project**  >  **Szablony eksportu projektu...** , jeśli w kreatorze zostanie wybrana opcja **automatycznie Importuj szablon do programu Visual Studio** .
+W poprzednich wersjach programu Visual Studio **devenv/setup** lub **devenv/InstallVSTemplates** przeskanował dysk lokalny, aby znaleźć szablony projektów i elementów. Począwszy od programu Visual Studio 2017, skanowanie jest wykonywane tylko dla lokalizacji na poziomie użytkownika. Domyślna lokalizacja na poziomie użytkownika to **%USERPROFILE%\Documents \\<Visual Studio w wersji \> \Templates \\**. Ta lokalizacja jest używana w szablonach wygenerowanych przez   >  **Szablony eksportu projektu...** , jeśli w kreatorze zostanie wybrana opcja **automatycznie Importuj szablon do programu Visual Studio** .
 
 W przypadku innych lokalizacji (niebędących użytkownikami) należy dołączyć plik manifestu (. vstman), który określa lokalizację i inne cechy szablonu. Plik. vstman jest generowany wraz z plikiem. vstemplate używanym w szablonach. Jeśli instalujesz rozszerzenie przy użyciu pliku. vsix, możesz to zrobić przez ponowne skompilowanie rozszerzenia w programie Visual Studio 2017. Ale jeśli używasz pliku MSI, musisz wprowadzić zmiany ręcznie. Aby zapoznać się z listą czynności, które należy wykonać, aby wprowadzić te zmiany, zobacz  **uaktualnienia rozszerzeń instalowanych z programem. Plik MSI** później na tej stronie.
 

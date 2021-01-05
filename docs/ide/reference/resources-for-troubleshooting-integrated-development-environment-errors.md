@@ -1,8 +1,8 @@
 ---
-title: Zasoby do rozwiązywania problemów z błędami
+title: Zasoby dla rozwiązywania problemów z błędami środowiska IDE
 description: Dowiedz się, jak korzystać z artykułów bazy wiedzy, forów lub pomocy technicznej w celu rozwiązywania problemów z błędami w środowisku IDE, które nie są wystarczająco sformatowane, aby pomóc w rozwiązaniu problemu.
 ms.custom: SEO-VS-2020
-ms.date: 07/23/2020
+ms.date: 12/18/2020
 ms.topic: troubleshooting
 f1_keywords:
 - VS.Message.0x00005A89
@@ -95,14 +95,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3fdf18c67be8188bd03c498778fe8e6ad9409ee
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 081b36767388da4f78e1fd8f1e0f279d7ca201c9
+ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616592"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97696547"
 ---
-# <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Zasoby do rozwiązywania błędów zintegrowanego środowiska programistycznego
+# <a name="resources-for-troubleshooting-ide-errors"></a>Zasoby dla rozwiązywania problemów z błędami środowiska IDE
 
 Nie wszystkie komunikaty o błędach mają określony skojarzony temat pomocy. Jeśli informacje w komunikacie o błędzie nie pomogą rozwiązać problemu, możesz zapoznać się z innymi zasobami, takimi jak artykuły bazy wiedzy, fora lub pomoc techniczna.
 
@@ -115,15 +115,20 @@ Możesz wyszukać artykuły w bazie wiedzy (KB) w trybie online, aby zapoznać s
 
 ## <a name="developer-forums"></a>Fora dla deweloperów
 
-Fora umożliwiają współpracę z innymi deweloperami, a także pracowników firmy Microsoft. Jeśli wystąpi błąd, którego nie można znaleźć, możesz ogłosić pytania dotyczące problemu na forum. Możesz również przeszukać grupy dyskusyjne, aby sprawdzić, czy inne osoby opublikowały ten sam problem.
+Fora umożliwiają współpracę z innymi deweloperami, a także pracowników firmy Microsoft. Jeśli wystąpi błąd, którego nie można znaleźć, możesz ogłosić pytania dotyczące problemu na forum. Możesz również przeszukać fora, aby sprawdzić, czy inne osoby opublikowały ten sam problem.
 
-Dostęp do forów, blogów, rozmów i innych zasobów można uzyskać w witrynie sieci Web [społeczności firmy Microsoft](https://techcommunity.microsoft.com/t5/Communities/ct-p/communities) .
+Poniżej znajduje się lista zasobów Forum:
+
+- [Program Visual Studio na pytaniach o&](/answers/products/vs/)
+- [Forum MSDN dotyczące programu Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio)
+- [Stack Overflow](https://stackoverflow.com/search?q=%22visual+studio%22)
+- [Reddit](https://www.reddit.com/r/VisualStudio)
 
 ## <a name="product-support"></a>Pomoc techniczna
 
 Jeśli nadal masz pytania po wypróbie innych zasobów, możesz skontaktować się z pomocą techniczną firmy Microsoft, odwiedzając witrynę [Pomoc techniczna firmy Microsoft](https://support.microsoft.com/en-us) . Aby uzyskać informacje na temat pomocy technicznej dotyczącej produktów dostępnych w Twoim regionie, zobacz stronę [Opcje opinii programu Visual Studio](../../ide/feedback-options.md) .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [Rozwiązywanie problemów z błędami związanymi z siecią lub serwerem proxy](../../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md#troubleshoot-network-related-errors)
 * [Rozwiązywanie problemów (Visual Studio dla systemu Windows)](/troubleshoot/visualstudio/welcome-visual-studio/)

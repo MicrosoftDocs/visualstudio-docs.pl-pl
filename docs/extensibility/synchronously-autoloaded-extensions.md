@@ -1,5 +1,7 @@
 ---
 title: Rozszerzenia automatycznie ładowane w sposób synchroniczny
+description: Zapoznaj się z domyślnym zachowaniem rozpoczynającym się od programu Visual Studio 2019, które blokuje synchronicznie ładowane pakiety z dowolnego rozszerzenia.
+ms.custom: SEO-VS-2020
 ms.date: 12/11/2019
 ms.topic: conceptual
 ms.assetid: 822e3cf8-f723-4ff1-8467-e0fb42358a1f
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab62d235fd6ed4e47e765fc23868acd5c56efcb2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 506c098f1f385ddf39c5d000f4571a8ee92c09fc
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699372"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715447"
 ---
 # <a name="synchronously-autoloaded-extensions"></a>Rozszerzenia automatycznie ładowane w sposób synchroniczny
 
@@ -21,7 +23,7 @@ Synchronicznie ładowane rozszerzenia mają negatywny wpływ na wydajność prog
 
 ![Ostrzeżenie o zgodności rozszerzenia](media/extension-compatibility-warning-16-1.png.png)
 
-Można:
+Oto co możesz zrobić:
 
 - Kliknij opcję **Zezwalaj na synchroniczne automatyczne ładowanie** , aby zezwalać na automatyczne ładowanie rozszerzeń. Aby zmienić to ustawienie w opcjach programu Visual Studio, kliknij pozycję środowisko, a następnie kliknij pozycję rozszerzenia, a następnie zaznacz pole wyboru "Zezwalaj na synchroniczne automatyczne ładowanie rozszerzeń". 
 
@@ -42,7 +44,7 @@ Wszystkie rozszerzenia, które synchronicznie ładowały wszystkie pakiety w dow
 
 Administratorzy mogą włączyć zasady grupy, aby umożliwić synchroniczne automatyczne ładowanie. W tym celu należy ustawić zasady oparte na rejestrze w następującym kluczu:
 
-**HKEY_LOCAL_MACHINE \SOFTWARE\Policies\Microsoft\VisualStudio\SynchronousAutoload**
+**HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SynchronousAutoload**
 
 Wpis = **dozwolony**
 

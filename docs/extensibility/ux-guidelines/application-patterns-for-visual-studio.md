@@ -1,5 +1,7 @@
 ---
 title: Wzorce aplikacji dla programu Visual Studio | Microsoft Docs
+description: Dowiedz się więcej o różnicach między oknami dokumentów, narzędziami i niemodalnymi oknach dialogowych, w tym wzorcami użycia okien dla nowych funkcji programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 036c95951fe3dc9e65a0f3338f75ae9867d721c3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 709daa641e898f9d75f4bab340c8e5fd00d28a88
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698596"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716123"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Wzorce aplikacji dla programu Visual Studio
 ## <a name="window-interactions"></a><a name="BKMK_WindowInteractions"></a> Interakcje okna
@@ -33,9 +35,9 @@ Uważnie zapoznaj się z żądanym typem kontenera. Typowe zagadnienia dotycząc
 ||Okno dokumentu|Okno narzędzia|Niemodalne okno dialogowe|
 |-|---------------------|-----------------|---------------------|
 | **Pozycja** | Zawsze umieszczaj w dokumencie i nie są zadokowane wokół krawędzi IDE. Może to być "ściągane", tak aby przepływał niezależnie od głównej powłoki. | Na ogół karta jest zadokowana wokół krawędzi IDE, ale można ją dostosować do wartości zmiennoprzecinkowych, autoukrytych (odpiętych) lub zadokowanych w obszarze dokumentu.|Duże przestawne okno oddzielone od IDE. |
-| **Zatwierdź model** | *Opóźnione zatwierdzanie*<br /><br /> W celu zapisania danych w dokumencie użytkownik musi wydać polecenie ** &gt; Zapisz**, **Zapisz jako**lub **Zapisz wszystkie** . Okno dokumentu ma koncepcję danych w ramach elementu "'dirtied", następnie została zatwierdzona do jednego z poleceń zapisu. Po zamknięciu okna dokumentu cała zawartość jest zapisywana na dysku lub utracona. | *Natychmiastowe zatwierdzenie*<br /><br /> Nie istnieje model zapisywania. W przypadku okien narzędzi inspektora, które ułatwiają edytowanie pliku, plik musi być otwarty w aktywnym Edytorze lub projektancie, a Edytor lub Projektant jest właścicielem zapisywania. | *Opóźnione lub natychmiastowe zatwierdzenie*<br /><br /> Najczęściej niemodalne okno dialogowe wymaga działania w celu zatwierdzenia zmian i zezwala na operację "Anuluj", co spowoduje wycofanie wszelkich zmian wprowadzonych w sesji okna dialogowego.  To odróżnia niemodalne okno dialogowe z okna narzędzi w tym narzędziu, który zawsze ma bezpośredni model zatwierdzania. |
+| **Zatwierdź model** | *Opóźnione zatwierdzanie*<br /><br /> W celu zapisania danych w dokumencie użytkownik musi wydać polecenie **&gt; Zapisz**, **Zapisz jako** lub **Zapisz wszystkie** . Okno dokumentu ma koncepcję danych w ramach elementu "'dirtied", następnie została zatwierdzona do jednego z poleceń zapisu. Po zamknięciu okna dokumentu cała zawartość jest zapisywana na dysku lub utracona. | *Natychmiastowe zatwierdzenie*<br /><br /> Nie istnieje model zapisywania. W przypadku okien narzędzi inspektora, które ułatwiają edytowanie pliku, plik musi być otwarty w aktywnym Edytorze lub projektancie, a Edytor lub Projektant jest właścicielem zapisywania. | *Opóźnione lub natychmiastowe zatwierdzenie*<br /><br /> Najczęściej niemodalne okno dialogowe wymaga działania w celu zatwierdzenia zmian i zezwala na operację "Anuluj", co spowoduje wycofanie wszelkich zmian wprowadzonych w sesji okna dialogowego.  To odróżnia niemodalne okno dialogowe z okna narzędzi w tym narzędziu, który zawsze ma bezpośredni model zatwierdzania. |
 | **Widoczność** | *Otwórz/Utwórz (plik) i Zamknij*<br /><br /> Otwieranie okna dokumentu odbywa się za pośrednictwem otwierania istniejącego dokumentu lub przy użyciu szablonu, aby utworzyć nowy dokument. Brak polecenia "Otwórz \<specific editor> ". | *Ukryj i Pokaż*<br /><br /> Okna narzędzi z jednym wystąpieniem mogą być ukryte lub pokazywane. Zawartość i Stany w oknie narzędzi są utrwalane w widoku lub ukrytym. Okna narzędzi z wiele wystąpień można zamknąć, a także ukryć. Po zamknięciu okna narzędzia z obsługą wiele wystąpień zawartość i stan w oknie narzędzia są odrzucane. | *Uruchomiono za pomocą polecenia*<br /><br /> Okna dialogowe są uruchamiane przy użyciu polecenia opartego na zadaniach. |
-| **Wystąpienia** | *Wiele wystąpień*<br /><br /> Kilka edytorów może być otwartych w tym samym czasie i edytować różne pliki, podczas gdy niektóre edytory umożliwiają również otwieranie tego samego pliku w więcej niż jednym edytorze (za pomocą okna polecenie ** &gt; New window** ).<br /><br /> Jeden edytor może edytować jeden lub wiele plików jednocześnie (Projektant projektu). | *Pojedyncze lub wiele wystąpień*<br /><br /> Zawartość zmienia się w celu odzwierciedlenia kontekstu (jak w przeglądarce właściwości) lub wypychanie fokusu/kontekstu do innych okien (Lista zadań, Eksplorator rozwiązań).<br /><br /> Zarówno jedno wystąpienie, jak i wiele wystąpień systemu Windows powinno być skojarzone z oknem aktywnego dokumentu, chyba że istnieje uzasadniony powód, aby nie. | *Pojedyncze wystąpienie* |
+| **Wystąpienia** | *Wiele wystąpień*<br /><br /> Kilka edytorów może być otwartych w tym samym czasie i edytować różne pliki, podczas gdy niektóre edytory umożliwiają również otwieranie tego samego pliku w więcej niż jednym edytorze (za pomocą okna polecenie **&gt; New window** ).<br /><br /> Jeden edytor może edytować jeden lub wiele plików jednocześnie (Projektant projektu). | *Pojedyncze lub wiele wystąpień*<br /><br /> Zawartość zmienia się w celu odzwierciedlenia kontekstu (jak w przeglądarce właściwości) lub wypychanie fokusu/kontekstu do innych okien (Lista zadań, Eksplorator rozwiązań).<br /><br /> Zarówno jedno wystąpienie, jak i wiele wystąpień systemu Windows powinno być skojarzone z oknem aktywnego dokumentu, chyba że istnieje uzasadniony powód, aby nie. | *Pojedyncze wystąpienie* |
 | **Przykłady** | **Edytory tekstu**, takie jak edytor kodu<br /><br /> **Powierzchnie projektowe**, takie jak Projektant formularzy lub powierzchnia modelowania<br /><br /> **Układy formantów podobne do okien dialogowych**, takich jak projektant manifestu | **Eksplorator rozwiązań** zawiera rozwiązanie i projekty zawarte w rozwiązaniu<br /><br /> **Eksplorator serwera** zawiera hierarchiczny widok serwerów i połączeń danych, które użytkownik zdecyduje otworzyć w oknie. Otwierając obiekt z hierarchii bazy danych, na przykład zapytanie, otwiera okno dokumentu i zezwala użytkownikowi na edytowanie zapytania.<br /><br /> **Przeglądarka właściwości** wyświetla właściwości obiektu wybranego w oknie dokumentu lub w innym oknie narzędzi. Właściwości są prezentowane w hierarchicznym widoku siatki lub w złożonych kontrolkach, takich jak kontrolki podobne do okna dialogowego i umożliwiają użytkownikowi ustawianie wartości tych właściwości. | |
 
 ## <a name="tool-windows"></a><a name="BKMK_ToolWindows"></a> Okna narzędzi
@@ -77,7 +79,7 @@ Okna narzędzi to pojedyncze wystąpienia lub wiele wystąpień. Niektóre okna 
 
 ![Okno narzędzia włączające polecenie "New window", gdy wystąpienie okna jest aktywne](../../extensibility/ux-guidelines/media/0702-02_toolwindowenablingcommand.png "0702 — 02_ToolWindowEnablingCommand")<br />Okno narzędzia włączające polecenie "New window", gdy wystąpienie okna jest aktywne
 
-Okna narzędzi z jednym wystąpieniem można ukrywać lub pokazywać, natomiast w przypadku okien narzędzi z obsługą wiele wystąpień można zamknąć, a także ukryć. Wszystkie okna narzędzi mogą być zadokowane, połączone z kartami, zmiennoprzecinkowe lub ustawione jako okno podrzędne interfejsu wielu dokumentów (MDI) (podobne do okna dokumentu). Wszystkie okna narzędzi powinny reagować na odpowiednie polecenia zarządzania oknami w menu okno:
+Okna narzędzi z jednym wystąpieniem można ukrywać lub pokazywać, natomiast w przypadku okien narzędzi z obsługą wiele wystąpień można zamknąć, a także ukryć. Wszystkie okna narzędzi mogą być zadokowane, połączone z kartami, zmiennoprzecinkowe lub ustawione jako okno potomne interfejsu Multiple-Document (podobnie jak okno dokumentu). Wszystkie okna narzędzi powinny reagować na odpowiednie polecenia zarządzania oknami w menu okno:
 
 ![Polecenia zarządzania oknem w menu okna programu Visual Studio](../../extensibility/ux-guidelines/media/0702-03_windowmanagementcontrols.png "0702 — 03_WindowManagementControls")<br />Polecenia zarządzania oknem w menu okna programu Visual Studio
 
@@ -154,7 +156,7 @@ Przykłady okien narzędzi do nawigacji z listą to Eksplorator rozwiązań i wy
 | Dane wyjściowe | Okno dane wyjściowe może być używane za każdym razem, gdy masz zdarzenia tekstowe lub status do zadeklarowania. |
 | Pamięć ||
 | Punkty przerwania ||
-| Uruchomiono ||
+| Uruchomienie ||
 | Dokumenty ||
 | Stos wywołań ||
 | Zmienne lokalne ||
@@ -176,7 +178,7 @@ Edytowanie dokumentów wymaga spójnego środowiska użytkownika. Aby umożliwi�
 
 - Aktualizuj powiązane funkcje w pokrewnych oknach i w menu po otwarciu okna dokumentu.
 
-- Polecenia menu są odpowiednio zintegrowane z typowymi menu, takimi jak **Edycja**, **Formatowanie**i **Wyświetlanie** menu. Jeśli jest dostępnych znaczna ilość wyspecjalizowanych poleceń, można utworzyć nowe menu. To nowe menu powinno być widoczne tylko wtedy, gdy dokument ma fokus.
+- Polecenia menu są odpowiednio zintegrowane z typowymi menu, takimi jak **Edycja**, **Formatowanie** i **Wyświetlanie** menu. Jeśli jest dostępnych znaczna ilość wyspecjalizowanych poleceń, można utworzyć nowe menu. To nowe menu powinno być widoczne tylko wtedy, gdy dokument ma fokus.
 
 - Osadzony pasek narzędzi może być umieszczony w górnej części edytora. Jest to preferowany pasek narzędzi, który pojawia się poza edytorem.
 
@@ -398,7 +400,7 @@ Być spójne z istniejącymi konfiguracjami kontrolek, które mają tę samą wa
   ![Specyfikacje wytycznych dla pasków tytułu w oknach dialogowych programu Visual Studio](../../extensibility/ux-guidelines/media/0704-03_titlebarspecs.png "0704 — 03_TitleBarSpecs")<br />Specyfikacje wytycznych dla pasków tytułu w oknach dialogowych programu Visual Studio
 
 #### <a name="control-buttons"></a>Przyciski sterujące
-W obszarze Ogólne przyciski **OK**, **Anuluj**i **Pomoc** powinny być ułożone poziomo w prawym dolnym rogu okna dialogowego. Alternatywny stos pionowy jest dozwolony, jeśli okno dialogowe zawiera kilka innych przycisków w dolnej części okna dialogowego, które zaprezentowanie wizualnej pomyłek przy użyciu przycisków sterowania.
+W obszarze Ogólne przyciski **OK**, **Anuluj** i **Pomoc** powinny być ułożone poziomo w prawym dolnym rogu okna dialogowego. Alternatywny stos pionowy jest dozwolony, jeśli okno dialogowe zawiera kilka innych przycisków w dolnej części okna dialogowego, które zaprezentowanie wizualnej pomyłek przy użyciu przycisków sterowania.
 
 ![Dopuszczalne konfiguracje przycisków sterowania w oknach dialogowych programu Visual Studio](../../extensibility/ux-guidelines/media/0704-04_controlbuttonconfig.png "0704 — 04_ControlButtonConfig")<br />Dopuszczalne konfiguracje przycisków sterowania w oknach dialogowych programu Visual Studio
 
@@ -411,7 +413,7 @@ Okno dialogowe musi zawierać domyślny przycisk kontrolki. Aby określić najle
 Unikaj wyboru trwałej destrukcyjnej akcji dla polecenia domyślnego. Jeśli takie polecenie jest obecne, wybierz bezpieczniejsze polecenie jako domyślne.
 
 #### <a name="access-keys"></a>Klawisze dostępu
-Nie używaj kluczy dostępu dla przycisków **OK**, **Anuluj**lub **Pomoc** . Te przyciski są domyślnie mapowane na klawisze skrótów:
+Nie używaj kluczy dostępu dla przycisków **OK**, **Anuluj** lub **Pomoc** . Te przyciski są domyślnie mapowane na klawisze skrótów:
 
 | Nazwa przycisku | Skrót klawiaturowy |
 | --- | --- |
@@ -436,7 +438,7 @@ Istnieją zalety i wady różnych metod korzystania z warstwowego interfejsu uż
 
 | Mechanizm przełączania | Zalety i odpowiednie użycie | Wady i nieodpowiednie użycie |
 | --- | --- | --- |
-| Kontrolka karta | Logicznie Grupuj strony okna dialogowego w powiązane zestawy<br /><br />Przydatne w przypadku mniej niż pięciu (lub liczby kart, które mieszczą się w jednym wierszu okna dialogowego) stron powiązanych kontrolek w oknie dialogowym<br /><br />Etykiety kart muszą być krótkie: jedno lub dwa wyrazy, które mogą łatwo identyfikować zawartość<br /><br />Typowy styl okna dialogowego systemu<br /><br />Przykład: ** &gt; właściwości elementu Eksploratora plików** | Wykonywanie krótkich etykiet z opisami może być trudne<br /><br />Zwykle nie skaluje ostatnich pięciu kart w jednym oknie dialogowym<br /><br />Nieodpowiedni, jeśli masz zbyt wiele kart dla jednego wiersza (Użyj alternatywnej techniki warstwowej)<br /><br />Nie rozszerzalny |
+| Kontrolka karta | Logicznie Grupuj strony okna dialogowego w powiązane zestawy<br /><br />Przydatne w przypadku mniej niż pięciu (lub liczby kart, które mieszczą się w jednym wierszu okna dialogowego) stron powiązanych kontrolek w oknie dialogowym<br /><br />Etykiety kart muszą być krótkie: jedno lub dwa wyrazy, które mogą łatwo identyfikować zawartość<br /><br />Typowy styl okna dialogowego systemu<br /><br />Przykład: **&gt; właściwości elementu Eksploratora plików** | Wykonywanie krótkich etykiet z opisami może być trudne<br /><br />Zwykle nie skaluje ostatnich pięciu kart w jednym oknie dialogowym<br /><br />Nieodpowiedni, jeśli masz zbyt wiele kart dla jednego wiersza (Użyj alternatywnej techniki warstwowej)<br /><br />Nie rozszerzalny |
 | Nawigacja po pasku bocznym | Proste przełączanie urządzenia, które może obsługiwać więcej kategorii niż karty<br /><br />Płaska lista kategorii (bez hierarchii)<br /><br />Extensible<br /><br />Przykład: **Dostosuj... &gt; Dodaj polecenie** | Nie jest dobrym miejscem w poziomie, jeśli istnieje mniej niż trzy grupy<br /><br />Zadanie może być lepiej dopasowane do listy rozwijanej |
 | Kontrolka drzewa | Zezwala na nieograniczoną kategorię<br /><br />Zezwala na grupowanie i/lub hierarchię kategorii<br /><br />Extensible<br /><br />Przykład: **narzędzia &gt; Opcje** | Silnie zagnieżdżone hierarchie mogą spowodować nadmierne przewijanie w poziomie<br /><br />Program Visual Studio ma zbyt dużej ilości widoków drzewa |
 | Kreatora | Pomaga w wykonywaniu zadania przez identyfikator GUID użytkownika w ramach zadań, sekwencyjnych kroków: Kreator reprezentuje zadanie wysokiego poziomu, a poszczególne panele reprezentują podzadania wymagane do wykonania ogólnego zadania<br /><br />Przydatne, gdy zadanie przekroczy granice interfejsu użytkownika, tak jak w przypadku, gdy użytkownik będzie musiał użyć wielu edytorów i okien narzędzi do wykonania zadania<br /><br />Przydatne, gdy zadanie wymaga rozgałęziania<br /><br />Przydatne, gdy zadanie zawiera zależności między krokami<br /><br />Przydatne, gdy kilka podobnych zadań z jednym rozwidleniem decyzji można przedstawić w jednym oknie dialogowym, aby zmniejszyć liczbę różnych podobnych okien dialogowych | Nieodpowiednie dla każdego zadania, które nie wymaga sekwencyjnego przepływu pracy<br /><br />Użytkownicy mogą zostać przeciążni i pomylić kreatora ze zbyt dużą liczbą kroków<br /><br />Kreatorzy mają nieodłączną nieruchomość ekranu |
@@ -485,7 +487,7 @@ W perspektywie typu "przeciągnij i upuść" należy zastosować następujące c
 
 - **Projekt mieszany:** W przypadku przeciągania i upuszczania punktu widzenia zachowanie tego typu projektu jest zależne od charakteru przeciąganego elementu (odwołanie do elementu w magazynie lub samego elementu). Powyższym zachowaniem dotyczącym odwołań i elementów fizycznych opisano powyżej.
 
-Jeśli w **Eksplorator rozwiązań**istniał tylko jeden typ projektu, operacje przeciągania i upuszczania byłyby proste. Ponieważ każdy system projektu ma możliwość zdefiniowania własnego zachowania przeciągania i upuszczania, należy przestrzegać pewnych wytycznych (w oparciu o zachowanie przy przeciąganiu i upuszczaniu w Eksploratorze Windows), aby zapewnić przewidywalne środowisko użytkownika:
+Jeśli w **Eksplorator rozwiązań** istniał tylko jeden typ projektu, operacje przeciągania i upuszczania byłyby proste. Ponieważ każdy system projektu ma możliwość zdefiniowania własnego zachowania przeciągania i upuszczania, należy przestrzegać pewnych wytycznych (w oparciu o zachowanie przy przeciąganiu i upuszczaniu w Eksploratorze Windows), aby zapewnić przewidywalne środowisko użytkownika:
 
 - Niezmodyfikowana operacja przeciągania w **Eksplorator rozwiązań** (gdy nie są wciśnięte klawisze CTRL ani Shift), należy wykonać operację przenoszenia.
 

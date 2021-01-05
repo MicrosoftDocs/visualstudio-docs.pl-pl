@@ -1,5 +1,7 @@
 ---
 title: Używanie i świadczenie usług | Microsoft Docs
+description: Dowiedz się więcej na temat usług oferowanych przez środowisko IDE programu Visual Studio do pakietów VSPackage i używania. W tych artykułach opisano, jak uzyskać i udostępnić usługi.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8741d8d66af96ad4c6abea44b238393a34c5aa95
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a7c1d9f3632d8b710ac238c372ed4456183a8d1
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698742"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715941"
 ---
 # <a name="using-and-providing-services"></a>Korzystanie z usług i dostarczanie ich
 Usługa jest umową między dwoma pakietów VSPackage. Jeden pakietu VSPackage oferuje określony zestaw interfejsów dla innego pakietu VSPackage do użycia. Program udostępnia na przykład [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> usługę pakietu VSPackage. Ta usługa udostępnia <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interfejs, który może być używany do zapisywania w dzienniku aktywności. Aby uzyskać więcej informacji, zobacz [How to: Use the Activity Log](../extensibility/how-to-use-the-activity-log.md).
