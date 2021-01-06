@@ -1,5 +1,7 @@
 ---
 title: Model starszej wersji usługi językowej | Microsoft Docs
+description: Ten model minimalnej usługi językowej dla edytora podstawowego programu Visual Studio jest używany jako przewodnik tworzenia własnej usługi językowej.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f024a02641902843f673ce3ff8583a4bce3b135
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2928d3c09a54ea8e9548f7751381279f153643e5
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707050"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876743"
 ---
 # <a name="model-of-a-legacy-language-service"></a>Model starszej wersji usługi językowej
 Usługa języka definiuje elementy i funkcje dla określonego języka i służy do udostępniania edytora informacji specyficznych dla danego języka. Na przykład edytor musi znać elementy i słowa kluczowe języka w celu obsługi kolorowania składni.

@@ -1,5 +1,7 @@
 ---
 title: Podtypy projektu | Microsoft Docs
+description: Dowiedz się, jak podtypy projektów pozwalają dostosować zachowanie systemów projektu programu Visual Studio. Pakietów VSPackage Implementuj podtypy projektu przy użyciu agregacji COM.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c528486db99ddf07b2a2d1e18dcee4fc46e8713b
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: 05240ee72aef85e50d07c7a39df1c819f04933a2
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426979"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876302"
 ---
 # <a name="project-subtypes"></a>Podtypy projektów
 Podtypy projektu pozwalają dostosować lub określić zachowanie systemów projektowych programu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Dostosowania obejmują zapisywanie dodatkowych danych w pliku projektu, Dodawanie lub Filtrowanie elementów w oknie dialogowym **Dodaj nowy element** , kontrolowanie sposobu debugowania i wdrażania zestawów oraz rozszerzanie okna dialogowego **strony właściwości** projektu. Pakietów VSPackage Implementuj podtypy projektu przy użyciu agregacji COM.

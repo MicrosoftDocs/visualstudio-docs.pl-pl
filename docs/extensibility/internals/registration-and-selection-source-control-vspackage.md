@@ -1,5 +1,7 @@
 ---
 title: Rejestracja i wybór (pakietu VSPackage kontroli źródła) | Microsoft Docs
+description: Dowiedz się, jak zarejestrować pakietu VSPackage kontroli źródła w programie Visual Studio i jak wybrać pakiet do załadowania z wielu zarejestrowanych pakietów kontroli źródła.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 973eb19916a737dfa775fe79ee62cb3d11fe0123
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76f0bd737eff52706cf73c9a1105b79e08c556f0
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705718"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877367"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Rejestracja i wybór (pakiet VSPackage kontroli kodu źródłowego)
 Pakietu VSPackage kontroli źródła musi być zarejestrowany, aby można było go udostępnić [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Jeśli zarejestrowano więcej niż jeden pakietu VSPackage kontroli źródła, użytkownik może wybrać pakietu VSPackage do załadowania w odpowiednim czasie. Zobacz [pakietów VSPackage](../../extensibility/internals/vspackages.md) , aby uzyskać więcej informacji o pakietów VSPackage i sposobach ich rejestracji.
@@ -24,7 +26,7 @@ Pakietu VSPackage kontroli źródła musi być zarejestrowany, aby można było 
 ## <a name="registering-a-source-control-package"></a>Rejestrowanie pakietu kontroli źródła
  Pakiet kontroli źródła jest zarejestrowany, aby [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] środowisko mógł je znaleźć i wykonać zapytanie dotyczące obsługiwanych funkcji. Jest to zgodne z schematem ładowania opóźnionego, w którym wystąpienie pakietu jest tworzone tylko wtedy, gdy jego funkcje lub polecenia są wymagane lub zostały jawnie zażądane.
 
- Pakietów VSPackage umieścić informacje w kluczu rejestru specyficznym dla wersji, HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio \\ *x. Y*, gdzie *X* jest głównym numerem wersji, a *Y* to numer wersji pomocniczej. Ta metoda zapewnia możliwość obsługi instalacji równoległej wielu wersji programu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
+ Pakietów VSPackage umieścić informacje w kluczu rejestru specyficznym dla wersji, HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *x. Y*, gdzie *X* jest głównym numerem wersji, a *Y* to numer wersji pomocniczej. Ta metoda zapewnia możliwość obsługi instalacji równoległej wielu wersji programu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Interfejs użytkownika (UI) obsługuje wybór spośród wielu zainstalowanych wtyczek kontroli źródła (za pośrednictwem pakietu adaptera kontroli źródła), a także pakietów VSPackage kontroli źródła. W danym momencie może istnieć tylko jedna wtyczka lub pakietu VSPackage aktywnej kontroli źródła. Jednakże, jak opisano poniżej, IDE umożliwia przełączanie się między wtyczkami kontroli źródła i pakietów VSPackage za pośrednictwem automatycznego mechanizmu zamiany pakietów na podstawie rozwiązania. Aby włączyć ten mechanizm wyboru, należy wykonać pewne wymagania dotyczące części kontroli źródła pakietu VSPackage.
 

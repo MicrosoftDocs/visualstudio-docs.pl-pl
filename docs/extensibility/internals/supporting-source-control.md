@@ -1,5 +1,7 @@
 ---
 title: Obsługa kontroli źródła | Microsoft Docs
+description: Dowiedz się, w jaki sposób program Visual Studio obsługuje wyewidencjonowywanie plików, zaewidencjonowania i inne operacje kontroli źródła dla projektu lub edytora.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84de3120783528d209b1475477aee5087edac42b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e722770ad1db4b85dbc2a5a8754d9158b6ee436
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704728"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876457"
 ---
 # <a name="supporting-source-control"></a>Obsługa kontroli kodu źródłowego
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] obsługuje wyewidencjonowywanie plików, ewidencjonowanie i inne operacje kontroli źródła dla projektu lub edytora. Jako klient kontroli źródła [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] został zaprojektowany w celu współdziałania z pakietem kontroli źródła, np [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] ., który oferuje funkcje archiwizowania, obsługi wersji i kontroli dla dynamicznie zdefiniowanego zestawu plików.

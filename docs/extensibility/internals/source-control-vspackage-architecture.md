@@ -1,5 +1,7 @@
 ---
 title: Architektura pakietu VSPackage kontroli źródła | Microsoft Docs
+description: Dowiedz się więcej o architekturze pakietu kontroli źródła, który jest pakietu VSPackage, który zapewnia funkcjonalność programu Visual Studio jako usługę kontroli źródła.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,19 +12,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6e62aa9e2d725e982f0605e2721f0bfeb3cc5ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c03482ff489c356ddcbe28ccc26c69c5936be6c5
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705083"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877679"
 ---
 # <a name="source-control-vspackage-architecture"></a>Architektura pakietu VSPackage kontroli kodu źródłowego
 Pakiet kontroli źródła jest pakietu VSPackage, który korzysta z usług [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] udostępnianych przez środowisko IDE. W powrocie pakiet kontroli źródła udostępnia swoją funkcjonalność jako usługę kontroli źródła. Ponadto pakiet kontroli źródła jest bardziej wszechstronną alternatywą niż Wtyczka kontroli źródła do integracji kontroli źródła z [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
  Wtyczka do kontroli źródła, która implementuje interfejs API wtyczki kontroli źródła przestrzega zasad przez ścisły kontrakt. Na przykład wtyczka nie może zastąpić domyślnego [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interfejsu użytkownika. Ponadto interfejs API dodatku plug-in kontroli źródła nie pozwala na zaimplementowanie własnego modelu kontroli źródła przez wtyczkę. Pakiet kontroli źródła, jednak przechodzą oba te ograniczenia. Pakiet kontroli źródła ma pełną kontrolę nad doświadczeniem w zakresie kontroli źródła przez [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] użytkownika. Ponadto pakiet kontroli źródła może używać własnego modelu kontroli źródła i logiki, a także definiować wszystkie interfejsy użytkownika powiązane z kontrolą źródła.
 
-## <a name="source-control-package-components"></a>Składniki pakietu kontroli źródła
+## <a name="source-control-package-components"></a>Składniki pakietu Source-Control
  Jak pokazano na diagramie architektury, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] składnik o nazwie stub kontroli źródła jest pakietu VSPackage, który integruje pakiet kontroli źródła z [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
  Procedura wejścia kontroli źródła obsługuje następujące zadania.
@@ -37,7 +39,7 @@ Pakiet kontroli źródła jest pakietu VSPackage, który korzysta z usług [!INC
 
   Pakiet adaptera kontroli źródła jest specjalnym pakietem kontroli źródła, który [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zapewnia. Ten pakiet jest centralnym składnikiem obsługującym wtyczki kontroli źródła na podstawie interfejsu API wtyczki kontroli źródła. Gdy wtyczka kontroli źródła jest aktywną wtyczką, skrót kontroli źródła wysyła swoje zdarzenia do pakietu adaptera kontroli źródła. Z kolei pakiet adaptera kontroli źródła komunikuje się z wtyczką kontroli źródła przy użyciu interfejsu API wtyczki kontroli źródła, a także udostępnia domyślny interfejs użytkownika, który jest wspólny dla wszystkich wtyczek kontroli źródła.
 
-  Gdy pakiet kontroli źródła jest aktywnym pakietem, po drugiej stronie procedura kontroli źródła bezpośrednio komunikuje się z pakietem przy użyciu [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] interfejsów pakietu kontroli źródła. Pakiet kontroli źródła jest odpowiedzialny za hostowanie własnego interfejsu użytkownika kontroli źródła.
+  Gdy pakiet kontroli źródła jest aktywnym pakietem, po drugiej stronie procedura kontroli źródła bezpośrednio komunikuje się z pakietem za pomocą [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] interfejsów pakietu Source-Control. Pakiet kontroli źródła jest odpowiedzialny za hostowanie własnego interfejsu użytkownika kontroli źródła.
 
   ![Grafika architektury kontroli źródła](../../extensibility/internals/media/vsipsccarch.gif "VSIPSCCArch")
 

@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: wyświetlanie uzupełniania instrukcji | Microsoft Docs'
+description: Dowiedz się, jak zaimplementować uzupełnianie instrukcji opartych na języku dla zawartości w postaci zwykłego tekstu za pomocą tego przewodnika.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,17 +15,17 @@ dev_langs:
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: 472ff8c10e1346f25e7bc72ed5fd4ee9f31bbafa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d05d33074f48e59e365792fda63897b1d38cd585
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904790"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877159"
 ---
 # <a name="walkthrough-display-statement-completion"></a>Przewodnik: Wyświetlanie instrukcji wyświetlania
 Można zaimplementować uzupełnianie instrukcji opartych na języku przez zdefiniowanie identyfikatorów, dla których chcesz wprowadzić zakończenie, a następnie wyzwalanie sesji ukończenia. Można zdefiniować uzupełnianie instrukcji w kontekście usługi językowej, zdefiniować własne rozszerzenie nazwy pliku i typ zawartości, a następnie wyświetlić uzupełnianie dla tego typu. Można też wyzwolić zakończenie dla istniejącego typu zawartości — na przykład "zwykły tekst". W tym instruktażu pokazano, jak wyzwolić uzupełnianie instrukcji dla typu zawartości "zwykły tekst", który jest typem zawartości plików tekstowych. Typ zawartości "text" jest elementem nadrzędnym wszystkich innych typów zawartości, w tym kodu i plików XML.
 
- Uzupełnianie instrukcji jest zazwyczaj wyzwalane przez wpisanie niektórych znaków — na przykład przez wpisanie początku identyfikatora, takiego jak "Using". Zwykle jest ona odrzucana przez wciśnięcie klawisza **spacji**, **karty**lub klawisza **Enter** , aby zatwierdzić zaznaczenie. Funkcje IntelliSense, które są wyzwalane podczas wpisywania znaku, można zaimplementować przy użyciu procedury obsługi poleceń dla naciśnięć klawiszy ( <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu) i dostawcy obsługi, który implementuje <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> interfejs. Aby utworzyć źródło uzupełniania, czyli listę identyfikatorów, które uczestniczą w ukończeniu, zaimplementuj <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> interfejs i dostawcę źródła uzupełniania ( <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider> interfejs). Dostawcy są częścią składników Managed Extensibility Framework (MEF). Są oni zobowiązani do eksportowania klas źródłowych i kontrolerów oraz importowania usług i brokerów — na przykład, <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> który umożliwia nawigowanie w buforze tekstu oraz <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> , który wyzwala sesję ukończenia.
+ Uzupełnianie instrukcji jest zazwyczaj wyzwalane przez wpisanie niektórych znaków — na przykład przez wpisanie początku identyfikatora, takiego jak "Using". Zwykle jest ona odrzucana przez wciśnięcie klawisza **spacji**, **karty** lub klawisza **Enter** , aby zatwierdzić zaznaczenie. Funkcje IntelliSense, które są wyzwalane podczas wpisywania znaku, można zaimplementować przy użyciu procedury obsługi poleceń dla naciśnięć klawiszy ( <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu) i dostawcy obsługi, który implementuje <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> interfejs. Aby utworzyć źródło uzupełniania, czyli listę identyfikatorów, które uczestniczą w ukończeniu, zaimplementuj <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> interfejs i dostawcę źródła uzupełniania ( <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider> interfejs). Dostawcy są częścią składników Managed Extensibility Framework (MEF). Są oni zobowiązani do eksportowania klas źródłowych i kontrolerów oraz importowania usług i brokerów — na przykład, <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> który umożliwia nawigowanie w buforze tekstu oraz <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> , który wyzwala sesję ukończenia.
 
  W tym instruktażu pokazano, jak zaimplementować uzupełnianie instrukcji dla zakodowanego zestawu identyfikatorów. W przypadku pełnych implementacji usługa językowa i Dokumentacja języka są odpowiedzialne za dostarczanie tej zawartości.
 
@@ -172,7 +174,7 @@ Można zaimplementować uzupełnianie instrukcji opartych na języku przez zdefi
 
    - Zezwalaj na zapisywanie znaku w buforze, a następnie wyzwalanie lub filtrowanie uzupełniania. (W tym celu należy wydrukować znaki).
 
-   - Zatwierdź ukończenie, ale nie Zezwalaj na zapisywanie znaku w buforze. (Odstępu, **Tab**i **Enter** zrób to, gdy zostanie wyświetlona sesja ukończenia).
+   - Zatwierdź ukończenie, ale nie Zezwalaj na zapisywanie znaku w buforze. (Odstępu, **Tab** i **Enter** zrób to, gdy zostanie wyświetlona sesja ukończenia).
 
    - Zezwalaj na przekazywanie polecenia do kolejnej procedury obsługi. (Wszystkie inne polecenia).
 
@@ -202,7 +204,7 @@ Można zaimplementować uzupełnianie instrukcji opartych na języku przez zdefi
 
 3. Utwórz plik tekstowy i wpisz tekst zawierający wyraz "Add".
 
-4. Po wpisaniu pierwszego "a", a następnie "d" powinna być wyświetlana lista zawierająca "dodanie" i "adaptacja". Zauważ, że dodanie jest zaznaczone. Gdy wpiszesz kolejną "d", lista powinna zawierać tylko "dodanie", która jest teraz zaznaczona. Możesz zatwierdzić "dodanie", naciskając **spację**, **kartę**lub klawisz **Enter** lub Odrzuć listę, wpisując ESC lub dowolny inny klucz.
+4. Po wpisaniu pierwszego "a", a następnie "d" powinna być wyświetlana lista zawierająca "dodanie" i "adaptacja". Zauważ, że dodanie jest zaznaczone. Gdy wpiszesz kolejną "d", lista powinna zawierać tylko "dodanie", która jest teraz zaznaczona. Możesz zatwierdzić "dodanie", naciskając **spację**, **kartę** lub klawisz **Enter** lub Odrzuć listę, wpisując ESC lub dowolny inny klucz.
 
 ## <a name="see-also"></a>Zobacz też
 - [Przewodnik: łączenie typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

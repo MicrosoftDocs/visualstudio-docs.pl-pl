@@ -1,5 +1,7 @@
 ---
 title: Pola i interfejsy okna właściwości | Microsoft Docs
+description: Dowiedz się więcej na temat zaznaczenia, które określa, jakie informacje są wyświetlane w okno Właściwości na podstawie okna, które ma fokus w środowisku IDE programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9529708c781e7fdb04c3b4c5ee143b7605857e84
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 21bc3a7f1d46a1afe579a67afa09097fd04458ff
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706165"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875768"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Pola i interfejsy okna właściwości
 Model wyboru służący do określania, jakie informacje są wyświetlane w oknie **Właściwości** , zależy od okna, które ma fokus w środowisku IDE. Każde okno i obiekt w wybranym oknie może mieć obiekt kontekstu zaznaczenia wypychany do globalnego kontekstu wyboru. Środowisko aktualizuje globalny kontekst wyboru przy użyciu wartości z ramki okna, gdy to okno ma fokus. Gdy fokus zmieni się, oznacza to, że kontekst zaznaczenia.

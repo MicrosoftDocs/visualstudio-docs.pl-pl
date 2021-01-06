@@ -1,5 +1,6 @@
 ---
 title: Usuń informacje o kontroli źródła z plików. proj i. sln
+description: W interfejsie API wtyczki kontroli źródła informacje o SCC są przechowywane w MSSCCPRJ. Plik SCC zamiast plików projektu i rozwiązania.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a5f9b6ac83df104c381d7100a5e8fda5ac48a61
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 798179a48c24c61fa40c2519624e22a077003b56
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90034679"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876964"
 ---
 # <a name="removal-of-source-control-information-from-proj-and-sln-files"></a>Usuwanie informacji o kontroli źródła z plików. proj i. sln
 
@@ -28,6 +29,6 @@ W wersji 1,2 interfejsu API dodatku plug-in kontroli źródła informacje o SCC 
 
  W interfejsie API dodatku plug-in kontroli źródła w wersji 1,1 środowisko IDE używane ~ SAK pliki do wykrycia, czy wtyczka obsługuje MSSCCPRJ. Metoda SCC przechowująca informacje o kontroli źródła. Interfejs API wtyczki kontroli źródła w wersji 1,2 oferuje nową funkcję wykrywania obsługi MSSCCPRJ. Plik SCC bez użycia pliku ~ SAK. Aby uzyskać więcej informacji, zobacz [eliminacja plików ~ SAK](../../extensibility/internals/elimination-of-tilde-sak-files.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Nowości dotyczące wtyczki kontroli kodu źródłowego w interfejsie API w wersji 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: zapisywanie ustawień użytkownika na stronie startowej | Microsoft Docs'
+description: Informacje na temat utrwalania ustawień użytkownika na stronie początkowej przez zapisanie ustawienia rejestru przy użyciu tego przewodnika.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
@@ -9,18 +11,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 8dd20513defd1db8848cf6a80a29e04c127c9dd4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17dfb844733a15b1607d2daa2ce24a8f6e0be420
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903162"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876184"
 ---
 # <a name="walkthrough-save-user-settings-on-a-start-page"></a>Przewodnik: zapisywanie ustawień użytkownika na stronie początkowej
 
 Ustawienia użytkownika można zachować na stronie początkowej. Postępując zgodnie z tym przewodnikiem, można utworzyć formant, który zapisuje ustawienie w rejestrze, gdy użytkownik kliknie przycisk, a następnie pobiera to ustawienie za każdym razem, gdy strona początkowa zostanie załadowana. Ponieważ szablon projektu strony startowej zawiera dostosowywalną kontrolkę użytkownika i domyślne wywołania XAML strony początkowej tego formantu, nie trzeba modyfikować samej strony początkowej.
 
-Magazyn ustawień, który jest skonkretyzowany w tym instruktażu, jest wystąpieniem <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> interfejsu, który odczytuje i zapisuje w następującej lokalizacji rejestru, gdy jest wywoływana: **HKCU\Software\Microsoft\VisualStudio\14.0 \\ \<CollectionName> **
+Magazyn ustawień, który jest skonkretyzowany w tym instruktażu, jest wystąpieniem <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> interfejsu, który odczytuje i zapisuje w następującej lokalizacji rejestru, gdy jest wywoływana: **HKCU\Software\Microsoft\VisualStudio\14.0 \\ \<CollectionName>**
 
 Gdy jest uruchomiona w eksperymentalnym wystąpieniu programu Visual Studio, ustawienia są przechowywane i zapisywane w **HKCU\Software\Microsoft\VisualStudio\14.0Exp \\ \<CollectionName> .**
 
@@ -37,7 +39,7 @@ Więcej informacji o sposobie utrwalania ustawień znajduje się w temacie [rozs
 
 1. Utwórz projekt strony startowej zgodnie z opisem w temacie [Tworzenie niestandardowej strony początkowej](creating-a-custom-start-page.md). Nazwij projekt **SaveMySettings**.
 
-2. W **Eksplorator rozwiązań**Dodaj następujące odwołania do zestawu do projektu StartPageControl:
+2. W **Eksplorator rozwiązań** Dodaj następujące odwołania do zestawu do projektu StartPageControl:
 
     - EnvDTE
 
@@ -59,7 +61,7 @@ Więcej informacji o sposobie utrwalania ustawień znajduje się w temacie [rozs
 
      Ten krok polega na usunięciu <xref:System.Windows.Controls.Border> elementu i wszystkich jego elementów i pozostawieniu tylko elementu najwyższego poziomu <xref:System.Windows.Controls.Grid> .
 
-6. Z **przybornika**przeciągnij <xref:System.Windows.Controls.StackPanel> kontrolkę do siatki.
+6. Z **przybornika** przeciągnij <xref:System.Windows.Controls.StackPanel> kontrolkę do siatki.
 
 7. Teraz przeciągnij <xref:System.Windows.Controls.TextBlock> , a <xref:System.Windows.Controls.TextBox> i przycisk do <xref:System.Windows.Controls.StackPanel> .
 
@@ -77,7 +79,7 @@ Więcej informacji o sposobie utrwalania ustawień znajduje się w temacie [rozs
 
 1. W okienku XAML kliknij prawym przyciskiem myszy `Click` atrybut <xref:System.Windows.Controls.Button> elementu, a następnie kliknij polecenie **Przejdź do programu obsługi zdarzeń**.
 
-     W tym kroku zostanie otwarty *MyControl.XAML.cs*i zostanie utworzona procedura obsługi dla `Button_Click` zdarzenia.
+     W tym kroku zostanie otwarty *MyControl.XAML.cs* i zostanie utworzona procedura obsługi dla `Button_Click` zdarzenia.
 
 2. Dodaj następujące `using` dyrektywy na początku pliku.
 

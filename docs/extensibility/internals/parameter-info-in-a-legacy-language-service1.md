@@ -1,5 +1,7 @@
 ---
 title: Informacje o parametrach w starszej wersji językowej Service1 | Microsoft Docs
+description: Dowiedz się, jak zaimplementować etykietkę narzędzia informacji o parametrach IntelliSense, która zapewnia użytkownikom wskazówki w starszej wersji usługi językowej.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f8e5664634d189e8463376761d8fb59543740df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0cd49644e670df42f4630af987a5e9152b4f6c95
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238078"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876808"
 ---
 # <a name="parameter-info-in-a-legacy-language-service-1"></a>Informacje o parametrach w starszej wersji usługi językowej 1
 Etykietka narzędzia informacji o parametrach IntelliSense udostępnia użytkownikom wskazówki dotyczące tego, gdzie znajdują się w konstrukcji językowej.

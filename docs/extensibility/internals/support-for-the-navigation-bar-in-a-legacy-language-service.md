@@ -1,5 +1,6 @@
 ---
 title: Obsługa paska nawigacyjnego w starszej wersji usługi językowej
+description: Dowiedz się, jak obsługiwać pasek nawigacyjny w starszej wersji usługi językowej. Pasek nawigacyjny w widoku Edytor wyświetla typy i elementy członkowskie w pliku.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0011e9dac5438715571d1df76ba379fb9ed122df
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 325789c3b7210c87d5c1b0414434af27c266c31c
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036564"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876548"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Obsługa paska nawigacyjnego w starszej wersji usługi językowej
 Pasek nawigacyjny w górnej części widoku edytora wyświetla typy i elementy członkowskie w pliku. Typy są wyświetlane na liście rozwijanej po lewej stronie, a elementy członkowskie są wyświetlane na liście rozwijanej po prawej stronie. Gdy użytkownik wybierze typ, karetka zostanie umieszczona w pierwszym wierszu typu. Gdy użytkownik wybierze element członkowski, karetka zostanie umieszczona na definicji elementu członkowskiego. Pola rozwijane są aktualizowane w celu odzwierciedlenia bieżącej lokalizacji karetki.

@@ -1,5 +1,7 @@
 ---
 title: Obszary robocze w programie Visual Studio | Microsoft Docs
+description: Dowiedz się, w jaki sposób program Visual Studio używa obszaru roboczego do reprezentowania kolekcji plików w otwartym folderze, w tym dostawców obszarów roboczych i usług.
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2018
 ms.topic: conceptual
 author: vukelich
@@ -7,12 +9,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 011781b434c4d005e473c5f97c60a9269dc5d034
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1ed660a5f52aba548d087b28f7caea4d1966fe45
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62952766"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876951"
 ---
 # <a name="workspaces"></a>Obszary robocze
 
@@ -76,7 +78,7 @@ Wynik jest wystąpieniem <xref:Microsoft.VisualStudio.Workspace.Settings.IWorksp
 }
 ```
 
-Przy założeniu, że te ustawienia znajdowały się w _VSWorkspaceSettings.js_użytkownika, dostęp do danych można uzyskać w następujący sposób:
+Przy założeniu, że te ustawienia znajdowały się w _VSWorkspaceSettings.js_ użytkownika, dostęp do danych można uzyskać w następujący sposób:
 
 ```csharp
 using System.Collections.Generic;
@@ -179,13 +181,13 @@ Rozszerzalność obszaru roboczego jest silnie oparta na MEFach, a błędy kompo
 
 ::: moniker range="vs-2017"
 
-Szczegóły błędu można znaleźć w _%localappdata%\microsoft\visualstudio\15.0_id \componentmodelcache\microsoft.VisualStudio.default.err_. Usuń błędy dla typów implementowanych przez rozszerzenie.
+Szczegóły błędu można znaleźć w _%localappdata%\microsoft\visualstudio\ 15.0_Id \componentmodelcache\microsoft.VisualStudio.default.err_. Usuń błędy dla typów implementowanych przez rozszerzenie.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Szczegóły błędu można znaleźć w _%localappdata%\microsoft\visualstudio\16.0_id \componentmodelcache\microsoft.VisualStudio.default.err_. Usuń błędy dla typów implementowanych przez rozszerzenie.
+Szczegóły błędu można znaleźć w _%localappdata%\microsoft\visualstudio\ 16.0_Id \componentmodelcache\microsoft.VisualStudio.default.err_. Usuń błędy dla typów implementowanych przez rozszerzenie.
 
 ::: moniker-end
 

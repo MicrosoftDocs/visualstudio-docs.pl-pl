@@ -1,5 +1,7 @@
 ---
-title: Obsługa narzędzi do przeglądania symboli | Microsoft Docs
+title: Obsługa narzędzi Symbol-Browsing | Microsoft Docs
+description: Program Visual Studio udostępnia możliwości przeglądania symboli w programie Visual Studio. Dowiedz się, w jaki sposób można rozłożyć te możliwości za pomocą bibliotek dla symboli w składnikach.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,17 +20,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4998e47ccd6f99df2710833c18975d57e3bb92f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0adf586831e21c2448931215d4ef4a89d16a63f8
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704768"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876444"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>Obsługa narzędzi do przeglądania symboli
 **Przeglądarka obiektów**, **Widok klasy**, **przeglądarka wywołań** i **Znajdź narzędzia wyników symboli** zapewniają możliwości przeglądania symboli w programie Visual Studio. Te narzędzia wyświetlają hierarchiczne widoki drzewa symboli i pokazują relacje między symbolami w drzewie. Symbole mogą reprezentować przestrzenie nazw, obiekty, klasy, składowe klas i inne elementy języka zawarte w różnych składnikach. Składniki obejmują projekty programu Visual Studio, zewnętrzne składniki .NET Framework i biblioteki typu (. tlb). Aby uzyskać więcej informacji, zobacz [Wyświetlanie struktury kodu](../../ide/viewing-the-structure-of-code.md).
 
-## <a name="symbol-browsing-libraries"></a>Biblioteki przeglądania symboli
+## <a name="symbol-browsing-libraries"></a>Biblioteki Symbol-Browsing
  Jako implementujący język można rozciągnąć możliwości przeglądania symboli programu Visual Studio, tworząc biblioteki, które śledzą symbole w składnikach i dostarczają listę symboli do Menedżera obiektów programu Visual Studio za pomocą zestawu interfejsów. Biblioteka jest opisana przez <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2> interfejs. Menedżer obiektów programu Visual Studio reaguje na żądania nowych danych z narzędzi do przeglądania symboli, uzyskując dane z bibliotek i organizując je. Następnie wypełnia i aktualizuje narzędzia przy użyciu żądanych danych. Aby uzyskać odwołanie do Menedżera obiektów programu Visual Studio, <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> Przekaż <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> Identyfikator usługi do `GetService` metody.
 
  Każda biblioteka musi być zarejestrowana w Menedżerze obiektów programu Visual Studio, który gromadzi informacje we wszystkich bibliotekach. Aby zarejestrować bibliotekę, wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> metodę. W zależności od tego, które narzędzie inicjuje żądanie, Menedżer obiektów programu Visual Studio znajduje odpowiednią bibliotekę i żąda danych. Dane przesyłane między bibliotekami i [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] menedżerem obiektów znajdują się na liście symboli opisanych przez <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interfejs.

@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: implementowanie fragmentów kodu | Microsoft Docs'
+description: Można utworzyć fragmenty kodu i dołączyć je do rozszerzenia edytora. Dowiedz się, jak tworzyć/rejestrować fragmenty kodu za pomocą tego przewodnika.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
@@ -11,17 +13,17 @@ dev_langs:
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: e06e97acc77b4701e02b0ca54de589830a768669
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a36590c0e56f1e1a2c01f8e084f0b95442607a5
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904712"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877120"
 ---
 # <a name="walkthrough-implement-code-snippets"></a>Przewodnik: implementowanie fragmentów kodu
 Można utworzyć fragmenty kodu i dołączyć je do rozszerzenia edytora, aby użytkownicy rozszerzenia mogli dodawać je do własnego kodu.
 
- Fragment kodu jest fragmentem kodu lub innym tekstem, który można dołączyć do pliku. Aby wyświetlić wszystkie fragmenty kodu, które zostały zarejestrowane dla określonych języków programowania, w menu **Narzędzia** kliknij polecenie **Menedżer fragmentów kodu**. Aby wstawić fragment kodu do pliku, kliknij prawym przyciskiem myszy w miejscu, w którym chcesz umieścić fragment kodu, kliknij polecenie Wstaw fragment kodu lub **Otocz za pomocą**, Znajdź odpowiedni fragment kodu, a następnie kliknij go dwukrotnie. Naciśnij klawisz **Tab** lub **SHIFT** + **Tab** , aby zmodyfikować odpowiednie fragmenty fragmentu kodu, a następnie naciśnij klawisz **Enter** lub **ESC** , aby je zaakceptować. Aby uzyskać więcej informacji, zobacz [fragmenty kodu](../ide/code-snippets.md).
+ Fragment kodu jest fragmentem kodu lub innym tekstem, który można dołączyć do pliku. Aby wyświetlić wszystkie fragmenty kodu, które zostały zarejestrowane dla określonych języków programowania, w menu **Narzędzia** kliknij polecenie **Menedżer fragmentów kodu**. Aby wstawić fragment kodu do pliku, kliknij prawym przyciskiem myszy w miejscu, w którym chcesz umieścić fragment kodu, kliknij polecenie Wstaw fragment kodu lub **Otocz za pomocą**, Znajdź odpowiedni fragment kodu, a następnie kliknij go dwukrotnie. Naciśnij klawisz **Tab** lub **SHIFT** +  , aby zmodyfikować odpowiednie fragmenty fragmentu kodu, a następnie naciśnij klawisz **Enter** lub **ESC** , aby je zaakceptować. Aby uzyskać więcej informacji, zobacz [fragmenty kodu](../ide/code-snippets.md).
 
  Fragment kodu jest zawarty w pliku XML, który ma rozszerzenie nazwy pliku. fragment *. Fragment kodu może zawierać pola, które są wyróżnione po wstawieniu wstawki, aby użytkownik mógł je znaleźć i zmienić. Plik wstawki zawiera również informacje dotyczące **Menedżera fragmentów kodu** , aby można było wyświetlić nazwę fragmentu w prawidłowej kategorii. Aby uzyskać więcej informacji na temat schematu fragmentu kodu, zobacz [odwołania do schematu](../ide/code-snippets-schema-reference.md).
 
@@ -198,7 +200,7 @@ Można utworzyć fragmenty kodu i dołączyć je do rozszerzenia edytora, aby u�
      [!code-csharp[VSSDKCompletionTest#31](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_10.cs)]
      [!code-vb[VSSDKCompletionTest#31](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_10.vb)]
 
-7. Jeśli fragment kodu zawiera pola, które mogą być przechodzenie, sesja rozszerzania jest otwarta do momentu, gdy rozszerzanie zostanie jawnie zaakceptowane; Jeśli fragment kodu nie zawiera żadnych pól, sesja jest zamknięta i jest zwracana `null` przez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.InvokeInsertionUI%2A> metodę. W tej <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> metodzie, po kodzie interfejsu użytkownika selektora fragmentów, który został dodany w poprzednim kroku, Dodaj następujący kod, aby obsłużyć nawigację fragmentu (gdy użytkownik naciśnie klawisz **Tab** lub **SHIFT** + **Tab** po wstawieniu fragmentu kodu).
+7. Jeśli fragment kodu zawiera pola, które mogą być przechodzenie, sesja rozszerzania jest otwarta do momentu, gdy rozszerzanie zostanie jawnie zaakceptowane; Jeśli fragment kodu nie zawiera żadnych pól, sesja jest zamknięta i jest zwracana `null` przez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.InvokeInsertionUI%2A> metodę. W tej <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> metodzie, po kodzie interfejsu użytkownika selektora fragmentów, który został dodany w poprzednim kroku, Dodaj następujący kod, aby obsłużyć nawigację fragmentu (gdy użytkownik naciśnie klawisz **Tab** lub **SHIFT** +  po wstawieniu fragmentu kodu).
 
      [!code-csharp[VSSDKCompletionTest#32](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_11.cs)]
      [!code-vb[VSSDKCompletionTest#32](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_11.vb)]

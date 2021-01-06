@@ -1,5 +1,7 @@
 ---
 title: Trwałość projektu | Microsoft Docs
+description: Dowiedz się więcej o trwałości w projekcie projektu, w tym użycie IPersistFileFormat do utrwalania zarówno plików, jak i nieopartych na plikach projektu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10a9cde91c0181fbfefbaa353c7c3702f4b36819
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6ffa60508eba02a4442bacb63b05abb39202ab9
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706457"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877445"
 ---
 # <a name="project-persistence"></a>Trwałość projektu
 Trwałość jest kluczowym zagadnieniem projektowym dla projektu. Większość projektów używa elementów projektu, które reprezentują pliki; Program [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] obsługuje również projekty, których dane nie są oparte na plikach. Zarówno pliki należące do projektu, jak i plik projektu muszą zostać utrwalone. IDE instruuje projekt, aby zapisywał sam lub element projektu.

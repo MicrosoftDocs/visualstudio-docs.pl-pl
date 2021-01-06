@@ -1,5 +1,7 @@
 ---
 title: Zapytanie edycji zapytania Save (pakietu VSPackage kontroli źródła) | Microsoft Docs
+description: Dowiedz się więcej na temat roli zdarzeń Query-Save Query-Edit i sposobu ich obsługi przez pakietu VSPackage kontroli źródła.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c09ac0cb4f51b8f2484b95d403ff6d0445631479
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed1bb5d1f805f81ba4f124f425fbd93f706eb830
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705961"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875885"
 ---
 # <a name="query-edit-query-save-source-control-vspackage"></a>Edytowanie i zapisywanie zapytań (pakiet VSPackage kontroli kodu źródłowego)
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Edytory mogą emitować zdarzenia edycji zapytania Save (QEQS). [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Procedura wejścia kontroli źródła implementuje usługę QEQS, tak aby była odbiorcą zdarzeń QEQS. Te zdarzenia są następnie delegowane do aktualnie aktywnej kontroli źródła pakietu VSPackage. Aktywna pakietu VSPackage kontroli źródła implementuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> metody i. Metody `IVsQueryEditQuerySave2` interfejsu są zwykle wywoływane bezpośrednio przed rozpoczęciem edycji dokumentu po raz pierwszy i bezpośrednio przed zapisaniem dokumentu.

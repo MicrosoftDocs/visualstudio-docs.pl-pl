@@ -1,5 +1,7 @@
 ---
 title: Podstawowe informacje o integracji kontroli źródła | Microsoft Docs
+description: 'Poznaj dwa typy integracji kontroli źródła obsługiwane przez program Visual Studio: wtyczkę kontroli źródła i rozwiązanie kontroli źródła oparte na pakietu VSPackage.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e56658d644720f1563d71d3d08bf35268119112f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a4dd5186b20dfac4ad5a027e4519700ff8ac1f77
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705236"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876041"
 ---
 # <a name="source-control-integration-essentials"></a>Podstawowe informacje o integracji kontroli kodu źródłowego
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] obsługuje dwa typy integracji kontroli źródła: Wtyczka kontroli źródła, która zapewnia podstawowe funkcje i jest tworzona przy użyciu interfejsu API kontroli źródła (dawniej znanego jako interfejs API MSSCCI), oraz rozwiązania integracji kontroli źródła opartego na pakietu VSPackage, które zapewnia bardziej niezawodne funkcje.

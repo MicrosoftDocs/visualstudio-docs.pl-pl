@@ -1,5 +1,7 @@
 ---
 title: Konfiguracja projektu dla danych wyjściowych | Microsoft Docs
+description: Dowiedz się więcej na temat procesów kompilacji, które mogą być obsługiwane przez każdą konfigurację, oraz interfejsów i metod, za pomocą których można udostępnić elementy wyjściowe.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78b95457af4c5d806fdfcc20f49ac4e82df36488
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffe5cb6477808f892b8d36aa5fd616a5a0ea7969
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706668"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876327"
 ---
 # <a name="project-configuration-for-output"></a>Konfigurowanie projektu dla danych wyjściowych
 Każda konfiguracja może obsługiwać zestaw procesów kompilacji, które generują elementy wyjściowe, takie jak pliki wykonywalne lub zasoby. Te elementy wyjściowe są prywatne dla użytkownika i mogą być umieszczone w grupach łączących powiązane typy danych wyjściowych, takich jak pliki wykonywalne (exe, DLL, lib) i pliki źródłowe (. idl,. h).

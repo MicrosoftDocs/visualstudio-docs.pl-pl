@@ -1,5 +1,7 @@
 ---
 title: Podstawowa usługa | Microsoft Docs
+description: Dowiedz się więcej o usługach, które są interfejsami dla innego pakietu VSPackage do użycia. Usługi w pakietu VSPackage mogą przesłonić wbudowane lub inne usługi.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e2947cb4cd6a347d8e010340f8689eb1907a28a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 54d785d665122fd5c5fa1709aa9348777e3c730b
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705499"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875807"
 ---
 # <a name="service-essentials"></a>Podstawowe informacje o usłudze
 Usługa jest umową między dwoma pakietów VSPackage. Jeden pakietu VSPackage udostępnia określony zestaw interfejsów dla innego pakietu VSPackage do użycia. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] to sama kolekcja pakietów VSPackage, która udostępnia usługi innym pakietów VSPackage.

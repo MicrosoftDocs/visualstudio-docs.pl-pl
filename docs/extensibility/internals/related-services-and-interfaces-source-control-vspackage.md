@@ -1,6 +1,7 @@
 ---
 title: Powiązane usługi i interfejsy (pakiet VSPackage kontroli kodu źródłowego)
 titleSuffix: ''
+description: Dowiedz się więcej o interfejsie związanym z pakietu VSPackage kontroli źródła w zestawie SDK programu Visual Studio. Pakiet implementuje niektóre interfejsy i używa innych do kontroli źródła.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af08c8e0ea15751f5d8e6c0a1a01549fdb9227c3
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: af5c971b804e1c288bf710f6627c0e769e790ee1
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90034797"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876353"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Powiązane usługi i interfejsy (pakiet VSPackage kontroli kodu źródłowego)
 
@@ -53,7 +54,7 @@ W tej sekcji znajduje się lista wszystkich interfejsów pakietu VSPackage zwią
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccEnlistmentPathTranslation> | Ten interfejs zapewnia obsługę zarządzania rejestracją dla projektów sieci Web. | Pakietu VSPackage kontroli źródła | Zalecane |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManagerTooltip> | Ten interfejs służy do pobierania etykietek narzędzi dla plików kontrolowanych przez źródło w projektach. | Pakietu VSPackage kontroli źródła | Opcjonalne |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccOpenFromSourceControl> | Ten interfejs zapewnia obsługę rozszerzenia przestrzeni nazw. | Pakietu VSPackage kontroli źródła | Opcjonalne |
-| <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccControlNewSolution> | Pakietu VSPackage używa tego interfejsu do integrowania rozszerzenia przestrzeni nazw w oknach dialogowych **Nowy**, **Otwórz**lub **Zapisz** . W związku z tym projekty mogą być automatycznie dodawane do kontroli źródła podczas tworzenia lub dodawane do kontroli źródła, gdy trwa operacja zapisywania. | Pakietu VSPackage kontroli źródła | Opcjonalne |
+| <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccControlNewSolution> | Pakietu VSPackage używa tego interfejsu do integrowania rozszerzenia przestrzeni nazw w oknach dialogowych **Nowy**, **Otwórz** lub **Zapisz** . W związku z tym projekty mogą być automatycznie dodawane do kontroli źródła podczas tworzenia lub dodawane do kontroli źródła, gdy trwa operacja zapisywania. | Pakietu VSPackage kontroli źródła | Opcjonalne |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs> | Pakietu VSPackage używa tego interfejsu, aby zdefiniować dodatkowe glify jako glify kontroli źródła dla węzłów w **Eksplorator rozwiązań**. | Pakietu VSPackage kontroli źródła | Opcjonalne |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccAddWebProjectFromSourceControl> | Okno dialogowe **Dodawanie** dla projektów sieci Web używa tego interfejsu. Zapewnia metody przeglądania w poszukiwaniu lokalizacji kontroli źródła i otwierania projektu sieci Web, który został wcześniej dodany w repozytorium kontroli źródła w tej lokalizacji. | Pakietu VSPackage kontroli źródła | Zalecane |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromScc> | Ten interfejs zapewnia obsługę asynchronicznego (w tle) ładowania projektów z kontroli źródła. | Pakietu VSPackage kontroli źródła | Opcjonalne |
@@ -65,5 +66,5 @@ W tej sekcji znajduje się lista wszystkich interfejsów pakietu VSPackage zwią
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> | Ten interfejs służy do zapisywania ustawień kontroli źródła w pliku opcji rozwiązania (. suo). Może to dotyczyć specyficznych dla użytkownika ustawień kontroli źródła, takich jak lokalizacja rejestracji bieżącego użytkownika. | Pakietu VSPackage kontroli źródła | Zalecane |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> | Ten interfejs służy do monitorowania zdarzeń w celu wykonywania operacji, takich jak Ewidencjonowanie plików projektu przed zamknięciem rozwiązań lub pobieranie nowych plików z kontroli źródła podczas otwierania projektu. | Pakietu VSPackage kontroli źródła | Zalecane |
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Elementy projektu](../../extensibility/internals/source-control-vspackage-design-elements.md)

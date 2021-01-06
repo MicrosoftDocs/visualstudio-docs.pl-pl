@@ -1,5 +1,7 @@
 ---
 title: Trwałość i uruchomiona tabela dokumentów | Microsoft Docs
+description: Dowiedz się, w jaki sposób projekt koordynuje otwieranie, zapisywanie i zmienianie nazw dokumentów w uruchomionej tabeli dokumentów, która śledzi stan dokumentu w środowisku IDE programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba698f20b83d1a7af42aeca046aa2a8c943838ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bfc480c8b4a41fe29900681289ad08c54d3c1f31
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706717"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875963"
 ---
 # <a name="persistence-and-the-running-document-table"></a>Trwałość i uruchamianie tabeli dokumentów
 W środowisku [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE projekty są całkowicie odpowiedzialne za zarządzanie trwałością elementów projektu, które są wykonywane za pomocą usługi <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable> . Dokumenty są podstawową jednostką trwałości w środowisku programu Visual Studio. Projekty koordynują otwieranie, zapisywanie i zmienianie nazw dokumentów z uruchomioną tabelą dokumentu (RDT), czyli zasobem śledzącym stan wszystkich otwartych dokumentów.

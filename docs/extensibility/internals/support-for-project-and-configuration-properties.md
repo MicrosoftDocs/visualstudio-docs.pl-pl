@@ -1,5 +1,7 @@
 ---
 title: Obsługa właściwości projektu i konfiguracji | Microsoft Docs
+description: Dowiedz się, jak udostępnić stronę właściwości dla własnego typu projektu w środowisku IDE programu Visual Studio, które może wyświetlać rozszerzone właściwości projektu i konfiguracji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be9d9a6e0976ab1ff336fc6754fa44d26c031378
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: fd5f15f16894faf6d47700e34db4d99a1fa3cb5a
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012025"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876600"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Pomoc techniczna dotycząca właściwości projektu i konfiguracji
 W oknie **Właściwości** w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowanym środowisku programistycznym (IDE) można wyświetlić właściwości projektu i konfiguracji. Możesz podać stronę właściwości dla własnego typu projektu, aby użytkownik mógł ustawić właściwości aplikacji.
@@ -75,7 +77,7 @@ W oknie **Właściwości** w [!INCLUDE[vsprvs](../../code-quality/includes/vsprv
 
  Pakietu VSPackage, do którego atrybut jest dołączony, jest nieważne. Gdy pakietu VSPackage jest zarejestrowany w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , identyfikator klasy (CLSID) dowolnego obiektu, który można utworzyć jest zarejestrowany, aby wywołanie <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry.CreateInstance%2A> można było utworzyć.
 
- Ścieżka rejestru obiektu, który można utworzyć, jest określana przez połączenie <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A> , słowo, identyfikator CLSID i identyfikator GUID typu obiektu. Jeśli `MyProjectPropertyPage` Klasa ma identyfikator GUID {3c693da2-5bca-49b3-bd95-ffe0a39dd723}, a UserRegistryRoot jest HKEY_CURRENT_USER \software\microsoft\visualstudio\8.0Exp, wówczas ścieżka rejestru będzie HKEY_CURRENT_USER \software\microsoft\visualstudio\8.0exp\clsid \\ {3c693da2-5bca-49b3-bd95-ffe0a39dd723}.
+ Ścieżka rejestru obiektu, który można utworzyć, jest określana przez połączenie <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A> , słowo, identyfikator CLSID i identyfikator GUID typu obiektu. Jeśli `MyProjectPropertyPage` Klasa ma identyfikator GUID {3c693da2-5bca-49b3-bd95-ffe0a39dd723}, a UserRegistryRoot jest HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp, ścieżka rejestru byłaby HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp\CLSID\\ {3c693da2-5bca-49b3-bd95-ffe0a39dd723}.
 
 ## <a name="project-and-configuration-property-attributes-and-layout"></a>Atrybuty i układ właściwości projektu i konfiguracji
  <xref:System.ComponentModel.CategoryAttribute>Atrybuty, <xref:System.ComponentModel.DisplayNameAttribute> i <xref:System.ComponentModel.DescriptionAttribute> określają układ, etykietowanie i opis właściwości projektu i konfiguracji na stronie właściwości ogólnej. Te atrybuty określają odpowiednio kategorię, nazwę wyświetlaną i opis opcji.
@@ -88,9 +90,9 @@ W oknie **Właściwości** w [!INCLUDE[vsprvs](../../code-quality/includes/vsprv
  [!code-vb[VSSDKSupportProjectConfigurationProperties#2](../../extensibility/internals/codesnippet/VisualBasic/support-for-project-and-configuration-properties_2.vb)]
  [!code-csharp[VSSDKSupportProjectConfigurationProperties#2](../../extensibility/internals/codesnippet/CSharp/support-for-project-and-configuration-properties_2.cs)]
 
- `MyConfigProp`Właściwość konfiguracja jest wyświetlana na stronie właściwości konfiguracja jako **Właściwość moja konfiguracja** w kategorii. **My Category** Jeśli opcja jest zaznaczona, opis, **mój opis**, pojawia się w panelu opisu.
+ `MyConfigProp`Właściwość konfiguracja jest wyświetlana na stronie właściwości konfiguracja jako **Właściwość moja konfiguracja** w kategorii.  Jeśli opcja jest zaznaczona, opis, **mój opis**, pojawia się w panelu opisu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dodawanie i usuwanie stron właściwości](../../extensibility/adding-and-removing-property-pages.md)
 - [Projekty](../../extensibility/internals/projects.md)
 - [Opis katalogu szablonu (pliki Vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)

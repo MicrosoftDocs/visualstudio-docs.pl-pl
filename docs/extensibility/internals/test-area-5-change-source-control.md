@@ -1,5 +1,7 @@
 ---
 title: 'Obszar testowy 5: zmiana kontroli źródła | Microsoft Docs'
+description: Ten obszar testu wtyczki kontroli źródła obejmuje zmianę kontroli źródła przy użyciu polecenia Zmień kontrolę źródła.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1c0df31fbecd532e6a5f7f317730cd995cd8225
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c4b0f33f0c898d4b9992acad6ed4035e350df2b
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704524"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876275"
 ---
 # <a name="test-area-5-change-source-control"></a>Obszar testowy 5: zmiana kontroli kodu źródłowego
 Ten obszar testowania wtyczki kontroli źródła obejmuje zmianę kontroli źródła za pomocą polecenia **Zmień kontrolę źródła** .

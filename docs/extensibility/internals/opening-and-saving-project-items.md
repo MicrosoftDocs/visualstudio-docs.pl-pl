@@ -1,5 +1,7 @@
 ---
 title: Otwieranie i zapisywanie elementów projektu | Microsoft Docs
+description: Poznaj różne podejścia do otwierania i zapisywania plików dla nowego typu projektu w środowisku IDE programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbb89d99e401be6bae7d8ee9be8ee33fa7574723
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 971fef7939c91bdcdea9098da530c7ecb2daf9ec
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706969"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877640"
 ---
 # <a name="opening-and-saving-project-items"></a>Otwieranie i zapisywanie elementów projektu
 Po dodaniu nowego typu projektu należy zarządzać otwieraniem i zapisywaniem plików projektów w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowanym środowisku programistycznym (IDE). W poniższych tematach omówiono różne podejścia do otwierania i zapisywania plików.
@@ -45,11 +47,11 @@ Po dodaniu nowego typu projektu należy zarządzać otwieraniem i zapisywaniem p
 
 - [Zapisywanie standardowego dokumentu](../../extensibility/internals/saving-a-standard-document.md)
 
- Zawiera szczegółowy opis sposobu, w jaki środowisko IDE obsługuje **Zapisywanie**, **Zapisywanie jako**i **zapisywanie wszystkich** poleceń dla dokumentu otwartego w standardowym edytorze.
+ Zawiera szczegółowy opis sposobu, w jaki środowisko IDE obsługuje **Zapisywanie**, **Zapisywanie jako** i **zapisywanie wszystkich** poleceń dla dokumentu otwartego w standardowym edytorze.
 
 - [Zapisywanie niestandardowego dokumentu](../../extensibility/internals/saving-a-custom-document.md)
 
- Zawiera diagram i szczegółowe wyjaśnienie, jak środowisko IDE obsługuje **Zapisywanie**, **Zapisywanie jako**i **zapisywanie wszystkich** poleceń dla dokumentów otwartych w edytorze niestandardowym.
+ Zawiera diagram i szczegółowe wyjaśnienie, jak środowisko IDE obsługuje **Zapisywanie**, **Zapisywanie jako** i **zapisywanie wszystkich** poleceń dla dokumentów otwartych w edytorze niestandardowym.
 
 - [Określanie, który edytor służy do otwierania pliku w projekcie](../../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md)
 

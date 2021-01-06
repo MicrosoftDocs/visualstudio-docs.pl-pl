@@ -1,5 +1,7 @@
 ---
 title: Podstawowe składniki modelu projektu | Microsoft Docs
+description: Ten artykuł zawiera opisy interfejsów i usług zidentyfikowanych w podstawowym modelu projektu oraz interfejsy i usługi skojarzone z obiektami.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +13,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e29a9d40531b32f127054fe02f61c72738e508e
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: c6aeb24b2aee5b0abb3e5d803004ba97725bb707
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012415"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876899"
 ---
 # <a name="project-model-core-components"></a>Podstawowe składniki modelu projektu
 Poniższe tabele rozszerzają model projektu. Tabele przedstawiają krótkie opisy interfejsów i usług identyfikowanych w modelu oraz interfejsy i usługi skojarzone z określonymi obiektami. Ponadto w tabelach szczegółowo opisano inne interfejsy, które są opcjonalne podczas tworzenia i konserwacji projektu, w zależności od wymagań określonego typu projektu.
 
- Aby uzyskać więcej informacji, zobacz [Obsługa narzędzi do przeglądania symboli](../../extensibility/internals/supporting-symbol-browsing-tools.md).
+ Aby uzyskać więcej informacji, zobacz temat [obsługa Symbol-Browsing narzędzia](../../extensibility/internals/supporting-symbol-browsing-tools.md).
 
 ### <a name="package-object"></a>Obiekt pakietu
 
@@ -99,7 +101,7 @@ Poniższe tabele rozszerzają model projektu. Tabele przedstawiają krótkie opi
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibility3>|Używane do implementowania modelu automatyzacji. W modelu projektu zwrócisz obiekt właściwości, który umożliwia utworzenie wystąpienia tego obiektu.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIHierWinClipboardHelper>|Służy do implementowania zdarzeń Schowka w obiekcie projektu w hierarchii. `SVsUIHierWinClipboardHelper` umożliwia prawidłowe obsłudze operacji wycinania, kopiowania i wklejania.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - [Lista kontrolna: Tworzenie nowych typów projektów](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Nie w kompilacji: używanie klas projektu HierUtil7 do implementowania typu projektu (C++)](/previous-versions/bb166212(v=vs.100))

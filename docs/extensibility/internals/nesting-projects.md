@@ -1,5 +1,7 @@
 ---
 title: Zagnieżdżanie projektów | Microsoft Docs
+description: Dowiedz się więcej na temat zagnieżdżania projektów, dzięki którym deweloperzy aplikacji korzystający z pakietu VSPackage mogą grupować podobne typy projektów w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 814780fa8e7e57a022a75b2e09115cfa55a1b8be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 464538d7f7be68737715cb6fd10fda4017a5556a
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707029"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876665"
 ---
 # <a name="nesting-projects"></a>Zagnieżdżanie projektów
 Deweloperzy aplikacji korporacyjnych korzystających z pakietu programu VS mogą wygodnie grupować podobne typy projektów w programie przy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] użyciu *zagnieżdżania projektów*. Na przykład projekt szablon przedsiębiorstwa używa zagnieżdżonych projektów do grupowania projektów w kategorii. Projekty fasady biznesowej, projekty interfejsu użytkownika sieci Web i tak dalej są pogrupowane w jednej kategorii.

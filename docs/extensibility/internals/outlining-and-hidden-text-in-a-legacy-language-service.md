@@ -1,5 +1,7 @@
 ---
 title: Tworzenie konspektu i tekstu ukrytego w starszej wersji usługi językowej | Microsoft Docs
+description: Ten artykuł zawiera linki do zasobów w celu zaimplementowania konspektu i tekstu ukrytego w starszej wersji usługi językowej.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1f05d42de0201a7556046d19baf55830fa62c22
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1bd0b48292a448d70b266e598df561fdff2e8ab4
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706823"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877406"
 ---
 # <a name="outlining-and-hidden-text-in-a-legacy-language-service"></a>Zwijanie i tekst ukryty w starszej wersji usługi językowej
 Konspekt sprawia, że można zwinąć sekwencję wierszy tekstu w jeden wiersz. Na przykład w języku C++ wszystkie metody można zwinąć do pojedynczego wiersza, pokazując tylko sygnaturę metody. Tekst ukryty to sekwencja wierszy tekstu, które mogą być wyświetlane lub ukryte.

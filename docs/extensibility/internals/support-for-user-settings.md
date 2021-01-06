@@ -1,5 +1,7 @@
 ---
 title: Obsługa ustawień użytkownika | Microsoft Docs
+description: Dowiedz się, jak włączyć trwałość kategorii ustawień przy użyciu interfejsów API ustawień w zestawie SDK programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02bb2450196de76917e9cffc2f5f5acc6c8ee7b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b9f6ee52e9ba87eb2f570a6e388dc98c050989c9
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704788"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876524"
 ---
 # <a name="support-for-user-settings"></a>Pomoc techniczna dotycząca ustawień użytkownika
 Pakietu VSPackage może definiować jedną lub więcej kategorii ustawień, które są grupami zmiennych stanu, które są zachowywane, gdy użytkownik wybierze polecenie **Importuj/Eksportuj ustawienia** w menu **Narzędzia** . Aby włączyć tę trwałość, Użyj ustawień API w [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] .
@@ -34,7 +36,7 @@ Pakietu VSPackage może definiować jedną lub więcej kategorii ustawień, któ
  Punkty ustawień niestandardowych są tworzone we wpisie rejestru w następującej lokalizacji: HKLM\Software\Microsoft\VisualStudio \\ *\<Version>* \UserSettings \\ `<CSPName>` , gdzie `<CSPName>` to nazwa punktu ustawień niestandardowych, który obsługuje pakietu VSPackage i *\<Version>* jest wersją programu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , na przykład 8,0.
 
 > [!NOTE]
-> Ścieżka katalogu głównego HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio \\ *\<Version>* może być zastąpiona alternatywnym elementem głównym, gdy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] jest inicjowane zintegrowane środowisko programistyczne (IDE). Aby uzyskać więcej informacji, zobacz [przełączniki wiersza polecenia](../../extensibility/command-line-switches-visual-studio-sdk.md).
+> Ścieżka katalogu głównego HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<Version>* może zostać zastąpiona alternatywnym elementem głównym, gdy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] jest inicjowane zintegrowane środowisko programistyczne (IDE). Aby uzyskać więcej informacji, zobacz [przełączniki wiersza polecenia](../../extensibility/command-line-switches-visual-studio-sdk.md).
 
  Poniżej przedstawiono strukturę wpisu rejestru:
 

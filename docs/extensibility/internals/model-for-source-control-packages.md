@@ -1,5 +1,7 @@
 ---
 title: Model dla pakietów kontroli źródła | Microsoft Docs
+description: Ten model reprezentuje implementację kontroli źródła. W tym artykule przedstawiono nazwy klas, aby ułatwić sprawdzenie, jak jest przeprowadzana kontrola źródła.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46845be1bc22a67d6703af12933945bdfcfa7f4b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9ece2a7df1aeb2ec44f7b21075d2945a93d51838
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707069"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876692"
 ---
 # <a name="model-for-source-control-packages"></a>Model pakietów kontroli kodu źródłowego
 Poniższy model reprezentuje przykład implementacji kontroli źródła. W modelu widoczne są interfejsy, które należy zaimplementować, oraz usługi środowiska, które należy wywołać. Podobnie jak wszystkie usługi, w rzeczywistości wywołujemy metody określonego interfejsu, które uzyskuje się w ramach usługi. Nazwy klas są identyfikowane, aby ułatwić sprawdzenie, jak jest przeprowadzana kontrola źródła.

@@ -1,5 +1,7 @@
 ---
 title: Funkcje pakietu VSPackage kontroli źródła | Microsoft Docs
+description: Dowiedz się więcej o funkcjach pakietu VSPackage kontroli źródła, w tym informacje o rejestracji/wyborze oraz o niektórych funkcjach głównych związanych z kontrolą źródła.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a01b9d8fbf5f8d0645b5245d21b05aba9e7dacea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8dd887488adc5813ad51c9fa2a25648e25ab4876
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705015"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876223"
 ---
 # <a name="source-control-vspackage-features"></a>Funkcje pakietu VSPackage kontroli kodu źródłowego
-W tej sekcji opisano różne funkcje kontroli źródła pakietu VSPackage. Zawiera on szczegółowe informacje dotyczące rejestracji i wyboru dla tego pakietu VSPackage oraz omówiono trzy główne funkcje związane z kontrolą źródła: obsługa zdarzeń zapytań edycji zapytań — zapisywanie (QEQS), zastąpienie symboli i niestandardowy interfejs użytkownika (UI) dla funkcji kontroli źródła.
+W tej sekcji opisano różne funkcje kontroli źródła pakietu VSPackage. Przedstawia ona szczegóły rejestracji i wyboru dla tego pakietu VSPackage oraz omawia trzy główne funkcje związane z kontrolą źródła: obsługa zdarzeń Query-Edit Query-Save (QEQS), zastąpienie symboli i niestandardowy interfejs użytkownika (UI) dla funkcji kontroli źródła.
 
 ## <a name="in-this-section"></a>W tej sekcji
 - [Rejestracja i wybór](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)
@@ -27,7 +29,7 @@ W tej sekcji opisano różne funkcje kontroli źródła pakietu VSPackage. Zawie
 
 - [Edytowanie i zapisywanie zapytania](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)
 
- W tym artykule wyjaśniono rolę zapytania — edytowanie zdarzeń i sposobu ich obsługi przez pakietu VSPackage kontroli źródła.
+ Wyjaśnia rolę Query-Edit zdarzeń Query-Save i sposobu ich obsługi przez pakietu VSPackage kontroli źródła.
 
 - [Kontrola symboli](../../extensibility/internals/glyph-control-source-control-vspackage.md)
 

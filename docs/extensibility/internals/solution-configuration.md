@@ -1,5 +1,7 @@
 ---
 title: Konfiguracja rozwiązania | Microsoft Docs
+description: Dowiedz się, jak zaimplementować konfiguracje rozwiązań obsługiwane przez typ projektu, które kierują zachowaniem klawisza Start (F5) i poleceń kompilacji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c96b73747ef8b136a74a7256cde7fef8d1c42de
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ad298a44eedea0681a554add74bd67ed22cad41
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705375"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876031"
 ---
 # <a name="solution-configuration"></a>Konfiguracja rozwiązania
 Konfiguracje rozwiązań przechowują właściwości na poziomie rozwiązania. Kierują one zachowanie klawisza **Start** (F5) i poleceń **kompilacji** . Domyślnie te polecenia kompilują i uruchamiają konfigurację debugowania. Oba polecenia są wykonywane w kontekście konfiguracji rozwiązania. Oznacza to, że użytkownik może oczekiwać, że od F5 rozpocznie się i skompiluje dowolne aktywne rozwiązanie za pośrednictwem ustawień. Środowisko jest przeznaczone do optymalizowania rozwiązań, a nie projektów, gdy chodzi o Kompilowanie i uruchamianie.
@@ -27,11 +29,11 @@ Konfiguracje rozwiązań przechowują właściwości na poziomie rozwiązania. K
 
  Oto jak można zaimplementować konfiguracje rozwiązań obsługiwane przez typ projektu:
 
-- Projekt
+- Project
 
    Wyświetla nazwy projektów znalezionych w bieżącym rozwiązaniu.
 
-- Konfiguracja
+- Konfigurowanie
 
    Aby zapewnić listę konfiguracji obsługiwanych przez typ projektu i wyświetlane na stronach właściwości, zaimplementuj <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2> .
 

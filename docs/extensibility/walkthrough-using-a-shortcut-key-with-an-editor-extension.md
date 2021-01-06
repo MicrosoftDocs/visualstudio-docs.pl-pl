@@ -1,5 +1,6 @@
 ---
 title: Używanie klawisza skrótu z rozszerzeniem edytora
+description: Dowiedz się, jak dodać zakończenia wyświetlania widoku do widoku tekstu przy użyciu klawisza skrótu. Ten przewodnik jest oparty na szablonie edytora autodefiniowania okienka ekranu.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78bbf84f6b11451c8b1a09e6883ba76b19cec757
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 4c939328e1ef8e517821db8622e7383cab90c384
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037461"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875846"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Przewodnik: używanie klawisza skrótu z rozszerzeniem edytora
 Możesz odpowiedzieć na skróty klawiaturowe w rozszerzeniu edytora. W poniższym przewodniku przedstawiono sposób dodawania zakończenia wyświetlania widoku do widoku tekstu przy użyciu klawisza skrótu. Ten przewodnik jest oparty na szablonie edytora autodefiniowania okienka ekranu, który umożliwia dodanie definiowania układu przy użyciu znaku +.
@@ -78,7 +79,7 @@ Przed zainstalowaniem programu Visual Studio 2017 w wersji 15,6 jedynym sposobem
 3. Klasa o nazwie KeyBindingCommandFilter powinna dziedziczyć po elemencie <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> .
 
     ```csharp
-    internal class KeyBindingCommandFilter : IOleCommandTarget
+    internal class KeyBindingCommandFilter : IOleCommandTarget
     ```
 
 4. Dodaj pola prywatne dla widoku tekstu, następne polecenie w łańcuchu poleceń i flagę, aby wskazać, czy filtr poleceń został już dodany.
@@ -86,8 +87,8 @@ Przed zainstalowaniem programu Visual Studio 2017 w wersji 15,6 jedynym sposobem
     ```csharp
     private IWpfTextView m_textView;
     internal IOleCommandTarget m_nextTarget;
-    internal bool m_added;
-    internal bool m_adorned;
+    internal bool m_added;
+    internal bool m_adorned;
     ```
 
 5. Dodaj konstruktora, który ustawia widok tekstu.
@@ -198,7 +199,7 @@ Najpierw zaktualizuj odwołania NuGet projektu, aby odwołać się do najnowszeg
 
 1. Kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Zarządzaj pakietami NuGet**.
 
-2. W **Menedżerze pakietów NuGet**wybierz kartę **aktualizacje** , zaznacz pole wyboru **zaznacz wszystkie pakiety** , a następnie wybierz pozycję **Aktualizuj**.
+2. W **Menedżerze pakietów NuGet** wybierz kartę **aktualizacje** , zaznacz pole wyboru **zaznacz wszystkie pakiety** , a następnie wybierz pozycję **Aktualizuj**.
 
 Program obsługi poleceń jest implementacją <xref:Microsoft.VisualStudio.Commanding.ICommandHandler%601> , która obsługuje polecenie, tworząc Tworzenie modułu definiowania układu.
 

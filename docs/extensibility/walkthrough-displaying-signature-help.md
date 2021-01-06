@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: Wyświetlanie pomocy dotyczącej podpisu | Microsoft Docs'
+description: Dowiedz się, jak wyświetlać pomoc dotyczącą podpisu dla typu zawartości tekstowej przy użyciu tego przewodnika. Pomoc dotycząca podpisu Wyświetla podpis metody w etykietce narzędzia.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b88c8555904bb31c2804579459ad3096d640b0c2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be324ab48d42e859678ccf01d8c75faae6cea381
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904820"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876249"
 ---
 # <a name="walkthrough-display-signature-help"></a>Przewodnik: Wyświetlanie pomocy dotyczącej podpisu
 Pomoc dotycząca podpisu (znana także jako *Informacje o parametrach*) wyświetla podpis metody w etykietce narzędzia, gdy użytkownik wpisze znak początkowy listy parametrów (zazwyczaj nawias otwierający). Jako parametr i separator parametrów (zwykle przecinki) są wpisywane, etykietka narzędzia jest aktualizowana, aby pokazać następny parametr pogrubioną czcionką. Możesz zdefiniować pomoc dotyczącą podpisu w następujący sposób: w kontekście usługi językowej Zdefiniuj własne rozszerzenie nazwy pliku i typ zawartości oraz Wyświetl pomoc dotyczącą podpisu tylko dla tego typu lub Wyświetl pomoc dotyczącą podpisu dla istniejącego typu zawartości (na przykład "tekst"). W tym instruktażu pokazano, jak wyświetlić pomoc dotyczącą podpisu dla typu zawartości "text".

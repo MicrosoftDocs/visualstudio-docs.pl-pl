@@ -1,5 +1,7 @@
 ---
 title: Udostępnione usługi (pakietu VSPackage kontroli źródła) | Microsoft Docs
+description: Dowiedz się, w jaki sposób pakietów VSPackage udostępniać funkcje za pomocą usług, w tym współpracy ze środowiskiem IDE programu Visual Studio i jej pakietów VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f08ebe49756b442ef474ac2a032a72894f6bec15
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4a97ed69d37330132196f0334f5684c0704c5fd2
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705408"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876080"
 ---
 # <a name="services-provided-source-control-vspackage"></a>Świadczone usługi (pakiet VSPackage kontroli kodu źródłowego)
 Usługi są podstawowym mechanizmem, za pomocą którego funkcje są współużytkowane przez pakietów VSPackage oraz między zintegrowanym środowiskiem programistycznym (IDE) programu Visual Studio i zainstalowaną pakietów VSPackage. Aby uzyskać szczegółowy opis usług i ich znaczenie w środowisku IDE programu Visual Studio, zobacz[Używanie i świadczenie usług](../../extensibility/using-and-providing-services.md).

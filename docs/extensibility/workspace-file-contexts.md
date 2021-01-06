@@ -1,5 +1,7 @@
 ---
 title: Konteksty pliku obszaru roboczego w programie Visual Studio | Microsoft Docs
+description: Dowiedz się więcej o dostawcach kontekstu plików implementujących interfejs IFileContextProvider w celu obsługi szczegółowych informacji w obszarach roboczych otwartych folderów.
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2018
 ms.topic: conceptual
 author: vukelich
@@ -7,12 +9,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36f986db6f2c7b483b46060e1f514acc8dd9e758
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 271b05d78123136d47cb618e8ed38cea64b7beac
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62952818"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877068"
 ---
 # <a name="workspace-file-contexts"></a>Konteksty pliku obszaru roboczego
 

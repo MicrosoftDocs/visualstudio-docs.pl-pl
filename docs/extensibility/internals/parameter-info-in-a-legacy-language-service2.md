@@ -1,5 +1,7 @@
 ---
 title: Informacje o parametrach w starszej wersji językowej Językowej2 | Microsoft Docs
+description: Dowiedz się, jak obsłużyć operację informacji o parametrach IntelliSense służącą do wyświetlania sygnatury metody jako metody wpisanej w starszej wersji usługi językowej.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dff6e871320d0727ed2fbec4188e8f7af2e5c5fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc239d5b0d580d420683c6940ac2bbd5198335d7
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88237961"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875950"
 ---
 # <a name="parameter-info-in-a-legacy-language-service-2"></a>Informacje o parametrach w starszej wersji usługi językowej 2
 Informacje o parametrach IntelliSense to etykietka narzędzia, która wyświetla podpis metody, gdy użytkownik wpisze znak początkowy listy parametrów (zwykle jest to otwarty nawias) dla listy parametrów metody. Gdy jest wprowadzany każdy parametr, a separator parametru (zwykle przecinek) jest wpisywany, etykietka narzędzia jest aktualizowana, aby pokazać następny parametr pogrubioną czcionką.

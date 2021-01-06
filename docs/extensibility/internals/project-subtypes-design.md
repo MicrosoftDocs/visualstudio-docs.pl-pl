@@ -1,5 +1,7 @@
 ---
 title: Projekt podtypów projektu | Microsoft Docs
+description: Dowiedz się, jak podtypy projektu umożliwiają pakietów VSPackage poszerzanie projektów opartych na Microsoft Build Engine (MSBuild).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b939d197bfd7e58b555ca7698f08643e3d38ef2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9342d8f9f045eec2036c65a3ed2d823dfb4a7e42
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706449"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877432"
 ---
 # <a name="project-subtypes-design"></a>Projektowanie podtypów projektów
 

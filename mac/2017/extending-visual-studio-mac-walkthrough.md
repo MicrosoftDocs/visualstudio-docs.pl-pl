@@ -1,22 +1,24 @@
 ---
 title: Rozszerzanie przewodnika Visual Studio dla komputerów Mac
+description: Dowiedz się, jak utworzyć prosty pakiet rozszerzeń dla Visual Studio dla komputerów Mac, który tworzy nowe polecenie w menu Edycja.
+ms.custom: SEO-VS-2020
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: 7D00512B-9688-4D8D-87A7-F04F207E3D02
-ms.openlocfilehash: c5b3b759b32acfc86b4b584b3f3d52298c138a2c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9274f86e8ade5b49b5db0c7f4773cf6fd57ea353
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74985025"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876197"
 ---
 # <a name="extending-visual-studio-for-mac-walkthrough"></a>Rozszerzanie przewodnika Visual Studio dla komputerów Mac
 
 Ten temat przeprowadzi Cię przez proces tworzenia [prostego pakietu rozszerzenia](https://github.com/mjh4/AddIns/tree/master/DateInserter). Pakiet rozszerzenia utworzy nowe polecenie w menu edycji Visual Studio dla komputerów Mac, które umożliwi użytkownikowi wstawienie bieżącej daty i godziny do otwartego dokumentu tekstowego.
 
-W tym przykładzie jest użyty program dodatki. Producent dodatku tworzy nowy szablon projektu i wypełnia go przy użyciu plików wymaganych dla naszego niestandardowego pakietu rozszerzenia.
+W tym przykładzie jest użyty program dodatki. Add-In Maker tworzy nowy szablon projektu i wypełnia go przy użyciu wymaganych plików dla naszego niestandardowego pakietu rozszerzenia.
 
 1. Zacznij od uruchomienia Visual Studio dla komputerów Mac, jeśli nie jest jeszcze otwarty:
 
@@ -32,7 +34,7 @@ W tym przykładzie jest użyty program dodatki. Producent dodatku tworzy nowy sz
 
 4. Teraz, gdy jest zainstalowany program addin Maker, możesz rozpocząć tworzenie pakietu rozszerzenia. Zacznij od utworzenia nowego rozwiązania.
 
-5. W **oknie dialogowym Nowe rozwiązanie**wybierz kolejno pozycje **inne > różne > ogólne > Xamarin Studio addin > szablon C#** i na poniższym ekranie Nazwij nowe rozwiązanie `DateInserter` :
+5. W **oknie dialogowym Nowe rozwiązanie** wybierz kolejno pozycje **inne > różne > ogólne > Xamarin Studio addin > szablon C#** i na poniższym ekranie Nazwij nowe rozwiązanie `DateInserter` :
 
    ![Tworzenie nowego rozwiązania](media/extending-visual-studio-mac-addin7New.png)
 
@@ -57,7 +59,7 @@ W tym przykładzie jest użyty program dodatki. Producent dodatku tworzy nowy sz
       </ExtensionModel>
    ```
 
-8. Teraz musisz skonfigurować pliki, które będą ostatecznie obsługiwać Wstawianie daty i godziny do edytora tekstu. Kliknij prawym przyciskiem myszy węzeł projektu i Dodaj nowy plik. Wybierz pozycję **ogólne > pustą klasę** i Nadaj nowemu plikowi nazwę *InsertDateHandler*:
+8. Teraz musisz skonfigurować pliki, które będą ostatecznie obsługiwać Wstawianie daty i godziny do edytora tekstu. Right-Click w węźle projektu i Dodaj nowy plik. Wybierz pozycję **ogólne > pustą klasę** i Nadaj nowemu plikowi nazwę *InsertDateHandler*:
 
    ![Wstaw procedurę obsługi daty](media/extending-visual-studio-mac-addin9.png)
 

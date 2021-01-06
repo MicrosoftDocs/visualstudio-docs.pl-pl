@@ -1,5 +1,7 @@
 ---
 title: Obsługa fragmentów kodu w starszej wersji usługi językowej | Microsoft Docs
+description: Dowiedz się, w jaki sposób Starsza wersja usługi językowej obsługuje fragmenty kodu. Fragment kodu jest fragmentem kodu, który jest wstawiany do pliku źródłowego.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad871eb73341f6ab87229687e2a6df898ffda32d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 781633a995027ee9938a0c579af32373c06207c2
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704912"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876613"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Obsługa fragmentów kodu w starszej wersji usługi językowej
 Fragment kodu jest fragmentem kodu, który jest wstawiany do pliku źródłowego. Sam fragment kodu jest szablonem opartym na formacie XML zawierającym zestaw pól. Te pola są wyróżniane po wstawieniu fragmentu i mogą mieć różne wartości w zależności od kontekstu, w którym wstawiany jest fragment kodu. Natychmiast po wstawieniu fragmentu, usługa języka może sformatować fragment kodu.

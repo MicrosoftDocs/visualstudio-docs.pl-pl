@@ -1,5 +1,7 @@
 ---
 title: Co &apos; nowego w zestawie SDK programu Visual Studio 2017 | Microsoft Docs
+description: Zestaw Visual Studio SDK zawiera nowe i zaktualizowane funkcje programu Visual Studio 2017, w tym zaktualizowany format VSIX w wersji 3.
+ms.custom: SEO-VS-2020
 ms.date: 10/31/2017
 ms.topic: conceptual
 ms.assetid: 9efcf0a3-dbde-4cab-8ed3-425826a48b2e
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6fb5b81341f8184d713755b3b934fbae4c8031b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 79e9df9a728ab9892694efa6489a8ea1fd675700
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88711602"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877630"
 ---
 # <a name="what39s-new-in-the-visual-studio-2017-sdk"></a>Co nowego w&#39;s w zestawie SDK programu Visual Studio 2017
 

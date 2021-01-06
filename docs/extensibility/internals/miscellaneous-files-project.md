@@ -1,5 +1,7 @@
 ---
 title: Projekt różnych plików | Microsoft Docs
+description: Dowiedz się więcej o dwóch typach edytorów, których można użyć do otwierania plików w projekcie programu Visual Studio i roli projektu w celu określenia edytora, który ma być używany.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,19 +15,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95cc1312fb7b381e1e20df834698480295fadcc8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a963b4d452a5d8ea9e0556b232f488e93dc0a29c
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707098"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876782"
 ---
 # <a name="miscellaneous-files-project"></a>Projekt Różne pliki
 Gdy użytkownik otwiera elementy projektu, IDE przypisuje do projektu różne pliki wszystkie elementy, które nie są członkami żadnych projektów w rozwiązaniu.
 
  Projekty odgrywają znaczącą rolę w ustaleniu, który Edytor jest używany, gdy użytkownik otwiera element projektu. Projekt można zaprojektować, aby otworzyć niektóre pliki przy użyciu edytora specyficznego dla projektu lub standardowego edytora.
 
- Edytor specyficzny dla projektu zwykle wymaga, aby użytkownik miał specjalną wiedzę lub użyć specjalnych interfejsów z projektu. Aby uzyskać więcej informacji, zobacz [jak: otwieranie edytorów specyficznych dla projektu](../../extensibility/how-to-open-project-specific-editors.md).
+ Edytor specyficzny dla projektu zwykle wymaga, aby użytkownik miał specjalną wiedzę lub użyć specjalnych interfejsów z projektu. Aby uzyskać więcej informacji, zobacz [jak: otwieranie edytorów Project-Specific](../../extensibility/how-to-open-project-specific-editors.md).
 
  Standardowy Edytor może otworzyć dowolny plik o określonym rozszerzeniu w dowolnym projekcie. Użytkownik może dostosować niektóre standardowe edytory, takie jak [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Edytor tekstu, dla projektów, ale zachowują swój publiczny znak. Standardowe edytory są tworzone przy użyciu <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> metody.
 

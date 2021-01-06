@@ -1,5 +1,7 @@
 ---
 title: Interfejs użytkownika właściwości projektu | Microsoft Docs
+description: Dowiedz się, jak podtypy projektu mogą modyfikować okno dialogowe strony właściwości projektu, zgodnie z danymi projektu podstawowego.
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f15895a7dab5c57d8312787b1276acac89c28796
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 2c9bba8b163b7fd21cfa829bb26e06cf37b887bd
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011856"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877393"
 ---
 # <a name="project-property-user-interface"></a>Interfejs użytkownika właściwości projektu
 
@@ -57,7 +59,7 @@ Ponieważ podtyp projektu agreguje <xref:Microsoft.VisualStudio.Shell.Interop.IV
 
 Nowe strony właściwości dodane przez podtyp projektu są przekazywane do obiektu przeglądania konfiguracji projektu z podstawowej implementacji projektu. Ten obiekt przeglądania konfiguracji projektu obsługuje rozszerzalności automatyzacji. Aby uzyskać więcej informacji na temat AutomationExtenders, zobacz [implementowanie i korzystanie z rozszerzeń automatyzacji](/previous-versions/0y92k2w2(v=vs.140)). Strony właściwości zaimplementowane przez wywołanie podtypu projektu <xref:EnvDTE.Project.Extender%2A> w celu pobrania własnego obiektu przeglądania konfiguracji podtypu projektu, który rozszerza obiekt przeglądania konfiguracji projektu podstawowego.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - <xref:EnvDTE.IFilterProperties>
 - [Okno dialogowe strony właściwości](/previous-versions/visualstudio/visual-studio-2010/as5chysf(v=vs.100))
