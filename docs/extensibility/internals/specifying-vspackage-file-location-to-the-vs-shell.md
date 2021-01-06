@@ -1,5 +1,7 @@
 ---
 title: Określanie lokalizacji pliku pakietu VSPackage w usłudze VS Shell | Microsoft Docs
+description: Dowiedz się, jak można sprawić, aby program Visual Studio mógł zlokalizować bibliotekę DLL zestawu, aby załadować pakietu VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f112da4e79bff06d12472f0af7a3fe47b2f25da4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e59bea4894d6b0014542ea2a32bf6c73bc8d797c
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704975"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877861"
 ---
 # <a name="specifying-vspackage-file-location-to-the-vs-shell"></a>Określanie lokalizacji pliku pakietu VSPackage dla powłoki VS Shell
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] musi być w stanie zlokalizować bibliotekę DLL zestawu, aby załadować pakietu VSPackage. Można go zlokalizować na różne sposoby, zgodnie z opisem w poniższej tabeli.

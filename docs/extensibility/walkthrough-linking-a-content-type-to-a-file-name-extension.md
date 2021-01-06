@@ -1,5 +1,6 @@
 ---
 title: Łączenie typu zawartości z rozszerzeniem nazwy pliku
+description: Dowiedz się, jak połączyć własny typ zawartości z rozszerzeniem nazwy pliku przy użyciu edytora Managed Extensibility Framework rozszerzenia w tym instruktażu.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d59ae0b5eb2411ff9e41466e8b87dbe20b835ba
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 478ecc6c2238703d1cacc8e649072d669a41c590
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90034666"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877913"
 ---
 # <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>Przewodnik: łączenie typu zawartości z rozszerzeniem nazwy pliku
 Można zdefiniować własny typ zawartości i połączyć z nim rozszerzenie nazwy pliku przy użyciu rozszerzeń edytora Managed Extensibility Framework (MEF). W niektórych przypadkach rozszerzenie nazwy pliku jest już zdefiniowane przez usługę języka. Jednak aby użyć go z MEF, należy nadal połączyć go z typem zawartości.
@@ -102,5 +103,5 @@ Można zdefiniować własny typ zawartości i połączyć z nim rozszerzenie naz
     [ContentType("hid")]
     ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Punkty rozszerzenia usługi językowej i edytora](../extensibility/language-service-and-editor-extension-points.md)

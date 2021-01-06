@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: wyświetlanie etykietek narzędzi sekcji szybkich informacji | Microsoft Docs'
+description: Dowiedz się, jak wyświetlać sekcji szybkich informacji dla zawartości tekstowej przy użyciu tego przewodnika. Sekcji szybkich informacji wyświetla sygnatury metod i opisy dla nazwy metody.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.workload:
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 0eb70e5d39708ffd532fe39d6d597043621158d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 34e1bb2c92cd387e979fdaa5746a34ea8d3995fc
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904832"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877939"
 ---
 # <a name="walkthrough-display-quickinfo-tooltips"></a>Przewodnik: wyświetlanie etykietek narzędzi sekcji szybkich informacji
 Sekcji szybkich informacji to funkcja IntelliSense, która wyświetla sygnatury i opisy metod, gdy użytkownik przesuwa wskaźnik myszy nad nazwą metody. W celu zaimplementowania funkcji opartych na języku, takich jak sekcji szybkich informacji, można zdefiniować identyfikatory, dla których mają zostać wprowadzone opisy sekcji szybkich informacji, a następnie utworzyć etykietkę narzędzia, w której ma zostać wyświetlona zawartość. Można zdefiniować sekcji szybkich informacji w kontekście usługi językowej lub zdefiniować własne rozszerzenie nazwy pliku i typ zawartości oraz wyświetlić sekcji szybkich informacji dla danego typu. można też wyświetlić sekcji szybkich informacji dla istniejącego typu zawartości (na przykład "tekst"). W tym instruktażu pokazano, jak wyświetlić sekcji szybkich informacji dla typu zawartości "text".

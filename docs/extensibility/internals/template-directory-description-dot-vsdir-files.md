@@ -1,5 +1,7 @@
 ---
 title: Opis katalogu szablonów (. VSDIR) | Microsoft Docs
+description: Dowiedz się, jak plik opisu katalogu szablonów umożliwia programowi Visual Studio IDE Wyświetlanie folderów, plików VSZ i szablonów skojarzonych z projektem.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16ba609d5b05d565a12b38bd19e9a777851ced5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: edc4b4bcfe1ac1a85524517ba467e207a792e3cd
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704686"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877731"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Opis katalogu szablonu (pliki Vsdir)
 Plik opisu katalogu szablonu (. vsdir) to plik tekstowy, który umożliwia zintegrowane środowisko programistyczne (IDE) do wyświetlania folderów, plików kreatora. vsz i plików szablonów, które są skojarzone z projektem w oknach dialogowych. Zawartość zawiera jeden rekord na plik lub folder. Wszystkie pliki. vsdir w lokalizacji, do której się odwołuje, są scalane, chociaż tylko jeden plik. vsdir jest ogólnie dostarczany, aby opisać wiele folderów, kreatorów lub plików szablonów.

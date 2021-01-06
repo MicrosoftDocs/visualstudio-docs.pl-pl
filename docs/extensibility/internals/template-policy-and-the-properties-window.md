@@ -1,5 +1,7 @@
 ---
 title: Zasady szablonów i okno właściwości | Microsoft Docs
+description: Informacje na temat używania zasad szablonu do ustawiania wartości domyślnych właściwości, ukrywania właściwości i dodawania właściwości w okno Właściwości.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08ed6f416441d06767661e63b5e32454dbe07f93
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 105a90699689ff6eab6ea5bdfa3d4037e700ecb5
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704664"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877718"
 ---
 # <a name="template-policy-and-the-properties-window"></a>Szablon zasad i okno właściwości
 Gdy projekt jest zawarty w projekcie szablonu przedsiębiorstwa, ten projekt szablonu przedsiębiorstwa może wymusić zasady. Zasady szablonów staną się systemem ograniczającym, który może służyć do ustawiania wartości domyślnych właściwości, ukrywania właściwości, dodawania właściwości i tak dalej.

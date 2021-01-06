@@ -1,5 +1,7 @@
 ---
 title: Kolorowanie składni w starszej wersji usługi językowej | Microsoft Docs
+description: Dowiedz się, jak obsługiwać kolorowanie składni w starszej wersji usługi językowej, dostarczając Analizator lub skaner, który może identyfikować typy elementów leksykalnych lub tokenów.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02723a09254255b98291cb921ae5ec091d8b9859
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c51885e593fabffab80d11c930100f3cc719dff8
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704704"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877757"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>Kolorowanie składni w starszej wersji usługi językowej
 Kolorowanie składni to funkcja, która powoduje, że różne elementy języka programowania będą wyświetlane w pliku źródłowym w różnych kolorach i stylach. Aby obsługiwać tę funkcję, należy dostarczyć Analizator lub skaner, który może identyfikować typy elementów leksykalnych lub tokenów w pliku. Wiele języków rozróżnia słowa kluczowe, ograniczniki (takie jak nawiasy lub nawiasy klamrowe) i komentarze poprzez kolorowanie ich na różne sposoby.

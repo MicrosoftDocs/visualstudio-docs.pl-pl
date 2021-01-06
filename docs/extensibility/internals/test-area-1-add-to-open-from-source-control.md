@@ -1,5 +1,7 @@
 ---
-title: 'Obszar testowy 1: Dodaj do-Otwórz z kontroli źródła | Microsoft Docs'
+title: 'Obszar testowy 1: Dodawanie To-Open z kontroli źródła | Microsoft Docs'
+description: Ten obszar testowania wtyczki kontroli źródła obejmuje umieszczanie rozwiązań lub projektów pod kontrolą źródła oraz pobieranie ich z kontroli źródła.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,20 +13,20 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ac7b8e5a60fe25ac22272cc28fc3ed6f903b058
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 608d3489f657cf38d310e67a17bdd48a529de3e5
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704680"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877744"
 ---
-# <a name="test-area-1-add-toopen-from-source-control"></a>Obszar testowy 1: Dodaj do lub Otwórz z kontroli źródła
+# <a name="test-area-1-add-toopen-from-source-control"></a>Obszar testowy 1: dodawanie do kontroli kodu źródłowego i otwieranie z poziomu kontroli kodu źródłowego
 Ten obszar testowania wtyczki kontroli źródła obejmuje umieszczanie rozwiązań lub projektów pod kontrolą źródła oraz pobieranie ich z kontroli źródła.
 
 ## <a name="command-menu-access"></a>Dostęp do menu poleceń
  Następujące [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ścieżki menu zintegrowanego środowiska deweloperskiego są używane w przypadkach testowych:
 
-- W przypadku programu [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] Otwórz z kontroli źródła: **plik**, **otwarte**, **Project** / **rozwiązanie**projektu; Znajdź [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] lokalizację.
+- W przypadku programu [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] Otwórz z kontroli źródła: **plik**, **otwarte**,  / **rozwiązanie** projektu; Znajdź [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] lokalizację.
 
 - W przypadku innych wtyczek kontroli źródła otwórz z kontroli źródła: **plik**, **Kontrola źródła**, **Otwórz z kontroli źródła**.
 

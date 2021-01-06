@@ -1,5 +1,7 @@
 ---
 title: Wyświetlanie i ukrywanie grup rejestrów | Microsoft Docs
+description: Okno rejestry, które jest dostępne, jeśli jest włączone debugowanie na poziomie adresu, organizuje rejestry w grupach. Dowiedz się, jak ustawić wyświetlanie grup.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a75af7d7ef279fdd3ca82ea9dced941106f0275
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: c14d325d417606c6945d51d99461d34ccd9a4bc8
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852364"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903041"
 ---
 # <a name="how-to-display-and-hide-register-groups-c-c-visual-basic-f"></a>Instrukcje: wyświetlanie i ukrywanie grup rejestrów (C#, C++, Visual Basic, F #)
 
@@ -43,6 +45,6 @@ Aby zmniejszyć bałagan, okna **rejestry** organizują rejestry w grupy. Jeśli
 
      Grupy rejestrów, które nie są obsługiwane przez debugowany sprzęt, są wyłączone w menu skrótów, dlatego nie można ich wybrać.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Porady: korzystanie z okna rejestrów](../debugger/how-to-use-the-registers-window.md)

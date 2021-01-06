@@ -1,5 +1,7 @@
 ---
 title: Wyświetl właściwości wątku | Microsoft Docs
+description: Widok wątków Wyświetla drzewo wszystkich aktywnych wątków w systemie. Dowiedz się, jak wyświetlić właściwości wątku, który pojawia się w widoku wątki.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: acc57df5258675be42473c502a8d31d1a73e8c00
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 531b76511d4456f8491e1498c93a9d62ebf0b026
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852312"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903249"
 ---
 # <a name="how-to-display-thread-properties"></a>Porady: wyświetlanie właściwości wątku
 Aby dowiedzieć się więcej o wątku wymienionym w [widoku wątki](../debugger/threads-view.md), użyj [okna dialogowego Właściwości wątku](../debugger/thread-properties-dialog-box.md).

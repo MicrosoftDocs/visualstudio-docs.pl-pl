@@ -1,5 +1,7 @@
 ---
 title: Makra raportowania | Microsoft Docs
+description: Dowiedz się więcej na temat makr debugowania _RPTn i _RPTFn określonych w CRTDBG. H i informacje o tworzeniu własnych makr debugowania.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -22,20 +24,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2129db98293cef678527fb331992c6c5960d8f9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1920b4eddcbffa5cd51d548ade9af3a3a2f208d0
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72731388"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903795"
 ---
 # <a name="macros-for-reporting"></a>Makra raportowania
-Na potrzeby debugowania można użyć makr **_RPTn** i **_RPTFN** zdefiniowanych w CRTDBG. H, aby zastąpić użycie `printf` instrukcji. Nie musisz zamykać ich w **#ifdef**s, ponieważ nie jest on automatycznie znikany w kompilacji wydania, gdy **_DEBUG** nie jest zdefiniowana.
+Na potrzeby debugowania można użyć makr **_RPTn** i **_RPTFN** zdefiniowanych w CRTDBG. H, aby zastąpić użycie `printf` instrukcji. Nie musisz zamykać ich w **#ifdef** s, ponieważ nie jest on automatycznie znikany w kompilacji wydania, gdy **_DEBUG** nie jest zdefiniowana.
 
 |Makro|Opis|
 |-----------|-----------------|
-|**_RPT0**, **_RPT1**, **_RPT2**, **_RPT3**, **_RPT4**|Wyprowadza ciąg komunikatu i zero do czterech argumentów. W przypadku _RPT1 przez **_RPT4**ciąg komunikatu służy jako ciąg formatowania printf dla argumentów.|
-|**_RPTF0**, **_RPTF1**, **_RPTF2** **_RPTF4**|Analogicznie jak **_RPTn**, ale te makra również wyprowadzają nazwę pliku i numer wiersza, w którym znajduje się makro.|
+|**_RPT0**, **_RPT1**, **_RPT2**, **_RPT3**, **_RPT4**|Wyprowadza ciąg komunikatu i zero do czterech argumentów. W przypadku **_RPT1** przez **_RPT4** ciąg komunikatu służy jako ciąg formatowania printf dla argumentów.|
+|**_RPTF0**, **_RPTF1**, **_RPTF2**, **_RPTF3**, **_RPTF4**|Analogicznie jak **_RPTn**, ale te makra również wyprowadzają nazwę pliku i numer wiersza, w którym znajduje się makro.|
 
  Rozpatrzmy następujący przykład:
 
@@ -80,4 +82,4 @@ someVar=%d, otherVar=%d.\n", someVar, otherVar );
  Możesz łatwo zmienić niestandardowe makro, aby zgłosić więcej lub mniej informacji do różnych miejsc docelowych. Takie podejście jest szczególnie przydatne, gdy Twoje wymagania dotyczące debugowania są rozwijane.
 
 ## <a name="see-also"></a>Zobacz też
-- [Techniki testowania CRT](../debugger/crt-debugging-techniques.md)
+- [Techniki debugowania CRT](../debugger/crt-debugging-techniques.md)

@@ -1,6 +1,7 @@
 ---
 title: Włącz i Wyłącz funkcję Edytuj i Kontynuuj | Microsoft Docs
-ms.custom: seodec18
+description: Informacje na temat sposobu wyłączania i włączania opcji Edytuj i Kontynuuj w programie Visual Studio w czasie projektowania. Polecenie Edytuj i Kontynuuj działa tylko w kompilacjach debugowania.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 10/04/2018
 ms.topic: how-to
 dev_langs:
@@ -26,12 +27,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: ce531a0f7f9d6e26db38b5cf041f06d42209261a
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 02356a407acc97b60f05641359c32305323f162e
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851401"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903535"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Instrukcje: Włączanie i wyłączanie Edytuj i Kontynuuj (C#, VB, C++)
 
@@ -43,7 +44,7 @@ W przypadku natywnego języka C++ **Edycja i kontynuowanie** wymaga użycia `/IN
 
 1. Jeśli jesteś w sesji debugowania, Zatrzymaj debugowanie (**Debuguj**  >  **Zatrzymaj debugowanie** lub **SHIFT** + **F5**).
 
-1. W obszarze **Narzędzia**  >  **Opcje** > ( **Debug**lub  >  **Opcje**debugowania) > **debugowania**  >  **Ogólne**wybierz opcję **Edytuj i Kontynuuj** w okienku po prawej stronie.
+1. W obszarze **Narzędzia**  >  **Opcje** > ( lub  >  **Opcje** debugowania) > **debugowania**  >  **Ogólne** wybierz opcję **Edytuj i Kontynuuj** w okienku po prawej stronie.
 
     > [!NOTE]
     > Jeśli IntelliTrace jest włączona i zbierasz zarówno zdarzenia IntelliTrace, jak i informacje o wywołaniu, funkcja Edytuj i Kontynuuj jest wyłączona. Aby uzyskać więcej informacji, zobacz [IntelliTrace](../debugger/intellitrace.md).

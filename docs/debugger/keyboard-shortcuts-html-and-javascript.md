@@ -1,5 +1,7 @@
 ---
 title: Skróty klawiaturowe (HTML i JavaScript) | Microsoft Docs
+description: Zobacz skróty klawiaturowe do debugowania aplikacji platformy UWP, które używają języka HTML i języka JavaScript. Istnieją skróty do okna konsoli JavaScript i dla DOM Explorer.
+ms.custom: SEO-VS-2020
 ms.date: 10/17/2019
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 32a3dcc48e34cc3ecc429f7f2b4ca62221263fe0
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: a65cf7eea0541464a013a72377f439dd53ebf685
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211342"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903821"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>Skróty klawiaturowe (HTML i JavaScript)
 

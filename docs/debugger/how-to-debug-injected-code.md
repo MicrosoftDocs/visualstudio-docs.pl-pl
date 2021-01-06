@@ -1,5 +1,7 @@
 ---
 title: Debuguj wstrzyknięty kod | Microsoft Docs
+description: 'Poznaj dwa sposoby wyświetlania wprowadzonego kodu: 1) w oknie demontażu przez program Visual Studio. 2) w pliku źródłowym, który ma zarówno wstrzyknięty, jak i oryginalny kod.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -24,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2dfcd81def9b3662f410120f370566354726498
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 5bce49eebf430ccaca9919c74966fb9efd00b09b
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852103"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903951"
 ---
 # <a name="how-to-debug-injected-code"></a>Porady: Debugowanie wprowadzonego kodu
 
@@ -66,7 +68,7 @@ Okno **demontażowe** zawiera instrukcje dotyczące języka zestawu, które odpo
 
 2. Z menu **Debuguj** wybierz opcję **Windows**, a następnie kliknij pozycję **demontaż**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)
 - [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)

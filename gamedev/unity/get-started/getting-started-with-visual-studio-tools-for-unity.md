@@ -13,12 +13,12 @@ manager: crdun
 ms.workload:
 - unity
 zone_pivot_groups: platform
-ms.openlocfilehash: ba95e15be083e0bb1274e01a986f4139d9443240
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 1f8cbe1629aab6a177a46888fe25cf8e3565d91d
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "94341792"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903756"
 ---
 # <a name="get-started-with-visual-studio-and-unity"></a>Wprowadzenie do programu Visual Studio i aparatu Unity
 
@@ -34,7 +34,7 @@ Visual Studio Tools for Unity to bezpłatne rozszerzenie, które zapewnia obsłu
 > [!NOTE]
 > Ten przewodnik instalacji dotyczy programu Visual Studio. Jeśli używasz Visual Studio Code, odwiedź stronę [projektowania środowiska Unity przy użyciu vs Code dokumentacji](https://code.visualstudio.com/docs/other/unity).
 
-1. [Pobierz instalatora programu Visual Studio](/docs/install/install-visual-studio.md)lub uruchom go, jeśli jest już zainstalowany.
+1. [Pobierz instalatora programu Visual Studio](/visualstudio/docs/install/install-visual-studio.md)lub uruchom go, jeśli jest już zainstalowany.
 2. Kliknij przycisk **Modyfikuj** (jeśli jest już zainstalowany) lub **Zainstaluj** (w przypadku nowych instalacji) dla żądanej wersji programu Visual Studio.
 3. Na karcie **obciążenia** przejdź do sekcji **gry** i wybierz pozycję **Programowanie gier z użyciem obciążenia aparatu Unity** .
 

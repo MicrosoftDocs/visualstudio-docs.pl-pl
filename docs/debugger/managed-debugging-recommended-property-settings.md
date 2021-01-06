@@ -1,6 +1,7 @@
 ---
 title: Zalecane ustawienia właściwości debugera dla języków C#, VB | Microsoft Docs
-ms.custom: seodec18
+description: Sprawdź ustawienia właściwości kompilacja i kompilacja, które powinny być takie same dla wszystkich zarządzanych debugowania. Inne ustawienia mogą się różnić w zależności od typu projektu.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 07c63a70de9d633ccd73d1d0d3bd23196d421543
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57740c05e31bde2ae4e5143735e3bba1f3fc112c
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72731371"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903808"
 ---
 # <a name="managed-debugging-recommended-property-settings"></a>Zarządzanie debugowaniem: zalecane ustawienia właściwości
 Niektóre właściwości powinny być ustawiane w taki sam sposób dla wszystkich zarządzanych scenariuszy debugowania.

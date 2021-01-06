@@ -1,5 +1,7 @@
 ---
 title: Okno dialogowe Właściwości komunikatu | Microsoft Docs
+description: Zapoznaj się z właściwościami wiadomości, aby dowiedzieć się więcej o komunikacie, niż jest wyświetlany w widoku komunikatów.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f590f40e4e3361f4dbeb46a3a9b8758b8ab5075
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f58ad7344c7de9a9486fcb3ccefbf263688926f
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62846118"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903067"
 ---
 # <a name="message-properties-dialog-box"></a>Właściwości komunikatu — Okno dialogowe
 Użyj tego okna dialogowego, aby dowiedzieć się więcej o określonym komunikacie. Aby wyświetlić to okno dialogowe, Przenieś fokus do okna [Widok komunikatów](../debugger/messages-view.md) . Wybierz dowolny węzeł komunikatu w drzewie, a następnie wybierz polecenie **Właściwości** z menu **Widok** .

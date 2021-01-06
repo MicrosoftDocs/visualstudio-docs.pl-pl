@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: wyświetlanie pasujących nawiasów klamrowych | Microsoft Docs'
+description: Dowiedz się, jak definiować nawiasy klamrowe w kontekście języka, stosując w tym instruktażu znaczniki pasujące do typu zawartości tekstowej.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65a0bc2c53d5d6e970b4aaa956170bc06c24e7c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce40f5673a8aba4ab3f7714a3aafdc3de4697cc4
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904840"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877952"
 ---
 # <a name="walkthrough-display-matching-braces"></a>Przewodnik: wyświetlanie pasujących nawiasów klamrowych
 Implementowanie funkcji opartych na języku, takich jak, dopasowywanie nawiasów klamrowych przez definiowanie nawiasów klamrowych, które mają być dopasowane, i Dodawanie znacznika znacznika tekstu do pasujących nawiasów klamrowych, gdy karetka jest w jednym z nawiasów klamrowych. Można zdefiniować nawiasy klamrowe w kontekście języka, zdefiniować własne rozszerzenie nazwy pliku i typ zawartości oraz zastosować znaczniki do samego typu, lub zastosować znaczniki do istniejącego typu zawartości (na przykład "tekst"). W poniższym przewodniku pokazano, jak zastosować nawiasy klamrowe do typu zawartości "text".

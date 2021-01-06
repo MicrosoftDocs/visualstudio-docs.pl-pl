@@ -1,5 +1,7 @@
 ---
 title: Zestaw SDK Podgląd Pomocy firmy Microsoft | Microsoft Docs
+description: Dowiedz się więcej o zadaniach podglądu pomocy programu Visual Studio, takich jak tworzenie artykułu, Tworzenie pakietu znakowania zawartości podglądu pomocy i wdrażanie zestawu artykułów.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 901a5a5eea7835720ab9d5963f0ab1be36df3685
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 9e77d06900a17aca4c2630587a45a9b144accde2
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668862"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877848"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Zestaw SDK Podglądu Pomocy firmy Microsoft
 
@@ -826,7 +828,7 @@ Aby przetestować ten sposób jako jeśli został wdrożony:
 
 12. W środowisku IDE firmy Contoso wybierz klawisz F1, aby przetestować funkcję F1.
 
-## <a name="additional-resources"></a>Zasoby dodatkowe
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
 Aby uzyskać interfejs API środowiska uruchomieniowego, zobacz [interfejs API pomocy systemu Windows](/previous-versions/windows/desktop/helpapi/helpapi-portal).
 

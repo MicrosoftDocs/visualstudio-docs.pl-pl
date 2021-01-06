@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: Tworzenie konspektu | Microsoft Docs'
+description: Dowiedz się, jak definiować i wyświetlać regiony tworzenia konspektu w kontekście usługi językowej lub własnego rozszerzenia nazwy pliku i typu zawartości.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.workload:
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 6e3e60fe873d7bcb512e56c844e76fcbef037d42
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: ea0f16deee17e2cd249c0ee1de0861a936abc75c
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508928"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877900"
 ---
 # <a name="walkthrough-outlining"></a>Przewodnik: tworzenie konspektu
 Skonfiguruj funkcje oparte na języku, takie jak konspekt, definiując rodzaje regionów tekstu, które chcesz rozwinąć lub zwinąć. Można zdefiniować regiony w kontekście usługi językowej lub zdefiniować własne rozszerzenie nazwy pliku i typ zawartości oraz zastosować definicję regionu tylko do tego typu lub zastosować definicje regionów do istniejącego typu zawartości (na przykład "tekst"). W tym instruktażu pokazano, jak definiować i wyświetlać regiony konspektu.
@@ -134,5 +136,5 @@ Skonfiguruj funkcje oparte na języku, takie jak konspekt, definiując rodzaje r
 
 4. Powinien istnieć region konspektu, który zawiera oba nawiasy. Aby zwinąć region tworzenia konspektu, powinno być możliwe kliknięcie znaku minus z lewej strony otwierającego nawiasu klamrowego. Gdy region jest zwinięty, symbol wielokropka (*...*) powinien pojawić się po lewej stronie zwiniętego regionu, a po umieszczeniu wskaźnika na wielokropku powinien pojawić się okno podręczne zawierające **tekst** umieszczania tekstu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Przewodnik: łączenie typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

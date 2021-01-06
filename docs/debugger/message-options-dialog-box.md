@@ -1,5 +1,6 @@
 ---
 title: Okno dialogowe Opcje komunikatów | Microsoft Docs
+description: Określ w opcjach komunikatów, które komunikaty są wyświetlane w widoku wiadomości i jakie dane komunikaty mają być wyświetlane.
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97704675e1135959744e60724e4e3381bccf2b30
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f066dd687f4bfbb6b286667abe0bb67224a7b763
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62931325"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903587"
 ---
 # <a name="message-options-dialog-box"></a>Opcje komunikatów — Okno dialogowe
 To okno dialogowe służy do wybierania komunikatów, które są wyświetlane w [widoku wiadomości](../debugger/messages-view.md). Aby wyświetlić to okno dialogowe, wybierz pozycję **komunikaty dziennika** z menu **Spy** .

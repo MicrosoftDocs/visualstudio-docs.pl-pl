@@ -1,5 +1,7 @@
 ---
 title: Przyciski okna właściwości | Microsoft Docs
+description: Informacje o przyciskach wyświetlanych domyślnie na pasku narzędzi dla okno Właściwości i o implementacji przycisków.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aaa4db159ccb0ecf3d0e9c9243e23fcd0dacc455
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e99c362904bc40a2937c030f1ee2bb1c4d32a113
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706172"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878017"
 ---
 # <a name="properties-window-buttons"></a>Przyciski okna właściwości
-W zależności od języka programowania i typu produktu niektóre przyciski są domyślnie wyświetlane na pasku narzędzi okna **Właściwości** . We wszystkich przypadkach są wyświetlane **przyciski z**przydzielonymi, **alfabetycznymi**, **właściwościami**i **stronami właściwości** . W Visual C# i Visual Basic jest również wyświetlany przycisk **zdarzenia** . W niektórych projektach Visual C++ są wyświetlane **komunikaty VC + +** i przyciski **zastąpień VC** . Dodatkowe przyciski mogą być wyświetlane dla innych typów projektów. Aby uzyskać więcej informacji o przyciskach w oknie **Właściwości** , zobacz [okno właściwości](../../ide/reference/properties-window.md).
+W zależności od języka programowania i typu produktu niektóre przyciski są domyślnie wyświetlane na pasku narzędzi okna **Właściwości** . We wszystkich przypadkach są wyświetlane **przyciski z** przydzielonymi, **alfabetycznymi**, **właściwościami** i **stronami właściwości** . W Visual C# i Visual Basic jest również wyświetlany przycisk **zdarzenia** . W niektórych projektach Visual C++ są wyświetlane **komunikaty VC + +** i przyciski **zastąpień VC** . Dodatkowe przyciski mogą być wyświetlane dla innych typów projektów. Aby uzyskać więcej informacji o przyciskach w oknie **Właściwości** , zobacz [okno właściwości](../../ide/reference/properties-window.md).
 
 ## <a name="implementation-of-properties-window-buttons"></a>Implementacja przycisków okna właściwości
  Po kliknięciu przycisku z **kategoryzacją** program Visual Studio wywoła <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties> interfejs na obiekcie, który ma fokus, aby posortować jego właściwości według kategorii. <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties> jest zaimplementowany dla `IDispatch` obiektu, który jest prezentowany w oknie **Właściwości** .

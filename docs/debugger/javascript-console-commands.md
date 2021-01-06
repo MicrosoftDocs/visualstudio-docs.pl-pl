@@ -1,6 +1,7 @@
 ---
 title: Polecenia konsoli języka JavaScript | Microsoft Docs
-ms.custom: ''
+description: Użyj poleceń do wysyłania komunikatów i wykonywania innych zadań w oknie konsoli JavaScript. Ten artykuł ma zastosowanie do Node.js aplikacji, aplikacji platformy UWP i aplikacji Apache Cordova.
+ms.custom: SEO-VS-2020
 ms.date: 10/17/2019
 ms.topic: reference
 helpviewer_keywords:
@@ -14,18 +15,18 @@ monikerRange: vs-2017
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: 301461caa15321b5a77f42872c93f52f3ec2c9c1
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 2877b3ca9fb644ae4dae1af27e79e6ee52423b97
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211277"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903912"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Polecenia konsoli języka JavaScript w programie Visual Studio
 
 Polecenia służą do wysyłania komunikatów i wykonywania innych zadań w oknie konsoli JavaScript programu Visual Studio. Aby zapoznać się z przykładami pokazującymi, jak korzystać z tego okna, zobacz [Szybki Start: debugowanie JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017&preserve-view=true). Informacje przedstawione w tym temacie dotyczą Node.js aplikacji, aplikacji platformy UWP i aplikacji utworzonych przy użyciu Visual Studio Tools dla Apache Cordova.
 
-Jeśli okno konsoli JavaScript jest zamknięte, można je otworzyć podczas debugowania w programie Visual Studio, wybierając **Debuguj**  >  **Windows**  >  **konsolę JavaScript**systemu Windows.
+Jeśli okno konsoli JavaScript jest zamknięte, można je otworzyć podczas debugowania w programie Visual Studio, wybierając **Debuguj**  >    >  **konsolę JavaScript** systemu Windows.
 
 > [!NOTE]
 > Jeśli okno nie jest dostępne podczas sesji debugowania, upewnij się, że typ debugera jest ustawiony na **skrypt** we właściwościach debugowania dla projektu.
@@ -87,7 +88,7 @@ if (console && console.log) {
 ```
 
 ## <a name="examining-objects-in-the-javascript-console-window"></a>Badanie obiektów w oknie konsoli JavaScript
-Można korzystać z dowolnego obiektu, który znajduje się w zakresie w przypadku korzystania z okna konsoli JavaScript. Aby sprawdzić obiekt poza zakresem w oknie konsoli, użyj `console.log` , `console.dir` lub innych poleceń w kodzie. Alternatywnie można korzystać z obiektu z okna konsoli, gdy jest on w zakresie przez ustawienie punktu przerwania w kodzie (punkt przerwania**Breakpoint**  >  **wstawiania**punktu przerwania).
+Można korzystać z dowolnego obiektu, który znajduje się w zakresie w przypadku korzystania z okna konsoli JavaScript. Aby sprawdzić obiekt poza zakresem w oknie konsoli, użyj `console.log` , `console.dir` lub innych poleceń w kodzie. Alternatywnie można korzystać z obiektu z okna konsoli, gdy jest on w zakresie przez ustawienie punktu przerwania w kodzie (punkt przerwania  >  **wstawiania** punktu przerwania).
 
 ## <a name="formatting-consolelog-output"></a><a name="ConsoleLog"></a> Formatowanie danych wyjściowych konsoli. log
 W przypadku przekazania wielu argumentów do `console.log` , konsola będzie traktować argumenty jako tablicę i połączyć dane wyjściowe.

@@ -1,5 +1,7 @@
 ---
 title: Podstawowe informacje o typie projektu | Microsoft Docs
+description: Informacje o tym, kiedy należy utworzyć typ projektu i kiedy można rozciągnąć istniejący typ projektu przy użyciu podtypów projektu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7634802899d72eb6abcb0aa837b8fb6a532b966
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: d55a4be044c44567f65e312d013ebdb61314ea00
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012064"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877809"
 ---
 # <a name="project-type-essentials"></a>Podstawowe informacje o typach projektów
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zawiera kilka typów projektów dla języków takich jak [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] lub [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] . [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pozwala również tworzyć własne typy projektów.
@@ -34,7 +36,7 @@ ms.locfileid: "90012064"
 
 - Kompilacja
 
-- Wdrożenie
+- Wdrażanie
 
 - Wiele konfiguracji
 
@@ -64,5 +66,5 @@ ms.locfileid: "90012064"
 
 - Typy projektów mogą obsługiwać wiele konfiguracji, takich jak debugowanie i wydanie. Użytkownicy mogą zmieniać różne konfiguracje projektu przy użyciu stron właściwości, które dostarczasz. Aby uzyskać więcej informacji, zobacz [Zarządzanie opcjami konfiguracji](../../extensibility/internals/managing-configuration-options.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wdrażanie typów projektów](../../extensibility/internals/deploying-project-types.md)

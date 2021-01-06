@@ -1,5 +1,7 @@
 ---
 title: Debugowanie w trybie mieszanym | Microsoft Docs
+description: Zobacz jak włączyć debugowanie w trybie mieszanym (kod zarządzany i natywny razem) na stronach właściwości projektu aplikacji wywołującej.
+ms.custom: SEO-VS-2020
 ms.date: 11/05/2018
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb563b260175d3385288c4cb6f046af8526069cf
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 123fb61cb223d8db3c447f5925639df33a2b3e11
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852116"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903990"
 ---
 # <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>Instrukcje: debugowanie w trybie mieszanym (C#, C++, Visual Basic)
 
@@ -41,19 +43,19 @@ Jeśli nie masz dostępu do projektu aplikacji wywołującej, możesz debugować
 
 ## <a name="enable-mixed-mode-debugging-for-a-native-calling-app"></a>Włącz debugowanie w trybie mieszanym dla natywnej aplikacji wywołującej
 
-1. Wybierz projekt C++ w **Eksplorator rozwiązań** i kliknij ikonę **Właściwości** , naciśnij klawisz **Alt** + **Enter**lub kliknij prawym przyciskiem myszy i wybierz polecenie **Właściwości**.
+1. Wybierz projekt C++ w **Eksplorator rozwiązań** i kliknij ikonę **Właściwości** , naciśnij klawisz **Alt** + **Enter** lub kliknij prawym przyciskiem myszy i wybierz polecenie **Właściwości**.
 
-1. W oknie dialogowym ** \<Project> strony właściwości** rozwiń węzeł **Właściwości konfiguracji**, a następnie wybierz pozycję **debugowanie**.
+1. W oknie dialogowym **\<Project> strony właściwości** rozwiń węzeł **Właściwości konfiguracji**, a następnie wybierz pozycję **debugowanie**.
 
-1. Ustaw **Typ debugera** na **mieszany** lub **Auto**Auto.
+1. Ustaw **Typ debugera** na **mieszany** lub Auto.
 
-1. Wybierz przycisk **OK**.
+1. Wybierz pozycję **OK**.
 
    ![Włącz debugowanie w trybie mieszanym](../debugger/media/dbg-mixed-mode-from-native.png "Włącz debugowanie w trybie mieszanym")
 
 ## <a name="enable-mixed-mode-debugging-for-a-managed-calling-app"></a>Włącz debugowanie w trybie mieszanym dla zarządzanej aplikacji wywołującej
 
-1. Wybierz projekt C# lub Visual Basic w **Eksplorator rozwiązań** i wybierz ikonę **Właściwości** , naciśnij klawisz **Alt** + **Enter**lub kliknij prawym przyciskiem myszy i wybierz polecenie **Właściwości**.
+1. Wybierz projekt C# lub Visual Basic w **Eksplorator rozwiązań** i wybierz ikonę **Właściwości** , naciśnij klawisz **Alt** + **Enter** lub kliknij prawym przyciskiem myszy i wybierz polecenie **Właściwości**.
 
 1. Wybierz kartę **debugowanie** , a następnie wybierz pozycję **Włącz debugowanie kodu natywnego**.
 
@@ -64,6 +66,6 @@ Jeśli nie masz dostępu do projektu aplikacji wywołującej, możesz debugować
 > [!NOTE]
 > W większości wersji programu Visual Studio, począwszy od programu Visual Studio 2017, należy użyć *launchSettings.jsw* pliku zamiast właściwości projektu, aby włączyć debugowanie w trybie mieszanym dla kodu natywnego w aplikacji .NET Core. Aby uzyskać szczegółowe informacje, zobacz [Debugowanie kodu zarządzanego i natywnego](../debugger/how-to-debug-managed-and-native-code.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Instrukcje: debugowanie z projektu DLL](../debugger/how-to-debug-from-a-dll-project.md)

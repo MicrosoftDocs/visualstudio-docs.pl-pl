@@ -1,7 +1,7 @@
 ---
 title: Włącz debugowanie dla aplikacji ASP.NET | Microsoft Docs
-description: Dowiedz się, jak włączyć debugowanie dla aplikacji ASP.NET i ASP.NET Core w programie Visual Studio, a następnie uruchomić proces na serwerze IIS Express lub lokalnym serwerze IIS.
-ms.custom: ''
+description: Dowiedz się, jak włączyć debugowanie dla aplikacji ASP.NET i ASP.NET Core w programie Visual Studio. Proces ten można uruchomić na serwerze IIS Express lub na lokalnym serwerze IIS.
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2020
 ms.topic: how-to
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: c5256def84f15fae535ac409349ce21cdd5c80ba
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 28f74c449e196d5eb0b3380d0ff1392db17e0b23
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761384"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903600"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Debugowanie aplikacji platformy ASP.NET lub ASP.NET Core w programie Visual Studio
 

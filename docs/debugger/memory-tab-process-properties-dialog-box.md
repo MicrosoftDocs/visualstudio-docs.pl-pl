@@ -1,5 +1,7 @@
 ---
 title: Karta pamięć, okno dialogowe właściwości procesu | Microsoft Docs
+description: Użyj karty pamięć właściwości procesu, aby zobaczyć, jak proces używa pamięci. Istnieją informacje o używanym miejscu, udostępnianym miejscu oraz używanym miejscu wirtualnym.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bdfc2740094c807818922f09ca3fef0a21c9e1a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 10fd47127abfd9cc476ed7029edd0dbbeb5501de
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62931276"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903730"
 ---
 # <a name="memory-tab-process-properties-dialog-box"></a>Karta Pamięć, okno dialogowe właściwości procesu
 Użyj karty **pamięć** , aby zobaczyć, jak proces używa pamięci. Aby wyświetlić okno [dialogowe właściwości procesu](../debugger/process-properties-dialog-box.md), Przenieś fokus do okna [widok procesów](../debugger/processes-view.md) . Wybierz dowolny węzeł procesu w drzewie, a następnie wybierz polecenie **Właściwości** z menu **Widok** .

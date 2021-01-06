@@ -1,5 +1,7 @@
 ---
 title: Optymalizacja i debugowanie JIT | Microsoft Docs
+description: Zoptymalizowany kod jest trudniejszy do debugowania niż kod, który nie jest. Informacje na temat optymalizacji JIT oraz informacje o tym, kiedy i jak go pominąć.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae11860aaa64448cd4d23b5602cf4c2da1575ce3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 66f63c7232b52ebe849722147e007ab70527c311
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75916220"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903925"
 ---
 # <a name="jit-optimization-and-debugging"></a>Optymalizacja i debugowanie JIT
 Jeśli próbujesz debugować kod, łatwiej jest, gdy ten kod **nie** jest zoptymalizowany. Gdy kod jest zoptymalizowany, kompilator i środowisko uruchomieniowe wprowadzają zmiany w emitowanym kodzie procesora CPU, dzięki czemu będzie działać szybciej, ale ma mniej bezpośrednie mapowanie na oryginalny kod źródłowy. Jeśli mapowanie jest mniej bezpośrednie, debugery często nie mogą określić wartości zmiennych lokalnych, a taktowanie kodu i punkty przerwania mogą nie zadziałać zgodnie z oczekiwaniami.
@@ -60,7 +62,7 @@ Istnieją dwie sytuacje, w których ta opcja **nie** będzie działała:
 
     **Aby ustawić zmienną środowiskową dla projektu .NET Core w programie Visual Studio:**
     1. W **Eksplorator rozwiązań** **kliknij prawym przyciskiem myszy** plik projektu i wybierz polecenie **Właściwości**.
-    2. Przejdź do karty **debugowanie** i w obszarze **zmienne środowiskowe**kliknij przycisk **Dodaj** .
+    2. Przejdź do karty **debugowanie** i w obszarze **zmienne środowiskowe** kliknij przycisk **Dodaj** .
     3. Ustaw nazwę (klucz) na **COMPlus_ReadyToRun** i ustaw wartość **0**.
 
     ![Ustaw zmienną środowiskową COMPlus_ReadyToRun](../debugger/media/environment-variables-debug-menu.png "Ustaw zmienną środowiskową COMPlus_ReadyToRun")

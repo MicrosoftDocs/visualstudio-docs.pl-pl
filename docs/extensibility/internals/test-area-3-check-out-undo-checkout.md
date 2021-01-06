@@ -1,5 +1,7 @@
 ---
-title: 'Obszar testowy 3: wyewidencjonowywanie — cofanie wyewidencjonowania | Microsoft Docs'
+title: 'Obszar testowy 3: sprawdzanie Out-Undo wyewidencjonowania | Microsoft Docs'
+description: Ten obszar testowy wtyczki kontroli źródła obejmuje edytowanie i wycofywanie elementów ze sklepu z wersjami przy użyciu poleceń wyewidencjonowywania i cofania wyewidencjonowania.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,14 +15,14 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5365da1e342df5aea9c1b1cd2ae5a446baea57f1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6292051e6ddf11e3ce4b56648574e0207bb5a41
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704618"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877692"
 ---
-# <a name="test-area-3-check-outundo-checkout"></a>Obszar testowy 3: wyewidencjonowywanie/cofanie wyewidencjonowania
+# <a name="test-area-3-check-outundo-checkout"></a>Obszar testowy 3: wyewidencjonowywanie i cofanie wyewidencjonowania
 Ten obszar testowy wtyczki kontroli źródła obejmuje edytowanie i wycofywanie elementów z magazynu wersji za pomocą poleceń **wyewidencjonowywania** i **cofania wyewidencjonowania** .
 
 **Wyewidencjonowywanie**: oznacza element w sklepie wersji jako wyewidencjonowany, modyfikuje kopię lokalną na odczyt/zapis.
@@ -85,7 +87,7 @@ Gdy użytkownik ponownie nawiązuje połączenie z magazynem wersji, synchronizo
 |Po rozłączeniu Wyewidencjonuj plik, a następnie połącz się z synchronizacją|1. Odłącz kontrolowany projekt przy użyciu okna dialogowego Zmień kontrolę źródła (**plik**, **Kontrola źródła**, **zmiana kontroli źródła**).<br />2. Sprawdź plik.<br />3. kliknij pozycję Wyewidencjonuj (Rozłączono) w oknie dialogowym ostrzeżenia.<br />4. Edytuj plik.<br />5. Połącz się przy użyciu okna dialogowego Zmień kontrolę źródła.<br />6. Pobierz najnowszą wersję edytowanego pliku.|Typowe oczekiwane zachowanie|
 
 ### <a name="case-3c-query-editquery-save-qeqs"></a>Przypadek 3C: modyfikowanie zapytania/zapisywanie zapytania (QEQS)
- Elementy pod kontrolą źródła są śledzone pod kątem zmian, zmian i zapisywanych danych, aby ułatwić użytkownikom zarządzanie swoimi plikami. Gdy kontrolowany element, który jest "zaewidencjonowany" jest edytowany, QEQS przechwytuje próbną edycję i pyta użytkownika, czy chce wyewidencjonować plik, aby go edytować. W zależności od **narzędzi**, ustawień **opcji** , użytkownik jest zmuszony do wyewidencjonowania pliku, aby można było go edytować lub może edytować kopię w pamięci i wypróbować go później. Jeśli **Narzędzia**użytkownika, ustawienie **opcji** nie jest ustawione na wyświetlanie okna dialogowego Wyewidencjonowywanie i po prostu Wyewidencjonuj, a następnie użytkownik dokona edycji, plik zostanie automatycznie wyewidencjonowany, jeśli jest to możliwe.
+ Elementy pod kontrolą źródła są śledzone pod kątem zmian, zmian i zapisywanych danych, aby ułatwić użytkownikom zarządzanie swoimi plikami. Gdy kontrolowany element, który jest "zaewidencjonowany" jest edytowany, QEQS przechwytuje próbną edycję i pyta użytkownika, czy chce wyewidencjonować plik, aby go edytować. W zależności od **narzędzi**, ustawień **opcji** , użytkownik jest zmuszony do wyewidencjonowania pliku, aby można było go edytować lub może edytować kopię w pamięci i wypróbować go później. Jeśli **Narzędzia** użytkownika, ustawienie **opcji** nie jest ustawione na wyświetlanie okna dialogowego Wyewidencjonowywanie i po prostu Wyewidencjonuj, a następnie użytkownik dokona edycji, plik zostanie automatycznie wyewidencjonowany, jeśli jest to możliwe.
 
 #### <a name="expected-behavior"></a>Oczekiwane zachowanie
 
@@ -99,7 +101,7 @@ Gdy użytkownik ponownie nawiązuje połączenie z magazynem wersji, synchronizo
 
 |Akcja|Kroki testu|Oczekiwane wyniki do zweryfikowania|
 |------------|----------------|--------------------------------|
-|Edytuj plik tekstowy, który jest zaewidencjonowany|1. Utwórz nowy projekt zawierający plik tekstowy.<br />2. Dodaj rozwiązanie do kontroli źródła.<br />3. Ustaw **Narzędzia**, **Opcje**, **Kontrola źródła**, **Zezwól na edycję plików, gdy tylko do odczytu na dysku mają być** niezaznaczone.<br />4. Ustaw **Narzędzia**, **Opcje**, **Kontrola źródła**i **Monituj o** wyewidencjonowanie w polu kombi, **gdy zaewidencjonowano pliki są edytowane** .<br />5. Ustaw **Narzędzia**, **Opcje**, **Kontrola źródła**i **Monituj o** wyewidencjonowanie w polu kombi **gdy zaznaczone pliki są zapisywane** .<br />6. Otwórz plik tekstowy w edytorze, a następnie spróbuj wpisać nowy tekst do pliku. Jeśli ten krok zakończy się pomyślnie, przejdź do następnego kroku.<br />7. kliknij przycisk **Anuluj** w oknie dialogowym **wyewidencjonowywanie dla edycji** . Jeśli ten krok zakończy się pomyślnie, przejdź do następnego kroku.<br />8. Ustaw **Narzędzia**, **Opcje**, **Kontrola źródła**, **Zezwól na edycję plików, gdy tylko do odczytu na dysku zostaną** zaznaczone.<br />9. Otwórz plik projektu w edytorze, a następnie spróbuj wpisać nowy tekst w pliku. Jeśli ten krok zakończy się pomyślnie, przejdź do następnego kroku.<br />10. kliknij przycisk **Edytuj** w oknie dialogowym **wyewidencjonowywanie dla edycji** . Jeśli ten krok zakończy się pomyślnie, przejdź do następnego kroku.<br />11. Edytuj plik tekstowy i spróbuj go zapisać.|`Result of step 6:`<br /><br /> Zostanie wyświetlone okno dialogowe Wyewidencjonuj do edycji.<br /><br /> `Result of step 7:`<br /><br /> Plik jest niezmieniony.<br /><br /> `Result of step 9:`<br /><br /> Zostanie wyświetlone okno dialogowe Wyewidencjonuj do edycji.<br /><br /> `Result of step 10:`<br /><br /> Plik projektu można edytować w pamięci.<br /><br /> `Result of step 11:`<br /><br /> Przy zapisywaniu zostanie wyświetlone okno dialogowe wyewidencjonowywanie przy zapisywaniu.|
+|Edytuj plik tekstowy, który jest zaewidencjonowany|1. Utwórz nowy projekt zawierający plik tekstowy.<br />2. Dodaj rozwiązanie do kontroli źródła.<br />3. Ustaw **Narzędzia**, **Opcje**, **Kontrola źródła**, **Zezwól na edycję plików, gdy tylko do odczytu na dysku mają być** niezaznaczone.<br />4. Ustaw **Narzędzia**, **Opcje**, **Kontrola źródła** i **Monituj o** wyewidencjonowanie w polu kombi, **gdy zaewidencjonowano pliki są edytowane** .<br />5. Ustaw **Narzędzia**, **Opcje**, **Kontrola źródła** i **Monituj o** wyewidencjonowanie w polu kombi **gdy zaznaczone pliki są zapisywane** .<br />6. Otwórz plik tekstowy w edytorze, a następnie spróbuj wpisać nowy tekst do pliku. Jeśli ten krok zakończy się pomyślnie, przejdź do następnego kroku.<br />7. kliknij przycisk **Anuluj** w oknie dialogowym **wyewidencjonowywanie dla edycji** . Jeśli ten krok zakończy się pomyślnie, przejdź do następnego kroku.<br />8. Ustaw **Narzędzia**, **Opcje**, **Kontrola źródła**, **Zezwól na edycję plików, gdy tylko do odczytu na dysku zostaną** zaznaczone.<br />9. Otwórz plik projektu w edytorze, a następnie spróbuj wpisać nowy tekst w pliku. Jeśli ten krok zakończy się pomyślnie, przejdź do następnego kroku.<br />10. kliknij przycisk **Edytuj** w oknie dialogowym **wyewidencjonowywanie dla edycji** . Jeśli ten krok zakończy się pomyślnie, przejdź do następnego kroku.<br />11. Edytuj plik tekstowy i spróbuj go zapisać.|`Result of step 6:`<br /><br /> Zostanie wyświetlone okno dialogowe Wyewidencjonuj do edycji.<br /><br /> `Result of step 7:`<br /><br /> Plik jest niezmieniony.<br /><br /> `Result of step 9:`<br /><br /> Zostanie wyświetlone okno dialogowe Wyewidencjonuj do edycji.<br /><br /> `Result of step 10:`<br /><br /> Plik projektu można edytować w pamięci.<br /><br /> `Result of step 11:`<br /><br /> Przy zapisywaniu zostanie wyświetlone okno dialogowe wyewidencjonowywanie przy zapisywaniu.|
 |Edytuj plik rozwiązania, który jest zaewidencjonowany|Powtórz kroki zgodnie z opisem w poprzednim teście, ale zamiast modyfikować plik tekstowy, zmodyfikuj rozwiązanie, zmieniając właściwości rozwiązania.|Taki sam jak poprzedni test|
 |Edytuj plik projektu, który jest zaewidencjonowany|Powtórz kroki zgodnie z opisem w poprzednim teście, ale zamiast modyfikować plik tekstowy, zmodyfikuj projekt, zmieniając właściwości projektu.|Taki sam jak poprzedni test.|
 

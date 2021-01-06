@@ -1,5 +1,7 @@
 ---
 title: Publikowanie rozszerzenia przy użyciu wiersza polecenia
+description: Dowiedz się, jak za pomocą wiersza polecenia opublikować rozszerzenie w Visual Studio Marketplace, co umożliwia deweloperom przeglądanie w poszukiwaniu nowych i zaktualizowanych rozszerzeń.
+ms.custom: SEO-VS-2020
 ms.date: 07/12/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,18 +13,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5108f4afa382c00376424432d2086f0494e34a03
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4132d878ff1ec7689be890446a1849577fafd30
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904676"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877926"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Przewodnik: Publikowanie rozszerzenia programu Visual Studio za pomocą wiersza polecenia
 
 W tym instruktażu przedstawiono sposób publikowania rozszerzenia programu Visual Studio do Visual Studio Marketplace przy użyciu wiersza polecenia. Po dodaniu rozszerzenia do portalu Marketplace deweloperzy mogą skorzystać z okna dialogowego [**rozszerzenia i aktualizacje**](../ide/finding-and-using-visual-studio-extensions.md) , aby wyszukać nowe i zaktualizowane rozszerzenia.
 
-VsixPublisher.exe jest narzędziem wiersza polecenia do publikowania rozszerzeń programu Visual Studio w portalu Marketplace. Dostęp do niego można uzyskać za pomocą $ {VSInstallDir} \VSSDK\VisualStudioIntegration\Tools\Bin\VsixPublisher.exe. Polecenia dostępne w tym narzędziu to **publish**: Publish **,** **deletePublisher**, **deleteExtension**, **login**, **Wyloguj**się.
+VsixPublisher.exe jest narzędziem wiersza polecenia do publikowania rozszerzeń programu Visual Studio w portalu Marketplace. Dostęp do niego można uzyskać za pomocą $ {VSInstallDir} \VSSDK\VisualStudioIntegration\Tools\Bin\VsixPublisher.exe. Polecenia dostępne w tym narzędziu to : Publish **,** **deletePublisher**, **deleteExtension**, **login**, **Wyloguj** się.
 
 ## <a name="commands"></a>Polecenia
 

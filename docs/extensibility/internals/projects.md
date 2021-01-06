@@ -1,5 +1,7 @@
 ---
 title: Projekty | Microsoft Docs
+description: Dowiedz się więcej na temat sposobu, w jaki pakietów VSPackage może zwiększyć system projektu programu Visual Studio, w tym typy projektów, podtypy projektów i narzędzia niestandardowe.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,15 +16,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b7a9299321d2aa80eebb564bf9b926f07ab0108
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffc2dc28ed3d45194ba7738da58fa36dd022c79f
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706211"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878056"
 ---
 # <a name="projects"></a>Projekty
-W programie Visual Studio projekty są kontenerami używanymi przez deweloperów do organizowania plików kodu źródłowego i innych zasobów, które są wyświetlane w **Eksplorator rozwiązań**. Zazwyczaj projekty są plikami (na przykład plik. csproj dla projektu C#), który przechowuje odwołania do plików kodu źródłowego i zasobów, takich jak pliki map bitowych. Projekty umożliwiają organizowanie, kompilowanie, debugowanie i wdrażanie kodu źródłowego, odwołań do usług sieci Web i baz danych oraz innych zasobów. Pakietów VSPackage może rozciągnąć system projektu programu Visual Studio na trzy główne sposoby: *typy projektów*, *podtypy projektu*i *narzędzia niestandardowe*.
+W programie Visual Studio projekty są kontenerami używanymi przez deweloperów do organizowania plików kodu źródłowego i innych zasobów, które są wyświetlane w **Eksplorator rozwiązań**. Zazwyczaj projekty są plikami (na przykład plik. csproj dla projektu C#), który przechowuje odwołania do plików kodu źródłowego i zasobów, takich jak pliki map bitowych. Projekty umożliwiają organizowanie, kompilowanie, debugowanie i wdrażanie kodu źródłowego, odwołań do usług sieci Web i baz danych oraz innych zasobów. Pakietów VSPackage może rozciągnąć system projektu programu Visual Studio na trzy główne sposoby: *typy projektów*, *podtypy projektu* i *narzędzia niestandardowe*.
 
 ## <a name="in-this-section"></a>W tej sekcji
 - [Typy projektów](../../extensibility/internals/project-types.md)

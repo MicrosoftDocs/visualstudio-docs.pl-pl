@@ -1,5 +1,7 @@
 ---
 title: Debuguj zoptymalizowany kod | Microsoft Docs
+description: Jeśli to możliwe, nie Kompiluj docelowej wersji Win32 do momentu debugowania programu, ponieważ Optymalizacja może komplikuje debugowanie. Zapoznaj się ze szczegółami w tym artykule.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da0a9c40a2c4887b2798e908ad0c12d6c9a85b32
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 971ceb59a17788076a1188e42d834f7b4bd704cc
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852390"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903184"
 ---
 # <a name="how-to-debug-optimized-code"></a>Porady: debugowanie zoptymalizowanego kodu
 
@@ -58,7 +60,7 @@ ms.locfileid: "90852390"
 
 ## <a name="to-turn-on-optimization-in-a-debug-build-configuration"></a>Aby włączyć optymalizację w konfiguracji kompilacji debugowania
 
-1. Podczas tworzenia nowego projektu, wybierz `Win32 Debug` element docelowy. Użyj `Win32``Debug` elementu docelowego do momentu, gdy program jest w pełni debugowany i wszystko jest gotowe do skompilowania `Win32 Release` celu. Kompilator nie optymalizuje `Win32 Debug` elementu docelowego.
+1. Podczas tworzenia nowego projektu, wybierz `Win32 Debug` element docelowy. Użyj `Win32 Debug` elementu docelowego do momentu, gdy program jest w pełni debugowany i wszystko jest gotowe do skompilowania `Win32 Release` celu. Kompilator nie optymalizuje `Win32 Debug` elementu docelowego.
 
 2. Wybierz projekt w Eksplorator rozwiązań.
 
@@ -89,7 +91,7 @@ for (x=0; x<10; x++)
 
  Załóżmy, że ustawisz punkt przerwania w tym wierszu. Może oczekiwać, że punkt przerwania zostanie osiągnięty 10 razy, ale jeśli kod jest zoptymalizowany, punkt przerwania zostanie trafiony tylko raz. Oznacza to, że pierwsza instrukcja ustawia wartość `x` na 0. Kompilator rozpoznaje, że tylko raz i przenosi go z pętli. Punkt przerwania jest przenoszony razem z nim. Instrukcje, które porównują i zwiększają, `x` pozostają wewnątrz pętli. Po wyświetleniu okna **demontażu** [Jednostka kroku](/previous-versions/visualstudio/visual-studio-2010/ek13f001(v=vs.100)) jest automatycznie ustawiana na instrukcje w celu uzyskania większej kontroli, co jest przydatne w przypadku przechodzenia przez zoptymalizowany kod.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)
 - [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)

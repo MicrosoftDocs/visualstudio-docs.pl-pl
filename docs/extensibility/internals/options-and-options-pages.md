@@ -1,5 +1,7 @@
 ---
 title: Opcje i strony opcji | Microsoft Docs
+description: Dowiedz się więcej o obsłudze stron opcji, które umożliwiają zmianę wartości opcji, które określają stan pakietu VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d21bf6d5ab7e23047a02e1188fff9a47d0cbd58
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4699063d753539c72c373266b3fce9a0fdf8f00
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706840"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877874"
 ---
 # <a name="options-and-options-pages"></a>Opcje i strony opcji
 Kliknięcie przycisku **Opcje** w menu **Narzędzia** powoduje otwarcie okna dialogowego **Opcje** . Opcje w tym oknie dialogowym są określane zbiorczo jako strony opcji. Kontrolka drzewa w okienku nawigacji zawiera kategorie opcji, a każda kategoria zawiera strony opcji. Po wybraniu strony opcje są wyświetlane w okienku po prawej stronie. Te strony umożliwiają zmianę wartości opcji, które określają stan pakietu VSPackage.
@@ -37,9 +39,9 @@ Kliknięcie przycisku **Opcje** w menu **Narzędzia** powoduje otwarcie okna dia
  [!code-csharp[VSSDKSupportForOptionsPages#1](../../extensibility/internals/codesnippet/CSharp/options-and-options-pages_1.cs)]
  [!code-vb[VSSDKSupportForOptionsPages#1](../../extensibility/internals/codesnippet/VisualBasic/options-and-options-pages_1.vb)]
 
- Jeśli <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A> jest HKEY_CURRENT_USER \software\microsoft\visualstudio\8.0Exp, wówczas nazwa właściwości i pary wartości są podkluczami HKEY_CURRENT_USER \software\microsoft\visualstudio\8.0Exp\DialogPage\Company.optionsPage.OptionsPageGeneral.
+ Jeśli <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A> jest HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp, nazwa właściwości i pary wartości są podkluczami HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp\DialogPage\Company.OptionsPage.OptionsPageGeneral.
 
- Ścieżka rejestru samej strony opcji jest określana przez połączenie <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A> , słowo, ToolsOptionsPages oraz kategorię i nazwę strony opcji. Na przykład, jeśli strona Opcje niestandardowe zawiera kategorię, moje strony opcji i <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A> jest HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\8.0Exp, a następnie strona Opcje ma klucz rejestru, HKEY_LOCAL_MACHINE \Software\microsoft\visualstudio\8.0Exp\ToolsOptionsPages\My opcji Pages\Custom.
+ Ścieżka rejestru samej strony opcji jest określana przez połączenie <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A> , słowo, ToolsOptionsPages oraz kategorię i nazwę strony opcji. Na przykład, jeśli strona Opcje niestandardowe zawiera kategorię, moje strony opcji i wartość <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A> HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp, wówczas Strona Opcje ma klucz rejestru, HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\ToolsOptionsPages\My Option Pages\Custom.
 
 ## <a name="toolsoptions-page-attributes-and-layout"></a>Narzędzia/Opcje strony — atrybuty i układ
  Ten <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> atrybut określa grupowanie stron opcji niestandardowych w kategorii w drzewie nawigacji okna dialogowego **Opcje** . Ten <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> atrybut kojarzy stronę opcji z pakietu VSPackage, która dostarcza interfejs. Rozważmy następujący fragment kodu:
@@ -47,7 +49,7 @@ Kliknięcie przycisku **Opcje** w menu **Narzędzia** powoduje otwarcie okna dia
  [!code-csharp[VSSDKSupportForOptionsPages#2](../../extensibility/internals/codesnippet/CSharp/options-and-options-pages_2.cs)]
  [!code-vb[VSSDKSupportForOptionsPages#2](../../extensibility/internals/codesnippet/VisualBasic/options-and-options-pages_2.vb)]
 
- Deklaruje, że pakiet webpackage udostępnia dwie strony opcji, OptionsPageGeneral i OptionsPageCustom. W oknie dialogowym **Opcje** obie strony opcji są wyświetlane w kategorii **Moje** opcje jako **Ogólne** i **niestandardowe**odpowiednio.
+ Deklaruje, że pakiet webpackage udostępnia dwie strony opcji, OptionsPageGeneral i OptionsPageCustom. W oknie dialogowym **Opcje** obie strony opcji są wyświetlane w kategorii **Moje** opcje jako **Ogólne** i **niestandardowe** odpowiednio.
 
 ## <a name="option-attributes-and-layout"></a>Atrybuty i układ opcji
  Interfejs użytkownika, który zawiera strona określa wygląd opcji na stronie opcji niestandardowych. Układ, etykietowanie i opis opcji na stronie opcji ogólnych są określane przez następujące atrybuty:
@@ -81,7 +83,7 @@ Kliknięcie przycisku **Opcje** w menu **Narzędzia** powoduje otwarcie okna dia
 
  Gdy <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> atrybut rejestruje stronę opcji, strona jest zarejestrowana w kluczu AutomationProperties, jeśli `SupportsAutomation` argumentem atrybutu jest `true` . Usługa Automation analizuje ten wpis rejestru, aby znaleźć skojarzone pakietu VSPackage, a następnie usługa Automation uzyskuje dostęp do właściwości za pomocą strony Opcje hostowane, w tym przypadku strony Moje siatki.
 
- Ścieżka rejestru właściwości automatyzacji jest określana przez połączenie <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A> , słowo, AutomationProperties oraz kategorię i nazwę strony opcji. Na przykład, jeśli strona opcji zawiera kategorię my Category, nazwa strony My Grid, a <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A> HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\8.0Exp, a następnie właściwość Automation ma klucz rejestru HKEY_LOCAL_MACHINE \Software\microsoft\visualstudio\8.0Exp\AutomationProperties\My Category\My.
+ Ścieżka rejestru właściwości automatyzacji jest określana przez połączenie <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A> , słowo, AutomationProperties oraz kategorię i nazwę strony opcji. Na przykład, jeśli strona opcji zawiera kategorię my Category, nazwa strony My Grid i <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A> HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp, a następnie właściwość Automation ma klucz rejestru, HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\AutomationProperties\My Category\My Grid Page.
 
 > [!NOTE]
 > Nazwa kanoniczna, Strona Category.My Grid, jest wartością podklucza nazwy tego klucza.

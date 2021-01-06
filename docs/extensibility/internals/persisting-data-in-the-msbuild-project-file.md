@@ -1,5 +1,7 @@
 ---
 title: Utrwalanie danych w pliku projektu MSBuild | Microsoft Docs
+description: Dowiedz się, jak utrwalać dane w pliku projektu i używać IPersistXMLFragment do obsługi danych w pliku projektu na poziomach agregacji podtypów projektu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e83526007f676ae94ddce57936b627bcb4308c2a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 20c6d79e6ea59b4993b4d6bfc5e165bdd952a3f9
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706697"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878082"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>Utrwalanie danych w pliku projektu programu MSBuild
 Podtyp projektu może wymagać utrwalenia danych specyficznych dla określonego typu w pliku projektu w celu późniejszego użycia. Podtyp projektu używa trwałości pliku projektu, aby spełnić następujące wymagania:
@@ -36,7 +38,7 @@ Podtyp projektu może wymagać utrwalenia danych specyficznych dla określonego 
 
     2. Dane zależne od konfiguracji.
 
-## <a name="persisting-build-related-information"></a>Utrwalanie informacji związanych z kompilacją
+## <a name="persisting-build-related-information"></a>Utrwalanie Build-Related informacji
  Trwałość danych przydatnych do kompilowania projektu jest obsługiwana za pomocą programu MSBuild. System MSBuild zachowuje główną tabelę informacji związanych z kompilacją. Podtypy projektu są odpowiedzialne za uzyskiwanie dostępu do tych danych w celu uzyskania i ustawienia wartości właściwości. Podtypy projektu mogą również rozszerzać tabelę danych związanych z kompilacją przez dodanie dodatkowych właściwości, które mają zostać utrwalone i przez usunięcie właściwości, aby nie były utrwalane.
 
  Aby zmodyfikować dane programu MSBuild, podtyp projektu jest odpowiedzialny za pobieranie obiektu właściwości programu MSBuild z podstawowego systemu projektu za pośrednictwem <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> . <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> jest interfejsem zaimplementowanym w podstawowym systemie projektu i agregowanym podtypem zapytania dla tego projektu przez uruchomienie `QueryInterface` .

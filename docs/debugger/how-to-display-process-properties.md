@@ -1,5 +1,7 @@
 ---
 title: Wyświetl właściwości procesu | Microsoft Docs
+description: Widok procesów Wyświetla drzewo wszystkich aktywnych procesów w systemie. Dowiedz się, jak wyświetlić właściwości procesu, który pojawia się w widoku procesy.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6dee3bf419470a41ce31b1f1a1ea9164acdbe5bd
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 731036cb59891f9dd9093431200a1152ed35ff2a
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852338"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903340"
 ---
 # <a name="how-to-display-process-properties"></a>Porady: wyświetlanie właściwości procesu
 Aby dowiedzieć się więcej o procesie wymienionym w [widoku procesy](../debugger/processes-view.md), użyj [okna dialogowego właściwości procesu](../debugger/process-properties-dialog-box.md).

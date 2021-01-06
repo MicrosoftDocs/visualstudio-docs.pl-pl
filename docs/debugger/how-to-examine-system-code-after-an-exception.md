@@ -1,6 +1,7 @@
 ---
 title: Badaj kod systemu po wystąpieniu wyjątku | Microsoft Docs
-ms.custom: seodec18
+description: Dowiedz się, jak przeanalizować kod w wywołaniu systemowym, aby znaleźć przyczynę wyjątku. Procedura ma zastosowanie, nawet jeśli symbole dla kodu systemowego nie zostały załadowane.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fe2dcc283f84bbcd5cd0b5a04dd5d1c300d9e14
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eceb9f898b4329940408e4063dc73d81e2a604a4
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349656"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903458"
 ---
 # <a name="how-to-examine-system-code-after-an-exception"></a>Porady: badanie kodu systemu po wystąpieniu wyjątku
 Gdy wystąpi wyjątek, może być konieczne przeanalizowanie kodu wewnątrz wywołania systemowego w celu ustalenia przyczyny wyjątku. Poniższa procedura wyjaśnia, jak to zrobić, jeśli nie masz symboli ładowanych dla kodu systemowego lub jeśli Tylko mój kod jest włączona.

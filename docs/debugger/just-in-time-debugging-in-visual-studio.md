@@ -1,5 +1,7 @@
 ---
 title: Wyłącz debuger just in Time | Microsoft Docs
+description: W przypadku wystąpienia błędu w aplikacji może być otwarte okno dialogowe debuger just in Time. Dowiedz się, co możesz zrobić, gdy tak się stanie, i sposoby ich zapobiegania.
+ms.custom: SEO-VS-2020
 ms.date: 05/23/2018
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3155c2cdc9ea3dc5208a52e5fe37f697a4ad5ef6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7904b4bbf56c0a547d9f7b1e94bb46af8dd48d98
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86386124"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903899"
 ---
 # <a name="disable-the-just-in-time-debugger"></a>Wyłączanie debugera just in time
 
@@ -24,7 +26,7 @@ Okno dialogowe debuger just in time może zostać otwarte w przypadku wystąpien
 
 Debuger just in Time umożliwia uruchamianie programu Visual Studio w celu debugowania błędu. Aby wyświetlić szczegółowe informacje o błędzie lub spróbować go debugować, musisz mieć zainstalowany program Visual Studio lub inny wybrany debuger.
 
-Jeśli już jesteś użytkownikiem programu Visual Studio i chcesz spróbować debugować błąd, zobacz [debugowanie przy użyciu debugera just in Time](../debugger/debug-using-the-just-in-time-debugger.md). Jeśli nie możesz naprawić błędu lub chcesz zachować debuger just in Time, możesz [wyłączyć debugowanie just in Time z programu Visual Studio](debug-using-the-just-in-time-debugger.md#BKMK_Enabling).
+Jeśli jesteś już użytkownikiem programu Visual Studio i chcesz spróbować debugować błąd, zobacz [debugowanie przy użyciu debugera just in Time](../debugger/debug-using-the-just-in-time-debugger.md). Jeśli nie możesz naprawić błędu lub chcesz zachować debuger just in Time, możesz [wyłączyć debugowanie just in Time z programu Visual Studio](debug-using-the-just-in-time-debugger.md#BKMK_Enabling).
 
 Jeśli program Visual Studio został zainstalowany, ale nie jest już potrzebny, może być konieczne [wyłączenie debugowania just in Time w rejestrze systemu Windows](debug-using-the-just-in-time-debugger.md#disable-just-in-time-debugging-from-the-windows-registry).
 
@@ -32,14 +34,14 @@ Jeśli nie masz zainstalowanego programu Visual Studio, możesz zapobiec debugow
 
 - Jeśli próbujesz uruchomić aplikację sieci Web, wyłącz debugowanie skryptów:
 
-  W oknie **Control Panel**  >  **Opcje sieciowe i internetowe**w panelu sterowania systemu Windows  >  **Internet Options**wybierz opcję **Wyłącz debugowanie skryptów (Internet Explorer)** i **Wyłącz debugowanie skryptów (inne)**. Dokładne kroki i ustawienia zależą od używanej wersji systemu Windows i przeglądarki.
+  W oknie   >  **Opcje sieciowe i internetowe** w panelu sterowania systemu Windows  >  wybierz opcję **Wyłącz debugowanie skryptów (Internet Explorer)** i **Wyłącz debugowanie skryptów (inne)**. Dokładne kroki i ustawienia zależą od używanej wersji systemu Windows i przeglądarki.
 
   ![Opcje internetowe w trybie JIT](../debugger/media/jitinternetoptions.png "Opcje internetowe w trybie JIT")
 
 - Jeśli przechowujesz aplikację sieci Web ASP.NET w usługach IIS, wyłącz debugowanie po stronie serwera:
 
-  1. W obszarze **Widok funkcji**Menedżera usług IIS w **sekcji ASP.NET** kliknij dwukrotnie pozycję **kompilacja platformy .NET**lub zaznacz ją, a następnie wybierz pozycję **Otwórz funkcję** w okienku **Akcje** .
-  1. W **Behavior**obszarze  >  **debugowanie**zachowania wybierz opcję **Fałsz**. Kroki różnią się w przypadku starszych wersji usług IIS.
+  1. W obszarze **Widok funkcji** Menedżera usług IIS w **sekcji ASP.NET** kliknij dwukrotnie pozycję **kompilacja platformy .NET** lub zaznacz ją, a następnie wybierz pozycję **Otwórz funkcję** w okienku **Akcje** .
+  1. W obszarze  >  **debugowanie** zachowania wybierz opcję **Fałsz**. Kroki różnią się w przypadku starszych wersji usług IIS.
 
 Po wyłączeniu debugowania just-in-Time aplikacja może być w stanie obsłużyć błąd i działać normalnie.
 

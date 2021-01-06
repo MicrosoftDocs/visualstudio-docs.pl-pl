@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: Publikowanie rozszerzenia programu Visual Studio | Microsoft Docs'
+description: Dowiedz się, jak opublikować rozszerzenie programu Visual Studio w Visual Studio Marketplace, co umożliwia deweloperom przeglądanie w poszukiwaniu nowych i zaktualizowanych rozszerzeń.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6bd7a5d9622f7aea7382522dcf69ce660b61ae7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cbdd283c5d147c53e7d82843207b48d0dbf6e6e9
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904743"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877887"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>Przewodnik: Publikowanie rozszerzenia programu Visual Studio
 
@@ -68,7 +70,7 @@ W tym artykule jest używane domyślne rozszerzenie pakietu VSPackage, ale kroki
 
 6. Wybierz wydawcę, którego chcesz użyć do przekazania rozszerzenia. Możesz zmienić wydawców, klikając nazwy wydawców z lewej strony. Kliknij pozycję **nowe rozszerzenie** i wybierz pozycję **Visual Studio**.
 
-7. W **1: Przekaż rozszerzenie**, możesz przesłać plik VSIX bezpośrednio do Visual Studio Marketplace lub po prostu dodać link do własnej witryny sieci Web. W tym przykładzie zostanie przekazane rozszerzenie *TestPublish. vsix* . Przeciągnij i upuść rozszerzenie lub Użyj linku **kliknij** , aby wyszukać plik. Znajdź rozszerzenie w folderze \bin\Release projektu.  Kliknij pozycję **Kontynuuj**.
+7. W **1: Przekaż rozszerzenie**, możesz przesłać plik VSIX bezpośrednio do Visual Studio Marketplace lub po prostu dodać link do własnej witryny sieci Web. W tym przykładzie zostanie przekazane rozszerzenie *TestPublish. vsix* . Przeciągnij i upuść rozszerzenie lub Użyj linku **kliknij** , aby wyszukać plik. Znajdź rozszerzenie w folderze \bin\Release projektu.  Kliknij przycisk **Kontynuuj**.
 
 8. W **2: Podaj szczegóły rozszerzenia**, niektóre pola są wypełniane automatycznie z pliku *source. Extension. vsixmanifest* z Twojego rozszerzenia. Więcej szczegółowych informacji na ten temat znajduje się w poniższych tematach:
 
@@ -106,7 +108,7 @@ W tym artykule jest używane domyślne rozszerzenie pakietu VSPackage, ale kroki
 
    ![Menu wprowadzanie rozszerzenia](media/extension-entry-menu.png)
 
-10. Po kliknięciu pozycji **Udostępnij publicznie**Twoje rozszerzenie jest teraz publiczne. Przeszukaj Visual Studio Marketplace rozszerzenia.
+10. Po kliknięciu pozycji **Udostępnij publicznie** Twoje rozszerzenie jest teraz publiczne. Przeszukaj Visual Studio Marketplace rozszerzenia.
 
 ## <a name="add-additional-users-to-manage-your-publisher-account"></a>Dodawanie dodatkowych użytkowników w celu zarządzania kontem wydawcy
 

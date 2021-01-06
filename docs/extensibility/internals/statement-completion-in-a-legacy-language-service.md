@@ -1,5 +1,7 @@
 ---
 title: Uzupełnianie instrukcji w starszej wersji usługi językowej | Microsoft Docs
+description: Dowiedz się, jak działa uzupełnianie instrukcji i jak wdrożyć ją w starszej wersji usługi językowej w pakietu VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbeb360cf5bc0f74d6b2d9b93086382dd35da988
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a1534c6ba029cf47cb637e958422efeecb970f35
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704939"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877770"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>Uzupełnianie instrukcji w starszej wersji usługi językowej
 Uzupełnianie instrukcji to proces, za pomocą którego usługa języka ułatwia użytkownikom zakończenie słowa kluczowego języka lub elementu, który rozpoczął pisanie w edytorze podstawowym. W tym temacie opisano, jak działa uzupełnianie instrukcji i jak wdrożyć ją w usłudze językowej.

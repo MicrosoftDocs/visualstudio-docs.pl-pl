@@ -1,6 +1,7 @@
 ---
 title: Wyświetlanie pamięci dla zmiennych w debugerze | Microsoft Docs
-ms.custom: ''
+description: Dowiedz się, jak używać systemu Windows w trakcie debugowania, aby zobaczyć miejsce w pamięci używane przez aplikację. Inne okna pokazują zmienne i miejsca, w których znajdują się one w pamięci.
+ms.custom: SEO-VS-2020
 ms.date: 10/04/2018
 ms.topic: how-to
 f1_keywords:
@@ -24,18 +25,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51070e06f684c2e873ded76ec8797ed7587745ff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0c39024e32c899310b88c1b0583d5b292b063937
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348324"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903129"
 ---
 # <a name="use-the-memory-windows-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Korzystanie z okien pamięci w debugerze programu Visual Studio (C#, C++, Visual Basic, F #)
 
 Podczas debugowania, okno **pamięci** pokazuje miejsce w pamięci używane przez aplikację.
 
-Okna debugera, takie jak **Watch**, **autostarty**, zmienne **lokalne**i okno dialogowe **QuickWatch** , umożliwiają wyświetlanie zmiennych, które są przechowywane w określonych lokalizacjach w pamięci. W oknie **pamięci** zostanie wyświetlony obraz ogólny. Widok pamięci jest wygodną metodą badania dużych fragmentów danych (np. buforów lub dużych ciągów), które nie są dobrze wyświetlane w innych oknach.
+Okna debugera, takie jak **Watch**, **autostarty**, zmienne **lokalne** i okno dialogowe **QuickWatch** , umożliwiają wyświetlanie zmiennych, które są przechowywane w określonych lokalizacjach w pamięci. W oknie **pamięci** zostanie wyświetlony obraz ogólny. Widok pamięci jest wygodną metodą badania dużych fragmentów danych (np. buforów lub dużych ciągów), które nie są dobrze wyświetlane w innych oknach.
 
 Okno **pamięci** nie jest ograniczone do wyświetlania danych. Wyświetla wszystko w przestrzeni pamięci, w tym dane, kod i losowe bity elementów bezużytecznych w nieprzydzielonej pamięci.
 
@@ -46,15 +47,15 @@ Okno **pamięci** nie jest dostępne na potrzeby debugowania skryptów i SQL. Te
 Podobnie jak w przypadku innych okien debugera, okna **pamięci** są dostępne tylko podczas sesji debugowania.
 
 >[!IMPORTANT]
->Aby włączyć okna **pamięci** , należy **włączyć debugowanie na poziomie adresu** w **Tools**  >  **opcjach** narzędzia (lub **Debug**  >  **Opcje**debugowania) > **debugowanie**  >  **Ogólne**.
+>Aby włączyć okna **pamięci** , należy **włączyć debugowanie na poziomie adresu** w   >  **opcjach** narzędzia (lub   >  **Opcje** debugowania) > **debugowanie**  >  **Ogólne**.
 
 **Aby otworzyć okno pamięci**
 
-1. Upewnij się, że opcja **Włącz debugowanie na poziomie adresu** została wybrana w **Tools**  >  **opcji** narzędzia (lub **Debug**  >  **Opcje**debugowania) > **debugowanie**  >  **Ogólne**.
+1. Upewnij się, że opcja **Włącz debugowanie na poziomie adresu** została wybrana w   >  **opcji** narzędzia (lub   >  **Opcje** debugowania) > **debugowanie**  >  **Ogólne**.
 
-1. Rozpocznij debugowanie, wybierając zieloną strzałkę, naciskając klawisz **F5**lub wybierając **Debuguj**  >  **Rozpocznij debugowanie**.
+1. Rozpocznij debugowanie, wybierając zieloną strzałkę, naciskając klawisz **F5** lub wybierając **Debuguj**  >  **Rozpocznij debugowanie**.
 
-2. W obszarze **Debuguj**  >  **pamięć systemu Windows**  >  **Memory**wybierz opcję **pamięć 1**, **pamięć 2**, **pamięć 3**lub **pamięć 4**. (Niektóre wersje [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] oferty oferują tylko jedno okno **pamięci** ).
+2. W obszarze **Debuguj**  >  **pamięć systemu Windows**  >  wybierz opcję **pamięć 1**, **pamięć 2**, **pamięć 3** lub **pamięć 4**. (Niektóre wersje [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] oferty oferują tylko jedno okno **pamięci** ).
 
 ## <a name="move-around-in-the-memory-window"></a>Poruszanie się w oknie pamięci
 
@@ -76,7 +77,7 @@ Domyślnie okno **pamięci** traktuje wyrażenia **adresów** jako wyrażenia dy
 
 **Aby przenieść się do lokalizacji w pamięci, wprowadzając ją w polu adres:**
 
-- Wpisz lub wklej adres lub wyrażenie w polu **adres** , a następnie naciśnij klawisz **Enter**lub wybierz go z listy rozwijanej w polu **adres** . Okno **pamięci** dostosowuje się do wyświetlania tego adresu u góry.
+- Wpisz lub wklej adres lub wyrażenie w polu **adres** , a następnie naciśnij klawisz **Enter** lub wybierz go z listy rozwijanej w polu **adres** . Okno **pamięci** dostosowuje się do wyświetlania tego adresu u góry.
 
 ## <a name="customize-the-memory-window"></a>Dostosowywanie okna pamięci
 

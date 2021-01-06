@@ -1,5 +1,7 @@
 ---
 title: Tworzenie mapy wizualnej stosu wywołań | Microsoft Docs
+description: Utwórz mapę kodu, aby wizualnie śledzić stos wywołań podczas debugowania. Utwórz notatki na mapie, aby śledzić, co robi kod, i możesz skupić się na znajdowaniu błędów.
+ms.custom: SEO-VS-2020
 ms.date: 11/26/2018
 ms.topic: how-to
 f1_keywords:
@@ -29,12 +31,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cf0cda942241ca77aa750624b6de25b5ae39391
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 965232f56fcd2bf0d459910e983fb10dcca7f96d
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348538"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903834"
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>Tworzenie wizualnej mapy stosu wywołań podczas debugowania (C#, Visual Basic, C++, JavaScript)
 
@@ -55,7 +57,7 @@ Oto krótkie spojrzenie na mapę kodu:
 
 1. W Visual Studio Enterprise języku C#, Visual Basic, C++ lub JavaScript Rozpocznij debugowanie, wybierając **Debuguj**  >  **Rozpocznij debugowanie** lub naciskając klawisz **F5**.
 
-1. Gdy aplikacja przejdzie w tryb przerwania lub przejdziesz do funkcji, wybierz pozycję **Debuguj**  >  **mapę kodu**lub naciśnij **klawisze CTRL** + **SHIFT** + **`** .
+1. Gdy aplikacja przejdzie w tryb przerwania lub przejdziesz do funkcji, wybierz pozycję **Debuguj**  >  **mapę kodu** lub naciśnij **klawisze CTRL** + **SHIFT** + **`** .
 
    Bieżący stos wywołań jest wyświetlany w kolorze pomarańczowym na nowej mapie kodu:
 
@@ -77,7 +79,7 @@ Domyślnie tylko własny kod jest wyświetlany na mapie. Aby wyświetlić kod ze
 - Kliknij prawym przyciskiem myszy w oknie **stos wywołań** i wybierz polecenie **Pokaż kod zewnętrzny**:
 
   ![Wyświetlanie kodu zewnętrznego przy użyciu okna stosu wywołań](../debugger/media/debuggermap_callstackmenu.png "DebuggerMap_CallStackMenu")
-- Lub usuń zaznaczenie opcji **Włącz tylko mój kod** w **narzędziu** Visual Studio Tools (lub **Debug**) > **Options**  >  **debugowania**:
+- Lub usuń zaznaczenie opcji **Włącz tylko mój kod** w **narzędziu** Visual Studio Tools (lub **Debug**) >   >  **debugowania**:
 
   ![Pokaż kod zewnętrzny przy użyciu okna dialogowego opcji](../debugger/media/debuggermap_debugoptions.png "DebuggerMap_DebugOptions")
 
@@ -115,7 +117,7 @@ Aby zatrzymać automatyczne dodawanie nowych stosów wywołań przez mapę, wybi
 
 Teraz, gdy masz już mapę, w języku C# lub Visual Basic można dodawać elementy, takie jak pola, właściwości i inne metody, aby śledzić, co dzieje się w kodzie.
 
-Aby przejść do definicji metody w kodzie, kliknij dwukrotnie metodę na mapie lub zaznacz ją i naciśnij klawisz **F12**lub kliknij ją prawym przyciskiem myszy i wybierz polecenie **Przejdź do definicji**.
+Aby przejść do definicji metody w kodzie, kliknij dwukrotnie metodę na mapie lub zaznacz ją i naciśnij klawisz **F12** lub kliknij ją prawym przyciskiem myszy i wybierz polecenie **Przejdź do definicji**.
 
 ![Przejdź do definicji kodu dla metody na mapie kodu](../debugger/media/debuggermap_gotocodedefinition.png "DebuggerMap_GoToCodeDefinition")
 

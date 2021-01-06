@@ -1,5 +1,7 @@
 ---
 title: Siatka wyświetlania właściwości | Microsoft Docs
+description: Dowiedz się, gdzie nazwy właściwości i pola wartości właściwości znajdują się w siatce w okno Właściwości oraz jak korzystać z siatki w rozszerzaniu właściwości.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d094c32ba8a64fc636f3fb6dfb2944dc3955628a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 418501ada340614d084e9796a59a46f8612aa743
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706187"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878030"
 ---
 # <a name="properties-display-grid"></a>Siatka wyświetlania właściwości
 
@@ -29,7 +31,7 @@ Lista dwóch kolumn zawiera niezależne od konfiguracji właściwości, które m
 
 2. Ustaw `pfHide` parametr w <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.HideProperty%2A> na `TRUE` .
 
-Aby wypchnąć informacje do okna **Właściwości** , środowisko IDE używa <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> . <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> jest wywoływany przez pakietów VSPackage dla każdego okna, które zawiera obiekty możliwe do wybrania z powiązanymi właściwościami, które mają być wyświetlane w oknie **Właściwości** . **Eksplorator rozwiązań**implementacja <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> wywołań `GetProperty` przy użyciu [__VSHPROPID. VSHPROPID_BrowseObject](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_BrowseObject>) w hierarchii projektu w celu uzyskania obiektów, które można przeglądać w hierarchii.
+Aby wypchnąć informacje do okna **Właściwości** , środowisko IDE używa <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> . <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> jest wywoływany przez pakietów VSPackage dla każdego okna, które zawiera obiekty możliwe do wybrania z powiązanymi właściwościami, które mają być wyświetlane w oknie **Właściwości** . **Eksplorator rozwiązań** implementacja <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> wywołań `GetProperty` przy użyciu [__VSHPROPID. VSHPROPID_BrowseObject](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_BrowseObject>) w hierarchii projektu w celu uzyskania obiektów, które można przeglądać w hierarchii.
 
 Jeśli pakietu VSPackage nie obsługuje [__VSHPROPID. VSHPROPID_BrowseObject](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_BrowseObject>), IDE próbuje użyć <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> wartości dla [__VSHPROPID. VSHPROPID_SelContainer](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_SelContainer>) , że dostarcza element lub elementy hierarchii.
 
