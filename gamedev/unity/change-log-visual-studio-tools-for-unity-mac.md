@@ -2,7 +2,7 @@
 title: Dziennik zmian (Visual Studio Tools for Unity, Mac) | Microsoft Docs
 description: Wyświetl dziennik zmian dla Visual Studio Tools for Unity i Mac. Zobacz zmiany w wersji 1.0.0.0 przez 2.7.0.0 i poza nią.
 ms.custom: ''
-ms.date: 11/13/2020
+ms.date: 12/18/2020
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -12,16 +12,25 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 2f026c9d33f5aa49ebb7e974a507c85b87073897
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 53aade9880686746d11fb899b377e81174915bfa
+ms.sourcegitcommit: 4976419fae731860295dbcd072e6778832f7255d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672850"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97917908"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Dziennik zmian (narzędzia Visual Studio Tools for Unity, komputery Mac)
 
 Visual Studio Tools for Unity dziennik zmian.
+
+## <a name="2840"></a>2.8.4.0
+Wydanie 15 grudnia 2020
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+- **Integration**
+
+  - Rozwiązano problem związany z niezawodnością podczas zamykania kreatora tworzenia zdarzeń aparatu Unity.
 
 ## <a name="2830"></a>2.8.3.0
 Wydana 10 listopada 2020
