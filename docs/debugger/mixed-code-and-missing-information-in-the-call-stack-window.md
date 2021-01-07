@@ -1,5 +1,6 @@
 ---
 title: Kod mieszany & brakujące informacje w oknie stosu wywołań
+description: W przypadku programów w trybie mieszanym (natywny i zarządzany) debuger nie zawsze może wyświetlić kompletnego stosu wywołań. Poznaj możliwe rozbieżności, gdy kod natywny wywołuje kod zarządzany.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
@@ -24,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b32fe52b31daa384718eae629d3051bade93959d
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: da8d3a469b957444935150f91567636aef0fb38a
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808158"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975267"
 ---
 # <a name="mixed-code-and-missing-information-in-the-call-stack-window"></a>Kod mieszany i brakujące informacje w oknie stosu wywołań
 Ze względu na różnice między stosami wywołań dla kodu zarządzanego i natywnego debuger nie może zawsze pokazać kompletnego stosu wywołań, gdy typy kodu są mieszane. Gdy kod natywny wywołuje kod zarządzany, można zauważyć następujące rozbieżności w oknie **stosu wywołań** :

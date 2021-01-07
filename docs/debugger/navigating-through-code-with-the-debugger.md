@@ -1,6 +1,7 @@
 ---
 title: Nawigowanie po kodzie za pomocą debugera | Microsoft Docs
-ms.custom: seodec18
+description: 'Dowiedz się, jak rozwiązywać problemy z kodem za pomocą debugera programu Visual Studio. Tematy obejmują: poruszanie się w tryb przerwania, krokowe przechodzenie przez kod i uruchamianie do obiektu docelowego.'
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/12/2018
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cd7bb050204d65bb78a597c1ae3c7eea36ac184
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 0ffe163ab567de98161f185ba2f3d2522c505095
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729356"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975215"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Nawigowanie po kodzie za pomocą debugera programu Visual Studio
 
@@ -110,7 +111,7 @@ Możesz powiedzieć, że debuger zostanie uruchomiony do momentu, aż osiągnie 
 
    ![Nowe okno dialogowe punktu przerwania funkcji](../debugger/media/dbg_execution_newbreakpoint.png "Nowy punkt przerwania funkcji")
 
-1. Wybierz pozycję **OK**.
+1. Wybierz przycisk **OK**.
 
 Jeśli funkcja jest przeciążona lub w więcej niż jednej przestrzeni nazw, możesz wybrać odpowiedni element w oknie **punkty przerwania** .
 

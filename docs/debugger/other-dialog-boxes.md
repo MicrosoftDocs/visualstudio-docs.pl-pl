@@ -1,5 +1,7 @@
 ---
 title: Inne okna dialogowe | Microsoft Docs
+description: 'Ta sekcja dokumentuje dwa okna dialogowe: informacje o programie Microsoft Spy + + i informacje o prawach autorskich dotyczące pomocy programu Spy + +.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6eda65a49fce09dbbb085da7258a8536484af174
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e0db14b7aa641bd7da2d611b9f5156fb1da52f86
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62905109"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975176"
 ---
 # <a name="other-dialog-boxes"></a>Inne okna dialogowe
 Te okna dialogowe zawierają informacje o programie Spy + +.

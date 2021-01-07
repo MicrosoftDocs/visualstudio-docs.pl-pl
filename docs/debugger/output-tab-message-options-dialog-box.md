@@ -1,5 +1,7 @@
 ---
 title: Karta dane wyjściowe, okno dialogowe Opcje komunikatów | Microsoft Docs
+description: Na karcie dane wyjściowe opcji komunikatów można określić, jakie dane komunikaty są wyświetlane w widoku komunikaty. W tym artykule opisano dostępne ustawienia.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63268fdbc320e78a697c181112dbeaaf8ad161ab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4d965b92a30d8d8a5b998a27bea9651f8669c8f
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62905078"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975085"
 ---
 # <a name="output-tab-message-options-dialog-box"></a>Karta danych wyjściowych, okno dialogowe opcji komunikatów
 Karta **dane wyjściowe** służy do określania, jakie dane z poszczególnych komunikatów mają być [wyświetlane w widoku komunikatów](../debugger/messages-view.md). Aby wyświetlić okno [dialogowe Opcje wiadomości](../debugger/message-options-dialog-box.md), wybierz pozycję **komunikaty dziennika** z menu **Spy** .

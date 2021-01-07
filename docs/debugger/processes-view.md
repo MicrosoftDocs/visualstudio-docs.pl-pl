@@ -1,5 +1,7 @@
 ---
 title: Widok procesów | Microsoft Docs
+description: Widok procesów Wyświetla drzewo wszystkich aktywnych procesów w systemie. Zapoznaj się z zawartością i używa i postępuj zgodnie z linkami do dodatkowych informacji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99ba60021410f1965e05f7c5479231013d53cb71
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a52da28d01eac4f04081497888fbbfccaf4495e2
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62904235"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975137"
 ---
 # <a name="processes-view"></a>Widok procesów
 Widok procesy Wyświetla drzewo wszystkich aktywnych procesów w systemie. Zostanie wyświetlony identyfikator procesu i nazwa modułu. Użyj widoku procesy, jeśli chcesz sprawdzić konkretny proces systemowy, który zwykle odpowiada programowi wykonującemu. Procesy są identyfikowane przez nazwy modułów lub wyznaczono "procesy systemowe".

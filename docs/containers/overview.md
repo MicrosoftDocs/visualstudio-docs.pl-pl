@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: overview
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: f1473c731dbf9413cf695e1b2331039c3880b8d7
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: 4f8c1c265f49b600880cd1278b51095fda9cfb1d
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91829866"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975150"
 ---
 # <a name="container-tools-in-visual-studio"></a>Narzędzia kontenerów w programie Visual Studio
 
@@ -119,9 +119,9 @@ Powtórz ten proces z innymi projektami, które chcesz kontrolować przy użyciu
 Aby dodać obsługę Kubernetes, zainstaluj [Visual Studio Tools for Kubernetes](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-tools-for-kubernetes).
 ::: moniker-end
 
-Dzięki obsłudze Kubernetes można włączyć połączenie między projektem lokalnym i klastrem Kubernetes działającym w [usłudze Azure Kubernetes Service (AKS)](/azure/aks), a tym samym zmodyfikować i debugować usługi działające w programie AKS przy użyciu programu Visual Studio.  Ta usługa jest świadczona przez [Azure dev Spaces](/azure/dev-spaces/quickstart-netcore-visualstudio). Azure Dev Spaces pozwala także skonfigurować oddzielne gałęzie usług Kubernetes o nazwie *Spaces* dla celów programistycznych, dzięki czemu możesz efektywnie izolować usługi produkcyjne od wersji roboczych w fazie projektowania i zachować odrębne modyfikacje oddzielone od siebie.
+Dzięki obsłudze Kubernetes można włączyć połączenie między projektem lokalnym i klastrem Kubernetes działającym w [usłudze Azure Kubernetes Service (AKS)](/azure/aks), a tym samym zmodyfikować i debugować usługi działające przy użyciu programu Visual Studio.  Ta usługa jest świadczona przez [mostek do Kubernetes](overview-bridge-to-kubernetes.md). Mostek do Kubernetes umożliwia również Konfigurowanie oddzielnych gałęzi usług Kubernetes do celów programistycznych, dzięki czemu można efektywnie izolować usługi produkcyjne od wersji roboczych w trakcie opracowywania i utrzymywać nieznacznie oddzielone od siebie zmiany.
 
-Aby dodać obsługę Kubernetes do projektów, wybierz pozycję **Kubernetes/Helm** , gdy zostanie dodana obsługa aranżacji kontenera. Do projektu dodawane są kilka plików, w tym *azds. YAML*, które konfiguruje wykresy Azure dev Spaces i Helm, które opisują strukturę usług Kubernetes.
+Aby dodać obsługę Kubernetes do projektów, wybierz pozycję **Kubernetes/Helm** , gdy zostanie dodana obsługa aranżacji kontenera. Do projektu dodawane są kilka plików, w tym wykresy Helm opisujące strukturę usług Kubernetes Services. Aby rozpocząć pracę z usługą Bridge do Kubernetes, zobacz [Korzystanie z mostka do Kubernetes](bridge-to-kubernetes.md).
 
 ## <a name="service-fabric-support"></a>Obsługa Service Fabric
 

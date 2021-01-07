@@ -1,5 +1,7 @@
 ---
 title: Techniki debugowania MFC | Microsoft Docs
+description: 'Poznaj techniki debugowania programów MFC, w tym: kodowane punkty przerwania, śledzenie, Wykrywanie przecieków pamięci, zrzuty pamięci obiektów i zmniejszenie rozmiaru programu.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -25,12 +27,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06b42dbf31a8b5f4cb66de047bc1e08a4f840353
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 5cf00191aff408b1133c281e10eea17e3a923215
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600239"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975124"
 ---
 # <a name="mfc-debugging-techniques"></a>Techniki testowania MFC
 W przypadku debugowania programu MFC te techniki debugowania mogą być przydatne.
@@ -430,7 +432,7 @@ Kompilowanie wybranych modułów przy użyciu bibliotek debugowania MFC umożliw
 
 3. Najpierw utworzysz nową konfigurację projektu.
 
-   1. W oknie dialogowym ** \<Project> strony właściwości** kliknij przycisk **Configuration Manager** .
+   1. W oknie dialogowym **\<Project> strony właściwości** kliknij przycisk **Configuration Manager** .
 
    2. W [oknie dialogowym Configuration Manager](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100))Znajdź swój projekt w siatce. W kolumnie **Konfiguracja** wybierz opcję **\<New...>** .
 
@@ -448,7 +450,7 @@ Kompilowanie wybranych modułów przy użyciu bibliotek debugowania MFC umożliw
 
    2. W siatce ustawienia projektu rozwiń pozycję **wartości domyślne projektu** (w razie potrzeby).
 
-   3. W obszarze **wartości domyślne projektu**Znajdź **użycie MFC**. Bieżące ustawienie pojawia się w prawej kolumnie siatki. Kliknij bieżące ustawienie i zmień je tak, aby **używało MFC w bibliotece statycznej**.
+   3. W obszarze **wartości domyślne projektu** Znajdź **użycie MFC**. Bieżące ustawienie pojawia się w prawej kolumnie siatki. Kliknij bieżące ustawienie i zmień je tak, aby **używało MFC w bibliotece statycznej**.
 
    4. W lewym okienku okna dialogowego **strony właściwości** Otwórz folder **C/C++** i wybierz **preprocesor**. W siatce właściwości Znajdź **Definicje preprocesora** i Zastąp ciąg "NDEBUG" "_DEBUG".
 
@@ -472,7 +474,7 @@ Kompilowanie wybranych modułów przy użyciu bibliotek debugowania MFC umożliw
 
    6. Kliknij ustawienia **formatu informacji debugowania** i wybierz żądaną opcję (zazwyczaj **/Zi**), aby uzyskać informacje o debugowaniu.
 
-   7. Jeśli używasz aplikacji wygenerowanej przez Kreatora aplikacji lub mającej prekompilowane nagłówki, musisz wyłączyć prekompilowane nagłówki lub skompilować je ponownie przed skompilowaniem innych modułów. W przeciwnym razie pojawi się ostrzeżenie C4650 i komunikat o błędzie C2855. Można wyłączyć prekompilowane nagłówki, zmieniając ustawienie **Utwórz/Użyj prekompilowanych nagłówków** w oknie dialogowym ** \<Project> Właściwości** (folder**Właściwości konfiguracji** , podfolder **C/C++** , Kategoria **prekompilowanych nagłówków** ).
+   7. Jeśli używasz aplikacji wygenerowanej przez Kreatora aplikacji lub mającej prekompilowane nagłówki, musisz wyłączyć prekompilowane nagłówki lub skompilować je ponownie przed skompilowaniem innych modułów. W przeciwnym razie pojawi się ostrzeżenie C4650 i komunikat o błędzie C2855. Można wyłączyć prekompilowane nagłówki, zmieniając ustawienie **Utwórz/Użyj prekompilowanych nagłówków** w oknie dialogowym **\<Project> Właściwości** (folder **Właściwości konfiguracji** , podfolder **C/C++** , Kategoria **prekompilowanych nagłówków** ).
 
 7. Z menu **kompilacja** wybierz opcję **Kompiluj** , aby ponownie skompilować pliki projektu, które są nieaktualne.
 

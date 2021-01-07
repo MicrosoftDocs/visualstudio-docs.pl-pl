@@ -1,5 +1,7 @@
 ---
 title: Okno dialogowe właściwości procesu | Microsoft Docs
+description: 'Użyj właściwości procesu, aby dowiedzieć się więcej na temat procesu, który został wybrany w widoku procesy. Istnieją cztery karty: ogólne, pamięć, plik stronicowania i spacja.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2448659a8725c7e284e12a99d52478144ebec1b9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: abf4e8c6d1e61441459b0b48adfda4fa8728f44a
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62903759"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975111"
 ---
 # <a name="process-properties-dialog-box"></a>Okno dialogowe właściwości procesu
 Użyj tego okna dialogowego, aby dowiedzieć się więcej o określonym procesie. Aby wyświetlić to okno dialogowe, Przenieś fokus do okna [widok procesów](../debugger/processes-view.md) . Wybierz dowolny węzeł procesu w drzewie, a następnie wybierz polecenie **Właściwości** z menu **Widok** .

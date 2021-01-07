@@ -1,5 +1,7 @@
 ---
 title: Okno Dane wyjściowe, debugowanie, Opcje — okno dialogowe | Microsoft Docs
+description: Możesz określić, które typy informacji o debugowaniu mają być wyświetlane w oknie dane wyjściowe. Informacje o tym, jak to zrobić, oraz o typach informacji, które można kontrolować.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9224258a2dfd48cc17ed15f9723e455e225af8b2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7f74b0e490cf8b2baaa8818fa8f8eebb7842a30
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62904790"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975020"
 ---
 # <a name="output-window-debugging-options-dialog-box"></a>Okno danych wyjściowych, debugowanie, opcje ― Okno dialogowe
 Możesz określić, które typy informacji o debugowaniu mają być wyświetlane w oknie **dane wyjściowe** . Aby wyświetlić te opcje, otwórz menu **Narzędzia** , kliknij przycisk **Opcje**, rozwiń węzeł **debugowanie** , a następnie kliknij przycisk **okno dane wyjściowe**.
@@ -36,5 +38,5 @@ Aby uzyskać więcej informacji, zobacz [jak: wyświetlić informacje śledzenia
 Jeśli chcesz przywrócić ustawienia domyślne, możesz to **zrobić za pomocą opcji**  >  **Importuj i Eksportuj ustawienia**  >  **Zresetuj wszystkie ustawienia**. Jeśli chcesz tylko zresetować podzestaw ustawień, Zapisz ustawienia w **Kreatorze importowania i eksportowania ustawień** przed wprowadzeniem zmian, które chcesz przetestować, a następnie zaimportuj zapisane ustawienia później.
 
 ## <a name="see-also"></a>Zobacz też
-- [Debugowanie, opcje ― Okno dialogowe](../debugger/debugging-options-dialog-box.md)
+- [Debugowanie, Opcje — okno dialogowe](../debugger/debugging-options-dialog-box.md)
 - [Okno Dane wyjściowe](../ide/reference/output-window.md)

@@ -1,6 +1,7 @@
 ---
 title: Ustawienia projektu dla konfiguracji debugowania języka C++
-ms.custom: seodec18
+description: Skonfiguruj debugowanie C i C++ na stronach właściwości. W tym artykule opisano ustawienia i podano ich kategorię.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/26/2018
 ms.topic: reference
 f1_keywords:
@@ -112,12 +113,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bca39b97f6363d8b8fefcfd691b69baf85c32170
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6130b49beecb3411c275fc5d2005b7aabee262fd
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72450379"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975293"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Ustawienia projektu dla konfiguracji debugowania w języku C++
 Ustawienia projektu dla konfiguracji debugowania C lub C++ można zmienić w oknie dialogowym **strony właściwości** , zgodnie z opisem w temacie [How to: Set Debug and Release](../debugger/how-to-set-debug-and-release-configurations.md)Configurations. W poniższych tabelach przedstawiono, gdzie znaleźć ustawienia związane z debugerem w oknie dialogowym **strony właściwości** .

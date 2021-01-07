@@ -1,5 +1,7 @@
 ---
 title: Wyszukiwanie procesów — okno dialogowe | Microsoft Docs
+description: Użyj wyszukiwania procesów, aby znaleźć i wybrać węzeł dla określonego procesu w widoku procesy. Możesz określić identyfikator procesu, ciąg modułu i kierunek wyszukiwania.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 190ec35d014e6b443a9f80bf79433ac14b8fb8ad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 889c6bac2f00041af6578d31bc0c6e036d82afe1
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62903772"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975098"
 ---
 # <a name="process-search-dialog-box"></a>Wyszukiwanie procesów — Okno dialogowe
 To okno dialogowe służy do znajdowania i wybierania węzła dla określonego procesu w [widoku procesy](../debugger/processes-view.md). Aby wyświetlić to okno dialogowe, Przenieś fokus do okna widok **procesów** . Następnie wybierz pozycję **Znajdź proces** z menu **wyszukiwania** .
