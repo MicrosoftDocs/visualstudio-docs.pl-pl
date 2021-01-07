@@ -34,6 +34,8 @@
       href: perftips.md
     - name: .NET Async
       href: analyze-async.md
+    - name: Liczniki .NET
+      href: dotnet-counters-tool.md
     - name: Baza danych
       href: analyze-database.md
     - name: Podgląd zdarzeń

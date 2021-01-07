@@ -4,17 +4,19 @@
   items:
     - name: Pierwsze spojrzenie na narzędzia do testowania
       href: improve-code-quality.md
+    - name: Narzędzia i zadania dla testów jednostkowych
+      href: unit-test-your-code.md
+- name: Samouczki
+  items:
+    - name: Rozpoczęcie pracy
+      href: getting-started-with-unit-testing.md
 - name: Testowanie jednostek
   items:
-    - name: Omówienie narzędzi do testów jednostkowych
-      href: unit-test-your-code.md
-    - name: Wprowadzenie
-      href: getting-started-with-unit-testing.md
     - name: Podstawowe informacje o teście jednostkowym
       href: unit-test-basics.md
     - name: Tworzenie projektu testu jednostkowego
       href: create-a-unit-test-project.md
-    - name: 'Utwórz testy jednostkowe, polecenie'
+    - name: Tworzenie testów jednostkowych na podstawie kodu
       href: create-unit-tests-menu.md
     - name: IntelliTest
       items:
