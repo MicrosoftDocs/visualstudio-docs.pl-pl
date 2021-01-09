@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fd1ff5ff0f8c7510185236c425ddd870f8b500f
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 6fb2fde5d5629b84ccd0e136c132a200b154ea71
+ms.sourcegitcommit: dc71e9030ff35bb26916572b431d4d9e78df3d6f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97760929"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98031045"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Dołączanie do uruchomionego procesu za pomocą debugera programu Visual Studio
 
@@ -199,7 +199,7 @@ Aby szybko wybrać uruchomiony proces do dołączenia, w programie Visual Studio
 |Debugowanie aplikacji C#, Visual Basic lub C++ na komputerze lokalnym|Użyj standardowego debugowania (**F5**) lub **Dołącz do procesu**|*\<appname>. exe*|W większości scenariuszy należy używać debugowania standardowego i nie **dołączać do procesu**.|
 |Debugowanie zdalne aplikacji klasycznej systemu Windows|Zdalne narzędzia|Nie dotyczy| Zobacz [debugowanie zdalne w języku C# lub aplikacji Visual Basic](../debugger/remote-debugging-csharp.md) lub [zdalne debugowanie aplikacji w języku C++](../debugger/remote-debugging-cpp.md)|
 |Debugowanie na platformie .NET Core w systemie Linux|Użyj **dołączania do procesu**|*dotnet.exe* lub unikatowa nazwa procesu|Aby korzystać z protokołu SSH, zobacz [zdalne debugowanie programu .NET Core działającego w systemie Linux przy użyciu protokołu SSH](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md). W przypadku aplikacji kontenerowych zobacz [dołączanie do procesu działającego w kontenerze platformy Docker](../debugger/attach-to-process-running-in-docker-container.md#attach-to-a-process-running-on-a-linux-docker-container).|
-|Debugowanie aplikacji w kontenerze|*dotnet.exe* lub unikatowa nazwa procesu|Zobacz [dołączanie do procesu działającego w kontenerze platformy Docker](../debugger/attach-to-process-running-in-docker-container.md)|
+|Debugowanie aplikacji w kontenerze|Użyj **dołączania do procesu**|*dotnet.exe* lub unikatowa nazwa procesu|Zobacz [dołączanie do procesu działającego w kontenerze platformy Docker](../debugger/attach-to-process-running-in-docker-container.md)|
 |Zdalne debugowanie Python w systemie Linux|Użyj **dołączania do procesu**|*debugpy*|Zobacz [dołączanie zdalnie z narzędzi Python](../python/debugging-python-code-on-remote-linux-machines.md#attach-remotely-from-python-tools)|
 |Debuguj aplikację ASP.NET na maszynie lokalnej po uruchomieniu aplikacji bez debugera|Użyj **dołączania do procesu**|*iiexpress.exe*|Może to być przydatne do szybszego ładowania aplikacji, takich jak (na przykład), podczas profilowania. |
 |Debuguj inne obsługiwane typy aplikacji w procesie serwera|Jeśli serwer jest zdalny, użyj narzędzi zdalnych i **Dołącz do procesu**|*chrome.exe*, *iexplore.exe* lub inne procesy|W razie potrzeby użyj Monitor zasobów, aby pomóc w zidentyfikowaniu procesu. Zobacz [debugowanie zdalne](../debugger/remote-debugging.md).|
