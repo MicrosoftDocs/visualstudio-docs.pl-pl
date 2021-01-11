@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c72e53266eae11fb060ac117c4a6dc0a1c37e2e
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 631ce51df5d985e02e8ccabca258c0ef1c1318f4
+ms.sourcegitcommit: b1f7e7d7a0550d5c6f46adff3bddd44bc1d6ee1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434795"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98069477"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Instrukcje: generowanie danych metryk kodu
 
@@ -39,18 +39,13 @@ Dane metryk kodu można generować na trzy sposoby:
 - [CA1505](/dotnet/fundamentals/code-analysis/quality-rules/ca1505)
 - [CA1506](/dotnet/fundamentals/code-analysis/quality-rules/ca1506)
 
-Te reguły są domyślnie wyłączone, ale można je włączyć z poziomu [**Eksplorator rozwiązań**](use-roslyn-analyzers.md#set-rule-severity-from-solution-explorer) lub w pliku [zestawu reguł](using-rule-sets-to-group-code-analysis-rules.md) . Na przykład, aby włączyć CA1502 reguły jako ostrzeżenie, plik zestawu reguł będzie zawierać następujący wpis:
+Te reguły są domyślnie wyłączone, ale można je włączyć z poziomu [**Eksplorator rozwiązań**](use-roslyn-analyzers.md#set-rule-severity-from-solution-explorer) lub w pliku [EditorConfig](use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file) . Na przykład, aby włączyć CA1502 reguły jako ostrzeżenie, plik EditorConfig powinien zawierać następujący wpis:
 
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<RuleSet Name="Rules" Description="Rules" ToolsVersion="16.0">
-  <Rules AnalyzerId="Microsoft.CodeQuality.Analyzers" RuleNamespace="Microsoft.CodeQuality.Analyzers">
-    <Rule Id="CA1502" Action="Warning" />
-  </Rules>
-</RuleSet>
+```cs
+dotnet_diagnostic.CA1502.severity = warning
 ```
 
-### <a name="configuration"></a>Konfiguracja
+### <a name="configuration"></a>Konfigurowanie
 
 Można skonfigurować progi, w których będą wyzwalane reguły metryki kodu.
 
@@ -295,7 +290,7 @@ Jeśli nie chcesz instalować pakietu NuGet, możesz bezpośrednio wygenerować 
 
 #### <a name="metricsexe-usage"></a>Użycie Metrics.exe
 
-Aby uruchomić *Metrics.exe* , podaj projekt lub rozwiązanie oraz wyjściowy plik XML jako argumenty. Na przykład:
+Aby uruchomić *Metrics.exe*, podaj projekt lub rozwiązanie oraz wyjściowy plik XML jako argumenty. Na przykład:
 
 ```shell
 C:\>Metrics.exe /project:ConsoleApp20.csproj /out:report.xml
@@ -336,7 +331,7 @@ Począwszy od programu Visual Studio 2019 w wersji 16,4 i Microsoft. CodeAnalysi
 `LinesOfCode`Metryka jest bardziej dokładna i niezawodna w nowym narzędziu metryk kodu wiersza polecenia. Jest on niezależny od jakichkolwiek różnic codegen i nie ulega zmianie, gdy zmieni się zestaw narzędzi lub środowisko uruchomieniowe. Nowe narzędzie zlicza rzeczywiste wiersze kodu, w tym puste wiersze i komentarze.
 ::: moniker-end
 
-Inne metryki, takie jak `CyclomaticComplexity` i `MaintainabilityIndex` używają tych samych formuł co poprzednie wersje *Metrics.exe* , ale nowe narzędzie zlicza liczbę `IOperations` (instrukcje logicznego źródła) zamiast instrukcji języka pośredniego (IL). Liczby będą nieco inne niż te, które są generowane przez środowisko IDE programu Visual Studio i poprzednie wersje *Metrics.exe*.
+Inne metryki, takie jak `CyclomaticComplexity` i `MaintainabilityIndex` używają tych samych formuł co poprzednie wersje *Metrics.exe*, ale nowe narzędzie zlicza liczbę `IOperations` (instrukcje logicznego źródła) zamiast instrukcji języka pośredniego (IL). Liczby będą nieco inne niż te, które są generowane przez środowisko IDE programu Visual Studio i poprzednie wersje *Metrics.exe*.
 
 ## <a name="see-also"></a>Zobacz też
 

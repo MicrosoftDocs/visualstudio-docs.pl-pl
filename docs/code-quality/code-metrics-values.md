@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5e7ee628f5a48f573afed9753f4fad17f85e33a
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 6f843df01059adef3a94bb46501e4e75bd67d5a7
+ms.sourcegitcommit: b1f7e7d7a0550d5c6f46adff3bddd44bc1d6ee1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348648"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98069490"
 ---
 # <a name="code-metrics-values"></a>Wartości metryk kodu
 
@@ -36,19 +36,19 @@ Aby uzyskać informacje o sposobach generowania danych metryk kodu w programie V
 
 Na poniższej liście przedstawiono wyniki metryki kodu, które program Visual Studio oblicza:
 
-- **Indeks utrzymania** — oblicza wartość indeksu z przedziału od 0 do 100, która reprezentuje względną łatwość utrzymywania kodu. Wysoka wartość to lepsza łatwość utrzymania. Klasyfikacje kodowane kolorami mogą szybko identyfikować problemy w kodzie. Zielona Ocena wynosi od 20 do 100 i wskazuje, że kod ma dobrą łatwość utrzymania. Żółta Klasyfikacja ma wartość z zakresu od 10 do 19 i wskazuje, że kod jest umiarkowanie konserwowany. Czerwona Ocena jest klasyfikacją od 0 do 9 i wskazuje na niską łatwość utrzymania. Aby uzyskać więcej informacji, zobacz wpis w blogu [zakres i znaczenie indeksu łatwość utrzymania](/archive/blogs/codeanalysis/maintainability-index-range-and-meaning) .
+- **Indeks utrzymania** — oblicza wartość indeksu z przedziału od 0 do 100, która reprezentuje względną łatwość utrzymywania kodu. Wysoka wartość to lepsza łatwość utrzymania. Klasyfikacje kodowane kolorami mogą szybko identyfikować problemy w kodzie. Zielona Ocena wynosi od 20 do 100 i wskazuje, że kod ma dobrą łatwość utrzymania. Żółta Klasyfikacja ma wartość z zakresu od 10 do 19 i wskazuje, że kod jest umiarkowanie konserwowany. Czerwona Ocena jest klasyfikacją od 0 do 9 i wskazuje na niską łatwość utrzymania. Aby uzyskać więcej informacji, zobacz [zakres indeksu łatwość i znaczenie](code-metrics-maintainability-index-range-and-meaning.md).
 
 - **Złożoność cyklomatyczna** — mierzy strukturalną złożoność kodu. Jest on tworzony przez obliczenie liczby różnych ścieżek kodu w przepływie programu. Program, który ma złożony przepływ sterowania, wymaga więcej testów do osiągnięcia dobrego pokrycia kodu i jest mniej utrzymany. Aby uzyskać więcej informacji, zobacz [wpis Wikipedia dotyczący złożoności cyklomatyczna](https://wikipedia.org/wiki/Cyclomatic_complexity).
 
 - **Głębokość dziedziczenia** — wskazuje liczbę różnych klas, które dziedziczą od siebie nawzajem, z powrotem do klasy bazowej. Głębokość dziedziczenia jest podobna do sprzęgu klasy w przypadku, gdy zmiana klasy bazowej może mieć wpływ na wszystkie klasy dziedziczone. Im wyższy numer, tym lepiej dziedziczą i wyższy potencjał dla modyfikacji klasy podstawowej, aby spowodować powstanie istotnej zmiany. Aby uzyskać głębokość dziedziczenia, niska wartość jest dobra, a wysoka wartość jest zła.
 
-- **Sprzęganie klas** — mierzy sprzężenie do unikatowych klas za pomocą parametrów, zmiennych lokalnych, typów zwracanych, wywołań metod, wystąpień ogólnych lub szablonów, klas bazowych, implementacji interfejsu, pól zdefiniowanych w typach zewnętrznych i dekoracji atrybutu. Dobre projektowanie oprogramowania oznacza, że typy i metody powinny mieć wysoką spójność i niskie sprzężenie. Duże sprzężenie wskazuje, że projekt jest trudno używany i konserwowany ze względu na wiele współzależności z innymi typami. Aby uzyskać więcej informacji, zobacz wpis na blogu dotyczący [sprzęgania klas](/archive/blogs/zainnab/code-metrics-class-coupling) .
+- **Sprzęganie klas** — mierzy sprzężenie do unikatowych klas za pomocą parametrów, zmiennych lokalnych, typów zwracanych, wywołań metod, wystąpień ogólnych lub szablonów, klas bazowych, implementacji interfejsu, pól zdefiniowanych w typach zewnętrznych i dekoracji atrybutu. Dobre projektowanie oprogramowania oznacza, że typy i metody powinny mieć wysoką spójność i niskie sprzężenie. Duże sprzężenie wskazuje, że projekt jest trudno używany i konserwowany ze względu na wiele współzależności z innymi typami. Aby uzyskać więcej informacji, zobacz [sprzęganie klas](code-metrics-class-coupling.md).
 
 ::: moniker range=">=vs-2019"
 
 - **Wiersze kodu źródłowego** — wskazuje dokładną liczbę wierszy kodu źródłowego, które znajdują się w pliku źródłowym, w tym puste wiersze. Ta Metryka jest dostępna w programie Visual Studio 2019 w wersji 16,4 i Microsoft. CodeAnalysis. Metrics (2.9.5).
 
-- **Wiersze kodu wykonywalnego** — wskazuje przybliżoną liczbę wierszy lub operacji kodu wykonywalnego. Jest to liczba operacji w kodzie wykonywalnym. Ta Metryka jest dostępna w programie Visual Studio 2019 w wersji 16,4 i Microsoft. CodeAnalysis. Metrics (2.9.5). Wartość jest zwykle blisko zbliżonej do poprzedniej metryki, **wierszy kodu** , która jest metryką opartą na instrukcji MSIL używaną w trybie starszym.
+- **Wiersze kodu wykonywalnego** — wskazuje przybliżoną liczbę wierszy lub operacji kodu wykonywalnego. Jest to liczba operacji w kodzie wykonywalnym. Ta Metryka jest dostępna w programie Visual Studio 2019 w wersji 16,4 i Microsoft. CodeAnalysis. Metrics (2.9.5). Wartość jest zwykle blisko zbliżonej do poprzedniej metryki, **wierszy kodu**, która jest metryką opartą na instrukcji MSIL używaną w trybie starszym.
 ::: moniker-end
 ::: moniker range="vs-2017"
 

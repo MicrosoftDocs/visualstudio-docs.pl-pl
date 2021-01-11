@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 660fc893eb22d0c40805a8bf7b2efc86fd83c3b1
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: cf02fda50678d9de4eb01dc28b4825844e33063e
+ms.sourcegitcommit: b1f7e7d7a0550d5c6f46adff3bddd44bc1d6ee1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350871"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98069503"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks — &gt; element (program inicjujący)
 `InstallChecks`Element obsługuje uruchamianie różnych testów na komputerze lokalnym, aby upewnić się, że zostały zainstalowane wszystkie odpowiednie wymagania wstępne dotyczące aplikacji.
@@ -177,9 +177,19 @@ ms.locfileid: "94350871"
  Aby na przykład zablokować instalację na komputerze z systemem Windows 95, należy użyć następującego kodu:
 
 ```xml
-<!-- Block install on Windows 95 -->
+    <!-- Block install on Windows 95 -->
     <FailIf Property="Version9X" Compare="VersionLessThan" Value="4.10" String="InvalidPlatform"/>
 ```
+
+ Aby pominąć uruchamianie instalacji, sprawdź, czy spełniony jest warunek FailIf lub BypassIf, Użyj atrybutu BeforeInstallChecks.  Na przykład:
+
+```xml
+    <!-- Block install and do not evaluate install checks if user does not have admin privileges -->
+    <FailIf Property="AdminUser" Compare="ValueEqualTo" Value="false" String="AdminRequired" BeforeInstallChecks="true"/>
+```
+
+>[!NOTE]
+>Ten `BeforeInstallChecks` atrybut jest obsługiwany, zaczynając od wersji programu Visual Studio 2019 Update 9.
 
 ## <a name="see-also"></a>Zobacz też
 - [\<Commands> postaci](../deployment/commands-element-bootstrapper.md)
