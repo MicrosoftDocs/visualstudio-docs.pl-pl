@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 50f14cc2a7eafe5d65e0c6a6af54bafa2ebb5a1f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 21f6ac868268c40ea6df837596546f86fd9a3a44
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75569702"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98129474"
 ---
 # <a name="extract-a-method-refactoring"></a>Wyodrębnianie metody refaktoryzacji
 
@@ -40,11 +40,11 @@ To Refaktoryzacja dotyczy:
 
    - C#:
 
-       ![Wyróżniony kod — C #](media/extractmethod-highlight-cs.png)
+       ! Zrzut ekranu przedstawiający kod C# dla klasy program. W funkcji Main tej klasy, wiersz kodu wyróżniony.] (nośnik/extractmethod-highlight-cs.png)
 
    - Visual Basic:
 
-       ![Wyróżniony kod — Visual Basic](media/extractmethod-highlight-vb.png)
+       ![Zrzut ekranu przedstawiający kod Visual Basic dla głównego elementu podrzędnego. W tym elemencie zostanie wyróżniony wiersz kodu.](media/extractmethod-highlight-vb.png)
 
 2. Następnie wykonaj jedną z następujących czynności:
 
@@ -63,15 +63,15 @@ To Refaktoryzacja dotyczy:
 
    - C#:
 
-      ![Zmień nazwę metody-C #](media/extractmethod-rename-cs.png)
+      ![Zrzut ekranu przedstawiający kod C# dla klasy program. Nazwa metody zostanie wyróżniona, a okno podręczne Zmień nazwę jest otwarte.](media/extractmethod-rename-cs.png)
 
    - Visual Basic:
 
-      ![Zmień nazwę metody-Visual Basic](media/extractmethod-rename-vb.png)
+      ![Zrzut ekranu przedstawiający kod Visual Basic dla głównego elementu podrzędnego. Nazwa metody zostanie wyróżniona, a okno podręczne Zmień nazwę jest otwarte.](media/extractmethod-rename-vb.png)
 
 3. Po zakończeniu wprowadzania zmian wybierz przycisk **Zastosuj** lub naciśnij klawisz **Enter** , a zmiany zostaną zatwierdzone.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Refaktoryzacja](../refactoring-in-visual-studio.md)
 - [Podgląd zmian](../../ide/preview-changes.md)

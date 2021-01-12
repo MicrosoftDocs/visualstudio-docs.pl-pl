@@ -1,6 +1,6 @@
 ---
 title: Wyodrębnianie funkcji lokalnej
-description: Zmień fragment kodu na własny metodę, wybierając kod i wpisując CTRL + R, Ctrl + M.
+description: Przekształcenie fragmentu kodu w własną funkcję, wybierając kod i wpisując CTRL + R, Ctrl + M.
 ms.date: 02/19/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +10,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 031fbe22ec61837d489df7a6af923ef0cd2454c7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e007246b85671a0f4606bbdb3d1e9c4e0dc83541
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77515331"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98129461"
 ---
 # <a name="extract-local-function-refactoring"></a>Oddzielanie refaktoryzacji funkcji lokalnych
 
@@ -37,9 +37,9 @@ To Refaktoryzacja dotyczy:
 
 3. Wybierz pozycję **Wyodrębnij funkcję lokalną**.
 
-    ![Wyodrębnianie funkcji lokalnej](media/extract-local-function.png)
+    ![Zrzut ekranu przedstawiający okno programu Visual Studio Code z wyróżnionym wierszem. Menu szybkie akcje i refaktoryzacje jest otwarte i zaznaczona jest funkcja Wyodrębnij funkcję lokalną.](media/extract-local-function.png)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Refaktoryzacja](../refactoring-in-visual-studio.md)
 - [Podgląd zmian](../../ide/preview-changes.md)
