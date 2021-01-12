@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b934c6cb7c2a6ba98113a5e68091ab53f54b1423
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+ms.openlocfilehash: 1bb738e0e12598fd31c51c6b3cf2fa684badae40
+ms.sourcegitcommit: fdc21fc21d4a05d9ad8627b06aab7f072bfeb0a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97833367"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98113606"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów
 
@@ -167,7 +167,7 @@ Można zdefiniować własne poziomy hierarchii i według **stanu** , a następni
 |Grupa|Opis|
 |-|-----------------|
 |**Czas trwania**|Grupuje testy według czasu wykonywania: **szybka**, **średnia** i **wolna**.|
-|**Państwu**|Grupuje testy według wyników wykonywania: **testy zakończone niepomyślnie**, **testy pominięte**, **testy zakończone powodzeniem**, **nie uruchomiono**|
+|**Stan**|Grupuje testy według wyników wykonywania: **testy zakończone niepomyślnie**, **testy pominięte**, **testy zakończone powodzeniem**, **nie uruchomiono**|
 |**Struktura docelowa** | Grupuje testy według struktury obiektów docelowych projektów |
 |**Przestrzeń nazw**|Grupuje testy według przestrzeni nazw zawierającej.|
 |**Project**|Grupuje testy według projektu zawierającego.|
@@ -318,7 +318,7 @@ Aby odfiltrować według innych kryteriów:
 ::: moniker range=">=vs-2019"
 |Kwalifikator|Opis|
 |-|-----------------|
-|**Państwu**|Wyszukuje dopasowania w nazwach kategorii Eksploratora testów: **testy zakończone niepomyślnie**, **testy pominięte**, **testy zakończone powodzeniem**.|
+|**Stan**|Wyszukuje dopasowania w nazwach kategorii Eksploratora testów: **testy zakończone niepomyślnie**, **testy pominięte**, **testy zakończone powodzeniem**.|
 |**Cech**|Wyszukuje dopasowania kategorii i wartości. Składnia określająca kategorie i wartości cech jest definiowana przez strukturę testów jednostkowych.|
 |**W pełni kwalifikowana nazwa**|Przeszukuje w pełni kwalifikowaną nazwę testowanych przestrzeni nazw, klas i metod w celu dopasowania.|
 |**Project**|Wyszukuje dopasowania w nazwach projektów testowych.|
@@ -376,6 +376,14 @@ Testy można uruchomić z poziomu Eksploratora testów, klikając prawym przycis
 
 > [!NOTE]
 > Nie można uruchomić testu w klasie abstrakcyjnej, ponieważ testy są zdefiniowane tylko w klasach abstrakcyjnych i nie są tworzone. Aby uruchomić testy w klasach abstrakcyjnych, należy utworzyć klasę, która dziedziczy z klasy abstrakcyjnej.
+
+## <a name="test-audio-cue"></a>Testowanie wskaźnika audio
+Eksplorator testów może odtworzyć dźwięk po zakończeniu przebiegu testu. Istnieją dwa dźwięki: jeden dźwięk wskazujący, że uruchomienie testu powiodło się, a wszystkie testy zakończone powodzeniem, oraz drugi dźwięk wskazujący, że przebieg testu został ukończony z co najmniej jednym testem nieprawidłowym. Te dźwięki można skonfigurować przy użyciu domyślnego okna dialogowego dźwięk systemu Windows 10. Ta funkcja jest dostępna w programie Visual Studio 2019 Update 16,9 (wersja zapoznawcza 3).
+
+1. Otwórz domyślne okno dialogowe dźwięk systemu Windows 10.
+2. Przejdź do karty **dźwięki** .
+3. Znajdź kategorię **Microsoft Visual Studio** . Wybierz **przebieg testu zakończony powodzeniem** lub **Nieudane dźwięki przebiegu testowego** w celu wybrania wstępnie ustawionych dźwięków lub przechodzenia do własnego pliku dźwiękowego.  
+![Okno dialogowe dźwięk systemu Windows 10](../test/media/default-windows-10-sound-dialog.png)
 
 ## <a name="see-also"></a>Zobacz też
 
