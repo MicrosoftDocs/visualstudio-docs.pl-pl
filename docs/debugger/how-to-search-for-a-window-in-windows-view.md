@@ -1,5 +1,7 @@
 ---
 title: Wyszukiwanie okna w widoku systemu Windows | Microsoft Docs
+description: Wyszukiwanie określonego okna w widoku systemu Windows w narzędziu Spy + + przy użyciu uchwytu, podpisu, klasy lub kombinacji jego podpisu i klasy w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 880f6ec3ea0882d92f5376859ed629e23781f5f9
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 3449abf5ff1b9bdb4d4873a0cf3beb0b184734fc
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851973"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148510"
 ---
 # <a name="how-to-search-for-a-window-in-windows-view"></a>Porady: wyszukiwanie okna w widoku okien
 Można wyszukać określone okno w widoku systemu Windows przy użyciu uchwytu, podpisu, klasy lub kombinacji jego podpisu i klasy jako kryterium wyszukiwania. Możesz również określić początkowy kierunek wyszukiwania. Pola w oknie dialogowym będą zawierać atrybuty wybranego okna w drzewie okien.
@@ -31,7 +33,7 @@ Można wyszukać określone okno w widoku systemu Windows przy użyciu uchwytu, 
     Zostanie otwarte okno [dialogowe Wyszukiwanie okna](../debugger/window-search-dialog-box.md) .
 
    > [!TIP]
-   > Aby zmniejszyć czytelność ekranu, wybierz opcję **Ukryj program Spy** . Ta opcja ukrywa główne okno programu Spy + + i pozostawia tylko okno dialogowe **wyszukiwania okna** widoczne na innych aplikacjach. Okno główne programu Spy + + jest przywracane po kliknięciu przycisku **OK** lub **Anuluj**lub po wyczyszczeniu opcji **Ukryj program Spy + +** .
+   > Aby zmniejszyć czytelność ekranu, wybierz opcję **Ukryj program Spy** . Ta opcja ukrywa główne okno programu Spy + + i pozostawia tylko okno dialogowe **wyszukiwania okna** widoczne na innych aplikacjach. Okno główne programu Spy + + jest przywracane po kliknięciu przycisku **OK** lub **Anuluj** lub po wyczyszczeniu opcji **Ukryj program Spy + +** .
 
 3. Przeciągnij **Narzędzie wyszukiwania** nad oknem docelowym. Podczas przeciągania narzędzia okno dialogowe **wyszukiwania okna** wyświetla szczegóły w wybranym oknie.
 

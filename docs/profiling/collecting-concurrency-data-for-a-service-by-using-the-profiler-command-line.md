@@ -1,5 +1,6 @@
 ---
 title: Wiersz polecenia profilera — uzyskiwanie danych współbieżności dla usługi
+description: Zbieranie danych rywalizacji o zasoby i danych aktywności wątków przy użyciu metody współbieżności programu Visual Studio narzędzia profilowania.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e2a12afd4374eef4607edef3854e96ac0fdcdf7
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 3b4d65490c0ae75c7ab17fd7764d499cb39824f7
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811165"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148319"
 ---
 # <a name="collect-concurrency-data-for-a-service-by-using-the-profiler-command-line"></a>Zbieranie danych współbieżności dla usługi przy użyciu wiersza polecenia profilera
 Metoda współbieżności [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania pozwala zbierać dane rywalizacji o zasoby i dane aktywności wątków, które pokazują wykorzystanie procesora CPU, rywalizację wątków, migrację wątków, opóźnienia synchronizacji, obszary nakładających się operacji we/wy i inne zdarzenia systemowe.
@@ -53,5 +54,5 @@ Metoda współbieżności [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.m
 
 - [Concurrency Visualizer](../profiling/concurrency-visualizer.md)
 
-## <a name="reference"></a>Dokumentacja
+## <a name="reference"></a>Odwołanie
 - [Narzędzia profilowania wiersza polecenia — dokumentacja](../profiling/command-line-profiling-tools-reference.md)

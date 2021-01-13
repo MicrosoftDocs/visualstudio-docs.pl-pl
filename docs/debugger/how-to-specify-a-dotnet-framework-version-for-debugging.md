@@ -1,6 +1,7 @@
 ---
 title: Określ wersję .NET Framework do debugowania | Microsoft Docs
-ms.custom: seodec18
+description: Określ starszą wersję .NET Framework na potrzeby debugowania. Debuger programu Visual Studio obsługuje debugowanie starszych wersji .NET Framework, a także bieżącą wersję.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3ae48670fceb78ff85f395852f0a31414f37e8cf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6b536cbfbd1019fc9b55a0113525f37030493f8
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349071"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149420"
 ---
 # <a name="specify-an-older-net-framework-version-for-debugging-c-visual-basic-f"></a>Określ starszą wersję .NET Framework dla debugowania (C#, Visual Basic, F #)
 
@@ -44,15 +45,15 @@ W rzadkich przypadkach, gdy ten błąd pojawia się, można ustawić klucz rejes
 
 2. Uruchom **Edytor rejestru** (regedit).
 
-3. W **Edytorze rejestru**otwórz folder HKEY_LOCAL_MACHINE.
+3. W **Edytorze rejestru** otwórz folder HKEY_LOCAL_MACHINE.
 
-4. Przejdź do: HKEY_LOCAL_MACHINE \Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine \\ {449EC4CC-30D2-4032-9256-EE18EB41B62B}
+4. Przejdź do: HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine\\ {449EC4CC-30D2-4032-9256-EE18EB41B62B}
 
-    Jeśli klucz nie istnieje, kliknij prawym przyciskiem myszy pozycję HKEY_LOCAL_MACHINE \Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine, a następnie kliknij pozycję **nowy klucz**. Nadaj nazwę nowemu kluczowi `{449EC4CC-30D2-4032-9256-EE18EB41B62B}` .
+    Jeśli klucz nie istnieje, kliknij prawym przyciskiem myszy pozycję HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine, a następnie kliknij pozycję **nowy klucz**. Nadaj nazwę nowemu kluczowi `{449EC4CC-30D2-4032-9256-EE18EB41B62B}` .
 
 5. Po przejściu do programu {449EC4CC-30D2-4032-9256-EE18EB41B62B} zajrzyj do kolumny **name (nazwa** ) i Znajdź klucz CLRVersionForDebugging.
 
-   1. Jeśli klucz nie istnieje, kliknij prawym przyciskiem myszy pozycję {449EC4CC-30D2-4032-9256-EE18EB41B62B}, a następnie kliknij pozycję **Nowa wartość ciągu**. Następnie kliknij prawym przyciskiem myszy nową wartość ciągu, kliknij polecenie **Zmień nazwę**i wpisz `CLRVersionForDebugging` .
+   1. Jeśli klucz nie istnieje, kliknij prawym przyciskiem myszy pozycję {449EC4CC-30D2-4032-9256-EE18EB41B62B}, a następnie kliknij pozycję **Nowa wartość ciągu**. Następnie kliknij prawym przyciskiem myszy nową wartość ciągu, kliknij polecenie **Zmień nazwę** i wpisz `CLRVersionForDebugging` .
 
 6. Kliknij dwukrotnie pozycję **CLRVersionForDebugging**.
 
@@ -64,5 +65,5 @@ W rzadkich przypadkach, gdy ten błąd pojawia się, można ustawić klucz rejes
 
      Jeśli po rozpoczęciu debugowania nadal pojawia się komunikat o błędzie, sprawdź, czy w rejestrze wprowadzono numer wersji. Sprawdź również, czy używasz wersji .NET Framework obsługiwanej przez program Visual Studio. Debuger jest zgodny z bieżącą wersją .NET Framework i poprzednimi wersjami, ale może nie być zgodny z przyszłymi wersjami.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)

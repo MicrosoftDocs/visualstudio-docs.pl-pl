@@ -1,5 +1,7 @@
 ---
 title: Okno dialogowe Wyszukiwanie okna | Microsoft Docs
+description: Użyj wyszukiwania okna, aby znaleźć i wybrać węzeł dla określonego okna wymienionego w widoku systemu Windows. Zobacz ten artykuł, aby zapoznać się z opisami ustawień.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ca04cadbfce26319a9ed72b85071d7ab139a85a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f83469d6bd97e493a704282aa1fca1fbec96962d
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900926"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148991"
 ---
 # <a name="window-search-dialog-box"></a>Wyszukiwanie okien — Okno dialogowe
 To okno dialogowe służy do znajdowania i wybierania węzła dla określonego okna w [widoku systemu Windows](../debugger/windows-view.md). Aby wyświetlić to okno dialogowe, Przenieś fokus do okna widok systemu Windows. Następnie wybierz pozycję **Znajdź okno** z menu **wyszukiwania** .

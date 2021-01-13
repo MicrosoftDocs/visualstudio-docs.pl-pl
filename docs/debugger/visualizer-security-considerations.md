@@ -1,5 +1,7 @@
 ---
 title: Zagadnienia dotyczące zabezpieczeń wizualizatora | Microsoft Docs
+description: Wizualizator programu Visual Studio debugger musi działać z pełnym zaufaniem. Należy pamiętać o możliwych zagrożeniach bezpieczeństwa i podjąć odpowiednie środki ostrożności.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1c18ec84a6a62da6cd564c69ef4b83ea76bcfd6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2db18a1443b0c4faaa288a887a22d935d243f678
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73187146"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149745"
 ---
 # <a name="visualizer-security-considerations"></a>Zagadnienia dotyczące zabezpieczeń internetowych
 Pisanie wizualizatora wiąże się z potencjalnymi zagrożeniami bezpieczeństwa. Obecnie nie istnieją żadne znane luki w zabezpieczeniach dla tych potencjalnych zagrożeń, ale deweloperzy muszą znać je i podejmować odpowiednie środki ostrożności, jak opisano w tym miejscu, aby zabezpieczyć się przed przyszłymi programami wykorzystującymi te luki.
@@ -37,7 +39,7 @@ Pisanie wizualizatora wiąże się z potencjalnymi zagrożeniami bezpieczeństwa
 
  Aby wyeliminować tę lukę w zabezpieczeniach, należy mieć na uwadze interfejsy uwidocznione przez wizualizator.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Architektura wizualizatora](../debugger/visualizer-architecture.md)
 - [Porady: pisanie wizualizatora](create-custom-visualizers-of-data.md)
 - [Tworzenie niestandardowych wizualizatorów](../debugger/create-custom-visualizers-of-data.md)

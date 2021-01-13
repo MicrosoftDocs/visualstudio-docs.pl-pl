@@ -1,5 +1,7 @@
 ---
 title: Ustawianie nazwy wątku w kodzie natywnym | Microsoft Docs
+description: Ustaw nazwę wątku w kodzie natywnym podczas debugowania aplikacji wielowątkowych w programie Visual Studio. Nazewnictwo wątków służy do śledzenia wątków w oknie wątków.
+ms.custom: SEO-VS-2020
 ms.date: 12/17/2018
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 00f98e638497622e0e887a421cb08f18de97b9af
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: a713b6db074586898ff72cd8595c4cc0d20d99cf
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851934"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149524"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>Porady: ustawianie nazw wątków w kodzie natywnym
 Nazewnictwo wątków jest możliwe w dowolnej wersji programu Visual Studio. Nazewnictwo wątków jest przydatne do identyfikowania wątków interesujących w oknie **wątków** podczas debugowania uruchomionego procesu. Mając rozpoznawalne i nazwane wątki mogą być również pomocne podczas przeprowadzania debugowania po awarii przez inspekcję zrzutów awaryjnych i podczas analizowania przechwytywania wydajności przy użyciu różnych narzędzi.
@@ -109,6 +111,6 @@ void SetThreadName(DWORD dwThreadID, const char* threadName) {
 ```
 
 ## <a name="see-also"></a>Zobacz także
-- [Debuguj wielowątkowe aplikacje](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [Debuguj aplikacje wielowątkowe](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)
 - [Instrukcje: ustawianie nazw wątków w kodzie zarządzanym](../debugger/how-to-set-a-thread-name-in-managed-code.md)

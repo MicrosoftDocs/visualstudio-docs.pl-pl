@@ -1,5 +1,7 @@
 ---
 title: Wizualizacja interfejsu API wizualizatora | Microsoft Docs
+description: Wizualizator Wyświetla określony typ elementu danych i może zezwalać na edycję. Aby go utworzyć, użyj interfejsu API wizualizatora opisanego w tej sekcji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8479343634ca8afc647edde61eb8b1106954c83
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 37346c77b1488bb89ac071a0290f7b5219731591
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73187210"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149771"
 ---
 # <a name="visualizer-api-reference"></a>Wizualizator API — Odwołanie
 
@@ -40,7 +42,7 @@ Interfejsy API wizualizatora są udostępniane dla użytkowników, którzy chcą
 
 - <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource?displayProperty=fullName>
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Wskazówki: Pisanie wizualizatora w C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
 - [Porady: pisanie wizualizatora](create-custom-visualizers-of-data.md)

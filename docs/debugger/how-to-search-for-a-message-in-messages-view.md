@@ -1,5 +1,7 @@
 ---
 title: Wyszukiwanie komunikatu w widoku komunikatów | Microsoft Docs
+description: Wyszukiwanie konkretnego komunikatu w widoku komunikatów narzędzia Spy + + przy użyciu uchwytu, typu lub identyfikatora komunikatu jako kryterium wyszukiwania podczas debugowania w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c4b597870d7a87b396b4c6e828da814c49f9bfb
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: c351eacc6fc3793065bcd11eb5456eebdc1864f3
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852012"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148588"
 ---
 # <a name="how-to-search-for-a-message-in-messages-view"></a>Porady: wyszukiwanie komunikatu w widoku komunikatów
 Konkretny komunikat można wyszukać w widoku komunikatów przy użyciu jego uchwytu, typu lub identyfikatora komunikatu jako kryterium wyszukiwania. Jeden z tych — lub kombinacja — będzie prawidłowymi kryteriami wyszukiwania. Można również określić początkowy kierunek wyszukiwania. Pola w oknie dialogowym są wstępnie załadowane przy użyciu atrybutów aktualnie wybranego komunikatu.
@@ -43,7 +45,7 @@ Konkretny komunikat można wyszukać w widoku komunikatów przy użyciu jego uch
 4. Wyczyść wszystkie pola, dla których nie chcesz określać wartości.
 
    > [!TIP]
-   > Aby zmniejszyć czytelność ekranu, wybierz opcję **Ukryj program Spy** . Ta opcja ukrywa główne okno programu Spy + +, pozostawiając tylko okno dialogowe **Znajdowanie okna** widoczne na wierzchu innych aplikacji. Okno główne programu Spy + + jest przywracane po kliknięciu przycisku **OK** lub **Anuluj**lub po wyczyszczeniu opcji **Ukryj program Spy + +** .
+   > Aby zmniejszyć czytelność ekranu, wybierz opcję **Ukryj program Spy** . Ta opcja ukrywa główne okno programu Spy + +, pozostawiając tylko okno dialogowe **Znajdowanie okna** widoczne na wierzchu innych aplikacji. Okno główne programu Spy + + jest przywracane po kliknięciu przycisku **OK** lub **Anuluj** lub po wyczyszczeniu opcji **Ukryj program Spy + +** .
 
 5. Wybierz pozycję w **górę** lub **w dół** , aby określić początkowy kierunek wyszukiwania.
 

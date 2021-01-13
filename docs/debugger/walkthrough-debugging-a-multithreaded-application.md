@@ -1,5 +1,7 @@
 ---
 title: Wyświetlanie wątków w debugerze | Microsoft Docs
+description: Użyj wątków do badania i kontrolowania wątków. Można grupować, sortować, flagować, zamrażać, odrozmrażać i wyszukiwać wątki, wybierać kolumny i wyświetlać stosy wywołań.
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f65bd7a904f30f132f654b6dd718532d9d0e66e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b02d980292eaed40c7c1598c772b52f695bf23e2
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67821588"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149706"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>Wyświetlanie wątków w debugerze programu Visual Studio przy użyciu okna wątków (C#, Visual Basic, C++)
 W oknie **wątki** można analizować i współpracować z wątkami w debugowanej aplikacji. Aby uzyskać wskazówki krok po kroku dotyczące korzystania z okna **wątków** , zobacz [Przewodnik: debugowanie przy użyciu okna wątki](../debugger/how-to-use-the-threads-window.md).
@@ -106,7 +108,7 @@ W oknie **wątki** można analizować i współpracować z wątkami w debugowane
   - Kliknij prawym przyciskiem myszy wątek i wybierz polecenie **Przełącz do wątku**.
 
 ## <a name="group-and-sort-threads"></a>Grupuj i Sortuj wątki
- Gdy grupujesz wątki, w tabeli dla każdej grupy pojawi się nagłówek. Nagłówek zawiera opis grupy, taki jak **wątek roboczy** lub **wątki nieoflagowane**oraz formant drzewa. Wątki elementów członkowskich każdej grupy są wyświetlane pod nagłówkiem grupy. Aby ukryć wątki elementów członkowskich dla grupy, należy zwinąć grupę przy użyciu kontrolki drzewa.
+ Gdy grupujesz wątki, w tabeli dla każdej grupy pojawi się nagłówek. Nagłówek zawiera opis grupy, taki jak **wątek roboczy** lub **wątki nieoflagowane** oraz formant drzewa. Wątki elementów członkowskich każdej grupy są wyświetlane pod nagłówkiem grupy. Aby ukryć wątki elementów członkowskich dla grupy, należy zwinąć grupę przy użyciu kontrolki drzewa.
 
  Ponieważ grupowanie ma pierwszeństwo przed sortowaniem, można grupować wątki według kategorii, na przykład, a następnie sortować je według identyfikatora w każdej kategorii.
 
@@ -167,6 +169,6 @@ W programie wielowątkowym każdy wątek ma własny stos wywołań. Okno **wątk
 
 - Na pasku narzędzi u góry okna **wątki** wybierz opcję **Rozwiń stosy wywołań** lub **Zwiń stosy wywołań**.
 
-## <a name="see-also"></a>Zobacz też
-- [Debuguj aplikacje wielowątkowe](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+## <a name="see-also"></a>Zobacz także
+- [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Rozpoczynanie debugowania aplikacji wielowątkowych](../debugger/get-started-debugging-multithreaded-apps.md)

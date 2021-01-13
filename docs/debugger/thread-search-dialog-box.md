@@ -1,5 +1,7 @@
 ---
 title: Okno dialogowe Wyszukiwanie wątków | Microsoft Docs
+description: Dowiedz się więcej na temat okna dialogowego Wyszukiwanie wątków w narzędziu do debugowania programu Spy + +. To okno dialogowe służy do znajdowania i wybierania węzła dla określonego wątku w widoku wątki.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fddbb589a6978f72dc5926a78c9eb13f21b3a4b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 895241a99131c31e2fab73b9799f6203db7259e0
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62901865"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148757"
 ---
 # <a name="thread-search-dialog-box"></a>Wyszukiwanie wątków — Okno dialogowe
 To okno dialogowe służy do znajdowania i wybierania węzła dla określonego wątku w [widoku wątki](../debugger/threads-view.md). Aby wyświetlić to okno dialogowe, Przenieś fokus do okna widoku **wątków** . Następnie wybierz pozycję **Znajdź wątek** z menu **wyszukiwania** .

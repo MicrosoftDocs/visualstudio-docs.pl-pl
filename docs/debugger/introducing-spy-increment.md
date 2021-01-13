@@ -1,5 +1,7 @@
 ---
 title: Wprowadzenie do narzędzia Spy + + | Microsoft Docs
+description: Przeczytaj o narzędziu do debugowania programu Spy + +. Wyświetla graficzne drzewo relacji obiektu systemowego. Pobierz właściwości wybranych okien, wątków, procesów lub komunikatów.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d04b2e9e04e1f2b952baadbdf0cca32cc3b301b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fb8debef874dd32f52994d0edd4a27d81b340834
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72731819"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148796"
 ---
 # <a name="introducing-spy"></a>Wprowadzenie programu Spy++
 Program Spy + + umożliwia wykonywanie następujących zadań:
@@ -51,7 +53,7 @@ Program Spy + + umożliwia wykonywanie następujących zadań:
 > [!NOTE]
 > Mimo że nazwa pliku Spy + + (64-bitowa) zawiera wartość "AMD", jest uruchamiana w dowolnym systemie operacyjnym Windows w wersji x64.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Porady: korzystanie z programu Spy++](../debugger/how-to-start-spy-increment.md)
 - [Korzystanie z programu Spy++](../debugger/using-spy-increment.md)
 - [Spy++ — Widoki](../debugger/spy-increment-views.md)

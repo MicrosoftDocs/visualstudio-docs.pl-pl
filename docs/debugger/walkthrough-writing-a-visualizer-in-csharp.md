@@ -1,6 +1,7 @@
 ---
 title: Napisz wizualizator w języku C# | Microsoft Docs
-ms.custom: seodec18
+description: Postępuj zgodnie z przewodnikiem, aby utworzyć prosty wizualizator w języku C#. Pokazuje kroki wymagane zarówno z, jak i bez użycia szablonu elementu wizualizatora.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 05/27/2020
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b3b8a67d1b01d7f3a3ada7b391423676b9294e8d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8caf1be3c10c0d89ce8780213c0914944ae87842
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286325"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149719"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Przewodnik: pisanie wizualizatora w języku C\#
 
@@ -51,18 +52,18 @@ Postępuj zgodnie z poniższymi zadaniami, aby utworzyć wizualizator.
 
 ### <a name="to-rename-class1cs-and-add-microsoftvisualstudiodebuggervisualizers"></a>Aby zmienić nazwę Class1.cs i dodać Microsoft. VisualStudio. DebuggerVisualizers
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję Class1.cs i wybierz polecenie **Zmień nazwę** w menu skrótów.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję Class1.cs i wybierz polecenie **Zmień nazwę** w menu skrótów.
 
 2. Zmień nazwę z Class1.cs na coś znaczącego, na przykład DebuggerSide.cs.
 
    > [!NOTE]
    > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatycznie zmienia deklarację klasy w DebuggerSide.cs, aby odpowiadała nowej nazwie pliku.
 
-3. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **odwołania** i wybierz polecenie **Dodaj odwołanie** w menu skrótów.
+3. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję **odwołania** i wybierz polecenie **Dodaj odwołanie** w menu skrótów.
 
 4. W oknie dialogowym **Dodaj odwołanie** na karcie **Przeglądaj** wybierz pozycję **Przeglądaj** i Znajdź Microsoft.VisualStudio.DebuggerVisualizers.DLL.
 
-    Bibliotekę DLL można znaleźć w podkatalogu * \<Visual Studio Install Directory> \Common7\IDE\PublicAssemblies* w katalogu instalacyjnym programu Visual Studio.
+    Bibliotekę DLL można znaleźć w podkatalogu *\<Visual Studio Install Directory> \Common7\IDE\PublicAssemblies* w katalogu instalacyjnym programu Visual Studio.
 
 5. Kliknij przycisk **OK**.
 
@@ -104,9 +105,9 @@ Postępuj zgodnie z poniższymi zadaniami, aby utworzyć wizualizator.
 
 ### <a name="to-add-systemwindowsforms"></a>Aby dodać system. Windows. Forms
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **odwołania** i wybierz polecenie **Dodaj odwołanie** w menu skrótów.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję **odwołania** i wybierz polecenie **Dodaj odwołanie** w menu skrótów.
 
-2. W oknie dialogowym **Dodaj odwołanie** na karcie **Przeglądaj** wybierz pozycję **Przeglądaj**i Znajdź System.Windows.Forms.DLL.
+2. W oknie dialogowym **Dodaj odwołanie** na karcie **Przeglądaj** wybierz pozycję **Przeglądaj** i Znajdź System.Windows.Forms.DLL.
 
     Bibliotekę DLL można znaleźć w *C:\Windows\Microsoft.NET\Framework\v4.0.30319*.
 
@@ -185,7 +186,7 @@ W kodzie po stronie debugera należy określić typ do wizualizacji (źródło o
 
 ### <a name="to-add-necessary-references-to-mytestconsole"></a>Aby dodać niezbędne odwołania do MyTestConsole
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **MyTestConsole** i wybierz polecenie **Dodaj odwołanie** w menu skrótów.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję **MyTestConsole** i wybierz polecenie **Dodaj odwołanie** w menu skrótów.
 
 2. W oknie dialogowym **Dodaj odwołanie** wybierz kartę **Przeglądaj** , Microsoft.VisualStudio.DebuggerVisualizers.DLL.
 
@@ -201,7 +202,7 @@ W kodzie po stronie debugera należy określić typ do wizualizacji (źródło o
 
 ### <a name="to-add-code-to-mytestconsole"></a>Aby dodać kod do MyTestConsole
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję program.cs i wybierz polecenie **Zmień nazwę** w menu skrótów.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję program.cs i wybierz polecenie **Zmień nazwę** w menu skrótów.
 
 2. Zmień nazwę z Program.cs na bardziej zrozumiałą, taką jak TestConsole.cs.
 
@@ -225,7 +226,7 @@ W kodzie po stronie debugera należy określić typ do wizualizacji (źródło o
 
 ### <a name="to-test-the-visualizer"></a>Aby przetestować wizualizator
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **MyTestConsole** i wybierz pozycję **Ustaw jako projekt startowy** w menu skrótów.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję **MyTestConsole** i wybierz pozycję **Ustaw jako projekt startowy** w menu skrótów.
 
 2. W menu **debugowanie** wybierz polecenie **Uruchom**.
 
@@ -259,7 +260,7 @@ Najpierw należy utworzyć nowy projekt biblioteki klas.
 
 ### <a name="to-add-a-visualizer-item"></a>Aby dodać element wizualizatora
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję MySecondVisualizer.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję MySecondVisualizer.
 
 2. W menu skrótów wybierz polecenie **Dodaj** , a następnie kliknij pozycję **nowy element**.
 
@@ -272,7 +273,7 @@ Najpierw należy utworzyć nowy projekt biblioteki klas.
    To wszystko. Spójrz na plik SecondVisualizer.cs i Wyświetl kod, który został dodany przez szablon. Przejdź dalej i poeksperymentuj z kodem. Teraz, gdy znasz już podstawowe elementy, jesteś w trakcie tworzenia bardziej złożonych i przydatnych wizualizatorów.
 ::: moniker-end
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Architektura wizualizatora](../debugger/visualizer-architecture.md)
 - [Instrukcje: Instalowanie wizualizatora](../debugger/how-to-install-a-visualizer.md)

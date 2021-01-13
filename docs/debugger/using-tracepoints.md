@@ -1,5 +1,7 @@
 ---
 title: Rejestruj informacje za pomocą punkty śledzenia | Microsoft Docs
+description: Ustaw punkty śledzenia, aby rejestrować informacje w danych wyjściowych bez modyfikowania lub zatrzymywania kodu. Po prostu Określ ciąg wyjściowy w polu wyboru akcja w ustawieniach punktu przerwania.
+ms.custom: SEO-VS-2020
 ms.date: 10/28/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 33b471122318038ab66bc4f73e437209c6da2ffe
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 144f83b1be0c3a21aa5cb244f8498f61e3ef380a
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "89561341"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150096"
 ---
 # <a name="log-info-to-the-output-window-using-tracepoints-in-visual-studio"></a>Rejestruj informacje w oknie danych wyjściowych za pomocą punkty śledzenia w programie Visual Studio
 
@@ -53,7 +55,7 @@ Możesz ustawić punkty śledzenia, określając ciąg wyjściowy w obszarze pol
 
    ![Pole zaewidencjonowanych warunków](../debugger/media/checkedconditionsbox.png "Pole zaewidencjonowanych warunków")
 
-   Istnieją trzy opcje dla warunków: **wyrażenie warunkowe** , **Filtr** i **licznik trafień** .
+   Istnieją trzy opcje dla warunków: **wyrażenie warunkowe**, **Filtr** i **licznik trafień**.
 
 ## <a name="actions-menu"></a>Menu Akcje
 
@@ -63,7 +65,7 @@ Na przykład, jeśli chcesz wyświetlić wartość `counter` zmiennej w konsoli 
 
 ![Komunikat wyjściowy licznika](../debugger/media/counteroutputmessage.png "Komunikat wyjściowy licznika")
 
-Jeśli klikniesz przycisk **Zamknij** , a następnie debugujesz program ( **F5** ), zobaczysz następujące dane wyjściowe w oknie danych wyjściowych.
+Jeśli klikniesz przycisk **Zamknij** , a następnie debugujesz program (**F5**), zobaczysz następujące dane wyjściowe w oknie danych wyjściowych.
 
 ![Komunikat akcji w Okno Dane wyjściowe](../debugger/media/actionsmessageinoutputwindow.png "Komunikat akcji w Okno Dane wyjściowe")
 
@@ -135,7 +137,7 @@ Sposób, w jaki wyrażenia są oceniane w oknie komunikatu **akcji** , może by�
 
 Jeśli próbujesz debugować działającą aplikację i wyszukać podobną funkcję, zapoznaj się z naszą funkcją punkt rejestrowania w Snapshot Debugger. Debuger migawek to narzędzie służące do badania problemów w aplikacjach produkcyjnych. Punkty rejestrowania umożliwia również wysyłanie komunikatów do Okno Dane wyjściowe bez konieczności modyfikowania kodu źródłowego i nie ma wpływu na uruchomioną aplikację. Aby uzyskać więcej informacji, zobacz [debugowanie na żywo aplikacji platformy Azure](../debugger/debug-live-azure-applications.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Co to jest debugowanie?](../debugger/what-is-debugging.md)
 - [Pisanie lepszego kodu w języku C# za pomocą programu Visual Studio](../debugger/write-better-code-with-visual-studio.md)

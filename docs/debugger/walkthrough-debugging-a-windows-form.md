@@ -1,6 +1,7 @@
 ---
 title: Debugowanie formularza systemu Windows | Microsoft Docs
-ms.custom: seodec18
+description: 'Postępuj zgodnie z przewodnikiem, aby dowiedzieć się, jak utworzyć i debugować formularz systemu Windows, wspólną aplikację zarządzaną. Możesz użyć języka C#, Visual Basic, C++ lub F #.'
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -23,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cec7b9bc2c56e16d1a5d59701d0953797ae00f4
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 31c1bc9e65eb63877d8f8a42902d8ec47a61fd22
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599477"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148100"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Przewodnik: Debugowanie formularza Windows Forms
 Formularz systemu Windows jest jedną z najczęściej używanych aplikacji zarządzanych. Formularz systemu Windows tworzy standardową aplikację systemu Windows. Można wykonać instrukcje z tego przewodnika przy użyciu języka Visual Basic, C# lub C++.
@@ -50,13 +51,13 @@ Formularz systemu Windows jest jedną z najczęściej używanych aplikacji zarz�
 
 2. W okienku typy projektów Otwórz węzeł **Visual Basic**, **Visual C#** lub **Visual C++** , a następnie
 
-    1. W przypadku Visual Basic lub Visual C# wybierz pozycję **Windows Desktop**Windows  >  **form aplikacja**.
+    1. W przypadku Visual Basic lub Visual C# wybierz pozycję **Windows Desktop** Windows  >  **form aplikacja**.
 
     2. W obszarze Visual C++ wybierz pozycję **aplikacja klasyczna systemu Windows**.
 
 3. W polu **Nazwa** Nadaj projektowi unikatową nazwę (na przykład Walkthrough_SimpleDebug).
 
-4. Kliknij pozycję **OK**.
+4. Kliknij przycisk **OK**.
 
      Visual Studio tworzy nowy projekt i wyświetla nowy formularz w Projektancie Windows Forms. Aby uzyskać więcej informacji, zobacz [Projektant formularzy systemu Windows](/previous-versions/visualstudio/visual-studio-2010/e06hs424\(v\=vs.100\)).
 
@@ -122,7 +123,7 @@ Formularz systemu Windows jest jedną z najczęściej używanych aplikacji zarz�
 
      W programie Visual Studio powoduje to przejście do wiersza, w którym został ustawiony punkt przerwania na stronie kodowej. Ten wiersz powinien być wyróżniony żółtym kolorem. Można teraz wyświetlić zmienne w aplikacji i kontrolować jej wykonanie. Aplikacja zatrzymała teraz wykonywanie, czekając na akcję ze strony użytkownika.
 
-4. W menu **Debuguj** wybierz pozycję **Windows**, następnie **Obejrzyj**i kliknij pozycję **Watch1**.
+4. W menu **Debuguj** wybierz pozycję **Windows**, następnie **Obejrzyj** i kliknij pozycję **Watch1**.
 
 5. W oknie **Watch1** kliknij pusty wiersz. W kolumnie **Nazwa** wpisz `textBox1.Text` (jeśli używasz programu Visual Basic lub Visual C#) lub `textBox1->Text` (Jeśli używasz języka C++), naciśnij klawisz ENTER.
 
@@ -183,6 +184,6 @@ Formularz systemu Windows jest jedną z najczęściej używanych aplikacji zarz�
 
      Debuger przerywa wykonywanie formularza systemu Windows w punkcie przerwania.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)

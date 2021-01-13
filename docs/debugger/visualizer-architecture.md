@@ -1,5 +1,7 @@
 ---
 title: Architektura wizualizatora | Microsoft Docs
+description: Wizualizator Wyświetla określony typ elementu danych i może zezwalać na edycję. Dowiedz się więcej o architekturze wizualizatora.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6dfbc8c57ff2e78bf0c6ebbd4e9899c372d7084
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9166cc3c98f72e43042a26c0787d1cbf45223a74
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73187160"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149758"
 ---
 # <a name="visualizer-architecture"></a>Architektura wizualizatora
 Architektura wizualizatora debugera ma dwie części:
@@ -85,9 +87,9 @@ Architektura wizualizatora debugera ma dwie części:
 |---------------------|-------------------|
 |<xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.TransferData%2A><br /><br /> —lub—<br /><br /> <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.TransferObject%2A>|<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.TransferData%2A>|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Porady: pisanie wizualizatora](create-custom-visualizers-of-data.md)
 - [Wskazówki: Pisanie wizualizatora w C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
 - [Przewodnik: pisanie wizualizatora w języku Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
 - [Przewodnik: pisanie wizualizatora w języku Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
-- [Zagadnienia dotyczące zabezpieczeń internetowych](../debugger/visualizer-security-considerations.md)
+- [Zagadnienia dotyczące zabezpieczeń wizualizatora](../debugger/visualizer-security-considerations.md)

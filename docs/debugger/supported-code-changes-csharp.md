@@ -1,5 +1,7 @@
 ---
 title: Obsługiwane zmiany kodu (C# i Visual Basic) | Microsoft Docs
+description: Informacje o zmianach w kodzie, które są obsługiwane w przypadku korzystania z funkcji Edytuj i Kontynuuj podczas debugowania projektu C# lub Visual Basic w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 10/11/2018
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c480fad064cad602ea3fd19153d53f0276815d30
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 267d9097ebe53b4074bed6c5caf4077006c946eb
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509422"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149212"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Obsługiwane zmiany kodu (C# i Visual Basic)
 Edytuj i Kontynuuj obsługuje większość typów zmian kodu w treści metody. Większość zmian poza treściami metod oraz kilka zmian w obrębie treści metody nie można zastosować podczas debugowania. Aby zastosować te nieobsługiwane zmiany, należy zatrzymać debugowanie i ponownie uruchomić za pomocą nowej wersji kodu.
@@ -32,7 +34,7 @@ W poniższej tabeli przedstawiono zmiany, które mogą zostać wprowadzone w ję
 
 |Element/funkcja języka|Obsługiwana operacja edycji|Ograniczenia|
 |-|-|-|
-|Types|Dodawanie metod, pól, konstruktorów, et al|[Tak](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md)|
+|Typy|Dodawanie metod, pól, konstruktorów, et al|[Tak](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md)|
 |Iteratory|Dodaj lub zmodyfikuj|Nie|
 |wyrażenia asynchroniczne/await|Dodaj lub zmodyfikuj|[Tak](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md)|
 |Obiekty dynamiczne|Dodaj lub zmodyfikuj|Nie|
@@ -56,12 +58,12 @@ W poniższej tabeli przedstawiono zmiany, które mogą zostać wprowadzone w ję
 |Element/funkcja języka|Nieobsługiwana operacja edycji|
 |-|-|
 |Wszystkie elementy kodu|Zmiana nazwy|
-|Namespaces|Dodaj|
+|Przestrzenie nazw|Dodaj|
 |Przestrzenie nazw, typy, elementy członkowskie|Usuń|
 |Typy ogólne|Dodaj lub zmodyfikuj|
 |Interfejsy|Modyfikowanie|
-|Types|Dodawanie abstrakcyjnej lub wirtualnej składowej, Dodawanie przesłonięcia (zobacz [szczegóły](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md))|
-|Types|Dodaj destruktor|
+|Typy|Dodawanie abstrakcyjnej lub wirtualnej składowej, Dodawanie przesłonięcia (zobacz [szczegóły](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md))|
+|Typy|Dodaj destruktor|
 |Elementy członkowskie|Modyfikowanie elementu członkowskiego odwołującego się do osadzonego typu międzyoperacyjnego|
 |Elementy członkowskie|Modyfikowanie statycznego elementu członkowskiego, po którym został już uzyskany dostęp przez wykonanie kodu|
 |Elementy członkowskie (Visual Basic)|Modyfikowanie elementu członkowskiego za pomocą instrukcji with Error lub Resume|

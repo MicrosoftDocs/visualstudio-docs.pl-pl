@@ -1,5 +1,7 @@
 ---
 title: Okno dialogowe Właściwości okna | Microsoft Docs
+description: Dowiedz się, jak wyświetlić właściwości okna, które jest wyświetlane w widoku systemu Windows. Ten artykuł zawiera linki do innych artykułów, które dokumentują właściwości.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c27f10298f3a5621bc68e31bc2b150663955d6c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5bd6c8a7f3b07cdd0667ae8d2c33aeb96d6d7679
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62929213"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149225"
 ---
 # <a name="window-properties-dialog-box"></a>Okno dialogowe właściwości okna
 Użyj tego okna dialogowego, aby dowiedzieć się więcej na temat określonego okna. Aby wyświetlić to okno dialogowe, Przenieś fokus do okna [Widok systemu Windows](../debugger/windows-view.md) . Wybierz dowolny węzeł okna w drzewie, a następnie wybierz polecenie **Właściwości** z menu **Widok** .

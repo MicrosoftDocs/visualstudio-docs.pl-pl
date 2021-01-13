@@ -1,5 +1,7 @@
 ---
 title: Przywracanie ukrytych poleceń debugera | Microsoft Docs
+description: Informacje na temat przywracania ukrytych poleceń debugera w programie Visual Studio. W przypadku niektórych języków domyślne ustawienia środowiska IDE mogą ukrywać niektóre polecenia debugera.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 295d04aa33f7f6602d536a69baafae9105a51fe5
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: e761a9bcbbf2f35555ae30065cd239f4d7587ff4
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852025"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148601"
 ---
 # <a name="how-to-restore-hidden-debugger-commands"></a>Porady: przywracanie ukrytych poleceń debugera
 Podczas konfigurowania programu Visual Studio zostanie wyświetlony monit o wybranie zestawu domyślnych ustawień IDE dla podstawowego języka programowania. W przypadku niektórych języków domyślne ustawienia środowiska IDE mogą ukrywać niektóre polecenia debugera.
@@ -64,14 +66,14 @@ Podczas konfigurowania programu Visual Studio zostanie wyświetlony monit o wybr
 
 5. Kliknij przycisk **Dalej**.
 
-6. Na stronie **Wybierz ustawienia do zaimportowania** w obszarze **Opcje**upewnij się, że wybrano opcję **debugowanie** . Wyczyść inne pola wyboru, chyba że chcesz zaimportować te ustawienia.
+6. Na stronie **Wybierz ustawienia do zaimportowania** w obszarze **Opcje** upewnij się, że wybrano opcję **debugowanie** . Wyczyść inne pola wyboru, chyba że chcesz zaimportować te ustawienia.
 
-7. Kliknij przycisk **Zakończ**.
+7. Kliknij przycisk **Finish** (Zakończ).
 
 8. Na stronie **Importowanie** zapoznaj się ze wszystkimi błędami związanymi z resetowaniem ustawień w obszarze **szczegóły**.
 
 9. Kliknij przycisk **Zamknij**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)

@@ -1,5 +1,7 @@
 ---
 title: Korzystanie z okna zadania | Microsoft Docs
+description: Zadania są operacjami asynchronicznymi, które mogą być uruchamiane współbieżnie. Na tym samym wątku można uruchamiać wiele zadań. Użyj zadań do wyświetlania informacji o obiekcie Task i WinJS. Promise.
+ms.custom: SEO-VS-2020
 ms.date: 03/18/2018
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b32dc6372a6ce4983e9bd11e05a4a662d0ad44ba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7df43a02dbda1fbcbe93decb58721032cd84d657
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62901608"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150070"
 ---
 # <a name="using-the-tasks-window-c-visual-basic-c"></a>Korzystanie z okna zadania (C#, Visual Basic, C++)
 
@@ -49,7 +51,7 @@ W kolumnach okna **zadania** są wyświetlane poniższe informacje.
 |-----------------|-----------------|
 |**Znaczników**|Pokazuje, które zadania są oflagowane i umożliwiają Flagowanie lub usuwanie flagi zadania.|
 |**Ikony**|Żółta strzałka wskazuje bieżące zadanie. Bieżące zadanie to zadanie najwyższego poziomu w bieżącym wątku.<br /><br /> Biała Strzałka wskazuje zadanie przerywania, czyli bieżące, gdy debuger został wywołany.<br /><br /> Ikona Wstrzymaj oznacza zadanie, które zostało zamrożone przez użytkownika. Zadanie można zablokować i odblokować, klikając je prawym przyciskiem myszy na liście.|
-|**ID**|Numer dostarczony przez system dla zadania. W kodzie natywnym jest to adres zadania.|
+|**ID (Identyfikator)**|Numer dostarczony przez system dla zadania. W kodzie natywnym jest to adres zadania.|
 |**Stan**|Bieżący stan (zaplanowany, aktywny, zablokowany, zakleszczony, oczekujące lub ukończone) zadania. Zaplanowane zadanie to takie, które nie zostało jeszcze uruchomione i dlatego nie zawiera jeszcze stosu wywołań, przypisanego wątku ani powiązanych informacji.<br /><br /> Aktywne zadanie to takie, które wykonywało kod przed przerwaniem w debugerze.<br /><br /> Zadanie oczekujące lub zablokowane to takie, które jest blokowane, ponieważ oczekuje na zdarzenie, które ma być sygnalizowane, blokadę do zwolnienia lub inne zadanie do zakończenia.<br /><br /> Zazakleszczony zadanie to oczekujące zadanie, którego wątek jest zakleszczony przy użyciu innego wątku.<br /><br /> Umieść kursor nad komórką **stanu** dla zazakleszczenia lub oczekującego zadania, aby wyświetlić więcej informacji na temat bloku. **Ostrzeżenie:**  Okno **zadania** raportuje zakleszczenie tylko dla zablokowanego zadania, które używa elementu podstawowego synchronizacji, który jest obsługiwany przez przechodzenie łańcucha oczekiwania (WCT). Na przykład w przypadku zakleszczenia <xref:System.Threading.Tasks.Task> obiektu, który używa WCT, program debugowania raportuje **oczekiwanie na zakleszczenie**. W przypadku zadania, które jest zarządzane przez środowisko uruchomieniowe współbieżności, które nie korzysta z WCT, debuger zgłasza **oczekiwanie**. Aby uzyskać więcej informacji na temat WCT, zobacz [przechodzenie łańcucha oczekiwania](/windows/desktop/Debug/wait-chain-traversal).|
 |**Godzina rozpoczęcia**|Godzina, o której zadanie stało aktywne.|
 |**Czas trwania**|Liczba sekund, przez jaką zadanie jest aktywne.|
@@ -76,7 +78,7 @@ W kolumnach okna **zadania** są wyświetlane poniższe informacje.
  ![Tryb grupowania w oknie zadań](../debugger/media/parallel_tasks_groupedmode.png "Parallel_Tasks_GroupedMode")
 
 ## <a name="parent-child-view"></a>Nadrzędny widok podrzędny
- (Ten widok jest dostępny tylko dla kodu zarządzanego). Klikając prawym przyciskiem myszy nagłówek kolumny **stan** , a następnie klikając pozycję **Grupuj według**elementów  >  **nadrzędnych**, można zmienić listę zadań na hierarchiczny widok, w którym każde zadanie podrzędne jest węzłem podrzędnym, który może być wyświetlany lub ukryty w obszarze nadrzędnym.
+ (Ten widok jest dostępny tylko dla kodu zarządzanego). Klikając prawym przyciskiem myszy nagłówek kolumny **stan** , a następnie klikając pozycję **Grupuj według** elementów  >  **nadrzędnych**, można zmienić listę zadań na hierarchiczny widok, w którym każde zadanie podrzędne jest węzłem podrzędnym, który może być wyświetlany lub ukryty w obszarze nadrzędnym.
 
 ## <a name="flagging-tasks"></a>Oflagowanie zadań
  Można oflagować wątek, w którym uruchamiane jest zadanie, zaznaczając element listy zadań, a następnie wybierając opcję **Oflaguj przypisany wątek** z menu kontekstowego lub klikając ikonę flagi w pierwszej kolumnie. Jeśli oflagujesz kilka zadań, Możesz sortować według kolumny flag, aby przenieść wszystkie oflagowane zadania do góry, aby można było skupić się na nich. Można również użyć okna **stosów równoległych** do wyświetlania tylko oflagowanych zadań. Pozwala to na odfiltrowanie zadań, które nie są interesujące do debugowania. Flagi nie są utrwalane między sesjami debugowania.
@@ -92,7 +94,7 @@ W kolumnach okna **zadania** są wyświetlane poniższe informacje.
 
 Polecenie **Przełącz do zadania** powoduje, że bieżące zadanie jest aktywne. Polecenie **Przełącz do ramki** powoduje, że wybrana Ramka stosu ma aktywną ramkę stosu. Kontekst debugera przechodzi do bieżącego zadania lub wybranej ramki stosu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)
 - [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)

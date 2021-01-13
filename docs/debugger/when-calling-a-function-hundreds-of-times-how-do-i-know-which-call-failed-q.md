@@ -1,5 +1,6 @@
 ---
 title: Znajdź błąd wywołania podczas wywoływania funkcji wiele razy
+description: Zobacz technikę ustawiania punktu przerwania w funkcji, tak że przerwanie występuje tylko w wywołaniu, dla którego funkcja kończy się niepowodzeniem.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -28,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de3d186b7800efc3e807e3f775b48d91b44072b4
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 567450f11572cc998f952117c33992cdba33570d
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810487"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149303"
 ---
 # <a name="when-calling-a-function-hundreds-of-times-how-do-i-know-which-call-failed"></a>Skąd wiadomo, gdy funkcja jest wywoływana setki razy, które wywołanie nie powiodło się?
 ## <a name="problem-description"></a>Opis problemu
@@ -48,7 +49,7 @@ CnvtV(int) (no condition) when hit count is equal to 1000 (currently 101)
 
  Teraz wiesz, że w wywołaniu 101st nie powiodła się funkcja. Jeśli zresetujesz punkt przerwania z liczbą trafień 101 i ponownie uruchomisz program, program zatrzyma się w wywołaniu `CnvtV` , które spowodowało niepowodzenie.
 
-## <a name="see-also"></a>Zobacz też
-- [Debugowanie kodu natywnego — Często zadawane pytania](../debugger/debugging-native-code-faqs.md)
+## <a name="see-also"></a>Zobacz także
+- [Debugowanie często zadawanych pytań dotyczących kodu natywnego](../debugger/debugging-native-code-faqs.md)
 - [Ustawianie punktów przerwania](/previous-versions/ktf38f66(v=vs.100))
 - [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)

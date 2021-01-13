@@ -1,5 +1,7 @@
 ---
 title: Gdzie można sprawdzić kody błędów Win32? | Microsoft Docs
+description: Aby wyszukać kod błędu Win32, wprowadź go w Watch lub QuickWatch. Na przykład "0x80000004, HR". Definicje kodu błędu znajdują się w INCLUDE\WINERROR.H.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8e3dda1b728cd631efe8a84913af3d5c475138d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 44a006be3b6ecad3ef723c00154354cb35df0049
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72728033"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149290"
 ---
 # <a name="where-can-i-look-up-win32-error-codes"></a>Gdzie można sprawdzić kody błędów Win32?
 WINERROR. H w katalogu dołączania domyślnej instalacji systemu zawiera definicje kodu błędów dla funkcji Win32 API.
@@ -32,6 +34,6 @@ WINERROR. H w katalogu dołączania domyślnej instalacji systemu zawiera defini
 
 `0x80000004,hr`
 
-## <a name="see-also"></a>Zobacz też
-- [Debugowanie kodu natywnego — Często zadawane pytania](../debugger/debugging-native-code-faqs.md)
+## <a name="see-also"></a>Zobacz także
+- [Debugowanie często zadawanych pytań dotyczących kodu natywnego](../debugger/debugging-native-code-faqs.md)
 - [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)

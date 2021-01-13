@@ -1,5 +1,7 @@
 ---
 title: Pasek narzędzi Spy + + | Microsoft Docs
+description: Poznanie elementów interfejsu użytkownika na pasku narzędzi Spy + +, który pojawia się pod paskiem menu. Aby wyświetlić lub ukryć pasek narzędzi, w menu Widok kliknij polecenie Pasek narzędzi.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fa1dfe0917fece3c814678295c5abd6013b426b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9dc2564a69c291055d53e358c084e7dd9c4d0506
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72729738"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148198"
 ---
 # <a name="spy-toolbar"></a>Spy++ — Pasek narzędzi
 Pasek narzędzi zostanie wyświetlony pod paskiem menu w programie Spy + +. Aby wyświetlić lub ukryć pasek narzędzi, w menu **Widok** kliknij polecenie **pasek narzędzi**.
@@ -41,7 +43,7 @@ Pasek narzędzi zostanie wyświetlony pod paskiem menu w programie Spy + +. Aby 
 |![Przycisk Eksploratora właściwości programu Spy&#43;&#43; ](../debugger/media/icon_spy--_propexp.gif "Icon_Spy + + _PropExp")|Wyświetla właściwości okna wybranego w widoku systemu Windows.|
 |![Przycisk "Spy&#43;&#43; Refresh"](../debugger/media/icon_spy--_refresh.gif "Icon_Spy + + _Refresh")|Odświeża widoki systemowe.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Korzystanie z programu Spy++](../debugger/using-spy-increment.md)
 - [Spy++ — Widoki](../debugger/spy-increment-views.md)
 - [Spy++ — Odwołanie](../debugger/spy-increment-reference.md)

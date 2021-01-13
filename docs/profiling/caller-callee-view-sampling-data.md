@@ -1,5 +1,7 @@
 ---
 title: Widok wywołujący-wywoływany — Dane próbkowania | Microsoft Docs
+description: Przeczytaj, jak widok wywołujący/wywoływany wyświetla informacje profilowania dla wybranej funkcji i jej funkcji nadrzędnych i podrzędnych w Eksplorator wydajności.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 008aa6bd9402cde760ffc61a613aba778c8ec96f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5f01d2b9fbff4864c8e3fa4d96dccdda54da7e0
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74773273"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148354"
 ---
 # <a name="callercallee-view---sampling-data"></a>Widok wywołujący/wywoływany-Dane próbkowania
 Widok wywołujący/wywoływany wyświetla informacje profilowania dla wybranej funkcji i jej funkcji nadrzędnych i podrzędnych. Widok wywołujący/wywoływany zawiera trzy siatki.
@@ -48,7 +50,7 @@ Widok wywołujący/wywoływany wyświetla informacje profilowania dla wybranej f
 |**Próbki wyłączne**|— Dla bieżącej funkcji liczba próbek w przebiegu profilowania, które zostały zebrane podczas bezpośredniego wykonywania tej funkcji; oznacza to, że w przypadku tej funkcji w górnej części stosu wywołań. Próbki, które są zbierane, gdy funkcje podrzędne tej funkcji są wykonywane, nie są zliczane jako liczby wyłączne.<br />— Dla funkcji wywołującej, liczba wyłącznych próbek bieżącej funkcji, które zostały zebrane, gdy ta funkcja nazywa bieżącą funkcję.<br />-Dla funkcji wywoływanej, liczba wyłącznych próbek tej funkcji, które zostały zebrane podczas bieżącej funkcji zwanej tą funkcją.|
 |**Wyłącznych próbek%**|Procent wszystkich próbek w przebiegu profilowania, które były wyłącznymi próbkami tej funkcji.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Widok wywołujący/wywoływany — Dane próbkowania pamięci platformy .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
 - [Widok elementu wywołującego/wywoływanego — dane Instrumentacji pamięci platformy .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
 - [Widok wywołujący/wywoływany-Dane instrumentacji](../profiling/caller-callee-view-instrumentation-data.md)

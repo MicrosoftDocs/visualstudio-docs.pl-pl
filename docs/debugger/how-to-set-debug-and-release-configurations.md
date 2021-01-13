@@ -1,5 +1,7 @@
 ---
 title: Ustawianie konfiguracji debugowania i wydania | Microsoft Docs
+description: Ustawianie konfiguracji debugowania i wydania w programie Visual Studio. Można skompilować wersję do debugowania dla debugowania i wersję wydania dla ostatecznej dystrybucji wersji.
+ms.custom: SEO-VS-2020
 ms.date: 10/05/2018
 ms.topic: how-to
 f1_keywords:
@@ -31,12 +33,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e85f7c67f8dc25bb69f7de07a19286b5c63e938a
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 51237a9b73825620c77c7f2a10ad1efe367cdd37
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599901"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149550"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>Ustawianie konfiguracji debugowania i wersji w programie Visual Studio
 
@@ -85,7 +87,7 @@ Aby uzyskać szczegółowe informacje na temat ustawień projektu dla konfigurac
 
 5. Wybierz przycisk **Zaawansowane** (lub przycisk **Zaawansowane opcje kompilowania** w Visual Basic).
 
-6. Na liście **Informacje o debugowaniu** (lub **Generuj** listę informacji debugowania w Visual Basic) wybierz opcję **pełny**, plik **PDB-Only**lub **przenośny**.
+6. Na liście **Informacje o debugowaniu** (lub **Generuj** listę informacji debugowania w Visual Basic) wybierz opcję **pełny**, plik **PDB-Only** lub **przenośny**.
 
    Formatem przenośnym jest najnowszy format Międzyplatformowy dla platformy .NET Core. Aby uzyskać więcej informacji na temat opcji, zobacz okno [dialogowe Zaawansowane ustawienia kompilacji (C#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md).
 
@@ -117,11 +119,11 @@ Aby uzyskać szczegółowe informacje na temat ustawień projektu dla konfigurac
 
    Kompilator tworzy pliki symboli w tym samym folderze, w którym znajduje się plik wykonywalny lub główny pliku wyjściowego.
 
-## <a name="see-also"></a><a name="see-also"></a>Zobacz też
+## <a name="see-also"></a><a name="see-also"></a>Zobacz także
 
 - [Określanie plików symboli (. pdb) i plików źródłowych w debugerze programu Visual Studio](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)<br/>
 - [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)<br/>
-- [Ustawienia projektu dla konfiguracji debugowania języka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)<br/>
+- [Ustawienia projektu dla konfiguracji debugowania w języku C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)<br/>
 - [Ustawienia projektu dla konfiguracji debugowania języka C#](../debugger/project-settings-for-csharp-debug-configurations.md)<br/>
-- [Ustawienia projektu dla konfiguracji debugowania Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)<br/>
+- [Ustawienia projektu dla konfiguracji debugowania w języku Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)<br/>
 - [Instrukcje: Tworzenie i edytowanie konfiguracji](../ide/how-to-create-and-edit-configurations.md)

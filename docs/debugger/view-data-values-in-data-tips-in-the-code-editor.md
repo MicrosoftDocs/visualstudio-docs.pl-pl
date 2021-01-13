@@ -1,6 +1,7 @@
 ---
 title: Wyświetlanie wartości zmiennych w etykietkach danych | Microsoft Docs
-ms.custom: seodec18
+description: Użyj etykiet danych, aby wygodnie wyświetlać informacje dotyczące zmiennych, w tym tablic i struktur, podczas debugowania. Możesz również modyfikować wartości.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/21/2018
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf5eda8205dbe0629d0b2801473de83c2f91257e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 432fd50d30347972d7b1fc8222a430fc90a9e590
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75404279"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149966"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Wyświetlanie wartości danych we wskazówkach datapreview w edytorze kodu
 
@@ -71,11 +72,11 @@ Aby zamknąć etykietki danych, umieść kursor nad etykietki danych i wybierz i
 
 ### <a name="close-all-datatips"></a>Zamknij wszystkie etykietki danych
 
-Aby zamknąć wszystkie etykietki danych, w menu **Debuguj** wybierz polecenie **Wyczyść wszystkie etykietki**danych.
+Aby zamknąć wszystkie etykietki danych, w menu **Debuguj** wybierz polecenie **Wyczyść wszystkie etykietki** danych.
 
 ### <a name="close-all-datatips-for-a-specific-file"></a>Zamknij wszystkie etykietki danych dla określonego pliku
 
-Aby zamknąć wszystkie etykietki danych dla określonego pliku, w menu **Debuguj** wybierz polecenie **Wyczyść wszystkie podpowiedzi danych przypięte \<Filename> do **.
+Aby zamknąć wszystkie etykietki danych dla określonego pliku, w menu **Debuguj** wybierz polecenie **Wyczyść wszystkie podpowiedzi danych przypięte \<Filename> do**.
 
 ## <a name="expand-and-edit-information"></a>Rozwiń i Edytuj informacje
 Możesz użyć etykietek danych, aby rozwinąć tablicę, strukturę lub obiekt, aby wyświetlić jego elementy członkowskie. Możesz również edytować wartość zmiennej z etykietki danych.
@@ -127,17 +128,17 @@ Można eksportować etykietki danych do pliku XML, który można udostępniać l
 
 **Aby wyeksportować etykietki danych:**
 
-1. Wybierz kolejno opcje **Debuguj**  >  **eksport**danych.
+1. Wybierz kolejno opcje **Debuguj**  >  **eksport** danych.
 
 1. W oknie dialogowym **Eksportuj etykietki** danych przejdź do lokalizacji, w której ma zostać zapisany plik XML, wpisz nazwę pliku, a następnie wybierz pozycję **Zapisz**.
 
 **Aby zaimportować etykietki danych:**
 
-1. Wybierz pozycję **Debuguj**  >  **Importuj etykietki**danych.
+1. Wybierz pozycję **Debuguj**  >  **Importuj etykietki** danych.
 
 1. W oknie dialogowym **Importuj porady dotyczące** danych wybierz plik XML z danymi, które chcesz otworzyć, a następnie wybierz pozycję **Otwórz**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Co to jest debugowanie?](../debugger/what-is-debugging.md)
 - [Narzędzia i techniki debugowania](../debugger/write-better-code-with-visual-studio.md)
 - [Najpierw Spójrz na Debugowanie](../debugger/debugger-feature-tour.md)

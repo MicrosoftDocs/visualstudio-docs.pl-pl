@@ -1,6 +1,7 @@
 ---
 title: Wyświetlanie wartości rejestru w debugerze | Microsoft Docs
-ms.custom: seodec18
+description: Wyświetl wartości rejestru w oknie rejestry w programie Visual Studio. Podczas debugowania Zarejestruj wartości Zmień kod w aplikacji.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/19/2018
 ms.topic: how-to
 f1_keywords:
@@ -24,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed60b21d7c8e90e18b389a29c3343713ac8ece3d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8422738b5c46b5482ac65cd24ccc903acdb4506e
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348577"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148042"
 ---
 # <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>Wyświetl wartości rejestru w oknie rejestry (C#, C++, Visual Basic, F #)
 
@@ -48,14 +49,14 @@ Można edytować wartości rejestru. Aby uzyskać więcej informacji, zobacz [ja
 
 **Aby otworzyć okno rejestry**
 
-1. Włącz debugowanie na poziomie adresu, wybierając opcję **Włącz debugowanie na poziomie adresu** w **narzędziu** (lub **Debuguj**) **Options**>  >  **debugowanie**opcji.
+1. Włącz debugowanie na poziomie adresu, wybierając opcję **Włącz debugowanie na poziomie adresu** w **narzędziu** (lub **Debuguj**) >  >  **debugowanie** opcji.
 
-1. Gdy debugowanie jest uruchomione lub w punkcie przerwania, wybierz kolejno opcje **Debuguj**  >  **Windows**  >  **rejestry**systemu Windows lub naciśnij klawisze **Alt** + **5**.
+1. Gdy debugowanie jest uruchomione lub w punkcie przerwania, wybierz kolejno opcje **Debuguj**  >    >  **rejestry** systemu Windows lub naciśnij klawisze **Alt** + **5**.
 
 >[!NOTE]
 >Okna dialogowe i polecenia menu mogą się różnić w zależności od wersji lub ustawień programu Visual Studio. Aby zmienić ustawienia, wybierz pozycję **Importuj i Eksportuj ustawienia** w menu **Narzędzia** programu Visual Studio. Aby uzyskać więcej informacji, zobacz [Resetowanie ustawień](../ide/environment-settings.md#reset-settings).
 
-### <a name="see-also"></a>Zobacz też
+### <a name="see-also"></a>Zobacz także
 
 - [Podstawy debugowania: okno rejestrów](../debugger/debugging-basics-registers-window.md)
 - [Wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)

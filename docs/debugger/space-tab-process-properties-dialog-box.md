@@ -1,5 +1,7 @@
 ---
 title: Karta przestrzeń, okno dialogowe właściwości procesu | Microsoft Docs
+description: Dowiedz się, jak wyświetlić okno dialogowe właściwości procesu w programie Spy + + podczas debugowania. Zapoznaj się z ustawieniami dostępnymi na karcie Space.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 563d54c39b4d9ce3bb2d76a9e531161c2c4ee5b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fe168f34baf65b00eab59e94afb30e07dfe89b50
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62929818"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149082"
 ---
 # <a name="space-tab-process-properties-dialog-box"></a>Karta Przestrzeń, okno dialogowe właściwości procesu
 Użyj zakładki **Space (miejsce** ), aby przeanalizować przestrzeń adresową procesu. Aby wyświetlić okno [dialogowe właściwości procesu](../debugger/process-properties-dialog-box.md), Przenieś fokus do okna [widok procesów](../debugger/processes-view.md) . Wybierz dowolny węzeł procesu w drzewie, a następnie wybierz polecenie **Właściwości** z menu **Widok** .

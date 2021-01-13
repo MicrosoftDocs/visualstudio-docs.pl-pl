@@ -1,5 +1,7 @@
 ---
 title: Wyświetlanie ciągów w wizualizatorze ciągu | Microsoft Docs
+description: Użyj wizualizatora ciągów w debugerze programu Visual Studio, aby wyświetlić ciągi tekstowe, XML, HTML i JSON. Można wyświetlać inne typy obiektów, w tym zestawy danych i DataTable.
+ms.custom: SEO-VS-2020
 ms.date: 04/08/2019
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33e1cbd4b1c754498d7e2bd6c354e874ae8cdad5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d13e5f5c3ee5a82a56dd8c98fa37e3e13e5169d5
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72450393"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149940"
 ---
 # <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>Wyświetlanie ciągów w wizualizatorze ciągu w programie Visual Studio
 
@@ -64,7 +66,7 @@ Poprawnie sformułowany ciąg HTML wygląda tak, jakby był renderowany w przegl
 
 ![Wizualizator ciągu HTML](../debugger/media/dbg-string-visualizers-html.png "Wizualizator ciągu HTML")
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Tworzenie wizualizacji niestandardowych (C#, Visual Basic)](../debugger/create-custom-visualizers-of-data.md)
 - [Wizualizacje danych w Visual Studio dla komputerów Mac](/visualstudio/mac/data-visualizations)

@@ -1,5 +1,7 @@
 ---
 title: Funkcje IntelliTrace | Microsoft Docs
+description: Dowiedz się więcej o funkcjach IntelliTrace w programie Visual Studio. Użyj IntelliTrace do rejestrowania zdarzeń i wywołań metod w aplikacji.
+ms.custom: SEO-VS-2020
 ms.date: 09/19/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ac7ca0e59a479aff3386486d2ceaf061038db68
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2f5d4603e052cd5968055304290559b8a8d5a56a
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536581"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148640"
 ---
 # <a name="intellitrace-features-c-visual-basic-c"></a>Funkcje IntelliTrace (C#, Visual Basic, C++)
 
@@ -48,7 +50,7 @@ Jeśli debugujesz, Zatrzymaj debugowanie. Przejdź do pozycji **narzędzia > opc
 
 ## <a name="collect-snapshots-c-visual-basic-c"></a><a name="Snapshots"></a> Zbierz migawki (C#, Visual Basic, C++)
 
-Ta funkcja nie jest domyślnie włączona, ale IntelliTrace może przechwytywać migawki aplikacji w każdym punkcie przerwania i zdarzeniu debugera. można je wyświetlić w historycznej sesji debugowania. Migawka umożliwia wyświetlenie pełnego stanu aplikacji. Aby włączyć przechwytywanie migawek, przejdź do pozycji **narzędzia > opcje > IntelliTrace > ogólne**i wybierz pozycję **migawki IntelliTrace (zarządzane i natywne)**. Aby uzyskać więcej informacji, zobacz [Inspekcja poprzednich stanów aplikacji przy użyciu IntelliTrace](../debugger/view-historical-application-state.md).
+Ta funkcja nie jest domyślnie włączona, ale IntelliTrace może przechwytywać migawki aplikacji w każdym punkcie przerwania i zdarzeniu debugera. można je wyświetlić w historycznej sesji debugowania. Migawka umożliwia wyświetlenie pełnego stanu aplikacji. Aby włączyć przechwytywanie migawek, przejdź do pozycji **narzędzia > opcje > IntelliTrace > ogólne** i wybierz pozycję **migawki IntelliTrace (zarządzane i natywne)**. Aby uzyskać więcej informacji, zobacz [Inspekcja poprzednich stanów aplikacji przy użyciu IntelliTrace](../debugger/view-historical-application-state.md).
 
 Migawki są dostępne w Visual Studio Enterprise 2017 w wersji 15,5 lub nowszej. wymaga to również rocznicowej aktualizacji systemu Windows 10.  W przypadku aplikacji .NET Core i ASP.NET Core jest wymagana Visual Studio Enterprise 2017 wersja 15,7. W przypadku aplikacji natywnych przeznaczonych dla systemu Windows jest wymagana Visual Studio Enterprise 2017 wersja 15,9 Preview 2.
 
@@ -67,7 +69,7 @@ Dzięki temu można zobaczyć historię stosu wywołań i przejść do tyłu i d
 
 ### <a name="use-the-navigation-gutter"></a>Używanie marginesu nawigacji
 
-Możesz użyć marginesu nawigacji, który pojawia się po lewej stronie okna kod. Jeśli nie widzisz marginesu nawigacyjnego, przejdź do pozycji **narzędzia > opcje > IntelliTrace > zaawansowane**i wybierz opcję **Wyświetl margines nawigacyjny w trybie debugowania**.
+Możesz użyć marginesu nawigacji, który pojawia się po lewej stronie okna kod. Jeśli nie widzisz marginesu nawigacyjnego, przejdź do pozycji **narzędzia > opcje > IntelliTrace > zaawansowane** i wybierz opcję **Wyświetl margines nawigacyjny w trybie debugowania**.
 
 Margines nawigacyjny umożliwia przechodzenie do przodu i do tyłu przez wywołania metod i zdarzenia w trybie debugowania historycznego. Aby uzyskać więcej informacji na temat debugowania historycznego, zobacz [debugowanie historyczne](../debugger/historical-debugging.md). Zawiera kilka poleceń:
 

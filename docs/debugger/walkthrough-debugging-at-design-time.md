@@ -1,6 +1,7 @@
 ---
 title: Debugowanie w czasie projektowania | Microsoft Docs
-ms.custom: ''
+description: Użyj okna bezpośredniego do debugowania kodu w czasie projektowania, bez uruchamiania aplikacji. Można wykonać funkcję i przeanalizować stan po trafieniu punktu przerwania.
+ms.custom: SEO-VS-2020
 ms.date: 01/10/2019
 ms.topic: conceptual
 dev_langs:
@@ -16,18 +17,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bc5d08e8b0ae71acb846e1e863e24e8b8def0ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f127c630cec0e0b64ab5602e81f2b314a3896b16
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183564"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148851"
 ---
 # <a name="debug-at-design-time-in-visual-studio-c-ccli-visual-basic-f"></a>Debugowanie w czasie projektowania w programie Visual Studio (C#, C++/CLI, Visual Basic, F #)
 
 Aby debugować kod w czasie projektowania, a nie w czasie, gdy aplikacja jest uruchomiona, można użyć okna **bezpośredniego** .
 
-Aby debugować kod XAML za aplikacją z projektanta XAML, takich jak scenariusze powiązań danych deklaratywnych, można użyć **Debug**  >  **dołączania debugowania do procesu**.
+Aby debugować kod XAML za aplikacją z projektanta XAML, takich jak scenariusze powiązań danych deklaratywnych, można użyć   >  **dołączania debugowania do procesu**.
 
 ## <a name="use-the-immediate-window"></a>Korzystanie z okna bezpośredniego
 
@@ -57,9 +58,9 @@ Poniższy przykład znajduje się w Visual Basic. Możesz również użyć okna 
    End Module
    ```
 
-1. Ustaw punkt przerwania w **funkcji końca**wiersza.
+1. Ustaw punkt przerwania w **funkcji końca** wiersza.
 
-1. Otwórz okno **bezpośrednie** , wybierając pozycję **Debuguj**  >  **Windows**  >  **natychmiast**Windows. Wpisz `?MyFunction` w oknie, a następnie naciśnij klawisz **Enter**.
+1. Otwórz okno **bezpośrednie** , wybierając pozycję **Debuguj**  >    >  **natychmiast** Windows. Wpisz `?MyFunction` w oknie, a następnie naciśnij klawisz **Enter**.
 
    Punkt przerwania został trafiony, a wartość **funkcji** w oknie **zmiennych lokalnych** to **1**. Możesz przeanalizować stos wywołań i inne okna debugowania, gdy aplikacja jest w trybie przerwania.
 
@@ -69,7 +70,7 @@ Poniższy przykład znajduje się w Visual Basic. Możesz również użyć okna 
 
 1. Bez wybierania opcji **Kontynuuj**, wpisz `?MySub()` w oknie **bezpośrednim** , a następnie naciśnij klawisz **Enter**. Punkt przerwania został trafiony, a wartość **funkcji** w oknie **zmiennych lokalnych** to **3**. Stan aplikacji można przeanalizować, gdy aplikacja jest w trybie przerwania.
 
-1. Wybierz pozycję **Continue** (Kontynuuj). Punkt przerwania zostanie ponownie trafiony, a wartość **funkcji** w oknie **zmiennych lokalnych** wynosi teraz **2**. **Bezpośrednie** okno zwraca **wyrażenie zostało ocenione i nie ma wartości**.
+1. Wybierz opcję **Kontynuuj**. Punkt przerwania zostanie ponownie trafiony, a wartość **funkcji** w oknie **zmiennych lokalnych** wynosi teraz **2**. **Bezpośrednie** okno zwraca **wyrażenie zostało ocenione i nie ma wartości**.
 
 1. Wybierz pozycję **Kontynuuj** ponownie. Aplikacja zostanie zakończona, a w oknie **bezpośrednim** zostanie zwrócona wartość **2** . Upewnij się, że nadal Pracujesz w trybie projektowania.
 
@@ -89,7 +90,7 @@ Poniższy przykład znajduje się w Visual Basic. Możesz również użyć okna 
 
 1. W drugim wystąpieniu programu Visual Studio Otwórz menu **Debuguj** i wybierz polecenie **Dołącz do procesu...**.
 
-1. W zależności od typu projektu (zobacz poprzednie kroki) wybierz z listy dostępnych procesów *UwpSurface.exe*, *WpfSurface.exe*lub proces *XDesProc.exe* .
+1. W zależności od typu projektu (zobacz poprzednie kroki) wybierz z listy dostępnych procesów *UwpSurface.exe*, *WpfSurface.exe* lub proces *XDesProc.exe* .
 
 1. W polu **Dołącz do** w oknie dialogowym **Dołącz do procesu** wybierz odpowiedni typ kodu dla kontrolki niestandardowej, która ma być debugowana.
 
@@ -107,6 +108,6 @@ Poniższy przykład znajduje się w Visual Basic. Możesz również użyć okna 
 
 1. Debuguj kod w drugim wystąpieniu programu Visual Studio.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)

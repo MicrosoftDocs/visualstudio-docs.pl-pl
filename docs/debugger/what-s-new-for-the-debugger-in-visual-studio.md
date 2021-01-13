@@ -1,6 +1,8 @@
 ---
 title: Co nowego w debugerze w programie Visual Studio 2017 | Microsoft Docs
 titleSuffix: ''
+description: 'Zobacz nowe funkcje w debugerze w wersji 15,5. Uwzględnione: migawki wybranego kodu aplikacji w produkcji i IntelliTrace krok po kroku.'
+ms.custom: SEO-VS-2020
 ms.date: 01/22/2018
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +22,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 523867a8f9aa074e9122c74deb8bcd91cddd8bee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 986ebf20cd49569bfcaf471b9bef994dfe774437
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75944219"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149407"
 ---
 # <a name="whats-new-for-the-debugger-in-visual-studio-2017"></a>Co nowego w debugerze w programie Visual Studio 2017
 
@@ -70,7 +72,7 @@ Debuger obejmuje następujące nowe funkcje:
 
 Aby uzyskać więcej informacji o tych nowych funkcjach, zobacz [Informacje o [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] wersji programu ](/visualstudio/releasenotes/vs2017-relnotes).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Debugowanie w Visual Studio](../debugger/index.yml)
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)

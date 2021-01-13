@@ -1,6 +1,7 @@
 ---
 title: Ustaw czujkę na zmienne | Microsoft Docs
-ms.custom: seodec18
+description: Podczas debugowania, zobacz zmienne i wyrażenia w Watch i QuickWatch. W polu czujka może być wyświetlana kilka zmiennych, QuickWatch tylko jeden i tylko wtedy, gdy są one przerywane.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 10/11/2018
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7e2a05fe84b023a60ef75f0cb262a08fc02587a
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: d13ee6163ebe8cf0f706cbe95e7451c2ebc7c411
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727427"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149485"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Obejrzyj zmienne z oknami Watch i QuickWatch
 
@@ -69,7 +70,7 @@ int main()
 
 1. W oknie **czujka** zaznacz pusty wiersz i wpisz zmienna `a` . Wykonaj te same czynności dla `b` i `c` .
 
-   ![Obserwowanie zmiennych](../debugger/media/watchvariables.png "WatchVariables")
+   ![Wyrażenia kontrolne zmiennych](../debugger/media/watchvariables.png "WatchVariables")
 
 1. Kontynuuj debugowanie, wybierając pozycję **Debuguj** do  >  **kroku** lub naciskając klawisz **F11** w razie potrzeby. Wartości zmiennych w oknie **czujki** zmieniają się podczas iteracji `for` pętli.
 
@@ -303,7 +304,7 @@ Aby obserwować `a` zmienną,
 
 1. Kontynuuj debugowanie. Można obserwować zmienną w oknie **czujki** .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Co to jest debugowanie?](../debugger/what-is-debugging.md)
 - [Narzędzia i techniki debugowania](../debugger/write-better-code-with-visual-studio.md)
 - [Najpierw Spójrz na Debugowanie](../debugger/debugger-feature-tour.md)

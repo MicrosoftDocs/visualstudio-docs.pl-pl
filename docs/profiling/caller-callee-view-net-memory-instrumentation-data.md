@@ -1,5 +1,7 @@
 ---
-title: Widok wywołujący-wywoływany-Dane instrumentacji usługi NET Memory | Microsoft Docs
+title: Widok Caller-Callee — dane Instrumentacji usługi NET Memory | Microsoft Docs
+description: Przejrzyj Widok wywołujący/wywoływany danych profilowania pamięci platformy .NET, w którym są wyświetlane dane alokacji i chronometrażu dla wybranej funkcji oraz funkcji nadrzędnych i podrzędnych.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c51f4bc1e823f565670bf1f6df77553ff4658d6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3fa4928f9da81b2141eec76e54bce7887f50a074
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779730"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148081"
 ---
 # <a name="callercallee-view---net-memory-instrumentation-data"></a>Widok elementu wywołującego/wywoływanego — dane Instrumentacji pamięci platformy .NET
 Widok wywołujący/wywoływany pamięci platformy .NET, który został zebrany za pomocą metody instrumentacji, wyświetla dane alokacji i chronometraż dla wybranej funkcji oraz funkcje nadrzędne i podrzędne tej wybranej funkcji. Widok wywołujący/wywoływany zawiera trzy siatki.
@@ -94,7 +96,7 @@ Widok wywołujący/wywoływany pamięci platformy .NET, który został zebrany z
 |**Minimalny czas włączny aplikacji**|Minimalny czas włączny aplikacji w tym kontekście w przypadku wywołania tej funkcji.|
 
 ## <a name="application-exclusive-values"></a>Wartości wyłączne aplikacji
- Wartości wyłączne aplikacji wskazują czas spędzony w funkcji, z wyłączeniem czasu spędzonego w funkcjach podrzędnych. Określony czas również wyklucza czas spędzony na wywołaniach systemu operacyjnego, takich jak przełączenia kontekstu i operacje wejścia/wyjścia.
+ Wartości wyłączne aplikacji wskazują czas spędzony w funkcji, z wyłączeniem czasu spędzonego w funkcjach podrzędnych. Określony czas również wyklucza czas spędzony w wywołaniach systemu operacyjnego, takich jak operacje przełączania kontekstu i operacji wejścia/wyjścia.
 
 |Kolumna|Opis|
 |------------|-----------------|
@@ -104,7 +106,7 @@ Widok wywołujący/wywoływany pamięci platformy .NET, który został zebrany z
 |**Maksymalny czas wyłączny aplikacji**|Maksymalny czas wyłączny aplikacji wywołania tej funkcji w tym kontekście.|
 |**Minimalny czas wyłączny aplikacji**|Minimalny czas wyłączny aplikacji w wywołaniu tej funkcji w tym kontekście.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Instrukcje: dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)
 - [Widok wywołujący/wywoływany — Dane próbkowania pamięci platformy .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
 - [Widok wywołujący/wywoływany-Dane instrumentacji](../profiling/caller-callee-view-instrumentation-data.md)

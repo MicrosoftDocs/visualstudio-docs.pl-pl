@@ -1,5 +1,7 @@
 ---
 title: Widoki w programie Spy + + | Microsoft Docs
+description: Dowiedz się więcej o widokach w narzędziu do debugowania w programie Spy + +. W programie Spy + + są wyświetlane widoki drzewa okien, komunikatów, procesów i wątków dostępnych na komputerze.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d60f497db60e08094eb881f6766f95279b85456
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: caf275443f01ade5914b85dee8ef7105b3f6c9ac
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62902572"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148068"
 ---
 # <a name="spy-views"></a>Spy++ — Widoki
 W programie Spy + + są wyświetlane widoki drzewa okien, komunikatów, procesów i wątków dostępnych na komputerze.

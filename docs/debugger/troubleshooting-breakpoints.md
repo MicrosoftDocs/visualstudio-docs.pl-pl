@@ -1,6 +1,7 @@
 ---
 title: Rozwiązywanie problemów z punktami przerwania w debugerze | Microsoft Docs
-ms.custom: seodec18
+description: Jeśli punkt przerwania jest wyłączony lub nie można go ustawić, jest wyświetlany jako koło puste. W tym miejscu znajdziesz informacje dotyczące problemów, które mogą wystąpić podczas ustawiania punktów przerwania.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 01/23/2018
 ms.topic: troubleshooting
 author: mikejo5000
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c11741cb9bb9a0b0c64b9452b54daa6ac226b92
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a07f92eccd7884ea3cc3871d04285a82cb5cb62e
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72535929"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148055"
 ---
 # <a name="troubleshoot-breakpoints-in-the-visual-studio-debugger"></a>Rozwiązywanie problemów z punktami przerwania w debugerze programu Visual Studio
 
@@ -25,7 +26,7 @@ W poniższych dwóch sekcjach opisano widoczne ostrzeżenia i sposoby ich napraw
 
 ### <a name="no-symbols-have-been-loaded-for-this-document"></a>"Nie załadowano żadnych symboli dla tego dokumentu"
 
-Przejdź do okna **moduły** (**debugowanie**  >  modułów**systemu Windows**  >  **Modules**) i sprawdź, czy moduł jest załadowany.
+Przejdź do okna **moduły** (**debugowanie**  >  modułów **systemu Windows**  >  ) i sprawdź, czy moduł jest załadowany.
 * Jeśli moduł jest załadowany, Sprawdź kolumnę **stan symbolu** , aby sprawdzić, czy symbole zostały załadowane.
   * Jeśli symbole nie są załadowane, sprawdź stan symbolu, aby zdiagnozować problem. Z menu kontekstowego modułu w oknie **moduły** kliknij pozycję **Informacje o załadowaniu symboli...** , aby zobaczyć, gdzie debuger ma próbować i załadować symbole. Aby uzyskać więcej informacji na temat ładowania symboli, zobacz [Określanie symboli (. pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
   * Jeśli symbole są załadowane, PDB nie zawiera informacji o plikach źródłowych. Oto kilka możliwych przyczyn:
@@ -35,7 +36,7 @@ Przejdź do okna **moduły** (**debugowanie**  >  modułów**systemu Windows**  
 
 * Jeśli moduł nie jest załadowany, sprawdź poniższe informacje, aby znaleźć przyczynę:
   * Upewnij się, że debugujesz właściwy proces.
-  * Sprawdź, czy debugujesz właściwy rodzaj kodu. Możesz dowiedzieć się, jakiego typu kodu debuger jest skonfigurowany do debugowania w oknie **procesy** (**debugowanie**  >  **procesów systemu Windows**  >  **Processes**). Na przykład, jeśli próbujesz debugować kod w języku C#, upewnij się, że debuger jest skonfigurowany dla odpowiedniego typu i wersji platformy .NET (na przykład zarządzane (v4 \* ) i zarządzane (v2 \* /v3) i \* zarządzane (CoreCLR)).
+  * Sprawdź, czy debugujesz właściwy rodzaj kodu. Możesz dowiedzieć się, jakiego typu kodu debuger jest skonfigurowany do debugowania w oknie **procesy** (**debugowanie**  >  **procesów systemu Windows**  >  ). Na przykład, jeśli próbujesz debugować kod w języku C#, upewnij się, że debuger jest skonfigurowany dla odpowiedniego typu i wersji platformy .NET (na przykład zarządzane (v4 \* ) i zarządzane (v2 \* /v3) i \* zarządzane (CoreCLR)).
 
 ### <a name="-the-current-source-code-is-different-from-the-version-built-into"></a>"… bieżący kod źródłowy różni się od wersji wbudowanej w... "
 

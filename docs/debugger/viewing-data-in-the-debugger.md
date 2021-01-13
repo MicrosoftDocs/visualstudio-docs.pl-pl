@@ -1,5 +1,7 @@
 ---
 title: Tworzenie niestandardowych widoków danych w debugerze | Microsoft Docs
+description: Poznaj różne sposoby sprawdzania i modyfikowania stanu programu w debugerze programu Visual Studio. Obejmują one funkcje autouzupełniania i oglądania, podpowiedzi i wizualizatorów.
+ms.custom: SEO-VS-2020
 ms.date: 01/09/2019
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63dc11736e92013719fcda2bae0ba9599a8835aa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5acac83a6d461f6b7301ff2bfe89d92dc78d00ee
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72568999"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149914"
 ---
 # <a name="create-custom-views-of-data-in-the-visual-studio-debugger-c-visual-basic-c"></a>Tworzenie niestandardowych widoków danych w debugerze programu Visual Studio (C#, Visual Basic, C++)
 
@@ -38,7 +40,7 @@ ms.locfileid: "72568999"
 
  Wizualizatory umożliwiają wyświetlanie zawartości obiektu lub zmiennej w zrozumiały sposób. W debugerze programu Visual Studio, wizualizator odwołuje się do różnych okien, które można otworzyć za pomocą ikony lupy ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "Ikona wizualizatora") . Na przykład wizualizator HTML pokazuje, jak ciąg HTML będzie interpretowany i wyświetlany w przeglądarce. Można uzyskać dostęp do wizualizatorów ze wskazówek dotyczących danych, okna **czujki** , okna **Autostart** i okna **zmiennych lokalnych** . Okno dialogowe **QuickWatch** zawiera również wizualizator. Aby uzyskać więcej informacji, zobacz [Tworzenie wizualizacji niestandardowych](../debugger/create-custom-visualizers-of-data.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)
 - [Okno polecenia](../ide/reference/command-window.md)

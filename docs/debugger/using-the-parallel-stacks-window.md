@@ -1,5 +1,7 @@
 ---
 title: Wyświetl wątki w oknie stosów równoległych | Microsoft Docs
+description: Używaj stosów równoległych, aby ułatwić debugowanie aplikacji wielowątkowych. Można wyświetlić informacje o stosie dla wszystkich wątków i informacje stosu wywołań z centrum zadań.
+ms.custom: SEO-VS-2020
 ms.date: 11/20/2018
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9728346bc4c6d805bb0febd3a0d5bef0ed809a5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 55a004e65a39f4a2b7bbf972cec36d689bf88d97
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62902424"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150174"
 ---
 # <a name="view-threads-and-tasks-in-the-parallel-stacks-window-c-visual-basic-c"></a>Wyświetl wątki i zadania w oknie stosów równoległych (C#, Visual Basic, C++)
 
@@ -38,7 +40,7 @@ Okno **stosów równoległych** jest przydatne do debugowania aplikacji wielową
 
 ## <a name="use-the-parallel-stacks-window"></a>Korzystanie z okna stosów równoległych
 
-Aby otworzyć okno **stosów równoległych** , musisz być w sesji debugowania. Wybierz kolejno opcje **Debuguj**  >  **Windows**  >  **równoległe stosy**systemu Windows.
+Aby otworzyć okno **stosów równoległych** , musisz być w sesji debugowania. Wybierz kolejno opcje **Debuguj**  >    >  **równoległe stosy** systemu Windows.
 
 ### <a name="toolbar-controls"></a>Kontrolki paska narzędzi
 
@@ -135,7 +137,7 @@ W widoku **wątki** lub widoku **zadań** można przestawiać wykres na bieżąc
 
 Jeśli przełączysz się do nowej ramki stosu, nadajesz tej metodzie bieżącą metodę i **Widok metody** wyświetla wszystkie obiekty wywołujące i wywoływane dla nowej metody. Może to spowodować, że niektóre wątki pojawiają się lub znikają z widoku, w zależności od tego, czy ta metoda pojawia się na stosach wywołań. Aby powrócić do widoku stosu wywołań, wybierz ponownie ikonę paska narzędzi **widoku metody** .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Rozpocznij debugowanie aplikacji wielowątkowej](../debugger/get-started-debugging-multithreaded-apps.md)
 - [Przewodnik: debugowanie aplikacji równoległych](../debugger/walkthrough-debugging-a-parallel-application.md)
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)

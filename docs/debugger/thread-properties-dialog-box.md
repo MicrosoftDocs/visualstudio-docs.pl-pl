@@ -1,5 +1,7 @@
 ---
 title: Okno dialogowe właściwości wątku | Microsoft Docs
+description: Informacje o właściwościach wątku okna dialogowego w narzędziu do debugowania programu Spy + +. Użyj tego okna dialogowego, aby dowiedzieć się więcej o określonym wątku.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 371314bff934fdceeb301f61e976224034333559
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 377357345516d210b30dd4db278dd672a8b6b469
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62929716"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149134"
 ---
 # <a name="thread-properties-dialog-box"></a>Właściwości wątków — Okno dialogowe
 To okno dialogowe zawiera więcej informacji na temat określonego wątku. Aby wyświetlić to okno dialogowe, Przenieś fokus do okna [Widok wątków](../debugger/threads-view.md) lub Otwórz [komunikaty Wyświetl](../debugger/messages-view.md) i rozwiń komunikat. Wybierz dowolny węzeł wątku w drzewie, a następnie wybierz polecenie **Właściwości** z menu **Widok** .

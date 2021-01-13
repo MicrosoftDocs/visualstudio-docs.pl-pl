@@ -1,5 +1,7 @@
 ---
 title: Kanały (Widok wątków) | Microsoft Docs
+description: Przeczytaj informacje o widoku wątków podczas korzystania z kanałów w wizualizatorze współbieżności programu Visual Studio. Wyświetlanie kanałów wątków, kanałów dysków, kanałów znaczników i kanałów procesora GPU.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f18a636d83210b2329d103b1babdf47e697fd5c7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a4ed0a82ad7ddb67cacde2a09f595d0c9250710
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537088"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148614"
 ---
 # <a name="channels-threads-view"></a>Kanały (Widok wątków)
 Wizualizator współbieżności pokazuje cztery rodzaje kanałów: kanały wątku, kanały dysków, kanały znaczników i kanały GPU.
@@ -47,5 +49,5 @@ Wizualizator współbieżności pokazuje cztery rodzaje kanałów: kanały wątk
 ## <a name="gpu-channels"></a>Kanały procesora GPU
  Kanały procesora GPU zawierają informacje o aktywności DirectX 11 w systemie.  Każdy aparat DirectX skojarzony z kartą graficzną ma oddzielny kanał.  Poszczególne segmenty reprezentują czas spędzony na przetwarzaniu pakietu DMA.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Widok wątków](../profiling/threads-view-parallel-performance.md)

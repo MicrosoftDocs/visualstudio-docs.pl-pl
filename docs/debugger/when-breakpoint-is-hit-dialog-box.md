@@ -1,5 +1,7 @@
 ---
 title: Gdy punkt przerwania jest aktywny okno dialogowe | Microsoft Docs
+description: Użyj po trafieniu punktu przerwania, aby określić akcję podczas dzielenia. Można określić, że będzie drukowany komunikat, a wykonywanie powinno być kontynuowane.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53b19f4dd0d4b0cb97bb33e4895f36c4dc8f670c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a528709769f599219a7b3df2b8157b0ee3a605b1
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72728144"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149316"
 ---
 # <a name="when-breakpoint-is-hit-dialog-box"></a>Okno dialogowe wyświetlane po osiągnięciu punktu przerwania
 Za pomocą tego okna dialogowego można dostosować akcję wykonywaną po trafieniu punktu przerwania.
@@ -34,6 +36,6 @@ Za pomocą tego okna dialogowego można dostosować akcję wykonywaną po trafie
 
  **Kontynuuj wykonywanie** Ten formant jest włączony tylko w przypadku wybrania **drukowania wiadomości** . Po wybraniu tej kontrolki punkt przerwania można użyć jako punkt śledzenia, aby śledzić wykonywanie programu, a nie przerywać się podczas trafiania lokalizacji.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Używanie punktów przerwania](../debugger/using-breakpoints.md)
 - [Używanie atrybutu DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)

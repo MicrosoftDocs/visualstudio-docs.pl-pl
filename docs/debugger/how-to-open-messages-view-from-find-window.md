@@ -1,5 +1,7 @@
 ---
 title: Otwórz widok komunikatów z okna wyszukiwania | Microsoft Docs
+description: Za pomocą okna dialogowego Znajdź okno w programie Spy + + wybierz okno docelowe, a następnie otwórz widok komunikatów dla tego okna.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b6240807eb82313182278251b353894545b957d
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 0e66e3e1200e1e08776853f2ac8308537e4b4a17
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852273"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148913"
 ---
 # <a name="how-to-open-messages-view-from-find-window"></a>Porady: otwieranie widoku komunikatów w Znajdź okno
 Może się okazać, że można użyć okna dialogowego **Znajdowanie okna** , aby wybrać okno docelowe, a następnie otworzyć widok komunikatów tego okna.
@@ -35,7 +37,7 @@ Może się okazać, że można użyć okna dialogowego **Znajdowanie okna** , ab
 
      Jeśli masz dojście do okna, które chcesz przejrzeć (na przykład skopiowane z debugera), możesz wpisać je w polu tekstowym **uchwyt** .
 
-4. W obszarze **Pokaż**wybierz pozycję **komunikaty**.
+4. W obszarze **Pokaż** wybierz pozycję **komunikaty**.
 
 5. Naciśnij przycisk **OK**.
 

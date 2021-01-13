@@ -1,5 +1,7 @@
 ---
 title: IntelliTrace | Microsoft Docs
+description: Użyj IntelliTrace, aby rejestrować i śledzić historię wykonywania kodu w programie Visual Studio. Rejestruj konkretne zdarzenia, badaj kod powiązany i Debuguj błędy.
+ms.custom: SEO-VS-2020
 ms.date: 09/19/2018
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 878c2481164bc87d4af5e79a0a978e822e7baafe
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 518043a38f3a0f6945840a36a1f7fcade5a313d7
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600253"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149004"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>IntelliTrace for Visual Studio Enterprise (C#, Visual Basic, C++)
 
@@ -39,7 +41,7 @@ Możesz użyć IntelliTrace w wersji Visual Studio Enterprise (ale nie wersji Pr
 
 ## <a name="what-do-you-want-to-do"></a>Co chcesz zrobić?
 
-|Scenariusz|Title (Tytuł)|
+|Scenariusz|Tytuł|
 |-|-|
 |**Debuguj moją aplikację przy użyciu IntelliTrace:**<br /><br /> -Pokaż poprzednie zdarzenia.<br />-Wyświetla informacje o wywołaniu dla przeszłych zdarzeń.<br />-Zapisz moją sesję IntelliTrace.<br />— Kontroluj dane zbierane przez IntelliTrace.|- [Zbadaj poprzednie Stany aplikacji przy użyciu IntelliTrace](../debugger/view-historical-application-state.md)<br />- [Przewodnik: używanie IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [Funkcje IntelliTrace](../debugger/intellitrace-features.md)<br />- [Debugowanie historyczne](../debugger/historical-debugging.md)|
 |**Zbieraj dane IntelliTrace z wdrożonych aplikacji**|- [Korzystanie z autonomicznego modułu zbierającego IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|
@@ -106,7 +108,7 @@ Domyślnie IntelliTrace rejestruje tylko zdarzenia IntelliTrace: zdarzenia debug
 
   - Wartości w DataTips, które są wyświetlane, gdy ustawisz wskaźnik myszy nad zmienną w oknie źródłowym, aby zobaczyć jej wartość. IntelliTrace nie zbiera wartości w unieruchomionych DataTips.
 
-    Gdy tryb IntelliTrace zdarzeń i migawek jest włączony, IntelliTrace będzie wykonywać migawkę procesu aplikacji w każdym **punkcie przerwania** debugera i zdarzeniu **kroku** . Spowoduje to zapisanie wartości w oknach **zmiennych lokalnych**, **autostartowych**i **czujki** , niezależnie od tego, czy okna są otwarte. Zostaną również zebrane wartości z dowolnych przypiętych porad dotyczących danych.
+    Gdy tryb IntelliTrace zdarzeń i migawek jest włączony, IntelliTrace będzie wykonywać migawkę procesu aplikacji w każdym **punkcie przerwania** debugera i zdarzeniu **kroku** . Spowoduje to zapisanie wartości w oknach **zmiennych lokalnych**, **autostartowych** i **czujki** , niezależnie od tego, czy okna są otwarte. Zostaną również zebrane wartości z dowolnych przypiętych porad dotyczących danych.
 
 - **Wyjątki**
 

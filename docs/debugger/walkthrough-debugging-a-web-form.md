@@ -1,6 +1,7 @@
 ---
 title: Debugowanie formularza sieci Web | Microsoft Docs
-ms.custom: seodec18
+description: Postępuj zgodnie z przewodnikiem, aby dowiedzieć się, jak debugować aplikację sieci Web ASP.NET (formularz sieci Web), w tym sposób ustawiania punktów przerwania i badania zmiennych.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -23,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa2632e7d9b8103b5a89c49e5f44464a658fadc3
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 007a63ea16ab044292f451d8d9c427f4358e3f13
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599491"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148237"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Przewodnik: Debugowanie formularza internetowego
 Kroki opisane w tym instruktażu pokazują, jak debugować [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikację sieci Web, znaną również jako formularz sieci Web. Pokazuje, jak uruchomić i zatrzymać wykonywanie, ustawić punkty przerwania i przeanalizować zmienne w oknie **czujki** .
@@ -52,7 +53,7 @@ Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w pomocy,
 
 5. Na liście **Język** kliknij **Visual C#** lub **Visual Basic**.
 
-6. Kliknij pozycję **OK**.
+6. Kliknij przycisk **OK**.
 
     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Tworzy nowy projekt i wyświetla domyślny kod źródłowy HTML. Powoduje także utworzenie nowego katalogu wirtualnego o nazwie **Witryna** sieci **Web w obszarze Domyślna witryna internetowa** w usługach IIS.
 
@@ -62,9 +63,9 @@ Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w pomocy,
 
     Zostanie otwarty **Przybornik** .
 
-9. W **przyborniku**kliknij kontrolkę **przycisk** i Dodaj ją do głównej powierzchni projektowej, default. aspx.
+9. W **przyborniku** kliknij kontrolkę **przycisk** i Dodaj ją do głównej powierzchni projektowej, default. aspx.
 
-10. W **przyborniku**kliknij formant **TextBox** i przeciągnij formant do głównej powierzchni projektowej, default. aspx.
+10. W **przyborniku** kliknij formant **TextBox** i przeciągnij formant do głównej powierzchni projektowej, default. aspx.
 
 11. Kliknij dwukrotnie formant przycisku, który został usunięty.
 
@@ -162,6 +163,6 @@ Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w pomocy,
 
 6. Po zakończeniu debugowania w menu **debugowanie** kliknij polecenie **Zatrzymaj debugowanie**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Debuguj aplikacje ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)

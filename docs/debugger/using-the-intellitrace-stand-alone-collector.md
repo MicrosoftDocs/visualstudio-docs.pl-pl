@@ -1,5 +1,7 @@
 ---
 title: Korzystanie z autonomicznego modułu zbierającego IntelliTrace | Microsoft Docs
+description: Użyj autonomicznego modułu zbierającego IntelliTrace, aby zbierać dane bez instalowania programu Visual Studio i bez zmiany środowiska systemu docelowego.
+ms.custom: SEO-VS-2020
 ms.date: 07/30/2019
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f0e0ce657c1cc0ed79d56e3daa90480ed0c1381
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cbdd7e948aaafff8e90aa8e67907c9a53471b05c
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536496"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150083"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Korzystanie z autonomicznego modułu zbierającego IntelliTrace (C#, Visual Basic)
 
@@ -84,7 +86,7 @@ Autonomiczny **moduł zbierający IntelliTrace** umożliwia zbieranie danych dia
 
    - **Microsoft Download Center** lub **My.VisualStudio.com**:
 
-     1. Obok pozycji **IntelliTraceCollector.exe**wybierz pozycję **Pobierz**.
+     1. Obok pozycji **IntelliTraceCollector.exe** wybierz pozycję **Pobierz**.
 
      2. Zapisz IntelliTraceCollector.exe w katalogu modułu zbierającego, na przykład: **C:\IntelliTraceCollector**
 
