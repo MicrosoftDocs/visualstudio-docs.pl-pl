@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, azure
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: f12da1b45520de87bfd94f5b4597d10820968a11
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 48f52f1381bb890942e6f5ed3f1772c0735b1fb8
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96916284"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147529"
 ---
 ## <a name="im-unable-to-see-my-azure-monthly-credit-in-the-azure-portal"></a>Nie widzę miesięcznego kredytu na korzystanie z platformy Azure w Azure Portal.
 
@@ -29,10 +29,12 @@ Możesz również skojarzyć [alternatywne konto](https://docs.microsoft.com/vis
 
 Musisz zalogować się do [Azure Portal](https://portal.azure.com/) za pomocą wiadomości e-mail, dla których ustawiono konto w usłudze. Jeśli na przykład Twoje miesięczne środki zostały aktywowane przy użyciu alternatywnego konta, zawsze musisz zalogować się do subskrypcji platformy Azure za pomocą tej wiadomości e-mail. 
 
-## <a name="azure-directories"></a>Katalogi platformy Azure 
+## <a name="azure-directories"></a>Katalogi platformy Azure
+ 
 W ramach subskrypcji platformy Azure można korzystać z wielu katalogów. Upewnij się, że korzystasz z katalogu, w którym skonfigurowano subskrypcję platformy Azure. Katalogi można wyświetlać i przełączać, klikając ikonę konta w prawym górnym rogu w Azure Portal. 
 
-## <a name="how-to-activate"></a>Jak aktywować
+## <a name="how-to-activate-your-azure-monthly-credit"></a>Jak aktywować miesięczne środki na korzystanie z platformy Azure
+
 1. Logowanie się do [portalu subskrypcji](https://my.visualstudio.com/benefits)  
 1. Znajdź kafelek Azure Dev/Test (indywidualny kredyt) w sekcji Tools na stronie korzyści, a następnie kliknij pozycję Aktywuj link w dolnej części kafelka korzyści. Jeśli nie możesz znaleźć kafelka miesięcznych środków na korzystanie z platformy Azure, skorzystaj ze [strony porównania korzyści](https://visualstudio.microsoft.com/vs/benefits/#azure?cat=visual-studio-enterprise-subscription) , aby sprawdzić, czy subskrypcja obejmuje miesięczne środki. 
 1. Jeśli nie masz istniejącej subskrypcji platformy Azure, zostanie wyświetlony monit o wypełnienie wymaganych informacji osobistych.  
@@ -42,7 +44,7 @@ W ramach subskrypcji platformy Azure można korzystać z wielu katalogów. Upewn
 
 Na subskrypcje platformy Azure utworzone w ramach korzyści z subskrypcji programu Visual Studio mogą mieć wpływ ograniczenia, które nie są nakładane na Płatne subskrypcje. Niektóre lokalizacje geograficzne mogą być niedostępne na potrzeby tworzenia maszyn wirtualnych i usług platformy Azure. Niektóre typy usług również mogą być niedostępne. Domyślne limity przydziału mogą być niższe niż w przypadku subskrypcji płatnych. 
 
-## <a name="more-information"></a>Więcej informacji 
+## <a name="more-information-about-azure-monthly-credits"></a>Więcej informacji na temat miesięcznych środków na korzystanie z platformy Azure
 
 [Przeczytaj więcej](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure) informacji na temat aktywacji, kwalifikowania i innych zasobów pomocy technicznej.  
 

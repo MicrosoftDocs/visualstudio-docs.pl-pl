@@ -10,29 +10,29 @@ user.type: subscriber
 tags: benefit, azure
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: 9ccc9c69e3659e05c552e01df7fe94e6b07ea87a
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: ae31e9d40dd0d399a4272eeb3ec28692d01a99b3
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96916286"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147397"
 ---
 ## <a name="how-do-i-activate-my-monthly-azure-devtest-individual-credit"></a>Jak mogę aktywować swoje miesięczne środki na korzystanie z platformy Azure na potrzeby tworzenia i testowania? 
 
 Korzystanie z usługi Azure Dev/Test indywidualny nie jest kosztowne, a karta kredytowa nie jest wymagana. Po wyczerpaniu środków, które zostały wyznaczone na miesiąc, nie będzie można nadal korzystać z zasobów platformy Azure do momentu zresetowania w następnym miesiącu lub usunięcia limitu wydatków i dodania metody płatności.  
 
-## <a name="how-to-activate"></a>Jak aktywować
+## <a name="how-to-activate-azure-monthly-credit"></a>Jak aktywować miesięczne środki na korzystanie z platformy Azure
 
 1. Logowanie się do [portalu subskrybenta](https://my.visualstudio.com/benefits) 
 1. Znajdź kafelek Azure Dev/Test (indywidualny kredyt) w sekcji Tools na stronie korzyści, a następnie kliknij pozycję Aktywuj link w dolnej części kafelka korzyści. Jeśli nie możesz znaleźć kafelka miesięcznych środków na korzystanie z platformy Azure, skorzystaj ze [strony porównania korzyści](https://visualstudio.microsoft.com/vs/benefits/#azure?cat=visual-studio-enterprise-subscription) , aby sprawdzić, czy subskrypcja obejmuje miesięczne środki. 
 1. Jeśli nie masz istniejącej subskrypcji platformy Azure, zostanie wyświetlony monit o wypełnienie wymaganych informacji osobistych.  
 1. Zaakceptuj umowę dotyczącą subskrypcji, która jest gotowa do użycia. W przyszłości możesz uzyskać dostęp do subskrypcji platformy Azure w witrynie [Portal.Azure.com](https://portal.azure.com/). 
 
-## <a name="geographic-restrictions"></a>Ograniczenia geograficzne 
+## <a name="geographic-restrictions-may-apply"></a>Mogą być stosowane ograniczenia geograficzne 
 
 Na subskrypcje platformy Azure utworzone w ramach korzyści z subskrypcji programu Visual Studio mogą mieć wpływ ograniczenia, które nie są nakładane na Płatne subskrypcje. Niektóre lokalizacje geograficzne mogą być niedostępne na potrzeby tworzenia maszyn wirtualnych i usług platformy Azure. Niektóre typy usług również mogą być niedostępne. Domyślne limity przydziału mogą być niższe niż w przypadku subskrypcji płatnych.  
 
-## <a name="more-information"></a>Więcej informacji
+## <a name="more-information-about-azure-credits"></a>Więcej informacji na temat środków na korzystanie z platformy Azure
 [Przeczytaj więcej](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure) informacji na temat aktywacji, kwalifikowania i innych zasobów pomocy technicznej.  
 
-[Dowiedz się, jak](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/#azure-credits) używać środków na korzystanie z platformy Azure, które są zawarte w Twojej subskrypcji programu Visual Studio  
+[Dowiedz się, jak](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/#azure-credits) używać środków na korzystanie z platformy Azure, które są zawarte w subskrypcji programu Visual Studio.  

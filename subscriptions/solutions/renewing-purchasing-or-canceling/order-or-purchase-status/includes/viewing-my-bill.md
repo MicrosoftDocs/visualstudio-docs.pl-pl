@@ -10,12 +10,12 @@ user.type: subscriber
 tags: billing
 subscription.type: vl, cloud, retail, partner
 sap.id: 2db8f927-5814-835b-cc9d-daab30a7a09e
-ms.openlocfilehash: a7121ac942b074b0414c00ee791ccf37bf8320bd
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: fa95610b98d8731b486392d927452b8d42576f28
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96916292"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147428"
 ---
 ## <a name="how-do-i-view-my-bill"></a>Jak mogę wyświetlić mój rachunek?
 
@@ -34,5 +34,5 @@ Funkcja limit wydatków na platformie Azure pozwala ustawić limit wydatków, w 
 
 W przypadku usunięcia limitu wydatków w ramach subskrypcji platformy Azure, które zostały przekonwertowane na płatność zgodnie z rzeczywistym użyciem, korzystanie z zalet cen związanych z projektowaniem i testowaniem w przedsiębiorstwie jest dostępne tylko dla subskrybentów programu Visual Studio lub chcą korzystać z usług poza tymi wykorzystywanymi do celów deweloperskich i testowych objętych kredytem miesięcznym. opłaty są naliczane miesięcznie za usługi.  
 
-## <a name="more-information"></a>Więcej informacji 
+## <a name="more-information-about-billing"></a>Więcej informacji na temat rozliczeń
 Uzyskaj odpowiedzi na często zadawane pytania dotyczące użycia i opłat. Odwiedź [pytania dotyczące rozliczeń](https://docs.microsoft.com/azure/cost-management-billing/manage/getting-started). 

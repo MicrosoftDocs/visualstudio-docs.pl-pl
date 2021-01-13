@@ -10,12 +10,12 @@ user.type: subscriber
 tags: renewing
 subscription.type: retail
 sap.id: b324c31f-5d44-4cc2-537a-9c354bc5fbfc
-ms.openlocfilehash: c888f89c7fa6a02a18539493e2fda5afc5298712
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: f518f4458181d39a140ee5652b08ea861f2130ee
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96916339"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147521"
 ---
 ## <a name="renewing-subscriptions-through-microsoft-store"></a>Odnawianie subskrypcji za Microsoft Store 
 
@@ -23,7 +23,7 @@ Subskrypcję należy odnowić przed datą wygaśnięcia, aby zapewnić dostęp d
 
 Jeśli subskrypcja nie wygasła, zobaczysz datę wygaśnięcia, wyświetlając subskrypcje w [portalu subskrypcji](https://my.visualstudio.com/subscriptions). 
 
-## <a name="subscriptions-available"></a>Dostępne subskrypcje 
+## <a name="subscriptions-available-for-renewal"></a>Subskrypcje dostępne do odnowienia
 
 Subskrypcje detaliczne programu Visual Studio dostępne do odnowienia za pomocą Microsoft Store obejmują: 
 

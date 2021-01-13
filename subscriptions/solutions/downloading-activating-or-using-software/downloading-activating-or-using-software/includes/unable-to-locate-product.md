@@ -10,12 +10,12 @@ user.type: subscriber
 tags: download, activate
 subscription.type: vl, cloud, retail, partner
 sap.id: 53a7a6d4-7755-352a-5a65-715d78af84bf
-ms.openlocfilehash: c862de5bc5006abc60650a26132453f260a51a89
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: e4d24412ab4e3aee22a9184d23ddbefb6ceb35fa
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96916327"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147651"
 ---
 ## <a name="im-unable-to-locate-the-product-i-need-to-download"></a>Nie mogę znaleźć produktu, który należy pobrać.
 
@@ -30,8 +30,8 @@ Można [pobrać obszerną listę](https://download.microsoft.com/download/1/5/4/
 1. Tutaj będzie można zobaczyć listę popularnych plików do pobrania lub przeszukać konkretny produkt. Uwaga: Jeśli masz więcej niż jedną subskrypcję skojarzoną z tym samym adresem logowania, zostaną wyświetlone materiały do pobrania zawarte w subskrypcji najwyższego poziomu, niezależnie od tego, która subskrypcja jest wyświetlana.
 1. Kliknij pozycję "Pobierz klucz", aby wyświetlić wszystkie klucze, które są dostępne dla produktu, który chcesz pobrać. Następnie kliknij pozycję "klucz", aby zgłosić klucz produktu, jeśli pobieranie wymaga klucza, aby rozpocząć. 
 
-## <a name="product-keys-page"></a>Strona klucze produktu 
+## <a name="find-available-product-keys"></a>Znajdź dostępne klucze produktów
 Możesz również odwiedzić stronę [klucze produktu](https://my.visualstudio.com/productkeys),   w której wszystkie klucze są dostępne w agregacji. Można edytować kolumnę uwagi w celu ustalenia, kiedy i dlaczego użytkownik zażądał klucza. 
 
-## <a name="more-information"></a>Więcej informacji 
+## <a name="more-information-about-product-keys"></a>Więcej informacji o kluczach produktów
 [Przeczytaj więcej](https://docs.microsoft.com/visualstudio/subscriptions/find-keys) na temat znajdowania i pojmowania kluczy produktów i plików do pobrania.  

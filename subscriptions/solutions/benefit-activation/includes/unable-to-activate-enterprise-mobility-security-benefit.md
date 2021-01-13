@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, ems
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: df582df95932ae82e9be319f347f79745e1ad277
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 065527c86384e6eef46149ecc7d9606268bc1695
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96916285"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147609"
 ---
 ## <a name="im-unable-to-activate-my-enterprise-mobility--security-ems-benefit"></a>Nie mogę aktywować korzyści z usługi Enterprise Mobility + Security (EMS).
 
@@ -40,6 +40,6 @@ Aby uzyskać nową subskrypcję Developer Microsoft 365 E5, przejdź do pulpitu 
 
 Po usunięciu subskrypcji pakietu Office 365 E3 i utworzeniu zastępczej subskrypcji Microsoft 365 E5, dzierżawa pakietu Office 365 E3 zostanie udostępniona przez 60 dni, aby umożliwić migrację danych. 
 
-## <a name="more-information"></a>Więcej informacji 
+## <a name="more-information-about-office-365-e3-subscriptions"></a>Więcej informacji na temat subskrypcji pakietu Office 365 E3
 
 [Przeczytaj więcej](https://docs.microsoft.com/visualstudio/subscriptions/vs-m365) informacji na temat uprawnień, sposobu migracji z pakietu Office 365 E3 do Microsoft 365 i często zadawanych pytań.  

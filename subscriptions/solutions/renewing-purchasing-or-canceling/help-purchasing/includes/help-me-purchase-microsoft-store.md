@@ -10,12 +10,12 @@ user.type: subscriber, admin
 tags: purchasing
 subscription.type: vl, cloud, retail, partner
 sap.id: c374762c-640b-8b2c-d049-bda9545e903c
-ms.openlocfilehash: b16123ef691036c027ac6046616699624e53b10a
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 90c56d7be8e4f3e687ff602619b5eda80807b030
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96916343"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147446"
 ---
 ## <a name="purchase-subscriptions-through-microsoft-store"></a>Kup subskrypcje za Microsoft Store 
 
@@ -37,7 +37,7 @@ Każda z tych subskrypcji oferuje opcję dokonania początkowego zakupu lub odno
 1. Kliknij pozycję "Pobierz nowe" i Dodaj do koszyka. Uwaga: czasami w sklepie będzie wyświetlana wartość domyślna cena odnowienia. Upewnij się, że kupujesz nową subskrypcję. Magazyn nie będzie sprawdzał, czy masz bieżącą subskrypcję podczas zakupu w cenie odnowienia. Nie będzie można aktywować odnawiania bez bieżącej subskrypcji.
 1. Wymelduj się. Na stronie Potwierdzenie otrzymasz klucz produktu, który będzie potrzebny do aktywowania subskrypcji. Zobacz poniższe instrukcje. 
 
-## <a name="how-to-activate"></a>Jak aktywować  
+## <a name="how-to-activate-your-subscription"></a>Jak aktywować subskrypcję 
 
 Po zakupie subskrypcji programu Visual Studio za pośrednictwem Microsoft Store można rozpocząć proces aktywacji ze strony potwierdzenia płatności lub wiadomości e-mail z potwierdzeniem otrzymanej po dokonaniu zakupu. 
 
@@ -47,7 +47,7 @@ Po zakupie subskrypcji programu Visual Studio za pośrednictwem Microsoft Store 
 
 Subskrypcja powinna być teraz widoczna na [stronie Subskrypcje](https://my.visualstudio.com/subscriptions) i powinna mieć dostęp do wszystkich korzyści z subskrypcji. 
 
-## <a name="more-information"></a>Więcej informacji 
+## <a name="compare-subscription-benefits"></a>Porównaj korzyści z subskrypcji
 
 [Porównaj korzyści z subskrypcji i ceny](https://visualstudio.microsoft.com/vs/pricing/) , aby poznać zalety każdej subskrypcji programu Visual Studio. 
 
