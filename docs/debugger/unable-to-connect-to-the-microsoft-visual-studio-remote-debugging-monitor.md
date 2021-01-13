@@ -1,5 +1,7 @@
 ---
 title: Nie można połączyć się z Monitorem debugera zdalnego programu Microsoft Visual Studio
+description: Poznaj znaczenie "nie można nawiązać połączenia z Microsoft Visual Studio Monitor zdalnego debugowania", możliwych przyczyn i rozwiązań.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 04/14/2020
 ms.topic: reference
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1863caeaa3d3b0457d89913186337fa74ad5d8de
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: dc34a5f58f8bc3c47526cc8ba8516311e94f0631
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852247"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150837"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Nie można połączyć się z Monitorem debugera zdalnego programu Microsoft Visual Studio
 Ten komunikat może wystąpić, ponieważ Monitor zdalnego debugowania nie jest prawidłowo skonfigurowany na maszynie zdalnej lub maszyna zdalna jest niedostępna z powodu problemów z siecią lub obecności zapory.
@@ -153,9 +155,9 @@ Można to rozwiązać w jeden z następujących sposobów:
     > [!NOTE]
     > Jeśli używasz zdalnego debugera na serwerze zdalnym, kliknij prawym przyciskiem myszy aplikację Remote Debugger i wybierz polecenie **Uruchom jako administrator** (lub, aby uruchomić zdalny debuger jako usługę). Jeśli nie jest uruchomiony na serwerze zdalnym, wystarczy uruchomić go normalnie.
 
-- Zdalny debuger można uruchomić z wiersza polecenia z parametrem **/Allow \<username> ** : `msvsmon /allow <username@computer>` .
+- Zdalny debuger można uruchomić z wiersza polecenia z parametrem **/Allow \<username>** : `msvsmon /allow <username@computer>` .
 
-- Alternatywnie można zezwolić każdemu użytkownikowi na zdalne debugowanie. W oknie Debuger zdalny przejdź do okna dialogowego **narzędzia > opcje** . W przypadku wybrania opcji   **Brak uwierzytelniania**można zaznaczyć pole wyboru **Zezwalaj każdemu użytkownikowi na Debugowanie**. Należy jednak spróbować wykonać tę opcję tylko wtedy, gdy inne opcje zakończą się niepowodzeniem lub jeśli jesteś w sieci prywatnej.
+- Alternatywnie można zezwolić każdemu użytkownikowi na zdalne debugowanie. W oknie Debuger zdalny przejdź do okna dialogowego **narzędzia > opcje** . W przypadku wybrania opcji   **Brak uwierzytelniania** można zaznaczyć pole wyboru **Zezwalaj każdemu użytkownikowi na Debugowanie**. Należy jednak spróbować wykonać tę opcję tylko wtedy, gdy inne opcje zakończą się niepowodzeniem lub jeśli jesteś w sieci prywatnej.
 
 ### <a name="the-firewall-on-the-remote-machine-doesnt-allow-incoming-connections-to-the-remote-debugger"></a><a name="firewall"></a> Zapora na maszynie zdalnej nie zezwala na połączenia przychodzące ze zdalnym debugerem
  Zapora na komputerze z programem Visual Studio i Zapora na maszynie zdalnej musi być skonfigurowana w taki sposób, aby zezwalała na komunikację między programem Visual Studio i zdalnym debugerem. Informacje o portach, które są używane przez zdalny debuger, można znaleźć w temacie [przypisania portów zdalnego debugera](../debugger/remote-debugger-port-assignments.md). Aby uzyskać informacje o konfigurowaniu zapory systemu Windows, zobacz [Konfigurowanie zapory systemu Windows pod kątem zdalnego debugowania](../debugger/configure-the-windows-firewall-for-remote-debugging.md).

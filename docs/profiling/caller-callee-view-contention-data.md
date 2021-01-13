@@ -1,5 +1,7 @@
 ---
 title: Widok wywołujący-wywoływany — dane rywalizacji | Microsoft Docs
+description: Dowiedz się, jak widok wywołujący/wywoływany wyświetla informacje o rywalizacji dla wybranej funkcji i jej funkcji nadrzędnych i podrzędnych w Eksplorator wydajności.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 083386a808f7b91a18b3ea685ae657118c723978
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5b51504d029c1e723321c8c92df28a2ecad1fd1a
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779743"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150915"
 ---
 # <a name="callercallee-view----contention-data"></a>Widok wywołujący/wywoływany-dane rywalizacji
 Widok wywołujący/wywoływany wyświetla informacje o rywalizacji dla wybranej funkcji i jej funkcji nadrzędnych i podrzędnych. Widok wywołujący/wywoływany zawiera trzy siatki.
@@ -48,7 +50,7 @@ Widok wywołujący/wywoływany wyświetla informacje o rywalizacji dla wybranej 
 |**Nazwa funkcji głównej**|Nazwa bieżącej funkcji. Tylko w raportach wiersza polecenia [VSPerfReport](../profiling/vsperfreport.md) .|
 |**Plik źródłowy**|Plik źródłowy, który zawiera definicję dla tej funkcji.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Instrukcje: dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)
 - [Widok wywołujący/wywoływany](../profiling/caller-callee-view.md)
 - [Widok wywołujący/wywoływany-Dane próbkowania](../profiling/caller-callee-view-sampling-data.md)

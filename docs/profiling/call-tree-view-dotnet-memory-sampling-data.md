@@ -1,5 +1,7 @@
 ---
 title: Widok drzewa wywołań — dane próbkowania pamięci platformy .NET | Microsoft Docs
+description: Dowiedz się więcej o tym, jak widok drzewa wywołań wyświetla dane próbkowania pamięci platformy .NET dla ścieżek wykonywania funkcji, które zostały przesunięte w profilowanej aplikacji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 76ea78f37cbc8c5e2b6df900aa0e3f320346300a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c1a36f4661abb5535c71fcebcf9e486408a56b22
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779769"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150811"
 ---
 # <a name="call-tree-view---net-memory-sampling-data"></a>Widok drzewa wywołań — dane próbkowania pamięci platformy .NET
 W widoku drzewa wywołań są wyświetlane ścieżki wykonywania funkcji, które zostały przesunięte w profilowanej aplikacji. Katalog główny drzewa jest punktem wejścia do aplikacji lub składnika. Każdy węzeł funkcji zawiera wszystkie funkcje, które zostały wywołane i dane alokacji pamięci .NET dotyczące tych wywołań funkcji.
@@ -51,7 +53,7 @@ W widoku drzewa wywołań są wyświetlane ścieżki wykonywania funkcji, które
 |**Bajty wyłączne**|Liczba bajtów w pamięci przydzielonej przez wystąpienia tej funkcji, które zostały wywołane przez funkcję nadrzędną w drzewie wywołań. Ta liczba nie obejmuje przydziałów, które zostały wykonane przez funkcje podrzędne.|
 |**% Bajtów wyłącznych**|Wartość procentowa wszystkich bajtów pamięci przydzielonych w ramach uruchomienia profilowania, która wystąpiła na wyłączność alokacji tej funkcji.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Widok drzewa wywołań-Instrumentacja](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)
 - [Widok drzewa wywołań](../profiling/call-tree-view-sampling-data.md)
 - [Widok drzewa wywołań](../profiling/call-tree-view-instrumentation-data.md)

@@ -1,5 +1,7 @@
 ---
 title: Wyzwalaj zdarzenia zawieszenia/wznowienia/tła podczas debugowania platformy UWP
+description: Zapoznaj się z tematem jak wyzwalać wstrzymywanie, wznawianie i zdarzenia w tle podczas debugowania aplikacji platforma uniwersalna systemu Windows (platformy UWP) w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 01/16/2018
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 5cbdfb443d07b01f4de6f43fb98103339566cde2
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 87b2718b6cd9db5b66635ca165253bd1e93f17d5
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808197"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150681"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Jak wyzwolić wstrzymanie, wznowienie i zdarzenia w tle podczas debugowania aplikacji platformy UWP w programie Visual Studio
 
@@ -108,7 +110,7 @@ Aby uzyskać więcej informacji o zarządzaniu okresem istnienia procesu i zadan
 
 4. Wybierz dziennik **diagnostyczny** .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Testowanie aplikacji platformy UWP za pomocą programu Visual Studio](../test/unit-test-your-code.md)
 - [Debugowanie aplikacji w programie Visual Studio](debugging-windows-store-and-windows-universal-apps.md)
 - [Cykl życia aplikacji](/windows/uwp/launch-resume/app-lifecycle)

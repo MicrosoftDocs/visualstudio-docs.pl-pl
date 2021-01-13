@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bb738e0e12598fd31c51c6b3cf2fa684badae40
-ms.sourcegitcommit: fdc21fc21d4a05d9ad8627b06aab7f072bfeb0a6
+ms.openlocfilehash: c992a1a4fca536f219a69b9ab629f6f602b4dfb0
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98113606"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150512"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów
 
@@ -377,6 +377,7 @@ Testy można uruchomić z poziomu Eksploratora testów, klikając prawym przycis
 > [!NOTE]
 > Nie można uruchomić testu w klasie abstrakcyjnej, ponieważ testy są zdefiniowane tylko w klasach abstrakcyjnych i nie są tworzone. Aby uruchomić testy w klasach abstrakcyjnych, należy utworzyć klasę, która dziedziczy z klasy abstrakcyjnej.
 
+::: moniker range=">=vs-2019"
 ## <a name="test-audio-cue"></a>Testowanie wskaźnika audio
 Eksplorator testów może odtworzyć dźwięk po zakończeniu przebiegu testu. Istnieją dwa dźwięki: jeden dźwięk wskazujący, że uruchomienie testu powiodło się, a wszystkie testy zakończone powodzeniem, oraz drugi dźwięk wskazujący, że przebieg testu został ukończony z co najmniej jednym testem nieprawidłowym. Te dźwięki można skonfigurować przy użyciu domyślnego okna dialogowego dźwięk systemu Windows 10. Ta funkcja jest dostępna w programie Visual Studio 2019 Update 16,9 (wersja zapoznawcza 3).
 
@@ -385,7 +386,8 @@ Eksplorator testów może odtworzyć dźwięk po zakończeniu przebiegu testu. I
 3. Znajdź kategorię **Microsoft Visual Studio** . Wybierz **przebieg testu zakończony powodzeniem** lub **Nieudane dźwięki przebiegu testowego** w celu wybrania wstępnie ustawionych dźwięków lub przechodzenia do własnego pliku dźwiękowego.  
 ![Okno dialogowe dźwięk systemu Windows 10](../test/media/default-windows-10-sound-dialog.png)
 
-## <a name="see-also"></a>Zobacz też
+::: moniker-end
+## <a name="see-also"></a>Zobacz także
 
 - [Testowanie jednostkowe kodu](../test/unit-test-your-code.md)
 - [Debugowanie testów jednostkowych za pomocą narzędzia Eksplorator testów](../test/debug-unit-tests-with-test-explorer.md)

@@ -1,5 +1,7 @@
 ---
 title: Widok drzewa wywołań — dane próbkowania | Microsoft Docs
+description: Przeczytaj, jak widok drzewa wywołań wyświetla dane próbkowania dla ścieżek wykonywania funkcji, które zostały przesunięte w profilowanej aplikacji w Eksplorator wydajności.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 558cef408ceca48a55563ae31f2399da0e951b8e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1fc7493d20d09ebd606e3a6ec8e5271981fb6f62
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779756"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150525"
 ---
 # <a name="call-tree-view---sampling-data"></a>Widok drzewa wywołań — dane próbkowania
 W widoku drzewa wywołań są wyświetlane ścieżki wykonywania funkcji, które zostały przesunięte w profilowanej aplikacji.
@@ -53,7 +55,7 @@ W widoku drzewa wywołań są wyświetlane ścieżki wykonywania funkcji, które
 |**Próbki włączne**|Liczba próbek zebranych w tej funkcji, gdy została wywołana przez funkcję nadrzędną w drzewie wywołań. Ta liczba zawiera próbki, które zostały zebrane w funkcjach, które zostały wywołane przez funkcję.|
 |**Próbki włączne%**|Wartość procentowa wszystkich próbek w przebiegu profilowania, które były włączonych próbek tej funkcji, gdy została wywołana przez funkcję nadrzędną w drzewie wywołań.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Instrukcje: dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)
 - [Widok drzewa wywołań — dane próbkowania profilera](../profiling/call-Tree-view-sampling-data.md)
 - [Widok drzewa wywołań — próbkowanie](../profiling/call-tree-view-dotnet-memory-sampling-data.md)

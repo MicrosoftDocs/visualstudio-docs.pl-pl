@@ -1,5 +1,7 @@
 ---
 title: Okno dialogowe ostrzeżenia o nieodświeżonym kodzie | Microsoft Docs
+description: Zapoznaj się z oknem dialogowym Ostrzeżenie o nieodświeżonym kodzie, który pojawia się po wprowadzeniu zmian w kodzie macierzystym, który Edytuj i Kontynuuj nie można natychmiast zastosować.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dba38e5b5d9f7a2be710cad58d6f2297dd03a412
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5bb2666b3b57c8f84c81e181355f096674543445
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72729548"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150330"
 ---
 # <a name="stale-code-warning-dialog-box"></a>Ostrzeżenie o kodzie nieodświeżonym — Okno dialogowe
 
@@ -35,7 +37,7 @@ To okno dialogowe pojawia się po wprowadzeniu zmian w kodzie natywnym, który *
 
 Jeśli zaznaczysz to pole wyboru, polecenie Edytuj i Kontynuuj zastosuje zmiany kodu bez pytania o zgodę w przyszłości. To ostrzeżenie można ponownie włączyć, przechodząc do okna dialogowego **Opcje** , otwierając folder **debugowanie** , klikając stronę **Edytuj i Kontynuuj** i wybierając opcję **Ostrzegaj o nieodświeżonym kodzie**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Obsługiwane zmiany kodu (C++)](supported-code-changes-cpp.md)
 - [Edytuj i Kontynuuj, debugowanie, Opcje — okno dialogowe](edit-and-continue.md)

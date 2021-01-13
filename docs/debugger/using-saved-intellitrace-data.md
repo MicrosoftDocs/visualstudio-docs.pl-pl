@@ -1,5 +1,7 @@
 ---
 title: Korzystanie z zapisanych danych IntelliTrace | Microsoft Docs
+description: Aby rozpocząć debugowanie w określonym punkcie wykonywania, użyj pliku IntelliTrace (. iTrace). Plik zawiera informacje, które IntelliTrace zarejestrowane z przebiegu aplikacji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb79e2f1a9ffd84f48910637deaff85329c3d91e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 42f355a0a8d04e48a2b9d14d0d62edf2cd949a87
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911329"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150941"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>Korzystanie z zapisanych danych IntelliTrace (C#, Visual Basic, C++)
 
@@ -56,11 +58,11 @@ Przejdź do określonych punktów w wykonaniu aplikacji po rozpoczęciu debugowa
 
 - Jeśli plik. iTrace jest dołączony do Team Foundation Server elementu pracy, wykonaj następujące kroki w elemencie roboczym:
 
-  - W obszarze **wszystkie linki**Znajdź plik. iTrace. Otwórz go.
+  - W obszarze **wszystkie linki** Znajdź plik. iTrace. Otwórz go.
 
     \- oraz
 
-  - W obszarze **Odtwórz kroki**wybierz łącze **IntelliTrace** .
+  - W obszarze **Odtwórz kroki** wybierz łącze **IntelliTrace** .
 
 > [!TIP]
 > Jeśli plik IntelliTrace został zamknięty podczas debugowania, możesz go łatwo otworzyć. Przejdź do menu **Debuguj** , wybierz pozycję **IntelliTrace**, **Pokaż podsumowanie dziennika**. Możesz również wybrać **Pokaż podsumowanie dziennika** w oknie **IntelliTrace** . Jest to możliwe tylko podczas debugowania za pomocą IntelliTrace.
@@ -95,7 +97,7 @@ Przejdź do określonych punktów w wykonaniu aplikacji po rozpoczęciu debugowa
 
 ##### <a name="to-start-debugging-from-a-performance-event"></a>Aby rozpocząć debugowanie ze zdarzenia wydajności
 
-1. W obszarze **naruszenia wydajności**Sprawdź zarejestrowane zdarzenia wydajności, ich łączny czas wykonywania i inne informacje o zdarzeniach. Następnie zagłęb się w metody, które zostały wywołane podczas zdarzenia dotyczącego wydajności.
+1. W obszarze **naruszenia wydajności** Sprawdź zarejestrowane zdarzenia wydajności, ich łączny czas wykonywania i inne informacje o zdarzeniach. Następnie zagłęb się w metody, które zostały wywołane podczas zdarzenia dotyczącego wydajności.
 
      ![Wyświetl szczegóły zdarzenia wydajności](../debugger/media/ffr_itsummarypageperformance.png "FFR_ITSummaryPagePerformance")
 
@@ -126,7 +128,7 @@ Przejdź do określonych punktów w wykonaniu aplikacji po rozpoczęciu debugowa
 
 ##### <a name="to-start-debugging-from-an-exception"></a>Aby rozpocząć debugowanie z wyjątku
 
-1. W obszarze **dane wyjątku**Przejrzyj zarejestrowane zdarzenia wyjątków, ich typy, komunikaty i czas wystąpienia wyjątków. Aby poznać więcej szczegółów związanych z kodem, rozpocznij debugowanie od ostatniego zdarzenia w grupie wyjątków.
+1. W obszarze **dane wyjątku** Przejrzyj zarejestrowane zdarzenia wyjątków, ich typy, komunikaty i czas wystąpienia wyjątków. Aby poznać więcej szczegółów związanych z kodem, rozpocznij debugowanie od ostatniego zdarzenia w grupie wyjątków.
 
      ![Rozpocznij debugowanie od zdarzenia wyjątku](../debugger/media/ffr_itsummarypageexception.png "FFR_ITSummaryPageException")
 
@@ -166,7 +168,7 @@ Przejdź do określonych punktów w wykonaniu aplikacji po rozpoczęciu debugowa
 
     ![&#45; dziennika IntelliTrace wprowadź identyfikator korelacji programu SharePoint](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")
 
-3. W obszarze **zdarzenia żądań**Przejrzyj zdarzenia. Od góry zdarzenia są wyświetlane w kolejności, w jakiej się znajdują.
+3. W obszarze **zdarzenia żądań** Przejrzyj zdarzenia. Od góry zdarzenia są wyświetlane w kolejności, w jakiej się znajdują.
 
    1. Wybierz zdarzenie, aby wyświetlić jego szczegóły.
 
@@ -186,7 +188,7 @@ Przejdź do określonych punktów w wykonaniu aplikacji po rozpoczęciu debugowa
 
     |**Pole IntelliTrace**|**Pole ULS programu SharePoint**|
     |----------------------------|------------------------------|
-    |**ID**|**EventID**|
+    |**ID (Identyfikator)**|**EventID**|
     |**Poziomie**|**Poziomie**|
     |**Identyfikator kategorii**|**Identyfikator kategorii**|
     |**Kategoria**|**Kategoria**|
@@ -211,9 +213,9 @@ Przejdź do określonych punktów w wykonaniu aplikacji po rozpoczęciu debugowa
 
 ##### <a name="to-start-debugging-from-a-specific-thread"></a>Aby rozpocząć debugowanie z określonego wątku
 
-1. Na **liście wątki**wybierz wątek.
+1. Na **liście wątki** wybierz wątek.
 
-2. W dolnej części **listy wątki**wybierz **Rozpocznij debugowanie**. Możesz również kliknąć dwukrotnie wątek.
+2. W dolnej części **listy wątki** wybierz **Rozpocznij debugowanie**. Możesz również kliknąć dwukrotnie wątek.
 
     Aby rozpocząć debugowanie w miejscu, w którym rozpoczyna się aplikacja, kliknij dwukrotnie **wątek główny**. Zobacz [Funkcje IntelliTrace](../debugger/intellitrace-features.md).
 
@@ -221,7 +223,7 @@ Przejdź do określonych punktów w wykonaniu aplikacji po rozpoczęciu debugowa
 
 |**Kolumna**|**Pokazuje**|
 |----------------|-------------------|
-|**ID**|Numer IDENTYFIKACYJNy wątku|
+|**ID (Identyfikator)**|Numer IDENTYFIKACYJNy wątku|
 |**Nazwa**|Nazwa wątku. Wątki nienazwane są wyświetlane jako " \<No Name> ".|
 |**Godzina rozpoczęcia**|Czas utworzenia wątku|
 |**Czas zakończenia**|Czas ukończenia wątku|
@@ -230,7 +232,7 @@ Przejdź do określonych punktów w wykonaniu aplikacji po rozpoczęciu debugowa
 
 1. Rozwiń pozycję **Siatka kroków testu**. Wybierz etap testu.
 
-2. W dolnej części **siatki kroków testu**wybierz **Rozpocznij debugowanie**. Możesz również kliknąć dwukrotnie krok testu.
+2. W dolnej części **siatki kroków testu** wybierz **Rozpocznij debugowanie**. Możesz również kliknąć dwukrotnie krok testu.
 
      Spowoduje to uruchomienie debugowania po pierwszym prawidłowym zdarzeniu IntelliTrace po wybranym kroku testu.
 

@@ -1,5 +1,7 @@
 ---
 title: Wyświetlanie dokumentów skryptów | Microsoft Docs
+description: Dowiedz się, jak wyświetlać dokumenty skryptów po stronie serwera JavaScript w programie Visual Studio przy użyciu Eksplorator rozwiązań.
+ms.custom: SEO-VS-2020
 ms.date: 11/05/2019
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f6d60d11737cde2beebdaeeccae8e547df78853
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 91c2e1c0438ebf8fad69f985f62a976ff6710a81
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851037"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150486"
 ---
 # <a name="how-to-view-script-documents-javascript"></a>Instrukcje: wyświetlanie dokumentów skryptów (JavaScript)
 
@@ -33,7 +35,7 @@ W przypadku niektórych typów aplikacji, które dynamicznie generują strony, �
 
 ### <a name="to-view-a-server-side-script-document"></a>Aby wyświetlić dokument skryptu po stronie serwera
 
-1. W **Eksplorator rozwiązań**Otwórz **\<Website Pathname>** węzeł.
+1. W **Eksplorator rozwiązań** Otwórz **\<Website Pathname>** węzeł.
 
 2. Kliknij dwukrotnie plik skryptu, który chcesz wyświetlić.
 
@@ -41,7 +43,7 @@ W przypadku niektórych typów aplikacji, które dynamicznie generują strony, �
 
 ### <a name="to-view-a-client-side-script-document"></a>Aby wyświetlić dokument skryptu po stronie klienta
 
-1. W **Eksplorator rozwiązań**Otwórz węzeł **dokumenty skryptu** .
+1. W **Eksplorator rozwiązań** Otwórz węzeł **dokumenty skryptu** .
 
 2. Kliknij dwukrotnie plik skryptu, który chcesz wyświetlić.
 

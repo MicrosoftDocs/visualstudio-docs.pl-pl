@@ -1,5 +1,7 @@
 ---
-title: Widok wywołujący-wywoływany-Dane instrumentacji | Microsoft Docs
+title: Widok Caller-Callee — dane Instrumentacji | Microsoft Docs
+description: Dowiedz się więcej o tym, jak widok wywołujący/wywoływany wyświetla informacje Instrumentacji w drzewie wywołań w Eksplorator wydajności.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 551c183dd9c368b1af16c1fe52b36762f4e71504
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3cd9f65fbce6f0326fab89acfef601652c9bc7b9
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74773299"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150889"
 ---
 # <a name="callercallee-view---instrumentation-data"></a>Widok wywołujący/wywoływany-Dane instrumentacji
 Widok wywołujący/wywoływany wyświetla informacje profilowania dotyczące wybranej funkcji i jej funkcji nadrzędnych i podrzędnych w drzewie wywołań. Widok wywołujący/wywoływany zawiera trzy siatki.
@@ -90,7 +92,7 @@ Widok wywołujący/wywoływany wyświetla informacje profilowania dotyczące wyb
 |**Maksymalny czas wyłączny aplikacji**|Maksymalny czas wyłączny aplikacji wywołania tej funkcji w tym kontekście.|
 |**Minimalny czas wyłączny aplikacji**|Minimalny czas wyłączny aplikacji w wywołaniu tej funkcji w tym kontekście.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Instrukcje: dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)
 - [Widok wywołujący/wywoływany-Dane próbkowania](../profiling/caller-callee-view-sampling-data.md)
 - [Widok wywołujący/wywoływany — Dane próbkowania pamięci platformy .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)

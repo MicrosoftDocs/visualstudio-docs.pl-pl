@@ -1,6 +1,7 @@
 ---
 title: Napisz funkcję raportowania błędów czasu wykonywania | Microsoft Docs
-ms.custom: seodec18
+description: Zobacz przykłady pisania niestandardowej funkcji raportowania błędów w czasie wykonywania w programie Visual Studio. Ta sama Deklaracja musi być taka sama jak _CrtDbgReportW i zwracać wartość 1.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22445868cca1533cad3d7e395452a6b19e102952
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: 046384e664ab4aa9c031b76a1ecd6285a9de5502
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407643"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150473"
 ---
 # <a name="how-to-write-a-run-time-error-reporting-function-c"></a>Instrukcje: pisanie funkcji raportowania błędów Run-Time (C++)
 Niestandardowa funkcja raportowania błędów czasu wykonywania musi mieć tę samą deklarację co `_CrtDbgReportW` . Powinien zwrócić wartość 1 do debugera.
@@ -122,5 +123,5 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
-[Dostosowanie macierzystego sprawdzania w trakcie wykonywania](../debugger/native-run-time-checks-customization.md)
+## <a name="see-also"></a>Zobacz także
+[Dostosowywanie kontroli Run-Time natywnych](../debugger/native-run-time-checks-customization.md)

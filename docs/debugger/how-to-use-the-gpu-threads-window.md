@@ -1,5 +1,7 @@
 ---
 title: Wyświetlanie wątków GPU w debugerze | Microsoft Docs
+description: Użyj okna wątków GPU, aby przeanalizować i pracować z wątkami uruchomionymi na procesorze GPU w aplikacji, która jest debugowana w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbbb49a1017fb0bc65300f3c16050db4954e1103
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5919ac657d828e87e48b8cfb3f4f643e1187f701
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348720"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150590"
 ---
 # <a name="how-to-use-the-gpu-threads-window-c"></a>Instrukcje: korzystanie z okna wątków GPU (C++)
 W oknie wątki GPU można przeanalizować i pracować z wątkami uruchomionymi na procesorze GPU w debugowanej aplikacji. Aby uzyskać więcej informacji o aplikacjach uruchamianych na procesorze GPU, zobacz [C++ amp Omówienie](/cpp/parallel/amp/cpp-amp-overview).
@@ -52,9 +54,9 @@ W oknie wątki GPU można przeanalizować i pracować z wątkami uruchomionymi n
 
 ### <a name="to-display-the-gpu-threads-window"></a>Aby wyświetlić okno wątków GPU
 
-1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu, a następnie wybierz polecenie **Właściwości**.
+1. W **Eksplorator rozwiązań** Otwórz menu skrótów dla projektu, a następnie wybierz polecenie **Właściwości**.
 
-2. W oknie **strony właściwości** dla projektu, w obszarze **Właściwości konfiguracji**wybierz **debugowanie**.
+2. W oknie **strony właściwości** dla projektu, w obszarze **Właściwości konfiguracji** wybierz **debugowanie**.
 
 3. Na liście **debuger do uruchomienia** wybierz pozycję **lokalny debuger systemu Windows**. Na liście **Typ debugera** wybierz pozycję **tylko procesor GPU**. Musisz wybrać ten debuger, aby przerwać w punkcie przerwania w kodzie, który jest uruchamiany na procesorze GPU.
 
@@ -64,7 +66,7 @@ W oknie wątki GPU można przeanalizować i pracować z wątkami uruchomionymi n
 
 6. Na pasku menu wybierz **Debuguj**, **Rozpocznij debugowanie**. Poczekaj, aż aplikacja osiągnie punkt przerwania.
 
-7. Na pasku menu wybierz kolejno opcje **Debuguj**, **Windows**i **GPU**.
+7. Na pasku menu wybierz kolejno opcje **Debuguj**, **Windows** i **GPU**.
 
 ### <a name="to-switch-to-a-different-thread"></a>Aby przełączyć się do innego wątku
 
@@ -102,7 +104,7 @@ W oknie wątki GPU można przeanalizować i pracować z wątkami uruchomionymi n
 
 - Wybierz przycisk flagi w oknie wątki GPU.
 
-## <a name="see-also"></a>Zobacz też
-- [Debuguj wielowątkowe aplikacje](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+## <a name="see-also"></a>Zobacz także
+- [Debuguj aplikacje wielowątkowe](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Instrukcje: korzystanie z okna czujki równoległej](../debugger/how-to-use-the-parallel-watch-window.md)
 - [Przewodnik: debugowanie aplikacji C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

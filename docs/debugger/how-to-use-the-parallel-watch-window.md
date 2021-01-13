@@ -1,5 +1,7 @@
 ---
 title: Ustaw obserwację zmiennych w wątkach równoległych | Microsoft Docs
+description: Ustaw obserwację zmiennych w wątkach równoległych w programie Visual Studio. Jednocześnie wyświetla wartości, które jedno wyrażenie jest przechowywane w wielu wątkach.
+ms.custom: SEO-VS-2020
 ms.date: 04/25/2017
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fb0d5ac60ea5ab89b02a624488b5df4f8a7164b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28aeffb629a44c296fb9a349e165c7ce88f70b0c
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348629"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150577"
 ---
 # <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio-c-visual-basic-c"></a>Ustaw kontrolkę na zmienne w wątkach równoległych w programie Visual Studio (C#, Visual Basic, C++)
 W okno wyrażeń kontrolnych równoległym można jednocześnie wyświetlić wartości, które są przechowywane w jednym wyrażeniu na wielu wątkach. Każdy wiersz reprezentuje wątek, który jest uruchomiony w aplikacji, ale wątek może być reprezentowany w wielu wierszach. Dokładniej mówiąc, każdy wiersz reprezentuje wywołanie funkcji, którego sygnatura funkcji dopasowuje funkcję w bieżącej klatce stosu. Elementy, które znajdują się w kolumnach, można sortować, zmienić ich kolejność, usunąć i zgrupować. Wątki można flagować, anulować flagować, zamrażać (wstrzymywać) i rozmrażać (wznawiać). W oknie **czujki równoległej** są wyświetlane następujące kolumny:
@@ -46,7 +48,7 @@ W okno wyrażeń kontrolnych równoległym można jednocześnie wyświetlić war
 
 2. Na pasku menu wybierz **Debuguj**, **Rozpocznij debugowanie**. Poczekaj, aż aplikacja osiągnie punkt przerwania.
 
-3. Na pasku menu wybierz kolejno opcje **Debuguj**, **Windows**i **Parallel Watch**, a następnie okno Czujka. Możesz otworzyć maksymalnie cztery okna.
+3. Na pasku menu wybierz kolejno opcje **Debuguj**, **Windows** i **Parallel Watch**, a następnie okno Czujka. Możesz otworzyć maksymalnie cztery okna.
 
 ### <a name="to-add-a-watch-expression"></a>Aby dodać wyrażenie czujki
 
@@ -84,7 +86,7 @@ W okno wyrażeń kontrolnych równoległym można jednocześnie wyświetlić war
 
 - Wprowadź wyrażenie logiczne w polu **Filtruj według wartości logicznej** . Debuger oblicza wyrażenie dla każdego kontekstu wątku. Wyświetlane są tylko wiersze, w których jest `true` wyświetlana wartość.
 
-## <a name="see-also"></a>Zobacz też
-- [Debuguj wielowątkowe aplikacje](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+## <a name="see-also"></a>Zobacz także
+- [Debuguj aplikacje wielowątkowe](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Instrukcje: korzystanie z okna wątków GPU](../debugger/how-to-use-the-gpu-threads-window.md)
 - [Przewodnik: debugowanie aplikacji C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

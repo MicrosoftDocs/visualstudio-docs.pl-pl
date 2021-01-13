@@ -1,5 +1,7 @@
 ---
 title: Określ ustawienia debugera | Microsoft Docs
+description: Określ różne ustawienia dla zachowania debugera w programie Visual Studio, takie jak sposób wyświetlania zmiennych, jakie ostrzeżenia są prezentowane i jak ustawić punkty przerwania.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b831ae0329adc218ba76fc27206e1f47d0ac8f9c
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: a5034fe887ba221106055a928e67e11076167286
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851947"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150772"
 ---
 # <a name="how-to-specify-debugger-settings"></a>Porady: Określanie ustawień debugera
 W programie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] można określić różne ustawienia dla zachowania debugera, w tym sposób wyświetlania zmiennych, informacje o tym, czy są wyświetlane określone ostrzeżenia, jak są ustawiane punkty przerwania oraz jak przerywanie wpływa na uruchamianie programów. Ustawienia debugera należy określić w oknie dialogowym **Opcje** .
@@ -42,7 +44,7 @@ W programie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] można okr
 4. Zaznacz lub usuń zaznaczenie żądanej opcji lub opcji. Naciśnij klawisz F1, aby uzyskać pomoc dotyczącą opcji.
 
 ## <a name="see-also"></a>Zobacz także
-- [Ogólne, debugowanie, okno dialogowe Opcje](../debugger/general-debugging-options-dialog-box.md)
+- [Ogólne, debugowanie, Opcje — okno dialogowe](../debugger/general-debugging-options-dialog-box.md)
 - [Edytuj i Kontynuuj, debugowanie, Opcje — okno dialogowe](./edit-and-continue.md)
 - [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)
 - [Typowe makra dla poleceń i właściwości kompilacji](/cpp/build/reference/common-macros-for-build-commands-and-properties)

@@ -1,5 +1,7 @@
 ---
 title: Nie można ustawić punktu przerwania danych | Microsoft Docs
+description: Znajdź wyjaśnienia, rozwiązania i obejścia "nie można ustawić błędów punktów przerwania danych", które występują podczas korzystania z funkcji "Przerwij przy zmianie wartości".
+ms.custom: SEO-VS-2020
 ms.date: 12/3/2019
 ms.topic: error-reference
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: waan
 manager: caslan
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cded3bfdb6adc206f02ef54402964f4e7276f93
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 4e90c3d4af8e568f1bb2e6987c66c7fbc0856c57
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668784"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150460"
 ---
 # <a name="troubleshooting-data-breakpoint-errors"></a>Rozwiązywanie problemów z błędami punktów przerwania danych
 Ta strona zawiera instrukcje dotyczące rozwiązywania typowych błędów, które pojawiają się podczas korzystania z funkcji "Przerwij przy zmianie wartości".
@@ -79,7 +81,7 @@ Architektura (Konfiguracja platformy), w której działa program, zawiera ograni
 | ARM | 1 | 4 |
 | ARM64 | 2 | 8 |
 
-## <a name="provide-feedback"></a>Przekazywanie opinii
+## <a name="provide-feedback"></a>Wyraź opinię
 
 Aby dowiedzieć się więcej na temat problemów lub sugestii dotyczących tej funkcji, skontaktuj się z pomocą techniczną, aby uzyskać pomoc w > wysłania opinii > [zgłosić problem](../ide/how-to-report-a-problem-with-visual-studio.md) w środowisku IDE lub [społeczności deweloperów](https://aka.ms/feedback/suggest?space=8).
 

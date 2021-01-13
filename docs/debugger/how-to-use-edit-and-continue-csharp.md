@@ -1,5 +1,7 @@
 ---
 title: Użyj Edytuj i Kontynuuj (C#) | Microsoft Docs
+description: Użyj Edytuj i Kontynuuj, aby wprowadzić i zastosować zmiany do kodu w trybie przerwania podczas debugowania, bez zatrzymywania i ponownego uruchamiania sesji debugowania w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 10/04/2018
 ms.topic: how-to
 dev_langs:
@@ -15,17 +17,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 18d11f552d486fd9ebd7a95323e327324de14108
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: a0f8126689c0874c984a679da9b6debcb66a3075
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851856"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150655"
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>Porady: korzystanie z opcji edytuj i kontynuuj (C#)
 Za pomocą Edytuj i Kontynuuj można wprowadzać i stosować zmiany w kodzie w trybie przerwania podczas debugowania, bez konieczności zatrzymywania i ponownego uruchamiania sesji debugowania.
 
-Edytuj i Kontynuuj dla języka C# odbywa się automatycznie po wprowadzeniu zmian w kodzie w trybie przerwania, a następnie kontynuuj debugowanie przy użyciu opcji **Kontynuuj**, **Wkrocz**lub **Ustaw następną instrukcję**lub Oceń funkcję w oknie debugera.
+Edytuj i Kontynuuj dla języka C# odbywa się automatycznie po wprowadzeniu zmian w kodzie w trybie przerwania, a następnie kontynuuj debugowanie przy użyciu opcji **Kontynuuj**, **Wkrocz** lub **Ustaw następną instrukcję** lub Oceń funkcję w oknie debugera.
 
 Aby uzyskać więcej informacji, zobacz [Edytuj i Kontynuuj (Visual C#)](../debugger/edit-and-continue-visual-csharp.md).
 
@@ -36,7 +38,7 @@ Aby uzyskać więcej informacji, zobacz [Edytuj i Kontynuuj (Visual C#)](../debu
 
 1. Jeśli jesteś w sesji debugowania, Zatrzymaj debugowanie (**Debuguj**  >  **Zatrzymaj debugowanie** lub **SHIFT** + **F5**).
 
-1. W **Tools**oknie  >  **Opcje** narzędzia (lub **Debug**  >  **Opcje**debugowania) > **debugowanie**  >  **Ogólne**, zaznacz lub wyczyść pole wyboru **Włącz edytowanie i kontynuowanie** .
+1. W oknie  >  **Opcje** narzędzia (lub   >  **Opcje** debugowania) > **debugowanie**  >  **Ogólne**, zaznacz lub wyczyść pole wyboru **Włącz edytowanie i kontynuowanie** .
 
 Ustawienie zacznie obowiązywać po rozpoczęciu lub ponownym uruchomieniu sesji debugowania.
 
@@ -44,7 +46,7 @@ Ustawienie zacznie obowiązywać po rozpoczęciu lub ponownym uruchomieniu sesji
 
 1. Podczas debugowania w trybie przerwania wprowadź zmiany w kodzie źródłowym.
 
-1. Z menu **Debuguj** kliknij polecenie **Kontynuuj**, **krok**lub **Ustaw następną instrukcję**lub Oceń funkcję w oknie debugera.
+1. Z menu **Debuguj** kliknij polecenie **Kontynuuj**, **krok** lub **Ustaw następną instrukcję** lub Oceń funkcję w oknie debugera.
 
    Debugowanie jest kontynuowane z nowym, skompilowanym kodem.
 

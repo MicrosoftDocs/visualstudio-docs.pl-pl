@@ -1,5 +1,7 @@
 ---
 title: Wyświetlanie typu niestandardowego za pomocą DebuggerTypeProxy | Microsoft Docs
+description: Użyj wystąpienia DebuggerTypeProxyAttribute —, aby określić serwer proxy (autonomiczne) dla typu, aby zmienić sposób wyświetlania typu w oknach debugera.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b98481cb1727ecad9289f63136291d500c0d577e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 94551605581890692f8a1366fa2235811ccdc5f2
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85347966"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150382"
 ---
 # <a name="tell-the-debugger-what-type-to-show-using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>Poinformuj debugera o typie, który ma być wyświetlany przy użyciu atrybutu DebuggerTypeProxy (C#, Visual Basic, C++/CLI)
 
@@ -65,8 +67,8 @@ Visual Basic nie ma składni typu otwartego, dlatego nie można wykonać tej czy
 
 `"Namespace.TypeName'2"`
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Używanie atrybutu DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)
-- [Tworzenie niestandardowych widoków zarządzanych obiektów](../debugger/create-custom-views-of-managed-objects.md)
+- [Tworzenie niestandardowych widoków obiektów zarządzanych](../debugger/create-custom-views-of-managed-objects.md)
 - [Udoskonalanie debugowania za pomocą atrybutów wyświetlania debugera](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

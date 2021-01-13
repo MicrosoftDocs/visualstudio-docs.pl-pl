@@ -1,5 +1,7 @@
 ---
-title: Widok wywołujący-wywoływany — Dane próbkowania pamięci platformy .NET | Microsoft Docs
+title: Widok Caller-Callee — dane próbkowania pamięci platformy .NET | Microsoft Docs
+description: Dowiedz się, jak widok wywołujący/wywoływany wyświetla dane próbkowania pamięci platformy .NET dla wybranej funkcji i jej funkcji nadrzędnych i podrzędnych w Eksplorator wydajności.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 50e278e858ea086c83b29ef4eebf6b48ee8e477e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5f0e3613dc9b122a6fac915f4683d9f7b859ee3
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74773312"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150902"
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>Widok wywołujący/wywoływany — Dane próbkowania pamięci platformy .NET
 Widok wywołujący/wywoływany wyświetla dane profilowania pamięci platformy .NET dla wybranej funkcji i jej funkcji nadrzędnych i podrzędnych. Widok wywołujący/wywoływany zawiera trzy siatki.
@@ -50,7 +52,7 @@ Widok wywołujący/wywoływany wyświetla dane profilowania pamięci platformy .
 |**Bajty wyłączne**|— Dla bieżącej funkcji — liczba bajtów pamięci przydzielonej przez funkcję w ramach uruchomienia profilowania. Ta liczba nie obejmuje pamięci przydzielonej przez funkcje, które zostały wywołane przez bieżącą funkcję.<br />-Dla funkcji wywołującej liczba wyłącznych bajtów bieżącej funkcji, które zostały wygenerowane przez wywołania z funkcji wywołującej.<br />-Dla funkcji wywoływanej liczba bajtów, które zostały przydzielone przez wystąpienia funkcji, które zostały wygenerowane przez wywołania z bieżącej funkcji. Liczba nie obejmuje bajtów, które zostały przydzielone przez funkcje, które zostały wywołane przez wywoływaną funkcję.|
 |**% Bajtów wyłącznych**|Wartość procentowa wszystkich bajtów pamięci przydzielonych w ramach uruchomienia profilowania, która wystąpiła na wyłączność alokacji tej funkcji.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Instrukcje: dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)
 - [Widok elementu wywołującego/wywoływanego — dane Instrumentacji pamięci platformy .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
 - [Widok wywołujący/wywoływany-Dane próbkowania](../profiling/caller-callee-view-sampling-data.md)

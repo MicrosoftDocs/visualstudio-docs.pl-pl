@@ -1,6 +1,7 @@
 ---
 title: Wyświetlanie kodu demontażu w debugerze | Microsoft Docs
-ms.custom: seodec18
+description: Użyj okna demontaż w programie Visual Studio, aby wyświetlić kod asemblera odpowiadający instrukcjom utworzonym przez kompilator.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 10/30/2018
 ms.topic: how-to
 f1_keywords:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23f297aa3fc549714a9b6327232a8a0b69c6138f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 733eb439808d6cab2d290615751cf44ccd711022
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808171"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150616"
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Wyświetlanie kodu demontażu w debugerze programu Visual Studio (C#, C++, Visual Basic, F #)
 
@@ -58,9 +59,9 @@ Aby wyświetlić instrukcje dotyczące kodu maszynowego w pierwotnej formie licz
 
 ## <a name="use-the-disassembly-window"></a>Korzystanie z okna demontażu
 
-Aby włączyć okno **demontaż** , w obszarze **Narzędzia**  >  **Opcje**  >  **debugowania**wybierz pozycję **Włącz debugowanie na poziomie adresu**.
+Aby włączyć okno **demontaż** , w obszarze **Narzędzia**  >  **Opcje**  >  **debugowania** wybierz pozycję **Włącz debugowanie na poziomie adresu**.
 
-Aby otworzyć okno **demontaż** podczas debugowania, wybierz pozycję **Windows**  >  **demontaż** systemu Windows lub naciśnij klawisz **Alt** + **8**.
+Aby otworzyć okno **demontaż** podczas debugowania, wybierz pozycję   >  **demontaż** systemu Windows lub naciśnij klawisz **Alt** + **8**.
 
 > [!NOTE]
 > Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz **Importuj i Eksportuj ustawienia** w menu **Narzędzia** . Aby uzyskać więcej informacji, zobacz [Resetowanie ustawień](../ide/environment-settings.md#reset-settings).
@@ -69,7 +70,7 @@ Aby włączyć lub wyłączyć informacje opcjonalne, kliknij prawym przyciskiem
 
 Żółta strzałka w lewym marginesie oznacza bieżący punkt wykonania. W przypadku kodu natywnego punkt wykonywania odpowiada licznikowi programu procesora CPU. Ta lokalizacja pokazuje następną instrukcję, która zostanie wykonana w programie.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 * [Stronicowanie w górę lub w dół w pamięci](../debugger/how-to-page-up-or-down-in-memory.md)
 * [Wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)

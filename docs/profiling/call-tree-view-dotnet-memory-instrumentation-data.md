@@ -1,5 +1,7 @@
 ---
 title: Widok drzewa wywołań — dane Instrumentacji pamięci platformy .NET | Microsoft Docs
+description: Przeczytaj informacje o widoku drzewa wywołań danych Instrumentacji przydziału pamięci platformy .NET w Eksplorator wydajności.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2066959578987e358f8c1c91dcbda1eeb6f79f26
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fe6a56101e7fc00d69ed21240fe5a79b298174f2
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74773600"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150824"
 ---
 # <a name="call-tree-view---net-memory-instrumentation-data"></a>Widok drzewa wywołań — dane Instrumentacji pamięci platformy .NET
 Widok drzewa wywołań dla danych profilowania przydziału pamięci platformy .NET, który został zebrany przy użyciu metody instrumentacji, wyświetla ścieżki wykonywania funkcji, które zostały przesunięte w profilowanej aplikacji. Katalog główny drzewa jest punktem wejścia do aplikacji lub składnika. Każdy węzeł funkcji zawiera listę wszystkich wywoływanych funkcji oraz dane dotyczące pamięci i czasu .NET dla funkcji.

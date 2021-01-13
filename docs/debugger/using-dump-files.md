@@ -1,6 +1,7 @@
 ---
 title: Używanie plików zrzutu w debugerze | Microsoft Docs
-ms.custom: seodec18
+description: Plik zrzutu to migawka wykonywanej aplikacji i załadowanych modułów. Rozważ utworzenie pliku zrzutu w sytuacjach, gdy nie masz dostępu debugowania do aplikacji.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/05/2018
 ms.topic: conceptual
 f1_keywords:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dbfd8ac877fce4b1808a76e3bb2a66ac595693de
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 8bcd225bb64096d8a8e58e3cffd15e7bc94bf5cc
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970620"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150876"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Zrzuć pliki w debugerze programu Visual Studio
 
@@ -113,7 +114,7 @@ Program Visual Studio automatycznie przeszukuje te lokalizacje plików *exe* , k
 
 Jeśli program Visual Studio nie może znaleźć plików potrzebnych do debugowania modułu w zrzucie, pokazuje **nie znaleziono pliku binarnego**, **nie znaleziono symboli** lub nie znaleziono **źródła** strony. Te strony zawierają szczegółowe informacje o przyczynie problemu i zawierają linki akcji, które mogą pomóc w znalezieniu plików. Zobacz [Określanie symboli (. pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Debugowanie just in Time](../debugger/just-in-time-debugging-in-visual-studio.md)
 - [Określanie symboli (. pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

@@ -1,6 +1,7 @@
 ---
 title: Wyświetlanie stosu wywołań w debugerze | Microsoft Docs
-ms.custom: seodec18
+description: Użyj okna stosu wywołań, aby wyświetlić wywołania funkcji lub procedur, które obecnie znajdują się na stosie w programie Visual Studio.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 10/29/2018
 ms.topic: how-to
 f1_keywords:
@@ -29,12 +30,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa91807459ea5c2d8f576891d0eafc35336347bc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 206c79a47ec59e02206332d80d1afe935fb72bdc
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348746"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150629"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>Wyświetlanie stosu wywołań i korzystanie z okna stosu wywołań w debugerze
 
@@ -56,7 +57,7 @@ Gdy [symbole debugowania](#bkmk_symbols) nie są dostępne dla części stosu wy
 
   ![Okno stosu wywołań](../debugger/media/dbg_basics_callstack_window.png "CallStackWindow")
 
-Żółta strzałka określa ramkę stosu, w której znajduje się wskaźnik wykonania. Domyślnie informacje o tej ramce stosu są wyświetlane w oknach źródło, **lokalne**, **Autostart**, **Watch**i **demontaż** . Aby zmienić kontekst debugera na inną ramkę na stosie, [Przełącz się do innej ramki stosu](#bkmk_switch).
+Żółta strzałka określa ramkę stosu, w której znajduje się wskaźnik wykonania. Domyślnie informacje o tej ramce stosu są wyświetlane w oknach źródło, **lokalne**, **Autostart**, **Watch** i **demontaż** . Aby zmienić kontekst debugera na inną ramkę na stosie, [Przełącz się do innej ramki stosu](#bkmk_switch).
 
 ## <a name="display-non-user-code-in-the-call-stack-window"></a>Wyświetl kod niebędący użytkownikiem w oknie stosu wywołań
 
@@ -108,7 +109,7 @@ W Visual Studio Enterprise (tylko) można wyświetlić mapy kodu dla stosu wywo�
 
 ## <a name="change-the-optional-information-displayed"></a>Zmień wyświetlane informacje opcjonalne
 
-- Kliknij prawym przyciskiem myszy w oknie **stos wywołań** i ustaw lub wyczyść opcję **Pokaż \<**_the information that you want_**> **.
+- Kliknij prawym przyciskiem myszy w oknie **stos wywołań** i ustaw lub wyczyść opcję **Pokaż \<**_the information that you want_**>**.
 
 ## <a name="load-symbols-for-a-module-c-c-visual-basic-f"></a><a name="bkmk_symbols"></a> Załaduj symbole dla modułu (C#, C++, Visual Basic, F #)
 
@@ -138,9 +139,9 @@ Zobacz [Określanie symboli (. pdb) i plików źródłowych](../debugger/specify
 
 5. Wybierz **przycisk OK** , aby zamknąć okno dialogowe **Opcje** .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Kod mieszany i brakujące informacje w oknie stosu wywołań](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)
 - [Wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)
 - [Określanie symboli (. pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
-- [Używanie punktów przerwania](../debugger/using-breakpoints.md)
+- [Korzystanie z punktów przerwania](../debugger/using-breakpoints.md)

@@ -1,5 +1,7 @@
 ---
 title: Sprawdź ustawienia właściwości usług IIS | Microsoft Docs
+description: Informacje na temat sprawdzania ustawień właściwości usług IIS ustawionych dla aplikacji sieci Web przy użyciu narzędzia administracyjnego usług IIS.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c883257abf48601f5131bdae239df61ea64ba77
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: b627fbd3d4875699faa28f551d68f5a99bd63340
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851050"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150551"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>Porady: weryfikacja właściwości ustawień IIS
 
@@ -43,7 +45,7 @@ Możesz ustawić właściwości aplikacji sieci Web za pomocą narzędzia admini
 
    - W systemie Windows Server 2003 kliknij dwukrotnie pozycję **Zarządzanie serwerem**.
 
-        Zostanie otwarte okno **Zarządzanie serwerem** . W obszarze **serwer aplikacji**kliknij pozycję **Zarządzaj tym serwerem aplikacji**.
+        Zostanie otwarte okno **Zarządzanie serwerem** . W obszarze **serwer aplikacji** kliknij pozycję **Zarządzaj tym serwerem aplikacji**.
 
         Zostanie otwarte okno **serwer aplikacji** . Otwórz węzeł **menedżer Internet Information Services (IIS)** w okienku po lewej stronie.
 
@@ -67,7 +69,7 @@ Możesz ustawić właściwości aplikacji sieci Web za pomocą narzędzia admini
 
    2. Sprawdź, czy nazwa w **ścieżce lokalnej** jest zgodna z nazwą katalogu, w którym aplikacja została faktycznie wdrożona.
 
-   3. W obszarze **Ustawienia aplikacji**wpisz nazwę katalogu głównego, który zawiera aplikację.
+   3. W obszarze **Ustawienia aplikacji** wpisz nazwę katalogu głównego, który zawiera aplikację.
 
    4. Kliknij przycisk **OK** , aby zamknąć okno dialogowe **Właściwości** .
 
@@ -75,7 +77,7 @@ Możesz ustawić właściwości aplikacji sieci Web za pomocą narzędzia admini
 
 8. Kliknij przycisk **OK** , aby zamknąć okno dialogowe **Właściwości** .
 
-9. Kliknij przycisk **OK** , aby zamknąć okno dialogowe **Internet Information Services (IIS) menedżer** **Menedżer usług internetowych**lub **Internet Information Services** .
+9. Kliknij przycisk **OK** , aby zamknąć okno dialogowe **Internet Information Services (IIS) menedżer** **Menedżer usług internetowych** lub **Internet Information Services** .
 
 ## <a name="see-also"></a>Zobacz także
 

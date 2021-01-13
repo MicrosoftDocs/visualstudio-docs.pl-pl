@@ -1,5 +1,7 @@
 ---
 title: Korzystanie z programu Spy + + | Microsoft Docs
+description: Program Spy + + (SPYXX.EXE) oferuje graficzny widok procesów systemu, wątków, okien i komunikatów okien. Tutaj znajdziesz linki do odpowiednich artykułów.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8751aa4bdd80b95406dcc588b469da43f7221a13
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0f01167f00b3428bab52b4a6f2ab88d909e7b31f
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62929910"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150928"
 ---
 # <a name="using-spy"></a>Korzystanie z programu Spy++
 Program Spy + + (SPYXX.EXE) jest narzędziem opartym na Win32, które zapewnia graficzny widok procesów, wątków, okien i komunikatów systemu Windows. Ta sekcja pomocy programu Spy + + zawiera następujące tematy pomocy:

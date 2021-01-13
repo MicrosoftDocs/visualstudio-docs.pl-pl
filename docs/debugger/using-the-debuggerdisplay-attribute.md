@@ -1,5 +1,7 @@
 ---
 title: Wyświetlanie informacji niestandardowych za pomocą DebuggerDisplay | Microsoft Docs
+description: Za pomocą wystąpienia DebuggerDisplayAttribute — można kontrolować sposób wyświetlania obiektu, właściwości lub pola w oknach zmiennych debugera.
+ms.custom: SEO-VS-2020
 ms.date: 01/09/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2387c5e9a920f0811a65ca400d8da48aa81dccd3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1d846fd5e423ed17f7754260f169e32dbef5486b
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85418785"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150759"
 ---
 # <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Poinformuj debugera, co ma być wyświetlane przy użyciu atrybutu DebuggerDisplay (C#, Visual Basic, F #, C++/CLI)
 
@@ -179,9 +181,9 @@ class MyHashtable
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Korzystanie z atrybutu DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)
-- [Tworzenie niestandardowych widoków zarządzanych obiektów](../debugger/create-custom-views-of-managed-objects.md)
-- [Specyfikatory formatu w języku C #](../debugger/format-specifiers-in-csharp.md)
+- [Tworzenie niestandardowych widoków obiektów zarządzanych](../debugger/create-custom-views-of-managed-objects.md)
+- [Specyfikatory formatu w języku C#](../debugger/format-specifiers-in-csharp.md)
 - [Udoskonalanie debugowania za pomocą atrybutów wyświetlania debugera](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

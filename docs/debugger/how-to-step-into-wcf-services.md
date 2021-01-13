@@ -1,5 +1,7 @@
 ---
 title: Przejdź do usług WCF | Microsoft Docs
+description: Wkrocz do usługi Windows Communication Foundation (WCF). Jeśli znajduje się w tym samym rozwiązaniu programu Visual Studio, co klient, trafij punkty przerwania wewnątrz usługi WCF.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25ca1e4d2b7e0349ea5a41c6fc66726226ecab4f
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 428f5576b595797605abff2ebc5f4669e2927389
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851895"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150733"
 ---
 # <a name="how-to-step-into-wcf-services"></a>Porady: usługi WCF krok po kroku
 W programie możesz [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] przejść do usługi WCF. Jeśli usługa WCF jest w tym samym [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozwiązaniu co klient, można trafić punkty przerwania wewnątrz usługi WCF.
@@ -42,5 +44,5 @@ W programie możesz [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_lon
 
 ## <a name="see-also"></a>Zobacz także
 - [Debugowanie usług WCF](../debugger/debugging-wcf-services.md)
-- [Ograniczenia debugowania WCF](../debugger/limitations-on-wcf-debugging.md)
+- [Ograniczenia dotyczące debugowania WCF](../debugger/limitations-on-wcf-debugging.md)
 - [Instrukcje: debugowanie hostowanej samodzielnie usługi WCF](../debugger/how-to-debug-a-self-hosted-wcf-service.md)

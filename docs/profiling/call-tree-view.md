@@ -1,5 +1,7 @@
 ---
 title: Widok drzewa wywołań | Microsoft Docs
+description: Zapoznaj się z widokiem drzewa wywołań, który wyświetla ścieżki wykonywania funkcji, które zostały przesunięte w profilowanej aplikacji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b932d5f9e4a178c94f3e490c66cec64648ce4f6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 386f8e85c02fe73eab9801b3edf79ec0d0b178fc
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74773338"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150785"
 ---
 # <a name="call-tree-view"></a>Widok drzewa wywołań
 W widoku drzewa wywołań są wyświetlane ścieżki wykonywania funkcji, które zostały przesunięte w profilowanej aplikacji. Katalog główny drzewa jest punktem wejścia do aplikacji lub składnika. Każdy węzeł funkcji zawiera listę wszystkich wywoływanych funkcji i danych wydajności dotyczących tych wywołań funkcji.
@@ -49,7 +51,7 @@ W widoku drzewa wywołań są wyświetlane ścieżki wykonywania funkcji, które
 
 - [Widok drzewa wywołań](../profiling/call-tree-view-contention-data.md)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Widoki raportów wydajności](../profiling/performance-report-views.md)
 - [Zapoznanie z wartościami danych instrumentacji](../profiling/understanding-instrumentation-data-values.md)
 - [Zapoznanie z wartościami danych próbkowania](../profiling/understanding-sampling-data-values.md)

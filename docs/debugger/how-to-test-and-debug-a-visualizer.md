@@ -1,5 +1,7 @@
 ---
 title: Testowanie i debugowanie wizualizatora | Microsoft Docs
+description: Przetestuj i Debuguj wizualizator, uruchamiając go ze sterownika testowego (hosta programowania wizualizatora) lub instalując program w programie Visual Studio i wywołując go z okna debugera.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df45b1f81430e733d6116768bf7c8823911ead59
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 1326fe9731a9d938678eb9397b106ab9e71b4fd5
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851869"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150668"
 ---
 # <a name="how-to-test-and-debug-a-visualizer"></a>Porady: testowanie i debugowanie wizualizera
 Po napisaniu wizualizatora należy go debugować i testować.

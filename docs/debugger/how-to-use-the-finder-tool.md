@@ -1,5 +1,7 @@
 ---
 title: Korzystanie z narzędzia wyszukiwania | Microsoft Docs
+description: Aby wyświetlić właściwości okna lub komunikaty podczas sesji debugowania, użyj narzędzia wyszukiwania w oknie dialogowym okna wyszukiwania w narzędziu Spy + +.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e92223359c6bc78b2a98c234c03ee139c052f86
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 41ca277962f81b3cd1c35ebcf8a940e8168a6803
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851843"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150603"
 ---
 # <a name="how-to-use-the-finder-tool"></a>Porady: korzystanie z narzędzia wyszukiwania
 Możesz użyć narzędzia wyszukiwania w oknie dialogowym **Znajdowanie okna** do wyświetlania właściwości okna lub komunikatów. Narzędzie wyszukiwania może również lokalizować wyłączone okna podrzędne i rozpoznać, które okno ma zostać wyróżnione, jeśli wyłączone okna podrzędne nakładają się na siebie.
@@ -41,13 +43,13 @@ Możesz użyć narzędzia wyszukiwania w oknie dialogowym **Znajdowanie okna** d
      Jeśli masz dojście do okna, które chcesz przejrzeć (na przykład skopiowane z debugera), wpisz je w polu tekstowym **uchwyt** .
 
    > [!TIP]
-   > Aby zmniejszyć czytelność ekranu, wybierz opcję **Ukryj program Spy** . Ta opcja ukrywa główne okno programu Spy + +, pozostawiając tylko okno dialogowe **Znajdowanie okna** widoczne na wierzchu innych aplikacji. Okno główne programu Spy + + jest przywracane po kliknięciu przycisku **OK** lub **Anuluj**lub po wyczyszczeniu opcji **Ukryj program Spy + +** .
+   > Aby zmniejszyć czytelność ekranu, wybierz opcję **Ukryj program Spy** . Ta opcja ukrywa główne okno programu Spy + +, pozostawiając tylko okno dialogowe **Znajdowanie okna** widoczne na wierzchu innych aplikacji. Okno główne programu Spy + + jest przywracane po kliknięciu przycisku **OK** lub **Anuluj** lub po wyczyszczeniu opcji **Ukryj program Spy + +** .
 
-4. W obszarze **Pokaż**wybierz opcję **Właściwości** lub **komunikaty**.
+4. W obszarze **Pokaż** wybierz opcję **Właściwości** lub **komunikaty**.
 
 5. Naciśnij przycisk **OK**.
 
-    W przypadku wybrania **Właściwości**zostanie otwarte okno [dialogowe Właściwości okna](../debugger/window-properties-dialog-box.md) . W przypadku wybrania **wiadomości**zostanie otwarte okno [Widok komunikatów](../debugger/messages-view.md) .
+    W przypadku wybrania **Właściwości** zostanie otwarte okno [dialogowe Właściwości okna](../debugger/window-properties-dialog-box.md) . W przypadku wybrania **wiadomości** zostanie otwarte okno [Widok komunikatów](../debugger/messages-view.md) .
 
 ## <a name="see-also"></a>Zobacz także
 - [Spy++ — Widoki](../debugger/spy-increment-views.md)

@@ -1,5 +1,7 @@
 ---
 title: Obsługiwane zmiany kodu (C++) | Microsoft Docs
+description: Informacje o zmianach w kodzie, które są obsługiwane w przypadku korzystania z funkcji Edytuj i Kontynuuj podczas debugowania projektu C++ w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/18/2020
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: af6c0d88dd230bee768641905e200f1f47749d77
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d693753cbcc9844ff602ab4d20e90fdc6de7dae5
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77629589"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150499"
 ---
 # <a name="supported-code-changes-c"></a>Obsługiwane zmiany kodu (C++)
 Edytuj i Kontynuuj dla projektów C++ obsługuje większość typów zmian kodu. Jednak niektórych zmian nie można zastosować podczas wykonywania programu. Aby zastosować te zmiany, należy zatrzymać wykonywanie i utworzyć nową wersję kodu.
@@ -35,7 +37,7 @@ Edytuj i Kontynuuj dla projektów C++ obsługuje większość typów zmian kodu.
 ## <a name="requirements"></a><a name="BKMK_Requirements"></a> Wymagania
 ### <a name="build-settings-project--properties"></a>Ustawienia kompilacji (właściwości > projektu):
   1. Język **C/C++ > ogólne > format informacji o debugowaniu**: programowej bazy danych do edycji i kontynuowania ( `/ZI` )
-  2. **Generowanie kodu w języku C/C++ > > Włącz minimalną**ponowną kompilację: tak ( `/Gm` )
+  2. **Generowanie kodu w języku C/C++ > > Włącz minimalną** ponowną kompilację: tak ( `/Gm` )
   3. **> łączący ogólne > Włącz konsolidację przyrostową**: tak ( `/INCREMENTAL` )
 
      Wszystkie niezgodne ustawienia konsolidatora (takie jak `/SAFESEH` , lub.. `/OPT:` .) powinny spowodować ostrzeżenia _LNK4075 narzędzi konsolidatora_ podczas kompilacji.  
@@ -116,10 +118,10 @@ Edytuj i Kontynuuj dla projektów C++ obsługuje większość typów zmian kodu.
 ### <a name="linker-options-that-disable-edit-and-continue"></a><a name="BKMK_Linker_options_that_disable_Edit_and_Continue"></a> Opcje konsolidatora, które wyłączają funkcję Edytuj i Kontynuuj
  Następujące opcje konsolidatora Wyłącz Edytuj i Kontynuuj:
 
-- Ustawienie **/OPT: ref**, **/OPT: ICF**lub **/Incremental: nie** wyłącza opcji Edytuj i Kontynuuj z następującym ostrzeżeniem:  
+- Ustawienie **/OPT: ref**, **/OPT: ICF** lub **/Incremental: nie** wyłącza opcji Edytuj i Kontynuuj z następującym ostrzeżeniem:  
      `LINK : warning LNK4075: ignoring /EDITANDCONTINUE due to /OPT specification`
 
-- Ustawienie **/Order**, **/Release**lub **/Force** wyłącza opcję Edytuj i Kontynuuj z następującym ostrzeżeniem:  
+- Ustawienie **/Order**, **/Release** lub **/Force** wyłącza opcję Edytuj i Kontynuuj z następującym ostrzeżeniem:  
      `LINK : warning LNK4075: ignoring /INCREMENTAL due to /option specification`
 
 - Ustawienie dowolnej opcji, która uniemożliwia tworzenie pliku bazy danych programu (. pdb) wyłącza polecenie Edytuj i Kontynuuj bez określonego ostrzeżenia.
@@ -161,7 +163,7 @@ Edytuj i Kontynuuj dla projektów C++ obsługuje większość typów zmian kodu.
  2. Uruchom następujące polecenie:  
      `VsRegEdit.exe set “C:\Program Files (x86)\Microsoft Visual Studio\[Version]\[YOUR EDITION]” HKCU Debugger NativeEncDiagnosticLoggingLevel DWORD 1`
 
- Ustawienie tej wartości na początku sesji debugowania powoduje, że różne składniki edytują i kontynuują Spew pełne rejestrowanie do **Output Window**  >  okienka**debugowania** okno dane wyjściowe.
+ Ustawienie tej wartości na początku sesji debugowania powoduje, że różne składniki edytują i kontynuują Spew pełne rejestrowanie do   >  okienka **debugowania** okno dane wyjściowe.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Edytuj i kontynuuj (C++)](../debugger/edit-and-continue-visual-cpp.md)
