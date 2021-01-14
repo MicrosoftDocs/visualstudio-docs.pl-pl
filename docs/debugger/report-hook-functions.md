@@ -1,5 +1,7 @@
 ---
 title: Raportowanie funkcji punktu zaczepienia | Microsoft Docs
+description: Przejrzyj funkcje punktu zaczepienia raportu w programie Visual Studio. Funkcja podłączania raportów zainstalowana przy użyciu _CrtSetReportHook jest wywoływana za każdym razem, gdy _CrtDbgReport generuje raport debugowania.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0bb14b47fb17c4d59089aafa123115b85ab9342
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8dea558d2f125c1e64f46bb4fbf738434eda2394
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72729869"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205622"
 ---
 # <a name="report-hook-functions"></a>Raportowanie funkcji punktów zaczepienia
 Funkcja podłączania raportów zainstalowana przy użyciu [_CrtSetReportHook](/cpp/c-runtime-library/reference/crtsetreporthook)jest wywoływana za każdym razem, gdy [_CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw) generuje raport debugowania. Można jej używać między innymi w przypadku filtrowania raportów, aby skoncentrować się na określonych typach alokacji. Funkcja punktu zaczepienia raportu powinna mieć prototyp podobny do następującego:
@@ -43,10 +45,10 @@ int YourReportHook(int nRptType, char *szMsg, int *retVal);
 typedef int (__cdecl *_CRT_REPORT_HOOK)(int, char *, int *);
 ```
 
- Gdy Biblioteka wykonawcza wywołuje funkcję Hook, argument *nRptType* zawiera kategorię raportu (**_CRT_WARN**, **_CRT_ERROR**lub **_CRT_ASSERT**), *szMsg* zawiera wskaźnik do w pełni zmontowany ciąg komunikatu raportu, a *retval* określa, czy `_CrtDbgReport` należy kontynuować normalne wykonywanie po wygenerowaniu raportu lub uruchomieniu debugera. (Wartość *retval* zero kontynuuje wykonywanie, A wartość 1 powoduje uruchomienie debugera).
+ Gdy Biblioteka wykonawcza wywołuje funkcję Hook, argument *nRptType* zawiera kategorię raportu (**_CRT_WARN**, **_CRT_ERROR** lub **_CRT_ASSERT**), *szMsg* zawiera wskaźnik do w pełni zmontowany ciąg komunikatu raportu, a *retval* określa, czy `_CrtDbgReport` należy kontynuować normalne wykonywanie po wygenerowaniu raportu lub uruchomieniu debugera. (Wartość *retval* zero kontynuuje wykonywanie, A wartość 1 powoduje uruchomienie debugera).
 
  Jeśli hak przechwytuje komunikat w całości, więc nie jest wymagane żadne dalsze raportowanie, należy zwrócić **wartość true**. Jeśli zwraca **wartość false**, `_CrtDbgReport` będzie zgłaszać komunikat w normalny sposób.
 
 ## <a name="see-also"></a>Zobacz też
-- [Pisanie debugowanie funkcji punktów zaczepienia](../debugger/debug-hook-function-writing.md)
+- [Zapisywanie funkcji punktu zaczepienia debugowania](../debugger/debug-hook-function-writing.md)
 - [Przykład crt_dbg2](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg2)

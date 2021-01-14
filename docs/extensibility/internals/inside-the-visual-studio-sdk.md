@@ -1,5 +1,7 @@
 ---
 title: W zestawie SDK programu Visual Studio | Microsoft Docs
+description: Poznaj rozszerzenia zestawu SDK programu Visual Studio, w tym architekturę, składniki, usługi, schematy i narzędzia programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e72020795bc3181e11f0f90eff580a2365d4000
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 73bbb1beb30677711b8b517262b48465e7529585
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707577"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205336"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Wewnątrz zestawu Visual Studio SDK
 
@@ -47,7 +49,7 @@ Ta sekcja zawiera szczegółowe informacje na temat rozszerzeń programu Visual 
  Aby uzyskać więcej informacji, zobacz [polecenia, menu i paski narzędzi](../../extensibility/internals/commands-menus-and-toolbars.md).
 
 ## <a name="menus-and-toolbars"></a>Menu i paski narzędzi
- Menu i paski narzędzi umożliwiają użytkownikom Wywoływanie poleceń. Menu są wierszami lub kolumnami poleceń, które są zwykle wyświetlane jako pojedyncze elementy tekstowe w górnej części okna narzędzi. Podmenu są menu pomocnicze, które są wyświetlane, gdy użytkownik kliknie polecenia, które zawierają małą strzałkę. Menu kontekstowe pojawiają się, gdy użytkownik kliknie prawym przyciskiem myszy niektóre elementy interfejsu użytkownika. Niektóre typowe nazwy menu to **plik**, **Edycja**, **Widok**i **okno**. Aby uzyskać więcej informacji, zobacz [rozszerzanie menu i poleceń](../../extensibility/extending-menus-and-commands.md).
+ Menu i paski narzędzi umożliwiają użytkownikom Wywoływanie poleceń. Menu są wierszami lub kolumnami poleceń, które są zwykle wyświetlane jako pojedyncze elementy tekstowe w górnej części okna narzędzi. Podmenu są menu pomocnicze, które są wyświetlane, gdy użytkownik kliknie polecenia, które zawierają małą strzałkę. Menu kontekstowe pojawiają się, gdy użytkownik kliknie prawym przyciskiem myszy niektóre elementy interfejsu użytkownika. Niektóre typowe nazwy menu to **plik**, **Edycja**, **Widok** i **okno**. Aby uzyskać więcej informacji, zobacz [rozszerzanie menu i poleceń](../../extensibility/extending-menus-and-commands.md).
 
  Paski narzędzi to wiersze lub kolumny przycisków oraz inne kontrolki, takie jak pola kombi, pola listy i pola tekstowe. Przyciski paska narzędzi zwykle mają obrazy ikon, takie jak ikona folderu dla polecenia **Otwórz plik** lub drukarka dla polecenia **Print** . Wszystkie elementy paska narzędzi są skojarzone z poleceniami. Po kliknięciu przycisku paska narzędzi zostanie uruchomione jego skojarzone polecenie. W przypadku kontrolki rozwijanej każdy element na liście rozwijanej jest skojarzony z innym poleceniem. Niektóre kontrolki paska narzędzi, takie jak kontrolka rozdzielacza, są hybrydowe. Jedna strona kontrolki jest przyciskiem paska narzędzi, a druga strona jest strzałką w dół, która wyświetla kilka poleceń po kliknięciu.
 

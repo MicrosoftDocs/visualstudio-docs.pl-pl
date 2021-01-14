@@ -1,6 +1,7 @@
 ---
 title: Ustawienia projektu dla konfiguracji debugowania w języku C# | Microsoft Docs
-ms.custom: seodec18
+description: Dowiedz się, jak zmienić ustawienia projektu dla konfiguracji debugowania w języku C# w programie Visual Studio, korzystając z karty debugowanie i karty kompilacja na stronach właściwości projektu.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/21/2018
 ms.topic: reference
 dev_langs:
@@ -21,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a5108e195e5df245c72436752316e8ee91781e7d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 262e46436f1391ae21df0ccdd3ca308eecb347da
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62904065"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205570"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>Ustawienia projektu dla konfiguracji debugowania w języku C#
 
@@ -43,7 +44,7 @@ Aby uzyskać więcej informacji, zobacz [debugowanie i wydawanie konfiguracji](h
 
 |Ustawienie|Opis|
 |-------------------------------------| - |
-| **Konfiguracja** | Ustawia tryb tworzenia aplikacji. Wybierz pozycję **aktywne (Debuguj)**, **Debuguj**, **wydawanie**lub **wszystkie konfiguracje** z listy rozwijanej. |
+| **Konfiguracja** | Ustawia tryb tworzenia aplikacji. Wybierz pozycję **aktywne (Debuguj)**, **Debuguj**, **wydawanie** lub **wszystkie konfiguracje** z listy rozwijanej. |
 | **Uruchom akcję** | Określa akcję w przypadku wybrania opcji **Rozpocznij** w konfiguracji debugowania.<br />- **Początkowy projekt** jest domyślnie i uruchamia projekt startowy na potrzeby debugowania. Aby uzyskać więcej informacji, zobacz [Wybierz projekt startowy](/previous-versions/visualstudio/visual-studio-2010/0s590bew(v=vs.100)).<br />- **Uruchom program zewnętrzny** i dołącza do aplikacji, która nie jest częścią [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu. Aby uzyskać więcej informacji, zobacz [dołączanie do uruchomionych procesów z debugerem](attach-to-running-processes-with-the-visual-studio-debugger.md).<br />- **Polecenie Uruchom przeglądarkę z adresem URL** umożliwia debugowanie aplikacji sieci Web. |
 | **Opcje uruchamiania**  >  **Argumenty wiersza polecenia** | Określa argumenty wiersza polecenia dla debugowanej aplikacji. Nazwa polecenia to nazwa aplikacji określona w **początkowym programie zewnętrznym**. |
 | **Opcje uruchamiania**  >  **Katalog roboczy** | Określa katalog roboczy debugowanej aplikacji. W języku C# katalog roboczy jest domyślnie *\bin\debug* .

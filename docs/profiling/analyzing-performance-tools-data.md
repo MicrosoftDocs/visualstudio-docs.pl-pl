@@ -1,5 +1,7 @@
 ---
 title: Analizowanie danych narzędzi wydajności | Microsoft Docs
+description: Dowiedz się więcej o raportach i widokach wydajności, które zapewnia program Visual Studio narzędzia profilowania do analizowania problemów z wydajnością.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 90752fd8e34769530f1b95dd439a46c71fe985a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7f11873a3e101c0c37d327d6869ee63fe48f5f42
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779834"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205349"
 ---
 # <a name="analyze-performance-tools-data"></a>Analizowanie danych dotyczących narzędzi do oceny wydajności
 Raporty wydajności [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania umożliwiają wyświetlanie i analizowanie problemów z wydajnością aplikacji. Ta sekcja zawiera omówienie raportów i widoków wydajności, których można użyć do sprawdzenia danych wydajności.

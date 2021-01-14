@@ -1,8 +1,10 @@
 ---
 title: Debugowanie zdalne | Microsoft Docs
+description: Debuguj aplikację Visual Studio, która została wdrożona na innym komputerze przy użyciu zdalnego debugera programu Visual Studio.
 ms.custom:
 - remotedebugging
 - seodec18
+- SEO-VS-2020
 ms.date: 07/02/2018
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8051b83e0022361e4cb1cb61602dfcf8991062e
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: e97fd8979235f8ea89b43c6466b3119debe5b3ca
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "92298679"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205674"
 ---
 # <a name="remote-debugging"></a>Debugowanie zdalne
 Można debugować aplikację Visual Studio, która została wdrożona na innym komputerze. W tym celu należy użyć zdalnego debugera programu Visual Studio.
@@ -93,7 +95,7 @@ Niektóre aspekty konfiguracji zdalnego debugera można zmienić po jego po raz 
      > [!IMPORTANT]
      > Zdalny debuger można uruchomić w ramach konta użytkownika, które różni się od konta użytkownika używanego na komputerze z programem Visual Studio, ale należy dodać inne konto użytkownika do uprawnień zdalnego debugera.
 
-     Alternatywnie można uruchomić zdalny debuger z wiersza polecenia z parametrem ** \<username> /Allow** : **msvsmon/Allow \<username@computer> **.
+     Alternatywnie można uruchomić zdalny debuger z wiersza polecenia z parametrem **\<username> /Allow** : **msvsmon/Allow \<username@computer>**.
 
 - Jeśli trzeba zmienić tryb uwierzytelniania lub numer portu lub określić wartość limitu czasu dla narzędzi zdalnych: Wybierz **narzędzia > opcje**.
 
@@ -115,11 +117,11 @@ W przypadku debugowania w ASP.NET i innych środowiskach serwerów należy uruch
 
 4. Dodaj nazwę konta użytkownika i hasło.
 
-    Może być konieczne dodanie do tego konta uprawnienia **Zaloguj się jako użytkownik usługi** ( **zasady zabezpieczeń lokalnych** (secpol. msc) na stronie lub w oknie **startowym** (lub w wierszu polecenia) **secpol** . Po wyświetleniu okna kliknij dwukrotnie pozycję **Przypisywanie praw użytkownika**, a następnie znajdź opcję **Zaloguj się jako usługa** w okienku po prawej stronie. Kliknij go dwukrotnie. Dodaj konto użytkownika do okna **Właściwości** , a następnie kliknij przycisk **OK**. Kliknij przycisk **Dalej**.
+    Może być konieczne dodanie do tego konta uprawnienia **Zaloguj się jako użytkownik usługi** ( **zasady zabezpieczeń lokalnych** (secpol. msc) na stronie lub w oknie **startowym** (lub w wierszu polecenia)  . Po wyświetleniu okna kliknij dwukrotnie pozycję **Przypisywanie praw użytkownika**, a następnie znajdź opcję **Zaloguj się jako usługa** w okienku po prawej stronie. Kliknij go dwukrotnie. Dodaj konto użytkownika do okna **Właściwości** , a następnie kliknij przycisk **OK**. Kliknij przycisk **Dalej**.
 
 5. Wybierz typ sieci, z którą mają się komunikować narzędzia zdalne. Należy wybrać co najmniej jeden typ sieci. Jeśli komputery są połączone za pomocą domeny, należy wybrać pierwszy element. Jeśli komputery są połączone przez grupę roboczą lub grupę domową, należy wybrać drugą lub trzecią pozycję. Kliknij przycisk **Dalej**.
 
-6. Jeśli usługa może zostać uruchomiona, zostanie wyświetlony **Kreator konfiguracji zdalny debuger programu Visual Studio, który pomyślnie ukończył**pracę. Jeśli nie można uruchomić usługi, **nie można ukończyć pracy Kreatora konfiguracji zdalny debuger programu Visual Studio**. Na stronie znajdują się również porady, które należy wykonać, aby rozpocząć pracę usługi.
+6. Jeśli usługa może zostać uruchomiona, zostanie wyświetlony **Kreator konfiguracji zdalny debuger programu Visual Studio, który pomyślnie ukończył** pracę. Jeśli nie można uruchomić usługi, **nie można ukończyć pracy Kreatora konfiguracji zdalny debuger programu Visual Studio**. Na stronie znajdują się również porady, które należy wykonać, aby rozpocząć pracę usługi.
 
 7. Kliknij przycisk **Finish** (Zakończ).
 
@@ -135,6 +137,6 @@ W przypadku debugowania w ASP.NET i innych środowiskach serwerów należy uruch
 
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)
 - [Konfigurowanie zapory systemu Windows na potrzeby debugowania zdalnego](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
-- [Przypisania portów debugera zdalnego](../debugger/remote-debugger-port-assignments.md)
+- [Przypisania portów zdalnego debugera](../debugger/remote-debugger-port-assignments.md)
 - [Zdalne debugowanie ASP.NET Core na zdalnym komputerze IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)
-- [Błędy związane z debugowaniem zdalnym i rozwiązywanie problemów](../debugger/remote-debugging-errors-and-troubleshooting.md)
+- [Błędy debugowania zdalnego i rozwiązywanie problemów](../debugger/remote-debugging-errors-and-troubleshooting.md)

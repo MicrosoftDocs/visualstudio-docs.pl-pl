@@ -1,5 +1,7 @@
 ---
 title: Karta okna, okno dialogowe Opcje komunikatów | Microsoft Docs
+description: Karta Windows z opcjami komunikatów umożliwia określenie, które okna mają być wyświetlane. Zobacz ten artykuł, aby zapoznać się z opisami ustawień.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f60201bacd928b4744795e644cb1d9e5de55b75
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 320a31afcbe4d99518ce92002e8e2733fded9164
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62929170"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205414"
 ---
 # <a name="windows-tab-message-options-dialog-box"></a>Karta Okna, okno dialogowe opcji komunikatów
 Użyj karty **Windows** , aby ustawić zakres komunikatów wymienionych w [widoku komunikaty](../debugger/messages-view.md). Aby wyświetlić okno [dialogowe Opcje wiadomości](../debugger/message-options-dialog-box.md), wybierz pozycję **komunikaty dziennika** z menu **Spy** .

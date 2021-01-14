@@ -1,5 +1,7 @@
 ---
 title: Manifest from Resources | Microsoft Docs
+description: Dowiedz się, jak za pomocą narzędzia Manifest from Resources dodawać pliki PNG lub XAML do pliku imagemanifest do użycia z usługą obrazów programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ea5931c77e267bc6065693be1ae144c250ce6df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52eee4fa826d92e7de389627a3d7a2afddcc9156
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536231"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204504"
 ---
 # <a name="manifest-from-resources"></a>Manifest from Resources
 Narzędzie Manifest from Resources to Aplikacja konsolowa, która pobiera listę zasobów obrazów (plików PNG lub XAML) i generuje plik. imagemanifest, który umożliwia korzystanie z tych obrazów w usłudze obrazów programu Visual Studio. Ponadto to narzędzie może służyć do dodawania obrazów do istniejącej imagemanifest. To narzędzie jest przydatne do dodawania obsługi dużych rozdzielczości DPI i dla obrazów do rozszerzenia programu Visual Studio. Wygenerowany plik imagemanifest powinien być dołączony do programu i wdrożony jako część rozszerzenia programu Visual Studio (VSIX).

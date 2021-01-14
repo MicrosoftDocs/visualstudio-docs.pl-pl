@@ -1,5 +1,7 @@
 ---
 title: Wersja podstawowa usługi językowej | Microsoft Docs
+description: Poznaj podstawowe funkcje dostępne w starszych usługach językowych, które umożliwiają integrację języka programowania z programem Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 501bccf755293e86e8a9dc23fce125a10c882376
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffa21b619ef17be3fa649732a2b6e3bcd700dda6
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707424"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205154"
 ---
 # <a name="legacy-language-service-essentials"></a>Podstawowe informacje dotyczące starszej wersji usługi językowej
 Musisz podać usługę językową, aby zintegrować język programowania w programie Visual Studio. W tym temacie opisano funkcje dostępne w starszych usługach językowych.
@@ -44,5 +46,5 @@ Musisz podać usługę językową, aby zintegrować język programowania w progr
 
 | Cechy | Opis |
 |-----------------------| - |
-| Ocenianie wyrażeń | Obsługuje [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debuger, sprawdzając poprawność punktów przerwania i dostarczając listę wyrażeń, które mają być wyświetlane **Autos** w oknie Debugowanie.<br /><br /> Aby uzyskać więcej informacji, zobacz [Obsługa języka na potrzeby debugowania](../../extensibility/internals/language-service-support-for-debugging.md). |
-| Narzędzia do przeglądania symboli | Obsługuje **Przeglądarka obiektów**, **Widok klasy**, **przeglądarka wywołań**i **Znajdź wyniki symboli**. |
+| Ocenianie wyrażeń | Obsługuje [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debuger, sprawdzając poprawność punktów przerwania i dostarczając listę wyrażeń, które mają być wyświetlane  w oknie Debugowanie.<br /><br /> Aby uzyskać więcej informacji, zobacz [Obsługa języka na potrzeby debugowania](../../extensibility/internals/language-service-support-for-debugging.md). |
+| Narzędzia do przeglądania symboli | Obsługuje **Przeglądarka obiektów**, **Widok klasy**, **przeglądarka wywołań** i **Znajdź wyniki symboli**. |

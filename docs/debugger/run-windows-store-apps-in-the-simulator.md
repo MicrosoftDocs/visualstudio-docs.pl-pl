@@ -1,5 +1,7 @@
 ---
 title: Uruchom aplikacje platformy UWP w symulatorze | Microsoft Docs
+description: Dowiedz się, jak uruchamiać aplikacje platforma uniwersalna systemu Windows (platformy UWP) w symulatorze programu Visual Studio, który jest aplikacją klasyczną, która symuluje aplikację platformy UWP.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 9b46abc4d22ddfdc551669d3bcd4cba5acf7cce4
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 12d2fed62e1a4762c9b92304ff1acfe8374ab976
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599520"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205635"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Uruchamianie aplikacji platformy UWP w symulatorze
 
@@ -96,7 +98,7 @@ Przycisk **Obróć emulacji dotykowej** ustawia tryb interakcji, aby obracał ge
 ## <a name="change-the-simulated-screen-size-and-resolution"></a><a name="BKMK_Change_the_simulated_screen_size_and_resolution"></a> Zmiana rozmiaru i rozdzielczości ekranu symulowanego
  Aby zmienić rozmiar symulowanego ekranu i rozdzielczość, wybierz przycisk **Zmień rozdzielczość** na palecie, a następnie wybierz nowy rozmiar i rozdzielczość z listy.
 
- Rozmiar i rozdzielczość ekranu są wyświetlane jako *Szerokość ekranu, Szerokość pikseli (* w pikselach). Należy zauważyć, że zarówno rozmiar ekranu, jak i rozdzielczość są symulowane. Lokalizacje współrzędnych w symulatorze są tłumaczone na wybrane rozmiary i rozdzielczość urządzenia.
+ Rozmiar i rozdzielczość ekranu są wyświetlane jako *Szerokość ekranu, Szerokość pikseli (* w pikselach). Należy zauważyć, że zarówno rozmiar ekranu, jak i rozdzielczość są symulowane. Współrzędne lokalizacji w symulatorze są tłumaczone na wybrane rozmiary i rozdzielczość urządzenia.
 
 > [!NOTE]
 > Możesz zapisywać skalowane wersje obrazów mapy bitowej w aplikacji, a system Windows załaduje prawidłowy obraz dla bieżącej skali. Aby uzyskać więcej informacji, zobacz [projektowanie i wprowadzenie do interfejsu użytkownika](/windows/uwp/layout/design-and-ui-intro). Jednakże w przypadku zmiany rozdzielczości symulatora tak, aby system Windows pobierał inny obraz w celu dopasowania go do rozdzielczości, należy zatrzymać i ponownie uruchomić sesję debugowania, aby wyświetlić nowy obraz.

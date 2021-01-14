@@ -1,5 +1,7 @@
 ---
 title: Starsze interfejsy usługi językowej | Microsoft Docs
+description: Dowiedz się więcej o interfejsach dostępnych w zestawie SDK programu Visual Studio, które udostępniają starsze funkcje usługi językowej.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89d80d6961f5eaf91721567ccb0efa73bbe31406
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cb694389bbf6f913db084dca29f7787c6283d3ad
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707384"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205032"
 ---
 # <a name="legacy-language-service-interfaces"></a>Interfejsy starszej wersji usługi językowej
 W przypadku każdego określonego języka programowania w danym momencie może istnieć tylko jedno wystąpienie usługi językowej. Jednak pojedyncza usługa języka może obsłużyć więcej niż jeden edytor.

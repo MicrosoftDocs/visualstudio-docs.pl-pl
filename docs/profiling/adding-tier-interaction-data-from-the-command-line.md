@@ -1,5 +1,7 @@
 ---
 title: Dodawanie danych interakcji między warstwami z wiersza polecenia | Microsoft Docs
+description: W przypadku aplikacji wielowarstwowych, które komunikują się z co najmniej jedną bazą danych, należy zastosować profilowanie interakcji między warstwami dla wywołań synchronicznych.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 20b8438243382b28cccb510894d1674aa5872946
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5e3dc7fc3ebbb3d06e85f7322237ecb72b22b0e
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779873"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205544"
 ---
 # <a name="add-tier-interaction-data-from-the-command-line"></a>Dodawanie danych o interakcji między warstwami za pośrednictwem wiersza polecenia
 
@@ -32,7 +34,7 @@ Profilowanie interakcji między warstwami można zbierać przy użyciu dowolnej 
 
 **Zbieranie danych TIP na komputerze zdalnym**
 
-Aby zebrać dane dotyczące interakcji warstwy na komputerze zdalnym, należy skopiować plik **vs_profiler \_ ** _\<Platform>_ **\_** _\<Language>_ **. exe** z folderu _% VSInstallDir%_**\Team Tools\Performance Tools\Setups** maszyny programu Visual Studio na komputerze zdalnym i zainstalować go. Nie można używać narzędzi profilowania w pakiecie pobierania [debugowania zdalnego](../debugger/remote-debugging.md) .
+Aby zebrać dane dotyczące interakcji warstwy na komputerze zdalnym, należy skopiować plik **vs_profiler \_** _\<Platform>_ **\_** _\<Language>_ **. exe** z folderu _% VSInstallDir%_**\Team Tools\Performance Tools\Setups** maszyny programu Visual Studio na komputerze zdalnym i zainstalować go. Nie można używać narzędzi profilowania w pakiecie pobierania [debugowania zdalnego](../debugger/remote-debugging.md) .
 
 **Raporty TIP**
 

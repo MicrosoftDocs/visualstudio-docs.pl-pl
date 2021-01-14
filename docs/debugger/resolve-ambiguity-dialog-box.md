@@ -1,5 +1,7 @@
 ---
 title: Okno dialogowe Rozwiązywanie niejednoznaczności | Microsoft Docs
+description: Przejrzyj okno dialogowe Rozwiązywanie niejednoznaczności programu Visual Studio, które jest wyświetlane, gdy debuger nie może wybrać lokalizacji do wyświetlenia.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4257fd213d6401de381e25c74c126b8468b76057
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c6f7156a43bc8c5c60415680b4380600e9e695cc
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72729841"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205609"
 ---
 # <a name="resolve-ambiguity-dialog-box"></a>Rozwiązywania niejednoznaczności — Okno dialogowe
 Okno `Resolve Ambiguity` dialogowe pojawia się, gdy debuger nie może wybrać lokalizacji do wyświetlenia. Na przykład jeśli używasz szablonów języka C++, możesz utworzyć wiele funkcji z jednego szablonu funkcji. Jeśli debuger zostanie zatrzymany w lokalizacji źródłowej w szablonie, a Ty wybierzesz `Go To Disassembly` , debuger będzie miał wiele opcji. Każda funkcja utworzona na podstawie szablonu ma swój własny kod demontażu, a debuger nie wie, który kod chcesz wyświetlić. Okno `Resolve Ambiguity` dialogowe umożliwia wybranie wybranej lokalizacji z listy wszystkich odpowiednich lokalizacji.

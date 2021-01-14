@@ -1,5 +1,7 @@
 ---
 title: Debugowanie kodu HTML i CSS w aplikacjach platformy UWP | Microsoft Docs
+description: Dowiedz się, jak debugować pliki HTML i CSS w aplikacjach platforma uniwersalna systemu Windows (platformy UWP) w programie Visual Studio. Funkcje debugowania JavaScript są obsługiwane w przypadku aplikacji platformy UWP.
+ms.custom: SEO-VS-2020
 ms.date: 07/17/2018
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 5e270956fc6c8f1d7432cb65e1eaf37fdc58907c
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: fafab7a2cbf660987de0365549aaa823a4e3445d
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211092"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205479"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Debugowanie kodu HTML i CSS w aplikacjach platformy UWP w programie Visual Studio
 
@@ -49,7 +51,7 @@ DOM Explorer można użyć do:
   Podczas debugowania aplikacji często trzeba wybrać elementy w DOM Explorer. Po wybraniu elementu wartości, które pojawiają się na kartach po prawej stronie DOM Explorer są automatycznie aktualizowane w celu odzwierciedlenia zaznaczonego elementu w DOM Explorer. Oto karty: **Style**, **obliczone**, **Układ**. Aplikacje platformy UWP obsługują również karty **zdarzenia** i **zmiany** . Aby uzyskać więcej informacji na temat wybierania elementów, zobacz [Wybieranie elementów](#SelectingElements).
 
 > [!TIP]
-> Jeśli okno dom Explorer jest zamknięte, wybierz **Debuguj** > **Windows**  >  **dom Explorer** Windows, aby je ponownie otworzyć. Okno pojawia się tylko podczas sesji debugowania skryptu.
+> Jeśli okno dom Explorer jest zamknięte, wybierz **Debuguj** >   >  **dom Explorer** Windows, aby je ponownie otworzyć. Okno pojawia się tylko podczas sesji debugowania skryptu.
 
 W poniższej procedurze przejdziemy do interaktywnego debugowania aplikacji przy użyciu DOM Explorer. Utworzymy aplikację, która używa `FlipView` kontrolki, a następnie ją debuguje. Aplikacja zawiera kilka błędów.
 
@@ -149,7 +151,7 @@ W poniższej procedurze przejdziemy do interaktywnego debugowania aplikacji przy
 
     ![Wybierz listę obiektów docelowych debugowania](../debugger/media/js_select_target.png "JS_Select_Target")
 
-8. Wybierz **Debuguj**  >  **Rozpocznij debugowanie**lub naciśnij klawisz F5, aby uruchomić aplikację w trybie debugowania.
+8. Wybierz **Debuguj**  >  **Rozpocznij debugowanie** lub naciśnij klawisz F5, aby uruchomić aplikację w trybie debugowania.
 
     Spowoduje to uruchomienie aplikacji, ale widzisz na większości pusty ekran, ponieważ styl zawiera kilka błędów. Pierwszy `FlipView` obraz jest wyświetlany w małym kwadracie obok środka ekranu.
 
@@ -182,7 +184,7 @@ W poniższej procedurze przejdziemy do interaktywnego debugowania aplikacji przy
 14. W oknie głównym kliknij dwukrotnie, `width: 100px;height: 100px;` naciśnij klawisz **delete** , a następnie naciśnij klawisz **Enter**. Po naciśnięciu klawisza ENTER nowe wartości zostaną natychmiast odzwierciedlone w aplikacji, mimo że sesja debugowania nie została zatrzymana.
 
     > [!IMPORTANT]
-    > Jak można aktualizować atrybuty w oknie DOM Explorer, można także aktualizować wartości, które są wyświetlane na kartach **Style**, **obliczone**i **Układ** .
+    > Jak można aktualizować atrybuty w oknie DOM Explorer, można także aktualizować wartości, które są wyświetlane na kartach **Style**, **obliczone** i **Układ** .
 
 15. Przejdź do aplikacji, wybierając ją lub używając kombinacji klawiszy Alt + Tab.
 
@@ -243,9 +245,9 @@ W przypadku debugowania aplikacji można wybrać elementy DOM na trzy sposoby:
 
   ![Przycisk wyboru elementu w DOM Explorer](../debugger/media/js_dom_select_element_button.png "JS_DOM_Select_Element_Button")
 
-  Po kliknięciu przycisku **Wybierz element** (lub naciśnięciu kombinacji klawiszy CTRL + B) spowoduje to zmianę trybu zaznaczania, aby można było wybrać element w Dom Explorer, klikając go w działającej aplikacji. Tryb zmieni się z powrotem na normalny tryb zaznaczenia po pojedynczym kliknięciu. Po kliknięciu pozycji **Wybierz element**aplikacja zostanie przełączona na pierwszy plan, a kursor zmieni się w celu odzwierciedlenia nowego trybu zaznaczania. Po kliknięciu elementu konturowego DOM Explorer powraca do pierwszego planu z wybranym elementem.
+  Po kliknięciu przycisku **Wybierz element** (lub naciśnięciu kombinacji klawiszy CTRL + B) spowoduje to zmianę trybu zaznaczania, aby można było wybrać element w Dom Explorer, klikając go w działającej aplikacji. Tryb zmieni się z powrotem na normalny tryb zaznaczenia po pojedynczym kliknięciu. Po kliknięciu pozycji **Wybierz element** aplikacja zostanie przełączona na pierwszy plan, a kursor zmieni się w celu odzwierciedlenia nowego trybu zaznaczania. Po kliknięciu elementu konturowego DOM Explorer powraca do pierwszego planu z wybranym elementem.
 
-  Przed wybraniem opcji **Wybierz element**można określić, czy elementy w działającej aplikacji mają być wyróżniać, przełączając przycisk **Wyświetl wyróżnione strony sieci Web** . Na poniższej ilustracji przedstawiono ten przycisk. Najważniejsze są wyświetlane domyślnie.
+  Przed wybraniem opcji **Wybierz element** można określić, czy elementy w działającej aplikacji mają być wyróżniać, przełączając przycisk **Wyświetl wyróżnione strony sieci Web** . Na poniższej ilustracji przedstawiono ten przycisk. Najważniejsze są wyświetlane domyślnie.
 
   ![Przycisk wyświetlania podświetlenia strony sieci Web](../debugger/media/js_dom_display_highlights_button.png "JS_DOM_Display_Highlights_Button")
 

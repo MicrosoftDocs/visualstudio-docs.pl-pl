@@ -1,5 +1,7 @@
 ---
 title: Przechwycenie poleceń starszej wersji usługi językowej | Microsoft Docs
+description: Dowiedz się, jak używać filtrów poleceń w programie Visual Studio, aby przechwycić starsze polecenia usługi językowej i dodać zachowanie specyficzne dla języka.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5206bced8b4bfae32498434765e5c3f61801b386
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b67ffab5935b0e52ee6c403f2e38e7bbafab2d06
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707448"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205193"
 ---
 # <a name="intercepting-legacy-language-service-commands"></a>Przechwytywanie poleceń starszej wersji usługi językowej
 Za pomocą programu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] możesz mieć polecenia przechwycenia usługi językowej, które w przeciwnym razie mógłby obsłużyć widok tekstu. Jest to przydatne w przypadku zachowania specyficznego dla języka, które nie jest zarządzane przez widok tekstu. Te polecenia można przechwycić, dodając jeden lub więcej filtrów poleceń do widoku tekstu z usługi językowej.

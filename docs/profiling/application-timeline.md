@@ -1,6 +1,7 @@
 ---
 title: Analizowanie użycia zasobów w aplikacjach XAML
-ms.custom: seodec18
+description: Użyj profilera Oś czasu aplikacji, aby znaleźć problemy z wydajnością w aplikacjach XAML. Można analizować czas spędzony na różnych zadaniach w różnych scenariuszach.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/01/2018
 ms.topic: conceptual
 ms.assetid: df7d854b-0a28-45a9-8a64-c015a4327701
@@ -9,18 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 6d7f3d943d621708efab8df1e2f69402a0c5f26c
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 8fc482e10ae1ca08230feb38eb2997d0c4dcab00
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038351"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205739"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analizowanie użycia zasobów i działania wątku interfejsu użytkownika (XAML)
 
 Użyj profilera **oś czasu aplikacji** , aby znaleźć i rozwiązać problemy z wydajnością związane z interakcją aplikacji w aplikacjach XAML. To narzędzie pomaga ulepszyć wydajność aplikacji XAML, pokazując szczegółowy widok użycia zasobów aplikacji. Można analizować czas spędzony przez aplikację przygotowującą ramki interfejsu użytkownika (układ i renderowanie), obsługiwać żądania sieci i dysku, a także w scenariuszach takich jak uruchamianie aplikacji, ładowanie stron i zmiana rozmiaru systemu Windows.
 
-**Oś czasu aplikacji** jest jednym z narzędzi, które można uruchomić przy użyciu **Debug**  >  **profilera wydajności** debugowania.
+**Oś czasu aplikacji** jest jednym z narzędzi, które można uruchomić przy użyciu   >  **profilera wydajności** debugowania.
 
 To narzędzie zastępuje narzędzie czasu **odpowiedzi interfejsu użytkownika XAML** , które było częścią zestawu narzędzi diagnostycznych dla Visual Studio 2013.
 
@@ -123,7 +124,7 @@ Pasek narzędzi **szczegóły osi czasu** umożliwia sortowanie, filtrowanie i o
 |![Filtruj listę szczegółów osi czasu](../profiling/media/timeline_filter.png "TIMELINE_Filter")|Filtruje listę według wybranych kategorii i długości zdarzeń.|
 |![Dostosuj informacje szczegółowe dotyczące osi czasu](../profiling/media/timeline_viewsettings.png "TIMELINE_ViewSettings")|Umożliwia określenie adnotacji do zdarzeń.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Blog zespołu WPF: nowe narzędzie do analizy wydajności interfejsu użytkownika dla aplikacji WPF](/archive/blogs/wpf/new-ui-performance-analysis-tool-for-wpf-applications)
 - [Najlepsze rozwiązania w zakresie wydajności dla aplikacji platformy UWP przy użyciu języków C++, C# i Visual Basic](/previous-versions/windows/apps/hh750313\(v\=win.10\))

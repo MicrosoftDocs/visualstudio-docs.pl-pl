@@ -1,5 +1,7 @@
 ---
 title: Pseudozmiennych pokazanych | Microsoft Docs
+description: Przejrzyj pseudozmiennych pokazanych w debugerze programu Visual Studio. Pseudozmiennych pokazanych są terminami używanymi do wyświetlania określonych danych w oknie zmiennych lub oknie dialogowym QuickWatch.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5b0369a30e69fc69782bbc4a0f5b0c4518cac07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c5a76bf799eabd29b778c2dec867cc7e50aa45ee
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75776088"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205531"
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Pseudozmiennych pokazanych w debugerze programu Visual Studio
 Pseudozmiennych pokazanych są terminami używanymi do wyświetlania pewnych informacji w oknie zmiennych lub oknie dialogowym **QuickWatch** . Możesz wprowadzić pseudozmienna w taki sam sposób, jak w przypadku wprowadzenia zmiennej normalnej. Pseudozmiennych pokazanych nie są zmienne, ale nie odpowiadają nazwom zmiennych w programie.
@@ -64,7 +66,7 @@ Pseudozmiennych pokazanych są terminami używanymi do wyświetlania pewnych inf
 |`$exception`|Wyświetla informacje o ostatnim wyjątku. Jeśli nie wystąpił żaden wyjątek, Ocena `$exception` wyświetla komunikat o błędzie.|
 |`$delete` lub `$$delete`|Usuwa zmienną niejawną, która została utworzona w oknie **bezpośrednim** . Składnia jest `$delete,` *zmienna* lub `$delete,` *zmienna*`.`|
 |`$objectids` lub `$listobjectids`|Wyświetla wszystkie aktywne identyfikatory obiektów jako elementy podrzędne określonego wyrażenia. Składnia jest `$objectid,` *wyrażeniem* lub `$listobjectids,` *wyrażeniem*`.`|
-|`$` *N* `#`|Wyświetla obiekt z IDENTYFIKATORem obiektu równy *N*.|
+|`$`*N*`#`|Wyświetla obiekt z IDENTYFIKATORem obiektu równy *N*.|
 |`$dynamic`|Wyświetla specjalny węzeł **widoku dynamicznego** dla obiektu, który implementuje `IDynamicMetaObjectProvider` . Interfejsu. Składnia jest `$dynamic,` *obiektem*. Ta funkcja ma zastosowanie tylko do kodu, który używa .NET Framework w wersji 4 lub nowszej.|
 
 ## <a name="see-also"></a>Zobacz też

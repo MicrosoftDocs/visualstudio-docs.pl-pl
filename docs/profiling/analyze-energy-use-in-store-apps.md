@@ -1,5 +1,7 @@
 ---
 title: Analizowanie zużycia energii w aplikacjach platformy UWP | Microsoft Docs
+description: Użyj profilera zużycia energii w programie Visual Studio, aby analizować zapotrzebowanie na energię i moc aplikacji platformy UWP działających na urządzeniach zasilanych z baterii.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ manager: jillfra
 ms.workload:
 - uwp
 monikerRange: vs-2017
-ms.openlocfilehash: 2945ef9879e83567f37ebe410ba9f265bfd64760
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: cf55035ba5a05917334b2192067a3273f4930775
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90075460"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205791"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analizowanie zużycia energii w aplikacjach platformy UWP
 
@@ -40,7 +42,7 @@ Profiler Zużycie energii używa następujących definicji *zasilania* i *energi
 
    Należy zauważyć, że moc jest stosunkiem, więc ma kierunek (praca w danym czasie może wzrosnąć lub zmaleć) i szybkość (ilość, o jaką praca rośnie lub maleje).
 
-- *Energia energetyczna* mierzy całkowitą ilość mocy, jako pojemność lub potencjał, jak zużywa moc baterii lub łączną ilość mocy zużywanej w danym okresie czasu. Jednostką energii jest watogodzina, czyli moc jednego wata stosowana równomiernie przez jedną godzinę. W **podsumowaniu energii**jednostki są wyświetlane jako miliwatogodziny-hours **MW-h**.
+- *Energia energetyczna* mierzy całkowitą ilość mocy, jako pojemność lub potencjał, jak zużywa moc baterii lub łączną ilość mocy zużywanej w danym okresie czasu. Jednostką energii jest watogodzina, czyli moc jednego wata stosowana równomiernie przez jedną godzinę. W **podsumowaniu energii** jednostki są wyświetlane jako miliwatogodziny-hours **MW-h**.
 
 ![Pojemność energii, użyte zużycie energii, Łączna liczba użytych energii](../profiling/media/energyprof_capcitypowerused.png)
 
@@ -124,9 +126,9 @@ if (performance && performance.mark) {
 
  ![Strona raportu profilera energii](../profiling/media/energyprof_all.png "ENERGYPROF_All")
 
-|Obraz|Opis|
+|Image (Obraz)|Opis|
 |-|-|
-|![Krok 1](../profiling/media/procguid_1.png "ProcGuid_1")|Plik raportu ma nazwę Report*RRRRMMDD-hhmm*. diagsession. Jeśli zechcesz zapisać raport, możesz zmienić jego nazwę.|
+|![Krok 1](../profiling/media/procguid_1.png "ProcGuid_1")|Plik raportu ma nazwę Report *RRRRMMDD-hhmm*. diagsession. Jeśli zechcesz zapisać raport, możesz zmienić jego nazwę.|
 |![Krok 2](../profiling/media/procguid_2.png "ProcGuid_2")|Na osi czasu są widoczne długość sesji profilowania, zdarzenia aktywacji cyklu życia aplikacji i znaczniki użytkownika.|
 |![Krok 3](../profiling/media/procguid_3.png "ProcGuid_3")|Raport można ograniczyć do części osi czasu, przeciągając niebieskie paski w celu wybrania regionu na osi czasu.|
 |![Krok 4](../profiling/media/procguid_4.png "ProcGuid_4")|Wykres **zużycie mocy** jest wykresem wieloliniowym, w którym jest wyświetlana zmiana w danych wyjściowych, która jest spowodowana przez zasób urządzenia podczas sesji profilowania. Profiler Zużycie energii śledzi moc zużywaną przez procesor, działania sieciowe i wyświetlanie na ekranie.|
@@ -156,7 +158,7 @@ if (performance && performance.mark) {
 
 - Narzędzia **użycia procesora CPU** mogą pomóc w zmniejszeniu obciążenia procesora, gdy jest ono spowodowane przez funkcje niewydajne. Zobacz [Analizowanie użycia procesora CPU](../profiling/beginners-guide-to-performance-profiling.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Profilowanie w programie Visual Studio](../profiling/index.yml)
 - [Pierwsze spojrzenie na narzędzia profilowania](../profiling/profiling-feature-tour.md)

@@ -1,5 +1,7 @@
 ---
 title: Błędy debugowania zdalnego i rozwiązywanie problemów | Microsoft Docs
+description: Wyświetl linki do typowych błędów debugowania zdalnego w programie Visual Studio. Dowiedz się, jak uruchomić zdalny debuger jako administrator.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b413ce193e6761d515de5bc5ef30fae8e18a3a3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0260f939c8f6b7e5bed77ec42a4720adf0a4c720
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89316140"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205661"
 ---
 # <a name="remote-debugging-errors-and-troubleshooting"></a>Błędy związane z debugowaniem zdalnym i rozwiązywanie problemów
 
@@ -35,7 +37,7 @@ Podczas próby debugowania zdalnego mogą wystąpić następujące błędy.
 
 - [Błąd: Monitor zdalnego debugowania programu Microsoft Visual Studio (MSVSMON.EXE) prawdopodobnie nie jest uruchomiony na komputerze zdalnym.](error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running.md)
 
-- [Nie można połączyć się z Monitorem debugera zdalnego programu Microsoft Visual Studio](../debugger/unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md)
+- [Nie można nawiązać połączenia z Microsoft Visual Studio Monitor zdalnego debugowania](../debugger/unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md)
 
 - [Błąd: Komputer zdalny nie jest wyświetlany w oknie dialogowym połączeń zdalnych](../debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md)
 

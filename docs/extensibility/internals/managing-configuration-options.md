@@ -1,5 +1,7 @@
 ---
 title: Zarządzanie opcjami konfiguracji | Microsoft Docs
+description: Dowiedz się, jak zarządzać ustawieniami konfiguracji projektów i rozwiązań w programie Visual Studio, aby kontrolować sposób kompilowania, pakowania, wdrażania i uruchamiania projektu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e18c308d74f8c20267c286c47d0e89bf82cd2850
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a34f772b780cda825861e11e6816d1d88405f74e
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707309"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204534"
 ---
 # <a name="managing-configuration-options"></a>Zarządzanie opcjami konfiguracji
 Podczas tworzenia nowego typu projektu należy zarządzać ustawieniami konfiguracji projektu i rozwiązania, które określają sposób kompilowania, pakowania, wdrażania i uruchamiania projektu. W poniższych tematach omówiono konfigurację projektu i rozwiązania.

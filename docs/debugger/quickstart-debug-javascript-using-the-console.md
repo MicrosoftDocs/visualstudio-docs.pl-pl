@@ -1,5 +1,7 @@
 ---
 title: Debugowanie kodu JavaScript przy użyciu konsoli programu | Microsoft Docs
+description: Okno konsoli języka JavaScript w programie Visual Studio umożliwia korzystanie z aplikacji platforma uniwersalna systemu Windows (platformy UWP) utworzonych przy użyciu języka JavaScript oraz ich debugowanie.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: aca36c56bfeed4fd5d8b240cce6bea5b55b75d85
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 8a2b2e82e664abea1a53112776dc0ec3ec5f1259
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211079"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205011"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Debugowanie kodu JavaScript przy użyciu konsoli programu Visual Studio
 
@@ -42,7 +44,7 @@ Okno konsoli JavaScript umożliwia:
 - Wykonaj inne zadania, takie jak czyszczenie ekranu. Aby uzyskać pełną listę poleceń, zobacz [polecenia konsoli JavaScript](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true) .
 
 > [!TIP]
-> Jeśli okno konsoli JavaScript jest zamknięte, wybierz polecenie **Debuguj** >  **Windows**  >  **konsolę JavaScript** systemu Windows, aby je ponownie otworzyć. Okno jest wyświetlane tylko podczas sesji debugowania skryptu.
+> Jeśli okno konsoli JavaScript jest zamknięte, wybierz polecenie **Debuguj** >    >  **konsolę JavaScript** systemu Windows, aby je ponownie otworzyć. Okno jest wyświetlane tylko podczas sesji debugowania skryptu.
 
 Korzystając z okna konsoli JavaScript, można korzystać z aplikacji bez zatrzymywania i ponownego uruchamiania debugera. Aby uzyskać więcej informacji, zobacz [odświeżanie aplikacji (JavaScript)](../debugger/refresh-an-app-javascript.md). Aby uzyskać informacje o innych funkcjach debugowania języka JavaScript, takich jak używanie DOM Explorer i ustawień punktów przerwania, zobacz [Szybki Start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md) oraz [debugowanie aplikacji w programie Visual Studio](debugging-windows-store-and-windows-universal-apps.md).
 
@@ -199,11 +201,11 @@ Gdy program jest w trybie przerwania, można użyć okna konsoli JavaScript do u
 
 #### <a name="to-set-a-breakpoint-and-debug-the-app"></a>Aby ustawić punkt przerwania i debugować aplikację
 
-1. W pliku default.html `FlipView` aplikacji, która została wcześniej utworzona, otwórz menu skrótów dla `updateImages()` funkcji, a następnie wybierz **punkt**przerwania  >  **Wstaw punkt przerwania**.
+1. W pliku default.html `FlipView` aplikacji, która została wcześniej utworzona, otwórz menu skrótów dla `updateImages()` funkcji, a następnie wybierz **punkt** przerwania  >  **Wstaw punkt przerwania**.
 
 2. Wybierz pozycję **komputer lokalny** na liście rozwijanej obok przycisku **Rozpocznij debugowanie** na pasku narzędzi **debugowania** .
 
-3. Wybierz **Debuguj**  >  **Rozpocznij debugowanie**lub naciśnij klawisz F5.
+3. Wybierz **Debuguj**  >  **Rozpocznij debugowanie** lub naciśnij klawisz F5.
 
     Aplikacja przechodzi do trybu przerwania, gdy wykonanie osiągnie `updateImages()` funkcję, a bieżący wiersz wykonania programu jest wyróżniony kolorem żółtym.
 

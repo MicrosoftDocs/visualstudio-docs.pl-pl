@@ -1,5 +1,7 @@
 ---
 title: Karta okna, okno dialogowe Właściwości okna | Microsoft Docs
+description: Użyj karty okna właściwości systemu Windows, aby wyświetlić informacje o systemie Windows, które są powiązane z wybranym oknem. Zapoznaj się z tym artykułem.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce1015741b2a1e7ba1608eea7f198b726e808f7f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03cbcee265855c0e3ee26f75d5937315d64661a2
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900786"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205401"
 ---
 # <a name="windows-tab-window-properties-dialog-box"></a>Karta Okna, okno dialogowe właściwości okna
 Użyj karty **Windows** , aby wyświetlić informacje dotyczące systemu Windows powiązane z wybranym oknem. Aby wyświetlić okno [dialogowe Właściwości okna](../debugger/window-properties-dialog-box.md), Przenieś fokus do okna [Widok systemu Windows](../debugger/windows-view.md) . Wybierz dowolny węzeł okna w drzewie, a następnie wybierz polecenie **Właściwości** z menu **Widok** .

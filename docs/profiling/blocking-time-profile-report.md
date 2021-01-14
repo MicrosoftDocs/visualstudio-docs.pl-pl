@@ -1,5 +1,7 @@
 ---
 title: Raport profilu czasu blokowania | Microsoft Docs
+description: 'Raporty profilu czasu blokowania zapewniają zagregowany czas blokowania danych. Istnieje sześć typów raportów: synchronizacja, uśpienie, we/wy, pamięć, zastępujące i interfejs użytkownika.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3ed24dce0779b9bc7ea9cfd7bedcaa5ca181c68
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 74cfeb0b93b1819b4491b18b8e455b3c8d49be4d
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68926309"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204582"
 ---
 # <a name="blocking-time-profile-report"></a>Raport profilu czasu blokowania
 Raporty profilu zapewniają zagregowane dane czasu blokowania dla stosów wywołań, które są specyficzne dla każdej kategorii blokującej (na przykład "we/wy" lub "Synchronizacja"). Raport zastępujący zawiera listę procesów, które zastępują bieżący proces wraz z liczbą wystąpień zastępujące. Aby skompilować Raport z profilem blokującym, narzędzie zbiera blokowane wywołania interfejsu API i gromadzi je w drzewie stosów wywołań. Dane, które są wyświetlane w tych raportach, różnią się w zależności od bieżącego zakresu czasu, przez ukryte wątki oraz następujących dwóch filtrów, które mogą być stosowane:

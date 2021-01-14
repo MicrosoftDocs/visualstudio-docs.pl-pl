@@ -1,5 +1,7 @@
 ---
 title: Udostępnianie poleceń | Microsoft Docs
+description: Dowiedz się, jak kontrolować dostępność poleceń, które są dodawane do środowiska IDE programu Visual Studio w pakietów VSPackage, przy użyciu opóźnionego ładowania, kontekstu i widoczności.
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d64df85516e0a1ac326f8d40558755718c4644c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d17fd0b63438183b10b1ecb0e5eb6abb9f5d7f46
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707331"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204543"
 ---
 # <a name="making-commands-available"></a>Udostępnianie poleceń
 

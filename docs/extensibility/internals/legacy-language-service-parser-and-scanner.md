@@ -1,5 +1,7 @@
 ---
 title: Analizator i skaner starszej usługi językowej | Microsoft Docs
+description: Dowiedz się więcej na temat analizatora i skanera starszej usługi językowej, który wybiera informacje o wyświetlanym kodzie.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c87f447a4b8bca804d27aae4967f4adaf389c627
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 20c8c58a98887e5509026641ba0295fc167435e3
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707314"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204608"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Analizator i skaner starszej wersji usługi językowej
 Analizator jest sercem usługi językowej. Klasy języka Managed Package Framework (MPF) wymagają parsera języka w celu wybrania informacji o wyświetlanym kodzie. Parser oddziela tekst do tokenów leksykalnych, a następnie identyfikuje te tokeny według typu i funkcji.

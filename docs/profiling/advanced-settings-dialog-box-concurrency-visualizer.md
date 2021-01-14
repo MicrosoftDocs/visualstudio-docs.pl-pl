@@ -1,5 +1,7 @@
 ---
 title: Okno dialogowe Ustawienia zaawansowane (Concurrency Visualizer) | Microsoft Docs
+description: Użyj ustawień zaawansowanych w wizualizatorze współbieżności, aby kontrolować zawartość śledzenia. Istnieją karty dotyczące symboli, Tylko mój kod, buforowania i nie tylko.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa9d6658ae14c4b84aae9361f73e4701e758f975
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc7d3464fd05b1fe99fcbfa8773e64bca4cb95e7
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911219"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205505"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Okno dialogowe Ustawienia zaawansowane (Concurrency Visualizer)
 Korzystając z okna dialogowego **Ustawienia zaawansowane** w wizualizatorze współbieżności, można kontrolować sposób zbierania śladów.  Okno dialogowe zawiera karty symboli, Tylko mój kod, buforowanie, filtrowanie, zdarzenia CLR, znaczniki, dostawcy i pliki.
@@ -70,7 +72,7 @@ Korzystając z okna dialogowego **Ustawienia zaawansowane** w wizualizatorze wsp
 ### <a name="filter-marker-data-out-of-concurrency-visualizer-reports"></a>Filtruj dane znacznika z raportów wizualizatora współbieżności
  Jeśli nie chcesz, aby dane określonego dostawcy były wyświetlane w obszarze śledzenia w przyszłości, usuń zaznaczenie pola wyboru obok dostawcy, który ma zostać usunięty.
 
-## <a name="files"></a>Pliki
+## <a name="files"></a>Files
  Na karcie **pliki** można określić katalog, w którym pliki śledzenia są przechowywane przy każdym zbieraniu śladu.  Wizualizator współbieżności generuje cztery pliki dla każdego zebranego śledzenia:
 
 - Plik dziennika śledzenia zdarzeń trybu jądra (ETL) (<em>.</em> jądro. etl *)

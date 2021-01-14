@@ -1,6 +1,7 @@
 ---
 title: Zdalne debugowanie ASP.NET Core na zdalnym komputerze IIS | Microsoft Docs
-ms.custom: remotedebugging
+description: Debuguj aplikację ASP.NET Core, która została wdrożona na komputerze zdalnego Internet Information Services (IIS) przy użyciu zdalnego debugera programu Visual Studio.
+ms.custom: remotedebugging, SEO-VS-2020
 ms.date: 05/06/2020
 ms.topic: conceptual
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
@@ -10,12 +11,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 389fe1491a92cacecd772244c2a0facd0d12c887
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: bc746d5139b897d51d4d038f077906f56aa5d552
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "92298755"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205817"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio"></a>Zdalne debugowanie ASP.NET Core na zdalnym komputerze IIS w programie Visual Studio
 
@@ -108,7 +109,7 @@ Tej opcji można użyć do utworzenia pliku ustawień publikowania i zaimportowa
 
 ### <a name="configure-the-aspnet-core-web-site"></a>Skonfiguruj witrynę sieci Web ASP.NET Core
 
-1. W Menedżerze usług IIS w lewym okienku w obszarze **połączenia**wybierz pozycję **Pule aplikacji**. Otwórz przystawkę **Domyślna** i ustaw **wersję środowiska .NET CLR** na **Brak kodu zarządzanego**. Jest to wymagane w przypadku ASP.NET Core. Domyślna witryna sieci Web używa tej domyślnej.
+1. W Menedżerze usług IIS w lewym okienku w obszarze **połączenia** wybierz pozycję **Pule aplikacji**. Otwórz przystawkę **Domyślna** i ustaw **wersję środowiska .NET CLR** na **Brak kodu zarządzanego**. Jest to wymagane w przypadku ASP.NET Core. Domyślna witryna sieci Web używa tej domyślnej.
 
 2. Zatrzymaj i uruchom ponownie tę samą wartość.
 
@@ -145,15 +146,15 @@ Za pomocą tej opcji można wdrożyć aplikację, jeśli chcesz skopiować aplik
 
 3. W obszarze **połączenia** w okienku po lewej stronie przejdź do **witryny**.
 
-4. Wybierz **domyślną witrynę sieci Web**, wybierz **pozycję Ustawienia podstawowe**i ustaw **ścieżkę fizyczną** na **C:\Publish**.
+4. Wybierz **domyślną witrynę sieci Web**, wybierz **pozycję Ustawienia podstawowe** i ustaw **ścieżkę fizyczną** na **C:\Publish**.
 
 4. Kliknij prawym przyciskiem myszy **domyślny węzeł witryny sieci Web** i wybierz polecenie **Dodaj aplikację**.
 
-5. Ustaw wartość pola **alias** na **MyASPApp**, zaakceptuj domyślną pulę aplikacji (**Domyślna**konfiguracja), a następnie ustaw **ścieżkę fizyczną** na **C:\Publish**.
+5. Ustaw wartość pola **alias** na **MyASPApp**, zaakceptuj domyślną pulę aplikacji (**Domyślna** konfiguracja), a następnie ustaw **ścieżkę fizyczną** na **C:\Publish**.
 
-6. W obszarze **połączenia**wybierz pozycję **Pule aplikacji**. Otwórz przystawkę **Domyślna** i ustaw wartość pola Pula aplikacji na **Brak kodu zarządzanego**.
+6. W obszarze **połączenia** wybierz pozycję **Pule aplikacji**. Otwórz przystawkę **Domyślna** i ustaw wartość pola Pula aplikacji na **Brak kodu zarządzanego**.
 
-7. Kliknij prawym przyciskiem myszy nową witrynę w Menedżerze usług IIS, wybierz polecenie **Edytuj uprawnienia**i upewnij się, że konto IUSR, IIS_IUSRS lub użytkownik skonfigurowany do dostępu do aplikacji sieci Web jest autoryzowanym użytkownikiem z uprawnieniami do odczytu & wykonywania.
+7. Kliknij prawym przyciskiem myszy nową witrynę w Menedżerze usług IIS, wybierz polecenie **Edytuj uprawnienia** i upewnij się, że konto IUSR, IIS_IUSRS lub użytkownik skonfigurowany do dostępu do aplikacji sieci Web jest autoryzowanym użytkownikiem z uprawnieniami do odczytu & wykonywania.
 
     Jeśli nie widzisz jednego z tych użytkowników z dostępem, wykonaj kroki, aby dodać IUSR jako użytkownik z uprawnieniami do odczytu & wykonywania.
 
@@ -188,13 +189,13 @@ Aby uzyskać informacje na temat uruchamiania zdalnego debugera jako usługi, zo
 
 3. Ustaw pole kwalifikator na **\<remote computer name>** i naciśnij klawisz **Enter**.
 
-    Sprawdź, czy program Visual Studio dodaje wymagany port do nazwy komputera, która jest wyświetlana w formacie: ** \<remote computer name> :p** .
+    Sprawdź, czy program Visual Studio dodaje wymagany port do nazwy komputera, która jest wyświetlana w formacie: **\<remote computer name> :p** .
 
     ::: moniker range=">=vs-2019"
-    W programie Visual Studio 2019 powinna zostać wyświetlona ** \<remote computer name> : 4024**
+    W programie Visual Studio 2019 powinna zostać wyświetlona **\<remote computer name> : 4024**
     ::: moniker-end
     ::: moniker range="vs-2017"
-    W programie Visual Studio 2017 powinna zostać wyświetlona ** \<remote computer name> : 4022**
+    W programie Visual Studio 2017 powinna zostać wyświetlona **\<remote computer name> : 4022**
     ::: moniker-end
     Port jest wymagany. Jeśli nie widzisz numeru portu, Dodaj go ręcznie.
 
@@ -224,7 +225,7 @@ Aby uzyskać informacje na temat uruchamiania zdalnego debugera jako usługi, zo
 
 7. Kliknij przycisk **Dołącz**.
 
-8. Otwórz witrynę sieci Web komputera zdalnego. W przeglądarce przejdź do **http:// \<remote computer name> **.
+8. Otwórz witrynę sieci Web komputera zdalnego. W przeglądarce przejdź do **http:// \<remote computer name>**.
 
     Powinna zostać wyświetlona strona sieci Web ASP.NET.
 
@@ -254,14 +255,14 @@ Wymagane porty:
 
 2. Następnie wybierz pozycję **reguły ruchu przychodzącego > nowej reguły > portu**, a następnie kliknij przycisk **dalej**. (W przypadku protokołu UDP 3702 wybierz zamiast nich **reguły wychodzące** ).
 
-3. W obszarze **określone porty lokalne**wprowadź numer portu, a następnie kliknij przycisk **dalej**.
+3. W obszarze **określone porty lokalne** wprowadź numer portu, a następnie kliknij przycisk **dalej**.
 
 4. Kliknij pozycję **Zezwalaj na połączenie**, a następnie kliknij przycisk **dalej**.
 
 5. Wybierz co najmniej jeden typ sieci, który ma zostać włączony dla portu, a następnie kliknij przycisk **dalej**.
 
     Wybrany typ musi zawierać sieć, z którą połączony jest komputer zdalny.
-6. Dodaj nazwę (na przykład **IIS**, **Web Deploy**lub **msvsmon**) dla reguły ruchu przychodzącego, a następnie kliknij przycisk **Zakończ**.
+6. Dodaj nazwę (na przykład **IIS**, **Web Deploy** lub **msvsmon**) dla reguły ruchu przychodzącego, a następnie kliknij przycisk **Zakończ**.
 
     Nowa reguła powinna zostać wyświetlona na liście reguły ruchu przychodzącego lub reguły ruchu wychodzącego.
 

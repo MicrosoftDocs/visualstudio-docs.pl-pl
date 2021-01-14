@@ -1,5 +1,7 @@
 ---
 title: Widok systemu Windows | Microsoft Docs
+description: Widok systemu Windows pokazuje drzewo wszystkich okien i kontrolek. Użyj go jako punktu wyjścia, aby uzyskać informacje o interesujących Windows.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fef652cbaa83fde61f098fb8fcef9558473fe19a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 717c0f18d5443f712151a2f8318c56a8e738f6d7
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900865"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205375"
 ---
 # <a name="windows-view"></a>Widok okien
 Podczas pierwszego otwierania programu Spy + + widok systemu Windows wyświetla drzewo wszystkich okien i kontrolek w systemie. Wyświetlane są dojścia do okna i nazwa klasy. Bieżące okno pulpit znajduje się w górnej części drzewa. Wszystkie inne okna są elementami podrzędnymi pulpitu i są wyświetlane zgodnie z hierarchią standardowego okna. Okna elementów równorzędnych pojawiają się na listach expansible z wcięciem poniżej ich elementów nadrzędnych.

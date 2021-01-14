@@ -1,5 +1,7 @@
 ---
 title: Lista dostępnych usług | Microsoft Docs
+description: Wyświetl listę dostępnych usług obsługiwanych przez program Visual Studio i zestaw SDK programu Visual Studio, w tym identyfikatory GUID usług umożliwiające uzyskanie interfejsu dla każdej usługi.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 302d4bcff647a74acc973c47e0b62e66c86e5859
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 53ab3531e67be540f7c66da52b7e5152a510fa27
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707342"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204647"
 ---
 # <a name="list-of-available-services"></a>Lista dostępnych usług
 
@@ -140,7 +142,7 @@ Użyj identyfikatorów GUID usługi wymienionych tutaj lub uzyskanych z innych �
 | <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextSpanSet> | <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextSpanSet> | Tak | Tak | Zapewnia dostęp do listy zakresów tekstu w obrazie lub w buforze. Ta usługa jest zwykle implementowana w kontenerze dokumentów i odwołuje się do bieżącego dokumentu. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsThreadedWaitDialog> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsThreadedWaitDialog> | Nie | Tak | Umożliwia pakietu VSPackage wyświetlanie okna dialogowego, które czeka na inny wątek (używany do oczekiwania na zadania w tle). |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsThreadPool> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsThreadPool> | Nie | Tak | Umożliwia pakietu VSPackage inicjowanie zadań w tle, które są następnie obsługiwane przez program [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolbox> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox> | Tak | Tak | Zapewnia dostęp do **przybornika**IDE. |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolbox> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox> | Tak | Tak | Zapewnia dostęp do **przybornika** IDE. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolboxActiveXDataProvider> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxDataProvider> | Tak | Tak | Umożliwia pakietu VSPackage uzyskanie informacji z elementów **przybornika** . |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolboxDataProviderRegistry> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxDataProviderRegistry> | Nie | Tak | Umożliwia pakietu VSPackage zarejestrowanie dostawcy danych przybornika bez ponoszenia kosztów związanych z ładowaniem całego **przybornika**. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolsOptions> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolsOptions> | Nie | Tak | Włącza pakietu VSPackage, aby określić, czy okno dialogowe **Opcje** jest otwarte i Odśwież widoczność wszystkich opcji strony. |
