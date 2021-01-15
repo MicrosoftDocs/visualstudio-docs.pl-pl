@@ -7,6 +7,7 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor
 - vs.toolsoptionspages.text_editor
+- VS.ToolsOptionsPages.Text_Editor.Advanced
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.General
@@ -35,12 +36,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1665db5fff414227c18fd8de4224302cb6d43c2a
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: c76ea1729fa84bee97458f131e18f64281b76567
+ms.sourcegitcommit: 4ee20054afe7bcf5c0aed504dec01e18059fbbd0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040605"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98226503"
 ---
 # <a name="options-dialog-box-text-editor--general"></a>Opcje — okno dialogowe: Edytor tekstu — \> Ogólne
 
@@ -74,7 +75,7 @@ Po zaznaczeniu można nacisnąć klawisz **Ctrl** i umieścić kursor nad elemen
 
 Zaznacz pole wyboru **Otwórz definicję w widoku wglądu** , aby wyświetlić definicję elementu w oknie bez nawigowania do bieżącej lokalizacji w edytorze kodu.
 
-## <a name="display"></a>Wyświetlanie
+## <a name="display"></a>Wyświetl
 
 ### <a name="selection-margin"></a>Margines zaznaczenia
 

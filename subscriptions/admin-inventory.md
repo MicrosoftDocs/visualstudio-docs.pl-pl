@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 7d74e113-8fb2-490e-8502-48cce7b1327a
-ms.date: 10/22/2020
+ms.date: 01/14/2021
 ms.topic: conceptual
 description: Informacje o odpowiedzialności administratorów dotyczące przeprowadzania spisów przedprodukcyjnych
-ms.openlocfilehash: b464a7d9cfa8c802cd2367c5c7d0e76141583f3a
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: abcb3c8c1213885b5e543b05cf912c418acaa3f5
+ms.sourcegitcommit: 4ee20054afe7bcf5c0aed504dec01e18059fbbd0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467430"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98226490"
 ---
 # <a name="inventory-of-pre-production-environment"></a>Spis środowiska przedprodukcyjnego
 Subskrypcje programu Visual Studio upraszczają zarządzanie zasobami przez zliczanie użytkowników, a nie urządzeń.
@@ -25,6 +25,9 @@ Oto kilka sposobów, aby uprościć tworzenie spisu środowiska przedprodukcyjne
 - Korzystaj z automatycznych narzędzi do spisu systemów. Może być również konieczne użycie narzędzia do spisu oprogramowania w celu ułatwienia zarządzania zasobami oprogramowania i odróżnienia środowiska przedprodukcyjnego od produkcyjnych. Wielu klientów korzystających z programu Microsoft System Center tworzy konwencje nazewnictwa, aby ułatwić automatyzację tej części procesu spisu.
 - Uzyskaj pomoc dotyczącą ręcznego uzgadniania. Zarejestruj personel, aby pomóc w uzgadnianiu użytkowników programistycznych i testowych w środowisku deweloperskim i testowym.
 
+> [!NOTE]
+> Oprogramowanie subskrypcji programu Visual Studio nie jest licencjonowane na potrzeby środowisk produkcyjnych, w tym wszystkich środowisk, do których użytkownicy końcowi uzyskują dostęp w środowisku produkcyjnym, na potrzeby testowania lub przesyłania opinii, środowiska łączącego się z produkcyjną bazą danych. Wyjątki od tej usługi obejmują określone korzyści dotyczące pewnych poziomów subskrypcji, które opisano w dokumencie dotyczącym [licencjonowania programu Visual Studio](https://aka.ms/vslicensing).  
+
 ## <a name="resources"></a>Zasoby
 - [Oficjalny dokument dotyczący licencjonowana programu Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Pomoc techniczna dotycząca subskrypcji programu Visual Studio i administrowania nim](https://visualstudio.microsoft.com/support/support-overview-vs)
@@ -32,7 +35,7 @@ Oto kilka sposobów, aby uprościć tworzenie spisu środowiska przedprodukcyjne
 
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Azure DevOps documentation (Dokumentacja usługi Azure DevOps)](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)
 - [Dokumentacja Microsoft 365](/microsoft-365/)
 
