@@ -39,12 +39,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e46e2253c5664fff9cf456250d375993a0a0c9a
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 70f047fa84513821812a13f7dee3136d2d431d9a
+ms.sourcegitcommit: 993fca11dc373a10150751bc2a045a9701a9db2f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150642"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98240247"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>Porady: Korzystanie z macierzystego sprawdzania w trakcie wykonywania
 W projekcie Visual Studio C++ można użyć natywnego [runtime_checks](/cpp/preprocessor/runtime-checks) do przechwytywania typowych błędów czasu wykonywania, takich jak:
@@ -68,8 +68,6 @@ W projekcie Visual Studio C++ można użyć natywnego [runtime_checks](/cpp/prep
   W innych tematach w tej sekcji znajdują się informacje o:
 
 - [Dostosowywanie kontroli Run-Time przy użyciu biblioteki C Run-Time](../debugger/native-run-time-checks-customization.md)
-
-- [Korzystanie z Run-Time checks bez biblioteki Run-Time C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)
 
 ### <a name="to-enable-native-run-time-checks-in-a-debug-build"></a>Aby włączyć natywne testy w czasie wykonywania w kompilacji debugowania
 

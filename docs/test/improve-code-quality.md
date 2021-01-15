@@ -12,19 +12,19 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 0029321ddfc3ff12bb9c40dac9de64a9eb067a95
-ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
+ms.openlocfilehash: cc5a1a7b72dcbdba8b874958bbef47ac4b98e936
+ms.sourcegitcommit: 993fca11dc373a10150751bc2a045a9701a9db2f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97756646"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98240325"
 ---
 # <a name="first-look-at-testing-tools-in-visual-studio"></a>Pierwsze spojrzenie na narzędzia do testowania w programie Visual Studio
 
 Narzędzia do testowania w programie Visual Studio mogą ułatwić Tobie i Twojemu zespołowi tworzenie i utrzymywanie wysokich standardów jakości kodu.
 
 > [!NOTE]
-> Testy jednostkowe są dostępne we wszystkich wersjach programu Visual Studio. Inne narzędzia do testowania, takie jak Live Unit Testing, IntelliTest i kodowany test interfejsu użytkownika, są dostępne tylko w wersji Visual Studio Enterprise. Aby uzyskać więcej informacji na temat wersji, zobacz [porównanie programu Visual Studio środowisk IDE](https://visualstudio.microsoft.com/vs/compare/).
+> Testy jednostkowe są dostępne we wszystkich wersjach programu Visual Studio. Inne narzędzia do testowania, takie jak Live Unit Testing i IntelliTest, są dostępne tylko w wersji Visual Studio Enterprise. Aby uzyskać więcej informacji na temat wersji, zobacz [porównanie programu Visual Studio środowisk IDE](https://visualstudio.microsoft.com/vs/compare/).
 
 ## <a name="test-explorer"></a>Eksplorator testów
 

@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 210f2b2fc3e037f58fed19031d7ae9762185a640
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 58a701e6297cb81ce84c164b3b6791a6e73c76f8
+ms.sourcegitcommit: 993fca11dc373a10150751bc2a045a9701a9db2f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903851"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98240273"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Zarządzanie wyjątkami za pomocą debugera w programie Visual Studio
 
@@ -221,10 +221,9 @@ Aby dodać wyjątki warunkowe:
 
 4. Jeśli musisz usunąć warunek, wybierz _ *X** na końcu wiersza warunku.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Kontynuowanie wykonania po wystąpieniu wyjątku](../debugger/continuing-execution-after-an-exception.md)<br/>
 - [Instrukcje: badanie kodu systemu po wystąpieniu wyjątku](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
 - [Instrukcje: korzystanie z macierzystego sprawdzania w trakcie wykonywania](../debugger/how-to-use-native-run-time-checks.md)<br/>
-- [Używanie sprawdzeń w czasie wykonywania bez biblioteki wykonawczej C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)

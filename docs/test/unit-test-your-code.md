@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: ba3db5b74a415d3736c37f54fdb708fde3436d92
-ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
+ms.openlocfilehash: dc82d72d7c0a333fc28146746a473ed359857490
+ms.sourcegitcommit: 993fca11dc373a10150751bc2a045a9701a9db2f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97756594"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98240286"
 ---
-# <a name="unit-test-tools-and-tasks"></a>Narzędzia i zadania testów jednostkowych
+# <a name="unit-test-tools-and-tasks"></a>Narzędzia i zadania dla testów jednostkowych
 
 Testy jednostkowe umożliwiają deweloperom i testerom szybkie wyszukiwanie błędów logicznych w metodach klas w projektach C#, Visual Basic i C++.
 
@@ -36,7 +36,7 @@ Narzędzia do testów jednostkowych obejmują:
 
 * Struktura izolacji elementów sztucznych **firmy Microsoft** &mdash; Środowisko izolacji sztucznej firmy Microsoft może tworzyć zastępcze klasy i metody dla kodu środowiska produkcyjnego i systemu .NET, który tworzy zależności w testowanym kodzie. Poprzez implementowanie fałszywych delegatów dla funkcji kontroluje się zachowanie i dane wyjściowe obiektu zależności.
 
-Możesz również użyć [IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md) do eksplorowania kodu .NET, aby generować dane testowe i zestaw testów jednostkowych. Dla każdej instrukcji w kodzie są generowane dane wejściowe testu, które spowodują wykonanie tej instrukcji. Analiza przypadku jest wykonywana dla każdego rozgałęzienia warunkowego w kodzie.
+W przypadku platformy .NET można także użyć [IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md) do eksplorowania kodu i generowania danych testowych oraz zestawu testów jednostkowych. Dla każdej instrukcji w kodzie są generowane dane wejściowe testu, które spowodują wykonanie tej instrukcji. Analiza przypadku jest wykonywana dla każdego rozgałęzienia warunkowego w kodzie.
 
 ## <a name="key-tasks"></a>Główne zadania
 
@@ -58,6 +58,6 @@ Skorzystaj z poniższych artykułów, aby zrozumieć i utworzyć testy jednostko
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting> Opisuje przestrzeń nazw UnitTesting, która udostępnia atrybuty, wyjątki, potwierdzenia i inne klasy, które obsługują testy jednostkowe.
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Web> Opisuje przestrzeń nazw UnitTesting. Web, która rozszerza przestrzeń nazw UnitTesting przez zapewnienie wsparcia dla ASP.NET i testów jednostkowych usług sieci Web.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Poprawianie jakości kodu](../test/improve-code-quality.md)
