@@ -1,5 +1,7 @@
 ---
-title: Profilowanie wiersza polecenia usług | Microsoft Docs
+title: Command-Line profilowania usług | Microsoft Docs
+description: Dowiedz się, jak zbierać dane wydajności dla usług systemu Windows przy użyciu narzędzia profilowania z wiersza polecenia.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b20835eaf8b81bd64bd90aa75d2efb32975a7c53
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f05ca0a11060e2a9009b38b0caf7ce9172773f36
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74772834"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533657"
 ---
 # <a name="command-line-profiling-of-services"></a>Profilowanie wiersza polecenia usług
 W tej sekcji opisano procedury i opcje zbierania danych wydajności dla usług systemu Windows przy użyciu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania z wiersza polecenia.

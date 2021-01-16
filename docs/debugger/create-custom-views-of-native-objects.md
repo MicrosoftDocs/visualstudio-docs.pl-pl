@@ -13,16 +13,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 37bfd1ab57fd0e37f32a55d5bfc3787cb0c0cbd2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60d817c3600eaa82eb7f67489d5dadadaba3932f
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88248056"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533969"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>Tworzenie niestandardowych widoków obiektów C++ w debugerze przy użyciu struktury Natvis
 
-Struktura programu Visual Studio *Natvis* dostosowuje sposób, w jaki typy natywne są wyświetlane w oknach zmiennych debugera, takich jak **Ustawienia regionalne** i okna **czujki** , oraz w **etykietkach**danych. Wizualizacje Natvis mogą pomóc w tworzeniu typów, które można wyświetlić podczas debugowania.
+Struktura programu Visual Studio *Natvis* dostosowuje sposób, w jaki typy natywne są wyświetlane w oknach zmiennych debugera, takich jak **Ustawienia regionalne** i okna **czujki** , oraz w **etykietkach** danych. Wizualizacje Natvis mogą pomóc w tworzeniu typów, które można wyświetlić podczas debugowania.
 
 Natvis zastępuje plik *autoexp. dat* we wcześniejszych wersjach programu Visual Studio z SKŁADNIĄ języka XML, lepszą diagnostyką, przechowywaniem wersji i obsługą wielu plików.
 
@@ -72,19 +72,19 @@ Plik *. Natvis* można dodać do dowolnego projektu języka C++.
 
 **Aby dodać nowy plik *Natvis* :**
 
-1. Wybierz węzeł projekt C++ w **Eksplorator rozwiązań**i wybierz pozycję **projekt**  >  **Dodaj nowy element**lub kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Dodaj**  >  **nowy element**.
+1. Wybierz węzeł projekt C++ w **Eksplorator rozwiązań** i wybierz pozycję **projekt**  >  **Dodaj nowy element** lub kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Dodaj**  >  **nowy element**.
 
-1. W oknie dialogowym **Dodaj nowy element** wybierz **Visual C++**  >  **Utility**  >  **plik wizualizacji debugera narzędzi Visual C++ (Natvis)**.
+1. W oknie dialogowym **Dodaj nowy element** wybierz   >    >  **plik wizualizacji debugera narzędzi Visual C++ (Natvis)**.
 
 1. Nazwij plik, a następnie wybierz pozycję **Dodaj**.
 
-   Nowy plik zostanie dodany do **Eksplorator rozwiązań**i otwarty w okienku dokumentu programu Visual Studio.
+   Nowy plik zostanie dodany do **Eksplorator rozwiązań** i otwarty w okienku dokumentu programu Visual Studio.
 
 Debuger programu Visual Studio ładuje pliki *Natvis* w projektach języka C++ automatycznie, a domyślnie dołącza je do pliku *. pdb* podczas kompilowania projektu. W przypadku debugowania skompilowanej aplikacji debuger ładuje plik *. Natvis* z pliku *. pdb* , nawet jeśli nie ma otwartego projektu. Jeśli nie chcesz, aby plik *. Natvis* został uwzględniony w pliku *. pdb*, możesz go wykluczyć z skompilowanego plik *. pdb* .
 
 **Aby wykluczyć plik *. Natvis* z pliku *. pdb*:**
 
-1. Wybierz plik *. Natvis* w **Eksplorator rozwiązań**i wybierz ikonę **Właściwości** lub kliknij plik prawym przyciskiem myszy, a następnie wybierz polecenie **Właściwości**.
+1. Wybierz plik *. Natvis* w **Eksplorator rozwiązań** i wybierz ikonę **Właściwości** lub kliknij plik prawym przyciskiem myszy, a następnie wybierz polecenie **Właściwości**.
 
 1. Rozwiń strzałkę obok pozycji **wykluczone z kompilacji** i wybierz opcję **tak**, a następnie wybierz przycisk **OK**.
 
@@ -167,6 +167,12 @@ Wizualizacje Natvis używają wyrażeń języka C++ do określania elementów da
 
 - Aby kontrolować sposób wyświetlania wyrażenia, można użyć dowolnego specyfikatora formatu opisanego w [specyfikatorach formatu w języku C++](format-specifiers-in-cpp.md#BKMK_Visual_Studio_2012_format_specifiers). Specyfikatory formatu są ignorowane, gdy wpis jest używany wewnętrznie przez Natvis, takich jak `Size` wyrażenie w [rozwinięciu ArrayItems](../debugger/create-custom-views-of-native-objects.md#BKMK_ArrayItems_expansion).
 
+>[!NOTE]
+> Ponieważ dokument Natvis jest XML, wyrażenia nie mogą bezpośrednio korzystać z operatorów "handlowe", większe niż, ani przesunięcia. Należy zmienić te znaki zarówno w treści elementu, jak i instrukcji warunku. Na przykład:<br>
+> \<Item Name="HiByte"\>Bajc (_flags \& gt; \& gt 24), x\</Item\><br>
+> \<Item Name="HiByteStatus" Condition="(_flags \&amp; 0xFF000000) == 0"\>Dawaj\</Item\><br>
+> \<Item Name="HiByteStatus" Condition="(_flags \&amp; 0xFF000000) != 0"\>Pewnego\</Item\>
+
 ## <a name="natvis-views"></a>Widoki Natvis
 
 Można zdefiniować różne widoki Natvis do wyświetlania typów na różne sposoby. Na przykład Oto Wizualizacja `std::vector` , która definiuje uproszczony widok o nazwie `simple` . `DisplayString`Elementy i są `ArrayItems` wyświetlane w widoku domyślnym i `simple` widoku, podczas gdy `[size]` `[capacity]` elementy i nie są wyświetlane w `simple` widoku.
@@ -195,7 +201,7 @@ Gdy debuger napotyka błędy w wpisie wizualizacji, ignoruje je. Wyświetla typ 
 
 **Aby włączyć diagnostykę programu Natvis:**
 
-- W obszarze **Narzędzia**  >  **Opcje** ( **Debug**lub  >  **Opcje**debugowania) > **debugowanie**  >  **okno dane wyjściowe**, **Ustawianie komunikatów diagnostycznych Natvis (tylko C++)** do **błędów**, **ostrzeżeń**lub **pełnych**, a następnie wybierz przycisk **OK**.
+- W obszarze **Narzędzia**  >  **Opcje** ( lub  >  **Opcje** debugowania) > **debugowanie**  >  **okno dane wyjściowe**, **Ustawianie komunikatów diagnostycznych Natvis (tylko C++)** do **błędów**, **ostrzeżeń** lub **pełnych**, a następnie wybierz przycisk **OK**.
 
 Błędy pojawiają się w oknie **danych wyjściowych** .
 
@@ -400,7 +406,7 @@ Podczas debugowania można wybrać ikonę lupy obok zmiennej, a następnie wybra
 
  ![CStringT danych za pomocą wizualizatora StringView](../debugger/media/dbg_natvis_stringview_cstringt.png "CStringT danych za pomocą wizualizatora StringView")
 
-Wyrażenie `{m_pszData,su}` zawiera specyfikator formatu języka C++, aby **su**wyświetlić wartość jako ciąg Unicode. Aby uzyskać więcej informacji, zobacz [specyfikatory formatu w języku C++](../debugger/format-specifiers-in-cpp.md).
+Wyrażenie `{m_pszData,su}` zawiera specyfikator formatu języka C++, aby wyświetlić wartość jako ciąg Unicode. Aby uzyskać więcej informacji, zobacz [specyfikatory formatu w języku C++](../debugger/format-specifiers-in-cpp.md).
 
 ### <a name="expand-element"></a><a name="BKMK_Expand"></a> Rozwiń element
 

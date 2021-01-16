@@ -1,5 +1,6 @@
 ---
 title: Zbieranie szczegółowych danych o chronometrażu przy użyciu instrumentacji
+description: Użyj metody instrumentacji narzędzia profilowania, aby uzyskać szczegółowe informacje o chronometrażu w sekcji kodu i zrozumieć wpływ operacji we/wy.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b5082066de22bee3954b297f30eebb7d89ec607
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 17c569a9f5a50b769af0881d47fe810afe18058e
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810773"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533852"
 ---
 # <a name="collect-detailed-timing-data-by-using-instrumentation"></a>Zbieranie szczegółowych danych o chronometrażu przy użyciu instrumentacji
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Metoda narzędzia profilowania Instrumentation wprowadza kod profilowania do kopii modułu. Kod rejestruje każde wejście, wyjście i wywołanie funkcji funkcji w module podczas przebiegu profilowania. Metoda Instrumentacji jest przydatna do gromadzenia szczegółowych informacji o chronometrażu w sekcji kodu oraz do poznania wpływu operacji wejścia i wyjścia na wydajność aplikacji.
@@ -32,11 +33,11 @@ ms.locfileid: "90810773"
 - Na stronie **Ogólne** okna dialogowego właściwości dla sesji wydajności Wybierz pozycję **Instrumentacja**.
 
 ## <a name="common-tasks"></a>Typowe zadania
- Dodatkowe opcje można określić w oknie dialogowym _Performance Session_**strony właściwości** sesji wydajności. Aby otworzyć to okno dialogowe:
+ Dodatkowe opcje można określić w oknie dialogowym **strony właściwości** sesji wydajności. Aby otworzyć to okno dialogowe:
 
-- W **Eksplorator wydajności**kliknij prawym przyciskiem myszy nazwę sesji wydajności, a następnie kliknij polecenie **Właściwości**.
+- W **Eksplorator wydajności** kliknij prawym przyciskiem myszy nazwę sesji wydajności, a następnie kliknij polecenie **Właściwości**.
 
-  Zadania w poniższej tabeli zawierają opis opcji, które można określić w oknie dialogowym**strony właściwości** _sesji wydajności_podczas profilowania przy użyciu metody instrumentacji.
+  Zadania w poniższej tabeli zawierają opis opcji, które można określić w oknie dialogowym **strony właściwości** _sesji wydajności_ podczas profilowania przy użyciu metody instrumentacji.
 
 |Zadanie|Powiązana zawartość|
 |----------|---------------------|

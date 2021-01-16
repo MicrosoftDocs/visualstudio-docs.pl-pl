@@ -1,5 +1,6 @@
 ---
 title: Zbierz dane dotyczące okresu istnienia przydziału pamięci platformy .NET &
+description: Aby pomóc w wykrywaniu problemów z wydajnością związanymi z pamięcią w aplikacji .NET, użyj narzędzia profilowania, aby zebrać dane alokacji pamięci i okresu istnienia obiektu.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1354fb95b543e73a67d19204871f3b79aec9ece9
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: a9321ce83f65d5a7cac95d793d5f635651bef0e7
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809430"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533800"
 ---
 # <a name="collect-net-framework-memory-allocation-and-lifetime-data"></a>Zbierz .NET Framework alokacji pamięci i danych o okresie istnienia
 
@@ -45,7 +46,7 @@ Aby uzyskać informacje dotyczące sposobu zbierania danych pamięci .NET przy u
 
 ## <a name="to-collect-net-memory-data"></a>Zbieranie danych pamięci .NET
 
-1. W **Eksplorator wydajności**kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij polecenie **Właściwości**.
+1. W **Eksplorator wydajności** kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij polecenie **Właściwości**.
 
 2. Na **stronie właściwości** *sesji wydajności* okno dialogowe, kliknij kartę **Ogólne** , a następnie zaznacz pole wyboru **Zbierz informacje o alokacji obiektu .NET** .
 
@@ -53,11 +54,11 @@ Aby uzyskać informacje dotyczące sposobu zbierania danych pamięci .NET przy u
 
 ## <a name="common-tasks"></a>Typowe zadania
 
-Dodatkowe opcje można określić w oknie dialogowym _Performance Session_**strony właściwości** sesji wydajności. Aby otworzyć to okno dialogowe:
+Dodatkowe opcje można określić w oknie dialogowym **strony właściwości** sesji wydajności. Aby otworzyć to okno dialogowe:
 
-- W **Eksplorator wydajności**kliknij prawym przyciskiem myszy nazwę sesji wydajności, a następnie kliknij polecenie **Właściwości**.
+- W **Eksplorator wydajności** kliknij prawym przyciskiem myszy nazwę sesji wydajności, a następnie kliknij polecenie **Właściwości**.
 
-Zadania w poniższej tabeli zawierają opis opcji, które można określić w oknie dialogowym**strony właściwości** _sesji wydajności_podczas zbierania danych pamięci .NET.
+Zadania w poniższej tabeli zawierają opis opcji, które można określić w oknie dialogowym **strony właściwości** _sesji wydajności_ podczas zbierania danych pamięci .NET.
 
 |Zadanie|Powiązana zawartość|
 |----------|---------------------|
@@ -79,7 +80,7 @@ Zadania w poniższej tabeli są opcjami w oknie dialogowym **strony właściwoś
 |Na stronie **liczniki procesora** Określ co najmniej jeden licznik wydajności procesora, który ma zostać dodany do danych profilowania.|- [Instrukcje: zbieranie danych licznika procesora CPU](../profiling/how-to-collect-cpu-counter-data.md)|
 |Na stronie **Zaawansowane** określ wszelkie dodatkowe opcje VSInstr.exe, takie jak opcje dołączania lub wykluczania określonych funkcji. Aby uzyskać więcej informacji na temat opcji VSInstr, zobacz [VSInstr](../profiling/vsinstr.md)|- [Instrukcje: Określanie dodatkowych opcji instrumentacji](../profiling/how-to-specify-additional-instrumentation-options.md)<br />- [Instrukcje: ograniczanie instrumentacji do określonych funkcji](../profiling/how-to-limit-instrumentation-to-specific-functions.md)|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md) 
  [Instrukcje: wybieranie metod zbierania](../profiling/how-to-choose-collection-methods.md) 

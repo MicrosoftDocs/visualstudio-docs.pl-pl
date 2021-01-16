@@ -1,5 +1,7 @@
 ---
-title: Profilowanie wiersza polecenia aplikacji autonomicznych | Microsoft Docs
+title: Command-Line profilowania aplikacji Stand-Alone | Microsoft Docs
+description: Dowiedz się, jak zbierać dane wydajności dla aplikacji klienckich (autonomicznych) za pomocą narzędzia profilowania z wiersza polecenia.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f80f3e65969973202af08299b07ebfa420f3bd2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 876c2a72f0929cffa3613026fa56a17d82786854
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77557856"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533644"
 ---
 # <a name="command-line-profiling-of-stand-alone-applications"></a>Profilowanie wiersza polecenia aplikacji autonomicznych
 W tej sekcji opisano procedury i opcje zbierania danych wydajności dla autonomicznych aplikacji (klienta) przy użyciu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania z wiersza polecenia.

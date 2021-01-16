@@ -1,5 +1,7 @@
 ---
 title: Wiersz polecenia profilera — szczegóły danych o chronometrażu dla aplikacji autonomicznej
+description: Dowiedz się, jak zbierać szczegółowe dane wydajności dla składnika autonomicznego za pomocą metody instrumentacji z wiersza polecenia.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f088a0da0e8525189e4e2addf1464b30e1e98d06
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d93673080acd36f4195fb9b19382c9f0152f51f5
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331825"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533839"
 ---
 # <a name="collect-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Zbieranie szczegółowych danych o chronometrażu dla aplikacji autonomicznej przy użyciu wiersza polecenia profilera
 W tej sekcji opisano procedury i opcje dotyczące zbierania szczegółowych danych wydajności dla składnika klienta (autonomicznego) za pomocą metody instrumentacji z wiersza polecenia.

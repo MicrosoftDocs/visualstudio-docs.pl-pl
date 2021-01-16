@@ -10,16 +10,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d29c4e4659e8e6a5564e3fb41f54615bf29171d2
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 958f33a39126f8f48cf29bad1c25c7d962513ed0
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049101"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533865"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Platforma docelowa programu MSBuild
 
-Projekt można skompilować do uruchamiania w *środowisku docelowym* , który jest określoną wersją .NET Framework i *platformą docelową* , która jest konkretną architekturą oprogramowania.  Można na przykład określić, że aplikacja ma być uruchamiana na .NET Framework 2,0 na platformie 32-bitowej, która jest zgodna z rodziną procesorów 80x86 ("x86"). Kombinacja struktury docelowej i platformy docelowej jest znana jako *kontekst docelowy* .
+Projekt można skompilować do uruchamiania w *środowisku docelowym*, który jest określoną wersją .NET Framework i *platformą docelową*, która jest konkretną architekturą oprogramowania.  Można na przykład określić, że aplikacja ma być uruchamiana na .NET Framework 2,0 na platformie 32-bitowej, która jest zgodna z rodziną procesorów 80x86 ("x86"). Kombinacja struktury docelowej i platformy docelowej jest znana jako *kontekst docelowy*.
 
 > [!IMPORTANT]
 > W tym artykule przedstawiono stary sposób określania platformy docelowej. Projekty w stylu zestawu SDK umożliwiają różne TargetFrameworks, takie jak standard. Aby uzyskać więcej informacji, zobacz [Platformy docelowe](/dotnet/standard/frameworks).
@@ -74,11 +74,11 @@ Struktura docelowa jest określona we `TargetFrameworkVersion` właściwości w 
 
 ## <a name="target-platform"></a>Platforma docelowa
 
- *Platformą* jest kombinacja sprzętu i oprogramowania, która definiuje określone środowisko uruchomieniowe. Przykład:
+ *Platformą* jest kombinacja sprzętu i oprogramowania, która definiuje określone środowisko uruchomieniowe. Na przykład
 
 - `x86` Określa 32-bitowy system operacyjny Windows, który działa na procesorze Intel 80x86 lub jego odpowiedniku.
 
-- `x64` Określa 64-bitowy system operacyjny Windows, który działa na procesorze Intel x64 lub jest równoważny.
+- `x64` Określa 64-bitowy system operacyjny Windows, który działa na procesorze Intel x64 lub jego odpowiedniku.
 
 - `Xbox` wyznacza platformę Microsoft Xbox 360.
 
@@ -91,7 +91,7 @@ Struktura docelowa jest określona we `TargetFrameworkVersion` właściwości w 
 
 ```
 
-*Konfiguracja docelowa* jest podzbiorem platformy docelowej. Na przykład `x86` `Debug` Konfiguracja nie obejmuje większości optymalizacji kodu. Konfiguracja docelowa jest określona we `Configuration` Właściwości kompilacja w pliku projektu. Konfigurację docelową można zmienić przy użyciu stron właściwości projektu lub **Configuration Manager** .
+*Konfiguracja docelowa* jest podzbiorem platformy docelowej. Na przykład `x86` `Debug` Konfiguracja nie obejmuje większości optymalizacji kodu. Konfiguracja docelowa jest określona we `Configuration` Właściwości kompilacja w pliku projektu. Konfigurację docelową można zmienić przy użyciu stron właściwości projektu lub **Configuration Manager**.
 
 ```xml
 <PropertyGroup>
@@ -101,6 +101,6 @@ Struktura docelowa jest określona we `TargetFrameworkVersion` właściwości w 
 
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
-- [Wielowersyjności kodu](../msbuild/msbuild-multitargeting-overview.md)
+- [Wielowersyjność kodu](../msbuild/msbuild-multitargeting-overview.md)

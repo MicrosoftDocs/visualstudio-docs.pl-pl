@@ -1,5 +1,7 @@
 ---
 title: CommentMarkProfile | Microsoft Docs
+description: Użyj funkcji CommentMarkProfile, aby wstawić znacznik liczbowy i ciąg tekstowy do pliku *. vsp* .
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +14,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2972f9d470bebe3a65b7d525aa2b358d68ad5f1c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e943be08ffd586347ab5de54cb803bcedc8c24d7
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546591"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533592"
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
-`CommentMarkProfile`Funkcja Wstawia znacznik liczbowy i ciąg tekstowy w.* plik VSP* . Dla znacznika i komentarza, który ma zostać wstawiony, Profilowanie wątku, który zawiera `CommentMarkProfile` funkcję, musi być włączone.
+`CommentMarkProfile`Funkcja Wstawia znacznik liczbowy i ciąg tekstowy do pliku *. vsp* . Dla znacznika i komentarza, który ma zostać wstawiony, Profilowanie wątku, który zawiera `CommentMarkProfile` funkcję, musi być włączone.
 
 ## <a name="syntax"></a>Składnia
 
@@ -55,7 +57,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
 ## <a name="remarks"></a>Uwagi
  Stan profilowania wątku, który zawiera funkcję profilu znacznika, musi być włączony, gdy znaczniki i komentarze są wstawiane za pomocą polecenia VSInstr Mark lub funkcji (CommentMarkAtProfile, CommentMarkProfile lub MarkProfile).
 
- Znaczniki profilów są globalne w zakresie. Na przykład znacznik profilu wstawiony w jednym wątku może służyć do oznaczania początku lub końca segmentu danych w dowolnym wątku w. plik *VSP* .
+ Znaczniki profilów są globalne w zakresie. Na przykład znacznik profilu wstawiony w jednym wątku może służyć do oznaczania początku lub końca segmentu danych w dowolnym wątku w pliku *. vsp* .
 
 > [!IMPORTANT]
 > Metody CommentMarkProfile można używać tylko z instrumentacją.
@@ -67,9 +69,9 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
 
 |Element|Wartość|
 |-|-|
-|**Nagłówki**|Uwzględnij VSPerf. h|
+|**Nagłówek**|Uwzględnij VSPerf. h|
 |**Biblioteki**|Użyj VSPerf. lib|
-|**Kod Unicode**|Zaimplementowane jako `CommentMarkProfileW` (Unicode) i `CommentMarkProfileA` (ANSI).|
+|**Unicode**|Zaimplementowane jako `CommentMarkProfileW` (Unicode) i `CommentMarkProfileA` (ANSI).|
 
 ## <a name="example"></a>Przykład
  Poniższy kod ilustruje wywołanie funkcji CommentMarkProfile. W przykładzie założono użycie makr ciągu Win32 i ustawień kompilatora Unicode do określenia, czy kod wywołuje [!INCLUDE[vcpransi](../profiling/includes/vcpransi_md.md)] wywołanie funkcji.
@@ -110,5 +112,5 @@ void ExerciseCommentMarkProfile()
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dokumentacja interfejsu API programu Visual Studio profiler (natywna)](../profiling/visual-studio-profiler-api-reference-native.md)

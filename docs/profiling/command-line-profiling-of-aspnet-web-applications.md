@@ -1,5 +1,7 @@
 ---
-title: Profilowanie wiersza polecenia aplikacji sieci Web ASP.NET | Microsoft Docs
+title: Command-Line profilowania aplikacji sieci Web ASP.NET | Microsoft Docs
+description: Dowiedz się, jak zbierać dane dotyczące wydajności aplikacji sieci Web ASP.NET za pomocą narzędzia profilowania z wiersza polecenia.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: aa184667e5d569bc2662052a29b25bfea6e470a7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4c95890ae4022b854b76d2e4857fc2a27ce97e5
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779574"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533696"
 ---
 # <a name="command-line-profiling-of-aspnet-web-applications"></a>Profilowanie wiersza polecenia aplikacji sieci Web ASP.NET
 W tej sekcji opisano procedury i opcje zbierania danych wydajności dla [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci Web przy użyciu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania z wiersza polecenia.

@@ -1,5 +1,6 @@
 ---
 title: Zbieranie danych współbieżności procesu & wątku
+description: Użyj metody profilowania narzędzia profilowania współbieżności, aby zebrać dane dotyczące każdego zdarzenia synchronizacji, które powoduje, że funkcja oczekuje na dostęp do zasobów.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f44b7785306fc486c8f550c41bcac199825b8ed
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: c1f6d0dbc8c10c972957e2bcf8092d145bb3651c
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810721"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533748"
 ---
 # <a name="collect-thread-and-process-concurrency-data"></a>Zbieranie danych współbieżności dla wątku i procesu
 
@@ -31,11 +32,11 @@ Metodę profilowania współbieżności można określić przy użyciu jednej z 
 
 ## <a name="common-tasks"></a>Typowe zadania
 
-Dodatkowe opcje można określić w oknie dialogowym _Performance Session_**strony właściwości** sesji wydajności. Aby otworzyć to okno dialogowe:
+Dodatkowe opcje można określić w oknie dialogowym **strony właściwości** sesji wydajności. Aby otworzyć to okno dialogowe:
 
-- W **Eksplorator wydajności**kliknij prawym przyciskiem myszy nazwę sesji wydajności, a następnie kliknij polecenie **Właściwości**.
+- W **Eksplorator wydajności** kliknij prawym przyciskiem myszy nazwę sesji wydajności, a następnie kliknij polecenie **Właściwości**.
 
-Zadania w poniższej tabeli opisują opcje, które można określić w oknie dialogowym**strony właściwości** _sesji wydajności_podczas profilowania przy użyciu metody współbieżności.
+Zadania w poniższej tabeli opisują opcje, które można określić w oknie dialogowym **strony właściwości** _sesji wydajności_ podczas profilowania przy użyciu metody współbieżności.
 
 |Zadanie|Powiązana zawartość|
 |----------|---------------------|

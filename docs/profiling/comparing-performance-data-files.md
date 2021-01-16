@@ -1,5 +1,7 @@
 ---
 title: Porównywanie plików danych wydajności | Microsoft Docs
+description: Użyj narzędzia profilowania, aby porównać dwa pliki raportów (. vsp lub. vsps). Porównanie pokazuje różnice, regresje wydajności i ulepszenia.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +14,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 64842c5b4f622a1f76aa528360f79403ec92cb42
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8d1c57c6c3dd8d7d01e37eae374c547e074d62e6
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74777860"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533501"
 ---
 # <a name="compare-performance-data-files"></a>Porównywanie plików danych dotyczących wydajności
 
-Funkcja porównywania plików danych narzędzia profilowania umożliwia wybranie dwóch plików raportu (.* /or VSP* . *vsps*) pliki i generują raport pokazujący różnice, regresje wydajności i ulepszenia, które wystąpiły z jednej sesji profilowania do drugiej.
+Funkcja porównywania plików danych narzędzia profilowania umożliwia wybranie dwóch plików raportu (.*VSP* lub. *vsps*) pliki i generują raport pokazujący różnice, regresje wydajności i ulepszenia, które wystąpiły z jednej sesji profilowania do drugiej.
 
 Raport porównania plików danych z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania porównuje wyniki analizy w jednym pliku danych profilowania do wyników analizy linii bazowej w innym pliku danych. Oba pliki danych muszą zostać wygenerowane za pomocą tej samej metody profilowania. Raport porównania analizowane jest zapisywany jako. plik *vsps* .
 

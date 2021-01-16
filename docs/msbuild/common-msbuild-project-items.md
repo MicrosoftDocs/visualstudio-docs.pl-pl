@@ -17,22 +17,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 638f67575a7214047cdb917c994179ac144e60b2
-ms.sourcegitcommit: 49c959911128a733ed2858db7c0e3b565f934b1a
+ms.openlocfilehash: ea072cf3e9a236fdc6a4ad66b1c0cf7ddcda1550
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93238626"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533448"
 ---
 # <a name="common-msbuild-project-items"></a>Wspólne elementy projektów MSBuild
 
-W programie MSBuild element jest nazwanym odwołaniem do co najmniej jednego pliku. Elementy zawierają metadane, takie jak nazwy plików, ścieżki i numery wersji. Wszystkie typy projektów w programie Visual Studio mają kilka elementów wspólnych. Te elementy są zdefiniowane w pliku *Microsoft. Build. CommonTypes. xsd* .
+W programie MSBuild element jest nazwanym odwołaniem do co najmniej jednego pliku. Elementy zawierają metadane, takie jak nazwy plików, ścieżki i numery wersji. Wszystkie typy projektów w programie Visual Studio mają kilka elementów wspólnych. Te elementy są zdefiniowane w pliku *Microsoft. Build. CommonTypes. xsd*.
 
 ## <a name="common-items"></a>Elementy wspólne
 
 Poniżej znajduje się lista wszystkich wspólnych elementów projektu.
 
-### <a name="reference"></a>Dokumentacja
+### <a name="reference"></a>Tematy pomocy
 
 Reprezentuje odwołanie zestawu (zarządzanego) w projekcie.
 
@@ -84,7 +84,7 @@ Reprezentuje odwołanie do innego projektu. `ProjectReference` elementy są prze
 |---------------|-----------------|
 |Nazwa|Opcjonalny ciąg. Nazwa wyświetlana odwołania.|
 |GlobalPropertiesToRemove|Opcjonalne `string[]` . Nazwy właściwości do usunięcia podczas kompilowania przywoływanego projektu, na przykład `RuntimeIdentifier;PackOnBuild` . Wartość domyślna to Empty.|
-|Projekt|Opcjonalny ciąg. Identyfikator GUID odwołania w formularzu {12345678-1234-1234-1234-1234567891234} .|
+|Project|Opcjonalny ciąg. Identyfikator GUID odwołania w formularzu {12345678-1234-1234-1234-1234567891234} .|
 |OutputItemType|Opcjonalny ciąg. Typ elementu, do którego mają być emitowane docelowe dane wyjściowe. Wartość domyślna jest pusta. Jeśli metadane odwołania są ustawione na wartość "true" (domyślnie), docelowe dane wyjściowe staną się odwołaniami do kompilatora.|
 |ReferenceOutputAssembly|Opcjonalna wartość logiczna. Jeśli jest ustawiona na `false` , program nie uwzględnia danych wyjściowych przywoływanego projektu jako [odwołania](#reference) do tego projektu, ale nadal zapewnia, że inny projekt zostanie skompilowany przed tym. Wartość domyślna to `true` .|
 |SetConfiguration|Opcjonalny ciąg. Ustawia właściwość Global `Configuration` dla projektu, do którego istnieje odwołanie, na przykład `Configuration=Release` .|
@@ -186,8 +186,7 @@ Reprezentuje projekt FxCop do zaimportowania.
 
 Reprezentuje zestawy, których przestrzenie nazw powinny być importowane przez kompilator Visual Basic.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Wspólne właściwości projektów MSBuild](../msbuild/common-msbuild-project-properties.md)
-- [Właściwości programu MSBuild dla projektów zestaw .NET Core SDK](/dotnet/core/project-sdk/msbuild-props)
 - [Wspólne metadane elementów programu MSBuild](common-msbuild-item-metadata.md)

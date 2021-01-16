@@ -1,5 +1,7 @@
 ---
 title: Przestrzeń nazw współbieżności (Concurrency Visualizer) | Microsoft Docs
+description: Aby pisać współbieżne programy w języku C++, użyj przestrzeni nazw współbieżności, która zapewnia dostęp do środowisko uruchomieniowe współbieżności, struktury współbieżności dla języka C++.
+custom.ms: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 258cb5964946d5dbf136463538905d970346b8df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bdb9f2cee62c126f7a8b91fb7be57f558c9a7e5c
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63001081"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533436"
 ---
 # <a name="concurrency-namespace-concurrency-visualizer"></a>Przestrzeń nazw współbieżności (Concurrency Visualizer)
 `Concurrency`Przestrzeń nazw zawiera klasy i funkcje, które zapewniają dostęp do środowisko uruchomieniowe współbieżności, współbieżne środowisko programistyczne dla języka C++. Aby uzyskać więcej informacji, zobacz [środowisko uruchomieniowe współbieżności](/cpp/parallel/concrt/concurrency-runtime).
@@ -39,5 +41,5 @@ namespace Concurrency;
 ## <a name="requirements"></a>Wymagania
  **Nagłówek:** cvmarkersobj. h
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dokumentacja biblioteki języka C](../profiling/c-library-reference.md)

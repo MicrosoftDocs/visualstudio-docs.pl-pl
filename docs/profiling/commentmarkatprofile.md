@@ -1,5 +1,7 @@
 ---
 title: CommentMarkAtProfile | Microsoft Docs
+description: Użyj metody CommentMarkAtProfile, aby wstawić wartość sygnatury czasowej, znak liczbowy i ciąg komentarza do pliku. vsp.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,20 +14,20 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ee9eb5353109bcf5df6903e7e607a11b8bfd0536
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 43e8f9806c724da414940c92b6609846486a49c0
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545616"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533527"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
-`CommentMarkAtProfile`Metoda wstawia wartość znacznika czasu, znacznik liczbowy i ciąg komentarza w.* plik VSP* . Wartość sygnatury czasowej może służyć do synchronizowania zdarzeń zewnętrznych. Dla znacznika i komentarza, który ma zostać wstawiony, Profilowanie wątku, który zawiera funkcję CommentMarkAtProfile, musi być włączone.
+`CommentMarkAtProfile`Metoda wstawia wartość znacznika czasu, znak liczbowy i ciąg komentarza do pliku *. vsp* . Wartość sygnatury czasowej może służyć do synchronizowania zdarzeń zewnętrznych. Dla znacznika i komentarza, który ma zostać wstawiony, Profilowanie wątku, który zawiera funkcję CommentMarkAtProfile, musi być włączone.
 
 ## <a name="syntax"></a>Składnia
 
 ```cpp
-PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
+PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
                                    __int64 dnTimestamp,
                                    long lMarker,
                                    LPCTSTR szComment);
@@ -70,9 +72,9 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
 
 |Element|Wartość|
 |-|-|
-|**Nagłówki**|Uwzględnij *VSPerf. h*|
+|**Nagłówek**|Uwzględnij *VSPerf. h*|
 |**Biblioteki**|Użyj *VSPerf. lib*|
-|**Kod Unicode**|Zaimplementowane jako CommentMarkAtProfileW (Unicode) i CommentMarkAtProfileA (ANSI).|
+|**Unicode**|Zaimplementowane jako CommentMarkAtProfileW (Unicode) i CommentMarkAtProfileA (ANSI).|
 
 ## <a name="example"></a>Przykład
  Poniższy kod ilustruje użycie wywołania funkcji ogólnej CommentMarkAtProfile. W przykładzie założono użycie makr ciągu Win32 i ustawień kompilatora dla ANSI, aby określić, czy kod wywołuje funkcję z obsługą ANSI.
@@ -115,5 +117,5 @@ void ExerciseCommentMarkAtProfile(void)
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dokumentacja interfejsu API programu Visual Studio profiler (natywna)](../profiling/visual-studio-profiler-api-reference-native.md)
