@@ -3,12 +3,12 @@ author: ghogen
 ms.author: ghogen
 ms.topic: include
 ms.date: 4/23/2020
-ms.openlocfilehash: 6fd0fc6fd4f2e54c0d15f649139b649797f8336f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7d4027c53f599b4a17d267d5ebf72eee1ed296b
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89042889"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98535296"
 ---
 ### <a name="tooltaskextension-parameters"></a>Parametry ToolTaskExtension
 
@@ -21,7 +21,6 @@ W poniższej tabeli opisano parametry klas bazowych:
 | <xref:Microsoft.Build.Utilities.ToolTask.EchoOff%2A> | Opcjonalny `bool` parametr.<br /><br /> Po ustawieniu na wartość `true` to zadanie przekazuje wartość **/q** do *cmd.exe* wiersza polecenia, aby nie skopiować wiersza polecenia do strumienia stdout. |
 | <xref:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables%2A> | Opcjonalny `String` parametr tablicy.<br /><br /> Tablica definicji zmiennych środowiskowych, oddzielonych średnikami. Każda definicja powinna określać nazwę zmiennej środowiskowej i wartość oddzieloną znakiem równości. Te zmienne są przesyłane do zduplikowanego pliku wykonywalnego, a także do selektywnego przesłaniania, zwykłego bloku środowiska. Na przykład `Variable1=Value1;Variable2=Value2`. |
 | <xref:Microsoft.Build.Utilities.ToolTask.ExitCode%2A> | Opcjonalny `Int32` wyjściowy parametr tylko do odczytu.<br /><br /> Określa kod zakończenia, który jest dostarczany przez wykonane polecenie. Jeśli zadanie zarejestrował jakiekolwiek błędy, ale proces miał kod zakończenia 0 (sukces), jest to wartość-1. |
-| <xref:Microsoft.Build.Utilities.ToolTask.LogStandardErrorAsError%2A> | `bool`Parametr opcji.<br /><br /> Jeśli `true` wszystkie komunikaty odebrane w standardowym strumieniu błędów są rejestrowane jako błędy. |
 | <xref:Microsoft.Build.Utilities.ToolTask.LogStandardErrorAsError%2A> | Opcjonalny `bool` parametr.<br /><br /> Jeśli `true` wszystkie komunikaty odebrane w standardowym strumieniu błędów są rejestrowane jako błędy. |
 | <xref:Microsoft.Build.Utilities.ToolTask.StandardErrorImportance%2A> | Opcjonalny `String` parametr.<br /><br /> Znaczenie, za pomocą którego można rejestrować tekst ze standardowego strumienia wyjściowego. |
 | <xref:Microsoft.Build.Utilities.ToolTask.StandardOutputImportance%2A> | Opcjonalny `String` parametr.<br /><br /> Znaczenie, za pomocą którego można rejestrować tekst ze standardowego strumienia wyjściowego. |
