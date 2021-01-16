@@ -180,8 +180,6 @@
                   href: native-run-time-checks-customization.md
                 - name: Pisanie funkcji raportowania błędów czasu wykonywania
                   href: how-to-write-a-run-time-error-reporting-function.md
-                - name: Używanie sprawdzania w trakcie wykonywania bez biblioteki wykonawczej języka C
-                  href: using-run-time-checks-without-the-c-run-time-library.md
         - name: Określanie plików symboli (pdb) i plików źródłowych w debugerze
           href: specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md
         - name: Debugowanie kodu użytkownika
