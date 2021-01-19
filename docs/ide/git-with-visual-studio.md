@@ -8,12 +8,12 @@ ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 7eed02ffda47de9c6a788d186d41dcc087852e64
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 6092b02f5f8f94b3c87b68afe344fffba96c1a7d
+ms.sourcegitcommit: 987ed5f5adf85771d77c0efafc36d939fb9a356f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524088"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98571989"
 ---
 # <a name="git-experience-in-visual-studio"></a>Środowisko Git w programie Visual Studio
 
@@ -92,7 +92,7 @@ Podczas pracy program Visual Studio śledzi zmiany plików w projekcie w sekcji 
 
 Gdy wszystko będzie gotowe do przemieszczania zmian, kliknij **+** przycisk (plus) w każdym pliku, który chcesz przygotować, lub kliknij prawym przyciskiem myszy plik, a następnie wybierz pozycję **etap**. Możesz również przemieścić wszystkie zmodyfikowane pliki jednym kliknięciem, używając przycisku przemieszczenie wszystko **+** (plus) w górnej części sekcji **zmiany** .
 
-Podczas przygotowywania zmiany program Visual Studio tworzy sekcję **przemieszczone zmiany** . Tylko zmiany w sekcji **przemieszczane zmiany** są dodawane do następnego zatwierdzenia, które można wykonać, wybierając pozycję **Zatwierdź przygotowane**. Zmiany mogą być również nieprzygotowane, klikając przycisk **–** (minus). Równoważne polecenie dla tej akcji to `git commit -m "Your commit message"` .
+Podczas przygotowywania zmiany program Visual Studio tworzy sekcję **przemieszczone zmiany** . Tylko zmiany w sekcji **przemieszczane zmiany** są dodawane do następnego zatwierdzenia, które można wykonać, wybierając pozycję **Zatwierdź przygotowane**. Równoważne polecenie dla tej akcji to `git commit -m "Your commit message"` . Zmiany mogą być również nieprzygotowane, klikając przycisk **–** (minus). Równoważne polecenie dla tej akcji polega `git reset <file_path>` na rozmieszczeniu pojedynczego pliku lub `git reset <directory_path>` rozmieszczeniu wszystkich plików w katalogu.
 
 Możesz również zrezygnować z przygotowania zmodyfikowanych plików, pomijając obszar przejściowy. W takim przypadku program Visual Studio pozwala na zatwierdzanie zmian bezpośrednio bez konieczności ich przemieszczania. Po prostu wprowadź wiadomość dotyczącą zatwierdzenia, a następnie wybierz pozycję **Zatwierdź wszystko**. Równoważne polecenie dla tej akcji to `git commit -a` .
 
