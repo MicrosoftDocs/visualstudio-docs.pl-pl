@@ -1,5 +1,7 @@
 ---
 title: Raport operacji dyskowych (Widok wątków) | Microsoft Docs
+description: Raport operacje na dyskach przedstawia operacje we/wy dysku w kanałach dyskowych. Sprawdź, jakie informacje są raportowane dla każdego dostępu do dysku.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69cbef53bcca74cceba4f9409b578fca45a58806
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 44975999c71b1c331d90aa10f709071cef466cb1
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62970073"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686535"
 ---
 # <a name="disk-operations-report-threads-view"></a>Raport dotyczący operacji na dysku (Widok wątków)
 Raport operacje na dyskach przedstawia operacje we/wy dysku w kanałach dyskowych.

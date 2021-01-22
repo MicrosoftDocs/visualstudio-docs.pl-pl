@@ -1,5 +1,7 @@
 ---
 title: Niestandardowe zdarzenia natywnej sterty ETW | Microsoft Docs
+description: Dowiedz się, w jaki sposób używać sterty niestandardowej, aby zmniejszyć obciążenie związane z alokacją, ale nadal dostarczaj informacje o alokacji do profilera pamięci na potrzeby analizy alokacji.
+ms.custom: SEO-VS-2020
 ms.date: 02/24/2017
 ms.topic: conceptual
 ms.assetid: 668a6603-5082-4c78-98e6-f3dc871aa55b
@@ -10,12 +12,12 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1bb6f906cbfb715d67f6e10ddcecf094bc25821f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 61005bf108d0dab16ec419e942e3da97e02cdc7f
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62552964"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686327"
 ---
 # <a name="custom-native-etw-heap-events"></a>Niestandardowe zdarzenia ETW sterty natywnej
 
@@ -49,7 +51,7 @@ Migawka z narzędzia [użycie pamięci](../profiling/memory-usage.md) bez niesta
 
 ![Alokacja sterty systemu Windows](media/heap-example-windows-heap.png)
 
-Wykonując poniższe kroki, można użyć tego samego narzędzia do śledzenia usgae pamięci w naszym stosie niestandardowym.
+Wykonując poniższe kroki, można użyć tego samego narzędzia do śledzenia użycia pamięci w naszym stosie niestandardowym.
 
 ## <a name="how-to-use"></a>Sposób użycia
 
@@ -61,7 +63,7 @@ Ta biblioteka może być łatwo używana w językach C i C++.
    #include <VSCustomNativeHeapEtwProvider.h>
    ```
 
-1. Dodaj `__declspec(allocator)` dekoratora do dowolnej funkcji w Menedżerze sterty niestandardowych, która zwraca wskaźnik do nowo przydzieloną pamięć sterty.  Ta dekoratora umożliwia poprawne zidentyfikowanie typu zwracanej pamięci przez narzędzie.  Na przykład:
+1. Dodaj `__declspec(allocator)` dekoratora do dowolnej funkcji w Menedżerze sterty niestandardowych, która zwraca wskaźnik do nowo przydzieloną pamięć sterty.  Ta dekoratora umożliwia poprawne zidentyfikowanie typu zwracanej pamięci przez narzędzie.  Przykład:
 
    ```cpp
    __declspec(allocator) void *MyMalloc(size_t size);
@@ -153,7 +155,7 @@ Domyślna sterta *sterty systemu NT* wygląda tak samo jak wcześniej, z dodanie
 Podobnie jak w przypadku standardowej sterty systemu Windows, można również użyć tego narzędzia do porównania migawek i wyszukania przecieków i uszkodzenia w stosie niestandardowym, który jest opisany w dokumentacji [dotyczącej użycia pamięci](../profiling/memory-usage.md) głównej.
 
 > [!TIP]
-> Program Visual Studio zawiera również narzędzie **użycie pamięci** w narzędziu **profilowania wydajności** , które jest włączone z poziomu **Debug**  >  opcji menu**profilera wydajności** debugowania lub **Alt** + kombinacji klawiaturowej ALT**F2** .  Ta funkcja nie obejmuje śledzenia sterty i nie będzie wyświetlać sterty niestandardowej zgodnie z opisem w tym miejscu.  Ta funkcja jest dostępna tylko w oknie **Narzędzia diagnostyczne** , które można włączyć za pomocą menu **Debuguj**  >  **Windows**  >  **Narzędzia diagnostyczne Windows show** lub kombinacji **klawiszy CTRL** + **Alt** + **F2** .
+> Program Visual Studio zawiera również narzędzie **użycie pamięci** w narzędziu **profilowania wydajności** , które jest włączone z poziomu   >  opcji menu **profilera wydajności** debugowania lub  + kombinacji klawiaturowej ALT **F2** .  Ta funkcja nie obejmuje śledzenia sterty i nie będzie wyświetlać sterty niestandardowej zgodnie z opisem w tym miejscu.  Ta funkcja jest dostępna tylko w oknie **Narzędzia diagnostyczne** , które można włączyć za pomocą menu **Debuguj**  >    >  **Narzędzia diagnostyczne Windows show** lub kombinacji **klawiszy CTRL** + **Alt** + **F2** .
 
 ## <a name="see-also"></a>Zobacz też
 [Pierwsze spojrzenie na narzędzia profilowania](../profiling/profiling-feature-tour.md) 

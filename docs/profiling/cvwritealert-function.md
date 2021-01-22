@@ -1,5 +1,7 @@
 ---
 title: Funkcja CvWriteAlert | Microsoft Docs
+description: Zobacz informacje referencyjne dotyczące funkcji zestawu SDK wizualizatora współbieżności CvWriteAlert (biblioteka C).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56af9515fb9c066e56dd45a0fb91a95530f09799
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eb2cc6f7408fc5d9af0215dbccf166477876ac23
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332168"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686444"
 ---
 # <a name="cvwritealert-function"></a>CvWriteAlert, funkcja
 Zapisuje alert do pliku śledzenia Concurrency Visualizer.

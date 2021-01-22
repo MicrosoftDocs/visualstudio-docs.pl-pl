@@ -1,5 +1,7 @@
 ---
 title: CrossSession | Microsoft Docs
+description: Dowiedz się, jak używać opcji CrossSession VSPerfCmd.exe, aby Profiler zbierał dane z dowolnych sesji konsoli. Należy również określić opcję uruchamiania.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: b9fcb9c3-7903-478c-9b7c-dbd94092fcba
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 019a7b74deb70176f214aefdcec4db86cec86829
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7a20ada8a7ca8d0ca8c34c2c6d730c37cdca09b7
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331171"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686216"
 ---
 # <a name="crosssession"></a>CrossSession
 Opcja *VSPerfCmd.exe* **CrossSession** umożliwia programowi Profiler zbieranie danych z dowolnych sesji konsoli. Opcja **CrossSession** musi być używana z opcją **Start** .
