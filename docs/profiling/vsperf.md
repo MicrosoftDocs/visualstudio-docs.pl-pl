@@ -1,5 +1,6 @@
 ---
 title: VSPerf | Microsoft Docs
+description: Dowiedz się, jak za pomocą narzędzia wiersza polecenia VsPerf profilować aplikacje platformy UWP z poziomu wiersza polecenia, gdy program Visual Studio nie jest zainstalowany na urządzeniu.
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: b5854e62-279e-4850-bfeb-0c6ef82f4805
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c58033e89742650dc097a7469cbf62d7b6168509
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4b3d95422d3b4232d7a628f2054c7db2aa94dd6b
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520370"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723078"
 ---
 # <a name="vsperf"></a>VSPerf
 Użyj narzędzia wiersza polecenia **VsPerf** , aby:
@@ -58,6 +59,6 @@ Użyj narzędzia wiersza polecenia **VsPerf** , aby:
 |**/detach**|Zatrzymaj zbieranie danych, ale pozwól, aby procesy docelowe nadal działały.|
 |**/status**|Pokaż stan profilera.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Narzędzia do oceny wydajności w aplikacjach Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)
 - [Profil z wiersza polecenia](../profiling/using-the-profiling-tools-from-the-command-line.md)

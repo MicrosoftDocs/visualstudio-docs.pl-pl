@@ -1,5 +1,6 @@
 ---
 title: Brak aktywności wątku do wyświetlenia (Widok wątków) | Microsoft Docs
+description: Dowiedz się więcej na temat widoku wątki, w którym nie ma żadnych działań do wyświetlenia w aktualnie widocznym zakresie czasu.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91cc840a69135edf59603ba62d15985eb541df0e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 27298b03a03edf99a12a6d067a22ca8ba17faef0
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62794471"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722883"
 ---
 # <a name="no-thread-activity-to-show-threads-view"></a>Brak aktywności wątku do wyświetlenia (Widok wątków)
 Ten obszar pokazuje dane dotyczące nieukrytych wątków w aktualnie widocznym zakresie czasu.
@@ -32,5 +33,5 @@ Ten obszar pokazuje dane dotyczące nieukrytych wątków w aktualnie widocznym z
 
 - Upewnij się, że redukcja szumu jest ustawiona na niski próg.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Widok wątków](../profiling/threads-view-parallel-performance.md)

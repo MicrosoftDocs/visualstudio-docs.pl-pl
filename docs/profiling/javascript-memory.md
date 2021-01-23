@@ -1,5 +1,6 @@
 ---
 title: Analizowanie użycia pamięci JavaScript w aplikacjach platformy UWP | Microsoft Docs
+description: Dowiedz się, w jaki sposób jest dostępny Analizator pamięci języka JavaScript, który ułatwia zrozumienie użycia pamięci i znalezienie przecieków pamięci w aplikacjach platformy UWP utworzonych dla systemu Windows przy użyciu języka JavaScript.
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -20,12 +21,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 86a1b857639d8a58ffc7686569ad8e103674f136
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: a29d12a4ca2e6a7a620c5197f76c0ad35ac33a40
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037487"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721687"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analizowanie użycia pamięci JavaScript w aplikacjach platformy UWP
 Analizator pamięci języka JavaScript jest dostępny w programie Visual Studio, aby ułatwić zrozumienie użycia pamięci i znalezienie przecieków pamięci w aplikacjach platformy UWP utworzonych dla systemu Windows przy użyciu języka JavaScript. Obsługiwane aplikacje obejmują aplikacje dla uniwersalnych aplikacji systemu Windows.
@@ -193,11 +194,11 @@ Analizator pamięci języka JavaScript jest dostępny w programie Visual Studio,
 
 - Rozmiar sterty. Ta liczba obejmuje elementy DOM i obiekty, które aparat środowiska uruchomieniowego JavaScript dodaje do sterty JavaScript. Rozmiar sterty łączy się z widokiem typów migawki.
 
-- Różnicowa rozmiar sterty. Ta wartość pokazuje różnicę między rozmiarem sterty bieżącej migawki a rozmiarem sterty poprzedniej migawki. Po wykonaniu tej wartości następuje czerwona strzałka w górę w przypadku zwiększenia ilości pamięci lub zielonej strzałki w dół w przypadku zmniejszenia ilości pamięci. Jeśli rozmiar sterty nie został zmieniony między migawkami, zobaczysz tekst **bez zmian** zamiast liczby. Dla pierwszej migawki zobaczysz **linię bazową**tekstu. Rozmiar sterty różnicowej łączy się z widokiem typów porównania migawek.
+- Różnicowa rozmiar sterty. Ta wartość pokazuje różnicę między rozmiarem sterty bieżącej migawki a rozmiarem sterty poprzedniej migawki. Po wykonaniu tej wartości następuje czerwona strzałka w górę w przypadku zwiększenia ilości pamięci lub zielonej strzałki w dół w przypadku zmniejszenia ilości pamięci. Jeśli rozmiar sterty nie został zmieniony między migawkami, zobaczysz tekst **bez zmian** zamiast liczby. Dla pierwszej migawki zobaczysz **linię bazową** tekstu. Rozmiar sterty różnicowej łączy się z widokiem typów porównania migawek.
 
 - Liczba obiektów. Ta liczba przedstawia tylko obiekty utworzone w aplikacji i filtruje wbudowane obiekty utworzone przez środowisko uruchomieniowe JavaScript. Liczba obiektów łączy się z widokiem typów w szczegółach migawki.
 
-- Liczba obiektów różnicowych. Pokazuje dwie wartości: pierwsza wartość to liczba nowych obiektów dodanych od poprzedniej migawki; Druga wartość to liczba obiektów usuniętych od poprzedniej migawki. Na przykład ilustracja pokazuje, że dodano 1 859 obiektów i 1 733 obiektów zostało usuniętych od #1 migawek. Do tych informacji następuje czerwona strzałka w górę, jeśli całkowita liczba obiektów została zwiększona lub zielona strzałka w dół w przypadku jej zmniejszenia. Jeśli licznik obiektów nie został zmieniony, zobaczysz tekst **bez zmian** zamiast liczby. Dla pierwszej migawki zobaczysz **linię bazową**tekstu. Liczba obiektów różnicowych łączy się z widokiem typów porównania migawek.
+- Liczba obiektów różnicowych. Pokazuje dwie wartości: pierwsza wartość to liczba nowych obiektów dodanych od poprzedniej migawki; Druga wartość to liczba obiektów usuniętych od poprzedniej migawki. Na przykład ilustracja pokazuje, że dodano 1 859 obiektów i 1 733 obiektów zostało usuniętych od #1 migawek. Do tych informacji następuje czerwona strzałka w górę, jeśli całkowita liczba obiektów została zwiększona lub zielona strzałka w dół w przypadku jej zmniejszenia. Jeśli licznik obiektów nie został zmieniony, zobaczysz tekst **bez zmian** zamiast liczby. Dla pierwszej migawki zobaczysz **linię bazową** tekstu. Liczba obiektów różnicowych łączy się z widokiem typów porównania migawek.
 
 - Zrzut ekranu przedstawiający ekran w czasie trwania migawki.
 
@@ -255,14 +256,14 @@ Analizator pamięci języka JavaScript jest dostępny w programie Visual Studio,
 
   Aby filtrować informacje różnicowe między migawkami, wybierz jeden z filtrów **zakresu** w górnej części widoków różnicowych.
 
-- **Obiekty pozostałe z migawki nr \<number> **. Ten filtr pokazuje różnicę między obiektami dodanymi do sterty i usuniętymi z sterty w porównaniu z migawką bazową i poprzednią migawką. Na przykład, jeśli podsumowanie migawki pokazuje + 205/-195 w liczniku obiektów, ten filtr wyświetli dziesięć obiektów, które zostały dodane, ale nie zostały usunięte.
+- **Obiekty pozostałe z migawki nr \<number>**. Ten filtr pokazuje różnicę między obiektami dodanymi do sterty i usuniętymi z sterty w porównaniu z migawką bazową i poprzednią migawką. Na przykład, jeśli podsumowanie migawki pokazuje + 205/-195 w liczniku obiektów, ten filtr wyświetli dziesięć obiektów, które zostały dodane, ale nie zostały usunięte.
 
   > [!TIP]
   > Aby wyświetlić najbardziej przydatne informacje w tym filtrze, wykonaj kroki opisane w sekcji [izolowanie przecieku pamięci](#isolate-a-memory-leak).
 
 - **Obiekty dodane między migawką # \<number> i \<number> #**. Ten filtr pokazuje wszystkie obiekty dodane do sterty z poprzedniej migawki.
 
-- **Wszystkie obiekty w migawce # \<number> **. To ustawienie filtru nie odfiltruje żadnych obiektów na stercie.
+- **Wszystkie obiekty w migawce # \<number>**. To ustawienie filtru nie odfiltruje żadnych obiektów na stercie.
 
   Aby wyświetlić odwołania do obiektów, które nie pasują do bieżącego filtru **zakresu** , wybierz pozycję **Pokaż niepasujące odwołania** na liście ustawienia listy ![rozwijanej&#45;Zmniejsz listę w analizatorze pamięci](../profiling/media/js_mem_settings.png "JS_Mem_Settings") w prawym górnym rogu okienka. Jeśli włączysz to ustawienie, niezgodne odwołania są wyświetlane z szarym tekstem.
 
@@ -302,7 +303,7 @@ Analizator pamięci języka JavaScript jest dostępny w programie Visual Studio,
  Aby wyświetlić te obiekty, wybierz pozycję **Pokaż wbudowane** na liście Ustawienia listy ![rozwijanej&#45;Zmniejsz listę w analizatorze pamięci](../profiling/media/js_mem_settings.png "JS_Mem_Settings") w prawym górnym rogu okienka.
 
 ## <a name="save-diagnostic-session-files"></a>Zapisz pliki sesji diagnostycznej
- Podsumowania migawek diagnostycznych i skojarzonych z nimi widoków szczegółów są zapisywane jako. pliki *diagsession* . **Eksplorator rozwiązań** wyświetla poprzednie sesje diagnostyczne w folderze sesji diagnostycznych. W **Eksplorator rozwiązań**można otworzyć poprzednie sesje lub usunąć lub zmienić nazwy plików.
+ Podsumowania migawek diagnostycznych i skojarzonych z nimi widoków szczegółów są zapisywane jako. pliki *diagsession* . **Eksplorator rozwiązań** wyświetla poprzednie sesje diagnostyczne w folderze sesji diagnostycznych. W **Eksplorator rozwiązań** można otworzyć poprzednie sesje lub usunąć lub zmienić nazwy plików.
 
 ## <a name="associate-source-code-with-memory-usage-data"></a>Skojarz kod źródłowy z danymi użycia pamięci
  Aby ułatwić odizolowanie sekcji kodu zawierającej problem z pamięcią, należy użyć następujących metod:

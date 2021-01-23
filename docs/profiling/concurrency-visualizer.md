@@ -1,5 +1,7 @@
 ---
 title: Wizualizator współbieżności | Microsoft Docs
+description: Użyj wizualizatora współbieżności, aby zobaczyć wykresy pokazujące chronometraż wątku w aplikacji wielowątkowej, pomagając w rozwiązywaniu problemów z wydajnością.
+ms.custom: SEO-VS-2020
 ms.date: 07/11/2017
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a955304e1a0939bbe7398b48a5e9ff30461d8745
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 5e6f36568568a59980316f3070f902027898e39e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037344"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720959"
 ---
 # <a name="concurrency-visualizer"></a>Concurrency Visualizer
 
@@ -32,7 +34,7 @@ ms.locfileid: "90037344"
 > - Pobierz rozszerzenie [Concurrency Visualizer dla rozszerzenia programu Visual Studio 2015](https://marketplace.visualstudio.com/items?itemName=Diagnostics.ConcurrencyVisualizerforVisualStudio2015) .
 > - Pobierz [Narzędzia do zbierania danych Concurrency Visualizer dla programu Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=49103).
 >
-> [Narzędzie wiersza polecenia narzędzia Concurrency Visualizer (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md) umożliwia zbieranie śladów z wiersza polecenia, które można wyświetlić w programie Concurrency Visualizer dla programu Visual Studio 2015. Narzędzia można używać na komputerach, na których nie zainstalowano programu Visual Studio.
+> [Narzędzie Command-Line narzędzia Concurrency Visualizer (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md) umożliwia zbieranie śladów z wiersza polecenia, które można wyświetlić w programie Concurrency Visualizer dla programu Visual Studio 2015. Narzędzia można używać na komputerach, na których nie zainstalowano programu Visual Studio.
 
 Możesz użyć wizualizatora współbieżności, aby zobaczyć, jak działa aplikacja wielowątkowa. Widoki w wizualizatorze współbieżności zapewniają dane graficzne, tabelaryczne i tekstowe, które pokazują relacje czasowe między wątkami w programie i systemem jako całością. Można użyć wizualizatora współbieżności do lokalizowania wąskich gardeł wydajności, niedostatecznego wykorzystania procesora, rywalizacji wątków, migracji wątków międzyrdzeniowych, opóźnień synchronizacji, aktywności DirectX, obszarów nakładających się operacji we/wy i innych informacji. Widoki zawierają dane, które można wykonywać, łącząc ich graficzne dane wyjściowe z stosami wywołań i kodem źródłowym.
 

@@ -1,5 +1,7 @@
 ---
 title: Znaczniki wizualizatora współbieżności | Microsoft Docs
+description: 'Dowiedz się więcej na temat znaczników w wizualizatorze współbieżności. Znaczniki to ikony reprezentujące zdarzenia wygenerowane przez aplikację. Istnieją trzy rodzaje: flagi, komunikaty i zakresy.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab5e4b65db5c3d96b16a68a7b8e21a2786b9110b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fab8108e15f3cbaf81130c2ce8533d00f2a23c7e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63001051"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720998"
 ---
 # <a name="concurrency-visualizer-markers"></a>Znaczniki wizualizatora współbieżności
 W wizualizatorze współbieżności znaczniki są ikonami, które reprezentują zdarzenia w aplikacji.  Zazwyczaj aplikacja generuje te zdarzenia, aby wyznaczyć fazy lub wystąpienia w aplikacji.  Zdarzenia mogą być generowane przez aplikację lub przez biblioteki i środowiska uruchomieniowe używane przez aplikację.
@@ -45,7 +47,7 @@ W wizualizatorze współbieżności znaczniki są ikonami, które reprezentują 
 
 - [Biblioteka zadań równoległych (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)
 
-- [Przepływu danych](/dotnet/standard/parallel-programming/dataflow-task-parallel-library)
+- [Przepływ danych](/dotnet/standard/parallel-programming/dataflow-task-parallel-library)
 
 - [Równoległe LINQ (PLINQ)](/dotnet/standard/parallel-programming/parallel-linq-plinq)
 
@@ -60,7 +62,7 @@ W wizualizatorze współbieżności znaczniki są ikonami, które reprezentują 
 ## <a name="markers-from-eventsource"></a>Znaczniki ze źródła EventSource
  Wizualizator współbieżności może również wyświetlać zdarzenia EventSource.  Aby uzyskać więcej informacji, zobacz [Wizualizuj zdarzenia EventSource jako znaczniki](../profiling/visualizing-eventsource-events-as-markers.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Znaczniki flagi](../profiling/flag-markers.md)
 - [Znaczniki komunikatów](../profiling/message-markers.md)
 - [Znaczniki zakresu](../profiling/span-markers.md)

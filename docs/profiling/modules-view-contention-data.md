@@ -1,5 +1,6 @@
 ---
 title: Widok modułów — dane rywalizacji | Microsoft Docs
+description: Dowiedz się, w jaki sposób widok modułów danych rywalizacji zawiera dane współbieżności pogrupowane według modułów, które zostały próbkowane w danych profilowania.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2de844867e9c0a8d95abdaa13f860a6487254bfe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0640bc238bc300868d42aedc8905da8ffc97f65e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74780016"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723325"
 ---
 # <a name="modules-view---contention-data"></a>Widok modułów — dane rywalizacji
 Widok modułów danych rywalizacji zawiera dane współbieżności pogrupowane według modułów, które zostały próbkowane w danych profilowania. Każdy moduł jest katalogiem głównym drzewa hierarchicznego. Funkcje modułu, w którym wystąpiły zdarzenia rywalizacji, są wyświetlane w węźle modułu.
@@ -43,7 +44,7 @@ Widok modułów danych rywalizacji zawiera dane współbieżności pogrupowane w
 |**Nazwa procesu**|Nazwa procesu|
 |**Plik źródłowy**|Plik źródłowy, który zawiera definicję dla tej funkcji.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Instrukcje: dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)
 - [Widok modułów](../profiling/modules-view.md)
 - [Widok modułów-Instrumentacja](../profiling/modules-view-dotnet-memory-instrumentation-data.md)

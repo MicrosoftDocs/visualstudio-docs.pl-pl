@@ -11,12 +11,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 9c078f3500a5a00edadae73f04f04e60d7c199d6
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 3697ac75eb608f6990cb7f8ca976e103f0df8454
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "94341705"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722987"
 ---
 # <a name="devops-with-unity-apps"></a>DevOps z aplikacjami Unity
 
@@ -61,8 +61,8 @@ Uwaga ogólna: Chociaż te funkcje projektowania są niezależne od języka kodo
 
 |Cechy|Obsługiwane w środowisku Unity|Dodatkowe komentarze|
 |-------------|--------------------------|-------------------------|
-|[Użyj Kontrola wersji serwera Team Foundation (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts) lub Azure Repos|Tak|Projekty Unity to po prostu Kolekcja plików, które mogą być umieszczane w systemach kontroli wersji, takich jak każdy inny projekt, ale istnieje kilka specjalnych zagadnień opisanych poniżej tej tabeli.|
-|[Wprowadzenie do usługi Git w Azure Repos](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio)|Tak|Zobacz uwagi po tabeli.|
+|[Użyj Kontrola wersji serwera Team Foundation (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts&preserve-view=true) lub Azure Repos|Tak|Projekty Unity to po prostu Kolekcja plików, które mogą być umieszczane w systemach kontroli wersji, takich jak każdy inny projekt, ale istnieje kilka specjalnych zagadnień opisanych poniżej tej tabeli.|
+|[Wprowadzenie do usługi Git w Azure Repos](/azure/devops/repos/git/gitquickstart?view=vsts&preserve-view=true&tabs=visual-studio)|Tak|Zobacz uwagi po tabeli.|
 |[Podnoszenie jakości kodu](/test/improve-code-quality.md)|Tak||
 |[Znajdowanie zmian w kodzie i innych elementów historii](/ide/find-code-changes-and-other-history-with-codelens.md)|Tak||
 |[Używanie map kodu do debugowania aplikacji](/modeling/use-code-maps-to-debug-your-applications.md)|Tak||
@@ -87,7 +87,7 @@ Link odwołania: **[Azure Pipelines](/azure/devops/pipelines/index?view=vsts&pre
 |Kompiluj definicje ze skryptami wstępnymi i po skrypcie|Tak|Niestandardowa definicja kompilacji, która korzysta z wiersza polecenia Unity do uruchomienia kompilacji, może być również skonfigurowana dla skryptów pre-i po kompilacji.|
 |Ciągła integracja obejmująca ewidencjonowanie warunkowe|Tak|Ewidencjonowanie warunkowe dla TFVC tylko jako git działa w modelu żądania ściągnięcia, a nie w przypadku zaewidencjonowania.|
 
-## <a name="test"></a>Testowanie
+## <a name="test"></a>Test
 
 |Cechy|Obsługiwane w środowisku Unity|Dodatkowe komentarze|
 |-------------|--------------------------|-------------------------|

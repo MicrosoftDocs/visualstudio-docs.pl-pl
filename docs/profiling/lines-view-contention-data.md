@@ -1,5 +1,6 @@
 ---
 title: Widok linii — dane rywalizacji | Microsoft Docs
+description: Dowiedz się, w jaki sposób widok wierszy danych rywalizacji zawiera dane dotyczące wydajności dla instrukcji, które były wykonywane, gdy próbki zostały zebrane w ramach uruchomienia profilowania.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1dfcdf67c897c0c1565e536a69cc940b9df83390
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50a314d5ba0a5dd907da3a915835f1410894ee7a
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778599"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721349"
 ---
 # <a name="lines-view---contention-data"></a>Widok linii — dane rywalizacji
 Widok wiersze danych rywalizacji zawiera dane dotyczące wydajności dla instrukcji, które były wykonywane, gdy próbki zostały zebrane w ramach uruchomienia profilowania. W pliku źródłowym instrukcja może obejmować więcej niż jeden wiersz w pliku źródłowym, a pojedynczy wiersz może zawierać więcej niż jedną instrukcję.
@@ -63,7 +64,7 @@ Widok wiersze danych rywalizacji zawiera dane dotyczące wydajności dla instruk
 |**Początek linii źródłowej**|Numer wiersza w pliku źródłowym, w którym rozpocznie się wykonywanie instrukcji.|
 |**Koniec linii źródłowej**|Numer wiersza w pliku źródłowym, w którym następuje zakończenie instrukcji.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Instrukcje: dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)
 - [Widok linii](../profiling/lines-view.md)
 - [Widok linii — próbkowanie](../profiling/lines-view-dotnet-memory-sampling-data.md)

@@ -1,5 +1,6 @@
 ---
 title: Informacje o regułach wydajności | Microsoft Docs
+description: Dowiedz się, w jaki sposób reguły wydajności narzędzia profilowania zapewniają dodatkowe ostrzeżenia i informacje o wydajności aplikacji.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 59fc9424-76ca-4365-ae47-bb14a736c9c2
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5280226aaba40de42052d72e58928a53af53f631
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ca20a6a1ad687fde432d0b748aa8b87c823a1da2
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543640"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723286"
 ---
 # <a name="performance-rules-reference"></a>Zasady wydajności — Odwołanie
 Reguły wydajności narzędzia profilowania zawierają dodatkowe ostrzeżenia i informacje o wydajności aplikacji. Reguły wydajności analizują dane w przebiegu profilowania, który jest zbierany ze źródeł, takich jak liczniki wydajności systemu Windows i procesora. Komunikaty reguły są wyświetlane w oknie dane wyjściowe błędu [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] zintegrowanego środowiska deweloperskiego. Komunikaty są wyświetlane z jednym z następujących poziomów reguł:

@@ -1,5 +1,6 @@
 ---
 title: Określ środowisko uruchomieniowe .NET Framework | Microsoft Docs
+description: Dowiedz się, jak aplikacje mogą składać się z modułów, które zostały skompilowane przy użyciu różnych wersji .NET Framework czasie wykonywania.
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 27846b448f7e0667004bd25d24bd447fe43f8e51
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: e825b456a4524653df4e8c40793f16f3d8887665
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851128"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721830"
 ---
 # <a name="how-to-specify-the-net-framework-runtime"></a>Instrukcje: określanie środowiska uruchomieniowego programu .NET Framework
 
@@ -25,7 +26,7 @@ W wersji .NET Framework 4 aplikacje mogą składać się z modułów, które zos
 
 ## <a name="to-specify-the-net-framework-run-time-to-profile-when-starting-an-application-with-the-profiler"></a>Aby określić .NET Framework czas wykonywania do profilowania podczas uruchamiania aplikacji za pomocą profilera
 
-1. W **Eksplorator wydajności**kliknij prawym przyciskiem myszy sesję wydajności, kliknij polecenie **Właściwości**, a następnie kliknij przycisk **Zaawansowane**.
+1. W **Eksplorator wydajności** kliknij prawym przyciskiem myszy sesję wydajności, kliknij polecenie **Właściwości**, a następnie kliknij przycisk **Zaawansowane**.
 
      Pole listy **docelowa wersja środowiska CLR** zawiera **Automatyczne** i wersje środowiska uruchomieniowego .NET Framework, które są zainstalowane na komputerze.
 

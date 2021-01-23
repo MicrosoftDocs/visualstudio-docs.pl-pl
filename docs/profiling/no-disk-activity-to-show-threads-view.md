@@ -1,5 +1,6 @@
 ---
 title: Brak aktywności dysku do wyświetlenia (Widok wątków) | Microsoft Docs
+description: Dowiedz się, że nie można wyświetlić aktywności dysku dla bieżącego zakresu czasu w kanałach we/wy dysku. Aktywność dysku może być wyświetlana w przypadku powiększania lub przewinięcia.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,15 +13,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a88679d5423fc0ed2340638e5e1634bb3c81a20c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25ef8fd7d149a489458f28a7e276476c8fa09776
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62794458"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722896"
 ---
 # <a name="no-disk-activity-to-show-threads-view"></a>Brak aktywności dysku do wyświetlenia (Widok wątków)
 Nie można wyświetlić aktywności dysku dla bieżącego zakresu czasu w kanałach we/wy dysku. Aktywność dysku może być wyświetlana w przypadku powiększania lub przewinięcia. Upewnij się również, że żadne kanały dysku nie są ukryte.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Widok wątków](../profiling/threads-view-parallel-performance.md)

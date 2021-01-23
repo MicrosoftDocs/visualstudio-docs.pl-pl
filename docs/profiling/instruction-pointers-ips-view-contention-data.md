@@ -1,5 +1,6 @@
 ---
 title: Widok wskaźników instrukcji (IP) — dane rywalizacji | Microsoft Docs
+description: Dowiedz się, w jaki sposób widok adresów IP dla danych rywalizacji zawiera dane dotyczące instrukcji zestawu, które zostały zablokowane w przebiegu profilowania.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f37fb451238ec7ce6f48d8a4d3b91efa9ce04db7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d3877afb4beb48259d737112d61a36edc7a4fd4d
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74774315"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721596"
 ---
 # <a name="instruction-pointers-ips-view---contention-data"></a>Widok wskaźników instrukcji (IP) — dane rywalizacji
 Widok adresy IP danych rywalizacji zawiera dane dotyczące instrukcji zestawu, które zostały zablokowane w przebiegu profilowania.
@@ -43,7 +44,7 @@ Widok adresy IP danych rywalizacji zawiera dane dotyczące instrukcji zestawu, k
 |**Początek linii źródłowej**|Numer wiersza w pliku źródłowym, w którym rozpocznie się ta instrukcja.|
 |**Koniec linii źródłowej**|Numer wiersza w pliku źródłowym, w którym zostanie zakończona ta instrukcja.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Instrukcje: dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)
 - [Widok wskaźników instrukcji (IP)](../profiling/instruction-pointers-ips-view.md)
 - [Widok wskaźników instrukcji (IP) — próbkowanie](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)

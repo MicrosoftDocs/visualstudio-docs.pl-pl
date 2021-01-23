@@ -1,5 +1,6 @@
 ---
 title: Widok wskaźników instrukcji (IP) — dane próbkowania | Microsoft Docs
+description: Dowiedz się, w jaki sposób widok adresów IP danych próbkowania wyświetla listę danych wydajności dla instrukcji zestawu, które były bezpośrednio wykonywane podczas zbierania próbek.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 42398e044bfc06e41249b15ac9baeebcaebd19f6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f08821516ca25ed4e1746e13e506b9c0094b0227
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74774259"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721557"
 ---
 # <a name="instruction-pointers-ips-view---sampling-data"></a>Widok wskaźników instrukcji (IP) — dane próbkowania
 Widok adresów IP danych próbkowania wyświetla listę danych wydajności dla instrukcji zestawu, które były wykonywane bezpośrednio, gdy próbki zostały zebrane w ramach uruchomienia profilowania.
@@ -42,5 +43,5 @@ Widok adresów IP danych próbkowania wyświetla listę danych wydajności dla i
 |**Próbki wyłączne**|Całkowita liczba próbek zebranych podczas wykonywania instrukcji.|
 |**Wyłącznych próbek%**|Procent wszystkich próbek w przebiegu profilowania, który został zebrany podczas wykonywania instrukcji.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Widok wskaźników instrukcji (IP) — próbkowanie](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)

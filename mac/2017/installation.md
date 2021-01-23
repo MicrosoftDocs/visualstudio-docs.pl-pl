@@ -8,17 +8,17 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: c494f8d8543e0aa51b0c2be0ee52c0cb80aba982
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: be799764c3d6913cd2a13c6d631fc3450f8875a0
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862440"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719919"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>Zainstaluj program Visual Studio 2017 dla komputerów Mac
 
 > [!NOTE]
-> Program Visual Studio 2019 for Mac jest [teraz dostępny](installation.md?view=vsmac-2019). Starsze wersje Visual Studio dla komputerów Mac można znaleźć na [stronie pliki do pobrania](https://my.visualstudio.com/Downloads?q=Visual%20Studio%202017%20for%20Mac)programu Visual Studio.
+> Program Visual Studio 2019 for Mac jest [teraz dostępny](installation.md?view=vsmac-2019&preserve-view=true). Starsze wersje Visual Studio dla komputerów Mac można znaleźć na [stronie pliki do pobrania](https://my.visualstudio.com/Downloads?q=Visual%20Studio%202017%20for%20Mac)programu Visual Studio.
 
 ## <a name="downgrading-from-visual-studio-2019-for-mac"></a>Czy przechodzenie na starszą wersję z programu Visual Studio 2019 for Mac?
 
@@ -65,7 +65,7 @@ Do pracy z systemem iOS w programie Visual Studio potrzebne są następujące el
       - tylko system iOS — wybierz platformę **iOS** (należy pamiętać, że konieczne będzie zainstalowanie [**Xcode**](https://developer.apple.com/xcode/)).
       - Tylko system Android — Wybierz platformę **Android** (należy pamiętać, że należy również wybrać odpowiednie zależności).
       - Tylko Mac — wybierz platformę **macOS** (należy pamiętać, że konieczne będzie zainstalowanie [**Xcode**](https://developer.apple.com/xcode/)).
-      - W pełni Międzyplatformowe aplikacje Xamarin — wybierz platformy **Android**, **iOS**i **macOS** .
+      - W pełni Międzyplatformowe aplikacje Xamarin — wybierz platformy **Android**, **iOS** i **macOS** .
    * **Aplikacje .NET Core** — Wybierz platformę **.NET Core** .
    * **ASP.NET Core aplikacji sieci Web** — Wybierz platformę **.NET Core** .
    * **Programowanie gier dla wielu platform** w środowisku Unity — nie trzeba instalować dodatkowych platform poza Visual Studio dla komputerów Mac. Aby uzyskać więcej informacji na temat instalowania rozszerzenia aparatu Unity, zapoznaj się z [przewodnikiem Instalatora aparatu Unity](./setup-vsmac-tools-unity.md) .
@@ -126,6 +126,6 @@ W przypadku innych obciążeń zapoznaj się ze stroną [obciążenia](./workloa
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Acquisition/player]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Zainstaluj program Visual Studio 2017 (w systemie Windows)](/visualstudio/install/install-visual-studio)

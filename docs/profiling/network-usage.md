@@ -1,5 +1,6 @@
 ---
 title: Analizowanie użycia sieci w aplikacjach platformy UWP
+description: Dowiedz się, jak narzędzie diagnostyki sieci programu Visual Studio zbiera dane dotyczące operacji sieciowych wykonywanych przy użyciu interfejsu API Windows. Web. http.
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 00fd0c03bf460cd8b72a10d15501994d7a2aa10a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 429bc6c8c2d82e3c18c75132f71e60231b10f10d
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541716"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722909"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Analizowanie użycia sieci w aplikacjach platformy UWP
 Narzędzie Diagnostyka **sieci** programu Visual Studio zbiera dane dotyczące operacji sieciowych wykonywanych przy użyciu [interfejsu API Windows. Web. http](/uwp/api/windows.web.http). Analizowanie danych może pomóc w rozwiązywaniu problemów, takich jak problemy z dostępem i uwierzytelnianiem, niepoprawna pamięć podręczna oraz niska wydajność wyświetlania i pobierania.
@@ -72,7 +73,7 @@ Narzędzie Diagnostyka **sieci** programu Visual Studio zbiera dane dotyczące o
 
 3. Przycisk "Łatwa drukowanie" odpowiedzi (na karcie Body) może pomóc w analizie danych w postaci notacji JSON, XML, HTML, CSS, JavaScript i języka TypeScript przez zwiększenie czytelności zawartości.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Uruchamianie narzędzi profilowania z debugerem lub bez debugera](../profiling/running-profiling-tools-with-or-without-the-debugger.md)
 - [Blog programu Visual Studio: wprowadzenie do Inspektora sieci programu Visual Studio](https://devblogs.microsoft.com/visualstudio/)

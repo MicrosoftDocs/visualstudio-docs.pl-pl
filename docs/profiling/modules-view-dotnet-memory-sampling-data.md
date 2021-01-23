@@ -1,5 +1,6 @@
 ---
 title: Widok modułów — dane próbkowania pamięci platformy .NET | Microsoft Docs
+description: Dowiedz się więcej na temat widoku modułów danych przydziału pamięci platformy .NET, które są zbierane przy użyciu metody próbkowania.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9d0d9b7ab681a266115673b48f2c2604c5ff869c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e05a3e1d915853689c436b192de9e266e86b13d
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74772730"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723299"
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>Widok modułów — dane próbkowania pamięci platformy .NET
 Widok modułów danych przydziału pamięci platformy .NET zbieranych przy użyciu metody próbkowania grupuje dane pamięci według modułów, które zostały wykonane w przebiegu profilowania. Każdy moduł jest katalogiem głównym drzewa hierarchicznego. Funkcje modułu są wymienione pod węzłem modułu.
@@ -41,7 +42,7 @@ Widok modułów danych przydziału pamięci platformy .NET zbieranych przy użyc
 |**Bajty wyłączne**|-Dla funkcji — całkowita liczba bajtów, które zostały przydzielone przez funkcję. Liczba nie obejmuje bajtów, które zostały przydzielone w funkcjach, które zostały wywołane przez tę funkcję.<br />-Dla modułu, Suma bajtów wyłącznych, które zostały przydzielone przez funkcje w module.<br />— W przypadku linii lub instrukcji, całkowitej liczby obiektów przydzielonej przez ten wiersz lub instrukcję.|
 |**% Bajtów wyłącznych**|Procent wszystkich bajtów, które zostały przydzieloną w ramach uruchomienia profilowania, które były wyłącznych bajtów modułu, funkcji, wiersza lub instrukcji.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Instrukcje: dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)
 - [Widok modułów-Instrumentacja](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
 - [Widok modułów](../profiling/modules-view-sampling-data.md)

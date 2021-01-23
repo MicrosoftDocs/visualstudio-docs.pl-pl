@@ -1,5 +1,6 @@
 ---
 title: Widok wątków w wizualizatorze współbieżności | Microsoft Docs
+description: Sprawdź, czy w widoku wątki można określić, które wątki wykonuje kod w czasie wykonywania.
 ms.date: 11/04/2018
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4382a21a68848a758f3d4cd37a8528722927691c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 619e76b3db67314119782ebc3010465ac7fa622f
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62973760"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722727"
 ---
 # <a name="threads-view-in-the-concurrency-visualizer"></a>Widok wątków w wizualizatorze współbieżności
 
@@ -99,7 +100,7 @@ Wizualizator współbieżności przedstawia zależności między wątkami, dzię
 Aby określić, który wątek odblokował inny wątek, wybierz segment blokujący na osi czasu. Jeśli Wizualizator współbieżności może określić wątek odblokowywania, rysuje wiersz między wątkiem odblokowywania i segmentem wykonywania, który następuje po segmencie bloku. Wybierz kartę **Odblokuj stos** w dolnym okienku, aby wyświetlić odpowiedni stos wywołań.
 
 ## <a name="profile-reports"></a>Raporty profilowe
-Poniżej wykresu osi czasu jest okienkiem z kartami **raport o profilach**, **Bieżąca**i **odblokowywanie stosu** . Raporty są automatycznie aktualizowane, gdy zmienisz wybór osi czasu i wątków. W przypadku dużych śladów okienko raporty może być tymczasowo niedostępne podczas obliczania aktualizacji.
+Poniżej wykresu osi czasu jest okienkiem z kartami **raport o profilach**, **Bieżąca** i **odblokowywanie stosu** . Raporty są automatycznie aktualizowane, gdy zmienisz wybór osi czasu i wątków. W przypadku dużych śladów okienko raporty może być tymczasowo niedostępne podczas obliczania aktualizacji.
 
 ### <a name="profile-report-tab"></a>Karta raport o profilu
 
@@ -122,7 +123,7 @@ Karta **raport o profilu** zawiera raporty dotyczące kategorii i linków w lege
 
 - **Zarządzanie pamięcią** Raport **Zarządzanie pamięcią** zawiera wywołania, w których wystąpiły bloki zarządzania pamięcią, oraz łączny czas blokowania każdego stosu wywołań. Te informacje służą do identyfikowania obszarów, które mają nadmierne problemy z stronicowaniem lub odzyskiwaniem pamięci.  Aby uzyskać więcej informacji, zobacz [czas zarządzania pamięcią](../profiling/memory-management-time.md).
 
-- **Zastępujący** Raport **Preemption** przeniesień pokazuje, gdzie procesy w systemie zastępują bieżący proces, i poszczególne wątki, które zastąpiły wątki w bieżącym procesie. Te informacje służą do identyfikowania procesów i wątków, które są najbardziej odpowiedzialne za przeznaczenie. Aby uzyskać więcej informacji, zobacz [czas zastępujący](../profiling/preemption-time.md).
+- **Zastępujący** Raport  przeniesień pokazuje, gdzie procesy w systemie zastępują bieżący proces, i poszczególne wątki, które zastąpiły wątki w bieżącym procesie. Te informacje służą do identyfikowania procesów i wątków, które są najbardziej odpowiedzialne za przeznaczenie. Aby uzyskać więcej informacji, zobacz [czas zastępujący](../profiling/preemption-time.md).
 
 - **Przetwarzanie interfejsu użytkownika** Raport **przetwarzania interfejsu użytkownika** przedstawia wywołania, które są odpowiedzialne za bloki przetwarzania interfejsu użytkownika oraz łączny czas blokowania każdego stosu wywołań. Aby uzyskać więcej informacji, zobacz [czas przetwarzania interfejsu użytkownika](../profiling/ui-processing-time.md).
 
@@ -138,5 +139,5 @@ Na tej karcie jest wyświetlany stos wywołań dla wybranego punktu w segmencie 
 ### <a name="unblocking-stack-tab"></a>Odblokowywanie karty stosu
 Na tej karcie jest wyświetlany wątek odblokowywania wybranego wątku oraz odblokowywanie stosu wywołań.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Concurrency Visualizer](../profiling/concurrency-visualizer.md)

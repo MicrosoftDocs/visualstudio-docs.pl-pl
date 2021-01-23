@@ -1,5 +1,6 @@
 ---
 title: NameProfile | Microsoft Docs
+description: Dowiedz się, jak funkcja NameProfile przypisuje ciąg do określonego procesu lub wątku. Ponadto interfejs API NameProfile jest dostępny tylko dla profilowania Instrumentacji.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cc887c6bcef9f8b7307d9d6aa570d6458d87f377
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3bd210f1d92245889be8d18156c43e0cad7ee3db
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541703"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722922"
 ---
 # <a name="nameprofile"></a>NameProfile
 `NameProfile`Funkcja przypisuje ciąg do określonego procesu lub wątku.
@@ -91,9 +92,9 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 
 |Element|Wartość|
 |-|-|
-|**Nagłówki**|Uwzględnij *VSPerf. h*|
+|**Nagłówek**|Uwzględnij *VSPerf. h*|
 |**Biblioteki**|Użyj *VSPerf. lib*|
-|**Kod Unicode**|Zaimplementowane jako `NameProfileW` (Unicode) i `NameProfileA` (ANSI).|
+|**Unicode**|Zaimplementowane jako `NameProfileW` (Unicode) i `NameProfileA` (ANSI).|
 
 ## <a name="example"></a>Przykład
  Poniższy kod ilustruje wywołanie funkcji NameProfile. W przykładzie założono użycie makr ciągu Win32 i ustawień kompilatora dla ANSI, aby określić, czy kod wywołuje funkcję z obsługą ANSI.
@@ -133,5 +134,5 @@ void ExerciseNameProfile()
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dokumentacja interfejsu API programu Visual Studio profiler (natywna)](../profiling/visual-studio-profiler-api-reference-native.md)

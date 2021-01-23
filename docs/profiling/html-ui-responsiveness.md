@@ -1,5 +1,6 @@
 ---
 title: Analizuj czas odpowiedzi interfejsu użytkownika HTML w aplikacjach platformy UWP | Microsoft Docs
+description: Dowiedz się, jak izolować problemy z wydajnością w aplikacjach przy użyciu profilera czas odpowiedzi interfejsu użytkownika, narzędzia wydajności dostępnego dla aplikacji uniwersalnych systemu Windows.
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -17,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 9fdc2b7fc459d655748444759913cab903dfe782
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6545fb206096c7b74a7016b506ae3bcade7f136c
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331417"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721882"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analizuj czas odpowiedzi interfejsu użytkownika HTML w aplikacjach uniwersalnych systemu Windows
 W tym temacie opisano sposób izolowania problemów z wydajnością aplikacji przy użyciu profilera czas odpowiedzi interfejsu użytkownika, narzędzia wydajności dostępnego dla aplikacji uniwersalnych systemu Windows.
@@ -58,7 +59,7 @@ W tym temacie opisano sposób izolowania problemów z wydajnością aplikacji pr
 
          Za pomocą tej opcji można analizować wydajność aplikacji zainstalowanych na komputerze, gdy nie masz dostępu do kodu źródłowego. Ta opcja może być również przydatna, gdy chcesz tylko analizować wydajność dowolnej aplikacji poza własnym programowaniem aplikacji.
 
-3. Z **dostępnych narzędzi**wybierz pozycję **czas odpowiedzi interfejsu użytkownika HTML**, a następnie wybierz polecenie **Uruchom**.
+3. Z **dostępnych narzędzi** wybierz pozycję **czas odpowiedzi interfejsu użytkownika HTML**, a następnie wybierz polecenie **Uruchom**.
 
 4. Po uruchomieniu profilera czas odpowiedzi interfejsu użytkownika okno kontroli konta użytkowników może zażądać uprawnień do uruchamiania Collector.exe funkcji ETW programu Visual Studio. Wybierz opcję **tak**.
 
@@ -188,7 +189,7 @@ if (performance.mark && performance.measure) {
 - Zdarzenie nawigacji, które występuje po przejściu do innej strony. Etykietka narzędzia dla zdarzenia zawiera adres URL strony docelowej.
 
 ### <a name="view-cpu-utilization"></a><a name="CPUUtilization"></a> Wyświetl użycie procesora CPU
- Wykres użycia procesora CPU umożliwia zidentyfikowanie okresów czasu, w którym występuje zbyt duże działanie procesora CPU. Zawiera informacje na temat średniego użycia procesora przez aplikację w danym okresie czasu. Informacje są kodowane kolorami, aby reprezentować następujące kategorie: **ładowanie**, **wykonywanie skryptów**, odzyskiwanie pamięci (**GC**), **Style**, **renderowanie**i **Dekodowanie obrazu**. Więcej informacji o tych kategoriach znajduje się w sekcji [Informacje o zdarzeniu profilera](#profiler-event-reference) w dalszej części tego tematu.
+ Wykres użycia procesora CPU umożliwia zidentyfikowanie okresów czasu, w którym występuje zbyt duże działanie procesora CPU. Zawiera informacje na temat średniego użycia procesora przez aplikację w danym okresie czasu. Informacje są kodowane kolorami, aby reprezentować następujące kategorie: **ładowanie**, **wykonywanie skryptów**, odzyskiwanie pamięci (**GC**), **Style**, **renderowanie** i **Dekodowanie obrazu**. Więcej informacji o tych kategoriach znajduje się w sekcji [Informacje o zdarzeniu profilera](#profiler-event-reference) w dalszej części tego tematu.
 
  Wykres użycia procesora CPU przedstawia ilość czasu poświęcanego na wszystkie wątki aplikacji, łącząc wartości użycia procesora CPU dla jednego lub większej liczby procesorów CPU w jedną wartość procentową. Wartość użycia procesora CPU może przekroczyć 100 procent, gdy jest używany więcej niż jeden procesor CPU.
 
@@ -325,12 +326,12 @@ if (performance.mark && performance.measure) {
 
   W tej tabeli przedstawiono zdarzenia i ich opisy:
 
-|Wydarzenie|Kategoria zdarzenia|Występuje, gdy|
+|Zdarzenie|Kategoria zdarzenia|Występuje, gdy|
 |-----------|--------------------|-----------------|
-|Analizowanie kodu CSS|Ładowaniu|Napotkano nową zawartość CSS i podjęto próbę przeanalizowania zawartości CSS.|
-|Analiza kodu HTML|Ładowaniu|Napotkano nową zawartość HTML i podjęto próbę przeanalizowania zawartości w węzłach i wstawienia zawartości do drzewa modelu DOM.|
-|Żądanie HTTP|Ładowaniu|Znaleziono zasób zdalny w modelu DOM lub utworzono element XMLHttpRequest, który spowodowało żądanie HTTP.|
-|Pobieranie spekulacyjne|Ładowaniu|Zawartość HTML strony przeszukał wymagane zasoby, aby kolejne żądania HTTP dotyczące zasobów mogły być zaplanowane szybko.|
+|Analizowanie kodu CSS|Ładowanie|Napotkano nową zawartość CSS i podjęto próbę przeanalizowania zawartości CSS.|
+|Analiza kodu HTML|Ładowanie|Napotkano nową zawartość HTML i podjęto próbę przeanalizowania zawartości w węzłach i wstawienia zawartości do drzewa modelu DOM.|
+|Żądanie HTTP|Ładowanie|Znaleziono zasób zdalny w modelu DOM lub utworzono element XMLHttpRequest, który spowodowało żądanie HTTP.|
+|Pobieranie spekulacyjne|Ładowanie|Zawartość HTML strony przeszukał wymagane zasoby, aby kolejne żądania HTTP dotyczące zasobów mogły być zaplanowane szybko.|
 |Funkcja wywołania zwrotnego ramki animacji|Obsługa skryptów|Przeglądarka przerenderuje kolejną ramkę i wywołała funkcję wywołania zwrotnego podaną przez aplikację.|
 |Wydarzenie DOM|Obsługa skryptów|Wystąpiło zdarzenie DOM i zostało wykonane.<br /><br /> `context`Właściwość dla zdarzenia dom, taka jak `DOMContentLoaded` lub `click` , jest pokazywana w nawiasach.|
 |Odbiornik zdarzeń|Obsługa skryptów|Odbiornik zdarzeń został wywołany i wykonany.|
@@ -346,8 +347,8 @@ if (performance.mark && performance.measure) {
 |Obrazu|Renderowanie|Wprowadzono zmiany wizualne w modelu DOM i podjęto próbę ponownego renderowania części strony.|
 |Warstwa renderowania|Renderowanie|Wprowadzono zmiany wizualne do niezależnie renderowanego fragmentu modelu DOM (zwanego warstwą) i zmiany wymagały renderowania części strony.|
 |Dekodowanie obrazu|Dekodowanie obrazu|Obraz został dołączony do modelu DOM i podjęto próbę dekompresowania i zdekodowania obrazu z oryginalnego formatu do mapy bitowej.|
-|Klatka|Brak|Wprowadzono zmiany wizualne w modelu DOM, które wymagały narysowania wszystkich części strony, których dotyczą. Jest to zdarzenie generowane przez narzędzie używane do grupowania.|
-|Miara użytkownika|Brak|Scenariusz specyficzny dla aplikacji został zmierzony przy użyciu `performance.measure` metody. Jest to zdarzenie generowane przez narzędzie służące do analizowania kodu.|
+|Klatka|Nie dotyczy|Wprowadzono zmiany wizualne w modelu DOM, które wymagały narysowania wszystkich części strony, których dotyczą. Jest to zdarzenie generowane przez narzędzie używane do grupowania.|
+|Miara użytkownika|Nie dotyczy|Scenariusz specyficzny dla aplikacji został zmierzony przy użyciu `performance.measure` metody. Jest to zdarzenie generowane przez narzędzie służące do analizowania kodu.|
 
 ## <a name="additional-information"></a>Dodatkowe informacje
 
@@ -357,5 +358,5 @@ if (performance.mark && performance.measure) {
 
 - Aby uzyskać informacje na temat modelu wykonywania jednowątkowego i wydajności, zobacz [wykonywanie kodu](/previous-versions/windows/apps/hh781217\(v\=win.10\)).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Pierwsze spojrzenie na narzędzia profilowania](../profiling/profiling-feature-tour.md)

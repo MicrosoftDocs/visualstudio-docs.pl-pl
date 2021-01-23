@@ -1,5 +1,6 @@
 ---
 title: Jednoczesne używanie wielu narzędzi profilera | Microsoft Docs
+description: Dowiedz się, jak Profiler wydajności został zaprojektowany z myślą o tym, że w tej samej sesji można używać wielu narzędzi, aby pomóc w zrozumieniu problemów z wydajnością.
 ms.date: 4/29/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +10,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: f72757d46496c3990c0a0d4205753d185078eac7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a4c4658282f15b6b34562e51be94d9f2be195a8
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332041"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721180"
 ---
 # <a name="using-multiple-profiler-tools-simultaneously"></a>Jednoczesne używanie wielu narzędzi profilera
 
@@ -31,7 +32,7 @@ Podczas analizy operacje filtrowania czasu są stosowane między narzędziami, d
 
 ![Filtrowanie czasu centrum diag](../profiling/media/diaghubtimefiltering.png "Filtrowanie czasu centrum diag")
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Optymalizowanie ustawień profilera](../profiling/optimize-profiler-settings.md)
 - [Uruchamianie narzędzi profilowania z debugerem lub bez niego](../profiling/running-profiling-tools-with-or-without-the-debugger.md)

@@ -1,5 +1,6 @@
 ---
 title: Czas zastępujący | Microsoft Docs
+description: Dowiedz się więcej na temat czasu Premption i tego, że segmenty na osi czasu są skojarzone z czasem blokowania, który jest kategoryzowany jako pre-wywłaszczania.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de7a02f7247e09876bc4598d44fc1c395161ebc2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a102b11fdc7608b94b97105b061e28860f41a9a1
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62935896"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719516"
 ---
 # <a name="preemption-time"></a>Czas zastępujący
 Te segmenty na osi czasu są skojarzone z czasem blokowania, który jest kategoryzowany jako wywłaszczania. Ta kategoria oznacza, że wątek jest przełączany z jednego z następujących powodów:
@@ -30,5 +31,5 @@ Te segmenty na osi czasu są skojarzone z czasem blokowania, który jest kategor
 
   Etykietka narzędzia dla segmentu przedwypartea wyświetla nazwę procesu lub wątku, który spowodował wystąpienie klasy pre-wywłaszczania. Nie oznacza to jednak, że proces lub wątek, który przeprzejął w rzeczywistości faktycznie działał w okresie przenoszonego.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Widok wątków](../profiling/threads-view-parallel-performance.md)

@@ -1,5 +1,6 @@
 ---
 title: Widoki raportów wydajności | Microsoft Docs
+description: Dowiedz się, jak widoki plików danych profilowania są wyświetlane w zintegrowanych environmentIDE programistycznych programu Visual Studio.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cfb0d9ae2d677b1cc9dc828ffaecd5c0f71bfd5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 611c31027bd725d8a1a98e6cb2e76d544743c811
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74772291"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722753"
 ---
 # <a name="performance-report-views"></a>Widoki raportów wydajności
 Ta sekcja zawiera informacje dotyczące raportów i widoków [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania. Widoki plików danych profilowania są wyświetlane w [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] zintegrowanych environmentIDE programistycznych. Raporty są generowane za pomocą narzędzia wiersza polecenia [VSPerfReport](../profiling/vsperfreport.md) .
@@ -52,5 +53,5 @@ Ta sekcja zawiera informacje dotyczące raportów i widoków [!INCLUDE[vsprvs](.
 
  Informacje referencyjne dotyczące widoku interakcji i raportu o plikach danych profilowania, które obejmują dane interakcji między warstwami.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Analizowanie danych dotyczących narzędzi do oceny wydajności](../profiling/analyzing-performance-tools-data.md)

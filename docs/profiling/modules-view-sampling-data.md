@@ -1,5 +1,6 @@
 ---
 title: Widok modułów — dane próbkowania | Microsoft Docs
+description: Dowiedz się, w jaki sposób widok modułów danych próbkowania przedstawia dane wydajności pogrupowane według modułów, które zostały próbkowane w danych profilowania.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ead219ddf482af5917842118d386c6fefe67973
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0de246e5ecdc51ff6471eeed242d638fee261c8c
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74772717"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722961"
 ---
 # <a name="modules-view---sampling-data"></a>Widok modułów — dane próbkowania
 Widok moduły danych próbkowania przedstawia dane wydajności pogrupowane według modułów, które zostały próbkowane w danych profilowania. Każdy moduł jest katalogiem głównym drzewa hierarchicznego. Przykładowe funkcje modułu są wyświetlane poniżej węzła moduł.
@@ -41,7 +42,7 @@ Widok moduły danych próbkowania przedstawia dane wydajności pogrupowane wedł
 |**Próbki wyłączne**|-Dla funkcji, liczba próbek stosu wywołań, w których ta funkcja była wykonywana bezpośrednio; oznacza to, że liczba próbek, w których ta funkcja znajdowała się w górnej części stosu wywołań.<br />-Dla modułu, suma próbek wyłącznych funkcji w module.<br />-Dla linii lub instrukcji, liczba próbek, w których wykonano ten wiersz lub instrukcję.|
 |**Wyłącznych próbek%**|-Dla funkcji lub modułu, procent wszystkich próbek w przebiegu profilowania, które były wyłącznymi próbkami tej funkcji lub modułu.<br />— W przypadku linii lub instrukcji, procent wszystkich próbek w profilowania, w których uruchomiono ten wiersz lub instrukcję.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Widok modułów-próbkowanie](../profiling/modules-view-dotnet-memory-sampling-data.md)
 - [Widok modułów-Instrumentacja](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
 - [Widok modułów](../profiling/modules-view-instrumentation-data.md)

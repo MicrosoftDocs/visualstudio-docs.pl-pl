@@ -1,5 +1,6 @@
 ---
 title: VSPerfCmd | Microsoft Docs
+description: Dowiedz się, jak narzędzie VSPerfCmd.exe służy do uruchamiania i zatrzymywania zbierania danych o wydajności. Poznaj również różne opcje narzędzia VSPerfCmd.
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: caf145213c41215d518cf42d0a69975c8580e817
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 90d263052c543cbf7e0f3207d9980bd04c13e990
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330016"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719191"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 Narzędzie *VSPerfCmd.exe* służy do uruchamiania i zatrzymywania zbierania danych o wydajności. Używa następującej składni:
@@ -33,17 +34,17 @@ VSPerfCmd [/U] [/options]
 
 |Opcja|Opis|
 |------------|-----------------|
-|**U**|Przekierowane dane wyjściowe konsoli są zapisywane w formacie Unicode. Musi być pierwszą określoną opcją.|
+|**'T**|Przekierowane dane wyjściowe konsoli są zapisywane w formacie Unicode. Musi być pierwszą określoną opcją.|
 |[Rozpocznij](../profiling/start.md) **:**`mode`|Uruchamia usługę profilowania w określonym trybie.|
 |[Dane wyjściowe](../profiling/output.md) **:**`filename`|Określa nazwę pliku wyjściowego. Użyj tylko z **menu Start**.|
 |[CrossSession&#124;CS](../profiling/crosssession.md)|Włącza profilowanie między sesjami systemu Windows. Używać tylko z poleceniem **Start**, **Attach** **lub Launch**.|
 |[Użytkownik](../profiling/user-vsperfcmd.md) **:**[ `domain\` ]`username`|Umożliwia określonemu kontu dostęp do usługi profilera. Użyj tylko z **menu Start**.|
 |[WaitStart](../profiling/waitstart.md)[**:** `n` ]|Czeka na zainicjowanie rejestratora zbierania danych. Jeśli `n` jest określony, **VSPerfCmd** będzie oczekiwać co najwyżej `n` sekund. Jeśli `n` nie jest określony, **VSPerfCmd** będzie czekać w nieskończoność. Ułatwia to użycie **VSPerfCmd** w ramach procesu wsadowego.|
-|[Licznik](../profiling/counter.md) **:**`cfg`|Gdy używana jest przykładowa Metoda profilowania, określa licznik procesora i liczbę zdarzeń, które mają być używane jako interwał próbkowania. Można próbkować tylko jedną wartość licznika.<br /><br /> Gdy używana jest metoda profilowania instrumentacji, określa licznik procesora CPU do zebrania w każdym punkcie Instrumentacji. Użyj tylko z poleceniem **Start:** `Trace` , **Attach**lub **Launch**.|
+|[Licznik](../profiling/counter.md) **:**`cfg`|Gdy używana jest przykładowa Metoda profilowania, określa licznik procesora i liczbę zdarzeń, które mają być używane jako interwał próbkowania. Można próbkować tylko jedną wartość licznika.<br /><br /> Gdy używana jest metoda profilowania instrumentacji, określa licznik procesora CPU do zebrania w każdym punkcie Instrumentacji. Użyj tylko z poleceniem **Start:** `Trace` , **Attach** lub **Launch**.|
 |[QueryCounters](../profiling/querycounters.md)|Przedstawia listę prawidłowych liczników procesora dla bieżącej maszyny.|
 |[WinCounter](../profiling/wincounter.md) **:** *ścieżka*|Określa zdarzenie licznika wydajności systemu Windows, które ma zostać dołączone do danych znacznika profilu. Użyj tylko z **menu Start**.|
 |[Autoznacznik](../profiling/automark.md) **:** *n*|Określa interwał czasu (w milisekundach) między zdarzeniami zbierania danych licznika wydajności systemu Windows. Używany z **WinCounter**.|
-|[Zdarzenia](../profiling/events-vsperfcmd.md) **:**`option`|Kontroluje zbieranie danych o określonych zdarzeniach śledzenia zdarzeń systemu Windows (ETW). Dane ETW są zbierane do programu. plik *ITL* , który nie jest profilem danych (.* VSP*).|
+|[Zdarzenia](../profiling/events-vsperfcmd.md) **:**`option`|Kontroluje zbieranie danych o określonych zdarzeniach śledzenia zdarzeń systemu Windows (ETW). Dane ETW są zbierane do programu. plik *ITL* , który nie jest profilem danych (.*VSP*).|
 |[Stan](../profiling/status.md)|Wyświetla stan profilera, informacje o procesach, które są aktualnie profilowane, oraz kont, które mają uprawnienia do sterowania profilerem.|
 |[Zamknięcie](../profiling/shutdown.md)[**:** `n` ]|Zamyka plik danych profilowania i wyłącza Profiler.|
 |[GlobalOn](../profiling/globalon-and-globaloff.md)|Wznawia zbieranie danych po wywołaniu **VSPerfCmdGlobalOff**.|
@@ -64,7 +65,7 @@ VSPerfCmd [/U] [/options]
 |[Konsola](../profiling/console.md)|Uruchamia określone polecenie w nowym oknie wiersza polecenia.|
 |[Attach](../profiling/attach.md) **:** *PID*[**,**_PID_]|Rozpoczyna profilowanie określonych procesów. Procesy mogą być identyfikowane przez identyfikator procesu lub nazwę procesu.|
 |[Odłącz](../profiling/detach.md)[**:**_PID_[,_PID_]]|Powoduje zatrzymanie profilowania określonych procesów. Procesy mogą być identyfikowane przez identyfikator procesu lub nazwę procesu. Jeśli żaden proces nie zostanie określony, profilowanie zostanie zatrzymane dla wszystkich procesów.|
-|[GC](../profiling/gc-vsperfcmd.md)[**:**{**Allocation** `&#124;` **okres istnienia**alokacji}]|Zbiera dane alokacji pamięci .NET i okresu istnienia obiektu. Użyj tylko z opcją **VSPerfCmdLaunch** .|
+|[GC](../profiling/gc-vsperfcmd.md)[**:**{ `&#124;` **okres istnienia** alokacji}]|Zbiera dane alokacji pamięci .NET i okresu istnienia obiektu. Użyj tylko z opcją **VSPerfCmdLaunch** .|
 
 ### <a name="sample-interval-options"></a>Opcje interwału próbkowania
  Poniższe opcje określają typ i czas trwania interwałów próbkowania. Wartość domyślna to **Timer**. Licznik procesora można także określić jako interwał przy użyciu opcji **licznik** . Te opcje można określić tylko przy użyciu opcji **Uruchom** lub przy pierwszym **dołączeniu** sesji profilowania.
@@ -90,7 +91,7 @@ VSPerfCmd [/U] [/options]
 ## <a name="vsperfcmd-driver"></a>VSPerfCmd
  Opcja **VSPerfCmd** = jest obecnie przestarzała. Użyj opcji **administracyjnych VSPerfCmd** dla tej funkcji.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [VSInstr](../profiling/vsinstr.md)
 - [VSPerfMon](../profiling/vsperfmon.md)
 - [VSPerfReport](../profiling/vsperfreport.md)

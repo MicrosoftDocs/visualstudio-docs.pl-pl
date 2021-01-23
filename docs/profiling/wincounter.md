@@ -1,5 +1,6 @@
 ---
 title: WinCounter | Microsoft Docs
+description: Dowiedz się więcej na temat opcji WinCounter, w której określono licznik wydajności systemu Windows lub aplikacji, który ma być zbierany w ustalonych odstępach czasu podczas przebiegu profilu.
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: ff319ffc-f249-4c3f-9eb2-06e392e3ae80
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 672d472d4e592782f7ae06920c518b154fba6cba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 595a8003992c92871a8476743288d3072aff63c8
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329877"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723052"
 ---
 # <a name="wincounter"></a>WinCounter
 Opcja **WinCounter** Określa licznik wydajności systemu Windows lub aplikacji do zebrania w ustalonych odstępach czasu podczas przebiegu profilu. Liczniki wydajności systemu Windows i aplikacji są wyświetlane jako znaczniki w pliku danych profilowania. Można określić wiele liczników wydajności do zebrania w osobnych opcjach.
@@ -51,7 +52,7 @@ VSPerfCmd.exe /Start:Method /Wincounter:Path [/WinCounter:Path] [AutoMark:Millis
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /WinCounter:"\Processor(0)\% Processor Time" /WinCounter:"\System\Context Switches/sec" /AutoMark:1000
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [Profile aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)

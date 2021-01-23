@@ -1,5 +1,6 @@
 ---
 title: Wyświetlanie ostrzeżeń dotyczących wydajności | Microsoft Docs
+description: Dowiedz się, jak ostrzeżenia o wydajności programu Visual Studio narzędzia profilowania narzędzia profilowania wskazują problemy w profilowanej aplikacji, która może spowolnić wykonywanie programu.
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: c6ce4e9c-4677-40cc-b1af-d68e9f3249f2
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: acd6fea43fcf256b91b4bdafad10f47c11523f92
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: f009c3b6c188f9785d9af33184627864f95b56e9
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851323"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721739"
 ---
 # <a name="how-to-view-performance-warnings"></a>Instrukcje: wyświetlanie ostrzeżeń dotyczących wydajności
 Ostrzeżenia dotyczące wydajności [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania narzędzia profilowania wskazują problemy w profilowanej aplikacji, która może spowalniać wykonywanie programu. Ostrzeżenia mogą również wskazywać, że możesz chcieć zmienić metody zbierania danych, aby zebrać bardziej przydatne dane. Ostrzeżenia o wydajności są generowane automatycznie w sesji profilowania i pojawiają się w oknie **Lista błędów** , gdy plik danych profilowania zostanie otwarty w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE.

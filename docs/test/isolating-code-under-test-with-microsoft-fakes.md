@@ -12,12 +12,12 @@ author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: aa1f0505d37059ce65da80fcf483473610cf2f6d
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: ba3baa1ff06da6497ddc663f888e7c93292d5b98
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329539"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719659"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Izolowanie testowanego kodu za pomocą struktury Microsoft Fakes
 
@@ -255,11 +255,11 @@ Można również utworzyć podkładki dla konkretnych wystąpień, konstruktoró
 ## <a name="using-microsoft-fakes-in-the-ci"></a>Korzystanie z elementów sztucznych firmy Microsoft w CI
 
 ### <a name="microsoft-fakes-assembly-generation"></a>Generacja zestawu elementów sztucznych firmy Microsoft
-Ponieważ fałszywe firmy Microsoft wymagają Visual Studio Enterprise, generacja zestawów elementów sztucznych wymaga skompilowania projektu za pomocą [zadania kompilacji programu Visual Studio](/azure/devops/pipelines/tasks/build/visual-studio-build?view=azure-devops).
+Ponieważ fałszywe firmy Microsoft wymagają Visual Studio Enterprise, generacja zestawów elementów sztucznych wymaga skompilowania projektu za pomocą [zadania kompilacji programu Visual Studio](/azure/devops/pipelines/tasks/build/visual-studio-build?view=azure-devops&preserve-view=true).
 
 ::: moniker range=">=vs-2019"
 > [!NOTE]
-> Alternatywą dla tego jest sprawdzenie zestawów elementów sztucznych w CI i użycie [zadania MSBuild](../msbuild/msbuild-task.md?view=vs-2019). Gdy to zrobisz, musisz upewnić się, że masz odwołanie do zestawu dla wygenerowanego zestawu elementów sztucznych w projekcie testowym, podobnie jak w poniższym fragmencie kodu:
+> Alternatywą dla tego jest sprawdzenie zestawów elementów sztucznych w CI i użycie [zadania MSBuild](../msbuild/msbuild-task.md?view=vs-2019&preserve-view=true). Gdy to zrobisz, musisz upewnić się, że masz odwołanie do zestawu dla wygenerowanego zestawu elementów sztucznych w projekcie testowym, podobnie jak w poniższym fragmencie kodu:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -273,10 +273,10 @@ To odwołanie jest wymagane do dodania w ręcznie określonych projektach w styl
 ::: moniker-end
 
 ### <a name="running-microsoft-fakes-tests"></a>Uruchamianie testów sztucznych firmy Microsoft
-Tak długo, jak zestawy sztuczne firmy Microsoft znajdują się w skonfigurowanym `FakesAssemblies` katalogu (ustawienie domyślne `$(ProjectDir)FakesAssemblies` ), można uruchomić testy przy użyciu [zadania VSTest](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops).
+Tak długo, jak zestawy sztuczne firmy Microsoft znajdują się w skonfigurowanym `FakesAssemblies` katalogu (ustawienie domyślne `$(ProjectDir)FakesAssemblies` ), można uruchomić testy przy użyciu [zadania VSTest](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops&preserve-view=true).
 
 ::: moniker range=">=vs-2019"
-Testowanie rozproszone z projektami [VSTest zadania](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops) .NET Core przy użyciu elementów sztucznych firmy Microsoft wymaga programu Visual Studio 2019 Update 9 (wersja zapoznawcza) `20201020-06` lub nowszego.
+Testowanie rozproszone z projektami [VSTest zadania](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops&preserve-view=true) .NET Core przy użyciu elementów sztucznych firmy Microsoft wymaga programu Visual Studio 2019 Update 9 (wersja zapoznawcza) `20201020-06` lub nowszego.
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"

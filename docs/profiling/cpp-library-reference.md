@@ -1,5 +1,7 @@
 ---
 title: Dokumentacja biblioteki języka C++ | Microsoft Docs
+description: Ta sekcja zawiera informacje referencyjne dotyczące zestawu SDK wizualizatora współbieżności.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d15b749d0564010cf6a67527f456a76a9db885cc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: efe02bbd2e31792e1feb306ba331fa3bc4f736f9
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329186"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723013"
 ---
 # <a name="c-library-reference"></a>Dokumentacja biblioteki C++
 
@@ -28,6 +30,6 @@ Ta sekcja zawiera informacje referencyjne dotyczące zestawu SDK wizualizatora w
 
 [Przestrzeń nazw współbieżności (Concurrency Visualizer)](../profiling/concurrency-namespace-concurrency-visualizer.md)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Concurrency Visualizer SDK](../profiling/concurrency-visualizer-sdk.md)

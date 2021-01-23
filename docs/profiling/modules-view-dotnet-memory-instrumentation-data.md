@@ -1,5 +1,6 @@
 ---
 title: Widok modułów — dane Instrumentacji pamięci platformy .NET | Microsoft Docs
+description: Dowiedz się, w jaki sposób widok modułów w danych alokacji pamięci .NET zbieranych za pomocą metody instrumentacji grupuje dane dotyczące pamięci i czasu według modułu.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 521c884a0a25d7fa975a4039e6ec3e36ff4dc020
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6a0a42fdc83891b96bb3fe036ebf7515e3d6a42
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778547"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723312"
 ---
 # <a name="modules-view---net-memory-instrumentation-data"></a>Widok modułów — dane Instrumentacji pamięci platformy .NET
 Widok modułów danych przydziału pamięci platformy .NET zbieranych przy użyciu metody instrumentacji grupuje dane dotyczące pamięci i chronometrażu przez moduły, które zostały wykonane w przebiegu profilowania. Dane profilowania dla funkcji modułu są wymienione pod węzłem modułu.
@@ -98,7 +99,7 @@ Widok modułów danych przydziału pamięci platformy .NET zbieranych przy użyc
 |**Maksymalny czas wyłączny aplikacji**|— W przypadku funkcji maksymalny czas wyłączny aplikacji wywołania tej funkcji.<br />— W przypadku modułu maksymalna, wyłączny czas aplikacji dla wszystkich wywołań funkcji w module.|
 |**Minimalny czas wyłączny aplikacji**|— W przypadku funkcji jest to minimalny czas wyłączny aplikacji wywołania tego modułu lub funkcji.<br />— W przypadku modułu minimalna, wyłączny czas wszystkich wywołań funkcji w module.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Widok modułów-próbkowanie](../profiling/modules-view-dotnet-memory-sampling-data.md)
 - [Widok modułów](../profiling/modules-view-instrumentation-data.md)
 - [Widok modułów](../profiling/modules-view-sampling-data.md)

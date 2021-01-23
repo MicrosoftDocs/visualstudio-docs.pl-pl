@@ -1,5 +1,6 @@
 ---
 title: 'Przewodnik: korzystanie z interfejsów API profilera | Microsoft Docs'
+description: Dowiedz się, jak za pomocą interfejsów API profilera ograniczyć ilość danych zbieranych podczas profilowania Instrumentacji.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 81071a44b51b1441782b25741126873fc720ed7b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 94276e294bfcf342cfc81b14005205a8f1e97949
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779886"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723091"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Przewodnik: Korzystanie z interfejsów API profilera
 
@@ -32,7 +33,7 @@ W przewodniku użyto aplikacji języka C# do zademonstrowania sposobu używania 
  Program Visual Studio profiler umożliwia ograniczenie zbierania danych. Ten Instruktaż zawiera przykład sposobu ograniczania zbierania danych przy użyciu interfejsów API profilera. Profiler programu Visual Studio udostępnia interfejs API służący do kontrolowania zbierania danych z poziomu aplikacji.
 
  ::: moniker range="vs-2017"
- W przypadku kodu natywnego interfejsy API programu Visual Studio profiler są w *VSPerf.dll*. Plik nagłówkowy, *VSPerf. h*i Biblioteka Imports *VSPerf. lib*znajdują się w katalogu *programu Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK* .  W przypadku aplikacji 64-bitowych folder jest w *programie Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK*
+ W przypadku kodu natywnego interfejsy API programu Visual Studio profiler są w *VSPerf.dll*. Plik nagłówkowy, *VSPerf. h* i Biblioteka Imports *VSPerf. lib* znajdują się w katalogu *programu Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK* .  W przypadku aplikacji 64-bitowych folder jest w *programie Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK*
  ::: moniker-end
 
  W przypadku kodu zarządzanego interfejs API profilera znajduje się w *Microsoft.VisualStudio.Profiler.dll*. Ta biblioteka DLL znajduje się w katalogu *programu Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* . W przypadku aplikacji 64-bitowych folder jest w *programie Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*. Aby uzyskać więcej informacji, zobacz [Profiler](/previous-versions/ms242704(v=vs.140)).
@@ -166,7 +167,7 @@ DataCollection.CurrentId);
 
      Z. plik *CSV* jest tworzony w bieżącym katalogu z wynikowymi danymi o wydajności.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Profiler](/previous-versions/ms242704(v=vs.140))
 - [Dokumentacja interfejsu API programu Visual Studio profiler (natywna)](../profiling/visual-studio-profiler-api-reference-native.md)

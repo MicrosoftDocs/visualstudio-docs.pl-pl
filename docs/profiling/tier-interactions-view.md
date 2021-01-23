@@ -1,5 +1,6 @@
 ---
 title: Widok interakcji między warstwami | Microsoft Docs
+description: Dowiedz się, jak profilowanie interakcji między warstwami zawiera informacje o czasach wykonywania w funkcjach aplikacji wielowarstwowych komunikujących się z bazami danych.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d188d6c3268c8ee9f066eba1b6a57e469f34a78e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9021f814f093151c6d65beaececc0fa99a662d44
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778144"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722519"
 ---
 # <a name="tier-interactions-view"></a>Widok interakcji warstwowych
 

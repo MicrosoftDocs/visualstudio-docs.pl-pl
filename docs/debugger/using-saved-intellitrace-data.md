@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42f355a0a8d04e48a2b9d14d0d62edf2cd949a87
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 070bcc04d79231d074e30d1e87d3ad512ce5dca1
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150941"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723039"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>Korzystanie z zapisanych danych IntelliTrace (C#, Visual Basic, C++)
 
@@ -192,7 +192,7 @@ Przejdź do określonych punktów w wykonaniu aplikacji po rozpoczęciu debugowa
     |**Poziomie**|**Poziomie**|
     |**Identyfikator kategorii**|**Identyfikator kategorii**|
     |**Kategoria**|**Kategoria**|
-    |**Obszar**|**Product**|
+    |**Warstwowy**|**Product**|
     |**Dane wyjściowe**|**Wiadomość**|
     |**Identyfikator korelacji**|**Identyfikator korelacji**|
 
@@ -261,7 +261,7 @@ Przejdź do określonych punktów w wykonaniu aplikacji po rozpoczęciu debugowa
 
  [Funkcje IntelliTrace](../debugger/intellitrace-features.md)
 
- [Zbieraj więcej danych diagnostycznych w testach ręcznych](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
+ [Zbieraj więcej danych diagnostycznych w testach ręcznych](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts&preserve-view=true)
 
  [IntelliTrace](../debugger/intellitrace.md)
 

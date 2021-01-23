@@ -1,5 +1,6 @@
 ---
 title: Czasomierz | Microsoft Docs
+description: Dowiedz się, jak opcja czasomierza VSPerfCmd.exe ustawia zdarzenie profilowania, które jest próbkowanie do cykli zegara procesora.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 1971868e-89fa-4452-8ee7-76e4daf31b66
@@ -9,19 +10,19 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e1bed2715421948385a5b7eb1ddbbac064f3288b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 908685b49a08b3084c31e768675e64bc087bc727
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778118"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722441"
 ---
 # <a name="timer"></a>Czasomierz
-Opcja *VSPerfCmd.exe* **czasomierza**VSPerfCmd.exeustawia zdarzenie profilowania, które jest próbkowane do cykli zegara procesora i opcjonalnie zmienia liczbę cykli w interwale próbkowania z wartości domyślnej 10 000 000. W przypadku procesora 1GH (jeden gigaherca) 10 000 000 cykle zegara wynosi około 100 próbek na sekundę. Minimalna liczba cykli, które można określić, to 50 000.
+Opcja  **czasomierza** VSPerfCmd.exeustawia zdarzenie profilowania, które jest próbkowane do cykli zegara procesora i opcjonalnie zmienia liczbę cykli w interwale próbkowania z wartości domyślnej 10 000 000. W przypadku procesora 1GH (jeden gigaherca) 10 000 000 cykle zegara wynosi około 100 próbek na sekundę. Minimalna liczba cykli, które można określić, to 50 000.
 
  **Czasomierza** można używać tylko wtedy, gdy używana jest metoda profilowania próbkowania i może być używana tylko w wierszu polecenia, który zawiera również opcję **uruchamiania** lub **dołączania** .
 
- Domyślnie zdarzenie próbkowania profilera jest ustawione na cykle zegara procesora, a interwał próbkowania jest ustawiony na 10 000 000. Opcje **Timer**, **PF**, **sys**i **Counter** umożliwiają ustawienie zdarzenia próbkowania i interwału próbkowania. Opcja **GC** zbiera dane pamięci .NET dla każdego zdarzenia alokacji i wyrzucania elementów bezużytecznych. W wierszu polecenia można określić tylko jedną z tych opcji.
+ Domyślnie zdarzenie próbkowania profilera jest ustawione na cykle zegara procesora, a interwał próbkowania jest ustawiony na 10 000 000. Opcje **Timer**, **PF**, **sys** i **Counter** umożliwiają ustawienie zdarzenia próbkowania i interwału próbkowania. Opcja **GC** zbiera dane pamięci .NET dla każdego zdarzenia alokacji i wyrzucania elementów bezużytecznych. W wierszu polecenia można określić tylko jedną z tych opcji.
 
  Zdarzenie próbkowania i interwał próbkowania można ustawić tylko w pierwszym wierszu polecenia zawierającym opcję **uruchamiania** lub **dołączania** .
 
@@ -60,7 +61,7 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Launch:TestApp.exe /Timer:1000000
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [Profile aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)

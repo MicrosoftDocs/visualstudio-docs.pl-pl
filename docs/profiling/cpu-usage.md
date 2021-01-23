@@ -1,5 +1,7 @@
 ---
 title: Analizowanie użycia procesora CPU w profilerze wydajności
+description: Informacje o narzędziu wydajności użycia procesora CPU, które przedstawiają czas procesora CPU i procent poświęcany na wykonywanie kodu w aplikacjach C++, C#, Visual Basic i JavaScript.
+ms.custom: SEO-VS-2020
 ms.date: 04/02/2020
 ms.topic: how-to
 ms.assetid: 7501a20d-04a1-480f-a69c-201524aa709d
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 706ffa8d17974894403c22a559edad4c2e4b4ef8
-ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
+ms.openlocfilehash: 902974c195cabf09abf5f29334a1e28316da54e5
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92007103"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719360"
 ---
 # <a name="analyze-cpu-usage-without-debugging-in-the-performance-profiler"></a>Analizowanie użycia procesora bez debugowania w profilerze wydajności
 
@@ -36,7 +38,7 @@ Zazwyczaj komputer lokalny najlepiej replikuje zainstalowaną realizację aplika
 
 1. Wybierz pozycję **Debuguj**  >  **wydajność Profiler**.
 
-1. W obszarze **dostępne narzędzia**wybierz pozycję **użycie procesora**, a następnie wybierz pozycję **Uruchom**.
+1. W obszarze **dostępne narzędzia** wybierz pozycję **użycie procesora**, a następnie wybierz pozycję **Uruchom**.
 
     ![Wybierz użycie procesora CPU](../profiling/media/cpuuse_lib_choosecpuusage.png "Wybierz użycie procesora CPU")
 
@@ -77,7 +79,7 @@ Aby wyświetlić drzewo wywołań, wybierz węzeł nadrzędny w raporcie. Na str
 ![Struktura drzewa wywołań](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "Struktura drzewa wywołań")
 ::: moniker-end
 
-|Image (Obraz)|Opis|
+|Obraz|Opis|
 |-|-|
 |![Krok 1](../profiling/media/procguid_1.png "ProcGuid_1")|Węzeł najwyższego poziomu w drzewach wywołań użycia procesora CPU jest pseudo-węzłowym.|
 |![Krok 2](../profiling/media/procguid_2.png "ProcGuid_2")|W większości aplikacji, gdy opcja **Pokaż zewnętrzny kod** jest wyłączona, węzeł drugiego poziomu jest węzłem **[kod zewnętrzny]** . Węzeł zawiera kod systemu i struktury, który rozpoczyna i kończy działanie aplikacji, rysuje interfejs użytkownika, kontroluje harmonogram wątków i udostępnia inne usługi niskiego poziomu aplikacji.|

@@ -1,5 +1,6 @@
 ---
 title: VSPerfReport | Microsoft Docs
+description: Dowiedz się, że narzędzie wiersza polecenia VSPerfReport służy do tworzenia raportów przy użyciu plików danych profilowania programu Visual Studio narzędzia profilowania.
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -16,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 54d5de2395c0ce95bc0c20c3ae7810b2762122fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed3ba5453976e3f3976aba43bc296c040a86b7a5
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329956"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719776"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 Narzędzie wiersza polecenia VSPerfReport służy do tworzenia raportów przy użyciu  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] plików danych profilowania narzędzia profilowania. Domyślny format raportu to. plik *CSV* .
@@ -32,7 +33,7 @@ Narzędzie wiersza polecenia VSPerfReport służy do tworzenia raportów przy u�
 VSPerfReport [/U] vspfilename [/options]
 ```
 
- Należy pamiętać, że `filename` musi być prawidłowy.* VSP* lub. plik *vsps* .
+ Należy pamiętać, że `filename` musi być prawidłowy.*VSP* lub. plik *vsps* .
 
  Narzędzie wiersza polecenia VSPerfReport służy również do porównywania. *VSP* lub. pliki *vsps* . Aby wygenerować raport różnic ("diff"), użyj następującej składni:
 
@@ -50,14 +51,14 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 
 |Opcje|Opis|
 |-------------|-----------------|
-|**U**|Dane wyjściowe raportu i przekierowane dane wyjściowe konsoli są zapisywane w formacie Unicode. Musi być pierwszą określoną opcją.|
+|**'T**|Dane wyjściowe raportu i przekierowane dane wyjściowe konsoli są zapisywane w formacie Unicode. Musi być pierwszą określoną opcją.|
 |**Podsumowanie:**[*typy*]|Tworzy jeden lub więcej typów raportów.<br /><br /> -   `All` — generowane są wszystkie typy raportów.<br />-   `CallerCallee` -relacje nadrzędny/podrzędny między funkcjami.<br />-   `Function` -Functions o nazwie.<br />-   `CallTree` -Hierarchia funkcji o nazwie.<br />-   `Counter` — wszystkie znaczniki wraz z wartościami liczników wydajności systemu Windows.<br />-   `Ip` -instrukcje profilowane.<br />-   `Life` — okres istnienia przydzielonych obiektów (dostępny podczas zbierania danych alokacji).<br />-   `Line` dane profilu wiersza kodu źródłowego.<br />-   `Header` -Raport zawiera informacje nagłówka pliku.<br />-   `Mark` wszystkie znaczniki.<br />-   `Module` — profilowano moduły.<br />-   `Process` -przetwarza profilowane.<br />-   `Thread` -wątki profilowane.<br />-   `Type` -przydzielono typy.<br />-   `Contention` — rywalizacje o zasoby.<br />-   `RuleWarnings` -Problemy z regułą wydajności<br />-   `ETW` — wszystkie zdarzenia śledzenia zdarzeń systemu Windows (ETW) zebrane w przebiegu profilowania. Plik danych ETL musi znajdować się w jego oryginalnej lokalizacji lub w katalogu zawierającym plik VSP lub vsps.|
 |**Dokument**|Raport wyjściowy w formacie XML.|
 |**CallTrace**|Tworzy listę wpisów funkcji i wyjść, zdarzeń ETW i znaczników.|
 |**ClearPackedSymbols**|Usuwa poprzednio osadzone symbole z pliku danych profilera. Uruchom to polecenie przed uruchomieniem PackSymbols po raz drugi.|
 |**SymbolPath —:**`path`|Określa co najmniej jedną ścieżkę wyszukiwania lub serwery symboli, które zawierają symbole dla pliku danych profilera.|
 |**DebugSymPath**|Wyświetla listę lokalizacji, w których są wyszukiwane symbole i czy zostały znalezione. Ta opcja jest przydatna do rozwiązywania problemów z rozpoznawaniem symboli.|
-|**PackSymbols**|Zapisuje symbole w pliku danych profilowania (. vsp), tak aby symbol (.* PDB*) nie są wymagane do analizy.|
+|**PackSymbols**|Zapisuje symbole w pliku danych profilowania (. vsp), tak aby symbol (.*PDB*) nie są wymagane do analizy.|
 |**Dane wyjściowe:** *ścieżka*&#124;*filename*|Określa alternatywną lokalizację dla wygenerowanych plików raportu. Domyślnie raporty są tworzone w bieżącym katalogu.|
 |**SummaryFile**|Analizuj i zapisuj przeanalizowane informacje w pliku podsumowania. vsps.|
 |**PrintMarks**|Pokaż nazwy i sygnatury czasowe dla wszystkich znaczników w określonym pliku raportu.|
@@ -84,11 +85,11 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 
 |Opcje|Opis|
 |-------------|-----------------|
-|**Grupy**  `vspfile1 vspfile2`|Porównaj dwa pliki raportu (.* VSP* lub. *vsps*) plikach. Opcje podsumowania zostaną zignorowane przy użyciu opcji diff.|
+|**Diff**  `vspfile1 vspfile2`|Porównaj dwa pliki raportu (.*VSP* lub. *vsps*) plikach. Opcje podsumowania zostaną zignorowane przy użyciu opcji diff.|
 |**Diff:**[*wartość*]|Poniżej wartości progowej różnica między dwiema wartościami zostanie pominięta. Ponadto nowe dane o wartościach poniżej tego progu nie będą wyświetlane.|
 |**Diffie:**[*TableName*]|Użyj tej konkretnej tabeli do porównywania plików. Wartość domyślna to tabela funkcji.|
 |**DiffColumn:**[*ColumnName*]|Ta szczegółowa kolumna służy do porównywania wartości. Wartość domyślna to kolumna procent wyłącznych próbek.|
 |**QueryDiffTables**|Wyświetl listę prawidłowych tabel i kolumn dla dwóch udostępnionych plików raportów.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Widoki raportów wydajności](../profiling/performance-report-views.md)

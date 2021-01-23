@@ -9,12 +9,12 @@ ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
 ms.topic: how-to
-ms.openlocfilehash: a1855b272a774f7c4bd36866555f463525075e2d
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 98831768dac9f7e57c1bd5f19f0dc088951a6af4
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862010"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719789"
 ---
 # <a name="publish-a-web-app-to-a-folder-using-visual-studio-for-mac"></a>Publikowanie aplikacji sieci Web w folderze przy użyciu Visual Studio dla komputerów Mac
 
@@ -23,7 +23,7 @@ Za pomocą narzędzia do publikowania można publikować aplikacje ASP.NET Core 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
 - [Program Visual Studio 2017 dla komputerów Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2017) został zainstalowany z włączonym ASP.NET Core.
-- Projekt ASP.NET Core. Jeśli nie masz jeszcze projektu, możesz [utworzyć nowy](./create-new-projects.md?view=vsmac-2017).
+- Projekt ASP.NET Core. Jeśli nie masz jeszcze projektu, możesz [utworzyć nowy](./create-new-projects.md?view=vsmac-2017&preserve-view=true).
 
 ## <a name="publish-to-folder"></a>Publikowanie w folderze
 

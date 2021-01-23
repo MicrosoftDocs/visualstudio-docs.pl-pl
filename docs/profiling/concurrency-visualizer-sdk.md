@@ -1,5 +1,7 @@
 ---
 title: Zestaw SDK wizualizatora współbieżności | Microsoft Docs
+description: Dowiedz się, jak używać zestawu SDK narzędzia Concurrency Visualizer do Instrumentacji kodu do wyświetlania znaczników. Znaczniki są ikonami wyświetlanymi w wizualizatorze współbieżności, aby oznaczyć zdarzenia.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1732d62fa20e170825cba5e133a9a44f11a59a34
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: f07dbfb0ca193f7bacbf2408fc26e622ffb037e1
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037357"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720985"
 ---
 # <a name="concurrency-visualizer-sdk"></a>Concurrency Visualizer SDK
 Możesz instrumentować kod źródłowy przy użyciu zestawu SDK wizualizatora współbieżności, aby wyświetlić dodatkowe informacje w wizualizatorze współbieżności. Możesz skojarzyć dodatkowe dane z fazami i zdarzeniami w kodzie. Te dodatkowe wizualizacje są znane jako *znaczniki*.  Aby zapoznać się z przewodnikiem wprowadzającym, zobacz [wprowadzenie do zestawu SDK wizualizatora współbieżności](/archive/blogs/visualizeparallel/introducing-the-concurrency-visualizer-sdk).

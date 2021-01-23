@@ -1,5 +1,6 @@
 ---
 title: Widoki danych metody instrumentacji | Microsoft Docs
+description: Informacje o odwołaniach dotyczące widoków i raportów plików danych profilera, które zostały wygenerowane za pomocą metody instrumentacji.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 18cc473f517e1f2eb03b657a365a33e4e37ff23f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 18d7d2266ec21a3eee983474e433d72245658c43
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74774166"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721544"
 ---
 # <a name="instrumentation-method-data-views"></a>Widoki danych metody instrumentacji
 Ta sekcja zawiera informacje referencyjne dotyczące widoków i raportów plików danych profilera, które zostały wygenerowane za pomocą metody instrumentacji.
@@ -43,14 +44,14 @@ Ta sekcja zawiera informacje referencyjne dotyczące widoków i raportów plikó
 
  Wyświetla listę danych profilowania według funkcji.
 
-## <a name="reference"></a>Dokumentacja
+## <a name="reference"></a>Odwołanie
 - [Widok szczegółów funkcji](../profiling/function-details-view.md)
 
  Przedstawia graficzny wykres relacji między wybraną funkcją a funkcjami, które zostały wywołane i zostały wywołane przez wybraną funkcję.
 
 - [Widok procesu](../profiling/process-view.md)
 
- Wyświetla listę początkowych, końcowych i okresów istnienia procesu dla wszystkich procesów przetwarzanych przez program raportowanie błędów.
+ Wyświetla listę czasów rozpoczęcia, zakończenia i okresu istnienia procesu dla wszystkich procesów, które zostały profilowane.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
 - [Widok danych metody próbkowania](../profiling/profiler-sampling-method-data-views.md)
@@ -65,5 +66,5 @@ Ta sekcja zawiera informacje referencyjne dotyczące widoków i raportów plikó
 
  Informacje referencyjne dotyczące widoków i raportów plików danych profilera, które zostały wygenerowane za pomocą metody rywalizacji o wątki.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Zapoznanie z wartościami danych instrumentacji](../profiling/understanding-instrumentation-data-values.md)

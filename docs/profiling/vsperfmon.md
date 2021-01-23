@@ -1,5 +1,6 @@
 ---
 title: VSPerfMon | Microsoft Docs
+description: Dowiedz się, jak zbierać dane dotyczące wydajności aplikacji za pomocą narzędzia VSPerfMon. To narzędzie jest zazwyczaj uruchamiane przez VSPerfCmd.exe.
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -17,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ee2423f552c6931b0c8b62181dc44186053c9460
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 919153699299c2f39ad0353ed484a9f9c9f46846
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329975"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719178"
 ---
 # <a name="vsperfmon"></a>VSPerfMon
 Za pomocą narzędzia VSPerfMon można zbierać dane dotyczące wydajności aplikacji. Zazwyczaj to narzędzie jest uruchamiane przez *VSPerfCmd.exe*. VSPerfMon wyświetla dodatkowe informacje na temat dołączania lub odłączania procesu, które nie są dostępne za pomocą narzędzia VSPerfCmd. Aby wyświetlić te informacje, uruchom VSPerfMon w osobnym oknie. Aby wywołać VSPerfMon, użyj następującej składni:
@@ -35,7 +36,7 @@ VSPerfMon [/U] </TRACE [/COUNTER:cfg] | /SAMPLE | /COVERAGE> /CROSSSESSION /OUTP
 
 |Opcje|Opis|
 |-------------|-----------------|
-|**U**|Przekierowane dane wyjściowe konsoli są zapisywane w formacie Unicode.  Ta wartość musi być pierwszą określoną opcją.|
+|**'T**|Przekierowane dane wyjściowe konsoli są zapisywane w formacie Unicode.  Ta wartość musi być pierwszą określoną opcją.|
 |**Dane wyjściowe:** `<` *Nazwa pliku*`>`|Przekierowuje dane wyjściowe do określonej nazwy pliku.|
 |**SZUKA**|Uruchamia Monitor wydajności dla profilowania Instrumentacji.|
 |**SAMPLE**|Uruchamia Monitor wydajności dla profilowania próbkowania.|
@@ -47,7 +48,7 @@ VSPerfMon [/U] </TRACE [/COUNTER:cfg] | /SAMPLE | /COVERAGE> /CROSSSESSION /OUTP
 |**WINCOUNTER**`:path`|Określa licznik wydajności systemu Windows do uwzględnienia z danymi znacznika. `path` to ciąg licznika wydajności systemu Windows w formacie ścieżki licznika PDH. Na przykład:<br /><br /> \Processor (0) \\ % czasu procesora<br /><br /> \System\Context/s|
 |**Oznacz jako**`:n`|Określa przedział czasu (w milisekundach) między znacznikami automatycznymi przy użyciu używania/WINCOUNTER. ZAOKRĄGLA Zaokrąglone do najbliższej 500 ms.<br /><br /> Aby wyłączyć automatyczne znaczniki, należy użyć 0. (domyślnie = 500 MS, jeśli nie określono)|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [VSInstr](../profiling/vsinstr.md)
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [VSPerfReport](../profiling/vsperfreport.md)

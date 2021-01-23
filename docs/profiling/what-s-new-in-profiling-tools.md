@@ -1,5 +1,6 @@
 ---
 title: Co nowego w profilowania w programie Visual Studio 2017 | Microsoft Docs
+description: Dowiedz się, że narzędzia diagnostyczne zawierają nowe wizualizacje ułatwiające identyfikowanie problemów w aplikacji, które wymagają rozwiązania.
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +14,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 0512c6e95f0a26184593f7af5ba08c31c33a3299
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57ccf59de6ce5d18aab0a461cff91875cc74486d
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71128339"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723104"
 ---
 # <a name="whats-new-in-profiling-tools-in-includevs_dev15"></a>Co nowego w narzędziach profilowania w programie [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
@@ -34,7 +35,7 @@ Narzędzie użycie procesora CPU zawiera [nowe wizualizacje](../profiling/Beginn
 
 ![Widok wywoływany przez obiekt wywołujący narzędzi diagnostycznych](../profiling/media/diag-tools-caller-callee-2.png "DiagToolsCallerCallee")
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Profil w programie Visual Studio](../profiling/index.yml)
 - [Pierwsze spojrzenie na narzędzia profilowania](../profiling/profiling-feature-tour.md)

@@ -1,5 +1,6 @@
 ---
 title: Zbieranie danych o wydajności początkowej i końcowej | Microsoft Docs
+description: Dowiedz się, jak dodać docelowy plik binarny, który ma być profilem sesji wydajności przed rozpoczęciem profilowania.
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d1f22a09070aea8d2a63979c9d6d1bd267269cf
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 0db420bbc6da16460e599ff8912569f97b506f22
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851115"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721726"
 ---
 # <a name="how-to-start-and-end-performance-data-collection"></a>Instrukcje: uruchamianie i kończenie zbierania danych wydajności
 Należy dodać docelowy plik binarny, który ma być profilem sesji wydajności przed rozpoczęciem profilowania. Aby dodać obiekt docelowy, kliknij prawym przyciskiem myszy pozycję **obiekty docelowe** w **Eksplorator wydajności**, a następnie kliknij polecenie **Dodaj docelowy plik binarny**. W oknie dialogowym **Dodaj docelowy plik binarny** wybierz nazwę pliku, a następnie kliknij przycisk **Otwórz**. Zostanie dodany nowy plik binarny.
