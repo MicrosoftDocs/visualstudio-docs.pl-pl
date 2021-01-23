@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d7fe5a8b2275248c0fc68f9237e9e259973c567b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8cb9143057bf0cfda85c835131204c6641199b48
+ms.sourcegitcommit: 10cb0b68f8cef219ea08eff9bc5f0afe1545c825
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801727"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98699333"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>Krok 4. uruchamianie kodu w debugerze
 
@@ -32,7 +32,7 @@ Poza zarządzaniem projektami, zapewnianie bogatego środowiska edycji i **inter
     # Create a string with spaces proportional to a cosine of x in degrees
     def make_dot_string(x):
         rad = radians(x)                             # cos works with radians
-        numspaces = int(20 * cos(radians(x)) + 20)   # scale to 0-40 spaces
+        numspaces = int(20 * cos(rad) + 20)          # scale to 0-40 spaces
         st = ' ' * numspaces + 'o'                   # place 'o' after the spaces
         return st
 
@@ -47,7 +47,7 @@ Poza zarządzaniem projektami, zapewnianie bogatego środowiska edycji i **inter
 1. Sprawdź, czy kod działa prawidłowo, naciskając klawisz **F5** lub wybierając polecenie **Debuguj**  >  **Rozpocznij debugowanie** menu. To polecenie uruchamia kod w debugerze, ale ponieważ nie wykonano żadnych czynności w celu wstrzymania programu, gdy jest on uruchomiony, po prostu drukuje wzorzec Wave dla kilku iteracji. Naciśnij dowolny klawisz, aby zamknąć okno dane wyjściowe.
 
     > [!Tip]
-    > Aby zamknąć okno dane wyjściowe automatycznie po zakończeniu działania programu, wybierz polecenie **Narzędzia**  >  menu**Opcje** , rozwiń węzeł **Python** , wybierz pozycję **debugowanie**, a następnie wyczyść opcję **czekaj na dane wejściowe, gdy proces kończy się normalnie**:
+    > Aby zamknąć okno dane wyjściowe automatycznie po zakończeniu działania programu, wybierz polecenie **Narzędzia**  >  menu **Opcje** , rozwiń węzeł **Python** , wybierz pozycję **debugowanie**, a następnie wyczyść opcję **czekaj na dane wejściowe, gdy proces kończy się normalnie**:
     >
     > ![Opcja debugowania języka Python, aby zamknąć okno dane wyjściowe na normalnym zakończeniu programu](media/vs-getting-started-python-22-debugging5.png)
 
@@ -73,19 +73,19 @@ Poza zarządzaniem projektami, zapewnianie bogatego środowiska edycji i **inter
     - **Krok nad** (**F10**) uruchamia następny wiersz kodu bez wchodzenia do funkcji nazwanych.
     - **Wyjdź** (**SHIFT** + **F11**) uruchamia pozostałą część bieżącej funkcji i wstrzymuje się w wywoływanym kodzie.
 
-1. Przechodzenie do `for` instrukcji przy użyciu **kroku nad**. *Krokowe* oznacza, że debuger uruchamia bieżący wiersz kodu, w tym wszystkie wywołania funkcji, a następnie natychmiast zatrzymuje się ponownie. Zwróć uwagę, jak zmienna `i` jest teraz zdefiniowana w oknach **zmiennych lokalnych** i okienek. **Autos**
+1. Przechodzenie do `for` instrukcji przy użyciu **kroku nad**. *Krokowe* oznacza, że debuger uruchamia bieżący wiersz kodu, w tym wszystkie wywołania funkcji, a następnie natychmiast zatrzymuje się ponownie. Zwróć uwagę, jak zmienna `i` jest teraz zdefiniowana w oknach **zmiennych lokalnych** i okienek. 
 
 1. Przekrocz następny wiersz kodu, który wywołuje `make_dot_string` i wstrzymuje. Tutaj **krok powyżej** oznacza, że debuger działa w całości `make_dot_string` i wstrzymuje się, gdy zwraca. Debuger nie zatrzymuje się w tej funkcji, chyba że tam istnieje osobny punkt przerwania.
 
 1. Kontynuuj przechodzenie przez kod jeszcze kilka razy i obserwuj, jak wartości w oknie **zmiennych lokalnych** lub **Autokorekty** zmieniają się.
 
-1. W oknie zmienne **lokalne** lub **Autos** autozmienne kliknij dwukrotnie w kolumnie **wartość** , `i` `s` Aby edytować wartość. Naciśnij klawisz **Enter** lub kliknij dowolny obszar poza tą wartością, aby zastosować zmiany.
+1. W oknie zmienne **lokalne** lub  autozmienne kliknij dwukrotnie w kolumnie **wartość** , `i` `s` Aby edytować wartość. Naciśnij klawisz **Enter** lub kliknij dowolny obszar poza tą wartością, aby zastosować zmiany.
 
 1. Kontynuuj przechodzenie przez kod przy użyciu **kroku do**. **Wkrocz do** oznacza, że debuger przechodzi wewnątrz dowolnego wywołania funkcji, dla którego ma informacje o debugowaniu, np `make_dot_string` .. Po wewnątrz można `make_dot_string` przeanalizować swoje zmienne lokalne i krokowo.
 
 1. Kontynuuj wykonywanie **kroków krok po kroku** i Zauważ, że gdy osiągniesz koniec `make_dot_string` , następnym krokiem powróci do `for` pętli z nową wartością zwracaną w `s` zmiennej. Po ponownym przekroczeniu `print` instrukcji należy zauważyć, że **krok do** `print` nie jest wprowadzany do tej funkcji. Dzieje się tak, ponieważ `print` nie jest on pisany w języku Python, ale raczej kod natywny wewnątrz środowiska uruchomieniowego języka Python.
 
-1. Kontynuuj korzystanie z **kroku** do momentu ponownego partway się w programie `make_dot_string` . Następnie użyj instrukcji **krok po kroku** , aby powrócić do `for` pętli. Po zakończeniu **kroku**debuger uruchamia resztę funkcji, a następnie automatycznie wstrzymuje się w kodzie wywołującym. Jest to bardzo przydatne w przypadku przechodzenia przez część długiej funkcji, która ma być debugowana, ale nie trzeba przechodzić przez resztę i nie chce ustawiać jawnego punktu przerwania w kodzie wywołującym.
+1. Kontynuuj korzystanie z **kroku** do momentu ponownego partway się w programie `make_dot_string` . Następnie użyj instrukcji **krok po kroku** , aby powrócić do `for` pętli. Po zakończeniu **kroku** debuger uruchamia resztę funkcji, a następnie automatycznie wstrzymuje się w kodzie wywołującym. Jest to bardzo przydatne w przypadku przechodzenia przez część długiej funkcji, która ma być debugowana, ale nie trzeba przechodzić przez resztę i nie chce ustawiać jawnego punktu przerwania w kodzie wywołującym.
 
 1. Aby kontynuować uruchamianie programu do momentu osiągnięcia następnego punktu przerwania, użyj przycisku **Kontynuuj** (**F5**). Ponieważ masz punkt przerwania w `for` pętli, możesz przerwać kolejną iterację.
 
