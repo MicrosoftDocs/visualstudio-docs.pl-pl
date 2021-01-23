@@ -1,5 +1,6 @@
 ---
 title: SuspendProfile | Microsoft Docs
+description: Dowiedz się, jak Metoda SuspendProfile zwiększa licznik wstrzymania/wznawiania dla określonego poziomu profilowania.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1eb0d0f41b17c4f23c3898b044ad49182d47aae0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 728aa7c858f8321e3289f2d17e612284f8739f17
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778196"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719269"
 ---
 # <a name="suspendprofile"></a>SuspendProfile
 `SuspendProfile`Metoda zwiększa licznik wstrzymania/wznawiania dla określonego poziomu profilowania.
@@ -105,5 +106,5 @@ void ExerciseSuspendProfile()
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dokumentacja interfejsu API programu Visual Studio profiler (natywna)](../profiling/visual-studio-profiler-api-reference-native.md)

@@ -1,5 +1,6 @@
 ---
 title: Rozwiązywanie problemów z narzędziami do oceny wydajności | Microsoft Docs
+description: Poznaj różne sposoby rozwiązywania problemów z narzędziami wydajności, na przykład wtedy, gdy żadne dane nie są zbierane przez narzędzia profilowania.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0b61cdf7-75b7-4abd-aff2-7bd997717626
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 514b910f2c19822dc821b8c9a52ae96b8aac80f0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d079c2fbd41f6a3eff881a544e8b88c50938e3bf
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778105"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722415"
 ---
 # <a name="troubleshoot-performance-tools-issues"></a>Rozwiązywanie problemów z narzędziami do oceny wydajności
 Podczas korzystania z narzędzia profilowania może wystąpić jeden z następujących problemów:
@@ -24,7 +25,7 @@ Podczas korzystania z narzędzia profilowania może wystąpić jeden z następuj
 - [Widoki wydajności i raporty wyświetlają liczby dla nazw funkcji](#performance-views-and-reports-display-numbers-for-function-names)
 
 ## <a name="no-data-is-collected-by-the-profiling-tools"></a>Narzędzia profilowania nie zbierają danych
- Po przeprowadzeniu profilu aplikacji dane profilowania (.* VSP*) nie został utworzony, a w oknie **danych wyjściowych** zostanie wyświetlone następujące ostrzeżenie lub w oknie polecenia:
+ Po przeprowadzeniu profilu aplikacji dane profilowania (.*VSP*) nie został utworzony, a w oknie **danych wyjściowych** zostanie wyświetlone następujące ostrzeżenie lub w oknie polecenia:
 
  PRF0025: nie zebrano żadnych danych.
 
@@ -43,7 +44,7 @@ Podczas korzystania z narzędzia profilowania może wystąpić jeden z następuj
 
 - Znajdź. pliki *PDB* i umieścić je w tym samym katalogu, w którym znajdują się pliki aplikacji.
 
-- Osadź informacje o symbolach w danych profilowania (.* VSP*). Aby uzyskać więcej informacji, zobacz [Zapisywanie informacji o symbolach przy użyciu plików danych dotyczących wydajności](../profiling/saving-symbol-information-with-performance-data-files.md).
+- Osadź informacje o symbolach w danych profilowania (.*VSP*). Aby uzyskać więcej informacji, zobacz [Zapisywanie informacji o symbolach przy użyciu plików danych dotyczących wydajności](../profiling/saving-symbol-information-with-performance-data-files.md).
 
 > [!NOTE]
 > Aparat analizy wymaga, aby. plik *PDB* jest taka sama jak wersja skompilowanego pliku aplikacji. Z. plik *PDB* z wcześniejszej lub nowszej kompilacji pliku aplikacji nie będzie działał.

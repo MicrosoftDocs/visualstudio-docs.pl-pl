@@ -1,5 +1,6 @@
 ---
 title: Widok procesu — dane rywalizacji | Microsoft Docs
+description: Dowiedz się, w jaki sposób widok procesu wyświetla dane rywalizacji dotyczące procesów i wątków, które zostały wykonane podczas przebiegu profilowania.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 30c938088538bcecc71e3a7e37d5ae403dd476e1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f3eb95c5ba8bb9f519623d4b43bc80d37919305d
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778404"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719476"
 ---
 # <a name="process-view---contention-data"></a>Widok procesu — dane rywalizacji
 Widok procesu przedstawia dane rywalizacji dotyczące procesów i wątków, które zostały wykonane podczas przebiegu profilowania.
@@ -33,12 +34,12 @@ Widok procesu przedstawia dane rywalizacji dotyczące procesów i wątków, któ
 |**Rywalizacji**|Liczba operacji blokowania wykonywania funkcji przez proces lub wątek.|
 |**Rywalizacji**|Wartość procentowa wszystkich rywalizacji w przebiegu profilowania, które były rywalizacjami o proces lub wątek.|
 |**Czas zakończenia**|Liczba milisekund lub cykli procesora od początku profilowania do końca procesu lub wątku.|
-|**ID**|Wygenerowany przez system identyfikator procesu lub wątku.|
+|**ID (Identyfikator)**|Wygenerowany przez system identyfikator procesu lub wątku.|
 |**Czas życia**|Liczba milisekund lub cykli procesora od początku procesu lub wątku do końca procesu lub wątku albo końca profilowania.|
 |**Typ**|Typ wiersza, proces lub wątek.<br /><br /> Tylko w raportach wiersza polecenia **VSReport** . Aby uzyskać więcej informacji, zobacz [VSPerfReport](../profiling/vsperfreport.md).|
 |**Nazwa**|Nazwa procesu lub wątku.|
 |**Unikatowy identyfikator**|Wygenerowany przez profiler identyfikator, który jest unikatowy dla procesu lub wątku.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Instrukcje: dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)
 - [Widok procesu](../profiling/process-view.md)

@@ -1,5 +1,6 @@
 ---
 title: VSPerfASPNetCmd | Microsoft Docs
+description: Dowiedz się, jak narzędzie wiersza polecenia VSPerfASPNetCmd.exe umożliwia profilowanie witryn sieci Web ASP.Net bez konieczności ustawiania zmiennych środowiskowych lub ponownego uruchamiania komputera.
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b6ddadc15a5e0d53535b82d87aadd31fec65adaf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b594141d6209c8ede9171df880e7523b81a34775
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330474"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719230"
 ---
 # <a name="vsperfaspnetcmd"></a>VSPerfASPNetCmd
 Narzędzie wiersza polecenia **VSPerfASPNetCmd.exe** umożliwia profilowanie witryn sieci Web ASP.NET bez konieczności ustawiania zmiennych środowiskowych lub ponownego uruchomienia komputera. Użyj **VSPerfASPNetCmd.exe** zamiast [VSPerfCmd](../profiling/vsperfcmd.md) podczas profilowania witryn sieci Web ASP.NET i nie potrzebujesz dodatkowych funkcji udostępnianych przez **VSPerfCmd**. Aby uzyskać więcej informacji na temat **VSPerfASPNETCmd**, zobacz [szybkie profilowanie witryny sieci Web za pomocą usługi VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md). **VSPerfASPNETCmd** jest preferowanym narzędziem wiersza polecenia do użycia w przypadku korzystania z autonomicznego profilera do profilowania witryny sieci Web ASP.NET.
@@ -33,12 +34,12 @@ Narzędzie wiersza polecenia **VSPerfASPNetCmd.exe** umożliwia profilowanie wit
 |**/Trace** lub   **/t**|Witryna sieci Web profilów przy użyciu metody instrumentacji. /Trace nie można używać z **/Sample**.|
 |**/Memory**[**:** `Type` ] lub **/m**[**:**{**a**&#124;**l**}]|Profile alokacji pamięci i opcjonalne profile okresy istnienia obiektu (odzyskiwanie pamięci). **/Memory** można użyć z próbką lub metodą Instrumentacji.<br /><br /> *Typ* może być jednym z następujących:<br /><br /> -   **alokacja** (lub **a**) zbiera tylko dane alokacji pamięci.<br />-   **okres istnienia** (lub **l**) zbiera dane alokacji pamięci i okresu istnienia obiektu.<br /><br /> Wartość domyślna `Type` to **alokacja**.|
 |**/TIP** lub   **/i**|Dodaje szczegółowe informacje o żądaniu ASP.NET i wywołaniu ADO.NET do danych profilowania. **/TIP** może być używana z próbką lub Instrumentacją i może być używana z opcją **/Memory** .|
-|**/Output:** `File` lub   **/o:**`File`|Określa ścieżkę i nazwę pliku danych profilowania (.* VSP*).|
+|**/Output:** `File` lub   **/o:**`File`|Określa ścieżkę i nazwę pliku danych profilowania (.*VSP*).|
 |**Flagi/nowait** lub   **/n**|Zwraca wiersz polecenia natychmiast, aby można było użyć dodatkowych poleceń w oknie wiersza polecenia. Aby wyłączyć profilowanie, należy wpisać **VSPerfASPNETCmd/Shutdown** w osobnym wierszu polecenia.|
-|**/PackSymbols**[: {**na**&#124;**off**} lub   **/p**[: {**on**&#124;**off**}|Osadza symbole (nazwy funkcji i parametrów itp.) w danych profilowania (.* VSP*).|
+|**/PackSymbols**[: {**na**&#124;**off**} lub   **/p**[: {**on**&#124;**off**}|Osadza symbole (nazwy funkcji i parametrów itp.) w danych profilowania (.*VSP*).|
 |**/Shutdown:** `Website` lub   **/d:**`Website`|Wyłącza profilowanie. Użyj jako jedynej opcji w wierszu polecenia po użyciu opcji **flagi/nowait** , aby rozpocząć profilowanie, lub jeśli Profiler się nieoczekiwanie skończy. Określ ten sam adres URL, który został użyty w oryginalnym **VSPerfASPNETCmd** polecenia.|
 |`Website`|Adres URL witryny sieci Web, która ma zostać profilowana.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Szybkie profilowanie witryny sieci Web za pomocą VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)
 - [Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)

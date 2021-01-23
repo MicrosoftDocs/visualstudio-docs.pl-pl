@@ -1,5 +1,6 @@
 ---
 title: Informacje o wartościach danych próbkowania | Microsoft Docs
+description: Dowiedz się, jak Metoda profilowania próbkowania w programie Visual Studio narzędzia profilowania przerywa procesor komputera w ustalonych odstępach czasu i zbiera stos wywołań funkcji.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 289f92deaceca32a44249ed77c17187743a34fa4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 81efd0f20ba971555ec8c1333dfc322112f13e17
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778053"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722168"
 ---
 # <a name="understand-sampling-data-values"></a>Omówienie wartości danych próbkowania
 
@@ -50,7 +51,7 @@ Wartość procentowa łącznej liczby próbek włącznie w przebiegu profilowani
 
 Procent całkowitej liczby próbek wyłącznych w przebiegu profilowania, które są wyłącznymi próbkami funkcji lub zakresu danych.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 [Instrukcje: wybieranie metod zbierania](../profiling/how-to-choose-collection-methods.md) 
  [Analizowanie danych narzędzi wydajności](../profiling/analyzing-performance-tools-data.md)

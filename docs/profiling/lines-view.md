@@ -1,5 +1,6 @@
 ---
 title: Widok wierszy | Microsoft Docs
+description: Dowiedz się, jak widok linie jest dostępny tylko dla danych profilera zebranych za pomocą metody próbkowania.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 25dbb0beb600f7f043ae006e09ac48b9b64d613b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac0d7785071e5f2928e7eabb4a29b1655b42c5ad
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74773984"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721297"
 ---
 # <a name="lines-view"></a>Widok linii
 Widok linie jest dostępny tylko dla danych profilera, które zostały zebrane przy użyciu metody próbkowania. Widok nie jest dostępny dla danych, które zostały zebrane przy użyciu instrumentacji.
@@ -43,7 +44,7 @@ Widok linie jest dostępny tylko dla danych profilera, które zostały zebrane p
 
 - Znak w wierszu źródłowym, w którym następuje zakończenie instrukcji.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Widok linii](../profiling/lines-view-sampling-data.md)
 - [Widok linii — próbkowanie](../profiling/lines-view-dotnet-memory-sampling-data.md)
 - [Widok linii](../profiling/lines-view-contention-data.md)

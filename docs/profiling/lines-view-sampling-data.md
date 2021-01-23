@@ -1,5 +1,6 @@
 ---
 title: Widok linii — dane próbkowania | Microsoft Docs
+description: Dowiedz się, w jaki sposób widok wierszy danych próbkowania zawiera dane dotyczące wydajności dla instrukcji, które były wykonywane, gdy próbki zostały zebrane w ramach uruchomienia profilowania.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ff4d851937111400002de531696b9b69aec20ba9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 38ae3e9c40204082ea8791ddea4e92d77a0d311e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778586"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721323"
 ---
 # <a name="lines-view---sampling-data"></a>Widok linii — dane próbkowania
 Widok linie danych próbkowania zawiera dane dotyczące wydajności dla instrukcji, które były wykonywane, gdy próbki zostały zebrane w ramach uruchomienia profilowania.
@@ -60,5 +61,5 @@ Widok linie danych próbkowania zawiera dane dotyczące wydajności dla instrukc
 |**Próbki wyłączne**|Całkowita liczba próbek zebranych podczas wykonywania wiersza funkcji.|
 |**Wyłącznych próbek%**|Procent wszystkich próbek w przebiegu profilowania, który został zebrany podczas wykonywania wiersza funkcji.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Widok linii — próbkowanie](../profiling/lines-view-dotnet-memory-sampling-data.md)

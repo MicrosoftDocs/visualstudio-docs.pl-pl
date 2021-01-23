@@ -1,5 +1,6 @@
 ---
 title: Przegląd raportu wydajności | Microsoft Docs
+description: Wyświetl dane profilowania w oknie Raport o wydajności zintegrowanego środowiska projektowego programu Visual Studio Team System Development Edition.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 517156677a6d3711fa5dc2e4a15629a55229cfe2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 95fbb51cbcc4d2467b9d1636c7e9f61232791d62
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74772235"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722766"
 ---
 # <a name="performance-report-overview"></a>Przegląd raportu wydajności
 Dane profilowania sesji wydajności można wyświetlić w oknie **raport o wydajności** zintegrowanego środowiska projektowego programu Visual Studio Team System Development (IDE). Dane profilowania są zapisywane w plikach. vsp i. vsps. Widok raportu okna umożliwiają wyświetlanie i analizowanie problemów z wydajnością aplikacji.
@@ -26,7 +27,7 @@ Dane profilowania sesji wydajności można wyświetlić w oknie **raport o wydaj
 > [!CAUTION]
 > Plik danych profilowania zawiera poufne informacje, takie jak nazwa komputera, wersja systemu operacyjnego, ścieżki plików, informacje o pamięci i inne informacje o konfiguracji komputera. Należy zachować ścisłą kontrolę nad dystrybucją danych, zarówno w swojej natywnej. Format *VSP* i po jego wyeksportowaniu do. *wolumin CSV* lub. plik *XML* .
 >
-> Jeśli dane śledzenia zdarzeń są zbierane w ramach sesji wydajności, w dzienniku śledzenia zdarzeń mogą pojawić się dodatkowe informacje.* ETL*). Te informacje obejmują domenę i nazwę użytkownika; w związku z tym należy zachować ścisłą kontrolę nad dystrybucją pliku dziennika.
+> Jeśli dane śledzenia zdarzeń są zbierane w ramach sesji wydajności, w dzienniku śledzenia zdarzeń mogą pojawić się dodatkowe informacje.*ETL*). Te informacje obejmują domenę i nazwę użytkownika; w związku z tym należy zachować ścisłą kontrolę nad dystrybucją pliku dziennika.
 
 ## <a name="performance-report-window"></a>Okno raportu wydajności
  Okno Raport wydajności jest oknem narzędzia, które służy do wyświetlania i filtrowania danych wydajności oraz zarządzania nimi, a także do dostosowywalnej kontroli zapytań.
@@ -94,6 +95,6 @@ Dane profilowania sesji wydajności można wyświetlić w oknie **raport o wydaj
 
 - **Eksportuj** — zapisuje bieżący raport w. CVS — sformatowany lub. Plik w formacie XML z opcjami umożliwiającymi zapisanie różnych widoków.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Analizowanie danych dotyczących narzędzi do oceny wydajności](../profiling/analyzing-performance-tools-data.md)
 - [Widoki raportów wydajności](../profiling/performance-report-views.md)

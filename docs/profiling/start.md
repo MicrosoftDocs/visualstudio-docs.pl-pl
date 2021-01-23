@@ -1,5 +1,6 @@
 ---
 title: Uruchom | Microsoft Docs
+description: Dowiedz się, jak opcja Start jest opcją VSPerfCmd.exe, która inicjuje profiler do określonej metody profilowania.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b85d0fe9-f67a-4b7c-8d48-7eecf3f2dfe9
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: df3ccda9730be02bafb7f7d069a26193a4528d1e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aea1032f709d2f8cebf105bce14dc081fe3b74da
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778274"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719997"
 ---
 # <a name="start"></a>Rozpocznij
 Opcja **Start** jest opcją *VSPerfCmd.exe* , która inicjuje profiler do określonej metody profilowania.
@@ -53,7 +54,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 ## <a name="invalid-options"></a>Nieprawidłowe opcje
  Następujących opcji nie można używać z opcją **Start** w wierszu polecenia.
 
- **Status** **Stan** stanu dotyczy tych procesów, które są profilowane. Wyświetla listę procesów i wątków oraz ich bieżący stan profilu (włączone/wyłączone). Na przykład jeśli proces został zatrzymany, **status** nie będzie wskazywać tego w raporcie. **Stan** będzie wskazywać, że proces jest profilowany lub nie.
+  **Stan** stanu dotyczy tych procesów, które są profilowane. Wyświetla listę procesów i wątków oraz ich bieżący stan profilu (włączone/wyłączone). Na przykład jeśli proces został zatrzymany, **status** nie będzie wskazywać tego w raporcie. **Stan** będzie wskazywać, że proces jest profilowany lub nie.
 
  **Zamknięcie**[**:** `Timeout` ] powoduje wyłączenie profilera.
 
@@ -65,7 +66,7 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Launch:TestApp.exe
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [Profile aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)

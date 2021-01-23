@@ -1,5 +1,6 @@
 ---
 title: Właściwości sesji wydajności | Microsoft Docs
+description: Dowiedz się, w jaki sposób sesja wydajności umożliwia konfigurowanie ustawień, które określają sposób, w jaki aplikacja została profilowana.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b3bafa976c8e57f468a3f3f59a3b6b19308fd1b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 02ddf15251cf40dd340465563068b114940f9318
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74772205"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721232"
 ---
 # <a name="performance-session-properties"></a>Właściwości sesji wydajności
 
@@ -70,7 +71,7 @@ Aby uzyskać więcej informacji, zobacz [zbieranie danych o interakcji między w
 
 ## <a name="instrumentation"></a>Oprzyrządowanie
 
-Te ustawienia umożliwiają zbieranie danych wydajności dla kodu JScript na [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] stronach sieci Web i określanie wszelkich zdarzeń **Pre-instrument** przedprodukcyjnych i **po** instrumentacji, które mają być wykonywane przed lub po tym procesie.
+Te ustawienia umożliwiają zbieranie danych wydajności dla kodu JScript na [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] stronach sieci Web i określanie wszelkich zdarzeń  przedprodukcyjnych i **po** instrumentacji, które mają być wykonywane przed lub po tym procesie.
 
 Aby uzyskać więcej informacji, zobacz:
 
@@ -110,7 +111,7 @@ Aby uzyskać więcej informacji, zobacz:
 
 [Instrukcje: określanie dodatkowych opcji instrumentacji](../profiling/how-to-specify-additional-instrumentation-options.md)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 [Omówienia](../profiling/overviews-performance-tools.md) 
  [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md) 

@@ -7,12 +7,12 @@ ms.date: 09/02/2019
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.topic: troubleshooting
-ms.openlocfilehash: 0808f86f8571210a9048faf2e825b483120e73ca
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 11b0788317cd0a20dd27159aa241db32e3818daf
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584207"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722129"
 ---
 # <a name="does-visual-studio-for-mac-support-team-foundation-version-control"></a>Czy program Visual Studio dla komputerów Mac obsługuje kontrolę wersji programu Team Foundation?
 
@@ -53,7 +53,7 @@ Istnieją dwa sposoby uzyskania Instalatora za pomocą TEE-CLC.
 * Użyj oprogramowania homebrew, aby zainstalować klienta programu lub
 * Pobierz i ręcznie zainstaluj klienta
 
-Najprostszym rozwiązaniem jest **Korzystanie**z programu oprogramowania homebrew, który jest menedżerem pakietów dla macOS. Aby zainstalować za pomocą tej metody:
+Najprostszym rozwiązaniem jest **Korzystanie** z programu oprogramowania homebrew, który jest menedżerem pakietów dla macOS. Aby zainstalować za pomocą tej metody:
 
 1. Uruchom aplikację terminala macOS.
 1. Zainstaluj program oprogramowania Homebrew przy użyciu terminalu i instrukcje na [stronie głównej oprogramowania Homebrew](https://brew.sh/).
@@ -68,7 +68,7 @@ Aby **ręcznie skonfigurować tee-CLC**:
 
 Po zainstalowaniu TEE-CLC można uruchomić polecenie, `tf eula` Aby wyświetlić i zaakceptować umowę licencyjną dla klienta.
 
-Na koniec, aby uwierzytelnić się w środowisku DevOps TFS/Azure, musisz utworzyć osobisty token dostępu na serwerze. Dowiedz się więcej o [uwierzytelnianiu z osobistymi tokenami dostępu](/azure/devops/integrate/get-started/authentication/pats?view=azure-devops). Podczas tworzenia osobistego tokenu dostępu do używania z usługą TFVC należy zapewnić pełen dostęp podczas konfigurowania tokenu.
+Na koniec, aby uwierzytelnić się w środowisku DevOps TFS/Azure, musisz utworzyć osobisty token dostępu na serwerze. Dowiedz się więcej o [uwierzytelnianiu z osobistymi tokenami dostępu](/azure/devops/integrate/get-started/authentication/pats?view=azure-devops&preserve-view=true). Podczas tworzenia osobistego tokenu dostępu do używania z usługą TFVC należy zapewnić pełen dostęp podczas konfigurowania tokenu.
 
 #### <a name="using-the-tee-clc-to-connect-to-your-repo"></a>Nawiązywanie połączenia z repozytorium przy użyciu TEE-CLC
 
@@ -107,6 +107,6 @@ Aby dowiedzieć się więcej na temat poleceń wymienionych tutaj lub innych, mo
 
 `tf help`
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Opracowywanie i udostępnianie kodu w programie TFVC przy użyciu programu Visual Studio (w systemie Windows)](/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs)

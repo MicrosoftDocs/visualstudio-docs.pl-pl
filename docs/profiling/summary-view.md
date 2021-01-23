@@ -1,5 +1,6 @@
 ---
 title: Widok podsumowania | Microsoft Docs
+description: Dowiedz się, w jaki sposób widok podsumowania Wyświetla informacje o najbardziej wydajnych funkcjach lub obiektach w przebiegu profilowania.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a12989004b5bed8601bdda1ec0719eda789ff822
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 154f168044e5395a534b4a79ea44d9eafe6293f6
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546890"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719282"
 ---
 # <a name="summary-view"></a>Widok podsumowania
 Widok podsumowania zawiera informacje o najbardziej wydajnych funkcjach lub obiektach w przebiegu profilowania. Ten widok zawiera wykres osi czasu oraz dwie lub więcej list najbardziej kosztownych funkcji lub obiektów opartych na metrykach wydajności metody profilowania. Dane w tym widoku są zależne od metody profilowania, która została użyta (próbkowanie, Instrumentacja lub współbieżność) i czy został zebrany przydział pamięci platformy .NET.
@@ -32,14 +33,14 @@ Widok podsumowania zawiera informacje o najbardziej wydajnych funkcjach lub obie
 
 - Możesz kliknąć funkcję na liście Widok podsumowania, aby otworzyć widok Szczegóły funkcji dla funkcji. Możesz również kliknąć prawym przyciskiem myszy funkcję dla innych opcji widoku.
 
-- Aby zmodyfikować liczbę elementów wyświetlanych na listach widoku podsumowania, otwórz menu **Narzędzia** , wskaż polecenie **Opcje**, a następnie kliknij polecenie **Narzędzia wydajności**. W obszarze **Ustawienia ogólne**zmodyfikuj **liczbę funkcji w widoku podsumowania** .
+- Aby zmodyfikować liczbę elementów wyświetlanych na listach widoku podsumowania, otwórz menu **Narzędzia** , wskaż polecenie **Opcje**, a następnie kliknij polecenie **Narzędzia wydajności**. W obszarze **Ustawienia ogólne** zmodyfikuj **liczbę funkcji w widoku podsumowania** .
 
 ## <a name="notifications-links"></a>Linki powiadomień
  Możesz kliknąć linki na liście powiadomień, aby ustawić opcje wyświetlania raportu. Lista znajduje się po prawej stronie wykresu osi czasu.
 
 |Opcja|Opis|
 |-|-|
-|**Pokaż kod niebędący użytkownikiem**<br /><br /> **Pokaż Tylko mój kod**|Niedostępne dla kodu natywnego lub do profilowania danych, które zostały zebrane przy użyciu metody instrumentacji. Przełącza między wyświetlaniem tylko danych z kodu użytkownika (**Pokazywanie tylko mój kod**) i wyświetlaniem danych ze wszystkich kodów, w tym kodu systemowego (**Pokazywanie kodu**niezwiązanego z użytkownikiem). Domyślnie dane są ograniczone do kodu użytkownika. Aby zmienić to ustawienie, zobacz [jak: filtrowanie widoków raportów narzędzi profilowania w celu wyświetlenia tylko mój kod](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md).|
+|**Pokaż kod niebędący użytkownikiem**<br /><br /> **Pokaż Tylko mój kod**|Niedostępne dla kodu natywnego lub do profilowania danych, które zostały zebrane przy użyciu metody instrumentacji. Przełącza między wyświetlaniem tylko danych z kodu użytkownika (**Pokazywanie tylko mój kod**) i wyświetlaniem danych ze wszystkich kodów, w tym kodu systemowego (**Pokazywanie kodu** niezwiązanego z użytkownikiem). Domyślnie dane są ograniczone do kodu użytkownika. Aby zmienić to ustawienie, zobacz [jak: filtrowanie widoków raportów narzędzi profilowania w celu wyświetlenia tylko mój kod](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md).|
 |**Wyświetl wskazówki**|Wyświetla ostrzeżenia reguły wydajności w oknie **Lista błędów** . Aby uzyskać więcej informacji, zobacz [Korzystanie z reguł wydajności do analizowania danych](../profiling/using-performance-rules-to-analyze-data.md)|
 
 ## <a name="report"></a>Raport
@@ -55,7 +56,7 @@ Widok podsumowania zawiera informacje o najbardziej wydajnych funkcjach lub obie
 | **Filtrowanie danych raportu** | Wyświetla okienko filtr raportu profilowania, w którym można określić kryteria ograniczające dane w widoku raportu. Aby uzyskać więcej informacji, zobacz [Filtr widoku raportu wydajności](../profiling/performance-report-view-filter.md) |
 | **Przełącz pełny ekran** | Przełącza tryb pełnoekranowy dla widoku raportu. |
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Widok podsumowania — dane próbkowania](../profiling/summary-view-sampling-data.md)
 - [Widok podsumowania — dane Instrumentacji](../profiling/summary-view-instrumentation-data.md)
 - [Widok podsumowania — dane pamięci platformy .NET](../profiling/summary-view-dotnet-memory-data.md)

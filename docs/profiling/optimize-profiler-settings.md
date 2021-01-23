@@ -1,5 +1,6 @@
 ---
 title: Optymalizowanie ustawień profilera | Microsoft Docs
+description: Dowiedz się, w jaki sposób Profiler wydajności i okno narzędzia diagnostyczne w programie Visual Studio mają wiele różnych ustawień, które mają wpływ na ogólną wydajność narzędzi.
 ms.date: 4/29/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +10,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f0629228c2fcad1f8ea36db2e4d0c67a68715e4
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 482ee640f4b84348e00f2f3da42a4dbe13f73460
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400314"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722844"
 ---
 # <a name="optimizing-profiler-settings"></a>Optymalizowanie ustawień profilera
 
@@ -22,7 +23,7 @@ Narzędzie Performance Profiler i okno narzędzia diagnostyczne w programie Visu
 
 ## <a name="symbol-settings"></a>Ustawienia symboli
 
-Ustawienia symboli Znalezione w opcjach debugera ( **opcje > debugowania > symbole** lub **narzędzia > opcje > debugowanie > symbole** ) mają znaczny wpływ na to, jak długo trwa generowanie wyników w narzędziach. Włączenie serwerów symboli lub użycie **_NT_SYMBOL_PATH** powoduje, że profiler zażąda symboli dla każdego załadowanego modułu w raporcie. Obecnie Profiler zawsze automatycznie ładuje wszystkie symbole, niezależnie od preferencji automatycznego ładowania symboli.
+Ustawienia symboli Znalezione w opcjach debugera (**opcje > debugowania > symbole** lub **narzędzia > opcje > debugowanie > symbole**) mają znaczny wpływ na to, jak długo trwa generowanie wyników w narzędziach. Włączenie serwerów symboli lub użycie **_NT_SYMBOL_PATH** powoduje, że profiler zażąda symboli dla każdego załadowanego modułu w raporcie. Obecnie Profiler zawsze automatycznie ładuje wszystkie symbole, niezależnie od preferencji automatycznego ładowania symboli.
 
 ![Strona ładowania symboli](../profiling/media/symbolloading.png "Ładowanie symboli")
 
@@ -46,7 +47,7 @@ Niektóre narzędzia, takie jak narzędzie [użycie procesora CPU](../profiling/
 
 ![Strona właściwości centrum diag](../profiling/media/diaghubpropertiespage.png "Strona właściwości centrum diag")
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Uruchamianie narzędzi profilowania z debugerem lub bez niego](../profiling/running-profiling-tools-with-or-without-the-debugger.md)
 - [Jednoczesne używanie wielu narzędzi profilera](../profiling/use-multiple-profiler-tools-simultaneously.md)

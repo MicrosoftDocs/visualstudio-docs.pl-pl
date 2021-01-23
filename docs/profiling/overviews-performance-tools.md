@@ -1,5 +1,6 @@
 ---
 title: Omówienia (narzędzia do oceny wydajności) | Microsoft Docs
+description: Poznaj pojęcia i terminologię dla programu Visual Studio narzędzia profilowania. Informacje te służą do mierzenia charakterystyki wydajności aplikacji w ramach projektowania.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b877802d-c736-4047-821a-bd7733fff6de
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d284ffc6b850a9746cf1442f35400a18045bbe18
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d27f777b660b2ffc94c4b9b6f0b6ba55816d626b
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74772687"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722831"
 ---
 # <a name="overviews-performance-tools"></a>Narzędzia do oceny wydajności — omówienie
 Ta sekcja zawiera informacje o pojęciach i terminologii dotyczące [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania, których można użyć do mierzenia charakterystyki wydajności aplikacji w ramach projektowania.
@@ -56,7 +57,7 @@ Ta sekcja zawiera informacje o pojęciach i terminologii dotyczące [!INCLUDE[vs
 
  Informacje o problemach i krokach, które są wymagane do zbierania danych próbkowania i profilowania aplikacji między sesjami w systemie [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)] .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Rozpoczęcie pracy](../profiling/getting-started-with-performance-tools.md)
 - [Eksplorator wydajności](../profiling/performance-explorer.md)

@@ -1,5 +1,6 @@
 ---
 title: Zapisywanie informacji o symbolach przy użyciu plików danych o wydajności | Microsoft Docs
+description: Dowiedz się, jak można ustawić ustawienia projektu wydajności, aby zapisać lub serializować symbole w pliku raportu.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 74137752900d082c545dd5e5271b7700ec81fa01
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 142e73a65fa9ffd2210719d84f18a25068762acb
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778300"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720218"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>Zapisywanie informacji o symbolach w plikach danych dotyczących wydajności
 
@@ -60,7 +61,7 @@ VsPerfReport-clearpackedsymbols filename. vsp
 
 VsPerfReport-PACKSYMBOLS-Summary: ALL filename. vsp
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 [Zapisywanie i eksportowanie danych](../profiling/saving-and-exporting-performance-tools-data.md) 
  narzędzi wydajności [Instrukcje: odwołania do informacji o](../profiling/how-to-reference-windows-symbol-information.md) 

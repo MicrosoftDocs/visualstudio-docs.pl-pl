@@ -1,5 +1,6 @@
 ---
 title: Informacje o symbolach serializacji | Microsoft Docs
+description: Dowiedz się, jak można serializować symbole, które trzeba wykonać, aby analizować swoją aplikację oraz jak Serializacja symboli dodaje symbole do pliku. vsp.
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d644960153a8e342f6442f3750420ea68a61b38f
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 0b7cdfa6e64380c966b62d6691f73719a3034e2d
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851596"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722090"
 ---
 # <a name="how-to-serialize-symbol-information"></a>Instrukcje: Serializowanie informacji o symbolach
 Możesz serializować symbole, które muszą być potrzebne do analizowania aplikacji. Serializacja symboli dodaje symbole do. plik *VSP* . Przez dodanie informacji o symbolach do. plik *VSP* , inne mogą analizować raport wydajności bez dostępu do oryginalnych symboli. Jeśli symbole nie są serializowane, musisz mieć oryginalny instrument. *exe* i. pliki *PDB* do przeanalizowania. plik *VSP* .
@@ -32,7 +33,7 @@ Możesz serializować symbole, które muszą być potrzebne do analizowania apli
 
 2. Kliknij pozycję **Narzędzia wydajności**.
 
-3. W obszarze **Ustawienia ogólne**wybierz opcję **automatycznie serializować informacje o symbolach**.
+3. W obszarze **Ustawienia ogólne** wybierz opcję **automatycznie serializować informacje o symbolach**.
 
 ## <a name="see-also"></a>Zobacz także
 - [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)

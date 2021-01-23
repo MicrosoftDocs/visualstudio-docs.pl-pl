@@ -1,5 +1,6 @@
 ---
 title: Dane wyjściowe | Microsoft Docs
+description: Dowiedz się, w jaki sposób opcja Output określa nazwę pliku danych profilowania dla sesji wydajności. Dane wyjściowe muszą być używane z opcją Start.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 5e286e61-4548-42cf-a635-e608c5edbe2b
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ab01f67d44e8c6e0cc13eaf9b0046695a0132e65
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6067e13e33875be778ff59739f5511c4116937ed
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778508"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722805"
 ---
 # <a name="output"></a>Dane wyjściowe
 Opcja **wyjście** określa nazwę pliku danych profilowania dla sesji wydajności. **Dane wyjściowe** muszą być używane z opcją **Start** .
@@ -40,7 +41,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [Profile aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)

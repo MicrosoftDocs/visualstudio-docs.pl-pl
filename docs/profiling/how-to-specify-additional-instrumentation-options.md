@@ -1,5 +1,6 @@
 ---
 title: Określ dodatkowe opcje Instrumentacji | Microsoft Docs
+description: Dowiedz się, jak można instrumentować pliki binarne przy użyciu środowiska IDE programu Visual Studio lub narzędzi wiersza polecenia.
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 42c5500d03e815bad1666da7b52918479715e861
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: aaa6a222ca320ff9e8e3d117c2218e170d67d683
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851817"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721856"
 ---
 # <a name="how-to-specify-additional-instrumentation-options"></a>Instrukcje: określanie dodatkowych opcji instrumentacji
 
@@ -30,9 +31,9 @@ Pliki binarne można instrumentować za pomocą środowiska IDE programu Visual 
 
 ## <a name="to-specify-additional-instrumentation-option"></a>Aby określić dodatkową instrumentację
 
-1. W **Eksplorator wydajności**wybierz **sesję wydajności** , a następnie kliknij prawym przyciskiem myszy i wybierz pozycję **Właściwości**.
+1. W **Eksplorator wydajności** wybierz **sesję wydajności** , a następnie kliknij prawym przyciskiem myszy i wybierz pozycję **Właściwości**.
 
-2. Na **stronie właściwości**kliknij pozycję **Zaawansowane** właściwości.
+2. Na **stronie właściwości** kliknij pozycję **Zaawansowane** właściwości.
 
 3. Wpisz opcje w polu **dodatkowe opcje Instrumentacji** .
 

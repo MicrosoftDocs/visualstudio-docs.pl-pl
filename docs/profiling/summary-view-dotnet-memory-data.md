@@ -1,5 +1,6 @@
 ---
 title: Widok podsumowania — dane pamięci platformy .NET | Microsoft Docs
+description: Dowiedz się, w jaki sposób widok podsumowania Wyświetla informacje o funkcjach i typach programu .NET, które przydzieliły największą ilość pamięci.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: a67902af99eaee6c75f92f86c2481dfc2afd744e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 590705e7fb55315176d5533a9cd009784430ea4d
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74771559"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722675"
 ---
 # <a name="summary-view---net-memory-data"></a>Widok podsumowania — dane pamięci platformy .NET
 Widok podsumowania zawiera informacje o funkcjach i typach programu .NET, które przydzieliły najwięcej pamięci, oraz typy, które zostały utworzone najczęściej w ramach uruchomienia profilowania. Aby uzyskać więcej informacji, w tym opis linków powiadomień i list raportów, zobacz [Widok podsumowania](../profiling/summary-view.md).
@@ -48,6 +49,6 @@ Widok podsumowania zawiera informacje o funkcjach i typach programu .NET, które
 |**Nazwa**|Nazwa typu.|
 |**Liczba**|Wartość procentowa łącznej liczby obiektów of.NET, które zostały utworzone w ramach uruchomienia profilowania, które były wystąpieniami tego typu.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Widok podsumowania — dane próbkowania](../profiling/summary-view-sampling-data.md)
 - [Widok podsumowania — dane Instrumentacji](../profiling/summary-view-instrumentation-data.md)

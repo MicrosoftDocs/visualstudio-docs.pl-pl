@@ -1,5 +1,6 @@
 ---
 title: Profilowanie wiersza polecenia — Tworzenie podstawowych raportów
+description: Poznaj opcje podsumowania i CallTrace VSPerfReport.exe, które tworzą raporty CSV (wartości rozdzielane przecinkami) z pliku danych profilowania. vsp lub. vsps.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,15 +11,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c9ee74732c917ee4267e08f7ff1c60715971ed71
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 86c72f0281f459852b878f17687411ce87eb6978
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808854"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718944"
 ---
 # <a name="create-basic-profiling-reports-from-the-command-line"></a>Tworzenie podstawowych raportów profilowania z poziomu wiersza polecenia
-W tym artykule opisano podstawowe polecenia VSPerfReport, które generują wartości rozdzielane przecinkami (.* CSV*) raportów z programu. *VSP* lub. plik danych profilowania *vsps* . Aby uzyskać opis wszystkich opcji raportów, zobacz [VSPerfReport](../profiling/vsperfreport.md).
+W tym artykule opisano podstawowe polecenia VSPerfReport, które generują wartości rozdzielane przecinkami (.*CSV*) raportów z programu. *VSP* lub. plik danych profilowania *vsps* . Aby uzyskać opis wszystkich opcji raportów, zobacz [VSPerfReport](../profiling/vsperfreport.md).
 
 ## <a name="report-commands"></a>Polecenia raportów
  Użyj jednego z poniższych poleceń, aby utworzyć raport dla określonego pliku danych profilowania.
@@ -39,9 +40,9 @@ W tym artykule opisano podstawowe polecenia VSPerfReport, które generują warto
 |**Widokach drzewa wywołań**|Reprezentuje ścieżki wykonywania i dane profilowania funkcji w przebiegu profilowania.|-   [Dane instrumentacji](../profiling/call-tree-view-instrumentation-data.md)<br />-   [Próbkowanie danych](../profiling/call-tree-view-sampling-data.md)<br />-   [Dane próbkowania pamięci platformy .NET](../profiling/call-tree-view-dotnet-memory-sampling-data.md)<br />-   [Dane instrumentacji pamięci platformy .NET](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)<br />-   [Dane rywalizacji](../profiling/call-tree-view-contention-data.md)|
 |**Licznik**|Wyświetla listę znaczników profilowania i wartości liczników wydajności systemu Windows, które zostały zebrane podczas przebiegu profilowania.|-   [Widok znaczników](../profiling/marks-view.md)|
 |**Przegląd**|Wyświetla listę danych profilowania według instrukcji.|-   [Próbkowanie danych](../profiling/instruction-pointers-ips-view-sampling-data.md)<br />-   [Dane próbkowania pamięci platformy .NET](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)<br />-   [Dane rywalizacji](../profiling/instruction-pointers-ips-view-contention-data.md)|
-|**Życia**|Wyświetla listę okresów istnienia przyznanych obiektów.|-   [Widok okresu istnienia obiektu](../profiling/object-lifetime-view.md)|
-|**Liniow**|Wyświetla listę danych profilowania według wiersza kodu źródłowego.|-   [Próbkowanie danych](../profiling/lines-view-sampling-data.md)<br />-   [Dane próbkowania pamięci platformy .NET](../profiling/lines-view-dotnet-memory-sampling-data.md)<br />-   [Dane rywalizacji](../profiling/lines-view-contention-data.md)|
-|**Nagłówki**|Profilowanie informacji nagłówka pliku danych.|Specyficzne dla pliku.|
+|**Instrument**|Wyświetla listę okresów istnienia przyznanych obiektów.|-   [Widok okresu istnienia obiektu](../profiling/object-lifetime-view.md)|
+|**Linia**|Wyświetla listę danych profilowania według wiersza kodu źródłowego.|-   [Próbkowanie danych](../profiling/lines-view-sampling-data.md)<br />-   [Dane próbkowania pamięci platformy .NET](../profiling/lines-view-dotnet-memory-sampling-data.md)<br />-   [Dane rywalizacji](../profiling/lines-view-contention-data.md)|
+|**Nagłówek**|Profilowanie informacji nagłówka pliku danych.|Specyficzne dla pliku.|
 |**Znacznik**|Znaczniki profilowania zebrane w przebiegu profilowania.|-   [Widok znaczników](../profiling/marks-view.md)|
 |**Moduł**|Wyświetla listę danych profilowania dla modułów.|-   [Próbkowanie danych](../profiling/modules-view-sampling-data.md)<br />-   [Dane instrumentacji](../profiling/modules-view-instrumentation-data.md)<br />-   [Dane próbkowania pamięci platformy .NET](../profiling/modules-view-dotnet-memory-sampling-data.md)<br />-   [Dane instrumentacji pamięci platformy .NET](../profiling/modules-view-dotnet-memory-instrumentation-data.md)<br />-   [Dane rywalizacji](../profiling/modules-view-contention-data.md)|
 |**Proces**|Wyświetla listę danych profilowania dla procesów.|-   [Widok procesu](../profiling/process-view.md)<br />-   [Dane rywalizacji](../profiling/process-view-contention-data.md)|

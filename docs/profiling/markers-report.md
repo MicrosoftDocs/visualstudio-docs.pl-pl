@@ -1,5 +1,6 @@
 ---
 title: Raport znaczników | Microsoft Docs
+description: Dowiedz się, jak raport znaczniki wyświetla listę znaczników w wyświetlanym czasie i jak przesuwanie lub powiększanie może powodować występowanie lub znikanie znaczników.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9502d2cf0081985cfbee2283af820c06d681ad9f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e95cf3b14f804c481ff03ec6fbf72b360efedc7
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64808272"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722116"
 ---
 # <a name="markers-report"></a>Raport dotyczący znaczników
 Raport znaczniki wyświetla listę znaczników w wyświetlanym czasie.  Kadrowanie lub powiększanie lub ukrywanie ścieżek może spowodować, że znaczniki będą widoczne lub znikane. Raport zawiera te informacje o każdym znaczniku:

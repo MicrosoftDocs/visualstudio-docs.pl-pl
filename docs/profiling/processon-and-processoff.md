@@ -1,5 +1,6 @@
 ---
 title: ProcessOn i ProcessOff | Microsoft Docs
+description: Dowiedz się, w jaki sposób VSPerfCmd.exe ProcessOff i ProcessOn podpolecenia wstrzymują i wznawiają profilowanie określonego procesu w sesji profilowania wiersza polecenia.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d3dc6a7e-bc0f-48a6-a4ec-f386348bb296
@@ -9,17 +10,17 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 62c16c2d578a38187b4a58958466597a5e4d297d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ae4b5e95636894ddc2d0c4799308afb057145747
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778391"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719451"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn i ProcessOff
 VSPerfCmd.exe **ProcessOff** i **ProcessOn** podpolecenia wstrzymują i wznawiają profilowanie określonego procesu w sesji profilowania wiersza polecenia. **ProcessOff** przerywa proces profilowania procesu, a **ProcessOn** uruchamia profilowanie procesu.
 
- W większości przypadków należy określić **ProcessOn** lub **ProcessOff** jako jedyną opcję w wierszu polecenia VSPerfCmd.exe, ale można je również łączyć z podpoleceniami **GlobalOn**, **GlobalOff**, **ThreadOn**i **ThreadOff** .
+ W większości przypadków należy określić **ProcessOn** lub **ProcessOff** jako jedyną opcję w wierszu polecenia VSPerfCmd.exe, ale można je również łączyć z podpoleceniami **GlobalOn**, **GlobalOff**, **ThreadOn** i **ThreadOff** .
 
  Podpolecenia **ProcessOn** i **ProcessOff** współpracują z podpoleceniami **GlobalOn** i **GlobalOff** , które kontrolują zbieranie danych dla wszystkich procesów w sesji profilowania wiersza polecenia i polecenia **ThreadOn** i **ThreadOff** , które kontrolują zbieranie danych dla określonego wątku.
 
@@ -72,7 +73,7 @@ VSPerfCmd /Shutdown
 
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [Profile aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)

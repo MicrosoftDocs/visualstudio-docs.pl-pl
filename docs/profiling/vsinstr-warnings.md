@@ -1,6 +1,7 @@
 ---
 title: Ostrzeżenia VSInstr | Microsoft Docs
 ms.date: 11/04/2016
+description: Informacje o ostrzeżeniach wydawanych przez narzędzie VSInstr.exe i sposobach użycia opcji nowarn wraz z numerami ostrzeżeń, aby pominąć wyświetlane ostrzeżenie.
 ms.topic: reference
 helpviewer_keywords:
 - instrumentation, VSInstr tool
@@ -15,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3af98372102da49e7553d2f2992f3804cf0a619e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5510c475ab566e65d2bd152136535fde62f257b
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330547"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723130"
 ---
 # <a name="vsinstr-warnings"></a>Ostrzeżenia VSInstr
 Poniższa tabela zawiera listę ostrzeżeń wydawanych przez narzędzie *VSInstr.exe* . Można użyć opcji nowarn wraz z numerami ostrzegawczymi, aby pominąć wyświetlane ostrzeżenie.
@@ -44,5 +45,5 @@ Poniższa tabela zawiera listę ostrzeżeń wydawanych przez narzędzie *VSInstr
 |**VSP2013**|Instrumentacja tego obrazu wymaga uruchomienia go jako procesu 32-bitowego. Flagi nagłówka CLR zostały zaktualizowane w celu odzwierciedlenia tego.<br /><br /> Profiler modyfikuje plik binarny, dzięki czemu 64-bitowe systemy operacyjne mogą otworzyć proces 32-bitowy w emulatorze emulatora WOW64. W przypadku bibliotek (dll) może to się nie powieść, jeśli są ładowane w istniejącym procesie 64-bitowym. To ostrzeżenie powiadamia użytkownika o zależności.|
 |**VSP2014**|Utworzony obraz z instrumentacją wydaje się nieprawidłowy i może nie zostać uruchomiony.<br /><br /> Ten komunikat występuje, gdy końcowy zestaw Instrumentacji ma nieprawidłowy nagłówek PE.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [VSInstr](../profiling/vsinstr.md)

@@ -1,5 +1,6 @@
 ---
 title: MarkProfile | Microsoft Docs
+description: Metoda MarkProfile Wstawia znacznik profilu do pliku. vsp. Profilowanie wątku zawierającego funkcję MarkProfile musi być włączone dla znacznika, który ma zostać wstawiony.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +12,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f53b51f9e78e2cb5d327abd3a79ebf2faa3a9204
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ecf676c58d8850834ec0c3333196dfb7144f885e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778573"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718866"
 ---
 # <a name="markprofile"></a>MarkProfile
-`MarkProfile`Metoda Wstawia znacznik profilu w.* plik VSP* . Profilowanie wątku zawierającego `MarkProfile` funkcję musi być włączone dla znacznika, który ma zostać wstawiony.
+`MarkProfile`Metoda Wstawia znacznik profilu w.*plik VSP* . Profilowanie wątku zawierającego `MarkProfile` funkcję musi być włączone dla znacznika, który ma zostać wstawiony.
 
 ## <a name="syntax"></a>Składnia
 
@@ -98,5 +99,5 @@ void ExerciseMarkProfile()
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dokumentacja interfejsu API programu Visual Studio profiler (natywna)](../profiling/visual-studio-profiler-api-reference-native.md)

@@ -1,5 +1,7 @@
 ---
 title: Kopiuj zaznaczenie | Microsoft Docs
+description: Aby skopiować cały stos wywołań z karty raport, kliknij przycisk Kopiuj. Następnie można wkleić stos wywołań w dowolnym programie, który obsługuje tę akcję.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,15 +14,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea96fe521afe713b1eafd59390047bfdb427f6fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: da16256579f414d33434295fc355f368597d868d
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62553230"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720868"
 ---
 # <a name="copy-selection"></a>Kopiuj zaznaczenie
 Aby skopiować cały stos wywołań z karty raport, kliknij przycisk **Kopiuj**. Następnie można wkleić stos wywołań w dowolnym programie, który obsługuje tę akcję.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Widok wątków](../profiling/threads-view-parallel-performance.md)

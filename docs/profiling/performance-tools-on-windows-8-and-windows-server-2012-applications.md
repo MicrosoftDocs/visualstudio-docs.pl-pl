@@ -1,5 +1,6 @@
 ---
 title: Narzędzia do oceny wydajności w systemie Windows 8 & WS 2012
+description: Dowiedz się, w jaki sposób ulepszone funkcje zabezpieczeń w systemach Windows 8 i Windows Server 2012 wymagały znaczących zmian w sposobie zbierania danych przez narzędzia do oceny wydajności programu Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 06/19/2017
 ms.topic: conceptual
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cc44eddc2af2e2d85f7c4bb9c876d336ccd1b546
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: ce83684b77d4546915cdcf5980e68be0b6c6a125
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90807836"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719594"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Narzędzia do oceny wydajności w aplikacjach Windows 8 i Windows Server 2012
 
@@ -119,7 +120,7 @@ Aby zebrać dane profilowania, można użyć [VSPerfCmd](../profiling/vsperfcmd.
 
 Dane interakcji warstwy można wyświetlać tylko w Visual Studio Enterprise. Raporty interakcji z warstwą opartą na plikach za pośrednictwem [VSPerfReport](../profiling/vsperfreport.md) są niedostępne.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 [Eksplorator wydajności](../profiling/performance-explorer.md) 
  [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md) 

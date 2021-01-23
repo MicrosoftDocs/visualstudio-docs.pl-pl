@@ -1,5 +1,6 @@
 ---
 title: Szybkie profilowanie witryny sieci Web za pomocą VSPerfASPNETCmd | Microsoft Docs
+description: Dowiedz się, jak narzędzie wiersza polecenia VSPerfASPNETCmd umożliwia łatwe Profilowanie aplikacji sieci Web ASP.NET.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fff2486c4197cbbe28c3b5deb0099e264805e12b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a08604b95f49f55a5fea254447046d305d8feff9
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74771695"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720426"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Szybkie profilowanie witryny sieci Web za pomocą VSPerfASPNETCmd
 
@@ -103,5 +104,5 @@ Do poleceń wymienionych wcześniej w tej sekcji można dodać dowolną z nastę
 
 |Opcja|Opis|
 |------------|-----------------|
-|**/Output:**`VspFile`|Domyślnie dane profilowania (.* VSP*) w bieżącym katalogu zostanie utworzony plik o nazwie **PerformanceReport. vsp**. Użyj opcji/Output, aby określić inną lokalizację, nazwę pliku lub oba te elementy.|
+|**/Output:**`VspFile`|Domyślnie dane profilowania (.*VSP*) w bieżącym katalogu zostanie utworzony plik o nazwie **PerformanceReport. vsp**. Użyj opcji/Output, aby określić inną lokalizację, nazwę pliku lub oba te elementy.|
 |**/PackSymbols: wyłączone**|Domyślnie VsPerfASPNETCmd osadza symbole (nazwy funkcji i parametrów itd.) w. plik *VSP* . Osadzenie symboli może sprawiać, że plik danych profilowania jest bardzo duży. Jeśli będziesz mieć dostęp do programu. pliki *PDB* , które zawierają symbole podczas analizowania danych, należy użyć opcji/packsymbols: off, aby wyłączyć osadzanie symboli.|

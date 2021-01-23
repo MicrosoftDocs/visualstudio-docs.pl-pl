@@ -1,5 +1,6 @@
 ---
 title: Okno Eksplorator wydajności | Microsoft Docs
+description: Dowiedz się, jak okno Eksplorator wydajności w środowisku IDE programu Visual Studio umożliwia konfigurowanie sesji wydajności przy użyciu narzędzia profilowania programu Visual Studio.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a365892f606da90c608e43b7ccce73b902ec0e98
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06d2b7e2ad5d5df4022dc78aa06315545d56c0ee
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74772442"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722818"
 ---
 # <a name="performance-explorer-window"></a>Okno Eksploratora wydajności
 
@@ -50,7 +51,7 @@ Okno **Eksplorator wydajności** zawiera kontrolkę drzewa, która wyświetla pl
 
 - **Raporty** — wyświetla nazwy plików danych profilera, które są generowane dla danej sesji. Kliknij prawym przyciskiem myszy pozycję **raporty** , aby dodać istniejący raport lub porównać dwa pliki danych profilera. Kliknij prawym przyciskiem myszy nazwę raportu, aby otworzyć, usunąć lub wyeksportować plik danych profilera.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 [Omówienia](../profiling/overviews-performance-tools.md) 
  [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md) 

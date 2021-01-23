@@ -1,5 +1,6 @@
 ---
 title: Informacje o wartościach danych Instrumentacji | Microsoft Docs
+description: Dowiedz się, w jaki sposób Metoda profilowania Instrumentacji rejestruje szczegółowe informacje o chronometrażu dla wywołań funkcji, wierszy i instrukcji w profilowanej aplikacji.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dace7b13816c63664ccb4dabfed52d1c5fb7523
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f2f049ccb40d2d34c22fddbf841e36bd513db80f
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778079"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722350"
 ---
 # <a name="understand-instrumentation-data-values"></a>Opis wartości danych Instrumentacji
 
@@ -36,7 +37,7 @@ Dla każdej funkcji na stosie wywołań podczas rejestrowania interwału analiza
 
 - Czy w interwale wystąpi zdarzenie systemu operacyjnego.
 
-Wartości danych dla interwału funkcji lub zakresu danych są nazywane *włącznie* *, bez*wykluczeń, *aplikacji włącznie*i *aplikacji na wyłączność*:
+Wartości danych dla interwału funkcji lub zakresu danych są nazywane *włącznie* *, bez* wykluczeń, *aplikacji włącznie* i *aplikacji na wyłączność*:
 
 - Wszystkie interwały funkcji są dodawane do wartości danych włącznie.
 
@@ -96,7 +97,7 @@ Wartość procentowa łącznej liczby wartości obejmujących sesję profilowani
 
 100 * aplikacja funkcji na wyłączność/sesja, włącznie
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 [Analizowanie danych](../profiling/analyzing-performance-tools-data.md) 
  narzędzi wydajności [Instrukcje: wybieranie metod zbierania](../profiling/how-to-choose-collection-methods.md)

@@ -1,5 +1,6 @@
 ---
 title: Widok szczegółów wątku — dane rywalizacji | Microsoft Docs
+description: Dowiedz się, jak widok Szczegóły wątku przedstawia wykres osi czasu dla zdarzeń blokowania w wybranym wątku przebiegu profilowania.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 679fd9fd039fa903f5df5a479fa4f0e119bb7a9c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d1cf1d9d7afeef8962026739116f75d4289d6283
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778170"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718801"
 ---
 # <a name="thread-details-view---contention-data"></a>Widok szczegółów wątku — dane rywalizacji
 Widok Szczegóły wątku przedstawia wykres osi czasu dla zdarzeń blokowania w wybranym wątku przebiegu profilowania, który został spowodowany przez rywalizację o zasoby. Zdarzenie blokujące występuje, gdy wątek jest zmuszony do wstrzymania wykonywania, ponieważ inny wątek zablokował dostęp do zasobu.

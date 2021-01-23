@@ -1,5 +1,6 @@
 ---
 title: Czas przetwarzania interfejsu użytkownika | Microsoft Docs
+description: Dowiedz się, że segmenty na osi czasu są skojarzone z czasem blokowania, które są klasyfikowane jako przetwarzanie interfejsu użytkownika.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 391b4582d03e32e738f0eade823326e72a662a43
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 63462aedfb1d7a2c03fe6ff5d59495358c52194e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63004454"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722389"
 ---
 # <a name="ui-processing-time"></a>Czas przetwarzania interfejsu użytkownika
 Te segmenty na osi czasu są skojarzone z czasem blokowania, które są klasyfikowane jako przetwarzanie interfejsu użytkownika. Oznacza to, że wątek jest pompą komunikatów systemu Windows lub wykonywania innych czynności interfejsu użytkownika. W tym czasie wątek został zablokowany w interfejsie API, który jest obliczany przez Wizualizator współbieżności jako przetwarzanie interfejsu użytkownika. Interfejsy API, takie jak `GetMessage()` i `MsgWaitForMultipleObjects()` mieszczą się w tej grupie.
@@ -26,5 +27,5 @@ Te segmenty na osi czasu są skojarzone z czasem blokowania, które są klasyfik
 
  Kategoria przetwarzanie interfejsu użytkownika pomaga zrozumieć czas reakcji aplikacji GUI i jest pożądana w aplikacjach, które są zależne od czasu odpowiedzi interfejsu użytkownika. Na przykład jeśli wątek interfejsu użytkownika w aplikacji uzyskuje 100% czasu w czasie przetwarzania interfejsu użytkownika, prawdopodobnie odpowiada. Jeśli jednak wątek interfejsu użytkownika spędza znaczący czas w innych kategoriach, należy poszukać głównych przyczyn i rozważyć Opcje zmniejszenia kategorii innych niż interfejs użytkownika w tym wątku.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Widok wątków](../profiling/threads-view-parallel-performance.md)

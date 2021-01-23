@@ -1,5 +1,6 @@
 ---
 title: Profilowanie i zabezpieczenia systemu Windows Vista | Microsoft Docs
+description: W zależności od dostępnych ustawień uprawnień dostępu użytkownika każdy użytkownik może mieć uprawnienia zabezpieczeń do profilowania procesu na tym komputerze.
 ms.date: 11/02/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a74862d59fe402cbfd9e6bfa804d62ca4c8310b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0bfd12808a4639f44a3a5075a4b474012ab2c2fa
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778378"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719412"
 ---
 # <a name="profiling-and-windows-vista-security"></a>Profilowanie i bezpieczeństwo systemu Windows Vista
 
@@ -45,7 +46,7 @@ Listę procesów, które są dostępne, można wyświetlić, ustawiając opcje w
 
   Gdy ta opcja nie jest zaznaczona, na liście są wyświetlane procesy w bieżącej sesji. W przeciwnym razie lista wyświetla procesy we wszystkich sesjach.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Omówienia](../profiling/overviews-performance-tools.md)
 - [VSPerfCmd](../profiling/vsperfcmd.md)

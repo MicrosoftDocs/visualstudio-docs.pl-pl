@@ -1,5 +1,6 @@
 ---
 title: Reguły wydajności według identyfikatora | Microsoft Docs
+description: 'Dowiedz się więcej o regułach wydajności według identyfikatora, w tym DA0001: Użyj StringBuilder dla złączs i DA0011: kosztowne CompareTo.'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9a1c934c-4798-4df9-a8ef-eb17ef06b6a2
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1762f12d791f220161867af73a823f88b9f86ec0
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 4cbfde146586d8ab10b8ad44ee1294e36221493a
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037331"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722103"
 ---
 # <a name="performance-rules-by-id"></a>Reguły wydajności według identyfikatora
 

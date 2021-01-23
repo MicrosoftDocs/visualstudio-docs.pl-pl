@@ -1,5 +1,6 @@
 ---
 title: Zmień lokalizację plików binarnych instrumentacji | Microsoft Docs
+description: Dowiedz się, jak sondy są wstawiane do pliku binarnego w celu mierzenia wydajności aplikacji podczas Instrumentacji.
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 13fa5c3413e620e43a695e205a0523dce23e90b4
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: ee94737f59f5c29aac47d686f68ade06131d0379
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851349"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720621"
 ---
 # <a name="how-to-relocate-instrumented-binaries"></a>Instrukcje: Zmienianie położenia plików binarnych z instrumentacją
 
@@ -28,9 +29,9 @@ Podczas Instrumentacji sondy są wstawiane do pliku binarnego w celu zmierzenia 
 
 ## <a name="to-relocate-instrumented-binary"></a>Aby przenieść plik binarny z instrumentacją
 
-1. W **Eksplorator wydajności**kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij polecenie **Właściwości**.
+1. W **Eksplorator wydajności** kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij polecenie **Właściwości**.
 
-2. Na **stronie właściwości**kliknij właściwości **binarne** .
+2. Na **stronie właściwości** kliknij właściwości **binarne** .
 
 3. Zaznacz pole wyboru **Przenieś instrumentację plików binarnych** .
 

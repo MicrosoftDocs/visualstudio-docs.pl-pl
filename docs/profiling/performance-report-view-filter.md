@@ -1,5 +1,6 @@
 ---
 title: Filtr widoku raportu wydajności | Microsoft Docs
+description: Dowiedz się, w jaki sposób okno filtru profilera raportu profiler znajduje się u góry okna raportu wydajności.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a5642a8e153a4dfc7705d91d933397b6f8acb37
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 79fb4b7cf7a5df4b2077a2145172d24acdbf86cb
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778457"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722740"
 ---
 # <a name="performance-report-view-filter"></a>Filtr widoku raportów wydajności
 Okno **filtru profilera raportu profiler** znajduje się u góry okna **raport o wydajności** . Jeśli nie widzisz go, kliknij przycisk **Pokaż filtr** .
@@ -37,6 +38,6 @@ Okno **filtru profilera raportu profiler** znajduje się u góry okna **raport o
 
  Aby zapisać filtr, kliknij przycisk **Eksportuj filtr** na pasku narzędzi **raport wydajności** , a następnie określ lokalizację i nazwę pliku. plik *VSPF* . Aby załadować wcześniej zapisany filtr, kliknij przycisk **Importuj filtr** i Znajdź zapisany plik filtru. Pliki filtrów mogą również służyć do filtrowania plików danych na komputerach, na których zainstalowano autonomiczną narzędzia profilowania. Aby uzyskać więcej informacji, zobacz [VSPerfReport](../profiling/vsperfreport.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Analizowanie danych dotyczących narzędzi do oceny wydajności](../profiling/analyzing-performance-tools-data.md)
 - [VSPerfReport](../profiling/vsperfreport.md)

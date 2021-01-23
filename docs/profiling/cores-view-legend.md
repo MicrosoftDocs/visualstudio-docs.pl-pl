@@ -1,5 +1,7 @@
 ---
 title: Legenda widoku rdzeni | Microsoft Docs
+description: Dowiedz się więcej o legendzie widoku rdzeni, która udostępnia dane przełącznika kontekstu tabelarycznego i wybór wątku. Poznaj również informacje o przełącznikach kontekstu i wydajności.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ea3184fbcd3561b88521f7dbdf4bf44c925150d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 043f056587856b5c5774a3a15b3542437e0d4eb7
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62553166"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720829"
 ---
 # <a name="cores-view-legend"></a>Legenda widoku rdzeni
 Legenda widoku rdzeni identyfikuje każdy wątek według koloru i nazwy. Zawiera kolumny, które pokazują liczbę przełączeń kontekstu między rdzeniami, łączne przełączenia kontekstu i procent przełączeń kontekstu między rdzeniami. Wiersze w legendzie są sortowane według liczby przełączeń kontekstu między rdzeniami, w kolejności malejącej.
@@ -35,5 +37,5 @@ Legenda widoku rdzeni identyfikuje każdy wątek według koloru i nazwy. Zawiera
 |Łączna Liczba przełączeń kontekstu|Całkowita liczba przełączeń kontekstu dla danego wątku w okresie próbkowania. Za każdym razem, gdy wątek zmienia kontekst (na przykład z wykonywania do synchronizacji), jest zliczane jeden przełącznik kontekstu.|
 |Procent przełączeń kontekstu, które przekraczają rdzenie|Obliczany jako wartość procentowa przez podzielenie liczby przełączeń kontekstu między rdzeniami przez liczbę przełączników całkowitego kontekstu. Im wyższa wartość procentowa, tym większy wpływ narzutu na przełączenia kontekstu między rdzeniami na wydajność tego określonego wątku.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Widok rdzeni](../profiling/cores-view.md)

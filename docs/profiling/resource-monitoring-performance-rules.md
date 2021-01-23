@@ -1,5 +1,6 @@
 ---
 title: Reguły wydajności monitorowania zasobów | Microsoft Docs
+description: Dowiedz się, jak komunikaty wydajności w kategorii Monitorowanie zasobów zapewniają dodatkowe dane dotyczące wydajności aplikacji.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f0f77faf-0a05-4718-a2c5-47934be40868
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 39df18811a47dfb41c17333121cd9a23d8f46940
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 96cad46cd8a42346ab6199bca664cdc885bfc3cd
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544537"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720270"
 ---
 # <a name="resource-monitoring-performance-rules"></a>Reguły wydajności monitorowania zasobu
 Komunikaty o wydajności w kategorii Monitorowanie zasobów zapewniają dodatkowe dane dotyczące wydajności aplikacji. Za pomocą tych danych można analizować problemy z wydajnością. Te reguły są informacyjne i raportowane dla każdego przebiegu profilowania.

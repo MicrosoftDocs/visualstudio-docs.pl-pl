@@ -1,5 +1,6 @@
 ---
 title: Nawigator wykorzystania | Microsoft Docs
+description: Dowiedz się, w jaki sposób można użyć nawigatora użycia w wizualizatorze współbieżności, aby wybrać przedział czasu w śladzie.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94e2562e86af36d935679916c2bfb9669be1758d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9f209098200333e91f0e5baf9c7a2b73b4a3202f
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62823491"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723221"
 ---
 # <a name="utilization-navigator"></a>Nawigator wykorzystania
 Możesz użyć nawigatora użycia w wizualizatorze współbieżności, aby wybrać interwał czasu w śladzie. Wizualizator współbieżności pokazuje wykorzystanie rdzeni procesora CPU przez proces docelowy w czasie. Ułatwia to sprawdzanie wzorców użycia procesora CPU, a także umożliwia porównanie danych użycia i danych w innych widokach. Nawigator wykorzystania pojawia się u góry każdego widoku w wizualizatorze współbieżności. Na poniższej ilustracji przedstawiono Nawigatora wykorzystania.

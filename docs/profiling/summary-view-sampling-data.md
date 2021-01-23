@@ -1,5 +1,6 @@
 ---
 title: Widok podsumowania — dane próbkowania | Microsoft Docs
+description: Dowiedz się, w jaki sposób widok podsumowania Wyświetla informacje o najbardziej wydajnych funkcjach w przebiegu profilowania.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 649d0e9e5b32c124cfa962f45e4d128e4a32210f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5d75574e29118beacb6312d2dd013a19894a176
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778209"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718957"
 ---
 # <a name="summary-view---sampling-data"></a>Widok podsumowania — dane próbkowania
 Widok podsumowania zawiera informacje o najbardziej wydajnych funkcjach w przebiegu profilowania. Aby uzyskać więcej informacji, w tym opis linków powiadomień i list raportów, zobacz [Widok podsumowania](../profiling/summary-view.md).
@@ -51,6 +52,6 @@ Widok podsumowania zawiera informacje o najbardziej wydajnych funkcjach w przebi
 |**Nazwa**|Nazwa funkcji.|
 |**Wyłącznych próbek%**|Procent wszystkich próbek w przebiegu profilowania, który został zebrany, gdy funkcja wykonywała kod w jego treści funkcji. Wartość procentowa nie obejmuje próbek, które zostały zebrane, gdy funkcje, które zostały wywołane przez tę funkcję, były wykonywane.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Widok podsumowania — dane pamięci platformy .NET](../profiling/summary-view-dotnet-memory-data.md)
 - [Widok podsumowania — dane Instrumentacji](../profiling/summary-view-instrumentation-data.md)

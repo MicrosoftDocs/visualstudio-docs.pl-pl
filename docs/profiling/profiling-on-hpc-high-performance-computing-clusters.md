@@ -1,5 +1,6 @@
 ---
 title: Profilowanie na klastrach HPC (przetwarzanie o wysokiej wydajności) | Microsoft Docs
+description: Dowiedz się, jak profilować węzły obliczeniowe klastrów HPC systemu Microsoft Windows przy użyciu metody próbkowania narzędzia profilowania programu Visual Studio.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +21,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f2d3949194dedab6d7e7ea2faa1aea304d889bc4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06a160adda25debe21d8262d9064c23849011dc9
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74772123"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720530"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>Profilowanie na klastrach HPC (przetwarzanie o wysokiej wydajności)
 
@@ -79,9 +80,9 @@ Aby określić klaster HPC i informacje docelowe, należy skonfigurować sesję 
 
     - Jeśli tworzysz plik wykonywalny, który nie znajduje się w otwartym projekcie, możesz określić argumenty wiersza polecenia do przekazania do procesu w **argumentach wiersza polecenia**.
 
-    - W obszarze **zdalny katalog roboczy**określ ścieżkę do folderu, który jest używany przez wystąpienia procesów w poszczególnych węzłach obliczeniowych.
+    - W obszarze **zdalny katalog roboczy** określ ścieżkę do folderu, który jest używany przez wystąpienia procesów w poszczególnych węzłach obliczeniowych.
 
-    - W obszarze **Lokalizacja wdrożenia**określ ścieżkę do katalogu, którego serwer HPC używa do przygotowywania obrazów do wdrożenia.
+    - W obszarze **Lokalizacja wdrożenia** określ ścieżkę do katalogu, którego serwer HPC używa do przygotowywania obrazów do wdrożenia.
 
 6. Kliknij przycisk **Dalej**.
 
@@ -103,7 +104,7 @@ Aby określić klaster HPC i informacje docelowe, należy skonfigurować sesję 
 
     - Wybierz pozycję **Uruchom profilowanie po zakończeniu pracy Kreatora** , aby natychmiast rozpocząć profilowanie, lub usuń zaznaczenie tego pola wyboru, aby uruchomić profilowanie ręcznie.
 
-10. Kliknij przycisk **Zakończ**.
+10. Kliknij przycisk **Finish** (Zakończ).
 
 ## <a name="set-hpc-profiling-properties-by-using-performance-session-property-pages"></a>Ustawianie właściwości profilowania HPC przy użyciu stron właściwości sesji wydajności
 

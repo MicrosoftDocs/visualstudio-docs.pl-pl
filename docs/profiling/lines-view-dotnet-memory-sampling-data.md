@@ -1,5 +1,6 @@
 ---
 title: Widok linii — dane próbkowania pamięci platformy .NET | Microsoft Docs
+description: Dowiedz się, w jaki sposób widok wierszy na potrzeby profilowania pamięci platformy .NET zawiera instrukcje, które przydzieliły pamięć podczas przebiegu profilowania.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 503b3753f4f4fdc98f39804ec767277d7685d0d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0033b3d50531bebe087f43930324db0431dee03f
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74774083"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721336"
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>Widok linii — dane próbkowania pamięci platformy .NET
 Widok linie dla danych profilowania przydziału pamięci platformy .NET, które używają metody próbkowania, zawiera listę instrukcji, które przydzieliły pamięć podczas przebiegu profilowania. Kolumny obejmują również rozmiar i liczbę alokacji.
@@ -61,5 +62,5 @@ Widok linie dla danych profilowania przydziału pamięci platformy .NET, które 
 |**Bajty wyłączne**|Wartość procentowa wszystkich bajtów pamięci przydzieloną w ramach uruchomienia profilowania, która została przypisana w tym wierszu.|
 |**% Bajtów wyłącznych**|Wartość procentowa wszystkich bajtów pamięci przydzieloną w ramach uruchomienia profilowania, która została przypisana w tym wierszu.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Widok linii](../profiling/lines-view-sampling-data.md)

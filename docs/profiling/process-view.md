@@ -1,5 +1,6 @@
 ---
 title: Widok procesu | Microsoft Docs
+description: Dowiedz się, w jaki sposób widok procesu wyświetla dane profilowania dla procesów i wątków, które zostały wykonane podczas przebiegu profilowania.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: da3097c276557238e6f5b521f6f7d3231434cd10
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd4dfd4657d6ca2f42c234f576e362ffacb9e693
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74772179"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719469"
 ---
 # <a name="process-view"></a>Widok procesu
 Widok procesu przedstawia dane profilowania procesów i wątków, które zostały wykonane podczas przebiegu profilowania.
@@ -36,12 +37,12 @@ Widok procesu przedstawia dane profilowania procesów i wątków, które został
 |Kolumna|Opis|
 |------------|-----------------|
 |**Unikatowy identyfikator**|Wygenerowany przez profiler identyfikator, który jest unikatowy dla procesu lub wątku.|
-|**ID**|Wygenerowany przez system identyfikator procesu lub wątku.|
+|**ID (Identyfikator)**|Wygenerowany przez system identyfikator procesu lub wątku.|
 |**Nazwa**|Nazwa procesu lub wątku.|
 |**Godzina rozpoczęcia**|Liczba milisekund lub cykli procesora od początku profilowania do początku procesu lub wątku.|
 |**Czas zakończenia**|Liczba milisekund lub cykli procesora od początku profilowania do końca procesu lub wątku.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Widok danych metody próbkowania](../profiling/profiler-sampling-method-data-views.md)
 - [Widoki danych metody instrumentacji](../profiling/instrumentation-method-data-views.md)
 - [Widoki danych pamięci .NET](../profiling/dotnet-memory-data-views.md)

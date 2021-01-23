@@ -1,5 +1,7 @@
 ---
 title: Kontrolowanie zbierania danych | Microsoft Docs
+description: Dowiedz się, jak uruchamiać i zatrzymywać zbieranie danych narzędzia profilowania oraz jak ograniczyć obiekty, dla których zbierane są dane profilowania. Ten artykuł zawiera omówienie.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 48c7047bdd321943074221c9f09193970d42a247
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b846db263c95f20c6ea4cb6a418973830a5dd8ee
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74777806"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720933"
 ---
 # <a name="control-data-collection"></a>Sterowanie zbieraniem danych
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Narzędzia profilowania umożliwiają kontrolę, kiedy dane profilowania są zbierane podczas sesji wydajności i określają funkcje, które są profilowane. W tej sekcji opisano sposób uruchamiania i zatrzymywania zbierania danych z okien **Eksplorator wydajności** i **kontroli zbierania danych** oraz sposobu ograniczania obiektów, dla których zbierane są dane profilowania.
@@ -32,5 +34,5 @@ ms.locfileid: "74777806"
 ## <a name="related-sections"></a>Sekcje pokrewne
 - [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Eksplorator wydajności](../profiling/performance-explorer.md)

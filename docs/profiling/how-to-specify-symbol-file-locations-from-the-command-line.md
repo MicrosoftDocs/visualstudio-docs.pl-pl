@@ -1,5 +1,6 @@
 ---
 title: Określanie lokalizacji plików symboli z poziomu wiersza polecenia
+description: Dowiedz się, jak narzędzie wiersza polecenia VSPerfReport wymaga dostępu do plików symboli (. pdb), aby wyświetlić informacje o symbolach, takie jak nazwy funkcji i numery wierszy.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,21 +11,21 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 66f06bf9482bf719eb2025a8ee6c496b6b679046
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 7a9a801ccf7493675e49a3cde6ef91675e5f1189
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809586"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721921"
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Instrukcje: Określanie lokalizacji plików symboli z wiersza polecenia
-Aby wyświetlić informacje o symbolach, takie jak nazwy funkcji i numery wierszy, narzędzie wiersza polecenia VSPerfReport wymaga dostępu do symbolu (.* PDB*) plików profilowanych składników i plików systemu Windows. Pliki symboli są tworzone podczas kompilowania składnika. Aby uzyskać więcej informacji, zobacz [VSPerfReport](../profiling/vsperfreport.md). VSPerfReport automatycznie przeszukuje następujące lokalizacje plików symboli:
+Aby wyświetlić informacje o symbolach, takie jak nazwy funkcji i numery wierszy, narzędzie wiersza polecenia VSPerfReport wymaga dostępu do symbolu (.*PDB*) plików profilowanych składników i plików systemu Windows. Pliki symboli są tworzone podczas kompilowania składnika. Aby uzyskać więcej informacji, zobacz [VSPerfReport](../profiling/vsperfreport.md). VSPerfReport automatycznie przeszukuje następujące lokalizacje plików symboli:
 
 - Ścieżki określone w opcji **/SymbolPath** lub zmiennej środowiskowej **_NT_SYMBOL_PATH** .
 
 - Dokładna ścieżka lokalna, w której składnik został skompilowany.
 
-- Katalog zawierający dane profilowania (.* VSP* lub. *vsps*) rozszerzeniem.
+- Katalog zawierający dane profilowania (.*VSP* lub. *vsps*) rozszerzeniem.
 
   Firma Microsoft zapewnia. pliki *PDB* dla wielu produktów w trybie online na serwerze symboli. Jeśli komputer używany do raportowania jest połączony z Internetem, VSPerfReport nawiązuje połączenie z serwerem symboli online w celu automatycznego wyszukiwania informacji o symbolach i zapisywania plików w magazynie lokalnym.
 

@@ -1,5 +1,6 @@
 ---
 title: Określ polecenia przed i po Instrumentacji | Microsoft Docs
+description: Dowiedz się, w jaki sposób można określić polecenia, które są uruchamiane przed lub po plikach binarnych w sesji wydajności.
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 904a5086af4fbbd9c1ef174cae63013cb8c96ad9
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 172ca7a478dcc34443d2edf15186d9c040a04837
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851804"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721895"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>Instrukcje: określanie poleceń przed i po instrumentacji
 
@@ -40,7 +41,7 @@ Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określanie ścieżki
 
     - Aby określić polecenia przed Instrumentacją dla określonego pliku binarnego, kliknij prawym przyciskiem myszy nazwę pliku binarnego na liście **targets** sesji wydajności, a następnie wybierz polecenie **Właściwości**.
 
-2. Na **stronie właściwości**kliknij pozycję **Instrumentacja**.
+2. Na **stronie właściwości** kliknij pozycję **Instrumentacja**.
 
 3. Wpisz polecenie w polu tekstowym **wiersz polecenia** w obszarze **zdarzenia przed Instrumentacją**.
 
@@ -59,7 +60,7 @@ Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określanie ścieżki
 
     - Aby określić polecenia dla określonego pliku binarnego, kliknij prawym przyciskiem myszy nazwę pliku binarnego na liście **targets** sesji wydajności, a następnie wybierz polecenie **Właściwości**.
 
-2. Na **stronie właściwości**kliknij pozycję **Instrumentacja**.
+2. Na **stronie właściwości** kliknij pozycję **Instrumentacja**.
 
 3. Wpisz polecenie w polu tekstowym **wiersz polecenia** w obszarze **zdarzenia po Instrumentacji**.
 

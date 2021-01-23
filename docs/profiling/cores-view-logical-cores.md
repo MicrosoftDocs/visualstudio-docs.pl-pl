@@ -1,5 +1,7 @@
 ---
 title: Widok rdzeni w widoku rdzeni | Microsoft Docs
+description: W widoku rdzenie każdy wiersz na osi czasu reprezentuje rdzeń logiczny, a wiersze mają nazwę logiczne rdzeń 0, rdzeń logiczny 1 itd.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,15 +14,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3544ca6c5f9dfe5326f51bb565ff012b654dc263
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7a9b5d6da7793cc5f472a124cdecde434c35fd62
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62553139"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720790"
 ---
 # <a name="cores-view-logical-cores"></a>Widok rdzeni
 Każda nazwa kanału reprezentuje jeden z rdzeni logicznych istniejących w profilowanym systemie. Nazewnictwo liczy się od 0 do całkowitej liczby rdzeni logicznych. Na przykład system z czterema rdzeniami będzie liczyć od rdzenia logicznego 0 do logicznego rdzenia 3.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Widok rdzeni](../profiling/cores-view.md)

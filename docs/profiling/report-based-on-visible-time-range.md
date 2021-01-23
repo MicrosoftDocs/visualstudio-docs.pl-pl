@@ -1,5 +1,6 @@
 ---
 title: Raport na podstawie widocznego zakresu czasu | Microsoft Docs
+description: Dowiedz się, w jaki sposób widok profilu wyświetla raporty na podstawie aktualnie widocznego zakresu czasu i kanałów.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,19 +13,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd4758f5484089e58f50462300f48f76f1538381
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 02dc0e009702b25c2204f0a1302931fe941b5f59
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63002347"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720374"
 ---
 # <a name="report-based-on-visible-time-range"></a>Raport na podstawie widocznego zakresu czasu
 Widok profil zawiera raporty, które są oparte na aktualnie widocznym zakresie czasu i kanałach. Aby wyświetlić szczegóły dotyczące różnych podzestawów danych, kliknij pozycję elementy w legendzie.
 
  Więcej informacji o danych w tabelach można znaleźć tutaj.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Brak aktywności wątku do pokazania](../profiling/no-thread-activity-to-show-threads-view.md)
 - [Raport profilu wykonania](../profiling/execution-profile-report.md)
 - [Czas synchronizacji](../profiling/synchronization-time.md)

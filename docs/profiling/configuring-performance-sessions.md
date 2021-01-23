@@ -1,5 +1,7 @@
 ---
 title: Konfigurowanie sesji wydajności | Microsoft Docs
+description: Informacje na temat konfigurowania narzędzia profilowania programu Visual Studio w celu zbierania danych dotyczących wydajności. W tym artykule wymieniono typowe zadania i przedstawiono linki.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,15 +16,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bdf1c372ffcb3ad3a0ebf102827565853947e2b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52e2575e034dbabe5e380857edd95e4bc46f56d2
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74777871"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721024"
 ---
 # <a name="configure-performance-sessions"></a>Konfigurowanie sesji wydajności
-Za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania można zbierać szeroką gamę danych wydajności dla dużej liczby typów aplikacji. W tej sekcji przedstawiono sposób użycia właściwości Wizardand wydajności sesji wydajności i docelowego pliku binarnego w celu skonfigurowania narzędzia profilowania w celu zebrania interesujących Cię danych. Właściwości konfiguracji narzędzia profilowania mogą być również używane do kontrolowania ilości danych zbieranych w ramach uruchomienia profilowania. Aby uzyskać więcej informacji, zobacz [Kontrola zbierania danych](../profiling/controlling-data-collection.md).
+Za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania można zbierać szeroką gamę danych wydajności dla dużej liczby typów aplikacji. W tej sekcji pokazano, jak użyć Kreatora wydajności i właściwości sesji wydajności i docelowego pliku binarnego w celu skonfigurowania narzędzia profilowania w celu zebrania interesujących Cię danych. Właściwości konfiguracji narzędzia profilowania mogą być również używane do kontrolowania ilości danych zbieranych w ramach uruchomienia profilowania. Aby uzyskać więcej informacji, zobacz [Kontrola zbierania danych](../profiling/controlling-data-collection.md).
 
 > [!NOTE]
 > W wielu przypadkach korzystanie z właściwości domyślnych Kreatora wydajności jest efektywnym sposobem na zbieranie danych profilowania. Aby uzyskać więcej informacji, zobacz temat [Przewodnik początkujący dotyczący profilowania wydajności](../profiling/beginners-guide-to-performance-profiling.md) i rozpoczynanie [pracy](../profiling/getting-started-with-performance-tools.md).
@@ -38,5 +40,5 @@ Za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia 
 ## <a name="related-sections"></a>Sekcje pokrewne
 - [Sterowanie zbieraniem danych](../profiling/controlling-data-collection.md)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Eksplorator wydajności](../profiling/performance-explorer.md)

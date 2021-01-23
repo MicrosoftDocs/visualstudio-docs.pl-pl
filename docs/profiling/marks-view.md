@@ -1,5 +1,6 @@
 ---
 title: Widok znaczników | Microsoft Docs
+description: Dowiedz się, w jaki sposób widok znaczników wyświetla próbki i zdarzenia ETW, które zostały wstawione do aplikacji.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d7483f309a3d7edb92d25c34e9665a6212c8038
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 969bf0debfc1da9f7ca1763d8c9c001d565ce64a
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037520"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718983"
 ---
 # <a name="marks-view"></a>Widok znaczników
 Widok znaczniki wyświetla próbki i zdarzenia ETW, które zostały wstawione do aplikacji.

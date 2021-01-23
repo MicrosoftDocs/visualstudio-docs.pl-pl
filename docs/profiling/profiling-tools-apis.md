@@ -1,5 +1,6 @@
 ---
 title: Interfejsy API narzędzia profilowania | Microsoft Docs
+description: Dowiedz się, jak wstawiać metody zarządzane lub natywne interfejsów API programu Visual Studio narzędzia profilowania, aby kontrolować zbieranie danych w ramach przebiegu profilowania.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: bd9ca972-e5bf-45a6-9a5d-ac30a4d9ee02
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ed4fef32c04d68f37df71101447a4e24f39eecba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b0b62f88903cab7ce3fcf9117e7159256d7adaf5
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74772093"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720504"
 ---
 # <a name="profiling-tools-apis"></a>Interfejsy API narzędzi profilowania
 
@@ -38,6 +39,6 @@ Dowiedz się, jak korzystać z metod narzędzia profilowania .NET w tym kompletn
 
 [Sterowanie zbieraniem danych](../profiling/controlling-data-collection.md)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Eksplorator wydajności](../profiling/performance-explorer.md)

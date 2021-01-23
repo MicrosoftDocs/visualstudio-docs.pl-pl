@@ -1,5 +1,6 @@
 ---
 title: Widok wykorzystania | Microsoft Docs
+description: Dowiedz się, że widok użycie wyświetla informacje dotyczące procesora CPU, procesora GPU i innych zasobów systemowych, które są używane przez bieżący proces.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 926c67261f91aa8787d9be4a33dadbd3a890c568
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 047c9ef9d5bb03546eb88372ae43a51c7c8e4d32
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62823530"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723208"
 ---
 # <a name="utilization-view"></a>Widok wykorzystania
 **Widok wykorzystania** zawiera informacje dotyczące procesora CPU, procesora GPU i innych zasobów systemowych, które są używane przez bieżący proces (wybierz pozycję **Analizuj**  >  **Wizualizator współbieżności** , aby uruchomić Wizualizator współbieżności). Pokazuje średnie wykorzystanie rdzenia przez przeanalizowany proces, proces bezczynny, proces systemowy i inne procesy, które są uruchamiane w systemie w miarę upływu czasu. Nie wskazuje, który konkretny rdzeń jest aktywny w danym momencie. Na przykład, jeśli dwa rdzenie są uruchamiane o 50 procent pojemności w danym okresie, ten widok pokazuje jeden rdzeń logiczny, który jest używany. Widok jest generowany przez podzielenie czasu profilowania na krótkie segmenty czasu. Dla każdego segmentu wykres przedstawia średnią liczbę wątków procesów, które są wykonywane w przypadku rdzeni logicznych w tym interwale.
@@ -48,6 +49,6 @@ ms.locfileid: "62823530"
 ## <a name="zoom"></a>Zoom
  Aby powiększyć wykres użycia procesora CPU lub wykres aktywności procesora GPU, wybierz sekcję lub użyj suwaka powiększenia powyżej wykresu. Ustawienie powiększenia utrzymuje się w trakcie przełączania do innych widoków. Aby ponownie pomniejszyć, użyj suwaka powiększenia. Możesz również powiększać, używając **klawisza Ctrl** + **Scroll**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Concurrency Visualizer](../profiling/concurrency-visualizer.md)
 - [Widok rdzeni](../profiling/cores-view.md)

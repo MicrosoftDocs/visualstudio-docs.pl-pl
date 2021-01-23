@@ -1,5 +1,6 @@
 ---
 title: Widok okresu istnienia obiektu | Microsoft Docs
+description: Dowiedz się, jak widok okresu istnienia obiektów jest dostępny, gdy zbierasz również dane o okresie istnienia obiektu .NET na stronach właściwości sesji wydajności.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d4ea486930d0ea9f266b4ee57b69a50f7c570651
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9405b66c7412d65402a5572dcb5c71b232341b22
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74772627"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722870"
 ---
 # <a name="object-lifetime-view"></a>Widok okresu istnienia obiektu
 Widok okresu istnienia obiektu jest dostępny, gdy **zbieranie danych o okresie istnienia obiektu .NET** jest sprawdzane na stronach właściwości **sesji wydajności** .
@@ -72,5 +73,5 @@ Widok okresu istnienia obiektu jest dostępny, gdy **zbieranie danych o okresie 
 |**Zebrano wystąpienia sterty dużych obiektów**|Liczba wystąpień tego typu, które znajdowały się w stercie dużego obiektu i zostały zebrane w ramach uruchomienia profilowania.|
 |**Zebrane bajty sterty dużych obiektów**|Rozmiar (w bajtach) wystąpień tego typu, które znajdowały się w stercie dużych obiektów i zostały zebrane w ramach uruchomienia profilowania.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Widoki danych pamięci .NET](../profiling/dotnet-memory-data-views.md)

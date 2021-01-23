@@ -1,5 +1,6 @@
 ---
 title: Znaczniki zakresu | Microsoft Docs
+description: Dowiedz się, jak znacznik zakresu reprezentuje znaczącą fazę aplikacji i zobacz przykład, który pokazuje zakres w wizualizatorze współbieżności.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c69b48a5b1b551e2e29b9aa10e7f68ff0df0e379
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28fb9da2e838a17f5b014c3b1af4fc9ee5ab46d7
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62980981"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720114"
 ---
 # <a name="span-markers"></a>Znaczniki zakresu
 Znacznik span reprezentuje znaczącą fazę aplikacji. Na przykład można użyć zakresu, aby reprezentować przedział czasu, w którym jest przetwarzany konkretny element roboczy. Jego długość reprezentuje czas trwania odpowiedniej fazy aplikacji. Na tej ilustracji przedstawiono zakres w wizualizatorze współbieżności:
@@ -32,6 +33,6 @@ Znacznik span reprezentuje znaczącą fazę aplikacji. Na przykład można uży�
 
  ![Znacznik zagregowanego zakresu w wizualizatorze współbieżności](../profiling/media/cvmarkerspanaggregate.png "CVMarkerSpanAggregate") Znacznik agregacji zakresu
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Znaczniki wizualizatora współbieżności](../profiling/concurrency-visualizer-markers.md)
 - [Concurrency Visualizer SDK](../profiling/concurrency-visualizer-sdk.md)

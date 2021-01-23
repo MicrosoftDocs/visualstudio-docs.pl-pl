@@ -1,5 +1,6 @@
 ---
 title: Określanie ścieżki do profilowania narzędzi wiersza polecenia
+description: Określ ścieżkę do narzędzi wiersza polecenia narzędzi do profilowania, gdy ścieżka narzędzia profilowania narzędzi wiersza polecenia nie zostanie dodana do zmiennej środowiskowej PATH.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fb445e23b5d507bafb7fece40bf606bbfb76c370
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: fa1cb81d46f0977de2db9d78c6db53f542faa70f
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809188"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720036"
 ---
 # <a name="specify-the-path-to-profiling-tools-command-line-tools"></a>Określanie ścieżki do narzędzi wiersza polecenia narzędzi profilowania
 
@@ -23,7 +24,7 @@ ms.locfileid: "90809188"
 
 ## <a name="32-bit-computers"></a>32-bitowe komputery
 
-W przypadku kodu natywnego interfejsy API programu Visual Studio profiler są w *VSPerf.dll*. Plik nagłówkowy, *VSPerf. h*i Biblioteka Imports *VSPerf. lib*znajdują się w katalogu *programu Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK* .
+W przypadku kodu natywnego interfejsy API programu Visual Studio profiler są w *VSPerf.dll*. Plik nagłówkowy, *VSPerf. h* i Biblioteka Imports *VSPerf. lib* znajdują się w katalogu *programu Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK* .
 
  W przypadku kodu zarządzanego interfejs API profilera znajduje się w *Microsoft.VisualStudio.Profiler.dll*. Ta biblioteka DLL znajduje się w katalogu *programu Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* .
 

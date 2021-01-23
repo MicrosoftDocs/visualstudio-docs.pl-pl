@@ -1,5 +1,6 @@
 ---
 title: Wizualizowanie zdarzeń EventSource jako znaczników | Microsoft Docs
+description: Informacje o tym, że Wizualizator współbieżności może wyświetlać zdarzenia EventSource jako znaczniki i można kontrolować sposób wyświetlania znaczników.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3a10022a-5c37-48b1-a833-dd35902176b6
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd6339b3f55b4a4c9a1e2c90ff3183a36f16c178
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6f8fadf9ef97717983c96226d81d43efada65e89
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64811548"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723143"
 ---
 # <a name="visualize-eventsource-events-as-markers"></a>Wizualizuj zdarzenia EventSource jako znaczniki
 Wizualizator współbieżności może wyświetlać zdarzenia EventSource jako znaczniki i można kontrolować sposób wyświetlania znaczników. Aby wyświetlić znaczniki EventSource, zarejestruj identyfikator GUID dostawcy ETW przy użyciu okna dialogowego [Ustawienia zaawansowane](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) . Wizualizator współbieżności ma konwencje domyślne do reprezentowania zdarzeń EventSource jako [znaczników flagi](../profiling/flag-markers.md), [znaczników zakresu](../profiling/span-markers.md)i [znaczników komunikatów](../profiling/message-markers.md). Możesz dostosować sposób wyświetlania zdarzeń EventSource, dodając pola niestandardowe do zdarzeń. Aby uzyskać więcej informacji na temat znaczników, zobacz [znaczniki Concurrency Visualizer](../profiling/concurrency-visualizer-markers.md). Aby uzyskać więcej informacji na temat zdarzeń EventSource, zobacz <xref:System.Diagnostics.Tracing> .
@@ -37,10 +38,10 @@ Wizualizator współbieżności może wyświetlać zdarzenia EventSource jako zn
 |win: LogAlways|Normalne|
 |win: krytyczne|Krytyczne|
 |win: błąd|Krytyczne|
-|win: Warning|Wysoki|
+|win: Warning|Wys.|
 |win: informacyjne|Normalne|
-|win: verbose|Małe|
-|Większe niż win: verbose|Małe|
+|win: verbose|Niski|
+|Większe niż win: verbose|Niski|
 
 ### <a name="series-name"></a>Nazwa serii
  Nazwa zadania jest używana dla nazwy serii. Nazwa serii jest pusta, jeśli żadne zadanie nie zostało zdefiniowane dla zdarzenia.
@@ -72,11 +73,11 @@ Wizualizator współbieżności może wyświetlać zdarzenia EventSource jako zn
 |------------------------|---------------------------------------|
 |0|Normalne|
 |1|Krytyczne|
-|2|Wysoki|
-|3|Wysoki|
+|2|Wys.|
+|3|Wys.|
 |4|Normalne|
-|5|Małe|
-|Wszystkie inne wartości|Małe|
+|5|Niski|
+|Wszystkie inne wartości|Niski|
 
 ### <a name="series-name"></a>Nazwa serii
  Użyj `cvSeries` pola zdarzenie, ciągu, aby kontrolować nazwę serii, którą Wizualizator współbieżności ma dla zdarzenia EventSource.
@@ -93,5 +94,5 @@ Wizualizator współbieżności może wyświetlać zdarzenia EventSource jako zn
 > [!NOTE]
 > Użycie SpanID do zagnieżdżenia zakresów umożliwia im częściowo nakładanie się na ten sam wątek lub zezwalanie na ich uruchamianie w jednym wątku i zakończenie na drugim nie jest obsługiwane.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Znaczniki wizualizatora współbieżności](../profiling/concurrency-visualizer-markers.md)

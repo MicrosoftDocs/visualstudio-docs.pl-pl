@@ -1,5 +1,6 @@
 ---
 title: Informacje o metodach zbierania danych o wydajności | Microsoft Docs
+description: Zapoznaj się z różnymi scenariuszami, w których zbierane są dane przy użyciu określonej metody.
 ms.date: 4/30/2020
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ecbabae86b762c9143dba6be5aa0e4683a92b0dd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b3bbbef2c6f7bb2ab02731bfbac0dc60d75a3437
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250777"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722337"
 ---
 # <a name="understand-performance-collection-methods"></a>Zrozumienie metod zbierania danych o wydajności
 
@@ -146,7 +147,7 @@ Aby uzyskać informacje dotyczące danych interakcji warstwowych zbieranych prze
 
 [Widoki interakcji między warstwami](../profiling/tier-interaction-views.md)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 [Instrukcje: zbieranie danych wydajności dla witryny sieci Web](../profiling/how-to-collect-performance-data-for-a-web-site.md)
 

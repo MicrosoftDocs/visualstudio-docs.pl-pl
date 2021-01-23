@@ -1,5 +1,6 @@
 ---
 title: StartProfile | Microsoft Docs
+description: Dowiedz się więcej o funkcji StartProfile i sposobie jej ustawiania na wartość 1 (włączona) dla określonego poziomu profilowania.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ff4b4973bff395cea6b73219a2098543ee6819e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1522cdfadb5de20a2413f584c710baca15883f9c
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778261"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719841"
 ---
 # <a name="startprofile"></a>StartProfile
 `StartProfile`Funkcja ustawia licznik na 1 (włączony) dla określonego poziomu profilowania.
@@ -107,5 +108,5 @@ void ExerciseStartProfile()
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dokumentacja interfejsu API programu Visual Studio profiler (natywna)](../profiling/visual-studio-profiler-api-reference-native.md)

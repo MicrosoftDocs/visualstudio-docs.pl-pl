@@ -1,5 +1,6 @@
 ---
 title: Zarządzanie kanałami | Microsoft Docs
+description: Dowiedz się, w jaki sposób można organizować kanały dla procesu, aby można było sprawdzić określone wzorce w widoku wątki w wizualizatorze współbieżności.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b1480bab2f52383a8ca3a5b0ac22fd56acb5e01
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b0dd8643f63a7a3e67400f09f00b999fff33f09e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64779244"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721271"
 ---
 # <a name="manage-channels"></a>Zarządzanie kanałami
 W **widoku wątki** w wizualizatorze współbieżności można organizować kanały dla procesu, aby umożliwić badanie określonych wzorców. Można sortować kanały, przenosić je w górę i w dół, a także ukrywać lub wyświetlać je.
@@ -58,7 +59,7 @@ W **widoku wątki** w wizualizatorze współbieżności można organizować kana
 ## <a name="group-markers-by-thread"></a>Grupuj znaczniki według wątku
  Jeśli ślad zawiera zdarzenia znacznika, można użyć tego polecenia do grupowania kanałów znacznika w wątku, który wygenerował zdarzenia znacznika.  Kanały dysku są przenoszone na górę listy kanałów, a kanały GPU są przenoszone na dół.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Kontrolka powiększenia (Widok wątków)](../profiling/zoom-control-threads-view.md)
 - [Włącz/Wyłącz tryb miary](../profiling/measure-mode-on-off.md)
 - [Widok wątków](../profiling/threads-view-parallel-performance.md)

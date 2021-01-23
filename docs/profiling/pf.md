@@ -1,5 +1,6 @@
 ---
 title: PF | Microsoft Docs
+description: Dowiedz się, jak opcja VSPerfCmd.exe PF ustawia zdarzenie profilowania, które jest próbkowane na błędy stron i zmienia liczbę błędów stron w interwale próbkowania.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: cdc0a094-a986-4629-bd1c-dd5fdca323dc
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 07ec6d636ec087386fdc9462ae09db55400957a9
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: b920b641a7bfc4583af7b0ec5a9692a25c19adb5
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "74778417"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719555"
 ---
 # <a name="pf"></a>PF
 Opcja *VSPerfCmd.exe* **PF** ustawia zdarzenie profilowania, które jest próbkowane do błędów strony i opcjonalnie zmienia liczbę błędów stron w interwale próbkowania z wartości domyślnej 10.
@@ -24,7 +25,7 @@ Opcja *VSPerfCmd.exe* **PF** ustawia zdarzenie profilowania, które jest próbko
 
 **PF** można użyć tylko w wierszu polecenia, który zawiera również opcję **uruchamiania** lub **dołączania** .
 
- Domyślnie zdarzenie próbkowania jest ustawione na niezatrzymane cykle zegara procesora, a interwał próbkowania jest ustawiony na 10 000 000. Opcje **Timer**, **PF**, **sys**i **Counter** umożliwiają ustawienie interwału próbkowania i próbkowania. Opcja **GC** zbiera dane pamięci .NET dla każdego zdarzenia alokacji i wyrzucania elementów bezużytecznych. W wierszu polecenia można określić tylko jedną z tych opcji.
+ Domyślnie zdarzenie próbkowania jest ustawione na niezatrzymane cykle zegara procesora, a interwał próbkowania jest ustawiony na 10 000 000. Opcje **Timer**, **PF**, **sys** i **Counter** umożliwiają ustawienie interwału próbkowania i próbkowania. Opcja **GC** zbiera dane pamięci .NET dla każdego zdarzenia alokacji i wyrzucania elementów bezużytecznych. W wierszu polecenia można określić tylko jedną z tych opcji.
 
  Zdarzenie próbkowania i interwał próbkowania można ustawić tylko w pierwszym wierszu polecenia, który zawiera opcję **uruchamiania** lub **dołączania** .
 

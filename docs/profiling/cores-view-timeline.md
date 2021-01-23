@@ -1,5 +1,7 @@
 ---
 title: Oś czasu widoku rdzeni | Microsoft Docs
+description: 'Zapoznaj się z podstawą osi czasu: jak określić wątek, w którym ma zostać uruchomiony rdzeń w dowolnym momencie, oraz sposób powiększania i pomniejszania.'
+custom.ms: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,16 +14,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ae006788f2704459de7ef32f01385e196e28c04
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64012be03c08f3737f4e57a05217bf46082daeb6
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62553113"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720751"
 ---
 # <a name="cores-view-timeline"></a>Oś czasu widoku rdzeni
 Każdy wiersz na osi czasu reprezentuje logiczny rdzeń procesora w profilowanym systemie. Dla każdego wiersza oś pozioma pokazuje, który wątek był uruchomiony w logicznym rdzeniu w danym momencie. Aby zwrócić etykietkę narzędzia, która identyfikuje wątek, można przesuwać nad kolorem zainteresowania na osi czasu. Aby ułatwić identyfikację wątku, Legenda w dolnej części okna pokazuje, co reprezentuje każdy kolor. Za pomocą narzędzia Lupka można powiększać i pomniejszać, klikając i przeciągając myszą. Zachowanie powiększania jest zachowywane podczas przełączania między widokiem rdzeni i widokiem wątków.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Widok rdzeni](../profiling/cores-view.md)
 - [Kontrolka powiększenia (Widok wątków)](../profiling/zoom-control-threads-view.md)
