@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b34d96f49370a71a63e986a79584caffbc00adf
-ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
+ms.openlocfilehash: a2a64b613ca19632a7827686ab0552e6e23620c1
+ms.sourcegitcommit: 3922edfe67063e1ede418cdbf6aa6293117c4855
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847042"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98773334"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Rozwiązania i projekty w programie Visual Studio
 
@@ -102,12 +102,15 @@ Pasek narzędzi w górnej części **Eksplorator rozwiązań** zawiera przyciski
 
 Wiele poleceń menu jest dostępnych w menu kontekstowym po kliknięciu prawym przyciskiem myszy dla różnych elementów w **Eksplorator rozwiązań**. Te polecenia obejmują Kompilowanie projektu, zarządzanie pakietami NuGet, Dodawanie odwołania, zmiana nazwy pliku i uruchamianie testów, po prostu do nazwy a.
 
-> [!TIP]
-> Jeśli zamknięto Eksplorator rozwiązań i chcesz go otworzyć ponownie, wybierz pozycję **okno**  >  **Ustawienia układ okna** z paska menu.
-
 W przypadku projektów ASP.NET Core można dostosować sposób zagnieżdżania plików w **Eksplorator rozwiązań**. Aby uzyskać więcej informacji, zobacz [Dostosowywanie zagnieżdżania plików w Eksplorator rozwiązań](file-nesting-solution-explorer.md).
 
-## <a name="see-also"></a>Zobacz też
+> [!TIP]
+> Jeśli zamknięto Eksplorator rozwiązań i chcesz go otworzyć ponownie, wybierz pozycję **Wyświetl**  >  **Eksplorator rozwiązań** z paska menu lub naciśnij **klawisze CTRL** + **Alt** + **L**. A Jeśli zamknąłeś karty boczne i chcesz przywrócić ich domyślne lokalizacje **, wybierz opcję**  >  **Resetuj układ okna** z paska menu.
+
+> [!NOTE]
+> Aby wyświetlić obrazy i ikony aplikacji, które pojawiają się w programie Visual Studio, Pobierz [**bibliotekę obrazów programu Visual Studio**](https://www.microsoft.com/download/details.aspx?id=35825).
+
+## <a name="see-also"></a>Zobacz także
 
 - [Wprowadzenie do projektów i rozwiązań](../get-started/tutorial-projects-solutions.md)
 - [Zarządzanie właściwościami projektów i rozwiązań](managing-project-and-solution-properties.md)
