@@ -1,5 +1,7 @@
 ---
 title: Widok funkcji — dane rywalizacji | Microsoft Docs
+description: Uzyskaj szczegółowe informacje o widoku raportu funkcji danych rywalizacji, które wyświetla listę funkcji w przebiegu profilowania, które zostały zablokowane przed wykonaniem podczas przebiegu profilowania.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5874ffc7b4d304d1eaacd78032d657fe6ff31d94
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07f23e38a0d2bc7b538bbe42818ce8a8a2f3d2c1
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74780055"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801664"
 ---
 # <a name="functions-view---contention-data"></a>Widok funkcji — dane rywalizacji
 Widok raport dotyczący danych rywalizacji zawiera funkcje w przebiegu profilowania, które zostały zablokowane przed wykonaniem podczas przebiegu profilowania.
@@ -42,7 +44,7 @@ Widok raport dotyczący danych rywalizacji zawiera funkcje w przebiegu profilowa
 |**Nazwa procesu**|Nazwa procesu|
 |**Plik źródłowy**|Plik źródłowy, który zawiera definicję dla tej funkcji.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Instrukcje: dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)
 - [Widok funkcji](../profiling/functions-view.md)
 - [Widok funkcji-Instrumentacja](../profiling/functions-view-dotnet-memory-instrumentation-data.md)

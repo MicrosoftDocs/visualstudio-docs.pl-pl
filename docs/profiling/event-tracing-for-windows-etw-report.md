@@ -1,5 +1,7 @@
 ---
 title: Raport śledzenia zdarzeń systemu Windows (ETW) | Microsoft Docs
+description: Przeczytaj o raporcie śledzenie zdarzeń systemu Windows (ETW), który zawiera listę zdarzeń ETW, które zostały zarejestrowane w sesji wydajności programu Visual Studio narzędzia profilowania.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +14,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 19412d184377637c29f34b2fe3ffd033f176b97c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e7167f2fb5c78a6fa8c3d83fb56c2c2eba217516
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779301"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801416"
 ---
 # <a name="event-tracing-for-windows-etw-report"></a>Raport śledzenia zdarzeń systemu Windows (ETW)
-Raport śledzenie zdarzeń systemu Windows (ETW) zawiera listę zdarzeń ETW, które zostały zarejestrowane w sesji wydajności [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania. Dane ETW są zbierane w postaci binarnej (.* ETL*).
+Raport śledzenie zdarzeń systemu Windows (ETW) zawiera listę zdarzeń ETW, które zostały zarejestrowane w sesji wydajności [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania. Dane ETW są zbierane w postaci binarnej (.*ETL*).
 
 > [!NOTE]
 > Nie można wyświetlać raportów ETW w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] interfejsie.
@@ -33,7 +35,7 @@ Raport śledzenie zdarzeń systemu Windows (ETW) zawiera listę zdarzeń ETW, kt
 
 |Kolumna|Opis|
 |------------|-----------------|
-|**Timestamp**|Identyfikuje czas wystąpienia zdarzenia.|
+|**Znacznik czasu**|Identyfikuje czas wystąpienia zdarzenia.|
 |**Identyfikator procesu**|Identyfikuje proces, który wygenerował zdarzenie.|
 |**Identyfikator wątku**|Identyfikuje wątek, który wygenerował zdarzenie.|
 |**Opis**|Identyfikuje dostawcę zdarzeń.|

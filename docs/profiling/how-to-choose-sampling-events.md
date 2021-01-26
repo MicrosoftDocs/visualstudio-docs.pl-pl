@@ -1,5 +1,7 @@
 ---
 title: Wybierz zdarzenia próbkowania | Microsoft Docs
+description: Dowiedz się, jak ustawić przykładowe zdarzenie, aby spełniało Twoje potrzeby, i ustawić liczbę cykli między próbkami. Dostępne zdarzenia obejmują cykle zegara i błędy stron.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +21,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f28859b1c17c735be405c6c56ebabcbe43903170
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: ed97fd205ffc0c969d0cad39d962cd8cdeb4e2eb
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851297"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801572"
 ---
 # <a name="how-to-choose-sampling-events"></a>Instrukcje: Wybieranie zdarzeń próbkowania
 Domyślnie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania zbiera dane dotyczące wydajności w interwale określonym jako liczba cykli procesora, które są używane w profilowanym procesie. Domyślna liczba cykli w interwale wynosi 10 000 000, czyli około 0,01 sekund na 1% GH. Można zmienić liczbę cykli w interwale i można zmienić przykładowe zdarzenie. Dostępne są następujące przykładowe zdarzenia:
@@ -42,16 +44,16 @@ Domyślnie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia 
 
 ### <a name="to-select-a-sample-event"></a>Aby wybrać przykładowe zdarzenie
 
-1. W **Eksplorator wydajności**kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij polecenie **Właściwości**.
+1. W **Eksplorator wydajności** kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij polecenie **Właściwości**.
 
-2. Na **stronie właściwości**kliknij właściwości **próbkowania** .
+2. Na **stronie właściwości** kliknij właściwości **próbkowania** .
 
 3. Z listy rozwijanej **przykład zdarzenia** wybierz przykładowe zdarzenie, którego chcesz użyć do profilowania aplikacji.
 
     > [!NOTE]
     > **Dostępne liczniki wydajności** są włączane tylko w przypadku wybrania **licznika wydajności** z listy rozwijanej **przykład zdarzenia** .
 
-4. W przypadku wybrania **licznika wydajności**wybierz określony licznik procesora w obszarze dostępne kontrolki widoku drzewa **liczników wydajności** .
+4. W przypadku wybrania **licznika wydajności** wybierz określony licznik procesora w obszarze dostępne kontrolki widoku drzewa **liczników wydajności** .
 
     - Liczniki w węźle **zdarzenia przenośne** są dostępne na wszystkich typach procesorów.
 

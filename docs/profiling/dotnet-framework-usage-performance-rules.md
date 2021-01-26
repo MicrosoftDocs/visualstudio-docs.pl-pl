@@ -1,5 +1,7 @@
 ---
 title: Reguły wydajności .NET Framework użycia | Microsoft Docs
+description: Informacje o regułach wydajności w kategorii użycie .NET Framework. Zidentyfikuj konkretne metody, które można zoptymalizować i zidentyfikować bardziej ogólne wzorce użycia.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ab573755-6370-48aa-853d-a7321c424c79
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ac78ffb3455940cf2379af44ff5c2bc5870dc684
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cb6bb10f948e7aa9d97491949222c3cb0d15ba66
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532005"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801299"
 ---
 # <a name="net-framework-usage-performance-rules"></a>Reguły wydajności dotyczące użycia programu .NET Framework
 Reguły wydajności w kategorii użycie programu the.NET Framework identyfikują konkretne metody, które mogą być optymalizowane, a także identyfikować bardziej ogólne wzorce użycia, takie jak odzyskiwanie pamięci i rywalizacja o blokady, które mogą być zbadane pod kątem problemów z wydajnością.

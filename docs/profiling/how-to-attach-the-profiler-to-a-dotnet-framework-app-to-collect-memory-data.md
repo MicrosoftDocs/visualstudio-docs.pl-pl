@@ -1,5 +1,6 @@
 ---
 title: Dołącz profiler do platformy .NET w celu zbierania danych pamięci
+description: Dowiedz się, jak używać narzędzi wiersza polecenia programu Visual Studio narzędzia profilowania do dołączania profilera do uruchomionej .NET Framework aplikacji autonomicznej (klienckiej) i pobierania danych pamięci.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 88b3eedf8989b4c7421ecb7504b18997058a0204
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 1a80e4201f04565aaa163d58bca8e13ae715b09f
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811113"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801109"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Instrukcje: dołączanie profilera do aplikacji autonomicznej .NET Framework w celu zbierania danych pamięci przy użyciu wiersza polecenia
 
@@ -109,7 +110,7 @@ Aby zakończyć sesję profilowania, profiler musi zostać odłączony od wszyst
 
      **VSPerfCmd/off**
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 [Profile aplikacji](../profiling/command-line-profiling-of-stand-alone-applications.md) 
  autonomicznych [Widoki danych pamięci .NET](../profiling/dotnet-memory-data-views.md)

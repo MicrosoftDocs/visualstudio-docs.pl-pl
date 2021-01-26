@@ -1,5 +1,6 @@
 ---
 title: Dołączanie profilera do usługi natywnej w celu uzyskania statystyk aplikacji
+description: Użyj programu Visual Studio narzędzia profilowania z wiersza polecenia, aby zebrać dane statystyczne wydajności z usługi natywnej.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fb36988c17ecf55a5a53d14da03dc993b4d59250
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 0fa6b1733d7c3d31d32294c3e08b29a072d37730
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808018"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801092"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line-vsperfcmd"></a>Instrukcje: dołączanie profilera do usługi natywnej w celu zbierania statystyk aplikacji przy użyciu wiersza polecenia (VSPerfCmd)
 W tym artykule opisano sposób używania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzi wiersza polecenia narzędzia profilowania do dołączania profilera do usługi natywnej i zbierania statystyk wydajności przy użyciu metody próbkowania.
@@ -44,7 +45,7 @@ W tym artykule opisano sposób używania [!INCLUDE[vsprvs](../code-quality/inclu
 
    - Polecenie **/Start: Sample** inicjuje profiler.
 
-   - Opcja **/Output:** `OutputFile` jest wymagana w przypadku programu **/Start**. `OutputFile` Określa nazwę i lokalizację danych profilowania (.* VSP*).
+   - Opcja **/Output:** `OutputFile` jest wymagana w przypadku programu **/Start**. `OutputFile` Określa nazwę i lokalizację danych profilowania (.*VSP*).
 
      Można użyć dowolnej z następujących opcji z opcją **/Start: Sample** .
 
@@ -104,6 +105,6 @@ W tym artykule opisano sposób używania [!INCLUDE[vsprvs](../code-quality/inclu
 
      **VSPerfCmd/shutdown**
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Usługi profilu](../profiling/command-line-profiling-of-services.md)
 - [Widok danych metody próbkowania](../profiling/profiler-sampling-method-data-views.md)

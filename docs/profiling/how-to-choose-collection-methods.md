@@ -1,5 +1,7 @@
 ---
 title: Wybierz metody kolekcji | Microsoft Docs
+description: Program Visual Studio narzędzia profilowania obsługuje trzy metody zbierania danych wydajności. Dowiedz się, jak wybrać ten, który jest potrzebny dla aplikacji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b66df2f302790f579891c337b217e76202e79ac
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 3fe102c7ebd8ed551a0da4e92c66dfac8acb78ec
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851310"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801593"
 ---
 # <a name="how-to-choose-collection-methods"></a>Instrukcje: wybieranie metod zbierania
 
@@ -50,13 +52,13 @@ Aby określić najbardziej odpowiednią metodę kolekcji dla aplikacji, można u
 
 ### <a name="to-select-the-sampling-or-instrumentation-method-using-performance-session-properties"></a>Aby wybrać metodę próbkowania lub Instrumentacji przy użyciu właściwości sesji wydajności
 
-1. W **Eksplorator wydajności**wybierz sesję wydajności.
+1. W **Eksplorator wydajności** wybierz sesję wydajności.
 
      Plik sesji wydajności ma nazwę. rozszerzenie *psess* .
 
 2. Kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij polecenie **Właściwości**.
 
-3. Na **stronie właściwości**kliknij pozycję **Ogólne**.
+3. Na **stronie właściwości** kliknij pozycję **Ogólne**.
 
 4. Kliknij preferowaną metodę kolekcji.
 
@@ -66,13 +68,13 @@ Aby określić najbardziej odpowiednią metodę kolekcji dla aplikacji, można u
 
 ### <a name="to-select-net-memory-data-collection-by-using-performance-session-properties"></a>Aby wybrać zbieranie danych pamięci .NET przy użyciu właściwości sesji wydajności
 
-1. W **Eksplorator wydajności**wybierz sesję wydajności.
+1. W **Eksplorator wydajności** wybierz sesję wydajności.
 
      Nazwa pliku sesji wydajności ma rozszerzenie. psess.
 
 2. Kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij polecenie **Właściwości**.
 
-3. Na **stronie właściwości**kliknij pozycję **Ogólne**.
+3. Na **stronie właściwości** kliknij pozycję **Ogólne**.
 
 4. Kliknij pozycję **próbkowanie** lub **Instrumentacja**.
 
@@ -84,9 +86,9 @@ Aby określić najbardziej odpowiednią metodę kolekcji dla aplikacji, można u
 
 ### <a name="to-select-concurrency-data-collection-by-using-performance-session-properties"></a>Aby wybrać zbieranie danych współbieżności przy użyciu właściwości sesji wydajności
 
-1. W **Eksplorator wydajności**kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij polecenie **Właściwości**.
+1. W **Eksplorator wydajności** kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij polecenie **Właściwości**.
 
-2. Na **stronie właściwości**kliknij pozycję **Ogólne**.
+2. Na **stronie właściwości** kliknij pozycję **Ogólne**.
 
 3. Kliknij pozycję **współbieżność**.
 

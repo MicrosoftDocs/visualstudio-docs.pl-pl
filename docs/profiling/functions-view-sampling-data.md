@@ -1,5 +1,7 @@
 ---
 title: Widok funkcji — dane próbkowania | Microsoft Docs
+description: Zapoznaj się z informacjami o widoku raportu funkcji dla metody profilu próbkowania, która zawiera listę funkcji, które zostały próbkowane podczas przebiegu profilowania.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 70fda712a29ff07ee34a4ac76a06198cb5ead8a5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8f30849ff7503d9301ee94408df0cd7b14f65fea
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74780029"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801249"
 ---
 # <a name="functions-view---sampling-data"></a>Widok funkcji — dane próbkowania
 Widok raport funkcji dla metody profilu próbkowania zawiera listę funkcji, które były próbkowane podczas przebiegu profilowania.
@@ -40,7 +42,7 @@ Widok raport funkcji dla metody profilu próbkowania zawiera listę funkcji, kt�
 |**Próbki wyłączne**|Całkowita liczba próbek zebranych podczas wykonywania kodu w treści tej funkcji; oznacza to, że gdy ta funkcja znajduje się w górnej części stosu wywołań. Próbki, które zostały zebrane w funkcjach, które zostały wywołane przez tę funkcję, nie są uwzględniane.|
 |**Wyłącznych próbek%**|Procent wszystkich próbek w przebiegu profilowania, które były wyłącznymi próbkami tej funkcji.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Instrukcje: dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)
 - [Widok funkcji-Instrumentacja](../profiling/functions-view-dotnet-memory-instrumentation-data.md)
 - [Widok funkcji — próbkowanie](../profiling/functions-view-dotnet-memory-sampling-data.md)

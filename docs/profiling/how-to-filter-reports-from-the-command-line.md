@@ -1,5 +1,7 @@
 ---
 title: Filtrowanie raportów z wiersza polecenia | Microsoft Docs
+description: Użyj VSPerfReport.exe, aby ograniczyć raportowanie do określonego okresu lub do wybranych procesów i wątków. W tym artykule wymieniono opcje z opisami.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 6e9b140f-b44f-4a5c-bd65-d868ddc94023
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b6408975e8a3d7189db26913f3de75ad1c7c595
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 968b02569c123326710482705146844ef393dfa6
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851141"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801200"
 ---
 # <a name="how-to-filter-reports-from-the-command-line"></a>Instrukcje: filtrowanie raportów z poziomu wiersza polecenia
 Za pomocą opcji polecenia **VSPerfReport** można filtrować raporty do określonego segmentu czasu pliku danych profilowania lub ograniczać dane do jednego lub kilku procesów lub wątków. Aby uzyskać więcej informacji na temat tego polecenia, zobacz [VSPerfReport](../profiling/vsperfreport.md).

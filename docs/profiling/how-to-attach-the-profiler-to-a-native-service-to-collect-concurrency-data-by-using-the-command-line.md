@@ -1,5 +1,6 @@
 ---
 title: Dołączanie profilera do usługi natywnej w celu uzyskania danych współbieżności
+description: Użyj programu Visual Studio narzędzia profilowania z wiersza polecenia, aby zebrać dane współbieżności procesu i wątku z natywnej usługi (C/C++).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 55398d2ab914ea03b431557775e1bd1064969590
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 233d6d77fad3997fead9126065b2f867ac8ffd2e
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808005"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801084"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line-vsperfcmd"></a>Instrukcje: dołączanie profilera do usługi natywnej w celu zbierania danych współbieżności przy użyciu wiersza polecenia (VSPerfCmd)
 W tym artykule opisano, jak używać [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzi wiersza polecenia narzędzia profilowania do dołączania profilera do natywnej usługi (C/C++) i zbierania danych współbieżności procesu i wątku przy użyciu metody próbkowania.

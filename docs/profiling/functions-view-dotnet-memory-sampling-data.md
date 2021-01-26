@@ -1,5 +1,7 @@
 ---
 title: Widok funkcji — dane próbkowania pamięci platformy .NET | Microsoft Docs
+description: Uzyskaj informacje o widoku funkcji dla danych profilowania przydziału pamięci platformy .NET, które zostały zebrane przy użyciu metody próbkowania.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: cce13da0c2dfee61d70da8bc288d1f0ff4690deb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2fe4f011a88ab4cf293626fe01f708b3cf5bc68f
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74780042"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801527"
 ---
 # <a name="functions-view---net-memory-sampling-data"></a>Widok funkcji — dane próbkowania pamięci platformy .NET
 Widok funkcji w obszarze Alokacja pamięci platformy .NET dane, które zostały zebrane przy użyciu metody próbkowania, zawierają listę funkcji, które przydzieliły pamięć podczas przebiegu profilowania i raportuje rozmiar i liczbę alokacji.
@@ -40,7 +42,7 @@ Widok funkcji w obszarze Alokacja pamięci platformy .NET dane, które zostały 
 |**Bajty wyłączne**|Liczba bajtów pamięci przydzielonej przez tę funkcję, ale nie przez jej funkcje podrzędne.|
 |**% Bajtów wyłącznych**|Procent wszystkich bajtów pamięci, które zostały przydzieloną w ramach uruchomienia profilowania, które były wyłącznych bajtów tej funkcji.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Widok funkcji-Instrumentacja](../profiling/functions-view-dotnet-memory-instrumentation-data.md)
 - [Widok funkcji](../profiling/functions-view-sampling-data.md)
 - [Widok funkcji](../profiling/functions-view-instrumentation-data.md)

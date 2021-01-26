@@ -1,5 +1,7 @@
 ---
 title: Zbierz dane śledzenia zdarzeń systemu Windows (ETW) | Microsoft Docs
+description: Dowiedz się, jak używać funkcji Śledzenie zdarzeń systemu Windows (ETW) do określenia, gdzie występują problemy z wydajnością w aplikacji. Dane można przeglądać za pomocą VSPerfReport.exe.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fc5f1877ff6530dbe0bbc888824a6ae60215eca1
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 853e27c51b626ef63a7e0924d4c0164a6386cda2
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851271"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801552"
 ---
 # <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>Instrukcje: zbieranie danych śledzenia zdarzeń dla systemu Windows (ETW)
 
@@ -30,9 +32,9 @@ ms.locfileid: "90851271"
 
 ## <a name="to-enable-event-trace-providers"></a>Aby włączyć dostawców śledzenia zdarzeń
 
-1. W **Eksplorator wydajności**kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij polecenie **Właściwości**.
+1. W **Eksplorator wydajności** kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij polecenie **Właściwości**.
 
-2. Na **stronie właściwości**kliknij pozycję właściwości **zdarzeń systemu Windows** .
+2. Na **stronie właściwości** kliknij pozycję właściwości **zdarzeń systemu Windows** .
 
 3. Z listy **Wybierz dostawcę śledzenia zdarzeń do zbierania danych z** wybierz dostawców zdarzeń, których chcesz użyć do profilowania aplikacji.
 

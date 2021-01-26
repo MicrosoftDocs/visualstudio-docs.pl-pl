@@ -1,5 +1,7 @@
 ---
 title: Filtrowanie widoków raportów | Microsoft Docs
+description: W programie Visual Studio Zastosuj filtry do profilowania plików danych, aby ograniczyć dane profilowania, które są wyświetlane w widokach raportu wydajności i wyeksportowane do plików raportów.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: acdfe8f96d30ad881d8c9c0f0a9ff48c3353afee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f6ba3e207b180b26ea4b53765926b16fb2e85d48
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779249"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801443"
 ---
 # <a name="filter-report-views"></a>Filtruj widoki raportów
 Można zastosować filtry do profilowania plików danych, aby ograniczyć dane profilowania, które są wyświetlane w widokach raportu wydajności i eksportowane do plików raportów. Można ograniczyć raport do danych między wartościami sygnatur czasowych, a dane można ograniczyć do określonych procesów i wątków. Filtry można zapisać do pliku, a następnie utworzyć filtr dla innego pliku danych profilowania, importując zapisany filtr.
@@ -90,5 +92,5 @@ Można zastosować filtry do profilowania plików danych, aby ograniczyć dane p
 
 2. Określ lokalizację i nazwę pliku filtru (vspf), który ma zostać zapisany.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dostosowywanie widoków raportów narzędzi do oceny wydajności](../profiling/customizing-performance-tools-report-views.md)

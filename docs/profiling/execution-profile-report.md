@@ -1,5 +1,7 @@
 ---
 title: Raport profilu wykonywania | Microsoft Docs
+description: Zapoznaj się z raportem profil wykonywania, który jest tradycyjnym profilem próbkowania w rozszerzeniu Concurrency Visualizer dla programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25886ad4f7c31ea02c8dab2d45d8709a362a5a69
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98361f9abad40e447d7198265d21ef193bb9ddf5
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62969995"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801382"
 ---
 # <a name="execution-profile-report"></a>Raport profilu wykonania
 Raport profil wykonywania jest tradycyjnym profilem próbkowania. Próbki są pobierane około co milisekundy w czasie, gdy wątek jest uruchomiony na rdzeniu logicznym, a Wizualizator współbieżności tworzy typowe drzewo wywołań przez zsumowanie skumulowanego zestawu przykładowych stosów. Do danych w tej tabeli może wpływ bieżący zakres czasu i ukryte wątki oraz następujące filtry, które mogą być stosowane:
@@ -39,5 +41,5 @@ Raport profil wykonywania jest tradycyjnym profilem próbkowania. Próbki są po
 
  Ta tabela raportu może być widoczna w widoku [czasu wykonywania (Widok wątków)](../profiling/execution-time-threads-view.md) .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Widok wątków](../profiling/threads-view-parallel-performance.md)

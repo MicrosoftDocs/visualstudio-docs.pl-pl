@@ -1,5 +1,6 @@
 ---
 title: Dołącz profiler do ASP.NET, aby uzyskać statystykę aplikacji
+description: Użyj narzędzi wiersza polecenia programu Visual Studio narzędzia profilowania, aby dołączyć Profiler do aplikacji sieci Web ASP.NET i uzyskać statystyki wydajności przy użyciu metody próbkowania.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 753213060ea3aaf1269509e65de8c70a71aec3a2
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: f79591c58865631b20aecb3554e9502a22f6c7b9
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90807862"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801628"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>Instrukcje: dołączanie profilera do aplikacji sieci Web ASP.NET w celu zbierania statystyk aplikacji przy użyciu wiersza polecenia
 W tym artykule opisano, jak używać [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzi wiersza polecenia narzędzia profilowania do dołączania profilera do aplikacji sieci Web ASP.NET i zbierania statystyk wydajności przy użyciu metody próbkowania.
@@ -124,6 +125,6 @@ W tym artykule opisano, jak używać [!INCLUDE[vsprvs](../code-quality/includes/
 
 4. Uruchom ponownie komputer.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [Widok danych metody próbkowania](../profiling/profiler-sampling-method-data-views.md)

@@ -1,5 +1,6 @@
 ---
 title: Tworzenie raportu porównawczego profilera (wiersz polecenia)
+description: Użyj VSPerfReport.exe z wiersza polecenia, aby porównać wyniki dwóch plików danych profilera. Porównanie pokazuje różnice między sesjami profilowania.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,15 +11,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d370a7465428da4f2582f4f765c1d81ae017af48
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: e647d467dcbc397fe261c2ea83f6fa9ab1bba7b6
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809391"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98800396"
 ---
 # <a name="how-to-create-a-profiler-comparison-report-from-a-command-prompt"></a>Instrukcje: Tworzenie raportu porównania profilera z wiersza polecenia
-Można wygenerować [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] raport narzędzia profilowania, który porównuje dane wydajności dwóch danych profilowania (.* /or VSP* . *vsps*) plikach. Raport przedstawia różnice, regresje wydajności i ulepszenia, które wystąpiły w jednej sesji profilowania. Wartości w raporcie przedstawiają różnice lub zmieniają się od linii bazowej pierwszego określonego pliku. Ta różnica jest obliczana przez określenie różnicy między starą wartością, czyli wartością bazową, a wartością wyniku z nowej analizy. Porównania danych profilera mogą opierać się na funkcjach w kodzie, modułach w aplikacji, wierszach, wskaźnikach instrukcji (IP) i typach.
+Można wygenerować [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] raport narzędzia profilowania, który porównuje dane wydajności dwóch danych profilowania (.*/or VSP* . *vsps*) plikach. Raport przedstawia różnice, regresje wydajności i ulepszenia, które wystąpiły w jednej sesji profilowania. Wartości w raporcie przedstawiają różnice lub zmieniają się od linii bazowej pierwszego określonego pliku. Ta różnica jest obliczana przez określenie różnicy między starą wartością, czyli wartością bazową, a wartością wyniku z nowej analizy. Porównania danych profilera mogą opierać się na funkcjach w kodzie, modułach w aplikacji, wierszach, wskaźnikach instrukcji (IP) i typach.
 
  Aby wyświetlić listę identyfikatorów kategorii i pól porównania, wpisz w wierszu polecenia następujący tekst:
 

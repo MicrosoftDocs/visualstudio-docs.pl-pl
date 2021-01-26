@@ -1,5 +1,7 @@
 ---
 title: Czas wykonywania (Widok wątków) | Microsoft Docs
+description: Przejrzyj czas wykonywania w widoku wątków wizualizatora współbieżności. Czas wykonywania jest reprezentowany przez segmenty pokazujące, kiedy wątek aktywnie pracuje na rdzeniu logicznym.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac0cf2a60fd194176b7cd9091f4e7dc7a758006f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f26df8f724d4a17f55ea54c3e7c61e5e1630e635
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62969917"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801482"
 ---
 # <a name="execution-time-threads-view"></a>Czas wykonywania (Widok wątków)
 Te segmenty widoku wątki przedstawiają czas wykonywania, gdy wątek aktywnie wykonuje prace na logicznym rdzeń w systemie.
@@ -28,6 +30,6 @@ Te segmenty widoku wątki przedstawiają czas wykonywania, gdy wątek aktywnie w
 
  Aby wyświetlić tradycyjny profil próbkowania dla wszystkich segmentów wykonywania w bieżącym widoku, kliknij opcję **wykonywanie** w profilu widocznej osi czasu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Raport profilu wykonania](../profiling/execution-profile-report.md)
 - [Widok wątków](../profiling/threads-view-parallel-performance.md)

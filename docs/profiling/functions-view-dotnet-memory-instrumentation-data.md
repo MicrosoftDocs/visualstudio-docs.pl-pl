@@ -1,5 +1,7 @@
 ---
 title: Widok funkcji — dane Instrumentacji pamięci platformy .NET | Microsoft Docs
+description: Uzyskaj informacje o widoku funkcji dla danych profilowania przydziału pamięci platformy .NET zebranych za pomocą metody instrumentacji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: eba1f0d1434d253aaca698d3ae582e3c507c2d23
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a245ebffc0aa0efaec8df1ec0c5b93b2d99228d
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779236"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801538"
 ---
 # <a name="functions-view---net-memory-instrumentation-data"></a>Widok funkcji — dane Instrumentacji pamięci platformy .NET
 Widok funkcji dla danych profilowania przydziału pamięci platformy .NET zebranych za pomocą metody instrumentacji zawiera listę funkcji, które przydzieliły pamięć podczas przebiegu profilowania. Wiersz funkcji zgłasza rozmiar i liczbę alokacji oraz dane chronometrażu funkcji.
@@ -97,7 +99,7 @@ Widok funkcji dla danych profilowania przydziału pamięci platformy .NET zebran
 |**Maksymalny czas wyłączny aplikacji**|Maksymalny czas wyłączny aplikacji wywołania tej funkcji.|
 |**Minimalny czas wyłączny aplikacji**|Minimalny czas wyłączny aplikacji dla wywołania tej funkcji.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Instrukcje: dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)
 - [Widok funkcji — próbkowanie](../profiling/functions-view-dotnet-memory-sampling-data.md)
 - [Widok funkcji](../profiling/functions-view-instrumentation-data.md)

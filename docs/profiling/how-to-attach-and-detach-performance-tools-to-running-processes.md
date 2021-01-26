@@ -1,6 +1,7 @@
 ---
 title: Dołączanie narzędzi wydajności do uruchomionych procesów
-ms.custom: seodec18
+description: Dowiedz się, jak użyć profilera programu Visual Studio do dołączenia do uruchomionego procesu lub odłączenia go, aby ułatwić pobieranie próbek i gromadzenie danych o wydajności.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -18,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 58bbf5fa291d71b26cd303a7d43719fde8605c0a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9cccad7f47a26396612264280926b7b26e431879
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331138"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801152"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Instrukcje: dołączanie narzędzi do oceny wydajności do uruchomionych procesów i ich odłączanie
 Profiler może służyć do dołączania lub odłączania uruchomionego procesu, aby ułatwić próbkowanie i gromadzenie danych wydajności. Ta metoda służy do profilowania procesu, gdy chcesz uniknąć zbierania danych o czasie ładowania aplikacji lub monitorowania wydajności procesu po osiągnięciu określonego stanu.
@@ -61,7 +62,7 @@ Profiler może służyć do dołączania lub odłączania uruchomionego procesu,
 
 3. Kliknij przycisk **Odłącz**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Sterowanie zbieraniem danych](../profiling/controlling-data-collection.md)
 - [Sesja wydajności — omówienie](../profiling/performance-session-overview.md)
 - [Instrukcje: uruchamianie i kończenie zbierania danych wydajności](../profiling/how-to-start-and-end-performance-data-collection.md)

@@ -1,5 +1,7 @@
 ---
 title: Widok szczegółów funkcji | Microsoft Docs
+description: W Eksplorator wydajności zapoznaj się z oknem widok szczegółów funkcji, wykresem słupkowym dystrybucji kosztów, tabelą szczegóły wydajności funkcji i oknem widok kodu funkcji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fa53ba1d2e805f744d6a817c65b77428d757a25
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6e812f0fdef46d0ac5ef42788c2f854922a7375c
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536997"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801263"
 ---
 # <a name="function-details-view"></a>Widok szczegółów funkcji
 W oknie **Widok szczegółów funkcji** są wyświetlane następujące informacje:
@@ -102,13 +104,13 @@ W oknie **Widok szczegółów funkcji** są wyświetlane następujące informacj
 
 |Wartość|Opis|
 |-|-|
-|**Przydziały włączne (przydziały)**|— Dla **funkcji wywołującej**liczba obiektów przydzielonej przez wystąpienia wybranej funkcji, która została wywołana przez funkcję. Liczba zawiera obiekty, które zostały przydzielone przez funkcje wywoływane przez wybraną funkcję.<br />— Dla **treści funkcji**, liczby obiektów, które zostały przydzielone przez wybraną funkcję, gdy wykonywał własny kod. Obiekty przydzielone w funkcjach wywoływanych przez wybraną funkcję nie są uwzględniane.<br />-Dla wywoływanej funkcji, liczba obiektów przydzielono przez wystąpienia funkcji, które zostały wywołane przez wybraną funkcję. Liczba zawiera obiekty, które zostały przydzielone przez funkcje wywoływane przez funkcję.|
-|**Bajty włącznie (w bajtach)**|— Dla **funkcji wywołującej**liczba bajtów, które zostały przydzielone przez wystąpienia wybranej funkcji, wywołane przez funkcję. Liczba zawiera bajty, które zostały przydzielone przez funkcje wywoływane przez wybraną funkcję.<br />— Dla **treści funkcji**— całkowita liczba bajtów, które zostały przydzielone przez wybraną funkcję podczas wykonywania własnego kodu. Bajty przydzielone w funkcjach wywoływanych przez wybraną funkcję nie są uwzględniane.<br />-Dla wywoływanej funkcji, liczba bajtów, które zostały przydzielone przez wystąpienia funkcji, które zostały wywołane przez wybraną funkcję. Liczba zawiera bajty, które zostały przydzielone przez funkcje wywoływane przez funkcję.|
+|**Przydziały włączne (przydziały)**|— Dla **funkcji wywołującej** liczba obiektów przydzielonej przez wystąpienia wybranej funkcji, która została wywołana przez funkcję. Liczba zawiera obiekty, które zostały przydzielone przez funkcje wywoływane przez wybraną funkcję.<br />— Dla **treści funkcji**, liczby obiektów, które zostały przydzielone przez wybraną funkcję, gdy wykonywał własny kod. Obiekty przydzielone w funkcjach wywoływanych przez wybraną funkcję nie są uwzględniane.<br />-Dla wywoływanej funkcji, liczba obiektów przydzielono przez wystąpienia funkcji, które zostały wywołane przez wybraną funkcję. Liczba zawiera obiekty, które zostały przydzielone przez funkcje wywoływane przez funkcję.|
+|**Bajty włącznie (w bajtach)**|— Dla **funkcji wywołującej** liczba bajtów, które zostały przydzielone przez wystąpienia wybranej funkcji, wywołane przez funkcję. Liczba zawiera bajty, które zostały przydzielone przez funkcje wywoływane przez wybraną funkcję.<br />— Dla **treści funkcji**— całkowita liczba bajtów, które zostały przydzielone przez wybraną funkcję podczas wykonywania własnego kodu. Bajty przydzielone w funkcjach wywoływanych przez wybraną funkcję nie są uwzględniane.<br />-Dla wywoływanej funkcji, liczba bajtów, które zostały przydzielone przez wystąpienia funkcji, które zostały wywołane przez wybraną funkcję. Liczba zawiera bajty, które zostały przydzielone przez funkcje wywoływane przez funkcję.|
 
 ### <a name="concurrency"></a>Współbieżność
  W poniższej tabeli objaśniono wartości z listy metryk wydajności dla danych profilowania zbieranych przy użyciu metody współbieżności.
 
 |Wartość|Opis|
 |-|-|
-|**Rywalizacje włączne (rywalizacje)**|-Dla **funkcji wywołującej**liczba zdarzeń rywalizacji o zasoby, które wystąpiły w wystąpieniach wybranej funkcji wywołanej przez funkcję. Liczba zawiera zdarzenia rywalizacji w funkcjach wywoływanych przez wybraną funkcję.<br />— Dla **treści funkcji**— całkowita liczba zdarzeń rywalizacji, które wystąpiły podczas wykonywania przez funkcję własnego kodu. Rywalizacje występujące w funkcjach, które zostały wywołane przez wybraną funkcję, nie są uwzględniane.<br />-Dla wywoływanej funkcji, liczba zdarzeń rywalizacji, które wystąpiły w wystąpieniach funkcji, które zostały wywołane przez wybraną funkcję. Liczba zawiera zdarzenia rywalizacji, które wystąpiły w funkcjach wywołanych przez funkcję.|
+|**Rywalizacje włączne (rywalizacje)**|-Dla **funkcji wywołującej** liczba zdarzeń rywalizacji o zasoby, które wystąpiły w wystąpieniach wybranej funkcji wywołanej przez funkcję. Liczba zawiera zdarzenia rywalizacji w funkcjach wywoływanych przez wybraną funkcję.<br />— Dla **treści funkcji**— całkowita liczba zdarzeń rywalizacji, które wystąpiły podczas wykonywania przez funkcję własnego kodu. Rywalizacje występujące w funkcjach, które zostały wywołane przez wybraną funkcję, nie są uwzględniane.<br />-Dla wywoływanej funkcji, liczba zdarzeń rywalizacji, które wystąpiły w wystąpieniach funkcji, które zostały wywołane przez wybraną funkcję. Liczba zawiera zdarzenia rywalizacji, które wystąpiły w funkcjach wywołanych przez funkcję.|
 |**Włączny czas blokowania (czas blokowania)**|— Dla funkcji wywołującej czas spędzony w zdarzeniach rywalizacji o zasoby dla wystąpień wybranej funkcji, która została wywołana. Czas obejmuje czas blokowania w funkcjach, które zostały wywołane przez wybraną funkcję.<br />-Dla **treści funkcji**, łączny czas spędzony w zdarzeniach rywalizacji, które wystąpiły podczas wykonywania własnego kodu przez funkcję. Rywalizacje występujące w funkcjach wywoływanych przez wybraną funkcję nie są uwzględniane.<br />-Dla wywoływanej funkcji, czas spędzony w zdarzeniach rywalizacji o zasoby dla wystąpień funkcji, która została wywołana przez wybraną funkcję. Czas obejmuje czas blokowania, który wystąpił w funkcjach wywołanych przez funkcję.|

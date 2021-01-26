@@ -1,5 +1,7 @@
 ---
 title: Pusty segment osi czasu | Microsoft Docs
+description: W programie Visual Studio Concurrency Visualizer opisz powód, dla którego sekcja osi czasu może być pusta (ma białe tło) dla danego rodzaju kanału.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a96cdc7ae4edc7ea7193d5b95dfc73fa1747c1fb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 15dc4526ce101e21c00fe083b85f81db92bcd609
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62970112"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801436"
 ---
 # <a name="empty-timeline-segment"></a>Pusty segment osi czasu
 W wizualizatorze współbieżności powód, dla którego sekcja osi czasu jest pusta (ma białe tło) zależy od rodzaju kanału.
@@ -30,6 +32,6 @@ W wizualizatorze współbieżności powód, dla którego sekcja osi czasu jest p
 
 - W przypadku kanału znacznika oznacza to, że nie Wygenerowano żadnych znaczników.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Widok wątków](../profiling/threads-view-parallel-performance.md)
 - [Kontrolka powiększenia (Widok wątków)](../profiling/zoom-control-threads-view.md)

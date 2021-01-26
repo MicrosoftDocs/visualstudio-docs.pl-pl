@@ -1,5 +1,7 @@
 ---
 title: Filtrowanie widoków raportów na podstawie podsumowania osi czasu | Microsoft Docs
+description: Aby ograniczyć raportowanie do określonego przedziału czasu, użyj opcji Filtruj według wyboru w widoku podsumowania. Plik danych jest ponownie analizowany tylko przez ten okres.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 056b10a0-952b-4790-89e0-02aebe902e87
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 661bae8166cb46fdf9419f4c49d922beb4d96f5c
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 3719153794cb0439b226b8ba6dc2796d5af0d330
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851167"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801212"
 ---
 # <a name="how-to-filter-report-views-from-the-summary-timeline"></a>Instrukcje: filtrowanie widoków raportu na podstawie podsumowania osi czasu
 Dane, które pojawiają się w raportach wydajności, można filtrować, określając segment czasu na wykresie osi czasu widoku podsumowania. W przypadku filtrowania raportów plik danych profilowania jest ponownie analizowany w celu uwzględnienia określonego segmentu czasu.

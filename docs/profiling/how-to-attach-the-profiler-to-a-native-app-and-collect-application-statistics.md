@@ -1,5 +1,6 @@
 ---
 title: Dołączanie profilera do aplikacji natywnej & zbieranie statystyk aplikacji
+description: Użyj programu Visual Studio narzędzia profilowania, aby dołączyć Profiler do uruchomionej natywnej aplikacji autonomicznej i uzyskać statystyki wydajności przy użyciu metody próbkowania.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5b696a9bddeee4dc7b309945aab66c1d9c801307
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 37914559f71748865e25b5512264f6597ae4ef42
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811087"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801650"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Instrukcje: dołączanie profilera do autonomicznej aplikacji natywnej i zbieranie statystyk aplikacji przy użyciu wiersza polecenia
 W tym artykule opisano, jak używać [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzi wiersza polecenia narzędzia profilowania do dołączania profilera do uruchomionej natywnej aplikacji autonomicznej (klienckiej) i zbierania statystyk wydajności przy użyciu metody próbkowania.
@@ -38,7 +39,7 @@ W tym artykule opisano, jak używać [!INCLUDE[vsprvs](../code-quality/includes/
 
     **VSPerfCmd/Start: przykład/Output:** `OutputFile` [`Options`]
 
-   - Polecenie[/Start](../profiling/start.md)**: Sample** inicjuje profiler.
+   - Polecenie [/Start](../profiling/start.md)**: Sample** inicjuje profiler.
 
    - Opcja [/Output](../profiling/output.md)**:** `OutputFile` jest wymagana w przypadku programu **/Start**. `OutputFile` Określa nazwę i lokalizację pliku danych profilowania (. vsp).
 
@@ -50,7 +51,7 @@ W tym artykule opisano, jak używać [!INCLUDE[vsprvs](../code-quality/includes/
    | [/CrossSession](../profiling/crosssession.md) | Włącza profilowanie procesów w innych sesjach. Ta opcja jest wymagana, jeśli aplikacja ASP.NET jest uruchomiona w innej sesji. Identyfikator sesji jest wymieniony w kolumnie Identyfikator sesji na karcie procesy w Menedżerze zadań systemu Windows. **/CS** można określić jako skrót dla **/CrossSession**. |
    | [/WinCounter](../profiling/wincounter.md) **:**`WinCounterPath` | Określa licznik wydajności systemu Windows, który ma być zbierany podczas profilowania. |
    | [/AutoMark](../profiling/automark.md) **:**`Interval` | Używaj tylko z **/WinCounter** . Określa liczbę milisekund między zdarzeniami zbierania liczników wydajności systemu Windows. Wartość domyślna to 500 ms. |
-   | [/Events](../profiling/events-vsperfcmd.md) **:**`Config` | Określa zdarzenie śledzenia zdarzeń systemu Windows (ETW), które ma być zbierane podczas profilowania. Zdarzenia ETW są zbierane w osobnym (.* ETL*). |
+   | [/Events](../profiling/events-vsperfcmd.md) **:**`Config` | Określa zdarzenie śledzenia zdarzeń systemu Windows (ETW), które ma być zbierane podczas profilowania. Zdarzenia ETW są zbierane w osobnym (.*ETL*). |
 
 3. Dołącz profiler do aplikacji docelowej. Wpisz:
 
@@ -101,6 +102,6 @@ W tym artykule opisano, jak używać [!INCLUDE[vsprvs](../code-quality/includes/
 
      **VSPerfClrEnv/off**
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Profile aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Widok danych metody próbkowania](../profiling/profiler-sampling-method-data-views.md)

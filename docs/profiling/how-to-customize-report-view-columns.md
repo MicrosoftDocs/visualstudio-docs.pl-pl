@@ -1,5 +1,7 @@
 ---
 title: Dostosowywanie kolumn widoku raportu | Microsoft Docs
+description: Można dodawać, usuwać i zmieniać rozmieszczenie kolumn w widokach narzędzi wydajności programu Visual Studio — na przykład w widoku funkcje, widoku procesu i widoku wywołującego/wywoływanego.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: edc58c74daf3cdd1e80256f9915936f4cef6d3fa
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 23b12ca396a91fad440dc057b67e258194732236
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851180"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98800444"
 ---
 # <a name="how-to-customize-report-view-columns"></a>Instrukcje: dostosowywanie kolumn widoku raportu
 Narzędzia wydajności w programie Visual Studio Team System Development Edition są w pełni zintegrowane ze zintegrowanym środowiskiem programistycznym (IDE) w celu zapewnienia bezproblemowego środowiska użytkownika. Poniższa lista jest reprezentatywna dla widoków, które można dostosować przez dodanie, usunięcie i ponowne rozmieszczenie kolumn:

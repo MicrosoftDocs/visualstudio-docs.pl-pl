@@ -1,5 +1,7 @@
 ---
 title: Znaczniki flagi | Microsoft Docs
+description: Więcej informacji na temat znaczników flag znajduje się w programie Visual Studio Concurrency Visualizer. Znacznik flagi reprezentuje element, który wystąpił w czasie w aplikacji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccc0c7aa3386e906ad13331a596953db70240701
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc7b128915b7fc961b44aa7d70a24a813d432ddf
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62969970"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801473"
 ---
 # <a name="flag-markers"></a>Znaczniki flagi
 Znacznik flagi reprezentuje element, który wystąpił w czasie w aplikacji. Flaga może reprezentować wiele rodzajów zdarzeń aplikacji. Na przykład Flaga może pokazać, gdy określony element roboczy został zaplanowany lub wystąpił wyjątek. Środowiska uruchomieniowe, takie jak Biblioteka zadań równoległych, mogą również generować flagi.
@@ -42,6 +44,6 @@ Znacznik flagi reprezentuje element, który wystąpił w czasie w aplikacji. Fla
 
  ![Agreguj flagi przedstawiające cztery poziomy ważności](../profiling/media/cvmarkeraggregate.png "CVMarkerAggregate") Flagi agregacji według poziomu ważności
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Znaczniki wizualizatora współbieżności](../profiling/concurrency-visualizer-markers.md)
 - [Concurrency Visualizer SDK](../profiling/concurrency-visualizer-sdk.md)

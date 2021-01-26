@@ -1,5 +1,7 @@
 ---
-title: Zbieranie danych próbkowania na poziomie wiersza | Microsoft Docs
+title: Zbieranie danych Line-Level próbkowania | Microsoft Docs
+description: Dowiedz się, jak próbkowanie na poziomie wiersza profilera może ujawnić kod, który używa dużych ilości czasu procesora. Działa z kodem zarządzanym i natywnym.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4653cf4b8c921a0c464dcb148963d3ab33506c25
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 3a760980b16fab17fed7180b0bc74e0271c61e1d
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851258"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801069"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>Instrukcje: zbieranie danych próbkowania na poziomie wiersza
 Próbkowanie na poziomie wiersza jest zdolnością profilera do określenia, gdzie w kodzie funkcji intensywnie korzystających z procesora, takiej jak funkcja, która ma duże wykluczające się próbki, procesor musi spędzać większość czasu.
@@ -54,7 +56,7 @@ Próbkowanie na poziomie wiersza jest zdolnością profilera do określenia, gdz
 
      oraz
 
-- Podczas uruchamiania aplikacji wpisz **VSPerfCmd/LineOff \<other arguments> **.
+- Podczas uruchamiania aplikacji wpisz **VSPerfCmd/LineOff \<other arguments>**.
 
 ## <a name="see-also"></a>Zobacz także
 - [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)

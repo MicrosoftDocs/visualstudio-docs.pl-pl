@@ -1,5 +1,6 @@
 ---
 title: Dołączanie profilera do aplikacji autonomicznej platformy .NET; Pobierz statystyki aplikacji
+description: Dowiedz się, jak korzystać z narzędzi wiersza polecenia narzędzia profilowania Visual Studio, aby dołączać Profiler do uruchomionej .NET Framework aplikacji autonomicznej (klienta) i uzyskać statystyki.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 89c7f4141459f612f55a2253e37a6e56349fcb6a
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 899a74894e34b43f87a7f45b4c4c90fff60088a1
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808054"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801150"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Instrukcje: dołączanie profilera do aplikacji autonomicznej .NET Framework i zbieranie statystyk aplikacji przy użyciu wiersza polecenia
 W tym artykule opisano, jak używać [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzi wiersza polecenia narzędzia profilowania do dołączania profilera do uruchomionej .NET Framework aplikacji autonomicznej (klient) i zbierania statystyk wydajności przy użyciu metody próbkowania.
@@ -59,7 +60,7 @@ W tym artykule opisano, jak używać [!INCLUDE[vsprvs](../code-quality/includes/
    | [/CrossSession](../profiling/crosssession.md) | Umożliwia profilowanie procesów w innych sesjach logowania. **/CS** można określić jako skrót dla **/CrossSession**. Ta opcja jest wymagana, jeśli aplikacja jest uruchomiona w innej sesji. |
    | [/WinCounter](../profiling/wincounter.md) **:**`WinCounterPath` | Określa licznik wydajności systemu Windows, który ma być zbierany podczas profilowania. |
    | [/AutoMark](../profiling/automark.md) **:**`Interval` | Używaj tylko z **/WinCounter** . Określa liczbę milisekund między zdarzeniami zbierania liczników wydajności systemu Windows. Wartość domyślna to 500 ms. |
-   | [/Events](../profiling/events-vsperfcmd.md) **:**`Config` | Określa zdarzenie śledzenia zdarzeń systemu Windows (ETW), które ma być zbierane podczas profilowania. Zdarzenia ETW są zbierane w osobnym (.* ETL*). |
+   | [/Events](../profiling/events-vsperfcmd.md) **:**`Config` | Określa zdarzenie śledzenia zdarzeń systemu Windows (ETW), które ma być zbierane podczas profilowania. Zdarzenia ETW są zbierane w osobnym (.*ETL*). |
 
 4. W razie potrzeby Uruchom aplikację docelową w typowy sposób.
 
@@ -114,6 +115,6 @@ W tym artykule opisano, jak używać [!INCLUDE[vsprvs](../code-quality/includes/
 
      **VSPerfClrEnv/off**
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Profile aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Widok danych metody próbkowania](../profiling/profiler-sampling-method-data-views.md)

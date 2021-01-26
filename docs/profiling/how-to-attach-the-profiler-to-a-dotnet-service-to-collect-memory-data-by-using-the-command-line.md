@@ -1,5 +1,6 @@
 ---
 title: Dołączanie profilera do usługi .NET w celu zbierania danych pamięci
+description: Użyj narzędzi wiersza polecenia programu Visual Studio narzędzia profilowania, aby dołączyć Profiler do usługi .NET Framework i zebrać dane pamięci.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 50a77d3cc8d2bb3df73542b273ec3697e0a9ccd9
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: e31404c07fb7093bb2bd1114340cdb87d3c8558a
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811074"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98800587"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-service-to-collect-memory-data-by-using-the-command-line"></a>Instrukcje: dołączanie profilera do usługi .NET Framework w celu zbierania danych pamięci przy użyciu wiersza polecenia
 W tym artykule opisano, jak używać [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzi wiersza polecenia narzędzia profilowania do dołączania profilera do usługi .NET Framework i zbierania danych pamięci. Można zbierać dane o liczbie i rozmiarze alokacji pamięci. można również zbierać dane dotyczące okresu istnienia obiektów pamięci.
@@ -125,6 +126,6 @@ W tym artykule opisano, jak używać [!INCLUDE[vsprvs](../code-quality/includes/
 
 4. Uruchom ponownie komputer.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Usługi profilu](../profiling/command-line-profiling-of-services.md)
 - [Widoki danych pamięci .NET](../profiling/dotnet-memory-data-views.md)

@@ -1,5 +1,7 @@
 ---
 title: Konfigurowanie redukcji szumu w widokach raportu | Microsoft Docs
+description: Używaj przycinania i składania, jednocześnie włączonych domyślnie, aby zmniejszyć szum i zwiększyć wydajność bardziej widocznych w raportach.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 71065ac66fff972e5b6e9cf2c397a75b97e4d02f
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 324c00c869e335fe6fc9504b461e6fc7f85bab98
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851232"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98800433"
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>Instrukcje: Konfigurowanie redukcji szumu w widokach raportu
 Raporty wydajności można skonfigurować pod kątem obniżenia poziomu hałasu przez ograniczenie ilości danych prezentowanych w widoku drzewa wywołań i widoku alokacji. Dzięki zmniejszeniu szumu problemy z wydajnością są bardziej widoczne. Jest to przydatne podczas analizowania raportów wydajności.
@@ -29,7 +31,7 @@ Raporty wydajności można skonfigurować pod kątem obniżenia poziomu hałasu 
 
 - Trwa **przycinanie** Gdy raport jest analizowany, widok pominie funkcje, które następują ustawienia wartości i progu, które zostały skonfigurowane, zgodnie z opisem w dalszej procedurze przycinania. Domyślnie przycinanie jest włączone.
 
-- **Folding** Składanie Po włączeniu funkcji składania, kolejne funkcje w ścieżce, która spełnia skonfigurowane ustawienia, zostaną scalone zgodnie z opisem w poniższej procedurze składania. Domyślnie funkcja składania jest domyślnie włączona.
+-  Składanie Po włączeniu funkcji składania, kolejne funkcje w ścieżce, która spełnia skonfigurowane ustawienia, zostaną scalone zgodnie z opisem w poniższej procedurze składania. Domyślnie funkcja składania jest domyślnie włączona.
 
 ### <a name="to-configure-trimming-for-a-performance-report"></a>Aby skonfigurować przycinanie raportu wydajności
 
@@ -62,7 +64,7 @@ Raporty wydajności można skonfigurować pod kątem obniżenia poziomu hałasu 
 
 2. Aby włączyć składanie, wykonaj następujące kroki:
 
-    1. Wybierz pozycję **Włącz**składanie. Jest to ustawienie domyślne.
+    1. Wybierz pozycję **Włącz** składanie. Jest to ustawienie domyślne.
 
         > [!NOTE]
         > W przypadku włączenia redukcji szumu w raporcie zostanie wyświetlony pasek informacji. Aby uzyskać więcej informacji, zobacz widok [drzewa wywołań](../profiling/call-tree-view.md) i [Widok przydziałów](../profiling/dotnet-memory-allocations-view.md).
@@ -73,7 +75,7 @@ Raporty wydajności można skonfigurować pod kątem obniżenia poziomu hałasu 
 
     4. Aby włączyć ostrzeżenie o zmniejszeniu szumu w wygenerowanym raporcie, wybierz opcję **Wyświetl ostrzeżenie, gdy jest włączone zmniejszenie szumu**. Jest to ustawienie domyślne.
 
-3. Aby wyłączyć składanie, wyczyść pole wyboru **Włącz**składanie.
+3. Aby wyłączyć składanie, wyczyść pole wyboru **Włącz** składanie.
 
 4. Kliknij przycisk **OK**.
 

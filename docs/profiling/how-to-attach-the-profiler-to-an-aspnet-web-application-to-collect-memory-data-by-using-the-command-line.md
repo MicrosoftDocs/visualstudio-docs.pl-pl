@@ -1,5 +1,6 @@
 ---
 title: Dołącz profiler do ASP.NET w celu zbierania danych pamięci
+description: Użyj programu Visual Studio narzędzia profilowania, aby dołączyć Profiler do aplikacji sieci Web ASP.NET i uzyskać dane o liczbie i rozmiarze .NET Framework alokacji pamięci.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 22a3f7d20b02839ae677b12e5ce8454e63358914
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 918a370df43e2754721dd715ea6e2559e14160f8
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90807979"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801594"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Instrukcje: dołączanie profilera do aplikacji sieci Web ASP.NET w celu zbierania danych pamięci przy użyciu wiersza polecenia
 W tym artykule opisano sposób korzystania z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzi wiersza polecenia narzędzia profilowania w celu dołączania profilera do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci Web i zbierania danych o liczbie i rozmiarze .NET Framework alokacji pamięci. Możesz również zbierać dane dotyczące okresu istnienia .NET Framework obiektów pamięci.
@@ -126,6 +127,6 @@ W tym artykule opisano sposób korzystania z [!INCLUDE[vsprvs](../code-quality/i
 
     **IISReset/Start**
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [Widoki danych pamięci .NET](../profiling/dotnet-memory-data-views.md)

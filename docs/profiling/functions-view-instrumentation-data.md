@@ -1,5 +1,7 @@
 ---
 title: Widok funkcji — dane Instrumentacji | Microsoft Docs
+description: Odczytaj opisy kolumn danych profilowania w widoku raportu funkcji, który wyświetla listę danych profilowania według nazwy funkcji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 423b6d61af93c37e6fa83549ed3fa5d422128165
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b12fc05f9eeb9b77e982c62ae52bfbbe784f5e6
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779223"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801360"
 ---
 # <a name="functions-view---instrumentation-data"></a>Widok funkcji — dane Instrumentacji
 Widok raport funkcji zawiera listę danych profilowania według nazwy funkcji.
@@ -82,7 +84,7 @@ Widok raport funkcji zawiera listę danych profilowania według nazwy funkcji.
 |**Maksymalny czas wyłączny aplikacji**|Maksymalny czas wyłączny aplikacji wywołania tej funkcji.|
 |**Minimalny czas wyłączny aplikacji**|Minimalny czas wyłączny aplikacji dla wywołania tej funkcji.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Instrukcje: dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)
 - [Widok funkcji](../profiling/functions-view-sampling-data.md)
 - [Widok funkcji — próbkowanie](../profiling/functions-view-dotnet-memory-sampling-data.md)

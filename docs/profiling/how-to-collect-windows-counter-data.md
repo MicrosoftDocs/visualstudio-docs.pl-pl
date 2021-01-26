@@ -1,5 +1,7 @@
 ---
 title: Zbieranie danych licznika systemu Windows | Microsoft Docs
+description: Liczniki systemu Windows są używane w profilowania Instrumentacji. Dowiedz się, jak zbierać dane liczników systemu Windows oraz jak ograniczyć analizę do jednego interwału kolekcji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 79ab9869f71fa8630b070c03d21ea4f9a6113622
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: ccbdf9afb843c8bdac2d904dc22375a4a69e733a
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852644"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801046"
 ---
 # <a name="how-to-collect-windows-counter-data"></a>Instrukcje: zbieranie danych licznika systemu Windows
 
@@ -33,7 +35,7 @@ Liczniki systemu Windows są licznikami wydajności systemu, które można zbier
 
 1. W Eksplorator wydajności kliknij prawym przyciskiem myszy sesję, dla której chcesz skonfigurować liczniki systemu Windows, a następnie wybierz pozycję **Właściwości**.
 
-2. Na **stronie właściwości**kliknij pozycję **liczniki systemu Windows**.
+2. Na **stronie właściwości** kliknij pozycję **liczniki systemu Windows**.
 
 3. Zaznacz pole wyboru **Zbierz liczniki systemu Windows** .
 

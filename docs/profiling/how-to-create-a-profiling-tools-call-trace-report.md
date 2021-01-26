@@ -1,5 +1,7 @@
 ---
 title: Utwórz raport śledzenia wywołań narzędzia profilowania | Microsoft Docs
+description: Utwórz raport śledzenia wywołań narzędzi wydajności, aby wyświetlić informacje o chronometrażu dla funkcji i funkcjach wywoływanych przez funkcje.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,18 +14,18 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d7d315d1931dfa64ce0070790c833651fa4fc11
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: b9c979668cdf24fae7acddd259a82e5c62353084
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851206"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98800416"
 ---
 # <a name="how-to-create-a-profiling-tools-call-trace-report"></a>Instrukcje: tworzenie raportu śledzenia wywołań narzędzi profilowania
 *Raport śledzenia wywołań* dla [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania wyświetla informacje o chronometrażu dla każdego wpisu i punktu wyjścia do funkcji aplikacji oraz każde wywołanie funkcji przez funkcję. Raporty śledzenia wywołań są dostępne do profilowania danych tylko wtedy, gdy zostały zebrane przy użyciu metody instrumentacji.
 
 > [!NOTE]
-> Nie można wyświetlić raportów śledzenia wywołań w programie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Aby wygenerować wartość rozdzieloną przecinkami, należy użyć narzędzia wiersza polecenia **VSPerfReport** .* CSV*) lub. plik *XML* . Aby uzyskać więcej informacji na temat tego narzędzia, zobacz [VSPerfReport](../profiling/vsperfreport.md).
+> Nie można wyświetlić raportów śledzenia wywołań w programie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Aby wygenerować wartość rozdzieloną przecinkami, należy użyć narzędzia wiersza polecenia **VSPerfReport** .*CSV*) lub. plik *XML* . Aby uzyskać więcej informacji na temat tego narzędzia, zobacz [VSPerfReport](../profiling/vsperfreport.md).
 
 ### <a name="to-create-a-call-trace-report"></a>Aby utworzyć raport śledzenia wywołań
 
@@ -36,7 +38,7 @@ ms.locfileid: "90851206"
     |Element|Opis|
     |-|-|
     |*ToolsPath*|Ścieżka narzędzia profilowania narzędzi wiersza polecenia. Aby uzyskać więcej informacji, zobacz [Określanie ścieżki do narzędzi wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).|
-    |*VSPFile*|Dane profilowania (.* VSP* lub. *vsps*) rozszerzeniem. Akceptowane są pełne i częściowe ścieżki.|
+    |*VSPFile*|Dane profilowania (.*VSP* lub. *vsps*) rozszerzeniem. Akceptowane są pełne i częściowe ścieżki.|
     |Xml|Generuje raport w formacie XML.|
 
 ## <a name="see-also"></a>Zobacz także
