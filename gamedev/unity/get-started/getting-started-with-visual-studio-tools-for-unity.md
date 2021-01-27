@@ -2,7 +2,7 @@
 title: Wprowadzenie z Visual Studio Tools for Unity | Microsoft Docs
 description: Dowiedz się, jak zainstalować i skonfigurować program Visual Studio do tworzenia aplikacji dla aparatu Unity.
 ms.custom: ''
-ms.date: 07/13/2020
+ms.date: 01/27/2021
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: how-to
@@ -13,17 +13,17 @@ manager: crdun
 ms.workload:
 - unity
 zone_pivot_groups: platform
-ms.openlocfilehash: 1f8cbe1629aab6a177a46888fe25cf8e3565d91d
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: e05a94ecf9cf690f46299684c82f2b3961a783c8
+ms.sourcegitcommit: 585547ea7363ab1b6bb9d41f6d008cbe478d1a3b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903756"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98912571"
 ---
 # <a name="get-started-with-visual-studio-and-unity"></a>Wprowadzenie do programu Visual Studio i aparatu Unity
 
 > [!NOTE]
-> W tym przewodniku przyjęto założenie, że masz już zainstalowany aparat Unity przy użyciu programu Unity Hub. Jeśli dopiero zaczynasz korzystanie z aparatu Unity, zalecamy odwiedzenie aparatu Unity i przeprowadzenie pierwszej [wprowadzenie z samouczkiem aparatu Unity](https://learn.unity.com/course/getting-started-with-unity) .
+> W tym przewodniku przyjęto założenie, że masz już zainstalowany aparat Unity przy użyciu programu Unity Hub. Jeśli dopiero zaczynasz korzystanie z aparatu Unity, zalecamy odwiedzenie aparatu Unity i przeprowadzenie pierwszej [ścieżki szkoleniowej aparatu Unity Essentials](https://learn.unity.com/pathway/unity-essentials) .
 
 ## <a name="install-unity-support-for-visual-studio"></a>Zainstaluj obsługę aparatu Unity dla programu Visual Studio
 
