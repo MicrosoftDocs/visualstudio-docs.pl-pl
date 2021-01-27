@@ -1,5 +1,6 @@
 ---
 title: Web.Config pliku & profilu aplikacji dynamicznej ASP.NET
+description: Dowiedz się, jak za pomocą programu Visual Studio narzędzia profilowania zbierać dane dotyczące chronometrażu i pamięci dla dynamicznie skompilowanej aplikacji sieci Web ASP.NET.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 9682fe820e34e8e30a3c57670f5e5fbc7eae2153
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: e08732689d11cd7de70df1e93d1d1110a35baa6d
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809599"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883489"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Instrukcje: Modyfikowanie plików web.config w celu instrumentowania i profilowania dynamicznie skompilowanych aplikacji sieci Web ASP.NET
 Za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] metody instrumentacji narzędzia profilowania można zbierać szczegółowe dane o chronometrażu, dane przydziału pamięci platformy .NET i dane okresu istnienia obiektu platformy .NET z dynamicznie skompilowanych [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci Web.
@@ -141,7 +142,7 @@ Za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] metody inst
    | Nazwa atrybutu | Wartość atrybutu |
    |----------------| - |
    | **głównych** | **Microsoft. VisualStudio. Enterprise. AspNetHelper. VsInstrLocation** |
-   | **wartościami** | `PerformanceToolsFolder`**\VSInstr.Exe** |
+   | **wartość** | `PerformanceToolsFolder`**\VSInstr.Exe** |
 
 4. Dodaj inny element **Add** jako element podrzędny elementu **AppSettings** .
 
@@ -150,7 +151,7 @@ Za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] metody inst
    |Nazwa atrybutu|Wartość atrybutu|
    |--------------------|---------------------|
    |**głównych**|**Microsoft. VisualStudio. Enterprise. AspNetHelper. VsInstrTools**|
-   |**wartościami**|`PerformanceToolsFolder`|
+   |**wartość**|`PerformanceToolsFolder`|
 
     `PerformanceToolsFolder` jest ścieżką do plików wykonywalnych profilera. Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określanie ścieżki do narzędzi wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
@@ -221,6 +222,6 @@ Za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] metody inst
 
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Instrukcje: Instrumentacja dynamicznie skompilowanej aplikacji ASP.NET i zbieranie szczegółowych danych o chronometrażu](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)
 - [Instrukcje: Instrumentacja dynamicznie skompilowanej aplikacji ASP.NET i zbieranie danych pamięci](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)

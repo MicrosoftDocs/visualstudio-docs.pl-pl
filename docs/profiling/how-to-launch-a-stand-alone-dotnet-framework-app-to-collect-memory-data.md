@@ -1,5 +1,7 @@
 ---
 title: Wiersz polecenia profilera — Otwieranie aplikacji .NET Framework klienta, pobieranie danych pamięci
+description: Dowiedz się, jak używać narzędzi wiersza polecenia narzędzia profilowania Visual Studio do uruchamiania .NET Framework aplikacji autonomicznej i zbierania danych dotyczących aktywności pamięci.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 3bc53041-91b7-4ad0-8413-f8bf2c4b3f5e
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6378ea021d089027c19d28e927d5772ef5f35e0f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a0df21a4d34d3d3f889442046b594ff63f01bcb6
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85327698"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883488"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>Instrukcje: uruchamianie autonomicznej aplikacji .NET Framework z profilerem w celu zbierania danych pamięci przy użyciu wiersza polecenia
 W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzi wiersza polecenia narzędzia profilowania do uruchamiania .NET Framework autonomicznej aplikacji (klienta) i zbierania danych pamięci.
@@ -62,7 +64,7 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
 
      |Słowo kluczowe|Opis|
      |-------------|-----------------|
-     |**alokacja**|Zbieraj tylko dane alokacji pamięci.|
+     |**Dział**|Zbieraj tylko dane alokacji pamięci.|
      |**okres istnienia**|Zbieraj dane alokacji pamięci i okresu istnienia obiektu.|
 
      W przypadku opcji **przełącznik/Launch** można użyć dowolnej z następujących opcji.
@@ -87,7 +89,7 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
     |[/ProcessOn](../profiling/processon-and-processoff.md) **:** `PID` [ProcessOff](../profiling/processon-and-processoff.md) **:**`PID`|Uruchamia (**/ProcessOn**) lub zatrzymywanie (**/ProcessOff**) zbieranie danych dla procesu określonego przez identyfikator procesu ( `PID` ).|
     |[/Attach](../profiling/attach.md) **:** `PID` [/Detach](../profiling/detach.md)|**/Attach** uruchamia zbieranie danych dla procesu, który jest określony przez `PID` (identyfikator procesu). **/Detach** zatrzyma zbieranie danych dla wszystkich procesów.|
 
-- Można również użyć opcji/Mark **VSPerfCmd.exe** [/mark](../profiling/mark.md) , aby wstawić znak profilowania do pliku danych. **/Mark** polecenie dodaje identyfikator, sygnaturę czasową i opcjonalny ciąg tekstowy zdefiniowany przez użytkownika. Znaczniki mogą służyć do filtrowania danych.
+- Można również użyć opcji/Mark **VSPerfCmd.exe** [](../profiling/mark.md) , aby wstawić znak profilowania do pliku danych. **/Mark** polecenie dodaje identyfikator, sygnaturę czasową i opcjonalny ciąg tekstowy zdefiniowany przez użytkownika. Znaczniki mogą służyć do filtrowania danych.
 
 ## <a name="end-the-profiling-session"></a>Zakończ sesję profilowania
  Aby zakończyć sesję profilowania, profiler musi zostać odłączony od wszystkich profilowanych procesów, a profiler musi być jawnie zamknięty. Można odłączyć Profiler od aplikacji, która została profilowana przy użyciu metody próbkowania przez zamknięcie aplikacji lub wywołanie opcji **VSPerfCmd/detach** . Następnie należy wywołać opcję **VSPerfCmd/shutdown** , aby wyłączyć profiler i zamknąć plik danych profilowania. Polecenie **VSPerfCLREnv/off** czyści zmienne środowiskowe profilowania.
@@ -106,6 +108,6 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
 
      **VSPerfCmd**  [/Shutdown](../profiling/shutdown.md)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Profile aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Widoki danych pamięci .NET](../profiling/dotnet-memory-data-views.md)

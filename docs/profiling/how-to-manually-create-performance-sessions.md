@@ -1,5 +1,7 @@
 ---
 title: Ręczne tworzenie sesji wydajności | Microsoft Docs
+description: Dowiedz się, jak ręcznie utworzyć sesję wydajności bez otwierania projektu w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b918c201509829ad4194da415441ddd9506638a1
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 1a368da7a69d921c7e7a55922fb89774ce192b08
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851011"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883483"
 ---
 # <a name="how-to-manually-create-performance-sessions"></a>Instrukcje: ręczne tworzenie sesji wydajności
 Sesję wydajności można utworzyć ręcznie. Nie jest wymagane Otwieranie projektu w programie w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] celu wykonania tej czynności. Aby uzyskać więcej informacji, zobacz [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md).
@@ -29,7 +31,7 @@ Sesję wydajności można utworzyć ręcznie. Nie jest wymagane Otwieranie proje
 
 1. W menu **debugowanie** wskaż polecenie **Profiler**, a następnie **Eksplorator wydajności**, a następnie kliknij pozycję **Nowa sesja wydajności**.
 
-     Do **Eksplorator wydajności**zostanie dodana pusta sesja wydajności.
+     Do **Eksplorator wydajności** zostanie dodana pusta sesja wydajności.
 
 2. Kliknij prawym przyciskiem myszy **obiekt docelowy**, a następnie kliknij polecenie **Dodaj docelowy plik binarny**.
 

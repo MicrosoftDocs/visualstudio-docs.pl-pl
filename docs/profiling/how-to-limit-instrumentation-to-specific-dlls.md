@@ -1,5 +1,7 @@
 ---
 title: Ograniczanie instrumentacji do określonych bibliotek DLL | Microsoft Docs
+description: Dowiedz się, jak za pomocą metody profilowania Instrumentacji ograniczyć zbieranie danych profilowania do co najmniej jednej biblioteki DLL w aplikacji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a3584498854e7518e93c4ba00dc019d804b0e8d8
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 7bd781f2c62a313a8e0c0b044103ca5da28021f8
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851024"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883374"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Instrukcje: ograniczanie instrumentacji do określonych bibliotek DLL
 
@@ -51,9 +53,9 @@ Korzystając z metody profilowania instrumentacji, można ograniczyć zbieranie 
 
 4. Na drugiej stronie kreatora wykonaj następujące czynności:
 
-    - Wpisz ścieżkę i nazwę pliku. plik *dll* , który ma być profilem w **ścieżce dll**. Możesz również kliknąć przycisk wielokropka (...), aby zlokalizować plik w oknie dialogowym **biblioteka dołączana dynamicznie do profilowania** . Należy pamiętać, że należy określić kopię. plik *dll* , który będzie uruchamiany przez plik wykonywalny (.* exe*), który wybierzesz dalej.
+    - Wpisz ścieżkę i nazwę pliku. plik *dll* , który ma być profilem w **ścieżce dll**. Możesz również kliknąć przycisk wielokropka (...), aby zlokalizować plik w oknie dialogowym **biblioteka dołączana dynamicznie do profilowania** . Należy pamiętać, że należy określić kopię. plik *dll* , który będzie uruchamiany przez plik wykonywalny (.*exe*), który wybierzesz dalej.
 
-    - Wpisz ścieżkę i nazwę pliku wykonywalnego (.* exe*), który będzie wykonywał. *Biblioteka DLL* w **ścieżce pliku wykonywalnego**. Możesz również kliknąć przycisk wielokropka (...), aby zlokalizować plik w oknie dialogowym **plik wykonywalny do uruchomienia** .
+    - Wpisz ścieżkę i nazwę pliku wykonywalnego (.*exe*), który będzie wykonywał. *Biblioteka DLL* w **ścieżce pliku wykonywalnego**. Możesz również kliknąć przycisk wielokropka (...), aby zlokalizować plik w oknie dialogowym **plik wykonywalny do uruchomienia** .
 
     - Opcjonalny. Wpisz wszystkie argumenty wiersza polecenia, które chcesz przekazać do pliku wykonywalnego w **argumentach wiersza polecenia**. W razie potrzeby określ katalog roboczy aplikacji w **katalogu roboczym**.
 
@@ -66,9 +68,9 @@ Korzystając z metody profilowania instrumentacji, można ograniczyć zbieranie 
 7. Opcjonalny. , Aby dodać więcej. pliki *dll* , kliknij prawym przyciskiem myszy **obiekt docelowy** , a następnie wybierz polecenie **Dodaj docelowy plik binarny**. Wybierz pliki z okna dialogowego **Dodaj docelowy plik binarny** .
 
     > [!NOTE]
-    > Nie określaj pliku wykonywalnego (.* exe*), który wykonuje pliki dll.
+    > Nie określaj pliku wykonywalnego (.*exe*), który wykonuje pliki dll.
 
 ## <a name="see-also"></a>Zobacz także
 
-Zbieranie danych sterujących [Control data collection](../profiling/controlling-data-collection.md) 
+Zbieranie danych sterujących [](../profiling/controlling-data-collection.md) 
  [Instrukcje: ograniczanie instrumentacji do określonych funkcji](../profiling/how-to-limit-instrumentation-to-specific-functions.md)
