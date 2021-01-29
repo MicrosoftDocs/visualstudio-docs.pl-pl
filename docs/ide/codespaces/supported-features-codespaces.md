@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 68fbdef0e86b125971480ae1bd6a7ba6d3108cd8
-ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
+ms.openlocfilehash: 20d42b45cc98a64d86306b81f14d781becb8b7a6
+ms.sourcegitcommit: 52742b678233eed1de7a249cf990d072f9758149
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "97696535"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99049483"
 ---
 # <a name="supported-visual-studio-features-preview"></a>Obsługiwane funkcje programu Visual Studio (wersja zapoznawcza)
 
@@ -73,6 +73,7 @@ Obsługiwane są większość typów aplikacji i konfiguracji projektu, ale koni
 Jeszcze niedostępne:
 
 * Projektanci interfejsu użytkownika — WinForms, WPF i projektantów zasobów
+* Funkcja WinForms i projekty WPF rzutowania aplikacji są dostępne tylko w ramach flagi funkcji
 * Projekty Visual Basic i F #
 * .NET Framework projekty skierowane
 * Projekty Docker Compose
