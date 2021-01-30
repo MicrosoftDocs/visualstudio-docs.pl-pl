@@ -1,20 +1,21 @@
 ---
 title: Jak mogę kupić subskrypcje programu Visual Studio?
 description: Dowiedz się więcej na temat różnych sposobów zakupu subskrypcji programu Visual Studio
-ms.faqid: group4_1
+ms.faqid: q4_1
 ms.topic: include
-ms.assetid: c8dd39de-bf7f-40a2-a203-f2be21b87f5c
+ms.assetid: 5b27454c-f036-4f4d-9d67-54d1fc775f72
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 01/27/2021
-ms.openlocfilehash: a2dca00b1a7ebea80a883825783785c84c2352cc
+ms.date: 01/12/2021
+ms.openlocfilehash: bb436cfdff0f6783d041858430b4fd9864ceb569
 ms.sourcegitcommit: cfeffe2364275a347db0ba2dce36d8e80001c081
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 01/30/2021
-ms.locfileid: "99104445"
+ms.locfileid: "99104556"
 ---
 ## <a name="how-do-i-purchase-visual-studio-subscriptions"></a>Jak mogę kupić subskrypcje programu Visual Studio?
+
 Subskrypcje programu Visual Studio można kupować za pośrednictwem wielu kanałów, w tym w ramach  [licencjonowania zbiorowego](https://www.microsoft.com/licensing/default), w witrynie  [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions) i w sklepie [Microsoft Store](https://www.microsoft.com/store/collections/visualstudio).  
 
 [Porównaj korzyści z subskrypcji i ceny](https://visualstudio.microsoft.com/vs/pricing/) , aby poznać zalety każdej subskrypcji programu Visual Studio. Zapoznaj się ze [stroną korzyści subskrypcji](https://visualstudio.microsoft.com/vs/benefits/), aby uzyskać pomoc w wyborze odpowiedniej subskrypcji.   
@@ -35,4 +36,4 @@ Miesięczne subskrypcje umożliwiają wypożyczanie programu Visual Studio i us�
 [Przeczytaj więcej](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-billing-faq) na temat comiesięcznych rozliczeń subskrypcji programu Visual Studio. 
 
 ### <a name="volume-licensing"></a>Licencjonowanie zbiorowe 
-Subskrypcje licencjonowania zbiorowego są dostępne, gdy organizacja musi zakupić dużą liczbę subskrypcji. [Przeczytaj więcej](https://www.microsoft.com/licensing/how-to-buy/how-to-buy) na temat kupowania w ramach licencjonowania zbiorowego.  
+Subskrypcje licencjonowania zbiorowego są dostępne, gdy organizacja musi zakupić dużą liczbę subskrypcji. [Przeczytaj więcej](https://www.microsoft.com/licensing/how-to-buy/how-to-buy) na temat kupowania w ramach licencjonowania zbiorowego.

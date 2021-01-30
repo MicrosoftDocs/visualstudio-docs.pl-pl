@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cfec7d31e6fc2c120ef42dc9de2a5a7eea4132e0
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 909e15a3acdc6725556c8d5121a363d1754a74be
+ms.sourcegitcommit: cfeffe2364275a347db0ba2dce36d8e80001c081
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597096"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99104282"
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>Instrukcje: zapisywanie i otwieranie plików przy użyciu kodowania
 
@@ -40,6 +40,9 @@ Pliki z określonym kodowaniem znaków można zapisać w celu obsługi języków
 
      Jeśli chcesz współpracować z plikiem, który znasz w określony sposób, możesz poinstruować program Visual Studio, aby używał tego kodowania podczas otwierania pliku. Używana metoda zależy od tego, czy plik jest częścią projektu.
 
+> [!NOTE]
+> Jeśli chcesz zapisać plik projektu z kodowaniem, opcja **Zapisz plik jako** nie jest włączona do momentu zwolnienia projektu.
+
 ## <a name="to-open-an-encoded-file-that-is-part-of-a-project"></a>Aby otworzyć zakodowany plik, który jest częścią projektu
 
 1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy plik i wybierz polecenie **Otwórz za pomocą**.
@@ -58,7 +61,7 @@ Pliki z określonym kodowaniem znaków można zapisać w celu obsługi języków
 
 3. Wykonaj kroki 2 i 3 z poprzedniej procedury.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Kodowanie i podziały wierszy](encodings-and-line-breaks.md)
 - [Kodowanie i globalizacja Windows Forms](/dotnet/framework/winforms/advanced/encoding-and-windows-forms-globalization)
