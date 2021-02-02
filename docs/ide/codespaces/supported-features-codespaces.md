@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 20d42b45cc98a64d86306b81f14d781becb8b7a6
-ms.sourcegitcommit: 52742b678233eed1de7a249cf990d072f9758149
+ms.openlocfilehash: 994ac7b759b943a2076c4e8f401d757258e782ab
+ms.sourcegitcommit: 0e91210421974ad08189919495a7327e60be93bb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "99049483"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99251443"
 ---
 # <a name="supported-visual-studio-features-preview"></a>Obsługiwane funkcje programu Visual Studio (wersja zapoznawcza)
 
@@ -109,7 +109,7 @@ Jeszcze niedostępne:
 
 Podczas pracy z programem Visual Studio połączonym z codespace uzyskasz te same funkcje ułatwień dostępu jak podczas pracy lokalnie.
 
-* Kontrola źródła — pełna obsługa Git za pomocą nowego [zintegrowanego środowiska git](../git-with-visual-studio.md).
+* Kontrola źródła — pełna obsługa Git za pomocą nowego [zintegrowanego środowiska git](../git-with-visual-studio.md). Aby można było sklonować moduły podrzędne Git w codespace, może być konieczne uruchomienie `git submodule update` z terminalu.
 * Ułatwienia dostępu — istnieje jeden znany problem z technologią pomocniczą, która nie może uzyskać dostępu do appcasting debugowanej aplikacji. Oprócz tego ograniczenia nie uważamy, że istnieją inne problemy ze zgodnością, które jeszcze nie istnieją w lokalnym środowisku programu Visual Studio. Skontaktuj się z nami, jeśli wykryjesz usterki przez zgłoszenie problemu w [społeczności deweloperów](https://aka.ms/feedback/report?space=8).
 * Publikowanie-publikowanie na platformie Azure za pomocą akcji GitHub jest obsługiwane.
 * Połączone usługi — Usługa App Insights, Magazyn kluczy, magazyn, SQL, Redis, Cosmos, openAPI i gRPC są częściowo obsługiwane.
