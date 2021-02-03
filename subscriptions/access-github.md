@@ -7,12 +7,12 @@ ms.assetid: 2249b32a-46d7-4e29-b543-4769c71ceda6
 ms.date: 10/22/2020
 ms.topic: conceptual
 description: Dowiedz się więcej o uzyskiwaniu dostępu do przedsiębiorstwa GitHub w ramach subskrypcji programu Visual Studio
-ms.openlocfilehash: 59b665b1da7d46732f1f4e967ae2a98ec54875ff
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 7ad60b1c1a177353cad13e3dbcbc50c67b5500ac
+ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537906"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99511361"
 ---
 # <a name="visual-studio-subscriptions-with-github-enterprise"></a>Subskrypcje programu Visual Studio z usługą GitHub Enterprise 
 
@@ -85,7 +85,7 @@ Odp.: wraz z usługą GitHub Enterprise otrzymujesz wszystkie zalety standardowe
 - Znajdź odpowiedzi na pytania dotyczące szerokiej gamy tematów w witrynie GitHub w [pomocy usługi GitHub](https://help.github.com).
 - Potrzebujesz dodatkowej pomocy?  Skontaktuj się z [pomocą techniczną usługi GitHub](https://support.github.com/)
 - Uzyskaj pomoc od innych użytkowników usługi GitHub na [forum społeczności usługi GitHub](https://github.community/).
-- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji programu Visual Studio](https://visualstudio.microsoft.com/subscriptions/support/).
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, odwiedź naszą stronę [pomocy](https://my.visualstudio.com/GetHelp) .
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 - Uzyskaj [Pomoc techniczną](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) dla przedsiębiorstw w witrynie GitHub.   
 

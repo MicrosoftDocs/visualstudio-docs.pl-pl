@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 6601c395-f778-48c1-ab76-cf454b9193e4
-ms.date: 10/22/2020
+ms.date: 02/02/2021
 ms.topic: conceptual
 description: Dowiedz się więcej o rolach administratora i administratora oraz o sposobach przypisywania administratorów.
-ms.openlocfilehash: 491a8de27477f68b4344ad17b860b80b4ca96aa9
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 2d9abf5a3079320011cb979a8109278c878321e3
+ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92467378"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99511335"
 ---
 # <a name="super-admins-and-admins-for-visual-studio-subscription-agreements"></a>Administratorzy i Administratorzy dla umów dotyczących subskrypcji programu Visual Studio
 
@@ -28,8 +28,8 @@ Obejrzyj pokaz dotyczący zarządzania administratorami.
 ## <a name="assigning-admins"></a>Przypisywanie administratorów
 Aby przypisać nowych administratorów (administratorów):
 1. Zaloguj się, aby https://manage.visualstudio.com korzystać z adresu e-mail, który został przypisany jako administrator z umową, w której zostały zakupione subskrypcje.
-2. Kliknij kartę z etykietą **Zarządzaj administratorami** .
-3. Kliknij pozycję **Dodaj** .
+2. Kliknij kartę z etykietą **Zarządzaj administratorami**.
+3. Kliknij pozycję **Dodaj**.
    > [!div class="mx-imgBorder"]
    > ![Dodaj administratorów](_img/admin-roles/add-admins.png "Kliknij blok zarządzanie administratorami, a następnie kliknij przycisk Dodaj, aby przypisać nowych administratorów.")
 4. Wypełnij formularz nowymi informacjami administratora.  
@@ -42,13 +42,14 @@ Aby przypisać nowych administratorów (administratorów):
 5. Po kliknięciu przycisku **Dodaj** , aby przypisać nowego administratora, otrzymają wiadomość e-mail z zaproszeniem do logowania się do portalu.  
 
 ## <a name="resources"></a>Zasoby
-- [Pomoc techniczna dotycząca subskrypcji programu Visual Studio i administrowania nim](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [Wsparcie administracyjne i subskrypcje programu Visual Studio](https://my.visualstudio.com/gethelp)
 
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Azure DevOps documentation (Dokumentacja usługi Azure DevOps)](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)
 - [Dokumentacja Microsoft 365](/microsoft-365/)
+
 
 
 ## <a name="next-steps"></a>Następne kroki

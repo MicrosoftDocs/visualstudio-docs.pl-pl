@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: b26b31dc-1eeb-4871-9ce6-2c980e703f1e
-ms.date: 10/22/2020
+ms.date: 02/02/2021
 ms.topic: conceptual
 description: Dowiedz się więcej na temat obowiązków administratorów subskrypcji.
-ms.openlocfilehash: 183209e5e1fa873ae9af6ff2d9b32caf94c5461e
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: 9d2c724fafb41ee44e531a1eec41d76d7e888686
+ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467469"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99511296"
 ---
 # <a name="overview-of-admin-responsibilities"></a>Przegląd obowiązków administracyjnych
 Jako administrator możesz zarządzać subskrypcjami dla swojej organizacji.  Rola administratora przenosi również obowiązki, aby upewnić się, że subskrypcje są zarządzane zgodnie z postanowieniami licencyjnymi. W tym artykule opisano obowiązki, korzyści i ograniczenia roli administratora.
@@ -38,9 +38,10 @@ Subskrypcje programu Visual Studio umożliwiają programistom Instalowanie i uż
 
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Azure DevOps documentation (Dokumentacja usługi Azure DevOps)](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)
 - [Dokumentacja Microsoft 365](/microsoft-365/)
+- [Wsparcie administracyjne i subskrypcje programu Visual Studio](https://my.visualstudio.com/gethelp)
 
 ## <a name="next-steps"></a>Następne kroki
 Dowiedz się więcej na temat obowiązków dla administratorów:
