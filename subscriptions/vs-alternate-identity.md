@@ -2,17 +2,17 @@
 title: Tożsamości dla subskrybentów programu Visual Studio
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 86f2856c-8adf-4085-9962-f4136679e5ed
-ms.date: 10/21/2019
+ms.date: 02/02/2021
 ms.topic: conceptual
 description: Jak dodać alternatywną tożsamość dla subskrypcji programu Visual Studio, aby korzystać z usługi Azure DevOps i platformy Azure
-ms.openlocfilehash: d7820707758cd06209a412b2a860de81cb08c054
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: 200f299ba4e487e40572e54f1066ed6ac079e7d1
+ms.sourcegitcommit: b0ecf9bb0d887bc0a900578089bf41ab8dddbb78
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353182"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99488668"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Tożsamości dla subskrybentów programu Visual Studio
 Gdy aktywujesz swoją subskrypcję programu Visual Studio, połączymy tożsamość (lub logowanie), która została użyta podczas aktywacji z subskrypcją programu Visual Studio. W ten sposób możemy rozpoznać użytkownika w [portalu subskrybentów programu Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), na platformie Azure DevOps i na platformie Azure.
@@ -25,9 +25,10 @@ Na platformie Azure sprawdzimy swój status subskrypcji programu Visual Studio, 
 W [portalu subskrybenta programu Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs)można dodać **alternatywną tożsamość** — oprócz tożsamości użytej podczas aktywacji. Pozwalamy dodać alternatywną tożsamość, jeśli użyto konto Microsoft, aby aktywować subskrypcję. W ten sposób można także dodać konto służbowe (używane podczas logowania do programu Visual Studio, Microsoft 365 lub sieci firmowej), co umożliwia dostęp do usługi Azure DevOps przy użyciu konta osobistego i konta służbowego.
 
 ## <a name="add-an-alternate-account-to-your-subscription"></a>Dodawanie alternatywnego konta do subskrypcji
-Dodanie alternatywnego konta do subskrypcji programu Visual Studio pozwala uzyskać dostęp do korzyści z subskrypcji, takich jak usługa Azure DevOps i platforma Azure, przy użyciu innej tożsamości niż ta, do której jest przypisana subskrypcja. W przeszłości ta funkcja była dostępna tylko wtedy, gdy subskrypcja programu Visual Studio (VS) została przypisana do konta Microsoft (MSA). Ta funkcja została rozszerzona o konta służbowe w Azure Active Directory (Azure AD).
+Dodanie alternatywnego konta do subskrypcji programu Visual Studio umożliwia dostęp do niektórych korzyści z subskrypcji, takich jak Azure DevOps i Azure, lub logowanie się do środowiska IDE programu Visual Studio z inną tożsamością niż ta, do której jest przypisana subskrypcja. W przeszłości ta funkcja była dostępna tylko wtedy, gdy subskrypcja programu Visual Studio (VS) została przypisana do konta Microsoft (MSA). Ta funkcja została rozszerzona o konta służbowe w Azure Active Directory (Azure AD).
 
-Nie powoduje to udostępnienia kopii subskrypcji dla innego konta. Umożliwia to tylko uzyskanie dostępu do dwóch korzyści za pomocą alternatywnego konta.
+> [!NOTE]
+> Alternatywny identyfikator pozwala na użycie tego drugiego identyfikatora w celu aktywowania kredytów na korzystanie z platformy Azure i usługi Azure DevOps oraz do logowania się do środowiska IDE programu Visual Studio.  Nie można go użyć do zalogowania się do portalu subskrypcji pod adresem <https://my.visualstudio.com> .  Nadal musisz użyć identyfikatora, do którego przypisano subskrypcję, aby zalogować się do portalu. 
 
 W przypadku wszystkich subskrypcji możesz dodać "konto służbowe", aby można było używać tego konta z korzyściami, które wymagają logowania (VS IDE, Azure DevOps i Azure).
 
@@ -59,7 +60,7 @@ Jeśli usługa Azure DevOps nadal nie rozpoznaje Twojej subskrypcji, skontaktuj 
 
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Azure DevOps documentation (Dokumentacja usługi Azure DevOps)](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)
 - [Dokumentacja Microsoft 365](/microsoft-365/)
 
@@ -67,4 +68,4 @@ Jeśli usługa Azure DevOps nadal nie rozpoznaje Twojej subskrypcji, skontaktuj 
 Aby uzyskać więcej informacji na temat korzystania z platformy Azure, platformy Azure DevOps lub środowiska IDE programu Visual Studio, zapoznaj się z następującymi zasobami:
 - [Azure](vs-azure.md)
 - [Azure DevOps](vs-azure-devops.md)
-- [Program Visual Studio](vs-ide-benefit.md)
+- [Visual Studio](vs-ide-benefit.md)
