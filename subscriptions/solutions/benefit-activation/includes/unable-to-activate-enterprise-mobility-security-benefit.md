@@ -1,5 +1,5 @@
 ---
-title: Nie mogę aktywować korzyści z usługi Enterprise Mobility + Security (EMS).
+title: Nie można aktywować korzyści z usługi Enterprise Mobility + Security (EMS)
 description: Nie mogę aktywować korzyści z usługi Enterprise Mobility + Security (EMS) zawartych w ramach subskrypcji programu Visual Studio?
 ms.topic: include
 ms.assetid: 104e6ef4-5bb1-4f26-af7c-a6925e3665c7
@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, ems
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: 065527c86384e6eef46149ecc7d9606268bc1695
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: 1d9d2aa2d8b86fc6a2481955d8d06967637415ab
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98147609"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541125"
 ---
 ## <a name="im-unable-to-activate-my-enterprise-mobility--security-ems-benefit"></a>Nie mogę aktywować korzyści z usługi Enterprise Mobility + Security (EMS).
 
@@ -42,4 +42,4 @@ Po usunięciu subskrypcji pakietu Office 365 E3 i utworzeniu zastępczej subskry
 
 ## <a name="more-information-about-office-365-e3-subscriptions"></a>Więcej informacji na temat subskrypcji pakietu Office 365 E3
 
-[Przeczytaj więcej](https://docs.microsoft.com/visualstudio/subscriptions/vs-m365) informacji na temat uprawnień, sposobu migracji z pakietu Office 365 E3 do Microsoft 365 i często zadawanych pytań.  
+Przeczytaj więcej [informacji na temat uprawnień, sposobu migracji z pakietu Office 365 E3 do Microsoft 365 i często zadawanych pytań](https://docs.microsoft.com/visualstudio/subscriptions/vs-m365).  

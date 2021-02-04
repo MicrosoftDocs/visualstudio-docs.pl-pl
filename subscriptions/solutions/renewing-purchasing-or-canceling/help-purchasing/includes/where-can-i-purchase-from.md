@@ -10,12 +10,12 @@ user.type: subscriber
 tags: purchasing
 subscription.type: vl, cloud, retail, partner
 sap.id: c374762c-640b-8b2c-d049-bda9545e903c
-ms.openlocfilehash: e79c8a818b4e2bf787225342c9ad2c344cfbc74c
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: be2c22f6ea8bb9b6b98823b8adbe763137fdec1a
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96916342"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541172"
 ---
 ## <a name="where-to-purchase-subscriptions"></a>Gdzie można kupić subskrypcje 
 
@@ -42,8 +42,8 @@ Miesięczne subskrypcje umożliwiają wypożyczanie programu Visual Studio i us�
 * [Visual Studio Professional — Subskrypcja miesięczna](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-monthly) 
 * [Visual Studio Enterprise — Subskrypcja miesięczna](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-monthly) 
 
-[Przeczytaj więcej](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-billing-faq) na temat comiesięcznych rozliczeń subskrypcji programu Visual Studio. 
+Przeczytaj więcej na temat [miesięcznych rozliczeń subskrypcji programu Visual Studio](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-billing-faq). 
 
 ## <a name="volume-licensing"></a>Licencjonowanie zbiorowe 
 
-Subskrypcje licencjonowania zbiorowego są dostępne, gdy organizacja musi zakupić dużą liczbę subskrypcji. [Przeczytaj więcej](https://www.microsoft.com/licensing/how-to-buy/how-to-buy) na temat kupowania w ramach licencjonowania zbiorowego.
+Subskrypcje licencjonowania zbiorowego są dostępne, gdy organizacja musi zakupić dużą liczbę subskrypcji. Przeczytaj więcej na temat [kupowania w ramach licencjonowania zbiorowego](https://www.microsoft.com/licensing/how-to-buy/how-to-buy).

@@ -1,5 +1,5 @@
 ---
-title: Nie widzę miesięcznego kredytu na korzystanie z platformy Azure w Azure Portal.
+title: Nie można zobaczyć miesięcznych środków na korzystanie z platformy Azure w Azure Portal
 description: Nie widzę miesięcznego kredytu na korzystanie z platformy Azure po zalogowaniu się do Azure Portal
 ms.topic: include
 ms.assetid: 48420a4c-11b4-4bbd-a509-2c939d24e81a
@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, azure
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: 48f52f1381bb890942e6f5ed3f1772c0735b1fb8
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: 5a5322563be438c734b03c9d834ffd545cb6da43
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98147529"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541286"
 ---
 ## <a name="im-unable-to-see-my-azure-monthly-credit-in-the-azure-portal"></a>Nie widzę miesięcznego kredytu na korzystanie z platformy Azure w Azure Portal.
 
@@ -46,6 +46,6 @@ Na subskrypcje platformy Azure utworzone w ramach korzyści z subskrypcji progra
 
 ## <a name="more-information-about-azure-monthly-credits"></a>Więcej informacji na temat miesięcznych środków na korzystanie z platformy Azure
 
-[Przeczytaj więcej](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure) informacji na temat aktywacji, kwalifikowania i innych zasobów pomocy technicznej.  
+Przeczytaj więcej [informacji na temat aktywacji, kwalifikowania i innych zasobów pomocy technicznej](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure).  
 
-[Dowiedz się, jak](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/#azure-credits) używać środków na korzystanie z platformy Azure, które są zawarte w subskrypcji programu Visual Studio. 
+[Dowiedz się, jak używać środków na korzystanie z platformy Azure](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/#azure-credits) , które są zawarte w subskrypcji programu Visual Studio. 
