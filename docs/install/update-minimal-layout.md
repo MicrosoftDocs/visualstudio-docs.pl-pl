@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2b9c86c17b89258145613e867ba6a91b2219fe0d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 27a9c0de35bb6f9944015391c5f933bef28f4b9d
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88168752"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99533568"
 ---
 # <a name="update-visual-studio-using-a-minimal-offline-layout"></a>Aktualizowanie programu Visual Studio przy użyciu minimalnego układu offline
 
@@ -92,6 +92,8 @@ Przed utworzeniem układu można sprawdzić łączny rozmiar pobieranych plików
 
 Zapoznaj się z kilkoma przykładami podglądu, generowania i ponownego generowania minimalnego układu:
 
+::: moniker range="vs-2019"
+
 - Poniżej przedstawiono przykład sposobu wyświetlania podglądu układu dla Visual Studio Enterprise wersji 16.4.0 do 16.4.4 tylko w języku angielskim.
 
     ```cmd
@@ -123,6 +125,44 @@ Kilka innych przykładów przy użyciu polecenia **Generuj** :
     ```cmd
     MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 16.4.0 --targetVersion 16.4.4 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US fr-FR
     ```
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+- Poniżej przedstawiono przykład sposobu wyświetlania podglądu układu dla Visual Studio Enterprise wersji 15.0.0 do 15.9.31 tylko w języku angielskim.
+
+    ```cmd
+    MinimalLayout.exe preview --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --languages en-US
+    ```
+
+- Poniżej przedstawiono sposób generowania tego samego układu przy użyciu jednego obciążenia.
+
+    ```cmd
+    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US
+    ```
+
+- A oto jak ponownie wygenerować minimalny układ offline przy użyciu istniejącego pliku odpowiedzi. 
+
+    ```cmd
+    MinimalLayout.exe regenerate -filepath c:\VSLayout\MinimalLayout.json
+    ```
+
+Kilka innych przykładów przy użyciu polecenia **Generuj** :
+
+- Poniżej przedstawiono sposób dodawania dodatkowego obciążenia i uwzględniania tylko zalecanych pakietów. 
+
+    ```cmd
+    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Professional --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop Microsoft.VisualStudio.Workload.NetWeb;includeRecommended --languages en-US
+    ```
+
+- Na koniec dowiesz się, jak uwzględnić wiele języków w minimalnym układzie. 
+
+    ```cmd
+    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US fr-FR
+    ```
+
+::: moniker-end
 
 ### <a name="how-to-maintain-a-minimal-layout"></a>Jak zachować minimalny układ
 
