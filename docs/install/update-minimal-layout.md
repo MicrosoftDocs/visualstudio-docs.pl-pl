@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 27a9c0de35bb6f9944015391c5f933bef28f4b9d
-ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
+ms.openlocfilehash: bd2e8c94bbfc24b731a40b2d4d4c298a528c622d
+ms.sourcegitcommit: 55bc9df751a21656de8cc5b6dbd8a2a1915ec690
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99533568"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99572957"
 ---
 # <a name="update-visual-studio-using-a-minimal-offline-layout"></a>Aktualizowanie programu Visual Studio przy użyciu minimalnego układu offline
 
@@ -67,6 +67,8 @@ To narzędzie tworzy układy aktualizacji dla programu Visual Studio 2017 (15,9)
 * **Weryfikuj**: Użyj tego polecenia, aby określić, czy folder układu jest uszkodzony.
 * **Poprawka**: Użyj tego polecenia, aby naprawić uszkodzony folder układu, w tym zastępując wszystkie brakujące pakiety z folderu układu.
 
+::: moniker range="vs-2019"
+
 #### <a name="options"></a>Opcje 
 
 |Opcje    |Opis    |Wymagane/Opcjonalne |Przykład |
@@ -80,6 +82,26 @@ To narzędzie tworzy układy aktualizacji dla programu Visual Studio 2017 (15,9)
 |--Dodaj &lt; co najmniej jeden identyfikator obciążenia lub składnika&gt;    |Określa co najmniej jeden identyfikator obciążenia lub składnika do dodania. Dodatkowe składniki można dodać globalnie za pomocą--includeRecommended i/lub <br> –-includeOptional. Można określić wiele obciążeń lub identyfikatorów składników, rozdzielonych spacją.    |Opcjonalne    |--Add Microsoft. VisualStudio. obciążeni. ManagedDesktop Microsoft. VisualStudio. obciążeni. NetWeb Component. GitHub. VisualStudio |
 |--includeRecommended    |Zawiera zalecane składniki dla wszystkich obciążeń, które są zainstalowane, ale nie opcjonalne składniki.    |Opcjonalne    |Dla określonego obciążenia: <br> --Dodaj Microsoft. VisualStudio. obciążenia. ManagedDesktop;includeRecommended <br><br> Aby zastosować do wszystkich obciążeń:--includeRecommended |
 |--includeOptional |Obejmuje opcjonalne składniki dla wszelkich zainstalowanych obciążeń, w tym zalecane składniki.    |Opcjonalne    |Dla określonego obciążenia: <br>--Dodaj Microsoft. VisualStudio. obciążenia. ManagedDesktop;includeOptional <br><br> Aby zastosować do wszystkich obciążeń:--includeOptional |
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+#### <a name="options"></a>Opcje 
+
+|Opcje    |Opis    |Wymagane/Opcjonalne |Przykład |
+|:----------|:-----------|:------------|:--------------|
+|--targetLocation &lt; dir&gt; |Określa katalog, w którym ma zostać utworzony minimalny układ w trybie offline.       |Wymagane        |--targetLocation c:\VSLayout\ |
+|--baseVersion &lt; wersja&gt;|Minimalny układ offline zostanie wygenerowany, rozpoczynając od tej wersji.   |Wymagane|--baseVersion 15.0.0 |
+|--targetVersion &lt; wersja&gt;|Minimalny układ w trybie offline zostanie wygenerowany do tej wersji i obejmuje tę wersję.|Wymagane|--targetVersion 15.9.31|
+|--Języki    |Określa Języki, które mają zostać uwzględnione w układzie minimalnym w trybie offline. Można określić wiele wartości, rozdzielone spacjami.    |Wymagane    |— Języki en-US fr — FR |
+|-- &lt; Identyfikator ProductID&gt;    |Identyfikator produktu, z którego zostanie wygenerowany minimalny układ trybu offline. <br> <ul><li>Microsoft. VisualStudio. Product. Enterprise</li><li>Microsoft. VisualStudio. Product. Professional</li><li>Microsoft. VisualStudio. Product. BuildTools</li><li>Microsoft. VisualStudio. Product. agenta testowego</li><li>Microsoft. VisualStudio. Product. TestController</li><li>Microsoft. VisualStudio. Product. TeamExplorer</li></ul>|Wymagane|--productId Microsoft. VisualStudio. Product. Enterprise |
+|--filePath    |Ścieżka pliku MinimalLayout.jsna pliku z już utworzonego układu. Ta opcja jest używana tylko z poleceniem Regenerate.     |Wymagane do ponownego wygenerowania polecenia    |--filePath C:\VSLayout\minimalLayout.jswłączone <br><br> **Należy zauważyć, że polecenie Regenerate przyjmuje tylko--filePath jako opcję.** |
+|--Dodaj &lt; co najmniej jeden identyfikator obciążenia lub składnika&gt;    |Określa co najmniej jeden identyfikator obciążenia lub składnika do dodania. Dodatkowe składniki można dodać globalnie za pomocą--includeRecommended i/lub <br> –-includeOptional. Można określić wiele obciążeń lub identyfikatorów składników, rozdzielonych spacją.    |Opcjonalne    |--Add Microsoft. VisualStudio. obciążeni. ManagedDesktop Microsoft. VisualStudio. obciążeni. NetWeb Component. GitHub. VisualStudio |
+|--includeRecommended    |Zawiera zalecane składniki dla wszystkich obciążeń, które są zainstalowane, ale nie opcjonalne składniki.    |Opcjonalne    |Dla określonego obciążenia: <br> --Dodaj Microsoft. VisualStudio. obciążenia. ManagedDesktop;includeRecommended <br><br> Aby zastosować do wszystkich obciążeń:--includeRecommended |
+|--includeOptional |Obejmuje opcjonalne składniki dla wszelkich zainstalowanych obciążeń, w tym zalecane składniki.    |Opcjonalne    |Dla określonego obciążenia: <br>--Dodaj Microsoft. VisualStudio. obciążenia. ManagedDesktop;includeOptional <br><br> Aby zastosować do wszystkich obciążeń:--includeOptional |
+
+::: moniker-end
 
 ### <a name="generating-a-minimal-layout"></a>Generowanie minimalnego układu
 

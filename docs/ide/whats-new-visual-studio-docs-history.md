@@ -2,7 +2,7 @@
 title: 'Dokumentacja programu Visual Studio: historia nowości '
 titleSuffix: ''
 description: Historia nowości w dokumentacji programu Visual Studio
-ms.date: 01/11/2021
+ms.date: 02/01/2021
 helpviewer_keywords:
 - Visual Studio, what's new, docs
 - what's new [Visual Studio]
@@ -15,16 +15,80 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 49c8d18a35cbe4a64585efa9bc16fd8afd250404
-ms.sourcegitcommit: fdc21fc21d4a05d9ad8627b06aab7f072bfeb0a6
+ms.openlocfilehash: 899334e6ac4a952ea2d33f01d95ecfbe0a972653
+ms.sourcegitcommit: 55bc9df751a21656de8cc5b6dbd8a2a1915ec690
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98113583"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99572970"
 ---
 # <a name="history-of-whats-new-in-visual-studio-docs"></a>Historia nowości w dokumentacji programu Visual Studio
 
-Witamy w historii nowości w dokumentacji programu Visual Studio. Ten artykuł zawiera istotne zmiany w dokumentach sprzed 2020 grudnia (począwszy od lipca 2020). Aby uzyskać najnowsze informacje o nowościach, zobacz [Visual Studio docs: co nowego w](whats-new-visual-studio-docs.md)dokumentacji.
+Witamy w historii nowości w dokumentacji programu Visual Studio. Ten artykuł zawiera istotne zmiany w dokumentacji sprzed stycznia 2021 (od lipca 2020). Aby uzyskać najnowsze informacje o nowościach, zobacz [Visual Studio docs: co nowego w](whats-new-visual-studio-docs.md)dokumentacji.
+
+## <a name="december-2020"></a>Grudzień 2020 r.
+### <a name="azure"></a>Azure
+
+**Nowe artykuły**
+
+- [Dodawanie konfiguracji aplikacji platformy Azure przy użyciu usług połączonych programu Visual Studio](../azure/vs-azure-tools-connected-services-app-configuration.md) — samouczek dotyczący usługi połączonej konfiguracji aplikacji
+
+### <a name="code-quality"></a>Jakość kodu
+
+**Zaktualizowane artykuły**
+
+- [Przegląd](../code-quality/use-roslyn-analyzers.md) — Kompilowanie z wiersza polecenia za pomocą editorconfig
+- [Włącz lub zainstaluj analizatory .NET pierwszej firmy](../code-quality/install-net-analyzers.md)
+  - Dodawanie większej przejrzystości dokumentacji migracji dla FxCopAnalyzers do analizatorów
+  - Ponowne rozmieszczanie spisu treści dla analizatorów .NET
+- [Migrowanie z analizatorów FxCop do analizatorów .NET](../code-quality/migrate-from-fxcop-analyzers-to-net-analyzers.md) — więcej informacji można uzyskać w dokumentacji migracji dla FxCopAnalyzers do analizatorów
+
+### <a name="containers"></a>Kontenery
+
+**Zaktualizowane artykuły**
+
+- [Rozwiązywanie problemów z programowaniem programu Visual Studio za pomocą narzędzia](../containers/troubleshooting-docker-errors.md) Docker
+
+### <a name="debugger"></a>Debuger
+
+**Zaktualizowane artykuły**
+
+- [Często zadawane pytania — Znajdź wymaganą funkcję debugowania w programie Visual Studio](../debugger/find-your-debugging-task.md) — odnajdywanie w celu znalezienia zadania debugowania i omówienia tematów
+
+### <a name="get-started"></a>Rozpoczęcie pracy
+
+**Zaktualizowane artykuły**
+
+- [Samouczek: tworzenie prostej aplikacji konsolowej w języku c# w programie Visual Studio](../get-started/csharp/tutorial-console.md) — samouczek konsoli języka C#: część 2 dotyczy tylko programu vs 2019
+
+### <a name="ide"></a>IDE
+
+**Zaktualizowane artykuły**
+
+- [Rozwiązania i projekty w programie Visual Studio](./solutions-and-projects-in-visual-studio.md) — aktualizacje rozwiązań & projektów
+- [Tworzenie nowego projektu w programie Visual Studio](./create-new-project.md)
+  - Uściślij tekst alternatywny dla zrzutów ekranu i diagramów
+  - więcej aktualizacji rozwiązań & projektów — tematy
+- [Zasoby do rozwiązywania problemów z błędami IDE](./reference/resources-for-troubleshooting-integrated-development-environment-errors.md) — Popraw nieaktualne sekcje zasobów forum
+- [Współpraca z rozwiązaniami i projektami](./creating-solutions-and-projects.md) — więcej aktualizacji rozwiązań & projektów
+- [Jak zgłosić problem z programem Visual Studio lub Instalator programu Visual Studio](./how-to-report-a-problem-with-visual-studio.md)
+  - Zaktualizowany zrzut ekranu
+  - Zmiany społeczności deweloperów
+- [Porady i wskazówki dotyczące wydajności programu Visual Studio](./visual-studio-performance-tips-and-tricks.md) — aktualizowanie sekcji Disable narzędzia diagnostyczne
+- [Wprowadzenie do projektów i rozwiązań](../get-started/tutorial-projects-solutions.md)
+  - aktualizacje rozwiązań & projektów — tematy
+  - Aktualizacja tutorial-projects-solutions.md
+  - Brak opcji w menu
+
+### <a name="test"></a>Test
+
+**Zaktualizowane artykuły**
+
+- [Wprowadzenie do testów jednostkowych](../test/getting-started-with-unit-testing.md) i innych ulepszeń narzędzi testowych
+- [Najpierw zapoznaj się z narzędziami do testowania w programie Visual Studio](../test/improve-code-quality.md) — działania odnajdywania i inne ulepszenia narzędzi testowych
+- [Narzędzia do testowania w programie Visual Studio # są wymagane; Tytuł strony wyświetlany w wynikach wyszukiwania. Uwzględnij markę. < znaków 60.](../test/index.yml) -Odnajdywanie i inne ulepszenia narzędzi testowych
+- [Uruchamianie testów jednostkowych za pomocą Eksploratora testów](../test/run-unit-tests-with-test-explorer.md) — Dodawanie dynamicznego pliku XML listy odtwarzania dla środowisk różnicowych
+
 ## <a name="november-2020"></a>Listopad 2020 r.
 ### <a name="code-quality"></a>Jakość kodu
 
@@ -62,7 +126,7 @@ Witamy w historii nowości w dokumentacji programu Visual Studio. Ten artykuł z
 - [Dołączanie do uruchomionych procesów za pomocą debugera programu Visual Studio](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md) — załączanie do dokumentów przetwarzanych w przypadku scenariuszy z systemem Linux
 - [Debugowanie programu .NET Core w systemie Linux przy użyciu protokołu SSH przez](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md) dołączenie do procesu
 
-### <a name="deployment"></a>Wdrażanie
+### <a name="deployment"></a>Wdrożenie
 
 **Nowe artykuły**
 
@@ -117,7 +181,7 @@ Witamy w historii nowości w dokumentacji programu Visual Studio. Ten artykuł z
   - Usunięto nieprawidłowy znak w języku C++. editorconfig — przykład
 - [Konwertuj `typeof` na `nameof` ](./reference/convert-typeof-to-nameof.md) dodane funkcje produktywności dotnet
 
-### <a name="install"></a>Zainstaluj
+### <a name="install"></a>Instalowanie
 
 **Zaktualizowane artykuły**
 
@@ -213,7 +277,7 @@ Witamy w historii nowości w dokumentacji programu Visual Studio. Ten artykuł z
 
 - [Użyj dokumentu wyszukiwania programu Visual Studio Search](./visual-studio-search.md) — vs
 
-### <a name="install"></a>Zainstaluj
+### <a name="install"></a>Instalowanie
 
 **Zaktualizowane artykuły**
 
@@ -279,7 +343,7 @@ Witamy w historii nowości w dokumentacji programu Visual Studio. Ten artykuł z
 - [Korzystanie z programu Bridge do Kubernetes](../containers/bridge-to-kubernetes.md) — proces lokalny z oznaczeniem Kubernetes do mostka do Kubernetes
 - [Jak działa mostek Kubernetes](../containers/overview-bridge-to-kubernetes.md) — proces lokalny z oznaczeniem Kubernetes do mostka do Kubernetes
 
-### <a name="deployment"></a>Wdrażanie
+### <a name="deployment"></a>Wdrożenie
 
 **Zaktualizowane artykuły**
 
@@ -302,7 +366,7 @@ Witamy w historii nowości w dokumentacji programu Visual Studio. Ten artykuł z
 - [Ustawienia konwencji kodowania .NET dla EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options) — zaktualizowane EditorConfig
 - [Konwencje językowe](/dotnet/fundamentals/code-analysis/style-rules/language-rules) — brakujące przykłady
 
-### <a name="install"></a>Zainstaluj
+### <a name="install"></a>Instalowanie
 
 **Nowe artykuły**
 
@@ -372,7 +436,7 @@ Witamy w historii nowości w dokumentacji programu Visual Studio. Ten artykuł z
 - [Wdrażanie kontenera ASP.NET w rejestrze kontenerów za pomocą programu Visual Studio](../containers/hosting-web-apps-in-docker.md) — aktualizacje narzędzi do kontenerów dla programu visual Studio 16,7 — interfejs użytkownika publikacji
 - [Wprowadzenie do narzędzi Visual Studio Kubernetes Tools](../containers/bridge-to-kubernetes.md) — samouczek Kubernetes: Dodawanie kroków do usunięcia
 
-### <a name="deployment"></a>Wdrażanie
+### <a name="deployment"></a>Wdrożenie
 
 **Nowe artykuły**
 
@@ -470,7 +534,7 @@ Witamy w historii nowości w dokumentacji programu Visual Studio. Ten artykuł z
 - [Wytyczne społeczności deweloperów](./developer-community-guidelines.md) — dodano wskazówki dotyczące DevCom
 - [Uzupełnianie IntelliSense dla nieimportowanych typów i metod rozszerzających](./reference/intellisense-completion-unimported-types-extension-methods.md)
 
-### <a name="install"></a>Zainstaluj
+### <a name="install"></a>Instalowanie
 
 **Nowe artykuły**
 

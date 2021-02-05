@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: bf4db1c01fc79d32f7e498c265b74dec34f67e48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6cf29d16432b677c6e83ba4cbaedb39f0a8d1ed2
+ms.sourcegitcommit: 55bc9df751a21656de8cc5b6dbd8a2a1915ec690
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287249"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99572996"
 ---
 # <a name="how-to-use-google-test-for-c-in-visual-studio"></a>Jak używać Google Test dla języka C++ w programie Visual Studio
 
@@ -25,7 +25,7 @@ W programie Visual Studio 2017 i nowszych Google Test jest zintegrowana z progra
 
 ## <a name="add-a-google-test-project-in-visual-studio-2019"></a>Dodawanie projektu Google Test w programie Visual Studio 2019
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł rozwiązanie i wybierz polecenie **Dodaj** > **Nowy projekt**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł rozwiązanie i wybierz polecenie **Dodaj** > **Nowy projekt**.
 2. Ustaw **Język** **C++** i wpisz **test** w polu wyszukiwania. Z listy wyników wybierz pozycję **projekt Google test**.
 3. Nadaj projektowi testowemu nazwę i kliknij przycisk **OK**.
 
@@ -37,7 +37,7 @@ W programie Visual Studio 2017 i nowszych Google Test jest zintegrowana z progra
 
 ## <a name="add-a-google-test-project-in-visual-studio-2017"></a>Dodawanie projektu Google Test w programie Visual Studio 2017
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł rozwiązanie i wybierz polecenie **Dodaj** > **Nowy projekt**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł rozwiązanie i wybierz polecenie **Dodaj** > **Nowy projekt**.
 2. W lewym okienku wybierz **Visual C++** > **test** , a następnie wybierz **Google test projekt** w środkowym okienku.
 3. Nadaj projektowi testowemu nazwę i kliknij przycisk **OK**.
 
@@ -63,9 +63,9 @@ W pliku test *. cpp* Dodaj wszelkie potrzebne dyrektywy, `#include` Aby zapewni�
 
 ![Dodaj dyrektywy #include](media/cpp-gtest-includes.png)
 
-## <a name="write-and-run-tests"></a>Zapisz i uruchom testy
+## <a name="write-and-run-tests"></a>Pisanie i uruchamianie testów
 
-Teraz możesz przystąpić do pisania i uruchamiania testów Google. Zobacz Podręcznik [Google test](https://github.com/google/googletest/blob/master/googletest/docs/primer.md) , aby uzyskać informacje na temat makr testowych. Zobacz [Uruchamianie testów jednostkowych za pomocą Eksploratora testów](run-unit-tests-with-test-explorer.md) , aby uzyskać informacje na temat odnajdywania, uruchamiania i grupowania testów przy użyciu programu **Test Explorer**.
+Teraz możesz przystąpić do pisania i uruchamiania testów Google. Zobacz Podręcznik [Google test](https://github.com/google/googletest/blob/master/docs/primer.md) , aby uzyskać informacje na temat makr testowych. Zobacz [Uruchamianie testów jednostkowych za pomocą Eksploratora testów](run-unit-tests-with-test-explorer.md) , aby uzyskać informacje na temat odnajdywania, uruchamiania i grupowania testów przy użyciu programu **Test Explorer**.
 
 ## <a name="see-also"></a>Zobacz też
 

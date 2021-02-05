@@ -17,18 +17,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 549e78309ef5fc5e9baf4237f9eca8c7484bc198
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 0f861fd9e5c10946c2bfee0235632c005822cbf1
+ms.sourcegitcommit: 55bc9df751a21656de8cc5b6dbd8a2a1915ec690
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046166"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99572944"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>Dokumentacja schematu pliku projektu MSBuild
 
 Zawiera tabelę zawierającą wszystkie elementy schematu XML programu MSBuild z ich dostępnymi atrybutami i elementami podrzędnymi.
 
- MSBuild używa plików projektu, aby poinstruować aparat kompilacji, co należy skompilować i jak go skompilować. Pliki projektów programu MSBuild są plikami XML, które są zgodne ze schematem XML programu MSBuild. Ta sekcja dokumentuje plik definicji schematu XML ( *XSD* ) dla programu MSBuild.
+ MSBuild używa plików projektu, aby poinstruować aparat kompilacji, co należy skompilować i jak go skompilować. Pliki projektów programu MSBuild są plikami XML, które są zgodne ze schematem XML programu MSBuild. Ta sekcja dokumentuje plik definicji schematu XML (*XSD*) dla programu MSBuild.
 
 W programie Visual Studio 2017 i nowszych nie jest wymagany link do schematu w pliku projektu programu MSBuild. Jeśli jest obecny, powinna być ` http://schemas.microsoft.com/developer/msbuild/2003` bez względu na wersję programu Visual Studio.
 
@@ -50,7 +50,7 @@ W programie Visual Studio 2017 i nowszych nie jest wymagany link do schematu w p
 |[Output — element (MSBuild)](../msbuild/output-element-msbuild.md)|--|Warunek<br /><br /> Nazwa_produktu<br /><br /> PropertyName<br /><br /> Parametr zadania|
 |[Parameter, element](../msbuild/parameter-element.md)|--|Dane wyjściowe<br /><br /> ParameterType<br /><br /> Wymagane|
 |[ParameterGroup, element](../msbuild/parametergroup-element.md)|*Parametr*|--|
-|[Project — element (MSBuild)](../msbuild/project-element-msbuild.md)|Wybierz ikonę<br /><br /> Importuj<br /><br /> ItemGroup<br /><br /> ProjectExtensions —<br /><br /> PropertyGroup<br /><br /> Cel<br /><br /> UsingTask|DefaultTargets —<br /><br /> InitialTargets<br /><br /> ToolsVersion<br /><br /> TreatAsLocalProperty<br /><br /> 'xmlns|
+|[Project — element (MSBuild)](../msbuild/project-element-msbuild.md)|Wybierz ikonę<br /><br /> Importuj<br /><br /> ItemGroup<br /><br /> ProjectExtensions —<br /><br /> PropertyGroup<br /><br /> Cel<br /><br /> UsingTask|DefaultTargets —<br /><br /> InitialTargets<br /><br /> Zestawie<br /><br /> ToolsVersion<br /><br /> TreatAsLocalProperty<br /><br /> 'xmlns|
 |[ProjectExtensions —, element (MSBuild)](../msbuild/projectextensions-element-msbuild.md)|--|--|
 |[Property — element (MSBuild)](../msbuild/property-element-msbuild.md)|--|Warunek|
 |[Property — element (MSBuild)](../msbuild/propertygroup-element-msbuild.md)|*Właściwość*|Warunek|

@@ -14,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a8d774ace7744c90d0cf092faa2786110ed7309
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 94fcd9e1ed16b86caf65b9c7fab44ba4f93b7a7a
+ms.sourcegitcommit: 55bc9df751a21656de8cc5b6dbd8a2a1915ec690
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436428"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99572905"
 ---
 # <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>Instrukcje: kompilowanie określonych obiektów docelowych w rozwiązaniach za pomocą MSBuild.exe
 
@@ -41,9 +41,9 @@ msbuild SlnFolders.sln -target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder
 
 ## <a name="troubleshooting"></a>Rozwiązywanie problemów
 
-Aby zapoznać się z opcjami dostępnymi dla Ciebie, można to zrobić za pomocą opcji debugowania dostarczonej przez program MSBuild. Ustaw zmienną środowiskową `MSBUILDEMITSOLUTION=1` i skompiluj rozwiązanie. Spowoduje to utworzenie pliku programu MSBuild o nazwie * \<SolutionName> . sln. DBPROJ* , który pokazuje wewnętrzny widok programu MSBuild w czasie kompilacji. Możesz sprawdzić ten widok, aby określić, jakie cele są dostępne do skompilowania.
+Aby zapoznać się z opcjami dostępnymi dla Ciebie, można to zrobić za pomocą opcji debugowania dostarczonej przez program MSBuild. Ustaw zmienną środowiskową `MSBUILDEMITSOLUTION=1` i skompiluj rozwiązanie. Spowoduje to utworzenie pliku programu MSBuild o nazwie *\<SolutionName> . sln. DBPROJ* , który pokazuje wewnętrzny widok programu MSBuild w czasie kompilacji. Możesz sprawdzić ten widok, aby określić, jakie cele są dostępne do skompilowania.
 
-Nie Kompiluj z tym zestawem zmiennych środowiskowych, chyba że potrzebny jest ten widok wewnętrzny. To ustawienie może spowodować problemy podczas kompilowania projektów w rozwiązaniu.
+Nie Kompiluj z tym zestawem zmiennych środowiskowych, chyba że potrzebny jest ten widok wewnętrzny. To ustawienie może spowodować problemy podczas kompilowania projektów w rozwiązaniu. Zamiast tego Sprawdź w [dzienniku binarnym](obtaining-build-logs-with-msbuild.md#save-a-binary-log) .
 
 ## <a name="see-also"></a>Zobacz też
 
