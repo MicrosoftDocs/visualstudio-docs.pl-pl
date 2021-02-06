@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5660d67ac2c8c3bff589c34dd4303d36a3e20cff
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+ms.openlocfilehash: 5efed99b9934ed91b2194b5a38c99134d6d4b5e5
+ms.sourcegitcommit: 686aa3516594ab951d48b192fc60b102eedaf9b7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97833315"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99628035"
 ---
 # <a name="unit-test-basics"></a>Podstawowe informacje o teście jednostkowym
 
@@ -236,7 +236,7 @@ public void My_Test ()
 
 ## <a name="run-tests-in-test-explorer"></a>Uruchom testy w Eksploratorze testów
 
-Podczas kompilowania projektu testowego, testy są wyświetlane w **Eksploratorze testów**. Jeśli **Eksplorator testów** nie jest widoczny, wybierz **Testuj** w menu programu Visual Studio, wybierz pozycję **Windows**, a następnie wybierz **Eksplorator testów**.
+Podczas kompilowania projektu testowego, testy są wyświetlane w **Eksploratorze testów**. Jeśli **Eksplorator testów** nie jest widoczny, wybierz polecenie **Testuj** w menu programu Visual Studio, wybierz pozycję **Windows**, a następnie wybierz polecenie **Eksplorator testów** (lub naciśnij **klawisze CTRL**  +  **E**, **T**).
 
 ::: moniker range="vs-2017"
 ![Eksplorator testów jednostkowych](../test/media/ute_failedpassednotrunsummary.png)
@@ -260,7 +260,7 @@ Pasek narzędzi **Eksploratora testów** pomaga odkrywać, organizować i urucha
 ![Uruchom testy z paska narzędzi Eksploratora testów](../test/media/vs-2019/test-explorer-toolbar-diagram-16-2.png)
 ::: moniker-end
 
-Możesz wybrać opcję **Uruchom wszystkie** , aby uruchomić wszystkie testy, lub wybrać polecenie **Uruchom** , aby wybrać podzbiór testów do uruchomienia. Wybierz test, aby wyświetlić szczegóły tego testu w okienku Szczegóły testu. Wybierz **Otwórz test z menu dostępnego** po kliknięciu prawym przyciskiem myszy (klawiatura: **F12**), aby wyświetlić kod źródłowy wybranego testu.
+Możesz wybrać opcję **Uruchom wszystkie** , aby uruchomić wszystkie testy (lub nacisnąć **klawisze CTRL**  +  **r**, **V**) lub wybrać polecenie **Uruchom** , aby wybrać podzbiór testów do uruchomienia (**Ctrl**  +  **r**, **T**). Wybierz test, aby wyświetlić szczegóły tego testu w okienku Szczegóły testu. Wybierz **Otwórz test z menu dostępnego** po kliknięciu prawym przyciskiem myszy (klawiatura: **F12**), aby wyświetlić kod źródłowy wybranego testu.
 
 ::: moniker range="vs-2017"
 

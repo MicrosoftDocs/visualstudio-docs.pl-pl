@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31314a669815d38ed408a28e033e4943df0f75d3
-ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
+ms.openlocfilehash: 328f7540846f923fe186a76c4dcc03347f9c3214
+ms.sourcegitcommit: 686aa3516594ab951d48b192fc60b102eedaf9b7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97756659"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99628022"
 ---
 # <a name="get-started-with-unit-testing"></a>Rozpoczynanie pracy z testami jednostkowymi
 
@@ -180,13 +180,13 @@ W tej sekcji opisano sposób tworzenia projektu testów jednostkowych.
 1. Otwórz [Eksploratora testów](../test/run-unit-tests-with-test-explorer.md).
 
    ::: moniker range=">=vs-2019"
-   Aby otworzyć Eksploratora testów, wybierz **test** > **Eksplorator testów** z górnego paska menu.
+   Aby otworzyć Eksploratora testów, wybierz **test** > **Eksplorator testów** z górnego paska menu (lub naciśnij **klawisze CTRL** + **E**, **T**).
    ::: moniker-end
    ::: moniker range="vs-2017"
    Aby otworzyć Eksploratora testów, wybierz pozycję **Testuj** >  > **Eksplorator testów** systemu Windows z górnego paska menu.
    ::: moniker-end
 
-1. Uruchom testy jednostkowe, klikając pozycję **Uruchom wszystkie**.
+1. Uruchom testy jednostkowe, klikając pozycję **Uruchom wszystkie** (lub naciśnij **klawisze CTRL**  +  **R**, **V**).
 
    ![Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów](media/vs-2019/test-explorer-run-all.png)
 
@@ -274,7 +274,7 @@ Aby dodać projekt testu jednostkowego:
 
    ![Dodaj kod do pliku kodu testu jednostkowego](media/vs-2019/unit-test-method.png)
 
-6. Uruchom test z **Eksploratora testów** lub klikając prawym przyciskiem myszy kod testu i wybierając polecenie **Uruchom testy**.
+6. Uruchom test z **Eksploratora testów** lub klikając prawym przyciskiem myszy kod testu i wybierając polecenie **Uruchom testy** (lub **Ctrl**  +  **R**, **T**).
 
 ## <a name="next-steps"></a>Następne kroki
 

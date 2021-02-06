@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: ed2e7f11a6e36c797bb6c506c19b0fff11fb5ad1
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: f734435f93c60ab0b66bd258417d90541575e398
+ms.sourcegitcommit: 686aa3516594ab951d48b192fc60b102eedaf9b7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598552"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99627983"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Przewodnik: Tworzenie i uruchamianie testów jednostkowych dla kodu zarządzanego
 
@@ -138,11 +138,11 @@ Ten artykuł przeprowadzi Cię przez proces tworzenia, uruchamiania i dostosowyw
 
 6. Zmień nazwę pliku na *BankAccount.cs* , klikając prawym przyciskiem myszy i wybierając polecenie **zmień nazwę** w **Eksplorator rozwiązań**.
 
-7. W menu **Kompilacja** kliknij pozycję **Kompiluj rozwiązanie**.
+7. W menu **kompilacja** kliknij pozycję **Kompiluj rozwiązanie** (lub naciśnij **klawisze CTRL**  +  **SHIFT**  +  **B**).
 
 Masz teraz projekt z metodami, które możesz przetestować. W tym artykule testy koncentrują się na `Debit` metodzie. `Debit`Metoda jest wywoływana w przypadku wycofania pieniędzy z konta.
 
-## <a name="create-a-unit-test-project"></a>Tworzenie projektu testu jednostkowego
+## <a name="create-a-unit-test-project"></a>Tworzenie projektu testów jednostkowych
 
 1. W menu **plik** wybierz pozycję **Dodaj**  >  **Nowy projekt**.
 
@@ -187,7 +187,7 @@ Utwórz klasę testową, aby zweryfikować `BankAccount` klasę. Możesz użyć 
 
 ### <a name="rename-a-file-and-class"></a>Zmiana nazwy pliku i klasy
 
-1. Aby zmienić nazwę pliku, w **Eksplorator rozwiązań** wybierz plik *UnitTest1.cs* w projekcie BankTests. W menu rozwijanym prawym przyciskiem myszy wybierz **Zmień nazwę**, a następnie zmień nazwę pliku na *BankAccountTests.cs*.
+1. Aby zmienić nazwę pliku, w **Eksplorator rozwiązań** wybierz plik *UnitTest1.cs* w projekcie BankTests. W menu rozwijanym prawym przyciskiem myszy wybierz **Zmień nazwę** (lub naciśnij klawisz **F2**), a następnie zmień nazwę pliku na *BankAccountTests.cs*.
 
 ::: moniker range="vs-2017"
 
@@ -197,7 +197,7 @@ Utwórz klasę testową, aby zweryfikować `BankAccount` klasę. Możesz użyć 
 
 ::: moniker range=">=vs-2019"
 
-2. Aby zmienić nazwę klasy, umieść kursor w `UnitTest1` edytorze kodu, kliknij prawym przyciskiem myszy, a następnie wybierz **Zmień nazwę**. Wpisz w **BankAccountTests** , a następnie naciśnij klawisz **Enter**.
+2. Aby zmienić nazwę klasy, umieść kursor w `UnitTest1` edytorze kodu, kliknij prawym przyciskiem myszy, a następnie wybierz **Zmień nazwę** (lub naciśnij klawisz **F2**). Wpisz w **BankAccountTests** , a następnie naciśnij klawisz **Enter**.
 
 ::: moniker-end
 
@@ -289,11 +289,11 @@ Metoda testowa musi spełniać następujące wymagania:
 
 ## <a name="build-and-run-the-test"></a>Kompiluj i uruchamiaj test
 
-1. W menu **kompilacja** wybierz polecenie **Kompiluj rozwiązanie**.
+1. W menu **kompilacja** wybierz polecenie **Kompiluj rozwiązanie** (lub naciśnij **klawisze CTRL**  +  **SHIFT**  +  **B**).
 
-2. Jeśli **Eksplorator testów** nie jest otwarty, otwórz go, wybierając pozycję **Testuj**  >  **Windows**  >  **Eksplorator testów** systemu Windows z górnego paska menu.
+2. Jeśli **Eksplorator testów** nie jest otwarty, otwórz go, wybierając pozycję **Testuj**  >    >  **Eksplorator testów** systemu Windows z górnego paska menu (lub naciśnij **klawisze CTRL**  +  **E**, **T**).
 
-3. Wybierz **Uruchom wszystkie** , aby uruchomić test.
+3. Wybierz **Uruchom wszystkie** , aby uruchomić test (lub naciśnij **klawisze CTRL**  +  **R**, **V**).
 
    Podczas gdy test jest uruchomiony, pasek stanu w górnej części okna **Eksploratora testów** jest animowany. Na końcu przebiegu testu pasek zmieni kolor na zielony, jeśli wszystkie metody testowe są przekazywane lub czerwone, jeśli którykolwiek z testów zakończy się niepowodzeniem.
 
@@ -323,7 +323,7 @@ m_balance -= amount;
 
 ### <a name="rerun-the-test"></a>Uruchom ponownie test
 
-W **Eksploratorze testów** wybierz opcję **Uruchom wszystkie** , aby ponownie uruchomić test. Czerwony/zielony pasek zmieni kolor na zielony, aby wskazać, że test zakończono.
+W **Eksploratorze testów** wybierz opcję **Uruchom wszystkie** , aby ponownie uruchomić test (lub naciśnij **klawisze CTRL**  +  **R**, **V**). Czerwony/zielony pasek zmieni kolor na zielony, aby wskazać, że test zakończono.
 
 ![Eksplorator testów w programie Visual Studio 2019 pokazujący zakończony test](media/test-explorer-banktests-passed.png)
 
@@ -464,13 +464,13 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 }
 ```
 
-### <a name="conclusion"></a>Wniosek
+### <a name="conclusion"></a>Podsumowanie
 
 Ulepszenia kodu testowego doprowadziły do bardziej niezawodnych i informacyjnych metod testowych. Ale co ważniejsze, poprawiły się także kod testowy.
 
 > [!TIP]
 > W tym przewodniku zastosowano środowisko testów jednostkowych firmy Microsoft dla kodu zarządzanego. **Eksplorator testów** może również uruchamiać testy z platform testów jednostkowych innych firm, które mają karty w **Eksploratorze testów**. Aby uzyskać więcej informacji, zobacz [Instalowanie platform testów jednostkowych](../test/install-third-party-unit-test-frameworks.md)innych firm.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 Aby uzyskać informacje o sposobach uruchamiania testów z wiersza polecenia, zobacz [VSTest.Console.exe opcje wiersza polecenia](vstest-console-options.md).

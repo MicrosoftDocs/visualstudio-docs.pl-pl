@@ -29,16 +29,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fb2fde5d5629b84ccd0e136c132a200b154ea71
-ms.sourcegitcommit: dc71e9030ff35bb26916572b431d4d9e78df3d6f
+ms.openlocfilehash: 3250eff2b5691ab344e2fedde80054415ec8ffcd
+ms.sourcegitcommit: 686aa3516594ab951d48b192fc60b102eedaf9b7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98031045"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99627970"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Dołączanie do uruchomionego procesu za pomocą debugera programu Visual Studio
 
-Debuger programu Visual Studio można dołączyć do działającego procesu na komputerze lokalnym lub zdalnym. Po uruchomieniu procesu wybierz pozycję **Debuguj**  >  **Dołącz do procesu** lub naciśnij **klawisze CTRL** + **Alt** + **P** w programie Visual Studio, a następnie użyj okna dialogowego **Dołącz do procesu** , aby dołączyć debuger do procesu.
+Debuger programu Visual Studio można dołączyć do działającego procesu na komputerze lokalnym lub zdalnym. Po uruchomieniu procesu wybierz pozycję **Debuguj**  >  **Dołącz do procesu** lub naciśnij **klawisze CTRL** + **Alt** + **p** w programie Visual Studio, a następnie użyj okna dialogowego **Dołącz do procesu** , aby dołączyć debuger do procesu.
 
 **Aby przeprowadzić** debugowanie uruchomionych aplikacji na komputerach lokalnych lub zdalnych, należy przeprowadzić debugowanie wielu procesów jednocześnie, debugować aplikacje, które nie zostały utworzone w programie Visual Studio, lub debugować dowolną aplikację, której nie uruchomiono w programie Visual Studio z dołączonym debugerem. Na przykład jeśli używasz aplikacji bez debugera i wystąpi wyjątek, możesz dołączyć debuger do procesu, w którym uruchomiono aplikację, i rozpocząć debugowanie.
 
@@ -79,7 +79,7 @@ Aby szybko ponownie dołączyć do dołączonego wcześniej procesu, zobacz Pono
    1. W oknie dialogowym **Wybierz typ kodu** wybierz **Debuguj te typy kodu**.
       Jeśli wystąpi błąd podczas próby dołączenia do procesu na liście, możesz użyć okna dialogowego [Wybierz typ kodu](../debugger/select-code-type-dialog-box.md) , aby pomóc w [rozwiązaniu](#BKMK_Troubleshoot_attach_errors) problemu.
    1. Wybierz typy kodu do debugowania.
-   1. Wybierz pozycję **OK**.
+   1. Wybierz przycisk **OK**.
 
 1. Wybierz pozycję **Dołącz**.
 
@@ -149,7 +149,7 @@ Aby uzyskać pełniejsze instrukcje dotyczące debugowania aplikacji ASP.NET, kt
    1. Kliknij pozycję **Wybierz**.
    1. W oknie dialogowym **Wybierz typ kodu** wybierz **Debuguj te typy kodu**.
       Jeśli wystąpi błąd podczas próby dołączenia do procesu na liście, możesz użyć okna dialogowego [Wybierz typ kodu](../debugger/select-code-type-dialog-box.md) , aby pomóc w [rozwiązaniu](#BKMK_Troubleshoot_attach_errors) problemu.
-   1. Wybierz pozycję **OK**.
+   1. Wybierz przycisk **OK**.
 
 6. Wybierz pozycję **Dołącz**.
 
@@ -243,7 +243,7 @@ Jeśli potrzebujesz bardziej szczegółowych informacji o tym, dlaczego debuger 
 
     3. W oknie dialogowym **Wybierz typ kodu** wybierz **Debuguj te typy kodu** i typ kodu, który nie mógł zostać dołączony. Usuń zaznaczenie innych typów kodu.
 
-    4. Wybierz pozycję **OK**.
+    4. Wybierz przycisk **OK**.
 
     5. W oknie dialogowym **Dołącz do procesu** wybierz pozycję **Dołącz**.
 

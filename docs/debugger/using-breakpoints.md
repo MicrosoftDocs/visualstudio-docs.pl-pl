@@ -35,12 +35,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8487482b1d87ba87dfc3a8b1e07be1360227a2f
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 3fba148b409d8e2b5b9cbc3b629f9f7116509c74
+ms.sourcegitcommit: 686aa3516594ab951d48b192fc60b102eedaf9b7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150447"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99627996"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Używanie punktów przerwania w debugerze programu Visual Studio
 
@@ -85,7 +85,7 @@ Można kontrolować, kiedy i gdzie wykonywany jest punkt przerwania, ustawiając
 
 **Aby ustawić warunek punktu przerwania:**
 
-1. Kliknij prawym przyciskiem myszy symbol punktu przerwania i wybierz pozycję **warunki**. Lub umieść wskaźnik myszy nad symbolem punktu przerwania, wybierz ikonę **Ustawienia** , a następnie wybierz pozycję **warunki** w oknie **Ustawienia punktu przerwania** .
+1. Kliknij prawym przyciskiem myszy symbol punktu przerwania i wybierz pozycję **warunki** (lub naciśnij klawisz **Alt**  +  **F9**, **C**). Lub umieść wskaźnik myszy nad symbolem punktu przerwania, wybierz ikonę **Ustawienia** , a następnie wybierz pozycję **warunki** w oknie **Ustawienia punktu przerwania** .
 
    Możesz również ustawić warunki w oknie **punkty przerwania** , klikając prawym przyciskiem myszy punkt przerwania i wybierając pozycję **Ustawienia**, a następnie wybierając pozycję **warunki**.
 
@@ -124,7 +124,7 @@ Jeśli ustawisz warunek punktu przerwania z nieprawidłową składnią, zostanie
 
 1. Ustaw punkt przerwania w kodzie trochę miejsca po utworzeniu obiektu.
 
-2. Rozpocznij debugowanie i po wstrzymaniu wykonywania w punkcie przerwania wybierz kolejno opcje **Debuguj**  >    >  **Ustawienia lokalne** systemu Windows lub **Alt** + **4** , aby otworzyć okno zmienne **lokalne** .
+2. Rozpocznij debugowanie i kiedy wykonywanie jest wstrzymywane w punkcie przerwania, wybierz pozycję **Debuguj**  >    >  **Ustawienia lokalne** systemu Windows (lub naciśnij **klawisze CTRL**  +  **Alt**  +  **V**, **L**), aby otworzyć okno zmienne **lokalne** .
 
    Znajdź wystąpienie określonego obiektu w oknie **zmiennych lokalnych** , kliknij je prawym przyciskiem myszy, a następnie wybierz pozycję **Utwórz identyfikator obiektu**.
 
@@ -169,7 +169,7 @@ Możesz przerwać wykonywanie, gdy wywoływana jest funkcja. Jest to przydatne, 
 
 **Aby ustawić punkt przerwania funkcji:**
 
-1. Wybierz kolejno opcje **Debuguj** nowy punkt przerwania  >    >  **funkcji** lub naciśnij klawisze **Alt** + **F9**  >  **Ctrl** + **B**.
+1. Wybierz kolejno opcje **Debuguj** nowy punkt przerwania  >    >  **funkcji** lub naciśnij **klawisze CTRL**  +  **K**, **B**.
 
    Możesz również wybrać pozycję **Nowy**  >  **punkt przerwania funkcji** w oknie **punkty przerwania** .
 
@@ -197,7 +197,7 @@ Możesz przerwać wykonywanie, gdy wywoływana jest funkcja. Jest to przydatne, 
 
 1. Z listy rozwijanej **Język** wybierz język funkcji.
 
-1. Wybierz pozycję **OK**.
+1. Wybierz przycisk **OK**.
 
 ### <a name="set-a-function-breakpoint-using-a-memory-address-native-c-only"></a>Ustawianie punktu przerwania funkcji przy użyciu adresu pamięci (tylko natywne C++)
  Możesz użyć adresu obiektu, aby ustawić punkt przerwania funkcji dla metody wywoływanej przez określone wystąpienie klasy.  Na przykład, przy użyciu obiektu możliwego do adresowania typu `my_class` , można ustawić punkt przerwania funkcji dla `my_method` metody wywołującej.
@@ -206,7 +206,7 @@ Możesz przerwać wykonywanie, gdy wywoływana jest funkcja. Jest to przydatne, 
 
 2. Znajdź adres wystąpienia (na przykład `0xcccccccc` ).
 
-3. Wybierz kolejno opcje **Debuguj** nowy punkt przerwania  >    >  **funkcji** lub naciśnij klawisze **Alt** + **F9**  >  **Ctrl** + **B**.
+3. Wybierz kolejno opcje **Debuguj** nowy punkt przerwania  >    >  **funkcji** lub naciśnij **klawisze CTRL**  +  **K**, **B**.
 
 4. Dodaj następujący kod do pola **nazwa funkcji** i wybierz język **C++** .
 
@@ -243,7 +243,7 @@ Punkty przerwania danych w programie .NET Core nie będą działały dla:
 
 **Aby ustawić punkt przerwania danych:**
 
-1. W projekcie w języku C++ Rozpocznij debugowanie i poczekaj, aż zostanie osiągnięty punkt przerwania. W menu **Debuguj** wybierz pozycję **Nowy** punkt  >  **przerwania danych**
+1. W projekcie w języku C++ Rozpocznij debugowanie i poczekaj, aż zostanie osiągnięty punkt przerwania. W menu **Debuguj** wybierz pozycję **Nowy** punkt  >  **przerwania danych** punktu przerwania.
 
     Możesz również wybrać pozycję **Nowy**  >  **punkt przerwania danych** w oknie **punkty przerwania** lub kliknąć prawym przyciskiem myszy element w oknie **autostarty**, **czujka** lub **lokalne** i wybrać polecenie **Przerwij, gdy wartość zostanie zmieniona** w menu kontekstowym.
 
@@ -268,7 +268,7 @@ Punkty przerwania danych nie działają w następujących warunkach:
 
 W oknie **punkty przerwania** można wyszukiwać, sortować, filtrować, włączać/wyłączać lub usuwać punkty przerwania. Możesz również ustawić warunki i akcje lub dodać nową funkcję lub punkt przerwania danych.
 
-Aby otworzyć okno **punkty przerwania** , wybierz pozycję **Debuguj**  >    >  **punkty przerwania** systemu Windows lub naciśnij klawisze **Alt** + **F9** lub **Ctrl** + **Alt** + **B**.
+Aby otworzyć okno **punkty przerwania** , wybierz pozycję **Debuguj**  >    >  **punkty przerwania** systemu Windows lub naciśnij **klawisze CTRL** + **Alt** + **B**.
 
 ![Okno punktów przerwania](../debugger/media/breakpointswindow.png "Okno punktów przerwania")
 
@@ -314,11 +314,11 @@ Aby wizualnie śledzić punkty przerwania podczas wykonywania kodu, zobacz [meto
 
 ### <a name="set-a-breakpoint-in-the-disassembly-window"></a>Ustawianie punktu przerwania w oknie demontażu
 
-1. Aby otworzyć okno **demontaż** , należy wstrzymać podczas debugowania. Wybierz pozycję **Debuguj**  >    >  **demontaż** systemu Windows lub naciśnij klawisze **Alt** + **8**.
+1. Aby otworzyć okno **demontaż** , należy wstrzymać podczas debugowania. Wybierz pozycję **Debuguj**  >    >  **demontaż** systemu Windows lub naciśnij **klawisze CTRL** + **Alt** + **D**.
 
 2. W oknie **demontażu** kliknij na lewym marginesie instrukcji, która ma zostać przerwana. Można go również zaznaczyć i nacisnąć klawisz **F9** lub kliknąć prawym przyciskiem myszy i wybrać **punkt przerwania**  >  **Wstaw punkt przerwania**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Co to jest debugowanie?](../debugger/what-is-debugging.md)
 - [Pisanie lepszego kodu w języku C# za pomocą programu Visual Studio](../debugger/write-better-code-with-visual-studio.md)

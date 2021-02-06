@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6d451735042374f0e3c6fb2154cd54520a069fc
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 0e136339ae5f34a7e65c19cf14c9ff840c620b25
+ms.sourcegitcommit: 686aa3516594ab951d48b192fc60b102eedaf9b7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761436"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99628061"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Najpierw Spójrz na debuger programu Visual Studio
 
@@ -93,7 +93,7 @@ To polecenie wznawia wykonywanie aplikacji (i zwiększa debuger) do momentu, gdy
 
 ## <a name="run-to-cursor"></a>Uruchom do kursora
 
-Gdy edytujesz kod (zamiast wstrzymywać się w debugerze), kliknij prawym przyciskiem myszy wiersz kodu w aplikacji i wybierz polecenie **Uruchom do kursora**. To polecenie uruchamia debugowanie i ustawia tymczasowy punkt przerwania w bieżącym wierszu kodu.
+Podczas edytowania kodu (zamiast wstrzymania w debugerze) kliknij prawym przyciskiem myszy wiersz kodu w aplikacji i wybierz polecenie **Uruchom do kursora** (lub naciśnij klawisz **Ctrl** , aby **F10**). To polecenie uruchamia debugowanie i ustawia tymczasowy punkt przerwania w bieżącym wierszu kodu.
 
 ![Uruchom do kursora](../debugger/media/dbg-tour-run-to-cursor.png "Uruchom do kursora")
 
@@ -108,7 +108,7 @@ To polecenie jest przydatne, gdy edytujesz kod i chcesz szybko ustawić tymczaso
 
 ## <a name="restart-your-app-quickly"></a>Szybkie ponowne uruchamianie aplikacji
 
-Kliknij przycisk **Uruchom** ponownie ![Uruchom aplikację](../debugger/media/dbg-tour-restart.png "Uruchom ponownie aplikację") na pasku narzędzi debugowania (**Ctrl + Shift + F5**).
+Kliknij przycisk **Uruchom** ponownie ![Uruchom aplikację](../debugger/media/dbg-tour-restart.png "Uruchom ponownie aplikację") na pasku narzędzi debugowania (lub naciśnij **klawisze Ctrl + Shift + F5**).
 
 Po naciśnięciu przycisku **Uruchom ponownie** program zapisze czas w przeciwieństwie do zatrzymywania aplikacji i ponownego uruchomienia debugera. Debuger zatrzymuje się w pierwszym punkcie przerwania, który jest wywoływany przez wykonanie kodu.
 

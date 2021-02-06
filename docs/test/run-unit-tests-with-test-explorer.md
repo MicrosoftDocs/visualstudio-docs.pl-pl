@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c992a1a4fca536f219a69b9ab629f6f602b4dfb0
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 52a910bddd2f75c631f130dddee22f8b2e05510b
+ms.sourcegitcommit: 686aa3516594ab951d48b192fc60b102eedaf9b7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150512"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99628048"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów
 
@@ -34,7 +34,7 @@ Program Visual Studio zawiera struktury testów jednostkowych firmy Microsoft dl
 
 ## <a name="run-tests-in-test-explorer"></a>Uruchom testy w Eksploratorze testów
 
-Podczas kompilowania projektu testowego, testy są wyświetlane w Eksploratorze testów. Jeśli Eksplorator testów nie jest widoczny, wybierz **Testuj** w menu programu Visual Studio, wybierz pozycję **Windows**, a następnie wybierz **Eksplorator testów**.
+Podczas kompilowania projektu testowego, testy są wyświetlane w Eksploratorze testów. Jeśli Eksplorator testów nie jest widoczny, wybierz polecenie **Testuj** w menu programu Visual Studio, wybierz pozycję **Windows**, a następnie wybierz polecenie **Eksplorator testów** (lub naciśnij **klawisze CTRL**  +  **E**, **T**).
 
 ::: moniker range="vs-2017"
 ![Eksplorator testów jednostkowych](../test/media/ute_failedpassednotrunsummary.png)
@@ -64,11 +64,11 @@ Na pasku narzędzi **Eksploratora testów** można wykonywać wiele prac znajdow
 ::: moniker range="vs-2017"
 Można uruchomić wszystkie testy w rozwiązaniu, wszystkie testy w grupie lub zestaw testów, które zostały wybrane. Wykonaj jedną z następujących czynności:
 
-- Aby uruchomić wszystkie testy w rozwiązaniu, wybierz pozycję **Uruchom wszystkie**.
+- Aby uruchomić wszystkie testy w rozwiązaniu, wybierz pozycję **Uruchom wszystkie** (lub naciśnij **klawisze CTRL** + **R**, **V**).
 
 - Aby uruchomić wszystkie testy w grupie domyślnej, wybierz pozycję **Uruchom** , a następnie wybierz grupę w menu.
 
-- Wybierz pojedyncze testy, które chcesz uruchomić, otwórz menu dostępne po kliknięciu prawym przyciskiem myszy, a następnie wybierz polecenie **Uruchom wybrane testy**.
+- Wybierz pojedyncze testy, które chcesz uruchomić, otwórz menu dostępne po kliknięciu prawym przyciskiem myszy dla wybranego testu, a następnie wybierz polecenie **Uruchom wybrane testy** (lub naciśnij **klawisze CTRL** + **R**, **T**).
 
 - Jeśli pojedyncze testy nie mają żadnych zależności, które uniemożliwiają ich uruchomienie w dowolnej kolejności, należy włączyć równoległe wykonywanie testów przy użyciu ![Zrzut ekranu przedstawiający przycisk przełączania równoległego wykonywania testu na pasku narzędzi programu Visual Studio Test Explorer. Po wybraniu tego przycisku testy będą wykonywane równolegle.](../test/media/ute_parallelicon-small.png) przycisk przełączania na pasku narzędzi. Może to znacznie skrócić czas potrzebny do uruchomienia wszystkich testów.
 
@@ -77,11 +77,11 @@ Można uruchomić wszystkie testy w rozwiązaniu, wszystkie testy w grupie lub z
 ::: moniker range=">=vs-2019"
 Można uruchomić wszystkie testy w rozwiązaniu, wszystkie testy w grupie lub zestaw testów, które zostały wybrane. Wykonaj jedną z następujących czynności:
 
-- Aby uruchomić wszystkie testy w rozwiązaniu, wybierz ikonę **Uruchom wszystko** .
+- Aby uruchomić wszystkie testy w rozwiązaniu, wybierz ikonę **Uruchom wszystko** (lub naciśnij **klawisze CTRL** + **R**, **V**).
 
 - Aby uruchomić wszystkie testy w grupie domyślnej, wybierz ikonę Run ( **Uruchom** ), a następnie wybierz grupę w menu.
 
-- Wybierz pojedyncze testy, które chcesz uruchomić, otwórz menu dostępne po kliknięciu prawym przyciskiem myszy, a następnie wybierz polecenie **Uruchom wybrane testy**.
+- Wybierz pojedyncze testy, które chcesz uruchomić, otwórz menu dostępne po kliknięciu prawym przyciskiem myszy dla wybranego testu, a następnie wybierz polecenie **Uruchom wybrane testy** (lub naciśnij **klawisze CTRL** + **R**, **T**).
 
 - Jeśli pojedyncze testy nie mają żadnych zależności, które uniemożliwiają ich uruchomienie w dowolnej kolejności, Włącz równoległe wykonywanie testów w menu Ustawienia na pasku narzędzi. Może to znacznie skrócić czas potrzebny do uruchomienia wszystkich testów.
 ::: moniker-end
@@ -130,7 +130,7 @@ Jeśli test nie powiedzie się, w okienku szczegółów zostanie również wyśw
 
 ### <a name="view-the-source-code-of-a-test-method"></a>Wyświetl kod źródłowy metody testowej
 
-Aby wyświetlić kod źródłowy dla metody testowej w edytorze programu Visual Studio, wybierz test, a następnie wybierz **Otwórz test** w menu rozwijanym prawym przyciskiem myszy (klawiatura: **F12**).
+Aby wyświetlić kod źródłowy dla metody testowej w edytorze programu Visual Studio, zaznacz test, a następnie wybierz **Otwórz test** w menu rozwijanym prawym przyciskiem myszy (lub naciśnij klawisz **F12**).
 
 ## <a name="group-and-filter-the-test-list"></a>Grupowanie i filtrowanie listy testów
 
@@ -387,7 +387,7 @@ Eksplorator testów może odtworzyć dźwięk po zakończeniu przebiegu testu. I
 ![Okno dialogowe dźwięk systemu Windows 10](../test/media/default-windows-10-sound-dialog.png)
 
 ::: moniker-end
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Testowanie jednostkowe kodu](../test/unit-test-your-code.md)
 - [Debugowanie testów jednostkowych za pomocą narzędzia Eksplorator testów](../test/debug-unit-tests-with-test-explorer.md)
