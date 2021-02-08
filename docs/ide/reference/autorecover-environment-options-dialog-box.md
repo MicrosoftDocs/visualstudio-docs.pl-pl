@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 397e5e44-4bbe-4289-94d1-642b466c9111
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b578e914c6fa099528008090646372c7d9ef26b1
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: e9a90198ce4cf3dc54eedbf80bbf4ffbad634cbc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871356"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836491"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>Autoodzyskiwanie, środowisko, Opcje — okno dialogowe
 
@@ -38,10 +38,10 @@ Aby uzyskać dostęp do tego okna dialogowego, przejdź do pozycji **Narzędzia*
 
 ::: moniker range="vs-2019"
 
-Użyj tej opcji, aby dostosować częstotliwość automatycznego zapisywania pliku w edytorze. W przypadku wcześniej zapisanych plików program Visual Studio 2019 w wersji 16,2 i nowszej zapisuje kopię pliku w **_%LocalAppData%\Microsoft\VisualStudio\BackupFiles \\ [ProjectName]_* _. Jeśli plik jest nowy i jeszcze go nie zapisano, program Visual Studio automatycznie zapisze go przy użyciu losowo wygenerowanej nazwy pliku.
+Użyj tej opcji, aby dostosować częstotliwość automatycznego zapisywania pliku w edytorze. W przypadku wcześniej zapisanych plików program Visual Studio 2019 w wersji 16,2 i nowszej zapisuje kopię pliku w ***%LocalAppData%\Microsoft\VisualStudio\BackupFiles \\ [ProjectName]***. Jeśli plik jest nowy i jeszcze go nie zapisano, program Visual Studio automatycznie zapisze go przy użyciu losowo wygenerowanej nazwy pliku.
 
 > [!NOTE]
-> Jeśli używasz programu Visual Studio 2019 w wersji 16,1 lub starszej, lokalizacja pliku to _% USERPROFILE% \ Documents \ Visual Studio [wersja] \backup pliki \\ [ProjectName] *. Aby uzyskać więcej informacji, zobacz stronę [historii informacji o wersji programu Visual Studio 2019](/visualstudio/releases/2019/release-notes-history/) .
+> Jeśli używasz programu Visual Studio 2019 w wersji 16,1 lub starszej, lokalizacja pliku to *%USERPROFILE%\Documents\Visual Studio [wersja] \backup pliki \\ [ProjectName]*. Aby uzyskać więcej informacji, zobacz stronę [historii informacji o wersji programu Visual Studio 2019](/visualstudio/releases/2019/release-notes-history/) .
 
 ::: moniker-end
 
@@ -55,6 +55,6 @@ Użyj tej opcji, aby dostosować częstotliwość automatycznego zapisywania pli
 
 Użyj tej opcji, aby określić, jak długo program Visual Studio ma nadal tworzyć pliki do odzyskania.
 
-### <a name="see-also"></a>Zobacz także
+### <a name="see-also"></a>Zobacz też
 
 - [Opcje — Okno dialogowe](../../ide/reference/options-dialog-box-visual-studio.md)

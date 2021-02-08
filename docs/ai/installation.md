@@ -4,18 +4,18 @@ description: Opisuje sposób instalowania narzędzi AI Tools for Visual Studio
 keywords: AI, Visual Studio
 author: jillre
 ms.author: jillfra
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: ffa8c7634c0d97dd24ff69814ae73ad5ff12928b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cdbabcc9288a2f878b4c8cd86dbba97922f471c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800206"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841448"
 ---
 # <a name="installation"></a>Instalacja
 
@@ -34,7 +34,7 @@ Narzędzia można pobrać z [Visual Studio Marketplace](https://marketplace.visu
 2. W oknie dialogowym **rozszerzenia i aktualizacje** wybierz pozycję **online** po lewej stronie.
 3. W polu wyszukiwania w prawym górnym rogu wpisz lub wprowadź "Tools for AI".
 4. Wybierz **Visual Studio Tools for AI** z wyników.
-5. Wybierz pozycję **Pobierz**.
+5. Kliknij pozycję **Pobierz**.
 
 ## <a name="prepare-your-local-machine"></a>Przygotowywanie komputera lokalnego
 Przed rozpoczęciem szkolenia modeli uczenia głębokiego na komputerze lokalnym upewnij się, że zainstalowano odpowiednie wymagania wstępne. Obejmuje to zapewnienie, że masz najnowsze sterowniki i biblioteki dla procesora GPU NVIDIA (jeśli istnieje). Upewnij się również, że zainstalowano biblioteki Python i Python, takie jak NumPy, SciPy i odpowiednie platformy uczenia głębokiego, takie jak Microsoft Cognitive Toolkit (CNTK), TensorFlow, Caffe2, MXNet, Keras, Theano, PyTorch i łańcucha, które planujesz użyć w projekcie.

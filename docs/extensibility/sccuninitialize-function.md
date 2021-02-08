@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 17cf5337-d251-4422-bc96-93fe7d48f2ae
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4706ddf28949af4fe1bba01c32b2c64c9156d51
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e7de3572b17bf47859a64451149a269988c91e5c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700230"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836686"
 ---
 # <a name="sccuninitialize-function"></a>SccUninitialize, funkcja
 Ta funkcja czyści wszelkie alokacje lub otwiera połączenia utworzone przez poprzednie wywołanie do [SccInitialize](../extensibility/sccinitialize-function.md) w celu zamknięcia wtyczki kontroli źródła.

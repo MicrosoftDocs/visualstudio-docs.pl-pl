@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 4948c494-3d4d-4f50-b3f9-959e73f90e4d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13014d61450897897029750b012833cf93a57729
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 4eaa85eab9d9691125afce28d51c61d464e56cb2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204621"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839836"
 ---
 # <a name="important-commands-for-language-service-filters"></a>Ważne polecenia dotyczące filtrów usługi językowej
 Jeśli chcesz utworzyć w pełni proponowany filtr usługi językowej, rozważ obsługę następujących poleceń. Pełna lista identyfikatorów poleceń jest definiowana w <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> wyliczeniu dla kodu zarządzanego i pliku nagłówkowego Stdidcmd. h dla niezarządzanego [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] kodu. Plik Stdidcmd. h można znaleźć w *ścieżce instalacji zestawu SDK programu Visual Studio*\VisualStudioIntegration\Common\Inc.

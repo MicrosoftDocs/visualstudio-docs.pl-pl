@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 08a4f609-51a5-4723-b89f-99277fb18871
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 552efae54a3c8346c7a259fb36e0ed0f8084be3e
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 211393ea65f7ca31f80134c48863b0092478b3f3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037728"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836985"
 ---
 # <a name="requiredframeworkversion-element-visual-studio-templates"></a>RequiredFrameworkVersion, element (szablony Visual Studio)
 
@@ -85,7 +85,7 @@ Poniższy przykład ilustruje metadane dla standardowego [!INCLUDE[csprcs](../da
 
 W tym przykładzie minimalna wersja .NET Framework, która jest wymagana przez szablon, reprezentowana przez `RequiredFrameworkVersion` , to 3,0. Projekt utworzony przy użyciu tego szablonu może być celem .NET Framework wersji, począwszy od 3,0.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)

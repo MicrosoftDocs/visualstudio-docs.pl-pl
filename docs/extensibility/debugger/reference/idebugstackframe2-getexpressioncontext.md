@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: a2604e6a-502d-473b-868f-b11ac64c7a35
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fb1a075d04ed53fdbe2181975a56eddfcbc3b683
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f82d76bb47c22ef77ba14e0a1ad64fa0404a6585
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719740"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837515"
 ---
 # <a name="idebugstackframe2getexpressioncontext"></a>IDebugStackFrame2::GetExpressionContext
 Pobiera kontekst oceny dla oceny wyrażenia w bieżącym kontekście ramki stosu i wątku.
@@ -28,13 +28,13 @@ Pobiera kontekst oceny dla oceny wyrażenia w bieżącym kontekście ramki stosu
 ## <a name="syntax"></a>Składnia
 
 ```cpp
-HRESULT GetExpressionContext ( 
+HRESULT GetExpressionContext ( 
    IDebugExpressionContext2** ppExprCxt
 );
 ```
 
 ```csharp
-int GetExpressionContext ( 
+int GetExpressionContext ( 
    out IDebugExpressionContext2 ppExprCxt
 );
 ```

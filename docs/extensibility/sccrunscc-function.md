@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bbe7c931-b17a-4779-9cf6-59e5f9f0c172
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d012908e59be8b82e34ff68cdab1945c5bd2de8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 10c04daf8ffea8266c874dfb0fb805e551942bc9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700395"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836764"
 ---
 # <a name="sccrunscc-function"></a>SccRunScc, funkcja
 Ta funkcja wywołuje narzędzie administracyjne kontroli źródła.
@@ -68,7 +68,7 @@ podczas Tablica wybranych nazw plików.
 
  Ta funkcja jest wywoływana z liczbą i tablicą nazw plików dla aktualnie wybranych plików. Jeśli narzędzie administracyjne je obsługuje, lista plików może służyć do prewybierania plików w interfejsie administracyjnym. w przeciwnym razie lista może być ignorowana.
 
- Ta funkcja jest zazwyczaj wywoływana, gdy użytkownik wybierze **opcję \<Source Control Server> Uruchom** z **File**  ->  menu**kontroli źródła** pliku. Ta opcja menu **uruchamiania** może być zawsze wyłączona lub nawet ukryta przez ustawienie wpisu rejestru. Zobacz [jak: zainstalować wtyczkę kontroli źródła,](../extensibility/internals/how-to-install-a-source-control-plug-in.md) Aby uzyskać szczegółowe informacje. Ta funkcja jest wywoływana tylko wtedy, gdy [SccInitialize](../extensibility/sccinitialize-function.md) zwraca `SCC_CAP_RUNSCC` bit możliwości (zobacz [flagi możliwości](../extensibility/capability-flags.md) , aby uzyskać szczegółowe informacje o tej i innych bitach możliwości).
+ Ta funkcja jest zazwyczaj wywoływana, gdy użytkownik wybierze **opcję \<Source Control Server> Uruchom** z   ->  menu **kontroli źródła** pliku. Ta opcja menu **uruchamiania** może być zawsze wyłączona lub nawet ukryta przez ustawienie wpisu rejestru. Zobacz [jak: zainstalować wtyczkę kontroli źródła,](../extensibility/internals/how-to-install-a-source-control-plug-in.md) Aby uzyskać szczegółowe informacje. Ta funkcja jest wywoływana tylko wtedy, gdy [SccInitialize](../extensibility/sccinitialize-function.md) zwraca `SCC_CAP_RUNSCC` bit możliwości (zobacz [flagi możliwości](../extensibility/capability-flags.md) , aby uzyskać szczegółowe informacje o tej i innych bitach możliwości).
 
 ## <a name="see-also"></a>Zobacz też
 - [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)

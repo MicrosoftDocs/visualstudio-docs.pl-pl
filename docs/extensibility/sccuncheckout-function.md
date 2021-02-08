@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6d498b70-29c7-44b7-ae1c-7e99e488bb09
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4317133b2f215e0f9af447e5c042785561231f63
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3fdcd8cd94914763d103a6232c4f87c3ec93f216
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700244"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836673"
 ---
 # <a name="sccuncheckout-function"></a>SccUncheckout, funkcja
 Ta funkcja cofa poprzednią operację wyewidencjonowania, a tym samym przywraca zawartość wybranego pliku lub plików do stanu sprzed wyewidencjonowania. Wszystkie zmiany wprowadzone do pliku od momentu ich wyewidencjonowania zostaną utracone.

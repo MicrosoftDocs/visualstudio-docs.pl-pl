@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: aa02e647-d9f5-4905-a651-52a8df595795
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 631c9cf61e6da70b3c7554a1aac0cacc8eef0294
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: e7c0530cf91467ec6c9bb2e6937b38510059041b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480151"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836179"
 ---
 # <a name="watch-command"></a>Czujka — Polecenie
 Tworzy i otwiera określone wystąpienie okna **czujka** . Można użyć okna **czujki** do obliczenia wartości zmiennych, wyrażeń i rejestrów, aby edytować te wartości i zapisać wyniki.

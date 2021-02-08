@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 77ff1bfc-d633-4634-ba29-9afdb6d7e362
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: f8c3409c7ba62f1deb628645b624a40de4cbeaff
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 95404beb5c2be5363c9ef91e770237b453970429
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136878"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836452"
 ---
 # <a name="build-page-project-designer-c"></a>Strona kompilacji, Projektant projektu (C#)
 
@@ -40,7 +40,7 @@ Poniższe opcje pozwalają wybrać konfigurację i platformę do wyświetlenia l
 
 **Konfiguracja**
 
-Określa ustawienia konfiguracji do wyświetlenia lub zmodyfikowania. Ustawienia mogą być **aktywne (Debugowanie)** (jest to ustawienie domyślne), **debugowanie**, **wydanie**lub **wszystkie konfiguracje**.
+Określa ustawienia konfiguracji do wyświetlenia lub zmodyfikowania. Ustawienia mogą być **aktywne (Debugowanie)** (jest to ustawienie domyślne), **debugowanie**, **wydanie** lub **wszystkie konfiguracje**.
 
 **Platforma**
 
@@ -82,11 +82,11 @@ Jeśli aplikacja jest uruchamiana jako aplikacja 64-bitowa, rozmiar wskaźnika p
 
 To pole wyboru jest dostępne tylko wtedy, gdy spełnione są wszystkie następujące warunki:
 
-- Na **stronie kompilacja**na liście **docelowy platformy** jest ustawiona wartość **dowolny procesor CPU**.
+- Na **stronie kompilacja** na liście **docelowy platformy** jest ustawiona wartość **dowolny procesor CPU**.
 
-- Na **stronie aplikacja**na liście **typ wyjścia** określa, że projekt jest aplikacją.
+- Na **stronie aplikacja** na liście **typ wyjścia** określa, że projekt jest aplikacją.
 
-- Na **stronie aplikacja**lista **platform docelowych** określa .NET Framework 4,5.
+- Na **stronie aplikacja** lista **platform docelowych** określa .NET Framework 4,5.
 
 **Zezwalaj na niebezpieczny kod**
 
@@ -143,7 +143,7 @@ Wskazuje, że aplikacja zarządzana uwidacznia obiekt COM (otoka COM, która jes
 
 Określa, czy kompilator będzie używać narzędzie XML Serializer Generator (Sgen.exe) do tworzenia zestawów serializacji XML. Zestawy serializacji mogą zwiększyć wydajność uruchamiania, <xref:System.Xml.Serialization.XmlSerializer> Jeśli użyto tej klasy do serializacji typów w kodzie. Domyślnie ta opcja jest ustawiona na wartość **automatycznie**, co oznacza, że zestawy serializacji są generowane tylko wtedy, gdy używane jest <xref:System.Xml.Serialization.XmlSerializer> kodowanie typów w kodzie do formatu XML. **Wyłączone** określa, że zestawy serializacji nigdy nie są generowane, bez względu na to, czy kod używa <xref:System.Xml.Serialization.XmlSerializer> . **Na** określa, że zestawy serializacji zawsze są generowane. Zestawy serializacji mają nazwę `TypeName`.XmlSerializers.dll. Aby uzyskać więcej informacji, zobacz [narzędzie XML Serializer Generator (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).
 
-**Zaawansowane**
+**Zaawansowany**
 
 Kliknij, aby wyświetlić okno dialogowe [Zaawansowane ustawienia kompilacji (C#)](../../ide/reference/advanced-build-settings-dialog-box-csharp.md) okno dialogowe.
 

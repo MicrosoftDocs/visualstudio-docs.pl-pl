@@ -12,21 +12,21 @@ helpviewer_keywords:
 - Application page in Project Designer
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 675c3fbaaf1a3e49648befebca4927299649b057
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 986179e66335403cda85ba48d1652ac95b9f8171
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871421"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836530"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Strona aplikacji, Projektant projektu (Visual Basic)
 
 Użyj strony **aplikacji** projektanta projektu, aby określić ustawienia i właściwości aplikacji projektu.
 
-Aby uzyskać dostęp do strony **aplikacji** , wybierz węzeł projektu (nie węzeł **rozwiązania** ) w **Eksplorator rozwiązań**. Następnie wybierz **Project**  >  **Właściwości** projektu na pasku menu. Gdy zostanie wyświetlony **Projektant projektu** , wybierz kartę **aplikacja** .
+Aby uzyskać dostęp do strony **aplikacji** , wybierz węzeł projektu (nie węzeł **rozwiązania** ) w **Eksplorator rozwiązań**. Następnie wybierz   >  **Właściwości** projektu na pasku menu. Gdy zostanie wyświetlony **Projektant projektu** , wybierz kartę **aplikacja** .
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -104,7 +104,7 @@ Kliknij ten przycisk, aby wyświetlić okno [dialogowe informacje o zestawie](..
 
 ### <a name="enable-application-framework"></a>Włącz platformę aplikacji
 
-Określa, czy projekt będzie używać struktury aplikacji. Ustawienie tej opcji ma wpływ na opcje dostępne w **Startup form** / **obiekcie startowym** formularza startowego.
+Określa, czy projekt będzie używać struktury aplikacji. Ustawienie tej opcji ma wpływ na opcje dostępne w  / **obiekcie startowym** formularza startowego.
 
 Jeśli to pole wyboru jest zaznaczone, aplikacja używa standardu `Sub Main` . Zaznaczenie tego pola wyboru włącza funkcje w sekcji **Właściwości platformy aplikacji systemu Windows** , a także wymaga wybrania formularza startowego.
 

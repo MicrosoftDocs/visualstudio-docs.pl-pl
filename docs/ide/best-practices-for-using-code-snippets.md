@@ -9,15 +9,15 @@ helpviewer_keywords:
 - code snippets, security
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f54a451bea8345d06073e6f3a8ab944b3c7ea820
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: ad94fb8ea4dffcd0c3c7c10bb06046d5558baa1e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903146"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836504"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Najlepsze rozwiązania dotyczące korzystania z fragmentów kodu
 
@@ -69,7 +69,7 @@ Fragmenty kodu IntelliSense instalowane przez program Visual Studio nie są zagr
 
   - Fragment kodu może zawierać odwołania, które są dodawane w trybie dyskretnym do projektu i mogą być ładowane z dowolnego miejsca w systemie. Te odwołania mogły zostać pobrane na komputer z lokalizacji, w której pobrano fragment kodu. Fragment kodu może następnie wykonać wywołanie metody w odwołaniu, które wykonuje złośliwy kod. Aby zapewnić sobie ochronę przed takimi atakami, przejrzyj bloki Importy i odwołania pliku fragmentu kodu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Visual Basic fragmenty kodu IntelliSense](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)
 - [Zabezpieczanie aplikacji](../ide/securing-applications.md)

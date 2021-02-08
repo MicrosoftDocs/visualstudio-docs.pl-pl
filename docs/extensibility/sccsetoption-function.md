@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4b5e6666-c24c-438a-a9df-9c52f58f8175
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1adcbb47e9fce7037fe8942326e8836ade51e3eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 33ef775f33194a616d93478aecfdcceec446ebe8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700308"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836699"
 ---
 # <a name="sccsetoption-function"></a>SccSetOption, funkcja
 Ta funkcja ustawia opcje kontrolujące zachowanie wtyczki kontroli źródła.
@@ -66,7 +66,7 @@ podczas Ustawienia dla opcji.
 |`SCC_OPT_HASCANCELMODE`|`SCC_OPT_HCM_NO`<br /><br /> `SCC_OPT_HCM_YES`|Wskazuje, czy IDE obsługuje obecnie anulowanie operacji.|
 |`SCC_OPT_NAMECHANGEPFN`|Wskaźnik do funkcji wywołania zwrotnego [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md)|Ustawia wskaźnik na funkcję wywołania zwrotnego zmiany nazwy.|
 |`SCC_OPT_SCCCHECKOUTONLY`|`SCC_OPT_SCO_NO`<br /><br /> `SCC_OPT_SCO_YES`|Wskazuje, czy IDE umożliwia ręczne wyewidencjonowywanie plików (za pomocą interfejsu użytkownika kontroli źródła) lub czy muszą one być wyewidencjonowane tylko za pomocą wtyczki kontroli źródła.|
-|`SCC_OPT_SHARESUBPROJ`|Brak|Jeśli wtyczka do kontroli źródła umożliwia środowisku IDE Określanie lokalnego folderu projektu, wtyczka jest zwracana `SCC_I_SHARESUBPROJOK` .|
+|`SCC_OPT_SHARESUBPROJ`|Nie dotyczy|Jeśli wtyczka do kontroli źródła umożliwia środowisku IDE Określanie lokalnego folderu projektu, wtyczka jest zwracana `SCC_I_SHARESUBPROJOK` .|
 
 ## <a name="scc_opt_eventqueue"></a>SCC_OPT_EVENTQUEUE
  Jeśli `nOption` tak `SCC_OPT_EVENTQUEUE` , IDE wyłącza przetwarzanie w tle (lub ponowne Włączanie). Na przykład podczas kompilowania środowisko IDE może nakazać wtyczkę kontroli źródła, aby zatrzymać bezczynne przetwarzanie dowolnego rodzaju. Po kompilacji ponownie Włącz przetwarzanie w tle, aby zapewnić aktualność kolejki zdarzeń wtyczki. Odpowiadające `SCC_OPT_EVENTQUEUE` wartości `nOption` , są dostępne dwie wartości dla `dwVal` , mianowicie `SCC_OPT_EQ_ENABLE` i `SCC_OPT_EQ_DISABLE` .

@@ -4,19 +4,19 @@ description: Uruchamianie modelu tensorflow na maszynie wirtualnej uczenie głę
 keywords: Maszyna wirtualna AI, Visual Studio, uczenie głębokie
 author: jillre
 ms.author: jillfra
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: tutorial
 ms.devlang: python
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cd833a687591ba4f49e785746381f9a5d738f5e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8f6aef2d0cf8fe727036dda91256ac0330e15d37
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80638755"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841318"
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>Trenowanie modelu TensorFlow w chmurze
 
@@ -67,7 +67,7 @@ Kliknij prawym przyciskiem myszy projekt MNIST ręcznie w obszarze **Eksplorator
 
 W oknie przesyłanie:
 
-- Na liście **klastrów do użycia**wybierz maszynę zdalną (z prefiksem "RM:"), do której chcesz przesłać zadanie.
+- Na liście **klastrów do użycia** wybierz maszynę zdalną (z prefiksem "RM:"), do której chcesz przesłać zadanie.
 
 - Wprowadź **nazwę zadania**.
 

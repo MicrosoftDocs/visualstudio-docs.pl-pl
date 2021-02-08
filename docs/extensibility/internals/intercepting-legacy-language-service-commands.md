@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: eea69f03-349c-44bb-bd4f-4925c0dc3e55
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b67ffab5935b0e52ee6c403f2e38e7bbafab2d06
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: c6a759f0cef7329d14d7d1472d38f662c0206448
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205193"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839797"
 ---
 # <a name="intercepting-legacy-language-service-commands"></a>Przechwytywanie poleceń starszej wersji usługi językowej
 Za pomocą programu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] możesz mieć polecenia przechwycenia usługi językowej, które w przeciwnym razie mógłby obsłużyć widok tekstu. Jest to przydatne w przypadku zachowania specyficznego dla języka, które nie jest zarządzane przez widok tekstu. Te polecenia można przechwycić, dodając jeden lub więcej filtrów poleceń do widoku tekstu z usługi językowej.

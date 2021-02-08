@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bb44e27b-d228-463c-b2cf-cd5c24c7c1b5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1ec349e38acbdb0271ecfb0c081b4f1aadadcd9
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 5226f9a3464786f85ad9d5348226e82e070cf57e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204946"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839589"
 ---
 # <a name="legacy-language-service-overview"></a>Omówienie starszej wersji usługi językowej
 Usługa językowa zapewnia obsługę edytora, która umożliwia implementowanie niektórych [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] funkcji. Klasy usługi języka Managed Package Framework (MPF) zapewniają pełną obsługę często używanych funkcji i częściową obsługę innych funkcji.

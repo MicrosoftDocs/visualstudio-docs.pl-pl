@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a0ce4afeddebdec8519467e1f4249095ce98f6b
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 6b2cb27baaca465096a14c836b0dfc7ebc43d42e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875261"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837250"
 ---
 # <a name="registering-single-file-generators"></a>Rejestrowanie generatorów jednoplikowych
 Aby udostępnić niestandardowe narzędzie w programie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , należy je zarejestrować, aby [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] można było je utworzyć i kojarzyć z określonym typem projektu.

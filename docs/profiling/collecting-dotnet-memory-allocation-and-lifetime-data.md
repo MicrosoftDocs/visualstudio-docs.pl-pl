@@ -9,16 +9,16 @@ helpviewer_keywords:
 - Profiling Tools,.NET memory method
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: a9321ce83f65d5a7cac95d793d5f635651bef0e7
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: 00a8b7c7e92153fcbc323349f30adc458cf973fc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98533800"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839286"
 ---
 # <a name="collect-net-framework-memory-allocation-and-lifetime-data"></a>Zbierz .NET Framework alokacji pamięci i danych o okresie istnienia
 
@@ -80,7 +80,7 @@ Zadania w poniższej tabeli są opcjami w oknie dialogowym **strony właściwoś
 |Na stronie **liczniki procesora** Określ co najmniej jeden licznik wydajności procesora, który ma zostać dodany do danych profilowania.|- [Instrukcje: zbieranie danych licznika procesora CPU](../profiling/how-to-collect-cpu-counter-data.md)|
 |Na stronie **Zaawansowane** określ wszelkie dodatkowe opcje VSInstr.exe, takie jak opcje dołączania lub wykluczania określonych funkcji. Aby uzyskać więcej informacji na temat opcji VSInstr, zobacz [VSInstr](../profiling/vsinstr.md)|- [Instrukcje: Określanie dodatkowych opcji instrumentacji](../profiling/how-to-specify-additional-instrumentation-options.md)<br />- [Instrukcje: ograniczanie instrumentacji do określonych funkcji](../profiling/how-to-limit-instrumentation-to-specific-functions.md)|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md) 
  [Instrukcje: wybieranie metod zbierania](../profiling/how-to-choose-collection-methods.md) 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f4cea2e1-08dc-47ac-aba2-3b8c338e607f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: e5495bb1f531db00d43e04cce9f5f771c88cc1a7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 061e667196ce1577206ad76939e20daf3db131c0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "65679206"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840889"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Szybki Start: debugowanie za pomocą języka C# lub Visual Basic przy użyciu debugera programu Visual Studio
 
@@ -38,7 +38,7 @@ Debuger programu Visual Studio udostępnia wiele zaawansowanych funkcji ułatwia
 
     Program Visual Studio tworzy projekt.
 
-1. W *program.cs* lub *Module1. vb*Zastąp następujący kod
+1. W *program.cs* lub *Module1. vb* Zastąp następujący kod
 
     ```csharp
     class Program

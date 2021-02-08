@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 28004d9b-420c-48f7-b80e-ab1519802558
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 28aeffb629a44c296fb9a349e165c7ce88f70b0c
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: cea9fb1733e479f413368f0f4c5c9fccfc523f6b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150577"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840954"
 ---
 # <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio-c-visual-basic-c"></a>Ustaw kontrolkę na zmienne w wątkach równoległych w programie Visual Studio (C#, Visual Basic, C++)
 W okno wyrażeń kontrolnych równoległym można jednocześnie wyświetlić wartości, które są przechowywane w jednym wyrażeniu na wielu wątkach. Każdy wiersz reprezentuje wątek, który jest uruchomiony w aplikacji, ale wątek może być reprezentowany w wielu wierszach. Dokładniej mówiąc, każdy wiersz reprezentuje wywołanie funkcji, którego sygnatura funkcji dopasowuje funkcję w bieżącej klatce stosu. Elementy, które znajdują się w kolumnach, można sortować, zmienić ich kolejność, usunąć i zgrupować. Wątki można flagować, anulować flagować, zamrażać (wstrzymywać) i rozmrażać (wznawiać). W oknie **czujki równoległej** są wyświetlane następujące kolumny:
@@ -86,7 +86,7 @@ W okno wyrażeń kontrolnych równoległym można jednocześnie wyświetlić war
 
 - Wprowadź wyrażenie logiczne w polu **Filtruj według wartości logicznej** . Debuger oblicza wyrażenie dla każdego kontekstu wątku. Wyświetlane są tylko wiersze, w których jest `true` wyświetlana wartość.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Debuguj aplikacje wielowątkowe](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Instrukcje: korzystanie z okna wątków GPU](../debugger/how-to-use-the-gpu-threads-window.md)
 - [Przewodnik: debugowanie aplikacji C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

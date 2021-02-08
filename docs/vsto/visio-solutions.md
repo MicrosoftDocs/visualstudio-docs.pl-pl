@@ -16,15 +16,15 @@ helpviewer_keywords:
 - Office solutions [Office development in Visual Studio], Visio
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d5b4cbdfe6cceff279ae20518edf83b4f4ec8912
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 9d888a27a8443b6500093a70416414bec453e77e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526376"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838047"
 ---
 # <a name="visio-solutions"></a>Rozwiązania programu Visio
   Program Visual Studio zawiera szablony projektów, których można użyć do tworzenia dodatków narzędzi VSTO dla programu Microsoft Office Visio. Za pomocą dodatków VSTO można zautomatyzować program Visio, zwiększyć funkcjonalność programu Visio lub dostosować interfejs użytkownika programu Visio.

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f657f8c3-5e68-4308-9971-e81e3099ba29
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea784eae808cbab3a5991651961d3b150b641c04
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 86173253c947be5de8600e15b68a6f08504803a5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204712"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839849"
 ---
 # <a name="initialization-sequence-of-project-subtypes"></a>Sekwencja inicjowania podtypów projektów
 Środowisko tworzy projekt przez wywołanie podstawowej implementacji fabryki projektu <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> . Konstrukcja podtypu projektu jest uruchamiana, gdy środowisko ustali, że lista identyfikatorów GUID typu projektu dla rozszerzenia pliku projektu nie jest pusta. Rozszerzenie pliku projektu i identyfikator GUID projektu określają, czy projekt jest [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] typem projektu lub. Na przykład rozszerzenie. vbproj i element {F184B08F-C81C-45F6-A57F-5ABD9991F28F} identyfikują [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] projekt.

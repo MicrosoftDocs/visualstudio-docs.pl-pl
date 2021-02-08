@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 8d7ebfc6-7478-4888-b3b0-b14f296096af
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f1fde6dabb372bfa20f55335008ce91e8de2481a
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 234e6c2d0349cf610d9ba22d53ce59e3768ad64e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433586"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838012"
 ---
 # <a name="transactionscope-activity-designer"></a>TransactionScope, projektant działań
 

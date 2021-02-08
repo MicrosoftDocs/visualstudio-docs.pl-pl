@@ -13,15 +13,15 @@ helpviewer_keywords:
 - data caching [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: db22378477daffd4562a9d60c6b30bc7b96e58e2
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: f31556e64ee93a73fb09c27edd095bcd2653dfdc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847874"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836166"
 ---
 # <a name="cache-data"></a>Dane pamięci podręcznej
   Można buforować obiekty danych w dostosowaniu na poziomie dokumentu, aby można było uzyskać dostęp do danych w trybie offline lub bez otwierania Microsoft Office Word lub Microsoft Office Excel. Aby można było buforować obiekt, obiekt musi mieć typ danych spełniający określone wymagania. Wiele typowych typów danych w .NET Framework spełnia te wymagania, w tym <xref:System.String> , <xref:System.Data.DataSet> i <xref:System.Data.DataTable> .
@@ -85,7 +85,7 @@ ms.locfileid: "96847874"
 
  Jeśli dodasz obiekt z wartością **null** do pamięci podręcznej danych przy użyciu <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> atrybutu w czasie projektowania, możesz użyć <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> klasy, aby zainicjować buforowane obiekty danych przed otwarciem dokumentu. Jest to przydatne, jeśli chcesz zainicjować dane z pamięci podręcznej na serwerze bez zainstalowanego programu Word lub Excel, zanim dokument zostanie otwarty przez użytkownika końcowego. Aby uzyskać więcej informacji, zobacz [dostęp do danych w dokumentach na serwerze](../vsto/accessing-data-in-documents-on-the-server.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: dane z pamięci podręcznej do użycia w trybie offline lub na serwerze](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)
 - [Instrukcje: programowane buforowanie źródła danych w dokumencie pakietu Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)
 - [Instrukcje: buforowanie danych w dokumencie chronionym hasłem](../vsto/how-to-cache-data-in-a-password-protected-document.md)

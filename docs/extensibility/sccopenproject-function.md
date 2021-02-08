@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d609510b-660a-46d7-b93d-2406df20434d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fbf566e593bb1ddbc31c70de1570d746a14fbdcf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ebc78c73c37a5db3c1808cc3bb4b6715e85bcebe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700570"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836946"
 ---
 # <a name="sccopenproject-function"></a>SccOpenProject, funkcja
 Ta funkcja otwiera istniejący projekt kontroli źródła lub tworzy nowy.

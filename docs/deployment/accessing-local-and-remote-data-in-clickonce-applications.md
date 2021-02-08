@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: be5cbe12-6cb6-49c9-aa59-a1624e1eef3d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: da8eaa4405a83ff349fd3d7486909a9281962126
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: c8bc59fd1d47a04b2f4c6ec2be9b9adb035f11e2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383264"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837817"
 ---
 # <a name="access-local-and-remote-data-in-clickonce-applications"></a>Uzyskiwanie dostępu do danych lokalnych i zdalnych w aplikacjach ClickOnce
 Większość aplikacji zużywa lub tworzy dane. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] oferuje różne opcje odczytu i zapisu danych, zarówno lokalnie, jak i zdalnie.
@@ -39,7 +39,7 @@ Większość aplikacji zużywa lub tworzy dane. [!INCLUDE[ndptecclick](../deploy
 ### <a name="clickonce-data-directory"></a>Katalog danych ClickOnce
  Każda [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacja zainstalowana na komputerze lokalnym ma katalog danych przechowywany w folderze dokumenty i ustawienia użytkownika. Każdy plik dołączony do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji i oznaczony jako plik "Data" jest kopiowany do tego katalogu podczas instalowania aplikacji. Pliki danych mogą być dowolnego typu plików, najczęściej używanymi plikami tekstowymi, XML i bazami danych, takimi jak pliki Microsoft Access. mdb.
 
- Katalog danych jest przeznaczony dla danych zarządzanych przez aplikacje, które są danymi, które są w sposób jawny przechowywane i utrzymywane przez aplikację. Wszystkie statyczne, niezależne pliki, które nie są oznaczone jako "dane" w manifeście aplikacji, będą znajdować się w katalogu aplikacji. Ten katalog jest miejscem, w którym znajdują się pliki wykonywalne ( *. exe* ) aplikacji.
+ Katalog danych jest przeznaczony dla danych zarządzanych przez aplikacje, które są danymi, które są w sposób jawny przechowywane i utrzymywane przez aplikację. Wszystkie statyczne, niezależne pliki, które nie są oznaczone jako "dane" w manifeście aplikacji, będą znajdować się w katalogu aplikacji. Ten katalog jest miejscem, w którym znajdują się pliki wykonywalne (*. exe*) aplikacji.
 
 > [!NOTE]
 > Po [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] odinstalowaniu aplikacji jego katalog danych również jest usuwany. Nigdy nie używaj katalogu danych do przechowywania danych zarządzanych przez użytkownika końcowego, takich jak dokumenty.
@@ -62,7 +62,7 @@ Większość aplikacji zużywa lub tworzy dane. [!INCLUDE[ndptecclick](../deploy
 
  Możesz również uzyskać ścieżkę katalogu danych przy użyciu odpowiednich zmiennych w <xref:System.Windows.Forms.Application> klasie, takich jak <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A> .
 
- Manipulowanie innymi typami plików może wymagać dodatkowych uprawnień. Na przykład, jeśli chcesz użyć pliku bazy danych programu Access ( *mdb* ), aplikacja musi zapewnić pełne zaufanie, aby można było korzystać z odpowiednich \<xref:System.Data> klas.
+ Manipulowanie innymi typami plików może wymagać dodatkowych uprawnień. Na przykład, jeśli chcesz użyć pliku bazy danych programu Access (*mdb*), aplikacja musi zapewnić pełne zaufanie, aby można było korzystać z odpowiednich \<xref:System.Data> klas.
 
 #### <a name="data-directory-and-application-versions"></a>Wersje katalogu i aplikacji
  Każda wersja aplikacji ma swój własny katalog danych, który jest odizolowany od innych wersji. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] tworzy ten katalog bez względu na to, czy pliki danych są uwzględniane we wdrożeniu, aby aplikacja była lokalizacją do tworzenia nowych plików danych w czasie wykonywania. Po zainstalowaniu nowej wersji aplikacji [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Program skopiuje wszystkie istniejące pliki danych z katalogu danych poprzedniej wersji do katalogu danych nowej wersji — bez względu na to, czy zostały one uwzględnione w oryginalnym wdrożeniu, czy utworzone przez aplikację.

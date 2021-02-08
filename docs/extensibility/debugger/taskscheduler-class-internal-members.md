@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 87f1c969-0217-4464-8907-7609c1bf61d3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10528e57137f8605e7f140d4ab8d4a3399029a5f
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: d0ed72efb383e216d5998c2231a472b8d29f9ec4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996009"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837453"
 ---
 # <a name="taskscheduler-class---internal-members"></a>Klasa TaskScheduler — wewnętrzne elementy członkowskie
 W tym artykule opisano wewnętrzne elementy członkowskie <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> klasy, które ułatwiają zaimplementowanie niestandardowego debugera. Aby uzyskać ogólne informacje o tej klasie, zobacz <xref:System.Threading.Tasks.TaskScheduler> artykuł referencyjny.

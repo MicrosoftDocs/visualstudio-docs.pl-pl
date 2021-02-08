@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 03b2d507-f463-417e-bc22-bdac68eeda52
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb694389bbf6f913db084dca29f7787c6283d3ad
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 8f6010ffdf6873073eded63c75475115391a3964
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205032"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839602"
 ---
 # <a name="legacy-language-service-interfaces"></a>Interfejsy starszej wersji usługi językowej
 W przypadku każdego określonego języka programowania w danym momencie może istnieć tylko jedno wystąpienie usługi językowej. Jednak pojedyncza usługa języka może obsłużyć więcej niż jeden edytor.

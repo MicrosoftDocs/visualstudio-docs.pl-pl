@@ -4,23 +4,23 @@ description: Opisuje sposób używania instalacji powiązań do sterowania punkt
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 6474179a0714f2407ac37e724b997139206a91fb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57cb56d0d9a93d0f11e4047f6e25b64841c47e93
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89178431"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841682"
 ---
 # <a name="use-bind-mounts"></a>Używanie instalacji powiązań
 
 W poprzednim rozdziale przedstawiono informacje o **nazwanym woluminie** i użyciu go w celu utrwalenia danych w bazie danych. Nazwane woluminy są doskonałe, jeśli chcesz, aby dane były przechowywane, ponieważ nie musisz martwić się o *miejsce* przechowywania danych.
 
-W przypadku **instalacji z powiązaniem**należy kontrolować dokładne mountpoint na hoście. Można go użyć do utrwalania danych, ale jest często używany do dostarczania dodatkowych danych do kontenerów. Podczas pracy nad aplikacją można użyć instalacji wiązania w celu zainstalowania kodu źródłowego w kontenerze, aby umożliwić mu wyświetlanie zmian kodu, reagowanie i natychmiastowe wyświetlanie zmian.
+W przypadku **instalacji z powiązaniem** należy kontrolować dokładne mountpoint na hoście. Można go użyć do utrwalania danych, ale jest często używany do dostarczania dodatkowych danych do kontenerów. Podczas pracy nad aplikacją można użyć instalacji wiązania w celu zainstalowania kodu źródłowego w kontenerze, aby umożliwić mu wyświetlanie zmian kodu, reagowanie i natychmiastowe wyświetlanie zmian.
 
 W przypadku aplikacji opartych na węźle [nodemon](https://npmjs.com/package/nodemon) jest doskonałym narzędziem do śledzenia zmian plików, a następnie ponownego uruchomienia aplikacji. Istnieją równoważne narzędzia w większości innych języków i platform.
 

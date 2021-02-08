@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: c15e0ccb-e7c5-4dbb-affb-fe3d3244debe
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ffa21b619ef17be3fa649732a2b6e3bcd700dda6
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: a96b17fbb4caca92124732593da8982f07349155
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205154"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839693"
 ---
 # <a name="legacy-language-service-essentials"></a>Podstawowe informacje dotyczące starszej wersji usługi językowej
 Musisz podać usługę językową, aby zintegrować język programowania w programie Visual Studio. W tym temacie opisano funkcje dostępne w starszych usługach językowych.
@@ -32,7 +32,7 @@ Musisz podać usługę językową, aby zintegrować język programowania w progr
 
  Starsze usługi językowe zapewniają następujące funkcje:
 
-|Cechy|Opis|
+|Cecha|Opis|
 |-------------|-----------------|
 |Kolorowanie składni|Powoduje, że widok edytora wyświetla różne kolory i style czcionek dla różnych elementów języka. Takie rozróżnienie może ułatwić odczytywanie i edytowanie plików.<br /><br /> Aby uzyskać ogólne informacje, zobacz [kolorowanie składni w starszej wersji usługi językowej](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md).<br /><br /> Aby uzyskać informacje na temat tej funkcji w programie Managed Package Framework (MPF), zobacz [kolorowanie składni w starszej wersji usługi językowej](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).|
 |Uzupełnianie instrukcji|Kończy instrukcję lub słowo kluczowe, które rozpoczęło wpisywanie przez użytkownika. Uzupełnianie instrukcji ułatwia użytkownikom wprowadzanie trudnych instrukcji w łatwiejszy sposób, z mniejszą literą i mniejszą liczbą błędów.<br /><br /> Aby uzyskać ogólne informacje, zobacz [uzupełnianie instrukcji w starszej wersji usługi językowej](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md).<br /><br /> Aby uzyskać informacje na temat tej funkcji w MPF, zobacz [uzupełnianie wyrazów w starszej wersji usługi językowej](../../extensibility/internals/word-completion-in-a-legacy-language-service.md).|
@@ -44,7 +44,7 @@ Musisz podać usługę językową, aby zintegrować język programowania w progr
 
  Następujące funkcje są związane z obsługą języków programowania, ale nie są częścią usług językowych:
 
-| Cechy | Opis |
+| Cecha | Opis |
 |-----------------------| - |
 | Ocenianie wyrażeń | Obsługuje [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debuger, sprawdzając poprawność punktów przerwania i dostarczając listę wyrażeń, które mają być wyświetlane  w oknie Debugowanie.<br /><br /> Aby uzyskać więcej informacji, zobacz [Obsługa języka na potrzeby debugowania](../../extensibility/internals/language-service-support-for-debugging.md). |
 | Narzędzia do przeglądania symboli | Obsługuje **Przeglądarka obiektów**, **Widok klasy**, **przeglądarka wywołań** i **Znajdź wyniki symboli**. |

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 76ffa394-ee89-4629-aba9-1a62b72e6cc1
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7928c03e52e4a72fb354bd7202e041ec2264fcd6
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 2032a10d24f0d5cf2488f33d83d444df8d5135bc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560957"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836232"
 ---
 # <a name="visual-studio-commands"></a>Visual Studio — Polecenia
 
@@ -80,7 +80,7 @@ Następujące polecenia przyjmują argumenty lub przełączniki:
 | [Przełącz punkt przerwania](../../ide/reference/toggle-breakpoint-command.md) | Włącza lub wyłącza punkt przerwania w zależności od bieżącego stanu w bieżącej lokalizacji pliku. |
 | [Watch — polecenie](../../ide/reference/watch-command.md) | Tworzy i otwiera określone wystąpienie okna **czujka** . |
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Okno polecenia](../../ide/reference/command-window.md)
 - [Znajdź/pole polecenia](../../ide/find-command-box.md)

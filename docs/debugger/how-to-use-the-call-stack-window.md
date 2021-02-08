@@ -27,15 +27,15 @@ helpviewer_keywords:
 ms.assetid: 5154a2a1-4729-4dbb-b675-db611a72a731
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 206c79a47ec59e02206332d80d1afe935fb72bdc
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: adb56ddfa53356c00224082c2460137b3f2b3751
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150629"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841019"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>Wyświetlanie stosu wywołań i korzystanie z okna stosu wywołań w debugerze
 
@@ -139,7 +139,7 @@ Zobacz [Określanie symboli (. pdb) i plików źródłowych](../debugger/specify
 
 5. Wybierz **przycisk OK** , aby zamknąć okno dialogowe **Opcje** .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Kod mieszany i brakujące informacje w oknie stosu wywołań](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)
 - [Wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)

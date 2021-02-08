@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5d9d1d2cca8f8ffaec67c92b44e7a621d08ad673
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: e7427c0866806c705ed28a049b33024771631c0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915274"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839126"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>Przewodnik: Tworzenie niestandardowego elementu projektu akcji z szablonem elementu część 1
   Można zwiększyć system projektu programu SharePoint w programie Visual Studio, tworząc własne typy elementów projektu. W tym instruktażu utworzysz element projektu, który można dodać do projektu programu SharePoint, aby utworzyć akcję niestandardową w witrynie programu SharePoint. Akcja niestandardowa dodaje element menu do menu **Akcje witryny** w witrynie programu SharePoint.
@@ -334,7 +334,7 @@ ms.locfileid: "96915274"
 
 13. Wybierz przycisk **OK** .
 
-14. Na pasku menu wybierz kompilacja Kompiluj **Build**  >  **rozwiązanie**, a następnie upewnij się, że projekt kompiluje się bez błędów.
+14. Na pasku menu wybierz kompilacja Kompiluj   >  **rozwiązanie**, a następnie upewnij się, że projekt kompiluje się bez błędów.
 
 15. Upewnij się, że folder danych wyjściowych kompilacji dla projektu CustomActionProjectItem zawiera plik CustomActionProjectItem. VSIX.
 

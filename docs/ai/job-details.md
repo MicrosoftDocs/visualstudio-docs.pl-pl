@@ -4,24 +4,24 @@ description: Informacje o tym, że po przesłaniu zadań można wyświetlić lis
 ms.custom: SEO-VS-2020
 author: jillre
 ms.author: jillfra
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: d67ee5810c1776176e1370839f0f7f43b9d0c55e
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 13d78913e0d5d708c5e75a80611ae9cc1c2f7366
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099222"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841435"
 ---
 # <a name="view-recent-job-performance-and-details"></a>Wyświetl ostatnią wydajność i szczegóły zadania
 
 Po przesłaniu zadań można wyświetlić listę zadań, aby zobaczyć ich stan, czas trwania i inne.
 
-1. W **Eksplorator serwera**rozwiń określony kontekst obliczeniowy.
+1. W **Eksplorator serwera** rozwiń określony kontekst obliczeniowy.
 2. Kliknij dwukrotnie pozycję **Zadania**.
 3. Zostanie wyświetlona lista zadań przesłanych do tego kontekstu obliczeniowego.
 4. Wybierz określone **zadanie** na liście, aby wyświetlić szczegóły.

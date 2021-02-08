@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 96e762ca-efd0-41e7-8958-fda4897c8c7a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 195cf7a26b1615b7c56f3f0d06cfd9e0d44a4384
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 0ee94326aca31c72ed6c07342707365d16ea57bb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204673"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839875"
 ---
 # <a name="implementing-syntax-coloring"></a>Implementowanie kolorowania składni
 Gdy usługa językowa zapewnia kolorowanie składni, Analizator konwertuje wiersz tekstu na tablicę elementów z możliwością przykolorowania i zwraca typy tokenów odpowiadające tym elementom, które można przykolorować. Analizator powinien zwrócić typy tokenów, które należą do listy elementów z możliwością koloru. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] wyświetla każdy element, który można kolorować w oknie kodu zgodnie z atrybutami przypisanymi przez obiekt Koloruj do odpowiedniego typu tokenu.

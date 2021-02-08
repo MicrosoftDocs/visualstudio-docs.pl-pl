@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: dae0050a-a50a-4f35-bfbd-e538f537b20f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26387618b320ed56ce754e64698fbb1c4223f2f6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a9a0958614c8df326c20ad8030bb798447a5e62a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724324"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840161"
 ---
 # <a name="idebugportsupplierex2"></a>IDebugPortSupplierEx2
 Zapewnia obsługę dostawcy portów w celu wyboru i współpracy z serwerem podstawowym.

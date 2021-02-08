@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 999b435719113883201b7619daca9a84d095294e
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: cc268236a10ab3f6be660b0e69a82a8f656f8910
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875274"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837255"
 ---
 # <a name="registering-project-and-item-templates"></a>Rejestrowanie szablonów projektów i elementów
 Typy projektów muszą rejestrować katalogi, w których znajdują się szablony projektów i elementów projektu. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] używa informacji o rejestracji skojarzonych z typami projektów, aby określić, co ma być wyświetlane w oknach dialogowych **Dodaj nowy projekt** i **Dodaj nowy element** .

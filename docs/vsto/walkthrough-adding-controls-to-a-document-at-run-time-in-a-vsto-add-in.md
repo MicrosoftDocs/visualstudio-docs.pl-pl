@@ -14,15 +14,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], adding controls at run time
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: dbf6313f4788a0bd224d04639d3ab588a6469842
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 3cc88b5ee48241a15a66144c992936b55fb2acf3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526290"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838090"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-run-time-in-a-vsto-add-in"></a>Przewodnik: Dodawanie kontrolek do dokumentu w czasie wykonywania w dodatku narzędzi VSTO
   Możesz dodać kontrolki do dowolnego otwartego dokumentu programu Microsoft Office Word przy użyciu dodatku VSTO. W tym instruktażu przedstawiono sposób użycia wstążki, aby umożliwić użytkownikom dodawanie <xref:Microsoft.Office.Tools.Word.Controls.Button> lub <xref:Microsoft.Office.Tools.Word.RichTextContentControl> do dokumentu.
