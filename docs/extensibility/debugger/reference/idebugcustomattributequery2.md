@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 7cfa23e4-a05a-47a3-af6c-bd40c655014b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6fe3969002c64ab361de76012c432e2bb5c61b5c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 331fba87de68b3cf5e135e0b6f633874236bec38
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732487"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842410"
 ---
 # <a name="idebugcustomattributequery2"></a>IDebugCustomAttributeQuery2
 Określa istnienie atrybutu niestandardowego dla tego pola i, jeśli istnieje, zwraca informacje o atrybucie.
@@ -26,7 +26,7 @@ Określa istnienie atrybutu niestandardowego dla tego pola i, jeśli istnieje, z
 ## <a name="syntax"></a>Składnia
 
 ```
-IDebugCustomAttributeQuery2 : IDebugCustomAttributeQuery
+IDebugCustomAttributeQuery2 : IDebugCustomAttributeQuery
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji

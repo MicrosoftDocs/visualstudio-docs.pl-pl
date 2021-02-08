@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae9090604a16196c43b80140395eb3401215d665
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: dc0acd64a61acac2cb30b9251bcb4e528c08f227
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761274"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840122"
 ---
 # <a name="image-library-viewer"></a>Przeglądarka biblioteki obrazów
 Narzędzie przeglądarka obrazów programu Visual Studio może ładować i przeszukiwać manifesty obrazów, umożliwiając użytkownikowi manipulowanie nimi w taki sam sposób, jak w programie Visual Studio. Użytkownik może zmienić ustawienia tła, rozmiarów, DPI, dużego kontrastu i innych ustawień. Narzędzie wyświetla również informacje o ładowaniu dla każdego manifestu obrazu i wyświetla informacje o źródle dla każdego obrazu w manifeście obrazu. To narzędzie jest przydatne w przypadku:
@@ -72,7 +72,7 @@ Narzędzie przeglądarka obrazów programu Visual Studio może ładować i przes
 
 |**Podelementu**|**Definicja**|
 |-|-|
-|Importuj|Importuje symbole danego pliku manifestu do użycia w bieżącym manifeście.|
+|Import|Importuje symbole danego pliku manifestu do użycia w bieżącym manifeście.|
 |Guid (identyfikator GUID)|Symbol reprezentuje identyfikator GUID i musi pasować do formatowania identyfikatora GUID.|
 |ID (Identyfikator)|Symbol reprezentuje identyfikator i musi być nieujemną liczbą całkowitą.|
 |Ciąg|Symbol reprezentuje dowolną wartość ciągu.|
@@ -128,12 +128,12 @@ Narzędzie przeglądarka obrazów programu Visual Studio może ładować i przes
 
 |**Atrybut**|**Definicja**|
 |-|-|
-|Adresu|Potrzeb Identyfikator URI, który definiuje miejsce, z którego można załadować obraz. Może być jedną z następujących czynności:<br /><br /> - [Identyfikator URI pakietu](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) przy użyciu urzędu Application:///<br /><br /> -Bezwzględne odwołanie do zasobu składnika<br /><br /> -Ścieżka do pliku zawierającego zasób natywny|
-|Tło|Obowiązkowe Wskazuje, jaki rodzaj tła ma być używany.<br /><br /> Może być jedną z następujących czynności:<br /><br /> - *Jasne*: Źródło może być używane na jasnym tle.<br /><br /> - *Ciemny*: Źródło może być używane w ciemnym tle.<br /><br /> - *HighContrast*: Źródło może być używane na dowolnym tle w trybie duży kontrast.<br /><br /> - *HighContrastLight*: Źródło może być używane na jasnym tle w trybie duży kontrast.<br /><br /> -*HighContrastDark*: Źródło może być używane na ciemnym tle w trybie duży kontrast.<br /><br /> Jeśli atrybut **Background** zostanie pominięty, źródło może być używane w dowolnym tle.<br /><br /> Jeśli **tło** jest *jasne*, *ciemne*, *HighContrastLight* lub *HighContrastDark*, kolory źródła nigdy nie są odwracane. Jeśli **tło** zostanie pominięte lub ustawiona na *HighContrast*, inwersja kolorów źródła jest kontrolowana przez atrybut **AllowColorInversion** obrazu.|
+|Adresu|Potrzeb Identyfikator URI, który definiuje miejsce, z którego można załadować obraz. Może to być jedna z następujących opcji:<br /><br /> - [Identyfikator URI pakietu](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) przy użyciu urzędu Application:///<br /><br /> -Bezwzględne odwołanie do zasobu składnika<br /><br /> -Ścieżka do pliku zawierającego zasób natywny|
+|Tło|Obowiązkowe Wskazuje, jaki rodzaj tła ma być używany.<br /><br /> Może to być jedna z następujących opcji:<br /><br /> - *Jasne*: Źródło może być używane na jasnym tle.<br /><br /> - *Ciemny*: Źródło może być używane w ciemnym tle.<br /><br /> - *HighContrast*: Źródło może być używane na dowolnym tle w trybie duży kontrast.<br /><br /> - *HighContrastLight*: Źródło może być używane na jasnym tle w trybie duży kontrast.<br /><br /> -*HighContrastDark*: Źródło może być używane na ciemnym tle w trybie duży kontrast.<br /><br /> Jeśli atrybut **Background** zostanie pominięty, źródło może być używane w dowolnym tle.<br /><br /> Jeśli **tło** jest *jasne*, *ciemne*, *HighContrastLight* lub *HighContrastDark*, kolory źródła nigdy nie są odwracane. Jeśli **tło** zostanie pominięte lub ustawiona na *HighContrast*, inwersja kolorów źródła jest kontrolowana przez atrybut **AllowColorInversion** obrazu.|
 
  \<Source>Element może mieć dokładnie jeden z następujących opcjonalnych podelementów:
 
-|**Postaci**|**Atrybuty (wszystkie wymagane)**|**Definicja**|
+|**Element**|**Atrybuty (wszystkie wymagane)**|**Definicja**|
 |-|-|-|
 |\<Size>|Wartość|Źródło będzie używane dla obrazów o danym rozmiarze (w jednostkach urządzeń). Obraz będzie kwadratowy.|
 |\<SizeRange>|MinSize, brak|Źródło będzie używane dla obrazów z MinSize do rozmiaru całkowitego (w jednostkach urządzeń) włącznie. Obraz będzie kwadratowy.|

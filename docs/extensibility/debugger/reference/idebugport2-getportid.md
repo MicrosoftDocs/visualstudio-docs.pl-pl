@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 837cb924-c113-4224-aa86-3e02b33dfa70
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 97b0134b083b3f9b4697ce26bc4bd57c0b455a63
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: db16bd0f6320f8d6fdecd8592fdbdd4c30b90d15
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725417"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844817"
 ---
 # <a name="idebugport2getportid"></a>IDebugPort2::GetPortId
 Pobiera identyfikator portu.
@@ -28,13 +28,13 @@ Pobiera identyfikator portu.
 ## <a name="syntax"></a>Składnia
 
 ```cpp
-HRESULT GetPortId( 
+HRESULT GetPortId( 
    GUID* pguidPort
 );
 ```
 
 ```csharp
-int GetPortId( 
+int GetPortId( 
    out Guid pguidPort
 );
 ```

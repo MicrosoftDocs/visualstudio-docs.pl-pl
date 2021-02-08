@@ -3,17 +3,17 @@ title: Przeglądanie zasobów magazynu i zarządzanie nimi
 description: Przeglądanie zasobów magazynu i zarządzanie nimi za pomocą Eksplorator serwera
 ms.custom: SEO-VS-2020
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: ae45fafb562387720b652e0921624bc859ea5920
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 70656b71df09f5635ebfb5d4532256e8f0d3dd35
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902223"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99843855"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Przeglądanie zasobów magazynu i zarządzanie nimi za pomocą Eksploratora serwera
 
@@ -213,10 +213,10 @@ W przypadku korzystania z konstruktora kwerend można dostosować zestaw jednost
     Zostanie wyświetlone okno dialogowe **Konstruktor zapytań** . Na poniższej ilustracji przedstawiono zapytanie, które jest kompilowane w konstruktorze zapytań.
 
     ![Konstruktor zapytań](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC652231.png)
-1. Po zakończeniu tworzenia zapytania Zamknij okno dialogowe. Tekst w postaci tekstu zapytania pojawia się w polu tekstowym jako filtr Usługi danych programu WCF.
+1. Po zakończeniu tworzenia zapytania Zamknij okno dialogowe. Tekst w postaci tekstu zapytania pojawia się w polu tekstowym jako filtr WCF Data Services.
 1. Aby uruchomić zapytanie, wybierz ikonę zielonego trójkąta.
 
-Możesz również filtrować dane jednostki, które pojawiają się w Projektancie tabel, jeśli wprowadzisz ciąg filtru Usługi danych programu WCF bezpośrednio w polu tekstowym filtru. Ten rodzaj ciągu jest podobny do klauzuli SQL WHERE, ale jest wysyłany do serwera jako żądanie HTTP. Aby uzyskać informacje o sposobie konstruowania ciągów filtru, zobacz [konstruowanie ciągów filtru dla projektanta tabel](vs-azure-tools-table-designer-construct-filter-strings.md).
+Możesz również filtrować dane jednostki, które pojawiają się w Projektancie tabel, jeśli wprowadzisz ciąg filtru WCF Data Services bezpośrednio w polu tekstowym filtru. Ten rodzaj ciągu jest podobny do klauzuli SQL WHERE, ale jest wysyłany do serwera jako żądanie HTTP. Aby uzyskać informacje o sposobie konstruowania ciągów filtru, zobacz [konstruowanie ciągów filtru dla projektanta tabel](vs-azure-tools-table-designer-construct-filter-strings.md).
 
 Na poniższej ilustracji przedstawiono przykład prawidłowego ciągu filtru:
 
@@ -261,7 +261,7 @@ Istnieją dwa sposoby dodawania kont magazynu za pomocą Eksplorator serwera. Mo
 
    ![Tworzenie konta usługi Azure Storage](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC744166.png)
 
-1. Wybierz pozycję **Utwórz**.
+1. Wybierz przycisk **Utwórz**.
 
 Nowe konto magazynu zostanie wyświetlone na liście **Magazyn** w Eksplorator rozwiązań.
 

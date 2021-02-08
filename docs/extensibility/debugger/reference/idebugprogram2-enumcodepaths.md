@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: fb100c3c-9c29-4d63-bd1f-a3e531cb395f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b99651811cedbdb8ec0eca5b766e6d75651dd5d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e71085da547b87389a8d787f24580a7610fd33f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723033"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844752"
 ---
 # <a name="idebugprogram2enumcodepaths"></a>IDebugProgram2::EnumCodePaths
 Pobiera listę ścieżek kodu dla danego położenia w pliku źródłowym.
@@ -28,7 +28,7 @@ Pobiera listę ścieżek kodu dla danego położenia w pliku źródłowym.
 ## <a name="syntax"></a>Składnia
 
 ```cpp
-HRESULT EnumCodePaths( 
+HRESULT EnumCodePaths( 
    LPCOLESTR            pszHint,
    IDebugCodeContext2*  pStart,
    IDebugStackFrame2*   pFrame,
@@ -39,7 +39,7 @@ HRESULT EnumCodePaths( 
 ```
 
 ```csharp
-int EnumCodePaths( 
+int EnumCodePaths( 
    string                 pszHint,
    IDebugCodeContext2     pStart,
    IDebugStackFrame2      pFrame,

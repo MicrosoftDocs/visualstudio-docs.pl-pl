@@ -3,17 +3,17 @@ title: Migrowanie i publikowanie aplikacji sieci Web w usłudze w chmurze
 description: Dowiedz się, jak przeprowadzić migrację i publikowanie aplikacji sieci Web w usłudze w chmurze platformy Azure przy użyciu programu Visual Studio
 ms.custom: SEO-VS-2020
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: c9d689ddca7b6f1b0c02f89c7afb82392e8a58af
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 3154ffd50043ecc824ca44fcae86e54e511ab5bf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902353"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844089"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Instrukcje: Migrowanie i publikowanie aplikacji sieci Web w usłudze w chmurze platformy Azure z poziomu programu Visual Studio
 
@@ -108,14 +108,14 @@ Aplikacje, które mogą zostać zmigrowane i opublikowane w usługach w chmurze,
 
 | Grupa szablonów | Szablon projektu |
 | --- | --- |
-| Sieć Web | Aplikacja sieci Web ASP.NET (.NET Framework) |
-| Sieć Web | ASP.NET aplikacji sieci Web MVC 2 |
-| Sieć Web | Aplikacja sieci Web ASP.NET MVC 3 |
-| Sieć Web | Aplikacja sieci Web ASP.NET MVC4 |
-| Sieć Web | ASP.NET pustą aplikację sieci Web (lub lokację) |
-| Sieć Web | ASP.NETą pustą aplikację sieci Web MVC 2 |
-| Sieć Web | Aplikacja sieci Web ASP.NET dynamiczne jednostki danych |
-| Sieć Web | ASP.NET dynamiczne dane LINQ do aplikacji sieci Web SQL |
+| Internet | Aplikacja sieci Web ASP.NET (.NET Framework) |
+| Internet | ASP.NET aplikacji sieci Web MVC 2 |
+| Internet | Aplikacja sieci Web ASP.NET MVC 3 |
+| Internet | Aplikacja sieci Web ASP.NET MVC4 |
+| Internet | ASP.NET pustą aplikację sieci Web (lub lokację) |
+| Internet | ASP.NETą pustą aplikację sieci Web MVC 2 |
+| Internet | Aplikacja sieci Web ASP.NET dynamiczne jednostki danych |
+| Internet | ASP.NET dynamiczne dane LINQ do aplikacji sieci Web SQL |
 | WCF | Aplikacja usługi WCF |
 | WCF | Aplikacja usługi przepływu pracy WCF |
 | Przepływ pracy | Aplikacja usługi przepływu pracy WCF |

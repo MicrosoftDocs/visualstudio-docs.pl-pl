@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Call Hierarchy
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 75c330855d3fca1187f88171adb893c3f77c4ccd
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: e7384376b604f2097d68bf8bac06b2af0158e09b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871408"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836478"
 ---
 # <a name="view-call-hierarchy"></a>Wyświetl hierarchię wywołań
 
@@ -71,5 +71,5 @@ W poniższej tabeli opisano kilka opcji menu skrótów, które są dostępne po 
 |**Usuń element główny**|Usuwa wybrany węzeł główny z okienka widoku drzewa. Ta opcja jest dostępna tylko z poziomu węzła głównego.<br /><br /> Możesz również użyć przycisku **Usuń główny** pasek narzędzi, aby usunąć wybrany węzeł główny.|
 |**Przejdź do definicji**|Uruchamia polecenie Przejdź do definicji w wybranym węźle. Spowoduje to przejście do oryginalnej definicji wywołania elementu członkowskiego lub definicji zmiennej.<br /><br /> Aby uruchomić polecenie Przejdź do definicji, można również kliknąć dwukrotnie wybrany węzeł lub nacisnąć klawisz F12 w wybranym węźle.|
 |**Znajdź wszystkie odwołania**|Uruchamia polecenie Znajdź wszystkie odwołania w wybranym węźle. Spowoduje to znalezienie wszystkich wierszy kodu w projekcie, które odwołują się do klasy lub składowej.<br /><br /> Możesz również użyć klawiszy SHIFT + F12, aby uruchomić polecenie Znajdź wszystkie odwołania w wybranym węźle.|
-|**Kopiowane**|Kopiuje zawartość wybranego węzła (ale nie jego węzłów podrzędnych).|
+|**Kopiuj**|Kopiuje zawartość wybranego węzła (ale nie jego węzłów podrzędnych).|
 |**Odświeżanie**|Zwija zaznaczony węzeł, tak aby jego ponowne rozwinięcie zawierało bieżące informacje.|

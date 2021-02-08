@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: fbb6cb60-420b-4ca9-8306-2494f7d321fe
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: c1a36f4661abb5535c71fcebcf9e486408a56b22
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 34e8f2e6148dc504e6dc8f25f81bc1ba8acb1f47
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150811"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839299"
 ---
 # <a name="call-tree-view---net-memory-sampling-data"></a>Widok drzewa wywołań — dane próbkowania pamięci platformy .NET
 W widoku drzewa wywołań są wyświetlane ścieżki wykonywania funkcji, które zostały przesunięte w profilowanej aplikacji. Katalog główny drzewa jest punktem wejścia do aplikacji lub składnika. Każdy węzeł funkcji zawiera wszystkie funkcje, które zostały wywołane i dane alokacji pamięci .NET dotyczące tych wywołań funkcji.
@@ -53,7 +53,7 @@ W widoku drzewa wywołań są wyświetlane ścieżki wykonywania funkcji, które
 |**Bajty wyłączne**|Liczba bajtów w pamięci przydzielonej przez wystąpienia tej funkcji, które zostały wywołane przez funkcję nadrzędną w drzewie wywołań. Ta liczba nie obejmuje przydziałów, które zostały wykonane przez funkcje podrzędne.|
 |**% Bajtów wyłącznych**|Wartość procentowa wszystkich bajtów pamięci przydzielonych w ramach uruchomienia profilowania, która wystąpiła na wyłączność alokacji tej funkcji.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Widok drzewa wywołań-Instrumentacja](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)
 - [Widok drzewa wywołań](../profiling/call-tree-view-sampling-data.md)
 - [Widok drzewa wywołań](../profiling/call-tree-view-instrumentation-data.md)

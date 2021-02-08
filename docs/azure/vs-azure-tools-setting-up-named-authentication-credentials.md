@@ -2,17 +2,17 @@
 title: Konfigurowanie poświadczeń uwierzytelniania nazwanego | Microsoft Docs
 description: Dowiedz się, jak podać poświadczenia, których program Visual Studio może używać do uwierzytelniania żądań na platformie Azure, dzięki czemu możesz opublikować aplikację na platformie Azure z poziomu programu Visual Studio lub monitorować istniejącą usługę w chmurze.
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 059ac654f13ed833e80464e74e18a6cb8b0f8132
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: bd4c1864539d915e34b286debb3f6b2f739049d5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902002"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99843803"
 ---
 # <a name="set-up-named-authentication-credentials"></a>Konfigurowanie nazwanych poświadczeń uwierzytelniania
 

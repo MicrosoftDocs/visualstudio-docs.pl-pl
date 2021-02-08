@@ -3,17 +3,17 @@ title: Debuguj opublikowaną usługę w chmurze platformy Azure za pomocą usłu
 ms.custom: SEO-VS-2020
 description: Dowiedz się, jak debugować usługę w chmurze za pomocą programu Visual Studio i IntelliTrace
 author: mikejo5000
-manager: jillfra
+manager: jmartens
 ms.topic: how-to
 ms.workload: azure-vs
 ms.date: 03/21/2017
 ms.author: mikejo
-ms.openlocfilehash: abfe3de9bad150fbfb187646592218e62c1cce20
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: d419f80dc0319fbcebe053cd063cf668fc278a38
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902418"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844206"
 ---
 # <a name="debugging-a-published-azure-cloud-service-with-visual-studio-and-intellitrace"></a>Debugowanie opublikowanej usługi w chmurze platformy Azure za pomocą programu Visual Studio i funkcji IntelliTrace
 Za pomocą IntelliTrace można rejestrować obszerne informacje o debugowaniu dla wystąpienia roli uruchomionego na platformie Azure. Jeśli chcesz znaleźć przyczynę problemu, możesz użyć dzienników IntelliTrace, aby przejść do kodu z programu Visual Studio, tak jakby był uruchomiony na platformie Azure. W efekcie IntelliTrace rejestruje kod klucza i dane środowiska, gdy aplikacja platformy Azure działa jako usługa w chmurze na platformie Azure i umożliwia odtwarzanie zarejestrowanych danych z programu Visual Studio.

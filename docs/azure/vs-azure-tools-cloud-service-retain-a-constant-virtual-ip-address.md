@@ -3,17 +3,17 @@ title: Zachowywanie stałego wirtualnego adresu IP dla usługi w chmurze platfor
 description: Dowiedz się, jak upewnić się, że wirtualny adres IP (VIP) usługi w chmurze platformy Azure nie zmienia się.
 ms.custom: SEO-VS-2020
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 08473bc03e1e8b7a6882d83b7f1770403186e58a
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: b879675a0cdc552255aa4b5f66d143a3b2aba5eb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902549"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844362"
 ---
 # <a name="retain-a-constant-virtual-ip-address-for-an-azure-cloud-service"></a>Zachowywanie stałego wirtualnego adresu IP usługi w chmurze platformy Azure
 W przypadku aktualizowania usługi w chmurze hostowanej na platformie Azure może być konieczne zagwarantowanie, że wirtualny adres IP (VIP) usługi nie jest zmieniany. Wiele usług zarządzania domenami używa systemu nazw domen (DNS) do rejestrowania nazw domen. DNS działa tylko wtedy, gdy adres VIP pozostaje taki sam. Możesz użyć **Kreatora publikacji** w narzędziach platformy Azure, aby upewnić się, że wirtualne adresy IP usługi w chmurze nie ulegają zmianie po ich aktualizacji. Aby uzyskać więcej informacji na temat korzystania z zarządzania domeną DNS dla usług w chmurze, zobacz [Konfigurowanie niestandardowej nazwy domeny dla usługi w chmurze platformy Azure](/azure/cloud-services/cloud-services-custom-domain-name-portal).

@@ -4,17 +4,17 @@ description: Opisuje sposób instalowania i używania Docker Compose.
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 81f70612b05920ea58c752a878831f1d6de34098
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f95a4f130e8ad662b3f0eca8f6f7d2162e2d1c7e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89178293"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841721"
 ---
 # <a name="use-docker-compose"></a>Korzystanie z narzędzia Docker Compose
 

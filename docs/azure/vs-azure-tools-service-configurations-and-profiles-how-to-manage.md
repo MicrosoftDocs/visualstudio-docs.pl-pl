@@ -2,17 +2,17 @@
 title: Jak zarządzać konfiguracjami i profilami usług | Microsoft Docs
 description: Dowiedz się, jak korzystać z konfiguracji usługi i plików konfiguracji profilów | Ustawienia przechowywania dla środowisk wdrażania i publikowania ustawień usług Cloud Services.
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 751214a99c7724c83f01226164202f90425ebf65
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: e1c97670a91f2d90a01fef24f592e6ce2d5b05fd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902083"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99843816"
 ---
 # <a name="how-to-manage-service-configurations-and-profiles"></a>Jak zarządzać profilami i konfiguracjami usług
 ## <a name="overview"></a>Omówienie
@@ -84,7 +84,7 @@ Po pierwszym uruchomieniu kreatora zostanie utworzony profil domyślny. Program 
 2. Na liście **profil docelowy** wybierz pozycję **Zarządzaj**.
 3. W oknie dialogowym **Zarządzanie profilami** wybierz profil, który chcesz usunąć, a następnie wybierz pozycję **Usuń**.
 4. W wyświetlonym oknie dialogowym potwierdzenia wybierz pozycję **OK**.
-5. Wybierz pozycję **Close** (Zamknij).
+5. Wybierz pozycję **Zamknij**.
 
 ### <a name="to-change-a-profile"></a>Aby zmienić profil
 1. Otwórz menu skrótów dla projektu platformy Azure, a następnie wybierz pozycję **Publikuj**.

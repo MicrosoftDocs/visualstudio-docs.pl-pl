@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 86b3af13-7163-48c6-986b-7beeedbc26cc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6314199fdf850c377825ee31e58cd9f315c5f672
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: e46832803008ea65d0f7ec4f2723a615ba496b94
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761026"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840083"
 ---
 # <a name="ide-defined-commands-menus-and-groups"></a>Polecenia, menu i grupy definiowane w środowisku IDE
 Wiele menu, poleceń i grup poleceń jest już zdefiniowanych do użycia przez [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE. Te polecenia są również dostępne do użycia podczas jego rozszerania [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
@@ -50,7 +50,7 @@ Wiele menu, poleceń i grup poleceń jest już zdefiniowanych do użycia przez [
 
  Zawiera identyfikatory GUID i identyfikator poleceń zdefiniowanych przez środowisko IDE programu Visual Studio.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Tabela poleceń programu Visual Studio (pliki Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Polecenia definiowane w środowisku IDE do rozszerzania systemów projektu](../../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
 - [Dodawanie elementów interfejsu użytkownika przy użyciu pakietów VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

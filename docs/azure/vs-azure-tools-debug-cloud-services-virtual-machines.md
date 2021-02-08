@@ -2,18 +2,18 @@
 title: Debugowanie usługi w chmurze lub maszyny wirtualnej platformy Azure
 description: Debugowanie usługi w chmurze lub maszyny wirtualnej w programie Visual Studio
 author: mikejo5000
-manager: jillfra
+manager: jmartens
 ms.topic: how-to
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: c6e03bb4048b077bb4e1faa8b0382a3f4dbaf856
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: c7a95c43435cf78f169ce363b3e8fe301e9d0cbe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902562"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844336"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Debugowanie usługi w chmurze lub maszyny wirtualnej platformy Azure w programie Visual Studio
 
@@ -77,7 +77,7 @@ Włączenie debugowania zdalnego dla usługi w chmurze nie powoduje obniżenia w
 
     ![Okno dialogowe Wybieranie typu kodu](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-4. Aby zidentyfikować procesy, do których jest dołączony debuger, na pasku menu wybierz kolejno opcje **Debuguj**  >  **procesy systemu Windows**  >  **Processes** i Otwórz okno dialogowe **procesy** . (Klawiatura: Ctrl + Alt + Z) Aby odłączyć określony proces, otwórz jego menu skrótów, a następnie wybierz polecenie **Odłącz proces**. Lub zlokalizuj węzeł wystąpienia w Eksplorator serwera, Znajdź proces, otwórz jego menu skrótów, a następnie wybierz polecenie **Odłącz proces**.
+4. Aby zidentyfikować procesy, do których jest dołączony debuger, na pasku menu wybierz kolejno opcje **Debuguj**  >  **procesy systemu Windows**  >  i Otwórz okno dialogowe **procesy** . (Klawiatura: Ctrl + Alt + Z) Aby odłączyć określony proces, otwórz jego menu skrótów, a następnie wybierz polecenie **Odłącz proces**. Lub zlokalizuj węzeł wystąpienia w Eksplorator serwera, Znajdź proces, otwórz jego menu skrótów, a następnie wybierz polecenie **Odłącz proces**.
 
     ![Debugowanie procesów](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC690787.gif)
 

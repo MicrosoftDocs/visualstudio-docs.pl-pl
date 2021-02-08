@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: bb6e74c3-93e4-4ef7-afc7-1c9b342f083b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9d1d7b7a74b6565c666e4d5e3293caaef3c7732
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: a7d2dc2b12ee20b96cad27cb56bf0e4552e3f7c4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761325"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844596"
 ---
 # <a name="how-to-support-outlining-in-a-legacy-language-service"></a>Instrukcje: obsługa konspektu w starszej wersji usługi językowej
 Konspekt służy do rozwijania lub zwijania różnych regionów tekstu. Sposób użycia konspektu można zdefiniować inaczej w różnych językach. Aby uzyskać więcej informacji, zobacz [Tworzenie konspektu](../../ide/outlining.md).
@@ -47,6 +47,6 @@ Konspekt służy do rozwijania lub zwijania różnych regionów tekstu. Sposób 
 > [!NOTE]
 > Należy zachować ostrożność podczas ukrywania znaków nowego wiersza. Tekst ukryty powinien zostać rozbudowany od początku pierwszego wiersza do ostatniego znaku ostatniego wiersza w sekcji, pozostawiając widoczny ostatni znak w wierszu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: zapewnianie obsługi tekstu ukrytego w starszej wersji usługi językowej](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)
 - [Instrukcje: zapewnianie rozszerzonej obsługi konspektu w starszej wersji usługi językowej](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)

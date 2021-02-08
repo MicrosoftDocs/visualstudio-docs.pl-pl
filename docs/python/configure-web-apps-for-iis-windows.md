@@ -5,18 +5,18 @@ ms.date: 12/06/2018
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 3c756f3d9a89294ecce054650037be3f7b26c291
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 40411f47e7deda48b04ac4efb9bb9bc18688989a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85540936"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839113"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>Konfigurowanie aplikacji sieci Web w języku Python dla usług IIS
 
@@ -86,7 +86,7 @@ Następnie zmodyfikuj plik *web.config* aplikacji, aby uwzględnić pełne ście
     </system.webServer>
     ```
 
-1. W `<appSettings>` sekcji *web.config*Dodaj klucze dla `WSGI_HANDLER` `WSGI_LOG` (opcjonalnie) i `PYTHONPATH` :
+1. W `<appSettings>` sekcji *web.config* Dodaj klucze dla `WSGI_HANDLER` `WSGI_LOG` (opcjonalnie) i `PYTHONPATH` :
 
     ```xml
     <appSettings>
@@ -141,8 +141,8 @@ Następnie zmodyfikuj plik *web.config* aplikacji, aby uwzględnić pełne ście
 
     Nie można dodać adresu URL do tablicy wyniki w DisallowedHost błędu w **nagłówku/Nieprawidłowym HTTP_HOST: " \<site URL\> ". Może być konieczne dodanie " \<site URL\> " do ALLOWED_HOSTS.**
 
-    Należy pamiętać, że gdy tablica jest pusta, Django automatycznie zezwala na "localhost" i "127.0.0.1", ale dodanie produkcyjnego adresu URL spowoduje usunięcie tych funkcji. Z tego powodu warto zachować osobne kopie i produkcję *Settings.py*lub użyć zmiennych środowiskowych w celu kontrolowania wartości czasu wykonywania.
+    Należy pamiętać, że gdy tablica jest pusta, Django automatycznie zezwala na "localhost" i "127.0.0.1", ale dodanie produkcyjnego adresu URL spowoduje usunięcie tych funkcji. Z tego powodu warto zachować osobne kopie i produkcję *Settings.py* lub użyć zmiennych środowiskowych w celu kontrolowania wartości czasu wykonywania.
 
 ## <a name="deploy-to-iis-or-a-windows-vm"></a>Wdrażanie w usługach IIS lub maszynie wirtualnej z systemem Windows
 
-Używając poprawnego pliku *web.config* w projekcie, można publikować na komputerze z URUCHOMIONYMI usługami IIS za pomocą polecenia **Publikuj** w menu kontekstowym projektu w **Eksplorator rozwiązań**i wybierając opcję, **IIS, FTP itp.** W takim przypadku Visual Studio po prostu kopiuje pliki projektu na serwer; Użytkownik jest odpowiedzialny za całą konfigurację po stronie serwera.
+Używając poprawnego pliku *web.config* w projekcie, można publikować na komputerze z URUCHOMIONYMI usługami IIS za pomocą polecenia **Publikuj** w menu kontekstowym projektu w **Eksplorator rozwiązań** i wybierając opcję, **IIS, FTP itp.** W takim przypadku Visual Studio po prostu kopiuje pliki projektu na serwer; Użytkownik jest odpowiedzialny za całą konfigurację po stronie serwera.

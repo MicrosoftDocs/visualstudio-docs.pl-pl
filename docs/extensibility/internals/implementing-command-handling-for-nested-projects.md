@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 48a9d66e-d51c-4376-a95a-15796643a9f2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13cfa6ebb8cae645202339c511f15ca15e2b3490
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: c23271596353ae289e1b7507b90b40095ca82c15
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761156"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839888"
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>Implementowanie obsługi poleceń dla zagnieżdżonych projektów
 IDE może przekazać polecenia, które są przekazywane za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> i <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsów do projektów zagnieżdżonych, lub projekty nadrzędne mogą filtrować lub przesłaniać polecenia.
@@ -53,7 +53,7 @@ IDE może przekazać polecenia, które są przekazywane za pomocą <xref:Microso
 
     Projekt nadrzędny nie musi kierować polecenia do projektu podrzędnego. IDE wykonuje to zadanie...
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>
 - [Polecenia, menu i paski narzędzi](../../extensibility/internals/commands-menus-and-toolbars.md)
 - [Zagnieżdżanie projektów](../../extensibility/internals/nesting-projects.md)

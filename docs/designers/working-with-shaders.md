@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 6b2ea1ed-b995-4e75-af19-c68fd37a3bc5
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ce08d475c75f197180417dcf94f9d52f59fb2e7b
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: bff5aee4337a464498fc4ac027eb05b2da912b61
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93133939"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844895"
 ---
 # <a name="work-with-shaders"></a>Praca z cieniowaniem
 
@@ -25,7 +25,7 @@ Możesz użyć projektanta cieniowania opartego na grafie w programie Visual Stu
 
 Program do *cieniowania* jest programem komputerowym, który wykonuje obliczenia grafiki — na przykład przekształceń wierzchołków lub kolorowania pikseli — jest zazwyczaj uruchamiany na procesorze graficznym (GPU), a nie w procesorach. Ze względu na to, że większość etapów tradycyjnego potoku grafiki o stałej funkcji jest teraz wykonywana przez programy do cieniowania, można użyć ich do utworzenia potoku, który jest specyficzny dla potrzeb aplikacji.
 
-Najbardziej typowymi rodzajami programów do cieniowania są programy do *cieniowania wierzchołków* , które wykonują obliczenia na wierzchołku i zastępują stałe funkcje transformacji i oświetlenia w nieprogramowalnym sprzęcie graficznym, i *cieniowania pikseli* , które wykonują obliczenia w pikselach, które określają kolor piksela i zastępują stałe-funkcyjne obwody łączenia z nieprogramowalnym sprzętem graficznym. Nowoczesny sprzęt graficzny oferuje jeszcze więcej rodzajów programów do cieniowania, programów do cieniowania *kadłuba* , programów do cieniowania *domen* i *cieniowania geometrycznego* na potrzeby obliczeń graficznych i *cieniowania* obliczeń dla niegraficznych obliczeń. Żaden z tych etapów nie jest jeszcze dostępny w nieprogramowalnym sprzęcie graficznym. Programy do cieniowania zostały pierwotnie utworzone przy użyciu języka podobnego do zestawu, który udostępnia instrukcje SIMD (Data-Parallel) i zorientowane na grafiki (iloczyn kropki). Teraz programy do cieniowania są zwykle tworzone przy użyciu wysokiej klasy języków, takich jak HLSL (język cieniowania wysokiego poziomu).
+Najbardziej typowymi rodzajami programów do cieniowania są programy do *cieniowania wierzchołków*, które wykonują obliczenia na wierzchołku i zastępują stałe funkcje transformacji i oświetlenia w nieprogramowalnym sprzęcie graficznym, i *cieniowania pikseli*, które wykonują obliczenia w pikselach, które określają kolor piksela i zastępują stałe-funkcyjne obwody łączenia z nieprogramowalnym sprzętem graficznym. Nowoczesny sprzęt graficzny oferuje jeszcze więcej rodzajów programów do cieniowania, programów do cieniowania *kadłuba*, programów do cieniowania *domen* i *cieniowania geometrycznego* na potrzeby obliczeń graficznych i *cieniowania* obliczeń dla niegraficznych obliczeń. Żaden z tych etapów nie jest jeszcze dostępny w nieprogramowalnym sprzęcie graficznym. Programy do cieniowania zostały pierwotnie utworzone przy użyciu języka podobnego do zestawu, który udostępnia instrukcje SIMD (Data-Parallel) i zorientowane na grafiki (iloczyn kropki). Teraz programy do cieniowania są zwykle tworzone przy użyciu wysokiej klasy języków, takich jak HLSL (język cieniowania wysokiego poziomu).
 
 Projektanta programu do cieniowania można użyć do interaktywnego tworzenia programów do cieniowania pikseli zamiast wprowadzania i kompilowania kodu. W projektancie cieniowania, cieniowanie jest definiowane przez wiele węzłów, które reprezentują dane i operacje, oraz połączenia między węzłami, które reprezentują przepływ wartości danych i wyniki pośrednie za pośrednictwem programu do cieniowania. Korzystając z tej metody i podglądu w czasie rzeczywistym w projektancie cieniowania, można łatwiej wizualizować wykonywanie modułu cieniującego i "odkrywać" interesujące wahania programu do cieniowania za pośrednictwem eksperymentów.
 
