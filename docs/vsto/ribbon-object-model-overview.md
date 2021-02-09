@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], object model
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f97bbbab4b867f503e5b5befff27844df8a4b4bc
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 6306b13cc40d8b93de734168fe1e6df92c256d21
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527983"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888696"
 ---
 # <a name="ribbon-object-model-overview"></a>Omówienie modelu obiektów wstążki
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]Uwidacznia model obiektów o jednoznacznie określonym typie, którego można użyć do pobierania i ustawiania właściwości kontrolek wstążki w czasie wykonywania. Na przykład można dynamicznie wypełniać kontrolki menu lub wyświetlać i ukrywać kontrolki w sposób kontekstowy. Możesz również dodawać karty, grupy i kontrolki do wstążki, ale tylko przed załadowaniem Wstążki przez aplikację pakietu Office. Aby uzyskać więcej informacji, zobacz [Ustawianie właściwości, które stają się tylko do odczytu](#SettingReadOnlyProperties).
@@ -54,7 +54,7 @@ ms.locfileid: "97527983"
 |**ButtonGroup**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButtonGroup>|
 |**CheckBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox>|
 |**ComboBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>|
-|**DropDown**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>|
+|**Przyjmij**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>|
 |**EditBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|
 |**Galeria**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
 |**Grupa**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|

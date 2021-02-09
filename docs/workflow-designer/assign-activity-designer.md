@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: ba3feb3c-f144-47ea-926d-cf752b804153
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d8601951cfaba3f246e8488ab23c9b6ccad0d01
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: fe6f649543cee66a1050e5724a9317b7b8806534
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438194"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888644"
 ---
 # <a name="assign-activity-designer"></a>Assign, projektant działań
 
@@ -29,7 +29,7 @@ Projektant działań **Assign** służy do tworzenia i konfigurowania <xref:Syst
 
 ### <a name="using-the-assign-activity-designer"></a>Korzystanie z projektanta akcji przypisania
 
-Projektanta działań **przypisanych** można znaleźć w kategorii elementy **pierwotne** **przybornika** , do którego uzyskuje się dostęp przez kliknięcie karty **przybornika** (można również wybrać **Przybornik** z menu **Widok** lub CTRL + ALT + X).
+Projektanta działań **przypisanych** można znaleźć w kategorii elementy **pierwotne** **przybornika**, do którego uzyskuje się dostęp przez kliknięcie karty **przybornika** (można również wybrać **Przybornik** z menu **Widok** lub CTRL + ALT + X).
 
 Projektanta działania **przypisanego** można przeciągnąć z **przybornika** i porzucić na Projektant przepływu pracyą powierzchnię, w której zostaną umieszczone kiedykolwiek wykonane działania, na przykład wewnątrz <xref:System.Activities.Statements.Sequence> . Porzucenie projektanta **przypisywania** działań powoduje utworzenie <xref:System.Activities.Statements.Assign> działania z domyślną wartością **DisplayName** elementu Assign. <xref:System.Activities.Activity.DisplayName%2A>Można edytować w nagłówku projektanta działania **przypisania** lub w polu **DisplayName** siatki właściwości.
 
@@ -41,7 +41,7 @@ W poniższej tabeli przedstawiono <xref:System.Activities.Statements.Assign> wł
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Fałsz|Przyjazna nazwa <xref:System.Activities.Statements.Assign> działania. Wartość domyślna to Assign. Chociaż <xref:System.Activities.Activity.DisplayName%2A> wartość nie jest ściśle wymagana, najlepszym rozwiązaniem jest użycie jednego z nich.|
 |<xref:System.Activities.Statements.Assign.To%2A>|Prawda|Zmienna lub argument, do którego <xref:System.Activities.Statements.Assign.Value%2A> jest przypisany. Wartość musi być prawidłowym identyfikatorem Visual Basic. Aby ustawić właściwość, wpisz wyrażenie Visual Basic w polu **do** w **projektancie działania lub** w siatce właściwości.|
-|<xref:System.Activities.Statements.Assign.Value%2A>|Prawda|Wartość, która jest przypisana do zmiennej. Aby ustawić <xref:System.Activities.Statements.Assign.Value%2A> , wpisz wyrażenie Visual Basic w polu **wartość** w projektancie działania lub w **Assign** siatce właściwości.|
+|<xref:System.Activities.Statements.Assign.Value%2A>|Prawda|Wartość, która jest przypisana do zmiennej. Aby ustawić <xref:System.Activities.Statements.Assign.Value%2A> , wpisz wyrażenie Visual Basic w polu **wartość** w projektancie działania lub w  siatce właściwości.|
 
 ## <a name="see-also"></a>Zobacz też
 
