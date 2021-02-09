@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 79875cbb-f946-49d4-94eb-941d0e1a40b2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 508cf5d324a62b0ada056fe0c2495ff97334b8cf
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: 2b7fad96ddd62767b67b65b83121498079a81b07
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606568"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852846"
 ---
 # <a name="interfaces-visual-studio-debugging"></a>Interfejsy (Debugowanie w programie Visual Studio)
 Metody są wyświetlane alfabetycznie w każdym interfejsie w spisie treści i na stronie interfejsu w kolejności tablic wirtualnych.
@@ -40,5 +40,5 @@ Metody są wyświetlane alfabetycznie w każdym interfejsie w spisie treści i n
 
  Zawiera dokumentację dla interfejsów, modułów wyliczających i struktur [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] zestawu SDK debugowania.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dokumentacja interfejsu API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

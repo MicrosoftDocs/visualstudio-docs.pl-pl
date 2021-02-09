@@ -5,15 +5,15 @@ ms.date: 11/16/2017
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 2cfad81c44822e59abb704e5e830357bfd32067d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e74966e71a7d440aed918e8aa609eeb8e68c355
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801558"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851884"
 ---
 # <a name="create-r-markdown-documents"></a>Tworzenie R Markdown dokumentów
 
@@ -66,8 +66,8 @@ R Tools for Visual Studio (RTVS) udostępnia szablon elementu R Markdown, obsłu
 
 ## <a name="previews"></a>Podglądy
 
-Program Visual Studio 2017 w wersji 15,5 i nowszej automatycznie udostępnia podgląd na żywo dla R Markdown. Aby włączyć automatyczną synchronizację między edytorem a podglądem, wybierz pozycję **R Tools**— zapoznawcza  >  **Markdown**  >  **Automatyczna synchronizacja** (**Ctrl** + **SHIFT** + **Y**). Jeśli synchronizacja automatyczna nie jest przeprowadzana, można odświeżyć Podgląd przy użyciu **narzędzi R Tools**w  >  **promocji**  >  **Załaduj ponownie R MARKDOWN wersja zapoznawcza**.
+Program Visual Studio 2017 w wersji 15,5 i nowszej automatycznie udostępnia podgląd na żywo dla R Markdown. Aby włączyć automatyczną synchronizację między edytorem a podglądem, wybierz pozycję **R Tools**— zapoznawcza  >    >  **Automatyczna synchronizacja** (**Ctrl** + **SHIFT** + **Y**). Jeśli synchronizacja automatyczna nie jest przeprowadzana, można odświeżyć Podgląd przy użyciu **narzędzi R Tools** w  >  **promocji**  >  **Załaduj ponownie R MARKDOWN wersja zapoznawcza**.
 
-Możesz również wyświetlić podgląd pliku w formatach HTML, PDF i Microsoft Word, klikając prawym przyciskiem myszy w edytorze i wybierając jedno z poleceń **podglądu** . Te same polecenia są również dostępne w menu **R Tools**  >  **przecenowy** narzędzia R Tools. (We wcześniejszych wersjach programu Visual Studio te polecenia są dostępne w **narzędziach**  >  języka R Menu **Publikuj** .)
+Możesz również wyświetlić podgląd pliku w formatach HTML, PDF i Microsoft Word, klikając prawym przyciskiem myszy w edytorze i wybierając jedno z poleceń **podglądu** . Te same polecenia są również dostępne w menu   >  **przecenowy** narzędzia R Tools. (We wcześniejszych wersjach programu Visual Studio te polecenia są dostępne w **narzędziach**  >  języka R Menu **Publikuj** .)
 
 ![RMarkdown Live Preview i inne polecenia menu Podgląd](media/rmarkdown-live-preview.png)

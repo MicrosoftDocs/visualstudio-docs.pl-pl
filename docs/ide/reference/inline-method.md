@@ -5,18 +5,18 @@ ms.date: 11/03/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 655c6dad03b05b257aec3d92199321a0e0e93d22
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 80313cf0dd9b828c9602fdf8ebff022342faa0fb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761423"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852365"
 ---
 # <a name="inline-method"></a>Metoda śródwierszowa
 

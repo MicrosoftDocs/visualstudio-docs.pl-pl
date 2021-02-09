@@ -5,15 +5,15 @@ ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 564ba133074af3749bd909f1b0a7fe32822f5d75
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+ms.openlocfilehash: 35850293b1ef739506fe6848e000396f6bacf1d8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97833263"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852300"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Wprowadzanie zmiennej lokalnej w programie Visual Studio
 
@@ -47,7 +47,7 @@ Ta generacja kodu ma zastosowanie do:
       - Naciśnij klawisz **Ctrl** + **.** Aby wyzwolić menu **szybkie akcje i operacje refaktoryzacji** .
    - **Mysz**
       - Kliknij prawym przyciskiem myszy i wybierz menu **szybkie akcje i operacje refaktoryzacji** .
-      - Kliknij kartę ![Zrzut ekranu przedstawiający ikonę śrubokrętu wyświetlaną na lewym marginesie menu szybkie akcje i operacje refaktoryzacji.](media/screwdriver.png) ikona wyświetlana na lewym marginesie, jeśli kursor tekstu znajduje się już w wierszu z wyróżnionym wyrażeniem.
+      - Kliknij pozycję ![Zrzut ekranu przedstawiający ikonę śrubokrętu wyświetlaną na lewym marginesie menu szybkie akcje i operacje refaktoryzacji.](media/screwdriver.png) ikona wyświetlana na lewym marginesie, jeśli kursor tekstu znajduje się już w wierszu z wyróżnionym wyrażeniem.
 
    ![Wprowadź lokalną wersję zapoznawczą](media/local-preview-cs.png)
 

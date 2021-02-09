@@ -22,15 +22,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], designer
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b6e78b6809d3136c0db1f558d175706dc0ecd75b
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: b398d9c00caf3a4fa2ca58bafa3273673a305859
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850316"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851689"
 ---
 # <a name="bdc-model-design-tools-overview"></a>Omówienie narzędzi projektowania modelu BDC
   Model łączności danych biznesowych (BDC) można zaprojektować za pomocą projektanta BDC, okna **Szczegóły metody BDC** i **Eksploratora usługi BDC**.
@@ -75,7 +75,7 @@ ms.locfileid: "94850316"
 
  Aby uzyskać więcej informacji, zobacz [How to: define The Type Descriptor of a Parameter](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: Tworzenie modelu usługi BDC](../sharepoint/how-to-create-a-bdc-model.md)
 - [Instrukcje: Dodawanie jednostki do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md)
 - [Instrukcje: Dodawanie metody wyszukiwania](../sharepoint/how-to-add-a-finder-method.md)

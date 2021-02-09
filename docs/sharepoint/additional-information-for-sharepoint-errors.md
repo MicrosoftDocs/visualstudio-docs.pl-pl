@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, troubleshooting
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 240913e93dc1945846613ac1ecc8d0141368f7b3
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 5ce41bdf53ee55bfcbcec0cc2a2271ba9914aed8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850432"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851741"
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>Dodatkowe informacje na temat błędów programu SharePoint
   Pomoc można znaleźć w temacie Rozwiązywanie problemów z [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] narzędziami programu SharePoint i ostrzeżeniami w tematach dotyczących rozwiązywania problemów oraz na forach publicznych.
@@ -40,7 +40,7 @@ ms.locfileid: "94850432"
 ## <a name="other-resources"></a>Inne zasoby
  W poniższej tabeli wymieniono [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fora narzędzi programu SharePoint i inne dostępne zasoby.
 
-|Termin|Definicja|
+|Okres|Definicja|
 |----------|----------------|
 |[Programowanie SharePoint](https://social.msdn.microsoft.com/Forums/office/home?forum=sharepointdevelopmentprevious)|Zawiera forum z pytaniami dotyczącymi programowania programu SharePoint w programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .|
 |[Fora programu Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?category=visualstudio)|Zawiera forum z pytaniami dotyczącymi usługi [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .|
@@ -48,5 +48,5 @@ ms.locfileid: "94850432"
 
  Jeśli nadal nie możesz znaleźć wymaganych odpowiedzi, możesz uzyskać dostęp do opcji pomocy technicznej online, takich jak kontaktowanie się z usługami pomocy technicznej firmy Microsoft lub wyszukiwanie artykułów bazy wiedzy. Aby uzyskać więcej informacji, zobacz stronę [pomocy i obsługi technicznej firmy Microsoft](https://support.microsoft.com/) .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Kompilowanie i debugowanie rozwiązań SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)

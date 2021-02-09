@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 62aee7c3-d314-4272-a32b-b2818f32fab8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 902a3d361eb06288a0e50e9f384b67a2a8c61aa1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 234bfa31c79fa2c9ef60afd29d655cfc6e585aed
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461274"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853262"
 ---
 # <a name="interfaces-debug-interface-access-sdk"></a>Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)
 Metody są wyświetlane alfabetycznie w każdym interfejsie w spisie treści i na stronie interfejsu w kolejności tablic wirtualnych.

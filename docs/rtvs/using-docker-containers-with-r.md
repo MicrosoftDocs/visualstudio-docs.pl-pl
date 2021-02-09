@@ -6,15 +6,15 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 ms.reviewer: karthiknadig
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 8c5b4278ab50aac96703f03e74c014d29831f22e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 01048bc9b21287eb62693096b34a1ea8305e0ee9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62810223"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851871"
 ---
 # <a name="use-docker-containers-with-r-tools-for-visual-studio"></a>Używanie kontenerów platformy Docker z R Tools for Visual Studio
 
@@ -22,7 +22,7 @@ Program R Tools for Visual Studio (RTVS) w wersji 1.3 + wraz z instalacją [Dock
 
 ## <a name="create-a-container"></a>Tworzenie kontenera
 
-1. Wybierz przycisk **kontenery** w prawym górnym rogu okna **obszary robocze** (w obszarze roboczym**Narzędzia R Tools**  >  **Windows**  >  **Workspaces**). Okno informuje użytkownika, jeśli nie masz zainstalowanego Docker for Windows i udostępniono link do pobierania. Zainstalowanie platformy Docker może wymagać ponownego uruchomienia komputera.
+1. Wybierz przycisk **kontenery** w prawym górnym rogu okna **obszary robocze** (w obszarze roboczym **Narzędzia R Tools**  >  **Windows**  >  ). Okno informuje użytkownika, jeśli nie masz zainstalowanego Docker for Windows i udostępniono link do pobierania. Zainstalowanie platformy Docker może wymagać ponownego uruchomienia komputera.
 
     ![Okno obszary robocze w R Tools for Visual Studio (program VS2017) z kontenerami — polecenie](media/container-workspaces-window.png)
 

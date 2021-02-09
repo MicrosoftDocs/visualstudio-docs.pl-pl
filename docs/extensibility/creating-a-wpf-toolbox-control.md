@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 9cc34db9-b0d1-4951-a02f-7537fbbb51ad
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6dbe9ed00223fa549420537579d39a4c88cf37cb
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 9b401baf1605a869772ba41ce83ad906061f8144
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94973971"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851442"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>Tworzenie kontrolki przybornika WPF
 
@@ -33,7 +33,7 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
 
 1. Utwórz projekt VSIX o nazwie `MyToolboxControl` . Szablon projektu VSIX można znaleźć w oknie dialogowym **Nowy projekt** , wyszukując frazę "VSIX".
 
-2. Po otwarciu projektu Dodaj szablon elementu **kontrolki przybornika WPF** o nazwie `MyToolboxControl` . W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >  **nowy element**. W oknie dialogowym **Dodaj nowy element** przejdź do rozszerzalności **Visual C#**  >  **Extensibility** i wybierz **kontrolkę Przybornik WPF**. W polu **Nazwa** w dolnej części okna Zmień nazwę pliku polecenia na *MyToolboxControl.cs*.
+2. Po otwarciu projektu Dodaj szablon elementu **kontrolki przybornika WPF** o nazwie `MyToolboxControl` . W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >  **nowy element**. W oknie dialogowym **Dodaj nowy element** przejdź do rozszerzalności **Visual C#**  >   i wybierz **kontrolkę Przybornik WPF**. W polu **Nazwa** w dolnej części okna Zmień nazwę pliku polecenia na *MyToolboxControl.cs*.
 
     Rozwiązanie zawiera teraz kontrolkę użytkownika, `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> która dodaje formant do **przybornika** i wpis zasobu **Microsoft. VISUALSTUDIO. ToolboxControl** w manifeście VSIX dla wdrożenia.
 
@@ -102,4 +102,4 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
 
 3. Przekaż plik *VSIX* do sieci lub witryny sieci Web.
 
-    Jeśli przekażesz plik do witryny sieci Web [Visual Studio Marketplace](https://marketplace.visualstudio.com/) , inni użytkownicy będą mogli użyć **Tools**  >  **rozszerzeń narzędzi i aktualizacji** w programie Visual Studio, aby znaleźć formant online i zainstalować go.
+    Jeśli przekażesz plik do witryny sieci Web [Visual Studio Marketplace](https://marketplace.visualstudio.com/) , inni użytkownicy będą mogli użyć   >  **rozszerzeń narzędzi i aktualizacji** w programie Visual Studio, aby znaleźć formant online i zainstalować go.

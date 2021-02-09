@@ -9,22 +9,22 @@ helpviewer_keywords:
 ms.assetid: 09f61652-7e16-4bb0-8055-f61a84bf384e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea477d3d21cd3b7a1a5352c736dc2f78195b99a4
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: a2d4ee971e2c53c9431982ef33483471a50c54bc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915612"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851312"
 ---
 # <a name="event-descriptions"></a>Opisy zdarzeń
 Każdy typ zdarzenia ma określony cel.
 
 ## <a name="events-and-the-reasons-for-their-use"></a>Zdarzenia i przyczyny ich użycia
 
-|Wydarzenie|Opis|
+|Zdarzenie|Opis|
 |-----------|-----------------|
 |Aktywuj zdarzenia dokumentu|Występuje, gdy aparat debugowania (DE) chce, aby środowisko IDE miało otwarcie lub przełączenie dokumentu na pierwszy plan.|
 |Zdarzenia błędów powiązane lub punkty przerwania|Wysyłany, gdy punkt przerwania jest powiązany lub gdy punkt przerwania nie może powiązać i zwracany jest błąd.|

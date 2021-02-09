@@ -6,15 +6,15 @@ ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0484ed5f63cd4651669a8e3c1f94f5aad96fcc03
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 37adee082f5356180b4e1d58007db48a7f9bb60e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96617113"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852495"
 ---
 # <a name="implement-an-interface-in-visual-studio"></a>Implementowanie interfejsu w programie Visual Studio
 
@@ -74,7 +74,7 @@ Ta generacja kodu ma zastosowanie do:
    >
    > ![Zaimplementuj interfejs jawnie](media/interface-explicitresult-cs.png);
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Generowanie kodu](../code-generation-in-visual-studio.md)
 - [Podgląd zmian](../../ide/preview-changes.md)

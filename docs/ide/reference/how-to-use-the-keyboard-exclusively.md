@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: d71a4cc1-d352-4164-8538-3f9fa070a331
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 52d6bda98ee01dad4faf4a51412e810e1f5e4fa7
-ms.sourcegitcommit: 4eb8fe6eb7f1dc639f1d213db05a7a3007e8087e
+ms.openlocfilehash: 7daa0bfc6f67bd0dc9fee0775ba8dce591ce8148
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92156564"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852534"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Korzystanie wyłącznie z klawiatury
 
@@ -55,7 +55,7 @@ Aby dodać kontrolkę w przyborniku do formularza lub projektanta bez użycia my
 
 Aby poruszać się między opcjami w oknie dialogowym i zmieniać ustawienia opcji przy użyciu tylko klawiatury:
 
-1. Użyj klawisza **Tab** lub **SHIFT** + **Tab** , aby przejść w górę i w dół za pomocą kontrolek w oknie dialogowym.
+1. Użyj klawisza **Tab** lub **SHIFT** +  , aby przejść w górę i w dół za pomocą kontrolek w oknie dialogowym.
 
 2. Aby zmienić ustawienia opcji:
 
@@ -71,9 +71,9 @@ Aby poruszać się między opcjami w oknie dialogowym i zmieniać ustawienia opc
 
 ## <a name="navigate-between-windows-and-files"></a>Nawigowanie między oknami i plikami
 
-- Aby poruszać się między plikami w edytorze lub projektantem, użyj skrótu klawiaturowego z **klawiszem Ctrl**, + **Tab** aby wyświetlić wybrane okna Nawigator IDE z **aktywnymi plikami** . Wybierz klawisz **Enter** , aby przejść do wyróżnionego pliku.
+- Aby poruszać się między plikami w edytorze lub projektantem, użyj skrótu klawiaturowego z **klawiszem Ctrl**, +  aby wyświetlić wybrane okna Nawigator IDE z **aktywnymi plikami** . Wybierz klawisz **Enter** , aby przejść do wyróżnionego pliku.
 
-- Aby poruszać się między zadokowanymi oknami narzędzi **Alt**, użyj + skrótu klawiaturowego Alt**F7** , aby wyświetlić okno Nawigator IDE z **aktywnymi oknami narzędzi** . Wybierz klawisz **Enter** , aby przejść do wyróżnionego okna.
+- Aby poruszać się między zadokowanymi oknami narzędzi , użyj + skrótu klawiaturowego Alt **F7** , aby wyświetlić okno Nawigator IDE z **aktywnymi oknami narzędzi** . Wybierz klawisz **Enter** , aby przejść do wyróżnionego okna.
 
 ## <a name="move-and-dock-tool-windows"></a>Przenieś i Zadokuj okna narzędzi
 

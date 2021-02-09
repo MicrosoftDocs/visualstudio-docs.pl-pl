@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 40ed2c9d-0ce0-4b95-ad78-5dec2065ccea
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 72d646150baafb7e7169a3c0a2452da6aec5df9b
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 236efe20ee652e2690cedf36843d539bf8a9cc46
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902990"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850298"
 ---
 # <a name="design-and-view-classes-and-types-with-class-designer"></a>Projektowanie i wyświetlanie klas i typów z Projektant klas
 
@@ -58,7 +58,7 @@ Po dostosowaniu co najmniej jednego diagramu klas można skopiować je do Micros
 > [!NOTE]
 > Projektant klas nie śledzi lokalizacji plików źródłowych, dlatego zmiana struktury projektu lub przeniesienie plików źródłowych w projekcie może spowodować, że Projektant klas utraci śledzenie tego typu, szczególnie typ źródłowy elementu typedef, klasy bazowe lub typy skojarzeń. Może zostać wyświetlony komunikat o błędzie, np. **Projektant klas nie może wyświetlić tego typu**. Jeśli to zrobisz, przeciągnij ponownie zmodyfikowany lub zlokalizowany kod źródłowy do diagramu klas, aby go wyświetlić.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Funkcje edytora kodu](../writing-code-in-the-code-and-text-editor.md)
 - [Zależności mapy w ramach rozwiązań](../../modeling/map-dependencies-across-your-solutions.md)

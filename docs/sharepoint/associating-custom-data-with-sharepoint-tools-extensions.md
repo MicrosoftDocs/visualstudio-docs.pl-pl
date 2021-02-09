@@ -16,15 +16,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extensibility features
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: db32c05b4a1f4536e71b4ef233758f747a958327
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 1b4722f04ae46f85d7cc70dadf6127330e8f6616
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850406"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851722"
 ---
 # <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>Kojarzenie danych niestandardowych z rozszerzeniami narzędzi programu SharePoint
   Niestandardowe dane można dodać do określonych obiektów w rozszerzeniach narzędzi programu SharePoint. Jest to przydatne, gdy masz dane w jednej części rozszerzenia, do którego chcesz uzyskać dostęp później z innego kodu w rozszerzeniu. Zamiast implementować niestandardowy sposób przechowywania danych i uzyskiwania do nich dostępu, możesz skojarzyć dane z obiektem w rozszerzeniu, a następnie pobrać dane z tego samego obiektu później.
@@ -82,7 +82,7 @@ ms.locfileid: "94850406"
   [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#13)]
   [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#13)]
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Koncepcje programowania i funkcje dla rozszerzeń narzędzi SharePoint](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)
 - [Przewodnik: Tworzenie niestandardowego elementu projektu akcji z szablonem elementu część 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
 - [Przewodnik: rozszerzanie Eksplorator serwera do wyświetlania części sieci Web](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)

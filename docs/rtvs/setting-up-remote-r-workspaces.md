@@ -5,15 +5,15 @@ ms.date: 12/04/2017
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 686f98aaaade035f1632139d255ccff8b37eddf3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 96078d1b2fdb5a54c912cbf214024726ce102e4e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75850067"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851845"
 ---
 # <a name="set-up-remote-workspaces"></a>Konfigurowanie zdalnych obszarów roboczych
 
@@ -67,7 +67,7 @@ W przypadku programu w tle zobacz [certyfikaty z podpisem własnym](https://en.w
 
 ### <a name="install-the-certificate"></a>Instalowanie certyfikatu
 
-Aby zainstalować certyfikat na komputerze zdalnym, uruchom *certlm. msc* (Menedżer certyfikatów) z wiersza polecenia. Kliknij prawym przyciskiem myszy folder **osobiste** i wybierz polecenie **Importuj wszystkie zadania**  >  **Import** :
+Aby zainstalować certyfikat na komputerze zdalnym, uruchom *certlm. msc* (Menedżer certyfikatów) z wiersza polecenia. Kliknij prawym przyciskiem myszy folder **osobiste** i wybierz polecenie **Importuj wszystkie zadania**  >   :
 
 ![Importuj certyfikat — polecenie](media/workspaces-remote-certificate-import.png)
 
@@ -76,7 +76,7 @@ Aby zainstalować certyfikat na komputerze zdalnym, uruchom *certlm. msc* (Mened
 Po zaimportowaniu certyfikatu nadaj `NETWORK SERVICE` kontu uprawnienia do odczytu klucza prywatnego zgodnie z opisem w poniższych instrukcjach. `NETWORK_SERVICE` jest kontem używanym do uruchamiania brokera usługi R Services, który jest usługą, która kończy połączenia przychodzące protokołu SSL z komputerem serwera.
 
 1. Uruchom *certlm. msc* (Menedżer certyfikatów) z wiersza polecenia administratora.
-1. Rozwiń **Personal**węzeł  >  **Certyfikaty**osobiste, kliknij prawym przyciskiem myszy certyfikat, a następnie wybierz pozycję **wszystkie zadania**  >  **Zarządzaj kluczami prywatnymi**.
+1. Rozwiń węzeł  >  **Certyfikaty** osobiste, kliknij prawym przyciskiem myszy certyfikat, a następnie wybierz pozycję **wszystkie zadania**  >  **Zarządzaj kluczami prywatnymi**.
 1. Kliknij prawym przyciskiem myszy certyfikat i wybierz polecenie **Zarządzaj kluczami prywatnymi** w obszarze **wszystkie zadania**.
 1. W wyświetlonym oknie dialogowym wybierz pozycję **Dodaj** , a następnie wprowadź `NETWORK SERVICE` nazwę konta:
 

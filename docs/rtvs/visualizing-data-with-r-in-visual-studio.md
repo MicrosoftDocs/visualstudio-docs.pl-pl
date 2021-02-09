@@ -5,15 +5,15 @@ ms.date: 06/29/2017
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: dbb3984385e0042c669f8aad1d5bb4a2f64de917
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64b5ac36edf6c5f506628f9af88ba36bd62c71c8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801623"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851832"
 ---
 # <a name="create-visual-data-plots-with-r"></a>Tworzenie wykresów danych wizualnych za pomocą języka R
 
@@ -48,7 +48,7 @@ Zmiana rozmiarów okna wykresu zawsze powoduje ponowne renderowanie wykresu w ce
 
 ## <a name="plot-window-commands"></a>Polecenia okna wykresu
 
-Pasek narzędzi okna wykresu zawiera odpowiednie polecenia, z których większość jest również dostępna w menu wykresy **Narzędzia R Tools**  >  **Plots** .
+Pasek narzędzi okna wykresu zawiera odpowiednie polecenia, z których większość jest również dostępna w menu wykresy **Narzędzia R Tools**  >   .
 
 | Przycisk | Polecenie | Opis |
 | --- | --- | --- |
@@ -67,17 +67,17 @@ Pasek narzędzi okna wykresu zawiera odpowiednie polecenia, z których większo�
 
 Ponieważ analityki danych często pracują z wieloma wykresami z wielu różnych zestawów danych, RTVS pozwala utworzyć dowolną liczbę niezależnych okien wykresów. Następnie można rozmieścić te okna w ramce programu Visual Studio lub poza tą ramką. (Zobacz [Dostosowywanie układów okien w programie Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md) , aby uzyskać ogólne informacje na temat dokowania i zmiany rozmiarów okien).
 
-Nowe okno wykresu można utworzyć za pomocą przycisku paska narzędzi lub **Narzędzia R Tools**  >  **Plots**  >  **New Plot Window**. Nowe okno wykresu zostanie *uaktywnione w aktywnym* oknie, w którym są renderowane nowe wykresy. Aby zmienić aktywne okno, przejdź do niego i wybierz przycisk paska narzędzi **Aktywuj okno** wykresu lub **Narzędzia R Tools**  >  **wykresy**  >  **Aktywuj okno**.
+Nowe okno wykresu można utworzyć za pomocą przycisku paska narzędzi lub **Narzędzia R Tools**  >    >  . Nowe okno wykresu zostanie *uaktywnione w aktywnym* oknie, w którym są renderowane nowe wykresy. Aby zmienić aktywne okno, przejdź do niego i wybierz przycisk paska narzędzi **Aktywuj okno** wykresu lub **Narzędzia R Tools**  >  **wykresy**  >  **Aktywuj okno**.
 
-Wykresy są również obiektami niezależnymi, co oznacza, że można je skopiować lub przenieść między oknami kreolenia przy użyciu przeciągania i upuszczania za pomocą myszy albo za pomocą poleceń **kopiowania**, **wycinania**i **wklejania** w kontekście prawym przyciskiem myszy i w menu **Edycja** .
+Wykresy są również obiektami niezależnymi, co oznacza, że można je skopiować lub przenieść między oknami kreolenia przy użyciu przeciągania i upuszczania za pomocą myszy albo za pomocą poleceń **kopiowania**, **wycinania** i **wklejania** w kontekście prawym przyciskiem myszy i w menu **Edycja** .
 
 Domyślne zachowanie funkcji przeciągania i upuszczania to Copy; Aby przenieść, przeciągnij i upuść podczas naciskania klawisza **SHIFT** .
 
 ## <a name="plot-history"></a>Historia wykresów
 
-Polecenia kreolenia są utrzymywane w historii wykresu dla każdego okna, co gwarantuje, że wszystkie wykresy w ramach sesji są zachowywane. Aby nawigować do historii, użyj przycisków strzałek na pasku narzędzi okna kreślenia lub **Ctrl** + **Alt** + **F11** i **Ctrl** + **Alt** + **F12**. Możesz również usunąć pojedyncze wykresy lub wyczyścić wszystkie wykresy z okna przy użyciu przycisków paska narzędzi lub poleceń menu **Narzędzia R Tools**  >  **Plots** .
+Polecenia kreolenia są utrzymywane w historii wykresu dla każdego okna, co gwarantuje, że wszystkie wykresy w ramach sesji są zachowywane. Aby nawigować do historii, użyj przycisków strzałek na pasku narzędzi okna kreślenia lub **Ctrl** + **Alt** + **F11** i **Ctrl** + **Alt** + **F12**. Możesz również usunąć pojedyncze wykresy lub wyczyścić wszystkie wykresy z okna przy użyciu przycisków paska narzędzi lub poleceń menu **Narzędzia R Tools**  >   .
 
-Aby wyświetlić całą kolekcję wykresów, Otwórz okno Historia kreślenia przy użyciu przycisku paska narzędzi lub wykresu **Narzędzia R**w  >  **Plots**  >  **oknie Historia wykresów**.
+Aby wyświetlić całą kolekcję wykresów, Otwórz okno Historia kreślenia przy użyciu przycisku paska narzędzi lub wykresu **Narzędzia R** w  >    >  **oknie Historia wykresów**.
 Historia zawiera listę miniatur dla wykresów, które zostały wyświetlone w tym oknie, pogrupowane według różnych okien wykresów (lub urządzeń). Za pomocą przycisków powiększenia na pasku narzędzi zmienia rozmiar miniatur.
 
 ![Okno historii kreślenia](media/plotting-plot-history-window.png)

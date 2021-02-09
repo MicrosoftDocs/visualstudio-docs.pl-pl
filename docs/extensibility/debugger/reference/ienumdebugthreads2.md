@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1854f078-3b49-42c2-b65b-33e3b506fd63
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbbe047c08f8e91264163d028c1b40d94cde97fc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6e3771545d4a5fe545382344d17ed5ea929999d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715086"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852781"
 ---
 # <a name="ienumdebugthreads2"></a>IEnumDebugThreads2
 Ten interfejs wylicza wątki uruchomione w bieżącej sesji debugowania.
@@ -42,7 +42,7 @@ IEnumDebugThreads2 : IUnknown
 |[Dalej](../../../extensibility/debugger/reference/ienumdebugthreads2-next.md)|Pobiera określoną liczbę wątków w sekwencji wyliczania.|
 |[Pomiń](../../../extensibility/debugger/reference/ienumdebugthreads2-skip.md)|Pomija określoną liczbę wątków w sekwencji wyliczenia.|
 |[Reset](../../../extensibility/debugger/reference/ienumdebugthreads2-reset.md)|Resetuje sekwencję wyliczenia na początek.|
-|[Klonowanie](../../../extensibility/debugger/reference/ienumdebugthreads2-clone.md)|Tworzy moduł wyliczający, który zawiera ten sam stan wyliczeniowy jak bieżący.|
+|[Klon](../../../extensibility/debugger/reference/ienumdebugthreads2-clone.md)|Tworzy moduł wyliczający, który zawiera ten sam stan wyliczeniowy jak bieżący.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugthreads2-getcount.md)|Pobiera liczbę wątków w module wyliczającym.|
 
 ## <a name="remarks"></a>Uwagi
@@ -61,4 +61,4 @@ IEnumDebugThreads2 : IUnknown
 - [EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)
 - [Krok](../../../extensibility/debugger/reference/idebugprocess3-step.md)
 - [Kontynuuj](../../../extensibility/debugger/reference/idebugprocess3-continue.md)
-- [Realizacja](../../../extensibility/debugger/reference/idebugprocess3-execute.md)
+- [Wykonaj polecenie](../../../extensibility/debugger/reference/idebugprocess3-execute.md)

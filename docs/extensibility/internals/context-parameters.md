@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1a062dcb-8a8f-40dd-bea9-3d10f9448966
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 654ebf68efebaa44766079c172e87396134805e3
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 72d2c6ded39564b91ba4f7b74fe2985aab14a7ce
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304710"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852631"
 ---
 # <a name="context-parameters"></a>Parametry kontekstu
 W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowanym środowisku programistycznym (IDE) można dodać kreatorów do okna dialogowego **Nowy projekt**, **Dodaj nowy element** lub **Dodaj projekt podrzędny** . Dodano kreatory dostępne w menu **plik** lub klikając prawym przyciskiem myszy projekt w **Eksplorator rozwiązań**. IDE przekazuje parametry kontekstu do implementacji kreatora. Parametry kontekstu definiują stan projektu, gdy IDE wywołuje kreatora.

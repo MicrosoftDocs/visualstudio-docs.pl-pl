@@ -5,15 +5,15 @@ ms.date: 01/24/2018
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 799b7f2789898e0d02d9588f9a3ad7d1e8098a00
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f69e5b61e80d3a00522307dd7481f74418407d99
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62809873"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851806"
 ---
 # <a name="variable-explorer"></a>Eksplorator zmiennych
 
@@ -33,7 +33,7 @@ Jeśli w sesji zdefiniowano bardziej złożoną ramkę danych języka R, możesz
 
 ![Rozwinięty widok Eksplorator zmiennych](media/variable-explorer-expanded-results.png)
 
-Aby usunąć zmienne, kliknij prawym przyciskiem myszy i wybierz polecenie **Usuń**lub wybierz zmienną i naciśnij klawisz **delete** .
+Aby usunąć zmienne, kliknij prawym przyciskiem myszy i wybierz polecenie **Usuń** lub wybierz zmienną i naciśnij klawisz **delete** .
 
 Możesz również wyszukać obserwację w ramce danych przy użyciu wyszukiwania przyrostowego. Najpierw rozwiń węzły w ramce danych, którą chcesz wyszukać, a następnie wprowadź terminy wyszukiwania w polu wyszukiwania.
 
@@ -45,7 +45,7 @@ Ponieważ dane są często tabelaryczne, można wyświetlić dowolny złożony t
 
 Kliknięcie nagłówka kolumny sortuje dane według kolumny (zmienne między rosnącą i malejącą). Wciśnięcie **klawisza Shift** i kliknięcie pozycji dodatkowe kolumny spowoduje również dodanie tych kolumn do sortowania. Kliknięcie kolumny bez **przesunięcia** do sortowania pojedynczej kolumny.
 
-Sekwencja, w której klikasz nagłówki kolumn określa kolejność wykonywania sortowania. Na przykład naciśnij **klawisz Shift** + , a następnie**kliknij kolumnę** **CYL** , a następnie **Shift** + **kliknij dwukrotnie przycisk** " **MPG** ", aby posortować listę dla rosnących cylindrów oraz malejące mile na galon:
+Sekwencja, w której klikasz nagłówki kolumn określa kolejność wykonywania sortowania. Na przykład naciśnij **klawisz Shift** + , a następnie **kliknij kolumnę** **CYL** , a następnie  + **kliknij dwukrotnie przycisk** " **MPG** ", aby posortować listę dla rosnących cylindrów oraz malejące mile na galon:
 
 ![Widok tabeli sortowania danych według dwóch kolumn.](media/variable-explorer-table-view-sorting.png)
 
@@ -53,7 +53,7 @@ Ponieważ **Eksplorator zmiennych** i widoki tabel znajdują się w osobnych okn
 
 ## <a name="open-in-excel-or-other-csv-capable-application"></a>Otwórz w programie Excel (lub innej aplikacji obsługującej CSV)
 
-Aby zapewnić dalsze manipulowanie i analizę, często warto wyeksportować zmienne sesji do woluminu CSV. Eksportowanie odbywa się z małą ikoną programu Excel ( ![ ikona eksportu programu Excel ](media/variable-explorer-excel-icon.png) ) obok każdego węzła w **Eksplorator zmiennych**lub klikając prawym przyciskiem myszy element i wybierając polecenie **Otwórz w aplikacji CSV**. Wybranie ikony spowoduje zapisanie danych w nowym pliku CSV w folderze *%userprofile%\documents\ RTVS_CSV_Exports* , a następnie uruchomienie tego pliku, otwierając go w dowolnej aplikacji skojarzonej z rozszerzeniem *CSV* .
+Aby zapewnić dalsze manipulowanie i analizę, często warto wyeksportować zmienne sesji do woluminu CSV. Eksportowanie odbywa się z małą ikoną programu Excel ( ![ ikona eksportu programu Excel ](media/variable-explorer-excel-icon.png) ) obok każdego węzła w **Eksplorator zmiennych** lub klikając prawym przyciskiem myszy element i wybierając polecenie **Otwórz w aplikacji CSV**. Wybranie ikony spowoduje zapisanie danych w nowym pliku CSV w folderze *%userprofile%\documents\ RTVS_CSV_Exports* , a następnie uruchomienie tego pliku, otwierając go w dowolnej aplikacji skojarzonej z rozszerzeniem *CSV* .
 
 ## <a name="scopes"></a>Zakresy
 
@@ -69,7 +69,7 @@ Możesz również przełączyć się do zakresu funkcji po zatrzymaniu w punkcie
 
 ## <a name="import-data-into-variable-explorer"></a>Importuj dane do Eksplorator zmiennych
 
-Dwa polecenia na pasku narzędzi **Eksplorator zmiennych** , które są również dostępne za pośrednictwem menu dane **Narzędzia R Tools**  >  **Data** , Importuj zewnętrzne zestawy danych CSV do sesji języka r: **Importuj zestaw danych do sesji języka r z internetowego adresu URL** i **Importuj zestaw danych do sesji języka r z pliku tekstowego**.
+Dwa polecenia na pasku narzędzi **Eksplorator zmiennych** , które są również dostępne za pośrednictwem menu dane **Narzędzia R Tools**  >   , Importuj zewnętrzne zestawy danych CSV do sesji języka r: **Importuj zestaw danych do sesji języka r z internetowego adresu URL** i **Importuj zestaw danych do sesji języka r z pliku tekstowego**.
 
 Po zidentyfikowaniu pliku CSV, który ma zostać zaimportowany, program Visual Studio wyświetli okno dialogowe **Importowanie zestawu danych** , w którym można kontrolować sposób analizowania tego pliku danych (czyli to, co to jest separator pola i jak obsługiwać cudzysłowy). Możesz również wyświetlić podgląd zaimportowanej ramki danych i oryginalnego pliku danych:
 

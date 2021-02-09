@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 11e90ba1-18cd-44f8-9e26-e3746a7a19d1
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b12d270884ca9877d6c1c80780a9ae96324f3af4
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 88675bb7593a901805cc156bbb36a2f49d69ec29
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903458"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852560"
 ---
 # <a name="c-enumerations-in-class-designer"></a>Wyliczenia C++ w Projektant klas
 
@@ -44,7 +44,7 @@ Kształt wyliczenia języka C++ na diagramie klas wygląda i działa jak kształ
 
 Aby uzyskać więcej informacji na temat korzystania z `enum` typu, zobacz [wyliczenia](/cpp/cpp/enumerations-cpp).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Praca z kodem C++](working-with-visual-cpp-code.md)
 - [Wyliczenia](/cpp/cpp/enumerations-cpp)

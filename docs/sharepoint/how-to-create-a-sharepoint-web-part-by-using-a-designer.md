@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 09b237704a5b42f75c2239bd6d159e3d58e3025e
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 14f6add337ecfae3ab0dc5aa77a72962f2a0a915
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903718"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851598"
 ---
 # <a name="how-to-create-a-sharepoint-web-part-by-using-a-designer"></a>Instrukcje: Tworzenie składnika Web Part programu SharePoint przy użyciu narzędzia Projektant
   Można utworzyć składnik Web Part poprzez dodanie elementu **wizualnego składnika Web Part** do dowolnego projektu programu SharePoint. Spowoduje to otwarcie projektanta Visual Web Developer w programie Visual Studio, w którym można dodać kontrolki i kod do składnika Web Part. Wizualne składniki Web Part działają tak samo jak części sieci Web. Jedyną różnicą jest zaprojektowanie wizualnych części sieci Web w Visual Web Developer Designer.
@@ -53,7 +53,7 @@ ms.locfileid: "94903718"
 
      W **Eksplorator rozwiązań** zostanie wyświetlony składnik Web Part. Po zaprojektowaniu składnika Web Part w programie Visual Web Developer Designer przetestujesz go w określonej lokacji.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Tworzenie składników Web Part dla programu SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)
 - [Instrukcje: Tworzenie składnika Web Part programu SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)
 - [Przewodnik: Tworzenie składnika Web Part dla programu SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)

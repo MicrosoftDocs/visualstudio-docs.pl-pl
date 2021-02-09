@@ -11,15 +11,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5a16d0f438d06cbfa48538bb3e370ed9b334ad16
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: b3fbea6df2b66a108a048332e28a623bdaa95786
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847926"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839031"
 ---
 # <a name="application-manifests-for-office-solutions"></a>Manifesty aplikacji dla rozwiązań pakietu Office
   Manifest aplikacji jest plikiem XML, który opisuje zestawy, które są ładowane do Microsoft Office rozwiązanie. Narzędzia programistyczne Microsoft Office w programie Visual Studio używają [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] schematu manifestu aplikacji zdefiniowanego w Kompendium [manifestu aplikacji ClickOnce](../deployment/clickonce-application-manifest.md) .
@@ -102,7 +102,7 @@ ms.locfileid: "96847926"
 
  `OutlookAddIn1.dll.manifest`
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Manifesty wdrożenia dla rozwiązań pakietu Office](../vsto/deployment-manifests-for-office-solutions.md)
 - [Manifest aplikacji ClickOnce](../deployment/clickonce-application-manifest.md)

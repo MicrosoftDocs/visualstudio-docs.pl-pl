@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3a544c8b-11dc-46bb-8549-261e4ac5bbc4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d20a1180e1162e7de3aee1c5d69facf8c193910
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 12016ae7d03913d1880015a6b8cf318b14c94af5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727429"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851078"
 ---
 # <a name="idebugmemorycontext2"></a>IDebugMemoryContext2
 Ten interfejs reprezentuje pozycję w przestrzeni adresowej maszyny, na której jest wykonywany debugowany program.
