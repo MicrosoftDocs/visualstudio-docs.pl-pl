@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b9da45ae-d6a6-4399-8628-397deed31486
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f00de870986cf020e91ff992dabb2681469ae5b
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 226b86d621de2faee5a71d9fdb3fea39f20b984e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796774"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888124"
 ---
 # <a name="compare-properties-and-items"></a>Porównanie właściwości i elementów
 
@@ -29,7 +29,7 @@ Właściwości i elementy programu MSBuild służą do przekazywania informacji 
 
 ## <a name="scalars-and-vectors"></a>Wartości skalarne i wektory
 
-Ponieważ właściwości programu MSBuild to pary nazwa-wartość, które mają tylko jedną wartość ciągu, są one często opisane jako *skalarne* . Ponieważ typy elementów programu MSBuild to listy, często są one opisane jako *wektor* . Jednakże w przypadku właściwości mogą reprezentować wiele wartości, a typy elementów mogą mieć zero lub jeden element.
+Ponieważ właściwości programu MSBuild to pary nazwa-wartość, które mają tylko jedną wartość ciągu, są one często opisane jako *skalarne*. Ponieważ typy elementów programu MSBuild to listy, często są one opisane jako *wektor*. Jednakże w przypadku właściwości mogą reprezentować wiele wartości, a typy elementów mogą mieć zero lub jeden element.
 
 ### <a name="target-dependency-injection"></a>Docelowa iniekcja zależności
 
@@ -45,7 +45,7 @@ Aby zobaczyć, jak właściwości mogą reprezentować wiele wartości, należy 
 </PropertyGroup>
 ```
 
-`BuildDependsOn`Właściwość jest zazwyczaj używana jako argument `DependsOnTargets` atrybutu Target, efektywnie konwertując go na listę elementów. Ta właściwość może zostać zastąpiona w celu dodania celu lub zmiany docelowej kolejności wykonania. Przykład:
+`BuildDependsOn`Właściwość jest zazwyczaj używana jako argument `DependsOnTargets` atrybutu Target, efektywnie konwertując go na listę elementów. Ta właściwość może zostać zastąpiona w celu dodania celu lub zmiany docelowej kolejności wykonania. Na przykład
 
 ```xml
 <PropertyGroup>
@@ -187,6 +187,6 @@ Wartość jest równa `KeyFileVersion` "1.0.0.3", a nie " \@ (KeyFile->"% (wersj
 KeyFileVersion: 1.0.0.3
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Pojęcia zaawansowane](../msbuild/msbuild-advanced-concepts.md)

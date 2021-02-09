@@ -5,26 +5,26 @@ ms.date: 03/13/2019
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6e95d05c3fbc0dd46d235c7480bd4a9caa48947e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b03e99a70edd587c9dfe2a43d326a64d14b9193
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62957541"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887890"
 ---
 # <a name="format-python-code"></a>Formatowanie kodu w języku Python
 
 Program Visual Studio pozwala szybko ponownie sformatować kod, aby dopasować wstępnie skonfigurowane opcje formatowania.
 
 - Aby sformatować zaznaczenie: wybierz opcję **Edytuj**  >  **Zaawansowany**  >  **Format zaznacz** lub naciśnij **klawisze CTRL** + **E**  >  **F**.
-- Aby sformatować cały plik: wybierz opcję **Edytuj**  >  dokument w formacie**zaawansowanym**  >  **Format Document** lub naciśnij **klawisze CTRL** + **E**  >  **D**.
+- Aby sformatować cały plik: wybierz opcję **Edytuj**  >  dokument w formacie **zaawansowanym**  >   lub naciśnij **klawisze CTRL** + **E**  >  **D**.
 
-Opcje są ustawiane za poorednictwem opcji **Narzędzia**  >  **Options**  >  **Edytor tekstu**  >  w języku**Python**  >  **Formatting** i na kartach zagnieżdżonych. Musisz wybrać opcję **Pokaż wszystkie ustawienia** dla następujących opcji:
+Opcje są ustawiane za poorednictwem opcji **Narzędzia**  >    >  **Edytor tekstu**  >  w języku **Python**  >   i na kartach zagnieżdżonych. Musisz wybrać opcję **Pokaż wszystkie ustawienia** dla następujących opcji:
 
 ![Opcje formatowania języka Python w programie Visual Studio](media/options-editor-formatting.png)
 

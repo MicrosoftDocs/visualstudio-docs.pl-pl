@@ -4,7 +4,7 @@ titleSuffix: ''
 description: Użyj obciążeń i identyfikatorów składników programu Visual Studio, aby zapewnić zintegrowane narzędzia do testowania dla testerów ogólnych
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 03/16/2020
 ms.topic: reference
 helpviewer_keywords:
@@ -16,12 +16,12 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: vs-2017
 open_to_public_contributors: false
-ms.openlocfilehash: 61a52d98f695a6420dd6081117b8c6c4e83ae0a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ee8d3d91f5079e23d5a0342c58b2db5a70e45f64
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81276217"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886473"
 ---
 # <a name="visual-studio-test-professional-component-directory"></a>Visual Studio Test Professional katalog składników
 
@@ -36,7 +36,7 @@ Należy również zwrócić uwagę na następujące kwestie dotyczące strony:
 
 Podczas ustawiania zależności w manifeście VSIX należy określić tylko identyfikatory składników. Użyj tabel na tej stronie, aby określić nasze minimalne zależności składników. W niektórych scenariuszach może to oznaczać, że należy określić tylko jeden składnik z obciążenia. W innych scenariuszach może oznaczać, że należy określić wiele składników z pojedynczego obciążenia lub wielu składników z wielu obciążeń. Aby uzyskać więcej informacji, zobacz stronę [How to: migruje Projekty rozszerzalności do programu Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) .
 
-Aby uzyskać więcej informacji na temat korzystania z tych identyfikatorów, zobacz [Używanie parametrów wiersza polecenia do instalowania programu Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md) . Aby uzyskać listę identyfikatorów obciążeń i składników dla innych produktów, zobacz stronę [obciążenia i identyfikatory składników programu Visual Studio 2017](workload-and-component-ids.md) .
+Aby uzyskać więcej informacji na temat korzystania z tych identyfikatorów, zobacz temat [używanie Command-Line parametrów w celu zainstalowania strony programu Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md) . Aby uzyskać listę identyfikatorów obciążeń i składników dla innych produktów, zobacz stronę [obciążenia i identyfikatory składników programu Visual Studio 2017](workload-and-component-ids.md) .
 
 ## <a name="test-professional"></a>Test Professional
 

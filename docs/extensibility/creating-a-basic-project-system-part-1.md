@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c202aa9e76f568db9394625485282345ea3222c1
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: a1b21ef736e69c962db389a7bb1a3eb284ebdd0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974534"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887370"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Tworzenie podstawowego systemu projektu, część 1
 W programie Visual Studio projekty są kontenerami używanymi przez deweloperów do organizowania plików kodu źródłowego i innych zasobów. Projekty są wyświetlane jako elementy podrzędne rozwiązań w **Eksplorator rozwiązań**. Projekty pozwalają organizować, kompilować, debugować i wdrażać kod źródłowy oraz tworzyć odwołania do usług sieci Web, baz danych i innych zasobów.
@@ -63,7 +63,7 @@ W programie Visual Studio projekty są kontenerami używanymi przez deweloperów
  Należy również pobrać kod źródłowy dla [struktury zarządzanego pakietu dla projektów](https://github.com/tunnelvisionlabs/MPFProj10). Wyodrębnij plik do lokalizacji dostępnej dla rozwiązania, które chcesz utworzyć.
 
 ## <a name="create-a-basic-project-type"></a>Tworzenie podstawowego typu projektu
- Utwórz projekt w języku C# o nazwie **SimpleProject**. (**Plik**  >  **Nowe**  >  **Projekt, a** następnie **Visual C#**  >  **Extensibility**  >  **Projekt VSIX** rozszerzalności Visual C#). Dodaj szablon elementu projektu pakietu programu Visual Studio (na **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >  **nowy element**, a następnie przejdź do **rozszerzenia rozszerzalny**  >  **pakiet Visual Studio**). Nazwij plik *SimpleProjectPackage*.
+ Utwórz projekt w języku C# o nazwie **SimpleProject**. (**Plik**  >  **Nowe**  >  **Projekt, a** następnie   >    >  **Projekt VSIX** rozszerzalności Visual C#). Dodaj szablon elementu projektu pakietu programu Visual Studio (na **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >  **nowy element**, a następnie przejdź do **rozszerzenia rozszerzalny**  >  **pakiet Visual Studio**). Nazwij plik *SimpleProjectPackage*.
 
 ## <a name="creating-a-basic-project-template"></a>Tworzenie podstawowego szablonu projektu
  Teraz możesz zmodyfikować ten podstawowy pakietu VSPackage, aby zaimplementować nowy typ projektu *. proj* . Aby utworzyć projekt oparty na typie projektu *. proj* , program Visual Studio musi wiedzieć, które pliki, zasoby i odwołania, które mają zostać dodane do nowego projektu. Aby podać te informacje, Umieść pliki projektu w folderze szablonu projektu. Gdy użytkownik używa projektu *. proj* do tworzenia projektu, pliki są kopiowane do nowego projektu.

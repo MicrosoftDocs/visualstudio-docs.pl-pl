@@ -9,16 +9,16 @@ f1_keywords:
 ms.assetid: 98eb2d96-f92f-42f9-915c-e5ac2330ffbf
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 74fed5f0dcbac45f603f16743eb2635fcf35292a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f5730e96a47e7e931606269341d5f1cca302a0e5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85548151"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886395"
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018:32-bitowa aplikacja działająca w granicach pamięci zarządzanej przez proces
 
@@ -47,7 +47,7 @@ ms.locfileid: "85548151"
  Ponieważ całkowity rozmiar sterty zarządzanej zbliża się do domyślnego limitu, obciążenie związane z zarządzaniem pamięcią zwykle zwiększa się do momentu, w którym można zacząć wpływać na czas odpowiedzi i skalowalność aplikacji.
 
 ## <a name="how-to-investigate-a-warning"></a>Jak zbadać ostrzeżenie
- Kliknij dwukrotnie komunikat w oknie Lista błędów, aby przejść do widoku [znaczniki](../profiling/marks-view.md) . Znajdź **pamięć środowiska .NET CLR \\ liczba bajtów we wszystkich stertach** i kolumnach **# Totaled Bytes bajtów** . Ustal, czy istnieją określone fazy wykonywania programu, w których alokacja pamięci zarządzanej jest większa niż w przypadku innych faz. Porównaj wartości **w kolumnie # Bytes we wszystkich stertach** z szybkością wyrzucania elementów bezużytecznych, które zostały zgłoszone w kolekcji ** \\ generacji 0**środowiska .NET CLR, w polu **Nr pamięci środowiska .NET CLR i \\ kolekcji generacji 1**programu **.NET CLR \\ ** , aby określić, czy wzorzec alokacji pamięci zarządzanej ma wpływ na szybkość wyrzucania elementów bezużytecznych.
+ Kliknij dwukrotnie komunikat w oknie Lista błędów, aby przejść do widoku [znaczniki](../profiling/marks-view.md) . Znajdź **pamięć środowiska .NET CLR \\ liczba bajtów we wszystkich stertach** i kolumnach **# Totaled Bytes bajtów** . Ustal, czy istnieją określone fazy wykonywania programu, w których alokacja pamięci zarządzanej jest większa niż w przypadku innych faz. Porównaj wartości **w kolumnie # Bytes we wszystkich stertach** z szybkością wyrzucania elementów bezużytecznych, które zostały zgłoszone w kolekcji **\\ generacji 0** środowiska .NET CLR, w polu **Nr pamięci środowiska .NET CLR i \\ kolekcji generacji 1** programu **.NET CLR \\** , aby określić, czy wzorzec alokacji pamięci zarządzanej ma wpływ na szybkość wyrzucania elementów bezużytecznych.
 
  W aplikacji .NET Framework środowisko uruchomieniowe języka wspólnego ogranicza łączny rozmiar sterty zarządzanej do niemniejszej niż jedna połowa maksymalnego rozmiaru obszaru adresów procesu. W przypadku procesów 32-bitowych uruchomionych na komputerze 32-bitowym 2 GB reprezentuje górny limit prywatnej części przestrzeni adresowej procesu. Ponieważ łączny rozmiar sterty zarządzanej zbliża się do limitu domyślnego, obciążenie pamięci może zwiększyć się i może obniżyć wydajność aplikacji.
 

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43d1e1dca1860faa44d6bb5bc256bb8f0465e8b2
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: c36552c3a10f4ddbf50a7a28978acf27118bbd34
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479534"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887097"
 ---
 # <a name="expose-types-to-visual-designers"></a>Uwidacznianie typów projektantom wizualizacji
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Aby można było wyświetlić projektanta wizualnego, musi mieć dostęp do definicji klas i typów w czasie projektowania. Klasy są ładowane ze wstępnie zdefiniowanego zestawu zestawów, który obejmuje kompletny zestaw zależności bieżącego projektu (odwołania i ich zależności). Może być również konieczne, aby projektanci wizualizacji mogli uzyskiwać dostęp do klas i typów, które są zdefiniowane w plikach generowanych przez narzędzia niestandardowe.

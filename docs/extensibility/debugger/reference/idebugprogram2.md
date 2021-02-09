@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8d73df73-cfff-4b8b-b426-d6051edb1939
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 150746197be4945b012717bef08e18ea57168177
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9c262f123e56bf9ed9751ad8b9e7d91770cbd2df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722721"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887110"
 ---
 # <a name="idebugprogram2"></a>IDebugProgram2
 Ten interfejs reprezentuje program uruchomiony w procesie.
@@ -41,14 +41,14 @@ IDebugProgram2 : IUnknown
 |------------|-----------------|
 |[EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)|Wylicza wątki, które są uruchomione w tym programie.|
 |[GetName](../../../extensibility/debugger/reference/idebugprogram2-getname.md)|Pobiera nazwę programu.|
-|[GetProcess —](../../../extensibility/debugger/reference/idebugprogram2-getprocess.md)|Pobiera proces, w którym działa ten program.|
+|[GetProcess](../../../extensibility/debugger/reference/idebugprogram2-getprocess.md)|Pobiera proces, w którym działa ten program.|
 |[Zakończ](../../../extensibility/debugger/reference/idebugprogram2-terminate.md)|Kończy ten program.|
 |[Dołącz](../../../extensibility/debugger/reference/idebugprogram2-attach.md)|Dołącza do tego programu.|
 |[CanDetach](../../../extensibility/debugger/reference/idebugprogram2-candetach.md)|Określa, czy aparat debugowania (DE) może odłączać od programu.|
 |[Odłącz](../../../extensibility/debugger/reference/idebugprogram2-detach.md)|Odłącza debuger od tego programu.|
 |[GetProgramId](../../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)|Pobiera unikatowy identyfikator globalny dla tego programu.|
 |[GetDebugProperty](../../../extensibility/debugger/reference/idebugprogram2-getdebugproperty.md)|Pobiera właściwości programu.|
-|[Realizacja](../../../extensibility/debugger/reference/idebugprogram2-execute.md)|Kontynuuje działanie tego programu ze stanu zatrzymanego. Wszystkie poprzednie Stany wykonania są wyczyszczone.|
+|[Wykonaj polecenie](../../../extensibility/debugger/reference/idebugprogram2-execute.md)|Kontynuuje działanie tego programu ze stanu zatrzymanego. Wszystkie poprzednie Stany wykonania są wyczyszczone.|
 |[Kontynuuj](../../../extensibility/debugger/reference/idebugprogram2-continue.md)|Kontynuuje działanie tego programu ze stanu zatrzymanego. Wszystkie poprzednie Stany wykonania są zachowywane.|
 |[Krok](../../../extensibility/debugger/reference/idebugprogram2-step.md)|Wykonuje krok.|
 |[CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)|Żąda zatrzymania wykonywania tego programu przy następnym uruchomieniu kodu przez jeden z jego wątków.|
@@ -75,8 +75,8 @@ IDebugProgram2 : IUnknown
 - [Interfejsy podstawowe](../../../extensibility/debugger/reference/core-interfaces.md)
 - [GetProgram](../../../extensibility/debugger/reference/idebugthread2-getprogram.md)
 - [Dalej](../../../extensibility/debugger/reference/ienumdebugprograms2-next.md)
-- [Wydarzenie](../../../extensibility/debugger/reference/idebugportevents2-event.md)
+- [Zdarzenie](../../../extensibility/debugger/reference/idebugportevents2-event.md)
 - [Dołącz](../../../extensibility/debugger/reference/idebugengine2-attach.md)
 - [DestroyProgram](../../../extensibility/debugger/reference/idebugengine2-destroyprogram.md)
-- [Wydarzenie](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+- [Zdarzenie](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
 - [Attach_V7](../../../extensibility/debugger/reference/idebugprogramnode2-attach-v7.md)

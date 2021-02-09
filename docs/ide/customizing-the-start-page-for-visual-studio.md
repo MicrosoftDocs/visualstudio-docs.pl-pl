@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Visual Studio Start Page
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3928ab1cad67cac26865229cbe6d317083a0a4f1
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 855218fb6ff2e90cb06e0f48695b64c75e7036b6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598110"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886590"
 ---
 # <a name="customize-startup"></a>Dostosowywanie uruchamiania
 
@@ -69,7 +69,7 @@ Aby zainstalować niestandardową stronę początkową, Otwórz plik *. vsix* lu
 > [!TIP]
 > Jeśli błąd na niestandardowej stronie początkowej powoduje awarię programu Visual Studio, można otworzyć program Visual Studio w trybie awaryjnym, a następnie ustawić go tak, aby korzystał z domyślnej strony początkowej. Zobacz [/safemode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md)
 

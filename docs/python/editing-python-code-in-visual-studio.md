@@ -5,17 +5,17 @@ ms.date: 03/13/2019
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: eb3e3ca5d18429c60894c42bda12328836dc6fc8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fa0caa8184f3c52a010df1dd1f82718d44be700b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73024721"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888059"
 ---
 # <a name="edit-python-code"></a>Edytowanie kodu w języku Python
 
@@ -72,7 +72,7 @@ Wpisanie @ uruchamia dekoratora i wyświetla potencjalne dekoratory. Wiele z tyc
 ![Dekoratora uzupełniania w edytorze programu Visual Studio](media/code-editing-completion-decorator.png)
 
 > [!Tip]
-> Zachowanie uzupełniania można skonfigurować za pomocą opcji **Narzędzia**  >  **Options**  >  **Edytor tekstu**w języku  >  **Python**  >  **Advanced**. Wśród tych elementów **list filtrów opartych na ciągu wyszukiwania** stosuje filtrowanie sugestii uzupełniania podczas wpisywania (wartość domyślna to zaznaczone), a funkcja **uzupełniania elementu członkowskiego Wyświetla część wspólną** składową, które są obsługiwane przez wszystkie możliwe typy (domyślnie niezaznaczone). Zobacz [Opcje — wyniki uzupełniania](python-support-options-and-settings-in-visual-studio.md#completion-results).
+> Zachowanie uzupełniania można skonfigurować za pomocą opcji **Narzędzia**  >    >  **Edytor tekstu** w języku  >  **Python**  >  **Advanced**. Wśród tych elementów **list filtrów opartych na ciągu wyszukiwania** stosuje filtrowanie sugestii uzupełniania podczas wpisywania (wartość domyślna to zaznaczone), a funkcja **uzupełniania elementu członkowskiego Wyświetla część wspólną** składową, które są obsługiwane przez wszystkie możliwe typy (domyślnie niezaznaczone). Zobacz [Opcje — wyniki uzupełniania](python-support-options-and-settings-in-visual-studio.md#completion-results).
 
 ### <a name="type-hints"></a>Wskazówki dotyczące typu
 
@@ -119,7 +119,7 @@ Użycie polecenia **Uruchom Mypy** w tym kodzie spowoduje wygenerowanie następu
 > [!Tip]
 > W przypadku wersji środowiska Python przed 3,5, Visual Studio Wyświetla również wskazówki dotyczące wpisywania dostarczone przez zbioru typeshed *pliki szczątkowe* (*Pyi*). Możesz użyć plików szczątkowych, gdy nie chcesz uwzględniać wskazówek typu bezpośrednio w kodzie, lub gdy chcesz utworzyć wskazówki dotyczące typów dla biblioteki, która nie korzysta bezpośrednio z nich. Aby uzyskać więcej informacji, zobacz [Tworzenie wycinków dla modułów języka Python](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) w witrynie typu wiki projektu mypy.
 >
-> Program Visual Studio zawiera zestaw pakietów zbioru typeshed dla języka Python 2 i 3, więc dodatkowe pliki do pobrania nie są konieczne. Jeśli jednak chcesz użyć innego zestawu plików, możesz określić ścieżkę w opcji **Narzędzia**  >  **Opcje**  >  **Python**  >  **serwera języka** Python. Zobacz [Opcje — serwer języka](python-support-options-and-settings-in-visual-studio.md#language-server-options).
+> Program Visual Studio zawiera zestaw pakietów zbioru typeshed dla języka Python 2 i 3, więc dodatkowe pliki do pobrania nie są konieczne. Jeśli jednak chcesz użyć innego zestawu plików, możesz określić ścieżkę w opcji **Narzędzia**  >  **Opcje**  >    >  **serwera języka** Python. Zobacz [Opcje — serwer języka](python-support-options-and-settings-in-visual-studio.md#language-server-options).
 >
 > W tej chwili program Visual Studio nie obsługuje wskazówek dotyczących typów w komentarzach.
 ::: moniker-end
@@ -131,7 +131,7 @@ Podczas pisania kodu, który wywołuje funkcję, pomoc w podpisie pojawia się p
 ![Pomoc dotycząca podpisu w edytorze programu Visual Studio](media/code-editing-signature-help.png)
 
 > [!Tip]
-> Aby wyłączyć pomoc dotyczącą podpisu, przejdź do pozycji **Narzędzia**  >  **Opcje**  >  **Edytor tekstu**  >  **Python**  >  **Ogólne** i wyczyść **instrukcje uzupełniania instrukcji**  >  **Parameter information**.
+> Aby wyłączyć pomoc dotyczącą podpisu, przejdź do pozycji **Narzędzia**  >  **Opcje**  >  **Edytor tekstu**  >  **Python**  >  **Ogólne** i wyczyść **instrukcje uzupełniania instrukcji**  >  .
 
 ### <a name="quick-info"></a>Szybkie informacje
 
@@ -154,7 +154,7 @@ Aby dostosować kolory, przejdź do opcji **Narzędzia**  >  **Opcje**  >  **śr
 
 ## <a name="code-snippets"></a>Fragmenty kodu
 
-Fragmenty kodu to fragmenty kodu, które można wstawić do plików przez wpisanie skrótu i naciśnięcie klawisza **Tab**lub użycie opcji **Edytuj**  >  **IntelliSense**  >  **wstawkę kodu** IntelliSense i **Otocz przy** użyciu poleceń, wybierając język **Python**, a następnie wybierając żądany fragment kodu.
+Fragmenty kodu to fragmenty kodu, które można wstawić do plików przez wpisanie skrótu i naciśnięcie klawisza **Tab** lub użycie opcji **Edytuj**  >    >  **wstawkę kodu** IntelliSense i **Otocz przy** użyciu poleceń, wybierając język **Python**, a następnie wybierając żądany fragment kodu.
 
 Na przykład, `class` jest skrótem do fragmentu kodu, który wstawia definicję klasy. Po wpisaniu tego fragmentu zostanie wyświetlony na liście autouzupełniania `class` :
 
@@ -166,11 +166,11 @@ Naciśnięcie klawisza **Tab** spowoduje wygenerowanie reszty klasy. Następnie 
 
 ### <a name="menu-commands"></a>Polecenia menu
 
-W przypadku korzystania z menu **Edytuj**wstawkę  >  **IntelliSense**  >  **kodu** IntelliSense, najpierw wybierz język **Python**, a następnie wybierz fragment kodu:
+W przypadku korzystania z menu **Edytuj** wstawkę  >    >  **kodu** IntelliSense, najpierw wybierz język **Python**, a następnie wybierz fragment kodu:
 
 ![Wybieranie fragmentu kodu za pomocą polecenia Wstaw fragment kodu](media/code-editing-code-snippet-insert.png)
 
-Polecenie **Edytuj**  >  **IntelliSense**  >  **otoczone** technologią IntelliSense i w podobny sposób umieszcza bieżące zaznaczenie w edytorze tekstów wewnątrz wybranego elementu strukturalnego. Załóżmy na przykład, że masz nieco następujący kod:
+Polecenie **Edytuj**  >    >  **otoczone** technologią IntelliSense i w podobny sposób umieszcza bieżące zaznaczenie w edytorze tekstów wewnątrz wybranego elementu strukturalnego. Załóżmy na przykład, że masz nieco następujący kod:
 
 ```python
 sum = 0
@@ -184,7 +184,7 @@ Wybranie tego kodu i wybranie opcji **Otocz za pomocą** polecenia powoduje wyś
 
 ### <a name="examine-available-snippets"></a>Badaj dostępne fragmenty kodu
 
-Dostępne fragmenty kodu można zobaczyć w **Menedżerze fragmentów kodu**, otwartym **za pomocą**  >  poleceń menu**Menedżera fragmentów kodu** i wybierając **Python** jako język:
+Dostępne fragmenty kodu można zobaczyć w **Menedżerze fragmentów kodu**, otwartym **za pomocą**  >  poleceń menu **Menedżera fragmentów kodu** i wybierając **Python** jako język:
 
 ![Menedżer fragmentów kodu w programie Visual Studio](media/code-editing-code-snippets-manager.png)
 
@@ -215,13 +215,13 @@ Pasek nawigacyjny jest wyświetlany w górnej części każdego okna edytora i z
 
 **Edycja**  >  **Przejdź do** polecenia (**Ctrl** + **,**) powoduje wyświetlenie pola wyszukiwania w edytorze, w którym można wpisać dowolny ciąg i zobaczyć możliwe dopasowania w kodzie, który definiuje funkcję, klasę lub zmienną zawierającą ten ciąg. Ta funkcja udostępnia podobną funkcję, jak **Przejdź do definicji** , ale bez konieczności lokalizowania identyfikatora.
 
-Dwukrotne kliknięcie dowolnej nazwy lub wybranie klawiszy strzałek i **Enter**powoduje przejście do definicji tego identyfikatora.
+Dwukrotne kliknięcie dowolnej nazwy lub wybranie klawiszy strzałek i **Enter** powoduje przejście do definicji tego identyfikatora.
 
 ![Przejdź do polecenia w programie Visual Studio](media/code-editing-navigate-to.png)
 
 ### <a name="find-all-references"></a>Znajdź wszystkie odwołania
 
-Opcja **Znajdź wszystkie odwołania** jest przydatnym sposobem odnajdowania, gdzie każdy identyfikator jest zdefiniowany i używany, w tym do importowania i przypisań. Wywołujesz ją przez kliknięcie prawym przyciskiem myszy identyfikatora i wybranie opcji **Znajdź wszystkie odwołania**lub przez umieszczenie karetki w identyfikatorze, a następnie naciśnięcie klawisza **SHIFT** + **F12**. Dwukrotne kliknięcie elementu na liście powoduje przejście do jego lokalizacji.
+Opcja **Znajdź wszystkie odwołania** jest przydatnym sposobem odnajdowania, gdzie każdy identyfikator jest zdefiniowany i używany, w tym do importowania i przypisań. Wywołujesz ją przez kliknięcie prawym przyciskiem myszy identyfikatora i wybranie opcji **Znajdź wszystkie odwołania** lub przez umieszczenie karetki w identyfikatorze, a następnie naciśnięcie klawisza **SHIFT** + **F12**. Dwukrotne kliknięcie elementu na liście powoduje przejście do jego lokalizacji.
 
 ![Znajdź wszystkie odwołania do wyników](media/code-editing-find-all-references.png)
 

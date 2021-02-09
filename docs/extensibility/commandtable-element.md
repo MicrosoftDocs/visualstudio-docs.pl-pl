@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 15c38159-660a-4ef4-9643-aa6fcfca82a9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24e6792bb6199606f1d993492527d39c3f0f7f8b
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 79441880091088cf1d953c8925273e801dc0860d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974515"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887357"
 ---
 # <a name="commandtable-element"></a>Element polecenia
 Polecenie jest głównym elementem pliku *. vsct* . Jest to plik, który definiuje rzeczywisty układ i typ poleceń, które pakietu VSPackage zapewnia IDE. Polecenia mogą obejmować elementy menu, menu, paski narzędzi i pola kombi. Aby uzyskać więcej informacji, zobacz [pliki tabeli poleceń programu Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
@@ -71,5 +71,5 @@ Polecenie jest głównym elementem pliku *. vsct* . Jest to plik, który definiu
 |-------------|-----------------|
 |Brak||
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Pliki tabeli poleceń programu Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

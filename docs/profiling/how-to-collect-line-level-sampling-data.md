@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: 44803aad-dd39-4c2e-9209-d35185d44983
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a760980b16fab17fed7180b0bc74e0271c61e1d
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: 222ba8cd5eb8e45be368d70c204a7c7c76b1a3e0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801069"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886265"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>Instrukcje: zbieranie danych próbkowania na poziomie wiersza
 Próbkowanie na poziomie wiersza jest zdolnością profilera do określenia, gdzie w kodzie funkcji intensywnie korzystających z procesora, takiej jak funkcja, która ma duże wykluczające się próbki, procesor musi spędzać większość czasu.
@@ -58,6 +58,6 @@ Próbkowanie na poziomie wiersza jest zdolnością profilera do określenia, gdz
 
 - Podczas uruchamiania aplikacji wpisz **VSPerfCmd/LineOff \<other arguments>**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)
 - [Analizowanie danych dotyczących narzędzi do oceny wydajności](../profiling/analyzing-performance-tools-data.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 68e2cbd4-861c-453f-8c9f-4ab6afc80e67
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 721f45ebe83e0edb7bf7a182ea71b2181593ad6e
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: b9a777bf11f388873978f450184f1455236e9ff9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479541"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887086"
 ---
 # <a name="extend-properties"></a>Rozwiń właściwości
 Okno [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **Właściwości** to uniwersalna przeglądarka właściwości dla składników com i com+, która obsługuje wszystkie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] produkty. Okno **Właściwości** działa z `ITypeInfo` informacjami o typie i metadanych modelu COM+, aby wyświetlić właściwości czasu projektowania aktualnie zaznaczonego obiektu w dowolnym innym oknie w zintegrowanym środowisku programistycznym (IDE).

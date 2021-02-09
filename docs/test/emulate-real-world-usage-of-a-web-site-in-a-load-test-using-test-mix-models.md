@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: b7fae849-0538-40d1-ab35-2bb3a0fe4393
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: ba5bba0b90acdfab932196ceda7dd8ad971efde1
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: e79d6e92df6f2b22fdced488b74f072b57fb8d84
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441264"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887864"
 ---
 # <a name="test-mix-models-overview"></a>Przegląd modeli testów mieszanych
 
@@ -104,7 +104,7 @@ Możesz wybrać testy do uruchomienia na początku i na końcu sesji testowania 
 
 - Nowi użytkownicy, zgodnie z definicją wyrażoną w procentach właściwości scenariusza nowych użytkowników, zawsze wykonują testy inicjacji, jedną iterację testu z mieszanego testu i zakończenia testu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Edytuj modele mieszane tekstu, aby określić prawdopodobieństwo uruchomienia testu przez użytkownika wirtualnego](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)
 - [Edytuj wzorce obciążenia, aby modelować działania użytkownika wirtualnego](../test/edit-load-patterns-to-model-virtual-user-activities.md)

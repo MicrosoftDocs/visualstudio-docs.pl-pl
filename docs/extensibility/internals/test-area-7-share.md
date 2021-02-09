@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6ec4780a-bda4-4327-bb3e-c6c9e7eabf35
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02593af854a9e68e7f4a6cc66f54452d3c3d3f94
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 5c006c5f4746f83e571475d93bedc452c7c23c75
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487611"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888137"
 ---
 # <a name="test-area-7-share"></a>Obszar testowy 7: Udostępnij
 Ten obszar testowy obejmuje udostępnianie elementów między lokalizacjami za pośrednictwem polecenia **udostępniania** .
@@ -60,5 +60,5 @@ Ten obszar testowy obejmuje udostępnianie elementów między lokalizacjami za p
 |Udostępnianie folderu w załadowanym projekcie — rekursywnie|1. Utwórz nowy projekt.<br />2. Dodaj rozwiązanie do kontroli źródła.<br />3. Wybierz projekt.<br />4. Otwórz okno dialogowe **udostępnianie** (  ->  **udział kontroli źródła** plików  ->  ).<br />5. Wybierz folder.<br />6. Udostępnij folder rekursywnie w projekcie.|Typowe oczekiwane zachowanie.|
 |Udostępnianie kilku plików z jednego projektu do innego|1. Utwórz nowy projekt zawierający kilka plików.<br />2. Dodaj rozwiązanie do kontroli źródła.<br />3. Zamknij rozwiązanie.<br />4. Utwórz nowy projekt w nowym rozwiązaniu.<br />5. Dodaj rozwiązanie do kontroli źródła.<br />6. Wybierz projekt.<br />7. Otwórz okno dialogowe **udostępnianie** (  ->  **udział kontroli źródła** plików  ->  ).<br />8. Udostępnij w aktualnie otwartym projekcie kilka plików z wcześniej utworzonego projektu.|Typowe oczekiwane zachowanie.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Przewodnik testowania wtyczek kontroli kodu źródłowego](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

@@ -14,18 +14,18 @@ helpviewer_keywords:
 ms.assetid: 0807a28d-2e40-4a51-ab10-308d808ded6b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0da285cfef49bd495fbecf39131e49cacd0476a5
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 7adb711c77f4bb2dead3190d40065e148760b034
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350923"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887474"
 ---
 # <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>Instrukcje: Określanie pełnych plików dziennika dla wdrożeń ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] przechowuje pliki dziennika aktywności dla wszystkich wdrożeń. Te dzienniki zawierają szczegółowe informacje dotyczące instalowania, inicjowania, aktualizowania i odinstalowywania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia. Aby zwiększyć szczegóły, które [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zapisuje w tych plikach dziennika, użyj Edytora rejestru ( *regedit.exe* ), aby określić poziom szczegółowości.
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] przechowuje pliki dziennika aktywności dla wszystkich wdrożeń. Te dzienniki zawierają szczegółowe informacje dotyczące instalowania, inicjowania, aktualizowania i odinstalowywania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia. Aby zwiększyć szczegóły, które [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zapisuje w tych plikach dziennika, użyj Edytora rejestru (*regedit.exe*), aby określić poziom szczegółowości.
 
 > [!CAUTION]
 > Jeśli używasz edytora rejestru nieprawidłowo, może to spowodować poważne problemy, które mogą wymagać ponownego zainstalowania systemu operacyjnego. Korzystanie z edytora rejestru na własne ryzyko.

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 2d472a24-3813-4f5f-9783-b491ad8a71ad
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8f3f79a61729a641ee7c046ddd196a648469fb3
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 33e52a277f621c80773518ae4b9606d7a2c222db
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480528"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886993"
 ---
 # <a name="feedback-to-the-user"></a>Opinie do użytkownika
 W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowanym środowisku programistycznym (IDE), opinie wizualne dotyczące dostępnych funkcji opierają się na bieżącym wyborze użytkownika i globalnym kontekście wyboru. W poniższej tabeli wymieniono funkcje dostępne w różnych kontekstach wyboru.

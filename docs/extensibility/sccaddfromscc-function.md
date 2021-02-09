@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 902e764d-200e-46e1-8c42-4da7b037f9a0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1dd32e31330cdce958e463a40a4d92f88b09afb2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e35ae460d6ceb505bc7ad64a0e522bf2841260f2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701245"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886616"
 ---
 # <a name="sccaddfromscc-function"></a>SccAddFromScc, funkcja
 Ta funkcja umożliwia użytkownikowi przeglądanie w poszukiwaniu plików, które znajdują się już w systemie kontroli źródła, a następnie tworzą część tych plików w bieżącym projekcie. Na przykład ta funkcja może pobrać wspólny plik nagłówkowy do bieżącego projektu bez kopiowania pliku. Tablica zwrotna plików, `lplpFileNames` , zawiera listę plików, które użytkownik chce dodać do projektu IDE.

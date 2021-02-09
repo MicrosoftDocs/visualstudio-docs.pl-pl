@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ca2f4e43-322c-4431-8680-52da846940bc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bf16582cdc9bba6529d237d74d56ebded299fb9
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: b071631018ef398be481ccf514b33296e55fc2e8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487923"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886876"
 ---
 # <a name="web-project-essentials"></a>Podstawowe informacje dotyczące projektów internetowych
 Projekty sieci Web tworzą aplikacje sieci Web. Możesz użyć projektu sieci Web, aby utworzyć aplikację sieci Web, która ma inteligentne strony sieci Web. Inteligentna Strona sieci Web zawiera kod po stronie serwera, który renderuje stronę sieci Web na żądanie.
@@ -59,5 +59,5 @@ Projekty sieci Web tworzą aplikacje sieci Web. Możesz użyć projektu sieci We
 
   - Znaczniki błędów (Red squigglies) powinny zawsze być tworzone w podstawowym buforze edytora kodu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Projekty internetowe](../../extensibility/internals/web-projects.md)

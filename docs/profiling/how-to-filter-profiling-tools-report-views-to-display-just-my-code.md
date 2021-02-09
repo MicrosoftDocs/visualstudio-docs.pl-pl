@@ -6,16 +6,16 @@ ms.date: 02/15/2018
 ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 983bba2f5b802addc1706b7e7d293173e3aaca31
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: 8a2990a30295d59806d169baa71e574e5cb0eb65
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801227"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886122"
 ---
 # <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>Instrukcje: filtrowanie widoków raportów narzędzi profilowania do wyświetlania Tylko mój kod
 
@@ -37,6 +37,6 @@ Program Visual Studio udostępnia filtrowanie raportów dotyczących wydajności
 
 3. W obszarze **Ustawienia ogólne** Usuń zaznaczenie pola wyboru **Włącz tylko mój kod** .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 [Dostosowywanie widoków raportów narzędzi wydajności](../profiling/customizing-performance-tools-report-views.md)

@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 6c552700-dda3-49fe-af98-4717344fda07
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cb659b2191e156aac303678374fe726856d9a77
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 50f3e5d8500e57dd336919a5da58af094db97169
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349597"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887422"
 ---
 # <a name="how-to-specify-where-visual-studio-copies-the-files"></a>Instrukcje: Określanie, gdzie program Visual Studio ma kopiować pliki
 W przypadku publikowania aplikacji przy użyciu technologii ClickOnce `Publish Location` Właściwość określa lokalizację, w której są umieszczane pliki i manifest aplikacji. Może to być ścieżka do pliku lub ścieżka do serwera FTP.
@@ -36,17 +36,17 @@ W przypadku publikowania aplikacji przy użyciu technologii ClickOnce `Publish L
 
 ### <a name="to-specify-a-publishing-location"></a>Aby określić lokalizację publikowania
 
-1. Po wybraniu projektu w **Eksplorator rozwiązań** , w menu **projekt** kliknij polecenie **Właściwości**.
+1. Po wybraniu projektu w **Eksplorator rozwiązań**, w menu **projekt** kliknij polecenie **Właściwości**.
 
 2. Kliknij kartę **Publikowanie** .
 
 3. W polu **Publikuj lokalizację** wprowadź lokalizację publikowania przy użyciu jednego z następujących formatów:
 
-   - Aby opublikować w udziale plików lub w ścieżce dysku, wprowadź ścieżkę przy użyciu ścieżki UNC ( *\\ \Server\ApplicationName* ) lub ścieżki pliku ( *C:\Deploy\ApplicationName* ).
+   - Aby opublikować w udziale plików lub w ścieżce dysku, wprowadź ścieżkę przy użyciu ścieżki UNC (*\\ \Server\ApplicationName*) lub ścieżki pliku (*C:\Deploy\ApplicationName*).
 
    - Aby opublikować na serwerze FTP, wprowadź ścieżkę przy użyciu formatu <em>FTP://FTP.Microsoft.com/ \<ApplicationName> </em>.
 
-     Zwróć uwagę, że tekst musi być obecny w polu **Lokalizacja publikowania** , aby można było wykonać przycisk Przeglądaj ( **...** ).
+     Zwróć uwagę, że tekst musi być obecny w polu **Lokalizacja publikowania** , aby można było wykonać przycisk Przeglądaj (**...**).
 
 ## <a name="see-also"></a>Zobacz też
 - [Publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md)

@@ -13,16 +13,16 @@ helpviewer_keywords:
 - profiling tools, using windows counters
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ccbdf9afb843c8bdac2d904dc22375a4a69e733a
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: b3f1e8f38ee9cb63dfe5a79f0b410e957b4cefaf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801046"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886213"
 ---
 # <a name="how-to-collect-windows-counter-data"></a>Instrukcje: zbieranie danych licznika systemu Windows
 
@@ -49,7 +49,7 @@ Liczniki systemu Windows są licznikami wydajności systemu, które można zbier
 
 8. Kliknij przycisk **Zastosuj.**
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md) 
  [Właściwości](../profiling/performance-session-properties.md) 

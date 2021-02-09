@@ -11,15 +11,15 @@ f1_keywords:
 ms.assetid: f48f62d9-16ff-4a2e-8c01-5cbe99513788
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b7e746d37edaca87abfca42f315a65a470369e7e
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 095828e711f860662432edd767b19493b73c56c0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727583"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887578"
 ---
 # <a name="graphics-object-table"></a>Tabela obiektów graficznych
 Tabela obiektów graficznych w analizie grafiki programu Visual Studio ułatwia zrozumienie obiektów Direct3D, które obsługują ramkę gry lub aplikacji.
@@ -40,14 +40,14 @@ Tabela obiektów graficznych w analizie grafiki programu Visual Studio ułatwia 
 
 |Kolumna|Opis|
 |------------|-----------------|
-|**Identyfikatora**|Identyfikator obiektu.|
+|**Identyfikator**|Identyfikator obiektu.|
 |**Nazwa**|Informacje specyficzne dla aplikacji, które zostały ustawione dla obiektu za pomocą funkcji Direct3D `SetPrivateData` — zwykle do dostarczania dodatkowych informacji identyfikujących obiekt.|
 |**Typ**|Typ obiektu.|
 |**Aktywny**|Wyświetla wartość "*" dla obiektu, który został ustawiony w D3D10Device lub D3D11DeviceContext w przechwyconej ramce.<br /><br /> Odnosi się to do obiektów, które są wyświetlane w postaci szarego tekstu, ale zawiera wpis kolumny, którego można użyć w celu sortowania tabeli obiektów.|
 |**Rozmiar**|Rozmiar obiektu w bajtach.|
 |**Format**|Format obiektu. Na przykład format obiektu tekstury lub model cieniowania obiektu cieniowania.|
-|**Szerokość**|Szerokość obiektu tekstury. Nie dotyczy innych typów obiektów.|
-|**Proporcj**|Wysokość obiektu tekstury. Nie dotyczy innych typów obiektów.|
+|**Width**|Szerokość obiektu tekstury. Nie dotyczy innych typów obiektów.|
+|**Height**|Wysokość obiektu tekstury. Nie dotyczy innych typów obiektów.|
 |**Ścisł**|Głębokość obiektu tekstury trójwymiarowej. Jeśli teksturą nie jest 3-D, wówczas wartość jest równa 0. Nie dotyczy innych typów obiektów.|
 |**MIPS**|Liczba poziomów MIP, które ma obiekt tekstury. Nie dotyczy innych typów obiektów.|
 |**Rozmiaru tablicy**|Liczba tekstur w tablicy tekstury. Zakres jest z przedziału od 1 do górnej granicy zdefiniowanej przez bieżący poziom funkcji. W przypadku mapy modułu ta wartość jest 6 razy większa od liczby map modułów w tablicy.|

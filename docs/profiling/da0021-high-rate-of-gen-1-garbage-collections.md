@@ -9,16 +9,16 @@ f1_keywords:
 ms.assetid: ebf5d9b3-a1ac-4688-8f0f-39a85f4dd15f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 391ce629eea295f1436708b363b54fb0213914a4
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 23d7e1f2c004b63f93f9f10334698eab14388421
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036161"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886369"
 ---
 # <a name="da0021-high-rate-of-gen-1-garbage-collections"></a>DA0021: Duża częstotliwość odzyskiwania pamięci 1. generacji
 
@@ -27,7 +27,7 @@ ms.locfileid: "90036161"
 |Identyfikator reguły|DA0021|
 |Kategoria|Użycie .NET Framework|
 |Metody profilowania|Wszystko|
-|Wiadomość|Występuje dość duża liczba wyrzucania elementów bezużytecznych generacji 1. W przypadku, gdy konstrukcja większość struktur danych programu jest alokowana i utrwalana przez dłuższy czas, nie jest to problem. Jeśli jednak takie zachowanie jest niezamierzone, aplikacja może przypinać obiekty. Jeśli nie masz pewności, możesz zebrać dane alokacji pamięci .NET i informacje o okresie istnienia obiektu, aby zrozumieć wzorzec alokacji pamięci używanej przez aplikację.|
+|Komunikat|Występuje dość duża liczba wyrzucania elementów bezużytecznych generacji 1. W przypadku, gdy konstrukcja większość struktur danych programu jest alokowana i utrwalana przez dłuższy czas, nie jest to problem. Jeśli jednak takie zachowanie jest niezamierzone, aplikacja może przypinać obiekty. Jeśli nie masz pewności, możesz zebrać dane alokacji pamięci .NET i informacje o okresie istnienia obiektu, aby zrozumieć wzorzec alokacji pamięci używanej przez aplikację.|
 |Typ reguły|Informacje|
 
  Podczas profilowania przy użyciu metod pobierania próbek, pamięci .NET lub rywalizacji o zasoby należy zebrać co najmniej 10 próbek, aby wyzwolić tę regułę.
@@ -43,7 +43,7 @@ ms.locfileid: "90036161"
  Ta reguła jest wyzwalana, gdy wystąpiło zbyt wiele kolekcji elementów bezużytecznych generacji 1. Jeśli zbyt wiele dość krótkotrwałych obiektów przeżyje kolekcję 0, ale można je zebrać w kolekcji generacji 1, koszty zarządzania pamięcią mogą być nadmierne. Aby uzyskać więcej informacji, zapoznaj się z wpisem [kryzysowym](/archive/blogs/ricom/mid-life-crisis) w systemie Mariani w witrynie MSDN w sieci Web.
 
 ## <a name="how-to-investigate-a-warning"></a>Jak zbadać ostrzeżenie
- Kliknij dwukrotnie komunikat w oknie Lista błędów, aby przejść do [widoku znaczniki](../profiling/marks-view.md) danych profilowania. Znajdź kolumny kolekcji ** \\ Gen 0 w programie .NET CLR** i w polu Liczba **danych programu .NET CLR \\ w obszarze kolekcje generacji 1** . Ustal, czy istnieją konkretne etapy wykonywania programu, w których wyrzucanie elementów bezużytecznych występuje częściej. Porównaj te wartości w kolumnie **% Time w usłudze GC** , aby sprawdzić, czy wzorzec alokacji pamięci zarządzanej powoduje nadmierne obciążenie zarządzania pamięcią.
+ Kliknij dwukrotnie komunikat w oknie Lista błędów, aby przejść do [widoku znaczniki](../profiling/marks-view.md) danych profilowania. Znajdź kolumny kolekcji **\\ Gen 0 w programie .NET CLR** i w polu Liczba **danych programu .NET CLR \\ w obszarze kolekcje generacji 1** . Ustal, czy istnieją konkretne etapy wykonywania programu, w których wyrzucanie elementów bezużytecznych występuje częściej. Porównaj te wartości w kolumnie **% Time w usłudze GC** , aby sprawdzić, czy wzorzec alokacji pamięci zarządzanej powoduje nadmierne obciążenie zarządzania pamięcią.
 
  Aby zrozumieć wzorzec zastosowania pamięci zarządzanej, należy go ponownie uruchomić, a.NET profil alokacji pamięci i żądania okresu istnienia obiektu.
 

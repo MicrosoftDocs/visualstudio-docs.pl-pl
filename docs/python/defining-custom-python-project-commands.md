@@ -5,17 +5,17 @@ ms.date: 11/12/2018
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6e9e7fe418528bb888672b1b73d421d811b9e69e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 43270ee1ec956f45b76d23a6b649ad2d870638c5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86386988"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887929"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Definiowanie poleceń niestandardowych dla projektów języka Python
 
@@ -36,9 +36,9 @@ Każde polecenie niestandardowe może odwoływać się do pliku języka Python, 
 > [!Tip]
 > Za każdym razem, gdy wprowadzisz zmiany w pliku projektu w edytorze tekstu, konieczne jest ponowne załadowanie projektu w programie Visual Studio, aby zastosować te zmiany. Na przykład należy załadować projekt po dodaniu niestandardowych definicji poleceń dla tych poleceń, które mają być wyświetlane w menu kontekstowym projektu.
 >
-> W miarę możliwości program Visual Studio udostępnia środki umożliwiające bezpośrednie edytowanie pliku projektu. Najpierw kliknij prawym przyciskiem myszy plik projektu i wybierz polecenie **Zwolnij projekt**, a następnie kliknij ponownie prawym przyciskiem myszy i wybierz polecenie ** \<project-name> Edytuj** , aby otworzyć projekt w edytorze programu Visual Studio. Następnie wprowadź i Zapisz zmiany, kliknij prawym przyciskiem myszy projekt, a następnie wybierz polecenie **Załaduj ponownie projekt**, które również poprosi o potwierdzenie zamknięcia pliku projektu w edytorze.
+> W miarę możliwości program Visual Studio udostępnia środki umożliwiające bezpośrednie edytowanie pliku projektu. Najpierw kliknij prawym przyciskiem myszy plik projektu i wybierz polecenie **Zwolnij projekt**, a następnie kliknij ponownie prawym przyciskiem myszy i wybierz polecenie **\<project-name> Edytuj** , aby otworzyć projekt w edytorze programu Visual Studio. Następnie wprowadź i Zapisz zmiany, kliknij prawym przyciskiem myszy projekt, a następnie wybierz polecenie **Załaduj ponownie projekt**, które również poprosi o potwierdzenie zamknięcia pliku projektu w edytorze.
 >
-> Jednak podczas tworzenia polecenia niestandardowego wszystkie te kliknięcia mogą stać się żmudnym. Aby zapewnić wydajniejszy przepływ pracy, Załaduj projekt w programie Visual Studio, a następnie otwórz plik *. pyproj* w osobnym edytorze całkowicie (na przykład inne wystąpienie programu Visual Studio, Visual Studio Code, notatnik itp.). Po zapisaniu zmian w edytorze i przełączeniu się do programu Visual Studio program Visual Studio wykrywa zmiany i pyta, czy projekt został** \<name> zmodyfikowany poza środowiskiem.** Wybierz pozycję **Załaduj ponownie** , a zmiany zostaną zastosowane natychmiast po jednym kroku.
+> Jednak podczas tworzenia polecenia niestandardowego wszystkie te kliknięcia mogą stać się żmudnym. Aby zapewnić wydajniejszy przepływ pracy, Załaduj projekt w programie Visual Studio, a następnie otwórz plik *. pyproj* w osobnym edytorze całkowicie (na przykład inne wystąpienie programu Visual Studio, Visual Studio Code, notatnik itp.). Po zapisaniu zmian w edytorze i przełączeniu się do programu Visual Studio program Visual Studio wykrywa zmiany i pyta, czy projekt został **\<name> zmodyfikowany poza środowiskiem.** Wybierz pozycję **Załaduj ponownie** , a zmiany zostaną zastosowane natychmiast po jednym kroku.
 
 ## <a name="walkthrough-add-a-command-to-a-project-file"></a>Przewodnik: Dodawanie polecenia do pliku projektu
 
@@ -46,9 +46,9 @@ Aby zaznajomić się z poleceniami niestandardowymi, w tej sekcji przedstawiono 
 
 1. Utwórz nowy projekt o nazwie "Python-CustomCommands" przy użyciu szablonu **aplikacji języka Python** . (Zobacz [Szybki Start: Tworzenie projektu w języku Python na podstawie szablonu,](quickstart-02-python-in-visual-studio-project-from-template.md) Aby uzyskać instrukcje, jeśli jeszcze nie znasz tego procesu).
 
-1. W *Python_CustomCommands. PR*Dodaj kod `print("Hello custom commands")` .
+1. W *Python_CustomCommands. PR* Dodaj kod `print("Hello custom commands")` .
 
-1. Kliknij prawym przyciskiem myszy projekt w **Eksplorator rozwiązań**, wybierz opcję **Python**i zwróć uwagę, że jedyne polecenie, które pojawia się w podmenu, jest **uruchamiane PyLint**. Twoje polecenia niestandardowe są wyświetlane w tym samym podmenu.
+1. Kliknij prawym przyciskiem myszy projekt w **Eksplorator rozwiązań**, wybierz opcję **Python** i zwróć uwagę, że jedyne polecenie, które pojawia się w podmenu, jest **uruchamiane PyLint**. Twoje polecenia niestandardowe są wyświetlane w tym samym podmenu.
 
 1. Zgodnie z sugestią we wprowadzeniu Otwórz środowisko *Python-CustomCommands. pyproj* w osobnym edytorze tekstów. Następnie Dodaj następujące wiersze na końcu pliku tuż wewnątrz zamykania `</Project>` i Zapisz plik.
 

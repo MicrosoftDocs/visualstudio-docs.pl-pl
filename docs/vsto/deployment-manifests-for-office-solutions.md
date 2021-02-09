@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, deployment manifests
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 31909d2a6765c357635cd0a8c039132f14b5967d
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 0a6c8cf672c4799a53c9df947f15bca38cb02589
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845508"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887604"
 ---
 # <a name="deployment-manifests-for-office-solutions"></a>Manifesty wdrożenia dla rozwiązań pakietu Office
   Manifest wdrożenia to plik XML, który opisuje ustawienia wdrażania rozwiązania pakietu Office i identyfikuje bieżącą wersję aplikacji.
@@ -185,6 +185,6 @@ ms.locfileid: "96845508"
 </asmv1:assembly>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md)

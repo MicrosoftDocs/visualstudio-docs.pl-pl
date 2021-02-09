@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 6c1ef36b-25f7-4ad0-b29a-51801b7a5420
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bdd2570f94b0f5577c7c09a696906338245f77a4
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 709a5a64164ed6c80c29a8e554d2b07050e18339
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351391"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886525"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>Zarządzanie podpisywaniem zestawu i manifestu
 
@@ -40,13 +40,13 @@ Aby uzyskać informacje o podpisywaniu zestawów w projektach języka C++, zobac
 
 Można podpisywać zestawy .NET i manifesty aplikacji:
 
-- Pliki wykonywalne ( *. exe* )
+- Pliki wykonywalne (*. exe*)
 
-- Manifesty aplikacji ( *. exe. manifest* )
+- Manifesty aplikacji (*. exe. manifest*)
 
-- Manifesty wdrożenia ( *. Application* )
+- Manifesty wdrożenia (*. Application*)
 
-- Współużytkowane zestawy składników ( *. dll* )
+- Współużytkowane zestawy składników (*. dll*)
 
 Podpisz następujące typy zasobów:
 
@@ -60,7 +60,7 @@ Ogólnie rzecz biorąc nie należy podpisywać plików wykonywalnych. Silnie naz
 
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>Jak podpisać zestaw w programie Visual Studio
 
-Aplikację lub składnik należy podpisać przy użyciu karty **podpisywanie** okna właściwości projektu (kliknij prawym przyciskiem myszy węzeł projektu w **Eksplorator rozwiązań** i wybierz polecenie **Właściwości** ). Wybierz kartę **podpisywanie** , a następnie zaznacz pole wyboru **podpisz zestaw**  .
+Aplikację lub składnik należy podpisać przy użyciu karty **podpisywanie** okna właściwości projektu (kliknij prawym przyciskiem myszy węzeł projektu w **Eksplorator rozwiązań** i wybierz polecenie **Właściwości**). Wybierz kartę **podpisywanie** , a następnie zaznacz pole wyboru **podpisz zestaw**  .
 
 Określ plik klucza. Jeśli zdecydujesz się utworzyć nowy plik klucza, nowe pliki kluczy są zawsze tworzone w formacie *PFX* . Musisz mieć nazwę i hasło dla nowego pliku.
 
