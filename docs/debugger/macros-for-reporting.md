@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: f2085314-a3a8-4caf-a5a4-2af9ad5aad05
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1920b4eddcbffa5cd51d548ade9af3a3a2f208d0
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 0356f05c3f0dac636813d1632f628dd02dd28923
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903795"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893129"
 ---
 # <a name="macros-for-reporting"></a>Makra raportowania
 Na potrzeby debugowania można użyć makr **_RPTn** i **_RPTFN** zdefiniowanych w CRTDBG. H, aby zastąpić użycie `printf` instrukcji. Nie musisz zamykać ich w **#ifdef** s, ponieważ nie jest on automatycznie znikany w kompilacji wydania, gdy **_DEBUG** nie jest zdefiniowana.

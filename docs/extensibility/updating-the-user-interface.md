@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 376e2f56-e7bf-4e62-89f5-3dada84a404b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fae228b3fab1e25f92c02da2512abdd78edda0db
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: fd088d6887e7c7b60ea5a4101de050149583c5a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97716032"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893454"
 ---
 # <a name="updating-the-user-interface"></a>Aktualizowanie interfejsu użytkownika
 Po zaimplementowaniu polecenia można dodać kod, aby zaktualizować interfejs użytkownika do stanu nowych poleceń.

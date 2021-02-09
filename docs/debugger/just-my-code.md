@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c902147bd1b7761bb6fdab1bc577af6a1990bed
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 9d4ea8bb6a1d03d3b61ab5be51992a7b51f661d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903886"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893259"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Debuguj tylko kod użytkownika z Tylko mój kod
 
@@ -145,7 +145,7 @@ Plik *. natjmc* jest plikiem XML o następującej składni:
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`Name`|Wymagane. Pełna ścieżka modułu lub modułów. Możesz użyć symboli wieloznacznych systemu Windows `?` (zero lub jeden znak) i `*` (zero lub więcej znaków). Przykład:<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> nakazuje debugerowi traktowanie wszystkich modułów w *\3rdParty\UtilLibs* na dowolnym dysku jako kod zewnętrzny.|
+|`Name`|Wymagane. Pełna ścieżka modułu lub modułów. Możesz użyć symboli wieloznacznych systemu Windows `?` (zero lub jeden znak) i `*` (zero lub więcej znaków). Na przykład<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> nakazuje debugerowi traktowanie wszystkich modułów w *\3rdParty\UtilLibs* na dowolnym dysku jako kod zewnętrzny.|
 |`Company`|Opcjonalny. Nazwa firmy, która publikuje moduł osadzony w pliku wykonywalnym. Tego atrybutu można użyć, aby odróżnić moduły.|
 
  **Atrybuty elementu pliku**

@@ -7,21 +7,21 @@ ms.topic: reference
 ms.assetid: 8b7b4aa6-d27d-45c8-87c2-641440d38afc
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a9aad147f0d8f47a64b6d083cf3e008dec8f6a2
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 600b500ae5672dfd5332168ec11f05c7b27b14bc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435811"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894169"
 ---
 # <a name="flowchart-activity-designers"></a>Projektanci działań Flowchart
 
 Projektant przepływu pracy obejmuje wiele działań dostarczonych przez system, których można używać podczas konstruowania przepływów pracy. Ta sekcja zawiera działania dostarczone przez system służące do zarządzania schematami blokowymi w ramach przepływu pracy. W poniższych tematach opisano te działania i przedstawiono wskazówki dotyczące ich używania.
 
-## <a name="reference"></a>Odwołanie
+## <a name="reference"></a>Dokumentacja
  <xref:System.Activities.Activity>
 
  <xref:System.Activities.Statements.Flowchart>

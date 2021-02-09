@@ -13,15 +13,15 @@ helpviewer_keywords:
 - XMLMappedRange control, events
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f3b3fd140787d44cdd8364ce77d5292dfcd83f54
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 2849b815c38555be6b149544bb9d9953fe85ec4b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525898"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894403"
 ---
 # <a name="xmlmappedrange-control"></a>XmlMappedRange — formant
   <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>Formant jest zakresem, który jest tworzony tylko wtedy, gdy niepowtarzany element schematu jest mapowany na komórkę w Microsoft Office Excel. Na przykład, gdy `maxOccurs` atrybut elementu schematu jest równy 1. Po utworzeniu mapowanego zakresu XML przez program Visual Studio można bezpośrednio programować bez konieczności przechodzenia przez model obiektów programu Excel. <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>Po usunięciu mapowania elementu można usunąć tylko formant w programie Excel.

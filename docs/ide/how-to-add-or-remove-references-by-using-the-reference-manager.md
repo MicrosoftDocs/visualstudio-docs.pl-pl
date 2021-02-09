@@ -20,15 +20,15 @@ helpviewer_keywords:
 - referencing components, assemblies not listed
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4884fdc857abd524fa62bb126e7a74af48e9ca88
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 82300d90d890cf632693fe07b5873423a29da0ed
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597317"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893363"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Instrukcje: Dodawanie lub usuwanie odwołań za pomocą Menedżera odwołań
 
@@ -214,6 +214,6 @@ W przypadku odwoływania się do pliku winmd, oczekiwany układ polega na tym, �
 
 Pasek wyszukiwania w oknie dialogowym Menedżer odwołań działa nad kartą, na której się skupia. Na przykład, jeśli użytkownik wpisze na pasku wyszukiwania przycisk "system", podczas gdy karta **rozwiązanie** jest fokusem, wyszukiwanie nie zwróci żadnych wyników, chyba że rozwiązanie składa się z nazwy projektu zawierającej "system".
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Zarządzanie odwołaniami w projekcie](../ide/managing-references-in-a-project.md)

@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: f51742a8-2c9a-47d1-8a23-18459d03ae19
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e6bbadcbabbe1dbd274c48f2325217c17d3933d
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 1b661dddf6c07bca34e5ea044fd1338da68f4e19
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438090"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894312"
 ---
 # <a name="delay-activity-designer"></a>Delay, projektant działań
 
@@ -29,7 +29,7 @@ Projektant działań **opóźnionych** służy do tworzenia i konfigurowania <xr
 
 ### <a name="use-the-delay-activity-designer"></a>Korzystanie z projektanta działań opóźnionych
 
-Projektanta aktywności **opóźnienia** można znaleźć w kategorii elementy **pierwotne** **przybornika** , do którego uzyskuje się dostęp przez kliknięcie karty **przybornika** w Projektant przepływu pracy. Alternatywnie możesz wybrać **Przybornik** z menu **Widok** lub nacisnąć **klawisze CTRL** + **Alt** + **X**.
+Projektanta aktywności **opóźnienia** można znaleźć w kategorii elementy **pierwotne** **przybornika**, do którego uzyskuje się dostęp przez kliknięcie karty **przybornika** w Projektant przepływu pracy. Alternatywnie możesz wybrać **Przybornik** z menu **Widok** lub nacisnąć **klawisze CTRL** + **Alt** + **X**.
 
 Projektanta aktywności **opóźnienia** można przeciągnąć z **przybornika** i porzucić na Projektant przepływu pracy powierzchnię, wszędzie tam, gdzie działania są zwykle umieszczane, na przykład wewnątrz <xref:System.Activities.Statements.Sequence> . Porzucenie projektanta działań powoduje utworzenie <xref:System.Activities.Statements.Delay> działania z domyślnym <xref:System.Activities.Activity.DisplayName%2A> opóźnieniem. <xref:System.Activities.Activity.DisplayName%2A>Można edytować w nagłówku projektanta działań **opóźnionych** lub w polu **DisplayName** siatki właściwości.
 
@@ -45,7 +45,7 @@ W poniższej tabeli przedstawiono <xref:System.Activities.Statements.Delay> wła
 ## <a name="see-also"></a>Zobacz też
 
 - [Typy pierwotne](../workflow-designer/primitives-activity-designers.md)
-- [Ponownie](../workflow-designer/assign-activity-designer.md)
+- [Przypisanie](../workflow-designer/assign-activity-designer.md)
 - [Delay, projektant działań](../workflow-designer/delay-activity-designer.md)
 - [InvokeMethod](../workflow-designer/invokemethod-activity-designer.md)
 - [WriteLine](../workflow-designer/writeline-activity-designer.md)

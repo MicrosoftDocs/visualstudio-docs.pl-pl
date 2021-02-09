@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 85e73b73-29dc-464f-8734-ed308742c435
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d04b8329d425df53c5414f593393e86a3be73c47
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 80a944c077d520d6d9ecac9557179311ecf20281
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974637"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893077"
 ---
 # <a name="best-practices-for-implementing-a-source-control-plug-in"></a>Najlepsze rozwiązania dotyczące implementowania wtyczki kontroli źródła
 Poniższe szczegóły techniczne mogą pomóc w niezawodnym wdrożeniu wtyczki kontroli źródła w programie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
@@ -59,6 +59,6 @@ Poniższe szczegóły techniczne mogą pomóc w niezawodnym wdrożeniu wtyczki k
 
  Większość konfigurowalnych opcji ustawień użytkownika nie jest zdefiniowana w ten sposób, ponieważ różnią się one między wtyczkami kontroli źródła. W związku z tym zalecanym mechanizmem jest przycisk **Zaawansowane** . Na przykład w oknie dialogowym **pobieranie** środowisko IDE wyświetla tylko informacje, które rozumie, ale również wyświetla przycisk **Zaawansowane** , jeśli wtyczka zawiera opcje dla tego polecenia. Gdy użytkownik kliknie przycisk **Zaawansowane** , IDE wywołuje [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) , aby włączyć wtyczkę kontroli źródła w celu wyświetlenia monitu o podanie informacji, takich jak bitflags lub Data/godzina. Wtyczka zwraca te informacje w strukturze, która jest przenoszona z powrotem podczas wykonywania `SccGet` polecenia.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wtyczki kontroli źródła](../extensibility/source-control-plug-ins.md)
 - [Tworzenie wtyczki kontroli źródła](../extensibility/internals/creating-a-source-control-plug-in.md)

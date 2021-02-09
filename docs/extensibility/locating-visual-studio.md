@@ -8,15 +8,15 @@ helpviewer_keywords:
 - deployment, VSIX
 ms.assetid: 680c3b25-7901-4768-8363-6d1fcd1ea636
 ms.author: heaths
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8935af62b16ed6dd6d0d5d61412f347a95f32f23
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: 175623723b8f7b59a644a439afd10246eab01c95
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97616291"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893597"
 ---
 # <a name="locate-visual-studio"></a>Znajdowanie programu Visual Studio
 
@@ -31,7 +31,7 @@ Jest to szybki interfejs API tylko do odczytu z pakietami NuGet dostępnymi dla 
 
 Można zlokalizować pojedyncze wystąpienie z daną ścieżką lub bieżącym procesem lub wyliczyć wszystkie wystąpienia. Zapoznaj się z [naszymi](https://github.com/Microsoft/vs-setup-samples) przykładami, aby uzyskać pełne Przykłady sposobu lokalizowania programu Visual Studio.
 
-## <a name="tools"></a>Narzędzia
+## <a name="tools"></a>narzędzia
 
 Aby znaleźć program Visual Studio i inne narzędzia w środowiskach kompilacji, skryptach programu PowerShell, instalatorach i więcej scenariuszach, istnieje wiele narzędzi typu "open source", których można używać bezpośrednio lub ponownie rozpowszechniać wraz z własnymi skryptami.
 
@@ -41,7 +41,7 @@ Aby znaleźć program Visual Studio i inne narzędzia w środowiskach kompilacji
 | [Polecenia cmdlet VSSetup](https://github.com/Microsoft/vssetup.powershell) | Polecenia cmdlet programu PowerShell obsługują 2,0 i nowsze, które zwracają rozbudowane informacje jako obiekty, których można użyć do znajdowania wystąpień na podstawie tych samych kryteriów co _vswhere_ i odnajdywania jeszcze większej liczby właściwości dotyczących wystąpień. Przykłady można znaleźć w [witrynie typu wiki](https://github.com/Microsoft/vssetup.powershell/wiki) . |
 | [VSIXBootstrapper](https://github.com/Microsoft/vsixbootstrapper) | Automatycznie lokalizuje _Instalator VSIX_ i przekazuje wiersz polecenia, aby zainstalować plik **. vsix* . Ta funkcja może być przydatna w instalatorach, które nie mają bezpośredniej pomocy technicznej dla interfejsów API zapytań. Przykłady można znaleźć w [witrynie typu wiki](https://github.com/Microsoft/vsixbootstrapper/wiki) . |
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [Zmiany w konfiguracji programu Visual Studio 2017](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup/)
 * [Uruchamianie programu Visual Studio przy użyciu DTE](launch-visual-studio-dte.md)

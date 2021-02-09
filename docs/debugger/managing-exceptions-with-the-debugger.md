@@ -31,15 +31,15 @@ helpviewer_keywords:
 ms.assetid: 43a77fa8-37d0-4c98-a334-0134dbca4ece
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 58a701e6297cb81ce84c164b3b6791a6e73c76f8
-ms.sourcegitcommit: 993fca11dc373a10150751bc2a045a9701a9db2f
+ms.openlocfilehash: b594857b00ee233c186008efc9d0fba7d968a9bc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98240273"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893168"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Zarządzanie wyjątkami za pomocą debugera w programie Visual Studio
 
@@ -217,11 +217,11 @@ Aby dodać wyjątki warunkowe:
 
    ![Dodatkowe warunki dla wyjątku](../debugger/media/extraconditionsforanexception.png "ExtraConditionsForAnException")
 
-3. Dla każdego wiersza warunku wpisz nazwę modułu i zmień listę operatorów porównania na **wartość Equals** lub **nie równa** się. W nazwie można określić symbole wieloznaczne (* *\\\** _), aby określić więcej niż jeden moduł.
+3. Dla każdego wiersza warunku wpisz nazwę modułu i zmień listę operatorów porównania na **wartość Equals** lub **nie równa** się. W nazwie można określić symbole wieloznaczne ( **\\\*** ), aby określić więcej niż jeden moduł.
 
-4. Jeśli musisz usunąć warunek, wybierz _ *X** na końcu wiersza warunku.
+4. Jeśli musisz usunąć warunek, wybierz **znak X** na końcu wiersza warunku.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Kontynuowanie wykonania po wystąpieniu wyjątku](../debugger/continuing-execution-after-an-exception.md)<br/>
 - [Instrukcje: badanie kodu systemu po wystąpieniu wyjątku](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
