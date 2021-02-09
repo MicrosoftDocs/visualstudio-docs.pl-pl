@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0d9cc345-3d3a-44d8-ae15-a67acb97a828
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f81709e7146bbdef13daa3564bb784fd9c08d58e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 451a6ea5334006bb23e8961595f4de85c985b8ca
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714010"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895950"
 ---
 # <a name="process_info_fields"></a>PROCESS_INFO_FIELDS
 Określony rodzaj informacji do pobrania dla procesu.
@@ -28,7 +28,7 @@ Określony rodzaj informacji do pobrania dla procesu.
 ## <a name="syntax"></a>Składnia
 
 ```cpp
-enum enum_PROCESS_INFO_FIELDS { 
+enum enum_PROCESS_INFO_FIELDS { 
    PIF_FILE_NAME             = 0x00000001,
    PIF_BASE_NAME             = 0x00000002,
    PIF_TITLE                 = 0x00000004,
@@ -43,7 +43,7 @@ typedef DWORD PROCESS_INFO_FIELDS;
 ```
 
 ```csharp
-public enum enum_PROCESS_INFO_FIELDS { 
+public enum enum_PROCESS_INFO_FIELDS { 
    PIF_FILE_NAME             = 0x00000001,
    PIF_BASE_NAME             = 0x00000002,
    PIF_TITLE                 = 0x00000004,

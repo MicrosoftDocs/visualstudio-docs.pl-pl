@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 9e72a50c-bb0a-4eaa-9ac1-d00930b68d38
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a63a15340c597a7b62735dfb3f6f14d3707262ac
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 4aebf3b4a5a7556b2e2a3f6fdff7554539812d8f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150707"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896574"
 ---
 # <a name="how-to-stop-code-changes"></a>Porady: zatrzymywanie zmian kodu
 Podczas gdy Edytuj i Kontynuuj jest w trakcie stosowania zmian kodu, możesz zatrzymać operację.
@@ -40,6 +40,6 @@ Podczas gdy Edytuj i Kontynuuj jest w trakcie stosowania zmian kodu, możesz zat
 
   W przypadku wybrania tej opcji nie są zatwierdzane żadne zmiany w kodzie.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Edytuj i kontynuuj](../debugger/edit-and-continue.md)
 - [Edytuj i Kontynuuj, debugowanie, Opcje — okno dialogowe](./edit-and-continue.md)

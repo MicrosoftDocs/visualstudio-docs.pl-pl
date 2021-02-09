@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9c30390d-dc3c-4c27-ae1a-9d92dc076d2b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f83469d6bd97e493a704282aa1fca1fbec96962d
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 96936a2c60a1ea8ebb91417607061b74d538095a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148991"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896473"
 ---
 # <a name="window-search-dialog-box"></a>Wyszukiwanie okien — Okno dialogowe
 To okno dialogowe służy do znajdowania i wybierania węzła dla określonego okna w [widoku systemu Windows](../debugger/windows-view.md). Aby wyświetlić to okno dialogowe, Przenieś fokus do okna widok systemu Windows. Następnie wybierz pozycję **Znajdź okno** z menu **wyszukiwania** .

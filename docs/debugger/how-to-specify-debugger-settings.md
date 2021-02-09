@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: ea172841-7fef-47bf-bd02-e7da4c3c7109
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a5034fe887ba221106055a928e67e11076167286
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: ee1970e46b9789b814029ef0fa7efe9bfbacc3a4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150772"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896684"
 ---
 # <a name="how-to-specify-debugger-settings"></a>Porady: Określanie ustawień debugera
 W programie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] można określić różne ustawienia dla zachowania debugera, w tym sposób wyświetlania zmiennych, informacje o tym, czy są wyświetlane określone ostrzeżenia, jak są ustawiane punkty przerwania oraz jak przerywanie wpływa na uruchamianie programów. Ustawienia debugera należy określić w oknie dialogowym **Opcje** .
@@ -43,7 +43,7 @@ W programie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] można okr
 
 4. Zaznacz lub usuń zaznaczenie żądanej opcji lub opcji. Naciśnij klawisz F1, aby uzyskać pomoc dotyczącą opcji.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Ogólne, debugowanie, Opcje — okno dialogowe](../debugger/general-debugging-options-dialog-box.md)
 - [Edytuj i Kontynuuj, debugowanie, Opcje — okno dialogowe](./edit-and-continue.md)
 - [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)

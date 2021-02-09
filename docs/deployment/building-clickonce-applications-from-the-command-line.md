@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d9bc6212-c584-4f72-88c9-9a4b998c555e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b719f9609dfb2feb432f4692b31e820d806ff92
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 13b057f0a688c3a1ae855215ac226a4d31993ea1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437726"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895157"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>Tworzenie aplikacji ClickOnce z wiersza poleceń
 
@@ -33,7 +33,7 @@ W programie [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_shor
 
  Po wywołaniu MSBuild/target: Publikuj w wierszu polecenia, nakazuje systemowi MSBuild skompilowanie projektu i utworzenie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji w folderze publikacji. Jest to równoznaczne z wybraniem polecenia **Publikuj** w IDE.
 
- To polecenie wykonuje *msbuild.exe* , który znajduje się na ścieżce w środowisku wiersza polecenia programu Visual Studio.
+ To polecenie wykonuje *msbuild.exe*, który znajduje się na ścieżce w środowisku wiersza polecenia programu Visual Studio.
 
  "Target" to wskaźnik do programu MSBuild dotyczący sposobu przetwarzania polecenia. Kluczowe cele to element docelowy "build" i element docelowy "publish". Obiekt docelowy kompilacji jest równoznaczny z wybraniem polecenia Build (lub naciśnięciem klawisza F5) w środowisku IDE. Jeśli chcesz tylko skompilować projekt, możesz to zrobić, wpisując polecenie `msbuild` . To polecenie działa, ponieważ obiekt docelowy kompilacji jest domyślnym obiektem docelowym dla wszystkich projektów wygenerowanych przez [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] . Oznacza to, że nie trzeba jawnie określać docelowej kompilacji. W związku z tym wpisywanie `msbuild` jest tą samą operacją jak wpisywanie `msbuild /target:build` .
 
@@ -67,7 +67,7 @@ W programie [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_shor
 
 1. Zakończ [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] .
 
-2. W menu **Start** systemu Windows kliknij pozycję **Wszystkie programy** , a następnie **Microsoft Visual Studio** , a następnie **Visual Studio Tools** , **wiersz polecenia programu Visual Studio**. W tym celu należy otworzyć wiersz polecenia w folderze głównym bieżącego użytkownika.
+2. W menu **Start** systemu Windows kliknij pozycję **Wszystkie programy**, a następnie **Microsoft Visual Studio**, a następnie **Visual Studio Tools**, **wiersz polecenia programu Visual Studio**. W tym celu należy otworzyć wiersz polecenia w folderze głównym bieżącego użytkownika.
 
 3. W **wierszu polecenia programu Visual Studio** Zmień bieżący katalog na lokalizację projektu, który właśnie został skompilowany. Na przykład wpisz `chdir My Documents\Visual Studio\Projects\CmdLineDemo`.
 
@@ -77,7 +77,7 @@ W programie [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_shor
 
 5. Wpisz `msbuild /target:publish`.
 
-   Powyższe kroki spowodują utworzenie pełnego [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia aplikacji w podfolderze projektu o nazwie **Publikuj**. *CmdLineDemo. Application* to [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest wdrożenia. Folder *CmdLineDemo_1.0.0.0* zawiera pliki *CmdLineDemo.exe* i *CmdLineDemo.exe. manifest* , [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikacji. *Setup.exe* jest program inicjujący, który jest domyślnie skonfigurowany do instalowania .NET Framework. Folder DotNetFX zawiera pakiety redystrybucyjne dla .NET Framework. Jest to cały zestaw plików potrzebnych do wdrożenia aplikacji za pośrednictwem sieci Web lub UNC lub CD/DVD.
+   Powyższe kroki spowodują utworzenie pełnego [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia aplikacji w podfolderze projektu o nazwie **Publikuj**. *CmdLineDemo. Application* to [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest wdrożenia. Folder *CmdLineDemo_1.0.0.0* zawiera pliki *CmdLineDemo.exe* i *CmdLineDemo.exe. manifest*, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikacji. *Setup.exe* jest program inicjujący, który jest domyślnie skonfigurowany do instalowania .NET Framework. Folder DotNetFX zawiera pakiety redystrybucyjne dla .NET Framework. Jest to cały zestaw plików potrzebnych do wdrożenia aplikacji za pośrednictwem sieci Web lub UNC lub CD/DVD.
 
 > [!NOTE]
 > System MSBuild używa opcji **PublishDir** , aby określić lokalizację danych wyjściowych, na przykład `msbuild /t:publish /p:PublishDir="<specific location>"` .
@@ -99,7 +99,7 @@ Po utworzeniu profilu publikowania możesz udostępnić plik pubxml jako właśc
 
  Gdy publikujesz aplikację w powyższych procedurach, następujące właściwości są wstawiane do pliku projektu przez Kreatora publikacji lub w pliku profilu publikowania dla platformy .NET Core 3,1 lub nowszych. Te właściwości bezpośrednio wpływają na sposób tworzenia [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji.
 
- W *CmdLineDemo. vbproj*  /  *CmdLineDemo. csproj* :
+ W *CmdLineDemo. vbproj*  /  *CmdLineDemo. csproj*:
 
 ```xml
 <AssemblyOriginatorKeyFile>WindowsApplication3.snk</AssemblyOriginatorKeyFile>
@@ -130,7 +130,7 @@ msbuild /target:publish /property:BootstrapperEnabled=false
 ::: moniker range=">=vs-2019"
 W przypadku platformy .NET Core 3,1 lub nowszej projekty te ustawienia są dostępne w pliku pubxml.
 
- Właściwości publikowania są kontrolowane na [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] podstawie stron właściwości **Publikowanie** , **zabezpieczenia** i **podpisywanie** w **projektancie projektu**. Poniżej znajduje się opis właściwości publikowania wraz ze wskazaniem, jak każdy z nich jest ustawiany na różnych stronach właściwości projektanta aplikacji:
+ Właściwości publikowania są kontrolowane na [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] podstawie stron właściwości **Publikowanie**, **zabezpieczenia** i **podpisywanie** w **projektancie projektu**. Poniżej znajduje się opis właściwości publikowania wraz ze wskazaniem, jak każdy z nich jest ustawiany na różnych stronach właściwości projektanta aplikacji:
 
 > [!NOTE]
 > W przypadku projektów programu .NET dla komputerów z systemem Windows te ustawienia są teraz dostępne w Kreatorze publikacji.

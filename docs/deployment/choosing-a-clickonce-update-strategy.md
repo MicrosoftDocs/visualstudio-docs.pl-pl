@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d8b6e7bb-4ea0-47f3-91cd-48580bdceccc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f231f3426821b7f3148d3e6c268234f125f88f0
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: d546b48ffbbb4d44fb5f2ced11f41826370403e3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437607"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895079"
 ---
 # <a name="choose-a-clickonce-update-strategy"></a>Wybieranie strategii aktualizacji ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] może zapewnić automatyczne aktualizacje aplikacji. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Aplikacja okresowo odczytuje plik manifestu wdrożenia, aby sprawdzić, czy są dostępne aktualizacje aplikacji. Jeśli są dostępne, jest pobierana i uruchamiana nowa wersja aplikacji. W celu zwiększenia wydajności pobierane są tylko pliki, które uległy zmianie.
@@ -82,7 +82,7 @@ ms.locfileid: "94437607"
 > [!NOTE]
 > Mimo że można wymagać aktualizacji przy użyciu innych strategii aktualizacji, sprawdzenie **przed uruchomieniem aplikacji** jest jedynym sposobem na zagwarantowanie, że nie można uruchomić starszej wersji. Gdy podczas uruchamiania zostanie wykryta obowiązkowa aktualizacja, użytkownik będzie musiał zaakceptować aktualizację lub zamknąć aplikację.
 
- Aby oznaczyć aktualizację jako wymaganą, kliknij pozycję **Określ minimalną wersję wymaganą dla tej aplikacji** w oknie dialogowym **aktualizacje aplikacji** , a następnie określ wersję publikacji ( **główna** , **pomocnicza** , **kompilacja** , **poprawka** ), która określa najniższy numer wersji aplikacji, która może być zainstalowana.
+ Aby oznaczyć aktualizację jako wymaganą, kliknij pozycję **Określ minimalną wersję wymaganą dla tej aplikacji** w oknie dialogowym **aktualizacje aplikacji** , a następnie określ wersję publikacji (**główna**, **pomocnicza**, **kompilacja**, **poprawka**), która określa najniższy numer wersji aplikacji, która może być zainstalowana.
 
  Jest to takie samo, jak ustawienie atrybutu **MinimumRequiredVersion** elementu **Deployment** w manifeście wdrożenia; na przykład:
 

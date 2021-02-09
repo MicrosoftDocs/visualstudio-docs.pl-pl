@@ -6,15 +6,15 @@ ms.date: 05/24/2018
 ms.topic: conceptual
 author: jillre
 ms.author: michma
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 93f450eab5879991f45f4a924338d4a277d13544
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: 7a6df4a90d8ddb31db88bb91ff4e874cadd3c589
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95005928"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894663"
 ---
 # <a name="system-generated-logs-collected-by-visual-studio"></a>Dzienniki generowane przez system w programie Visual Studio
 
@@ -72,7 +72,7 @@ Autorzy rozszerzeń powinni ograniczyć narażenie na dane osobowe, nie używaj�
 
 W oparciu o dane zbierane i ograniczenia dotyczące dostępu i przechowywania, zalecamy użycie domyślnych ustawień prywatności dla programu Visual Studio i systemu Windows. Można jednak [zrezygnować](../ide/visual-studio-experience-improvement-program.md#opt-in-or-out) z program poprawy jakości obsługi programu Visual Studio. Aby zrezygnować z wygenerowanej przez system kolekcji dzienników dla wszystkich programów, zobacz [Diagnostyka, opinie i prywatność w systemie Windows 10](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy). Opcje mogą się różnić w zależności od używanej wersji systemu Windows.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Program poprawy jakości obsługi klienta systemu Visual Studio](visual-studio-experience-improvement-program.md)
 - [Diagnostyka, opinie i prywatność w systemie Windows 10](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy)

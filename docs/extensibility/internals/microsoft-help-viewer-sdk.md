@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e77d06900a17aca4c2630587a45a9b144accde2
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 2e7b2c8d5f194287f0b654184ddd8716f248ca36
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877848"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895755"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Zestaw SDK Podglądu Pomocy firmy Microsoft
 
@@ -451,12 +451,12 @@ Uwaga: zmienne zapisane przez "{n}" mają zależności kodu — usunięcie lub z
 | - | - |
 | Ona | **CollapsibleArea** |
 | Używanych | Rozwiń Zwiń tekst kontrolki zawartości |
-| **Postaci** | **Wartość** |
+| **Element** | **Wartość** |
 | ExpandText | Rozwiń |
 | CollapseText | Zwiń |
 | Ona | **CodeSnippet** |
 | Używanych | Tekst kontrolki fragmentu kodu.  Uwaga: zawartość fragmentu kodu z rozrywanym miejscem zostanie zmieniona na spacja. |
-| **Postaci** | **Wartość** |
+| **Element** | **Wartość** |
 | CopyToClipboard | Kopiuj do schowka |
 | ViewColorizedText | Wyświetl kolory |
 | CombinedVBTabDisplayLanguage | Visual Basic (przykład) |
@@ -464,7 +464,7 @@ Uwaga: zmienne zapisane przez "{n}" mają zależności kodu — usunięcie lub z
 | VBUsage | Użycie |
 | Ona | **Opinie, stopki i logo** |
 | Używanych | Podaj kontrolę opinii dla klienta, aby przesłać opinię na temat bieżącego tematu za pośrednictwem poczty e-mail.  Tekst praw autorskich dla zawartości.  Definicja logo. |
-| **Postaci** | **Wartość (te ciągi mogą być modyfikowane w celu spełnienia wymagań dotyczących przyjmowanego przez zawartość).** |
+| **Element** | **Wartość (te ciągi mogą być modyfikowane w celu spełnienia wymagań dotyczących przyjmowanego przez zawartość).** |
 | Prawo | © 2013 Microsoft Corporation. All rights reserved. |
 | SendFeedback | \<a href="{0}" {1}>Prześlij opinię \</a> na temat tego tematu do firmy Microsoft. |
 | FeedbackLink | |
@@ -473,7 +473,7 @@ Uwaga: zmienne zapisane przez "{n}" mają zależności kodu — usunięcie lub z
 | LogoFileNameHC | vs_logo_wh.gif |
 | Ona | **Zastrzeżenie** |
 | Używanych | Zbiór odrzutów specyficznych dla każdego przypadku dla zawartości przetłumaczonej maszynowo. |
-| **Postaci** | **Wartość** |
+| **Element** | **Wartość** |
 | MT_Editable | Ten artykuł został przetłumaczony maszynowo. Jeśli masz połączenie z Internetem, wybierz pozycję "Wyświetl ten temat online", aby wyświetlić tę stronę w trybie edycji razem z pierwotną zawartością w języku angielskim w tym samym czasie. |
 | MT_NonEditable | Ten artykuł został przetłumaczony maszynowo. Jeśli masz połączenie z Internetem, wybierz pozycję "Wyświetl ten temat online", aby wyświetlić tę stronę w trybie edycji razem z pierwotną zawartością w języku angielskim w tym samym czasie. |
 | MT_QualityEditable | Ten artykuł został przetłumaczony ręcznie. Jeśli masz połączenie z Internetem, wybierz pozycję "Wyświetl ten temat online", aby wyświetlić tę stronę w trybie edycji razem z pierwotną zawartością w języku angielskim w tym samym czasie. |
@@ -482,14 +482,14 @@ Uwaga: zmienne zapisane przez "{n}" mają zależności kodu — usunięcie lub z
 | MT_BetaRecycledContents | Ten artykuł został przetłumaczony ręcznie w wersji wstępnej. Jeśli masz połączenie z Internetem, wybierz pozycję "Wyświetl ten temat online", aby wyświetlić tę stronę w trybie edycji razem z pierwotną zawartością w języku angielskim w tym samym czasie. |
 | Ona | **Połącz z** |
 | Używanych | Obsługa linków tematów online |
-| **Postaci** | **Wartość** |
+| **Element** | **Wartość** |
 | LinkTableTitle | Tabela łączy |
 | TopicEnuLinkText | Zapoznaj się z angielską wersją \</a> tego tematu, która jest dostępna na komputerze. |
 | TopicOnlineLinkText | Wyświetl ten temat \<a href="{0}" {1}> online\</a> |
 | OnlineText | Tryb online |
 | Ona | **Kontrolka audio wideo** |
 | Używanych | Wyświetlanie elementów i tekstu dla zawartości wideo |
-| **Postaci** | **Wartość** |
+| **Element** | **Wartość** |
 | MultiMediaNotSupported | Aby można było obsługiwać zawartość, musi być zainstalowany program Internet Explorer 9 lub nowszy {0} . |
 | VideoText | Wyświetlanie wideo |
 | AudioText | przesyłanie strumieniowe audio |
@@ -497,25 +497,25 @@ Uwaga: zmienne zapisane przez "{n}" mają zależności kodu — usunięcie lub z
 | OnlineAudioLinkText | \<p>Aby nawiązać połączenie z dźwiękiem skojarzonym z tym tematem, kliknij {0} \<a href="{1}"> {2} tutaj \</a> .\</p> |
 | Ona | **Niezainstalowana Kontrola zawartości** |
 | Używanych | Elementy tekstowe (ciągi) używane do renderowania contentnotinstalled.htm |
-| **Postaci** | **Wartość** |
+| **Element** | **Wartość** |
 | ContentNotInstalledTitle | Nie znaleziono zawartości na komputerze. |
 | ContentNotInstalledDownloadContentText | \<p>Aby pobrać zawartość na komputer, \<a href="{0}" {1}> kliknij kartę Zarządzanie \</a> .\</p> |
 | ContentNotInstalledText | \<p>Na komputerze nie jest zainstalowana żadna zawartość. Skontaktuj się z administratorem w celu zainstalowania lokalnej zawartości pomocy.\</p> |
 | Ona | **Nie znaleziono tematu — formant** |
 | Używanych | Elementy tekstowe (ciągi) używane do renderowania topicnotfound.htm |
-| **Postaci** | **Wartość** |
+| **Element** | **Wartość** |
 | TopicNotFoundTitle | Nie można znaleźć żądanego tematu na komputerze. |
 | TopicNotFoundViewOnlineText | \<p>Nie znaleziono żądanego tematu na komputerze, ale można \<a href="{0}" {1}> wyświetlić temat w trybie online \</a> .\</p> |
 | TopicNotFoundDownloadContentText | \<p>Zobacz okienko nawigacji, aby uzyskać linki do podobnych tematów, lub \<a href="{0}" {1}> kliknij kartę Zarządzanie, \</a> Aby pobrać zawartość do komputera.\</p> |
 | TopicNotFoundText | \<p>Nie znaleziono żądanego tematu na komputerze.\</p> |
 | Ona | **Formant uszkodzony** |
 | Używanych | Elementy tekstowe (ciągi) używane do renderowania topiccorrupted.htm |
-| **Postaci** | **Wartość** |
+| **Element** | **Wartość** |
 | TopicCorruptedTitle | Nie można wyświetlić żądanego tematu. |
 | TopicCorruptedViewOnlineText | \<p>Podgląd pomocy nie może wyświetlić żądanego tematu. Może wystąpić błąd w zawartości tematu lub podstawowej zależności od systemu.\</p> |
 | Ona | **Strona główna — formant** |
 | Używanych | Tekst obsługujący wyświetlanie zawartości węzła najwyższego poziomu podglądu pomocy. |
-| **Postaci** | **Wartość** |
+| **Element** | **Wartość** |
 | HomePageTitle | Strona główna podglądu pomocy |
 | HomePageIntroduction | \<p>Witamy w Podgląd Pomocy firmy Microsoft, podstawowe źródło informacji dla wszystkich osób korzystających z narzędzi, produktów, technologii i usług firmy Microsoft. Podgląd pomocy zapewnia dostęp do informacji o sposobach i odwołaniach, przykładowym kodzie, artykułach technicznych i innych. Aby znaleźć potrzebną zawartość, przejrzyj Spis treści, użyj wyszukiwania pełnotekstowego lub przejdź przez zawartość przy użyciu indeksu słowa kluczowego.\</p> |
 | HomePageContentInstallText | \<p>\<br />Za pomocą \<a href="{0}" {1}> karty Zarządzanie zawartością \</a> można wykonać następujące czynności: \<ul> \<li> Dodaj zawartość do komputera. \</li> \<li> Sprawdź, czy są aktualizacje zawartości lokalnej. \</li> \<li> Usuń zawartość z komputera.\</li>\</ul>\</p> |

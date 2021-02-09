@@ -12,15 +12,15 @@ helpviewer_keywords:
 - keyboard shortcuts
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 06bbbb0124984530e92b0066044c71bfbe80ad2b
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: 8a4901cecf36208f3ed2141e5baef15ecbe43a6e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006370"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894741"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Domyślne skróty klawiaturowe w programie Visual Studio
 
@@ -50,7 +50,7 @@ Aby uzyskać więcej informacji na temat ułatwień dostępu w programie Visual 
 - [Pomoc](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)
 - [Eksplorator rozwiązań](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)
 - [Wyświetlanie](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)
-- [Rozpocząć](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug)
+- [Debugowanie](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug)
 - [Test obciążeniowy](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_loadtest)
 - [Zespół](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team)
 - [Okno](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_window)
@@ -221,9 +221,9 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 |Edit.Replace|**CTRL + H**|
 |Edit.ReplaceinFiles|**Ctrl+Shift+H**|
 |Edit.SelectAll|**Ctrl+A**|
-|Edit.SelectNextControl|**Tabulator**|
+|Edit.SelectNextControl|**Tab**|
 |Edit.SelectPreviousControl|**Shift+Tab**|
-|Edit.ShowTileGrid|**Wejść**|
+|Edit.ShowTileGrid|**Enter**|
 |Edit.SizeControlDown|**Ctrl+Shift+Strzałka w dół**|
 |Edit.SizeControlDownGrid|**Shift+Strzałka w dół**|
 |Edit.SizeControlLeft|**Ctrl+Shift+Strzałka w lewo**|
@@ -488,7 +488,7 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 |Edit.ExpandCollapseBaseTypeList|**Shift+Alt+B**|
 |Edit.NavigateToLollipop|**Shift+Alt+L**|
 |Edit.RemovefromDiagram|**Usuwanie**|
-|View.ViewCode|**Wejść**|
+|View.ViewCode|**Enter**|
 
 ## <a name="coded-ui-test-editor"></a>Edytor kodowanego testu interfejsu użytkownika
 
@@ -544,8 +544,8 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 |--------------| - |
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Add.AddNode|**Insert**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.BothDependencies|**B**|
-|ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.IncomingDependencies|**I**|
-|ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.OutgoingDependencies|**O**|
+|ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.IncomingDependencies|**Mam**|
+|ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.OutgoingDependencies|**Wyjścia**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.NewComment|**Ctrl+Shift+K**<br /><br /> lub<br /><br /> **Ctrl+E, C**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Remove|**Usuwanie**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Rename|**F2**|
@@ -721,12 +721,12 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
-|Edit.BreakLine|**Wejść**|
+|Edit.BreakLine|**Enter**|
 |Edit.CharLeft|**Strzałka w lewo**|
 |Edit.CharLeftExtend|**Shift+Strzałka w lewo**|
 |Edit.CharRight|**Strzałka w prawo**|
 |Edit.CharRightExtend|**Shift+Strzałka w prawo**|
-|Edit.InsertTab|**Tabulator**|
+|Edit.InsertTab|**Tab**|
 |Edit.LineDown|**Strzałka w dół**|
 |Edit.LineDownExtend|**Shift+Strzałka w dół**|
 |Edit.LineUp|**Strzałka w górę**|
@@ -800,7 +800,7 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 
 | Polecenia | Skróty klawiaturowe |
 | - | - |
-| Edit.BreakLine | **Wejść**<br /><br /> lub<br /><br /> **Shift+Enter** |
+| Edit.BreakLine | **Enter**<br /><br /> lub<br /><br /> **Shift+Enter** |
 | Edit.CharLeft | **Strzałka w lewo** |
 | Edit.CharLeftExtend | **Shift+Strzałka w lewo** |
 | Edit.CharLeftExtendColumn | **Shift+Alt+Strzałka w lewo** |
@@ -840,7 +840,7 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 | Edit.IncrementalSearch | **CTRL + I** |
 | Edytuj. InsertCaretsatAllMatching | **Shift + Alt +;** |
 | Edytuj. InsertNextMatchingCaret | **Shift + Alt +.** |
-| Edit.InsertTab | **Tabulator** |
+| Edit.InsertTab | **Tab** |
 | Edit.LineCut | **Ctrl+L** |
 | Edit.LineDelete | **Ctrl+Shift+L** |
 | Edit.LineDown | **Strzałka w dół** |
@@ -1051,7 +1051,7 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
-|Edit.BreakLine|**Wejść**|
+|Edit.BreakLine|**Enter**|
 |Edit.CharLeft|**Strzałka w lewo**|
 |Edit.CharLeftExtend|**Shift+Strzałka w lewo**|
 |Edit.CharRight|**Strzałka w prawo**|
@@ -1060,7 +1060,7 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 |Edit.DocumentEndExtend|**Shift+End**|
 |Edit.DocumentStart|**Ekran główny**|
 |Edit.DocumentStartExtend|**Shift+Home**|
-|Edit.InsertTab|**Tabulator**|
+|Edit.InsertTab|**Tab**|
 |Edit.LineDown|**Strzałka w dół**|
 |Edit.LineDownExtend|**Shift+Strzałka w górę**|
 |Edit.LineUp|**Strzałka w górę**|
@@ -1178,6 +1178,6 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 |XsdDesigner.ShowGraphView|**Ctrl + 3**|
 |XsdDesigner.ShowStartView|**Ctrl + 1**|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Visual Studio — Polecenia](reference/visual-studio-commands.md)

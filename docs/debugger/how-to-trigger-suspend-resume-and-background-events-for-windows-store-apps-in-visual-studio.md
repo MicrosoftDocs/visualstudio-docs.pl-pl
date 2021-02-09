@@ -13,15 +13,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 87b2718b6cd9db5b66635ca165253bd1e93f17d5
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 5b3fa6ea89b91ccfc2c24b0b2eea162760eae29c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150681"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896528"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Jak wyzwolić wstrzymanie, wznowienie i zdarzenia w tle podczas debugowania aplikacji platformy UWP w programie Visual Studio
 
@@ -110,7 +110,7 @@ Aby uzyskać więcej informacji o zarządzaniu okresem istnienia procesu i zadan
 
 4. Wybierz dziennik **diagnostyczny** .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Testowanie aplikacji platformy UWP za pomocą programu Visual Studio](../test/unit-test-your-code.md)
 - [Debugowanie aplikacji w programie Visual Studio](debugging-windows-store-and-windows-universal-apps.md)
 - [Cykl życia aplikacji](/windows/uwp/launch-resume/app-lifecycle)

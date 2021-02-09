@@ -9,15 +9,15 @@ helpviewer_keywords:
 - privacy, developer community
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dccf962aef39227388f86134a9dd1f8c96440a3c
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: e521a8291947922d856819b637cd262db434c7eb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668550"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894689"
 ---
 # <a name="developer-community-data-privacy"></a>Prywatność danych w społeczności deweloperów
 
@@ -90,7 +90,7 @@ Jeśli **Zgłoś problem** w programie Visual Studio, zbieramy co najmniej jeden
   > ![Zgłoś problem — podsumowanie zebranych dzienników](media/report-a-problem-logs-collected.png)
 
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Jak zgłosić problem w programie Visual Studio](how-to-report-a-problem-with-visual-studio.md)
 - [Prywatność danych raportu o problemach C++](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset#reports-and-privacy)
