@@ -23,15 +23,15 @@ helpviewer_keywords:
 ms.assetid: d840fdca-b035-4452-b652-72580c831896
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0471aa25b14111271e6f9219e8e849eed49f113f
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 8add274d74d9d8d7d72f2808a2b0100c66a19717
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150564"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912209"
 ---
 # <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>Wyświetlanie bibliotek DLL i plików wykonywalnych w oknie modułów (C#, C++, Visual Basic, F #)
 
@@ -70,7 +70,7 @@ Kolumna **stan symbolu** w oknie **moduły** pokazuje, które moduły mają zał
 
 1. Wybierz pozycję **Załaduj wszystkie symbole** lub wybierz moduły do dołączenia lub wykluczenia.
 
-1. Wybierz pozycję **OK**. Zmiany zaczną obowiązywać w następnej sesji debugowania.
+1. Wybierz przycisk **OK**. Zmiany zaczną obowiązywać w następnej sesji debugowania.
 
 **Aby zmienić zachowanie ładowania symboli dla określonego modułu:**
 
@@ -78,7 +78,7 @@ Kolumna **stan symbolu** w oknie **moduły** pokazuje, które moduły mają zał
 
 1. W menu rozwijanym prawym przyciskiem myszy zaznacz lub usuń zaznaczenie opcji **Zawsze ładuj automatycznie**. Zmiany zaczną obowiązywać w następnej sesji debugowania.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Przerywanie wykonywania](/previous-versions/visualstudio/visual-studio-2010/7z9se2d8(v=vs.100))
 - [Wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)
 - [Określanie symboli (. pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

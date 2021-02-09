@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 7b0e7b20-fd6b-42e2-81d0-e5100cea0528
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7732c6f02ae5ec086a89bd9ade5c00ea533a68f2
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 7f207a4c86a9c76f009341f96a7d562da1e8fb33
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903809"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910957"
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a>ProvideDefaultName —, element (szablony Visual Studio)
 Określa, czy [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] system projektu będzie generował nazwę domyślną dla szablonu w oknie dialogowym **Dodaj nowy element** lub **Nowy projekt** .
@@ -80,6 +80,6 @@ Określa, czy [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] system p
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)

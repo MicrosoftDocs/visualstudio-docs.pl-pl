@@ -5,18 +5,18 @@ ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: d502abe583c09d6c117ed1083e87cded823bc386
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dcbc575385660ea8369300acf4584b5b3d32b7fa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79093790"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910794"
 ---
 # <a name="sort-usings"></a>Sortowanie deklaracji using
 
@@ -35,7 +35,7 @@ To Refaktoryzacja dotyczy:
 ## <a name="how-to"></a>Porady
 
 1. Na pasku menu wybierz pozycję **Edytuj** .
-2. Wybierz **Intellisense**opcję  >  **Sortuj z użyciem funkcji**IntelliSense.
+2. Wybierz opcję  >  **Sortuj z użyciem funkcji** IntelliSense.
 
    ![Sortowanie deklaracji using](media/sort-usings.png)
 

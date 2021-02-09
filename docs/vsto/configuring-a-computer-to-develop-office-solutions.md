@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, installing tools
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3658f655c50c9d1a0775a8cc69dd65baf32d1408
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ee8f840aa81d3decfdb96dd2658b758704443347
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847264"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910573"
 ---
 # <a name="configure-a-computer-to-develop-office-solutions"></a>Konfigurowanie komputera do opracowywania rozwiązań pakietu Office
 
@@ -49,7 +49,7 @@ W przypadku zainstalowania obsługiwanej wersji programu Visual Studio, .NET Fra
 
 Jeśli nadal występują problemy, zobacz [dodatkowe wsparcie dla błędów w rozwiązaniach pakietu Office](../vsto/additional-support-for-errors-in-office-solutions.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wprowadzenie &#40;Programowanie Office w programie Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Instrukcje: Konfigurowanie komputera do opracowywania rozwiązań pakietu Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)
 - [Instrukcje: Instalowanie pakietu redystrybucyjnego środowiska uruchomieniowego Office Visual Studio Tools](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)

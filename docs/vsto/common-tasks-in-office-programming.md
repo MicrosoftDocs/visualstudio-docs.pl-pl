@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, frequently asked questions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4f6fae2b7d446035a08e3fcb77bcffaaed6de3a9
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 67b09d3881dcde1d404b7ff0c1096ced1ecb50ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846301"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910613"
 ---
 # <a name="common-tasks-in-office-programming"></a>Typowe zadania w programowaniu pakietu Office
   Ten temat ma pomóc w znalezieniu odpowiedzi na następujące kategorie typowych pytań dotyczących programowania rozwiązań pakietu Office przy użyciu programu Visual Studio.
@@ -232,7 +232,7 @@ ms.locfileid: "96846301"
 
 - [Instrukcje: zmiana ścieżki instalacji rozwiązania pakietu Office](/previous-versions/bb608626(v=vs.110)).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wprowadzenie &#40;Programowanie Office w programie Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Funkcje dostępne według aplikacji pakietu Office i typu projektu](../vsto/features-available-by-office-application-and-project-type.md)
 - [Przykłady i przewodniki dotyczące programowania pakietu Office](../vsto/office-development-samples-and-walkthroughs.md)

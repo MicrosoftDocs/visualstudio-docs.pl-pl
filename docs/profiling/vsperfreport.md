@@ -13,16 +13,16 @@ helpviewer_keywords:
 ms.assetid: dbfd8d91-4430-4b82-81b9-97ac61412a6c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ed3ba5453976e3f3976aba43bc296c040a86b7a5
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 507ea5a90aa17ba252a95714f488f5ea22dff4f3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719776"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911504"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 Narzędzie wiersza polecenia VSPerfReport służy do tworzenia raportów przy użyciu  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] plików danych profilowania narzędzia profilowania. Domyślny format raportu to. plik *CSV* .
@@ -91,5 +91,5 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |**DiffColumn:**[*ColumnName*]|Ta szczegółowa kolumna służy do porównywania wartości. Wartość domyślna to kolumna procent wyłącznych próbek.|
 |**QueryDiffTables**|Wyświetl listę prawidłowych tabel i kolumn dla dwóch udostępnionych plików raportów.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Widoki raportów wydajności](../profiling/performance-report-views.md)

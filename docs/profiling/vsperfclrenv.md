@@ -11,16 +11,16 @@ helpviewer_keywords:
 - VSPerfCLREnv tool
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1aa0d4a476c64ec20f0a378398cfb95e364a07e3
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 24db8e45efbe732c69dedcce8b3c1b14463a0a0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719217"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911493"
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 
@@ -111,6 +111,6 @@ Te opcje nie są wymagane do profilowania aplikacji zarządzanej, jeśli aplikac
 
 Jeśli podczas profilowania nie zostało ustawione prawidłowe środowisko, podczas analizy zostanie zgłoszone ostrzeżenie, a nazwy funkcji zarządzanych nie zostaną prawidłowo rozwiązane.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 [Profil z wiersza polecenia](../profiling/using-the-profiling-tools-from-the-command-line.md)

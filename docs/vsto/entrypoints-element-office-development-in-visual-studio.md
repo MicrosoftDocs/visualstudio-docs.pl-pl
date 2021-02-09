@@ -11,15 +11,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <entryPoints> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a8e735cfabcc02a46ca83759a7ad53877bfb05f0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0cd5b49183bc4754e894caf898f6ca6a0c0e5440
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543575"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910447"
 ---
 # <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;entryPoint — &gt; element (Programowanie Office w Visual Studio)
   `entryPoints`Element `vstav3` przestrzeni nazw zawiera wszystkie `entryPoint` elementy skojarzone z rozwiązaniem pakietu Office.
@@ -49,7 +49,7 @@ ms.locfileid: "85543575"
  `entryPoints` ma następujące elementy.
 
 ### <a name="entrypoint"></a>Punkt
- Wymagany. Rola `entryPoint` elementu w `vstav3` przestrzeni nazw jest definiowana w [&#60;entryPoint&#62; elementu &#40;programowanie Office w&#41;programu Visual Studio ](../vsto/entrypoint-element-office-development-in-visual-studio.md).
+ Wymagane. Rola `entryPoint` elementu w `vstav3` przestrzeni nazw jest definiowana w [&#60;entryPoint&#62; elementu &#40;programowanie Office w&#41;programu Visual Studio ](../vsto/entrypoint-element-office-development-in-visual-studio.md).
 
 ## <a name="document-level-customization-example"></a>Przykład dostosowywania na poziomie dokumentu
 

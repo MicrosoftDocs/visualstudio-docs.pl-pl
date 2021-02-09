@@ -15,15 +15,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], restricted permissions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2898781a3603e7cb9582d246e4fa7edaaf6bddb9
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ddfe9d70cafc6acf7526c8819cb9ae3f46ea8022
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846197"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910557"
 ---
 # <a name="document-protection-in-document-level-solutions"></a>Ochrona dokumentów w rozwiązaniach na poziomie dokumentu
   Funkcji ochrony programu Microsoft Office Word i Microsoft Office Excel można użyć w projektach na poziomie dokumentu. Te funkcje blokują nieautoryzowanym użytkownikom wprowadzanie zmian do chronionych części dokumentu.
@@ -54,7 +54,7 @@ ms.locfileid: "96846197"
 ## <a name="setting-the-password"></a>Ustawianie hasła
  Program Visual Studio automatycznie włącza ochronę, ale domyślnie nie udostępnia hasła. Jeśli chcesz, aby ochrona dokumentów miała hasło, musisz ją dodać przed wdrożeniem rozwiązania. Dodanie hasła umożliwia autoryzowanym użytkownikom usuwanie ochrony dokumentu; bez hasła nie można łatwo usunąć ochrony. Aby uzyskać szczegółowe informacje na temat ustawiania hasła, zobacz Pomoc w określonej aplikacji pakietu Office.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: programowe Włączanie ochrony dokumentów i części dokumentów](../vsto/how-to-programmatically-protect-documents-and-parts-of-documents.md)
 - [Przykłady i przewodniki dotyczące programowania pakietu Office](../vsto/office-development-samples-and-walkthroughs.md)
 - [Zarządzanie prawami do informacji i rozszerzenia kodu zarządzanego — Omówienie](../vsto/information-rights-management-and-managed-code-extensions-overview.md)

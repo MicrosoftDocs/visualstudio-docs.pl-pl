@@ -14,19 +14,19 @@ helpviewer_keywords:
 ms.assetid: c884976e-c0df-4c6d-8e3a-856ea2bd547c
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c91a016d91addc4f9e4b06acb32614bd6f6a162
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: f3b6d98e715d0c86af6948f2fcc502e94dfde56a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136774"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910825"
 ---
 # <a name="options-dialog-box-projects-and-solutions--build-and-run"></a>Opcje — okno dialogowe: projekty i rozwiązania \> kompilowania i uruchamiania
 
-W tym oknie dialogowym można określić maksymalną liczbę projektów C++ lub C#, które mogą być kompilowane w tym samym czasie, niektóre domyślne zachowania kompilacji i niektóre ustawienia dziennika kompilacji. Aby uzyskać dostęp do tych opcji **Tools**, wybierz  >  **Opcje** narzędzia rozwiń węzeł **projekty i rozwiązania**, a następnie wybierz opcję **Kompiluj i uruchom**.
+W tym oknie dialogowym można określić maksymalną liczbę projektów C++ lub C#, które mogą być kompilowane w tym samym czasie, niektóre domyślne zachowania kompilacji i niektóre ustawienia dziennika kompilacji. Aby uzyskać dostęp do tych opcji , wybierz  >  **Opcje** narzędzia rozwiń węzeł **projekty i rozwiązania**, a następnie wybierz opcję **Kompiluj i uruchom**.
 
 **Maksymalna liczba równoległych kompilacji projektów**
 
@@ -60,7 +60,7 @@ Określa, ile informacji z procesu kompilacji jest wyświetlanych w oknie **dany
 
 *Dotyczy tylko projektów C++.*
 
-Określa, ile informacji jest zapisywana w pliku dziennika kompilacji, który znajduje się w * \\ \<ProjectName> \\ \<ProjectName> dzienniku \debug.. log*.
+Określa, ile informacji jest zapisywana w pliku dziennika kompilacji, który znajduje się w *\\ \<ProjectName> \\ \<ProjectName> dzienniku \debug.. log*.
 
 ## <a name="see-also"></a>Zobacz też
 

@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 82879fbe-7756-42cd-9a07-c10edf5b4673
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf2d41fe83b440e2a3b4bfebd4fac6f5d06094a4
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 3e0cf60b260204ac3b97a222591946765cf8bb80
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671327"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910976"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem, element (szablony projektów Visual Studio)
 Określa plik, który jest dołączony do szablonu projektu.
@@ -139,7 +139,7 @@ Określa plik, który jest dołączony do szablonu projektu.
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
 - [Parametry szablonu](../ide/template-parameters.md)

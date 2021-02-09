@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 63fcdd5b-2e54-4210-9038-65bc23167725
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2be42b3a66f6bd874568945081972b220e7a7830
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: 8933127940cd8155bbf0854fd19c559022bceecb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006565"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912170"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Pierwsze spojrzenie na wdrożenie w programie Visual Studio
 
@@ -131,15 +131,15 @@ Za pomocą Azure Pipelines można włączyć ciągłe wdrażanie aplikacji. Aby 
 
 - [Zmień platformę docelową i Opublikuj projekt bazy danych (SQL Server Data Tools (SSDT))](/sql/ssdt/how-to-change-target-platform-and-publish-a-database-project)
 - [Wdróż projekt Analysis Services (SSAS)](/sql/analysis-services/multidimensional-tutorial/lesson-2-5-deploying-an-analysis-services-project)
-- [Wdróż projekty i pakiety usług Integration Services (SSIS)](/sql/integration-services/packages/deploy-integration-services-ssis-projects-and-packages)
+- [Wdrażanie projektów i pakietów usług integracji (SSIS)](/sql/integration-services/packages/deploy-integration-services-ssis-projects-and-packages)
 - [Kompilowanie i wdrażanie w lokalnej bazie danych](/sql/ssdt/how-to-build-and-deploy-to-a-local-database)
 
 ## <a name="deployment-for-other-app-types"></a>Wdrożenie dla innych typów aplikacji
 
-| Typ aplikacji | Scenariusz wdrożenia | Łącze |
+| Typ aplikacji | Scenariusz wdrożenia | Link |
 | --- | --- | --- |
 | **Aplikacja pakietu Office** | Dodatek dla pakietu Office można opublikować w programie Visual Studio. | [Wdrażanie i publikowanie dodatku dla pakietu Office](https://dev.office.com/docs/add-ins/publish/publish) |
-| **Usługa WCF lub OData** | Inne aplikacje mogą używać usług WCF RIA wdrożonych na serwerze sieci Web. | [Opracowywanie i wdrażanie Usługi danych programu WCF](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
+| **Usługa WCF lub OData** | Inne aplikacje mogą używać usług WCF RIA wdrożonych na serwerze sieci Web. | [Opracowywanie i wdrażanie WCF Data Services](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
 | **LightSwitch** | LightSwitch nie jest już obsługiwany w programie Visual Studio 2017, ale nadal można ją wdrożyć z poziomu programu Visual Studio 2015 lub starszej wersji. | [Wdrażanie aplikacji LightSwitch](/previous-versions/ff872288(v=vs.140)) |
 
 ## <a name="next-steps"></a>Następne kroki

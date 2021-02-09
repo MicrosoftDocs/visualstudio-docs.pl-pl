@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 9e67a308-1c81-42ab-966b-7fc3c1d2bf7a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f39f7dfbd463c48675f4b8c98612dfab3f33de3c
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: 420a4073e4c00f66775bf55565c2ee8645d90f49
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398743"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911373"
 ---
 # <a name="how-can-i-use-debugger-windows-while-debugging-a-foreground-program"></a>Jak można używać okien debugera przy debugowaniu programu pierwszego planu?
 ## <a name="problem-description"></a>Opis problemu
@@ -37,6 +37,6 @@ ms.locfileid: "97398743"
 ## <a name="solution"></a>Rozwiązanie
  Jeśli używasz drugiego komputera, możesz użyć zdalnego debugowania. W przypadku konfiguracji z dwoma komputerami można obejrzeć malowanie ekranu na komputerze zdalnym podczas korzystania z debugera na hoście. Aby uzyskać więcej informacji na temat debugowania zdalnego, zobacz [zdalne debugowanie](../debugger/remote-debugging.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Debugowanie często zadawanych pytań dotyczących kodu natywnego](../debugger/debugging-native-code-faqs.md)
 - [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)

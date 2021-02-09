@@ -16,15 +16,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 62477f7cd37a7d5a416e8f42fb7eb2d2a8e43828
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ef68ffccd7a048cd0591ee0bf1aa511fe0489c92
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846132"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910516"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>Włącz dostęp do języka VBA, aby utworzyć lub otworzyć Visual Studio Tools dla projektu systemu Microsoft Office
 
@@ -125,5 +125,5 @@ Aby można było utworzyć lub otworzyć Visual Studio Tools dla projektu system
 
 5. Wybierz pozycję **Wykryj i napraw błędy w instalacji pakietu Office**, a następnie kliknij przycisk **Instaluj**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Zabezpieczanie rozwiązań pakietu Office](../vsto/securing-office-solutions.md)

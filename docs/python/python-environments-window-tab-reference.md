@@ -5,17 +5,17 @@ ms.date: 03/18/2019
 ms.topic: reference
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f08709c5231b2981db67900f47b49503269e948b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d00f8cc05e4a2a2ce1e947207997cc2e46d9d9f9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545499"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912372"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Dokumentacja kart okna środowiska języka Python
 
@@ -105,7 +105,7 @@ Wprowadzenie terminu wyszukiwania umożliwia filtrowanie listy zainstalowanych p
 ![Karta pakiety środowiska Python z wyszukiwaniem "num"](media/environments/environments-pip-tab-2019.png)
 ::: moniker-end
 
-Jak widać na powyższym obrazie, wyniki wyszukiwania pokazują liczbę pakietów pasujących do terminu wyszukiwania. pierwszy wpis na liście jest jednak poleceniem do uruchomienia programu **pip install \<name> ** . Jeśli korzystasz z karty **pakiety (Conda)** , zamiast tego zobaczysz pozycję **Conda \<name> Install **:
+Jak widać na powyższym obrazie, wyniki wyszukiwania pokazują liczbę pakietów pasujących do terminu wyszukiwania. pierwszy wpis na liście jest jednak poleceniem do uruchomienia programu **pip install \<name>** . Jeśli korzystasz z karty **pakiety (Conda)** , zamiast tego zobaczysz pozycję **Conda \<name> Install**:
 
 ::: moniker range="vs-2017"
 ![Karta pakiety Conda przedstawiające polecenie instalacji Conda](media/environments/environments-conda-tab-install.png)
@@ -157,7 +157,7 @@ Pokazuje bieżący stan bazy danych uzupełniania IntelliSense:
 ![Karta IntelliSense środowiska Python](media/environments/environments-intellisense-tab.png)
 
 - W programie Visual Studio 2017 w wersji 15,5 i starszych wersje zaawansowania funkcji IntelliSense zależą od bazy danych, która została skompilowana dla tej biblioteki. Kompilowanie bazy danych odbywa się w tle, gdy biblioteka jest zainstalowana, ale może zająć trochę czasu i może nie zostać ukończona po rozpoczęciu pisania kodu.
-- Program Visual Studio 2017 w wersji 15,6 lub nowszej używa szybszej metody, aby zapewnić uzupełnianie, które nie zależą domyślnie od bazy danych. Z tego powodu karta jest oznaczona jako **IntelliSense [baza danych jest wyłączona]**. Bazę danych można włączyć, usuwając zaznaczenie opcji **Narzędzia**w języku  >  **Options**  >  **Python**  >  **eksperymentalne**  >  **Używanie nowego stylu IntelliSense dla środowisk**.
+- Program Visual Studio 2017 w wersji 15,6 lub nowszej używa szybszej metody, aby zapewnić uzupełnianie, które nie zależą domyślnie od bazy danych. Z tego powodu karta jest oznaczona jako **IntelliSense [baza danych jest wyłączona]**. Bazę danych można włączyć, usuwając zaznaczenie opcji **Narzędzia** w języku  >    >  **Python**  >  **eksperymentalne**  >  **Używanie nowego stylu IntelliSense dla środowisk**.
 
 Kiedy program Visual Studio wykrywa nowe środowisko (lub dodaje je), automatycznie rozpoczyna Kompilowanie bazy danych przez analizowanie plików źródłowych biblioteki. Ten proces może potrwać od minuty do godziny lub dłużej, w zależności od tego, co jest zainstalowane. (Anaconda, na przykład, zawiera wiele bibliotek i zajmuje trochę czasu na skompilowanie bazy danych). Po zakończeniu otrzymasz szczegółową funkcję IntelliSense i nie trzeba ponownie odświeżyć bazy danych (za pomocą przycisku **Odśwież bazę danych** ) do momentu zainstalowania większej liczby bibliotek.
 

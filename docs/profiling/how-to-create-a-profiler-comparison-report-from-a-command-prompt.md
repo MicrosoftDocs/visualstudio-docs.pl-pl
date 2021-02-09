@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: 00548d16-eb5b-46f7-8a65-862f98a43831
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e647d467dcbc397fe261c2ea83f6fa9ab1bba7b6
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: 38303a091838fae6fdc86ab91eb1ee95dfb429ca
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98800396"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911704"
 ---
 # <a name="how-to-create-a-profiler-comparison-report-from-a-command-prompt"></a>Instrukcje: Tworzenie raportu porównania profilera z wiersza polecenia
 Można wygenerować [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] raport narzędzia profilowania, który porównuje dane wydajności dwóch danych profilowania (.*/or VSP* . *vsps*) plikach. Raport przedstawia różnice, regresje wydajności i ulepszenia, które wystąpiły w jednej sesji profilowania. Wartości w raporcie przedstawiają różnice lub zmieniają się od linii bazowej pierwszego określonego pliku. Ta różnica jest obliczana przez określenie różnicy między starą wartością, czyli wartością bazową, a wartością wyniku z nowej analizy. Porównania danych profilera mogą opierać się na funkcjach w kodzie, modułach w aplikacji, wierszach, wskaźnikach instrukcji (IP) i typach.

@@ -14,16 +14,16 @@ helpviewer_keywords:
 ms.assetid: 6d4e2a5d-9f17-4ece-a6f1-75836e1fc382
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: bd4dfd4657d6ca2f42c234f576e362ffacb9e693
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: bc1f30fa815030204b5f2d306151fe815ed819f8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719469"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910698"
 ---
 # <a name="process-view"></a>Widok procesu
 Widok procesu przedstawia dane profilowania procesów i wątków, które zostały wykonane podczas przebiegu profilowania.
@@ -42,7 +42,7 @@ Widok procesu przedstawia dane profilowania procesów i wątków, które został
 |**Godzina rozpoczęcia**|Liczba milisekund lub cykli procesora od początku profilowania do początku procesu lub wątku.|
 |**Czas zakończenia**|Liczba milisekund lub cykli procesora od początku profilowania do końca procesu lub wątku.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Widok danych metody próbkowania](../profiling/profiler-sampling-method-data-views.md)
 - [Widoki danych metody instrumentacji](../profiling/instrumentation-method-data-views.md)
 - [Widoki danych pamięci .NET](../profiling/dotnet-memory-data-views.md)

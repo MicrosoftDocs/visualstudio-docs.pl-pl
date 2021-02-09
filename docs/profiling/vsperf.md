@@ -6,16 +6,16 @@ ms.topic: reference
 ms.assetid: b5854e62-279e-4850-bfeb-0c6ef82f4805
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b3d95422d3b4232d7a628f2054c7db2aa94dd6b
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 95c82b6c00d3a3b3af2a58232ed0d65df5b5f76f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723078"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911637"
 ---
 # <a name="vsperf"></a>VSPerf
 Użyj narzędzia wiersza polecenia **VsPerf** , aby:
@@ -59,6 +59,6 @@ Użyj narzędzia wiersza polecenia **VsPerf** , aby:
 |**/detach**|Zatrzymaj zbieranie danych, ale pozwól, aby procesy docelowe nadal działały.|
 |**/status**|Pokaż stan profilera.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Narzędzia do oceny wydajności w aplikacjach Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)
 - [Profil z wiersza polecenia](../profiling/using-the-profiling-tools-from-the-command-line.md)

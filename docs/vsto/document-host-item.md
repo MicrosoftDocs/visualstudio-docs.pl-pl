@@ -17,15 +17,15 @@ helpviewer_keywords:
 - host items [Office development in Visual Studio], Document
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 35455ac7751a34632362cfa3f2c9b8f2f827fc6d
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: b7eb29a9cae9e43bd0372088298d2bd6b122c7a1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846912"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910577"
 ---
 # <a name="document-host-item"></a>Element hosta dokumentu
   <xref:Microsoft.Office.Tools.Word.Document>Element hosta jest typem, który rozszerza <xref:Microsoft.Office.Interop.Word.Document> Typ z podstawowego zestawu międzyoperacyjnego dla programu Word. <xref:Microsoft.Office.Tools.Word.Document>Element hosta zawiera wszystkie te same właściwości, metody i zdarzenia co <xref:Microsoft.Office.Interop.Word.Document> obiekt, ale udostępnia także dodatkowe zdarzenia i działa jako kontener dla formantów hosta i formantów Windows Forms.
@@ -49,7 +49,7 @@ ms.locfileid: "96846912"
 
  Aby wygenerować <xref:Microsoft.Office.Tools.Word.Document> element hosta, użyj `GetVstoObject` metody. Aby uzyskać więcej informacji, zobacz sekcję [rozszerzając dokumenty programu Word i skoroszyty programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Elementy hosta i formanty hosta — Omówienie](../vsto/host-items-and-host-controls-overview.md)
 - [Automatyzowanie programu Word za pomocą obiektów rozszerzonych](../vsto/automating-word-by-using-extended-objects.md)
 - [Model obiektów programu Word — omówienie](../vsto/word-object-model-overview.md)

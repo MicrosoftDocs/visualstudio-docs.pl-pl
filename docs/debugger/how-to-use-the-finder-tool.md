@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5841926b-08c3-4e43-88bd-4223d04f9aef
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 41ca277962f81b3cd1c35ebcf8a940e8168a6803
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: d48e9b580d25b521721fafa7dc475bdbe3532656
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150603"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912235"
 ---
 # <a name="how-to-use-the-finder-tool"></a>Porady: korzystanie z narzędzia wyszukiwania
 Możesz użyć narzędzia wyszukiwania w oknie dialogowym **Znajdowanie okna** do wyświetlania właściwości okna lub komunikatów. Narzędzie wyszukiwania może również lokalizować wyłączone okna podrzędne i rozpoznać, które okno ma zostać wyróżnione, jeśli wyłączone okna podrzędne nakładają się na siebie.
@@ -51,7 +51,7 @@ Możesz użyć narzędzia wyszukiwania w oknie dialogowym **Znajdowanie okna** d
 
     W przypadku wybrania **Właściwości** zostanie otwarte okno [dialogowe Właściwości okna](../debugger/window-properties-dialog-box.md) . W przypadku wybrania **wiadomości** zostanie otwarte okno [Widok komunikatów](../debugger/messages-view.md) .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Spy++ — Widoki](../debugger/spy-increment-views.md)
 - [Korzystanie z programu Spy++](../debugger/using-spy-increment.md)
 - [Spy++ — Odwołanie](../debugger/spy-increment-reference.md)

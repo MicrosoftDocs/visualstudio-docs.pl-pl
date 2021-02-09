@@ -22,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: 7517ff13-76de-4ecf-9c1b-eb9b7ff4d718
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c433a6faf3eab9dd959cc25f26033c74852c0899
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: f6983f9a4b16cc9ed6ece5779cfc44cd7ffa9259
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006669"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910848"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Dostosowywanie układów okien w programie Visual Studio
 
@@ -64,7 +64,7 @@ Na karcie **Podgląd** można wyświetlić pliki w edytorze bez ich otwierania. 
 
 Możesz zastosować pionowe karty dokumentu w następujący sposób:
 
-- Wybierz **Tools**  >  **Opcje** narzędzia  >  karty **środowisko**  >  **i okna** z paska menu. Następnie w kontrolce **Ustawianie układu karty** wybierz z listy rozwijanej opcję z **góry**, z **lewej** lub z **prawej strony** .
+- Wybierz   >  **Opcje** narzędzia  >  karty **środowisko**  >  **i okna** z paska menu. Następnie w kontrolce **Ustawianie układu karty** wybierz z listy rozwijanej opcję z **góry**, z **lewej** lub z **prawej strony** .
 
 - Kliknij prawym przyciskiem myszy kartę, wybierz polecenie **Ustaw układ karty**, a następnie wybierz opcję w **lewo** lub w **prawo**. (Aby przywrócić domyślne położenie kart, wybierz pozycję **Top**).
 
@@ -171,7 +171,7 @@ Najpierw utwórz rozwiązanie testowe, które ma dwa projekty, każdy z innym op
 
 4. Naciśnij klawisz **F5** , aby umieścić program Visual Studio w trybie debugowania. Dostosuj **pozycję okien,** **stosu wywołań** i debugowania **danych wyjściowych** w żądany sposób. Układ, który zamierzasz utworzyć, będzie stosowany do trybu edycji i trybu debugowania.
 
-5. Gdy układy w trybie debugowania i trybie edycji są odpowiednie, wybierz kolejno opcje okno, **Window**  >  **Układ okna**. Wywołaj ten układ "Projektant".
+5. Gdy układy w trybie debugowania i trybie edycji są odpowiednie, wybierz kolejno opcje okno,   >  **Układ okna**. Wywołaj ten układ "Projektant".
 
      Zwróć uwagę, że nowy układ jest przypisany do następnego skrótu klawiaturowego z listy zarezerwowanych **Ctrl** + **Alt** + **1... 0**.
 
@@ -206,6 +206,6 @@ Aby przypomnić, który skrót klawiaturowy jest przypisany do układu, wybierz 
 
 Te układy są automatycznie przenoszone między wersjami programu Visual Studio, a także między wystąpieniami Blend na oddzielnych maszynach i w dowolnej innej organizacji Express Edition. Jednak układy nie poruszają się w programie Visual Studio, Blend i Express.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Instrukcje: poruszanie się w środowisku IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md)

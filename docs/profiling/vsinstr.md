@@ -15,16 +15,16 @@ helpviewer_keywords:
 ms.assetid: 7b1334f7-f9b0-4a82-a145-d0607bfa8467
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 576e83e5440607b06aca1b80171f8ca30d716e24
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 476822abe665bee18d082b7187bfa657cc360d3e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723117"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911650"
 ---
 # <a name="vsinstr"></a>VSInstr
 Narzędzie VSInstr służy do instrumentowania plików binarnych. Jest on wywoływany przy użyciu następującej składni:
@@ -57,7 +57,7 @@ VSInstr [/U] filename [/options]
 |**SuspendOnly:**{**przed** \|  \| **górnym** \| **dnem**}`,funcname`|Zatrzymuje zbieranie danych podczas przebiegu profilowania. Wstawia interfejs API SuspendProfile w określonej lokalizacji.<br /><br /> **Przed** -bezpośrednio przed wpisem funkcji docelowej.<br /><br /> Natychmiast **po zakończeniu** funkcji docelowej.<br /><br /> Z **góry** bezpośrednio po wpisie funkcji docelowej.<br /><br /> **Dolne** — bezpośrednio przed każdym zwróceniem w funkcji docelowej.<br /><br /> `funcname` -Nazwa funkcji docelowej.<br /><br /> Jeśli funkcja docelowa zawiera funkcję StartProfile, funkcja SuspendProfile zostanie wstawiona przed nią.|
 |**ResumeOnly:**{**przed** \|  \| **górnym** \| **dnem**}`,funcname`|Rozpoczyna lub wznawia zbieranie danych podczas przebiegu profilowania.<br /><br /> Jest on zwykle używany do uruchamiania profilowania po zatrzymaniu profilowania opcji **SuspendOnly** . Wstawia interfejs API ResumeProfile w określonej lokalizacji.<br /><br /> **Przed** -bezpośrednio przed wpisem funkcji docelowej.<br /><br /> Natychmiast **po zakończeniu** funkcji docelowej.<br /><br /> Z **góry** bezpośrednio po wpisie funkcji docelowej.<br /><br /> **Dolne** — bezpośrednio przed każdym zwróceniem w funkcji docelowej.<br /><br /> `funcname` -Nazwa funkcji docelowej.<br /><br /> Jeśli funkcja docelowa zawiera funkcję StopProfile, funkcja ResumeProfile zostanie wstawiona po niej.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [VSPerfMon](../profiling/vsperfmon.md)
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [VSPerfReport](../profiling/vsperfreport.md)

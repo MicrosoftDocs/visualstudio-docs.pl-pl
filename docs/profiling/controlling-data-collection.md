@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: e713ad63-b948-46f3-8db9-59b30922ebe5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b846db263c95f20c6ea4cb6a418973830a5dd8ee
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 1ca23b5477cee37154f1334328745a5d2b066b39
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720933"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910732"
 ---
 # <a name="control-data-collection"></a>Sterowanie zbieraniem danych
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Narzędzia profilowania umożliwiają kontrolę, kiedy dane profilowania są zbierane podczas sesji wydajności i określają funkcje, które są profilowane. W tej sekcji opisano sposób uruchamiania i zatrzymywania zbierania danych z okien **Eksplorator wydajności** i **kontroli zbierania danych** oraz sposobu ograniczania obiektów, dla których zbierane są dane profilowania.
@@ -34,5 +34,5 @@ ms.locfileid: "98720933"
 ## <a name="related-sections"></a>Sekcje pokrewne
 - [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Eksplorator wydajności](../profiling/performance-explorer.md)

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: da2474fa-f92d-4e9e-b8bf-67c61bf249c2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f79ac7873a1746e0b14db51ba864e94f6bbfa1e
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 1514fb9409805df91a16678a5cce67ee1f66ab9f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974412"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911232"
 ---
 # <a name="change-the-appearance-of-a-command"></a>Zmiana wyglądu polecenia
 Możesz przekazać użytkownikowi informacje zwrotne, zmieniając wygląd polecenia. Na przykład możesz chcieć, aby polecenie wyglądało inaczej, gdy jest niedostępne. Polecenia mogą być dostępne lub niedostępne, ukrywane lub wyświetlane lub zaznaczając je w menu.
@@ -86,7 +86,7 @@ Aby zmienić wygląd polecenia, wykonaj jedną z następujących czynności:
 
 8. W menu **Narzędzia** powinien pojawić się **Nowy tekst**. Kliknij przycisk **Nowy tekst**. Polecenie powinno teraz być wyszarzone.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)
 - [Jak pakietów VSPackage Dodawanie elementów interfejsu użytkownika](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Rozszerzanie menu i poleceń](../extensibility/extending-menus-and-commands.md)
