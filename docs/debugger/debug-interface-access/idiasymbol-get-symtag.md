@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 139a35bd-faeb-4878-be72-394dedfbb18f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9336bece2713c69f4fbb88df9703405cdd161e54
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9421807871a173535aaded1064133dcef683f513
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461894"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862676"
 ---
 # <a name="idiasymbolget_symtag"></a>IDiaSymbol::get_symTag
 Pobiera klasyfikator typu symbolu.
@@ -25,7 +25,7 @@ Pobiera klasyfikator typu symbolu.
 ## <a name="syntax"></a>Składnia
 
 ```C++
-HRESULT get_symTag ( 
+HRESULT get_symTag ( 
    DWORD* pRetVal
 );
 ```
@@ -49,6 +49,6 @@ DWORD       tag = 0;
 pType->get_symTag( &tag );
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [SymTagEnum, wyliczenie](../../debugger/debug-interface-access/symtagenum.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a1753917-705b-4165-9880-d05e91e6dcb4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c82b8c4836d97f02fa84aec500d961911f993df3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5e98ddb508ef1e00b1192df2d6015ba3ca5632cb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462792"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862914"
 ---
 # <a name="idiasymbolget_nostackordering"></a>IDiaSymbol::get_noStackOrdering
 Ta funkcja Pobiera flagę wskazującą, czy nie można wykonać porządkowania stosu w ramach sprawdzania buforu stosu (opcja kompilatora[(sprawdzanie zabezpieczeń buforu)](/cpp/build/reference/gs-buffer-security-check) ).

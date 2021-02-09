@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b61107e9-9144-4981-b7ef-58a339b80c58
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 24a3c507ae0cacae3f7819b0e9566e4f9b91c2c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ad7d48615a29349562b76e8e93158ff4d3d5743
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462526"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862823"
 ---
 # <a name="idiasymbolget_pure"></a>IDiaSymbol::get_pure
 Pobiera flagę, która określa, czy funkcja jest czystym elementem wirtualnym.
@@ -25,7 +25,7 @@ Pobiera flagę, która określa, czy funkcja jest czystym elementem wirtualnym.
 ## <a name="syntax"></a>Składnia
 
 ```C++
-HRESULT get_pure ( 
+HRESULT get_pure ( 
    BOOL* pRetVal
 );
 ```

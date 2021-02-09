@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 49a159f3-6943-44d3-90a3-0dba51e8a7ec
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6648be961999e5eaf156f2c4b0dea511aed4eb59
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 847317c735332a91c8a7949aa3c860da0cd63631
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461852"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862634"
 ---
 # <a name="idiasymbolget_targetrelativevirtualaddress"></a>IDiaSymbol::get_targetRelativeVirtualAddress
 Pobiera względny adres wirtualny (RVA) elementu docelowego thunk.
@@ -25,7 +25,7 @@ Pobiera względny adres wirtualny (RVA) elementu docelowego thunk.
 ## <a name="syntax"></a>Składnia
 
 ```C++
-HRESULT get_targetRelativeVirtualAddress ( 
+HRESULT get_targetRelativeVirtualAddress ( 
    DWORD* pRetVal
 );
 ```
