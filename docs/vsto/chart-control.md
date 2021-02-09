@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Chart control [Office development in Visual Studio], data binding
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 45de5170ca8a8b7e8a71521e18523e73ebc24046
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 3530e0821d4569381f610f44ae541c04b484b469
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847832"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903774"
 ---
 # <a name="chart-control"></a>Kontrolka wykresu
   <xref:Microsoft.Office.Tools.Excel.Chart>Kontrolka jest obiektem wykresu, który uwidacznia zdarzenia. Po dodaniu wykresu do arkusza program Visual Studio tworzy <xref:Microsoft.Office.Tools.Excel.Chart> obiekt, który można bezpośrednio programować bez konieczności przechodzenia do Microsoft Office modelu obiektów programu Excel.
@@ -74,7 +74,7 @@ ms.locfileid: "96847832"
 
 - <xref:Microsoft.Office.Tools.Excel.Chart.SeriesChange>
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Przykłady i przewodniki dotyczące programowania pakietu Office](../vsto/office-development-samples-and-walkthroughs.md)
 - [Rozwiń dokumenty programu Word i skoroszyty programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Formanty w dokumentach pakietu Office](../vsto/controls-on-office-documents.md)

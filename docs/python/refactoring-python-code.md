@@ -5,17 +5,17 @@ ms.date: 03/13/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: be93ac7b8bc0659da522abcf6000d97ec05d46b9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8eb46f324359549d7f74e8edd90d3056820e234e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801337"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902390"
 ---
 # <a name="refactor-python-code"></a>Refaktoryzacja kodu w języku Python
 
@@ -28,7 +28,7 @@ Program Visual Studio udostępnia kilka poleceń umożliwiających automatyczne 
 
 ## <a name="rename"></a>Zmień nazwę
 
-1. Kliknij prawym przyciskiem myszy identyfikator, którego nazwę chcesz zmienić, a następnie wybierz polecenie **Zmień nazwę**lub Umieść karetkę w tym identyfikatorze, a następnie wybierz polecenie **Edytuj**  >  **Refactor**  >  **Zmień nazwę pliku** refaktoryzacji (**F2**).
+1. Kliknij prawym przyciskiem myszy identyfikator, którego nazwę chcesz zmienić, a następnie wybierz polecenie **Zmień nazwę** lub Umieść karetkę w tym identyfikatorze, a następnie wybierz polecenie **Edytuj**  >    >  **Zmień nazwę pliku** refaktoryzacji (**F2**).
 2. W wyświetlonym oknie dialogowym **zmiany nazwy** wprowadź nową nazwę identyfikatora i wybierz **przycisk OK**:
 
    ![Zmień nazwę monitu o nową nazwę identyfikator](media/code-refactor-rename-1.png)
@@ -42,7 +42,7 @@ Program Visual Studio udostępnia kilka poleceń umożliwiających automatyczne 
 ## <a name="extract-method"></a>Wyodrębnianie metody
 
 1. Wybierz wiersze kodu lub wyrażenie, które ma zostać wyodrębnione w oddzielną metodę.
-2. Wybierz polecenie **Edytuj**  >  **Refactor**  >  **metodę Wyodrębnij wyciąg z metody** lub wpisz **Ctrl** + **R**  >  **M**.
+2. Wybierz polecenie **Edytuj**  >    >  **metodę Wyodrębnij wyciąg z metody** lub wpisz **Ctrl** + **R**  >  **M**.
 3. W wyświetlonym oknie dialogowym wprowadź nową nazwę metody, wskaż, gdzie wyodrębnić ją do i wybierz wszystkie zmienne zamknięcia. Zmienne, które nie zostały wybrane do zamknięcia, są włączone do argumentów metody:
 
    ![Okno dialogowe wyodrębniania metody](media/code-refactor-extract-method-1.png)

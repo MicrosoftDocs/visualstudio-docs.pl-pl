@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: cc714a67-b33e-4440-9203-3c90f648bd9c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d5fa24f3d052ab9122776967607b2c197fb102bf
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 7a9bd5b41d1c04e52d16ecb2fc327e648d9f81aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329903"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902994"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>Niestandardowe właściwości dokumentu w starszej wersji usługi językowej
 Właściwości dokumentu można wyświetlić w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] oknie **Właściwości** . Języki programowania zazwyczaj nie mają właściwości skojarzonych z poszczególnymi plikami źródłowymi. Plik XML obsługuje jednak właściwości dokumentu, które mają wpływ na kodowanie, schemat i arkusz stylów.

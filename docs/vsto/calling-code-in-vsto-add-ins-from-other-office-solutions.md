@@ -16,15 +16,15 @@ helpviewer_keywords:
 - calling code from VBA
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fad3f107487e4736ccd0a6aa59ea5a801b5f72e5
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: deb8fec9212c686bce670df6bab23ed56e51741f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847848"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903804"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>Wywoływanie kodu w dodatkach VSTO z innych rozwiązań pakietu Office
   Można uwidocznić obiekt w dodatku VSTO dla innych rozwiązań, w tym innych rozwiązań Microsoft Office. Jest to przydatne, jeśli dodatek narzędzi VSTO udostępnia usługę, która umożliwia korzystanie z innych rozwiązań. Na przykład jeśli masz dodatek narzędzi VSTO dla programu Microsoft Office Excel, który wykonuje obliczenia dotyczące danych finansowych z usługi sieci Web, inne rozwiązania mogą wykonywać te obliczenia przez wywołanie dodatku VSTO programu Excel w czasie wykonywania.
@@ -144,7 +144,7 @@ utilities.ImportData();
 
  W tym przykładzie, jeśli spróbujesz rzutować wartość właściwości COMAddIn. Object na `AddInUtilities` klasę zamiast `IAddInUtilities` interfejsu, kod zgłosi <xref:System.InvalidCastException> .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dodatki narzędzi VSTO programu](../vsto/programming-vsto-add-ins.md)
 - [Przewodnik: wywoływanie kodu w dodatku VSTO z języka VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)
 - [Opracowywanie rozwiązań pakietu Office](../vsto/developing-office-solutions.md)

@@ -5,17 +5,17 @@ ms.date: 03/13/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 10430c6eba57c97dd46a706d0ec2f532cd08d4f3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 43d24d38fcb9ba07d4cc8c58d7b544256171b049
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801168"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902378"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Jak program Visual Studio używa ścieżek wyszukiwania języka Python
 

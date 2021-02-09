@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 830e3e45-9a93-4279-a249-75b84599aefb
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 98c3ba64454ca25b62dc5dbe0964db64b010a7ec
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 7b4e6f14eb5ba771ff83b0aa5fedc8ae261ca69d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046985"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902636"
 ---
 # <a name="troubleshoot-net-framework-targeting-errors"></a>Rozwiązywanie problemów z błędami obiektów docelowych programu .NET Framework
 
@@ -38,7 +38,7 @@ W tym temacie opisano błędy programu MSBuild, które mogą wystąpić z powodu
 
  Jeśli zmienisz wersję docelową .NET Framework aplikacji, program Visual Studio zmieni niektóre odwołania, ale może być konieczne ręczne zaktualizowanie odwołań. Na przykład jeden z wymienionych wyżej błędów może wystąpić, jeśli zmienisz aplikację na docelową .NET Framework 3,5 z dodatkiem Service Pack 1, a ta aplikacja ma zasoby lub ustawienia zależne od profilu klienta dla .NET Framework 4.
 
- Aby obejść ustawienia aplikacji, Otwórz **Eksplorator rozwiązań** , wybierz opcję **Pokaż wszystkie pliki** , a następnie edytuj plik *app.config* w edytorze XML programu Visual Studio. Zmień wersję w ustawieniach, aby dopasować ją do odpowiedniej wersji .NET Framework. Na przykład można zmienić ustawienie wersji z 4.0.0.0 na 2.0.0.0. Podobnie w przypadku aplikacji, która dodała zasoby, Otwórz **Eksplorator rozwiązań** , wybierz przycisk **Pokaż wszystkie pliki** , rozwiń **mój projekt** (Visual Basic) lub **Właściwości** (C#), a następnie edytuj plik *resources. resx* w edytorze XML programu Visual Studio. Zmień ustawienie wersji z 4.0.0.0 na 2.0.0.0.
+ Aby obejść ustawienia aplikacji, Otwórz **Eksplorator rozwiązań**, wybierz opcję **Pokaż wszystkie pliki**, a następnie edytuj plik *app.config* w edytorze XML programu Visual Studio. Zmień wersję w ustawieniach, aby dopasować ją do odpowiedniej wersji .NET Framework. Na przykład można zmienić ustawienie wersji z 4.0.0.0 na 2.0.0.0. Podobnie w przypadku aplikacji, która dodała zasoby, Otwórz **Eksplorator rozwiązań**, wybierz przycisk **Pokaż wszystkie pliki** , rozwiń **mój projekt** (Visual Basic) lub **Właściwości** (C#), a następnie edytuj plik *resources. resx* w edytorze XML programu Visual Studio. Zmień ustawienie wersji z 4.0.0.0 na 2.0.0.0.
 
  Jeśli aplikacja zawiera zasoby, takie jak ikony lub mapy bitowe lub ustawienia, takie jak parametry połączenia danych, można również rozwiązać ten problem, usuwając wszystkie elementy na stronie **Ustawienia** **projektanta projektu** , a następnie ponownie dodając wymagane ustawienia.
 
@@ -64,4 +64,4 @@ W tym temacie opisano błędy programu MSBuild, które mogą wystąpić z powodu
 - [Instrukcje: docelowa wersja .NET Framework](../ide/visual-studio-multi-targeting-overview.md)
 - [.NET Framework profilu klienta](/dotnet/framework/deployment/client-profile)
 - [Omówienie określania celu platformy](../ide/visual-studio-multi-targeting-overview.md)
-- [Wielowersyjności kodu](../msbuild/msbuild-multitargeting-overview.md)
+- [Wielowersyjność kodu](../msbuild/msbuild-multitargeting-overview.md)

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - what's new [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 05f3662f1bc6379fa3401e98473971bcefc36ddd
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 2bb8f6064bd2c2df55c7d0cf8fea1e25c513da0f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847861"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903796"
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>Zmiany projektu pakietu Office przeznaczone dla .NET Framework 4 lub .NET Framework 4,5
   Począwszy od programu [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] , program Visual Studio wprowadził pewne zmiany do projektu pakietu Office, który jest przeznaczony dla [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub w późniejszym czasie. Jeśli znasz projekty pakietu Office w poprzednich wersjach programu Visual Studio, należy pamiętać o tych zmianach przed rozpoczęciem tworzenia projektów pakietu Office przeznaczonych dla tych wersji .NET Framework 4,0 lub nowszych. Domyślnie wszystkie projekty tworzone przy użyciu Visual Studio 2013 lub później są przeznaczone dla .NET Framework 4,0 lub nowszych.
@@ -59,7 +59,7 @@ ms.locfileid: "96847861"
 |`OLEObject` `OLEControl` Nazwy klas i zostały zmienione.|Należy zmodyfikować każdy kod, który używa wystąpień tych klas do użycia <xref:Microsoft.Office.Tools.Excel.ControlSite> obiektów lub <xref:Microsoft.Office.Tools.Word.ControlSite> . Aby uzyskać więcej informacji, zobacz [Aktualizowanie projektów programów Excel i Word, które zostały zmigrowane do .NET Framework 4 lub .NET Framework 4,5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|
 |Klasy elementów hosta, takie jak `ThisWorkbook` , `Sheet` *n*, `ThisDocument` i `ThisAddIn` , nie udostępniają już `Dispose` metody, którą można przesłonić.|Należy przenieść dowolny kod w `Dispose` przesłonięciu metody do `Shutdown` procedury obsługi zdarzeń w klasie elementu hosta, na przykład, `ThisAddIn_Shutdown` i usunąć `Dispose` przesłonięcie metody z klasy elementów hosta.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Migrowanie rozwiązań pakietu Office do .NET Framework 4 lub nowszego](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
 - [Nowości w programowaniu pakietu Office](/previous-versions/86bkz018(v=vs.110))
 - [Visual Studio Tools dla środowiska uruchomieniowego pakietu Office — omówienie](../vsto/visual-studio-tools-for-office-runtime-overview.md)

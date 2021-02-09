@@ -5,17 +5,17 @@ ms.date: 12/06/2018
 ms.topic: quickstart
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 089be3e6f28a939979f6bd97097ea7558824b493
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 81f337cf3feca517f46632e7fe08a9f5a62cd707
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62429765"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902447"
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Szybki Start: Tworzenie projektu w języku Python na podstawie szablonu w programie Visual Studio
 

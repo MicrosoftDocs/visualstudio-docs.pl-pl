@@ -8,17 +8,17 @@ ms.topic: conceptual
 ms.assetid: d5c038e2-e70d-411e-950c-8a54917b578a
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fd584a977900de83af454f26722d3e4ba2bd8ac8
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 941a991e28a2d545bbc4da809a1e663c9fc41a5a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847666"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902730"
 ---
 # <a name="install-build-tools-into-a-container"></a>Instalowanie narzędzi kompilacji do kontenera
 
@@ -28,7 +28,7 @@ Visual Studio Build Tools można zainstalować w kontenerze systemu Windows w ce
 
 Jeśli Visual Studio Build Tools nie ma potrzebnych do skompilowania kodu źródłowego, te same kroki mogą być używane dla innych produktów Visual Studio. Należy jednak pamiętać, że kontenery systemu Windows nie obsługują interaktywnego interfejsu użytkownika, więc wszystkie polecenia muszą być zautomatyzowane.
 
-## <a name="before-you-begin"></a>Przed rozpoczęciem
+## <a name="before-you-begin"></a>Zanim rozpoczniesz
 
 Poniżej założono pewną znajomość [platformy Docker](https://www.docker.com/what-docker) . Jeśli nie znasz jeszcze programu Docker w systemie Windows, przeczytaj temat jak [zainstalować i skonfigurować aparat platformy Docker w systemie Windows](/virtualization/windowscontainers/manage-docker/configure-docker-daemon).
 
@@ -205,7 +205,7 @@ Aby użyć tego obrazu dla przepływu pracy ciągłej integracji/ciągłego dost
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [Zaawansowany przykład dotyczący kontenerów](advanced-build-tools-container.md)
 * [Znane problemy z kontenerami](build-tools-container-issues.md)

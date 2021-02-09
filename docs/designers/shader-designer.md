@@ -10,21 +10,21 @@ f1_keywords:
 ms.assetid: 5db09a16-b82c-4ba3-8ec9-630cdc109397
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f932c6c02bf8b3e60487b781dd3211f6019d49c9
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: b637c4cf1b065426bb4070d2e08bf59984c8ff23
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134377"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902363"
 ---
 # <a name="shader-designer"></a>Shader Designer
 
-W tym dokumencie opisano sposób pracy z **projektantem cieniowania** programu Visual Studio w celu tworzenia, modyfikowania i eksportowania niestandardowych efektów wizualnych, które są znane jako programy do *cieniowania* .
+W tym dokumencie opisano sposób pracy z **projektantem cieniowania** programu Visual Studio w celu tworzenia, modyfikowania i eksportowania niestandardowych efektów wizualnych, które są znane jako programy do *cieniowania*.
 
-Za pomocą **projektanta cieniowania** można tworzyć niestandardowe efekty wizualne dla swojej gry lub aplikacji, nawet jeśli nie znasz programowania w języku HLSL (High-Level Shader Language). Aby utworzyć program do cieniowania w **projektancie cieniowania** , można go określić jako Graf. Oznacza to, że należy dodać do *węzłów* powierzchni projektowej, które reprezentują dane i operacje, a następnie nawiązać połączenia między nimi w celu zdefiniowania sposobu przetwarzania danych przez operacje. W każdym węźle operacji jest dostępny podgląd efektu do tego punktu, aby można było wizualizować jego wyniki. Dane są przepływane przez węzły do końcowego węzła, który reprezentuje dane wyjściowe cieniowania.
+Za pomocą **projektanta cieniowania** można tworzyć niestandardowe efekty wizualne dla swojej gry lub aplikacji, nawet jeśli nie znasz programowania w języku HLSL (High-Level Shader Language). Aby utworzyć program do cieniowania w **projektancie cieniowania**, można go określić jako Graf. Oznacza to, że należy dodać do *węzłów* powierzchni projektowej, które reprezentują dane i operacje, a następnie nawiązać połączenia między nimi w celu zdefiniowania sposobu przetwarzania danych przez operacje. W każdym węźle operacji jest dostępny podgląd efektu do tego punktu, aby można było wizualizować jego wyniki. Dane są przepływane przez węzły do końcowego węzła, który reprezentuje dane wyjściowe cieniowania.
 
 ## <a name="supported-formats"></a>Obsługiwane formaty
 
@@ -46,22 +46,22 @@ W tej sekcji opisano sposób dodawania modułu cieniującego DGSL do projektu Vi
 
 ### <a name="to-add-a-dgsl-shader-to-your-project"></a>Aby dodać cieniowanie DGSL do projektu
 
-1. Upewnij się, że masz zainstalowany wymagany składnik programu Visual Studio, który jest potrzebny do pracy z grafiką. Składnik jest nazywany **edytorami obrazów i modeli 3W** .
+1. Upewnij się, że masz zainstalowany wymagany składnik programu Visual Studio, który jest potrzebny do pracy z grafiką. Składnik jest nazywany **edytorami obrazów i modeli 3W**.
 
-   Aby go zainstalować, Otwórz Instalator programu Visual Studio, wybierając pozycję **Narzędzia**  >  **Pobierz narzędzia i funkcje** z paska menu, a następnie wybierz kartę **poszczególne składniki** . Wybierz składnik **obrazy i edytory modelu 3W** w kategorii **gry i grafika** , a następnie wybierz polecenie **Modyfikuj** .
+   Aby go zainstalować, Otwórz Instalator programu Visual Studio, wybierając pozycję **Narzędzia**  >  **Pobierz narzędzia i funkcje** z paska menu, a następnie wybierz kartę **poszczególne składniki** . Wybierz składnik **obrazy i edytory modelu 3W** w kategorii **gry i grafika** , a następnie wybierz polecenie **Modyfikuj**.
 
    ![Składnik edytorów obrazów i modeli 3W](media/image-3d-model-editors-component.png)
 
-2. W **Eksplorator rozwiązań** Otwórz menu skrótów dla projektu języka C++, do którego chcesz dodać program do cieniowania, a następnie wybierz polecenie **Dodaj**  >  **nowy element** .
+2. W **Eksplorator rozwiązań** Otwórz menu skrótów dla projektu języka C++, do którego chcesz dodać program do cieniowania, a następnie wybierz polecenie **Dodaj**  >  **nowy element**.
 
-3. W oknie dialogowym **Dodaj nowy element** w obszarze **zainstalowane** wybierz pozycję **grafika** , a następnie wybierz pozycję **Wykres cieniowania wizualizacji (. dgsl)** .
+3. W oknie dialogowym **Dodaj nowy element** w obszarze **zainstalowane** wybierz pozycję **grafika**, a następnie wybierz pozycję **Wykres cieniowania wizualizacji (. dgsl)**.
 
    > [!NOTE]
    > Jeśli kategoria **grafika** nie jest widoczna w oknie dialogowym **Dodaj nowy element** i masz zainstalowany składnik **edytory obrazów i modeli 3W** , elementy graficzne nie są obsługiwane dla typu projektu.
 
 4. Określ **nazwę** pliku programu do cieniowania i **lokalizację** , w której ma zostać utworzona.
 
-5. Wybierz przycisk **Dodaj** .
+5. Wybierz przycisk **Dodaj**.
 
 ### <a name="the-default-shader"></a>Domyślne cieniowanie
 
@@ -96,9 +96,9 @@ W tej tabeli opisano elementy na pasku narzędzi **tryb projektanta cieniowania*
 |**Podgląd z stożek**|Po włączeniu Model stożkowy jest używany do podglądu cieniowania. Można włączyć tylko jeden kształt podglądu w danym momencie.|
 |**Podgląd przy użyciu czajniczek**|Po włączeniu Model elementu czajniczek jest używany do podglądu cieniowania. Można włączyć tylko jeden kształt podglądu w danym momencie.|
 |**Podgląd przy użyciu płaszczyzny**|Po włączeniu Model płaszczyzny jest używany do podglądu cieniowania. Można włączyć tylko jeden kształt podglądu w danym momencie.|
-|**Przybornik**|Alternatywnie pokazuje lub ukrywa **Przybornik** .|
+|**Przybornik**|Alternatywnie pokazuje lub ukrywa **Przybornik**.|
 |**Właściwości**|Alternatywnie pokazuje lub ukrywa okno **Właściwości** .|
-|**Zaawansowany**|Zawiera zaawansowane polecenia i opcje.<br /><br /> **Eksport** : umożliwia eksportowanie cieniowania w kilku formatach.<br /><br /> **Eksportuj jako** : Eksportuje program do cieniowania jako kod źródłowy HLSL lub jako skompilowany plik kodu programu do cieniowania. Aby uzyskać więcej informacji o sposobach eksportowania programów do cieniowania, zobacz [How to: Export a Shader](../designers/how-to-export-a-shader.md).<br /><br /> **Aparaty grafiki** : włącza wybór modułu renderowania, który jest używany do wyświetlania powierzchni projektowej.<br /><br /> **Renderowanie przy użyciu d3d11** : używa programu Direct3D 11 do renderowania powierzchni projektowej projektanta cieniowania.<br /><br /> **Renderowanie przy użyciu D3D11WARP** : używa platformy Direct3D 11 Windows Advanced rasteryzacji (Wypaczenie), aby renderować powierzchnię projektowania projektanta programu do cieniowania.<br /><br /> **Widok** : umożliwia wybranie dodatkowych informacji na temat projektanta programu do cieniowania.<br /><br /> **Szybkość klatek** : po włączeniu wyświetla bieżącą stawkę klatki w prawym górnym rogu powierzchni projektowej. Szybkość odtwarzania to liczba ramek wyświetlanych na sekundę. Ta opcja jest przydatna po włączeniu opcji **tryb renderowania w czasie rzeczywistym** .|
+|**Zaawansowany**|Zawiera zaawansowane polecenia i opcje.<br /><br /> **Eksport**: umożliwia eksportowanie cieniowania w kilku formatach.<br /><br /> **Eksportuj jako**: Eksportuje program do cieniowania jako kod źródłowy HLSL lub jako skompilowany plik kodu programu do cieniowania. Aby uzyskać więcej informacji o sposobach eksportowania programów do cieniowania, zobacz [How to: Export a Shader](../designers/how-to-export-a-shader.md).<br /><br /> **Aparaty grafiki**: włącza wybór modułu renderowania, który jest używany do wyświetlania powierzchni projektowej.<br /><br /> **Renderowanie przy użyciu d3d11**: używa programu Direct3D 11 do renderowania powierzchni projektowej projektanta cieniowania.<br /><br /> **Renderowanie przy użyciu D3D11WARP**: używa platformy Direct3D 11 Windows Advanced rasteryzacji (Wypaczenie), aby renderować powierzchnię projektowania projektanta programu do cieniowania.<br /><br /> **Widok**: umożliwia wybranie dodatkowych informacji na temat projektanta programu do cieniowania.<br /><br /> **Szybkość klatek**: po włączeniu wyświetla bieżącą stawkę klatki w prawym górnym rogu powierzchni projektowej. Szybkość odtwarzania to liczba ramek wyświetlanych na sekundę. Ta opcja jest przydatna po włączeniu opcji **tryb renderowania w czasie rzeczywistym** .|
 
 > [!TIP]
 > Możesz wybrać przycisk **Zaawansowane** , aby ponownie uruchomić ostatnie polecenie.
@@ -113,13 +113,13 @@ Użyj trybu **SELECT** , aby dodawać, usuwać, zmieniać położenie, łączyć
 
   - Aby dodać węzeł do wykresu, wybierz go w **przyborniku** , a następnie przenieś do powierzchni projektowej.
 
-  - Aby usunąć węzeł z grafu, zaznacz go, a następnie naciśnij klawisz **delete** .
+  - Aby usunąć węzeł z grafu, zaznacz go, a następnie naciśnij klawisz **delete**.
 
   - Aby zmienić położenie węzła, zaznacz go, a następnie przenieś do nowej lokalizacji.
 
   - Aby połączyć dwa węzły, Przenieś Terminal wyjściowy jednego węzła do terminalu wejściowego drugiego węzła. Możliwe jest połączenie tylko terminali, które mają zgodne typy. Linia między terminalami pokazuje połączenie.
 
-  - Aby usunąć połączenie, w menu skrótów dla jednego z podłączonych terminali wybierz opcję **Przerwij linki** .
+  - Aby usunąć połączenie, w menu skrótów dla jednego z podłączonych terminali wybierz opcję **Przerwij linki**.
 
   - Aby skonfigurować właściwości węzła, wybierz węzeł, a następnie w oknie **Właściwości** Określ nowe wartości właściwości.
 
@@ -147,12 +147,12 @@ W poniższej tabeli przedstawiono parametry programu do cieniowania, które moż
 
 |Parametr|Właściwości|
 |---------------|----------------|
-|**Tekstura 1**  -  **Tekstura 8**|**Dostęp** :                             **publiczny** , aby zezwalać na ustawienie właściwości z edytora modelu; w przeciwnym razie **prywatny** .<br /><br /> **Nazwa pliku** : pełna ścieżka pliku tekstury skojarzonego z tym rejestrem tekstury.|
-|**Otoczenie materiału**|**Dostęp** :                             **publiczny** , aby zezwalać na ustawienie właściwości z edytora modelu; w przeciwnym razie **prywatny** .<br /><br /> **Wartość** : kolor rozpraszania bieżącego piksela ze względu na pośrednie lub oświetlenie otoczenia.|
-|**Rozpraszanie materiału**|**Dostęp** : **publiczny** , aby zezwalać na ustawienie właściwości z edytora modelu; w przeciwnym razie **prywatny** .<br /><br /> **Wartość** : kolor opisujący sposób rozpraszania przez bieżący piksel oświetlenia bezpośredniego.|
-|**Emisyjny materiału**|**Dostęp** :                              **publiczny** , aby zezwalać na ustawienie właściwości z edytora modelu; w przeciwnym razie **prywatny** .<br /><br /> **Wartość** : udział koloru bieżącego piksela ze względu na własne oświetlenie.|
-|**Odblasków materiału**|**Dostęp** :                              **publiczny** , aby zezwalać na ustawienie właściwości z edytora modelu; w przeciwnym razie **prywatny** .<br /><br /> **Wartość** : kolor opisujący sposób, w jaki bieżący piksel odzwierciedla bezpośrednie oświetlenie.|
-|**Odblasków materiału**|**Dostęp** :                             **publiczny** , aby zezwalać na ustawienie właściwości z edytora modelu; w przeciwnym razie **prywatny** .<br /><br /> **Wartość** : wykładnik, który definiuje intensywność odblasków świateł na bieżącym pikselu.|
+|**Tekstura 1**  -  **Tekstura 8**|**Dostęp**:                             **publiczny** , aby zezwalać na ustawienie właściwości z edytora modelu; w przeciwnym razie **prywatny**.<br /><br /> **Nazwa pliku**: pełna ścieżka pliku tekstury skojarzonego z tym rejestrem tekstury.|
+|**Otoczenie materiału**|**Dostęp**:                             **publiczny** , aby zezwalać na ustawienie właściwości z edytora modelu; w przeciwnym razie **prywatny**.<br /><br /> **Wartość**: kolor rozpraszania bieżącego piksela ze względu na pośrednie lub oświetlenie otoczenia.|
+|**Rozpraszanie materiału**|**Dostęp**: **publiczny** , aby zezwalać na ustawienie właściwości z edytora modelu; w przeciwnym razie **prywatny**.<br /><br /> **Wartość**: kolor opisujący sposób rozpraszania przez bieżący piksel oświetlenia bezpośredniego.|
+|**Emisyjny materiału**|**Dostęp**:                              **publiczny** , aby zezwalać na ustawienie właściwości z edytora modelu; w przeciwnym razie **prywatny**.<br /><br /> **Wartość**: udział koloru bieżącego piksela ze względu na własne oświetlenie.|
+|**Odblasków materiału**|**Dostęp**:                              **publiczny** , aby zezwalać na ustawienie właściwości z edytora modelu; w przeciwnym razie **prywatny**.<br /><br /> **Wartość**: kolor opisujący sposób, w jaki bieżący piksel odzwierciedla bezpośrednie oświetlenie.|
+|**Odblasków materiału**|**Dostęp**:                             **publiczny** , aby zezwalać na ustawienie właściwości z edytora modelu; w przeciwnym razie **prywatny**.<br /><br /> **Wartość**: wykładnik, który definiuje intensywność odblasków świateł na bieżącym pikselu.|
 
 #### <a name="time-based-effects"></a>Efekty zależne od czasu
 
@@ -164,13 +164,13 @@ Aby włączyć renderowanie w czasie rzeczywistym, na pasku narzędzi projektant
 
 Na wiele programów do cieniowania wpływają zmienne, takie jak kąt wyświetlania lub oświetlenie kierunkowe. Aby sprawdzić, jak efekt reaguje na zmiany zmiennych, można swobodnie obrócić kształt w wersji zapoznawczej i obserwować zachowanie programu do cieniowania.
 
-Aby obrócić kształt, naciśnij i przytrzymaj klawisz **Alt** , a następnie wybierz dowolny punkt na powierzchni projektowej i przenieś go.
+Aby obrócić kształt, naciśnij i przytrzymaj klawisz **Alt**, a następnie wybierz dowolny punkt na powierzchni projektowej i przenieś go.
 
 ### <a name="export-shaders"></a>Eksportowanie programów do cieniowania
 
 Zanim będzie można użyć programu do cieniowania w aplikacji, musisz go wyeksportować w formacie rozpoznawanym przez technologię DirectX.
 
-Program do cieniowania można eksportować jako kod źródłowy HLSL lub w postaci kodu bajtowego skompilowanego programu do cieniowania. Kod źródłowy HLSL jest eksportowany do pliku tekstowego, który ma rozszerzenie nazwy pliku *. HLSL* . Kod bajtowy programu do cieniowania można wyeksportować do pliku binarnego RAW, który ma rozszerzenie nazwy pliku *. CSO* lub do pliku nagłówkowego C++ ( *. h* ), który koduje kod bajtowy modułu cieniującego do tablicy.
+Program do cieniowania można eksportować jako kod źródłowy HLSL lub w postaci kodu bajtowego skompilowanego programu do cieniowania. Kod źródłowy HLSL jest eksportowany do pliku tekstowego, który ma rozszerzenie nazwy pliku *. HLSL* . Kod bajtowy programu do cieniowania można wyeksportować do pliku binarnego RAW, który ma rozszerzenie nazwy pliku *. CSO* lub do pliku nagłówkowego C++ (*. h*), który koduje kod bajtowy modułu cieniującego do tablicy.
 
 Aby uzyskać więcej informacji o sposobach eksportowania programów do cieniowania, zobacz [How to: Export a Shader](../designers/how-to-export-a-shader.md).
 
@@ -178,12 +178,12 @@ Aby uzyskać więcej informacji o sposobach eksportowania programów do cieniowa
 
 |Polecenie|Skróty klawiaturowe|
 |-------------| - |
-|Przełącz do trybu **wyboru**|**Ctrl** + **G** , **Ctrl** + **Q**<br /><br /> **S**|
-|Przełącz do trybu **powiększenia**|**Ctrl** + **G** , **Ctrl** + **Z**<br /><br /> **Porządku**|
-|Przełącz do trybu **kadrowania**|**Ctrl** + **G** , **Ctrl** + **P**<br /><br /> **K**|
+|Przełącz do trybu **wyboru**|**Ctrl** + **G**, **Ctrl** + **Q**<br /><br /> **S**|
+|Przełącz do trybu **powiększenia**|**Ctrl** + **G**, **Ctrl** + **Z**<br /><br /> **Porządku**|
+|Przełącz do trybu **kadrowania**|**Ctrl** + **G**, **Ctrl** + **P**<br /><br /> **K**|
 |Zaznacz wszystko|**Ctrl** + **A**|
 |Usuń bieżące zaznaczenie|**Usuwanie**|
-|Anuluj bieżące zaznaczenie|**Escape** ( **ESC** )|
+|Anuluj bieżące zaznaczenie|**Escape** (**ESC**)|
 |Powiększanie|**Ctrl** + **Kółko myszy do przodu**<br /><br /> Znak plus ( **+** )|
 |Pomniejszanie|**Ctrl** + **Kółko myszy do tyłu**<br /><br /> Znak minus ( **-** )|
 |Przesuń powierzchnię projektu w górę|**Obrót kółkiem myszy do tyłu**<br /><br /> **PageDown**|
@@ -197,7 +197,7 @@ Aby uzyskać więcej informacji o sposobach eksportowania programów do cieniowa
 |Przenieś bieżące zaznaczenie w górę|**SHIFT** + **Strzałka w górę**|
 |Przenieś bieżące zaznaczenie w dół|**SHIFT** + **Strzałka w dół**|
 |Przenieś bieżące zaznaczenie w lewo|**SHIFT** + **Strzałka w lewo**|
-|Przenieś bieżące zaznaczenie w prawo|**SHIFT** + **Strzałka w prawo** .|
+|Przenieś bieżące zaznaczenie w prawo|**SHIFT** + **Strzałka w prawo**.|
 
 ## <a name="related-topics"></a>Powiązane tematy
 

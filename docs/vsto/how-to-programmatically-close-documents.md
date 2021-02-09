@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], closing documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 52914e60d0519eb923e5c4f327d58afdfa858c1c
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 96a18245e477000e1d4969a3e1e597443c6f3372
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848276"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903725"
 ---
 # <a name="how-to-programmatically-close-documents"></a>Instrukcje: programowe Zamykanie dokumentów
   Możesz zamknąć aktywny dokument lub określić dokument do zamknięcia.
@@ -63,7 +63,7 @@ ms.locfileid: "96848276"
      [!code-vb[Trin_VstcoreWordAutomation#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#4)]
      [!code-csharp[Trin_VstcoreWordAutomation#4](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#4)]
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: programowe otwieranie istniejących dokumentów](../vsto/how-to-programmatically-open-existing-documents.md)
 - [Instrukcje: programowe zapisywanie dokumentów](../vsto/how-to-programmatically-save-documents.md)
 - [Elementy hosta i formanty hosta — Omówienie](../vsto/host-items-and-host-controls-overview.md)

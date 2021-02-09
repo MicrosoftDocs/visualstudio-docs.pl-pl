@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 221b4b1b-4a26-466e-bc29-5eff800fab13
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1965ff1b4cfa89e4584c194942dec7ae486473ff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a3eb4710e3073ee49aa9660aa322b4638c4c0d24
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718591"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901614"
 ---
 # <a name="idebugthread2"></a>IDebugThread2
 Ten interfejs reprezentuje wątek uruchomiony w programie.
@@ -50,7 +50,7 @@ IDebugThread2 : IUnknown
 |[CanSetNextStatement](../../../extensibility/debugger/reference/idebugthread2-cansetnextstatement.md)|Określa, czy Następna instrukcja może być ustawiona na daną ramkę stosu i kontekst kodu.|
 |[SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md)|Ustawia następną instrukcję na daną ramkę stosu i kontekst kodu.|
 |[GetThreadId](../../../extensibility/debugger/reference/idebugthread2-getthreadid.md)|Pobiera identyfikator wątku systemowego.|
-|[Suspend](../../../extensibility/debugger/reference/idebugthread2-suspend.md)|Wstrzymuje wątek.|
+|[Wstrzymanie](../../../extensibility/debugger/reference/idebugthread2-suspend.md)|Wstrzymuje wątek.|
 |[Wznawianie](../../../extensibility/debugger/reference/idebugthread2-resume.md)|Wznawia wątek.|
 |[GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)|Pobiera właściwości opisujące wątek.|
 |[GetLogicalThread](../../../extensibility/debugger/reference/idebugthread2-getlogicalthread.md)|Pobiera wątek logiczny skojarzony z tym wątkiem fizycznym.|
@@ -69,7 +69,7 @@ IDebugThread2 : IUnknown
 
 ## <a name="see-also"></a>Zobacz też
 - [Interfejsy podstawowe](../../../extensibility/debugger/reference/core-interfaces.md)
-- [Wydarzenie](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+- [Zdarzenie](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
 - [GetThread](../../../extensibility/debugger/reference/idebugstackframe2-getthread.md)
 - [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)
 - [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)

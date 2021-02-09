@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: ba5c364b-66e6-47ea-9760-a0b70de8f0a0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2fd2ba746f10094a79f1b37e57ba4ca90ff117b
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 1b4927e63bec93fbe7b6730e131a0893372aa70d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328447"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902971"
 ---
 # <a name="custom-parameters"></a>Parametry niestandardowe
 Parametry niestandardowe kontrolują działanie kreatora po rozpoczęciu pracy przez kreatora. Powiązany plik *vsz* zawiera tablicę parametrów zdefiniowanych przez użytkownika, które są pakowane przez zintegrowane środowisko programistyczne (IDE) i przekazaną do kreatora jako tablicę ciągów, gdy Kreator został uruchomiony. Następnie Kreator analizuje tablicę ciągów i używa tych informacji do sterowania rzeczywistą operacją kreatora. W ten sposób Kreator może dostosować funkcje w zależności od zawartości pliku *. vsz* .

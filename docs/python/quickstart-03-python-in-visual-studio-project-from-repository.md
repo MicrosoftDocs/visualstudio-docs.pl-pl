@@ -5,17 +5,17 @@ ms.date: 12/06/2018
 ms.topic: quickstart
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5d0363626748588b6f4058e197f0d6796ece51ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 55db74b2b2882aac12ac1587c4e972e31f7dfe10
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64543142"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902394"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Szybki Start: klonowanie repozytorium kodu w języku Python w programie Visual Studio
 
@@ -33,14 +33,14 @@ Po [zainstalowaniu obsługi języka Python w programie Visual Studio](installing
 
     ![Okno programu Team Explorer zawierające Azure Repos, GitHub i klonowanie repozytorium](media/team-explorer.png)
 
-1. W obszarze **lokalne repozytoria Git**wybierz polecenie **klonowania** , a następnie wprowadź wartość `https://github.com/gregmalcolm/python_koans` w polu adres URL, wprowadź folder dla sklonowanych plików, a następnie wybierz przycisk **klonowania** .
+1. W obszarze **lokalne repozytoria Git** wybierz polecenie **klonowania** , a następnie wprowadź wartość `https://github.com/gregmalcolm/python_koans` w polu adres URL, wprowadź folder dla sklonowanych plików, a następnie wybierz przycisk **klonowania** .
 
     > [!Tip]
     > Folder określony w **Team Explorer** jest dokładnym folderem, w którym będą odbierane sklonowane pliki. W przeciwieństwie do `git clone` polecenia, utworzenie klonu w **Team Explorer** nie tworzy automatycznie podfolderu o nazwie repozytorium.
 
 1. Po zakończeniu klonowania Nazwa repozytorium pojawia się na liście **lokalnych repozytoriów Git** . Kliknij dwukrotnie tę nazwę, aby przejść do pulpitu nawigacyjnego repozytorium w **Team Explorer**.
 
-1. W obszarze **rozwiązania**wybierz pozycję **Nowy**.
+1. W obszarze **rozwiązania** wybierz pozycję **Nowy**.
 
     ![Okno Team Explorer, tworzenie nowego projektu na podstawie klonu](media/team-explorer-new-project.png)
 
@@ -48,7 +48,7 @@ Po [zainstalowaniu obsługi języka Python w programie Visual Studio](installing
 
 1. Wybierz pozycję **Wyświetl**  >  **Eksplorator rozwiązań** z menu.
 
-1. W **Eksplorator rozwiązań**rozwiń węzeł **python3** , kliknij prawym przyciskiem myszy pozycję **contemplate_koans. PR**i wybierz pozycję **Ustaw jako plik startowy**. Ten krok informuje program Visual Studio, który plik powinien być używany podczas uruchamiania projektu.
+1. W **Eksplorator rozwiązań** rozwiń węzeł **python3** , kliknij prawym przyciskiem myszy pozycję **contemplate_koans. PR** i wybierz pozycję **Ustaw jako plik startowy**. Ten krok informuje program Visual Studio, który plik powinien być używany podczas uruchamiania projektu.
 
 1. Wybierz pozycję **Project**  >  **koans Properties (właściwości** projektu) z menu, wybierz kartę **Ogólne** i ustaw **katalog roboczy** na "python3". Ten krok jest niezbędny, ponieważ program Visual Studio domyślnie ustawia katalog roboczy na katalog główny projektu, a nie lokalizację pliku startowego (*python3 \ contemplate_koans. PR*, który można także zobaczyć we właściwościach projektu). Kod programu szuka pliku *koans.txt* w folderze roboczym, więc bez zmiany tej wartości zobaczysz błąd w czasie wykonywania.
 
@@ -56,7 +56,7 @@ Po [zainstalowaniu obsługi języka Python w programie Visual Studio](installing
 
 1. Naciśnij klawisz **Ctrl** + **F5** lub wybierz pozycję **Debuguj**  >  **Uruchom bez debugowania** , aby uruchomić program. Jeśli zobaczysz **FileNotFoundError** dla *koans.txt*, sprawdź ustawienie katalogu roboczego zgodnie z opisem w poprzednim kroku.
 
-1. Po pomyślnym uruchomieniu programu w wierszu 17 z *python3/koans/about_asserts. PR*zostanie wyświetlony błąd potwierdzenia. Jest to zamierzone: program został zaprojektowany z myślą o nauce języka Python, aby poprawić wszystkie zamierzone błędy. (Więcej szczegółów znajduje się w [koans Ruby](https://rubykoans.com/), który inspirowany koans języka Python).
+1. Po pomyślnym uruchomieniu programu w wierszu 17 z *python3/koans/about_asserts. PR* zostanie wyświetlony błąd potwierdzenia. Jest to zamierzone: program został zaprojektowany z myślą o nauce języka Python, aby poprawić wszystkie zamierzone błędy. (Więcej szczegółów znajduje się w [koans Ruby](https://rubykoans.com/), który inspirowany koans języka Python).
 
     ![Pierwsze wyjście z programu python koans](media/koans-output.png)
 

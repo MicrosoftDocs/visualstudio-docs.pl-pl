@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: ad329c87-b0ad-4304-84de-ae9496514c42
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cf02fda50678d9de4eb01dc28b4825844e33063e
-ms.sourcegitcommit: b1f7e7d7a0550d5c6f46adff3bddd44bc1d6ee1c
+ms.openlocfilehash: 550baf52347c1128ef50509e7787861355c9428f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98069503"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903401"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks — &gt; element (program inicjujący)
 `InstallChecks`Element obsługuje uruchamianie różnych testów na komputerze lokalnym, aby upewnić się, że zostały zainstalowane wszystkie odpowiednie wymagania wstępne dotyczące aplikacji.

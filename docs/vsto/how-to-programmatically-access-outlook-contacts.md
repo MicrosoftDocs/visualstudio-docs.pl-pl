@@ -11,15 +11,15 @@ helpviewer_keywords:
 - contacts [Office development in Visual Studio], searching
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 68fe58f2f70a68c37d9171eb01f9294bb5e4d4af
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 7b82595aa3a09076b91211ba4ab45145b02ebcd9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844690"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903741"
 ---
 # <a name="how-to-programmatically-access-outlook-contacts"></a>Instrukcje: programowe uzyskiwanie dostępu do kontaktów programu Outlook
   Ten przykład umożliwia znalezienie wszystkich kontaktów, których nazwiska zawierają określony ciąg wyszukiwania.
@@ -36,7 +36,7 @@ ms.locfileid: "96844690"
 
 - Kontakty, których nazwiska zawierają ciąg "**na"** (na przykład Tzipi Butnaru) w folderze **kontaktów** .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Pracuj z elementami kontaktów](../vsto/working-with-contact-items.md)
 - [Instrukcje: programowe Dodawanie wpisu do kontaktów programu Outlook](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)
 - [Instrukcje: programowe wyszukiwanie określonego kontaktu](../vsto/how-to-programmatically-search-for-a-specific-contact.md)

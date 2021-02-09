@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: f35ddb24-53bf-461e-b34f-7414f657c082
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e1426b271ea8db4d486043c9fbe885a0f428b514
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 97c82254516c78a3aff9884e91e44adc45b95981
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328525"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902989"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>Niestandardowy interfejs użytkownika (pakietu VSPackage kontroli źródła)
 Pakietu VSPackage deklaruje elementy menu i ich domyślne Stany za pomocą pliku programu Visual Studio Command Table (*. vsct*). [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Zintegrowane środowisko programistyczne (IDE) wyświetla elementy menu w ich domyślnych Stanach do momentu załadowania pakietu VSPackage. Następnie <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> Metoda jest wywoływana, aby włączyć lub wyłączyć elementy menu.

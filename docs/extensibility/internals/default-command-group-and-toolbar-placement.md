@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 35342110-d639-4577-8367-00b21dcc6f07
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cacf8db933c7d56d44351da11b7b310bc0bdb8aa
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 1c38abc09b0d5c8996cde44d33f4778a54a0cd62
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329890"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902961"
 ---
 # <a name="default-command-group-and-toolbar-placement"></a>Domyślne położenie poleceń, grup i pasków narzędzi
 W celu zapewnienia jednorodności i stabilności produktu interfejs użytkownika domyślnie wyświetla pewne grupy poleceń i [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zawiera definicje poleceń i grup poleceń. Pakietów VSPackage może również używać standardowych poleceń i grup poleceń.

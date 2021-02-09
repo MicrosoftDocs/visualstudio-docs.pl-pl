@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 949c18fb-bb25-42ed-9130-c4a47869f24d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9dc2564a69c291055d53e358c084e7dd9c4d0506
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: af6db0f367c73804197ef35d0b3734d68f15a332
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148198"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903534"
 ---
 # <a name="spy-toolbar"></a>Spy++ — Pasek narzędzi
 Pasek narzędzi zostanie wyświetlony pod paskiem menu w programie Spy + +. Aby wyświetlić lub ukryć pasek narzędzi, w menu **Widok** kliknij polecenie **pasek narzędzi**.
@@ -43,7 +43,7 @@ Pasek narzędzi zostanie wyświetlony pod paskiem menu w programie Spy + +. Aby 
 |![Przycisk Eksploratora właściwości programu Spy&#43;&#43; ](../debugger/media/icon_spy--_propexp.gif "Icon_Spy + + _PropExp")|Wyświetla właściwości okna wybranego w widoku systemu Windows.|
 |![Przycisk "Spy&#43;&#43; Refresh"](../debugger/media/icon_spy--_refresh.gif "Icon_Spy + + _Refresh")|Odświeża widoki systemowe.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Korzystanie z programu Spy++](../debugger/using-spy-increment.md)
 - [Spy++ — Widoki](../debugger/spy-increment-views.md)
 - [Spy++ — Odwołanie](../debugger/spy-increment-reference.md)

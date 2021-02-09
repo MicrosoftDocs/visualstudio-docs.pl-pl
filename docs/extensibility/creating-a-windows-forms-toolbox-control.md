@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b8dd62c01bad3ac50a57062729fe96588a7ef5be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4bb9505ab475da7919a39eb03e7c84b92857db4e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801870"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902194"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Tworzenie kontrolki przybornika Windows Forms
 
@@ -36,9 +36,9 @@ Szablon kontrolki przybornika Windows Forms tworzy niezdefiniowaną kontrolkę u
 
 1. Utwórz projekt VSIX o nazwie `MyWinFormsControl` . Szablon projektu VSIX można znaleźć w oknie dialogowym **Nowy projekt** , wyszukując frazę "VSIX".
 
-2. Po otwarciu projektu Dodaj szablon elementu **formantu Windows Forms przybornika** o nazwie `Counter` . W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >  **nowy element**. W oknie dialogowym **Dodaj nowy element** przejdź do rozszerzalności **Visual C#**  >  **Extensibility** i wybierz **formant Windows Forms przybornika**
+2. Po otwarciu projektu Dodaj szablon elementu **formantu Windows Forms przybornika** o nazwie `Counter` . W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >  **nowy element**. W oknie dialogowym **Dodaj nowy element** przejdź do rozszerzalności **Visual C#**  >   i wybierz **formant Windows Forms przybornika**
 
-3. Spowoduje to dodanie kontrolki użytkownika, a następnie `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> umieszczenie kontrolki w **przyborniku**i wpisu zasobu **Microsoft. VISUALSTUDIO. ToolboxControl** w manifeście VSIX dla wdrożenia.
+3. Spowoduje to dodanie kontrolki użytkownika, a następnie `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> umieszczenie kontrolki w **przyborniku** i wpisu zasobu **Microsoft. VISUALSTUDIO. ToolboxControl** w manifeście VSIX dla wdrożenia.
 
 ### <a name="build-a-user-interface-for-the-control"></a>Tworzenie interfejsu użytkownika dla kontrolki
 
@@ -46,11 +46,11 @@ Szablon kontrolki przybornika Windows Forms tworzy niezdefiniowaną kontrolkę u
 
 #### <a name="to-build-the-user-interface"></a>Aby skompilować interfejs użytkownika
 
-1. W **Eksplorator rozwiązań**kliknij dwukrotnie pozycję *Counter.cs* , aby otworzyć ją w projektancie.
+1. W **Eksplorator rozwiązań** kliknij dwukrotnie pozycję *Counter.cs* , aby otworzyć ją w projektancie.
 
 2. Usuń **kliknięcie tutaj!** przycisk, który jest uwzględniany domyślnie po dodaniu szablonu elementu formantu Windows Forms przybornika.
 
-3. Z **przybornika**przeciągnij `Label` kontrolkę, a następnie `Button` kontrolkę poniżej do powierzchni projektowej.
+3. Z **przybornika** przeciągnij `Label` kontrolkę, a następnie `Button` kontrolkę poniżej do powierzchni projektowej.
 
 4. Zmień rozmiar ogólnej kontrolki użytkownika na 150, 50 pikseli i Zmień rozmiar kontrolki przycisku na 50, 20 pikseli.
 
@@ -80,16 +80,16 @@ Szablon kontrolki przybornika Windows Forms tworzy niezdefiniowaną kontrolkę u
 3. Utwórz następujące publiczne deklaracje właściwości.
 
     ```csharp
-    public int Value {
+    public int Value {
         get { return currentValue; }
     }
 
-    public string Message {
+    public string Message {
         get { return displayText; }
         set { displayText = value; }
     }
 
-    public bool ShowReset {
+    public bool ShowReset {
         get { return btnReset.Visible; }
         set { btnReset.Visible = value; }
     }
@@ -101,7 +101,7 @@ Szablon kontrolki przybornika Windows Forms tworzy niezdefiniowaną kontrolkę u
 4. Umieść poniższy kod w `Load` zdarzeniu dla kontrolki.
 
     ```csharp
-    private void Counter_Load(object sender, EventArgs e)
+    private void Counter_Load(object sender, EventArgs e)
     {
         currentValue = 0;
         label1.Text = Message + Value;
@@ -114,7 +114,7 @@ Szablon kontrolki przybornika Windows Forms tworzy niezdefiniowaną kontrolkę u
 5. Utwórz poniższą metodę publiczną w celu zwiększenia licznika.
 
     ```csharp
-    public void Increment()
+    public void Increment()
     {
         currentValue++;
         label1.Text = displayText + Value;
@@ -126,7 +126,7 @@ Szablon kontrolki przybornika Windows Forms tworzy niezdefiniowaną kontrolkę u
 6. Dodaj deklarację dla `Incremented` zdarzenia do klasy Control.
 
     ```csharp
-    public event EventHandler Incremented;
+    public event EventHandler Incremented;
     ```
 
     Obiekty wywołujące mogą dodawać programy obsługi do tego zdarzenia w celu reagowania na zmiany wartości licznika.
@@ -134,7 +134,7 @@ Szablon kontrolki przybornika Windows Forms tworzy niezdefiniowaną kontrolkę u
 7. Wróć do widoku projektu i kliknij dwukrotnie przycisk **Resetuj** , aby wygenerować `btnReset_Click` procedurę obsługi zdarzeń. Następnie wypełnij go, tak jak pokazano w poniższym przykładzie.
 
     ```csharp
-    private void btnReset_Click(object sender, EventArgs e)
+    private void btnReset_Click(object sender, EventArgs e)
     {
         currentValue = 0;
         label1.Text = displayText + Value;
@@ -148,7 +148,7 @@ Szablon kontrolki przybornika Windows Forms tworzy niezdefiniowaną kontrolkę u
 
     ```csharp
     [ProvideToolboxControl("General", false)]
-    public partial class Counter : UserControl
+    public partial class Counter : UserControl
     ```
 
 ### <a name="test-the-control"></a>Testowanie kontrolki
@@ -163,7 +163,7 @@ Szablon kontrolki przybornika Windows Forms tworzy niezdefiniowaną kontrolkę u
 
 2. W eksperymentalnym wystąpieniu programu Visual Studio Utwórz projekt **aplikacji Windows Forms** .
 
-3. W **Eksplorator rozwiązań**kliknij dwukrotnie pozycję *Form1.cs* , aby otworzyć ją w projektancie, jeśli nie jest jeszcze otwarta.
+3. W **Eksplorator rozwiązań** kliknij dwukrotnie pozycję *Form1.cs* , aby otworzyć ją w projektancie, jeśli nie jest jeszcze otwarta.
 
 4. W **przyborniku** `Counter` kontrolka powinna być wyświetlana w sekcji **Ogólne** .
 
@@ -214,7 +214,7 @@ Szablon kontrolki przybornika Windows Forms tworzy niezdefiniowaną kontrolkę u
 
 ## <a name="next-steps"></a>Następne kroki
 
-Po utworzeniu kontrolki **przybornika** program Visual Studio tworzy plik o nazwie *ProjectName. vsix* w folderze \bin\debug\ projektu. Formant można wdrożyć, przekazując plik *. vsix* do sieci lub do witryny sieci Web. Gdy użytkownik otworzy plik *. vsix* , formant zostanie zainstalowany i dodany do **przybornika** programu Visual Studio na komputerze użytkownika. Alternatywnie można przekazać plik *VSIX* do [Visual Studio Marketplace](https://marketplace.visualstudio.com/) , aby użytkownicy mogli go znaleźć, przechodząc do **Tools**  >  okna dialogowego**rozszerzenia i aktualizacje** narzędzi.
+Po utworzeniu kontrolki **przybornika** program Visual Studio tworzy plik o nazwie *ProjectName. vsix* w folderze \bin\debug\ projektu. Formant można wdrożyć, przekazując plik *. vsix* do sieci lub do witryny sieci Web. Gdy użytkownik otworzy plik *. vsix* , formant zostanie zainstalowany i dodany do **przybornika** programu Visual Studio na komputerze użytkownika. Alternatywnie można przekazać plik *VSIX* do [Visual Studio Marketplace](https://marketplace.visualstudio.com/) , aby użytkownicy mogli go znaleźć, przechodząc do   >  okna dialogowego **rozszerzenia i aktualizacje** narzędzi.
 
 ## <a name="see-also"></a>Zobacz też
 

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 94c90012-8669-459c-af8e-307ac242c8c4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59ad41bda80337fd0adc65d4792adbbbb1cf38f1
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 5e90b12b12589fff89f4df1241eb73504e8bdb74
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328603"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903140"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>Tworzenie wystąpień projektu przy użyciu fabryk projektów
 Typy projektów w programie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] wykorzystują *fabrykę projektu* do tworzenia wystąpień obiektów projektu. Fabryka projektu jest podobna do standardowej fabryki klas dla współtworzących obiektów COM. Jednak obiekty projektu nie można współistnieć. mogą być tworzone tylko przy użyciu fabryki projektu.
