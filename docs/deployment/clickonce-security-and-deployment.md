@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: abab6d34-c3c2-45c1-a8b6-43c7d3131e7a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b055928212dd4b094f4bd8987f6ce03960e932f1
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 8bb0bdeae09f22a2b45e3029fbc9097c00911d2a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382679"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930021"
 ---
 # <a name="clickonce-security-and-deployment"></a>Zabezpieczenia i wdrażanie technologii ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] jest technologią wdrażania, która umożliwia tworzenie samoaktualizacji aplikacji opartych na systemie Windows, które mogą być instalowane i uruchamiane z minimalnymi działaniami użytkowników. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zapewnia pełną obsługę publikowania i aktualizowania aplikacji wdrożonych z technologią ClickOnce, jeśli opracowano projekty z Visual Basic i Visual C#. Aby uzyskać informacje na temat wdrażania aplikacji Visual C++, zobacz [wdrażanie ClickOnce dla aplikacji Visual C++](/cpp/windows/clickonce-deployment-for-visual-cpp-applications).
@@ -40,7 +40,7 @@ ms.locfileid: "94382679"
   W przeszłości te problemy czasami powodowały, że deweloperzy decydują się na utworzenie aplikacji sieci Web zamiast aplikacji opartych na systemie Windows, co może potrwać rozbudowany interfejs użytkownika w celu ułatwienia instalacji. Korzystając z aplikacji wdrożonych przy użyciu programu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , można korzystać z najlepszych technologii.
 
 ## <a name="what-is-a-clickonce-application"></a>Co to jest aplikacja ClickOnce?
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Aplikacja to dowolny Windows Presentation Foundation ( *. XBAP* ), Windows Forms ( *. exe* ), Aplikacja konsolowa ( *exe* ) lub rozwiązanie pakietu Office ( *. dll* ) opublikowane przy użyciu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] technologii. Aplikację można opublikować [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] na trzy różne sposoby: ze strony sieci Web, z udziału plików sieciowych lub z nośnika, takiego jak dysk CD-ROM. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Aplikację można zainstalować na komputerze użytkownika końcowego i uruchomić lokalnie nawet wtedy, gdy komputer jest w trybie offline lub można go uruchomić w trybie online bez konieczności stałego instalowania wszystkich elementów na komputerze użytkownika końcowego. Aby uzyskać więcej informacji, zobacz [Wybieranie strategii wdrażania ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Aplikacja to dowolny Windows Presentation Foundation (*. XBAP*), Windows Forms (*. exe*), Aplikacja konsolowa (*exe*) lub rozwiązanie pakietu Office (*. dll*) opublikowane przy użyciu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] technologii. Aplikację można opublikować [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] na trzy różne sposoby: ze strony sieci Web, z udziału plików sieciowych lub z nośnika, takiego jak dysk CD-ROM. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Aplikację można zainstalować na komputerze użytkownika końcowego i uruchomić lokalnie nawet wtedy, gdy komputer jest w trybie offline lub można go uruchomić w trybie online bez konieczności stałego instalowania wszystkich elementów na komputerze użytkownika końcowego. Aby uzyskać więcej informacji, zobacz [Wybieranie strategii wdrażania ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).
 
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje mogą być samoobsługowe. mogą wyszukiwać nowsze wersje, gdy staną się dostępne, i automatycznie zamieniać wszelkie zaktualizowane pliki. Deweloper może określić zachowanie aktualizacji; Administrator sieci może również kontrolować strategie aktualizacji, na przykład oznaczając aktualizację jako obowiązkową. Aktualizacje mogą być również przywracane do wcześniejszej wersji przez użytkownika końcowego lub przez administratora. Aby uzyskać więcej informacji, zobacz [Wybieranie strategii aktualizacji ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).
 
@@ -62,7 +62,7 @@ ms.locfileid: "94382679"
  Podstawowa [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Architektura wdrażania jest oparta na dwóch plikach manifestu XML: manifest aplikacji i manifest wdrożenia. Pliki służą do opisywania, w jaki sposób są instalowane aplikacje ClickOnce, w jaki sposób są one aktualizowane i kiedy są aktualizowane.
 
 ### <a name="publish-clickonce-applications"></a>Publikowanie aplikacji ClickOnce
- Manifest aplikacji opisuje samą aplikację. Obejmuje to zestawy, zależności i pliki, które składają się na aplikację, wymagane uprawnienia i lokalizację, w której będą dostępne aktualizacje. Deweloper aplikacji jest autorem manifestu aplikacji przy użyciu Kreatora publikacji w programie Visual Studio lub Narzędzie tworzenia i edycji manifestów ( *Mage.exe* ) w [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] . Aby uzyskać więcej informacji, zobacz [jak: publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+ Manifest aplikacji opisuje samą aplikację. Obejmuje to zestawy, zależności i pliki, które składają się na aplikację, wymagane uprawnienia i lokalizację, w której będą dostępne aktualizacje. Deweloper aplikacji jest autorem manifestu aplikacji przy użyciu Kreatora publikacji w programie Visual Studio lub Narzędzie tworzenia i edycji manifestów (*Mage.exe*) w [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] . Aby uzyskać więcej informacji, zobacz [jak: publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
  Manifest wdrożenia opisuje sposób wdrażania aplikacji. Obejmuje to lokalizację manifestu aplikacji oraz wersję aplikacji, która powinna być uruchamiana przez klientów.
 
@@ -118,5 +118,5 @@ ms.locfileid: "94382679"
 - [Publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md)
 - [Zabezpieczanie aplikacji ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Wdrażanie składników COM za pomocą technologii ClickOnce](../deployment/deploying-com-components-with-clickonce.md)
-- [Tworzenie aplikacji ClickOnce z poziomu wiersza polecenia](../deployment/building-clickonce-applications-from-the-command-line.md)
+- [Tworzenie aplikacji ClickOnce z wiersza poleceń](../deployment/building-clickonce-applications-from-the-command-line.md)
 - [Debuguj aplikacje ClickOnce używające System. Deployment. Application](../deployment/debugging-clickonce-applications-that-use-system-deployment-application.md)
