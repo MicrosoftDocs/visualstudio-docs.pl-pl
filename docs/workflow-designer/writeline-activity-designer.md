@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 1b5f29a8-b7fd-477e-949e-2f689cae3c96
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 03aedaf522924266b0951ec189e96fb3f83c142c
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 7cb4806949b21a6c92548b91623e63306f2a7722
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433664"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875110"
 ---
 # <a name="writeline-activity-designer"></a>WriteLine, projektant działań
 
@@ -44,6 +44,6 @@ W poniższej tabeli przedstawiono <xref:System.Activities.Statements.WriteLine> 
 ## <a name="see-also"></a>Zobacz też
 
 - [Typy pierwotne](../workflow-designer/primitives-activity-designers.md)
-- [Ponownie](../workflow-designer/assign-activity-designer.md)
+- [Przypisanie](../workflow-designer/assign-activity-designer.md)
 - [Opóźnienie](../workflow-designer/delay-activity-designer.md)
 - [InvokeMethod](../workflow-designer/invokemethod-activity-designer.md)

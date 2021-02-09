@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dc79d40c2cb363b79c2064bd71fb23dece04e143
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 330dbdfb6d6db8d33a2b8ea3caa7e1a840d84dd0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350247"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874902"
 ---
 # <a name="xml-editor-intellisense-features"></a>Funkcje IntelliSense w edytorze XML
 
@@ -89,7 +89,7 @@ Na przykład, jeśli wybierzesz `e:Book` element z listy IntelliSense, gdzie pre
 
 ## <a name="brace-matching"></a>Dopasowywanie nawiasów klamrowych
 
-Edytor XML zawiera wyróżnione nawiasy klamrowe w celu uzyskania natychmiastowej opinii na temat elementów, które właśnie zostały zamknięte. Możesz również użyć skrótu klawiaturowego ( **Ctrl** + **]** ), aby przeskoczyć z jednego nawiasu klamrowego do pasującego nawiasu klamrowego.
+Edytor XML zawiera wyróżnione nawiasy klamrowe w celu uzyskania natychmiastowej opinii na temat elementów, które właśnie zostały zamknięte. Możesz również użyć skrótu klawiaturowego (**Ctrl** + ), aby przeskoczyć z jednego nawiasu klamrowego do pasującego nawiasu klamrowego.
 
 Edytor XML wykonuje tę czynności dla następujących elementów:
 
@@ -109,7 +109,7 @@ Edytor XML wykonuje tę czynności dla następujących elementów:
 
 ## <a name="modify-the-intellisense-options"></a>Modyfikowanie opcji IntelliSense
 
-Funkcje IntelliSense i automatycznego uzupełniania są domyślnie włączone. Można jednak zmienić to ustawienie, modyfikując **Tools**  >  **Opcje** narzędzi.
+Funkcje IntelliSense i automatycznego uzupełniania są domyślnie włączone. Można jednak zmienić to ustawienie, modyfikując   >  **Opcje** narzędzi.
 
 Sekcja **autoinsert** na stronie **różnej** kontroluje następujące zachowanie:
 
@@ -123,7 +123,7 @@ Sekcja **autoinsert** na stronie **różnej** kontroluje następujące zachowani
 
 1. Wybierz **Opcje** z menu **Narzędzia** .
 
-2. Rozwiń węzeł **Edytor tekstu** , rozwiń pozycję **XML** i wybierz pozycję **różne**.
+2. Rozwiń węzeł **Edytor tekstu**, rozwiń pozycję **XML** i wybierz pozycję **różne**.
 
 3. Wprowadź zmiany w sekcji **autoinsert** i kliknij przycisk **OK**.
 

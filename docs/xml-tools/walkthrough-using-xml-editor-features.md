@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: ea8dc357-2e66-455a-aec2-7ccaccfc9adf
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f8aa7daef6e427b7355eb7676db0728a4af4ca42
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 45d0bb8b47162966974499fed20c826b52dcfaa4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351482"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875084"
 ---
 # <a name="walkthrough-use-xml-editor-features"></a>Przewodnik: Używanie funkcji edytora XML
 
@@ -26,13 +26,13 @@ Kroki opisane w tym instruktażu pokazują, jak utworzyć nowy dokument XML. Prz
 
 ## <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Aby utworzyć nowy plik XML i skojarzyć go ze schematem XML
 
-1. W menu **plik** wskaż polecenie **Nowy** , a następnie kliknij polecenie **plik**.
+1. W menu **plik** wskaż polecenie **Nowy**, a następnie kliknij polecenie **plik**.
 
 2. W okienku **Szablony** wybierz pozycję **plik XML** , a następnie kliknij pozycję **Otwórz**.
 
      Nowy plik zostanie otwarty w edytorze. Plik zawiera domyślną deklarację XML, `<?xml version="1.0" encoding="utf-8">` .
 
-3. W oknie właściwości dokumentu kliknij przycisk przeglądania ( **...** ) w polu **schematy** .
+3. W oknie właściwości dokumentu kliknij przycisk przeglądania (**...**) w polu **schematy** .
 
      Zostanie wyświetlone okno dialogowe **schematy XSD** .
 
@@ -42,7 +42,7 @@ Kroki opisane w tym instruktażu pokazują, jak utworzyć nowy dokument XML. Prz
 
 5. Wybierz plik *HireDate. xsd* , a następnie kliknij przycisk **Otwórz**.
 
-6. Kliknij pozycję **OK**.
+6. Kliknij przycisk **OK**.
 
      Schemat XML jest teraz skojarzony z dokumentem XML. Schemat XML jest używany do walidacji dokumentu. Jest on także używany przez funkcję IntelliSense do wypełniania listy elementów członkowskich prawidłowych elementów.
 
@@ -98,7 +98,7 @@ Kroki opisane w tym instruktażu pokazują, jak utworzyć nowy dokument XML. Prz
 
 ## <a name="to-format-the-xml-document"></a>Aby sformatować dokument XML
 
-- Wybierz przycisk **Formatuj dokument** na pasku narzędzi edytora XML lub naciśnij **klawisze CTRL** + **E** , **D**.
+- Wybierz przycisk **Formatuj dokument** na pasku narzędzi edytora XML lub naciśnij **klawisze CTRL** + **E**,**D**.
 
    ![Przycisk formatowania dokumentu XML w programie Visual Studio](media/format-xml-document.png)
 

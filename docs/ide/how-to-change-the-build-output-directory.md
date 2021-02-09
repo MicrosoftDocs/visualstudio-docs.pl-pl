@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: a8333c89-afb2-4b1d-b2e2-9146da852402
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2512836781b0bf8c269f296066b25722b58be1fb
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 792175d7d2c168f75d20bce86675a1fcd8c47899
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136891"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875539"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Instrukcje: zmiana katalogu wyjściowego kompilacji
 
@@ -34,7 +34,7 @@ Możesz określić lokalizację danych wyjściowych generowanych przez projekt n
    - W obszarze Visual Basic wybierz kartę **kompilacja** .
    - W przypadku języka C++ lub JavaScript wybierz kartę **Ogólne** .
 
-3. Na liście rozwijanej konfiguracja w górnej części wybierz konfigurację, której lokalizację pliku wyjściowego chcesz zmienić (**debugowanie**, **wydanie**lub **wszystkie konfiguracje**).
+3. Na liście rozwijanej konfiguracja w górnej części wybierz konfigurację, której lokalizację pliku wyjściowego chcesz zmienić (**debugowanie**, **wydanie** lub **wszystkie konfiguracje**).
 
 4. Znajdź wpis ścieżki wyjściowej na stronie &mdash; , która różni się w zależności od typu projektu:
 
@@ -47,7 +47,7 @@ Możesz określić lokalizację danych wyjściowych generowanych przez projekt n
    ![Właściwość ścieżki wyjściowej dla projektu C# programu Visual Studio](media/output-path.png)
    
    > [!NOTE]
-   > Niektóre projekty domyślnie obejmują strukturę i środowisko uruchomieniowe w ścieżce kompilacji. Aby to zmienić, kliknij prawym przyciskiem myszy węzeł projektu w **Eksplorator rozwiązań**, wybierz polecenie **Edytuj plik projektu**i Dodaj następujące elementy:
+   > Niektóre projekty domyślnie obejmują strukturę i środowisko uruchomieniowe w ścieżce kompilacji. Aby to zmienić, kliknij prawym przyciskiem myszy węzeł projektu w **Eksplorator rozwiązań**, wybierz polecenie **Edytuj plik projektu** i Dodaj następujące elementy:
    > ```xml
    > <PropertyGroup>
    >   <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>

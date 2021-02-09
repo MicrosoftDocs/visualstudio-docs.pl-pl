@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 668a6603-5082-4c78-98e6-f3dc871aa55b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d4de52fb135e465e7adc938bb29c571bfcc1973
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 661aa4ade7df8279e31e2291dfbbdfc5f6df6e1c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726556"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874746"
 ---
 # <a name="0x2x4x-msaa-variants"></a>Warianty 0x/2x/4x MSAA
 Przesłania wiele przykładowych ustawień wygładzania (MSAA) dla wszystkich obiektów docelowych renderowania i łańcuchów wymiany.
@@ -51,7 +51,7 @@ Przesłania wiele przykładowych ustawień wygładzania (MSAA) dla wszystkich ob
 
   Efektem netto tych zmian jest to, że wszystkie renderingi są wykonywane do obiektu docelowego renderowania MSAA, ale jeśli aplikacja używa jednego z tych elementów docelowych renderowania lub buforów wymiany, jako widoku zasobów programu do cieniowania lub widoku nieuporządkowanego dostępu, dane są pobierane z rozwiązanej, niezgodnej z nią kopii docelowej renderowania.
 
-## <a name="restrictions-and-limitations"></a>Ograniczenia i ograniczenia
+## <a name="restrictions-and-limitations"></a>Ograniczenia
  W programie Direct3D11 tekstury MSAA są bardziej ograniczone niż tekstury niezgodne ze standardami. Na przykład nie można wywołać `ID3D11DeviceContext::UpdateSubresource` na teksturze MSAA i wywołanie `ID3D11DeviceContext::CopySubresourceRegion` kończy się niepowodzeniem, jeśli liczba próbek i jakość próbki zasobu źródłowego i zasobu docelowego nie są zgodne, co może wystąpić, gdy ten wariant zastępuje ustawienia MSAA jednego zasobu, ale nie drugi.
 
  Gdy odtwarzanie wykrywa te rodzaje konfliktów, najlepszym rozwiązaniem jest replikowanie zamierzonego zachowania, ale może nie być możliwe dokładne dopasowanie wyników. Chociaż zdarza się to w taki sposób, aby miało to wpływ na wydajność tych wariantów w sposób, który nie reprezentuje ich wpływu, jest to możliwe — na przykład gdy sterowanie przepływem w programie do cieniowania pikseli jest określane przez dokładną zawartość tekstury — ponieważ zreplikowana tekstura może nie mieć identycznej zawartości.

@@ -7,15 +7,15 @@ ms.topic: reference
 ms.assetid: 846fdabd-e5c3-4688-9b0d-a93fbeea1b96
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 024a8659d95855c8154ed8d9bed231739648719e
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 9e5d113718c2ecc73ad942dd58ddf92216fe6c83
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93045801"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875123"
 ---
 # <a name="debugger-user-interface-xslt"></a>Interfejs użytkownika debugera (XSLT)
 
@@ -58,7 +58,7 @@ W oknie dane wyjściowe są wyświetlane wszystkie komunikaty o błędach lub wy
 **Lista zadań** zawiera wszystkie błędy występujące w blokach skryptu w pliku XSLT.
 
 > [!NOTE]
-> Debuger XSLT nie ma ostrzeżeń, więc nigdy nie pojawiają się w **Lista zadań** .
+> Debuger XSLT nie ma ostrzeżeń, więc nigdy nie pojawiają się w **Lista zadań**.
 
 ## <a name="breakpoints-window"></a>Okno punktów przerwania
 

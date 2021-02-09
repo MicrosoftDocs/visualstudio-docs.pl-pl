@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 70d8c9e5-4b0b-4a69-b3b3-90f36debe880
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0adf586831e21c2448931215d4ef4a89d16a63f8
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 377cdd9875ebc2fddd80c673e53ecb318d171e47
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876444"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875565"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>Obsługa narzędzi do przeglądania symboli
 **Przeglądarka obiektów**, **Widok klasy**, **przeglądarka wywołań** i **Znajdź narzędzia wyników symboli** zapewniają możliwości przeglądania symboli w programie Visual Studio. Te narzędzia wyświetlają hierarchiczne widoki drzewa symboli i pokazują relacje między symbolami w drzewie. Symbole mogą reprezentować przestrzenie nazw, obiekty, klasy, składowe klas i inne elementy języka zawarte w różnych składnikach. Składniki obejmują projekty programu Visual Studio, zewnętrzne składniki .NET Framework i biblioteki typu (. tlb). Aby uzyskać więcej informacji, zobacz [Wyświetlanie struktury kodu](../../ide/viewing-the-structure-of-code.md).

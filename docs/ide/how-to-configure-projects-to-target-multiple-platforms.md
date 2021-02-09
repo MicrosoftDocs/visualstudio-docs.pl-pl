@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: affa2392-7aed-45ac-9ffa-1d8e0496d590
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ce4dfbf2808071d47e1f84eef660d936181227f3
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 3255af161bd37d16eefeb6d41115cf0114059e81
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136709"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875435"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Instrukcje: Konfigurowanie projektów pod kątem wielu platform docelowych
 
@@ -31,7 +31,7 @@ W oknie dialogowym **Configuration Manager** można tworzyć i ustawiać konfigu
 
 1. W menu **Kompilacja** kliknij pozycję **Configuration Manager**.
 
-2. W **polu aktywna platforma rozwiązania**Wybierz platformę, dla której ma zostać utworzone rozwiązanie, lub wybierz opcję **\<New>** utworzenia nowej platformy. Program Visual Studio skompiluje aplikację jako docelową platformę ustawioną jako aktywną platformę w oknie dialogowym **Configuration Manager** .
+2. W **polu aktywna platforma rozwiązania** Wybierz platformę, dla której ma zostać utworzone rozwiązanie, lub wybierz opcję **\<New>** utworzenia nowej platformy. Program Visual Studio skompiluje aplikację jako docelową platformę ustawioną jako aktywną platformę w oknie dialogowym **Configuration Manager** .
 
 ## <a name="remove-a-platform"></a>Usuń platformę
 
@@ -39,7 +39,7 @@ Jeśli nie masz potrzeby dla platformy, możesz usunąć ją za pomocą okna dia
 
 1. W menu **Kompilacja** kliknij pozycję **Configuration Manager**.
 
-2. W **polu aktywna Platforma rozwiązań**wybierz opcję **\<Edit>** . Zostanie otwarte okno dialogowe **Edytowanie platform rozwiązań** .
+2. W **polu aktywna Platforma rozwiązań** wybierz opcję **\<Edit>** . Zostanie otwarte okno dialogowe **Edytowanie platform rozwiązań** .
 
 3. Kliknij platformę, którą chcesz usunąć, a następnie kliknij przycisk **Usuń**.
 

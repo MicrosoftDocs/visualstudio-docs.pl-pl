@@ -8,16 +8,16 @@ f1_keywords:
 - System.Activities.Statements.Transition.UI
 ms.assetid: f6e8b5cc-7fb8-4699-9703-f3c9fc7cc316
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: cedc9c7b6f402ad3f5f2c40e21c29e2a0d1ad2e6
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 24a20ca9f7905adee3b7d0d83801d0033a1752ce
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433729"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875279"
 ---
 # <a name="transition-activity-designer"></a>Transition, projektant działań
 
@@ -34,7 +34,7 @@ W poniższej tabeli przedstawiono <xref:System.Activities.Statements.Transition>
 |Nazwa właściwości|Wymagany|Użycie|
 |-|--------------|-|
 |<xref:System.Activities.Statements.Transition.DisplayName%2A>|Fałsz|Określa przyjazną nazwę <xref:System.Activities.Statements.Transition> projektanta działań. Wartość domyślna to **T1**. Wartość można edytować w siatce właściwości, w nagłówku rozwiniętego projektanta przejścia i w nagłówku sekcji akcji w rozwiniętym projektancie przejścia. Ta wartość <xref:System.Activities.Activity.DisplayName%2A> jest używana w nawigacyjnym nawigacji, który jest wyświetlany w górnej części projektanta przepływu pracy.<br /><br /> Chociaż <xref:System.Activities.Activity.DisplayName%2A> nie jest to ściśle wymagane, najlepszym rozwiązaniem jest użycie jednego z nich.|
-|<xref:System.Activities.Statements.Transition.Condition%2A>|Fałsz|Jeśli jest obecny, określa wyrażenie, które musi oszacować **wartość true** przed przekazaniem kontroli do stanu docelowego. Ten warunek można edytować w siatce właściwości i w rozwiniętym projektancie przejścia. Wiele warunków w przejściu współdzielonym są oceniane w kolejności, w jakiej są wyświetlane w projektancie przejścia. **Uwaga:**  Należy pamiętać, że jeśli <xref:System.Activities.Statements.Transition.Condition%2A> wynik przejścia ma **wartość FAŁSZ** (lub wszystkie warunki przejścia wyzwalacza udostępnionego są oceniane na **Fałsz** ), przejście nie zostanie wykonane, a wszystkie wyzwalacze dla wszystkich przejść ze stanu zostaną ponownie zaplanowane. W tym samouczku ta sytuacja nie może wystąpić ze względu na sposób skonfigurowania warunków (istnieją określone akcje dotyczące tego, czy wartość dopuszczalna jest poprawna czy niepoprawna).|
+|<xref:System.Activities.Statements.Transition.Condition%2A>|Fałsz|Jeśli jest obecny, określa wyrażenie, które musi oszacować **wartość true** przed przekazaniem kontroli do stanu docelowego. Ten warunek można edytować w siatce właściwości i w rozwiniętym projektancie przejścia. Wiele warunków w przejściu współdzielonym są oceniane w kolejności, w jakiej są wyświetlane w projektancie przejścia. **Uwaga:**  Należy pamiętać, że jeśli <xref:System.Activities.Statements.Transition.Condition%2A> wynik przejścia ma **wartość FAŁSZ** (lub wszystkie warunki przejścia wyzwalacza udostępnionego są oceniane na **Fałsz**), przejście nie zostanie wykonane, a wszystkie wyzwalacze dla wszystkich przejść ze stanu zostaną ponownie zaplanowane. W tym samouczku ta sytuacja nie może wystąpić ze względu na sposób skonfigurowania warunków (istnieją określone akcje dotyczące tego, czy wartość dopuszczalna jest poprawna czy niepoprawna).|
 |**Element źródłowy**|Prawda|Wskazuje stan, z którego pochodzi to przejście. Kliknięcie nazwy stanu źródła powoduje przełączenie widoku projektanta do rozwiniętego widoku tego stanu. Ta wartość jest ustawiana podczas tworzenia przejścia i nie można jej zmienić.|
 |<xref:System.Activities.Statements.Transition.Trigger%2A>|Fałsz|Określa działanie, którego zakończenie powoduje zainicjowanie przejścia. Aby ustawić to działanie, przeciągnij działanie z **przybornika** i upuść je na sekcję **wyzwalacz** przejścia.|
 |<xref:System.Activities.Statements.Transition.Action%2A>|Fałsz|Określa działanie, które jest wykonywane po zakończeniu działania wyzwalacza i <xref:System.Activities.Statements.Transition.Condition%2A> , jeśli jest obecny, daje w wyniku **wartość true**. To działanie jest wykonywane podczas przejścia do stanu docelowego po <xref:System.Activities.Statements.State.Exit%2A> wykonaniu działania dla stanu źródła, jeśli jest obecny. Gdy projektant przejścia jest rozwinięty, tę wartość można ustawić przez przeciągnięcie działania z **przybornika** i upuszczenie go do sekcji **akcji** przejścia. Może istnieć wiele akcji dla jednego przejścia. Poszczególne akcje mogą być rozwinięte i uporządkowane. można je porządkować, klikając strzałkę w górę lub w dół, która pojawia się na akcji, gdy istnieje wiele akcji w przejściu.|

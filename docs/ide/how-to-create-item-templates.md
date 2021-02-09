@@ -8,13 +8,13 @@ helpviewer_keywords:
 - item templates [Visual Studio], creating
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: abf058526a6ff48a37d4c7585e7deabe1decb14a
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+manager: jmartens
+ms.openlocfilehash: 3f8dc8ddb5cc17f2ac575ea023283f60f579ccbd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597278"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875396"
 ---
 # <a name="how-to-create-item-templates"></a>Instrukcje: Tworzenie szablonów elementów
 
@@ -82,7 +82,7 @@ Można określić, że szablon powinien występować tylko w przypadku niektóry
 
     - Windows
     - Office
-    - Baza danych
+    - baza danych
     - Internet
 
 Na przykład: `<ProjectSubType>Database</ProjectSubType>`.
@@ -135,7 +135,7 @@ W niektórych przypadkach może być konieczne ręczne utworzenie szablonu eleme
 
 ::: moniker-end
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
 - [Instrukcje: Tworzenie szablonów elementów wieloplikowych](../ide/how-to-create-multi-file-item-templates.md)

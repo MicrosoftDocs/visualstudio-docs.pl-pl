@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 0271fa26-2205-49bd-96e0-ae1441571808
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 26703b821d2748612f461a35591a831488807dbb
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 1c91e97d0508ab85893409386ddd3ab9dded7f45
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351404"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874838"
 ---
 # <a name="xml-schemas-dialog-box"></a>Schematy XML, okno dialogowe
 
@@ -27,11 +27,11 @@ Możesz uzyskać dostęp do okna dialogowego **schematy XML** , klikając przyci
 
 ## <a name="uielement-list"></a>Lista elementów UI
 
-**Używanych**
+**Zastosowanie**
 
 Wybierz, jak schemat XML ma być używany.
 
-- **Automatyczne**. Ten schemat nie jest używany przez bieżący dokument, ale jest dostępny do automatycznego kojarzenia. Jeśli dokument XML deklaruje przestrzeń nazw zgodną `targetNamespace` z tym schematem, schemat zostanie automatycznie skojarzony i zostanie uwzględniony w zestawie schematów.
+- **Automatyczny**. Ten schemat nie jest używany przez bieżący dokument, ale jest dostępny do automatycznego kojarzenia. Jeśli dokument XML deklaruje przestrzeń nazw zgodną `targetNamespace` z tym schematem, schemat zostanie automatycznie skojarzony i zostanie uwzględniony w zestawie schematów.
 
 - **Użyj tego schematu**. Ten schemat jest używany przez bieżący dokument. Użytkownik jawnie zażądał użycia tego schematu przez kliknięcie tej kolumny lub schemat został automatycznie skojarzony na podstawie pasującego elementu `targetNamespace` .
 

@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 2d0f5305-585b-4b01-bc9a-7a32d6e991da
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e767268073f896de590386854a0d2c9ce2803073
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 144065c5ee04c75582307440b4cee6242b48bc01
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726452"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874616"
 ---
 # <a name="bc-texture-compression-variant"></a>Wariant kompresji tekstury BC
 Włącza kompresję blokową dla tekstury, które mają format pikseli, który jest odmianą B8G8R8X8, B8G8R8A8 lub R8G8B8A8.
@@ -56,7 +56,7 @@ Włącza kompresję blokową dla tekstury, które mają format pikseli, który j
 
  Jeśli tekstura ma format, którego nie ma na liście, tekstura nie jest modyfikowana.
 
-## <a name="restrictions-and-limitations"></a>Ograniczenia i ograniczenia
+## <a name="restrictions-and-limitations"></a>Ograniczenia
  Czasami tekstury, które są tworzone z odmianą formatu obrazu B8G8R8A8 lub R8G8B8A8, nie używają kanału alfa, ale nie ma żadnego sposobu, aby określić, czy jest on używany, czy nie. Aby zachować poprawność na wypadek użycia kanału alfa, wariant zawsze koduje te formaty w formacie mniej wydajnym BC3. Możesz pomóc analiza klatek grafiki lepiej zrozumieć potencjalną wydajność renderowania aplikacji za pomocą tego wariantu przy użyciu odmiany formatu obrazu B8G8R8X8, gdy nie używasz kanału alfa, aby wariant mógł używać bardziej wydajnego formatu BC1.
 
 ## <a name="example"></a>Przykład

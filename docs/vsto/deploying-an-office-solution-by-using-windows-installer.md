@@ -17,15 +17,15 @@ helpviewer_keywords:
 - Office applications [Office development in Visual Studio], MSI
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c001b3ce308c9e991cee747bdcab3ad646b226ab
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ef515ce323322dee667dab5690b85b29af97c07d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847120"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875422"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Wdróż rozwiązanie pakietu Office przy użyciu Instalator Windows
 
@@ -504,7 +504,7 @@ Aby zmodyfikować właściwości niestandardowe, należy utworzyć program, któ
 
    Po zakończeniu kompilacji można zlokalizować plik *setup.exe* projektu **OfficeAddInSetup** w następującej lokalizacji: <em>OfficeAddInSetupProjectRoot</em>**\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1 \\**
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Wymagania wstępne dotyczące wdrażania pakietu Office](/previous-versions/bb608617(v=vs.110))
 - [Wdróż rozwiązanie pakietu Office](../vsto/deploying-an-office-solution.md)

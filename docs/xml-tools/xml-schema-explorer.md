@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 2fc39e98-b194-456b-a452-cfafb0a52d66
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 31edea44741249c5d75a53e291c766824dc3b8ea
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: c4b16c1baa039a2f1e812d35e7a4994ffc0d5e5c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351300"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874889"
 ---
 # <a name="xml-schema-explorer"></a>Eksplorator schematu XML
 
@@ -37,7 +37,7 @@ ms.locfileid: "94351300"
 
 - Generuj przykładowy kod XML dla elementów globalnych.
 
-**Eksplorator schematu XML** udostępnia widok hierarchiczna schematu zestawu za pomocą widoku drzewa. **Eksplorator schematu XML** zawiera również wyszukiwanie, filtrowanie, nawigację i sortowanie. Aby uzyskać dostęp do **Eksploratora schematu XML** , wykonaj jedną z następujących czynności:
+**Eksplorator schematu XML** udostępnia widok hierarchiczna schematu zestawu za pomocą widoku drzewa. **Eksplorator schematu XML** zawiera również wyszukiwanie, filtrowanie, nawigację i sortowanie. Aby uzyskać dostęp do **Eksploratora schematu XML**, wykonaj jedną z następujących czynności:
 
 - Jeśli jesteś w [widoku Start](../xml-tools/start-view.md), kliknij link **Eksplorator schematu XML** .
 
@@ -45,7 +45,7 @@ ms.locfileid: "94351300"
 
 - Możesz również wybrać **Eksplorator schematu XML** z menu **Widok** .
 
-- Można uzyskać dostęp do **Eksploratora schematu XML** z pliku *. vb* , który ma Visual Basic literał XML skojarzony z plikiem *XSD* . Aby wyświetlić zestaw schematu w **Eksploratorze schematu XML** , kliknij prawym przyciskiem myszy węzeł XML w literale XML lub Importuj przestrzeń nazw XML i wybierz polecenie **Pokaż w Eksploratorze schematu** . Aby uzyskać więcej informacji, zobacz [integracja literałów XML z Eksploratorem schematu XML](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md).
+- Można uzyskać dostęp do **Eksploratora schematu XML** z pliku *. vb* , który ma Visual Basic literał XML skojarzony z plikiem *XSD* . Aby wyświetlić zestaw schematu w **Eksploratorze schematu XML**, kliknij prawym przyciskiem myszy węzeł XML w literale XML lub Importuj przestrzeń nazw XML i wybierz polecenie **Pokaż w Eksploratorze schematu** . Aby uzyskać więcej informacji, zobacz [integracja literałów XML z Eksploratorem schematu XML](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md).
 
 ## <a name="tree-view"></a>Widok drzewa
 W **Eksploratorze schematu XML** są wyświetlane wstępnie skompilowane informacje o zestawie schematów w strukturze drzewa. Struktura drzewa jest zorganizowana w następujący sposób:

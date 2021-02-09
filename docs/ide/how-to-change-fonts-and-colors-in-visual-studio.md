@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 60d91ba1-244b-4c43-847f-60b744f1352a
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c52be25c007a16d7e6221663c434767c02d8d50
-ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
+ms.openlocfilehash: 943bc9aa6efbdf5fcec038d469d39a3361315afb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97683893"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875552"
 ---
 # <a name="how-to-change-fonts-colors-and-themes-in-visual-studio"></a>Instrukcje: zmienianie czcionek, kolorów i motywów w programie Visual Studio
 
@@ -122,7 +122,7 @@ Aby dowiedzieć się więcej o innych dostępnych opcjach ułatwień dostępu pr
 
 Aby dowiedzieć się więcej na temat wszystkich elementów interfejsu użytkownika, dla których można zmienić czcionkę i schematy kolorów, zobacz stronę [okna dialogowego czcionki i kolory, środowisko, opcje](../ide/reference/fonts-and-colors-environment-options-dialog-box.md) .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Instrukcje: zmiana czcionek i kolorów dla edytora w programie Visual Studio](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
 - [Funkcje edytora kodu programu Visual Studio](../ide/writing-code-in-the-code-and-text-editor.md)
