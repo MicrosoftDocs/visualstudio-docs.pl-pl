@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 853b5c6f-e1cb-4675-ad36-9ee16e3341c3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ada2dc42f3733148c77a3b450b8419baf0a2037a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 284e41b9b9d3339a08acb25ad0ea6adc8d474e6c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463611"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863278"
 ---
 # <a name="idiasymbolget_indirectvirtualbaseclass"></a>IDiaSymbol::get_indirectVirtualBaseClass
 Pobiera flagę, która określa, czy typ danych zdefiniowany przez użytkownika jest pośrednią wirtualną klasą bazową.
@@ -25,7 +25,7 @@ Pobiera flagę, która określa, czy typ danych zdefiniowany przez użytkownika 
 ## <a name="syntax"></a>Składnia
 
 ```C++
-HRESULT get_indirectVirtualBaseClass ( 
+HRESULT get_indirectVirtualBaseClass ( 
    BOOL* pRetVal
 );
 ```

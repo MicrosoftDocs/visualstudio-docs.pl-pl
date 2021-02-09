@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 61344966-fed4-4c02-9e27-20356ec2ef7c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 807025265de5c088f1af24ec76402cdbf3a516a7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd3290afb5116661f62983ce3a6fae8653312f24
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465553"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864132"
 ---
 # <a name="idiasessionfindsymbolbyrvaex"></a>IDiaSession::findSymbolByRVAEx
 Pobiera określony typ symbolu, który zawiera lub jest najbliższy do, określony względny adres wirtualny (RVA) i przesunięcie.
@@ -25,7 +25,7 @@ Pobiera określony typ symbolu, który zawiera lub jest najbliższy do, określo
 ## <a name="syntax"></a>Składnia
 
 ```C++
-HRESULT findSymbolByRVAEx ( 
+HRESULT findSymbolByRVAEx ( 
    DWORD        rva,
    SymTagEnum   symtag,
    IDiaSymbol** ppSymbol,
@@ -61,7 +61,7 @@ LONG disp = 0;
 pSession->findSymbolByRVAEx( rva, SymTagFunction, &pFunc, &disp );
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [SymTagEnum, wyliczenie](../../debugger/debug-interface-access/symtagenum.md)

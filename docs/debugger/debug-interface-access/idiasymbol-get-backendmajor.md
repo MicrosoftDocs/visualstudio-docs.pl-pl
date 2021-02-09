@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 900a05dd-c29b-44ad-b46b-f43bda819a66
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 87ede4bfbac0d88ba65bd57d301df93a97738ea7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 725e08bbe9ae41dc44fb90033bec994a9ca45ab6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464255"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863565"
 ---
 # <a name="idiasymbolget_backendmajor"></a>IDiaSymbol::get_backEndMajor
 Pobiera główny numer wersji kompilatora.
@@ -25,7 +25,7 @@ Pobiera główny numer wersji kompilatora.
 ## <a name="syntax"></a>Składnia
 
 ```C++
-HRESULT get_backEndMajor ( 
+HRESULT get_backEndMajor ( 
    DWORD* pRetVal
 );
 ```

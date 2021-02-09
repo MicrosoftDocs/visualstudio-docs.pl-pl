@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 24d280ef-6ea3-4958-9418-4ad3ca7c67c1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 02e1a3a831ccd7394c58af4b744f0be8b905d763
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4fc7eb836bab2219e764a7d6a40fc6b8421c916f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463485"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863250"
 ---
 # <a name="idiasymbolget_isaggregated"></a>IDiaSymbol::get_isAggregated
 Pobiera flagę, która określa, czy symbol danych jest częścią agregacji lub kolekcji symboli; Kompilator traktuje zagregowane symbole jako osobne jednostki, ale są naprawdę częścią pojedynczego większego symbolu.

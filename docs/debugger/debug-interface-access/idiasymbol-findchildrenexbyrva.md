@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cbc57c6c-7d64-4469-a114-1dd6671e5ec5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 936aa9006fac088efbb155d44ca8e4257ce94302
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b2ef64d288bdb8e6e5a7cf8befa1f6d7c90ecf0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464570"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863705"
 ---
 # <a name="idiasymbolfindchildrenexbyrva"></a>IDiaSymbol::findChildrenExByRVA
 Pobiera elementy podrzędne symbolu, które są prawidłowe w określonym względnym adresie wirtualnym (RVA).
@@ -25,7 +25,7 @@ Pobiera elementy podrzędne symbolu, które są prawidłowe w określonym wzglę
 ## <a name="syntax"></a>Składnia
 
 ```C++
-HRESULT findChildrenExByRVA ( 
+HRESULT findChildrenExByRVA ( 
    enum SymTagEnum   symtag,
    LPCOLESTR         name,
    DWORD             compareFlags,

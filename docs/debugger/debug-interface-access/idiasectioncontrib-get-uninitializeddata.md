@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 39736f35-6c73-4f54-a092-517192e417ff
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 934d2295d97d89b58704ada2eba58f0e2ec9aea1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d18e6398f563f7f766ba1e38047a688676b55bca
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466092"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864391"
 ---
 # <a name="idiasectioncontribget_uninitializeddata"></a>IDiaSectionContrib::get_uninitializedData
 Pobiera flagę wskazującą, czy sekcja zawiera niezainicjowane dane.
@@ -25,7 +25,7 @@ Pobiera flagę wskazującą, czy sekcja zawiera niezainicjowane dane.
 ## <a name="syntax"></a>Składnia
 
 ```C++
-HRESULT get_uninitializedData ( 
+HRESULT get_uninitializedData ( 
    BOOL* pRetVal
 );
 ```

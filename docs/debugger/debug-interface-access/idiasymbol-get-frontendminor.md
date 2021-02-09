@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 40792153-827c-4859-be7c-6aa16d5abab6
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 43c3ab40a694dd2ae8623bc3ed6654cf93b0a3ca
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9677e1c0d5f15a6b58ee66bf4041bebd5320fa27
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463856"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863411"
 ---
 # <a name="idiasymbolget_frontendminor"></a>IDiaSymbol::get_frontEndMinor
 Pobiera numer wersji pomocniczej frontonu.
@@ -25,7 +25,7 @@ Pobiera numer wersji pomocniczej frontonu.
 ## <a name="syntax"></a>Składnia
 
 ```C++
-HRESULT get_frontEndMinor ( 
+HRESULT get_frontEndMinor ( 
    DWORD* pRetVal
 );
 ```

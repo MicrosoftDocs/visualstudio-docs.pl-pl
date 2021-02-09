@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b2892513-3952-4f99-9b98-60cb9b1fdc91
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fc4d27f3ef8c9329feddd6bf7d8342ceae1b263
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98887e684d9bf2cbe282b7d9c4670fd18a355bd8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466456"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864538"
 ---
 # <a name="idiareadexeatrvacallback"></a>IDiaReadExeAtRVACallback
 Umożliwia aplikacji klienckiej dostarczanie bajtów pliku wykonywalnego określonego przez względny adres wirtualny.
@@ -25,7 +25,7 @@ Umożliwia aplikacji klienckiej dostarczanie bajtów pliku wykonywalnego określ
 ## <a name="syntax"></a>Składnia
 
 ```
-IDiaReadExeAtRVACallback : IUnknown
+IDiaReadExeAtRVACallback : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych

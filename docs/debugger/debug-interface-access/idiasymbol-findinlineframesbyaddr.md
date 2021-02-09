@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: 36a122e6-f27e-40cd-9784-cdaf279e1905
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c45e99ecab38146f6ccba9fbaf176cdf5fddb67
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0b178a984ce915ace20b306ea2594031262aceac
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464486"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863684"
 ---
 # <a name="idiasymbolfindinlineframesbyaddr"></a>IDiaSymbol::findInlineFramesByAddr
 Pobiera wyliczenie, które pozwala klientowi na iterację we wszystkich wbudowanych ramkach na danym adresie.
@@ -23,7 +23,7 @@ Pobiera wyliczenie, które pozwala klientowi na iterację we wszystkich wbudowan
 ## <a name="syntax"></a>Składnia
 
 ```C++
-HRESULT findInlineFramesByAddr ( 
+HRESULT findInlineFramesByAddr ( 
    DWORD             isect,
    DWORD             offset,
    IDiaEnumSymbols** ppResult

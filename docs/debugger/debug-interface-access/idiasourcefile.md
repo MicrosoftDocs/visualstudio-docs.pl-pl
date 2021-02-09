@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6e9be757-797f-4960-ba62-c14092620bbd
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c28559eb3b936505cf03c6499dd79178554645bf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e0d7ae9a054da64dfc7ee3264734e03959016f53
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465165"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863992"
 ---
 # <a name="idiasourcefile"></a>IDiaSourceFile
 Reprezentuje plik źródłowy.
@@ -25,7 +25,7 @@ Reprezentuje plik źródłowy.
 ## <a name="syntax"></a>Składnia
 
 ```
-IDiaSourceFile : IUnknown
+IDiaSourceFile : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych

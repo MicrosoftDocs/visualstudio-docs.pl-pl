@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 892b80ff-5957-4233-b4d7-6144167be289
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b8ba63eb1b68cc5e630e650bff80d86d6fb0b3f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 05355c9031aa588c8e9ed4ddceb69920fa485f51
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463030"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863005"
 ---
 # <a name="idiasymbolget_liverangestartaddresssection"></a>IDiaSymbol::get_liveRangeStartAddressSection
 Zwraca część sekcji adresu początkowego zakresu, w którym lokalny symbol jest prawidłowy.
@@ -25,7 +25,7 @@ Zwraca część sekcji adresu początkowego zakresu, w którym lokalny symbol je
 ## <a name="syntax"></a>Składnia
 
 ```C++
-HRESULT get_liveRangeStartAddressSection ( 
+HRESULT get_liveRangeStartAddressSection ( 
    DWORD* section
 );
 ```

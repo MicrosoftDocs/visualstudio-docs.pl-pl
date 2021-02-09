@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 360b61b1-69b1-4a8b-ba37-97a1d835ac53
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 88610338e5213cf05627533e23715665fb0e119a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8d22e77b47e840d6dbec10bdf518fa0fa4a748ca
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466029"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864377"
 ---
 # <a name="idiasegmentget_addresssection"></a>IDiaSegment::get_addressSection
 Pobiera numer sekcji, który jest mapowany na ten segment.
@@ -25,7 +25,7 @@ Pobiera numer sekcji, który jest mapowany na ten segment.
 ## <a name="syntax"></a>Składnia
 
 ```C++
-HRESULT get_addressSection ( 
+HRESULT get_addressSection ( 
    DWORD* pRetVal
 );
 ```

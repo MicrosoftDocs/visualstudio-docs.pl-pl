@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d3197a38-5973-4e56-873e-4f1b84c3f674
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ba4cdb5f74cedf13cfb74b5aff6d43d24534eab9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc38d92dc20d1eea368c07e45237508dd5f85585
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466484"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864566"
 ---
 # <a name="idiapropertystorage"></a>IDiaPropertyStorage
 Umożliwia odczytywanie trwałych właściwości zestawu właściwości DIA.
@@ -25,7 +25,7 @@ Umożliwia odczytywanie trwałych właściwości zestawu właściwości DIA.
 ## <a name="syntax"></a>Składnia
 
 ```
-IDiaPropertyStorage : IUnknown
+IDiaPropertyStorage : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5f425fa3-7ba6-4979-8b3e-0fcd06cbba73
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b34714ccd23929d4aaa3ea734fc80941d04103dd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eb6336ea900cc7ae23848d67b5a2e6545a404ad7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464094"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863523"
 ---
 # <a name="idiasymbolget_code"></a>IDiaSymbol::get_code
 Pobiera flagę, która określa, czy symbol odwołuje się do adresu kodu.
@@ -25,7 +25,7 @@ Pobiera flagę, która określa, czy symbol odwołuje się do adresu kodu.
 ## <a name="syntax"></a>Składnia
 
 ```C++
-HRESULT get_code ( 
+HRESULT get_code ( 
    BOOL* pRetVal
 );
 ```

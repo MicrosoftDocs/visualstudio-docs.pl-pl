@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 710efe04-78b5-4f3e-a1d8-f9b069063503
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1893a361ab4043ad5969a7fa899c07fe18253b9a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 172a02a2b2d818132131b94192af39d45e390254
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465833"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864258"
 ---
 # <a name="idiasessionfindfilebyid"></a>IDiaSession::findFileById
 Pobiera plik źródłowy według identyfikatora pliku źródłowego.
@@ -25,7 +25,7 @@ Pobiera plik źródłowy według identyfikatora pliku źródłowego.
 ## <a name="syntax"></a>Składnia
 
 ```C++
-HRESULT findFileById ( 
+HRESULT findFileById ( 
    DWORD            uniqueId,
    IDiaSourceFile** ppResult
 );

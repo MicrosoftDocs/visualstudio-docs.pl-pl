@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e9a6440b-d068-4de4-a240-6723d20812b9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d190ae0d2652eee465526aec6122326b6108f322
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c3689eaa25e49780ee47421451592005b1c35a8d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462932"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862991"
 ---
 # <a name="idiasymbolget_lowerbound"></a>IDiaSymbol::get_lowerBound
 Pobiera dolną granicę wymiaru tablicy Pascal.
@@ -25,7 +25,7 @@ Pobiera dolną granicę wymiaru tablicy Pascal.
 ## <a name="syntax"></a>Składnia
 
 ```C++
-HRESULT get_lowerBound ( 
+HRESULT get_lowerBound ( 
    IDiaSymbol** pRetVal
 );
 ```
