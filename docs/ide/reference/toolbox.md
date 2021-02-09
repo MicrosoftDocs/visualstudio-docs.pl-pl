@@ -12,15 +12,15 @@ helpviewer_keywords:
 - custom controls [Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 905288d4a580f5633196273666fbea3954d1767c
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 52b7eeefd157e99fc5214f29c220d94fd6e19772
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560281"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841902"
 ---
 # <a name="toolbox"></a>Przybornik
 
@@ -82,6 +82,6 @@ Zapoznania następujące linki, aby dowiedzieć się więcej na temat niektóryc
 - [Przybornik, karta Składniki](../../ide/reference/toolbox-components-tab.md)
 - [Przybornik, karta HTML](../../ide/reference/toolbox-html-tab.md)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Wybieranie elementów przybornika, składniki WPF](choose-toolbox-items-wpf-components.md)

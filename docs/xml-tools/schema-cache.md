@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 35a7fcad-f3bf-4a96-9008-4306e7276223
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d3eaab4379d744bae0032e51995e5bc1b8e76423
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 3562b7238f9721c4153af02cce594bfb9e134b0c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351378"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841895"
 ---
 # <a name="schema-cache"></a>Pamięć podręczna schematów
 
@@ -114,7 +114,7 @@ Lokalizację pamięci podręcznej schematu można dostosować za pomocą strony 
 
 1. W menu **Narzędzia** wybierz pozycję **Opcje**.
 
-2. Rozwiń węzeł **Edytor tekstu** , rozwiń pozycję **XML** , a następnie kliknij pozycję **różne**.
+2. Rozwiń węzeł **Edytor tekstu**, rozwiń pozycję **XML**, a następnie kliknij pozycję **różne**.
 
 3. Kliknij przycisk **Przeglądaj** w polu **schematy** .
 

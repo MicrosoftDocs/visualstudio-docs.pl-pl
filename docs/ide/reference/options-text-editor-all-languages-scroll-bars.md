@@ -31,15 +31,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.XML.ScrollBars
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f75ba02b65b7025f9cf1e4f2eb9b5b6e3de96be0
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: c9f9b53807d0ae2160798f29b98fa315c43c330c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96039799"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841980"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>Opcje, Edytor tekstu, wszystkie języki, paski przewijania
 To okno dialogowe umożliwia zmianę domyślnego zachowania paska przewijania edytora kodu. Aby wyświetlić te opcje, wybierz opcję **Opcje** z menu **Narzędzia** . W folderze **Edytor tekstu** rozwiń podfolder **wszystkie języki** , a następnie wybierz **paski przewijania**.
@@ -55,7 +55,7 @@ Po wybraniu Wyświetla poziomy pasek przewijania, który umożliwia przewijanie 
 
 Po wybraniu Wyświetla pionowy pasek przewijania, który umożliwia przewijanie w górę i w dół w celu wyświetlenia elementów, które znajdują się poza obszarem wyświetlania edytora. Jeśli pionowe paski przewijania nie są dostępne, można użyć klawiszy Page Up, Page Down i Cursor do przewinięcia.
 
-## <a name="display"></a>Wyświetlanie
+## <a name="display"></a>Wyświetl
 
 ### <a name="show-annotations-over-vertical-scroll-bar"></a>Pokaż adnotacje na pionowym pasku przewijania
 
