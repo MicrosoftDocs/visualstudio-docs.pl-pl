@@ -15,15 +15,15 @@ helpviewer_keywords:
 - workbooks, filling ranges
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: dc80b4b589eb46aefa9ef6d75384ed17bb1b7c8c
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 64af8ddfa0d3d086b661483e76cb9b2bd82ae5c9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847211"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892076"
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>Instrukcje: Programowane automatyczne wypełnianie zakresów przyrostowo zmieniającymi się danymi
   <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>Metoda <xref:Microsoft.Office.Interop.Excel.Range> obiektu umożliwia wypełnienie zakresu w arkuszu z wartościami automatycznie. Najczęściej <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> Metoda jest używana do przechowywania przyrostowo rosnących lub malejących wartości w zakresie. Możesz określić zachowanie, dostarczając opcjonalną stałą z <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> wyliczenia.
@@ -54,7 +54,7 @@ ms.locfileid: "96847211"
 
 - Kolumna D ma zawierać serie liczb, które zwiększają się o dwa dla każdego wiersza. Dla początkowych wartości wpisz **4** w komórce D1 i **6** w komórce D2.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Pracuj z zakresami](../vsto/working-with-ranges.md)
 - [Instrukcje: programowe odwoływanie się do zakresów arkusza w kodzie](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)
 - [Instrukcje: Programowane stosowanie stylów do zakresów w skoroszytach](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)

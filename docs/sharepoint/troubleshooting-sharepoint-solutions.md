@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, troubleshooting
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a9ef5e7d47f72b82e7a8fab52cc2f1f8716c83bf
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: c6b0e031e96d2543ae0bb109f243824125f431a3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95970273"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892297"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>Rozwiązywanie problemów z rozwiązaniami programu SharePoint
   Podczas debugowania rozwiązań programu SharePoint za pomocą debugera mogą wystąpić następujące problemy lub alerty [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Aby uzyskać więcej informacji, zobacz [Debugowanie rozwiązań przepływu pracy programu SharePoint 2007](/previous-versions/bb386166(v=vs.100)).
@@ -193,7 +193,7 @@ ms.locfileid: "95970273"
 
 1. W **Eksplorator rozwiązań** wybierz plik kontrolki użytkownika, którego rozszerzenie nazwy pliku to *. ascx*.
 
-2. Na pasku menu wybierz **View**  >  **okno właściwości** widoku.
+2. Na pasku menu wybierz   >  **okno właściwości** widoku.
 
 3. W oknie **Właściwości** rozwiń węzeł **Lokalizacja wdrożenia** .
 

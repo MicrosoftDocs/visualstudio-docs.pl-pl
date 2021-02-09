@@ -11,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: 01d05e77-8cac-4d1b-b19f-25756767ed27
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4f36431ef7a190e98d35e795ffd8213781553dfc
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: ae9e10da02ab0bbef6be0fed5b9d505bf1b3e268
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036122"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892674"
 ---
 # <a name="idebugengineprogram2watchforexpressionevaluationonthread"></a>IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
 Zezwala (lub nie zezwala) na Obliczanie wyrażenia w danym wątku, nawet jeśli program został zatrzymany.
@@ -30,7 +30,7 @@ Zezwala (lub nie zezwala) na Obliczanie wyrażenia w danym wątku, nawet jeśli 
 ## <a name="syntax"></a>Składnia
 
 ```cpp
-HRESULT WatchForExpressionEvaluationOnThread( 
+HRESULT WatchForExpressionEvaluationOnThread( 
    IDebugProgram2*       pOriginatingProgram,
    DWORD                 dwTid,
    DWORD                 dwEvalFlags,
@@ -40,7 +40,7 @@ HRESULT WatchForExpressionEvaluationOnThread( 
 ```
 
 ```csharp
-int WatchForExpressionEvaluationOnThread( 
+int WatchForExpressionEvaluationOnThread( 
    IDebugProgram2       pOriginatingProgram,
    uint                  dwTid,
    uint                  dwEvalFlags,
@@ -73,7 +73,7 @@ podczas Jeśli wartość jest różna od zera ( `TRUE` ), umożliwia Obliczanie 
 
  Obliczanie wyrażeń w jednym programie może spowodować, że kod będzie działać w innym, z powodu oceny funkcji lub oceny wszelkich `IDispatch` właściwości. W związku z tym ta metoda umożliwia uruchamianie i kończenie obliczania wyrażeń, nawet jeśli wątek może zostać zatrzymany w tym programie.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)
 - [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 518e8153-eec2-4db9-a6f7-416ec11d8e09
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 889c6bac2f00041af6578d31bc0c6e036d82afe1
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: a8cd8c0b74dc06a72e7c20bd3af11fd91df07eb3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975098"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891525"
 ---
 # <a name="process-search-dialog-box"></a>Wyszukiwanie procesów — Okno dialogowe
 To okno dialogowe służy do znajdowania i wybierania węzła dla określonego procesu w [widoku procesy](../debugger/processes-view.md). Aby wyświetlić to okno dialogowe, Przenieś fokus do okna widok **procesów** . Następnie wybierz pozycję **Znajdź proces** z menu **wyszukiwania** .

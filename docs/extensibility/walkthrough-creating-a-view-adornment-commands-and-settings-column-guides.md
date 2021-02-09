@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2108abe89a47fa276da53a14439a52451d936eea
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: d9bf88212ccc6e00dfbca14912eb15e17d106a49
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863077"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892453"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>Przewodnik: Tworzenie zakończenia, poleceń i ustawień widoku (prowadnice kolumn)
 Można rozwinąć Edytor tekstu/kodu programu Visual Studio za pomocą poleceń i efektów wyświetlania. W tym artykule pokazano, jak zacząć korzystać z popularnej funkcji rozszerzenia, prowadnic kolumn. Prowadnice kolumn są wizualnie jasne linie rysowane w widoku edytora tekstów, aby ułatwić zarządzanie kodem do określonych szerokości kolumn. W odniesieniu do kodu sformatowanego można zwrócić uwagę na przykłady dołączone do dokumentów, wpisów w blogu lub raportów o błędach.

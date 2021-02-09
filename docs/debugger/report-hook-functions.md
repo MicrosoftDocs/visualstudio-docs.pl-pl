@@ -22,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: 1854bca7-d7eb-4502-89bf-b1ee64cb50ef
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dea558d2f125c1e64f46bb4fbf738434eda2394
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: bb1e6d2fcd3ec5a2e2c1d784724b17298f0b3e84
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205622"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891335"
 ---
 # <a name="report-hook-functions"></a>Raportowanie funkcji punktów zaczepienia
 Funkcja podłączania raportów zainstalowana przy użyciu [_CrtSetReportHook](/cpp/c-runtime-library/reference/crtsetreporthook)jest wywoływana za każdym razem, gdy [_CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw) generuje raport debugowania. Można jej używać między innymi w przypadku filtrowania raportów, aby skoncentrować się na określonych typach alokacji. Funkcja punktu zaczepienia raportu powinna mieć prototyp podobny do następującego:

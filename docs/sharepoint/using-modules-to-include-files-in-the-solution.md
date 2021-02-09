@@ -13,15 +13,15 @@ helpviewer_keywords:
 - modules [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: aa0d6fe1855a1d60a0e1293e8422791f8148bd04
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 86aea9800d0eaad4c36d5598e52dd7a35f3a7534
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442524"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892180"
 ---
 # <a name="use-modules-to-include-files-in-the-solution"></a>Używanie modułów do dołączania plików w rozwiązaniu
   Mogą wystąpić sytuacje, w których można chcieć wdrożyć pliki na serwerze programu SharePoint, niezależnie od ich typu plików, na przykład nowych stron wzorcowych. W tym celu można użyć *modułów* (nie należy mylić z [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] modułami kodu). Moduły są kontenerami dla plików w rozwiązaniu programu SharePoint. Po wdrożeniu rozwiązania pliki w module są kopiowane do określonych folderów na serwerze programu SharePoint.
@@ -58,7 +58,7 @@ ms.locfileid: "95442524"
 
  Każdy plik, który chcesz wdrożyć, wymaga oddzielnego `<File>` wpisu elementu w *Elements.xml*.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: Dołączanie plików przy użyciu modułu](../sharepoint/how-to-include-files-by-using-a-module.md)
 - [Instrukcje: Inicjowanie obsługi pliku](/previous-versions/office/developer/sharepoint-2010/ms441170(v=office.14))
 - [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)

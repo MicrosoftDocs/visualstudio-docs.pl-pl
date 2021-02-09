@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: e144e70e-eef2-45a7-a562-a177f177d9a1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a52da28d01eac4f04081497888fbbfccaf4495e2
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: d48be382e222c9ca494237ae6b72bae54bb90d62
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975137"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891452"
 ---
 # <a name="processes-view"></a>Widok procesów
 Widok procesy Wyświetla drzewo wszystkich aktywnych procesów w systemie. Zostanie wyświetlony identyfikator procesu i nazwa modułu. Użyj widoku procesy, jeśli chcesz sprawdzić konkretny proces systemowy, który zwykle odpowiada programowi wykonującemu. Procesy są identyfikowane przez nazwy modułów lub wyznaczono "procesy systemowe".

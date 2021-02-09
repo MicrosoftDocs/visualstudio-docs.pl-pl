@@ -11,15 +11,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 33eb7aa0559fc7a6170da658ccc9f00653968bb6
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: 8f7cffe7f1e6edc482d4fec68908449c901d4ca2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975033"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891543"
 ---
 # <a name="debug-uwp-apps-using-prefetched-content-in-visual-studio"></a>Debuguj aplikacje platformy UWP przy użyciu prepobranej zawartości w programie Visual Studio
 
