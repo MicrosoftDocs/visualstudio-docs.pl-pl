@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 95382395-da41-4aa8-87f1-5b03da128565
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 22995722e04429812511df424d2eeb720a088eca
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76df469bb02f847827fd95c53ef2924e54185428
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461845"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853535"
 ---
 # <a name="idiasymbolget_targetsection"></a>IDiaSymbol::get_targetSection
 Pobiera sekcję Address elementu docelowego thunk.
@@ -25,7 +25,7 @@ Pobiera sekcję Address elementu docelowego thunk.
 ## <a name="syntax"></a>Składnia
 
 ```C++
-HRESULT get_targetSection ( 
+HRESULT get_targetSection ( 
    DWORD* pRetVal
 );
 ```

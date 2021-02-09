@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: aad63a7e-4e22-44e4-8a5b-81b5174ced1e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ff6b04322bca213d5eeddfbc0f7ea4b01bb9226
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 787cdd98bd049704accbe7a1aca9562bd8b9835d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465308"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854991"
 ---
 # <a name="idiasourcefileget_checksum"></a>IDiaSourceFile::get_checksum
 Pobiera sumę kontrolną b.
@@ -25,7 +25,7 @@ Pobiera sumę kontrolną b.
 ## <a name="syntax"></a>Składnia
 
 ```C++
-HRESULT get_checksum ( 
+HRESULT get_checksum ( 
    DWORD  cbData,
    DWORD* pcbData,
    BYTE   data[]

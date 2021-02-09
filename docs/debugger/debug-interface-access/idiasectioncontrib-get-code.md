@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f9ccf7a6-46e7-4a1d-9d5c-97272e17bbbb
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c5c9952b5f3b5e1f4748c064d37c842aece1600
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3eec1c468c46bbec15397ced4d25b020d336ed48
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466386"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855488"
 ---
 # <a name="idiasectioncontribget_code"></a>IDiaSectionContrib::get_code
 Pobiera flagę wskazującą, czy sekcja zawiera kod wykonywalny.
@@ -25,7 +25,7 @@ Pobiera flagę wskazującą, czy sekcja zawiera kod wykonywalny.
 ## <a name="syntax"></a>Składnia
 
 ```C++
-HRESULT get_code ( 
+HRESULT get_code ( 
    BOOL* pRetVal
 );
 ```

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9894c5ca-835f-41e9-a35e-70e046dfb7f0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a7befb78c49d206c3192d878994b6056c07c2d40
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e21a5d3fce48a6919908cdaa148de7759d90189
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465081"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854921"
 ---
 # <a name="idiastackframeget_lengthprolog"></a>IDiaStackFrame::get_lengthProlog
 Pobiera liczbę bajtów kodu prologu w bloku.
@@ -25,7 +25,7 @@ Pobiera liczbę bajtów kodu prologu w bloku.
 ## <a name="syntax"></a>Składnia
 
 ```C++
-HRESULT get_lengthProlog ( 
+HRESULT get_lengthProlog ( 
    DWORD* pRetVal
 );
 ```

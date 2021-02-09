@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b0059407-8655-497b-81ca-025595989371
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 636f553d72dc73f463d7b9814230f4b80cdda535
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b2c0c796bc01b6829e3345c45080f9ea2215d235
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464171"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854494"
 ---
 # <a name="idiasymbolget_bitposition"></a>IDiaSymbol::get_bitPosition
 Pobiera bitową pozycję lokalizacji. Używany, gdy jest [wyliczana wartość LocationType](../../debugger/debug-interface-access/locationtype.md) `LocIsBitField` .
@@ -25,7 +25,7 @@ Pobiera bitową pozycję lokalizacji. Używany, gdy jest [wyliczana wartość Lo
 ## <a name="syntax"></a>Składnia
 
 ```C++
-HRESULT get_bitPosition ( 
+HRESULT get_bitPosition ( 
    DWORD* pRetVal
 );
 ```

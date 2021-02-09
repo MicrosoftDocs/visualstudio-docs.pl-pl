@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 57ef4170-37a9-46b0-8217-c1a674725113
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bf547835179aa203b9ecc4bb0c8050c34e213fdd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 418b8978b6c714a55c28bd2a8c8eb2e6110f6931
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462603"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853731"
 ---
 # <a name="idiasymbolget_optimizedcodedebuginfo"></a>IDiaSymbol::get_optimizedCodeDebugInfo
 Pobiera flagę wskazującą, czy funkcja zawiera informacje o debugowaniu, które są specyficzne dla zoptymalizowanego kodu.

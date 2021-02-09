@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: eb0bd73e-d92d-468e-a0b1-fbc279919f54
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f7c3f442ba814e2f59f33ea0ad837cec472e511
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ebec528c0361ac9eab1149b0988c476f90d302ac
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465032"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854907"
 ---
 # <a name="idiastackframeget_localsbase"></a>IDiaStackFrame::get_localsBase
 Pobiera podstawowy adres zmiennych lokalnych dla ramki.
@@ -25,7 +25,7 @@ Pobiera podstawowy adres zmiennych lokalnych dla ramki.
 ## <a name="syntax"></a>Składnia
 
 ```C++
-HRESULT get_localsBase ( 
+HRESULT get_localsBase ( 
    ULONGLONG* pRetVal
 );
 ```

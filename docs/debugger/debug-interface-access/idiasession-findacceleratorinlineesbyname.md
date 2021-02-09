@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: e203e5c2-6563-43fa-be56-3063955043ab
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: abd6f8afb7275503fa3de855575e9dcb6dad0fb3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a2ce0d808a21a793115c6f065ca4ab95b1507e5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465847"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855236"
 ---
 # <a name="idiasessionfindacceleratorinlineesbyname"></a>IDiaSession::findAcceleratorInlineesByName
 Zwraca Wyliczenie symboli dla ramek wbudowanych odpowiadających określonej nazwie funkcji wbudowanej.
@@ -23,7 +23,7 @@ Zwraca Wyliczenie symboli dla ramek wbudowanych odpowiadających określonej naz
 ## <a name="syntax"></a>Składnia
 
 ```C++
-HRESULT findAcceleratorInlineeLinesByName ( 
+HRESULT findAcceleratorInlineeLinesByName ( 
    LPCOLESTR             name,
    DWORD                 option,
    IDiaEnumSymbols**     ppResult

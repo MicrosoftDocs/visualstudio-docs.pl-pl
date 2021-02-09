@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 588163f7-958e-4072-bf66-db5c5f07d3cb
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ab42f39535dae2f6eb1e84e0c656dc4ff601f18
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f882a71e92056a7120eb9ea6ae3b96b6ee8ea69c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468722"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853647"
 ---
 # <a name="idiasymbolget_scoped"></a>IDiaSymbol::get_scoped
 Pobiera flagę, która określa, czy typ danych zdefiniowany przez użytkownika pojawia się w nieglobalnym zakresie leksykalnym.
@@ -25,7 +25,7 @@ Pobiera flagę, która określa, czy typ danych zdefiniowany przez użytkownika 
 ## <a name="syntax"></a>Składnia
 
 ```C++
-HRESULT get_scoped ( 
+HRESULT get_scoped ( 
    BOOL* pRetVal
 );
 ```

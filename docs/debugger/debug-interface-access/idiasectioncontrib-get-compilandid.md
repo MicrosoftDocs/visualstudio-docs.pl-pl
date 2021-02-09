@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 71ef2e63-d095-42b6-88d8-626e3129f0d9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0dfb0abaf8b242f29334739d532de822c6d61c6b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 693c036bf3947e391cdd076f99af4dd267a4c771
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466337"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855474"
 ---
 # <a name="idiasectioncontribget_compilandid"></a>IDiaSectionContrib::get_compilandId
 Pobiera identyfikator jednostka kompilacji dla sekcji.
@@ -25,7 +25,7 @@ Pobiera identyfikator jednostka kompilacji dla sekcji.
 ## <a name="syntax"></a>Składnia
 
 ```C++
-HRESULT get_compilandId ( 
+HRESULT get_compilandId ( 
    DWORD* pRetVal
 );
 ```

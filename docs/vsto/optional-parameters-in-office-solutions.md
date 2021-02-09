@@ -17,15 +17,15 @@ helpviewer_keywords:
 - parameters [Office development in Visual Studio], optional
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7567f43dfa79e6a1e5d92b9ecddbf7918a6edef3
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: d6824d53d552a27a68a49d63497156147283fd29
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527570"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847703"
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Parametry opcjonalne w rozwiązaniach pakietu Office
   Wiele metod w modelach obiektów Microsoft Office aplikacji akceptuje parametry opcjonalne. Jeśli używasz Visual Basic do tworzenia rozwiązań pakietu Office w programie Visual Studio, nie musisz przekazać wartości parametrów opcjonalnych, ponieważ wartości domyślne są automatycznie używane dla każdego brakującego parametru. W większości przypadków można także pominąć parametry opcjonalne w projektach Visual C#. Nie można jednak pominąć opcjonalnych parametrów **ref** `ThisDocument` klasy w projektach programu Word na poziomie dokumentu.

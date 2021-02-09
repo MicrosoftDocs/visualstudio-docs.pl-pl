@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e0b8dbc0-6061-4f31-bead-2cd72be44e41
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b3f159211854e5b408d34c253a77893caf763bf2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b562690569cfd5013ac44e0f091bc552874d8f6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465200"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854949"
 ---
 # <a name="idiasourcefileget_uniqueid"></a>IDiaSourceFile::get_uniqueId
 Pobiera prostą wartość klucza liczb całkowitych, która jest unikatowa dla tego obrazu.
@@ -25,7 +25,7 @@ Pobiera prostą wartość klucza liczb całkowitych, która jest unikatowa dla t
 ## <a name="syntax"></a>Składnia
 
 ```C++
-HRESULT get_uniqueId ( 
+HRESULT get_uniqueId ( 
    DWORD* pRetVal
 );
 ```

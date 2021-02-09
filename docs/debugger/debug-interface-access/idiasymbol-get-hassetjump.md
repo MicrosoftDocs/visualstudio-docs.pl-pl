@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 22656206-dccf-40ed-b179-fc016d1b262a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 353247c494b803871a9c64126545e11be39bfcae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a2584351919e717c893afcf35b4812df63042240
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463639"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854214"
 ---
 # <a name="idiasymbolget_hassetjump"></a>IDiaSymbol::get_hasSetJump
 Pobiera flagę, która określa, czy funkcja zawiera użycie polecenia [setjmp](/cpp/c-runtime-library/reference/setjmp) (sparowane z poleceniem [longjmp](/cpp/c-runtime-library/reference/longjmp) , te tworzą metodę w stylu języka C dla obsługi wyjątków).

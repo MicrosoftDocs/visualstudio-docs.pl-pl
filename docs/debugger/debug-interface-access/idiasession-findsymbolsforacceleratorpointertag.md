@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: 95fd5e7a-c637-437e-b369-c864eef733c2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a58795531d2537fc299e6e15554561129f0da0e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cba0d6c24bf4c22773da738ceb37470d6d7c5125
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465504"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855068"
 ---
 # <a name="idiasessionfindsymbolsforacceleratorpointertag"></a>IDiaSession::findSymbolsForAcceleratorPointerTag
 Zwraca Wyliczenie symboli dla zmiennej, do której odnosi się określona wartość tagu w funkcji zastępczej akceleratora nadrzędnego.
@@ -23,7 +23,7 @@ Zwraca Wyliczenie symboli dla zmiennej, do której odnosi się określona warto�
 ## <a name="syntax"></a>Składnia
 
 ```C++
-HRESULT findSymbolsForAcceleratorPointerTag ( 
+HRESULT findSymbolsForAcceleratorPointerTag ( 
    IDiaSymbol*           parent,
    DWORD                 tagValue,
    IDiaEnumSymbols**     ppResult

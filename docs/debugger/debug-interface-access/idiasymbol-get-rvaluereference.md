@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c6c8c543-253e-4c23-a939-3e66f3db0ee2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b8123ca0a9679a46e8e411d817f42ae8497f3ef3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a66ec650c1e12e795241ab31cafc50ebaacf20ee
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462407"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853654"
 ---
 # <a name="idiasymbolget_rvaluereference"></a>IDiaSymbol::get_RValueReference
 Pobiera flagę, która określa, czy typ wskaźnika to odwołanie rvalue. Użyj, gdy [Wyliczenie SymTagEnum —](../../debugger/debug-interface-access/symtagenum.md) jest ustawione na typ wskaźnika.

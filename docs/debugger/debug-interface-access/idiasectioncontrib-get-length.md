@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d0f6b9c7-90fc-4e3c-945a-b8f683a8f006
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 42ca5e92e9f19c9a870e1cfb286ad5c4ff401733
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a7205b47c2d9db5e9d700bd225182a6fd58e631
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466239"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855411"
 ---
 # <a name="idiasectioncontribget_length"></a>IDiaSectionContrib::get_length
 Pobiera liczbę bajtów w sekcji.
@@ -25,7 +25,7 @@ Pobiera liczbę bajtów w sekcji.
 ## <a name="syntax"></a>Składnia
 
 ```C++
-HRESULT get_length ( 
+HRESULT get_length ( 
    DWORD* pRetVal
 );
 ```
