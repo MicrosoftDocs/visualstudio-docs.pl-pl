@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 952d579d-6911-413e-b3e5-54e7e797e70c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e9b7ce5db863987d530fe9e68d026a94474fc13c
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: d5f31bb73b4a22a11235e471dfa1fa99545e422e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149498"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877606"
 ---
 # <a name="how-to-flag-and-unflag-threads-c-visual-basic-c"></a>Instrukcje: Flagowanie i usuwanie flag wątków (C#, Visual Basic, C++)
 
@@ -62,7 +62,7 @@ Wątki oflagowane otrzymują również specjalne traktowanie na liście **wątk�
 
 5. Kliknij przycisk **OK**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Debuguj aplikacje wielowątkowe](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Rozpoczynanie debugowania aplikacji wielowątkowych](../debugger/get-started-debugging-multithreaded-apps.md)
 - [Przewodnik: debugowanie aplikacji wielowątkowych za pomocą okna wątków](../debugger/how-to-use-the-threads-window.md)

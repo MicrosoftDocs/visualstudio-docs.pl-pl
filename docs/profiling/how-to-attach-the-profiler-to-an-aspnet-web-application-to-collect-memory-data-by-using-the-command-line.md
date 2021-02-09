@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: d608f85a-41ae-4ca7-85e6-b96624dbc83c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 918a370df43e2754721dd715ea6e2559e14160f8
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: eb90141f10787b820fcb31ee0337f6cd8402f084
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801594"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877086"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Instrukcje: dołączanie profilera do aplikacji sieci Web ASP.NET w celu zbierania danych pamięci przy użyciu wiersza polecenia
 W tym artykule opisano sposób korzystania z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzi wiersza polecenia narzędzia profilowania w celu dołączania profilera do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci Web i zbierania danych o liczbie i rozmiarze .NET Framework alokacji pamięci. Możesz również zbierać dane dotyczące okresu istnienia .NET Framework obiektów pamięci.
@@ -127,6 +127,6 @@ W tym artykule opisano sposób korzystania z [!INCLUDE[vsprvs](../code-quality/i
 
     **IISReset/Start**
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [Widoki danych pamięci .NET](../profiling/dotnet-memory-data-views.md)

@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: db75b3a7-80b2-4a74-91d2-fd6e0f73b45d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3618c1d6e929d40108abd5fd0b0cc3a3361964bf
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: ee7acfd6256affee7a8204c2e70e18210c5f3dcf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727880"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877736"
 ---
 # <a name="command-line-capture-tool"></a>Narzędzie wiersza polecenia do przechwytywania
 DXCap.exe to narzędzie wiersza polecenia do przechwytywania i odtwarzania diagnostyki grafiki. Obsługuje ona program Direct3D 10 za pośrednictwem Direct3D 12 na wszystkich poziomach funkcji.

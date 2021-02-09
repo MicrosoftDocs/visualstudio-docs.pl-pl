@@ -14,15 +14,15 @@ helpviewer_keywords:
 - ServerDocument class, managing documents on server
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 585ec1842daeb4e4c4c59047383e5d53b3599bcf
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 17a25ca382cfbbc762731afacaa628de616cfe1c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528489"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879478"
 ---
 # <a name="manage-documents-on-a-server-by-using-the-serverdocument-class"></a>Zarządzanie dokumentami na serwerze za pomocą klasy ServerDocument
   `ServerDocument`Klasy w programie można użyć [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] do zarządzania kilkoma aspektami dostosowań na poziomie dokumentu, nawet jeśli nie zainstalowano programów Microsoft Office Word i Microsoft Office Excel. W tym miejscu można wykonywać następujące zadania:

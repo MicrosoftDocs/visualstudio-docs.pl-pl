@@ -20,19 +20,19 @@ helpviewer_keywords:
 ms.assetid: 651ba971-b755-4f03-a549-4816beb3cc0d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d930ed8d918a08503a6eaa6b60848abeec7683a
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 542d84f4c0279c1f76fa1ea29a244e78c53b394d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796839"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878438"
 ---
 # <a name="cl-task"></a>CL — Zadanie
 
-Zawija narzędzie kompilatora języka Microsoft C++ *cl.exe* . Kompilator tworzy pliki wykonywalne ( *. exe* ), pliki bibliotek dołączanych dynamicznie ( *dll* ) lub moduły kodu ( *. module* ). Aby uzyskać więcej informacji, zobacz [Opcje kompilatora](/cpp/build/reference/compiler-options) i [Użyj programu MSBuild z wiersza polecenia](/cpp/build/msbuild-visual-cpp) i [Użyj zestawu narzędzi Microsoft C++ w wierszu polecenia](/cpp/build/building-on-the-command-line).
+Zawija narzędzie kompilatora języka Microsoft C++ *cl.exe*. Kompilator tworzy pliki wykonywalne (*. exe*), pliki bibliotek dołączanych dynamicznie (*dll*) lub moduły kodu (*. module*). Aby uzyskać więcej informacji, zobacz [Opcje kompilatora](/cpp/build/reference/compiler-options) i [Użyj programu MSBuild z wiersza polecenia](/cpp/build/msbuild-visual-cpp) i [Użyj zestawu narzędzi Microsoft C++ w wierszu polecenia](/cpp/build/building-on-the-command-line).
 
 ## <a name="parameters"></a>Parametry
 
@@ -66,7 +66,7 @@ Zawija narzędzie kompilatora języka Microsoft C++ *cl.exe* . Kompilator tworzy
 
    Opcjonalny parametr ciągu.
 
-   Ciąg, który zawsze jest emitowany w wierszu polecenia. Wartość domyślna to " **/c** ".
+   Ciąg, który zawsze jest emitowany w wierszu polecenia. Wartość domyślna to "**/c**".
 
 - **AssemblerListingLocation**
 
@@ -92,7 +92,7 @@ Zawija narzędzie kompilatora języka Microsoft C++ *cl.exe* . Kompilator tworzy
 
   - **Wszystkie**  -  **/FACS**
 
-    Aby uzyskać więcej informacji, zobacz Opcje **/Fa** , **/FAc** , **/FAS** i **/FACS** w [/FA,/FA (lista plików)](/cpp/build/reference/fa-fa-listing-file).
+    Aby uzyskać więcej informacji, zobacz Opcje **/Fa**, **/FAc**, **/FAS** i **/FACS** w [/FA,/FA (lista plików)](/cpp/build/reference/fa-fa-listing-file).
 
 - **BasicRuntimeChecks**
 
@@ -198,7 +198,7 @@ Zawija narzędzie kompilatora języka Microsoft C++ *cl.exe* . Kompilator tworzy
 
    Opcjonalny parametr logiczny.
 
-   Jeśli `true` , nakazuje kompilatorowi przygotowanie obrazu do zastosowania *poprawek na gorąco* . Ten parametr zapewnia, że pierwsza instrukcja każdej funkcji ma dwa bajty, co jest wymagane w przypadku stosowania poprawek na gorąco.
+   Jeśli `true` , nakazuje kompilatorowi przygotowanie obrazu do zastosowania *poprawek na gorąco*. Ten parametr zapewnia, że pierwsza instrukcja każdej funkcji ma dwa bajty, co jest wymagane w przypadku stosowania poprawek na gorąco.
 
    Aby uzyskać więcej informacji, zobacz [/hotpatch (Create możliwy do poprawiania Image)](/cpp/build/reference/hotpatch-create-hotpatchable-image).
 
@@ -206,7 +206,7 @@ Zawija narzędzie kompilatora języka Microsoft C++ *cl.exe* . Kompilator tworzy
 
    Opcjonalny parametr ciągu.
 
-   Wybiera typ informacji o debugowaniu utworzonych dla programu oraz tego, czy te informacje są przechowywane w plikach obiektu ( *. obj* ), czy w bazie danych programu (PDB).
+   Wybiera typ informacji o debugowaniu utworzonych dla programu oraz tego, czy te informacje są przechowywane w plikach obiektu (*. obj*), czy w bazie danych programu (PDB).
 
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
 
@@ -222,7 +222,7 @@ Zawija narzędzie kompilatora języka Microsoft C++ *cl.exe* . Kompilator tworzy
 
    Opcjonalny parametr logiczny.
 
-   Jeśli **ma wartość true** , instruuje kompilator, aby emituje błąd dla konstrukcji językowych, które nie są zgodne ze standardem ANSI C lub ANSI C++.
+   Jeśli **ma wartość true**, instruuje kompilator, aby emituje błąd dla konstrukcji językowych, które nie są zgodne ze standardem ANSI C lub ANSI C++.
 
    Aby uzyskać więcej informacji, zobacz opcja **/za** w [/za,/ze (Wyłącz rozszerzenia językowe)](/cpp/build/reference/za-ze-disable-language-extensions).
 
@@ -268,7 +268,7 @@ Zawija narzędzie kompilatora języka Microsoft C++ *cl.exe* . Kompilator tworzy
 
    Opcjonalny parametr ciągu.
 
-   Umożliwia dostarczenie informacji o wewnętrznym błędzie kompilatora (lodem) bezpośrednio do firmy Microsoft. Domyślnie ustawienie w obszarze kompilacje IDE jest **monitem** , a ustawienie w kompilacjach w wierszu polecenia jest **kolejką** .
+   Umożliwia dostarczenie informacji o wewnętrznym błędzie kompilatora (lodem) bezpośrednio do firmy Microsoft. Domyślnie ustawienie w obszarze kompilacje IDE jest **monitem** , a ustawienie w kompilacjach w wierszu polecenia jest **kolejką**.
 
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
 
@@ -330,7 +330,7 @@ Zawija narzędzie kompilatora języka Microsoft C++ *cl.exe* . Kompilator tworzy
 
    Jeśli `true` , włącza niezawodny model wyjątku zmiennoprzecinkowego. Wyjątki będą wywoływane natychmiast po ich wyzwoleniu.
 
-   Aby uzyskać więcej informacji, zobacz opcję/ **FP: except** w [/FP (Określ zachowanie zmiennoprzecinkowe)](/cpp/build/reference/fp-specify-floating-point-behavior).
+   Aby uzyskać więcej informacji, zobacz opcję/**FP: except** w [/FP (Określ zachowanie zmiennoprzecinkowe)](/cpp/build/reference/fp-specify-floating-point-behavior).
 
 - **FloatingPointModel**
 
@@ -456,7 +456,7 @@ Zawija narzędzie kompilatora języka Microsoft C++ *cl.exe* . Kompilator tworzy
 
    Opcjonalny `Boolean` parametr.
 
-   Jeśli `true` , pomija domyślną nazwę biblioteki wykonawczej C z pliku obiektu ( *. obj* ). Domyślnie kompilator umieszcza nazwę biblioteki w pliku *. obj* , aby skierować konsolidator do odpowiedniej biblioteki.
+   Jeśli `true` , pomija domyślną nazwę biblioteki wykonawczej C z pliku obiektu (*. obj*). Domyślnie kompilator umieszcza nazwę biblioteki w pliku *. obj* , aby skierować konsolidator do odpowiedniej biblioteki.
 
    Aby uzyskać więcej informacji, zobacz [/zl (Pomiń domyślną nazwę biblioteki)](/cpp/build/reference/zl-omit-default-library-name).
 
@@ -498,7 +498,7 @@ Zawija narzędzie kompilatora języka Microsoft C++ *cl.exe* . Kompilator tworzy
 
    Opcjonalny parametr **ciągu** .
 
-   Podczas kompilowania Utwórz lub użyj prekompilowanego pliku nagłówkowego ( *. PCH* ).
+   Podczas kompilowania Utwórz lub użyj prekompilowanego pliku nagłówkowego (*. PCH*).
 
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
 
@@ -628,7 +628,7 @@ Zawija narzędzie kompilatora języka Microsoft C++ *cl.exe* . Kompilator tworzy
 
    Aby uzyskać więcej informacji, zobacz **/RTCc** Option in [/RTC (sprawdzanie błędów czasu wykonywania)](/cpp/build/reference/rtc-run-time-error-checks).
 
-- **Źródeł**
+- **Źródła**
 
    Wymagany parametr interfejsu `ITaskItem[]`.
 
@@ -784,17 +784,17 @@ Zawija narzędzie kompilatora języka Microsoft C++ *cl.exe* . Kompilator tworzy
 
    Opcjonalny `ITaskItem[]` parametr.
 
-   Określa tablicę elementów, które reprezentują *dzienniki śledzenia plików odczytywane* .
+   Określa tablicę elementów, które reprezentują *dzienniki śledzenia plików odczytywane*.
 
-   Dziennik śledzenia plików ( *. tlog* ) zawiera nazwy plików wejściowych, które są odczytywane przez zadanie i są używane przez system kompilacji projektu do obsługi kompilacji przyrostowych. Aby uzyskać więcej informacji, zobacz parametry **katalog trackerlogdirectory** i **TrackFileAccess** w tej tabeli.
+   Dziennik śledzenia plików (*. tlog*) zawiera nazwy plików wejściowych, które są odczytywane przez zadanie i są używane przez system kompilacji projektu do obsługi kompilacji przyrostowych. Aby uzyskać więcej informacji, zobacz parametry **katalog trackerlogdirectory** i **TrackFileAccess** w tej tabeli.
 
 - **TLogWriteFiles**
 
    Opcjonalny `ITaskItem[]` parametr.
 
-   Określa tablicę elementów, które reprezentują *dzienniki śledzenia plików zapisu* .
+   Określa tablicę elementów, które reprezentują *dzienniki śledzenia plików zapisu*.
 
-   Dziennik śledzenia plików zapisu ( *. tlog* ) zawiera nazwy plików wyjściowych, które są zapisywane przez zadanie, i jest używany przez system kompilacji projektu do obsługi kompilacji przyrostowych. Aby uzyskać więcej informacji, zobacz parametry **katalog trackerlogdirectory** i **TrackFileAccess** w tej tabeli.
+   Dziennik śledzenia plików zapisu (*. tlog*) zawiera nazwy plików wyjściowych, które są zapisywane przez zadanie, i jest używany przez system kompilacji projektu do obsługi kompilacji przyrostowych. Aby uzyskać więcej informacji, zobacz parametry **katalog trackerlogdirectory** i **TrackFileAccess** w tej tabeli.
 
 - **TrackFileAccess**
 
@@ -804,6 +804,6 @@ Zawija narzędzie kompilatora języka Microsoft C++ *cl.exe* . Kompilator tworzy
 
    Aby uzyskać więcej informacji, zobacz parametry **TLogReadFiles** i **TLogWriteFiles** w tej tabeli.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Dokumentacja zadań](../msbuild/msbuild-task-reference.md)

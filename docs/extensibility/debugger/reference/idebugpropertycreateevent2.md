@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 33b3082b-a42e-488a-a1e4-dadf506f922c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84d8fcb4375f29820b51752ac3fdebbd04f06f80
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 08ef46275d9c7365cfcc837b8e4dfc73f0b48b41
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720929"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876059"
 ---
 # <a name="idebugpropertycreateevent2"></a>IDebugPropertyCreateEvent2
 Ten interfejs jest wysyłany przez aparat debugowania (DE) do Menedżera debugowania sesji (SDM) podczas tworzenia właściwości, która jest skojarzona z określonym dokumentem.

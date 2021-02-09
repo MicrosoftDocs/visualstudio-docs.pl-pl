@@ -7,19 +7,19 @@ ms.topic: conceptual
 ms.assetid: 29a37182-2a2c-47e4-a4a9-2d5412738fed
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 91d1df06d991669b023ede60b8b384ea75af651a
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: e4ba5678d91779f0955147dbc87fd3b57cbe387c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796722"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876409"
 ---
 # <a name="debug-xaml-in-blend"></a>Debugowanie XAML w Blend
 
-Korzystając z narzędzi dostępnych w Blend for Visual Studio, można debugować kod XAML w aplikacji. Podczas kompilowania projektu wszystkie błędy są wyświetlane w panelu **wyników** . Kliknij dwukrotnie błąd, aby zlokalizować znacznik związany z błędem. Jeśli potrzebujesz więcej miejsca do pracy, możesz ukryć panel **wyników** , naciskając klawisz **F12** .
+Korzystając z narzędzi dostępnych w Blend for Visual Studio, można debugować kod XAML w aplikacji. Podczas kompilowania projektu wszystkie błędy są wyświetlane w panelu **wyników** . Kliknij dwukrotnie błąd, aby zlokalizować znacznik związany z błędem. Jeśli potrzebujesz więcej miejsca do pracy, możesz ukryć panel **wyników** , naciskając klawisz **F12**.
 
 ## <a name="syntax-errors"></a>Błędy składniowe
 
@@ -48,19 +48,19 @@ Poniższy przykład przeprowadzi Cię przez prostą sesję debugowania XAML w pr
 
 #### <a name="to-create-a-project"></a>Aby utworzyć projekt
 
-1. W programie Blend Otwórz menu **plik** , a następnie kliknij pozycję **Nowy projekt** .
+1. W programie Blend Otwórz menu **plik** , a następnie kliknij pozycję **Nowy projekt**.
 
     W oknie dialogowym **Nowy projekt** lista typów projektów pojawia się po lewej stronie. Po kliknięciu typu projektu skojarzone z nim szablony projektu pojawiają się po prawej stronie.
 
-2. Na liście typów projektów kliknij opcję **uniwersalne systemu Windows** .
+2. Na liście typów projektów kliknij opcję **uniwersalne systemu Windows**.
 
-3. Na liście szablonów projektu kliknij pozycję **pusta aplikacja (platforma uniwersalna systemu Windows)** .
+3. Na liście szablonów projektu kliknij pozycję **pusta aplikacja (platforma uniwersalna systemu Windows)**.
 
 4. W polu tekstowym **Nazwa** wpisz `DebuggingSample` .
 
 5. W polu tekstowym **Lokalizacja** Sprawdź lokalizację projektu.
 
-6. Na liście **Język** kliknij **Visual C#** , a następnie kliknij przycisk **OK** , aby utworzyć projekt.
+6. Na liście **Język** kliknij **Visual C#**, a następnie kliknij przycisk **OK** , aby utworzyć projekt.
 
 7. Kliknij prawym przyciskiem myszy powierzchnię projektową, a następnie kliknij pozycję **Wyświetl źródło** , aby przełączyć się do widoku **podzielonego** .
 
@@ -118,7 +118,7 @@ Po wykryciu błędów XAML na powierzchni projektowej zostanie wyświetlony aler
 
 ## <a name="debug-in-visual-studio"></a>Debugowanie w programie Visual Studio
 
-Możesz otworzyć projekty programu Blend w programie Visual Studio, aby łatwiej debugować kod w aplikacji. Aby otworzyć projekt programu Blend w programie Visual Studio, kliknij prawym przyciskiem myszy projekt w panelu **projekty** , a następnie kliknij polecenie **Edytuj w programie Visual Studio** . Po zakończeniu sesji debugowania w programie Visual Studio naciśnij kombinację klawiszy Ctrl + Shift + S, aby zapisać wszystkie zmiany, a następnie wróć do programu Blend. Zostanie wyświetlony monit o ponowne załadowanie projektu. Kliknij przycisk **tak, aby** kontynuować pracę w programie Blend.
+Możesz otworzyć projekty programu Blend w programie Visual Studio, aby łatwiej debugować kod w aplikacji. Aby otworzyć projekt programu Blend w programie Visual Studio, kliknij prawym przyciskiem myszy projekt w panelu **projekty** , a następnie kliknij polecenie **Edytuj w programie Visual Studio**. Po zakończeniu sesji debugowania w programie Visual Studio naciśnij kombinację klawiszy Ctrl + Shift + S, aby zapisać wszystkie zmiany, a następnie wróć do programu Blend. Zostanie wyświetlony monit o ponowne załadowanie projektu. Kliknij przycisk **tak, aby** kontynuować pracę w programie Blend.
 
 Aby uzyskać więcej informacji na temat debugowania aplikacji, zobacz [debugowanie aplikacji platformy UWP w programie Visual Studio](../debugger/debugging-windows-store-and-windows-universal-apps.md).
 

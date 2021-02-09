@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 19be121c-148e-4ece-bbfc-d20b08cfc3f7
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 635fc18965361967269b7260b6abaab279ffb52d
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 636fbabbede90d9a1c686a2252aef712b4789c18
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136826"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878724"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Instrukcje: Tworzenie i edytowanie konfiguracji
 
@@ -39,10 +39,10 @@ Można utworzyć kilka konfiguracji kompilacji dla rozwiązania. Można na przyk
 
 Można użyć okna dialogowego **Configuration Manager** , aby wybrać lub zmodyfikować istniejące konfiguracje kompilacji lub utworzyć nowe.
 
-Aby otworzyć okno dialogowe **Configuration Manager** , w **Eksplorator rozwiązań**Otwórz menu skrótów dla rozwiązania, a następnie wybierz **Configuration Manager**.
+Aby otworzyć okno dialogowe **Configuration Manager** , w **Eksplorator rozwiązań** Otwórz menu skrótów dla rozwiązania, a następnie wybierz **Configuration Manager**.
 
 > [!NOTE]
-> Jeśli polecenie **Configuration Manager** nie pojawia się w menu skrótów, poszukaj w menu **kompilacja** na pasku menu. Jeśli nie pojawia się na pasku menu, wybierz **Tools**  >  **Opcje**narzędzia, a następnie w lewym okienku okna dialogowego **Opcje** rozwiń węzeł **projekty i rozwiązania**  >  **Ogólne**, a następnie w okienku po prawej stronie zaznacz pole wyboru **Pokaż zaawansowane konfiguracje kompilacji** .
+> Jeśli polecenie **Configuration Manager** nie pojawia się w menu skrótów, poszukaj w menu **kompilacja** na pasku menu. Jeśli nie pojawia się na pasku menu, wybierz   >  **Opcje** narzędzia, a następnie w lewym okienku okna dialogowego **Opcje** rozwiń węzeł **projekty i rozwiązania**  >  **Ogólne**, a następnie w okienku po prawej stronie zaznacz pole wyboru **Pokaż zaawansowane konfiguracje kompilacji** .
 
 W oknie dialogowym **Configuration Manager** można użyć listy rozwijanej **aktywna Konfiguracja rozwiązania** , aby wybrać konfigurację kompilacji obejmującą całe rozwiązanie, zmodyfikować istniejącą lub utworzyć nową konfigurację. Możesz użyć listy rozwijanej **Active Solution platform** , aby wybrać platformę, do której należy konfiguracja, zmodyfikować istniejącą lub dodać nową platformę. W okienku **konteksty projektu** wyświetlane są projekty w rozwiązaniu. Dla każdego projektu można wybrać konfigurację i platformę specyficzną dla projektu, zmodyfikować istniejące lub utworzyć nową konfigurację lub dodać nową platformę. Możesz również zaznaczyć pola wyboru wskazujące, czy każdy projekt jest uwzględniany w przypadku używania konfiguracji całego rozwiązania do kompilowania lub wdrażania rozwiązania.
 
@@ -50,7 +50,7 @@ Po skonfigurowaniu żądanych konfiguracji można ustawić właściwości projek
 
 ### <a name="set-properties-based-on-configurations"></a>Ustawianie właściwości na podstawie konfiguracji
 
-Aby ustawić właściwości na podstawie konfiguracji, w **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu, a następnie wybierz **Właściwości**. Można ustawić właściwości dla konfiguracji. Na przykład w przypadku konfiguracji wydania można określić, że kod jest zoptymalizowany, gdy rozwiązanie jest skompilowane, a w przypadku konfiguracji debugowania można określić, że `DEBUG` jest włączony symbol kompilacji warunkowej.
+Aby ustawić właściwości na podstawie konfiguracji, w **Eksplorator rozwiązań** Otwórz menu skrótów dla projektu, a następnie wybierz **Właściwości**. Można ustawić właściwości dla konfiguracji. Na przykład w przypadku konfiguracji wydania można określić, że kod jest zoptymalizowany, gdy rozwiązanie jest skompilowane, a w przypadku konfiguracji debugowania można określić, że `DEBUG` jest włączony symbol kompilacji warunkowej.
 
 Aby uzyskać więcej informacji na temat ustawień strony właściwości, zobacz [Zarządzanie właściwościami projektu i rozwiązania](../ide/managing-project-and-solution-properties.md).
 

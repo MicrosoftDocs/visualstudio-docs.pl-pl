@@ -6,15 +6,15 @@ ms.custom: seodec18
 ms.topic: conceptual
 author: madskristensen
 ms.author: madsk
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ca095bf424420fb73ba8f369f7e41daea92fe33d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b012f1e5fda4a8855bfc6215cf3d458037bc036
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88584505"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878659"
 ---
 # <a name="report-a-problem-states-and-faq"></a>Zgłoś problem: Stany i często zadawane pytania
 
@@ -98,7 +98,7 @@ Po zgłoszeniu problemu Stany wskazują, gdzie Twoje zgłoszenia są w cyklu ży
 
 - - -
 
-## <a name="faq"></a>Najczęściej zadawane pytania
+## <a name="faq"></a>Często zadawane pytania
 
 ### <a name="how-can-i-increase-the-chance-of-my-problem-getting-resolved-quickly"></a>Jak zwiększyć szansę szybkiego rozwiązywania problemu?
 

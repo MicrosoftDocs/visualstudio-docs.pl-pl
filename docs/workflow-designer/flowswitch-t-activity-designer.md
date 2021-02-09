@@ -12,15 +12,15 @@ f1_keywords:
 ms.assetid: 5b9c5afe-7499-4ee8-8c33-28aff14bde07
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4eff69f1da5d2bc8c5f397b0cc6d21492a0a8d20
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 6f61dd3f14ba527e9f5be0e009825902e683fb1d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435798"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876566"
 ---
 # <a name="flowswitcht-activity-designer"></a>FlowSwitch\<T>, projektant działań
 
@@ -32,7 +32,7 @@ ms.locfileid: "94435798"
 
 ### <a name="using-the-flowswitcht-activity-designer"></a>Korzystanie z \<T> projektanta działań FlowSwitch
 
-Projektanta **działań \<T> FlowSwitch** można znaleźć w kategorii **schemat blokowy** **przybornika** , do którego uzyskuje się dostęp, klikając kartę **Przybornik** po lewej stronie Projektant przepływu pracy. Alternatywnie możesz wybrać **Przybornik** z menu **Widok** lub nacisnąć **klawisze CTRL** + **Alt** + **X**.
+Projektanta **działań \<T> FlowSwitch** można znaleźć w kategorii **schemat blokowy** **przybornika**, do którego uzyskuje się dostęp, klikając kartę **Przybornik** po lewej stronie Projektant przepływu pracy. Alternatywnie możesz wybrać **Przybornik** z menu **Widok** lub nacisnąć **klawisze CTRL** + **Alt** + **X**.
 
 Projektanta **działań \<T> FlowSwitch** można przeciągnąć z **przybornika** i porzucić na Projektant przepływu pracy powierzchnię w ramach projektanta działań **Flowchart** . Użyj okna **Wybieranie typów** , które wyświetla, aby określić typ (skojarzony w kodzie za pomocą <xref:System.Activities.Statements.FlowSwitch%601> jego parametru ogólnego) uzyskany z oceny <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> . Ta procedura powoduje utworzenie <xref:System.Activities.Statements.FlowSwitch%601> działania z etykietą **przełącznika** w ramach <xref:System.Activities.Statements.Flowchart> działania. <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>Można wpisać w polu **wyrażenie** okna **Właściwości** , klikając miejsce, w którym tekst wskazówki brzmi "wprowadź wyrażenie VB".
 

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 7d32c4cf-8bec-4307-a2a8-42f0ceddf3eb
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 07f0c685b61ab72d3db9ada79b29dcb5b4e4a1f1
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: c3d5fe8755450fd5068688064bf36b08c741c862
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560827"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878646"
 ---
 # <a name="secure-applications"></a>Zabezpieczanie aplikacji
 
@@ -40,7 +40,7 @@ Bezpieczeństwo jest również ważnym zagadnieniem w procesie kompilacji. Kilka
 - [Dotfuscator](dotfuscator/index.md) jest bezpłatna i pomaga w ochronie zestawów .NET przed odtwarzaniem i nieautoryzowanym użyciem, takim jak debugowanie nieautoryzowane.
 - [Podpisywanie silnej nazwy](managing-assembly-and-manifest-signing.md) może służyć do unikatowego identyfikowania składników oprogramowania i zapobiegania fałszowaniu nazw.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Zabezpieczenia w .NET](/dotnet/standard/security/index)
 - [Zabezpieczenia platformy Azure](/azure/security/)

@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 916bb2e3-3017-4828-ae27-c0b5c99bbb48
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 41d5312434f87d75db80095ff01734cd37894a94
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: b49ba26cc1e88ab3241094e1fd92be0907e8dd60
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796488"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877346"
 ---
 # <a name="delete-task"></a>Delete — Zadanie
 
@@ -101,7 +101,7 @@ Zamiast bezpośrednio korzystać z symboli wieloznacznych w `Delete` zadaniu, Ut
 
 Ogólnie rzecz biorąc, podczas pisania skryptów kompilacji, należy rozważyć, czy usuwanie jest logicznie częścią `Clean` operacji. Jeśli konieczne jest ustawienie niektórych plików do oczyszczenia w ramach normalnej `Clean` operacji, można dodać je do `@(FileWrites)` listy, a następnie zostaną usunięte `Clean` . Jeśli potrzebujesz więcej przetwarzania niestandardowego, zdefiniuj element docelowy i określ go do uruchomienia przez ustawienie atrybutu `BeforeTargets="Clean"` lub `AfterTargets="Clean"` lub Zdefiniuj swoją niestandardową wersję `BeforeClean` `AfterClean` elementów docelowych lub. Zobacz [Dostosowywanie kompilacji](customize-your-build.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [RemoveDir — zadanie](removedir-task.md)
 - [Zadania](../msbuild/msbuild-tasks.md)

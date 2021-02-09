@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: a752ed5f-5cf9-4bf2-865a-2131ca600ed5
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ded48fcea0630bf07311cbb92ed2e258cdf4afb1
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 7158e9cf6e25463dd16cf15886b499cd9e6a3f1a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560866"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878516"
 ---
 # <a name="set-bookmarks-in-code"></a>Ustawianie zakładek w kodzie
 
@@ -42,6 +42,6 @@ Zakładki można organizować w foldery wirtualne, wybierając pozycję **Nowy f
 
 Zakładki (bez ich usuwania) można wyłączyć, wybierając przycisk **Wyłącz wszystkie zakładki** w oknie zakładek. Można je ponownie włączyć, wybierając przycisk (który jest teraz nazywany **wszystkimi zakładkami**).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Funkcje edytora kodu](../ide/writing-code-in-the-code-and-text-editor.md)

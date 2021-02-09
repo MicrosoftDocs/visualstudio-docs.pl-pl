@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: a38ad49b-7cf3-483d-91c4-eb3116eba50c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: eceb9f898b4329940408e4063dc73d81e2a604a4
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 3f906fd39ed9b0b0af5a9ade344ab05a33e469a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903458"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877684"
 ---
 # <a name="how-to-examine-system-code-after-an-exception"></a>Porady: badanie kodu systemu po wystąpieniu wyjątku
 Gdy wystąpi wyjątek, może być konieczne przeanalizowanie kodu wewnątrz wywołania systemowego w celu ustalenia przyczyny wyjątku. Poniższa procedura wyjaśnia, jak to zrobić, jeśli nie masz symboli ładowanych dla kodu systemowego lub jeśli Tylko mój kod jest włączona.

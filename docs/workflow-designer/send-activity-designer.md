@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: b514f2e4-767c-4b94-ac61-dd3a54d4b96d
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d78925411f911f9c0dfc0c2cfff891deca0e91e3
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: b18323f42b67ebb3fb1162432a8b2fd296f2908e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434054"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876358"
 ---
 # <a name="send-activity-designer"></a>Send, projektant działań
 

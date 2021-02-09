@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: d0b5b23c-7e94-4637-be6c-2620a5442d46
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: fb0b5339507866b8e6c134db2951c5ae94f108b9
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: f546d0433ff5fa3a55f49f559597f1c7a45b1596
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441068"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877944"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>Instrukcje: tworzenie wtyczki na poziomie żądania
 
@@ -112,7 +112,7 @@ namespace RequestPluginNamespace
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>
 - [Tworzenie niestandardowych kodów i wtyczek dla testów obciążeniowych](../test/create-custom-code-and-plug-ins-for-load-tests.md)

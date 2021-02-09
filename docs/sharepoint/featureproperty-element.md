@@ -11,15 +11,15 @@ helpviewer_keywords:
 - FeatureProperty element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8e6010ac45d0b760325c73c4bd754fbb0b422a77
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 070866b9dd14d974eb976b22bf7a79907e2c5d9e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672759"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876670"
 ---
 # <a name="featureproperty-element"></a>FeatureProperty — element
   Reprezentuje właściwość niestandardową, która jest dołączana do funkcji podczas jej wdrażania w programie SharePoint. Po wdrożeniu funkcji można uzyskać dostęp do właściwości w kodzie.
@@ -62,6 +62,6 @@ ms.locfileid: "94672759"
 |**Plik walidacji**|ProjectItemModelSchema. xsd|
 |**Może być puste**|Nie|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Odwołanie do schematu elementu projektu programu SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)
 - [Udostępnianie informacji o pakowaniu i wdrożeniu w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)

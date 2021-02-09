@@ -12,15 +12,15 @@ helpviewer_keywords:
 - ClickOnce deployment [Office development in Visual Studio], deploying solutions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d808348528a64cc184c7a6c50359c057b2325a75
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: da527da4504d4c2d9375aee0209b0e261fe5fd0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845651"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877937"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Wdrażanie rozwiązania pakietu Office przy użyciu technologii ClickOnce
   Jeśli używasz technologii ClickOnce, możesz wdrożyć rozwiązanie pakietu Office w mniejszej liczbie kroków. Podczas publikowania aktualizacji rozwiązanie automatycznie je wykryje i zainstaluje. Niedogodność polega na tym, że w technologii ClickOnce rozwiązanie trzeba zainstalować osobno dla każdego użytkownika komputera. W związku z tym należy rozważyć użycie Instalator Windows (*. msi*), jeśli na tym samym komputerze zostanie uruchomione rozwiązanie na jednym z nich.
@@ -157,7 +157,7 @@ ms.locfileid: "96845651"
 
 2. Wybierz nazwę komputera, folder **witryny sieci Web** lub witrynę sieci Web, którą konfigurujesz.
 
-3. Na pasku menu wybierz polecenie właściwości **akcji**  >  **Properties**.
+3. Na pasku menu wybierz polecenie właściwości **akcji**  >  .
 
 4. Na karcie **nagłówki HTTP** wybierz przycisk **typy MIME** .
 
@@ -426,7 +426,7 @@ ms.locfileid: "96845651"
 
      Pole **Value** zawiera identyfikator manifestu wdrożenia.
 
-4. Przed identyfikatorem wprowadź w pełni kwalifikowaną ścieżkę do dokumentu, a po nim pasek w *Path* | *identyfikatorze* ścieżki formatu (na przykład *File://servername/FolderName/filename|74744e4b-e4d6-41eb-84f7-ad20346fe2d9*.
+4. Przed identyfikatorem wprowadź w pełni kwalifikowaną ścieżkę do dokumentu, a po nim pasek w  | *identyfikatorze* ścieżki formatu (na przykład *File://servername/FolderName/filename|74744e4b-e4d6-41eb-84f7-ad20346fe2d9*.
 
      Aby uzyskać więcej informacji o sposobie formatowania tego identyfikatora, zobacz [niestandardowe właściwości dokumentu — Omówienie](../vsto/custom-document-properties-overview.md).
 
@@ -458,7 +458,7 @@ ms.locfileid: "96845651"
 > [!NOTE]
 > Dane lokalne są zapisywane tylko dla jednej poprzedniej wersji rozwiązania. Jeśli wycofasz dwie wersje, dane lokalne nie są zachowywane. Aby uzyskać więcej informacji na temat danych lokalnych, zobacz [dostęp do danych lokalnych i zdalnych w aplikacjach ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Wdróż rozwiązanie pakietu Office](../vsto/deploying-an-office-solution.md)
 - [Publikowanie rozwiązań pakietu Office](../vsto/deploying-an-office-solution-by-using-clickonce.md)

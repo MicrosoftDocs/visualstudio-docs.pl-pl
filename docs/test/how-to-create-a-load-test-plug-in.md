@@ -13,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 27806972-1b15-4388-833d-6d0632816f1f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 6fee903c9fd2001b6c6d229e5786dd7ffb9037b9
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: f8ba810665bce520b82777512b396a693e580a0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441098"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878009"
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>Instrukcje: tworzenie wtyczki testu obciążenia
 
@@ -159,7 +159,7 @@ Z testem obciążeniowym jest skojarzonych osiem zdarzeń, których wtyczka test
 
 - <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.LoadTestAborted>
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>
 - [Tworzenie niestandardowych kodów i wtyczek dla testów obciążeniowych](../test/create-custom-code-and-plug-ins-for-load-tests.md)

@@ -17,15 +17,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], opening without running code
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8339f21fbf7add4335941360b73d42700ef6e635
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 99f1a01a745544e7e11e724db9c6eafacf0ca201
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844923"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876592"
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>Instrukcje: otwieranie rozwiązań pakietu Office bez uruchamiania kodu
   Rozwiązanie Microsoft Office utworzone przy użyciu rozszerzeń kodu zarządzanego działa nawet wtedy, gdy ustawienie zabezpieczeń w aplikacji pakietu Office użytkownika końcowego jest ustawione na wartość wysoki. Wynika to z faktu, że zabezpieczenia kodu zestawu .NET są zarządzane przez strukturę Microsoft .NET, a nie przez Microsoft Office.
@@ -51,7 +51,7 @@ ms.locfileid: "96844923"
 
      Jeśli rozwiązanie jest używane przez wiele osób, ta metoda uniemożliwia działanie rozwiązania dla wszystkich z nich. Może to być przydatne w przypadku znalezienia problemu w kodzie lub serwerze, którego dotyczy odwołanie, i chcesz zatrzymać jego wykonywanie przez wszystkich użytkowników.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Zabezpieczanie rozwiązań pakietu Office](../vsto/securing-office-solutions.md)
 - [Wdróż rozwiązanie pakietu Office](../vsto/deploying-an-office-solution.md)
 - [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)

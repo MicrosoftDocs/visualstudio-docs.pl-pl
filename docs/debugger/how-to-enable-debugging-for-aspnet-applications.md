@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 3beed819-cece-4864-8184-bd410000973a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: 28f74c449e196d5eb0b3380d0ff1392db17e0b23
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 8ef65fbd9452aef52d807210f84928a4eef14100
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903600"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877749"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Debugowanie aplikacji platformy ASP.NET lub ASP.NET Core w programie Visual Studio
 
@@ -172,7 +172,7 @@ Istnieją różne sposoby publikowania aplikacji w usługach IIS. W tych krokach
 
    - W obszarze ASP.NET Core wybierz pozycję **system plików**, wybierz folder, który został skonfigurowany dla aplikacji, a następnie wybierz pozycję **Otwórz**.
 
-1. Wybierz pozycję **Dalej**.
+1. Wybierz opcję **Dalej**.
 
 1. W obszarze **Konfiguracja** wybierz pozycję **Debuguj** z listy rozwijanej.
 
@@ -180,7 +180,7 @@ Istnieją różne sposoby publikowania aplikacji w usługach IIS. W tych krokach
 
 1. W oknie dialogowym **Publikowanie** upewnij się, że jest wyświetlana **CustomProfile** (lub nazwa utworzonego właśnie profilu), a **LastUsedBuildConfiguration** jest ustawiona na **Debuguj**.
 
-1. Kliknij opcję **Opublikuj**.
+1. Kliknij pozycję **Opublikuj**.
 
     ![Zrzut ekranu okna dialogowego publikowanie z wybraną aplikacją CustomProfile, wyróżniony przycisk Publikuj i LastBuildConfiguration ustawiony na wartość Debuguj.](media/dbg-aspnet-local-iis-select-site.png)
 

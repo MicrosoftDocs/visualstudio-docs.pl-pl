@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 590742c3-a286-4160-aa75-7a441bb2207b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: af912503ddc1e87f14756a1041e9fa4d8aac505b
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 585ea1a558b91ac733670ad94a9a3e0be33f1348
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350949"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876319"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Instrukcje: Określanie adresu URL pomocy technicznej dla indywidualnych wymagań wstępnych w ramach wdrożenia ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Wdrożenie może przetestować różne wymagania wstępne, które muszą być dostępne na komputerze klienckim w celu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uruchomienia aplikacji. Te zależności obejmują wymaganą minimalną wersję .NET Framework, wersję systemu operacyjnego oraz wszystkie zestawy, które muszą być wstępnie zainstalowane w globalnej pamięci podręcznej zestawów (GAC). [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]nie można jednak zainstalować żadnego z tych wymagań wstępnych; Jeśli wymaganie wstępne nie zostanie znalezione, po prostu zatrzymuje instalację i wyświetla okno dialogowe z wyjaśnieniem dlaczego instalacja nie powiodła się.

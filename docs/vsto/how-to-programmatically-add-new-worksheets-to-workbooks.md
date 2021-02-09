@@ -15,15 +15,15 @@ helpviewer_keywords:
 - worksheets, adding to workbooks
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3397b2ad8f656a7ada82ce0be17dcf21064d0ee3
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: babf029550907cb7faef77b71bdfae25a1307f38
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96843987"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879465"
 ---
 # <a name="how-to-programmatically-add-new-worksheets-to-workbooks"></a>Instrukcje: Programowane dodawanie nowych arkuszy do skoroszytów
   Można programowo utworzyć arkusz, a następnie dodać arkusz do kolekcji arkuszy w skoroszycie.
@@ -48,7 +48,7 @@ ms.locfileid: "96843987"
 
      Nowy arkusz jest <xref:Microsoft.Office.Interop.Excel.Worksheet> obiektem macierzystym, a nie elementem hosta. Można również wygenerować <xref:Microsoft.Office.Tools.Excel.Worksheet> element hosta z <xref:Microsoft.Office.Interop.Excel.Worksheet> obiektu macierzystego. Aby uzyskać więcej informacji, zobacz [Rozszerzanie dokumentów programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Pracuj z arkuszami](../vsto/working-with-worksheets.md)
 - [Elementy hosta i formanty hosta — Omówienie](../vsto/host-items-and-host-controls-overview.md)
 - [Instrukcje: programowe usuwanie arkuszy ze skoroszytów](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)

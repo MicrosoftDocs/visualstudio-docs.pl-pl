@@ -11,15 +11,15 @@ helpviewer_keywords:
 - ExtensionData element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3131aca3664e37198b0a32bdc0ade0499c12a1e6
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: cd82aaec96eff3cf3d20fd9d0607ac5aae6b3472
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672538"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876839"
 ---
 # <a name="extensiondata-element"></a>ExtensionData — element
   Reprezentuje kolekcję niestandardowych elementów danych, które są skojarzone z elementem projektu programu SharePoint.
@@ -62,5 +62,5 @@ ms.locfileid: "94672538"
 |**Plik walidacji**|ProjectItemModelSchema. xsd|
 |**Może być puste**|Nie|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Odwołanie do schematu elementu projektu programu SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)

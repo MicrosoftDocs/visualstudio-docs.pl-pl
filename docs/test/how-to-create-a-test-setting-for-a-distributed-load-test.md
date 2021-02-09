@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: b63d4b71-3b74-4872-b2d1-f0bd1a9a8544
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: b52fad24cf0772099e619b08ad877bae891365c3
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 4ca0058d1f06e00941766ed1ecf6f81d73939a8c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95439969"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877996"
 ---
 # <a name="how-to-create-a-test-settings-file-for-a-distributed-load-test"></a>Instrukcje: Tworzenie pliku ustawień testu dla testu obciążenia rozłożonego
 
@@ -182,7 +182,7 @@ W folderze **elementy rozwiązania** w **Eksplorator rozwiązań** kliknij prawy
 
 Plik ustawień testu zostanie usunięty z rozwiązania.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Kontrolerzy testów i agenci testowi](configure-test-agents-and-controllers-for-load-tests.md)
 - [Zbieranie informacji diagnostycznych za pomocą ustawień testu](../test/collect-diagnostic-information-using-test-settings.md)

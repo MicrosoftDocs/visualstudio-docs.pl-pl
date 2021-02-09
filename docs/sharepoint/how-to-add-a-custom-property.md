@@ -16,15 +16,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], custom properties
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b12124d874c58ce17f1fa24d2bd9283af64f1c92
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: d335cc809a8415a2b41f3de63138c113c2a78706
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915482"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876605"
 ---
 # <a name="how-to-add-a-custom-property"></a>Instrukcje: Dodawanie właściwości niestandardowej
   Do modelu można dodać właściwości niestandardowe przy użyciu **edytora właściwości**. Możesz uzyskać dostęp do tych właściwości w kodzie, aby pobrać informacje takie jak parametry połączenia i inne dane w czasie wykonywania.
@@ -33,7 +33,7 @@ ms.locfileid: "96915482"
 
 1. W **Eksploratorze BDC** wybierz węzeł, który reprezentuje element modelu, do którego chcesz zastosować właściwość niestandardową.
 
-2. Na pasku menu wybierz **View**  >  **okno właściwości** widoku.
+2. Na pasku menu wybierz   >  **okno właściwości** widoku.
 
 3. W oknie **Właściwości** wybierz właściwość **właściwości niestandardowe** , a następnie wybierz przycisk wielokropka (![ASP.net Mobile Designer Elipsa](../sharepoint/media/mwellipsis.gif "Wielokropek projektanta ASP.NET Mobile")).
 

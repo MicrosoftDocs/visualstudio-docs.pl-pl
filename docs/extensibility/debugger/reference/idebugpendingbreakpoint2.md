@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d416b095-917e-475e-b796-ec0a03ffb8da
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e6f2c1df37e953a5d8c66bad9d0a3574a463fad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6798d940bb186e6d685f22282e641eb2e690e48
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725649"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877411"
 ---
 # <a name="idebugpendingbreakpoint2"></a>IDebugPendingBreakpoint2
 Ten interfejs reprezentuje punkt przerwania, który jest gotowy do powiązania z lokalizacją w kodzie.
@@ -49,7 +49,7 @@ IDebugPendingBreakpoint2 : IUnknown
 |[SetPassCount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md)|Ustawia lub zmienia liczbę przebiegów skojarzoną z tym oczekującym punktem przerwania.|
 |[EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)|Wylicza wszystkie punkty przerwania powiązane z tym oczekującym punktem przerwania.|
 |[EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)|Wylicza wszystkie punkty przerwania błędów, które spowodowały ten oczekujący punkt przerwania.|
-|[Usuń](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|Usuwa ten oczekujący punkt przerwania i wszystkie punkty przerwania powiązane z nim.|
+|[Usuwanie](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|Usuwa ten oczekujący punkt przerwania i wszystkie punkty przerwania powiązane z nim.|
 
 ## <a name="remarks"></a>Uwagi
  `IDebugPendingBreakpoint2` może być uważany za dostawcę wszystkich niezbędnych informacji potrzebnych do powiązania punktu przerwania z kodem, który można zastosować do jednego lub wielu programów.

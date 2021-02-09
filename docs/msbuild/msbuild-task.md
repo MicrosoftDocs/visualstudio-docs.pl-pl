@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 76577f6c-7669-44ad-a840-363e37a04d34
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a4d1f9fe79ae5092992ff66ddaf5e10729e8b19a
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: f8241188b484447f94c60aa0e0c9bf05e477dd39
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049059"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878282"
 ---
 # <a name="msbuild-task"></a>zadanie MSBuild
 
@@ -39,7 +39,7 @@ Kompiluje projekty MSBuild z innego projektu MSBuild.
 |-----------------------------------| - |
 | `BuildInParallel` | Opcjonalny `Boolean` parametr.<br /><br /> Jeśli `true` projekty określone w `Projects` parametrze są wbudowane równolegle, jeśli jest to możliwe. Wartość domyślna to `false`. |
 | `Projects` | Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Określa pliki projektu do skompilowania. |
-| `Properties` | Opcjonalny `String` parametr.<br /><br /> Rozdzielana średnikami lista par nazwa-wartość właściwości, które mają być stosowane jako właściwości globalne do projektu podrzędnego. Po określeniu tego parametru jest on funkcjonalnie równoważny z ustawieniem właściwości, które mają przełącznik **-Właściwość** podczas kompilowania przy użyciu [*MSBuild.exe*](../msbuild/msbuild-command-line-reference.md). Przykład:<br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> Po przejściu właściwości do projektu za pomocą `Properties` parametru MSBuild może utworzyć nowe wystąpienie projektu, nawet jeśli plik projektu został już załadowany. MSBuild tworzy wystąpienie pojedynczego projektu dla danej ścieżki projektu i unikatowy zestaw właściwości globalnych. Na przykład takie zachowanie umożliwia utworzenie wielu zadań programu MSBuild wywołujących obiekt *WebProject. proj* z opcją Configuration = Release i uzyskanie jednego wystąpienia elementu *WebProject. proj* (Jeśli w zadaniu nie określono żadnych unikatowych właściwości). Jeśli określisz właściwość, która nie była jeszcze widoczna w programie MSBuild, program MSBuild tworzy nowe wystąpienie projektu, które może być wbudowane równolegle z innymi wystąpieniami projektu. Na przykład konfiguracja wersji może być kompilowana w tym samym czasie co Konfiguracja debugowania.|
+| `Properties` | Opcjonalny `String` parametr.<br /><br /> Rozdzielana średnikami lista par nazwa-wartość właściwości, które mają być stosowane jako właściwości globalne do projektu podrzędnego. Po określeniu tego parametru jest on funkcjonalnie równoważny z ustawieniem właściwości, które mają przełącznik **-Właściwość** podczas kompilowania przy użyciu [*MSBuild.exe*](../msbuild/msbuild-command-line-reference.md). Na przykład:<br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> Po przejściu właściwości do projektu za pomocą `Properties` parametru MSBuild może utworzyć nowe wystąpienie projektu, nawet jeśli plik projektu został już załadowany. MSBuild tworzy wystąpienie pojedynczego projektu dla danej ścieżki projektu i unikatowy zestaw właściwości globalnych. Na przykład takie zachowanie umożliwia utworzenie wielu zadań programu MSBuild wywołujących obiekt *WebProject. proj* z opcją Configuration = Release i uzyskanie jednego wystąpienia elementu *WebProject. proj* (Jeśli w zadaniu nie określono żadnych unikatowych właściwości). Jeśli określisz właściwość, która nie była jeszcze widoczna w programie MSBuild, program MSBuild tworzy nowe wystąpienie projektu, które może być wbudowane równolegle z innymi wystąpieniami projektu. Na przykład konfiguracja wersji może być kompilowana w tym samym czasie co Konfiguracja debugowania.|
 | `RebaseOutputs` | Opcjonalny `Boolean` parametr.<br /><br /> Jeśli ścieżki `true` względne docelowych elementów wyjściowych z skompilowanych projektów są dostosowane do projektu wywołującego. Wartość domyślna to `false`. |
 | `RemoveProperties` | Opcjonalny `String` parametr.<br /><br /> Określa zestaw właściwości globalnych do usunięcia. |
 | `RunEachTargetSeparately` | Opcjonalny `Boolean` parametr.<br /><br /> Jeśli `true` , zadanie MSBuild wywołuje każdy element docelowy na liście przekazaną do programu MSBuild pojedynczo, a nie w tym samym czasie. Ustawienie tego parametru `true` gwarantuje, że kolejne elementy docelowe są wywoływane nawet wtedy, gdy wcześniej wywołane obiekty docelowe nie powiodły się. W przeciwnym razie błąd kompilacji spowoduje zatrzymanie wywołania wszystkich kolejnych elementów docelowych. Wartość domyślna to `false`. |

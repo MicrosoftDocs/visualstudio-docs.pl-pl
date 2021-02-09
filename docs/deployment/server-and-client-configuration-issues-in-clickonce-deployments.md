@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 929e5fcc-dd56-409c-bb57-00bd9549b20b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e5cebadb35ae5d4cddcd0d4bfb4763979937318
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 469749c28acdb90e835082dd05010102ab50e52b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350556"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877619"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemy konfiguracji serwera i klienta we wdrożeniach technologii ClickOnce
 Jeśli używasz programu Internet Information Services (IIS) w systemie Windows Server, a wdrożenie zawiera typ pliku, który nie jest rozpoznawany przez system Windows, na przykład plik programu Microsoft Word, usługi IIS będą odrzucać przesłanie tego pliku, a wdrożenie nie powiedzie się.
@@ -33,7 +33,7 @@ Jeśli używasz programu Internet Information Services (IIS) w systemie Windows 
 
  Mimo że to ograniczenie nie powinno spowodować problemów związanych z pobieraniem [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] plików podstawowych, takich jak manifesty i zestawy, to ograniczenie może uniemożliwić pobranie plików danych dołączonych jako część [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji. W programie [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] można rozwiązać ten problem, usuwając program obsługi, który uniemożliwia pobieranie takich plików z Menedżera konfiguracji usług IIS. Dodatkowe szczegóły można znaleźć w dokumentacji serwera IIS.
 
- Niektóre serwery sieci Web mogą blokować pliki z rozszerzeniami, takimi jak *dll* , *config* i *MDF*. Aplikacje oparte na systemie Windows zazwyczaj obejmują pliki z niektórymi z tych rozszerzeń. Jeśli użytkownik spróbuje uruchomić [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikację, która uzyskuje dostęp do zablokowanego pliku na serwerze sieci Web, zostanie zwrócony błąd. Zamiast odblokowywania wszystkich rozszerzeń plików, program [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Domyślnie publikuje każdy plik aplikacji z rozszerzeniem *. deploy* . W związku z tym administrator musi tylko skonfigurować serwer sieci Web, aby odblokować następujące trzy rozszerzenia plików:
+ Niektóre serwery sieci Web mogą blokować pliki z rozszerzeniami, takimi jak *dll*, *config* i *MDF*. Aplikacje oparte na systemie Windows zazwyczaj obejmują pliki z niektórymi z tych rozszerzeń. Jeśli użytkownik spróbuje uruchomić [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikację, która uzyskuje dostęp do zablokowanego pliku na serwerze sieci Web, zostanie zwrócony błąd. Zamiast odblokowywania wszystkich rozszerzeń plików, program [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Domyślnie publikuje każdy plik aplikacji z rozszerzeniem *. deploy* . W związku z tym administrator musi tylko skonfigurować serwer sieci Web, aby odblokować następujące trzy rozszerzenia plików:
 
 - *. aplikacja*
 
@@ -43,9 +43,9 @@ Jeśli używasz programu Internet Information Services (IIS) w systemie Windows 
 
   Można jednak wyłączyć tę opcję, czyszcząc opcję **Użyj rozszerzenia pliku ". deploy"** w [oknie dialogowym Opcje publikowania](/previous-versions/visualstudio/visual-studio-2010/7z83t16a(v=vs.100)), w takim przypadku należy skonfigurować serwer sieci Web tak, aby odblokował wszystkie rozszerzenia plików używane w aplikacji.
 
-  Należy skonfigurować *. manifest* , *. Application* i *. deploy* , na przykład jeśli używasz usług IIS, w których nie zainstalowano .NET Framework, lub jeśli używasz innego serwera sieci Web (na przykład Apache).
+  Należy skonfigurować *. manifest*, *. Application* i *. deploy*, na przykład jeśli używasz usług IIS, w których nie zainstalowano .NET Framework, lub jeśli używasz innego serwera sieci Web (na przykład Apache).
 
-## <a name="clickonce-and-secure-sockets-layer-ssl"></a>ClickOnce i SSL (SSL)
+## <a name="clickonce-and-secure-sockets-layer-ssl"></a>ClickOnce i Secure Sockets Layer (SSL)
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Aplikacja będzie korzystać z protokołu SSL, z tą różnicą, że program Internet Explorer zgłasza monit dotyczący certyfikatu protokołu SSL. Monit można wypróbować, jeśli wystąpił problem z certyfikatem, na przykład jeśli nazwy lokacji nie są zgodne lub certyfikat wygasł. Aby nawiązać [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] połączenie z protokołem SSL, upewnij się, że certyfikat jest aktualny i że dane certyfikatu są zgodne z danymi lokacji.
 
 ## <a name="clickonce-and-proxy-authentication"></a>Uwierzytelnianie ClickOnce i serwer proxy
@@ -62,7 +62,7 @@ Jeśli używasz programu Internet Information Services (IIS) w systemie Windows 
 > Mozilla Firefox jest obsługiwana, jeśli dostawca wdrożenia nie jest pusty lub zainstalowano rozszerzenie asystenta programu Microsoft .NET Framework. To rozszerzenie jest spakowane w .NET Framework 3,5 z dodatkiem SP1. W przypadku obsługi aplikacji XBAP wtyczka NPWPF jest uaktywniana w razie potrzeby.
 
 ## <a name="activate-clickonce-applications-through-browser-scripting"></a>Aktywuj aplikacje ClickOnce za pomocą skryptów przeglądarki
- Jeśli opracowano niestandardową stronę sieci Web, która uruchamia [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikację przy użyciu aktywnych skryptów, może się okazać, że aplikacja nie zostanie uruchomiona na niektórych komputerach. Program Internet Explorer zawiera ustawienie o nazwie **Automatyczne monitowanie dotyczące pobierania plików** , które ma wpływ na to zachowanie. To ustawienie jest dostępne na karcie **zabezpieczenia** w menu **Opcje** , która ma wpływ na to zachowanie. Jest on nazywany **automatycznym monitem o pliki do pobrania** i znajduje się na liście poniżej kategorii **pliki do pobrania** . Właściwość jest domyślnie **włączona** dla intranetowych stron sieci Web i domyślnie **wyłączona** dla internetowych stron sieci Web. Gdy to ustawienie jest **wyłączone** , każda próba aktywacji [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji programowo (na przykład przez przypisanie jej adresu URL do `document.location` Właściwości) zostanie zablokowana. W takim przypadku użytkownicy mogą uruchamiać aplikacje tylko za pomocą pobranego przez użytkownika pobrania, na przykład klikając hiperłącze ustawione na adres URL aplikacji.
+ Jeśli opracowano niestandardową stronę sieci Web, która uruchamia [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikację przy użyciu aktywnych skryptów, może się okazać, że aplikacja nie zostanie uruchomiona na niektórych komputerach. Program Internet Explorer zawiera ustawienie o nazwie **Automatyczne monitowanie dotyczące pobierania plików**, które ma wpływ na to zachowanie. To ustawienie jest dostępne na karcie **zabezpieczenia** w menu **Opcje** , która ma wpływ na to zachowanie. Jest on nazywany **automatycznym monitem o pliki do pobrania** i znajduje się na liście poniżej kategorii **pliki do pobrania** . Właściwość jest domyślnie **włączona** dla intranetowych stron sieci Web i domyślnie **wyłączona** dla internetowych stron sieci Web. Gdy to ustawienie jest **wyłączone**, każda próba aktywacji [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji programowo (na przykład przez przypisanie jej adresu URL do `document.location` Właściwości) zostanie zablokowana. W takim przypadku użytkownicy mogą uruchamiać aplikacje tylko za pomocą pobranego przez użytkownika pobrania, na przykład klikając hiperłącze ustawione na adres URL aplikacji.
 
 ## <a name="additional-server-configuration-issues"></a>Dodatkowe problemy z konfiguracją serwera
 
@@ -112,7 +112,7 @@ Jeśli używasz programu Internet Information Services (IIS) w systemie Windows 
  Domyślnie system Windows Server nie ma zainstalowanych rozszerzenia FrontPage Server Extensions. Jeśli chcesz użyć [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] programu do publikowania na serwerze sieci Web z systemem Windows Server, który używa protokołu HTTP z rozszerzenia FrontPage Server Extensions, musisz najpierw zainstalować rozszerzenia FrontPage Server Extensions. Instalację można przeprowadzić za pomocą narzędzia Zarządzanie serwerem administrowania w systemie Windows Server.
 
 ## <a name="windows-server-locked-down-content-types"></a>Windows Server: zablokowane typy zawartości
- Usługi IIS na [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] zablokowaniu wszystkich typów plików z wyjątkiem pewnych znanych typów zawartości (na przykład *. htm* , *. html* , *. txt* itd.). Aby włączyć wdrażanie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji przy użyciu tego serwera, należy zmienić ustawienia usług IIS, aby umożliwić pobieranie plików typu *. Application* , *manifest* i innych niestandardowych typów plików używanych przez aplikację.
+ Usługi IIS na [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] zablokowaniu wszystkich typów plików z wyjątkiem pewnych znanych typów zawartości (na przykład *. htm*, *. html*, *. txt* itd.). Aby włączyć wdrażanie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji przy użyciu tego serwera, należy zmienić ustawienia usług IIS, aby umożliwić pobieranie plików typu *. Application*, *manifest* i innych niestandardowych typów plików używanych przez aplikację.
 
  W przypadku wdrażania przy użyciu serwera IIS Uruchom *inetmgr.exe* i Dodaj nowe typy plików dla domyślnej strony sieci Web:
 
@@ -130,7 +130,7 @@ Jeśli używasz programu Internet Information Services (IIS) w systemie Windows 
 ## <a name="http-compression-issues"></a>Problemy z kompresją HTTP
  Za pomocą programu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] można wykonywać operacje pobierania, które używają kompresji HTTP, technologii serwera sieci Web, która używa algorytmu GZip do kompresowania strumienia danych przed wysłaniem strumienia do klienta. Klient — w tym przypadku [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] — dekompresuje strumień przed przeczytaniem plików.
 
- W przypadku korzystania z usług IIS można łatwo włączyć kompresję HTTP. Jednak włączenie kompresji HTTP jest możliwe tylko dla niektórych typów plików — czyli plików HTML i tekstowych. Aby włączyć kompresję zestawów ( *. dll* ), XML ( *XML* ), manifestów wdrożenia ( *aplikacji* ) i manifestów aplikacji ( *. manifest* ), należy dodać te typy plików do listy typów dla usług IIS do skompresowania. Do momentu dodania typów plików do wdrożenia zostaną skompresowane tylko pliki tekstowe i HTML.
+ W przypadku korzystania z usług IIS można łatwo włączyć kompresję HTTP. Jednak włączenie kompresji HTTP jest możliwe tylko dla niektórych typów plików — czyli plików HTML i tekstowych. Aby włączyć kompresję zestawów (*. dll*), XML (*XML*), manifestów wdrożenia (*aplikacji*) i manifestów aplikacji (*. manifest*), należy dodać te typy plików do listy typów dla usług IIS do skompresowania. Do momentu dodania typów plików do wdrożenia zostaną skompresowane tylko pliki tekstowe i HTML.
 
  Aby uzyskać szczegółowe instrukcje dotyczące usług IIS, zobacz [jak określić dodatkowe typy dokumentów dla kompresji http](https://support.microsoft.com/help/234497).
 

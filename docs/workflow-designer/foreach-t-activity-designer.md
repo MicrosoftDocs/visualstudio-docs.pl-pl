@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 67097b3a-fcf5-4a72-beb1-2c7784151a86
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fd81377ca24dfbeaf4a25f2af00fb69f4821d73
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: d4c594e613d1160794e8310695d61bcc97902caa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437986"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876462"
 ---
 # <a name="foreachlttgt-activity-designer"></a>&lt; &gt; Projektant działań foreach T
 

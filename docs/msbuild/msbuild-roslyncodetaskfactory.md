@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e72e6506-4a11-4edf-ae8d-cfb5a3b9d8a0
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 336c23a5e1357e8e425a74c0954d3c0e28f8a930
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: c033c4d0ee36b9cb01618dd3ac3183e8782c70d7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049127"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878425"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>Zadania wbudowane programu MSBuild przy użyciu fabryki RoslynCodeTaskFactory
 
@@ -119,7 +119,7 @@ Log.LogError("Hello, world!");
 </Project>
 ```
 
-Zadanie HelloWorld można zapisać w pliku o nazwie *HelloWorld. targets* , a następnie wywołać go z projektu w następujący sposób.
+Zadanie HelloWorld można zapisać w pliku o nazwie *HelloWorld. targets*, a następnie wywołać go z projektu w następujący sposób.
 
 ```xml
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -148,7 +148,7 @@ Parametry mogą mieć jeden lub więcej z następujących atrybutów:
 
 - `Output` jest opcjonalnym atrybutem, który jest `false` domyślnie. Jeśli `true` , wówczas parametr musi mieć wartość przed powrotem z metody Execute.
 
-Przykład:
+Na przykład
 
 ```xml
 <ParameterGroup>

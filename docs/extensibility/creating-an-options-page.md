@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9f4e210c-4b47-4daa-91fa-1c301c4587f9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41102dfbbf1e49dadb1360ab0182810a47651dca
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 1069109cbda6b0385c9409a12f9f9c674ddec14c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94973714"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877489"
 ---
 # <a name="create-an-options-page"></a>Utwórz stronę opcji
 
@@ -39,7 +39,7 @@ W tym instruktażu utworzono prostą stronę narzędzi/opcji, która używa siat
 
 1. Każde rozszerzenie programu Visual Studio rozpoczyna się od projektu wdrożenia VSIX, który będzie zawierać zasoby rozszerzenia. Utwórz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projekt VSIX o nazwie `MyToolsOptionsExtension` . Szablon projektu VSIX można znaleźć w oknie dialogowym **Nowy projekt** , wyszukując frazę "VSIX".
 
-2. Dodaj pakietu VSPackage, dodając szablon elementu pakietu programu Visual Studio o nazwie `MyToolsOptionsPackage` . W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >  **nowy element**. W **oknie dialogowym Dodaj nowy element** przejdź do pozycji rozszerzalność **elementów Visual C#**  >  **Extensibility** i wybierz pozycję **pakiet programu Visual Studio**. W polu **Nazwa** w dolnej części okna dialogowego Zmień nazwę pliku na `MyToolsOptionsPackage.cs` . Aby uzyskać więcej informacji na temat tworzenia pakietu VSPackage, zobacz [Tworzenie rozszerzenia przy użyciu pakietu VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md).
+2. Dodaj pakietu VSPackage, dodając szablon elementu pakietu programu Visual Studio o nazwie `MyToolsOptionsPackage` . W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >  **nowy element**. W **oknie dialogowym Dodaj nowy element** przejdź do pozycji rozszerzalność **elementów Visual C#**  >   i wybierz pozycję **pakiet programu Visual Studio**. W polu **Nazwa** w dolnej części okna dialogowego Zmień nazwę pliku na `MyToolsOptionsPackage.cs` . Aby uzyskać więcej informacji na temat tworzenia pakietu VSPackage, zobacz [Tworzenie rozszerzenia przy użyciu pakietu VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md).
 
 ### <a name="to-create-the-tools-options-property-grid"></a>Aby utworzyć siatkę właściwości opcji narzędzi
 
@@ -249,7 +249,7 @@ W tym instruktażu utworzono prostą stronę narzędzi/opcji, która używa siat
 
      Ten kod wywołuje, <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> Aby utworzyć lub pobrać `OptionPageGrid` wystąpienie. `OptionPageGrid` wywołania <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> do załadowania swoich opcji, które są właściwościami publicznymi.
 
-2. Teraz Dodaj niestandardowy szablon elementu polecenia o nazwie **MyToolsOptionsCommand** , aby wyświetlić tę wartość. W oknie dialogowym **Dodaj nowy element** przejdź do rozszerzalności **Visual C#**  >  **Extensibility** i wybierz **polecenie niestandardowe**. W polu **Nazwa** w dolnej części okna Zmień nazwę pliku polecenia na *MyToolsOptionsCommand.cs*.
+2. Teraz Dodaj niestandardowy szablon elementu polecenia o nazwie **MyToolsOptionsCommand** , aby wyświetlić tę wartość. W oknie dialogowym **Dodaj nowy element** przejdź do rozszerzalności **Visual C#**  >   i wybierz **polecenie niestandardowe**. W polu **Nazwa** w dolnej części okna Zmień nazwę pliku polecenia na *MyToolsOptionsCommand.cs*.
 
 3. W pliku *MyToolsOptionsCommand* Zastąp treść `ShowMessageBox` metody polecenia następującym:
 
@@ -268,6 +268,6 @@ W tym instruktażu utworzono prostą stronę narzędzi/opcji, która używa siat
 
      Zostanie wyświetlone okno komunikatu z bieżącą wartością `OptionInteger` .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Opcje i strony opcji](../extensibility/internals/options-and-options-pages.md)

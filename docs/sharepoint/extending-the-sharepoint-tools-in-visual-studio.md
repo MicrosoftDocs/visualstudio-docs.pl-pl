@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending tools
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a921f45ea151ce7ee3313dba47e81a5acc86063d
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: c074e62b47b926351948e94d78621a8a41c9c3e5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672629"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876852"
 ---
 # <a name="extend-the-sharepoint-tools-in-visual-studio"></a>Poszerzanie narzędzi programu SharePoint w programie Visual Studio
   Narzędzia programu SharePoint w programie Visual Studio spełniają wymagania wielu scenariuszy tworzenia aplikacji. Można jednak odkryć przypadki, w których nie udostępniają one funkcji, które są wymagane przez użytkownika lub innych deweloperów. W takich przypadkach można rozwinąć narzędzia programu SharePoint w celu utworzenia potrzebnych funkcji.
@@ -50,7 +50,7 @@ ms.locfileid: "94672629"
 
  Aby zainstalować zestaw Visual Studio SDK, zobacz [Instalowanie zestawu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md). Aby uzyskać więcej informacji na temat rozszerzeń programu Visual Studio, zobacz [Rozpoczynanie tworzenia rozszerzeń programu Visual Studio](../extensibility/starting-to-develop-visual-studio-extensions.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Omówienie modelu programowania rozszerzeń narzędzi SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
 - [Poszerzanie systemu projektu SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)

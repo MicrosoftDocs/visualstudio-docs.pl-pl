@@ -22,13 +22,13 @@ helpviewer_keywords:
 ms.assetid: 0a84bda3-6051-45eb-9c7f-d57419e1f97d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 7787b3b0afaed0bc3592b458646b97151e309905
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 5b501cef5360be08f1b283e9064617b649a33da9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442511"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878022"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Analizowanie wyników testów obciążenia i błędów w widoku tabele analizatora testu obciążenia
 
@@ -167,7 +167,7 @@ Tabela **Błędy testu obciążenia** zawiera następujące kolumny:
 |Kolumna|Opis|
 |-|-|
 |**Godzina**|Czas podczas testu obciążenia, w którym wystąpił błąd.|
-|**Agent**|Nazwa komputera agenta, na którym wystąpił błąd. Jest to ważne w przypadku uruchamiania testów obciążenia za pomocą kontrolerów testów i agentów testowych. Aby uzyskać więcej informacji, zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).|
+|**Odczynnik**|Nazwa komputera agenta, na którym wystąpił błąd. Jest to ważne w przypadku uruchamiania testów obciążenia za pomocą kontrolerów testów i agentów testowych. Aby uzyskać więcej informacji, zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).|
 |**Test**|Nazwa testu wydajności sieci Web, w którym wystąpił błąd.|
 |**Scenariusz**|Nazwa scenariusza, w którym wystąpił błąd.|
 |**Żądanie**|Adres URL żądania, w którym wystąpił błąd.|
@@ -208,7 +208,7 @@ Jeśli śledzenie SQL jest włączone, plik jest tworzony podczas przebiegu test
 
     - **TextData**
 
-    - **Rozpoczęcia**
+    - **StartTime**
 
     - **EndTime**
 
@@ -241,7 +241,7 @@ W widoku tabeli można wyświetlić do czterech tabel jednocześnie bez nakłada
     > [!NOTE]
     > Nie można wyświetlić tej samej tabeli w więcej niż jednym panelu. Jeśli zmienisz tabelę wyświetlaną w jednym panelu do tabeli już wyświetlanej w innym panelu, panele przełączania tabel.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Analizowanie wyników testów obciążenia](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Instrukcje: uzyskiwanie dostępu do wyników testu obciążenia na potrzeby analizy](../test/how-to-access-load-test-results-for-analysis.md)

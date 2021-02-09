@@ -14,15 +14,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], filter descriptors
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ff312753be07867d8978dc4d5f60d5dfc0eee557
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 4fe2da1bc6aefefb92fbd6f7d11613372b8b7742
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915430"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879699"
 ---
 # <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>Instrukcje: Dodawanie deskryptora filtru do metody wyszukiwania
   Deskryptory filtru umożliwiają odbiorcom modelu przekazywanie wartości do metod przed ich wykonaniem. Aby uzyskać więcej informacji, zobacz [Projektowanie modelu łączności danych firmowych](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -35,7 +35,7 @@ ms.locfileid: "96915430"
 
 2. W oknie **Szczegóły metody** wybierz deskryptor typu parametru.
 
-3. Na pasku menu wybierz **View**  >  **okno właściwości** widoku.
+3. Na pasku menu wybierz   >  **okno właściwości** widoku.
 
 4. W oknie **Właściwości** ustaw właściwość **Nazwa typu** na typ danych, który jest odpowiedni dla filtra.
 
@@ -47,7 +47,7 @@ ms.locfileid: "96915430"
 
      Nowy Deskryptor filtru pojawia się pod węzłem **deskryptorów filtru** .
 
-7. Na pasku menu wybierz **View**  >  **okno właściwości** widoku.
+7. Na pasku menu wybierz   >  **okno właściwości** widoku.
 
 8. W oknie **Właściwości** wybierz właściwość **Typ** .
 

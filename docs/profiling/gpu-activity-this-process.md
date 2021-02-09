@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: 0956edbf-9bcd-4afe-9287-fda628648ca0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fcfc96f9b29b8fae3bf9a97273ed6c675d1655fb
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: bdb39504cae42e943de1864d8edc308b96e0e742
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801167"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878139"
 ---
 # <a name="gpu-activity-this-process"></a>Aktywności procesora GPU (ten proces)
 Segmenty **działania procesora GPU (ten proces)** w widoku wątki w wizualizatorze współbieżności reprezentują czasy przetwarzania żądań procesora GPU w imieniu bieżącego procesu. Te żądania są wysyłane do procesora GPU jako pakiety bezpośredniego dostępu do pamięci (DMA). Długość segmentu reprezentuje czas przetwarzania pakietu przez procesor GPU w imieniu bieżącego procesu.

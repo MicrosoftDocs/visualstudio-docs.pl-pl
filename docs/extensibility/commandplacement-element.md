@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 2cbd7ac8-c55a-43d8-a26d-713b3d790016
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2828a32ea837e95be438aafa6ec4b31293a43a7
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 77c7ae72f9c4c776dd8535e54112dc43833705cf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974061"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876111"
 ---
 # <a name="commandplacement-element"></a>CommandPlacement, element
 Element CommandPlacement umożliwia uwzględnienie przycisków, grup i menu w więcej niż jednej grupie lub menu. Za pomocą elementu CommandPlacement nie trzeba całkowicie ponownie definiować tych elementów, aby modyfikować wygląd interfejsu użytkownika.

@@ -19,15 +19,15 @@ helpviewer_keywords:
 - projects [Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a2a64b613ca19632a7827686ab0552e6e23620c1
-ms.sourcegitcommit: 3922edfe67063e1ede418cdbf6aa6293117c4855
+ms.openlocfilehash: 473c3ca0e4a9998d6a320e384bf39b4b5e037085
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98773334"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878503"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Rozwiązania i projekty w programie Visual Studio
 
@@ -110,7 +110,7 @@ W przypadku projektów ASP.NET Core można dostosować sposób zagnieżdżania p
 > [!NOTE]
 > Aby wyświetlić obrazy i ikony aplikacji, które pojawiają się w programie Visual Studio, Pobierz [**bibliotekę obrazów programu Visual Studio**](https://www.microsoft.com/download/details.aspx?id=35825).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Wprowadzenie do projektów i rozwiązań](../get-started/tutorial-projects-solutions.md)
 - [Zarządzanie właściwościami projektów i rozwiązań](managing-project-and-solution-properties.md)

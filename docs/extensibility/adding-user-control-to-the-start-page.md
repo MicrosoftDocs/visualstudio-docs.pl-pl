@@ -11,16 +11,16 @@ helpviewer_keywords:
 ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: fa812b477f88b03b8f0d4bdcba6c69f009ec2894
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 735e77868b85bdd8f85fb27957602d6759b5b097
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597551"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879179"
 ---
 # <a name="add-user-control-to-the-start-page"></a>Dodawanie kontrolki użytkownika do strony początkowej
 
@@ -185,13 +185,13 @@ Aby udostępnić tę kontrolkę projektowi strony początkowej, w pliku projektu
 
 3. W wierszu polecenia programu Visual Studio wpisz **devenv/rootsuffix Exp** , aby otworzyć eksperymentalne wystąpienie programu Visual Studio.
 
-4. W eksperymentalnym wystąpieniu przejdź do **Tools**  >  **Options**  >  **Environment**  >  strony **startowej** Opcje narzędzia, a następnie wybierz plik XAML na liście rozwijanej **Dostosuj stronę początkową** .
+4. W eksperymentalnym wystąpieniu przejdź do   >    >    >  strony **startowej** Opcje narzędzia, a następnie wybierz plik XAML na liście rozwijanej **Dostosuj stronę początkową** .
 
 5. W menu **Widok** kliknij pozycję **Strona początkowa**.
 
     Powinna zostać wyświetlona niestandardowa strona startowa. Jeśli chcesz zmienić dowolne pliki, musisz zamknąć wystąpienie eksperymentalne, wprowadzić zmiany, skopiować i wkleić zmienione pliki, a następnie ponownie otworzyć doświadczalne wystąpienie, aby wyświetlić zmiany.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Formanty kontenera WPF](/previous-versions/bb675291(v=vs.110))
 - [Przewodnik: Dodawanie niestandardowego kodu XAML do strony początkowej](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

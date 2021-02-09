@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: c9b7525a-b1c9-40fc-8bce-77a5b8f960d8
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 99475ac316112f29a73a85b8ff92249a13867852
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 785d1bcfb8fdce5b09e749dcca17ff476a5d3f48
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436734"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877164"
 ---
 # <a name="exec-task"></a>Exec — Zadanie
 
@@ -37,7 +37,7 @@ W poniższej tabeli opisano parametry `Exec` zadania.
 
 |Parametr|Opis|
 |---------------|-----------------|
-|`Command`|Wymagany parametr interfejsu `String`.<br /><br /> Polecenia do uruchomienia. Mogą to być polecenia systemowe, takie jak attrib lub wykonywalny, takie jak *program.exe*, *runprogram.bat*lub *setup.msi*.<br /><br /> Ten parametr może zawierać wiele wierszy poleceń. Alternatywnie można umieścić wiele poleceń w pliku wsadowym i uruchomić je za pomocą tego parametru.|
+|`Command`|Wymagany parametr interfejsu `String`.<br /><br /> Polecenia do uruchomienia. Mogą to być polecenia systemowe, takie jak attrib lub wykonywalny, takie jak *program.exe*, *runprogram.bat* lub *setup.msi*.<br /><br /> Ten parametr może zawierać wiele wierszy poleceń. Alternatywnie można umieścić wiele poleceń w pliku wsadowym i uruchomić je za pomocą tego parametru.|
 |`ConsoleOutput`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Każdy element wyjściowy jest wierszem ze standardowego wyjścia lub standardowego strumienia błędów emitowanego przez narzędzie. Jest to przechwytywane tylko wtedy `ConsoleToMsBuild` , gdy jest ustawiona na `true` .|
 |`ConsoleToMsBuild`|Opcjonalny `Boolean` parametr.<br /><br /> Jeśli `true` , zadanie przechwytuje standardowy błąd i standardowe wyjście narzędzia i udostępni je w `ConsoleOutput` parametrze Output.<br /><br />Wartość domyślna: `false`.|
 |`CustomErrorRegularExpression`|Opcjonalny `String` parametr.<br /><br /> Określa wyrażenie regularne, które jest używane do określania wierszy błędów w danych wyjściowych narzędzia. Jest to przydatne w przypadku narzędzi generujących nietypowo sformatowane dane wyjściowe.<br /><br />Wartość domyślna: `null` (bez przetwarzania niestandardowego).|

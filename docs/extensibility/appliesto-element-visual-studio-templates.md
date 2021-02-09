@@ -8,15 +8,15 @@ ms.topic: reference
 ms.assetid: 8fb1334b-d78c-405f-98b4-786e9f6b58d7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5fca9f6550a066d3f3e0e46514a15d9ff14cb66c
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 48f1d7e0011b3f195224d8e55072ccd4c7666802
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671704"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876124"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo — element (szablony Visual Studio)
 
@@ -106,7 +106,7 @@ W przykładzie poniżej widać trzy różne szablony. `Template1` stosuje się d
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)

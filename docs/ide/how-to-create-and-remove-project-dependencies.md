@@ -17,15 +17,15 @@ ms.assetid: e2a0a8ff-dae7-40a8-b774-b88aa5235183
 ms.technology: vs-ide-compile
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b2a99e297b4ce7291c0dd94947155794cf8c3d4
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: d5fb5205dbaa3711fa8baa699d488d097cac1f78
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92137028"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878711"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Instrukcje: Tworzenie i usuwanie zależności projektu
 
@@ -33,7 +33,7 @@ Podczas kompilowania rozwiązania, które zawiera wiele projektów, może być k
 
 ## <a name="to-assign-dependencies-to-projects"></a>Aby przypisać zależności do projektów
 
-1. W **Eksplorator rozwiązań**wybierz projekt.
+1. W **Eksplorator rozwiązań** wybierz projekt.
 
 2. W menu **projekt** wybierz pozycję **zależności projektu**.
 
@@ -50,7 +50,7 @@ Podczas kompilowania rozwiązania, które zawiera wiele projektów, może być k
 
 ## <a name="to-remove-dependencies-from-projects"></a>Aby usunąć zależności z projektów
 
-1. W **Eksplorator rozwiązań**wybierz projekt.
+1. W **Eksplorator rozwiązań** wybierz projekt.
 
 2. W menu **projekt** wybierz pozycję **zależności projektu**.
 
