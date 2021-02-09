@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: fb057052-ee16-4272-8e16-a4da5dda0ad4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5bce26a00a525ed93e27b531b36aca1fc04dce4
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: d5639c45fd6dff6702ebc197d46c2eafe482e1d0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96559930"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926367"
 ---
 # <a name="implement-and-register-a-port-supplier"></a>Implementowanie i rejestrowanie dostawcy portu
 Rolą dostawcy portów jest śledzenie i dostarczanie portów, które z kolei zarządzają procesami. Gdy należy utworzyć port, dostawca portu jest tworzony przy użyciu CoCreate z identyfikatorem GUID dostawcy portu (Menedżer debugowania sesji [SDM] będzie używał dostawcy portu wybranego przez użytkownika lub dostawcę portu określonego przez system projektu). Model SDM następnie wywołuje [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) , aby sprawdzić, czy można dodać dowolne porty. Jeśli można dodać port, żądanie nowego portu jest wymagane przez wywołanie funkcji [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) i przekazanie jej [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) , która opisuje port. `AddPort` zwraca nowy port reprezentowany przez interfejs [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) .
@@ -61,7 +61,7 @@ RemoveMetric(metrictypePortSupplier,
 
  Dostawca portu może podać jego nazwę i identyfikator GUID odpowiednio do metod [GetPortSupplierName](../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md) i [GetPortSupplierId](../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Implementowanie dostawcy portu](../../extensibility/debugger/implementing-a-port-supplier.md)
 - [Pomocnicy zestawu SDK na potrzeby debugowania](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
 - [Dostawcy portów](../../extensibility/debugger/port-suppliers.md)

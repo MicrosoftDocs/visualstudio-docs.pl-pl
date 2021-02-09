@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Developer tab [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4dc38b941d27cab0653b923ddd03ba8b78eeab58
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 081d6740aa31a31173b12e467b1b8e32a074604a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528148"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927720"
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Instrukcje: pokazywanie karty dewelopera na Wstążce
   Aby uzyskać dostęp do karty **deweloper** na Wstążce aplikacji pakietu Office, należy ją skonfigurować tak, aby wyświetlała tę kartę, ponieważ nie jest wyświetlana domyślnie. Na przykład należy wyświetlić tę kartę, jeśli chcesz dodać <xref:Microsoft.Office.Tools.Word.GroupContentControl> do dostosowania na poziomie dokumentu dla programu Word.

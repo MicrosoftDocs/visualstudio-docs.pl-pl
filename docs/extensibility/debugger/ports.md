@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1d7f3aa7-7eff-4cab-bc53-0a566b1a9363
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f13ca62f841525ef91ac7d66b67c09da54cabeb3
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: 368d55db8e52d2797041e420d109960c88d96cb6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606565"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927187"
 ---
 # <a name="ports"></a>Porty
 W architekturze debugera *port*:
@@ -33,7 +33,7 @@ W architekturze debugera *port*:
 
   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dostarcza domyślny port obsługujący wszystkie procesy oparte na systemie Windows, zarówno natywne, jak i zarządzane. Port niestandardowy musi być skonfigurowany do połączeń z urządzeniami zewnętrznymi, które nie są oparte na systemie Windows. Aby określić takie porty niestandardowe, należy również skonfigurować niestandardowego dostawcę portu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Serwery](../../extensibility/debugger/servers-visual-studio-sdk.md)
 - [Procesy](../../extensibility/debugger/processes.md)
 - [Pojęcia dotyczące debugera](../../extensibility/debugger/debugger-concepts.md)

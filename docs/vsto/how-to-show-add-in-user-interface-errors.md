@@ -14,15 +14,15 @@ helpviewer_keywords:
 - application-level add-ins [Office development in Visual Studio], user interface errors
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e74d60fe6386575417114fe1ad4823704cf09d46
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 29e07e49d901b44b534d9d274e5535be663e97ef
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528133"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927681"
 ---
 # <a name="how-to-show-add-in-user-interface-errors"></a>Instrukcje: pokazywanie błędów interfejsu użytkownika dodatku
   Domyślnie, jeśli dodatek narzędzi VSTO próbuje manipulować interfejsem użytkownika Microsoft Office i nie powiedzie się, zostanie wyświetlony komunikat o błędzie. Można jednak skonfigurować aplikacje Microsoft Office do wyświetlania komunikatów o błędach, które odnoszą się do interfejsu użytkownika. Za pomocą tych komunikatów można określić, dlaczego nie pojawia się wstążka niestandardowa lub dlaczego wyświetlana jest wstążka, ale nie są wyświetlane żadne kontrolki.

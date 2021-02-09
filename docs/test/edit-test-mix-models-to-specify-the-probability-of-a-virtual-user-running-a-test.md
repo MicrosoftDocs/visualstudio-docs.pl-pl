@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: e3b7d952-9012-400a-8131-3444390a6066
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 0d95eee8dd4e49e74b9bafd048e3f672fe560c68
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 2ef6844c76638b46e43556eb9294cce04a7d1fcf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441368"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926784"
 ---
 # <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Edytuj modele testów mieszanych, aby określić prawdopodobieństwo uruchomienia testu przez użytkownika wirtualnego
 
@@ -81,7 +81,7 @@ Za pomocą **Edytor testu obciążeniowego** można zmienić model testu mieszan
 
 9. Po zmianie właściwości wybierz pozycję **Zapisz** w menu **plik** . Następnie można uruchomić test obciążenia za pomocą nowej wartości **typ testu mieszanego** .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Edytowanie scenariuszy testu obciążenia](../test/edit-load-test-scenarios.md)
 - [Właściwości scenariusza testu obciążenia](../test/load-test-scenario-properties.md)

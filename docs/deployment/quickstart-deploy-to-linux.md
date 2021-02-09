@@ -8,15 +8,15 @@ helpviewer_keywords:
 - deployment, website
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - azure
-ms.openlocfilehash: 27002d9360d36330249167b2cc8b75b7cd832135
-ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
+ms.openlocfilehash: 0371a4186d51598a79818f79719b58e122a311f2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97815636"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927460"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>Publikowanie aplikacji ASP.NET Core App Service w systemie Linux przy użyciu programu Visual Studio
 
@@ -58,7 +58,7 @@ W tym artykule opisano sposób korzystania z narzędzia do **publikowania** na p
 
     ![Zrzut ekranu okna dialogowego publikowanie z nowo utworzoną usługą MyASpCoreWebAppOnAzure wybraną jako App Service do opublikowania.](../deployment/media/quickstart-publish-linux-select-instance.png)
 
-1. Kliknij opcję **Opublikuj**. Program Visual Studio wdraża aplikację w Azure App Service, a aplikacja sieci Web ładuje się w przeglądarce. W okienku **Publikowanie** właściwości projektu wyświetlany jest adres URL witryny i inne szczegóły.
+1. Kliknij pozycję **Opublikuj**. Program Visual Studio wdraża aplikację w Azure App Service, a aplikacja sieci Web ładuje się w przeglądarce. W okienku **Publikowanie** właściwości projektu wyświetlany jest adres URL witryny i inne szczegóły.
 
     ![Okienko właściwości publikowania przedstawiające Podsumowanie profilu](../deployment/media/quickstart-publish-linux-summary-page.png)
 

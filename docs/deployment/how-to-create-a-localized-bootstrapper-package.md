@@ -11,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: 66a1bc7e-6540-4164-963d-557196a69d8a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4858a9efdad747293a94563196108d895c40880b
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 9eb06c54caceb2e9329347fb1dd0114749975e7d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351248"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927590"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Instrukcje: tworzenie zlokalizowanego pakietu programu inicjującego
-Po utworzeniu pakietu programu inicjującego można utworzyć zlokalizowane wersje pakietu programu inicjującego, tworząc dwa więcej plików dla każdej z ustawień regionalnych: plik warunków licencji oprogramowania (na przykład *EULA. rtf* ) i manifest pakietu ( *package.xml* ).
+Po utworzeniu pakietu programu inicjującego można utworzyć zlokalizowane wersje pakietu programu inicjującego, tworząc dwa więcej plików dla każdej z ustawień regionalnych: plik warunków licencji oprogramowania (na przykład *EULA. rtf*) i manifest pakietu (*package.xml*).
 
  Domyślnie program Visual Studio 2010 zawiera zlokalizowane pakiety programu inicjującego tylko dla .NET Framework 4, .NET Framework 4, profilu klienta w języku F 2,0 # oraz środowiska uruchomieniowego F # 4,0. Można utworzyć zlokalizowane pakiety dla innych programów inicjujących, wykonując trzy kroki.
 
@@ -30,7 +30,7 @@ Po utworzeniu pakietu programu inicjującego można utworzyć zlokalizowane wers
 
 2. Utwórz plik zawierający postanowienia licencyjne dotyczące oprogramowania dla programu inicjującego i umieść go w nowym folderze.
 
-3. Utwórz manifest pakietu o nazwie *package.xml* , zaktualizuj ciągi i kulturę i umieść plik w nowym folderze. Jeśli utworzono już program inicjujący programu Visual Studio w języku docelowym, możesz skopiować plik programu Visual Studio *package.xml* i zmodyfikować go w tym kroku.
+3. Utwórz manifest pakietu o nazwie *package.xml*, zaktualizuj ciągi i kulturę i umieść plik w nowym folderze. Jeśli utworzono już program inicjujący programu Visual Studio w języku docelowym, możesz skopiować plik programu Visual Studio *package.xml* i zmodyfikować go w tym kroku.
 
 > [!NOTE]
 > Jeśli używasz projektu konfiguracji do wdrażania aplikacji, możesz zlokalizować aplikację, zmieniając właściwość **lokalizacji** .

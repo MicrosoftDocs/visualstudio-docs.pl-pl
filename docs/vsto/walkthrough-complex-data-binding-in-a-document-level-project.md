@@ -15,15 +15,15 @@ helpviewer_keywords:
 - data binding [Office development in Visual Studio], multiple columns
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 988394595e8aa4710a22e1fedf22a921481c7396
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 2dc5708da09074c7d973336958c9e89c16bf9da6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527112"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927668"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Przewodnik: złożone powiązanie danych w projekcie na poziomie dokumentu
   W tym instruktażu przedstawiono podstawowe powiązanie złożonych danych w projekcie na poziomie dokumentu. W Microsoft Office arkuszu programu Excel można powiązać wiele komórek z polami w bazie danych Northwind SQL Server.
@@ -177,7 +177,7 @@ ms.locfileid: "97527112"
 
 1. Zaznacz komórkę wewnątrz obiektu listy.
 
-    Nowy wiersz pojawia się u dołu listy, a gwiazdka (* *\** _) w pierwszej komórce nowego wiersza.
+    Nowy wiersz pojawia się u dołu listy, a gwiazdka ( **\*** ) w pierwszej komórce nowego wiersza.
 
 2. Dodaj następujące informacje w pustym wierszu.
 
@@ -187,7 +187,7 @@ ms.locfileid: "97527112"
 
 ### <a name="to-delete-rows"></a>Aby usunąć wiersze
 
-- Kliknij prawym przyciskiem myszy liczbę 16 (wiersz 16) z lewej strony arkusza, a następnie kliknij _ * Delete * *.
+- Kliknij prawym przyciskiem myszy liczbę 16 (wiersz 16) z lewej strony arkusza, a następnie kliknij pozycję **Usuń**.
 
 ### <a name="to-sort-the-rows-in-the-list"></a>Aby posortować wiersze na liście
 

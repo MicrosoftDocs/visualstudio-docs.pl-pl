@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: d6fda3ef-d465-4788-8514-2f2d528d658c
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9773df597269d5f7044bf168626f530e4a454020
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 1e0d8bf1bca7917c6692d7c9c2398df47c4145e6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400157"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926550"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Instrukcje: Wybieranie schematów XML do użycia
 
@@ -23,7 +23,7 @@ Edytor XML udostępnia pamięć podręczną schematu znajdującą się w katalog
 
 Użyj właściwości dokumentu **schematów** , aby wybrać co najmniej jeden schemat języka definicji schematu XML (XSD). Można wybrać schematy z pamięci podręcznej schematów lub w innym miejscu.
 
-Określone schematy są zapisywane w postaci (ukrytego) pliku opcji użytkownika rozwiązania (. *SUO* ), wraz ze wszystkimi innymi właściwościami dokumentu XML. W związku z tym nie trzeba ponownie wprowadzać tych wartości przy następnym otwarciu rozwiązania.
+Określone schematy są zapisywane w postaci (ukrytego) pliku opcji użytkownika rozwiązania (.*SUO*), wraz ze wszystkimi innymi właściwościami dokumentu XML. W związku z tym nie trzeba ponownie wprowadzać tych wartości przy następnym otwarciu rozwiązania.
 
 > [!NOTE]
 > Edytor może sprawdzić poprawność przy użyciu schematu wbudowanego lub schematu, do którego odwołuje się `xsd:schemaLocation` atrybut. Aby uzyskać więcej informacji, zobacz [Walidacja dokumentu XML](../xml-tools/xml-document-validation.md).

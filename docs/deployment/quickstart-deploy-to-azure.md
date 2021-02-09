@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fc82b1f1-d342-4b82-9a44-590479f0a895
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - azure
-ms.openlocfilehash: cf32e0aa1f19bb4398bc5600ae7fc9fbf151c76c
-ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
+ms.openlocfilehash: 11e655adcfecb9ab63479275b64873fa4c9e6d0f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97815597"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927447"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Publish a Web app to Azure App Service using Visual Studio (Publikowanie aplikacji internetowej w usłudze Azure App Service przy użyciu programu Visual Studio)
 
@@ -59,7 +59,7 @@ W tym artykule opisano sposób korzystania z narzędzia do **publikowania** na p
 
     ![Zrzut ekranu przedstawiający okno publikowania, do którego uzyskano dostęp z programu Visual Studio Eksplorator rozwiązań. Wybrano platformę Azure jako miejsce docelowe publikowania.](../deployment/media/quickstart-publish-windows-select-instance.png)
 
-1. Kliknij opcję **Opublikuj**. Program Visual Studio wdraża aplikację w Azure App Service, a aplikacja sieci Web ładuje się w przeglądarce. W okienku **Publikowanie** właściwości projektu wyświetlany jest adres URL witryny i inne szczegóły.
+1. Kliknij pozycję **Opublikuj**. Program Visual Studio wdraża aplikację w Azure App Service, a aplikacja sieci Web ładuje się w przeglądarce. W okienku **Publikowanie** właściwości projektu wyświetlany jest adres URL witryny i inne szczegóły.
 
     ![Okienko właściwości publikowania przedstawiające Podsumowanie profilu](../deployment/media/quickstart-publish-windows-summary-page.png)
 

@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: 3a94dd07-6d17-402c-ae8f-7947143755c9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 13949465677301a336f0a4738e903657dbfe2b7f
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 830469525429d298f1c9bf03b845a1132021373a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441016"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926641"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Instrukcje: Konfigurowanie agenta testowego do uruchamiania testów, które współdziałają z pulpitem
 
@@ -86,6 +86,6 @@ Poniższa procedura umożliwia skonfigurowanie wszystkich agentów przypisanych 
    Jeśli kontroler testów dla tego agenta testowego jest zarejestrowany w Team Foundation Server, stan agenta testowego, który działa jako proces interaktywny, zostanie wyświetlony w widoku **Kontrolery** w **Centrum laboratoryjnym** dla Microsoft Test Manager. Jest on wyświetlany z poprzednim symbolem gwiazdki, aby zauważyć, że jest uruchomiony jako proces interaktywny. Aby ponownie uruchomić tego agenta testowego, należy użyć narzędzia uruchomionego na komputerze dla agenta testowego, a nie widoku **Kontrolery** .
    ::: moniker-end
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md)
