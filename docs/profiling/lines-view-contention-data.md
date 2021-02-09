@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 859b02d2-eddf-4ad3-95de-0df67ee2ab03
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 50a314d5ba0a5dd907da3a915835f1410894ee7a
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 863cd741833082ddfac400d86edeba574b4dcb09
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98721349"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917887"
 ---
 # <a name="lines-view---contention-data"></a>Widok linii — dane rywalizacji
 Widok wiersze danych rywalizacji zawiera dane dotyczące wydajności dla instrukcji, które były wykonywane, gdy próbki zostały zebrane w ramach uruchomienia profilowania. W pliku źródłowym instrukcja może obejmować więcej niż jeden wiersz w pliku źródłowym, a pojedynczy wiersz może zawierać więcej niż jedną instrukcję.
@@ -64,7 +64,7 @@ Widok wiersze danych rywalizacji zawiera dane dotyczące wydajności dla instruk
 |**Początek linii źródłowej**|Numer wiersza w pliku źródłowym, w którym rozpocznie się wykonywanie instrukcji.|
 |**Koniec linii źródłowej**|Numer wiersza w pliku źródłowym, w którym następuje zakończenie instrukcji.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)
 - [Widok linii](../profiling/lines-view.md)
 - [Widok linii — próbkowanie](../profiling/lines-view-dotnet-memory-sampling-data.md)

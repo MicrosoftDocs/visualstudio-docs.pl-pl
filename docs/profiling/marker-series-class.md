@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b8445ed0-c512-4f92-b6b4-3d05c044f939
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f7df74624ea602b5c996d5523a45826137119f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bcd4386b8eff7589993458f1f7f6baaf7f33d4a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330716"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917789"
 ---
 # <a name="marker_series-class"></a>Klasa marker_series
 Reprezentuje kanał szeregowy zdarzeń generowanych przez jednego dostawcę.

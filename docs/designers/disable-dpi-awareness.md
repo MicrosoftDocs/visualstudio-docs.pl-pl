@@ -4,14 +4,14 @@ description: W tym artykule omówiono ograniczenia Projektant formularzy systemu
 ms.date: 09/28/2020
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.topic: conceptual
-ms.openlocfilehash: 08eb15914ad381fd81a838f5e09a1350bedff4fd
-ms.sourcegitcommit: 31f216b5f7491d5558de5b7ea4ebb0eb1faa3b9d
+ms.openlocfilehash: f63d831127951815f28955e72ae29b1a4d7f5a3e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91493312"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917089"
 ---
 # <a name="disable-dpi-awareness-in-visual-studio"></a>Wyłączanie rozpoznawania DPI w programie Visual Studio
 
@@ -34,7 +34,7 @@ Komunikat o **skalowaniu na ekranie głównym jest ustawiany na 200% (192 dpi). 
 > [!NOTE]
 > Ten pasek informacyjny został wprowadzony w programie Visual Studio 2017 w wersji 15,8.
 
-Jeśli nie Pracujesz w Projektancie i nie musisz regulować układu formularza, możesz zignorować pasek informacyjny i kontynuować pracę w edytorze kodu lub w innych typach projektantów. (Możesz również [wyłączyć powiadomienia](#disable-notifications) , aby pasek informacyjny nadal nie był wyświetlany). Dotyczy tylko **Projektant formularzy systemu Windows** . W przypadku konieczności pracy w **Projektant formularzy systemu Windows**Następna sekcja pomoże [rozwiązać ten problem](#to-resolve-the-display-problem).
+Jeśli nie Pracujesz w Projektancie i nie musisz regulować układu formularza, możesz zignorować pasek informacyjny i kontynuować pracę w edytorze kodu lub w innych typach projektantów. (Możesz również [wyłączyć powiadomienia](#disable-notifications) , aby pasek informacyjny nadal nie był wyświetlany). Dotyczy tylko **Projektant formularzy systemu Windows** . W przypadku konieczności pracy w **Projektant formularzy systemu Windows** Następna sekcja pomoże [rozwiązać ten problem](#to-resolve-the-display-problem).
 
 ## <a name="to-resolve-the-display-problem"></a>Aby rozwiązać problem z wyświetlaniem
 
@@ -61,7 +61,7 @@ Ważne jest, aby ponownie uruchomić program Visual Studio jako proces obsługuj
 
 ### <a name="add-a-registry-entry"></a>Dodawanie wpisu rejestru
 
-Program Visual Studio można oznaczyć jako niezależny od rozdzielczości DPI, modyfikując rejestr. Otwórz **Edytor rejestru** i Dodaj wpis do podklucza **HKEY_CURRENT_USER \SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers** :
+Program Visual Studio można oznaczyć jako niezależny od rozdzielczości DPI, modyfikując rejestr. Otwórz **Edytor rejestru** i Dodaj wpis do podklucza **HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers** :
 
 **Wpis**: w zależności od tego, czy używasz programu Visual Studio 2017 lub 2019, użyj jednej z następujących wartości:
 
@@ -88,7 +88,7 @@ Ustawienie skalowania ekranu na 100% może być niepożądane, ponieważ może t
 
 Możesz zrezygnować z powiadamiania o problemach z skalowaniem DPI w programie Visual Studio. Możesz chcieć wyłączyć powiadomienia, jeśli nie Pracujesz w projektancie, na przykład.
 
-Aby wyłączyć powiadomienia, wybierz **Tools**  >  **Opcje** narzędzia, aby otworzyć okno dialogowe **Opcje** . Następnie wybierz opcję **Projektant formularzy systemu Windows**  >  **Ogólne**i ustaw **powiadomienia skalowania dpi** na **wartość false**.
+Aby wyłączyć powiadomienia, wybierz   >  **Opcje** narzędzia, aby otworzyć okno dialogowe **Opcje** . Następnie wybierz opcję **Projektant formularzy systemu Windows**  >  **Ogólne** i ustaw **powiadomienia skalowania dpi** na **wartość false**.
 
 ![Opcja powiadomień skalowania DPI w programie Visual Studio](./media/notifications-option.png)
 
@@ -96,7 +96,7 @@ Jeśli chcesz później ponownie włączyć powiadomienia dotyczące skalowania,
 
 ## <a name="troubleshoot"></a>Rozwiązywanie problemów
 
-Jeśli przejście rozpoznawania DPI nie działa w oczekiwany sposób w programie Visual Studio, sprawdź, czy w `dpiAwareness` Edytorze rejestru znajduje się wartość w **HKEY_LOCAL_MACHINE \Software\microsoft\windows NT\CurrentVersion\Image wykonywanie pliku Options\devenv.exe** . Usuń wartość, jeśli jest obecna.
+Jeśli przejście rozpoznawania DPI nie działa zgodnie z oczekiwaniami w programie Visual Studio, sprawdź, czy w `dpiAwareness` Edytorze rejestru znajduje się wartość w podkluczu **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\devenv.exe** . Usuń wartość, jeśli jest obecna.
 
 ## <a name="see-also"></a>Zobacz też
 

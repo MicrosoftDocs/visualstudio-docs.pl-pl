@@ -7,15 +7,15 @@ ms.topic: reference
 ms.assetid: 2c798a50-a2d7-459b-9879-ad4ad8290c9b
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: eb7297a5486764127efda72ea37c5c97acc05245
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 79fd16f42629bdf242d70432065d077efd5883eb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134220"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917211"
 ---
 # <a name="constant-nodes"></a>Stałe węzły
 
@@ -23,7 +23,7 @@ W projektancie programu do cieniowania stałe węzły reprezentują wartości li
 
 ## <a name="vertex-attribute-interpolation"></a>Interpolacja atrybutu wierzchołka
 
-Obraz sceny 3D w grze lub aplikacji jest realizowany przez matematycznie przekształcanie wielu obiektów, które są definiowane przez wierzchołki, atrybuty wierzchołków i definicje pierwotne — do pikseli na ekranie. Wszystkie informacje, które są wymagane do uzyskania piksela jego unikatowego wyglądu, są dostarczane za pomocą atrybutów wierzchołków, które są połączone ze sobą, w zależności od odległości do różnych wierzchołków, które tworzą *pierwotną* . Element podstawowy jest podstawowym elementem renderingu; oznacza to prosty kształt, taki jak punkt, linia lub trójkąt. Piksel, który jest blisko tylko jeden z wierzchołków odbiera stałe, które są niemal identyczne z tym wierzchołkiem, ale piksel, który jest równomiernie rozłożony między wszystkimi wierzchołkami elementu pierwotnego, który jest średnią z tych wierzchołków. W programowaniu grafiki, stałe, które otrzymują piksele, są uważane za *interpolowane* . Dostarczanie stałych danych do pikseli w ten sposób zapewnia bardzo dobrą jakość wizualną i w tym samym czasie zmniejsza wymagania dotyczące pamięci i przepustowości.
+Obraz sceny 3D w grze lub aplikacji jest realizowany przez matematycznie przekształcanie wielu obiektów, które są definiowane przez wierzchołki, atrybuty wierzchołków i definicje pierwotne — do pikseli na ekranie. Wszystkie informacje, które są wymagane do uzyskania piksela jego unikatowego wyglądu, są dostarczane za pomocą atrybutów wierzchołków, które są połączone ze sobą, w zależności od odległości do różnych wierzchołków, które tworzą *pierwotną*. Element podstawowy jest podstawowym elementem renderingu; oznacza to prosty kształt, taki jak punkt, linia lub trójkąt. Piksel, który jest blisko tylko jeden z wierzchołków odbiera stałe, które są niemal identyczne z tym wierzchołkiem, ale piksel, który jest równomiernie rozłożony między wszystkimi wierzchołkami elementu pierwotnego, który jest średnią z tych wierzchołków. W programowaniu grafiki, stałe, które otrzymują piksele, są uważane za *interpolowane*. Dostarczanie stałych danych do pikseli w ten sposób zapewnia bardzo dobrą jakość wizualną i w tym samym czasie zmniejsza wymagania dotyczące pamięci i przepustowości.
 
 Chociaż każde wystąpienie programu do cieniowania pikseli otrzymuje tylko jeden zestaw wartości stałych i nie może zmienić tych wartości, różne wystąpienia programu do cieniowania pikseli otrzymują różne zestawy danych stałych. Ten projekt umożliwia programowi cieniującego wygenerowanie różnych danych wyjściowych koloru dla każdego piksela w pierwotnym.
 

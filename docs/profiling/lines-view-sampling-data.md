@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 46497249-c797-42c5-a02c-3e4bb3b4ee60
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 38ae3e9c40204082ea8791ddea4e92d77a0d311e
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 28dd2c6132905e4c5610d2a7a0f598650ce06692
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98721323"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917856"
 ---
 # <a name="lines-view---sampling-data"></a>Widok linii — dane próbkowania
 Widok linie danych próbkowania zawiera dane dotyczące wydajności dla instrukcji, które były wykonywane, gdy próbki zostały zebrane w ramach uruchomienia profilowania.
@@ -61,5 +61,5 @@ Widok linie danych próbkowania zawiera dane dotyczące wydajności dla instrukc
 |**Próbki wyłączne**|Całkowita liczba próbek zebranych podczas wykonywania wiersza funkcji.|
 |**Wyłącznych próbek%**|Procent wszystkich próbek w przebiegu profilowania, który został zebrany podczas wykonywania wiersza funkcji.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Widok linii — próbkowanie](../profiling/lines-view-dotnet-memory-sampling-data.md)

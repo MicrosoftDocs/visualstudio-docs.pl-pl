@@ -10,20 +10,20 @@ helpviewer_keywords:
 ms.assetid: 8aeff804-0183-4588-8218-52e107a5382e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f28a0f8bd60ad169715ba72b6fab957e7699a5b
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: b3e2bda0a6ed746c5e518b046b2165f0aff2e38b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723026"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915911"
 ---
 # <a name="zoom-control-utilization-view"></a>Kontrolka powiększenia (widok wykorzystania)
 Kontrolka powiększenie ułatwia powiększanie wykresu użycia procesora, aby skoncentrować się na obszarach określonych zainteresowań. Ta kontrolka powiększa się do środka widoku. W związku z tym należy wyśrodkować obszar zainteresowania przed powiększaniem.
 
  Możesz przeciągnąć wskaźnik myszy na wykresie użycia procesora lub wykresu aktywności procesora GPU, aby utworzyć wyróżniony obszar. Po udostępnieniu przycisku myszy widok powiększa się do wybranego zakresu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Widok wykorzystania](../profiling/utilization-view.md)

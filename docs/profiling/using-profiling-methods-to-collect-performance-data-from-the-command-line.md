@@ -6,16 +6,16 @@ ms.topic: conceptual
 ms.assetid: 5613fafc-f298-4e7a-9a2d-a853b61cdf9c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1796fad03d04ffb79ca1c8aeccc241ee3698f9f1
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: ebcd3fdbc09029309d1b06efc75417add223ce04
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723247"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917592"
 ---
 # <a name="use-profiling-methods-to-collect-performance-data-from-the-command-line"></a>Korzystanie z metod profilowania do zbierania danych o wydajności z wiersza polecenia
 Wybrane [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania narzędzi i opcji wiersza polecenia są zależne od takich czynników, jak typ profilowania aplikacji, Metoda profilowania, która ma być używana, oraz czy aplikacja docelowa jest zapisywana w kodzie macierzystym czy .NET Framework.
@@ -75,7 +75,7 @@ Wybrane [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia pro
 ## <a name="add-tier-interaction-data-to-a-profiling-run"></a>Dodawanie danych interakcji warstwy do przebiegu profilowania
  Dodawanie danych interakcji między warstwami do uruchomienia profilowania wymaga określonych procedur z narzędzia profilowania wiersza polecenia. Zobacz [zbieranie danych o interakcji warstwy](../profiling/adding-tier-interaction-data-from-the-command-line.md)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Profile aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [Usługi profilu](../profiling/command-line-profiling-of-services.md)

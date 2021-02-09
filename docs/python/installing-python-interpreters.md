@@ -5,17 +5,17 @@ ms.date: 06/05/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fb1c657789e232307672d494710f330758780a67
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e2c4cd4c110b55837009ea9d081a95180727d331
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85540728"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916539"
 ---
 # <a name="install-python-interpreters"></a>Instalowanie interpreterów języka Python
 
@@ -32,9 +32,9 @@ Można również ręcznie zainstalować dowolne interpretery wymienione w poniż
 > Program Visual Studio obsługuje język Python w wersji 2,7, a także wersję 3,5 i nowszą. Chociaż można użyć programu Visual Studio do edycji kodu pisanego w innych wersjach języka Python, te wersje nie są oficjalnie obsługiwane, a funkcje takie jak IntelliSense i debugowanie mogą nie zadziałać.
 ::: moniker-end
 
-W przypadku **programu Visual Studio 2015 i jego wcześniejszych wersji**należy ręcznie zainstalować jeden z interpreterów.
+W przypadku **programu Visual Studio 2015 i jego wcześniejszych wersji** należy ręcznie zainstalować jeden z interpreterów.
 
-Program Visual Studio (wszystkie wersje) automatycznie wykrywa każdy zainstalowany interpreter języka Python i jego środowisko, sprawdzając rejestr zgodnie z [PEP 514 — Rejestracja w języku Python w rejestrze systemu Windows](https://www.python.org/dev/peps/pep-0514/). Instalacje w języku Python zwykle znajdują się w obszarze **HKEY_LOCAL_MACHINE \software\python** (32-bitowe) i **HKEY_LOCAL_MACHINE \software\wow6432node\python** (64-bit), a następnie w węzłach dla dystrybucji, takich jak **PythonCore** (CPython) i **ContinuumAnalytics** (Anaconda).
+Program Visual Studio (wszystkie wersje) automatycznie wykrywa każdy zainstalowany interpreter języka Python i jego środowisko, sprawdzając rejestr zgodnie z [PEP 514 — Rejestracja w języku Python w rejestrze systemu Windows](https://www.python.org/dev/peps/pep-0514/). Instalacje języka Python zwykle znajdują się w obszarze **HKEY_LOCAL_MACHINE\SOFTWARE\Python** (32-bitowe) i **HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Python** (64-bitowe), a następnie w węzłach dla dystrybucji, takich jak **PythonCore** (CPython) i **ContinuumAnalytics** (Anaconda).
 
 Jeśli program Visual Studio nie wykrywa zainstalowanego środowiska, zobacz [Ręczne identyfikowanie istniejącego środowiska](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 

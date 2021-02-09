@@ -5,17 +5,17 @@ ms.date: 05/12/2020
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5307684bde56955f2a4ed77d2ac66b6b30cb1c1d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dcc5d9746a556af54ea206528fcb9a402e25d700
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541084"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916609"
 ---
 Program Visual Studio może uruchamiać i debugować aplikacje języka Python lokalnie i zdalnie na komputerze z systemem Windows (zobacz [debugowanie zdalne](../../../debugger/remote-debugging.md)). Może on również debugować zdalnie w innym systemie operacyjnym, urządzeniu lub implementacji języka Python innym niż CPython za pomocą [biblioteki debugpy](https://pypi.org/project/debugpy/).
 
@@ -69,7 +69,7 @@ Aby uzyskać szczegółowe informacje na temat tworzenia reguły zapory dla masz
    >[!NOTE]
    >Dobrym pomysłem jest zarejestrowanie wersji debugpy, która jest zainstalowana na wypadek, gdyby była potrzebna do rozwiązywania problemów. [Lista debugpy](https://pypi.org/project/debugpy/) zawiera również dostępne wersje.
 
-1. Włącz debugowanie zdalne, dodając Poniższy kod w najwcześniejszym możliwym miejscu w *guessing-game.py*przed innym kodem. (Chociaż nie jest to rygorystyczne wymaganie, nie jest możliwe debugowanie wszystkich wątków w tle zduplikowanych przed `listen` wywołaniem funkcji).
+1. Włącz debugowanie zdalne, dodając Poniższy kod w najwcześniejszym możliwym miejscu w *guessing-game.py* przed innym kodem. (Chociaż nie jest to rygorystyczne wymaganie, nie jest możliwe debugowanie wszystkich wątków w tle zduplikowanych przed `listen` wywołaniem funkcji).
 
    ```python
    import debugpy
@@ -101,7 +101,7 @@ W tych krokach ustawimy prosty punkt przerwania, aby zatrzymać proces zdalny.
 
     W przypadku uruchomienia na komputerze zdalnym innego programu po wypełnieniu tej listy wybierz przycisk **Odśwież** .
 
-1. Wybierz proces do debugowania, a następnie **Dołącz**lub kliknij dwukrotnie proces.
+1. Wybierz proces do debugowania, a następnie **Dołącz** lub kliknij dwukrotnie proces.
 
 1. Program Visual Studio przełączy się w tryb debugowania, podczas gdy skrypt nadal jest uruchamiany na komputerze zdalnym, zapewniając wszystkie normalne możliwości [debugowania](../../debugging-python-in-visual-studio.md) . Na przykład można ustawić punkt przerwania w `if guess < number:` wierszu, a następnie przełączyć się na komputer zdalny i wprowadzić kolejną próbkę. Po wykonaniu tej czynności program Visual Studio na komputerze lokalnym przestaje działać w tym punkcie przerwania, zawiera zmienne lokalne i tak dalej:
 

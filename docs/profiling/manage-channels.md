@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 507b06e9-bb56-4a72-8fd5-f91f958da6fc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b0dd8643f63a7a3e67400f09f00b999fff33f09e
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: ebeb885d427cf6a9a6ca80d4d0ad572b23d7f685
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98721271"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917798"
 ---
 # <a name="manage-channels"></a>Zarządzanie kanałami
 W **widoku wątki** w wizualizatorze współbieżności można organizować kanały dla procesu, aby umożliwić badanie określonych wzorców. Można sortować kanały, przenosić je w górę i w dół, a także ukrywać lub wyświetlać je.
@@ -59,7 +59,7 @@ W **widoku wątki** w wizualizatorze współbieżności można organizować kana
 ## <a name="group-markers-by-thread"></a>Grupuj znaczniki według wątku
  Jeśli ślad zawiera zdarzenia znacznika, można użyć tego polecenia do grupowania kanałów znacznika w wątku, który wygenerował zdarzenia znacznika.  Kanały dysku są przenoszone na górę listy kanałów, a kanały GPU są przenoszone na dół.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Kontrolka powiększenia (Widok wątków)](../profiling/zoom-control-threads-view.md)
 - [Włącz/Wyłącz tryb miary](../profiling/measure-mode-on-off.md)
 - [Widok wątków](../profiling/threads-view-parallel-performance.md)

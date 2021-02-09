@@ -6,15 +6,15 @@ ms.topic: how-to
 ms.custom: contperf-fy21q1
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d261d6c13572be6df80ca36f37e19792d53e2a32
-ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
+ms.openlocfilehash: eb7c9bf04e5f38e5138eae6cf6254bb77bbd6230
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97684048"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916072"
 ---
 # <a name="how-to-personalize-the-visual-studio-ide-and-the-editor"></a>Instrukcje: personalizowanie środowiska IDE programu Visual Studio i edytora
 
@@ -128,7 +128,7 @@ Teraz dostosowujemy niektóre kolory tekstu dla edytora. Najpierw utwórz nowy p
 
 Eksplorujemy kilka sposobów dostosowywania kolorów w programie Visual Studio. Mamy nadzieję, że zapoznajesz się z innymi opcjami dostosowywania w oknie dialogowym [**Opcje**](../ide/reference/fonts-and-colors-environment-options-dialog-box.md) , aby naprawdę wprowadzić własne Visual Studio.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Instrukcje: zmienianie czcionek, kolorów i motywów w programie Visual Studio](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 - [Instrukcje: zmiana wielkości liter w edytorze](../ide/how-to-change-text-case-in-the-editor.md)
