@@ -5,17 +5,17 @@ description: Używanie obciążeń i identyfikatorów składników do instalowan
 keywords: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 2/12/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 118c818c194b50d8eabbd0139e29c15dafd90708
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 692568b2b355844e0204346ccf7e58af1178cbde
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76158877"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881708"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-professional-2017"></a>Visual Studio Core Editor (zawarty w Visual Studio Professional 2017)
 
@@ -480,10 +480,10 @@ Składnik. Android. NDK. R15C | Android NDK (R15C) | 15.2.1 | Zalecane
 Składnik. ANT | Apache Ant (1.9.3) | 1.9.3.8 | Zalecane
 Składnik. MDD języka. Android | Narzędzia programistyczne w języku C++ dla systemu Android | 15.0.26606.0 | Zalecane
 Składnik. Android. NDK. R12B | Android NDK (R12B) | 12.1.10 | Opcjonalne
-Składnik. Android. NDK. R12B_3264 | Android NDK (R12B) (32-bitowe) | 12.1.11 | Opcjonalne
+Component.Android.NDK.R12B_3264 | Android NDK (R12B) (32-bitowe) | 12.1.11 | Opcjonalne
 Składnik. Android. NDK. R13B | Android NDK (R13B) | 13.1.7 | Opcjonalne
-Składnik. Android. NDK. R13B_3264 | Android NDK (R13B) (32-bitowe) | 13.1.8 | Opcjonalne
-Składnik. Android. NDK. R15C_3264 | Android NDK (R15C) (32-bitowe) | 15.2.1 | Opcjonalne
+Component.Android.NDK.R13B_3264 | Android NDK (R13B) (32-bitowe) | 13.1.8 | Opcjonalne
+Component.Android.NDK.R15C_3264 | Android NDK (R15C) (32-bitowe) | 15.2.1 | Opcjonalne
 Składnik. Google. Android. emulator. API23. Private | Google Emulator systemu Android (poziom interfejsu API 23) (Instalacja lokalna) | 15.6.27413.0 | Opcjonalne
 Component. HAXM. Private | Intel Hardware Accelerated Execution Manager (HAXM) (Instalacja lokalna) | 15.9.28307.421 | Opcjonalne
 Składnik. Incredibuild | IncrediBuild — przyspieszanie kompilacji | 15.7.27617.1 | Opcjonalne
@@ -1005,7 +1005,7 @@ Identyfikator składnika | Nazwa | Wersja
 --- | --- | ---
 Składnik. Android. emulator | Emulator programu Visual Studio dla systemu Android | 15.6.27413.0
 Składnik. Android. NDK. R11C | Android NDK (R11C) | 11.3.14
-Składnik. Android. NDK. R11C_3264 | Android NDK (R11C) (32-bitowe) | 11.3.16
+Component.Android.NDK.R11C_3264 | Android NDK (R11C) (32-bitowe) | 11.3.16
 Składnik. Android. SDK23 | Konfiguracja Android SDK (poziom interfejsu API 23) (instalacja globalna) | 15.9.28107.0
 Składnik. Android. SDK25 | Konfiguracja Android SDK (poziom interfejsu API 25) | 15.9.28107.0
 Składnik. GitHub. VisualStudio | Rozszerzenie GitHub dla programu Visual Studio | 2.5.2.2500

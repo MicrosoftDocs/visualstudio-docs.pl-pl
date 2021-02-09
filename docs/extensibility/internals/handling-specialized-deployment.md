@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: de068b6a-e806-45f0-9dec-2458fbb486f7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 664625cd8737fb9a9a3e398716d750d6d9665529
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 279732f6019757c1a0d9fef566e8aaf1898dbdfb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480437"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880060"
 ---
 # <a name="handle-specialized-deployment"></a>Obsługuj wyspecjalizowane wdrożenie
 Wdrożenie jest opcjonalną operacją dla projektów. Projekt sieci Web, na przykład, obsługuje wdrożenie umożliwiające aktualizowanie serwera sieci Web przez projekt. Podobnie projekt **urządzenia inteligentnego** obsługuje wdrożenie w celu skopiowania skompilowanej aplikacji na urządzenie docelowe. Podtypy projektu mogą dostarczać wyspecjalizowane zachowanie wdrażania przez implementację <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interfejsu. Ten interfejs definiuje pełny zestaw operacji wdrażania:

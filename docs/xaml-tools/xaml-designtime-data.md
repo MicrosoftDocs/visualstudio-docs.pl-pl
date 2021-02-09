@@ -5,14 +5,14 @@ ms.date: 11/17/2020
 ms.topic: overview
 author: alihamie
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2019
-ms.openlocfilehash: 992c97b188535fb39548fca4fd9d02d588a45474
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 4bd059fa82f8a959d6e3b8a843f19cbec636fb7e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850744"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880414"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>Używanie danych czasu projektowania z projektant XAML w programie Visual Studio
 
@@ -189,7 +189,7 @@ Jeśli wystąpi problem, którego nie ma w tej sekcji, poinformuj nas o tym za p
 
 Spróbuj zamknąć i ponownie otworzyć plik XAML, a następnie wyczyścić i przebudować projekt.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Projektowanie danych czasu przy użyciu programu Xamarin. Forms Preview](/xamarin/xamarin-forms/xaml/xaml-Designer/design-time-data/)
 - [XAML w aplikacjach WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)

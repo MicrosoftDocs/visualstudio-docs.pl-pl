@@ -18,15 +18,15 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], removing data
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a5e41fbb4f70bd3f5ae2db72b630ae6e524d3def
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 33ca8abf7a35bafd04c38fbb4a681245f2701f8e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915443"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879725"
 ---
 # <a name="how-to-add-a-deleter-method"></a>Instrukcje: Dodawanie metody usuwania
   Można umożliwić użytkownikowi końcowemu usunięcie rekordu danych z listy zewnętrznej w witrynie programu SharePoint, dodając metodę usuwania do modelu. Aby uzyskać więcej informacji, zobacz [Projektowanie modelu łączności danych firmowych](../sharepoint/designing-a-business-data-connectivity-model.md).

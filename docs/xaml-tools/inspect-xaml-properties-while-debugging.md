@@ -7,19 +7,19 @@ ms.topic: how-to
 ms.assetid: 390edde4-7b8d-4c89-8d69-55106b7e6b11
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 5fb3c1fff831fdee711340345c283dbeaf3f13a6
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: d9033921c9e9863e5210721fb2c1244c326802d4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046068"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881376"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Sprawdzanie właściwości XAML podczas debugowania
 
-Możesz uzyskać widok działającego kodu XAML w czasie rzeczywistym za pomocą **aktywnego drzewa wizualnego** i **Eksploratora właściwości na żywo** . Te narzędzia udostępniają widok drzewa elementów interfejsu użytkownika uruchomionej aplikacji XAML i pokazują właściwości środowiska uruchomieniowego każdego z wybranych elementów interfejsu użytkownika.
+Możesz uzyskać widok działającego kodu XAML w czasie rzeczywistym za pomocą **aktywnego drzewa wizualnego** i **Eksploratora właściwości na żywo**. Te narzędzia udostępniają widok drzewa elementów interfejsu użytkownika uruchomionej aplikacji XAML i pokazują właściwości środowiska uruchomieniowego każdego z wybranych elementów interfejsu użytkownika.
 
 Można używać tych narzędzi w następujących konfiguracjach:
 
@@ -34,7 +34,7 @@ Zacznijmy od bardzo prostej aplikacji WPF, która zawiera widok listy i przycisk
 
 ### <a name="create-the-project"></a>Tworzenie projektu
 
-1. Utwórz nową aplikację WPF w języku c# ( **plik**  >  **Nowy**  >  **projekt** , następnie wpisz ciąg "C# WPF" i wybierz pozycję **Aplikacja WPF (.NET Core)** lub **Aplikacja WPF (.NET Framework)** . Nadaj mu nazwę **TestXaml** .
+1. Utwórz nową aplikację WPF w języku c# (**plik**  >  **Nowy**  >  **projekt**, następnie wpisz ciąg "C# WPF" i wybierz pozycję **Aplikacja WPF (.NET Core)** lub **Aplikacja WPF (.NET Framework)**. Nadaj mu nazwę **TestXaml**.
 
 1. Zmień MainWindow. XAML na następujący:
 
@@ -90,9 +90,9 @@ Zacznijmy od bardzo prostej aplikacji WPF, która zawiera widok listy i przycisk
 
 ### <a name="inspect-xaml-properties"></a>Sprawdzanie właściwości XAML
 
-1. Następnie otwórz okno **dynamiczne drzewo wizualne** , klikając przycisk z lewej strony na pasku narzędzi w aplikacji (lub przechodząc do **debugowania > Windows > dynamicznym drzewie wizualnym** ). Po jej otwarciu przeciągnij ją z pozycji dokującej, aby można było zobaczyć to okno i okno **właściwości na żywo** obok siebie.
+1. Następnie otwórz okno **dynamiczne drzewo wizualne** , klikając przycisk z lewej strony na pasku narzędzi w aplikacji (lub przechodząc do **debugowania > Windows > dynamicznym drzewie wizualnym**). Po jej otwarciu przeciągnij ją z pozycji dokującej, aby można było zobaczyć to okno i okno **właściwości na żywo** obok siebie.
 
-1. W oknie **dynamiczne drzewo wizualne** rozwiń węzeł **ContentPresenter** . Powinien zawierać węzły dla przycisku i pola listy. Rozwiń pole listy (a następnie **ScrollContentPresenter** i **ItemsPresenter** ), aby znaleźć elementy pola listy.
+1. W oknie **dynamiczne drzewo wizualne** rozwiń węzeł **ContentPresenter** . Powinien zawierać węzły dla przycisku i pola listy. Rozwiń pole listy (a następnie **ScrollContentPresenter** i **ItemsPresenter**), aby znaleźć elementy pola listy.
 
    ::: moniker range=">= vs-2019"
    Jeśli nie widzisz węzła **ContentPresenter** , przełącz ikonę **Pokaż tylko mój kod XAML** na pasku narzędzi. Począwszy od programu Visual Studio 2019 w wersji 16,4, widok elementów XAML jest domyślnie uproszczony za pomocą funkcji tylko mój kod XAML. [To ustawienie](../debugger/general-debugging-options-dialog-box.md) można także wyłączyć w opcjach, aby zawsze wyświetlać wszystkie elementy XAML.
@@ -111,9 +111,9 @@ Zacznijmy od bardzo prostej aplikacji WPF, która zawiera widok listy i przycisk
 
 1. Teraz przyjrzyjmy się właściwościom jednego z elementów pola listy.
 
-   Wybierz pierwszy element pola listy w **dynamicznym drzewie wizualnym** i kliknij ikonę **Pokaż właściwości** na pasku narzędzi. Powinien pojawić się **Eksplorator właściwości na żywo** . Należy pamiętać, że pole **Content** ma wartość "Item1 —", **Background** a  >  pole **koloru** tła jest **#FFFFFFE0** .
+   Wybierz pierwszy element pola listy w **dynamicznym drzewie wizualnym** i kliknij ikonę **Pokaż właściwości** na pasku narzędzi. Powinien pojawić się **Eksplorator właściwości na żywo** . Należy pamiętać, że pole **Content** ma wartość "Item1 —", a  >  pole **koloru** tła jest **#FFFFFFE0**.
 
-1. Wróć do **aktywnego drzewa wizualnego** i wybierz drugi element pola listy. **Eksplorator właściwości na żywo** powinien pokazać, że pole **Content** ma wartość "Item2 —", a **Background**  >  **pole koloru** tła jest **#FFD3D3D3** (w zależności od motywu).
+1. Wróć do **aktywnego drzewa wizualnego** i wybierz drugi element pola listy. **Eksplorator właściwości na żywo** powinien pokazać, że pole **Content** ma wartość "Item2 —", a   >  **pole koloru** tła jest **#FFD3D3D3** (w zależności od motywu).
 
    > [!NOTE]
    > Żółte obramowanie wokół właściwości w **Eksploratorze właściwości na żywo** oznacza, że wartość właściwości jest ustawiana za pośrednictwem powiązania, takiego jak `Color = {BindingExpression}` . Zielona krawędź oznacza, że wartość jest ustawiana za pomocą zasobu, na przykład `Color = {StaticResource MyBrush}` .
@@ -121,23 +121,23 @@ Zacznijmy od bardzo prostej aplikacji WPF, która zawiera widok listy i przycisk
    Rzeczywista struktura języka XAML zawiera wiele elementów, które prawdopodobnie nie są bezpośrednio zainteresowane. Jeśli nie znasz dobrze kodu, być może masz czas, w którym możesz uzyskać informacje o tym, czego szukasz. Tak więc **dynamiczne drzewo wizualne** zawiera kilka sposobów umożliwiających znalezienie elementu, który ma być badany, za pomocą interfejsu użytkownika aplikacji.
 
    ::: moniker range=">= vs-2019"
-   **Wybierz element w działającej aplikacji** . Możesz włączyć ten tryb po wybraniu przycisku z lewej strony na pasku narzędzi **aktywnego drzewa wizualnego** . W tym trybie w systemie można wybrać element interfejsu użytkownika w aplikacji, a **dynamiczne drzewo wizualne** (i **przeglądarka właściwości na żywo** ) są automatycznie aktualizowane, aby pokazać węzeł w drzewie odpowiadającym temu elementowi i jego właściwości. Począwszy od programu Visual Studio 2019 w wersji 16,4, można [skonfigurować zachowanie wyboru elementu](../debugger/general-debugging-options-dialog-box.md).
+   **Wybierz element w działającej aplikacji**. Możesz włączyć ten tryb po wybraniu przycisku z lewej strony na pasku narzędzi **aktywnego drzewa wizualnego** . W tym trybie w systemie można wybrać element interfejsu użytkownika w aplikacji, a **dynamiczne drzewo wizualne** (i **przeglądarka właściwości na żywo**) są automatycznie aktualizowane, aby pokazać węzeł w drzewie odpowiadającym temu elementowi i jego właściwości. Począwszy od programu Visual Studio 2019 w wersji 16,4, można [skonfigurować zachowanie wyboru elementu](../debugger/general-debugging-options-dialog-box.md).
 
-   **Wyświetl moduły definiowania układu w działającej aplikacji** . Możesz włączyć ten tryb po wybraniu przycisku bezpośrednio z prawej strony przycisku Włącz wybór. Gdy jest włączona funkcja **modułów definiowania układu wyświetlania** , powoduje, że w oknie aplikacji wyświetlane są poziome i pionowe linie wzdłuż granic zaznaczonego obiektu, dzięki czemu można zobaczyć, jakie elementy są wyrównane do, a także prostokąty pokazujące marginesy. Na przykład Włącz **opcję Wybierz element** i **układ wyświetlania** , a następnie wybierz blok **Dodawanie tekstu elementu** w aplikacji. Powinien zostać wyświetlony węzeł blok tekstu w **dynamicznym drzewie wizualnym** i właściwości bloku tekstu w **podglądzie właściwości na żywo** , a także w poziomie i w pionie na granicach bloku tekstu.
+   **Wyświetl moduły definiowania układu w działającej aplikacji**. Możesz włączyć ten tryb po wybraniu przycisku bezpośrednio z prawej strony przycisku Włącz wybór. Gdy jest włączona funkcja **modułów definiowania układu wyświetlania** , powoduje, że w oknie aplikacji wyświetlane są poziome i pionowe linie wzdłuż granic zaznaczonego obiektu, dzięki czemu można zobaczyć, jakie elementy są wyrównane do, a także prostokąty pokazujące marginesy. Na przykład Włącz **opcję Wybierz element** i **układ wyświetlania** , a następnie wybierz blok **Dodawanie tekstu elementu** w aplikacji. Powinien zostać wyświetlony węzeł blok tekstu w **dynamicznym drzewie wizualnym** i właściwości bloku tekstu w **podglądzie właściwości na żywo**, a także w poziomie i w pionie na granicach bloku tekstu.
 
    ![LivePropertyViewer w DisplayLayout](../debugger/media/vs-2019/livevisualtreelivepropertyviewer-displaylayout.png "LiveVisualTreeLivePropertyViewer-DisplayLayout")
 
-   **Podgląd zaznaczenia** . Możesz włączyć ten tryb, wybierając trzeci przycisk z lewej strony na dynamicznym pasku narzędzi drzewa wizualnego. Ten tryb pokazuje kod XAML, w którym zadeklarowano element, jeśli masz dostęp do kodu źródłowego aplikacji. Wybierz pozycję **Wybierz element** i **Podgląd zaznaczenia** , a następnie wybierz przycisk w naszej aplikacji testowej. Plik MainWindow. XAML zostanie otwarty w programie Visual Studio, a kursor zostanie umieszczony w wierszu, w którym przycisk jest zdefiniowany.
+   **Podgląd zaznaczenia**. Możesz włączyć ten tryb, wybierając trzeci przycisk z lewej strony na dynamicznym pasku narzędzi drzewa wizualnego. Ten tryb pokazuje kod XAML, w którym zadeklarowano element, jeśli masz dostęp do kodu źródłowego aplikacji. Wybierz pozycję **Wybierz element** i **Podgląd zaznaczenia**, a następnie wybierz przycisk w naszej aplikacji testowej. Plik MainWindow. XAML zostanie otwarty w programie Visual Studio, a kursor zostanie umieszczony w wierszu, w którym przycisk jest zdefiniowany.
    ::: moniker-end
 
    ::: moniker range="vs-2017"
-   **Włącz wybór w działającej aplikacji** . Możesz włączyć ten tryb po wybraniu przycisku z lewej strony na pasku narzędzi **aktywnego drzewa wizualnego** . W tym trybie w systemie można wybrać element interfejsu użytkownika w aplikacji, a **dynamiczne drzewo wizualne** (i **przeglądarka właściwości na żywo** ) są automatycznie aktualizowane, aby pokazać węzeł w drzewie odpowiadającym temu elementowi i jego właściwości.
+   **Włącz wybór w działającej aplikacji**. Możesz włączyć ten tryb po wybraniu przycisku z lewej strony na pasku narzędzi **aktywnego drzewa wizualnego** . W tym trybie w systemie można wybrać element interfejsu użytkownika w aplikacji, a **dynamiczne drzewo wizualne** (i **przeglądarka właściwości na żywo**) są automatycznie aktualizowane, aby pokazać węzeł w drzewie odpowiadającym temu elementowi i jego właściwości.
 
-   **Wyświetl moduły definiowania układu w działającej aplikacji** . Możesz włączyć ten tryb po wybraniu przycisku bezpośrednio z prawej strony przycisku Włącz wybór. Gdy jest włączona funkcja **modułów definiowania układu wyświetlania** , powoduje, że w oknie aplikacji wyświetlane są poziome i pionowe linie wzdłuż granic zaznaczonego obiektu, dzięki czemu można zobaczyć, jakie elementy są wyrównane do, a także prostokąty pokazujące marginesy. Na przykład Włącz opcje **Włącz zaznaczenie** i **układ wyświetlania** w, a następnie wybierz blok **Dodawanie tekstu elementu** w aplikacji. Powinien zostać wyświetlony węzeł blok tekstu w **dynamicznym drzewie wizualnym** i właściwości bloku tekstu w **podglądzie właściwości na żywo** , a także w poziomie i w pionie na granicach bloku tekstu.
+   **Wyświetl moduły definiowania układu w działającej aplikacji**. Możesz włączyć ten tryb po wybraniu przycisku bezpośrednio z prawej strony przycisku Włącz wybór. Gdy jest włączona funkcja **modułów definiowania układu wyświetlania** , powoduje, że w oknie aplikacji wyświetlane są poziome i pionowe linie wzdłuż granic zaznaczonego obiektu, dzięki czemu można zobaczyć, jakie elementy są wyrównane do, a także prostokąty pokazujące marginesy. Na przykład Włącz opcje **Włącz zaznaczenie** i **układ wyświetlania** w, a następnie wybierz blok **Dodawanie tekstu elementu** w aplikacji. Powinien zostać wyświetlony węzeł blok tekstu w **dynamicznym drzewie wizualnym** i właściwości bloku tekstu w **podglądzie właściwości na żywo**, a także w poziomie i w pionie na granicach bloku tekstu.
 
    ![LivePropertyViewer w DisplayLayout](../debugger/media/livevisualtreelivepropertyviewer-displaylayout.png "LiveVisualTreeLivePropertyViewer-DisplayLayout")
 
-   **Podgląd zaznaczenia** . Możesz włączyć ten tryb, wybierając trzeci przycisk z lewej strony na dynamicznym pasku narzędzi drzewa wizualnego. Ten tryb pokazuje kod XAML, w którym zadeklarowano element, jeśli masz dostęp do kodu źródłowego aplikacji. Wybierz pozycję **Włącz zaznaczenie** i **Podgląd zaznaczenia** , a następnie wybierz przycisk w naszej aplikacji testowej. Plik MainWindow. XAML zostanie otwarty w programie Visual Studio, a kursor zostanie umieszczony w wierszu, w którym przycisk jest zdefiniowany.
+   **Podgląd zaznaczenia**. Możesz włączyć ten tryb, wybierając trzeci przycisk z lewej strony na dynamicznym pasku narzędzi drzewa wizualnego. Ten tryb pokazuje kod XAML, w którym zadeklarowano element, jeśli masz dostęp do kodu źródłowego aplikacji. Wybierz pozycję **Włącz zaznaczenie** i **Podgląd zaznaczenia**, a następnie wybierz przycisk w naszej aplikacji testowej. Plik MainWindow. XAML zostanie otwarty w programie Visual Studio, a kursor zostanie umieszczony w wierszu, w którym przycisk jest zdefiniowany.
    ::: moniker-end
 
 ## <a name="use-xaml-tools-with-running-applications"></a>Korzystanie z narzędzi XAML z uruchomionymi aplikacjami
@@ -146,11 +146,11 @@ Możesz użyć tych narzędzi XAML nawet wtedy, gdy nie masz kodu źródłowego.
 
 1. Uruchom aplikację **TestXaml** w konfiguracji wydania. Nie można dołączyć do procesu, który jest uruchomiony w konfiguracji **debugowania** .
 
-2. Otwórz drugie wystąpienie programu Visual Studio i kliknij przycisk **debuguj > dołączyć do procesu** . Znajdź **TestXaml.exe** na liście dostępnych procesów, a następnie kliknij przycisk **Dołącz** .
+2. Otwórz drugie wystąpienie programu Visual Studio i kliknij przycisk **debuguj > dołączyć do procesu**. Znajdź **TestXaml.exe** na liście dostępnych procesów, a następnie kliknij przycisk **Dołącz**.
 
 3. Aplikacja zostanie uruchomiona.
 
-4. W drugim wystąpieniu programu Visual Studio Otwórz **dynamiczne drzewo wizualne** ( **Debug > Windows > Live Visual Tree** ). Powinny być widoczne elementy interfejsu użytkownika **TestXaml** i być możliwe ich manipulowanie tak jak podczas debugowania aplikacji bezpośrednio.
+4. W drugim wystąpieniu programu Visual Studio Otwórz **dynamiczne drzewo wizualne** (**Debug > Windows > Live Visual Tree**). Powinny być widoczne elementy interfejsu użytkownika **TestXaml** i być możliwe ich manipulowanie tak jak podczas debugowania aplikacji bezpośrednio.
 
 ## <a name="see-also"></a>Zobacz też
 

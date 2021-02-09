@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 930a8fa2-db98-43e9-ad6d-a85cc7a6519a
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2daa2ab6e3f41d5447204db573b8ae228d617fdf
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 93f36a3c2b587718fe6889688baa50224f663c1c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437817"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881363"
 ---
 # <a name="if-activity-designer"></a>If, projektant działań
 
@@ -36,5 +36,5 @@ W poniższej tabeli przedstawiono najbardziej przydatne <xref:System.Activities.
 ## <a name="see-also"></a>Zobacz też
 
 - [Sequence](../workflow-designer/sequence-activity-designer.md)
-- [Równoległy](../workflow-designer/parallel-activity-designer.md)
+- [Równoległ](../workflow-designer/parallel-activity-designer.md)
 - [Przepływ sterowania](../workflow-designer/control-flow-activity-designers.md)

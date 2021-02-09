@@ -4,17 +4,17 @@ titleSuffix: ''
 description: Tworzenie klasycznych aplikacji opartych na systemie Windows przy użyciu obciążeń i identyfikatorów składników programu Visual Studio
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 2/12/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 2f2092143a79dae17c5c0138e51c10fc5d164cbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d38a5dac5ae23b048e9faf4142cec630b77f9be
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76159579"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881941"
 ---
 ## <a name="azure-development-build-tools"></a>Narzędzia do tworzenia kompilacji na platformie Azure
 

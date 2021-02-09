@@ -10,15 +10,15 @@ helpviewer_keywords:
 - build environment, MSBuild
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c8fa7756763a668f6e97d90d8a405c660519189
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 3ae0e5f2516dd1f78aea880289f549ca3a44f3bb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136956"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881961"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Przewodnik: tworzenie środowiska kompilowania na wielu komputerach
 
@@ -327,7 +327,7 @@ Można utworzyć środowisko kompilacji, które można wdrożyć na różnych ko
 > [!NOTE]
 > Należy wyłączyć Kompilowanie przyrostowe, tak aby *tracker.exe* nie zgłaszał błędu podczas kompilacji. Aby wyłączyć Kompilowanie przyrostowe, ustaw ten parametr kompilacji:
 >
-> **msbuild** *rozwiązanie MSBuild. sln* **/p: TrackFileAccess = false**
+>  *rozwiązanie MSBuild. sln* **/p: TrackFileAccess = false**
 
 1. Utwórz katalog *magazynu* na komputerze-hoście.
 

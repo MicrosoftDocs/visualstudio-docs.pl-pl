@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Preview Features Options dialog box
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a0eb0627c073c09f23d8690dba2fd4f9af8b482
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 5cd7fd3ef7441a656ea8d640ac88283e7a32a49f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305459"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882026"
 ---
 # <a name="options-dialog-box-environment--preview-features"></a>Opcje — okno dialogowe: \> funkcje wersji zapoznawczej środowiska
 
@@ -26,4 +26,4 @@ Użyj tej strony okna dialogowego **Opcje** , aby włączyć lub wyłączyć fun
 
 ![Strona opcji funkcji podglądu w programie Visual Studio 2019](media/environment-preview-features-page.png)
 
-Możesz uzyskać dostęp do tego okna dialogowego, klikając opcję **Opcje** w menu **Narzędzia** , a następnie **Environment** wybierając  >  stronę **funkcji Podgląd** środowiska. Lub wprowadź **funkcje w wersji zapoznawczej** w polu **wyszukiwania** programu Visual Studio (naciśnij klawisz **Ctrl** + **Q** , aby przenieść fokus do pola **wyszukiwania** ).
+Możesz uzyskać dostęp do tego okna dialogowego, klikając opcję **Opcje** w menu **Narzędzia** , a następnie wybierając  >  stronę **funkcji Podgląd** środowiska. Lub wprowadź **funkcje w wersji zapoznawczej** w polu **wyszukiwania** programu Visual Studio (naciśnij klawisz **Ctrl** + **Q** , aby przenieść fokus do pola **wyszukiwania** ).

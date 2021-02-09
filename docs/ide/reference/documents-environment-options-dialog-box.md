@@ -30,19 +30,19 @@ helpviewer_keywords:
 ms.assetid: 4e3ccf1b-cd68-4db6-9470-710c911b47fc
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 28b0e7920aca2ae8b789a37fad25509dbb8b4d7a
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 9ed6833bd60854cf2e3bcfbab76d57c7010f7863
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305479"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882137"
 ---
 # <a name="options-dialog-box-environment--documents"></a>Opcje — okno dialogowe: \> dokumenty środowiska
 
-Za pomocą tej strony okna dialogowego **Opcje** można sterować wyświetlaniem dokumentów w zintegrowanym środowisku programistycznym (IDE) i zarządzać zmianami zewnętrznymi do dokumentów i plików. Możesz uzyskać dostęp do tego okna dialogowego, klikając opcję **Opcje** w menu **Narzędzia** , a **Environment** następnie wybierając  >  **dokumenty** środowiska.
+Za pomocą tej strony okna dialogowego **Opcje** można sterować wyświetlaniem dokumentów w zintegrowanym środowisku programistycznym (IDE) i zarządzać zmianami zewnętrznymi do dokumentów i plików. Możesz uzyskać dostęp do tego okna dialogowego, klikając opcję **Opcje** w menu **Narzędzia** , a następnie wybierając  >  **dokumenty** środowiska.
 
 **Wykryj, kiedy plik zostanie zmieniony poza środowiskiem**
 

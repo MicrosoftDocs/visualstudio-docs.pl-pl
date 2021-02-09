@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 6f09ff09-b0cf-4472-8fc8-143991f0ceb1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2af7f4dc01ee3a2fe3fb5026602a0b5d4f766b17
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0609ef6d3cfea28f955815f5e7137d3e62d3e6af
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731968"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880804"
 ---
 # <a name="idebugdocument2getname"></a>IDebugDocument2::GetName
 Pobiera nazwę dokumentu w jednym z kilku formularzy.
@@ -28,14 +28,14 @@ Pobiera nazwę dokumentu w jednym z kilku formularzy.
 ## <a name="syntax"></a>Składnia
 
 ```cpp
-HRESULT GetName( 
+HRESULT GetName( 
    GETNAME_TYPE gnType,
    BSTR*        pbstrFileName
 );
 ```
 
 ```csharp
-int GetName( 
+int GetName( 
    enum_GETNAME_TYPE gnType,
    out string        pbstrFileName
 );

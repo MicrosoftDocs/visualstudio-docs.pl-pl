@@ -5,17 +5,17 @@ description: Tworzenie klasycznych aplikacji opartych na systemie Windows przy u
 keywords: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 11/10/2020
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 8b99b3e92ace96fcf87f7fb5a4e575cb0ca15ee5
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: fcf85223bbec03594fc64e221b23b5f99c704abf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437425"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881942"
 ---
 ## <a name="azure-development-build-tools"></a>Narzędzia do tworzenia kompilacji na platformie Azure
 

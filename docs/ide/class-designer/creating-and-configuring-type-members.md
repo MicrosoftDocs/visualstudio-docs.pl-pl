@@ -28,15 +28,15 @@ helpviewer_keywords:
 ms.assetid: 42af8738-3738-4ca7-82ff-edf573a68f96
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 504488bdd08e80c34ebeed727e7b95badf12ca37
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 897001a5ac10e8a8e1eef96feca4113afa5e1ebf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903017"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880570"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Utwórz i skonfiguruj elementy członkowskie typu w Projektant klas
 
@@ -319,7 +319,7 @@ Nie można edytować metod częściowych przy użyciu Projektant klas lub okna *
 
 Nie można edytować natywnego kodu C++ przy użyciu Projektant klas lub okna **Szczegóły klasy** ; Aby edytować natywny kod C++, należy użyć edytora kodu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Wyświetlanie typów i relacji](designing-and-viewing-classes-and-types.md)
 - [Refaktoryzacja klas i typów](refactoring-classes-and-types.md)

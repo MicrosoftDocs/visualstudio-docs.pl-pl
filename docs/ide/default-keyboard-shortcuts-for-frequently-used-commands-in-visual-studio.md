@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c60da36ac6a8e5002e65e0973af0f3e0cb13eef7
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: 12dc587e25fef4e8b62d6ede0a13d5eb4aa7e3fe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006487"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880505"
 ---
 # <a name="popular-keyboard-shortcuts-for-visual-studio"></a>Popularne skróty klawiaturowe dla programu Visual Studio
 
@@ -134,7 +134,7 @@ Kontekst *globalny* oznacza, że skrót jest stosowany w dowolnym oknie narzędz
 |-------------| - |
 |Refactor.ExtractMethod|**Ctrl + R, Ctrl + M** [globalny]|
 
-## <a name="tools"></a>Narzędzia
+## <a name="tools"></a>narzędzia
 
 |Polecenie|Skrót klawiaturowy [Context]|
 |-------------| - |
@@ -171,7 +171,7 @@ Kontekst *globalny* oznacza, że skrót jest stosowany w dowolnym oknie narzędz
 |Window.NextDocumentWindowNav|**Ctrl + Tab** [globalny]|
 |Window.NextSplitPane|**F6** [globalny]|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Identyfikowanie i Dostosowywanie skrótów klawiaturowych w programie Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
 - [Wszystkie skróty klawiaturowe w programie Visual Studio](default-keyboard-shortcuts-in-visual-studio.md)

@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 9c05b51a-8382-44cf-a8f7-3fabdd2e8f1b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7e05a3e1d915853689c436b192de9e266e86b13d
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: b9c00fd7647d6ba3da62d913e0371dc8cf300ca7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723299"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879829"
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>Widok modułów — dane próbkowania pamięci platformy .NET
 Widok modułów danych przydziału pamięci platformy .NET zbieranych przy użyciu metody próbkowania grupuje dane pamięci według modułów, które zostały wykonane w przebiegu profilowania. Każdy moduł jest katalogiem głównym drzewa hierarchicznego. Funkcje modułu są wymienione pod węzłem modułu.
@@ -42,7 +42,7 @@ Widok modułów danych przydziału pamięci platformy .NET zbieranych przy użyc
 |**Bajty wyłączne**|-Dla funkcji — całkowita liczba bajtów, które zostały przydzielone przez funkcję. Liczba nie obejmuje bajtów, które zostały przydzielone w funkcjach, które zostały wywołane przez tę funkcję.<br />-Dla modułu, Suma bajtów wyłącznych, które zostały przydzielone przez funkcje w module.<br />— W przypadku linii lub instrukcji, całkowitej liczby obiektów przydzielonej przez ten wiersz lub instrukcję.|
 |**% Bajtów wyłącznych**|Procent wszystkich bajtów, które zostały przydzieloną w ramach uruchomienia profilowania, które były wyłącznych bajtów modułu, funkcji, wiersza lub instrukcji.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)
 - [Widok modułów-Instrumentacja](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
 - [Widok modułów](../profiling/modules-view-sampling-data.md)

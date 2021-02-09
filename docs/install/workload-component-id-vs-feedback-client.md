@@ -5,7 +5,7 @@ description: Użyj obciążeń i identyfikatorów składników programu Visual S
 keywords: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 11/13/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: vs-2017
 open_to_public_contributors: false
-ms.openlocfilehash: fe4eec389389622f0d87d30edbbd46d7c5b53d80
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f83b457582124658285e0769d1907a8643d44fda
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81276308"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881766"
 ---
 # <a name="visual-studio-feedback-client-component-directory"></a>Katalog składników programu Visual Studio Feedback Client
 
@@ -37,7 +37,7 @@ Należy również zwrócić uwagę na następujące kwestie dotyczące strony:
 
 Podczas ustawiania zależności w manifeście VSIX należy określić tylko identyfikatory składników. Użyj tabel na tej stronie, aby określić nasze minimalne zależności składników. W niektórych scenariuszach może to oznaczać, że należy określić tylko jeden składnik z obciążenia. W innych scenariuszach może oznaczać, że należy określić wiele składników z pojedynczego obciążenia lub wielu składników z wielu obciążeń. Aby uzyskać więcej informacji, zobacz stronę [How to: migruje Projekty rozszerzalności do programu Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) .
 
-Aby uzyskać więcej informacji na temat korzystania z tych identyfikatorów, zobacz [Używanie parametrów wiersza polecenia do instalowania programu Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md) . Aby uzyskać listę identyfikatorów obciążeń i składników dla innych produktów, zobacz stronę [obciążenia i identyfikatory składników programu Visual Studio 2017](workload-and-component-ids.md) .
+Aby uzyskać więcej informacji na temat korzystania z tych identyfikatorów, zobacz temat [używanie Command-Line parametrów w celu zainstalowania strony programu Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md) . Aby uzyskać listę identyfikatorów obciążeń i składników dla innych produktów, zobacz stronę [obciążenia i identyfikatory składników programu Visual Studio 2017](workload-and-component-ids.md) .
 
 ## <a name="feedback-client"></a>Feedback Client
 

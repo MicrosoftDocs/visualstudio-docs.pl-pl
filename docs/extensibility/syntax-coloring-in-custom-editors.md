@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 74900b9a-baef-432a-8231-4568fb5e19ad
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8aac72cbc26ff5e6abf96259fd161cba63b3b2af
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: bedfdffd91c4e15de556609a030f7e0238a7e7d3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97716071"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880713"
 ---
 # <a name="syntax-coloring-in-custom-editors"></a>Kolorowanie składni w edytorach niestandardowych
 Edytory SDK środowiska programu Visual Studio, w tym podstawowy edytor, wykorzystują usługi językowe do identyfikowania określonych elementów składniowych i wyświetlania ich z określonymi kolorami dla danego widoku dokumentu.

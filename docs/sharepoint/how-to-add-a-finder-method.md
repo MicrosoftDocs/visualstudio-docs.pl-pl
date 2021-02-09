@@ -16,15 +16,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], Finder method
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b7e2bb74278194878ed4496c12c918707cdc1e6e
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: e4eade25f53bfd58f920a8d2a046d7d09ee98ac8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915092"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879686"
 ---
 # <a name="how-to-add-a-finder-method"></a>Instrukcje: Dodawanie metody wyszukiwania
   Aby włączyć usługę łączności danych biznesowych (BDC) do wyświetlania listy jednostek w składniku Web Part lub liście, należy utworzyć metodę *wyszukiwania* . Metoda wyszukiwania to specjalna metoda zwracająca kolekcję wystąpień jednostek. Aby uzyskać więcej informacji, zobacz [Projektowanie modelu łączności danych firmowych](../sharepoint/designing-a-business-data-connectivity-model.md).

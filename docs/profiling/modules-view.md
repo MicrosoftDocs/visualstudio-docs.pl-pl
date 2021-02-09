@@ -12,16 +12,16 @@ helpviewer_keywords:
 ms.assetid: 4314a404-2120-425b-be42-180cd4bac840
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d0ff17c128af78c1772ad85597153332a0848062
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 412b40fdb38e4931bcefb05bde8d695955d6c05a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722948"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879738"
 ---
 # <a name="modules-view"></a>Widok modułów
 Widok moduły wyświetla listę modułów danych profilowania. Każdy moduł jest węzłem głównym drzewa hierarchicznego. Profilowane funkcje modułu są wymienione pod węzłem modułu. Jeśli dane profilowania zostały zebrane przy użyciu metody próbkowania, informacje o wierszu są wyświetlane poniżej węzła funkcji i dane wskaźnika instrukcji znajdują się pod węzłem wiersza.
@@ -32,7 +32,7 @@ Widok moduły wyświetla listę modułów danych profilowania. Każdy moduł jes
 
  Kolumny, które są dostępne w widoku moduły, zależą od metody profilowania (próbkowania lub Instrumentacji), która została użyta do zebrania danych i czy dane pamięci platformy .NET zostały zebrane w ramach uruchomienia profilowania.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Widok modułów](../profiling/modules-view-sampling-data.md)
 - [Widok modułów](../profiling/modules-view-instrumentation-data.md)
 - [Widok modułów-Instrumentacja](../profiling/modules-view-dotnet-memory-instrumentation-data.md)

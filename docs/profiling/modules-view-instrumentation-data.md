@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 895b9589-1987-4160-916f-53b898a69cf0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7012f2deffa2e01057fd79f52ec2fcac3674f7eb
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 031068d159b7004b7cfe7fcf1c747c2eb582afc8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722974"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879777"
 ---
 # <a name="modules-view---instrumentation-data"></a>Widok modułów — dane Instrumentacji
 Widok moduły przedstawia dane wydajności pogrupowane według modułów, które znajdowały się w danych profilowania. Funkcje modułu są wymienione poniżej węzła modułu.
@@ -82,7 +82,7 @@ Widok moduły przedstawia dane wydajności pogrupowane według modułów, które
 |**Maksymalny czas wyłączny aplikacji**|— W przypadku funkcji maksymalny czas wyłączny aplikacji wywołania tej funkcji.<br />— W przypadku modułu maksymalna, wyłączny czas aplikacji dla wszystkich wywołań funkcji w module.|
 |**Minimalny czas wyłączny aplikacji**|— W przypadku funkcji jest to minimalny czas wyłączny aplikacji wywołania tego modułu lub funkcji.<br />— W przypadku modułu minimalna, wyłączny czas wszystkich wywołań funkcji w module.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Widok modułów](../profiling/modules-view-sampling-data.md)
 - [Widok modułów-Instrumentacja](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
 - [Widok modułów-próbkowanie](../profiling/modules-view-dotnet-memory-sampling-data.md)
