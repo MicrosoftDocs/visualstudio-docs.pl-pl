@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 53d648f0-6c11-4337-badd-c43f3872b62c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94df9acc6a0478ba2cb36022bc8618c69be97b8c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 56c74b265331b67564856baa003632d8d778bfb3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722400"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898902"
 ---
 # <a name="idebugprogramengines2"></a>IDebugProgramEngines2
 Ten interfejs jest używany przez węzły programu w celu określenia wszystkich możliwych aparatów debugowania (DE), które mogą debugować ten program.

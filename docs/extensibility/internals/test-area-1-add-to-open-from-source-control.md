@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 5b3b5b08-5e9b-41be-ac72-c63957faed22
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 608d3489f657cf38d310e67a17bdd48a529de3e5
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: dbcbc197a610f7caf2a1641a291db18fcea9dbda
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877744"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898330"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>Obszar testowy 1: dodawanie do kontroli kodu źródłowego i otwieranie z poziomu kontroli kodu źródłowego
 Ten obszar testowania wtyczki kontroli źródła obejmuje umieszczanie rozwiązań lub projektów pod kontrolą źródła oraz pobieranie ich z kontroli źródła.

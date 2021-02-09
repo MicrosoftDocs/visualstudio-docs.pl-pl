@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 5e5f3436-6bad-4fd2-8823-6a30353ba648
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 926cb77fe9477b7dc78c35c2ab58f9b73530e4fa
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: 64738bfe67ccc53970087100cd6c37a9881e6b2a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761013"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898315"
 ---
 # <a name="how-to-use-built-in-colorable-items"></a>Instrukcje: korzystanie z wbudowanych elementów z możliwością kolorowania
 Przed użyciem wbudowanych elementów, należy najpierw zasygnalizować zintegrowane środowisko programistyczne (IDE), które nie udostępniają własnych niestandardowych elementów, które w tym przypadku byłyby <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> obiektami. W tym celu należy ustawić wpis rejestru dla usługi językowej.
@@ -34,7 +34,7 @@ Przed użyciem wbudowanych elementów, należy najpierw zasygnalizować zintegro
    > [!NOTE]
    > Nie ustawiaj tego wpisu rejestru, jeśli udostępniasz elementy niestandardowe. Aby uzyskać więcej informacji, zobacz [niestandardowe elementy do wykonania](../../extensibility/internals/custom-colorable-items.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Kolorowanie składni w edytorach niestandardowych](../../extensibility/syntax-coloring-in-custom-editors.md)
 - [Kolorowanie składni w starszej wersji usługi językowej](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
 - [Implementowanie kolorowania składni](../../extensibility/internals/implementing-syntax-coloring.md)

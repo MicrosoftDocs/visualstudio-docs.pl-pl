@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 2c128d2a-aaa6-4814-aa95-e07056afe338
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ce87f71a465f9c6452fa713fd8a7bdf523e801a3
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: e73834888009ff547bb4252aaedafb713ce9c2fb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399472"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897470"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Instrukcje: generowanie fragmentu kodu XML na podstawie schematu XML
 
@@ -52,13 +52,13 @@ Kroki opisane w tej sekcji przedstawiają sposób użycia funkcji fragmentu kodu
 
 ### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Aby utworzyć nowy plik XML i skojarzyć go ze schematem XML
 
-1. W menu **plik** wskaż polecenie **Nowy** , a następnie kliknij polecenie **plik**.
+1. W menu **plik** wskaż polecenie **Nowy**, a następnie kliknij polecenie **plik**.
 
 2. W okienku **Szablony** wybierz pozycję **plik XML** , a następnie kliknij pozycję **Otwórz**.
 
      Nowy plik zostanie otwarty w edytorze. Plik zawiera domyślną deklarację XML, `<?xml version="1.0" encoding="utf-8">` .
 
-3. W oknie właściwości dokumentu kliknij przycisk przeglądania ( **...** ) w polu **schematy** .
+3. W oknie właściwości dokumentu kliknij przycisk przeglądania (**...**) w polu **schematy** .
 
      Zostanie wyświetlone okno dialogowe **schematy XSD** .
 
@@ -68,7 +68,7 @@ Kroki opisane w tej sekcji przedstawiają sposób użycia funkcji fragmentu kodu
 
 5. Wybierz plik schematu, a następnie kliknij przycisk **Otwórz**.
 
-6. Kliknij pozycję **OK**.
+6. Kliknij przycisk **OK**.
 
      Schemat XML jest teraz skojarzony z dokumentem XML.
 

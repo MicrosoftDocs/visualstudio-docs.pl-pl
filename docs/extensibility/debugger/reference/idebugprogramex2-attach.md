@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 33b22b2f-431e-4205-9441-d28a9c928c97
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fcb52a96074b783043af1e908cf454466df74c30
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 30818627f8ebc293e444b43adb0590db077da4a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722381"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898832"
 ---
 # <a name="idebugprogramex2attach"></a>IDebugProgramEx2::Attach
 Dołącz sesję do programu.
@@ -28,7 +28,7 @@ Dołącz sesję do programu.
 ## <a name="syntax"></a>Składnia
 
 ```cpp
-HRESULT Attach( 
+HRESULT Attach( 
    IDebugEventCallback2* pCallback,
    DWORD                 dwReason,
    IDebugSession2*       pSession
@@ -36,7 +36,7 @@ HRESULT Attach( 
 ```
 
 ```csharp
-int Attach( 
+int Attach( 
    IDebugEventCallback2 pCallback,
    uint                 dwReason,
    IDebugSession2       pSession

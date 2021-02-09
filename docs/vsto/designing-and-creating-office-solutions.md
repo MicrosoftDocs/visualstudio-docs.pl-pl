@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Office project types in Visual Studio
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 191de013c94bfede7d1ddac5f3dd0392143e08dc
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: df634a7c242819e4f41a6fddeae4099a3d25fae2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847536"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897641"
 ---
 # <a name="design-and-create-office-solutions"></a>Projektowanie i tworzenie rozwiązań pakietu Office
 
@@ -93,7 +93,7 @@ Program Visual Studio zawiera szablony projektów, których można użyć do two
 ## <a name="referenced-assemblies"></a>Przywoływane zestawy
  Zestaw może odwoływać się do innych zestawów, które są wymienione w odwołaniach projektu. Jednak jeden zestaw projektów na poziomie dokumentu nie może odwoływać się do innego zestawu projektu na poziomie dokumentu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Szablony projektów pakietu Office — omówienie](../vsto/office-project-templates-overview.md)
 - [Instrukcje: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Projekty pakietu Office w środowisku programu Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md)

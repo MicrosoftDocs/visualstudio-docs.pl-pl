@@ -6,15 +6,15 @@ ms.date: 11/21/2018
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e38505b800037be63b326003bfa6c7fc5396126
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: 11696d095623d27811b1fb02ef295350d9e33e1b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006656"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898019"
 ---
 # <a name="environment-settings-for-visual-studio"></a>Ustawienia środowiska dla programu Visual Studio
 
@@ -48,7 +48,7 @@ Aby zmienić ustawienia programistyczne po otwarciu programu Visual Studio po ra
 
 1. Na stronie **Resetowanie ukończone** wybierz pozycję **Zamknij**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Synchronizowanie ustawień na wielu komputerach](synchronized-settings-in-visual-studio.md)
 - [Personalizowanie środowiska IDE programu Visual Studio](personalizing-the-visual-studio-ide.md)

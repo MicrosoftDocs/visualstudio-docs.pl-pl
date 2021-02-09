@@ -6,15 +6,15 @@ ms.date: 06/01/2018
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 34765cc7ac303bd44c3c4ccca87ea7c00a36ccda
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 6ff233b959b4ad691646c5e47c659b398b283b5c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598396"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898006"
 ---
 # <a name="configure-visual-studio-as-a-wip-exempt-app"></a>Konfigurowanie programu Visual Studio jako aplikacji z wykluczeniem PWT
 
@@ -36,6 +36,6 @@ Ponieważ program Visual Studio zawiera wiele plików binarnych, [Utwórz plik z
 
 Aby określić, gdzie program Visual Studio może uzyskać dostęp do danych przedsiębiorstwa w sieci, wykonaj następujące [kroki, aby określić, gdzie chronione aplikacje mogą znajdować i wysyłać dane przedsiębiorstwa](/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure#choose-where-apps-can-access-enterprise-data). Aby uniemożliwić systemowi Windows blokowanie połączeń z zasobami w chmurze za pośrednictwem adresu IP, należy dodać do \* Ustawienia/AppCompat \* /ciąg.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Zachowanie aplikacji przy użyciu PWT](/windows/security/information-protection/windows-information-protection/app-behavior-with-wip)

@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: cae81c95-83cd-4ab6-8a98-84ef977a2f6d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f13edc60a2c05d50e2118e24344bf9d475e3f5f
-ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
+ms.openlocfilehash: c9ff3fccecb785feb222eeadf653d8fd9d8c17df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98883621"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897687"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>Instrukcje: Instalowanie autonomicznego profilera
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] udostępnia oparty na wiersz polecenia Profiler autonomiczny, który można uruchomić bez instalowania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] środowiska IDE. Taka sytuacja występuje, gdy komputer nie ma zainstalowanego środowiska deweloperskiego. Na przykład nie należy instalować środowiska deweloperskiego na produkcyjnym serwerze sieci Web.
@@ -54,7 +54,7 @@ ms.locfileid: "98883621"
 
 6. Użyj narzędzia [VSPerfReport](../profiling/vsperfreport.md) , aby serializować symbole do pliku danych profilowania (. vsp). Użyj **VSPerfReport/Summary: wszystkie przełączniki/PACKSYMBOLS** . Jeśli nie masz symboli wstawionych do pliku danych, upewnij się, że masz ustawioną zmienną środowiskową _NT_SYMBOL_PATH.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Profil z wiersza polecenia](../profiling/using-the-profiling-tools-from-the-command-line.md)
 - [Przewodnik: profilowanie wiersza polecenia przy użyciu metody instrumentacji](command-line-profiling-of-stand-alone-applications.md)
 - [Instrukcje: odwołania do informacji o symbolach w systemie Windows](../profiling/how-to-reference-windows-symbol-information.md)

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Office solutions [Office development in Visual Studio], developing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fbfe569e587c53aede6d550bc20527ad8d0fd328
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 012f08b4a4a8364d278322b7fe057231183fa233
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845001"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897592"
 ---
 # <a name="develop-office-solutions"></a>Opracowywanie rozwiązań pakietu Office
   Po zaprojektowaniu projektu przy użyciu narzędzi deweloperskich pakietu Office w programie Visual Studio i skonfigurowania plików projektu można rozpocząć skoncentrowanie się na implementowaniu kodu i niestandardowego interfejsu użytkownika.
@@ -60,7 +60,7 @@ ms.locfileid: "96845001"
 |[Obsługa wątkowości w pakiecie Office](../vsto/threading-support-in-office.md)|Zawiera omówienie pracy z wieloma wątkami w rozwiązaniach pakietu Office.|
 |[Ułatwienia dostępu w projektach pakietu Office](../vsto/accessibility-in-office-projects.md)|Zawiera opis funkcji ułatwień dostępu dostępnych w rozwiązaniach pakietu Office.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: Tworzenie i modyfikowanie właściwości dokumentu niestandardowego](../vsto/how-to-create-and-modify-custom-document-properties.md)
 - [Instrukcje: odczytywanie i zapisywanie właściwości dokumentu](../vsto/how-to-read-from-and-write-to-document-properties.md)
 - [Instrukcje: kierowanie wielojęzycznego interfejsu użytkownika pakietu Office](../vsto/how-to-target-the-office-multilingual-user-interface.md)

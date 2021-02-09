@@ -14,15 +14,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <description> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 377599e770a93faca9e283ec543091508b773bc7
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 9f065dd07e901ee0d59b39f1096cc351cd70bc02
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846236"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897598"
 ---
 # <a name="ltdescriptiongt-element-office-development-in-visual-studio"></a>&lt;Description — &gt; element (Programowanie Office w Visual Studio)
   `description`Element `vstov4` przestrzeni nazw przechowuje opis rozwiązania pakietu Office, które pojawia się w oknie dialogowym dodatki COM Microsoft Office aplikacji.
@@ -53,7 +53,7 @@ ms.locfileid: "96846236"
 </vstov4:description>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md)
 - [Manifesty wdrożenia dla rozwiązań pakietu Office](../vsto/deployment-manifests-for-office-solutions.md)
