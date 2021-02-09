@@ -23,15 +23,15 @@ helpviewer_keywords:
 ms.assetid: 0f6f3b7c-ce2c-4b4d-b14f-7589dbed5444
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 74b6b6b6a8f7a9f5f234a9b46c799e6e0580536f
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 97c0730b2c1fd8d534fed232846dcca76c58ce2e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761332"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870639"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Specyfikatory formatu dla języka C++ w debugerze programu Visual Studio
 Można zmienić format, w którym wartość jest wyświetlana w oknach **czujka**, **autostarty** i **lokalne** przy użyciu specyfikatorów formatu.

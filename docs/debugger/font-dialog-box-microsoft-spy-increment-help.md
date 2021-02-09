@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 414c42a5-7168-46a9-bbea-6ab10f2d82a8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c3a3d5babc0fe78098661f22dd84fca1eac9b19
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: b0213cef21363b62a0a889dc66b9a182b0ed535e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96862831"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870652"
 ---
 # <a name="font-dialog-box-microsoft-spy-help"></a>Okno dialogowe czcionek (Microsoft Spy++ — Pomoc)
 To okno dialogowe służy do konfigurowania czcionki znakowej używanej w oknie [widoki programu Spy + +](../debugger/spy-increment-views.md) . Aby wyświetlić to okno dialogowe, rozwiń menu **Widok** i wybierz polecenie **czcionka**.

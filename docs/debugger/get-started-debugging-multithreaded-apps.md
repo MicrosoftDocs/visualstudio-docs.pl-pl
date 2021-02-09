@@ -14,15 +14,15 @@ helpviewer_keywords:
 - tutorials, multithreaded debugging
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 30fd29357ab8b42ea6a8baa6412f9ccf7eafed28
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28f9ab13cca4f1d31973f9526063eaa56574dcf4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350514"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870522"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Rozpocznij debugowanie aplikacji wielowątkowych (C#, Visual Basic, C++)
 
@@ -60,17 +60,17 @@ Najpierw musisz mieć projekt aplikacji wielowątkowej. Poniżej przedstawiono p
    Na górnym pasku menu wybierz pozycję **plik**  >  **Nowy**  >  **projekt**. W lewym okienku okna dialogowego **Nowy projekt** wybierz następujące opcje:
 
    - W przypadku aplikacji C# w obszarze **Visual C#** wybierz pozycję **Windows Desktop**, a następnie w środkowym okienku wybierz pozycję **aplikacja konsoli (.NET Framework)**.
-   - W przypadku aplikacji Visual Basic w obszarze **Visual Basic**wybierz pozycję **Windows Desktop**, a następnie w środkowym okienku wybierz pozycję **aplikacja konsoli (.NET Framework)**.
+   - W przypadku aplikacji Visual Basic w obszarze **Visual Basic** wybierz pozycję **Windows Desktop**, a następnie w środkowym okienku wybierz pozycję **aplikacja konsoli (.NET Framework)**.
    - W przypadku aplikacji w języku C++ w obszarze **Visual C++** wybierz pozycję **Windows Desktop**, a następnie wybierz pozycję **Aplikacja konsolowa systemu Windows**.
 
    Jeśli nie widzisz **aplikacji konsolowej (.NET Core)** lub, dla języka C++, szablonu projektu **aplikacji konsoli** , przejdź do pozycji **Narzędzia**  >  **Pobierz narzędzia i funkcje...**, co spowoduje otwarcie Instalator programu Visual Studio. Wybierz pozycję **Programowanie aplikacji klasycznych dla platformy .NET** lub **Programowanie aplikacji klasycznych w języku C++** , a następnie wybierz polecenie **Modyfikuj**.
 
    Następnie wpisz nazwę, na przykład *MyThreadWalkthroughApp* , i kliknij przycisk **OK**.
 
-   Wybierz pozycję **OK**.
+   Wybierz przycisk **OK**.
    ::: moniker-end
 
-   Zostanie wyświetlony nowy projekt konsoli. Po utworzeniu projektu zostanie wyświetlony plik źródłowy. W zależności od wybranego języka plik źródłowy może mieć nazwę *program.cs*, *MyThreadWalkthroughApp. cpp*lub *Module1. vb*.
+   Zostanie wyświetlony nowy projekt konsoli. Po utworzeniu projektu zostanie wyświetlony plik źródłowy. W zależności od wybranego języka plik źródłowy może mieć nazwę *program.cs*, *MyThreadWalkthroughApp. cpp* lub *Module1. vb*.
 
 1. Usuń kod, który pojawia się w pliku źródłowym i zastąp go odpowiednią przykładową listą poniżej.
 
@@ -242,7 +242,7 @@ Najpierw musisz mieć projekt aplikacji wielowątkowej. Poniżej przedstawiono p
 
 3. W edytorze kodu źródłowego Zlokalizuj wiersz zawierający punkt przerwania.
 
-### <a name="discover-the-thread-marker"></a><a name="ShowThreadsInSource"></a>Odnajdź znacznik wątku  
+### <a name="discover-the-thread-marker"></a><a name="ShowThreadsInSource"></a>Odnajdź znacznik wątku  
 
 1. Na pasku narzędzi debugowania wybierz pozycję **Pokaż wątki w źródle** przycisk ![Pokaż wątki w źródle](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker").
 
@@ -260,7 +260,7 @@ Najpierw musisz mieć projekt aplikacji wielowątkowej. Poniżej przedstawiono p
 
 W oknie **stosów równoległych** można przełączać się między widokiem wątków i widokiem zadań (w przypadku programowania opartego na zadaniach), a informacje stosu wywołań dla każdego wątku. W tej aplikacji możemy użyć widoku wątki.
 
-1. Otwórz okno **stosów równoległych** , wybierając pozycję **Debuguj**  >  **Windows**  >  **równoległe stosy**systemu Windows. Powinna zostać wyświetlona coś podobnego do poniższego. Dokładne informacje będą się różnić w zależności od bieżącej lokalizacji każdego wątku, sprzętu i języka programowania.
+1. Otwórz okno **stosów równoległych** , wybierając pozycję **Debuguj**  >    >  **równoległe stosy** systemu Windows. Powinna zostać wyświetlona coś podobnego do poniższego. Dokładne informacje będą się różnić w zależności od bieżącej lokalizacji każdego wątku, sprzętu i języka programowania.
 
     ![Okno stosów równoległych](../debugger/media/dbg-multithreaded-parallel-stacks.png "ParallelStacksWindow")
 
@@ -345,7 +345,7 @@ Można ustawić punkty przerwania w różnych warunkach, takich jak nazwa wątku
     ![Warunkowy punkt przerwania](../debugger/media/dbg-multithreaded-conditional-breakpoint.png "ConditionalBreakpoint")
 
     > [!TIP]
-    > Jeśli jesteś bardziej interesujący w określonym wątku, użyj nazwy wątku lub identyfikatora wątku dla warunku. Aby to zrobić, w oknie **Ustawienia punktu przerwania** wybierz opcję **Filtr** zamiast **wyrażenia warunkowego**i postępuj zgodnie ze wskazówkami dotyczącymi filtru. Możesz chcieć nazwać wątki w kodzie aplikacji, ponieważ identyfikatory wątków zmieniają się po ponownym uruchomieniu debugera.
+    > Jeśli jesteś bardziej interesujący w określonym wątku, użyj nazwy wątku lub identyfikatora wątku dla warunku. Aby to zrobić, w oknie **Ustawienia punktu przerwania** wybierz opcję **Filtr** zamiast **wyrażenia warunkowego** i postępuj zgodnie ze wskazówkami dotyczącymi filtru. Możesz chcieć nazwać wątki w kodzie aplikacji, ponieważ identyfikatory wątków zmieniają się po ponownym uruchomieniu debugera.
 
 3. Zamknij okno **Ustawienia punktu przerwania** .
 
@@ -362,7 +362,7 @@ Można ustawić punkty przerwania w różnych warunkach, takich jak nazwa wątku
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Debuguj aplikacje wielowątkowe](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Instrukcje: przełączanie na inny wątek w trakcie debugowania](../debugger/how-to-switch-to-another-thread-while-debugging.md)
 - [Instrukcje: korzystanie z okna stosu równoległego](../debugger/using-the-parallel-stacks-window.md)
 - [Instrukcje: korzystanie z okna równoległego wyrażenia kontrolnego](../debugger/how-to-use-the-parallel-watch-window.md)

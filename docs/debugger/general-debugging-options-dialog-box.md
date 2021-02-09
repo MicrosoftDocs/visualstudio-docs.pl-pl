@@ -20,19 +20,19 @@ helpviewer_keywords:
 ms.assetid: b33aee0b-43c3-4c26-8ed4-bc673f491503
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b052c2cce3d396debb4fbaf8ce688ede3effb98
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: 928499957ca90dda718f324827968f10cbb3a141
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96863013"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870574"
 ---
 # <a name="general-debugging-options"></a>Ogólne opcje debugowania
 
-Aby ustawić opcje debugera programu Visual Studio, **Tools** wybierz  >  **Opcje** narzędzia i w obszarze **debugowanie** zaznacz lub usuń zaznaczenie pól obok opcji **Ogólne** . Wszystkie ustawienia domyślne można przywrócić za pomocą **Narzędzia**  >  **Importuj i Eksportuj ustawienia**  >  **Zresetuj wszystkie ustawienia**. Aby zresetować podzbiór ustawień, Zapisz ustawienia za pomocą **Kreatora importowania i eksportowania ustawień** przed wprowadzeniem zmian, które chcesz przetestować, a następnie zaimportuj zapisane ustawienia później.
+Aby ustawić opcje debugera programu Visual Studio, wybierz  >  **Opcje** narzędzia i w obszarze **debugowanie** zaznacz lub usuń zaznaczenie pól obok opcji **Ogólne** . Wszystkie ustawienia domyślne można przywrócić za pomocą **Narzędzia**  >  **Importuj i Eksportuj ustawienia**  >  **Zresetuj wszystkie ustawienia**. Aby zresetować podzbiór ustawień, Zapisz ustawienia za pomocą **Kreatora importowania i eksportowania ustawień** przed wprowadzeniem zmian, które chcesz przetestować, a następnie zaimportuj zapisane ustawienia później.
 
 Można ustawić następujące opcje **Ogólne** :
 
