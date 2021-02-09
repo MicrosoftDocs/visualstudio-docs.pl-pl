@@ -22,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d2ab8a723b69f4c5930c91a10719a2107ad83003
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: ba53fefcc5d29cb47bd3a6912ad7af34dd8deabb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136800"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850389"
 ---
 # <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>Twórz i czyść projekty i rozwiązania w programie Visual Studio
 
@@ -44,7 +44,7 @@ Korzystając z procedur opisanych w tym temacie, można tworzyć, odbudować lub
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>Aby skompilować, skompilować lub wyczyścić całe rozwiązanie
 
-1. W **Eksplorator rozwiązań**wybierz lub Otwórz rozwiązanie.
+1. W **Eksplorator rozwiązań** wybierz lub Otwórz rozwiązanie.
 
 2. Na pasku menu wybierz **kompilacja**, a następnie wybierz jedno z następujących poleceń:
 
@@ -59,7 +59,7 @@ Korzystając z procedur opisanych w tym temacie, można tworzyć, odbudować lub
 
 ## <a name="to-build-or-rebuild-a-single-project"></a>Aby skompilować lub skompilować pojedynczy projekt
 
-1. W **Eksplorator rozwiązań**wybierz lub Otwórz projekt.
+1. W **Eksplorator rozwiązań** wybierz lub Otwórz projekt.
 
 2. Na pasku menu wybierz **kompilacja**, a następnie wybierz opcję **Kompiluj** *ProjectName* lub **Skompiluj ponownie** *ProjectName*.
 
@@ -73,7 +73,7 @@ Korzystając z procedur opisanych w tym temacie, można tworzyć, odbudować lub
 
 2. W oknie dialogowym **Opcje** rozwiń węzeł **projekty i rozwiązania** , a następnie wybierz stronę **kompilacja i uruchomienie** .
 
-     Zostanie otwarte okno dialogowe Opcje **kompilowania i uruchamiania**  >  **projektów i rozwiązań**  >  **Options** .
+     Zostanie otwarte okno dialogowe Opcje **kompilowania i uruchamiania**  >  **projektów i rozwiązań**  >   .
 
 3. Zaznacz pole wyboru  **Kompiluj tylko projekty startowe i zależności przy uruchamianiu** .
 
@@ -81,13 +81,13 @@ Korzystając z procedur opisanych w tym temacie, można tworzyć, odbudować lub
 
     - Na pasku menu wybierz **Debuguj**  >  **Start** (**F5**).
 
-    - Na pasku menu wybierz kolejno opcje **Kompiluj**kompilacje  >  **rozwiązanie** (**Ctrl** + **SHIFT** + **B**).
+    - Na pasku menu wybierz kolejno opcje **Kompiluj** kompilacje  >  **rozwiązanie** (**Ctrl** + **SHIFT** + **B**).
 
     Gdy to pole wyboru jest wyczyszczone, wszystkie projekty, ich zależności i pliki rozwiązań są kompilowane po uruchomieniu jednego z powyższych poleceń. To pole wyboru jest domyślnie wyczyszczone.
 
 ## <a name="to-build-only-the-selected-visual-c-project"></a>Aby skompilować tylko wybrany projekt Visual C++
 
-Wybierz [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projekt, a następnie na pasku menu wybierz kolejno opcje **Kompiluj**  >  **projekt**i jedno z następujących poleceń:
+Wybierz [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projekt, a następnie na pasku menu wybierz kolejno opcje **Kompiluj**  >  **projekt** i jedno z następujących poleceń:
 
 - **Tylko kompilacja** *ProjectName*
 
@@ -101,7 +101,7 @@ Te polecenia mają zastosowanie tylko do [!INCLUDE[vcprvc](../code-quality/inclu
 
 ## <a name="to-compile-multiple-c-project-items"></a>Aby skompilować wiele elementów projektu C++
 
-W **Eksplorator rozwiązań**wybierz wiele plików, które mogą być skompilowanymi akcjami, otwórz menu skrótów dla jednego z tych plików, a następnie wybierz polecenie **Kompiluj**.
+W **Eksplorator rozwiązań** wybierz wiele plików, które mogą być skompilowanymi akcjami, otwórz menu skrótów dla jednego z tych plików, a następnie wybierz polecenie **Kompiluj**.
 
 Jeśli pliki mają zależności, pliki zostaną skompilowane w kolejności zależności. Operacja kompilowania zakończy się niepowodzeniem, jeśli pliki wymagają prekompilowanego nagłówka, który nie jest dostępny podczas kompilowania. Operacja Kompiluj używa bieżącej aktywnej konfiguracji rozwiązania.
 

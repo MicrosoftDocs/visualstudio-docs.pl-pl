@@ -24,15 +24,15 @@ helpviewer_keywords:
 - custom task panes [Office development in Visual Studio], about custom task panes
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b08e0e3bbc9f45b33ecd0248179011113db7a779
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 8ed86cb10f6521e5863562cdb67e768b1a2367d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844183"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850038"
 ---
 # <a name="custom-task-panes"></a>Niestandardowe okienka zadań
   Okienka zadań to panele interfejsu użytkownika, które zwykle są zadokowane po jednej stronie okna w aplikacji Microsoft Office. Niestandardowe okienka zadań umożliwiają utworzenie własnego okienka zadań i udostępnienie użytkownikom znanego interfejsu umożliwiającego dostęp do funkcji rozwiązania. Na przykład interfejs może zawierać kontrolki, które uruchamiają kod, aby modyfikować dokumenty lub wyświetlać dane ze źródła danych.
@@ -116,7 +116,7 @@ ms.locfileid: "96844183"
 
  Poniższa tabela zawiera listę zdarzeń, które można obsłużyć w celu reagowania na zmiany wprowadzane przez użytkownika do niestandardowego okienka zadań.
 
-|Zadanie|Wydarzenie|
+|Zadanie|Zdarzenie|
 |----------|-----------|
 |Reagowanie, gdy użytkownik zmieni lokalizację okienka zadań.|<xref:Microsoft.Office.Tools.CustomTaskPane.DockPositionChanged>|
 |Reagowanie, gdy użytkownik ukrywa okienko zadań lub wyświetla je.|<xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged>|
@@ -217,7 +217,7 @@ ms.locfileid: "96844183"
 
 - [Microsoft.Office.Interop.PowerPoint.EApplication_Event. WindowDeactivate](/previous-versions/office/developer/office-2010/ff763093(v=office.14))
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: Dodawanie niestandardowego okienka zadań do aplikacji](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
 - [Przewodnik: Automatyzowanie aplikacji z niestandardowego okienka zadań](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)
 - [Przewodnik: synchronizowanie niestandardowego okienka zadań z przyciskiem wstążki](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)

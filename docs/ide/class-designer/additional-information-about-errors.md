@@ -27,15 +27,15 @@ helpviewer_keywords:
 ms.assetid: 79d70e70-704c-4255-ab68-c10d6949470e
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 575f9b74c7931ecc752f4c2e56866534aaa1e3d5
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 5bf6f7f9fc01e1c1a047edaf1102fe6a23b35239
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903107"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850350"
 ---
 # <a name="class-designer-errors"></a>Błędy Projektanta klas
 
@@ -48,6 +48,6 @@ Pomoc dotyczącą innych błędów i ostrzeżeń można znaleźć w następując
 - [Współpraca z kodem Visual C++](working-with-visual-cpp-code.md) zawiera informacje dotyczące rozwiązywania problemów z wyświetlaniem języka C++ w diagramie klas.
 - [Forum Projektant klas programu Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsclassdesigner) zawiera Forum dotyczące pytań dotyczących **Projektant klas**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Projektowanie i wyświetlanie klas i typów](designing-and-viewing-classes-and-types.md)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 0eac1b54-2711-4e4b-9654-a0c429c08c8f
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fbde07ec9825f094777f7e9b962e8394595e180
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: a27f5ae8320e942d5167fcc8260179f8cec96e37
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903003"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850285"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>Instrukcje: Dodawanie diagramów klas do projektów
 
@@ -77,7 +77,7 @@ Tworzony jest automatycznie wypełniony Diagram klas.
 > [!NOTE]
 > Projektant klas nie jest dostępna w projektach .NET Core.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Instrukcje: Tworzenie typów przy użyciu Projektant klas](how-to-create-types.md)
 - [Instrukcje: wyświetlanie istniejących typów](how-to-view-existing-types.md)
