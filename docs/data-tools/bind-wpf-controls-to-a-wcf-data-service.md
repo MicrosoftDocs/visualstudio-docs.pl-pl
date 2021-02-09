@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 8823537c-82f0-41f7-bf30-705f0e5e59fd
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4368c9134539202b1bde2be7a2d8c39e5ebc3e74
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: 9f3c4cc273d89b5d1fc74596f1f5565177319da7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518532"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867363"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Powiązywanie kontrolek WPF z usługą danych programu WCF
 
@@ -52,7 +52,7 @@ Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
 
 Wcześniejsza znajomość następujących pojęć jest również przydatna, ale nie jest wymagana do ukończenia przewodnika:
 
-- [Usługi danych programu WCF](/dotnet/framework/data/wcf/wcf-data-services-overview).
+- [WCF Data Services](/dotnet/framework/data/wcf/wcf-data-services-overview).
 
 - Modele danych w programie [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] .
 
@@ -72,13 +72,13 @@ Aby udostępnić dane aplikacji przy użyciu usługi danych programu WCF, należ
 
 1. W menu **projekt** kliknij polecenie **Dodaj nowy element**.
 
-2. Na liście zainstalowane szablony kliknij pozycję **dane** , a następnie wybierz element projektu **ADO.NET Entity Data Model** .
+2. Na liście zainstalowane szablony kliknij pozycję **dane**, a następnie wybierz element projektu **ADO.NET Entity Data Model** .
 
 3. Zmień nazwę na `AdventureWorksModel.edmx` , a następnie kliknij przycisk **Dodaj**.
 
      Zostanie otwarty Kreator **Entity Data Model** .
 
-4. Na stronie **Wybierz zawartość modelu** kliknij pozycję **Generuj z bazy danych** , a następnie kliknij przycisk **dalej**.
+4. Na stronie **Wybierz zawartość modelu** kliknij pozycję **Generuj z bazy danych**, a następnie kliknij przycisk **dalej**.
 
 5. Na stronie **Wybierz połączenie danych** wybierz jedną z następujących opcji:
 
@@ -88,7 +88,7 @@ Aby udostępnić dane aplikacji przy użyciu usługi danych programu WCF, należ
 
 6. Na stronie **Wybierz połączenie danych** upewnij się, że zaznaczone jest pole **Zapisz ustawienia połączenia jednostki w App.Config jako** opcja, a następnie kliknij przycisk **dalej**.
 
-7. Na stronie **Wybierz obiekty bazy danych** rozwiń węzeł **tabele** , a następnie wybierz tabelę **SalesOrderHeader** .
+7. Na stronie **Wybierz obiekty bazy danych** rozwiń węzeł **tabele**, a następnie wybierz tabelę **SalesOrderHeader** .
 
 8. Kliknij przycisk **Finish** (Zakończ).
 
@@ -98,7 +98,7 @@ Utwórz usługę danych programu WCF, aby uwidocznić dane w Entity Data Model w
 
 1. W menu **projekt** wybierz polecenie **Dodaj nowy element**.
 
-2. Na liście **zainstalowane szablony** kliknij pozycję **Sieć Web** , a następnie wybierz element projekt **usługi danych programu WCF** .
+2. Na liście **zainstalowane szablony** kliknij pozycję **Sieć Web**, a następnie wybierz element projekt **usługi danych programu WCF** .
 
 3. W polu **Nazwa** wpisz `AdventureWorksService.svc` , a następnie kliknij przycisk **Dodaj**.
 
@@ -121,9 +121,9 @@ Należy skonfigurować usługę do działania w utworzonym Entity Data Model:
 
 Aby wyświetlić dane z usługi danych programu WCF, Utwórz nową aplikację WPF ze źródłem danych opartym na usłudze. W dalszej części tego instruktażu dodasz kontrolki powiązane z danymi do aplikacji.
 
-1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł rozwiązanie, kliknij polecenie **Dodaj** , a następnie wybierz pozycję **Nowy projekt**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł rozwiązanie, kliknij polecenie **Dodaj**, a następnie wybierz pozycję **Nowy projekt**.
 
-2. W oknie dialogowym **Nowy projekt** rozwiń pozycję **Visual C#** lub **Visual Basic** , a następnie wybierz pozycję **Windows**.
+2. W oknie dialogowym **Nowy projekt** rozwiń pozycję **Visual C#** lub **Visual Basic**, a następnie wybierz pozycję **Windows**.
 
 3. Wybierz szablon projektu **aplikacji WPF** .
 
@@ -139,7 +139,7 @@ Aby wyświetlić dane z usługi danych programu WCF, Utwórz nową aplikację WP
 
    Zostanie otwarty Kreator **konfiguracji źródła danych** .
 
-7. Na stronie **Wybierz typ źródła danych** kreatora wybierz pozycję **Usługa** , a następnie kliknij przycisk **dalej**.
+7. Na stronie **Wybierz typ źródła danych** kreatora wybierz pozycję **Usługa**, a następnie kliknij przycisk **dalej**.
 
 8. W **Dodaj odwołanie do usługi** okno dialogowe, kliknij przycisk **odkryj**.
 
@@ -147,7 +147,7 @@ Aby wyświetlić dane z usługi danych programu WCF, Utwórz nową aplikację WP
 
 9. W polu **przestrzeń nazw** wpisz **AdventureWorksService**.
 
-10. W polu **usługi** kliknij pozycję **AdventureWorksService. svc** , a następnie kliknij przycisk **OK**.
+10. W polu **usługi** kliknij pozycję **AdventureWorksService. svc**, a następnie kliknij przycisk **OK**.
 
     Program Visual Studio pobierze informacje o usłudze, a następnie powróci do kreatora **konfiguracji źródła danych** .
 
@@ -185,7 +185,7 @@ Utwórz kontrolki, które wyświetlają rekordy klientów, przeciągając `Sales
 
 2. Rozwiń węzeł **SalesOrderHeaders** .
 
-3. W tym przykładzie niektóre pola nie będą wyświetlane, więc kliknij menu rozwijane obok następujących węzłów i wybierz opcję **Brak** :
+3. W tym przykładzie niektóre pola nie będą wyświetlane, więc kliknij menu rozwijane obok następujących węzłów i wybierz opcję **Brak**:
 
     - **CreditCardApprovalCode**
 
@@ -297,7 +297,7 @@ Po zakończeniu tego instruktażu można wykonać następujące powiązane zadan
 
 - Dowiedz się, jak używać okna **źródła danych** w programie Visual Studio, aby wyświetlić powiązane dane (czyli dane w relacji nadrzędny-podrzędny) w kontrolkach WPF. Aby uzyskać więcej informacji, zobacz [Przewodnik: wyświetlanie powiązanych danych w aplikacji WPF](../data-tools/display-related-data-in-wpf-applications.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Wiązanie kontrolek WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Powiązywanie kontrolek WPF z zestawem danych](../data-tools/bind-wpf-controls-to-a-dataset.md)

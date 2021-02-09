@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 44205f7f8f12d453a7c1d93ec8fee6ed1a3c1765
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 71e6c03c4ed0319b45c5b6ef0b79f65abbfc9f73
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436800"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867194"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Tworzenie prostej aplikacji do obsługi danych za pomocą pakietu ADO.NET
 
@@ -49,7 +49,7 @@ Utwórz przykładową bazę danych, wykonując następujące czynności:
 
 3. W polu tekstowym **Nazwa serwera** wprowadź **(LocalDB) \mssqllocaldb**.
 
-4. W polu tekstowym **Nowa nazwa bazy danych** wprowadź **Sales** , a następnie wybierz **OK**.
+4. W polu tekstowym **Nowa nazwa bazy danych** wprowadź **Sales**, a następnie wybierz **OK**.
 
      Pusta baza danych **sprzedaży** jest tworzona i dodawana do węzła połączenia danych w Eksplorator serwera.
 
@@ -124,10 +124,10 @@ Utwórz przykładową bazę danych, wykonując następujące czynności:
 ## <a name="store-the-connection-string"></a>Przechowywanie parametrów połączenia
 Gdy aplikacja próbuje otworzyć połączenie z bazą danych, aplikacja musi mieć dostęp do parametrów połączenia. Aby uniknąć wprowadzania ciągu ręcznie w każdym formularzu, należy przechowywać ciąg w pliku *App.config* w projekcie i utworzyć metodę zwracającą ciąg, gdy metoda jest wywoływana z dowolnej formy w aplikacji.
 
-Parametry połączenia można znaleźć, klikając prawym przyciskiem myszy połączenie danych **sprzedaży** w **Eksplorator serwera** i wybierając pozycję **Właściwości**. Znajdź właściwość **ConnectionString** , a następnie użyj **klawiszy CTRL** + **a** , **Ctrl** + **C** , aby zaznaczyć i skopiować ciąg do Schowka.
+Parametry połączenia można znaleźć, klikając prawym przyciskiem myszy połączenie danych **sprzedaży** w **Eksplorator serwera** i wybierając pozycję **Właściwości**. Znajdź właściwość **ConnectionString** , a następnie użyj **klawiszy CTRL** + **a**, **Ctrl** + **C** , aby zaznaczyć i skopiować ciąg do Schowka.
 
 1. Jeśli używasz języka C#, w **Eksplorator rozwiązań** rozwiń węzeł **Właściwości** w obszarze projektu, a następnie otwórz plik **Settings. Settings** .
-    Jeśli używasz Visual Basic, w **Eksplorator rozwiązań** , kliknij przycisk **Pokaż wszystkie pliki** , rozwiń węzeł **mój projekt** , a następnie otwórz plik **Settings. Settings** .
+    Jeśli używasz Visual Basic, w **Eksplorator rozwiązań**, kliknij przycisk **Pokaż wszystkie pliki**, rozwiń węzeł **mój projekt** , a następnie otwórz plik **Settings. Settings** .
 
 2. W kolumnie **Nazwa** wprowadź wartość `connString` .
 
@@ -150,9 +150,9 @@ Po uruchomieniu aplikacji zostanie otwarty formularz nawigacji. Przycisk **Dodaj
 
 #### <a name="make-the-navigation-form-the-startup-form"></a>Ustaw nawigację formularza startowego
 
-Jeśli używasz języka C#, w **Eksplorator rozwiązań** Otwórz **program.cs** , a następnie zmień `Application.Run` wiersz na: `Application.Run(new Navigation());`
+Jeśli używasz języka C#, w **Eksplorator rozwiązań** Otwórz **program.cs**, a następnie zmień `Application.Run` wiersz na: `Application.Run(new Navigation());`
 
-Jeśli używasz Visual Basic, w **Eksplorator rozwiązań** , Otwórz okno **Właściwości** , wybierz kartę **aplikacja** , a następnie wybierz pozycję **SimpleDataApp. Nawigacja** na liście **formularz startowy** .
+Jeśli używasz Visual Basic, w **Eksplorator rozwiązań**, Otwórz okno **Właściwości** , wybierz kartę **aplikacja** , a następnie wybierz pozycję **SimpleDataApp. Nawigacja** na liście **formularz startowy** .
 
 #### <a name="create-auto-generated-event-handlers"></a>Utwórz automatycznie generowane programy obsługi zdarzeń
 

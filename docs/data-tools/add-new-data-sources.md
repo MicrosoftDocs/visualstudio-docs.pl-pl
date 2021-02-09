@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: ed28c625-bb89-4037-bfde-cfa435d182a2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: ec58528bfe5e1687c4b4edc7f86451c08b04652c
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: b6e42681d2c25162df22af9711d47b71ba155d67
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518677"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867441"
 ---
 # <a name="add-new-data-sources"></a>Dodawanie nowych źródeł danych
 
@@ -118,8 +118,8 @@ Jeśli chcesz powiązać z obiektem w zestawie lub projekcie, który nie jest wy
 
 ## <a name="data-source-for-a-sharepoint-list"></a>Źródło danych dla listy programu SharePoint
 
-Można utworzyć źródło danych z listy programu SharePoint, uruchamiając **Kreatora konfiguracji źródła danych** i wybierając typ źródła danych **programu SharePoint** . Program SharePoint udostępnia dane za pośrednictwem Usługi danych programu WCF, więc tworzenie źródła danych programu SharePoint jest takie samo jak w przypadku tworzenia źródła danych z usługi. Wybranie elementu **programu SharePoint** w **Kreatorze konfiguracji źródła danych** powoduje otwarcie okna dialogowego **Dodaj odwołanie do usługi** , w którym można nawiązać połączenie z usługą danych programu SharePoint, wskazując serwerowi programu SharePoint. Wymaga to zestawu SDK programu SharePoint.
+Można utworzyć źródło danych z listy programu SharePoint, uruchamiając **Kreatora konfiguracji źródła danych** i wybierając typ źródła danych **programu SharePoint** . Program SharePoint udostępnia dane za pośrednictwem WCF Data Services, więc tworzenie źródła danych programu SharePoint jest takie samo jak w przypadku tworzenia źródła danych z usługi. Wybranie elementu **programu SharePoint** w **Kreatorze konfiguracji źródła danych** powoduje otwarcie okna dialogowego **Dodaj odwołanie do usługi** , w którym można nawiązać połączenie z usługą danych programu SharePoint, wskazując serwerowi programu SharePoint. Wymaga to zestawu SDK programu SharePoint.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Narzędzia do obsługi danych programu Visual Studio dla platformy .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

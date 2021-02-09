@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 9748815e-3556-49e8-86b1-c6aa593c6163
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 10ea349186aa46bfb58f4b9ceeaab2c8ac3edd81
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: 2ce969ddab5e48ac495754369e980747332f9b0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518573"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867376"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>Powiązywanie kontrolek z obrazami z bazy danych
 
@@ -51,6 +51,6 @@ W poniższej procedurze przyjęto założenie, że okno **źródła danych** jes
 
     - Alternatywnie możesz wybrać inny formant, który obsługuje powiązanie danych i który może wyświetlać obrazy. Jeśli formant, którego chcesz użyć, nie znajduje się na liście dostępnych kontrolek, możesz dodać go do listy, a następnie wybrać. Aby uzyskać więcej informacji, zobacz [Dodawanie niestandardowych kontrolek do okna źródła danych](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Wiązanie kontrolek WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
