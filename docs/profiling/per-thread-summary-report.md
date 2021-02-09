@@ -10,20 +10,20 @@ helpviewer_keywords:
 ms.assetid: 5a0aa339-03f5-4727-90b3-8950446bbdbe
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 03797190097d3495a315fd0e0343fa9999100147
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 2dcdc05697b3c23a050ee975fd4395a6822db3b6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722792"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922290"
 ---
 # <a name="per-thread-summary-report"></a>Na raport podsumowujący wątek
 Ten wykres słupkowy przedstawia proporcje czasu, w którym każdy nieukryty wątek spędza w poszczególnych kategoriach działań w ramach obecnie widocznego zakresu czasu. "Wykonywanie" oznacza, że wątek jest wykonywany; wszystkie inne kategorie oznaczają, że wątek oczekuje na coś.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Czas wykonywania (Widok wątków)](../profiling/execution-time-threads-view.md)
 - [Czas operacji we/wy (Widok wątków)](../profiling/i-o-time-threads-view.md)
 - [Czas zarządzania pamięcią](../profiling/memory-management-time.md)

@@ -5,17 +5,17 @@ ms.date: 09/18/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 032732f19855b9ba5c97c2e5281e8385f9ace3be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 612d4bd7d66add8c3fe7c45e8f03ca3531b0b4c0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535340"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920667"
 ---
 ## <a name="discover-and-view-tests"></a>Odnajdywanie i wyświetlanie testów
 
@@ -37,7 +37,7 @@ Zgodnie z Konwencją program Visual Studio identyfikuje testy jako metody, któr
         unittest.main()
     ```
 
-1. Zapisz plik w razie potrzeby, a następnie otwórz **Eksploratora testów** z **Test**  >  **Windows**  >  poleceniem menu Testuj**Eksplorator** testów systemu Windows.
+1. Zapisz plik w razie potrzeby, a następnie otwórz **Eksploratora testów** z   >    >  poleceniem menu Testuj **Eksplorator** testów systemu Windows.
 
 1. **Eksplorator testów** przeszukuje projekt pod kątem testów i wyświetla je, jak pokazano poniżej. Dwukrotne kliknięcie testu spowoduje otwarcie jego pliku źródłowego.
 

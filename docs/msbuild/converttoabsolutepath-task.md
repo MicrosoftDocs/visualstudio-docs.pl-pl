@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: f1af2cb8-b4ef-4a72-be80-22fa526c4491
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ecf9695b36f341fa350abf53062e70095c03c374
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 8c0529578d97ddbeaff4ec999329626fbf951094
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796163"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922558"
 ---
 # <a name="converttoabsolutepath-task"></a>ConvertToAbsolutePath — zadanie
 
@@ -44,7 +44,7 @@ Konwertuje ścieżkę względną lub odwołanie do ścieżki bezwzględnej.
 
  Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasy, która sama dziedziczy z <xref:Microsoft.Build.Utilities.Task> klasy. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Zadania](../msbuild/msbuild-tasks.md)
 - [Dokumentacja zadań](../msbuild/msbuild-task-reference.md)

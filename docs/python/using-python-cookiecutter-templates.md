@@ -5,17 +5,17 @@ ms.date: 01/28/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2d58462b90039e14ae98fe450812ca4cfdb6cbbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 08ae2e13f094535eae0447cc3b8d4acf4c806a99
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801584"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920617"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Użyj rozszerzenia Cookiecutter
 
@@ -75,14 +75,14 @@ Po pomyślnym utworzeniu plików Cookiecutter udostępnia opcję otwierania plik
 
 ## <a name="cookiecutter-options"></a>Opcje Cookiecutter
 
-Opcje Cookiecutter są dostępne za **Tools**poorednictwem  >  **opcji**narzędzia  >  **Cookiecutter**:
+Opcje Cookiecutter są dostępne za poorednictwem  >  **opcji** narzędzia  >  **Cookiecutter**:
 
 ![Opcje Cookiecutter](media/cookiecutter-tools-options.png)
 
 | Opcja | Opis |
 | --- | --- |
 | **Adres URL zalecanego kanału informacyjnego** | Lokalizacja kanałów informacyjnych zalecanych szablonów. Może to być adres URL lub ścieżka do pliku lokalnego. Pozostaw pusty adres URL, aby użyć domyślnego źródła danych nadzorowanych firmy Microsoft. Kanał informacyjny zapewnia prostą listę lokalizacji szablonów, rozdzielonych znakami nowego wiersza. Aby zażądać zmian w źródle danych nadzorowanych, Utwórz żądanie ściągnięcia względem [źródła w serwisie GitHub](https://github.com/Microsoft/PTVS/blob/master/Python/Product/Cookiecutter/CookiecutterFeed.txt). |
-| **Pokaż pomoc** | Kontroluje widoczność paska informacji pomocy w górnej części okna Cookiecutter. |
+| **Wyświetlanie pomocy** | Kontroluje widoczność paska informacji pomocy w górnej części okna Cookiecutter. |
 
 ## <a name="optimize-cookiecutter-templates-for-visual-studio"></a>Optymalizowanie szablonów Cookiecutter dla programu Visual Studio
 
@@ -187,7 +187,7 @@ Użyj tablicy dla wielu argumentów. W przypadku przełączników należy podzie
 
 Argumenty mogą odwoływać się do innych zmiennych Cookiecutter. W powyższych przykładach `_output_folder_path` zmienna wewnętrzna służy do tworzenia ścieżki bezwzględnej do wygenerowanych plików.
 
-Należy zauważyć, że `Python.InstallProjectRequirements` polecenie działa tylko w przypadku dodawania plików do istniejącego projektu. To ograniczenie istnieje, ponieważ polecenie jest przetwarzane przez projekt w języku Python w **Eksplorator rozwiązań**i nie ma projektu do odebrania komunikatu w widoku **Eksplorator rozwiązań**  -  **folderu**. Mamy nadzieję, że firma Microsoft czeka na usunięcie tego ograniczenia w przyszłości. **Folder View**
+Należy zauważyć, że `Python.InstallProjectRequirements` polecenie działa tylko w przypadku dodawania plików do istniejącego projektu. To ograniczenie istnieje, ponieważ polecenie jest przetwarzane przez projekt w języku Python w **Eksplorator rozwiązań** i nie ma projektu do odebrania komunikatu w widoku **Eksplorator rozwiązań**  -  **folderu**. Mamy nadzieję, że firma Microsoft czeka na usunięcie tego ograniczenia w przyszłości. 
 
 ## <a name="troubleshooting"></a>Rozwiązywanie problemów
 

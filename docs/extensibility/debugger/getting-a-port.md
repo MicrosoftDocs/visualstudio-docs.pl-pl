@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 745c2337-cfff-4d02-b49c-3ca7c4945c5e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd86d84ba4187df70d2aa02181249336c38dda41
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 1f3ee9c145a4c6275f64d357d87ac1cc284bfac6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560051"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921295"
 ---
 # <a name="get-a-port"></a>Pobierz port
 Port reprezentuje połączenie z komputerem, na którym są uruchomione procesy. Może to być maszyna lokalna lub maszyna zdalna (w przypadku których może być uruchomiony system operacyjny inny niż Windows). Aby uzyskać więcej informacji, zobacz [porty](../../extensibility/debugger/ports.md) .
@@ -98,7 +98,7 @@ HRESULT CDebugEngine::ResumeProcess(IDebugProcess2 *pDebugProcess)
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Rejestrowanie programu](../../extensibility/debugger/registering-the-program.md)
 - [Włączanie debugowania programu](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
 - [Dostawcy portów](../../extensibility/debugger/port-suppliers.md)

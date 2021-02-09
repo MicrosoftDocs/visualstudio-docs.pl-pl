@@ -9,16 +9,16 @@ helpviewer_keywords:
 - performance tools, performance session properties
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 02ddf15251cf40dd340465563068b114940f9318
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 59d69843aee2aeb0354ba3adc8a8f9e77de8eaa0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98721232"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922158"
 ---
 # <a name="performance-session-properties"></a>Właściwości sesji wydajności
 
@@ -111,7 +111,7 @@ Aby uzyskać więcej informacji, zobacz:
 
 [Instrukcje: określanie dodatkowych opcji instrumentacji](../profiling/how-to-specify-additional-instrumentation-options.md)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 [Omówienia](../profiling/overviews-performance-tools.md) 
  [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md) 

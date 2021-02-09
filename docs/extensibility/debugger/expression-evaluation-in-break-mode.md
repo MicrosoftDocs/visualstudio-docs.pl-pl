@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 34fe5b58-15d5-4387-a266-72120f90a4b6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e73d98e9fff713258f4797577fd8402932fe266
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 041e499f4c670b5b31530c7fc0ecb74358a8087f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96559639"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921502"
 ---
 # <a name="expression-evaluation-in-break-mode"></a>Obliczanie wyrażeń w trybie przerwania
 W poniższej sekcji opisano proces, który występuje, gdy debuger jest w trybie przerwania i musi prowadzić obliczenia wyrażenia.
@@ -41,5 +41,5 @@ W poniższej sekcji opisano proces, który występuje, gdy debuger jest w trybie
 
     - W przypadku korzystania `IDebugExpression2::EvaluateAsync` z programu dany interfejs wywołania zwrotnego komunikuje trwający proces oceny. Po zakończeniu oceny EvaluateAsync wysyła Interfejs [IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) za pomocą wywołania zwrotnego. Za pomocą tego interfejsu zdarzenia końcowa wartość jest wynikiem [GetResult](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Zdarzenia debugera wywołań](../../extensibility/debugger/calling-debugger-events.md)

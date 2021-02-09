@@ -29,15 +29,15 @@ helpviewer_keywords:
 - ThisAddIn_Shutdown
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e2653f314edf07c4dcca6d3afc74af64c548af35
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 5786ea4bdd0dd6f4c92284aaf9cff2a3c95e4231
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846392"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920494"
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>Globalny dostęp do obiektów w projektach pakietu Office
   Podczas tworzenia projektu pakietu Office Program Visual Studio automatycznie generuje klasę o nazwie `Globals` w projekcie. Można użyć klasy, `Globals` Aby uzyskać dostęp do kilku różnych elementów projektu w czasie wykonywania z dowolnego kodu w projekcie.
@@ -47,7 +47,7 @@ ms.locfileid: "96846392"
 ## <a name="how-to-use-the-globals-class"></a>Jak używać klasy Globals
  `Globals` jest klasą statyczną, która zachowuje odwołania do określonych elementów w projekcie. Korzystając z `Globals` klasy, można uzyskać dostęp do następujących elementów z dowolnego kodu w projekcie w czasie wykonywania:
 
-- `ThisWorkbook`Klasy i `Sheet` *n* w skoroszycie programu Excel lub w projekcie szablonu. Dostęp do tych obiektów można uzyskać przy użyciu `Globals.ThisWorkbook` `Sheet` *n* właściwości i.
+- `ThisWorkbook`Klasy i `Sheet` *n* w skoroszycie programu Excel lub w projekcie szablonu. Dostęp do tych obiektów można uzyskać przy użyciu `Globals.ThisWorkbook` `Sheet`  właściwości i.
 
 - `ThisDocument`Klasa w dokumencie programu Word lub projekcie szablonu. Dostęp do tego obiektu można uzyskać przy użyciu `Globals.ThisDocument` właściwości.
 
@@ -77,7 +77,7 @@ ms.locfileid: "96846392"
 > [!NOTE]
 > `Globals`Klasa nigdy nie została zainicjowana w czasie projektowania, ale instancje sterujące są tworzone przez projektanta. Oznacza to, że w przypadku utworzenia kontrolki użytkownika, która używa właściwości `Globals` klasy z wewnątrz klasy kontrolki użytkownika, należy sprawdzić, czy właściwość zwraca **wartość null** przed podjęciem próby użycia zwracanego obiektu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Uzyskiwanie dostępu do wstążki w czasie wykonywania](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Dostęp do regionu formularza w czasie wykonywania](../vsto/accessing-a-form-region-at-run-time.md)
 - [Elementy hosta i formanty hosta — Omówienie](../vsto/host-items-and-host-controls-overview.md)

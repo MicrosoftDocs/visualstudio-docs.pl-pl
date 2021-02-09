@@ -10,16 +10,16 @@ helpviewer_keywords:
 - performance tools, Performance Explorer
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 06d2b7e2ad5d5df4022dc78aa06315545d56c0ee
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 4533bcb59ebbd36f47ddf73f9b78429f041c357c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722818"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922327"
 ---
 # <a name="performance-explorer-window"></a>Okno Eksploratora wydajności
 
@@ -51,7 +51,7 @@ Okno **Eksplorator wydajności** zawiera kontrolkę drzewa, która wyświetla pl
 
 - **Raporty** — wyświetla nazwy plików danych profilera, które są generowane dla danej sesji. Kliknij prawym przyciskiem myszy pozycję **raporty** , aby dodać istniejący raport lub porównać dwa pliki danych profilera. Kliknij prawym przyciskiem myszy nazwę raportu, aby otworzyć, usunąć lub wyeksportować plik danych profilera.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 [Omówienia](../profiling/overviews-performance-tools.md) 
  [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md) 

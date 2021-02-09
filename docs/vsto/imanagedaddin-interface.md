@@ -9,15 +9,15 @@ helpviewer_keywords:
 - IManagedAddin interface
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b436d76164b1744cffe16593149f64d219d04bf1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 89e705296c6051b8bdec823e523f0a386ff7ff76
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541131"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920437"
 ---
 # <a name="imanagedaddin-interface"></a>IManagedAddin — interfejs
   Zaimplementuj interfejs IManagedAddin —, aby utworzyć składnik ładujący zarządzane dodatki narzędzi VSTO. Ten interfejs został dodany w systemie Microsoft Office 2007.
@@ -56,13 +56,13 @@ interface IManagedAddin : IUnknown
 
 1. Aplikacja odnajduje Dodatki programu VSTO, szukając wpisów w następującym kluczu rejestru:
 
-    **HKEY_CURRENT_USER \Software\Microsoft\Office \\ *\<application name>* \Addins\\**
+    **HKEY_CURRENT_USER\Software\Microsoft\Office\\ *\<application name>* \Addins\\**
 
     Każdy wpis w tym kluczu rejestru jest unikatowym IDENTYFIKATORem dodatku VSTO. Zazwyczaj jest to nazwa zestawu dodatku VSTO.
 
 2. Aplikacja szuka `Manifest` wpisu dla każdego dodatku VSTO.
 
-    Zarządzane dodatki narzędzi VSTO mogą przechowywać pełną ścieżkę manifestu w `Manifest` wpisie w obszarze **HKEY_CURRENT_USER \software\microsoft\office \\ _\<application name>_ \Addins \\ _\<add-in ID>_ **. Manifest to plik (zazwyczaj plik XML), który zawiera informacje, które są używane do załadowania dodatku VSTO.
+    Zarządzane dodatki narzędzi VSTO mogą przechowywać pełną ścieżkę manifestu w `Manifest` wpisie w obszarze **HKEY_CURRENT_USER\Software\Microsoft\Office\\ _\<application name>_ \Addins \\ _\<add-in ID>_**. Manifest to plik (zazwyczaj plik XML), który zawiera informacje, które są używane do załadowania dodatku VSTO.
 
 3. Jeśli aplikacja znajdzie `Manifest` wpis, aplikacja podejmie próbę załadowania zarządzanego składnika modułu ładującego programu VSTO. W tym celu aplikacja podejmuje próbę utworzenia obiektu COM, który implementuje interfejs IManagedAddin —.
 

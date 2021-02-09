@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 1a4dfd9a-e7e2-4aa3-93e2-4f12c7b0970f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 30b4da23ef89f8bdde61bbf1eebb63bb4d239b7b
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 3d1804782ee03e322bda35d4855015dce1cf5542
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722363"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922023"
 ---
 # <a name="unblock-stack"></a>Odblokuj stos
 Jeśli aktualnie wybrany element wątku reprezentuje zablokowany segment, który później zostanie uruchomiony po odblokowaniu przez inny wątek w bieżącym procesie, stos wywołań dla wątku, który przeprowadził odblokowywanie, jest pokazywany na tej karcie.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Widok wątków](../profiling/threads-view-parallel-performance.md)

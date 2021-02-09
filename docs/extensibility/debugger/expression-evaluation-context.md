@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a2fd3758-09bd-45ae-8ecc-2d276c0036ba
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26705b32628a9bd9ecc79489e2552f2d7e537273
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 127746b06ef09496ef8f50aa874ff32e2f983f65
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96559683"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921535"
 ---
 # <a name="expression-evaluation-context"></a>Kontekst oceny wyrażenia
 W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debugowaniu **kontekst oceny wyrażenia**:
@@ -30,6 +30,6 @@ W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debugowaniu **kon
 
      Za pomocą `BSTR` i interfejsu [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) aparat debugowania (de) może utworzyć interfejs [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) przez analizowanie wyrażenia. `IDebugExpression2`Za pomocą interfejsu, można uzyskać wartość przez obliczenie wyrażenia synchronicznego lub asynchronicznego. Ta wartość oraz nazwa i typ zmiennej lub argumentu są wysyłane do IDE w celu wyświetlenia.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Interfejsy oceny wyrażeń](../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [Konteksty debugera](../../extensibility/debugger/debugger-contexts.md)

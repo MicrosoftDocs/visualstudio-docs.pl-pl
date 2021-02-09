@@ -9,18 +9,18 @@ ms.topic: tutorial
 ms.devlang: CSharp
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: ee28bde6de10006ccfdc5175cca629ad9d1590d0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bbebcec3f5b2de01bcbfa7839f68e6f7a3e2cc64
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649638"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922846"
 ---
 # <a name="how-to-run-a-c-program-in-visual-studio"></a>Instrukcje: Uruchamianie programu w języku C# w programie Visual Studio
 
@@ -74,7 +74,7 @@ Jeśli kod, który chcesz uruchomić, znajduje się w usłudze GitHub lub w repo
 
 ## <a name="run-the-program"></a>Uruchamianie programu
 
-Aby uruchomić program, naciśnij zieloną strzałkę (przycisk**Start** ) na głównym pasku narzędzi programu Visual Studio lub naciśnij klawisz **F5** lub **Ctrl** + **F5** , aby uruchomić program. Gdy używasz przycisku **Start** , jest on uruchamiany w debugerze.  Program Visual Studio próbuje skompilować kod w projekcie i uruchomić go.  Jeśli to się powiedzie, świetnie! Ale jeśli nie, Kontynuuj odczytywanie niektórych pomysłów na temat pomyślnego skompilowania.
+Aby uruchomić program, naciśnij zieloną strzałkę (przycisk **Start** ) na głównym pasku narzędzi programu Visual Studio lub naciśnij klawisz **F5** lub **Ctrl** + **F5** , aby uruchomić program. Gdy używasz przycisku **Start** , jest on uruchamiany w debugerze.  Program Visual Studio próbuje skompilować kod w projekcie i uruchomić go.  Jeśli to się powiedzie, świetnie! Ale jeśli nie, Kontynuuj odczytywanie niektórych pomysłów na temat pomyślnego skompilowania.
 
 ## <a name="troubleshooting"></a>Rozwiązywanie problemów
 
@@ -98,7 +98,7 @@ Na przykład na poniższym ekranie można wybrać opcję dodania `using System;`
 
 #### <a name="missing-assembly-reference"></a>Brak odwołania do zestawu
 
-Odwołania platformy .NET mogą mieć postać zestawów lub pakietów NuGet. Zazwyczaj Jeśli znajdziesz kod źródłowy, Wydawca lub autor wyjaśni, jakie zestawy są wymagane i jakie pakiety zależy od kodu. Aby ręcznie dodać odwołanie do projektu, kliknij prawym przyciskiem myszy węzeł **odwołania** w **Eksplorator rozwiązań**, wybierz polecenie **Dodaj odwołanie**i Znajdź wymagany zestaw.
+Odwołania platformy .NET mogą mieć postać zestawów lub pakietów NuGet. Zazwyczaj Jeśli znajdziesz kod źródłowy, Wydawca lub autor wyjaśni, jakie zestawy są wymagane i jakie pakiety zależy od kodu. Aby ręcznie dodać odwołanie do projektu, kliknij prawym przyciskiem myszy węzeł **odwołania** w **Eksplorator rozwiązań**, wybierz polecenie **Dodaj odwołanie** i Znajdź wymagany zestaw.
 
 ![Zrzut ekranu przedstawiający menu Dodaj odwołanie](media/add-reference.png)
 

@@ -6,16 +6,16 @@ ms.topic: conceptual
 ms.assetid: b877802d-c736-4047-821a-bd7733fff6de
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d27f777b660b2ffc94c4b9b6f0b6ba55816d626b
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: eb96cdafd08825f14c83d99471356f4e3a92eea5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722831"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922416"
 ---
 # <a name="overviews-performance-tools"></a>Narzędzia do oceny wydajności — omówienie
 Ta sekcja zawiera informacje o pojęciach i terminologii dotyczące [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania, których można użyć do mierzenia charakterystyki wydajności aplikacji w ramach projektowania.
@@ -57,7 +57,7 @@ Ta sekcja zawiera informacje o pojęciach i terminologii dotyczące [!INCLUDE[vs
 
  Informacje o problemach i krokach, które są wymagane do zbierania danych próbkowania i profilowania aplikacji między sesjami w systemie [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)] .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Rozpoczęcie pracy](../profiling/getting-started-with-performance-tools.md)
 - [Eksplorator wydajności](../profiling/performance-explorer.md)

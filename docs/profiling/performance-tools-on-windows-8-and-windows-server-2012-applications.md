@@ -6,16 +6,16 @@ ms.date: 06/19/2017
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ce83684b77d4546915cdcf5980e68be0b6c6a125
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: a6060b61f388b4db4e9284a96f5d924a84a76210
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719594"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922060"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Narzędzia do oceny wydajności w aplikacjach Windows 8 i Windows Server 2012
 
@@ -120,7 +120,7 @@ Aby zebrać dane profilowania, można użyć [VSPerfCmd](../profiling/vsperfcmd.
 
 Dane interakcji warstwy można wyświetlać tylko w Visual Studio Enterprise. Raporty interakcji z warstwą opartą na plikach za pośrednictwem [VSPerfReport](../profiling/vsperfreport.md) są niedostępne.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 [Eksplorator wydajności](../profiling/performance-explorer.md) 
  [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md) 

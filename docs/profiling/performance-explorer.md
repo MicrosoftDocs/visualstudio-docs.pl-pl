@@ -10,16 +10,16 @@ helpviewer_keywords:
 - performance tools [Visual Studio ALM]
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a796ee0791fd96edf1e54954df47f2983df3ee4
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 401b054c6bfa7ed2bee376c260a3eb3843d6f1c3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722779"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922312"
 ---
 # <a name="performance-explorer"></a>Eksplorator wydajności
 
@@ -47,6 +47,6 @@ Aby uzyskać więcej informacji na temat bieżących i zaawansowanych tematów d
 |**Programowo profilowania sterowania:** Dowiedz się, jak używać zarządzanych i natywnych interfejsów API narzędzia profilowania do sterowania zbieraniem danych bezpośrednio z kodu źródłowego.|[Interfejsy API narzędzi profilowania](../profiling/profiling-tools-apis.md)|
 |**Rozwiązywanie problemów z profilami**|[Rozwiązywanie problemów z narzędziami do oceny wydajności](../profiling/troubleshooting-performance-tools-issues.md)|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 [Pierwsze spojrzenie na narzędzia profilowania](../profiling/profiling-feature-tour.md)

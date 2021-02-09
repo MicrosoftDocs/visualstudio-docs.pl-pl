@@ -6,17 +6,17 @@ ms.date: 01/28/2019
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d88d936a4b470f891f3b2bf2c353f4ef4e595c57
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: c4ae447976798372e049df46552f8383389f7b3e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811048"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920777"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>Krok 3. Korzystanie z okna interaktywnego REPL
 
@@ -59,7 +59,7 @@ Okno **interaktywne** programu Visual Studio dla języka Python zawiera bogate �
     ![Wysyłanie kodu do okna interaktywnego i testowanie go](media/vs-getting-started-python-14-interactive4.png)
 
     > [!Tip]
-    > Przy użyciu **klawisza Ctrl** + **Enter** w edytorze *bez* zaznaczenia uruchamia bieżący wiersz kodu w oknie **interaktywnym** i automatycznie umieszcza karetkę w następnym wierszu. W przypadku tej funkcji naciśnięcie klawisza **Ctrl**w + **Enter** sposób wielokrotnie zapewnia wygodny sposób na przechodzenie przez kod, który nie jest możliwy tylko przy użyciu wiersza polecenia języka Python. Umożliwia również przechodzenie przez kod bez uruchamiania debugera i bez konieczności uruchamiania programu od początku.
+    > Przy użyciu **klawisza Ctrl** + **Enter** w edytorze *bez* zaznaczenia uruchamia bieżący wiersz kodu w oknie **interaktywnym** i automatycznie umieszcza karetkę w następnym wierszu. W przypadku tej funkcji naciśnięcie klawisza **Ctrl** w +  sposób wielokrotnie zapewnia wygodny sposób na przechodzenie przez kod, który nie jest możliwy tylko przy użyciu wiersza polecenia języka Python. Umożliwia również przechodzenie przez kod bez uruchamiania debugera i bez konieczności uruchamiania programu od początku.
 
 1. Możesz również kopiować i wklejać wiele wierszy kodu do okna **interaktywnego** z dowolnego źródła, takiego jak fragment kodu, który trudno wykonać przy użyciu wiersza polecenia języka Python REPL. W przypadku wklejenia okna **interaktywnego** uruchamiany jest ten kod, tak jakby został wprowadzony w:
 

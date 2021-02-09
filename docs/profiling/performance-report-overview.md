@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: 7324c24c-fd09-479b-b2ad-e0c3b613e040
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 95fbb51cbcc4d2467b9d1636c7e9f61232791d62
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 2e775c91759326407918befba3dd4bb52e19dd0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722766"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922267"
 ---
 # <a name="performance-report-overview"></a>Przegląd raportu wydajności
 Dane profilowania sesji wydajności można wyświetlić w oknie **raport o wydajności** zintegrowanego środowiska projektowego programu Visual Studio Team System Development (IDE). Dane profilowania są zapisywane w plikach. vsp i. vsps. Widok raportu okna umożliwiają wyświetlanie i analizowanie problemów z wydajnością aplikacji.
@@ -95,6 +95,6 @@ Dane profilowania sesji wydajności można wyświetlić w oknie **raport o wydaj
 
 - **Eksportuj** — zapisuje bieżący raport w. CVS — sformatowany lub. Plik w formacie XML z opcjami umożliwiającymi zapisanie różnych widoków.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Analizowanie danych dotyczących narzędzi do oceny wydajności](../profiling/analyzing-performance-tools-data.md)
 - [Widoki raportów wydajności](../profiling/performance-report-views.md)

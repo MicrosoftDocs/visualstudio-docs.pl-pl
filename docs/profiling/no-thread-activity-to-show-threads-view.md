@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: aa5ae9d0-561d-4ef8-b36b-258ce553d50a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 27298b03a03edf99a12a6d067a22ca8ba17faef0
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: dcc4cd3241c4d2fffdf2637790869dfc5ac524f5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722883"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922434"
 ---
 # <a name="no-thread-activity-to-show-threads-view"></a>Brak aktywności wątku do wyświetlenia (Widok wątków)
 Ten obszar pokazuje dane dotyczące nieukrytych wątków w aktualnie widocznym zakresie czasu.
@@ -33,5 +33,5 @@ Ten obszar pokazuje dane dotyczące nieukrytych wątków w aktualnie widocznym z
 
 - Upewnij się, że redukcja szumu jest ustawiona na niski próg.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Widok wątków](../profiling/threads-view-parallel-performance.md)

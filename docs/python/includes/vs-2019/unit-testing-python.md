@@ -5,17 +5,17 @@ ms.date: 09/18/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6b611657db104a4b74e784df8925627ff41f3c33
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd63d927e41a8b360eb7d934693bb3c83a30ea4f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535339"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920674"
 ---
 ## <a name="select-the-test-framework-for-a-python-project"></a>Wybierz platformę testową dla projektu języka Python
 
@@ -91,7 +91,7 @@ Domyślnie program Visual Studio identyfikuje testy **testu jednostkowego** i **
         unittest.main()
     ```
 
-1. Zapisz plik w razie potrzeby, a następnie otwórz **Eksploratora testów** z **Test**  >  poleceniem menu**Eksplorator testów** testowania.
+1. Zapisz plik w razie potrzeby, a następnie otwórz **Eksploratora testów** z   >  poleceniem menu **Eksplorator testów** testowania.
 
 1. **Eksplorator testów** przeszukuje projekt pod kątem testów i wyświetla je, jak pokazano poniżej. Dwukrotne kliknięcie testu spowoduje otwarcie jego pliku źródłowego.
 
@@ -130,7 +130,7 @@ Testy są uruchamiane w tle, a **Eksplorator testów** aktualizuje stan każdego
 Ponieważ testy jednostkowe są fragmentami kodu, podlegają one błędom, podobnie jak każdy inny kod i sporadycznie muszą być uruchamiane w debugerze. W debugerze można ustawić punkty przerwania, przeanalizować zmienne i krok po kroku. Program Visual Studio udostępnia również narzędzia diagnostyczne do testów jednostkowych.
 
 > [!Note]
-> Domyślnie debugowanie testów używa debugera ptvsd 4 dla programu Visual Studio 2017 (wersje 15,8 i nowsze) oraz debugpy dla programu Visual Studio 2019 (wersje 16,5 i nowsze). Jeśli zamiast tego chcesz użyć ptvsd 3, możesz wybrać opcję **Użyj starszego debugera** dla opcji **Narzędzia**  >  **Options**  >  **Python**  >  **debugowanie**języka Python. 
+> Domyślnie debugowanie testów używa debugera ptvsd 4 dla programu Visual Studio 2017 (wersje 15,8 i nowsze) oraz debugpy dla programu Visual Studio 2019 (wersje 16,5 i nowsze). Jeśli zamiast tego chcesz użyć ptvsd 3, możesz wybrać opcję **Użyj starszego debugera** dla opcji **Narzędzia**  >    >    >  **debugowanie** języka Python. 
 
 Aby rozpocząć debugowanie, ustaw początkowy punkt przerwania w kodzie, a następnie kliknij prawym przyciskiem myszy Test (lub zaznaczenie) w **Eksploratorze testów** i wybierz polecenie **Debuguj wybrane testy**. Program Visual Studio uruchamia debuger języka Python, tak jak w przypadku kodu aplikacji.
 

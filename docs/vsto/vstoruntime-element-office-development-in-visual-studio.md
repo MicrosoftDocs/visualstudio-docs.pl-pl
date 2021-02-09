@@ -12,15 +12,15 @@ helpviewer_keywords:
 - vstoRuntime element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ffebff9e5cee8666d1b178fca09262ecd45c99b1
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: c866db5f691db56e68f6980c9c07d21ee15c0ae5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584363"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921750"
 ---
 # <a name="ltvstoruntimegt-element-office-development-in-visual-studio"></a>&lt;vstoRuntime — &gt; element (Programowanie Office w Visual Studio)
   `vstoRuntime`Element `vstav3` przestrzeni nazw zawiera obsługiwaną wersję Visual Studio Tools dla środowiska uruchomieniowego pakietu Office dla określonego rozwiązania pakietu Office.
@@ -41,8 +41,8 @@ ms.locfileid: "91584363"
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`release`|Wymagany. Wersja wydania Visual Studio Tools dla środowiska uruchomieniowego pakietu Office.|
-|`version`|Wymagany. Numer wersji Visual Studio Tools dla środowiska uruchomieniowego pakietu Office.|
+|`release`|Wymagane. Wersja wydania Visual Studio Tools dla środowiska uruchomieniowego pakietu Office.|
+|`version`|Wymagane. Numer wersji Visual Studio Tools dla środowiska uruchomieniowego pakietu Office.|
 |`supportUrl`|Opcjonalny. Link do lokalizacji instalacji Visual Studio Tools dla środowiska uruchomieniowego pakietu Office.|
 
  `vstoRuntime` nie ma elementów.

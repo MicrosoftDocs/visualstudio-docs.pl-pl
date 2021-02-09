@@ -8,15 +8,15 @@ dev_langs:
 helpviewer_keywords: ''
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1307d720e005855770ee68659374dbbfae247d65
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 605c1dc7a7b0d24ba082767930fd53148cccbd95
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541040"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920332"
 ---
 # <a name="imanagedaddinload"></a>IManagedAddin::Load
   Wywoływana, gdy zostanie załadowany zarządzany dodatek narzędzi VSTO.
@@ -41,7 +41,7 @@ HRESULT Load([in] BSTR bstrManifestURL,
 ## <a name="remarks"></a>Uwagi
  Manifest to plik (zazwyczaj plik XML), który zawiera informacje, które są używane do załadowania dodatku VSTO. Na przykład manifest może określać lokalizację zestawu dodatku VSTO oraz klasę punktu wejścia do wystąpienia podczas ładowania dodatku VSTO.
 
- Parametr *bstrManifestURL* zawiera wartość `Manifest` wpisu w kluczu rejestru **HKEY_CURRENT_USER \software\microsoft\office \\ _\<application name>_ \\ _\<add-in ID>_ \Addins** dla dodatku VSTO. Aby uzyskać więcej informacji, zobacz [IManagedAddin — Interface](../vsto/imanagedaddin-interface.md).
+ Parametr *bstrManifestURL* zawiera wartość `Manifest` wpisuHKEY_CURRENT_USER\Software\Microsoft\Officew kluczu rejestru **\\ _\<application name>_ \Addins \\ _\<add-in ID>_** dla dodatku VSTO. Aby uzyskać więcej informacji, zobacz [IManagedAddin — Interface](../vsto/imanagedaddin-interface.md).
 
  Zaimplementuj metodę [IManagedAddin —:: Load](../vsto/imanagedaddin-load.md) , aby wykonać zadania, takie jak konfigurowanie domeny aplikacji i zasad zabezpieczeń dla załadowanego dodatku VSTO.
 

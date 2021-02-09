@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: 35752f95-a57a-4def-b64d-cf4899669e99
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fcccf6a68afa26d8fe9ab5e5a4f40466822c689
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 8db336c38b330eb0702875b08078c1cac69ea7f5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723273"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922209"
 ---
 # <a name="performance-session-overview"></a>Sesja wydajności — omówienie
 W tym omówieniu wyjaśniono podstawowe informacje dotyczące profilowania. Deweloperzy, którzy są nowością w pracy, zobaczą, jak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania może pomóc im szybko i zwiększyć wydajność kodu. Deweloperzy znający profilowanie mogą uzyskać przegląd określonych funkcji i procesów narzędzia profilowania.
@@ -75,6 +75,6 @@ W tym omówieniu wyjaśniono podstawowe informacje dotyczące profilowania. Dewe
 ## <a name="generate-a-report-of-the-results"></a>Generowanie raportu dotyczącego wyników
  Możesz wkleić wiersze dowolnego widoku raportu wydajności do wiadomości e-mail i arkuszy kalkulacyjnych, a także generować raporty zawierające dane dla jednego lub wielu widoków.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Omówienia](../profiling/overviews-performance-tools.md)
 - [Przewodnik: identyfikowanie problemów z wydajnością](beginners-guide-to-cpu-sampling.md)
