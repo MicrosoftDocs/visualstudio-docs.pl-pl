@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: dfe58b39-63f8-4a87-ab3a-2b5b14faa8d0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2a4209db8856dd81ad6e74112b2907422826fe1c
-ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
+ms.openlocfilehash: 151811d07468c54232933c6c5b78ecee1391f7f8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98883569"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929150"
 ---
 # <a name="how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Instrukcje: instrumentowanie usługi natywnej i zbieranie szczegółowych danych o chronometrażu przy użyciu wiersza polecenia profilera
 W tym artykule opisano, jak używać [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzi wiersza polecenia narzędzia profilowania do instrumentowania natywnej usługi (C/C++) i zbierania szczegółowych danych o chronometrażu.
@@ -94,6 +94,6 @@ W tym artykule opisano, jak używać [!INCLUDE[vsprvs](../code-quality/includes/
 
 3. Zamień moduł z pakietem na oryginalny. W razie potrzeby skonfiguruj ponownie typ uruchomienia usługi.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Usługi profilu](../profiling/command-line-profiling-of-services.md)
 - [Widoki danych metody instrumentacji](../profiling/instrumentation-method-data-views.md)

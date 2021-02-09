@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a9ff3d00-e9ac-4cd6-bda9-584a4815aff8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 180162988cbb09f98b7fc2e8f33f6b5d0ed322ae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6796e2d4f3a7fa20e4bcab4088b6687866edf570
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727362"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928266"
 ---
 # <a name="idebugmessageevent2"></a>IDebugMessageEvent2
 Ten interfejs jest używany przez aparat debugowania (DE) do wysyłania komunikatu do programu Visual Studio, który wymaga odpowiedzi od użytkownika.

@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: ea1dcb7c-1dc3-49ff-9418-8795b5b3d3bc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 51523991ece7322eef6db38a7b5738ce07a471ea
-ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
+ms.openlocfilehash: d067e929fe36036457bef59b6ff477180b51c6dd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98883494"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928965"
 ---
 # <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Instrukcje: Instrumentacja statycznie skompilowanej aplikacji sieci Web ASP.NET i zbieranie danych pamięci przy użyciu wiersza polecenia profilera
 W tym artykule opisano, jak używać [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzi wiersza polecenia narzędzia profilowania do Instrumentacji wstępnie skompilowanego [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] składnika sieci Web lub witryny sieci Web oraz zbierania przydziału pamięci platformy .NET, okresu istnienia obiektów i szczegółowych danych o chronometrażu.
@@ -114,6 +114,6 @@ W tym artykule opisano, jak używać [!INCLUDE[vsprvs](../code-quality/includes/
 
     **IISReset/Start**
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [Widoki danych pamięci .NET](../profiling/dotnet-memory-data-views.md)

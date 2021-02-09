@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 19757068-bdaa-4e7e-85d6-f8ce5026a859
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52bb2505e70d39e6cd861190db6eab9fa29e7aa7
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: cf1d717f423768f9dc53972c2a482e2eab913d81
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761351"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928214"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Instrukcje: Uwidacznianie list symboli dostarczonych przez bibliotekę do Menedżera obiektów
 Narzędzia do przeglądania symboli, **Widok klasy**, **Przeglądarka obiektów**, **przeglądarka wywołań** i **Znajdź wyniki symboli**, przekazują żądania dotyczące nowych danych do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Menedżera obiektów. Menedżer obiektów znajduje odpowiednie biblioteki i żąda nowych list symboli. Biblioteki reagują przez dostarczenie żądanych danych do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Menedżera obiektów za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interfejsu. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Menedżer obiektów wywołuje metody w <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interfejsie, aby uzyskać dane i używa ich do wypełniania lub aktualizowania widoków narzędzi do przeglądania symboli.
@@ -466,7 +466,7 @@ Narzędzia do przeglądania symboli, **Widok klasy**, **Przeglądarka obiektów*
 
     ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Obsługa narzędzi do przeglądania symboli](../../extensibility/internals/supporting-symbol-browsing-tools.md)
 - [Instrukcje: rejestrowanie biblioteki przy użyciu Menedżera obiektów](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)
 - [Instrukcje: Identyfikowanie symboli w bibliotece](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)

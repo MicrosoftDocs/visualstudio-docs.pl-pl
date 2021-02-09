@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: e5aed651-afed-4b70-9a7e-1a6032cc614f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ce8c16c3c895c0538f91bdb27af08e003b1450cf
-ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
+ms.openlocfilehash: da71c5bb714a50c70cbefcd2a2987a48c14eb4b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98883500"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928987"
 ---
 # <a name="how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Instrukcje: uruchamianie natywnej aplikacji autonomicznej z profilerem w celu zbierania danych współbieżności przy użyciu wiersza polecenia
 W tym temacie opisano, jak używać [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzi wiersza polecenia narzędzia profilowania do uruchamiania natywnej aplikacji autonomicznej (klienckiej) i zbierania danych współbieżności procesu i wątku.

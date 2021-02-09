@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 5cb60183-2a87-4551-a19f-c7c4e65d60c0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa8fe001c66f1c37ce9c823d485dcc60e88815a2
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 5a599132638ab5b65e4a9c6b186bf03488eb3e5d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994592"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928201"
 ---
 # <a name="extend-solutions"></a>Rozszeranie rozwiązań
 Rozwiązanie to grupa składająca się z jednego lub wielu projektów, które współpracują ze sobą w celu utworzenia aplikacji.

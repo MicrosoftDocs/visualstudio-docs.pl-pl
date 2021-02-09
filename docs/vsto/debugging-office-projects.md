@@ -16,15 +16,15 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], projects
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ea4874effcba4ee948f921ae9bf91f145b661f4f
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1e21a876fd2af04523ae205882463b0f8e0e3f3b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845638"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928890"
 ---
 # <a name="debug-office-projects"></a>Debugowanie projektów pakietu Office
   Można debugować projekty pakietu Office przy użyciu tych samych narzędzi firmy Microsoft, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] które są używane w innych [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektach. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] funkcje debugera, takie jak możliwość wstawiania punktów przerwania i wyświetlania zmiennych w oknie **lokalne** , są również dostępne podczas debugowania projektów pakietu Office. Aby uzyskać więcej informacji na temat [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] narzędzi debugowania, zobacz [debugowanie w programie Visual Studio](../debugger/debugger-feature-tour.md).
@@ -99,7 +99,7 @@ ms.locfileid: "96845638"
 
  Aby zapisać błędy w pliku dziennika, Utwórz zmienną środowiskową o nazwie `VSTO_LOGALERTS` i ustaw ją na 1 (jeden). [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]Tworzy plik dziennika w folderze zawierającym manifest wdrożenia dla dodatku VSTO lub w folderze zawierającym dokument lub skoroszyt, który jest skojarzony z dostosowaniem. Jeśli to się nie powiedzie, program [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] tworzy plik dziennika w lokalnym folderze *% temp%* . W przypadku dodatków VSTO na poziomie aplikacji domyślna nazwa to *Nazwa dodatku*. VSTO. log. W przypadku projektów na poziomie dokumentu nazwa pliku dziennika jest nazwą *dokumentu*. *rozszerzenie*. log, takie jak ExcelWorkbook1.xlsx. log. Aby zatrzymać rejestrowanie błędów, Usuń zmienną środowiskową lub ustaw ją na 0 (zero).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Tworzenie rozwiązań pakietu Office](../vsto/building-office-solutions.md)
 - [Instrukcje: Ponowne włączanie dodatku VSTO, który został wyłączony](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)

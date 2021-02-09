@@ -6,18 +6,18 @@ ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 188907b4f1b6630e95ab435d588878b16c763f4a
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: ce731da61c0c119869c1c1b85a87ebe44fabf273
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616931"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927928"
 ---
 # <a name="move-declaration-near-reference-refactoring"></a>Przenieś deklarację do refaktoryzacji odwołania
 
@@ -67,7 +67,7 @@ if (condition)
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Refaktoryzacja](../refactoring-in-visual-studio.md)
 - [Podgląd zmian](../../ide/preview-changes.md)

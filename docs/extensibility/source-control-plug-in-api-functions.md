@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4b0536dd-4f92-4ef2-9031-4548281f37aa
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 114862bb3358cc2a5400d6f40031deb030e4e4df
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 8df7a4be9c8a270feebd7e27d25c006eb4dc5817
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715993"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927941"
 ---
 # <a name="source-control-plug-in-api-functions"></a>Funkcje interfejsu API wtyczki kontroli źródła
 Interfejs API wtyczki kontroli źródła udostępnia następujące funkcje, które muszą zostać zaimplementowane przez wtyczkę kontroli źródła zgodnie z tym interfejsem API. Sygnatury każdej funkcji i semantyki skojarzonej z flagami bitowymi i innymi parametrami są szczegółowo opisane w tym odwołaniu.

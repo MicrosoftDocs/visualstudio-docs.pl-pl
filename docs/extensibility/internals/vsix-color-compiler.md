@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e50cd1f1c8c3ff7f86cd00e4b384f548c7ec9d21
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 7e6e4a07a023be398c4106984fe4dc33eddd2706
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97488001"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929202"
 ---
 # <a name="vsix-color-compiler"></a>Kompilator kolorów VSIX
 Visual Studio Extension Color Tool narzędzie kompilatora to Aplikacja konsolowa, która pobiera plik. XML reprezentujący kolory dla istniejących motywów programu Visual Studio i dzieli go na plik. pkgdef, dzięki czemu można używać tych kolorów w programie Visual Studio. Ponieważ można łatwo porównać różnice między plikami XML, to narzędzie jest przydatne do zarządzania kolorami niestandardowymi w kontroli źródła. Można go również podłączyć do środowisk kompilacji, aby dane wyjściowe kompilacji były prawidłowym plikiem. pkgdef.
@@ -107,7 +107,7 @@ Visual Studio Extension Color Tool narzędzie kompilatora to Aplikacja konsolowa
 
 |**Atrybut**|**Definicja**|
 |-|-|
-|Typ|Potrzeb Typ koloru. Może być jedną z następujących czynności:<br /><br /> *CT_INVALID:* Kolor jest nieprawidłowy lub nie został ustawiony.<br /><br /> *CT_RAW:* Pierwotna wartość ARGB.<br /><br /> *CT_COLORINDEX:* NIE NALEŻY UŻYWAĆ.<br /><br /> *CT_SYSCOLOR:* Kolor systemu Windows z SysColor.<br /><br /> *CT_VSCOLOR:* Kolor programu Visual Studio z __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* Kolor automatyczny.<br /><br /> *CT_TRACK_FOREGROUND:* NIE NALEŻY UŻYWAĆ.<br /><br /> *CT_TRACK_BACKGROUND:* NIE NALEŻY UŻYWAĆ.|
+|Typ|Potrzeb Typ koloru. Może to być jedna z następujących opcji:<br /><br /> *CT_INVALID:* Kolor jest nieprawidłowy lub nie został ustawiony.<br /><br /> *CT_RAW:* Pierwotna wartość ARGB.<br /><br /> *CT_COLORINDEX:* NIE NALEŻY UŻYWAĆ.<br /><br /> *CT_SYSCOLOR:* Kolor systemu Windows z SysColor.<br /><br /> *CT_VSCOLOR:* Kolor programu Visual Studio z __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* Kolor automatyczny.<br /><br /> *CT_TRACK_FOREGROUND:* NIE NALEŻY UŻYWAĆ.<br /><br /> *CT_TRACK_BACKGROUND:* NIE NALEŻY UŻYWAĆ.|
 |Element źródłowy|Potrzeb Wartość koloru reprezentowanego w formacie szesnastkowym|
 
  Wszystkie wartości obsługiwane przez Wyliczenie __VSCOLORTYPE są obsługiwane przez schemat w atrybucie typu. Zaleca się jednak używanie tylko CT_RAW i CT_SYSCOLOR.

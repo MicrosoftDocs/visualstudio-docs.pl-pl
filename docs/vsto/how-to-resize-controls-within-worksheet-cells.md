@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Windows Forms controls [Office development in Visual Studio], resizing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ba2a77dc44618c0415e645718aff3ead542b4b48
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 7b62d3fed62b4d17b9f1918b76760593b38d83a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525349"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927824"
 ---
 # <a name="how-to-resize-controls-within-worksheet-cells"></a>Instrukcje: zmiana rozmiaru kontrolek w komórkach arkusza
   W przypadku zmiany rozmiaru kolumn lub wierszy w arkuszu wszystkie kontrolki hosta w komórkach są automatycznie zmieniane na wysokość lub szerokość komórki, której rozmiar został zmieniony. Kontrolki Windows Forms domyślnie nie są zmieniane automatycznie.

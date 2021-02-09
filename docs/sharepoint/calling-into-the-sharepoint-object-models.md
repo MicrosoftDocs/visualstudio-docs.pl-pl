@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extensibility features
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 40cd7132888d8b19d8e2a2818ec9a299b465e786
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 14358b5cc84f63227fd5001731c261002a324492
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850055"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928942"
 ---
 # <a name="call-into-the-sharepoint-object-models"></a>Wywoływanie modeli obiektów programu SharePoint
   Podczas tworzenia rozszerzeń dla narzędzi programu SharePoint w programie Visual Studio, może być konieczne wywołanie interfejsów API programu SharePoint w celu wykonania określonych zadań. Jeśli na przykład utworzysz niestandardowy krok wdrożenia dla projektów programu SharePoint, może być konieczne wywołanie interfejsów API programu SharePoint w celu wykonania niektórych zadań związanych z wdrażaniem rozwiązań.
@@ -56,7 +56,7 @@ ms.locfileid: "94850055"
 ### <a name="understand-how-sharepoint-commands-are-executed"></a>Informacje o wykonywaniu poleceń programu SharePoint
  Zestawy, które definiują polecenia programu SharePoint, są ładowane w 64-bitowym procesie o nazwie *vssphost4.exe*. Po wywołaniu polecenia programu SharePoint w rozszerzeniu narzędzi programu SharePoint polecenie jest wykonywane przez *vssphost4.exe* zamiast 32-bitowego procesu programu Visual Studio (*devenv.exe*). Można kontrolować pewne aspekty sposobu wykonywania poleceń programu SharePoint przez ustawienie wartości w rejestrze. Aby uzyskać więcej informacji, zobacz [Debugowanie rozszerzeń dla narzędzi programu SharePoint w programie Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: Tworzenie polecenia SharePoint](../sharepoint/how-to-create-a-sharepoint-command.md)
 - [Instrukcje: wykonywanie polecenia SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md)
 - [Omówienie modelu programowania rozszerzeń narzędzi SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
