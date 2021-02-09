@@ -9,17 +9,17 @@ helpviewer_keywords:
 - performance [Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e6f93b7709144e6682bc54d5686fde5ff650f56
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: e1c1be9ef034f4c11fde22e8aa811785631321f5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871473"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909130"
 ---
 # <a name="optimize-visual-studio-performance"></a>Optymalizowanie wydajności programu Visual Studio
 
@@ -53,7 +53,7 @@ Ponadto nie należy uruchamiać rozwiązania z dysku USB. Skopiuj go na dysk twa
 
 Twoja opinia pomoże nam ulepszyć program. Użyj funkcji **Zgłoś problem** , aby "zarejestrować" śledzenie i wysłać do nas. Wybierz ikonę opinii obok pozycji **Szybkie uruchamianie** lub wybierz pozycję **Pomoc**  >  **Wyślij opinię**  >  **Zgłoś problem** z paska menu. Aby uzyskać więcej informacji, zobacz [Jak zgłosić problem w programie Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Porady i wskazówki dotyczące wydajności](../ide/visual-studio-performance-tips-and-tricks.md)
 - [Rozwiązania do ładowania blogów z programu Visual Studio szybciej dzięki programowi Visual Studio 2017 w wersji 15,6](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/)

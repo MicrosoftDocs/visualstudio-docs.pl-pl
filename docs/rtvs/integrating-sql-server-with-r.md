@@ -5,15 +5,15 @@ ms.date: 06/25/2018
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 2d1eb4cc53b6123acbba9741d33d3401d44cf6d7
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: c0aedbccdb82bd91fe201a23b6201a3cdd7db283
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011882"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908686"
 ---
 # <a name="work-with-sql-server-and-r"></a>Współpraca z SQL Server i R
 
@@ -158,7 +158,7 @@ WITH RESULT SETS ((medallion NVARCHAR(max), hack_license NVARCHAR(max)));
 
     ![Okno dialogowe publikowania procedury składowanej](media/sql-publish-with-options.png)
 
-1. Aby opublikować wszystkie procedury składowane w projekcie, można użyć polecenia Publikuj **Narzędzia**do  >  **publikowania danych**języka R  >  **Publish Stored Procedures** , które jest również dostępne po kliknięciu prawym przyciskiem myszy projektu w Eksplorator rozwiązań.
+1. Aby opublikować wszystkie procedury składowane w projekcie, można użyć polecenia Publikuj **Narzędzia** do  >  **publikowania danych** języka R  >   , które jest również dostępne po kliknięciu prawym przyciskiem myszy projektu w Eksplorator rozwiązań.
 
 > [!Tip]
-> Jeśli masz otwarty Eksplorator obiektów SQL Server w programie Visual Studio, opublikowana procedura składowana zostanie wyświetlona **Programmability**w  >  folderze**procedury składowane** programowalności bazy danych. Możesz również uruchomić ją z Eksplorator obiektów przez kliknięcie prawym przyciskiem myszy i wybranie polecenia **wykonaj procedurę**lub przez wywołanie go interaktywnie z okna zapytania *SQL* .
+> Jeśli masz otwarty Eksplorator obiektów SQL Server w programie Visual Studio, opublikowana procedura składowana zostanie wyświetlona w  >  folderze **procedury składowane** programowalności bazy danych. Możesz również uruchomić ją z Eksplorator obiektów przez kliknięcie prawym przyciskiem myszy i wybranie polecenia **wykonaj procedurę** lub przez wywołanie go interaktywnie z okna zapytania *SQL* .

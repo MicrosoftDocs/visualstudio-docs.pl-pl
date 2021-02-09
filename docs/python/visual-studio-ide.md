@@ -5,18 +5,18 @@ ms.date: 03/13/2019
 ms.topic: overview
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 dev_langs:
 - Python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9d744e7495323c6e0ce565f33e2cfca95feb0a51
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: d90ee69b8ee7f264a48d6ae01f77ea65e5d1c1b9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928687"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908787"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Witamy w programie Visual Studio IDE | Python
 
@@ -50,7 +50,7 @@ Istnieją trzy wersje programu Visual Studio w systemie Windows: Community, Prof
 
 Niektóre popularne funkcje programu Visual Studio, które ułatwiają wydajniejszą pracę podczas opracowywania oprogramowania, obejmują:
 
-- [IntelliSense](editing-python-code-in-visual-studio.md#intellisense)
+- [Technologia](editing-python-code-in-visual-studio.md#intellisense)
 
    Technologia IntelliSense to termin dla zestawu funkcji, który wyświetla informacje o kodzie bezpośrednio w edytorze, a w niektórych przypadkach zapisuje małe bity kodu. Jest tak jak w przypadku, gdy podstawowa dokumentacja jest wbudowana w edytorze, co umożliwia zaoszczędzenie informacji o typie w innym miejscu. Funkcje IntelliSense różnią się w zależności od języka, a [Edycja artykułu kodu](editing-python-code-in-visual-studio.md#intellisense) w języku Python zawiera szczegółowe informacje dotyczące środowiska Python. Na poniższej ilustracji przedstawiono, w jaki sposób technologia IntelliSense wyświetla listę elementów członkowskich typu:
 
@@ -58,7 +58,7 @@ Niektóre popularne funkcje programu Visual Studio, które ułatwiają wydajniej
 
 - [Refaktoryzacja](refactoring-python-code.md)
 
-   Po kliknięciu prawym przyciskiem myszy fragmentu kodu i wybraniu opcji **szybkie akcje i refaktoryzacje**program Visual Studio udostępnia operacje, takie jak inteligentne Zmienianie nazw zmiennych, wyodrębnianie jednego lub większej liczby wierszy kodu do nowej metody, zmiana kolejności parametrów metody itd.
+   Po kliknięciu prawym przyciskiem myszy fragmentu kodu i wybraniu opcji **szybkie akcje i refaktoryzacje** program Visual Studio udostępnia operacje, takie jak inteligentne Zmienianie nazw zmiennych, wyodrębnianie jednego lub większej liczby wierszy kodu do nowej metody, zmiana kolejności parametrów metody itd.
 
    ![Refaktoryzacja w programie Visual Studio](media/tour-ide-refactor-extract-method.png)
 
@@ -106,7 +106,7 @@ Niektóre popularne funkcje programu Visual Studio, które ułatwiają wydajniej
 
 - [Debugowanie](debugging-python-in-visual-studio.md)
 
-    Program Visual Studio oferuje kompleksowe środowisko debugowania dla języka Python, w tym dołączanie do uruchomionych procesów, ocenianie wyrażeń w oknach **czujka** i **natychmiastowe** , inspekcja lokalnych zmiennych, punktów przerwania, instrukcji krokowych/out/over, **Ustawianie następnej instrukcji**i innych. Można także debugować kod zdalnego kodu Python uruchomiony na komputerach z systemem Linux.
+    Program Visual Studio oferuje kompleksowe środowisko debugowania dla języka Python, w tym dołączanie do uruchomionych procesów, ocenianie wyrażeń w oknach **czujka** i **natychmiastowe** , inspekcja lokalnych zmiennych, punktów przerwania, instrukcji krokowych/out/over, **Ustawianie następnej instrukcji** i innych. Można także debugować kod zdalnego kodu Python uruchomiony na komputerach z systemem Linux.
 
     ![Debugowanie języka Python w programie Visual Studio](media/remote-debugging-breakpoint-hit.png)
 

@@ -30,15 +30,15 @@ helpviewer_keywords:
 ms.assetid: 57b6bbb7-f2af-48f7-8773-127d75034ed2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 51237a9b73825620c77c7f2a10ad1efe367cdd37
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 6f96570f517d24492ecdacb4e45450fa7b7ba1cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149550"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908399"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>Ustawianie konfiguracji debugowania i wersji w programie Visual Studio
 
@@ -119,7 +119,7 @@ Aby uzyskać szczegółowe informacje na temat ustawień projektu dla konfigurac
 
    Kompilator tworzy pliki symboli w tym samym folderze, w którym znajduje się plik wykonywalny lub główny pliku wyjściowego.
 
-## <a name="see-also"></a><a name="see-also"></a>Zobacz także
+## <a name="see-also"></a><a name="see-also"></a>Zobacz też
 
 - [Określanie plików symboli (. pdb) i plików źródłowych w debugerze programu Visual Studio](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)<br/>
 - [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)<br/>

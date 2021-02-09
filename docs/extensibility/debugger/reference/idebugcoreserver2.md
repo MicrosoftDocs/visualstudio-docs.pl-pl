@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9c47d0a6-9eb1-464e-bd44-fa2b552d4d36
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a5990c84fbaeb5ebb3b1e188d3317234afda06b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba05cb5a933c5b3caaf080c9098c83451a20e484
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733035"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909996"
 ---
 # <a name="idebugcoreserver2"></a>IDebugCoreServer2
 Ten interfejs służy do reprezentowania i uzyskiwania informacji z serwera na komputerze w sieci.
@@ -61,6 +61,6 @@ IDebugCoreServer2 : IUknown
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)
-- [Wydarzenie](../../../extensibility/debugger/reference/idebugportevents2-event.md)
+- [Zdarzenie](../../../extensibility/debugger/reference/idebugportevents2-event.md)
 - [GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md)
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

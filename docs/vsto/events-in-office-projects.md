@@ -31,15 +31,15 @@ helpviewer_keywords:
 - ThisAddIn_Shutdown
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 381d6ffad2afadd90278577ad0e247a2f20ec375
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 7bf4da3f0b2dd9cbab960a779690aa752744cdae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848186"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910323"
 ---
 # <a name="events-in-office-projects"></a>Zdarzenia w projektach pakietu Office
   Każdy szablon projektu pakietu Office automatycznie generuje kilka programów obsługi zdarzeń. Programy obsługi zdarzeń dla dostosowań na poziomie dokumentu różnią się nieco od programów obsługi zdarzeń dla dodatków narzędzi VSTO.
@@ -154,7 +154,7 @@ ms.locfileid: "96848186"
 > [!NOTE]
 > Można wymusić, aby program Outlook zgłaszał <xref:Microsoft.Office.Tools.AddInBase.Shutdown> zdarzenie po jego zakończeniu przez zmodyfikowanie rejestru. Jeśli jednak administrator powróci to ustawienie, dowolny kod, który zostanie dodany do metody, `ThisAddIn_Shutdown` nie będzie już działać po zamknięciu programu Outlook. Aby uzyskać więcej informacji, zobacz temat [zmiany w zamknięciu programu Outlook 2010](/previous-versions/office/developer/office-2010/ee720183(v=office.14)).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Opracowywanie rozwiązań pakietu Office](../vsto/developing-office-solutions.md)
 - [Instrukcje: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Dostosowywanie na poziomie dokumentu programu](../vsto/programming-document-level-customizations.md)

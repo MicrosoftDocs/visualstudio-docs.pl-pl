@@ -6,17 +6,17 @@ ms.date: 12/16/2016
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 f1_keywords:
 - vs.codefix.previewchanges
 ms.workload:
 - multiple
-ms.openlocfilehash: f8eef438f1dd504120b62e2e0018935489d6c80a
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 55a53e60ffa05892531257871ede89381e7fd4e2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871447"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909011"
 ---
 # <a name="preview-changes-window"></a>Podgląd okna zmian
 
@@ -30,7 +30,7 @@ Dolna połowa okna pokazuje sformatowany kod z projektu, który zostanie zmienio
 
 Po przejrzeniu zmian kliknij przycisk **Zastosuj** , aby zatwierdzić te zmiany, lub kliknij przycisk **Anuluj** , aby pozostawić elementy, które były takie same.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Refaktoryzacja w programie Visual Studio](../ide/refactoring-in-visual-studio.md)
 - [Szybkie akcje](../ide/quick-actions.md)

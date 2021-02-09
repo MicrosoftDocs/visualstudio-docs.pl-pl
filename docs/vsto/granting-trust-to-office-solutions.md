@@ -14,15 +14,15 @@ helpviewer_keywords:
 - granting trust [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f0b81c034ed0f8934da378dc214191d3be1f4506
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: f98f3154a0708ce7a01603968f0f5774dd86f40e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848329"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910226"
 ---
 # <a name="grant-trust-to-office-solutions"></a>Udzielanie zaufania do rozwiązań pakietu Office
   Udzielanie zaufania do rozwiązań pakietu Office oznacza modyfikację zasad zabezpieczeń każdego komputera docelowego w celu zaufania do zestawu rozwiązań, manifestu aplikacji, manifestu wdrażania i dokumentu. Zaufaniem można udzielić do rozwiązania pakietu Office przez użytkownika lub użytkowników końcowych.
@@ -47,7 +47,7 @@ ms.locfileid: "96848329"
 
  Administratorzy mogą wyłączyć [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] monit zaufania lub wymagać, aby monit zarejestrował się tylko w przypadku rozwiązań podpisanych za pomocą certyfikatu Authenticode. Aby uzyskać więcej informacji na temat zmiany tych ustawień dla stref mójkomputer, LocalIntranet, Internet, TrustedSites i UntrustedSites, zobacz How to [: Configure the ClickOnce Trust Prompt Behavior](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Zabezpieczanie rozwiązań pakietu Office](../vsto/securing-office-solutions.md)
 - [Udzielanie zaufania do dokumentów](../vsto/granting-trust-to-documents.md)

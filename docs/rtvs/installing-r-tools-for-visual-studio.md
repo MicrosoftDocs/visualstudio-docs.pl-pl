@@ -5,16 +5,16 @@ ms.date: 01/24/2018
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
 monikerRange: vs-2017
-ms.openlocfilehash: 5a09b3f78b929fd60764be36f56c0b580c7a42d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fa5346d65a94646a0fa5e922f3b0055d8cdb6c0d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75843733"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908661"
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>Jak zainstalować R Tools for Visual Studio
 
@@ -44,7 +44,7 @@ RTVS nie jest instalowana, jeśli masz tylko powłokę programu Visual Studio, k
 
     ![Obciążenie aplikacji do analizy i przetwarzania danych w program VS2017](media/installation-data-science-workload.png)
 
-1. Ustaw opcje dodatkowe po prawej stronie pod tą samą nazwą obciążenia. Domyślnie to obciążenie obejmuje obsługę języka F # i środowiska Python. W przypadku języka R wymagania minimalne są **obsługiwane w języku r**, **Obsługa środowiska uruchomieniowego w środowisku r**i **program Microsoft R Client**.
+1. Ustaw opcje dodatkowe po prawej stronie pod tą samą nazwą obciążenia. Domyślnie to obciążenie obejmuje obsługę języka F # i środowiska Python. W przypadku języka R wymagania minimalne są **obsługiwane w języku r**, **Obsługa środowiska uruchomieniowego w środowisku r** i **program Microsoft R Client**.
 
 RTVS jest zainstalowany w: *% ProgramFiles (x86)% \ Microsoft Visual Studio \<version> \<edition> Common7\IDE\Extensions\Microsoft\R Tools for Visual Studio* *\<version>* , gdzie jest zwykle `2017` i *\<edition>* jest `Community` , `Professional` lub `Enterprise` .
 

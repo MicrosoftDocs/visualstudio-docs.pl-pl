@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: fae84f68-2138-4144-9bd4-c9e271b6182a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c5a76bf799eabd29b778c2dec867cc7e50aa45ee
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 88880110ca00141382d7038ec001f3cc4159f2b3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205531"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908327"
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Pseudozmiennych pokazanych w debugerze programu Visual Studio
 Pseudozmiennych pokazanych są terminami używanymi do wyświetlania pewnych informacji w oknie zmiennych lub oknie dialogowym **QuickWatch** . Możesz wprowadzić pseudozmienna w taki sam sposób, jak w przypadku wprowadzenia zmiennej normalnej. Pseudozmiennych pokazanych nie są zmienne, ale nie odpowiadają nazwom zmiennych w programie.

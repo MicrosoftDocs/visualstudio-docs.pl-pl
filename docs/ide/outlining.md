@@ -14,15 +14,15 @@ helpviewer_keywords:
 - outlining code
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e45d7192c35ed60442fadf1a3eb302997fbaf381
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 04a2156723bc33e25a658814b9348655f7ba86d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136670"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909060"
 ---
 # <a name="outlining"></a>Tworzenie konspektu
 
@@ -31,11 +31,11 @@ Można ukryć jakiś kod z widoku, zwijając region kodu, tak aby pojawił się 
 > [!NOTE]
 > Ten temat ma zastosowanie do programu Visual Studio w systemie Windows. Aby uzyskać Visual Studio dla komputerów Mac, zobacz temat [Edytor źródła (Visual Studio dla komputerów Mac)](/visualstudio/mac/source-editor).
 
-Regiony na marginesie tworzenia konspektu są również podświetlane po umieszczeniu wskaźnika myszy na marginesie przy użyciu myszki. Domyślny kolor wyróżnienia może wydawać się raczej słaby w niektórych konfiguracjach kolorów. Można ją zmienić w opcji **Narzędzia**  >  **Options**  >  **Environment**  >  **czcionki i kolory**środowiska  >  **zwijane**.
+Regiony na marginesie tworzenia konspektu są również podświetlane po umieszczeniu wskaźnika myszy na marginesie przy użyciu myszki. Domyślny kolor wyróżnienia może wydawać się raczej słaby w niektórych konfiguracjach kolorów. Można ją zmienić w opcji **Narzędzia**  >    >    >  **czcionki i kolory** środowiska  >  **zwijane**.
 
 Gdy Pracujesz w kodzie konspektu, możesz rozwinąć sekcje, nad którymi chcesz pracować, zwinąć je po zakończeniu, a następnie przejść do innych sekcji. Jeśli nie chcesz wyświetlać konspektów, możesz użyć polecenia **Zatrzymaj tworzenie** konspektu, aby usunąć informacje o konspekcie bez zakłócania kodu źródłowego.
 
-Polecenia **Cofnij** i **Wykonaj ponownie** w menu **Edycja** mają wpływ na te akcje. Operacje **kopiowania**, **wycinania**, **wklejania**oraz przeciągania i upuszczania zachowują informacje z konspektu, ale nie stan regionu zwijanego. Na przykład podczas kopiowania regionu, który jest zwinięty, operacja **wklejania** spowoduje wklejenie skopiowanego tekstu jako rozwiniętego regionu.
+Polecenia **Cofnij** i **Wykonaj ponownie** w menu **Edycja** mają wpływ na te akcje. Operacje **kopiowania**, **wycinania**, **wklejania** oraz przeciągania i upuszczania zachowują informacje z konspektu, ale nie stan regionu zwijanego. Na przykład podczas kopiowania regionu, który jest zwinięty, operacja **wklejania** spowoduje wklejenie skopiowanego tekstu jako rozwiniętego regionu.
 
 > [!CAUTION]
 > Po zmianie regionu obramowania może dojść do utraty konspektu. Na przykład operacje usuwania lub **znajdowania i zamieniania** mogą wymazać koniec regionu.

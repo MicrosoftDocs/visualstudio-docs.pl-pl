@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: b9fbc8fa-66d1-4055-8460-24d8b8fbe43e
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cc2f459fa3455d3f02953c42ad06e7f2647c79c6
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 21d3b402bbffd9528755098131ff9ed1ee636906
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134723"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908146"
 ---
 # <a name="work-with-textures-and-images"></a>Praca z teksturami i obrazami
 
@@ -48,7 +48,7 @@ Mapy wysokości zawierają dane pól wysokości. Są one używane do zapewnienia
 
 ### <a name="cube-maps"></a>Mapy modułów
 
-Mapy modułów mogą zawierać różne typy danych — na przykład kolory lub normalne, ale są zorganizowane jako sześć tekstur na powierzchniach modułu. W związku z tym mapy modułów nie są próbkowane przez dostarczenie współrzędnych tekstury, ale przez dostarczenie wektora, którego źródłem jest środek modułu; próbka jest wykonywana w punkcie, w którym wektor przecina moduł. Mapy modułów służą do zapewnienia przybliżenia środowiska, którego można użyć do obliczenia odbić — jest to nazywane *mapowaniem środowiska* — lub w celu zapewnienia tekstury dla obiektów sferycznych o mniejszej zniekształceniu niż w przypadku warstw podstawowych.
+Mapy modułów mogą zawierać różne typy danych — na przykład kolory lub normalne, ale są zorganizowane jako sześć tekstur na powierzchniach modułu. W związku z tym mapy modułów nie są próbkowane przez dostarczenie współrzędnych tekstury, ale przez dostarczenie wektora, którego źródłem jest środek modułu; próbka jest wykonywana w punkcie, w którym wektor przecina moduł. Mapy modułów służą do zapewnienia przybliżenia środowiska, którego można użyć do obliczenia odbić — jest to nazywane *mapowaniem środowiska*— lub w celu zapewnienia tekstury dla obiektów sferycznych o mniejszej zniekształceniu niż w przypadku warstw podstawowych.
 
 ## <a name="related-topics"></a>Powiązane tematy
 

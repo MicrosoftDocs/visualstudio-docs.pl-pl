@@ -18,15 +18,15 @@ helpviewer_keywords:
 - Office object models
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fb3134b7656fc5156554e60fc88d16e6c2b58120
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: a49dcc36d4079a6a945806b3112e3949ddcd79e2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847692"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910290"
 ---
 # <a name="excel-object-model-overview"></a>Model obiektów programu Excel — Omówienie
   Do tworzenia rozwiązań, które korzystają z programu Microsoft Office Excel, można korzystać z obiektów dostarczonych przez model obiektów programu Excel. W tym temacie przedstawiono najważniejsze obiekty:

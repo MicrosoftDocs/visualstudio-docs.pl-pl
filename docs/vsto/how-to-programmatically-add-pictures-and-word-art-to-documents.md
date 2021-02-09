@@ -16,15 +16,15 @@ helpviewer_keywords:
 - WordArt, adding to documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0662c9324aaab8f5a368bc4db300ccff1a0ece33
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 596f7ea7586ee70ae740dc237d83b7a4b40fa83f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844052"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910189"
 ---
 # <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>Instrukcje: programowe Dodawanie zdjęć i rysunków programu Word do dokumentów
   Możesz dodawać obrazy i obiekty rysunkowe do dokumentów w czasie projektowania lub w czasie wykonywania. Obiekt WordArt umożliwia dodawanie dekoracyjnego tekstu do Microsoft Office dokumentów programu Word. Te specjalne efekty tekstowe to obiekty rysunkowe, które można dostosować i wstawić do dokumentu.
@@ -102,7 +102,7 @@ ms.locfileid: "96844052"
 
 - Obraz o nazwie *SamplePicture.jpg* musi znajdować się na dysku C.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: programowe otwieranie istniejących dokumentów](../vsto/how-to-programmatically-open-existing-documents.md)
 - [Instrukcje: Programowane wstawianie tekstu do dokumentów programu Word](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
 - [Instrukcje: Programowane przywracanie zaznaczenia po wyszukiwaniu](../vsto/how-to-programmatically-restore-selections-after-searches.md)

@@ -11,15 +11,15 @@ helpviewer_keywords:
 - globalization [Office development in Visual Studio], configuring
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 51e4a2cc4fb74309c44b8068152253de92eed0df
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: fc61f66b2aefaf0e43b1b5af819e0e244feec114
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847757"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910305"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Globalizacja i lokalizacja rozwiązań programu Excel
   Ta sekcja zawiera informacje dotyczące specjalnych zagadnień dotyczących Microsoft Office rozwiązań programu Excel, które będą uruchamiane na komputerach, które mają ustawienia inne niż angielskie dla systemu Windows. Większość aspektów globalizacji i lokalizowania rozwiązań Microsoft Office jest taka sama, jak podczas tworzenia innych rodzajów rozwiązań za pomocą programu Visual Studio. Aby uzyskać ogólne informacje, zobacz [globalizacja i lokalizowanie aplikacji](../ide/globalizing-and-localizing-applications.md).
@@ -97,7 +97,7 @@ Application.ActiveCell.Value2 = "05/12/04"
 ### <a name="applications-that-use-external-data"></a>Aplikacje korzystające z danych zewnętrznych
  Każdy kod, który otwiera lub w inny sposób wykorzystuje dane zewnętrzne, takie jak pliki, które zawierają wartości rozdzielane przecinkami (pliki CSV) wyeksportowane z starszego systemu, może być również narażony, jeśli te pliki są eksportowane przy użyciu dowolnego formatu niż en-US. Nie ma to oddziaływać na dostęp do bazy danych, ponieważ wszystkie wartości powinny być w formacie binarnym, chyba że baza danych przechowuje daty jako ciągi lub wykonuje operacje, które nie używają formatu binarnego. Ponadto, jeśli tworzysz zapytania SQL przy użyciu danych z programu Excel, może być konieczne upewnienie się, że są one w formacie EN-US, w zależności od używanej funkcji.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Instrukcje: kierowanie wielojęzycznego interfejsu użytkownika pakietu Office](../vsto/how-to-target-the-office-multilingual-user-interface.md)
 - [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)

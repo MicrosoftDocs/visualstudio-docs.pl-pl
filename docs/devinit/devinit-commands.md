@@ -5,18 +5,18 @@ ms.date: 08/28/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 153864a293ca25fdcf30f23b96f686737411c965
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9cd9fef6cebdefc190d37c067616e51c6d3e372f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435787"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908125"
 ---
 # <a name="devinit-commands"></a>polecenia devinit
 
@@ -132,7 +132,7 @@ devinit list
 
 Drukuje listę wszystkich dostępnych narzędzi.
 
-## <a name="show"></a>Show
+## <a name="show"></a>Pokaż
 
 ```console
 devinit show -t <toolname>

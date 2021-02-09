@@ -14,15 +14,15 @@ helpviewer_keywords:
 - granting trust [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9d91a86f8596e0ed7a04ae68099c7c9ab6099a40
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: e2871741d7297b6efabf53bb6f258355c41cac49
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847744"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910259"
 ---
 # <a name="grant-trust-to-documents"></a>Udzielanie zaufania do dokumentów
   Projekt na poziomie dokumentu ma takie same wymagania dotyczące zabezpieczeń, co projekty na poziomie aplikacji: podpisywanie manifestów przy użyciu certyfikatu lub kliknięcie monitu zaufania. Ponadto dokument lub skoroszyt musi znajdować się w katalogu wyznaczono jako zaufaną lokalizację.
@@ -45,7 +45,7 @@ ms.locfileid: "96847744"
 
 - Możesz przechowywać dokument lub skoroszyt rozwiązania poziomu dokumentu w tym samym katalogu, w którym znajduje się zestaw, lub w innym katalogu. Na przykład dokument może znajdować się na serwerze programu SharePoint, a zestaw może znajdować się w sieciowym udziale plików. Aby uzyskać więcej informacji, zobacz [jak: publikowanie rozwiązania Office na poziomie dokumentu na serwerze programu SharePoint przy użyciu technologii ClickOnce](/previous-versions/bb608595(v=vs.110)).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Udzielanie zaufania do rozwiązań pakietu Office](../vsto/granting-trust-to-office-solutions.md)
 - [Rozwiązywanie problemów z zabezpieczeniami rozwiązań pakietu Office](../vsto/troubleshooting-office-solution-security.md)
 - [Zabezpieczanie rozwiązań pakietu Office](../vsto/securing-office-solutions.md)

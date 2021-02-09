@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 9d860a20-c154-4df4-ba15-636e0fcd42bf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bd4f874a2a144ec050d0b018ba78ee3e42d70bad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f2af960c9efdd0732d950f16e7f83dd4d8a54fb4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732929"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908034"
 ---
 # <a name="idebugcoreserver3disableautoattach"></a>IDebugCoreServer3::DisableAutoAttach
 Wyłącza automatyczne dołączanie dla wszystkich aparatów debugowania skojarzonych z tym serwerem.
@@ -28,13 +28,13 @@ Wyłącza automatyczne dołączanie dla wszystkich aparatów debugowania skojarz
 ## <a name="syntax"></a>Składnia
 
 ```cpp
-HRESULT DisableAutoAttach(
+HRESULT DisableAutoAttach(
    void
 );
 ```
 
 ```csharp
-int DisableAutoAttach();
+int DisableAutoAttach();
 ```
 
 ## <a name="return-value"></a>Wartość zwracana

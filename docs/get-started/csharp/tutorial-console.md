@@ -9,18 +9,18 @@ ms.topic: tutorial
 ms.devlang: CSharp
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 484cb82a3659e306bd4c6bd14a3133c4677160db
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+ms.openlocfilehash: ff5e23a92409a3169add19c8810bec44fa4db9ad
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97833341"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909355"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Samouczek: tworzenie prostej aplikacji konsolowej w języku C# w programie Visual Studio
 
@@ -49,13 +49,13 @@ Aby rozpocząć, utworzymy projekt aplikacji w języku C#. Typ projektu jest dos
 2. Na górnym pasku menu wybierz pozycję **plik**  >  **Nowy**  >  **projekt**.
    (Alternatywnie naciśnij klawisz **Ctrl** + **SHIFT** + **N**).
 
-3. W lewym okienku okna dialogowego **Nowy projekt** rozwiń węzeł **C#**, a następnie wybierz pozycję **.NET Core**. W środkowym okienku wybierz pozycję **aplikacja konsoli (.NET Core)**. Następnie Nazwij plik **_Kalkulator_* _.
+3. W lewym okienku okna dialogowego **Nowy projekt** rozwiń węzeł **C#**, a następnie wybierz pozycję **.NET Core**. W środkowym okienku wybierz pozycję **aplikacja konsoli (.NET Core)**. Następnie nazwij **_Kalkulator_** plików.
 
    ![Szablon projektu aplikacji konsolowej (.NET Core) w oknie dialogowym Nowy projekt w programie Visual Studio IDE](./media/new-project-csharp-calculator-console-app.png)
 
 ### <a name="add-a-workload-optional"></a>Dodaj obciążenie (opcjonalnie)
 
-Jeśli nie widzisz szablonu projektu _ *aplikacji konsolowej (.NET Core)**, możesz uzyskać go, dodając obciążenie dla **wielu platform platformy .NET Core** . Oto jak to zrobić.
+Jeśli szablon projektu **Aplikacja konsolowa (.NET Core)** nie jest widoczny, można go uzyskać, dodając obciążenie **Międzyplatformowe platformy .NET Core** . Oto jak to zrobić.
 
 #### <a name="option-1-use-the-new-project-dialog-box"></a>Opcja 1: korzystanie z okna dialogowego Nowy projekt
 

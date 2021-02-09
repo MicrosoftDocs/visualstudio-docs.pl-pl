@@ -6,15 +6,15 @@ ms.date: 11/20/2017
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4acd399aeb9de1d25cbe6abe2b8bba3f347dbc8a
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 550ab6449cc74d3d0d81d60a41b11f0273003c51
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871460"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909022"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Personalizowanie środowiska IDE programu Visual Studio
 
@@ -31,7 +31,7 @@ Można wybrać domyślną kolekcję ustawień, które optymalizują program Visu
 
 Wiele opcji personalizacji jest dostępnych w oknie dialogowym [Opcje środowiska](../ide/reference/general-environment-options-dialog-box.md) . Istnieją dwa sposoby uzyskania dostępu do tego okna dialogowego:
 
-- Na pasku menu wybierz **Tools**  >  **Opcje** narzędzia i jeśli nie jest jeszcze rozwinięte, rozwiń węzeł **środowisko** .
+- Na pasku menu wybierz   >  **Opcje** narzędzia i jeśli nie jest jeszcze rozwinięte, rozwiń węzeł **środowisko** .
 
 - Naciśnij **klawisze CTRL** + **Q**, wpisz **środowisko** w polu wyszukiwania, a następnie wybierz **środowisko > ogólne** z wyników.
 
@@ -68,7 +68,7 @@ Można definiować i zapisywać wiele układów okien i przełączać się międ
 
 Możesz dostosować menu **Narzędzia** , aby uruchomić zewnętrzne narzędzia. Aby uzyskać więcej informacji, zobacz [Zarządzanie narzędziami zewnętrznymi](../ide/managing-external-tools.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Ustawienia środowiska](environment-settings.md)
 - [Środowisko IDE programu Visual Studio — omówienie](../get-started/visual-studio-ide.md)

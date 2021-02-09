@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 733b514b-63a9-402d-89aa-4f0416766655
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fb8debef874dd32f52994d0edd4a27d81b340834
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: eefc69d7dbd7d05eaadc3e9fe8976c0ff03c9a30
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148796"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910018"
 ---
 # <a name="introducing-spy"></a>Wprowadzenie programu Spy++
 Program Spy + + umożliwia wykonywanie następujących zadań:
@@ -53,7 +53,7 @@ Program Spy + + umożliwia wykonywanie następujących zadań:
 > [!NOTE]
 > Mimo że nazwa pliku Spy + + (64-bitowa) zawiera wartość "AMD", jest uruchamiana w dowolnym systemie operacyjnym Windows w wersji x64.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Porady: korzystanie z programu Spy++](../debugger/how-to-start-spy-increment.md)
 - [Korzystanie z programu Spy++](../debugger/using-spy-increment.md)
 - [Spy++ — Widoki](../debugger/spy-increment-views.md)

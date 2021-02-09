@@ -7,17 +7,17 @@ ms.technology: vs-ide-general
 ms.topic: tutorial
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8122f42fb5d2ec4c31ec553407b644e59e9f4418
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8724fcb717953f3897bab092eb3895e228e10c60
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88248286"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909231"
 ---
 # <a name="learn-to-use-the-code-editor-with-c"></a>Dowiedz się, jak używać edytora kodu języka C\#
 
@@ -58,7 +58,7 @@ Zacznij od utworzenia nowego pliku i dodania do niego kodu.
 
 ::: moniker-end
 
-2. Z menu **plik** na pasku menu wybierz polecenie **Nowy**  >  **plik**lub naciśnij **klawisze CTRL** + **N**.
+2. Z menu **plik** na pasku menu wybierz polecenie **Nowy**  >  **plik** lub naciśnij **klawisze CTRL** + **N**.
 
 3. W oknie dialogowym **nowy plik** w obszarze Kategoria **Ogólne** wybierz pozycję **Klasa Visual C#**, a następnie wybierz polecenie **Otwórz**.
 
@@ -80,7 +80,7 @@ Program Visual Studio oferuje przydatne *fragmenty kodu* , za pomocą których m
 
    Zostanie wyświetlony `static void Main()` podpis metody dodany do pliku. Metoda [Main ()](/dotnet/csharp/programming-guide/main-and-command-args/) jest punktem wejścia dla aplikacji języka C#.
 
-Dostępne fragmenty kodu są różne dla różnych języków programowania. Możesz obejrzeć dostępne fragmenty kodu dla danego języka, wybierając opcję **Edytuj**  >  **IntelliSense**  >  **wstawkę** IntelliSense lub naciskając **klawisze CTRL** + **K**, **Ctrl** + **X**, a następnie wybierając folder języka. Dla języka C# lista wygląda następująco:
+Dostępne fragmenty kodu są różne dla różnych języków programowania. Możesz obejrzeć dostępne fragmenty kodu dla danego języka, wybierając opcję **Edytuj**  >    >  **wstawkę** IntelliSense lub naciskając **klawisze CTRL** + **K**, **Ctrl** + **X**, a następnie wybierając folder języka. Dla języka C# lista wygląda następująco:
 
 ![Lista fragmentów kodu w języku C#](../media/tutorial-code-snippet-list.png)
 
@@ -175,7 +175,7 @@ Nikt nie pobiera kodu po raz pierwszy, a jedna z rzeczy, które trzeba zmienić,
 
    Okno dialogowe **zmiana nazwy** zostanie wyświetlone w prawym górnym rogu edytora.
 
-1. Wprowadź odpowiednie nazwy **wyrazów**. Należy zauważyć, że Nazwa odwołania do `words` zapytania jest również automatycznie zmieniana. Przed naciśnięciem klawisza **Enter**zaznacz pole wyboru **Dołącz Komentarze** w oknie podręcznym **zmiany nazwy** .
+1. Wprowadź odpowiednie nazwy **wyrazów**. Należy zauważyć, że Nazwa odwołania do `words` zapytania jest również automatycznie zmieniana. Przed naciśnięciem klawisza **Enter** zaznacz pole wyboru **Dołącz Komentarze** w oknie podręcznym **zmiany nazwy** .
 
    ![Zmień nazwę — Okno dialogowe](../media/tutorial-rename.png)
 

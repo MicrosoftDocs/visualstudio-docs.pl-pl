@@ -9,17 +9,17 @@ ms.topic: tutorial
 ms.devlang: CSharp
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c1f541c94804f8f5f454f6299a116a8bd1386e7
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 342fb2ba0d094299b41707b93b52f3b28a3afdce
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037279"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909250"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Samouczek: Tworzenie pierwszej aplikacji platforma uniwersalna systemu Windows w programie Visual Studio za pomocą języków XAML i C&#35;
 
@@ -66,7 +66,7 @@ Najpierw utwórz projekt platforma uniwersalna systemu Windows. Typ projektu jes
    > [!NOTE]
    > Jeśli nie widzisz szablonu projektu **pusta aplikacja (uniwersalna systemu Windows)** , kliknij link **Zainstaluj więcej narzędzi i funkcji** .<br><br>![Kliknij link zainstaluj więcej narzędzi i funkcji](media/vs-2019/uwp-not-finding.png)<br><br>Zostanie uruchomiona Instalator programu Visual Studio. Wybierz **platforma uniwersalna systemu Windows obciążenie programowaniem** , a następnie wybierz polecenie **Modyfikuj**.<br><br>![platforma uniwersalna systemu Windows obciążenie programowaniem w Instalator programu Visual Studio](media/uwp-dev-workload.png)
 
-1. Nadaj projektowi nazwę, _HelloWorld_i wybierz pozycję **Utwórz**.
+1. Nadaj projektowi nazwę, _HelloWorld_ i wybierz pozycję **Utwórz**.
 
    ![Konfigurowanie ekranu projektu](media/vs-2019/uwp-configure-your-project.png)
 
@@ -85,7 +85,7 @@ Rozpoczęcie tworzenia aplikacji jest czasochłonne. Dodasz kontrolkę Button, d
 
 ### <a name="add-a-button-to-the-design-canvas"></a>Dodawanie przycisku do kanwy projektowania
 
-1. W **Eksplorator rozwiązań**kliknij dwukrotnie pozycję *MainPage. XAML* , aby otworzyć widok podzielony.
+1. W **Eksplorator rozwiązań** kliknij dwukrotnie pozycję *MainPage. XAML* , aby otworzyć widok podzielony.
 
    ::: moniker range="vs-2017"
    ![Otwórz MainPage. XAML z Eksplorator rozwiązań ](media/uwp-solution-explorer-MainPage-xaml.png)
@@ -118,7 +118,7 @@ Rozpoczęcie tworzenia aplikacji jest czasochłonne. Dodasz kontrolkę Button, d
 
 ### <a name="add-a-label-to-the-button"></a>Dodawanie etykiety do przycisku
 
-1. W **Edytorze XAML**Zmień wartość zawartości przycisku z "Button" na "Hello World!"
+1. W **Edytorze XAML** Zmień wartość zawartości przycisku z "Button" na "Hello World!"
 
    ![Zmień wartość zawartości przycisku na Hello world](media/uwp-change-button-text-in-xaml-code-window.png)
 
@@ -209,7 +209,7 @@ Gratulujemy ukończenia tego samouczka. Mamy nadzieję, że znasz kilka podstawo
 > [!div class="nextstepaction"]
 > [Tworzenie interfejsu użytkownika](/windows/uwp/design/basics/xaml-basics-ui)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Omówienie platformy UWP](/windows/uwp/get-started/universal-application-platform-guide)
 - [Pobierz przykłady aplikacji platformy UWP](/windows/uwp/get-started/get-uwp-app-samples)
