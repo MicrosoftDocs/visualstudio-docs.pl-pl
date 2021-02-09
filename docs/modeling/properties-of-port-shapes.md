@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Domain-Specific Language, port shape
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c51d770392fd219478b3e8f8aa428cdcbab6ef3e
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 91b505278ef62a7e0ded42f407e1c38083fa7c6d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362824"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883015"
 ---
 # <a name="properties-of-port-shapes"></a>Właściwości kształtów portu
 Za pomocą kształtów portów można reprezentować klasy domeny w wygenerowanym projektancie.
@@ -27,7 +27,7 @@ Za pomocą kształtów portów można reprezentować klasy domeny w wygenerowany
 
  Kształty portów mają właściwości, które są wymienione w poniższej tabeli.
 
-|Właściwość|Opis|Domyślny|
+|Właściwość|Opis|Domyślne|
 |-|-|-|
 |Kolor wypełnienia|Kolor wypełnienia tego kształtu.|Biały|
 |Tryb gradientu wypełnienia|Tryb gradientu wypełnienia tego kształtu.|Pozioma|

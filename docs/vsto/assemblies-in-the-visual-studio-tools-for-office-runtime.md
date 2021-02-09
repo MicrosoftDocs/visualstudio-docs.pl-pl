@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Visual Studio Tools for Office runtime, assemblies
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 86c3c2b77b6bbea1e609bbea092b44bd1dee1dd4
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 600408231e5085009e5edc546535ca8e5110fc6e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848303"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882560"
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>Zestawy w Visual Studio Tools dla środowiska uruchomieniowego pakietu Office
   Podczas tworzenia projektu pakietu Office Program Visual Studio automatycznie dodaje odwołania do [!INCLUDE[vsto_runtime](includes/vsto-runtime-md.md)] zestawów, które są używane dla typu projektu i docelowego .NET Framework projektu. Istnieją różne zestawy w rozszerzeniach pakietu Office dla .NET Framework 3,5, [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] i [!INCLUDE[net_v45](includes/net-v45-md.md)] . Aby uzyskać więcej informacji o rozszerzeniach pakietu Office, zobacz [Visual Studio Tools dla środowiska uruchomieniowego pakietu Office](visual-studio-tools-for-office-runtime-overview.md).
@@ -63,6 +63,6 @@ ms.locfileid: "96848303"
 |Microsoft.VisualStudio.Tools.Applications.ServerDocument.v10.0.dll|Program udostępnia następujące typy:<br /><br /> - <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> Klasa, której można użyć do programistycznego dołączania zestawów dostosowania do dokumentów i uzyskiwania dostępu do danych w pamięci podręcznej w dokumentach. Aby uzyskać więcej informacji, zobacz [Zarządzanie dokumentami na serwerze za pomocą klasy ServerDocument](managing-documents-on-a-server-by-using-the-serverdocument-class.md).<br />-Kilka klas, które reprezentują hierarchię danych w pamięci podręcznej w dostosowaniu na poziomie dokumentu. Aby uzyskać więcej informacji, zobacz [dostęp do danych w dokumentach na serwerze](accessing-data-in-documents-on-the-server.md).|
 |Microsoft.VisualStudio.Tools.Office.Runtime.v10.0.dll|Program udostępnia następujące typy:<br /><br /> — Klasy Microsoft. VisualStudio. Tools. Office. Runtime. Security. AddInSecurityEntry i Microsoft. VisualStudio. Tools. Office. Runtime. Security. UserInclusionList, których można użyć do tworzenia wpisów listy dołączania użytkowników w celu udzielenia zaufania do rozwiązań pakietu Office przeznaczonych dla .NET Framework 3,5.<br />-Inne typy, które są częścią Visual Studio Tools dla infrastruktury środowiska uruchomieniowego pakietu Office i nie są przeznaczone do użycia bezpośrednio w kodzie.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Visual Studio Tools dla środowiska uruchomieniowego pakietu Office — omówienie](visual-studio-tools-for-office-runtime-overview.md)
 - [Visual Studio Tools dla scenariuszy instalacji środowiska uruchomieniowego pakietu Office](visual-studio-tools-for-office-runtime-installation-scenarios.md)

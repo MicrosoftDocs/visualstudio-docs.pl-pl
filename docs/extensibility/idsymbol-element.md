@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 760cfd20-3c06-422c-9103-98bfa1f387f8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4feb477f8507bc3fe57e6db355538ab98ceeeaa
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 830324e708ff83fbcbbbdb98d261130e92c7ba00
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995541"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883197"
 ---
 # <a name="idsymbol-element"></a>IDSymbol, element
 `IDSymbol`Element zawiera identyfikator pary GUID: ID, która reprezentuje menu, grupę lub polecenie. Identyfikator GUID pochodzi z elementu nadrzędnego `GuidSymbol` . `IDSymbol`Element ma `name` atrybut, który zawiera przyjazną nazwę dla identyfikatora, który jest zawarty w `value` atrybucie.

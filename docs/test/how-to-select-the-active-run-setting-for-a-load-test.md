@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: ed6ff546-acfa-4dd8-b3a2-6e7455930ca4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 87a67cb90ed48993e75dc248f23d10e982c64c43
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: c93c636d8321affead3c3fce6f3074801cb9ae87
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95439865"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882651"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Instrukcje: Wybieranie aktywnego ustawienia uruchomieniowego dla testu obciążenia
 
@@ -57,7 +57,7 @@ I do uruchomienia testu:
 
 **MSTest/testcontainer: LoadTest1. LoadTest**
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Skonfiguruj ustawienia przebiegu testu obciążenia](../test/configure-load-test-run-settings.md)
 - [Określ zestawy liczników i reguły progowe dla komputerów w teście obciążenia](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)

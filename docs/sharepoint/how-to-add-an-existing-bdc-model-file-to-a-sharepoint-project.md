@@ -17,15 +17,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], remove a model
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ce65f286c3de760ff74e5ef7239aac54d760f003
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: af0768b4834eb1cad3654b6d74ee8f02cf464245
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914962"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882677"
 ---
 # <a name="how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project"></a>Instrukcje: Dodawanie istniejącego pliku modelu BDC do projektu programu SharePoint
   Można dostosować, spakować i ponownie wdrożyć model łączności danych biznesowych (BDC) przy użyciu programu Visual Studio, aby dodać plik modelu (*. bdcm*) do dowolnego projektu farmy programu SharePoint. Aby uzyskać więcej informacji, zobacz [Tworzenie modelu łączności danych firmowych](../sharepoint/creating-a-business-data-connectivity-model.md).

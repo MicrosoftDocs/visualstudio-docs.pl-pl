@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: 18a6c96e-49a9-4356-ab61-fbd7e3ab44bb
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f6bdf05878c08b1c175b78ff2205b74c4ea5669b
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 35dcc390dcf58e02a2c7c1fa2dba62840d433785
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433937"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882313"
 ---
 # <a name="switcht-activity-designer"></a>Switch\<T>, projektant działań
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0c7f7889-fbfb-4b19-804f-b742138baecd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad8c02f846a946933ac07d4aa546ad3ce3a2a82f
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: e856153462819599124f3dce2e16c6de9f01cdfc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97488170"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883093"
 ---
 # <a name="using-the-automation-model"></a>Korzystanie z modelu automatyzacji
 Po nawiązaniu połączenia pakietu VSPackage z automatyzacją można uzyskać właściwości i metody, wywołując <xref:EnvDTE.DTEClass.GetObject%2A> metodę dla <xref:EnvDTE._DTE> obiektu, przekazując ciąg reprezentujący obiekt, który ma zostać pobrany.
@@ -73,5 +73,5 @@ Next
 
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - <xref:EnvDTE.DTEClass.GetObject%2A>

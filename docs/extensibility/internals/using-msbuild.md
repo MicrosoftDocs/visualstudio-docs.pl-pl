@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 9d38c388-1f64-430e-8f6c-e88bc99a4260
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d5168d739e49ebfc78054ea695f8b73a3e06fbc
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 92c423254c2e2e0a605ab3f7ff2238db41f4b45a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487676"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883132"
 ---
 # <a name="using-msbuild"></a>Korzystanie z programu MSBuild
 Program MSBuild udostępnia dobrze zdefiniowany, rozszerzalny format XML służący do tworzenia plików projektu, które w pełni opisują elementy projektu do skompilowania, tworzenia zadań i konfiguracji kompilacji.
@@ -55,7 +55,7 @@ Program MSBuild udostępnia dobrze zdefiniowany, rozszerzalny format XML służ�
 #### <a name="single-file-generators-vs-msbuild-tasks"></a>Generatory pojedynczych plików a zadania programu MSBuild
  Generatory pojedynczych plików są dostępne tylko w czasie projektowania, ale zadania programu MSBuild mogą być używane w czasie projektowania i w czasie kompilacji. Aby zapewnić maksymalną elastyczność, należy użyć zadań programu MSBuild do przekształcania i generowania kodu. Aby uzyskać więcej informacji, zobacz [narzędzia niestandardowe](../../extensibility/internals/custom-tools.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu MSBuild](../../msbuild/msbuild-reference.md)
 - [MSBuild](../../msbuild/msbuild.md)
 - [Narzędzia niestandardowe](../../extensibility/internals/custom-tools.md)

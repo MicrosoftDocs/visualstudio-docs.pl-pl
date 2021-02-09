@@ -17,15 +17,15 @@ helpviewer_keywords:
 - controls, data binding
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9be201899f0e2ff4f685343d58a859d8a9157068
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 459c50b5f8135756f85de852a62de44b3878148d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844429"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882482"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>Powiązywanie danych z kontrolkami w rozwiązaniach pakietu Office
   Można powiązać kontrolki Windows Forms i *kontrolki hosta* w dokumencie Microsoft Office Word lub Microsoft Office arkuszu programu Excel ze źródłem danych, aby kontrolki automatycznie wyświetlały dane. Dane można powiązać z kontrolkami zarówno w projektach na poziomie aplikacji, jak i na poziomie dokumentu.
@@ -99,7 +99,7 @@ ms.locfileid: "96844429"
 
  Aby uzyskać więcej informacji, zobacz [jak: aktualizowanie źródła danych przy użyciu danych z kontrolki hosta](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Powiązanie danych i Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms)
 - [Instrukcje: Tworzenie prostego formantu powiązanego w formularzu systemu Windows](/dotnet/framework/winforms/how-to-create-a-simple-bound-control-on-a-windows-form)
 - [Wiązanie kontrolek Windows Forms z danymi w programie Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

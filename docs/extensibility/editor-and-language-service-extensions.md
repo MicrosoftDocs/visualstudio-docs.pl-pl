@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5653bac9-724f-4948-a820-68ce6aa96365
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b15d5f970bfc6a32489991b578a54f2eadc96ea
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 038253d1863c2d599c7c7a1e5c5a1398d67740ab
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995827"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883522"
 ---
 # <a name="editor-and-language-service-extensions"></a>Rozszerzenia edytora i usługi językowej
 Można zwiększyć większość funkcji edytora kodu programu Visual Studio. Edytor jest oparty na Windows Presentation Foundation (WPF) i jest zapisywana w kodzie zarządzanym. Chociaż ten projekt różni się od projektów we wcześniejszych wersjach programu Visual Studio, zapewnia większość tych samych funkcji. Aby zwiększyć Edytor, użyj Managed Extensibility Framework (MEF).

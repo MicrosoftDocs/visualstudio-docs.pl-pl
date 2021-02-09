@@ -5,18 +5,18 @@ ms.date: 01/07/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: f96e9123f613cf50eebbedd393f5bce9cfa633d2
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: b76bc008c30efdee0185e6f122abaff8457acef6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91830683"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882794"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>Jak skonfigurować środowisko Python w Azure App Service (system Windows)
 
@@ -78,7 +78,7 @@ Na przykład po dodaniu odwołania do `python361x64` (Python 3.6.1 x64) szablon 
 
 Po zainstalowaniu rozszerzenia witryny (za pomocą portalu lub szablonu Azure Resource Manager), należy wskazać plik *web.config* aplikacji do interpretera języka Python. Plik *web.config* instruuje serwer sieci Web usług IIS (7 +) uruchomiony na App Service o sposobie obsługi żądań w języku Python za pomocą HttpPlatform (zalecane) lub FastCGI.
 
-Zacznij od znalezienia pełnej ścieżki do *python.exe*rozszerzenia witryny, a następnie utwórz i zmodyfikuj odpowiedni plik *web.config* .
+Zacznij od znalezienia pełnej ścieżki do *python.exe* rozszerzenia witryny, a następnie utwórz i zmodyfikuj odpowiedni plik *web.config* .
 
 ### <a name="find-the-path-to-pythonexe"></a>Znajdź ścieżkę do python.exe
 
@@ -94,7 +94,7 @@ Ta akcja powoduje otwarcie strony opisu rozszerzenia zawierającej ścieżkę:
 
 Jeśli masz problemy z wyświetlaniem ścieżki do rozszerzenia, możesz je znaleźć ręcznie przy użyciu konsoli programu:
 
-1. Na stronie App Service Wybierz konsolę **Narzędzia deweloperskie**  >  **Console**.
+1. Na stronie App Service Wybierz konsolę **Narzędzia deweloperskie**  >  .
 1. Wprowadź polecenie `ls ../home` lub `dir ..\home` , aby wyświetlić foldery rozszerzeń najwyższego poziomu, takie jak *Python361x64*.
 1. Wprowadź polecenie jak `ls ../home/python361x64` lub `dir ..\home\python361x64` , aby sprawdzić, czy zawiera *python.exe* i innych plików interpretera.
 

@@ -19,15 +19,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], Excel host controls
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 912385950721de1d1e0b98c1b6582552210aa04a
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: e20251d695f36940fec3831d3fa78fd995a058e9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846964"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882495"
 ---
 # <a name="automate-excel-by-using-extended-objects"></a>Automatyzowanie programu Excel za pomocą obiektów rozszerzonych
   Podczas opracowywania rozwiązań programu Excel w programie Visual Studio można używać *elementów hosta* i *kontrolek hosta* w swoich rozwiązaniach. Są to obiekty rozszerzające niektóre często używane obiekty w modelu obiektów programu Excel (czyli model obiektów, który jest udostępniany przez podstawowy zestaw międzyoperacyjny dla programu Excel), taki jak <xref:Microsoft.Office.Interop.Excel.Worksheet> obiekty i <xref:Microsoft.Office.Interop.Excel.Range> . Obiekty rozszerzone zachowują się jak obiekty programu Excel, na których się opierają, ale dodają do obiektów dodatkowe funkcje, takie jak nowe zdarzenia i możliwości powiązania danych.
@@ -62,7 +62,7 @@ ms.locfileid: "96846964"
 
 - [XmlMappedRange — formant](../vsto/xmlmappedrange-control.md)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: wypełnianie kontrolek ListObject danymi](../vsto/how-to-fill-listobject-controls-with-data.md)
 - [Instrukcje: Dodawanie kontrolek wykresu do arkuszy](../vsto/how-to-add-chart-controls-to-worksheets.md)
 - [Instrukcje: Dodawanie formantów ListObject do arkuszy](../vsto/how-to-add-listobject-controls-to-worksheets.md)

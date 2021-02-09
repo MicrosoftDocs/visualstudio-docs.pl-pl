@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 6f9d36f5-ae23-4a92-8132-b11799e2c21a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58c702a70392f4a0330ea51b563570362f51df35
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 1bcf11552ecd137f63f1f3ccca2b1d869f003b3c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672414"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883080"
 ---
 # <a name="numberofparentcategoriestorollup-element-visual-studio-templates"></a>NumberOfParentCategoriesToRollUp, element (szablony Visual Studio)
 Określa liczbę kategorii nadrzędnych, które będą wyświetlać szablon w oknie dialogowym **Nowy projekt** .
@@ -88,6 +88,6 @@ Określa liczbę kategorii nadrzędnych, które będą wyświetlać szablon w ok
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)

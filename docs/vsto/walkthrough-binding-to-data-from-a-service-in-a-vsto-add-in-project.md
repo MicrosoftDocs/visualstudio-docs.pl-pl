@@ -13,15 +13,15 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], scrolling database records
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6b65308cfc0ba4dee33dd6b20d3fd4028e9ea22e
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: a420f89fda4afd710f652223a9be594caba32f0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527478"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882417"
 ---
 # <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Przewodnik: powiązanie z danymi z usługi w projekcie dodatku narzędzi VSTO
   Można powiązać dane z kontrolkami hosta w projektach dodatku VSTO. W tym instruktażu pokazano, jak dodać kontrolki do dokumentu programu Word Microsoft Office, powiązać kontrolki z danymi pobranymi z usługi zawartości MSDN i odpowiadać na zdarzenia w czasie wykonywania.

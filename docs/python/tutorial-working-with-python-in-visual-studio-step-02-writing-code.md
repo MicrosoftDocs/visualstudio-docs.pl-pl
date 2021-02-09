@@ -6,17 +6,17 @@ ms.date: 01/28/2019
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fda68b9e5bffbd1afab3389a0d8d624312a8de3f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ca28446377c2e04766f70c9146e09dc47b8f089
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62430073"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882781"
 ---
 # <a name="step-2-write-and-run-code"></a>Krok 2. Pisanie i uruchamianie kodu
 
@@ -45,7 +45,7 @@ Mimo że **Eksplorator rozwiązań** jest miejscem zarządzania plikami projektu
     ![Kolorowanie składni IntelliSense i wyróżnianie błędów](media/vs-getting-started-python-06-IntelliSense3b.png)
 
     > [!Tip]
-    > Ponieważ środowisko programistyczne jest bardzo osobiste, program Visual Studio zapewnia pełną kontrolę nad wyglądem i zachowaniem programu Visual Studio. Wybierz **Tools**  >  polecenie menu**Opcje** narzędzia i sprawdź ustawienia w obszarze karty **środowisko** i **Edytor tekstu** . Domyślnie zobaczysz tylko ograniczoną liczbę opcji; Aby wyświetlić każdą opcję dla każdego języka programowania, wybierz pozycję **Pokaż wszystkie ustawienia** u dołu okna dialogowego.
+    > Ponieważ środowisko programistyczne jest bardzo osobiste, program Visual Studio zapewnia pełną kontrolę nad wyglądem i zachowaniem programu Visual Studio. Wybierz   >  polecenie menu **Opcje** narzędzia i sprawdź ustawienia w obszarze karty **środowisko** i **Edytor tekstu** . Domyślnie zobaczysz tylko ograniczoną liczbę opcji; Aby wyświetlić każdą opcję dla każdego języka programowania, wybierz pozycję **Pokaż wszystkie ustawienia** u dołu okna dialogowego.
 
 1. Uruchom kod zapisany w tym punkcie, naciskając klawisz **Ctrl** + **F5** lub wybierając pozycję **Debuguj**  >  **Uruchom bez debugowania** elementu menu. Program Visual Studio wyświetli ostrzeżenie, jeśli nadal występują błędy w kodzie.
 

@@ -10,22 +10,22 @@ helpviewer_keywords:
 - Domain-Specific Language, swimlane
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fef3b2115be499197030a4ce7fd49b1dd849de12
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 61994a25b5fa862a2014e2dd5b57a0c47130e6ba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363071"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882989"
 ---
 # <a name="properties-of-swimlanes"></a>Właściwości torów
 Można dodać tory do diagramu. Tory dzielą diagram na obszary pionowe lub poziome. Można definiować inne kształty, które będą wyświetlane wewnątrz torów. Aby uzyskać więcej informacji, zobacz [How to define a Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md). Aby uzyskać więcej informacji na temat sposobu korzystania z tych właściwości, zobacz [Dostosowywanie i rozszerzanie języka Domain-Specific](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
  Tory mają właściwości, które są wymienione w poniższej tabeli.
 
-|Właściwość|Opis|Domyślny|
+|Właściwość|Opis|Domyślne|
 |-|-|-|
 |Kolor wypełnienia treści|Kolor wypełnienia dla treści toru.|Biały|
 |Kolor wypełnienia nagłówka|Kolor wypełnienia nagłówka toru.|DarkGray|

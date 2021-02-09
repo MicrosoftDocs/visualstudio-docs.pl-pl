@@ -6,17 +6,17 @@ ms.date: 01/07/2019
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c9adda5eb9edba5e1ba62097d55c033be6c85d2e
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 611bad608d3619e020994ad7325ad7a678fe1e24
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099365"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882833"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>Krok 5. użycie szablonu projektu sieci Web w kolbie sond
 
@@ -145,7 +145,7 @@ Mechanizm magazynowania danych działa w następujący sposób:
         raise ValueError('Unknown repository.')
     ```
 
-1. W programie *views.py*aplikacja wywołuje metodę fabryki w celu zainicjowania `Repository` obiektu przy użyciu nazwy i ustawień magazynu danych:
+1. W programie *views.py* aplikacja wywołuje metodę fabryki w celu zainicjowania `Repository` obiektu przy użyciu nazwy i ustawień magazynu danych:
 
     ```python
     from FlaskPolls.models import PollNotFound
@@ -174,7 +174,7 @@ Mechanizm magazynowania danych działa w następujący sposób:
         return Repository(settings)
     ```
 
-1. Implementacje `Repository` klasy specyficzne dla każdego magazynu danych można znaleźć w *models\azuretablestorage.py*, *models\mongodb.py*i *models\memory.py*. Implementacja usługi Azure Storage używa pakietu Azure-Storage. Implementacja Mongo DB używa pakietu pymongo. Zgodnie z opisem w kroku 5-1, oba pakiety są zawarte w pliku *requirements.txt* szablonu projektu. Eksplorowanie szczegółów jest pozostawione jako ćwiczenie dla czytnika.
+1. Implementacje `Repository` klasy specyficzne dla każdego magazynu danych można znaleźć w *models\azuretablestorage.py*, *models\mongodb.py* i *models\memory.py*. Implementacja usługi Azure Storage używa pakietu Azure-Storage. Implementacja Mongo DB używa pakietu pymongo. Zgodnie z opisem w kroku 5-1, oba pakiety są zawarte w pliku *requirements.txt* szablonu projektu. Eksplorowanie szczegółów jest pozostawione jako ćwiczenie dla czytnika.
 
 W skrócie, `Repository` Klasa stanowi streszczenie określonych magazynów danych, a aplikacja używa zmiennych środowiskowych w czasie wykonywania, aby wybrać i skonfigurować, które z trzech implementacji mają być używane.
 
@@ -234,7 +234,7 @@ Po zakończeniu tego procesu `redirect('/')` instrukcja w `seed` metodzie przech
 
 ### <a name="question-how-does-one-add-new-polls-to-the-app"></a>Pytanie: jak jeden z nich dodaje nowe sondy do aplikacji?
 
-Odpowiedź: aplikacja określona za pomocą szablonu projektu nie zawiera funkcji do dodawania lub edytowania sondowań. models\samples.jsmożna modyfikować * w* celu tworzenia nowych danych inicjujących, ale spowodowałoby to zresetowanie magazynu danych. Aby zaimplementować funkcje edycji, należy wdrożyć `Repository` interfejs klasy przy użyciu metod, aby utworzyć niezbędne `Choice` i niepotrzebne `Poll` wystąpienia, a następnie zaimplementować interfejs użytkownika na dodatkowych stronach, które używają tych metod.
+Odpowiedź: aplikacja określona za pomocą szablonu projektu nie zawiera funkcji do dodawania lub edytowania sondowań. models\samples.jsmożna modyfikować *w* celu tworzenia nowych danych inicjujących, ale spowodowałoby to zresetowanie magazynu danych. Aby zaimplementować funkcje edycji, należy wdrożyć `Repository` interfejs klasy przy użyciu metod, aby utworzyć niezbędne `Choice` i niepotrzebne `Poll` wystąpienia, a następnie zaimplementować interfejs użytkownika na dodatkowych stronach, które używają tych metod.
 
 ## <a name="step-5-4-understand-the-poll-detail-and-results-views"></a>Krok 5-4: Omówienie widoków szczegółów i wyników sondowania
 

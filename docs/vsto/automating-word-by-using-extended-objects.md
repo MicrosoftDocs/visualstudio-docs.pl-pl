@@ -19,15 +19,15 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], host controls
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 39ac9d50d0f75f595568c66b02bda1c5ed46a3d6
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 42784e27c26d729a87d5363ca41b6d2c70a364d7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844455"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882508"
 ---
 # <a name="automate-word-by-using-extended-objects"></a>Automatyzowanie programu Word za pomocą obiektów rozszerzonych
   Podczas opracowywania rozwiązań programu Word w programie Visual Studio można używać *elementów hosta* i *kontrolek hosta* w swoich rozwiązaniach. Są to obiekty, które rozszerzają niektóre często używane obiekty w modelu obiektów programu Word (czyli model obiektów, który jest udostępniany przez podstawowy zestaw międzyoperacyjny dla programu Word), taki <xref:Microsoft.Office.Interop.Word.Document> jak <xref:Microsoft.Office.Interop.Word.ContentControl> obiekty i. Obiekty rozszerzone zachowują się jak obiekty programu Word, na których się opierają, ale dodają do obiektów dodatkowe zdarzenia i możliwości powiązania danych.
@@ -56,7 +56,7 @@ ms.locfileid: "96844455"
 
 - [Formant XMLNodes](../vsto/xmlnodes-control.md)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: Dodawanie kontrolek zawartości do dokumentów programu Word](../vsto/how-to-add-content-controls-to-word-documents.md)
 - [Instrukcje: Dodawanie kontrolek zakładek do dokumentów programu Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
 - [Instrukcje: Dodawanie formantów XMLNode do dokumentów programu Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)

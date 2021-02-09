@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Test-First Development
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d763a937ac23b397151aec163c2d0d90d7ebe6ba
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 4ea04a9c70f23c30a5f603fa9411780223fff563
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479683"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883054"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Przewodnik: testowanie pierwszego środowiska przy użyciu funkcji generowania na podstawie użycia
 
@@ -67,7 +67,7 @@ Funkcja **generowania z użycia** może być używana z platformami testów, kt�
 2. Znajdź deklarację klasy `UnitTest1` i zmień jej nazwę na `AutomobileTest` .
 
    > [!NOTE]
-   > Technologia IntelliSense oferuje teraz dwa alternatywy dla uzupełniania instrukcji IntelliSense: *Tryb uzupełniania* i *tryb sugestii*. Tryb sugestii służy do sytuacji, w których klasy i składowe są używane przed zdefiniowaniem. Gdy okno **IntelliSense** jest otwarte, możesz nacisnąć **klawisze CTRL**, + **Alt** + **Space** aby przełączać się między trybem ukończenia i trybem sugestii. Aby uzyskać więcej informacji, zobacz [Używanie technologii IntelliSense](../ide/using-intellisense.md) . Tryb sugestii ułatwia wprowadzanie tekstu `Automobile` w następnym kroku.
+   > Technologia IntelliSense oferuje teraz dwa alternatywy dla uzupełniania instrukcji IntelliSense: *Tryb uzupełniania* i *tryb sugestii*. Tryb sugestii służy do sytuacji, w których klasy i składowe są używane przed zdefiniowaniem. Gdy okno **IntelliSense** jest otwarte, możesz nacisnąć **klawisze CTRL**, +  +  aby przełączać się między trybem ukończenia i trybem sugestii. Aby uzyskać więcej informacji, zobacz [Używanie technologii IntelliSense](../ide/using-intellisense.md) . Tryb sugestii ułatwia wprowadzanie tekstu `Automobile` w następnym kroku.
 
 3. Znajdź `TestMethod1()` metodę i zmień jej nazwę na `DefaultAutomobileIsInitializedCorrectly()` . Wewnątrz tej metody Utwórz nowe wystąpienie klasy o nazwie `Automobile` , jak pokazano na poniższych zrzutach ekranu. Zostanie wyświetlone faliste podkreślenie, które wskazuje na błąd w czasie kompilacji, a żarówka błędu [szybkie akcje](../ide/quick-actions.md) pojawia się na lewym marginesie lub bezpośrednio poniżej, gdy umieścisz na niej wskaźnik myszy.
 

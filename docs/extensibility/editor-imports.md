@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4e3a128f0f2873ad1946788b34761aadd1e7021
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: aef66be9797967b8c551ad4d1674c0b7be7aad81
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994774"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883483"
 ---
 # <a name="editor-imports"></a>Importy edytora
 Istnieje możliwość zaimportowania wielu usług edytora, fabryk i brokerów, które zapewniają rozszerzenie z różnymi rodzajami dostępu do podstawowego edytora. Na przykład można zaimportować program w <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> celu zapewnienia <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> dla danego typu zawartości. (Ten Nawigator umożliwia wykonywanie różnych rodzajów wyszukiwania w buforze tekstu).
@@ -71,7 +71,7 @@ internal SVsServiceProvider ServiceProvider = null;
 ## <a name="services"></a>Usługi
  Usługi edytora są ogólnie pojedynczymi jednostkami, które udostępniają usługę i są współużytkowane przez wiele składników.
 
-|Importuj|Umożliwiające|
+|Import|Umożliwiające|
 |------------|--------------|
 |<xref:Microsoft.VisualStudio.Utilities.IFileExtensionRegistryService>|Relacja między rozszerzeniami plików a <xref:Microsoft.VisualStudio.Utilities.IContentType> obiektami.|
 |<xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>|Kolekcja obiektów <xref:Microsoft.VisualStudio.Utilities.IContentType>.|
@@ -113,7 +113,7 @@ internal SVsServiceProvider ServiceProvider = null;
 ## <a name="other-imports"></a>Inne Importy
  Fabryki dostawcy i brokerzy są zazwyczaj jednostkami, które mogą mieć wiele wystąpień w wielu składnikach.
 
-|Importuj|Umożliwiające|
+|Import|Umożliwiające|
 |------------|--------------|
 |<xref:Microsoft.VisualStudio.Text.Adornments.IErrorProviderFactory>|A <xref:Microsoft.VisualStudio.Text.Tagging.SimpleTagger%601> typu <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag> ) dla danego buforu.|
 |<xref:Microsoft.VisualStudio.Text.Adornments.ITextMarkerProviderFactory>|Moduł tagujący znacznika tekstu (a <xref:Microsoft.VisualStudio.Text.Tagging.SimpleTagger%601> typu <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> ).|

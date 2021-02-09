@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a3f6071c-eac8-4bcd-8ffd-8d0a2d24a252
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b80672b00bec95c740824ef7e29f1faba0e63cf4
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 2d626f2390138c7e4e6e2471d285bcda940d7f30
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974447"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882287"
 ---
 # <a name="capability-flags"></a>Flagi możliwości
 Flagi SCC_CAP_ *XXX* są flagami bitowymi używanymi do wskazywania możliwości wtyczki kontroli źródła. Flagi SCC_EXCAP_ *XXX* są flagami przyrostowymi, które wskazują rozszerzone możliwości i rozwiązują wartości całkowite.
@@ -79,5 +79,5 @@ Flagi SCC_CAP_ *XXX* są flagami bitowymi używanymi do wskazywania możliwości
 |`SCC_EXCAP_DELETE_CHECKEDOUT`|10|Może usuwać wyewidencjonowane pliki.|
 |`SCC_EXCAP_RENAME_CHECKEDOUT`|11|Można zmienić nazwy wyewidencjonowanych plików.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wtyczki kontroli źródła](../extensibility/source-control-plug-ins.md)

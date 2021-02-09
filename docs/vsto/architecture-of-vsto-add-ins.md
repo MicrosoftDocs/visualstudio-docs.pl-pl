@@ -15,15 +15,15 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], architecture
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 451ae0bd466403819a5b4e53d76070876d762c38
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 136903bd6d844d57ef06fce5a62506e026355509
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848355"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882612"
 ---
 # <a name="architecture-of-vsto-add-ins"></a>Architektura dodatków narzędzi VSTO
   Dodatki VSTO utworzone przy użyciu narzędzi deweloperskich pakietu Office w programie Visual Studio mają funkcje architektury, które podkreślają stabilność i bezpieczeństwo oraz umożliwiają ścisłą pracę z Microsoft Office. W tym temacie opisano następujące aspekty dodatków narzędzi VSTO:
@@ -106,7 +106,7 @@ ms.locfileid: "96848355"
 
 11. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]Wywołuje `ThisAddIn_Startup` metodę w dodatku VSTO. Ta metoda jest domyślnym programem obsługi zdarzeń dla <xref:Microsoft.Office.Tools.AddInBase.Startup> zdarzenia. Aby uzyskać więcej informacji, zobacz [zdarzenia w projektach pakietu Office](../vsto/events-in-office-projects.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Architektura rozwiązań pakietu Office w programie Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 - [Architektura dostosowań na poziomie dokumentu](../vsto/architecture-of-document-level-customizations.md)
 - [Visual Studio Tools dla środowiska uruchomieniowego pakietu Office — omówienie](../vsto/visual-studio-tools-for-office-runtime-overview.md)

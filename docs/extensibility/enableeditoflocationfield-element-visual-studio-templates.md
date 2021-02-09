@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 51a91963-8a3f-4741-928e-bc90c11473bb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46af48bf8bf9f128103767be1aa5fa64968e68f5
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 59eee84503ed2017c12dfcca3b7acd12c54e59db
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671301"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883444"
 ---
 # <a name="enableeditoflocationfield-element-visual-studio-templates"></a>EnableEditOfLocationField, element (szablony Visual Studio)
 Określa, czy użytkownik może edytować pole lokalizacji.
@@ -87,6 +87,6 @@ Określa, czy użytkownik może edytować pole lokalizacji.
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)

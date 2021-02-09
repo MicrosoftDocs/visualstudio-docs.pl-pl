@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: e01cb44a-8105-4cf4-8223-dfae65f8597a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d42a912761f04fb122551dc14ec077f1869f6bf
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 5b399feb80da56ef70b18a1b11b05c7f6cc3795f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487585"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883158"
 ---
 # <a name="upgrading-projects"></a>Uaktualnianie projektów
 
@@ -181,6 +181,6 @@ Zazwyczaj implementujący elementy projektu chcą korzystać z już w pełni sko
 
 2. Po otrzymaniu przez element projektu powiadomienia o uaktualnieniu projektu zostanie wyświetlony **Kreator konwersji programu Visual Studio** . W związku z tym należy używać metod <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger> interfejsu do udostępniania komunikatów uaktualniania do interfejsu użytkownika kreatora.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Projekty](../../extensibility/internals/projects.md)

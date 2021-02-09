@@ -6,17 +6,17 @@ ms.date: 01/07/2019
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fa59197e584c6c8062c13354178f883b60b36442
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ef9154a34ddd08e7e0a4b9434f7f748b2603aef4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250570"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882872"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>Krok 4. Korzystanie z szablonu projektu sieci Web pełnej kolby
 
@@ -66,13 +66,13 @@ Ten artykuł dotyczy również szablonu "Kolba/Jade projektu sieci Web", który 
 Szablon "Kolba" projektu sieci Web "tworzy strukturę poniżej. Zawartość jest bardzo podobna do utworzonych w poprzednich krokach. Różnica polega na tym, że szablon "projekt sieci Web" zawiera więcej struktur w folderze *statycznym* , ponieważ zawiera jQuery i Bootstrap na potrzeby projektowania. Szablon dodaje również stronę kontaktu. Ogólnie, jeśli wykonano poprzednie kroki w tym samouczku, wszystkie elementy z szablonu powinny być znane.
 
 - Pliki w folderze głównym projektu:
-  - *runserver.py*skrypt służący do uruchamiania aplikacji na serwerze deweloperskim.
+  - *runserver.py* skrypt służący do uruchamiania aplikacji na serwerze deweloperskim.
   - *requirements.txt* zawierający zależność od kolby 0. x.
 - Folder *FlaskWeb* zawiera wszystkie pliki aplikacji:
-  - init.py oznacza kod aplikacji jako moduł języka Python, tworzy obiekt kolby i importuje widoki aplikacji. * \_ \_ \_ \_ *
+  - init.py oznacza kod aplikacji jako moduł języka Python, tworzy obiekt kolby i importuje widoki aplikacji. *\_ \_ \_ \_*
   - *views.py* zawiera kod do renderowania stron.
   - Folder *statyczny* zawiera podfoldery o nazwie *zawartość* (pliki CSS), *czcionki* (pliki czcionek) i *skrypty* (pliki JavaScript).
-  - Folder *templates* zawiera szablon podstawowy *layout.html* wraz z *about.html*, *contact.html*i *index.html* dla określonych stron, które zostały rozszerzone *layout.html*.
+  - Folder *templates* zawiera szablon podstawowy *layout.html* wraz z *about.html*, *contact.html* i *index.html* dla określonych stron, które zostały rozszerzone *layout.html*.
 
 ### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>Pytanie: czy jest możliwe udostępnianie środowiska wirtualnego między projektami programu Visual Studio?
 
@@ -81,7 +81,7 @@ Odpowiedź: tak, ale należy to zrobić, korzystając z świadomości, że róż
 Niemniej jednak, aby użyć istniejącego środowiska wirtualnego, wykonaj następujące czynności:
 
 1. Po wyświetleniu monitu o zainstalowanie zależności w programie Visual Studio wybierz opcję **zainstaluję je samodzielnie** .
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł **środowiska Python** i wybierz polecenie **Dodaj istniejące środowisko wirtualne**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł **środowiska Python** i wybierz polecenie **Dodaj istniejące środowisko wirtualne**.
 1. Przejdź do folderu zawierającego środowisko wirtualne i wybierz go, a następnie wybierz **przycisk OK**.
 
 ## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>Krok 4-2: informacje o widokach i szablonach stron utworzonych przez szablon projektu
@@ -141,7 +141,7 @@ Szablony znajdują się w folderze *Szablony* aplikacji. Szablon podstawowy, *la
 </html>
 ```
 
-Szablony poszczególnych stron, *about.html*, *contact.html*i *index.html*, każdy rozszerzy szablon podstawowy *layout.html*. *about.html* jest najprostszym i zawierającym `{% extends %}` `{% block content %}` znaczniki i:
+Szablony poszczególnych stron, *about.html*, *contact.html* i *index.html*, każdy rozszerzy szablon podstawowy *layout.html*. *about.html* jest najprostszym i zawierającym `{% extends %}` `{% block content %}` znaczniki i:
 
 ```html
 {% extends "app/layout.html" %}
@@ -164,7 +164,7 @@ Jak wspomniano na początku tego artykułu, program Visual Studio udostępnia sz
 
 Aby włączyć Jade, szablon projektu najpierw zawiera pakiet pyjade w *requirements.txt*.
 
-Plik * \_ \_ init \_ \_ . PR* aplikacji zawiera wiersz do
+Plik *\_ \_ init \_ \_ . PR* aplikacji zawiera wiersz do
 
 ```python
 app.jinja_env.add_extension('pyjade.ext.jinja.PyJadeExtension')
