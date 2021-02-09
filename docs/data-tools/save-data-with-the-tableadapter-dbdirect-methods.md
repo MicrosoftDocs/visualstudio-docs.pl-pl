@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 74a6773b-37e1-4d96-a39c-63ee0abf49b1
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5d79b2081e2d30d77ae3507884b44421f0f14bae
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 00f508163dc039d5c29013538a78fa7dab6091fd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434574"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858452"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Zapisywanie danych za pomocą metod DBDirect adaptera TableAdapter
 
@@ -69,7 +69,7 @@ Pierwszym krokiem jest utworzenie **aplikacji Windows Forms**.
 
 3. W środkowym okienku wybierz typ projektu **aplikacji Windows Forms** .
 
-4. Nazwij projekt **TableAdapterDbDirectMethodsWalkthrough** , a następnie wybierz przycisk **OK**.
+4. Nazwij projekt **TableAdapterDbDirectMethodsWalkthrough**, a następnie wybierz przycisk **OK**.
 
      Projekt **TableAdapterDbDirectMethodsWalkthrough** został utworzony i dodany do **Eksplorator rozwiązań**.
 
@@ -85,7 +85,7 @@ Ten krok powoduje użycie **Kreatora konfiguracji źródła danych** w celu utwo
 
 2. W oknie **źródła danych** wybierz pozycję **Dodaj nowe źródło danych** , aby uruchomić **Kreatora konfiguracji źródła danych**.
 
-3. Na ekranie **Wybierz typ źródła danych** wybierz pozycję **baza danych** , a następnie wybierz przycisk **dalej**.
+3. Na ekranie **Wybierz typ źródła danych** wybierz pozycję **baza danych**, a następnie wybierz przycisk **dalej**.
 
 4. Na ekranie **Wybierz połączenie danych** wykonaj jedną z następujących czynności:
 
@@ -115,7 +115,7 @@ Aby utworzyć formanty powiązane z danymi w formularzu systemu Windows, przeci�
 
 ### <a name="to-add-buttons-that-will-call-the-individual-tableadapter-dbdirect-methods"></a>Aby dodać przyciski, które będą wywoływały poszczególne metody TableAdapter DBDirect
 
-1. Przeciągnij trzy <xref:System.Windows.Forms.Button> kontrolki z **przybornika** na **formularz Form1** (poniżej **RegionDataGridView** ).
+1. Przeciągnij trzy <xref:System.Windows.Forms.Button> kontrolki z **przybornika** na **formularz Form1** (poniżej **RegionDataGridView**).
 
 2. Dla każdego przycisku Ustaw następujące właściwości **nazwy** i **tekstu** .
 

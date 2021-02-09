@@ -9,19 +9,19 @@ keywords: Bridge to Kubernetes, Azure Dev Spaces, dev Spaces, Docker, Kubernetes
 monikerRange: '>=vs-2019'
 ms.author: ghogen
 author: ghogen
-manager: jillfra
-ms.openlocfilehash: 7bbeec2baab018ea770dbee60db507399ebeb745
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+manager: jmartens
+ms.openlocfilehash: 23d060489a13aa8e02316e253d9367e9e3372bbe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860441"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859635"
 ---
 # <a name="use-bridge-to-kubernetes"></a>Korzystanie z mostka do Kubernetes
 
 Za pomocą mostka Kubernetes można przekierowywać ruch między klastrem Kubernetes i kodem uruchomionym na komputerze deweloperskim. Ten przewodnik zawiera również skrypt służący do wdrażania dużej przykładowej aplikacji z wieloma mikrousługami w klastrze Kubernetes.
 
-## <a name="before-you-begin"></a>Przed rozpoczęciem
+## <a name="before-you-begin"></a>Zanim rozpoczniesz
 
 Ten przewodnik korzysta z [przykładowej aplikacji do udostępniania roweru][bike-sharing-github] do zademonstrowania połączenia komputera deweloperskiego z klastrem Kubernetes. Jeśli masz już uruchomioną aplikację w klastrze Kubernetes, możesz wykonać poniższe kroki i użyć nazw własnych usług.
 

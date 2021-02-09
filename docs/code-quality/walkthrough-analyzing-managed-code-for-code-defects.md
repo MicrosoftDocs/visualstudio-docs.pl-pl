@@ -9,15 +9,15 @@ helpviewer_keywords:
 - managed code, analyzing
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7e862b176ab396999d3504e19c4de9a5c407b266
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: b9895dc8926f1bb5c7d33e792168ca46297c8196
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349025"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859609"
 ---
 # <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>Wskazówki: aby znaleźć wady kodu, użyj statycznej analizy kodu
 
@@ -77,7 +77,7 @@ Ten artykuł przeprowadzi Cię przez proces korzystania z starszej analizy w cel
 
 ::: moniker-end
 
-6. W menu **plik** kliknij polecenie **Zapisz wybrane elementy** , a następnie zamknij strony właściwości.
+6. W menu **plik** kliknij polecenie **Zapisz wybrane elementy**, a następnie zamknij strony właściwości.
 
 7. W menu **kompilacja** kliknij pozycję **Kompiluj CodeAnalysisManagedDemo**.
 
@@ -133,7 +133,7 @@ Ten artykuł przeprowadzi Cię przez proces korzystania z starszej analizy w cel
 
    1. Wprowadź hasło, a następnie wybierz przycisk **OK**.
 
-   1. W menu **plik** wybierz polecenie **Zapisz wybrane elementy** , a następnie zamknij strony właściwości.
+   1. W menu **plik** wybierz polecenie **Zapisz wybrane elementy**, a następnie zamknij strony właściwości.
 
    Po zakończeniu wszystkich zmian plik Class1.cs powinien wyglądać następująco:
 

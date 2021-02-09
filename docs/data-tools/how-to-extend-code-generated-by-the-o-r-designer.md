@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: d6d1122e-2f55-4607-8d8b-48c3c22600fb
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7d3468bbc3e3a1f1250cf2c679087b9606b87a18
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 2404fd48aade91c623efb12e89f4a97da01ec66b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434925"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858712"
 ---
 # <a name="how-to-extend-code-generated-by-the-or-designer"></a>Instrukcje: zwiększanie kodu wygenerowanego przez projektanta O/R
 Kod generowany przez **projektanta O/R** jest generowany ponownie po wprowadzeniu zmian do klas jednostek i innych obiektów na powierzchni projektanta. Ze względu na ten kod, każdy kod dodawany do wygenerowanego kodu jest zwykle zastępowany, gdy projektant ponownie generuje kod. **Projektant O/R** zapewnia możliwość generowania plików klas częściowych, w których można dodać kod, który nie jest zastępowany. Jednym z przykładów dodawania własnego kodu do kodu wygenerowanego przez **projektanta O/R** jest dodawanie walidacji danych do klas LINQ to SQL (jednostek). Aby uzyskać więcej informacji, zobacz [jak: Dodawanie walidacji do klas jednostek](../data-tools/how-to-add-validation-to-entity-classes.md).

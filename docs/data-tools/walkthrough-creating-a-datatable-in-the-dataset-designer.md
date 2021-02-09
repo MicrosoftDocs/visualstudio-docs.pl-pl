@@ -11,15 +11,15 @@ helpviewer_keywords:
 - data [Visual Studio], Dataset Designer
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: a0dad1e6878adc73a08753dca21500499e652602
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: feec31fa0a9e34ad63e0b849d09084081e5710e5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998255"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858179"
 ---
 # <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Przewodnik: Tworzenie elementu DataTable w Projektant obiektów Dataset
 
@@ -83,7 +83,7 @@ Aby ustawić klucz podstawowy, kliknij prawym przyciskiem myszy kolumnę **SongI
 
 Aby zapisać projekt **DataTableWalkthrough** , w menu **plik** wybierz polecenie **Zapisz wszystko**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Tworzenie i konfigurowanie zestawów danych w programie Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)
 - [Wiązanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

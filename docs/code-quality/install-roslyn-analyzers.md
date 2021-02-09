@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Roslyn analyzers
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 93cd01c0a90f2864843549c3ce11e066a16a8843
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 3d4833ba922ddde1a1770cfd75cf446f210e2c79
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040384"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859856"
 ---
 # <a name="install-third-party-analyzers"></a>Instalowanie analizatorów innych firm
 
@@ -35,7 +35,7 @@ Program Visual Studio zawiera podstawowe zestawy .NET Compiler Platform (*Roslyn
    > [!NOTE]
    > Strona www.nuget.org każdego pakietu analizatora pokazuje polecenie do wklejenia do **konsoli Menedżera pakietów**. Istnieje jeszcze przycisk przydatny do kopiowania tekstu do Schowka.
 
-   Zestawy analizatora są zainstalowane i pojawiają się w **Eksplorator rozwiązań** w obszarze **References**  >  **analizatory** odwołań.
+   Zestawy analizatora są zainstalowane i pojawiają się w **Eksplorator rozwiązań** w obszarze   >  **analizatory** odwołań.
 
 ## <a name="to-install-vsix-analyzers"></a>Aby zainstalować analizatory VSIX
 
@@ -77,7 +77,7 @@ Program Visual Studio zawiera podstawowe zestawy .NET Compiler Platform (*Roslyn
 
 6. Wybierz pozycję **Modyfikuj** , aby rozpocząć instalację.
 
-7. Po minucie lub dwóch instalacjach zostanie zakończona. Wybierz pozycję **Close** (Zamknij).
+7. Po minucie lub dwóch instalacjach zostanie zakończona. Wybierz pozycję **Zamknij**.
 
 8. Otwórz ponownie program Visual Studio.
 
@@ -101,4 +101,4 @@ Jeśli chcesz sprawdzić, czy rozszerzenie jest zainstalowane, wybierz pozycję 
 ## <a name="see-also"></a>Zobacz też
 
 - [Przegląd analizatorów kodu w programie Visual Studio](../code-quality/roslyn-analyzers-overview.md)
-- [Zainstaluj analizatory .NET](../code-quality/install-net-analyzers.md)
+- [Instalowanie analizatorów .NET](../code-quality/install-net-analyzers.md)

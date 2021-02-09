@@ -12,13 +12,13 @@ helpviewer_keywords:
 - source code analysis, migration
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 84acec58ed78884f0b037950fa25ce40f6adcbfc
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+manager: jmartens
+ms.openlocfilehash: 96a0c0b7fa1f2c703cefde31070ed98c5edddcb6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96112235"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859765"
 ---
 # <a name="migrate-from-legacy-analysis-fxcop-to-source-analysis-net-analyzers"></a>Migrowanie ze starszej wersji analizy (FxCop) do analizy źródłowej (analizatory .NET)
 
@@ -39,7 +39,7 @@ Aby przeprowadzić migrację do analizy źródłowej, [Włącz lub zainstaluj an
 > [!NOTE]
 > W systemach starszych niż Visual Studio 2019 16,8 i .NET 5,0 te analizatory są dostarczane jako `Microsoft.CodeAnalysis.FxCopAnalyzers` [pakiet NuGet](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers). Począwszy od programu Visual Studio 2019 16,8 i .NET 5,0, te analizatory są [dołączone do zestawu .NET SDK](/dotnet/fundamentals/code-analysis/overview). Są one również dostępne jako `Microsoft.CodeAnalysis.NetAnalyzers` [pakiet NuGet](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers). Aby uzyskać więcej informacji, zobacz [Migrowanie z analizatorów FxCop do analizatorów .NET](migrate-from-fxcop-analyzers-to-net-analyzers.md).
 
-## <a name="configuration"></a>Konfiguracja
+## <a name="configuration"></a>Konfigurowanie
 
 Aby dowiedzieć się więcej o konfigurowaniu analizatorów .NET:
 
@@ -49,4 +49,4 @@ Aby dowiedzieć się więcej o konfigurowaniu analizatorów .NET:
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Migrowanie z analizatorów FxCop do analizatorów .NET](migrate-from-fxcop-analyzers-to-net-analyzers.md)
+- [Przechodzenie z analizatorów FxCop na analizatory .NET](migrate-from-fxcop-analyzers-to-net-analyzers.md)

@@ -11,15 +11,15 @@ f1_keywords:
 ms.assetid: fd029003-5671-4b24-8b6f-032e0a98b2e8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 567b6d2fe8906fd1a7a07ab73835439f8a9a9955
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 8e682c3d3312be5c4f4639fc2642a398e321fc78
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435427"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859882"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementowanie niestandardowych zasad zaewidencjonowania analizy kodu dla kodu zarządzanego
 
@@ -44,11 +44,11 @@ Aby utworzyć niestandardowy zestaw reguł dla projektu usługi Azure DevOps, na
 
 2. W okienku **foldery** kliknij prawym przyciskiem myszy projekt, a następnie kliknij pozycję **Nowy folder**.
 
-3. W głównym okienku kontroli źródła kliknij prawym przyciskiem myszy pozycję **Nowy folder** , kliknij polecenie **Zmień nazwę** i wpisz nazwę folderu zestawu reguł.
+3. W głównym okienku kontroli źródła kliknij prawym przyciskiem myszy pozycję **Nowy folder**, kliknij polecenie **Zmień nazwę** i wpisz nazwę folderu zestawu reguł.
 
 ### <a name="to-create-the-check-in-policy-rule-set"></a>Aby utworzyć zestaw reguł ewidencjonowania
 
-1. W menu **plik** wskaż polecenie **Nowy** , a następnie kliknij polecenie **plik**.
+1. W menu **plik** wskaż polecenie **Nowy**, a następnie kliknij polecenie **plik**.
 
 2. Na liście **Kategorie** kliknij pozycję **Ogólne**.
 
@@ -71,13 +71,13 @@ Aby utworzyć niestandardowy zestaw reguł dla projektu usługi Azure DevOps, na
 4. W oknie dialogowym **zaewidencjonowania** możesz dodać komentarz, a następnie kliknąć przycisk **Zaewidencjonuj**.
 
     > [!NOTE]
-    > Jeśli skonfigurowano już zasady ewidencjonowania analizy kodu dla projektu usługi Azure DevOps, a zaznaczono opcję **Wymuszaj tylko pliki będące częścią bieżącego rozwiązania** , zostanie wyzwolone ostrzeżenie dotyczące błędu zasad. W oknie dialogowym niepowodzenie zasad wybierz opcję **Zastąp błąd zasad i Kontynuuj ewidencjonowanie**. Dodaj wymagany komentarz, a następnie kliknij przycisk **OK**.
+    > Jeśli skonfigurowano już zasady ewidencjonowania analizy kodu dla projektu usługi Azure DevOps, a zaznaczono opcję **Wymuszaj tylko pliki będące częścią bieżącego rozwiązania**, zostanie wyzwolone ostrzeżenie dotyczące błędu zasad. W oknie dialogowym niepowodzenie zasad wybierz opcję **Zastąp błąd zasad i Kontynuuj ewidencjonowanie**. Dodaj wymagany komentarz, a następnie kliknij przycisk **OK**.
 
 ### <a name="to-specify-the-rule-set-file-as-the-check-in-policy"></a>Aby określić plik zestawu reguł jako zasady ewidencjonowania
 
-1. W menu **zespół** wskaż pozycję **Ustawienia projektu** , a następnie kliknij pozycję **Kontrola źródła**.
+1. W menu **zespół** wskaż pozycję **Ustawienia projektu**, a następnie kliknij pozycję **Kontrola źródła**.
 
-2. Kliknij pozycję **zasady ewidencjonowania** , a następnie kliknij przycisk **Dodaj**.
+2. Kliknij pozycję **zasady ewidencjonowania**, a następnie kliknij przycisk **Dodaj**.
 
 3. Na liście **zasad ewidencjonowania** kliknij dwukrotnie pozycję **Analiza kodu** i upewnij się, że jest zaznaczone pole wyboru **Wymuszaj analizę kodu dla kodu zarządzanego** .
 
@@ -90,7 +90,7 @@ Aby utworzyć niestandardowy zestaw reguł dla projektu usługi Azure DevOps, na
      **$/** `TeamProjectName` **/** `VersionControlPath`
 
     > [!NOTE]
-    > Ścieżkę można skopiować za pomocą jednej z następujących procedur w **Eksploator kontroli źródła** :
+    > Ścieżkę można skopiować za pomocą jednej z następujących procedur w **Eksploator kontroli źródła**:
 
     - W okienku **foldery** kliknij folder zawierający plik zestawu reguł. Skopiuj ścieżkę kontroli wersji folderu, który pojawia się w polu **Źródło** , i ręcznie wpisz nazwę pliku zestawu reguł.
 

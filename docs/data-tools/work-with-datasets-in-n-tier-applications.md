@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: f6ae2ee0-ea5f-4a79-8f4b-e21c115afb20
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: d450bb60bdb604f658f73d0b5df4b9bd739cf923
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: 93a221640ff7383b39bfdec73cbaa9659156e33f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998190"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858075"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>Praca z zestawami danych w aplikacjach n-warstwowych
 
@@ -41,7 +41,7 @@ Obsługa n-warstwowa w typach danych typu umożliwia iteracyjne programowanie ar
 - <xref:System.Data.DataSet>
 - <xref:System.Data.TypedTableBase%601>
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [N-warstwowe aplikacje dotyczące danych — omówienie](../data-tools/n-tier-data-applications-overview.md)
 - [Przewodnik: Tworzenie wielowarstwowej aplikacji danych](../data-tools/walkthrough-creating-an-n-tier-data-application.md)

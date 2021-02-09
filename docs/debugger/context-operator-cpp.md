@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: 73cc9afe-f4a4-474e-bb89-5a33fb5e570c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1bc238cc56e1b815e79ba381a7cd4866085d3bef
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 619162bc4237c71c44f960f7ca1e4337a54f3dd5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96559761"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857717"
 ---
 # <a name="context-operator-in-the-visual-studio-debugger-c"></a>Operator kontekstu w debugerze programu Visual Studio (C++)
 Operatora kontekstu w języku C++ można użyć do kwalifikowania lokalizacji punktu przerwania, nazwy zmiennej lub wyrażenia. Operator kontekstu jest przydatny do określania nazwy z zewnętrznego zakresu, który jest w inny sposób ukryty przez lokalną nazwę.
@@ -55,7 +55,7 @@ Operatora kontekstu w języku C++ można użyć do kwalifikowania lokalizacji pu
 
 - *module* jest nazwą modułu. Możesz użyć pełnej ścieżki, aby odróżnić moduły o tej samej nazwie.
 
-   Jeśli ścieżka *modułu* zawiera przecinek, spację osadzoną lub nawias klamrowy, należy użyć cudzysłowu wokół ścieżki, aby Analizator kontekstu mógł prawidłowo rozpoznać ciąg. Znaki pojedynczego cudzysłowu są uważane za część nazwy pliku systemu Windows, więc należy używać podwójnych cudzysłowów. Przykład:
+   Jeśli ścieżka *modułu* zawiera przecinek, spację osadzoną lub nawias klamrowy, należy użyć cudzysłowu wokół ścieżki, aby Analizator kontekstu mógł prawidłowo rozpoznać ciąg. Znaki pojedynczego cudzysłowu są uważane za część nazwy pliku systemu Windows, więc należy używać podwójnych cudzysłowów. Na przykład
 
   ```C++
   {,,"a long, long, library name.dll"} g_Var

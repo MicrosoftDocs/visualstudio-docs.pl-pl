@@ -72,15 +72,15 @@ helpviewer_keywords:
 ms.assetid: bf78ace6-28e4-4a04-97c6-39e0cdd00ba4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 774c6c03d0485664eb01e1a7967003ef2f5bd2bc
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 984253f6c4ccb9d64fc1cefb34b2b5d7962e3eb5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560619"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857665"
 ---
 # <a name="crt-debug-heap-details"></a>Szczegóły dotyczące sterty debugowania CRT
 Ten temat zawiera szczegółowy opis sterty debugowania CRT.
@@ -180,7 +180,7 @@ Wiele funkcji sterty debugowania musi być dostępnych z poziomu kodu. W poniżs
 
 Flaga **_crtDbgFlag** zawiera następujące pola bitowe:
 
-|Pole bitowe|Domyślne<br /><br /> value|Opis|
+|Pole bitowe|Domyślne<br /><br /> wartość|Opis|
 |---------------|-----------------------|-----------------|
 |**_CRTDBG_ALLOC_MEM_DF**|Włączone|Włącza alokację debugowania. Gdy ten bit jest wyłączony, alokacje pozostają powiązane ze sobą, ale ich typ bloku jest **_IGNORE_BLOCK**.|
 |**_CRTDBG_DELAY_FREE_MEM_DF**|Wyłączone|Uniemożliwia rzeczywiste zwolnienie pamięci, co w przypadku symulowania warunków braku pamięci. Gdy ten bit jest włączony, zwolnione bloki są przechowywane na połączonej liście sterty debugowania, ale są oznaczone jako **_FREE_BLOCK** i wypełnione specjalną wartością bajtową.|
@@ -355,5 +355,5 @@ Teraz nazwa pliku źródłowego i numer wiersza, gdzie `addNewRecord` został wy
 
 ![Z powrotem do najwyższej](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [zawartości](#BKMK_Contents)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)

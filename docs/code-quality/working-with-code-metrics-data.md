@@ -12,15 +12,15 @@ helpviewer_keywords:
 - results window, code metrics
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d29109811c3dd5f354b510d046b33b0ba31d60e5
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: c02f5a3b5175be4517a51a6dc477d6e59b38a762
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436813"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859570"
 ---
 # <a name="use-the-code-metrics-results-window"></a>Korzystanie z okna wyników metryk kodu
 
@@ -32,9 +32,9 @@ Okno **wyników metryki kodu** jest wyświetlane automatycznie podczas generowan
 
 Można wyświetlić okno wyników metryk kodu przy użyciu jednej z następujących sekwencji menu:
 
-- W menu **Analizuj** wybierz pozycję **Windows**  >  **wyniki metryk kodu** systemu Windows.
+- W menu **Analizuj** wybierz pozycję   >  **wyniki metryk kodu** systemu Windows.
 
-- W menu **Widok** wybierz inne **Other Windows**  >  **wyniki metryk kodu** systemu Windows.
+- W menu **Widok** wybierz inne   >  **wyniki metryk kodu** systemu Windows.
 
 Zostanie otwarte okno **wyników metryki kodu** , nawet jeśli nie zawiera żadnych wyników.
 
@@ -92,7 +92,7 @@ Aby uzyskać więcej informacji na temat Azure Boards elementów roboczych, zoba
 
 1. Kliknij prawym przyciskiem myszy wynik.
 
-2. Wskaż polecenie **Utwórz element roboczy** , a następnie kliknij typ elementu pracy, który chcesz utworzyć ( **usterka** , **zadanie** itd.).
+2. Wskaż polecenie **Utwórz element roboczy**, a następnie kliknij typ elementu pracy, który chcesz utworzyć (**usterka**, **zadanie** itd.).
 
 3. Wypełnij formularz elementu pracy, wypełniając wszystkie wymagane pola.
 

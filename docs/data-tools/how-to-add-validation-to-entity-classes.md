@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: 61107da9-7fa3-4dba-b101-ae46536f52c4
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4f367cf799dd00b8b442870554e499e5405865cb
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 08d60b254867c02c7cc406709a95117a11d669c4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435107"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858816"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Instrukcje: dodawanie walidacji do klas jednostek
 *Sprawdzanie poprawności* klas jednostek jest procesem potwierdzania, że wartości wprowadzone do obiektów danych są zgodne z ograniczeniami w schemacie obiektu, a także z regułami ustanowionymi dla aplikacji. Sprawdzanie poprawności danych przed wysłaniem aktualizacji do podstawowej bazy danych jest dobrym sposobem na zmniejszenie błędów. Zmniejsza również potencjalną liczbę operacji rundy między aplikacją a bazą danych.
@@ -35,7 +35,7 @@ Ta procedura pokazuje, jak sprawdzać poprawność danych po zmianie wartości w
 
 ### <a name="to-validate-data-during-a-columns-value-change"></a>Aby sprawdzić poprawność danych podczas zmiany wartości kolumny
 
-1. Otwórz lub Utwórz nowy plik klas LINQ to SQL (plik **DBML** ) w **projektancie o/R**. (Kliknij dwukrotnie plik **. dbml** w **Eksplorator rozwiązań** ).
+1. Otwórz lub Utwórz nowy plik klas LINQ to SQL (plik **DBML** ) w **projektancie o/R**. (Kliknij dwukrotnie plik **. dbml** w **Eksplorator rozwiązań**).
 
 2. W **projektancie o/R** kliknij prawym przyciskiem myszy klasę, dla której chcesz dodać walidację, a następnie kliknij polecenie **Wyświetl kod**.
 
@@ -81,7 +81,7 @@ Oprócz sprawdzania wartości podczas zmian, można także sprawdzić poprawnoś
 
 ### <a name="to-validate-data-during-an-update-to-an-entity-class"></a>Aby sprawdzić poprawność danych podczas aktualizacji klasy jednostki
 
-1. Otwórz lub Utwórz nowy plik klas LINQ to SQL (plik **DBML** ) w **projektancie o/R**. (Kliknij dwukrotnie plik **. dbml** w **Eksplorator rozwiązań** ).
+1. Otwórz lub Utwórz nowy plik klas LINQ to SQL (plik **DBML** ) w **projektancie o/R**. (Kliknij dwukrotnie plik **. dbml** w **Eksplorator rozwiązań**).
 
 2. Kliknij prawym przyciskiem myszy pusty obszar w **Projektancie O/R** i kliknij polecenie **Wyświetl kod**.
 

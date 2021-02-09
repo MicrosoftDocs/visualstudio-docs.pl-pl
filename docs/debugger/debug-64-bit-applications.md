@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: db648e5f-6375-4e2d-aa98-eb7261958927
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 29deb50bb57f018d3031ed1065145b6a39abab67
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 18ea2ade8ed87bfc58280bf5b2dc45c633eb2055
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560450"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857600"
 ---
 # <a name="debug-64-bit-applications"></a>Debugowanie aplikacji 64-bitowych
 Można debugować aplikację 64-bitową uruchomioną na komputerze lokalnym lub na komputerze zdalnym.
@@ -54,7 +54,7 @@ Można debugować aplikację 64-bitową uruchomioną na komputerze lokalnym lub 
 
 - W trakcie działania programu Visual Studio przestaje odpowiadać lub Wystąpił inny problem z wydajnością. Jeśli problem występuje regularnie, można zbierać zrzuty programu Visual Studio (devenv.exe) i procesu roboczego (msvsmon.exe) i wysyłać je do firmy Microsoft. Aby uzyskać informacje o raportowaniu problemu, zobacz artykuł [Jak zgłosić problem w programie Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Aplikacje 64-bitowe](/dotnet/framework/64-bit-apps)
 - [Konfigurowanie programów dla 64-bitowych](/cpp/build/configuring-programs-for-64-bit-visual-cpp)

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: da66ad1b-a25d-485c-af13-2d18f0422e3d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: c8c9ced0b589b28f1cd21de4a862c6f11dc6e03e
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: 54699947588e29da7312c0574833a13bbc3c8cfd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998268"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858192"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Przewodnik: tworzenie usługi danych programu WCF za pomocą struktur WPF i Entity Framework
 W tym instruktażu pokazano, jak utworzyć prostą [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] , która jest hostowana w [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci Web, a następnie uzyskać do niej dostęp z aplikacji Windows Forms.
@@ -106,7 +106,7 @@ W następnym kroku utworzysz, [!INCLUDE[adonet_edm](../data-tools/includes/adone
 7. Na stronie **Wybierz wersję** wybierz przycisk opcji **Entity Framework 5,0** , a następnie wybierz przycisk **dalej** .
 
     > [!NOTE]
-    > Aby można było użyć najnowszej wersji Entity Framework 6 z usługami WCF, należy zainstalować pakiet NuGet dostawcy Usługi danych programu WCF Entity Framework. Zobacz [używanie usługi danych programu WCF 5.6.0 z Entity Framework 6 +](https://devblogs.microsoft.com/odata/using-wcf-data-services-5-6-0-with-entity-framework-6/).
+    > Aby można było użyć najnowszej wersji Entity Framework 6 z usługami WCF, należy zainstalować pakiet NuGet dostawcy WCF Data Services Entity Framework. Zobacz [używanie WCF Data Services 5.6.0 z Entity Framework 6 +](https://devblogs.microsoft.com/odata/using-wcf-data-services-5-6-0-with-entity-framework-6/).
 
 8. Na stronie **Wybierz obiekty bazy danych** rozwiń węzeł **tabele** , zaznacz pole wyboru **klienci** , a następnie wybierz przycisk **Zakończ** .
 
@@ -288,7 +288,7 @@ W tym kroku dostosowano aplikację w celu filtrowania danych według miasta klie
 
 6. W polu tekstowym wprowadź wartość **Londyn**, a następnie wybierz przycisk. Zostaną wyświetleni tylko klienci z Londynu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Usługi Windows Communication Foundation i usługi danych WCF w programie Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 - [Instrukcje: Dodawanie, aktualizowanie lub usuwanie odwołania usługi danych programu WCF](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)

@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 78bf038b-9296-4fbf-b0e8-d881d1aff0df
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: e740483a855bbfd736810dd4d41e3f4d01b7dd60
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9aad1bff0b70f87ff271f6d09cc7f8d34179136d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434678"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858569"
 ---
 # <a name="pass-data-between-forms"></a>Przekazywanie danych między formularzami
 
@@ -75,7 +75,7 @@ W tym instruktażu jest stosowana SQL Server Express LocalDB i Przykładowa baza
 
 3. W środkowym okienku wybierz typ projektu **aplikacji Windows Forms** .
 
-4. Nazwij projekt **PassingDataBetweenForms** , a następnie wybierz przycisk **OK**.
+4. Nazwij projekt **PassingDataBetweenForms**, a następnie wybierz przycisk **OK**.
 
      Projekt **PassingDataBetweenForms** został utworzony i dodany do **Eksplorator rozwiązań**.
 
@@ -121,7 +121,7 @@ Utwórz drugi formularz, do którego mają zostać przekazane dane.
 
 1. W menu **projekt** wybierz polecenie **Dodaj formularz systemu Windows**.
 
-2. Pozostaw domyślną nazwę **Form2** , a następnie kliknij przycisk **Dodaj**.
+2. Pozostaw domyślną nazwę **Form2**, a następnie kliknij przycisk **Dodaj**.
 
 3. Przeciągnij główny węzeł **zamówień** z okna **źródła danych** na **Form2**.
 
@@ -137,11 +137,11 @@ Dodaj zapytanie TableAdapter do Form2 w celu załadowania zamówień dla wybrane
 
 1. Kliknij dwukrotnie plik **NorthwindDataSet. xsd** w **Eksplorator rozwiązań**.
 
-2. Kliknij prawym przyciskiem myszy **OrdersTableAdapter** , a następnie wybierz polecenie **Dodaj zapytanie**.
+2. Kliknij prawym przyciskiem myszy **OrdersTableAdapter**, a następnie wybierz polecenie **Dodaj zapytanie**.
 
-3. Pozostaw domyślną opcję **Użyj instrukcji SQL** , a następnie kliknij przycisk **dalej**.
+3. Pozostaw domyślną opcję **Użyj instrukcji SQL**, a następnie kliknij przycisk **dalej**.
 
-4. Pozostaw domyślną opcję Select, **która zwraca wiersze** , a następnie kliknij przycisk **dalej**.
+4. Pozostaw domyślną opcję Select, **która zwraca wiersze**, a następnie kliknij przycisk **dalej**.
 
 5. Dodaj klauzulę WHERE do zapytania, aby zwrócić ją na `Orders` podstawie `CustomerID` . Zapytanie powinno być podobne do następujących:
 
@@ -164,7 +164,7 @@ Dodaj zapytanie TableAdapter do Form2 w celu załadowania zamówień dla wybrane
 
 ## <a name="create-a-method-on-form2-to-pass-data-to"></a>Utwórz metodę na Form2, aby przekazać dane do
 
-1. Kliknij prawym przyciskiem myszy pozycję **Form2** , a następnie wybierz pozycję **Wyświetl kod** , aby otworzyć **Form2** w **edytorze kodu**.
+1. Kliknij prawym przyciskiem myszy pozycję **Form2**, a następnie wybierz pozycję **Wyświetl kod** , aby otworzyć **Form2** w **edytorze kodu**.
 
 2. Dodaj następujący kod do **Form2** po `Form2_Load` metodzie:
 
@@ -179,7 +179,7 @@ Dodaj zapytanie TableAdapter do Form2 w celu załadowania zamówień dla wybrane
 
 3. Kliknij dwukrotnie zdarzenie **CellDoubleClick** .
 
-     Zostanie wyświetlony Edytor kodu.
+     Zostanie wyświetlony edytor kodu.
 
 4. Zaktualizuj definicję metody, aby pasowała do poniższego przykładu:
 

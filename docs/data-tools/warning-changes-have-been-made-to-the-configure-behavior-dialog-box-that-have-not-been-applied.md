@@ -7,15 +7,15 @@ ms.topic: error-reference
 ms.assetid: ce5822dd-4f10-4c86-b707-7766837be216
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7f93c4277f1922ae2d78e32d3ed940f9d7215c96
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: a56a567fc3b75fa64aac6890b953b99304cc1f6e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998216"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858101"
 ---
 # <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>Ostrzeżenie: wprowadzono zmiany w oknie dialogowym Konfigurowanie zachowania, które nie zostały zastosowane
 
@@ -29,6 +29,6 @@ Okno dialogowe **Konfigurowanie zachowania** umożliwia skonfigurowanie `Insert`
 
 - Aby anulować poprzednią zmianę i kontynuować, kliknij przycisk **nie**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Narzędzia LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

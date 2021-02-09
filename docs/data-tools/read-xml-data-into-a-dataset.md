@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: fae72958-0893-47d6-b3dd-9d42418418e4
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: d5e0c287565c001870f91f4912afad28864fe2ef
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9fb859d61ab31a554579f72121a18a541b2995a7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434652"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858556"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Odczytywanie danych XML do zestawu danych
 
@@ -43,7 +43,7 @@ Ponieważ ten przewodnik koncentruje się na odczytywaniu danych XML w zestawie 
 
 1. W menu **projekt** wybierz polecenie **Dodaj nowy element**.
 
-2. Wybierz pozycję **plik XML** , nazwij plik **authors.xml** , a następnie wybierz pozycję **Dodaj**.
+2. Wybierz pozycję **plik XML**, nazwij plik **authors.xml**, a następnie wybierz pozycję **Dodaj**.
 
    Plik XML jest ładowany do projektanta i jest gotowy do edycji.
 
@@ -152,11 +152,11 @@ Interfejs użytkownika dla tej aplikacji składa się z następujących element�
 
 W tym kroku utworzysz nowy zestaw danych o nazwie `authors` . Aby uzyskać więcej informacji na temat zestawów danych, zobacz [Narzędzia DataSet w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
 
-1. W **Eksplorator rozwiązań** wybierz plik źródłowy dla **Form1** , a następnie wybierz przycisk **przeglądaj projektanta** na pasku narzędzi **Eksplorator rozwiązań** .
+1. W **Eksplorator rozwiązań** wybierz plik źródłowy dla **Form1**, a następnie wybierz przycisk **przeglądaj projektanta** na pasku narzędzi **Eksplorator rozwiązań** .
 
 2. Z [przybornika, na karcie dane](../ide/reference/toolbox-data-tab.md)przeciągnij **zestaw danych** na **formularz Form1**.
 
-3. W oknie dialogowym **Dodawanie zestawu danych** wybierz opcję **niewpisany zestaw danych** , a następnie wybierz przycisk **OK**.
+3. W oknie dialogowym **Dodawanie zestawu danych** wybierz opcję **niewpisany zestaw danych**, a następnie wybierz przycisk **OK**.
 
      Do zasobnika składników zostanie dodany **pozycję DataSet1** .
 
@@ -166,7 +166,7 @@ W tym kroku utworzysz nowy zestaw danych o nazwie `authors` . Aby uzyskać więc
 
 Przycisk **Odczytaj XML** odczytuje plik XML do zestawu danych. Następnie ustawia właściwości <xref:System.Windows.Forms.DataGridView> kontrolki, która wiąże ją z zestawem danych.
 
-1. W **Eksplorator rozwiązań** wybierz pozycję **Form1** , a następnie wybierz przycisk **wyświetl projektanta** na pasku narzędzi **Eksplorator rozwiązań** .
+1. W **Eksplorator rozwiązań** wybierz pozycję **Form1**, a następnie wybierz przycisk **wyświetl projektanta** na pasku narzędzi **Eksplorator rozwiązań** .
 
 2. Wybierz przycisk **Wczytaj plik XML** .
 
@@ -183,7 +183,7 @@ Przycisk **Odczytaj XML** odczytuje plik XML do zestawu danych. Następnie ustaw
 
 Przycisk **Pokaż schemat** tworzy <xref:System.IO.StringWriter> obiekt, który jest wypełniony schematem i jest wyświetlany w <xref:System.Windows.Forms.TextBox> kontrolce.
 
-1. W **Eksplorator rozwiązań** wybierz pozycję **Form1** , a następnie wybierz przycisk **Wyświetl projektanta** .
+1. W **Eksplorator rozwiązań** wybierz pozycję **Form1**, a następnie wybierz przycisk **Wyświetl projektanta** .
 
 2. Wybierz przycisk **Pokaż schemat** .
 

@@ -6,19 +6,19 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 32fbd3462f6a496d681f76480c3eb4451f325b35
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: ddcc5dd06a4e71d445c94c860b2a3ab92429ab2e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518716"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859388"
 ---
 # <a name="add-new-connections"></a>Dodawanie nowych połączeń
 
-Możesz przetestować połączenie z bazą danych lub usługą oraz zbadać zawartość i schematy bazy danych za pomocą **Eksplorator serwera** , **Cloud Explorer** lub **Eksplorator obiektów SQL Server**. Funkcje tych okien nakładają się na pewien zakres. Podstawowe różnice są następujące:
+Możesz przetestować połączenie z bazą danych lub usługą oraz zbadać zawartość i schematy bazy danych za pomocą **Eksplorator serwera**, **Cloud Explorer** lub **Eksplorator obiektów SQL Server**. Funkcje tych okien nakładają się na pewien zakres. Podstawowe różnice są następujące:
 
 - Eksplorator serwera
 
@@ -54,8 +54,8 @@ Po wybraniu źródła danych kliknij pozycję **Testuj połączenie**. Jeśli to
 
 ![Testuj połączenie](../data-tools/media/raddata-test-connection.png)
 
-Jeśli test zakończy się pomyślnie, możesz utworzyć *Źródło danych* , które jest terminem programu Visual Studio, który naprawdę oznacza *model danych* oparty na podstawowej bazie danych lub usłudze.
+Jeśli test zakończy się pomyślnie, możesz utworzyć *Źródło danych*, które jest terminem programu Visual Studio, który naprawdę oznacza *model danych* oparty na podstawowej bazie danych lub usłudze.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Narzędzia do obsługi danych programu Visual Studio dla platformy .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

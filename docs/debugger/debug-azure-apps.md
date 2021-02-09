@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3d434de3-ee5f-419d-9a94-ac4ac02d635b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - azure
-ms.openlocfilehash: 36619ae1b1cfc1d380eb85a3e7a2273493ebaa13
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: a77f1291621e84eb2e13075a791e9c6735447137
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560372"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857625"
 ---
 # <a name="debug-azure-services-in-visual-studio"></a>Debugowanie usług platformy Azure w programie Visual Studio
 
@@ -39,6 +39,6 @@ Do zdalnego debugowania:
 
 - ASP.NET na platformie Azure Service Fabric, zobacz [debugowanie aplikacji zdalnej Service Fabric](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Debugowanie w Visual Studio](../debugger/index.yml)

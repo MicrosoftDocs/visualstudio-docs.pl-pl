@@ -3,18 +3,18 @@ title: Wdróż kontener ASP.NET Core do Azure App Service
 description: Dowiedz się, jak używać narzędzi kontenera programu Visual Studio do wdrażania aplikacji internetowej ASP.NET Core w kontenerze Docker w celu Azure App Service
 ms.custom: SEO-VS-2020
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.technology: vs-azure
 ms.devlang: dotnet
 ms.topic: how-to
 ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: c0f45f14bc8b363a0c7c4e298effa67c5fccde18
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 2e23658cfde1154f5b4df7ae7dade71b1569e35c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036343"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859648"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>Wdrażanie kontenera ASP.NET Core do Azure App Service przy użyciu programu Visual Studio
 
@@ -136,7 +136,7 @@ W tym miejscu można wyświetlić informacje o kontenerze, wyświetlić lub pobr
 
 ## <a name="clean-up-resources"></a>Czyszczenie zasobów
 
-Aby usunąć wszystkie zasoby platformy Azure skojarzone z tym samouczkiem, Usuń grupę zasobów przy użyciu [Azure Portal](https://portal.azure.com). Aby znaleźć grupę zasobów skojarzoną z opublikowaną aplikacją sieci Web, wybierz opcję **Wyświetl**  >  **inne**  >  **działanie publikowania w sieci Web**systemu Windows, a następnie wybierz ikonę koła zębatego. Zostanie otwarta karta **Publikowanie** , która zawiera grupę zasobów.
+Aby usunąć wszystkie zasoby platformy Azure skojarzone z tym samouczkiem, Usuń grupę zasobów przy użyciu [Azure Portal](https://portal.azure.com). Aby znaleźć grupę zasobów skojarzoną z opublikowaną aplikacją sieci Web, wybierz opcję **Wyświetl**  >  **inne**  >  **działanie publikowania w sieci Web** systemu Windows, a następnie wybierz ikonę koła zębatego. Zostanie otwarta karta **Publikowanie** , która zawiera grupę zasobów.
 
 W Azure Portal wybierz pozycję **grupy zasobów**, a następnie wybierz grupę zasobów, aby otworzyć jej stronę szczegółów. Sprawdź, czy jest to poprawna Grupa zasobów, a następnie wybierz pozycję **Usuń grupę zasobów**, wpisz nazwę i wybierz pozycję **Usuń**.
 
@@ -144,6 +144,6 @@ W Azure Portal wybierz pozycję **grupy zasobów**, a następnie wybierz grupę 
 
 Dowiedz się więcej o [Azure App Service](/azure/app-service/overview).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 [Wdrażanie w rejestrze kontenerów platformy Azure](hosting-web-apps-in-docker.md)

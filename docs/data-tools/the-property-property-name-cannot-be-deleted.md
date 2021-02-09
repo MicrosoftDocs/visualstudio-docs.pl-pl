@@ -7,15 +7,15 @@ ms.topic: error-reference
 ms.assetid: 55873f74-7834-4ec1-8815-eeeb65618d87
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: bdca9758116c551604b5f75f141c15107c1fc890
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: 03d9fa4368251ec36dad8f791f033fdce1f71adb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998363"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858335"
 ---
 # <a name="the-property-property-name-cannot-be-deleted"></a>Właściwości \<property name> nie można usunąć
 
@@ -33,6 +33,6 @@ Ustaw **Właściwość dyskryminatora** na inną właściwość klasy danych, ab
 
 3. Spróbuj ponownie usunąć właściwość.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Narzędzia LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

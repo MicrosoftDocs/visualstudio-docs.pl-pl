@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 68bae3f6-ec9b-45ee-a33a-69395029f54c
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: bfc0c1ca96f5bf6ce58a1b7df9ad0ea10f283e1e
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 05575e6cc75468a85a3dd410ea59bebca79eee0f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435159"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858842"
 ---
 # <a name="hierarchical-update"></a>Aktualizacja hierarchiczna
 
@@ -40,7 +40,7 @@ Domyślnie zestaw danych traktuje powiązane tabele jako "tylko relacje", co ozn
 
 ## <a name="enable-hierarchical-update-in-a-dataset"></a>Włączanie aktualizacji hierarchicznej w zestawie danych
 
-Domyślnie dla wszystkich nowych zestawów danych, które są dodawane lub tworzone w projekcie, jest włączona aktualizacja hierarchiczna. Włącz lub Wyłącz aktualizację hierarchiczną, ustawiając właściwość **hierarchicznej aktualizacji** określonego zestawu danych w zestawie danych na **wartość true** lub **false** :
+Domyślnie dla wszystkich nowych zestawów danych, które są dodawane lub tworzone w projekcie, jest włączona aktualizacja hierarchiczna. Włącz lub Wyłącz aktualizację hierarchiczną, ustawiając właściwość **hierarchicznej aktualizacji** określonego zestawu danych w zestawie danych na **wartość true** lub **false**:
 
 ![Ustawienie hierarchicznej aktualizacji](../data-tools/media/hierarchical-update-setting.png)
 

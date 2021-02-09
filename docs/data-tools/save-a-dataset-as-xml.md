@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 68b8327c-ae05-49ff-b9ba-99183e70b52c
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: e454aca47f9bf6425ef2dfd98747869c27523f2c
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9030740a25312ea1463b950e34061884e9487ba4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434626"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858530"
 ---
 # <a name="save-a-dataset-as-xml"></a>Zapisywanie zestawu danych jako kodu XML
 

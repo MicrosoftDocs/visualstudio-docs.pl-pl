@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 64af5bed-e38b-420f-b9ce-d64f35100aae
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: acc8f5abaa0c839232bbcedc63d24387444bd749
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 10f26d61eddb0efb47e22722a039f73fec2b404c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729083"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857971"
 ---
 # <a name="assertion-failed-dialog-box"></a>Błędy potwierdzenia — Okno dialogowe
 Instrukcja Assert określa warunek, który powinien zostać przetrzymany w pewnym konkretnym punkcie w programie. Jeśli ten warunek nie ma wartości true, potwierdzenie nie powiedzie się, wykonywanie programu zostanie przerwane i zostanie wyświetlone okno dialogowe.
