@@ -13,15 +13,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], document properties
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 78e9968970406cd176a2f5f27305ca0346cf85bf
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 16f295963a875bf13024106ad4b78bb38e3fcd55
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523793"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889385"
 ---
 # <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>Instrukcje: Programowane Wypełnianie tabel programu Word przy użyciu właściwości dokumentu
   Poniższy przykład tworzy tabelę programu Microsoft Office Word w górnej części dokumentu i wypełnia ją właściwościami dokumentu hosta.

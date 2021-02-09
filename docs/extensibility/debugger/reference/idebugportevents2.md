@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2c017094-3ba2-4067-83f9-147df1d96bce
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c611eb531bdabb633b11ac2e8ca2d0d11f52005
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba68608e09405265940686bbb235a41c53959943
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725174"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891192"
 ---
 # <a name="idebugportevents2"></a>IDebugPortEvents2
 Ten interfejs powiadamia odbiornik (zazwyczaj Menedżera debugowania sesji [SDM] lub aparat debugowania) o tworzeniu i zniszczeniu procesu i programu na określonym porcie. Te informacje mogą służyć do prezentowania widoku w czasie rzeczywistym procesów i programów uruchomionych na porcie.
@@ -39,7 +39,7 @@ IDebugPortEvents2 : IUnknown
 
 |Metoda|Opis|
 |------------|-----------------|
-|[Wydarzenie](../../../extensibility/debugger/reference/idebugportevents2-event.md)|Wysyła zdarzenia opisujące tworzenie i niszczenie procesów i programów na porcie.|
+|[Zdarzenie](../../../extensibility/debugger/reference/idebugportevents2-event.md)|Wysyła zdarzenia opisujące tworzenie i niszczenie procesów i programów na porcie.|
 
 ## <a name="remarks"></a>Uwagi
  `IDebugPortEvents2` jest również używany przez model SDM do debugowania programów uruchamianych w procesie, który jest już debugowany.

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: bd5376fc-13b4-40b7-9a5d-7ba8289f1b24
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c2aa1e20dd8639ce089ebe851116a15bf61e35ce
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f7ac35b3bd3757e804840478c586100a3f56e656
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718117"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890932"
 ---
 # <a name="ieevisualizerdataprovidergetobjectforvisualizer"></a>IEEVisualizerDataProvider::GetObjectForVisualizer
 Ta metoda pobiera obiekt, który reprezentuje ten wizualizator.
@@ -28,14 +28,14 @@ Ta metoda pobiera obiekt, który reprezentuje ten wizualizator.
 ## <a name="syntax"></a>Składnia
 
 ```cpp
-HRESULT GetObjectForVisualizer(
-   IDebugObject** ppObject
+HRESULT GetObjectForVisualizer(
+   IDebugObject** ppObject
 );
 ```
 
 ```csharp
-int GetObjectForVisualizer(
-   out IDebugObject ppObject
+int GetObjectForVisualizer(
+   out IDebugObject ppObject
 );
 ```
 

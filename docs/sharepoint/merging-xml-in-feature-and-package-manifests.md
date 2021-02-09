@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packaging
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 16305ed63f48d9f14e35aeb8d37e35f23f40be25
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 8be6adfedeabaea236e4dcb2cd969e6023a7f3ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304239"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889567"
 ---
 # <a name="merge-xml-in-feature-and-package-manifests"></a>Scalanie kodu XML w manifestach funkcji i pakietów
   Funkcje i pakiety są definiowane przez [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] pliki manifestu. Te spakowane manifesty są kombinacją danych wygenerowanych przez projektantów i niestandardowych [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] wprowadzonych w szablonie manifestu przez użytkowników. W czasie pakowania [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Scala [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] instrukcje niestandardowe z udostępnionym projektantem, [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] Aby utworzyć spakowany [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] plik manifestu. Podobne elementy, z wyjątkami zanotowanymi w dalszej części wyjątków scalania, są scalane w celu uniknięcia [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] błędów walidacji po wdrożeniu plików w programie SharePoint i zwiększenia wydajności plików manifestu.

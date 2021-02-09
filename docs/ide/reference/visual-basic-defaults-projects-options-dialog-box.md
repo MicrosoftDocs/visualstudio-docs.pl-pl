@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 2465cd9d-18b6-4c4a-b1ea-86dbab23fc79
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f761161f2ad29be994b3a6260bafe827a41fabe0
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 3de415f99dbb9a91f2fa0e30ffc5e40727d10303
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616359"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889750"
 ---
 # <a name="visual-basic-defaults-projects-options-dialog-box"></a>Domyślne ustawienia programu Visual Basic, Projekty, okno dialogowe Opcje
 Określa ustawienia domyślne dla opcji projektu Visual Basic. Po utworzeniu nowego projektu określone instrukcje opcji zostaną dodane do nagłówka projektu w edytorze kodu. Opcje stosują się do wszystkich projektów Visual Basic.
@@ -44,6 +44,6 @@ Ustawia domyślny kompilator dla porównań ciągów: binarny (z uwzględnieniem
 
 Ustawia wartość domyślną kompilatora dla wnioskowania o typie lokalnym. Domyślnie **opcja wnioskowanie** jest ustawiona na wartość **włączone** dla nowo utworzonych projektów i **wyłączone** dla zmigrowanych projektów utworzonych we wcześniejszych wersjach Visual Basic. Aby uzyskać więcej informacji, zobacz [/optioninfer —](/dotnet/visual-basic/reference/command-line-compiler/optioninfer).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Rozwiązania i projekty](../../ide/solutions-and-projects-in-visual-studio.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 37eb7360-28e9-4273-862a-4c17f22af690
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4cb39d3d814270414f28aec7f1876b6b44406e53
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 37c6713dc0e34ae0823cfbfb5db5c539b5073e3b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727756"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890256"
 ---
 # <a name="idebugloadcompleteevent2"></a>IDebugLoadCompleteEvent2
 Ten interfejs jest wysyłany przez aparat debugowania (poza) do Menedżera debugowania sesji (SDM) podczas ładowania programu, ale przed wykonaniem dowolnego kodu.

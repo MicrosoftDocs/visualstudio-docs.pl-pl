@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 2f6f18d1-acd8-454d-a856-9a4d81155052
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2d745619be8bff77503bc14a1d7a87d84cc7864
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 0f77afea813158c787978e2ea4dbec1a55e36eca
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875599"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890633"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>Wybór i aktualność w środowisku IDE
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Zintegrowane środowisko programistyczne (IDE) obsługuje informacje o aktualnie wybranych obiektach użytkowników przy użyciu *kontekstu* wyboru. W przypadku kontekstu wyboru pakietów VSPackage może wziąć udział w śledzeniu walut na dwa sposoby:

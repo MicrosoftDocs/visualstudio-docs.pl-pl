@@ -14,15 +14,15 @@ helpviewer_keywords:
 - exposing code to VBA
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a830ec75e3997bee8d4bed9e275fc6229fec3405
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1df1eed4edec3efdbf93f4effc352b3d02656d04
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846600"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889411"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>Instrukcje: Uwidacznianie kodu w języku VBA w projekcie Visual C#
   Można uwidocznić kod w projekcie Visual C# do kodu Visual Basic for Applications (VBA), jeśli chcesz, aby dwa typy kodu współpracowali ze sobą.
@@ -102,7 +102,7 @@ ms.locfileid: "96846600"
 
 12. Skompiluj projekt.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)
 - [Łączenie języka VBA i dostosowań na poziomie dokumentu](../vsto/combining-vba-and-document-level-customizations.md)

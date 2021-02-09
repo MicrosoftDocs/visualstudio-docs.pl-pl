@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 57506242-5763-4c08-adb9-8a78ce02cebb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aba0863ad7c50bf5c14e7a30c06097825b8cf5ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60ac7109b9f92a4ed7eecf57095c44fc4208b9f0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86386800"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891062"
 ---
 # <a name="idebugprocess3continue"></a>IDebugProcess3::Continue
 Kontynuuje wykonywanie tego procesu ze stanu zatrzymanego. Wszystkie poprzednie Stany wykonania (takie jak krok) są zachowywane i proces zostaje uruchomiony ponownie.
@@ -57,4 +57,4 @@ podczas Obiekt [IDebugThread2](../../../extensibility/debugger/reference/idebugt
 ## <a name="see-also"></a>Zobacz też
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
-- [Wydarzenie](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+- [Zdarzenie](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

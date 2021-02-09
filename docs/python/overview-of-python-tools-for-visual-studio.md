@@ -6,17 +6,17 @@ ms.date: 06/05/2019
 ms.topic: overview
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a913fa6abdcf59a64d8514f17656b8f8531d476d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0283cb4332e9137550b74a85c38d7963f3c77a70
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315268"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890477"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Współpraca z językiem Python w programie Visual Studio w systemie Windows
 
@@ -63,7 +63,7 @@ Więcej informacji:
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>Zaawansowane edytowanie, IntelliSense i zrozumienie kodu
 
-Program Visual Studio oferuje pierwszy, jednostronicowy Edytor Python, w tym kolorowanie składni, Autouzupełnianie całego kodu i bibliotek, formatowanie kodu, pomoc w sygnaturach, refaktoryzację, Zaznaczanie błędów i wskazówki dotyczące typów. Program Visual Studio udostępnia również unikatowe funkcje, takie jak widok klasy, **Przejdź do definicji**, **Znajdź wszystkie odwołania**i fragmenty kodu. Bezpośrednia integracja z [oknem interaktywnym](#interactive-window) pomaga szybko opracowywać kod języka Python, który został już zapisany w pliku.
+Program Visual Studio oferuje pierwszy, jednostronicowy Edytor Python, w tym kolorowanie składni, Autouzupełnianie całego kodu i bibliotek, formatowanie kodu, pomoc w sygnaturach, refaktoryzację, Zaznaczanie błędów i wskazówki dotyczące typów. Program Visual Studio udostępnia również unikatowe funkcje, takie jak widok klasy, **Przejdź do definicji**, **Znajdź wszystkie odwołania** i fragmenty kodu. Bezpośrednia integracja z [oknem interaktywnym](#interactive-window) pomaga szybko opracowywać kod języka Python, który został już zapisany w pliku.
 
 ![Uzupełnianie kodu dla kodu Python w programie Visual Studio](media/code-editing-completions-simple.png)
 
@@ -81,7 +81,7 @@ W przypadku każdego środowiska Python znanego dla programu Visual Studio możn
 
 ![Okno interaktywne języka Python w programie Visual Studio](media/interactive-window.png)
 
-Program Visual Studio zapewnia także ścisłą integrację między edytorem kodu w języku Python a oknem **interaktywnym** . Skrót klawiaturowy **klawisza Ctrl** + **Enter** wygodnie wysyła bieżący wiersz kodu (lub blok kodu) w edytorze do okna **interaktywnego** , a następnie przechodzi do następnego wiersza (lub bloku). **Ctrl** + **Klawisz ENTER** umożliwia łatwe przechodzenie przez kod bez konieczności uruchamiania debugera. Możesz również wysłać zaznaczony kod do okna **interaktywnego** z tym samym naciśnięciem klawisza i z łatwością wkleić kod z okna **interaktywnego** do edytora. Ponadto te funkcje umożliwiają wykonywanie szczegółowych informacji o segmencie kodu w oknie **interaktywnym** i łatwe zapisywanie wyników w pliku w edytorze.
+Program Visual Studio zapewnia także ścisłą integrację między edytorem kodu w języku Python a oknem **interaktywnym** . Skrót klawiaturowy **klawisza Ctrl** +  wygodnie wysyła bieżący wiersz kodu (lub blok kodu) w edytorze do okna **interaktywnego** , a następnie przechodzi do następnego wiersza (lub bloku). **Ctrl** + **Klawisz ENTER** umożliwia łatwe przechodzenie przez kod bez konieczności uruchamiania debugera. Możesz również wysłać zaznaczony kod do okna **interaktywnego** z tym samym naciśnięciem klawisza i z łatwością wkleić kod z okna **interaktywnego** do edytora. Ponadto te funkcje umożliwiają wykonywanie szczegółowych informacji o segmencie kodu w oknie **interaktywnym** i łatwe zapisywanie wyników w pliku w edytorze.
 
 Program Visual Studio obsługuje również IPython/Jupyter w REPL, w tym wykresy wbudowane, .NET i Windows Presentation Foundation (WPF).
 
@@ -144,7 +144,7 @@ Więcej informacji:
 
 ## <a name="unit-testing-tools"></a>Narzędzia do testowania jednostkowego
 
-Wykrywaj i uruchamiaj testy w programie Visual Studio **Test Explorer**oraz łatwo Debuguj testy jednostkowe.
+Wykrywaj i uruchamiaj testy w programie Visual Studio **Test Explorer** oraz łatwo Debuguj testy jednostkowe.
 
 ![Debugowanie testów jednostkowych w języku Python w programie Visual Studio](media/unit-test-debugging.png)
 
@@ -240,7 +240,7 @@ Program Visual Studio 2015 i jego starsze wersje są dostępne pod adresem [Visu
 
 <br/>
 
-|               Komputery               |   2017 +   |   2015   | 2013 comm | 2013 Desktop | 2013 Web | 2013 Pro + | 2012 Pro + | 2010 SP1 Pro + |
+|               Klasyczna               |   2017 +   |   2015   | 2013 comm | 2013 Desktop | 2013 Web | 2013 Pro + | 2012 Pro + | 2010 SP1 Pro + |
 |-------------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
 |     Konsola/aplikacja systemu Windows     | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 | IronPython WPF (z projektantem XAML) | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
@@ -248,7 +248,7 @@ Program Visual Studio 2015 i jego starsze wersje są dostępne pod adresem [Visu
 
 <br/>
 
-|         Sieć Web         |   2017 +   |   2015   | 2013 comm | 2013 Desktop | 2013 Web | 2013 Pro + | 2012 Pro + | 2010 SP1 Pro + |
+|         Internet         |   2017 +   |   2015   | 2013 comm | 2013 Desktop | 2013 Web | 2013 Pro + | 2012 Pro + | 2010 SP1 Pro + |
 |---------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
 | Projekt sieci Web Django  | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 | Projekt sieci Web butelek  | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |

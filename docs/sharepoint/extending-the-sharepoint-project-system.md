@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending project items
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c017217f66e38eed6248b90efaeabce0efaa9c70
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 5a81fef67cc6816f16a074494005a61d647abeab
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672551"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889684"
 ---
 # <a name="extend-the-sharepoint-project-system"></a>Poszerzanie systemu projektu SharePoint
   Rozwiązania programu SharePoint można tworzyć przy użyciu zestawu szablonów projektu i szablonów elementów w programie Visual Studio. Te szablony spełniają wymagania wielu scenariuszy programistycznych, ale mogą zostać wykryte sytuacje, w których nie zapewniają potrzebnych funkcji. W takich przypadkach można rozszerzyć system projektu programu SharePoint.
@@ -50,7 +50,7 @@ ms.locfileid: "94672551"
 
 - Przekonwertuj obiekt w systemie projektu SharePoint na odpowiedni obiekt w modelu obiektów automatyzacji programu Visual Studio lub modelu obiektów integracji lub odwrotnie. Aby uzyskać więcej informacji, zobacz [skonwer między typami systemu projektu SharePoint a innymi typami projektów programu Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Definiowanie niestandardowych typów elementów projektu SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [Zwiększ elementy projektu SharePoint](../sharepoint/extending-sharepoint-project-items.md)
 - [Zwiększ projekty programu SharePoint](../sharepoint/extending-sharepoint-projects.md)

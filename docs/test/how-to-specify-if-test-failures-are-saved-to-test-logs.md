@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: 08a7fe98-a7f7-4b8d-94a3-ec82b65a2aaf
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: a6dbde0f1a1f854bfd7dc6c2f74e3081a33b4796
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 2f4c81a364bdbe12bb3f780fe17c077ab04a615b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95439906"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889437"
 ---
 # <a name="how-to-specify-if-test-failures-are-saved-to-test-logs-using-the-load-test-editor"></a>Instrukcje: Określanie, czy niepowodzenia testu są zapisywane w dziennikach testów przy użyciu Edytor testu obciążeniowego
 
@@ -45,7 +45,7 @@ Po utworzeniu testu obciążenia z **nowym Kreator testu obciążeniowego** moż
 
      Dane zapisane w dzienniku można wyświetlić za pomocą widoku tabele analizatora testu obciążenia. Aby uzyskać więcej informacji, zobacz [Analizowanie wyników testów obciążenia i błędów w widoku tabele](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Edytowanie scenariuszy testu obciążenia](../test/edit-load-test-scenarios.md)
 - [Przewodnik: Tworzenie i uruchamianie testów obciążeniowych](../test/walkthrough-create-and-run-a-load-test.md)

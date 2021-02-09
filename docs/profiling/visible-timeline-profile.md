@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 559841d1-967c-4b51-8574-6ace23969580
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b4b8725a6336218bdac413b12a20ff201dd0c287
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 6b63bbd3396e0a4119e59bd47bde31459b3d2145
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723169"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890516"
 ---
 # <a name="visible-timeline-profile"></a>Profil widocznej osi czasu
 Profil widocznej osi czasu dla widoku blokowania wątków zawiera informacje statystyczne i linki do raportów. W miarę powiększania, zmniejszania, przewijania w poziomie, ukrywania kanałów lub wyświetlania kanałów, liczby w aktywnej legendzie zmieniają się w celu odzwierciedlenia bieżącego widoku. Aby wyświetlić raport dotyczący elementu w legendzie, kliknij ten element.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Widok wątków](../profiling/threads-view-parallel-performance.md)

@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SafeControl element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 36a8b0ed45fbdb8d2dfe8e93a027a47adf407587
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: f08046666ff00d4a0e5489bc78c0c70967774f08
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440626"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889476"
 ---
 # <a name="safecontrol-element"></a>SafeControl — element
   Reprezentuje kontrolkę ASPX lub składnik Web Part, który jest oznaczony jako bezpieczny dla każdego użytkownika, aby mógł uzyskać dostęp do dowolnej strony ASPX w witrynie programu SharePoint.
@@ -46,7 +46,7 @@ ms.locfileid: "95440626"
 |**Issafe**|Opcjonalny atrybut **xs: Boolean** .<br /><br /> Określa, czy formant ASPX lub część sieci Web są bezpieczne dla niezaufanych użytkowników, którzy mają do nich dostęp.|
 |**IsSafeAgainstScript**|Opcjonalny atrybut **xs: Boolean** .<br /><br /> Określa, czy niezaufani użytkownicy mogą wyświetlać lub edytować właściwości kontrolki ASPX lub składnika Web Part.|
 |**Nazwa**|Opcjonalny atrybut **xs: String** .<br /><br /> Nazwa tego wpisu bezpiecznego sterowania w kolekcji.|
-|**Obszaru**|Opcjonalny atrybut **xs: String** .<br /><br /> Przestrzeń nazw kontrolki ASPX lub składnika Web Part.|
+|**Przestrzeń nazw**|Opcjonalny atrybut **xs: String** .<br /><br /> Przestrzeń nazw kontrolki ASPX lub składnika Web Part.|
 |**Nazwa**|Opcjonalny atrybut **xs: String** .<br /><br /> Nazwa typu kontrolki ASPX lub części sieci Web.|
 
 ### <a name="child-elements"></a>Elementy podrzędne
@@ -65,11 +65,11 @@ ms.locfileid: "95440626"
 
 |Właściwość|Wartość|
 |-|-|
-|**Obszaru**|http: \/ \/ schemas.Microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**Przestrzeń nazw**|http: \/ \/ schemas.Microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
 |**Nazwa schematu**|Schemat elementu projektu programu SharePoint|
 |**Plik walidacji**|ProjectItemModelSchema. xsd|
 |**Może być puste**|Nie|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Odwołanie do schematu elementu projektu programu SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)
 - [Udostępnianie informacji o pakowaniu i wdrożeniu w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
