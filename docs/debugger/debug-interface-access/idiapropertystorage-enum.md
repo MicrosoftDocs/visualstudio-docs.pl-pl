@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 00e462da-980a-40b3-a2d6-75a25ee809e5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 89c5b6418e832dd145837e579cfded3f47022e00
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8972fa93ebae30fc64839324106d068e27577434
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466603"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864650"
 ---
 # <a name="idiapropertystorageenum"></a>IDiaPropertyStorage::Enum
 Pobiera moduł wyliczający dla właściwości w tym zestawie.
@@ -25,7 +25,7 @@ Pobiera moduł wyliczający dla właściwości w tym zestawie.
 ## <a name="syntax"></a>Składnia
 
 ```C++
-HRESULT Enum ( 
+HRESULT Enum ( 
    IEnumSTATPROPSTG** ppenum
 );
 ```

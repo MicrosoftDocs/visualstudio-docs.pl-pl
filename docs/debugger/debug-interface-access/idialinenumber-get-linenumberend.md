@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b101853e-2bcf-47c1-acef-e13984c7ea9d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: aaf1a2144831c9c0a34ebfe27cb5082887454890
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 93bb9e6cf42966b80bd2512a0cdc488ef91c7429
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466876"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864783"
 ---
 # <a name="idialinenumberget_linenumberend"></a>IDiaLineNumber::get_lineNumberEnd
 Pobiera numer linii źródłowej, w której znajduje się instrukcja lub wyrażenie.
@@ -25,7 +25,7 @@ Pobiera numer linii źródłowej, w której znajduje się instrukcja lub wyraże
 ## <a name="syntax"></a>Składnia
 
 ```C++
-HRESULT get_lineNumberEnd ( 
+HRESULT get_lineNumberEnd ( 
    DWORD* pRetVal
 );
 ```

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2c55a6f7-4ef5-45fb-9fd1-d72deaaa2829
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3804d018569a0b2e0ee5a11a3bb5edc8363cfffc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8367a0912df0bce04657e455eb1f3cebe16676e6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466890"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864790"
 ---
 # <a name="idialinenumberget_length"></a>IDiaLineNumber::get_length
 Pobiera liczbę bajtów w bloku.
@@ -25,7 +25,7 @@ Pobiera liczbę bajtów w bloku.
 ## <a name="syntax"></a>Składnia
 
 ```C++
-HRESULT get_length ( 
+HRESULT get_length ( 
    DWORD* pRetVal
 );
 ```
