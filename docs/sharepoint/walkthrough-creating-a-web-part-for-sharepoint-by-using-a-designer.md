@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], designing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cc214e98b2ec0ed6feb31c9aaa6e8170b3ddd2c8
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 02a0eb7c9279aef1fd2821d44a6f3cc4a0008356
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96913987"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847755"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>Przewodnik: Tworzenie składnika Web Part dla programu SharePoint przy użyciu narzędzia Projektant
 
@@ -83,7 +83,7 @@ Zaprojektuj składnik Web Part poprzez dodanie kontrolek z **przybornika** do po
 
 5. W Projektancie wybierz przycisk **Button1** .
 
-6. Na pasku menu wybierz **View**  >  **okno właściwości** widoku.
+6. Na pasku menu wybierz   >  **okno właściwości** widoku.
 
      Zostanie otwarte okno **Właściwości** .
 

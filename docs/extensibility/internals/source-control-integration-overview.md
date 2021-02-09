@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3a46e4eb-e677-49c3-8647-d927d035a19a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6bbd385c7089504949d2437091b0a2ea002fafdd
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 7f3b0ddf956c3f5c2ec2fe51163b52f2a7a973aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876015"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846429"
 ---
 # <a name="source-control-integration-overview"></a>Omówienie integracji kontroli kodu źródłowego
 W tej sekcji porównano dwa sposoby integracji z kontrolą źródła programu Visual Studio; Wtyczka do kontroli źródła i pakietu VSPackage, które udostępniają rozwiązanie kontroli źródła i podświetlą nowe funkcje kontroli źródła. Program Visual Studio umożliwia ręczne przełączenie między elementami pakietów VSPackage kontroli źródła a wtyczkami kontroli źródła a również automatycznym przełączaniem opartym na rozwiązaniach.

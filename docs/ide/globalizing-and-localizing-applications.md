@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 4d9815ae-3e80-4b4d-933d-f8309aee18d5
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 65c7a82488fea8fc12e6d5db838818269add0181
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 77402f7503818b310a592a39706ac717ac728852
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597447"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847963"
 ---
 # <a name="develop-globalized-and-localized-apps"></a>Opracowywanie aplikacji globalnych i zlokalizowanych
 
@@ -50,7 +50,7 @@ Za pomocą programu Visual Studio można tworzyć aplikacje, które prawidłowo 
 > [!NOTE]
 > Aplikacje konsolowe nie obejmują obsługi tekstu w językach dwukierunkowych. Jest to wynikiem działania systemu Windows z aplikacjami konsolowymi.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Obsługa języków dwukierunkowych w programie Visual Studio](use-bidirectional-languages.md)
 - [Globalizacja i lokalizowanie aplikacji platformy .NET](/dotnet/standard/globalization-localization/)

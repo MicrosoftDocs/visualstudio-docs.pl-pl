@@ -22,15 +22,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], custom XML parts
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d7998f2a47edd85a65b1e81dd45a046de80d0cdb
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: f6018f7e440eb0cc3cc0b7dcb113583aaf7fcd4e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844130"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850012"
 ---
 # <a name="custom-xml-parts-overview"></a>Niestandardowe części XML — Omówienie
   Możesz osadzić dane XML w dokumentach dla niektórych Microsoft Office aplikacji. Po osadzeniu danych XML w dokumencie dane są nazywane *niestandardowym elementem XML*.
@@ -80,7 +80,7 @@ ms.locfileid: "96844130"
 ## <a name="bind-custom-xml-parts-to-word-content-controls"></a>Powiązywanie niestandardowych części XML z kontrolkami zawartości programu Word
  Można powiązać kontrolki zawartości w rozwiązaniu programu Word z elementami w niestandardowym składniku XML. Gdy formant zawartości jest powiązany z niestandardowym elementem XML, dane w niestandardowej części XML są wyświetlane w interfejsie użytkownika formantu zawartości. Jeśli użytkownik edytuje tekst w kontrolce, odpowiedni element XML zostanie automatycznie zaktualizowany. Podobnie, jeśli wartości elementów w niestandardowych częściach XML są zmieniane, formanty zawartości, które są powiązane z elementami XML, wyświetlają nowe dane. Aby uzyskać więcej informacji, zobacz [formanty zawartości](../vsto/content-controls.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Schematy XML i dane w dostosowaniach na poziomie dokumentu](../vsto/xml-schemas-and-data-in-document-level-customizations.md)
 - [Instrukcje: Dodawanie niestandardowych części XML do dostosowywania na poziomie dokumentu](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)
 - [Instrukcje: Dodawanie niestandardowych części XML do dokumentów za pomocą dodatków narzędzi VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)

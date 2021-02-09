@@ -16,15 +16,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, workflow initiation forms
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 62501a23695b81ee0437d3210dced7c81f9b054e
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: cb759b155b119c29f20a39cdbf35338ec5a305b9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970436"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847742"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Przewodnik: tworzenie przepływu pracy z formularzami skojarzenia i inicjowania
   W tym instruktażu pokazano, jak utworzyć podstawowy sekwencyjny przepływ pracy, który obejmuje użycie formularzy skojarzenia i inicjacji. Są to formularze ASPX, które umożliwiają dodawanie parametrów do przepływu pracy, gdy jest on najpierw skojarzony przez administratora programu SharePoint (formularz skojarzenia) i gdy przepływ pracy jest uruchamiany przez użytkownika (formularz inicjacji).

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 06a1368f-10f0-44eb-af61-e388c2327111
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b9fe0e96ade081e8da11b5e1c06c5b45279b10b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f59cdc9a257f853f70afe2566d7b06e39f8edc02
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715759"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846663"
 ---
 # <a name="ienumdebugprocesses2"></a>IEnumDebugProcesses2
 Ten interfejs wylicza procesy działające na porcie debugowania.
@@ -42,7 +42,7 @@ IEnumDebugProcesses : IUnknown
 |[Dalej](../../../extensibility/debugger/reference/ienumdebugprocesses2-next.md)|Pobiera określoną liczbę procesów w sekwencji wyliczenia.|
 |[Pomiń](../../../extensibility/debugger/reference/ienumdebugprocesses2-skip.md)|Pomija określoną liczbę procesów w sekwencji wyliczenia.|
 |[Reset](../../../extensibility/debugger/reference/ienumdebugprocesses2-reset.md)|Resetuje sekwencję wyliczenia na początek.|
-|[Klonowanie](../../../extensibility/debugger/reference/ienumdebugprocesses2-clone.md)|Tworzy moduł wyliczający, który zawiera ten sam stan wyliczania co bieżący moduł wyliczający.|
+|[Klon](../../../extensibility/debugger/reference/ienumdebugprocesses2-clone.md)|Tworzy moduł wyliczający, który zawiera ten sam stan wyliczania co bieżący moduł wyliczający.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugprocesses2-getcount.md)|Pobiera liczbę procesów w module wyliczającym.|
 
 ## <a name="remarks"></a>Uwagi

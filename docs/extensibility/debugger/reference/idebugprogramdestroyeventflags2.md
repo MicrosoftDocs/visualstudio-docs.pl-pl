@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: d384ff71-dc71-40b9-a871-801f8b6a3418
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d869304dd8b6dc82db78cc09ed9d51a54acdc3c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd43b93f8a74e0e1fcb12ac9be4da47142a79519
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722506"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99848224"
 ---
 # <a name="idebugprogramdestroyeventflags2"></a>IDebugProgramDestroyEventFlags2
 Umożliwia aparatowi debugowania przesłonięcie domyślnego zachowania [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] interfejsu użytkownika po zakończeniu sesji debugowania.

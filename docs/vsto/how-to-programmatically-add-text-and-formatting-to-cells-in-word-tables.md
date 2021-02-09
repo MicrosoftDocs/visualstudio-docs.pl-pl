@@ -15,15 +15,15 @@ helpviewer_keywords:
 - tables [Office development in Visual Studio], adding text and formatting
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f10684fa3e9309611ebf3b04d3cea77ee822f49e
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 89f9c1783810661f584718ca621c31fbf79aec1a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848017"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846312"
 ---
 # <a name="how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables"></a>Instrukcje: Programowane dodawanie tekstu i formatowania do komórek w tabelach programu Word
   Każda tabela składa się z kolekcji komórek. Każdy pojedynczy <xref:Microsoft.Office.Interop.Word.Cell> obiekt reprezentuje jedną komórkę w tabeli. Odwołujesz się do każdej komórki według jej lokalizacji w tabeli. Ten przykład odnosi się do komórki znajdującej się w pierwszym wierszu i pierwszej kolumnie tabeli; dodaje tekst do komórki; i stosuje formatowanie.
@@ -44,7 +44,7 @@ ms.locfileid: "96848017"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#97](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#97)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#97](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#97)]
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: Programowane tworzenie tabel programu Word](../vsto/how-to-programmatically-create-word-tables.md)
 - [Instrukcje: programowe Dodawanie wierszy i kolumn do tabel programu Word](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)
 - [Instrukcje: Programowane Wypełnianie tabel programu Word przy użyciu właściwości dokumentu](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)

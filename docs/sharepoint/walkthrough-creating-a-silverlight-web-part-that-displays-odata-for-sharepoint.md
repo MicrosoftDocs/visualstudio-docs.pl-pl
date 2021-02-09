@@ -12,15 +12,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fdfd510aaea8d09ac20546344f4bbba18bd5f99b
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: ee35ecc9cfa49f445e93677df9d2917150bc1e74
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914793"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847833"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Przewodnik: Tworzenie składnika Web Part programu Silverlight wyświetlającego Protokół OData dla programu SharePoint
   Program SharePoint 2010 udostępnia swoje dane listy za pomocą protokołu OData. W programie SharePoint usługa OData jest implementowana przez usługę RESTful Service ListData. svc. W tym instruktażu pokazano, jak utworzyć składnik Web Part programu SharePoint, który jest hostem aplikacji Silverlight. Aplikacja Silverlight wyświetla informacje o liście anonsów programu SharePoint za pomocą ListData. svc. Aby uzyskać więcej informacji, zobacz [Interfejs REST programu SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ff521587(v=office.14)) i [Open Data Protocol](https://www.odata.org/).

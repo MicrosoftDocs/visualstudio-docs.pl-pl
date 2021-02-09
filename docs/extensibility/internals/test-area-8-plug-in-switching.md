@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 01370792-b5da-4e46-9ce2-7dd326587141
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6c3a25aa9312073d3ce4a60752d41585fcee7b3
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 50cbf92b8214e605976aec58aaea984276ca8cc6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487650"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99848211"
 ---
 # <a name="test-area-8-plug-in-switching"></a>Obszar testowy 8: przełączanie wtyczki
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Zintegrowane środowisko programistyczne (IDE) ma interfejs użytkownika, aby zmienić bieżącą wtyczkę kontroli źródła. Ten obszar testowy zawiera przypadki testowe dla procesu wybierania wtyczki, która ma być używana na potrzeby kontroli źródła rozwiązania.
@@ -54,5 +54,5 @@ ms.locfileid: "97487650"
 |----------------------------------| - | - |
 | Zmiana wtyczki dla rozwiązania | 1. Wybierz wtyczkę w obszarze Testuj jako bieżący (  ->  **Opcje** narzędzi  ->    ->  **wybór wtyczki** kontroli źródła).<br />2. Utwórz nowy projekt i rozwiązanie.<br />3. Dodaj rozwiązanie do kontroli źródła.<br />4. Usuń powiązanie rozwiązania z kontroli źródła (przy użyciu okna dialogowego **Zmień kontrolę źródła** ).<br />5. Wybierz inną wtyczkę (na przykład [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] ).<br />6. Załaduj ponownie rozwiązanie z dysku w przypadku jego niezaładowania.<br />7. Dodaj rozwiązanie do kontroli źródła.<br />8. Usuń powiązanie rozwiązania z kontroli źródła (przy użyciu okna dialogowego **Zmień kontrolę źródła** ).<br />9. Wybierz wtyczkę ponownie w obszarze Testuj.<br />10. Załaduj ponownie rozwiązanie z dysku, jeśli zostało zwolnione.<br />11. Powiąż rozwiązanie z oryginalną lokalizacją (przy użyciu okna dialogowego **Zmień kontrolę źródła** ). | Rozwiązanie jest dodawane do kontroli źródła przy użyciu wybranej wtyczki. |
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Przewodnik testowania wtyczek kontroli kodu źródłowego](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

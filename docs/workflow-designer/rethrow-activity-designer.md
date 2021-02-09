@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 9cfa2eda-395f-4cf3-9154-83fadd4f7452
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9195fc95ac905213b048aa16882ea6584adacd33
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 2e3615c73583e8c5c313d23fd5f9aa6d9fcd5ff4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434119"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847326"
 ---
 # <a name="rethrow-activity-designer"></a>Rethrow, projektant działań
 

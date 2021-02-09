@@ -7,15 +7,15 @@ ms.topic: reference
 ms.assetid: 7eb384f5-f961-400b-b151-115d92addc6a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: abf11966f029d6c4ec66ce295332889a9d74c359
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: bde7081f69a4f92092ac6f3c5b0e8b8059e17a1c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348411"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99849752"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Podstawowe reguły zasad projektowania dla zarządzanego kodu
 

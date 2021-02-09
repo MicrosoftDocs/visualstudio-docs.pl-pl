@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: b6a5e8b2-0ae1-4fc3-812d-09d40051b435
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9dd2d3923776cc0666a3efd12a32fc9e4e8735a0
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: eb0c688e40df5247574e7ba87b4e04d5cfaba2ce
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94973614"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846897"
 ---
 # <a name="create-custom-editors-and-designers"></a>Tworzenie niestandardowych edytorów i projektantów
 
@@ -104,6 +104,6 @@ Wyjaśnia sposób implementacji usługi językowej.
 [Rozszerzając inne części programu Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)\
 Wyjaśnia, jak utworzyć elementy interfejsu użytkownika, które pasują do pozostałej części [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>

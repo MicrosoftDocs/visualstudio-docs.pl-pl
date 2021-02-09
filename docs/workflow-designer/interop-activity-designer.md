@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 800a3403-ba86-41c4-8de1-c4fee9703eb1
 author: jillre
 ms.author: jillfra
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a45187f01469f568a98098a8470ad62f67307a6
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: edf4658743bb719c1c23f93b2d1d3cc33afdbaba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437778"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847391"
 ---
 # <a name="interop-activity-designer"></a>Interop, projektant działań
 
@@ -29,7 +29,7 @@ Projektant działań **międzyoperacyjnych** służy do tworzenia i konfigurowan
 
 ### <a name="use-the-interop-activity-designer"></a>Korzystanie z projektanta działań międzyoperacyjnych
 
-Projektanta działań **międzyoperacyjnych** można znaleźć w kategorii **migracja** **przybornika** , do którego jest uzyskiwany dostęp, klikając kartę **Przybornik** . Alternatywnie możesz wybrać **Przybornik** z menu **Widok** lub nacisnąć **klawisze CTRL** + **Alt** + **X**.
+Projektanta działań **międzyoperacyjnych** można znaleźć w kategorii **migracja** **przybornika**, do którego jest uzyskiwany dostęp, klikając kartę **Przybornik** . Alternatywnie możesz wybrać **Przybornik** z menu **Widok** lub nacisnąć **klawisze CTRL** + **Alt** + **X**.
 
 Kategoria [migracji](../workflow-designer/migration-activity-designers.md) , która zawiera <xref:System.Activities.Statements.Interop> działanie, pojawia się tylko w **przyborniku** , jeśli projekt jest przeznaczony .NET Framework 4 (pełny) lub nowszy. W razie potrzeby można zmienić wersję platformy, która jest przeznaczona dla projektu.
 

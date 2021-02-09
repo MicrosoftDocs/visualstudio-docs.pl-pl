@@ -2,23 +2,23 @@
 title: Konstruowanie ciągów filtru dla projektanta tabel | Microsoft Docs
 description: Konstruowanie ciągów filtru dla projektanta tabel
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: 288e4256a472eb7bbc692758ad81df68be507676
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: cdfcacf38239e896687a236624bb167573f4bd1f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901924"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846208"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>Konstruowanie ciągów filtrów dla projektanta tabel
 ## <a name="overview"></a>Omówienie
-Aby filtrować dane w tabeli platformy Azure, która jest wyświetlana w **Projektancie tabel** programu Visual Studio, należy utworzyć ciąg filtru i wprowadzić go w polu filtru. Składnia ciągu filtru jest definiowana przez Usługi danych programu WCF i jest podobna do klauzuli SQL WHERE, ale jest wysyłana do Table service za pośrednictwem żądania HTTP. **Projektant tabel** obsługuje odpowiednie kodowanie, dlatego w celu filtrowania według żądanej wartości właściwości należy wprowadzić tylko nazwę właściwości, operator porównania, wartość kryteriów i opcjonalnie operator logiczny w polu filtru. Nie trzeba dołączać opcji zapytania $filter tak samo, jak w przypadku konstruowania adresu URL w celu zbadania tabeli za pośrednictwem [dokumentacji interfejsu API REST usług Storage](/rest/api/storageservices/).
+Aby filtrować dane w tabeli platformy Azure, która jest wyświetlana w **Projektancie tabel** programu Visual Studio, należy utworzyć ciąg filtru i wprowadzić go w polu filtru. Składnia ciągu filtru jest definiowana przez WCF Data Services i jest podobna do klauzuli SQL WHERE, ale jest wysyłana do Table service za pośrednictwem żądania HTTP. **Projektant tabel** obsługuje odpowiednie kodowanie, dlatego w celu filtrowania według żądanej wartości właściwości należy wprowadzić tylko nazwę właściwości, operator porównania, wartość kryteriów i opcjonalnie operator logiczny w polu filtru. Nie trzeba dołączać opcji zapytania $filter tak samo, jak w przypadku konstruowania adresu URL w celu zbadania tabeli za pośrednictwem [dokumentacji interfejsu API REST usług Storage](/rest/api/storageservices/).
 
-Usługi danych programu WCF opierają się na [protokole Open Data Protocol](https://www.odata.org/) (OData). Aby uzyskać szczegółowe informacje na temat opcji filtrowania systemu kwerend (**$Filter**), zobacz [specyfikację identyfikatorów URI usługi OData](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
+WCF Data Services opierają się na [protokole Open Data Protocol](https://www.odata.org/) (OData). Aby uzyskać szczegółowe informacje na temat opcji filtrowania systemu kwerend (**$Filter**), zobacz [specyfikację identyfikatorów URI usługi OData](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
 
 ## <a name="comparison-operators"></a>Operatory porównania
 Następujące operatory logiczne są obsługiwane dla wszystkich typów właściwości:
@@ -31,7 +31,7 @@ Następujące operatory logiczne są obsługiwane dla wszystkich typów właści
 | lt |Mniejsze niż |Cena lt 20 |
 | le |Mniejsze niż lub równe |Cena Le 100 |
 | ne |Nie równa się |Miasto (Londyn) |
-| oraz |oraz |Cena Le 200 i cena gt 3,5 |
+| oraz |And |Cena Le 200 i cena gt 3,5 |
 | lub |Lub |Cena Le 3,5 lub cena gt 200 |
 | not |Not |nie IsAvailable |
 

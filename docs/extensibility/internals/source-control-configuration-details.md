@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: adbee9fc-7a2e-4abe-a3b8-e6615bcd797f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: efed4592bfa0b697d66f377430cc5998d3e9e5d3
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: b9a3a2f33fcbb94d1e863daf69b8561f7bad4f2a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875508"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846507"
 ---
 # <a name="source-control-configuration-details"></a>Szczegóły konfiguracji kontroli kodu źródłowego
 W celu zaimplementowania kontroli źródła należy prawidłowo skonfigurować system lub Edytor projektu, aby wykonać następujące czynności:

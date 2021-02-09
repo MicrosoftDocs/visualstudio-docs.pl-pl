@@ -22,15 +22,15 @@ helpviewer_keywords:
 - task panes [Office development in Visual Studio], synchronizing with Ribbon button
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7453d221cf57188a2c2f589492e4df59817f2cd9
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 9ac8c4ef96a421ece6c0591d4340d570d71c08e3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526089"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846286"
 ---
 # <a name="walkthrough-synchronize-a-custom-task-pane-with-a-ribbon-button"></a>Przewodnik: synchronizowanie niestandardowego okienka zadań z przyciskiem wstążki
   W tym instruktażu pokazano, jak utworzyć niestandardowe okienko zadań, które użytkownicy mogą ukryć lub wyświetlić, klikając przycisk przełączania na Wstążce. Należy zawsze utworzyć element interfejsu użytkownika (UI), taki jak przycisk, który użytkownicy mogą kliknąć, aby wyświetlić lub ukryć niestandardowe okienko zadań, ponieważ Microsoft Office aplikacje nie zapewniają użytkownikom domyślnego sposobu wyświetlania lub ukrywania niestandardowych okienek zadań.
