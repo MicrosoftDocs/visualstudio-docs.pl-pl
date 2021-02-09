@@ -7,15 +7,15 @@ dev_langs:
 - C++
 author: corob-msft
 ms.author: corob
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ba78ff7d38d993394072aa9dd18a7a8fa8cbb9d
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 1c699c835c6a53ec346dadb8bbbbf787aacc9206
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668706"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926028"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Rozszerzalność systemu projektów Visual Studio C++ i integracja zestawu narzędzi
 
@@ -556,7 +556,7 @@ Usługa debugowania w programie Visual Studio obsługuje rozszerzalność dla ap
 
 Aby określić aparaty debugowania i inne właściwości sesji debugowania, należy zaimplementować składnik MEF [uruchamiania debugowania](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/extensibility/IDebugLaunchProvider.md) i dodać `debugger` regułę. Aby zapoznać się z przykładem, zobacz `$(VCTargetsPath)` \\ \\ \_ lokalny \_ plikwindows.xml debugera 1033.
 
-### <a name="deploy"></a>Wdrażanie
+### <a name="deploy"></a>Wdróż
 
 projekty. vcxproj używają rozszerzalności systemu projektu programu Visual Studio dla [dostawców wdrażania](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/extensibility/IDeployProvider.md).
 
@@ -667,7 +667,7 @@ Jeśli żaden z tych warunków nie zostanie wykryty, tworzona jest pamięć podr
 
 Aby uzyskać informacje na temat sposobu tworzenia plików VSIX, zobacz [wysyłanie rozszerzeń programu Visual Studio](../extensibility/shipping-visual-studio-extensions.md). Aby uzyskać informacje na temat dodawania plików do specjalnych lokalizacji instalacji, na przykład do dodawania plików w obszarze `$(VCTargetsPath)` , zobacz [Instalowanie poza folderem rozszerzeń](../extensibility/set-install-root.md).
 
-## <a name="additional-resources"></a>Zasoby dodatkowe
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
 Program Microsoft Build System ([MSBuild](../msbuild/msbuild.md)) udostępnia aparat kompilacji i rozszerzalny format oparty na formacie XML dla plików projektu. Należy zapoznać się z podstawowymi [pojęciami programu MSBuild](../msbuild/msbuild-concepts.md) i sposobem, w jaki program [MSBuild dla Visual C++](/cpp/build/reference/msbuild-visual-cpp-overview) działa, aby zwiększyć Visual C++ system projektu.
 

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - user controls [SharePoint development in Visual Studio], adding
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cbaeaff14d365f41bff73c29e678a08130b03dc0
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 43386f3ba450058d6aaf8ab180e331d2f303a235
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903679"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925581"
 ---
 # <a name="how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part"></a>Instrukcje: Tworzenie kontrolki użytkownika dla strony aplikacji lub składnika sieci Web programu SharePoint
   Można tworzyć niestandardowe kontrolki użytkownika, które dostarczają niestandardowych funkcjonalności dla rozwiązania SharePoint oraz można używać tych funkcjonalności ponownie w obrębie projektu. Można dołączyć kontrolki użytkownika do części sieci lub strony aplikacji, dodać inne kontrolki ASP.NET oraz SharePoint oraz zdefiniować właściwości o metody dla kontrolki. Aby uzyskać więcej informacji dotyczących kontrolek użytkownika, zobacz [Tworzenie kontrolek wielokrotnego użytku dla części sieci Web lub stron aplikacji](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md) oraz kontrolek [serwera w programie SharePoint](https://blogs.msdn.microsoft.com/kaevans/2011/04/28/user-controls-and-server-controls-in-sharepoint/).
@@ -55,7 +55,7 @@ ms.locfileid: "94903679"
 
      Ten plik jest wyświetlany w **Eksplorator rozwiązań** pod plikiem kontrolnym użytkownika i ma rozszerzenie *. cs* lub *. vb* , w zależności od języka projektu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Tworzenie kontrolek wielokrotnego użytku dla części sieci Web lub stron aplikacji](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)
 - [Tworzenie stron aplikacji dla programu SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)
 - [Tworzenie składników Web Part dla programu SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)

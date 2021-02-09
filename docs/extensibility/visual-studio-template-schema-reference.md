@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 6f74a2d5-3811-43d6-8b10-eb5823ad8995
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9402efcc6c08343f1661945ae1701f7be7909bab
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 458f3245517dd874a086932c65806978b5a1cf85
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903419"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925875"
 ---
 # <a name="visual-studio-template-schema-reference"></a>Odwołanie do schematu szablonu programu Visual Studio
 Ta sekcja zawiera informacje o elementach XML w plikach *. vstemplate* , które są plikami, które przechowują metadane szablonów projektu, szablonów elementów i zestawów początkowych.
@@ -82,6 +82,6 @@ Ta sekcja zawiera informacje o elementach XML w plikach *. vstemplate* , które 
 |[WizardData](../extensibility/wizarddata-element-visual-studio-templates.md)|--|Nazwa|
 |[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Zestaw<br /><br /> FullClassName|--|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)

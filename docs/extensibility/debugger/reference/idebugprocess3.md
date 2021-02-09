@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7bd6b952-cf34-4e66-b8f6-d472dac3748f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b423ee2cb95ad55296c452cfdc4b891ee4cd26a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6199c959a7186a1c10d6efdc30bb0763941c347a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723547"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926114"
 ---
 # <a name="idebugprocess3"></a>IDebugProcess3
 Ten interfejs reprezentuje proces uruchomiony i jego programy. Ten interfejs istnieje jako zamiennik do kilku metod w interfejsie [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) . Zapewnia kontrolę nad wszystkimi programami w procesie.
@@ -45,7 +45,7 @@ IDebugProcess3 : IDebugProcess2
 |Metoda|Opis|
 |------------|-----------------|
 |[Kontynuuj](../../../extensibility/debugger/reference/idebugprocess3-continue.md)|Kontynuuje wykonywanie operacji lub przechodzenie przez proces.|
-|[Realizacja](../../../extensibility/debugger/reference/idebugprocess3-execute.md)|Rozpoczyna wykonywanie procesu.|
+|[Wykonaj polecenie](../../../extensibility/debugger/reference/idebugprocess3-execute.md)|Rozpoczyna wykonywanie procesu.|
 |[Krok](../../../extensibility/debugger/reference/idebugprocess3-step.md)|Kroki do przodu jednej instrukcji lub instrukcji w procesie.|
 |[GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)|Pobiera przyczynę uruchomienia procesu na potrzeby debugowania.|
 |[SetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-sethostingprocesslanguage.md)|Ustawia język hostingu, aby aparat debugowania mógł załadować odpowiednie ewaluatora wyrażeń.|

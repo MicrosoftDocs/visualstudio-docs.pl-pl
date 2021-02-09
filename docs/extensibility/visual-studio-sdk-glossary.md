@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b64d432b-c39b-4904-ad18-3c3218b6e3aa
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec8f6508c6b387ec51872f6e5b59b3f72a57d432
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 707526daaafdbc7e99c11c5b7fb8edf9fdbccc03
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863909"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925914"
 ---
 # <a name="visual-studio-sdk-glossary"></a>Słownik SDK programu Visual Studio
 Ten słownik zawiera definicje terminów używanych w [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] dokumentacji programu.

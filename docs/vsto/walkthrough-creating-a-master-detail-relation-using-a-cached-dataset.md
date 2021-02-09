@@ -12,15 +12,15 @@ helpviewer_keywords:
 - data caching [Office development in Visual Studio], Master/Detail Relation
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: de7bf3ba34a2a7dd3e7db9ff549e4a839800d524
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 843718ea49ae7df7d34775283ce8120f077b0a0f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524871"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925504"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>Wskazówki: Tworzenie relacji głównej szczegółów przy użyciu buforowanego zestawu danych
   W tym instruktażu pokazano, jak utworzyć relację wzorzec/szczegóły w arkuszu i buforować dane, aby umożliwić korzystanie z rozwiązania w trybie offline.

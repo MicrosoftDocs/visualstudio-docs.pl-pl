@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 3abbe495-cbbc-4982-a809-38bda34553a7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8200d5d0dbb18240f67214abecca4d066ce6270
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 5afe5df8808ee8b0c8ad13c494e58aea903fff89
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863948"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926054"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Wskazówki dotyczące interfejsu użytkownika w programie Visual Studio
 Postępuj zgodnie z instrukcjami dotyczącymi środowiska użytkownika programu Visual Studio, jeśli projektujesz nowe funkcje programu Visual Studio. Te wytyczne zawierają informacje o typowych modelach użytkowników i wzorcach interakcji, dzięki którym projektanci nowych interfejsów użytkownika mogą tworzyć środowiska użytkownika, które są bezproblemowe i spójne w środowisku programistycznym.

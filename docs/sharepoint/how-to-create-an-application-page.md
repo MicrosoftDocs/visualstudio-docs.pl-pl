@@ -12,15 +12,15 @@ helpviewer_keywords:
 - application pages [SharePoint development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: df52ca75ef99fe98158cb5f874e59fe4ee0c47b4
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 74e7aab4cbc012afbf045672dbf4af248ada4c61
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94849860"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925628"
 ---
 # <a name="how-to-create-an-application-page"></a>Instrukcje: Tworzenie strony aplikacji
   Można utworzyć stronę sieci Web ASP.NET dla jednej lub kilku witryn programu SharePoint. W programie SharePoint te strony są nazywane stronami aplikacji. W przeciwieństwie do strony witryny, Strona aplikacji zawiera kod, który jest uruchamiany za stroną. Aby uzyskać więcej informacji, zobacz [Tworzenie stron aplikacji dla programu SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).
@@ -49,6 +49,6 @@ ms.locfileid: "94849860"
 
      Plik kodu jest wyświetlany, jeśli rozszerzasz węzeł pliku stronicowania ASP.NET i ma rozszerzenie *. cs* lub *. vb* , w zależności od języka projektu. Aby zapoznać się z kompleksowym przykładem tworzenia strony aplikacji, zobacz [Przewodnik: Tworzenie strony aplikacji SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Tworzenie stron aplikacji dla programu SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)
 - [Przewodnik: Tworzenie strony aplikacji SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)

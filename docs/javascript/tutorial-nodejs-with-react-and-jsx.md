@@ -7,23 +7,23 @@ ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 08e04407c5fc25a2835bd3209ffcd60fdc86d0b1
-ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
+ms.openlocfilehash: 852bfad102c4ae34bee9528009e3d4b2dd8c7384
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97815779"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925727"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Samouczek: Tworzenie Node.js i reagowanie aplikacji w programie Visual Studio
 
 Program Visual Studio umożliwia łatwe tworzenie projektu Node.js i korzystanie z technologii IntelliSense oraz innych wbudowanych funkcji, które obsługują Node.js. W tym samouczku dla programu Visual Studio utworzysz projekt aplikacji sieci Web Node.js na podstawie szablonu programu Visual Studio. Następnie utworzysz prostą aplikację przy użyciu funkcji reagowania.
 
-Ten samouczek zawiera informacje na temat wykonywania następujących czynności:
+Z tego samouczka dowiesz się, jak wykonywać następujące czynności:
 > [!div class="checklist"]
 > * Tworzenie projektu platformy Node.js
 > * Dodaj pakiety npm
@@ -31,7 +31,7 @@ Ten samouczek zawiera informacje na temat wykonywania następujących czynności
 > * JSX transsterty
 > * Dołącz debuger
 
-## <a name="before-you-begin"></a>Przed rozpoczęciem
+## <a name="before-you-begin"></a>Zanim rozpoczniesz
 
 Oto krótkie często zadawane pytania, aby wprowadzić pewne kluczowe pojęcia.
 
