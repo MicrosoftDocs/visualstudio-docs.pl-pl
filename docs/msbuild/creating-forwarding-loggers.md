@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 3aebf9c8-b62c-4cb2-b2d6-8cdfcd369a24
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 25f8a876ddd4c5c222b608dcea51f98816679181
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 0ffe175d9ea73640cae1197fe91656d3565525f6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796579"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901357"
 ---
 # <a name="create-forwarding-loggers"></a>Utwórz rejestratory przekazywania
 
@@ -38,13 +38,13 @@ Rejestratory przesyłania dalej zwiększają efektywność rejestrowania, umożl
 
 ## <a name="specify-a-forwarding-logger"></a>Określ Rejestrator przekazujący
 
- Po skompilowaniu rejestratora przekazywania do zestawu, należy poinformować program MSBuild, aby używał go podczas kompilacji. W tym celu należy użyć `-FileLogger` parametrów, `-FileLoggerParameters` , i `-DistributedFileLogger` razem z *MSBuild.exe* . `-FileLogger`Przełącznik informuje *MSBuild.exe* , że Rejestrator jest bezpośrednio dołączony. `-DistributedFileLogger`Przełącznik oznacza, że istnieje plik dziennika na węzeł. Aby ustawić parametry dla rejestratora przekazywania, użyj `-FileLoggerParameters` przełącznika. Aby uzyskać więcej informacji na temat tych i innych przełączników *MSBuild.exe* , zobacz [informacje dotyczące wiersza polecenia](../msbuild/msbuild-command-line-reference.md).
+ Po skompilowaniu rejestratora przekazywania do zestawu, należy poinformować program MSBuild, aby używał go podczas kompilacji. W tym celu należy użyć `-FileLogger` parametrów, `-FileLoggerParameters` , i `-DistributedFileLogger` razem z *MSBuild.exe*. `-FileLogger`Przełącznik informuje *MSBuild.exe* , że Rejestrator jest bezpośrednio dołączony. `-DistributedFileLogger`Przełącznik oznacza, że istnieje plik dziennika na węzeł. Aby ustawić parametry dla rejestratora przekazywania, użyj `-FileLoggerParameters` przełącznika. Aby uzyskać więcej informacji na temat tych i innych przełączników *MSBuild.exe* , zobacz [informacje dotyczące wiersza polecenia](../msbuild/msbuild-command-line-reference.md).
 
 ## <a name="multi-processor-aware-loggers"></a>Rejestratory obsługujące wiele procesorów
 
  Podczas kompilowania projektu w systemie wieloprocesorowym komunikaty kompilacji z poszczególnych procesorów nie są automatycznie przeplatane w ujednoliconej sekwencji. Zamiast tego należy określić priorytet grupowania komunikatów przy użyciu <xref:Microsoft.Build.Framework.BuildEventContext> klasy dołączonej do każdej wiadomości. Aby uzyskać więcej informacji na temat tworzenia wielu procesorów, zobacz [Rejestrowanie w środowisku wieloprocesorowym](../msbuild/logging-in-a-multi-processor-environment.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [Rejestratory kompilacji](../msbuild/build-loggers.md)

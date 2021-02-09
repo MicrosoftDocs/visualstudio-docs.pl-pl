@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 2ace88c1-d757-40a7-8158-c1d3f5ff0511
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f13293a6967456b153d14464b65182153eca2549
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 3406a5f61c9a4aa1c9e2a3c6388741c3ae0fa0f0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796046"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901451"
 ---
 # <a name="createcsharpmanifestresourcename-task"></a>CreateCSharpManifestResourceName — zadanie
 
@@ -47,7 +47,7 @@ Tworzy nazwę manifestu w stylu C# na podstawie danej nazwy pliku *resx* lub inn
 
  Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasy, która sama dziedziczy z <xref:Microsoft.Build.Utilities.Task> klasy. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Zadania](../msbuild/msbuild-tasks.md)
 - [Dokumentacja zadań](../msbuild/msbuild-task-reference.md)
