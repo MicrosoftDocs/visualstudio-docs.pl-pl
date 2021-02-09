@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 52fca002-a9ef-43b1-9192-afbe7bb59ad4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3b27be0850755a1a2808c8c5c758a3ad59b41d7e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9743b03af9bf795d5f058a14e3f0d5981657e461
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723614"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915263"
 ---
 # <a name="idebugprocess3gethostingprocesslanguage"></a>IDebugProcess3::GetHostingProcessLanguage
 Ta metoda zwraca `GUID` reprezentowanie języka tego procesu jako zestawu przez wywołanie [SetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-sethostingprocesslanguage.md).
@@ -28,8 +28,8 @@ Ta metoda zwraca `GUID` reprezentowanie języka tego procesu jako zestawu przez 
 ## <a name="syntax"></a>Składnia
 
 ```cpp
-HRESULT GetHostingProcessLanguage(
-   GUID* pguidLang
+HRESULT GetHostingProcessLanguage(
+   GUID* pguidLang
 );
 ```
 
