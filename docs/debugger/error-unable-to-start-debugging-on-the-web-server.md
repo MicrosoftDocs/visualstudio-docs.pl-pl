@@ -23,15 +23,15 @@ helpviewer_keywords:
 - remote debugging, errors
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a0aa657abefa0638e62039cae8b6d15a33fdf51
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 94dcfdc05f2d852e1a433067b0a574444632195d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851427"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870886"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Błąd: Nie można rozpocząć debugowania na serwerze sieci Web
 
@@ -166,5 +166,5 @@ Jeśli konfiguracja usług IIS nie powoduje problemu, spróbuj wykonać następu
 
     Jeśli nie możesz pobrać aplikacji z debugerem, spróbuj utworzyć podstawową aplikację ASP.NET lokalnie na serwerze, a następnie spróbuj debugować podstawową aplikację. (Możesz chcieć użyć domyślnego szablonu MVC ASP.NET). Jeśli możesz debugować podstawową aplikację, która może pomóc w określeniu, czym się różnią między obiema konfiguracjami. Poszukaj różnic w ustawieniach w pliku web.config, takich jak reguły ponownego zapisywania adresów URL.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Debugowanie aplikacji internetowych: Błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

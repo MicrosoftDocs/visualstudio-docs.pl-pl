@@ -9,15 +9,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 90cd775f18dd505d2f734a8d337daadfd9f0dd7b
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 6903cba8d048d5ed2969d5aa7436fc6eca17561e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851505"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870810"
 ---
 # <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Błąd: nie masz uprawnień do sprawdzania tożsamości procesu&#39;s
 Nie masz uprawnień do sprawdzenia tożsamości procesu. Może to być spowodowane konfiguracją systemu.
@@ -34,7 +34,7 @@ Nie masz uprawnień do sprawdzenia tożsamości procesu. Może to być spowodowa
 
 4. W oknie Zarządzanie komputerem rozwiń węzeł **usługi i aplikacje** .
 
-5. W obszarze **usługi i aplikacje**kliknij pozycję **usługi**.
+5. W obszarze **usługi i aplikacje** kliknij pozycję **usługi**.
 
      W okienku po prawej stronie zostanie wyświetlona lista usług.
 
@@ -58,9 +58,9 @@ Nie masz uprawnień do sprawdzenia tożsamości procesu. Może to być spowodowa
 
 3. Kliknij pozycję **zdalne**.
 
-4. W obszarze **pulpit zdalny**wybierz opcję **zezwól użytkownikom na zdalne nawiązywanie połączenia z tym komputerem**.
+4. W obszarze **pulpit zdalny** wybierz opcję **zezwól użytkownikom na zdalne nawiązywanie połączenia z tym komputerem**.
 
 5. Kliknij przycisk **OK**.
 
-## <a name="see-also"></a>Zobacz także
-- [Błędy związane z debugowaniem zdalnym i rozwiązywanie problemów](../debugger/remote-debugging-errors-and-troubleshooting.md)
+## <a name="see-also"></a>Zobacz też
+- [Błędy debugowania zdalnego i rozwiązywanie problemów](../debugger/remote-debugging-errors-and-troubleshooting.md)

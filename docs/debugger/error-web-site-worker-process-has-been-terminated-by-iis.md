@@ -11,15 +11,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f5991bf0b14cf4952303dba599ad47e4c8fd27a9
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: cf7832d71ab86c6dab973a07dbc46217274cb83b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852416"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870899"
 ---
 # <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>Błąd: proces roboczy witryny sieci Web został zakończony przez usługę IIS
 Debuger zatrzymał wykonywanie kodu w witrynie sieci Web. Spowodowało to założenie, że proces roboczy przestanie odpowiadać na Internet Information Services (IIS). W związku z tym usługi IIS zakończyły proces roboczy.
@@ -32,7 +32,7 @@ Debuger zatrzymał wykonywanie kodu w witrynie sieci Web. Spowodowało to zało�
 
    1. Kliknij przycisk **Start**, a następnie wybierz pozycję **Panel sterowania**.
 
-   2. W **Panelu sterowania**wybierz opcję **Przełącz do widoku klasycznego**, w razie potrzeby, a następnie kliknij dwukrotnie ikonę **Narzędzia administracyjne**.
+   2. W **Panelu sterowania** wybierz opcję **Przełącz do widoku klasycznego**, w razie potrzeby, a następnie kliknij dwukrotnie ikonę **Narzędzia administracyjne**.
 
 2. W oknie **Narzędzia administracyjne** kliknij dwukrotnie pozycję **Menedżer Internet Information Services (IIS)**.
 
@@ -56,5 +56,5 @@ Debuger zatrzymał wykonywanie kodu w witrynie sieci Web. Spowodowało to zało�
 
 8. Zamknij Menedżera usług IIS i okno **Narzędzia administracyjne** .
 
-## <a name="see-also"></a>Zobacz także
-- [Błędy związane z debugowaniem zdalnym i rozwiązywanie problemów](../debugger/remote-debugging-errors-and-troubleshooting.md)
+## <a name="see-also"></a>Zobacz też
+- [Błędy debugowania zdalnego i rozwiązywanie problemów](../debugger/remote-debugging-errors-and-troubleshooting.md)

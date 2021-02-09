@@ -6,15 +6,15 @@ f1_keywords:
 - vs.debug.error.unsafe_func_eval_abort
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 256b7858ed5714d716b31fa28c8cd463b96dbb8a
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 1f6cae3ffb692161deb0b162a6432efe90f12bf3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852748"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871653"
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Błąd: szacowanie &#39;funkcji&#39; przekroczony limit czasu i wymaganie przerwania w sposób niebezpieczny
 
@@ -44,8 +44,8 @@ Komunikat o błędzie informuje o nazwie funkcji, którą debuger próbował wyw
 
 ### <a name="solution-3-disable-all-implicit-evaluation"></a>#3 rozwiązania: Wyłącz wszystkie niejawne oceny
 
-Jeśli poprzednie rozwiązania nie rozwiążą problemu, przejdź do **Tools**  >  **opcji**narzędzia, a następnie usuń zaznaczenie pola **Debuguj**  >  **Ogólne**  >  **Włącz Obliczanie właściwości i inne niejawne wywołania funkcji**. Spowoduje to wyłączenie najbardziej niejawnych ocen funkcji i powinno rozwiązać problem.
+Jeśli poprzednie rozwiązania nie rozwiążą problemu, przejdź do   >  **opcji** narzędzia, a następnie usuń zaznaczenie pola **Debuguj**  >  **Ogólne**  >  **Włącz Obliczanie właściwości i inne niejawne wywołania funkcji**. Spowoduje to wyłączenie najbardziej niejawnych ocen funkcji i powinno rozwiązać problem.
 
 ### <a name="solution-4-enable-managed-compatibility-mode"></a>#4 rozwiązania: Włącz tryb zgodności zarządzanej
 
-Jeśli przełączysz się do starszego aparatu debugowania, możesz wyeliminować ten błąd. Przejdź do **Tools**  >  **opcji**narzędzia, a następnie wybierz ustawienie **debugowanie**  >  **Ogólne**  >  **Użyj zarządzanego trybu zgodności**. Aby uzyskać więcej informacji, zobacz [Ogólne opcje debugowania](../debugger/general-debugging-options-dialog-box.md).
+Jeśli przełączysz się do starszego aparatu debugowania, możesz wyeliminować ten błąd. Przejdź do   >  **opcji** narzędzia, a następnie wybierz ustawienie **debugowanie**  >  **Ogólne**  >  **Użyj zarządzanego trybu zgodności**. Aby uzyskać więcej informacji, zobacz [Ogólne opcje debugowania](../debugger/general-debugging-options-dialog-box.md).

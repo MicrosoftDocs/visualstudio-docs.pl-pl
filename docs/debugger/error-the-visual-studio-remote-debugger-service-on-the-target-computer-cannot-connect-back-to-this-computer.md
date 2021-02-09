@@ -13,15 +13,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e879fdc1be2eba309258dd64b3c9d83639eb05f7
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: ef556e19946789abb5805727ccc42c1a9230d9af
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851076"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871263"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Błąd: Usługa zdalnego debugera Visual Studio na komputerze docelowym nie może połączyć się ponownie z tym komputerem
 Ten błąd oznacza, że usługa zdalnego debugera jest uruchomiona w ramach konta użytkownika, którego nie można uwierzytelnić, gdy próbuje nawiązać połączenie z komputerem, na którym odbywa się debugowanie. Ten błąd może wystąpić, gdy debugowanie zdalne korzysta ze starszego aparatu debugowania, a zdalny debuger działa jako usługa.
@@ -35,7 +35,7 @@ Ten błąd oznacza, że usługa zdalnego debugera jest uruchomiona w ramach kont
 |Jeden lub oba komputery w grupie roboczej|Nie|Nie|Tak|
 |Komputery w różnych domenach|Nie|Nie|Tak|
 
- Ponadto:
+ Dodatkowo:
 
 - Konto, na którym uruchomiono usługę zdalny debuger programu Visual Studio, powinno być kontem administratora na komputerze zdalnym, aby można było debugować każdy proces.
 
@@ -73,6 +73,6 @@ Ten błąd oznacza, że usługa zdalnego debugera jest uruchomiona w ramach kont
 
 - Uruchom Monitor zdalnego debugowania jako aplikację zamiast usługi.
 
-## <a name="see-also"></a>Zobacz także
-- [Błędy związane z debugowaniem zdalnym i rozwiązywanie problemów](../debugger/remote-debugging-errors-and-troubleshooting.md)
+## <a name="see-also"></a>Zobacz też
+- [Błędy debugowania zdalnego i rozwiązywanie problemów](../debugger/remote-debugging-errors-and-troubleshooting.md)
 - [Debugowanie zdalne](../debugger/remote-debugging.md)

@@ -6,15 +6,15 @@ f1_keywords:
 - vs.debug.error.process_exit_during_func_eval
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 97751ae2cbc44429bc1c0fb363366faa830beb68
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 07891e5bcbcab35a4ec5652676a014b87dd32d43
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852735"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871640"
 ---
 # <a name="error-the-target-process-exited-with-code-39code39-while-evaluating-the-function-39function39"></a>Błąd: proces docelowy zakończył działanie z kodem &#39;kod&#39; podczas oceniania funkcji &#39;funkcji&#39;
 
@@ -28,7 +28,7 @@ Jednym z typowych przyczyn tego problemu jest to, że gdy debuger oblicza właś
 
 Istnieją dwa możliwe rozwiązania tego problemu.
 
-### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>#1 rozwiązania: Uniemożliwianie debugerowi wywoływania właściwości pobierającej lub metody ToString 
+### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>#1 rozwiązania: Uniemożliwianie debugerowi wywoływania właściwości pobierającej lub metody ToString 
 
 Komunikat o błędzie informuje o nazwie funkcji, którą debuger próbował wywołać. Przy użyciu nazwy funkcji można spróbować ponownie ocenić tę funkcję z okna **bezpośredniego** , aby debugować ocenę. Debugowanie jest możliwe podczas oceniania z okna **bezpośredniego** , ponieważ, w przeciwieństwie do niejawnych ocen z okna **Autokorekty/lokalne/czujki** , debuger przerwie w nieobsłużonych wyjątkach.
 
@@ -44,4 +44,4 @@ Jeśli nie można zmodyfikować tej metody, można przerwać proces docelowy z a
 
 ### <a name="solution-2-disable-all-implicit-evaluation"></a>#2 rozwiązania: Wyłącz wszystkie niejawne oceny
 
-Jeśli poprzednie rozwiązania nie rozwiążą problemu, przejdź do **Tools**  >  **opcji**narzędzia, a następnie usuń zaznaczenie pola **Debuguj**  >  **Ogólne**  >  **Włącz Obliczanie właściwości i inne niejawne wywołania funkcji**. Spowoduje to wyłączenie najbardziej niejawnych ocen funkcji i powinno rozwiązać problem.
+Jeśli poprzednie rozwiązania nie rozwiążą problemu, przejdź do   >  **opcji** narzędzia, a następnie usuń zaznaczenie pola **Debuguj**  >  **Ogólne**  >  **Włącz Obliczanie właściwości i inne niejawne wywołania funkcji**. Spowoduje to wyłączenie najbardziej niejawnych ocen funkcji i powinno rozwiązać problem.
