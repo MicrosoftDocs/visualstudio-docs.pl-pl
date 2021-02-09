@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1f0e9ac0-6dfb-461a-976c-888d82144cdb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e00751db052adeefee828829ec89309a3adba4b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c38dc023c44e0c1743fd9d35dbe65befda405f4e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730863"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919933"
 ---
 # <a name="idebugengine2"></a>IDebugEngine2
 Ten interfejs reprezentuje aparat debugowania (DE). Służy do zarządzania różnymi aspektami sesji debugowania, od tworzenia punktów przerwania do ustawiania i czyszczenia wyjątków.
@@ -61,5 +61,5 @@ IDebugEngine2 : IUnknown
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Zobacz też
-- [Wydarzenie](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+- [Zdarzenie](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
 - [GetEngine](../../../extensibility/debugger/reference/idebugenginecreateevent2-getengine.md)
