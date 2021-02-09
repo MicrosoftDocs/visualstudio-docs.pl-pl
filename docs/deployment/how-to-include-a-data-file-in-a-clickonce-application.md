@@ -15,18 +15,18 @@ helpviewer_keywords:
 ms.assetid: 89ee46ef-bc8c-4ab0-a2ac-1220f9da06fc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cb9e346022871a3aa25363aa717f1bf15a3d42a6
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 4f4b5e8fe9d17a6de9abac2681074dcfc162e9b7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349948"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900605"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Instrukcje: uwzględnianie pliku danych w aplikacji ClickOnce
-Każda [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instalowana aplikacja ma przypisany katalog danych na dysku lokalnym komputera docelowego, na którym aplikacja może zarządzać własnymi danymi. Pliki danych mogą zawierać pliki dowolnego typu: pliki tekstowe, pliki XML, a nawet pliki bazy danych programu Microsoft Access ( *mdb* ). Poniższe procedury pokazują, jak dodać plik danych dowolnego typu do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji.
+Każda [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instalowana aplikacja ma przypisany katalog danych na dysku lokalnym komputera docelowego, na którym aplikacja może zarządzać własnymi danymi. Pliki danych mogą zawierać pliki dowolnego typu: pliki tekstowe, pliki XML, a nawet pliki bazy danych programu Microsoft Access (*mdb*). Poniższe procedury pokazują, jak dodać plik danych dowolnego typu do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji.
 
 ### <a name="to-include-a-data-file-by-using-mageexe"></a>Aby dołączyć plik danych przy użyciu Mage.exe
 

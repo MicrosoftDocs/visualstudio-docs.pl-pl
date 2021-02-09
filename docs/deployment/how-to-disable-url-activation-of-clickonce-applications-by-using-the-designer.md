@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: a337a582-e67c-409a-b52e-607cd1a8fc57
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c243b0e0565c082e05fd15a1e02aa0507120e16b
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 520f9aea1dbd3d3f742293a95b4dd7bdbac62a3b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350013"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900757"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer"></a>Instrukcje: wyłączanie aktywacji adresu URL aplikacji ClickOnce przy użyciu narzędzia Projektant
 Zazwyczaj [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacja zostanie uruchomiona automatycznie po zainstalowaniu z serwera sieci Web. Ze względów bezpieczeństwa może być konieczne wyłączenie tego zachowania i poinformowanie użytkowników, aby uruchomili aplikację z menu **Start** . Poniższa procedura opisuje sposób wyłączania aktywacji adresu URL.
@@ -36,7 +36,7 @@ Zazwyczaj [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] apli
 
 #### <a name="to-disable-url-activation-for-your-application"></a>Aby wyłączyć aktywację adresów URL dla aplikacji
 
-1. Kliknij prawym przyciskiem myszy nazwę projektu w **Eksplorator rozwiązań** , a następnie kliknij pozycję **Właściwości**.
+1. Kliknij prawym przyciskiem myszy nazwę projektu w **Eksplorator rozwiązań**, a następnie kliknij pozycję **Właściwości**.
 
 2. Na stronie **Właściwości** kliknij kartę **Publikowanie** .
 

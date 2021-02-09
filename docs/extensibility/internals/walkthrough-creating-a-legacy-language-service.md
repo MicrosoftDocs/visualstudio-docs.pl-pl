@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6a5dd2c2-261b-4efd-a3f4-8fb90b73dc82
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4fcc4004542f9a566d6c6bfa820cbb8c2e1846fa
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 61f4dfd8068cc44fca97eb5e07ddbf62b21ee1f2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487936"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899916"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>Przewodnik: Tworzenie starszej wersji usługi językowej
 Korzystanie z klas języka Managed Package Framework (MPF) w celu zaimplementowania usługi językowej w programie [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] jest proste. Potrzebujesz pakietu VSPackage do hostowania usługi językowej, samej usługi językowej i analizatora dla danego języka.
@@ -132,5 +132,5 @@ Korzystanie z klas języka Managed Package Framework (MPF) w celu zaimplementowa
 
      Na przykład wpisz, `public override` Aby wyświetlić listę wszystkich metod, które mogą zostać zastąpione w tej klasie.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Implementowanie starszej wersji usługi językowej](../../extensibility/internals/implementing-a-legacy-language-service1.md)

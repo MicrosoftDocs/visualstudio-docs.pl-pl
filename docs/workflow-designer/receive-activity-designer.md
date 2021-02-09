@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: f58d3c70-944d-4bb4-90a7-e68c103caddc
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f6414d92cea867a1235d73a39b6415ab884651ec
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: ceff7d40ffd0d7c961f07dd65a8070a8f11a1b4b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434197"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899382"
 ---
 # <a name="receive-activity-designer"></a>Receive, projektant działań
 
@@ -48,7 +48,7 @@ W poniższej tabeli przedstawiono <xref:System.ServiceModel.Activities.Receive> 
 | <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> | Fałsz | Określa korelacje między <xref:System.ServiceModel.Activities.Receive> działaniami w ramach operacji usługi przepływu pracy z <xref:System.ServiceModel.MessageQuerySet> obiektem. Kliknij przycisk wielokropka obok <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> właściwości w siatce właściwości, aby otworzyć okno dialogowe **Definicja CorrelatesOn** . Aby uzyskać więcej informacji na temat korzystania z tego okna dialogowego, zobacz temat okno [dialogowe Definicja zawartości](../workflow-designer/content-definition-dialog-box.md) . |
 | <xref:System.ServiceModel.Activities.Receive.CorrelatesWith%2A> | Fałsz | Określa <xref:System.ServiceModel.Activities.CorrelationHandle> używany do kierowania komunikat do odpowiedniego wystąpienia przepływu pracy.<br /><br /> Kliknij przycisk wielokropka obok <xref:System.ServiceModel.Activities.Receive.CorrelatesWith%2A> właściwości w siatce właściwości, aby otworzyć okno dialogowe **Edytor wyrażeń** . Więcej informacji o użyciu tego okna dialogowego można znaleźć w temacie How to [: Use the Expression Editor](../workflow-designer/how-to-use-the-expression-editor.md) . |
 | <xref:System.ServiceModel.Activities.Receive.CorrelationInitializers%2A> | Fałsz | Określa kolekcję <xref:System.ServiceModel.Activities.CorrelationInitializer> obiektów, które inicjują wiele <xref:System.ServiceModel.Activities.CorrelationHandle> obiektów, które konfigurują to <xref:System.ServiceModel.Activities.Receive> działanie w ramach przepływu pracy. Kliknij przycisk wielokropka obok <xref:System.ServiceModel.Activities.Receive.CorrelationInitializers%2A> właściwości w siatce właściwości, aby otworzyć okno dialogowe **Dodawanie inicjatorów korelacji** . Aby uzyskać więcej informacji na temat korzystania z tego pola, zobacz [okno dialogowe Dodawanie CorrelationInitializers](../workflow-designer/add-correlationinitializers-dialog-box.md) . |
-| <xref:System.ServiceModel.Activities.Receive.CanCreateInstance%2A> | Fałsz | Określa wartość określającą, czy nowe wystąpienie przepływu pracy jest tworzone w celu przetworzenia komunikatu, jeśli komunikat nie jest skorelowany z istniejącym wystąpieniem przepływu pracy. Jeśli wartość jest równa **true** , zostanie utworzone nowe wystąpienie przepływu pracy w celu przetworzenia komunikatu, gdy komunikat nie jest skorelowany z istniejącym wystąpieniem przepływu pracy. |
+| <xref:System.ServiceModel.Activities.Receive.CanCreateInstance%2A> | Fałsz | Określa wartość określającą, czy nowe wystąpienie przepływu pracy jest tworzone w celu przetworzenia komunikatu, jeśli komunikat nie jest skorelowany z istniejącym wystąpieniem przepływu pracy. Jeśli wartość jest równa **true**, zostanie utworzone nowe wystąpienie przepływu pracy w celu przetworzenia komunikatu, gdy komunikat nie jest skorelowany z istniejącym wystąpieniem przepływu pracy. |
 | <xref:System.ServiceModel.Activities.Receive.KnownTypes%2A> | Fałsz | Określa kolekcję znanych typów dla operacji usługi zaimplementowanej przez to <xref:System.ServiceModel.Activities.Receive> działanie. Ta właściwość powinna być używana w połączeniu z <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> właściwością ustawioną na <xref:System.Runtime.Serialization.DataContractSerializer> . Jest on ignorowany, jeśli <xref:System.Xml.Serialization.XmlSerializer> jest używany.<br /><br /> Wybierz przycisk wielokropka obok pola **KnownTypes** w siatce właściwości, aby wyświetlić okno dialogowe **Edytor kolekcji typów** , w którym można dodać odpowiednie typy. Aby uzyskać więcej informacji na temat używania tego pola, zobacz [okno dialogowe Edytor kolekcji typów](../workflow-designer/type-collection-editor-dialog-box.md) . |
 | <xref:System.ServiceModel.Activities.Receive.ProtectionLevel%2A> | Fałsz | Określa <xref:System.Net.Security.ProtectionLevel> dla wiadomości.<br /><br /> 1.  <xref:System.Net.Security.ProtectionLevel> oznacza tylko uwierzytelnianie.<br />2.  <xref:System.Net.Security.ProtectionLevel> oznacza, że dane podpisywania mają zapewnić integralność przesyłanych danych.<br />3.  <xref:System.Net.Security.ProtectionLevel> oznacza szyfrowanie i podpisywanie danych w celu zapewnienia poufności i integralności przesyłanych danych. |
 | <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> | Fałsz | Określa typ serializatora, który ma być używany dla operacji usługi zaimplementowanej przez <xref:System.ServiceModel.Activities.Receive> działanie. Wartość domyślna to <xref:System.Runtime.Serialization.DataContractSerializer> , która serializować i deserializacji wystąpienia typu do strumienia XML lub dokumentu, który używa dostarczonego kontraktu danych. <xref:System.Xml.Serialization.XmlSerializer>Można również użyć, jeśli w kodzie XML jest wymagana większa kontrola. |

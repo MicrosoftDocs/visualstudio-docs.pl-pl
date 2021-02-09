@@ -17,18 +17,18 @@ helpviewer_keywords:
 ms.assetid: 0aee5fc1-e966-4bda-9b8f-d9997aeaa779
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5236d73bb965d4f25634ad9e61a52608c9030146
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 918cb7e60f4e3fed2beee024d51b94499b14b632
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350936"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900428"
 ---
 # <a name="how-to-specify-the-clickonce-offline-or-online-install-mode"></a>Instrukcje: Określanie trybu instalacji ClickOnce w trybie offline lub online
-`Install Mode`Dla [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji określa, czy aplikacja będzie dostępna w trybie offline, czy w trybie online. Po wybraniu **aplikacji jest dostępna tylko w trybie online** , użytkownik musi mieć dostęp do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] lokalizacji publikowania (strona sieci Web lub udział plików) w celu uruchomienia aplikacji. Po wybraniu **aplikacji jest również dostępna w trybie offline** aplikacja dodaje wpisy do menu **Start** i okno dialogowe **Dodawanie lub usuwanie programów** ; Użytkownik może uruchomić aplikację, gdy nie są połączeni.
+`Install Mode`Dla [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji określa, czy aplikacja będzie dostępna w trybie offline, czy w trybie online. Po wybraniu **aplikacji jest dostępna tylko w trybie online**, użytkownik musi mieć dostęp do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] lokalizacji publikowania (strona sieci Web lub udział plików) w celu uruchomienia aplikacji. Po wybraniu **aplikacji jest również dostępna w trybie offline** aplikacja dodaje wpisy do menu **Start** i okno dialogowe **Dodawanie lub usuwanie programów** ; Użytkownik może uruchomić aplikację, gdy nie są połączeni.
 
 `Install Mode`Można ją ustawić na stronie **Publikuj** **projektanta projektu**.
 
@@ -37,7 +37,7 @@ ms.locfileid: "94350936"
 
 ### <a name="to-make-a-clickonce-application-available-online-only"></a>Aby aplikacja ClickOnce była dostępna tylko w trybie online
 
-1. Po wybraniu projektu w **Eksplorator rozwiązań** , w menu **projekt** kliknij polecenie **Właściwości**.
+1. Po wybraniu projektu w **Eksplorator rozwiązań**, w menu **projekt** kliknij polecenie **Właściwości**.
 
 2. Kliknij kartę **Publikowanie** .
 
@@ -45,7 +45,7 @@ ms.locfileid: "94350936"
 
 ### <a name="to-make-a-clickonce-application-available-online-or-offline"></a>Aby udostępnić aplikację ClickOnce w trybie online lub offline
 
-1. Po wybraniu projektu w **Eksplorator rozwiązań** , w menu **projekt** kliknij polecenie **Właściwości**.
+1. Po wybraniu projektu w **Eksplorator rozwiązań**, w menu **projekt** kliknij polecenie **Właściwości**.
 
 2. Kliknij kartę **Publikowanie** .
 

@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], mapping XML schemas
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 427e2fcb9b881305c160b906262f251d32d70981
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 082d5fe4fbcc7f66709770c16d3c9a1a2811e60d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848225"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900930"
 ---
 # <a name="how-to-map-schemas-to-word-documents-inside-visual-studio"></a>Instrukcje: mapowanie schematów do dokumentów programu Word w programie Visual Studio
   **Ważne** Informacje przedstawione w tym temacie dotyczące programu Microsoft Word są prezentowane wyłącznie na korzyść i użytkowanie przez osoby i organizacje, które znajdują się poza Stany Zjednoczoneą i jej terytoriami, lub opracowywaniem programów, które są uruchamiane w programie Microsoft Word, które zostały licencjonowane przez firmę Microsoft przed 2010 stycznia, gdy firma Microsoft usunie implementację konkretnych funkcji związanych z niestandardowym kodem XML z programu Microsoft Word. Te informacje dotyczące programu Microsoft Word mogą nie być odczytane lub używane przez osoby lub organizacje w Stany Zjednoczone lub na terytoriach, którzy korzystają z programu lub opracowywania programów, które są uruchamiane w programie, produkty Microsoft Word, które zostały licencjonowane przez firmę Microsoft po 10 stycznia 2010; te produkty nie będą działać tak samo jak produkty licencjonowane przed tą datą lub zakupione i licencjonowane do użycia poza Stany Zjednoczone.
@@ -64,6 +64,6 @@ ms.locfileid: "96848225"
 
 10. Przeciągnij elementy z okna **struktury XML** do miejsc w dokumencie, w których chcesz utworzyć odpowiednie kontrolki.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: mapowanie schematów do arkuszy w programie Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)
 - [Schematy XML i dane w dostosowaniach na poziomie dokumentu](../vsto/xml-schemas-and-data-in-document-level-customizations.md)

@@ -11,16 +11,16 @@ helpviewer_keywords:
 - mixed mode debugging
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 0b51a41a2b2df5ac685caebbf08606ae86b4230a
-ms.sourcegitcommit: e132a870ec198fdcec289227f1a0c1c48fef070c
+ms.openlocfilehash: 4b1d250ed5306ce101fd7482b740ad57514e4f0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93344530"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899423"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Samouczek: debugowanie C# i C++ w tej samej sesji debugowania
 
@@ -42,7 +42,7 @@ W tym samouczku wykonasz następujące czynności:
 
 Musisz mieć zainstalowany program Visual Studio z następującymi obciążeniami:
 - **Programowanie aplikacji klasycznych w języku C++**
-- Programowanie aplikacji **klasycznych platformy .NET** lub platformę **.NET Core** , w zależności od tego, jakiego typu aplikacja ma zostać utworzona.
+- Programowanie aplikacji **klasycznych platformy .NET** lub platformę **.NET Core**, w zależności od tego, jakiego typu aplikacja ma zostać utworzona.
 
 Jeśli nie masz programu Visual Studio, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads/) , aby zainstalować ją bezpłatnie.
 
@@ -55,35 +55,35 @@ Jeśli masz zainstalowany program Visual Studio, ale nie masz potrzebnych obcią
 1. Otwórz program Visual Studio i Utwórz projekt.
 
     ::: moniker range=">=vs-2019"
-    Naciśnij klawisz **ESC** , aby zamknąć okno uruchamiania. **Naciśnij klawisze CTRL + Q** , aby otworzyć pole wyszukiwania, **wpisz pusty projekt** , wybierz pozycję **Szablony** , a następnie wybierz **pusty projekt** dla języka C++. W wyświetlonym oknie dialogowym wybierz pozycję **Utwórz**. Następnie wpisz nazwę, taką jak **Mixed_Mode_Debugging** , i kliknij przycisk **Utwórz**.
+    Naciśnij klawisz **ESC** , aby zamknąć okno uruchamiania. **Naciśnij klawisze CTRL + Q** , aby otworzyć pole wyszukiwania, **wpisz pusty projekt**, wybierz pozycję **Szablony**, a następnie wybierz **pusty projekt** dla języka C++. W wyświetlonym oknie dialogowym wybierz pozycję **Utwórz**. Następnie wpisz nazwę, taką jak **Mixed_Mode_Debugging** , i kliknij przycisk **Utwórz**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Na górnym pasku menu wybierz pozycję **plik**  >  **Nowy**  >  **projekt**. W lewym okienku okna dialogowego **Nowy projekt** w obszarze **Visual C++** wybierz pozycję **inne** , a następnie w środkowym okienku wybierz pozycję **pusty projekt**. Następnie wpisz nazwę, taką jak **Mixed_Mode_Debugging** , i kliknij przycisk **OK**.
+    Na górnym pasku menu wybierz pozycję **plik**  >  **Nowy**  >  **projekt**. W lewym okienku okna dialogowego **Nowy projekt** w obszarze **Visual C++** wybierz pozycję **inne**, a następnie w środkowym okienku wybierz pozycję **pusty projekt**. Następnie wpisz nazwę, taką jak **Mixed_Mode_Debugging** , i kliknij przycisk **OK**.
     ::: moniker-end
 
-    Jeśli szablon projektu **pusty projekt** nie jest widoczny, przejdź do pozycji **Narzędzia**  >  **Pobierz narzędzia i funkcje...** , co spowoduje otwarcie Instalator programu Visual Studio. Zostanie uruchomiona Instalator programu Visual Studio. Wybierz pozycję **Programowanie aplikacji klasycznych w języku C++** , a następnie wybierz polecenie **Modyfikuj**.
+    Jeśli szablon projektu **pusty projekt** nie jest widoczny, przejdź do pozycji **Narzędzia**  >  **Pobierz narzędzia i funkcje...**, co spowoduje otwarcie Instalator programu Visual Studio. Zostanie uruchomiona Instalator programu Visual Studio. Wybierz pozycję **Programowanie aplikacji klasycznych w języku C++** , a następnie wybierz polecenie **Modyfikuj**.
 
     Program Visual Studio tworzy projekt.
 
-1. W **Eksplorator rozwiązań** wybierz pozycję **pliki źródłowe** , a następnie wybierz pozycję **projekt**  >  **Dodaj nowy element**. Lub kliknij prawym przyciskiem myszy pozycję **pliki źródłowe** i wybierz polecenie **Dodaj**  >  **nowy element**.
+1. W **Eksplorator rozwiązań** wybierz pozycję **pliki źródłowe**, a następnie wybierz pozycję **projekt**  >  **Dodaj nowy element**. Lub kliknij prawym przyciskiem myszy pozycję **pliki źródłowe** i wybierz polecenie **Dodaj**  >  **nowy element**.
 
 1. W oknie dialogowym **nowy element** wybierz pozycję **plik C++ (. cpp)**. Wpisz **Mixed_Mode. cpp** w polu **Nazwa** , a następnie wybierz pozycję **Dodaj**.
 
     Program Visual Studio dodaje nowy plik C++ do **Eksplorator rozwiązań**.
 
-1. Skopiuj następujący kod do *Mixed_Mode. cpp* :
+1. Skopiuj następujący kod do *Mixed_Mode. cpp*:
 
     ```cpp
     #include "Mixed_Mode.h"
     ```
 
-1. W **Eksplorator rozwiązań** wybierz pozycję **pliki nagłówkowe** , a następnie wybierz pozycję **projekt**  >  **Dodaj nowy element**. Lub kliknij prawym przyciskiem myszy pozycję **pliki nagłówkowe** i wybierz polecenie **Dodaj**  >  **nowy element**.
+1. W **Eksplorator rozwiązań** wybierz pozycję **pliki nagłówkowe**, a następnie wybierz pozycję **projekt**  >  **Dodaj nowy element**. Lub kliknij prawym przyciskiem myszy pozycję **pliki nagłówkowe** i wybierz polecenie **Dodaj**  >  **nowy element**.
 
 1. W oknie dialogowym **nowy element** wybierz pozycję **plik nagłówka (. h)**. Wpisz **Mixed_Mode. h** w polu **Nazwa** , a następnie wybierz pozycję **Dodaj**.
 
    Program Visual Studio dodaje nowy plik nagłówka do **Eksplorator rozwiązań**.
 
-1. Skopiuj następujący kod do *Mixed_Mode. h* :
+1. Skopiuj następujący kod do *Mixed_Mode. h*:
 
     ```cpp
     #ifndef MIXED_MODE_MULTIPLY_HPP
@@ -111,13 +111,13 @@ Jeśli masz zainstalowany program Visual Studio, ale nie masz potrzebnych obcią
    > [!IMPORTANT]
    > Jeśli przełączysz platformę z **x86** na **x64** lub odwrotnie, musisz ponownie skonfigurować właściwości nowej platformy.
 
-1. W obszarze **Właściwości konfiguracji** w lewym okienku wybierz pozycję **konsolidator**  >  **Advanced** i na liście rozwijanej obok **pozycji Brak punktu wejścia** wybierz pozycję **nie**. Jeśli trzeba było zmienić ją na **nie** , wybierz pozycję **Zastosuj**.
+1. W obszarze **Właściwości konfiguracji** w lewym okienku wybierz pozycję **konsolidator**  >  **Advanced** i na liście rozwijanej obok **pozycji Brak punktu wejścia** wybierz pozycję **nie**. Jeśli trzeba było zmienić ją na **nie**, wybierz pozycję **Zastosuj**.
 
-1. W obszarze **Właściwości konfiguracji** wybierz opcję **Ogólne** , a następnie na liście rozwijanej obok pozycji **Typ konfiguracji** wybierz pozycję **Biblioteka dynamiczna (dll)**. Wybierz pozycję **Apply** (Zastosuj), a następnie wybierz przycisk **OK**.
+1. W obszarze **Właściwości konfiguracji** wybierz opcję **Ogólne**, a następnie na liście rozwijanej obok pozycji **Typ konfiguracji** wybierz pozycję **Biblioteka dynamiczna (dll)**. Wybierz pozycję **Apply** (Zastosuj), a następnie wybierz przycisk **OK**.
 
    ![Przełącz do natywnej biblioteki DLL](../debugger/media/mixed-mode-set-as-native-dll.png)
 
-1. Wybierz projekt w **Eksplorator rozwiązań** a następnie wybierz pozycję **kompilacja** Kompiluj  >  **rozwiązanie** , naciśnij klawisz **F7** lub kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Kompiluj**.
+1. Wybierz projekt w **Eksplorator rozwiązań** a następnie wybierz pozycję **kompilacja** Kompiluj  >  **rozwiązanie**, naciśnij klawisz **F7** lub kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Kompiluj**.
 
    Projekt powinien być kompilowany bez błędów.
 
@@ -126,17 +126,17 @@ Jeśli masz zainstalowany program Visual Studio, ale nie masz potrzebnych obcią
 1. Otwórz program Visual Studio i Utwórz nowy projekt.
 
     ::: moniker range=">=vs-2019"
-    Naciśnij klawisz **ESC** , aby zamknąć okno uruchamiania. **Naciśnij klawisze CTRL + Q** , aby otworzyć pole wyszukiwania, **wpisz Console** , wybierz pozycję **Szablony** , a następnie wybierz pozycję **Aplikacja konsolowa (.NET Core)** lub **Aplikacja konsolowa (.NET Framework)** dla języka C#. W wyświetlonym oknie dialogowym wybierz pozycję **Utwórz**.
+    Naciśnij klawisz **ESC** , aby zamknąć okno uruchamiania. **Naciśnij klawisze CTRL + Q** , aby otworzyć pole wyszukiwania, **wpisz Console**, wybierz pozycję **Szablony**, a następnie wybierz pozycję **Aplikacja konsolowa (.NET Core)** lub **Aplikacja konsolowa (.NET Framework)** dla języka C#. W wyświetlonym oknie dialogowym wybierz pozycję **Utwórz**.
 
     Następnie wpisz nazwę, taką jak **Mixed_Mode_Calling_App** , i kliknij przycisk **Utwórz**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Na górnym pasku menu wybierz pozycję **plik**  >  **Nowy**  >  **projekt**. W lewym okienku okna dialogowego **Nowy projekt** w obszarze **Visual C#** wybierz pozycję **Windows Desktop** , a następnie w środkowym okienku wybierz pozycję **Aplikacja konsolowa (.NET Framework)** lub  **Aplikacja konsolowa (.NET Core)**.
+    Na górnym pasku menu wybierz pozycję **plik**  >  **Nowy**  >  **projekt**. W lewym okienku okna dialogowego **Nowy projekt** w obszarze **Visual C#** wybierz pozycję **Windows Desktop**, a następnie w środkowym okienku wybierz pozycję **Aplikacja konsolowa (.NET Framework)** lub  **Aplikacja konsolowa (.NET Core)**.
 
     Następnie wpisz nazwę, taką jak **Mixed_Mode_Calling_App** , i kliknij przycisk **OK**.
     ::: moniker-end
 
-    Jeśli szablon projektu **aplikacji konsolowej** nie jest widoczny, przejdź do pozycji **Narzędzia**  >  **Pobierz narzędzia i funkcje...** , co spowoduje otwarcie Instalator programu Visual Studio. Wybierz obciążenie **Programowanie aplikacji klasycznych platformy .NET** , a następnie wybierz **Modyfikuj**.
+    Jeśli szablon projektu **aplikacji konsolowej** nie jest widoczny, przejdź do pozycji **Narzędzia**  >  **Pobierz narzędzia i funkcje...**, co spowoduje otwarcie Instalator programu Visual Studio. Wybierz obciążenie **Programowanie aplikacji klasycznych platformy .NET** , a następnie wybierz **Modyfikuj**.
 
     > [!NOTE]
     > Można również dodać nowy projekt zarządzany do istniejącego rozwiązania C++. Tworzymy projekt w nowym rozwiązaniu, aby zadanie debugowania w trybie mieszanym było trudniejsze.
@@ -185,7 +185,7 @@ Jeśli masz zainstalowany program Visual Studio, ale nie masz potrzebnych obcią
 
 ## <a name="set-a-breakpoint-and-start-debugging"></a>Ustaw punkt przerwania i Rozpocznij debugowanie
 
-1. W projekcie C# Otwórz *program.cs*. Ustaw punkt przerwania w następującym wierszu kodu, klikając na marginesie po lewej stronie, wybierając wiersz i naciskając klawisz **F9** , lub klikając prawym przyciskiem myszy wiersz i wybierając **punkt przerwania**  >  **Wstaw punkt przerwania**.
+1. W projekcie C# Otwórz *program.cs*. Ustaw punkt przerwania w następującym wierszu kodu, klikając na marginesie po lewej stronie, wybierając wiersz i naciskając klawisz **F9**, lub klikając prawym przyciskiem myszy wiersz i wybierając **punkt przerwania**  >  **Wstaw punkt przerwania**.
 
     ```csharp
     int result = Multiply(7, 7);
@@ -193,7 +193,7 @@ Jeśli masz zainstalowany program Visual Studio, ale nie masz potrzebnych obcią
 
     Czerwony okrąg pojawia się na lewym marginesie, na którym jest ustawiony punkt przerwania.
 
-1. Naciśnij klawisz **F5** , wybierz zieloną strzałkę na pasku narzędzi programu Visual Studio lub wybierz pozycję **Debuguj**  >  **Rozpocznij debugowanie** , aby rozpocząć debugowanie.
+1. Naciśnij klawisz **F5**, wybierz zieloną strzałkę na pasku narzędzi programu Visual Studio lub wybierz pozycję **Debuguj**  >  **Rozpocznij debugowanie** , aby rozpocząć debugowanie.
 
    Debuger zatrzymuje się w ustawionym punkcie przerwania. Żółta strzałka wskazuje, gdzie debuger jest obecnie wstrzymany.
 

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 666b9116-8550-4bdd-bc15-55fc57de87df
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8bf01ffceb122ad99d5ecca8fabfaa102a8fc505
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ee2f44e5d75d44cfc1c903d462e7a1df360eeefa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737579"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899176"
 ---
 # <a name="core-interfaces"></a>Interfejsy podstawowe
 Następujące interfejsy są podstawowymi interfejsami do rozszerzania debugera za pomocą [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)] .
@@ -259,7 +259,7 @@ Następujące interfejsy są podstawowymi interfejsami do rozszerzania debugera 
 |[IDebugProviderProgramNode2](../../../extensibility/debugger/reference/idebugproviderprogramnode2.md)|DE, PS|Reprezentuje element [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) , który może organizować interfejsy między granicami wątków lub procesów.|
 |[IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)|DE, PS|Reprezentuje Wyliczenie zestawu programów.|
 
-## <a name="properties"></a><a name="Properties"></a> Aœciwoœci
+## <a name="properties"></a><a name="Properties"></a> Właściwości
  Te interfejsy reprezentują właściwości, wartość skojarzoną z określonym kontekstem, zazwyczaj wynik oceny wyrażenia.
 
 |Interfejs|Zaimplementowane przez|Opis|

@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 7c4cd83a-f985-4c85-9022-fadb5dbd2b39
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cb63d217249cd24d6777fb4d87ae4fe4d00c755
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 4059d2d4b8a5d69c0c3433699c42c5e88bc6b668
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351144"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900525"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Instrukcje: publikowanie projektu, który ma określone ustawienia regionalne
 Aplikacja zawiera składniki, które mają różne ustawienia regionalne. W tym scenariuszu należy utworzyć rozwiązanie, które ma kilka projektów, a następnie opublikować oddzielne projekty dla każdego ustawienia regionalnego. Ta procedura pokazuje, jak użyć makra do opublikowania pierwszego projektu w rozwiązaniu przy użyciu ustawień regionalnych "en". Jeśli chcesz wypróbować tę procedurę przy użyciu ustawień regionalnych innych niż "en", upewnij się, że ustawienie `localeString` w makrze jest zgodne z ustawieniami regionalnymi, które są używane (na przykład "de" lub "de-de").
@@ -37,11 +37,11 @@ Aplikacja zawiera składniki, które mają różne ustawienia regionalne. W tym 
 
 ### <a name="to-create-the-publishing-macro"></a>Aby utworzyć makro publikowania
 
-1. Aby otworzyć Eksploratora makr, w menu **Narzędzia** wskaż polecenie **makra** , a następnie kliknij przycisk **Eksplorator makr**.
+1. Aby otworzyć Eksploratora makr, w menu **Narzędzia** wskaż polecenie **makra**, a następnie kliknij przycisk **Eksplorator makr**.
 
-2. Utwórz nowy moduł makr. W Eksploratorze makr wybierz pozycję Moje **makra**. W menu **Narzędzia** wskaż polecenie **makra** , a następnie kliknij polecenie **Nowy moduł makr**. Nazwij moduł **PublishSpecificCulture**.
+2. Utwórz nowy moduł makr. W Eksploratorze makr wybierz pozycję Moje **makra**. W menu **Narzędzia** wskaż polecenie **makra**, a następnie kliknij polecenie **Nowy moduł makr**. Nazwij moduł **PublishSpecificCulture**.
 
-3. W Eksploratorze makr rozwiń węzeł moje **makra** , a następnie otwórz moduł **PublishAllProjects** , klikając go dwukrotnie (lub, w menu **Narzędzia** , wskaż polecenie **makra** , a następnie kliknij pozycję **makra środowiska IDE** ).
+3. W Eksploratorze makr rozwiń węzeł moje **makra** , a następnie otwórz moduł **PublishAllProjects** , klikając go dwukrotnie (lub, w menu **Narzędzia** , wskaż polecenie **makra**, a następnie kliknij pozycję **makra środowiska IDE**).
 
 4. W środowisku IDE makr Dodaj następujący kod do modułu, po `Import` instrukcji:
 
@@ -141,11 +141,11 @@ Aplikacja zawiera składniki, które mają różne ustawienia regionalne. W tym 
 
 ### <a name="to-publish-a-project-for-a-specific-locale"></a>Aby opublikować projekt dla określonych ustawień regionalnych
 
-1. Aby utworzyć Visual Basic projekt aplikacji systemu Windows, w menu **plik** wskaż polecenie **Nowy** , a następnie kliknij pozycję **projekt**.
+1. Aby utworzyć Visual Basic projekt aplikacji systemu Windows, w menu **plik** wskaż polecenie **Nowy**, a następnie kliknij pozycję **projekt**.
 
 2. W oknie dialogowym **Nowy projekt** wybierz pozycję **aplikacja systemu Windows** z węzła **Visual Basic** . Nazwij projekt *PublishLocales*.
 
-3. Kliknij przycisk Form1. W oknie **Właściwości** , w obszarze **projekt** , Zmień właściwość **Language** z **(domyślnie)** na **angielski**. Zmień właściwość **Text** **formularza na.**
+3. Kliknij przycisk Form1. W oknie **Właściwości** , w obszarze **projekt**, Zmień właściwość **Language** z **(domyślnie)** na **angielski**. Zmień właściwość **Text** **formularza na.**
 
      Należy pamiętać, że zlokalizowane biblioteki DLL zasobów nie są tworzone, dopóki nie są one używane. Na przykład, są tworzone podczas zmiany tekstu w formularzu lub jednej z jej kontrolek po określeniu nowych ustawień regionalnych.
 

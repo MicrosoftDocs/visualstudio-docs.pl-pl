@@ -12,15 +12,15 @@ helpviewer_keywords:
 - ListObject control, mapping data
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: aa24e4a0f0dab9c01de8e5a2960f28d71a9dad6e
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ec82809a694e735fed553a1c79ba36687de0fbb1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848238"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900897"
 ---
 # <a name="how-to-map-listobject-columns-to-data"></a>Instrukcje: Mapowanie kolumn ListObject na dane
   Po powiązaniu <xref:Microsoft.Office.Tools.Excel.ListObject> formantu z <xref:System.Data.DataTable> , możesz nie chcieć wyświetlać wszystkich kolumn na liście lub mogą istnieć pewne kolumny, które nie są powiązane z danymi. Można mapować kolumny, które mają być wyświetlane w <xref:Microsoft.Office.Tools.Excel.ListObject> czasie wywoływania <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> metody.
@@ -59,7 +59,7 @@ ms.locfileid: "96848238"
 ## <a name="compile-the-code"></a>Kompiluj kod
  W tym przykładzie kodu założono, że masz istniejącą <xref:Microsoft.Office.Tools.Excel.ListObject> nazwę `list1` w arkuszu, w którym znajduje się ten kod.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Rozwiń dokumenty programu Word i skoroszyty programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Formanty w dokumentach pakietu Office](../vsto/controls-on-office-documents.md)
 - [Dodawanie kontrolek do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md)

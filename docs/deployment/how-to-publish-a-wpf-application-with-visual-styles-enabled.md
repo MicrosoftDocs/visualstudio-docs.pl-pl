@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 73b22b02-fc75-42aa-82d3-51fdcaf8e5c8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e372d3163dcef84d76d77e54c66cf9f7c788e213
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: f090729cdd0d08d39cf97cab9c3899f0b77c80eb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349857"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900472"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Instrukcje: publikowanie aplikacji WPF z włączonymi stylami wizualizacji
 
@@ -51,7 +51,7 @@ Style wizualne umożliwiają zmianę wyglądu wspólnych kontrolek w zależnośc
 
     **Aby otworzyć plik manifestu w projekcie Visual Basic**
 
-    1. Na pasku menu wybierz **projekt** , **Właściwości** *ProjectName* , gdzie *ProjectName* jest nazwą projektu WPF.
+    1. Na pasku menu wybierz **projekt**, **Właściwości** *ProjectName* , gdzie *ProjectName* jest nazwą projektu WPF.
 
          Pojawią się strony właściwości projektu WPF.
 
@@ -61,7 +61,7 @@ Style wizualne umożliwiają zmianę wyglądu wspólnych kontrolek w zależnośc
 
     **Aby otworzyć plik manifestu w projekcie C#**
 
-    1. Na pasku menu wybierz **projekt** , **Właściwości** *ProjectName* , gdzie *ProjectName* jest nazwą projektu WPF.
+    1. Na pasku menu wybierz **projekt**, **Właściwości** *ProjectName* , gdzie *ProjectName* jest nazwą projektu WPF.
 
          Pojawią się strony właściwości projektu WPF.
 
@@ -97,7 +97,7 @@ Style wizualne umożliwiają zmianę wyglądu wspólnych kontrolek w zależnośc
     </asmv1:assembly>
     ```
 
-2. W Notatnik kliknij **plik** , a następnie kliknij przycisk **Zapisz jako**.
+2. W Notatnik kliknij **plik**, a następnie kliknij przycisk **Zapisz jako**.
 
 3. W oknie dialogowym **Zapisz jako** na liście rozwijanej **Zapisz jako typ** wybierz pozycję **wszystkie pliki**.
 
@@ -112,7 +112,7 @@ Style wizualne umożliwiają zmianę wyglądu wspólnych kontrolek w zależnośc
 
 1. Otwórz **wiersz polecenia programu Visual Studio**.
 
-    Aby uzyskać więcej informacji na temat sposobu otwierania **wiersza polecenia programu Visual Studio** , zobacz [monity poleceń](/dotnet/framework/tools/developer-command-prompt-for-vs).
+    Aby uzyskać więcej informacji na temat sposobu otwierania **wiersza polecenia programu Visual Studio**, zobacz [monity poleceń](/dotnet/framework/tools/developer-command-prompt-for-vs).
 
    > [!NOTE]
    > Pozostałe kroki dotyczą następujących założeń rozwiązania:

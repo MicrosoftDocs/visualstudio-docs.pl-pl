@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 2e4aa67c-4445-4f7b-9e03-9acb95829127
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 252d029e7e2e5b9b5dfe27b2fb1cd72e1c09b473
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 7591513bc52807b87e9df2f0fb65364d5aff2db8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349883"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900543"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Instrukcje: publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji
 Aby aplikacja ClickOnce była dostępna dla użytkowników, należy ją opublikować w udziale plików lub na ścieżce, serwerze FTP lub nośniku wymiennym. Aplikację można opublikować za pomocą Kreatora publikacji. dodatkowe właściwości związane z publikowaniem są dostępne na stronie **Publikuj** **projektanta projektu**. Aby uzyskać więcej informacji, zobacz [publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md).
@@ -51,9 +51,9 @@ Przed uruchomieniem Kreatora publikacji należy odpowiednio ustawić właściwo�
 
    - Jeśli użytkownicy będą instalować z witryny sieci Web, kliknij opcję **z witryny sieci Web** i wprowadź adres URL odpowiadający ścieżce pliku wprowadzonej w poprzednim kroku. Kliknij przycisk **Dalej**. (Ta opcja jest zwykle używana w przypadku określenia adresu FTP jako lokalizacji publikowania. Bezpośrednie pobieranie z usługi FTP nie jest obsługiwane. W związku z tym musisz wprowadzić adres URL tutaj.)
 
-   - Jeśli użytkownicy będą instalować aplikację bezpośrednio z udziału plików, kliknij **ścieżkę UNC lub udział plików** , a następnie kliknij przycisk **dalej**. (Dotyczy to publikowania lokalizacji w postaci *c:\deploy\myapp* lub *\\ \server\myapp* ).
+   - Jeśli użytkownicy będą instalować aplikację bezpośrednio z udziału plików, kliknij **ścieżkę UNC lub udział plików**, a następnie kliknij przycisk **dalej**. (Dotyczy to publikowania lokalizacji w postaci *c:\deploy\myapp* lub *\\ \server\myapp*).
 
-   - Jeśli użytkownicy będą instalować z nośników wymiennych, kliknij **z dysku CD-ROM lub DVD-ROM** , a następnie kliknij przycisk **dalej**.
+   - Jeśli użytkownicy będą instalować z nośników wymiennych, kliknij **z dysku CD-ROM lub DVD-ROM**, a następnie kliknij przycisk **dalej**.
 
 5. Na stronie **czy aplikacja będzie dostępna w trybie offline?** kliknij odpowiednią opcję:
 
@@ -61,7 +61,7 @@ Przed uruchomieniem Kreatora publikacji należy odpowiednio ustawić właściwo�
 
    - Jeśli chcesz uruchomić aplikację bezpośrednio z lokalizacji publikowania, kliknij przycisk **nie, ta aplikacja jest dostępna tylko w trybie online**. Skrót w menu **Start** nie zostanie utworzony.
 
-     Kliknij przycisk **Dalej** , aby kontynuować.
+     Kliknij pozycję **Next** (Dalej), aby kontynuować.
 
 6. Kliknij przycisk **Zakończ** , aby opublikować aplikację.
 
@@ -73,13 +73,13 @@ Przed uruchomieniem Kreatora publikacji należy odpowiednio ustawić właściwo�
 
     Zostanie wyświetlony **Projektant projektu** .
 
-2. Kliknij kartę **Publikuj** , aby otworzyć stronę **Opublikuj** w **projektancie projektu** , a następnie kliknij przycisk **Kreator publikacji** .
+2. Kliknij kartę **Publikuj** , aby otworzyć stronę **Opublikuj** w **projektancie projektu**, a następnie kliknij przycisk **Kreator publikacji** .
 
     Zostanie wyświetlony Kreator publikacji.
 
 3. Na stronie **gdzie chcesz opublikować aplikację?** wprowadź ścieżkę pliku lub lokalizację FTP, w której aplikacja zostanie opublikowana, na przykład *d:\deploy*. Następnie kliknij przycisk **dalej** , aby kontynuować.
 
-4. Na stronie **jak użytkownicy będą instalować aplikację?** kliknij pozycję z **dysku CD-ROM lub DVD-ROM** , a następnie kliknij przycisk **dalej**.
+4. Na stronie **jak użytkownicy będą instalować aplikację?** kliknij pozycję z **dysku CD-ROM lub DVD-ROM**, a następnie kliknij przycisk **dalej**.
 
    > [!NOTE]
    > Jeśli chcesz, aby instalacja była uruchamiana automatycznie po włożeniu dysku CD-ROM do stacji, Otwórz stronę **Opublikuj** w **projektancie projektu** i kliknij przycisk **Opcje** , a następnie w kreatorze **opcji publikacji** wybierz opcję **instalacje CD, automatycznie Rozpocznij instalację po włożeniu dysku CD**.
@@ -90,7 +90,7 @@ Przed uruchomieniem Kreatora publikacji należy odpowiednio ustawić właściwo�
 
    - Jeśli aplikacja nie będzie sprawdzać dostępności aktualizacji, kliknij **aplikację nie będzie sprawdzać dostępności aktualizacji**.
 
-     Kliknij przycisk **Dalej** , aby kontynuować.
+     Kliknij pozycję **Next** (Dalej), aby kontynuować.
 
 6. Kliknij przycisk **Zakończ** , aby opublikować aplikację.
 

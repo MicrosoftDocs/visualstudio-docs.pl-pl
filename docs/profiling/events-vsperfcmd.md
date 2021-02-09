@@ -7,16 +7,16 @@ ms.topic: conceptual
 ms.assetid: eb139327-4783-4f2a-874c-efad377a7be4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 614ac24e38966c1d09df91d6771cab2b3914454d
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: 1ec92cae275d9f73f24f983905bc0013950e9d37
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801387"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899563"
 ---
 # <a name="events-vsperfcmd"></a>Zdarzenia (VSPerfCmd)
 Opcja  **zdarzenia** VSPerfCmd.exesteruje rejestrowaniem śledzenia zdarzeń systemu Windows (ETW). Dane ETW są zapisywane w pliku ETL, który jest oddzielony od pliku danych profilera. Dane można wyświetlić w raporcie za pomocą polecenia [VSPerfReport](../profiling/vsperfreport.md) /Summary: ETW.
@@ -74,7 +74,7 @@ C:\<path>VSPerfCmd -events on, \".NET Common Language Runtime\", 0x7fffffff, 5
 > [!IMPORTANT]
 > Jeśli zdarzenia uruchamiania nie zostaną wykluczone, ponieważ te zdarzenia nie są wymienione w pliku Managed Object Format (MOF), są one wyświetlane jako identyfikatory GUID w raporcie. Aby uzyskać więcej informacji, zobacz Tę stronę w witrynie sieci Web firmy Microsoft: [przykładowy plik Managed Object Format (MOF)](https://msdn.microsoft.com/library/default.aspx).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [Profile aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)

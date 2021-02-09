@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 73cd3e9d-cd72-4ad2-8cae-94d6bb6b01e0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: db31d0182c598b32933cf2d4260706a2252a9b6f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 758aecc4f2bf280fd7ff5ca7ca482ee6a3e3d68d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351170"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900643"
 ---
 # <a name="how-to-enable-clickonce-security-settings"></a>Instrukcje: Włączanie ustawień zabezpieczeń technologii ClickOnce
 Aby można było opublikować aplikację, należy włączyć zabezpieczenia dostępu kodu dla aplikacji ClickOnce. Jest to wykonywane automatycznie podczas publikowania aplikacji przy użyciu Kreatora publikacji.
@@ -34,7 +34,7 @@ Aby można było opublikować aplikację, należy włączyć zabezpieczenia dost
 
 ### <a name="to-enable-clickonce-security-settings"></a>Aby włączyć ustawienia zabezpieczeń ClickOnce
 
-1. Po wybraniu projektu w **Eksplorator rozwiązań** , w menu **projekt** kliknij polecenie **Właściwości**.
+1. Po wybraniu projektu w **Eksplorator rozwiązań**, w menu **projekt** kliknij polecenie **Właściwości**.
 
 2. Kliknij kartę **Zabezpieczenia**.
 
@@ -47,7 +47,7 @@ Aby można było opublikować aplikację, należy włączyć zabezpieczenia dost
 
 ### <a name="to-disable-clickonce-security-settings"></a>Aby wyłączyć ustawienia zabezpieczeń ClickOnce
 
-1. Po wybraniu projektu w **Eksplorator rozwiązań** , w menu **projekt** kliknij polecenie **Właściwości**.
+1. Po wybraniu projektu w **Eksplorator rozwiązań**, w menu **projekt** kliknij polecenie **Właściwości**.
 
 2. Kliknij kartę **Zabezpieczenia**.
 

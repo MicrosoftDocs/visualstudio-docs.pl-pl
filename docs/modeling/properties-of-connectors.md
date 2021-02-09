@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, connectors
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d456f251c5c8af21113593469b019094207cbf2
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: b09ec4278dd78f797067c3acdf3152736fb395c3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360510"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899851"
 ---
 # <a name="properties-of-connectors"></a>Właściwości łączników
 Łączniki reprezentują relacje domeny w wygenerowanym projektancie.
@@ -25,7 +25,7 @@ ms.locfileid: "97360510"
 
  Łączniki mają właściwości, które są wymienione w poniższej tabeli.
 
-|Właściwość|Opis|Domyślny|
+|Właściwość|Opis|Domyślne|
 |-|-|-|
 |Kolor|Kolor tego łącznika.|Czarnoskórzy|
 |Styl kreskowania|Styl kreskowania dla linii dla tego łącznika (Solid, kreska, kropka, DashDot, DashDotDot lub Custom).|Ciągła|

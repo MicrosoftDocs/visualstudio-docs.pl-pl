@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: ecd20da8-b04b-4141-a8f4-a2ef91dd597a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88c8294042bb61939a52f4053f5b27ae915e01df
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 5ed2dfccb47c980852bcdda423871f7517ef785a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487988"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900044"
 ---
 # <a name="vspackage-registration"></a>Rejestracja pakietu VSPackage
 Pakietów VSPackage musi poinformować [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , że są one zainstalowane i powinny zostać załadowane. Ten proces jest realizowany przez zapisanie informacji w rejestrze. Jest to typowe zadanie Instalatora.
@@ -57,6 +57,6 @@ Pakietów VSPackage musi poinformować [!INCLUDE[vsprvs](../../code-quality/incl
 
 - Kod samodzielnej rejestracji można odmówić dostępu do zasobów sieciowych, takich jak biblioteki typów, jeśli składnik jest jednocześnie określony jako Run-from-Source i znajduje się w tabeli SelfReg. Może to spowodować niepowodzenie instalacji składnika podczas instalacji administracyjnej.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instalator Windows](/windows/desktop/Msi/windows-installer-portal)
 - [Rejestracja pakietu zarządzanego](/previous-versions/bb166783(v=vs.100))

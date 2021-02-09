@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 418de18c-bee9-4f24-9cd9-0252d175070d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fbda4558622c2e244071a218d3d5e42196460113
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 0377bdc5fa38c814bb5cd6ff02d12dcec117266d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351209"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900791"
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>Instrukcje: dostosowywanie domyślnej strony sieci Web dla aplikacji ClickOnce
 Podczas publikowania aplikacji ClickOnce w sieci Web strona sieci Web jest automatycznie generowana i publikowana razem z aplikacją. Strona domyślna zawiera nazwę aplikacji i linki do zainstalowania aplikacji, instalacji wymagań wstępnych lub uzyskania dostępu do pomocy w witrynie MSDN.
@@ -32,7 +32,7 @@ Podczas publikowania aplikacji ClickOnce w sieci Web strona sieci Web jest autom
 > [!NOTE]
 > Rzeczywiste linki widoczne na stronie zależą od komputera, na którym strona jest wyświetlana i jakie są wymagania wstępne.
 
- Nazwa domyślna strony sieci Web jest *Publish.htm* ; można zmienić nazwę w **projektancie projektu**. Aby uzyskać więcej informacji, zobacz [How to: Określanie strony publikowania dla aplikacji ClickOnce](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md).
+ Nazwa domyślna strony sieci Web jest *Publish.htm*; można zmienić nazwę w **projektancie projektu**. Aby uzyskać więcej informacji, zobacz [How to: Określanie strony publikowania dla aplikacji ClickOnce](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md).
 
  Strona sieci Web *Publish.htm* jest publikowana tylko w przypadku wykrycia nowszej wersji.
 

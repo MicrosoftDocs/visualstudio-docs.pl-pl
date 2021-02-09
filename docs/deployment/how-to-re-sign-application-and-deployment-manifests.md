@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: d53bceb9-4d3b-4c22-b909-8f370e7231fb
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a17902451c931bd37a92158a3b5c3838ed91ed4
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 0b4e4efee02ca1571f40ae33f9d69d8fbec0a1d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351131"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900437"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Instrukcje: ponowne podpisywanie aplikacji i manifestów wdrożenia
 Po wprowadzeniu zmian we właściwościach wdrożenia w manifeście aplikacji dla aplikacji Windows Forms, aplikacji Windows Presentation Foundation (XBAP) lub rozwiązań pakietu Office należy jeszcze raz podpisać aplikacje i manifesty wdrożenia przy użyciu certyfikatu. Ten proces zapewnia, że naruszone pliki nie są zainstalowane na komputerach użytkowników końcowych.
@@ -33,7 +33,7 @@ Po wprowadzeniu zmian we właściwościach wdrożenia w manifeście aplikacji dl
  Innym scenariuszem, w którym można podpisywać manifesty, jest to, że klienci chcą podpisać aplikacje i manifesty wdrożenia przy użyciu własnego certyfikatu.
 
 ## <a name="re-sign-the-application-and-deployment-manifests"></a>Ponowne podpisywanie aplikacji i manifestów wdrożenia
- W tej procedurze przyjęto założenie, że wprowadzono już zmiany w pliku manifestu aplikacji ( *manifest* ). Aby uzyskać więcej informacji, zobacz [How to: Change Deployment Properties](/previous-versions/cc442869(v=vs.110)).
+ W tej procedurze przyjęto założenie, że wprowadzono już zmiany w pliku manifestu aplikacji (*manifest*). Aby uzyskać więcej informacji, zobacz [How to: Change Deployment Properties](/previous-versions/cc442869(v=vs.110)).
 
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Aby ponowne podpisać aplikacje i manifesty wdrożenia za pomocą Mage.exe
 
@@ -69,10 +69,10 @@ Po wprowadzeniu zmian we właściwościach wdrożenia w manifeście aplikacji dl
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx
     ```
 
-5. Opcjonalnie Skopiuj manifest wdrożenia głównego ( *Publish \\ \<appname> . Application* ) do katalogu wdrożenia wersji ( *pliki publish\Application \\ \<appname> _ \<version>* ).
+5. Opcjonalnie Skopiuj manifest wdrożenia głównego (*Publish \\ \<appname> . Application*) do katalogu wdrożenia wersji (*pliki publish\Application \\ \<appname> _ \<version>*).
 
 ## <a name="update-and-re-sign-the-application-and-deployment-manifests"></a>Aktualizowanie i ponowne podpisywanie aplikacji i manifestów wdrożenia
- W tej procedurze przyjęto założenie, że wprowadzono już zmiany w pliku manifestu aplikacji ( *manifest* ), ale istnieją inne pliki, które zostały zaktualizowane. Gdy pliki są aktualizowane, skrót reprezentujący plik musi również zostać zaktualizowany.
+ W tej procedurze przyjęto założenie, że wprowadzono już zmiany w pliku manifestu aplikacji (*manifest*), ale istnieją inne pliki, które zostały zaktualizowane. Gdy pliki są aktualizowane, skrót reprezentujący plik musi również zostać zaktualizowany.
 
 #### <a name="to-update-and-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Aby zaktualizować i podpisać aplikacje i manifesty wdrożenia za pomocą Mage.exe
 
@@ -112,7 +112,7 @@ Po wprowadzeniu zmian we właściwościach wdrożenia w manifeście aplikacji dl
 
 6. Dodaj rozszerzenie *. deploy* z powrotem do plików, z wyjątkiem plików manifestu aplikacji i wdrożenia.
 
-7. Opcjonalnie Skopiuj manifest wdrożenia głównego ( *Publish \\ \<appname> . Application* ) do katalogu wdrożenia wersji ( *pliki publish\Application \\ \<appname> _ \<version>* ).
+7. Opcjonalnie Skopiuj manifest wdrożenia głównego (*Publish \\ \<appname> . Application*) do katalogu wdrożenia wersji (*pliki publish\Application \\ \<appname> _ \<version>*).
 
 ## <a name="see-also"></a>Zobacz też
 - [Zabezpieczanie aplikacji ClickOnce](../deployment/securing-clickonce-applications.md)

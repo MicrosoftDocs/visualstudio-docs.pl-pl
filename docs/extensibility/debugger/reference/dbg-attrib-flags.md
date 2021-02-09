@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 2f13e601-dadc-476e-a8ec-01c4515082e7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1c8b3f52eff80c187d3c43b87cea804ace483169
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e1093ab5252aa14418bebf4129d0c7d050d0e11d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737559"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899153"
 ---
 # <a name="dbg_attrib_flags"></a>DBG_ATTRIB_FLAGS
 Opisuje różne atrybuty interfejsu [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) lub [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) . Składowa struktury [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) .

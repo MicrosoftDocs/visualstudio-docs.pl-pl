@@ -15,15 +15,15 @@ helpviewer_keywords:
 - worksheets [Office development in Visual Studio], XML schemas
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7a7e1a06e644536ce9ce881d9b9f1dc23aae03f1
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 0e6d868655e3f697a7f659064026929568f2e400
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848212"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900850"
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>Instrukcje: mapowanie schematów do arkuszy w programie Visual Studio
   Możesz zmapować schemat XML do arkusza, gdy arkusz jest otwarty w programie Visual Studio. Używasz tych samych Microsoft Office narzędzi programu Excel, które są używane, gdy skoroszyt jest otwarty poza programem Visual Studio. Projekt pakietu Office tworzy te same obiekty niezależnie od tego, czy schemat jest mapowany do arkusza przed lub po utworzeniu rozwiązania programu Excel.
@@ -66,6 +66,6 @@ ms.locfileid: "96848212"
 
      Jeśli przeciągniesz powtarzający się element schematu, projekt pakietu Office wygeneruje <xref:Microsoft.Office.Tools.Excel.ListObject> formant, który nie jest automatycznie powiązany ze źródłem danych. Aby uzyskać więcej informacji, zobacz [schematy XML i dane w obszarze dostosowania na poziomie dokumentu](../vsto/xml-schemas-and-data-in-document-level-customizations.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: mapowanie schematów do dokumentów programu Word w programie Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)
 - [Schematy XML i dane w dostosowaniach na poziomie dokumentu](../vsto/xml-schemas-and-data-in-document-level-customizations.md)

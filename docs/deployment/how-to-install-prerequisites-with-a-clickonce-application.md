@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: e964fca5-fdfd-47cf-a1c9-7fb96b1c88b5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e4a2f2b951881208d3995aeb1f5f1f655b80674f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 09337ee164c8b740e9aa8a044c4a9df385f01016
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349935"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900570"
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Instrukcje: instalowanie wstępnie wymaganych składników za pomocą aplikacji ClickOnce
 Wszystkie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje wymagają, aby poprawna wersja .NET Framework była zainstalowana na komputerze, zanim będzie można go uruchomić. wiele aplikacji również ma inne wymagania wstępne. Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji można wybrać zestaw wstępnie wymaganych składników do spakowania wraz z aplikacją. Podczas instalacji dla każdego wymagania wstępnego zostanie wykonane sprawdzenie w celu ustalenia, czy już istnieje; w przeciwnym razie zostanie zainstalowana przed zainstalowaniem [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji.
@@ -40,7 +40,7 @@ Wszystkie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] apli
 
 ### <a name="to-specify-prerequisites-to-install-with-a-clickonce-application"></a>Aby określić wymagania wstępne instalacji przy użyciu aplikacji ClickOnce
 
-1. Po wybraniu projektu w **Eksplorator rozwiązań** , w menu **projekt** kliknij polecenie **Właściwości**.
+1. Po wybraniu projektu w **Eksplorator rozwiązań**, w menu **projekt** kliknij polecenie **Właściwości**.
 
 2. Wybierz okienko **Publikowanie** .
 
@@ -54,7 +54,7 @@ Wszystkie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] apli
 
 ### <a name="to-specify-a-different-download-location-for-prerequisites"></a>Aby określić inną lokalizację pobierania dla wymagań wstępnych
 
-1. Po wybraniu projektu w **Eksplorator rozwiązań** , w menu **projekt** kliknij polecenie **Właściwości**.
+1. Po wybraniu projektu w **Eksplorator rozwiązań**, w menu **projekt** kliknij polecenie **Właściwości**.
 
 2. Wybierz okienko **Publikowanie** .
 
