@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], parameter types
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8044f04902e74b2597d6cf331e54eb4a6138817a
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 9dac5aa82b03887a11ba9ed3c76fe03fd85174cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903601"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913715"
 ---
 # <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Instrukcje: Definiowanie deskryptora typu dla parametru
   Deskryptor typu zawiera właściwości opisujące typ danych parametru. Deskryptor typu może definiować pole, jednostkę lub kolekcję jednostek. Aby uzyskać więcej informacji, zobacz [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\)).
@@ -119,7 +119,7 @@ ms.locfileid: "94903601"
 
     Nowy deskryptor typu jest dodawany jako element podrzędny do deskryptora typu kolekcji. Skonfiguruj ten deskryptor typu jako jednostkę.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Omówienie narzędzi projektowania modelu BDC](../sharepoint/bdc-model-design-tools-overview.md)
 - [Instrukcje: Dodawanie jednostki do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md)
 - [Instrukcje: Dodawanie parametru do metody](../sharepoint/how-to-add-a-parameter-to-a-method.md)

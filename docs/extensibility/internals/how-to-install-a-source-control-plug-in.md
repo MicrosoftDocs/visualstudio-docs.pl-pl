@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2496de5d1139d66e4ae9072b551ada990cf856dd
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: ad5b77176d05c28b3ba938a1255de6e10fcd7094
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761234"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912754"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Instrukcje: Instalowanie wtyczki kontroli źródła
 Tworzenie wtyczki kontroli źródła obejmuje trzy kroki:
@@ -37,7 +37,7 @@ Tworzenie wtyczki kontroli źródła obejmuje trzy kroki:
 
 #### <a name="to-register-the-source-control-plug-in-dll"></a>Aby zarejestrować plik DLL wtyczki kontroli źródła
 
-1. Dodaj dwa wpisy w kluczu **HKEY_LOCAL_MACHINE** w podkluczu **oprogramowania** , który określa podklucz nazwy firmy, po którym następuje podklucz nazwy produktu. Wzorzec jest **\\ \<company name> \\HKEY_LOCAL_MACHINE\SOFTWARE\<product name> \\ wartością \<entry>**  =  *value*. Te dwa wpisy są zawsze nazywane **SCCServerName** i **SCCServerPath**. Każdy jest ciągiem regularnym.
+1. Dodaj dwa wpisy w kluczu **HKEY_LOCAL_MACHINE** w podkluczu **oprogramowania** , który określa podklucz nazwy firmy, po którym następuje podklucz nazwy produktu. Wzorzec jest **\\ \<company name> \\HKEY_LOCAL_MACHINE\SOFTWARE\<product name> \\ wartością \<entry>**  =  . Te dwa wpisy są zawsze nazywane **SCCServerName** i **SCCServerPath**. Każdy jest ciągiem regularnym.
 
     Na przykład jeśli Twoja firma to firma Microsoft, a Twój produkt kontroli źródła nosi nazwę SourceSafe, ta ścieżka rejestru byłaby **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe**. W tym podkluczu pierwszy wpis, **SCCServerName**, jest odczytany przez użytkownika ciąg nazewnictwa produktu. Drugi wpis, **SCCServerPath**, jest pełną ścieżką do biblioteki DLL wtyczki kontroli źródła, z którą ma nawiązać połączenie IDE. Poniżej przedstawiono przykładowe wpisy rejestru:
 
@@ -55,7 +55,7 @@ Tworzenie wtyczki kontroli źródła obejmuje trzy kroki:
 
       **HideInVisualStudio** jest wartością typu DWORD i jest ustawiona na *1* , aby ukryć wtyczkę lub *0* w celu wyświetlenia wtyczki. Jeśli wpis rejestru nie jest wyświetlany, domyślnym zachowaniem jest wyświetlenie wtyczki.
 
-   - Wpis rejestru **DisableSccManager** może służyć do wyłączania lub ukrywania opcji menu **uruchamiania \<Source Control Server>** , która jest zwykle wyświetlana w podmenu **File**  >  **kontroli źródła** pliku. Wybranie tej opcji menu wywołuje funkcję [SccRunScc](../../extensibility/sccrunscc-function.md) . Wtyczka do kontroli źródła może nie obsługiwać programu zewnętrznego, w związku z czym można wyłączyć lub nawet ukryć opcję menu **uruchamiania** .
+   - Wpis rejestru **DisableSccManager** może służyć do wyłączania lub ukrywania opcji menu **uruchamiania \<Source Control Server>** , która jest zwykle wyświetlana w podmenu   >  **kontroli źródła** pliku. Wybranie tej opcji menu wywołuje funkcję [SccRunScc](../../extensibility/sccrunscc-function.md) . Wtyczka do kontroli źródła może nie obsługiwać programu zewnętrznego, w związku z czym można wyłączyć lub nawet ukryć opcję menu **uruchamiania** .
 
       **DisableSccManager** jest wartością typu DWORD i jest ustawiona na *0* , aby włączyć opcję menu **uruchamiania \<Source Control Server>** , ustawić wartość *1* , aby wyłączyć opcję menu i ustawić wartość *2* , aby ukryć opcję menu. Jeśli ten wpis rejestru nie jest wyświetlany, domyślnym zachowaniem jest wyświetlenie opcji menu.
 
@@ -118,5 +118,5 @@ Tworzenie wtyczki kontroli źródła obejmuje trzy kroki:
 
  Jeśli oba te warunki są spełnione, można wywołać nowe funkcje obsługiwane w wersjach 1,2 i 1,3.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wprowadzenie do wtyczek kontroli źródła](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)

@@ -8,15 +8,15 @@ ms.topic: how-to
 ms.assetid: 75d38b76-26d6-4f43-bbe7-cbacd7cc81e7
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 02d26416357ec13b61232f2adb0bc3e5e3c67818
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 8bca2ae08037a63cfbf8647808c7b1c7329ad2aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970203"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914929"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Instrukcje: wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji
 
@@ -60,7 +60,7 @@ Dzienniki można również generować przez uruchomienie programu MSBuild bezpo�
     |**Minimalny**|Wyświetla podsumowanie kompilacji i błędów, ostrzeżeń i komunikatów, które są skategoryzowane jako bardzo ważne.|
     |**Typow**|Wyświetla podsumowanie kompilacji; błędy, ostrzeżenia i komunikaty, które są klasyfikowane jako bardzo ważne; i główne kroki kompilacji. Ten poziom szczegółów będzie używany najczęściej.|
     |**szczegółowo**|Wyświetla podsumowanie kompilacji; błędy, ostrzeżenia i komunikaty, które są klasyfikowane jako bardzo ważne; wszystkie kroki kompilacji; i wiadomości, które są podzielone na normalne znaczenie.|
-    |**Diagnostyczne**|Wyświetla wszystkie dane, które są dostępne dla kompilacji. Możesz użyć tego poziomu szczegółowości, aby pomóc w debugowaniu problemów z niestandardowymi skryptami kompilacji i innymi problemami z kompilacją.|
+    |**Diagnostyka**|Wyświetla wszystkie dane, które są dostępne dla kompilacji. Możesz użyć tego poziomu szczegółowości, aby pomóc w debugowaniu problemów z niestandardowymi skryptami kompilacji i innymi problemami z kompilacją.|
 
      Aby uzyskać więcej informacji, zobacz [okno dialogowe Opcje, projekty i rozwiązania, kompilacja i uruchomienie](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md) oraz <xref:Microsoft.Build.Framework.LoggerVerbosity> .
 

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: dcef5f91-0613-4bfc-8ee9-d7004bb6d3a9
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 51ecf68cacf0edca90893931642cd7fb6064f972
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 59a0660bb78e966150a6ef8d17dc24512a901a26
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904646"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913944"
 ---
 # <a name="item-element-msbuild"></a>Item — element (MSBuild)
 
@@ -101,7 +101,7 @@ Teraz można jednak przekazać `Version` metadane jako atrybut, na przykład w n
 
 Użycie notacji @ ( \<myType> ) umożliwia rozwinięcie kolekcji elementów typu do \<myType> listy ciągów rozdzielanych średnikami i przekazanie do parametru. Jeśli parametr jest typu `string` , wartość parametru jest listą elementów rozdzielonych średnikami. Jeśli parametr jest tablicą ciągów ( `string[]` ), każdy element zostanie wstawiony do tablicy na podstawie lokalizacji średników. Jeśli parametr zadania jest typu <xref:Microsoft.Build.Framework.ITaskItem> `[]` , wartość jest zawartość kolekcji elementów wraz z dowolnymi dołączonymi metadanymi. Aby rozdzielić każdy element przy użyciu znaku innego niż średnik, użyj składni @ ( \<myType> , " \<separator> ").
 
-Aparat MSBuild może oceniać symbole wieloznaczne, takie jak `*` i `?` i cykliczne symbole wieloznaczne, takie jak */ \* \* / \* . cs* . Aby uzyskać więcej informacji, zobacz [Items](../msbuild/msbuild-items.md).
+Aparat MSBuild może oceniać symbole wieloznaczne, takie jak `*` i `?` i cykliczne symbole wieloznaczne, takie jak */ \* \* / \* . cs*. Aby uzyskać więcej informacji, zobacz [Items](../msbuild/msbuild-items.md).
 
 ## <a name="examples"></a>Przykłady
 
@@ -126,7 +126,7 @@ Poniższy przykład kodu pokazuje, jak używać `Update` atrybutu do modyfikowan
 </ItemGroup>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Elementy](../msbuild/msbuild-items.md)
 - [Wspólne elementy projektów MSBuild](../msbuild/common-msbuild-project-items.md)

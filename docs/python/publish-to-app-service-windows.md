@@ -5,18 +5,18 @@ ms.date: 01/07/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 9a3aee5dc1c2d1272c3814fa6cfb2561f6cb4564
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: af3e7c2d74a9d7b3a95ae24bba37981822247728
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801311"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912557"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>Publikowanie w usłudze Azure App Service w systemie Windows
 
@@ -57,7 +57,7 @@ Korzystając z aktywnej subskrypcji platformy Azure, Utwórz App Service z pust�
 1. Wybierz pozycję **+ Nowy**, a następnie wybierz pozycję **Sieć Web + aplikacje mobilne** po której następuje **aplikacja internetowa**.
 1. Określ nazwę aplikacji sieci Web, pozostaw **grupę zasobów** na "Utwórz nową" i wybierz **system Windows** jako system operacyjny.
 1. Wybierz pozycję **Plan/Lokalizacja usługi App Service**, wybierz pozycję **Utwórz nową**, a następnie określ nazwę i lokalizację. Następnie wybierz pozycję **warstwa cenowa**, przewiń w dół do, a następnie wybierz pozycję **F1 bezpłatnie** , naciśnij **pozycję Wybierz**, a następnie przycisk **OK** , a następnie **Utwórz**.
-1. Obowiązkowe Po utworzeniu App Service przejdź do niego, wybierz pozycję **Pobierz profil publikowania**i Zapisz plik lokalnie.
+1. Obowiązkowe Po utworzeniu App Service przejdź do niego, wybierz pozycję **Pobierz profil publikowania** i Zapisz plik lokalnie.
 
 ### <a name="using-a-temporary-app-service"></a>Używanie tymczasowego App Service
 
@@ -79,7 +79,7 @@ W razie potrzeby można również zainstalować `bottle` pakiet przy użyciu pro
 
 Publikowanie w Azure App Service z programu Visual Studio 2017 i nowsze kopiuje tylko pliki w projekcie do serwera programu. W związku z tym konieczne jest utworzenie plików niezbędnych do skonfigurowania środowiska serwera.
 
-1. W programie Visual Studio **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt, a następnie wybierz pozycję **Dodaj > nowy element.**... W wyświetlonym oknie dialogowym wybierz szablon "Azure web.config (Fast CGI)", a następnie kliknij przycisk OK. Spowoduje to utworzenie pliku `web.config` w katalogu głównym projektu.
+1. W programie Visual Studio **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt, a następnie wybierz pozycję **Dodaj > nowy element.**... W wyświetlonym oknie dialogowym wybierz szablon "Azure web.config (Fast CGI)", a następnie kliknij przycisk OK. Spowoduje to utworzenie pliku `web.config` w katalogu głównym projektu.
 
 1. Zmodyfikuj `PythonHandler` wpis w `web.config` tak, aby ścieżka była zgodna z instalacją języka Python na serwerze (zobacz [Dokumentacja konfiguracji usług IIS](https://www.iis.net/configreference) (IIS.NET), aby uzyskać dokładne informacje. Na przykład w przypadku języka Python 3.6.1 x64 wpis powinien wyglądać następująco:
 
@@ -133,9 +133,9 @@ Publikowanie w Azure App Service z programu Visual Studio 2017 i nowsze kopiuje 
 
     Należy pamiętać, że gdy tablica jest pusta, Django automatycznie zezwala na "localhost", ale dodanie produkcyjnego adresu URL spowoduje usunięcie tych możliwości. Z tego powodu warto zachować osobne kopie i tworzenie kopii produkcyjnych `settings.py` lub użyć zmiennych środowiskowych w celu kontrolowania wartości czasu wykonywania.
 
-1. W **Eksplorator rozwiązań**rozwiń folder o nazwie takiej samej jak projekt, kliknij prawym przyciskiem myszy `static` folder, wybierz pozycję **Dodaj > nowy element...**, wybierz szablon "Pliki statyczne platformy Azure web.config" i wybierz polecenie **OK**. Ta akcja spowoduje utworzenie kolejnego pliku `web.config` w folderze `static`, co z kolei spowoduje wyłączenie przetwarzania języka Python dla tego folderu. Ta konfiguracja wysyła żądania dotyczące plików statycznych do domyślnego serwera internetowego, zamiast korzystać z aplikacji Python.
+1. W **Eksplorator rozwiązań** rozwiń folder o nazwie takiej samej jak projekt, kliknij prawym przyciskiem myszy `static` folder, wybierz pozycję **Dodaj > nowy element...**, wybierz szablon "Pliki statyczne platformy Azure web.config" i wybierz polecenie **OK**. Ta akcja spowoduje utworzenie kolejnego pliku `web.config` w folderze `static`, co z kolei spowoduje wyłączenie przetwarzania języka Python dla tego folderu. Ta konfiguracja wysyła żądania dotyczące plików statycznych do domyślnego serwera internetowego, zamiast korzystać z aplikacji Python.
 
-1. Zapisz projekt, a następnie w programie Visual Studio **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Publikuj**.
+1. Zapisz projekt, a następnie w programie Visual Studio **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Publikuj**.
 
     ![Polecenie Publikuj w menu kontekstowym projektu](media/template-web-publish-command.png)
 
@@ -202,7 +202,7 @@ Publikowanie w Azure App Service z programu Visual Studio 2017 i nowsze kopiuje 
 
 1. Wybierz pozycję **dalej >** w razie potrzeby, aby przejrzeć dodatkowe ustawienia.
 
-1. Wybierz pozycję **Opublikuj**. Po wdrożeniu aplikacji na platformie Azure w tej witrynie zostanie otwarta przeglądarka domyślna.
+1. Kliknij pozycję **Opublikuj**. Po wdrożeniu aplikacji na platformie Azure w tej witrynie zostanie otwarta przeglądarka domyślna.
 
 W ramach tego procesu program Visual Studio wykonuje również następujące czynności:
 

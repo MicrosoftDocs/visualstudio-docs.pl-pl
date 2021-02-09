@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: d07ac73f-2c2d-4e9a-812a-6dcb632bafe2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e6a71a34b4ce208b093f7982ba3516b0229c8644
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 195ef17e4770d7050bc3b10f11ca5530e5ca49cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436676"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914475"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>Instrukcje: kompilowanie projektu zawierającego zasoby
 

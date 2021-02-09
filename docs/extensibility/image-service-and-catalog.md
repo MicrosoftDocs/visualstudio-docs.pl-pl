@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41adcbe97f9d0779fbad465bac673a3f7cf086c7
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 77fdc39ccccb7728749edd55527741c15bb1bcb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993539"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912745"
 ---
 # <a name="image-service-and-catalog"></a>Usługa obrazów i wykaz
 Ten Cookbook zawiera wskazówki i najlepsze rozwiązania dotyczące wdrażania usługi obrazów programu Visual Studio i katalogu obrazów wprowadzonego w programie Visual Studio 2015.
@@ -105,7 +105,7 @@ Ten Cookbook zawiera wskazówki i najlepsze rozwiązania dotyczące wdrażania u
 
 |**Podelementu**|**Definicja**|
 |-|-|
-|Importuj|Importuje symbole danego pliku manifestu do użycia w bieżącym manifeście|
+|Import|Importuje symbole danego pliku manifestu do użycia w bieżącym manifeście|
 |Guid (identyfikator GUID)|Symbol reprezentuje identyfikator GUID i musi pasować do formatowania identyfikatora GUID|
 |ID (Identyfikator)|Symbol reprezentuje identyfikator i musi być nieujemną liczbą całkowitą|
 |Ciąg|Symbol reprezentuje arbitralną wartość ciągu|
@@ -161,12 +161,12 @@ Ten Cookbook zawiera wskazówki i najlepsze rozwiązania dotyczące wdrażania u
 
 |**Atrybut**|**Definicja**|
 |-|-|
-|Adresu|Potrzeb Identyfikator URI, który definiuje miejsce, z którego można załadować obraz. Może być jedną z następujących czynności:<br /><br /> - [Identyfikator URI pakietu](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) przy użyciu urzędu Application:///<br />-Bezwzględne odwołanie do zasobu składnika<br />-Ścieżka do pliku zawierającego zasób natywny|
-|Tło|Obowiązkowe Wskazuje, jaki rodzaj tła ma być używany.<br /><br /> Może być jedną z następujących czynności:<br /><br /> *Jasne:* Źródło może być używane na jasnym tle.<br /><br /> *Ciemny:* Źródło może być używane w ciemnym tle.<br /><br /> *HighContrast:* Źródło może być używane na dowolnym tle w trybie duży kontrast.<br /><br /> *HighContrastLight:* Źródło może być używane na jasnym tle w trybie duży kontrast.<br /><br /> *HighContrastDark:* Źródło może być używane na ciemnym tle w trybie duży kontrast.<br /><br /> Jeśli atrybut Background zostanie pominięty, źródło może być używane w dowolnym tle.<br /><br /> Jeśli tło jest *jasne*, *ciemne*, *HighContrastLight* lub *HighContrastDark*, kolory źródła nigdy nie są odwracane. Jeśli tło zostanie pominięte lub ustawiona na *HighContrast*, inwersja kolorów źródła jest kontrolowana przez atrybut **AllowColorInversion** obrazu.|
+|Adresu|Potrzeb Identyfikator URI, który definiuje miejsce, z którego można załadować obraz. Może to być jedna z następujących opcji:<br /><br /> - [Identyfikator URI pakietu](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) przy użyciu urzędu Application:///<br />-Bezwzględne odwołanie do zasobu składnika<br />-Ścieżka do pliku zawierającego zasób natywny|
+|Tło|Obowiązkowe Wskazuje, jaki rodzaj tła ma być używany.<br /><br /> Może to być jedna z następujących opcji:<br /><br /> *Jasne:* Źródło może być używane na jasnym tle.<br /><br /> *Ciemny:* Źródło może być używane w ciemnym tle.<br /><br /> *HighContrast:* Źródło może być używane na dowolnym tle w trybie duży kontrast.<br /><br /> *HighContrastLight:* Źródło może być używane na jasnym tle w trybie duży kontrast.<br /><br /> *HighContrastDark:* Źródło może być używane na ciemnym tle w trybie duży kontrast.<br /><br /> Jeśli atrybut Background zostanie pominięty, źródło może być używane w dowolnym tle.<br /><br /> Jeśli tło jest *jasne*, *ciemne*, *HighContrastLight* lub *HighContrastDark*, kolory źródła nigdy nie są odwracane. Jeśli tło zostanie pominięte lub ustawiona na *HighContrast*, inwersja kolorów źródła jest kontrolowana przez atrybut **AllowColorInversion** obrazu.|
 
 \<Source>Element może mieć dokładnie jeden z następujących opcjonalnych podelementów:
 
-|**Postaci**|**Atrybuty (wszystkie wymagane)**|**Definicja**|
+|**Element**|**Atrybuty (wszystkie wymagane)**|**Definicja**|
 |-|-|-|
 |\<Size>|Wartość|Źródło będzie używane dla obrazów o danym rozmiarze (w jednostkach urządzeń). Obraz będzie kwadratowy.|
 |\<SizeRange>|MinSize, brak|Źródło będzie używane dla obrazów z MinSize do rozmiaru całkowitego (w jednostkach urządzeń) włącznie. Obraz będzie kwadratowy.|

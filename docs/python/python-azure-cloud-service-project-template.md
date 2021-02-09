@@ -5,18 +5,18 @@ ms.date: 11/12/2018
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 4d205ee2bbc0a6e9c44c34f3b0487abb4f22283e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a40745b19bde57f7f0ca52e04a11a89ad1ca69ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72983663"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912428"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projekty usług w chmurze platformy Azure dla języka Python
 
@@ -45,7 +45,7 @@ Ten artykuł zawiera szczegółowe informacje o szablonie projektu i innych obs�
 
     ![Pliki obsługi roli proces roboczy](media/template-azure-cloud-service-worker-role-support-files.png)
 
-    Aby dodać te skrypty konfiguracji do nowego projektu, kliknij prawym przyciskiem myszy projekt, wybierz polecenie **Dodaj**  >  **nowy element**i wybierz opcję **pliki obsługi roli sieci Web** lub **pliki obsługi roli procesu roboczego**.
+    Aby dodać te skrypty konfiguracji do nowego projektu, kliknij prawym przyciskiem myszy projekt, wybierz polecenie **Dodaj**  >  **nowy element** i wybierz opcję **pliki obsługi roli sieci Web** lub **pliki obsługi roli procesu roboczego**.
 
 ## <a name="configure-role-deployment"></a>Konfigurowanie wdrożenia roli
 
@@ -87,7 +87,7 @@ W przypadku Cloud Services skrypt *ConfigureCloudService.ps1* używa programu `p
 
 Należy pamiętać, że wystąpienia usługi w chmurze nie obejmują kompilatorów języka C, dlatego wszystkie biblioteki z rozszerzeniami języka C muszą udostępniać wstępnie skompilowane pliki binarne.
 
-Program PIP i jego zależności, a także pakiety w *requirements.txt*są pobierane automatycznie i mogą liczyć jako płatne użycie przepustowości. Aby uzyskać szczegółowe informacje na temat zarządzania plikami *requirements.txt* , zobacz [Zarządzanie wymaganymi pakietami](managing-required-packages-with-requirements-txt.md) .
+Program PIP i jego zależności, a także pakiety w *requirements.txt* są pobierane automatycznie i mogą liczyć jako płatne użycie przepustowości. Aby uzyskać szczegółowe informacje na temat zarządzania plikami *requirements.txt* , zobacz [Zarządzanie wymaganymi pakietami](managing-required-packages-with-requirements-txt.md) .
 
 ## <a name="troubleshooting"></a>Rozwiązywanie problemów
 

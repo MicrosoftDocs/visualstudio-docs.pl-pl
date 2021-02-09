@@ -23,15 +23,15 @@ helpviewer_keywords:
 ms.assetid: bbc02cf7-a7e6-44fe-99af-87a43e1d7251
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a0458fb4981642d3f8386edd4c3605ae7b902a14
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: 83522eb13350d86ef0531d90b3db844ece8f6655
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398678"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913417"
 ---
 # <a name="how-to-debug-an-activex-control"></a>Porady: debugowanie formantu ActiveX
 
@@ -58,7 +58,7 @@ Aby debugować formant ActiveX, należy określić kontener (plik wykonywalny), 
 
      Jeśli nie określisz kontenera w oknie dialogowym **strony właściwości projektu** , możesz określić kontener po rozpoczęciu debugowania. Po wybraniu polecenia wykonywania w celu rozpoczęcia debugowania zostanie wyświetlone okno [dialogowe plik wykonywalny dla sesji debugowania](../debugger/executable-for-debugging-session-dialog-box.md) . Określ nazwę ścieżki kontenera w oknie dialogowym.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Kontrolki ActiveX](/cpp/mfc/activex-controls)
 - [Testowanie właściwości i zdarzeń za pomocą kontenera testów](/cpp/mfc/testing-properties-and-events-with-test-container)

@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: b0449111-8b48-45a1-a031-ea24b765e969
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51098553d0b4b969b600f6e6e55cf62871cb44bf
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: dba5063080fb45c366e7a1b76461b0a0d8978f7d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903848"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915156"
 ---
 # <a name="projecttemplatelink-element-visual-studio-templates"></a>ProjectTemplateLink, element (szablony Visual Studio)
 Określa ścieżkę do pliku *. vstemplate* jednego projektu w szablonie wieloprojektowym.
@@ -96,7 +96,7 @@ oraz \<VSTemplate>
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
 - [Instrukcje: Tworzenie szablonów wieloprojektowych](../ide/how-to-create-multi-project-templates.md)

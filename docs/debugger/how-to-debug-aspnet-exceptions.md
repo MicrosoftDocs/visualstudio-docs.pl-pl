@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 1810096e-de8c-435e-be3d-f365d0cd0a6a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: 945e289f3da55c8884f4ec2cd115c65dbe3be237
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: 00823fd1a5029cb45b91a6beb4168f8a9cbd999a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398652"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913263"
 ---
 # <a name="how-to-debug-aspnet-exceptions"></a>Porady: debugowanie wyjątków ASP.NET
 Debugowanie wyjątków jest ważną częścią opracowywania niezawodnej [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji. Ogólne informacje o sposobie debugowania wyjątków polegają na [zarządzaniu wyjątkami za pomocą debugera](../debugger/managing-exceptions-with-the-debugger.md).
@@ -49,5 +49,5 @@ Debugowanie wyjątków jest ważną częścią opracowywania niezawodnej [!INCLU
 
 - Umieść `try ... catch` bloki wokół kodu, który może generować wyjątki, które można przewidywanie i wiedzieć, jak obsłużyć. Na przykład jeśli aplikacja przeprowadza wywołania do usługi sieci Web XML lub bezpośrednio do SQL Server, ten kod powinien znajdować się w **try... bloki catch** , ponieważ mogą wystąpić liczne wyjątki.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Debuguj aplikacje ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)

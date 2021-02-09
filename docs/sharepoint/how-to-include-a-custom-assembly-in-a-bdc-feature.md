@@ -16,15 +16,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], add reference
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e7a2a0109faca4da5406b45b4d606ae8a5cd0685
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 7a5bce649a0bd9411c064c463defa0946b47e81f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903471"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913605"
 ---
 # <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>Instrukcje: uwzględnianie niestandardowego zestawu w funkcji BDC
   Projekt może odwoływać się do zestawów z innych projektów w tym samym rozwiązaniu. Należy jednak dodać te zestawy do pliku funkcji projektu za pomocą okna dialogowego **Przypisz przywoływane zestawy do LobSystems** .
@@ -49,7 +49,7 @@ ms.locfileid: "94903471"
     > [!NOTE]
     > Aby debugować kod w zestawie niestandardowym, należy dodać zestaw do pakietu rozwiązania. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie i usuwanie dodatkowych zestawów](../sharepoint/how-to-add-and-remove-additional-assemblies.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: korzystanie z pliku zasobu do określania zlokalizowanych nazw, właściwości i uprawnień](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)
 - [Instrukcje: Dodawanie istniejącego pliku modelu BDC do projektu programu SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)
 - [Tworzenie modelu łączności danych firmy](../sharepoint/creating-a-business-data-connectivity-model.md)

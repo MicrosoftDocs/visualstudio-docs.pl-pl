@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b6663608-b049-44b0-a75b-080fdc5faafc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0dadf3d8965d36719282e0ae98f56e61679f97e4
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 448c87bfff021db3df8f72f2f5a42c78cd6ef197
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94973923"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913105"
 ---
 # <a name="com-constants-in-managed-code"></a>Stałe modelu COM w kodzie zarządzanym
 Struktura pakietu zarządzanego (MPF) udostępnia kilka standardowych stałych modelu COM dostępnych w kodzie zarządzanym. Te stałe są wymienione poniżej jako odwołanie.
@@ -128,5 +128,5 @@ Struktura pakietu zarządzanego (MPF) udostępnia kilka standardowych stałych m
 
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_UNKNOWNNAME>
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Obsługa błędów i zwracane wartości](../extensibility/error-handling-and-return-values.md)

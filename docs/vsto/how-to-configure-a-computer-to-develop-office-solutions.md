@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, installing tools
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d6504ac9682c4cd4e7691c651f1ee5c2b3818bf2
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: eeb5deffd0d6dbfb39da22db993bdb201bac5e17
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844312"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913484"
 ---
 # <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>Instrukcje: Konfigurowanie komputera do opracowywania rozwiązań pakietu Office
   Aby skonfigurować komputer deweloperski w taki sposób, aby można było użyć Microsoft Office narzędzia deweloperskie w programie Visual Studio, postępuj zgodnie z instrukcjami podanymi w tym temacie. Aby wykonać te kroki, musisz mieć uprawnienia administracyjne na komputerze deweloperskim.
@@ -36,7 +36,7 @@ ms.locfileid: "96844312"
 
 3. Jeśli masz angielską wersję programu Visual Studio, ale używasz ustawień innych niż angielskie dla systemu Windows, możesz zainstalować [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] pakiet językowy, aby zobaczyć [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] komunikaty w tym samym języku co system Windows. Wersje inne niż angielskie programu Visual Studio automatycznie instalują pakiet językowy. Pakiet językowy jest dostępny w [Centrum pobierania Microsoft](https://www.microsoft.com/download/details.aspx?id=54246).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Wprowadzenie &#40;Programowanie Office w programie Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Instrukcje: Instalowanie pakietu redystrybucyjnego środowiska uruchomieniowego Office Visual Studio Tools](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)

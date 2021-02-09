@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: f46feb9b-4c16-4fec-b6e1-36a959692ba3
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 94fcd9e1ed16b86caf65b9c7fab44ba4f93b7a7a
-ms.sourcegitcommit: 55bc9df751a21656de8cc5b6dbd8a2a1915ec690
+ms.openlocfilehash: ede73e06575a91cf9bdf8115942c27b1ce4e2841
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99572905"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914464"
 ---
 # <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>Instrukcje: kompilowanie określonych obiektów docelowych w rozwiązaniach za pomocą MSBuild.exe
 

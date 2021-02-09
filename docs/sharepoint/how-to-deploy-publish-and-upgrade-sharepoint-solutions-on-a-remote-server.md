@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: db476af4a9d3be9cab2109fb3489d0767765075f
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: ab301f11ffdae03564f05388dfbba55a90d12391
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903575"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913684"
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Instrukcje: wdrażanie, publikowanie i uaktualnianie rozwiązań SharePoint na serwerze zdalnym
   Oprócz wdrażania rozwiązań programu SharePoint w systemie lokalnym można publikować rozwiązania programu SharePoint w trybie piaskownicy w witrynach zdalnych lub lokalnych witrynach programu SharePoint. Proces publikowania zdalnego kopiuje plik *. wsp* do serwera programu SharePoint, instaluje rozwiązanie, a następnie umożliwia aktywowanie rozwiązania. Możesz również uaktualnić zdalną instalację rozwiązania SharePoint po wprowadzeniu zmian.
@@ -77,7 +77,7 @@ ms.locfileid: "94903575"
 
      Stara wersja rozwiązania została zdezaktywowana, Nowa wersja rozwiązania zostanie uaktualniona przy użyciu danych przechowywanych ze starego rozwiązania, a nowe rozwiązanie zostanie aktywowane w programie SharePoint.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: wdrażanie i publikowanie rozwiązania SharePoint w lokalnej witrynie programu SharePoint](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)
 - [Tworzenie pakietów rozwiązania SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)
 - [Instrukcje: Dostosowywanie pakietu rozwiązania SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)

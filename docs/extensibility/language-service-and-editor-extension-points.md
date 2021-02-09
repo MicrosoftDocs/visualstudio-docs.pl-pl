@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 91a6417e-a6fe-4bc2-9d9f-5173c634a99b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 06329fcfcefe3ea75b772495f6a7e0dd14ced087
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: 925bc0f123649bd0d5d29f5a7bec83227829b8af
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97615554"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915224"
 ---
 # <a name="language-service-and-editor-extension-points"></a>Punkty rozszerzenia usługi językowej i edytora
 Edytor zawiera punkty rozszerzenia, które można rozszerzać jako części składników Managed Extensibility Framework (MEF), w tym większość funkcji usługi językowej. Są to główne kategorie punktów rozszerzenia:
@@ -81,7 +81,7 @@ internal static ContentTypeDefinition TestContentTypeDefinition;
 
   Są to niektóre typy zawartości zdefiniowane przez program Visual Studio i niektóre Języki, które są obsługiwane w programie Visual Studio:
 
-- Podstawowe
+- Podstawowa
 
 - C/C++
 

@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 40a94339-d3f7-4ab9-b8a1-b8cf82942f44
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 723f35142ec125c016caa3653be450b61fb05d02
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: 3b819a5cdbd09ced66fddec91574c1d03718518f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398561"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913267"
 ---
 # <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>Instrukcje: debugowanie z projektu DLL w programie Visual Studio (C#, C++, Visual Basic, F #)
 
@@ -83,7 +83,7 @@ Natywne i zarządzane projekty DLL mają różne ustawienia, aby określić apli
 
 Jeśli debugowanie nie trafi w punkty przerwania, upewnij się, że dane wyjściowe biblioteki DLL (domyślnie folder *\<project> \debug.* ) są lokalizacją, którą wywołuje aplikacja wywołująca.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Debugowanie projektów DLL](../debugger/debugging-dll-projects.md)
 - [Ustawienia projektu dla konfiguracji debugowania w języku C#](../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Ustawienia projektu dla konfiguracji debugowania w języku Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)

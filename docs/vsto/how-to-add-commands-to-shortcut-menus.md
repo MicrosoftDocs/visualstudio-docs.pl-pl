@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, context menus
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 95cc6a9dc773c9a0cb07eff518566af9dcc49e96
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 2f5c244d78ab5a6b5d98550b11c280159f285db7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845495"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913455"
 ---
 # <a name="how-to-add-commands-to-shortcut-menus"></a>Instrukcje: Dodawanie poleceń do menu skrótów
   W tym temacie pokazano, jak dodać polecenia do menu skrótów w aplikacji pakietu Office przy użyciu dodatku VSTO.
@@ -81,7 +81,7 @@ ms.locfileid: "96845495"
      [!code-vb[Trin_WordAddIn_Menus#2](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/ribbon1.vb#2)]
      [!code-csharp[Trin_WordAddIn_Menus#2](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/ribbon1.cs#2)]
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dostosowywanie interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md)
 - [Przewodnik: Tworzenie menu skrótów dla zakładek](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
 - [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)

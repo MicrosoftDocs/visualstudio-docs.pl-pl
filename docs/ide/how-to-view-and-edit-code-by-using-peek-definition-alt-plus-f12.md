@@ -6,15 +6,15 @@ ms.date: 01/10/2018
 ms.topic: how-to
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b706e730767c7c79fbeebc11291ecd11f4635b6
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 9c296aca79e6f334c93d8a9974d4a718ccd39d97
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95596927"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915003"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Instrukcje: wyświetlanie i edytowanie kodu za pomocą definicji wglądu (Alt + F12)
 
@@ -72,19 +72,19 @@ Gdy zaczniesz edytować wewnątrz okna **definicji wglądu** , modyfikowany plik
 
 Możesz użyć następujących skrótów klawiaturowych z oknem **definicji wglądu** :
 
-|Funkcja|Skrót klawiaturowy|
+|Funkcjonalność|Skrót klawiaturowy|
 |-------------------|:-----------------------:|
 |Otwórz okno definicji|**Alt** + **F12**|
 |Zamknij okno definicji|**Esc**|
 |Promuj okno definicji do karty zwykłego dokumentu|**Ctrl** + **Alt** + **Strona główna**|
-|Przechodzenie między oknami definicji|**Ctrl** + **Alt** + Alt **-** i **Ctrl** + **Alt**+**=**|
+|Przechodzenie między oknami definicji|**Ctrl** +  + Alt **-** i **Ctrl** + **Alt**+**=**|
 |Przechodzenie między wieloma wynikami|**F8** i **SHIFT** + **F8**|
 |Przełączanie się między oknem edytora kodu i oknem definicji|**SHIFT** + **ESC**|
 
 > [!NOTE]
 > Możesz również użyć tych samych skrótów klawiaturowych do edycji kodu w oknie **definicji wglądu** w innym miejscu w programie Visual Studio.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Nawiguj po kodzie](../ide/navigating-code.md)
 - [Przejdź do definicji i Zobacz definicję](../ide/go-to-and-peek-definition.md)

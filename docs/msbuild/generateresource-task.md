@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: c0aff32f-f2cc-46f6-9c3e-a5c9f8f912b1
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 124e5dcc3666698dd71927e15c3686038233c317
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 810cbd4987277416b5be545603908d9818bff890
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436880"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914757"
 ---
 # <a name="generateresource-task"></a>GenerateResource — zadanie
 

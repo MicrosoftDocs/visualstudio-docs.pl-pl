@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: c9bf5fcf-6453-40ea-b50f-a212adc3e9b5
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e98d0d64a8df1dac29127ffcf76fe8b6cc39a43
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 0384ee6cbfa749589e15ab073cc31ffebb53985e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048623"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912526"
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference, zadanie
 
@@ -50,7 +50,7 @@ Przyjmuje listę jednej lub więcej nazw bibliotek typów lub plików *TLB* i ro
 |`SdkToolsPath`|Opcjonalny <xref:System.String?displayProperty=fullName> parametr.<br /><br /> Jeśli `ExecuteAsTool` tak jest `true` , ten parametr musi być ustawiony na ścieżkę narzędzi zestawu SDK dla planowanej wersji platformy.|
 |`StateFile`|Opcjonalny `String` parametr.<br /><br /> Określa plik pamięci podręcznej dla sygnatur czasowych składnika modelu COM. Jeśli nie istnieje, każde uruchomienie spowoduje ponowne wygenerowanie wszystkich otok.|
 |`TargetFrameworkVersion`|Opcjonalny `String` parametr.<br /><br /> Określa wersję platformy docelowej projektu.<br /><br /> Wartość domyślna to `String.Empty`. oznacza to, że nie istnieje filtrowanie odwołań na podstawie platformy docelowej.|
-|`TargetProcessorArchitecture`|Opcjonalny `String` parametr.<br /><br /> Określa preferowaną docelową architekturę procesora. Przekazanie do flagi *tlbimp.exe* /Machine po przetłumaczeniu.<br /><br /> Wartość parametru powinna być elementem członkowskim <xref:Microsoft.Build.Utilities.ProcessorArchitecture> .|
+|`TargetProcessorArchitecture`|Opcjonalny `String` parametr.<br /><br /> Określa preferowaną docelową architekturę procesora. Przekazanie do flagi *tlbimp.exe*/Machine po przetłumaczeniu.<br /><br /> Wartość parametru powinna być elementem członkowskim <xref:Microsoft.Build.Utilities.ProcessorArchitecture> .|
 |`TypeLibFiles`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr.<br /><br /> Określa ścieżkę pliku biblioteki typów do odwołań COM. Elementy zawarte w tym parametrze mogą zawierać metadane elementu. Aby uzyskać więcej informacji, zobacz sekcję [TypeLibFiles Item Metadata](#typelibfiles-item-metadata) poniżej.|
 |`TypeLibNames`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr.<br /><br /> Określa nazwy bibliotek typów do rozwiązania. Elementy zawarte w tym parametrze muszą zawierać metadane elementu. Aby uzyskać więcej informacji, zobacz sekcję [TypeLibNames Item Metadata](#typelibnames-item-metadata) poniżej.|
 |`WrapperOutputDirectory`|Opcjonalny `String` parametr.<br /><br /> Lokalizacja na dysku, na którym znajduje się wygenerowany zestaw międzyoperacyjny. Jeśli nie określono metadanych tego elementu, zadanie używa ścieżki bezwzględnej katalogu, w którym znajduje się plik projektu.|

@@ -17,19 +17,19 @@ helpviewer_keywords:
 ms.assetid: d5a53472-6f2a-42b8-a6db-593ca99c9790
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 70c996d5a8d1d4bf296a395bfb64ead6eba1bb01
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 881eb0cc8a3c872ed7166f8aff30420730f88c0d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903576"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913750"
 ---
 # <a name="lc-task"></a>LC — Zadanie
 
-Zawija *LC.exe* , które generuje plik *licencji* z pliku *. licx* . Aby uzyskać więcej informacji na *LC.exe* , zobacz [Lc.exe (kompilator licencji)](/dotnet/framework/tools/lc-exe-license-compiler).
+Zawija *LC.exe*, które generuje plik *licencji* z pliku *. licx* . Aby uzyskać więcej informacji na *LC.exe*, zobacz [Lc.exe (kompilator licencji)](/dotnet/framework/tools/lc-exe-license-compiler).
 
 ## <a name="parameters"></a>Parametry
 
@@ -42,7 +42,7 @@ W poniższej tabeli opisano parametry `LC` zadania.
 |`OutputDirectory`|Opcjonalny `String` parametr.<br /><br /> Określa katalog, w którym mają zostać umieszczone pliki *. licenses* .|
 |`OutputLicense`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> parametr wyjściowy.<br /><br /> Określa nazwę pliku *. licenses* . Jeśli nazwa nie zostanie określona, zostanie użyta nazwa pliku *. licx* , a plik *. licenses* zostanie umieszczony w katalogu, który zawiera plik *. licx* .|
 |`ReferencedAssemblies`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr.<br /><br /> Określa składniki, do których istnieją odwołania do załadowania podczas generowania pliku *licencji* .|
-|`SdkToolsPath`|Opcjonalny `String` parametr.<br /><br /> Określa ścieżkę do narzędzi zestawu SDK, takich jak *resgen.exe* .|
+|`SdkToolsPath`|Opcjonalny `String` parametr.<br /><br /> Określa ścieżkę do narzędzi zestawu SDK, takich jak *resgen.exe*.|
 |`Sources`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Określa elementy zawierające licencjonowane składniki do uwzględnienia w pliku *. licenses* . Aby uzyskać więcej informacji, zapoznaj się z dokumentacją `/complist` przełącznika w [Lc.exe (kompilator licencji)](/dotnet/framework/tools/lc-exe-license-compiler).|
 
 [!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
@@ -71,7 +71,7 @@ Poniższy przykład używa `LC` zadania do kompilowania licencji.
 </Project>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Zadania](../msbuild/msbuild-tasks.md)
 - [Dokumentacja zadań](../msbuild/msbuild-task-reference.md)

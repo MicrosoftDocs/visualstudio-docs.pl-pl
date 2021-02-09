@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e64f805496d03b42ca70489bab1302ecf58b33bc
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 59354537f0c1f22534395da1e0ed3db3929a14a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903562"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913652"
 ---
 # <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>Instrukcje: edytowanie konfiguracji wdrożenia programu SharePoint
   Można utworzyć konfigurację wdrożenia lub zmodyfikować istniejącą konfigurację wdrożenia. Można na przykład uruchomić pojedynczy krok lub zmienić kolejność kroków w procesie wdrażania. Możesz chcieć utworzyć lub zmodyfikować konfiguracje wdrożenia, ponieważ wbudowane i programowo dodane konfiguracje nie mogą zostać zmienione.
@@ -47,11 +47,11 @@ ms.locfileid: "94903562"
 
 #### <a name="to-change-the-active-deployment-configuration"></a>Aby zmienić konfigurację aktywnego wdrożenia
 
-1. W **Eksplorator rozwiązań** wybierz projekt SharePoint, a następnie na pasku menu wybierz **Project**  >  **\<*ProjectName*> Właściwości** projektu.
+1. W **Eksplorator rozwiązań** wybierz projekt SharePoint, a następnie na pasku menu wybierz   >  **\<*ProjectName*> Właściwości** projektu.
 
 2. Wybierz kartę **SharePoint** .
 
 3. W polu listy **Konfiguracja wdrożenia aktywnego** wybierz nazwę konfiguracji wdrożenia, która ma być używana.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

@@ -5,21 +5,21 @@ ms.date: 11/12/2018
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 136c03ef11071e5d548e36e45a6a541cffce1469
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0193256edb4a55285e8017a56fe7249ef5d60362
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62784890"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912395"
 ---
 # <a name="django-web-project-template"></a>Szablon projektów internetowych Django
 
-[Django](https://www.djangoproject.com/) to struktura języka Python wysokiego poziomu przeznaczona do szybkiego, bezpiecznego i skalowalnego programowania w sieci Web. Obsługa języka Python w programie Visual Studio oferuje kilka szablonów projektów służących do konfigurowania struktury aplikacji sieci Web opartej na Django. Aby użyć szablonu w programie Visual Studio, wybierz pozycję **plik**  >  **Nowy**  >  **projekt**, wyszukaj ciąg "Django", a następnie wybierz pozycję z **pustego projektu sieci Web Django**, **Django projektu**sieci Web i **sondowania Django szablonów projektu sieci Web** . Zobacz [samouczek uczenie Django](learn-django-in-visual-studio-step-01-project-and-solution.md) , aby zapoznać się z przewodnikiem dotyczącym wszystkich szablonów.
+[Django](https://www.djangoproject.com/) to struktura języka Python wysokiego poziomu przeznaczona do szybkiego, bezpiecznego i skalowalnego programowania w sieci Web. Obsługa języka Python w programie Visual Studio oferuje kilka szablonów projektów służących do konfigurowania struktury aplikacji sieci Web opartej na Django. Aby użyć szablonu w programie Visual Studio, wybierz pozycję **plik**  >  **Nowy**  >  **projekt**, wyszukaj ciąg "Django", a następnie wybierz pozycję z **pustego projektu sieci Web Django**, **Django projektu** sieci Web i **sondowania Django szablonów projektu sieci Web** . Zobacz [samouczek uczenie Django](learn-django-in-visual-studio-step-01-project-and-solution.md) , aby zapoznać się z przewodnikiem dotyczącym wszystkich szablonów.
 
 Program Visual Studio oferuje pełną funkcję IntelliSense dla projektów Django:
 

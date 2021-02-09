@@ -12,15 +12,15 @@ helpviewer_keywords:
 - importing items [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c17f4e7477a20ea245eaa359a6f9611a8dc4ece6
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 331ae3964de40e6590345aadae59776fe37f467a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903497"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913681"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>Instrukcje: Importowanie strony wzorcowej lub motywu
   Możesz nadać stronom w witrynie programu SharePoint spójny wygląd, tworząc i używając stron wzorcowych i motywów. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nie udostępnia szablonów dla tych elementów, ale można je utworzyć w programie SharePoint Designer, a następnie zaimportować je do programu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Aby uzyskać więcej informacji, zobacz [Budowanie bloków: strony i interfejs użytkownika](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14)) w witrynie sieci Web firmy Microsoft.
@@ -91,7 +91,7 @@ ms.locfileid: "94903497"
 
      Zostanie wyświetlona lista stron wzorcowych lub motywów, które zawierają zarówno stronę wzorcową, jak i zaimportowaną kompozycję.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Strony wzorcowe](/previous-versions/office/developer/sharepoint-2010/ms443795(v=office.14))
 - [Importowanie elementów z istniejącej witryny programu SharePoint](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [Tworzenie stron dla programu SharePoint](../sharepoint/creating-pages-for-sharepoint.md)
