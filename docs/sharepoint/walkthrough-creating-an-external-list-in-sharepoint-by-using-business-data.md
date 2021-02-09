@@ -18,15 +18,15 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], external list
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a791f94e46e16369392465e075ade92a833e2868
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: dbf996a2d44f94e4571a332fa7a86d861d820d45
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915339"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847716"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Przewodnik: Tworzenie listy zewnętrznej w programie SharePoint przy użyciu danych firmowych
 
@@ -128,7 +128,7 @@ Dodaj jednostkę do modelu. Możesz dodać jednostki z **przybornika** programu 
 
      Nowa jednostka zostanie wyświetlona w projektancie. Program Visual Studio dodaje plik o nazwie *EntityService. vb* (w Visual Basic) lub *EntityService.cs* (w języku C#) do projektu.
 
-3. Na pasku menu wybierz **View**  >  **Properties**  >  **okno** właściwości widoku.
+3. Na pasku menu wybierz   >    >  **okno** właściwości widoku.
 
 4. W oknie **Właściwości** ustaw wartość właściwości **Nazwa** na **kontakt**.
 
@@ -184,7 +184,7 @@ Dodaj określoną metodę wyszukiwania do jednostki Contact przy użyciu okna **
 
 10. Powtórz krok 6, aby utworzyć deskryptor typu dla każdego z poniższych pól.
 
-    |Name|Nazwa typu|
+    |Nazwa|Nazwa typu|
     |----------|---------------|
     |FirstName (Imię)|System. String|
     |LastName (Nazwisko)|System. String|
