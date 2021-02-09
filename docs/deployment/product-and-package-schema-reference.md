@@ -24,15 +24,15 @@ helpviewer_keywords:
 ms.assetid: 5a74878f-b896-4cca-b968-98d00fe78fb0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ac5810fa3bdd6d479c1df4c484960fd923b0ed59
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 1e409ba89a9ca472f0025ddcf81383ed83641db5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350716"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918363"
 ---
 # <a name="product-and-package-schema-reference"></a>Dokumentacja schematu produktu i pakietu
 *Plik produktu* to manifest XML, który opisuje wszystkie zależności zewnętrzne wymagane przez [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikację. Przykłady zależności zewnętrznych obejmują .NET Framework i składniki dostępu do danych (MDAC) firmy Microsoft. Plik pakietu jest podobny do pliku produktu, ale służy do instalowania składników zależnych od kultury, takich jak zlokalizowane zestawy, umowy licencyjne i dokumentacja.
@@ -50,7 +50,7 @@ ms.locfileid: "94350716"
 |[\<Strings> Postaci](../deployment/strings-element-bootstrapper.md)|Element wymagany. Przechowuje zlokalizowane wersje nazwy produktu i ciągi błędów.|Brak|
 
 ## <a name="remarks"></a>Uwagi
- Schemat pakietu jest używany przez *Setup.exe* , program zastępczy wygenerowany przez zadanie uruchamiania programu MS Build, które zawiera niewielką logikę własną. Schemat ma wszystkie aspekty procesu instalacji.
+ Schemat pakietu jest używany przez *Setup.exe*, program zastępczy wygenerowany przez zadanie uruchamiania programu MS Build, które zawiera niewielką logikę własną. Schemat ma wszystkie aspekty procesu instalacji.
 
  `InstallChecks` testy, które setup.exe powinny wykonać w przypadku istnienia danego pakietu. `PackageFiles` Wyświetla listę wszystkich pakietów, które może zainstalować proces instalacji, w przypadku niepowodzenia danego testu. Każdy wpis polecenia w obszarze polecenia wykonuje jeden z testów opisanych przez `InstallChecks` , i określa, które `PackageFile` do uruchomienia należy wykonać, jeśli test zakończy się niepowodzeniem. Można użyć `Strings` elementu do lokalizowania nazw produktów i komunikatów o błędach, aby można było zainstalować aplikację w dowolnej liczbie języków za pomocą jednego pliku binarnego instalacji pojedynczej.
 

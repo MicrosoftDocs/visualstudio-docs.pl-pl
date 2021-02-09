@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 34628f08c8860771b07d8e2544c79ad23eba18cf
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: b376f1cb1d6b473c0ea37bb33f6ae2b60789fa24
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903571"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919308"
 ---
 # <a name="use-the-msbuild-api"></a>Korzystanie z interfejsu API programu MSBuild
 

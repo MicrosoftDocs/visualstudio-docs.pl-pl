@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: d9a68146-1f43-4621-ac78-2c8c3f400936
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f861fd9e5c10946c2bfee0235632c005822cbf1
-ms.sourcegitcommit: 55bc9df751a21656de8cc5b6dbd8a2a1915ec690
+ms.openlocfilehash: b3451101d6ab2483960731281763167c0cd1629c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99572944"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918976"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>Dokumentacja schematu pliku projektu MSBuild
 
@@ -40,7 +40,7 @@ W programie Visual Studio 2017 i nowszych nie jest wymagany link do schematu w p
 |-------------|--------------------|----------------|
 |[Choose — element (MSBuild)](../msbuild/choose-element-msbuild.md)|Przypadku<br /><br /> Kiedy|--|
 |[Import — element (MSBuild)](../msbuild/import-element-msbuild.md)|--|Warunek<br /><br /> Project|
-|[ImportGroup, element](../msbuild/importgroup-element.md)|Importuj|Warunek|
+|[ImportGroup, element](../msbuild/importgroup-element.md)|Import|Warunek|
 |[Item — element (MSBuild)](../msbuild/item-element-msbuild.md)|*ItemMetadata —*|Warunek<br /><br /> Exclude<br /><br /> Uwzględnij<br /><br /> Usuń|
 |[ItemDefinitionGroup, element (MSBuild)](../msbuild/itemdefinitiongroup-element-msbuild.md)|*Element*|Warunek|
 |[Item, element (MSBuild)](../msbuild/itemgroup-element-msbuild.md)|*Element*|Warunek|
@@ -50,7 +50,7 @@ W programie Visual Studio 2017 i nowszych nie jest wymagany link do schematu w p
 |[Output — element (MSBuild)](../msbuild/output-element-msbuild.md)|--|Warunek<br /><br /> Nazwa_produktu<br /><br /> PropertyName<br /><br /> Parametr zadania|
 |[Parameter, element](../msbuild/parameter-element.md)|--|Dane wyjściowe<br /><br /> ParameterType<br /><br /> Wymagane|
 |[ParameterGroup, element](../msbuild/parametergroup-element.md)|*Parametr*|--|
-|[Project — element (MSBuild)](../msbuild/project-element-msbuild.md)|Wybierz ikonę<br /><br /> Importuj<br /><br /> ItemGroup<br /><br /> ProjectExtensions —<br /><br /> PropertyGroup<br /><br /> Cel<br /><br /> UsingTask|DefaultTargets —<br /><br /> InitialTargets<br /><br /> Zestawie<br /><br /> ToolsVersion<br /><br /> TreatAsLocalProperty<br /><br /> 'xmlns|
+|[Project — element (MSBuild)](../msbuild/project-element-msbuild.md)|Wybierz ikonę<br /><br /> Import<br /><br /> ItemGroup<br /><br /> ProjectExtensions —<br /><br /> PropertyGroup<br /><br /> Cel<br /><br /> UsingTask|DefaultTargets —<br /><br /> InitialTargets<br /><br /> Zestawie<br /><br /> ToolsVersion<br /><br /> TreatAsLocalProperty<br /><br /> 'xmlns|
 |[ProjectExtensions —, element (MSBuild)](../msbuild/projectextensions-element-msbuild.md)|--|--|
 |[Property — element (MSBuild)](../msbuild/property-element-msbuild.md)|--|Warunek|
 |[Property — element (MSBuild)](../msbuild/propertygroup-element-msbuild.md)|*Właściwość*|Warunek|

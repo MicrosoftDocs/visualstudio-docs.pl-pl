@@ -16,15 +16,15 @@ f1_keywords:
 ms.assetid: a05ab01f-3d5d-4675-a845-eab51807d3a3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cf6c984715f5cd35f08bb75526346b68c11dbeb9
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: 30c16e1c76e6f4e12d822f68f2a9530290c15de5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947807"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919465"
 ---
 # <a name="property-pages-javascript"></a>Strony właściwości, JavaScript
 
@@ -34,7 +34,7 @@ Aby uzyskać dostęp do właściwości projektu, wybierz węzeł projektu w **Ek
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
-Na **stronach właściwości**są wyświetlane następujące strony i opcje.
+Na **stronach właściwości** są wyświetlane następujące strony i opcje.
 
 ## <a name="configuration-and-platform-page"></a>Strona konfiguracja i platforma
 
@@ -42,11 +42,11 @@ Użyj następujących opcji, aby wybrać konfigurację i platformę do wyświetl
 
  **Konfiguracja**
 
-Określa ustawienia konfiguracji do wyświetlenia lub zmodyfikowania. Ustawienia to **debugowanie** (domyślne), **wydanie**, **wszystkie konfiguracje**lub Konfiguracja zdefiniowana przez użytkownika. Aby uzyskać więcej informacji, zobacz [How to: Set Debug and Release Configurations in Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
+Określa ustawienia konfiguracji do wyświetlenia lub zmodyfikowania. Ustawienia to **debugowanie** (domyślne), **wydanie**, **wszystkie konfiguracje** lub Konfiguracja zdefiniowana przez użytkownika. Aby uzyskać więcej informacji, zobacz [How to: Set Debug and Release Configurations in Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
 
  **Platforma**
 
-Określa ustawienia platformy do wyświetlenia lub zmodyfikowania. Ustawienia to **każdy procesor CPU** (domyślny dla [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] aplikacji), **x64**, **ARM**, **x86**lub platformy zdefiniowanej przez użytkownika. Aby uzyskać więcej informacji, zobacz [How to: Set Debug and Release Configurations in Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
+Określa ustawienia platformy do wyświetlenia lub zmodyfikowania. Ustawienia to **każdy procesor CPU** (domyślny dla [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] aplikacji), **x64**, **ARM**, **x86** lub platformy zdefiniowanej przez użytkownika. Aby uzyskać więcej informacji, zobacz [How to: Set Debug and Release Configurations in Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
 
 ## <a name="general-page"></a>Strona ogólna
 

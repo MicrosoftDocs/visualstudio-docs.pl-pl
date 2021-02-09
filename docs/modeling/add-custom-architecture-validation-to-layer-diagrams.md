@@ -8,16 +8,16 @@ helpviewer_keywords:
 - dependency diagrams, adding custom validation
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: ea168744427469d1d08dd78bc1a23d79d577604f
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: bd5f17e7e8c12da1d4e01738c26650a3df4760fa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100529"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919315"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Dodawanie niestandardowej walidacji architektury do diagramów zależności
 
@@ -84,7 +84,7 @@ Jeśli chcesz utworzyć jeden VSIX, który zawiera moduły walidacji warstwy, po
 
 3. W **Eksplorator rozwiązań**, w menu rozwijanym prawym przyciskiem projektu VSIX, wybierz **Ustaw jako projekt startowy**.
 
-4. W polu **source. Extension. vsixmanifest**w obszarze **zasoby**Dodaj projekt walidacji warstwy jako składnik MEF:
+4. W polu **source. Extension. vsixmanifest** w obszarze **zasoby** Dodaj projekt walidacji warstwy jako składnik MEF:
 
     1. Wybierz pozycję **Nowy**.
 
@@ -290,6 +290,6 @@ namespace Validator3
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Rozszerzanie diagramów zależności](../modeling/extend-layer-diagrams.md)

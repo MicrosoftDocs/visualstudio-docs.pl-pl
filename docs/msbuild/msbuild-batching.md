@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: d35c085b-27b8-49d7-b6f8-8f2f3a0eec38
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c4d91e95d080b93c8bcdc4486593b4c94bcb501
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: d14a979a166f7378c288453530b46b8ec6c98828
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047705"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919195"
 ---
 # <a name="msbuild-batching"></a>Przetwarzanie wsadowe w programie MSBuild
 
@@ -207,13 +207,13 @@ Przyczyną jest to, że w przypadku korzystania z wsadowego określania wartośc
 
 ## <a name="property-functions-using-metadata"></a>Funkcje właściwości korzystające z metadanych
 
-Przetwarzanie wsadowe może być kontrolowane przez funkcje właściwości, które obejmują metadane. Przykład:
+Przetwarzanie wsadowe może być kontrolowane przez funkcje właściwości, które obejmują metadane. Na przykład
 
 `$([System.IO.Path]::Combine($(RootPath),%(Compile.Identity)))`
 
 używa <xref:System.IO.Path.Combine%2A> do łączenia ścieżki folderu głównego z ścieżką elementu kompilacji.
 
-Funkcje właściwości mogą nie występować w obrębie wartości metadanych. Przykład:
+Funkcje właściwości mogą nie występować w obrębie wartości metadanych. Na przykład
 
 `%(Compile.FullPath.Substring(0,3))`
 

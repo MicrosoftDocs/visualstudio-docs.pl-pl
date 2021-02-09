@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: d762eff4-c92a-4b5f-a944-1ca30aa22319
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a28823a1a492cb1e8d5f434f98248fecc5d84e47
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: d4bfc58c9be578514598fce2d447ef921d091177
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904503"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919064"
 ---
 # <a name="msbuild-items"></a>Elementy programu MSBuild
 
@@ -35,7 +35,7 @@ Elementy programu MSBuild są wejściami do systemu kompilacji i zazwyczaj repre
 </ItemGroup>
 ```
 
- Element *file2.cs* nie zastępuje elementu *file1.cs* ; Zamiast tego nazwa pliku jest dołączana do listy wartości `Compile` typu elementu.
+ Element *file2.cs* nie zastępuje elementu *file1.cs*; Zamiast tego nazwa pliku jest dołączana do listy wartości `Compile` typu elementu.
 
  Poniższy kod XML tworzy ten sam typ elementu przez zadeklarowanie obu plików w jednym `Include` atrybucie. Należy zauważyć, że nazwy plików są oddzielone średnikami.
 
@@ -97,7 +97,7 @@ Aby uzyskać więcej informacji na temat symboli wieloznacznych, zobacz [How to:
 </ItemGroup>
 ```
 
- Ten `Exclude` atrybut ma wpływ tylko na elementy, które są dodawane przez `Include` atrybut w elemencie elementu, który zawiera te wartości. W poniższym przykładzie nie można wykluczyć pliku *Form1.cs* , który został dodany w poprzednim elemencie elementu.
+ Ten `Exclude` atrybut ma wpływ tylko na elementy, które są dodawane przez `Include` atrybut w elemencie elementu, który zawiera te wartości. W poniższym przykładzie nie można wykluczyć pliku *Form1.cs*, który został dodany w poprzednim elemencie elementu.
 
 ```xml
 <Compile Include="*.cs" />
@@ -593,7 +593,7 @@ Item1: notebook
 -->
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Item — element (MSBuild)](../msbuild/item-element-msbuild.md)
 - [Wspólne elementy projektów MSBuild](../msbuild/common-msbuild-project-items.md)

@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Domain-Specific Language, image shape
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 50785a4f37b4f3e9e6eaae1bb2a58dcf206af672
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 8bbd2fff30ab59d14c8aa2762d8cca942063bd79
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361917"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918353"
 ---
 # <a name="properties-of-image-shapes"></a>Właściwości kształtów obrazu
 
@@ -45,7 +45,7 @@ Aby uzyskać więcej informacji, zobacz [How to define a Domain-Specific Languag
 
 Kształty obrazów mają właściwości, które są wymienione w poniższej tabeli.
 
-|Właściwość|Opis|Domyślny|
+|Właściwość|Opis|Domyślne|
 |-|-|-|
 |Kolor wypełnienia|Kolor wypełnienia tego kształtu.|Biały|
 |Tryb gradientu wypełnienia|Tryb gradientu wypełnienia tego kształtu.|Pozioma|
@@ -71,7 +71,7 @@ Kształty obrazów mają właściwości, które są wymienione w poniższej tabe
 |Nazwa wyświetlana|Nazwa, która będzie wyświetlana w wygenerowanym projektancie dla tego kształtu.|\<none>|
 |Stały tekst etykietki narzędzia|Tekst, który jest używany dla stałej etykietki narzędzia.|\<none>|
 |Słowo kluczowe pomocy|Słowo kluczowe, które jest używane do indeksowania pomocy F1 dla tego elementu.|\<none>|
-|Obraz|Ścieżka do pliku obrazu, który jest używany dla tego kształtu.|\<none>|
+|Image (Obraz)|Ścieżka do pliku obrazu, który jest używany dla tego kształtu.|\<none>|
 
 ## <a name="see-also"></a>Zobacz też
 

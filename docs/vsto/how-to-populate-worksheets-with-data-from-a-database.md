@@ -13,15 +13,15 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], adding to worksheets
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4252eac32540ac2d0b6e763b5b6e9cf0e2ac7055
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 66f37a1639cb6a86f107d9372704d5c8364c6a18
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846444"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918566"
 ---
 # <a name="how-to-populate-worksheets-with-data-from-a-database"></a>Instrukcje: zapełnianie arkuszy danymi z bazy danych
 
@@ -69,7 +69,7 @@ Po uruchomieniu projektu, formant Wyświetla pierwszy rekord w źródle danych. 
 
 Informacje o sposobach wysyłania aktualizacji do określonego zestawu danych i bazy danych znajdują się w temacie [How to: Update a Data Source with Data from a host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Powiązywanie danych z kontrolkami w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Dodawanie nowych źródeł danych](../data-tools/add-new-data-sources.md)

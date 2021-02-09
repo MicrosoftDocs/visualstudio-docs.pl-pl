@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint projects, extending
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b815f8ea4656cc5a144f8cf12396391e55123ece
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 378e839ea5f4223873fbbeec8d7b401ae0b16fc0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914871"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918764"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>Przewodnik: Tworzenie rozszerzenia projektu SharePoint
   W tym instruktażu pokazano, jak utworzyć rozszerzenie dla projektów programu SharePoint. Możesz użyć rozszerzenia projektu, aby odpowiedzieć na zdarzenia na poziomie projektu, takie jak w przypadku dodania, usunięcia lub zmiany nazwy projektu. Możesz również dodać właściwości niestandardowe lub odpowiedzieć, gdy zmieni się wartość właściwości. W przeciwieństwie do rozszerzeń elementu projektu, rozszerzenia projektu nie mogą być skojarzone z konkretnym typem projektu programu SharePoint. Podczas tworzenia rozszerzenia projektu rozszerzenie jest ładowane, gdy dowolny rodzaj projektu programu SharePoint jest otwarty w programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
@@ -157,7 +157,7 @@ ms.locfileid: "96914871"
 
 10. Na pasku menu wybierz kolejno opcje **plik**  >  **Zapisz wszystko** po zakończeniu, a następnie zamknij projektanta manifestu.
 
-11. Na pasku menu wybierz kompilacja Kompiluj **Build**  >  **rozwiązanie**, a następnie upewnij się, że projekt kompiluje się bez błędów.
+11. Na pasku menu wybierz kompilacja Kompiluj   >  **rozwiązanie**, a następnie upewnij się, że projekt kompiluje się bez błędów.
 
 12. W **Eksplorator rozwiązań** Otwórz menu skrótów dla projektu **ProjectExtensionPackage** i wybierz polecenie **Otwórz folder w Eksploratorze plików** .
 

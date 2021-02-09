@@ -12,15 +12,15 @@ helpviewer_keywords:
 - data, adding to documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0915d0ef57da5cba7fe73b6b374babe95b1a09c7
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: eb848d789185fe42e301eea414b4e2566f431897
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848082"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918604"
 ---
 # <a name="how-to-populate-documents-with-data-from-a-database"></a>Instrukcje: zapełnianie dokumentów danymi z bazy danych
 
@@ -68,7 +68,7 @@ Po uruchomieniu projektu, formant Wyświetla pierwszy rekord w źródle danych. 
 
 Informacje o sposobach wysyłania aktualizacji do określonego zestawu danych i bazy danych znajdują się w temacie [How to: Update a Data Source with Data from a host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Powiązywanie danych z kontrolkami w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Dodawanie nowych źródeł danych](../data-tools/add-new-data-sources.md)

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - smart documents [Office development in Visual Studio], control layout
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: dbee49a97ab6cb3e6084950e53f30b3cb6ce1b7c
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 49739b6011fcf977db84a3350929a56514040975
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848251"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918588"
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>Instrukcje: zarządzanie układem sterowania w okienkach akcji
   Okienko akcji jest domyślnie zadokowane po prawej stronie dokumentu lub arkusza; można go jednak zadokować do lewej, do góry lub do dołu. Jeśli używasz wielu kontrolek użytkownika, możesz napisać kod, aby prawidłowo ułożyć kontrolki użytkownika w okienku Akcje. Aby uzyskać więcej informacji, zobacz [Omówienie okienka Akcje](../vsto/actions-pane-overview.md).
@@ -67,7 +67,7 @@ ms.locfileid: "96848251"
 
 - Projekt na poziomie dokumentu programu Word z okienkiem akcje zawierającym wiele kontrolek użytkownika lub okienka akcji zagnieżdżonych.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Przegląd okienka Akcje](../vsto/actions-pane-overview.md)
 - [Instrukcje: Dodawanie okienka akcji do dokumentów programu Word lub skoroszytów programu Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
 - [Instrukcje: Dodawanie okienka akcji do dokumentów programu Word lub skoroszytów programu Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
