@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: f50efb78-5206-4803-bb42-426ef8133f2f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 55a004e65a39f4a2b7bbf972cec36d689bf88d97
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 7b92f4e2faf2043c26c7119b6f9754edd3bdc990
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150174"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884393"
 ---
 # <a name="view-threads-and-tasks-in-the-parallel-stacks-window-c-visual-basic-c"></a>Wyświetl wątki i zadania w oknie stosów równoległych (C#, Visual Basic, C++)
 
@@ -137,7 +137,7 @@ W widoku **wątki** lub widoku **zadań** można przestawiać wykres na bieżąc
 
 Jeśli przełączysz się do nowej ramki stosu, nadajesz tej metodzie bieżącą metodę i **Widok metody** wyświetla wszystkie obiekty wywołujące i wywoływane dla nowej metody. Może to spowodować, że niektóre wątki pojawiają się lub znikają z widoku, w zależności od tego, czy ta metoda pojawia się na stosach wywołań. Aby powrócić do widoku stosu wywołań, wybierz ponownie ikonę paska narzędzi **widoku metody** .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Rozpocznij debugowanie aplikacji wielowątkowej](../debugger/get-started-debugging-multithreaded-apps.md)
 - [Przewodnik: debugowanie aplikacji równoległych](../debugger/walkthrough-debugging-a-parallel-application.md)
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)

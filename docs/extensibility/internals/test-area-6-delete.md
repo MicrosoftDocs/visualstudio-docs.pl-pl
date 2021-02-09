@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6f2e872c-5ba2-4303-9f50-a90cef9a6225
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1371472a4dec265b5e476d96a32cb725e91ce7fe
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: cd0e7ba0c1841ea054739cbae85b74245807b324
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487559"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884484"
 ---
 # <a name="test-area-6-delete"></a>Obszar testowy 6: Usuwanie
 Ten obszar testowania wtyczki kontroli źródła obejmuje akcje usuwania.
@@ -27,7 +27,7 @@ Ten obszar testowania wtyczki kontroli źródła obejmuje akcje usuwania.
 
  Poniżej znajduje się lista elementów, które mogą zostać usunięte:
 
-- Files
+- Pliki
 
 - Foldery
 
@@ -54,5 +54,5 @@ Ten obszar testowania wtyczki kontroli źródła obejmuje akcje usuwania.
 |Usuń projekt sieci Web systemu plików|1. Utwórz projekt sieci Web systemu plików (Użyj przycisku Przeglądaj, aby określić ścieżkę UNC).<br />2. Dodaj rozwiązanie do kontroli źródła.<br />3. Usuń cały projekt z rozwiązania.<br />4. Powtórz kroki od 1 do 3 dla lokalnego projektu sieci Web (wykonuje różne ścieżki poprzez kod, ale ma ten sam interfejs zewnętrzny i zachowanie).|Typowe oczekiwane zachowanie.|
 |Usuń plik z projektu sieci Web systemu plików|1. Utwórz projekt systemu plików w sieci Web.<br />2. Dodaj rozwiązanie do kontroli źródła.<br />3. Usuń plik z projektu.<br />4. Powtórz kroki od 1 do 3 dla lokalnego projektu sieci Web (wykonuje różne ścieżki poprzez kod, ale ma ten sam interfejs zewnętrzny i zachowanie).|Typowe oczekiwane zachowanie.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Przewodnik testowania wtyczek kontroli kodu źródłowego](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

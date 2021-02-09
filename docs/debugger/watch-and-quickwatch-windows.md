@@ -15,15 +15,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], expression evaluation
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d13ee6163ebe8cf0f706cbe95e7451c2ebc7c411
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 402b8a0c1e9d0ee72425317f299a3e68f091cc93
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149485"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883990"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Obejrzyj zmienne z oknami Watch i QuickWatch
 
@@ -304,7 +304,7 @@ Aby obserwować `a` zmienną,
 
 1. Kontynuuj debugowanie. Można obserwować zmienną w oknie **czujki** .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Co to jest debugowanie?](../debugger/what-is-debugging.md)
 - [Narzędzia i techniki debugowania](../debugger/write-better-code-with-visual-studio.md)
 - [Najpierw Spójrz na Debugowanie](../debugger/debugger-feature-tour.md)

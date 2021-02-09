@@ -13,15 +13,15 @@ helpviewer_keywords:
 - worksheets, displaying text in cells
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a97534b8ac43c9a05cfb59fb911442a87d51c767
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: a5a89716797ec460b461f79c94df8cea475532a8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523942"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885563"
 ---
 # <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>Instrukcje: Programowane wyświetlanie ciągu w komórce arkusza
   W tym przykładzie pokazano, jak w programie programowo wyświetlać tekst w komórce. Aby wyświetlić tekst w komórce, użyj <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolki lub natywnego obiektu programu Excel.

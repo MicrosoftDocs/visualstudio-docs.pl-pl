@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: a1252e19-b27d-4dc7-a16b-fdac894c1f0e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d7f987d8dc6decf90e44eef0123f6ad4fc194805
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: c964cda5cbe2903cf9511659b9a8f9bfb9f4aad6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727766"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884523"
 ---
 # <a name="graphics-event-list"></a>Lista zdarzeń grafiki
 Użyj listy zdarzeń grafiki w analizator grafiki programu Visual Studio, aby eksplorować zdarzenia Direct3D, które zostały zarejestrowane podczas renderowania ramki gry lub aplikacji.
@@ -34,7 +34,7 @@ Użyj listy zdarzeń grafiki w analizator grafiki programu Visual Studio, aby ek
 ### <a name="color-coded-events-in-direct3d-12"></a>Zdarzenia kodowane kolorem w programie Direct3D 12
  Direct3D 12 uwidacznia wiele kolejek, które odpowiadają różnym funkcjom sprzętowym. Aby ułatwić zidentyfikowanie kolejki skojarzonej z konkretnym zdarzeniem grafiki w programie Direct3D 12, zdarzenia są kodowane kolorami na liście zdarzeń zgodnie z ich kolejką podczas pracy z funkcją przechwytywania aplikacji Direct3D 12.
 
-|Kolejka Direct3D|Color (Kolor)|
+|Kolejka Direct3D|Kolor|
 |-----------------------|-----------|
 |Kolejka renderowania|Green (Zielony)|
 |Kolejka obliczeń|Yellow|

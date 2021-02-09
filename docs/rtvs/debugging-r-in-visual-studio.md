@@ -5,15 +5,15 @@ ms.date: 01/24/2018
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 5efa0a32f51e1f5060474a0d277bfca7f1e7d548
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3696cac00c726cffb76f29a1da2c503a15af2bd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73189259"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885823"
 ---
 # <a name="debug-r-in-visual-studio"></a>Debugowanie języka R w programie Visual Studio
 
@@ -35,7 +35,7 @@ Sourcing: c:\proj\rproject1\rproject1\Settings.R
 
 Zauważ, że `rtvs::debug_source` Funkcja jest używana do źródła skryptu. Ta funkcja jest wymagana, ponieważ RTVS musi zmodyfikować kod w przygotowaniu do debugowania. W przypadku korzystania z dowolnego polecenia RTVS pozyskania i dołączenia debugera program Visual Studio automatycznie używa `rtvs::debug_source` .
 
-Można również ręcznie dołączyć debuger z okna interaktywnego bezpośrednio za pomocą polecenia programu **R Tools**  >  **Session**  >  **Attach Debugger** , polecenia **Debug**  >  **Attach to R Interactive** lub **Dołącz debuger** na pasku narzędzi okna interaktywnego. Po wykonaniu tej czynności użytkownik jest odpowiedzialny za źródło plików, które mają być debugowane. Jeśli chcesz ręcznie tworzyć pliki źródłowe, upewnij się, że używasz, `rtvs::debug_source` a nie zwykłego `source` polecenia w języku R.
+Można również ręcznie dołączyć debuger z okna interaktywnego bezpośrednio za pomocą polecenia programu **R Tools**  >    >  **Attach Debugger** , polecenia **Debug**  >  **Attach to R Interactive** lub **Dołącz debuger** na pasku narzędzi okna interaktywnego. Po wykonaniu tej czynności użytkownik jest odpowiedzialny za źródło plików, które mają być debugowane. Jeśli chcesz ręcznie tworzyć pliki źródłowe, upewnij się, że używasz, `rtvs::debug_source` a nie zwykłego `source` polecenia w języku R.
 
 To połączenie między debugerem a oknem interaktywnym ułatwia wykonywanie takich czynności, jak wywoływanie funkcji (i debugowanie) przy użyciu różnych wartości parametrów. Załóżmy na przykład, że masz następującą funkcję w pliku źródłowym (oznacza to, że został on załadowany do sesji):
 
@@ -60,7 +60,7 @@ Przeglądarka środowiskowa obsługuje kilka specjalnych poleceń:
 | f | zakończenie: powoduje uruchomienie pozostałej części bieżącego zakresu funkcji i powrót do obiektu wywołującego (tak samo jak krok wychodzący). |
 | c, kontynuacja | Kontynuuj: uruchamia program do następnego punktu przerwania. |
 | Q | zakończenia: kończy sesję debugowania. |
-| where | Pokaż stos: wyświetla stos wywołań w oknie interaktywnym. |
+| gdzie | Pokaż stos: wyświetla stos wywołań w oknie interaktywnym. |
 | Pomoc | Pokaż Pomoc: wyświetla dostępne polecenia w oknie interaktywnym. |
 | &lt;wyrażenie&gt; | Oblicz wyrażenie w wyrażeniu *.* |
 

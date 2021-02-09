@@ -14,22 +14,22 @@ helpviewer_keywords:
 ms.assetid: 660459ca-ef73-44a8-b323-610001f63b93
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d5d0348b882a3327c02fca6db0628822c0deffeb
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 2050f3534caba8aba12fa8550eb6e573a3d0db08
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351001"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885043"
 ---
 # <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>Instrukcje: Ustawianie uprawnień niestandardowych dla aplikacji ClickOnce
 Można wdrożyć [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikację, która używa domyślnych uprawnień dla strefy Internet lub lokalny intranet. Alternatywnie można utworzyć strefę niestandardową dla określonych uprawnień wymaganych przez aplikację. Można to zrobić przez dostosowanie uprawnień zabezpieczeń na stronie **zabezpieczenia** **projektanta projektu**.
 
 ### <a name="to-customize-a-permission"></a>Aby dostosować uprawnienie
 
-1. Po wybraniu projektu w **Eksplorator rozwiązań** , w menu **projekt** kliknij polecenie **Właściwości**.
+1. Po wybraniu projektu w **Eksplorator rozwiązań**, w menu **projekt** kliknij polecenie **Właściwości**.
 
 2. Kliknij kartę **Zabezpieczenia**.
 

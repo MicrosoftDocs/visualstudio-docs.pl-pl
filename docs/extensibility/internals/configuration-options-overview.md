@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: df8931066aef5f7163018fba540dd46dcfe5dcc0
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: aa018d340e016ba5c9f424f705599a150ecdc818
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304739"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884692"
 ---
 # <a name="configuration-options-overview"></a>Przegląd opcji konfiguracji
 Projekty w programie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] mogą obsługiwać wiele konfiguracji, które można kompilować, debugować, uruchamiać i/lub wdrażać. Konfiguracja jest typem kompilacji opisanym w nazwanym zestawie właściwości, zazwyczaj przełączników kompilatora i lokalizacjami plików. Domyślnie nowe rozwiązania zawierają dwie konfiguracje, *debugowanie* i *wydanie*. Te konfiguracje można zastosować przy użyciu ich ustawień domyślnych lub zmodyfikować w celu spełnienia określonych wymagań dotyczących rozwiązań i/lub projektu. Niektóre pakiety można utworzyć na dwa sposoby: jako edytor ActiveX lub jako składnik w miejscu. Projekty nie muszą jednak obsługiwać wielu konfiguracji. Jeśli dostępna jest tylko jedna konfiguracja, ta konfiguracja jest mapowana na wszystkie konfiguracje rozwiązań.
@@ -33,7 +33,7 @@ Projekty w programie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)
 
 |Nazwa konfiguracji|Platforma: Win32|Platforma: Win64|
 |------------------------|----------------------|----------------------|
-|*Rozpocząć*|\<Debug Win32 settings>|\<Debug Win64 settings>|
+|*Debugowanie*|\<Debug Win32 settings>|\<Debug Win64 settings>|
 |*Wersja*|\<Release Win32 settings>|\<Release Win64 settings>|
 |*Mojakonfiguracja*|Nie dotyczy|\<MyConfig Win64 settings>|
 

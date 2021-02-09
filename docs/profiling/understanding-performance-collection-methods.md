@@ -9,16 +9,16 @@ helpviewer_keywords:
 - Profiling tools, profiling methods
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b3bbbef2c6f7bb2ab02731bfbac0dc60d75a3437
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 8126d2331e126cf9162a0334b59be239684754c5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722337"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886096"
 ---
 # <a name="understand-performance-collection-methods"></a>Zrozumienie metod zbierania danych o wydajności
 
@@ -147,7 +147,7 @@ Aby uzyskać informacje dotyczące danych interakcji warstwowych zbieranych prze
 
 [Widoki interakcji między warstwami](../profiling/tier-interaction-views.md)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 [Instrukcje: zbieranie danych wydajności dla witryny sieci Web](../profiling/how-to-collect-performance-data-for-a-web-site.md)
 

@@ -22,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: 590ffd57-0556-43d8-8962-ee27e5b2b7d7
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b02d980292eaed40c7c1598c772b52f695bf23e2
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: cd11e722886b77e9faaace768cc30a74c759903f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149706"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884211"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>Wyświetlanie wątków w debugerze programu Visual Studio przy użyciu okna wątków (C#, Visual Basic, C++)
 W oknie **wątki** można analizować i współpracować z wątkami w debugowanej aplikacji. Aby uzyskać wskazówki krok po kroku dotyczące korzystania z okna **wątków** , zobacz [Przewodnik: debugowanie przy użyciu okna wątki](../debugger/how-to-use-the-threads-window.md).
@@ -169,6 +169,6 @@ W programie wielowątkowym każdy wątek ma własny stos wywołań. Okno **wątk
 
 - Na pasku narzędzi u góry okna **wątki** wybierz opcję **Rozwiń stosy wywołań** lub **Zwiń stosy wywołań**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Rozpoczynanie debugowania aplikacji wielowątkowych](../debugger/get-started-debugging-multithreaded-apps.md)

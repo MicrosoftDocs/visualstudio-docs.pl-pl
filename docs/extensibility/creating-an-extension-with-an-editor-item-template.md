@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fa3b993b-ab95-47fa-a38b-b788f3a5b2d8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6264cb35e404d69900094513875fc7b79310a4d
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: c8bfdcd854cf35c392578d9851a7421bacc8cbfe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94973743"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884991"
 ---
 # <a name="create-an-extension-with-an-editor-item-template"></a>Tworzenie rozszerzenia z szablonem elementu edytora
 Za pomocą szablonów elementów zawartych w zestawie SDK programu Visual Studio można tworzyć podstawowe rozszerzenia edytora, które dodają klasyfikatory, elementy definiowania układu i marginesy do edytora. Szablony elementów edytora są dostępne dla projektów programu Visual C# lub Visual Basic VSIX.
@@ -98,5 +98,5 @@ Za pomocą szablonów elementów zawartych w zestawie SDK programu Visual Studio
 
 4. Kompiluj ten projekt i Rozpocznij debugowanie. Zostanie wyświetlone wystąpienie eksperymentalne. Jeśli otworzysz plik tekstowy, zielony margines zawierający słowa **Hello EditorMargin1** jest wyświetlany poniżej poziomego paska przewijania.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Punkty rozszerzenia usługi językowej i edytora](../extensibility/language-service-and-editor-extension-points.md)

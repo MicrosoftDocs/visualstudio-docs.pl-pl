@@ -8,15 +8,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 975fa69a503f5e2acd3e90defd9fa9895c70db00
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 7c163aa10bdcb3ee28de6d6950dd15f85df876bc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903510"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885615"
 ---
 # <a name="how-to-handle-deployment-conflicts"></a>Instrukcje: obsługa konfliktów wdrożenia
   Możesz podać własny kod do obsługi konfliktów wdrożenia dla elementu projektu programu SharePoint. Można na przykład określić, czy wszystkie pliki w bieżącym elemencie projektu istnieją już w lokalizacji wdrożenia, a następnie usunąć wdrożone pliki przed wdrożeniem bieżącego elementu projektu. Aby uzyskać więcej informacji na temat konfliktów wdrożenia, zobacz [rozszerzanie pakietów i wdrażanie programu SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md).
@@ -57,7 +57,7 @@ ms.locfileid: "94903510"
 ## <a name="deploy-the-extension"></a>Wdróż rozszerzenie
  Aby wdrożyć rozszerzenie, Utwórz [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] pakiet rozszerzenia (VSIX) dla zestawu i wszystkie inne pliki, które chcesz dystrybuować z rozszerzeniem. Aby uzyskać więcej informacji, zobacz [Wdrażanie rozszerzeń dla narzędzi programu SharePoint w programie Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Rozszerzona pakowanie i wdrażanie programu SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)
 - [Zwiększ elementy projektu SharePoint](../sharepoint/extending-sharepoint-project-items.md)
 - [Instrukcje: uruchamianie kodu po wykonaniu kroków wdrożenia](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)

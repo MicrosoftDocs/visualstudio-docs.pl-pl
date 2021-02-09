@@ -5,15 +5,15 @@ ms.date: 11/05/2018
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 7ecfd8f1cf50e94991ce2fd94ad94ac9815c92ca
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4aea7f5371dc425a77e10b64a9389571b06f80b4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315099"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885862"
 ---
 # <a name="edit-r-code-in-visual-studio"></a>Edytuj kod języka R w programie Visual Studio
 
@@ -27,7 +27,7 @@ Oprócz kolorowania różnych części kodu, takich jak ciągi, komentarze i sł
 
 ![Kolorowanie składni dla kodu języka R](media/editing-syntax-colors.png)
 
-Aby dostosować czcionki i niektóre kolory wyróżnienia, wybierz polecenie **Narzędzia**  >  **Opcje** , przejdź **Environment**do opcji  >  **czcionki i kolory**środowiska, a następnie zmień ustawienia dla elementów związanych z językiem R w polu **Wyświetl elementy** :
+Aby dostosować czcionki i niektóre kolory wyróżnienia, wybierz polecenie **Narzędzia**  >  **Opcje** , przejdź do opcji  >  **czcionki i kolory** środowiska, a następnie zmień ustawienia dla elementów związanych z językiem R w polu **Wyświetl elementy** :
 
 ![Czcionki i opcje koloru dla kodu języka R](media/editing-syntax-colors-options.png)
 
@@ -49,7 +49,7 @@ Podczas wpisywania wywołań do funkcji, które mają wiele parametrów, często
 
 Aby zmienić to zachowanie, zobacz [Opcje edytora](#editor-options) dla grupy **kart** .
 
-Zwijane regiony kodu umożliwiają tymczasowe ukrycie części kodu w edytorze. Program Visual Studio automatycznie tworzy różne regiony, podobnie jak w przypadku instrukcji wielowierszowych, chyba że opcja **zaawansowanego**tworzenia  >  **Outlining**  >  **konspektu kodu** konspektu jest wyłączona.
+Zwijane regiony kodu umożliwiają tymczasowe ukrycie części kodu w edytorze. Program Visual Studio automatycznie tworzy różne regiony, podobnie jak w przypadku instrukcji wielowierszowych, chyba że opcja **zaawansowanego** tworzenia  >    >  **konspektu kodu** konspektu jest wyłączona.
 
 Aby utworzyć region własny, należy ująć żądany kod z komentarzami kończącymi się na `---` . Małe kontrolki +/-po lewej stronie kodu pozwalają następnie rozwijać i zwijać regiony:
 
@@ -61,7 +61,7 @@ Domyślnie program Visual Studio Wstawia spacje po naciśnięciu klawisza **Tab*
 
 Nawigacja po kodzie umożliwia szybki dostęp do kodu źródłowego programu R i jego bibliotek. Dzięki tym funkcjom przepływ pracy nie trzeba ręcznie przeszukiwać kodu.
 
-**Przejdź do definicji** , szybko przeskoczy do definicji funkcji lub wyskakujący wbudowany edytor miniinstalacji, aby odczytać kod źródłowy funkcji biblioteki. Po prostu kliknij prawym przyciskiem myszy funkcję zainteresowania i wybierz pozycję **Przejdź do definicji**lub umieść kursor w funkcji i naciśnij klawisz **F12**.
+**Przejdź do definicji** , szybko przeskoczy do definicji funkcji lub wyskakujący wbudowany edytor miniinstalacji, aby odczytać kod źródłowy funkcji biblioteki. Po prostu kliknij prawym przyciskiem myszy funkcję zainteresowania i wybierz pozycję **Przejdź do definicji** lub umieść kursor w funkcji i naciśnij klawisz **F12**.
 
 To polecenie powoduje otwarcie nowego okna edytora zawierającego kod źródłowy dla tej funkcji. Kursor jest wygodnie umieszczony na początku definicji funkcji.
 
@@ -71,7 +71,7 @@ Zobacz **definicję**, wywoływane z menu po kliknięciu prawym przyciskiem mysz
 
 ## <a name="send-code-to-the-interactive-window"></a>Wyślij kod do okna interaktywnego
 
-Wielu deweloperów lubi napisać kod w edytorze, a następnie wysłać ten kod do [okna interaktywnego](interactive-repl-for-r-in-visual-studio.md) do natychmiastowego testowania (nazywanego również pętlą Read-Test-Print-Loop lub REPL). Naciśnięcie klawisza **Ctrl** + **Enter** w edytorze języka R powoduje wysłanie bieżącego wiersza kodu do okna interaktywnego, a następnie umieszczenie kursora w następnym wierszu. Po **naciśnięciu klawisza Ctrl** + **Enter**można efektywnie krokowo przejść przez swój kod z edytora.
+Wielu deweloperów lubi napisać kod w edytorze, a następnie wysłać ten kod do [okna interaktywnego](interactive-repl-for-r-in-visual-studio.md) do natychmiastowego testowania (nazywanego również pętlą Read-Test-Print-Loop lub REPL). Naciśnięcie klawisza **Ctrl** + **Enter** w edytorze języka R powoduje wysłanie bieżącego wiersza kodu do okna interaktywnego, a następnie umieszczenie kursora w następnym wierszu. Po **naciśnięciu klawisza Ctrl** + **Enter** można efektywnie krokowo przejść przez swój kod z edytora.
 
 Możesz również wybrać polecenie kod i nacisnąć klawisz **Ctrl** + **,** aby zastosować cały wybór. Alternatywnie kliknij prawym przyciskiem myszy zaznaczenie i wybierz polecenie **wykonaj w trybie interaktywnym**.
 
@@ -89,11 +89,11 @@ Zastosowanie formatowania czyści to:
 f <- function(a) { return(a + 1) }
 ```
 
-Aby ponownie sformatować cały plik kodu, wybierz opcję **Edytuj**  >  **Advanced**  >  **dokument formatu** zaawansowanego (**Ctrl** + **E**,**D**).
+Aby ponownie sformatować cały plik kodu, wybierz opcję **Edytuj**  >    >  **dokument formatu** zaawansowanego (**Ctrl** + **E**,**D**).
 
 Automatyczne formatowanie jest oddzielną operacją, którą można cofnąć. Na przykład, Jeśli wkleisz kod w edytorze i formatowanie zostanie zastosowane, wybierz opcję **Edytuj**  >  **Cofnij** lub naciśnij klawisz **Ctrl** + **Z** , aby wrócić do formatowania, a druga **Cofnij** odwraca samo wklejenie.
 
-Opcje formatowania (w tym wyłączenie formatowania) są ustawiane **Tools**za pomocą  >  **opcji** narzędzia na karcie **Edytor tekstu**w języku  >  **R**  >  **Advanced** . Możesz przejść bezpośrednio do tej strony za pomocą polecenia Edytor **R Tools**  >  **Editor Options** lub klikając prawym przyciskiem myszy w edytorze i wybierając **Opcje formatowania**. Szczegóły można znaleźć w sekcji [Opcje edytora](#editor-options) .
+Opcje formatowania (w tym wyłączenie formatowania) są ustawiane za pomocą  >  **opcji** narzędzia na karcie **Edytor tekstu** w języku  >  **R**  >  **Advanced** . Możesz przejść bezpośrednio do tej strony za pomocą polecenia Edytor **R Tools**  >  **Editor Options** lub klikając prawym przyciskiem myszy w edytorze i wybierając **Opcje formatowania**. Szczegóły można znaleźć w sekcji [Opcje edytora](#editor-options) .
 
 ## <a name="inserting-roxygen-comments"></a>Wstawianie komentarzy Roxygen
 
@@ -103,9 +103,9 @@ RTVS udostępnia skrót do generowania komentarzy [Roxygen](https://cran.r-proje
 
 ## <a name="editor-options"></a>Opcje edytora
 
-Opcje specyficzne dla edytora są ustawiane za **Tools**pomocą  >  polecenia**Opcje** narzędzia, przechodzenie do **edytora tekstu**  >  **R**lub przy użyciu polecenia skrótu **Narzędzia r Tools**  >  **edytora**.
+Opcje specyficzne dla edytora są ustawiane za pomocą  >  polecenia **Opcje** narzędzia, przechodzenie do **edytora tekstu**  >  **R** lub przy użyciu polecenia skrótu **Narzędzia r Tools**  >  **edytora**.
 
-Opcje na kartach **Ogólne**, **paski przewijania**i **karty** nie są specyficzne dla języka R, ale zamiast ogólnych ustawień programu Visual Studio są dostępne dla wszystkich języków, ale są stosowane w przypadku poszczególnych języków. Aby uzyskać szczegółowe informacje, zobacz następujące artykuły:
+Opcje na kartach **Ogólne**, **paski przewijania** i **karty** nie są specyficzne dla języka R, ale zamiast ogólnych ustawień programu Visual Studio są dostępne dla wszystkich języków, ale są stosowane w przypadku poszczególnych języków. Aby uzyskać szczegółowe informacje, zobacz następujące artykuły:
 
 - [Opcje, edytor tekstu, wszystkie języki](../ide/reference/options-text-editor-all-languages.md)
 - [Śledź kod, dostosowując pasek przewijania](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)
@@ -116,18 +116,18 @@ Opcje na karcie **R**  >  **Advanced** są specyficzne dla RTVS:
 | Group (Grupa) | Opcja | Domyślne | Opis |
 | --- | --- | --- | --- |
 | Formatowanie | Automatyczne formatowanie | Włączone | Formatuje kod w trakcie pisania. Nie ma wpływu na **wybór formatu** ani **Formatowanie poleceń dokumentu** . |
-| | Rozwinięte nawiasy klamrowe | Wyłączony | Umieszcza otwarty {w nowym wierszu. |
+| | Rozwinięte nawiasy klamrowe | Wyłączone | Umieszcza otwarty {w nowym wierszu. |
 | | Formatuj przy wklejaniu | Włączone | Stosuje formatowanie podczas wklejania. |
 | | Zakres formatu na} | Włączone | Formatuje zakres po wpisaniu zamykającego}. |
 | | Odstęp po przecinku | Włączone | Umieszcza spację po przecinkach. |
 | | Spacja po słowie kluczowym | Włączone | Umieszcza spację po słowach kluczowych, takich jak `if` , `while` , i `repeat` . |
 | | Spacja przed { | Włączone | Umieszcza miejsce przed i otwierając {. |
 | | Odstępy wokół = | Włączone | Umieszcza spacje wokół znaku równości. |
-| IntelliSense | Zatwierdź przy klawiszu ENTER | Wyłączony | Zatwierdza wybór autouzupełniania po naciśnięciu **klawisza ENTER** . |
-| | Zatwierdź przy kluczu spacji | Wyłączony | Zatwierdza wybór autouzupełniania po naciśnięciu **klawisza** .|
-| | Lista uzupełniania pierwszego znaku | Włączone | Pokazuje listę uzupełniania dla pierwszych typów znaków. W przypadku wyłączenia lista uzupełniania jest wyświetlana z opcją **Edytuj**  >  **IntelliSense**  >  **członków listy** IntelliSense (**Ctrl** + **J**). |
-| | Lista uzupełniania na klawisz **karty** | Wyłączony | Wywołuje listę uzupełniania, wpisując jeden lub więcej znaków i naciskając klawisz **Tab**. |
-| | Dopasuj nazwy argumentów częściowo typów | Wyłączony | W przypadku wpisywania nazw argumentów w wywołaniu funkcji Pomoc dotycząca podpisu zawiera opis najlepszego dopasowania argumentu. |
-| Okno interaktywne | Sprawdzanie składni w konsoli języka R | Wyłączony | Stosuje sprawdzanie składni w oknie interaktywnym. Sprawdzanie składni może nie funkcjonować poprawnie z użyciem instrukcji wielowierszowych. |
+| IntelliSense | Zatwierdź przy klawiszu ENTER | Wyłączone | Zatwierdza wybór autouzupełniania po naciśnięciu **klawisza ENTER** . |
+| | Zatwierdź przy kluczu spacji | Wyłączone | Zatwierdza wybór autouzupełniania po naciśnięciu **klawisza** .|
+| | Lista uzupełniania pierwszego znaku | Włączone | Pokazuje listę uzupełniania dla pierwszych typów znaków. W przypadku wyłączenia lista uzupełniania jest wyświetlana z opcją **Edytuj**  >    >  **członków listy** IntelliSense (**Ctrl** + **J**). |
+| | Lista uzupełniania na klawisz **karty** | Wyłączone | Wywołuje listę uzupełniania, wpisując jeden lub więcej znaków i naciskając klawisz **Tab**. |
+| | Dopasuj nazwy argumentów częściowo typów | Wyłączone | W przypadku wpisywania nazw argumentów w wywołaniu funkcji Pomoc dotycząca podpisu zawiera opis najlepszego dopasowania argumentu. |
+| Okno interaktywne | Sprawdzanie składni w konsoli języka R | Wyłączone | Stosuje sprawdzanie składni w oknie interaktywnym. Sprawdzanie składni może nie funkcjonować poprawnie z użyciem instrukcji wielowierszowych. |
 | Tworzenie konspektu | Konspekt kodu | Włączone | Program automatycznie tworzy zwijane regiony dla obszarów, takich jak instrukcje wielowierszowe. |
 | Sprawdzanie składni | Pokaż błędy składni | Włączone | Włącza automatyczne sprawdzanie składni kodu. |

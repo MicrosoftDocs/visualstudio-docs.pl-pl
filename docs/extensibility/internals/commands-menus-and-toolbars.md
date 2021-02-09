@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 07b4ed90-dbbd-40df-b6c9-8395fd6f2ab6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad763e748fc20a9704df48b17a5d3d8d40c3883c
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 49ae9c27b27a1b3e32338521315007903d9e6825
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304791"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884770"
 ---
 # <a name="commands-menus-and-toolbars"></a>Polecenia, menu i paski narzędzi
 Menu i paski narzędzi to sposób, w jaki użytkownicy uzyskują dostęp do poleceń w pakietu VSPackage. Polecenia to funkcje wykonujące zadania, takie jak drukowanie dokumentu, odświeżanie widoku lub tworzenie nowego pliku. Menu i paski narzędzi są wygodnym sposobem na prezentowanie poleceń użytkownikom. Zazwyczaj powiązane polecenia są klastrowane w tym samym menu lub pasku narzędzi.

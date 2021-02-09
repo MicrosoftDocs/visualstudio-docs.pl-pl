@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 50b30a68-66f6-43f8-a48b-59ce12c95471
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fc586603caf18261654e5ec8ee437c0875616a7
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: fef6ebceaca742b9bda417cad4dd218f25b114b6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148887"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885238"
 ---
 # <a name="how-to-page-up-or-down-in-memory"></a>Porady: stronicowanie w górę lub w dół w pamięci
 
@@ -48,7 +48,7 @@ Podczas wyświetlania zawartości pamięci w oknie **pamięci** lub w oknie **de
 
 - Kliknij strzałkę u góry lub u dołu pionowego paska przewijania.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Okno pamięci](../debugger/memory-windows.md)
 - [Porady: korzystanie z okna dezasemblacji](../debugger/how-to-use-the-disassembly-window.md)
 - [Wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)

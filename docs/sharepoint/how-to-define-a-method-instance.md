@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], method
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 751683873d98e6c7aedc7228e0a91fb59117993b
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 055193123f99825027238166d762ce54b288d716
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903627"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885667"
 ---
 # <a name="how-to-define-a-method-instance"></a>Instrukcje: Definiowanie wystąpienia metody
   Należy zdefiniować co najmniej jedno wystąpienie metody dla każdej metody w modelu.
@@ -37,11 +37,11 @@ ms.locfileid: "94903627"
 
      Nowe wystąpienie metody pojawi się poniżej węzła **Instances** .
 
-3. Na pasku menu wybierz **View**  >  **okno właściwości** widoku.
+3. Na pasku menu wybierz   >  **okno właściwości** widoku.
 
 4. W oknie **Właściwości** ustaw właściwości wystąpienia metody. Aby uzyskać więcej informacji na temat każdej właściwości, zobacz element [MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14)).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Omówienie narzędzi projektowania modelu BDC](../sharepoint/bdc-model-design-tools-overview.md)
 - [Instrukcje: Dodawanie jednostki do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md)
 - [Instrukcje: Dodawanie parametru do metody](../sharepoint/how-to-add-a-parameter-to-a-method.md)

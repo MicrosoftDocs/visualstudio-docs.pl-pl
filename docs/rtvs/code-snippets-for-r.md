@@ -5,15 +5,15 @@ ms.date: 01/24/2018
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 31dfa975cea519d4d064856090a265b844f265f6
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: ca2bc533f26843dcfc22eb1129a66020cd8a5a03
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189111"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885810"
 ---
 # <a name="code-snippets-for-r"></a>Fragmenty kodu dla języka R
 
@@ -32,7 +32,7 @@ Fragmenty kodu mogą być znacznie dłuższe niż tylko znak uzupełniania znak�
 
 W takim przypadku podczas wpisywania funkcja `readc` IntelliSense wyświetla listę uzupełniania. Zaznaczenie tego pola wyboru na liście rozwijanej i naciśnięcie klawisza **Tab** spowoduje zaznaczenie i `readc` naciśnięcie klawisza **Tab** ponownie rozszerza fragment kodu. (Z tego powodu rozwinięcie fragmentów jest często przemyślane jako "wpisz fragment kodu i naciśnij klawisz TAB dwa razy"). W większości przypadków pierwsza karta kończy wybór IntelliSense, a druga karta wyzwala rozszerzanie.
 
-Aby wyświetlić wszystkie dostępne fragmenty kodu, Otwórz okno dialogowe **Tools**  >  **Menedżer wstawek kodów** narzędzi (**Ctrl** + **K**,**B**) i wybierz pozycję **R** dla **języka**. Rozwiń grupy i wybierz poszczególne fragmenty kodu, aby wyświetlić opis i tekst skrótu:
+Aby wyświetlić wszystkie dostępne fragmenty kodu, Otwórz okno dialogowe   >  **Menedżer wstawek kodów** narzędzi (**Ctrl** + **K**,**B**) i wybierz pozycję **R** dla **języka**. Rozwiń grupy i wybierz poszczególne fragmenty kodu, aby wyświetlić opis i tekst skrótu:
 
 ![Okno dialogowe fragmenty kodu dla języka R](media/code-snippet-dialog.png)
 

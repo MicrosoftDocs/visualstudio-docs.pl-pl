@@ -26,15 +26,15 @@ helpviewer_keywords:
 ms.assetid: 66cfac86-f5be-4d3a-9329-d44cd74bc586
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 567450f11572cc998f952117c33992cdba33570d
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 8937b58277450198d7c0927d93118c492faedfbc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149303"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883886"
 ---
 # <a name="when-calling-a-function-hundreds-of-times-how-do-i-know-which-call-failed"></a>Skąd wiadomo, gdy funkcja jest wywoływana setki razy, które wywołanie nie powiodło się?
 ## <a name="problem-description"></a>Opis problemu
@@ -49,7 +49,7 @@ CnvtV(int) (no condition) when hit count is equal to 1000 (currently 101)
 
  Teraz wiesz, że w wywołaniu 101st nie powiodła się funkcja. Jeśli zresetujesz punkt przerwania z liczbą trafień 101 i ponownie uruchomisz program, program zatrzyma się w wywołaniu `CnvtV` , które spowodowało niepowodzenie.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Debugowanie często zadawanych pytań dotyczących kodu natywnego](../debugger/debugging-native-code-faqs.md)
 - [Ustawianie punktów przerwania](/previous-versions/ktf38f66(v=vs.100))
 - [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)

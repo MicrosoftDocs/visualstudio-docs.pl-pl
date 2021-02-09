@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: c93bf5a1-3e5e-422f-894e-bd72c9bc1b57
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4354a226503ef11b8e596cff609912afa7fd34f0
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 49d730fe6fef116577f26acabd72440950a6e192
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149641"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884055"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Wskazówki: pisanie wizualizatora w Visual Basic
 
@@ -237,7 +237,7 @@ W kodzie po stronie debugera należy określić typ do wizualizacji (źródło o
 
    Jeśli chcesz użyć wizualizatora [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zamiast tylko wywołać go z zespołu testowego, musisz go zainstalować. Aby uzyskać więcej informacji, zobacz [How to: Install the wizualizator](../debugger/how-to-install-a-visualizer.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Architektura wizualizatora](../debugger/visualizer-architecture.md)
 - [Instrukcje: Instalowanie wizualizatora](../debugger/how-to-install-a-visualizer.md)

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 06f15504-6385-40a6-b01d-cd90ca36dc73
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 100c3cd12a3011d35445ac885333802e28b4a92f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 71d74d8b16e058b150187a231a1f3a7323c0c612
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349792"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885030"
 ---
 # <a name="how-to-set-the-clickonce-publish-version"></a>Instrukcje: Ustawianie wersji publikacji ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] `Publish Version` Właściwość określa, czy publikowana aplikacja będzie traktowana jako aktualizacja. Za każdym razem, gdy wersja jest zwiększana, aplikacja zostanie opublikowana jako aktualizacja.
@@ -35,11 +35,11 @@ ms.locfileid: "94349792"
 
 ### <a name="to-change-the-publish-version"></a>Aby zmienić wersję publikacji
 
-1. Po wybraniu projektu w **Eksplorator rozwiązań** , w menu **projekt** kliknij polecenie **Właściwości**.
+1. Po wybraniu projektu w **Eksplorator rozwiązań**, w menu **projekt** kliknij polecenie **Właściwości**.
 
 2. Kliknij kartę **Publikowanie** .
 
-3. W polu **Publikowanie wersji** Zwiększ liczbę wersji **głównej** , **pomocniczej** , **kompilacji** lub **poprawki** .
+3. W polu **Publikowanie wersji** Zwiększ liczbę wersji **głównej**, **pomocniczej**, **kompilacji** lub **poprawki** .
 
     > [!NOTE]
     > Nie należy nigdy zmniejszać numeru wersji; wykonanie tej operacji może spowodować nieprzewidywalne zachowanie aktualizacji.

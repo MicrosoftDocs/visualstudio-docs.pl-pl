@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 8fb4ff42-b8eb-4152-b49e-b802d194b05e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 44a006be3b6ecad3ef723c00154354cb35df0049
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: c4eb61a6eda5848277a1da95f9282b396b413ad5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149290"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883834"
 ---
 # <a name="where-can-i-look-up-win32-error-codes"></a>Gdzie można sprawdzić kody błędów Win32?
 WINERROR. H w katalogu dołączania domyślnej instalacji systemu zawiera definicje kodu błędów dla funkcji Win32 API.
@@ -34,6 +34,6 @@ WINERROR. H w katalogu dołączania domyślnej instalacji systemu zawiera defini
 
 `0x80000004,hr`
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Debugowanie często zadawanych pytań dotyczących kodu natywnego](../debugger/debugging-native-code-faqs.md)
 - [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)

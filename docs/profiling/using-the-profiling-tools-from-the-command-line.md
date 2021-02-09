@@ -12,16 +12,16 @@ helpviewer_keywords:
 ms.assetid: 6593fa82-181e-4009-a0ed-02aa24c2c063
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d6e159e28a1401548f0cda7b795a5bbe70a257b
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 6cfb8f26486c731d3900522d72ac62ff6997005e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723234"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885953"
 ---
 # <a name="use-the-profiling-tools-from-the-command-line"></a>Używanie narzędzia profilowania z wiersza polecenia
 Narzędzia wiersza polecenia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania umożliwiają Profilowanie aplikacji w wierszu polecenia i automatyzowanie profilowania przy użyciu plików wsadowych i skryptów. Pliki raportów można również generować w wierszu polecenia. Możesz użyć prostego profilera autonomicznego do zbierania danych na komputerach, na których nie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zainstalowano programu.
@@ -38,8 +38,8 @@ Narzędzia wiersza polecenia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_m
 | **Tworzenie raportów XML i CSV:** Profilowanie w wierszu polecenia tworzy pliki danych, które mogą być wyświetlane w interfejsie dla programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Możesz również generować. wartość w *formacie XML* lub przecinkiem (.*pliki CSV*) danych za pomocą narzędzia wiersza polecenia VSPerfReport. | -   [Tworzenie raportów profilera z poziomu wiersza polecenia](../profiling/creating-profiler-reports-from-the-command-line.md)<br />-   [VSPerfReport](../profiling/vsperfreport.md) |
 | **Kod profilu na komputerach bez programu Visual Studio:** Za pomocą autonomicznego profilera narzędzia profilowania można zbierać dane dla aplikacji na komputerach, na których nie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zainstalowano programu. | -   [Instrukcje: Instalowanie autonomicznego profilera](../profiling/how-to-install-the-stand-alone-profiler.md) |
 
-## <a name="reference"></a>Odwołanie
+## <a name="reference"></a>Dokumentacja
 - [Informacje narzędzia profilowania wiersza polecenia](../profiling/command-line-profiling-tools-reference.md)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Eksplorator wydajności](../profiling/performance-explorer.md)

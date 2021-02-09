@@ -5,19 +5,19 @@ ms.date: 07/23/2018
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: c076fb97b3574b5c710814054232b9757e7a77e3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c6b351af7426af2b11d23cf3f5f437fa4c228c97
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75843746"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885875"
 ---
 # <a name="rtvs-current-version"></a>RTVS bieżącą wersję
 
-Możesz sprawdzić swoją wersję, aby **uzyskać pomoc**dotyczącą programu  >  **About** Visual Studio i przejść do pozycji **R Tools for Visual Studio** :
+Możesz sprawdzić swoją wersję, aby **uzyskać pomoc** dotyczącą programu  >   Visual Studio i przejść do pozycji **R Tools for Visual Studio** :
 
 ![Badanie wersji RTVS w programie Visual Studio (program VS2017)](media/current-version.png)
 

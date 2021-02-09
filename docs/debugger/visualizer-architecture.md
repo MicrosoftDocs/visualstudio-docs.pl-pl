@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 6aad395f-7170-4d9e-b2b8-a5faf453380e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9166cc3c98f72e43042a26c0787d1cbf45223a74
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 9df1dfa1912c54d30c5c428ec59de9432fe68051
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149758"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884250"
 ---
 # <a name="visualizer-architecture"></a>Architektura wizualizatora
 Architektura wizualizatora debugera ma dwie części:
@@ -87,7 +87,7 @@ Architektura wizualizatora debugera ma dwie części:
 |---------------------|-------------------|
 |<xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.TransferData%2A><br /><br /> —lub—<br /><br /> <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.TransferObject%2A>|<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.TransferData%2A>|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Porady: pisanie wizualizatora](create-custom-visualizers-of-data.md)
 - [Wskazówki: Pisanie wizualizatora w C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
 - [Przewodnik: pisanie wizualizatora w języku Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)

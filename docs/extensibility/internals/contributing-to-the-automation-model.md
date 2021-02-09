@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 44de482d-93c8-41a4-843c-cefda995a03e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab43da108a8d4a3339c54973f60bf1bef6a74780
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 38ea8d477b377f78f5c836ec4661989cdbf8999c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305602"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884614"
 ---
 # <a name="contribute-to-the-automation-model"></a>Współtworzenie modelu automatyzacji
 Program Visual Studio udostępnia zestaw interfejsów automatyzacji umożliwiających dostosowanie środowiska. Model automatyzacji to model obiektów, który umożliwia użytkownikom końcowym Tworzenie dodatków i rozszerzeń programu Visual Studio.

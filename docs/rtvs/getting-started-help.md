@@ -5,15 +5,15 @@ ms.date: 01/24/2018
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: af6c6156b1d88c1d015f7700fc7bed061bbe9a76
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 551f929e4d42b208dd222f052b27720edb273761
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62950605"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885771"
 ---
 # <a name="help-in-r-tools-for-visual-studio"></a>Pomoc w R Tools for Visual Studio
 
@@ -24,7 +24,7 @@ Pomoc dla języka R jest zintegrowana bezpośrednio z oknem interaktywnym w prog
 > [!Tip]
 > Okno pomocy, podobnie jak wszystkie inne w programie Visual Studio, może być ułożone i zadokowane. Zobacz [Dostosowywanie układów okien w programie Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md).
 >
-> Aby otworzyć wyniki pomocy w przeglądarce, wybierz menu Opcje **Narzędzia R Tools**  >  **Options** i ustaw właściwość **Pomoc dla języka R Browser** na `External` . Zobacz [Opcje](options-for-r-tools-in-visual-studio.md).
+> Aby otworzyć wyniki pomocy w przeglądarce, wybierz menu Opcje **Narzędzia R Tools**  >   i ustaw właściwość **Pomoc dla języka R Browser** na `External` . Zobacz [Opcje](options-for-r-tools-in-visual-studio.md).
 
 Aby wyszukać pomoc, użyj `??` polecenia, a następnie wyszukiwanego terminu. Jeśli termin wyszukiwania zawiera spacje, użyj cudzysłowów:
 
@@ -48,7 +48,7 @@ Deweloperzy często przeszukują dokumentację języka R, aby uzyskać pomoc dot
     ![Wywoływanie pomocy za pomocą menu kontekstowego po kliknięciu prawym przyciskiem myszy](media/help-right-click.png)
 
 > [!Tip]
-> Aby otworzyć zintegrowaną pomoc w przeglądarce, wybierz **Opcje narzędzia R Tools**  >  **Options** i ustaw **przeglądarkę internetową F1** na `External` . Zobacz [Opcje](options-for-r-tools-in-visual-studio.md).
+> Aby otworzyć zintegrowaną pomoc w przeglądarce, wybierz **Opcje narzędzia R Tools**  >   i ustaw **przeglądarkę internetową F1** na `External` . Zobacz [Opcje](options-for-r-tools-in-visual-studio.md).
 
 ## <a name="integrated-stackoverflow-search"></a>Zintegrowane wyszukiwanie StackOverflow
 
@@ -56,7 +56,7 @@ Oprócz wyszukiwania w dokumentacji języka R, deweloperzy często wyszukują St
 
 ![Wyniki wyszukiwania w sieci Web w programie Visual Studio](media/help-web-search-results.png)
 
-Można zmienić dołączany ciąg zakresu, `R site:stackoverflow` za pomocą opcji **Narzędzia R Tools**  >  **Options**  >  **F1 ciąg wyszukiwania w sieci Web** :
+Można zmienić dołączany ciąg zakresu, `R site:stackoverflow` za pomocą opcji **Narzędzia R Tools**  >    >  **F1 ciąg wyszukiwania w sieci Web** :
 
 ![Zmiana opcji ciągu wyszukiwania w sieci Web F1](media/options-dialog.png)
 

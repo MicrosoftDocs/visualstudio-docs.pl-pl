@@ -5,17 +5,17 @@ ms.date: 11/19/2018
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d79c9d0d1b9c62d5afd78696ee2654c4eecdbe57
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 461e68979de6c3b711c05cc4be3ef9d5bd761397
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86972364"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885940"
 ---
 # <a name="create-a-c-extension-for-python"></a>Tworzenie rozszerzenia C++ dla języka Python
 
@@ -134,7 +134,7 @@ Postępuj zgodnie z instrukcjami w tej sekcji, aby utworzyć dwa identyczne proj
     > Jeśli nie widzisz karty C/C++ we właściwościach projektu, jest to spowodowane tym, że projekt nie zawiera żadnych plików identyfikowanych jako pliki źródłowe C/C++. Ten stan może wystąpić w przypadku utworzenia pliku źródłowego bez rozszerzenia *c* lub *CPP* . Jeśli na przykład przypadkowo wprowadzisz `module.coo` zamiast `module.cpp` w oknie dialogowym Nowy element, program Visual Studio utworzy plik, ale nie ustawi typu pliku na "C/C + Code", co oznacza, że aktywuje kartę właściwości C/C++. Taka niepodzielna identyfikacja pozostaje w przypadku, nawet jeśli zmieniono nazwę pliku na `.cpp` . Aby prawidłowo ustawić typ pliku, kliknij prawym przyciskiem myszy plik w **Eksplorator rozwiązań**, wybierz polecenie **Właściwości**, a następnie ustaw  **Typ pliku** na **kod C/C++**.
 
     > [!Warning]
-    > Zawsze ustawiaj **C/C++**  >  **Code Generation**  >  opcję**Biblioteka środowiska uruchomieniowego** generowania kodu C/C++ na **wielowątkową bibliotekę DLL (/MD)**, nawet w przypadku konfiguracji debugowania, ponieważ to ustawienie określa, które pliki binarne języka Python nie są debugowane. W przypadku korzystania z CPython, jeśli chcesz ustawić opcję **/MDD (wielowątkowe debugowanie biblioteki dll)** , utworzenie konfiguracji **debugowania** powoduje błąd **C1189: Py_LIMITED_API jest niezgodna z Py_DEBUG, Py_TRACE_REFS i Py_REF_DEBUG**. Ponadto jeśli usuniesz `Py_LIMITED_API` (który jest wymagany z CPython, ale nie PyBind11), aby uniknąć błędu kompilacji, podczas próby zaimportowania modułu środowisko Python ulega awarii. (Awaria występuje w ramach wywołania biblioteki DLL w `PyModule_Create` sposób opisany w dalszej części, z komunikatem wyjściowym **krytycznego błędu Python: PyThreadState_Get: Brak bieżącego wątku**).
+    > Zawsze ustawiaj   >    >  opcję **Biblioteka środowiska uruchomieniowego** generowania kodu C/C++ na **wielowątkową bibliotekę DLL (/MD)**, nawet w przypadku konfiguracji debugowania, ponieważ to ustawienie określa, które pliki binarne języka Python nie są debugowane. W przypadku korzystania z CPython, jeśli chcesz ustawić opcję **/MDD (wielowątkowe debugowanie biblioteki dll)** , utworzenie konfiguracji **debugowania** powoduje błąd **C1189: Py_LIMITED_API jest niezgodna z Py_DEBUG, Py_TRACE_REFS i Py_REF_DEBUG**. Ponadto jeśli usuniesz `Py_LIMITED_API` (który jest wymagany z CPython, ale nie PyBind11), aby uniknąć błędu kompilacji, podczas próby zaimportowania modułu środowisko Python ulega awarii. (Awaria występuje w ramach wywołania biblioteki DLL w `PyModule_Create` sposób opisany w dalszej części, z komunikatem wyjściowym **krytycznego błędu Python: PyThreadState_Get: Brak bieżącego wątku**).
     >
     > Opcja/MDd jest używana do kompilowania plików binarnych debugowania języka Python (takich jak *python_d.exe*), ale wybranie jej dla biblioteki DLL rozszerzenia nadal powoduje błąd kompilacji z `Py_LIMITED_API` .
 
@@ -177,7 +177,7 @@ Aby uzyskać informacje na temat elementów przedstawionych w tej sekcji dla ję
 
 Jeśli pracujesz z językiem Python 2,7, zapoznaj się z tematem [Rozszerzanie kodu python 2,7 przy użyciu języka C lub C++](https://docs.python.org/2.7/extending/extending.html) i [przenoszenie modułów rozszerzeń do języka Python 3](https://docs.python.org/2.7/howto/cporting.html) (Python.org).
 
-1. W górnej części *modułu. cpp*Uwzględnij język *Python. h*:
+1. W górnej części *modułu. cpp* Uwzględnij język *Python. h*:
 
     ```cpp
     #include <Python.h>
@@ -218,7 +218,7 @@ Jeśli pracujesz z językiem Python 2,7, zapoznaj się z tematem [Rozszerzanie k
     };
     ```
 
-1. Dodaj metodę, która jest wywoływana przez środowisko Python podczas ładowania modułu, który musi mieć nazwę `PyInit_<module-name>` , gdzie &lt; module-name &gt; dokładnie pasuje do **ogólnej**  >  właściwości**nazwy docelowej** projektu C++ (oznacza to, że jest zgodna z nazwą pliku *. PYD* skompilowaną przez projekt).
+1. Dodaj metodę, która jest wywoływana przez środowisko Python podczas ładowania modułu, który musi mieć nazwę `PyInit_<module-name>` , gdzie &lt; module-name &gt; dokładnie pasuje do **ogólnej**  >  właściwości **nazwy docelowej** projektu C++ (oznacza to, że jest zgodna z nazwą pliku *. PYD* skompilowaną przez projekt).
 
     ```cpp
     PyMODINIT_FUNC PyInit_superfastcode() {
@@ -234,13 +234,13 @@ Jeśli wykonano kroki opisane w poprzedniej sekcji, zauważysz, że użyto wielu
 
 1. Zainstaluj PyBind11 przy użyciu narzędzia PIP: `pip install pybind11` lub `py -m pip install pybind11` .
 
-1. W górnej części *modułu. cpp*Uwzględnij *pybind11. h*:
+1. W górnej części *modułu. cpp* Uwzględnij *pybind11. h*:
 
     ```cpp
     #include <pybind11/pybind11.h>
     ```
 
-1. W dolnej części *modułu. cpp*Użyj `PYBIND11_MODULE` makra, aby zdefiniować punkt wejścia do funkcji języka C++:
+1. W dolnej części *modułu. cpp* Użyj `PYBIND11_MODULE` makra, aby zdefiniować punkt wejścia do funkcji języka C++:
 
     ```cpp
     namespace py = pybind11;
@@ -264,7 +264,7 @@ Jeśli wykonano kroki opisane w poprzedniej sekcji, zauważysz, że użyto wielu
 
 Kompilowanie modułu C++ może zakończyć się niepowodzeniem z następujących powodów:
 
-- Nie można zlokalizować języka *Python. h* (**E1696: nie można otworzyć pliku źródłowego "Python. h"** i/lub **C1083: nie można otworzyć pliku dołączanego: "Python. h": brakujący plik lub katalog**): Sprawdź, czy ścieżka w ogólnych **C/C++**  >  **General**  >  **Dodatkowe katalogi dołączane** do folderu *dołączenia* do instalacji języka Python. Zobacz Krok 6 w obszarze [Tworzenie podstawowego projektu C++](#create-the-core-c-projects).
+- Nie można zlokalizować języka *Python. h* (**E1696: nie można otworzyć pliku źródłowego "Python. h"** i/lub **C1083: nie można otworzyć pliku dołączanego: "Python. h": brakujący plik lub katalog**): Sprawdź, czy ścieżka w ogólnych **C/C++**  >    >  **Dodatkowe katalogi dołączane** do folderu *dołączenia* do instalacji języka Python. Zobacz Krok 6 w obszarze [Tworzenie podstawowego projektu C++](#create-the-core-c-projects).
 
 - Nie można zlokalizować bibliotek języka Python: Upewnij się, że ścieżka w polu **konsolidator**  >  **Ogólne**  >  **Dodatkowe katalogi biblioteki** we właściwościach projektu wskazuje folder *libs* instalacji języka Python. Zobacz Krok 6 w obszarze [Tworzenie podstawowego projektu C++](#create-the-core-c-projects).
 
@@ -354,7 +354,7 @@ Po udostępnieniu biblioteki DLL w języku Python zgodnie z opisem w poprzedniej
     test(lambda d: [fast_tanh2(x) for x in d], '[fast_tanh2(x) for x in d] (PyBind11 C++ extension)')
     ```
 
-1. Uruchom program Python (Rozpocznij**debugowanie**  >  **bez debugowania** lub **Ctrl** + **F5**) i obserwuj, że procedury języka C++ są uruchamiane około 5 – dwadzieścia razy szybciej niż implementacja środowiska Python. Typowe dane wyjściowe są wyświetlane w następujący sposób:
+1. Uruchom program Python (Rozpocznij **debugowanie**  >  **bez debugowania** lub **Ctrl** + **F5**) i obserwuj, że procedury języka C++ są uruchamiane około 5 – dwadzieścia razy szybciej niż implementacja środowiska Python. Typowe dane wyjściowe są wyświetlane w następujący sposób:
 
     ```output
     Running benchmarks with COUNT = 500000
@@ -379,7 +379,7 @@ Program Visual Studio obsługuje jednocześnie Debugowanie kodu Python i C++. Ta
 1. Kliknij prawym przyciskiem myszy projekt Python w **Eksplorator rozwiązań**, wybierz pozycję **Właściwości**, wybierz kartę **debugowanie** , a następnie wybierz opcję **Debuguj**  >  **Włącz debugowanie kodu natywnego** .
 
     > [!Tip]
-    > Po włączeniu debugowania kodu natywnego okno danych wyjściowych w języku Python może zniknąć natychmiast po zakończeniu działania programu bez podawania zwykłych **klawiszy, aby kontynuować** wstrzymywanie. Aby wymusić wstrzymanie, należy dodać `-i` opcję **Run**do  >  pola argumentów uruchamiania**interpretera** na karcie **debugowanie** po włączeniu debugowania kodu natywnego. Ten argument powoduje przełączenie interpretera języka Python w tryb interaktywny po zakończeniu kodu, w którym momencie czeka na naciśnięcie klawisza **Ctrl** + **z**  >  **Enter** , aby wyjść. (Alternatywnie, jeśli nie chcesz modyfikować kodu w języku Python, możesz dodać `import os` `os.system("pause")` instrukcje i na końcu programu. Ten kod duplikuje oryginalny monit wstrzymania.
+    > Po włączeniu debugowania kodu natywnego okno danych wyjściowych w języku Python może zniknąć natychmiast po zakończeniu działania programu bez podawania zwykłych **klawiszy, aby kontynuować** wstrzymywanie. Aby wymusić wstrzymanie, należy dodać `-i` opcję do  >  pola argumentów uruchamiania **interpretera** na karcie **debugowanie** po włączeniu debugowania kodu natywnego. Ten argument powoduje przełączenie interpretera języka Python w tryb interaktywny po zakończeniu kodu, w którym momencie czeka na naciśnięcie klawisza **Ctrl** + **z**  >  **Enter** , aby wyjść. (Alternatywnie, jeśli nie chcesz modyfikować kodu w języku Python, możesz dodać `import os` `os.system("pause")` instrukcje i na końcu programu. Ten kod duplikuje oryginalny monit wstrzymania.
 
 1. Wybierz pozycję **plik**  >  **Zapisz** , aby zapisać zmiany właściwości.
 
@@ -389,7 +389,7 @@ Program Visual Studio obsługuje jednocześnie Debugowanie kodu Python i C++. Ta
 
 1. Ponieważ kod zwykle trwa dłużej w debugerze, można zmienić `COUNT` zmienną w pliku *. PR* na wartość, która jest około pięciu razy mniejsza (na przykład zmienić ją z `500000` na `100000` ).
 
-1. W kodzie języka C++ Ustaw punkt przerwania w pierwszym wierszu `tanh_impl` metody, a następnie uruchom debuger (Rozpocznij debugowanie**F5** lub **Debug**  >  **Start Debugging**). Debuger zostaje zatrzymany, gdy ten kod jest wywoływany. Jeśli punkt przerwania nie zostanie trafiony, sprawdź, czy konfiguracja jest ustawiona na **Debuguj** i czy zapisano projekt (który nie jest automatycznie uruchamiany podczas uruchamiania debugera).
+1. W kodzie języka C++ Ustaw punkt przerwania w pierwszym wierszu `tanh_impl` metody, a następnie uruchom debuger (Rozpocznij debugowanie **F5** lub **Debug**  >  ). Debuger zostaje zatrzymany, gdy ten kod jest wywoływany. Jeśli punkt przerwania nie zostanie trafiony, sprawdź, czy konfiguracja jest ustawiona na **Debuguj** i czy zapisano projekt (który nie jest automatycznie uruchamiany podczas uruchamiania debugera).
 
     ![Zatrzymywanie w punkcie przerwania w kodzie C++](media/cpp-debugging.png)
 

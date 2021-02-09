@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 2820ac4c-c893-4d87-8c62-83981d561493
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 84d43ede5fcca1ae76d155cb8799a61900926d7b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f46efe377cb01b7b78a9df2de2d1e6fc89826014
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183850"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884289"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Przewodnik: debugowanie aplikacji równoległej w programie Visual Studio (C#, Visual Basic, C++)
 
@@ -84,7 +84,7 @@ W tym instruktażu pokazano, jak używać równoległych **zadań** i **równole
    Na górnym pasku menu wybierz pozycję **plik**  >  **Nowy**  >  **projekt**. W lewym okienku okna dialogowego **Nowy projekt** wybierz następujące opcje:
 
    - W przypadku aplikacji C# w obszarze **Visual C#** wybierz pozycję **Windows Desktop**, a następnie w środkowym okienku wybierz pozycję **aplikacja konsoli (.NET Framework)**.
-   - W przypadku aplikacji Visual Basic w obszarze **Visual Basic**wybierz pozycję **Windows Desktop**, a następnie w środkowym okienku wybierz pozycję **aplikacja konsoli (.NET Framework)**.
+   - W przypadku aplikacji Visual Basic w obszarze **Visual Basic** wybierz pozycję **Windows Desktop**, a następnie w środkowym okienku wybierz pozycję **aplikacja konsoli (.NET Framework)**.
    - W przypadku aplikacji w języku C++ w obszarze **Visual C++** wybierz pozycję **Windows Desktop**, a następnie wybierz pozycję **Aplikacja konsolowa systemu Windows**.
 
    Jeśli nie widzisz **aplikacji konsolowej (.NET Core)** lub, dla języka C++, szablonu projektu **aplikacji konsoli** , przejdź do pozycji **Narzędzia**  >  **Pobierz narzędzia i funkcje...**, co spowoduje otwarcie Instalator programu Visual Studio. Wybierz pozycję **Programowanie aplikacji klasycznych dla platformy .NET** lub **Programowanie aplikacji klasycznych w języku C++** , a następnie wybierz polecenie **Modyfikuj**.
@@ -316,7 +316,7 @@ W tym instruktażu pokazano, jak używać równoległych **zadań** i **równole
 
      Ostatnia funkcja okna **zadania** do sprawdzenia jest menu skrótów, które jest wyświetlane po kliknięciu prawym przyciskiem myszy zadania.
 
-     Menu skrótów wyświetla różne polecenia, w zależności od stanu zadania. Polecenia mogą zawierać polecenie **Kopiuj**, **Zaznacz wszystko**, **Wyświetlanie w formacie szesnastkowym**, **Przełącz do zadania**, **Zablokuj przypisany wątek**, **Zablokuj wszystkie wątki, ale ten**i odblokowuje **przypisany wątek**oraz **flagę**.
+     Menu skrótów wyświetla różne polecenia, w zależności od stanu zadania. Polecenia mogą zawierać polecenie **Kopiuj**, **Zaznacz wszystko**, **Wyświetlanie w formacie szesnastkowym**, **Przełącz do zadania**, **Zablokuj przypisany wątek**, **Zablokuj wszystkie wątki, ale ten** i odblokowuje **przypisany wątek** oraz **flagę**.
 
      Można zablokować podstawowy wątek zadania lub zadania lub można zablokować wszystkie wątki z wyjątkiem przypisanych do nich. Wątek zamrożony jest reprezentowany w oknie **zadania** , jak w oknie **wątki** , przez niebieską ikonę *pauzy* .
 

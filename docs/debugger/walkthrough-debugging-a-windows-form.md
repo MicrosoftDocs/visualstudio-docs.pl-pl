@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: 529db1e2-d9ea-482a-b6a0-7c543d17f114
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 31c1bc9e65eb63877d8f8a42902d8ec47a61fd22
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: e9293956e2ca47e68ff5bf22502251b22115a827
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148100"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884133"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Przewodnik: Debugowanie formularza Windows Forms
 Formularz systemu Windows jest jedną z najczęściej używanych aplikacji zarządzanych. Formularz systemu Windows tworzy standardową aplikację systemu Windows. Można wykonać instrukcje z tego przewodnika przy użyciu języka Visual Basic, C# lub C++.
@@ -184,6 +184,6 @@ Formularz systemu Windows jest jedną z najczęściej używanych aplikacji zarz�
 
      Debuger przerywa wykonywanie formularza systemu Windows w punkcie przerwania.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)

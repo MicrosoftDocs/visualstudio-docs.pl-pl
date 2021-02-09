@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: b4f7ceab-3653-4069-bb74-c309aec62866
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 047c9ef9d5bb03546eb88372ae43a51c7c8e4d32
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 52dd5611e5a05de4bdb2d765bbdd2860e54f767e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723208"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885901"
 ---
 # <a name="utilization-view"></a>Widok wykorzystania
 **Widok wykorzystania** zawiera informacje dotyczące procesora CPU, procesora GPU i innych zasobów systemowych, które są używane przez bieżący proces (wybierz pozycję **Analizuj**  >  **Wizualizator współbieżności** , aby uruchomić Wizualizator współbieżności). Pokazuje średnie wykorzystanie rdzenia przez przeanalizowany proces, proces bezczynny, proces systemowy i inne procesy, które są uruchamiane w systemie w miarę upływu czasu. Nie wskazuje, który konkretny rdzeń jest aktywny w danym momencie. Na przykład, jeśli dwa rdzenie są uruchamiane o 50 procent pojemności w danym okresie, ten widok pokazuje jeden rdzeń logiczny, który jest używany. Widok jest generowany przez podzielenie czasu profilowania na krótkie segmenty czasu. Dla każdego segmentu wykres przedstawia średnią liczbę wątków procesów, które są wykonywane w przypadku rdzeni logicznych w tym interwale.
@@ -49,6 +49,6 @@ ms.locfileid: "98723208"
 ## <a name="zoom"></a>Zoom
  Aby powiększyć wykres użycia procesora CPU lub wykres aktywności procesora GPU, wybierz sekcję lub użyj suwaka powiększenia powyżej wykresu. Ustawienie powiększenia utrzymuje się w trakcie przełączania do innych widoków. Aby ponownie pomniejszyć, użyj suwaka powiększenia. Możesz również powiększać, używając **klawisza Ctrl** + **Scroll**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Concurrency Visualizer](../profiling/concurrency-visualizer.md)
 - [Widok rdzeni](../profiling/cores-view.md)

@@ -16,15 +16,15 @@ helpviewer_keywords:
 - event receivers [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2e94bd1594f94f43c82eed5033d6ec2660905c18
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 1943bd8a652a88d218912ab0fc0f6227bf83bc95
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94849886"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885706"
 ---
 # <a name="how-to-create-an-event-receiver"></a>Instrukcje: Tworzenie odbiorcy zdarzeń
   Tworząc *odbiorcy zdarzeń*, możesz odpowiedzieć, gdy użytkownik współdziała z elementami programu SharePoint, takimi jak listy lub elementy listy. Na przykład kod w odbiorcy zdarzeń może być wyzwalany, gdy użytkownik zmieni Kalendarz lub usunie nazwę z listy kontaktów. Postępując zgodnie z tym tematem, można dowiedzieć się, jak dodać odbiorcę zdarzeń do wystąpienia listy.
@@ -71,6 +71,6 @@ ms.locfileid: "94849886"
 
      Po wybraniu przycisku **Zapisz** kolumna **Nazwa pacjenta** zostanie automatycznie zaktualizowana do nazwy Scott Brown.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)
