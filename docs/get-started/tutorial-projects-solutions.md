@@ -11,15 +11,15 @@ f1_keywords:
 - project.addnewitem
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e27eb0cc102740f7ca344099486b73be41c5412
-ms.sourcegitcommit: 208f75ad89ad91b994701bb5cbc0a251fbaa3604
+ms.openlocfilehash: 7172ca8c5341dbaee59ae5b2635da9c5585793cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98166839"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838737"
 ---
 # <a name="introduction-to-projects-and-solutions"></a>Wprowadzenie do projektów i rozwiązań
 
@@ -309,7 +309,7 @@ Jeśli chcesz sprawdzić, czy test jednostkowy działa, wybierz pozycję **Testu
 
 ::: moniker-end
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Pracuj z projektami i rozwiązaniami](../ide/creating-solutions-and-projects.md)
 - [Zarządzanie właściwościami projektów i rozwiązań](../ide/managing-project-and-solution-properties.md)

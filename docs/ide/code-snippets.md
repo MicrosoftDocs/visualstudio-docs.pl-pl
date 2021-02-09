@@ -12,19 +12,19 @@ helpviewer_keywords:
 - code snippets
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 52059dd464ad0c720a4a2e77a961b7d6f3525c6d
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: 642bfe9fdccaa607476facb792120502437cb4b8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006396"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841972"
 ---
 # <a name="code-snippets"></a>Fragmenty kodu
 
@@ -39,7 +39,7 @@ Fragmenty kodu są dostępne dla wielu języków, w tym C#, C++, Visual Basic, X
 
 Można uzyskać dostęp do fragmentów kodu w następujący sposób:
 
-- Na pasku menu wybierz polecenie **Edytuj**  >  **IntelliSense**  >  **wstawka** IntelliSense.
+- Na pasku menu wybierz polecenie **Edytuj**  >    >  **wstawka** IntelliSense.
 
 - W edytorze kodu po kliknięciu prawym przyciskiem myszy lub w menu kontekstowym **Wybierz**  >  **Wstaw fragmenty** kodu
 
@@ -97,7 +97,7 @@ End Property
 
 Jeśli zmienisz `newPropertyValue` się na `m_property` , każde wystąpienie programu `newPropertyValue` zostanie zmienione. Jeśli zmienisz `String` się na `Int` w deklaracji właściwości, wartość w metodzie Set również zostanie zmieniona na `Int` .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Przewodnik: Tworzenie fragmentu kodu](../ide/walkthrough-creating-a-code-snippet.md)
 - [Instrukcje: dystrybuowanie fragmentów kodu](../ide/how-to-distribute-code-snippets.md)

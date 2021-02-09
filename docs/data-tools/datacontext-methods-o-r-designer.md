@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: c149f4e5-3b61-4c33-892e-3e26d47f3eeb
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 30091a5bfd613ba9bd3738731e23153565ec4c8e
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 64b5643704024ee689a011f5285b41be818dc5cb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436592"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858972"
 ---
 # <a name="datacontext-methods-or-designer"></a>Metody DataContext (Object Relational Designer)
 
@@ -44,7 +44,7 @@ Metody DataContext to te metody, które mapują na procedury składowane i funkc
 
 ## <a name="return-types-of-datacontext-methods"></a>Zwracane typy metod DataContext
 
-Gdy przeciągasz procedury składowane i funkcje z **Eksplorator serwera** lub **Eksplorator bazy danych** do **projektanta O/R** , zwracany typ wygenerowanej <xref:System.Data.Linq.DataContext> metody różni się w zależności od miejsca, w którym element zostanie porzucany. Porzucenie elementów bezpośrednio do istniejącej klasy jednostek tworzy <xref:System.Data.Linq.DataContext> metodę z typem zwracanym klasy Entity; upuszczanie elementów na pusty obszar **projektanta o/R** (w obu okienka) tworzy <xref:System.Data.Linq.DataContext> metodę, która zwraca typ wygenerowany automatycznie. Typ wygenerowany automatycznie ma nazwę zgodną z nazwą procedury składowanej lub funkcją oraz właściwościami, które mapują do pól zwracanych przez procedurę składowaną lub funkcję.
+Gdy przeciągasz procedury składowane i funkcje z **Eksplorator serwera** lub **Eksplorator bazy danych** do **projektanta O/R**, zwracany typ wygenerowanej <xref:System.Data.Linq.DataContext> metody różni się w zależności od miejsca, w którym element zostanie porzucany. Porzucenie elementów bezpośrednio do istniejącej klasy jednostek tworzy <xref:System.Data.Linq.DataContext> metodę z typem zwracanym klasy Entity; upuszczanie elementów na pusty obszar **projektanta o/R** (w obu okienka) tworzy <xref:System.Data.Linq.DataContext> metodę, która zwraca typ wygenerowany automatycznie. Typ wygenerowany automatycznie ma nazwę zgodną z nazwą procedury składowanej lub funkcją oraz właściwościami, które mapują do pól zwracanych przez procedurę składowaną lub funkcję.
 
 > [!NOTE]
 > Można zmienić zwracany typ <xref:System.Data.Linq.DataContext> metody po dodaniu jej do okienka metod. Aby sprawdzić lub zmienić zwracany typ <xref:System.Data.Linq.DataContext> metody, zaznacz ją i sprawdź Właściwość **zwracanego typu** w oknie **Właściwości** . Aby uzyskać więcej informacji, zobacz [How to: zmiana zwracanego typu metody DataContext (Projektant O/R)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md).

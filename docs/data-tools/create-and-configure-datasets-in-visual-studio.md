@@ -10,15 +10,15 @@ helpviewer_keywords:
 - datasets, configuring
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5a9a10d68b5b0617b5c4e2152cbbbb920a7c683f
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: f625b17841fe63b0c42dcfb82c2e859d6406e776
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435407"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859128"
 ---
 # <a name="how-to-create-and-configure-datasets-in-visual-studio"></a>Instrukcje: Tworzenie i konfigurowanie zestawów danych w programie Visual Studio
 

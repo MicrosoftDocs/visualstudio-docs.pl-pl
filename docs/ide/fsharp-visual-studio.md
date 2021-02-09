@@ -9,15 +9,15 @@ f1_keywords:
 - fs.ProjectPropertiesDebug
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: c0ce6e68fa36f3b13474306ddd1d8304d640c0ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a97bd1010a9c739c253f9b5f0a536800fd1f8b69
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87507979"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838620"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Programowanie przy użyciu Visual F# w programie Visual Studio
 
@@ -66,9 +66,9 @@ Poniższa tabela zawiera podsumowanie funkcji we właściwościach projektu dla 
 |Kompilacja|[Strona kompilacja, Projektant projektu](reference/build-page-project-designer-csharp.md)|Umożliwia sterowanie sposobem kompilowania kodu.|
 |Zdarzenia kompilacji|[Strona zdarzenia kompilacji, Projektant projektu](reference/build-events-page-project-designer-csharp.md)|Umożliwia określenie poleceń do uruchomienia przed kompilacją lub po niej.|
 |Debugowanie|[Strona debugowania, Projektant projektu](reference/debug-page-project-designer.md)|Umożliwia sterowanie sposobem uruchamiania aplikacji podczas debugowania. Dotyczy to również poleceń, które mają być używane, i zawartości katalogu początkowego aplikacji oraz wszelkich specjalnych trybów debugowania, które mają być włączone, takich jak kod natywny i SQL.|
-|Pakiet (tylko .NET SDK)|Brak|Umożliwia definiowanie metadanych pakietu NuGet podczas publikowania jako pakiet NuGet.|
+|Pakiet (tylko .NET SDK)|Nie dotyczy|Umożliwia definiowanie metadanych pakietu NuGet podczas publikowania jako pakiet NuGet.|
 |Ścieżki odwołań|[Zarządzanie odwołaniami w projekcie](managing-references-in-a-project.md)|Pozwala określić, gdzie mają być wyszukiwane zestawy, od których zależy kod.|
-|Zasoby (tylko zestaw SDK platformy .NET)|Brak|Umożliwia generowanie domyślnego pliku zasobów i zarządzanie nim.|
+|Zasoby (tylko zestaw SDK platformy .NET)|Nie dotyczy|Umożliwia generowanie domyślnego pliku zasobów i zarządzanie nim.|
 
 ### <a name="f-specific-settings"></a>Ustawienia specyficzne dla języka F #
 
@@ -83,7 +83,7 @@ Poniższa tabela zawiera podsumowanie ustawień specyficznych dla języka F #:
 
 Następujące funkcje programu Visual Studio Code i edytorów tekstu są obsługiwane w języku F #:
 
-|Cechy|Opis|Obsługiwane w języku F #?|
+|Cecha|Opis|Obsługiwane w języku F #?|
 |-------|-----------|----------------|
 |Automatycznie komentarz|Umożliwia komentowanie lub usuwanie komentarzy do sekcji kodu.|Tak|
 |Automatycznie Formatuj|Formatuje kod ze standardowym wcięciem i stylem.|Nie|
@@ -115,12 +115,12 @@ Aby uzyskać ogólne informacje na temat edytowania kodu w programie Visual Stud
 
 W poniższej tabeli zestawiono funkcje IntelliSense obsługiwane i nieobsługiwane w języku F #:
 
-|Cechy|Opis|Obsługiwane w języku F #?|
+|Cecha|Opis|Obsługiwane w języku F #?|
 |-------|-----------|----------------|
 |Automatycznie Implementuj interfejsy|Generuje fragmenty kodu dla metod interfejsu.|Tak|
 |Fragmenty kodu|Wprowadza kod z biblioteki wspólnych konstrukcji kodowania do tematów.|Nie|
 |Dokończ wyraz|Zapisuje tekst, wykonując słowa i nazwy podczas wpisywania.|Tak|
-|Automatyczne uzupełnianie|Po włączeniu powoduje, że uzupełnianie wyrazów wybiera pierwsze dopasowanie podczas pisania, zamiast czekać na wybranie jednego lub naciśnięcie klawisza **Ctrl** + **Space**.|Tak|
+|Automatyczne uzupełnianie|Po włączeniu powoduje, że uzupełnianie wyrazów wybiera pierwsze dopasowanie podczas pisania, zamiast czekać na wybranie jednego lub naciśnięcie klawisza **Ctrl** + .|Tak|
 |Ukończenie oferty dla symboli w nieotwartych przestrzeniach nazw|W przypadku automatycznego uzupełniania sugerowany symbol, który znajduje się w nieotwartym obszarze nazw, jest proponowany, a oferta została zakończona z odpowiednią `open` instrukcją w przypadku wybrania.|Tak|
 |Generuj elementy kodu|Umożliwia generowanie kodu szczątkowego dla różnych konstrukcji.|Nie|
 |Lista składników|Po wpisaniu operatora dostępu do elementu członkowskiego (.), pokazuje elementy członkowskie dla danego typu.|Tak|
@@ -135,7 +135,7 @@ Aby uzyskać ogólne informacje na temat technologii IntelliSense, zobacz [Korzy
 
 Poniższa tabela zawiera podsumowanie funkcji dostępnych podczas debugowania kodu F #:
 
-|Cechy|Opis|Obsługiwane w języku F #?|
+|Cecha|Opis|Obsługiwane w języku F #?|
 |-------|-----------|----------------|
 |okno zmiennych automatycznych|Wyświetla zmienne automatyczne lub tymczasowe.|Nie|
 |Punkty przerwania|Umożliwia wstrzymanie wykonywania kodu w określonych punktach podczas debugowania.|Tak|

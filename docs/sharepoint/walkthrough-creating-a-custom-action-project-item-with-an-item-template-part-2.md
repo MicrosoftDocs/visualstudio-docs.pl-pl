@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fe283da2c2a81827ca70414315278cebd775873a
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: bc1474d1c7aeabb9b3e9ecbbe6b42931d44c59c7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915214"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839100"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Przewodnik: Tworzenie niestandardowego elementu projektu akcji z szablonem elementu część 2
   Po zdefiniowaniu niestandardowego typu elementu projektu programu SharePoint i skojarzeniu go z szablonem elementu w programie Visual Studio, można również udostępnić Kreator szablonu. Za pomocą kreatora można zbierać informacje od użytkowników, gdy używają one szablonu, aby dodać nowe wystąpienie elementu projektu do projektu. Zbierane informacje mogą służyć do inicjowania elementu projektu.
@@ -257,7 +257,7 @@ ms.locfileid: "96915214"
 
 5. Na liście **projekt** wybierz pozycję **ItemTemplateWizard**, a następnie wybierz przycisk **OK** .
 
-6. Na pasku menu wybierz kompilacja Kompiluj **Build**  >  **rozwiązanie**, a następnie upewnij się, że rozwiązanie kompiluje się bez błędów.
+6. Na pasku menu wybierz kompilacja Kompiluj   >  **rozwiązanie**, a następnie upewnij się, że rozwiązanie kompiluje się bez błędów.
 
 ## <a name="test-the-wizard"></a>Testowanie Kreatora
  Teraz można przystąpić do testowania kreatora. Najpierw Rozpocznij debugowanie rozwiązania CustomActionProjectItem w eksperymentalnym wystąpieniu programu Visual Studio. Następnie przetestuj kreatora dla elementu projektu akcji niestandardowej w projekcie programu SharePoint w eksperymentalnym wystąpieniu programu Visual Studio. Na koniec Skompiluj i Uruchom projekt programu SharePoint, aby sprawdzić, czy działanie niestandardowe działa zgodnie z oczekiwaniami.

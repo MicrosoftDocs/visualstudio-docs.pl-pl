@@ -17,15 +17,15 @@ helpviewer_keywords:
 - code analysis, rule sets
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8c14a72ff0d797f2fcab8e4ac62d0e0a3fb1001f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 8b76678b1e5c0f53502e24f8baee87ede3bd3ef6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348804"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860181"
 ---
 # <a name="how-to-configure-legacy-analysis-for-managed-code"></a>Instrukcje: Konfigurowanie starszej analizy dla kodu zarządzanego
 
@@ -40,13 +40,13 @@ W programie Visual Studio można wybrać spośród listy [zestawów reguł](../c
 
    - W **Eksplorator rozwiązań** wybierz projekt. Na pasku menu wybierz pozycję **Analizuj**  >  **Skonfiguruj analizę kodu**  >  **dla \<projectname>**.
 
-   - Kliknij prawym przyciskiem myszy projekt w **Eksplorator rozwiązań** i wybierz polecenie **Właściwości** , a następnie wybierz kartę **Analiza kodu** .
+   - Kliknij prawym przyciskiem myszy projekt w **Eksplorator rozwiązań** i wybierz polecenie **Właściwości**, a następnie wybierz kartę **Analiza kodu** .
 
 2. Na listach **Konfiguracja** i **platforma** wybierz konfigurację kompilacji i platformę docelową.
 
 ::: moniker range="vs-2017"
 
-3. Aby uruchomić analizę kodu za każdym razem, gdy projekt zostanie skompilowany przy użyciu wybranej konfiguracji, wybierz pozycję **Włącz analizę kodu podczas kompilacji**. Możesz również ręcznie uruchomić analizę kodu, wybierając pozycję **Analizuj** Przeprowadź analizę kodu  >  **Run Code Analysis**  >  **Uruchom analizę kodu \<projectname> na**.
+3. Aby uruchomić analizę kodu za każdym razem, gdy projekt zostanie skompilowany przy użyciu wybranej konfiguracji, wybierz pozycję **Włącz analizę kodu podczas kompilacji**. Możesz również ręcznie uruchomić analizę kodu, wybierając pozycję **Analizuj** Przeprowadź analizę kodu  >    >  **Uruchom analizę kodu \<projectname> na**.
 
 ::: moniker-end
 
@@ -87,7 +87,7 @@ Domyślnie wszystkie zarządzane projekty rozwiązania są przypisane do zestawu
 
 2. W menu **Analizuj** wybierz pozycję **Konfiguruj analizę kodu dla rozwiązania**.
 
-3. W razie potrzeby rozwiń węzeł **wspólne właściwości** , a następnie wybierz pozycję **Ustawienia analizy kodu**.
+3. W razie potrzeby rozwiń węzeł **wspólne właściwości**, a następnie wybierz pozycję **Ustawienia analizy kodu**.
 
 4. Można określić zestaw reguł dla jednego lub kilku projektów:
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d1b3b04f-4dd9-40e6-b2d4-b414d33fb647
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fa97f52f67e08b2ccf0843e5b5400680ed1c020
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9f061d9d10d66857a0b2506d13d6d6671f7df401
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434821"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860048"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Instrukcje: wymuszanie kodu utrzymującego za pomocą zasad ewidencjonowania analizy kodu
 
@@ -29,7 +29,7 @@ Administratorzy kontroli wersji programu Team Foundation mogą dodać reguły ut
 
 ## <a name="to-open-the-code-analysis-policy-editor"></a>Aby otworzyć Edytor zasad analizy kodu
 
-1. W **Team Explorer** kliknij prawym przyciskiem myszy projekt, kliknij pozycję **Ustawienia projektu** , a następnie kliknij pozycję **Kontrola źródła**.
+1. W **Team Explorer** kliknij prawym przyciskiem myszy projekt, kliknij pozycję **Ustawienia projektu**, a następnie kliknij pozycję **Kontrola źródła**.
 
      Zostanie wyświetlone okno dialogowe **Kontrola źródła** .
 

@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: c48b4d75-ccfc-4950-8b14-ff8adbfe4208
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: de89839dd85f0f330356e1ade7d4658428ea3d3e
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 0eeb3e768370066bf93afc766d4d7f67d8d39a1d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435277"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859076"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Tworzenie kontrolki użytkownika aplikacji Windows Forms obsługującej powiązanie danych wyszukiwania
 
@@ -84,13 +84,13 @@ Pierwszym krokiem jest utworzenie projektu **aplikacji Windows Forms** .
 
 3. W środkowym okienku wybierz typ projektu **aplikacji Windows Forms** .
 
-4. Nazwij projekt **LookupControlWalkthrough** , a następnie wybierz przycisk **OK**.
+4. Nazwij projekt **LookupControlWalkthrough**, a następnie wybierz przycisk **OK**.
 
      Projekt **LookupControlWalkthrough** został utworzony i dodany do **Eksplorator rozwiązań**.
 
 ## <a name="add-a-user-control-to-the-project"></a>Dodawanie kontrolki użytkownika do projektu
 
-W tym instruktażu tworzony jest formant wyszukiwania z **kontrolki użytkownika** , więc Dodaj element **kontrolki użytkownika** do projektu **LookupControlWalkthrough** .
+W tym instruktażu tworzony jest formant wyszukiwania z **kontrolki użytkownika**, więc Dodaj element **kontrolki użytkownika** do projektu **LookupControlWalkthrough** .
 
 1. W menu **projekt** wybierz polecenie **Dodaj kontrolkę użytkownika**.
 
@@ -106,7 +106,7 @@ Aby zaprojektować formant LookupBox, przeciągnij <xref:System.Windows.Forms.Co
 
 W przypadku formantów wyszukiwania, które obsługują powiązanie danych, można zaimplementować <xref:System.ComponentModel.LookupBindingPropertiesAttribute> .
 
-1. Przełącz formant **LookupBox** do widoku kodu. (W menu **Widok** wybierz polecenie **kod** ).
+1. Przełącz formant **LookupBox** do widoku kodu. (W menu **Widok** wybierz polecenie **kod**).
 
 2. Zastąp kod w `LookupBox` następującej postaci:
 

@@ -6,18 +6,18 @@ ms.date: 04/25/2019
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Code_Style.General
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 9172fff2dde1528c5ea382aea996d316e0738ea0
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 0aafcb1740f0e17234d2e4da38630c1416c44e9c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189748"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841950"
 ---
 # <a name="code-style-preferences"></a>Preferencje stylu kodu
 
@@ -32,7 +32,7 @@ Można zdefiniować ustawienia stylu kodu dla każdego projektu przy użyciu [pl
 
 ::: moniker range=">=vs-2019"
 
-Możesz ręcznie wypełnić plik EditorConfig lub można automatycznie wygenerować plik na podstawie ustawień stylu kodu, które zostały wybrane w oknie dialogowym **Opcje** programu Visual Studio. Ta strona opcji jest dostępna w obszarze **Narzędzia**  >  **Opcje**  >  **edytora tekstu** > [**C#** lub **Basic**] > ogólny **styl kodu**  >  **General**. Kliknij pozycję **Generuj plik editorconfig z ustawień** , aby automatycznie wygenerować plik z kodowaniem style *. editorconfig* na podstawie ustawień na stronie **Opcje** .
+Możesz ręcznie wypełnić plik EditorConfig lub można automatycznie wygenerować plik na podstawie ustawień stylu kodu, które zostały wybrane w oknie dialogowym **Opcje** programu Visual Studio. Ta strona opcji jest dostępna w obszarze **Narzędzia**  >  **Opcje**  >  **edytora tekstu** > [**C#** lub **Basic**] > ogólny **styl kodu**  >  . Kliknij pozycję **Generuj plik editorconfig z ustawień** , aby automatycznie wygenerować plik z kodowaniem style *. editorconfig* na podstawie ustawień na stronie **Opcje** .
 
 ![Generuj plik editorconfig na podstawie ustawień w programie Visual Studio 2019](media/vs-2019/generate-editorconfig-file-small.png)
 
@@ -40,7 +40,7 @@ Możesz ręcznie wypełnić plik EditorConfig lub można automatycznie wygenerow
 
 ## <a name="code-styles-in-the-options-dialog-box"></a>Style kodu w oknie dialogowym Opcje
 
-Preferencje stylu kodu można ustawić dla wszystkich projektów C# i Visual Basic, otwierając okno dialogowe **Opcje** z menu **Narzędzia** . W oknie dialogowym **Opcje** wybierz pozycję **Edytor tekstu** > [**C#** lub **Basic**] > ogólny **styl kodu**  >  **General**.
+Preferencje stylu kodu można ustawić dla wszystkich projektów C# i Visual Basic, otwierając okno dialogowe **Opcje** z menu **Narzędzia** . W oknie dialogowym **Opcje** wybierz pozycję **Edytor tekstu** > [**C#** lub **Basic**] > ogólny **styl kodu**  >  .
 
 Każdy element na liście zawiera podgląd preferencji, gdy jest zaznaczone:
 
@@ -74,7 +74,7 @@ Począwszy od programu Visual Studio 2019 w wersji 16,8, który zawiera zestaw S
 
 ::: moniker range="vs-2017"
 
-Można skonfigurować polecenie **Formatuj dokument** (**Edytuj**  >  **Advanced**  >  **dokument w formacie** zaawansowanym), aby zastosować ustawienia stylu kodu (z EditorConfig pliku lub opcji **stylu kodu** ) wraz z regularnym formatowaniem (na przykład wcięciem). Jeśli plik *. editorconfig* istnieje dla projektu, te ustawienia mają pierwszeństwo.
+Można skonfigurować polecenie **Formatuj dokument** (**Edytuj**  >    >  **dokument w formacie** zaawansowanym), aby zastosować ustawienia stylu kodu (z EditorConfig pliku lub opcji **stylu kodu** ) wraz z regularnym formatowaniem (na przykład wcięciem). Jeśli plik *. editorconfig* istnieje dla projektu, te ustawienia mają pierwszeństwo.
 
 > [!NOTE]
 > Stosowanie stylów kodu przy użyciu polecenia **Formatuj dokument** jest dostępne tylko dla plików kodu C#. Jest to funkcja eksperymentalna.

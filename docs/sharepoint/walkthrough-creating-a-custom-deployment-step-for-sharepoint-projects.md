@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ea8e6a09c512ed5edb6098183c66361e96537f54
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 8d42726cddb0565af66e161b41c16c94cfe2cb2b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914936"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839139"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Przewodnik: Tworzenie niestandardowego kroku wdrożenia dla projektów programu SharePoint
   Podczas wdrażania projektu programu SharePoint, program Visual Studio wykonuje serię kroków wdrożenia w określonej kolejności. Program Visual Studio zawiera wiele wbudowanych kroków wdrażania, ale można również utworzyć własne.
@@ -226,7 +226,7 @@ ms.locfileid: "96914936"
 
 12. Na liście **projekt** wybierz pozycję **SharePointCommands**, a następnie wybierz przycisk **OK** .
 
-13. Na pasku menu wybierz kompilacja Kompiluj **Build**  >  **rozwiązanie**, a następnie upewnij się, że rozwiązanie kompiluje się bez błędów.
+13. Na pasku menu wybierz kompilacja Kompiluj   >  **rozwiązanie**, a następnie upewnij się, że rozwiązanie kompiluje się bez błędów.
 
 14. Upewnij się, że folder danych wyjściowych kompilacji dla projektu UpgradeDeploymentStep zawiera teraz plik UpgradeDeploymentStep. VSIX.
 

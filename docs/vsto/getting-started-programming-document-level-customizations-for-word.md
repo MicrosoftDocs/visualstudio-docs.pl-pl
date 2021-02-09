@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Word projects [Office development in Visual Studio], getting started
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e9420ab02b5f402dd39e5ca1713b911a10932dfb
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ff19fd84b66b9d31ed806589044775e006ef7096
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845183"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860662"
 ---
 # <a name="get-started-programming-document-level-customizations-for-word"></a>Wprowadzenie do programowania dostosowań na poziomie dokumentu dla programu Word
   Jeśli dopiero zaczynasz tworzyć dostosowania na poziomie dokumentu dla programu Microsoft Office Word przy użyciu programu Visual Studio, Oto co należy wiedzieć.
@@ -66,7 +66,7 @@ ms.locfileid: "96845183"
 
  Listę tematów, które przeprowadzą Cię przez niektóre typowe zadania w projektach programu Word, można znaleźć [w temacie typowe zadania w programowaniu pakietu Office](../vsto/common-tasks-in-office-programming.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Dostosowywanie na poziomie dokumentu programu](../vsto/programming-document-level-customizations.md)
 - [Rozwiązania programu Word](../vsto/word-solutions.md)

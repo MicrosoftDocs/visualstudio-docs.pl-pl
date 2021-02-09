@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 64b772ad-4392-42e9-a237-5137f0384bf0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 32af7033eb29d223a5ecfafaccb0a3123ab88d06
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 95bc250219c59d4db21fcb086cdf43e0ba7800e3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877133"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838633"
 ---
 # <a name="walkthrough-highlight-text"></a>Wskazówki: wyróżnianie tekstu
 Do edytora można dodawać różne efekty wizualne przez tworzenie części składników Managed Extensibility Framework (MEF). W tym instruktażu pokazano, jak wyróżnić każde wystąpienie bieżącego wyrazu w pliku tekstowym. Jeśli słowo występuje więcej niż jeden raz w pliku tekstowym i położenie karetki w jednym wystąpieniu, każde wystąpienie zostanie wyróżnione.

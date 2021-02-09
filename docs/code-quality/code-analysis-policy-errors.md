@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: d1f221cd-68c0-4277-9397-b76ad0dbae77
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 43dae5ec9ca68c746b914ad0a75b792f2a6e6b43
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 5fdd14b394bca495b38f408be94b46a4b9a68c01
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349103"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860558"
 ---
 # <a name="code-analysis-policy-errors"></a>Błędy zasad analizy kodu
 
@@ -31,7 +31,7 @@ Wymagania analizy kodu, które można zaewidencjonować do kontroli źródła pr
 
 - Analiza kodu nie jest włączona podczas kompilacji dla wszystkich projektów w rozwiązaniu.
 
-- Lokalna reguła zestawu reguł dla projektu w programie Visual Studio ma mniej restrykcyjne ustawienie **akcji** niż zestaw reguł projektu na przykład reguła, która jest ustawiona na **Action** = **błąd** akcji na serwerze, ma ustawioną **akcję** na **Ostrzeżenie** lub **Brak** w zestawie reguł uruchomionym w programie Visual Studio).
+- Lokalna reguła zestawu reguł dla projektu w programie Visual Studio ma mniej restrykcyjne ustawienie **akcji** niż zestaw reguł projektu na przykład reguła, która jest ustawiona na  = **błąd** akcji na serwerze, ma ustawioną **akcję** na **Ostrzeżenie** lub **Brak** w zestawie reguł uruchomionym w programie Visual Studio).
 
 - Zestaw reguł określony w programie Visual Studio nie zawiera wszystkich reguł, które są określone w zestawie reguł, określonym w zasadach ewidencjonowania analizy kodu dla projektu.
 

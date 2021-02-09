@@ -14,15 +14,15 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], getting started
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: be4e129de68d2a7f7690ba24acc92fb09400cfb2
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: d7e6f891f8485d4e08734e59a11db8018eaa07b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845118"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860640"
 ---
 # <a name="get-started-programming-vsto-add-ins"></a>Wprowadzenie do programowania dodatków narzędzi VSTO
   Dodatków VSTO można używać do automatyzowania Microsoft Office aplikacji, rozszerzenia funkcji aplikacji i dostosowywania interfejsu użytkownika aplikacji. Aby uzyskać informacje na temat sposobu, w jaki Dodatki VSTO są porównywane z innymi typami rozwiązań pakietu Office, które można utworzyć przy użyciu programu Visual Studio, zobacz [Omówienie rozwiązań programistycznych dla pakietu office &#40;narzędzi VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -88,7 +88,7 @@ ms.locfileid: "96845118"
 
   Aby zapoznać się z listą tematów, które przeprowadzą Cię przez niektóre typowe zadania w projektach pakietu Office, zobacz [typowe zadania w programowaniu pakietu Office](../vsto/common-tasks-in-office-programming.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Wprowadzenie &#40;Programowanie Office w programie Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Pisanie kodu w rozwiązaniach pakietu Office](../vsto/writing-code-in-office-solutions.md)
