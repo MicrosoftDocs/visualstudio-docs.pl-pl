@@ -7,17 +7,17 @@ ms.topic: conceptual
 ms.assetid: 140083f1-05bc-4014-949e-fb5802397c7a
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: cf8473a8de1c9afa5ed73ce9dcb6b9b8462e6548
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 338d7a19bf613ee2b2432fba6b635cf0c46eb008
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668404"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868650"
 ---
 # <a name="known-issues-for-containers"></a>Znane problemy dotyczące kontenerów
 
@@ -61,7 +61,7 @@ Pre-check verification failed with error(s) :  SizePreCheckEvaluator.
 ```
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [Instalowanie narzędzi do kompilacji w kontenerze](build-tools-container.md)
 * [Zaawansowany przykład dotyczący kontenerów](advanced-build-tools-container.md)

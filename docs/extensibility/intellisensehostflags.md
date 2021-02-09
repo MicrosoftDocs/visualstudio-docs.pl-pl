@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 0930640b-eb84-48ef-a8f7-d4268f55c99c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b206cc4aa7c1ff388d6868fa8a0533d15da094ff
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: af4683dede8a57b2d42acdf357808b465efb1e8e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487507"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869508"
 ---
 # <a name="intellisensehostflags"></a>IntelliSenseHostFlags
 Określa flagi hosta IntelliSense.
@@ -51,5 +51,5 @@ enum IntellisenseHostFlags
 ## <a name="requirements"></a>Wymagania
  SingleFileeditor. idl
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - <xref:Microsoft.VisualStudio.TextManager.Interop>

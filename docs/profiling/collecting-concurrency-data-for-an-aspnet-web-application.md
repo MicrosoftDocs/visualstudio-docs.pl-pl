@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: 0ba431c1-9eaf-4af9-8ce0-669c0835cdc2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: e12288471bed62014f9a307d609ef3d588e0026a
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 1973dcb992da8bfafc13fc897e2499b16d24bccc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148328"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868431"
 ---
 # <a name="collect-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>Zbieranie danych współbieżności dla aplikacji sieci Web ASP.NET przy użyciu wiersza polecenia profilera
 Metoda współbieżności [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania pozwala zbierać dane rywalizacji o zasoby.
@@ -30,7 +30,7 @@ Metoda współbieżności [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.m
 |----------|---------------------|
 |Dołącz profiler do uruchomionej aplikacji ASP.NET|-   [Instrukcje: dołączanie profilera do aplikacji ASP.NET w celu zbierania danych współbieżności](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)|
 
-## <a name="reference"></a>Odwołanie
+## <a name="reference"></a>Dokumentacja
 - [Narzędzia profilowania wiersza polecenia — dokumentacja](../profiling/command-line-profiling-tools-reference.md)
 
 ## <a name="related-tasks"></a>Zadania powiązane
@@ -55,5 +55,5 @@ Metoda współbieżności [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.m
 
 - [Concurrency Visualizer](../profiling/concurrency-visualizer.md)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Narzędzia profilowania wiersza polecenia — dokumentacja](../profiling/command-line-profiling-tools-reference.md)

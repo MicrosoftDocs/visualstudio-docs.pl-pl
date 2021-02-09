@@ -6,17 +6,17 @@ ms.topic: conceptual
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 8e11d77a94c7c1d3d7b038ecea1a6c61646e371f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3dd2a688ef70064f44caccfd7c64150b7c649769
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77027578"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869131"
 ---
 # <a name="extend-a-trial-version-or-update-a-license"></a>Rozszerzanie wersji próbnej lub aktualizowanie licencji
 
@@ -26,7 +26,7 @@ Aby nadal korzystać z programu Visual Studio po zakończeniu okresu próbnego, 
 
 ## <a name="use-an-online-subscription"></a>Korzystanie z subskrypcji online
 
-1. Wybierz przycisk **Zaloguj** w prawym górnym rogu środowiska IDE (lub przejdź do **File**  >  **ustawień konta** pliku, aby otworzyć okno dialogowe **Ustawienia konta** , a następnie wybierz przycisk **Zaloguj się** ).
+1. Wybierz przycisk **Zaloguj** w prawym górnym rogu środowiska IDE (lub przejdź do   >  **ustawień konta** pliku, aby otworzyć okno dialogowe **Ustawienia konta** , a następnie wybierz przycisk **Zaloguj się** ).
 
 1. Wprowadź poświadczenia dla konto Microsoft lub konta służbowego. Program Visual Studio znajduje subskrypcję programu Visual Studio lub organizację usługi Azure DevOps skojarzoną z Twoim kontem.
 
@@ -37,7 +37,7 @@ Aby uzyskać więcej informacji o subskrypcjach programu Visual Studio i sposobi
 
 ## <a name="enter-a-product-key"></a>Wprowadzanie klucza produktu
 
-1. Wybierz **File**pozycję  >  **Ustawienia konta** pliku, aby otworzyć okno dialogowe **Ustawienia konta** , a następnie wybierz **licencję za pomocą linku klucz produktu** .
+1. Wybierz pozycję  >  **Ustawienia konta** pliku, aby otworzyć okno dialogowe **Ustawienia konta** , a następnie wybierz **licencję za pomocą linku klucz produktu** .
 
 1. Wprowadź klucz produktu w udostępnionym obszarze.
 
@@ -66,7 +66,7 @@ Jeśli nie wprowadzisz ponownie poświadczeń, token zaczyna się nieodświeżon
 
 ## <a name="update-an-expired-license"></a>Aktualizowanie wygasłej licencji
 
-Jeśli Twoja subskrypcja wygasła i nie masz już uprawnień dostępu do programu Visual Studio, musisz odnowić subskrypcję lub dodać kolejne konto z subskrypcją. Aby wyświetlić więcej informacji na temat używanej licencji, przejdź do pozycji **File**  >  **Ustawienia konta** pliku i sprawdź informacje o licencji po prawej stronie okna dialogowego. Jeśli masz inną subskrypcję skojarzoną z innym kontem, Dodaj to konto do listy **wszystkie konta** po lewej stronie okna dialogowego, wybierając łącze **Dodaj konto** .
+Jeśli Twoja subskrypcja wygasła i nie masz już uprawnień dostępu do programu Visual Studio, musisz odnowić subskrypcję lub dodać kolejne konto z subskrypcją. Aby wyświetlić więcej informacji na temat używanej licencji, przejdź do pozycji   >  **Ustawienia konta** pliku i sprawdź informacje o licencji po prawej stronie okna dialogowego. Jeśli masz inną subskrypcję skojarzoną z innym kontem, Dodaj to konto do listy **wszystkie konta** po lewej stronie okna dialogowego, wybierając łącze **Dodaj konto** .
 
 ## <a name="get-support"></a>Uzyskiwanie pomocy technicznej
 

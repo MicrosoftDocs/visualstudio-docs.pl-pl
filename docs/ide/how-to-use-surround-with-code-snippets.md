@@ -9,15 +9,15 @@ helpviewer_keywords:
 - snippets [C#], surround with
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bd117937979b73b4dbecb19844159e6e8995cf8e
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 103df21549aee2f50570b9ed52e7b70f42efacbe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95596875"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869027"
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>Instrukcje: używanie fragmentów kodu w cudzysłowie
 
@@ -57,7 +57,7 @@ W poniższych procedurach opisano, jak używać fragmentów kodu. Fragmenty kodu
 
      Alternatywnie można wpisać nazwę fragmentu kodu, a następnie nacisnąć klawisz **Tab** lub **Enter**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Fragmenty kodu w języku C#](../ide/visual-csharp-code-snippets.md)
 - [Selektor wstawek kodu](../ide/reference/code-snippet-picker.md)

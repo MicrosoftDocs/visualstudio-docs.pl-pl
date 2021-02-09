@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: 2f634fba-8dfa-4c7a-a8b9-be867b78d16a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: ec94fc67dbf42cd2631af1a655d6b8deab54fabc
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: bc7a57e759cbeb6fcb5fd9c96dd4c68aa0637afa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441511"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868039"
 ---
 # <a name="configure-scenario-start-delays-in-load-tests"></a>Konfiguruj opóźnienia uruchamiania scenariusza w testach obciążenia
 
@@ -85,7 +85,7 @@ Właściwość **disable in rozgrzewania** służy do wskazywania, czy scenarius
 
 4. Po zakończeniu zmiany właściwości wybierz pozycję **Zapisz** w menu **plik** . Następnie można uruchomić test obciążenia przy użyciu nowej wartości **disable podczas rozgrzewania** .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Edytowanie scenariuszy testu obciążenia](../test/edit-load-test-scenarios.md)
 - [Konfigurowanie agentów testowych i kontrolerów testów dla testów obciążenia](../test/configure-test-agents-and-controllers-for-load-tests.md)

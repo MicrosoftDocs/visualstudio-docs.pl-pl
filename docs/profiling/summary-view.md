@@ -13,16 +13,16 @@ helpviewer_keywords:
 ms.assetid: 98a1eb71-bbf5-4ce7-8559-cdc29f082c4b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 154f168044e5395a534b4a79ea44d9eafe6293f6
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: a7c1e22d10e7ffa20c73e1b4c42541bc22eab4bb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719282"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868236"
 ---
 # <a name="summary-view"></a>Widok podsumowania
 Widok podsumowania zawiera informacje o najbardziej wydajnych funkcjach lub obiektach w przebiegu profilowania. Ten widok zawiera wykres osi czasu oraz dwie lub więcej list najbardziej kosztownych funkcji lub obiektów opartych na metrykach wydajności metody profilowania. Dane w tym widoku są zależne od metody profilowania, która została użyta (próbkowanie, Instrumentacja lub współbieżność) i czy został zebrany przydział pamięci platformy .NET.
@@ -56,7 +56,7 @@ Widok podsumowania zawiera informacje o najbardziej wydajnych funkcjach lub obie
 | **Filtrowanie danych raportu** | Wyświetla okienko filtr raportu profilowania, w którym można określić kryteria ograniczające dane w widoku raportu. Aby uzyskać więcej informacji, zobacz [Filtr widoku raportu wydajności](../profiling/performance-report-view-filter.md) |
 | **Przełącz pełny ekran** | Przełącza tryb pełnoekranowy dla widoku raportu. |
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Widok podsumowania — dane próbkowania](../profiling/summary-view-sampling-data.md)
 - [Widok podsumowania — dane Instrumentacji](../profiling/summary-view-instrumentation-data.md)
 - [Widok podsumowania — dane pamięci platformy .NET](../profiling/summary-view-dotnet-memory-data.md)

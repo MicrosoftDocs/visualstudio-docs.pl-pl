@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: b4ce1ad9-5215-4b6f-b6a2-798b249aa335
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7bac7b2b293cd508931304b1e6cdd237234001e3
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: e1ea031391b93d571b9f34ad820f1a6957dab242
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136943"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869248"
 ---
 # <a name="how-to-specify-build-events-c"></a>Instrukcje: Określanie zdarzeń kompilacji (C#)
 
@@ -32,7 +32,7 @@ Po skompilowaniu projektu zdarzenia przed kompilacją są dodawane do pliku o na
 
 ## <a name="specify-a-build-event"></a>Określ zdarzenie kompilacji
 
-1. W **Eksplorator rozwiązań**wybierz projekt, dla którego chcesz określić zdarzenie kompilacji.
+1. W **Eksplorator rozwiązań** wybierz projekt, dla którego chcesz określić zdarzenie kompilacji.
 
 2. W menu **projekt** kliknij polecenie **Właściwości**.
 
@@ -74,7 +74,7 @@ Poniższa procedura pokazuje, jak ustawić minimalną wersję systemu operacyjne
 
 1. Utwórz nowy projekt **aplikacji konsoli** dla tego polecenia. Nazwij projekt **ChangeOSVersionCS**.
 
-2. W *program.cs*Dodaj następujący wiersz do innych `using` dyrektyw w górnej części pliku:
+2. W *program.cs* Dodaj następujący wiersz do innych `using` dyrektyw w górnej części pliku:
 
    ```csharp
    using System.Xml;
@@ -144,9 +144,9 @@ Następnie Wywołaj to polecenie w zdarzeniu po kompilacji, aby zmodyfikować ma
 
 1. Utwórz nowy projekt **aplikacji Windows Forms** i nadaj mu nazwę **CSWinApp**.
 
-2. Po wybraniu projektu w **Eksplorator rozwiązań**w menu **projekt** wybierz polecenie **Właściwości**.
+2. Po wybraniu projektu w **Eksplorator rozwiązań** w menu **projekt** wybierz polecenie **Właściwości**.
 
-3. W **projektancie projektu**Znajdź stronę **Publikowanie** i ustaw **lokalizację publikowania** na *C:\Temp*.
+3. W **projektancie projektu** Znajdź stronę **Publikowanie** i ustaw **lokalizację publikowania** na *C:\Temp*.
 
 4. Opublikuj projekt, klikając pozycję **Opublikuj teraz**.
 
@@ -158,7 +158,7 @@ Następnie Wywołaj to polecenie w zdarzeniu po kompilacji, aby zmodyfikować ma
    <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
    ```
 
-5. W **projektancie projektu**kliknij kartę **zdarzenia kompilacji** , a następnie kliknij pozycję **Edytuj po kompilacji**.
+5. W **projektancie projektu** kliknij kartę **zdarzenia kompilacji** , a następnie kliknij pozycję **Edytuj po kompilacji**.
 
 6. W polu **wiersz polecenia zdarzenia po kompilacji** wprowadź następujące polecenie:
 

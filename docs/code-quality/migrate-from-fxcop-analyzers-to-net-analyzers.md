@@ -12,13 +12,13 @@ helpviewer_keywords:
 - source code analysis, migration
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 5f9794c825012d682ca40dfdc5ebbfa03f0614ee
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+manager: jmartens
+ms.openlocfilehash: e435502587e65bd694567f4100516a91fa97cc0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398380"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867870"
 ---
 # <a name="migrate-from-fxcop-analyzers-to-net-analyzers"></a>Przechodzenie z analizatorów FxCop na analizatory .NET
 
@@ -47,7 +47,7 @@ Począwszy od wersji `3.3.2` , `Microsoft.CodeAnalysis.FxCopAnalyzers` pakiet Nu
    </PropertyGroup>
    ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Analiza kodu źródłowego w porównaniu do starszej analizy](net-analyzers-faq.md#whats-the-difference-between-legacy-fxcop-and-net-analyzers)
 - [Przechodzenie z analiz w starszej wersji na analizatory .NET](migrate-from-legacy-analysis-to-net-analyzers.md)

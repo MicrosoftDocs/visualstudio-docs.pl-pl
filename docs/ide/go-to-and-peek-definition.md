@@ -12,15 +12,15 @@ helpviewer_keywords:
 - member definition [Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fab4bae999825d7d2fb11dd232d1e271b4f62d5
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 804c49c079f619a774cb1f99d54b2b2af5a3929d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597499"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869365"
 ---
 # <a name="view-type-and-member-definitions"></a>Wyświetlanie definicji typów i elementów członkowskich
 
@@ -71,14 +71,14 @@ Na przykład, jeśli uruchomisz polecenie **Przejdź do definicji** dla <xref:Sy
 
 ### <a name="view-decompiled-source-definitions-instead-of-metadata-c"></a>Wyświetl dekompilowane Definicje źródeł zamiast metadanych (C#)
 
-Można ustawić opcję wyświetlania dekompilowanego kodu źródłowego podczas wyświetlania definicji typu C# lub elementu członkowskiego, którego kod źródłowy jest niedostępny. Aby włączyć tę funkcję, wybierz opcje **Narzędzia**  >  **Options** z paska menu. Następnie rozwiń węzeł **Edytor tekstu**  >  **C#**  >  **Zaawansowane** i wybierz opcję **Włącz nawigację do dekompilowanych źródeł**.
+Można ustawić opcję wyświetlania dekompilowanego kodu źródłowego podczas wyświetlania definicji typu C# lub elementu członkowskiego, którego kod źródłowy jest niedostępny. Aby włączyć tę funkcję, wybierz opcje **Narzędzia**  >   z paska menu. Następnie rozwiń węzeł **Edytor tekstu**  >  **C#**  >  **Zaawansowane** i wybierz opcję **Włącz nawigację do dekompilowanych źródeł**.
 
 ![Wyświetlanie dekompilowanej definicji](media/go-to-definition-decompiled-sources.png)
 
 > [!NOTE]
 > Program Visual Studio rekonstruuje treści metod przy użyciu dekompilacji ILSpy. Gdy uzyskujesz dostęp do tej funkcji po raz pierwszy, musisz wyrazić zgodę na oświadczenie prawne dotyczące licencjonowania oprogramowania i praw autorskich oraz przepisów dotyczących znaków towarowych.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Nawiguj po kodzie](../ide/navigating-code.md)
 - [Instrukcje: wyświetlanie i edytowanie kodu za pomocą definicji wglądu (Alt + F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)

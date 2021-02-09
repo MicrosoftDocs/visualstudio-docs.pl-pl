@@ -10,15 +10,15 @@ helpviewer_keywords:
 - application icons [Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 34405fd52b49e89c2fa0fc95ec1268448bad3061
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 77be1eefb4ea4da139bb536e9d838afecddd7202
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95596914"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869300"
 ---
 # <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Instrukcje: Określanie ikony aplikacji (Visual Basic, C#)
 
@@ -33,7 +33,7 @@ ms.locfileid: "95596914"
 
 1. W **Eksplorator rozwiązań** wybierz węzeł projektu (nie węzeł **rozwiązania** ).
 
-1. Na pasku menu wybierz **Project**  >  **Właściwości** projektu.
+1. Na pasku menu wybierz   >  **Właściwości** projektu.
 
 1. Gdy zostanie wyświetlony **Projektant projektu** , wybierz kartę **aplikacja** .
 
@@ -41,7 +41,7 @@ ms.locfileid: "95596914"
 
     Język **C#** &mdash; Obok listy **ikon** wybierz **\<Browse...>** przycisk, a następnie przejdź do lokalizacji pliku ikony, który chcesz.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Strona aplikacji, Projektant projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)
 - [Strona aplikacji, Projektant projektu (C#)](../ide/reference/application-page-project-designer-csharp.md)

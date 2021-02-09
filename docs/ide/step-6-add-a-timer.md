@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 09e7930b-cab6-4a22-9a6f-72e23f489585
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2684b197fc32b33081c8ecdfa8139b3c8f14e752
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 77daa47cdd6336849903202233392d3eecc33c1a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480554"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868897"
 ---
 # <a name="step-6-add-a-timer"></a>Krok 6. Dodawanie czasomierza
 Następnie Dodaj <xref:System.Windows.Forms.Timer> kontrolkę do pasującej gry. Czasomierz czeka określoną liczbę milisekund, a następnie uruchamia zdarzenie, nazywane *znacznikiem*. Jest to przydatne dla rozpoczęcia czynności lub regularnego powtarzania czynności. W tym przypadku, będziesz używał czasomierza, aby umożliwić graczom wybór dwóch ikon, a jeśli ikony nie będą pasowały, ukryć te dwie ikony po krótkiej chwili.
@@ -30,12 +30,12 @@ Następnie Dodaj <xref:System.Windows.Forms.Timer> kontrolkę do pasującej gry.
 1. Z przybornika w **Projektant formularzy systemu Windows** wybierz **czasomierz** (w kategorii **składniki** ), a następnie wybierz klawisz **Enter** lub kliknij dwukrotnie czasomierz, aby dodać kontrolkę czasomierza do formularza. Ikona czasomierza o nazwie **Timer1** powinna pojawić się w miejscu poniżej formularza, jak pokazano na poniższej ilustracji.
 
      ![Czasomierz](../ide/media/express_timer.png)<br/>
-**_Czasomierz_* _
+***Czasomierz***
 
     > [!NOTE]
     > Jeśli przybornik jest pusty, należy wybrać Projektant formularzy, a nie kod związany z formularzem, przed otwarciem przybornika.
 
-2. Wybierz ikonę _ *Timer1**, aby wybrać czasomierz. W oknie **Właściwości** Przełącz się z wyświetlania zdarzeń, aby wyświetlić właściwości. Następnie ustaw właściwość **Interwał** czasomierza na **750**, ale pozostaw Właściwość **Enabled** ustawioną na **wartość false**. Właściwość **Interval** informuje czasomierz, jak długo czekać między *taktami* lub kiedy wyzwala <xref:System.Windows.Forms.Timer.Tick> zdarzenie. Wartość 750 mówi czasomierzowi, aby czekał trzy czwarte sekundy (750 milisekund), zanim uruchomi zdarzenie Taktu. Wywołasz metodę, <xref:System.Windows.Forms.Timer.Start> Aby uruchomić czasomierz dopiero po wybraniu drugiej etykiety przez odtwarzacz.
+2. Wybierz ikonę **Timer1** , aby wybrać czasomierz. W oknie **Właściwości** Przełącz się z wyświetlania zdarzeń, aby wyświetlić właściwości. Następnie ustaw właściwość **Interwał** czasomierza na **750**, ale pozostaw Właściwość **Enabled** ustawioną na **wartość false**. Właściwość **Interval** informuje czasomierz, jak długo czekać między *taktami* lub kiedy wyzwala <xref:System.Windows.Forms.Timer.Tick> zdarzenie. Wartość 750 mówi czasomierzowi, aby czekał trzy czwarte sekundy (750 milisekund), zanim uruchomi zdarzenie Taktu. Wywołasz metodę, <xref:System.Windows.Forms.Timer.Start> Aby uruchomić czasomierz dopiero po wybraniu drugiej etykiety przez odtwarzacz.
 
 3. Wybierz ikonę sterowania czasomierzem w **Projektant formularzy systemu Windows** a następnie wybierz klawisz **Enter** lub kliknij dwukrotnie czasomierz, aby dodać pustą procedurę obsługi zdarzeń taktu. Zastąp kod następującym kodem lub ręcznie wprowadź następujący kod do programu obsługi zdarzeń.
 

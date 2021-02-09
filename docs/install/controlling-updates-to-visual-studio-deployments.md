@@ -10,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: 35C7AB05-07D5-4B38-BCAC-AB88444E7368
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 8743f042c7c33da34895f93e5df3990f6e0b2ed2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffa088de8852b0d5884cd4d9db5e65e1c179164b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76115310"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868546"
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>Sterowanie aktualizacjami wdrożeń programu Visual Studio opartych na sieci
 
@@ -30,7 +30,7 @@ Administratorzy przedsiębiorstwa często tworzą układ i obsługują go w siec
 
 Domyślnie program Visual Studio nadal wyszukuje aktualizacje w trybie online, nawet jeśli instalacja została wdrożona z udziału sieciowego. Jeśli dostępna jest aktualizacja, użytkownik może ją zainstalować. Zawartość, która nie została znaleziona w układzie offline, jest pobierana z sieci Web.
 
-Jeśli chcesz mieć bezpośrednią kontrolę nad tym, gdzie program Visual Studio szuka aktualizacji, możesz zmodyfikować lokalizację, w której ma się pojawić. Możesz również kontrolować wersję, do której użytkownicy są aktualizowani. Aby to zrobić, wykonaj następujące kroki:
+Jeśli chcesz mieć bezpośrednią kontrolę nad tym, gdzie program Visual Studio szuka aktualizacji, możesz zmodyfikować lokalizację, w której ma się pojawić. Możesz również kontrolować wersję, do której użytkownicy są aktualizowani. W tym celu wykonaj następujące czynności:
 
 1. Utwórz układ offline:
 

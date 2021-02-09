@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: 31874114-459a-45d5-9f8b-2ea503627db8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 66a388b5b6d74834c58eebad04147d5067655a28
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: a01d82b5b6e2e703ffa7c1f722e22440f0f3e24d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441597"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868143"
 ---
 # <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>Zgłoś wyniki testów obciążenia dla porównania testów lub analizy trendów
 
@@ -46,6 +46,6 @@ Ponadto plik arkusza kalkulacyjnego może być współużytkowany z uczestnikami
 |**Tworzenie raportu dotyczącego wydajności i obciążenia:** Możesz tworzyć raporty dotyczące testów wydajności i obciążenia sieci Web przy użyciu programu Microsoft Excel.|- [Instrukcje: Tworzenie raportów wydajności testu obciążenia przy użyciu programu Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)|
 |**Ręczne tworzenie raportu dotyczącego wydajności i obciążenia przy użyciu programu Microsoft Word:** Możesz ręcznie tworzyć raporty dotyczące obciążeń i testów wydajności sieci Web, kopiując i wklejając dane podsumowujące, tabeli i wykresu do dokumentu programu Microsoft Word.|- [Instrukcje: ręczne tworzenie raportu wydajności testu obciążenia przy użyciu programu Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Analizowanie wyników testów obciążenia](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

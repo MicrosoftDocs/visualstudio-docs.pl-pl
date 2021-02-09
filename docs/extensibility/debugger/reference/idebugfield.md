@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: adecdd1c-b1b9-4027-92da-74cbe910636f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c7a25246f42d288020481330fe60e312849862d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 67a5bfe92547738a672cb6881234ae80f76aeda8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728753"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869768"
 ---
 # <a name="idebugfield"></a>IDebugField
 Ten interfejs reprezentuje pole, czyli opis symbolu lub typu.
@@ -44,9 +44,9 @@ IDebugField : IUnknown
 |[GetType](../../../extensibility/debugger/reference/idebugfield-gettype.md)|Pobiera typ pola.|
 |[GetContainer](../../../extensibility/debugger/reference/idebugfield-getcontainer.md)|Pobiera kontener pola.|
 |[GetAddress](../../../extensibility/debugger/reference/idebugfield-getaddress.md)|Pobiera adres pola.|
-|[GetSize](../../../extensibility/debugger/reference/idebugfield-getsize.md)|Pobiera rozmiar pola w bajtach.|
+|[GetSize —](../../../extensibility/debugger/reference/idebugfield-getsize.md)|Pobiera rozmiar pola w bajtach.|
 |[GetExtendedInfo](../../../extensibility/debugger/reference/idebugfield-getextendedinfo.md)|Pobiera rozszerzone informacje o polu.|
-|[Równe](../../../extensibility/debugger/reference/idebugfield-equal.md)|Porównuje dwa pola.|
+|[Większy](../../../extensibility/debugger/reference/idebugfield-equal.md)|Porównuje dwa pola.|
 |[GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)|Pobiera niezależne od typu informacje o symbolu lub typie.|
 
 ## <a name="remarks"></a>Uwagi

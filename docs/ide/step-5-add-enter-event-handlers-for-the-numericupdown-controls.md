@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 45a99a5d-c881-4298-b74d-adb481dec5ee
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 19dc77469a08821f5fb9775450bf080c0d49181b
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 876cdb3639c93e9a67316f5aaea4139f061efb17
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036967"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869014"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Krok 5. Dodawanie obsługi zdarzeń wprowadzania dla kontrolek NumericUpDown
 
@@ -35,9 +35,9 @@ W piątej części tego samouczka dodasz <xref:System.Windows.Forms.Control.Ente
 
      W kontrolce **NumericUpDown** dla problemu dodawania, kursor będzie się znajdował obok **0** (zero).
 
-2. Wprowadź wartość **3**i pamiętaj, że kontrolka pokazuje **30**.
+2. Wprowadź wartość **3** i pamiętaj, że kontrolka pokazuje **30**.
 
-3. Wprowadź wartość **5**i należy zauważyć, że **350** pojawia się, **100** ale po drugiej.
+3. Wprowadź wartość **5** i należy zauważyć, że **350** pojawia się, **100** ale po drugiej.
 
      Przed usunięciem tego problemu należy zastanowić się, co się dzieje. Zastanów się, dlaczego **0** nie znika po wprowadzeniu **3** i dlaczego **350** zmieniony na **100** , ale nie od razu.
 
@@ -68,7 +68,7 @@ W piątej części tego samouczka dodasz <xref:System.Windows.Forms.Control.Ente
 
      Następny wiersz weryfikuje, czy answerBox został pomyślnie przekonwertowany (rzutowany) z obiektu do kontrolki NumericUpDown. Jeśli konwersja zakończyła się niepowodzeniem, zmienna miałaby wartość `null` (C#) lub `Nothing` (Visual Basic). Trzeci wiersz otrzymuje długość odpowiedzi, która pojawia się w kontrolce NumericUpDown, a czwarta linia wybiera bieżącą wartość w kontrolce na podstawie tej długości. Teraz, gdy program quizu wybierze formant, program Visual Studio wyzwala to zdarzenie, co powoduje wybranie bieżącej odpowiedzi. Zaraz po rozpoczęciu przez program quizu w celu wprowadzenia innej odpowiedzi poprzednia odpowiedź zostanie wyczyszczona i zastąpiona nową odpowiedzią.
 
-4. W **Projektant formularzy systemu Windows**wybierz formant różnica **NumericUpDown** .
+4. W **Projektant formularzy systemu Windows** wybierz formant różnica **NumericUpDown** .
 
 5. Na stronie **zdarzenia** okna dialogowego **Właściwości** przewiń w dół do zdarzenia **Enter** , wybierz strzałkę listy rozwijanej na końcu wiersza, a następnie wybierz `answer_Enter` właśnie dodany program obsługi zdarzeń.
 

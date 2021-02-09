@@ -1,17 +1,17 @@
 ---
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 03/16/2020
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 040a168f45afff9111426aac57cafc32a05c1b12
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a3b5686ea36b77b6024fd1e95aee393877e0eaa1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79437480"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868618"
 ---
 Tabele na tej stronie wyświetlają identyfikatory, których można użyć do zainstalowania programu Visual Studio z wiersza polecenia lub można określić jako zależność w manifeście VSIX. Po udostępnieniu aktualizacji programu Visual Studio dodamy dodatkowe składniki.
 

@@ -12,15 +12,15 @@ dev_langs:
 - VB
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bfa5b69cc106aeae18012a7116fd511263423b2c
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 0f6612806f8bf1453cf28f9d75c78588c2074bb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480320"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868884"
 ---
 # <a name="step-6-name-your-button-controls"></a>Krok 6. Nadawanie nazw kontrolkom przycisków
 
@@ -35,7 +35,7 @@ W formularzu znajdują się cztery przyciski i IDE o nazwie im **Button1**, **Bu
 
 1. W formularzu wybierz przycisk **Zamknij** . (Jeśli nadal masz zaznaczone wszystkie przyciski, wybierz klawisz **ESC** , aby anulować wybór). Przewiń w oknie **Właściwości** do momentu wyświetlenia właściwości **(Name)** . (Właściwość **(Name)** znajduje się najbliżej góry, gdy właściwości są alfabetyczne.) Zmień nazwę na **CloseButton**, jak pokazano na poniższym zrzucie ekranu.
 
-    ![okno Właściwości z nazwą closeButton](../ide/media/express_setnameproperty.png)<br>**_Właściwości_* _ _okno z * ***CloseButton**_ _name *
+    ![okno Właściwości z nazwą closeButton](../ide/media/express_setnameproperty.png)<br>***Właściwości** _ _okno z * ***CloseButton**_ _name *
 
     > [!NOTE]
     > Spróbuj zmienić nazwę przycisku na **przycisk Zamknij**, spację między wyrazami "Zamknij" i "przycisk". Gdy to zrobisz, IDE wyświetli komunikat o błędzie: "wartość właściwości jest nieprawidłowa." Spacje (i kilka innych znaków) nie są dozwolone w nazwach kontrolek.
@@ -48,7 +48,7 @@ Nazwy można sprawdzić, wybierając listę rozwijaną selektor formantów w okn
    Na tej karcie jest wyświetlany plik kodu znajdujący się za formularzem, jak pokazano na poniższym zrzucie ekranu.
 
     ![Karta Form1.cs z kodem&#35; języka Visual C](../ide/media/express_showbuttoncode.png)<br>
-**_Form1.cs_* _ _tab z kodem C# *
+***Form1.cs** _ _tab z kodem C# *
 
     > [!NOTE]
     > Karta Form1.cs lub Form1. vb może w zamian wyświetlić **showButton** jako **showButton** .
@@ -76,7 +76,7 @@ Nazwy można sprawdzić, wybierając listę rozwijaną selektor formantów w okn
 1. Aby dodać jeszcze jedną metodę, Otwórz plik kodu dla kontrolki **CheckBox** w **Projektant formularzy systemu Windows** , aby umożliwić IDE dodanie `checkBox1_CheckedChanged()` metody. Ta metoda jest wywoływana za każdym razem, gdy użytkownik zaznaczy lub wyczyści to pole wyboru.
 
    > [!TIP]
-   > Podczas pracy nad aplikacją często przechodzą między edytorem kodu a **Projektant formularzy systemu Windows**. Środowisko IDE ułatwia nawigowanie w projekcie. Użyj **Eksplorator rozwiązań** , aby **otworzyć Projektant formularzy systemu Windows** przez dwukrotne kliknięcie *Form1.cs* w języku C# lub *Form1. vb* w Visual Basic lub na pasku menu wybierz polecenie **View**  >  **Projektant** widoków.
+   > Podczas pracy nad aplikacją często przechodzą między edytorem kodu a **Projektant formularzy systemu Windows**. Środowisko IDE ułatwia nawigowanie w projekcie. Użyj **Eksplorator rozwiązań** , aby **otworzyć Projektant formularzy systemu Windows** przez dwukrotne kliknięcie *Form1.cs* w języku C# lub *Form1. vb* w Visual Basic lub na pasku menu wybierz polecenie   >  **Projektant** widoków.
 
     Poniżej przedstawiono nowy kod widoczny w edytorze kodu.
 

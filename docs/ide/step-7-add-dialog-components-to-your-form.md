@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 37cbd2ca1f0207eaf2a41f6a08248bcedcfbe5bb
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: a485433ef73ef853a186a5b441396f6d5a57f679
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479475"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868858"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Krok 7. Dodawanie składników okna dialogowego do formularza
 
@@ -34,7 +34,7 @@ Składnik jest jak kontrolka na kilka sposobów. Za pomocą **przybornika** doda
 
 1. Aby dodać składnik o nazwie **openFileDialog1** do formularza, kliknij dwukrotnie pozycję **OpenFileDialog**. Aby dodać składnik o nazwie **colorDialog1** do formularza, kliknij dwukrotnie pozycję **ColorDialog** w **przyborniku**. (W następnym kroku samouczka używany jest ten krok). Powinien zostać wyświetlony obszar u dołu **Projektant formularzy systemu Windows** (poniżej formularza **przeglądarki obrazów** ), który ma ikonę dla każdego z dwóch składników okna dialogowego, które zostały dodane, jak pokazano na poniższej ilustracji.
 
-     ![Składniki okna dialogowego](../ide/media/express_dialogsadded.png)<br>**_Okno dialogowe_* _ _components *
+     ![Składniki okna dialogowego](../ide/media/express_dialogsadded.png)<br>***Okno dialogowe** _ _components *
 
 1. Wybierz ikonę **openFileDialog1** w obszarze u dołu **Projektant formularzy systemu Windows**. Ustaw dwie właściwości:
 

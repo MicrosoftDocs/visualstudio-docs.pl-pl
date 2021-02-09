@@ -7,25 +7,25 @@ ms.technology: vs-ide-compile
 ms.topic: how-to
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a59f3706e2d33e87e760d2b88c4c7ba78eca4ef2
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: ab79521cfd4cc122fa398f88b56ca37e2f2673a1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136370"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869183"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Instrukcje: pomijanie ostrzeżeń kompilatora
 
-Możesz wyrejestrować dziennik kompilacji, filtrując jeden lub więcej rodzajów ostrzeżeń kompilatora. Na przykład możesz chcieć przejrzeć tylko niektóre dane wyjściowe, które są generowane podczas ustawiania szczegółowości dziennika kompilacji na **normalne**, **szczegółowe**lub **diagnostyczne**. Aby uzyskać więcej informacji na temat szczegółowości, zobacz [jak: wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji](../ide/how-to-view-save-and-configure-build-log-files.md).
+Możesz wyrejestrować dziennik kompilacji, filtrując jeden lub więcej rodzajów ostrzeżeń kompilatora. Na przykład możesz chcieć przejrzeć tylko niektóre dane wyjściowe, które są generowane podczas ustawiania szczegółowości dziennika kompilacji na **normalne**, **szczegółowe** lub **diagnostyczne**. Aby uzyskać więcej informacji na temat szczegółowości, zobacz [jak: wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji](../ide/how-to-view-save-and-configure-build-log-files.md).
 
 ## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>Pomiń określone ostrzeżenia dla języka Visual C# lub F\#
 
 Na stronie właściwości **kompilacja** można pominąć określone ostrzeżenia dla projektów C# i F #.
 
-1. W **Eksplorator rozwiązań**wybierz projekt, w którym mają zostać pominięte ostrzeżenia.
+1. W **Eksplorator rozwiązań** wybierz projekt, w którym mają zostać pominięte ostrzeżenia.
 
 1. Na pasku menu wybierz polecenie **Wyświetl**  >  **strony właściwości**.
 
@@ -39,7 +39,7 @@ Na stronie właściwości **kompilacja** można pominąć określone ostrzeżeni
 
 Strona właściwości **Właściwości konfiguracji** służy do pomijania określonych ostrzeżeń dla projektów języka C++.
 
-1. W **Eksplorator rozwiązań**wybierz projekt lub plik źródłowy, w którym mają zostać pominięte ostrzeżenia.
+1. W **Eksplorator rozwiązań** wybierz projekt lub plik źródłowy, w którym mają zostać pominięte ostrzeżenia.
 
 1. Na pasku menu wybierz polecenie **Wyświetl**  >  **strony właściwości**.
 
@@ -61,11 +61,11 @@ Można ukryć określone ostrzeżenia kompilatora dla Visual Basic, edytując pl
 
 Ten przykład pokazuje, jak edytować plik *. vbproj* , aby pominąć określone ostrzeżenia kompilatora.
 
-1. W **Eksplorator rozwiązań**wybierz projekt, w którym mają zostać pominięte ostrzeżenia.
+1. W **Eksplorator rozwiązań** wybierz projekt, w którym mają zostać pominięte ostrzeżenia.
 
-1. Na pasku **menu wybierz projekt**  >  **Zwolnij**projekt.
+1. Na pasku **menu wybierz projekt**  >  **Zwolnij** projekt.
 
-1. W **Eksplorator rozwiązań**otwórz prawym przyciskiem myszy lub menu skrótów dla projektu, a następnie wybierz polecenie **Edytuj \<ProjectName> . vbproj**.
+1. W **Eksplorator rozwiązań** otwórz prawym przyciskiem myszy lub menu skrótów dla projektu, a następnie wybierz polecenie **Edytuj \<ProjectName> . vbproj**.
 
     Plik projektu XML zostanie otwarty w edytorze kodu.
 
@@ -106,7 +106,7 @@ Ten przykład pokazuje, jak edytować plik *. vbproj* , aby pominąć określone
 
 1. Zapisz zmiany w pliku *. vbproj* .
 
-1. Na pasku **menu wybierz projekt**  >  **Załaduj ponownie**projekt.
+1. Na pasku **menu wybierz projekt**  >  **Załaduj ponownie** projekt.
 
 1. Na pasku menu wybierz kolejno opcje **Kompiluj**  >  **Kompiluj ponownie rozwiązanie**.
 
@@ -120,7 +120,7 @@ W niektórych przypadkach może być konieczne pominięcie ostrzeżeń kompilato
 
 ### <a name="to-suppress-a-specific-warning-for-a-single-nuget-package"></a>Aby pominąć określone Ostrzeżenie dla pojedynczego pakietu NuGet
 
-1. W **Eksplorator rozwiązań**wybierz pakiet NuGet, dla którego mają zostać pominięte ostrzeżenia kompilatora.
+1. W **Eksplorator rozwiązań** wybierz pakiet NuGet, dla którego mają zostać pominięte ostrzeżenia kompilatora.
 
    ![Pakiet NuGet w Eksplorator rozwiązań](media/nuget-package-with-warning.png)
 

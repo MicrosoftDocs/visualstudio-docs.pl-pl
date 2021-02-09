@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 141f2dee-1563-4ce6-ba37-32920b082519
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 145fc1ad1dddfa4d0648e2ecc7a8d85263744d49
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 8569231ee1b9f19752bf58691b41ec74789bb761
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136748"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869001"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>Zaawansowane ustawienia kompilacji — okno dialogowe (C#)
 
@@ -48,7 +48,7 @@ Wartość domyślna to C# 7,0.
 
 **Raportowanie wewnętrznego błędu kompilatora**
 
-Określa, czy raportować błędy kompilatora do firmy Microsoft. Jeśli zostanie ustawiony **monit** (domyślnie), zostanie wyświetlony monit o podanie, czy wystąpił wewnętrzny błąd kompilatora, co umożliwia wysłanie raportu o błędach do firmy Microsoft. W przypadku wybrania opcji **Wyślij**raport o błędach zostanie wysłany automatycznie. W przypadku ustawienia wartości **Queue**raporty o błędach będą umieszczane w kolejce. W przypadku wybrania wartości **none**błąd będzie raportowany tylko w danych wyjściowych kompilatora. Aby uzyskać więcej informacji, zobacz [/errorreport (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/errorreport-compiler-option).
+Określa, czy raportować błędy kompilatora do firmy Microsoft. Jeśli zostanie ustawiony **monit** (domyślnie), zostanie wyświetlony monit o podanie, czy wystąpił wewnętrzny błąd kompilatora, co umożliwia wysłanie raportu o błędach do firmy Microsoft. W przypadku wybrania opcji **Wyślij** raport o błędach zostanie wysłany automatycznie. W przypadku ustawienia wartości **Queue** raporty o błędach będą umieszczane w kolejce. W przypadku wybrania wartości **none** błąd będzie raportowany tylko w danych wyjściowych kompilatora. Aby uzyskać więcej informacji, zobacz [/errorreport (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/errorreport-compiler-option).
 
 **Sprawdź, czy jest przepełnienie arytmetyczne/nadmiarowy**
 
@@ -90,7 +90,7 @@ Aby uzyskać więcej informacji, zobacz [/debug (opcje kompilatora C#)](/dotnet/
 
 **Wyrównanie pliku**
 
-Określa rozmiar sekcji w pliku wyjściowym. Prawidłowe wartości to **512**, **1024**, **2048**, **4096**i **8192**. Te wartości są mierzone w bajtach. Każda sekcja zostanie wyrównana na granicy, która jest wielokrotnością tej wartości, co wpływa na rozmiar pliku wyjściowego. Aby uzyskać więcej informacji, zobacz [/filealign (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/filealign-compiler-option).
+Określa rozmiar sekcji w pliku wyjściowym. Prawidłowe wartości to **512**, **1024**, **2048**, **4096** i **8192**. Te wartości są mierzone w bajtach. Każda sekcja zostanie wyrównana na granicy, która jest wielokrotnością tej wartości, co wpływa na rozmiar pliku wyjściowego. Aby uzyskać więcej informacji, zobacz [/filealign (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/filealign-compiler-option).
 
 **Adres podstawowy biblioteki**
 

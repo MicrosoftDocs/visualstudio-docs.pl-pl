@@ -14,15 +14,15 @@ helpviewer_keywords:
 - spelling, checking in worksheets
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3f2a9f50767082ead9daafe684aae7fc1524ba9c
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 94361db98c78a2767680d2358d2153b63df9571a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848293"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867987"
 ---
 # <a name="how-to-programmatically-check-spelling-in-worksheets"></a>Instrukcje: Programowane sprawdzanie pisowni w arkuszach
   Można programowo sprawdzić pisownię wyrazów w arkuszu. Okno dialogowe **pisownia** zostanie automatycznie wyświetlone, jeśli w arkuszu znajdują się niepoprawne słowa.
@@ -43,7 +43,7 @@ ms.locfileid: "96848293"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#22](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#22)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#22](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#22)]
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Pracuj z arkuszami](../vsto/working-with-worksheets.md)
 - [Instrukcje: Programowane uruchamianie obliczeń programu Excel](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)
 - [NamedRange — formant](../vsto/namedrange-control.md)

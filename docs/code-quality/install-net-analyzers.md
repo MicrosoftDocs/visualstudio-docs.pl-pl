@@ -8,15 +8,15 @@ helpviewer_keywords:
 - .NET analyzers
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: ea13fde64f6214cf3c219de45c79458b75e1caf8
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: b41615e1826987cb42076ab3195fe7bfad235e7a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97615528"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867896"
 ---
 # <a name="enable-or-install-first-party-net-analyzers"></a>Włącz lub zainstaluj analizatory .NET pierwszej firmy
 
@@ -33,7 +33,7 @@ Analizatory .NET pierwszej jednostki można włączać lub instalować w jeden z
 > [!NOTE]
 > Zaleca się włączenie analizatorów z zestawu .NET SDK zamiast instalowania `Microsoft.CodeAnalysis.NetAnalyzers` [pakietu NuGet](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers), jeśli jest to możliwe. Włączenie analizatorów z zestawu SDK platformy .NET gwarantuje, że podczas aktualizacji zestawu SDK automatycznie pobierzesz poprawki błędów i nowych analiz. W modelu NuGet należy zaktualizować pakiet NuGet za każdym razem, gdy chcesz użyć najnowszych poprawek błędów. Pakiet NuGet jest aktualizowany częściej.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Przegląd analizatorów kodu w programie Visual Studio](roslyn-analyzers-overview.md)
 - [Korzystanie z analizatorów kodu w programie Visual Studio](use-roslyn-analyzers.md)

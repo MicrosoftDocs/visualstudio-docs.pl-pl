@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 40dc83bf-a7c5-4a14-816a-fa0980b6e4c3
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 00655d1f30d18da4170782384c634ff189b104ee
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 426b387603fbe7bca29f2ad4f507f2e517cac9bd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136930"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869261"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Instrukcje: Określanie zdarzeń kompilacji (Visual Basic)
 
@@ -69,7 +69,7 @@ Poniższa procedura pokazuje, jak ustawić minimalną wersję systemu operacyjne
 
 2. W oknie dialogowym **Nowy projekt** w węźle **Visual Basic** wybierz pozycję **Windows** , a następnie szablon **aplikacja konsoli** . Nadaj nazwę projektowi `ChangeOSVersionVB` .
 
-3. W *Module1. vb*Dodaj następujący wiersz do innych `Imports` instrukcji w górnej części pliku:
+3. W *Module1. vb* Dodaj następujący wiersz do innych `Imports` instrukcji w górnej części pliku:
 
    ```vb
    Imports System.Xml
@@ -118,7 +118,7 @@ Poniższa procedura pokazuje, jak ustawić minimalną wersję systemu operacyjne
    End Sub
    ```
 
-   Polecenie przyjmuje dwa argumenty. Pierwszy argument jest ścieżką do manifestu aplikacji (czyli folder, w którym proces kompilacji tworzy manifest, zwykle * \<ProjectName> . publish*). Drugi argument to nowa wersja systemu operacyjnego.
+   Polecenie przyjmuje dwa argumenty. Pierwszy argument jest ścieżką do manifestu aplikacji (czyli folder, w którym proces kompilacji tworzy manifest, zwykle *\<ProjectName> . publish*). Drugi argument to nowa wersja systemu operacyjnego.
 
 5. W menu **Kompilacja** kliknij pozycję **Kompiluj rozwiązanie**.
 
@@ -133,7 +133,7 @@ Poniższa procedura pokazuje, jak ustawić minimalną wersję systemu operacyjne
 2. W oknie dialogowym **Nowy projekt** w węźle **Visual Basic** wybierz pozycję **Windows Desktop** , a następnie szablon **aplikacji Windows Forms** . Nadaj nazwę projektowi `VBWinApp` .
 3. Po wybraniu projektu w **Eksplorator rozwiązań**, w menu **projekt** kliknij polecenie **Właściwości**.
 
-4. W **projektancie projektu**przejdź do strony **Publikowanie** i ustaw **lokalizację publikowania** na *C:\Temp*.
+4. W **projektancie projektu** przejdź do strony **Publikowanie** i ustaw **lokalizację publikowania** na *C:\Temp*.
 
 5. Opublikuj projekt, klikając pozycję **Opublikuj teraz**.
 
@@ -145,7 +145,7 @@ Poniższa procedura pokazuje, jak ustawić minimalną wersję systemu operacyjne
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
     ```
 
-6. W **projektancie projektu**przejdź do karty **kompilacja** , a następnie kliknij przycisk **Kompiluj zdarzenia** , aby otworzyć okno dialogowe **zdarzenia kompilacji** .
+6. W **projektancie projektu** przejdź do karty **kompilacja** , a następnie kliknij przycisk **Kompiluj zdarzenia** , aby otworzyć okno dialogowe **zdarzenia kompilacji** .
 
 7. W polu **wiersz polecenia zdarzenia po kompilacji** wprowadź następujące polecenie:
 

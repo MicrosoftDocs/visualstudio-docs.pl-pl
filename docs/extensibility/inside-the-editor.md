@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14193c0806c4b45f721ee97b101969de8437448d
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: c0d9d20000781980535259c0a739e03a47ae53e1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487533"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869547"
 ---
 # <a name="inside-the-editor"></a>Wewnątrz edytora
 
@@ -45,7 +45,7 @@ W tych sekcjach opisano funkcje edytora:
 
 - [Operacje edytora](../extensibility/inside-the-editor.md#editor-operations)
 
-- [IntelliSense](../extensibility/inside-the-editor.md#intellisense)
+- [Technologia](../extensibility/inside-the-editor.md#intellisense)
 
 ## <a name="overview-of-the-subsystems"></a>Przegląd podsystemów
 
@@ -320,7 +320,7 @@ Technologia IntelliSense obsługuje uzupełnianie instrukcji, pomoc w sygnaturac
 
 Uzupełnianie instrukcji zawiera listę podręcznych potencjalnych uzupełniania dla nazw metod, elementów XML i innych elementów kodowania lub znaczników. Ogólnie rzecz biorąc, gest użytkownika wywołuje sesję ukończenia. Sesja wyświetla listę potencjalnych popełnień, a użytkownik może wybrać jedną lub odrzucić listę. <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>Jest odpowiedzialny za tworzenie i wyzwalanie <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSession> . <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>Oblicza <xref:Microsoft.VisualStudio.Language.Intellisense.CompletionSet> elementy ukończenia dla sesji.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Punkty rozszerzenia usługi językowej i edytora](../extensibility/language-service-and-editor-extension-points.md)
 - [Importy edytora](../extensibility/editor-imports.md)

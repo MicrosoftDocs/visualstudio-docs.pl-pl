@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: bb5acfa3-04c3-4088-be84-9ff8926cd16f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: faa3464f0396999f36604aa88c429235d4849688
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0f74cc24d7698c3d83991c7f338bd2ef155ee1ce
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728782"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869794"
 ---
 # <a name="idebugfieldgettypeinfo"></a>IDebugField::GetTypeInfo
 Ta metoda pobiera niezależne od typu informacje o symbolu lub typie.
@@ -28,7 +28,7 @@ Ta metoda pobiera niezależne od typu informacje o symbolu lub typie.
 ## <a name="syntax"></a>Składnia
 
 ```cpp
-HRESULT GetTypeInfo( 
+HRESULT GetTypeInfo( 
    TYPE_INFO* pTypeInfo
 );
 ```
