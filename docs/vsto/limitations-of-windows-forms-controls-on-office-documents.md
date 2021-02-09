@@ -20,15 +20,15 @@ helpviewer_keywords:
 - Windows Forms controls [Office development in Visual Studio], Toolbox
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 63459f4daf1f9fe717946491a997ba47510fbab8
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: cc507d31f791a3f3d7addbcffc0b9b87963d443f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524458"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888722"
 ---
 # <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Ograniczenia Windows Forms formantów w dokumentach pakietu Office
 
@@ -73,7 +73,7 @@ Nie można również ustawić <xref:System.Windows.Forms.Control.Left> właściw
 
 Formanty Windows Forms zwykle mają takie samo zachowanie w dokumencie pakietu Office jak w formularzu systemu Windows, ale istnieją pewne różnice. W poniższej tabeli opisano różnice występujące w przypadku formantów Windows Forms w dokumentach pakietu Office.
 
-|Funkcja|Różnica|
+|Funkcjonalność|Różnica|
 |-------------------|----------------|
 |Kolejność tabulacji kontrolki|Nie można tabulatorować formantów umieszczonych w arkuszu programu Excel lub dokumencie programu Word.|
 |Grupowanie formantów|Nie można użyć <xref:System.Windows.Forms.GroupBox> kontrolki, aby zawierać inne kontrolki dokumentu pakietu Office. Po dodaniu wielu przycisków radiowych bezpośrednio do dokumentu, przyciski radiowe nie wykluczają się wzajemnie. Można napisać kod, aby przyciski radiowe wykluczają się wzajemnie. Jednak preferowanym podejściem jest dodanie przycisków radiowych do kontrolki użytkownika, a następnie dodanie kontrolki użytkownika do dokumentu. Aby uzyskać więcej informacji, zobacz przykładowe kontrolki programu Word lub kontrolki programu Excel w przykładach na potrzeby [tworzenia i instruktażu pakietu Office](../vsto/office-development-samples-and-walkthroughs.md).|

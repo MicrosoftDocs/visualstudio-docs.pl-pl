@@ -17,15 +17,15 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio, restricted permissions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ac15302e81a68d8866c69a30a8368d36648ef1d9
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1a65e99712658567996598d2190447ff09cf9b05
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844897"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888891"
 ---
 # <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Instrukcje: Zezwalanie na uruchamianie kodu w tle dokumentów z ograniczonymi uprawnieniami
   Za pomocą funkcji Rights Management informacji (IRM) Microsoft Office można ograniczyć uprawnienia do dokumentu lub skoroszytu. Domyślnie nie można uruchamiać kodu związanego z Microsoft Office ograniczonym dokumentem programu Word lub Microsoft Office skoroszycie programu Excel. Można zmienić wartość domyślną, aby rozszerzenia kodu zarządzanego mogły uzyskać dostęp do modelu obiektów, a Twoje rozwiązanie będzie działało.
@@ -49,7 +49,7 @@ ms.locfileid: "96844897"
 
    Program Word lub Excel zezwoli programistycznemu dostępowi do modelu obiektów.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Zarządzanie prawami do informacji i rozszerzenia kodu zarządzanego — Omówienie](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
 - [Ochrona dokumentów w rozwiązaniach na poziomie dokumentu](../vsto/document-protection-in-document-level-solutions.md)
 - [Ochrona hasłem w dokumentach pakietu Office](../vsto/password-protection-on-office-documents.md)

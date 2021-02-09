@@ -22,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: 04b104d0-0bd3-4ccb-b164-1de92d234487
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 256a41138a3918dd61d8fd496465bb0230fb9362
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 4bf2977b3b6875a7dc38711b235f5848aa78559e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382575"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889164"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>Zabezpieczenia dostępu kodu dla aplikacji ClickOnce
 Aplikacje ClickOnce są oparte na .NET Framework i podlegają ograniczeniom zabezpieczeń dostępu kodu. Z tego powodu ważne jest, aby zrozumieć skutki zabezpieczenia dostępu kodu i odpowiednio napisać aplikacje ClickOnce.

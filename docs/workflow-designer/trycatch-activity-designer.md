@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: 02a326c2-4009-442f-b7cb-e42121fd2992
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f1396a60cda1e4e1ad372a73b9c2130d450d746
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 23d9f1b0037600c6612a413cce7b089f6adbc7aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433573"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889307"
 ---
 # <a name="trycatch-activity-designer"></a>TryCatch, projektant działań
 
@@ -33,7 +33,7 @@ Dostęp do projektanta działań **TryCatch** w kategorii **Obsługa błędów**
 
 Projektanta działań **TryCatch** można przeciągnąć z **przybornika** i porzucić na Projektant przepływu pracy powierzchnię, wszędzie tam, gdzie działania są zwykle umieszczane, na przykład wewnątrz <xref:System.Activities.Statements.Sequence> . Spowoduje to utworzenie <xref:System.Activities.Statements.TryCatch> działania z wartością domyślną <xref:System.Activities.Activity.DisplayName%2A> TryCatch. <xref:System.Activities.Activity.DisplayName%2A>Wartość można edytować w nagłówku projektanta działań **TryCatch** lub w polu **DisplayName** siatki właściwości. Inne właściwości muszą być edytowane na powierzchni projektanta działań **TryCatch** .
 
-Kliknij przycisk Rozwiń w prawym górnym rogu projektanta **TryCatch** , aby wyświetlić pola **try** , **catch** i **finally** w rozwiniętym widoku. Aby dodać catch, kliknij przycisk **Dodaj nowy catch** w programie **TryCatch** Designer. Przycisk zostanie zmieniony na pole kombi typu. Wybierz typ wyjątku i naciśnij klawisz ENTER, aby dodać catch. Po dodaniu **catch** zostanie rozwinięte miejsce przechwycenia, a działanie może zostać porzucone do przechwytywania w celu zdefiniowania logiki wykonywania dla catch. Zwróć uwagę, że po prawej stronie rozwiniętego obszaru catch znajduje się pole tekstowe. Można nazwać zmienną wyjątku przy użyciu tego pola tekstowego. Zmienna wyjątku może być używana tylko dla działań w ramach tego samego **przechwycenia**.
+Kliknij przycisk Rozwiń w prawym górnym rogu projektanta **TryCatch** , aby wyświetlić pola **try**, **catch** i **finally** w rozwiniętym widoku. Aby dodać catch, kliknij przycisk **Dodaj nowy catch** w programie **TryCatch** Designer. Przycisk zostanie zmieniony na pole kombi typu. Wybierz typ wyjątku i naciśnij klawisz ENTER, aby dodać catch. Po dodaniu **catch** zostanie rozwinięte miejsce przechwycenia, a działanie może zostać porzucone do przechwytywania w celu zdefiniowania logiki wykonywania dla catch. Zwróć uwagę, że po prawej stronie rozwiniętego obszaru catch znajduje się pole tekstowe. Można nazwać zmienną wyjątku przy użyciu tego pola tekstowego. Zmienna wyjątku może być używana tylko dla działań w ramach tego samego **przechwycenia**.
 
 Program **TryCatch** Designer nie obsługuje edytowania funkcji **przechwytywania**. Jeśli chcesz zmienić typ wyjątku, musisz usunąć **przechwycenie** i dodać nowy. **Catch** można usunąć, zaznaczając ją i usuwając lub wybierając pozycję **Usuń** w menu kontekstowym dostępnym przez kliknięcie prawym przyciskiem myszy.
 

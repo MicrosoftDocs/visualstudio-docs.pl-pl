@@ -9,15 +9,15 @@ f1_keywords:
 - Blend.Start.Dev12
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: affef27dae9fe569c0cacbbd3725b9bf76edb94c
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 9fdc3fc2241807cd1b36ec64d620c7b46a498918
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796345"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889268"
 ---
 # <a name="blend-for-visual-studio-overview"></a>Przegląd Blend for Visual Studio
 
@@ -64,7 +64,7 @@ Uzyskaj dostęp do okna składniki i Pokaż ostatnio używany element zawartośc
 
 ## <a name="assets-window"></a>Okno zasobów
 
-Okno **składniki** zawiera wszystkie dostępne kontrolki podobne do **przybornika** w programie Visual Studio. Oprócz formantów znajdziesz wszystkie elementy, które można dodać do obszaru kompozycji, w oknie **zasoby** , w tym style, multimedia, zachowania i efekty. Aby otworzyć okno **zasoby** , wybierz pozycję **Wyświetl**  >  **okno składniki** lub naciśnij **klawisze CTRL** + **Alt** + **X** .
+Okno **składniki** zawiera wszystkie dostępne kontrolki podobne do **przybornika** w programie Visual Studio. Oprócz formantów znajdziesz wszystkie elementy, które można dodać do obszaru kompozycji, w oknie **zasoby** , w tym style, multimedia, zachowania i efekty. Aby otworzyć okno **zasoby** , wybierz pozycję **Wyświetl**  >  **okno składniki** lub naciśnij **klawisze CTRL** + **Alt** + **X**.
 
 ![Okno elementów zawartości w Blend for Visual Studio](media/blend-assets-window.png)
 
@@ -73,7 +73,7 @@ Okno **składniki** zawiera wszystkie dostępne kontrolki podobne do **przyborni
 
 ## <a name="objects-and-timeline-window"></a>Okno Obiekty i oś czasu
 
-To okno służy do organizowania obiektów w obszarze kompozycji i, jeśli chcesz, animowania ich. Aby otworzyć okno **obiekty i oś czasu** , wybierz pozycję **Wyświetl**  >  **Konspekt dokumentu** . Poza funkcjami dostępnymi w [oknie Konspekt dokumentu](creating-a-ui-by-using-xaml-designer-in-visual-studio.md#document-outline-window) w programie Visual Studio, okno Obiekty i oś czasu w Blend for Visual Studio ma obszar kompozycji osi czasu po prawej stronie. Użyj osi czasu podczas tworzenia i edytowania animacji.
+To okno służy do organizowania obiektów w obszarze kompozycji i, jeśli chcesz, animowania ich. Aby otworzyć okno **obiekty i oś czasu** , wybierz pozycję **Wyświetl**  >  **Konspekt dokumentu**. Poza funkcjami dostępnymi w [oknie Konspekt dokumentu](creating-a-ui-by-using-xaml-designer-in-visual-studio.md#document-outline-window) w programie Visual Studio, okno Obiekty i oś czasu w Blend for Visual Studio ma obszar kompozycji osi czasu po prawej stronie. Użyj osi czasu podczas tworzenia i edytowania animacji.
 
 ![Okno obiektu i osi czasu w trybie animacji](media/storyboard-timeline.png)
 
@@ -81,7 +81,7 @@ Korzystanie z przycisków związanych z scenorysem ![Przyciski scenorysu w Blend
 
 Umieść kursor nad każdym przyciskiem w oknie, aby dowiedzieć się więcej o dostępnych funkcjach.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Animowanie obiektów](../xaml-tools/animate-objects-in-xaml-designer.md)
 - [Rysowanie kształtów i ścieżek](../xaml-tools/draw-shapes-and-paths.md)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: a7816161-0490-4043-86f5-0f7331ed83b3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01a46f54bfbce6126c16fa418d5c4bef53afd09b
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: bda44c0c3f6c4b1986fc45a7c9cbf5c4ffa83043
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98533916"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889008"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>Przewodnik: Publikowanie rozszerzenia programu Visual Studio
 

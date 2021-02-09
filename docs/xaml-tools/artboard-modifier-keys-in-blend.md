@@ -7,15 +7,15 @@ ms.topic: reference
 ms.assetid: 50732733-ff49-41ba-8c44-4f6a3875ec1c
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e4b801713e6fdccf65bb580b017f011e65e0b84e
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 655a291cec967663422011ca620a15d7cb080ce2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796283"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889229"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Klawisze modyfikujące obszar kompozycji w programie Blend
 Niektóre skróty klawiaturowe nie mają skojarzonych elementów menu, co oznacza, że nie można użyć [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] interfejsu użytkownika do ich odnalezienia. W poniższej tabeli wymieniono skróty, które modyfikują akcję, na przykład zmianę rozmiarów obiektu.
@@ -39,9 +39,9 @@ Niektóre skróty klawiaturowe nie mają skojarzonych elementów menu, co oznacz
 |Wybierz przez rysowanie neonu|Przytrzymaj klawisz **SHIFT** i przeciągnij|
 |Wybierz obiekt pod innym obiektem|Przytrzymaj klawisz **Alt** i kliknij jeden raz dla każdej warstwy obiektów|
 |Przełączanie między otwartymi dokumentami|Naciśnij klawisz **Ctrl** + **Tab**|
-|Otwórz panel **składniki**|Naciśnij klawisz **Ctrl** + **Period**|
+|Otwórz panel **składniki**|Naciśnij klawisz **Ctrl** + |
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Skróty klawiaturowe](../xaml-tools/keyboard-shortcuts-in-blend.md)
 - [Klawisze modyfikujące pióro](../xaml-tools/pen-tool-modifier-keys-in-blend.md)
