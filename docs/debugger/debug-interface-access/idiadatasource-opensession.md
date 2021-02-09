@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a3319ed0-3979-483b-9852-c0af96852c48
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b49c90374975865edcac8a94c504e1fa991d711a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1221bac37b51d9aa55e31a07f2a301defa3af16e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468505"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857126"
 ---
 # <a name="idiadatasourceopensession"></a>IDiaDataSource::openSession
 Otwiera sesję do wykonywania zapytań o symbole.
@@ -25,7 +25,7 @@ Otwiera sesję do wykonywania zapytań o symbole.
 ## <a name="syntax"></a>Składnia
 
 ```C++
-HRESULT openSession ( 
+HRESULT openSession ( 
    IDiaSession** ppSession
 );
 ```
@@ -60,7 +60,7 @@ if (FAILED(hr))
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
 - [Omówienie](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

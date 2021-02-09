@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d66712dd-6c24-4192-919a-cce262066f0e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e3a4b73cbbfe16cb87108c5f157dada135e71ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57f903bde5121a9ece797f6eb97c29805a3290a1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468540"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857168"
 ---
 # <a name="idiadatasourceloadandvalidatedatafrompdb"></a>IDiaDataSource::loadAndValidateDataFromPdb
 Otwiera i weryfikuje, czy plik bazy danych programu (. pdb) pasuje do dostarczonych informacji o podpisie i przygotowuje plik. pdb jako źródło danych debugowania.
@@ -25,7 +25,7 @@ Otwiera i weryfikuje, czy plik bazy danych programu (. pdb) pasuje do dostarczon
 ## <a name="syntax"></a>Składnia
 
 ```C++
-HRESULT loadAndValidateDataFromPdb ( 
+HRESULT loadAndValidateDataFromPdb ( 
    LPCOLESTR pdbPath,
    GUID*     pcsig70,
    DWORD     sig,
@@ -91,7 +91,7 @@ if (FAILED(hr))
 
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
 - [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
 - [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)

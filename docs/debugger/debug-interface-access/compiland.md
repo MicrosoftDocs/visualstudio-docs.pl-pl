@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: c798eb2b-664a-41ec-ae90-5e9d292507ca
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 537b915269a6b7bcf345caf2545d38ca21337ecf
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 50000a6cab9981d9450d1aa2b99b86649df04e6f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728789"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857418"
 ---
 # <a name="compiland"></a>Jednostka kompilacji
 Istnieje jeden `SymTagCompiland` symbol dla każdego jednostka kompilacji połączonego z plikiem exe. Informacje jednostka kompilacji są dzielone między symbolami ze `SymTagCompiland` znacznikiem, które można pobrać bez ładowania dodatkowych symboli jednostka kompilacji i symboli ze `SymTagCompilandDetails` znacznikiem, które mogą wymagać załadowania dodatkowych symboli.

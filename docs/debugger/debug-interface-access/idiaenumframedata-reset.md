@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2242165b-096b-4345-b214-4a8941dc5ba5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 050799ba0191c9de3f74874d3cd35455278c7730
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3584ef4920bfcc9c3fd749c7f3ee3cf9c785b39e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468316"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856776"
 ---
 # <a name="idiaenumframedatareset"></a>IDiaEnumFrameData::Reset
 Resetuje sekwencję wyliczenia na początek.

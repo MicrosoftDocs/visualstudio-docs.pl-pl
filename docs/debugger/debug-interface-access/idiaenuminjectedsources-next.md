@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 38af80fc-748f-4b15-bff1-823db21dd4d0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 76f5aa24efe6ce479de2a312943613b8262d0118
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b77fd91e53e6fd0a3e5940e25c8d495a87d7f45
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468267"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856678"
 ---
 # <a name="idiaenuminjectedsourcesnext"></a>IDiaEnumInjectedSources::Next
 Pobiera określoną liczbę wstrzykniętych źródeł w sekwencji wyliczenia.
@@ -25,7 +25,7 @@ Pobiera określoną liczbę wstrzykniętych źródeł w sekwencji wyliczenia.
 ## <a name="syntax"></a>Składnia
 
 ```C++
-HRESULT Next ( 
+HRESULT Next ( 
    ULONG                celt,
    IDiaInjectedSource** rgelt,
    ULONG*               pceltFetched

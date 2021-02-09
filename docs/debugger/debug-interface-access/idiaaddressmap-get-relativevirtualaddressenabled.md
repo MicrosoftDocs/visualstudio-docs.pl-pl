@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4c48af81-7148-4d9a-818e-dbe62cbfc638
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 287f076e4ae38f26cec6046896d978319c872148
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58d7bc241ed2e0fc885ace301b611918d1822dac
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468582"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857203"
 ---
 # <a name="idiaaddressmapget_relativevirtualaddressenabled"></a>IDiaAddressMap::get_relativeVirtualAddressEnabled
 Wskazuje, czy jest włączone Obliczanie i użycie względnych adresów wirtualnych (RVA).
@@ -25,7 +25,7 @@ Wskazuje, czy jest włączone Obliczanie i użycie względnych adresów wirtualn
 ## <a name="syntax"></a>Składnia
 
 ```C++
-HRESULT get_relativeVirtualAddressEnabled ( 
+HRESULT get_relativeVirtualAddressEnabled ( 
    BOOL* pRetVal
 );
 ```

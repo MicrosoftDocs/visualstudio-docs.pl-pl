@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 94374d27-e335-4e90-a442-233181ab8e58
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b0e14272474724579a34480254e399c92d825f1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2a5a28f0a8226d8c02cfcf8e24a703cdd006e525
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468344"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856846"
 ---
 # <a name="idiaenumframedataget_count"></a>IDiaEnumFrameData::get_Count
 Pobiera liczbę elementów danych ramek.
@@ -25,7 +25,7 @@ Pobiera liczbę elementów danych ramek.
 ## <a name="syntax"></a>Składnia
 
 ```C++
-HRESULT get_Count ( 
+HRESULT get_Count ( 
    LONG* pRetVal
 );
 ```

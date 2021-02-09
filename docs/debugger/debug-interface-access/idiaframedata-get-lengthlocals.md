@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 51fe15c3-4cd6-4a06-8a41-a56502209762
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c97049b1a0bdfe6b168b9141f5f36418e4a4a5b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 956a4bc951bfb69d7c36c72a81cde45df9a3e2b8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467331"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855922"
 ---
 # <a name="idiaframedataget_lengthlocals"></a>IDiaFrameData::get_lengthLocals
 Pobiera liczbę bajtów zmiennych lokalnych wypychanych na stosie.
@@ -25,7 +25,7 @@ Pobiera liczbę bajtów zmiennych lokalnych wypychanych na stosie.
 ## <a name="syntax"></a>Składnia
 
 ```C++
-HRESULT get_lengthLocals ( 
+HRESULT get_lengthLocals ( 
    DWORD* pRetVal
 );
 ```

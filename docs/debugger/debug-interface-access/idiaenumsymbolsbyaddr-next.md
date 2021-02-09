@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a1320587-7ce7-401f-9548-2f8bcece5cc3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f2a4be91f2439c198ca7424ba13542c68d41c6b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c4aa49ae8097dea4c325f7423b0f388ea8701fc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467667"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856076"
 ---
 # <a name="idiaenumsymbolsbyaddrnext"></a>IDiaEnumSymbolsByAddr::Next
 Pobiera następne symbole w kolejności według adresu.
@@ -25,7 +25,7 @@ Pobiera następne symbole w kolejności według adresu.
 ## <a name="syntax"></a>Składnia
 
 ```C++
-HRESULT Next ( 
+HRESULT Next ( 
    ULONG        celt,
    IDiaSymbol** rgelt,
    ULONG*       pceltFetched

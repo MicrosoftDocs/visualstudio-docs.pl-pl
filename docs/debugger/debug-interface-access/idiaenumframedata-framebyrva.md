@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4b8dec05-e76c-4cc4-9644-2369d583849f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cb00e661fc3976201abb4ab7304422195fda272
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5aa30598dcae08842c935d0d404cbb8b3303aefe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468358"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856881"
 ---
 # <a name="idiaenumframedataframebyrva"></a>IDiaEnumFrameData::frameByRVA
 Zwraca ramkę według względnego adresu wirtualnego (RVA).
@@ -25,7 +25,7 @@ Zwraca ramkę według względnego adresu wirtualnego (RVA).
 ## <a name="syntax"></a>Składnia
 
 ```C++
-HRESULT frameByRVA( 
+HRESULT frameByRVA( 
    DWORD           relativeVirtualAddress,
    IDiaFrameData** frame
 );

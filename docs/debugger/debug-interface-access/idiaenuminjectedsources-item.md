@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 14846955-7270-451d-91d2-9cb34bb65187
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 76e89c89bca8b164645c71df6083b230850e61ca
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 029c47cc04a09dc1168ff755c1640da9c9662207
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468274"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856713"
 ---
 # <a name="idiaenuminjectedsourcesitem"></a>IDiaEnumInjectedSources::Item
 Pobiera wstrzykiwane Źródło przy użyciu indeksu.
@@ -25,7 +25,7 @@ Pobiera wstrzykiwane Źródło przy użyciu indeksu.
 ## <a name="syntax"></a>Składnia
 
 ```C++
-HRESULT Item ( 
+HRESULT Item ( 
    DWORD                index,
    IDiaInjectedSource** injectedSource
 );

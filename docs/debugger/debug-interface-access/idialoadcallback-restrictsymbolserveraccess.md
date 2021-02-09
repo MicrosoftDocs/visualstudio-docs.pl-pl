@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: db37ad9f-f75e-4f0c-83bf-21a6e66ba859
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 01bc4d1bd1109b3e481449dae164001257da3415
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 718a27c4e72db4bed37ed189a4bde78ec4ec0830
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466729"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855656"
 ---
 # <a name="idialoadcallbackrestrictsymbolserveraccess"></a>IDiaLoadCallback::RestrictSymbolServerAccess
 Określa, czy dostęp jest dozwolony do serwera symboli, aby rozpoznać symbole.

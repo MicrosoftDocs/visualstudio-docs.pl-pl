@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 75192c5c-812d-4675-9dc5-4c2cff3ba503
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ae7095d2be479c5e7789a478b8d27632a1d2faa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8282ee5d887ed8ad7c8d19eb0d7891947e32350e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467009"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855775"
 ---
 # <a name="idiainjectedsource"></a>IDiaInjectedSource
 Uzyskuje dostęp do wstrzykniętego kodu źródłowego przechowywanego w źródle danych DIA.
@@ -25,7 +25,7 @@ Uzyskuje dostęp do wstrzykniętego kodu źródłowego przechowywanego w źródl
 ## <a name="syntax"></a>Składnia
 
 ```
-IDiaInjectedSource : IUnknown
+IDiaInjectedSource : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych

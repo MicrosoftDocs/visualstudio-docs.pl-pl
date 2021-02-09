@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c28e8820-1c67-4658-821d-b5879f90cce5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c1f00b0ad5eae835e4ed5aacb4819cb25b342e2f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0cf1e6e273074870e6d0b625b6f78ab3d717950e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468260"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856685"
 ---
 # <a name="idiaenuminjectedsourcesreset"></a>IDiaEnumInjectedSources::Reset
 Resetuje sekwencję wyliczenia na początek.

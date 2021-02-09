@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a01c1bae-04b2-4c30-8621-60939a3124c2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 417a0e937225070fdc4eb98e34f98978e19a5c46
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd7718c0b7d6cf92ff701c16bfb6e7a309c81829
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466996"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855768"
 ---
 # <a name="idialinenumberget_addresssection"></a>IDiaLineNumber::get_addressSection
 Pobiera część sekcji adresu pamięci, w której rozpoczyna się blok.
@@ -25,7 +25,7 @@ Pobiera część sekcji adresu pamięci, w której rozpoczyna się blok.
 ## <a name="syntax"></a>Składnia
 
 ```C++
-HRESULT get_addressSection ( 
+HRESULT get_addressSection ( 
    DWORD* pRetVal
 );
 ```
@@ -46,6 +46,6 @@ DWORD seg;
 pLine->get_addressSection( &seg );
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
 - [IDiaLineNumber::get_addressOffset](../../debugger/debug-interface-access/idialinenumber-get-addressoffset.md)

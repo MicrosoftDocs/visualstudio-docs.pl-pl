@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 95b7b0c1-ecc9-405f-8456-5f9cfb866498
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a3b7e4430c2bbfb6e1372a750608d4105b3d3e18
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 441f147720a7d9a08422d1633e924d511799393f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728868"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857458"
 ---
 # <a name="block"></a>Zablokowanie
 Każdy blok kodu jest identyfikowany przez `SymTagBlock` symbol. Symbole blokowe służą do identyfikowania zagnieżdżonych zakresów w funkcjach.

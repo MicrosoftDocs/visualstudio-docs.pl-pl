@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 611caf4f-7a5f-4aa4-b909-52feeb3cc752
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e73087786e43c254c9635b239f59e7b4dd982090
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7cf372d6885398994010aeb98f8ef57c28209a6d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468372"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856895"
 ---
 # <a name="idiaenumdebugstreams"></a>IDiaEnumDebugStreams
 Wylicza różne strumienie debugowania zawarte w źródle danych.
@@ -25,7 +25,7 @@ Wylicza różne strumienie debugowania zawarte w źródle danych.
 ## <a name="syntax"></a>Składnia
 
 ```
-IDiaEnumDebugStreams : IUnknown
+IDiaEnumDebugStreams : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych

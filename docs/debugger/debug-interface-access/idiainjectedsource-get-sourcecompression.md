@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 854b142f-23a9-466c-bf7f-98e581d5abcd
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e32450e355d757081efaf66e7c5abaf179e7fd95
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 480a0949cd1d42c60b05c5efc89f42c3457ab602
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467023"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855782"
 ---
 # <a name="idiainjectedsourceget_sourcecompression"></a>IDiaInjectedSource::get_sourceCompression
 Pobiera wskaźnik używanej kompresji źródłowej.
@@ -25,7 +25,7 @@ Pobiera wskaźnik używanej kompresji źródłowej.
 ## <a name="syntax"></a>Składnia
 
 ```C++
-HRESULT get_sourceCompression ( 
+HRESULT get_sourceCompression ( 
    DWORD* pRetVal
 );
 ```
@@ -39,7 +39,7 @@ określoną Zwraca wskaźnik używanej kompresji źródłowej. Wartość zerowa 
  Jeśli powiedzie się, zwraca `S_OK` . Zwraca wartość, `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Wartość zwracana przez tę metodę jest specyficzna dla używanego kompilatora. Na przykład kompilator może użyć kodowania o długości uruchomienia lub kompresji w stylu Huffmana.
+ Wartość zwracana przez tę metodę jest specyficzna dla używanego kompilatora. Na przykład kompilator może używać kodowania Run-Length lub kompresji w stylu Huffmana.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bd04e2f6-0dbf-4742-a556-96f2cd99aa19
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 032e628512b7c601a6409f6f70ba0b0c3cabb37c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5844cc235d604e8433940920eb9244044732d54
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466757"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855649"
 ---
 # <a name="idialoadcallbacknotifydebugdir"></a>IDiaLoadCallback::NotifyDebugDir
 Wywoływana, gdy w pliku exe znaleziono katalog debugowania.
@@ -25,7 +25,7 @@ Wywoływana, gdy w pliku exe znaleziono katalog debugowania.
 ## <a name="syntax"></a>Składnia
 
 ```C++
-HRESULT NotifyDebugDir ( 
+HRESULT NotifyDebugDir ( 
    BOOL  fExecutable,
    DWORD cbData,
    BYTE  data[]
