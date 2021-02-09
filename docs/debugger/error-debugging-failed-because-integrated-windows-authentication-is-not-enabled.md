@@ -14,15 +14,15 @@ helpviewer_keywords:
 - debugger, Web application errors
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 35c602b2754e4361b4e41e2b4d4d5cdcc09381c5
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 4d1bbdc3e06dee87e7d8930bc5c4e60c6d25ee2f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852787"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871744"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Błąd: debugowanie nie powiodło się ponieważ zintegrowane uwierzytelnianie systemu Windows nie jest włączone
 Błąd uwierzytelniania uniemożliwił uwierzytelnienie użytkownika, który zażądał debugowania. Taka sytuacja może wystąpić podczas próby przekroczenia kroku do aplikacji sieci Web lub usługi sieci Web XML. Jedną z przyczyn tego błędu jest to, że zintegrowane uwierzytelnianie systemu Windows nie jest włączone. Aby je włączyć, wykonaj kroki opisane w sekcji "aby włączyć zintegrowane uwierzytelnianie systemu Windows".
@@ -35,7 +35,7 @@ Błąd uwierzytelniania uniemożliwił uwierzytelnienie użytkownika, który za�
 
 2. Kliknij przycisk **Start** , a następnie kliknij pozycję **Panel sterowania**.
 
-3. W **Panelu sterowania**kliknij dwukrotnie ikonę **Narzędzia administracyjne**.
+3. W **Panelu sterowania** kliknij dwukrotnie ikonę **Narzędzia administracyjne**.
 
 4. Kliknij dwukrotnie **Internet Information Services**.
 
@@ -53,7 +53,7 @@ Błąd uwierzytelniania uniemożliwił uwierzytelnienie użytkownika, który za�
 
      Zostanie wyświetlone okno dialogowe **metody uwierzytelniania** .
 
-9. W obszarze **dostęp uwierzytelniony**wybierz pozycję **zintegrowane uwierzytelnianie systemu Windows**.
+9. W obszarze **dostęp uwierzytelniony** wybierz pozycję **zintegrowane uwierzytelnianie systemu Windows**.
 
 10. Kliknij przycisk **OK** , aby zamknąć okno dialogowe **metody uwierzytelniania** .
 
@@ -69,27 +69,27 @@ Błąd uwierzytelniania uniemożliwił uwierzytelnienie użytkownika, który za�
 
     1. Kliknij przycisk **Start**, kliknij pozycję **Panel sterowania** , a następnie kliknij pozycję **programy**.
 
-    2. W obszarze **programy i funkcje**kliknij pozycję **Włącz lub wyłącz funkcje systemu Windows**.
+    2. W obszarze **programy i funkcje** kliknij pozycję **Włącz lub wyłącz funkcje systemu Windows**.
 
          Zostanie wyświetlone okno dialogowe Access Control użytkownika i zostanie wyświetlony komunikat z prośbą o zgodę na kontynuowanie.
 
-    3. Kliknij pozycję **Kontynuuj**.
+    3. Kliknij przycisk **Kontynuuj**.
 
          Zostanie wyświetlone okno dialogowe funkcje systemu Windows.
 
     4. Na liście funkcja rozwiń węzeł **Internet Information Services** .
 
-    5. W obszarze **Internet Information Services**rozwiń węzeł **usługi World Wide Web Services** .
+    5. W obszarze **Internet Information Services** rozwiń węzeł **usługi World Wide Web Services** .
 
-    6. W obszarze **World Wide Web Services**kliknij pozycję **zabezpieczenia**.
+    6. W obszarze **World Wide Web Services** kliknij pozycję **zabezpieczenia**.
 
     7. Kliknij pozycję **uwierzytelnianie systemu Windows**.
 
-    8. W obszarze **Internet Information Services**rozwiń węzeł **Narzędzia do zarządzania siecią Web** .
+    8. W obszarze **Internet Information Services** rozwiń węzeł **Narzędzia do zarządzania siecią Web** .
 
-    9. W obszarze **Narzędzia do zarządzania siecią Web**rozwiń węzeł **zgodność zarządzania usługami IIS** w wersji 6, a następnie zaznacz pole wyboru **Zgodność konfiguracji metabazy usług IIS 6 i usług IIS 6** .
+    9. W obszarze **Narzędzia do zarządzania siecią Web** rozwiń węzeł **zgodność zarządzania usługami IIS** w wersji 6, a następnie zaznacz pole wyboru **Zgodność konfiguracji metabazy usług IIS 6 i usług IIS 6** .
 
-    10. W obszarze **Narzędzia do zarządzania siecią Web**wybierz pozycję **Konsola zarządzania usługami IIS** , a następnie kliknij przycisk **OK.**
+    10. W obszarze **Narzędzia do zarządzania siecią Web** wybierz pozycję **Konsola zarządzania usługami IIS** , a następnie kliknij przycisk **OK.**
 
     11. Uruchom ponownie komputer, aby te zmiany zaczęły obowiązywać.
 
@@ -113,7 +113,7 @@ Błąd uwierzytelniania uniemożliwił uwierzytelnienie użytkownika, który za�
 
 10. Zamknij okno **menedżera Internet Information Services (IIS)** .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Debugowanie aplikacji internetowych: Błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
 - [Uwierzytelnianie Microsoft Digest](/windows/win32/secauthn/microsoft-digest-authentication)
 - [Uruchamianie aplikacji sieci Web w systemie Windows Vista przy użyciu usług IIS 7,0 i programu Visual Studio](/previous-versions/aa964620(v=vs.140))

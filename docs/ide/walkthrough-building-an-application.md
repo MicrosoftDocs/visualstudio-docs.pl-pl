@@ -7,15 +7,15 @@ ms.technology: vs-ide-compile
 ms.topic: conceptual
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 76a281b90b3dabe2b1d91c43a27ee5f9c858f96c
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: f7fe40f78b8a8447c1ae784e33a25e905e368118
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136618"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873830"
 ---
 # <a name="walkthrough-build-an-application"></a>Przewodnik: kompilowanie aplikacji
 
@@ -45,7 +45,7 @@ Ustawienia konfiguracji i platformy można zmienić lub utworzyć przy użyciu o
 
 1. Na liście **aktywna Platforma rozwiązań** wybierz opcję **\<New...\>** .
 
-1. W oknie dialogowym **Nowa platforma rozwiązania** wybierz pozycję **x64**i nie Kopiuj ustawień z platformy x86.
+1. W oknie dialogowym **Nowa platforma rozwiązania** wybierz pozycję **x64** i nie Kopiuj ustawień z platformy x86.
 
    ![Okno dialogowe Nowa platforma rozwiązania](../ide/media/buildwalk_newsolutionplatform.png)
 
@@ -67,7 +67,7 @@ Następnie można skompilować rozwiązanie przy użyciu konfiguracji kompilacji
 
 ### <a name="build-the-solution"></a>Kompilowanie rozwiązania
 
-- Na pasku menu wybierz opcję **Kompiluj**  >  **kompilację rozwiązania**lub naciśnij **klawisze CTRL** + **SHIFT** + **B**.
+- Na pasku menu wybierz opcję **Kompiluj**  >  **kompilację rozwiązania** lub naciśnij **klawisze CTRL** + **SHIFT** + **B**.
 
     W oknie **danych wyjściowych** zostaną wyświetlone wyniki kompilacji. Kompilacja powiodła się.
 
@@ -93,7 +93,7 @@ Można tymczasowo ukryć niektóre komunikaty ostrzegawcze podczas kompilacji, a
 
 ### <a name="hide-a-specific-c-warning"></a>Ukryj określone ostrzeżenie języka C#
 
-1. W **Eksplorator rozwiązań**wybierz węzeł najwyższego poziomu projektu.
+1. W **Eksplorator rozwiązań** wybierz węzeł najwyższego poziomu projektu.
 
 1. Na pasku menu wybierz polecenie **Wyświetl**  >  **strony właściwości**.
 
@@ -113,7 +113,7 @@ Można tymczasowo ukryć niektóre komunikaty ostrzegawcze podczas kompilacji, a
 
 ### <a name="suppress-all-visual-basic-build-warnings"></a>Pomiń wszystkie ostrzeżenia kompilacji Visual Basic
 
-1. W **Eksplorator rozwiązań**wybierz węzeł najwyższego poziomu projektu.
+1. W **Eksplorator rozwiązań** wybierz węzeł najwyższego poziomu projektu.
 
 2. Na pasku menu wybierz polecenie **Wyświetl**  >  **strony właściwości**.
 
@@ -213,7 +213,7 @@ Aby uzyskać więcej informacji, zobacz [How to: zmiana katalogu wyjściowego ko
     > [!IMPORTANT]
     > Może pojawić się okno komunikatu z ostrzeżeniem, że określony udział sieciowy może nie być zaufaną lokalizacją. Jeśli ufasz określonej lokalizacji, wybierz przycisk **OK** w oknie komunikatu.
 
-1. Na **standardowym pasku narzędzi**Ustaw konfiguracje rozwiązania na **wersje** i platformy rozwiązań na **x86**.
+1. Na **standardowym pasku narzędzi** Ustaw konfiguracje rozwiązania na **wersje** i platformy rozwiązań na **x86**.
 
 1. Skompiluj aplikację.
 

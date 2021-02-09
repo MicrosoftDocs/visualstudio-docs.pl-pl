@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 433cab30-d191-460b-96f7-90d2530ca243
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ec78e9a04062699ea699f45671e1210fc2306631
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: b6ad51d6b791def360f12b2d64e4ef6841c7bcda
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728507"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872797"
 ---
 # <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Debugowanie bibliotek DLL w programie Visual Studio (C#, C++, Visual Basic, F #)
 
@@ -84,7 +84,7 @@ W przypadku projektów C/C++ można ustawić nagłówki i lokalizacje plików LI
 
 1. W **obszarze** dołączanie  >    >  **dodatkowe zależności** wprowadź pełną ścieżkę i nazwę pliku dla plików lib.
 
-1. Wybierz pozycję **OK**.
+1. Wybierz przycisk **OK**.
 
 Aby uzyskać więcej informacji na temat ustawień projektu C++, zobacz [informacje na stronie właściwości systemu Windows C++](/cpp/build/reference/property-pages-visual-cpp).
 

@@ -9,27 +9,27 @@ helpviewer_keywords:
 ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cfb7f339ca9832db8fdfea47a5bc1aa940534823
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: ea697e6e445eeae117bb6bf1d1603220ec0c0675
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189982"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874077"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>Wybierz katalog instalacji dla elementu pakietu VSPackage
 Pakietu VSPackage i jego pliki pomocnicze muszą znajdować się w systemie plików użytkownika. Lokalizacja zależy od tego, czy pakietu VSPackage jest zarządzany, czy niezarządzany, schemat obsługi wersji równoległej i wybór użytkownika.
 
 ## <a name="unmanaged-vspackages"></a>Niezarządzany pakietów VSPackage
- Niezarządzany pakietu VSPackage to serwer COM, który można zainstalować w dowolnej lokalizacji. Informacje o rejestracji muszą dokładnie odzwierciedlać jego lokalizację. Interfejs użytkownika Instalatora (UI) powinien podać domyślną lokalizację jako podkatalog `ProgramFilesFolder` wartości właściwości Instalator Windows. Przykład:
+ Niezarządzany pakietu VSPackage to serwer COM, który można zainstalować w dowolnej lokalizacji. Informacje o rejestracji muszą dokładnie odzwierciedlać jego lokalizację. Interfejs użytkownika Instalatora (UI) powinien podać domyślną lokalizację jako podkatalog `ProgramFilesFolder` wartości właściwości Instalator Windows. Na przykład:
 
 *&lt;Folderprogramfiles &gt; \\ &lt; &gt; \\ &lt; MyVSPackageProduct &gt; \V1.0\\*
 
  Użytkownik powinien mieć możliwość zmiany domyślnego katalogu w celu uwzględnienia użytkowników, którzy przechowują małą partycję rozruchową i woli instalować aplikacje i narzędzia na innym woluminie.
 
- Jeśli schemat równoległy używa wersji pakietu VSPackage, można użyć podkatalogów do przechowywania różnych wersji. Przykład:
+ Jeśli schemat równoległy używa wersji pakietu VSPackage, można użyć podkatalogów do przechowywania różnych wersji. Na przykład:
 
  *&lt;Folderprogramfiles &gt; \\ &lt; &gt; \\ &lt; MyVSPackageProduct &gt; \\ v 1.0 \\ 2002\\*
 

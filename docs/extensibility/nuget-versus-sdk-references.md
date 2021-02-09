@@ -6,15 +6,15 @@ ms.date: 08/02/2019
 ms.topic: conceptual
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 50197eeda1828156113fbbfa507447484618861a
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: ab2a99c2230c9fc150fe06c305741eedf14ded37
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863771"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874038"
 ---
 # <a name="nuget-versus-sdk-as-a-project-reference"></a>Pakiet NuGet a zestaw SDK jako odwołanie do projektu
 
@@ -28,7 +28,7 @@ Ten artykuł został zaprojektowany, aby pomóc deweloperom w wyborze, czy spako
 
 Poniższa tabela zawiera porównanie funkcji odwołujących się do zestawu SDK z przywołującymi się do nich funkcjami programu NuGet.
 
-| Cechy | Obsługa zestawu SDK | Uwagi dotyczące zestawu SDK | Obsługa NuGet | Uwagi dotyczące narzędzia NuGet |
+| Cecha | Obsługa zestawu SDK | Uwagi dotyczące zestawu SDK | Obsługa NuGet | Uwagi dotyczące narzędzia NuGet |
 | - | - | - |---------------| - |
 | Mechanizm odwołuje się do jednej jednostki, a następnie wszystkie pliki i funkcje są dostępne. | Y | Zestaw SDK można dodać przy użyciu okna dialogowego **Menedżer odwołań** , a wszystkie pliki i funkcje są dostępne podczas pracy deweloperskiej. | Y | |
 | Program MSBuild automatycznie korzysta z zestawów i plików metadanych systemu Windows (*winmd*). | Y | Odwołania w zestawie SDK są automatycznie przenoszone do kompilatora. | Y | |

@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 4c6fe8f1-b015-4989-bb31-72ebac390026
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e8caa5f11f4f0501d8b56c308d5336f10d518062
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 0e626302e4ec311aeaccef77af2870ae69ee76aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560736"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872914"
 ---
 # <a name="inspect-data-using-debugger-windows-in-visual-studio"></a>Sprawdzanie danych przy użyciu okien debugera w programie Visual Studio
 
@@ -48,6 +48,6 @@ Większość okien debugera można otworzyć podczas debugowania programu. Aby w
 |Dezasemblacji|CTRL + ALT + D|[Porady: korzystanie z okna dezasemblacji](../debugger/how-to-use-the-disassembly-window.md)|
 |Liczby|CTRL + ALT + G|[Porady: korzystanie z okna rejestrów](../debugger/how-to-use-the-registers-window.md)|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)

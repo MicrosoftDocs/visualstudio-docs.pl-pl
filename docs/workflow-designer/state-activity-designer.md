@@ -8,16 +8,16 @@ f1_keywords:
 - System.Activities.Statements.State.UI
 ms.assetid: 9455ab37-93a0-4c46-9eb8-b6611ca23167
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: d5dbe0a14b007ad8e916aa9b2d8d765402dbe66b
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: abf4e81ecd258668c93b674410f029e6be0f5bf1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433989"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873518"
 ---
 # <a name="state-activity-designer"></a>State, projektant działań
 

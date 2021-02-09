@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: f15a1400-b204-418d-8878-ab7755470fd7
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ddae505580781c707678e95d9e270c46b86cdae
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: d35b2cfac9a6b39d71359341444816fcfe56c0db
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560229"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872940"
 ---
 # <a name="debugger-settings-and-preparation"></a>Ustawienia debugera i przygotowanie
 W tej sekcji opisano ustawienia właściwości powiązane z debugerem oraz przygotowania, które należy wykonać w celu debugowania programu przy użyciu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] debugera. W przypadku tworzenia programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] przy użyciu szablonów projektu te ustawienia są ustawiane poprawnie dla Ciebie w konfiguracji debugowania.
@@ -48,7 +48,7 @@ W tej sekcji opisano ustawienia właściwości powiązane z debugerem oraz przyg
 
  [Instrukcje: Określanie starszej wersji .NET Framework na potrzeby debugowania](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md) Opisuje, jak ustawić klucz rejestru, aby wskazać debugerowi, którego wersja ma używać.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)
 - [Debugowanie w Visual Studio](../debugger/index.yml)
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)

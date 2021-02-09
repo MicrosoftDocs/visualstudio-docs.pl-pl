@@ -7,21 +7,21 @@ f1_keywords:
 - vs.toolsoptionspages.text_editor.r.lint
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: aecf9d95fb8a3b2cda659e2694bff145424e150b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c32bffbd25a39ff2053dea22930365860ed04a7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62970744"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873661"
 ---
 # <a name="lint-r-code-in-visual-studio"></a>Lint kod R w programie Visual Studio
 
 Linter analizuje kod, aby odsłonić potencjalne błędy, problemy z formatowaniem i inne zakłócenia kodu, takie jak fałszywe. Korzystanie z Linter również pomaga zachęcić do pewnych konwencji kodowania, takich jak identyfikatory. Takie konwencje są przydatne w zespołach i w innych sytuacjach wspólnych.
 
-R Tools for Visual Studio (RTVS) to wbudowana Linter dla języka R, którego zachowanie jest kontrolowane za pomocą różnych opcji opisanych w tym artykule. Te opcje są dostępne w **Tools**  >  **opcji**narzędzia  >  **Edytor tekstu**  >  **R**  >  **lint**.
+R Tools for Visual Studio (RTVS) to wbudowana Linter dla języka R, którego zachowanie jest kontrolowane za pomocą różnych opcji opisanych w tym artykule. Te opcje są dostępne w   >  **opcji** narzędzia  >  **Edytor tekstu**  >  **R**  >  **lint**.
 
 Lint jest domyślnie wyłączona. Aby włączyć lint, ustaw dla opcji **All**  >  **enable lint** **wartość true**.
 
@@ -59,7 +59,7 @@ Te opcje, dla których wszystkie są domyślnie ustawione na **wartość true** 
 
 | Opcja | Wartość domyślna | Lint efekt |
 | --- | --- | --- |
-| **Wiele** | **True** | Określa, kiedy wiele instrukcji znajduje się w tym samym wierszu. |
+| **Wielokrotn** | **True** | Określa, kiedy wiele instrukcji znajduje się w tym samym wierszu. |
 | **Średnikami** | **True** | Identyfikuje użycie średników. |
 
 ## <a name="text-group"></a>Grupa tekstowa

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9ab441b9-cc72-47fa-83e2-87b3c2b891b4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cb0b4fd242f53b3e115c44c35c80b22ff08e3116
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2aaaafb263e2276e760750d2f13217e72869a6aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85460994"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873416"
 ---
 # <a name="typedef-debug-interface-access-sdk"></a>Typedef (Zestaw SDK dostępu do interfejsu debugowania)
 Symbole ze `SymTagTypedef` znacznikami wprowadzają nazwy dla innych typów.

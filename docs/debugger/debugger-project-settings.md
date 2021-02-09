@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 5e1b2a30-d2db-49e8-aba3-2d3a190eea80
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a3a5ba7a1e215fddd5b1127859948496e9b4e1d
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: a3f517e54ba96ecf81b1ac533cf734f2b0a0eb5f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96561035"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873046"
 ---
 # <a name="debugger-project-settings"></a>Ustawienia projektu debugowania
 Niektóre ustawienia projektu wpływają również na Debugowanie. Te ustawienia określają takie elementy jak katalogi, na których znajduje się debuger, argumenty poleceń i poleceń służące do uruchamiania programu oraz typ informacji o debugowaniu utworzonych dla programu. Te ustawienia można zmienić w oknie dialogowym **strony właściwości** .
@@ -50,5 +50,5 @@ Niektóre ustawienia projektu wpływają również na Debugowanie. Te ustawienia
 
  [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md) Opisuje ustawienia właściwości powiązane z debugerem oraz przygotowania, które należy wykonać w celu debugowania programu przy użyciu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] debugera.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
  [Zabezpieczenia debugera](../debugger/debugger-security.md)

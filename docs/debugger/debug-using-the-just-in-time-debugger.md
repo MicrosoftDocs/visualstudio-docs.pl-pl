@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Just-In-Time debugging
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a03afa64d19e3ccd0efbb170b4305049f6bfee30
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 8e082f5346d22fd574b7f9b725f8ec88b8a3b08f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761345"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873200"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Debugowanie przy użyciu debugera just-in-Time w programie Visual Studio
 
@@ -43,7 +43,7 @@ Debugowanie just in time można skonfigurować za pomocą okna dialogowego Opcje
 
 1. W polu **Włącz debugowanie just in Time dla tych typów kodu** wybierz typy kodu, które mają być debugowane debugowania just-in-Time: **zarządzane**, **natywne** i/lub **skrypt**.
 
-1. Wybierz pozycję **OK**.
+1. Wybierz przycisk **OK**.
 
 Jeśli włączysz debuger just in Time, ale nie zostanie on otwarty w przypadku awarii lub błędów aplikacji, zobacz [Rozwiązywanie problemów z debugowaniem just in Time](#jit_errors).
 
@@ -138,7 +138,7 @@ W tym przykładzie utworzysz aplikację konsolową w języku C# w programie Visu
 
    W obszarze **dostępne debugery** wybierz pozycję **\<your preferred Visual Studio version/edition> nowe wystąpienie**, jeśli nie została jeszcze wybrana.
 
-1. Wybierz pozycję **OK**.
+1. Wybierz przycisk **OK**.
 
    Projekt ThrowsNullException zostanie otwarty w nowym wystąpieniu programu Visual Studio, a wykonywanie zostało zatrzymane w wierszu, który wywołał wyjątek:
 

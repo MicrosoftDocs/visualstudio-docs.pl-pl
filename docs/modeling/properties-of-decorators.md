@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, decorators
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ef863d0d3dab394c2ca427a27d039c19e5921a51
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: e29dcda43fdbb7b60567ff0aa0627b41ca3ca299
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360836"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873791"
 ---
 # <a name="properties-of-decorators"></a>Właściwości elementów Decorator
 Dekoratory to ikony, tekst lub Rozwijanie/zwijanie pagons, które mogą być wyświetlane na kształtach lub łącznikach na diagramie. W poniższych tabelach przedstawiono właściwości trzech rodzajów dekoratora. Niektóre właściwości są wyświetlane tylko na dekoratory kształtu lub tylko w łączniku dekoratory.
@@ -25,7 +25,7 @@ Dekoratory to ikony, tekst lub Rozwijanie/zwijanie pagons, które mogą być wy�
 
 ## <a name="expandcollapse-decorator"></a>Rozwiń/Zwiń Dekoratora
 
-|Właściwość|Opis|Domyślny|
+|Właściwość|Opis|Domyślne|
 |-|-|-|
 |Nazwa wyświetlana|Nazwa dekoratora, która będzie wyświetlana w wygenerowanym projektancie.|Rozwiń pozycję Zwiń Dekoratora|
 |Nazwa|Nazwa dekoratora.|ExpandCollapseDecorator|
@@ -38,7 +38,7 @@ Dekoratory to ikony, tekst lub Rozwijanie/zwijanie pagons, które mogą być wy�
 
 ## <a name="icon-decorator"></a>Ikona Dekoratora
 
-|Właściwość|Opis|Domyślny|
+|Właściwość|Opis|Domyślne|
 |-|-|-|
 |DefaultIcon|Ścieżka pliku ikony lub obrazu, który ma być wyświetlany.|\<none>|
 |Nazwa wyświetlana|Nazwa dekoratora, która ma być wyświetlana w wygenerowanym projektancie.|Ikona Dekoratora|
@@ -52,7 +52,7 @@ Dekoratory to ikony, tekst lub Rozwijanie/zwijanie pagons, które mogą być wy�
 
 ## <a name="textdecorator"></a>TextDecorator
 
-|Właściwość|Opis|Domyślny|
+|Właściwość|Opis|Domyślne|
 |-|-|-|
 |DefaultText|Domyślny tekst, który ma być wyświetlany.|Etykieta|
 |Nazwa wyświetlana|Nazwa dekoratora, która ma być wyświetlana w wygenerowanym projektancie.|Etykieta|

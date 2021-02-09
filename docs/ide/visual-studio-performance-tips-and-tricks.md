@@ -6,15 +6,15 @@ ms.date: 12/14/2020
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b3655407ce94395f74ebe5362e7006075ef1e790
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: e53a2e3b1a65e496b4ead3d3bca0e8b0254c39e0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97488183"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873869"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Porady i wskazówki dotyczące wydajności programu Visual Studio
 
@@ -153,7 +153,7 @@ Jeśli wymuszenie nieniezawodnego wyrzucania elementów bezużytecznych sprawia,
 
 Aby uzyskać szczegółowy opis modułu zbierającego elementy bezużyteczne środowiska CLR, zobacz podstawowe informacje na temat [odzyskiwania pamięci](/dotnet/standard/garbage-collection/fundamentals).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Optymalizowanie wydajności programu Visual Studio](../ide/optimize-visual-studio-performance.md)
 - [Szybsze ładowanie rozwiązań (blog programu Visual Studio)](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/)

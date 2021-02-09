@@ -16,15 +16,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, localizing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 16cb372e5acf719d3edc79f081cff6f4b0396b6a
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: a216e57bc9da15fca625e71c7e0430d4fbf4164b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304268"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873557"
 ---
 # <a name="localize-sharepoint-solutions"></a>Lokalizowanie rozwiązań SharePoint
 
@@ -88,7 +88,7 @@ $Resources:String ID
 <asp:<class> runat="server" Text="<%$Resources:<Resource File Name>, <String ID>%>" />
 ```
 
- Przykład:
+ Na przykład:
 
 ```aspx-csharp
 <asp:Button ID="btn1" runat="server" onclick="btn1_Click" Text="<%$Resources:Resource1,String7%>"></asp:Button>
@@ -100,7 +100,7 @@ $Resources:String ID
 <asp:literal ID="<ID>" runat="server" Text="<%$Resources:<Resource File Name>, <String ID>%>" />
 ```
 
- Przykład:
+ Na przykład:
 
 ```aspx-csharp
 <asp:literal ID="Literal1" runat="server" Text="<%$Resources:Resource1, String9%>" />

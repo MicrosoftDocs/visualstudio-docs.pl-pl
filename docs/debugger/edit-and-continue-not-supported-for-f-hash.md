@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 40ec77bb-07e3-4b58-9254-ae015009441c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 33d1e8379e71c41e42cbf761ccdfe740342ee642
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: a686cf91a515d2b7b59d87d7b3ca8e92d4e54c59
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96863091"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871991"
 ---
 # <a name="edit-and-continue-not-supported-for-f"></a>Opcje edytuj i kontynuuj nie są obsługiwane w F# #
 Polecenie Edytuj i Kontynuuj nie jest obsługiwane podczas debugowania kodu F #. Podczas sesji debugowania można edytować kod języka F #, ale należy go unikać. Zmiany kodu nie są stosowane podczas sesji debugowania. W związku z tym wszystkie zmiany w kodzie języka F # podczas debugowania spowodują kod źródłowy, który nie pasuje do debugowanego kodu.

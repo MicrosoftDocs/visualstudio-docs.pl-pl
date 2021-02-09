@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 5262d8b1-2648-429e-85d5-90fcaadfb362
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bf8d6df020694bb10fe4f3f051551056549d5673
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5b934c0e9532bd3bc1f53d9b00d1cc8273f4120
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315060"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872992"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Poznaj porady dotyczące produktywności i wskazówki dotyczące debugera w programie Visual Studio
 
@@ -33,7 +33,7 @@ Jeśli podczas debugowania często przemieszczono wskaźnik myszy, możesz przyp
 
 ## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>Edytuj swój kod i Kontynuuj debugowanie (C#, VB, C++)
 
-W większości języków obsługiwanych przez program Visual Studio można edytować kod w trakcie sesji debugowania i kontynuować debugowanie. Aby skorzystać z tej funkcji, kliknij swój kod z kursorem podczas wstrzymania w debugerze, dokonaj edycji, a następnie naciśnij klawisz **F5**, **F10**lub **F11** , aby kontynuować debugowanie.
+W większości języków obsługiwanych przez program Visual Studio można edytować kod w trakcie sesji debugowania i kontynuować debugowanie. Aby skorzystać z tej funkcji, kliknij swój kod z kursorem podczas wstrzymania w debugerze, dokonaj edycji, a następnie naciśnij klawisz **F5**, **F10** lub **F11** , aby kontynuować debugowanie.
 
 ![Edytuj i Kontynuuj debugowanie](../debugger/media/dbg-tips-edit-and-continue.gif "EditAndContinue")
 
@@ -168,7 +168,7 @@ Czasami deweloperzy aplikacji dostarczają aplikacje bez plików symboli pasują
 
 Aby dowiedzieć się, jak debuger klasyfikuje kod jako kod użytkownika, zobacz [tylko mój kod](../debugger/just-my-code.md). Aby dowiedzieć się więcej na temat plików symboli, zobacz [Określanie symboli (. pdb) i plików źródłowych w debugerze programu Visual Studio](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
-## <a name="learn-more"></a>Więcej informacji
+## <a name="learn-more"></a>Więcej tutaj
 
 Aby uzyskać dodatkowe porady i wskazówki oraz bardziej szczegółowe informacje, zobacz następujące wpisy w blogu:
 

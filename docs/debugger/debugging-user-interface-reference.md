@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 57f1cad8-c908-42bf-8ec5-6eb567df08e9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bfd91e91b89e5a6409bf0c34245a6d37eba905e
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 3788567cc3c8f75581ab0131ab5dda2196c07a2e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726803"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872368"
 ---
 # <a name="debugging-user-interface-reference"></a>Debugowanie odwołań do interfejsu użytkownika
 Podczas debugowania aplikacji mogą wystąpić następujące okna dialogowe.

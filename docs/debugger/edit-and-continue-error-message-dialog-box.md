@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: f98c91c0-447a-4533-85b6-87170a0dc4c3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ef34889b838e2f7eaa92420eec90db9def57e65
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: 0835746b94412380bee314bc3fac59b4c48f86d3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96862849"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872004"
 ---
 # <a name="edit-and-continue-error-message"></a>Komunikat o błędzie Edytuj i Kontynuuj
 
@@ -42,7 +42,7 @@ Możliwe przyczyny tego komunikatu o błędzie:
 - Próba edycji kodu podczas debugowania zrzutu programu Dr. Watson.
 - Podjęto próbę edycji kodu po wystąpieniu nieobsługiwanego wyjątku, a opcja **odwinięcia stosu wywołań w przypadku nieobsługiwanych wyjątków** nie jest zaznaczona.
 - Próba edycji kodu podczas debugowania osadzonej aplikacji środowiska uruchomieniowego.
-- Podjęto próbę edycji kodu zarządzanego przy użyciu wersji .NET Framework wcześniejszej niż 4.5.1 z 64-bitową aplikacją docelową. Aby użyć opcji Edytuj i Kontynuuj dla .NET Framework wcześniejszej niż 4.5.1, ustaw wartość docelowy na **x86** na **\<ProjectName>**  >  **Properties**  >  karcie **Kompilowanie** właściwości, **Zaawansowane ustawienia kompilatora** .
+- Podjęto próbę edycji kodu zarządzanego przy użyciu wersji .NET Framework wcześniejszej niż 4.5.1 z 64-bitową aplikacją docelową. Aby użyć opcji Edytuj i Kontynuuj dla .NET Framework wcześniejszej niż 4.5.1, ustaw wartość docelowy na **x86** na **\<ProjectName>**  >    >  karcie **Kompilowanie** właściwości, **Zaawansowane ustawienia kompilatora** .
 - Podjęto próbę edycji kodu w zestawie, który został zmodyfikowany podczas debugowania i został ponownie załadowany.
 - Podjęto próbę edycji kodu w zestawie, który nie został załadowany.
 - Rozpoczynanie debugowania starej wersji aplikacji, ponieważ Najnowsza wersja zawiera błędy kompilacji.
