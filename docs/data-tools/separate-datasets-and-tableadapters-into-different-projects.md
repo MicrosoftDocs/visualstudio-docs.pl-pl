@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: f66a3940-6227-46af-a930-9177f425f4fd
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: f039dc445acd9032a5fe6862e78e5c28ec67bf5d
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9463fe0371ee3184fd78684e7fe0565820ab3bf0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436006"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866544"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Rozdzielanie zestawów danych i adapterów TableAdapter do różnych projektów
 Wpisane zestawy danych zostały ulepszone, aby klasy [TableAdapters](create-and-configure-tableadapters.md) i DataSet mogły być generowane w oddzielnych projektach. Dzięki temu można szybko oddzielić warstwy aplikacji i generować wielowarstwowe aplikacje do obsługi danych.
@@ -54,7 +54,7 @@ W przypadku rozdzielenia kodu zestawu danych z kodu TableAdapter, projekt zawier
 
      Kod zestawu danych jest generowany w wybranym projekcie we właściwości **projektu DataSet** , a kod **TableAdapter** jest generowany w bieżącym projekcie.
 
-Domyślnie po oddzieleniu zestawu danych i kodu TableAdapter wynik jest dyskretnym plikiem klasy w każdym projekcie. Oryginalny projekt zawiera plik o nazwie *DatasetName. Designer. vb* (lub *DatasetName.Designer.cs* ), który zawiera kod TableAdapter. Projekt wskazany we właściwości **projektu DataSet** zawiera plik o nazwie *DataSetname. DataSet. Designer. vb* (lub *DatasetName.DataSet.Designer.cs* ), który zawiera kod zestawu danych.
+Domyślnie po oddzieleniu zestawu danych i kodu TableAdapter wynik jest dyskretnym plikiem klasy w każdym projekcie. Oryginalny projekt zawiera plik o nazwie *DatasetName. Designer. vb* (lub *DatasetName.Designer.cs*), który zawiera kod TableAdapter. Projekt wskazany we właściwości **projektu DataSet** zawiera plik o nazwie *DataSetname. DataSet. Designer. vb* (lub *DatasetName.DataSet.Designer.cs*), który zawiera kod zestawu danych.
 
 > [!NOTE]
 > Aby wyświetlić wygenerowany plik klasy, wybierz projekt zestawu danych lub TableAdapter. Następnie w obszarze **Eksplorator rozwiązań** wybierz pozycję **Pokaż wszystkie pliki**.

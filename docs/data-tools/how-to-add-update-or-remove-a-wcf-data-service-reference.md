@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 892ebf37-3af4-472e-8744-92837677d611
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6e6c289038c3f8cb9d1586ae4a1f7a84b563239f
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 8d728df5f8af5dff5a7ea2456e1d40d47ddc7f76
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436436"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866895"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Instrukcje: Dodawanie, aktualizowanie lub usuwanie odwołania usługi danych programu WCF
 
@@ -29,7 +29,7 @@ ms.locfileid: "94436436"
 *Odwołanie do usługi* umożliwia projektowi dostęp do co najmniej jednego elementu [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] . Użyj okna dialogowego **Dodaj odwołanie do usługi** , aby wyszukać [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] w bieżącym rozwiązaniu, lokalnie, w sieci lokalnej lub w Internecie.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-Można użyć węzła **usługi połączone** w **Eksplorator rozwiązań** , aby uzyskać dostęp do **Microsoft WCF Web Service Reference Provider** , co umożliwia zarządzanie odwołaniami do usługi danych Windows Communication Foundation (WCF).
+Można użyć węzła **usługi połączone** w **Eksplorator rozwiązań** , aby uzyskać dostęp do **Microsoft WCF Web Service Reference Provider**, co umożliwia zarządzanie odwołaniami do usługi danych Windows Communication Foundation (WCF).
 ::: moniker-end
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]

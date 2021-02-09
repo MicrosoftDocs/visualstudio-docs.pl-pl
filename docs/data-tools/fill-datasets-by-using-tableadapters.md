@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 55f3bfbe-db78-4486-add3-c62f49e6b9a0
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: e6a10eb996acbdbf5411688860ce2ec8b00da1f6
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 8037b8d19bad19485e9ed8f7926e6a3e45b8fef1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436462"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866908"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Wypełnianie zestawów danych za pomocą adapterów TableAdapter
 
@@ -54,7 +54,7 @@ TableAdapters to składniki generowane przez projektanta, które łączą się z
 
 ![Przepływ danych w aplikacji klienckiej](../data-tools/media/clientdatadiagram.gif)
 
-Chociaż TableAdapters są zaprojektowane z **Projektant obiektów DataSet** , klasy TableAdapter nie są generowane jako klasy zagnieżdżone  <xref:System.Data.DataSet> . Znajdują się one w oddzielnych przestrzeniach nazw, które są specyficzne dla każdego zestawu danych. Na przykład, jeśli masz zestaw danych o nazwie `NorthwindDataSet` , TableAdapters, które są skojarzone z  <xref:System.Data.DataTable> s w, `NorthwindDataSet` zostałyby w `NorthwindDataSetTableAdapters` przestrzeni nazw. Aby programowo uzyskać dostęp do określonego TableAdapter, należy zadeklarować nowe wystąpienie TableAdapter. Na przykład:
+Chociaż TableAdapters są zaprojektowane z **Projektant obiektów DataSet**, klasy TableAdapter nie są generowane jako klasy zagnieżdżone  <xref:System.Data.DataSet> . Znajdują się one w oddzielnych przestrzeniach nazw, które są specyficzne dla każdego zestawu danych. Na przykład, jeśli masz zestaw danych o nazwie `NorthwindDataSet` , TableAdapters, które są skojarzone z  <xref:System.Data.DataTable> s w, `NorthwindDataSet` zostałyby w `NorthwindDataSetTableAdapters` przestrzeni nazw. Aby programowo uzyskać dostęp do określonego TableAdapter, należy zadeklarować nowe wystąpienie TableAdapter. Na przykład:
 
 [!code-csharp[VbRaddataTableAdapters#7](../data-tools/codesnippet/CSharp/fill-datasets-by-using-tableadapters_1.cs)]
 [!code-vb[VbRaddataTableAdapters#7](../data-tools/codesnippet/VisualBasic/fill-datasets-by-using-tableadapters_1.vb)]

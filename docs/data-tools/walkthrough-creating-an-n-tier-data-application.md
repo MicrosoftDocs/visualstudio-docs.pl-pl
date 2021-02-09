@@ -13,22 +13,22 @@ helpviewer_keywords:
 ms.assetid: d15e4d31-2839-48d9-9e0e-2e73404d82a2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 76bf07e99f9965e88804c51663bcc37053bf74d6
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: ed395c60ec16eeff6a5aac88a99698193e8bacbd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998086"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866154"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>Przewodnik: Tworzenie wielowarstwowej aplikacji danych
 *N-warstwowe* aplikacje danych to aplikacje, które uzyskują dostęp do danych i są rozdzielone na wiele warstw logicznych lub *warstw*. Oddzielenie składników aplikacji do odrębnych warstw zwiększa łatwość utrzymania i skalowalność aplikacji. Pozwala to na łatwiejsze wdrażanie nowych technologii, które mogą być stosowane do jednej warstwy, bez konieczności ponownego projektowania całego rozwiązania. Architektura N-warstwowa obejmuje warstwę prezentacji, warstwę środkową i warstwę danych. Warstwa środkowa zazwyczaj obejmuje warstwę dostępu do danych, warstwę logiki biznesowej i składniki współużytkowane, takie jak uwierzytelnianie i sprawdzanie poprawności. Warstwa danych obejmuje relacyjną bazę danych. Aplikacje N-warstwowe zwykle przechowują informacje poufne w warstwie dostępu do danych warstwy środkowej, aby zachować izolację od użytkowników końcowych, którzy uzyskują dostęp do warstwy prezentacji. Aby uzyskać więcej informacji, zobacz [Omówienie wielowarstwowych aplikacji do obsługi danych](../data-tools/n-tier-data-applications-overview.md).
 
 Jednym ze sposobów odseparowania różnych warstw w aplikacji n-warstwowej jest utworzenie dyskretnych projektów dla każdej warstwy, która ma zostać dołączona do aplikacji. Typy zestawów danych zawierają `DataSet Project` Właściwość, która określa projekty, do których powinien być generowany wygenerowany zestaw danych i `TableAdapter` kod.
 
-W tym instruktażu przedstawiono sposób rozdzielania zestawu danych i `TableAdapter` kodu do odrębnych projektów biblioteki klas przy użyciu **Projektant obiektów DataSet**. Po oddzieleniu zestawu danych i TableAdapter kodu utworzysz [usługi Windows Communication Foundation i usługi danych programu WCF w usłudze Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) , aby wywoływać do warstwy dostępu do danych. Na koniec utworzysz aplikację Windows Formsową jako warstwę prezentacji. Ta warstwa uzyskuje dostęp do danych z usługi danych.
+W tym instruktażu przedstawiono sposób rozdzielania zestawu danych i `TableAdapter` kodu do odrębnych projektów biblioteki klas przy użyciu **Projektant obiektów DataSet**. Po oddzieleniu zestawu danych i TableAdapter kodu utworzysz [usługi Windows Communication Foundation i WCF Data Services w usłudze Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) , aby wywoływać do warstwy dostępu do danych. Na koniec utworzysz aplikację Windows Formsową jako warstwę prezentacji. Ta warstwa uzyskuje dostęp do danych z usługi danych.
 
 W tym instruktażu należy wykonać następujące czynności:
 
@@ -381,7 +381,7 @@ W zależności od wymagań aplikacji istnieje kilka kroków, które można wykon
 
 - Dodaj kolejne metody do usługi w celu zaktualizowania danych z powrotem do bazy danych.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Praca z zestawami danych w aplikacjach n-warstwowych](../data-tools/work-with-datasets-in-n-tier-applications.md)
 - [Aktualizacja hierarchiczna](../data-tools/hierarchical-update.md)

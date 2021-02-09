@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d65ab262-10c6-48ce-95a3-b5e4cb2c85af
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c6a65bdca680bac7c3a5b2e6a5a671045cdef093
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7f1ddf3982275429428635754c488993e2058ab
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467534"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865077"
 ---
 # <a name="idiaenumtablesitem"></a>IDiaEnumTables::Item
 Pobiera tabelę przy użyciu indeksu lub nazwy.
@@ -25,7 +25,7 @@ Pobiera tabelę przy użyciu indeksu lub nazwy.
 ## <a name="syntax"></a>Składnia
 
 ```C++
-HRESULT Item ( 
+HRESULT Item ( 
    VARIANT     index,
    IDiaTable** table
 );
@@ -56,7 +56,7 @@ IDiaTable* pTable;
 pEnumTables->Item( var, &pTable );
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)
 - [IDiaTable](../../debugger/debug-interface-access/idiatable.md)
 - [IDiaEnumTables::get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md)

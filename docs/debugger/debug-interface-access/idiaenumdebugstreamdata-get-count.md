@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 74ff3a85-3cc2-4aa8-ad9a-7f335b795ed1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 177ba4d84155b2688375421c614c3fb794a81f16
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 356d2de5ea0342d1064605ff6d727e7676a4b5ce
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468477"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865217"
 ---
 # <a name="idiaenumdebugstreamdataget_count"></a>IDiaEnumDebugStreamData::get_Count
 Pobiera rekordy liczb w strumieniu danych debugowania.
@@ -25,7 +25,7 @@ Pobiera rekordy liczb w strumieniu danych debugowania.
 ## <a name="syntax"></a>Składnia
 
 ```C++
-HRESULT get_Count ( 
+HRESULT get_Count ( 
    LONG* pRetVal
 );
 ```

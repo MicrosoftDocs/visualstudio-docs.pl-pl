@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f7828029-f2ee-4ccd-afac-785adc60a4c8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: eb6f2f4486f943064ef4c29d16c98003aa3ff088
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eaa0d07a32653d03db6ac14b7507e0073c33d4e4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467625"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865126"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyrva"></a>IDiaEnumSymbolsByAddr::symbolByRVA
 Umieszcza moduł wyliczający przez przeszukiwanie według względnych adresów wirtualnych (RVA).
@@ -25,7 +25,7 @@ Umieszcza moduł wyliczający przez przeszukiwanie według względnych adresów 
 ## <a name="syntax"></a>Składnia
 
 ```C++
-HRESULT symbolByRVA ( 
+HRESULT symbolByRVA ( 
    DWORD**      relativeVirtualAddress,
    IDiaSymbol** ppsymbol
 );

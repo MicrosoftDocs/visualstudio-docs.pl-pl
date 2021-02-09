@@ -14,18 +14,18 @@ helpviewer_keywords:
 ms.assetid: cfe274f0-71fe-40f6-994e-7c7f6273c9ba
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0a07ca2d30e27cdcbc06e8f90a810982d4410931
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 92e1a03a9a72b550c77aa734c4a9ff2d0b184839
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436097"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866609"
 ---
 # <a name="create-relationships-between-datasets"></a>Tworzenie relacji między zestawami danych
-Zestawy danych, które zawierają tabele powiązane z danymi, używają <xref:System.Data.DataRelation> obiektów do reprezentowania relacji nadrzędny/podrzędny między tabelami i zwracania powiązanych rekordów ze sobą. Dodawanie powiązanych tabel do zestawów danych za pomocą **Kreatora konfiguracji źródła danych** lub **Projektant obiektów DataSet** , tworzy i konfiguruje <xref:System.Data.DataRelation> obiekt.
+Zestawy danych, które zawierają tabele powiązane z danymi, używają <xref:System.Data.DataRelation> obiektów do reprezentowania relacji nadrzędny/podrzędny między tabelami i zwracania powiązanych rekordów ze sobą. Dodawanie powiązanych tabel do zestawów danych za pomocą **Kreatora konfiguracji źródła danych** lub **Projektant obiektów DataSet**, tworzy i konfiguruje <xref:System.Data.DataRelation> obiekt.
 
 <xref:System.Data.DataRelation>Obiekt wykonuje dwie funkcje:
 
@@ -72,7 +72,7 @@ Podczas tworzenia <xref:System.Data.DataRelation> obiektu można określić, czy
 ## <a name="manually-creating-a-data-relation-in-the-dataset-designer"></a>Ręczne tworzenie relacji danych w Projektant obiektów Dataset
 Podczas tworzenia tabel danych przy użyciu narzędzi do projektowania danych w programie Visual Studio, relacje są tworzone automatycznie, jeśli informacje można zbierać ze źródła danych. W przypadku ręcznego dodawania tabel danych z karty **zestaw danych** **przybornika** może być konieczne ręczne utworzenie relacji. Aby uzyskać informacje na temat <xref:System.Data.DataRelation> programistycznego tworzenia obiektów, zobacz [Dodawanie relacji](/dotnet/framework/data/adonet/dataset-datatable-dataview/adding-datarelations)danych.
 
-Relacje między tabelami danych są wyświetlane jako wiersze w **Projektant obiektów DataSet** , z glifem Key i Infinity, który przedstawia aspekt relacji jeden-do-wielu. Domyślnie nazwa relacji nie jest wyświetlana na powierzchni projektowej.
+Relacje między tabelami danych są wyświetlane jako wiersze w **Projektant obiektów DataSet**, z glifem Key i Infinity, który przedstawia aspekt relacji jeden-do-wielu. Domyślnie nazwa relacji nie jest wyświetlana na powierzchni projektowej.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 

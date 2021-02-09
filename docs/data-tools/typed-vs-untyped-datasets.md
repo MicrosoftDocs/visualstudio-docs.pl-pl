@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: c83ba0bb-5425-4d47-8891-6b4dbf937701
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: b2dc8d78f42d210741c904e3e475be33f2443e74
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: e4853dfbffdf07d3b605b13c5fce749a30285c27
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998060"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866336"
 ---
 # <a name="typed-vs-untyped-datasets"></a>Typizowane i nietypizowane zestawy danych
 Określony zestaw danych jest zestawem danych, który najpierw pochodzi od klasy bazowej, <xref:System.Data.DataSet> a następnie używa informacji z **Projektant obiektów DataSet**, który jest przechowywany w pliku XSD, aby wygenerować nową, silnie wpisaną klasę zestawu danych. Informacje ze schematu (tabele, kolumny i tak dalej) są generowane i kompilowane w tej nowej klasie DataSet jako zestaw obiektów i właściwości pierwszej klasy. Ponieważ typ DataSet dziedziczy z <xref:System.Data.DataSet> klasy bazowej, typ klasy przyjmuje wszystkie funkcje <xref:System.Data.DataSet> klasy i może być używany z metodami, które pobierają wystąpienie <xref:System.Data.DataSet> klasy jako parametr.
@@ -42,6 +42,6 @@ Pomimo tego, że typy zestawów danych mają wiele zalet, nieokreślony zestaw D
 
 Zwykle istnieje wiele przypadków, w których można utworzyć zestaw danych dynamicznie bez udostępniania schematu. W takim przypadku zestaw danych jest po prostu wygodną strukturą, w której można przechowywać informacje, o ile dane mogą być reprezentowane w sposób relacyjny. W tym samym czasie można korzystać z możliwości zestawu danych, takich jak możliwość serializacji informacji do przekazania do innego procesu lub do zapisania pliku XML.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Narzędzia zestawu danych](../data-tools/dataset-tools-in-visual-studio.md)

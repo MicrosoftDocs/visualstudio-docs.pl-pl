@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bfe5fe27-6a84-4392-910f-e325146d7552
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 110cacc241a733289b8cdce60c2d64c6fdf298e2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 788bbacdca0cdf03ed1a96a4c19c43ed38b9ec42
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467730"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865147"
 ---
 # <a name="idiaenumsymbolsnext"></a>IDiaEnumSymbols::Next
 Pobiera określoną liczbę symboli w sekwencji wyliczenia.
@@ -25,7 +25,7 @@ Pobiera określoną liczbę symboli w sekwencji wyliczenia.
 ## <a name="syntax"></a>Składnia
 
 ```C++
-HRESULT Next ( 
+HRESULT Next ( 
    ULONG        celt,
    IDiaSymbol** rgelt,
    ULONG*       pceltFetched
@@ -57,7 +57,7 @@ DWORD celt;
 pEnum->Next( 1, &pSym, &celt );
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
 - [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

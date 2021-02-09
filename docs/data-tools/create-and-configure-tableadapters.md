@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 08630d69-0d6c-4e8f-b42d-2922f45f8415
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6c976f06f105969f1eaa91022607d61251a56008
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: a9ab54b358125e45cfb0d6a4df30989cf679ab2d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436761"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867154"
 ---
 # <a name="create-and-configure-tableadapters"></a>Tworzenie i konfigurowanie adapterów TableAdapter
 
@@ -51,7 +51,7 @@ Jeśli przeciągniesz nowy TableAdapter z przybornika, gdy **Projektant obiektó
 
 - Istnieje możliwość utworzenia nowej procedury składowanej w źródłowej bazie danych, jeśli masz odpowiednie uprawnienia do bazy danych. Jeśli nie masz tych uprawnień, nie będzie to możliwe.
 
-- Możesz również uruchomić istniejące procedury składowane dla poleceń **SELECT** , **INSERT** , **Update** i **delete** elementu TableAdapter. Procedura składowana przypisana do polecenia **Update** , na przykład, jest uruchamiana, gdy `TableAdapter.Update()` wywoływana jest metoda.
+- Możesz również uruchomić istniejące procedury składowane dla poleceń **SELECT**, **INSERT**, **Update** i **delete** elementu TableAdapter. Procedura składowana przypisana do polecenia **Update** , na przykład, jest uruchamiana, gdy `TableAdapter.Update()` wywoływana jest metoda.
 
 Mapuj parametry z wybranej procedury przechowywanej do odpowiednich kolumn w tabeli danych. Na przykład jeśli procedura składowana akceptuje parametr o nazwie `@CompanyName` przekazane do `CompanyName` kolumny w tabeli, należy ustawić **kolumnę źródłową** `@CompanyName` parametru na `CompanyName` .
 
@@ -84,7 +84,7 @@ Poniższy przykład pokazuje, jak wywołać dodatkowe zapytanie o nazwie `FillBy
 
 1. Otwórz zestaw danych w **Projektant obiektów DataSet**.
 
-2. W przypadku tworzenia nowego zapytania przeciągnij obiekt **zapytania** z karty **zestaw danych** **przybornika** do <xref:System.Data.DataTable> lub wybierz polecenie **Dodaj zapytanie** z menu skrótów programu TableAdapter. Możesz również przeciągnąć obiekt **zapytania** do pustego obszaru **Projektant obiektów DataSet** , który tworzy TableAdapter bez skojarzonego <xref:System.Data.DataTable> . Te zapytania mogą zwracać tylko pojedyncze (skalarne) wartości lub uruchamiać polecenia UPDATE, INSERT lub DELETE względem bazy danych.
+2. W przypadku tworzenia nowego zapytania przeciągnij obiekt **zapytania** z karty **zestaw danych** **przybornika** do <xref:System.Data.DataTable> lub wybierz polecenie **Dodaj zapytanie** z menu skrótów programu TableAdapter. Możesz również przeciągnąć obiekt **zapytania** do pustego obszaru **Projektant obiektów DataSet**, który tworzy TableAdapter bez skojarzonego <xref:System.Data.DataTable> . Te zapytania mogą zwracać tylko pojedyncze (skalarne) wartości lub uruchamiać polecenia UPDATE, INSERT lub DELETE względem bazy danych.
 
 3. Na ekranie **Wybierz połączenie danych** wybierz lub Utwórz połączenie, które będzie używane przez zapytanie.
 

@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 73ee9759-0a90-48a9-bf7b-9d6fc17bff93
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5fcd8bb06cf9c88466b4dfa3cfaf2dfd8093bd3d
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: c410d9290b7e377654a9cff87f8df7524a1b7149
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436449"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866882"
 ---
 # <a name="handle-a-concurrency-exception"></a>Obsługiwanie wyjątku współbieżności
 
@@ -75,13 +75,13 @@ Zacznij od utworzenia nowej aplikacji Windows Forms:
 
 3. W środkowym okienku wybierz typ projektu **aplikacji Windows Forms** .
 
-4. Nazwij projekt **ConcurrencyWalkthrough** , a następnie wybierz przycisk **OK**.
+4. Nazwij projekt **ConcurrencyWalkthrough**, a następnie wybierz przycisk **OK**.
 
-     Projekt **ConcurrencyWalkthrough** jest tworzony i dodawany do **Eksplorator rozwiązań** , a nowy formularz zostanie otwarty w projektancie.
+     Projekt **ConcurrencyWalkthrough** jest tworzony i dodawany do **Eksplorator rozwiązań**, a nowy formularz zostanie otwarty w projektancie.
 
 ## <a name="create-the-northwind-dataset"></a>Tworzenie zestawu danych Northwind
 
-Następnie Utwórz zestaw danych o nazwie **NorthwindDataSet** :
+Następnie Utwórz zestaw danych o nazwie **NorthwindDataSet**:
 
 1. W menu **dane** wybierz polecenie **Dodaj nowe źródło danych**.
 
@@ -124,7 +124,7 @@ Teraz można testować formularz, aby upewnić się, że działa zgodnie z oczek
 
      Formularz zostanie wyświetlony z <xref:System.Windows.Forms.DataGridView> kontrolką, która jest wypełniana danymi z tabeli Customers.
 
-2. W menu **Debuguj** wybierz polecenie **Zatrzymaj debugowanie**.
+2. W menu **Debugowanie** wybierz polecenie **Zatrzymaj debugowanie**.
 
 ## <a name="handle-concurrency-errors"></a>Obsługa błędów współbieżności
 
@@ -178,7 +178,7 @@ Utwórz komunikat, dodając następujący kod do **edytora kodu**. Wprowadź nas
 
 ### <a name="process-the-users-response"></a>Przetwórz odpowiedź użytkownika
 
-Musisz również mieć kod, aby przetworzyć odpowiedź użytkownika do okna komunikatu. Dostępne są opcje zastępowania bieżącego rekordu w bazie danych z proponowaną zmianą lub porzucenia lokalnych zmian i odświeżenia tabeli danych z rekordem, który jest obecnie w bazie danych. Jeśli użytkownik wybierze **wartość tak** , <xref:System.Data.DataTable.Merge%2A> Metoda zostanie wywołana z argumentem *PreserveChanges* ustawionym na **wartość true**. Powoduje to pomyślną próbę aktualizacji, ponieważ oryginalna wersja rekordu jest teraz zgodna z rekordem w bazie danych.
+Musisz również mieć kod, aby przetworzyć odpowiedź użytkownika do okna komunikatu. Dostępne są opcje zastępowania bieżącego rekordu w bazie danych z proponowaną zmianą lub porzucenia lokalnych zmian i odświeżenia tabeli danych z rekordem, który jest obecnie w bazie danych. Jeśli użytkownik wybierze **wartość tak**, <xref:System.Data.DataTable.Merge%2A> Metoda zostanie wywołana z argumentem *PreserveChanges* ustawionym na **wartość true**. Powoduje to pomyślną próbę aktualizacji, ponieważ oryginalna wersja rekordu jest teraz zgodna z rekordem w bazie danych.
 
 Dodaj następujący kod poniżej kodu, który został dodany w poprzedniej sekcji:
 
@@ -199,14 +199,14 @@ Teraz można testować formularz, aby upewnić się, że działa zgodnie z oczek
 
 5. Kliknij prawym przyciskiem myszy tabelę **Customers** , a następnie wybierz polecenie **Pokaż dane tabeli**.
 
-6. W pierwszym rekordzie ( **ALFKI** ) Zmień wartość **ContactName** na **Mariany Anders2**.
+6. W pierwszym rekordzie (**ALFKI**) Zmień wartość **ContactName** na **Mariany Anders2**.
 
     > [!NOTE]
     > Przejdź do innego wiersza, aby zatwierdzić zmianę.
 
 7. Przejdź do formularza ConcurrencyWalkthrough.
 
-8. W pierwszym rekordzie w formularzu ( **ALFKI** ) Zmień wartość **ContactName** na **Mariany Anders1**.
+8. W pierwszym rekordzie w formularzu (**ALFKI**) Zmień wartość **ContactName** na **Mariany Anders1**.
 
 9. Wybierz ikonę **Zapisz**.
 

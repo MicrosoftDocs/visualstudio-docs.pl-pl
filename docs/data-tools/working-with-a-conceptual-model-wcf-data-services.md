@@ -1,6 +1,6 @@
 ---
-title: Praca z modelem koncepcyjnym (Usługi danych programu WCF)
-description: Pracuj z modelem koncepcyjnym w Usługi danych programu WCF. Wykonywanie zapytań dotyczących danych za poorednictwem obiektów zamiast translacji między schematami bazy danych i modelami obiektów.
+title: Praca z modelem koncepcyjnym (WCF Data Services)
+description: Pracuj z modelem koncepcyjnym w WCF Data Services. Wykonywanie zapytań dotyczących danych za poorednictwem obiektów zamiast translacji między schematami bazy danych i modelami obiektów.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,21 +11,21 @@ helpviewer_keywords:
 ms.assetid: 2cd873cf-b010-49f2-a278-bb1277aaa934
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2aa79ca10729b9c36437fe30072328838de5dda4
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: ef5745f974848da75b4dcc0c42b59b38aa61cd0b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94997878"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866115"
 ---
-# <a name="work-with-a-conceptual-model-wcf-data-services"></a>Korzystanie z modelu koncepcyjnego (Usługi danych programu WCF)
+# <a name="work-with-a-conceptual-model-wcf-data-services"></a>Korzystanie z modelu koncepcyjnego (WCF Data Services)
 
 W przypadku używania modelu koncepcyjnego do opisywania danych w bazie danych, można wysyłać zapytania o dane za pomocą obiektów, a nie do ich przetłumaczenia między schematem bazy danych i modelem obiektów.
 
-Modeli koncepcyjnych można używać w aplikacjach Usługi danych programu WCF. W poniższych tematach przedstawiono sposób wykonywania zapytań dotyczących danych za pomocą modelu koncepcyjnego.
+Modeli koncepcyjnych można używać w aplikacjach WCF Data Services. W poniższych tematach przedstawiono sposób wykonywania zapytań dotyczących danych za pomocą modelu koncepcyjnego.
 
 | Temat | Opis |
 | - | - |
@@ -34,7 +34,7 @@ Modeli koncepcyjnych można używać w aplikacjach Usługi danych programu WCF. 
 
 Korzystając z modelu koncepcyjnego, można określić, jakiego rodzaju dane są prawidłowe w języku zgodnym z Twoją domeną. Można zdefiniować prawidłowe dane w modelu lub można dodać sprawdzanie poprawności operacji wykonywanych w ramach jednostki lub usługi danych.
 
-W poniższych tematach pokazano, jak dodać sprawdzanie poprawności do aplikacji Usługi danych programu WCF.
+W poniższych tematach pokazano, jak dodać sprawdzanie poprawności do aplikacji WCF Data Services.
 
 |Temat|Opis|
 |-----------|-----------------|
@@ -47,7 +47,7 @@ W poniższych tematach pokazano, jak dodać sprawdzanie poprawności do aplikacj
 |[Instrukcje: Dodawanie, modyfikowanie i usuwanie jednostek](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|Pokazuje, jak tworzyć, aktualizować i usuwać dane jednostki w usłudze danych.|
 |[Instrukcje: Definiowanie relacji jednostek](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|Pokazuje, jak utworzyć lub zmienić relacje w usłudze danych.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Usługi Windows Communication Foundation i usługi danych WCF w programie Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 - [Wykonywanie zapytań do usługi danych](/dotnet/framework/data/wcf/querying-the-data-service-wcf-data-services)

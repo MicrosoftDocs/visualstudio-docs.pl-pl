@@ -27,15 +27,15 @@ helpviewer_keywords:
 ms.assetid: 464de16b-4215-4787-9bfa-921aaff9d9f4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d145ccd8764e488a5d1270985050b29bcd8987d
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: fe50082f8ff62c4a19b7725facc18f43d672e353
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560567"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865712"
 ---
 # <a name="crt-debug-library-use"></a>Korzystanie z biblioteki debugowania CRT
 Biblioteka wykonawcza C zapewnia rozbudowaną obsługę debugowania. Aby użyć jednej z bibliotek debugowania CRT, należy połączyć za pomocą [/Debug](/cpp/build/reference/debug-generate-debug-info) i kompilować z **/MDD**, **/MTD** lub **/LDD**.
@@ -47,7 +47,7 @@ Biblioteka wykonawcza C zapewnia rozbudowaną obsługę debugowania. Aby użyć 
 
  Aby uzyskać więcej informacji na temat różnych bibliotek w czasie wykonywania, których można użyć, zobacz [biblioteki C Run-Time](/cpp/c-runtime-library/crt-library-features).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Techniki debugowania CRT](../debugger/crt-debugging-techniques.md)
 - [/MD,/MT,/LD (Użyj biblioteki Run-Time)](/cpp/build/reference/md-mt-ld-use-run-time-library)

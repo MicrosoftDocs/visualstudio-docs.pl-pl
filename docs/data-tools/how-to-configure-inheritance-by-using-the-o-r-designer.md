@@ -7,22 +7,22 @@ ms.topic: how-to
 ms.assetid: e594af12-e777-434a-bc08-7dd2dac84cdc
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4bc36bca3cc5bd13b3dcfad5ebed66eca7eeb019
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: fee2c42e6ec84280f4090a8ae1dfea83a81ee369
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436336"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866830"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Instrukcje: konfigurowanie dziedziczenia za pomocą narzędzia Object Relational Designer
-**Object Relational Designer** ( **Projektant O/R** ) wspiera koncepcję dziedziczenia pojedynczej tabeli, ponieważ jest ona często zaimplementowana w systemach relacyjnych. W przypadku dziedziczenia z jedną tabelą istnieje pojedyncza tabela bazy danych zawierająca pola dla informacji nadrzędnych i podrzędnych. W przypadku danych relacyjnych kolumna rozróżniacza zawiera wartość określającą, do której klasy należy każdy rekord.
+**Object Relational Designer** (**Projektant O/R**) wspiera koncepcję dziedziczenia pojedynczej tabeli, ponieważ jest ona często zaimplementowana w systemach relacyjnych. W przypadku dziedziczenia z jedną tabelą istnieje pojedyncza tabela bazy danych zawierająca pola dla informacji nadrzędnych i podrzędnych. W przypadku danych relacyjnych kolumna rozróżniacza zawiera wartość określającą, do której klasy należy każdy rekord.
 
 Rozważmy na przykład `Persons` tabelę zawierającą wszystkie osoby zaangażowane przez firmę. Niektóre osoby to pracownicy i niektórzy ludzie są kierownikami. `Persons`Tabela zawiera kolumnę o nazwie `EmployeeType` , która ma wartość 1 dla menedżerów i wartość 2 dla pracowników; jest to kolumna rozróżniacza. W tym scenariuszu można utworzyć podklasę pracowników i wypełnić klasę tylko rekordami o `EmployeeType` wartości 2. Można również usunąć kolumny, które nie dotyczą poszczególnych klas.
 
-Tworzenie modelu obiektów, który używa dziedziczenia (i odpowiada danych relacyjnych) może być nieco mylące. Poniższa procedura zawiera opis czynności wymaganych do skonfigurowania dziedziczenia przy użyciu **projektanta o/R**. Następujące kroki ogólne nie odwołujące się do istniejącej tabeli i kolumn mogą być trudne, dlatego należy zapewnić Przewodnik korzystający z danych. Aby uzyskać szczegółowe instrukcje krok po kroku dotyczące konfigurowania dziedziczenia przy użyciu **projektanta o/r** , zobacz [Przewodnik: tworzenie klas LINQ to SQL za pomocą dziedziczenia z jedną tabelą (Projektant o/r)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md).
+Tworzenie modelu obiektów, który używa dziedziczenia (i odpowiada danych relacyjnych) może być nieco mylące. Poniższa procedura zawiera opis czynności wymaganych do skonfigurowania dziedziczenia przy użyciu **projektanta o/R**. Następujące kroki ogólne nie odwołujące się do istniejącej tabeli i kolumn mogą być trudne, dlatego należy zapewnić Przewodnik korzystający z danych. Aby uzyskać szczegółowe instrukcje krok po kroku dotyczące konfigurowania dziedziczenia przy użyciu **projektanta o/r**, zobacz [Przewodnik: tworzenie klas LINQ to SQL za pomocą dziedziczenia z jedną tabelą (Projektant o/r)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md).
 
 ## <a name="to-create-inherited-data-classes"></a>Aby utworzyć dziedziczone klasy danych
 
@@ -32,7 +32,7 @@ Tworzenie modelu obiektów, który używa dziedziczenia (i odpowiada danych rela
 
 3. Przeciągnij drugą kopię tabeli do **projektanta o/R** i zmień jej nazwę. Jest to Klasa pochodna lub podklasa.
 
-4. Kliknij przycisk **dziedziczenie** na karcie **Object Relational Designer** **przybornika** , a następnie kliknij podklasę (nazwę tabeli) i połącz ją z klasą bazową.
+4. Kliknij przycisk **dziedziczenie** na karcie **Object Relational Designer** **przybornika**, a następnie kliknij podklasę (nazwę tabeli) i połącz ją z klasą bazową.
 
     > [!NOTE]
     > Kliknij element **dziedziczenia** w **przyborniku** i zwolnij przycisk myszy, kliknij drugą kopię klasy utworzonej w kroku 3, a następnie kliknij pierwszą klasę utworzoną w kroku 2. Strzałka w linii dziedziczenia wskazuje na pierwszą klasę.

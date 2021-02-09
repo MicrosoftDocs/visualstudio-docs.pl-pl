@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 35cbd591-4c4f-4035-8731-8162ba1c8318
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 876cc88756f6230585dce72b984b7ac40390a7f4
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: b8d672d5d28d10beecf72d482d9859975e2c927e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729044"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865894"
 ---
 # <a name="choose-breakpoints-dialog-box"></a>Wybierz punkty przerwania — okno dialogowe
 Okno dialogowe **Wybieranie punktów przerwania** zostanie otwarte podczas próby ustawienia punktu przerwania z niejednoznacznych danych wejściowych w oknie dialogowym **nowy punkt przerwania** . Typowym przykładem niejednoznacznych danych wejściowych jest przeciążona nazwa funkcji.

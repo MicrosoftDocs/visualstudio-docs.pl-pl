@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 492c0893-7043-452f-a020-890a47230d20
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 17fe6d65e70399ccac5b9ef4e2f1234ef4e3698e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fee6f04b3ee0aefe0aac99f8079e2f31733ce08b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468687"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865420"
 ---
 # <a name="dia2dump-sample"></a>Dia2dump — Przykład
 
@@ -40,11 +40,11 @@ Domyślnie katalog instalacyjny jest katalogiem chronionym. Oznacza to, że nale
 
 1. Otwórz plik Dia2dump —. sln w programie Visual Studio. Jeśli nie skopiowano rozwiązania do innego katalogu, może zostać wyświetlony monit o ponowne uruchomienie programu Visual Studio z podniesionymi uprawnieniami.
 
-1. W **Eksplorator rozwiązań**wybierz projekt Dia2dump — (a nie rozwiązanie).
+1. W **Eksplorator rozwiązań** wybierz projekt Dia2dump — (a nie rozwiązanie).
 
 1. Otwórz okno dialogowe **strony właściwości** projektu. Aby uzyskać szczegółowe informacje, zobacz [Praca z właściwościami projektu](/cpp/build/working-with-project-properties).
 
-1. Otwórz **Configuration Properties**  >  stronę właściwości ogólne**C/C++** właściwości konfiguracji  >  **General** .
+1. Otwórz   >  stronę właściwości ogólne **C/C++** właściwości konfiguracji  >   .
 
 1. W obszarze **Dodatkowe katalogi dołączania** Wybierz kontrolkę lista rozwijana, a następnie wybierz pozycję **Edytuj**.
 
@@ -64,7 +64,7 @@ Domyślnie katalog instalacyjny jest katalogiem chronionym. Oznacza to, że nale
 
 ## <a name="run-the-dia2dump-sample"></a>Uruchamianie przykładu Dia2dump —
 
-Dia2Dump.exe opiera się na serwerze COM MSDIA*wersji*. dll w celu świadczenia usług. Począwszy od programu Visual Studio 2015, wersja jest msdia140.dll. Jeśli serwer COM MSDIA*wersja*. dll nie jest zainicjowany, należy go zarejestrować przed zadia2dump.exe może obejść. Katalog DIA SDK ma podkatalog bin, który zawiera wersję x86 biblioteki DLL. Wersja dla maszyn z architekturą x64 jest w bin\amd64, a wersja platformy ARM jest w bin\arm. Aby zarejestrować bibliotekę DLL, Otwórz okno wiersza polecenia dla deweloperów z podwyższonym poziomem uprawnień i przejdź do katalogu, który zawiera wersję architektury komputera. Wprowadź polecenie, `regsvr32 msdia140.dll` Aby zarejestrować serwer com.
+Dia2Dump.exe opiera się na serwerze COM MSDIA *wersji*. dll w celu świadczenia usług. Począwszy od programu Visual Studio 2015, wersja jest msdia140.dll. Jeśli serwer COM MSDIA *wersja*. dll nie jest zainicjowany, należy go zarejestrować przed zadia2dump.exe może obejść. Katalog DIA SDK ma podkatalog bin, który zawiera wersję x86 biblioteki DLL. Wersja dla maszyn z architekturą x64 jest w bin\amd64, a wersja platformy ARM jest w bin\arm. Aby zarejestrować bibliotekę DLL, Otwórz okno wiersza polecenia dla deweloperów z podwyższonym poziomem uprawnień i przejdź do katalogu, który zawiera wersję architektury komputera. Wprowadź polecenie, `regsvr32 msdia140.dll` Aby zarejestrować serwer com.
 
 ### <a name="to-run-the-sample"></a>Aby uruchomić przykład
 

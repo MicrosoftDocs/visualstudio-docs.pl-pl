@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 1020581d-eaaa-41a2-aca4-bf4c212895f6
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: ea1ab222868df6ff1b22eee7827e1edd3978a88e
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: c4a25cc340216e3410e0ca4b6cfabec77a73662e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436214"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866687"
 ---
 # <a name="n-tier-data-applications-overview"></a>N-warstwowe aplikacje do obsługi danych — omówienie
 *N-warstwowe* aplikacje danych to aplikacje danych, które są rozdzielone na wiele *warstw*. Nazywana również "aplikacjami rozproszonymi" i "aplikacjami wielowarstwowymi", aplikacje n-warstwowe dzielą przetwarzanie na dyskretne warstwy dystrybuowane między klientem a serwerem. Podczas tworzenia aplikacji uzyskujących dostęp do danych należy jednoznacznie odseparować różne warstwy tworzące aplikację.
@@ -42,7 +42,7 @@ Program Visual Studio zawiera kilka funkcji, które ułatwiają deweloperom twor
 
 - Obiektowe reprezentacje danych, takie jak klasy jednostek [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) do użycia w warstwie prezentacji.
 
-Warstwa prezentacji zwykle uzyskuje dostęp do warstwy środkowej przy użyciu odwołania do usługi (na przykład [Windows Communication Foundation usług i usługi danych programu WCF w aplikacji Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) ). Warstwa prezentacji nie uzyskuje bezpośredniego dostępu do warstwy danych. Warstwa prezentacji komunikuje się z warstwą danych za pomocą składnika dostępu do danych w warstwie środkowej.
+Warstwa prezentacji zwykle uzyskuje dostęp do warstwy środkowej przy użyciu odwołania do usługi (na przykład [Windows Communication Foundation usług i WCF Data Services w aplikacji Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) ). Warstwa prezentacji nie uzyskuje bezpośredniego dostępu do warstwy danych. Warstwa prezentacji komunikuje się z warstwą danych za pomocą składnika dostępu do danych w warstwie środkowej.
 
 ## <a name="middle-tier"></a>Warstwa środkowa
 *Warstwa środkowa* jest warstwą, której warstwa prezentacji i warstwa danych używają do komunikacji ze sobą. Oto typowe składniki warstwy środkowej:

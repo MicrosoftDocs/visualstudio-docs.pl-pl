@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: b1488366-6dfb-454e-9751-f42fd3f3ddfb
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4ba2010b33b1defa6ef7dcb601fde9417fa47f70
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 30f6d338b4e27677c14dfa4e5ff8793e67f4c6ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436748"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867116"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Tworzenie kontrolki użytkownika aplikacji Windows Forms obsługującej proste powiązanie danych
 
@@ -63,7 +63,7 @@ W tym instruktażu jest stosowana SQL Server Express LocalDB i Przykładowa baza
 
 2. Zainstaluj przykładową bazę danych Northwind, wykonując następujące kroki:
 
-    1. W programie Visual Studio Otwórz okno **Eksplorator obiektów SQL Server** . (Eksplorator obiektów SQL Server jest instalowany jako część obciążenia **magazynu i przetwarzania danych** w **Instalator programu Visual Studio** ). Rozwiń węzeł **SQL Server** . Kliknij prawym przyciskiem myszy wystąpienie LocalDB i wybierz pozycję **nowe zapytanie**.
+    1. W programie Visual Studio Otwórz okno **Eksplorator obiektów SQL Server** . (Eksplorator obiektów SQL Server jest instalowany jako część obciążenia **magazynu i przetwarzania danych** w **Instalator programu Visual Studio**). Rozwiń węzeł **SQL Server** . Kliknij prawym przyciskiem myszy wystąpienie LocalDB i wybierz pozycję **nowe zapytanie**.
 
        Zostanie otwarte okno edytora zapytań.
 
@@ -75,7 +75,7 @@ W tym instruktażu jest stosowana SQL Server Express LocalDB i Przykładowa baza
 
 ## <a name="create-a-windows-forms-application"></a>Tworzenie aplikacji Windows Forms
 
-Pierwszym krokiem jest utworzenie **aplikacji Windows Forms** :
+Pierwszym krokiem jest utworzenie **aplikacji Windows Forms**:
 
 1. W programie Visual Studio w menu **plik** wybierz pozycję **Nowy**  >  **projekt**.
 
@@ -83,7 +83,7 @@ Pierwszym krokiem jest utworzenie **aplikacji Windows Forms** :
 
 3. W środkowym okienku wybierz typ projektu **aplikacji Windows Forms** .
 
-4. Nazwij projekt **SimpleControlWalkthrough** , a następnie wybierz przycisk **OK**.
+4. Nazwij projekt **SimpleControlWalkthrough**, a następnie wybierz przycisk **OK**.
 
      Projekt **SimpleControlWalkthrough** został utworzony i dodany do **Eksplorator rozwiązań**.
 
@@ -111,7 +111,7 @@ Ten przewodnik rozszerza się na istniejący, <xref:System.Windows.Forms.MaskedT
 
 W przypadku prostych formantów, które obsługują wiązania z danymi, zaimplementuj <xref:System.ComponentModel.DefaultBindingPropertyAttribute> :
 
-1. Przełącz formant **PhoneNumberBox** do widoku kodu. (W menu **Widok** wybierz polecenie **kod** ).
+1. Przełącz formant **PhoneNumberBox** do widoku kodu. (W menu **Widok** wybierz polecenie **kod**).
 
 2. Zastąp kod w **PhoneNumberBox** następującym:
 
@@ -128,7 +128,7 @@ Ten krok powoduje użycie kreatora **konfiguracji źródła danych** w celu utwo
 
 2. W oknie **źródła danych** wybierz pozycję **Dodaj nowe źródło danych** , aby uruchomić kreatora **konfiguracji źródła danych** .
 
-3. Na stronie **Wybierz typ źródła danych** wybierz pozycję **baza danych** , a następnie kliknij przycisk **dalej**.
+3. Na stronie **Wybierz typ źródła danych** wybierz pozycję **baza danych**, a następnie kliknij przycisk **dalej**.
 
 4. Na stronie **Wybierz połączenie danych** wykonaj jedną z następujących czynności:
 

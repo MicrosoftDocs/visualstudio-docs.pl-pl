@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 5fef1a64-27a4-4f10-aa57-29023e28a2d6
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 215ae1409c36417526bb1362f0029029ed95e801
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: 92c2d72e2b0c71abe93290ab2bfb9b5b584e9178
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998138"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866284"
 ---
 # <a name="walkthrough-create-a-simple-wcf-service-in-windows-forms"></a>Przewodnik: tworzenie prostej usługi WCF w Windows Forms
 
@@ -152,6 +152,6 @@ W tym instruktażu pokazano, jak utworzyć prostą usługę Windows Communicatio
 
      ![Formularz pokazujący wynik](../data-tools/media/wcf10.png)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Usługi Windows Communication Foundation i usługi danych WCF w programie Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

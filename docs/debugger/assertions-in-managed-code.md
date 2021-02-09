@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: 70ab2522-6486-4076-a1a9-e0f11cd0f3a1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2d546beb45be7f1473992ab9c2afc5f02ced1a1b
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 49560ac3293c416719b9addc1cbadf1b0c04f438
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729096"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866089"
 ---
 # <a name="assertions-in-managed-code"></a>Potwierdzenia w zarządzanym kodzie
 Potwierdzenie (lub instrukcja `Assert`) testuje warunek, który określasz jako argument instrukcji `Assert`. Jeśli warunek ma wartość „true” (prawda), nie są wykonywane żadne akcje. Jeśli warunek ma wartość „false” (fałsz), asercja kończy się niepowodzeniem. W przypadku uruchamiania programu z kompilacją debugowania program przechodzi do trybu przerwania.

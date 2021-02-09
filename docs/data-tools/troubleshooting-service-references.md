@@ -1,6 +1,6 @@
 ---
 title: Rozwiązywanie problemów z odwołaniami usługi
-description: Przejrzyj typowe problemy, które mogą wystąpić podczas pracy z Windows Communication Foundation (WCF) lub Usługi danych programu WCF odwołaniami w programie Visual Studio.
+description: Przejrzyj typowe problemy, które mogą wystąpić podczas pracy z Windows Communication Foundation (WCF) lub WCF Data Services odwołaniami w programie Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
@@ -15,19 +15,19 @@ helpviewer_keywords:
 ms.assetid: 3b531120-1325-4734-90c6-6e6113bd12ac
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7d1a1f0efc21f1f612d85725358555fcb0cb8245
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: 909291e3f9762593a58df93a9ccc7fe2e82b7952
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998073"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866362"
 ---
 # <a name="troubleshoot-service-references"></a>Rozwiązywanie problemów z odwołaniami usługi
 
-W tym temacie wymieniono typowe problemy, które mogą wystąpić podczas pracy z programem Windows Communication Foundation (WCF) lub Usługi danych programu WCF odwołaniami w programie Visual Studio.
+W tym temacie wymieniono typowe problemy, które mogą wystąpić podczas pracy z programem Windows Communication Foundation (WCF) lub WCF Data Services odwołaniami w programie Visual Studio.
 
 ## <a name="error-returning-data-from-a-service"></a>Błąd podczas zwracania danych z usługi
 
@@ -62,7 +62,7 @@ Aby naprawić ten błąd:
 
 ## <a name="access-level-for-generated-classes-setting-has-no-effect"></a>Ustawienie poziomu dostępu dla wygenerowanych klas nie ma żadnego wpływu
 
-Ustawienie opcji **poziom dostępu dla wygenerowanych klas** w oknie dialogowym **Konfigurowanie odwołań** do usług **może** być **Friend** niezawsze wykonywane. Mimo że opcja wydaje się być ustawiona w oknie dialogowym, powstałe klasy pomocy technicznej są generowane z poziomu dostępu `Public` .
+Ustawienie opcji **poziom dostępu dla wygenerowanych klas** w oknie dialogowym **Konfigurowanie odwołań** do usług **może** być  niezawsze wykonywane. Mimo że opcja wydaje się być ustawiona w oknie dialogowym, powstałe klasy pomocy technicznej są generowane z poziomu dostępu `Public` .
 
 Jest to znane ograniczenie niektórych typów, takie jak te serializowane przy użyciu <xref:System.Xml.Serialization.XmlSerializer> .
 
@@ -90,7 +90,7 @@ Aby naprawić ten błąd, należy ręcznie skompilować ponownie projekt usługi
 
 7. W menu **kompilacja** kliknij polecenie **Skompiluj ponownie** , aby ponownie skompilować projekt usługi WCF.
 
-## <a name="wcf-data-services-do-not-display-in-the-browser"></a>Usługi danych programu WCF nie są wyświetlane w przeglądarce
+## <a name="wcf-data-services-do-not-display-in-the-browser"></a>WCF Data Services nie są wyświetlane w przeglądarce
 
 Gdy próbuje wyświetlić reprezentację XML danych w programie [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] , program Internet Explorer może interpretować dane jako źródło danych RSS. Upewnij się, że opcja wyświetlania kanałów informacyjnych RSS jest wyłączona.
 
@@ -104,6 +104,6 @@ Aby naprawić ten błąd, wyłącz kanały informacyjne RSS:
 
 4. Kliknij przycisk **OK** , aby zamknąć okno dialogowe **Opcje internetowe** .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Usługi Windows Communication Foundation i usługi danych WCF w programie Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

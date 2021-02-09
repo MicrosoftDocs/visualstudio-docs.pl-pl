@@ -12,15 +12,15 @@ helpviewer_keywords:
 - datasets [Visual Basic], creating
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1f124a459d55b945cd8dbb480d7e7c22b5de4f3e
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: b1fe1d75673dc47f423cf398118230cd1530def0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998034"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866232"
 ---
 # <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>Przewodnik: Tworzenie zestawu danych za pomocą Projektant obiektów Dataset
 
@@ -110,7 +110,7 @@ W tej sekcji wyjaśniono, jak dodać tabele do zestawu danych.
 
 - Dodaj logikę walidacji do zdarzeń <xref:System.Data.DataTable.ColumnChanging> lub <xref:System.Data.DataTable.RowChanging> tabel danych w zestawie danych. Aby uzyskać więcej informacji, zobacz [Weryfikowanie danych w zestawach DataSet](../data-tools/validate-data-in-datasets.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Tworzenie i konfigurowanie zestawów danych w programie Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)
 - [Wiązanie kontrolek Windows Forms z danymi w programie Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

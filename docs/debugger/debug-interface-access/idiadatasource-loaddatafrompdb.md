@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 02159073-8144-47f8-a0b0-aa0edcb92b5b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 582b211b83ed519470100b7c5b47184c2256894f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4463d14b27c32cc9d74f578f41467db5dc95e815
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468498"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865245"
 ---
 # <a name="idiadatasourceloaddatafrompdb"></a>IDiaDataSource::loadDataFromPdb
 Otwiera i przygotowuje plik bazy danych programu (. pdb) jako źródło danych debugowania.
@@ -64,7 +64,7 @@ if (FAILED(hr))
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
 - [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
 - [IDiaDataSource::loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)

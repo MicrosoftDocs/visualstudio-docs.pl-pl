@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 99c2b06f-47aa-414e-8057-a3453712fd23
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: e31be90ff24f110fda66449187d3372976f269a7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed0df13f1dd281fcf56056809419af5d7ed6d3dc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282725"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867207"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Tworzenie bazy danych i Dodawanie tabel w programie Visual Studio
 
@@ -72,7 +72,7 @@ Parametry połączenia dla pliku *SampleDatabase. mdf* można wyświetlić, otwi
 - Alternatywnie możesz wybrać opcję **Wyświetl**  >  **Eksplorator serwera**, jeśli to okno nie jest jeszcze otwarte. Otwórz okno Właściwości, rozwijając węzeł **połączenia danych** , kliknij prawym przyciskiem myszy pozycję *SampleDatabase. mdf*, a następnie wybierz polecenie **Właściwości**.
 
   > [!TIP]
-  > Jeśli nie można rozwinąć węzła połączenia danych lub nie ma na liście połączenia SampleDatabase. mdf, wybierz przycisk **Połącz z bazą danych** na pasku narzędzi Eksplorator serwera. W oknie dialogowym **Dodawanie połączenia** upewnij się, że w obszarze **Źródło danych**została wybrana opcja **Microsoft SQL Server plik bazy danych** , a następnie wyszukaj i wybierz plik SampleDatabase. mdf. Zakończ Dodawanie połączenia, wybierając **przycisk OK**.
+  > Jeśli nie można rozwinąć węzła połączenia danych lub nie ma na liście połączenia SampleDatabase. mdf, wybierz przycisk **Połącz z bazą danych** na pasku narzędzi Eksplorator serwera. W oknie dialogowym **Dodawanie połączenia** upewnij się, że w obszarze **Źródło danych** została wybrana opcja **Microsoft SQL Server plik bazy danych** , a następnie wyszukaj i wybierz plik SampleDatabase. mdf. Zakończ Dodawanie połączenia, wybierając **przycisk OK**.
 
 ## <a name="create-tables-and-keys-by-using-table-designer"></a>Tworzenie tabel i kluczy za pomocą projektanta tabel
 
@@ -80,9 +80,9 @@ W tej sekcji utworzysz dwie tabele, klucz podstawowy w każdej tabeli i kilka wi
 
 ### <a name="create-the-customers-table"></a>Tworzenie tabeli Customers
 
-1. W **Eksplorator serwera**rozwiń węzeł **połączenia danych** , a następnie rozwiń węzeł **SampleDatabase. mdf** .
+1. W **Eksplorator serwera** rozwiń węzeł **połączenia danych** , a następnie rozwiń węzeł **SampleDatabase. mdf** .
 
-   Jeśli nie można rozwinąć węzła połączenia danych lub nie ma na liście połączenia SampleDatabase. mdf, wybierz przycisk **Połącz z bazą danych** na pasku narzędzi Eksplorator serwera. W oknie dialogowym **Dodawanie połączenia** upewnij się, że w obszarze **Źródło danych**została wybrana opcja **Microsoft SQL Server plik bazy danych** , a następnie wyszukaj i wybierz plik SampleDatabase. mdf. Zakończ Dodawanie połączenia, wybierając **przycisk OK**.
+   Jeśli nie można rozwinąć węzła połączenia danych lub nie ma na liście połączenia SampleDatabase. mdf, wybierz przycisk **Połącz z bazą danych** na pasku narzędzi Eksplorator serwera. W oknie dialogowym **Dodawanie połączenia** upewnij się, że w obszarze **Źródło danych** została wybrana opcja **Microsoft SQL Server plik bazy danych** , a następnie wyszukaj i wybierz plik SampleDatabase. mdf. Zakończ Dodawanie połączenia, wybierając **przycisk OK**.
 
 2. Kliknij prawym przyciskiem myszy pozycję **tabele** i wybierz polecenie **Dodaj nową tabelę**.
 
@@ -111,7 +111,7 @@ W tej sekcji utworzysz dwie tabele, klucz podstawowy w każdej tabeli i kilka wi
 
    ![Projektant tabel](../data-tools/media/table-designer.png)
 
-7. W lewym górnym rogu **projektanta tabeli**wybierz pozycję **Aktualizuj**.
+7. W lewym górnym rogu **projektanta tabeli** wybierz pozycję **Aktualizuj**.
 
 8. W oknie dialogowym **Podgląd aktualizacji bazy danych** wybierz pozycję **Aktualizuj bazę danych**.
 
@@ -136,7 +136,7 @@ W tej sekcji utworzysz dwie tabele, klucz podstawowy w każdej tabeli i kilka wi
    CREATE TABLE [dbo].[Orders]
    ```
 
-4. W lewym górnym rogu **projektanta tabel**wybierz pozycję **Aktualizuj**.
+4. W lewym górnym rogu **projektanta tabel** wybierz pozycję **Aktualizuj**.
 
 5. W oknie dialogowym **Podgląd aktualizacji bazy danych** wybierz pozycję **Aktualizuj bazę danych**.
 
@@ -158,7 +158,7 @@ W tej sekcji utworzysz dwie tabele, klucz podstawowy w każdej tabeli i kilka wi
    CONSTRAINT [FK_Orders_Customers] FOREIGN KEY ([CustomerID]) REFERENCES [Customers]([CustomerID])
    ```
 
-4. W lewym górnym rogu **projektanta tabel**wybierz pozycję **Aktualizuj**.
+4. W lewym górnym rogu **projektanta tabel** wybierz pozycję **Aktualizuj**.
 
 5. W oknie dialogowym **Podgląd aktualizacji bazy danych** wybierz pozycję **Aktualizuj bazę danych**.
 
@@ -166,7 +166,7 @@ W tej sekcji utworzysz dwie tabele, klucz podstawowy w każdej tabeli i kilka wi
 
 ## <a name="populate-the-tables-with-data"></a>Wypełnianie tabel danymi
 
-1. W **Eksplorator serwera** lub **Eksplorator obiektów SQL Server**rozwiń węzeł przykładowej bazy danych.
+1. W **Eksplorator serwera** lub **Eksplorator obiektów SQL Server** rozwiń węzeł przykładowej bazy danych.
 
 2. Otwórz menu skrótów dla węzła **tabele** , wybierz **Odśwież**, a następnie rozwiń węzeł **tabele** .
 

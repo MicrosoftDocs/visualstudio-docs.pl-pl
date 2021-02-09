@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cf08850b-8b75-4e8c-90bd-bd0214756f99
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 231c6b082f7a641ee78d10003d544c3fb9644c1c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 950e6453a75878cd871532c2e5557e2e6314c932
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468526"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865294"
 ---
 # <a name="idiadatasourceget_lasterror"></a>IDiaDataSource::get_lastError
 Pobiera nazwę pliku dla ostatniego błędu ładowania.
@@ -45,5 +45,5 @@ BSTR    fileName;
 HRESULT errorCode = pSource->get_lastError( &fileName );
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)

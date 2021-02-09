@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: cb3d040a-2846-40d7-bdbc-8a5beb5dd2f6
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a93225b4bd4180a9ce3389911c2c15d0dbef52ad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a60e7b685fe277cfe44e5dd3ab1c4825dba67af
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468603"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865315"
 ---
 # <a name="getting-started-debug-interface-access-sdk"></a>Wprowadzenie (Zestaw SDK dostępu do interfejsu debugowania)
 Zestaw SDK dostępu do interfejsu debugowania (DIA) udostępnia dokumentację z instrukcjami i przykład, który ilustruje sposób korzystania z interfejsu API DIA. Korzystając z interfejsów i metod w DIA SDK, można opracowywać niestandardowe aplikacje, które otwierają pliki. pdb i. dbg i przeszukiwania ich zawartości pod kątem symboli, wartości, atrybutów, adresów i innych informacji o debugowaniu. Ten zestaw SDK zawiera również tabele referencyjne dla właściwości skojarzonych z symbolami znalezionymi w aplikacjach C++.

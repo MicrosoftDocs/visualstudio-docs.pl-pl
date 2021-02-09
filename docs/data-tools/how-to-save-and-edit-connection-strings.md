@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: f8ef3a2c-029c-423b-9d9e-a4f1add4f640
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 18d1da27faed67b90658ea4479f1e2e9a11ead4a
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 1707bbdd458ba6fc57ea3f6897af40e4cb9b4f03
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436292"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866739"
 ---
 # <a name="how-to-save-and-edit-connection-strings"></a>Instrukcje: zapisywanie i edytowanie parametrów połączenia
 Parametry połączenia w aplikacjach Visual Studio są zapisywane w pliku konfiguracyjnym aplikacji (nazywanego również ustawieniami aplikacji) lub trwale kodowane bezpośrednio w aplikacji. Zapisywanie parametrów połączenia w pliku konfiguracji aplikacji upraszcza zadanie obsługi aplikacji. Jeśli parametry połączenia należy zmienić, można je zaktualizować w pliku ustawień aplikacji (w przeciwieństwie do zmiany w kodzie źródłowym i ponownej kompilacji aplikacji).
@@ -32,7 +32,7 @@ W **Kreatorze konfiguracji źródła danych** wybierz opcję zapisu połączenia
 1. W **Eksplorator rozwiązań** kliknij dwukrotnie ikonę **mój projekt** (Visual Basic) lub ikonę **Właściwości** (C#), aby otworzyć **projektanta projektu**.
 1. Wybierz kartę **Ustawienia**.
 1. Wprowadź **nazwę** parametrów połączenia. Odnosi się do tej nazwy podczas uzyskiwania dostępu do parametrów połączenia w kodzie.
-1. Ustaw **Typ** na ( **Parametry połączenia** ).
+1. Ustaw **Typ** na (**Parametry połączenia**).
 1. Pozostaw **zakres** ustawiony na wartość **aplikacja**.
 1. Wpisz parametry połączenia w polu **wartość** lub kliknij przycisk **wielokropka** (...) w polu **wartość** , aby otworzyć okno dialogowe **Właściwości połączenia** w celu skompilowania parametrów połączenia.
 

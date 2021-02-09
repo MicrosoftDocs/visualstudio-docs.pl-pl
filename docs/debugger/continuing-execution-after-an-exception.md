@@ -24,15 +24,15 @@ helpviewer_keywords:
 ms.assetid: 6fe97aac-2131-4615-bd92-d3afee741558
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b7475dff2618a1dfcce598f35b57dbe67d80d254
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 9af71aba1b26c3d8160af229d8c050038800106a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96559384"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865816"
 ---
 # <a name="continuing-execution-after-an-exception"></a>Kontynuowanie wykonania po wyjątkach
 Gdy debuger przerywa wykonywanie z powodu wyjątku, domyślnie zobaczysz **pomocnika wyjątków**. Jeśli w oknie dialogowym **Opcje** wyłączono **pomocnika wyjątków** , zobaczysz **asystenta wyjątków** (C# lub Visual Basic) lub okno dialogowe **wyjątek** (C++).
@@ -45,6 +45,6 @@ Gdy debuger przerywa wykonywanie z powodu wyjątku, domyślnie zobaczysz **pomoc
 ## <a name="mixed-code"></a>Kod mieszany
  Jeśli wystąpił nieobsługiwany wyjątek podczas debugowania kodu natywnego i zarządzanego, ograniczenia systemu operacyjnego uniemożliwiają rozwinięcia stosu wywołań. Jeśli spróbujesz odwinąć stos wywołań za pomocą menu skrótów, komunikat o błędzie wyjaśnia, że debuger nie może wycofać się z nieobsłużonego elementu, z wyjątkiem debugowania kodu mieszanego.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Zarządzanie wyjątkami za pomocą debugera](../debugger/managing-exceptions-with-the-debugger.md)

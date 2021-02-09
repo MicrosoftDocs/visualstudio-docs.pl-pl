@@ -15,19 +15,19 @@ helpviewer_keywords:
 ms.assetid: 56a1fbff-c7e8-4187-a1c1-ffd17024bc1b
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 293f04ca111fe88c905a288885f7e4763ec1cdc3
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: cc390642155d33f75bf5c4a69236945658845639
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436696"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867103"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Tworzenie tabel wyszukiwania w aplikacjach WPF
 
-Termin *tabela wyszukiwania* (nazywana czasem *powiązaniem wyszukiwania* ) opisuje kontrolkę wyświetlającą informacje z jednej tabeli danych na podstawie wartości pola klucza obcego w innej tabeli. Tabelę odnośników można utworzyć, przeciągając główny węzeł tabeli nadrzędnej lub obiektu w oknie **źródła danych** na kontrolkę, która jest już powiązana z kolumną lub właściwością w powiązanej tabeli podrzędnej.
+Termin *tabela wyszukiwania* (nazywana czasem *powiązaniem wyszukiwania*) opisuje kontrolkę wyświetlającą informacje z jednej tabeli danych na podstawie wartości pola klucza obcego w innej tabeli. Tabelę odnośników można utworzyć, przeciągając główny węzeł tabeli nadrzędnej lub obiektu w oknie **źródła danych** na kontrolkę, która jest już powiązana z kolumną lub właściwością w powiązanej tabeli podrzędnej.
 
 Na przykład rozważmy tabelę `Orders` w bazie danych sprzedaży. Każdy rekord w `Orders` tabeli zawiera element `CustomerID` wskazujący, który klient złożył zamówienie. `CustomerID`Jest kluczem obcym, który wskazuje rekord klienta w `Customers` tabeli. Po wyświetleniu listy zamówień z `Orders` tabeli możesz chcieć wyświetlić rzeczywistą nazwę klienta zamiast `CustomerID` . Ponieważ nazwa klienta znajduje się w `Customers` tabeli, należy utworzyć tabelę odnośników, aby wyświetlić nazwę klienta. Tabela wyszukiwania używa `CustomerID` wartości w `Orders` rekordzie do nawigowania po relacji i zwraca nazwę klienta.
 

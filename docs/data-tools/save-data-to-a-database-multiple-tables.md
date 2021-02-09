@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 7ebe03da-ce8c-4cbc-bac0-a2fde4ae4d07
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2f6401fedc3158e2743f08775da93faf2ddfee73
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 75800c5a2b5ff62addec3c914905ae67ac171b95
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436045"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866583"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Zapisywanie danych w bazie danych (wiele tabel)
 
@@ -75,7 +75,7 @@ Ten krok powoduje utworzenie źródła danych z bazy danych Northwind przy użyc
 
 2. W oknie **źródła danych** wybierz pozycję **Dodaj nowe źródło danych** , aby uruchomić **Kreatora konfiguracji źródła danych**.
 
-3. Na ekranie **Wybierz typ źródła danych** wybierz pozycję **baza danych** , a następnie wybierz przycisk **dalej**.
+3. Na ekranie **Wybierz typ źródła danych** wybierz pozycję **baza danych**, a następnie wybierz przycisk **dalej**.
 
 4. Na ekranie **Wybierz połączenie danych** wykonaj jedną z następujących czynności:
 

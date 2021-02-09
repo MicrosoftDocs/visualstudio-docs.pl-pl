@@ -8,16 +8,16 @@ dev_langs:
 - CPP
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
 - cplusplus
-ms.openlocfilehash: 36b1fe83cb20aee6d6fc95984a254c9ac9d212bd
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: 4cf316e0d892e8c6ba229a7a46ee0439797d032f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998099"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866349"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Narzędzia do obsługi danych programu Visual Studio dla języka C++
 
@@ -43,7 +43,7 @@ Aby skorzystać z funkcji niestandardowych w SQL Server 2005 i nowszych, użyj [
 
 4. Pobierz przykład ODBC Windows SDK i rozpakuj go do nowej lokalizacji. Ten przykład pokazuje podstawowe polecenia ODBC, które są używane do łączenia się z bazą danych i wysyłania zapytań i poleceń. Więcej informacji na temat tych funkcji można znaleźć w [witrynie Microsoft Open Database Connectivity (ODBC)](/sql/odbc/microsoft-open-database-connectivity-odbc). Po pierwszym załadowaniu rozwiązania (znajdującego się w folderze C++) program Visual Studio będzie oferować uaktualnienie rozwiązania do bieżącej wersji programu Visual Studio. Kliknij przycisk **Yes** (Tak).
 
-5. Aby można było korzystać z klienta natywnego, potrzebny jest plik *nagłówkowy* i plik *lib* . Te pliki zawierają funkcje i definicje charakterystyczne dla SQL Server, poza funkcjami ODBC zdefiniowanymi w pliku SQL. h. We **Project**  >  **właściwościach** projektu  >  **Katalogi VC + +** Dodaj następujący katalog dołączania:
+5. Aby można było korzystać z klienta natywnego, potrzebny jest plik *nagłówkowy* i plik *lib* . Te pliki zawierają funkcje i definicje charakterystyczne dla SQL Server, poza funkcjami ODBC zdefiniowanymi w pliku SQL. h. We   >  **właściwościach** projektu  >  **Katalogi VC + +** Dodaj następujący katalog dołączania:
 
    **%ProgramFiles%\Microsoft SQL Server\110\SDK\Include**
 
@@ -60,7 +60,7 @@ Aby skorzystać z funkcji niestandardowych w SQL Server 2005 i nowszych, użyj [
 
     Należy zauważyć, że w przykładzie nie jest faktycznie używana żadna z natywnych funkcji klienta, dlatego poprzednie kroki nie są niezbędne do skompilowania i uruchomienia. Ale projekt jest teraz skonfigurowany do korzystania z tej funkcji. Aby uzyskać więcej informacji, zobacz [programowanie SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client).
 
-7. Określ, który sterownik ma być używany w podsystemie ODBC. Przykład przekazuje atrybut parametrów połączenia sterownika w jako argument wiersza polecenia. W **Project** obszarze  >  **Properties**  >  **debugowanie** właściwości projektu Dodaj następujący argument polecenia:
+7. Określ, który sterownik ma być używany w podsystemie ODBC. Przykład przekazuje atrybut parametrów połączenia sterownika w jako argument wiersza polecenia. W obszarze  >    >  **debugowanie** właściwości projektu Dodaj następujący argument polecenia:
 
    ```cpp
    DRIVER="SQL Server Native Client 11.0"
@@ -70,6 +70,6 @@ Aby skorzystać z funkcji niestandardowych w SQL Server 2005 i nowszych, użyj [
 
    ![Przykładowe dane wyjściowe zapytania ODBC](../data-tools/media/raddata-odbc-sample-query-output.png)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Uzyskiwanie dostępu do danych w programie Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: e88224ab-ff61-4a3a-b6b8-6f3694546cac
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5915de290a84429878eccb4eae17821f8ac27f70
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: f0b7ab161a252e1d3a89ef856325963bddffdc56
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436416"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866856"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Instrukcje: przypisywanie procedur składowanych na potrzeby wykonywania aktualizacji, wstawiania i usuwania (O/R Designer)
 
@@ -35,7 +35,7 @@ Domyślnie logika do aktualizowania bazy danych (wstawia, aktualizuje i usuwa) z
 
 ### <a name="to-assign-stored-procedures-to-override-the-default-behavior-of-an-entity-class"></a>Aby przypisać procedury składowane w celu zastąpienia domyślnego zachowania klasy jednostki
 
-1. Otwórz plik **LINQ to SQL** w projektancie. (Kliknij dwukrotnie plik **. dbml** w **Eksplorator rozwiązań** ).
+1. Otwórz plik **LINQ to SQL** w projektancie. (Kliknij dwukrotnie plik **. dbml** w **Eksplorator rozwiązań**).
 
 2. W **Eksplorator serwera** lub **Eksplorator bazy danych** rozwiń węzeł **procedury składowane** i zlokalizuj procedury składowane, których chcesz użyć dla poleceń INSERT, Update i/lub DELETE klasy Entity.
 
@@ -45,7 +45,7 @@ Domyślnie logika do aktualizowania bazy danych (wstawia, aktualizuje i usuwa) z
 
 4. Wybierz klasę jednostki, dla której chcesz użyć procedury składowanej do przeprowadzania aktualizacji.
 
-5. W oknie **Właściwości** wybierz polecenie przesłonięcie ( **Wstaw** , **zaktualizuj** lub **Usuń** ).
+5. W oknie **Właściwości** wybierz polecenie przesłonięcie (**Wstaw**, **zaktualizuj** lub **Usuń**).
 
 6. Kliknij przycisk wielokropka (...) obok wyrazów **Użyj środowiska uruchomieniowego** , aby otworzyć okno dialogowe **Konfigurowanie zachowania** .
 
@@ -61,9 +61,9 @@ Domyślnie logika do aktualizowania bazy danych (wstawia, aktualizuje i usuwa) z
 10. Kliknij przycisk **OK** lub **się**.
 
     > [!NOTE]
-    > Można nadal skonfigurować zachowanie dla każdej kombinacji klas i zachowań, o ile po wprowadzeniu każdej zmiany klikniesz przycisk **Zastosuj** . Jeśli zmienisz klasę lub zachowanie przed kliknięciem przycisku **Zastosuj** , pojawi się okno dialogowe ostrzeżenia z możliwością zastosowania zmian.
+    > Można nadal skonfigurować zachowanie dla każdej kombinacji klas i zachowań, o ile po wprowadzeniu każdej zmiany klikniesz przycisk **Zastosuj** . Jeśli zmienisz klasę lub zachowanie przed kliknięciem przycisku **Zastosuj**, pojawi się okno dialogowe ostrzeżenia z możliwością zastosowania zmian.
 
-Aby przywrócić użycie domyślnej logiki środowiska uruchomieniowego dla aktualizacji, kliknij przycisk wielokropka obok polecenia **Wstaw** , **zaktualizuj** lub **Usuń** w oknie **Właściwości** , a następnie wybierz pozycję **Użyj środowiska uruchomieniowego** w oknie dialogowym **Konfigurowanie zachowania** .
+Aby przywrócić użycie domyślnej logiki środowiska uruchomieniowego dla aktualizacji, kliknij przycisk wielokropka obok polecenia **Wstaw**, **zaktualizuj** lub **Usuń** w oknie **Właściwości** , a następnie wybierz pozycję **Użyj środowiska uruchomieniowego** w oknie dialogowym **Konfigurowanie zachowania** .
 
 ## <a name="see-also"></a>Zobacz też
 

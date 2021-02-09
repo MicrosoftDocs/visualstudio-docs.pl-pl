@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9201409e-b4b1-4e2e-a9f8-d17678ac538b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d5a9f25c3913519b50131ec5860e127bef3ddc11
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1480b7e3273e3746f95c01ab8913eb5c934edc39
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467268"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864944"
 ---
 # <a name="idiaframedataget_program"></a>IDiaFrameData::get_program
 Pobiera ciąg programu, który jest używany do obliczenia zestawu rejestru przed wywołaniem bieżącej funkcji.
@@ -25,7 +25,7 @@ Pobiera ciąg programu, który jest używany do obliczenia zestawu rejestru prze
 ## <a name="syntax"></a>Składnia
 
 ```C++
-HRESULT get_program ( 
+HRESULT get_program ( 
    BSTR* pRetVal
 );
 ```

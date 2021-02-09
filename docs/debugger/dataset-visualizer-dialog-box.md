@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: dfbede03-805b-4f88-a645-b479450e6cb0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f57247d23a318da6bf492534c1ff060bb4116bb
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: ca676ec343588d3e473da2ddbf37dd814e29b73d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560476"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865725"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>Dataset Visualizer — Okno dialogowe
 Wizualizator zestawu danych umożliwia wyświetlenie zawartości obiektu DataSet, DataTable, DataView lub DataViewManager. Możesz uzyskać dostęp do tego wizualizatora, klikając ikonę lupy, która pojawia się obok wartości jednego z tych obiektów w oknie zmiennych debugera lub w etykietki danych.
@@ -36,7 +36,7 @@ Wizualizator zestawu danych umożliwia wyświetlenie zawartości obiektu DataSet
 ## <a name="uielement-list"></a>Lista elementów UI
  Użyj tej listy rozwijanej, aby wybrać tabelę w zestawie danych, którą chcesz wizualizować.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)
 - [Tworzenie niestandardowych wizualizatorów](../debugger/create-custom-visualizers-of-data.md)

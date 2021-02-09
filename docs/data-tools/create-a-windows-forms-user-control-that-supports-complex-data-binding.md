@@ -13,15 +13,15 @@ helpviewer_keywords:
 - user controls [Visual Studio], complex data binding
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 465636b2b5bbf1a47752b4f0917258e264172abd
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 25bdda6a1b62f47c752a2975fa3acfd1379a470c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436787"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867151"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Tworzenie kontrolki użytkownika aplikacji Windows Forms obsługującej złożone powiązanie danych
 
@@ -77,7 +77,7 @@ Pierwszym krokiem jest utworzenie projektu **aplikacji Windows Forms** dla języ
 
 ## <a name="add-a-user-control-to-the-project"></a>Dodawanie kontrolki użytkownika do projektu
 
-Ponieważ ten przewodnik tworzy złożoną kontrolkę z powiązaniem danych z **kontrolki użytkownika** , Dodaj element **kontrolki użytkownika** do projektu:
+Ponieważ ten przewodnik tworzy złożoną kontrolkę z powiązaniem danych z **kontrolki użytkownika**, Dodaj element **kontrolki użytkownika** do projektu:
 
 1. W menu **projekt** wybierz polecenie **Dodaj kontrolkę użytkownika**.
 
@@ -93,7 +93,7 @@ Aby dodać <xref:System.Windows.Forms.DataGridView> do kontrolki użytkownika, p
 
 W przypadku złożonych formantów, które obsługują powiązanie danych, można zaimplementować <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> :
 
-1. Przełącz formant **ComplexDataGridView** do widoku kodu. (W menu **Widok** wybierz pozycję **kod** ).
+1. Przełącz formant **ComplexDataGridView** do widoku kodu. (W menu **Widok** wybierz pozycję **kod**).
 
 1. Zastąp kod w `ComplexDataGridView` następującej postaci:
 
