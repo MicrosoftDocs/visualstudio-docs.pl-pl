@@ -4,14 +4,14 @@ ms.technology: vs-ide-general
 ms.custom: vs-get-started
 ms.author: tglee
 author: TerryGLee
-manager: jillfra
+manager: jmartens
 ms.topic: include
-ms.openlocfilehash: fbbd2278a59197601afe02e777e89245fc6bb421
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+ms.openlocfilehash: afc0466e93b8bf2a71db42c08cd2e043107e3bc5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97844733"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925000"
 ---
 *Zintegrowane środowisko programistyczne* programu Visual Studio to twórczy pad do uruchamiania, który umożliwia edytowanie, debugowanie i kompilowanie kodu, a następnie publikowanie aplikacji. Zintegrowane środowisko programistyczne (IDE) to program bogaty w funkcje, który może być używany w wielu aspektach tworzenia oprogramowania. W porównaniu z standardowym edytorem i debugerem, który środowisk IDE zapewnia, program Visual Studio obejmuje kompilatory, narzędzia do uzupełniania kodu, graficzne projektanci i wiele innych funkcji, które ułatwiają proces tworzenia oprogramowania.
 
@@ -85,7 +85,7 @@ Niektóre popularne funkcje programu Visual Studio, które ułatwiają wydajniej
 
    ![Refaktoryzacja w programie Visual Studio](../media/refactoring-menu.png)
 
-- [IntelliSense](../../ide/using-intellisense.md)
+- [Technologia](../../ide/using-intellisense.md)
 
    Technologia IntelliSense to termin dla zestawu funkcji, który wyświetla informacje o kodzie bezpośrednio w edytorze, a w niektórych przypadkach zapisuje małe bity kodu. Jest tak jak w przypadku, gdy podstawowa dokumentacja jest wbudowana w edytorze, co umożliwia zaoszczędzenie informacji o typie w innym miejscu. Funkcje IntelliSense różnią się w zależności od języka. Aby uzyskać więcej informacji, zobacz [C# IntelliSense](../../ide/visual-csharp-intellisense.md), [Visual C++ IntelliSense](../../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../../ide/javascript-intellisense.md)i [Visual Basic IntelliSense](../../ide/visual-basic-specific-intellisense.md). Na poniższej ilustracji przedstawiono, w jaki sposób technologia IntelliSense wyświetla listę elementów członkowskich typu:
 

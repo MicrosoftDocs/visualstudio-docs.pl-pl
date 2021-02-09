@@ -18,15 +18,15 @@ helpviewer_keywords:
 - MSBuild, validating code
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bc8b36768cbac4249b964b167988119b5700d5c7
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: e330b95d2de6da53d9d1bd0f3d553ab8319bdd04
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362551"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924324"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Weryfikacja kodu przy użyciu diagramów zależności
 
@@ -202,7 +202,7 @@ Aby zarządzać błędami w oknie Lista błędów, zobacz [Rozwiązywanie błęd
 
 W poniższej tabeli opisano problemy związane z walidacją warstwy i ich rozwiązania. Problemy te różnią się od błędów, które wynikają z konfliktów między kodem i projektem. Aby uzyskać więcej informacji o tych błędach, zobacz [Rozwiązywanie problemów z walidacją warstwy](#troubleshoot-layer-validation-issues).
 
-|**Problem**|**Możliwa przyczyna**|**Rozwiązanie**|
+|**Wykonaj**|**Możliwa przyczyna**|**Rozwiązanie**|
 |-|-|-|
 |Błędy walidacji nie występują w oczekiwany sposób.|Walidacja nie działa na diagramach zależności, które są kopiowane z innych diagramów zależności w Eksplorator rozwiązań i które znajdują się w tym samym projekcie modelowania. Diagramy zależności, które są kopiowane w ten sposób, zawierają te same odwołania, jak oryginalny diagram zależności.|Dodaj nowy diagram zależności do projektu modelowania.<br /><br /> Skopiuj elementy z diagramu zależności źródłowej do nowego diagramu.|
 

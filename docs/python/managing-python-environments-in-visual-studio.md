@@ -5,16 +5,16 @@ ms.date: 08/06/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f331c794c50d6b6573ad9708da6d153c77f4d77c
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.openlocfilehash: efd75e79d7c015539dfe045f7b0a3b266cfb4756
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352352"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923748"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Jak tworzyć środowiska Python i zarządzać nimi w programie Visual Studio
 
@@ -37,7 +37,7 @@ Jeśli dopiero zaczynasz w języku Python w programie Visual Studio, następują
 
 ::: moniker range="vs-2017"
 > [!Note]
-> Nie można zarządzać środowiskami dla kodu języka Python, który jest otwierany tylko jako folder **File**przy użyciu  >  polecenia**Otwórz**  >  **folder folderu** . Zamiast tego [Utwórz projekt w języku Python na podstawie istniejącego kodu](quickstart-01-python-in-visual-studio-project-from-existing-code.md) , aby korzystać z funkcji środowiska programu Visual Studio.
+> Nie można zarządzać środowiskami dla kodu języka Python, który jest otwierany tylko jako folder przy użyciu  >  polecenia **Otwórz**  >  **folder folderu** . Zamiast tego [Utwórz projekt w języku Python na podstawie istniejącego kodu](quickstart-01-python-in-visual-studio-project-from-existing-code.md) , aby korzystać z funkcji środowiska programu Visual Studio.
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
@@ -72,7 +72,7 @@ Program Visual Studio szuka zainstalowanych środowisk globalnych przy użyciu r
 
 Po wybraniu środowiska na liście program Visual Studio wyświetla różne właściwości i polecenia dla tego środowiska na karcie **Przegląd** . Na przykład na obrazie można zobaczyć, że lokalizacja interpretera to *C:\Python36-32*. Cztery polecenia w dolnej części karty **Przegląd** każdy otwiera wiersz polecenia z uruchomionym interpreterem. Aby uzyskać więcej informacji, zobacz [Dokumentacja karty okna środowiska języka Python — Omówienie](python-environments-window-tab-reference.md#overview-tab).
 
-Użyj listy rozwijanej poniżej listy środowisk, aby przełączyć się na różne karty, takie jak **pakiety**i **technologia IntelliSense**. Te karty są również opisane w [dokumentacji karty okna środowiska Python](python-environments-window-tab-reference.md).
+Użyj listy rozwijanej poniżej listy środowisk, aby przełączyć się na różne karty, takie jak **pakiety** i **technologia IntelliSense**. Te karty są również opisane w [dokumentacji karty okna środowiska Python](python-environments-window-tab-reference.md).
 
 Wybranie środowiska nie powoduje zmiany jego relacji z żadnymi projektami. Domyślne środowisko, pokazane na pogrubieniu na liście, jest używane przez program Visual Studio do nowych projektów. Aby użyć innego środowiska z nowymi projektami, użyj polecenia **uczyń to Default Environment for New projects** . W kontekście projektu zawsze możesz wybrać określone środowisko. Aby uzyskać więcej informacji, zobacz [Wybieranie środowiska dla projektu](selecting-a-python-environment-for-a-project.md).
 
@@ -122,9 +122,9 @@ Mimo że praca w środowisku globalnym jest łatwym sposobem na rozpoczęcie pra
 
 Z tego powodu deweloperzy często tworzą *środowisko wirtualne* dla projektu. Środowisko wirtualne jest podfolderem w projekcie, który zawiera kopię określonego interpretera. Podczas aktywowania środowiska wirtualnego wszystkie instalowane pakiety są instalowane tylko w podfolderze tego środowiska. Po uruchomieniu w tym środowisku programu w języku Python wiadomo, że jest on uruchomiony tylko dla tych konkretnych pakietów.
 
-Program Visual Studio zapewnia bezpośrednią pomoc techniczną dla tworzenia środowiska wirtualnego dla projektu. Na przykład w przypadku otwarcia projektu zawierającego *requirements.txt*lub utworzenia projektu na podstawie szablonu zawierającego ten plik program Visual Studio poprosi o automatyczne utworzenie środowiska wirtualnego i zainstalowanie tych zależności.
+Program Visual Studio zapewnia bezpośrednią pomoc techniczną dla tworzenia środowiska wirtualnego dla projektu. Na przykład w przypadku otwarcia projektu zawierającego *requirements.txt* lub utworzenia projektu na podstawie szablonu zawierającego ten plik program Visual Studio poprosi o automatyczne utworzenie środowiska wirtualnego i zainstalowanie tych zależności.
 
-W dowolnym momencie w otwartym projekcie można utworzyć nowe środowisko wirtualne. W **Eksplorator rozwiązań**rozwiń węzeł projektu, kliknij prawym przyciskiem myszy **środowisko Python**i wybierz polecenie "Dodaj środowisko wirtualne". Aby uzyskać więcej informacji, zobacz [Tworzenie środowiska wirtualnego](./selecting-a-python-environment-for-a-project.md?view=vs-2019&preserve-view=true#create-a-virtual-environment-1).
+W dowolnym momencie w otwartym projekcie można utworzyć nowe środowisko wirtualne. W **Eksplorator rozwiązań** rozwiń węzeł projektu, kliknij prawym przyciskiem myszy **środowisko Python** i wybierz polecenie "Dodaj środowisko wirtualne". Aby uzyskać więcej informacji, zobacz [Tworzenie środowiska wirtualnego](./selecting-a-python-environment-for-a-project.md?view=vs-2019&preserve-view=true#create-a-virtual-environment-1).
 
 Program Visual Studio udostępnia również polecenie generowania pliku *requirements.txt* ze środowiska wirtualnego, co ułatwia ponowne tworzenie środowiska na innych komputerach. Aby uzyskać więcej informacji, zobacz [Korzystanie z środowisk wirtualnych](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
 
@@ -171,7 +171,7 @@ Program Visual Studio udostępnia również polecenie generowania pliku *require
     >
     > Jeśli chcesz utworzyć środowisko Conda bez wersji języka Python, użyj `conda info` polecenia, aby wyświetlić lokalizacje folderów środowiska Conda, a następnie ręcznie usuń podfolder dla środowiska z tej lokalizacji.
 
-1. Wybierz pozycję **Utwórz**i sprawdź postęp w oknie **danych wyjściowych** . Dane wyjściowe obejmują kilka instrukcji interfejsu wiersza polecenia po zakończeniu tworzenia:
+1. Wybierz pozycję **Utwórz** i sprawdź postęp w oknie **danych wyjściowych** . Dane wyjściowe obejmują kilka instrukcji interfejsu wiersza polecenia po zakończeniu tworzenia:
 
     ![Pomyślne utworzenie środowiska Conda](media/environments/environments-conda-2-2019.png)
 
@@ -262,7 +262,7 @@ Aby poprawić środowisko, które chcesz zachować, najpierw spróbuj użyć pro
 Aby poprawić środowisko, w którym nie jest dostępna opcja naprawy lub aby usunąć nieprawidłowe środowisko, wykonaj następujące kroki, aby bezpośrednio zmodyfikować rejestr. Program Visual Studio automatycznie aktualizuje okno **środowiska Python** , gdy wprowadzisz zmiany w rejestrze.
 
 1. Uruchom *regedit.exe*.
-1. Przejdź do **HKEY_LOCAL_MACHINE \software\python** lub **HKEY_CURRENT_USER \software\python**. W przypadku IronPython należy poszukać polecenia **IronPython** .
+1. Przejdź do **HKEY_LOCAL_MACHINE\SOFTWARE\Python** lub **HKEY_CURRENT_USER\SOFTWARE\Python**. W przypadku IronPython należy poszukać polecenia **IronPython** .
 1. Rozwiń węzeł, który pasuje do dystrybucji, na przykład **Python Core** dla CPython lub **ContinuumAnalytics** dla Anaconda. W przypadku IronPython rozwiń węzeł numer wersji.
 1. Sprawdź wartości w węźle **InstallPath** :
 
@@ -270,7 +270,7 @@ Aby poprawić środowisko, w którym nie jest dostępna opcja naprawy lub aby us
 
     - Jeśli środowisko nadal istnieje na komputerze, Zmień wartość **ścieżka pliku wykonywalnego** na poprawną lokalizację. W razie potrzeby skoryguj również wartości **(domyślne)** i **WindowedExecutablePath** .
     - Jeśli środowisko nie istnieje już na komputerze i chcesz je usunąć z okna **środowiska języka Python** , Usuń węzeł nadrzędny **InstallPath**, taki jak **3,6** na powyższym obrazie.
-    - Nieprawidłowe ustawienia w **HKEY_CURRENT_USER \software\python** zastąpić ustawienia w **HKEY_LOCAL_MACHINE \software\python**
+    - Nieprawidłowe ustawienia w **HKEY_CURRENT_USER\SOFTWARE\Python** zastąpić ustawienia w **HKEY_LOCAL_MACHINE\SOFTWARE\Python**
 
 ## <a name="see-also"></a>Zobacz też
 

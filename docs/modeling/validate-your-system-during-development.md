@@ -8,15 +8,15 @@ helpviewer_keywords:
 - dependency diagrams
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a803b2fb7eb7c682e29ae0d17698ef673927d751
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: bac26664a2ef98cffbd60eee0647b39dd1108675
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361407"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924316"
 ---
 # <a name="validate-your-system-during-development"></a>Weryfikacja systemu w czasie opracowywania
 

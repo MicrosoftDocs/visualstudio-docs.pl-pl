@@ -5,16 +5,16 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: cb5065ed50afe3b9ee31b361be88c1b5c18138af
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 394fe7b1a368d3d4c6a47fd4350ac6644112aa57
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100790"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924120"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Wskazówki: debugowanie szablonu tekstowego uzyskującego dostęp do modelu
 W przypadku modyfikowania lub dodawania szablonów tekstowych w rozwiązaniu języka specyficznego dla domeny mogą wystąpić błędy, gdy aparat przekształca szablon w kod źródłowy lub kompiluje wygenerowany kod. W poniższym przewodniku przedstawiono niektóre czynności, które można wykonać w celu debugowania szablonu tekstu.
@@ -22,7 +22,7 @@ W przypadku modyfikowania lub dodawania szablonów tekstowych w rozwiązaniu ję
 > [!NOTE]
 > Aby uzyskać więcej informacji na temat ogólnych szablonów tekstowych, zobacz sekcję [generowanie kodu i szablony tekstowe T4](../modeling/code-generation-and-t4-text-templates.md). Aby uzyskać więcej informacji na temat debugowania szablonów tekstowych, zobacz [Przewodnik: Debugowanie szablonu tekstowego](debugging-a-t4-text-template.md).
 
-## <a name="creating-a-domain-specific-language-solution"></a>Tworzenie rozwiązania dotyczącego języka specyficznego dla domeny
+## <a name="creating-a-domain-specific-language-solution"></a>Tworzenie rozwiązania języka Domain-Specific
  W tej procedurze utworzysz rozwiązanie językowe właściwe dla domeny o następujących cechach:
 
 - Nazwa: DebuggingTestLanguage
@@ -33,7 +33,7 @@ W przypadku modyfikowania lub dodawania szablonów tekstowych w rozwiązaniu ję
 
 - Nazwa firmy: fabrikam
 
-  Aby uzyskać więcej informacji na temat tworzenia rozwiązania dotyczącego języka specyficznego dla domeny, zobacz [How to: Create a specyficzne dla domeny rozwiązanie językowe](../modeling/how-to-create-a-domain-specific-language-solution.md).
+  Aby uzyskać więcej informacji na temat tworzenia rozwiązania dotyczącego języka specyficznego dla domeny, zobacz [How to: Create a Domain-Specific Language Solution](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
 ## <a name="creating-a-text-template"></a>Tworzenie szablonu tekstu
  Dodaj szablon tekstowy do rozwiązania.
@@ -89,7 +89,7 @@ W przypadku modyfikowania lub dodawania szablonów tekstowych w rozwiązaniu ję
     #>
     ```
 
-2. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję DebugTest.TT, a następnie kliknij polecenie **Uruchom narzędzie niestandardowe**.
+2. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję DebugTest.TT, a następnie kliknij polecenie **Uruchom narzędzie niestandardowe**.
 
      W oknie **Lista błędów** zostanie wyświetlony następujący błąd:
 
@@ -111,7 +111,7 @@ W przypadku modyfikowania lub dodawania szablonów tekstowych w rozwiązaniu ję
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=ExampleModel" #>
     ```
 
-5. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję DebugTest.TT, a następnie kliknij polecenie **Uruchom narzędzie niestandardowe**.
+5. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję DebugTest.TT, a następnie kliknij polecenie **Uruchom narzędzie niestandardowe**.
 
      Teraz system przekształca szablon tekstowy i generuje odpowiadający mu plik wyjściowy. W oknie **Lista błędów** nie będą widoczne żadne błędy.
 
@@ -153,7 +153,7 @@ W przypadku modyfikowania lub dodawania szablonów tekstowych w rozwiązaniu ję
     #>
     ```
 
-2. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję DebugTest.TT, a następnie kliknij polecenie **Uruchom narzędzie niestandardowe**.
+2. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję DebugTest.TT, a następnie kliknij polecenie **Uruchom narzędzie niestandardowe**.
 
      Zostanie wyświetlone okno **Lista błędów** i zostanie wyświetlony jeden z następujących błędów:
 
@@ -208,6 +208,6 @@ W przypadku modyfikowania lub dodawania szablonów tekstowych w rozwiązaniu ję
     #>
     ```
 
-5. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję DebugTest.TT, a następnie kliknij polecenie **Uruchom narzędzie niestandardowe**.
+5. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję DebugTest.TT, a następnie kliknij polecenie **Uruchom narzędzie niestandardowe**.
 
      Teraz system przekształca szablon tekstowy i generuje odpowiadający mu plik wyjściowy. W oknie **Lista błędów** nie będą widoczne żadne błędy.

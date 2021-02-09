@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: a18a1b1b-9b39-43c7-b1f3-708fd20376f6
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ab622ffda91e6ea9020fb8caa6af2fb460128f17
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 7f783a543bb0139213bb75d7af2d7bb1e516ca65
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204803"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923856"
 ---
 # <a name="callercallee-view----contention-data"></a>Widok wywołujący/wywoływany-dane rywalizacji
 Widok wywołujący/wywoływany wyświetla informacje o rywalizacji dla wybranej funkcji i jej funkcji nadrzędnych i podrzędnych. Widok wywołujący/wywoływany zawiera trzy siatki.

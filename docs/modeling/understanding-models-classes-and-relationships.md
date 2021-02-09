@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, models
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d912e98d01448a378acbed79e2278f70f62436e7
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: da5817711c7131868c4bad22bbe93447119d19d8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362694"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924522"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Opis modeli, klas i relacji
 Język specyficzny dla domeny (DSL) jest zdefiniowany przez plik definicji DSL, wraz z dowolnym niestandardowym kodem programu, który można napisać. Większość kodu programu w rozwiązaniu DSL jest generowana z tego pliku.

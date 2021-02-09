@@ -9,17 +9,17 @@ ms.custom:
 ms.topic: overview
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 688a4377b9e4bd6f80d65744955dc84908a18e7a
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: eb34f9dbf0c4778431bbf1eed31b20bc3cd4833b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94904017"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924996"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>Witamy w programie Visual Studio IDE | S\#
 
@@ -51,7 +51,7 @@ Poznanie programu Visual Studio w następujący sposób wraz z jednym z następu
 > [!div class="nextstepaction"]
 > [Informacje o projektach i rozwiązaniach](../tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - Odkryj [więcej funkcji programu Visual Studio](../../ide/advanced-feature-overview.md)
 - Odwiedź witrynę [VisualStudio.Microsoft.com](https://visualstudio.microsoft.com/vs/)

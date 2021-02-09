@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending project items
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f5e6b32c418fbbdfbced5e6a6d698ad02358393d
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: eba366ecf777697a0c63999d8addf099fecca976
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94849795"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923609"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension"></a>Instrukcje: Dodawanie elementu menu skrótów do rozszerzenia elementu projektu SharePoint
   Element menu skrótów można dodać do istniejącego elementu projektu programu SharePoint za pomocą rozszerzenia elementu projektu. Element menu jest wyświetlany, gdy użytkownik kliknie prawym przyciskiem myszy element projektu w **Eksplorator rozwiązań**.
@@ -55,7 +55,7 @@ ms.locfileid: "94849795"
 ## <a name="deploy-the-extension"></a>Wdróż rozszerzenie
  Aby wdrożyć rozszerzenie, Utwórz [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] pakiet rozszerzenia (VSIX) dla zestawu i wszystkie inne pliki, które chcesz dystrybuować z rozszerzeniem. Aby uzyskać więcej informacji, zobacz [Wdrażanie rozszerzeń dla narzędzi programu SharePoint w programie Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: Tworzenie rozszerzenia elementu projektu SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
 - [Instrukcje: Dodawanie właściwości do rozszerzenia elementu projektu SharePoint](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)
 - [Zwiększ elementy projektu SharePoint](../sharepoint/extending-sharepoint-project-items.md)

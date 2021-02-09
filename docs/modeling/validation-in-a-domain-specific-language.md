@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Domain-Specific Language, validation
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cb9baced0a4cc38ae175146d3f3779c5b9c28dd2
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 44ee0d9e10a4f96979362d8613dc6ca949ff2fd7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362538"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924252"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Sprawdzanie poprawności w języku specyficznym dla domeny
 Jako autor języka specyficznego dla domeny (DSL) można zdefiniować ograniczenia sprawdzania poprawności, aby sprawdzić, czy model utworzony przez użytkownika ma znaczenie. Jeśli na przykład linia DSL umożliwia użytkownikom rysowanie drzewa rodzin osób i ich przodków, można napisać ograniczenie, które zapewnia, że dzieci mają daty urodzenia po nadrzędnych.
@@ -195,7 +195,7 @@ if (erroneousLinks.Count < 5) { context.LogError( ... ); }
 
  Jeśli ustawisz liczebność roli relacji domeny na 1.. * lub 1.. 1, ale użytkownik nie utworzy linku do tej relacji, zostanie wyświetlony komunikat o błędzie walidacji.
 
- Jeśli na przykład DSL ma klasy Person i miasto, a relacja PersonLivesInTown z relacją **1.. \\** w roli miasto, a następnie dla każdej osoby, która nie ma miejscowości, zostanie wyświetlony komunikat o błędzie.
+ Jeśli na przykład DSL ma klasy Person i miasto, a relacja PersonLivesInTown z relacją **1.. \\** * w roli miasto, a następnie dla każdej osoby, która nie ma miejscowości, zostanie wyświetlony komunikat o błędzie.
 
 ## <a name="running-validation-from-program-code"></a>Uruchamianie walidacji z kodu programu
  Można uruchomić walidację, uzyskując dostęp do lub tworząc ValidationController. Jeśli chcesz, aby błędy były wyświetlane użytkownikowi w oknie błędu, użyj ValidationController, który jest dołączony do DocData diagramu. Na przykład, jeśli piszesz polecenie menu, `CurrentDocData.ValidationController` jest dostępne w klasie zestawu poleceń:
@@ -235,7 +235,7 @@ if (!validator.Validate(store, ValidationCategories.Save))
 ## <a name="running-validation-when-a-change-occurs"></a>Uruchamianie walidacji po wystąpieniu zmiany
  Jeśli chcesz mieć pewność, że użytkownik jest ostrzegany natychmiast, jeśli model stanie się nieprawidłowy, możesz zdefiniować zdarzenie magazynu, które uruchamia walidację. Aby uzyskać więcej informacji na temat zdarzeń ze sklepu, zobacz [programy obsługi zdarzeń propagują zmiany poza modelem](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
- Oprócz kodu sprawdzania poprawności Dodaj niestandardowy plik kodu do projektu _ *DslPackage** o zawartości podobnej do poniższego przykładu. Ten kod używa programu `ValidationController` , który jest dołączony do dokumentu. Ten kontroler wyświetla błędy walidacji na liście błędów programu Visual Studio.
+ Oprócz kodu sprawdzania poprawności Dodaj niestandardowy plik kodu do projektu **DslPackage** , z zawartością podobną do poniższego przykładu. Ten kod używa programu `ValidationController` , który jest dołączony do dokumentu. Ten kontroler wyświetla błędy walidacji na liście błędów programu Visual Studio.
 
 ```csharp
 using System;

@@ -11,15 +11,15 @@ dev_langs:
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 26beadbe6963a685f10aef1db7bd8779434927d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4384a724b57de565e03637057e16fc26e8213e5e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419279"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924878"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Samouczek: tworzenie prostej aplikacji za pomocą języka C\#
 
@@ -66,7 +66,7 @@ Podczas tworzenia aplikacji w programie Visual Studio, należy najpierw utworzy�
 
      ![Na pasku menu wybierz kolejno opcje plik, nowy, projekt.](../media/exploreide-filenewproject.png "Zrzut ekranu przedstawiający pasek menu, w którym wybierasz plik, nowy, projekt")
 
-1. W oknie dialogowym **Nowy projekt** wybierz **zainstalowaną**  >  kategorię**Visual C#**  >  **Windows Desktop** , a następnie wybierz szablon **Aplikacja WPF (.NET Framework)** . Nazwij projekt **HelloWPFApp**, a następnie wybierz **przycisk OK**.
+1. W oknie dialogowym **Nowy projekt** wybierz **zainstalowaną**  >  kategorię **Visual C#**  >  **Windows Desktop** , a następnie wybierz szablon **Aplikacja WPF (.NET Framework)** . Nazwij projekt **HelloWPFApp**, a następnie wybierz **przycisk OK**.
 
      ![Szablon aplikacji WPF w oknie dialogowym Nowy projekt programu Visual Studio](media/exploreide-newprojectcsharp.png "Zrzut ekranu przedstawiający szablon aplikacji WPF w oknie dialogowym Nowy projekt")
 
@@ -87,7 +87,7 @@ Podczas tworzenia aplikacji w programie Visual Studio, należy najpierw utworzy�
    > [!NOTE]
    > W przypadku programu .NET Core mogą znajdować się dwa szablony pulpitu WPF, jeden dla .NET Framework i drugi. Szablon .NET Core jest dostępny w programie Visual Studio 2019 w wersji 16,3 lub nowszej. Możesz użyć jednego z nich na potrzeby tego samouczka, ale zalecamy platformę .NET Core do nowych celów programistycznych.
 
-1. Na następnym ekranie Nadaj projektowi nazwę, **HelloWPFApp**i wybierz pozycję **Utwórz**.
+1. Na następnym ekranie Nadaj projektowi nazwę, **HelloWPFApp** i wybierz pozycję **Utwórz**.
 
    ![Nazwij projekt "HelloWPFApp"](./media/vs-2019/exploreide-nameproject.png "Zrzut ekranu okna, w którym nanadaj nazwę projektowi")
 
@@ -106,7 +106,7 @@ Po utworzeniu projektu, można go dostosować. Aby to zrobić, wybierz **okno w�
 
 ### <a name="change-the-name-of-mainwindowxaml"></a>Zmień nazwę MainWindow. XAML
 
-Nadaj MainWindow bardziej konkretną nazwę. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję *MainWindow. XAML* i wybierz polecenie **Zmień nazwę**. Zmień nazwę pliku na *Greetings. XAML*.
+Nadaj MainWindow bardziej konkretną nazwę. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję *MainWindow. XAML* i wybierz polecenie **Zmień nazwę**. Zmień nazwę pliku na *Greetings. XAML*.
 
 ## <a name="design-the-user-interface-ui"></a>Zaprojektuj interfejs użytkownika
 
@@ -116,9 +116,9 @@ Dodamy do tej aplikacji trzy typy kontrolek: <xref:System.Windows.Controls.TextB
 
 ### <a name="add-a-textblock-control"></a>Dodaj kontrolkę TextBlock
 
-1. Naciśnij klawisz **Ctrl** + **Q** , aby uaktywnić pole wyszukiwania i **Przybornik**typów. Wybierz pozycję **wyświetl > przybornika** z listy wyników.
+1. Naciśnij klawisz **Ctrl** + **Q** , aby uaktywnić pole wyszukiwania i **Przybornik** typów. Wybierz pozycję **wyświetl > przybornika** z listy wyników.
 
-1. W **przyborniku**rozwiń węzeł **formanty wspólnego WPF** , aby zobaczyć formant TextBlock.
+1. W **przyborniku** rozwiń węzeł **formanty wspólnego WPF** , aby zobaczyć formant TextBlock.
 
      ![Przybornik z wyróżnioną kontrolką TextBlock](../media/exploreide-textblocktoolbox.png "Zrzut ekranu okna przybornika z wyróżnioną kontrolką TextBlock")
 
@@ -154,7 +154,7 @@ Następnie dodasz dwie kontrolki [RadioButton](/dotnet/framework/wpf/controls/ra
 
 ### <a name="add-radio-buttons"></a>Dodawanie przycisków radiowych
 
-1. W **przyborniku**Znajdź formant **RadioButton** .
+1. W **przyborniku** Znajdź formant **RadioButton** .
 
      ![Okno przybornika z wybraną kontrolką RadioButton](../media/exploreide-radiobuttontoolbox.png "Zrzut ekranu okna przybornika z wybraną kontrolką RadioButton")
 
@@ -206,7 +206,7 @@ Ostatnim elementem interfejsu użytkownika, który dodasz, jest kontrolka [przyc
 
 ### <a name="add-the-button-control"></a>Dodaj kontrolkę przycisk
 
-1. W **przyborniku**Znajdź formant **Button** , a następnie dodaj go do powierzchni projektowej pod kontrolkami RadioButton, przeciągając go do formularza w widoku projektu. Jeśli używasz programu Visual Studio 2019 lub nowszego, czerwona linia ułatwia wyśrodkowanie formantu.
+1. W **przyborniku** Znajdź formant **Button** , a następnie dodaj go do powierzchni projektowej pod kontrolkami RadioButton, przeciągając go do formularza w widoku projektu. Jeśli używasz programu Visual Studio 2019 lub nowszego, czerwona linia ułatwia wyśrodkowanie formantu.
 
 1. W widoku XAML Zmień wartość **zawartości** kontrolki Button z `Content="Button"` na `Content="Display"` , a następnie Zapisz zmiany.
 
@@ -277,7 +277,7 @@ Zmieniono nazwę *MainWindow. XAML* na *Greetings. XAML* na początku tego samou
 
 #### <a name="specify-greetingsxaml-as-the-startup-uri"></a>Określ Greetings. XAML jako startowy identyfikator URI
 
-1. W **Eksplorator rozwiązań**Otwórz plik *App. XAML* .
+1. W **Eksplorator rozwiązań** Otwórz plik *App. XAML* .
 
 1. Zmień `StartupUri="MainWindow.xaml"` na `StartupUri="Greetings.xaml"` , a następnie Zapisz zmiany.
 
@@ -298,7 +298,7 @@ Możesz przetestować kod podczas debugowania przez dodanie niektórych punktów
 
 #### <a name="add-breakpoints"></a>Dodawanie punktów przerwania
 
-1. Otwórz *Greetings.XAML.cs*i wybierz następujący wiersz: `MessageBox.Show("Hello.")`
+1. Otwórz *Greetings.XAML.cs* i wybierz następujący wiersz: `MessageBox.Show("Hello.")`
 
 1. Dodaj punkt przerwania z menu, wybierając **Debuguj**, a następnie **Przełącz punkt przerwania**.
 

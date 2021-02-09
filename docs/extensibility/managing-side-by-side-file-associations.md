@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9b6df3bc-d15c-4a5d-9015-948a806193b7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 477afbd5bc4586d8c46db11b036364f8058133b0
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: 157e8b4b4d7a00845fb76e0105414879cb1f472d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97616347"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924856"
 ---
 # <a name="manage-side-by-side-file-associations"></a>Zarządzaj skojarzeniami plików obok siebie
 
@@ -87,7 +87,7 @@ Dezinstalacja pakietu VSPackage, która zapisuje wpisy rejestru dla skojarzeń p
 
 - Podaj stronę opcji konfiguracji lub okno dialogowe, które umożliwia użytkownikom wybieranie skojarzeń plików i odzyskiwanie utraconych skojarzeń. Poinstruuj użytkowników, aby uruchomili ją po odinstalowaniu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Rejestrowanie rozszerzeń nazw plików dla wdrożeń równoległych](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)
 - [Rejestrowanie czasowników dla rozszerzeń nazw plików](../extensibility/registering-verbs-for-file-name-extensions.md)

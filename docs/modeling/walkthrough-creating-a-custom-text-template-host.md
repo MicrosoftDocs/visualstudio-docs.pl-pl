@@ -9,18 +9,18 @@ helpviewer_keywords:
 - text templates, custom host walkthrough
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 1cc1681d7c761aca123217cbf28cc33b0dbb584c
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 3e24c46e576ab6125c3152989c568a704a33b2d2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361056"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924146"
 ---
 # <a name="walkthrough-create-a-custom-text-template-host"></a>Przewodnik: tworzenie niestandardowego hosta szablonu tekstowego
 

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, features
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: dacfbf715ff37238af5332976313c3b592d21be6
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: f18c46bb7bab2acd1d97e3154b53ab8ca52520e3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914923"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923462"
 ---
 # <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Instrukcje: Dodawanie i usuwanie elementów do funkcji programu SharePoint
   Podczas tworzenia rozwiązania programu SharePoint program Visual Studio dodaje domyślne elementy projektu programu SharePoint do funkcji. Przed wdrożeniem można dodawać i usuwać elementy projektu programu SharePoint, aby modyfikować funkcję programu SharePoint.

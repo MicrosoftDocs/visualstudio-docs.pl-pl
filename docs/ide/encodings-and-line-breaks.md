@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 8f9b3ffc-7b8d-44f4-87cb-dc29105be12d
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 889af1c0fd28224b2f31eb80bbeecad28346cd1c
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: e466439469db66e8e871115abc9828988f24b546
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006643"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924746"
 ---
 # <a name="encodings-and-line-endings"></a>Kodowania i końce wierszy
 
@@ -46,7 +46,7 @@ Po otwarciu pliku, który ma różne znaki podziału wiersza, może pojawić si�
 
 ## <a name="advanced-save-options"></a>Zaawansowane opcje zapisywania
 
-Za pomocą **File**  >  okna dialogowego **Zaawansowane opcje zapisywania** w pliku można określić typ pożądanych znaków podziału wiersza. Możesz również zmienić kodowanie pliku przy użyciu tych samych ustawień.
+Za pomocą   >  okna dialogowego **Zaawansowane opcje zapisywania** w pliku można określić typ pożądanych znaków podziału wiersza. Możesz również zmienić kodowanie pliku przy użyciu tych samych ustawień.
 
 ![Zaawansowane opcje zapisywania — okno dialogowe](media/line_endings.png)
 
@@ -60,6 +60,6 @@ Za pomocą **File**  >  okna dialogowego **Zaawansowane opcje zapisywania** w pl
 >
 > Alternatywnie możesz uzyskać dostęp do okna dialogowego **Zaawansowane opcje zapisywania** , wybierając pozycję **plik**  >  **Zapisz \<file\> jako**. W oknie dialogowym **Zapisz plik jako** wybierz Trójkąt listy rozwijanej obok przycisku **Zapisz** , a następnie wybierz pozycję **Zapisz z kodowaniem**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Funkcje edytora kodu](../ide/writing-code-in-the-code-and-text-editor.md)

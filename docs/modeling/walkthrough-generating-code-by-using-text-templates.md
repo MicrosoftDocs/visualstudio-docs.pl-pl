@@ -9,15 +9,15 @@ helpviewer_keywords:
 - walkthroughs [text templates]
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a39630f8a12ad2c1d7d2bc89f6830fc694e89087
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 7e6b824d53c37ef922b8c9580c87a478aef93586
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360991"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924057"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>Przewodnik: generowanie kodu przy użyciu szablonów tekstowych
 
@@ -410,7 +410,7 @@ Po zmianie schematu XML nowe klasy mogą być łatwo generowane. Kompilator prze
 
 Aby ponownie wygenerować klasy po zmianie przykładowego pliku XML, kliknij przycisk **Przekształć wszystkie szablony** na pasku narzędzi **Eksplorator rozwiązań** .
 
-## <a name="conclusion"></a>Wniosek
+## <a name="conclusion"></a>Podsumowanie
 
 W tym instruktażu przedstawiono kilka technik i korzyści wynikające z generowania kodu:
 
