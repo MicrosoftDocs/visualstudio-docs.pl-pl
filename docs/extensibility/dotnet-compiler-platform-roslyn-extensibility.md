@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 564201b3-1e18-4b88-b615-42c2f57f3fe8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3bc0ecb6aad5b4da126d5a253a6c0b523444e2c
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 8c0286bb35f8a58a2f5fd6cfa95cff62d523567c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994826"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883561"
 ---
 # <a name="net-compiler-platform-quotroslynquot-extensibility"></a>&quot;Rozszerzalność .NET compiler platform (Roslyn &quot; )
 Podstawowe misja .NET Compiler Platform ("Roslyn") otwiera kompilatory C# i Visual Basic i umożliwiają narzędziom i deweloperom udostępnianie danych w kompilatorach informacji o programach. Narzędzia do analizy kodu poprawiają jakość kodu i ułatwiają tworzenie aplikacji. W miarę jak narzędzia stają się bardziej inteligentniejsze, muszą mieć dostęp do większej i większej ilości szczegółowej wiedzy o kodzie, którą dysponuje tylko kompilatory. Zamiast nieprzezroczystych tłumaczeń (kod źródłowy w i kodzie obiektu), kompilatory Roslyn oferują interfejsy API, których można użyć do zadań związanych z kodem w narzędziach i aplikacjach.
