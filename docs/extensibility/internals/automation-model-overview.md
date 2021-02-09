@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 12b6d6db-0d22-4aaa-aa7d-1365f759b7b0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f88d064c551ccffe1c59e68c8472b519a58db436
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 26184263d5f269ebf6922c5dd85a37e93356e935
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190099"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906014"
 ---
 # <a name="automation-model-overview"></a>Omówienie modelu automatyzacji
 Model automatyzacji składa się z zestawu obiektów, do którego można napisać dodatek lub rozszerzenie programu Visual Studio. Dodatek to aplikacja, która może manipulować środowiskiem programu Visual Studio i zautomatyzować typowe zadania. Rozszerzenie programu Visual Studio może tworzyć niestandardowe składniki programu Visual Studio lub dodawać do funkcji standardowych składników, takich jak edytor tekstu.

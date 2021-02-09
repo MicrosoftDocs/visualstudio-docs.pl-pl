@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: ffa7bd18-439b-4685-a9b3-c7884b5de41f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 432fd50d30347972d7b1fc8222a430fc90a9e590
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: b5c9d0449fca38371e07ddaca6cef8758f53a2aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149966"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904917"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Wyświetlanie wartości danych we wskazówkach datapreview w edytorze kodu
 
@@ -138,7 +138,7 @@ Można eksportować etykietki danych do pliku XML, który można udostępniać l
 
 1. W oknie dialogowym **Importuj porady dotyczące** danych wybierz plik XML z danymi, które chcesz otworzyć, a następnie wybierz pozycję **Otwórz**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Co to jest debugowanie?](../debugger/what-is-debugging.md)
 - [Narzędzia i techniki debugowania](../debugger/write-better-code-with-visual-studio.md)
 - [Najpierw Spójrz na Debugowanie](../debugger/debugger-feature-tour.md)

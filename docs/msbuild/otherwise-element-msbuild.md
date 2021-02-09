@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: de3997e9-1595-4263-a886-95530b56a319
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 05cc8820f073ea8c620e4331c180ee1ddbfc2b65
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: c5e78723ee6cc0f8ed1da0d5e913be0d84eb1050
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048937"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905328"
 ---
 # <a name="otherwise-element-msbuild"></a>Otherwise — element (MSBuild)
 
@@ -60,7 +60,7 @@ Określa blok kodu do wykonania, gdy i tylko wtedy, gdy warunki wszystkich `When
 
 |Element|Opis|
 |-------------|-----------------|
-|[Wybierz ikonę](../msbuild/choose-element-msbuild.md)|Element opcjonalny.<br /><br /> Oblicza elementy podrzędne, aby wybrać jedną sekcję kodu do wykonania. Element może zawierać zero lub więcej `Choose` elementów `Otherwise` .|
+|[Następnie](../msbuild/choose-element-msbuild.md)|Element opcjonalny.<br /><br /> Oblicza elementy podrzędne, aby wybrać jedną sekcję kodu do wykonania. Element może zawierać zero lub więcej `Choose` elementów `Otherwise` .|
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Element opcjonalny.<br /><br /> Zawiera zestaw [elementów zdefiniowanych przez](../msbuild/item-element-msbuild.md) użytkownika. Element może zawierać zero lub więcej `ItemGroup` elementów `Otherwise` .|
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Element opcjonalny.<br /><br /> Zawiera zestaw elementów [Właściwości](../msbuild/property-element-msbuild.md) zdefiniowanych przez użytkownika. Element może zawierać zero lub więcej `PropertyGroup` elementów `Otherwise` .|
 
@@ -68,7 +68,7 @@ Określa blok kodu do wykonania, gdy i tylko wtedy, gdy warunki wszystkich `When
 
 |Element|Opis|
 |-------------|-----------------|
-|[Wybierz ikonę](../msbuild/choose-element-msbuild.md)|Oblicza elementy podrzędne, aby wybrać jedną sekcję kodu do wykonania.|
+|[Następnie](../msbuild/choose-element-msbuild.md)|Oblicza elementy podrzędne, aby wybrać jedną sekcję kodu do wykonania.|
 
 ## <a name="remarks"></a>Uwagi
 

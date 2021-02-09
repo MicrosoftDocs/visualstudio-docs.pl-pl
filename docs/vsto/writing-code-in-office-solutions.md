@@ -32,15 +32,15 @@ helpviewer_keywords:
 - managed code extensions [Office development in Visual Studio], writing code
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 40ea589cb4406a383876b1f16721f18fc48ebadd
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: b0f72e859e0847b5035e99146ef6c0435ef299d6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526029"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904450"
 ---
 # <a name="write-code-in-office-solutions"></a>Pisanie kodu w rozwiązaniach pakietu Office
   Istnieją pewne aspekty pisania kodu w projektach pakietu Office, które różnią się od innych typów projektów w programie Visual Studio. Wiele z tych różnic jest związanych ze sposobem, w jaki modele obiektów pakietu Office są uwidocznione w kodzie zarządzanym. Inne różnice są związane z projektowaniem projektów pakietu Office.
@@ -107,7 +107,7 @@ ms.locfileid: "97526029"
 
 W poniższej tabeli przedstawiono kluczowe różnice między Visual Basic i Visual C# w programie Office Development.
 
-|Cechy|Opis|Obsługa Visual Basic|Obsługa języka Visual C#|
+|Cecha|Opis|Obsługa Visual Basic|Obsługa języka Visual C#|
 |-------------|-----------------|--------------------------|------------------------|
 |Parametry opcjonalne|Wiele metod Microsoft Office ma parametry, które nie są wymagane w przypadku wywołania metody. Jeśli dla parametru nie jest przenoszona żadna wartość, zostanie użyta wartość domyślna.|Visual Basic obsługuje parametry opcjonalne.|Visual C# obsługuje parametry opcjonalne w większości przypadków. Aby uzyskać więcej informacji, zobacz [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md).|
 |Przekazywanie parametrów według odwołania|Parametry opcjonalne w większości Microsoft Office podstawowych zestawów międzyoperacyjnych mogą być przesyłane przez wartość. Jednak w niektórych podstawowych zestawach międzyoperacyjnych parametry opcjonalne, które akceptują typy odwołań, muszą być przesyłane przez odwołanie.<br /><br /> Aby uzyskać więcej informacji na temat parametrów typu wartości i odwołania, zobacz [przekazywanie argumentów według wartości i przez odwołanie &#40;Visual Basic&#41;](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (dla Visual Basic) i [parametrów Pass &#40;C&#35; Przewodnik programowania&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).|Do przekazywania parametrów przez odwołanie nie są konieczne żadne dodatkowe prace. Kompilator Visual Basic automatycznie przekazuje parametry przez odwołanie, jeśli jest to konieczne.|W większości przypadków kompilator Visual C# automatycznie przekazuje parametry przez odwołanie, jeśli jest to konieczne. Aby uzyskać więcej informacji, zobacz [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md).|
@@ -117,7 +117,7 @@ W poniższej tabeli przedstawiono kluczowe różnice między Visual Basic i Visu
 ## <a name="key-differences-between-office-development-and-managed-code"></a>Kluczowe różnice między programowaniem pakietu Office i kodem zarządzanym
  W poniższej tabeli przedstawiono kluczowe różnice między programowaniem pakietu Office i kodem zarządzanym w Visual Basic lub Visual C#.
 
-|Cechy|Opis|Obsługa Visual Basic i Visual C#|
+|Cecha|Opis|Obsługa Visual Basic i Visual C#|
 |-------------|-----------------|-----------------------------------------|
 |Indeksy tablicy|Dolna granica tablicy dla kolekcji w aplikacjach Microsoft Office rozpoczyna się od 1. Visual Basic i Visual C# używają tablic opartych na protokole 0. Aby uzyskać więcej informacji, zobacz [tablice &#40;C&#35; Przewodnik programowania&#41;](/dotnet/csharp/programming-guide/arrays/index) i [tablic w Visual Basic](/dotnet/visual-basic/programming-guide/language-features/arrays/index).|Aby uzyskać dostęp do pierwszego elementu kolekcji w modelu obiektów aplikacji Microsoft Office, Użyj indeksu 1 zamiast 0.|
 

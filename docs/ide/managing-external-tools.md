@@ -10,15 +10,15 @@ helpviewer_keywords:
 - external tools [Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c77ab079a2950d4417c2d00ef74cf86d5c206de7
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: c20c59c720818f3b039e9b0f404a722404cd5669
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95596693"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903918"
 ---
 # <a name="manage-external-tools"></a>Zarządzanie narzędziami zewnętrznymi
 
@@ -85,6 +85,6 @@ Poniżej znajduje się pełna lista argumentów, których można użyć podczas 
 > [!NOTE]
 > Pasek stanu IDE wyświetla **bieżący wiersz** i bieżące zmienne **kolumn** , aby wskazać, gdzie punkt wstawiania znajduje się w aktywnym **edytorze kodu**. **Bieżąca zmienna tekstowa** zwraca tekst lub kod wybrany w tej lokalizacji.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Narzędzia kompilacji C/C++](/cpp/build/reference/c-cpp-build-tools)

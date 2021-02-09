@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 4cd4fc0b-974a-4e61-9ea8-0aaa1a0c52ea
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f79b39ced4f3285815412b9b231692868e5e00f
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 7cead2d7c1c98e4f481e6057c9ab79c8dc908683
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996061"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905020"
 ---
 # <a name="uninit"></a>UnInit
 Kończy plik dziennika grafiki, zamyka go i zwalnia zasoby, które były używane podczas aktywnie rejestrowania informacji graficznych przez aplikację.

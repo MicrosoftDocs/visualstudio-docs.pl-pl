@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 5a691e77-cf91-430d-90ea-361d9031ef83
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6323b4330279848bc0453bdc7413904e2582d13a
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: c053b5f7fe2962e683621ad834cac0815eee7d3b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863964"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905747"
 ---
 # <a name="vsix-manifest-designer"></a>Projektant manifestu VSIX
 Modyfikuje plik manifestu pakietu VSIX, który ustawia zachowanie instalacji rozszerzenia programu Visual Studio.

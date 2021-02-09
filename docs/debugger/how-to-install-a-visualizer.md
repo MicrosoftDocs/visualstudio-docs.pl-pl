@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 3310ef43-515c-4d97-b0f9-51047247d3da
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 37b2da9418361144c740bed633eb755f7057936c
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 2521983a797b676b9136ca14b733eb7afd054e27
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148965"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904268"
 ---
 # <a name="how-to-install-a-visualizer"></a>Porady: instalacja programu Visualizer
 Po utworzeniu wizualizatora należy zainstalować wizualizator, aby był dostępny w programie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Instalowanie wizualizatora jest prostym procesem.
@@ -86,6 +86,6 @@ Po utworzeniu wizualizatora należy zainstalować wizualizator, aby był dostęp
 > Jeśli chcesz użyć zarządzanego wizualizatora na potrzeby debugowania zdalnego, Skopiuj bibliotekę DLL do tej samej ścieżki na komputerze zdalnym.
 ::: moniker-end
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Tworzenie niestandardowych wizualizatorów](../debugger/create-custom-visualizers-of-data.md)
 - [Porady: pisanie wizualizatora](create-custom-visualizers-of-data.md)

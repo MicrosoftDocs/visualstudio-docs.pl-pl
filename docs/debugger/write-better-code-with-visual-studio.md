@@ -10,15 +10,15 @@ helpviewer_keywords:
 - debugger
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ac595098d793e44d65312a09fc8857225f150ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c69fe13821f595a137c07d545a4ccfb10fc89b34
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89311394"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904954"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>Techniki i narzędzia debugowania ułatwiające pisanie lepszego kodu
 
@@ -44,7 +44,7 @@ Aby utworzyć aplikację:
 
 1. W zależności od typu aplikacji, który ma zostać utworzony, musi być zainstalowany program Visual Studio i **Programowanie na platformie .NET Core** lub środowisko **programistyczne programu .NET Desktop** .
 
-    Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads/),   Aby zainstalować ją bezpłatnie.
+    Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads/) , aby zainstalować ją bezpłatnie.
 
     Jeśli musisz zainstalować obciążenie, ale masz już program Visual Studio, kliknij przycisk **Narzędzia**  >  **Pobierz narzędzia i funkcje**. Zostanie uruchomiona Instalator programu Visual Studio. Wybierz obciążenie programu **.NET Core dla wielu platform** lub programowanie **aplikacji klasycznych platformy .NET** , a następnie wybierz **Modyfikuj**.
 

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 212a0504-cf6c-4e50-96b0-f2c1c575c0ff
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f81f682271a949954d113ffd2f6228db0de814e8
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: a4e706a115e8cec3b13ef58cf6cdef61912f5810
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190047"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905986"
 ---
 # <a name="best-practices-for-security-in-vspackages"></a>Najlepsze rozwiązania dotyczące zabezpieczeń w programie pakietów VSPackage
 Aby zainstalować [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] program na komputerze, musisz być uruchomiony w kontekście z poświadczeniami administracyjnymi. Podstawową jednostką zabezpieczeń i wdrażania [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] aplikacji jest [pakietu VSPackage](../../extensibility/internals/vspackages.md). Pakietu VSPackage musi być zarejestrowany przy użyciu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , co wymaga również poświadczeń administracyjnych.

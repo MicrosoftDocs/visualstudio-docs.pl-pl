@@ -10,21 +10,21 @@ helpviewer_keywords:
 ms.assetid: e39f13f7-1e1d-4435-95ca-0c222bca071c
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d7e42452d8ee59142c4f906d928378d1fb44bf67
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: dbf938e61cc1567beb682847821595f5ca6cc026
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904512"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905466"
 ---
 # <a name="msbuild"></a>MSBuild
 
 Microsoft Build Engine to platforma do kompilowania aplikacji. Ten aparat, który jest również znany jako MSBuild, zawiera schemat XML dla pliku projektu, który kontroluje, w jaki sposób platforma kompilacji przetwarza i tworzy oprogramowanie. Program Visual Studio używa programu MSBuild, ale MSBuild nie zależy od programu Visual Studio. Wywołując *msbuild.exe* w pliku projektu lub rozwiązania, można organizować i kompilować produkty w środowiskach, w których nie zainstalowano programu Visual Studio.
 
- Program Visual Studio używa programu MSBuild do ładowania i kompilowania projektów zarządzanych. Pliki projektu w programie Visual Studio ( *. csproj* , *. vbproj* , *. vcxproj* i inne) zawierają kod XML programu MSBuild, który jest wykonywany podczas kompilowania projektu przy użyciu środowiska IDE. Projekty programu Visual Studio zaimportują wszystkie niezbędne ustawienia i procesy kompilacji, aby wykonywać typowe prace programistyczne, ale można je rozbudować lub zmodyfikować z poziomu programu Visual Studio lub za pomocą edytora XML.
+ Program Visual Studio używa programu MSBuild do ładowania i kompilowania projektów zarządzanych. Pliki projektu w programie Visual Studio (*. csproj*, *. vbproj*, *. vcxproj* i inne) zawierają kod XML programu MSBuild, który jest wykonywany podczas kompilowania projektu przy użyciu środowiska IDE. Projekty programu Visual Studio zaimportują wszystkie niezbędne ustawienia i procesy kompilacji, aby wykonywać typowe prace programistyczne, ale można je rozbudować lub zmodyfikować z poziomu programu Visual Studio lub za pomocą edytora XML.
 
  Aby uzyskać informacje na temat programu MSBuild dla języka C++, zobacz [MSBuild (C++)](/cpp/build/msbuild-visual-cpp).
 
@@ -55,7 +55,7 @@ Ten artykuł zawiera omówienie programu MSBuild. Aby zapoznać się z samouczki
 
 ## <a name="use-msbuild-at-a-command-prompt"></a>Korzystanie z programu MSBuild w wierszu polecenia
 
- Aby uruchomić program MSBuild w wierszu polecenia, Przekaż plik projektu do *MSBuild.exe* , wraz z odpowiednimi opcjami wiersza polecenia. Opcje wiersza polecenia umożliwiają ustawianie właściwości, wykonywanie określonych elementów docelowych i ustawianie innych opcji kontrolujących proces kompilacji. Na przykład, można użyć następującej składni wiersza polecenia do skompilowania pliku *webproj. proj* z `Configuration` właściwością ustawioną na `Debug` .
+ Aby uruchomić program MSBuild w wierszu polecenia, Przekaż plik projektu do *MSBuild.exe*, wraz z odpowiednimi opcjami wiersza polecenia. Opcje wiersza polecenia umożliwiają ustawianie właściwości, wykonywanie określonych elementów docelowych i ustawianie innych opcji kontrolujących proces kompilacji. Na przykład, można użyć następującej składni wiersza polecenia do skompilowania pliku *webproj. proj* z `Configuration` właściwością ustawioną na `Debug` .
 
 ```cmd
 MSBuild.exe MyProj.proj -property:Configuration=Debug
@@ -72,7 +72,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
  W poniższych sekcjach opisano niektóre podstawowe elementy formatu pliku projektu programu MSBuild. Aby zapoznać się z samouczkiem dotyczącym tworzenia podstawowego pliku projektu, zobacz [Przewodnik: Tworzenie pliku projektu MSBuild od podstaw](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).
 
-### <a name="properties"></a><a name="BKMK_Properties"></a> Aœciwoœci
+### <a name="properties"></a><a name="BKMK_Properties"></a> Właściwości
 
  Właściwości reprezentują pary klucz/wartość, których można użyć do konfigurowania kompilacji. Właściwości są deklarowane przez utworzenie elementu, który ma nazwę właściwości jako element podrzędny elementu [Właściwości](../msbuild/propertygroup-element-msbuild.md) . Na przykład poniższy kod tworzy właściwość o nazwie `BuildDir` , która ma wartość `Build` .
 
@@ -170,7 +170,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
 - Możesz określić platformę docelową inną niż .NET Framework, na przykład Silverlight.
 
-- Można wskazać *Profil platformy* , który jest wstępnie zdefiniowanym podzbiorem platformy docelowej.
+- Można wskazać *Profil platformy*, który jest wstępnie zdefiniowanym podzbiorem platformy docelowej.
 
 - Jeśli dodatek Service Pack dla bieżącej wersji .NET Framework jest wydawany, można go określić jako docelowy.
 
@@ -178,7 +178,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
 Aby uzyskać więcej informacji, zobacz wiele [obiektów docelowych](../msbuild/msbuild-multitargeting-overview.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 | Tytuł | Opis |
 | - | - |
@@ -195,7 +195,7 @@ Aby uzyskać więcej informacji, zobacz wiele [obiektów docelowych](../msbuild/
 | [Jak program MSBuild kompiluje projekty](build-process-overview.md) | Opisuje proces kompilacji wewnętrznej używany w programie MSBuild |
 | [Dodatkowe zasoby](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild) | Wyświetla listę zasobów społeczności i pomocy technicznej, aby uzyskać więcej informacji na temat programu MSBuild. |
 
-## <a name="reference"></a>Tematy pomocy
+## <a name="reference"></a>Dokumentacja
 
 - [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)\
  Linki do tematów zawierających informacje referencyjne.

@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Domain-Specific Language, compartment shape
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 54b6e42a46fc60dd981d9a103a4303b44fb0f909
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: eb97f6b218655266afeaeec6198ea52d35c76c52
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360497"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905496"
 ---
 # <a name="properties-of-compartment-shapes"></a>Właściwości kształtów przedziałów
 Kształty przedziału są jednym z kształtów, których można użyć do wyświetlania klasy domeny w języku specyficznym dla domeny. Przedziały można rozwijać i zwijać.
@@ -27,7 +27,7 @@ Kształty przedziału są jednym z kształtów, których można użyć do wyświ
 
  Kształty przedziału mają właściwości, które są wymienione w poniższej tabeli.
 
-|Właściwość|Opis|Domyślny|
+|Właściwość|Opis|Domyślne|
 |-|-|-|
 |Domyślny stan zwijania rozwiń|Jeśli `Expanded` przedziały są pokazywane podczas tworzenia. Jeśli `Collapsed` nie, to nie.|Rozwinięte|
 |Kolor wypełnienia|Kolor wypełnienia tego kształtu.|Biały|

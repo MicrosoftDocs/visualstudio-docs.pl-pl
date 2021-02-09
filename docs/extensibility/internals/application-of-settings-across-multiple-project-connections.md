@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2116d3d0-c46c-4d0a-b482-08a178584f46
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd5b7af98470c1d9a82eb0504c333e74de8c004f
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 14b466112e3939756142a43568ddc3107e55d659
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190112"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906097"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>Stosowanie ustawień w wielu połączeniach projektu
 Wtyczka do kontroli źródła utworzona przy użyciu wtyczki kontroli źródła w wersji 1,2, może użyć operacji wsadowej do wykonania tej samej operacji kontroli źródła w wielu projektach lub wielu kontekstach połączenia. Partie mogą służyć do eliminowania nadmiarowych okien dialogowych dla projektu ze środowiska użytkownika.

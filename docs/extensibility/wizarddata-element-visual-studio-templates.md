@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: d0403a16-5d07-4fe5-b474-19ae3d9fd3ab
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0472bfeb3a988bcb39b4daf80cea92398130f59f
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 6839a4ac8e53ec70fc88d23525985e8d1b7cccd7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903406"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904522"
 ---
 # <a name="wizarddata-element-visual-studio-templates"></a>WizardData — Element (szablony Visual Studio)
 
@@ -106,7 +106,7 @@ Poniższy przykład ilustruje metadane standardowego szablonu projektu dla aplik
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)

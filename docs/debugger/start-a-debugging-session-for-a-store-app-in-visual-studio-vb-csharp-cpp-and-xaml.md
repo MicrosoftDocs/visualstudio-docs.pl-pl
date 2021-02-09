@@ -33,15 +33,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 003eaa7eefffaab9ff2b3c8c25a5ce5c0d41d43b
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: e90a6466a4bff0f3299e3f47bce7e0b54d540fcf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150369"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905024"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>Rozpoczynanie sesji debugowania aplikacji platformy UWP
 
@@ -120,7 +120,7 @@ W aplikacjach C++ Program Visual Studio domyślnie Debuguj kod natywny. Można z
 |**Tylko zarządzane**|Debuguj kod zarządzany w aplikacji. Kod JavaScript i natywny kod C/C++ są ignorowane.|
 |**Tylko natywny**|Debuguj natywny kod C/C++ w aplikacji. Kod zarządzany i kod JavaScript są ignorowane.|
 |**Mieszany (zarządzany i natywny)**|Debuguj natywny kod C/C++ i kod zarządzany w aplikacji. Kod JavaScript jest ignorowany. W projektach w języku C++ ta opcja jest nazywana **zarządzanym i natywnym**.|
-|**Napisy**|Debuguj kod JavaScript w aplikacji. Kod zarządzany i kod natywny zostały zignorowane.|
+|**Skrypt**|Debuguj kod JavaScript w aplikacji. Kod zarządzany i kod natywny zostały zignorowane.|
 |**Natywny ze skryptem**|Debuguj natywny kod C/C++ i kod JavaScript w aplikacji. Kod zarządzany jest ignorowany. Dostępne tylko w projektach C++ lub w tle.|
 |**Tylko procesor GPU (C++ AMP)**|Debuguj natywny kod języka C++, który działa w procesorze GPU. Dostępne tylko w projektach C++.|
 
@@ -217,6 +217,6 @@ Aby dołączyć debuger do [!INCLUDE[win8_appname_long](../debugger/includes/win
 > Najprostszym sposobem dołączenia do aplikacji JavaScript jest zamknięcie wszystkich innych aplikacji JavaScript. Można też zauważyć identyfikatory PID uruchomionych *wwahost.exe* procesów w Menedżerze zadań systemu Windows przed rozpoczęciem aplikacji. Po uruchomieniu aplikacji jego identyfikator PID *wwahost.exe* będzie różnić się od podanych wcześniej.
 ::: moniker-end
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Debugowanie aplikacji w programie Visual Studio](../debugger/debugging-windows-store-and-windows-universal-apps.md)

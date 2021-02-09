@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 765767d3-ecb7-4cd9-ba1e-d9468964dddc
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c3793dddf62f67d1c2ff75d8df863dadfdadb7a1
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 574f49b65f47b4a22240ca68b4d74c90ee580a15
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048948"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905335"
 ---
 # <a name="onerror-element-msbuild"></a>OnError — element (MSBuild)
 
@@ -60,7 +60,7 @@ Powoduje, że co najmniej jeden obiekt docelowy jest wykonywany, jeśli `Continu
 
 | Element | Opis |
 | - | - |
-| [Obiektów](../msbuild/target-element-msbuild.md) | Element kontenera zadań programu MSBuild. |
+| [Cel](../msbuild/target-element-msbuild.md) | Element kontenera zadań programu MSBuild. |
 
 ## <a name="remarks"></a>Uwagi
 

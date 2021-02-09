@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 0b25b82c-7432-4e0a-9e84-350269ba8260
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e15b1f8bdd27e013e1ef2060d9867a81e8ddde3
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 532568dc0e4d181dfe3de56151096565bf9ff771
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190034"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905972"
 ---
 # <a name="automation-support-for-options-pages"></a>Obsługa automatyzacji dla stron opcji
 Pakietów VSPackage mogą udostępniać okna dialogowe **opcji** niestandardowych do menu **Narzędzia** (strony **opcji narzędzia** ) w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] i mogą być dostępne dla modelu automatyzacji.

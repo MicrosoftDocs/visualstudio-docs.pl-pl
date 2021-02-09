@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: e7472069-7337-4ef4-8f8a-8c027a2e22f4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b1b68c10c290dcf685e1eaa5fef907e27be7452f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 32bc4715438c7197628b4df66203aadb753bec25
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736626"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904686"
 ---
 # <a name="idebugactivatedocumentevent2getdocumentcontext"></a>IDebugActivateDocumentEvent2::GetDocumentContext
 Pobiera kontekst dokumentu opisujący położenie w dokumencie, który ma zostać uaktywniony przez pakiet debugowania.
@@ -29,13 +29,13 @@ Pobiera kontekst dokumentu opisujący położenie w dokumencie, który ma zosta�
 ## <a name="syntax"></a>Składnia
 
 ```cpp
-HRESULT GetDocumentContext ( 
+HRESULT GetDocumentContext ( 
    IDebugDocumentContext2** ppDocContext
 );
 ```
 
 ```csharp
-int GetDocumentContext ( 
+int GetDocumentContext ( 
    out IDebugDocumentContext2 ppDocContext
 );
 ```

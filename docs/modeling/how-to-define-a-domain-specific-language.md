@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Domain-Specific Language, domain properties
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 40dcba1cb83e695f2b02468bdd83a5faa8c25a38
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 440d2f42fb7967ebbcb97433c3faa55e2d91ca0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363318"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903933"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Porady: definiowanie języka właściwego dla domeny
 Aby zdefiniować język specyficzny dla domeny (DSL), należy utworzyć rozwiązanie programu Visual Studio na podstawie szablonu. Kluczową częścią rozwiązania jest diagram definicji DSL, który jest przechowywany w DslDefinition. DSL. Definicja DSL definiuje klasy i kształty DSL. Po zmodyfikowaniu i dodaniu tych elementów możesz dodać kod programu, aby dostosować DSL w bardziej szczegółowy sposób.

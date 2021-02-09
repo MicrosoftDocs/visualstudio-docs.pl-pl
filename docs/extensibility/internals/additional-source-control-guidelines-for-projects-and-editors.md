@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2483cce5-321c-4d3c-9c5c-ee8385263f74
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fdd7e23840701981eaea46b44355c34b55b37a33
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 688c7de73c1a935ed6f7a30c6d956c7db97bdc6f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190138"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906113"
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>Dodatkowe wskazówki dotyczące kontroli źródła dla projektów i edytorów
 Istnieje kilka wytycznych, które są zgodne z projektami i edytorami w celu zapewnienia obsługi kontroli źródła.
@@ -25,7 +25,7 @@ Istnieje kilka wytycznych, które są zgodne z projektami i edytorami w celu zap
 ## <a name="guidelines"></a>Wytyczne
  Aby umożliwić obsługę kontroli źródła, projekt lub Edytor powinien również wykonać następujące czynności:
 
-|Obszar|Project|Edytor|Szczegóły|
+|Warstwowy|Project|Edytor|Szczegóły|
 |----------|-------------|------------|-------------|
 |Prywatne kopie plików|X||Środowisko obsługuje prywatne kopie plików. Oznacza to, że każda osoba zarejestrowana w projekcie ma swoją prywatną kopię plików w tym projekcie.|
 |Trwałość ANSI/Unicode|X|X|Jeśli zapiszesz kod trwałości, Utrwalaj pliki w postaci ANSI, ponieważ większość programów kontroli źródła nie obsługuje obecnie standardu Unicode.|

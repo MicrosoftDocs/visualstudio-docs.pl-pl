@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 41f69e0a-e82c-473d-8b7a-0c40fc5730fc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5d0c67d62f57076f29f2c2ef60d456f517ae97fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ebd90baebc859f340bfb06df3fdbdc6012588183
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724747"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904571"
 ---
 # <a name="idebugportsupplier2canaddport"></a>IDebugPortSupplier2::CanAddPort
 Sprawdza, czy dostawca portu może dodawać nowe porty.
@@ -28,8 +28,8 @@ Sprawdza, czy dostawca portu może dodawać nowe porty.
 ## <a name="syntax"></a>Składnia
 
 ```cpp
-HRESULT CanAddPort( 
-   void 
+HRESULT CanAddPort( 
+   void 
 );
 ```
 
