@@ -5,7 +5,7 @@ ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 f1_keywords:
 - vs.csharp.refactoring.extractmethod
 dev_langs:
@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 21f6ac868268c40ea6df837596546f86fd9a3a44
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: b39112a696611103828d862c7f7adf04784e6222
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98129474"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861000"
 ---
 # <a name="extract-a-method-refactoring"></a>Wyodrębnianie metody refaktoryzacji
 
@@ -71,7 +71,7 @@ To Refaktoryzacja dotyczy:
 
 3. Po zakończeniu wprowadzania zmian wybierz przycisk **Zastosuj** lub naciśnij klawisz **Enter** , a zmiany zostaną zatwierdzone.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Refaktoryzacja](../refactoring-in-visual-studio.md)
 - [Podgląd zmian](../../ide/preview-changes.md)

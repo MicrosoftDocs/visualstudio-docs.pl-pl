@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Diagnostics Tools, CPU Usage
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6e721a424cc1c8b7202764fdc9b23eae737d22a4
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: 86b5e44f5b9e2fec07fef4e54a48ff89ebb2ff74
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90074881"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861637"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Szybki Start: analizowanie danych użycia procesora CPU w programie Visual Studio (C++)
 
@@ -26,7 +26,7 @@ Program Visual Studio udostępnia wiele zaawansowanych funkcji, które ułatwiaj
 
 Centrum diagnostyki oferuje wiele innych opcji umożliwiających uruchomienie sesji diagnostycznej i zarządzanie nią. Jeśli opisane w tym miejscu narzędzie **użycie procesora CPU** nie poda potrzebnych danych, [inne narzędzia profilowania](../profiling/profiling-feature-tour.md) zapewniają różne rodzaje informacji, które mogą być pomocne. W wielu przypadkach wąskie gardła wydajności aplikacji może być spowodowane przez coś innego niż procesor CPU, takich jak pamięć, interfejs użytkownika renderowania lub czas żądania sieci. Profiler wydajności oferuje wiele innych opcji rejestrowania i analizowania tego rodzaju danych. [Funkcja PerfTip](../profiling/perftips.md), inne narzędzie profilowania zintegrowanego debugera, umożliwia również przechodzenie przez kod i określenie, jak długo trwa wykonywanie określonych funkcji lub bloków kodu.
 
-System Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania przy użyciu debugera (okno**Narzędzia diagnostyczne** ). W systemie Windows 7 i nowszych można użyć narzędzia do wykonywania w programie do [profilowania](../profiling/profiling-feature-tour.md).
+System Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania przy użyciu debugera (okno **Narzędzia diagnostyczne** ). W systemie Windows 7 i nowszych można użyć narzędzia do wykonywania w programie do [profilowania](../profiling/profiling-feature-tour.md).
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 
@@ -57,7 +57,7 @@ System Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania
 
    Program Visual Studio otwiera nowy projekt.
 
-1. W *Diagnostics_Get_Started_Native*Zastąp następujący kod
+1. W *Diagnostics_Get_Started_Native* Zastąp następujący kod
 
     ```c++
     int main()
@@ -156,7 +156,7 @@ System Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania
 
      Gdy zbieranie danych jest włączone, przycisk Rejestruj wyświetla czerwony okrąg.
 
-     Po wybraniu opcji **Rejestruj profil procesora CPU**program Visual Studio rozpocznie nagrywanie funkcji i czas ich wykonywania, a także wykres osi czasu, którego można użyć do skoncentrowania się na określonych segmentach sesji próbkowania. Te zebrane dane można wyświetlić tylko wtedy, gdy aplikacja jest zatrzymana w punkcie przerwania.
+     Po wybraniu opcji **Rejestruj profil procesora CPU** program Visual Studio rozpocznie nagrywanie funkcji i czas ich wykonywania, a także wykres osi czasu, którego można użyć do skoncentrowania się na określonych segmentach sesji próbkowania. Te zebrane dane można wyświetlić tylko wtedy, gdy aplikacja jest zatrzymana w punkcie przerwania.
 
 6. Naciśnij klawisz F5, aby uruchomić aplikację w drugim punkcie przerwania.
 
@@ -200,7 +200,7 @@ Zalecamy rozpoczęcie analizowania danych przez badanie listy funkcji w obszarze
 - [Analizuj użycie procesora](../profiling/cpu-usage.md) , aby uzyskać bardziej szczegółowe informacje o narzędziu Użycie procesora CPU.
 - Analizuj użycie procesora bez dołączonego debugera lub jako przeznaczonego dla uruchomionej aplikacji — aby uzyskać więcej informacji, zobacz [zbieranie danych profilowania bez debugowania](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) w [narzędziach profilowania uruchamiania z debugerem lub bez niego](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Profilowanie w programie Visual Studio](../profiling/index.yml)
 - [Pierwsze spojrzenie na narzędzia profilowania](../profiling/profiling-feature-tour.md)

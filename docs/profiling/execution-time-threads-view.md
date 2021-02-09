@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 80c100f8-2502-4613-bfef-4f4f2e09cc8d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f26df8f724d4a17f55ea54c3e7c61e5e1630e635
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: 5c62c57e3037b38c2729917d2b882550b9c2d126
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801482"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861611"
 ---
 # <a name="execution-time-threads-view"></a>Czas wykonywania (Widok wątków)
 Te segmenty widoku wątki przedstawiają czas wykonywania, gdy wątek aktywnie wykonuje prace na logicznym rdzeń w systemie.
@@ -30,6 +30,6 @@ Te segmenty widoku wątki przedstawiają czas wykonywania, gdy wątek aktywnie w
 
  Aby wyświetlić tradycyjny profil próbkowania dla wszystkich segmentów wykonywania w bieżącym widoku, kliknij opcję **wykonywanie** w profilu widocznej osi czasu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Raport profilu wykonania](../profiling/execution-profile-report.md)
 - [Widok wątków](../profiling/threads-view-parallel-performance.md)

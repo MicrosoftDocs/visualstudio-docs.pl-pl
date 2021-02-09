@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: f804d6d5-6309-46e4-8294-b83e880b5ec9
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 29f5fb6034c693c14cd04c83fe4c71f8763a0b0c
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: c0fab4fd10d985ad1cee01fbea4269934c01d243
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96617321"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860922"
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>Znajdź i zamień, Środowisko, Opcje — Okno dialogowe
 
@@ -55,6 +55,6 @@ Po wyczyszczeniu opcji **Zawsze pokazuj ten komunikat** na niektórych, ale nie 
 
 Zaznacz tę opcję, aby wkleić tekst po obu stronach punktu wstawiania bieżącego edytora do pola **Znajdź co** w przypadku wybrania dowolnego widoku okna **Znajdź i Zamień** w menu **Edycja** . Usuń zaznaczenie tej opcji, aby użyć ostatniego wzorca wyszukiwania z poprzedniego wyszukiwania jako **Znajdź** ciąg.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Znajdowanie i zastępowanie tekstu](../../ide/finding-and-replacing-text.md)

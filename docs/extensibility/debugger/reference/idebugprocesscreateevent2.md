@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c660439d-8b23-4dbb-923e-ebb5e1d7edf5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cfc9b0bbdebde01af48ab1436dbfd17ac0c3241b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f41d483d51c96cb7a5273f89f691639fd40dcaea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723528"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861130"
 ---
 # <a name="idebugprocesscreateevent2"></a>IDebugProcessCreateEvent2
 Ten interfejs jest wysyłany podczas uruchamiania procesu.
@@ -25,7 +25,7 @@ Ten interfejs jest wysyłany podczas uruchamiania procesu.
 ## <a name="syntax"></a>Składnia
 
 ```
-IDebugProcessCreateEvent2 : IUnknown
+IDebugProcessCreateEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji

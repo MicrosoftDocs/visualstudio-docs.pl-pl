@@ -6,17 +6,17 @@ ms.date: 01/28/2019
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ed4fdbfe7090a66d955461f2c3a394f6fb661c5a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 74259a6e15446d8ca0b07f3b694d0285427f8d9f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62430747"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861559"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>Samouczek: współpraca z językiem Python w programie Visual Studio
 
@@ -42,7 +42,7 @@ Ten samouczek rozpoczyna się od prostego projektu zawierającego pojedynczy, pu
 
 1. W programie Visual Studio wybierz pozycję **plik**  >  **Nowy**  >  **projekt** (**Ctrl** + **SHIFT** + **N**), co spowoduje wyświetlenie okna dialogowego **Nowy projekt** . W tym miejscu przeglądasz szablony w różnych językach, a następnie wybierzesz jeden dla projektu i określ, gdzie program Visual Studio umieści pliki.
 
-1. Aby wyświetlić szablony języka Python, wybierz opcję **zainstalowane**środowisko  >  **Python** po lewej stronie lub wyszukaj ciąg "Python". Korzystanie z wyszukiwania to doskonały sposób na znalezienie szablonu, gdy nie można zapamiętać jego lokalizacji w drzewie języków.
+1. Aby wyświetlić szablony języka Python, wybierz opcję **zainstalowane** środowisko  >  **Python** po lewej stronie lub wyszukaj ciąg "Python". Korzystanie z wyszukiwania to doskonały sposób na znalezienie szablonu, gdy nie można zapamiętać jego lokalizacji w drzewie języków.
 
     ![Okno dialogowe Nowy projekt z pokazanymi projektami języka Python](media/vs-getting-started-python-01-new-project.png)
 

@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 177420b9-568b-4dad-9d16-1b0e98a24d71
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: de0a155d675f85e10cdf38969dd6eb59a3762770
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: 2ebfc2071bdf9f9e9dc40b36744bb34d4a68ac04
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518527"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859284"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Powiązywanie kontrolek WPF z zestawem danych
 
@@ -64,7 +64,7 @@ Utwórz nowy projekt WPF do wyświetlania rekordów produktów.
 
 2. W menu **Plik** wybierz pozycję **Nowy** > **Projekt**.
 
-3. Rozwiń węzeł **Visual Basic** lub **Visual C#** , a następnie wybierz pozycję **Windows**.
+3. Rozwiń węzeł **Visual Basic** lub **Visual C#**, a następnie wybierz pozycję **Windows**.
 
 4. Wybierz szablon projektu **aplikacji WPF** .
 
@@ -96,9 +96,9 @@ Aby można było tworzyć kontrolki powiązane z danymi, należy zdefiniować mo
 
    Zostanie otwarty Kreator **konfiguracji źródła danych** .
 
-3. Na stronie **Wybierz typ źródła danych** wybierz pozycję **baza danych** , a następnie kliknij przycisk **dalej**.
+3. Na stronie **Wybierz typ źródła danych** wybierz pozycję **baza danych**, a następnie kliknij przycisk **dalej**.
 
-4. Na stronie **Wybierz model bazy danych** wybierz pozycję **zestaw danych** , a następnie kliknij przycisk **dalej**.
+4. Na stronie **Wybierz model bazy danych** wybierz pozycję **zestaw danych**, a następnie kliknij przycisk **dalej**.
 
 5. Na stronie **Wybierz połączenie danych** wybierz jedną z następujących opcji:
 
@@ -108,7 +108,7 @@ Aby można było tworzyć kontrolki powiązane z danymi, należy zdefiniować mo
 
 6. Na stronie **Zapisz parametry połączenia do pliku konfiguracji aplikacji** zaznacz pole wyboru **tak, Zapisz połączenie jako** , a następnie kliknij przycisk **dalej**.
 
-7. Na stronie **Wybierz obiekty bazy danych** rozwiń węzeł **tabele** , a następnie wybierz tabelę **Product (tabeli SalesLT)** .
+7. Na stronie **Wybierz obiekty bazy danych** rozwiń węzeł **tabele**, a następnie wybierz tabelę **Product (tabeli SalesLT)** .
 
 8. Kliknij przycisk **Finish** (Zakończ).
 
@@ -124,7 +124,7 @@ Aby wypełnić zestaw danych danymi, użyj `Fill` metody `ProductTableAdapter` .
 
      Zostanie otwarty projektant obiektów DataSet.
 
-2. W projektancie kliknij prawym przyciskiem myszy zapytanie **wypełnienie** , **GetData ()** i wybierz pozycję **Konfiguruj**.
+2. W projektancie kliknij prawym przyciskiem myszy zapytanie **wypełnienie**, **GetData ()** i wybierz pozycję **Konfiguruj**.
 
      Zostanie otwarty Kreator **konfiguracji TableAdapter** .
 
@@ -166,7 +166,7 @@ Utwórz kontrolki, które wyświetlają rekordy klientów, przeciągając `Produ
 
 2. Rozwiń węzeł **produkt** .
 
-3. W tym przykładzie niektóre pola nie będą wyświetlane, więc kliknij menu rozwijane obok następujących węzłów i wybierz opcję **Brak** :
+3. W tym przykładzie niektóre pola nie będą wyświetlane, więc kliknij menu rozwijane obok następujących węzłów i wybierz opcję **Brak**:
 
     - ProductCategoryID
 
@@ -240,7 +240,7 @@ Skompiluj i uruchom aplikację. Sprawdź, czy można wyświetlać i aktualizowa�
 
      Aplikacja zostanie skompilowana i uruchomiona. Sprawdź następujące informacje:
 
-    - Pola tekstowe wyświetlają dane z pierwszego rekordu produktu, który ma zdjęcie. Ten produkt ma identyfikator produktu 713, a nazwa w **logo z długą cyfrą** ().
+    - Pola tekstowe wyświetlają dane z pierwszego rekordu produktu, który ma zdjęcie. Ten produkt ma identyfikator produktu 713, a nazwa w **logo z długą cyfrą**().
 
     - Możesz kliknąć przycisk **>** lub, **<** Aby nawigować po innych rekordach produktu.
 
@@ -260,7 +260,7 @@ Po zakończeniu tego instruktażu można wypróbować następujące powiązane z
 
 - Dowiedz się, jak używać okna **źródła danych** w programie Visual Studio, aby wyświetlić powiązane dane (czyli dane w relacji nadrzędny-podrzędny) w kontrolkach WPF. Aby uzyskać więcej informacji, zobacz [Przewodnik: wyświetlanie powiązanych danych w aplikacji WPF](../data-tools/display-related-data-in-wpf-applications.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Wiązanie kontrolek WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Narzędzia zestawów danych w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)

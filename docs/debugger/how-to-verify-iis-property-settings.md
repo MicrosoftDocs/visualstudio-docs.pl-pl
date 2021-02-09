@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 9efc50bf-02fb-4750-9b3e-f03c38f10d8b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b627fbd3d4875699faa28f551d68f5a99bd63340
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 2ed11efb0d493844456d2493153a41df140095cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150551"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853121"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>Porady: weryfikacja właściwości ustawień IIS
 
@@ -79,6 +79,6 @@ Możesz ustawić właściwości aplikacji sieci Web za pomocą narzędzia admini
 
 9. Kliknij przycisk **OK** , aby zamknąć okno dialogowe **Internet Information Services (IIS) menedżer** **Menedżer usług internetowych** lub **Internet Information Services** .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Rozwiązywanie problemów](../debugger/debugging-web-applications-troubleshooting.md)

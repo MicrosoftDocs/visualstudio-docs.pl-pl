@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: 306bd176-0ce9-4a10-89ca-20b043d37d4e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c846910da4dec636c073446ae63cffb7cb2a682
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 815c6c0fc3eec3678f878e081d76c95cb7e8fc78
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150798"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860844"
 ---
 # <a name="call-tree-view---instrumentation-data"></a>Widok drzewa wywołań — dane Instrumentacji
 Wartości funkcji w drzewie wywołania wskazują czas dla wystąpień funkcji, które zostały wywołane przez funkcję nadrzędną w drzewie wywołań. Wartości procentowe są obliczane przez porównanie wartości wystąpień funkcji z łącznym czasem trwania wszystkich funkcji w przebiegu profilowania.
@@ -85,7 +85,7 @@ Wartości funkcji w drzewie wywołania wskazują czas dla wystąpień funkcji, k
 |**Maksymalny czas wyłączny aplikacji**|Maksymalny czas wyłączny aplikacji wywołania tej funkcji w tym kontekście.|
 |**Minimalny czas wyłączny aplikacji**|Minimalny czas wyłączny aplikacji w wywołaniu tej funkcji w tym kontekście.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)
 - [Widok drzewa wywołań](../profiling/call-tree-view-sampling-data.md)
 - [Widok drzewa wywołań-Instrumentacja](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)

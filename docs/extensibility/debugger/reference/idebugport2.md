@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8fd87f05-a950-4d14-b925-98be29d4facc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 62912be9fdfecc98a264a58c9713cc12ccaf28f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d50266e792d58be3824e5c14e4936f3af381f0fc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725233"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861143"
 ---
 # <a name="idebugport2"></a>IDebugPort2
 Ten interfejs reprezentuje port debugowania na komputerze.
@@ -45,7 +45,7 @@ IDebugPort2 : IUnknown
 |[GetPortId](../../../extensibility/debugger/reference/idebugport2-getportid.md)|Zwraca identyfikator portu.|
 |[GetPortRequest](../../../extensibility/debugger/reference/idebugport2-getportrequest.md)|Zwraca żądanie użyte do utworzenia portu (jeśli jest dostępne).|
 |[GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md)|Zwraca dostawcę portu dla tego portu.|
-|[GetProcess —](../../../extensibility/debugger/reference/idebugport2-getprocess.md)|Zwraca interfejs do procesu, w którym znajduje się identyfikator procesu.|
+|[GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)|Zwraca interfejs do procesu, w którym znajduje się identyfikator procesu.|
 |[EnumProcesses](../../../extensibility/debugger/reference/idebugport2-enumprocesses.md)|Wylicza wszystkie procesy działające na porcie.|
 
 ## <a name="remarks"></a>Uwagi

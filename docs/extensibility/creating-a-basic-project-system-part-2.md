@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 564d975a60c54a074d830742eb0ab6133fdbfe4e
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: ceef95f90d2f54ad7b527ccc8c00322c77491fb7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974610"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853155"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>Tworzenie podstawowego systemu projektu, część 2
 Pierwsze wskazówki w tej serii, [Tworzenie podstawowego systemu projektu, część 1](../extensibility/creating-a-basic-project-system-part-1.md), pokazuje, jak utworzyć podstawowy system projektu. Ten przewodnik jest oparty na podstawowym systemie projektu przez dodanie szablonu programu Visual Studio, strony właściwości i innych funkcji. Przed rozpoczęciem tego procesu należy wykonać pierwszą Instruktaż.

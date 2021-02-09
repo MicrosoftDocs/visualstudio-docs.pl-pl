@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d3e1eedc-bfd3-4c91-881b-d69565138d0f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b2fafbb25d52df6082736431727222c788d73476
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5aafc62f5920db70bd881bd3a541cfcfabfac360
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461218"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862347"
 ---
 # <a name="locationtype"></a>LocationType
 Wskazuje rodzaj informacji o lokalizacji zawartych w symbolu.

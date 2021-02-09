@@ -8,19 +8,19 @@ dev_langs:
 - CSharp
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7aad99392db33256e991e731770266c1a53dec50
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 52c9d8ca4af6467c6db21be64083b5bf64af0b6a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435496"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859193"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Tworzenie prostej aplikacji do obsługi danych za pomocą platform WPF i Entity Framework 6
 
-W tym instruktażu pokazano, jak utworzyć podstawową aplikację "formularze dla danych" w programie Visual Studio. Aplikacja używa SQL Server LocalDB, bazy danych Northwind, Entity Framework 6 (nie Entity Framework Core) i Windows Presentation Foundation dla .NET Framework (nie .NET Core). Pokazano, jak wykonać podstawowe powiązania danych z widokiem wzorzec-szczegóły i ma także niestandardowy Nawigator powiązań z przyciskami **Przenieś dalej** , **Przenieś poprzedni** , **Przenieś na początek** , **Przenieś do końca** , **Aktualizuj** i **Usuń**.
+W tym instruktażu pokazano, jak utworzyć podstawową aplikację "formularze dla danych" w programie Visual Studio. Aplikacja używa SQL Server LocalDB, bazy danych Northwind, Entity Framework 6 (nie Entity Framework Core) i Windows Presentation Foundation dla .NET Framework (nie .NET Core). Pokazano, jak wykonać podstawowe powiązania danych z widokiem wzorzec-szczegóły i ma także niestandardowy Nawigator powiązań z przyciskami **Przenieś dalej**, **Przenieś poprzedni**, **Przenieś na początek**, **Przenieś do końca**, **Aktualizuj** i **Usuń**.
 
 Ten artykuł koncentruje się na korzystaniu z narzędzi danych w programie Visual Studio i nie próbuje wyjaśnić podstawowych technologii na dowolnym poziomie. Przyjęto założenie, że masz podstawową wiedzę na temat języka XAML, Entity Framework i SQL. W tym przykładzie nie przedstawiono również architektury Model-View-ViewModel (MVVM), która jest standardowa dla aplikacji WPF. Można jednak skopiować ten kod do własnej aplikacji MVVM przy użyciu kilku modyfikacji.
 
@@ -32,7 +32,7 @@ Ten przykład używa SQL Server Express LocalDB i przykładowej bazy danych Nort
 
 2. Zainstaluj przykładową bazę danych Northwind, wykonując następujące kroki:
 
-    1. W programie Visual Studio Otwórz okno **Eksplorator obiektów SQL Server** . ( **Eksplorator obiektów SQL Server** jest instalowany jako część obciążenia **magazynu i przetwarzania danych** w **Instalator programu Visual Studio** ). Rozwiń węzeł **SQL Server** . Kliknij prawym przyciskiem myszy wystąpienie LocalDB i wybierz pozycję **nowe zapytanie**.
+    1. W programie Visual Studio Otwórz okno **Eksplorator obiektów SQL Server** . (**Eksplorator obiektów SQL Server** jest instalowany jako część obciążenia **magazynu i przetwarzania danych** w **Instalator programu Visual Studio**). Rozwiń węzeł **SQL Server** . Kliknij prawym przyciskiem myszy wystąpienie LocalDB i wybierz pozycję **nowe zapytanie**.
 
        Zostanie otwarte okno edytora zapytań.
 
@@ -70,7 +70,7 @@ Ten przykład używa SQL Server Express LocalDB i przykładowej bazy danych Nort
 
 3. Na następnym ekranie wprowadź lub wybierz swoje połączenie LocalDB Northwind (na przykład (LocalDB) \MSSQLLocalDB), określ bazę danych Northwind, a następnie kliknij przycisk **dalej**.
 
-4. Na następnej stronie kreatora wybierz tabele, procedury składowane i inne obiekty bazy danych, które mają być uwzględnione w modelu Entity Framework. Rozwiń węzeł dbo w widoku drzewa, a następnie wybierz pozycję **Customers** , **Orders** i **Order Details**. Pozostaw zaznaczone wartości domyślne i kliknij przycisk **Zakończ**.
+4. Na następnej stronie kreatora wybierz tabele, procedury składowane i inne obiekty bazy danych, które mają być uwzględnione w modelu Entity Framework. Rozwiń węzeł dbo w widoku drzewa, a następnie wybierz pozycję **Customers**, **Orders** i **Order Details**. Pozostaw zaznaczone wartości domyślne i kliknij przycisk **Zakończ**.
 
     ![Wybierz obiekty bazy danych dla modelu](../data-tools/media/raddata-choose-ef-objects.png)
 
@@ -120,7 +120,7 @@ Istnieje możliwość napisania własnego kodu wiązania, ale znacznie łatwiej 
 
      ![Powiązanie źródła danych klientów z indywidualnymi kontrolkami](../data-tools/media/raddata-customers-data-source-binding-to-individual-controls.png)
 
-     W widoku Kod można teraz zobaczyć nowy `Grid` element w wierszu 1 (środkowym wierszu) siatki nadrzędnej. Siatka nadrzędna ma `DataContext` atrybut, który odwołuje się do CollectionViewSource, który został dodany do `Windows.Resources` elementu. Uwzględniając ten kontekst danych, gdy pierwsze pole tekstowe wiąże się z **adresem** , ta nazwa jest mapowana na `Address` Właściwość w bieżącym `Customer` obiekcie w CollectionViewSource.
+     W widoku Kod można teraz zobaczyć nowy `Grid` element w wierszu 1 (środkowym wierszu) siatki nadrzędnej. Siatka nadrzędna ma `DataContext` atrybut, który odwołuje się do CollectionViewSource, który został dodany do `Windows.Resources` elementu. Uwzględniając ten kontekst danych, gdy pierwsze pole tekstowe wiąże się z **adresem**, ta nazwa jest mapowana na `Address` Właściwość w bieżącym `Customer` obiekcie w CollectionViewSource.
 
     ```xaml
     <Grid DataContext="{StaticResource customerViewSource}">
@@ -150,7 +150,7 @@ Istnieje możliwość napisania własnego kodu wiązania, ale znacznie łatwiej 
 
 Domyślne rozmieszczenie utworzone przez program Visual Studio nie jest idealnym rozwiązaniem dla aplikacji, dlatego w tym miejscu będzie dostępny końcowy kod XAML umożliwiający skopiowanie do kodu. Potrzebne są również niektóre "formularze" (w rzeczywistości siatki) umożliwiające użytkownikowi dodanie nowego klienta lub zamówienia. Aby można było dodać nowego klienta i zamówienie, potrzebny jest oddzielny zestaw pól tekstowych, które nie są powiązane z danymi `CollectionViewSource` . Należy określić, która siatka będzie widoczna dla użytkownika w dowolnym momencie, ustawiając właściwość Visible w metodach obsługi. Na koniec Dodaj przycisk usuwania do każdego wiersza w siatce Orders (zamówienia), aby umożliwić użytkownikowi usunięcie poszczególnych zamówień.
 
-Najpierw Dodaj te style do `Windows.Resources` elementu w *MainWindow. XAML* :
+Najpierw Dodaj te style do `Windows.Resources` elementu w *MainWindow. XAML*:
 
 ```xaml
 <Style x:Key="Label" TargetType="{x:Type Label}" BasedOn="{x:Null}">

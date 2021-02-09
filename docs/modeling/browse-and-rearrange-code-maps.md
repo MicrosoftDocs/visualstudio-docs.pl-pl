@@ -21,15 +21,15 @@ helpviewer_keywords:
 - dependency graphs, browsing
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ace2095e98bc7d7425f518249a754fcbed07a02
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: e579f62c24795ad99939fe10f68c42acaaa89b60
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363617"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861937"
 ---
 # <a name="browse-and-rearrange-code-maps"></a>Przeglądanie i rozmieszczanie map kodu
 
@@ -280,7 +280,7 @@ Można zmienić ikony elementów kodu oraz kolory elementów kodu i linków przy
 
 5. Skorzystaj z poniższej tabeli, aby wybrać styl, który ma zostać zmieniony:
 
-    |**Aby zmienić**|**Wybierz ikonę**|
+    |**Aby zmienić**|**Następnie**|
     |-|-|
     |Kolor tła|**Tło**|
     |Kolor konturu|**Linii**|
@@ -307,7 +307,7 @@ Można zmienić rozmieszczenie, usunąć lub tymczasowo dezaktywować style w po
 
 2. Wykonaj jedno z następujących zadań:
 
-    |**Do**|**Wybierz ikonę**|
+    |**Do**|**Następnie**|
     |-|-|
     |Dezaktywuj element kodu|**Wyłącz**|
     |Usuń element kodu|**Usuwanie**|

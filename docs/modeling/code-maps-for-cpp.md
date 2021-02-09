@@ -6,15 +6,15 @@ ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
 ms.custom: SEO-VS-2020
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b33e9400926dd7d1f7a2dc5a66a33ec2fb244b1b
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 9c2aa1e49c0465fcf75917f0d9bd134962794c74
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100443"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861754"
 ---
 # <a name="code-maps-for-c-projects"></a>Mapy kodu dla projektów C++
 
@@ -40,7 +40,7 @@ Te elementy nie są obsługiwane dla kodu C i C++:
 
 Te problemy mogą wystąpić podczas tworzenia map kodu dla kodu C i C++:
 
-|**Problem**|**Możliwa przyczyna**|**Rozwiązanie**|
+|**Wykonaj**|**Możliwa przyczyna**|**Rozwiązanie**|
 |-|-|-|
 |Nie można wygenerować mapy kodu.|Żadne projekty w rozwiązaniu nie zostały pomyślnie skompilowane.|Napraw błędy kompilacji, które wystąpiły, a następnie ponownie Wygeneruj mapę.|
 |Program Visual Studio przestaje odpowiadać przy próbie wygenerowania mapy kodu z menu **architektury** .|Plik bazy danych programu (.pdb) może być uszkodzony.<br /><br /> Plik .pdb przechowuje informacje debugowania, takie jak typ, metoda i informacje o pliku źródłowym.|Kompiluj rozwiązanie ponownie, a następnie spróbuj jeszcze raz.|
@@ -51,6 +51,6 @@ Te problemy mogą wystąpić podczas tworzenia map kodu dla kodu C i C++:
 ||Informacje o debugowaniu pochodzą z pliku .pdb.|Jeśli w konsolidatorze użyto opcji **/PDBSTRIPPED** , Dołącz do niej kompletny plik. pdb.|
 ||Obiekt wywołujący nie jest funkcją i jest albo osadzony w pliku binarnym, albo stanowi wskaźnik w sekcji danych.|Gdy obiekt wywołujący jest thunk, spróbuj użyć, `_declspec(dllimport)` Aby uniknąć thunk.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Mapowanie zależności za pomocą map kodu](../modeling/map-dependencies-across-your-solutions.md)

@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 2d316aaa-8bc0-4ce5-90ab-23b3eac0b5dd
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ab7156635914d46dfc1849717d29ac0416e2d9fa
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 40a620023dad754e3de4fedb9bc4fdbe7b7835a5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351222"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861234"
 ---
 # <a name="how-to-create-a-product-manifest"></a>Instrukcje: tworzenie manifestu produktu
 Aby wdrożyć wymagania wstępne dla aplikacji, można utworzyć pakiet programu inicjującego. Pakiet programu inicjującego zawiera jeden plik manifestu produktu, ale manifest pakietu dla każdego ustawienia regionalnego. Manifest pakietu zawiera aspekty dotyczące lokalizacji pakietu. Dotyczy to również ciągów, umów licencyjnych użytkowników końcowych i pakietów językowych.
@@ -66,7 +66,7 @@ Aby wdrożyć wymagania wstępne dla aplikacji, można utworzyć pakiet programu
 
 6. Skopiuj lub Przenieś plik *CorePackage.msi* do folderu *C:\Package* .
 
-7. Dodaj plik XML, aby zainstalować pakiet za pomocą poleceń programu inicjującego. Program inicjujący automatycznie dodaje do pliku *MSI* flagę **/Qn** , która zostanie zainstalowana w trybie dyskretnym. Jeśli plik jest plikiem *exe* , program inicjujący uruchamia plik *. exe* przy użyciu powłoki. Poniższy kod XML nie zawiera argumentów do *CorePackage.msi* , ale można umieścić argument wiersza polecenia w `Arguments` atrybucie.
+7. Dodaj plik XML, aby zainstalować pakiet za pomocą poleceń programu inicjującego. Program inicjujący automatycznie dodaje do pliku *MSI* flagę **/Qn** , która zostanie zainstalowana w trybie dyskretnym. Jeśli plik jest plikiem *exe*, program inicjujący uruchamia plik *. exe* przy użyciu powłoki. Poniższy kod XML nie zawiera argumentów do *CorePackage.msi*, ale można umieścić argument wiersza polecenia w `Arguments` atrybucie.
 
     ```xml
     <Commands>

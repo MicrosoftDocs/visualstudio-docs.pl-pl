@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.assetid: eac59cb6-f12e-4a77-9953-6d62b164a643
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 54849cc004bdae4d4f50c1492ff79c762c2cb41b
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 906097e0356922cdcc5afbabb1771348962ea4ff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903861"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859505"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Opracowywanie aplikacji na platformę uniwersalną systemu Windows (UWP)
 
@@ -70,6 +70,6 @@ Jeśli masz istniejące aplikacje ze sklepu Windows 8,1, aplikacje Windows Phone
 
 Po utworzeniu aplikacji uniwersalnej systemu Windows należy spakować aplikację, aby ją zainstalować na urządzeniu z systemem Windows 10 lub przesłać do sklepu Windows. Zobacz [pakowanie aplikacji](/windows/uwp/packaging/index).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Programowanie aplikacji mobilnych na wiele platform w programie Visual Studio](../cross-platform/cross-platform-mobile-development-in-visual-studio.md)

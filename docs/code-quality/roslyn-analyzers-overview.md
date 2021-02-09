@@ -11,15 +11,15 @@ helpviewer_keywords:
 - code analyzers
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 237d1188b1a90c64464a15b2df81d507abacb718
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: d6a295e4abc62a7591c98b92cad4c173c5ff507b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349038"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859804"
 ---
 # <a name="overview-of-source-code-analysis"></a>Przegląd analizy kodu źródłowego
 
@@ -60,7 +60,7 @@ Wiele reguł analizatorów lub *diagnostyki* ma jedną lub więcej skojarzonych 
 
 ## <a name="configure-analyzer-severity-levels"></a>Konfigurowanie poziomów ważności analizatora
 
-Można skonfigurować ważność reguł analizatora lub *diagnostyki* , w [pliku EditorConfig](../code-quality/use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file) lub w [menu żarówki](../code-quality/use-roslyn-analyzers.md#set-rule-severity-from-the-light-bulb-menu).
+Można skonfigurować ważność reguł analizatora lub *diagnostyki*, w [pliku EditorConfig](../code-quality/use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file) lub w [menu żarówki](../code-quality/use-roslyn-analyzers.md#set-rule-severity-from-the-light-bulb-menu).
 
 Analizatory można również skonfigurować w taki sposób, aby badali kod w czasie kompilacji i na żywo podczas pisania. Można skonfigurować zakres analizy kodu na żywo do wykonania tylko dla bieżącego dokumentu, wszystkie otwarte dokumenty lub całe rozwiązanie. Zobacz [jak to zrobić: Konfigurowanie zakresu analizy kodu na żywo](./configure-live-code-analysis-scope-managed-code.md).
 

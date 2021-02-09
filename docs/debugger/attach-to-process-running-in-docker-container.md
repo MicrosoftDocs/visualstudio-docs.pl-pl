@@ -8,16 +8,16 @@ helpviewer_keywords:
 - debugging, Docker container
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: f6e2b851057d924353e6e1e9a211fcbb294353c8
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 4f39d4ecd69b726c1d549d723fadd324b1edd722
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761267"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857932"
 ---
 # <a name="attach-to-a-process-running-on-a-docker-container"></a>Dołączanie do procesu działającego w kontenerze platformy Docker 
 
@@ -52,13 +52,13 @@ Debuger programu Visual Studio można dołączyć do procesu działającego w ko
     > [!NOTE]
     > Dostępne są dwie opcje łączenia zdalnego z uruchomionym procesem w kontenerze platformy Docker. Pierwsza opcja, aby korzystać z protokołu SSH, jest idealna, jeśli nie masz zainstalowanych narzędzi platformy Docker na komputerze lokalnym.  Jeśli masz zainstalowane narzędzia platformy Docker lokalnie i masz demona platformy Docker, która jest skonfigurowana do akceptowania żądań zdalnych, wypróbuj drugą opcję przy użyciu demona Docker.
 
-    1. **_Aby nawiązać połączenie z komputerem zdalnym za pośrednictwem protokołu SSH:_* _
-        1. Wybierz _ *Dodaj...* * Aby nawiązać połączenie z systemem zdalnym.<br/>
+    1. ***Aby nawiązać połączenie z komputerem zdalnym za pośrednictwem protokołu SSH:***
+        1. Wybierz pozycję **Dodaj...** , aby połączyć się z systemem zdalnym.<br/>
         ![Nawiązywanie połączenia z systemem zdalnym](../debugger/media/connect-remote-system.png "Nawiązywanie połączenia z systemem zdalnym")
         1. Wybierz uruchomiony kontener do dołączenia po pomyślnym nawiązaniu połączenia z protokołem SSH lub demonem, a następnie naciśnij przycisk **OK**.
 
-    1. **_Aby ustawić docelowy kontener zdalny, na którym działa proces za pośrednictwem [demona Docker](https://docs.docker.com/engine/reference/commandline/dockerd/)_* _
-        1. Określ adres demona (tj. za pośrednictwem protokołu TCP, IP itp.) w obszarze _ *hosta platformy Docker (opcjonalnie)** i kliknij link odświeżenia.
+    1. ***Aby ustawić docelowy kontener zdalny, na którym działa proces za pośrednictwem [demona platformy Docker](https://docs.docker.com/engine/reference/commandline/dockerd/)***
+        1. Określ adres demona (tj. za pośrednictwem protokołu TCP, IP itp.) w obszarze **host platformy Docker (opcjonalnie)** , a następnie kliknij link Refresh (Odśwież).
         1. Wybierz uruchomiony kontener do dołączenia po pomyślnym nawiązaniu połączenia z demonem, a następnie naciśnij przycisk **OK**.
 
 4. Wybierz odpowiedni proces kontenera z listy **dostępnych procesów** , a następnie wybierz pozycję **Dołącz** , aby rozpocząć debugowanie procesu kontenera języka C# w programie Visual Studio.
@@ -86,8 +86,8 @@ Debuger programu Visual Studio można dołączyć do procesu działającego w ko
 
    Ustawienie obiektu docelowego na kontener zdalny za pośrednictwem protokołu SSH jest obecnie niedostępne i można go wykonać tylko przy użyciu demona platformy Docker.
 
-    **_Aby ustawić docelowy kontener zdalny, na którym działa proces za pośrednictwem [demona Docker](https://docs.docker.com/engine/reference/commandline/dockerd/)_* _
-    1. Określ adres demona (tj. za pośrednictwem protokołu TCP, IP itp.) w obszarze _ *hosta platformy Docker (opcjonalnie)** i kliknij link odświeżenia.
+    ***Aby ustawić docelowy kontener zdalny, na którym działa proces za pośrednictwem [demona platformy Docker](https://docs.docker.com/engine/reference/commandline/dockerd/)***
+    1. Określ adres demona (tj. za pośrednictwem protokołu TCP, IP itp.) w obszarze **host platformy Docker (opcjonalnie)** , a następnie kliknij link Refresh (Odśwież).
 
     1. Wybierz uruchomiony kontener do dołączenia po pomyślnym nawiązaniu połączenia z demonem, a następnie wybierz przycisk OK.
 

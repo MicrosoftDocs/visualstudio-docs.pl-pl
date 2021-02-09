@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, solution templates
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e2e0c96c93e3583a7d2877a5f4f7bd70561b650b
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 23629c2503fd14a758cf3f68f2576db601dd39cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363539"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861858"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>Wybieranie szablonu rozwiązania dotyczącego języka specyficznego dla domeny
 Aby utworzyć rozwiązanie dla języka specyficznego dla domeny, wybierz jeden z szablonów rozwiązań dostępnych w Kreatorze projektanta języka Domain-Specific. Wybierając szablon, który najlepiej przypomina język, który chcesz utworzyć, możesz zminimalizować modyfikacje, które należy wykonać w rozwiązaniu początkowym.

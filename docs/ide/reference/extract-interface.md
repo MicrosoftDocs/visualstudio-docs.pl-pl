@@ -6,7 +6,7 @@ ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 f1_keywords:
 - vs.csharp.refactoring.extractinterface
 dev_langs:
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 13e9b684c81abf491b5836c96190c6a89bdc0643
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 12db627bde45d11950e661d258c9891b8e935ba1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96617399"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861039"
 ---
 # <a name="extract-an-interface-refactoring"></a>Wyodrębnianie refaktoryzacji interfejsu
 
@@ -82,7 +82,7 @@ To Refaktoryzacja dotyczy:
 
       ![Interfejs uzyskany Visual Basic](media/extractinterface-interface-vb.png)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Refaktoryzacja](../refactoring-in-visual-studio.md)
 - [Porady dla deweloperów platformy .NET](../csharp-developer-productivity.md)
