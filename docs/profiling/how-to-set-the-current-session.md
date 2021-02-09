@@ -13,16 +13,16 @@ helpviewer_keywords:
 - sessions, setting multiple
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a704b88f40f5d89b6bcdcccd7e4158411d9999c
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 857fa7e76e0f8830d9a892ba123106ff2add736e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98721869"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906965"
 ---
 # <a name="how-to-set-the-current-session"></a>Instrukcje: ustawienie bieżącej sesji
 
@@ -36,7 +36,7 @@ Po ustawieniu sesji jako bieżącej sesji, kliknięcie pozycji **Uruchom** na pa
 
      Nazwa sesji pojawia się pogrubioną czcionką.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md) 
  [Okno Eksplorator wydajności](../profiling/performance-explorer-window.md) 

@@ -17,15 +17,15 @@ helpviewer_keywords:
 - smart documents [Office development in Visual Studio], data binding
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 76dffda9b332b9b76d6c0e0a423073959bcc7a56
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 7599348b0c44b7239305bb5af49ee2f5c51d882b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526208"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906592"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>Przewodnik: powiązywanie danych z kontrolkami w okienku akcji programu Word
   Ten Instruktaż przedstawia powiązanie danych z kontrolkami w okienku Akcje w programie Word. Kontrolki ilustrują relację wzorzec/szczegóły między tabelami w bazie danych SQL Server.

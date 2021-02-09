@@ -13,16 +13,16 @@ helpviewer_keywords:
 ms.assetid: ee2b3e0c-0990-46d9-8de6-c29fa386b15b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a368da7a69d921c7e7a55922fb89774ce192b08
-ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
+ms.openlocfilehash: 70d362ecdbcc274d01dac6c8e56daa05ec325d71
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98883483"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907171"
 ---
 # <a name="how-to-manually-create-performance-sessions"></a>Instrukcje: ręczne tworzenie sesji wydajności
 Sesję wydajności można utworzyć ręcznie. Nie jest wymagane Otwieranie projektu w programie w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] celu wykonania tej czynności. Aby uzyskać więcej informacji, zobacz [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md).
@@ -39,6 +39,6 @@ Sesję wydajności można utworzyć ręcznie. Nie jest wymagane Otwieranie proje
 
      Zostanie dodany nowy plik binarny.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Eksplorator wydajności](../profiling/performance-explorer.md)
 - [Rozpoczęcie pracy](../profiling/getting-started-with-performance-tools.md)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e39b6e5a-64eb-48cf-a53d-da4fdb968e2d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7ea4d888c1e83e90882e2f42d8ef54ba8f6e34ed
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1cfc4c4e0f12400ff0fe07b24acaed0b80039f94
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723915"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907851"
 ---
 # <a name="idebugprocess2getport"></a>IDebugProcess2::GetPort
 Pobiera port, na którym jest uruchomiony proces.
@@ -28,14 +28,14 @@ Pobiera port, na którym jest uruchomiony proces.
 ## <a name="syntax"></a>Składnia
 
 ```cpp
-HRESULT GetPort( 
-   IDebugPort2** ppPort
+HRESULT GetPort( 
+   IDebugPort2** ppPort
 );
 ```
 
 ```csharp
-int GetPort( 
-   out IDebugPort2 ppPort
+int GetPort( 
+   out IDebugPort2 ppPort
 );
 ```
 

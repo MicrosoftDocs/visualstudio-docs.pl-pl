@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 14abf847-0675-4fa8-872e-971e00c84224
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d48d39ea10e8425d5449444514489ac4b73c0a3f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2694a0ee6e134a5f822c0f84284d96b7ce57ef93
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725335"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907893"
 ---
 # <a name="idebugport2getportrequest"></a>IDebugPort2::GetPortRequest
 Pobiera opis portu, który został wcześniej użyty do utworzenia portu (jeśli jest dostępny).
@@ -28,13 +28,13 @@ Pobiera opis portu, który został wcześniej użyty do utworzenia portu (jeśli
 ## <a name="syntax"></a>Składnia
 
 ```cpp
-HRESULT GetPortRequest( 
+HRESULT GetPortRequest( 
    IDebugPortRequest2** ppRequest
 );
 ```
 
 ```csharp
-int GetPortRequest( 
+int GetPortRequest( 
    out IDebugPortRequest2 ppRequest
 );
 ```

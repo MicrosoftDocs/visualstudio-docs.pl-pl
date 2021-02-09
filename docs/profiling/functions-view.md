@@ -14,16 +14,16 @@ helpviewer_keywords:
 ms.assetid: 513c6174-071d-48a4-9e25-04debbb63e5c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f85e8ddf17e220ff9235fd3d405a61b2efec16e5
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: 94bbce64cbcb8a5b6106682b89dd87383f985197
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801235"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907387"
 ---
 # <a name="functions-view"></a>Widok funkcji
 Widok funkcji zawiera listę funkcji, które są wywoływane podczas profilowania.
@@ -34,7 +34,7 @@ Widok funkcji zawiera listę funkcji, które są wywoływane podczas profilowani
 
  Kolumny, które są dostępne w widoku funkcji, zależą od metody profilowania (próbkowania lub Instrumentacji), która została użyta do zbierania danych i czy dane pamięci platformy .NET zostały zebrane w ramach uruchomienia profilowania.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Widok funkcji](../profiling/functions-view-sampling-data.md)
 - [Widok funkcji](../profiling/functions-view-instrumentation-data.md)
 - [Widok funkcji-Instrumentacja](../profiling/functions-view-dotnet-memory-instrumentation-data.md)

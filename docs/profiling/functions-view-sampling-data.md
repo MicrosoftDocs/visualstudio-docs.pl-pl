@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: 029d5ebb-e551-46b0-b64e-2c553d9dbb8e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f30849ff7503d9301ee94408df0cd7b14f65fea
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: 82b48689b6348c7d003f5418224260b7939e907a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801249"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907359"
 ---
 # <a name="functions-view---sampling-data"></a>Widok funkcji — dane próbkowania
 Widok raport funkcji dla metody profilu próbkowania zawiera listę funkcji, które były próbkowane podczas przebiegu profilowania.
@@ -42,7 +42,7 @@ Widok raport funkcji dla metody profilu próbkowania zawiera listę funkcji, kt�
 |**Próbki wyłączne**|Całkowita liczba próbek zebranych podczas wykonywania kodu w treści tej funkcji; oznacza to, że gdy ta funkcja znajduje się w górnej części stosu wywołań. Próbki, które zostały zebrane w funkcjach, które zostały wywołane przez tę funkcję, nie są uwzględniane.|
 |**Wyłącznych próbek%**|Procent wszystkich próbek w przebiegu profilowania, które były wyłącznymi próbkami tej funkcji.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)
 - [Widok funkcji-Instrumentacja](../profiling/functions-view-dotnet-memory-instrumentation-data.md)
 - [Widok funkcji — próbkowanie](../profiling/functions-view-dotnet-memory-sampling-data.md)

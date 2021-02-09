@@ -11,16 +11,16 @@ helpviewer_keywords:
 - performance sessions, options
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: aaa6a222ca320ff9e8e3d117c2218e170d67d683
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 5652088b3b90c7dd9df067c81d8eb38fe348ec19
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98721856"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906870"
 ---
 # <a name="how-to-specify-additional-instrumentation-options"></a>Instrukcje: określanie dodatkowych opcji instrumentacji
 
@@ -41,7 +41,7 @@ Pliki binarne można instrumentować za pomocą środowiska IDE programu Visual 
 
 4. Kliknij przycisk **OK**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md) 
  [Profil z wiersza polecenia](../profiling/using-the-profiling-tools-from-the-command-line.md)

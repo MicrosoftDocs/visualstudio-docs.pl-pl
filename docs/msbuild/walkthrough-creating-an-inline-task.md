@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 438194cb-668c-41a9-a7e2-c118d14c1ea7
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d2d72745aebedb5dad5efc86d33804a51e36b762
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 7f8a4e39d38f81684b5d090152ec720d45438b3b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046634"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907456"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>Przewodnik: Tworzenie zadania wbudowanego
 
@@ -48,13 +48,13 @@ Aby utworzyć i uruchomić zadania, użyj programu Visual Studio i **okna wiersz
 
 #### <a name="to-create-and-modify-a-project-file"></a>Aby utworzyć i zmodyfikować plik projektu
 
-1. W programie Visual Studio Utwórz nowy projekt za pomocą szablonu **aplikacji Windows Forms** C#. W polu **Nazwa** wpisz `InlineTasks`. Wpisz **lokalizację** rozwiązania, na przykład *D: \\* . Upewnij się, że wybrano opcję **Utwórz katalog dla rozwiązania** , pole wyboru **Dodaj do kontroli źródła** jest wyczyszczone, a **Nazwa rozwiązania** to **InlineTasks** .
+1. W programie Visual Studio Utwórz nowy projekt za pomocą szablonu **aplikacji Windows Forms** C#. W polu **Nazwa** wpisz `InlineTasks`. Wpisz **lokalizację** rozwiązania, na przykład *D: \\*. Upewnij się, że wybrano opcję **Utwórz katalog dla rozwiązania** , pole wyboru **Dodaj do kontroli źródła** jest wyczyszczone, a **Nazwa rozwiązania** to **InlineTasks**.
 
 3. Kliknij przycisk **OK** , aby utworzyć plik projektu.
 
-3. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł projektu **InlineTasks** , a następnie kliknij pozycję **Zwolnij projekt** .
+3. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł projektu **InlineTasks** , a następnie kliknij pozycję **Zwolnij projekt**.
 
-4. Ponownie kliknij prawym przyciskiem myszy węzeł projektu, a następnie kliknij polecenie **Edytuj InlineTasks. csproj** .
+4. Ponownie kliknij prawym przyciskiem myszy węzeł projektu, a następnie kliknij polecenie **Edytuj InlineTasks. csproj**.
 
      Plik projektu pojawi się w edytorze kodu.
 
@@ -96,13 +96,13 @@ Aby utworzyć i uruchomić zadania, użyj programu Visual Studio i **okna wiersz
 
 ##### <a name="to-run-the-hello-task"></a>Aby uruchomić zadanie powitania
 
-1. Kliknij przycisk **Start** , kliknij pozycję **Wszystkie programy** , a następnie znajdź folder **Visual Studio Tools** i kliknij pozycję **wiersz polecenia programu Visual Studio** .
+1. Kliknij przycisk **Start**, kliknij pozycję **Wszystkie programy**, a następnie znajdź folder **Visual Studio Tools** i kliknij pozycję **wiersz polecenia programu Visual Studio**.
 
-2. W **oknie wiersza polecenia** Znajdź folder zawierający plik projektu, w tym przypadku *\\ D:\InlineTasks\InlineTasks* .
+2. W **oknie wiersza polecenia** Znajdź folder zawierający plik projektu, w tym przypadku *\\ D:\InlineTasks\InlineTasks*.
 
-3. Wpisz **MSBuild** bez przełączników polecenia, a następnie naciśnij klawisz **Enter** . Domyślnie program tworzy plik *InlineTasks. csproj* i przetwarza domyślny element docelowy TestBuild, który wywołuje zadanie powitania.
+3. Wpisz **MSBuild** bez przełączników polecenia, a następnie naciśnij klawisz **Enter**. Domyślnie program tworzy plik *InlineTasks. csproj* i przetwarza domyślny element docelowy TestBuild, który wywołuje zadanie powitania.
 
-4. Sprawdzanie danych wyjściowych w **oknie wiersza polecenia** . Powinien zostać wyświetlony następujący wiersz:
+4. Sprawdzanie danych wyjściowych w **oknie wiersza polecenia**. Powinien zostać wyświetlony następujący wiersz:
 
     `Hello, world!`
 
@@ -135,9 +135,9 @@ Aby utworzyć i uruchomić zadania, użyj programu Visual Studio i **okna wiersz
    </Target>
    ```
 
-2. W **oknie wiersza polecenia** wpisz **MSBuild** bez przełączników polecenia, a następnie naciśnij klawisz **Enter** . Domyślnie powoduje to przetwarzanie domyślnego TestBuild docelowego, który wywołuje zadanie echo.
+2. W **oknie wiersza polecenia** wpisz **MSBuild** bez przełączników polecenia, a następnie naciśnij klawisz **Enter**. Domyślnie powoduje to przetwarzanie domyślnego TestBuild docelowego, który wywołuje zadanie echo.
 
-3. Sprawdzanie danych wyjściowych w **oknie wiersza polecenia** . Powinien zostać wyświetlony następujący wiersz:
+3. Sprawdzanie danych wyjściowych w **oknie wiersza polecenia**. Powinien zostać wyświetlony następujący wiersz:
 
     `Greetings!`
 
@@ -172,9 +172,9 @@ Aby utworzyć i uruchomić zadania, użyj programu Visual Studio i **okna wiersz
    </Target>
    ```
 
-2. W **oknie wiersza polecenia** wpisz **MSBuild** bez przełączników polecenia, a następnie naciśnij klawisz **Enter** . Domyślnie powoduje to przetwarzanie domyślnego TestBuild docelowego, który wywołuje zadanie echo.
+2. W **oknie wiersza polecenia** wpisz **MSBuild** bez przełączników polecenia, a następnie naciśnij klawisz **Enter**. Domyślnie powoduje to przetwarzanie domyślnego TestBuild docelowego, który wywołuje zadanie echo.
 
-3. Sprawdzanie danych wyjściowych w **oknie wiersza polecenia** . Powinien zostać wyświetlony następujący wiersz:
+3. Sprawdzanie danych wyjściowych w **oknie wiersza polecenia**. Powinien zostać wyświetlony następujący wiersz:
 
     `The sum is 9`
 
@@ -228,9 +228,9 @@ Aby utworzyć i uruchomić zadania, użyj programu Visual Studio i **okna wiersz
    </Target>
    ```
 
-2. W **oknie wiersza polecenia** wpisz **MSBuild** bez przełączników polecenia, a następnie naciśnij klawisz **Enter** . Domyślnie powoduje to przetwarzanie domyślnego TestBuild docelowego, który wywołuje zadanie RegX.
+2. W **oknie wiersza polecenia** wpisz **MSBuild** bez przełączników polecenia, a następnie naciśnij klawisz **Enter**. Domyślnie powoduje to przetwarzanie domyślnego TestBuild docelowego, który wywołuje zadanie RegX.
 
-3. Sprawdzanie danych wyjściowych w **oknie wiersza polecenia** . Powinny zostać wyświetlone następujące wiersze:
+3. Sprawdzanie danych wyjściowych w **oknie wiersza polecenia**. Powinny zostać wyświetlone następujące wiersze:
 
    ```
    Input files: Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs

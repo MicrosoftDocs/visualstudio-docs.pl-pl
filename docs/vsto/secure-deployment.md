@@ -14,15 +14,15 @@ helpviewer_keywords:
 - ClickOnce deployment [Office development in Visual Studio], security
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b47a18aa3e791d446abc2a57b6aad1f139924ebf
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: c778ed98a3f5d17007acccd2f16208ece3237037
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528469"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906748"
 ---
 # <a name="secure-deployment"></a>Bezpieczne wdrożenie
   Podczas tworzenia rozwiązania pakietu Office komputer deweloperski zostanie automatycznie zaktualizowany, aby umożliwić uruchomienie kodu w projekcie. Jednak podczas wdrażania rozwiązania należy podać dowody, na których należy oprzeć decyzję zaufania, podpisywanie rozwiązania za pomocą certyfikatu lub przy użyciu [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] klucza monitu zaufania. Aby uzyskać więcej informacji, zobacz [udzielanie zaufania do rozwiązań pakietu Office](../vsto/granting-trust-to-office-solutions.md).

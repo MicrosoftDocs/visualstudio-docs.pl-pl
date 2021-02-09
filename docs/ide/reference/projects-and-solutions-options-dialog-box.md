@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 2801f24e-a138-488a-ae3c-e1f99a678ac0
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 01ee7e0da5fab8ceba2e5dc0642148033e2415da
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 2fab59a590b59452362a47d48bcdfa7dd8661f57
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616905"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907510"
 ---
 # <a name="options-dialog-box-projects-and-solutions--general"></a>Opcje — okno dialogowe: projekty i rozwiązania \> Ogólne
 
@@ -98,7 +98,7 @@ Jeśli ta opcja nie jest zaznaczona i chcesz edytować plik projektu w stylu zes
 
 ::: moniker-end
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Opcje — okno dialogowe: projekty i \> lokalizacje rozwiązań](projects-solutions-locations-options.md)
 - [Okno dialogowe Opcje, projekty i rozwiązania, kompilacja i uruchomienie](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)

@@ -11,16 +11,16 @@ helpviewer_keywords:
 ms.assetid: 9e0da706-6325-4073-83d1-aeab3b7c137a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b7cdfa6e64380c966b62d6691f73719a3034e2d
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: bb9e965fb1b863d7e5837fe45a5d832fadcbc5c7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722090"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907047"
 ---
 # <a name="how-to-serialize-symbol-information"></a>Instrukcje: Serializowanie informacji o symbolach
 Możesz serializować symbole, które muszą być potrzebne do analizowania aplikacji. Serializacja symboli dodaje symbole do. plik *VSP* . Przez dodanie informacji o symbolach do. plik *VSP* , inne mogą analizować raport wydajności bez dostępu do oryginalnych symboli. Jeśli symbole nie są serializowane, musisz mieć oryginalny instrument. *exe* i. pliki *PDB* do przeanalizowania. plik *VSP* .
@@ -35,7 +35,7 @@ Możesz serializować symbole, które muszą być potrzebne do analizowania apli
 
 3. W obszarze **Ustawienia ogólne** wybierz opcję **automatycznie serializować informacje o symbolach**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)
 - [Instrukcje: odwołania do informacji o symbolach w systemie Windows](../profiling/how-to-reference-windows-symbol-information.md)
 - [Instrukcje: zapisywanie przeanalizowanych plików raportów](/previous-versions/visualstudio/visual-studio-2010/bb763106\(v\=vs.100\))

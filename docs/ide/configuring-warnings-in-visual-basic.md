@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 99cf4781-bd4d-47b4-91b9-217933509f82
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cd5239c4fd01aefa247fc63a66af3e872dbecbb6
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: a59ee0e3aed10b5fd48fcbf57d9cb69aca3f929e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006409"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907643"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Konfigurowanie ostrzeżeń w Visual Basic
 
@@ -119,7 +119,7 @@ Generowane, gdy `Catch` blok nigdy nie został osiągnięty ze względu na jego 
 
 IDENTYFIKATOR: 42029, 42031
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Typy błędów](/dotnet/visual-basic/programming-guide/language-features/error-types)
 - [Spróbuj... Catch... Finally — instrukcja](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)

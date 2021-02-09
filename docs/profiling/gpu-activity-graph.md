@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: d7c769af-95fb-49a3-b5ab-deafecee46fa
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bccf4869a1197306017b443b00670cc123300a48
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: 46f3e4ce7f155679bc3c701af90ff51e0fb20239
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801326"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907281"
 ---
 # <a name="gpu-activity-graph"></a>Wykres aktywności procesora GPU
 Wykres aktywności procesora GPU w programie Concurrency Visualizer wyświetla poziom aktywności DirectX w systemie mierzony przez liczbę aparatów DirectX, które są używane w miarę upływu czasu.  Wykres nie pokazuje, które konkretne aparaty zostały użyte.  Aparat jest uznawany za używany, jeśli przetwarza wszystkie działania procesora GPU.
@@ -29,5 +29,5 @@ Wykres aktywności procesora GPU w programie Concurrency Visualizer wyświetla p
 
  Kolor biały wskazuje dostępność nieużywanych aparatów DirectX w systemie. Te aparaty są dostępne dla procesu, jeśli znajdziesz więcej możliwości ich wykorzystania. Niektóre aparaty mogą być używane tylko dla określonych rodzajów zadań.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Widok wykorzystania](../profiling/utilization-view.md)

@@ -6,16 +6,16 @@ ms.topic: how-to
 ms.assetid: d7a8d6b9-ab23-46fb-98ed-774781157860
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6dce666121214bef7d844bae2735a284589463ee
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 110199375aef4f4a1168c761a5dad9d77da215b6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722051"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906998"
 ---
 # <a name="how-to-set-performance-data-file-name-options"></a>Instrukcje: ustawianie opcji nazwy pliku danych wydajności
 
