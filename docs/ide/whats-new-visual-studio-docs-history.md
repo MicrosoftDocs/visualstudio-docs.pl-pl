@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 511DAFC7-896E-449A-BFF7-0E8F7BBA8A78
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 899334e6ac4a952ea2d33f01d95ecfbe0a972653
-ms.sourcegitcommit: 55bc9df751a21656de8cc5b6dbd8a2a1915ec690
+ms.openlocfilehash: 178c84be9def77e013da336193877617c1434b2e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99572970"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960536"
 ---
 # <a name="history-of-whats-new-in-visual-studio-docs"></a>Historia nowości w dokumentacji programu Visual Studio
 
@@ -80,7 +80,7 @@ Witamy w historii nowości w dokumentacji programu Visual Studio. Ten artykuł z
   - Aktualizacja tutorial-projects-solutions.md
   - Brak opcji w menu
 
-### <a name="test"></a>Test
+### <a name="test"></a>Testowanie
 
 **Zaktualizowane artykuły**
 
@@ -216,7 +216,7 @@ Witamy w historii nowości w dokumentacji programu Visual Studio. Ten artykuł z
 
 - [Mierzenie wydajności aplikacji z wiersza polecenia](../profiling/profile-apps-from-command-line.md) — aktualizowanie profilowania z poziomu dokumentów z wiersza polecenia
 
-### <a name="test"></a>Test
+### <a name="test"></a>Testowanie
 
 **Zaktualizowane artykuły**
 
@@ -555,7 +555,7 @@ Witamy w historii nowości w dokumentacji programu Visual Studio. Ten artykuł z
 - [Typowe metadane elementu MSBuild](../msbuild/common-msbuild-item-metadata.md) — MSBuild: Dodawanie tabeli dla opcjonalnych metadanych przy użyciu linku i bazy łączy
 - [Filtry rozwiązań w programie MSBuild](../msbuild/solution-filters.md) — filtry rozwiązań MSBuild
 
-### <a name="test"></a>Test
+### <a name="test"></a>Testowanie
 
 **Nowe artykuły**
 

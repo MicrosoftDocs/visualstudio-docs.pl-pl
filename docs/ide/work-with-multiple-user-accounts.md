@@ -6,15 +6,15 @@ ms.date: 11/16/2020
 ms.topic: conceptual
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 071c6061417e26b45e5f9e67bc6ac1001bf08530
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 169415537460dae94ca844c426bb3770449161b5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480346"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960458"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Praca z wieloma kontami użytkowników
 
@@ -85,7 +85,7 @@ Aby uzyskać więcej informacji, zobacz [nawiązywanie połączenia z projektami
 
 Aby dodać dodatkowe konto do programu Visual Studio:
 
-1. Wybierz **File** pozycję  >  **Ustawienia konta** pliku.
+1. Wybierz pozycję  >  **Ustawienia konta** pliku.
 
 1. W obszarze **wszystkie konta** wybierz pozycję **Dodaj konto**.
 
@@ -101,7 +101,7 @@ Aby zalogować się za pomocą przepływu kodu urządzenia:
 
 1. Otwórz stronę [**konta**](reference/accounts-environment-options-dialog-box.md) w obszarze **Narzędzia**  >  **Opcje**  >  **środowisko**, a następnie wybierz pozycję **Włącz przepływ kodu urządzenia podczas dodawania lub ponownego uwierzytelniania konta**. Wybierz **przycisk OK** , aby zamknąć strony Opcje.
 
-1. Wybierz **File** pozycję  >  **Ustawienia konta** pliku, aby otworzyć stronę Zarządzanie kontem.
+1. Wybierz pozycję  >  **Ustawienia konta** pliku, aby otworzyć stronę Zarządzanie kontem.
 
 1. Wybierz pozycję **Dodaj konto** w obszarze **wszystkie konta**.
 

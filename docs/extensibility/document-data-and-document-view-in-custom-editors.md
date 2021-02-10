@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 71eea623-f566-4feb-84cd-ca1ba71bc493
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 576b195663f379b1f2fd327ce6a8806ddb43deda
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 89f2903b2ec1308692f629c40af06f89706a427b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994878"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968297"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Dane dokumentu i widok dokumentu w edytorach niestandardowych
 Edytor niestandardowy składa się z dwóch części: obiektu danych dokumentu i obiektu widoku dokumentu. Jak nazwy sugerują, obiekt danych dokumentu reprezentuje dane tekstowe do wyświetlenia. Analogicznie, obiekt widoku dokumentu (lub "widok") reprezentuje jedno lub więcej okien, w których ma zostać wyświetlony obiekt danych dokumentu.

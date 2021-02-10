@@ -6,16 +6,16 @@ ms.topic: conceptual
 description: Dowiedz się, jak używać programu Visual Studio z kontami usługi GitHub.
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 845b663a3a0828806766fa0609e45efafabec50a
-ms.sourcegitcommit: e8a13978131f257d91ce37c5a2e0d153a4c400ef
+ms.openlocfilehash: 9da0f2c2df796f50530f19252c7236c2bb606a10
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94704034"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960484"
 ---
 # <a name="work-with-github-accounts-in-visual-studio"></a>Praca z kontami usługi GitHub w programie Visual Studio
 
@@ -25,7 +25,7 @@ Jeśli masz publiczne konto w serwisie GitHub lub GitHub Enterprise, możesz je 
 
 Możesz dodać swoje publiczne konto usługi GitHub, jeśli użytkownik jest już zalogowany do programu Visual Studio przy użyciu konto Microsoft lub konta służbowego.
 
-1. Wybierz ikonę z inicjałami w prawym górnym rogu środowiska programu Visual Studio. Następnie wybierz pozycję **Ustawienia konta..** ., aby zarządzać kontami. Możesz również otworzyć okno dialogowe Ustawienia konta, przechodząc do **File**  >  **ustawień konta** pliku.
+1. Wybierz ikonę z inicjałami w prawym górnym rogu środowiska programu Visual Studio. Następnie wybierz pozycję **Ustawienia konta..** ., aby zarządzać kontami. Możesz również otworzyć okno dialogowe Ustawienia konta, przechodząc do   >  **ustawień konta** pliku.
 
     :::image type="content" source="../ide/media/account-picker.png" alt-text="Ustawienia konta":::
 
@@ -41,7 +41,7 @@ Możesz dodać swoje publiczne konto usługi GitHub, jeśli użytkownik jest ju�
 
     :::image type="content" source="../ide/media/show-both-accounts.png" alt-text="Wyświetlane są oba konta":::
 
-Jeśli jeszcze nie zalogowano się do programu Visual Studio przy użyciu innego konta, wybierz link **Zaloguj** w prawym górnym rogu środowiska programu Visual Studio. Możesz również otworzyć okno dialogowe Ustawienia konta, przechodząc do **File**  >  **ustawień konta** pliku. Następnie postępuj zgodnie z powyższymi instrukcjami, aby dodać konto usługi GitHub.
+Jeśli jeszcze nie zalogowano się do programu Visual Studio przy użyciu innego konta, wybierz link **Zaloguj** w prawym górnym rogu środowiska programu Visual Studio. Możesz również otworzyć okno dialogowe Ustawienia konta, przechodząc do   >  **ustawień konta** pliku. Następnie postępuj zgodnie z powyższymi instrukcjami, aby dodać konto usługi GitHub.
 
 ![Użytkownik niezalogowany](../ide/media/vs2019_usernotsignedin.png)
 
@@ -49,7 +49,7 @@ Jeśli jeszcze nie zalogowano się do programu Visual Studio przy użyciu innego
 
 Domyślnie program Visual Studio ma włączone publiczne konta serwisu GitHub.
 
-1. Aby włączyć konta w usłudze GitHub Enterprise, **Tools** przejdź do  >  **opcji** narzędzia i Wyszukaj opcje **konta** .
+1. Aby włączyć konta w usłudze GitHub Enterprise, przejdź do  >  **opcji** narzędzia i Wyszukaj opcje **konta** .
 
     :::image type="content" source="../ide/media/accounts-options.png" alt-text="Menu Opcje kont":::
 
@@ -59,7 +59,7 @@ Domyślnie program Visual Studio ma włączone publiczne konta serwisu GitHub.
 
 3. Po wprowadzeniu adresu serwera w witrynie GitHub Enterprise wybierz pozycję **Zaloguj się za pomocą przeglądarki**. W tym miejscu możesz zalogować się przy użyciu poświadczeń przedsiębiorstwa usługi GitHub.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Praca z wieloma kontami użytkowników](work-with-multiple-user-accounts.md)
 - [Logowanie do programu Visual Studio](signing-in-to-visual-studio.md)

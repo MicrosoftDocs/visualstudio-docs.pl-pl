@@ -1,7 +1,7 @@
 ---
 title: Dostępne narzędzia
 description: Lista wszystkich narzędzi devinit, których można użyć do dostosowania środowiska programistycznego.
-ms.date: 12/02/2020
+ms.date: 02/08/2021
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 1a90b66e38a09e0de0c7fd374938f55a93789295
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3e725cea2e668158b26cde102d42082fdc269069
+ms.sourcegitcommit: e262f4c2a147c3fa2d27de666aae3a0497317867
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925331"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "100006411"
 ---
 # <a name="available-tools"></a>Dostępne narzędzia
 
@@ -44,9 +44,11 @@ Poniższa tabela zawiera listę wszystkich dostępnych narzędzi dla devinit.
 | [**require-psmodule**](tool-require-psmodule.md)                                                 | Narzędzie do instalowania modułów programu PowerShell z galerii.                                                        |
 | [**require-vcpkg**](tool-require-vcpkg.md)                                                       | Narzędzie do instalowania vcpkg.                                                                                      |
 | [**require-vscomponent**](tool-require-vscomponent.md)                                           | Narzędzie do modyfikowania instalacji programu VS w oparciu o `.vsconfig` plik.                                                |
+| [**Wymagaj — Winget**](tool-require-winget.md)                                                     | Narzędzie do instalowania Winget.                                                                                     |
 | [**windowsfeature-enable**](tool-windowsfeature-enable.md)                                       | Zestaw narzędzi Włącz funkcje systemu Windows.                                                                           |
 | [**windowsfeature-disable**](tool-windowsfeature-disable.md)                                     | Zestaw narzędzi wyłącz funkcje systemu Windows.                                                                          |
-| [**windowsfeature-list**](tool-windowsfeature-list.md)                                           | Narzędzie do wyświetlania stanu Włącz/Wyłącz dla wszystkich funkcji systemu Windows.                                                                        |
+| [**windowsfeature-list**](tool-windowsfeature-list.md)                                           | Narzędzie do wyświetlania stanu Włącz/Wyłącz dla wszystkich funkcji systemu Windows.                                              |
 | [**set-env**](tool-set-env.md)                                                                   | Narzędzie do wyświetlania i ustawiania zmiennych środowiskowych.                                                                 |
 | [**vcpkg-install**](tool-vcpkg-install.md)                                                       | Narzędzie do instalowania pakietów za pośrednictwem vcpkg.                                                                         |
+| [**Winget — Zainstaluj**](tool-winget-install.md)                                                     | Narzędzie do instalowania pakietów za pośrednictwem Winget.                                                                        |
 | [**wsl-install**](tool-wsl-install.md)                                                           | Narzędzie do instalowania i konfigurowania dystrybucje systemu Linux dla podsystemu Window dla systemu Linux.                             |

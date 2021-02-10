@@ -16,15 +16,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], updating entity instances
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9d06737de7df40efa2bc6259cc0ea53bdda17b8c
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: fff7083305d4e19495b81525c8a67a42c5ff6c70
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915378"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967504"
 ---
 # <a name="how-to-add-an-updater-method"></a>Instrukcje: Dodawanie metody Aktualizator
   Można umożliwić użytkownikom aktualizowanie danych firmowych na liście zewnętrznej programu SharePoint, tworząc metodę *Aktualizator* . Aby uzyskać więcej informacji, zobacz [Projektowanie modelu łączności danych firmowych](../sharepoint/designing-a-business-data-connectivity-model.md).

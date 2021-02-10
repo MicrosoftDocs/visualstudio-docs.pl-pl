@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: 7bce69e2-407c-4342-8516-641586968928
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: f21974ad59951290123a3a89f68b6f326a6e2057
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: 328a75b6502cd0e825b6d954a88ef97c8ef48ff1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98533813"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960301"
 ---
 # <a name="collect-net-framework-memory-data-by-using-the-profiler-command-line"></a>Zbieranie danych pamięci .NET Framework przy użyciu wiersza polecenia profilera
 
@@ -51,5 +51,5 @@ W tej sekcji opisano procedury i opcje zbierania danych alokacji pamięci i okre
 ### <a name="analyze-net-memory-data-views-and-reports"></a>Analizowanie widoków i raportów danych pamięci .NET
 - [Widoki danych pamięci .NET](../profiling/dotnet-memory-data-views.md)
 
-## <a name="reference"></a>Tematy pomocy
+## <a name="reference"></a>Dokumentacja
 - [Narzędzia profilowania wiersza polecenia — dokumentacja](../profiling/command-line-profiling-tools-reference.md)

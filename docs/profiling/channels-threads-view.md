@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 2f798c17-2363-42a4-be94-a5751d208eac
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a4ed0a82ad7ddb67cacde2a09f595d0c9250710
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 135796b09689915d81132abb4f8f36888b64f393
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148614"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960290"
 ---
 # <a name="channels-threads-view"></a>Kanały (Widok wątków)
 Wizualizator współbieżności pokazuje cztery rodzaje kanałów: kanały wątku, kanały dysków, kanały znaczników i kanały GPU.
@@ -49,5 +49,5 @@ Wizualizator współbieżności pokazuje cztery rodzaje kanałów: kanały wątk
 ## <a name="gpu-channels"></a>Kanały procesora GPU
  Kanały procesora GPU zawierają informacje o aktywności DirectX 11 w systemie.  Każdy aparat DirectX skojarzony z kartą graficzną ma oddzielny kanał.  Poszczególne segmenty reprezentują czas spędzony na przetwarzaniu pakietu DMA.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Widok wątków](../profiling/threads-view-parallel-performance.md)

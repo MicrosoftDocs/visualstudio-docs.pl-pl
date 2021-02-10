@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a3c0386d-551e-4734-9a0c-368d1c2e6671
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 215256cbbcff45dfa0b85a480f0900e6f8ddfa71
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 9bf2e154d5803324161e073edbd74e049c0897ca
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996035"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960692"
 ---
 # <a name="supported-event-types"></a>Obsługiwane typy zdarzeń
 Debugowanie programu Visual Studio obsługuje obecnie następujące typy zdarzeń:
@@ -55,7 +55,7 @@ Debugowanie programu Visual Studio obsługuje obecnie następujące typy zdarze�
 > [!NOTE]
 > Interfejs [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md) jest wymagany dla wszystkich zdarzeń.
 
-|Wydarzenie|IDebugProgram2|IDebugThread2|Zatrzymywanie zdarzeń|
+|Zdarzenie|IDebugProgram2|IDebugThread2|Zatrzymywanie zdarzeń|
 |-----------|--------------------|-------------------|---------------------|
 |[IDebugActivateDocumentEvent2](../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)|Dozwolone, ale niewymagane|Dozwolone, ale niewymagane|Nie|
 |[IDebugBreakEvent2](../../extensibility/debugger/reference/idebugbreakevent2.md)|Wymagane|Wymagane|Tak|

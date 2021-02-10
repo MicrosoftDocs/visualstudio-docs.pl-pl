@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: b5e439d4-1e9d-4e13-9cad-bb8b136d4ca8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab2c891002ad90d767a4c5ca9efffd3f3d1d10ee
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 97adb5d453e147c45ae1f268a20a2d3091286508
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845209"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960731"
 ---
 # <a name="stack-frames"></a>Ramki stosu
 W architekturze debugera, *Ramka stosu*:
@@ -32,7 +32,7 @@ W architekturze debugera, *Ramka stosu*:
 
 - Jest reprezentowany przez interfejs [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md) , zwykle tworzony przez aparat debugowania (de) lub maszynę wirtualną w ramach wykonywania wątku.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Konteksty debugera](../../extensibility/debugger/debugger-contexts.md)
 - [Pojęcia dotyczące debugera](../../extensibility/debugger/debugger-concepts.md)
 - [Aparat debugowania](../../extensibility/debugger/debug-engine.md)

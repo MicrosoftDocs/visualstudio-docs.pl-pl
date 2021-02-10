@@ -12,12 +12,12 @@ author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: e58a9c6477568843141a73ece002d1911280d7ab
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e7e7672ca93c47370f746358203c37826a1b3ad3
+ms.sourcegitcommit: e262f4c2a147c3fa2d27de666aae3a0497317867
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916456"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "100006426"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Izolowanie testowanego kodu za pomocą struktury Microsoft Fakes
 
@@ -36,7 +36,7 @@ Podróbki występują w dwóch wersjach:
 - Visual Studio Enterprise
 - Projekt .NET Framework
 ::: moniker range=">=vs-2019"
-- Obsługa projektu w stylu .NET Core i zestawu SDK w programie Visual Studio 2019 Update 6 i jest włączona domyślnie w wersji Update 8. Aby uzyskać więcej informacji, zobacz artykuły [firmy Microsoft dla projektów .NET Core i SDK](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects).
+- Obsługa projektu .NET Core, .NET 5,0 i zestawu SDK w wersji zapoznawczej w programie Visual Studio 2019 Update 6 i jest włączona domyślnie w wersji Update 8. Aby uzyskać więcej informacji, zobacz artykuły [firmy Microsoft dla projektów .NET Core i SDK](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects).
 ::: moniker-end
 
 > [!NOTE]
@@ -88,7 +88,7 @@ Aby uzyskać bardziej szczegółowy opis, zobacz [Używanie wycinków do izolowa
    1. W **Eksplorator rozwiązań**, 
        - W przypadku starszego projektu .NET Framework (styl inny niż zestaw SDK) rozwiń węzeł **odwołania** projektu testów jednostkowych.
        ::: moniker range=">=vs-2019"
-       - W przypadku projektu w stylu zestawu SDK .NET Framework lub .NET Core rozwiń węzeł **zależności** , aby znaleźć zestaw, który ma zostać sfałszowany w ramach **zestawów**, **projektów** lub **pakietów**.
+       - W przypadku projektu w stylu zestawu SDK .NET Framework, .NET Core lub .NET 5,0 rozwiń węzeł **zależności** , aby znaleźć zestaw, który ma zostać sfałszowany w ramach **zestawów**, **projektów** lub **pakietów**.
        ::: moniker-end
        - Jeśli pracujesz w Visual Basic, wybierz pozycję **Pokaż wszystkie pliki** na **Eksplorator rozwiązań** pasku narzędzi, aby wyświetlić węzeł **odwołania** .
    2. Wybierz zestaw, który zawiera definicje klas, dla których chcesz utworzyć podkładki. Na przykład, jeśli chcesz określić **datę i godzinę** dla podkładki, wybierz pozycję **System.dll**.
@@ -269,21 +269,21 @@ Ponieważ fałszywe firmy Microsoft wymagają Visual Studio Enterprise, generacj
 </Project>
 ```
 
-To odwołanie jest wymagane do dodania w ręcznie określonych projektach w stylu zestawu SDK (.NET Core i .NET Framework), ponieważ zostały przeniesione do niejawnie dodawane odwołań do zestawu do projektu testowego. Jeśli korzystasz z tej metody, musisz się upewnić, że zestaw elementów sztucznych zostanie zaktualizowany po zmianie zestawu nadrzędnego.
+To odwołanie jest wymagane do dodania w ręcznie określonych projektach w stylu zestawu SDK (.NET Core, .NET 5,0 i .NET Framework), ponieważ zostały przeniesione do niejawnie dodawane odwołań do zestawu do projektu testowego. Jeśli korzystasz z tej metody, musisz się upewnić, że zestaw elementów sztucznych zostanie zaktualizowany po zmianie zestawu nadrzędnego.
 ::: moniker-end
 
 ### <a name="running-microsoft-fakes-tests"></a>Uruchamianie testów sztucznych firmy Microsoft
 Tak długo, jak zestawy sztuczne firmy Microsoft znajdują się w skonfigurowanym `FakesAssemblies` katalogu (ustawienie domyślne `$(ProjectDir)FakesAssemblies` ), można uruchomić testy przy użyciu [zadania VSTest](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops&preserve-view=true).
 
 ::: moniker range=">=vs-2019"
-Testowanie rozproszone z projektami [VSTest zadania](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops&preserve-view=true) .NET Core przy użyciu elementów sztucznych firmy Microsoft wymaga programu Visual Studio 2019 Update 9 (wersja zapoznawcza) `20201020-06` lub nowszego.
+Testowanie rozproszone z projektami [VSTest zadania](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops&preserve-view=true) .NET Core i .NET 5,0 przy użyciu elementów sztucznych firmy Microsoft wymaga programu Visual Studio 2019 Update 9 (wersja zapoznawcza) `20201020-06` lub nowszego.
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
-## <a name="transitioning-your-net-framework-test-projects-that-use-microsoft-fakes-to-sdk-style-net-framework-or-net-core-projects"></a>Przechodzenie do .NET Framework projektów testowych, które korzystają z elementów sztucznych firmy Microsoft do .NET Framework w stylu zestawu SDK programu .NET Core
-Konieczne będzie wprowadzenie minimalnych zmian w .NET Framework skonfigurowanych dla elementów sztucznych firmy Microsoft do przejścia na platformę .NET Core. Należy wziąć pod uwagę następujące przypadki:
+## <a name="transitioning-your-net-framework-test-projects-that-use-microsoft-fakes-to-sdk-style-net-framework-net-core-or-net-50-projects"></a>Przechodzenie do .NET Framework projektów testowych, które korzystają z elementów sztucznych firmy Microsoft do .NET Framework w stylu zestawu SDK, platformy .NET Core lub .NET 5,0
+Konieczne będzie wprowadzenie minimalnych zmian w .NET Framework skonfigurowanych dla elementów sztucznych firmy Microsoft w celu przejścia do platformy .NET Core lub .NET 5,0. Należy wziąć pod uwagę następujące przypadki:
 - Jeśli używasz niestandardowego szablonu projektu, musisz upewnić się, że jest to zestaw SDK i kompilacja dla zgodnej platformy docelowej.
-- Niektóre typy istnieją w różnych zestawach w .NET Framework i .NET Core (na przykład `System.DateTime` istnieje w `System` / `mscorlib` .NET Framework, i w `System.Runtime` programie .NET Core), a w tych scenariuszach należy zmienić sposób, w jaki ma zostać zmieniony.
+- Niektóre typy istnieją w różnych zestawach w .NET Framework i .NET Core/. NET 5,0 (na przykład `System.DateTime` istnieje w `System` / `mscorlib` .NET Framework, a w programie `System.Runtime` .NET Core i .NET 5,0) i w tych scenariuszach należy zmienić sposób, w jaki ma zostać zmieniony.
 - Jeśli masz odwołanie do zestawu elementów sztucznych i projektu testowego, może zostać wyświetlone ostrzeżenie kompilacji dotyczące brakujących odwołań podobne do:
   ```
   (ResolveAssemblyReferences target) ->
@@ -299,12 +299,12 @@ Konieczne będzie wprowadzenie minimalnych zmian w .NET Framework skonfigurowany
 - Testy sztuczne firmy Microsoft mogą działać ze wszystkimi dostępnymi pakietami NuGet Microsoft. TestPlatform.
 - Pokrycie kodu jest obsługiwane dla projektów testowych korzystających z elementów sztucznych firmy Microsoft w Visual Studio Enterprise 2015 i wyższych.
 
-### <a name="microsoft-fakes-in-sdk-style-net-framework-and-net-core-projects"></a>Sztuczne firmy Microsoft w .NET Framework w stylu zestawu SDK i projekty .NET Core
+### <a name="microsoft-fakes-in-sdk-style-net-framework-net-core-and-net-50-projects"></a>Sztuczne firmy Microsoft w stylu zestawu SDK .NET Framework, .NET Core i .NET 5,0
 - Firma Microsoft sztuczna generacja zestawu, która jest wyświetlana w Visual Studio Enterprise 2019 Update 6 i jest domyślnie włączona w wersji Update 8.
 - Testy sztuczne firmy Microsoft dla projektów, które są przeznaczone .NET Framework mogą działać ze wszystkimi dostępnymi pakietami NuGet Microsoft. TestPlatform.
-- Testy sztuczne firmy Microsoft dla projektów przeznaczonych dla platformy .NET Core mogą działać z pakietami NuGet Microsoft. TestPlatform z wersjami [16.8.0-Preview-20200921-01](https://www.nuget.org/packages/Microsoft.TestPlatform/16.8.0-preview-20200921-01) i nowszymi.
+- Testy sztuczne firmy Microsoft dla projektów przeznaczonych dla platformy .NET Core i .NET 5,0 mogą działać z pakietami NuGet Microsoft. TestPlatform z wersjami [16.9.0-Preview-20210106-01](https://www.nuget.org/packages/Microsoft.TestPlatform/16.9.0-preview-20210106-01) i nowszymi.
 - Pokrycie kodu jest obsługiwane dla projektów testowych przeznaczonych dla .NET Framework przy użyciu elementów sztucznych firmy Microsoft w Visual Studio Enterprise w wersji 2015 lub nowszej.
-- Obsługa pokrycia kodu dla projektów testowych przeznaczonych dla platformy .NET Core przy użyciu elementów sztucznych firmy Microsoft jest w fazie projektowania.
+- Obsługa pokrycia kodu dla projektów testowych przeznaczonych dla platform .NET Core i .NET 5,0 przy użyciu sztucznych firmy Microsoft jest dostępna w programie Visual Studio 2019 Update 9 lub nowszym.
 
 
 ## <a name="in-this-section"></a>W tej sekcji

@@ -11,19 +11,19 @@ helpviewer_keywords:
 ms.assetid: 7307e180-ba28-4774-8a43-cbb980085a71
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: ab0d5cc497709a690c88b16771f2c12651e5aed0
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 3b2654622f9cb4de05068b58570ab1494c2a3f34
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668667"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960653"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Co nowego w programie Visual Studio 2017
 
@@ -383,7 +383,7 @@ Jeśli chcesz dowiedzieć się, jak możemy ulepszyć program Visual Studio, lub
 
 Czasami komunikat jest zbyt mały, aby przekazać pełny wpływ napotkanego problemu. Jeśli wystąpi problem polegający na tym, że program Visual Studio przestaje odpowiadać, ulega awarii lub innym problemom z wydajnością, można łatwo udostępniać Odtwórz kroki i pliki pomocnicze (takie jak zrzuty ekranu, pliki śledzenia i Zrzuty sterty) za pomocą narzędzia **Zgłoś problem** . Aby uzyskać więcej informacji na temat korzystania z tego narzędzia, zobacz stronę [Jak zgłosić problem](how-to-report-a-problem-with-visual-studio.md) .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [Informacje o wersji programu Visual Studio 2017](/visualstudio/releasenotes/vs2017-relnotes)
 * [Co nowego w zestawie Visual Studio 2017 SDK](../extensibility/what-s-new-in-the-visual-studio-2017-sdk.md)

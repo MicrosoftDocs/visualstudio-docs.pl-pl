@@ -10,12 +10,12 @@ author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 4bf43fa5dd3e95500b036d5ef5d65055b5d5870f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f15af6958c7f5855b5005fc0a6aa4c821346ccb5
+ms.sourcegitcommit: e262f4c2a147c3fa2d27de666aae3a0497317867
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946283"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "100006403"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>Używanie podkładki do izolowania aplikacji do testów jednostkowych
 
@@ -30,7 +30,7 @@ Aby zapoznać się z omówieniem i "Szybki Start", zobacz [Izolowanie testowaneg
 - Visual Studio Enterprise
 - Projekt .NET Framework
 ::: moniker range=">=vs-2019"
-- Obsługa projektu w stylu .NET Core i zestawu SDK w programie Visual Studio 2019 Update 6 i jest włączona domyślnie w wersji Update 8. Aby uzyskać więcej informacji, zobacz artykuły [firmy Microsoft dla projektów .NET Core i SDK](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects).
+- Obsługa projektu .NET Core, .NET 5,0 i zestawu SDK w wersji zapoznawczej w programie Visual Studio 2019 Update 6 i jest włączona domyślnie w wersji Update 8. Aby uzyskać więcej informacji, zobacz artykuły [firmy Microsoft dla projektów .NET Core i SDK](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects).
 ::: moniker-end
 
 ## <a name="example-the-y2k-bug"></a>Przykład: Usterka Y2K
@@ -71,7 +71,7 @@ Najpierw Dodaj zestaw elementów sztucznych:
 1. W **Eksplorator rozwiązań**, 
     - W przypadku starszego projektu .NET Framework (styl inny niż zestaw SDK) rozwiń węzeł **odwołania** projektu testów jednostkowych.
     ::: moniker range=">=vs-2019"
-    - W przypadku projektu w stylu zestawu SDK .NET Framework lub .NET Core rozwiń węzeł **zależności** , aby znaleźć zestaw, który ma zostać sfałszowany w ramach **zestawów**, **projektów** lub **pakietów**.
+    - W przypadku projektu w stylu zestawu SDK .NET Framework, .NET Core lub .NET 5,0 rozwiń węzeł **zależności** , aby znaleźć zestaw, który ma zostać sfałszowany w ramach **zestawów**, **projektów** lub **pakietów**.
     ::: moniker-end
     - Jeśli pracujesz w Visual Basic, wybierz pozycję **Pokaż wszystkie pliki** na **Eksplorator rozwiązań** pasku narzędzi, aby wyświetlić węzeł **odwołania** .
 
@@ -524,7 +524,7 @@ System.Fakes.ShimEnvironment.GetCommandLineArgsGet = ...
 
 ## <a name="limitations"></a>Ograniczenia
 
-Podkładki nie mogą być używane dla wszystkich typów z biblioteki klas bazowych .NET **mscorlib** i **system** w .NET Framework, a w programie **System. Runtime** w programie .NET Core.
+Podkładki nie mogą być używane dla wszystkich typów z biblioteki klas bazowych .NET **mscorlib** i **system** w .NET Framework, a w programie **System. Runtime** w programie .NET Core lub .NET 5,0.
 
 ## <a name="see-also"></a>Zobacz też
 

@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: fbb1928d-dddc-43d1-98a4-e23b0ecbae09
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2c51b1fd345789cabbb9735621626ab7c2db993
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: d67716f78249bda5d316ffde175b80f4ef1c1e45
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845287"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960783"
 ---
 # <a name="session-debug-manager"></a>Menedżer debugowania sesji
 Menedżer debugowania sesji (SDM) zarządza dowolną liczbą aparatów debugowania (DE), które są debugowaniem dowolnej liczby programów w wielu procesach na dowolnej liczbie maszyn. Oprócz jako multiplekser aparatu debugowania model SDM zapewnia ujednolicony widok sesji debugowania do IDE.
@@ -38,7 +38,7 @@ Menedżer debugowania sesji (SDM) zarządza dowolną liczbą aparatów debugowan
 
  Model SDM nie śledzi bieżącego programu, wątku lub ramki stosu. Informacje o procesie, programie i wątku są wysyłane do modelu SDM w połączeniu z określonymi zdarzeniami debugowania.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Aparat debugowania](../../extensibility/debugger/debug-engine.md)
 - [Składniki debugera](../../extensibility/debugger/debugger-components.md)
 - [Konteksty debugera](../../extensibility/debugger/debugger-contexts.md)

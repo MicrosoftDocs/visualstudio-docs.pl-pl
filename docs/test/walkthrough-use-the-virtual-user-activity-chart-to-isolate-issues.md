@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: d1c10fb9-cfeb-4e7f-9991-2d1e1103699e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 7f87542e528b743fa59dfe82aa52a57f1a9cfa2c
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+manager: jmartens
+ms.openlocfilehash: afe692a8333ff93f764a308bae2c1366e353b4a8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598240"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967933"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Przewodnik: używanie wykresu aktywności wirtualnego użytkownika w celu wyizolowania problemów
 
@@ -95,7 +95,7 @@ Po uruchomieniu testu obciążenia i zebraniu danych o aktywności użytkownika 
 
     - **Czas trwania**
 
-    - **Agent**
+    - **Odczynnik**
 
     - **Dziennik testu**
 
@@ -105,7 +105,7 @@ Po uruchomieniu testu obciążenia i zebraniu danych o aktywności użytkownika 
 
      Aby ułatwić izolowanie problemów z wydajnością oraz błędy w testach obciążenia, można użyć różnych ustawień zarówno w **legendzie szczegółów** , jak i w panelu **wyników filtrowania** . Eksperymentuj z tymi ustawieniami oraz narzędziem **Powiększ do okresu** , aby zobaczyć, jak dane użytkownika wirtualnego są prezentowane na **wykresie aktywności wirtualnego użytkownika**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Analizowanie aktywności wirtualnego użytkownika w widoku szczegółów](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
 - [Kontrolerzy testów i agenci testowi](configure-test-agents-and-controllers-for-load-tests.md)

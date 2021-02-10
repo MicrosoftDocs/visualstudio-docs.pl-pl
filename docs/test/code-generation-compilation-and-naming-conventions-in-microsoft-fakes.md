@@ -5,16 +5,16 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e3ebb1439c7b8eb958d8e7126ca0197462e89a09
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: ecba59e633bf6d456f16e6098f47719e052ac0de
+ms.sourcegitcommit: e262f4c2a147c3fa2d27de666aae3a0497317867
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441636"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "100006361"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Konwencje dotyczące generowania, kompilowania i nazywania w Microsoft Fakes
 
@@ -25,7 +25,7 @@ W tym artykule omówiono opcje i problemy związane z generowaniem kodu i kompil
 - Visual Studio Enterprise
 - Projekt .NET Framework
 ::: moniker range=">=vs-2019"
-- Obsługa projektu w stylu .NET Core i zestawu SDK w programie Visual Studio 2019 Update 6 i jest włączona domyślnie w wersji Update 8. Aby uzyskać więcej informacji, zobacz artykuły [firmy Microsoft dla projektów .NET Core i SDK](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects).
+- Obsługa projektu .NET Core, .NET 5,0 i zestawu SDK w wersji zapoznawczej w programie Visual Studio 2019 Update 6 i jest włączona domyślnie w wersji Update 8. Aby uzyskać więcej informacji, zobacz artykuły [firmy Microsoft dla projektów .NET Core i SDK](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects).
 ::: moniker-end
 
 ## <a name="code-generation-and-compilation"></a>Generowanie i kompilowanie kodu
@@ -199,9 +199,9 @@ attribute of the Assembly element in the .fakes:
 
 ### <a name="shim-type-and-stub-type-naming-conventions"></a>Konwencje nazewnictwa typów i typów podkładki
 
-**Namespaces**
+**Przestrzenie nazw**
 
-- . Sufiks sztuczny jest dodawany do przestrzeni nazw.
+- . Sufiks elementów sztucznych jest dodawany do przestrzeni nazw.
 
    Na przykład `System.Fakes` przestrzeń nazw zawiera typy w przestrzeni nazw System.
 
@@ -276,6 +276,6 @@ Następujące reguły są stosowane cyklicznie:
 
 - Jeśli wynikiem występuje konflikt nazw z dowolnym elementem członkowskim typu deklarującego, schemat numeracji jest używany przez dołączenie dwucyfrowego licznika, rozpoczynając od 01.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Izolowanie testowanego kodu za pomocą elementów sztucznych firmy Microsoft](../test/isolating-code-under-test-with-microsoft-fakes.md)

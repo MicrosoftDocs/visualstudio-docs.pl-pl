@@ -12,12 +12,12 @@ author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 874695bed7044c92f43c6d3031842d94372a2c33
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7d5e4d8fb598434bfaa2a8a699c546cdc84febb0
+ms.sourcegitcommit: e262f4c2a147c3fa2d27de666aae3a0497317867
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946231"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "100006433"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Stosowanie wycinków kodu do izolowania od siebie poszczególnych części aplikacji w celu przeprowadzania testów jednostkowych
 
@@ -152,7 +152,7 @@ Aby użyć wycinków, należy najpierw wygenerować typy wycinków z definicji i
 1. W **Eksplorator rozwiązań**, 
     - W przypadku starszego projektu .NET Framework (styl inny niż zestaw SDK) rozwiń węzeł **odwołania** projektu testów jednostkowych.
     ::: moniker range=">=vs-2019"
-    - W przypadku projektu w stylu zestawu SDK .NET Framework lub .NET Core rozwiń węzeł **zależności** , aby znaleźć zestaw, który ma zostać sfałszowany w ramach **zestawów**, **projektów** lub **pakietów**.
+    - W przypadku projektu w stylu zestawu SDK .NET Framework, .NET Core lub .NET 5,0 rozwiń węzeł **zależności** , aby znaleźć zestaw, który ma zostać sfałszowany w ramach **zestawów**, **projektów** lub **pakietów**.
     ::: moniker-end
     - Jeśli pracujesz w Visual Basic, wybierz pozycję **Pokaż wszystkie pliki** na **Eksplorator rozwiązań** pasku narzędzi, aby wyświetlić węzeł **odwołania** .
 

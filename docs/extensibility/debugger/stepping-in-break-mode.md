@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: b08dc8ee-6c63-4462-a097-6f525cfbb35a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80273bf470a3ed0c342e781085de6e991508451c
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 4f284fecf32a94f7187ecd34798f9ac21f476804
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845196"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960679"
 ---
 # <a name="stepping-in-break-mode"></a>Krokowe przechodzenie w tryb przerwania
 W poniższej sekcji opisano proces, który występuje, gdy debuger jest w trybie przerwania i musi przekroczyć kod:
@@ -30,5 +30,5 @@ W poniższej sekcji opisano proces, który występuje, gdy debuger jest w trybie
 
 2. Po zakończeniu kroku Wyślij [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) jako zdarzenie zatrzymujące.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wywoływanie zdarzeń debugera](../../extensibility/debugger/calling-debugger-events.md)

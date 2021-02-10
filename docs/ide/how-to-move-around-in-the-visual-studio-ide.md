@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 6c36b6eb-c93f-496b-af08-4199f7afd8bd
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b8f2e796ed122bc4dba0c1fb4cfca85c74065fb8
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 384a6252ef17709970f6e902dfdf83a157b0460a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597044"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968050"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Instrukcje: poruszanie się w środowisku IDE programu Visual Studio
 
@@ -65,7 +65,7 @@ Możesz również przełączyć się do określonego pliku otwartego w edytorze,
 
 ### <a name="to-switch-to-specific-files-in-the-editor"></a>Aby przełączyć się do określonych plików w edytorze
 
-- Naciśnij klawisz **Ctrl** + **Tab** , aby wyświetlić **Nawigator IDE**. Przytrzymaj wciśnięty klawisz **Ctrl** i naciskaj klawisz **Tab** do momentu wybrania pliku, do którego chcesz się przełączyć.
+- Naciśnij klawisz **Ctrl** +  , aby wyświetlić **Nawigator IDE**. Przytrzymaj wciśnięty klawisz **Ctrl** i naciskaj klawisz **Tab** do momentu wybrania pliku, do którego chcesz się przełączyć.
 
     > [!TIP]
     > Aby odwrócić kolejność, w której można przejść przez listę **aktywnych plików** , przytrzymaj wciśnięty klawisz **Ctrl** + **SHIFT** klawisze i naciśnij klawisz **Tab**.
@@ -94,7 +94,7 @@ Możesz również przełączyć się do określonego pliku otwartego w edytorze,
     > [!TIP]
     > Aby odwrócić kolejność, w której można przejść przez **aktywną listę okien narzędzi** , przytrzymaj wciśnięty klawisz **SHIFT** + **Alt** i naciśnij klawisz **F7**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Dostosowywanie układów okien](../ide/customizing-window-layouts-in-visual-studio.md)
 - [Domyślne skróty klawiaturowe](../ide/default-keyboard-shortcuts-in-visual-studio.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 306ea0b4-6d9e-4871-8d8d-a4032d422940
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99b094fd1019e0d7dea09e2953cb4f31e03b80dc
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: e5263c696f9f76c71463538d56414702e616a670
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847887"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960848"
 ---
 # <a name="send-startup-events-after-a-launch"></a>Wysyłaj zdarzenia uruchamiania po uruchomieniu
 Po dołączeniu aparatu debugowania (DE) do programu wysyła on serię zdarzeń uruchomienia z powrotem do sesji debugowania.
@@ -45,6 +45,6 @@ Po dołączeniu aparatu debugowania (DE) do programu wysyła on serię zdarzeń 
 
   Gdy kod jest ładowany i gotowy do uruchomienia, ale przed wykonaniem dowolnego kodu, ANULUJe to zdarzenie załadowania modelu SDM [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) . Na koniec, jeśli program nie jest jeszcze uruchomiony, kończy wysyłanie zdarzenia punktu wejścia [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) , sygnalizując, że program osiągnął główny punkt wejścia i jest gotowy do debugowania.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Kontrola wykonywania](../../extensibility/debugger/control-of-execution.md)
 - [Zadania debugowania](../../extensibility/debugger/debugging-tasks.md)

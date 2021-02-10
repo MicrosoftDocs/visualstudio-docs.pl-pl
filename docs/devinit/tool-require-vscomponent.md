@@ -1,7 +1,7 @@
 ---
 title: require-vscomponent
 description: Narzędzie devinit wymaga-vscomponent.
-ms.date: 11/20/2020
+ms.date: 02/08/2021
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 0b58e80a03828bf486e6beb4d0014f6fe2267485
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 50172f96a49e2384553a372ded0c889b30a23fff
+ms.sourcegitcommit: e262f4c2a147c3fa2d27de666aae3a0497317867
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918358"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "100006391"
 ---
 # <a name="require-vscomponent"></a>require-vscomponent
 
@@ -38,11 +38,17 @@ Jeśli obie `input` właściwości i `additionalOptions` zostaną pominięte lub
 
 ### <a name="additional-options"></a>Opcje dodatkowe
 
-Nie używany.
+Dodatkowe opcje konfiguracji mogą być przesyłane jako wartość `additionalOptions` . 
+
+| Nazwa                      | Typ      | Wymagane | Wartość                                                                                                                                                                                    |
+|---------------------------|-----------|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| --installPath             | ciąg    | Nie       | Ścieżka instalacji wystąpienia programu Visual Studio, które chcesz zmodyfikować.                                                                                                                       |
+
+Jeśli ścieżka instalacji nie zostanie określona, narzędzie zmodyfikuje najwcześniejszą instalację programu Visual Studio na komputerze, jeśli na maszynie istnieje wiele wystąpień. 
 
 ### <a name="default-behavior"></a>Zachowanie domyślne
 
-Domyślne zachowanie `require-vscomponent` Narzędzia polega na wyszukiwaniu `.vsconfig` pliku w bieżącym katalogu i uruchomieniu instalator programu Visual Studio z tymi szczegółami w trybie cichym. `require-vscomponent` obsługuje tylko modyfikowanie istniejącej instalacji programu Visual Studio.
+Domyślne zachowanie `require-vscomponent` Narzędzia polega na wyszukiwaniu `.vsconfig` pliku w bieżącym katalogu i uruchomieniu instalator programu Visual Studio z tymi szczegółami w trybie cichym. `require-vscomponent` obsługuje tylko modyfikowanie istniejącej instalacji programu Visual Studio. 
 
 ## <a name="example-usage"></a>Przykład użycia
 Poniżej znajduje się przykład sposobu uruchamiania `require-vscomponent` przy użyciu `.devinit.json` .
@@ -56,6 +62,21 @@ Poniżej znajduje się przykład sposobu uruchamiania `require-vscomponent` przy
         {
             "tool": "require-vscomponent",
             "input": "C:\\.vsconfig"
+        }
+    ]
+}
+```
+
+#### <a name="devinitjson-that-will-import-the-configurations-of-a-given-vsconfig-file-path-to-the-visual-studio-instance-specified-via-an-install-path"></a>.devinit.js, który zaimportuje konfiguracje danej ścieżki pliku. vsconfig do wystąpienia programu Visual Studio określonego za pośrednictwem ścieżki instalacji:
+```json
+{
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+    "comments": "A sample dot-devinit file.",
+    "run": [
+        {
+            "tool": "require-vscomponent",
+            "input": "C:\\.vsconfig",
+            "additionalOptions": "--installPath 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise'"
         }
     ]
 }
