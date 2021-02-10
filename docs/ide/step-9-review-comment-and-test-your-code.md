@@ -12,15 +12,15 @@ dev_langs:
 - VB
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f5be5d8c59d9ef402bd929bd386a7bdaaa9912e
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 0bcf879d2bb6fa592f77d4c94cb2f784d2c53f2b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479306"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969623"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Krok 9. Przeglądanie, komentowanie i testowanie kodu
 
@@ -62,7 +62,7 @@ Właśnie skompilowano coś, co działa, a chociaż nie zostało to jeszcze zrob
 
      [!code-vb[VbExpressTutorial1Step9_10#1](../ide/codesnippet/VisualBasic/step-9-review-comment-and-test-your-code_1.vb)]
 
-    **showButton** <xref:System.Windows.Forms.Control.Click> Program obsługi zdarzeń przycisku showButton jest teraz zakończony i działa. Rozpoczęto pisanie kodu, rozpoczynając od `if` instrukcji. `if`Instrukcja to sposób informowania o swojej aplikacji, "Sprawdź to i jeśli jest prawdziwe, wykonaj te akcje". W takim przypadku możesz poinstruować aplikację, aby otworzyła okno dialogowe **Otwórz plik** , a jeśli użytkownik wybierze plik i kliknie przycisk **OK** , Załaduj ten plik w elemencie **PictureBox**.
+     <xref:System.Windows.Forms.Control.Click> Program obsługi zdarzeń przycisku showButton jest teraz zakończony i działa. Rozpoczęto pisanie kodu, rozpoczynając od `if` instrukcji. `if`Instrukcja to sposób informowania o swojej aplikacji, "Sprawdź to i jeśli jest prawdziwe, wykonaj te akcje". W takim przypadku możesz poinstruować aplikację, aby otworzyła okno dialogowe **Otwórz plik** , a jeśli użytkownik wybierze plik i kliknie przycisk **OK** , Załaduj ten plik w elemencie **PictureBox**.
 
     > [!TIP]
     > Środowisko IDE zostało skompilowane, aby ułatwić pisanie kodu, a *fragmenty kodu* są jednym ze sposobów. Fragment kodu jest skrótem, który jest rozwinięty w niewielkim bloku.
@@ -74,17 +74,17 @@ Właśnie skompilowano coś, co działa, a chociaż nie zostało to jeszcze zrob
 1. Przed uruchomieniem aplikacji Zapisz aplikację, wybierając przycisk **Zapisz wszystkie** paski narzędzi, który powinien wyglądać podobnie do poniższego zrzutu ekranu.
 
      ![Przycisk Zapisz wszystkie paski narzędzi](../ide/media/express_iconsaveall.png)<br>
-**_Zapisz wszystko_* _ _button *
+***Zapisz wszystko** _ _button *
 
      Alternatywnie, aby zapisać aplikację, wybierz pozycję **plik**  >  **Zapisz wszystko** na pasku menu (lub naciśnij **klawisze CTRL** + **SHIFT** + **S**). Najlepszym rozwiązaniem jest wczesne i częste zapisywanie.
 
      Po uruchomieniu program powinien wyglądać jak na poniższej ilustracji.
 
-     ![Przeglądarka obrazów](../ide/media/express_pictureviewerdonerun.png)<br>**_Przeglądarka obrazów_* _
+     ![Przeglądarka obrazów](../ide/media/express_pictureviewerdonerun.png)<br>***Przeglądarka obrazów***
 
 ## <a name="to-test-your-app"></a>Aby przetestować aplikację
 
-1. Wybierz klawisz _ *F5** lub wybierz przycisk paska narzędzi **Rozpocznij debugowanie** .
+1. Wybierz klawisz **F5** lub wybierz przycisk paska narzędzi **Rozpocznij debugowanie** .
 
 1. Wybierz przycisk **Pokaż obraz** , aby uruchomić właśnie napisany kod. Najpierw aplikacja otwiera okno dialogowe **Otwórz plik** . Sprawdź, czy Twoje filtry są wyświetlane na liście rozwijanej **Pliki typu** u dołu okna dialogowego. Następnie przejdź do obrazu i otwórz go. Zwykle można znaleźć przykładowe obrazy dostarczane z systemem operacyjnym Windows w folderze *Moje dokumenty* w folderze *Moje obrazy Pictures\Sample* .
 

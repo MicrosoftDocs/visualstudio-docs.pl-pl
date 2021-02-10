@@ -24,19 +24,19 @@ helpviewer_keywords:
 ms.assetid: c767d302-51ed-47a8-a527-c07bce2aa485
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dbbd42b0e4eae6d124fc59d68592155bf2c9bd49
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: ccc2309cf3ccc51c82796816f635908b55b81901
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96617529"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969753"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Czcionki i kolory, środowisko, opcje — Okno dialogowe
 
-Na stronie **czcionki i kolory** okna dialogowego **Opcje** można utworzyć niestandardową czcionkę i schemat kolorów dla różnych elementów interfejsu użytkownika w zintegrowanym środowisku programistycznym (IDE). Możesz uzyskać dostęp do tego okna dialogowego, **Tools** klikając  >  **Opcje** narzędzia, a następnie wybierając **Environment**  >  **czcionki i kolory** środowiska.
+Na stronie **czcionki i kolory** okna dialogowego **Opcje** można utworzyć niestandardową czcionkę i schemat kolorów dla różnych elementów interfejsu użytkownika w zintegrowanym środowisku programistycznym (IDE). Możesz uzyskać dostęp do tego okna dialogowego, klikając  >  **Opcje** narzędzia, a następnie wybierając   >  **czcionki i kolory** środowiska.
 
 Zmiany schematu kolorów nie są stosowane podczas sesji, w której zostały wprowadzone. Zmiany kolorów można oszacować, otwierając inne wystąpienie programu Visual Studio i podając warunki, w których zmiany mają być stosowane.
 
@@ -218,7 +218,7 @@ Wyświetla listę dostępnych kolorów, które można wybrać dla pierwszego pla
 
 Elementy mogą dziedziczyć kolor pierwszego planu z innych elementów wyświetlanych, takich jak **zwykły tekst**. Przy użyciu tej opcji, gdy zmienisz kolor dziedziczonego elementu wyświetlanego, kolor elementów wyświetlanych jest również zmieniany automatycznie. Na przykład jeśli wybrano wartość **Automatyczna** dla **błędu kompilatora** , a później zmieniono kolor **zwykłego tekstu** na czerwony, **błąd kompilatora** również automatycznie odziedziczy kolor czerwony.
 
-**Domyślne**
+**Wartooć**
 
 Kolor wyświetlany dla elementu przy pierwszym otwarciu programu Visual Studio. Kliknięcie przycisku **Użyj ustawień domyślnych** spowoduje zresetowanie do tego koloru.
 
@@ -237,7 +237,7 @@ Udostępnia paletę kolorów, z której można wybrać kolor tła dla elementu w
 
 Elementy mogą dziedziczyć kolor tła z innych elementów wyświetlanych, takich jak **zwykły tekst**. Przy użyciu tej opcji, gdy zmienisz kolor dziedziczonego elementu wyświetlanego, kolor elementów wyświetlanych jest również zmieniany automatycznie. Na przykład jeśli wybrano wartość **Automatyczna** dla **błędu kompilatora** , a później zmieniono kolor **zwykłego tekstu** na czerwony, **błąd kompilatora** również automatycznie odziedziczy kolor czerwony.
 
-**Domyślne**
+**Wartooć**
 
 Kolor wyświetlany dla elementu przy pierwszym otwarciu programu Visual Studio. Kliknięcie przycisku **Użyj ustawień domyślnych** spowoduje zresetowanie do tego koloru.
 
@@ -245,7 +245,7 @@ Kolor wyświetlany dla elementu przy pierwszym otwarciu programu Visual Studio. 
 
 Wyświetla okno dialogowe Kolor umożliwiające ustawienie niestandardowego koloru dla elementu zaznaczonego na liście elementy wyświetlania.
 
-**Pogrubienie**
+**Pogrubiona**
 
 Zaznacz tę opcję, aby wyświetlić tekst wybranych **elementów wyświetlanych** w postaci pogrubionego tekstu. Tekst pogrubiony jest łatwiejszy do zidentyfikowania w edytorze.
 
@@ -253,7 +253,7 @@ Zaznacz tę opcję, aby wyświetlić tekst wybranych **elementów wyświetlanych
 
 Wyświetla przykładowy styl czcionki, rozmiar i schemat kolorów dla wybranych elementów **Pokaż ustawienia dla** i **wyświetlania** . To pole służy do wyświetlania podglądu wyników podczas eksperymentu z różnymi opcjami formatowania.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Opcje — okno dialogowe](../../ide/reference/options-dialog-box-visual-studio.md)
 - [Porady: Zmiana czcionek i kolorów](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

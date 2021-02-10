@@ -9,19 +9,19 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.HQL.IntelliSense
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c1aea741c91f38be9d5b423226e635b77e440d9e
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 1fe7fc81fdc27fc2cdb126e2bf50d07dd3048ec9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040202"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970832"
 ---
 # <a name="options-text-editor-u-sql-intellisense"></a>Opcje, Edytor tekstu, U-SQL, IntelliSense
 
-Na stronie opcje **IntelliSense** można modyfikować niektóre ustawienia edytora tekstu dla języka U-SQL. Aby uzyskać dostęp do tej strony opcji **Tools**, wybierz  >  **Opcje** narzędzia, a następnie wybierz **Edytor tekstu**  >  **U-SQL**  >  **IntelliSense**.
+Na stronie opcje **IntelliSense** można modyfikować niektóre ustawienia edytora tekstu dla języka U-SQL. Aby uzyskać dostęp do tej strony opcji , wybierz  >  **Opcje** narzędzia, a następnie wybierz **Edytor tekstu**  >  **U-SQL**  >  **IntelliSense**.
 
 ## <a name="intellisense-settings"></a>Ustawienia funkcji IntelliSense
 

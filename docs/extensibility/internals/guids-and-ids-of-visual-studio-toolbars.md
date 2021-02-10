@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: c9cacd57-9225-450f-a9ac-cbf3168ea844
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b44cda401faa0d7e34bf9ce7579aa3cca026fa13
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 7b4df4bac9fcc933cccc1bd54ced89c416b23863
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480385"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970221"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>Identyfikatory GUID i identyfikator pasków narzędzi programu Visual Studio
 W tym temacie przedstawiono identyfikatory GUID i identyfikator pasków narzędzi, które znajdują się w zintegrowanym środowisku programistycznym (IDE) programu Visual Studio, oraz zawartych w nich grup. Te wartości są zdefiniowane w plikach *. vsct* , które są instalowane w ramach zestawu Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [polecenia, menu i grupy zdefiniowane przez środowisko IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -40,7 +40,7 @@ W tym temacie przedstawiono identyfikatory GUID i identyfikator pasków narzędz
 
  Tylko grupy mogą być wyświetlane bezpośrednio z pasków narzędzi. Aby dodać grupę, ustaw jej element nadrzędny na identyfikator GUID i identyfikator paska narzędzi. Aby dodać przycisk do paska narzędzi, ustaw jego element nadrzędny na grupę na pasku narzędzi.
 
-|Pasek narzędzi|ID|
+|Pasek narzędzi|ID (Identyfikator)|
 |-------------|--------|
 |Standardowa|IDM_VS_TOOL_STANDARD|
 |Kompilacja|IDM_VS_TOOL_BUILD|
@@ -51,7 +51,7 @@ W tym temacie przedstawiono identyfikatory GUID i identyfikator pasków narzędz
 ### <a name="special-toolbars"></a>Specjalne paski narzędzi
  Te paski narzędzi są definiowane przez środowisko IDE programu Visual Studio, ale obsługują funkcje wyspecjalizowane i nie obsługują grup poleceń.
 
-|Pasek narzędzi|ID|
+|Pasek narzędzi|ID (Identyfikator)|
 |-------------|--------|
 |Polecenie Add|IDM_VS_TOOL_ADDCOMMAND|
 |Niezdefiniowane|IDM_VS_TOOL_UNDEFINED|
@@ -63,13 +63,13 @@ W tym temacie przedstawiono identyfikatory GUID i identyfikator pasków narzędz
 
 ### <a name="standard-toolbar-groups"></a>Standardowe grupy paska narzędzi
 
-|Nazwa|ID|
+|Nazwa|ID (Identyfikator)|
 |----------|--------|
 |Zapisz/Otwórz|IDG_VS_TOOLSB_SAVEOPEN|
 |Wytnij/Kopiuj|IDG_VS_TOOLSB_CUTCOPY|
 |Cofnij/ponów|IDG_VS_TOOLSB_UNDOREDO|
 |Uruchom/Kompiluj|IDG_VS_TOOLSB_RUNBUILD|
-|Wyszukiwanie|IDG_VS_TOOLSB_SEARCH|
+|Wyszukaj|IDG_VS_TOOLSB_SEARCH|
 |Windows|IDG_VS_TOOLSB_WINDOWS|
 |Nowe okna|IDG_VS_TOOLSB_NEWWINDOWS|
 |Załaduj/Zapisz|IDG_VS_WINDOWUI_LOADSAVE|
@@ -77,14 +77,14 @@ W tym temacie przedstawiono identyfikatory GUID i identyfikator pasków narzędz
 
 ### <a name="build-toolbar-groups"></a>Tworzenie grup pasków narzędzi
 
-|Nazwa|ID|
+|Nazwa|ID (Identyfikator)|
 |----------|--------|
 |Pasek kompilacji|IDG_VS_BUILDBAR|
 |Anuluj|IDG_VS_BUILD_CANCEL|
 
 ### <a name="text-editor-toolbar-groups"></a>Grupy paska narzędzi edytora tekstu
 
-|Nazwa|ID|
+|Nazwa|ID (Identyfikator)|
 |----------|--------|
 |Ukończenie|IDM_VS_TOOL_TEXTEDITOR|
 |Wyświetlane|IDG_VS_EDITTOOLBAR_INDENT|
@@ -93,7 +93,7 @@ W tym temacie przedstawiono identyfikatory GUID i identyfikator pasków narzędz
 
 ### <a name="debug-toolbar-groups"></a>Grupy paska narzędzi debugowania
 
-|Nazwa|ID|
+|Nazwa|ID (Identyfikator)|
 |----------|--------|
 |Wykonanie|IDM_DEBUG_TOOLBAR|
 |Wzmacnia|IDG_DEBUG_TOOLBAR_STEPPING|
@@ -102,7 +102,7 @@ W tym temacie przedstawiono identyfikatory GUID i identyfikator pasków narzędz
 
 ### <a name="debug-location-toolbar-groups"></a>Grupy paska narzędzi lokalizacji debugowania
 
-|Nazwa|ID|
+|Nazwa|ID (Identyfikator)|
 |----------|--------|
 |Lokalizacja debugowania|IDG_DEBUG_CONTEXT_TOOLBAR|
 

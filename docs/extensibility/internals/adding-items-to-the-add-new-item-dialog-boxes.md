@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99377db0e835de8d84485d0254d84892a360f5f0
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 1dbdb2f04ad5038941eeb9790efa9e05781def3f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190164"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969012"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>Dodaj elementy do okna dialogowego Dodaj nowy element
 Proces dodawania elementów do okna dialogowego **Dodaj nowy element** rozpoczyna się od kluczy rejestru. Jak pokazano w poniższych wpisach rejestru, sekcja **AddItemTemplates** zawiera ścieżkę i nazwę katalogu, w którym są umieszczane elementy udostępniane w oknie dialogowym **Dodaj nowy element** .
@@ -33,7 +33,7 @@ Proces dodawania elementów do okna dialogowego **Dodaj nowy element** rozpoczyn
 
  **@** = #6
 
- **TemplatesDir**  =  \\ TemplatesDir &lt; Ścieżka instalacji zestawu SDK programu Visual Studio &gt; \\ VSIntegration \\ &lt; SomeFolder &gt; \\ &lt; SomePackage &gt; \\ &lt; SomeProject &gt; \\ &lt; SomeProjectItems&gt;
+   =  \\ TemplatesDir &lt; Ścieżka instalacji zestawu SDK programu Visual Studio &gt; \\ VSIntegration \\ &lt; SomeFolder &gt; \\ &lt; SomePackage &gt; \\ &lt; SomeProject &gt; \\ &lt; SomeProjectItems&gt;
 
  **SortPriority** = DWORD: 00000064
 

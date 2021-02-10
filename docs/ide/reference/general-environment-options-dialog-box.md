@@ -19,15 +19,15 @@ helpviewer_keywords:
 - Environment Options dialog box
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6068f63cc9c2e7abe36b6eac804beaaa6603303e
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: b58cf19406d49c175a07ab5e3dad60fd0354c656
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96617269"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969701"
 ---
 # <a name="options-dialog-box-environment--general"></a>Opcje — okno dialogowe: \> Ogólne środowisko
 
@@ -98,6 +98,6 @@ Określa, że po kliknięciu przycisku **Zamknij** tylko okno narzędzia z fokus
 
 Określa, że po kliknięciu przycisku **Autoukrywanie** tylko okno narzędzia z fokusem jest ukryte automatycznie i nie wszystkie okna narzędzi w zestawie zadokowanym. Domyślnie ta opcja nie jest zaznaczona.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Dostosowywanie układów okien](../../ide/customizing-window-layouts-in-visual-studio.md)

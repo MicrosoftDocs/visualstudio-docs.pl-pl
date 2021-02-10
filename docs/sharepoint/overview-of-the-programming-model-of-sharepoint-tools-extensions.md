@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending tools
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 67e0f4ae5b06e96747a7257b2b9b444566235877
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: b823aecff4f05208094bd98b559a661c7f23fc5b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305125"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970533"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Omówienie modelu programowania rozszerzeń narzędzi SharePoint
   Po utworzeniu rozszerzenia dla narzędzi programu SharePoint w programie Visual Studio Zacznij od zaimplementowania jednego lub większej liczby interfejsów rozszerzalności, które są udostępniane przez narzędzia programu SharePoint. W większości przypadków do zaimplementowania funkcji w rozszerzeniu są również używane inne typy udostępniane przez narzędzia programu SharePoint. W niektórych scenariuszach można także używać typów w innych modelach obiektów udostępnianych przez program Visual Studio i program SharePoint. Musisz zrozumieć przeznaczenie każdego z tych modeli obiektów i wiedzieć, jak z nich korzystać, aby utworzyć rozszerzenia dla narzędzi programu SharePoint.

@@ -5,15 +5,15 @@ ms.date: 12/17/2018
 ms.topic: conceptual
 author: madskristensen
 ms.author: madsk
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a17f196f48b053f8b834b8fd25b8c0295e42b547
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 75841186ca78089cf84ca91f18445243acc42ac8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668901"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970754"
 ---
 # <a name="suggest-a-feature-for-visual-studio"></a>Zaproponuj funkcję programu Visual Studio
 
@@ -134,6 +134,6 @@ W pełni zobowiązujemy się do nasłuchiwania sugestii dotyczących funkcji i p
 
 Czas odpowiedzi zależy od stanu opinii użytkownika. Przejrzyj wyjaśnienie stanu w tym dokumencie, aby zrozumieć czas odpowiedzi.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Wprowadzenie do "sugerowania funkcji" w społeczności deweloperów (blog programu Visual Studio)](https://devblogs.microsoft.com/visualstudio/introducing-suggest-a-feature-in-developer-community/?utm_source=vs_developer_news&utm_medium=referral)

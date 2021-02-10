@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 84639d86-dd21-4b35-9988-6bb654162488
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0203c8b7028fb170ae2ba4d2cc9d6f1825414f64
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: bd2bdc047ddd5a568aca01ed99b6148b0f288faa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480411"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970273"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>Identyfikator GUID i identyfikatory menu programu Visual Studio
 W tym artykule jest wyliczany identyfikator GUID i wartości identyfikatorów menu i grup na pasku menu programu Visual Studio. Te wartości są zdefiniowane w plikach *. vsct* , które są instalowane w ramach zestawu Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [polecenia, menu i grupy zdefiniowane przez środowisko IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -34,7 +34,7 @@ W tym artykule jest wyliczany identyfikator GUID i wartości identyfikatorów me
 ## <a name="groups-on-the-visual-studio-menu-bar"></a>Grupy na pasku menu programu Visual Studio
  Aby dodać menu do paska menu, Ustaw jedną z tych grup jako nadrzędną.
 
-|Grupa|ID|
+|Group (Grupa)|ID (Identyfikator)|
 |-----------|--------|
 |Plik/Edycja/Widok|IDG_VS_MM_FILEEDITVIEW|
 |Refaktoryzacja|IDG_VS_MM_REFACTORING:|
@@ -48,7 +48,7 @@ W tym artykule jest wyliczany identyfikator GUID i wartości identyfikatorów me
 ## <a name="menus-on-the-visual-studio-menu-bar"></a>Menu na pasku menu programu Visual Studio
  Aby dodać grupę do istniejącego menu programu Visual Studio, należy ustawić jeden z następujących menu jako jego element nadrzędny. Podmenu nie znajdują się na tej liście.
 
-|Menu|ID|
+|Menu|ID (Identyfikator)|
 |----------|--------|
 |Plik|IDM_VS_MENU_FILE|
 |Edytuj|IDM_VS_MENU_EDIT|
@@ -57,7 +57,7 @@ W tym artykule jest wyliczany identyfikator GUID i wartości identyfikatorów me
 |Project|IDM_VS_MENU_PROJECT|
 |Kompilacja|IDM_VS_MENU_BUILD|
 |Format|IDM_VS_MENU_FORMAT|
-|Narzędzia|IDM_VS_MENU_TOOLS|
+|narzędzia|IDM_VS_MENU_TOOLS|
 |Rozszerzenia|IDM_VS_MENU_EXTENSIONS|
 |Okno|IDM_VS_MENU_WINDOW|
 |Dodatki|IDM_VS_MENU_ADDINS|
@@ -69,7 +69,7 @@ W tym artykule jest wyliczany identyfikator GUID i wartości identyfikatorów me
 
 ### <a name="file-menu-groups"></a>Grupy menu plików
 
-|Grupa|ID|
+|Group (Grupa)|ID (Identyfikator)|
 |-----------|--------|
 |Nowy/otwarty|IDG_VS_FILE_FILE|
 |Dodaj|IDG_VS_FILE_ADD|
@@ -85,11 +85,11 @@ W tym artykule jest wyliczany identyfikator GUID i wartości identyfikatorów me
 
 ### <a name="edit-menu-groups"></a>Edytuj grupy menu
 
-|Grupa|ID|
+|Group (Grupa)|ID (Identyfikator)|
 |-----------|--------|
 |Cofnij/ponów|IDG_VS_EDIT_UNDOREDO|
 |Wytnij/Kopiuj/Wklej|IDG_VS_EDIT_CUTCOPY|
-|Wybierz|IDG_VS_EDIT_SELECT|
+|Wybierz pozycję|IDG_VS_EDIT_SELECT|
 |Chodzenie|IDG_VS_EDIT_GOTO|
 |Znajdowanie|IDG_VS_EDIT_FIND|
 |Obiekty|IDG_VS_EDIT_OBJECTS|
@@ -98,14 +98,14 @@ W tym artykule jest wyliczany identyfikator GUID i wartości identyfikatorów me
 
 ### <a name="refactor-menu-groups"></a>Grupy menu refaktoryzacji
 
-|Grupa|ID|
+|Group (Grupa)|ID (Identyfikator)|
 |-----------|--------|
 |Wspólne|IDG_REFACTORING_COMMON|
-|Zaawansowane|IDG_REFACTORING_ADVANCED|
+|Zaawansowany|IDG_REFACTORING_ADVANCED|
 
 ### <a name="view-menu-groups"></a>Grupy menu Widok
 
-|Grupa|ID|
+|Group (Grupa)|ID (Identyfikator)|
 |-----------|--------|
 |Kod formularza|IDG_VS_VIEW_FORMCODE|
 |Przeglądarka|IDG_VS_VIEW_BROWSER|
@@ -126,29 +126,29 @@ W tym artykule jest wyliczany identyfikator GUID i wartości identyfikatorów me
 
 ### <a name="project-menu-groups"></a>Grupy menu projektu
 
-|Grupa|ID|
+|Group (Grupa)|ID (Identyfikator)|
 |-----------|--------|
 |Różne Dodawanie|IDG_VS_PROJ_MISCADD|
 |Dodaj|IDG_VS_PROJ_ADD|
 |Folder|IDG_VS_PROJ_FOLDER|
 |Zwolnij/Załaduj ponownie|IDG_VS_PROJ_UNLOADRELOAD|
-|Odwołanie|IDG_VS_PROJ_REFERENCE|
+|Dokumentacja|IDG_VS_PROJ_REFERENCE|
 |Opcje|IDG_VS_PROJ_OPTIONS|
 |Ustawienia|IDG_VS_PROJ_SETTINGS|
 
 ### <a name="build-menu-groups"></a>Grupy menu kompilacji
 
-|Grupa|ID|
+|Group (Grupa)|ID (Identyfikator)|
 |-----------|--------|
 |Rozwiązanie|IDG_VS_BUILD_SOLUTION|
-|Zaznaczenie|IDG_VS_BUILD_SELECTION|
+|Wybór|IDG_VS_BUILD_SELECTION|
 |Optymalizacja sterowana profilem|IDG_VS_PGO_SELECTION|
 |Różne|IDG_VS_BUILD_MISC|
 |Anuluj|IDG_VS_BUILD_CANCEL|
 
 ### <a name="tools-menu-groups"></a>Grupy menu Narzędzia
 
-|Grupa|ID|
+|Group (Grupa)|ID (Identyfikator)|
 |-----------|--------|
 |Wiersz polecenia|IDG_VS_TOOLS_CMDLINE|
 |Fragmenty kodu|IDG_VS_TOOLS_SNIPPETS|
@@ -160,7 +160,7 @@ W tym artykule jest wyliczany identyfikator GUID i wartości identyfikatorów me
 
 ### <a name="window-menu-groups"></a>Grupy menu okna
 
-|Grupa|ID|
+|Group (Grupa)|ID (Identyfikator)|
 |-----------|--------|
 |Nowy|IDG_VS_WINDOW_NEW|
 |Zadokuj/Zamknij|IDG_VS_DOCKCLOSE|
@@ -171,7 +171,7 @@ W tym artykule jest wyliczany identyfikator GUID i wartości identyfikatorów me
 
 ### <a name="help-menu-groups"></a>Grupy menu Pomoc
 
-|Grupa|ID|
+|Group (Grupa)|ID (Identyfikator)|
 |-----------|--------|
 |Samples|IDG_VS_HELP_SAMPLES|
 |Pomoc techniczna|IDG_VS_HELP_SUPPORT|

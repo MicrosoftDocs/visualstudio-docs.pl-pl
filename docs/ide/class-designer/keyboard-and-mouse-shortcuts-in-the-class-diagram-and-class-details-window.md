@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: c12d8dac-9902-4fde-b721-2a8116da53b7
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c184a12474e2d7ff0b626547acaaf2a37d460c8e
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 6576377714fa08343543ccd3d186de0e2a0e039b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901105"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969899"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>Skróty klawiaturowe i myszy w diagramie klas i oknie Szczegóły klasy
 
@@ -68,8 +68,8 @@ Następujące akcje klawiatury są obsługiwane na diagramach klas:
 |**End**|Wewnątrz kształtów typu|Przejdź do ostatniego widocznego elementu wewnątrz kształtu.|
 |**End**|Kształty najwyższego poziomu|Przejdź do ostatniego kształtu na diagramie.|
 |**SHIFT** + **Strona główna**|Wewnątrz kształtu typu|Wybiera elementy w obrębie kształtu, rozpoczynając od bieżącego elementu i kończąc na najwyższego poziomu w tym samym kształcie.|
-|**SHIFT** + **Koniec**|Wewnątrz kształtu typu|Analogicznie **Shift** jak + **Strona główna** przesunięcia, ale w kierunku do góry.|
-|**Wejść**|Wszystkie konteksty|Wywołuje akcję domyślną na kształcie, który jest również dostępny przez dwukrotne kliknięcie. W większości przypadków jest to widok kod, ale niektóre elementy definiują go inaczej (lizaki, nagłówki przedziałów, etykiety lizaków).|
+|**SHIFT** + **Koniec**|Wewnątrz kształtu typu|Analogicznie jak + **Strona główna** przesunięcia, ale w kierunku do góry.|
+|**Enter**|Wszystkie konteksty|Wywołuje akcję domyślną na kształcie, który jest również dostępny przez dwukrotne kliknięcie. W większości przypadków jest to widok kod, ale niektóre elementy definiują go inaczej (lizaki, nagłówki przedziałów, etykiety lizaków).|
 |**+** lub **-**|Wszystkie konteksty|Jeśli aktualnie fokus jest rozwijalny, te klucze rozszerzają lub zwijają elementy.|
 |**>**|Wszystkie konteksty|W przypadku elementów z elementami podrzędnymi rozszerza on element, jeśli jest zwinięty i przechodzi do pierwszego elementu podrzędnego.|
 |**<**|Wszystkie konteksty|Powoduje przejście do elementu nadrzędnego.|
@@ -78,7 +78,7 @@ Następujące akcje klawiatury są obsługiwane na diagramach klas:
 |**Usuwanie**|Na kształtach typu i komentarza|Wywołuje polecenie **Usuń z diagramu** .|
 |**Usuwanie**|Na wszystkich innych.|Wywołuje polecenie **Delete from Code** (elementy członkowskie, parametry, skojarzenia, dziedziczenie, etykiety lizaka).|
 |**Ctrl** + **Usuń**|Wszystkie konteksty|Wywołuje polecenie **usunięcia z kodu** przy wyborze.|
-|**Tabulator**|Wszystkie konteksty|Przechodzi do następnego elementu podrzędnego w obrębie tego samego elementu nadrzędnego (obsługuje Zawijanie).|
+|**Tab**|Wszystkie konteksty|Przechodzi do następnego elementu podrzędnego w obrębie tego samego elementu nadrzędnego (obsługuje Zawijanie).|
 |**SHIFT** + **Karta**|Wszystkie konteksty|Przechodzi do poprzedniego elementu podrzędnego w obrębie tego samego elementu nadrzędnego (obsługuje Zawijanie).|
 |**Spacja**|Wszystkie konteksty|Przełącza zaznaczenie bieżącego elementu.|
 
@@ -93,7 +93,7 @@ Użyj następujących klawiszy, aby przejść do okna **Szczegóły klasy** :
 |-|-|
 |**,** (przecinek)|Jeśli kursor znajduje się w wierszu parametru, wpisanie przecinka przenosi kursor do pola Nazwa następnego parametru. Jeśli kursor znajduje się w ostatnim wierszu parametru metody, przenosi kursor do \<add parameter> pola, którego można użyć do utworzenia nowego parametru.<br /><br /> Jeśli kursor znajduje się w innym miejscu w oknie **Szczegóły klasy** , wpisanie przecinka powoduje dodanie przecinka w bieżącym polu.|
 |**;** (średnik) lub **)** (nawias zamykający)|Przenieś kursor do pola Nazwa następnego wiersza elementu członkowskiego w siatce okna **Szczegóły klasy** .|
-|**Tabulator**|Przenosi kursor do następnego pola, najpierw przesuwając od lewej do prawej i od góry do dołu. Jeśli kursor jest przenoszony z pola, w którym wpisano tekst, **Szczegóły klasy** przetwarzają ten tekst i zapisuje je, jeśli nie wygenerowały błędu.<br /><br /> Jeśli kursor znajduje się w pustym polu, takim jak \<add parameter> , karta przenosi ją do pierwszego pola następnego wiersza.|
+|**Tab**|Przenosi kursor do następnego pola, najpierw przesuwając od lewej do prawej i od góry do dołu. Jeśli kursor jest przenoszony z pola, w którym wpisano tekst, **Szczegóły klasy** przetwarzają ten tekst i zapisuje je, jeśli nie wygenerowały błędu.<br /><br /> Jeśli kursor znajduje się w pustym polu, takim jak \<add parameter> , karta przenosi ją do pierwszego pola następnego wiersza.|
 |**Spacja**|Przenosi kursor do następnego pola, najpierw przesuwając od lewej do prawej i od góry do dołu. Jeśli kursor znajduje się w pustym polu, takim jak \<add parameter> , przenosi do pierwszego pola następnego wiersza. Należy zauważyć, że \<space> wpisane bezpośrednio po przecinku jest ignorowane.<br /><br /> Jeśli kursor znajduje się w polu podsumowania, wpisanie spacji powoduje dodanie znaku spacji.<br /><br /> Jeśli kursor znajduje się w kolumnie Ukryj w danym wierszu, wpisanie spacji powoduje przełączenie wartości pola wyboru Ukryj.|
 |**Ctrl** + **Karta**|Przejdź do okna innego dokumentu. Na przykład Przełącz się z okna **Szczegóły klasy** do pliku Open Code.|
 |**Esc**|Jeśli rozpoczęto wpisywanie tekstu w polu, naciśnięcie klawisza ESC działa jako klawisz cofania, przywraca zawartość pola do poprzedniej wartości. Jeśli Okno szczegółów klasy ma ogólny fokus, ale żadna określona komórka nie ma fokusu, naciśnięcie klawisza ESC przenosi fokus z okna **Szczegóły klasy** .|
@@ -101,7 +101,7 @@ Użyj następujących klawiszy, aby przejść do okna **Szczegóły klasy** :
 |**Strzałka w lewo**|Jeśli kursor znajduje się w kolumnie Nazwa, naciśnięcie strzałki w lewo zwija bieżący węzeł w hierarchii (jeśli jest otwarty).|
 |**Strzałka w prawo**|Jeśli kursor znajduje się w kolumnie Nazwa, naciśnięcie strzałki w prawo rozszerza bieżący węzeł w hierarchii (jeśli jest zwinięty).|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Tworzenie i konfigurowanie składowych typów](creating-and-configuring-type-members.md)
 - [Korzystanie wyłącznie z klawiatury](../reference/how-to-use-the-keyboard-exclusively.md)

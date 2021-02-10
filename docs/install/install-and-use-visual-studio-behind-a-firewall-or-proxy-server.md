@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 1fc40c826499b36d5d713d0842a2c0e8dae462d1
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: b3626d09d790ca6f15ded3745801eae1ca426bab
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668368"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970662"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalowanie i używanie programu Visual Studio i usług platformy Azure za zaporą lub serwerem proxy
 
@@ -119,7 +119,7 @@ Aby mieć pewność, że masz dostęp do wszystkiego, czego potrzebujesz, gdy ko
 | Zaktualizowano narzędzia do publikacji w sieci Web <br>sprawdzenia i rozszerzenie <br>zalecenia | marketplace.visualstudio.com | https/443 | Służy do sprawdzania dostępności zaktualizowanych narzędzi publikacji. Jeśli ta wartość jest wyłączona, możliwe jest, że zalecane rozszerzenie publikacji w sieci Web nie może być wyświetlane |
 | Zaktualizowano zasób platformy Azure <br>Informacje o punkcie końcowym tworzenia | \*.blob.core.windows.net | https/443 | Służy do aktualizowania punktów końcowych używanych do tworzenia zasobów platformy Azure dla niektórych usług platformy Azure. Jeśli ta wartość jest wyłączona, zamiast tego są używane ostatnio pobierane lub wbudowane lokalizacje punktów końcowych |
 | Debugowanie zdalne i <br>Zdalne profilowanie <br>Azure Websites | &#42;. cloudapp.net <br> &#42;. azurewebsites.net | 4022 | Służy do dołączania zdalnego debugera do usługi Azure Websites. Po wyłączeniu dołączenie zdalnego debugera do usługi Azure Websites nie będzie działało |
-| Usługa Active Directory <br>Graph | graph.windows.net | https/443 | Używane do aprowizacji nowych aplikacji Azure Active Directory. Używany także przez Microsoft 365 MSGraph-Connected Service Provider |
+| Active Directory <br>Graph | graph.windows.net | https/443 | Używane do aprowizacji nowych aplikacji Azure Active Directory. Używany także przez Microsoft 365 MSGraph-Connected Service Provider |
 | Azure Functions <br>Aktualizacja interfejsu wiersza polecenia <br>Zaznacz | functionscdn.azureedge.net | https/443 | Służy do sprawdzania dostępności zaktualizowanych wersji interfejsu wiersza polecenia Azure Functions. Jeśli ta wartość jest wyłączona, zamiast tego zostanie użyty buforowana kopia (lub kopia wykonywana przez składnik Azure Functions) interfejsu wiersza polecenia |
 | Cordova | npmjs.org<br>gradle.org | & http/80<br/>https/443 | Protokół HTTP jest używany do pobierania Gradle podczas kompilacji; Protokół HTTPS jest używany do dołączania wtyczek Cordova do projektów |
 | Eksplorator chmury | 1. &#60;clusterendpoint&#62; <br>Service Fabric <br>2. &#60;punkt końcowy zarządzania&#62;<br>Ogólna usługa wydatków w chmurze <br>3. &#60;punkt końcowy programu Graph&#62;<br>Ogólna usługa wydatków w chmurze<br>4. &#60;punktu końcowego konta magazynu&#62;<br>Węzły magazynu <br>5. &#60;adresy URL Azure Portal&#62;<br>Ogólna usługa wydatków w chmurze <br>6. &#60;punkty końcowe magazynu kluczy&#62; <br>Azure Resource Manager węzły maszyny wirtualnej<br>7. &#60;PublicIPAddressOfCluster&#62;<br>Service Fabric debugowanie zdalne i śledzenie ETW | <br>1. https/19080<br>2. https/443<br>3. https/443<br>4. https/443<br>5. https/443<br>6. https/443<br>7. TCP/dynamiczny | 1. przykład: test12.eastus.cloudapp.com<br>2. pobiera subskrypcje i pobiera/zarządza zasobami platformy Azure<br>3. pobiera Azure Stack subskrypcje<br>4. zarządza zasobami magazynu (przykład: mystorageaccount.blob.core.windows.net)<br>5. opcja menu kontekstowego "Otwórz w portalu" (otwiera zasób w Azure Portal)<br>6. tworzy i używa magazynów kluczy na potrzeby debugowania maszyn wirtualnych (przykład: myvault.vault.azure.net) <br><br>7. dynamicznie przydziela blok portów na podstawie liczby węzłów w klastrze i dostępnych portów. <br><br>Blok portu spróbuje uzyskać trzykrotnie liczbę węzłów z co najmniej 10 portami.<br><br>W przypadku śladów przesyłania strumieniowego jest podejmowana próba pobrania bloku portu z 810. Jeśli którykolwiek z tych bloków portu jest już używany, podejmowana jest próba pobrania następnego bloku i tak dalej. (Moduł równoważenia obciążenia jest pusty, a następnie porty z 810 są najprawdopodobniej używane) <br><br>Podobnie w przypadku debugowania są zarezerwowane cztery zestawy bloków portów: <br>-connectorPort: 30398, <br>-forwarderPort: 31398, <br>-forwarderPortx86:31399,<br>-fileUploadPort: 32398<br> |
@@ -130,7 +130,7 @@ Aby mieć pewność, że masz dostęp do wszystkiego, czego potrzebujesz, gdy ko
 | Azure Data Lake | &#42;. azuredatalakestore.net <br>&#42;. azuredatalakeanalytics.net | https/443 | Służy do kompilowania, przesyłania, wyświetlania, diagnozowania i debugowania zadań; służy do przeglądania plików ADLS; służy do przekazywania i pobierania plików |
 | Usługa tworzenia pakietów | [Account]. VisualStudio. com <br/> [konto]. \* . visualstudio.com <br/> \*.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https/443 | Klasy \* . npmjs.org, \* . NuGet.org i \* . NodeJS.org są wymagane tylko w przypadku niektórych scenariuszy zadań kompilacji (na przykład: Instalatora narzędzia NuGet, Instalatora narzędzia węzła) lub jeśli zamierzasz używać publicznego przesyłania strumieniowego ze źródłami danych. Pozostałe trzy domeny są wymagane do podstawowej funkcjonalności usługi pakowania. |
 | Usługa Azure DevOps Services | \*. vsassets.io <br/> static2.sharepointonline.com <br/> dev.azure.com | | Używane do nawiązywania połączenia z Azure DevOps Services |
-| Azure Service Bus | \*.servicebus.windows.net | ampq/5671 i 5672, </br> sbmp/9350-9354, </br> http/80, </br> https/443 | Służy do tworzenia kolejek, tematów i subskrypcji. </br> Służy również do wysyłania i odbierania komunikatów do/z Service Busch kolejek i tematów. |
+| Usługa Azure Service Bus | \*.servicebus.windows.net | ampq/5671 i 5672, </br> sbmp/9350-9354, </br> http/80, </br> https/443 | Służy do tworzenia kolejek, tematów i subskrypcji. </br> Służy również do wysyłania i odbierania komunikatów do/z Service Busch kolejek i tematów. |
 | Azure Cosmos DB | \*. documents.azure.com | https/443 | Służy do wywoływania podstawowych interfejsów API bazy danych dokumentów. |
 | Społeczność deweloperów | sendvsfeedback2.azurewebsites.net/api | https/443 | Służy do wywoływania interfejsów API narzędzia do oceny społeczności deweloperów (moje problemy, wyszukiwanie, głosowanie, komentarz, przesyłanie, przekazywanie, wznawianie) |
 | Rozszerzenia intellicode | \*. intellicode.vsengsaas.visualstudio.com | https/443 | Używane do wywoływania interfejsów API rozszerzenia intellicode |
@@ -158,7 +158,7 @@ Oto kilka dodatkowych opcji pomocy technicznej:
 * Zaproponuj funkcję, śledź problemy dotyczące produktów i Znajdź odpowiedzi w [społeczności deweloperów programu Visual Studio](https://aka.ms/feedback/suggest?space=8).
 * Użyj swojego konta w usłudze [GitHub](https://github.com/) , aby komunikować się z nami i innych deweloperów programu Visual Studio w [konwersacji programu Visual Studio w społeczności warunkom](https://gitter.im/Microsoft/VisualStudio).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [Wymagania dotyczące łączności dla rozszerzenia Live Share](/visualstudio/liveshare/reference/connectivity/)
 * [Tworzenie instalacji sieciowej programu Visual Studio](create-a-network-installation-of-visual-studio.md)

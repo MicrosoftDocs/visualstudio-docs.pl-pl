@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: 04294ca3-bf9c-4c76-86f1-898c2140de27
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 43e8f9806c724da414940c92b6609846486a49c0
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: b40620388ffb3aefcd77eeb3f60355ed293ea59d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98533527"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970572"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 `CommentMarkAtProfile`Metoda wstawia wartość znacznika czasu, znak liczbowy i ciąg komentarza do pliku *. vsp* . Wartość sygnatury czasowej może służyć do synchronizowania zdarzeń zewnętrznych. Dla znacznika i komentarza, który ma zostać wstawiony, Profilowanie wątku, który zawiera funkcję CommentMarkAtProfile, musi być włączone.
@@ -117,5 +117,5 @@ void ExerciseCommentMarkAtProfile(void)
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dokumentacja interfejsu API programu Visual Studio profiler (natywna)](../profiling/visual-studio-profiler-api-reference-native.md)

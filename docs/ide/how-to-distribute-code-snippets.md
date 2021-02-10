@@ -9,17 +9,17 @@ helpviewer_keywords:
 ms.assetid: 5f717abd-e167-47ae-818c-6b0bae100ceb
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 17f477fe2d02a43cef77358e862cfdf80a079ba5
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 65b60eb1156fe3d64081724e310a41a38b54af50
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597174"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969818"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Instrukcje: dystrybuowanie fragmentów kodu
 
@@ -125,6 +125,6 @@ Ta procedura spowoduje użycie tego samego fragmentu kodu Hello world, który zo
     Console.WriteLine("Hello, World!")
     ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Fragmenty kodu](../ide/code-snippets.md)

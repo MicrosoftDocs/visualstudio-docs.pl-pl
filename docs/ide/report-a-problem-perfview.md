@@ -7,7 +7,7 @@ helpviewer_keywords:
 - ETL Trace
 author: corob-msft
 ms.author: corob
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Use perfview.exe to collect ETL traces for troubleshooting issues with Visual Studio
-ms.openlocfilehash: 9ac4d90a0da15fe2415ada02d6e8e1cdbe11af56
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6f0696a24f04d2cba52994c86a3475f56d3e7947
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770820"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970715"
 ---
 # <a name="collect-an-etl-trace-with-perfview"></a>Zbieranie śladu ETL za pomocą narzędzia PerfView
 
@@ -34,7 +34,7 @@ Pobierz narzędzia PerfView z usługi [GitHub](https://github.com/Microsoft/perf
 
 1. Kliknij prawym przyciskiem myszy pozycję **PerfView.exe** w Eksploratorze Windows i wybierz polecenie **Uruchom jako administrator** jako administrator
 1. W menu zbieranie wybierz polecenie **Zbierz**
-1. Sprawdź plik **zip**, **Scal**i **ThreadTime**.
+1. Sprawdź plik **zip**, **Scal** i **ThreadTime**.
 1. Zwiększ liczbę **okrągłych MB** do 1000.
 1. Zmień **bieżący katalog** na Zapisz ślady ETL w określonym folderze i pliku danych, jeśli chcesz zbierać więcej niż jeden raz.
 1. Aby rozpocząć rejestrowanie danych, wybierz przycisk **Rozpocznij zbieranie** .

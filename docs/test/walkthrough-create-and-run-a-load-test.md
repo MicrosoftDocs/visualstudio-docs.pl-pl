@@ -11,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: bbf075a5-96d5-48ed-a03c-330f0fc04748
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: bdcd96e8fc87a7627689af1c67a81b69b2ecee72
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+manager: jmartens
+ms.openlocfilehash: 888bf1f699027ab883a01ba74d8efc5703c91c9a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598266"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968973"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Przewodnik: Tworzenie i uruchamianie testu obciążenia zawierającego testy jednostkowe
 
@@ -147,7 +147,7 @@ W tym instruktażu wykonasz następujące zadania:
 
 2. Jeśli symulacja testowa przekracza wartości progowe, ikony są wyświetlane w węzłach kontrolki drzewa, aby wskazać naruszenie progu. Błędy mają czerwoną nakładkę koła, ostrzeżenia mają żółty trójkąt nakładki. Można znaleźć licznik, który przekroczył próg i przedstawić go na wykresie, przeciągając ikonę na Graf. Można to zrobić, gdy test jest uruchomiony.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Edytuj mieszany test, aby określić, które testy należy uwzględnić w scenariuszu testu obciążenia](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)
 - [Określanie typów sieci wirtualnych](../test/specify-virtual-network-types-in-a-load-test-scenario.md)

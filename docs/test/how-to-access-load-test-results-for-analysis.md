@@ -15,13 +15,13 @@ helpviewer_keywords:
 ms.assetid: b0a3e694-2894-479b-b270-7e61e9fafacd
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 95108a5901a00582e708f6bf3660cb07d2126e0a
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 5d3d52266bf94c0badefb71d5109ad393e071db5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442602"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970455"
 ---
 # <a name="how-to-access-load-test-results-for-analysis"></a>Instrukcje: uzyskiwanie dostępu do wyników testu obciążenia na potrzeby analizy
 
@@ -54,6 +54,6 @@ Wynik testu obciążenia dla zakończonego testu obciążenia zawiera próbki li
 
      Można zarządzać innymi aspektami wyników testu obciążenia w oknie dialogowym **Otwórz i Zarządzaj wynikami** , w tym importowaniem, eksportowaniem i usuwaniem wyników testu obciążenia. Aby uzyskać więcej informacji, zobacz [Zarządzanie wynikami testów obciążenia w repozytorium wyników testów obciążenia](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Analizowanie wyników testów obciążenia](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

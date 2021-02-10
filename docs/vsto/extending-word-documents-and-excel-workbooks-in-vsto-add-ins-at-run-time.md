@@ -18,15 +18,15 @@ helpviewer_keywords:
 - HasVstoObject method
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4686b2cd3a3ca5d4be7eefee9881039b9914a9b8
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 465e28ed0c632bba45fac1670dd40cd90ef417f0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847831"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970377"
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time"></a>Rozwiń dokumenty programu Word i skoroszyty programu Excel w dodatkach VSTO w czasie wykonywania
   Dodatku VSTO można użyć do dostosowania dokumentów programu Word i skoroszytów programu Excel w następujący sposób:
@@ -123,7 +123,7 @@ ms.locfileid: "96847831"
 
  `HasVstoObject`Metoda jest przydatna, gdy chcesz uruchomić kod tylko wtedy, gdy określony obiekt pakietu Office ma rozszerzony obiekt. Na przykład jeśli masz dodatek narzędzi VSTO dla programu Word, który obsługuje zdarzenie, <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> Aby usunąć formanty zarządzane z dokumentu przed jego zapisaniem, użyj `HasVstoObject` metody w celu ustalenia, czy dokument został rozszerzony. Jeśli dokument nie został rozszerzony, nie może mieć zarządzanych formantów i program obsługi zdarzeń może zwrócić bez próby oczyszczenia formantów w dokumencie.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dodatki narzędzi VSTO programu](../vsto/programming-vsto-add-ins.md)
 - [Dodawanie kontrolek do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [Elementy hosta i formanty hosta — Omówienie](../vsto/host-items-and-host-controls-overview.md)

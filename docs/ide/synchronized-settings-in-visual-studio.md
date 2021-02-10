@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: a3d2ea29-be5d-4012-9820-44b06adbb7dd
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 310e716f890dcc2185d6ebf6e60411934a1761f4
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 396981533502f2687040f470ded9b490cab1ef7a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560918"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970637"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Synchronizuj ustawienia programu Visual Studio na wielu komputerach
 
@@ -31,17 +31,17 @@ Domyślnie synchronizowane są następujące ustawienia:
 
 - Układy okien zdefiniowane przez użytkownika w **oknie**  >  **Zarządzanie układami** okien.
 
-- Następujące opcje na stronach opcje **narzędzi**  >  **Options** :
+- Następujące opcje na stronach opcje **narzędzi**  >   :
 
-  - Motyw i pasek menu ustawienia wielkości liter na **Environment**  >  stronie **Ogólne** opcje środowiska.
+  - Motyw i pasek menu ustawienia wielkości liter na   >  stronie **Ogólne** opcje środowiska.
 
-  - Wszystkie ustawienia na **Environment**  >  stronie opcje **czcionek i kolorów** środowiska.
+  - Wszystkie ustawienia na   >  stronie opcje **czcionek i kolorów** środowiska.
 
-  - Wszystkie skróty klawiaturowe na **Environment**  >  stronie opcje **klawiatury** środowiska.
+  - Wszystkie skróty klawiaturowe na   >  stronie opcje **klawiatury** środowiska.
 
-  - Wszystkie ustawienia na **Environment**  >  **kartach środowiska i** na stronie Opcje systemu Windows.
+  - Wszystkie ustawienia na   >  **kartach środowiska i** na stronie Opcje systemu Windows.
 
-  - Wszystkie ustawienia na **Environment**  >  stronie opcje **uruchamiania** środowiska.
+  - Wszystkie ustawienia na   >  stronie opcje **uruchamiania** środowiska.
 
   - Wszystkie ustawienia na stronach opcje **edytora tekstu** , na przykład [Preferencje stylu kodu](code-styles-and-code-cleanup.md).
 
@@ -49,12 +49,12 @@ Domyślnie synchronizowane są następujące ustawienia:
 
 ## <a name="turn-off-synchronized-settings-on-a-particular-computer"></a>Wyłączanie ustawień synchronizowanych na określonym komputerze
 
-Zsynchronizowane ustawienia dla programu Visual Studio są domyślnie włączone. Zsynchronizowane ustawienia można wyłączyć na komputerze, przechodząc na stronę opcje **narzędzi**  >  **Options**  >  **Environment**  >  **konta** środowiska i usuwając zaznaczenie opcji **Synchronizuj ustawienia na urządzeniach po zalogowaniu się do programu Visual Studio**.
+Zsynchronizowane ustawienia dla programu Visual Studio są domyślnie włączone. Zsynchronizowane ustawienia można wyłączyć na komputerze, przechodząc na stronę opcje **narzędzi**  >    >    >  **konta** środowiska i usuwając zaznaczenie opcji **Synchronizuj ustawienia na urządzeniach po zalogowaniu się do programu Visual Studio**.
 
 Jeśli na przykład nie zdecydujesz się synchronizować ustawień w programie Visual Studio na komputerze "A", wszelkie zmiany ustawień wprowadzone na komputerze "A" nie są wyświetlane na komputerze "B" lub na komputerze "C". Komputery "B" i "C" będą nadal synchronizowane ze sobą, ale nie z komputerem "A".
 
 > [!NOTE]
-> Jeśli nie zdecydujesz się synchronizować ustawień przez odwybór opcji na **Tools**  >  stronie **Opcje** narzędzi  >  **Environment**  >  **konta** środowiska, inne wersje lub wersje programu Visual Studio, które znajdują się na tym samym komputerze, nie mają wpływu na te ustawienia. Te równoległe instalacje programu Visual Studio będą nadal synchronizować swoje ustawienia (o ile nie zostanie ponownie wybrana opcja).
+> Jeśli nie zdecydujesz się synchronizować ustawień przez odwybór opcji na   >  stronie **Opcje** narzędzi  >    >  **konta** środowiska, inne wersje lub wersje programu Visual Studio, które znajdują się na tym samym komputerze, nie mają wpływu na te ustawienia. Te równoległe instalacje programu Visual Studio będą nadal synchronizować swoje ustawienia (o ile nie zostanie ponownie wybrana opcja).
 
 ## <a name="synchronize-settings-across-visual-studio-ide-products-and-editions"></a>Synchronizuj ustawienia w produktach i wersjach środowiska IDE programu Visual Studio
 
@@ -91,7 +91,7 @@ Niektóre ustawienia, takie jak układ okna narzędzi, nie są współużytkowan
 
 Aby zresetować wszystkie ustawienia do ustawień domyślnych, zaloguj się do programu Visual Studio, a następnie wybierz pozycję **Narzędzia**  >  **Importuj i Eksportuj ustawienia** , aby otworzyć **Kreatora importowania i eksportowania ustawień**. Wybierz pozycję **Zresetuj wszystkie ustawienia** , a następnie postępuj zgodnie z pozostałymi krokami kreatora.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Personalizowanie środowiska IDE](../ide/personalizing-the-visual-studio-ide.md)
 - [Ustawienia środowiska](../ide/environment-settings.md)

@@ -19,15 +19,15 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], features available
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 24db499602642f6ec980628d290ec8b5dd07fed3
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 05a17b373f409e91f9360cbd3ba92f88bd3f48e8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847809"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970403"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Funkcje dostępne według aplikacji pakietu Office i typu projektu
   Program Visual Studio zawiera kilka typów szablonów projektów, które obsługują różne scenariusze biznesowe dla Microsoft Office aplikacji, w tym następujące typy:
@@ -52,7 +52,7 @@ ms.locfileid: "96847809"
 ## <a name="features-available-in-different-project-types"></a>Funkcje dostępne w różnych typach projektów
  W poniższej tabeli pokazano, które typy projektów zapewniają każdą funkcję.
 
-|Cechy|Typy projektów, które udostępniają funkcję|Dalsze informacje|
+|Cecha|Typy projektów, które udostępniają funkcję|Dodatkowe informacje|
 |-------------|--------------------------------------------|---------------------|
 |Okienko akcji.|Projekty na poziomie dokumentu.|[Przegląd okienka Akcje](../vsto/actions-pane-overview.md)|
 |Wdrożenie ClickOnce.|Projekty a i na poziomie dokumentu.|[Wdróż rozwiązanie pakietu Office](../vsto/deploying-an-office-solution.md)|
@@ -68,7 +68,7 @@ ms.locfileid: "96847809"
 |Dostosowania wstążki.|Projekty na poziomie dokumentu.<br /><br /> Projekty dodatków VSTO dla następujących aplikacji:<br /><br /> — Excel<br />— InfoPath (tylko InfoPath 2013 i InfoPath 2010)<br />-Outlook<br />— PowerPoint<br />— Projekt<br />— Visio<br />-Word|[Omówienie wstążki](../vsto/ribbon-overview.md)|
 |Visual Document Designer.|Projekty na poziomie dokumentu.|[Projekty pakietu Office w środowisku programu Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md)|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wprowadzenie &#40;Programowanie Office w programie Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Omówienie programowania rozwiązań dla pakietu Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Przegląd okienka Akcje](../vsto/actions-pane-overview.md)
