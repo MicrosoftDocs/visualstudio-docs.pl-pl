@@ -11,21 +11,21 @@ helpviewer_keywords:
 - C#, code snippets
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 46b2d231f1fa9a0e90538c426f48c86e5fafecbe
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: e4656e0769075be26db5bd06108093a49fb5e2af
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96478760"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941544"
 ---
 # <a name="c-code-snippets"></a>Fragmenty kodu w języku C#
 
 Fragmenty kodu są gotowymi fragmentami kodu, które można szybko wstawić do kodu. Na przykład `for` fragment kodu tworzy pustą `for` pętlę. Niektóre fragmenty kodu są otoczone fragmentami kodu, które umożliwiają wybranie wierszy kodu, a następnie wybranie fragmentu kodu, który zawiera zaznaczone wiersze kodu. Na przykład po wybraniu wierszy kodu, a następnie aktywowaniu `for` fragmentu kodu, tworzy `for` pętlę z tymi wierszami kodu w bloku pętli. Fragmenty kodu mogą szybciej i bardziej niezawodnie pisać kod programu.
 
-Można wstawić fragment kodu w lokalizacji kursora lub wstawić fragment kodu otaczającego wokół aktualnie zaznaczonego kodu. Wstawianie fragmentu kodu jest wywoływane przez **Wstawianie fragmentu kodu** lub **Otocz za** pomocą poleceń w menu **IntelliSense** lub za pomocą skrótów klawiaturowych **Ctrl** + **k**,**X** lub **Ctrl** + **k**, odpowiednio.**S**
+Można wstawić fragment kodu w lokalizacji kursora lub wstawić fragment kodu otaczającego wokół aktualnie zaznaczonego kodu. Wstawianie fragmentu kodu jest wywoływane przez **Wstawianie fragmentu kodu** lub **Otocz za** pomocą poleceń w menu **IntelliSense** lub za pomocą skrótów klawiaturowych **Ctrl** + **k**,**X** lub **Ctrl** + **k**, odpowiednio.
 
 Wstawienie wstawka **kodu** zawiera nazwę fragmentu kodu dla wszystkich dostępnych fragmentów kodu. Wstawianie fragmentów kodu zawiera również okno dialogowe dane wejściowe, w którym można wpisać nazwę fragmentu kodu lub część nazwy fragmentu kodu. Wstawianie fragmentu kodu wyróżnia najbliższe dopasowanie do nazwy fragmentu kodu. Naciśnięcie klawisza **Tab** w dowolnym momencie spowoduje odrzucenie wstawionego fragmentu kodu i wstawienie aktualnie zaznaczonego fragmentu kodu. Naciśnięcie klawisza **ESC** lub kliknięcie myszy w edytorze kodu spowoduje odrzucenie wstawionego fragmentu kodu bez wstawiania fragmentu kodu.
 
@@ -43,7 +43,7 @@ Domyślnie następujące fragmenty kodu są zawarte w programie Visual Studio dl
 |class|Tworzy deklarację klasy.|Wewnątrz przestrzeni nazw (łącznie z globalną przestrzenią nazw), klasą lub strukturą.|
 |obiektów|Tworzy Konstruktor dla klasy zawierającej.|Wewnątrz klasy.|
 |CW|Tworzy wywołanie <xref:System.Console.WriteLine%2A> .|Wewnątrz metody, indeksatora, metody dostępu do właściwości lub metodzie dostępu do zdarzeń.|
-|do|Tworzy [do](/dotnet/csharp/language-reference/keywords/do) `while` pętlę do.|Wewnątrz metody, indeksatora, metody dostępu do właściwości lub metodzie dostępu do zdarzeń.|
+|do|Tworzy [](/dotnet/csharp/language-reference/keywords/do) `while` pętlę do.|Wewnątrz metody, indeksatora, metody dostępu do właściwości lub metodzie dostępu do zdarzeń.|
 |else|Tworzy blok [else](/dotnet/csharp/language-reference/keywords/if-else) .|Wewnątrz metody, indeksatora, metody dostępu do właściwości lub metodzie dostępu do zdarzeń.|
 |enum|Tworzy deklarację [wyliczenia](/dotnet/csharp/language-reference/keywords/enum) .|Wewnątrz przestrzeni nazw (łącznie z globalną przestrzenią nazw), klasą lub strukturą.|
 |equals|Tworzy deklarację metody, która zastępuje <xref:System.Object.Equals%2A> metodę zdefiniowaną w <xref:System.Object> klasie.|Wewnątrz klasy lub struktury.|

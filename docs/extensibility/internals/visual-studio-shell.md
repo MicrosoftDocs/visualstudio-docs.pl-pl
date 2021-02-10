@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: cb124ef4-1a6b-4bfe-bfbf-295ef9c07f36
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 546a76d1533efaef28ddafb14b04514f64e9d4f9
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 9ebc01c76c17319ebcfe2b61c06a6f2365a68122
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97488053"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941622"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Powłoka jest głównym agentem integracji w programie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Powłoka zawiera niezbędne funkcje umożliwiające pakietów VSPackage udostępniania wspólnych usług. Ponieważ celem architektury [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] jest przyjęcie podstawowych funkcji w pakietów VSPackage, powłoka jest strukturą, która zapewnia podstawowe funkcje i obsługuje komunikację między składnikami pakietów VSPackage.
@@ -80,7 +80,7 @@ ms.locfileid: "97488053"
 
 - **Przybornik**
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>
 - <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>

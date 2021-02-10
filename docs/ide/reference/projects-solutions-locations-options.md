@@ -8,15 +8,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Projects.Locations
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 171635e9f08b0c427679d874dee3466d9eb5e3f6
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 605198da53de13c50666aceb0eb5c5cb748936a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616827"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939763"
 ---
 # <a name="options-dialog-box-projects-and-solutions--locations"></a>Opcje — okno dialogowe: projekty i \> lokalizacje rozwiązań
 
@@ -36,7 +36,7 @@ Określa domyślną lokalizację używaną do wyszukiwania szablonów projektu u
 
 Określa domyślną lokalizację używaną do wyszukiwania szablonów elementów utworzonych przez użytkownika. Aby uzyskać więcej informacji, zobacz [How to: Lokalizowanie i organizowanie szablonów](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Opcje — okno dialogowe: projekty i rozwiązania \> Ogólne](projects-and-solutions-options-dialog-box.md)
 - [Okno dialogowe Opcje, projekty i rozwiązania, kompilacja i uruchomienie](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)

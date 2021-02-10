@@ -17,18 +17,18 @@ helpviewer_keywords:
 ms.assetid: 545a4005-d283-4110-9821-c78a9833c250
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d8907018c7f5b131747e802902d88a02ca95c2cc
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: fdfdabf66c48a875f3b4316ac22e1911c141275c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350975"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940530"
 ---
 # <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Instrukcje: podpisywanie plików instalacyjnych za pomocą SignTool.exe (ClickOnce)
-Za pomocą *SignTool.exe* można podpisać program instalacyjny ( *setup.exe* ). Ten proces zapewnia, że naruszone pliki nie są zainstalowane na komputerach użytkowników końcowych.
+Za pomocą *SignTool.exe* można podpisać program instalacyjny (*setup.exe*). Ten proces zapewnia, że naruszone pliki nie są zainstalowane na komputerach użytkowników końcowych.
 
  Domyślnie technologia ClickOnce ma podpisane manifesty i podpisany program instalacyjny. Jeśli jednak chcesz zmienić parametry programu instalacyjnego później, należy podpisać program instalacyjny później. Jeśli zmienisz parametry po podpisaniu programu instalacyjnego, podpis zostanie uszkodzony.
 
@@ -40,7 +40,7 @@ Za pomocą *SignTool.exe* można podpisać program instalacyjny ( *setup.exe* ).
 
 2. Wybierz projekt w **Eksplorator rozwiązań**.
 
-3. W menu **projekt** kliknij polecenie właściwości *ProjectName* **Properties**.
+3. W menu **projekt** kliknij polecenie właściwości *ProjectName* .
 
 4. Na stronie **podpisywanie** Wyczyść **manifesty ClickOnce**.
 

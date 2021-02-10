@@ -5,17 +5,17 @@ ms.date: 01/28/2019
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 572e02d614f0c6b5f782d683ff7e42e954b54441
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.openlocfilehash: 1f6376978826afc2946cfac25ab635d0b7533dc4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352339"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939542"
 ---
 # <a name="python-web-application-project-templates"></a>Szablony projektu aplikacji sieci Web w języku Python
 
@@ -27,7 +27,7 @@ Aby uzyskać informacje na temat wdrażania aplikacji sieci Web w języku Python
 
 ## <a name="use-a-project-template"></a>Korzystanie z szablonu projektu
 
-Projekt można utworzyć na podstawie szablonu przy użyciu polecenia **plik**  >  **Nowy**  >  **projekt**. Aby wyświetlić szablony dla projektów sieci Web, **Python**wybierz opcję  >  **Sieć Web** języka Python po lewej stronie okna dialogowego. Następnie wybierz wybrany szablon, podając nazwy projektu i rozwiązania, ustaw opcje dla katalogu rozwiązania i repozytorium git, a następnie wybierz **przycisk OK**.
+Projekt można utworzyć na podstawie szablonu przy użyciu polecenia **plik**  >  **Nowy**  >  **projekt**. Aby wyświetlić szablony dla projektów sieci Web, wybierz opcję  >  **Sieć Web** języka Python po lewej stronie okna dialogowego. Następnie wybierz wybrany szablon, podając nazwy projektu i rozwiązania, ustaw opcje dla katalogu rozwiązania i repozytorium git, a następnie wybierz **przycisk OK**.
 
 ![Okno dialogowe nowego projektu dla aplikacji sieci Web](media/projects-new-project-dialog-web.png)
 
@@ -39,7 +39,7 @@ Wszystkie inne szablony opierają się na butelkach, kolbach lub Djangoych struk
 
 Wszystkie **puste szablony \<framework> projektu sieci Web** tworzą projekt z bardziej lub mniej minimalnym kodem, a także niezbędnymi zależnościami zadeklarowanymi w pliku *requirements.txt* .
 
-| Szablon | Opis |
+| Template | Opis |
 | --- | --- |
 | **Pusty projekt sieci Web** | Generuje minimalną aplikację w *App.py* ze stroną główną dla `/` i `/hello/<name>` stronę, która jest używana do wyświetlania `<name>` bardzo krótkiego szablonu strony wbudowanej. |
 | **Pusty projekt sieci Web Django** | Generuje projekt Django z podstawową strukturą lokacji Django, ale nie Django aplikacji. Aby uzyskać więcej informacji, zobacz [Szablony Django](python-django-web-application-project-template.md) i [Naucz Django krok 1](learn-django-in-visual-studio-step-01-project-and-solution.md). |
@@ -47,9 +47,9 @@ Wszystkie **puste szablony \<framework> projektu sieci Web** tworzą projekt z b
 
 ### <a name="web-group"></a>Grupa sieci Web
 
-Wszystkie szablony ** \<Framework> projektu sieci Web** tworzą startową aplikację sieci Web o identycznym projekcie niezależnie od wybranej struktury. Aplikacja zawiera strony Strona główna, informacje i kontakt, a także pasek nawigacyjny i odpowiada na projektowanie przy użyciu ładowania początkowego. Każda aplikacja jest odpowiednio skonfigurowana do obsługi plików statycznych (CSS, JavaScript i Fonts) i używa mechanizmu szablonu strony odpowiedniego dla struktury.
+Wszystkie szablony **\<Framework> projektu sieci Web** tworzą startową aplikację sieci Web o identycznym projekcie niezależnie od wybranej struktury. Aplikacja zawiera strony Strona główna, informacje i kontakt, a także pasek nawigacyjny i odpowiada na projektowanie przy użyciu ładowania początkowego. Każda aplikacja jest odpowiednio skonfigurowana do obsługi plików statycznych (CSS, JavaScript i Fonts) i używa mechanizmu szablonu strony odpowiedniego dla struktury.
 
-| Szablon | Opis |
+| Template | Opis |
 | --- | --- |
 | **Projekt sieci Web butelek** | Generuje aplikację, której pliki statyczne są zawarte w folderze *statycznym* i obsługiwane przez kod w *App.py*. Routing dla poszczególnych stron jest zawarty w *Routes.py*, a folder *widoki* zawiera szablony stron.|
 | **Projekt sieci Web Django** | Generuje projekt Django i aplikację Django z trzema stronami, obsługą uwierzytelniania i bazą danych programu SQLite (ale bez modeli danych). Aby uzyskać więcej informacji, zobacz [Szablony Django](python-django-web-application-project-template.md) i [Naucz Django Step 4](learn-django-in-visual-studio-step-04-full-django-project-template.md). |
@@ -58,9 +58,9 @@ Wszystkie szablony ** \<Framework> projektu sieci Web** tworzą startową aplika
 
 ### <a name="polls-group"></a>Grupa sond
 
-Szablony ** \<framework> projektu sieci Web dotyczące sondowania** tworzą startową aplikację sieci Web, za pomocą której użytkownicy mogą głosować na różnych pytaniach dotyczących sondowania. Każda aplikacja tworzy na podstawie struktury szablonów projektu **sieci Web** , aby użyć bazy danych do zarządzania sondami i odpowiedziami użytkowników. Aplikacje obejmują odpowiednie modele danych i specjalną stronę aplikacji (/Seed), która ładuje sondy z *samples.js* pliku.
+Szablony **\<framework> projektu sieci Web dotyczące sondowania** tworzą startową aplikację sieci Web, za pomocą której użytkownicy mogą głosować na różnych pytaniach dotyczących sondowania. Każda aplikacja tworzy na podstawie struktury szablonów projektu **sieci Web** , aby użyć bazy danych do zarządzania sondami i odpowiedziami użytkowników. Aplikacje obejmują odpowiednie modele danych i specjalną stronę aplikacji (/Seed), która ładuje sondy z *samples.js* pliku.
 
-| Szablon | Opis |
+| Template | Opis |
 | --- | --- |
 | **Projekt sieci Web w butelkach sond** | Generuje aplikację, która może być uruchamiana względem bazy danych w pamięci, MongoDB lub Table Storage platformy Azure, która jest konfigurowana przy użyciu `REPOSITORY_NAME` zmiennej środowiskowej. Modele danych i kod magazynu danych znajdują się w folderze *modele* , a plik *Settings.py* zawiera kod umożliwiający określenie, który magazyn danych jest używany. |
 | **Projekt sieci Web Django sondowań** | Generuje projekt Django i aplikację Django z trzema stronami i bazą danych programu SQLite. Obejmuje dostosowania interfejsu administracyjnego Django, aby umożliwić uwierzytelnionemu administratorowi tworzenie sond i zarządzanie nimi. Aby uzyskać więcej informacji, zobacz [Szablony Django](python-django-web-application-project-template.md) i [Naucz Django krok 6](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md). |
@@ -87,13 +87,13 @@ Po uruchomieniu projektu sieci Web na potrzeby debugowania program Visual Studio
 
 W grupie **debugowania** :
 
-- **Ścieżki wyszukiwania**, **argumenty skryptu**, **argumenty interpretera**i **ścieżka interpretera**: te opcje są takie same jak w przypadku [normalnego debugowania](debugging-python-in-visual-studio.md).
+- **Ścieżki wyszukiwania**, **argumenty skryptu**, **argumenty interpretera** i **ścieżka interpretera**: te opcje są takie same jak w przypadku [normalnego debugowania](debugging-python-in-visual-studio.md).
 - **Adres URL uruchamiania**: określa adres URL, który jest otwarty w przeglądarce. Wartość domyślna to `localhost` .
 - **Numer portu**: port, który ma być używany, jeśli żaden z nich nie jest określony w adresie URL (Domyślnie program Visual Studio wybierze opcję automatycznie). To ustawienie umożliwia przesłonięcie domyślnej wartości `SERVER_PORT` zmiennej środowiskowej, która jest używana przez szablony w celu skonfigurowania portu, na którym nasłuchuje lokalny serwer debugowania.
 
 Właściwości w grupach poleceń **Uruchom serwer** i **Debuguj serwer** (te ostatnie są poniżej informacji przedstawionych na obrazie) określają sposób uruchamiania serwera sieci Web. Ze względu na to, że wiele struktur wymaga użycia skryptu poza bieżącym projektem, skrypt można skonfigurować tutaj i nazwę modułu uruchomieniowego można przesłać jako parametr.
 
-- **Polecenie**: może to być skrypt w języku Python (plik* \* . PR* ), Nazwa modułu (jak w, `python.exe -m module_name` ) lub jeden wiersz kodu (jak w, `python.exe -c "code"` ). Wartość z listy rozwijanej wskazuje, które z tych typów są zamierzone.
+- **Polecenie**: może to być skrypt w języku Python (plik *\* . PR* ), Nazwa modułu (jak w, `python.exe -m module_name` ) lub jeden wiersz kodu (jak w, `python.exe -c "code"` ). Wartość z listy rozwijanej wskazuje, które z tych typów są zamierzone.
 - **Argumenty**: te argumenty są przekazane w wierszu polecenia po poleceniu.
 - **Środowisko**: Lista par rozdzielonych znakami nowego wiersza \<NAME> = \<VALUE> określająca zmienne środowiskowe. Te zmienne są ustawiane po wszystkich właściwościach, które mogą modyfikować środowisko, takie jak numer portu i ścieżki wyszukiwania, a więc mogą zastąpić te wartości.
 
@@ -101,7 +101,7 @@ Dowolna właściwość projektu lub zmienna środowiskowa może być określona 
 `$(StartupFile)` jest ścieżką względną do pliku startowego i `{StartupModule}` jest nieportową nazwą pliku startowego. `$(SERVER_HOST)` i `$(SERVER_PORT)` są normalnymi zmiennymi środowiskowymi, które są ustawiane przez właściwości **Uruchom adres URL** i **numer portu** , automatycznie lub przez właściwość **Environment** .
 
 > [!Note]
-> Wartości w **poleceniu uruchamiania serwera** są używane z **Debug**  >  poleceniem**uruchamiania serwera** debugowania lub **klawiszem Ctrl** + **F5**; wartości z grupy **poleceń serwera debugowania** są używane z poleceniem **Debug**  >  **Start Server** Debug lub **F5**.
+> Wartości w **poleceniu uruchamiania serwera** są używane z   >  poleceniem **uruchamiania serwera** debugowania lub **klawiszem Ctrl** + **F5**; wartości z grupy **poleceń serwera debugowania** są używane z poleceniem **Debug**  >  **Start Server** Debug lub **F5**.
 
 ### <a name="sample-bottle-configuration"></a>Przykładowa konfiguracja butelek
 

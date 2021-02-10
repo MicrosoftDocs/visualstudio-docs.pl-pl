@@ -10,28 +10,28 @@ f1_keywords:
 - vs.toolsoptionspages.r_tools.#150
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: c7c2cb57dc96d7bb0df09248eb7a877820e50521
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed2ee29fb7a0a832dd3076cbd47a7f9cd1414d96
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315086"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939477"
 ---
 # <a name="r-tools-for-visual-studio-options"></a>Opcje R Tools for Visual Studio
 
-Ustawienia są dostępne za pomocą menu Opcje **Narzędzia r Tools**  >  **Options** lub **narzędzi**  >  **Opcje** i przewijanie do **narzędzi języka r**:
+Ustawienia są dostępne za pomocą menu Opcje **Narzędzia r Tools**  >   lub **narzędzi**  >  **Opcje** i przewijanie do **narzędzi języka r**:
 
   ![Okno dialogowe opcji dla narzędzi R Tools](media/options-dialog.png)
 
 Opcje i ustawienia specyficzne dla języka R są dostępne przy użyciu poniższych metod. Należy zaznaczyć pole wyboru **Pokaż wszystkie ustawienia** w dolnej części okna dialogowego **Opcje** dla wszystkich tych sekcji do wyświetlenia.
 
-- Opcje formatowania kodu (zobacz [Opcje edytora](editing-r-code-in-visual-studio.md#editor-options): **Narzędzia**  >  **Opcje** menu, a następnie wybierz **Edytor tekstu**  >  **R**  >  **Formatting**
-- Opcje Linter (zobacz [Zaznaczanie błędów](linting-r-code.md)): **Narzędzia**  >  menu**Opcje** , a następnie wybierz **Edytor tekstu**  >  **R**  >  **lint**
-- Zaawansowane opcje edytora ([opisane w tym artykule](#text-editor--r--advanced-options)): **Narzędzia**  >  menu**Opcje** , a następnie wybierz **Edytor tekstu**  >  **R**  >  **Advanced**
-- Opcje behawioralne ([opisane w tym artykule](#r-tools--advanced-options)): **Narzędzia r Tools**  >  menu**Opcje** lub **Narzędzia**  >  **Options**, a następnie przewiń do **Narzędzia R Tools**.
+- Opcje formatowania kodu (zobacz [Opcje edytora](editing-r-code-in-visual-studio.md#editor-options): **Narzędzia**  >  **Opcje** menu, a następnie wybierz **Edytor tekstu**  >  **R**  >  
+- Opcje Linter (zobacz [Zaznaczanie błędów](linting-r-code.md)): **Narzędzia**  >  menu **Opcje** , a następnie wybierz **Edytor tekstu**  >  **R**  >  **lint**
+- Zaawansowane opcje edytora ([opisane w tym artykule](#text-editor--r--advanced-options)): **Narzędzia**  >  menu **Opcje** , a następnie wybierz **Edytor tekstu**  >  **R**  >  **Advanced**
+- Opcje behawioralne ([opisane w tym artykule](#r-tools--advanced-options)): **Narzędzia r Tools**  >  menu **Opcje** lub **Narzędzia**  >  , a następnie przewiń do **Narzędzia R Tools**.
 
 Polecenie **R Tools**  >  **nauka o danych — ustawienia** ma także wpływ na wiele różnych ustawień w programie Visual Studio. To polecenie zostało opisane w następnej sekcji.
 
@@ -43,7 +43,7 @@ Element menu **> narzędzia R Tools nauka o danych — ustawienia** KONFIGURUJE 
 
 ![Układ okna analityków danych w programie Visual Studio](media/installation-data-scientist-layout-result.png)
 
-Aby później wrócić do innych ustawień programu Visual Studio, należy najpierw użyć **Tools**  >  polecenia**Importuj i Eksportuj ustawienia** , wybierz opcję **Eksportuj wybrane ustawienia środowiska**i podaj nazwę pliku. Aby przywrócić te ustawienia, użyj tego samego polecenia i wybierz opcję **Importuj wybrane ustawienia środowiska**. Możesz również użyć tych samych poleceń, jeśli zmienisz układ Analityka danych i chcesz wrócić do niego później, zamiast używać polecenia **nauka o danych — ustawienia** .
+Aby później wrócić do innych ustawień programu Visual Studio, należy najpierw użyć   >  polecenia **Importuj i Eksportuj ustawienia** , wybierz opcję **Eksportuj wybrane ustawienia środowiska** i podaj nazwę pliku. Aby przywrócić te ustawienia, użyj tego samego polecenia i wybierz opcję **Importuj wybrane ustawienia środowiska**. Możesz również użyć tych samych poleceń, jeśli zmienisz układ Analityka danych i chcesz wrócić do niego później, zamiast używać polecenia **nauka o danych — ustawienia** .
 
 ## <a name="text-editor--r--advanced-options"></a>Edytor tekstu > opcji R > Advanced
 
@@ -57,7 +57,7 @@ Każda opcja jest ustawiona na wartość włączone lub wyłączone w celu stero
 
 ## <a name="r-tools--advanced-options"></a>Narzędzia R > opcje zaawansowane
 
-Polecenie menu Opcje **narzędzi r Tools**  >  **Options** otwiera okno dialogowe **Opcje** do opcji r:
+Polecenie menu Opcje **narzędzi r Tools**  >   otwiera okno dialogowe **Opcje** do opcji r:
 
   ![Okno dialogowe opcji dla narzędzi R Tools](media/options-dialog.png)
 

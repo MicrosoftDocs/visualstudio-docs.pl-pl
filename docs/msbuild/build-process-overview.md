@@ -8,15 +8,15 @@ helpviewer_keywords:
 - MSBuild, build process overview
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4374e6763933e2da3e6a11c5609b76e3341e1050
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: 8a7f8645cd34fe56d7d8d0f6a9efa6bf01bd13d8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353255"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939672"
 ---
 # <a name="how-msbuild-builds-projects"></a>Jak program MSBuild kompiluje projekty
 
@@ -26,7 +26,7 @@ Kompletny proces kompilacji składa się z [początkowego uruchomienia](#startup
 
 ## <a name="startup"></a>Uruchamianie
 
-MSBuild można wywołać z programu Visual Studio za pośrednictwem modelu obiektów MSBuild w *Microsoft.Build.dll*lub wywołując plik wykonywalny bezpośrednio w wierszu polecenia lub w skrypcie, na przykład w systemach ci. W obu przypadkach dane wejściowe mające wpływ na proces kompilacji obejmują plik projektu (lub obiekt projektu wewnętrznie do programu Visual Studio), prawdopodobnie plik rozwiązania, zmienne środowiskowe i przełączniki wiersza polecenia lub ich odpowiedniki. W fazie uruchamiania opcje wiersza polecenia lub ekwiwalenty modelu obiektów są używane do konfigurowania ustawień programu MSBuild, takich jak konfigurowanie rejestratorów. Właściwości ustawione w wierszu polecenia przy użyciu `-property` przełącznika lub `-p` są ustawiane jako właściwości globalne, które zastępują wszystkie wartości, które byłyby ustawione w plikach projektu, mimo że pliki projektu są odczytywane w późniejszym czasie.
+MSBuild można wywołać z programu Visual Studio za pośrednictwem modelu obiektów MSBuild w *Microsoft.Build.dll* lub wywołując plik wykonywalny bezpośrednio w wierszu polecenia lub w skrypcie, na przykład w systemach ci. W obu przypadkach dane wejściowe mające wpływ na proces kompilacji obejmują plik projektu (lub obiekt projektu wewnętrznie do programu Visual Studio), prawdopodobnie plik rozwiązania, zmienne środowiskowe i przełączniki wiersza polecenia lub ich odpowiedniki. W fazie uruchamiania opcje wiersza polecenia lub ekwiwalenty modelu obiektów są używane do konfigurowania ustawień programu MSBuild, takich jak konfigurowanie rejestratorów. Właściwości ustawione w wierszu polecenia przy użyciu `-property` przełącznika lub `-p` są ustawiane jako właściwości globalne, które zastępują wszystkie wartości, które byłyby ustawione w plikach projektu, mimo że pliki projektu są odczytywane w późniejszym czasie.
 
 W następnych sekcjach znajdują się pliki wejściowe, takie jak pliki rozwiązań lub pliki projektu.
 

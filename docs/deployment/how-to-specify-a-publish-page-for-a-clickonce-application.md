@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 9d70eebb-bdee-4b42-8e7e-7a07e199bdf7
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ecf70f5ffdd81688943892c06fdf98aae73d6c57
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: f58b7d8d4244f7c429c3866bf76c514bf24164ff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350962"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940452"
 ---
 # <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>Instrukcje: Określanie strony publikowania dla aplikacji ClickOnce
 Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji domyślna strona sieci Web (publish.htm) jest generowana i publikowana razem z aplikacją. Ta strona zawiera nazwę aplikacji, link do zainstalowania aplikacji i/lub wymagania wstępne oraz link do tematu pomocy opisującego [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . Właściwość **Publikowanie strony** dla projektu pozwala określić nazwę strony sieci Web [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji.
@@ -35,7 +35,7 @@ Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_m
 
 ### <a name="to-specify-a-custom-web-page-for-a-clickonce-application"></a>Aby określić niestandardową stronę sieci Web dla aplikacji ClickOnce
 
-1. Po wybraniu projektu w **Eksplorator rozwiązań** , w menu **projekt** kliknij polecenie **Właściwości**.
+1. Po wybraniu projektu w **Eksplorator rozwiązań**, w menu **projekt** kliknij polecenie **Właściwości**.
 
 2. Wybierz okienko **Publikowanie** .
 
@@ -49,7 +49,7 @@ Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_m
 
 ### <a name="to-prevent-the-publish-page-from-launching-each-time-you-publish"></a>Aby zapobiec uruchamianiu strony publikowania przy każdym publikowaniu
 
-1. Po wybraniu projektu w **Eksplorator rozwiązań** , w menu **projekt** kliknij polecenie **Właściwości**.
+1. Po wybraniu projektu w **Eksplorator rozwiązań**, w menu **projekt** kliknij polecenie **Właściwości**.
 
 2. Wybierz okienko **Publikowanie** .
 

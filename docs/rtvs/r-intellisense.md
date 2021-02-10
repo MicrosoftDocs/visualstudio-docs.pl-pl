@@ -5,15 +5,15 @@ ms.date: 01/24/2018
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 854f7d410e327ca92d0c5156d89bc21765e13cc7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: de6a8ffbaa0fb10929d013a351ebffa8e3f4b529
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62999137"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939438"
 ---
 # <a name="intellisense"></a>IntelliSense
 
@@ -25,19 +25,19 @@ Podczas wpisywania funkcji lub innej instrukcji funkcja IntelliSense udostępnia
 
 ![Menu funkcji IntelliSense Autouzupełnianie](media/intellisense-auto-complete-menu.png)
 
-Naciskając klawisz **Tab** (lub **Enter**lub **spację**, w zależności od sposobu ustawiania opcji) wstawia element wybrany na liście rozwijanej. Zaznaczenie można zmienić za pomocą klawiszy strzałek.
+Naciskając klawisz **Tab** (lub **Enter** lub **spację**, w zależności od sposobu ustawiania opcji) wstawia element wybrany na liście rozwijanej. Zaznaczenie można zmienić za pomocą klawiszy strzałek.
 
 Technologia IntelliSense oferuje również sugestie dotyczące elementów członkowskich obiektów języka R:
 
 ![Sugestie funkcji IntelliSense dotyczące elementów członkowskich obiektów](media/intellisense-auto-complete-r-objects.png)
 
-Naciśnięcie klawisza **ESC** całkowicie odrzuci menu. Można je przywrócić za pomocą **klawisza Ctrl** + **Space**.
+Naciśnięcie klawisza **ESC** całkowicie odrzuci menu. Można je przywrócić za pomocą **klawisza Ctrl** + .
 
 Wpisanie otwarcia `(` dla wywołania funkcji spowoduje wstawienie zamykania `)` i wyświetlenie pomocy dotyczącej sygnatur, jak pokazano wcześniej:
 
 ![Pomoc dotycząca podpisu IntelliSense dla funkcji](media/intellisense-function-signature.png)
 
-Ponownie wyskakujące okienko **ESC** zostanie odrzucone. w przypadku podpisów funkcji można przywrócić ją ponownie, **naciskając**klawisz + **SHIFT** + **Space**.
+Ponownie wyskakujące okienko **ESC** zostanie odrzucone. w przypadku podpisów funkcji można przywrócić ją ponownie, **naciskając** klawisz + **SHIFT** + .
 
 > [!Tip]
 > Jeśli parametr pomaga zasłaniać tekst znajdujący się poniżej, naciśnij i przytrzymaj klawisz **Ctrl** , aby uzyskać przezroczystość tekstu pomocy.

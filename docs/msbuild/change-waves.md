@@ -1,5 +1,5 @@
 ---
-title: Zmień fale
+title: Fale zmian
 description: Dowiedz się, jak włączyć lub wyłączyć funkcje w programie MSBuild, które potencjalnie zakłócają działanie.
 ms.date: 11/10/2020
 ms.topic: conceptual
@@ -8,18 +8,18 @@ helpviewer_keywords:
 - MSBuildDisableFeaturesFromVersion environment variable
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 monikerRange: '>=vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 68aafd8ebb97b4bf649cc41eb7739e1700c9cb1a
-ms.sourcegitcommit: 83a39d48b00c6c351e5c1707942633b7f73aaad6
+ms.openlocfilehash: 77f93b4741ee987bac871e619ccbe58e2d4d4000
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94532073"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939529"
 ---
-# <a name="change-waves"></a>Zmień fale
+# <a name="change-waves"></a>Fale zmian
 
 *Fala zmiany* to zestaw zmian zachowania w programie MSBuild, z których można zrezygnować, określając konkretną flagę jako zmienną środowiskową. Celem tej funkcji jest ostrzeganie o potencjalnie niezakłóconych zmianach, dzięki czemu można elastycznie dostosować się do tych zmian, zanim staną się one standardowe. Wszystkie funkcje w określonej fazie zmiany mogą być włączone lub wyłączone jednocześnie, a nie osobno.
 
@@ -77,7 +77,7 @@ Istnieją scenariusze, w których chcemy umieścić funkcję w fazie zmiany, prz
 
 Rezygnacja z tej firmy jest lepszym rozwiązaniem. w przeciwnym razie prawdopodobnie otrzymasz ograniczoną opinię, gdy funkcja ma wpływ na kompilacje klientów.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [MSBuild](msbuild.md)
 - [Co nowego w programie MSBuild 16](whats-new-msbuild-16-0.md)

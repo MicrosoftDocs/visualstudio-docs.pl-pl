@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 6b491d88-f79e-4686-8841-857624bdcfda
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5828fb114a4df559c46dd6ae7f64887ab48e7429
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 59206c206f04aaf3506771ee2310daebd0af273a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68919523"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939750"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Porady i wskazówki dotyczące ułatwień dostępu dla programu Visual Studio
 
@@ -47,7 +47,7 @@ Edytor programu Visual Studio zawiera wiele tekstowych "punktów końcowych", kt
 
 Środowisko IDE programu Visual Studio zawiera paski narzędzi jako wiele okien narzędzi. Poniższe skróty klawiaturowe ułatwiają dostęp do nich.
 
-|Cechy|Opis|Skrót klawiaturowy|
+|Cecha|Opis|Skrót klawiaturowy|
 |-------------|-----------------| - |
 |Paski narzędzi IDE|Wybierz pierwszy przycisk na pasku narzędzi Standardowy.|**Alt**, **Ctrl** + **Tab**|
 |Paski narzędzi okna narzędzi|Przenieś fokus do pasków narzędzi w oknie narzędzi. <br> <br> **Uwaga:** Działa to w przypadku większości okien narzędzi, ale tylko wtedy, gdy fokus jest w oknie narzędzi. Ponadto musisz wybrać klawisz SHIFT przed klawiszem ALT. W niektórych oknach narzędzi, takich jak Team Explorer, należy nacisnąć klawisz SHIFT na chwilę przed wybraniem klawisza ALT.|**SHIFT** + **Alt**|
@@ -57,7 +57,7 @@ Edytor programu Visual Studio zawiera wiele tekstowych "punktów końcowych", kt
 
 Dostępne są następujące użyteczne skróty klawiaturowe.
 
-|Cechy|Opis|Skrót klawiaturowy|
+|Cecha|Opis|Skrót klawiaturowy|
 |-------------|-----------------| - |
 |IDE|Duży kontrast włączać i wyłączać. <br> <br> **Uwaga:** Standardowy skrót klawiaturowy systemu Windows|**Lewy Alt** + **Przesuń** + w lewo **PrtScn**|
 |Okno dialogowe|Zaznacz lub wyczyść opcję pola wyboru w oknie dialogowym. <br> <br> **Uwaga:** Standardowy skrót klawiaturowy systemu Windows|**Spacja**|
@@ -65,7 +65,7 @@ Dostępne są następujące użyteczne skróty klawiaturowe.
 |Menu|Szybko uzyskuj dostęp do elementu menu za pomocą jego klawiszy skrótów. Wybierz klawisz **Alt** , a po nim podkreślone litery w menu, aby aktywować polecenie. Na przykład aby wyświetlić okno dialogowe Otwieranie projektu w programie Visual Studio, należy wybrać **Alt** + **F** + **O** + **P**.  <br><br> **Uwaga:** Standardowy skrót klawiaturowy systemu Windows|**Alt**  +  **[litera]**|
 |Pole wyszukiwania|Użyj funkcji wyszukiwania w programie Visual Studio.|**Ctrl** + **P**|
 |Okno przybornika|Przechodzenie między kartami przybornika.|**Ctrl** + **Strzałka w górę**<br /><br /> oraz<br /><br /> **Ctrl** + **Strzałka w dół**|
-|Okno przybornika|Dodaj kontrolkę z przybornika do formularza lub projektanta.|**Wejść**|
+|Okno przybornika|Dodaj kontrolkę z przybornika do formularza lub projektanta.|**Enter**|
 |Opcje — okno dialogowe: środowisko > klawiatura|Usuń kombinację klawiszy wprowadzoną w opcji **naciśnij klawisze skrótów** .|**Backspace**|
 |Okno narzędzia powiadomień|Otwórz okno narzędzia powiadomienia przy użyciu dwóch kombinacji klawiszy skrótów klawiaturowych, po których jeden następuje. Następnie należy wyświetlić powiadomienie przy użyciu klawiszy strzałek, aby je wybrać.| **Ctrl** + **&#92;**, **Ctrl** + **N**|
 
@@ -107,7 +107,7 @@ Oto kroki tej procedury:
 
 1. W oknie dialogowym **dźwięk** kliknij kartę **dźwięki** .
 
-1. W obszarze **zdarzenia programu**przewiń do **Microsoft Visual Studio**, a następnie wybierz dźwięki, które chcesz zastosować do wybranych zdarzeń.
+1. W obszarze **zdarzenia programu** przewiń do **Microsoft Visual Studio**, a następnie wybierz dźwięki, które chcesz zastosować do wybranych zdarzeń.
 
    ![Karta dźwięki apletu dźwięk w systemie Windows 10](media/sound-applet.png "Karta dźwięki apletu dźwięk w systemie Windows 10")
 

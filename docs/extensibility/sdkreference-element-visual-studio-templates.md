@@ -8,15 +8,15 @@ ms.topic: reference
 ms.assetid: 72c8b352-0b7a-42b3-ba5d-2a2d1e90c34b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a1272a4765559fcfcde1aa60c57099b5d707f46
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 3ab748a309bf57af79753596ede11b371589faa8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901690"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941567"
 ---
 # <a name="sdkreference-element-visual-studio-templates"></a>SDKReference, element (szablony Visual Studio)
 Określa, że szablon elementu używa odwołania do zestawu SDK.
@@ -62,7 +62,7 @@ Określa, że szablon elementu używa odwołania do zestawu SDK.
 ...
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [References, element (szablony Visual Studio)](../extensibility/references-element-visual-studio-templates.md)
 - [Reference, element (szablony Visual Studio)](../extensibility/reference-element-visual-studio-templates.md)
 - [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)

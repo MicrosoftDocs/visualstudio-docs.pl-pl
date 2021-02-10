@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Object Browser, icons in Class View
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e0348c1f6c51f0a82328814be671d8f44e3d4a7
-ms.sourcegitcommit: 3922edfe67063e1ede418cdbf6aa6293117c4855
+ms.openlocfilehash: 551033ce7dcd7b8755124b86734243470442b6e0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98773350"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939984"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Widok klasy i Przeglądarka obiektów, ikony
 
@@ -69,6 +69,6 @@ Poniższe ikony sygnałów mają zastosowanie do wszystkich poprzednich ikon i w
 > [!TIP]
 > Aby wyświetlić więcej obrazów aplikacji i ikon, które pojawiają się w programie Visual Studio, Pobierz [**bibliotekę obrazów programu Visual Studio**](https://www.microsoft.com/download/details.aspx?id=35825).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Wyświetlanie struktury kodu](../ide/viewing-the-structure-of-code.md)

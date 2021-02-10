@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: 0908d354-aa5c-4518-8631-e25b8e7649e5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cd9f65fbce6f0326fab89acfef601652c9bc7b9
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 06de8e10c57bdf6278310467d3cf0505b9c8ce4f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150889"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939490"
 ---
 # <a name="callercallee-view---instrumentation-data"></a>Widok wywołujący/wywoływany-Dane instrumentacji
 Widok wywołujący/wywoływany wyświetla informacje profilowania dotyczące wybranej funkcji i jej funkcji nadrzędnych i podrzędnych w drzewie wywołań. Widok wywołujący/wywoływany zawiera trzy siatki.
@@ -92,7 +92,7 @@ Widok wywołujący/wywoływany wyświetla informacje profilowania dotyczące wyb
 |**Maksymalny czas wyłączny aplikacji**|Maksymalny czas wyłączny aplikacji wywołania tej funkcji w tym kontekście.|
 |**Minimalny czas wyłączny aplikacji**|Minimalny czas wyłączny aplikacji w wywołaniu tej funkcji w tym kontekście.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)
 - [Widok wywołujący/wywoływany-Dane próbkowania](../profiling/caller-callee-view-sampling-data.md)
 - [Widok wywołujący/wywoływany — Dane próbkowania pamięci platformy .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)

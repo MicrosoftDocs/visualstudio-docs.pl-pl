@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 63b3478e-e08a-420b-a0ec-76767e0cb289
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11a1619eaa625e086ac93bfa0f9e208239f8c844
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 37779a8c790e50e63f70dfd9023d3ba6a84d0170
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305248"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940153"
 ---
 # <a name="command-placement-guidelines"></a>Wskazówki dotyczące umieszczania poleceń
 Najlepsze praktyki dotyczące pozycjonowania poleceń w zintegrowanym środowisku programistycznym (IDE) programu Visual Studio różnią się w zależności od rozmiaru zestawu poleceń. Polecenia są definiowane i pozycjonowane zgodnie z informacjami w plikach *. vsct* .

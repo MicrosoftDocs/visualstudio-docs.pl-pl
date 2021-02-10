@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Concurrency Visualizer, common patterns for poorly-behaved multithreaded applications
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f6d5139a0327af05f67c2a7429b1055fa80c2175
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: 9fc83fd49184a0bb784b44ec80588571e8d6e560
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98533553"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941323"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Typowe nieprawidłowo działające wzorce dla aplikacji wielowątkowych
 
@@ -70,6 +70,6 @@ Nadmierne lub nieprawidłowe użycie operacji we/wy jest typową przyczyną niee
 
 Zablokuj convoys występuje, gdy aplikacja uzyskuje blokady w pierwszej, obsługiwanej kolejności, a szybkość przybycia dla blokady jest wyższa niż szybkość pozyskiwania. Kombinacja tych dwóch warunków powoduje, że żądania zablokowania zaczynają tworzyć kopie zapasowe. Jednym ze sposobów zwalczenia tego problemu jest użycie blokad nieuczciwych lub blokad, które zapewniają dostęp do pierwszego wątku, aby znaleźć je w Stanach odblokowane. Na poprzedniej ilustracji przedstawiono zachowanie konwoju. Aby rozwiązać ten problem, spróbuj zmniejszyć rywalizację dla obiektów synchronizacji i spróbuj użyć nieuczciwych blokad.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 [Widok wątków](../profiling/threads-view-parallel-performance.md)

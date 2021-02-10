@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 001fbfce-a278-4502-aa27-26d65dd61453
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bdb9f2cee62c126f7a8b91fb7be57f558c9a7e5c
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: 884af287ced5a13cf4483e01617ffaf594d03e66
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98533436"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941206"
 ---
 # <a name="concurrency-namespace-concurrency-visualizer"></a>Przestrzeń nazw współbieżności (Concurrency Visualizer)
 `Concurrency`Przestrzeń nazw zawiera klasy i funkcje, które zapewniają dostęp do środowisko uruchomieniowe współbieżności, współbieżne środowisko programistyczne dla języka C++. Aby uzyskać więcej informacji, zobacz [środowisko uruchomieniowe współbieżności](/cpp/parallel/concrt/concurrency-runtime).
@@ -41,5 +41,5 @@ namespace Concurrency;
 ## <a name="requirements"></a>Wymagania
  **Nagłówek:** cvmarkersobj. h
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dokumentacja biblioteki języka C](../profiling/c-library-reference.md)

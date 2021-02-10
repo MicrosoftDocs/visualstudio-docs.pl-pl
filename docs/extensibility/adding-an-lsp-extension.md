@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26f78be8708e61370be3256c8cde481d5c61c89d
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: d86f57abdc96e4fc4f2abbb781e9437c74854a7c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598149"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939295"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Dodawanie rozszerzenia Language Server Protocol
 
@@ -45,50 +45,50 @@ Aby uzyskać więcej informacji na temat tworzenia przykładowego serwera język
 
 W poniższych tabelach przedstawiono, które funkcje programu LSP są obsługiwane w programie Visual Studio:
 
-Wiadomość | Ma pomoc techniczną w programie Visual Studio
+Komunikat | Ma pomoc techniczną w programie Visual Studio
 --- | ---
-inicjacj | yes
-Initialize | yes
-shutdown | yes
-Zakończ | yes
-$/cancelRequest | yes
-okno/showMessage | yes
-okno/showMessageRequest | yes
-okno/logMessage | yes
+inicjacj | tak
+Initialize | tak
+shutdown | tak
+Zakończ | tak
+$/cancelRequest | tak
+okno/showMessage | tak
+okno/showMessageRequest | tak
+okno/logMessage | tak
 Telemetria/wydarzenie |
 Klient/registerCapability |
 Klient/unregisterCapability |
-obszar roboczy/didChangeConfiguration | yes
-obszar roboczy/didChangeWatchedFiles | yes
-obszar roboczy/symbol | yes
-obszar roboczy/executeCommand | yes
-obszar roboczy/applyEdit | yes
-TextDocument/publishDiagnostics | yes
-TextDocument/didOpen | yes
-TextDocument/didChange | yes
+obszar roboczy/didChangeConfiguration | tak
+obszar roboczy/didChangeWatchedFiles | tak
+obszar roboczy/symbol | tak
+obszar roboczy/executeCommand | tak
+obszar roboczy/applyEdit | tak
+TextDocument/publishDiagnostics | tak
+TextDocument/didOpen | tak
+TextDocument/didChange | tak
 TextDocument/willSave |
 TextDocument/willSaveWaitUntil |
-TextDocument/didSave | yes
-TextDocument/didClose | yes
-Dokumentowanie/uzupełnianie | yes
-zakończenie/rozwiązanie | yes
-TextDocument/Aktywuj | yes
-TextDocument/signatureHelp | yes
-TextDocument/References | yes
-TextDocument/documentHighlight | yes
-TextDocument/documentSymbol | yes
-TextDocument/formatowanie | yes
-TextDocument/rangeFormatting | yes
+TextDocument/didSave | tak
+TextDocument/didClose | tak
+Dokumentowanie/uzupełnianie | tak
+zakończenie/rozwiązanie | tak
+TextDocument/Aktywuj | tak
+TextDocument/signatureHelp | tak
+TextDocument/References | tak
+TextDocument/documentHighlight | tak
+TextDocument/documentSymbol | tak
+TextDocument/formatowanie | tak
+TextDocument/rangeFormatting | tak
 TextDocument/onTypeFormatting |
-TextDocument/Definition | yes
-TextDocument/codeAction | yes
+TextDocument/Definition | tak
+TextDocument/codeAction | tak
 TextDocument/codeLens |
 codeLens/Rozwiąż |
 TextDocument/documentLink |
 documentLink/Rozwiąż |
-TextDocument/Zmień nazwę | yes
+TextDocument/Zmień nazwę | tak
 
-## <a name="get-started"></a>Wprowadzenie
+## <a name="get-started"></a>Rozpoczęcie pracy
 
 > [!NOTE]
 > Począwszy od programu Visual Studio 2017 w wersji 15,8, obsługa protokołu Common Language Server jest wbudowana w program Visual Studio. Jeśli skompilowano rozszerzenia LSP przy użyciu wersji zapoznawczej [klienta serwera językowego](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview) , program przestanie działać po uaktualnieniu do wersji 15,8 lub nowszej. Aby Twoje rozszerzenia dostawcy LSP działały ponownie, należy wykonać następujące czynności:
@@ -109,7 +109,7 @@ TextDocument/Zmień nazwę | yes
 
 Aby utworzyć rozszerzenie usługi językowej przy użyciu serwera języka opartego na dostawcy LSP, najpierw upewnij się, że zainstalowano obciążenie **programowanie rozszerzenia programu Visual Studio** dla wystąpienia programu vs.
 
-Następnie utwórz nowy projekt VSIX, przechodząc do pozycji **plik**  >  **Nowy** projekt  >  **Visual C#**  >  **rozszerzalność** Visual C#,  >  **Projekt VSIX**:
+Następnie utwórz nowy projekt VSIX, przechodząc do pozycji **plik**  >  **Nowy** projekt  >    >  **rozszerzalność** Visual C#,  >  **Projekt VSIX**:
 
 ![Utwórz projekt VSIX](media/lsp-vsix-project.png)
 
@@ -500,6 +500,6 @@ Tak, ale nie wszystkie funkcje będą działały prawidłowo. Ostatecznym celem 
 
 Zobacz [tutaj](walkthrough-publishing-a-visual-studio-extension.md)instrukcje dotyczące witryny Marketplace.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Dodaj obsługę edytora programu Visual Studio dla innych języków](../ide/adding-visual-studio-editor-support-for-other-languages.md)

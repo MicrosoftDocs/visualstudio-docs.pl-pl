@@ -7,17 +7,17 @@ ms.technology: vs-python
 ms.topic: quickstart
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4318cd98de166210a8e8744840967942006b8ea6
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: dc47bdb2913e2d18998663967d4da3c0a7dcdd9f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100516"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939945"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Szybki Start: Tworzenie pierwszej aplikacji sieci Web w języku Python przy użyciu programu Visual Studio
 
@@ -136,7 +136,7 @@ Teraz możesz dodać bit kodu języka Python, aby zaimplementować minimalną ap
 
 1. Kliknij prawym przyciskiem myszy projekt w **Eksplorator rozwiązań** a następnie wybierz pozycję **Dodaj > nowy element**.
 
-1. W wyświetlonym oknie dialogowym wybierz pozycję **pusty plik**w języku Python, nadaj jej nazwę *App.py*i wybierz pozycję **Dodaj**. Program Visual Studio automatycznie otwiera plik w oknie edytora.
+1. W wyświetlonym oknie dialogowym wybierz pozycję **pusty plik** w języku Python, nadaj jej nazwę *App.py* i wybierz pozycję **Dodaj**. Program Visual Studio automatycznie otwiera plik w oknie edytora.
 
 1. Skopiuj następujący kod i wklej go do *App.py*:
 

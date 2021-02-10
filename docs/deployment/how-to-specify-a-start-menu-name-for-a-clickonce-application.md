@@ -15,22 +15,22 @@ helpviewer_keywords:
 ms.assetid: 4b5183b2-2fd4-4433-9310-4a73bb12c4e3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 12a6ebce0ff3bb7c3040765c1a82f876d0055c4d
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: a9c9dee27ae78375dcb667bba5157ea84c046073
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349675"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940439"
 ---
 # <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>Instrukcje: Określanie nazwy menu Start dla aplikacji ClickOnce
 Gdy [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacja jest zainstalowana zarówno w trybie online, jak i offline, wpis zostanie dodany do menu **Start** i listy **Dodaj lub usuń programy** . Domyślnie nazwa wyświetlana jest taka sama jak nazwa zestawu aplikacji, ale można zmienić nazwę wyświetlaną, ustawiając **nazwę produktu** w oknie dialogowym **Opcje publikacji** .
 
  **Nazwa produktu** będzie wyświetlana na stronie *publish.htm* ; w przypadku zainstalowanej aplikacji w trybie offline będzie ona nazwą wpisu w menu **Start** i będzie również nazwą wyświetlaną w **aplecie Dodaj lub usuń programy**.
 
- **Nazwa wydawcy** będzie wyświetlana na stronie *publish.htm* powyżej **nazwy produktu** , a dla zainstalowanej aplikacji w trybie offline będzie również nazwą folderu zawierającego ikonę aplikacji w menu **Start** .
+ **Nazwa wydawcy** będzie wyświetlana na stronie *publish.htm* powyżej **nazwy produktu**, a dla zainstalowanej aplikacji w trybie offline będzie również nazwą folderu zawierającego ikonę aplikacji w menu **Start** .
 
  Skrót menu Start lub odwołanie do aplikacji zostanie utworzone w *%AppData%\Microsoft\Windows\Start start\programy \\<nazwa \> wydawcy*. Skrót lub odwołanie do aplikacji ma taką samą nazwę jak nazwa produktu.
 
@@ -38,7 +38,7 @@ Gdy [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacja 
 
 ### <a name="to-specify-a-start-menu-name"></a>Aby określić nazwę menu Start
 
-1. Po wybraniu projektu w **Eksplorator rozwiązań** , w menu **projekt** kliknij polecenie **Właściwości**.
+1. Po wybraniu projektu w **Eksplorator rozwiązań**, w menu **projekt** kliknij polecenie **Właściwości**.
 
 2. Kliknij kartę **Publikowanie** .
 

@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: ecd06658-ad02-4440-bccd-88437b7fb816
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7645731cf5b955601541a122f2fdb3fa3d794cc3
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 2ddb1feb3e5234b26e2ebceb9f899554d55b3015
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350741"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940348"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;Package — &gt; element (program inicjujący)
 `Package`Element jest elementem XML najwyższego poziomu w pliku pakietu.
@@ -149,7 +149,7 @@ ms.locfileid: "94350741"
 |--------------------| - |
 | `Culture` | Wymagane. Definiuje kulturę dla tego pakietu, która określa język, który ma być używany. Ten atrybut jest kluczem do `Strings` elementu, który zawiera listę ciągów specyficznych dla kultury dla nazw produktów i komunikatów o błędach podczas instalacji. |
 | `Name` | Wymagane. Nazwa pakietu wyświetlanego dla dewelopera w ramach narzędzia, takiego jak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Ten atrybut jest kluczem do `Strings` elementu, który powinien zawierać `String` element z `Name` `Culture` właściwością i ustawioną tak, aby pasował do `Name` `Culture` właściwości i `Package` . |
-| `LicenseAgreement` | Opcjonalny. Określa nazwę pliku w pakiecie dystrybucji, który zawiera umowę licencyjną End-User (EULA).  Ten plik może być w formacie zwykłego tekstu ( *txt* ) lub tekstu sformatowanego. ( *RTF* ) |
+| `LicenseAgreement` | Opcjonalny. Określa nazwę pliku w pakiecie dystrybucji, który zawiera umowę licencyjną End-User (EULA).  Ten plik może być w formacie zwykłego tekstu (*txt*) lub tekstu sformatowanego. (*RTF*) |
 
 ## <a name="example"></a>Przykład
  Poniższy przykład kodu przedstawia kompletny plik pakietu do redystrybucji .NET Framework 2,0.

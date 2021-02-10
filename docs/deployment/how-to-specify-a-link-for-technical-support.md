@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 500aebee-545e-4831-a78b-b8671a008015
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c0f0a1c6bda564367497306a572f7e9f4012031
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 335f41abf0ca2914ca603f7adbce7dea98eee028
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349766"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940491"
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>Instrukcje: Określanie linku do pomocy technicznej
 Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji Właściwość **adres URL pomocy technicznej** identyfikuje stronę sieci Web lub udział plików, w którym użytkownicy mogą uzyskać informacje o aplikacji. Ta właściwość jest opcjonalna. Jeśli jest podany, adres URL będzie wyświetlany w oknie dialogowym **Dodaj lub usuń programy** w pozycji aplikacji.
@@ -36,7 +36,7 @@ Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_m
 
 ### <a name="to-specify-a-support-url"></a>Aby określić adres URL pomocy technicznej
 
-1. Po wybraniu projektu w **Eksplorator rozwiązań** , w menu **projekt** kliknij polecenie **Właściwości**.
+1. Po wybraniu projektu w **Eksplorator rozwiązań**, w menu **projekt** kliknij polecenie **Właściwości**.
 
 2. Kliknij kartę **Publikowanie** .
 

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: abfb4e9e-1622-47c9-afda-b6b71a9d88e4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 356db0f3ad8308edae2910e060b5b08731f9aabb
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: fb0a0f4a1610eb23d68b6965e3f45a661ba25366
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150213"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940595"
 ---
 # <a name="threads-view"></a>Widok wątków
 Widok wątki to płaska lista wszystkich wątków skojarzonych z systemem Windows w systemie. Identyfikator wątku i nazwa modułu dla każdego wątku są wyświetlane. Procesy nie są uwzględniane, ale można łatwo znaleźć proces, który jest właścicielem wybranego wątku.

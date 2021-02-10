@@ -25,15 +25,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], shortcut keys
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b72270da75d27ed2837540369f74e9c5e87b417b
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 06211bb22ae071132b4cfad67352daa46182d366
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527997"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940920"
 ---
 # <a name="ribbon-designer"></a>Projektant wstążki
   Projektant wstążki jest kanwą projektu wizualizacji. Użyj projektanta wstążki, aby dodać niestandardowe karty, grupy i kontrolki do wstążki aplikacji Microsoft Office.
@@ -145,7 +145,7 @@ ms.locfileid: "97527997"
 |**ButtonGroup**|Grupa zawierająca jeden lub więcej przycisków, przycisków przełączników, menu, przycisków podzielonych i galerii. Grupę przycisków można dodać do grupy lub menu.|
 |**CheckBox**|Pole, które jest zaznaczone lub wyczyszczone, aby włączyć lub wyłączyć opcję.|
 |**ComboBox**|Pole edycji z dołączonym polem listy. Użytkownicy mogą wpisać lub wybrać opcję. W polu jest wyświetlany bieżący wybór. Użyj <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Items%2A> właściwości, aby dodawać i usuwać elementy w czasie wykonywania przed lub po załadowaniu wstążki do aplikacji pakietu Office.|
-|**DropDown**|Lista elementów, które użytkownik może wybrać. Użytkownik nie może wpisać nowego elementu na liście rozwijanej.<br /><br /> Użyj <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Items%2A> właściwości, aby dodać elementy do listy. Można dodawać i usuwać elementy w czasie wykonywania.<br /><br /> Użyj <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Buttons%2A> właściwości, aby dodać przyciski do listy. Nie można jednak dodawać i usuwać przycisków w czasie wykonywania po załadowaniu wstążki do aplikacji pakietu Office.|
+|**Przyjmij**|Lista elementów, które użytkownik może wybrać. Użytkownik nie może wpisać nowego elementu na liście rozwijanej.<br /><br /> Użyj <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Items%2A> właściwości, aby dodać elementy do listy. Można dodawać i usuwać elementy w czasie wykonywania.<br /><br /> Użyj <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Buttons%2A> właściwości, aby dodać przyciski do listy. Nie można jednak dodawać i usuwać przycisków w czasie wykonywania po załadowaniu wstążki do aplikacji pakietu Office.|
 |**EditBox**|Pole, w którym użytkownik może wpisać tekst.|
 |**Galeria**|Menu, które przedstawia tablicę lub siatkę opcji wizualizacji, z których użytkownicy mogą wybrać. Można kontrolować układ wybranych opcji w menu. Użyj <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> właściwości i, <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> Aby określić liczbę wierszy i kolumn, w których będą wyświetlane elementy i przyciski galerii.|
 |**Etykieta**|Tekst, którego można użyć do identyfikacji formantów na Wstążce.|

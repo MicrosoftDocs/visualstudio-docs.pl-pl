@@ -17,15 +17,15 @@ helpviewer_keywords:
 - security [Office development in Visual Studio], troubleshooting
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0da77067931d35ee63a9ccc9b0de85752157772b
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 57b330884ef6638e5c853cfb5670e3552aca46cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524297"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940829"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>Szczególne zagadnienia dotyczące zabezpieczeń rozwiązań pakietu Office
   Funkcje zabezpieczeń zapewniane przez Microsoft .NET Framework i Microsoft Office mogą pomóc w ochronie rozwiązań pakietu Office przed potencjalnymi zagrożeniami bezpieczeństwa. W tym temacie objaśniono niektóre z tych zagrożeń i udostępniono zalecenia ułatwiające ochronę przed nimi. Zawiera również informacje dotyczące sposobu, w jaki Microsoft Office ustawienia zabezpieczeń mają wpływ na rozwiązania pakietu Office.
