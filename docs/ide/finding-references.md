@@ -9,15 +9,15 @@ helpviewer_keywords:
 - find all references
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d5ee6a0792c5dbfa1661018e75806499d1aa1028
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: 0cc7702ae07c83c5798945c4a9bb2ab787fc9cd3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006552"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945568"
 ---
 # <a name="find-references-in-your-code"></a>Znajdowanie odwołań w kodzie
 
@@ -42,7 +42,7 @@ Aby przejść do odwołań w oknie **odwołania** , można użyć następującyc
 - Naciśnij klawisz **F8** , aby przejść do następnego odwołania, lub **klawisze Shift + F8** , aby przejść do poprzedniego odwołania.
 - Naciśnij klawisz **Enter** , aby uzyskać odwołanie, lub kliknij go dwukrotnie, aby przejść do niego w kodzie.
 - W menu rozwijanym prawym przyciskiem myszy (menu kontekstowe) odwołania wybierz polecenie **Przejdź do poprzedniej lokalizacji** lub **Przejdź do następnej lokalizacji** polecenia.
-- Wybierz klawisze **Strzałka w górę** i **Strzałka w dół** (jeśli są włączone w oknie dialogowym **Opcje** ). Aby włączyć tę funkcję, na pasku menu wybierz kolejno **Tools**  >  **Opcje** narzędzia  >  **Environment**  >  **karty środowiska i Podgląd systemu Windows**  >  **Preview Tab**, a następnie zaznacz pole wyboru **Zezwalaj na otwieranie nowych plików na karcie Podgląd** i **Wyświetl podgląd wybranych plików w polu Wyniki wyszukiwania** .
+- Wybierz klawisze **Strzałka w górę** i **Strzałka w dół** (jeśli są włączone w oknie dialogowym **Opcje** ). Aby włączyć tę funkcję, na pasku menu wybierz kolejno   >  **Opcje** narzędzia  >    >  **karty środowiska i Podgląd systemu Windows**  >  , a następnie zaznacz pole wyboru **Zezwalaj na otwieranie nowych plików na karcie Podgląd** i **Wyświetl podgląd wybranych plików w polu Wyniki wyszukiwania** .
 
 ## <a name="change-reference-groupings"></a>Zmień grupowanie odwołań
 Domyślnie odwołania są pogrupowane według projektu, a następnie według definicji. Można jednak zmienić tę kolejność grupowania, zmieniając ustawienie w polu listy rozwijanej **Grupuj według:** na pasku narzędzi. Można na przykład zmienić to ustawienie z domyślnego ustawienia **projekt, a następnie definicja** na projekt, **a** także inne ustawienia.
@@ -54,6 +54,6 @@ W języku C# lub Visual Basic okno Znajdowanie odwołań zawiera kolumnę rodzaj
 
 ![Znajdowanie kolumny rodzaju okna odwołań ](../ide/media/vside_findallreferencesKind.png)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Nawigowanie po kodzie](../ide/navigating-code.md)

@@ -8,15 +8,15 @@ helpviewer_keywords:
 - dependency diagrams, adding custom properties
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d3073a42faf0dcc6fbf586847382ba3a83d88ed4
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: d63c6793290786499dd75ffd139f9905f46e7ab1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360770"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946465"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Dodawanie właściwości niestandardowych do diagramów zależności
 

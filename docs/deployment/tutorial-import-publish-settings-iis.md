@@ -7,15 +7,15 @@ helpviewer_keywords:
 - deployment, publish settings
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fff3ded8607f7faf534e6e61a27bd4d3e38d9e38
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9681e01beaa9fcae3163c607290f5793bfae1cdd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247563"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945035"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Publikowanie aplikacji w usługach IIS przez zaimportowanie ustawień publikowania w programie Visual Studio
 
@@ -31,10 +31,10 @@ W tym samouczku wykonasz następujące czynności:
 > * Importowanie pliku ustawień publikowania do programu Visual Studio
 > * Wdrażanie aplikacji w usługach IIS
 
-Plik ustawień publikowania (* \* . publishsettings*) jest inny niż profil publikacji (* \* . pubxml*) utworzony w programie Visual Studio. Plik ustawień publikowania jest tworzony przez usługi IIS lub Azure App Service lub można go utworzyć ręcznie, a następnie można go zaimportować do programu Visual Studio.
+Plik ustawień publikowania (*\* . publishsettings*) jest inny niż profil publikacji (*\* . pubxml*) utworzony w programie Visual Studio. Plik ustawień publikowania jest tworzony przez usługi IIS lub Azure App Service lub można go utworzyć ręcznie, a następnie można go zaimportować do programu Visual Studio.
 
 > [!NOTE]
-> Jeśli wystarczy skopiować profil publikacji programu Visual Studio ( \* plik. pubxml) z jednej instalacji programu Visual Studio do innej, można znaleźć profil publikowania, * \<profilename\> . pubxml*, w folderze * \\<ProjectName \> \Properties\PublishProfiles* dla typów projektów zarządzanych. W przypadku witryn sieci Web zapoznaj się z folderem *\ App_Data* . Profile publikowania są plikami XML programu MSBuild.
+> Jeśli wystarczy skopiować profil publikacji programu Visual Studio ( \* plik. pubxml) z jednej instalacji programu Visual Studio do innej, można znaleźć profil publikowania, *\<profilename\> . pubxml*, w folderze *\\<ProjectName \> \Properties\PublishProfiles* dla typów projektów zarządzanych. W przypadku witryn sieci Web zapoznaj się z folderem *\ App_Data* . Profile publikowania są plikami XML programu MSBuild.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -42,17 +42,17 @@ Plik ustawień publikowania (* \* . publishsettings*) jest inny niż profil publ
 
 * Musisz mieć zainstalowany program Visual Studio 2019 i obciążenie **programowaniem ASP.NET i sieci Web** .
 
-    Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads/),   Aby zainstalować ją bezpłatnie.
+    Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads/) , aby zainstalować ją bezpłatnie.
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
 * Musisz mieć zainstalowany program Visual Studio 2017 i obciążenie **programowaniem ASP.NET i sieci Web** .
 
-    Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads/),   Aby zainstalować ją bezpłatnie.
+    Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads/) , aby zainstalować ją bezpłatnie.
 ::: moniker-end
 
-* Na serwerze musi być zainstalowany system Windows Server 2012, Windows Server 2016 lub Windows Server 2019 i musi być zainstalowana [rola serwera sieci Web usług IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) (wymagana do wygenerowania pliku ustawień publikowania (* \* . publishsettings*)). Na serwerze należy również zainstalować ASP.NET 4,5 lub ASP.NET Core. Aby skonfigurować ASP.NET 4,5, zobacz [usługi IIS 8,0 przy użyciu ASP.NET 3,5 i ASP.NET 4,5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45). Aby skonfigurować ASP.NET Core, zobacz [hostowanie ASP.NET Core w systemie Windows za pomocą usług IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). W przypadku ASP.NET Core upewnij się, że skonfigurowano pulę aplikacji tak, aby korzystała z **kodu zarządzanego**, zgodnie z opisem w artykule.
+* Na serwerze musi być zainstalowany system Windows Server 2012, Windows Server 2016 lub Windows Server 2019 i musi być zainstalowana [rola serwera sieci Web usług IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) (wymagana do wygenerowania pliku ustawień publikowania (*\* . publishsettings*)). Na serwerze należy również zainstalować ASP.NET 4,5 lub ASP.NET Core. Aby skonfigurować ASP.NET 4,5, zobacz [usługi IIS 8,0 przy użyciu ASP.NET 3,5 i ASP.NET 4,5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45). Aby skonfigurować ASP.NET Core, zobacz [hostowanie ASP.NET Core w systemie Windows za pomocą usług IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). W przypadku ASP.NET Core upewnij się, że skonfigurowano pulę aplikacji tak, aby korzystała z **kodu zarządzanego**, zgodnie z opisem w artykule.
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Tworzenie nowego projektu ASP.NET w programie Visual Studio
 

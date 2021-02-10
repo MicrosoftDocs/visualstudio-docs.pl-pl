@@ -5,21 +5,21 @@ ms.date: 12/06/2018
 ms.topic: reference
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 528606356c2d976de71ab2c0317a1a0236d2e63f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 23a79d0842592ff3ad68f63c2739a2af9847aaeb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85533396"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945165"
 ---
 # <a name="python-item-templates"></a>Szablony elementów języka Python
 
-Szablony elementów są dostępne w projektach języka Python za pomocą **Project**  >  polecenia menu**Dodaj nowy element** lub polecenie **Dodaj**  >  **nowy element** w menu kontekstowym w **Eksplorator rozwiązań**.
+Szablony elementów są dostępne w projektach języka Python za pomocą   >  polecenia menu **Dodaj nowy element** lub polecenie **Dodaj**  >  **nowy element** w menu kontekstowym w **Eksplorator rozwiązań**.
 
 ![Okno dialogowe Dodawanie nowego elementu](media/project-item-templates.png)
 
@@ -27,11 +27,11 @@ Przy użyciu nazwy podanym dla elementu szablon zwykle tworzy jeden lub więcej 
 
 W poniższej tabeli opisano efekt każdego szablonu elementu w ramach projektu języka Python:
 
-| Szablon | Co tworzy szablon |
+| Template | Co tworzy szablon |
 | --- | --- |
 | **Pusty plik języka Python** | Pusty plik z rozszerzeniem *. PR* . |
 | **Klasa języka Python** | Plik *. PR* zawierający pojedynczą pustą definicję klasy języka Python. |
-| **Pakiet języka Python** | Folder zawierający plik * \_ \_ init \_ \_ . PR* . |
+| **Pakiet języka Python** | Folder zawierający plik *\_ \_ init \_ \_ . PR* . |
 | **Test jednostkowy języka Python** | Plik *. PR* z pojedynczym testem jednostkowym opartym na `unittest` strukturze, wraz z wywołaniem do `unittest.main()` uruchomienia testów w pliku. |
 | **Strona HTML** | Plik *. html* z prostą strukturą strony składającą się `<head>` z `<body>` elementów i. |
 | **JavaScript** | Pusty plik  *. js* . |
@@ -43,8 +43,8 @@ W poniższej tabeli opisano efekt każdego szablonu elementu w ramach projektu j
 | **Pliki obsługi roli proces roboczy** | Folder *bin* w katalogu głównym projektu (niezależnie od wybranego folderu w projekcie). Folder zawiera domyślne wdrożenie i skrypt uruchamiania wraz z plikiem *web.config* dla ról procesów roboczych usługi w chmurze platformy Azure. Szablon zawiera również plik *readme.html* , który objaśnia szczegóły. |
 | **web.config platformy Azure (FastCGI)** | Plik *web.config* zawierający wpisy dla aplikacji korzystających z obiektu [WSGI](https://wsgi.readthedocs.io/en/latest/) do obsługi połączeń przychodzących. Ten plik jest zwykle wdrażany w katalogu głównym serwera sieci Web z uruchomionymi usługami IIS. Aby uzyskać więcej informacji, zobacz [Konfigurowanie aplikacji dla usług IIS](configure-web-apps-for-iis-windows.md). |
 | **web.config platformy Azure (HttpPlatformHandler)** | Plik *web.config* zawierający wpisy dla aplikacji, które nasłuchują w gnieździe dla połączeń przychodzących. Ten plik jest zwykle wdrażany w katalogu głównym serwera sieci Web z uruchomionymi usługami IIS, takimi jak Azure App Service. Aby uzyskać więcej informacji, zobacz [Konfigurowanie aplikacji dla usług IIS](configure-web-apps-for-iis-windows.md). |
-| **web.configplików statycznych platformy Azure ** | Plik *web.config* zwykle dodawany do folderu *statycznego* (lub innego folderu zawierającego elementy statyczne), aby wyłączyć obsługę języka Python dla tego folderu. Ten plik konfiguracji działa w połączeniu z jednym z plików konfiguracji FastCGI lub HttpPlatformHandler powyżej. Aby uzyskać więcej informacji, zobacz [Konfigurowanie aplikacji dla usług IIS](configure-web-apps-for-iis-windows.md). |
-| **web.configzdalnego debugowania platformy Azure ** | Przestarzałe (użyto do zdalnego debugowania w Azure App Service dla systemu Windows, które nie jest już obsługiwane). |
+| **web.configplików statycznych platformy Azure** | Plik *web.config* zwykle dodawany do folderu *statycznego* (lub innego folderu zawierającego elementy statyczne), aby wyłączyć obsługę języka Python dla tego folderu. Ten plik konfiguracji działa w połączeniu z jednym z plików konfiguracji FastCGI lub HttpPlatformHandler powyżej. Aby uzyskać więcej informacji, zobacz [Konfigurowanie aplikacji dla usług IIS](configure-web-apps-for-iis-windows.md). |
+| **web.configzdalnego debugowania platformy Azure** | Przestarzałe (użyto do zdalnego debugowania w Azure App Service dla systemu Windows, które nie jest już obsługiwane). |
 
 ## <a name="see-also"></a>Zobacz też
 

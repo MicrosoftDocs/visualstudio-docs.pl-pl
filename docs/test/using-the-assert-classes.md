@@ -9,16 +9,16 @@ helpviewer_keywords:
 - Assert methods
 - unit tests, Assert classes
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: c5401fb15a19d069c0bf454661d6d9283abb2585
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 1f064ee1ca41aab19e19fa6006d983a76ed006d7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598201"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946205"
 ---
 # <a name="use-assert-classes-for-unit-testing"></a>Korzystanie z klas potwierdzeń do testowania jednostek
 
@@ -49,6 +49,6 @@ Jeśli piszesz nową klasę wyjątku potwierdzenia, Dziedzicz z klasy podstawowe
 
 Aby sprawdzić, czy wyjątek, który ma być zgłaszany przez metodę w kodzie aplikacji, został faktycznie wygenerowany, użyj <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType> metody.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Testowanie jednostkowe kodu](../test/unit-test-your-code.md)

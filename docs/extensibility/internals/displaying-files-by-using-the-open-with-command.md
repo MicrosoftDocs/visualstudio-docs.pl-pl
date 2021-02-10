@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 53794bc3-1b73-4d40-954e-cfade1abddcf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2cb6bd44148d470cac68addc09db9e9207e9d70
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 9426b60013ae17eec872a665666a60d1fdfc1bc8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329695"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946725"
 ---
 # <a name="display-files-by-using-the-open-with-command"></a>Wyświetlanie plików przy użyciu polecenia Otwórz za pomocą
 Projekt może polecić środowisku IDE wyświetlenie okna dialogowego **Otwórz za pomocą** . To żądanie monituje użytkownika o otwarcie pliku, który ma wybór standardowych edytorów. Poniższe kroki opisują ten proces:

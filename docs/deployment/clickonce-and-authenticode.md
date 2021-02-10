@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: ab5b6712-f32a-4e33-842f-e88ab4818ccf
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 07b40cb9c4e1d79390bb4a0541e1cb5bd8862d3a
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: e6541e99b23579713e77cf2bf1dc62152f02b4ce
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383147"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946101"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce i podpis Authenticode
 *Authenticode* to technologia firmy Microsoft, która używa kryptografii standardowej w branży do podpisywania kodu aplikacji za pomocą certyfikatów cyfrowych, które weryfikują autentyczność wydawcy aplikacji. Użycie technologii Authenticode do wdrażania aplikacji [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zmniejsza ryzyko koń trojański. Koń trojański jest wirusem lub innym szkodliwym programem, który złośliwa osoba trzecia Niemniej reprezentuje jako legalny program pochodzący z ustalonego, wiarygodnego źródła. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Aby sprawdzić, czy zestawy i pliki nie zostały naruszone, należy wykonać dodatkowe czynności.
@@ -43,7 +43,7 @@ ms.locfileid: "94383147"
 
 - Odbierz jeden z grup w organizacji odpowiedzialnych za tworzenie certyfikatów cyfrowych.
 
-- Wygeneruj własny certyfikat za pomocą polecenia cmdlet programu New-SelfSignedCertificate PowerShell lub za pomocą *MakeCert.exe* , który jest dołączony do programu [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] .
+- Wygeneruj własny certyfikat za pomocą polecenia cmdlet programu New-SelfSignedCertificate PowerShell lub za pomocą *MakeCert.exe*, który jest dołączony do programu [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] .
 
 ### <a name="how-using-certificate-authorities-helps-users"></a>Jak korzystanie z urzędów certyfikacji ułatwia użytkownikom
  Certyfikat wygenerowany przy użyciu New-SelfSignedCertificate lub narzędzia *MakeCert.exe* jest często nazywany certyfikatem *samodzielnego certyfikatu* lub *testem*. Ten rodzaj certyfikatu działa tak samo, jak plik *. snk* działa w .NET Framework. Składa się ona wyłącznie z publicznej/prywatnej pary kluczy kryptograficznych i nie zawiera informacji o zweryfikowaniu wydawcy. Za pomocą samoobsługi certyfikatów można wdrażać [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje z wysokim zaufaniem w intranecie. Jednak po uruchomieniu tych aplikacji na komputerze klienckim program [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zidentyfikuje je jako pochodzące od nieznanego wydawcy. Domyślnie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Aplikacje podpisane przy użyciu samoobsługi certyfikatów i wdrożone za pośrednictwem Internetu nie mogą korzystać z wdrożenia zaufanej aplikacji.
@@ -66,7 +66,7 @@ ms.locfileid: "94383147"
 
 ### <a name="store-certificates"></a>Certyfikaty magazynu
 
-- Certyfikaty można przechowywać jako plik *PFX* w systemie plików lub przechowywać je wewnątrz kontenera kluczy. Użytkownik w domenie systemu Windows może mieć wiele kontenerów kluczy. Domyślnie *MakeCert.exe* będą przechowywać certyfikaty w prywatnym kontenerze kluczy, chyba że zostanie określona, że powinna zapisać ją w pliku *PFX* . *Mage.exe* i *MageUI.exe* , [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] Narzędzia do tworzenia [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożeń, umożliwiają korzystanie z certyfikatów przechowywanych w jeden sposób.
+- Certyfikaty można przechowywać jako plik *PFX* w systemie plików lub przechowywać je wewnątrz kontenera kluczy. Użytkownik w domenie systemu Windows może mieć wiele kontenerów kluczy. Domyślnie *MakeCert.exe* będą przechowywać certyfikaty w prywatnym kontenerze kluczy, chyba że zostanie określona, że powinna zapisać ją w pliku *PFX* . *Mage.exe* i *MageUI.exe*, [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] Narzędzia do tworzenia [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożeń, umożliwiają korzystanie z certyfikatów przechowywanych w jeden sposób.
 
 ## <a name="see-also"></a>Zobacz też
 - [Zabezpieczenia i wdrażanie technologii ClickOnce](../deployment/clickonce-security-and-deployment.md)

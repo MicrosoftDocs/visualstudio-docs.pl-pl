@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: 8a813a74-e158-4308-be78-565937f6af83
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6779471edc25435f14511cc2ebcc34e6247225ee
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 3e91bdb2e842692224564374e3f9f4d23cf71cf8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349220"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945022"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo, &gt; element (Aplikacja ClickOnce)
 Opisuje minimalne uprawnienia zabezpieczeń wymagane do uruchomienia aplikacji na komputerze klienckim.

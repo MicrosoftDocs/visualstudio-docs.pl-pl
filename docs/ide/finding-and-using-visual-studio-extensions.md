@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 4ca92d93-31b9-47ef-8109-4a429d9e2ca3
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c5d4cf36d722c260f52584b16557bcb8d7cda83c
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: bb088954833f42e35de6c8316e5553d0f9e3fc68
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006539"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945594"
 ---
 # <a name="manage-extensions-for-visual-studio"></a>Zarządzanie rozszerzeniami dla programu Visual Studio
 
@@ -67,7 +67,7 @@ Podczas próby instalacji rozszerzenia, które ma zależności, instalator spraw
 
 ### <a name="install-without-using-the-extensions-and-updates-dialog-box"></a>Zainstaluj bez korzystania z okna dialogowego rozszerzenia i aktualizacje
 
-Rozszerzenia, które zostały spakowane w plikach *. vsix* , mogą być dostępne w lokalizacjach innych niż Visual Studio Marketplace. Okna **Tools**  >  dialogowego **rozszerzenia i aktualizacje** narzędzi nie mogą wykryć tych plików, ale można zainstalować plik *. vsix* , klikając dwukrotnie plik lub wybierając plik i naciskając klawisz **Enter**. Następnie postępuj zgodnie z instrukcjami. Po zainstalowaniu rozszerzenia można użyć okna dialogowego **rozszerzenia i aktualizacje** , aby je włączyć, wyłączyć lub odinstalować.
+Rozszerzenia, które zostały spakowane w plikach *. vsix* , mogą być dostępne w lokalizacjach innych niż Visual Studio Marketplace. Okna   >  dialogowego **rozszerzenia i aktualizacje** narzędzi nie mogą wykryć tych plików, ale można zainstalować plik *. vsix* , klikając dwukrotnie plik lub wybierając plik i naciskając klawisz **Enter**. Następnie postępuj zgodnie z instrukcjami. Po zainstalowaniu rozszerzenia można użyć okna dialogowego **rozszerzenia i aktualizacje** , aby je włączyć, wyłączyć lub odinstalować.
 
 > [!NOTE]
 > - Visual Studio Marketplace zawiera rozszerzenia VSIX i MSI. Okna dialogowe rozszerzenia i aktualizacje nie mogą włączać ani wyłączać rozszerzeń MSI.
@@ -114,7 +114,7 @@ Aby chronić system przed rozszerzeniami, które mogą zawierać błędy lub zł
 
 Aby ograniczyć czas ładowania rozszerzeń dla poszczególnych użytkowników:
 
-1. Otwórz stronę opcje rozszerzeń (opcje **Narzędzia**  >  **Options**  >  **Environment**  >  **rozszerzenia** środowiska).
+1. Otwórz stronę opcje rozszerzeń (opcje **Narzędzia**  >    >    >  **rozszerzenia** środowiska).
 
 2. Wyczyść pole wyboru **Załaduj rozszerzenia na użytkownika podczas uruchamiania jako administrator** .
 
@@ -128,7 +128,7 @@ Jeśli chcesz wyłączyć aktualizacje automatyczne, możesz wyłączyć tę fun
 
 ::: moniker range="vs-2017"
 
-- Aby wyłączyć aktualizacje automatyczne dla wszystkich rozszerzeń, wybierz link **Zmień ustawienia rozszerzeń i aktualizacji** w oknie **Tools**  >  dialogowym **rozszerzenia i aktualizacje** narzędzi. W oknie dialogowym **Opcje** Usuń zaznaczenie pola wyboru **automatycznie Aktualizuj rozszerzenia**.
+- Aby wyłączyć aktualizacje automatyczne dla wszystkich rozszerzeń, wybierz link **Zmień ustawienia rozszerzeń i aktualizacji** w oknie   >  dialogowym **rozszerzenia i aktualizacje** narzędzi. W oknie dialogowym **Opcje** Usuń zaznaczenie pola wyboru **automatycznie Aktualizuj rozszerzenia**.
 
 - Aby wyłączyć aktualizacje automatyczne dla określonego rozszerzenia, usuń zaznaczenie pola wyboru **automatycznie Aktualizuj to rozszerzenie** w okienku szczegółów rozszerzenia po prawej stronie okna dialogowego **rozszerzenia i aktualizacje** .
 
@@ -152,7 +152,7 @@ Gdy te powiadomienia są wyświetlane, można zignorować powiadomienie lub wyko
 
 ::: moniker range="vs-2017"
 
-- Wybierz opcję **Wyłącz to rozszerzenie**. Program Visual Studio wyłącza rozszerzenie i pozwala sprawdzić, czy konieczne jest ponowne uruchomienie systemu, aby wyłączenie zaczęło obowiązywać. W razie potrzeby można ponownie włączyć rozszerzenie w oknie **Tools**  >  dialogowym **rozszerzenia i aktualizacje** narzędzi.
+- Wybierz opcję **Wyłącz to rozszerzenie**. Program Visual Studio wyłącza rozszerzenie i pozwala sprawdzić, czy konieczne jest ponowne uruchomienie systemu, aby wyłączenie zaczęło obowiązywać. W razie potrzeby można ponownie włączyć rozszerzenie w oknie   >  dialogowym **rozszerzenia i aktualizacje** narzędzi.
 
 ::: moniker-end
 
@@ -184,7 +184,7 @@ Po zainstalowaniu przykładu online, rozwiązanie jest przechowywane w dwóch mi
 
 ::: moniker range="vs-2017"
 
-Za pomocą **Tools** > okna dialogowego **rozszerzenia i aktualizacje** narzędzi można wykonywać następujące zadania związane z przykładami:
+Za pomocą  > okna dialogowego **rozszerzenia i aktualizacje** narzędzi można wykonywać następujące zadania związane z przykładami:
 
 ::: moniker-end
 
@@ -206,7 +206,7 @@ Można użyć okna dialogowego **rozszerzenia** > **Zarządzanie rozszerzeniami*
 
 - Zaktualizuj główną kopię zainstalowanego przykładu w przypadku powiadomienia o aktualizacji.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Witryna Visual Studio Marketplace](https://marketplace.visualstudio.com)
 - [Visual Studio SDK](../extensibility/visual-studio-sdk.md)

@@ -7,15 +7,15 @@ ms.date: 02/21/2019
 ms.topic: quickstart
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4511658a454c1431967905e88428842c3ba00c64
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 5e0199319bc0c647f42e87d4003dd2fabe4544a0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95870894"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945503"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Szybki Start: pierwsze spojrzenie na środowisko IDE programu Visual Studio
 
@@ -199,7 +199,7 @@ Oglądamy zaledwie kilka funkcji programu Visual Studio, aby zapoznać się z in
 > [!div class="nextstepaction"]
 > [Informacje o projektach i rozwiązaniach](../get-started/tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Przegląd środowiska IDE programu Visual Studio](../get-started/visual-studio-ide.md)
 - [Więcej funkcji programu Visual Studio](../ide/advanced-feature-overview.md)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6857e9c6-e44a-468a-afa4-f7c4a0b77844
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0dce13e49eeadf4dc02fec07707bebcfe164ed9c
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: de29b012914ac9997a78674fd3215f2c15d43c6e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606700"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945919"
 ---
 # <a name="launch-a-program"></a>Uruchamianie programu
 Użytkownicy, którzy chcą debugować program, mogą nacisnąć klawisz **F5** , aby uruchomić debuger z poziomu środowiska IDE. Spowoduje to rozpoczęcie szeregu zdarzeń, które ostatecznie spowodują połączenie IDE z silnikiem debugowania (DE), który jest z kolei podłączony lub dołączony do programu w następujący sposób:

@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: f5b40921-2ef7-4de0-b595-45b44c79ffa6
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c3509f625686f97156efe79f5e1b72aa991ce5ca
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 62993611ef7359095512f494767bbd3ea4cce5d9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903887"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946582"
 ---
 # <a name="work-with-c-code-in-class-designer"></a>Współpraca z kodem C++ w Projektant klas
 
@@ -110,7 +110,7 @@ Pomoc dotyczącą rozwiązywania problemów i ostrzeżeń można znaleźć w pub
 
 - **Projektant klas** nie może wyświetlić typów, które są puste lub które pochodzą od typu void.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Projektowanie i wyświetlanie klas i typów](designing-and-viewing-classes-and-types.md)
 - [Dodatkowe informacje na temat błędów Projektanta klas](additional-information-about-errors.md)

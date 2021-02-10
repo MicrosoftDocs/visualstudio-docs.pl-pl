@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: b1361333-8a09-4a65-87a9-4ac94ceb2d9f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: ef6ec36dc9c0fb0e6431dcb92ee292050c5d25f3
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: aec34feedeba8f16d9664a029815d52100c58a02
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98533761"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945217"
 ---
 # <a name="collect-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Zbieranie danych pamięci z usług .NET Framework Services przy użyciu wiersza polecenia profilera
 W tej sekcji opisano procedury i opcje zbierania danych alokacji pamięci i okresu istnienia obiektów dla usługi .NET Framework przy użyciu metody próbkowania z wiersza polecenia.
@@ -49,5 +49,5 @@ W tej sekcji opisano procedury i opcje zbierania danych alokacji pamięci i okre
 ### <a name="analyze-net-memory-data-views-and-reports"></a>Analizowanie widoków i raportów danych pamięci .NET
 - [Widoki danych pamięci .NET](../profiling/dotnet-memory-data-views.md)
 
-## <a name="reference"></a>Tematy pomocy
+## <a name="reference"></a>Dokumentacja
 - [Narzędzia profilowania wiersza polecenia — dokumentacja](../profiling/command-line-profiling-tools-reference.md)

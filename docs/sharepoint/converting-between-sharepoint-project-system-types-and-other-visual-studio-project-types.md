@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint project service
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 75f8a2072e81936c4c1c691261e301aae37b0191
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: cc0eca8005c4eee6e1eb89c410b50be5d0228ec6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850484"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946335"
 ---
 # <a name="convert-between-sharepoint-project-system-types-and-other-visual-studio-project-types"></a>Konwersja między typami systemu projektu SharePoint a innymi typami projektów programu Visual Studio
   W niektórych przypadkach może istnieć obiekt w systemie projektu programu SharePoint i chcesz użyć funkcji odpowiedniego obiektu w modelu obiektów automatyzacji programu Visual Studio lub modelu obiektów integracji lub na odwrót. W takich przypadkach można użyć <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> metody usługi projektu SharePoint do przekonwertowania obiektu na inny model obiektu.
@@ -49,7 +49,7 @@ ms.locfileid: "94850484"
 
 - Kod, który rejestruje `projectService_ProjectAdded` metodę, aby obsłużyć <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectAdded> zdarzenie <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> obiektu. Aby zapoznać się z przykładem, zobacz [How to: Create a SharePoint Project Extension](../sharepoint/how-to-create-a-sharepoint-project-extension.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Korzystanie z usługi projektu SharePoint](../sharepoint/using-the-sharepoint-project-service.md)
 - [Instrukcje: pobieranie usługi projektu SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)

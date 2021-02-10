@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 21547ba7-6e81-44df-9277-265bf34f877a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12b08f676e02a9023374c709aa18edfc0e8815db
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 1998091559f78ed7c7eb8d9585206cf0217d8b2d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863514"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946595"
 ---
 # <a name="open-a-dynamic-tool-window"></a>Otwieranie okna narzędzia dynamicznego
 Okna narzędzi są zwykle otwierane za pomocą polecenia w menu lub równoważnego skrótu klawiaturowego. Czasami jednak może być konieczne okno narzędzi, które jest otwierane za każdym razem, gdy określony kontekst interfejsu użytkownika zostanie zastosowany, i zamyka się, gdy kontekst interfejsu użytkownika już nie ma zastosowania. Te typy okien narzędzi są nazywane *dynamicznym* lub *autowidocznością*.

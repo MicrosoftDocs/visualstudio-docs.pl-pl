@@ -7,15 +7,15 @@ helpviewer_keywords:
 - deployment, publish settings
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d2c52d6db6ca3001712a692a1de059834c975ae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50a65d681693bd9c1421767d2cac47f65b685e6c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801714"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945048"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Publikowanie aplikacji do Azure App Service przez zaimportowanie ustawień publikowania w programie Visual Studio
 
@@ -30,10 +30,10 @@ W tym samouczku wykonasz następujące czynności:
 > * Importowanie pliku ustawień publikowania do programu Visual Studio
 > * Wdróż aplikację w Azure App Service
 
-Plik ustawień publikowania (* \* . publishsettings*) jest inny niż profil publikacji (* \* . pubxml*) utworzony w programie Visual Studio. Plik ustawień publikowania jest tworzony przez Azure App Service, a następnie można go zaimportować do programu Visual Studio.
+Plik ustawień publikowania (*\* . publishsettings*) jest inny niż profil publikacji (*\* . pubxml*) utworzony w programie Visual Studio. Plik ustawień publikowania jest tworzony przez Azure App Service, a następnie można go zaimportować do programu Visual Studio.
 
 > [!NOTE]
-> Jeśli wystarczy skopiować profil publikacji programu Visual Studio (plik* \* . pubxml* ) z jednej instalacji programu Visual Studio do innej, można znaleźć profil publikowania, * \<profilename\> . pubxml*, w folderze * \\<ProjectName \> \Properties\PublishProfiles* dla typów projektów zarządzanych. W przypadku witryn sieci Web zapoznaj się z folderem *\ App_Data* . Profile publikowania są plikami XML programu MSBuild.
+> Jeśli wystarczy skopiować profil publikacji programu Visual Studio (plik *\* . pubxml* ) z jednej instalacji programu Visual Studio do innej, można znaleźć profil publikowania, *\<profilename\> . pubxml*, w folderze *\\<ProjectName \> \Properties\PublishProfiles* dla typów projektów zarządzanych. W przypadku witryn sieci Web zapoznaj się z folderem *\ App_Data* . Profile publikowania są plikami XML programu MSBuild.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -41,14 +41,14 @@ Plik ustawień publikowania (* \* . publishsettings*) jest inny niż profil publ
 
 * Musisz mieć zainstalowany program Visual Studio 2019 i obciążenie **programowaniem ASP.NET i sieci Web** .
 
-    Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads/),   Aby zainstalować ją bezpłatnie.
+    Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads/) , aby zainstalować ją bezpłatnie.
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
 * Musisz mieć zainstalowany program Visual Studio 2017 i obciążenie **programowaniem ASP.NET i sieci Web** .
 
-    Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads/),   Aby zainstalować ją bezpłatnie.
+    Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads/) , aby zainstalować ją bezpłatnie.
 ::: moniker-end
 
 * Utwórz Azure App Service. Aby uzyskać szczegółowe instrukcje, zobacz [wdrażanie aplikacji sieci web ASP.NET Core na platformie Azure przy użyciu programu Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).

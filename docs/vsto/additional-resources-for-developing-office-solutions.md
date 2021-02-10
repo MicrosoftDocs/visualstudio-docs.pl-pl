@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, additional resources
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 828cd2c451e531eeecda7574b5750bc3bb7023b2
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: dd1b1862d3215698ee17ed152bba6d4d569667ce
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844819"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945074"
 ---
 # <a name="additional-resources-to-develop-office-solutions"></a>Dodatkowe zasoby służące do opracowywania rozwiązań pakietu Office
   Narzędzia deweloperskie Microsoft Office w programie Visual Studio reprezentują tylko jeden z wielu sposobów na rozbudowanie aplikacji pakietu Office. Aplikacje pakietu Office mają także wbudowane funkcje, takie jak otwarte formaty XML, które nie są objęte przez narzędzia Office Developer Tools w programie Visual Studio ani w tej dokumentacji.
@@ -34,5 +34,5 @@ Portal centralny do najnowszych zasobów dla deweloperów pakietu Office (niespe
 
 Obszar biblioteki MSDN, w którym można znaleźć artykuły i dokumentację referencyjną dotyczącą opracowywania rozwiązań dla kilku wersji pakietu Office (niespecyficznych dla rozwoju pakietu Office przy użyciu programu Visual Studio).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dodatkowa obsługa błędów w rozwiązaniach pakietu Office](../vsto/additional-support-for-errors-in-office-solutions.md)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 49fa36c9-8e14-44f5-8a2b-34146cf6807b
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e6c523d21a194626805168d6fee3054e77586b19
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: c1560b40fe94af8dae5223981dd8e0c790320085
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047582"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946374"
 ---
 # <a name="use-multiple-processors-to-build-projects"></a>Używanie wielu procesorów do kompilowania projektów
 
@@ -38,7 +38,7 @@ Program MSBuild potrafi optymalnie wykorzystywać komputery z wieloma procesoram
 
 ## <a name="c-project-vcxproj-and-solution-sln-files"></a>Pliki projektu C++ (. vcxproj) i rozwiązania (. sln)
 
- Do [zadania programu MSBuild](../msbuild/msbuild-task.md)można przesłać zarówno pliki projektów C++ ( *. vcxproj* ), jak i rozwiązania ( *. sln* ). W przypadku projektów C++ wywoływana jest VCWrapperProject, a następnie tworzony jest wewnętrzny projekt MSBuild. W przypadku rozwiązań C++ tworzony jest SolutionWrapperProject, a następnie tworzony jest wewnętrzny projekt MSBuild. W obu przypadkach projekt, który jest traktowany, jest traktowane tak samo jak każdy inny projekt MSBuild.
+ Do [zadania programu MSBuild](../msbuild/msbuild-task.md)można przesłać zarówno pliki projektów C++ (*. vcxproj*), jak i rozwiązania (*. sln*). W przypadku projektów C++ wywoływana jest VCWrapperProject, a następnie tworzony jest wewnętrzny projekt MSBuild. W przypadku rozwiązań C++ tworzony jest SolutionWrapperProject, a następnie tworzony jest wewnętrzny projekt MSBuild. W obu przypadkach projekt, który jest traktowany, jest traktowane tak samo jak każdy inny projekt MSBuild.
 
 ## <a name="multi-process-execution"></a>Wykonywanie przez wiele procesów
 

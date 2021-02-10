@@ -8,15 +8,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.All_Languages.CodeLens
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 485287239a13f61d10ee39bad854a0f3bdae4f55
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: 59df5a4b0b0c873de69c5e574ad5c2cccbc43567
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006708"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945880"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Znajdowanie zmian w kodzie i innych elementów historii kodu za pomocą funkcji CodeLens
 
@@ -44,7 +44,7 @@ Skontaktuj się z zespołem, aby dowiedzieć się o zmianach w kodzie bez opuszc
 
 ![CodeLens — skontaktuj się z zespołem](../ide/media/codelens-contact-info.png)
 
-Aby wybrać wskaźniki, które chcesz wyświetlić, lub aby wyłączyć CodeLens i włączony, przejdź do opcji **Narzędzia**  >  **Options**  >  **Edytor tekstu**  >  **wszystkie języki**  >  **CodeLens**.
+Aby wybrać wskaźniki, które chcesz wyświetlić, lub aby wyłączyć CodeLens i włączony, przejdź do opcji **Narzędzia**  >    >  **Edytor tekstu**  >  **wszystkie języki**  >  **CodeLens**.
 
 ## <a name="find-references-to-your-code"></a>Znajdowanie odwołań do kodu
 
@@ -252,7 +252,7 @@ Aby wybrać wskaźniki przy użyciu klawiatury, naciśnij i przytrzymaj klawisz 
 
 ### <a name="q-how-do-i-turn-codelens-off-or-on-or-choose-which-indicators-to-see"></a>P: Jak mogę wyłączyć lub włączyć CodeLens lub wybrać wskaźniki, które mają być wyświetlane?
 
-Odp **.:**  Można wyłączyć lub włączyć wskaźniki, z wyjątkiem wskaźnika odwołań. Przejdź do **Tools**  >  **opcji** narzędzia  >  **Edytor tekstu**  >  **wszystkie języki**  >  **CodeLens**.
+Odp **.:**  Można wyłączyć lub włączyć wskaźniki, z wyjątkiem wskaźnika odwołań. Przejdź do   >  **opcji** narzędzia  >  **Edytor tekstu**  >  **wszystkie języki**  >  **CodeLens**.
 
 Po włączeniu wskaźników można także otworzyć Opcje CodeLens z wskaźników.
 
@@ -266,7 +266,7 @@ Włącz i Wyłącz wskaźniki na poziomie plików CodeLens przy użyciu ikon Pag
 
 Odp **.:** CodeLens pojawia się w języku C# i Visual Basic kodzie na poziomie metody, klasy, indeksatora i właściwości. CodeLens pojawia się na poziomie pliku dla wszystkich innych typów plików.
 
-- Upewnij się, że CodeLens jest włączona. Przejdź do **Tools**  >  **opcji** narzędzia  >  **Edytor tekstu**  >  **wszystkie języki**  >  **CodeLens**.
+- Upewnij się, że CodeLens jest włączona. Przejdź do   >  **opcji** narzędzia  >  **Edytor tekstu**  >  **wszystkie języki**  >  **CodeLens**.
 
 - Jeśli kod jest przechowywany w programie TFS, upewnij się, że indeksowanie kodu jest włączone przy użyciu [polecenia CodeIndex](../ide/codeindex-command.md) z [poleceniem TFS config](/azure/devops/server/command-line/tfsconfig-cmd).
 
@@ -308,7 +308,7 @@ CodeLens nie obsługuje różnych wersji programu Lync lub Skype zainstalowanych
 
 ### <a name="q-how-do-i-change-the-font-and-color-for-codelens"></a>P: Jak mogę zmienić czcionkę i kolor dla CodeLens?
 
-Odp **.:** Przejdź do **Tools**  >  **opcji Narzędzia Opcje**  >  **środowiska**  >  **czcionki i kolory**.
+Odp **.:** Przejdź do   >  **opcji Narzędzia Opcje**  >  **środowiska**  >  **czcionki i kolory**.
 
 ![CodeLens — Zmień ustawienia czcionek i kolorów](../ide/media/codelensoptionsfontscolorssettings.png)
 
@@ -356,6 +356,6 @@ Odp **.:** Strzałka **wersja lokalna** wskazuje najnowszą grupę zmian w lokal
 
 Odp **.:** Skompiluj ponownie projekt, aby uzyskać CodeLens wskaźniki testów do załadowania pliku. Aby zwiększyć wydajność, program Visual Studio nie pobiera więcej informacji o źródłach dla wskaźników testów podczas ładowania plików kodu. Wskaźniki testowe są ładowane po kompilacji lub po przejściu do testu przez dwukrotne kliknięcie go w **Eksploratorze testów**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Funkcje edytora kodu](../ide/writing-code-in-the-code-and-text-editor.md)

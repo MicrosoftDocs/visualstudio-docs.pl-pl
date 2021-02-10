@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Find/Command box
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 341362fe74d4d8a6edbf10afec1a0d49998e857d
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: e650acd4dabec3dd3c657a91e4258b1678918e61
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006604"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945672"
 ---
 # <a name="findcommand-box"></a>Find/Command — Pole
 
@@ -36,7 +36,7 @@ Domyślnie po określeniu tekstu w polu **Znajdź/polecenie** , a następnie wyb
 
 ## <a name="entering-commands"></a>Wprowadzanie poleceń
 
-Aby użyć pola **Znajdź/polecenie** do wystawienia pojedynczego [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] polecenia lub aliasu zamiast wyszukiwania tekstu, należy poprzedzić polecenie znakiem większym niż ( **>** ). Przykład:
+Aby użyć pola **Znajdź/polecenie** do wystawienia pojedynczego [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] polecenia lub aliasu zamiast wyszukiwania tekstu, należy poprzedzić polecenie znakiem większym niż ( **>** ). Na przykład:
 
 ```
 >File.NewFile c:\temp\MyFile /t:"General\Text File"
@@ -46,7 +46,7 @@ Alternatywnie można także użyć okna **polecenia** do wprowadzania i wykonywa
 
 ## <a name="escape-characters"></a>Znaki ucieczki
 
-Znak daszka ( **^** ) w poleceniu oznacza, że znak bezpośrednio po nim jest interpretowany dosłownie, a nie jako znak kontrolny. Można go użyć do osadzenia prostych cudzysłowów (**"**), spacji, ukośników wiodących, karetki lub innych znaków literału w wartości parametru lub przełącznika, z wyjątkiem nazw przełączników. Przykład:
+Znak daszka ( **^** ) w poleceniu oznacza, że znak bezpośrednio po nim jest interpretowany dosłownie, a nie jako znak kontrolny. Można go użyć do osadzenia prostych cudzysłowów (**"**), spacji, ukośników wiodących, karetki lub innych znaków literału w wartości parametru lub przełącznika, z wyjątkiem nazw przełączników. Na przykład:
 
 ```
 >Edit.Find ^^t /regex
@@ -54,7 +54,7 @@ Znak daszka ( **^** ) w poleceniu oznacza, że znak bezpośrednio po nim jest in
 
 Daszek działa tak samo, niezależnie od tego, czy znajduje się wewnątrz, czy poza cudzysłowem. Jeśli karetka jest ostatnim znakiem w wierszu, zostanie zignorowana.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Okno polecenia](../ide/reference/command-window.md)
 - [Znajdowanie i zastępowanie tekstu](../ide/finding-and-replacing-text.md)

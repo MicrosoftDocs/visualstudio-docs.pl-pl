@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Word documents, protection
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1dbb001a8c350b376f30047dbafbf747f043e91d
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: a3301abf4807c02e1ed3e330e27c609a721bf48d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527767"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946153"
 ---
 # <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>Instrukcje: programowe Włączanie ochrony dokumentów i części dokumentów
   Możesz dodać ochronę do Microsoft Office dokumentów programu Word, aby uniemożliwić użytkownikom wprowadzanie zmian w dokumencie.

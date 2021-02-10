@@ -6,15 +6,15 @@ ms.date: 01/22/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 250e07994b04e03b015bf3893633ebce0f36a90d
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 2c203d9a445d9426a8079801a856e20f7be82229
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96617477"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946569"
 ---
 # <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Instrukcje: wstawianie komentarzy XML do generacji dokumentacji
 
@@ -57,7 +57,7 @@ Możesz użyć stylów w komentarzach XML, które będą renderowane w szybkich 
 > [!NOTE]
 > Istnieje [możliwość](../../ide/reference/options-text-editor-csharp-advanced.md) przełączania komentarzy dokumentacji XML po wpisaniu kodu `///` w języku C# lub `'''` Visual Basic. Na pasku menu wybierz **Narzędzia**  >  **Opcje** , aby otworzyć okno dialogowe **Opcje** . Następnie przejdź do **edytora tekstu**  >  **C#** lub **Basic**  >  **Advanced**. W sekcji **Pomoc edytora** Znajdź opcję **Generuj komentarze dokumentacji XML** .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Komentarze dokumentacji XML (Przewodnik programowania w języku C#)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
 - [Dokumentowanie kodu za pomocą komentarzy XML (Przewodnik C#)](/dotnet/csharp/codedoc)

@@ -10,17 +10,17 @@ ms.topic: quickstart
 ms.devlang: vb
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 20b2cf2bf12e9b24ca12d0a73b43e4a56e8246f4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3c6646fca0f0b20f7fb5d5d018c297d1ece920d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579489"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945555"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>Szybki Start: Tworzenie pierwszej aplikacji konsolowej w języku C# za pomocą programu Visual Studio
 
@@ -113,7 +113,7 @@ Program Visual Studio zawiera domyślny kod "Hello world" w projekcie.
 
    ![Wyświetl domyślny kod Hello world z szablonu](../ide/media/csharp-console-helloworld-template.png)
 
-Po naciśnięciu klawisza **F5**można uruchomić program w trybie debugowania. Jednak okno konsoli jest widoczne tylko przez chwilę przed zamknięciem.
+Po naciśnięciu klawisza **F5** można uruchomić program w trybie debugowania. Jednak okno konsoli jest widoczne tylko przez chwilę przed zamknięciem.
 
 (Takie zachowanie ma miejsce `Main` , ponieważ metoda kończy się po wykonaniu jednej instrukcji i dlatego aplikacja kończy się).
 

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - dependency graphs
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 39b34bb124d663d81769c6d3086d6b36803d60eb
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 9723fd44aedf4950b99a49b62d421230b43d55fc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362239"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946530"
 ---
 # <a name="map-dependencies-with-code-maps"></a>Mapowanie zależności za pomocą map kodu
 

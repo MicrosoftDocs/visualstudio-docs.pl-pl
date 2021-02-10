@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b150e0ed-4ac0-4f8c-9732-4b3e54b9d243
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 402d8c8bcb50c570ff680b8fe1cf8d26f037ba17
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b31efd42d4d51384a09d6f0468484561e32f4397
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736567"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944820"
 ---
 # <a name="idebugaddress2"></a>IDebugAddress2
 Ten interfejs zapewnia dostęp do identyfikatora procesu, który jest właścicielem obiektu, którego adres jest reprezentowany przez ten interfejs.
