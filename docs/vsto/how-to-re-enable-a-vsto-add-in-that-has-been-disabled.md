@@ -15,15 +15,15 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], enabling
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d03a03494b149a761910ddbdaa1d41592704f969
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: de3e251c15699ce29b7986e4f0cc19a3f5c5798d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524474"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942193"
 ---
 # <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Instrukcje: Ponowne włączanie dodatku VSTO, który został wyłączony
   Aplikacje Microsoft Office mogą wyłączyć dodatki VSTO, które zachowywać się nieoczekiwanie. Jeśli aplikacja nie ładuje dodatku VSTO podczas próby debugowania, aplikacja mogła zostać trwale wyłączona lub nie wyłączyła dodatku VSTO.

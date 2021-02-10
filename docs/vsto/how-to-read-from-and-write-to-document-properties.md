@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Excel [Office development in Visual Studio], document properties
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 60ee5ccebc9c6c38369ed707c9d2043ffc1995c9
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 864906e678cb3976e99dd8d9aeb9147e303f2517
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528213"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942187"
 ---
 # <a name="how-to-read-from-and-write-to-document-properties"></a>Instrukcje: odczytywanie i zapisywanie właściwości dokumentu
   Można przechowywać właściwości dokumentu wraz z dokumentem. Aplikacje pakietu Office udostępniają wiele wbudowanych właściwości, takich jak autor, tytuł i temat. W tym temacie przedstawiono sposób ustawiania właściwości dokumentu w programie Microsoft Office Excel i Microsoft Office Word.

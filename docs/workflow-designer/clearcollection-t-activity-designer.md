@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: db0e5da2-7b5a-4f1a-864c-f3aeeeeb51a7
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ec1820df3a12a729d534d4c07e56bb48bb46e70
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 31d576712804a75fdca57374ce82a53ff0d1ce84
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435889"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942090"
 ---
 # <a name="clearcollectiont-activity-designer"></a>ClearCollection\<T>, projektant działań
 
@@ -29,7 +29,7 @@ Projektant działań **ClearCollection \<T>** służy do tworzenia i konfigurowa
 
 ### <a name="using-the-clearcollectiont-activity-designer"></a>Korzystanie z \<T> projektanta działania ClearCollection
 
-Projektant **działań \<T> ClearCollection** można znaleźć w kategorii **kolekcji** **przybornika** , do którego jest uzyskiwany dostęp, klikając kartę **przybornika** Projektant przepływu pracy. Alternatywnie możesz wybrać **Przybornik** z menu **Widok** lub nacisnąć **klawisze CTRL** + **Alt** + **X**.
+Projektant **działań \<T> ClearCollection** można znaleźć w kategorii **kolekcji** **przybornika**, do którego jest uzyskiwany dostęp, klikając kartę **przybornika** Projektant przepływu pracy. Alternatywnie możesz wybrać **Przybornik** z menu **Widok** lub nacisnąć **klawisze CTRL** + **Alt** + **X**.
 
 Projektant działań **ClearCollection \<T>** można przeciągnąć z **przybornika** i porzucić na Projektant przepływu pracy powierzchnię, wszędzie tam, gdzie działania są umieszczane, na przykład wewnątrz <xref:System.Activities.Statements.Sequence> . Porzucenie projektanta działań powoduje utworzenie <xref:System.Activities.Statements.ClearCollection%601> działania z wartością domyślną <xref:System.Activities.Activity.DisplayName%2A> clearcollection<Int32 \> . (Domyślnie *elementu TypeArgument* jest **Int32**. Elementu TypeArgument można zmienić w siatce właściwości.) <xref:System.Activities.Activity.DisplayName%2A>Wartość może być edytowana w nagłówku projektanta działania **clearcollection<T \>** lub w polu **DisplayName** siatki właściwości. Inne właściwości muszą być edytowane w siatce właściwości.
 

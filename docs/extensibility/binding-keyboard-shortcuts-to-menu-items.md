@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 112089581965b96133f2160341a13efe23329934
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: bed07019b3651ba7b0fe2959d06f0634374bb31a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974627"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941934"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>Powiąż skróty klawiaturowe z elementami menu
 Aby powiązać skrót klawiaturowy z niestandardowym poleceniem menu, po prostu Dodaj wpis do pliku *. vsct* pakietu. W tym temacie opisano sposób mapowania skrótu klawiaturowego na przycisk niestandardowy, element menu lub polecenie paska narzędzi oraz sposób zastosowania mapowania klawiatury w domyślnym edytorze lub ograniczanie go do niestandardowego edytora.
@@ -107,5 +107,5 @@ Aby powiązać skrót klawiaturowy z niestandardowym poleceniem menu, po prostu 
 <KeyBinding guid="guidVSStd97" id="cmdidBold" editor="guidTestEditorEditorFactory" key1="B" mod1="Control" />
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Rozszerzanie menu i poleceń](../extensibility/extending-menus-and-commands.md)

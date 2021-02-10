@@ -16,15 +16,15 @@ helpviewer_keywords:
 - custom task panes [Office development in Visual Studio], displaying with e-mail messages
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ac14eff05c6f776181c20acde4cff4e2ed7a87b6
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: e1092f48ad699291ccad9abcc8c834344821c060
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97522711"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942129"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>Przewodnik: Wyświetlanie niestandardowych okienek zadań z wiadomościami e-mail w programie Outlook
   W tym instruktażu pokazano, jak wyświetlić unikatowe wystąpienie niestandardowego okienka zadań z każdą wiadomością e-mail, która została utworzona lub otwarta. Użytkownicy mogą wyświetlać lub ukrywać niestandardowe okienko zadań przy użyciu przycisku na Wstążce każdej wiadomości e-mail.

@@ -11,15 +11,15 @@ helpviewer_keywords:
 - text boxes, displaying text in documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1cda1fe3e7430ff30dcc3b3921eb2bcd4d31b699
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 0efea386da2bec0136a8a5399a04b9ce8cabf5c7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97522754"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942103"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>Przewodnik: wyświetlanie tekstu w polu tekstowym w dokumencie za pomocą przycisku
   W tym instruktażu pokazano, jak używać przycisków i pól tekstowych w dostosowaniu na poziomie dokumentu dla programu Microsoft Office Word.
