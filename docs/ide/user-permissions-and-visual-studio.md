@@ -10,15 +10,15 @@ helpviewer_keywords:
 - permissions
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d69d916b8b99d6f5b5b3421ae4aea073e24fa67
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 63787b394d9e8988759cd141540785e34324f8c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96478955"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971300"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Uprawnienia użytkownika i program Visual Studio
 
@@ -29,7 +29,7 @@ Ze względów bezpieczeństwa należy uruchomić program Visual Studio jako typo
 
 Niemal wszystko w środowisku IDE programu Visual Studio można wykonać jako typowy użytkownik. Musisz mieć uprawnienia administratora, aby wykonać następujące zadania:
 
-|Obszar|Zadanie|Więcej informacji|
+|Warstwowy|Zadanie|Więcej informacji|
 |----------|----------| - |
 |Instalacja|Zainstaluj lub zmodyfikuj program Visual Studio.|[Zainstaluj program Visual Studio](../install/install-visual-studio.md), [zmodyfikuj program Visual Studio](../install/modify-visual-studio.md)|
 ||Instalowanie, aktualizowanie lub usuwanie lokalnej zawartości pomocy.|[Instalowanie zawartości pomocy lokalnej i zarządzanie nią](../help-viewer/install-manage-local-content.md)|

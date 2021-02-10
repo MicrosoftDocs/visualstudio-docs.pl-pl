@@ -13,15 +13,15 @@ helpviewer_keywords:
 - safe controls [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 024cd50fc36b84addca11dc3c0f23cdc64fa507d
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: bf7e2f2c5b0de59a5f1cac91f0df9cefbf15bda8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304501"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964709"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Instrukcje: Oznaczanie kontrolek jako bezpiecznych formantów
   W celu zapewnienia bezpieczeństwa program SharePoint rozróżnia kontrolki sieci Web, które są chronione przed iniekcją skryptu i kontrolkami sieci Web, które nie są. Dostęp do formantów chronionych lub *bezpiecznych kontrolek* można uzyskać za pomocą niezaufanych użytkowników. Kontrolki można oznaczyć jako bezpieczne we właściwości wpisy kontroli bezpieczeństwa elementu projektu programu SharePoint lub w **projektancie pakietów** po dodaniu zestawu do pakietu. Aby uzyskać więcej informacji, zobacz

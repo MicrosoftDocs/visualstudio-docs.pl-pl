@@ -13,15 +13,15 @@ helpviewer_keywords:
 - document properties [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4897008f102600bd222a21761237acc4bcb62a30
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 0080c9b0ddd7ffba4730a8cfb305bc34b6ba1690
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844299"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964319"
 ---
 # <a name="how-to-create-and-modify-custom-document-properties"></a>Instrukcje: Tworzenie i modyfikowanie właściwości dokumentu niestandardowego
   Aplikacje Microsoft Office wymienione powyżej zapewniają wbudowane właściwości, które są przechowywane w dokumentach. Ponadto można tworzyć i modyfikować właściwości dokumentu niestandardowego, jeśli istnieją dodatkowe informacje, które mają być przechowywane w dokumencie.
@@ -39,7 +39,7 @@ ms.locfileid: "96844299"
 ## <a name="robust-programming"></a>Niezawodne programowanie
  Próba uzyskania dostępu do `Value` Właściwości niezdefiniowanych właściwości wywołuje wyjątek.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dodatki narzędzi VSTO programu](../vsto/programming-vsto-add-ins.md)
 - [Dostosowywanie na poziomie dokumentu programu](../vsto/programming-document-level-customizations.md)
 - [Instrukcje: odczytywanie i zapisywanie właściwości dokumentu](../vsto/how-to-read-from-and-write-to-document-properties.md)

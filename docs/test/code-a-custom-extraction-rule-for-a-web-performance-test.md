@@ -14,13 +14,13 @@ dev_langs:
 - VB
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: e03a289ee95e9aefddb49154d1199fffa31ce3ca
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 09038afd3b8f359ed90639d7f35cb92c04241324
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442459"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964605"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>Kod reguły wyodrębniania niestandardowego dla testu wydajności sieci Web
 
@@ -208,7 +208,7 @@ End Namespace
 
 Metoda <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> zawiera podstawowe funkcje reguły wyodrębniania. Metoda <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> w poprzednim przykładzie przyjmuje jako wartość element <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionEventArgs>, który dostarcza odpowiedzi generowane przez żądanie objęte regułą wyodrębniania. Odpowiedź zawiera element <xref:Microsoft.VisualStudio.TestTools.WebTesting.HtmlDocument>, w którym znajdują się wszystkie znaczniki odpowiedzi. Znaczniki wejściowe są odfiltrowywane z elementu <xref:Microsoft.VisualStudio.TestTools.WebTesting.HtmlDocument>. Każdy tag wejściowy jest sprawdzany pod kątem atrybutu o nazwie `name` , którego wartość jest równa wartości podanej przez użytkownika `Name` właściwości. Jeśli zostanie znaleziony tag z tym pasującym atrybutem, podejmowana jest próba wyodrębnienia wartości zawartej w `value` atrybucie, jeśli istnieje atrybut value. Jeśli istnieje, nazwa i wartość znacznika są wyodrębniane i dodawane do kontekstu testu wydajności sieci Web. Reguła wyodrębniania zadziałała pomyślnie.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule>
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.Rules>

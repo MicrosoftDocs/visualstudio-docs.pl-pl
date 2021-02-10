@@ -13,15 +13,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], counting characters
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 42e80cf1a466867fbb7394181efe28bcfe3631e4
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: fda6d3bb553470a914d55fa5aa24d1db8b2365e1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523149"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964163"
 ---
 # <a name="how-to-programmatically-count-characters-in-documents"></a>Instrukcje: Programowane zliczanie znaków w dokumentach
   Pierwszy znak w dokumencie znajduje się na pozycji znaku 0, która reprezentuje punkt wstawiania. Ostatnia pozycja znaku jest równa łącznej liczbie znaków w dokumencie. Możesz określić liczbę znaków w dokumencie przy użyciu <xref:Microsoft.Office.Interop.Word.Characters.Count%2A> właściwości <xref:Microsoft.Office.Interop.Word.Characters> kolekcji.

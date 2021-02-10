@@ -5,16 +5,16 @@ ms.custom: SEO-VS-2020
 ms.date: 08/21/2019
 ms.topic: conceptual
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 99eb322e1eebe2d8845b355cd76a9e34a7516348
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 65044baf78e6f49e35f011a4853111063e82a192
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441832"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964410"
 ---
 # <a name="customize-code-coverage-analysis"></a>Dostosowywanie analizy pokrycia kodu
 
@@ -53,7 +53,7 @@ Aby dostosować pokrycie kodu, wykonaj następujące kroki:
 
 ::: moniker range="vs-2017"
 
-Aby wyłączyć ustawienia niestandardowe i włączać, usuń zaznaczenie lub wybierz plik w **Test** > menu **Ustawienia testu** testowego.
+Aby wyłączyć ustawienia niestandardowe i włączać, usuń zaznaczenie lub wybierz plik w  > menu **Ustawienia testu** testowego.
 
 ![Menu ustawień testu z niestandardowym plikiem ustawień w programie Visual Studio 2017](../test/media/codecoverage-settingsfile.png)
 
@@ -120,9 +120,9 @@ W poniższej tabeli przedstawiono różne sposoby dopasowywania zestawów i czł
 
 Węzły include i Exclude używają wyrażeń regularnych, które nie są takie same jak symbole wieloznaczne. We wszystkich dopasowaniach rozróżniana jest wielkość liter. Przykłady to:
 
-- **.\** _ dopasowuje ciąg znaków
+- **.\*** dopasowuje ciąg znaków
 
-- _ *\\.* * dopasowuje kropkę "."
+- **\\.** dopasowuje kropkę "."
 
 - **\\ ( \\ )** dopasowuje nawiasy "()"
 
@@ -290,7 +290,7 @@ Included items must then not match any entries in the exclude list to remain inc
 </RunSettings>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Konfigurowanie testów jednostkowych przy użyciu pliku parametrów uruchomieniowych](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)
 - [Użyj pokrycia kodu, aby określić, ile kodu jest testowany](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)

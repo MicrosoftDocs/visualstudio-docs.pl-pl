@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Application page [UWP project]
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 826d408d8e1a6a2cb8bcad956ce930781a9155db
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 21dd08f81802661cae9d77ee3449f4e9369ca768
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871369"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965086"
 ---
 # <a name="application-property-page-uwp-projects"></a>Strona właściwości aplikacji (projekty platformy UWP)
 
@@ -26,7 +26,7 @@ Na stronie właściwości **aplikacji** można określić zestaw i informacje o 
 
 ![Strona właściwości aplikacji](media/application-page-uwp.png)
 
-Aby uzyskać dostęp do strony **aplikacji** , wybierz węzeł projektu w **Eksplorator rozwiązań**. Następnie wybierz **Project**  >  **Właściwości** projektu na pasku menu. Strony właściwości są otwierane na karcie **aplikacja** .
+Aby uzyskać dostęp do strony **aplikacji** , wybierz węzeł projektu w **Eksplorator rozwiązań**. Następnie wybierz   >  **Właściwości** projektu na pasku menu. Strony właściwości są otwierane na karcie **aplikacja** .
 
 ## <a name="general-section"></a>Sekcja ogólna
 
@@ -48,7 +48,7 @@ Możesz ustawić wersję docelową i minimalną wersję systemu Windows 10 dla s
 
 Aby uzyskać informacje dotyczące platformy docelowej w programie Visual Studio, zobacz temat [Określanie platformy docelowej](/visualstudio/productinfo/vs2017-compatibility-vs#platform-targeting).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Tworzenie pierwszej aplikacji platformy UWP](/windows/uwp/get-started/your-first-app)
 - [Wybierz wersję platformy UWP](/windows/uwp/updates-and-versions/choose-a-uwp-version)

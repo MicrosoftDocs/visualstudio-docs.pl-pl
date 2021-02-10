@@ -13,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 57ed43ae-4e67-4139-8aec-3e9fceb0a745
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: c059510dc39472d5c981f93e4d7259545b809d38
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 163cb3d541b054d22dc46df0b8e1e4735ac3fd50
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442446"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964670"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Przypisywanie ról do kontrolera testów i agenta testowego
 
@@ -113,6 +113,6 @@ W tym artykule przedstawiono sposób tworzenia i konfigurowania ustawienia testu
 
      Gdy kontroler testów przetwarza testy jednostkowe i kodowane testy interfejsu użytkownika, kontroler testu dzieli testy na grupy 100 i wysyła je do maszyny agenta testowego. Na przykład jeśli masz 250 testów jednostkowych i trzech agentów testowych, pierwsze 100 testów jednostkowych zostanie wysłanych do agenta 1, następne 100 testów jednostkowych zostanie wysłanych do agenta 2, a pozostałe testy jednostkowe programu 50 będą wysyłane do agenta 3.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md)

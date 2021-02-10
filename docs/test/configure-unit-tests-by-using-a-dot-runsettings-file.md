@@ -5,16 +5,16 @@ ms.custom: SEO-VS-2020
 ms.date: 07/15/2020
 ms.topic: conceptual
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: ca15e265f9e6f3188826c019a8c81d02a7668bcf
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 10bfed2a9a2a0ce466e1b3276a487695d40fb580
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442693"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964566"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurowanie testów jednostkowych przy użyciu pliku *. runsettings*
 
@@ -43,7 +43,7 @@ Pliki parametrów uruchomieniowych są opcjonalne. Jeśli nie jest wymagana żad
 
 ::: moniker range="vs-2017"
 
-Jeśli chcesz wyłączyć ustawienia niestandardowe i włączyć je w IDE, usuń zaznaczenie lub wybierz plik z **Test** > menu **Ustawienia testu** testowego.
+Jeśli chcesz wyłączyć ustawienia niestandardowe i włączyć je w IDE, usuń zaznaczenie lub wybierz plik z  > menu **Ustawienia testu** testowego.
 
 ![Menu ustawień testu z niestandardowym plikiem ustawień w programie Visual Studio 2017](../test/media/codecoverage-settingsfile.png)
 
@@ -86,7 +86,7 @@ Aby automatycznie wykryć plik parametrów uruchomieniowych, umieść go w katal
 
 Jeśli jest włączone Autowykrywanie plików uruchomieniowych, ustawienia w tym pliku są stosowane do wszystkich przebiegów testów. Funkcję automatycznego wykrywania plików runsettings można włączyć przy użyciu dwóch metod:
 
-- Wybierz **Tools** > **Opcje** narzędzi > **test** > **autowykrywania runsettings plików**
+- Wybierz  > **Opcje** narzędzi > **test** > **autowykrywania runsettings plików**
 
    ![Automatycznie Wykryj opcję pliku runsettings w programie Visual Studio 2019](media/vs-2019/auto-detect-runsettings-tools-window.png)
 
@@ -466,7 +466,7 @@ Węzeł **RunConfiguration** powinien zawierać węzeł **EnvironmentVariables**
 > [!NOTE]
 > Ponieważ te zmienne środowiskowe zawsze powinny być ustawiane podczas uruchamiania hosta testowego, testy powinny być zawsze uruchamiane w osobnym procesie. Dla tej flagi flaga */inisolation.* zostanie ustawiona, gdy istnieją zmienne środowiskowe, aby Host testowy był zawsze wywoływany.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Konfigurowanie przebiegu testowego](https://github.com/microsoft/vstest-docs/blob/master/docs/configure.md)
 - [Dostosowywanie analizy pokrycia kodu](../test/customizing-code-coverage-analysis.md)

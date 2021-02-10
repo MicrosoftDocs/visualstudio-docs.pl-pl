@@ -7,16 +7,16 @@ ms.topic: conceptual
 ms.assetid: 45fa397d-d7a1-4c4c-9c97-ede6c21643bd
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 429bc6c8c2d82e3c18c75132f71e60231b10f10d
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: c09b50a4f7089367a82a54f285cb4bf401360b03
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722909"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964722"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Analizowanie użycia sieci w aplikacjach platformy UWP
 Narzędzie Diagnostyka **sieci** programu Visual Studio zbiera dane dotyczące operacji sieciowych wykonywanych przy użyciu [interfejsu API Windows. Web. http](/uwp/api/windows.web.http). Analizowanie danych może pomóc w rozwiązywaniu problemów, takich jak problemy z dostępem i uwierzytelnianiem, niepoprawna pamięć podręczna oraz niska wydajność wyświetlania i pobierania.
@@ -73,7 +73,7 @@ Narzędzie Diagnostyka **sieci** programu Visual Studio zbiera dane dotyczące o
 
 3. Przycisk "Łatwa drukowanie" odpowiedzi (na karcie Body) może pomóc w analizie danych w postaci notacji JSON, XML, HTML, CSS, JavaScript i języka TypeScript przez zwiększenie czytelności zawartości.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Uruchamianie narzędzi profilowania z debugerem lub bez debugera](../profiling/running-profiling-tools-with-or-without-the-debugger.md)
 - [Blog programu Visual Studio: wprowadzenie do Inspektora sieci programu Visual Studio](https://devblogs.microsoft.com/visualstudio/)

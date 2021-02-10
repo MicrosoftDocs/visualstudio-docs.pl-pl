@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: 3ff4006d-659d-4073-9a41-06ff85e6cfdf
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ac8502b3d5058294efe102564453bb23a3eb3b98
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: b6c6c243896370cc97b8a85d5de520c4c033d49b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049235"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971612"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Tworzenie i stosowanie zasobów
 
@@ -30,7 +30,7 @@ Za każdym razem, gdy tworzysz nowy zasób z istniejącej właściwości, [stylu
 
 1. Gdy plik XAML jest otwarty w projektant XAML, Utwórz element lub wybierz element w oknie konspektu dokumentu.
 
-2. W oknie **Właściwości** wybierz znacznik właściwości, który jest wyświetlany jako symbol pola po prawej stronie wartości właściwości, a następnie wybierz polecenie **Konwertuj na nowy zasób** . Biały znak Box wskazuje wartość domyślną, a symbol czarnego pudełka zazwyczaj wskazuje, że zastosowany został zasób lokalny.
+2. W oknie **Właściwości** wybierz znacznik właściwości, który jest wyświetlany jako symbol pola po prawej stronie wartości właściwości, a następnie wybierz polecenie **Konwertuj na nowy zasób**. Biały znak Box wskazuje wartość domyślną, a symbol czarnego pudełka zazwyczaj wskazuje, że zastosowany został zasób lokalny.
 
      Pojawi się odpowiednie okno dialogowego dla tworzenia zasobu. To okno dialogowe pojawia się podczas tworzenia zasobu na podstawie pędzla:
 
@@ -40,13 +40,13 @@ Za każdym razem, gdy tworzysz nowy zasób z istniejącej właściwości, [stylu
 
 4. W obszarze **Definiuj w** wybierz opcję określającą, gdzie ma być zdefiniowany zasób:
 
-    - Aby udostępnić zasób dla dowolnego dokumentu w aplikacji, wybierz **aplikację** .
+    - Aby udostępnić zasób dla dowolnego dokumentu w aplikacji, wybierz **aplikację**.
 
-    - Aby udostępnić zasób tylko do bieżącego dokumentu, wybierz **ten dokument** .
+    - Aby udostępnić zasób tylko do bieżącego dokumentu, wybierz **ten dokument**.
 
-    - Aby udostępnić zasób tylko do elementu, z którego został utworzony zasób lub do jego elementów podrzędnych, wybierz **ten dokument** , a następnie z listy rozwijanej wybierz pozycję **element** : **Nazwa** .
+    - Aby udostępnić zasób tylko do elementu, z którego został utworzony zasób lub do jego elementów podrzędnych, wybierz **ten dokument**, a następnie z listy rozwijanej wybierz pozycję **element**: **Nazwa**.
 
-    - Aby zdefiniować zasób w pliku [słownika zasobów](/windows/uwp/design/controls-and-patterns/resourcedictionary-and-xaml-resource-references) , który może być ponownie używany w innych projektach, kliknij pozycję **słownik zasobów** . Następnie wybierz istniejący plik słownika zasobów, na przykład **StandardStyles. XAML** , z listy rozwijanej.
+    - Aby zdefiniować zasób w pliku [słownika zasobów](/windows/uwp/design/controls-and-patterns/resourcedictionary-and-xaml-resource-references) , który może być ponownie używany w innych projektach, kliknij pozycję **słownik zasobów**. Następnie wybierz istniejący plik słownika zasobów, na przykład **StandardStyles. XAML**, z listy rozwijanej.
 
 5. Wybierz przycisk **OK** , aby utworzyć zasób i zastosować go do elementu, z którego został utworzony.
 
@@ -56,11 +56,11 @@ Za każdym razem, gdy tworzysz nowy zasób z istniejącej właściwości, [stylu
 
 2. Wykonaj jedną z następujących czynności:
 
-   - Zastosuj zasób do właściwości. W oknie **Właściwości** wybierz znacznik właściwości obok wartości właściwości, wybierz pozycję **zasób lokalny** lub **zasób systemowy** , a następnie wybierz dostępny zasób z wyświetlonej listy.
+   - Zastosuj zasób do właściwości. W oknie **Właściwości** wybierz znacznik właściwości obok wartości właściwości, wybierz pozycję **zasób lokalny** lub **zasób systemowy**, a następnie wybierz dostępny zasób z wyświetlonej listy.
 
       Jeśli nie widzisz zasobu, który powinien być widoczny, może to być spowodowane faktem, że typ zasobu nie jest zgodny z typem właściwości.
 
-   - Zastosuj styl lub szablon kontrolki do kontrolki. Otwórz menu dostępne po kliknięciu prawym przyciskiem myszy (menu kontekstowe) kontrolki w oknie Konspekt dokumentu, wybierz polecenie **Edytuj szablon** lub **Edytuj dodatkowe szablony** , wybierz pozycję **Zastosuj zasób** , a następnie wybierz nazwę szablonu formantu z wyświetlonej listy.
+   - Zastosuj styl lub szablon kontrolki do kontrolki. Otwórz menu dostępne po kliknięciu prawym przyciskiem myszy (menu kontekstowe) kontrolki w oknie Konspekt dokumentu, wybierz polecenie **Edytuj szablon** lub **Edytuj dodatkowe szablony**, wybierz pozycję **Zastosuj zasób**, a następnie wybierz nazwę szablonu formantu z wyświetlonej listy.
 
      > [!NOTE]
      > **Edytuj szablon** stosuje szablony kontrolek. **Edycja dodatkowych szablonów** dotyczy innych typów szablonów.

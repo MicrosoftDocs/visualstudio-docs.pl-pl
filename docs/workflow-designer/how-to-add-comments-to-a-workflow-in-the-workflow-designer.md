@@ -9,16 +9,16 @@ f1_keywords:
 - Annotation
 ms.assetid: 9aa0e8d6-8129-4438-8389-d460611581a7
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: 0fe5b766c0c5545a1cc3839e29d71e3f3b7a1f39
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9417dd0084b381d8fc997a90b4690c49191f4785
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437960"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971703"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Instrukcje: Dodawanie komentarzy do przepływu pracy w Projektancie przepływu pracy
 
@@ -41,7 +41,7 @@ Aby ułatwić tworzenie większych, bardziej skomplikowanych przepływów pracy,
 
 ## <a name="adding-an-annotation-to-an-activity-in-the-designer"></a>Dodawanie adnotacji do działania w projektancie
 
-1. W Projektancie przepływu pracy kliknij prawym przyciskiem myszy element w Projektancie przepływów pracy i wybierz pozycję **Adnotacje** , **Dodaj adnotację**.
+1. W Projektancie przepływu pracy kliknij prawym przyciskiem myszy element w Projektancie przepływów pracy i wybierz pozycję **Adnotacje**, **Dodaj adnotację**.
 
 1. Dodaj tekst adnotacji do podanego miejsca.
 
@@ -61,21 +61,21 @@ Aby ułatwić tworzenie większych, bardziej skomplikowanych przepływów pracy,
 
 ## <a name="showing-or-hiding-all-annotations"></a>Wyświetlanie lub ukrywanie wszystkich adnotacji
 
-1. Kliknij prawym przyciskiem myszy działanie, które ma adnotację. Wybierz **Adnotacje** , **Pokaż wszystkie adnotacje**.
+1. Kliknij prawym przyciskiem myszy działanie, które ma adnotację. Wybierz **Adnotacje**, **Pokaż wszystkie adnotacje**.
 
    Wszystkie adnotacje są wyświetlane w projektantach działania.
 
-1. Aby wyświetlić wszystkie adnotacje poza projektantami działania, kliknij prawym przyciskiem myszy działanie i wybierz pozycję **Adnotacje** , **Ukryj wszystkie adnotacje**.
+1. Aby wyświetlić wszystkie adnotacje poza projektantami działania, kliknij prawym przyciskiem myszy działanie i wybierz pozycję **Adnotacje**, **Ukryj wszystkie adnotacje**.
 
 ## <a name="editing-or-deleting-an-annotation-for-an-activity"></a>Edytowanie lub usuwanie adnotacji dla działania
 
 1. Kliknij prawym przyciskiem myszy działanie, które ma adnotację.
 
-1. Wybierz **Adnotacje** , **Edytuj adnotację** lub **Usuń adnotację**.
+1. Wybierz **Adnotacje**, **Edytuj adnotację** lub **Usuń adnotację**.
 
    Adnotacja jest otwierana do edycji lub usuwania.
 
-1. Aby usunąć jednocześnie wszystkie adnotacje, kliknij prawym przyciskiem myszy projektanta przepływu pracy i wybierz pozycję **adnotacja** , **Usuń wszystkie adnotacje**.
+1. Aby usunąć jednocześnie wszystkie adnotacje, kliknij prawym przyciskiem myszy projektanta przepływu pracy i wybierz pozycję **adnotacja**, **Usuń wszystkie adnotacje**.
 
 ## <a name="adding-editing-and-deleting-an-annotation-for-a-variable-or-argument"></a>Dodawanie, edytowanie i usuwanie adnotacji dla zmiennej lub argumentu
 

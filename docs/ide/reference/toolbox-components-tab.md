@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Toolbox, Components tab
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 40ba84712a343a071d6213dc9cd985727fc20ebf
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: adbc2611cf0d0e08ef356e91e25ed0c4854c4386
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560944"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965047"
 ---
 # <a name="toolbox-components-tab"></a>Przybornik, karta składniki
 
@@ -89,7 +89,7 @@ Tworzy <xref:System.Windows.Forms.Timer> wystąpienie składnika, którego możn
 > [!NOTE]
 > Istnieje również system <xref:System.Timers.Timer> , który można dodać do **przybornika** <xref:System.Timers.Timer> , który jest zoptymalizowany pod kątem aplikacji serwera, a Windows Forms <xref:System.Windows.Forms.Timer> jest najlepiej dostosowany do korzystania z Windows Forms.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Kontrolki do użycia na Windows Forms](/dotnet/framework/winforms/controls/controls-to-use-on-windows-forms)
 - [Wybieranie elementów przybornika, składniki WPF](choose-toolbox-items-wpf-components.md)

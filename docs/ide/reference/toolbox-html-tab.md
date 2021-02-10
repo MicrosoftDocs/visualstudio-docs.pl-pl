@@ -12,15 +12,15 @@ helpviewer_keywords:
 - HTML tab in Toolbox
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f91e832e33d6a65d9fc70ee594d0c0670242306e
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 02baf454fe53a27e875d53cf983fce81a2c86874
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560463"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965034"
 ---
 # <a name="toolbox-html-tab"></a>Przybornik, karta HTML
 
@@ -117,7 +117,7 @@ Gdy przeciągasz **dane wejściowe (hasła)** na powierzchnię widok Projekt, zn
 ```
 
 > [!IMPORTANT]
-> Jeśli aplikacja przesyła nazwy i hasła użytkowników, należy skonfigurować witrynę sieci Web tak, aby używała SSL (SSL) do szyfrowania transmisji. Aby uzyskać więcej informacji, zobacz [Zabezpieczanie połączeń](/previous-versions/tn-archive/bb418917(v=technet.10)). Ponadto zaleca się zweryfikowanie wszystkich danych wejściowych użytkownika. Aby uzyskać więcej informacji, zobacz [Weryfikowanie danych wejściowych użytkownika w witrynach ASP.NET Web Pages (Razor)](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).
+> Jeśli aplikacja przesyła nazwy i hasła użytkowników, należy skonfigurować witrynę sieci Web tak, aby używała Secure Sockets Layer (SSL) do szyfrowania transmisji. Aby uzyskać więcej informacji, zobacz [Zabezpieczanie połączeń](/previous-versions/tn-archive/bb418917(v=technet.10)). Ponadto zaleca się zweryfikowanie wszystkich danych wejściowych użytkownika. Aby uzyskać więcej informacji, zobacz [Weryfikowanie danych wejściowych użytkownika w witrynach ASP.NET Web Pages (Razor)](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).
 
 **Dane wejściowe (pole wyboru)**
 
@@ -232,6 +232,6 @@ Gdy przeciągasz element **DIV** na powierzchnię widok Projekt, znaczniki HTML,
 <div ms_positioning="FlowLayout" style="width: 70px; position: relative; height: 15px">Label</div>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Przybornik](../../ide/reference/toolbox.md)

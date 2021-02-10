@@ -12,15 +12,15 @@ helpviewer_keywords:
 - referencing components, troubleshooting
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c47f8c399c89df9bf91879abc7cf926eac925bc
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 75e4d04641d593d8ced0c696cdca1efffd95e48d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560242"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971508"
 ---
 # <a name="troubleshoot-broken-references"></a>Rozwiązywanie problemów z przerwanymi odwołaniami
 
@@ -90,6 +90,6 @@ Może istnieć wiele możliwych przyczyn dla niedostępnych plików: nieudane po
 
 Jeśli użytkownik dodał odwołanie do składnika COM, a drugi użytkownik próbuje uruchomić kod na komputerze, na którym nie jest zainstalowany ten składnik, drugi użytkownik otrzyma komunikat o błędzie, że odwołanie zostało przerwane. Zainstalowanie składnika na drugim komputerze spowoduje poprawienie błędu. Aby uzyskać więcej informacji o sposobach używania odwołań do składników COM w projektach, zobacz [współdziałanie com w aplikacjach .NET Framework](/dotnet/visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Strona odwołań, Projektant projektu (Visual Basic)](../ide/reference/references-page-project-designer-visual-basic.md)
