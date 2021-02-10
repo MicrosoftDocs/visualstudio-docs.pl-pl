@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: b41d20a7-ba40-4c42-a450-16f413d6a04f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dd88eebedc8c6dc5b059cbcd94844ce4191fccc9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0a298ac5e99176294be8afe9dbba1f00bdea0a82
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721777"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959691"
 ---
 # <a name="idebugprogramprovider2setlocale"></a>IDebugProgramProvider2::SetLocale
 Określa ustawienia regionalne, które mają być używane dla wszystkich zasobów specyficznych dla ustawień regionalnych.
@@ -28,14 +28,14 @@ Określa ustawienia regionalne, które mają być używane dla wszystkich zasob�
 ## <a name="syntax"></a>Składnia
 
 ```cpp
-HRESULT SetLocale(
-   WORD wLangID
+HRESULT SetLocale(
+   WORD wLangID
 );
 ```
 
 ```csharp
-int SetLocale(
-   ushort wLangID
+int SetLocale(
+   ushort wLangID
 );
 ```
 

@@ -1,5 +1,5 @@
 ---
-title: Przegląd interfejsu użytkownika narzędzia języka specyficznego dla domeny
+title: Przegląd interfejsu użytkownika narzędzi Domain-Specific Language Tools
 description: Zawiera omówienie interfejsu użytkownika rozwiązania narzędzi języka specyficznego dla domeny w programie Visual Studio.
 ms.date: 11/04/2016
 ms.topic: overview
@@ -9,25 +9,25 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, user interface
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: 62dee3372f9d0c667c138e72c2ad58c886388f7a
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: fa47b10edc3804468f6ca0766872849ae9e8a949
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808106"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959132"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Omówienie interfejsu użytkownika narzędzi językowych właściwych dla domeny
-Po pierwszym otwarciu rozwiązania narzędzia języka specyficznego dla domeny (narzędzia DSL) w programie Visual Studio interfejs użytkownika będzie wyglądał na poniższym obrazie.
+Po pierwszym otwarciu rozwiązania Domain-Specific Language Tools (narzędzia DSL) w programie Visual Studio interfejs użytkownika będzie wyglądał na poniższym obrazie.
 
  ![Projektant DSL](../modeling/media/dsl_designer.png)
 
  W poniższej tabeli opisano, jak są używane części interfejsu użytkownika.
 
-|**Postaci**|**Definicja**|
+|**Element**|**Definicja**|
 |-|-|
 |Diagram|Na diagramie zostanie wyświetlony model domeny.<br /><br /> Diagram ma dwie strony. Jedna strona definiuje typy elementów w modelach. Druga strona definiuje sposób wyświetlania modeli na ekranie.|
 |Przybornik|Przeciągnij narzędzia z przybornika, aby dodać klasy domeny i typy kształtów do diagramu. Aby dodać relacje, łączniki i mapy kształtów, kliknij narzędzie, a następnie kliknij węzeł źródłowy na diagramie, a następnie węzeł docelowy.|

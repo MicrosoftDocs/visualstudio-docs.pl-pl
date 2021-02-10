@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: b2a80230-906e-4e85-b3e0-fcd9c40426e1
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 60172d9e308e38967f5ab5a8d882057e78f083c8
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: c822b6e8cbce1279a14c5a947d70208fc7f5480a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136631"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958378"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Strona kompilowania, Projektant projektu (Visual Basic)
 
@@ -45,11 +45,11 @@ Poniższe ustawienia umożliwiają wybranie konfiguracji i platformy do wyświet
 
 **Konfiguracja**
 
-Określa ustawienia konfiguracji do wyświetlenia lub zmodyfikowania. Ustawienia są **debugowane** (ustawienie domyślne), **wydanie**lub **wszystkie konfiguracje**. Aby uzyskać więcej informacji, zobacz [Opis konfiguracji kompilacji](../../ide/understanding-build-configurations.md) i [instrukcje: Tworzenie i edytowanie konfiguracji](../../ide/how-to-create-and-edit-configurations.md).
+Określa ustawienia konfiguracji do wyświetlenia lub zmodyfikowania. Ustawienia są **debugowane** (ustawienie domyślne), **wydanie** lub **wszystkie konfiguracje**. Aby uzyskać więcej informacji, zobacz [Opis konfiguracji kompilacji](../../ide/understanding-build-configurations.md) i [instrukcje: Tworzenie i edytowanie konfiguracji](../../ide/how-to-create-and-edit-configurations.md).
 
 **Platforma**
 
-Określa ustawienia platformy do wyświetlenia lub zmodyfikowania. Można określić **dowolny procesor** (wartość domyślna), **x64**lub **x86**.
+Określa ustawienia platformy do wyświetlenia lub zmodyfikowania. Można określić **dowolny procesor** (wartość domyślna), **x64** lub **x86**.
 
 ## <a name="compiler-configuration-options"></a>Opcje konfiguracji kompilatora
 
@@ -105,9 +105,9 @@ Sekcja **konfiguracje ostrzeżeń** **strony kompilowania** zawiera ustawienia, 
 
 - **Niejawny typ; przyjęto obiekt**
 
-Jeśli ustawisz **opcję Strict** to **on**, wszystkie trzy z tych ustawień konfiguracyjnych ostrzeżeń mają ustawioną wartość **błąd**. Ustawienie **opcji Strict** to **off**powoduje, że wszystkie trzy ustawienia mają wartość **none**.
+Jeśli ustawisz **opcję Strict** to **on**, wszystkie trzy z tych ustawień konfiguracyjnych ostrzeżeń mają ustawioną wartość **błąd**. Ustawienie **opcji Strict** to **off** powoduje, że wszystkie trzy ustawienia mają wartość **none**.
 
-Można indywidualnie zmienić każde ustawienie konfiguracji ostrzegawczej na **none**, **Warning**lub **Error**. Jeśli wszystkie trzy ustawienia konfiguracji ostrzeżeń mają ustawioną wartość **błąd**, `On` pojawi się w `Option strict` polu. Jeśli wszystkie trzy z nich są ustawione na **Brak**, `Off` pojawia się w tym polu. Dla każdej innej kombinacji tych ustawień pojawia się **(niestandardowe)** .
+Można indywidualnie zmienić każde ustawienie konfiguracji ostrzegawczej na **none**, **Warning** lub **Error**. Jeśli wszystkie trzy ustawienia konfiguracji ostrzeżeń mają ustawioną wartość **błąd**, `On` pojawi się w `Option strict` polu. Jeśli wszystkie trzy z nich są ustawione na **Brak**, `Off` pojawia się w tym polu. Dla każdej innej kombinacji tych ustawień pojawia się **(niestandardowe)** .
 
 **Opcja Porównaj**
 
@@ -145,13 +145,13 @@ To pole wyboru jest dostępne tylko wtedy, gdy spełnione są wszystkie następu
 
 - Na **stronie kompilowania** **docelowa Lista procesorów CPU** jest ustawiana na **dowolny procesor**.
 
-- Na **stronie aplikacja**lista **Typ aplikacji** określa, że projekt jest aplikacją.
+- Na **stronie aplikacja** lista **Typ aplikacji** określa, że projekt jest aplikacją.
 
-- Na **stronie aplikacja**lista **platform docelowych** określa .NET Framework 4,5.
+- Na **stronie aplikacja** lista **platform docelowych** określa .NET Framework 4,5.
 
 **Konfiguracje ostrzeżeń**
 
-Ta tabela zawiera listę warunków kompilacji i odpowiedni poziom powiadomienia dla **każdego z nich,** **Ostrzeżenie**lub **błąd** .
+Ta tabela zawiera listę warunków kompilacji i odpowiedni poziom powiadomienia dla **każdego z nich,** **Ostrzeżenie** lub **błąd** .
 
 Domyślnie wszystkie ostrzeżenia kompilatora są dodawane do Lista zadań podczas kompilacji. Wybierz pozycję **Wyłącz wszystkie ostrzeżenia** , aby wystawić kompilatorowi, że nie wystawiasz ostrzeżeń lub błędów. Wybierz pozycję **Traktuj wszystkie ostrzeżenia jako błędy** , jeśli chcesz, aby kompilator traktował ostrzeżenia jako błędy, które muszą zostać naprawione.
 

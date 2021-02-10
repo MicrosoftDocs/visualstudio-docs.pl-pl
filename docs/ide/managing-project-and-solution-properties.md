@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b7b89588e778a142e7dd49e1a3051a9aa188ff1
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 0cef610da1bcbfe7cb9c6c7ab5a806b74e07e177
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871395"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959418"
 ---
 # <a name="manage-project-and-solution-properties"></a>Zarządzanie właściwościami projektów i rozwiązań
 
@@ -56,7 +56,7 @@ Aby uzyskać informacje o właściwościach projektu C++, zobacz [Work with Proj
 
 Aby uzyskać dostęp do właściwości w rozwiązaniu, kliknij prawym przyciskiem myszy węzeł rozwiązanie w **Eksplorator rozwiązań** i wybierz polecenie **Właściwości**. W oknie dialogowym można ustawić konfiguracje **projektu dla kompilacji** lub kompilacje **wydań** , wybrać projekty, które powinny być projektem startowym po naciśnięciu klawisza **F5** i ustawić opcje analizy kodu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Rozwiązania i projekty w programie Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
 - [Zarządzanie właściwościami rozwiązań i projektu (Visual Studio dla komputerów Mac)](/visualstudio/mac/managing-solutions-and-project-properties)

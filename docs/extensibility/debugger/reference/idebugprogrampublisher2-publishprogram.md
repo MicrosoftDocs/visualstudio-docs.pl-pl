@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 92ff63f0-e869-4040-b3ae-b2c899e708ff
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 20de162bdc3be2cc4771c9746b13c40a1e140a96
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1d13154f172fdd92ea4a3d4c96321e884516a74c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721687"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959561"
 ---
 # <a name="idebugprogrampublisher2publishprogram"></a>IDebugProgramPublisher2::PublishProgram
 Ta metoda sprawia, że program jest dostępny dla aparatów debugowania (DEs) i Menedżera debugowania sesji.
@@ -28,18 +28,18 @@ Ta metoda sprawia, że program jest dostępny dla aparatów debugowania (DEs) i 
 ## <a name="syntax"></a>Składnia
 
 ```cpp
-HRESULT PublishProgram(
-   CONST_GUID_ARRAY Engines,
-   LPCOLESTR        szFriendlyName,
-   IUnknown*        pDebuggeeInterface
+HRESULT PublishProgram(
+   CONST_GUID_ARRAY Engines,
+   LPCOLESTR        szFriendlyName,
+   IUnknown*        pDebuggeeInterface
 );
 ```
 
 ```csharp
-int PublishProgram(
-   CONST_GUID_ARRAY Engines,
-   string           szFriendlyName,
-   object           pDebuggeeInterface
+int PublishProgram(
+   CONST_GUID_ARRAY Engines,
+   string           szFriendlyName,
+   object           pDebuggeeInterface
 );
 ```
 

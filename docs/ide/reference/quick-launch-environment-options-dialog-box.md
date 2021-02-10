@@ -13,16 +13,16 @@ helpviewer_keywords:
 ms.assetid: 4200f297-d065-4723-9a30-d91ff2e26c9d
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: e055906dd4cddabd16b39e3b2cad66d07dddd38d
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: f1889b20f96e051867d470bc96df36b7018abdc4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616749"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958209"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Szybkie uruchamianie, środowisko, opcje — okno dialogowe
 
@@ -44,7 +44,7 @@ Możesz użyć następujących skrótów, aby ograniczyć wyszukiwanie do okreś
 |Dokumenty|@doc<br /><br /> Na przykład `@doc program.cs`|Ogranicza wyszukiwanie do nazw plików i ścieżek otwartych dokumentów dla kryteriów wyszukiwania, ale nie przeszukuje tekstu wewnątrz samych plików.|
 
 > [!NOTE]
-> Skróty **General**  >  **klawiaturowe** można zmienić na stronie Ogólne w oknie dialogowym **Opcje** .
+> Skróty   >  **klawiaturowe** można zmienić na stronie Ogólne w oknie dialogowym **Opcje** .
 
 ## <a name="show-previous-results"></a>Pokaż poprzednie wyniki
 

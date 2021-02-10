@@ -15,15 +15,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 931e9554a10e0e1525d9ee4a10505633b211610b
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 4d83fb8fad6de0c932d371f7f874cea0ff9a8f80
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527246"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958664"
 ---
 # <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>Przewodnik: zmienianie formatowania dokumentu przy użyciu kontrolek CheckBox
   W tym instruktażu pokazano, jak używać formantów Windows Forms w dostosowaniu na poziomie dokumentu dla Microsoft Office Word, aby zmienić formatowanie tekstu.
@@ -72,7 +72,7 @@ ms.locfileid: "97527246"
     |Właściwość|Wartość|
     |--------------|-----------|
     |**Nazwa**|**applyBoldFont**|
-    |**Tekst**|**Pogrubienie**|
+    |**Tekst**|**Pogrubiona**|
 
 4. Naciśnij klawisz **Enter** , aby przenieść punkt wstawiania poniżej pierwszego pola wyboru.
 

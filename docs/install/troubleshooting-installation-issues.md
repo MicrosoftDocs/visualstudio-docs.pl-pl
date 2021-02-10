@@ -10,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: 556EDD3F-E365-43EE-B3DD-03AA4353F75B
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 54bd53f5c63a2f126f4aeae264c4dff745633cf6
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 119a76716c0d3ccb0acf37f716ae726a89fe0461
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668316"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959223"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Rozwiązywanie problemów z instalacją i uaktualnieniem programu Visual Studio
 
@@ -147,7 +147,7 @@ Aby zebrać dzienniki:
 
 Jeśli rozwiązania wymienione w tym przewodniku rozwiązywania problemów nie pozwalają na pomyślne zainstalowanie lub uaktualnienie programu Visual Studio, Skorzystaj z naszej opcji obsługi [**czatu na żywo**](https://visualstudio.microsoft.com/vs/support/#talktous) (tylko w języku angielskim), aby uzyskać dalszą pomoc.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [Napraw program Visual Studio](repair-visual-studio.md)
 * [Usuń program Visual Studio](remove-visual-studio.md)

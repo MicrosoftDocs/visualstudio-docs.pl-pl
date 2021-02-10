@@ -12,34 +12,34 @@ helpviewer_keywords:
 - Publish page in Project Designer
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 13edc1b2e2e235eaf5a475764a98067aa4b0150d
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 32bbd09b087639c362fbb5d6a137241c1aab85af
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350286"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958326"
 ---
 # <a name="publish-page-project-designer"></a>Strona publikowania, Projektant projektu
 
 Strona **Publikowanie** **projektanta projektu** służy do konfigurowania właściwości wdrażania ClickOnce.
 
-Aby uzyskać dostęp do strony **Publikowanie** , wybierz węzeł projektu w **Eksplorator rozwiązań** , a następnie w menu **projekt** kliknij polecenie **Właściwości**. Gdy pojawi się **Projektant projektu** , kliknij kartę **Publikowanie** .
+Aby uzyskać dostęp do strony **Publikowanie** , wybierz węzeł projektu w **Eksplorator rozwiązań**, a następnie w menu **projekt** kliknij polecenie **Właściwości**. Gdy pojawi się **Projektant projektu** , kliknij kartę **Publikowanie** .
 
 > [!NOTE]
-> Niektóre z opisanych tutaj właściwości ClickOnce można także ustawić w **PublishWizard** , dostępne w menu **kompilacja** lub klikając przycisk **PublishWizard** na tej stronie.
+> Niektóre z opisanych tutaj właściwości ClickOnce można także ustawić w **PublishWizard**, dostępne w menu **kompilacja** lub klikając przycisk **PublishWizard** na tej stronie.
 
 ## <a name="uielement-list"></a>Lista elementów UI
 
  **Lokalizacja folderu publikowania**
 
-Określa lokalizację, w której aplikacja jest publikowana. Może to być ścieżka dysku ( `C:\deploy\myapplication` ), udział plików ( `\\server\myapplication` ) lub serwer FTP ( `ftp://ftp.microsoft.com/myapplication` ). Zwróć uwagę, że tekst musi być obecny w polu **Lokalizacja publikowania** , aby można było wykonać przycisk Przeglądaj ( **...** ).
+Określa lokalizację, w której aplikacja jest publikowana. Może to być ścieżka dysku ( `C:\deploy\myapplication` ), udział plików ( `\\server\myapplication` ) lub serwer FTP ( `ftp://ftp.microsoft.com/myapplication` ). Zwróć uwagę, że tekst musi być obecny w polu **Lokalizacja publikowania** , aby można było wykonać przycisk Przeglądaj (**...**).
 
  **Adres URL folderu instalacji**
 
-Opcjonalny. Określa witrynę sieci Web, do której użytkownicy przejdą w celu zainstalowania aplikacji. Jest to konieczne tylko wtedy, gdy różni się od **lokalizacji publikowania** , na przykład po opublikowaniu aplikacji na serwerze przejściowym.
+Opcjonalny. Określa witrynę sieci Web, do której użytkownicy przejdą w celu zainstalowania aplikacji. Jest to konieczne tylko wtedy, gdy różni się od **lokalizacji publikowania**, na przykład po opublikowaniu aplikacji na serwerze przejściowym.
 
  **Tryb instalacji i ustawienia**
 
@@ -65,7 +65,7 @@ Otwiera okno dialogowe Opcje publikowania, które służy do określania dodatko
 
  **Wersja publikacji**
 
-Ustawia numer wersji publikacji dla aplikacji; po zmianie numeru wersji aplikacja zostanie opublikowana jako aktualizacja. Każda część wersji publikacji ( **główna** , **pomocnicza** , **kompilacja** , **poprawka** ) może mieć maksymalną wartość 65355 ( <xref:System.UInt16.MaxValue> ), maksymalną dozwoloną przez <xref:System.Version> .
+Ustawia numer wersji publikacji dla aplikacji; po zmianie numeru wersji aplikacja zostanie opublikowana jako aktualizacja. Każda część wersji publikacji (**główna**, **pomocnicza**, **kompilacja**, **poprawka**) może mieć maksymalną wartość 65355 ( <xref:System.UInt16.MaxValue> ), maksymalną dozwoloną przez <xref:System.Version> .
 
 W przypadku instalowania więcej niż jednej wersji aplikacji przy użyciu technologii ClickOnce instalacja przenosi wcześniejsze wersje aplikacji do folderu o nazwie archiwalne w określonej lokalizacji publikowania. Archiwizowanie wcześniejszych wersji w ten sposób powoduje, że katalog instalacyjny jest niezrozumiały dla folderów ze starszej wersji.
 

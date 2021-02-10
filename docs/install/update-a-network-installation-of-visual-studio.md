@@ -10,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: 1AF69C0E-0AC9-451B-845D-AE4EDBCEA65C
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: f54ee1191dd998d34e46a442debafc175ce98c8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6829bac79f747d4f9bacfe5e71f57352fcad0970
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545434"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959158"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Aktualizowanie instalacji sieciowej programu Visual Studio
 
@@ -35,7 +35,7 @@ Aby odświeżyć udział instalacji sieci, aby zawierał najnowsze aktualizacje,
 
 ::: moniker range="vs-2017"
 
-**Nowość w 15,3: w**przypadku wybrania układu częściowego podczas [pierwszego tworzenia układu sieciowego](create-a-network-installation-of-visual-studio.md)te ustawienia są zapisywane. Wszystkie przyszłe polecenia układu używają poprzednich opcji oraz wszelkich nowych opcji, które określisz. Ale jeśli używasz układu starszej wersji, należy używać tych samych parametrów wiersza polecenia, które były używane podczas pierwszego tworzenia układu instalacji sieci (innymi słowy, tych samych obciążeń i języków) w celu zaktualizowania zawartości.
+**Nowość w 15,3: w** przypadku wybrania układu częściowego podczas [pierwszego tworzenia układu sieciowego](create-a-network-installation-of-visual-studio.md)te ustawienia są zapisywane. Wszystkie przyszłe polecenia układu używają poprzednich opcji oraz wszelkich nowych opcji, które określisz. Ale jeśli używasz układu starszej wersji, należy używać tych samych parametrów wiersza polecenia, które były używane podczas pierwszego tworzenia układu instalacji sieci (innymi słowy, tych samych obciążeń i języków) w celu zaktualizowania zawartości.
 
 ::: moniker-end
 

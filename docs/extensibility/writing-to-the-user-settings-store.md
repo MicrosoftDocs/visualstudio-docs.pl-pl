@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: efd27f00-7fe5-45f8-9b97-371af732be97
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55e17693bee1ced0354b21ee5cc736961a994c6f
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: f022023ec03ddb280424f3c47944c91e8fa696de
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876925"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958391"
 ---
 # <a name="writing-to-the-user-settings-store"></a>Zapisywanie w magazynie ustawień użytkownika
 Ustawienia użytkownika to ustawienia do zapisu, takie jak te w oknie dialogowym **Narzędzia/Opcje** , okna właściwości i niektóre inne okna dialogowe. Rozszerzenia programu Visual Studio mogą ich używać do przechowywania małych ilości danych. W tym instruktażu pokazano, jak dodać Notatnik do programu Visual Studio jako zewnętrzne narzędzie, odczytując z i zapisując do magazynu ustawień użytkownika.
