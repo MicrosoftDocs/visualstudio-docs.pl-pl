@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 148b1efc-ca07-4d8e-bdfc-c723a760c620
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c31d095a3e340bf7e8f7a61a8db5bcbed53f0d5f
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 9e278b83e69a063c88b4cb3ff48d919d2b07ea6a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914221"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955167"
 ---
 # <a name="debug-engine"></a>Aparat debugowania
 Aparat debugowania (DE) współpracuje z interpreterem lub systemem operacyjnym w celu zapewnienia usług debugowania, takich jak kontrola wykonywania, punkty przerwania i Obliczanie wyrażenia. DE jest odpowiedzialny za monitorowanie stanu debugowanego programu. Aby to zrobić, w środowisku uruchomieniowym są dostępne wszystkie metody, niezależnie od tego, czy procesor CPU, czy z interfejsów API dostarczonych przez środowisko uruchomieniowe.

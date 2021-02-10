@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 7347c947-bfff-4bad-becd-5cd23e7b24cd
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 96ae76bac3f6163e8b4434878017df07f1341828
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 36ab20854adb952d098f71904cdd3cb092e27ac9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434327"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955687"
 ---
 # <a name="compensate-activity-designer"></a>Compensate, projektant działań
 
@@ -31,9 +31,9 @@ Projektant działań **kompensacyjnych** służy do tworzenia i konfigurowania <
 
 ### <a name="using-the-compensate-activity-designer"></a>Korzystanie z projektanta działań kompensacyjnych
 
-Projektanta działań **kompensowania** aktywności można znaleźć w kategorii **transakcji** w **przyborniku**. Aby otworzyć **Przybornik** , wybierz kartę **Przybornik** po lewej stronie Projektant przepływu pracy. Alternatywnie możesz wybrać **Przybornik** z menu **Widok** lub nacisnąć **klawisze CTRL** + **Alt** + **X**.
+Projektanta działań **kompensowania** aktywności można znaleźć w kategorii **transakcji** w **przyborniku**. Aby otworzyć **Przybornik**, wybierz kartę **Przybornik** po lewej stronie Projektant przepływu pracy. Alternatywnie możesz wybrać **Przybornik** z menu **Widok** lub nacisnąć **klawisze CTRL** + **Alt** + **X**.
 
-Projektant działań **kompensacyjnych** można przeciągnąć z **przybornika** i porzucić na Projektant przepływu pracy powierzchnię, wszędzie tam, gdzie działania są umieszczane, na przykład wewnątrz <xref:System.Activities.Statements.Sequence> . Porzucenie projektanta działań powoduje utworzenie <xref:System.Activities.Statements.Compensate> działania z domyślną <xref:System.Activities.Activity.DisplayName%2A> kompensacją. <xref:System.Activities.Activity.DisplayName%2A>Wartość można edytować w nagłówku projektanta działań lub w **Compensate** polu **DisplayName** siatki właściwości.
+Projektant działań **kompensacyjnych** można przeciągnąć z **przybornika** i porzucić na Projektant przepływu pracy powierzchnię, wszędzie tam, gdzie działania są umieszczane, na przykład wewnątrz <xref:System.Activities.Statements.Sequence> . Porzucenie projektanta działań powoduje utworzenie <xref:System.Activities.Statements.Compensate> działania z domyślną <xref:System.Activities.Activity.DisplayName%2A> kompensacją. <xref:System.Activities.Activity.DisplayName%2A>Wartość można edytować w nagłówku projektanta działań lub w  polu **DisplayName** siatki właściwości.
 
 ### <a name="the-compensate-properties"></a>Właściwości kompensacji
 

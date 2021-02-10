@@ -12,15 +12,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8b9deb6732552a827cb89465f6521bc566e8c46f
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 7a55d2e92ae84cb8d5388fe90655b1c95f6f8e09
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846743"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954127"
 ---
 # <a name="how-to-add-xmlnode-controls-to-word-documents"></a>Instrukcje: Dodawanie formantów XMLNode do dokumentów programu Word
   **Ważne** Informacje przedstawione w tym temacie dotyczące programu Microsoft Word są prezentowane wyłącznie na korzyść i użytkowanie przez osoby i organizacje, które znajdują się poza Stany Zjednoczoneą i jej terytoriami, lub opracowywaniem programów, które są uruchamiane w programie Microsoft Word, które zostały licencjonowane przez firmę Microsoft przed 2010 stycznia, gdy firma Microsoft usunie implementację konkretnych funkcji związanych z niestandardowym kodem XML z programu Microsoft Word. Te informacje dotyczące programu Microsoft Word mogą nie być odczytane lub używane przez osoby lub organizacje w Stany Zjednoczone lub na terytoriach, którzy korzystają z programu lub opracowywania programów, które są uruchamiane w programie, produkty Microsoft Word, które zostały licencjonowane przez firmę Microsoft po 10 stycznia 2010; te produkty nie będą działać tak samo jak produkty licencjonowane przed tą datą lub zakupione i licencjonowane do użycia poza Stany Zjednoczone.
@@ -67,7 +67,7 @@ ms.locfileid: "96846743"
 
      <xref:Microsoft.Office.Tools.Word.XMLNode>Kontrolka jest tworzona i dodawana do projektu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [XMLNode — formant](../vsto/xmlnode-control.md)
 - [Automatyzowanie programu Word za pomocą obiektów rozszerzonych](../vsto/automating-word-by-using-extended-objects.md)
 - [Elementy hosta i formanty hosta — Omówienie](../vsto/host-items-and-host-controls-overview.md)

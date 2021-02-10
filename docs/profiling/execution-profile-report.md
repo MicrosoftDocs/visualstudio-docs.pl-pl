@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: c8128472-a8ed-46f4-b1c8-a25358d6f2c1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 98361f9abad40e447d7198265d21ef193bb9ddf5
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: e7a61e3a9ba159977d4a835126b2a584be1597c1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801382"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955258"
 ---
 # <a name="execution-profile-report"></a>Raport profilu wykonania
 Raport profil wykonywania jest tradycyjnym profilem próbkowania. Próbki są pobierane około co milisekundy w czasie, gdy wątek jest uruchomiony na rdzeniu logicznym, a Wizualizator współbieżności tworzy typowe drzewo wywołań przez zsumowanie skumulowanego zestawu przykładowych stosów. Do danych w tej tabeli może wpływ bieżący zakres czasu i ukryte wątki oraz następujące filtry, które mogą być stosowane:
@@ -41,5 +41,5 @@ Raport profil wykonywania jest tradycyjnym profilem próbkowania. Próbki są po
 
  Ta tabela raportu może być widoczna w widoku [czasu wykonywania (Widok wątków)](../profiling/execution-time-threads-view.md) .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Widok wątków](../profiling/threads-view-parallel-performance.md)

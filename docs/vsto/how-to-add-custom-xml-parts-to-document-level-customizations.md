@@ -17,15 +17,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], custom XML parts
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9b2f3b4e72f9255099ed7190867faba5585ced4c
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 11202da11cee72ec368ac525fce13fd084ab99be
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847433"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954257"
 ---
 # <a name="how-to-add-custom-xml-parts-to-document-level-customizations"></a>Instrukcje: Dodawanie niestandardowych części XML do dostosowywania na poziomie dokumentu
   Dane XML można przechowywać w Microsoft Office skoroszycie programu Excel lub w Microsoft Office dokumencie programu Word, tworząc niestandardową część XML w dostosowaniu na poziomie dokumentu. Aby uzyskać więcej informacji, zobacz temat [niestandardowe składniki XML — Omówienie](../vsto/custom-xml-parts-overview.md).
@@ -60,6 +60,6 @@ ms.locfileid: "96847433"
 ## <a name="robust-programming"></a>Niezawodne programowanie
  Dla uproszczenia w tym przykładzie użyto ciągu XML, który jest definiowany jako zmienna lokalna w metodzie. Zazwyczaj należy uzyskać kod XML ze źródła zewnętrznego, takiego jak plik lub baza danych.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Niestandardowe części XML — Omówienie](../vsto/custom-xml-parts-overview.md)
 - [Instrukcje: Dodawanie niestandardowych części XML do dokumentów za pomocą dodatków narzędzi VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)

@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: c753b67b-b0e7-462a-bb4e-ba8db04a078d
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4928dcd7a9e1b83ba797614545315022d0f36ac3
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 0227a300160434d0052e81d7c1ccd107c5a11a01
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438155"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955661"
 ---
 # <a name="confirm-activity-designer"></a>Confirm, projektant działań
 
@@ -29,7 +29,7 @@ Aby utworzyć i skonfigurować działanie, należy użyć programu **confirming*
  <xref:System.Activities.Statements.CompensationToken>Określony przez <xref:System.Activities.Statements.Compensate.Target%2A> zawiera metodę, aby jawnie potwierdzić lub skompensować <xref:System.Activities.Statements.CompensableActivity> po <xref:System.Activities.Statements.CompensableActivity.Body%2A> <xref:System.Activities.Statements.CompensableActivity> pomyślnym zakończeniu.
 
 ### <a name="using-the-confirm-activity-designer"></a>Korzystanie z programu Confirme Designer
- Można znaleźć **projektanta działań w** kategorii **transakcji** **przybornika** , do którego uzyskuje się dostęp, klikając kartę **Przybornik** po lewej stronie Projektant przepływu pracy. Alternatywnie możesz wybrać **Przybornik** z menu **Widok** lub nacisnąć **klawisze CTRL** + **Alt** + **X**.
+ Można znaleźć **projektanta działań w** kategorii **transakcji** **przybornika**, do którego uzyskuje się dostęp, klikając kartę **Przybornik** po lewej stronie Projektant przepływu pracy. Alternatywnie możesz wybrać **Przybornik** z menu **Widok** lub nacisnąć **klawisze CTRL** + **Alt** + **X**.
 
  Można przeciągać **projektanta aktywności z** **przybornika** i znajdować się na Projektant przepływu pracy powierzchni, wszędzie tam, gdzie działania są zwykle umieszczane, na przykład wewnątrz <xref:System.Activities.Statements.Sequence> . Spowoduje to utworzenie <xref:System.Activities.Statements.Confirm> działania z domyślnym <xref:System.Activities.Activity.DisplayName%2A> potwierdzeniem. <xref:System.Activities.Activity.DisplayName%2A>Wartość można edytować w nagłówku programu **Confirmed** Activity Designer lub w polu **DisplayName** siatki właściwości.
 

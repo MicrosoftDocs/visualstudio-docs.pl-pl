@@ -19,15 +19,15 @@ helpviewer_keywords:
 - events [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b25b921d29bee832ef37b943fd57edc38b7518db
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 12dc0823f1c7d1eb78867cb3529f955851f45b66
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523213"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955739"
 ---
 # <a name="worksheet-host-item"></a>Element hosta arkusza
   <xref:Microsoft.Office.Tools.Excel.Worksheet>Element hosta jest typem, który rozszerza <xref:Microsoft.Office.Interop.Excel.Worksheet> Typ z podstawowego zestawu międzyoperacyjnego dla programu Excel. <xref:Microsoft.Office.Tools.Excel.Worksheet>Element hosta zawiera wszystkie te same właściwości, metody i zdarzenia co <xref:Microsoft.Office.Interop.Excel.Worksheet> obiekt, ale udostępnia także dodatkowe zdarzenia i działa jako kontener dla formantów hosta i formantów Windows Forms.

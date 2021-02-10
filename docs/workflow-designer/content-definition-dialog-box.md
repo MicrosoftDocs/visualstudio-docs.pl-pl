@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 7e4237c3-90a1-4149-bd8a-3643d1dde0df
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2858c179d05645b3e47e6be27e386168392fcb48
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: a25d049b17381c49bfa1b4a5544972b6dc5fe499
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438168"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955648"
 ---
 # <a name="content-definition-dialog-box"></a>Definicja zawartości, okno dialogowe
 
@@ -30,7 +30,7 @@ W poniższej tabeli opisano elementy interfejsu użytkownika (UI) okna dialogowe
 |**Wiadomość**|Określa zawartość komunikatu przy użyciu pola tekstowego wyrażenie **danych komunikatu** i typ za pomocą pola listy rozwijanej **typ komunikatu** . Domyślnie **Definicja zawartości** używa klasy <xref:System.ServiceModel.Activities.ReceiveMessageContent> , która oczekuje <xref:System.ServiceModel.Channels.Message> typu kontraktu lub komunikatu w definicji usługi przepływu pracy.|
 |**Parametry**|Kliknij przycisk radiowy **Parametry** , aby użyć <xref:System.ServiceModel.Activities.ReceiveParametersContent> , który oczekuje kontraktu danych. Użyj siatki danych, aby ustawić ogólną kolekcję <xref:System.Activities.OutArgument> par klucz/wartość, których wartości są przypisywane do parametrów zmiennych w bieżącym przepływie pracy.|
 
-Okno dialogowe **Definicja zawartości** jest używane przez projektantów **wysyłania** , **odbierania** , **ReceiveAndSendReply** i **SendAndReceiveReply** . Dostęp do nich jest podobny w każdym przypadku, a przypadek odbioru jest używany tutaj do zilustrowania procedury.
+Okno dialogowe **Definicja zawartości** jest używane przez projektantów **wysyłania**, **odbierania**, **ReceiveAndSendReply** i **SendAndReceiveReply** . Dostęp do nich jest podobny w każdym przypadku, a przypadek odbioru jest używany tutaj do zilustrowania procedury.
 
 Projektanta działań **odbioru** można przeciągnąć z **przybornika** i porzucić na Projektant przepływu pracy powierzchnię, wszędzie tam gdzie działania są zwykle umieszczane. Spowoduje to utworzenie <xref:System.ServiceModel.Activities.Receive> działania z domyślnym <xref:System.Activities.Activity.DisplayName%2A> odbiorem. Wybierz pozycję **Odbierz** projektanta aktywności i kliknij przycisk wielokropka obok tekstu (zawartość) dla właściwości **zawartość** w siatce właściwości okna dialogowego **Definicja zawartości** , które ma zostać wyświetlone.
 

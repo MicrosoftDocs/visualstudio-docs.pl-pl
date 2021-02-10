@@ -14,15 +14,15 @@ helpviewer_keywords:
 - customizing the Ribbon, adding Ribbon to project
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3974fe85a97226a920959b41256fa7e29923c9d1
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: d82d059166b9efbb80ed6ce4cffcbb973235b01b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845950"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953919"
 ---
 # <a name="how-to-get-started-customizing-the-ribbon"></a>Instrukcje: wprowadzenie do dostosowywania wstążki
   Aby dostosować Wstążkę Microsoft Office aplikacji, Dodaj **Wstążkę (Visual Designer)** lub **Wstążkę (XML)** do projektu pakietu Office.
@@ -71,7 +71,7 @@ ms.locfileid: "96845950"
 
    Element wstążki zostanie wyświetlony w **Eksplorator rozwiązań**. Aby uzyskać informacje o następnych krokach, zobacz [Omówienie wstążki](../vsto/ribbon-overview.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Uzyskiwanie dostępu do wstążki w czasie wykonywania](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Projektant wstążki](../vsto/ribbon-designer.md)
 - [XML — Wstążka](../vsto/ribbon-xml.md)

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], caching
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2a11b70da4bdd2500f70d2b45f025340af21ea94
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: cd7efe4aa2aa14cb94a68f0729bc7fe3535888ee
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846002"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954036"
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>Instrukcje: buforowanie danych w dokumencie chronionym hasłem
   W przypadku dodania danych do pamięci podręcznej danych w dokumencie lub skoroszycie chronionym hasłem zmiany w buforowanych danych nie są zapisywane automatycznie. Zmiany w buforowanych danych można zapisać przez zastępowanie dwóch metod w projekcie.
@@ -75,7 +75,7 @@ ms.locfileid: "96846002"
 ### <a name="compile-the-code"></a>Kompiluj kod
  Dodaj ten kod do `ThisWorkbook` klasy w projekcie. W tym kodzie założono, że hasło jest przechowywane w polu o nazwie `securelyStoredPassword` .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dane pamięci podręcznej](../vsto/caching-data.md)
 - [Instrukcje: dane z pamięci podręcznej do użycia w trybie offline lub na serwerze](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)
 - [Instrukcje: programowane buforowanie źródła danych w dokumencie pakietu Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)

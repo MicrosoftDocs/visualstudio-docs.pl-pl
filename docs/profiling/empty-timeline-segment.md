@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: f37b301f-3edc-4e56-8084-feec2dc5a9b1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 15dc4526ce101e21c00fe083b85f81db92bcd609
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: a4a3265c3b31653d94a686fa8fda12f7699596e7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801436"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955271"
 ---
 # <a name="empty-timeline-segment"></a>Pusty segment osi czasu
 W wizualizatorze współbieżności powód, dla którego sekcja osi czasu jest pusta (ma białe tło) zależy od rodzaju kanału.
@@ -32,6 +32,6 @@ W wizualizatorze współbieżności powód, dla którego sekcja osi czasu jest p
 
 - W przypadku kanału znacznika oznacza to, że nie Wygenerowano żadnych znaczników.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Widok wątków](../profiling/threads-view-parallel-performance.md)
 - [Kontrolka powiększenia (Widok wątków)](../profiling/zoom-control-threads-view.md)

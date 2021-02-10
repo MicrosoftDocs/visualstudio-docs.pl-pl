@@ -13,15 +13,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to worksheets
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 54487ed7f7cdcb7e7da024e4b96fcbb6d5c2cfe4
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: aa1b8372f9499695612a0e7335b1dbaf94800e79
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848147"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954179"
 ---
 # <a name="how-to-add-namedrange-controls-to-worksheets"></a>Instrukcje: Dodawanie kontrolek NamedRange do arkuszy
   Możesz dodać <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolki do Microsoft Office arkusza programu Excel w czasie projektowania i w czasie wykonywania w projektach na poziomie dokumentu.
@@ -95,7 +95,7 @@ ms.locfileid: "96848147"
      [!code-csharp[Trin_Excel_Dynamic_Controls#7](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#7)]
      [!code-vb[Trin_Excel_Dynamic_Controls#7](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#7)]
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Rozwiń dokumenty programu Word i skoroszyty programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Formanty w dokumentach pakietu Office](../vsto/controls-on-office-documents.md)
 - [NamedRange — formant](../vsto/namedrange-control.md)

@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Outlook folders [Office development in Visual Studio], retrieving by name
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c4e615897fedcbfa41ad7958e93354718d9ccfbc
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: c05f8bc0174807a5336a9d9f79ac3dc81e87476e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528569"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953880"
 ---
 # <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>Instrukcje: programowe pobieranie folderu według nazwy
   Ten przykład pobiera odwołanie do nazwanego folderu niestandardowego, a następnie wyświetla zawartość folderu.

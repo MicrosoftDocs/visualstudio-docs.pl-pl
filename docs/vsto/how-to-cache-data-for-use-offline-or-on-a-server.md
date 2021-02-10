@@ -16,15 +16,15 @@ helpviewer_keywords:
 - data caching [Office development in Visual Studio], offline use
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cefd4cd132e75f8ff622c8e0d809d317242c10f5
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ab53676d6c00fdda3bb7f4554321f0c0550e5748
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844325"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954049"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>Instrukcje: dane z pamięci podręcznej do użycia w trybie offline lub na serwerze
   Można oznaczyć element danych, który ma zostać zbuforowany w dokumencie, tak aby był dostępny w trybie offline. Pozwala to również na manipulowanie danymi w dokumencie przez inny kod, gdy dokument jest przechowywany na serwerze.
@@ -61,7 +61,7 @@ ms.locfileid: "96844325"
 
 4. W oknie **Właściwości** ustaw właściwość **Modyfikatory** na **Public** (domyślnie jest to wartość **wewnętrzna**).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dane pamięci podręcznej](../vsto/caching-data.md)
 - [Instrukcje: programowane buforowanie źródła danych w dokumencie pakietu Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)
 - [Instrukcje: buforowanie danych w dokumencie chronionym hasłem](../vsto/how-to-cache-data-in-a-password-protected-document.md)

@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: ef76b1a8-6910-48fe-b4af-d9045eefd23f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5e7b85fb8d5b0e3256e172ff78bc3a5f660b69b8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3e2b5c5f96c2c40105f54ba8d775c7ad1cc1c46
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733417"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955024"
 ---
 # <a name="idebugcomplussymbolprovider2gettypesbyname"></a>IDebugComPlusSymbolProvider2::GetTypesByName
 Pobiera typ o nazwie.
@@ -56,7 +56,7 @@ określoną Moduł wyliczający zawierający typ lub typy o podaną nazwę.
 Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
-W przypadku typów ogólnych nazwa do wyszukania dla "list" \<int> lub "List \<int,int> " będzie mieć wartość "list". Jeśli typy o tej samej nazwie pojawiają się w wielu modułach, `ppEnum` parametr będzie zawierać wszystkie kopie. Musisz użyć [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) i rozróżnić na podstawie `guidModule` parametru.
+W przypadku typów ogólnych nazwa do wyszukania dla "list" \<int> lub "List \<int,int> " będzie mieć wartość "list". Jeśli typy o tej samej nazwie pojawiają się w wielu modułach, `ppEnum` parametr będzie zawierać wszystkie kopie. Musisz użyć [](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) i rozróżnić na podstawie `guidModule` parametru.
 
 ## <a name="example"></a>Przykład
 Poniższy przykład pokazuje, jak zaimplementować tę metodę dla obiektu **CDebugSymbolProvider** , który uwidacznia Interfejs [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) .

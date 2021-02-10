@@ -19,15 +19,15 @@ helpviewer_keywords:
 - Microsoft Office Menu
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9f0fa33318e2407b01178971c6965b8ea035dd42
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 830ecea036ee972321d98994ab36924e0c61a09b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848173"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954270"
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>Instrukcje: Dodawanie kontrolek do widoku Backstage
   Za pomocą projektanta wstążki można dodać kontrolki do menu, które otwiera się po kliknięciu karty **plik** . Po uruchomieniu aplikacji, kontrolki dodawane do karty **plik** wyświetlają grupę o nazwie **Dodatki**.
@@ -64,7 +64,7 @@ ms.locfileid: "96848173"
 
 4. Przeciągnij kontrolki, aby przenieść je do nowych pozycji w menu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Omówienie wstążki](../vsto/ribbon-overview.md)
 - [Projektant wstążki](../vsto/ribbon-designer.md)
 - [XML — Wstążka](../vsto/ribbon-xml.md)

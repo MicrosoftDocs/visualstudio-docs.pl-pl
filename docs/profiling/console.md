@@ -7,16 +7,16 @@ ms.topic: reference
 ms.assetid: e825ba66-1383-46ad-8712-396bc9c14036
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 93c39bfb503bec9858e33b7acf04e0f0433264b9
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 242a5234c2b7368a992676e12ecbdcd5ea36219f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720908"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955414"
 ---
 # <a name="console"></a>Konsola
 Opcja **konsola** VSPerfCmd.exe uruchamia określoną aplikację w nowym oknie wiersza polecenia. **Konsoli** programu można używać tylko z opcją **uruchamiania** VSPerfCmd. Jeśli aplikacja nie jest aplikacją wiersza polecenia, **konsola** nie ma żadnego efektu.
@@ -35,7 +35,7 @@ VSPerfCmd.exe /Launch:AppName /Console
 
  **Uruchom:** `AppName` Uruchamia program profilujący i aplikację określoną przez `AppName` .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [Profile aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)

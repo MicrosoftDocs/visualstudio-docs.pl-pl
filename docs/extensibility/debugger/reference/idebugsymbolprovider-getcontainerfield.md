@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d6b56b4f-a96b-4fa7-87c1-bac4e58fa766
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 729457fd071ab4a271f46b159e031fdc5cfc19bd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9893ab7e4c6546f2cf1d762ea5abc691647c620c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719393"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954868"
 ---
 # <a name="idebugsymbolprovidergetcontainerfield"></a>IDebugSymbolProvider::GetContainerField
 Ta metoda pobiera pole, które zawiera adres debugowania.
@@ -28,7 +28,7 @@ Ta metoda pobiera pole, które zawiera adres debugowania.
 ## <a name="syntax"></a>Składnia
 
 ```cpp
-HRESULT GetContainerField( 
+HRESULT GetContainerField( 
    IDebugAddress*         pAddress,
    IDebugContainerField** ppContainerField
 );

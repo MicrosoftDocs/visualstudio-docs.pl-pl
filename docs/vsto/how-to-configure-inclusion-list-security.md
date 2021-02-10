@@ -12,15 +12,15 @@ helpviewer_keywords:
 - inclusion lists [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1f9eca5150e019906805adf40e5c9b6af8a3c14e
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ddbc74c00c1e1f74ce078586d624e2da4dbd8163
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846730"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954023"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>Instrukcje: Konfigurowanie zabezpieczeń listy dołączania
   Jeśli masz uprawnienia administratora, możesz skonfigurować [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] monit zaufania, aby kontrolować, czy użytkownicy końcowi mają możliwość instalacji rozwiązań pakietu Office, zapisując decyzję zaufania do listy dołączania. Aby uzyskać informacje na temat list dołączanych, zobacz [zaufanie do rozwiązań pakietu Office przy użyciu list dołączania](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).
@@ -40,7 +40,7 @@ ms.locfileid: "96846730"
 
 ### <a name="to-enable-the-inclusion-list-by-using-the-registry-editor"></a>Aby włączyć listę dołączania za pomocą edytora rejestru
 
-1. Otwórz edytor rejestru: 
+1. Otwórz Edytor rejestru:
 
     1. Kliknij przycisk **Start**, a następnie kliknij polecenie **Uruchom**.
 
@@ -99,7 +99,7 @@ ms.locfileid: "96846730"
 
 ### <a name="to-restrict-the-inclusion-list"></a>Aby ograniczyć listę dołączania
 
-1. Otwórz edytor rejestru: 
+1. Otwórz Edytor rejestru:
 
     1. Kliknij przycisk **Start**, a następnie kliknij polecenie **Uruchom**.
 
@@ -158,7 +158,7 @@ ms.locfileid: "96846730"
 
 ### <a name="to-disable-the-inclusion-list"></a>Aby wyłączyć listę dołączania
 
-1. Otwórz edytor rejestru: 
+1. Otwórz Edytor rejestru:
 
     1. Kliknij przycisk **Start**, a następnie kliknij polecenie **Uruchom**.
 
@@ -209,6 +209,6 @@ ms.locfileid: "96846730"
 
 3. Skompiluj i uruchom aplikację.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Ufanie rozwiązaniom pakietu Office przy użyciu list dołączania](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)
 - [Zabezpieczanie rozwiązań pakietu Office](../vsto/securing-office-solutions.md)

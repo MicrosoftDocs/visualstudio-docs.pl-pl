@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extensibility features
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2513eb99940d45d11bc2360581cbba455e864da2
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: f8a85c87b14057372254f755e4c414aa089e5a55
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305032"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955245"
 ---
 # <a name="programming-concepts-and-features-for-sharepoint-tools-extensions"></a>Koncepcje programowania i funkcje dla rozszerzeń narzędzi SharePoint
   Istnieje kilka istotnych koncepcji i funkcji związanych z programowaniem, które są związane z narzędziami programu SharePoint w programie Visual Studio. Te koncepcje i funkcje odgrywają ważną rolę w większości rozszerzeń narzędzi programu SharePoint.

@@ -14,15 +14,15 @@ helpviewer_keywords:
 - accessibility [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: de877ccc2d2a036bf03b0888a7edf455b17788a4
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 4021517aa296f3c1e6355b82260b00590181f4cb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847367"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955154"
 ---
 # <a name="accessibility-in-office-projects"></a>Ułatwienia dostępu w projektach pakietu Office
 
@@ -86,7 +86,7 @@ Program Visual Studio ma następujące ograniczenia związane z trybami wyświet
 
 Aby obejść te ograniczenia, można użyć lupy. Lupa to narzędzie do wyświetlania w systemie Windows, które tworzy osobne okno, które wyświetla powiększoną część ekranu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Opracowywanie rozwiązań pakietu Office](../vsto/developing-office-solutions.md)
 - [Formanty w dokumentach pakietu Office](../vsto/controls-on-office-documents.md)

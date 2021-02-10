@@ -14,15 +14,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], Windows Forms controls
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a8f073a72db1a18574dff6ab060b1ea069475fbb
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 8d2f8d54e791acd7d027350caa3ce88c8eea9959
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846782"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954153"
 ---
 # <a name="how-to-add-windows-forms-controls-to-office-documents"></a>Instrukcje: Dodawanie formantów Windows Forms do dokumentów pakietu Office
   Możesz dodać kontrolki Windows Forms, aby Microsoft Office Excel i Microsoft Office dokumenty programu Word w czasie projektowania w projektach na poziomie dokumentu. W czasie wykonywania można dodać kontrolki w obszarze dostosowania na poziomie dokumentu i w dodatkach narzędzi VSTO. Na przykład można dodać <xref:Microsoft.Office.Tools.Excel.Controls.ComboBox> kontrolkę do arkusza, aby użytkownicy mogli wybierać z listy opcji.
@@ -132,7 +132,7 @@ ms.locfileid: "96846782"
      [!code-vb[Trin_WordAddInDynamicControls#7](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#7)]
      [!code-csharp[Trin_WordAddInDynamicControls#7](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#7)]
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Kontrolki Windows Forms w dokumentach pakietu Office — omówienie](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [Dodawanie kontrolek do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [Instrukcje: zmiana rozmiaru kontrolek w komórkach arkusza](../vsto/how-to-resize-controls-within-worksheet-cells.md)

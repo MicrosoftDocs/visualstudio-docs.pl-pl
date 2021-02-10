@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 75f20664-9042-464d-8e2b-148d365a2286
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cc85dbb5c774f6afa956f51852ef15d4c7ccebc0
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: e9edd755465cf812c1572c62f1c6335fc5295281
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438116"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955527"
 ---
 # <a name="correlationscope-activity-designer"></a>CorrelationScope, projektant działań
 
@@ -29,7 +29,7 @@ Projektant działań **CorrelationScope** służy do tworzenia i konfigurowania 
 
 ### <a name="use-the-correlationscope-activity-designer"></a>Korzystanie z projektanta działań CorrelationScope
 
-Projektanta działań **CorrelationScope** można znaleźć w kategorii **wiadomości** w **przyborniku** , do którego uzyskuje się dostęp, klikając kartę **Przybornik** po lewej stronie Projektant przepływu pracy. Alternatywnie możesz wybrać **Przybornik** z menu **Widok** lub nacisnąć **klawisze CTRL** + **Alt** + **X**.
+Projektanta działań **CorrelationScope** można znaleźć w kategorii **wiadomości** w **przyborniku**, do którego uzyskuje się dostęp, klikając kartę **Przybornik** po lewej stronie Projektant przepływu pracy. Alternatywnie możesz wybrać **Przybornik** z menu **Widok** lub nacisnąć **klawisze CTRL** + **Alt** + **X**.
 
 Projektanta działań **CorrelationScope** można przeciągnąć z **przybornika** i porzucić na Projektant przepływu pracy powierzchnię. Spowoduje to utworzenie <xref:System.ServiceModel.Activities.CorrelationScope> działania z domyślną wartością **DisplayName** elementu CorrelationScope. <xref:System.Activities.Activity.DisplayName%2A>Można edytować w nagłówku projektanta działań **CorrelationScope** lub w polu **DisplayName** okna **Właściwości** .
 

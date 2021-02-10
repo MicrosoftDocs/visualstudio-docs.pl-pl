@@ -8,17 +8,17 @@ ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 187ca5ea0d0232e0ca8b99165e77ee265b81e801
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9838cd39fe29f8233f82df00dda6a7392e3494cd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285091"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955492"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Programowanie kodu JavaScript i TypeScript w programie Visual Studio bez rozwiązań i projektów
 
@@ -79,7 +79,7 @@ Jeśli żadna z obsługiwanych struktur nie zostanie rozpoznana, program Test Ru
 * Taśma ([GitHub.com/Substack/Tape](https://github.com/substack/tape))
 * On ([jestjs.IO](https://jestjs.io/))
 
-Po otwarciu Eksploratora testów (wybierz **test**  >  **Windows**  >  **Eksplorator testów**systemu Windows) program Visual Studio odnajduje i wyświetla testy.
+Po otwarciu Eksploratora testów (wybierz **test**  >    >  **Eksplorator testów** systemu Windows) program Visual Studio odnajduje i wyświetla testy.
 
 > [!NOTE]
 > Moduł uruchamiający testy będzie wyliczał tylko pliki JavaScript w katalogu głównym testu, jeśli aplikacja jest zapisywana w języku TypeScript, należy najpierw ją skompilować.

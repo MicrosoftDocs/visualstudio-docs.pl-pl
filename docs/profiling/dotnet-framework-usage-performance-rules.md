@@ -7,16 +7,16 @@ ms.topic: conceptual
 ms.assetid: ab573755-6370-48aa-853d-a7321c424c79
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cb6bb10f948e7aa9d97491949222c3cb0d15ba66
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: f8ec2756353ac56b3b5d44e2a50c4d4f5b1c7ebf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801299"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955388"
 ---
 # <a name="net-framework-usage-performance-rules"></a>Reguły wydajności dotyczące użycia programu .NET Framework
 Reguły wydajności w kategorii użycie programu the.NET Framework identyfikują konkretne metody, które mogą być optymalizowane, a także identyfikować bardziej ogólne wzorce użycia, takie jak odzyskiwanie pamięci i rywalizacja o blokady, które mogą być zbadane pod kątem problemów z wydajnością.

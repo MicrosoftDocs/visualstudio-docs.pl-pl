@@ -11,15 +11,15 @@ helpviewer_keywords:
 - ProjectItemFile element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 099f20926487b09240219f04d9bce4a79709f6e6
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: a7c6dd7fc46dc8616eddc164bcf2ec801657cb00
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440808"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955141"
 ---
 # <a name="projectitemfile-element"></a>ProjectItemFile — element
   Reprezentuje plik programu SharePoint, taki jak plik elementu funkcji, do dołączenia do elementu projektu, gdy jest wdrażany w programie SharePoint.
@@ -43,7 +43,7 @@ ms.locfileid: "95440808"
 |Atrybut|Opis|
 |---------------|-----------------|
 |**Element źródłowy**|Wymagany atrybut **xs: String** .<br /><br /> Nazwa pliku do wdrożenia z elementem projektu.|
-|**Obiektów**|Opcjonalny atrybut **xs: String** .<br /><br /> Ścieżka, w której plik zostanie wdrożony w programie SharePoint względem folderu głównego wdrożenia. Folder główny wdrożenia jest określany przez typ wdrożenia określony przez atrybut **typu** . Jeśli nie określono atrybutu **Target** , plik zostanie wdrożony w folderze o nazwie określonej w atrybucie **Source** .<br /><br /> Aby uzyskać więcej informacji, zobacz opisy dotyczące **ścieżki wdrożenia** i właściwości **głównych wdrożenia** elementów projektu programu SharePoint w temacie [opracowywanie rozwiązań programu SharePoint](../sharepoint/developing-sharepoint-solutions.md).|
+|**Cel**|Opcjonalny atrybut **xs: String** .<br /><br /> Ścieżka, w której plik zostanie wdrożony w programie SharePoint względem folderu głównego wdrożenia. Folder główny wdrożenia jest określany przez typ wdrożenia określony przez atrybut **typu** . Jeśli nie określono atrybutu **Target** , plik zostanie wdrożony w folderze o nazwie określonej w atrybucie **Source** .<br /><br /> Aby uzyskać więcej informacji, zobacz opisy dotyczące **ścieżki wdrożenia** i właściwości **głównych wdrożenia** elementów projektu programu SharePoint w temacie [opracowywanie rozwiązań programu SharePoint](../sharepoint/developing-sharepoint-solutions.md).|
 |**Typ**|Wymagany atrybut **xs: String** .<br /><br /> Typ wdrożenia pliku. Aby uzyskać więcej informacji o możliwych wartościach, zobacz opis właściwości **typ wdrożenia** elementów projektu programu SharePoint w temacie [Tworzenie rozwiązań programu SharePoint](../sharepoint/developing-sharepoint-solutions.md).|
 
 ### <a name="child-elements"></a>Elementy podrzędne
@@ -53,7 +53,7 @@ ms.locfileid: "95440808"
 
 |Element|Opis|
 |-------------|-----------------|
-|[Files](../sharepoint/files-element.md)|Określa pliki do dołączenia do elementu projektu programu SharePoint po wdrożeniu w programie SharePoint.|
+|[Pliki](../sharepoint/files-element.md)|Określa pliki do dołączenia do elementu projektu programu SharePoint po wdrożeniu w programie SharePoint.|
 
 ## <a name="remarks"></a>Uwagi
  Pliki programu SharePoint, które są zwykle przywoływane w elementach **ProjectItemFile —** , obejmują pliki elementów funkcji (*Elements.xml*), pliki schematów dla definicji list (*Schema.xml*) i pliki definicji części sieci Web dla składniki Web Part (*. WebPart*).
@@ -62,10 +62,10 @@ ms.locfileid: "95440808"
 
 |Właściwość|Wartość|
 |-|-|
-|**Obszaru**|http: \/ \/ schemas.Microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**Przestrzeń nazw**|http: \/ \/ schemas.Microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
 |**Nazwa schematu**|Schemat elementu projektu programu SharePoint|
 |**Plik walidacji**|ProjectItemModelSchema. xsd|
 |**Może być puste**|Nie|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Odwołanie do schematu elementu projektu programu SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)

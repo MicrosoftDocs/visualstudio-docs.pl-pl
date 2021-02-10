@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: a117365d-320d-4bb5-b61d-3e6457b8f6bc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc239d5b0d580d420683c6940ac2bbd5198335d7
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 60e24162407c4daeb8643bf106c385f76b11c7d7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875950"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954530"
 ---
 # <a name="parameter-info-in-a-legacy-language-service-2"></a>Informacje o parametrach w starszej wersji usługi językowej 2
 Informacje o parametrach IntelliSense to etykietka narzędzia, która wyświetla podpis metody, gdy użytkownik wpisze znak początkowy listy parametrów (zwykle jest to otwarty nawias) dla listy parametrów metody. Gdy jest wprowadzany każdy parametr, a separator parametru (zwykle przecinek) jest wpisywany, etykietka narzędzia jest aktualizowana, aby pokazać następny parametr pogrubioną czcionką.

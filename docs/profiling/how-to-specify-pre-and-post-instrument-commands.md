@@ -12,16 +12,16 @@ helpviewer_keywords:
 ms.assetid: 6a8d5340-1d1b-4d81-88dd-8e1f435eb828
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 172ca7a478dcc34443d2edf15186d9c040a04837
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 7f5bc12a8b0ffb7ef0fa1a78b771ced829f4d73c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98721895"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955817"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>Instrukcje: określanie poleceń przed i po instrumentacji
 
@@ -71,6 +71,6 @@ Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określanie ścieżki
 
      Aby wyłączyć uruchamianie polecenia bez usuwania, zaznacz pole wyboru **Wyklucz z Instrumentacji** . Aby zmodyfikować ustawienia kompilatora lub konsolidatora, użyj stron właściwości projektu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)

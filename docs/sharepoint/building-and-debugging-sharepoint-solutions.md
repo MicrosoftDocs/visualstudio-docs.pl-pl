@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, debugging
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f6801f6b60d2ef522385ecdf290d0a1913bd6df2
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: c16414e6a49d727cf6b2113184c507feb7a73569
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850224"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955795"
 ---
 # <a name="build-and-debug-sharepoint-solutions"></a>Kompilowanie i debugowanie rozwiązań SharePoint
   Ogólnie rzecz biorąc, kompilowanie i debugowanie rozwiązań programu SharePoint jest takie samo jak Kompilowanie i debugowanie innych typów projektów w programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . W tematach w tej sekcji opisano różnice, które istnieją.
@@ -50,7 +50,7 @@ ms.locfileid: "94850224"
 ## <a name="using-the-clean-command"></a>Przy użyciu polecenia Clean
  Gdy na serwerze programu SharePoint jest zainstalowane rozwiązanie programu SharePoint do debugowania, polecenie **Oczyść** nie odinstaluje rozwiązania. Zamiast tego należy dezaktywować funkcje za pomocą konfiguracji programu SharePoint.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)
 - [Przeglądanie połączeń programu SharePoint przy użyciu Eksplorator serwera](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)
 - [Pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

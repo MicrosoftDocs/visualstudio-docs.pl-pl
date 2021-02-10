@@ -16,15 +16,15 @@ helpviewer_keywords:
 - worksheets, populating with data
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8ce2ef20b56a1803af5356137b798d83a5f1457f
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: cabaf58f9e13033edee320277abcc14b55b81a13
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846522"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953971"
 ---
 # <a name="how-to-fill-listobject-controls-with-data"></a>Instrukcje: wypełnianie kontrolek ListObject danymi
   Możesz użyć powiązania danych, aby szybko dodać dane do dokumentu. Po powiązaniu danych z obiektem listy można odłączyć obiekt listy, aby wyświetlał dane, ale nie jest już powiązany ze źródłem danych.
@@ -58,7 +58,7 @@ ms.locfileid: "96846522"
 ## <a name="compile-the-code"></a>Kompiluj kod
  W tym przykładzie kodu założono, że masz istniejącą <xref:Microsoft.Office.Tools.Excel.ListObject> nazwę `list1` w arkuszu, w którym znajduje się ten kod.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Rozwiń dokumenty programu Word i skoroszyty programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Formanty w dokumentach pakietu Office](../vsto/controls-on-office-documents.md)
 - [Dodawanie kontrolek do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md)

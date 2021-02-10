@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4699063d753539c72c373266b3fce9a0fdf8f00
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: dac6c6898a8a8766d073cb5cd2f3bd330e7e2658
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877874"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954581"
 ---
 # <a name="options-and-options-pages"></a>Opcje i strony opcji
 Kliknięcie przycisku **Opcje** w menu **Narzędzia** powoduje otwarcie okna dialogowego **Opcje** . Opcje w tym oknie dialogowym są określane zbiorczo jako strony opcji. Kontrolka drzewa w okienku nawigacji zawiera kategorie opcji, a każda kategoria zawiera strony opcji. Po wybraniu strony opcje są wyświetlane w okienku po prawej stronie. Te strony umożliwiają zmianę wartości opcji, które określają stan pakietu VSPackage.

@@ -17,15 +17,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], data model
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: be4229c179ec6c5640ab612d28991fe476363a53
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: f1c383b5367b2966b9fd082b2d47570264b4d191
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847900"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955778"
 ---
 # <a name="cached-data-in-document-level-customizations"></a>Dane w pamięci podręcznej w dostosowaniu na poziomie dokumentu
   Podstawowym celem dostosowań na poziomie dokumentu jest oddzielenie danych z widoku w dokumentach pakietu Office. Dane odnoszą się do informacji przechowywanych w dokumencie, w tym liczb i tekstu. Widok odnosi się do interfejsu użytkownika i modelu obiektów Microsoft Office Word i Microsoft Office Excel.
@@ -62,6 +62,6 @@ ms.locfileid: "96847900"
 |Jakie typy danych można przechowywać?|Dowolny obiekt publiczny w zestawie dostosowań, który spełnia określone wymagania. Aby uzyskać więcej informacji, zobacz [cache Data](../vsto/caching-data.md).|Dowolne dane XML.|
 |Czy można uzyskać dostęp do danych bez uruchamiania Microsoft Office aplikacji?|Tak, za pomocą <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> klasy dostarczonej przez [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] .|Tak, przy użyciu klas w <xref:System.IO.Packaging> przestrzeni nazw lub przy użyciu zestawu SDK Open XML format.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dane w rozwiązaniach pakietu Office](../vsto/data-in-office-solutions.md)
 - [Architektura rozwiązań pakietu Office w programie Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)

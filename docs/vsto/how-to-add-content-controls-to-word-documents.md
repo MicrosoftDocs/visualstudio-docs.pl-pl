@@ -25,15 +25,15 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], restricted permissions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: aa1528371a1466ec2886bf652ed33561b66b7028
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ed33208d58e380b688ce2553b71033de0b7d07d6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845560"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954296"
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>Instrukcje: Dodawanie kontrolek zawartości do dokumentów programu Word
   W projektach programu Word na poziomie dokumentu można dodawać kontrolki zawartości do dokumentu w projekcie w czasie projektowania lub w czasie wykonywania. W projektach dodatku programu Word VSTO można dodać kontrolki zawartości do dowolnego otwartego dokumentu w czasie wykonywania.
@@ -184,7 +184,7 @@ ms.locfileid: "96845560"
 
      [!code-csharp[Trin_WordAddInDynamicControls#6](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#6)]
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Automatyzowanie programu Word za pomocą obiektów rozszerzonych](../vsto/automating-word-by-using-extended-objects.md)
 - [Elementy hosta i formanty hosta — Omówienie](../vsto/host-items-and-host-controls-overview.md)
 - [Dodawanie kontrolek do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md)
