@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: adc1a191e8fe3869273df546191f7701956018dd
-ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
+ms.openlocfilehash: 3b214452a2eb7a85b4a9baea5e4b4e80a1a71e63
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97684012"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933859"
 ---
 # <a name="walkthrough-use-msbuild"></a>Przewodnik: korzystanie z programu MSBuild
 
@@ -204,7 +204,7 @@ Uruchom program MSBuild z **wiersz polecenia dla deweloperów** programu Visual 
 </PropertyGroup>
 ```
 
- Wszystkie właściwości są elementami podrzędnymi elementów właściwości. Nazwa właściwości jest nazwą elementu podrzędnego, a wartość właściwości jest element tekstowy elementu podrzędnego. Przykład:
+ Wszystkie właściwości są elementami podrzędnymi elementów właściwości. Nazwa właściwości jest nazwą elementu podrzędnego, a wartość właściwości jest element tekstowy elementu podrzędnego. Na przykład
 
 ```xml
 <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
@@ -270,7 +270,7 @@ Użyj tej składni do sprawdzenia niektórych właściwości w pliku projektu.
 
 ### <a name="conditional-properties"></a>Właściwości warunkowe
 
-Wiele właściwości, takich jak `Configuration` są zdefiniowane warunkowo, to oznacza, że `Condition` atrybut jest wyświetlany w elemencie właściwości. Właściwości warunkowe są zdefiniowane lub definiowane ponownie tylko wtedy, gdy warunek ma wartość "true". Należy zauważyć, że niezdefiniowane właściwości otrzymują wartość domyślną pustego ciągu. Przykład:
+Wiele właściwości, takich jak `Configuration` są zdefiniowane warunkowo, to oznacza, że `Condition` atrybut jest wyświetlany w elemencie właściwości. Właściwości warunkowe są zdefiniowane lub definiowane ponownie tylko wtedy, gdy warunek ma wartość "true". Należy zauważyć, że niezdefiniowane właściwości otrzymują wartość domyślną pustego ciągu. Na przykład
 
 ```xml
 <Configuration   Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -342,7 +342,7 @@ Aby uzyskać więcej informacji, zobacz [znaki specjalne programu MSBuild](../ms
 
 Element jest częścią informacji, zazwyczaj nazwą pliku, która jest używana jako dane wejściowe systemu kompilacji. Na przykład Kolekcja elementów reprezentujących pliki źródłowe może zostać przeniesiona do zadania o nazwie Kompiluj, aby skompilować je do zestawu.
 
-Wszystkie elementy są elementami podrzędnymi elementów Item. Nazwa elementu jest nazwą elementu podrzędnego, a wartość elementu jest wartością atrybutu Include elementu podrzędnego. Wartości elementów o tej samej nazwie są zbierane w typach elementów o tej samej nazwie.  Przykład:
+Wszystkie elementy są elementami podrzędnymi elementów Item. Nazwa elementu jest nazwą elementu podrzędnego, a wartość elementu jest wartością atrybutu Include elementu podrzędnego. Wartości elementów o tej samej nazwie są zbierane w typach elementów o tej samej nazwie.  Na przykład
 
 ```xml
 <ItemGroup>
@@ -439,7 +439,7 @@ Zmień zadanie, aby użyć powrotu karetki i wysuwu wiersza (% 0A% 0D), aby wyś
 
 ### <a name="include-exclude-and-wildcards"></a>Include, Exclude i symboli wieloznacznych
 
- Możesz użyć symboli wieloznacznych "*", " \* \* " i "?" z atrybutem include, aby dodać elementy do typu elementu. Przykład:
+ Możesz użyć symboli wieloznacznych "*", " \* \* " i "?" z atrybutem include, aby dodać elementy do typu elementu. Na przykład
 
 ```xml
 <Photos Include="images\*.jpeg" />
@@ -453,7 +453,7 @@ Zmień zadanie, aby użyć powrotu karetki i wysuwu wiersza (% 0A% 0D), aby wyś
 
  dodaje wszystkie pliki z rozszerzeniem pliku *JPEG* w folderze *obrazy* i wszystkie jego podfoldery do typu elementu zdjęcia. Aby uzyskać więcej przykładów, zobacz [jak to zrobić: Wybierz pliki do skompilowania](../msbuild/how-to-select-the-files-to-build.md).
 
- Zwróć uwagę, że jako że elementy są deklarowane, są dodawane do typu elementu. Przykład:
+ Zwróć uwagę, że jako że elementy są deklarowane, są dodawane do typu elementu. Na przykład
 
 ```xml
 <Photos Include="images\*.jpeg" />
@@ -466,7 +466,7 @@ Zmień zadanie, aby użyć powrotu karetki i wysuwu wiersza (% 0A% 0D), aby wyś
 <Photos Include="images\*.jpeg;images\*.gif" />
 ```
 
- Można wykluczyć element z typu elementu z atrybutem Exclude. Przykład:
+ Można wykluczyć element z typu elementu z atrybutem Exclude. Na przykład
 
 ```xml
 <Compile Include="*.cs" Exclude="*Designer*">
@@ -474,7 +474,7 @@ Zmień zadanie, aby użyć powrotu karetki i wysuwu wiersza (% 0A% 0D), aby wyś
 
  dodaje wszystkie pliki z rozszerzeniem pliku *CS* do typu elementu kompilacji, z wyjątkiem plików, których nazwy zawierają *projektanta* ciągów. Aby uzyskać więcej przykładów, zobacz [How to: wykluczanie plików z kompilacji](../msbuild/how-to-exclude-files-from-the-build.md).
 
-Atrybut Exclude ma wpływ tylko na elementy dodane przez atrybut Include w elemencie Item, który je zawiera. Przykład:
+Atrybut Exclude ma wpływ tylko na elementy dodane przez atrybut Include w elemencie Item, który je zawiera. Na przykład
 
 ```xml
 <Compile Include="*.cs" />
@@ -631,7 +631,7 @@ Zwróć uwagę, że metadane wyrażone w tej składni nie powodują przetwarzani
 
  Aby dowiedzieć się, jak utworzyć prosty plik projektu w jednym kroku, wypróbuj [Przewodnik: Tworzenie pliku projektu MSBuild od podstaw](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Omówienie programu MSBuild](../msbuild/msbuild.md)
 - [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)

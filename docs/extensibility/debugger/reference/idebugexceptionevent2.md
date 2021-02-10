@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 53d32e59-a84b-4710-833e-c5ab08100516
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cbd53d56b21886e972b33c219367edd603cbf0d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c09b81a6a3eb56734e7d3a95dc5d1a8d1717fba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729780"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933118"
 ---
 # <a name="idebugexceptionevent2"></a>IDebugExceptionEvent2
 Aparat debugowania (DE) wysyła ten interfejs do Menedżera debugowania sesji (SDM), gdy zostanie zgłoszony wyjątek w aktualnie wykonywanym programie.

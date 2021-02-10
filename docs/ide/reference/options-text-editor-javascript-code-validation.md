@@ -9,19 +9,19 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Code_Validation.JavaScript_Errors
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a3335f4bc5d59b7b4aab3e7341d9f1574d095eeb
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: 0dc6fbde896a2f043040c93710ca48bc95193127
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947755"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932556"
 ---
 # <a name="options-dialog-box-text-editor--javascripttypescript--code-validation"></a>Opcje — okno dialogowe: \> \> Sprawdzanie poprawności kodu JavaScript/języka TypeScript w edytorze tekstu
 
-Za pomocą strony **Sprawdzanie poprawności kodu** okna dialogowego **Opcje** można modyfikować ustawienia, które wpływają na sposób, w jaki kod JavaScript obsługuje błędy. Dostęp do strony **sprawdzania poprawności kodu** można uzyskać, wybierając pozycję **Narzędzia**  >  **Options** na pasku menu, a następnie rozszerzając **Edytor tekstu**  >  **JavaScript/TypeScript**  >  **Sprawdzanie poprawności kodu** JavaScript/TypeScript.
+Za pomocą strony **Sprawdzanie poprawności kodu** okna dialogowego **Opcje** można modyfikować ustawienia, które wpływają na sposób, w jaki kod JavaScript obsługuje błędy. Dostęp do strony **sprawdzania poprawności kodu** można uzyskać, wybierając pozycję **Narzędzia**  >   na pasku menu, a następnie rozszerzając **Edytor tekstu**  >    >  **Sprawdzanie poprawności kodu** JavaScript/TypeScript.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -35,11 +35,11 @@ Te opcje służą do ustawiania preferencji, w jaki sposób edytor kodu JavaScri
 
 **Włącz błędy JavaScript**
 
-Po ustawieniu na **wartość true**Edytor kodu JavaScript pokazuje błędy dla plików JavaScript i JSX. Błędy pojawiają się w **Lista błędów** z prefiksem (js). Wyświetlanie tych błędów jest przydatne, jeśli pracujesz z kodem, który nie został napisany i nie zamierzasz naprawić błędów składniowych.
+Po ustawieniu na **wartość true** Edytor kodu JavaScript pokazuje błędy dla plików JavaScript i JSX. Błędy pojawiają się w **Lista błędów** z prefiksem (js). Wyświetlanie tych błędów jest przydatne, jeśli pracujesz z kodem, który nie został napisany i nie zamierzasz naprawić błędów składniowych.
 
 **Pokaż błędy jako ostrzeżenia**
 
-Po ustawieniu na **wartość true**błędy JavaScript są wyświetlane jako ostrzeżenia zamiast błędów w **Lista błędów**.
+Po ustawieniu na **wartość true** błędy JavaScript są wyświetlane jako ostrzeżenia zamiast błędów w **Lista błędów**.
 
 ## <a name="see-also"></a>Zobacz też
 

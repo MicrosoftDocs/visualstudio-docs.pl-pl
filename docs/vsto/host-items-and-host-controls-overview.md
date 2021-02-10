@@ -35,15 +35,15 @@ helpviewer_keywords:
 - host controls [Office development in Visual Studio], deleting
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: edc8939f2a9e5f41f81c8176d5268528c273a7ce
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: c58ad4dee128f7b2d0dcd91edb7b19c7f8f5a474
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845573"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933625"
 ---
 # <a name="host-items-and-host-controls-overview"></a>Elementy hosta i formanty hosta — Omówienie
   Elementy hosta i formanty hosta są typami, które ułatwiają zapewnienie modelu programowania dla rozwiązań pakietu Office utworzonych przy użyciu narzędzi programistycznych pakietu Office w programie Visual Studio. Elementy hosta i kontrolki hosta współpracują z modelami obiektów Microsoft Office Word i Microsoft Office Excel, które są oparte na modelu COM, podobnie jak w przypadku współpracy z obiektami zarządzanymi, takimi jak formanty Windows Forms.
@@ -170,7 +170,7 @@ ms.locfileid: "96845573"
 > [!NOTE]
 > Nie należy ustawiać <xref:Microsoft.Office.Interop.Excel._Application.EnableEvents%2A> właściwości <xref:Microsoft.Office.Interop.Excel.Application> obiektu w programie Excel na **wartość false**. Ustawienie dla tej właściwości **wartości false** uniemożliwia programowi Excel podnoszenie jakichkolwiek zdarzeń, w tym zdarzeń kontrolek hosta.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Dodatki narzędzi VSTO programu](../vsto/programming-vsto-add-ins.md)
 - [Dostosowywanie na poziomie dokumentu programu](../vsto/programming-document-level-customizations.md)

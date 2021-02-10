@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 15e6efdc-52ca-46d8-9c5e-063f7c8265a6
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 55162def18d2295e0767a3999ffde75d71e1233d
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 2ba7234ee0c5a4ab8096c020cb44345f17830540
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437739"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931217"
 ---
 # <a name="invokemethod-activity-designer"></a>InvokeMethod, projektant działań
 
@@ -64,6 +64,6 @@ To ograniczenie nie ma zastosowania do <xref:System.Activities.Statements.Invoke
 ## <a name="see-also"></a>Zobacz też
 
 - [Typy pierwotne](../workflow-designer/primitives-activity-designers.md)
-- [Ponownie](../workflow-designer/assign-activity-designer.md)
+- [Przypisanie](../workflow-designer/assign-activity-designer.md)
 - [Opóźnienie](../workflow-designer/delay-activity-designer.md)
 - [WriteLine](../workflow-designer/writeline-activity-designer.md)

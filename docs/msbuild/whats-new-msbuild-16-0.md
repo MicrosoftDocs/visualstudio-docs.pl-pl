@@ -6,16 +6,16 @@ ms.date: 03/11/2019
 ms.topic: conceptual
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: b5d2f8205c72f2fd661a76296392bb94d1d24469
-ms.sourcegitcommit: 83a39d48b00c6c351e5c1707942633b7f73aaad6
+ms.openlocfilehash: 24b106442456f8bfbd415c4559cba71e463418d5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94531865"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933794"
 ---
 # <a name="whats-new-in-msbuild-160"></a>Co nowego w programie MSBuild 16.0
 
@@ -33,7 +33,7 @@ W tym artykule opisano zaktualizowane funkcje i właściwości w programie MSBui
 
 - `VisualStudioVersion` dla tej wersji narzędzi jest "16,0"
 
-## <a name="change-waves"></a>Zmień fale
+## <a name="change-waves"></a>Fale zmian
 
 Począwszy od programu MSBuild 16,8, można wybiórczo wybrać, czy zrezygnować z pewnych potencjalnych zmian w programie MSBuild. Zobacz [zmiana fal](change-waves.md).
 
@@ -41,6 +41,6 @@ Począwszy od programu MSBuild 16,8, można wybiórczo wybrać, czy zrezygnować
 
 Program MSBuild (i Visual Studio) jest teraz przeznaczony dla platformy .NET Framework 4.7.2. Jeśli chcesz używać nowych funkcji interfejsu API programu MSBuild, Twój zestaw również wymaga uaktualnienia, ale istniejący kod w dalszym ciągu będzie działać.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [MSBuild](../msbuild/msbuild.md)

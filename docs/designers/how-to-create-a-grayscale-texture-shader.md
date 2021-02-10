@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 79181d81-44af-445e-9a18-03483dd70260
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 737c74c5d58bb15724827f15be029d3a84e21977
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: f4cde65d4540840470baad332b8092b5a410e14b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134056"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930996"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>Instrukcje: tworzenie cieniowania tekstury skali szarości
 
@@ -29,7 +29,7 @@ Przed rozpoczęciem upewnij się, że wyświetlane jest okno **Właściwości** 
 
 1. Utwórz cieniowanie tekstury podstawowej, zgodnie z opisem w artykule [How to: Create a Basic cieniowanie tekstury](../designers/how-to-create-a-basic-texture-shader.md).
 
-2. Odłącz Terminal **RGB** węzła **przykład tekstury** z terminalu **RGB** **końcowego węzła Color** . W obszarze tryb **wyboru** wybierz Terminal **RGB** w węźle **przykład tekstury** , a następnie wybierz polecenie **Przerwij linki** . Powoduje to powolne miejsce dla węzła, który jest dodawany w następnym kroku.
+2. Odłącz Terminal **RGB** węzła **przykład tekstury** z terminalu **RGB** **końcowego węzła Color** . W obszarze tryb **wyboru** wybierz Terminal **RGB** w węźle **przykład tekstury** , a następnie wybierz polecenie **Przerwij linki**. Powoduje to powolne miejsce dla węzła, który jest dodawany w następnym kroku.
 
 3. Dodaj do wykresu węzeł zmniejszający **nasycenie** . W **przyborniku** w obszarze **filtry** wybierz pozycję Zmniejsz **nasycenie** i przenieś ją na powierzchnię projektu.
 

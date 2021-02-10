@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 90458fdd-2d34-4f10-82dc-6d8f31b66d8b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b87d61586fb4acc360b5f5202b1219199c6a24b
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: e544e4cebaa4e2e1691f6c175dfa750a1f951abc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914299"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930697"
 ---
 # <a name="choose-a-debug-engine-implementation-strategy"></a>Wybierz strategię implementacji aparatu debugowania
 Użyj architektury czasu wykonywania, aby określić strategię implementacji aparatu debugowania (DE). Aparat debugowania można utworzyć w procesie dla debugowanego programu. Utwórz aparat debugowania w procesie do Menedżera debugowania sesji programu Visual Studio (SDM). Można też utworzyć poza procesem aparat debugowania do obu tych elementów. Poniższe wskazówki powinny pomóc w wyborze spośród tych trzech strategii.

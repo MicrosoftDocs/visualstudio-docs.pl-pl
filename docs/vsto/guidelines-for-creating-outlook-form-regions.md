@@ -12,15 +12,15 @@ helpviewer_keywords:
 - icons [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: aaf6b96548a9856833fcd1768764ed914da30a07
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: a3a2fab671d6302583f1207f5756118c548bd8a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848095"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933612"
 ---
 # <a name="guidelines-to-create-outlook-form-regions"></a>Wytyczne dotyczące tworzenia regionów formularzy programu Outlook
   Poniższe informacje mogą pomóc zoptymalizować regiony formularzy i uniknąć potencjalnych problemów:
@@ -88,7 +88,7 @@ ms.locfileid: "96848095"
 
   Ikona **okna** jest wyświetlana w obszarze powiadomień, a w oknie dialogowym **Alt** + **Tab** dla otwartych elementów wyświetlających zastępowanie lub zastępowanie — wszystkie regiony formularza.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dostęp do regionu formularza w czasie wykonywania](../vsto/accessing-a-form-region-at-run-time.md)
 - [Tworzenie regionów formularzy programu Outlook](../vsto/creating-outlook-form-regions.md)
 - [Przewodnik: Projektowanie regionu formularza programu Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)

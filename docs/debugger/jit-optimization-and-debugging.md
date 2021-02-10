@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 19bfabf3-1a2e-49dc-8819-a813982e86fd
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 66f63c7232b52ebe849722147e007ab70527c311
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 558a54f6ddcf4945da4937f75b8aa133949349a7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903925"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931087"
 ---
 # <a name="jit-optimization-and-debugging"></a>Optymalizacja i debugowanie JIT
 Jeśli próbujesz debugować kod, łatwiej jest, gdy ten kod **nie** jest zoptymalizowany. Gdy kod jest zoptymalizowany, kompilator i środowisko uruchomieniowe wprowadzają zmiany w emitowanym kodzie procesora CPU, dzięki czemu będzie działać szybciej, ale ma mniej bezpośrednie mapowanie na oryginalny kod źródłowy. Jeśli mapowanie jest mniej bezpośrednie, debugery często nie mogą określić wartości zmiennych lokalnych, a taktowanie kodu i punkty przerwania mogą nie zadziałać zgodnie z oczekiwaniami.

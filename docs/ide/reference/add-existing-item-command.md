@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 41f56131-d4c7-4f81-83b7-bdac713ea870
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 59d1e032150035258df4b1cc88253cefc555d826
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 43c9e7d5947796bb1598bf9dc02420b31e43d167
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871031"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933833"
 ---
 # <a name="add-existing-item-command"></a>Dodaj istniejący element — Polecenie
 Dodaje istniejący plik do bieżącego rozwiązania i otwiera go.
@@ -55,7 +55,7 @@ Ten przykład dodaje plik Form1. frm do bieżącego rozwiązania.
 >File.AddExistingItem "C:\public\solution files\Form1.frm"
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Okno polecenia](../../ide/reference/command-window.md)

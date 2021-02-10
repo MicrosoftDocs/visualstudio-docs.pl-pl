@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: ba5f19ac-6764-4d28-9b79-a86de58f8987
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ce332ac17a20b40cdfbeb4effaf6caf060a87307
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 55625cb1611fec8ed0e8925a671e43505b96c2b9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048763"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931850"
 ---
 # <a name="registerassembly-task"></a>RegisterAssembly — zadanie
 
@@ -40,7 +40,7 @@ Odczytuje metadane w określonym zestawie i dodaje niezbędne wpisy do rejestru,
 |`Assemblies`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Określa zestawy, które mają być zarejestrowane w modelu COM.|
 |`AssemblyListFile`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> parametr.<br /><br /> Zawiera informacje o stanie między `RegisterAssembly` zadaniem a zadaniem [UnregisterAssembly —](../msbuild/unregisterassembly-task.md) . Te informacje uniemożliwiają `UnregisterAssembly` podjęcie próby wyrejestrowania zestawu, którego nie udało się zarejestrować w `RegisterAssembly` zadaniu.|
 |`CreateCodeBase`|Opcjonalny `Boolean` parametr.<br /><br /> Jeśli `true` , program tworzy wpis codebase w rejestrze, który określa ścieżkę pliku dla zestawu, który nie jest zainstalowany w globalnej pamięci podręcznej zestawów. Nie należy określać tej opcji, jeśli później instalowany będzie zestaw, który jest rejestrowany w globalnej pamięci podręcznej zestawów.|
-|`TypeLibFiles`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Określa bibliotekę typów do wygenerowania na podstawie określonego zestawu. Wygenerowana biblioteka typów zawiera definicje dostępnych typów zdefiniowanych w ramach zestawu. Biblioteka typów jest generowana tylko wtedy, gdy spełniony jest jeden z następujących warunków:<br /><br /> -Biblioteka typów o tej nazwie nie istnieje w tej lokalizacji.<br />-Istnieje biblioteka typów, ale jest ona starsza niż przekazanie zestawu.<br /><br /> Jeśli biblioteka typów jest nowsza niż przekazanie zestawu, nowy element nie zostanie utworzony, ale zestaw nadal będzie zarejestrowany.<br /><br /> Jeśli ten parametr jest określony, musi mieć taką samą liczbę elementów jak `Assemblies` parametr lub zadanie zakończy się niepowodzeniem. Jeśli żadne dane wejściowe nie są określone, zadanie zostanie domyślnie przyłączone do nazwy zestawu i zmienione rozszerzenie elementu na *. tlb* .|
+|`TypeLibFiles`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Określa bibliotekę typów do wygenerowania na podstawie określonego zestawu. Wygenerowana biblioteka typów zawiera definicje dostępnych typów zdefiniowanych w ramach zestawu. Biblioteka typów jest generowana tylko wtedy, gdy spełniony jest jeden z następujących warunków:<br /><br /> -Biblioteka typów o tej nazwie nie istnieje w tej lokalizacji.<br />-Istnieje biblioteka typów, ale jest ona starsza niż przekazanie zestawu.<br /><br /> Jeśli biblioteka typów jest nowsza niż przekazanie zestawu, nowy element nie zostanie utworzony, ale zestaw nadal będzie zarejestrowany.<br /><br /> Jeśli ten parametr jest określony, musi mieć taką samą liczbę elementów jak `Assemblies` parametr lub zadanie zakończy się niepowodzeniem. Jeśli żadne dane wejściowe nie są określone, zadanie zostanie domyślnie przyłączone do nazwy zestawu i zmienione rozszerzenie elementu na *. tlb*.|
 
 ## <a name="remarks"></a>Uwagi
 

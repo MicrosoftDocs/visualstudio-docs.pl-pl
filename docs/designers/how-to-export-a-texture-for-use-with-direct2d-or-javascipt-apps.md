@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 241c25fe-764e-4e1b-ad32-b1377dcbb605
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 502dcaec9aeb8fdb2f4b7a72b801f19d2d08dbc4
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 84fadd786e7a1bf978ec4df919b691031c316a4a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134397"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930957"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascript-apps"></a>Instrukcje: eksportowanie tekstury do użycia z aplikacjami Direct2D lub JavaScript
 
@@ -53,16 +53,16 @@ Tekstury, które są używane w kontekście Direct2D, muszą być zgodne z tymi 
 
 1. Zacznij od tekstury podstawowej. Załaduj istniejący obraz lub Utwórz nowy, zgodnie z opisem w temacie [How to: Create a Basic Texture](../designers/how-to-create-a-basic-texture.md). Aby zapewnić obsługę kompresji blokowej w formacie *. DDS* , należy określić teksturę, która ma szerokość i wysokość, które są wielokrotnościami czterech, na przykład 100x100, 128 x 128 lub 256x192. Ponieważ mipmapping nie jest obsługiwana, tekstura nie musi być kwadratowa i nie musi być potęgą liczby dwa.
 
-2. Skonfiguruj plik tekstury w taki sposób, aby był przetwarzany przez potok zawartości obrazu. W **Eksplorator rozwiązań** Otwórz menu skrótów dla właśnie utworzonego pliku tekstury, a następnie wybierz polecenie **Właściwości** . Na stronie **Ogólne właściwości konfiguracji**  >  **General** ustaw właściwość **Typ elementu** na **potok zawartości obrazu** . Upewnij się, że właściwość **Content** jest ustawiona na **wartość Yes (tak** ), **Wyklucz z kompilacji** jest ustawiony na **nie** , a następnie wybierz przycisk **Zastosuj** . Zostanie wyświetlona strona właściwości konfiguracja **potoku zawartości obrazu** .
+2. Skonfiguruj plik tekstury w taki sposób, aby był przetwarzany przez potok zawartości obrazu. W **Eksplorator rozwiązań** Otwórz menu skrótów dla właśnie utworzonego pliku tekstury, a następnie wybierz polecenie **Właściwości**. Na stronie **Ogólne właściwości konfiguracji**  >   ustaw właściwość **Typ elementu** na **potok zawartości obrazu**. Upewnij się, że właściwość **Content** jest ustawiona na **wartość Yes (tak** ), **Wyklucz z kompilacji** jest ustawiony na **nie**, a następnie wybierz przycisk **Zastosuj** . Zostanie wyświetlona strona właściwości konfiguracja **potoku zawartości obrazu** .
 
-3. Ustaw format danych wyjściowych na jeden z formatów skompresowanych blokowo. Na **Configuration Properties**  >  stronie Ogólne **potoku zawartości obrazu** właściwości konfiguracji  >  **General** ustaw właściwość **Kompresuj** na **BC3_UNORM kompresję (/Compress: BC3_UNORM)** . W zależności od wymagań można wybrać dowolny z innych formatów BC1, BC2 lub BC3. Direct2D obecnie nie obsługuje tekstur BC4, BC5, BC6 lub BC7. Aby uzyskać więcej informacji o różnych formatach BC, zobacz [kompresja bloków (Direct3D 10)](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-block-compression).
+3. Ustaw format danych wyjściowych na jeden z formatów skompresowanych blokowo. Na   >  stronie Ogólne **potoku zawartości obrazu** właściwości konfiguracji  >   ustaw właściwość **Kompresuj** na **BC3_UNORM kompresję (/Compress: BC3_UNORM)**. W zależności od wymagań można wybrać dowolny z innych formatów BC1, BC2 lub BC3. Direct2D obecnie nie obsługuje tekstur BC4, BC5, BC6 lub BC7. Aby uzyskać więcej informacji o różnych formatach BC, zobacz [kompresja bloków (Direct3D 10)](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-block-compression).
 
    > [!NOTE]
-   > Określony format kompresji określa format pliku, który jest tworzony przez potok zawartości obrazu. Jest to inna niż Właściwość **Format** obrazu źródłowego w edytorze obrazów, która określa format pliku obrazu źródłowego jako przechowywanego na dysku — czyli *formatu roboczego* . Zwykle nie chcesz, aby format roboczy był skompresowany.
+   > Określony format kompresji określa format pliku, który jest tworzony przez potok zawartości obrazu. Jest to inna niż Właściwość **Format** obrazu źródłowego w edytorze obrazów, która określa format pliku obrazu źródłowego jako przechowywanego na dysku — czyli *formatu roboczego*. Zwykle nie chcesz, aby format roboczy był skompresowany.
 
-4. Skonfiguruj potok zawartości obrazu, aby utworzyć dane wyjściowe korzystające z wstępnie przemnożonego kanału alfa. Na **Configuration Properties**  >  stronie Ogólne **potoku zawartości obrazu** właściwości konfiguracji  >  **General** ustaw właściwość **Konwertuj na wstępnie przemnożony format alfa** na **wartość tak (/generatepremultipliedalpha)** .
+4. Skonfiguruj potok zawartości obrazu, aby utworzyć dane wyjściowe korzystające z wstępnie przemnożonego kanału alfa. Na   >  stronie Ogólne **potoku zawartości obrazu** właściwości konfiguracji  >   ustaw właściwość **Konwertuj na wstępnie przemnożony format alfa** na **wartość tak (/generatepremultipliedalpha)**.
 
-5. Skonfiguruj potok zawartości obrazu, tak aby nie generował mipmapy. Na **Configuration Properties**  >  stronie Ogólne **potoku zawartości obrazu** właściwości konfiguracji  >  **General** ustaw wartość **nie** w polu Generuj Właściwość **MIPS** .
+5. Skonfiguruj potok zawartości obrazu, tak aby nie generował mipmapy. Na   >  stronie Ogólne **potoku zawartości obrazu** właściwości konfiguracji  >   ustaw wartość **nie** w polu Generuj Właściwość **MIPS** .
 
 6. Wybierz przycisk **OK** .
 

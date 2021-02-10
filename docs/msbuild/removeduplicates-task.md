@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 481cbab6-73ff-488c-aba5-2c09f9eb1e04
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 269499153c4be228503d6bd5b22e91e63dd5b5dd
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 5bb2a260f0b9903837b6f1bb8ce8a2e4a2fe691e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048679"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931789"
 ---
 # <a name="removeduplicates-task"></a>RemoveDuplicates — zadanie
 
@@ -72,7 +72,7 @@ Usuwa zduplikowane elementy z określonej kolekcji elementów.
 </Project>
 ```
 
- Poniższy przykład pokazuje, że `RemoveDuplicates` zadanie zachowuje swoją kolejność wprowadzania danych. Po zakończeniu zadania `FilteredItems` Kolekcja elementów zawiera elementy *MyFile2.cs* , *MyFile1.cs* i *MyFile3.cs* w tej kolejności.
+ Poniższy przykład pokazuje, że `RemoveDuplicates` zadanie zachowuje swoją kolejność wprowadzania danych. Po zakończeniu zadania `FilteredItems` Kolekcja elementów zawiera elementy *MyFile2.cs*, *MyFile1.cs* i *MyFile3.cs* w tej kolejności.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

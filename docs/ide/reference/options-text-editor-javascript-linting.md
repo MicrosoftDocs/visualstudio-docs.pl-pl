@@ -12,19 +12,19 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Linting
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f56586843bd95585581f29fd44af16c1ef2c892f
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: 0458495920b603ebbfc2befb733bd8618cea5310
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947716"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932348"
 ---
 # <a name="options-dialog-box-text-editor--javascripttypescript--linting"></a>Opcje — okno dialogowe: Edytor tekstu \> JavaScript/TypeScript \> Zaznaczanie błędów
 
-Za pomocą strony **Zaznaczanie błędów** okna dialogowego **Opcje** można ustawić opcje analizowania kodu w edytorze kodu. Aby uzyskać dostęp do tej strony, na pasku menu wybierz **Tools**  >  **Opcje**narzędzia, a następnie rozwiń **Edytor tekstu**  >  **JavaScript/TypeScript**  >  **Zaznaczanie błędów**.
+Za pomocą strony **Zaznaczanie błędów** okna dialogowego **Opcje** można ustawić opcje analizowania kodu w edytorze kodu. Aby uzyskać dostęp do tej strony, na pasku menu wybierz   >  **Opcje** narzędzia, a następnie rozwiń **Edytor tekstu**  >  **JavaScript/TypeScript**  >  **Zaznaczanie błędów**.
 
 ## <a name="eslint-settings"></a>Ustawienia ESLint
 

@@ -12,19 +12,19 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Project
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 86ee8f59a91cc772d6a86a9e29268b4465b2c639
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: 0b30aaec3087cece63e392cf7170ac85f6be0ad7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947703"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932335"
 ---
 # <a name="options-text-editor-javascript-project"></a>Opcje, Edytor tekstu, JavaScript, projekt
 
-Na stronie **projekt** okna dialogowego **Opcje** można określić opcje JavaScript i projektu TypeScript w edytorze kodu. Aby uzyskać dostęp do tej strony, na pasku menu wybierz **Tools**  >  **Opcje**narzędzia, a następnie rozwiń węzeł **Edytor tekstu**  >  **JavaScript/TypeScript**  >  **Project**.
+Na stronie **projekt** okna dialogowego **Opcje** można określić opcje JavaScript i projektu TypeScript w edytorze kodu. Aby uzyskać dostęp do tej strony, na pasku menu wybierz   >  **Opcje** narzędzia, a następnie rozwiń węzeł **Edytor tekstu**  >  **JavaScript/TypeScript**  >  .
 
 ## <a name="project-analysis-options"></a>Opcje analizy projektu
 
@@ -56,7 +56,7 @@ Zaznacz pole wyboru, a następnie wybierz typ generowania kodu, który ma być u
 
 ## <a name="ecmascript-version-for-files-that-are-not-part-of-a-project"></a>Wersja języka ECMAScript dla plików, które nie są częścią projektu
 
-Te opcje umożliwiają wybranie wersji języka ECMAScript dla plików, które nie są częścią projektu. Można wybrać między **ECMAScript 3**, **ECMAScript 5**lub **ECMAScript 6**.
+Te opcje umożliwiają wybranie wersji języka ECMAScript dla plików, które nie są częścią projektu. Można wybrać między **ECMAScript 3**, **ECMAScript 5** lub **ECMAScript 6**.
 
 ## <a name="jsx-emit-for-tsx-files-that-are-not-part-of-a-project"></a>JSX Emituj dla plików TSX, które nie są częścią projektu
 

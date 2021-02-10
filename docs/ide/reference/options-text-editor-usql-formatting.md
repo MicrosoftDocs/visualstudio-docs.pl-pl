@@ -12,21 +12,21 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.U-SQL.Formatting.General
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bf65c6c80bbcf24d48f5da584349cc4d6b26049
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: a42fa7e5f40f413f7bc336ba8f0afbba7bdbf445
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040293"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932296"
 ---
 # <a name="options-text-editor-u-sql-formatting"></a>Opcje, Edytor tekstu, U-SQL, formatowanie
 
-Na stronie opcje **formatowania** można ustawić opcje formatowania kodu w edytorze kodu. Aby uzyskać dostęp do tej strony opcji, wybierz pozycję **Narzędzia**  >  **Opcje**. W oknie dialogowym **Opcje** wybierz pozycję **Edytor tekstu**  >  **Formatowanie U-SQL**  >  **Formatting**.
+Na stronie opcje **formatowania** można ustawić opcje formatowania kodu w edytorze kodu. Aby uzyskać dostęp do tej strony opcji, wybierz pozycję **Narzędzia**  >  **Opcje**. W oknie dialogowym **Opcje** wybierz pozycję **Edytor tekstu**  >  **Formatowanie U-SQL**  >  .
 
-## <a name="general-page"></a>Strona ogólna
+## <a name="general-page"></a>Strona Ogólne
 
 ### <a name="general-settings"></a>Ustawienia ogólne
 

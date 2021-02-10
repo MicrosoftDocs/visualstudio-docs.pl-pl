@@ -5,17 +5,17 @@ description: Używanie obciążeń i identyfikatorów składników programu Visu
 keywords: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 11/10/2020
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: f43addc5574bd377e60947710ddfc32f0aee263b
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: a7b882660ebaad05d8d24df6ce339c47590428e0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437209"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932095"
 ---
 ## <a name="test-controller"></a>Test Controller
 
@@ -35,4 +35,4 @@ Są to składniki, które nie są uwzględnione w obciążeniu, ale mogą być w
 
 Identyfikator składnika | Nazwa | Wersja
 --- | --- | ---
-n/d | n/d | n/d
+nie dotyczy | nie dotyczy | nie dotyczy

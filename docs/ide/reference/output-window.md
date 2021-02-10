@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d8931d88-250e-4db4-963f-2c5b3e99b45f
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b8615fcdb7e6751087c499967478aaf63e68d624
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 0bdbaf79a3700a1ba1c0574e345093af25608e39
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560385"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932049"
 ---
 # <a name="output-window"></a>Okno wyniku
 
@@ -63,7 +63,7 @@ W okienku **dane** wyjściowe wybrane na liście **Pokaż dane wyjściowe z** ws
 
 ## <a name="route-messages-to-the-output-window"></a>Kierowanie komunikatów do okna danych wyjściowych
 
-Aby wyświetlić okno **danych wyjściowych** za każdym razem, gdy kompilujesz projekt, w oknie dialogowym **Opcje** na stronie Ogólne **projekty i rozwiązania**  >  **General** wybierz pozycję **Pokaż okno dane wyjściowe po rozpoczęciu kompilacji**. Następnie przy otwartym pliku kodu do edycji wybierz pozycję **Przejdź do następnej wiadomości** i **Przejdź do poprzedniej wiadomości** na pasku narzędzi okna **danych wyjściowych** , aby wybrać pozycje w okienku **dane wyjściowe** . W takim przypadku punkt wstawiania w edytorze kodu przechodzi do wiersza kodu, w którym występuje wybrany problem.
+Aby wyświetlić okno **danych wyjściowych** za każdym razem, gdy kompilujesz projekt, w oknie dialogowym **Opcje** na stronie Ogólne **projekty i rozwiązania**  >   wybierz pozycję **Pokaż okno dane wyjściowe po rozpoczęciu kompilacji**. Następnie przy otwartym pliku kodu do edycji wybierz pozycję **Przejdź do następnej wiadomości** i **Przejdź do poprzedniej wiadomości** na pasku narzędzi okna **danych wyjściowych** , aby wybrać pozycje w okienku **dane wyjściowe** . W takim przypadku punkt wstawiania w edytorze kodu przechodzi do wiersza kodu, w którym występuje wybrany problem.
 
 Niektóre funkcje i polecenia środowiska IDE wywoływane w [okno polecenie](../../ide/reference/command-window.md) dostarczają dane wyjściowe do okna **danych wyjściowych** . Dane wyjściowe z zewnętrznych narzędzi, takich jak pliki *bat* i *. com* , które są zwykle wyświetlane w oknie poleceń, są kierowane do okienka **danych wyjściowych** po wybraniu opcji **Użyj okno dane wyjściowe** w obszarze [Zarządzaj narzędziami zewnętrznymi](../../ide/managing-external-tools.md). Wiele innych rodzajów komunikatów można również wyświetlać w okienkach **danych wyjściowych** . Na przykład, gdy składnia Transact-SQL w procedurze składowanej jest sprawdzana względem docelowej bazy danych, wyniki są wyświetlane w oknie **dane wyjściowe** .
 
@@ -73,9 +73,9 @@ W języku C++ można utworzyć niestandardowe kroki kompilacji i zdarzenia kompi
 
 ## <a name="scroll-behavior"></a>Zachowanie przewijania
 
-Jeśli używasz autoprzewijania w oknie **danych wyjściowych** , a następnie nawiguj za pomocą klawiszy myszy lub strzałek, Autoprzewijanie zostanie zatrzymane. Aby wznowić Autoprzewijanie, naciśnij **klawisze CTRL** + **End**.
+Jeśli używasz autoprzewijania w oknie **danych wyjściowych** , a następnie nawiguj za pomocą klawiszy myszy lub strzałek, Autoprzewijanie zostanie zatrzymane. Aby wznowić Autoprzewijanie, naciśnij **klawisze CTRL** + .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Komunikaty diagnostyczne w oknie danych wyjściowych](../../debugger/diagnostic-messages-in-the-output-window.md)
 - [Instrukcje: kontrolowanie okna danych wyjściowych](/previous-versions/ht6z4e28(v=vs.140))

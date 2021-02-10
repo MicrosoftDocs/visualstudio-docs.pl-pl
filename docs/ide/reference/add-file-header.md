@@ -6,15 +6,15 @@ ms.date: 07/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5f2e4715c0333b02f120ec5f92d9f742196c04f3
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 2b177092b04d5042f62dfd0b34d2bfbf4f1f0228
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95870862"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933872"
 ---
 # <a name="add-file-header"></a>Dodawanie nagłówka pliku
 
@@ -59,7 +59,7 @@ Ta generacja kodu ma zastosowanie do:
 
 8. Wybierz pozycję **Zastosuj** , aby zastosować zmiany.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Generowanie kodu](../code-generation-in-visual-studio.md)
 - [Podgląd zmian](../../ide/preview-changes.md)

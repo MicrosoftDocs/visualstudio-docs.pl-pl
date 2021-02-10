@@ -15,15 +15,15 @@ helpviewer_keywords:
 - visualizers, string
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d13e5f5c3ee5a82a56dd8c98fa37e3e13e5169d5
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 287b5e4546d720160c5e73d19cfeaee5bc0c59e1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149940"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933066"
 ---
 # <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>Wyświetlanie ciągów w wizualizatorze ciągu w programie Visual Studio
 
@@ -66,7 +66,7 @@ Poprawnie sformułowany ciąg HTML wygląda tak, jakby był renderowany w przegl
 
 ![Wizualizator ciągu HTML](../debugger/media/dbg-string-visualizers-html.png "Wizualizator ciągu HTML")
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Tworzenie wizualizacji niestandardowych (C#, Visual Basic)](../debugger/create-custom-visualizers-of-data.md)
 - [Wizualizacje danych w Visual Studio dla komputerów Mac](/visualstudio/mac/data-visualizations)

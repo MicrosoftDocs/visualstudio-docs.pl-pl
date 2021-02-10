@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: d20b8d6a-f0e0-4115-b3a3-edda893ae678
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85a5c14196211a638cd830ac6df39570288aa831
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: a1b02fca5d37d7e75cd7c32527bb09358425e626
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761340"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932543"
 ---
 # <a name="how-to-implement-nested-projects"></a>Instrukcje: implementowanie projektów zagnieżdżonych
 
@@ -86,7 +86,7 @@ W poniższych tematach opisano kilka innych koncepcji, które należy wziąć po
 - [Implementowanie obsługi poleceń dla zagnieżdżonych projektów](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)
 - [Filtrowanie okna dialogowego AddItem dla zagnieżdżonych projektów](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Dodaj elementy do okna dialogowego Dodaj nowy element](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
 - [Rejestruj szablony projektów i elementów](../../extensibility/internals/registering-project-and-item-templates.md)

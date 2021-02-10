@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: eb27de6f-4e71-4e87-87e2-d93f7bf5899c
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e373c6491f8f174aba372c9a600e1b5c823dfb00
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 36d96eacc0fbc88a3fcf082493e064a77c5c403a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046037"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933820"
 ---
 # <a name="when-element-msbuild"></a>When, element (MSBuild)
 
@@ -62,7 +62,7 @@ Określa możliwy blok kodu dla `Choose` elementu do wybrania.
 
 |Element|Opis|
 |-------------|-----------------|
-|[Wybierz ikonę](../msbuild/choose-element-msbuild.md)|Element opcjonalny.<br /><br /> Oblicza elementy podrzędne, aby wybrać jedną sekcję kodu do wykonania. Element może mieć zero lub więcej `Choose` elementów `When` .|
+|[Następnie](../msbuild/choose-element-msbuild.md)|Element opcjonalny.<br /><br /> Oblicza elementy podrzędne, aby wybrać jedną sekcję kodu do wykonania. Element może mieć zero lub więcej `Choose` elementów `When` .|
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Element opcjonalny.<br /><br /> Zawiera zestaw [elementów zdefiniowanych przez](../msbuild/item-element-msbuild.md) użytkownika. Element może mieć zero lub więcej `ItemGroup` elementów `When` .|
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Element opcjonalny.<br /><br /> Zawiera zestaw elementów [Właściwości](../msbuild/property-element-msbuild.md) zdefiniowanych przez użytkownika. Element może zawierać zero lub więcej `PropertyGroup` elementów `When` .|
 

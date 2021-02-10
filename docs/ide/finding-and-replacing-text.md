@@ -29,15 +29,15 @@ helpviewer_keywords:
 - multi-caret selection
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 475f0249bd6af8176fba3ecc79ad758cc6ceceb7
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: 534d25c97977d058f0b4137955e44e3d544b3878
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006591"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932608"
 ---
 # <a name="find-and-replace-text"></a>Znajdowanie i zastępowanie tekstu
 
@@ -112,7 +112,7 @@ Na poniższym zrzucie ekranu `-0000` wybrano w trzech lokalizacjach. Jeśli uży
 Aby zaznaczyć wiele karetki, kliknij lub Zwolnij pierwszy wybór tekstu w zwykły sposób, a następnie naciśnij klawisz **Alt** podczas klikania lub zaznaczania tekstu w każdej dodatkowej lokalizacji. Możesz również automatycznie dodać pasujący tekst jako dodatkowe wybory lub zaznaczyć pole tekstu do edycji identycznie w każdym wierszu.
 
 > [!TIP]
-> Jeśli wybrano opcję **Alt** jako klawisz modyfikujący dla kliknięcia przycisku myszy, przejdź do definicji **Tools** w  >  **opcji** narzędzia, wybór wieloznaczny jest wyłączony.
+> Jeśli wybrano opcję **Alt** jako klawisz modyfikujący dla kliknięcia przycisku myszy, przejdź do definicji w  >  **opcji** narzędzia, wybór wieloznaczny jest wyłączony.
 
 ### <a name="commands"></a>Polecenia
 
@@ -134,7 +134,7 @@ Niektóre polecenia są również dostępne w menu **Edycja** w obszarze **wielu
 
 :::image type="content" source="media/edit-menu-multiple-carets-find-replace.png" alt-text="Zrzut ekranu przedstawiający menu z wieloma karetkami w programie Visual Studio":::
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Używanie wyrażeń regularnych w programie Visual Studio](../ide/using-regular-expressions-in-visual-studio.md)
 - [Kod refaktoryzacji w programie Visual Studio](../ide/refactoring-in-visual-studio.md)

@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 13b74765-0b7c-418e-8cd9-5f2e8db51ae5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a288beb618b0b539f53270928366349f47aee9e9
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 951b83f425f1e7171c519fced3fa3a4644279621
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487728"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934145"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Przewodnik testowania wtyczek kontroli kodu źródłowego
 Ta sekcja zawiera wskazówki dotyczące testowania wtyczki kontroli źródła za pomocą programu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Jest to obszerne omówienie najpopularniejszych obszarów testowania, a także niektóre bardziej Intricate obszary, które mogą być problematyczne. Tego omówienia nie jest to pełna lista przypadków testowych.
@@ -103,5 +103,5 @@ Ta sekcja zawiera wskazówki dotyczące testowania wtyczki kontroli źródła za
 
   - Przypadek 8b: zmiana oparta na rozwiązaniu
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wtyczki kontroli źródła](../../extensibility/source-control-plug-ins.md)

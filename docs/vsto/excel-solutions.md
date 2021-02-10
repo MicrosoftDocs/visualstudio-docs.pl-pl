@@ -25,15 +25,15 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], Excel
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e6ca4cfd45c1147d10ffaf8d3308b9adb09c689e
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 3833ff549b2cceb3f783afc43a4f71dacc00ecb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848121"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931282"
 ---
 # <a name="excel-solutions"></a>rozwiązania programu Excel
   Program Visual Studio zawiera szablony projektów, których można użyć do tworzenia dostosowań na poziomie dokumentu i dodatków narzędzi VSTO dla programu Microsoft Office Excel. Można używać tych rozwiązań do automatyzowania programu Excel, rozszerzeń funkcji programu Excel i dostosowywania interfejsu użytkownika programu Excel. Aby uzyskać więcej informacji o różnicach między dostosowaniami dostosowań na poziomie dokumentu a dodatkami programu VSTO, zobacz temat [programowanie rozwiązań pakietu Office — omówienie &#40;narzędzi vsto&#41;](../vsto/office-solutions-development-overview-vsto.md).

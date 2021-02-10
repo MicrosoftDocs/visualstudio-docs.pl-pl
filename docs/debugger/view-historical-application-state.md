@@ -7,15 +7,15 @@ ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 83d444cb5e3345d79ca6e1422982c0ecd37e4287
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1ab54ccb3820b3a03724c30d16f08b3e8a45493
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67825526"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933105"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>Sprawdź poprzednie Stany aplikacji za pomocą IntelliTrace Step-back w programie Visual Studio (Visual Studio Enterprise)
 
@@ -71,7 +71,7 @@ W tym samouczku wykonasz następujące czynności:
 
     Po powrocie lub przejściu do przodu program Visual Studio przechodzi do trybu debugowania historycznego. W tym trybie debuger debugera przechodzi do godziny, w której zarejestrowano wybrane zdarzenie. Program Visual Studio przesuwa również wskaźnik do odpowiedniego wiersza kodu w oknie źródłowym.
 
-    Z tego widoku można sprawdzić wartości w oknach **stos wywołań**, zmienne **lokalne**, **autouzupełniania**i **czujki** . Możesz również umieścić wskaźnik myszy nad zmiennymi, aby wyświetlić etykietki danych i wykonać ocenę wyrażenia w oknie **bezpośrednim** . Dane, które widzisz, pochodzą z migawki procesu aplikacji wykonanego w tym momencie.
+    Z tego widoku można sprawdzić wartości w oknach **stos wywołań**, zmienne **lokalne**, **autouzupełniania** i **czujki** . Możesz również umieścić wskaźnik myszy nad zmiennymi, aby wyświetlić etykietki danych i wykonać ocenę wyrażenia w oknie **bezpośrednim** . Dane, które widzisz, pochodzą z migawki procesu aplikacji wykonanego w tym momencie.
 
     Tak więc, na przykład, jeśli trafisz punkt przerwania i podjęto krok (**F10**), przycisk **Przejdź do tyłu** umieszcza program Visual Studio w trybie historycznym w wierszu kodu odpowiadającym punktowi przerwania.
 
@@ -95,9 +95,9 @@ W tym samouczku wykonasz następujące czynności:
 
 IntelliTrace w trybie tylko zdarzenia umożliwia aktywację debugowania historycznego w krokach i punktach przerwania. Jednak IntelliTrace przechwytuje tylko dane w **lokalnych** **i oknach** systemu Windows, jeśli są otwarte i są przechwytywane tylko te dane, które są rozbudowane i w widoku. W trybie tylko zdarzenia, często nie masz pełnego widoku zmiennych i obiektów złożonych. Ponadto obliczanie wyrażeń i wyświetlanie danych w oknie **czujki** nie jest obsługiwane.
 
-W trybie zdarzenia i migawki IntelliTrace przechwytuje całą migawkę procesu aplikacji, w tym obiekty złożone. W wierszu kodu można zobaczyć te same informacje, które zostały zatrzymane w punkcie przerwania (i nie ma znaczenia, czy informacje zostały wcześniej rozwinięte). Obliczanie wyrażeń jest również obsługiwane podczas wyświetlania migawki.  
+W trybie zdarzenia i migawki IntelliTrace przechwytuje całą migawkę procesu aplikacji, w tym obiekty złożone. W wierszu kodu można zobaczyć te same informacje, które zostały zatrzymane w punkcie przerwania (i nie ma znaczenia, czy informacje zostały wcześniej rozwinięte). Obliczanie wyrażeń jest również obsługiwane podczas wyświetlania migawki.  
 
-#### <a name="what-is-the-performance-impact-of-this-feature"></a>Jaki jest wpływ tej funkcji na wydajność? 
+#### <a name="what-is-the-performance-impact-of-this-feature"></a>Jaki jest wpływ tej funkcji na wydajność? 
 
 Wpływ na ogólną wydajność, zależy od aplikacji. Obciążenie pracą migawki jest około 30 ms. Gdy wykonywana jest migawka, proces aplikacji jest rozwidlenia, a kopia rozwidlenia jest wstrzymana. Gdy przeglądasz migawkę, program Visual Studio jest dołączany do odtworzonej kopii procesu. Dla każdej migawki program Visual Studio kopiuje tylko tabelę stron i ustawia strony do kopiowania w trakcie zapisu. Jeśli obiekty na stosie zmieniają się między krokami debugera ze skojarzonymi migawkami, odpowiednia tabela stron jest kopiowana, co skutkuje minimalnym kosztem pamięci. Jeśli program Visual Studio wykryje brak wystarczającej ilości pamięci do utworzenia migawki, nie zajmie ona.
 

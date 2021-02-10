@@ -21,19 +21,19 @@ helpviewer_keywords:
 ms.assetid: 2fd26c75-a056-4dda-9f7e-2f90d3748d88
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 94a1babf518a3579246903f6479f999d8912dfe5
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 7f00e0b5cd0575613add2698058ba6b1357aec0f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048788"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931984"
 ---
 # <a name="rc-task"></a>RC — Zadanie
 
-Zawija narzędzie kompilatora zasobów systemu Microsoft Windows, *rc.exe* . Zadanie **RC** kompiluje zasoby, takie jak kursory, ikony, mapy bitowe, okna dialogowe i czcionki, do pliku zasobów ( *. res* ). Aby uzyskać więcej informacji, zobacz [kompilator zasobów](/windows/desktop/menurc/resource-compiler).
+Zawija narzędzie kompilatora zasobów systemu Microsoft Windows, *rc.exe*. Zadanie **RC** kompiluje zasoby, takie jak kursory, ikony, mapy bitowe, okna dialogowe i czcionki, do pliku zasobów (*. res*). Aby uzyskać więcej informacji, zobacz [kompilator zasobów](/windows/desktop/menurc/resource-compiler).
 
 ## <a name="parameters"></a>Parametry
 

@@ -12,19 +12,19 @@ f1_keywords:
 ms.assetid: b4a9816d-cf87-4dc6-a8d4-1591d6a48103
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 41256882433bc95db7af380d27cc8dc63fbcd387
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: 051711a9d6dfe861f37e741ae9ecabfbf741012e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947729"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932361"
 ---
 # <a name="options-dialog-box-text-editor--javascript--intellisense"></a>Opcje — okno dialogowe: Edytor tekstu \> JavaScript \> IntelliSense
 
-Na stronie **IntelliSense** okna dialogowego **Opcje** można modyfikować ustawienia, które mają wpływ na zachowanie funkcji IntelliSense dla języka JavaScript. Dostęp do strony **IntelliSense** można uzyskać, wybierając pozycję **Narzędzia**  >  **Options** na pasku menu, a następnie rozszerzając **Edytor tekstu**  >  **JavaScript/TypeScript**  >  **IntelliSense.**
+Na stronie **IntelliSense** okna dialogowego **Opcje** można modyfikować ustawienia, które mają wpływ na zachowanie funkcji IntelliSense dla języka JavaScript. Dostęp do strony **IntelliSense** można uzyskać, wybierając pozycję **Narzędzia**  >   na pasku menu, a następnie rozszerzając **Edytor tekstu**  >  **JavaScript/TypeScript**  >  **IntelliSense.**
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -52,7 +52,7 @@ Ta opcja określa typ grupy odwołania. Obsługiwane są trzy grupy odwołań:
 
 Można używać wstępnie zdefiniowanych grup odwołań w celu określania, że konkretne pliki .js IntelliSense znajdują się w zakresie dla różnych projektów JavaScript. Dostępne są cztery grupy odniesień:
 
-- Niejawne ( *wersja*systemu Windows) dla [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] aplikacji korzystających z języka JavaScript. Pliki dołączone do tej grupy są w zakresie dla każdego pliku. js otwartego w edytorze kodu dla [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] aplikacji korzystających z języka JavaScript.
+- Niejawne ( *wersja* systemu Windows) dla [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] aplikacji korzystających z języka JavaScript. Pliki dołączone do tej grupy są w zakresie dla każdego pliku. js otwartego w edytorze kodu dla [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] aplikacji korzystających z języka JavaScript.
 
 - Niejawna (sieć Web) dla projektów HTML5. Pliki dołączone do tej grupy są w zakresie dla każdego pliku .js otwartego w Edytorze kodu dla tych typów projektu.
 
@@ -62,7 +62,7 @@ Można używać wstępnie zdefiniowanych grup odwołań w celu określania, że 
 
 **Dołączone pliki**
 
-Ta opcja określa kolejność, w której pliki są ładowane do kontekstu usługi języka. Kolejność można skonfigurować przy użyciu przycisków **Usuń**, Przenieś w **górę**i **Przenieś w dół** . Aby technologia IntelliSense działała poprawnie, plik, który jest zależny od innego, musi być załadowany po pliku, od którego zależy.
+Ta opcja określa kolejność, w której pliki są ładowane do kontekstu usługi języka. Kolejność można skonfigurować przy użyciu przycisków **Usuń**, Przenieś w **górę** i **Przenieś w dół** . Aby technologia IntelliSense działała poprawnie, plik, który jest zależny od innego, musi być załadowany po pliku, od którego zależy.
 
 > [!CAUTION]
 > Jeśli obiekt jest zdefiniowany bezwarunkowo w dwóch lub więcej odwołań niejawnych, ostatnie odwołanie na tej liście będzie używane do określenia obiektu.

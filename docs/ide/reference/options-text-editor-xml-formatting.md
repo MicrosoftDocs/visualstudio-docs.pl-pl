@@ -9,17 +9,17 @@ f1_keywords:
 ms.assetid: 203e60b2-7b80-4ff4-9fa1-aa9f4374377b
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 9aac9420d084c64a4bd5d9199f6a7ca96b8c4281
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+manager: jmartens
+ms.openlocfilehash: b5e3674c955b229c4c517db5d1dab3d36830da5d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040514"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932322"
 ---
 # <a name="options-text-editor-xml-formatting"></a>Opcje, Edytor tekstu, XML, formatowanie
 
-Na stronie opcje **formatowania** można określić sposób formatowania elementów i atrybutów w dokumentach XML. Aby uzyskać dostęp do opcji formatowania XML, wybierz opcje **Narzędzia**  >  **Options**  >  **Edytor tekstu**  >  **XML**, a następnie wybierz **Formatowanie**.
+Na stronie opcje **formatowania** można określić sposób formatowania elementów i atrybutów w dokumentach XML. Aby uzyskać dostęp do opcji formatowania XML, wybierz opcje **Narzędzia**  >    >  **Edytor tekstu**  >  **XML**, a następnie wybierz **Formatowanie**.
 
 ## <a name="attributes"></a>Atrybuty
 
