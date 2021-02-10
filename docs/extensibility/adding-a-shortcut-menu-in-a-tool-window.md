@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 50234537-9e95-4b7e-9cb7-e5cf26d6e9d2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e14d948bf5d4b637002ca1f2ec8be37b64dc22b
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: a35652c0eacf22a46eed3f3fc64c3bcc0d6d10ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597876"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951540"
 ---
 # <a name="add-a-shortcut-menu-in-a-tool-window"></a>Dodawanie menu skrótów w oknie narzędzi
 W tym instruktażu jest umieszczane menu skrótów w oknie narzędzi. Menu skrótów to menu, które pojawia się po kliknięciu prawym przyciskiem myszy przycisku, pola tekstowego lub tła okna. Polecenia w menu skrótów zachowują się tak samo jak polecenia w innych menu lub paskach narzędzi. Aby obsłużyć menu skrótów, określ je w pliku *. vsct* i Wyświetl go w odpowiedzi na kliknięcie prawym przyciskiem myszy.
@@ -278,6 +278,6 @@ Menu skrótów, takie jak pokazane w tym instruktażu, umożliwia użytkownikowi
 
 4. Kliknij kolor w menu skrótów. Kolor tła okna narzędzia powinien zostać zmieniony na wybrany kolor.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)
 - [Używanie i świadczenie usług](../extensibility/using-and-providing-services.md)

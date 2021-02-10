@@ -9,15 +9,15 @@ ms.technology: vs-ide-general
 ms.assetid: 1cac4ba4-f3cd-43bd-ad5d-50fc599234e8
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a8ae9b17df85431945b19d65f5435ac081b4a1c
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: c8d3a907651169e74f992fb908ce8a13c127a693
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480723"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950981"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Krok 1. Tworzenie projektu i dodawanie tabeli do formularza
 
@@ -122,7 +122,7 @@ Pierwszym krokiem w tworzeniu gry w dopasowanie jest stworzenie projektu i dodan
 5. Wybierz kontrolkę etykieta i skopiuj ją do następnej komórki w TableLayoutPanel. (Wybierz **Ctrl** + Klucze języka **C** lub na pasku menu wybierz polecenie **Edytuj**  >  **kopię**.) Następnie wklej go. (Wybierz **Ctrl** + Klawisze **V** lub na pasku menu wybierz **Edytuj**  >  **Wklej**.) Kopia pierwszej etykiety pojawia się w drugiej komórce TableLayoutPanel. Wklej ją ponownie, a w trzeciej komórce pojawi się inna etykieta. Kontynuuj wklejanie kontrolek etykiet do momentu wypełnienia wszystkich komórek.
 
    > [!NOTE]
-   > Jeśli wkleisz zbyt wiele razy, IDE dodaje nowy wiersz do TableLayoutPanel, tak aby miał miejsce dodać nową kontrolkę etykieta. Można cofnąć tę operację. Aby usunąć nową komórkę, wybierz klawisze **Ctrl +** + **Z** lub na pasku menu wybierz polecenie **Edytuj**  >  **Cofnij**.
+   > Jeśli wkleisz zbyt wiele razy, IDE dodaje nowy wiersz do TableLayoutPanel, tak aby miał miejsce dodać nową kontrolkę etykieta. Można cofnąć tę operację. Aby usunąć nową komórkę, wybierz klawisze **Ctrl +** +  lub na pasku menu wybierz polecenie **Edytuj**  >  **Cofnij**.
 
     Teraz formularz został rozłożony. Powinien wyglądać podobnie do poniższej ilustracji.
 

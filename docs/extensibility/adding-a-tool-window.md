@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 8e16c381-03c8-404e-92ef-3614cdf3150a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 184e04e74e2065ea2a9e1bcd41b2e878981dd218
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: f3c84eafcfe19efdf6427db10f65dcf24504b598
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597993"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951436"
 ---
 # <a name="add-a-tool-window"></a>Dodaj okno narzędzi
 
@@ -282,5 +282,5 @@ Następnie określ lokalizację domyślną w IDE dla okna narzędzi. Informacje 
 
     Należy słyszeć dźwięk CHIME.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)

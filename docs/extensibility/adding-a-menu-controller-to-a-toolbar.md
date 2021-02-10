@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ce14999913a3928cbe25d9f034c8288651629a3
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 82da331d93a2208b76bb953f3a6a489913c907ac
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597824"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951527"
 ---
 # <a name="add-a-menu-controller-to-a-toolbar"></a>Dodawanie kontrolera menu do paska narzędzi
 Ten przewodnik kompiluje się na stronie [Dodawanie paska narzędzi do](../extensibility/adding-a-toolbar-to-a-tool-window.md) przewodnika po oknie narzędzia i pokazuje, jak dodać kontroler menu do paska narzędzi okna narzędzi. Kroki przedstawione w tym miejscu można również zastosować do paska narzędzi, który został utworzony w przewodniku [Dodawanie paska narzędzi](../extensibility/adding-a-toolbar.md) .
@@ -224,6 +224,6 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
 
     Zostanie wyświetlone okno dialogowe z wybranym komunikatem **menu element kontroler 3**. Zauważ, że komunikat odpowiada tekstowi na przycisku kontrolera menu. Przycisk kontroler menu wyświetla teraz **pozycję MC element 3**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dodawanie paska narzędzi do okna narzędzi](../extensibility/adding-a-toolbar-to-a-tool-window.md)
 - [Dodawanie paska narzędzi](../extensibility/adding-a-toolbar.md)

@@ -5,15 +5,15 @@ ms.date: 11/02/2018
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 71116fbc05eade8ffb89c38a922106f375b86021
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd11a05ed6b19fe5d6236bec2c6b4926bbcdefd3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585733"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951111"
 ---
 # <a name="shortcut-tips-for-visual-studio"></a>Porady dotyczące skrótów dla programu Visual Studio
 
@@ -39,12 +39,12 @@ Aby uzyskać pełną listę skrótów poleceń, zobacz [domyślne skróty klawia
 |Uruchom nowe wystąpienie|**Win** + **SHIFT** + **N**|
 |Przełączanie między oknami|**Win** + **N**|
 
-## <a name="search"></a>Wyszukiwanie
+## <a name="search"></a>Wyszukaj
 
 |Zadanie|Skrót|
 |-|-|
 |Eksplorator rozwiązań wyszukiwanie|**Ctrl** + **;**|
-|Umieść fokus w polu wyszukiwania w dowolnym oknie narzędzi (z wyjątkiem edytora)|**Alt** + Alt **`** gdy okno narzędzi ma fokus|
+|Umieść fokus w polu wyszukiwania w dowolnym oknie narzędzi (z wyjątkiem edytora)| + Alt **`** gdy okno narzędzi ma fokus|
 |Wyszukaj w programie Visual Studio|**Ctrl** + **P**|
 |Filtr wyników pola wyszukiwania|@opt -Opcje<br />@cmd -Polecenia<br />@mru -Ostatnio używane<br />@doc -Otwarte dokumenty|
 |Wyszukaj w opcjach narzędzi|**Ctrl** + **E**|
@@ -54,7 +54,7 @@ Aby uzyskać pełną listę skrótów poleceń, zobacz [domyślne skróty klawia
 |Zadanie|Skrót|
 |-|-|
 |Szybkie wyszukiwanie|**Ctrl** + **F**|
-|Szybkie szukanie następnego wyniku|**Wejść**|
+|Szybkie szukanie następnego wyniku|**Enter**|
 |Szybkie szukanie poprzedniego wyniku|**SHIFT** + **Wprowadź**|
 |Szybkie znajdowanie rozwiń listę rozwijaną|**Alt** + **Strzałka w dół**|
 |Odrzuć Znajdź|**Esc**|
@@ -81,7 +81,7 @@ Aby uzyskać pełną listę skrótów poleceń, zobacz [domyślne skróty klawia
 |Pokaż szybkie informacje|**Ctrl** + **K**,**I**|
 |Przejdź do|**Ctrl** + **,**|
 |Przejdź do wyróżnionych odwołań|**Ctrl** + **SHIFT** + W **górę** (Wstecz)<br />**Ctrl** + **SHIFT** + **W dół** (dalej)|
-|Powiększenie edytora|**Ctrl** + **Shift** + SHIFT **>** Podczas<br />**Ctrl** + **Shift** + SHIFT **<** Określoną|
+|Powiększenie edytora|**Ctrl** +  + SHIFT **>** Podczas<br />**Ctrl** +  + SHIFT **<** Określoną|
 |Blokuj zaznaczenie|Przytrzymaj klawisz **Alt** i przeciągnij mysz<br />**SHIFT** + **Alt** + **Klawisze strzałek**|
 |Przenieś wiersz w górę/w dół|**Alt** + **Strzałka**  /  w górę **Alt** + **Strzałka w dół**|
 |Duplikuj wiersz|**Ctrl** + **E**,**V**|
@@ -92,7 +92,7 @@ Aby uzyskać pełną listę skrótów poleceń, zobacz [domyślne skróty klawia
 |Przejdź do stosu definicji|**Ctrl** + **SHIFT** + **8** (Wstecz)<br />**Ctrl** + **SHIFT** + **7** (do przodu)|
 |Zamknij okno definicji wglądu|**Esc**|
 |Podwyższ poziom okna definicji wglądu do karty zwykłego dokumentu|**Ctrl** + **Alt** + **Strona główna**|
-|Przechodzenie między wieloma oknami definicji wglądu|**Ctrl** + **Alt** + Alt **-** i **Ctrl** + **Alt**+**=**|
+|Przechodzenie między wieloma oknami definicji wglądu|**Ctrl** +  + Alt **-** i **Ctrl** + **Alt**+**=**|
 |Przechodzenie między wieloma wynikami wglądu|**F8** i **SHIFT** + **F8**|
 |Przełącz między oknem edytora kodu i oknem definicji wglądu|**SHIFT** + **ESC**|
 |Przejdź do otaczającego bloku|**Ctrl** + **Alt** + **Strzałka w górę**|
@@ -106,7 +106,7 @@ Aby uzyskać pełną listę skrótów poleceń, zobacz [domyślne skróty klawia
 |Dodawanie przycisków|Wybierz przycisk przepełnienie paska narzędzi|
 |Znajdź pole kombi na standardowym pasku narzędzi|**Ctrl** + **D**|
 |Znajdź tryb polecenia TextBox|Wprowadź **>**|
-|Utwórz nowy alias|** \<new alias> Alias \<command> ** typu w oknie **polecenia**|
+|Utwórz nowy alias|**\<new alias> Alias \<command>** typu w oknie **polecenia**|
 
 ## <a name="debugging"></a>Debugowanie
 

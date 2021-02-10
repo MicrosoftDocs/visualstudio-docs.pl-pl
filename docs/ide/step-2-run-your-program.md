@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ddc016df63a7bb6ffbe3923de72c4f23cb32739c
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 4939e7a307e39f0548a72feeed7537efdcbd7f2c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480658"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950851"
 ---
 # <a name="step-2-run-your-picture-viewer-app"></a>Krok 2. Uruchamianie aplikacji Przeglądarka obrazów
 
@@ -34,12 +34,12 @@ Oto jak uruchomić aplikację.
     - Na pasku narzędzi wybierz przycisk **Rozpocznij debugowanie** , który jest wyświetlany w następujący sposób:
 
       ![Przycisk paska narzędzi Rozpocznij debugowanie](../ide/media/express_icondebug.png)<br>
-      **_Rozpocznij debugowanie_* _ _toolbar przycisk *
+      ***Rozpocznij debugowanie** _ _toolbar przycisk *
 
 1. Program Visual Studio uruchamia aplikację i zostanie wyświetlone okno o nazwie **Form1** . Poniższy zrzut ekranu przedstawia utworzoną aplikację. Aplikacja jest uruchomiona i wkrótce zostanie dodana do niej.
 
      ![Windows Forms uruchomiona aplikacja](../ide/media/express_firstrun.png)<br>
-**_Windows Forms App_* _, _running *
+***Windows Forms App** _, _running *
 
 1. Wróć do zintegrowanego środowiska programistycznego (IDE) programu Visual Studio, a następnie spójrz na nowy pasek narzędzi. Po uruchomieniu aplikacji na pasku narzędzi są wyświetlane dodatkowe przyciski. Te przyciski umożliwiają wykonywanie takich czynności, jak zatrzymywanie i uruchamianie aplikacji oraz śledzenie wszelkich błędów (usterek), które może on mieć. Na potrzeby tego przykładu używamy go do uruchamiania i zatrzymywania aplikacji.
 

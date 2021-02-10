@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f7ac5967d13aa6572b36989150561363555a9705
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 1a4488c212cabe95d73f75246fb297c17ce073b4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809201"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950903"
 ---
 # <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>Krok 11. Uruchamianie aplikacji Przeglądarka obrazów i wypróbuj inne funkcje
 
@@ -25,12 +25,12 @@ Twoja aplikacja dla przeglądarki obrazów została zakończona i jest gotowa do
 
 ## <a name="how-to-run-your-app-and-set-the-background-color"></a>Jak uruchomić aplikację i ustawić kolor tła
 
-1. Wybierz **F5**lub na pasku menu wybierz **Debuguj**  >  **Rozpocznij debugowanie**.
+1. Wybierz **F5** lub na pasku menu wybierz **Debuguj**  >  **Rozpocznij debugowanie**.
 
 1. Przed otwarciem obrazu wybierz przycisk **Ustaw kolor tła** . Zostanie otwarte okno dialogowe **koloru** .
 
      ![Okno dialogowe koloru](../ide/media/express_colordialog.png)<br/>
-Okno *dialogowe* ***koloru***
+***Kolor** _ _dialog pole *
 
 1. Wybierz kolor, aby ustawić kolor tła PictureBox. Dokładnie obejrzyj `backgroundButton_Click()` metodę (lub, `BackgroundButton_Click()` ), aby zrozumieć, jak działa.
 

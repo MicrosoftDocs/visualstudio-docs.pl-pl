@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ec14c85d-7efb-441c-a46b-bee34a227e39
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 264917d515e25823f8d6c2cb522e85dcc9c47d84
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 24f13e61f783b041134dc38a4c9bc1690421b6cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91878959"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951137"
 ---
 # <a name="shortcut-keys-in-help-viewer"></a>Klawisze skrótów w podglądzie pomocy
 
@@ -49,7 +49,7 @@ Możesz nawigować w **Podgląd pomocy firmy Microsoft** przy użyciu klawiszy s
 |Temat|**Strona w górę**|Przewiń w kierunku początku dokumentu po jednym ekranie.|
 |Temat|**Strona w dół**|Przewiń w dół do końca dokumentu po jednym ekranie.|
 |Temat|**Ekran główny**|Przenieś na początek dokumentu.|
-|Temat|**Punktów**|Przenieś na koniec dokumentu.|
+|Temat|**End**|Przenieś na koniec dokumentu.|
 |Temat|**Ctrl** + **F**|Znajdź tekst wyszukiwania na tej stronie.|
 |Temat|**F5**|Odśwież bieżącą stronę.|
 |Temat|**Ctrl** + **P**|Drukuj bieżącą stronę.|
@@ -60,12 +60,12 @@ Możesz nawigować w **Podgląd pomocy firmy Microsoft** przy użyciu klawiszy s
 |Temat|**Ctrl** + **Karta**|Przełączanie między kartami od lewej do prawej.|
 |Temat|**Ctrl** + **SHIFT** + **Karta**|Przełączenie między kartami od prawej do lewej.|
 |Temat|**Ctrl** + **W**|Zamknij bieżącą kartę.|
-|Temat|**Ctrl** + ** _Liczba_**|Przejdź do konkretnej karty, w której **_Liczba_** jest z zakresu od 1 do 9 i wskazuje, która karta ma być sekwencją.|
+|Temat|**Ctrl** + **_Liczba_**|Przejdź do konkretnej karty, w której **_Liczba_** jest z zakresu od 1 do 9 i wskazuje, która karta ma być sekwencją.|
 |Temat|**Ctrl** + **Alt** + **F4**|Zamknij inne karty zawartości.|
 |Temat|**Ctrl** + **SHIFT** + Znak **Plus**|Zwiększ powiększenie o 10%.|
 |Temat|**Ctrl** + Znak **minus**|Zmniejsz powiększenie o 10%.|
 |Temat|**Ctrl** + **0** (zero)|Zmień powiększenie na 100%.|
-|Indeks|**Tabulator**|Przenieś fokus od wpisu słowa kluczowego na listę słów kluczowych.|
+|Indeks|**Tab**|Przenieś fokus od wpisu słowa kluczowego na listę słów kluczowych.|
 |Indeks|**Ctrl** + **K**|Przełączenie między pokazywaniem wpisów zawierających określone słowo kluczowe i wpisy, które zaczynają się od określonego słowa kluczowego.|
 |Ulubione|**Ctrl** + **SHIFT** + **Del**|Wyczyść historię przeglądania.|
 |Ulubione|**Usunięcie**|Usuń określony element.|
@@ -81,7 +81,7 @@ Możesz nawigować w **Podgląd pomocy firmy Microsoft** przy użyciu klawiszy s
 |Opcje aplikacji Viewer|**Alt** + **H**|Zmień fokus na listę **zapisanych wpisów historii** .|
 |Opcje aplikacji Viewer|**Alt** + **E**|Zaznacz lub wyczyść pole wyboru **Dołącz zawartość w języku angielskim na wszystkich kartach nawigacji i żądania F1,** jeśli jest włączone.|
 |Opcje aplikacji Viewer|**Alt** + **O**|Zaznacz lub wyczyść pole wyboru **Przejdź do trybu online, aby sprawdzić dostępność aktualizacji zawartości** .|
-|Znajdowanie|**Wejść**|Zmień fokus na następny element.|
+|Znajdowanie|**Enter**|Zmień fokus na następny element.|
 |Znajdowanie|**SHIFT** + **Wprowadź**|Zmień fokus na poprzedni element.|
 |Znajdowanie|**Esc**|Ukrywa pole tekstowe **Znajdź** .|
 |Pasek stanu|**Alt** + **E**|Otwórz okno dialogowe **błędu** , jeśli pasek stanu pokazuje, że wystąpił błąd.|
@@ -102,14 +102,14 @@ Możesz nawigować w **Podgląd pomocy firmy Microsoft** przy użyciu klawiszy s
 |-|-|
 |**Alt** + **D**|Zmień źródło instalacji na dysk.|
 |**Alt** + **O**|Zmień źródło instalacji w tryb online.|
-|**Tabulator**|Zmień fokus w polu tekstowym **ścieżka do magazynu lokalnego** .|
-|**Tabulator**|Zmień fokus na przycisk **Przenieś** .|
+|**Tab**|Zmień fokus w polu tekstowym **ścieżka do magazynu lokalnego** .|
+|**Tab**|Zmień fokus na przycisk **Przenieś** .|
 |**Alt** + **V**|Otwórz okno dialogowe **przenoszenie zawartości** .|
 |**Ctrl** + **Alt** + **F**|Zmień fokus na pole tekstowe **Dokumentacja filtru** .|
-|**Tabulator**|Zmień fokus na listę dokumentacji.|
+|**Tab**|Zmień fokus na listę dokumentacji.|
 |**Strzałka w górę** i **Strzałka w dół**|Przewiń listę dokumentacji.|
 |**Odstęp**|Dodaj element do listy **oczekujące zmiany** .|
-|**Tabulator**|Zmień fokus na listę **oczekujące zmiany** .|
+|**Tab**|Zmień fokus na listę **oczekujące zmiany** .|
 |**Strzałka w górę** i **Strzałka w dół**|Przewiń listę **oczekujących zmian** .|
 |**Odstęp**|Usuń element z listy **oczekujących zmian** .|
 |**Alt** + **T**|Zastosuj wszystkie oczekujące zmiany.|

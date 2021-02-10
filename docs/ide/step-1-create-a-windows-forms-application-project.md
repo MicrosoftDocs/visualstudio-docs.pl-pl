@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 76225685a9f68ca6f6cb05f902922f8fa208015d
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 04168d6f648a9219c40f81aa042cbc778429ca0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480398"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951007"
 ---
 # <a name="step-1-create-a-windows-forms-app-project"></a>Krok 1. Tworzenie projektu aplikacji Windows Forms
 
@@ -29,7 +29,7 @@ Podczas tworzenia przeglądarki obrazów pierwszym krokiem jest utworzenie proje
 
 1. Na pasku menu wybierz pozycję **plik**  >  **Nowy**  >  **projekt**. Okno dialogowe powinno wyglądać podobnie do poniższego zrzutu ekranu.
 
-     ![Okno dialogowe Nowy projekt](../ide/media/newprojectdialogcallouts.png)<br/>**_Nowy projekt_* _ _dialog pole *
+     ![Okno dialogowe Nowy projekt](../ide/media/newprojectdialogcallouts.png)<br/>***Nowy projekt** _ _dialog pole *
 
 2. Po lewej stronie okna dialogowego **Nowy projekt** wybierz pozycję **Visual C#** lub **Visual Basic**, a następnie wybierz pozycję **Windows Desktop**.
 
@@ -107,7 +107,7 @@ Program Visual Studio tworzy rozwiązanie dla aplikacji. Rozwiązanie działa ja
      Alternatywnie wybierz na pasku narzędzi przycisk **Zapisz wszystko** , który zostanie wyświetlony na poniższym obrazie.
 
      ![Przycisk Zapisz wszystkie paski narzędzi](../ide/media/express_iconsaveall.png)<br/>
-     **_Zapisz wszystko_* _ _toolbar przycisk *
+     ***Zapisz wszystko** _ _toolbar przycisk *
 
      Program Visual Studio automatycznie wypełnia nazwę folderu i nazwę projektu, a następnie zapisuje projekt w folderze projektów.
 

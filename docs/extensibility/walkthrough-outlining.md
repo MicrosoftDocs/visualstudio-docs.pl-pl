@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d75a44aa-265a-44d4-9c28-457f59c4ff9f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: ea0f16deee17e2cd249c0ee1de0861a936abc75c
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: aa66d3b32f6992cb3a5db13bc2b7ee4d5cd9294c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877900"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951189"
 ---
 # <a name="walkthrough-outlining"></a>Przewodnik: tworzenie konspektu
 Skonfiguruj funkcje oparte na języku, takie jak konspekt, definiując rodzaje regionów tekstu, które chcesz rozwinąć lub zwinąć. Można zdefiniować regiony w kontekście usługi językowej lub zdefiniować własne rozszerzenie nazwy pliku i typ zawartości oraz zastosować definicję regionu tylko do tego typu lub zastosować definicje regionów do istniejącego typu zawartości (na przykład "tekst"). W tym instruktażu pokazano, jak definiować i wyświetlać regiony konspektu.

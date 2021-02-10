@@ -9,17 +9,17 @@ ms.custom:
 ms.topic: tutorial
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 39c5fd62b67c8153da0a64dcd92142300912c25f
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: f76eb5ba3ccab85a4cf6c8ca5ad4a8fa3e021f47
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901781"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951215"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Dowiedz się, jak używać edytora kodu
 
@@ -79,7 +79,7 @@ Program Visual Studio oferuje przydatne *fragmenty kodu* , za pomocą których m
 
    Zostanie wyświetlony `static void Main()` podpis metody dodany do pliku.
 
-Dostępne fragmenty kodu są różne dla różnych języków programowania. Możesz sprawdzić dostępne fragmenty kodu dla danego języka, wybierając pozycję **Edytuj**  >  **IntelliSense**  >  **wstawkę** IntelliSense, a następnie wybierając folder języka. Dla języka C# lista wygląda następująco:
+Dostępne fragmenty kodu są różne dla różnych języków programowania. Możesz sprawdzić dostępne fragmenty kodu dla danego języka, wybierając pozycję **Edytuj**  >    >  **wstawkę** IntelliSense, a następnie wybierając folder języka. Dla języka C# lista wygląda następująco:
 
 ![Lista fragmentów kodu w języku C#](media/tutorial-code-snippet-list.png)
 
@@ -187,7 +187,7 @@ Nikt nie pobiera kodu po raz pierwszy, a jedna z rzeczy, które trzeba zmienić,
 > [!div class="nextstepaction"]
 > [Informacje o projektach i rozwiązaniach](../get-started/tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Fragmenty kodu](../ide/code-snippets.md)
 - [Nawiguj po kodzie](../ide/navigating-code.md)
