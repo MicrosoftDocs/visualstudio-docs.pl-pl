@@ -14,15 +14,15 @@ helpviewer_keywords:
 - walkthroughs [Office development in Visual Studio], action panes
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5e9cd19687e15cd30c8196183f43709d4ba5149d
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 9ee5d6cbe372b0a7930b867a98136d132ddb0b2c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525104"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959886"
 ---
 # <a name="office-ui-customization-walkthroughs"></a>Wskazówki dotyczące dostosowywania interfejsu użytkownika pakietu Office
   W poniższych przewodnikach przedstawiono sposoby dostosowywania interfejsu użytkownika Microsoft Office aplikacji przy użyciu dostosowań na poziomie dokumentu i dodatków narzędzi VSTO.

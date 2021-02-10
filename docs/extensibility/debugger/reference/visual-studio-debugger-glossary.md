@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 4a2cfaab-1fbd-4a23-bd00-9ac4cc50d7fd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a01a6ad0e23af04001e9b0990be57d78e84c7241
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 0cc5a8b75fd089318434cadea185f8070616cd8a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847068"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961199"
 ---
 # <a name="visual-studio-debugger-glossary"></a>Słownik debugera programu Visual Studio
 W zestawie SDK debugowania są stosowane poniższe warunki [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] .
@@ -68,5 +68,5 @@ W zestawie SDK debugowania są stosowane poniższe warunki [!INCLUDE[vsprvs](../
 
   ostrzegawczy punkt przerwania dla opisywania ostrzeżenia w oczekującym punkcie przerwania. Punkt przerwania ostrzegawczy opisuje powód, dla którego oczekujący punkt przerwania nie został jeszcze powiązany z lokalizacją w kodzie. Może to być spowodowane tym, że kod nie został jeszcze załadowany do lokalizacji opisanej przez oczekujący punkt przerwania lub z innego powodu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Rozszerzalność debugera programu Visual Studio](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)

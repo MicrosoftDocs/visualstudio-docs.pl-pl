@@ -16,15 +16,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7055be0b089a0b7c582ef0b66d84951d01685870
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 149e99a3ba86f1eec22d90618abfd8972ed68e97
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903640"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959899"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package"></a>Instrukcje: Dostosowywanie pakietu rozwiązania SharePoint
   Można użyć projektanta pakietów do tworzenia i dostosowywania pakietu (*. wsp*). Można na przykład dodać elementy i funkcje projektu programu SharePoint, określić, czy serwer sieci Web ma być resetowany po wdrożeniu rozwiązania, i ustawić typ serwera wdrażania.
@@ -89,5 +89,5 @@ ms.locfileid: "94903640"
 
      Szablon jest odświeżany oryginalnym tekstem i wszelkie zmiany wprowadzone w pliku XML zostaną utracone.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

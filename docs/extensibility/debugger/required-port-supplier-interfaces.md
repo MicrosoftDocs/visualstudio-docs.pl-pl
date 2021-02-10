@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 0c2cdd40-9f6f-425e-b305-858f7734161e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13e3ac8dc0c229f0c0a00bd22131251c71893224
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 930166d84e6203b0d1d62ef661e768f0f14e60f9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847133"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961056"
 ---
 # <a name="required-port-supplier-interfaces"></a>Wymagane interfejsy dostawcy portów
 Dostawca portu musi implementować interfejs [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) . [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)
@@ -82,5 +82,5 @@ Dostawca portu musi implementować interfejs [IDebugPortSupplier2](../../extensi
 
   Umożliwia dołączenie modelu SDM do tego programu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Implementowanie dostawcy portu](../../extensibility/debugger/implementing-a-port-supplier.md)

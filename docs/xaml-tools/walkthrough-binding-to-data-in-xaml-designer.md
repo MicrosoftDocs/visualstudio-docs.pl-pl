@@ -11,13 +11,13 @@ dev_langs:
 - VB
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: e07d4a0872f2e93e568bb540edb89e026d25d935
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+manager: jmartens
+ms.openlocfilehash: 6bf3bd24b4a232899c64f6c0ecd819b0fe0f83a1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047185"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961316"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Przewodnik: wiązanie z danymi w projektancie XAML
 
@@ -25,13 +25,13 @@ W projektant XAML można ustawić właściwości powiązania danych przy użyciu
 
 ## <a name="to-create-a-class-to-use-as-a-data-source"></a>Aby utworzyć klasę, która ma być używana jako źródło danych
 
-1. W menu **plik** wybierz pozycję **Nowy**  >  **projekt** .
+1. W menu **plik** wybierz pozycję **Nowy**  >  **projekt**.
 
 1. W oknie dialogowym **Nowy projekt** wybierz węzeł **Visual C#** lub **Visual Basic** , rozwiń węzeł **pulpitu systemu Windows** , a następnie wybierz szablon **Aplikacja WPF** .
 
-1. Nazwij projekt **BindingTest** , a następnie wybierz przycisk **OK** .
+1. Nazwij projekt **BindingTest**, a następnie wybierz przycisk **OK** .
 
-1. Otwórz plik **MainWindow.XAML.cs** (lub **MainWindow. XAML. vb** ) i Dodaj następujący kod. W języku C# Dodaj kod w `BindingTest` przestrzeni nazw (przed końcowym nawiasem zamykającym w pliku). W Visual Basic, po prostu Dodaj nową klasę.
+1. Otwórz plik **MainWindow.XAML.cs** (lub **MainWindow. XAML. vb**) i Dodaj następujący kod. W języku C# Dodaj kod w `BindingTest` przestrzeni nazw (przed końcowym nawiasem zamykającym w pliku). W Visual Basic, po prostu Dodaj nową klasę.
 
    ```csharp
    public class ShoppingCart : DependencyObject
@@ -67,11 +67,11 @@ W projektant XAML można ustawić właściwości powiązania danych przy użyciu
 
    Ten kod ustawia wartość 0 jako domyślną liczbę elementów przy użyciu obiektu [metodę PropertyMetadata](xref:Windows.UI.Xaml.PropertyMetadata) .
 
-1. W menu **plik** wybierz polecenie **Kompiluj**  >  **kompilację rozwiązania** .
+1. W menu **plik** wybierz polecenie **Kompiluj**  >  **kompilację rozwiązania**.
 
 ## <a name="to-bind-the-itemcount-property-to-a-textblock-control"></a>Aby powiązać Właściwość ItemCount z kontrolką TextBlock
 
-1. W Eksplorator rozwiązań otwórz menu skrótów dla **MainWindow. XAML** i wybierz polecenie **Projektant widoków** .
+1. W Eksplorator rozwiązań otwórz menu skrótów dla **MainWindow. XAML** i wybierz polecenie **Projektant widoków**.
 
 1. W przyborniku wybierz kontrolkę [Siatka](xref:Windows.UI.Xaml.Controls.Grid) i Dodaj ją do formularza.
 
@@ -85,7 +85,7 @@ W projektant XAML można ustawić właściwości powiązania danych przy użyciu
 
 1. W **przyborniku** wybierz `TextBlock` kontrolkę, aby dodać ją do formularza.
 
-1. Po `TextBlock` wybraniu kontrolki w okno właściwości wybierz znacznik właściwości z prawej strony właściwości **Text** , a następnie wybierz pozycję **Utwórz powiązanie danych** . (Znacznik właściwości wygląda jak małe pole).
+1. Po `TextBlock` wybraniu kontrolki w okno właściwości wybierz znacznik właściwości z prawej strony właściwości **Text** , a następnie wybierz pozycję **Utwórz powiązanie danych**. (Znacznik właściwości wygląda jak małe pole).
 
 1. W oknie dialogowym Tworzenie powiązania danych w polu **ścieżka** wybierz właściwość **ItemCount: (Int32)** , a następnie wybierz przycisk **OK** .
 

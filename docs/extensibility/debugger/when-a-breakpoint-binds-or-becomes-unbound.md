@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 61bf00b2-8293-49d3-b919-1efb0dec9151
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a48bd7ff011b6e8de6e9321a00b6bc20d54f0f0b
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 97ac7dc9afbd3b740c95a7e76a30836e938eaeaf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995918"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968505"
 ---
 # <a name="when-a-breakpoint-binds-or-becomes-unbound"></a>Gdy punkt przerwania tworzy powiązanie lub zostaje niepowiązany
 Gdy punkt przerwania nie może być powiązany w momencie wywołania metody [IDebugPendingBreakpoint2:: NOBIND](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md) , czas powiązania i czas utworzenia punktu przerwania są różne.

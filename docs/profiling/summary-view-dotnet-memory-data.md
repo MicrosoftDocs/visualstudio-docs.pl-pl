@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 0cb317c3-0ae6-4531-aaa8-447576eec037
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 590705e7fb55315176d5533a9cd009784430ea4d
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 6aa2daf8e03f61d529f0d07c8f78af49821fa92b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722675"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960016"
 ---
 # <a name="summary-view---net-memory-data"></a>Widok podsumowania — dane pamięci platformy .NET
 Widok podsumowania zawiera informacje o funkcjach i typach programu .NET, które przydzieliły najwięcej pamięci, oraz typy, które zostały utworzone najczęściej w ramach uruchomienia profilowania. Aby uzyskać więcej informacji, w tym opis linków powiadomień i list raportów, zobacz [Widok podsumowania](../profiling/summary-view.md).
@@ -49,6 +49,6 @@ Widok podsumowania zawiera informacje o funkcjach i typach programu .NET, które
 |**Nazwa**|Nazwa typu.|
 |**Liczba**|Wartość procentowa łącznej liczby obiektów of.NET, które zostały utworzone w ramach uruchomienia profilowania, które były wystąpieniami tego typu.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Widok podsumowania — dane próbkowania](../profiling/summary-view-sampling-data.md)
 - [Widok podsumowania — dane Instrumentacji](../profiling/summary-view-instrumentation-data.md)

@@ -11,15 +11,15 @@ f1_keywords:
 ms.assetid: d5af2276-5215-4138-880a-cf2b90bbf3a0
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 08c7957d79d51cab93e45adf8f74899ecc59b76d
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: c9c46ae3dcc0063c7a2664e032fba14ce320af18
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438012"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961303"
 ---
 # <a name="flowchart-activity-designer"></a>Flowchart, projektant działań
 
@@ -31,7 +31,7 @@ To <xref:System.Activities.Statements.Flowchart> działanie służy do tworzenia
 
 ### <a name="using-the-flowchart-activity-designer"></a>Korzystanie z projektanta działań Flowchart
 
-Projektant działań **Flowchart** można znaleźć w kategorii **schemat blokowy** , do którego **uzyskuje się dostęp** , klikając kartę **Przybornik** na Projektant przepływu pracy. Alternatywnie możesz wybrać **Przybornik** z menu **Widok** lub nacisnąć **klawisze CTRL** + **Alt** + **X**.
+Projektant działań **Flowchart** można znaleźć w kategorii **schemat blokowy** , do którego **uzyskuje się dostęp**, klikając kartę **Przybornik** na Projektant przepływu pracy. Alternatywnie możesz wybrać **Przybornik** z menu **Widok** lub nacisnąć **klawisze CTRL** + **Alt** + **X**.
 
 Projektant działań **schematu blokowego** może być przeciągany z **przybornika** i upuszczany na Projektant przepływu pracy powierzchnię, gdy projektanci aktywności są zwykle umieszczane jako działania główne lub jako element podrzędny innego działania przepływu sterowania. Jeśli Projektant działań **Flowchart** zostanie porzucony na pustej powierzchni Projektant przepływu pracy, tworzy <xref:System.Activities.Statements.Flowchart> działanie, które domyślnie prezentuje się w rozwiniętym widoku, w którym węzeł początkowy inicjujący wykonywanie jest reprezentowany jako Zielona kulka. Jeśli Projektant działań **schematu blokowego** zostanie porzucony w innym działaniu przepływu sterowania, zostanie on wyświetlony w widoku zminimalizowanym, który można rozszerzyć przez dwukrotne kliknięcie projektanta działań **schematu blokowego** . Wszystkie działania w **przyborniku** można przeciągnąć bezpośrednio do projektanta działań **schematu blokowego** , łącznie z innymi działaniami przepływu sterowania.
 
