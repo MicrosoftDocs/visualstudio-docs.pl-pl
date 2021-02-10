@@ -12,15 +12,15 @@ helpviewer_keywords:
 - site definitions [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7585a4b80322afb37e816758fc7074806a443676
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: c802832a9881cf3bf247c8e48b8ecdc2d784b1c5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850575"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949015"
 ---
 # <a name="create-site-definitions-for-sharepoint"></a>Tworzenie definicji witryny dla programu SharePoint
   Projekt definicji witryny programu SharePoint w programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] umożliwia utworzenie *definicji lokacji*, która służy jako podstawa dla nowej witryny programu SharePoint. Definicje te nie tylko określają wygląd i zachowanie witryny programu SharePoint, ale również jego domyślną zawartość i funkcje. W definicji można umieścić wstępnie skonfigurowane listy, typy zawartości, odbiorniki zdarzeń, obrazy i inne elementy. Program SharePoint zawiera definicje witryn, takie jak BLOG, na przykład. W przypadku tworzenia witryny na podstawie definicji witryny blogu lokacja zawiera listy, składniki Web Part i inne elementy wymagane przez witrynę blogów.
@@ -60,5 +60,5 @@ ms.locfileid: "94850575"
 |[Programowanie stron sieci Web ASP.NET](/previous-versions/aspnet/0yt4zca8(v=vs.100))|Zawiera informacje dotyczące sposobu tworzenia programów obsługi zdarzeń na [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] stronach oraz sposobu pracy z skryptem klienta programu.|
 |[Programowanie w programie Windows SharePoint Services](/previous-versions/office/developer/sharepoint-services/ms430674(v=office.12))|Opisuje sposób korzystania z modelu obiektów zarządzanych, który jest dostępny w programie [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] .|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)

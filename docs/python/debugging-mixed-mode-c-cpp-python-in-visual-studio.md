@@ -5,17 +5,17 @@ ms.date: 11/12/2018
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0b55a0bbeee7c5a8c38a0df61db0a1b17ae5e033
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85118cebfa862a1575762985d41df61ef76b5cc5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238663"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949327"
 ---
 # <a name="debug-python-and-c-together"></a>Debugowanie kodu Python i języka C++
 
@@ -46,7 +46,7 @@ Funkcje debugowania w trybie mieszanym obejmują następujące elementy, jak wyj
     ![Włączanie debugowania kodu natywnego](media/mixed-mode-debugging-enable-native.png)
 
     > [!Tip]
-    > Po włączeniu debugowania kodu natywnego okno danych wyjściowych w języku Python może zniknąć natychmiast po zakończeniu działania programu bez podawania zwykłych **klawiszy, aby kontynuować** wstrzymywanie. Aby wymusić wstrzymanie, należy dodać `-i` opcję **Run**do  >  pola argumentów uruchamiania**interpretera** na karcie **debugowanie** po włączeniu debugowania kodu natywnego. Ten argument powoduje przełączenie interpretera języka Python w tryb interaktywny po zakończeniu kodu, w którym momencie czeka na naciśnięcie klawisza **Ctrl** + **z**  >  **Enter** , aby wyjść.
+    > Po włączeniu debugowania kodu natywnego okno danych wyjściowych w języku Python może zniknąć natychmiast po zakończeniu działania programu bez podawania zwykłych **klawiszy, aby kontynuować** wstrzymywanie. Aby wymusić wstrzymanie, należy dodać `-i` opcję do  >  pola argumentów uruchamiania **interpretera** na karcie **debugowanie** po włączeniu debugowania kodu natywnego. Ten argument powoduje przełączenie interpretera języka Python w tryb interaktywny po zakończeniu kodu, w którym momencie czeka na naciśnięcie klawisza **Ctrl** + **z**  >  **Enter** , aby wyjść.
 
 1. Podczas dołączania debugera w trybie mieszanym do istniejącego procesu (**debugowanie**  >  **dołączanie do procesu**), użyj przycisku **Wybierz** , aby otworzyć okno dialogowe **Wybieranie typu kodu** . Następnie ustaw opcję **Debuguj te typy kodu** i wybierz zarówno **natywne** , jak i **Python** na liście:
 
@@ -54,7 +54,7 @@ Funkcje debugowania w trybie mieszanym obejmują następujące elementy, jak wyj
 
     Ustawienia typu kodu są trwałe, więc jeśli chcesz wyłączyć debugowanie w trybie mieszanym podczas późniejszego dołączania do innego procesu, wyczyść typ kodu języka **Python** .
 
-    Można wybrać inne typy kodu oprócz, lub zamiast, **natywne**. Na przykład, jeśli zarządzana aplikacja obsługuje CPython, która z kolei używa natywnych modułów rozszerzeń i chcesz debugować wszystkie trzy, możesz sprawdzić środowisko **Python**, **natywne**i **zarządzane** razem w celu zapewnienia ujednoliconego środowiska debugowania, w tym połączone stosy wywołań i przechodzenie między wszystkimi trzema środowiskami uruchomieniowymi.
+    Można wybrać inne typy kodu oprócz, lub zamiast, **natywne**. Na przykład, jeśli zarządzana aplikacja obsługuje CPython, która z kolei używa natywnych modułów rozszerzeń i chcesz debugować wszystkie trzy, możesz sprawdzić środowisko **Python**, **natywne** i **zarządzane** razem w celu zapewnienia ujednoliconego środowiska debugowania, w tym połączone stosy wywołań i przechodzenie między wszystkimi trzema środowiskami uruchomieniowymi.
 
 1. Po pierwszym uruchomieniu debugowania w trybie mieszanym można zobaczyć okno dialogowe **wymagane symbole języka Python** (zobacz [symbole dla debugowania w trybie mieszanym](debugging-symbols-for-mixed-mode-c-cpp-python.md)). Należy zainstalować symbole tylko raz dla danego środowiska języka Python. Symbole są automatycznie dołączane, jeśli zainstalowano obsługę języka Python za pomocą Instalatora programu Visual Studio (Visual Studio 2017 i nowsze).
 
@@ -99,7 +99,7 @@ W oknie **stos wywołań** są wyświetlane ramki stosu natywnego i języka Pyth
 
 ![Połączony stos wywołań z debugowaniem w trybie mieszanym](media/mixed-mode-debugging-call-stack.png)
 
-Przejścia są wyświetlane jako **[kod zewnętrzny]** bez określania kierunku przejścia, jeśli opcja narzędzia do **Tools**  >  **Options**  >  **debugowania**opcji  >  **General**  >  **Włącz ogólne tylko mój kod** jest ustawiona.
+Przejścia są wyświetlane jako **[kod zewnętrzny]** bez określania kierunku przejścia, jeśli opcja narzędzia do   >    >  **debugowania** opcji  >    >  **Włącz ogólne tylko mój kod** jest ustawiona.
 
 Dwukrotne kliknięcie dowolnej ramki wywołania powoduje jej uaktywnienie i otwarcie odpowiedniego kodu źródłowego, jeśli jest to możliwe. Jeśli kod źródłowy jest niedostępny, ramka nadal zostanie uaktywniona, a zmienne lokalne można sprawdzić.
 
@@ -142,7 +142,7 @@ Alternatywna (i lepsza) opcja polega na obserwowanie [PEP 3123](https://www.pyth
 
 ### <a name="native-values-view-in-python-code"></a>Widok wartości natywnych w kodzie języka Python
 
-Podobnie jak w poprzedniej sekcji, można włączyć **[widok C++]** dla natywnych wartości w oknie **zmiennych lokalnych** , gdy ramka języka Python jest aktywna. Ta funkcja nie jest domyślnie włączona, więc należy ją włączyć, klikając prawym przyciskiem myszy w oknie **zmiennych lokalnych** i przełączając **Python**  >  opcję menu**Pokaż węzły języka C++ w języku** Python.
+Podobnie jak w poprzedniej sekcji, można włączyć **[widok C++]** dla natywnych wartości w oknie **zmiennych lokalnych** , gdy ramka języka Python jest aktywna. Ta funkcja nie jest domyślnie włączona, więc należy ją włączyć, klikając prawym przyciskiem myszy w oknie **zmiennych lokalnych** i przełączając   >  opcję menu **Pokaż węzły języka C++ w języku** Python.
 
 ![Włączanie widoku C++ w oknie zmiennych lokalnych](media/mixed-mode-debugging-enable-cpp-view.png)
 

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - features [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 06a8fdef9c194e9b0f81768f93b675ade77d39ef
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 8fc572f6fc5c0444fda619af5af49c6c2e52ac5d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850588"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949119"
 ---
 # <a name="create-sharepoint-features"></a>Tworzenie funkcji programu SharePoint
   Za pomocą funkcji SharePoint można grupować powiązane elementy projektu programu SharePoint w celu łatwiejszego wdrażania. Można tworzyć funkcje, ustawiać zakresy i oznaczyć inne funkcje jako zależności przy użyciu projektanta funkcji programu SharePoint. Projektant generuje również manifest, który jest plikiem XML, który opisuje każdą funkcję.
@@ -54,7 +54,7 @@ ms.locfileid: "94850588"
 ## <a name="add-feature-dependencies"></a>Dodawanie zależności funkcji
  Można skonfigurować manifest funkcji tak, aby serwer programu SharePoint uaktywniał pewne funkcje przed aktywowaniem funkcji. Na przykład, jeśli funkcja programu SharePoint zależy od innych funkcji dla funkcjonalności lub danych, serwer programu SharePoint może najpierw spróbować aktywować dowolne funkcje, od których zależy dana funkcja. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie i usuwanie zależności funkcji](../sharepoint/how-to-add-and-remove-feature-dependencies.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: Dostosowywanie funkcji programu SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)
 - [Instrukcje: Dodawanie i usuwanie elementów do funkcji programu SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)
 - [Instrukcje: Dodawanie i usuwanie zależności funkcji](../sharepoint/how-to-add-and-remove-feature-dependencies.md)

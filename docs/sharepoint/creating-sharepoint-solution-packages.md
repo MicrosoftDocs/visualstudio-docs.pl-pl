@@ -12,15 +12,15 @@ helpviewer_keywords:
 - packages [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bbe458f6ab4de01ffb224ae4e493bf23e3fc6ceb
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 423fcaf54d1d46ddf92352f4ff8bdbb637bbe514
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850562"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949093"
 ---
 # <a name="create-sharepoint-solution-packages"></a>Tworzenie pakietów rozwiązania SharePoint
   Za pomocą projektanta pakietów można tworzyć i dostosowywać pakiety wdrożeniowe. Można na przykład dodać elementy i funkcje projektu programu SharePoint, zresetować serwer usług IIS, ustawić zakresy aktywacji funkcji i zidentyfikować zależności funkcji. Projektant generuje również manifest, plik XML, który opisuje każdy pakiet.
@@ -73,7 +73,7 @@ ms.locfileid: "94850562"
 ## <a name="package-folder-structure"></a>Struktura folderu pakietu
  Podczas pakowania projektu programu SharePoint plik *. wsp* jest tworzony w folderze *SolutionFolder\bin \\ \<BuildConfiguration>* . Na przykład jeśli Twoje rozwiązanie jest w *C:\Visual Studio 2013 \ Projects\ListDefinition1* i konfiguracja kompilacji jest ustawiona na wartość Release, plik *. wsp* znajduje się w *C:\Visual Studio 2013 \ Projects\ListDefinition1\bin\Release*.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: Dostosowywanie pakietu rozwiązania SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)
 - [Instrukcje: Dodawanie i usuwanie funkcji oraz elementów do pakietu przy użyciu projektanta pakietów](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)
 - [Instrukcje: Tworzenie pakietu rozwiązania SharePoint przy użyciu zadań MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)

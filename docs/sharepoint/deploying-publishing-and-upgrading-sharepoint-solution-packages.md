@@ -16,15 +16,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ab97efc82575c31c8e05b73063c2b53a09691d2d
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: cd0dfa3a12c675463c46e93aa0d5b25e8b4bd4b2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672668"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948859"
 ---
 # <a name="deploy-publish-and-upgrade-sharepoint-solution-packages"></a>Wdrażanie, publikowanie i uaktualnianie pakietów rozwiązania SharePoint
   Po opracowaniu rozwiązania SharePoint w programie Visual Studio można wdrożyć jego plik pakietu (wsp) na lokalnym serwerze programu SharePoint lub opublikować go na zdalnym lub lokalnym serwerze programu SharePoint. W przypadku wdrażania plików można dostosować sposób wdrażania plików pakietu (wsp).
@@ -66,5 +66,5 @@ ms.locfileid: "94672668"
 ### <a name="upgrade-published-packages"></a>Uaktualnianie opublikowanych pakietów
  Jeśli wprowadzisz jakiekolwiek zmiany w projekcie programu SharePoint w programie Visual Studio po jego opublikowaniu, należy uaktualnić opublikowany pakiet, aby uwzględnić zmiany. Aby uaktualnienie powiodło się, pakiet musi mieć unikatową nazwę. Jeśli w witrynie programu SharePoint zostanie znaleziony pakiet o tej samej nazwie, który może wystąpić w przypadku aktualizowania istniejącej aplikacji — błąd powoduje wyświetlenie alertu dotyczącego konfliktu nazw plików i pozwala zmienić nazwę pakietu. Po ponownym opublikowaniu nowy pakiet zostanie wyświetlony w witrynie programu SharePoint i będzie można go uaktualnić. Uaktualniony pakiet aktualizuje rozwiązanie przy użyciu danych ze starszego pakietu, a następnie aktywuje rozwiązanie w programie SharePoint. Aby uzyskać więcej informacji, zobacz [jak: wdrażanie, publikowanie i uaktualnianie rozwiązań SharePoint na serwerze zdalnym](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

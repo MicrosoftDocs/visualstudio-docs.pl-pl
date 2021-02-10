@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, debugging extensions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5ad95ce8b4ab9567f22748453ae59c258f24aa86
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 2b098ac007825745e13481592760be9d2badeb55
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671223"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948911"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Debugowanie rozszerzeń dla narzędzi programu SharePoint w programie Visual Studio
   Można debugować rozszerzenia narzędzi programu SharePoint w wystąpieniu eksperymentalnym lub regularnym wystąpieniu programu Visual Studio. Jeśli trzeba rozwiązać problem z zachowaniem rozszerzenia, można również zmodyfikować wartości rejestru, aby wyświetlić dodatkowe informacje o błędzie i skonfigurować sposób wykonywania przez program Visual Studio poleceń programu SharePoint.
@@ -53,7 +53,7 @@ ms.locfileid: "94671223"
 
 3. W oknie dialogowym **Instalator rozszerzenia programu Visual Studio** wybierz wersję programu Visual Studio, w której chcesz zainstalować rozszerzenie, a następnie wybierz przycisk **Instaluj** .
 
-     Program Visual Studio instaluje pliki rozszerzeń w \\ *author name* \\ *rozszerzeniu* nazwy autora%UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions \\ *wersja*. Ostatnie trzy foldery w tej ścieżce są zbudowane z `Author` `Name` elementów, i `Version` w pliku *Extension. vsixmanifest* rozszerzenia.
+     Program Visual Studio instaluje pliki rozszerzeń w \\  \\ *rozszerzeniu* nazwy autora%UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions \\ *wersja*. Ostatnie trzy foldery w tej ścieżce są zbudowane z `Author` `Name` elementów, i `Version` w pliku *Extension. vsixmanifest* rozszerzenia.
 
 4. Po zainstalowaniu rozszerzenia przez program Visual Studio wybierz przycisk **Zamknij** .
 
@@ -130,7 +130,7 @@ ms.locfileid: "94671223"
 |MaxReceivedMessageSize|REG_DWORD określający maksymalny dozwolony rozmiar w bajtach komunikatów WCF, które są przesyłane między programem Visual Studio i *vssphost4.exe*.<br /><br /> Wartość domyślna to 1 048 576 bajtów (1 MB).|
 |MaxStringContentLength|REG_DWORD określający maksymalny dozwolony rozmiar (w bajtach) ciągów, które są przesyłane między programem Visual Studio i *vssphost4.exe*.<br /><br /> Wartość domyślna to 1 048 576 bajtów (1 MB).|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Poszerzanie narzędzi programu SharePoint w programie Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
 - [Wdróż rozszerzenia dla narzędzi programu SharePoint w programie Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)

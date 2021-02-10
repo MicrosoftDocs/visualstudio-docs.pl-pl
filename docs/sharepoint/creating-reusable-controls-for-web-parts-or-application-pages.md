@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, user controls
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2e9d2f3a99e3e43ebf40208bf8dfc01d5ac92dca
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 01d8602971e2a89aef8cf8451d1273fa28c70f05
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850601"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949132"
 ---
 # <a name="create-reusable-controls-for-web-parts-or-application-pages"></a>Tworzenie kontrolek wielokrotnego użytku dla części sieci Web lub stron aplikacji
   W programie Visual Studio można tworzyć niestandardowe kontrolki wielokrotnego użytku, które mogą być używane przez strony aplikacji oraz składniki Web Part, które są uruchamiane w programie SharePoint. Formanty te są nazywane kontrolkami użytkownika. Kontrolka użytkownika to rodzaj kontrolki złożonej, który działa podobnie jak strona sieci Web ASP.NET — można dodać istniejące kontrolki serwera sieci Web i znaczniki do kontrolki użytkownika, a także zdefiniować właściwości i metody dla kontrolki. Następnie można je osadzić na stronach sieci Web ASP.NET, gdzie działają jako jednostka.

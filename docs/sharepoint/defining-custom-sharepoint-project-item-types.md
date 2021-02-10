@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fc2e3670dd734b368795f270fa6c1d63c8c079e8
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 00ee9f41695078d8bea5daacf1c0ccfd392a64cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672837"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948872"
 ---
 # <a name="define-custom-sharepoint-project-item-types"></a>Definiowanie niestandardowych typów elementów projektu SharePoint
   Zdefiniuj nowy typ elementu projektu programu SharePoint, gdy chcesz utworzyć nowy rodzaj elementu projektu programu SharePoint. Na przykład program Visual Studio nie zawiera elementów projektu programu SharePoint do dodawania pól lub akcji niestandardowych do witryny programu SharePoint. Można definiować własne typy elementów projektu programu SharePoint do tworzenia pól, akcji niestandardowych lub innych typów składników programu SharePoint.
@@ -42,7 +42,7 @@ ms.locfileid: "94672837"
 
  Aby uzyskać dostęp do określonego wystąpienia typu elementu projektu, należy obsłużyć jedno z <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> zdarzeń parametru *ProjectItemTypeDefinition* w implementacji <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> metody. Na przykład, aby określić, kiedy element projektu typu niestandardowego zostanie dodany do projektu, obsłużyć <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> zdarzenie. Aby uzyskać więcej informacji, zobacz [How to: define a SharePoint Project Type Item](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: Definiowanie typu elementu projektu SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)
 - [Instrukcje: Dodawanie właściwości do niestandardowego typu elementu projektu SharePoint](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)
 - [Instrukcje: Dodawanie elementu menu skrótów do niestandardowego typu elementu projektu SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md)

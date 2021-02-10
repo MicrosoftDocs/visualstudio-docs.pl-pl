@@ -15,15 +15,15 @@ helpviewer_keywords:
 - application pages [SharePoint development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1228ef551235fd616803d6e05057ee50f0ea7ec4
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 9ecd6573573d76c3e47a2c87a4f455cb9890fb31
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850445"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949184"
 ---
 # <a name="create-application-pages-for-sharepoint"></a>Tworzenie stron aplikacji dla programu SharePoint
   *Strona aplikacji* to strona sieci Web ASP.NET przeznaczona do użycia w witrynie sieci Web programu SharePoint. Strony aplikacji są wyspecjalizowanym typem strony ASP.NET. Główną różnicą między stroną aplikacji a standardową stroną ASP.NET jest to, że Strona aplikacji zawiera zawartość scaloną ze stroną wzorcową programu SharePoint. Strona wzorcowa umożliwia stronom aplikacji udostępnianie tego samego wyglądu i zachowań co inne strony w witrynie.
@@ -73,7 +73,7 @@ ms.locfileid: "94850445"
 
  Możesz jawnie zmienić stronę wzorcową używaną przez ustawienie `MasterPageFile` atrybutu `Page` elementu aplikacji. (Na przykład: `MasterPageFile="~/_layouts/applicationv4.master"` ). W rzeczywistości należy ustawić ten atrybut, jeśli dynamiczne strony główne nie są włączone na serwerze programu SharePoint. Aby uzyskać więcej informacji na temat stron wzorcowych w programie SharePoint, zobacz [stronę wzorcową](/previous-versions/office/developer/sharepoint-2010/ms443795(v=office.14)).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Projektowanie programu SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ee539092(v=office.14))
 - [Omówienie platformy ASP.NET](/aspnet/overview)
 - [ASP.NET Web Pages](/aspnet/web-pages/index)
