@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Domain-Specific Language, serialization
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e889bb81b4c13d003beb15f733d053ef159b197f
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 019f77320e9118d5f3d31e647a59c71bb474d204
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362941"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935538"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>Dostosowywanie przechowywania plików i serializacji XML
 
@@ -81,7 +81,7 @@ Ten model został zapisany, a następnie ponownie otwarty w edytorze tekstu XML:
 
 Zwróć uwagę na następujące kwestie dotyczące serializowanego modelu:
 
-- Każdy węzeł XML ma nazwę, która jest taka sama jak nazwa klasy domeny, z tą różnicą, że inicjał jest pisany małymi literami. Przykład: `familyTreeModel` i `person`.
+- Każdy węzeł XML ma nazwę, która jest taka sama jak nazwa klasy domeny, z tą różnicą, że inicjał jest pisany małymi literami. Na przykład `familyTreeModel` i `person`.
 
 - Właściwości domeny, takie jak Name i BirthYear, są serializowane jako atrybuty w węzłach XML. Ponownie początkowy znak nazwy właściwości jest konwertowany na małe litery.
 

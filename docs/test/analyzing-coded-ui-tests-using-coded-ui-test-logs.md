@@ -5,16 +5,16 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 3dcbb1bdfd89ae13df5174b6502dc6e89437a468
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 41863ccc845b0f74c300e927708e238193f223ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442498"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934861"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analizowanie kodowanych testów interfejsu użytkownika za pomocą dzienników kodowanych testów interfejsu użytkownika
 
@@ -73,7 +73,7 @@ Po uruchomieniu kodowanego testu interfejsu użytkownika przy użyciu modyfikacj
      Testy automatyczne są uruchamiane i wskazują, czy zakończyły się powodzeniem, czy nie.
 
     > [!TIP]
-    > Aby wyświetlić **Eksplorator testów**, wybierz **Test** pozycję  >  **Windows** test, a następnie wybierz **Eksplorator testów**.
+    > Aby wyświetlić **Eksplorator testów**, wybierz pozycję  >  **Windows** test, a następnie wybierz **Eksplorator testów**.
 
 4. Wybierz łącze **dane wyjściowe** w wynikach programu **Test Explorer** .
 
@@ -89,7 +89,7 @@ Po uruchomieniu kodowanego testu interfejsu użytkownika przy użyciu modyfikacj
 
      ![Plik dziennika kodowanego testu interfejsu użytkownika](../test/media/cuit_htmlactionlog3.png)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)
 - [Instrukcje: uruchamianie testów z Microsoft Visual Studio](/previous-versions/ms182470(v=vs.140))

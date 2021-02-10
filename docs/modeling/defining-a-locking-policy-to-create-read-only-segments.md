@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a76ae38b686e1c77acd9561e9c48fd3444565b0a
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: aa7590689b4d7acdb7a7ebe501584ed6a8bd41bf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363201"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935420"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definiowanie zasad blokowania na potrzeby tworzenia segmentów tylko do odczytu
 Interfejs API niezmienności w programie Visual Studio Wizualizacja i Modeling SDK umożliwia programowi zablokowanie części lub całego modelu języka specyficznego dla domeny (DSL), który może być odczytywany, ale nie zmieniany. Tej opcji tylko do odczytu można na przykład użyć, aby użytkownik mógł poproś współpracowników o dodawanie adnotacji i przeglądanie modelu DSL, ale może uniemożliwić im zmianę oryginalnego.

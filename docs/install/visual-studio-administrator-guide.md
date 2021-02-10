@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: 4af353f5-6cfd-4ebe-bcfb-f42306e451a0
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ea12076e41185e9de4ee10afe3056ff97403d6ea
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: ecf1dc0332a023a67f2627d852ee56a092830b7e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190213"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935615"
 ---
 # <a name="visual-studio-administrator-guide"></a>Podręcznik administratora programu Visual Studio
 
@@ -30,7 +30,7 @@ W środowiskach korporacyjnych Administratorzy systemu zwykle wdrażają instala
 
 Ten przewodnik administratora zawiera wskazówki dotyczące scenariusza wdrożenia przedsiębiorstwa w środowiskach sieciowych.
 
-## <a name="before-you-begin"></a>Przed rozpoczęciem
+## <a name="before-you-begin"></a>Zanim rozpoczniesz
 
 Przed wdrożeniem programu Visual Studio w całej organizacji należy wykonać kilka decyzji i wykonać zadania:
 
@@ -40,11 +40,11 @@ Przed wdrożeniem programu Visual Studio w całej organizacji należy wykonać k
 
 * Zdecyduj na potrzeby obsługi.
 
-  Jeśli firma musi pozostać w zestawie funkcji dłużej, ale nadal chce uzyskać regularne aktualizacje obsługi, należy zaplanować użycie podstawy obsługi. Aby uzyskać więcej informacji, zapoznaj się z sekcją ***Opcje pomocy technicznej dla klientów Enterprise i Professional** _ na stronie [cykl życia i obsługa produktu Visual Studio](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers) , a także [Aktualizowanie programu Visual Studio na stronie odniesienia obsługi](update-servicing-baseline.md) .
+  Jeśli firma musi pozostać w zestawie funkcji dłużej, ale nadal chce uzyskać regularne aktualizacje obsługi, należy zaplanować użycie podstawy obsługi. Aby uzyskać więcej informacji, zobacz sekcję ***Opcje pomocy technicznej dla klientów w wersji Enterprise i Professional*** na stronie [cykl życia produktu Visual Studio i obsługa](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers) , a także [Aktualizowanie programu Visual Studio na stronie odniesienia obsługi](update-servicing-baseline.md) .
 
   Jeśli planujesz zastosować aktualizacje obsługi razem z aktualizacjami funkcji zbiorczych, możesz wybrać najnowsze bity.
 
-_ Decyduje o modelu aktualizacji.
+* Wybierz model aktualizacji.
 
   Gdzie poszczególne komputery klienckie mają pobierać aktualizacje? W celu zadecydowania, czy chcesz otrzymywać aktualizacje z Internetu, czy z udziału lokalnego w całej firmie. Następnie, jeśli zdecydujesz się użyć udziału lokalnego, zdecyduj, czy indywidualni użytkownicy mogą zaktualizować swoich klientów, czy chcesz programowo aktualizować klientów.
 
@@ -66,11 +66,11 @@ _ Decyduje o modelu aktualizacji.
 
 * Zdecyduj na potrzeby obsługi.
 
-  Jeśli firma musi pozostać w zestawie funkcji dłużej, ale nadal chce uzyskać regularne aktualizacje obsługi, należy zaplanować użycie podstawy obsługi. Aby uzyskać więcej informacji, zapoznaj się z sekcją ***Obsługa starszych wersji programu Visual Studio** _ na stronie [cykl życia i obsługa produktu Visual Studio](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio) , a także [Aktualizowanie programu Visual Studio na stronie odniesienia obsługi](update-servicing-baseline.md) .
+  Jeśli firma musi pozostać w zestawie funkcji dłużej, ale nadal chce uzyskać regularne aktualizacje obsługi, należy zaplanować użycie podstawy obsługi. Aby uzyskać więcej informacji, zobacz sekcję ***Obsługa starszych wersji programu Visual Studio*** na stronie [cykl życia produktu Visual Studio, a](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio) także [Aktualizowanie programu Visual Studio na stronie odniesienia obsługi](update-servicing-baseline.md) .
 
   Jeśli planujesz zastosować aktualizacje obsługi razem z aktualizacjami funkcji zbiorczych, możesz wybrać najnowsze bity.
 
-_ Decyduje o modelu aktualizacji.
+* Wybierz model aktualizacji.
 
   Gdzie poszczególne komputery klienckie mają pobierać aktualizacje? W celu zadecydowania, czy chcesz otrzymywać aktualizacje z Internetu, czy z udziału lokalnego w całej firmie. Następnie, jeśli zdecydujesz się użyć udziału lokalnego, zdecyduj, czy indywidualni użytkownicy mogą zaktualizować swoich klientów, czy chcesz programowo aktualizować klientów.
 

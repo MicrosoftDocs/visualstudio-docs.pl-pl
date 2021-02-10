@@ -14,15 +14,15 @@ helpviewer_keywords:
 - text templates, generating code for your application
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 698dde24cb66d27a12a0f8785c8ac97e4cfb0eb0
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 11c9384d03971f475abbe680f6731d2757cbb195
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363812"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935303"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4
 

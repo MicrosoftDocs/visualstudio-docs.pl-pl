@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 20dc9b6ac1bd4e565fd10793889c611f9b039778
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 324037010e642ab4e96f6efea5da0f232c9bd530
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363175"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935069"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Rozszerzanie DSL za pomocą MEF
 
@@ -131,7 +131,7 @@ Jeśli masz dostęp do MEF DSL utworzonego przez siebie lub inną osobę, możes
 
    - Ten zestaw ma zwykle nazwę kończącą się ciągiem ".Dsl.dll".
 
-   - Jeśli masz dostęp do projektu DSL, możesz znaleźć plik zestawu w katalogu **\\ \\ \* bin DSL* _
+   - Jeśli masz dostęp do projektu DSL, możesz znaleźć plik zestawu w **\\ \\ \* koszu katalogu DSL**
 
    - Jeśli masz dostęp do pliku VSIX DSL, możesz znaleźć zestaw, zmieniając rozszerzenie nazwy pliku VSIX na ". zip". Dekompresowanie pliku zip.
 
@@ -147,7 +147,7 @@ Jeśli masz dostęp do MEF DSL utworzonego przez siebie lub inną osobę, możes
 
    - System.Windows.Forms.dll
 
-4. Utwórz nowy obiekt _ *Project** Project.
+4. Utwórz nowy projekt **projektu VSIX** .
 
 5. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt VSIX i wybierz polecenie **Ustaw jako projekt startowy**.
 
@@ -159,11 +159,11 @@ Jeśli masz dostęp do MEF DSL utworzonego przez siebie lub inną osobę, możes
 
    1. W polu **source. Extension. vsixmanifest** kliknij pozycję **Dodaj odwołanie** .
 
-   2. W oknie dialogowym kliknij pozycję **Dodaj ładunek** , a następnie Znajdź plik VSIX DSL. Plik VSIX jest skompilowany w rozwiązaniu DSL, w **DslPackage \\ bin \\ \** _.
+   2. W oknie dialogowym kliknij pozycję **Dodaj ładunek** , a następnie Znajdź plik VSIX DSL. Plik VSIX jest skompilowany w rozwiązaniu DSL w **DslPackage \\ bin \\ \***.
 
        Dzięki temu użytkownicy mogą instalować jednocześnie DSL i Twoje rozszerzenie. Jeśli użytkownik zainstalował już modem DSL, zostanie zainstalowane tylko rozszerzenie.
 
-9. Przejrzyj i zaktualizuj pozostałe pola _ * source. Extension. vsixmanifest * *. Kliknij pozycję **Wybierz wersje** i sprawdź, czy są ustawione poprawne wersje programu Visual Studio.
+9. Przejrzyj i zaktualizuj pozostałe pola **source. Extension. vsixmanifest**. Kliknij pozycję **Wybierz wersje** i sprawdź, czy są ustawione poprawne wersje programu Visual Studio.
 
 10. Dodaj kod do projektu biblioteki klas. Skorzystaj z przykładów w następnej sekcji jako przewodnika.
 

@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6effda90580a184bb8ebfb8c4f4830dc6cb844d5
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 42819379aa2b21788686bf0917b1523bf77e6c64
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362863"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935368"
 ---
 # <a name="customizing-text-and-image-fields"></a>Dostosowywanie pól tekstowych i obrazu
 Po zdefiniowaniu dekoratora tekstu w kształcie jest on reprezentowany przez TextField. Aby zapoznać się z przykładami inicjalizacji textfields i innych ShapeFields, należy sprawdzić Dsl\GeneratedCode\Shapes.cs w rozwiązaniu DSL.

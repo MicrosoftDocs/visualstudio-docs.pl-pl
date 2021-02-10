@@ -14,15 +14,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Environment.ProductUpdates
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 01bc8fe18ff32d5da3f56eb39465b3fc696239b4
-ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
+ms.openlocfilehash: d087ed0a43296f77ca934671f63f716bf6ddfae8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92007181"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935719"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Aktualizowanie programu Visual Studio do najnowszej wersji
 
@@ -94,7 +94,7 @@ Tak jak w starszych wersjach programu Visual Studio, można użyć Instalator pr
 1. Otwórz instalatora. Przed kontynuowaniem Instalator programu Visual Studio mogą wymagać aktualizacji.
 
    > [!NOTE]
-   > Na komputerze z systemem Windows 10 można znaleźć instalatora pod literą **V** jako **Instalator programu Visual Studio**lub pod literą **M** jako **Instalator Microsoft Visual Studio**.
+   > Na komputerze z systemem Windows 10 można znaleźć instalatora pod literą **V** jako **Instalator programu Visual Studio** lub pod literą **M** jako **Instalator Microsoft Visual Studio**.
 
 1. Na stronie **produkt** w instalatorze zapoznaj się z wcześniej zainstalowaną wersją programu Visual Studio.
 
@@ -150,7 +150,7 @@ Jeśli wybierzesz ignorowanie powiadomienia, program Visual Studio zatrzyma go. 
 1. Otwórz instalatora. Przed kontynuowaniem może być konieczne zaktualizowanie Instalatora. W takim przypadku zostanie wyświetlony monit, aby to zrobić.
 
    > [!NOTE]
-   > Na komputerze z systemem Windows 10 można znaleźć instalatora pod literą **V** jako **Instalator programu Visual Studio**lub pod literą **M** jako **Instalator Microsoft Visual Studio**.
+   > Na komputerze z systemem Windows 10 można znaleźć instalatora pod literą **V** jako **Instalator programu Visual Studio** lub pod literą **M** jako **Instalator Microsoft Visual Studio**.
 
 1. Na stronie **produkt** w instalatorze zapoznaj się z wersją programu Visual Studio, która została zainstalowana wcześniej.
 
@@ -212,7 +212,7 @@ Możesz sprawdzić dostępność aktualizacji, a następnie zainstalować ją za
 
     ![Otwórz program Visual Studio 2019](media/vs-2019/vs-installer-visual-studio-2019.png "Otwórz program Visual Studio 2019 w systemie Windows")
 
-1. W obszarze **wprowadzenie**wybierz dowolną opcję, aby otworzyć środowisko IDE.
+1. W obszarze **wprowadzenie** wybierz dowolną opcję, aby otworzyć środowisko IDE.
 
     ![Otwórz Instalator programu Visual Studio](media/vs2019-choose-option-from-get-started.png "Otwórz Instalator programu Visual Studio")
 
@@ -253,7 +253,7 @@ Możesz sprawdzić dostępność aktualizacji, a następnie zainstalować ją za
 
    ![Ikona powiadomienia w środowisku IDE programu Visual Studio](media/vs-2019/notification-bar.png "Ikona powiadomienia w środowisku IDE programu Visual Studio")
 
-1. W **centrum powiadomień**wybierz aktualizację, którą chcesz zainstalować, a następnie wybierz pozycję **Wyświetl szczegóły**.
+1. W **centrum powiadomień** wybierz aktualizację, którą chcesz zainstalować, a następnie wybierz pozycję **Wyświetl szczegóły**.
 
      ![Centrum powiadomień w programie Visual Studio 2019](media/vs-2019/notification-hub-update.png "Centrum powiadomień w programie Visual Studio 2019")
 

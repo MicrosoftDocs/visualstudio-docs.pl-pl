@@ -14,15 +14,15 @@ helpviewer_keywords:
 - worksheets, hiding controls when printing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: acc90986dd394e69de12893aac01e0a4f662b1a3
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: d87da5c22969fc355fe473e9505c61429b8023f3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846496"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934809"
 ---
 # <a name="how-to-hide-controls-on-worksheets-when-printing"></a>Instrukcje: ukrywanie kontrolek w arkuszach podczas drukowania
   Podczas drukowania Microsoft Office dokumentu programu Excel, który zawiera kontrolki Windows Forms, formanty są widoczne w arkuszu wydrukowanym. Kontrolki można ukryć podczas drukowania arkusza.
@@ -43,7 +43,7 @@ ms.locfileid: "96846496"
 
 3. W oknie **Właściwości** Ustaw <xref:Microsoft.Office.Tools.Excel.Controls.Button.PrintObject%2A> Właściwość na **false**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Formanty w dokumentach pakietu Office](../vsto/controls-on-office-documents.md)
 - [Kontrolki Windows Forms w dokumentach pakietu Office — omówienie](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [Instrukcje: Dodawanie formantów Windows Forms do dokumentów pakietu Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)

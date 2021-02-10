@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 362a0c7e-5729-4297-a83f-1aba1a37fd44
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: eaf0a089c10c850c14b9ba2f807a69eada5d04b9
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: b9f37bd14ed43ab0e165346f8ce09512c3981177
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597655"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934367"
 ---
 # <a name="add-icons-to-menu-commands"></a>Dodawanie ikon do poleceń menu
 Polecenia mogą znajdować się zarówno w menu, jak i na paskach narzędzi. Na paskach narzędzi wspólne polecenie jest wyświetlane z ikoną (aby zaoszczędzić miejsce) w menu, a polecenie zazwyczaj pojawia się zarówno w przypadku ikony, jak i tekstu.
@@ -83,6 +83,6 @@ Polecenia mogą znajdować się zarówno w menu, jak i na paskach narzędzi. Na 
 
 8. Przetestuj ikonę. Skompiluj projekt i Rozpocznij debugowanie. W eksperymentalnym wystąpieniu Znajdź polecenie. Powinna zostać wyświetlona ikona, która została dodana.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Rozszerzanie menu i poleceń](../extensibility/extending-menus-and-commands.md)
 - [Dokumentacja schematu XML VSCT](../extensibility/vsct-xml-schema-reference.md)

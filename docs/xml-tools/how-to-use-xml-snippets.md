@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 3a27375b-81cc-48f6-a884-e1cb8c4f78f5
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bebca3a27d11015388e45ff6839f446506e716c
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 4ada7beb72c27594b637b2c090c96581d4a6eb49
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970602"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934575"
 ---
 # <a name="how-to-use-xml-snippets"></a>Instrukcje: używanie fragmentów kodu XML
 
@@ -54,11 +54,11 @@ W poniższych procedurach opisano sposób uzyskiwania dostępu do polecenia **Ws
 
 1. Umieść kursor w miejscu, w którym chcesz wstawić fragment kodu XML.
 
-2. Rozpocznij wpisywanie fragmentu kodu XML, który chcesz dodać do pliku. Jeśli automatyczne uzupełnianie jest włączone, zostanie wyświetlona lista wyrazów uzupełniających IntelliSense. Jeśli nie jest wyświetlany, naciśnij klawisz **Ctrl**, + **Space** aby go uaktywnić.
+2. Rozpocznij wpisywanie fragmentu kodu XML, który chcesz dodać do pliku. Jeśli automatyczne uzupełnianie jest włączone, zostanie wyświetlona lista wyrazów uzupełniających IntelliSense. Jeśli nie jest wyświetlany, naciśnij klawisz **Ctrl**, +  aby go uaktywnić.
 
 3. Wybierz fragment kodu XML z listy kompletny wyraz.
 
-4. Naciśnij **Tab** klawisz Tab **, aby** wywołać fragment kodu XML.
+4. Naciśnij klawisz Tab **, aby** wywołać fragment kodu XML.
 
 > [!NOTE]
 > W przypadku braku wywołania fragmentu kodu XML mogą wystąpić przypadki. Na przykład, jeśli spróbujesz wstawić `xs:complexType` element wewnątrz `xs:element` węzła, Edytor nie generuje FRAGMENTU kodu XML. Gdy `xs:complexType` element jest używany wewnątrz `xs:element` węzła, nie ma wymaganych atrybutów ani podelementów, więc Edytor nie ma żadnych danych do wstawienia.
@@ -104,7 +104,7 @@ W poniższych procedurach opisano, jak uzyskać dostęp do polecenia **przestrze
 
 Po wybraniu fragmentu kodu XML tekst wstawki zostanie automatycznie wstawiony w pozycji kursora. Wszystkie pola edytowalne w fragmencie kodu są wyróżnione i pierwsze pole można edytować automatycznie. Aktualnie wybrane pole jest opakowane.
 
-Gdy pole jest zaznaczone, można wpisać nową wartość pola. Naciskanie **tabulatorów** za pomocą pól edytowalnych fragmentu kodu; naciśnięcie klawisza **SHIFT** powoduje + **Tab** przechodzenie między nimi w odwrotnej kolejności. Kliknięcie pola powoduje umieszczenie kursora w polu, a następnie dwukrotne kliknięcie pola. Gdy pole zostanie wyróżnione, może zostać wyświetlona etykietka narzędzia zawierająca opis pola.
+Gdy pole jest zaznaczone, można wpisać nową wartość pola. Naciskanie **tabulatorów** za pomocą pól edytowalnych fragmentu kodu; naciśnięcie klawisza **SHIFT** powoduje +  przechodzenie między nimi w odwrotnej kolejności. Kliknięcie pola powoduje umieszczenie kursora w polu, a następnie dwukrotne kliknięcie pola. Gdy pole zostanie wyróżnione, może zostać wyświetlona etykietka narzędzia zawierająca opis pola.
 
 Tylko pierwsze wystąpienie danego pola jest edytowalne. W przypadku zaznaczenia tego pola są podane inne wystąpienia tego pola. Gdy zmienisz wartość pola edytowalnego, to pole jest zmieniane wszędzie tam, gdzie jest używane w fragmencie kodu.
 

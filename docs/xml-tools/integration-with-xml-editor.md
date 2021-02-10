@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 43d7a8e6-bd94-4407-a800-15a145c74223
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9569e33f8f9f861bc5d89030c6fe38b0ab853a6f
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 9fe1bfcd422dbfc5f010ae7819e2fccbeafb8227
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400190"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934627"
 ---
 # <a name="integration-with-xml-editor"></a>Integracja z edytorem XML
 
@@ -23,7 +23,7 @@ Projektant schematu XML jest zintegrowany z edytorem XML. Jeśli zmodyfikujesz p
 
 - W edytorze XML kliknij prawym przyciskiem myszy węzeł i wybierz polecenie **Pokaż w Eksploratorze schematu XML**.
 
-- W widoku wykresu i w **Eksploratorze schematu XML** , kliknij dwukrotnie węzeł, lub kliknij prawym przyciskiem myszy węzeł i wybierz polecenie **Wyświetl kod**. W widoku model zawartości kliknij prawym przyciskiem myszy węzeł i wybierz polecenie **Wyświetl kod**.
+- W widoku wykresu i w **Eksploratorze schematu XML**, kliknij dwukrotnie węzeł, lub kliknij prawym przyciskiem myszy węzeł i wybierz polecenie **Wyświetl kod**. W widoku model zawartości kliknij prawym przyciskiem myszy węzeł i wybierz polecenie **Wyświetl kod**.
 
 Poniższy zrzut ekranu przedstawia schemat XML otwarty w **Eksploratorze schematu XML**. **Eksplorator schematu XML** Wyświetla zestaw schematów w widoku drzewa. Edytor XML Wyświetla widok tekstu węzła, który jest obecnie aktywny w **Eksploratorze schematu XML**.
 

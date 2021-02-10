@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, resource files
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 440777aaaf239dcdd3c276786a82e3d8aef55070
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 22b5638f7251b34c74da348e55e755cd27132aff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850133"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934848"
 ---
 # <a name="how-to-add-a-resource-file"></a>Instrukcje: Dodawanie pliku zasobów
   Polecenia służące do dodawania plików zasobów znajduje się w menu skrótów węzła rozwiązania i funkcji w Eksplorator rozwiązań. Aby uzyskać więcej informacji, zobacz [Lokalizowanie rozwiązań SharePoint](../sharepoint/localizing-sharepoint-solutions.md).
@@ -52,5 +52,5 @@ ms.locfileid: "94850133"
 
 3. Gdy **Edytor zasobów** zostanie otwarty w programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , Dodaj zasoby do pliku zasobów.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)
