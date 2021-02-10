@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 3fcdccad-c1bd-4c67-bcec-bf33a8fb5d63
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bd8f90c586366a298ba96009dfe5d87a042141b
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 7bf1d90e4c56e0768faa0dd2e877f0d2bcb1eb5d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970299"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950185"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Uruchamianie narzędzi profilowania z debugerem lub bez debugera
 
@@ -47,7 +47,7 @@ Po rozpoczęciu debugowania w programie Visual Studio, wybierając **Debuguj**  
 
 - Wybierz pozycję **Ustawienia** na liście rozwijanej **Ustawienia** , aby otworzyć **Narzędzia diagnostyczne strony właściwości** z więcej opcji.
 
-- Jeśli używasz Visual Studio Enterprise, możesz włączyć lub wyłączyć IntelliTrace, przechodząc do opcji **Narzędzia**  >  **Options**  >  **IntelliTrace**.
+- Jeśli używasz Visual Studio Enterprise, możesz włączyć lub wyłączyć IntelliTrace, przechodząc do opcji **Narzędzia**  >    >  **IntelliTrace**.
 
 Sesja diagnostyczna zostanie zakończona po zatrzymaniu debugowania.
 

@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: 874c3b1c-88d8-479a-bb35-1291d9aa8e67
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d1cf1d9d7afeef8962026739116f75d4289d6283
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 535b87a7bfd87a0d3932f33370cf31510787d7e5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98718801"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949353"
 ---
 # <a name="thread-details-view---contention-data"></a>Widok szczegółów wątku — dane rywalizacji
 Widok Szczegóły wątku przedstawia wykres osi czasu dla zdarzeń blokowania w wybranym wątku przebiegu profilowania, który został spowodowany przez rywalizację o zasoby. Zdarzenie blokujące występuje, gdy wątek jest zmuszony do wstrzymania wykonywania, ponieważ inny wątek zablokował dostęp do zasobu.

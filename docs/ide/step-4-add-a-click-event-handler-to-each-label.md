@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 16bdbc7c-4129-411d-bace-f4a3e5375975
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f620b097e2a565bbacf3322d03385aa70fd0356f
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 0f37d0f89ad5124956198df1bde94bdb6cf54f64
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480606"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950682"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>Krok 4. Dodawanie obsługi zdarzeń kliknięcia do każdej etykiety
 
@@ -36,7 +36,7 @@ Gra w dopasowywanie działa w następujący sposób:
 
 ## <a name="to-add-a-click-event-handler-to-each-label"></a>Aby dodać program obsługi zdarzeń kliknięcia do każdej etykiety
 
-1. Otwórz formularz w **Projektant formularzy systemu Windows**. W **Eksplorator rozwiązań** wybierz pozycję *Form1.cs* lub *Form1. vb*. Na pasku menu wybierz polecenie Projektant **widoków**  >  **Designer**.
+1. Otwórz formularz w **Projektant formularzy systemu Windows**. W **Eksplorator rozwiązań** wybierz pozycję *Form1.cs* lub *Form1. vb*. Na pasku menu wybierz polecenie Projektant **widoków**  >  .
 
 2. Wybierz pierwszy formant etykiety, aby go zaznaczyć. Następnie naciśnij i przytrzymaj klawisz **Ctrl** podczas wybierania każdej z pozostałych etykiet, aby je wybrać. Pamiętaj, że każda etykieta jest zaznaczona.
 

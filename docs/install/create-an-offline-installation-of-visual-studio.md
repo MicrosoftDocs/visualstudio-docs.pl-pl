@@ -11,17 +11,17 @@ f1_keywords:
 ms.assetid: f8625d5e-f6ea-4db0-83c0-619b77fab3cf
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 1c658d97ed678950869c9a011af04e04eeacf5b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2e4a7e0f9335971bb026ccc1c6b977680d9e3121
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86156822"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949561"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Tworzenie instalacji w trybie offline programu Visual Studio
 
@@ -136,7 +136,7 @@ Otwórz wiersz polecenia i użyj jednego z poleceń z poniższych przykładów. 
     vs_community.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.NativeDesktop --includeRecommended --lang en-US
     ```
 
-- Aby utworzyć pełny układ lokalny ze wszystkimi funkcjami (to długo zajmuje dużo &mdash; funkcji!), uruchom _lots_ następujące polecenie:
+- Aby utworzyć pełny układ lokalny ze wszystkimi funkcjami (to długo zajmuje dużo &mdash; funkcji!), uruchom  następujące polecenie:
 
    ```cmd
     vs_community.exe --layout c:\vslayout --lang en-US
@@ -192,7 +192,7 @@ Aby uzyskać więcej przykładów użycia [parametrów wiersza polecenia](use-co
 | ----------------------- | --------------- |
 | cs-CZ | Czeski |
 | de-DE | Niemiecki |
-| pl-PL | Angielski |
+| en-US | Angielski |
 | es-ES | Hiszpański |
 | fr-FR | Francuski |
 | it-IT | Włoski |

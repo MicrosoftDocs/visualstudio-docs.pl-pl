@@ -13,16 +13,16 @@ helpviewer_keywords:
 - ADO.NET performance profiling
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 768cb173bca578c440e3209fe7b7a1df60fab1be
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: e2b20a403d2c56dd239ddaf81d2a32905ca4aed5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98533683"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950237"
 ---
 # <a name="collect-tier-interaction-data"></a>Zbieranie danych o interakcji między warstwami
 
@@ -48,6 +48,6 @@ Ze względu na usterkę w Kreatorze wydajności należy dodać opcję zbierania 
 
 3. W Eksplorator wydajności Wybierz węzeł **targets** , a następnie określ projekt, plik wykonywalny lub witrynę sieci Web, którą chcesz profilować.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 [Widok interakcji między warstwami](../profiling/tier-interactions-view.md)

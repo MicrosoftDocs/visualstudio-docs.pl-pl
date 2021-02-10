@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 1761311d-c9d5-48f5-b1f8-b3605829940a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1522cdfadb5de20a2413f584c710baca15883f9c
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 6a2fee1e5c7a091af1ed996d374f4ed7e60b8f2f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719841"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949925"
 ---
 # <a name="startprofile"></a>StartProfile
 `StartProfile`Funkcja ustawia licznik na 1 (włączony) dla określonego poziomu profilowania.
@@ -108,5 +108,5 @@ void ExerciseStartProfile()
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dokumentacja interfejsu API programu Visual Studio profiler (natywna)](../profiling/visual-studio-profiler-api-reference-native.md)

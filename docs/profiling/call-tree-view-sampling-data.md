@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: 5c4e8ec3-d0d3-485a-93bd-9060df4eb739
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fc7493d20d09ebd606e3a6ec8e5271981fb6f62
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: c3a2f54f9cdd576a5c4d90c3a471febe516e6549
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150525"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950276"
 ---
 # <a name="call-tree-view---sampling-data"></a>Widok drzewa wywołań — dane próbkowania
 W widoku drzewa wywołań są wyświetlane ścieżki wykonywania funkcji, które zostały przesunięte w profilowanej aplikacji.
@@ -55,7 +55,7 @@ W widoku drzewa wywołań są wyświetlane ścieżki wykonywania funkcji, które
 |**Próbki włączne**|Liczba próbek zebranych w tej funkcji, gdy została wywołana przez funkcję nadrzędną w drzewie wywołań. Ta liczba zawiera próbki, które zostały zebrane w funkcjach, które zostały wywołane przez funkcję.|
 |**Próbki włączne%**|Wartość procentowa wszystkich próbek w przebiegu profilowania, które były włączonych próbek tej funkcji, gdy została wywołana przez funkcję nadrzędną w drzewie wywołań.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)
 - [Widok drzewa wywołań — dane próbkowania profilera](../profiling/call-Tree-view-sampling-data.md)
 - [Widok drzewa wywołań — próbkowanie](../profiling/call-tree-view-dotnet-memory-sampling-data.md)

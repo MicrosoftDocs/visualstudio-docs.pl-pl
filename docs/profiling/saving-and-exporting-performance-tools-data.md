@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 2e9b28fe-3ed2-4e1d-b9cb-0a5e384380b0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b340abd81cef7183c2ba25af58ae432d8c80e6a
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: fa43d324f23958c9dc9b72447527ecd035e99c53
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720156"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950107"
 ---
 # <a name="save-and-export-performance-tools-data"></a>Zapisywanie i eksportowanie danych dotyczących narzędzi wydajności
 W tym artykule opisano sposób zapisywania i eksportowania plików danych dotyczących wydajności.
@@ -89,7 +89,7 @@ W tym artykule opisano sposób zapisywania i eksportowania plików danych dotycz
 
      Każdy widok raportu jest zapisywany w osobnym pliku o nazwie \<prefix> _ \<report view name> .\<csv&#124;xml>
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Eksplorator wydajności](../profiling/performance-explorer.md)
 - [Analizowanie danych dotyczących narzędzi do oceny wydajności](../profiling/analyzing-performance-tools-data.md)
 - [Porównywanie plików danych dotyczących wydajności](../profiling/comparing-performance-data-files.md)

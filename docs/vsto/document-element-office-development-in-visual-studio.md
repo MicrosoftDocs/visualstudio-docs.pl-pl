@@ -13,15 +13,15 @@ helpviewer_keywords:
 - <document> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 36d822d60d1a28d48f660f6d358b75bf4a913048
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e92c17d71b1c0959cb1918ce6fbad0e2cd44d5ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63000026"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949834"
 ---
 # <a name="ltdocumentgt-element-office-development-in-visual-studio"></a>&lt;Document — &gt; element (Programowanie Office w Visual Studio)
   `document`Element `vstov4` przestrzeni nazw przechowuje informacje specyficzne dla dostosowywania dla dostosowań na poziomie dokumentu.
@@ -37,7 +37,7 @@ ms.locfileid: "63000026"
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`solutionId`|Wymagany. Identyfikator GUID używany przez Visual Studio Tools dla środowiska uruchomieniowego pakietu Office w celu jednoznacznego zidentyfikowania rozwiązania na poziomie dokumentu. Ta wartość jest przechowywana jako _AssemblyLocation Właściwość dokumentu niestandardowego. Aby uzyskać więcej informacji, zobacz [niestandardowe właściwości dokumentu — Omówienie](../vsto/custom-document-properties-overview.md).|
+|`solutionId`|Wymagane. Identyfikator GUID używany przez Visual Studio Tools dla środowiska uruchomieniowego pakietu Office w celu jednoznacznego zidentyfikowania rozwiązania na poziomie dokumentu. Ta wartość jest przechowywana jako _AssemblyLocation Właściwość dokumentu niestandardowego. Aby uzyskać więcej informacji, zobacz [niestandardowe właściwości dokumentu — Omówienie](../vsto/custom-document-properties-overview.md).|
 
  `document` nie ma elementów podrzędnych.
 

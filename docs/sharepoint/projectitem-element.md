@@ -11,15 +11,15 @@ helpviewer_keywords:
 - ProjectItem element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3e211aa44b1402d6667fc3e02ca7e271a29c3ec7
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 2b94b44bfa442805c4c785a48c9f60f56eb8e002
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305048"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950591"
 ---
 # <a name="projectitem-element"></a>ProjectItem — element
   Reprezentuje element projektu programu SharePoint. Ten element jest wymaganym elementem głównym pliku *. spdata* .
