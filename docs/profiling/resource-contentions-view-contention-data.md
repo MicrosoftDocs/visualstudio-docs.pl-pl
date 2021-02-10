@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: 14a7f774-211f-4ef8-af05-94d1c8f65d2f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fc8e6c39efea24ac8a4a493099f3bcdb39dc4fe6
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: eac43dca403479d4a19ee9bbf9d5291f4db3aad0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720348"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952697"
 ---
 # <a name="resource-contentions-view---contention-data"></a>Widok rywalizacji o zasoby — dane rywalizacji
 Widok rywalizacji o zasoby zawiera listę danych dotyczących zawartości dla zasobów, które były źródłem zdarzeń rywalizacji. Zdarzenie rywalizacji występuje, gdy funkcja w wątku jest zmuszona do oczekiwania na dostęp do zasobu, ponieważ funkcja w innym wątku uzyskała wyłączny dostęp do zasobu. Każdy zasób jest węzłem głównym drzewa wywołań, który wyświetla ścieżki wykonywania funkcji, które spowodowały zdarzenia rywalizacji.

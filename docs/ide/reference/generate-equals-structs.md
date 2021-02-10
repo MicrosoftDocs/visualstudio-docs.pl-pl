@@ -6,15 +6,15 @@ ms.date: 05/12/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 28d70c0ea95c9373eb87e6199d53f1b43fadd508
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 05792636e1094c53869f0235145aec73b26deea9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96617204"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952983"
 ---
 # <a name="generate-iequatable-operators-when-generating-equals-for-structs"></a>Generuj operatory IEquatable podczas generowania elementu Equals dla struktur
 
@@ -48,7 +48,7 @@ Ta generacja kodu ma zastosowanie do:
 
 3. Wybierz pozycję **Generuj wartość Equals (obiekt)** z menu rozwijanego.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Generowanie kodu](../code-generation-in-visual-studio.md)
 - [Podgląd zmian](../../ide/preview-changes.md)

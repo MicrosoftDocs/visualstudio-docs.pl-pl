@@ -25,21 +25,21 @@ f1_keywords:
 ms.assetid: 085913b8-a97b-45f7-85fa-bbb0902f3ee9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: efe1486cf8ac2b64965ed157abbb47dc2d8c7b6c
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: c54ce24025f9ec15bc03d02825e961f9a03f3715
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947794"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952957"
 ---
 # <a name="file-properties-javascript"></a>Właściwości pliku, JavaScript
 
 Właściwości pliku można użyć, aby wskazać, jakie akcje powinien wykonać system projektu na plikach. Na przykład można ustawić właściwości pliku, aby wskazać, czy plik ma zostać dodany do pakietu jako plik zasobów.
 
-Możesz wybrać dowolny plik w Eksplorator rozwiązań a następnie przejrzeć jego właściwości w okno Właściwości. Pliki JavaScript mają cztery właściwości: **Kopiuj do katalogu wyjściowego**, **akcji pakietu**, **nazwy pliku**i **ścieżki pliku**.
+Możesz wybrać dowolny plik w Eksplorator rozwiązań a następnie przejrzeć jego właściwości w okno Właściwości. Pliki JavaScript mają cztery właściwości: **Kopiuj do katalogu wyjściowego**, **akcji pakietu**, **nazwy pliku** i **ścieżki pliku**.
 
 ## <a name="file-properties"></a>Właściwości pliku
 W tej sekcji opisano właściwości typowe dla plików JavaScript.

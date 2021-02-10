@@ -7,15 +7,15 @@ ms.date: 02/05/2019
 ms.topic: quickstart
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f80dd85e1cc8f93784ed938ef1788730b3c926e8
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: 2dd480bb214acf2529d271d085711f21effea23a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947820"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952931"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Pierwsze spojrzenie na środowisko IDE programu Visual Studio
 
@@ -53,7 +53,7 @@ Opcja **Kontynuuj bez kodu** po prostu otwiera środowisko programistyczne progr
 
 ## <a name="start-page"></a>Strona początkowa
 
-Pierwsze czynności, które zobaczysz po uruchomieniu programu Visual Studio, prawdopodobnie na **stronie początkowej**. **Strona startowa** jest zaprojektowana jako "centrum", aby pomóc w znalezieniu poleceń i plików projektu, które są potrzebne szybciej. W sekcji ostatnie są wyświetlane ostatnio **używane** projekty i foldery. W obszarze **Nowy projekt**można kliknąć link, aby wyświetlić okno dialogowe **Nowy projekt** lub w obszarze **Otwórz**, można otworzyć istniejący projekt lub folder kodu. Po prawej stronie znajduje się źródło najnowszych wiadomości dla deweloperów.
+Pierwsze czynności, które zobaczysz po uruchomieniu programu Visual Studio, prawdopodobnie na **stronie początkowej**. **Strona startowa** jest zaprojektowana jako "centrum", aby pomóc w znalezieniu poleceń i plików projektu, które są potrzebne szybciej. W sekcji ostatnie są wyświetlane ostatnio **używane** projekty i foldery. W obszarze **Nowy projekt** można kliknąć link, aby wyświetlić okno dialogowe **Nowy projekt** lub w obszarze **Otwórz**, można otworzyć istniejący projekt lub folder kodu. Po prawej stronie znajduje się źródło najnowszych wiadomości dla deweloperów.
 
 ![Strona początkowa w programie Visual Studio](media/start-page.png)
 
@@ -83,7 +83,7 @@ Aby kontynuować Eksplorowanie funkcji programu Visual Studio, Utwórz nowy proj
 
 ::: moniker range="vs-2017"
 
-1. Na **stronie Start**w polu wyszukiwania w obszarze **Nowy projekt**wpisz **JavaScript** , aby odfiltrować listę typów projektu do tych, które zawierają ciąg "JavaScript" w nazwie lub w typie języka.
+1. Na **stronie Start** w polu wyszukiwania w obszarze **Nowy projekt** wpisz **JavaScript** , aby odfiltrować listę typów projektu do tych, które zawierają ciąg "JavaScript" w nazwie lub w typie języka.
 
    ![Wyszukaj szablony projektów na stronie startowej programu Visual Studio](media/start-page-search-templates.png)
 
@@ -104,7 +104,7 @@ Aby kontynuować Eksplorowanie funkcji programu Visual Studio, Utwórz nowy proj
 
 ## <a name="menus"></a>Menu
 
-Pasek menu wzdłuż górnej części poleceń programu Visual Studio grupuje do kategorii. Na przykład menu **projekt** zawiera polecenia związane z projektem, w którym pracujesz. W menu **Narzędzia** można dostosować sposób działania programu Visual Studio, wybierając **Opcje**lub dodając funkcje do instalacji, wybierając pozycję **Pobierz narzędzia i funkcje**.
+Pasek menu wzdłuż górnej części poleceń programu Visual Studio grupuje do kategorii. Na przykład menu **projekt** zawiera polecenia związane z projektem, w którym pracujesz. W menu **Narzędzia** można dostosować sposób działania programu Visual Studio, wybierając **Opcje** lub dodając funkcje do instalacji, wybierając pozycję **Pobierz narzędzia i funkcje**.
 
 ![Pasek menu w programie Visual Studio](media/quickstart-IDE-menu-bar.png)
 

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d3a8c02d-895b-478c-9957-d663130f308e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a90ff97b87ec2abaab87dfece5b2a2ac1cabb28c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 94f861e6a45b05c8db1b7e7e76815579f6568c69
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726102"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953386"
 ---
 # <a name="idebugobject2isencoutdated"></a>IDebugObject2::IsEncOutdated
 Ta metoda określa, czy stan edycji i kontynuowania tego obiektu lub kontenera nadrzędnego jest nieaktualny. Niestandardowa ewaluatora wyrażeń nie implementuje tej metody i zawsze zwraca wartość `E_NOTIMPL` .
@@ -28,14 +28,14 @@ Ta metoda określa, czy stan edycji i kontynuowania tego obiektu lub kontenera n
 ## <a name="syntax"></a>Składnia
 
 ```cpp
-HRESULT IsEncOutdated(
-   BOOL* pfEncOutdated
+HRESULT IsEncOutdated(
+   BOOL* pfEncOutdated
 );
 ```
 
 ```csharp
-int IsEncOutdated(
-   out int pfEncOutdated
+int IsEncOutdated(
+   out int pfEncOutdated
 );
 ```
 

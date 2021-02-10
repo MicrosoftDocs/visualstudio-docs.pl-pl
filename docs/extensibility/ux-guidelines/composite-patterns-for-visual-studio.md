@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 719ce0ac88761599fbed7da90643fd8a9d79db69
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: c8ac314a2ec49b805fc87badf6b63a719b8511e8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715824"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952099"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Wzorce złożone dla programu Visual Studio
 Wzorce złożone łączą elementy interakcji i projektu w różnych konfiguracjach. Niektóre z najważniejszych wzorców złożonych w programie Visual Studio w odniesieniu do spójności obejmują:
@@ -70,7 +70,7 @@ Wzorce złożone łączą elementy interakcji i projektu w różnych konfiguracj
 
 ### <a name="other-charting-considerations"></a>Inne zagadnienia dotyczące wykresów
 
-#### <a name="color"></a>Color (Kolor)
+#### <a name="color"></a>Kolor
  Istnieje określona paleta kolorów wykresów zdefiniowanych do użycia w programie Visual Studio. Paleta jest dostępna dla głównych typów kolorów, a kolory można rozróżnić nawet wtedy, gdy są używane jako bardzo wąskie fragmenty koloru. Możesz użyć tych kolorów w dowolnej kombinacji dla dowolnego typu wykresu lub grafu w interfejsie użytkownika. Nie musisz używać wszystkich siedmiu kolorów, jeśli nie potrzebujesz wielu różnych kolorów. Te kolory nie zostały zaprojektowane do użycia z żadnymi elementami pierwszego planu, dlatego nie umieszczaj tekstu ani glifów na podstawie tych kolorów. Te odcieni powinny być trwale kodowane i narażone na dostosowanie użytkowników w obszarze **narzędzia > opcje** (zobacz [udostępnianie kolorów dla użytkowników końcowych](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)).
 
 |Spowoduje|Hex|RGB|

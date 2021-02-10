@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0ea04cfa-de87-4b6c-897e-4572c1a28942
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1f00b209ff5f91d160e89f5f55ad966fbe9e6414
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff14c10f5563053ce704982455eee6d9dc81b742
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726008"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953256"
 ---
 # <a name="idebugparsedexpressionevaluatesync"></a>IDebugParsedExpression::EvaluateSync
 Ta metoda szacuje przeanalizowane wyrażenie i opcjonalnie rzutuje wynik na inny typ danych.
@@ -28,7 +28,7 @@ Ta metoda szacuje przeanalizowane wyrażenie i opcjonalnie rzutuje wynik na inny
 ## <a name="syntax"></a>Składnia
 
 ```cpp
-HRESULT EvaluateSync( 
+HRESULT EvaluateSync( 
    DWORD                 dwEvalFlags,
    DWORD                 dwTimeout,
    IDebugSymbolProvider* pSymbolProvider,

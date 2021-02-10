@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: eec49aec-5474-48a7-889d-709045b9a475
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f76e34f0a806a524c1305796bddabebd155e680c
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 7e7174e15992ab6ae077847e5ee6e3467435d8ef
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560346"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952944"
 ---
 # <a name="project-properties-reference"></a>Informacje o właściwościach projektu
 
@@ -40,6 +40,6 @@ Dowiedz się więcej o konfigurowaniu i dostosowywaniu właściwości projektu.
 | [Strona zabezpieczeń, Projektant projektu](../../ide/reference/security-page-project-designer.md) | Ta strona służy do konfigurowania ustawień zabezpieczeń dostępu kodu dla aplikacji wdrożonych przy użyciu [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)] wdrożenia. |
 | [Strona podpisywania, Projektant projektu](../../ide/reference/signing-page-project-designer.md) | Ta strona służy do podpisywania manifestów aplikacji i wdrażania oraz podpisywania zestawu. |
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Rozwiązania i projekty](../../ide/solutions-and-projects-in-visual-studio.md)

@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15ba4307cc2941f0d978674eb224b717fdd8aaba
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: f1b9b7e7f20c93cd2067d1210245da8ef6ce8813
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863520"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952034"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Czcionki i formatowanie dla programu Visual Studio
 ## <a name="the-environment-font"></a><a name="BKMK_TheEnvironmentFont"></a> Czcionka środowiska
@@ -391,7 +391,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 #### <a name="italics"></a>Kursywa
  Program Visual Studio nie używa kursywy ani pogrubionej kursywy tekstu.
 
-#### <a name="color"></a>Color (Kolor)
+#### <a name="color"></a>Kolor
 
 - Niebieski jest zarezerwowany dla hiperlinków (Nawigacja i poleceń) i nigdy nie powinien być używany do orientacji.
 

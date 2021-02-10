@@ -8,13 +8,13 @@ ms.date: 08/04/2017
 ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
-manager: jillfra
-ms.openlocfilehash: 0907b49aa3e16ba7ee4fb63f56758cf830dde68c
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+manager: jmartens
+ms.openlocfilehash: c3867bc6fd489642bfa856caed434312a9d2d571
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761449"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953152"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Odwołanie do wartości koloru dla programu Visual Studio
 
@@ -45,7 +45,7 @@ W przypadku korzystania z tego przewodnika referencyjnego należy pamiętać o:
 
 | | Motyw jasny | Motyw ciemny | Motyw niebieski | duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
-|**Domyślne**| ![#FFEEEEF2 — próbka](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 — próbka")<br />`#FFEEEEF2` | ![#FF2D2D30 — próbka](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 — próbka")<br />`#FF2D2D30` | ![#FFEEEEF2 — próbka](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 — próbka")<br />`#FFEEEEF2` | ![ControlDark — próbka](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark — próbka")<br />`ControlDark` |
+|**Wartooć**| ![#FFEEEEF2 — próbka](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 — próbka")<br />`#FFEEEEF2` | ![#FF2D2D30 — próbka](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 — próbka")<br />`#FF2D2D30` | ![#FFEEEEF2 — próbka](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 — próbka")<br />`#FFEEEEF2` | ![ControlDark — próbka](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark — próbka")<br />`ControlDark` |
 
 ### <a name="expander-glyph"></a>Symbol ekspandera
 

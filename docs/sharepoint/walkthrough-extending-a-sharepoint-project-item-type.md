@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending project items
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3a360b6a336f64920c0144f742e98a64282eeeec
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 74d57ae4beca074fbf7711ea3d732d903d8faa4b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970414"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952684"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Przewodnik: zwiększanie typu elementu projektu SharePoint
   Za pomocą elementu projektu **model usługi łączności danych biznesowych** można utworzyć model usługi łączności danych biznesowych (BDC) w programie SharePoint. Domyślnie, gdy tworzysz model przy użyciu tego elementu projektu, dane w modelu nie są wyświetlane użytkownikom. Należy również utworzyć listę zewnętrzną w programie SharePoint, aby umożliwić użytkownikom wyświetlanie danych.

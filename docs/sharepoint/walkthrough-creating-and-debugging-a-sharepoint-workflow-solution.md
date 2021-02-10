@@ -15,15 +15,15 @@ helpviewer_keywords:
 - workflows [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3c8d5ca5b941a7ae6e6ebada21f1eafaef2b6f43
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 637d46eaa9ac9306d63befed1c011c278b46af24
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915313"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952723"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>Przewodnik: Tworzenie i debugowanie rozwiązania przepływu pracy programu SharePoint
   W tym instruktażu przedstawiono sposób tworzenia podstawowego sekwencyjnego szablonu przepływu pracy. Przepływ pracy sprawdza Właściwość udostępnionej biblioteki dokumentów, aby określić, czy dokument został sprawdzony. Jeśli dokument został zrecenzowany, przepływ pracy zakończy się.

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ef640967-8adb-4793-994d-ae1736510891
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e468b5a282ffb5466d57a3c9b1a37aa3ae8643ed
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be1ef047e01baaffe66e38503f0f7979fea74829
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726078"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953373"
 ---
 # <a name="idebugobject2"></a>IDebugObject2
 > [!IMPORTANT]
@@ -64,4 +64,4 @@ IDebugObject2 : IDebugObject
 - [Expression Evaluation Interfaces](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)
-- [GetObject](../../../extensibility/debugger/reference/idebugalias-getobject.md)
+- [GetObject —](../../../extensibility/debugger/reference/idebugalias-getobject.md)

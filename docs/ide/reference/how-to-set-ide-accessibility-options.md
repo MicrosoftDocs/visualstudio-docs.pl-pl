@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: ddc96c4c-0600-46c1-8267-7dce4c44ad24
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ac857d961b1ae736645ba2cfda3f1ef5755d0fa1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d7cc99747571feb5b443f10355d867da7c22f44
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770286"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952918"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Instrukcje: Ustawianie opcji ułatwień dostępu IDE
 
@@ -54,7 +54,7 @@ Możesz zmienić rozmieszczenie systemu Windows w zintegrowanym środowisku prog
 
 ### <a name="change-the-size-of-text"></a>Zmienianie rozmiaru tekstu
 
-Możesz zmienić ustawienia okien narzędzi tekstowych, takich jak okno **polecenia** , okno **bezpośrednie** i okno **dane wyjściowe** , używając opcji **Narzędzia**  >  **Options**  >  **Environment**  >  **czcionki i kolory**środowiska.
+Możesz zmienić ustawienia okien narzędzi tekstowych, takich jak okno **polecenia** , okno **bezpośrednie** i okno **dane wyjściowe** , używając opcji **Narzędzia**  >    >    >  **czcionki i kolory** środowiska.
 
 Po wybraniu opcji **[wszystkie okna narzędzi tekstowych]** na liście rozwijanej **Pokaż ustawienia dla** , ustawienie domyślne zostanie wyświetlone na liście rozwijanej na **pierwszym planie elementu** **i w** **tle elementu** . Wybierz przycisk **niestandardowy** , aby zmienić te ustawienia.
 
@@ -74,11 +74,11 @@ Możesz również zmienić ustawienia wyświetlania tekstu w edytorze. Oto jak t
 
     Aby zmienić rozmiar czcionki dla tekstu w okienkach wyskakujących uzupełniania instrukcji, wybierz opcję **uzupełnianie instrukcji**.
 
-1. Z **elementów wyświetlanych**wybierz opcję **zwykły tekst**.
+1. Z **elementów wyświetlanych** wybierz opcję **zwykły tekst**.
 
-1. W polu **czcionka**wybierz nowy typ czcionki.
+1. W polu **czcionka** wybierz nowy typ czcionki.
 
-1. W polu **rozmiar**wybierz nowy rozmiar czcionki.
+1. W polu **rozmiar** wybierz nowy rozmiar czcionki.
 
     > [!TIP]
     > Aby zresetować rozmiar tekstu dla okien narzędzi tekstowych i edytorów, wybierz opcję **Użyj wartości domyślnych**.
@@ -93,16 +93,16 @@ Można zmienić domyślne kolory tekstu, wskaźników marginesów, odstępu i el
 
 1. W folderze **środowisko** wybierz pozycję **czcionki i kolory**.
 
-1. W obszarze **Pokaż ustawienia dla**wybierz **Edytor tekstu**.
+1. W obszarze **Pokaż ustawienia dla** wybierz **Edytor tekstu**.
 
-1. Z **elementów wyświetlanych**wybierz element, którego ekran należy zmienić, na przykład **zwykły tekst**, **margines wskaźnika**, **widoczny odstęp**, **nazwa atrybutu HTML**lub **atrybut XML**.
+1. Z **elementów wyświetlanych** wybierz element, którego ekran należy zmienić, na przykład **zwykły tekst**, **margines wskaźnika**, **widoczny odstęp**, **nazwa atrybutu HTML** lub **atrybut XML**.
 
-1. Wybierz pozycję Ustawienia wyświetlania z następujących opcji: **pierwszy plan elementu**, **tło elementu**i **pogrubienie**.
+1. Wybierz pozycję Ustawienia wyświetlania z następujących opcji: **pierwszy plan elementu**, **tło elementu** i **pogrubienie**.
 
 1. Wybierz przycisk **OK**.
 
 > [!TIP]
-> Aby użyć kolorów o dużym kontraście dla wszystkich okien aplikacji w systemie operacyjnym, naciśnij klawisz **lewy Alt**w + **lewo przesuń**klawisz + **PrtScn**. Jeśli program Visual Studio jest otwarty, Zamknij, a następnie otwórz go ponownie, aby w pełni zaimplementować kolory o wysokim kontraście.
+> Aby użyć kolorów o dużym kontraście dla wszystkich okien aplikacji w systemie operacyjnym, naciśnij klawisz **lewy Alt** w + **lewo przesuń** klawisz + **PrtScn**. Jeśli program Visual Studio jest otwarty, Zamknij, a następnie otwórz go ponownie, aby w pełni zaimplementować kolory o wysokim kontraście.
 
 ## <a name="toolbars"></a>Paski narzędzi
 
@@ -126,7 +126,7 @@ Aby poprawić użyteczność i dostępność paska narzędzi, możesz dodać tek
 
 1. Wybierz pozycję **Modyfikuj zaznaczenie**.
 
-1. Obok **nazwy**w polu Wstaw Podaj nowy podpis dla wybranego przycisku.
+1. Obok **nazwy** w polu Wstaw Podaj nowy podpis dla wybranego przycisku.
 
 ## <a name="see-also"></a>Zobacz też
 

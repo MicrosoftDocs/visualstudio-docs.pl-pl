@@ -15,15 +15,15 @@ helpviewer_keywords:
 - reusable workflows [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1421b061c50277177b5a30f0357725e9a042f3bd
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: d4c12626550e36acc1a135258750f2d96ac5e81d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970174"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952593"
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow"></a>Przewodnik: Importowanie przepływu pracy wielokrotnego użytku programu SharePoint Designer
 
@@ -198,7 +198,7 @@ ms.locfileid: "95970174"
 
     3. Wypełnij brakujące wartości w Kreatorze dostosowywania programu SharePoint, a następnie wybierz przycisk **Zakończ** .
 
-12. Wybierz plik xoml, a następnie na pasku menu wybierz polecenie **View**  >  **Projektant** widoków, aby wyświetlić zaimportowany przepływ pracy w Projektancie przepływu pracy.
+12. Wybierz plik xoml, a następnie na pasku menu wybierz polecenie   >  **Projektant** widoków, aby wyświetlić zaimportowany przepływ pracy w Projektancie przepływu pracy.
 
 13. W węźle **Windows Workflow v 3.0** **przybornika** wykonaj jedną z następujących czynności:
 

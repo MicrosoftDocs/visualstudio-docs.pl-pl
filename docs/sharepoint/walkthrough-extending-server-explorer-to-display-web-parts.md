@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio], creating a new node type
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 55950d8498b436d38d2145c2692556330718883e
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: aa190ea6d5376c00584cc5936d1074d245b9509e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970218"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952671"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Przewodnik: rozszerzona Eksplorator serwera do wyświetlania składników Web Part
   W programie Visual Studio można użyć węzła **połączenia SharePoint** **Eksplorator serwera** , aby wyświetlić składniki w witrynach programu SharePoint. Jednak **Eksplorator serwera** domyślnie nie wyświetla niektórych składników. W tym instruktażu zostanie rozbudowana **Eksplorator serwera** tak, aby była wyświetlana Galeria składników Web Part w każdej połączonej witrynie programu SharePoint.
@@ -312,7 +312,7 @@ ms.locfileid: "95970218"
 
 12. Na liście **projekt** wybierz pozycję **WebPartCommands**, a następnie wybierz przycisk **OK** .
 
-13. Na pasku menu wybierz kompilacja Kompiluj **Build**  >  **rozwiązanie**, a następnie upewnij się, że rozwiązanie kompiluje się bez błędów.
+13. Na pasku menu wybierz kompilacja Kompiluj   >  **rozwiązanie**, a następnie upewnij się, że rozwiązanie kompiluje się bez błędów.
 
 14. Upewnij się, że folder danych wyjściowych kompilacji dla projektu WebPartNode zawiera teraz plik WebPartNode. VSIX.
 

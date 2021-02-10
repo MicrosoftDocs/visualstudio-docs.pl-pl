@@ -14,15 +14,15 @@ helpviewer_keywords:
 - profiling [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 66e19f7744a56d147fb0760c6f20254ea4308603
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 796c41ae50a33f00f72e0286d5e9680f9016cf58
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970112"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952567"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Przewodnik: Profilowanie aplikacji SharePoint
   W tym instruktażu pokazano, jak za pomocą narzędzi profilowania w programie Visual Studio zoptymalizować wydajność aplikacji SharePoint. Przykładowa aplikacja jest odbiorcą zdarzeń funkcji programu SharePoint, który zawiera pętlę bezczynności, która obniża wydajność odbiorcy zdarzeń funkcji. Program Visual Studio profiler umożliwia znalezienie i wyeliminowanie najbardziej kosztownego (najwolniejszego wykonania) części projektu, zwanej również *ścieżką gorącą*.
@@ -245,7 +245,7 @@ ms.locfileid: "95970112"
 
 2. W obszarze **funkcje wykonujące najwięcej poszczególnych zadań** wybierz `ProcessRequest` łącze, aby wyświetlić dystrybucję kosztów dla `ProcessRequest` funkcji.
 
-     **Called functions** `ProcessRequest` Zwróć uwagę, że funkcja **FeatureActiviated** jest wyświetlana w sekcji o nazwie Functions jako najbardziej kosztownej nazwie funkcji.
+      `ProcessRequest` Zwróć uwagę, że funkcja **FeatureActiviated** jest wyświetlana w sekcji o nazwie Functions jako najbardziej kosztownej nazwie funkcji.
 
 3. W sekcji **wywoływane funkcje** wybierz przycisk **FeatureActivated** .
 

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 8b8ab77f-a134-495c-be42-3bc51aa62dfb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2fa0a7feb85437cc8173d52695ddb1ba0d2c06b7
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: de941be8c5535a2cef5995e3be9954ee32dcdc71
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914117"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952450"
 ---
 # <a name="debugger-components"></a>Składniki debugera
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Debuger jest zaimplementowany jako pakietu VSPackage i zarządza całą sesją debugowania. Sesja debugowania obejmuje następujące elementy:

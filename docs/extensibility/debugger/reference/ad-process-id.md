@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 4cb40d12-2e92-4f09-83f4-689928bd65b3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 96a834725f1cf5b14f12a4c1554e67477768ef23
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 303c05b241347922a4253ef3654e06bed8e824ef
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738166"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952424"
 ---
 # <a name="ad_process_id"></a>AD_PROCESS_ID
 Określa identyfikator procesu, który może być IDENTYFIKATORem systemowym lub GUID.
@@ -31,9 +31,9 @@ Określa identyfikator procesu, który może być IDENTYFIKATORem systemowym lub
 typedef struct _AD_PROCESS_ID {
     AD_PROCESS_ID_TYPE ProcessIdType;
     union {
-        DWORD dwProcessId; 
-        GUID  guidProcessId; 
-        DWORD dwUnused; 
+        DWORD dwProcessId; 
+        GUID  guidProcessId; 
+        DWORD dwUnused; 
     } ProcessId;
 } AD_PROCESS_ID;
 ```
@@ -41,9 +41,9 @@ typedef struct _AD_PROCESS_ID {
 ```csharp
 public struct AD_PROCESS_ID {
     AD_PROCESS_ID_TYPE ProcessIdType;
-    DWORD              dwProcessId; 
-    GUID               guidProcessId; 
-    DWORD              dwUnused; 
+    DWORD              dwProcessId; 
+    GUID               guidProcessId; 
+    DWORD              dwUnused; 
 };
 ```
 
@@ -68,7 +68,7 @@ Ta struktura jest przenoszona do następujących metod:
 
 - [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)
 
-- [GetProcess —](../../../extensibility/debugger/reference/idebugport2-getprocess.md)
+- [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)
 
 I jest zwracany z następujących metod:
 
@@ -85,7 +85,7 @@ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Zobacz też
 - [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)
-- [GetProcess —](../../../extensibility/debugger/reference/idebugport2-getprocess.md)
+- [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)
 - [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)
 - [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md)
 - [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)

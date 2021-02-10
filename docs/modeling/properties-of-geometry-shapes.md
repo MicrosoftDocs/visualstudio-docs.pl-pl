@@ -10,22 +10,22 @@ helpviewer_keywords:
 - Domain-Specific Language, geometry shape
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e66f68079ae97f0a2514a77acab4d779561ed86
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 4bcb7bb1bb3950fbc79d9151b8b98ba3b2032494
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360666"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951774"
 ---
 # <a name="properties-of-geometry-shapes"></a>Właściwości kształtów geometrycznych
 Można użyć kształtów geometrycznych, aby określić, jak wystąpienia klas domeny są wyświetlane w języku specyficznym dla domeny. Aby uzyskać więcej informacji, zobacz [How to define a Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md). Aby uzyskać więcej informacji na temat sposobu korzystania z tych właściwości, zobacz [Dostosowywanie i rozszerzanie języka Domain-Specific](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
  Kształty geometryczne mają właściwości, które są wymienione w poniższej tabeli.
 
-|Właściwość|Opis|Domyślny|
+|Właściwość|Opis|Domyślne|
 |-|-|-|
 |Kolor wypełnienia|Kolor wypełnienia tego kształtu.|Biały|
 |Tryb gradientu wypełnienia|Tryb gradientu wypełnienia tego kształtu (poziomy, pionowy, przekątna ukośna, przekątna do tyłu lub brak).|Pozioma|
