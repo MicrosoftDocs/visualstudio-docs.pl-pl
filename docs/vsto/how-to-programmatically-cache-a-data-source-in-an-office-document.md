@@ -15,15 +15,15 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], caching
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c0b739a7671f19b126b0566dfc8f4775a2c91063
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: d1e66b587a149c02059e549fb20a5293f296a4a8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845015"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968947"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>Instrukcje: programowane buforowanie źródła danych w dokumencie pakietu Office
   Można programowo dodać obiekt danych do pamięci podręcznej danych w dokumencie, wywołując `StartCaching` metodę elementu hosta, taką jak <xref:Microsoft.Office.Tools.Word.Document> , <xref:Microsoft.Office.Tools.Excel.Workbook> , lub <xref:Microsoft.Office.Tools.Excel.Worksheet> . Usuń obiekt danych z pamięci podręcznej danych, wywołując `StopCaching` metodę elementu hosta.
@@ -56,7 +56,7 @@ ms.locfileid: "96845015"
     > [!NOTE]
     > Nie wywołuj `StopCaching` z programu obsługi zdarzeń dla `Shutdown` zdarzenia dokumentu lub arkusza. Przez czas, gdy `Shutdown` zdarzenie jest zgłaszane, zbyt późno na modyfikację pamięci podręcznej danych. Aby uzyskać więcej informacji o `Shutdown` zdarzeniu, zobacz [zdarzenia w projektach pakietu Office](../vsto/events-in-office-projects.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Dane pamięci podręcznej](../vsto/caching-data.md)
 - [Instrukcje: dane z pamięci podręcznej do użycia w trybie offline lub na serwerze](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)

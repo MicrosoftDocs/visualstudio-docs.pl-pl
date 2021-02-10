@@ -14,13 +14,13 @@ ms.devlang: CSharp
 ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 73e7fb0b3216baa960a1b69302fe43161e311399
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+manager: jmartens
+ms.openlocfilehash: 132a5aef33b501ad17a2a089684cfe927321b2e5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796787"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966490"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>Tworzenie interfejsu użytkownika przy użyciu projektanta XAML
 
@@ -33,7 +33,7 @@ Użytkownicy zaawansowani mogą nawet [dostosowywać Projektant XAML](https://gi
 
 ## <a name="xaml-designer-workspace"></a>projektant XAML obszar roboczy
 
-Obszar roboczy w projektant XAML składa się z kilku elementów interfejsu wizualizacji. Obejmują one *obszar kompozycji* (czyli powierzchnię projektowania wizualizacji), Edytor XAML, okno konspektu dokumentu (Obiekty i oś czasu okno Blend for Visual Studio) i okno właściwości. Aby otworzyć projektant XAML, kliknij prawym przyciskiem myszy plik XAML w **Eksplorator rozwiązań** i wybierz polecenie **Projektant widoków** .
+Obszar roboczy w projektant XAML składa się z kilku elementów interfejsu wizualizacji. Obejmują one *obszar kompozycji* (czyli powierzchnię projektowania wizualizacji), Edytor XAML, okno konspektu dokumentu (Obiekty i oś czasu okno Blend for Visual Studio) i okno właściwości. Aby otworzyć projektant XAML, kliknij prawym przyciskiem myszy plik XAML w **Eksplorator rozwiązań** i wybierz polecenie **Projektant widoków**.
 
 Projektant XAML udostępnia widok XAML i zsynchronizowaną widok Projekt renderowanego znacznika języka XAML aplikacji. Gdy plik XAML jest otwarty w programie Visual Studio lub Blend for Visual Studio, można przełączać się między widok Projekt i widokiem XAML przy użyciu kart **projektowanie** i **XAML** . Możesz użyć przycisku wymiany **okienek przycisk Zamień** ![ okienka w Projektant XAML ](media/swap-panes.PNG) , aby przełączyć, które okno pojawia się na górze: obszar kompozycji lub Edytor XAML.
 
@@ -85,11 +85,11 @@ Te polecenia są dostępne na tym pasku narzędzi:
 
 **Powiększenie**
 
-Powiększenie umożliwia zmianę rozmiaru powierzchni projektowej. Możesz powiększyć od 12,5% do 800% lub wybrać opcje takie jak **Dopasuj zaznaczenie** i **Dopasuj wszystko** .
+Powiększenie umożliwia zmianę rozmiaru powierzchni projektowej. Możesz powiększyć od 12,5% do 800% lub wybrać opcje takie jak **Dopasuj zaznaczenie** i **Dopasuj wszystko**.
 
 **Pokaż/Ukryj siatkę przyciągania**
 
-Wyświetla lub ukrywa siatkę przyciągania pokazującą linie siatki. Linie siatki są używane po włączeniu **przyciągania do linii siatki** lub **przyciągania do linii wyrównania** .
+Wyświetla lub ukrywa siatkę przyciągania pokazującą linie siatki. Linie siatki są używane po włączeniu **przyciągania do linii siatki** lub **przyciągania do linii wyrównania**.
 
 **Włącz/Wyłącz przyciąganie do linii siatki**
 
@@ -126,7 +126,7 @@ Okno konspektu dokumentu w programie Visual Studio jest podobne do [okna obiekty
 - [Twórz animacje](animate-objects-in-xaml-designer.md) (tylko Blend for Visual Studio).
 
 Aby wyświetlić okno Konspekt dokumentu w programie Visual Studio, na pasku menu wybierz pozycję **Wyświetl**  >  **inne**  >  **Konspekt dokumentu** systemu Windows.
-Aby wyświetlić okno obiekty i oś czasu w Blend for Visual Studio, na pasku menu wybierz pozycję **Wyświetl**  >  **Konspekt dokumentu** .
+Aby wyświetlić okno obiekty i oś czasu w Blend for Visual Studio, na pasku menu wybierz pozycję **Wyświetl**  >  **Konspekt dokumentu**.
 
 ![Okno konspektu dokumentu w programie Visual Studio](media/document-outline-window.png)
 
@@ -154,7 +154,7 @@ Dostępne są różne opcje w górnej części okna **Właściwości** :
 
 - Zmień nazwę aktualnie wybranego elementu w polu **Nazwa** .
 - W lewym górnym rogu znajduje się ikona reprezentująca aktualnie wybrany element.
-- Aby rozmieścić właściwości według kategorii lub alfabetycznie, kliknij pozycję **Kategoria** , **Nazwa** lub **Źródło** na liście **Rozmieść według** .
+- Aby rozmieścić właściwości według kategorii lub alfabetycznie, kliknij pozycję **Kategoria**, **Nazwa** lub **Źródło** na liście **Rozmieść według** .
 - Aby wyświetlić listę zdarzeń dla kontrolki, kliknij przycisk **zdarzenia** , który jest wyświetlany jako Symbol błyskawicy.
 - Aby wyszukać właściwość, Zacznij od wpisania nazwy właściwości w polu wyszukiwania. Okno **Właściwości** wyświetla właściwości, które pasują do wyszukiwania podczas wpisywania.
 
@@ -164,7 +164,7 @@ Po prawej stronie każdej wartości właściwości jest *znacznik właściwości
 
 Aby uzyskać więcej informacji o używaniu właściwości i obsługi zdarzeń, zobacz [wprowadzenie do formantów i wzorców](/windows/uwp/design/controls-and-patterns/controls-and-events-intro).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Praca z elementami w projektancie XAML](../xaml-tools/working-with-elements-in-xaml-designer.md)
 - [Tworzenie i stosowanie zasobów](../xaml-tools/how-to-create-and-apply-a-resource.md)

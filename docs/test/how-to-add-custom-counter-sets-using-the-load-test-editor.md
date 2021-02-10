@@ -11,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 499aca80-1069-408d-ac68-326da6a50645
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: c65226a8694cbccf7c5b94f7688d1828a2526cf6
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: ce34a4e30c9d612bd37afb61c354b7a4b5df7aed
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440236"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966932"
 ---
 # <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>Instrukcje: Dodawanie niestandardowych zestawów liczników przy użyciu Edytor testu obciążeniowego
 
@@ -48,7 +48,7 @@ Zarządzasz licznikami w **Edytor testu obciążeniowego**. Zestawy liczników, 
     > [!NOTE]
     > Istnieje także możliwość dodania niestandardowego zbioru liczników, klikając prawym przyciskiem myszy istniejący zbiór liczników, wybierając kopię i wklejając ją do węzła zbiory liczników. Dodatkowe liczniki, które są kopiowane, ale nie są potrzebne, mogą zostać usunięte. Nazwę nowego zestawu liczników można zmienić przy użyciu okna **Właściwości** .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Określ zestawy liczników i reguły progowe dla komputerów w teście obciążenia](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
 - [Skonfiguruj ustawienia przebiegu testu obciążenia](../test/configure-load-test-run-settings.md)

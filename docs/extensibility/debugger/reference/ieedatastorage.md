@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 704e932d-2325-410e-89c4-ce88c6ec19da
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad7da71d31e1093d87d68bb39958a71a117f5d5f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbec27d262e43cb0fcdf8317725ad3c77a1817eb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718186"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966438"
 ---
 # <a name="ieedatastorage"></a>IEEDataStorage
 Ten interfejs reprezentuje tablicę bajtów.
@@ -40,7 +40,7 @@ IEEDataStorage : IUnknown
 |Metoda|Opis|
 |------------|-----------------|
 |[GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md)|Pobiera określoną liczbę bajtów danych do podanego buforu.|
-|[GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)|Pobiera liczbę dostępnych bajtów danych.|
+|[GetSize —](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)|Pobiera liczbę dostępnych bajtów danych.|
 
 ## <a name="remarks"></a>Uwagi
  Ten interfejs jest używany przez wizualizator typu w celu uzyskania dostępu do danych przechowywanych przez określony obiekt. Dane są traktowane jako tablica bajtów, co umożliwia wizualizatorowi typu manipulowanie nim w dowolny sposób, aby przedstawić go użytkownikowi.

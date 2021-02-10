@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: e93a4843-aef2-4d3e-9a0a-a2d3d1411aa7
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e732c6d9d791d789471c49a319ab9945fdd5dc06
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 4b35bcb6fcd1dc2ac3826d5dccb17ff764979321
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996178"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968752"
 ---
 # <a name="parallelforeach-activity-designer"></a>ParallelForEach, projektant działań
 
@@ -56,5 +56,5 @@ Domyślnie iterator pętli ma nazwę element. Nazwę zmiennej iteratora można z
 ## <a name="see-also"></a>Zobacz też
 
 - [Sequence](../workflow-designer/sequence-activity-designer.md)
-- [Równoległy](../workflow-designer/parallel-activity-designer.md)
+- [Równoległ](../workflow-designer/parallel-activity-designer.md)
 - [Przepływ sterowania](../workflow-designer/control-flow-activity-designers.md)

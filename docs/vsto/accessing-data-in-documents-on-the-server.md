@@ -12,15 +12,15 @@ helpviewer_keywords:
 - data access [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e436c7a30708fac0cf59c2e79100cc89dade84b2
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1c610bdc33564e3e211d1ec5aab943af4eec49d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847627"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965801"
 ---
 # <a name="access-data-in-documents-on-the-server"></a>Dostęp do danych w dokumentach na serwerze
   Można programować względem danych w dostosowaniu na poziomie dokumentu bez konieczności używania modelu obiektów programu Microsoft Office Word lub Microsoft Office Excel. Oznacza to, że można uzyskać dostęp do danych znajdujących się w dokumencie na serwerze, na którym nie zainstalowano programu Word lub Excel. Na przykład kod na serwerze (na przykład na [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] stronie) może dostosować dane w dokumencie i wysłać dostosowany dokument do użytkownika końcowego. Gdy użytkownik końcowy otworzy dokument, kod powiązania danych w zestawie rozwiązania wiąże dostosowane dane do dokumentu. Jest to możliwe, ponieważ dane w dokumencie są oddzielone od interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [buforowane dane w dostosowywaniu na poziomie dokumentu](../vsto/cached-data-in-document-level-customizations.md).
@@ -79,7 +79,7 @@ ms.locfileid: "96847627"
 ## <a name="access-typed-datasets-in-the-cache"></a>Dostęp do wpisanych zestawów danych w pamięci podręcznej
  Jeśli chcesz uzyskać dostęp do danych w określonym zestawie danych zarówno z rozwiązania pakietu Office, jak i z aplikacji poza biurem, na przykład aplikacji Windows Forms lub [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] projektu, musisz zdefiniować określony zestaw danych w osobnym zestawie, do którego istnieje odwołanie w obu projektach. W przypadku dodania określonego zestawu danych do każdego projektu przy użyciu kreatora **konfiguracji źródła danych** lub **Projektant obiektów DataSet**, .NET Framework będzie traktować typy zestawów danych w dwóch projektach jako różne. Aby uzyskać więcej informacji o tworzeniu wpisanych zestawów danych, zobacz [Tworzenie i konfigurowanie zestawów danych w programie Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Dostęp do danych w dokumentach na serwerze](../vsto/accessing-data-in-documents-on-the-server.md)
 - [Dane w pamięci podręcznej w dostosowaniu na poziomie dokumentu](../vsto/cached-data-in-document-level-customizations.md)

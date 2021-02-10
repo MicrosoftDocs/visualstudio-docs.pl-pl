@@ -11,15 +11,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <update> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 241bddb8c79a01bb1ba6921486a4dc46d99940cc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5712be9e12ede3338856955e00a34a7565d733ee
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537387"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968765"
 ---
 # <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;Update — &gt; element (Programowanie Office w Visual Studio)
   `update`Element Określa interwał, w którym rozwiązanie będzie sprawdzać dostępność aktualizacji.
@@ -43,7 +43,7 @@ ms.locfileid: "85537387"
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`enabled`|Wymagany. Ustaw wartość włączone na jedną z następujących wartości:<br /><br /> -   **wartość true** , aby sprawdzić dostępność aktualizacji.<br />-   **wartość false** uniemożliwia sprawdzenie dostępności aktualizacji.|
+|`enabled`|Wymagane. Ustaw wartość włączone na jedną z następujących wartości:<br /><br /> -   **wartość true** , aby sprawdzić dostępność aktualizacji.<br />-   **wartość false** uniemożliwia sprawdzenie dostępności aktualizacji.|
 
  `update`Element ma następujące elementy podrzędne.
 
@@ -54,8 +54,8 @@ ms.locfileid: "85537387"
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`maximumAge`| Wymagany. Ustaw tę wartość jako liczbę całkowitą.|
-|`unit`|Wymagany. Ustaw `unit` jedną z następujących wartości:<br /><br /> -   **liczb**<br />-   **dni**<br />-   **tygodni**|
+|`maximumAge`| Wymagane. Ustaw tę wartość jako liczbę całkowitą.|
+|`unit`|Wymagane. Ustaw `unit` jedną z następujących wartości:<br /><br /> -   **liczb**<br />-   **dni**<br />-   **tygodni**|
 
 ## <a name="example-of-always-checking-for-updates"></a>Przykład zawsze sprawdzaj, czy są aktualizacje
 

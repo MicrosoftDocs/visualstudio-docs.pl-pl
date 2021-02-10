@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: ff275cfb-5df9-4710-9a91-9caabaaad34f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 98ee28b51445af4b81422460ecb1450b2d383407
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 6126441890f34296fa0d8a9cda20bee32752cd81
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440163"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966763"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Instrukcje: Konfigurowanie emulacji sieci za pomocą ustawień testu w programie Visual Studio
 
@@ -92,7 +92,7 @@ Przed wykonaniem kroków opisanych w tej procedurze należy otworzyć ustawienia
     > [!TIP]
     > Sterownik emulacji sieci można również zainstalować z poziomu wiersza polecenia na komputerze lokalnym bez instalowania agenta testowego programu Visual Studio za pomocą następującego polecenia: **VSTESTCONFIG NETWORKEMULATION/install**
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Zbieranie informacji diagnostycznych za pomocą ustawień testu](../test/collect-diagnostic-information-using-test-settings.md)
 - [Uruchom testy ręczne (Azure Test Plans)](/azure/devops/test/run-manual-tests?view=vsts&preserve-view=true)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: f4c3dcea-5051-4065-898f-601269649d92
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0aeab78a2f64be2df6f601ad8ed224f13071eb8c
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: f87b5bcc94ed11e18de763bd1db7c59bdc4796fc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97616107"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966386"
 ---
 # <a name="load-vspackages"></a>Ładuj pakietów VSPackage
 Pakietów VSPackage są ładowane do programu Visual Studio tylko wtedy, gdy ich funkcjonalność jest wymagana. Na przykład pakietu VSPackage jest ładowany, gdy program Visual Studio używa fabryki projektu lub usługi implementującej implementację pakietu VSPackage. Ta funkcja jest nazywana opóźnionym ładowaniem, które jest używane w miarę możliwości w celu zwiększenia wydajności.
@@ -73,5 +73,5 @@ Pakietów VSPackage są ładowane do programu Visual Studio tylko wtedy, gdy ich
 
      Wymuś ładowanie nie należy używać do komunikacji pakietu VSPackage. Użyj zamiast tego [usług](../extensibility/using-and-providing-services.md) .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Pakiety VSPackage](../extensibility/internals/vspackages.md)

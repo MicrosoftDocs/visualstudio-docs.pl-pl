@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f4a26339-9f9a-497a-9aa6-0797183d450d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 955c8c496df45bbfce28bdac1571f84649621024
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 873f669890e84281f73a96fa1739d267c10e83a1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048067"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966139"
 ---
 # <a name="target-build-order"></a>Kolejność kompilowania obiektów docelowych
 
@@ -75,7 +75,7 @@ Jeśli nie ma początkowych elementów docelowych, domyślnych obiektów docelow
 
 ## <a name="target-dependencies"></a>Zależności docelowe
 
-Obiekty docelowe mogą opisywać relacje zależności ze sobą. Ten `DependsOnTargets` atrybut wskazuje, że element docelowy zależy od innych elementów docelowych. Przykład:
+Obiekty docelowe mogą opisywać relacje zależności ze sobą. Ten `DependsOnTargets` atrybut wskazuje, że element docelowy zależy od innych elementów docelowych. Na przykład
 
 ```xml
 <Target Name="Serve" DependsOnTargets="Chop;Cook" />

@@ -11,22 +11,22 @@ helpviewer_keywords:
 ms.assetid: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 56a6142d7217d6afa7d48ea708c642a32d8cb3c8
-ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
+ms.openlocfilehash: e653d7ae5f2408fd8438cbdf69a28648c6bcc446
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90713441"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967114"
 ---
 # <a name="visual-studio-enterprise-guide"></a>Podręcznik użytkowania programu Visual Studio w przedsiębiorstwie
 Jeśli chcesz zaoszczędzić czas podczas korzystania z firmy w programie Visual Studio, Zacznij tutaj. Ten przewodnik po przedsiębiorstwie zawiera wskazówki, które mogą pomóc w instalacji i aktualizacji programu Visual Studio w typowych scenariuszach dla przedsiębiorstw, uzyskać odblokowywanie w przypadku wystąpienia problemów i dowiedzieć się, jak zgłosić problem, jeśli potrzebujesz więcej pomocy. 
 
-## <a name="get-started"></a>Wprowadzenie 
+## <a name="get-started"></a>Rozpoczęcie pracy 
 Dowiedz się, jak wdrożyć program Visual Studio w przedsiębiorstwie w środowiskach sieciowych i w trybie offline. 
 
 - Informacje **o opcjach wdrażania w przedsiębiorstwie w środowiskach sieciowych**. [Przewodnik administratora programu Visual Studio](visual-studio-administrator-guide.md) zawiera wskazówki oparte na scenariuszu dla administratorów systemu. 
@@ -61,7 +61,7 @@ Dowiedz się, jak pomyślnie zaktualizować program Visual Studio i rozwiązać 
 
 - **[Aktualizowanie programu Visual Studio przy użyciu minimalnego układu offline](update-minimal-layout.md)**. W przypadku komputerów, które nie są połączone z Internetem, tworzenie minimalnego układu jest najłatwiejszym i najszybszym sposobem na aktualizację wystąpień programu Visual Studio w trybie offline.
 
-- ** [Napraw program Visual Studio](repair-visual-studio.md) , aby rozwiązać problemy z aktualizacją**. Czasami instalacja programu Visual Studio przestała być uszkodzona lub uszkodzona. Naprawa jest przydatna w przypadku rozwiązywania problemów dotyczących czasu instalacji we wszystkich operacjach instalacji, w tym aktualizacji. 
+- **[Napraw program Visual Studio](repair-visual-studio.md) , aby rozwiązać problemy z aktualizacją**. Czasami instalacja programu Visual Studio przestała być uszkodzona lub uszkodzona. Naprawa jest przydatna w przypadku rozwiązywania problemów dotyczących czasu instalacji we wszystkich operacjach instalacji, w tym aktualizacji. 
 
 - **Obserwuj [linie bazowe zabezpieczeń systemu Windows](/windows/security/threat-protection/windows-security-baselines)**. Firma Microsoft jest przeznaczona dla klientów z bezpiecznymi systemami operacyjnymi, takimi jak Windows 10 i Windows Server, oraz zabezpieczonymi aplikacjami, takimi jak Microsoft Edge. Oprócz zapewnienia bezpieczeństwa swoich produktów firma Microsoft umożliwia również precyzyjne sterowanie środowiskami, zapewniając różne możliwości konfiguracji. 
 

@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: ae8b35f9-d465-4d72-8d7d-7b56ae6ffd22
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 2c966eb9b4ad0bbf8e00c8a27fd69fef0c59cbc1
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: c6f4efd21da1d10f3885bdb0202baf6f42992522
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440135"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966880"
 ---
 # <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>Instrukcje: stosowanie dystrybucji do opóźnienia tempem dla modelu testu tempa użytkownika
 
@@ -54,7 +54,7 @@ Wartość dla **opóźnienia Apply tempem** można ustawić na wartość true lu
 
 5. Wybierz pozycję **plik**  >  **Zapisz**. Teraz można uruchomić test obciążenia z nową wartością **opóźnienia Zastosuj dystrybucję do tempem** .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Edytowanie scenariuszy testu obciążenia](../test/edit-load-test-scenarios.md)
 - [Przewodnik: Tworzenie i uruchamianie testów obciążeniowych](../test/walkthrough-create-and-run-a-load-test.md)

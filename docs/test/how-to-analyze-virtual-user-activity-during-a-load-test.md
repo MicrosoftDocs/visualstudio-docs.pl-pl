@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: 8bda19b3-91c1-4daf-b6c7-09108bddadff
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 353a38c17cdcd3358376547155750914e406f4be
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 33bb1d3ed7d2deb891556f2091c6c389bc1b03c5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442394"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966919"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Instrukcje: analizowanie, co robią Użytkownicy wirtualną podczas testu obciążenia za pomocą wykresu aktywności wirtualnego użytkownika
 
@@ -63,7 +63,7 @@ W poniższych procedurach przedstawiono sposób wyświetlania **wykresu aktywno�
 
    - **Czas trwania**
 
-   - **Agent**
+   - **Odczynnik**
 
    - **Dziennik testu** (link do dziennika testowego)
 
@@ -105,7 +105,7 @@ W poniższych procedurach przedstawiono sposób wyświetlania **wykresu aktywno�
 
      **Wykres aktywności wirtualnego użytkownika** jest odpowiednio aktualizowany.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Analizowanie aktywności wirtualnego użytkownika w widoku szczegółów](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
 - [Przewodnik: używanie wykresu aktywności wirtualnego użytkownika w celu wyizolowania problemów](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)

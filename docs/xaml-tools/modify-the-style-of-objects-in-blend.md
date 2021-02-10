@@ -7,21 +7,21 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cfe54db27a16d95904412b5e1181d589ed2fcde8
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 2b98f814e1f310c7d7f281457589a1a9f7d21653
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046791"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966555"
 ---
 # <a name="modify-the-style-of-objects-in-blend-for-visual-studio"></a>Modyfikowanie stylu obiektów w Blend for Visual Studio
 
 Najprostszym sposobem dostosowania obiektu jest ustawienie właściwości w okienku **Właściwości** .
 
-Jeśli chcesz ponownie użyć ustawień lub grup ustawień, utwórz zasób wielokrotnego użytku. Może to być *styl* , *szablon* lub coś prostego, takiego jak kolor niestandardowy. Formant może być również wyświetlany inaczej w zależności od jego stanu. Na przykład przycisk włącza kolor zielony, gdy użytkownik go klika.
+Jeśli chcesz ponownie użyć ustawień lub grup ustawień, utwórz zasób wielokrotnego użytku. Może to być *styl*, *szablon* lub coś prostego, takiego jak kolor niestandardowy. Formant może być również wyświetlany inaczej w zależności od jego stanu. Na przykład przycisk włącza kolor zielony, gdy użytkownik go klika.
 
 ## <a name="brushes-modify-the-appearance-of-an-object"></a>Pędzle: modyfikowanie wyglądu obiektu
 
@@ -29,9 +29,9 @@ Zastosuj pędzel do obiektu, jeśli chcesz zmienić jego wygląd.
 
 ### <a name="paint-a-repeating-image-or-pattern-on-an-object"></a>Malowanie powtarzanego obrazu lub wzorca na obiekcie
 
-Malowanie powtarzanego obrazu lub wzorca w obiekcie przy użyciu *pędzla kafelków* .
+Malowanie powtarzanego obrazu lub wzorca w obiekcie przy użyciu *pędzla kafelków*.
 
-Aby utworzyć pędzel kafelków, Zacznij od utworzenia *pędzla obrazu* , *pędzla rysowania* lub zasobu *pędzla wizualnego* .
+Aby utworzyć pędzel kafelków, Zacznij od utworzenia *pędzla obrazu*, *pędzla rysowania* lub zasobu *pędzla wizualnego* .
 
 Utwórz pędzel obrazu przy użyciu obrazu. Na poniższych ilustracjach przedstawiono pędzle obrazu, fragment pędzla obrazu oraz odwrócony pędzel obrazu.
 
@@ -49,21 +49,21 @@ Utwórz pędzel wizualny na podstawie kontrolki, takiej jak Button. Na poniższy
 
 Możesz zaprojektować wygląd i zachowanie kontrolki jeden raz i zastosować ten projekt do innych kontrolek, aby nie trzeba było ich obsługiwać osobno.
 
-Czy używasz **stylu?** : Jeśli chcesz po prostu ustawić właściwości domyślne (takie jak kolor przycisku), użyj *stylu* . Formant można modyfikować nawet po zastosowaniu stylu do niego.
+Czy używasz **stylu?**: Jeśli chcesz po prostu ustawić właściwości domyślne (takie jak kolor przycisku), użyj *stylu*. Formant można modyfikować nawet po zastosowaniu stylu do niego.
 
-Czy używasz **szablonu?** : Jeśli chcesz zmienić strukturę kontrolki, użyj *szablonu* . Załóżmy, że Konwertowanie grafiki lub logo na przycisk. Nie można modyfikować kontrolki po zastosowaniu szablonu do niego.
+Czy używasz **szablonu?**: Jeśli chcesz zmienić strukturę kontrolki, użyj *szablonu*. Załóżmy, że Konwertowanie grafiki lub logo na przycisk. Nie można modyfikować kontrolki po zastosowaniu szablonu do niego.
 
 ### <a name="create-a-template-or-style"></a>Tworzenie szablonu lub stylu
 
 Istnieją dwa sposoby tworzenia szablonu. Możesz przekonwertować dowolny obiekt w obszarze kompozycji na kontrolkę lub oprzeć szablon na istniejącym formancie.
 
-Aby przekonwertować dowolny obiekt na szablon kontrolki, zaznacz obiekt, a następnie w menu **Narzędzia** wybierz polecenie **Przekształć w kontrolkę** .
+Aby przekonwertować dowolny obiekt na szablon kontrolki, zaznacz obiekt, a następnie w menu **Narzędzia** wybierz polecenie **Przekształć w kontrolkę**.
 
-Jeśli chcesz oprzeć szablon w istniejącym formancie, zaznacz obiekt w obszarze kompozycji. Następnie w górnej części obszaru kompozycji wybierz przycisk nawigacyjny, wybierz pozycję **Edytuj szablon** , a następnie wybierz opcję **Edytuj kopię** lub **Utwórz pustą** .
+Jeśli chcesz oprzeć szablon w istniejącym formancie, zaznacz obiekt w obszarze kompozycji. Następnie w górnej części obszaru kompozycji wybierz przycisk nawigacyjny, wybierz pozycję **Edytuj szablon**, a następnie wybierz opcję **Edytuj kopię** lub **Utwórz pustą**.
 
 ![Menu Edytuj szablon](../designers/media/5ebdb33f-aad2-4c10-a328-5e8b04c56a36.png)
 
-Aby utworzyć styl, wybierz obiekt, a następnie w menu **obiekt** wybierz polecenie **Edytuj styl** , a następnie wybierz **Edytuj kopię** lub **Utwórz pustą** .
+Aby utworzyć styl, wybierz obiekt, a następnie w menu **obiekt** wybierz polecenie **Edytuj styl**, a następnie wybierz **Edytuj kopię** lub **Utwórz pustą**.
 
 - Wybierz opcję **Edytuj kopię** , aby rozpocząć od domyślnego stylu lub szablonu kontrolki.
 
@@ -81,13 +81,13 @@ W oknie dialogowym **Tworzenie zasobu stylu** można nazwać styl lub szablon, a
 
 ### <a name="apply-a-style-or-template-to-a-control"></a>Stosowanie stylu lub szablonu do kontrolki
 
-W oknie [obiekty i oś czasu](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md#objects-and-timeline-window) kliknij prawym przyciskiem myszy obiekt, wybierz polecenie **Edytuj szablon** , a następnie wybierz pozycję **Zastosuj zasób** .
+W oknie [obiekty i oś czasu](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md#objects-and-timeline-window) kliknij prawym przyciskiem myszy obiekt, wybierz polecenie **Edytuj szablon**, a następnie wybierz pozycję **Zastosuj zasób**.
 
 ![Menu Zastosuj zasób](../designers/media/dc12debc-7711-47d9-84ce-10322a384397.png)
 
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Przywracanie domyślnego stylu lub szablonu kontrolki
 
-Zaznacz kontrolkę, a następnie w oknie * * właściwości * * * * Znajdź właściwość **styl** lub **szablon** . Wybierz **Opcje zaawansowane** , a następnie w menu skrótów kliknij polecenie **Zresetuj** .
+Zaznacz kontrolkę, a następnie w oknie * * właściwości * * * * Znajdź właściwość **styl** lub **szablon** . Wybierz **Opcje zaawansowane**, a następnie w menu skrótów kliknij polecenie **Zresetuj** .
 
 ## <a name="visual-states"></a>Stany wizualne
 

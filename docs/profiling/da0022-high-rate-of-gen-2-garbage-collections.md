@@ -9,16 +9,16 @@ f1_keywords:
 ms.assetid: f871a547-0e6f-4b11-b2d7-174d30fc2ed8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: eb1834bf395d3a9c5d4f516a9fec1693d40ff378
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 61fb953b1eae3ecfb0aa9c87e8b10a25099cb12a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90035693"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967010"
 ---
 # <a name="da0022-high-rate-of-gen-2-garbage-collections"></a>DA0022: Duża częstotliwość odzyskiwania pamięci 2. generacji
 
@@ -27,7 +27,7 @@ ms.locfileid: "90035693"
 |Identyfikator reguły|DA0022|
 |Kategoria|Użycie .NET Framework|
 |Metoda profilowania|Wszystko|
-|Wiadomość|Występuje dość duża liczba wyrzucania elementów bezużytecznych generacji 2. W przypadku, gdy konstrukcja większość struktur danych programu jest alokowana i utrwalana przez dłuższy czas, nie jest to problem. Jeśli jednak takie zachowanie jest niezamierzone, aplikacja może przypinać obiekty. Jeśli nie masz pewności, możesz zebrać dane alokacji pamięci .NET i informacje o okresie istnienia obiektu, aby zrozumieć wzorzec alokacji pamięci używanej przez aplikację.|
+|Komunikat|Występuje dość duża liczba wyrzucania elementów bezużytecznych generacji 2. W przypadku, gdy konstrukcja większość struktur danych programu jest alokowana i utrwalana przez dłuższy czas, nie jest to problem. Jeśli jednak takie zachowanie jest niezamierzone, aplikacja może przypinać obiekty. Jeśli nie masz pewności, możesz zebrać dane alokacji pamięci .NET i informacje o okresie istnienia obiektu, aby zrozumieć wzorzec alokacji pamięci używanej przez aplikację.|
 |Typ reguły|Ostrzeżenie|
 
  Podczas profilowania przy użyciu metod pobierania próbek, pamięci .NET lub rywalizacji o zasoby należy zebrać co najmniej 10 próbek, aby wyzwolić tę regułę.
@@ -43,7 +43,7 @@ ms.locfileid: "90035693"
  Ta reguła jest wyzwalana, gdy występuje zbyt wiele wyrzucania elementów bezużytecznych generacji 2. Dobrze działające .NET Framework aplikacje będą mieć więcej niż 5 razy więcej niż raz w przypadku kolekcji generacji 2. (Współczynnik 10X jest prawdopodobnie idealny).
 
 ## <a name="how-to-investigate-a-warning"></a>Jak zbadać ostrzeżenie
- Kliknij dwukrotnie komunikat w oknie Lista błędów, aby przejść do [widoku znaczniki](../profiling/marks-view.md) danych profilowania. Znajdź kolumny kolekcji ** \\ Gen 0 w programie .NET CLR** i w polu Liczba **danych programu .NET CLR \\ w obszarze kolekcje generacji 1** . Ustal, czy istnieją konkretne etapy wykonywania programu, w których wyrzucanie elementów bezużytecznych występuje częściej. Porównaj te wartości w kolumnie **% Time w usłudze GC** , aby sprawdzić, czy wzorzec alokacji pamięci zarządzanej powoduje nadmierne obciążenie zarządzania pamięcią.
+ Kliknij dwukrotnie komunikat w oknie Lista błędów, aby przejść do [widoku znaczniki](../profiling/marks-view.md) danych profilowania. Znajdź kolumny kolekcji **\\ Gen 0 w programie .NET CLR** i w polu Liczba **danych programu .NET CLR \\ w obszarze kolekcje generacji 1** . Ustal, czy istnieją konkretne etapy wykonywania programu, w których wyrzucanie elementów bezużytecznych występuje częściej. Porównaj te wartości w kolumnie **% Time w usłudze GC** , aby sprawdzić, czy wzorzec alokacji pamięci zarządzanej powoduje nadmierne obciążenie zarządzania pamięcią.
 
  W przypadku dużej części wyrzucania elementów bezużytecznych generacji 2 nie zawsze występuje problem. Może być zaprojektowana. Aplikacja, która alokuje duże struktury danych, które muszą pozostawać aktywne przez długie okresy podczas wykonywania, może wyzwolić tę regułę. Gdy taka aplikacja korzysta z pamięci, może być wymuszone wykonywanie częstych wyrzucania elementów bezużytecznych. Jeśli wyrzucanie elementów bezużytecznych generacji 0 i generacja 1 może odistnieć tylko niewielką ilość pamięci zarządzanej, planowane jest przetworzenie częściowej generacji 2 wyrzucania elementów bezużytecznych.
 

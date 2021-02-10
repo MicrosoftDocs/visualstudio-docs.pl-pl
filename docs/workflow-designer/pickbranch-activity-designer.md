@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: f523ad47-bbc0-4cda-a35c-41e67c4ba081
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bce1cee7fad7ccff57a6911c99a9470a22b9a927
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9d3ac314d5f8eb7980bdf5102d871546d3167141
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434236"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968674"
 ---
 # <a name="pickbranch-activity-designer"></a>PickBranch, projektant działań
 

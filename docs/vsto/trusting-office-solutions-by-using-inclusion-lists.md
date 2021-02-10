@@ -14,15 +14,15 @@ helpviewer_keywords:
 - inclusion lists [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3bb5c111b4c75298ee55bc64dfbb2d0dd4b6c8b5
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 9a084ad152f178b4dd03e986eb06718b0fb47c98
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527464"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968817"
 ---
 # <a name="trust-office-solutions-by-using-inclusion-lists"></a>Ufanie rozwiązaniom pakietu Office przy użyciu list dołączania
   Listy dołączania umożliwiają użytkownikom udzielanie zaufania do rozwiązań pakietu Office, które są podpisane przy użyciu certyfikatu, który identyfikuje wydawcę. Listy dołączania są specyficzne dla użytkownika i mogą być używane w przypadku dostosowań na poziomie dokumentu i dodatków narzędzi VSTO.

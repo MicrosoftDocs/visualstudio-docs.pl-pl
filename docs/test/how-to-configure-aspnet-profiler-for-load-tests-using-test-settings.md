@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: 6832fe39-04d5-4d94-8a18-3e2730bad423
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: baea8be1da9a6dd89c06aa328bf579974503921f
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 6222d4ff9107a44c52846d2904668dab225e35a6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442329"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966776"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Instrukcje: Konfigurowanie profilera ASP.NET na potrzeby testów obciążenia przy użyciu ustawień testu w programie Visual Studio
 
@@ -60,7 +60,7 @@ Przed wykonaniem kroków opisanych w tej procedurze należy otworzyć ustawienia
 
 Za pomocą adaptera danych diagnostycznych profilera ASP.NET skonfigurowanych w ustawieniu testu możesz teraz zbierać dane profilowania ASP.NET w aplikacji sieci Web ASP.NET.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Zbieranie informacji diagnostycznych za pomocą ustawień testu](../test/collect-diagnostic-information-using-test-settings.md)
 - [Instrukcje: Tworzenie ustawień testowych dla testu obciążenia rozłożonego](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)

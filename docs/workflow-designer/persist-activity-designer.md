@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: be8648dd-3eb9-4a50-8ec1-57a8be804692
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3daa7cef76d2448cc7bcda66a967a3406bb2352c
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 988c080b7b6c89baa4151858fcaf4e3320582e09
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435576"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968726"
 ---
 # <a name="persist-activity-designer"></a>Persist, projektant działań
 
@@ -29,7 +29,7 @@ Projektant działań **utrwalania** służy do tworzenia i konfigurowania <xref:
 
 ### <a name="using-the-persist-activity-designer"></a>Korzystanie z projektanta działań utrwalania
 
-Projektanta działań **utrwalania** można znaleźć w kategorii **środowiska uruchomieniowego** **przybornika** , do którego uzyskuje się dostęp przez kliknięcie karty **przybornika** (można również wybrać **Przybornik** z menu **Widok** lub CTRL + ALT + X).
+Projektanta działań **utrwalania** można znaleźć w kategorii **środowiska uruchomieniowego** **przybornika**, do którego uzyskuje się dostęp przez kliknięcie karty **przybornika** (można również wybrać **Przybornik** z menu **Widok** lub CTRL + ALT + X).
 
 Projektanta działań **utrwalania** można przeciągnąć z **przybornika** i porzucić na Projektant przepływu pracy powierzchnię, wszędzie tam, gdzie działania są zwykle umieszczane, na przykład wewnątrz <xref:System.Activities.Statements.Sequence> . Spowoduje to utworzenie <xref:System.Activities.Statements.Persist> działania z domyślną wartością **DisplayName** elementu utrwalania. <xref:System.Activities.Activity.DisplayName%2A>Można edytować w nagłówku projektanta działań **trwałych** lub w polu **DisplayName** siatki właściwości.
 
