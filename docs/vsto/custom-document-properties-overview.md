@@ -16,15 +16,15 @@ helpviewer_keywords:
 - _AssemblyName property
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8c30e0b3253e19316eed24fa26500cd55a3dd515
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 51039c71c97614cb9e43df263b3d7155c9cb86f6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847796"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947804"
 ---
 # <a name="custom-document-properties-overview"></a>Przegląd właściwości dokumentu niestandardowego
 
@@ -52,7 +52,7 @@ Ta właściwość zawiera ciąg, który zawiera szczegółowe informacje dotycz�
 
   *SolutionId* jest identyfikatorem GUID, który służy [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] do identyfikowania rozwiązania. *SolutionId* jest generowany automatycznie podczas kompilowania projektu. Termin **vstolocal** wskazuje [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , że zestaw powinien być załadowany z tego samego folderu co dokument.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Architektura rozwiązań pakietu Office w programie Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 - [Architektura dostosowań na poziomie dokumentu](../vsto/architecture-of-document-level-customizations.md)
