@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 79929dfd-22c9-4cec-a0d0-a16f15b8f7e4
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6023df4e0f8721f18a82950c0ea507406fd48e02
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: d4c3fdc30737a2266241e19ae40f840a41784cc1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96041052"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963292"
 ---
 # <a name="clean-devenvexe"></a>/Clean (devenv.exe)
 
@@ -38,7 +38,7 @@ devenv SolutionName /Clean [Config [/Project ProjName [/ProjectConfig ProjConfig
 
   Wymagane. Pełna ścieżka i nazwa pliku rozwiązania.
 
-- *Sygnatur*
+- *Config*
 
   Opcjonalny. Konfiguracja (na przykład `Debug` lub `Release` ) do czyszczenia plików pośrednich dla rozwiązania o nazwie w *SolutionName*. Jeśli jest dostępna więcej niż jedna platforma rozwiązania, należy również określić platformę (na przykład `Debug|Win32` ). Jeśli ten argument jest nieokreślony lub jest ciągiem pustym ( `""` ), narzędzie używa aktywnej konfiguracji rozwiązania.
 

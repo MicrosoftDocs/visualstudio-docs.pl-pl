@@ -15,15 +15,15 @@ helpviewer_keywords:
 - application development [Office development in Visual Studio], automating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 81c2852a92124a7cf9fb6078b196982d22100be7
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 11a0db0e23cf5512a6568ba5b66e0c18e563bd12
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528110"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962382"
 ---
 # <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Jak: docelowa aplikacja pakietu Office przy użyciu podstawowych zestawów międzyoperacyjnych
   Podczas tworzenia nowego projektu pakietu Office Program Visual Studio automatycznie dodaje odwołania do Microsoft Office podstawowych zestawów międzyoperacyjnych (zestawów PIA), które są wymagane do skompilowania projektu. Należy dodać odwołania do innych zestawów PIA w następujących scenariuszach:

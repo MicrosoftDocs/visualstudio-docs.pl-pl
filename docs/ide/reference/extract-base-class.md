@@ -1,23 +1,23 @@
 ---
-title: Wyodrębnij klasę bazową
+title: Wyodrębnianie klasy bazowej
 ms.date: 11/03/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8eb87ff8e3acc141c49a495b155fb769e03fb89b
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 8c389ac6285b3f20dcdf05833f1ff3202d155c4f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93402289"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962811"
 ---
-# <a name="extract-base-class"></a>Wyodrębnij klasę bazową
+# <a name="extract-base-class"></a>Wyodrębnianie klasy bazowej
 
 To Refaktoryzacja dotyczy:
 
@@ -41,7 +41,7 @@ To Refaktoryzacja dotyczy:
 
     ![Okno dialogowe wyodrębniania klasy bazowej](media/extract-base-class.png)
 
-Zostanie otwarte okno dialogowe **Wyodrębnij klasę bazową** , w którym można określić nazwę klasy bazowej i lokalizację, w której należy ją umieścić. Można wybrać elementy członkowskie, które mają zostać przeniesione do nowej klasy bazowej, i wybrać, aby uczynić elementy abstrakcyjne, zaznaczając pole wyboru w kolumnie Utwórz abstrakcyjny.
+Zostanie otwarte okno dialogowe **Wyodrębnij klasę bazową**, w którym można określić nazwę klasy bazowej i lokalizację, w której należy ją umieścić. Można wybrać elementy członkowskie, które mają zostać przeniesione do nowej klasy bazowej, i wybrać, aby uczynić elementy abstrakcyjne, zaznaczając pole wyboru w kolumnie Utwórz abstrakcyjny.
 
 ## <a name="see-also"></a>Zobacz też
 

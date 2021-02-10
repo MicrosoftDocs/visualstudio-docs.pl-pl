@@ -5,15 +5,15 @@ ms.date: 01/24/2018
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 97ce4f226c39a20ad41c5977f800aa178450c69c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3627a8944941fc77bb9b19fe3dd0a1549f41892a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89314943"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961589"
 ---
 # <a name="control-where-r-code-runs-with-workspaces"></a>Kontrolowanie, gdzie kod R jest uruchamiany z obszarami roboczymi
 
@@ -35,7 +35,7 @@ Polecenie **R Tools**  >  **Session**  >  **Reset** i przycisk Resetuj pasek nar
 
 Na liście lokalne obszary robocze są wyświetlane wszystkie interpretery języka R, które zostały zainstalowane na komputerze.
 
-Po uruchomieniu programu Visual Studio próbuje automatycznie wykryć wszystkie wersje języka R, które zostały zainstalowane, przeglądając klucz rejestru **HKEY_LOCAL_MACHINE \software\r-Core \\ ** . Ponieważ ten test jest wykonywany tylko podczas uruchamiania, należy ponownie uruchomić program Visual Studio po zainstalowaniu nowego interpretera języka R.
+Po uruchomieniu programu Visual Studio próbuje automatycznie wykryć wszystkie wersje języka R, które zostały zainstalowane, przeglądając klucz rejestru **HKEY_LOCAL_MACHINE\Software\R-Core\\** . Ponieważ ten test jest wykonywany tylko podczas uruchamiania, należy ponownie uruchomić program Visual Studio po zainstalowaniu nowego interpretera języka R.
 
 RTVS może nie wykryć interpretera języka R, który jest instalowany w sposób niestandardowym (na przykład podczas zwykłego kopiowania plików do folderu zamiast uruchamiania Instalatora). W takim przypadku należy ręcznie utworzyć nowy lokalny obszar roboczy języka R w następujący sposób:
 
@@ -99,7 +99,7 @@ To ostrzeżenie pojawia się również wtedy, gdy *certyfikat* z podpisem własn
 
 ## <a name="directories-on-local-and-remote-computers"></a>Katalogi na komputerach lokalnych i zdalnych
 
-Domyślnie po rozpoczęciu nowego interpretera języka R w lokalnym obszarze roboczym bieżący katalog roboczy jest *%USERPROFILE%\Documents*. Katalog można zmienić w dowolnym momencie za pomocą poleceń katalogu roboczego **narzędzi języka R**  >  **Working Directory** lub klikając prawym przyciskiem myszy projekt w programie Visual Studio Eksplorator rozwiązań i wybierając polecenia, takie jak **Ustaw katalog roboczy w tym miejscu**.
+Domyślnie po rozpoczęciu nowego interpretera języka R w lokalnym obszarze roboczym bieżący katalog roboczy jest *%USERPROFILE%\Documents*. Katalog można zmienić w dowolnym momencie za pomocą poleceń katalogu roboczego **narzędzi języka R**  >   lub klikając prawym przyciskiem myszy projekt w programie Visual Studio Eksplorator rozwiązań i wybierając polecenia, takie jak **Ustaw katalog roboczy w tym miejscu**.
 
 Gdy po raz pierwszy łączysz się z komputerem zdalnym, RTVS automatycznie tworzy profil użytkownika na podstawie Twoich poświadczeń, co spowoduje ustawienie katalogu roboczego do folderu *dokumenty* w tym profilu. Ten folder jest używany dla wszystkich kolejnych sesji zdalnych, które używają tych samych poświadczeń.
 
@@ -117,18 +117,18 @@ Pliki są kopiowane na serwer zdalny w następujący sposób:
 
 - Możesz również kopiować pliki, wybierając pozycję w Eksplorator rozwiązań a następnie wybierając pozycję **źródłowe wybrane pliki**. Ta akcja spowoduje załadowanie ich do okna interaktywnego i jego uruchomienie. Jeśli sesja jest podłączona do komputera zdalnego, pliki są najpierw kopiowane.
 
-- Gdy RTVS jest powiązany ze zdalnym obszarem roboczym i naciśniesz klawisz **F5**, wybierz pozycję **Debuguj**  >  **Rozpocznij debugowanie**lub w inny sposób Rozpocznij uruchamianie kodu, RTVS domyślnie automatycznie kopiuje plik projektu do zdalnego obszaru roboczego (zobacz poniżej, aby kontrolować to zachowanie).
+- Gdy RTVS jest powiązany ze zdalnym obszarem roboczym i naciśniesz klawisz **F5**, wybierz pozycję **Debuguj**  >  **Rozpocznij debugowanie** lub w inny sposób Rozpocznij uruchamianie kodu, RTVS domyślnie automatycznie kopiuje plik projektu do zdalnego obszaru roboczego (zobacz poniżej, aby kontrolować to zachowanie).
 
 - Wszystkie pliki, które już istnieją na serwerze, są zastępowane.
 
 > [!Note]
-> Ponieważ RTVS nie może niezawodnie przechwycić wszystkich wywołań funkcji R, wywoływanie funkcji takich jak `source()` lub `runApp()` (dla aplikacji Shiny) w *not* oknie interaktywnym nie kopiuje plików do zdalnego obszaru roboczego.
+> Ponieważ RTVS nie może niezawodnie przechwycić wszystkich wywołań funkcji R, wywoływanie funkcji takich jak `source()` lub `runApp()` (dla aplikacji Shiny) w  oknie interaktywnym nie kopiuje plików do zdalnego obszaru roboczego.
 
-[Właściwości projektu](r-projects-in-visual-studio.md#project-properties) kontrolują, czy RTVS kopiuje pliki, gdy projekt jest uruchomiony, i dokładnie te pliki są kopiowane. Aby otworzyć tę stronę, wybierz **Project**  >  polecenie menu**właściwości projektu (nazwa)** lub kliknij prawym przyciskiem myszy projekt w Eksplorator rozwiązań i wybierz polecenie **Właściwości**.
+[Właściwości projektu](r-projects-in-visual-studio.md#project-properties) kontrolują, czy RTVS kopiuje pliki, gdy projekt jest uruchomiony, i dokładnie te pliki są kopiowane. Aby otworzyć tę stronę, wybierz   >  polecenie menu **właściwości projektu (nazwa)** lub kliknij prawym przyciskiem myszy projekt w Eksplorator rozwiązań i wybierz polecenie **Właściwości**.
 
 ![Karta Uruchamianie właściwości projektu z ustawieniami transferu plików](media/workspaces-remote-file-transfer-filter-settings.png)
 
-W tym miejscu Właściwość **transfer Files on Run** określa, czy RTVS kopiuje pliki projektu automatycznie. **Pliki do przesłania** wartości następnie filtrują dokładnie te pliki, które są transferowane. Wartość domyślna to tylko kopiowanie *. R*, *. Pliki RMD*, *. SQL*, *. MD*i *. cpp* . Takie zachowanie pozwala uniknąć przypadkowego kopiowania dużych plików danych na serwer przy każdym uruchomieniu.
+W tym miejscu Właściwość **transfer Files on Run** określa, czy RTVS kopiuje pliki projektu automatycznie. **Pliki do przesłania** wartości następnie filtrują dokładnie te pliki, które są transferowane. Wartość domyślna to tylko kopiowanie *. R*, *. Pliki RMD*, *. SQL*, *. MD* i *. cpp* . Takie zachowanie pozwala uniknąć przypadkowego kopiowania dużych plików danych na serwer przy każdym uruchomieniu.
 
 ## <a name="copy-files-from-a-remote-workspace"></a>Kopiowanie plików ze zdalnego obszaru roboczego
 

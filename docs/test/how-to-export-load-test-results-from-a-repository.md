@@ -12,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 716c2af5-8737-4d31-956f-a0273f7c5c0c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 960605dd35a30af1b2c8933d24cfa80ebb97f6c1
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: a0e7d00949686cd7d52400c2d71123b86d28625b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95439917"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961511"
 ---
 # <a name="how-to-export-load-test-results-from-a-repository"></a>Instrukcje: Eksportowanie wyników testu obciążenia z repozytorium
 
@@ -55,7 +55,7 @@ Można zarządzać wynikami testów obciążenia z Edytor testu obciążeniowego
     > [!NOTE]
     > Okno dialogowe **otwieranie i zarządzanie ładowaniem wyniki testów** pozostaje otwarte po wyświetleniu wyników.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Zarządzanie wynikami testów obciążenia w repozytorium Wyniki testów obciążenia](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [Instrukcje: usuwanie wyników testu obciążenia z repozytorium](../test/how-to-delete-load-test-results-from-a-repository.md)

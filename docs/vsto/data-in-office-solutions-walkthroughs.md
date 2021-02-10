@@ -12,15 +12,15 @@ helpviewer_keywords:
 - walkthroughs [Office development in Visual Studio], data
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 25bf42015dcc60014012faf0254d4b6d02c30d56
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 4736b357017f5ff5244af8f078457b0289994e98
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845586"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962421"
 ---
 # <a name="data-in-office-solutions-walkthroughs"></a>Dane w przewodnikach rozwiązań pakietu Office
   Poniższe przewodniki przedstawiają sposób pracy z danymi w dostosowaniach na poziomie dokumentu i dodatkach VSTO dla Microsoft Office Word i Microsoft Office Excel.
@@ -49,7 +49,7 @@ ms.locfileid: "96845586"
 
 - [Przewodnik: zmiana danych buforowanych w skoroszycie na serwerze](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md) Pokazuje, jak zmodyfikować zestaw danych, który jest buforowany w Microsoft Office skoroszycie programu Excel bez uruchamiania programu Excel.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wskazówki dotyczące korzystania z programu Word](../vsto/walkthroughs-using-word.md)
 - [Wskazówki dotyczące korzystania z programu Excel](../vsto/walkthroughs-using-excel.md)
 - [Wskazówki dotyczące dostosowywania interfejsu użytkownika pakietu Office](../vsto/office-ui-customization-walkthroughs.md)

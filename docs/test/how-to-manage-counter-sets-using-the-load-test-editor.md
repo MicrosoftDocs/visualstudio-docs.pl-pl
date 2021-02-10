@@ -14,13 +14,13 @@ helpviewer_keywords:
 ms.assetid: 64315c2f-a0b2-4378-be16-0774b99beef5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 15d04d105264d07a1f883c5b67ce57c8590375a8
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 684715ed8ac29a3c85d0ea46799a2e14fb9722bf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440016"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961446"
 ---
 # <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Instrukcje: zarządzanie zbiorami liczników przy użyciu Edytor testu obciążeniowego
 
@@ -62,7 +62,7 @@ Zarządzanie zbiorami liczników obejmuje wybranie zestawu komputerów, z który
 
 6. Wybierz przycisk **OK**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Kontrolerzy testów i agenci testowi](configure-test-agents-and-controllers-for-load-tests.md)
 - [Określ zestawy liczników i reguły progowe dla komputerów w teście obciążenia](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)

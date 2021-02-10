@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a7d5c70f-a1a5-4120-9f70-184e01c25bff
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b04abdac135143ccbbd1b8e5632bf85c974f29d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c5cec0d93919058eae725a9e49198f1704d8bfc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721224"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962200"
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 Ten interfejs reprezentuje właściwość ramki stosu, właściwość dokumentu programu lub inną właściwość. Właściwość jest zwykle wynikiem obliczenia wyrażenia.
@@ -58,7 +58,7 @@ IDebugProperty2 : IUnknown
 |[GetDerivedMostProperty](../../../extensibility/debugger/reference/idebugproperty2-getderivedmostproperty.md)|Zwraca właściwość opisującą najbardziej pochodną Właściwość właściwości.|
 |[GetMemoryBytes](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md)|Zwraca bajty pamięci, które tworzą wartość właściwości.|
 |[GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md)|Zwraca kontekst pamięci dla wartości właściwości.|
-|[GetSize](../../../extensibility/debugger/reference/idebugproperty2-getsize.md)|Zwraca rozmiar wartości właściwości w bajtach.|
+|[GetSize —](../../../extensibility/debugger/reference/idebugproperty2-getsize.md)|Zwraca rozmiar wartości właściwości w bajtach.|
 |[GetReference](../../../extensibility/debugger/reference/idebugproperty2-getreference.md)|Zwraca odwołanie do wartości tej właściwości.|
 |[GetExtendedInfo](../../../extensibility/debugger/reference/idebugproperty2-getextendedinfo.md)|Zwraca rozszerzone informacje o właściwości.|
 

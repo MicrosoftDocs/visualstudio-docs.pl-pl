@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0e555b42-b846-4dbb-812e-8e3d11c85b2d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 78c7f24d64ffca667706c3b2fcebeffad16a9d85
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41201194ee76f92b4faa101c4811c35b44a0d890
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714257"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961888"
 ---
 # <a name="module_flags"></a>MODULE_FLAGS
 Używane do opisywania modułu.
@@ -28,7 +28,7 @@ Używane do opisywania modułu.
 ## <a name="syntax"></a>Składnia
 
 ```cpp
-enum enum_MODULE_FLAGS { 
+enum enum_MODULE_FLAGS { 
    MODULE_FLAG_NONE        = 0x0000,
    MODULE_FLAG_SYSTEM      = 0x0001,
    MODULE_FLAG_SYMBOLS     = 0x0002,
@@ -40,7 +40,7 @@ typedef DWORD MODULE_FLAGS;
 ```
 
 ```csharp
-public enum enum_MODULE_FLAGS { 
+public enum enum_MODULE_FLAGS { 
    MODULE_FLAG_NONE        = 0x0000,
    MODULE_FLAG_SYSTEM      = 0x0001,
    MODULE_FLAG_SYMBOLS     = 0x0002,
