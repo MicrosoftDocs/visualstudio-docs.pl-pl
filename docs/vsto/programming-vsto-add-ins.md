@@ -31,15 +31,15 @@ helpviewer_keywords:
 - ThisAddIn_Shutdown
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7c3a4b14a1935d1d276f0884234fcd121b838f39
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 83fdc3b6a60c5f8972ff5d955c56476fb13315d9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525119"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971833"
 ---
 # <a name="program-vsto-add-ins"></a>Dodatki narzędzi VSTO programu
   Po rozbudowaniu aplikacji Microsoft Office przez utworzenie dodatku VSTO należy napisać kod bezpośrednio względem `ThisAddIn` klasy w projekcie. Ta klasa służy do wykonywania zadań, takich jak uzyskiwanie dostępu do modelu obiektów aplikacji hosta Microsoft Office, Dostosowywanie interfejsu użytkownika i udostępnianie obiektów w dodatku VSTO do innych rozwiązań pakietu Office.

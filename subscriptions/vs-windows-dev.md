@@ -4,21 +4,24 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
-ms.date: 12/02/2020
+ms.date: 02/09/2021
 ms.topic: how-to
 description: Dowiedz się więcej na temat konta dewelopera systemu Windows dołączonego do subskrypcji programu Visual Studio.
-ms.openlocfilehash: 4b8d2190792f942f808c1fda62a7020fefdca866
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: a988dabb5849d13733c72ebb5976be489f67dd95
+ms.sourcegitcommit: 0f3606917cf5451e8c4e0b2e0c3fbb9113429645
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537724"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100089596"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Konto dewelopera systemu Windows w subskrypcjach programu Visual Studio
 Konto dewelopera systemu Windows, dołączone do wybranej subskrypcji programu Visual Studio, umożliwia przesyłanie bezpłatnych i płatnych aplikacji systemu Windows do sklepu Windows.
 
 ## <a name="activation-steps"></a>Kroki aktywacji
 Aby korzystać z konta dewelopera systemu Windows, musisz skonfigurować konto lub zalogować się przy użyciu istniejącego konta.
+
+> [!IMPORTANT]
+> Tworzenie konta dewelopera systemu Windows wymaga użycia konta Microsoft (MSA).  Korzystanie z kont Azure Active Directory nie jest obsługiwane.  
 
 Zalecamy utworzenie "prywatnego" okna przeglądarki dla tego procesu.  Na przykład w przeglądarce Google Chrome Utwórz nowe okno "incognito".  W programie Internet Explorer Utwórz nowe okno "InPrivate".
 
@@ -47,9 +50,9 @@ Zalecamy utworzenie "prywatnego" okna przeglądarki dla tego procesu.  Na przyk�
 | Visual Studio Enterprise subskrypcję z usługą GitHub Enterprise   | Licencja  | Dołączono       |  Tak|
 | Visual Studio Professional (standardowa) | LICENCJONOWANie, Azure, sprzedaż detaliczna                                       | Dołączono                                                            |Tak|
 | Visual Studio Professional subskrypcję z usługą GitHub Enterprise | Licencja                                        | Dołączono                                                            |Tak|
-| Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Niedostępne                                            |  Nie dotyczy|
-| Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              |  Niedostępne                                            |  Nie dotyczy|
-| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure                                       | Niedostępne                                                           |Nie dotyczy|
+| Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Niedostępne                                            |  NA|
+| Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              |  Niedostępne                                            |  NA|
+| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure                                       | Niedostępne                                                           |NA|
 ||
 
 <sup>1</sup>  *obejmuje: nie dotyczy odsprzedaży (NFR), pełnego etatu, programu Visual Studio Industry partner (VSIP), BizSpark, MCT Software & Services Developer, najbardziej cennych profesjonalistów (MVP), dyrektora regionalnego (RD). Wyklucza: Microsoft Partner Network (MPN), Wyobraź sobie, MCT Software & Services.*
@@ -73,6 +76,6 @@ Nie masz pewności, której subskrypcji używasz?  Połącz się z, [https://my.
 
 ## <a name="next-steps"></a>Następne kroki
 Pamiętaj, aby aktywować te doskonałe korzyści, aby zapewnić największą subskrypcję programu Visual Studio:
-- [Program Visual Studio](vs-ide-benefit.md)
+- [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
 - [Indywidualne środki na korzystanie z usługi Azure DevTest](vs-azure.md)
