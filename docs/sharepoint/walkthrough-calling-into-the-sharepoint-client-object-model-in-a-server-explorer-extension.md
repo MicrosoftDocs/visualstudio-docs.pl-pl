@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint commands [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c323f05d341af810eecafae43e8d04d3cba29054
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: a095e9d1e8fc48500bceac06732150a3067e2dd2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96913948"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937683"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Przewodnik: wywoływanie modelu obiektów klienta programu SharePoint w rozszerzeniu Eksplorator serwera
   W tym instruktażu pokazano, jak wywołać model obiektów klienta programu SharePoint z rozszerzenia dla węzła **połączenia programu SharePoint** w **Eksplorator serwera**. Aby uzyskać więcej informacji o sposobach korzystania z modelu obiektów klienta programu SharePoint, zobacz [Wywoływanie modeli obiektów programu SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
@@ -214,7 +214,7 @@ Znajomość następujących pojęć jest pomocna, ale nie jest wymagana, aby uko
 
 8. Na liście **projekt** wybierz pozycję **WebPartNodeExtension**, a następnie wybierz przycisk **OK** .
 
-9. Na pasku menu wybierz kompilacja Kompiluj **Build**  >  **rozwiązanie**, a następnie upewnij się, że rozwiązanie kompiluje się bez błędów.
+9. Na pasku menu wybierz kompilacja Kompiluj   >  **rozwiązanie**, a następnie upewnij się, że rozwiązanie kompiluje się bez błędów.
 
 10. Upewnij się, że folder danych wyjściowych kompilacji dla projektu WebPartNode zawiera teraz plik WebPartNode. VSIX.
 

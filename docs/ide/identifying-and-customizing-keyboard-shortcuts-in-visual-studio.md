@@ -14,15 +14,15 @@ helpviewer_keywords:
 - exporting shortcut keys [Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b551e3f980e962733d2797924331e4cd6dbefa5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 84d78a86c64cd85ea8738ec9038c5e64642ca950
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770852"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935953"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Identyfikowanie i Dostosowywanie skrótów klawiaturowych w programie Visual Studio
 
@@ -137,7 +137,7 @@ Domyślnie skróty są zapisywane w pliku w folderze *%USERPROFILE%\Documents\Vi
 
 3. Wybierz przycisk opcji **nie, tylko zaimportuj nowe ustawienia, zastępując Moje bieżące ustawienia** , a następnie wybierz **dalej**.
 
-4. W obszarze **Moje ustawienia**wybierz plik zawierający skróty, które chcesz zaimportować, lub kliknij przycisk **Przeglądaj** , aby zlokalizować właściwy plik.
+4. W obszarze **Moje ustawienia** wybierz plik zawierający skróty, które chcesz zaimportować, lub kliknij przycisk **Przeglądaj** , aby zlokalizować właściwy plik.
 
 5. Wybierz pozycję **Next** (Dalej).
 

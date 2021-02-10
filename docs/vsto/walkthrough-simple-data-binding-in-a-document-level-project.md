@@ -16,15 +16,15 @@ helpviewer_keywords:
 - simple data binding [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 868a120baa8207d922d3dee55e10c8e903381e19
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 31084703a581999a1f25bfc82db6c36d9e2cbf6c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524101"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937414"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Przewodnik: proste powiązanie danych w projekcie na poziomie dokumentu
   W tym instruktażu przedstawiono podstawowe informacje o powiązaniu danych w projekcie na poziomie dokumentu. Pojedyncze pole danych w bazie danych SQL Server jest powiązane z nazwanym zakresem w programie Microsoft Office Excel. W tym przewodniku pokazano również, jak dodać kontrolki, które umożliwiają przewijanie wszystkich rekordów w tabeli.

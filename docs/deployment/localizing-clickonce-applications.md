@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: c92b193b-054d-4923-834b-d4226a4c7a1a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 97c4fe8d72cc8e2216ee8f5057d032c071974bf3
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 8a8e1dea5fb3716d593ca9b28f52ca0cd59a054f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350832"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938502"
 ---
 # <a name="localize-clickonce-applications"></a>Lokalizowanie aplikacji ClickOnce
 Lokalizacja to proces tworzenia aplikacji odpowiedniej dla określonej kultury. Ten proces obejmuje przetłumaczenie tekstu interfejsu użytkownika do języka właściwego dla regionu, przy użyciu poprawnego formatowania daty i waluty, dostosowania rozmiaru kontrolek w formularzu i kontroli dublowania od prawej do lewej w razie potrzeby.
@@ -48,7 +48,7 @@ Lokalizacja to proces tworzenia aplikacji odpowiedniej dla określonej kultury. 
 
  Ta metoda jest wartością domyślną w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Aby użyć tej metody w programie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , nie trzeba wykonywać żadnych dodatkowych czynności.
 
- Aby użyć tej metody z *MageUI.exe* , należy ustawić kulturę dla aplikacji na **neutralną** w *MageUI.exe*. Następnie musisz ręcznie uwzględnić wszystkie zestawy satelickie we wdrożeniu. W *MageUI.exe* można dodać zestawy satelickie przy użyciu przycisku **Wypełnij** na karcie **pliki** manifestu aplikacji.
+ Aby użyć tej metody z *MageUI.exe*, należy ustawić kulturę dla aplikacji na **neutralną** w *MageUI.exe*. Następnie musisz ręcznie uwzględnić wszystkie zestawy satelickie we wdrożeniu. W *MageUI.exe* można dodać zestawy satelickie przy użyciu przycisku **Wypełnij** na karcie **pliki** manifestu aplikacji.
 
  Zaletą tego podejścia jest utworzenie jednego wdrożenia i uproszczenie zlokalizowanego scenariusza wdrożenia. W czasie wykonywania odpowiedni zestaw satelicki zostanie użyty w zależności od domyślnej kultury systemu operacyjnego Windows użytkownika. Wadą tego podejścia jest to, że pobieranie wszystkich zestawów satelickich za każdym razem, gdy aplikacja zostanie zainstalowana lub zaktualizowana na komputerze klienckim. Jeśli aplikacja ma dużą liczbę ciągów lub klienci mają wolne połączenie sieciowe, ten proces może mieć wpływ na wydajność podczas aktualizacji aplikacji.
 

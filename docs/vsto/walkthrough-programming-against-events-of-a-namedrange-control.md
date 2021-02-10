@@ -16,15 +16,15 @@ helpviewer_keywords:
 - worksheets, automating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9e311a567d32ee083bcc13f417c248f5f3d3ee5a
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: b3305fdc8f4fbadb3dcdd9775c3a6fe3dac3a1fb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526135"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937397"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>Przewodnik: program dla zdarzeń kontrolki NamedRange
   W tym instruktażu pokazano, jak dodać <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolkę do Microsoft Office arkusza i programu Excel z jego zdarzeń przy użyciu narzędzi programistycznych pakietu Office w programie Visual Studio.

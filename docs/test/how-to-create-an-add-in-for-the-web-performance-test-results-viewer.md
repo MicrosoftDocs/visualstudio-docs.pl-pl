@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: b8fa3b83fb9a92be0118f4222e92364767affcda
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: e2773165b37600eb214893de91f8fc8c4467c0d4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441081"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937631"
 ---
 # <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>Instrukcje: Tworzenie dodatku dla usługi Web Performance Wyniki testów Viewer
 
@@ -100,7 +100,7 @@ Na końcu tego artykułu zostanie użyty **Menedżer dodatków** .
 
 Dwie kopie plików *. addin* są tworzone automatycznie przez **kreatora dodatków** w następujący sposób:
 
-|**Lokalizacja pliku. AddIn**|**Opis**|
+|**. Lokalizacja pliku dodatku**|**Opis**|
 |-|----------------------------|-|
 |Folder główny projektu|Używane do wdrażania projektu dodatku. Zawarte w projekcie w celu ułatwienia edycji i ma ścieżkę lokalną dla wdrożenia w stylu XCopy.|
 |Folder dodatków|Używany do uruchamiania dodatku w środowisku debugowania. Powinien zawsze wskazywać ścieżkę wyjściową bieżącej konfiguracji kompilacji.|
@@ -336,7 +336,7 @@ Ustawienia na stronie Opcje zabezpieczeń dodatku są następujące:
 
 - **Zezwalaj składnikom dodatku na ładowanie z adresu URL.** Nie wybrano domyślnie. Po wybraniu tej opcję Dodatki mogą być ładowane z zewnętrznych witryn sieci Web. Gdy nie jest zaznaczone, dodatki zdalne nie mogą być ładowane w programie Visual Studio. Jeśli dodatek nie może zostać załadowany z jakiegoś powodu, nie można go załadować z sieci Web. To ustawienie kontroluje tylko ładowanie biblioteki DLL dodatku. *.* Pliki rejestracji dodatków muszą być zawsze zlokalizowane w systemie lokalnym.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - <xref:System.Windows.Forms.UserControl>
 - <xref:Microsoft.VisualStudio.TestTools.LoadTesting>

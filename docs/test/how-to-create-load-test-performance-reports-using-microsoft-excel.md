@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: b87fb196-9973-4512-a924-088788def4ea
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: a89818630258aab42535fb4256fa3e844b0c6878
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 1196f0893c73873d4be6d17c7e41ee56490590d9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442433"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937566"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Instrukcje: Tworzenie raportów wydajności testu obciążenia przy użyciu programu Microsoft Excel
 
@@ -150,6 +150,6 @@ Raporty programu Excel można generować w **analizatorze testu obciążenia**, 
 
 Wyniki testów obciążenia i raporty zawierają potencjalnie poufne informacje, które mogą być używane do tworzenia ataku na komputer lub w sieci. Wyniki testów obciążenia i raporty zawierają nazwy komputerów i parametry połączenia. Należy pamiętać o tym, gdy udostępniasz raporty testów obciążenia innym osobom.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Zgłoś wyniki testów obciążenia dla porównania testów lub analizy trendów](../test/compare-load-test-results.md)

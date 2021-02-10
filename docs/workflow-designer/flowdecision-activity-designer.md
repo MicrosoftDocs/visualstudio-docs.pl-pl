@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 4a49edc3-3662-4b7b-812e-0a5ba00d6c94
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a70e7e44976df975be721d93e918d7c25d192bf
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 77570557563b4aca3109f5bcbdebd16c7af09144
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437999"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938437"
 ---
 # <a name="flowdecision-activity-designer"></a>FlowDecision, projektant działań
 
@@ -29,11 +29,11 @@ Użyj <xref:System.Activities.Statements.FlowDecision> , gdy przepływ można ro
 
 ### <a name="using-the-flowdecision-designer"></a>Korzystanie z narzędzia FlowDecision Designer
 
-Projektanta **FlowDecision** można znaleźć w kategorii **schemat blokowy** , do którego **uzyskuje się dostęp** , klikając kartę **Przybornik** na Projektant przepływu pracy. Alternatywnie możesz wybrać **Przybornik** z menu **Widok** lub nacisnąć **klawisze CTRL** + **Alt** + **X**.
+Projektanta **FlowDecision** można znaleźć w kategorii **schemat blokowy** , do którego **uzyskuje się dostęp**, klikając kartę **Przybornik** na Projektant przepływu pracy. Alternatywnie możesz wybrać **Przybornik** z menu **Widok** lub nacisnąć **klawisze CTRL** + **Alt** + **X**.
 
 Projektanta **FlowDecision** można przeciągnąć z **przybornika** i porzucić do Projektant przepływu pracy powierzchni w ramach projektanta działań **schematu blokowego** . Spowoduje to utworzenie <xref:System.Activities.Statements.FlowDecision> oznaczonej **decyzji** w ramach <xref:System.Activities.Statements.Flowchart> działania. Wskaźnik myszy nad projektantem i dojścia do **rzeczywistych** i **fałszywych** kwadratów dla dwóch gałęzi.
 
-Po przeciągnięciu projektanta **FlowDecision** i innych projektantów na **schemat blokowy** węzły mogą być połączone ze sobą, aby określić kolejność wykonywania. Aby utworzyć łącze między węzłem źródłowym (z uwzględnieniem **rzeczywistych** i **fałszywych** gałęzi **FlowDecision** ) i węzłem docelowym, mysz nad projektantem węzła źródłowego i uchwyty kwadratowe pojawiają się po każdej stronie. Kliknij jeden z uchwytów kwadratowych i przeciągnij go, przytrzymując wciśnięty przycisk myszy do jednego z uchwytów, które pojawiają się w podobny sposób wokół węzła docelowego po umieszczeniu nad nim wskaźnika myszy. Zwolnij przycisk myszy, a łącze między utworzonymi tymi dwoma węzłami jest reprezentowane jako strzałka z projektanta źródła do projektanta docelowego.
+Po przeciągnięciu projektanta **FlowDecision** i innych projektantów na **schemat blokowy** węzły mogą być połączone ze sobą, aby określić kolejność wykonywania. Aby utworzyć łącze między węzłem źródłowym (z uwzględnieniem **rzeczywistych** i **fałszywych** gałęzi **FlowDecision**) i węzłem docelowym, mysz nad projektantem węzła źródłowego i uchwyty kwadratowe pojawiają się po każdej stronie. Kliknij jeden z uchwytów kwadratowych i przeciągnij go, przytrzymując wciśnięty przycisk myszy do jednego z uchwytów, które pojawiają się w podobny sposób wokół węzła docelowego po umieszczeniu nad nim wskaźnika myszy. Zwolnij przycisk myszy, a łącze między utworzonymi tymi dwoma węzłami jest reprezentowane jako strzałka z projektanta źródła do projektanta docelowego.
 
 Wyrażenie określające, że <xref:System.Activities.Statements.FlowDecision.Condition%2A> można wpisać w polu **warunek** okna **Właściwości** , klikając miejsce, w którym tekst wskazówki brzmi "wprowadź wyrażenie VB".
 

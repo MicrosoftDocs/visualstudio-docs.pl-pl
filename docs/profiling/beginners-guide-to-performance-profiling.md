@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: da2fbf8a-2d41-4654-a509-dd238532d25a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: caac02510d2fce95fa67340d2061341ed77ac13e
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: a18302067749e3b4fc70b08519056dc391d3dca4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90075434"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936889"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Mierzenie wydajności aplikacji przez analizowanie użycia procesora CPU
 
@@ -31,7 +31,7 @@ Wykorzystaj problemy z wydajnością podczas debugowania za pomocą narzędzia d
 Po wstrzymaniu debugera narzędzie **użycie procesora CPU** w oknie narzędzia diagnostyczne zbiera informacje o funkcjach, które są wykonywane w aplikacji. Narzędzie wyświetla listę funkcji, które zostały wykonane i zawiera wykres osi czasu, którego można użyć do skoncentrowania się na określonych segmentach sesji próbkowania.
 
 > [!Important]
-> Narzędzia diagnostyczne zintegrowane z debugerem są obsługiwane przez Programowanie dla platformy .NET w programie Visual Studio, w tym ASP.NET, ASP.NET Core i na potrzeby programowania natywnego/C++. System Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania przy użyciu debugera (okno**Narzędzia diagnostyczne** ).
+> Narzędzia diagnostyczne zintegrowane z debugerem są obsługiwane przez Programowanie dla platformy .NET w programie Visual Studio, w tym ASP.NET, ASP.NET Core i na potrzeby programowania natywnego/C++. System Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania przy użyciu debugera (okno **Narzędzia diagnostyczne** ).
 
 W tym samouczku wykonasz następujące czynności:
 
@@ -51,7 +51,7 @@ Jeśli **użycie procesora CPU** nie zapewnia potrzebnych danych, inne narzędzi
 
 3. Okno **Narzędzia diagnostyczne** jest automatycznie wyświetlane, chyba że zostało wyłączone. Aby ponownie wyświetlić okno, kliknij pozycję **Debuguj**  >  **okna**  >  **Pokaż narzędzia diagnostyczne**.
 
-4. Można wybrać, czy ma być wyświetlane **użycie procesora CPU**, [użycie pamięci](../profiling/Memory-Usage.md), czy oba, z ustawieniem **Wybierz Narzędzia** na pasku narzędzi. Jeśli używasz Visual Studio Enterprise, możesz również włączyć lub wyłączyć IntelliTrace w opcji **Narzędzia**  >  **Options**  >  **IntelliTrace**.
+4. Można wybrać, czy ma być wyświetlane **użycie procesora CPU**, [użycie pamięci](../profiling/Memory-Usage.md), czy oba, z ustawieniem **Wybierz Narzędzia** na pasku narzędzi. Jeśli używasz Visual Studio Enterprise, możesz również włączyć lub wyłączyć IntelliTrace w opcji **Narzędzia**  >    >  **IntelliTrace**.
 
      ![Pokaż narzędzia diagnostyczne](../profiling/media/diag-tools-select-tool.png "DiagToolsSelectTool")
 
@@ -71,7 +71,7 @@ Jeśli **użycie procesora CPU** nie zapewnia potrzebnych danych, inne narzędzi
 
      ![Narzędzia diagnostyczne umożliwiają profilowanie procesora CPU](../profiling/media/diag-tools-enable-cpu-profiling.png "DiagToolsEnableCPUProfiling")
 
-     Po wybraniu opcji **Rejestruj profil procesora CPU**program Visual Studio rozpocznie nagrywanie funkcji i czas ich wykonania. Te zebrane dane można wyświetlić tylko wtedy, gdy aplikacja jest zatrzymana w punkcie przerwania.
+     Po wybraniu opcji **Rejestruj profil procesora CPU** program Visual Studio rozpocznie nagrywanie funkcji i czas ich wykonania. Te zebrane dane można wyświetlić tylko wtedy, gdy aplikacja jest zatrzymana w punkcie przerwania.
 
 8. Naciśnij klawisz F5, aby uruchomić aplikację w drugim punkcie przerwania.
 
@@ -130,7 +130,7 @@ Zalecamy rozpoczęcie analizowania danych przez badanie listy funkcji w obszarze
     ![Drzewo wywołań narzędzi diagnostycznych](../profiling/media/diag-tools-call-tree.png "DiagToolsCallTree")
     ::: moniker-end
 
-    |Obraz|Opis|
+    |Image (Obraz)|Opis|
     |-|-|
     |![Krok 1](../profiling/media/ProcGuid_1.png "ProcGuid_1")|Węzeł najwyższego poziomu w drzewach wywołań użycia procesora CPU jest pseudo-węzłem|
     |![Krok 2](../profiling/media/ProcGuid_2.png "ProcGuid_2")|W większości aplikacji, gdy opcja [Pokaż zewnętrzny kod](#view-external-code) jest wyłączona, węzeł drugiego poziomu jest węzłem **[zewnętrzny kod]** zawierającym kod systemowy i program, który rozpoczyna i kończy działanie aplikacji, rysuje interfejs użytkownika, kontroluje planowanie wątków i udostępnia inne usługi niskiego poziomu aplikacji.|

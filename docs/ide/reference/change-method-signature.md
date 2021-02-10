@@ -5,7 +5,7 @@ ms.date: 07/20/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 f1_keywords:
 - vs.csharp.refactoring.remove
 - vs.csharp.refactoring.reorder
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2d91406b65950515afb3659c0d5918841465b2fc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 01acbab7725effff5b2edbf8a80ab4f115fd2eff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86869571"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935849"
 ---
 # <a name="change-a-method-signature-refactoring"></a>Zmiana refaktoryzacji sygnatury metody
 

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - content controls [Office development in Visual Studio], adding to documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2dd7e75048a84a4e235390b99d17d48dfad039ec
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 4bd636070a8375b6761cb2d3ab62d08be4302db4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524980"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937501"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>Przewodnik: Tworzenie szablonu za pomocą kontrolek zawartości
   W tym instruktażu pokazano, jak utworzyć dostosowanie na poziomie dokumentu, które używa formantów zawartości do tworzenia zawartości strukturalnej i wielokrotnego użytku w szablonie programu Microsoft Office Word.

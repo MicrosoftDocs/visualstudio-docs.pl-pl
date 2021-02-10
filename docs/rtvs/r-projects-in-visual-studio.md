@@ -5,21 +5,21 @@ ms.date: 06/29/2017
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: bcdef95935c0522c8b93a972d7f44fbd7632c53b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 42cdc6e964d23b5aafdfe225c04d5d35b151cc08
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89312694"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936408"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Tworzenie projektów języka R w programie Visual Studio
 
 Projekt R (plik *. RXPROJ* ) identyfikuje wszystkie pliki źródłowe i zawartości skojarzone z projektem. Zawiera również informacje o kompilacji dla każdego pliku, utrzymuje informacje do integracji z systemami kontroli źródła i pomaga organizować aplikację w składnikach logicznych. Informacje dotyczące obszaru roboczego, takie jak lista zainstalowanych pakietów, są jednak obsługiwane oddzielnie w obszarze roboczym.
 
-Projekty są zawsze zarządzane w ramach *rozwiązania*programu Visual Studio, które może zawierać dowolną liczbę projektów, które mogą odwoływać się do siebie nawzajem. Zobacz [Używanie wielu typów projektów w programie Visual Studio](#use-multiple-project-types-in-visual-studio).
+Projekty są zawsze zarządzane w ramach *rozwiązania* programu Visual Studio, które może zawierać dowolną liczbę projektów, które mogą odwoływać się do siebie nawzajem. Zobacz [Używanie wielu typów projektów w programie Visual Studio](#use-multiple-project-types-in-visual-studio).
 
 ## <a name="creating-a-new-r-project"></a>Tworzenie nowego projektu R
 
@@ -33,13 +33,13 @@ To polecenie tworzy projekt z pustym *skryptem. Plik języka R* jest otwarty w e
 
 ![Zawartość projektu języka R utworzonego na podstawie szablonu](media/projects-template-results.png)
 
-*. Rhistory* rejestruje wszelkie polecenia wprowadzane do okna [R Interactive](interactive-repl-for-r-in-visual-studio.md) . Możesz otworzyć dedykowane okno **historii przy użyciu**  >  polecenia**Windows History systemu Microsoft**  >  **History** . To okno ma przycisk paska narzędzi i elementy menu kontekstowego, aby wyczyścić zawartość historii.
+*. Rhistory* rejestruje wszelkie polecenia wprowadzane do okna [R Interactive](interactive-repl-for-r-in-visual-studio.md) . Możesz otworzyć dedykowane okno **historii przy użyciu**  >  polecenia **Windows History systemu Microsoft**  >   . To okno ma przycisk paska narzędzi i elementy menu kontekstowego, aby wyczyścić zawartość historii.
 
 Plik *rproject. rproj* przechowuje niektóre ustawienia projektu specyficzne dla języka R, które nie są zarządzane w inny sposób przez program Visual Studio:
 
 | Właściwość | Domyślne | Opis |
 | --- | --- | --- |
-| Wersja | 1,0 | Wersja R Tools for Visual Studio użyta do utworzenia projektu. |
+| Wersja | 1.0 | Wersja R Tools for Visual Studio użyta do utworzenia projektu. |
 | RestoreWorkspace | Domyślne | Automatycznie Ładuj poprzednie zmienne obszaru roboczego z `.RData` pliku w katalogu projektu. |
 | SaveWorkspace | Domyślne | Zapisz bieżące zmienne obszaru roboczego do `.RData` pliku w katalogu projektu podczas zamykania projektu. |
 | AlwaysSaveHistory | Domyślne | Zapisz bieżącą historię okna interaktywnego do `.RHistory` pliku w katalogu projektu podczas zamykania projektu. |
@@ -56,21 +56,21 @@ Jeśli masz istniejący folder programu *. Pliki języka R* , które mają być 
 
 1. Utwórz nowy projekt w programie Visual Studio, jak w poprzedniej sekcji.
 1. Skopiuj pliki do folderu projektu.
-1. W programie Visual Studio Eksplorator rozwiązań kliknij prawym przyciskiem myszy projekt, wybierz polecenie **Dodaj**  >  **istniejący element**i przejdź do plików, które chcesz dodać. Te pliki pojawiają się w drzewie projektu po wybraniu przycisku **OK**.
+1. W programie Visual Studio Eksplorator rozwiązań kliknij prawym przyciskiem myszy projekt, wybierz polecenie **Dodaj**  >  **istniejący element** i przejdź do plików, które chcesz dodać. Te pliki pojawiają się w drzewie projektu po wybraniu przycisku **OK**.
 1. Aby zorganizować kod w podfolderach, kliknij prawym przyciskiem myszy projekt, najpierw wybierz opcję **Dodaj**  >  **Nowy folder** , a następnie skopiuj pliki do tego folderu i Dodaj te istniejące elementy w kroku 3.
 
 ## <a name="project-properties"></a>Właściwości projektu
 
-Aby otworzyć strony właściwości projektu, kliknij prawym przyciskiem myszy projekt w **Eksplorator rozwiązań** i wybierz polecenie **Właściwości**lub wybierz element menu **Właściwości > projektu (nazwa projektu)** . Otwarte okno wyświetla właściwości projektu:
+Aby otworzyć strony właściwości projektu, kliknij prawym przyciskiem myszy projekt w **Eksplorator rozwiązań** i wybierz polecenie **Właściwości** lub wybierz element menu **Właściwości > projektu (nazwa projektu)** . Otwarte okno wyświetla właściwości projektu:
 
 | Tab | Właściwość | Opis |
 | --- | --- | --- |
-| Uruchom | Plik startowy | Nazwa pliku, który jest uruchamiany za pomocą polecenia **źródłowego pliku startowego** , **F5**, **Debug**  >  **debugowanie rozpoczęcia**debugowania lub Rozpocznij **debugowanie**  >  **bez debugowania**. Kliknij prawym przyciskiem myszy plik w projekcie i wybierz polecenie **Ustaw jako startowy skrypt R** również ustawia go jako plik startowy. |
+| Uruchom | Plik startowy | Nazwa pliku, który jest uruchamiany za pomocą polecenia **źródłowego pliku startowego** , **F5**,   >  **debugowanie rozpoczęcia** debugowania lub Rozpocznij **debugowanie**  >  **bez debugowania**. Kliknij prawym przyciskiem myszy plik w projekcie i wybierz polecenie **Ustaw jako startowy skrypt R** również ustawia go jako plik startowy. |
 | | Resetuj R Interactive przy uruchomieniu | Czyści wszystkie zmienne z obszaru roboczego okna interaktywnego podczas uruchamiania projektu. To gwarantuje, że nie ma żadnej końcowej zawartości obszaru roboczego z poprzedniej. |
 | | Ścieżka projektu zdalnego | Ścieżka do zdalnego obszaru roboczego. |
 | | Transferowanie plików przy uruchomieniu | Wskazuje, czy pliki projektu, zgodnie z filtrem w **plikach do przeniesienia**, mają zostać skopiowane do zdalnego obszaru roboczego przy każdym uruchomieniu. |
 | | Pliki do przesłania | Nazwy plików i symbole wieloznaczne wskazujące określone pliki do skopiowania do zdalnego obszaru roboczego, jeśli wybrano **pliki transferu w uruchomieniu** . |
-| Ustawienia | (Plik Settings. R) | Ustawienia projektu języka R pochodzą z *ustawień. R* lub **. Settings. R* pliki, które znajdują się wewnątrz projektu. Jeśli nie ma pliku ustawień, możesz dodać zmienne, zapisać stronę i domyślny plik *Ustawienia. R* . Możesz również **dodać plik ustawień**do projektu za pomocą  >  polecenia menu**Dodaj nowy element** . <br/> Ustawienia są przechowywane jako kod języka R, a plik może być źródłem przed uruchomieniem innych modułów, co oznacza wstępne wypełnianie środowiska ze wstępnie zdefiniowanymi ustawieniami. |
+| Ustawienia | (Plik Settings. R) | Ustawienia projektu języka R pochodzą z *ustawień. R* lub **. Settings. R* pliki, które znajdują się wewnątrz projektu. Jeśli nie ma pliku ustawień, możesz dodać zmienne, zapisać stronę i domyślny plik *Ustawienia. R* . Możesz również **dodać plik ustawień** do projektu za pomocą  >  polecenia menu **Dodaj nowy element** . <br/> Ustawienia są przechowywane jako kod języka R, a plik może być źródłem przed uruchomieniem innych modułów, co oznacza wstępne wypełnianie środowiska ze wstępnie zdefiniowanymi ustawieniami. |
 
 ## <a name="r-specific-project-commands"></a>Polecenia projektu specyficznego dla języka R
 
@@ -86,10 +86,10 @@ Projekty programu Visual Studio obsługują wiele ogólnych poleceń za pomocą 
 
 ## <a name="r-specific-item-templates"></a>Szablony elementów specyficznych dla języka R
 
-RTVS zawiera wiele szablonów dla określonych typów plików. Aby uzyskać dostęp do szablonów, kliknij prawym przyciskiem myszy projekt R i wybierz polecenie **Dodaj**  >  **nowy element**, wybierając pozycję **projekt**  >  **Dodaj nowy element**lub używając **pliku**  >  **Nowy**  >  **plik** i wybierając kartę **R** . Najlepszym sposobem eksplorowania szablonu jest utworzenie nowego projektu i wstawienie plików każdego typu.
+RTVS zawiera wiele szablonów dla określonych typów plików. Aby uzyskać dostęp do szablonów, kliknij prawym przyciskiem myszy projekt R i wybierz polecenie **Dodaj**  >  **nowy element**, wybierając pozycję **projekt**  >  **Dodaj nowy element** lub używając **pliku**  >  **Nowy**  >  **plik** i wybierając kartę **R** . Najlepszym sposobem eksplorowania szablonu jest utworzenie nowego projektu i wstawienie plików każdego typu.
 
 > [!Note]
-> W **Add**  >  poleceniach Dodaj**nowy element** są również wyświetlane ogólne typy plików, które nie są wymienione w **File**tabeli. plik o  >  **nowym**  >  **pliku** te typy są zawarte zamiast na karcie **Ogólne** .
+> W   >  poleceniach Dodaj **nowy element** są również wyświetlane ogólne typy plików, które nie są wymienione w tabeli. plik o  >  **nowym**  >  **pliku** te typy są zawarte zamiast na karcie **Ogólne** .
 
 | Typ pliku | Opis |
 | --- | --- |

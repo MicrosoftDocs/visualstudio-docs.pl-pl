@@ -12,15 +12,15 @@ helpviewer_keywords:
 - site definitions [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0411f027b105622d806e123bd80f38c4b05281ca
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: def1ae862a7b9ba4def62cb590260c5a18758929
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96913857"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937709"
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>Przewodnik: Tworzenie podstawowego projektu definicji lokacji
   W tym instruktażu pokazano, jak utworzyć podstawową definicję witryny, która zawiera wizualny składnik Web Part z niektórymi kontrolkami. Dla jasności, tworzony składnik Web Part ma tylko kilka kontrolek. Można jednak utworzyć bardziej zaawansowane definicje witryn programu SharePoint, które zawierają więcej funkcji.

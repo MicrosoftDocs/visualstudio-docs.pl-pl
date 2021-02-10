@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: 842112fc-b886-4801-8cd7-a25b314b0393
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bfd12808a4639f44a3a5075a4b474012ab2c2fa
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 0419ae09f2b43b396062fc8a3232b0a63c81483c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719412"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936395"
 ---
 # <a name="profiling-and-windows-vista-security"></a>Profilowanie i bezpieczeństwo systemu Windows Vista
 
@@ -46,7 +46,7 @@ Listę procesów, które są dostępne, można wyświetlić, ustawiając opcje w
 
   Gdy ta opcja nie jest zaznaczona, na liście są wyświetlane procesy w bieżącej sesji. W przeciwnym razie lista wyświetla procesy we wszystkich sesjach.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Omówienia](../profiling/overviews-performance-tools.md)
 - [VSPerfCmd](../profiling/vsperfcmd.md)

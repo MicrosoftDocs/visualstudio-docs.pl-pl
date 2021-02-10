@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cf227cf8-39d9-4758-8f7e-a697aebb1926
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c89cecbf22091a45e31c307c5b523ac8aa4c924e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f0331365716c8399c1b2a565fc8046482df5d80f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714861"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938905"
 ---
 # <a name="ipropertyproxyeeside"></a>IPropertyProxyEESide
 Ten interfejs zapewnia metody do wyświetlania danych na skojarzonym obiekcie. Ten interfejs jest częścią obsługi wizualizatorów typów.

@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: 798de693-e43a-4056-aff5-48310c2172c5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b88abc935ca9eaef0a22230d427817756629bcb
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: cc1dc50c379ab2eac7d44c48e06834dd73c477f7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719438"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936434"
 ---
 # <a name="profiler-sampling-method-data-views"></a>Widok danych metody próbkowania profilera
 Ta sekcja zawiera informacje referencyjne dotyczące widoków i raportów plików danych profilera, które zostały wygenerowane za pomocą metody próbkowania.
@@ -55,7 +55,7 @@ Ta sekcja zawiera informacje referencyjne dotyczące widoków i raportów plikó
 
  Wyświetla listę wierszy kodu źródłowego, które były wykonywane po zebraniu próbek.
 
-## <a name="reference"></a>Odwołanie
+## <a name="reference"></a>Dokumentacja
 - [Widok procesu](../profiling/process-view.md)
 
  Wyświetla listę czasów rozpoczęcia i zakończenia procesu i wątku.
@@ -77,5 +77,5 @@ Ta sekcja zawiera informacje referencyjne dotyczące widoków i raportów plikó
 
  Informacje referencyjne dotyczące widoków i raportów plików danych profilera, które zawierają dane pamięci platformy .NET.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Omówienie wartości danych próbkowania](../profiling/understanding-sampling-data-values.md)

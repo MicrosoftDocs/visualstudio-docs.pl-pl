@@ -5,17 +5,17 @@ ms.date: 03/18/2019
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9031b0107babf3d31b6e3b70bb7952cd83467d7d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 09203557fd9adcd6580dfafa981d6ed4f80eca16
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238793"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936460"
 ---
 # <a name="python-projects-in-visual-studio"></a>Projekty języka Python w programie Visual Studio
 
@@ -23,7 +23,7 @@ Aplikacje języka Python są zazwyczaj definiowane przy użyciu tylko folderów 
 
 ![Projekt w języku Python w Eksplorator rozwiązań](media/projects-solution-explorer.png)
 
-Ponadto projekty są zawsze zarządzane w ramach *rozwiązania*programu Visual Studio, które może zawierać dowolną liczbę projektów, które mogą odwoływać się do siebie nawzajem. Na przykład projekt języka Python może odwoływać się do projektu C++, który implementuje moduł rozszerzenia. W przypadku tej relacji program Visual Studio automatycznie kompiluje projekt C++ (w razie potrzeby) po rozpoczęciu debugowania projektu języka Python. (W celu uzyskania ogólnej dyskusji zobacz [rozwiązania i projekty w programie Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)).
+Ponadto projekty są zawsze zarządzane w ramach *rozwiązania* programu Visual Studio, które może zawierać dowolną liczbę projektów, które mogą odwoływać się do siebie nawzajem. Na przykład projekt języka Python może odwoływać się do projektu C++, który implementuje moduł rozszerzenia. W przypadku tej relacji program Visual Studio automatycznie kompiluje projekt C++ (w razie potrzeby) po rozpoczęciu debugowania projektu języka Python. (W celu uzyskania ogólnej dyskusji zobacz [rozwiązania i projekty w programie Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)).
 
 Program Visual Studio oferuje różne szablony projektów języka Python umożliwiające szybkie konfigurowanie wielu struktur aplikacji, w tym szablonu do tworzenia projektu na podstawie istniejącego drzewa folderów i szablonu do tworzenia czystego, pustego projektu. Zobacz [Szablony projektów](#project-templates) dla indeksu.
 
@@ -53,10 +53,10 @@ Każdy projekt w języku Python ma jeden przypisany plik do uruchomienia przedst
 > Jeśli chcesz, aby okno dane wyjściowe było otwarte z dowolnego powodu, kliknij projekt prawym przyciskiem myszy, wybierz polecenie **Właściwości**, wybierz kartę **debugowanie** , a następnie Dodaj `-i` do pola **argumenty interpretera** . Ten argument powoduje, że interpreter przechodzi w tryb interaktywny po zakończeniu działania programu, dzięki czemu okno zostanie otwarte do momentu wprowadzenia **klawisza Ctrl** + **z**  >  **Enter** , aby wyjść.
 
 ::: moniker range="vs-2017"
-Nowy projekt jest zawsze skojarzony z domyślnym globalnym środowiskiem Python. Aby skojarzyć projekt z innym środowiskiem (w tym środowiskami wirtualnymi), kliknij prawym przyciskiem myszy węzeł **środowiska Python** w projekcie, wybierz polecenie **Dodaj/Usuń środowiska Python**i wybierz żądane opcje.
+Nowy projekt jest zawsze skojarzony z domyślnym globalnym środowiskiem Python. Aby skojarzyć projekt z innym środowiskiem (w tym środowiskami wirtualnymi), kliknij prawym przyciskiem myszy węzeł **środowiska Python** w projekcie, wybierz polecenie **Dodaj/Usuń środowiska Python** i wybierz żądane opcje.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-Nowy projekt jest zawsze skojarzony z domyślnym globalnym środowiskiem Python. Aby skojarzyć projekt z innym środowiskiem (w tym środowiskami wirtualnymi), kliknij prawym przyciskiem myszy węzeł **środowiska Python** w projekcie, wybierz polecenie **Dodaj środowisko**i wybierz odpowiednie. Możesz również użyć kontrolki lista rozwijana środowiska na pasku narzędzi, aby wybrać środowisko i dodać kolejną do projektu.
+Nowy projekt jest zawsze skojarzony z domyślnym globalnym środowiskiem Python. Aby skojarzyć projekt z innym środowiskiem (w tym środowiskami wirtualnymi), kliknij prawym przyciskiem myszy węzeł **środowiska Python** w projekcie, wybierz polecenie **Dodaj środowisko** i wybierz odpowiednie. Możesz również użyć kontrolki lista rozwijana środowiska na pasku narzędzi, aby wybrać środowisko i dodać kolejną do projektu.
 
 ![Polecenie Dodaj środowisko na pasku narzędzi języka Python](media/environments/environments-toolbar-2019.png)
 ::: moniker-end
@@ -69,13 +69,13 @@ Aby zmienić aktywne środowisko, kliknij prawym przyciskiem myszy odpowiednie �
 
 ## <a name="project-templates"></a>Szablony projektów
 
-Program Visual Studio oferuje kilka sposobów konfigurowania projektu języka Python — od podstaw lub z istniejącego kodu. Aby użyć szablonu, wybierz polecenie **plik**  >  **Nowy**  >  **projekt** menu, lub kliknij prawym przyciskiem myszy rozwiązanie w **Eksplorator rozwiązań** i wybierz polecenie **Dodaj**  >  **Nowy projekt**, z którego korzystasz w oknie dialogowym **Nowy projekt** . Aby wyświetlić szablony dotyczące języka Python, Wyszukaj w języku Python lub wybierz zainstalowany węzeł języka **Installed**  >  **Python** :
+Program Visual Studio oferuje kilka sposobów konfigurowania projektu języka Python — od podstaw lub z istniejącego kodu. Aby użyć szablonu, wybierz polecenie **plik**  >  **Nowy**  >  **projekt** menu, lub kliknij prawym przyciskiem myszy rozwiązanie w **Eksplorator rozwiązań** i wybierz polecenie **Dodaj**  >  **Nowy projekt**, z którego korzystasz w oknie dialogowym **Nowy projekt** . Aby wyświetlić szablony dotyczące języka Python, Wyszukaj w języku Python lub wybierz zainstalowany węzeł języka   >  **Python** :
 
 ![Okno dialogowe nowego projektu z szablonami języka Python](media/projects-new-project-dialog.png)
 
 Poniższa tabela zawiera podsumowanie szablonów dostępnych w programie Visual Studio 2017 i nowszych (nie wszystkie szablony są dostępne we wszystkich poprzednich wersjach):
 
-| Szablon | Opis |
+| Template | Opis |
 | --- | --- |
 | [**Z istniejącego kodu języka Python**](#create-project-from-existing-files) | Tworzy projekt programu Visual Studio z istniejącego kodu w języku Python w strukturze folderów.  |
 | **Aplikacja języka Python** | Podstawowa struktura projektu dla nowej aplikacji w języku Python z jednym pustym plikiem źródłowym. Domyślnie projekt jest uruchamiany w interpreterze konsoli domyślnego środowiska globalnego, które można zmienić, [przypisując inne środowisko](selecting-a-python-environment-for-a-project.md). |
@@ -125,11 +125,11 @@ Aby dodać istniejący element jako link, kliknij prawym przyciskiem myszy folde
 
 Jeśli spróbujesz połączyć się z plikiem, który już istnieje w folderach projektu, jest on dodawany jako normalny plik, a nie jako link. Aby przekonwertować plik na link, wybierz pozycję **plik**  >  **Zapisz jako** , aby zapisać plik w lokalizacji poza hierarchią projektu; Program Visual Studio automatycznie konwertuje go na link. Analogicznie, link można przekonwertować z powrotem przy użyciu **pliku**  >  **Zapisz jako** , aby zapisać plik w obrębie hierarchii projektu.
 
-W przypadku przenoszenia połączonego pliku w **Eksplorator rozwiązań**łącze jest przenoszone, ale nie ma to żadnego oddziaływania. Analogicznie, Usunięcie linku spowoduje usunięcie łącza bez wpływu na plik.
+W przypadku przenoszenia połączonego pliku w **Eksplorator rozwiązań** łącze jest przenoszone, ale nie ma to żadnego oddziaływania. Analogicznie, Usunięcie linku spowoduje usunięcie łącza bez wpływu na plik.
 
 Nie można zmienić nazwy połączonych plików.
 
-## <a name="references"></a>Dokumentacja
+## <a name="references"></a>Odwołania
 
 Projekty programu Visual Studio obsługują Dodawanie odwołań do projektów i rozszerzeń, które są wyświetlane w węźle **odwołania** w **Eksplorator rozwiązań**:
 

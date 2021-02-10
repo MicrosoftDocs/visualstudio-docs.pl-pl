@@ -23,15 +23,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], Visual Basic for Applications and
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 59d0e9122bf35ac6f40799d91d3b52614d027f50
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1c5f66042dad7051c856aa6158ea0a666a81e9b4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846405"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938528"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>Łączenie języka VBA i dostosowań na poziomie dokumentu
   Możesz użyć kodu Visual Basic for Applications (VBA) w dokumencie, który jest częścią dostosowania na poziomie dokumentu dla Microsoft Office Word lub Microsoft Office Excel. Można wywołać kod języka VBA w dokumencie z zestawu dostosowania lub można skonfigurować projekt, aby umożliwić kod VBA w dokumencie, aby wywołać kod w zestawie dostosowywania.
@@ -251,7 +251,7 @@ GetManagedClass(pdispInteropObject Object) As Object
 |Po ustawieniu właściwości **EnableVbaCallers** lub **ReferenceAssemblyFromVbaProject** komunikat o błędzie stwierdza, że numer wersji określony przez <xref:System.Reflection.AssemblyVersionAttribute> jest nieprawidłowy.|Upewnij się, że <xref:System.Reflection.AssemblyVersionAttribute> Deklaracja w pliku *AssemblyInfo.cs* lub *AssemblyInfo. vb* w projekcie ma ustawiony prawidłowy numer wersji zestawu. Aby uzyskać informacje o prawidłowych numerach wersji zestawu, zobacz <xref:System.Reflection.AssemblyVersionAttribute> Klasa.|
 |Po zmianie nazwy zestawu dostosowania kod języka VBA, który wywołuje do zestawu dostosowania, przestanie działać.|Jeśli zmienisz nazwę zestawu dostosowania po udostępnieniu go w kodzie VBA, link między projektem VBA w dokumencie a zestawem dostosowywania zostanie przerwany. Aby rozwiązać ten problem, Zmień właściwość **ReferenceFromVbaAssembly** w projekcie na **Fałsz** , a następnie z powrotem na **wartość true**, a następnie Zastąp wszystkie odwołania do starej nazwy zestawu w kodzie VBA z nową nazwą zestawu.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: Uwidacznianie kodu w języku VBA w projekcie Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)
 - [Instrukcje: Uwidacznianie kodu w języku VBA w projekcie programu Visual C&#35;](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)
 - [Przewodnik: wywoływanie kodu z VBA w projekcie Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)

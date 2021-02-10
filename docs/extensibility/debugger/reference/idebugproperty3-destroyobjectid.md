@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: bd08f356-cc67-4717-98c9-c3d00cad2040
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f465bc06712c5032c6e90288ebd02406de4f2330
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6afc0f5243d9f50f2d777c0bd43e6bba1de5e495
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721200"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936109"
 ---
 # <a name="idebugproperty3destroyobjectid"></a>IDebugProperty3::DestroyObjectID
 Niszczy unikatowy identyfikator skojarzony z tą właściwością, co oznacza, że obiekt wywołujący nie dba już identyfikować tej właściwości jednoznacznie ze wszystkich innych właściwości.
@@ -28,13 +28,13 @@ Niszczy unikatowy identyfikator skojarzony z tą właściwością, co oznacza, �
 ## <a name="syntax"></a>Składnia
 
 ```cpp
-HRESULT DestroyObjectID(
+HRESULT DestroyObjectID(
    void
 );
 ```
 
 ```csharp
-int DestroyObjectID();
+int DestroyObjectID();
 ```
 
 ## <a name="return-value"></a>Wartość zwracana

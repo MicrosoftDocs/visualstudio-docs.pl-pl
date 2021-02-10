@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: 6116e1df-ed3e-4b0d-ac7f-22f7d7ac00ea
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f4560b21213e3f50061e1f9424d634aeb7b52c2
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: 5d1ce4a4ef3f64ca5f3c8235d1169eb28aa6a405
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98533826"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938541"
 ---
 # <a name="collect-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>Zbieranie szczegółowych danych o chronometrażu dla usług przy użyciu metody instrumentacji z wiersza polecenia profilera
 W tej sekcji opisano procedury i opcje dotyczące zbierania szczegółowych danych wydajności dla usług systemu Windows przy użyciu metody instrumentacji z wiersza polecenia.
