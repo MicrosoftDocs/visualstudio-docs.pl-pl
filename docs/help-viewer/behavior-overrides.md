@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 95fe6396-276b-4ee5-b03d-faacec42765f
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 60f4e46d8c43c90759c964dbf01145d876a9f413
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: f9c9a950156f29bda68a134af2eb299b3431445f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91879063"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944293"
 ---
 # <a name="help-content-manager-overrides"></a>Przesłonięcia Menedżera zawartości pomocy
 
@@ -32,7 +32,7 @@ Można zmienić domyślne zachowanie podglądu pomocy i funkcji związanych z po
 
 ### <a name="registry-key-values"></a>Wartości klucza rejestru
 
-|Wartość klucza rejestru|Type|Dane|Opis|
+|Wartość klucza rejestru|Typ|Dane|Opis|
 |------------------|----|----|-----------|
 |NewContentAndUpdateService|ciąg|\<http URL for service endpoint\>|Zdefiniuj unikatowy punkt końcowy usługi|
 |UseOnlineHelp|Ostatnie|`0` Aby określić pomoc lokalną, `1` Aby określić pomoc online|Zdefiniuj domyślną pomoc w trybie online lub offline|
@@ -59,7 +59,7 @@ Poniższe dwa zachowania można kontrolować przez ustawienie wartości klucza r
 
 |Zadanie|Klucz rejestru|Wartość|Dane|
 |----------|-----|------|----|
-|Zastąp priorytet zadania usługi BITS|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node (na komputerze 64-bitowym) \Microsoft\Help\v2.3|BITSPriority|**pierwszy plan**, **wysoki**, **normalny**lub **niski**|
+|Zastąp priorytet zadania usługi BITS|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node (na komputerze 64-bitowym) \Microsoft\Help\v2.3|BITSPriority|**pierwszy plan**, **wysoki**, **normalny** lub **niski**|
 |Wskaż lokalny magazyn zawartości w udziale sieciowym|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\ v 2.3 \ Catalogs\VisualStudio15|LocationPath|"*ContentStoreNetworkShare*"|
 
 ## <a name="see-also"></a>Zobacz też

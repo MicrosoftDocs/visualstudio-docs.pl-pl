@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: 595d91c8-a42b-4644-85b8-39e8140a5dfe
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b12fc05f9eeb9b77e982c62ae52bfbbe784f5e6
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: c5f5fd61abbdb251b3f46bb267debad2cecde72b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801360"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942727"
 ---
 # <a name="functions-view---instrumentation-data"></a>Widok funkcji — dane Instrumentacji
 Widok raport funkcji zawiera listę danych profilowania według nazwy funkcji.
@@ -84,7 +84,7 @@ Widok raport funkcji zawiera listę danych profilowania według nazwy funkcji.
 |**Maksymalny czas wyłączny aplikacji**|Maksymalny czas wyłączny aplikacji wywołania tej funkcji.|
 |**Minimalny czas wyłączny aplikacji**|Minimalny czas wyłączny aplikacji dla wywołania tej funkcji.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)
 - [Widok funkcji](../profiling/functions-view-sampling-data.md)
 - [Widok funkcji — próbkowanie](../profiling/functions-view-dotnet-memory-sampling-data.md)

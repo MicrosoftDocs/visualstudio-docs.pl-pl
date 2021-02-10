@@ -6,17 +6,17 @@ ms.date: 11/19/2018
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c778d830b20797962306700a5af938eb3a3bb142
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c0a0f0f4e009d689a69e840b31281e65bc5a0e2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62961700"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942558"
 ---
 # <a name="step-4-use-the-full-django-web-project-template"></a>Krok 4. Korzystanie z szablonu pełnego projektu sieci Web Django
 
@@ -73,7 +73,7 @@ Na najszerszym poziomie szablon "projekt sieci Web Django" tworzy następującą
   - *requirements.txt* zawierający zależność od Django 1. x.
   - *readme.html*, plik, który jest wyświetlany w programie Visual Studio po utworzeniu projektu. Jak wskazano w poprzedniej sekcji, postępuj zgodnie z instrukcjami w tym miejscu, aby utworzyć konto administratora aplikacji.
 - Folder *App* zawiera wszystkie pliki aplikacji, w tym widoki, modele, testy, formularze, szablony i pliki statyczne (zobacz krok 4-2). Zwykle nazwę tego folderu można zmienić, aby użyć bardziej charakterystycznej nazwy aplikacji.
-- Folder *DjangoWeb* (Django Project) zawiera typowe pliki projektu Django: * \_ \_ init \_ \_ . PR*, *Settings.py*, *URLs.py*i *WSGI.py*. Przy użyciu szablonu projektu *Settings.py* jest już skonfigurowany dla aplikacji i pliku bazy danych, a *URLs.py* jest już skonfigurowana za pomocą tras do wszystkich stron aplikacji, w tym formularza logowania.
+- Folder *DjangoWeb* (Django Project) zawiera typowe pliki projektu Django: *\_ \_ init \_ \_ . PR*, *Settings.py*, *URLs.py* i *WSGI.py*. Przy użyciu szablonu projektu *Settings.py* jest już skonfigurowany dla aplikacji i pliku bazy danych, a *URLs.py* jest już skonfigurowana za pomocą tras do wszystkich stron aplikacji, w tym formularza logowania.
 
 ### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>Pytanie: czy jest możliwe udostępnianie środowiska wirtualnego między projektami programu Visual Studio?
 
@@ -82,7 +82,7 @@ Odpowiedź: tak, ale należy to zrobić, korzystając z świadomości, że róż
 Niemniej jednak, aby użyć istniejącego środowiska wirtualnego, wykonaj następujące czynności:
 
 1. Po wyświetleniu monitu o zainstalowanie zależności w programie Visual Studio wybierz opcję **zainstaluję je samodzielnie** .
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł **środowiska Python** i wybierz polecenie **Dodaj istniejące środowisko wirtualne**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł **środowiska Python** i wybierz polecenie **Dodaj istniejące środowisko wirtualne**.
 1. Przejdź do folderu zawierającego środowisko wirtualne i wybierz go, a następnie wybierz **przycisk OK**.
 
 ## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>Krok 4-2: informacje o widokach i szablonach stron utworzonych przez szablon projektu
@@ -144,7 +144,7 @@ Szablony znajdują się w folderze *Szablony/aplikacje* aplikacji (a zazwyczaj c
 </html>
 ```
 
-Szablony poszczególnych stron, *about.html*, *contact.html*i *index.html*, każdy rozszerzy szablon podstawowy *layout.html*. *about.html* jest najprostszym i zawierającym `{% extends %}` `{% block content %}` znaczniki i:
+Szablony poszczególnych stron, *about.html*, *contact.html* i *index.html*, każdy rozszerzy szablon podstawowy *layout.html*. *about.html* jest najprostszym i zawierającym `{% extends %}` `{% block content %}` znaczniki i:
 
 ```html
 {% extends "app/layout.html" %}

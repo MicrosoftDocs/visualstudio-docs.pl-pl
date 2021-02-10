@@ -6,17 +6,17 @@ ms.date: 01/07/2019
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 69fd704976ee941cb053d75040a3d3ec7871a380
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d474236aca50a74b96689001a56e7d0701caae30
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238745"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942389"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance-with-flask-app"></a>Krok 3. Korzystanie z plików statycznych, dodawanie stron i dziedziczenie szablonów przy użyciu aplikacji do kolby
 
@@ -56,7 +56,7 @@ W obu przypadkach można organizować pliki w sposób *statyczny* .
 
 ### <a name="use-a-static-file-in-a-template"></a>Używanie pliku statycznego w szablonie
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy folder **HelloFlask** w projekcie programu Visual Studio, wybierz polecenie **Dodaj**  >  **Nowy folder**i Nazwij folder `static` .
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy folder **HelloFlask** w projekcie programu Visual Studio, wybierz polecenie **Dodaj**  >  **Nowy folder** i Nazwij folder `static` .
 
 1. Kliknij prawym przyciskiem myszy folder **statyczny** i wybierz polecenie **Dodaj**  >  **nowy element**. W wyświetlonym oknie dialogowym wybierz szablon **arkusza stylów** , Nazwij plik `site.css` , a następnie wybierz **przycisk OK**. Plik **site. css** zostanie wyświetlony w projekcie i otwarty w edytorze. Struktura folderów powinna wyglądać podobnie do poniższej ilustracji:
 
@@ -91,7 +91,7 @@ W obu przypadkach można organizować pliki w sposób *statyczny* .
 
 Kolba zawiera funkcję o nazwie `serve_static_file` , którą można wywołać z kodu, aby odwołać się do dowolnego pliku w folderze *statycznym* projektu. Poniższy proces tworzy prosty punkt końcowy interfejsu API, który zwraca plik danych statycznych.
 
-1. Jeśli jeszcze tego nie zrobiono, Utwórz folder *statyczny* : w **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy folder **HelloFlask** w projekcie programu Visual Studio, wybierz pozycję **Dodaj**  >  **Nowy folder**i nadaj nazwę folderowi `static` .
+1. Jeśli jeszcze tego nie zrobiono, Utwórz folder *statyczny* : w **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy folder **HelloFlask** w projekcie programu Visual Studio, wybierz pozycję **Dodaj**  >  **Nowy folder** i nadaj nazwę folderowi `static` .
 
 1. W folderze *statycznym* Utwórz statyczny plik danych JSON o nazwie *data.jsprzy* użyciu następującej zawartości (które mają znaczenie przykładowe dane):
 
@@ -103,7 +103,7 @@ Kolba zawiera funkcję o nazwie `serve_static_file` , którą można wywołać z
     }
     ```
 
-1. W *views.py*Dodaj funkcję z/API/Data trasy, która zwraca plik danych statycznych przy użyciu `send_static_file` metody:
+1. W *views.py* Dodaj funkcję z/API/Data trasy, która zwraca plik danych statycznych przy użyciu `send_static_file` metody:
 
     ```python
     @app.route('/api/data')
@@ -115,7 +115,7 @@ Kolba zawiera funkcję o nazwie `serve_static_file` , którą można wywołać z
 
 ### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>Pytanie: czy istnieją konwencje do organizowania plików statycznych?
 
-Odpowiedź: możesz jednak dodać inne pliki CSS, JavaScript i HTML do folderu *statycznego* . Typowym sposobem organizowania plików statycznych jest tworzenie podfolderów o nazwach *Fonts*, *scripts*i *Content* (dla arkuszy stylów i innych plików).
+Odpowiedź: możesz jednak dodać inne pliki CSS, JavaScript i HTML do folderu *statycznego* . Typowym sposobem organizowania plików statycznych jest tworzenie podfolderów o nazwach *Fonts*, *scripts* i *Content* (dla arkuszy stylów i innych plików).
 
 ### <a name="question-how-do-i-handle-url-variables-and-query-parameters-in-an-api"></a>Pytanie: Jak mogę obsługiwać zmienne adresów URL i parametrów zapytania w interfejsie API?
 
@@ -131,7 +131,7 @@ Dodanie innej strony do aplikacji oznacza następujące kwestie:
 
 Poniższe kroki umożliwiają dodanie strony "informacje" do projektu "HelloFlask" i linków do tej strony ze strony głównej:
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy folder **Szablony** , wybierz polecenie **Dodaj**  >  **nowy element**, wybierz szablon elementu **strony HTML** , Nazwij plik `about.html` , a następnie wybierz **przycisk OK**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy folder **Szablony** , wybierz polecenie **Dodaj**  >  **nowy element**, wybierz szablon elementu **strony HTML** , Nazwij plik `about.html` , a następnie wybierz **przycisk OK**.
 
     > [!Tip]
     > Jeśli polecenie **nowy element** nie pojawia się w menu **Dodaj** , upewnij się, że aplikacja została zatrzymana, aby program Visual Studio opuszcza tryb debugowania.
@@ -168,7 +168,7 @@ Poniższe kroki umożliwiają dodanie strony "informacje" do projektu "HelloFlas
     <div><a href="about">About</a></div>
     ```
 
-1. **Zapisz wszystkie**pliki przy użyciu  >  polecenia**Zapisz wszystko** menu lub po prostu naciśnij klawisz **Ctrl** + **SHIFT** + **S**. (Technicznie ten krok nie jest wymagany, ponieważ uruchomienie projektu w programie Visual Studio powoduje automatyczne zapisanie plików. Jednak dobrym poleceniem jest poznanie!)
+1. **Zapisz wszystkie** pliki przy użyciu  >  polecenia **Zapisz wszystko** menu lub po prostu naciśnij klawisz **Ctrl** + **SHIFT** + **S**. (Technicznie ten krok nie jest wymagany, ponieważ uruchomienie projektu w programie Visual Studio powoduje automatyczne zapisanie plików. Jednak dobrym poleceniem jest poznanie!)
 
 1. Uruchom projekt, aby obserwować wyniki i sprawdzić nawigację między stronami. Zatrzymaj aplikację po zakończeniu.
 
@@ -192,7 +192,7 @@ Wyznacza szablonu podstawowego *blokuje* używanie `{% block <block_name> %}` ta
 
 W poniższych krokach przedstawiono dziedziczenie:
 
-1. W folderze *Szablony* aplikacji Utwórz nowy plik HTML (za pomocą **Add**  >  menu kontekstowego Dodaj**nowy element** lub **Dodaj**  >  **stronę HTML**) o nazwie *layout.html*i Zastąp jego zawartość następującym znacznikiem:. Można zobaczyć, że ten szablon zawiera blok o nazwie "Content", który ma zostać zastąpiony przez strony odwołujące:
+1. W folderze *Szablony* aplikacji Utwórz nowy plik HTML (za pomocą   >  menu kontekstowego Dodaj **nowy element** lub **Dodaj**  >  **stronę HTML**) o nazwie *layout.html* i Zastąp jego zawartość następującym znacznikiem:. Można zobaczyć, że ten szablon zawiera blok o nazwie "Content", który ma zostać zastąpiony przez strony odwołujące:
 
     ```html
     <!DOCTYPE html>

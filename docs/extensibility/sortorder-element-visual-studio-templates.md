@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 151932c1-f08a-4f78-a8d0-bd2f32211a9c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f07c3b62d1412564fd74c420b31b2a9fed41d1fa
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 2a086f2ae678541ce28e9ede874c4198e349f438
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903757"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942922"
 ---
 # <a name="sortorder-element-visual-studio-templates"></a>SortOrder — Element (szablony Visual Studio)
 Określa wartość, która jest używana do rozmieszczenia szablonu, między innymi szablonami w tej samej kategorii, jak pojawia się w oknie dialogowym **Nowy projekt** lub **Dodaj nowy element** .
@@ -84,6 +84,6 @@ Określa wartość, która jest używana do rozmieszczenia szablonu, między inn
 
  W tym przykładzie `SortOrder` element jest stosunkowo wysoki. Prawdopodobnie inne [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Szablony elementów będą mieć `SortOrder` wartość niższą niż `290` i pojawią się przed tym szablonem w oknie dialogowym **nowy element** .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)

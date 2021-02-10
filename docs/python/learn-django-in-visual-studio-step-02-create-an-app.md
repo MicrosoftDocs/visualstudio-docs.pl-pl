@@ -6,23 +6,23 @@ ms.date: 11/19/2018
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18, SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8d91e587f354efe14db7cd669fa89a0f4658a538
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 9c8da2566be9b389b3ae36f2e6aa46686011ac0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90097310"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942597"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Krok 2. Tworzenie aplikacji Django za pomocą widoków i szablonów stron
 
 **Poprzedni krok: [Tworzenie projektu i rozwiązania programu Visual Studio](learn-django-in-visual-studio-step-01-project-and-solution.md)**
 
-W projekcie programu Visual Studio to wszystko, co jest dotąd dostępne tylko dla składników na poziomie witryny *projektu*Django, które mogą uruchamiać jedną lub więcej *aplikacji*Django. Następnym krokiem jest utworzenie pierwszej aplikacji przy użyciu jednej strony.
+W projekcie programu Visual Studio to wszystko, co jest dotąd dostępne tylko dla składników na poziomie witryny *projektu* Django, które mogą uruchamiać jedną lub więcej *aplikacji* Django. Następnym krokiem jest utworzenie pierwszej aplikacji przy użyciu jednej strony.
 
 W tym kroku dowiesz się, jak:
 
@@ -38,9 +38,9 @@ Aplikacja Django to oddzielny pakiet języka Python, który zawiera zestaw powi�
 
 Aplikacja Django zazwyczaj rozpoczyna się od standardowego zestawu plików. Program Visual Studio udostępnia szablony elementów umożliwiające zainicjowanie aplikacji Django w projekcie Django oraz zintegrowane polecenie menu, które służy do tego samego celu:
 
-- Szablony: w **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Dodaj**  >  **nowy element**. W oknie dialogowym **Dodaj nowy element** wybierz szablon **aplikacji Django 1,9** , określ nazwę aplikacji w polu **Nazwa** , a następnie wybierz **przycisk OK**.
+- Szablony: w **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Dodaj**  >  **nowy element**. W oknie dialogowym **Dodaj nowy element** wybierz szablon **aplikacji Django 1,9** , określ nazwę aplikacji w polu **Nazwa** , a następnie wybierz **przycisk OK**.
 
-- Zintegrowane polecenie: w **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Dodaj**  >  **aplikację Django**. To polecenie poprosi o nazwę i utworzy aplikację Django 1,9.
+- Zintegrowane polecenie: w **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Dodaj**  >  **aplikację Django**. To polecenie poprosi o nazwę i utworzy aplikację Django 1,9.
 
     ![Polecenie menu do dodawania aplikacji Django](media/django/step02-add-django-app-command.png)
 
@@ -51,7 +51,7 @@ Przy użyciu jednej z metod Utwórz aplikację o nazwie "HelloDjangoApp". Wynik 
 | Element | Opis |
 | --- | --- |
 | **\_\_init \_ \_ . PR** | Plik, który identyfikuje aplikację jako pakiet. |
-| **Migracje** | Folder, w którym Django przechowuje skrypty, które aktualizują bazę danych, aby były wyrównane ze zmianami modeli. Narzędzia migracji Django następnie stosują niezbędne zmiany do dowolnej starszej wersji bazy danych, aby były zgodne z bieżącymi modelami. Korzystając z migracji, możesz zachować fokus na modelach i Django obsłużyć bazowy schemat bazy danych. Migracje zostały omówione w kroku 6. na razie folder po prostu zawiera plik * \_ \_ init \_ \_ . PR* (wskazujący, że folder definiuje własny pakiet w języku Python). |
+| **Migracje** | Folder, w którym Django przechowuje skrypty, które aktualizują bazę danych, aby były wyrównane ze zmianami modeli. Narzędzia migracji Django następnie stosują niezbędne zmiany do dowolnej starszej wersji bazy danych, aby były zgodne z bieżącymi modelami. Korzystając z migracji, możesz zachować fokus na modelach i Django obsłużyć bazowy schemat bazy danych. Migracje zostały omówione w kroku 6. na razie folder po prostu zawiera plik *\_ \_ init \_ \_ . PR* (wskazujący, że folder definiuje własny pakiet w języku Python). |
 | **templates** | Folder szablonów stron Django zawierający pojedynczy plik *index.html* w folderze zgodnym z nazwą aplikacji. (W programie Visual Studio 2017 15,7 i starszych) plik jest zawarty bezpośrednio w *szablonach* i krok 2-4 instruuje o utworzeniu podfolderu. Szablony są blokami HTML, w których widoki mogą dodawać informacje do dynamicznego renderowania strony. Szablon strony "zmienne", takie jak `{{ content }}` w *index.html*, są symbolami zastępczymi dla wartości dynamicznych, jak wyjaśniono w dalszej części tego artykułu (krok 2). Zazwyczaj aplikacje Django tworzą przestrzeń nazw dla swoich szablonów, umieszczając je w podfolderze zgodnym z nazwą aplikacji. |
 | **admin.py** | Plik języka Python, w którym można zwiększyć interfejs administracyjny aplikacji (zobacz krok 6), który jest używany do wypełniania i edytowania danych w bazie danych. Początkowo ten plik zawiera tylko instrukcję, `from django.contrib import admin` . Domyślnie Django zawiera standardowy interfejs administracyjny za pomocą wpisów w pliku *Settings.py* projektu Django, który można włączyć przez usunięcie komentarza istniejących wpisów w *URLs.py*. |
 | **apps.py** | Plik języka Python, który definiuje klasę konfiguracyjną dla aplikacji (patrz poniżej, po tej tabeli). |
@@ -74,7 +74,7 @@ Odpowiedź: uruchomienie polecenia **Add**  >  **Django App** lub użycie opcji 
 
 ## <a name="step-2-2-run-the-app-from-the-django-project"></a>Krok 2-2: uruchamianie aplikacji z projektu Django
 
-W tym momencie, jeśli ponownie uruchomisz projekt w programie Visual Studio (za pomocą przycisku paska narzędzi **Debug**lub  >  **debugowania rozpoczęcia**debugowania), nadal zobaczysz stronę domyślną. Nie zostanie wyświetlona żadna zawartość aplikacji, ponieważ musisz zdefiniować stronę specyficzną dla aplikacji i dodać aplikację do projektu Django:
+W tym momencie, jeśli ponownie uruchomisz projekt w programie Visual Studio (za pomocą przycisku paska narzędzi lub  >  **debugowania rozpoczęcia** debugowania), nadal zobaczysz stronę domyślną. Nie zostanie wyświetlona żadna zawartość aplikacji, ponieważ musisz zdefiniować stronę specyficzną dla aplikacji i dodać aplikację do projektu Django:
 
 1. W folderze *HelloDjangoApp* zmodyfikuj *views.py* w taki sposób, aby pasował do poniższego kodu, który definiuje widok o nazwie "index":
 
@@ -111,7 +111,7 @@ Ponieważ wprowadzono zmiany w kodzie i przetestowano je pomyślnie, to teraz ś
 
     ![Przycisk zmiany kontroli źródła na pasku stanu programu Visual Studio](media/django/step02-source-control-changes-button.png)
 
-1. W **Team Explorer**wprowadź komunikat dotyczący zatwierdzenia, taki jak "Tworzenie początkowej aplikacji Django", i wybierz pozycję **Zatwierdź wszystko**. Po zakończeniu zatwierdzania zostanie wyświetlone **zatwierdzenie wiadomości \<hash> utworzone lokalnie. Synchronizuj, aby udostępnić zmiany na serwerze.** Jeśli chcesz wypchnąć zmiany do zdalnego repozytorium, wybierz pozycję **Synchronizuj**, a następnie wybierz pozycję **wypychanie** w obszarze **zatwierdzenia wychodzące**. Możesz również zbierać wiele lokalnych zatwierdzeń przed wypchnięciem do zdalnego.
+1. W **Team Explorer** wprowadź komunikat dotyczący zatwierdzenia, taki jak "Tworzenie początkowej aplikacji Django", i wybierz pozycję **Zatwierdź wszystko**. Po zakończeniu zatwierdzania zostanie wyświetlone **zatwierdzenie wiadomości \<hash> utworzone lokalnie. Synchronizuj, aby udostępnić zmiany na serwerze.** Jeśli chcesz wypchnąć zmiany do zdalnego repozytorium, wybierz pozycję **Synchronizuj**, a następnie wybierz pozycję **wypychanie** w obszarze **zatwierdzenia wychodzące**. Możesz również zbierać wiele lokalnych zatwierdzeń przed wypchnięciem do zdalnego.
 
     ![Zatwierdzeń wypychania do zdalnego w Team Explorer](media/django/step02-source-control-push-to-remote.png)
 
@@ -170,7 +170,7 @@ Poniższe kroki pokazują, jak korzystać z szablonów stron:
     ]
     ```
 
-1. W programie *Settings.py*upewnij się, że `TEMPLATES` obiekt zawiera następujący wiersz (domyślnie włączony), który instruuje Django, aby wyszukać szablony w folderze *szablonów* zainstalowanej aplikacji:
+1. W programie *Settings.py* upewnij się, że `TEMPLATES` obiekt zawiera następujący wiersz (domyślnie włączony), który instruuje Django, aby wyszukać szablony w folderze *szablonów* zainstalowanej aplikacji:
 
     ```json
     'APP_DIRS': True,

@@ -13,15 +13,15 @@ f1_keywords:
 - vs.startpage
 - VS.StartPage.HowDoI
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 406b02c0453c8e8b6fb353c0a1b021f64cab6181
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: fb8a558485f6855af1411c99d270f1328d62db20
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901456"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944384"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Wprowadzenie do środowiska IDE programu Visual Studio
 
@@ -47,7 +47,7 @@ Jeśli wszystko jest gotowe do szczegółowe do większej ilości kodu, jeden z 
 
 - [Tworzenie pierwszej aplikacji konsolowej w języku C++ za pomocą programu Visual Studio](/cpp/get-started/tutorial-console-cpp)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - Odkryj [więcej funkcji programu Visual Studio](../ide/advanced-feature-overview.md)
 - Odwiedź witrynę [VisualStudio.Microsoft.com](https://visualstudio.microsoft.com/vs/)

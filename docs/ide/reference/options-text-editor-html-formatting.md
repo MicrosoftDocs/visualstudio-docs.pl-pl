@@ -9,19 +9,19 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.HTML.Format
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e3c8fe85b7bce856867802d43411816ae2df5d2c
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: fd8d7e6bd81e32858f990c70bbcdf0bf00049867
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040982"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943838"
 ---
 # <a name="options-text-editor-html-web-forms-formatting"></a>Opcje, Edytor tekstu, HTML (Formularze sieci Web), formatowanie
 
-Strona Opcje **formatowania** służy do ustawiania opcji projektu HTML służących do formatowania kodu w edytorze kodu. Aby uzyskać dostęp do tej strony, na pasku menu wybierz **Tools**  >  **Opcje** narzędzia, a następnie rozwiń pozycję formatowanie **Edytor tekstu**  >  **HTML (Formularze sieci Web)**  >  **Formatting**.
+Strona Opcje **formatowania** służy do ustawiania opcji projektu HTML służących do formatowania kodu w edytorze kodu. Aby uzyskać dostęp do tej strony, na pasku menu wybierz   >  **Opcje** narzędzia, a następnie rozwiń pozycję formatowanie **Edytor tekstu**  >  **HTML (Formularze sieci Web)**  >  .
 
 ## <a name="capitalization"></a>Wielkość liter
 

@@ -15,19 +15,19 @@ helpviewer_keywords:
 ms.assetid: 3466dedb-e5f4-424c-8dd8-e4941b2f4fc2
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8e727fad6d3cb15f70cf630b1077170d16d28b7f
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 9181961c1f30a96e5b03434f4ab686024992e29a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96039747"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944020"
 ---
 # <a name="options-text-editor-c-intellisense"></a>Opcje, edytor tekstu, C#, IntelliSense
 
-Na stronie opcje **IntelliSense** można modyfikować ustawienia wpływające na zachowanie funkcji IntelliSense dla języka C#. Aby uzyskać dostęp do tej strony opcji **Tools**, wybierz  >  **Opcje** narzędzia, a następnie wybierz **Edytor tekstu**  >  **C#**  >  **IntelliSense**.
+Na stronie opcje **IntelliSense** można modyfikować ustawienia wpływające na zachowanie funkcji IntelliSense dla języka C#. Aby uzyskać dostęp do tej strony opcji , wybierz  >  **Opcje** narzędzia, a następnie wybierz **Edytor tekstu**  >  **C#**  >  **IntelliSense**.
 
 Strona Opcje **IntelliSense** zawiera następujące opcje:
 
@@ -35,7 +35,7 @@ Strona Opcje **IntelliSense** zawiera następujące opcje:
 
 - Pokaż listę uzupełniania po wpisaniu znaku *
 
-   Po wybraniu tej opcji funkcja IntelliSense automatycznie wyświetla listę uzupełniania po rozpoczęciu wpisywania. Gdy ta opcja nie jest zaznaczona, uzupełnianie IntelliSense jest nadal dostępne z menu **IntelliSense** lub przez naciśnięcie klawisza **Ctrl** + **Space**.
+   Po wybraniu tej opcji funkcja IntelliSense automatycznie wyświetla listę uzupełniania po rozpoczęciu wpisywania. Gdy ta opcja nie jest zaznaczona, uzupełnianie IntelliSense jest nadal dostępne z menu **IntelliSense** lub przez naciśnięcie klawisza **Ctrl** + .
 
 - Pokaż listę uzupełniania po usunięciu znaku
 

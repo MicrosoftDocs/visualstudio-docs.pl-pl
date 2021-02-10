@@ -6,23 +6,23 @@ ms.date: 11/19/2018
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bdc76b0a7b9d3f74da77b317faf31dae83706f04
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ea708c1721d85468d99a0ccc327f378042579f85
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62957888"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942493"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>Krok 5. uwierzytelnianie użytkowników w Django
 
 **Poprzedni krok: [Użyj szablonu projektu sieci Web Full Django](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
 
-Ponieważ uwierzytelnianie jest powszechną potrzebą dla aplikacji sieci Web, szablon "projekt sieci Web Django" obejmuje podstawowy przepływ uwierzytelniania. (Szablon "ankiety Django Web projekt" omówiony w kroku 6 tego samouczka zawiera również ten sam przepływ). W przypadku używania któregokolwiek z szablonów projektów Django program Visual Studio zawiera wszystkie moduły niezbędne do uwierzytelniania w *Settings.py*projektu Django.
+Ponieważ uwierzytelnianie jest powszechną potrzebą dla aplikacji sieci Web, szablon "projekt sieci Web Django" obejmuje podstawowy przepływ uwierzytelniania. (Szablon "ankiety Django Web projekt" omówiony w kroku 6 tego samouczka zawiera również ten sam przepływ). W przypadku używania któregokolwiek z szablonów projektów Django program Visual Studio zawiera wszystkie moduły niezbędne do uwierzytelniania w *Settings.py* projektu Django.
 
 W tym kroku dowiesz się:
 
@@ -146,7 +146,7 @@ Poniższe kroki służą do wykonywania przepływu uwierzytelniania i opisywania
 
 1. Po przesłaniu formularza Django próbuje uwierzytelnić poświadczenia (na przykład poświadczenia administratora). Jeśli uwierzytelnianie nie powiedzie się, pozostanie na bieżącej stronie, ale `form.errors` ustawiono wartość true. Jeśli uwierzytelnianie zakończyło się pomyślnie, Django przechodzi do względnego adresu URL w polu "dalej", `<input type="hidden" name="next" value="/" />` w tym przypadku jest to Strona główna ( `/` ).
 
-1. Teraz po ponownym wyrenderowaniu strony głównej `user.is_authenticated` Właściwość ma wartość true, gdy zostanie renderowany szablon *loginpartial.html* . W związku z tym zobaczysz komunikat **powitalny (username)** i **Wyloguj**się. `user.is_authenticated`Aby sprawdzić uwierzytelnianie, można użyć innych części aplikacji.
+1. Teraz po ponownym wyrenderowaniu strony głównej `user.is_authenticated` Właściwość ma wartość true, gdy zostanie renderowany szablon *loginpartial.html* . W związku z tym zobaczysz komunikat **powitalny (username)** i **Wyloguj** się. `user.is_authenticated`Aby sprawdzić uwierzytelnianie, można użyć innych części aplikacji.
 
     ![Komunikat powitalny i kontrola wylogowania na stronie aplikacji Django Web Project](media/django/step05-logoff-control.png)
 

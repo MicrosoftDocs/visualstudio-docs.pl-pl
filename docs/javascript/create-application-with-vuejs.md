@@ -7,17 +7,17 @@ ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: e16b09a165421d36c67dad1fc657fd36846cd382
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52281c403ceb0f2708aa546cbd73559593c419be
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285169"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942831"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Tworzenie aplikacji Vue.js przy użyciu narzędzi Node.js Tools for Visual Studio
 
@@ -31,7 +31,7 @@ Poniższe nowe funkcje obsługują Programowanie aplikacji Vue.js w programie Vi
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-* Musisz mieć zainstalowany program Visual Studio 2017 w wersji 15,8 lub nowszej orazNode.js obciążenie ** programowaniem** .
+* Musisz mieć zainstalowany program Visual Studio 2017 w wersji 15,8 lub nowszej orazNode.js obciążenie **programowaniem** .
 
     > [!IMPORTANT]
     > Ten artykuł wymaga funkcji, które są dostępne tylko w programie Visual Studio 2017 w wersji 15,8.
@@ -40,7 +40,7 @@ Poniższe nowe funkcje obsługują Programowanie aplikacji Vue.js w programie Vi
     Jeśli wymagana wersja nie jest jeszcze zainstalowana, zainstaluj [program Visual Studio 2019](https://visualstudio.microsoft.com/downloads).
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download),   Aby zainstalować ją bezpłatnie.
+    Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) , aby zainstalować ją bezpłatnie.
     ::: moniker-end
 
     Jeśli musisz zainstalować obciążenie, ale masz już program Visual Studio, przejdź do pozycji **Narzędzia**  >  **Pobierz narzędzia i funkcje..**., co spowoduje otwarcie Instalator programu Visual Studio. Wybierz **Node.js obciążenie programowaniem** , a następnie wybierz **Modyfikuj**.
@@ -85,7 +85,7 @@ W tym przykładzie użyto pustej aplikacji ASP.NET Core (C#). Można jednak wybr
 
 #### <a name="configure-the-project-startup-file"></a>Konfigurowanie pliku startowego projektu
 
-* Otwórz plik *./Startup.cs*i Dodaj następujące wiersze do metody Configure:
+* Otwórz plik *./Startup.cs* i Dodaj następujące wiersze do metody Configure:
 
     ```csharp
     app.UseDefaultFiles(); // Enables default file mapping on the web root.
@@ -107,7 +107,7 @@ Aby zainstalować moduł Vue-CLI npm, Otwórz wiersz polecenia i wpisz `npm inst
 
 #### <a name="modify-the-webpack-configuration-to-output-the-built-files-to-wwwroot"></a>Zmodyfikuj konfigurację pakietu WebPack, aby wyprowadzić skompilowane pliki do pliku wwwroot
 
-* Otwórz plik *./client-app/config/index.js*i Zmień `build.index` ścieżkę i do pliku `build.assetsRoot` wwwroot:
+* Otwórz plik *./client-app/config/index.js* i Zmień `build.index` ścieżkę i do pliku `build.assetsRoot` wwwroot:
 
     ```js
     // Template for index.html
@@ -119,13 +119,13 @@ Aby zainstalować moduł Vue-CLI npm, Otwórz wiersz polecenia i wpisz `npm inst
 
 #### <a name="indicate-the-project-to-build-the-client-app-each-time-that-a-build-is-triggered"></a>Wskaż projekt, aby skompilować aplikację kliencką za każdym razem, gdy kompilacja jest wyzwalana
 
-1. W programie Visual Studio przejdź do **Project**pozycji  >  **Właściwości**projektu  >  **Kompiluj zdarzenia**.
+1. W programie Visual Studio przejdź do pozycji  >  **Właściwości** projektu  >  **Kompiluj zdarzenia**.
 
-1. W **wierszu polecenia zdarzenia przed kompilacją**wpisz `npm --prefix ./client-app run build` .
+1. W **wierszu polecenia zdarzenia przed kompilacją** wpisz `npm --prefix ./client-app run build` .
 
 #### <a name="configure-webpacks-output-module-names"></a>Skonfiguruj nazwy modułów wyjściowych elementu WebPack
 
-* Otwórz plik *./client-app/build/webpack.base.conf.js*i Dodaj następujące właściwości do właściwości Output:
+* Otwórz plik *./client-app/build/webpack.base.conf.js* i Dodaj następujące właściwości do właściwości Output:
 
     ```js
     devtoolModuleFilenameTemplate: '[absolute-resource-path]',
@@ -171,7 +171,7 @@ Te kroki wymagają Vue-CLI 3,0, który jest obecnie w wersji beta.
 
 Nieznany problem z Vue-CLI 3,0 może uniemożliwić automatyzację procesu kompilacji. Za każdym razem, gdy próbujesz odświeżyć folder wwwroot, należy uruchomić polecenie `npm run build` w folderze klient-aplikacja.
 
-Alternatywnie można skompilować projekt Vue-CLI 3,0 jako zdarzenie sprzed kompilacji przy użyciu właściwości projektu ASP.NET. Kliknij prawym przyciskiem myszy projekt, wybierz polecenie **Właściwości**i Dołącz następujące polecenia na karcie **kompilacja** w polu tekstowym **wiersz polecenia zdarzenia przed kompilacją** .
+Alternatywnie można skompilować projekt Vue-CLI 3,0 jako zdarzenie sprzed kompilacji przy użyciu właściwości projektu ASP.NET. Kliknij prawym przyciskiem myszy projekt, wybierz polecenie **Właściwości** i Dołącz następujące polecenia na karcie **kompilacja** w polu tekstowym **wiersz polecenia zdarzenia przed kompilacją** .
 
 ``` cmd
 cd ./client-app

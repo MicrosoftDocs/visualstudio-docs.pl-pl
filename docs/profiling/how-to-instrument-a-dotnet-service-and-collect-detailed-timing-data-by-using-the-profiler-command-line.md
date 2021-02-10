@@ -6,16 +6,16 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6002af64474c6ed15aa9807b804c588f20f1443b
-ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
+ms.openlocfilehash: 9f318fc979d4562c355a9613f67a351452b04ddc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98883608"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942623"
 ---
 # <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Instrukcje: instrumentacja usługi .NET i zbieranie szczegółowych danych o chronometrażu przy użyciu wiersza polecenia profilera
 
@@ -108,7 +108,7 @@ Aby zastosować nowe ustawienia środowiska, należy ponownie uruchomić kompute
 
 5. Uruchom ponownie komputer.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 [Usługi profilu](../profiling/command-line-profiling-of-services.md) 
  [Widoki danych metody instrumentacji](../profiling/instrumentation-method-data-views.md)

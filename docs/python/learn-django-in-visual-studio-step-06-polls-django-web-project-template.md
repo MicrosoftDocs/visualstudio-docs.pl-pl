@@ -6,17 +6,17 @@ ms.date: 11/19/2018
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1f81c665bc742daf7e2b0e34a849aad566362a28
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 5e524232eed7e4044454c57fc4fcaa30c6e2a8a0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099339"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942480"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>Krok 6. użycie szablonu projektu sieci Web Django sondy
 
@@ -183,7 +183,7 @@ Aby zobaczyć efekt zmiany modelu, spróbuj wykonać następujące czynności:
     ```
 
 1. Zapisz plik, a następnie kliknij prawym przyciskiem myszy projekt **DjangoPolls** w **Eksplorator rozwiązań** i wybierz polecenie **Python**  >  **Django wykonaj migracje** .
-1. Wybierz polecenie **projekt**  >  **Pokaż wszystkie pliki** , aby wyświetlić nowo wygenerowany skrypt w folderze **migracji** , którego nazwa rozpoczyna się od **002_auto_**. Kliknij prawym przyciskiem myszy ten plik i wybierz pozycję **Dołącz do projektu**. Następnie można wybrać pozycję **projekt**  >  ponownie**Pokaż wszystkie pliki** , aby przywrócić oryginalny widok. (Zobacz drugie pytanie poniżej, aby uzyskać szczegółowe informacje na temat tego kroku).
+1. Wybierz polecenie **projekt**  >  **Pokaż wszystkie pliki** , aby wyświetlić nowo wygenerowany skrypt w folderze **migracji** , którego nazwa rozpoczyna się od **002_auto_**. Kliknij prawym przyciskiem myszy ten plik i wybierz pozycję **Dołącz do projektu**. Następnie można wybrać pozycję **projekt**  >  ponownie **Pokaż wszystkie pliki** , aby przywrócić oryginalny widok. (Zobacz drugie pytanie poniżej, aby uzyskać szczegółowe informacje na temat tego kroku).
 1. W razie potrzeby Otwórz ten plik, aby poznać, w jaki sposób program Django skryptuje zmianę stanu poprzedniego modelu z nowym stanem.
 1. Kliknij prawym przyciskiem myszy projekt programu Visual Studio, a następnie wybierz pozycję **Python**  >  **Django Migruj** , aby zastosować zmiany do bazy danych.
 1. W razie potrzeby Otwórz bazę danych w odpowiedniej przeglądarce, aby potwierdzić zmianę.

@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 4340c69f-b96b-4932-bb82-38b16a5ab149
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 312b886ee0becc794f657ecaaba7fb028d4b3cf1
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: e52b03b01f53a8064dc6ec691f751c86266af6a4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91878894"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944306"
 ---
 # <a name="help-viewer-administrator-guide"></a>Podręcznik administratora podglądu pomocy
 
@@ -107,7 +107,7 @@ Aby można było utworzyć podstawowy zestaw zawartości, należy najpierw odins
 
 1. W podglądzie pomocy wybierz kartę **Zarządzanie zawartością** .
 
-2. W obszarze **zalecana dokumentacja** lub **dostępna dokumentacja**przejdź do zestawów dokumentacji, które chcesz pobrać, a następnie wybierz pozycję **Dodaj**.
+2. W obszarze **zalecana dokumentacja** lub **dostępna dokumentacja** przejdź do zestawów dokumentacji, które chcesz pobrać, a następnie wybierz pozycję **Dodaj**.
 
 3. Wybierz pozycję **Aktualizuj**.
 
@@ -131,7 +131,7 @@ Następnie należy spakować zawartość, aby można ją było wdrożyć na komp
 
 1. Utwórz udział sieciowy i skopiuj zawartość pomocy do tej lokalizacji.
 
-     Na przykład skopiuj zawartość z *C:\VSHelp* do * \\ \myserver\VSHelp*.
+     Na przykład skopiuj zawartość z *C:\VSHelp* do *\\ \myserver\VSHelp*.
 
 2. Utwórz plik *. bat* , aby zawierał skrypt wdrażania dla zawartości pomocy. Ponieważ klient może mieć blokadę odczytu na dowolnym z plików, które są usuwane w ramach wypychania, należy zamknąć klienta przed wypchnięciem aktualizacji. Na przykład:
 

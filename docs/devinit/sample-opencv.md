@@ -5,18 +5,18 @@ ms.date: 08/28/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: a2f284e1e464ab41391f60c546ce01d418ff377b
-ms.sourcegitcommit: 8efe6b45d65f9db23f5575c15155fe363fa12cdb
+ms.openlocfilehash: 6524cec090f20c475724f1ae8615c5dd24cfa2d7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92750118"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943506"
 ---
 # <a name="opencv"></a>OpenCV
 
@@ -28,10 +28,10 @@ Poniższe dostosowania są już stosowane w rozwidleniu [Microsoft/OpenCV](https
 
 `.devcontainer`Katalog musi zawierać następujące pliki:
 
-* devcontainer.jsna
+* devcontainer.json
 * devinit.jsna
 
-### <a name="devcontainerjson"></a>devcontainer.jsna
+### <a name="devcontainerjson"></a>devcontainer.json
 
 Poniżej znajduje się zawartość _devcontainer.js_ pliku.
 
@@ -41,7 +41,7 @@ Poniżej znajduje się zawartość _devcontainer.js_ pliku.
 }
 ```
 
-`postCreateCommand`Uruchamia narzędzie [devinit](devinit-and-codespaces.md) , które wykorzystuje _devinit.json_ .
+`postCreateCommand`Uruchamia narzędzie [devinit](devinit-and-codespaces.md) , które wykorzystuje _devinit.json_.
 
 ### <a name="devinitjson"></a>devinit.jsna
 

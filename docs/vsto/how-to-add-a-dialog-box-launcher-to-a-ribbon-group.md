@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], dialog box launcher
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 85b5d6f127c6f8b2b8140e778792aa1088efe05c
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: d8e04b7549d1b6a458f0993804946502f55f0165
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844936"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942285"
 ---
 # <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Instrukcje: Dodawanie uruchamiania okna dialogowego do grupy wstążki
   Możesz dodać przycisk uruchamiania okna dialogowego do dowolnej grupy na Wstążce. Uruchamia okno dialogowe jest małą ikoną wyświetlaną w grupie. Użytkownicy klikają tę ikonę, aby otworzyć powiązane okna dialogowe lub okienka zadań, które zawierają więcej opcji odnoszących się do grupy.
@@ -37,7 +37,7 @@ ms.locfileid: "96844936"
 
      Dodaj kod do <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup.DialogLauncherClick> zdarzenia grupy w celu otworzenia niestandardowego lub wbudowanego okna dialogowego.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Omówienie wstążki](../vsto/ribbon-overview.md)
 - [Uzyskiwanie dostępu do wstążki w czasie wykonywania](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Przykłady i przewodniki dotyczące programowania pakietu Office](../vsto/office-development-samples-and-walkthroughs.md)

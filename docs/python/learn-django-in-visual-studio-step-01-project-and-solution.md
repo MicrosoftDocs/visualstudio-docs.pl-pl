@@ -6,23 +6,23 @@ ms.date: 11/19/2018
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3b21268b488eb0061c5c329e0afcb57ef1ec6e3a
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: afde24347237ed3fc87d7a00ebdf21787d78909c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809927"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942664"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Samouczek: Rozpoczynanie pracy z platformą internetową Django w programie Visual Studio
 
 [Django](https://www.djangoproject.com/) to struktura języka Python wysokiego poziomu przeznaczona do szybkiego, bezpiecznego i skalowalnego programowania w sieci Web. Ten samouczek Eksplorowanie struktury Django w kontekście szablonów projektu, które program Visual Studio zapewnia, aby usprawnić Tworzenie aplikacji sieci Web opartych na Django.
 
-Ten samouczek zawiera informacje na temat wykonywania następujących czynności:
+Z tego samouczka dowiesz się, jak wykonywać następujące czynności:
 
 > [!div class="checklist"]
 > - Tworzenie podstawowego projektu Django w repozytorium git przy użyciu szablonu "Blank Django Web Project" (krok 1)
@@ -35,7 +35,7 @@ Ten samouczek zawiera informacje na temat wykonywania następujących czynności
 ## <a name="prerequisites"></a>Wymagania wstępne
 
 - Program Visual Studio 2017 lub nowszy w systemie Windows z następującymi opcjami:
-  - Obciążenie **programowanie** w języku Python (karta**obciążenie** w instalatorze). Aby uzyskać instrukcje, zobacz [Instalowanie obsługi języka Python w programie Visual Studio](installing-python-support-in-visual-studio.md).
+  - Obciążenie **programowanie** w języku Python (karta **obciążenie** w instalatorze). Aby uzyskać instrukcje, zobacz [Instalowanie obsługi języka Python w programie Visual Studio](installing-python-support-in-visual-studio.md).
   - Rozszerzenie **git dla systemu Windows** i usługi **GitHub dla programu Visual Studio** na karcie **poszczególne składniki** w obszarze **Narzędzia kodu**.
 
 Szablony projektów Django są również dołączone do wszystkich wcześniejszych wersji Python Tools for Visual Studio, ale szczegółowe informacje mogą się różnić od tego, co zostało omówione w tym samouczku (zwłaszcza w przypadku wcześniejszych wersji środowiska Django Framework).
@@ -115,13 +115,13 @@ Aby uzyskać dodatkową dyskusję na temat kontroli źródła jako Automatyzacja
 
 ### <a name="question-can-i-prevent-visual-studio-from-auto-committing-a-new-project"></a>Pytanie: czy program Visual Studio może uniemożliwić autozatwierdzanie nowego projektu?
 
-Odpowiedź: Tak. Aby wyłączyć automatyczne zatwierdzanie, przejdź do strony **Ustawienia** w obszarze **Team Explorer**, wybierz **Git**pozycję  >  **Ustawienia globalne**git, usuń zaznaczenie pola wyboru **Zatwierdź zmiany po scaleniu domyślnie**, a następnie wybierz pozycję **Aktualizuj**.
+Odpowiedź: Tak. Aby wyłączyć automatyczne zatwierdzanie, przejdź do strony **Ustawienia** w obszarze **Team Explorer**, wybierz pozycję  >  **Ustawienia globalne** git, usuń zaznaczenie pola wyboru **Zatwierdź zmiany po scaleniu domyślnie**, a następnie wybierz pozycję **Aktualizuj**.
 
 ## <a name="step-1-3-create-the-virtual-environment-and-exclude-it-from-source-control"></a>Krok 1-3: Tworzenie środowiska wirtualnego i wykluczenie go z kontroli źródła
 
 Teraz, po skonfigurowaniu kontroli źródła dla projektu, można utworzyć środowisko wirtualne, które zawiera niezbędne pakiety Django dla projektu. Następnie można użyć **Team Explorer** do wykluczenia folderu środowiska z kontroli źródła.
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł **środowiska Python** i wybierz polecenie **Dodaj środowisko wirtualne**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł **środowiska Python** i wybierz polecenie **Dodaj środowisko wirtualne**.
 
     ![Dodaj polecenie środowiska wirtualnego w Eksplorator rozwiązań](media/django/step01-add-virtual-environment-command.png)
 
@@ -153,7 +153,7 @@ Odpowiedź: środowisko wirtualne to świetny sposób izolowania dokładnych zal
 
 Odpowiedź: najpierw Edytuj plik *. gitignore* , aby wykluczyć folder: Znajdź sekcję na końcu z komentarzem `# Python Tools for Visual Studio (PTVS)` i Dodaj nowy wiersz do folderu środowiska wirtualnego, takiego jak `/BasicProject/env` . (Ponieważ program Visual Studio nie wyświetla pliku w **Eksplorator rozwiązań**, otwórz go bezpośrednio przy użyciu **pliku**  >  **Otwórz**  >  Polecenie menu **plik** . Możesz również otworzyć plik z **Team Explorer**: na stronie **Ustawienia** wybierz pozycję **Ustawienia repozytorium**, przejdź do sekcji **Ignorowanie atrybutów & plików** , a następnie wybierz łącze **Edytuj** obok **. gitignore**.)
 
-Następnie otwórz okno polecenia, przejdź do folderu, takiego jak *BasicProject* , który zawiera folder środowiska wirtualnego, taki jak *ENV*i Run `git rm -r env` . Następnie zatwierdź te zmiany z wiersza polecenia ( `git commit -m 'Remove venv'` ) lub Zatwierdź ze strony **zmiany** w **Team Explorer**.
+Następnie otwórz okno polecenia, przejdź do folderu, takiego jak *BasicProject* , który zawiera folder środowiska wirtualnego, taki jak *ENV* i Run `git rm -r env` . Następnie zatwierdź te zmiany z wiersza polecenia ( `git commit -m 'Remove venv'` ) lub Zatwierdź ze strony **zmiany** w **Team Explorer**.
 
 ## <a name="step-1-4-examine-the-boilerplate-code"></a>Krok 1-4: badanie kodu standardowego
 
@@ -198,7 +198,7 @@ Odpowiedź: tak i nie. Django ma wbudowany serwer sieci Web, który jest używan
 
 ### <a name="question-whats-the-difference-between-using-the-debug-menu-commands-and-the-server-commands-on-the-projects-python-submenu"></a>Pytanie: Jaka jest różnica między użyciem poleceń menu Debuguj i poleceń serwera w podmenu środowiska Python projektu?
 
-Odpowiedź: oprócz poleceń menu **Debuguj** i przycisków paska narzędzi można również uruchomić serwer przy użyciu **Python**  >  polecenia**Uruchom serwer uruchomieniowy** Python lub **Python**  >  **Uruchom serwer debugowania** w menu kontekstowym projektu. Oba polecenia otwierają okno konsoli, w którym widoczny jest lokalny adres URL (localhost: Port) dla uruchomionego serwera. Należy jednak ręcznie otworzyć przeglądarkę z tym adresem URL i uruchomić serwer debugowania nie uruchamia automatycznie debugera programu Visual Studio. Możesz dołączyć debuger do uruchomionego procesu później, jeśli chcesz, przy użyciu polecenia **Debuguj**  >  **Dołącz do procesu** .
+Odpowiedź: oprócz poleceń menu **Debuguj** i przycisków paska narzędzi można również uruchomić serwer przy użyciu   >  polecenia **Uruchom serwer uruchomieniowy** Python lub **Python**  >  **Uruchom serwer debugowania** w menu kontekstowym projektu. Oba polecenia otwierają okno konsoli, w którym widoczny jest lokalny adres URL (localhost: Port) dla uruchomionego serwera. Należy jednak ręcznie otworzyć przeglądarkę z tym adresem URL i uruchomić serwer debugowania nie uruchamia automatycznie debugera programu Visual Studio. Możesz dołączyć debuger do uruchomionego procesu później, jeśli chcesz, przy użyciu polecenia **Debuguj**  >  **Dołącz do procesu** .
 
 ## <a name="next-steps"></a>Następne kroki
 

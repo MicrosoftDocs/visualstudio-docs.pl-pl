@@ -9,17 +9,17 @@ ms.custom:
 ms.topic: tutorial
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0277379c44a7d0334798920759438dce52ae16f8
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 36aabdd07dd7fa966a31d8fc3844e68d816c59ae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901274"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944527"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>Poznaj projekty i rozwiązania przy użyciu Visual Basic
 
@@ -245,13 +245,13 @@ Jeśli chcesz sprawdzić, czy test jednostkowy działa, wybierz pozycję **Testu
 ![Eksplorator tekstów w programie Visual Studio pokazujący zakończony test](../media/tutorial-projects-test-explorer.png)
 
 > [!TIP]
-> Jeśli **Eksplorator testów** nie zostanie otwarty automatycznie, otwórz go, wybierając pozycję **Testuj**  >  **Windows**  >  **Eksplorator testów** systemu Windows na pasku menu.
+> Jeśli **Eksplorator testów** nie zostanie otwarty automatycznie, otwórz go, wybierając pozycję **Testuj**  >    >  **Eksplorator testów** systemu Windows na pasku menu.
 
 ## <a name="next-steps"></a>Następne kroki
 
 Aby dowiedzieć się więcej na temat programu Visual Studio, należy rozważyć utworzenie aplikacji, postępując zgodnie z jednym z [samouczków Visual Basic](index.yml).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Tworzenie projektów i rozwiązań](../../ide/creating-solutions-and-projects.md)
 - [Zarządzanie właściwościami projektów i rozwiązań](../../ide/managing-project-and-solution-properties.md)

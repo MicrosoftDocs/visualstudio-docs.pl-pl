@@ -5,16 +5,16 @@ ms.custom: SEO-VS-2020
 ms.date: 07/24/2019
 ms.topic: conceptual
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 82cccbc47d26dd9ef74ee02931d6efb4bbfa0054
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 56bfe2b00efc4af71ca562672ad01423778edecd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329162"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943734"
 ---
 # <a name="walkthrough-test-driven-development-using-test-explorer"></a>Przewodnik: Programowanie sterowane testami za pomocą Eksploratora testów
 
@@ -62,7 +62,7 @@ W tym instruktażu przedstawiono sposób tworzenia przetestowanej metody w języ
 
 6. Uruchom test jednostkowy.
 
-   1. Aby otworzyć **Eksploratora testów**, w menu **test** wybierz polecenie **Windows**  >  **Eksplorator testów** systemu Windows.
+   1. Aby otworzyć **Eksploratora testów**, w menu **test** wybierz polecenie   >  **Eksplorator testów** systemu Windows.
 
    2. W **Eksploratorze testów** wybierz przycisk **Uruchom wszystko** , aby uruchomić test.
 

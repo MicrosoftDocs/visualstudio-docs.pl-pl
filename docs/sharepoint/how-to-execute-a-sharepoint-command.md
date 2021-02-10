@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint commands [SharePoint development in Visual Studio], executing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2746704e30a61b0971db50a5083855b4a93560d4
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: b5a9ea96820aafe32ca119d7e6d08057b91206fd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903538"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943825"
 ---
 # <a name="how-to-execute-a-sharepoint-command"></a>Instrukcje: wykonywanie polecenia SharePoint
   Jeśli chcesz użyć modelu obiektów serwera w rozszerzeniu narzędzi programu SharePoint, musisz utworzyć niestandardowe *polecenie programu SharePoint* , aby wywołać interfejs API. Po zdefiniowaniu polecenia i wdrożeniu go przy użyciu rozszerzenia narzędzi programu SharePoint, rozszerzenie może wykonać polecenie, aby wywołać model obiektów programu SharePoint Server. Aby wykonać polecenie, użyj jednej z ExecuteCommand metod <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> obiektu.
@@ -72,7 +72,7 @@ ms.locfileid: "94903538"
 ## <a name="compile-the-code"></a>Kompiluj kod
  Ten przykład wymaga odwołania do zestawu Microsoft. VisualStudio. SharePoint.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wywoływanie modeli obiektów programu SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)
 - [Instrukcje: Tworzenie polecenia SharePoint](../sharepoint/how-to-create-a-sharepoint-command.md)
 - [Przewodnik: rozszerzona Eksplorator serwera do wyświetlania składników Web Part](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)

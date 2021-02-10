@@ -5,17 +5,17 @@ ms.date: 01/28/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e53ef96ad8fab8b26f04ccd5f7f0488d1f0d6985
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 343c87f3c14e8ebafeb99a55a88d0b86df1bafcf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974073"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942637"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>Użyj IPython w oknie interaktywnym
 
@@ -80,6 +80,6 @@ W tym instruktażu należy zainstalować środowisko [Anaconda](https://www.cont
 
 IPython ma wiele innych użytecznych funkcji, takich jak ucieczki do powłoki systemowej, podstawienia zmiennych, przechwytywania danych wyjściowych itp. Więcej informacji można znaleźć w [dokumentacji IPython](https://ipython.org/documentation.html) .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Data Science Virtual Machine platformy Azure](/azure/machine-learning/data-science-virtual-machine/overview) jest wstępnie skonfigurowany do uruchamiania notesów Jupyter oraz szerokiej gamy innych narzędzi do nauki o danych.

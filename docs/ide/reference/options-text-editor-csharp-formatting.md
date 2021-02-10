@@ -17,21 +17,21 @@ helpviewer_keywords:
 - Text editor Options dialog box, formatting
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: a29f298579d571595cbf537f99ed67b333fbbb9c
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: eea4f9afd82dd87385e02ba9f149e91f336369a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96039774"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944072"
 ---
 # <a name="options-dialog-box-text-editor--c--code-style--formatting"></a>Opcje — okno dialogowe: Edytor tekstu \> C# \> \> Formatowanie stylu kodu
 
 Użyj strony opcje **formatowania** i jej podstrony ([**wcięcia**](#indentation-page), **nowe linie**, **odstępy** i **Zawijanie**), aby ustawić opcje formatowania kodu w edytorze kodu.
 
-Aby uzyskać dostęp do tej strony opcji **Tools**, wybierz  >  **Opcje** narzędzia z paska menu. W oknie dialogowym **Opcje** wybierz pozycję **Edytor tekstu**  >  **C#**  >  **Formatowanie stylu kodu**  >  **Formatting**.
+Aby uzyskać dostęp do tej strony opcji , wybierz  >  **Opcje** narzędzia z paska menu. W oknie dialogowym **Opcje** wybierz pozycję **Edytor tekstu**  >  **C#**  >  **Formatowanie stylu kodu**  >  .
 
 > [!TIP]
 > **Wcięcia**, **nowe wiersze**, **odstępy** i podstrony **zawijania** każdy wyświetlają okno podglądu u dołu, które pokazuje efekt poszczególnych opcji. Aby użyć okna podglądu, wybierz opcję formatowania. Okno podglądu zawiera przykład wybranej opcji. Po zmianie ustawienia przez wybranie przycisku radiowego lub pola wyboru okno podglądu zostanie zaktualizowane, aby pokazać efekt nowego ustawienia.
@@ -67,7 +67,7 @@ Te ustawienia umożliwiają skonfigurowanie polecenia **Formatuj dokument** w ce
 |**Zastosuj wszystkie reguły formatowania języka C# (wcięcia, zawijanie, odstępy)**|Polecenie **Formatuj dokument** zawsze rozwiązuje problemy związane z formatowaniem. Nie można zmienić tego ustawienia.| [Podstawowe opcje EditorConfig](../../ide/create-portable-custom-editor-options.md)<br/>[Opcje formatowania programu .NET EditorConfig](/dotnet/fundamentals/code-analysis/style-rules/formatting-rules)<br/><br/>**Narzędzia**  >  **Opcje**  >  **Edytor tekstu**  >  Język **C#**  >  **Formatowanie** > [**wcięcia** lub **nowe wiersze** , **odstępy** lub **Zawijanie**]|
 |**Wykonaj Dodawanie czyszczenia kodu podczas formatowania**|Po wybraniu programu stosuje poprawki dla reguł wymienionych poniżej w polecenie **Edit. FormatDocument** .| Nie dotyczy |
 |**Usuń niepotrzebne użycia**|Po wybraniu powoduje usunięcie niepotrzebnych `using` dyrektyw podczas wyzwalania **Edit. FormatDocument** .| Nie dotyczy |
-|**Sortowanie deklaracji using**|Po wybraniu sortuje `using` dyrektywy, gdy zostanie wyzwolone polecenie **Edit. FormatDocument** .| dotnet_sort_system_directives_first<br/><br/>**Narzędzia**  >  **Opcje**  >  **Edytor tekstu**  >  Język **C#**  >  **Zaawansowane**  >  **Umieść dyrektywy "system" jako pierwsze podczas sortowania przy użyciu** |
+|**Sortuj użycia**|Po wybraniu sortuje `using` dyrektywy, gdy zostanie wyzwolone polecenie **Edit. FormatDocument** .| dotnet_sort_system_directives_first<br/><br/>**Narzędzia**  >  **Opcje**  >  **Edytor tekstu**  >  Język **C#**  >  **Zaawansowane**  >  **Umieść dyrektywy "system" jako pierwsze podczas sortowania przy użyciu** |
 |**Dodawanie/usuwanie nawiasów klamrowych dla jednowierszowych instrukcji sterujących**|Po zaznaczeniu, dodaje lub usuwa nawiasy klamrowe z instrukcji kontroli jednowierszowej, gdy jest wyzwalany plik **Edit. FormatDocument** .| csharp_prefer_braces<br/><br/>**Narzędzia**  >  **Opcje**  >  **Edytor tekstu**  >  Język **C#**  >  **Styl kodu**  >  **Preferencje**  >  bloku kodu **Preferuj nawiasy klamrowe** |
 |**Dodaj Modyfikatory dostępności**|Po wybraniu dodaje brakujące Modyfikatory dostępności podczas uruchamiania funkcji **Edit. FormatDocument** .| dotnet_style_require_accessibility_modifiers |
 |**Sortuj Modyfikatory dostępności**|Po wybraniu sortuje Modyfikatory dostępności podczas uruchamiania funkcji **Edit. FormatDocument** .| csharp_preferred_modifier_order<br/>visual_basic_preferred_modifier_order |
@@ -92,7 +92,7 @@ Opcje wcięć na tej stronie są stosowane, gdy kod jest formatowany automatyczn
 ![Opcje wcięć edytora tekstu w języku C# w programie Visual Studio](media/csharp-indentation-options.png)
 
 > [!TIP]
-> Dostępne są również opcje wcięć na **Text Editor**  >  **C#**  >  stronie opcje **kart** edytora tekstu C#. Te opcje określają tylko miejsce, w którym Edytor kodu umieszcza kursor po naciśnięciu klawisza **Enter** na końcu wiersza.
+> Dostępne są również opcje wcięć na   >    >  stronie opcje **kart** edytora tekstu C#. Te opcje określają tylko miejsce, w którym Edytor kodu umieszcza kursor po naciśnięciu klawisza **Enter** na końcu wiersza.
 >
 > ![Opcje kart edytora tekstu w języku C# w programie Visual Studio](media/csharp-tabs-options.png)
 

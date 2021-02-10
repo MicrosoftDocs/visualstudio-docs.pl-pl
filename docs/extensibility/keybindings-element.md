@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 26a15d5c-ddea-4977-af7f-d795ff09c7ad
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 928637d8103a69eafd3bda4446a55bb7523f83a8
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: 451e0bab9568d794205e38e3573265c20c259961
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97616094"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943338"
 ---
 # <a name="keybindings-element"></a>Element powiązań klawiszy
 Element powiązania klawiszy Grupuje elementy powiązanie klawiszy i inne grupowania powiązań klawiszy.

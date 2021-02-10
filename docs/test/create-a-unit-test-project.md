@@ -1,22 +1,22 @@
 ---
-title: Tworzenie projektu testu jednostkowego
+title: Tworzenie projektu testów jednostkowych
 description: Dowiedz się, jak utworzyć projekt testu jednostkowego. Projekt testowy może być w tym samym rozwiązaniu co kod produkcyjny lub może znajdować się w osobnym rozwiązaniu.
 ms.custom: SEO-VS-2020
 ms.date: 01/29/2019
 ms.topic: how-to
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: f0d438c05d3c9608c11903c02119d7c3e267a48b
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 8ca3cbe82bf4253e660ce69960570e40702c5512
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441849"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942363"
 ---
-# <a name="create-a-unit-test-project"></a>Tworzenie projektu testu jednostkowego
+# <a name="create-a-unit-test-project"></a>Tworzenie projektu testów jednostkowych
 
 Testy jednostkowe często duplikują strukturę testowanego kodu. Na przykład projekt testu jednostkowego zostanie utworzony dla każdego projektu kodu w produkcie. Projekt testowy może być w tym samym rozwiązaniu co kod produkcyjny lub może znajdować się w osobnym rozwiązaniu. W rozwiązaniu można mieć wiele projektów testów jednostkowych.
 

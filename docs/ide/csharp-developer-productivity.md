@@ -3,19 +3,19 @@ title: Zwiększ swoją produktywność na potrzeby programowania na platformie .
 description: Przegląd nawigacji, analizy kodu, testowania jednostkowego i innych funkcji, które ułatwiają szybsze pisanie lepszego kodu platformy .NET.
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.date: 11/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 23b50221845cf2b02b963c98f912a218a60630c6
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 036c59e54ba2e2068cf1bfa7eb05b67059cdf855
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658415"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942948"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Przewodnik dotyczący wydajności programu Visual Studio dla deweloperów języka C#
 
@@ -44,7 +44,7 @@ Poniżej przedstawiono popularne skróty programu Visual Studio:
 | Skrót (wszystkie profile) | Polecenie | Opis |
 |-|-|-|
 | **Ctrl** + **T** | Przejdź do wszystkiego | Przejdź do dowolnego pliku, typu, składowej lub deklaracji symbolu |
-| **F12** (kliknij również **Ctrl** + **Click**) | Przejdź do definicji | Przejdź do miejsca, w którym zdefiniowano symbol |
+| **F12** (kliknij również **Ctrl** + ) | Przejdź do definicji | Przejdź do miejsca, w którym zdefiniowano symbol |
 | **Ctrl** + **F12** | Przejdź do implementacji | Nawigacja z typu podstawowego lub składowej do różnych implementacji |
 | **SHIFT** + **F12** | Znajdź wszystkie odwołania | Zobacz wszystkie odwołania do symboli lub literałów |
 | **Alt** + **Strona główna** | Polecenie Go To Base (Przejdź do podstawy) | Nawigowanie po łańcuchu dziedziczenia |
@@ -62,7 +62,7 @@ Poniżej przedstawiono popularne skróty programu Visual Studio:
 | **Ctrl** + **SHIFT**+**/** | Przełącz komentarz bloku/Usuń komentarz | To polecenie dodaje lub usuwa komentarze bloku w zależności od wybranych elementów |
 
 > [!NOTE]
-> Niektóre rozszerzenia odpinają domyślne powiązania klawiszy programu Visual Studio. Aby użyć powyższych poleceń, Przywróć wartości domyślne powiązań klawiszy do ustawień domyślnych programu Visual Studio, przechodząc do opcji **Narzędzia**  >  **Importuj i Eksportuj ustawienia**  >  **Zresetuj wszystkie ustawienia** lub **Narzędzia**  >  **Opcje**  >  **Keyboard**  >  **Zresetuj**.
+> Niektóre rozszerzenia odpinają domyślne powiązania klawiszy programu Visual Studio. Aby użyć powyższych poleceń, Przywróć wartości domyślne powiązań klawiszy do ustawień domyślnych programu Visual Studio, przechodząc do opcji **Narzędzia**  >  **Importuj i Eksportuj ustawienia**  >  **Zresetuj wszystkie ustawienia** lub **Narzędzia**  >  **Opcje**  >    >  **Zresetuj**.
 
 Aby uzyskać więcej informacji na temat skrótów klawiaturowych i poleceń, zobacz [Skróty dotyczące produktywności](../ide/productivity-shortcuts.md) i [popularne skróty klawiaturowe](default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md).
 
@@ -89,7 +89,7 @@ Można użyć pliku EditorConfig do codify konwencji kodowania i uzyskać do nic
 
 ::: moniker range=">=vs-2019"
 
-- Automatycznie Utwórz plik *. editorconfig* na podstawie ustawień stylu kodu w opcji **Narzędzia** > **Options** > **Edytor tekstu** > **C#** > **styl kodu**.
+- Automatycznie Utwórz plik *. editorconfig* na podstawie ustawień stylu kodu w opcji **Narzędzia** >  > **Edytor tekstu** > **C#** > **styl kodu**.
 
    ![Generuj plik. editorconfig na podstawie ustawień w programie VS 2019](media/vs-2019/generate-editorconfig-file.png)
 
@@ -131,7 +131,7 @@ Popularne szybkie poprawki i refaktoryzacje obejmują:
 - Generuj Konstruktor
 - Generate — Metoda
 - Przenieś typ do pliku
-- Dodaj sprawdzenie wartości null
+- Dodaj Null-Check
 - Dodaj parametr
 - Usuń niepotrzebne użycia
 - Pętla foreach do zapytania LINQ lub metoda LINQ
@@ -154,7 +154,7 @@ Kilku członków społeczności dodała bezpłatne rozszerzenia, które dodają 
 
 Program Visual Studio ma wiele funkcji ułatwiających wyszukiwanie i [nawigowanie po kodzie](../ide/navigating-code.md).
 
-| Cechy | Skrót | Szczegóły/ulepszenia |
+| Cecha | Skrót | Szczegóły/ulepszenia |
 |- | - | -|
 | Znajdź wszystkie odwołania | **SHIFT** + **F12**| Wyniki są kolorowe i mogą być pogrupowane według projektu, definicji i typu referencyjnego, takich jak Odczyt lub zapis. Możesz również "zablokować" wyniki. |
 | Przejdź do implementacji | **Ctrl** + **F12** | Możesz użyć przejdź do definicji `override` słowa kluczowego, aby przejść do przesłoniętego elementu członkowskiego |
@@ -226,7 +226,7 @@ Za pomocą narzędzia Git lub TFVC można przechowywać i aktualizować kod w pr
 
 Poniżej znajduje się lista funkcji edytora i produktywności, które umożliwiają efektywniejsze pisanie kodu. Może być konieczne włączenie niektórych funkcji, ponieważ są one domyślnie wyłączone (mogą być indeksowane na komputerze, są kontrowersyjnye lub są obecnie eksperymentalne).
 
-| Cechy | Szczegóły | Jak włączyć |
+| Cecha | Szczegóły | Jak włączyć |
 |-|-|-|
 | Zlokalizuj plik w Eksplorator rozwiązań | Podświetla aktywny plik w **Eksplorator rozwiązań** | **Narzędzia**  >  **Opcje**  >  **Projekty i rozwiązania**  >  **Śledź aktywny element w Eksplorator rozwiązań** |
 | Dodaj using dla typów w zestawach odwołań i pakietach NuGet | Pokazuje żarówkę błędu z poprawkami kodu, aby zainstalować pakiet NuGet dla typu niereferencyjnego | **Narzędzia**  >  **Opcje**  >  **Edytor tekstu**  >  Język **C#**  >  **Zaawansowane**  >  **Sugeruj użycie dla typów w zestawach odwołań** i **Sugeruj użycie dla typów w pakietach NuGet** |

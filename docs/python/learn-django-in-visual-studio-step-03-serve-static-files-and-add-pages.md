@@ -6,17 +6,17 @@ ms.date: 11/19/2018
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 748f941d5a8f257b3765b06651ff3244793e0123
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7aabfa91f7f6c6204919c4a06d2d3080b5174c5f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238533"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942584"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance-with-django-app"></a>Krok 3. obsługiwanie plików statycznych, dodawanie stron i używanie dziedziczenia szablonów z aplikacją Django
 
@@ -50,7 +50,7 @@ Odpowiedź: plik projektu programu Visual Studio (*. pyproj*) zawiera identyfika
 
 W aplikacji sieci Web skompilowanej za pomocą języka Python (przy użyciu dowolnej platformy) pliki języka Python są zawsze uruchamiane na serwerze hosta sieci Web i nigdy nie są przesyłane do komputera użytkownika. Inne pliki, takie jak CSS i JavaScript, są używane wyłącznie przez przeglądarkę, więc serwer hosta po prostu dostarcza je w miarę ich żądania. Takie pliki są określane jako pliki "static", a Django mogą dostarczać je automatycznie bez konieczności pisania kodu.
 
-Projekt Django jest domyślnie skonfigurowany do obsłużenia plików statycznych z folderu *statycznego* aplikacji, dzięki czemu są one zgodne z tymi wierszami w *Settings.py*projektu Django:
+Projekt Django jest domyślnie skonfigurowany do obsłużenia plików statycznych z folderu *statycznego* aplikacji, dzięki czemu są one zgodne z tymi wierszami w *Settings.py* projektu Django:
 
 ```python
 # Static files (CSS, JavaScript, Images)
@@ -63,7 +63,7 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 
 Pliki można organizować przy użyciu dowolnej struktury folderów w obszarze *statyczny* , a następnie użyć ścieżek względnych w tym folderze, aby odwołać się do plików. Aby zademonstrować ten proces, następujące kroki umożliwiają dodanie pliku CSS do aplikacji, a następnie użycie tego arkusza stylów w szablonie *index.html* :
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy folder **HelloDjangoApp** w projekcie programu Visual Studio, wybierz polecenie **Dodaj**  >  **Nowy folder**i Nazwij folder `static` .
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy folder **HelloDjangoApp** w projekcie programu Visual Studio, wybierz polecenie **Dodaj**  >  **Nowy folder** i Nazwij folder `static` .
 
 1. Kliknij prawym przyciskiem myszy folder **statyczny** i wybierz polecenie **Dodaj**  >  **nowy element**. W wyświetlonym oknie dialogowym wybierz szablon **arkusza stylów** , Nazwij plik `site.css` , a następnie wybierz **przycisk OK**. Plik **site. css** zostanie wyświetlony w projekcie i otwarty w edytorze. Struktura folderów powinna wyglądać podobnie do poniższej ilustracji:
 
@@ -101,7 +101,7 @@ Odpowiedź: `{% load staticfiles %}` wiersz jest wymagany przed odwołaniem do p
 
 ### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>Pytanie: czy istnieją konwencje do organizowania plików statycznych?
 
-Odpowiedź: możesz jednak dodać inne pliki CSS, JavaScript i HTML do folderu *statycznego* . Typowym sposobem organizowania plików statycznych jest tworzenie podfolderów o nazwach *Fonts*, *scripts*i *Content* (dla arkuszy stylów i innych plików). W każdym przypadku Pamiętaj o uwzględnieniu tych folderów w ścieżce względnej do pliku w `{% static %}` odwołaniach.
+Odpowiedź: możesz jednak dodać inne pliki CSS, JavaScript i HTML do folderu *statycznego* . Typowym sposobem organizowania plików statycznych jest tworzenie podfolderów o nazwach *Fonts*, *scripts* i *Content* (dla arkuszy stylów i innych plików). W każdym przypadku Pamiętaj o uwzględnieniu tych folderów w ścieżce względnej do pliku w `{% static %}` odwołaniach.
 
 ### <a name="question-can-i-complete-the-same-task-without-using-the--load-staticfiles--tag"></a>Pytanie: Czy można wykonać to samo zadanie bez użycia tagu {% Load staticfiles%}?
 
@@ -129,7 +129,7 @@ Dodanie innej strony do aplikacji oznacza następujące kwestie:
 
 Poniższe kroki umożliwiają dodanie strony "informacje" do projektu "HelloDjangoApp" i linków do tej strony ze strony głównej:
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy folder **templates/HelloDjangoApp** , wybierz polecenie **Dodaj**  >  **nowy element**, wybierz szablon elementu **strony HTML** , Nazwij plik `about.html` , a następnie wybierz **przycisk OK**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy folder **templates/HelloDjangoApp** , wybierz polecenie **Dodaj**  >  **nowy element**, wybierz szablon elementu **strony HTML** , Nazwij plik `about.html` , a następnie wybierz **przycisk OK**.
 
     > [!Tip]
     > Jeśli polecenie **nowy element** nie pojawia się w menu **Dodaj** , upewnij się, że serwer został zatrzymany, aby program Visual Studio wyzamykał tryb debugowania.
@@ -176,7 +176,7 @@ Poniższe kroki umożliwiają dodanie strony "informacje" do projektu "HelloDjan
     <div><a href="about">About</a></div>
     ```
 
-1. **Zapisz wszystkie**pliki przy użyciu  >  polecenia**Zapisz wszystko** menu lub po prostu naciśnij klawisz **Ctrl** + **SHIFT** + **S**. (Technicznie ten krok nie jest wymagany, ponieważ uruchomienie projektu w programie Visual Studio powoduje automatyczne zapisanie plików. Jednak dobrym poleceniem jest poznanie!)
+1. **Zapisz wszystkie** pliki przy użyciu  >  polecenia **Zapisz wszystko** menu lub po prostu naciśnij klawisz **Ctrl** + **SHIFT** + **S**. (Technicznie ten krok nie jest wymagany, ponieważ uruchomienie projektu w programie Visual Studio powoduje automatyczne zapisanie plików. Jednak dobrym poleceniem jest poznanie!)
 
 1. Uruchom projekt, aby obserwować wyniki i sprawdzić nawigację między stronami. Po zakończeniu zamknij serwer.
 
@@ -202,7 +202,7 @@ Wyznacza szablonu podstawowego blokuje używanie `{% block <block_name> %}` tag�
 
 W poniższych krokach przedstawiono dziedziczenie:
 
-1. W folderze *Szablony/HelloDjangoApp* aplikacji Utwórz nowy plik HTML (za pomocą **Add**  >  menu kontekstowego Dodaj**nowy element** lub **Dodaj**  >  **stronę HTML**) o nazwie *layout.html*i Zastąp jego zawartość następującym znacznikiem:. Można zobaczyć, że ten szablon zawiera blok o nazwie "Content", który ma zostać zastąpiony przez strony odwołujące:
+1. W folderze *Szablony/HelloDjangoApp* aplikacji Utwórz nowy plik HTML (za pomocą   >  menu kontekstowego Dodaj **nowy element** lub **Dodaj**  >  **stronę HTML**) o nazwie *layout.html* i Zastąp jego zawartość następującym znacznikiem:. Można zobaczyć, że ten szablon zawiera blok o nazwie "Content", który ma zostać zastąpiony przez strony odwołujące:
 
     ```html
     <!DOCTYPE html>

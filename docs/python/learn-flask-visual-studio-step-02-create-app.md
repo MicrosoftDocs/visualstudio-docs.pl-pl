@@ -6,17 +6,17 @@ ms.date: 01/07/2019
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a06c6dbacf21cb2ce00539af901c24c77aaf9ef5
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 8e9d55d9c1c22edea1ff826b23beb6d0ec6b392c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974086"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942415"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Krok 2. Tworzenie aplikacji do kolby z widokami i szablonami stron
 
@@ -84,7 +84,7 @@ W kodzie utworzonym przez szablon "pusty kolby projekt sieci Web" istnieje pojed
 
 7. Wybierz kolejno opcje **Debuguj**  >  **Rozpocznij debugowanie** (**F5**) lub przycisk **serwer sieci Web** na pasku narzędzi (widoczna przeglądarka może się różnić), aby uruchomić aplikację i otworzyć przeglądarkę. Wypróbuj trasy URL/i/Home.
 
-8. Możesz również ustawić punkty przerwania w różnych częściach kodu i ponownie uruchomić aplikację, aby postępować zgodnie z sekwencją uruchamiania. Na przykład ustaw punkt przerwania w pierwszych wierszach *runserver.py* i *HelloFlask \_* init_ *. PR* i w `return "Hello Flask!"` wierszu w *views.py*. Następnie uruchom ponownie aplikację (**Debug**  >  **ponownie uruchom** polecenie Debug, **naciśnij klawisz Ctrl** + **SHIFT** + **F5** lub przycisk paska narzędzi poniżej), a następnie przejdź do kroku (**F10**) kod lub Uruchom z każdego punktu przerwania przy użyciu klawisza **F5**.
+8. Możesz również ustawić punkty przerwania w różnych częściach kodu i ponownie uruchomić aplikację, aby postępować zgodnie z sekwencją uruchamiania. Na przykład ustaw punkt przerwania w pierwszych wierszach *runserver.py* i *HelloFlask \_* init_ *. PR* i w `return "Hello Flask!"` wierszu w *views.py*. Następnie uruchom ponownie aplikację (  >  **ponownie uruchom** polecenie Debug, **naciśnij klawisz Ctrl** + **SHIFT** + **F5** lub przycisk paska narzędzi poniżej), a następnie przejdź do kroku (**F10**) kod lub Uruchom z każdego punktu przerwania przy użyciu klawisza **F5**.
 
     ![Przycisk Uruchom ponownie na pasku narzędzi debugowania w programie Visual Studio](media/debugging-restart-toolbar-button.png)
 

@@ -14,15 +14,15 @@ helpviewer_keywords:
 - collaborative development [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d30f28b3e97469bc9e0bf921438960206b4f89c0
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 028530014afdc78ab6c9c0483c3d443195383793
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845807"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942311"
 ---
 # <a name="collaborative-development-of-office-solutions"></a>Programowanie zespołowe rozwiązań pakietu Office
   Wielu deweloperów może pracować nad projektem pakietu Office w taki sam sposób, w jaki współpracują z innymi projektami programu Visual Studio. Program Visual Studio poprawnie lokalizuje instalację Microsoft Office na każdym komputerze, nawet jeśli pakiet Office jest zainstalowany w różnych lokalizacjach. Należy jednak wziąć pod uwagę pewne ważne zagadnienia.
@@ -44,7 +44,7 @@ ms.locfileid: "96845807"
 
  Certyfikaty tymczasowe, które są generowane automatycznie w czasie kompilacji, nie są chronione przez hasła. Certyfikaty zawierają nazwę logowania programisty oraz inne dane osobowe. Po wdrożeniu dostosowań, które są podpisane przez certyfikaty tymczasowe, inne osoby mogą mieć dostęp do tych informacji.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Zabezpieczanie rozwiązań pakietu Office](../vsto/securing-office-solutions.md)
 - [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)
 - [Tworzenie rozwiązań pakietu Office](../vsto/building-office-solutions.md)

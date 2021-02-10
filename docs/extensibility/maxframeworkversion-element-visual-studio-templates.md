@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: f732a9d3-fc29-405b-9298-01ea83fc58b8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44345b712f448bd7eedf288d7c58cb4193e1b020
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 09ddccece8261a331277d1c143054305f0d08d7e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672428"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943208"
 ---
 # <a name="maxframeworkversion-element-visual-studio-templates"></a>MaxFrameworkVersion, element (szablony Visual Studio)
 
@@ -85,7 +85,7 @@ Poniższy przykład ilustruje metadane dla standardowego [!INCLUDE[csprcs](../da
 
 W tym przykładzie Maksymalna wersja .NET Framework, która jest wymagana przez szablon, reprezentowana przez `MaxFrameworkVersion` , to 4.7.1. Projekt utworzony za pomocą tego szablonu może wskazywać .NET Framework wersje do 4.7.1.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)

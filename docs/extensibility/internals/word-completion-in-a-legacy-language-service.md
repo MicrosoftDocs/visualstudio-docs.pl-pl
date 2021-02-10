@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 0ace5ac3-f9e1-4e6d-add4-42967b1f96a6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 489b43c825e3512e1bd33bc732833de84aed54c3
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: b3625719987afc94deda314fa61d7a8cc2c1c843
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97616278"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943371"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>Uzupełnianie wyrazów w starszej wersji usługi językowej
 Uzupełnianie wyrazów wypełnia brakujące znaki w częściowo określonym słowie. Jeśli istnieje tylko jedno możliwe zakończenie, słowo zostanie zakończone po wprowadzeniu znaku uzupełniania. Jeśli częściowy wyraz jest zgodny z więcej niż jedną możliwością, zostanie wyświetlona lista możliwych uzupełnień. Znak uzupełniania może być dowolnym znakiem, który nie jest używany do identyfikatorów.

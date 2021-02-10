@@ -11,15 +11,15 @@ dev_langs:
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: bc57e3d104d7f8427e97eb6b3dd97ca3e89bc49e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00b8488682674b2531bac561e9f2536e616800fb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419214"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944371"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Samouczek: tworzenie prostej aplikacji z Visual Basic
 
@@ -85,7 +85,7 @@ Program Visual Studio tworzy projekt i rozwiązanie HelloWPFApp, a **Eksplorator
 
    ![Szablon aplikacji WPF w oknie dialogowym Nowy projekt programu Visual Studio](media/vs-2019/exploreide-newprojectvb-vs2019.png)
 
-3. Na następnym ekranie Nadaj projektowi nazwę, **HelloWPFApp**i wybierz pozycję **Utwórz**.
+3. Na następnym ekranie Nadaj projektowi nazwę, **HelloWPFApp** i wybierz pozycję **Utwórz**.
 
 Program Visual Studio tworzy projekt i rozwiązanie HelloWPFApp, a **Eksplorator rozwiązań** pokazuje różne pliki. **Projektant WPF** przedstawia widok projektu i widok XAML *MainWindow. XAML* w widoku złożonym. Można przesuwać rozdzielacz, aby pokazać więcej lub mniej jednego widoku. Możesz zobaczyć tylko widok wizualizacji lub tylko widok XAML. Następujące elementy są wyświetlane w **Eksplorator rozwiązań**:
 
@@ -100,19 +100,19 @@ Po utworzeniu projektu, można go dostosować. Za pomocą okna **Właściwości*
 
 ### <a name="change-the-name-of-mainwindowxaml"></a>Zmień nazwę MainWindow. XAML
 
-Nadaj MainWindow bardziej konkretną nazwę. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję *MainWindow. XAML* i wybierz polecenie **Zmień nazwę**. Zmień nazwę pliku na *Greetings. XAML*.
+Nadaj MainWindow bardziej konkretną nazwę. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję *MainWindow. XAML* i wybierz polecenie **Zmień nazwę**. Zmień nazwę pliku na *Greetings. XAML*.
 
 ## <a name="design-the-user-interface-ui"></a>Zaprojektuj interfejs użytkownika
 
-Jeśli projektant nie jest otwarty, wybierz pozycję *Greetings. XAML* w **Eksplorator rozwiązań**i naciśnij klawisz **SHIFT** + **F7** , aby otworzyć projektanta.
+Jeśli projektant nie jest otwarty, wybierz pozycję *Greetings. XAML* w **Eksplorator rozwiązań** i naciśnij klawisz **SHIFT** + **F7** , aby otworzyć projektanta.
 
 Dodamy do tej aplikacji trzy typy kontrolek: <xref:System.Windows.Controls.TextBlock> kontrolka, dwie <xref:System.Windows.Controls.RadioButton> kontrolki i <xref:System.Windows.Controls.Button> kontrolka.
 
 ### <a name="add-a-textblock-control"></a>Dodaj kontrolkę TextBlock
 
-1. Naciśnij klawisz **Ctrl** + **Q** , aby uaktywnić pole wyszukiwania i **Przybornik**typów. Wybierz pozycję **wyświetl > przybornika** z listy wyników.
+1. Naciśnij klawisz **Ctrl** + **Q** , aby uaktywnić pole wyszukiwania i **Przybornik** typów. Wybierz pozycję **wyświetl > przybornika** z listy wyników.
 
-2. W **przyborniku**rozwiń węzeł **formanty wspólnego WPF** , aby zobaczyć formant TextBlock.
+2. W **przyborniku** rozwiń węzeł **formanty wspólnego WPF** , aby zobaczyć formant TextBlock.
 
      ![Przybornik z wyróżnioną kontrolką TextBlock](../media/exploreide-textblocktoolbox.png)
 
@@ -142,7 +142,7 @@ Następnie dodasz dwie kontrolki [RadioButton](/dotnet/framework/wpf/controls/ra
 
 ### <a name="add-radio-buttons"></a>Dodawanie przycisków radiowych
 
-1. W **przyborniku**Znajdź formant **RadioButton** .
+1. W **przyborniku** Znajdź formant **RadioButton** .
 
      ![Okno przybornika z wybraną kontrolką RadioButton](../media/exploreide-radiobuttontoolbox.png)
 
@@ -186,7 +186,7 @@ Ostatnim elementem interfejsu użytkownika, który dodasz, jest kontrolka [przyc
 
 ### <a name="add-the-button-control"></a>Dodaj kontrolkę przycisk
 
-1. W **przyborniku**Znajdź formant **Button** , a następnie dodaj go do powierzchni projektowej pod kontrolkami RadioButton, przeciągając go do formularza w widoku projektu. Jeśli używasz programu Visual Studio 2019 lub nowszego, czerwona linia ułatwia wyśrodkowanie formantu.
+1. W **przyborniku** Znajdź formant **Button** , a następnie dodaj go do powierzchni projektowej pod kontrolkami RadioButton, przeciągając go do formularza w widoku projektu. Jeśli używasz programu Visual Studio 2019 lub nowszego, czerwona linia ułatwia wyśrodkowanie formantu.
 
 2. W widoku XAML Zmień wartość **zawartości** kontrolki Button z `Content="Button"` na `Content="Display"` , a następnie Zapisz zmiany.
 
@@ -244,7 +244,7 @@ Zmieniono nazwę *MainWindow. XAML* na *Greetings. XAML* na początku tego samou
 
 #### <a name="specify-greetingsxaml-as-the-startup-uri"></a>Określ Greetings. XAML jako startowy identyfikator URI
 
-1. W **Eksplorator rozwiązań**Otwórz plik *Application. XAML* .
+1. W **Eksplorator rozwiązań** Otwórz plik *Application. XAML* .
 
 2. Zmień `StartupUri="MainWindow.xaml"` na `StartupUri="Greetings.xaml"` , a następnie Zapisz zmiany.
 
@@ -265,7 +265,7 @@ Możesz przetestować kod podczas debugowania przez dodanie niektórych punktów
 
 #### <a name="add-breakpoints"></a>Dodawanie punktów przerwania
 
-1. Otwórz *Greetings. XAML. vb*i wybierz następujący wiersz: `MessageBox.Show("Hello.")`
+1. Otwórz *Greetings. XAML. vb* i wybierz następujący wiersz: `MessageBox.Show("Hello.")`
 
 2. Dodaj punkt przerwania, naciskając klawisz **F9** lub z menu, wybierając **Debuguj**, a następnie **Przełącz punkt przerwania**.
 

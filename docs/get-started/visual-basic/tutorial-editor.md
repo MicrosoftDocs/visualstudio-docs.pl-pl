@@ -7,17 +7,17 @@ ms.technology: vs-ide-general
 ms.topic: tutorial
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: c46120c369fa130e83620549ca0bc084a5075f7f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 227d54fbc2734290954fc1c847a34846bb6dc5cf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87235150"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944540"
 ---
 # <a name="learn-to-use-the-code-editor-with-visual-basic"></a>Dowiedz się, jak używać edytora kodu z Visual Basic
 
@@ -80,7 +80,7 @@ Program Visual Studio oferuje przydatne *fragmenty kodu* , za pomocą których m
 
    Konspekt procedury Sub `MySub()` zostanie dodany do pliku.
 
-Dostępne fragmenty kodu są różne dla różnych języków programowania. Możesz sprawdzić dostępne fragmenty kodu dla Visual Basic, wybierając pozycję **Edytuj**  >  **IntelliSense**  >  **wstawkę** IntelliSense (lub naciśnij **klawisze CTRL** + **K**, **Ctrl** + **X**). W przypadku Visual Basic są dostępne fragmenty kodu dla następujących kategorii:
+Dostępne fragmenty kodu są różne dla różnych języków programowania. Możesz sprawdzić dostępne fragmenty kodu dla Visual Basic, wybierając pozycję **Edytuj**  >    >  **wstawkę** IntelliSense (lub naciśnij **klawisze CTRL** + **K**, **Ctrl** + **X**). W przypadku Visual Basic są dostępne fragmenty kodu dla następujących kategorii:
 
 ![Visual Basic listy fragmentów kodu](media/tutorial-code-snippet-list.png)
 
@@ -174,7 +174,7 @@ Nikt nie pobiera kodu po raz pierwszy, a jedna z rzeczy, które trzeba zmienić,
 
    Okno dialogowe **zmiana nazwy** zostanie wyświetlone w prawym górnym rogu edytora.
 
-1. Po `_words` wybraniu zmiennej wpisz odpowiednie nazwy **wyrazów**. Należy zauważyć, że Nazwa odwołania do `words` zapytania jest również automatycznie zmieniana. Przed naciśnięciem klawisza **Enter** lub kliknięciem przycisku **Zastosuj**zaznacz pole wyboru **Dołącz Komentarze** w oknie podręcznym **Zmień nazwę** .
+1. Po `_words` wybraniu zmiennej wpisz odpowiednie nazwy **wyrazów**. Należy zauważyć, że Nazwa odwołania do `words` zapytania jest również automatycznie zmieniana. Przed naciśnięciem klawisza **Enter** lub kliknięciem przycisku **Zastosuj** zaznacz pole wyboru **Dołącz Komentarze** w oknie podręcznym **Zmień nazwę** .
 
    ![Zmień nazwę — Okno dialogowe](media/tutorial-rename.png)
 

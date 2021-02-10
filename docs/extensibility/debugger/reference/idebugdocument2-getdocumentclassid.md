@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 111c2b85-ebfa-487f-b896-2ec4a3eac4d1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 71683c91082f477da530ec1be1fdc7627d6a7635
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c635afa758a4f025305b88f1e11c48737a146a3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732027"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944605"
 ---
 # <a name="idebugdocument2getdocumentclassid"></a>IDebugDocument2::GetDocumentClassID
 Pobiera identyfikator klasy dokumentu.
@@ -28,13 +28,13 @@ Pobiera identyfikator klasy dokumentu.
 ## <a name="syntax"></a>Składnia
 
 ```cpp
-HRESULT GetDocumentClassID( 
+HRESULT GetDocumentClassID( 
    CLSID* pclsid
 );
 ```
 
 ```csharp
-int GetDocumentClassID( 
+int GetDocumentClassID( 
    out Guid pclsid
 );
 ```

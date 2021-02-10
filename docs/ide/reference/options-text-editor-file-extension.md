@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 05298fc5-fc4e-4bb2-b942-1f7d2dcdff0f
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d0e782b0d141666ca7d1f79464d60afd89ef871
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 0f163f1aca78832f38e73eaaed882ae1ac6cff17
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96039734"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943942"
 ---
 # <a name="options-text-editor-file-extension"></a>Opcje, edytor tekstu, rozszerzenie pliku
 
@@ -32,7 +32,7 @@ Po wybraniu opcji "z kodowaniem" zostanie wyświetlone okno dialogowe, które um
 
 ## <a name="uielement-list"></a>Lista elementów UIElement
 
-**Rozszerzenie**
+**Wewnętrzny**
 
 Wpisz rozszerzenie pliku, którego środowisko edycji ma być zdefiniowane w IDE.
 
