@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 8821d98c-0771-43b2-a38b-e9039a3abd75
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f3eb95c5ba8bb9f519623d4b43bc80d37919305d
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 60f137c470b31ddccfa9b26cb907b13288d07dc1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719476"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957312"
 ---
 # <a name="process-view---contention-data"></a>Widok procesu — dane rywalizacji
 Widok procesu przedstawia dane rywalizacji dotyczące procesów i wątków, które zostały wykonane podczas przebiegu profilowania.
@@ -40,6 +40,6 @@ Widok procesu przedstawia dane rywalizacji dotyczące procesów i wątków, któ
 |**Nazwa**|Nazwa procesu lub wątku.|
 |**Unikatowy identyfikator**|Wygenerowany przez profiler identyfikator, który jest unikatowy dla procesu lub wątku.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)
 - [Widok procesu](../profiling/process-view.md)

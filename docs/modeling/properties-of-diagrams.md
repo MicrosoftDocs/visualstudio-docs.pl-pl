@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Domain-Specific Language, diagram
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fe27eb7dcfb8a984fceaee0700e1df44b6de4ef1
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 943b634114c28f6f914926c74861a902c663523e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361953"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956168"
 ---
 # <a name="properties-of-diagrams"></a>Właściwości diagramów
 Można ustawić właściwości określające sposób wyświetlania diagramów w wygenerowanym projektancie. Na przykład można określić domyślny kolor tekstu na diagramie.
@@ -27,7 +27,7 @@ Można ustawić właściwości określające sposób wyświetlania diagramów w 
 
  Poniższa tabela zawiera listę właściwości diagramów.
 
-|Właściwość|Opis|Domyślny|
+|Właściwość|Opis|Domyślne|
 |-|-|-|
 |Kolor wypełnienia|Kolor wypełnienia dla diagramu.|Biały|
 |Kolor tekstu|Kolor tekstu, który jest wyświetlany na diagramie.|Czarnoskórzy|

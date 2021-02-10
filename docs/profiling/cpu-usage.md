@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 7501a20d-04a1-480f-a69c-201524aa709d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 902974c195cabf09abf5f29334a1e28316da54e5
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: a223a2007d62b84f06191c71523b861f94efe3d0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719360"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956129"
 ---
 # <a name="analyze-cpu-usage-without-debugging-in-the-performance-profiler"></a>Analizowanie użycia procesora bez debugowania w profilerze wydajności
 
@@ -79,7 +79,7 @@ Aby wyświetlić drzewo wywołań, wybierz węzeł nadrzędny w raporcie. Na str
 ![Struktura drzewa wywołań](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "Struktura drzewa wywołań")
 ::: moniker-end
 
-|Obraz|Opis|
+|Image (Obraz)|Opis|
 |-|-|
 |![Krok 1](../profiling/media/procguid_1.png "ProcGuid_1")|Węzeł najwyższego poziomu w drzewach wywołań użycia procesora CPU jest pseudo-węzłowym.|
 |![Krok 2](../profiling/media/procguid_2.png "ProcGuid_2")|W większości aplikacji, gdy opcja **Pokaż zewnętrzny kod** jest wyłączona, węzeł drugiego poziomu jest węzłem **[kod zewnętrzny]** . Węzeł zawiera kod systemu i struktury, który rozpoczyna i kończy działanie aplikacji, rysuje interfejs użytkownika, kontroluje harmonogram wątków i udostępnia inne usługi niskiego poziomu aplikacji.|

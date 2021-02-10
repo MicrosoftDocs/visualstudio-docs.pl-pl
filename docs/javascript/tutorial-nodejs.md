@@ -6,17 +6,17 @@ ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 7ce7b4af783149a53e0eacadaa5753d596f69563
-ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
+ms.openlocfilehash: d3b8413673318f2e0cd2a5f00cfb9d1d7f0b4097
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97846919"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957533"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Samouczek: Tworzenie aplikacji Node.js i ekspresowej w programie Visual Studio
 
@@ -34,7 +34,7 @@ Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do stro
 
 ::: moniker-end
 
-Ten samouczek zawiera informacje na temat wykonywania następujących czynności:
+Z tego samouczka dowiesz się, jak wykonywać następujące czynności:
 > [!div class="checklist"]
 > * Tworzenie projektu platformy Node.js
 > * Dodaj kod
@@ -42,7 +42,7 @@ Ten samouczek zawiera informacje na temat wykonywania następujących czynności
 > * Uruchamianie aplikacji
 > * Trafienie punktu przerwania w debugerze
 
-## <a name="before-you-begin"></a>Przed rozpoczęciem
+## <a name="before-you-begin"></a>Zanim rozpoczniesz
 
 Oto krótkie często zadawane pytania, aby wprowadzić pewne kluczowe pojęcia.
 

@@ -8,13 +8,13 @@ helpviewer_keywords:
 - editorconfig [Visual Studio]
 author: mikadumont
 ms.author: midumont
-manager: jillfra
-ms.openlocfilehash: a1f66368972614347df9eebe33af435987ea9cc8
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+manager: jmartens
+ms.openlocfilehash: 8ab90fda1f14521d59982ef7b5d20998cf61e505
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006500"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956844"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Tworzenie przenośnych, niestandardowych ustawień edytora za pomocą wtyczki EditorConfig
 
@@ -33,7 +33,7 @@ Po dodaniu pliku EditorConfig do projektu w programie Visual Studio, nowe wiersz
 
 ::: moniker range="=vs-2017"
 
-Po dodaniu pliku EditorConfig do projektu w programie Visual Studio, nowe wiersze kodu są formatowane zgodnie z ustawieniami EditorConfig. Formatowanie istniejącego kodu nie jest zmieniane, chyba że użytkownik sformatuje dokument (**Edytuj**  >  **Advanced**  >  **dokument formatu** zaawansowanego lub **Ctrl** + **K**, **Ctrl** + **D** w profilu domyślnym). Formatowanie dokumentu ma wpływ tylko na ustawienia białych znaków, takie jak styl wcięcia, chyba że skonfigurowano dokument formatu w celu [przeprowadzenia dodatkowego czyszczenia kodu](../ide/code-styles-and-code-cleanup.md#apply-code-styles).
+Po dodaniu pliku EditorConfig do projektu w programie Visual Studio, nowe wiersze kodu są formatowane zgodnie z ustawieniami EditorConfig. Formatowanie istniejącego kodu nie jest zmieniane, chyba że użytkownik sformatuje dokument (**Edytuj**  >    >  **dokument formatu** zaawansowanego lub **Ctrl** + **K**, **Ctrl** + **D** w profilu domyślnym). Formatowanie dokumentu ma wpływ tylko na ustawienia białych znaków, takie jak styl wcięcia, chyba że skonfigurowano dokument formatu w celu [przeprowadzenia dodatkowego czyszczenia kodu](../ide/code-styles-and-code-cleanup.md#apply-code-styles).
 
  ::: moniker-end
 
@@ -74,7 +74,7 @@ Ustawienia edytora EditorConfig są obsługiwane we wszystkich językach obsług
 
 ## <a name="add-and-remove-editorconfig-files"></a>Dodawanie i usuwanie plików EditorConfig
 
-Po dodaniu pliku EditorConfig do projektu lub bazy kodu, wszelkie nowe wiersze napisanego kodu są formatowane według pliku EditorConfig. Jednak dodanie pliku EditorConfig nie konwertuje istniejących stylów do nowych, dopóki nie sformatujesz dokumentu lub uruchomisz [oczyszczanie kodu](../ide/code-styles-and-code-cleanup.md). Na przykład, jeśli w pliku znajdują się wcięcia, które są sformatowane przy użyciu kart i dodasz plik EditorConfig, który jest wcięty ze spacjami, znaki wcięcia nie są automatycznie konwertowane na spacje. Podczas formatowania dokumentu (**Edycja**  >  dokumentu w formacie **zaawansowanym**  >  **Format Document** lub **Ctrl** + **K**, **Ctrl** + **D**), ustawienia białych znaków w pliku EditorConfig są stosowane do istniejących wierszy kodu.
+Po dodaniu pliku EditorConfig do projektu lub bazy kodu, wszelkie nowe wiersze napisanego kodu są formatowane według pliku EditorConfig. Jednak dodanie pliku EditorConfig nie konwertuje istniejących stylów do nowych, dopóki nie sformatujesz dokumentu lub uruchomisz [oczyszczanie kodu](../ide/code-styles-and-code-cleanup.md). Na przykład, jeśli w pliku znajdują się wcięcia, które są sformatowane przy użyciu kart i dodasz plik EditorConfig, który jest wcięty ze spacjami, znaki wcięcia nie są automatycznie konwertowane na spacje. Podczas formatowania dokumentu (**Edycja**  >  dokumentu w formacie **zaawansowanym**  >   lub **Ctrl** + **K**, **Ctrl** + **D**), ustawienia białych znaków w pliku EditorConfig są stosowane do istniejących wierszy kodu.
 
 Jeśli usuniesz plik EditorConfig z projektu lub bazy kodu i chcesz, aby nowe wiersze kodu były sformatowane zgodnie z ustawieniami edytora globalnego, musisz zamknąć i ponownie otworzyć wszystkie otwarte pliki kodu.
 
@@ -106,7 +106,7 @@ Istnieje kilka innych sposobów dodawania pliku EditorConfig do projektu:
 
 - [Funkcja wnioskowania kodu](/visualstudio/intellicode/code-style-inference) rozszerzenia intellicode dla programu Visual Studio wnioskuje style kodu z istniejącego kodu. Następnie tworzy niepusty plik EditorConfig z preferencjami stylu kodu.
 
-- Począwszy od programu Visual Studio 2019, można [wygenerować plik EditorConfig na podstawie ustawień stylu kodu](code-styles-and-code-cleanup.md#code-styles-in-editorconfig-files) w **Tools**  >  **opcji** narzędzia.
+- Począwszy od programu Visual Studio 2019, można [wygenerować plik EditorConfig na podstawie ustawień stylu kodu](code-styles-and-code-cleanup.md#code-styles-in-editorconfig-files) w   >  **opcji** narzędzia.
 
 ## <a name="file-hierarchy-and-precedence"></a>Hierarchia i pierwszeństwo plików
 
@@ -168,7 +168,7 @@ Jeśli istnieje plik EditorConfig gdziekolwiek w strukturze katalogów w lokaliz
 
    **"Preferencje użytkownika dla tego typu pliku są zastępowane przez konwencje kodowania tego projektu".**
 
-Oznacza to, że jeśli dowolne ustawienia edytora w oknie Opcje **narzędzi**  >  **Options**  >  **Edytor tekstu** (takie jak rozmiar i styl wcięcia, rozmiar karty lub konwencje kodowania) są określone w pliku EditorConfig na lub powyżej projektu w strukturze katalogów, konwencje w pliku EditorConfig zastępują ustawienia w **opcjach**. Możesz kontrolować to zachowanie, przełączając opcję **przestrzegaj konwencji kodowania projektu** w oknie Opcje **Narzędzia**  >  **Options**  >  **Edytor tekstu**. Zaznaczenie opcji powoduje wyłączenie obsługi EditorConfig dla programu Visual Studio.
+Oznacza to, że jeśli dowolne ustawienia edytora w oknie Opcje **narzędzi**  >    >  **Edytor tekstu** (takie jak rozmiar i styl wcięcia, rozmiar karty lub konwencje kodowania) są określone w pliku EditorConfig na lub powyżej projektu w strukturze katalogów, konwencje w pliku EditorConfig zastępują ustawienia w **opcjach**. Możesz kontrolować to zachowanie, przełączając opcję **przestrzegaj konwencji kodowania projektu** w oknie Opcje **Narzędzia**  >    >  **Edytor tekstu**. Zaznaczenie opcji powoduje wyłączenie obsługi EditorConfig dla programu Visual Studio.
 
 ![Opcje narzędzi — przestrzeganie konwencji kodowania projektu](media/coding_conventions_option.png)
 
@@ -180,7 +180,7 @@ dir .editorconfig /s
 
 Zakres Konwencji EditorConfig można kontrolować przez ustawienie ```root=true``` właściwości w pliku *. EditorConfig* w katalogu głównym repozytorium lub w katalogu, w którym znajduje się Twój projekt. Program Visual Studio szuka pliku o nazwie *. editorconfig* w katalogu otwartego pliku i w każdym katalogu nadrzędnym. Wyszukiwanie kończy się po osiągnięciu ścieżki do katalogu głównego lub jeśli zostanie znaleziony plik *. editorconfig* ```root=true``` .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Konwencje stylu kodu platformy .NET](/dotnet/fundamentals/code-analysis/code-style-rule-options)
 - [Obsługa EditorConfig dla usługi językowej](../extensibility/supporting-editorconfig.md)

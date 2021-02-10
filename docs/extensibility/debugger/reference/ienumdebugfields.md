@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 403c2a51-3ba5-431f-a1dd-2f3b2046c00c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d577ff2f5848f2cb348bcaccf57875507018634b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cce45c926700779906881bc4a4607b05f0732be3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80716779"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956402"
 ---
 # <a name="ienumdebugfields"></a>IEnumDebugFields
 Ten interfejs reprezentuje kolekcję obiektów implementujących interfejs [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) .
@@ -42,7 +42,7 @@ IEnumDebugFields : IUnknown
 |[Dalej](../../../extensibility/debugger/reference/ienumdebugfields-next.md)|Pobiera następny zestaw obiektów [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) z wyliczenia.|
 |[Pomiń](../../../extensibility/debugger/reference/ienumdebugfields-skip.md)|Pomija określoną liczbę wpisów.|
 |[Reset](../../../extensibility/debugger/reference/ienumdebugfields-reset.md)|Resetuje Wyliczenie do pierwszego wpisu.|
-|[Klonowanie](../../../extensibility/debugger/reference/ienumdebugfields-clone.md)|Pobiera kopię bieżącego wyliczania.|
+|[Klon](../../../extensibility/debugger/reference/ienumdebugfields-clone.md)|Pobiera kopię bieżącego wyliczania.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugfields-getcount.md)|Pobiera liczbę wpisów w wyliczeniu.|
 
 ## <a name="remarks"></a>Uwagi

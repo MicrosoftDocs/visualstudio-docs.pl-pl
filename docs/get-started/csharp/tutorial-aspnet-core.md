@@ -10,24 +10,24 @@ ms.topic: tutorial
 ms.devlang: CSharp
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 15fcc5981c5711c7c3ddcf7262649a9d3473ee55
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+ms.openlocfilehash: 63db3f62f4e7c763bf02fbfec2dd2f52c32d3264
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97833328"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956363"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Samouczek: wprowadzenie do języka C# i ASP.NET Core w programie Visual Studio
 
 W ramach tego samouczka dotyczącego programowania w języku C# ASP.NET Core za pomocą programu Visual Studio utworzysz aplikację internetową w języku C# ASP.NET Core, wprowadzisz w niej zmiany, Dowiedz się więcej o funkcjach środowiska IDE, a następnie uruchom aplikację.
 
-## <a name="before-you-begin"></a>Przed rozpoczęciem
+## <a name="before-you-begin"></a>Zanim rozpoczniesz
 
 ### <a name="install-visual-studio"></a>Instalowanie programu Visual Studio
 

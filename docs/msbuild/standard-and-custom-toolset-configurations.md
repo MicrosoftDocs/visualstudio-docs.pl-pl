@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 15a048c8-5ad3-448e-b6e9-e3c5d7147ed2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b82eaf6ca52b04d39e9f776feca74f5bb223a0d5
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 70b0d85ea161a3f938013c01702dd2ccce73a31d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048180"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956103"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Konfiguracje standardowego i niestandardowego zestawu narzędzi
 
@@ -31,7 +31,7 @@ Zestaw narzędzi programu MSBuild zawiera odwołania do zadań, obiektów docelo
 
 |ToolsVersion|Ścieżka zestawu narzędzi (zgodnie z definicją we właściwości kompilacji MSBuildToolsPath lub MSBuildBinPath)|
 |------------------| - |
-|2,0|*\<Windows installation path>\Microsoft.Net\Framework\v2.0.50727\\*|
+|2.0|*\<Windows installation path>\Microsoft.Net\Framework\v2.0.50727\\*|
 |3,5|*\<Windows installation path>\Microsoft.NET\Framework\v3.5\\*|
 |4,0|*\<Windows installation path>\Microsoft.NET\Framework\v4.0.30319\\*|
 |Current|*\<Visual Studio installation path>\MSBuild\Current\bin*|
@@ -45,7 +45,7 @@ Zestaw narzędzi programu MSBuild zawiera odwołania do zadań, obiektów docelo
 
 |ToolsVersion|Ścieżka zestawu narzędzi (zgodnie z definicją we właściwości kompilacji MSBuildToolsPath lub MSBuildBinPath)|
 |------------------| - |
-|2,0|*\<Windows installation path>\Microsoft.Net\Framework\v2.0.50727\\*|
+|2.0|*\<Windows installation path>\Microsoft.Net\Framework\v2.0.50727\\*|
 |3,5|*\<Windows installation path>\Microsoft.NET\Framework\v3.5\\*|
 |4,0|*\<Windows installation path>\Microsoft.NET\Framework\v4.0.30319\\*|
 |15,0|*\<Visual Studio installation path>Katalogu \msbuild\15.0\bin*|
@@ -76,9 +76,9 @@ Program Visual Studio 2017 i jego nowsze wersje nie używają klucza rejestru dl
 
 ## <a name="custom-toolset-definitions"></a>Niestandardowe definicje zestawu narzędzi
 
- Jeśli standardowy zestaw narzędzi nie spełnia wymagań kompilacji, można utworzyć niestandardowy zestaw narzędzi. Na przykład może istnieć scenariusz laboratorium kompilacji, w którym trzeba mieć oddzielny system do kompilowania projektów języka C++. Za pomocą niestandardowego zestawu narzędzi, można przypisać niestandardowe wartości do `ToolsVersion` atrybutu podczas tworzenia projektów lub uruchamiania *MSBuild.exe* . Dzięki temu można również użyć `$(MSBuildToolsPath)` właściwości do importowania plików *docelowych* z tego katalogu, a także do definiowania własnych niestandardowych właściwości zestawu narzędzi, które mogą być używane dla dowolnego projektu, który używa tego zestawu narzędzi.
+ Jeśli standardowy zestaw narzędzi nie spełnia wymagań kompilacji, można utworzyć niestandardowy zestaw narzędzi. Na przykład może istnieć scenariusz laboratorium kompilacji, w którym trzeba mieć oddzielny system do kompilowania projektów języka C++. Za pomocą niestandardowego zestawu narzędzi, można przypisać niestandardowe wartości do `ToolsVersion` atrybutu podczas tworzenia projektów lub uruchamiania *MSBuild.exe*. Dzięki temu można również użyć `$(MSBuildToolsPath)` właściwości do importowania plików *docelowych* z tego katalogu, a także do definiowania własnych niestandardowych właściwości zestawu narzędzi, które mogą być używane dla dowolnego projektu, który używa tego zestawu narzędzi.
 
- Określ niestandardowy zestaw narzędzi w pliku konfiguracyjnym dla *MSBuild.exe* (lub niestandardowego narzędzia, które hostuje aparat MSBuild, jeśli jest to dane, które są używane). Na przykład plik konfiguracyjny *MSBuild.exe* może zawierać następującą definicję zestawu narzędzi, jeśli chcesz zdefiniować zestaw narzędzi o nazwie *MyCustomToolset* .
+ Określ niestandardowy zestaw narzędzi w pliku konfiguracyjnym dla *MSBuild.exe* (lub niestandardowego narzędzia, które hostuje aparat MSBuild, jeśli jest to dane, które są używane). Na przykład plik konfiguracyjny *MSBuild.exe* może zawierać następującą definicję zestawu narzędzi, jeśli chcesz zdefiniować zestaw narzędzi o nazwie *MyCustomToolset*.
 
 ```xml
 <msbuildToolsets default="MyCustomToolset">

@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Project Designer, Services page
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c286dbd632e09a9a9c2c2b62ac2002f2e48f283
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 50d9e564b6637feb19ef99c3d33c0ea5c1b7b1fd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560801"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957832"
 ---
 # <a name="services-page-project-designer"></a>Strona usług, Projektant projektu
 
@@ -71,11 +71,11 @@ Określa lokalizację usługi ról.
 
 Określa lokalizację usługi profilu (Ustawienia sieci Web).
 
- **Zaawansowane**
+ **Zaawansowany**
 
 Otwiera okno [dialogowe Ustawienia zaawansowane dla usług](../../ide/reference/advanced-settings-for-services-dialog-box.md), za pomocą którego można przesłonić zachowanie domyślne. Na przykład można użyć tego okna dialogowego, aby określić bazę danych do przechowywania w trybie offline, zamiast korzystać z lokalnego systemu plików. Aby uzyskać więcej informacji, zobacz [okno dialogowe Ustawienia zaawansowane dla usług](../../ide/reference/advanced-settings-for-services-dialog-box.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Usługi aplikacji klienckich](/dotnet/framework/common-client-technologies/client-application-services)
 - [Zaawansowane ustawienia dla usług — Okno dialogowe](../../ide/reference/advanced-settings-for-services-dialog-box.md)

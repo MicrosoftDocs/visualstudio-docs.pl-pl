@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6b78f91e-a006-440c-83fb-e7368040951d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a102b11fdc7608b94b97105b061e28860f41a9a1
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: b8515043b228deb4fbcbf43c0e75b9826912f059
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719516"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957325"
 ---
 # <a name="preemption-time"></a>Czas zastępujący
 Te segmenty na osi czasu są skojarzone z czasem blokowania, który jest kategoryzowany jako wywłaszczania. Ta kategoria oznacza, że wątek jest przełączany z jednego z następujących powodów:
@@ -31,5 +31,5 @@ Te segmenty na osi czasu są skojarzone z czasem blokowania, który jest kategor
 
   Etykietka narzędzia dla segmentu przedwypartea wyświetla nazwę procesu lub wątku, który spowodował wystąpienie klasy pre-wywłaszczania. Nie oznacza to jednak, że proces lub wątek, który przeprzejął w rzeczywistości faktycznie działał w okresie przenoszonego.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Widok wątków](../profiling/threads-view-parallel-performance.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 994e30ad-435a-4f9e-9272-d96d9e01099c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0aa67792ced94afd9c4439cbc6ea577e6b85f28b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fdc2006b45a664496615988251081f1000cdb428
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80716608"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956294"
 ---
 # <a name="ienumdebugframeinfo2"></a>IEnumDebugFrameInfo2
 Ten interfejs wylicza struktury [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) .
@@ -42,7 +42,7 @@ IEnumDebugFrameInfo2 : IUnknown
 |[Dalej](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md)|Pobiera określoną liczbę struktur [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) w sekwencji wyliczenia.|
 |[Pomiń](../../../extensibility/debugger/reference/ienumdebugframeinfo2-skip.md)|Pomija określoną liczbę struktur [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) w sekwencji wyliczenia.|
 |[Reset](../../../extensibility/debugger/reference/ienumdebugframeinfo2-reset.md)|Resetuje sekwencję wyliczenia na początek.|
-|[Klonowanie](../../../extensibility/debugger/reference/ienumdebugframeinfo2-clone.md)|Tworzy moduł wyliczający, który zawiera ten sam stan wyliczania co bieżący moduł wyliczający.|
+|[Klon](../../../extensibility/debugger/reference/ienumdebugframeinfo2-clone.md)|Tworzy moduł wyliczający, który zawiera ten sam stan wyliczania co bieżący moduł wyliczający.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugframeinfo2-getcount.md)|Pobiera liczbę struktur [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) w module wyliczającym.|
 
 ## <a name="remarks"></a>Uwagi

@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: dab3ba13-2f92-4827-92bd-1be3c35bc48b
 author: Mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e76be0482353ffe4740956ab16f24d6ce82f4da
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: f52d02407316fbc8f9a7b5e3db1c02a3566cda87
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348518"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957585"
 ---
 # <a name="signing-page-project-designer"></a>Strona podpisywania, Projektant projektu
 
@@ -37,7 +37,7 @@ Należy zauważyć, że podpisywanie aplikacji i manifestów wdrożenia jest pro
 
 Ponadto przechowywanie informacji o plikach klucza różni się w przypadku podpisywania manifestu i podpisywania zestawu. W przypadku podpisywania manifestu informacje o kluczu są przechowywane w bazie danych magazynu kryptograficznego komputera i w magazynie certyfikatów systemu Windows bieżącego użytkownika. W przypadku podpisywania zestawu kluczowe informacje są przechowywane tylko w bazie danych magazynu kryptograficznego komputera.
 
-Aby uzyskać dostęp do strony **podpisywania** , wybierz węzeł projektu w **Eksplorator rozwiązań** , a następnie w menu **projekt** kliknij polecenie **Właściwości**. Gdy pojawi się **Projektant projektu** , kliknij kartę **podpisywanie** .
+Aby uzyskać dostęp do strony **podpisywania** , wybierz węzeł projektu w **Eksplorator rozwiązań**, a następnie w menu **projekt** kliknij polecenie **Właściwości**. Gdy pojawi się **Projektant projektu** , kliknij kartę **podpisywanie** .
 
 ## <a name="application-and-deployment-manifest-signing"></a>Podpisywanie manifestu aplikacji i wdrożenia
 
@@ -75,7 +75,7 @@ Określa adres serwera, który sygnatura czasowa sygnatury. Po podaniu certyfika
 
 Pole wyboru **podpisz zestaw**
 
-Zaznacz to pole wyboru, aby podpisać zestaw i utworzyć silnie nazwany plik klucza. Aby uzyskać więcej informacji na temat podpisywania zestawu przy użyciu **projektanta projektu** , zobacz [How to: Sign a Assembly (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio).
+Zaznacz to pole wyboru, aby podpisać zestaw i utworzyć silnie nazwany plik klucza. Aby uzyskać więcej informacji na temat podpisywania zestawu przy użyciu **projektanta projektu**, zobacz [How to: Sign a Assembly (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio).
 
 Ta opcja używa narzędzia Al.exe dostarczonego przez zestaw Windows Software Development Kit (SDK) do podpisywania zestawu. Aby uzyskać więcej informacji na temat Al.exe, zobacz [How to: Sign a Assembly with silnej nazwy](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).
 

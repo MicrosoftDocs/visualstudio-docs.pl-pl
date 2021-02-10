@@ -6,17 +6,17 @@ ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: cdaff34c7eb2f9eba7c075127647c2eacbb736f9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e10f9b628d1d9fbbdb2911977fe7e63b1a7b6d57
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86033354"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957481"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Testowanie jednostkowe JavaScript i TypeScript w programie Visual Studio
 
@@ -67,7 +67,7 @@ Jeśli nie ustawisz opcji testów jednostkowych we właściwościach projektu, m
 > [!Note]
 > Opcje testów jednostkowych będą mieć preferencję dotyczącą ustawień poszczególnych plików.
 
-Po otwarciu Eksploratora testów (wybierz **test**  >  **Windows**  >  **Eksplorator testów**systemu Windows) program Visual Studio odnajduje i wyświetla testy. Jeśli testy nie są początkowo wyświetlane, ponownie skompiluj projekt, aby odświeżyć listę.
+Po otwarciu Eksploratora testów (wybierz **test**  >    >  **Eksplorator testów** systemu Windows) program Visual Studio odnajduje i wyświetla testy. Jeśli testy nie są początkowo wyświetlane, ponownie skompiluj projekt, aby odświeżyć listę.
 
 ![Eksplorator testów](../javascript/media/UnitTestsDiscoveryMocha.png)
 

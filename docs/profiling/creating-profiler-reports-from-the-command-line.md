@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: c886f8af-2014-4fec-9b24-d98b68ecafb7
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f57e372ec4fa3215a9f553403f513dc91b43016
-ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
+ms.openlocfilehash: 68bb6c863921cdfa87da99d19f85afa8afb8c49b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98686262"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955934"
 ---
 # <a name="create-profiler-reports-from-the-command-line"></a>Tworzenie raportów profilera z poziomu wiersza polecenia
 Narzędzie wiersza polecenia **VSPerfReport** umożliwia tworzenie. wartość w *formacie XML* lub przecinkiem (.*CSV*) raporty z profilowania danych (.*VSP*). Typy raportów VSPerfReport ściśle pasują do widoków opartych na tabelach interfejsu dla [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Raport można filtrować, aby wyświetlić tylko kod i wyświetlić tylko segment pliku danych profilowania. Aby uzyskać więcej informacji, zobacz [VSPerfReport](../profiling/vsperfreport.md).

@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 737fda23-b852-45c4-a9fe-41cbce6ba70f
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a6197201ed35520ba8d362b6aa448fe625a2fe3a
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 6b520d3bedf31bc09dc0cf48e86777872176e2e0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616372"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957624"
 ---
 # <a name="shell-command"></a>Shell — Polecenie
 Uruchamia programy wykonywalne z poziomu programu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
@@ -86,7 +86,7 @@ Następujące polecenie używa xcopy.exe, aby skopiować plik `MyText.txt` do `T
 >Tools.Shell /o /c xcopy.exe c:\MyText.txt c:\Text\MyText.txt
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Okno polecenia](../../ide/reference/command-window.md)

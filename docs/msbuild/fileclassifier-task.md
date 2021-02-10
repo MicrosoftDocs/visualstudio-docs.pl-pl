@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 14e03310-fcc0-4bb2-a84d-cda12be66367
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f4a57d60c6e1dae0c42e30dce856a147fda0226
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 0f030a240bf02b3261ce903803095b83555a4531
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436908"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957364"
 ---
 # <a name="fileclassifier-task"></a>FileClassifier, zadanie
 
@@ -39,7 +39,7 @@ ms.locfileid: "92436908"
 |`CLRSatelliteEmbeddedResource`|Nieużywany.|
 |`Culture`|Opcjonalny parametr **ciągu** .<br /><br /> Określa kulturę dla kompilacji. Ta wartość może być **równa null** , jeśli kompilacja nie jest lokalizowalna. Jeśli wartość jest **równa null**, wartością domyślną jest wartość małymi literami zwracaną przez **CultureInfo. InvariantCulture** .|
 |`MainEmbeddedFiles`|Opcjonalny parametr wyjściowy **ITaskItem []** .<br /><br /> Określa nielokalizowalne zasoby, które są osadzone w zestawie głównym.|
-|`OutputType`|Wymagany parametr **ciągu** .<br /><br /> Określa typ pliku do osadzenia określonych plików źródłowych. Prawidłowe wartości to **exe**, **winexe**lub **Library**.|
+|`OutputType`|Wymagany parametr **ciągu** .<br /><br /> Określa typ pliku do osadzenia określonych plików źródłowych. Prawidłowe wartości to **exe**, **winexe** lub **Library**.|
 |`SatelliteEmbeddedFiles`|Opcjonalny parametr wyjściowy **ITaskItem []** .<br /><br /> Określa pliki lokalizowalne osadzone w zestawie satelickim dla kultury określonej przez parametr **Culture** .|
 |`SourceFiles`|Wymagany parametr **ITaskItem []** .<br /><br /> Określa listę plików do klasyfikowania.|
 

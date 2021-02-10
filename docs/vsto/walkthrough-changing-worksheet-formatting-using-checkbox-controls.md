@@ -13,15 +13,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to worksheets
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 28b9f000c2e8517304387e2b203dfa7888b33d64
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 908660693abce2f2adf07d98e7f2a451a8f3c8e5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527220"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956597"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>Przewodnik: zmiana formatowania arkusza za pomocą kontrolek CheckBox
   W tym instruktażu przedstawiono podstawowe informacje dotyczące używania pól wyboru w arkuszu programu Excel Microsoft Office, aby zmienić formatowanie. W programie Visual Studio będziesz używać narzędzi programistycznych pakietu Office do tworzenia i dodawania kodu do projektu. Aby zobaczyć wynik jako ukończony przykład, zobacz przykład kontrolki programu Excel w programie [Office przykłady i przewodniki dotyczące projektowania](../vsto/office-development-samples-and-walkthroughs.md).
@@ -71,7 +71,7 @@ ms.locfileid: "97527220"
     |Właściwość|Wartość|
     |--------------|-----------|
     |**Nazwa**|**applyBoldFont**|
-    |**Tekst**|**Pogrubienie**|
+    |**Tekst**|**Pogrubiona**|
 
 5. Przeciągnij drugie pole wyboru do lub blisko komórki **B4** i Zmień następujące właściwości:
 
