@@ -12,15 +12,15 @@ helpviewer_keywords:
 - custom actions [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4fe77cddcfe810e73d13de81cc7280969c1d1b1c
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1f95c5bfcd0dda73b3cd3392c5a8b0bb7384bd9f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848199"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947883"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Niestandardowe akcje w regionach formularzy programu Outlook
   Akcje Wyświetla przyciski umożliwiające użytkownikom odpowiadanie na Microsoft Office element programu Outlook. Na przykład aby odpowiedzieć na element poczty e-mail, użytkownicy klikają przyciski **Odpowiedz**, **Odpowiedz wszystkim** lub **Prześlij dalej** . Każda z tych akcji tworzy nowy element poczty i wypełnia pola elementu przy użyciu informacji z oryginalnego elementu.
@@ -53,7 +53,7 @@ ms.locfileid: "96848199"
 ## <a name="customize-a-custom-action-at-run-time"></a>Dostosuj akcję niestandardową w czasie wykonywania
  Możesz również dodać zachowanie do akcji niestandardowej przy użyciu kodu. Można na przykład dodać kod, który przyjmuje nazwy adresatów poczty e-mail i dodaje te nazwy jako uczestników w nowym elemencie terminu. [W tym](/office/vba/api/Outlook.MailItem.CustomAction) celu należy obsłużyć zdarzenie " [MailItem" obiektu](/office/vba/api/Outlook.MailItem).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Tworzenie regionów formularzy programu Outlook](../vsto/creating-outlook-form-regions.md)
 - [Przewodnik: Projektowanie regionu formularza programu Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
 - [Kojarzenie regionu formularza z klasą wiadomości programu Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)

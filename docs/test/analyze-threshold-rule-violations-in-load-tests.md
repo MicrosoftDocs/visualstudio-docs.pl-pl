@@ -16,13 +16,13 @@ helpviewer_keywords:
 ms.assetid: 969ed346-cf2e-4d48-82b3-edb3e075e1c0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 49fe5893254083dd83551ef5f43fffcc295a992a
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 519a908b85c6cdf3dbecc38e032d72ac223a8bdc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442706"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948052"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analizowanie naruszeń reguł progu w testach obciążenia za pomocą analizatora testu obciążenia
 
@@ -43,7 +43,7 @@ W tabeli naruszeń progowych są wyświetlane pierwsze naruszenia 1 000. Poniżs
 |Kategoria|Kategoria licznika wydajności, na którym wystąpiło naruszenie.|Tak|
 |Licznik|Nazwa licznika wydajności, na którym wystąpiło naruszenie.|Tak|
 |Wystąpienie|Wystąpienie licznika wydajności, na którym wystąpiło naruszenie.|Tak|
-|Wiadomość|Komunikat opisujący naruszenie progu. Na przykład **wartość 5 przekracza krytyczną wartość progową 0**.|Tak|
+|Komunikat|Komunikat opisujący naruszenie progu. Na przykład **wartość 5 przekracza krytyczną wartość progową 0**.|Tak|
 
 > [!NOTE]
 > Tabelę można sortować, wybierając nagłówki kolumn.
@@ -76,7 +76,7 @@ Na wykresie można wyświetlać naruszenia progów. Podobnie jak w panelu **Coun
 
 Aby uzyskać więcej informacji, zobacz [Analizowanie wyników testów obciążenia w widoku wykresy](../test/analyze-load-test-results-in-the-graphs-view.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Określanie zestawów liczników i reguł progu dla komputerów w teście obciążenia](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
 - [Analizowanie wyników testów obciążenia](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

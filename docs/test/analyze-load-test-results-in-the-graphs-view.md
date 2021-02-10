@@ -16,13 +16,13 @@ helpviewer_keywords:
 ms.assetid: 4a919cd8-541c-40ee-be3b-352fabc56140
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: e30d81277ae28a3f5d6ca45a259fa66e0f4ee004
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: cbd15d57090f2248cdd97eba1898e363cc2d21b3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441979"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948078"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analizowanie wyników testów obciążenia w widoku wykresy analizatora testu obciążenia
 
@@ -69,9 +69,9 @@ Legenda zawiera następujące kolumny:
 |Wystąpienie|Nazwa wystąpienia licznika.|
 |Kategoria|Nazwa kategorii licznika.|
 |Computer (Komputer)|Nazwa komputera, do którego zostanie zebrany licznik.|
-|Color (Kolor)|Kolor linii w grafie.|
+|Kolor|Kolor linii w grafie.|
 |Zakres|Wskazuje liczbę, która jest reprezentowana przez 100 na wykresie dla tego licznika. Na przykład dla zakresu, którego górną wartością jest 10 000, etykieta 100 w górnej części wykresu reprezentuje 10 000.|
-|Min.|Określa minimalną wartość licznika w milisekundach.|
+|Min|Określa minimalną wartość licznika w milisekundach.|
 |Maks.|Wskazuje maksymalną wartość licznika w milisekundach.|
 |Śr.|Wskazuje średnią wartość licznika w milisekundach.|
 |Ostatnie|Pokazuje wartość licznika podczas ostatniego interwału próbkowania w milisekundach.|
@@ -95,7 +95,7 @@ Legenda zawiera następujące kolumny:
 
 [Analizowanie wyników testów obciążenia](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Instrukcje: Dodawanie i usuwanie liczników na wykresach](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)
 - [Instrukcje: Tworzenie wykresów niestandardowych](../test/how-to-create-custom-graphs-in-load-test-results.md)

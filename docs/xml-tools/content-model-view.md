@@ -7,15 +7,15 @@ ms.topic: reference
 ms.assetid: e8db7c7d-31cf-479e-9dcc-299759891795
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a3aee0129516b6c7d377fcfff454f949e199eb5
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 05db6f02f2d00a5c0aca1ff91e15c61cf6bf8d4f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049210"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948599"
 ---
 # <a name="content-model-view"></a>Widok modelu zawartości
 
@@ -27,7 +27,7 @@ Na poniższej ilustracji panel **obszary robocze** zawiera sześć węzłów sch
 
 ## <a name="workspace-panel"></a>Panel obszary robocze
 
-Po dodaniu węzłów do obszaru roboczego lista węzłów zostanie wyświetlona w panelu **obszaru roboczego** widoku modelu zawartości. Po wybraniu węzłów w panelu **obszaru roboczego** są one wyświetlane na powierzchni projektowej widok modelu zawartości. Aby usunąć węzły z obszaru roboczego, użyj paska narzędzi projektanta XSD, menu **Workspace** podręcznego kliknij prawym przyciskiem myszy lub klawisza **delete** .
+Po dodaniu węzłów do obszaru roboczego lista węzłów zostanie wyświetlona w panelu **obszaru roboczego** widoku modelu zawartości. Po wybraniu węzłów w panelu **obszaru roboczego** są one wyświetlane na powierzchni projektowej widok modelu zawartości. Aby usunąć węzły z obszaru roboczego, użyj paska narzędzi projektanta XSD, menu  podręcznego kliknij prawym przyciskiem myszy lub klawisza **delete** .
 
 Aby uzyskać informacje na temat dodawania węzłów, zobacz sekcję "Dodawanie węzłów do obszaru roboczego" w [obszarze roboczym Projektant schematu XML](../xml-tools/xml-schema-designer-workspace.md).
 
@@ -83,9 +83,9 @@ Poniższe przyciski paska narzędzi projektanta XSD są włączone, gdy aktywny 
 
 |Opcja|Opis|
 |-|-----------------|
-|**Pokaż widok startowy**|Przełącza do [widoku Start](../xml-tools/start-view.md). Dostęp do tego widoku można uzyskać za pomocą skrótu klawiaturowego: **Ctrl** + **1** .|
-|**Pokaż widok modelu zawartości**|Przełącza do [widoku modelu zawartości](../xml-tools/content-model-view.md). Dostęp do tego widoku można uzyskać za pomocą skrótu klawiaturowego: **Ctrl** + **2** .|
-|**Pokaż widok wykresu**|Przełącza do [widoku wykresu](../xml-tools/graph-view.md). Dostęp do tego widoku można uzyskać za pomocą skrótu klawiaturowego: **Ctrl** + **3** .|
+|**Pokaż widok startowy**|Przełącza do [widoku Start](../xml-tools/start-view.md). Dostęp do tego widoku można uzyskać za pomocą skrótu klawiaturowego: **Ctrl** + **1**.|
+|**Pokaż widok modelu zawartości**|Przełącza do [widoku modelu zawartości](../xml-tools/content-model-view.md). Dostęp do tego widoku można uzyskać za pomocą skrótu klawiaturowego: **Ctrl** + **2**.|
+|**Pokaż widok wykresu**|Przełącza do [widoku wykresu](../xml-tools/graph-view.md). Dostęp do tego widoku można uzyskać za pomocą skrótu klawiaturowego: **Ctrl** + **3**.|
 |**Wyczyść obszar roboczy**|Czyści obszar roboczy i powierzchnię projektu.|
 |**Usuń z obszaru roboczego**|Usuwa wybrane węzły z obszaru roboczego i powierzchni projektowej.|
 |**Usuń wszystko oprócz zaznaczenia z obszaru roboczego**|Usuwa węzły, które nie są wybrane z obszaru roboczego i powierzchni projektowej.|

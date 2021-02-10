@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending project items
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 22ba5acb995466e695c0e25b5b7540f3677b1264
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: e8486120b0f08077bc30c2a5177a8aba915c37f4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672577"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948677"
 ---
 # <a name="extend-sharepoint-project-items"></a>Zwiększ elementy projektu SharePoint
   Utwórz rozszerzenie elementu projektu, gdy chcesz dodać funkcję do typu elementu projektu programu SharePoint, który jest już zainstalowany w programie Visual Studio. Na przykład można utworzyć rozszerzenie dla wbudowanego **odbiorcy zdarzeń** lub **definicji listy** elementów projektu w programie Visual Studio lub można utworzyć rozszerzenie dla niestandardowego typu elementu projektu. Można również utworzyć rozszerzenie dla wszystkich typów elementów projektu programu SharePoint.
@@ -66,7 +66,7 @@ ms.locfileid: "94672577"
 |Web Part|Microsoft. VisualStudio. SharePoint. WebPart|
 |Formularz skojarzenia przepływu pracy|Microsoft. VisualStudio. SharePoint. WorkflowAssociation|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: Tworzenie rozszerzenia elementu projektu SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
 - [Instrukcje: Dodawanie elementu menu skrótów do rozszerzenia elementu projektu SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)
 - [Instrukcje: Dodawanie właściwości do rozszerzenia elementu projektu SharePoint](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)

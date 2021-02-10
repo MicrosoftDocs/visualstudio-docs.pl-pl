@@ -18,15 +18,15 @@ helpviewer_keywords:
 - architecture [Office development in Visual Studio], document-level customizations
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a522446f9109d996088dff9389f267ef5ff39447
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: a101fa597764538c0a1c09e7b4e5de2c81606346
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845964"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948729"
 ---
 # <a name="architecture-of-document-level-customizations"></a>Architektura dostosowań na poziomie dokumentu
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] obejmuje projekty służące do tworzenia dostosowań na poziomie dokumentu dla programów Microsoft Office Word i Microsoft Office Excel. W tym temacie opisano następujące aspekty dostosowywania na poziomie dokumentu:
@@ -143,7 +143,7 @@ ms.locfileid: "96845964"
 
 9. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]Wywołuje program obsługi zdarzeń **uruchamiania** w zestawie dostosowywania. Aby uzyskać więcej informacji, zobacz [zdarzenia w projektach pakietu Office](../vsto/events-in-office-projects.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Architektura rozwiązań pakietu Office w programie Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 - [Architektura dodatków narzędzi VSTO](../vsto/architecture-of-vsto-add-ins.md)
 - [Visual Studio Tools dla środowiska uruchomieniowego pakietu Office — omówienie](../vsto/visual-studio-tools-for-office-runtime-overview.md)

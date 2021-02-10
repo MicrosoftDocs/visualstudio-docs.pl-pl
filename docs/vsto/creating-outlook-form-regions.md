@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], form regions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f3273c02416cac54dfd244ba4f163fb5d726413c
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ba2c4412b344a37e1b1db74cdddea8c5b60b69d0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847965"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947896"
 ---
 # <a name="create-outlook-form-regions"></a>Tworzenie regionów formularzy programu Outlook
   Za pomocą regionów formularza można dostosowywać Microsoft Office formularzy programu Outlook. Program Visual Studio udostępnia zaawansowane narzędzia, które ułatwiają projektowanie, opracowywanie i debugowanie regionów formularzy.
@@ -153,7 +153,7 @@ ms.locfileid: "96847965"
 ### <a name="handle-form-region-events"></a><a name="HandlingFormRegionEvents"></a> Obsługa zdarzeń regionów formularza
  Element **regionu formularza programu Outlook** automatycznie dodaje następujące trzy procedury obsługi zdarzeń do pliku kodu regionu formularza.
 
-|Wydarzenie|Opis|
+|Zdarzenie|Opis|
 |-----------|-----------------|
 |FormRegionInitializing|Występuje przed zainicjowaniem regionu formularza. Możesz sprawdzić warunki w tym programie obsługi zdarzeń, aby określić, czy program Outlook powinien wyświetlać region formularza. Aby uzyskać więcej informacji, zobacz [How to: zapobieganie wyświetlaniu regionu formularza w programie Outlook](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md).|
 |FormRegionShowing|Występuje po utworzeniu wystąpienia obszaru formularza, ale przed pojawieniem się obszaru formularza.|

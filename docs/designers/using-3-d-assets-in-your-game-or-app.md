@@ -14,15 +14,15 @@ f1_keywords:
 ms.assetid: ea587909-e434-46a8-abf8-9b3e95a58b4f
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ee9dff2cd6b762b2f81581963de6186cdd36e3ab
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 18294a9a6b6a0b967748d6a00817e4194e4cc32f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134756"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948534"
 ---
 # <a name="how-to-use-3d-assets-in-your-game-or-app"></a>Instrukcje: Korzystanie z zasobów 3D w grach i aplikacjach
 
@@ -32,11 +32,11 @@ Po użyciu narzędzi w programie Visual Studio do tworzenia zasobów 3D następn
 
 ## <a name="configure-your-project"></a>Konfigurowanie projektu
 
-Aby można było wdrożyć zasoby 3W w ramach kompilacji, program Visual Studio musi wiedzieć o typach zasobów, które mają zostać wdrożone. Program Visual Studio już wie o wielu wspólnych typach plików, ale ponieważ tylko niektóre aplikacje używają zasobów 3W, program Visual Studio nie zakłada, że projekt będzie kompilować te rodzaje plików. Możesz powiedzieć programowi Visual Studio, że aplikacja używa tych rodzajów zasobów przy użyciu *dostosowań kompilacji* — pliki, które poinformują program Visual Studio, jak przetwarzać różne typy plików w sposób przydatny, które są dostępne dla każdego typu zasobu. Ponieważ te dostosowania są stosowane do poszczególnych projektów, wystarczy dodać odpowiednie dostosowania do projektu.
+Aby można było wdrożyć zasoby 3W w ramach kompilacji, program Visual Studio musi wiedzieć o typach zasobów, które mają zostać wdrożone. Program Visual Studio już wie o wielu wspólnych typach plików, ale ponieważ tylko niektóre aplikacje używają zasobów 3W, program Visual Studio nie zakłada, że projekt będzie kompilować te rodzaje plików. Możesz powiedzieć programowi Visual Studio, że aplikacja używa tych rodzajów zasobów przy użyciu *dostosowań kompilacji*— pliki, które poinformują program Visual Studio, jak przetwarzać różne typy plików w sposób przydatny, które są dostępne dla każdego typu zasobu. Ponieważ te dostosowania są stosowane do poszczególnych projektów, wystarczy dodać odpowiednie dostosowania do projektu.
 
 ### <a name="to-add-the-build-customizations-to-your-project"></a>Aby dodać dostosowania kompilacji do projektu
 
-1. W **Eksplorator rozwiązań** Otwórz menu skrótów dla projektu, a następnie wybierz pozycję **kompilacja zależności**  >  **kompilacji** .
+1. W **Eksplorator rozwiązań** Otwórz menu skrótów dla projektu, a następnie wybierz pozycję **kompilacja zależności**  >  **kompilacji**.
 
    Zostanie wyświetlone okno dialogowe **pliki dostosowania kompilacji Visual C++** .
 
@@ -56,16 +56,16 @@ Teraz, gdy Twój projekt wie o różnych typach zasobów 3W, które mają być u
 
 ### <a name="to-add-an-asset-to-your-build"></a>Aby dodać element zawartości do kompilacji
 
-1. W **Eksplorator rozwiązań** w projekcie Otwórz menu skrótów elementu zawartości, a następnie wybierz polecenie **Właściwości** .
+1. W **Eksplorator rozwiązań** w projekcie Otwórz menu skrótów elementu zawartości, a następnie wybierz polecenie **Właściwości**.
 
    Zostanie wyświetlone okno dialogowe **Strona właściwości** zasobu.
 
 2. Upewnij się, że właściwości **konfiguracji** i **platformy** są ustawione na wartości, do których mają zostać zastosowane zmiany.
 
-3. W obszarze **Właściwości konfiguracji** wybierz opcję **Ogólne** , a następnie w siatce właściwości w obszarze **Ogólne** ustaw właściwość **Typ elementu** na odpowiedni typ elementu potoku zawartości. Na przykład dla pliku obrazu lub tekstury wybierz pozycję **potok zawartości obrazu** .
+3. W obszarze **Właściwości konfiguracji** wybierz opcję **Ogólne**, a następnie w siatce właściwości w obszarze **Ogólne** ustaw właściwość **Typ elementu** na odpowiedni typ elementu potoku zawartości. Na przykład dla pliku obrazu lub tekstury wybierz pozycję **potok zawartości obrazu**.
 
     > [!IMPORTANT]
-    > Domyślnie program Visual Studio zakłada, że wiele rodzajów plików obrazów należy klasyfikować przy użyciu typu elementu **obrazu** wbudowanego w program Visual Studio. W związku z tym należy zmienić właściwość **typu elementu** dla każdego obrazu, który ma być przetwarzany przez potok zawartości obrazu. Inne typy plików źródłowych potoku zawartości dla modeli 3D i grafiki programu Visual Shader są domyślne dla poprawnego **typu elementu** .
+    > Domyślnie program Visual Studio zakłada, że wiele rodzajów plików obrazów należy klasyfikować przy użyciu typu elementu **obrazu** wbudowanego w program Visual Studio. W związku z tym należy zmienić właściwość **typu elementu** dla każdego obrazu, który ma być przetwarzany przez potok zawartości obrazu. Inne typy plików źródłowych potoku zawartości dla modeli 3D i grafiki programu Visual Shader są domyślne dla poprawnego **typu elementu**.
 
 4. Wybierz przycisk **OK** .
 
@@ -73,9 +73,9 @@ Poniżej przedstawiono trzy typy elementów potoku zawartości i skojarzone z ni
 
 |Typ elementu|Typy plików źródłowych|Format pliku wyjściowego|
 |---------------| - | - |
-|**Potok zawartości obrazów**|Portable Network Graphics ( *. png* )<br /><br /> JPEG ( *. jpg* , *. jpeg* , *. jpe* , *. JFIF* )<br /><br /> Bezpośrednie rysowanie powierzchni ( *. DDS* )<br /><br /> Graphics Interchange Format ( *. gif* )<br /><br /> Mapa bitowa ( *. bmp* , *. dib* )<br /><br /> Tagged Image File Format ( *. tif* , *. TIFF* )<br /><br /> Targa ( *. tga* )|Powierzchnia DirectDraw ( *. DDS* )|
-|**Potok zawartości siatki**|Plik FBX Interchange ( *. FBX* )<br /><br /> Plik DAE formacie Collada ( *. DAE* )<br /><br /> Plik OBJ plik Wavefront ( *. obj* )|plik siatki 3D ( *. marketingu* )|
-|**Potok zawartości programu do cieniowania**|Graf cieniowania wizualnego ( *. dgsl* )|Skompilowane dane wyjściowe modułu cieniującego ( *. CSO* )|
+|**Potok zawartości obrazów**|Portable Network Graphics (*. png*)<br /><br /> JPEG (*. jpg*, *. jpeg*, *. jpe*, *. JFIF*)<br /><br /> Bezpośrednie rysowanie powierzchni (*. DDS*)<br /><br /> Graphics Interchange Format (*. gif*)<br /><br /> Mapa bitowa (*. bmp*, *. dib*)<br /><br /> Tagged Image File Format (*. tif*, *. TIFF*)<br /><br /> Targa (*. tga*)|Powierzchnia DirectDraw (*. DDS*)|
+|**Potok zawartości siatki**|Plik FBX Interchange (*. FBX*)<br /><br /> Plik DAE formacie Collada (*. DAE*)<br /><br /> Plik OBJ plik Wavefront (*. obj*)|plik siatki 3D (*. marketingu*)|
+|**Potok zawartości programu do cieniowania**|Graf cieniowania wizualnego (*. dgsl*)|Skompilowane dane wyjściowe modułu cieniującego (*. CSO*)|
 
 ## <a name="configure-asset-content-pipeline-properties"></a>Konfigurowanie właściwości potoku zawartości zasobów
 
@@ -83,13 +83,13 @@ Można ustawić właściwości potoku zawartości dla każdego pliku zasobów, a
 
 ### <a name="to-configure-content-pipeline-properties"></a>Aby skonfigurować właściwości potoku zawartości
 
-1. W **Eksplorator rozwiązań** w projekcie Otwórz menu skrótów dla pliku zasobów, a następnie wybierz polecenie **Właściwości** .
+1. W **Eksplorator rozwiązań** w projekcie Otwórz menu skrótów dla pliku zasobów, a następnie wybierz polecenie **Właściwości**.
 
    Zostanie wyświetlone okno dialogowe **Strona właściwości** zasobu.
 
 2. Upewnij się, że właściwości **konfiguracji** i **platformy** są ustawione na wartości, do których mają zostać zastosowane zmiany.
 
-3. W obszarze **Właściwości konfiguracji** wybierz węzeł potoku zawartości (na przykład **potok zawartości obrazu** dla tekstury i zasobów obrazu), a następnie w siatce właściwości ustaw odpowiednie wartości właściwości. Na przykład, aby wygenerować mipmapy dla elementu zawartości tekstury w czasie kompilacji, należy ustawić właściwość **Generuj MIPS** na **wartość tak** .
+3. W obszarze **Właściwości konfiguracji** wybierz węzeł potoku zawartości (na przykład **potok zawartości obrazu** dla tekstury i zasobów obrazu), a następnie w siatce właściwości ustaw odpowiednie wartości właściwości. Na przykład, aby wygenerować mipmapy dla elementu zawartości tekstury w czasie kompilacji, należy ustawić właściwość **Generuj MIPS** na **wartość tak**.
 
 4. Wybierz przycisk **OK** .
 
@@ -100,8 +100,8 @@ Korzystając z narzędzia potoku zawartości obrazów do tworzenia zasobów teks
 |Właściwość|Opis|
 |--------------|-----------------|
 |**Kompresuj**|Określa typ kompresji, który jest używany dla pliku wyjściowego.<br /><br /> Dostępne opcje:<br /><br /> -   **Brak kompresji**<br />-   **Kompresja BC1_UNORM**<br />-   **Kompresja BC1_UNORM_SRGB**<br />-   **Kompresja BC2_UNORM**<br />-   **Kompresja BC2_UNORM_SRGB**<br />-   **Kompresja BC3_UNORM**<br />-   **Kompresja BC3_UNORM_SRGB**<br />-   **Kompresja BC4_UNORM**<br />-   **Kompresja BC4_SNORM**<br />-   **Kompresja BC5_UNORM**<br />-   **Kompresja BC5_SNORM**<br />-   **Kompresja BC6H_UF16**<br />-   **Kompresja BC6H_SF16**<br />-   **Kompresja BC7_UNORM**<br />-   **Kompresja BC7_UNORM_SRGB**<br /><br /> Aby uzyskać informacje o tym, które formaty kompresji są obsługiwane w różnych wersjach programu DirectX, zobacz [Przewodnik programowania dla infrastruktury dxgi](/windows/win32/direct3ddxgi/dx-graphics-dxgi-overviews).|
-|Konwertuj na wstępnie przemnożony format alfa|**Tak** , aby przekonwertować obraz na wstępnie przemnożony format alfa w pliku wyjściowym; w przeciwnym razie **nie** . Tylko plik wyjściowy zostanie zmieniony, obraz źródłowy nie zmieni się.|
-|**Generuj MIPS**|**Wartość tak** powoduje wygenerowanie pełnego łańcucha MIP w czasie kompilacji i uwzględnienie go w pliku wyjściowym; w przeciwnym razie **nie** . Jeśli **nie** , a plik źródłowy zawiera już łańcuch mipmappingu, plik wyjściowy będzie miał łańcuch MCI; w przeciwnym razie plik wyjściowy nie będzie miał łańcucha MIP.|
+|Konwertuj na wstępnie przemnożony format alfa|**Tak** , aby przekonwertować obraz na wstępnie przemnożony format alfa w pliku wyjściowym; w przeciwnym razie **nie**. Tylko plik wyjściowy zostanie zmieniony, obraz źródłowy nie zmieni się.|
+|**Generuj MIPS**|**Wartość tak** powoduje wygenerowanie pełnego łańcucha MIP w czasie kompilacji i uwzględnienie go w pliku wyjściowym; w przeciwnym razie **nie**. Jeśli **nie**, a plik źródłowy zawiera już łańcuch mipmappingu, plik wyjściowy będzie miał łańcuch MCI; w przeciwnym razie plik wyjściowy nie będzie miał łańcucha MIP.|
 |**Dane wyjściowe zawartości**|Określa nazwę pliku wyjściowego. **Ważne:**  Zmiana rozszerzenia nazwy pliku wyjściowego nie ma wpływu na jego format pliku.|
 
 ### <a name="mesh-content-pipeline-configuration"></a>Konfiguracja potoku zawartości siatki

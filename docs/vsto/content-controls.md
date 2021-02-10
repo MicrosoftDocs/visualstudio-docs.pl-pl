@@ -37,15 +37,15 @@ helpviewer_keywords:
 - BuildingBlockGalleryContentControl class
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a34211c7fb1fa001719219b7d08baab65340bde5
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ce692bf10c5473c648fd6587b6b6568d369ed496
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848043"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948000"
 ---
 # <a name="content-controls"></a>Kontrolki zawartości
   Formanty zawartości umożliwiają projektowanie dokumentów i szablonów, które mają następujące funkcje:
@@ -96,7 +96,7 @@ ms.locfileid: "96848043"
 ### <a name="drop-down-list"></a>Lista rozwijana
  Lista rozwijana zawiera listę elementów, które użytkownicy mogą wybrać. W przeciwieństwie do pola kombi, lista rozwijana nie zezwala użytkownikom na dodawanie i edytowanie elementów. Aby uzyskać więcej informacji, zobacz <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> Typ.
 
-### <a name="group"></a>Grupa
+### <a name="group"></a>Group (Grupa)
  Kontrolka grupy definiuje chroniony region dokumentu, którego użytkownicy nie mogą edytować ani usuwać. Kontrolka grupy może zawierać dowolne elementy dokumentu, takie jak tekst, tabele, grafika i inne kontrolki zawartości. Aby uzyskać więcej informacji, zobacz <xref:Microsoft.Office.Tools.Word.GroupContentControl> Typ.
 
 ### <a name="picture"></a>Obraz
@@ -206,7 +206,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
 ### <a name="data-bind-events-for-content-controls"></a>Zdarzenia powiązane z danymi dla formantów zawartości
  Wszystkie kontrolki zawartości zapewniają zestaw zdarzeń, które można obsłużyć w celu wykonywania zadań związanych z danymi, takich jak sprawdzenie, czy tekst w kontrolce spełnia określone kryteria przed aktualizacją źródła danych. Poniższa tabela zawiera listę zdarzeń kontroli zawartości związanych z powiązaniem danych.
 
-|Zadanie|Wydarzenie|
+|Zadanie|Zdarzenie|
 |----------|-----------|
 |Uruchom kod tuż przed automatycznym zaktualizowaniem tekstu w kontrolce zawartości, która jest powiązana z niestandardowym składnikiem XML.|<xref:Microsoft.Office.Tools.Word.ContentControlBase.ContentUpdating>|
 |Uruchamiaj kod tuż przed automatycznym aktualizowaniem danych w niestandardowej części XML, która jest powiązana z kontrolką zawartości (to jest po zmianie tekstu w kontrolce zawartości).|<xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating>|
@@ -236,7 +236,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
  [!code-vb[Trin_ContentControlReference#800](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/checkbox.vb#800)]
  [!code-csharp[Trin_ContentControlReference#800](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/checkbox.cs#800)]
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Automatyzowanie programu Word za pomocą obiektów rozszerzonych](../vsto/automating-word-by-using-extended-objects.md)
 - [Instrukcje: Dodawanie kontrolek zawartości do dokumentów programu Word](../vsto/how-to-add-content-controls-to-word-documents.md)
 - [Przewodnik: Tworzenie szablonu za pomocą kontrolek zawartości](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)

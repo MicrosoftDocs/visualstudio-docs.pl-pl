@@ -12,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 63f4bd42-3cfb-4eee-af68-e8334976539e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 5c05a907bf75ffcdff5bb579ec2624e0dc8a7df9
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: f7ae7afa183e2f23a46c8aa4c0b175aecdb44bd1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441901"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948091"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>Analizowanie aktywności wirtualnego użytkownika testu obciążenia w widoku szczegółów analizatora testu obciążenia
 
@@ -61,7 +61,7 @@ Panel wyniki filtrowania jest widoczny na **wykresie aktywności wirtualnego uż
 |**Wyświetl wyniki testu obciążenia zawierające dane dotyczące wirtualnego działania użytkownika:** Po utworzeniu, skonfigurowaniu i zakończeniu testu obciążenia można wyświetlić dane dotyczące aktywności wirtualnego użytkownika za pomocą **wykresu aktywności wirtualnego użytkownika**.|-   [Analizowanie wyników testów obciążenia](../test/analyze-load-test-results-using-the-load-test-analyzer.md)<br />-   [Instrukcje: analizowanie, co robią Użytkownicy wirtualną podczas testu obciążenia](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)|
 |**Izolowanie problemów z wydajnością w testach obciążenia:** Za pomocą **wykresu aktywności wirtualnego użytkownika** można wyizolować problemy z wydajnością w teście obciążenia.|-   [Przewodnik: używanie wykresu aktywności wirtualnego użytkownika w celu wyizolowania problemów](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Analizowanie wyników testów obciążenia](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Analizowanie wyników testów obciążenia i błędów w widoku tabel](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)

@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 35fe324c-45a1-4509-b7be-5c18b4b1b4ab
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cef5eb1df80c7fffcc4a938504e82cac2aa3ae46
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: c04b8d700d7739f0e4ef1fba259aab0595cea28c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382705"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947817"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>Instrukcje: Dodawanie zaufanego wydawcy do komputera klienckiego dla aplikacji ClickOnce
 Dzięki wdrożeniu zaufanej aplikacji można skonfigurować komputery klienckie w taki sposób, aby [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje były uruchamiane z wyższym poziomem zaufania bez monitowania użytkownika. W poniższych procedurach pokazano, jak za pomocą narzędzia wiersza polecenia CertMgr.exe dodać certyfikat wydawcy do magazynu zaufanych wydawców na komputerze klienckim.
@@ -40,7 +40,7 @@ Dzięki wdrożeniu zaufanej aplikacji można skonfigurować komputery klienckie 
 
 1. Uzyskaj certyfikat cyfrowy od urzędu certyfikacji.
 
-2. Wyeksportuj certyfikat do formatu Base64 X. 509 ( *. cer* ). Aby uzyskać więcej informacji na temat formatów certyfikatów, zobacz [Eksportowanie certyfikatu](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
+2. Wyeksportuj certyfikat do formatu Base64 X. 509 (*. cer*). Aby uzyskać więcej informacji na temat formatów certyfikatów, zobacz [Eksportowanie certyfikatu](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
 
 3. W wierszu polecenia na komputerach klienckich Uruchom następujące polecenie:
 
@@ -50,7 +50,7 @@ Dzięki wdrożeniu zaufanej aplikacji można skonfigurować komputery klienckie 
 
 1. Uzyskaj certyfikat cyfrowy od urzędu certyfikacji.
 
-2. Wyeksportuj certyfikat do formatu Base64 X. 509 ( *. cer* ). Aby uzyskać więcej informacji na temat formatów certyfikatów, zobacz [Eksportowanie certyfikatu](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
+2. Wyeksportuj certyfikat do formatu Base64 X. 509 (*. cer*). Aby uzyskać więcej informacji na temat formatów certyfikatów, zobacz [Eksportowanie certyfikatu](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
 
 3. W wierszu polecenia na komputerach klienckich Uruchom następujące polecenie:
 

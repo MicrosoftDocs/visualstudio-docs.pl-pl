@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9f0f9eb6c863a961a527fcb6fb330a2a4f88669e
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: cd4967e38738018f9b30365575a2dcb9e8970963
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672590"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948755"
 ---
 # <a name="extend-sharepoint-packaging-and-deployment"></a>Rozszerzona pakowanie i wdrażanie programu SharePoint
   Można rozłożyć proces tworzenia pakietów i wdrożeń dla projektów programu SharePoint.
@@ -54,7 +54,7 @@ ms.locfileid: "94672590"
 ## <a name="customize-validation-rules"></a>Dostosuj reguły walidacji
  Przed wdrożeniem pakietu rozwiązań (wsp) można utworzyć niestandardowe reguły sprawdzania poprawności pakietów, aby sprawdzić, czy funkcja lub pakiet są prawidłowe. Można na przykład zgłosić informacje, ostrzeżenia lub błędy do deweloperów, aby ułatwić im Rozwiązywanie problemów z walidacją. Aby uzyskać więcej informacji, zobacz [How to: Create Custom Feature and Package Rules for SharePoint Solutions](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: uruchamianie kodu po wykonaniu kroków wdrożenia](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)
 - [Przewodnik: Tworzenie niestandardowego kroku wdrożenia dla projektów programu SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)
 - [Instrukcje: Tworzenie niestandardowych reguł walidacji pakietu dla rozwiązań SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)

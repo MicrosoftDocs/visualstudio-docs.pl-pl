@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint projects, extending
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ae4c3c1e606fd436725ef9f54a4568b754b048af
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 8efeb704bb247e653af0ee062efcc71ad390c5ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672642"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948664"
 ---
 # <a name="extend-sharepoint-projects"></a>Zwiększ projekty programu SharePoint
   Utwórz rozszerzenie projektu, jeśli chcesz dostosować funkcje na poziomie projektu dla projektów programu SharePoint. Na przykład możesz dodać niestandardowe właściwości projektu lub odpowiedzieć na zdarzenia na poziomie projektu, które są wywoływane, gdy użytkownik opracowuje rozwiązanie SharePoint w programie Visual Studio.
@@ -42,7 +42,7 @@ ms.locfileid: "94672642"
 
  Aby uzyskać dostęp do określonego wystąpienia projektu, należy obsłużyć jedno z <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents> zdarzeń parametru *projectService* w implementacji <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> metody. Na przykład, aby określić, kiedy projekt programu SharePoint jest dodawany do rozwiązania, należy obsłużyć <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectAdded> zdarzenie. Aby uzyskać więcej informacji, zobacz [How to: Create a SharePoint Project Extension](../sharepoint/how-to-create-a-sharepoint-project-extension.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: Tworzenie rozszerzenia projektu SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
 - [Instrukcje: Dodawanie elementu menu skrótów do projektów programu SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)
 - [Instrukcje: Dodawanie właściwości do projektów programu SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)

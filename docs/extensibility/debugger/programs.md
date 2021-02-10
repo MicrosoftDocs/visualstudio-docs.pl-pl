@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: e1f955d8-95da-493b-837e-e97741a26d7e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf0d3adb174e9b13cb09f9506927217326890c32
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: 5205dba6cddf104d0cb05f01acbc43f6927acaaf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606518"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948429"
 ---
 # <a name="programs"></a>Programy
 W architekturze debugera, *program*:
@@ -33,7 +33,7 @@ W architekturze debugera, *program*:
 
 - Jest reprezentowany przez interfejs [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) , utworzony przed dołączeniem programu lub jako część procesu dołączania, w zależności od implementacji. Gdy port wylicza programy, każdy program jest tworzony zgodnie z odpowiednim interfejsem [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) przekazaną jako argument do [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md). Chociaż aparaty debugowania również tworzą `IDebugProgram2` interfejsy do reprezentowania programów, te programy nie są tworzone zgodnie z węzłem programu. `IDebugProgramNode2`Interfejsy utworzone przez de są używane do rzeczywistego debugowania, podczas gdy te utworzone przez port są używane tylko do odnajdywania programów uruchomionych w procesie.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Procesy](../../extensibility/debugger/processes.md)
 - [Węzły programu](../../extensibility/debugger/program-nodes.md)
 - [Moduły](../../extensibility/debugger/modules.md)

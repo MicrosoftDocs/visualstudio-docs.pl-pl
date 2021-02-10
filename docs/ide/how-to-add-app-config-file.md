@@ -10,15 +10,15 @@ helpviewer_keywords:
 - app.config files, adding to C# projects
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 282c66acd71d0c68ff5bc3c74db2e8a2517a00d1
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: e9280451d7841755cb3085726843bf6fc1443f8a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597356"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948286"
 ---
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>Instrukcje: Dodawanie pliku konfiguracji aplikacji do projektu C#
 
@@ -41,7 +41,7 @@ Podczas kompilowania projektu środowisko programistyczne automatycznie kopiuje 
 
      Plik o nazwie *app.config* jest dodawany do projektu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Zarządzanie ustawieniami aplikacji (.NET)](../ide/managing-application-settings-dotnet.md)
 - [Schemat pliku konfiguracji (.NET Framework)](/dotnet/framework/configure-apps/file-schema/index)

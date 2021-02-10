@@ -55,15 +55,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, errors
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e307c839dfb0aa764ccd0aa5727f009635ecabce
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 37676b419bac620460e6c10e121e002739317315
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844780"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948625"
 ---
 # <a name="additional-support-for-errors-in-office-solutions"></a>Dodatkowa obsługa błędów w rozwiązaniach pakietu Office
 
@@ -93,7 +93,7 @@ Umożliwia dostęp do artykułów w bazie wiedzy Knowledge Base (KB), plików do
 
 Oferuje linki do dodatkowych zasobów, aby dowiedzieć się więcej na temat opracowywania rozwiązań biurowych i programowania Office przy użyciu programu Visual Studio.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Rozwiązywanie problemów z błędami w rozwiązaniach pakietu Office](../vsto/troubleshooting-errors-in-office-solutions.md)
 - [Rozwiązywanie problemów z zabezpieczeniami rozwiązań pakietu Office](../vsto/troubleshooting-office-solution-security.md)

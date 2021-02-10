@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: bd5e0612-a0dc-41cf-a7af-1e87d0d5c35f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7df43a02dbda1fbcbe93decb58721032cd84d657
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: fcae019e8854ecee9cdc553eedd3e9d2d0f28a63
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150070"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948586"
 ---
 # <a name="using-the-tasks-window-c-visual-basic-c"></a>Korzystanie z okna zadania (C#, Visual Basic, C++)
 
@@ -94,7 +94,7 @@ W kolumnach okna **zadania** są wyświetlane poniższe informacje.
 
 Polecenie **Przełącz do zadania** powoduje, że bieżące zadanie jest aktywne. Polecenie **Przełącz do ramki** powoduje, że wybrana Ramka stosu ma aktywną ramkę stosu. Kontekst debugera przechodzi do bieżącego zadania lub wybranej ramki stosu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)
 - [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)

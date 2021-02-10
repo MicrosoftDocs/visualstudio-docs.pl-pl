@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 173dcbda-5019-4c5e-bca9-a071838b5739
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 93890885dbbdfd3cc26984590955681487977200
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9c045c68af91896323e4cb6422108de77ae76352
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731205"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948312"
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
 Dołącza aparat debugowania (DE) do programu lub programów. Wywoływane przez Menedżera debugowania sesji (SDM), gdy jest uruchomiona w procesie do modelu SDM.
@@ -28,22 +28,22 @@ Dołącza aparat debugowania (DE) do programu lub programów. Wywoływane przez 
 ## <a name="syntax"></a>Składnia
 
 ```cpp
-HRESULT Attach( 
-   IDebugProgram2**      pProgram,
-   IDebugProgramNode2**  rgpProgramNodes,
-   DWORD                 celtPrograms,
-   IDebugEventCallback2* pCallback,
-   ATTACH_REASON         dwReason
+HRESULT Attach( 
+   IDebugProgram2**      pProgram,
+   IDebugProgramNode2**  rgpProgramNodes,
+   DWORD                 celtPrograms,
+   IDebugEventCallback2* pCallback,
+   ATTACH_REASON         dwReason
 );
 ```
 
 ```csharp
-int Attach( 
-   IDebugProgram2[]     pProgram,
-   IDebugProgramNode2[] rgpProgramNodes,
-   uint                 celtPrograms,
-   IDebugEventCallback2 pCallback,
-   Enum_ATTACH_REASON   dwReason
+int Attach( 
+   IDebugProgram2[]     pProgram,
+   IDebugProgramNode2[] rgpProgramNodes,
+   uint                 celtPrograms,
+   IDebugEventCallback2 pCallback,
+   Enum_ATTACH_REASON   dwReason
 );
 ```
 

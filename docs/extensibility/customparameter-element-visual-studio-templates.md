@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 743c4489-74ac-403a-bbaa-eed7d785a3ac
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61c118bbc85064beb10b99641f0803af7af12d56
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 98f7df8593b09acb2fa4db81ebfa734aeb1ddcaf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671952"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947739"
 ---
 # <a name="customparameter-element-visual-studio-templates"></a>CustomParameter, element (szablony Visual Studio)
 Zawiera niestandardową nazwę i wartość parametru, która ma być używana podczas tworzenia projektu lub elementu z szablonu.
@@ -63,7 +63,7 @@ Zawiera niestandardową nazwę i wartość parametru, która ma być używana po
 </CustomParameters>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [CustomParameters —, element (szablony Visual Studio)](../extensibility/customparameters-element-visual-studio-templates.md)
 - [Parametry szablonu](../ide/template-parameters.md)
 - [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

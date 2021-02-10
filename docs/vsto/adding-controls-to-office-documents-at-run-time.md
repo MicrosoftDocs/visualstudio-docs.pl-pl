@@ -21,15 +21,15 @@ helpviewer_keywords:
 - helper methods [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e971556605a120b4ef475f434390c6dcf7b17938
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 5d49c7fa9224b2d527956536cb0c56b016f6b52e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844845"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948651"
 ---
 # <a name="add-controls-to-office-documents-at-run-time"></a>Dodawanie kontrolek do dokumentów pakietu Office w czasie wykonywania
   Możesz dodać kontrolki do Microsoft Office dokumentu programu Word i Microsoft Office skoroszytu programu Excel w czasie wykonywania. Można je również usunąć w czasie wykonywania. Kontrolki dodawane lub usuwane w czasie wykonywania są nazywane *kontrolkami dynamicznymi*.
@@ -139,7 +139,7 @@ Po zapisaniu i zamknięciu dokumentu wszystkie dynamicznie utworzone formanty ho
   [!code-vb[Trin_VstcoreProgrammingControlsExcel#3](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#3)]
   [!code-csharp[Trin_VstcoreProgrammingControlsExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#3)]
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Formanty w dokumentach pakietu Office](../vsto/controls-on-office-documents.md)
 - [Utrwalanie formantów dynamicznych w dokumentach pakietu Office](../vsto/persisting-dynamic-controls-in-office-documents.md)
 - [Instrukcje: Dodawanie formantów ListObject do arkuszy](../vsto/how-to-add-listobject-controls-to-worksheets.md)

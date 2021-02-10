@@ -8,13 +8,13 @@ helpviewer_keywords:
 - Windows Forms Designer, get started
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: d4d3c0965d638c9e048cef29d7f1b535a54e54a5
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+manager: jmartens
+ms.openlocfilehash: 5803530290988affd6cfbb8342f3b1d545238985
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493481"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947853"
 ---
 # <a name="tutorial-get-started-with-windows-forms-designer"></a>Samouczek: wprowadzenie do Projektant formularzy systemu Windows
 
@@ -45,7 +45,7 @@ Pierwszym krokiem jest utworzenie projektu kontrolki DemoCalculator.
 
    ::: moniker-end
 
-2. Aby zmienić nazwę pliku, w **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję **UserControl1. vb** lub **UserControl1.cs** , wybierz polecenie **Zmień** nazwę, a następnie zmień wartość w polu Nazwa pliku na DemoCalculator. vb lub DemoCalculator.cs. Wybierz opcję **tak** , gdy zostanie wyświetlony monit o zmianę nazwy wszystkich odwołań do elementu kodu "UserControl1".
+2. Aby zmienić nazwę pliku, w **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję **UserControl1. vb** lub **UserControl1.cs**, wybierz polecenie **Zmień** nazwę, a następnie zmień wartość w polu Nazwa pliku na DemoCalculator. vb lub DemoCalculator.cs. Wybierz opcję **tak** , gdy zostanie wyświetlony monit o zmianę nazwy wszystkich odwołań do elementu kodu "UserControl1".
 
 Projektant formularzy systemu Windows pokazuje powierzchnię projektanta dla formantu DemoCalculator. W tym widoku można graficznie zaprojektować wygląd kontrolki, wybierając formanty i składniki z przybornika i umieszczając je na powierzchni projektanta. Aby uzyskać więcej informacji o kontrolkach niestandardowych, zobacz [odmian niestandardowych kontrolek](/dotnet/framework/winforms/controls/varieties-of-custom-controls).
 
@@ -89,7 +89,7 @@ Kontrolka DemoCalculator zawiera kilka kontrolek Windows Forms. Ta procedura pol
 
 10. W oknie dialogowym **Edytor kolekcji ColumnHeader** wybierz pozycję **Dodaj** , aby dodać kolumnę do `ListView` kontrolki. Zmień wartość `Text` Właściwości Column na **History**. Wybierz **przycisk OK** , aby utworzyć kolumnę.
 
-11. W panelu tagów inteligentnych wybierz pozycję **Dock w kontenerze nadrzędnym** , a następnie wybierz symbol tagu inteligentnego, aby zamknąć Panel tagów inteligentnych.
+11. W panelu tagów inteligentnych wybierz pozycję **Dock w kontenerze nadrzędnym**, a następnie wybierz symbol tagu inteligentnego, aby zamknąć Panel tagów inteligentnych.
 
 12. Z **przybornika** węzłów **kontenerów** przeciągnij `TableLayoutPanel` formant do lewego panelu `SplitContainer` kontrolki.
 
@@ -127,7 +127,7 @@ Teraz, gdy układ kontrolki jest skonfigurowany, można wypełnić formant DemoC
 
 4. Zmień wartość `TextBox` właściwości kontrolki `TextAlign` na `Right` .
 
-5. W oknie **Właściwości** rozwiń `Font` węzeł właściwości. Ustaw wartość `Size` na **14** , a `Bold` dla **true** `TextBox` kontrolki wartość true.
+5. W oknie **Właściwości** rozwiń `Font` węzeł właściwości. Ustaw wartość `Size` na **14**, a `Bold` dla  `TextBox` kontrolki wartość true.
 
 6. Zaznacz `TableLayoutPanel` kontrolkę.
 
@@ -139,7 +139,7 @@ Teraz, gdy układ kontrolki jest skonfigurowany, można wypełnić formant DemoC
 
 9. Zaznacz wszystkie pięć `Button` kontrolek, zaznaczając je, przytrzymując klawisz **SHIFT** . Naciśnij klawisz **Ctrl** + **C** , aby skopiować `Button` kontrolki do Schowka.
 
-10. Naciśnij **klawisze CTRL +** + **V** trzy razy, aby wkleić kopie `Button` formantów do pozostałych wierszy `TableLayoutPanel` formantu.
+10. Naciśnij **klawisze CTRL +** +  trzy razy, aby wkleić kopie `Button` formantów do pozostałych wierszy `TableLayoutPanel` formantu.
 
 11. Zaznacz wszystkie 20 `Button` formantów, zaznaczając je, przytrzymując klawisz **SHIFT** .
 
@@ -151,9 +151,9 @@ Teraz, gdy układ kontrolki jest skonfigurowany, można wypełnić formant DemoC
 
     Rozmiar wszystkich `Button` formantów jest mniejszy, aby utworzyć większy margines między nimi.
 
-14. Wybierz pozycję **button10** i **button20** , a następnie naciśnij klawisz **delete** , aby usunąć je z układu.
+14. Wybierz pozycję **button10** i **button20**, a następnie naciśnij klawisz **delete** , aby usunąć je z układu.
 
-15. Wybierz pozycję **Button5** i **button15** , a następnie zmień wartość `RowSpan` właściwości na **2**. Będą to **jasne** i **=** przyciski dla kontrolki DemoCalculator.
+15. Wybierz pozycję **Button5** i **button15**, a następnie zmień wartość `RowSpan` właściwości na **2**. Będą to **jasne** i **=** przyciski dla kontrolki DemoCalculator.
 
 ## <a name="use-the-document-outline-window"></a>Korzystanie z okna konspektu dokumentu
 
@@ -163,7 +163,7 @@ Gdy kontrolka lub formularz zostanie wypełniony kilkoma kontrolkami, łatwiej j
 
    Okno Konspekt dokumentu zawiera widok drzewa formantu DemoCalculator i jego kontrolki składowe. Kontrolki kontenerów, takie jak `SplitContainer` Pokaż ich formanty podrzędne, jako podwęzły w drzewie. Możesz również zmienić nazwy kontrolek w miejscu przy użyciu okna Konspekt dokumentu.
 
-2. W oknie **Konspekt dokumentu** kliknij prawym przyciskiem myszy pozycję **Button1** , a następnie wybierz polecenie **Zmień nazwę**. Zmień jej nazwę na sevenButton.
+2. W oknie **Konspekt dokumentu** kliknij prawym przyciskiem myszy pozycję **Button1**, a następnie wybierz polecenie **Zmień nazwę**. Zmień jej nazwę na sevenButton.
 
 3. Korzystając z okna **Konspekt dokumentu** , Zmień nazwę `Button` kontrolek z nazwy wygenerowanej przez projektanta na nazwę produkcyjną zgodnie z następującą listą:
 
@@ -221,9 +221,9 @@ Gdy kontrolka lub formularz zostanie wypełniony kilkoma kontrolkami, łatwiej j
 
    - Zmień właściwość Text formantu sixButton na **6**
 
-   - Zmień właściwość Text formantu multiplicationButton na * *\** _ (gwiazdka)
+   - Zmień właściwość Text formantu multiplicationButton na **\*** (gwiazdka)
 
-   - Zmień właściwość Text formantu oneButton na wartość _ *1* .*
+   - Zmień właściwość Text formantu oneButton na **1**
 
    - Zmień właściwość Text formantu twoButton na **2**
 
@@ -281,7 +281,7 @@ Pierwszym krokiem jest utworzenie projektu aplikacji. Ten projekt będzie używa
 
 3. Przejdź do karty **projekty** , a następnie wybierz projekt DemoCalculatorLib, aby dodać odwołanie do projektu testowego.
 
-4. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję **DemoCalculatorTest** , a następnie wybierz pozycję **Ustaw jako projekt startowy**.
+4. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję **DemoCalculatorTest**, a następnie wybierz pozycję **Ustaw jako projekt startowy**.
 
 5. W Projektant formularzy systemu Windows Zwiększ rozmiar formularza do około **700 x 500**.
 

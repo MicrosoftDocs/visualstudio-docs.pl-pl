@@ -14,15 +14,15 @@ helpviewer_keywords:
 - farm solutions [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 25c1c9047ba9e38e3e652abcbe92ce6575d7b750
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: cea66f313a8c6c8ad7fc390a3ca126d92139725c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672785"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948781"
 ---
 # <a name="differences-between-sandboxed-and-farm-solutions"></a>Różnice między rozwiązaniami w trybie piaskownicy a farmą
   Podczas kompilowania rozwiązania programu SharePoint jest wdrażany na serwerze programu SharePoint, a debuger dołącza do jego debugowania. Proces używany do debugowania rozwiązania zależy od ustawienia właściwości rozwiązanie w trybie piaskownicy: rozwiązanie w trybie piaskownicy lub rozwiązanie farmy.
@@ -40,7 +40,7 @@ ms.locfileid: "94672785"
 
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dołącza debuger tylko do procesów W3WP lub SPUCWorkerProcess, w których działa bieżąca lokacja. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dołącza także zarządzane aparaty debugowania modelu COM Plus i przepływu pracy.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Debuguj rozwiązania programu SharePoint](../sharepoint/debugging-sharepoint-solutions.md)
 - [Kompilowanie i debugowanie rozwiązań SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
 - [Zagadnienia dotyczące rozwiązania w trybie piaskownicy](../sharepoint/sandboxed-solution-considerations.md)
