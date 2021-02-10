@@ -15,15 +15,15 @@ helpviewer_keywords:
 - assemblies [Office development in Visual Studio], updating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9ca8cf2774b7a24ec3bef40418b6a2157bf0f992
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 584d2414235ca70bd8a8fbcb6d2b4e2a31a1828b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844715"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965749"
 ---
 # <a name="application-and-deployment-manifests-in-office-solutions"></a>Aplikacje i manifesty wdrożenia w rozwiązaniach pakietu Office
   Manifest aplikacji to plik XML, który zawiera informacje, które są używane przez rozwiązanie pakietu Office do lokalizowania i aktualizowania zestawów. Manifest aplikacji może być używany z manifestem wdrożenia, który jest plikiem XML przechowywanym na serwerze, który zawiera informacje konieczne do zlokalizowania najnowszej wersji manifestu aplikacji i zestawów.
@@ -42,7 +42,7 @@ ms.locfileid: "96844715"
 
  Aby uzyskać więcej informacji na temat sposobu działania manifestów z rozwiązaniami pakietu Office, zobacz [wdrażanie rozwiązania pakietu Office](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Architektura dostosowań na poziomie dokumentu](../vsto/architecture-of-document-level-customizations.md)
 - [Architektura dodatków narzędzi VSTO](../vsto/architecture-of-vsto-add-ins.md)

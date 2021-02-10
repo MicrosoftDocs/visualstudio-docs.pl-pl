@@ -13,15 +13,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a7168c6b80657fe0e5ba7c8ae8511c1e000db4cb
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: e9ff98654da8d7125ecf788fadc9cbf7ff4bdfc7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525882"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964072"
 ---
 # <a name="how-to-programmatically-create-new-documents"></a>Instrukcje: Programowane tworzenie nowych dokumentów
   Gdy tworzysz dokument programowo, nowy dokument jest <xref:Microsoft.Office.Interop.Word.Document> obiektem macierzystym. Ten obiekt nie ma dodatkowych zdarzeń i możliwości powiązania danych <xref:Microsoft.Office.Tools.Word.Document> elementu hosta. Aby uzyskać więcej informacji, zobacz Ograniczenia programowe [elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).

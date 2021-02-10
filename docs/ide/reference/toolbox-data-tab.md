@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 2ae38b2a-29d2-461c-a67d-29dad274bf45
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 78a697ae8d9f3f551c8bb734c28c1f53551b1f81
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 1f27f2fb082c478aecff3d64f418ed0e864e15df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96561087"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964982"
 ---
 # <a name="toolbox-data-tab"></a>Przybornik, karta dane
 
@@ -39,7 +39,7 @@ Aby przejść bezpośrednio do strony odniesienia platformy .NET dla składnika,
 |<xref:System.Windows.Forms.BindingSource>|Upraszcza proces kontroli powiązań z bazowym źródłem danych.|
 |<xref:System.Windows.Forms.BindingNavigator>|Reprezentuje interfejs użytkownika nawigacji i manipulowania dla kontrolek w formularzu, które są powiązane z danymi.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Dostęp do danych w programie Visual Studio](../../data-tools/accessing-data-in-visual-studio.md)
 - [Narzędzia do obsługi danych programu Visual Studio dla platformy .NET](../../data-tools/visual-studio-data-tools-for-dotnet.md)

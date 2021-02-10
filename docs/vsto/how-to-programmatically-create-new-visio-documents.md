@@ -12,15 +12,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], creating Visio documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 59c1fe0264a294692bea04b05e5e143fa28be801
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: a5aeddeecf7fb76000817f2c57b90e30465fa4ed
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526850"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964033"
 ---
 # <a name="how-to-programmatically-create-new-visio-documents"></a>Instrukcje: Programowane tworzenie nowych dokumentów programu Visio
   Podczas tworzenia nowego dokumentu rysowania programu Microsoft Office Visio należy dodać go do `Microsoft.Office.Interop.Visio.Documents` kolekcji otwartych dokumentów programu Visio. W związku z tym `Microsoft.Office.Interop.Visio.Documents.Add` Metoda tworzy nowy dokument rysowania programu Visio. Aby uzyskać więcej informacji, zobacz dokumentację referencyjną języka VBA dla [Microsoft.Office.Interop.Visio.Documents. Dodaj](/office/vba/api/Visio.Documents.Add) metodę.

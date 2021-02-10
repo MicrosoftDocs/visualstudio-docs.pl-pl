@@ -10,20 +10,20 @@ helpviewer_keywords:
 ms.assetid: f5c7ec07-8052-4df7-a0ca-7ec8bb3eee18
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 36b120d4433bafb5f248a268b140d940b3c6e2da
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 440a7e48414e2eddcbb0911ba3e8a6605deea22d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722935"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964787"
 ---
 # <a name="multiple-categories-are-present"></a>Istnieje wiele kategorii
 Wybrano sekcję, która zawiera więcej niż jeden rodzaj aktywności dla danego przedziału czasu. Zauważ, że dwa kolory są wyświetlane, a jeden w pionie warstwowy. Te kolory przedstawiają tylko dwa Najczęstsze działania w danym przedziale czasu. Częstotliwość tych dwóch działań jest pokazywana względem siebie jako trzecich lub połówów pionowego paska. Aby wyświetlić więcej szczegółów, spróbuj powiększyć w tej sekcji widoku wątku.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Czas wykonywania (Widok wątków)](../profiling/execution-time-threads-view.md)
 - [Czas operacji we/wy (Widok wątków)](../profiling/i-o-time-threads-view.md)
 - [Czas zarządzania pamięcią](../profiling/memory-management-time.md)

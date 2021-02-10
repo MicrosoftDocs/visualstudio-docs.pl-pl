@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: d9011f5a-cb53-418f-9d8f-74b15b9fc5f5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40e2ceb39931ce7779a7e13de6d0f13ee68f32b7
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 43d9e228f83261c4df2d4cacc84bb8629a259aac
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715291"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965177"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Obsługa zestawu Visual Studio SDK
 Dostępne są różne opcje pomocy technicznej dla klientów z pytaniami dotyczącymi sposobu rozwinięcia zintegrowanego środowiska programistycznego (IDE) programu Visual Studio.
@@ -55,12 +55,12 @@ Przykłady rozszerzeń typu "open source" w witrynie GitHub można znaleźć w p
 
 Można także zakupić pomoc techniczną. Różne oferty pomocy technicznej są dostępne w kategorii Narzędzia deweloperskie w [centrum pomocy i obsługi technicznej firmy Microsoft](https://support.microsoft.com/supportforbusiness/productselection?fltadd=sps-business-1&sapId=4fd4947b-15ea-ce01-080f-97f2ca3c76e8).
 
-Klienci, którzy chcą korzystać z programu [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] w celu opracowywania złożonych pakietów mogą rozważyć zakup kontraktu pomoc techniczna Premier w firmie Microsoft. Aby uzyskać więcej informacji, zobacz [Microsoft Pomoc techniczna Premier](https://support.microsoft.com/premier). W przypadku małych firm [zaawansowana pomoc techniczna dla partnerów](https://partner.microsoft.com/support/advanced-cloud-support) może być atrakcyjną alternatywą dla tradycyjnej oferty pomoc techniczna Premier.
+Klienci, którzy chcą korzystać z programu [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] w celu opracowywania złożonych pakietów mogą rozważyć zakup kontraktu pomoc techniczna premium w firmie Microsoft. Aby uzyskać więcej informacji, zobacz [Microsoft Pomoc techniczna premium](https://support.microsoft.com/premier). W przypadku małych firm [zaawansowana pomoc techniczna dla partnerów](https://partner.microsoft.com/support/advanced-cloud-support) może być atrakcyjną alternatywą dla tradycyjnej oferty pomoc techniczna premium.
 
 > [!NOTE]
 > Nie można używać pomocy standardowej na potrzeby konsultacji ani uzyskania porady.
 
-Pytania dotyczące ofert pomoc techniczna Premier w połączeniu z programem VSIP można wysyłać do programu [vsipsvs@microsoft.com](mailto:vsipsvs@microsoft.com) . Pytania dotyczące nowego programu wykorzystującego zalety partnerskie mogą być wysyłane do [advantg@microsoft.com](mailto:advantg@microsoft.com) .
+Pytania dotyczące ofert pomoc techniczna Premium w połączeniu z programem VSIP można wysyłać do programu [vsipsvs@microsoft.com](mailto:vsipsvs@microsoft.com) . Pytania dotyczące nowego programu wykorzystującego zalety partnerskie mogą być wysyłane do [advantg@microsoft.com](mailto:advantg@microsoft.com) .
 
 Informacje o poszczególnych żądaniach pomocy technicznej można znaleźć w [poszczególnych żądaniach pomocy technicznej](https://support.microsoft.com/supportforbusiness/productselection).
 

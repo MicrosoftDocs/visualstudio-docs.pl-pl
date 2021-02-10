@@ -13,15 +13,15 @@ helpviewer_keywords:
 - appointments [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 56bd9876fa24610412d66e71800a24b413dac576
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 0520014edc97f7517338652fa89e4c8269ba552c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526799"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963929"
 ---
 # <a name="how-to-programmatically-delete-appointments"></a>Instrukcje: programowe usuwanie terminów
   Ten przykład powoduje usunięcie jednego wystąpienia terminu cyklicznego. W przykładzie założono, że wystąpienie cyklicznego terminu występuje w dniu 28 czerwca 2006, o 08:00.

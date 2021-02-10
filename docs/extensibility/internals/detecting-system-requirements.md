@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 0ba94acf-bf0b-4bb3-8cca-aaac1b5d6737
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4befcf3950c41beba2440e6f023983269137b1f
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 20287ba123c5736c9eb7077622623f4a739bde5c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329812"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963474"
 ---
 # <a name="detect-system-requirements"></a>Wykrywanie wymagań systemowych
 Pakietu VSPackage nie może działać, jeśli program Visual Studio nie jest zainstalowany. W przypadku zarządzania instalacją pakietu VSPackage przy użyciu programu Microsoft Instalator Windows można skonfigurować Instalatora w celu wykrycia, czy program Visual Studio jest zainstalowany. Można ją również skonfigurować do sprawdzania systemu pod kątem innych wymagań, na przykład konkretnej wersji systemu Windows lub określonej ilości pamięci RAM.
@@ -26,7 +26,7 @@ Pakietu VSPackage nie może działać, jeśli program Visual Studio nie jest zai
 ## <a name="detect-visual-studio-editions"></a>Wykryj wersje programu Visual Studio
  Aby określić, czy jest zainstalowana wersja programu Visual Studio, sprawdź, czy w odpowiednim folderze znajduje się wartość " **Install** Registry Key" *(REG_DWORD) 1* , zgodnie z opisem w poniższej tabeli. Należy pamiętać, że istnieje hierarchia wersji programu Visual Studio:
 
-1. Enterprise
+1. Przedsiębiorstwa
 
 2. Professional Edition
 
