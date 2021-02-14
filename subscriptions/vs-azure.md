@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 10/28/2020
+ms.date: 02/10/2021
 ms.topic: how-to
 description: Dowiedz się, jak aktywować usługę Azure DevTest z korzyściami z tytułu skorzystania z subskrypcji programu Visual Studio.
-ms.openlocfilehash: bfd94ef7995ed5f456462e1bce6aa0d4d045bdd0
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 85306286e5a6522d8a073c88ce7e11281d5f1aef
+ms.sourcegitcommit: 15109ead7991f52092502518a6f4d9061cc22cd2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96538010"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "100335226"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Używanie Microsoft Azure w subskrypcjach programu Visual Studio
 Jako subskrybent programu Visual Studio możesz używać Microsoft Azure bez dodatkowych opłat.  W przypadku comiesięcznych środków na korzystanie z [platformy Azure DevTest](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/), platforma Azure jest osobistą piaskownicą na potrzeby tworzenia i testowania.  Możesz udostępniać maszyny wirtualne, usługi w chmurze i inne zasoby platformy Azure.  Kwoty kredytowe różnią się w zależności od poziomu subskrypcji.
@@ -76,7 +76,7 @@ Jeśli masz pytania dotyczące transferu zasobów, usuwania limitów wydatków l
 |              Visual Studio Enterprise subskrypcję z usługą GitHub Enterprise               |     $150 — środki miesięczne     |                             Tak                             |
 |               Visual Studio Enterprise miesięcznie               |        Niedostępne        |                                                             |
 |             Visual Studio Professional Standard              |     $50 — środki miesięczne      |                             Tak
-|              Visual Studio Professional subskrypcję z usługą GitHub Enterprise              |     $150 — środki miesięczne     |                             Tak                             |
+|              Visual Studio Professional subskrypcję z usługą GitHub Enterprise              |     $50 — środki miesięczne     |                             Tak                             |
 |              Visual Studio Professional miesięcznie              |        Niedostępne        |                                                             |
 |                    Visual Studio Test Pro                    |     $50 — środki miesięczne      |                             Tak                             |
 |                        Platformy MSDN                        |     $100 — środki miesięczne     |                             Tak                             |

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9915fdab1d4d0976a199a09a11c815e4966192a5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d7723a87471b8f76b9496fe8e7b01e56d1440ee2
+ms.sourcegitcommit: 15109ead7991f52092502518a6f4d9061cc22cd2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934653"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "100335266"
 ---
 # <a name="remote-debugging-a-c-project-in-visual-studio"></a>Zdalne debugowanie projektu języka C++ w programie Visual Studio
 Aby debugować aplikację programu Visual Studio na innym komputerze, zainstaluj i Uruchom narzędzia zdalne na komputerze, na którym zostanie wdrożona aplikacja, skonfiguruj projekt do łączenia się z komputerem zdalnym z programu Visual Studio, a następnie wdróż i uruchom aplikację.
@@ -99,7 +99,7 @@ Zdalny debuger jest obsługiwany w systemie Windows 7 i nowszych (nie Phone) ora
     > [!TIP]
     > Alternatywnie można wdrożyć pliki w osobnym kroku. W Eksplorator rozwiązań kliknij prawym przyciskiem myszy węzeł **MyMfc** **,** a następnie wybierz polecenie **Wdróż**.
 
-    Jeśli masz pliki inne niż kod, które są wymagane przez aplikację, możesz je określić w **dodatkowych plikach do wdrożenia** na stronie **zdalnego debugera systemu Windows** .
+    Jeśli pliki niekodowane są wymagane przez aplikację, można je określić na liście rozdzielanej średnikami w **dodatkowych plikach do wdrożenia** na stronie **zdalnego debugera systemu Windows** .
 
     Alternatywnie można uwzględnić pliki w projekcie i ustawić właściwość **Content** na **wartość Yes (tak** ) na stronie **Właściwości** dla każdego pliku. Te pliki są kopiowane do **katalogu wdrożenia** określonego na stronie **zdalnego debugera systemu Windows** . Możesz również zmienić **Typ elementu** na **Kopiuj plik** i określić dodatkowe właściwości tam, gdzie pliki mają być kopiowane do podfolderu **katalogu wdrożenia**.
 
