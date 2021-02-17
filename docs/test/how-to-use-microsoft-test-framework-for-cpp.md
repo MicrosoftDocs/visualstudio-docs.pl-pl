@@ -1,19 +1,19 @@
 ---
 title: Używanie struktury testów jednostkowych Microsoft dla języka C++
 description: Użyj struktury testów jednostkowych firmy Microsoft dla języka C++, aby utworzyć testy jednostkowe dla kodu C++.
-ms.date: 01/08/2020
+ms.date: 02/16/2021
 ms.topic: how-to
 ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: a9393fd248f4e6520c261d405bc624a75d8cf69f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a76c6ac83956cd1e6514ff958278d0b4cbcf0d2f
+ms.sourcegitcommit: cc8547eb211c43b67b8123d1211b80b5642e3b18
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287119"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100563432"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Korzystanie z struktury testów jednostkowych firmy Microsoft dla języka C++ w programie Visual Studio
 
@@ -33,7 +33,7 @@ W niektórych przypadkach, na przykład podczas testowania niewyeksportowanych f
 
    1. W oknie dialogowym strony właściwości wybierz pozycję **Właściwości konfiguracji**  >  **Katalogi VC + +**.
 
-   1. Kliknij strzałkę w dół w poniższych wierszach i wybierz polecenie **\<Edit>** . Dodaj następujące ścieżki:
+   1. Wybierz strzałkę w dół w poniższych wierszach i wybierz polecenie **\<Edit>** . Dodaj następujące ścieżki:
 
       | Katalog | Właściwość |
       |-| - |
@@ -42,21 +42,23 @@ W niektórych przypadkach, na przykład podczas testowania niewyeksportowanych f
 
 1. Dodaj plik testu jednostkowego języka C++:
 
-   - Kliknij prawym przyciskiem myszy węzeł projektu w **Eksplorator rozwiązań** i wybierz polecenie **Dodaj**  >  **nowy element**  >  **plik C++ (. cpp)**.
+   1. Kliknij prawym przyciskiem myszy węzeł projektu w **Eksplorator rozwiązań** i wybierz polecenie **Dodaj**  >  **nowy element**.
+
+   1. W oknie dialogowym **Dodaj nowy element** wybierz  **plik C++ (. cpp)**, nadaj mu odpowiednią nazwę, a następnie wybierz pozycję **Dodaj**.
 
 ## <a name="to-link-the-tests-to-the-object-or-library-files"></a><a name="object_files"></a> Aby połączyć testy z plikami obiektu lub biblioteki
 
-Jeśli testowy kod nie eksportuje funkcji, które mają zostać przetestowane, można dodać plik Output **. obj** lub **. lib** do zależności projektu testowego. Zmodyfikuj właściwości projektu testowego, aby uwzględnić nagłówki i pliki bibliotek lub obiektów, które są wymagane do testowania jednostkowego.
+Jeśli testowy kod nie eksportuje funkcji, które mają zostać przetestowane, można dodać plik Output *. obj* lub *. lib* do zależności projektu testowego. Zmodyfikuj właściwości projektu testowego, aby uwzględnić nagłówki i pliki bibliotek lub obiektów, które są wymagane do testowania jednostkowego.
 
 1. W Eksplorator rozwiązań, w menu skrótów projektu testowego, wybierz **Właściwości**. Zostanie otwarte okno właściwości projektu.
 
-1. Wybierz **Configuration Properties**  >  stronę dane wejściowe**konsolidatora**właściwości konfiguracji  >  **Input** , a następnie wybierz pozycję **dodatkowe zależności**.
+1. Wybierz   >  stronę dane wejściowe **konsolidatora** właściwości konfiguracji  >   , a następnie wybierz pozycję **dodatkowe zależności**.
 
-   Wybierz pozycję **Edytuj**i Dodaj nazwy plików **obj** lub **lib** . Nie używaj pełnych nazw ścieżek.
+   Wybierz pozycję **Edytuj** i Dodaj nazwy plików *obj* lub *lib* . Nie używaj pełnych nazw ścieżek.
 
-1. Wybierz stronę **Ogólne właściwości konfiguracji**  >  **konsolidator**  >  **General** , a następnie wybierz pozycję **Dodatkowe katalogi biblioteki**.
+1. Wybierz stronę **Ogólne właściwości konfiguracji**  >  **konsolidator**  >   , a następnie wybierz pozycję **Dodatkowe katalogi biblioteki**.
 
-   Wybierz pozycję **Edytuj**, a następnie dodaj ścieżkę katalogu plików **obj** lub **lib** . Ścieżka znajduje się zwykle w folderze Build w badanym projekcie.
+   Wybierz pozycję **Edytuj**, a następnie dodaj ścieżkę katalogu plików *obj* lub *lib* . Ścieżka znajduje się zwykle w folderze Build w badanym projekcie.
 
 1. Wybierz stronę katalogi **Właściwości konfiguracji**  >  **VC + +** , a następnie wybierz pozycję **Dołącz katalogi**.
 
@@ -72,11 +74,11 @@ Użyj metod statycznych w klasie [Assert](microsoft-visualstudio-testtools-cppun
 
 ## <a name="run-the-tests"></a>Uruchamianie testów
 
-1. W menu **test** wybierz polecenie **Windows**  >  **Eksplorator testów**systemu Windows.
+1. W menu **test** wybierz polecenie   >  **Eksplorator testów** systemu Windows.
 
 1. Jeśli nie wszystkie testy są widoczne w oknie, Skompiluj projekt testowy, klikając prawym przyciskiem myszy jego węzeł w **Eksplorator rozwiązań** i wybierając opcję **Kompiluj** lub **Kompiluj ponownie**.
 
-1. W **Eksploratorze testów**wybierz opcję **Uruchom wszystkie**lub wybierz konkretne testy, które chcesz uruchomić. Kliknij prawym przyciskiem myszy Test, aby wyświetlić inne opcje, w tym uruchamianie go w trybie debugowania z włączonymi punktami przerwania.
+1. W **Eksploratorze testów** wybierz opcję **Uruchom wszystkie** lub wybierz konkretne testy, które chcesz uruchomić. Kliknij prawym przyciskiem myszy Test, aby wyświetlić inne opcje, w tym uruchamianie go w trybie debugowania z włączonymi punktami przerwania.
 
 1. W **okno dane wyjściowe** wybierz **testy** z listy rozwijanej, aby wyświetlić komunikaty wytworzone przez `Logger` klasę:
 
@@ -108,7 +110,7 @@ TEST_METHOD(Method1)
 
 ### <a name="c-trait-attribute-macros"></a>Makra atrybutów cech języka C++
 
-Następujące wstępnie zdefiniowane cechy znajdują się w temacie `CppUnitTest.h` . Aby uzyskać więcej informacji, zobacz [Microsoft Unit Test Framework for C++ — dokumentacja interfejsu API](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md).
+Następujące wstępnie zdefiniowane cechy znajdują się w temacie *`CppUnitTest.h`* . Aby uzyskać więcej informacji, zobacz [Microsoft Unit Test Framework for C++ — dokumentacja interfejsu API](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md).
 
 |Makro|Opis|
 |-|-----------------|
