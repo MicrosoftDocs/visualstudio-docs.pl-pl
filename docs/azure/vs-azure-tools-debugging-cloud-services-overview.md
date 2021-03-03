@@ -8,12 +8,12 @@ ms.workload: azure-vs
 ms.date: 03/18/2017
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 2471b79c7401d63b9655586fc4745d3977d37275
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 12b327c65b83acde09eeac748d614ca560f3e012
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844232"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683090"
 ---
 # <a name="learn-the-various-ways-to-debug-an-azure-cloud-service"></a>Informacje dotyczące różnych sposobów debugowania usługi w chmurze platformy Azure
 Ten artykuł zawiera linki do różnych sposobów debugowania usługi w chmurze platformy Azure.

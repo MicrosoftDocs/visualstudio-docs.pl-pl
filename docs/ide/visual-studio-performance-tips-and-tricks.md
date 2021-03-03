@@ -2,19 +2,19 @@
 title: Porady dotyczące poprawy wydajności
 description: Dowiedz się, jak zoptymalizować pewne funkcje programu Visual Studio, które mogą nie być używane, aby zwiększyć wydajność.
 ms.custom: SEO-VS-2020
-ms.date: 12/14/2020
+ms.date: 03/02/2021
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e53a2e3b1a65e496b4ead3d3bca0e8b0254c39e0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5e2187426fbd2e8892d41672c1cf682ed0b93592
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873869"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683772"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Porady i wskazówki dotyczące wydajności programu Visual Studio
 
@@ -142,6 +142,10 @@ Aby uzyskać informacje dotyczące wydajności .NET Compiler Platform ("Roslyn")
 - **Usuń obciążenia**
 
     Możesz użyć Instalator programu Visual Studio, aby usunąć obciążenia, które nie są już używane. Ta akcja może usprawnić koszty uruchamiania i wykonywania, pomijając pakiety i zestawy, które nie są już potrzebne.
+
+- **Dodaj Nieśledzone pliki do pliku Local. gitignore**
+
+    Program Visual Studio uruchamia polecenie git `git status` z nieśledzonymi plikami, aby zapewnić bezproblemowe środowisko przy dodawaniu nowych plików do repozytorium. Jeśli istnieje duża liczba nieśledzonych plików, `git status` może zużywać dodatkową pamięć. Aby zignorować te pliki i zwiększyć wydajność programu `git status` , możesz dodać te pliki lub foldery do pliku Local. gitignore. Aby uzyskać dostęp do pliku, przejdź do pozycji ustawienia **git** ustawienia  >    >  **repozytorium git**. Następnie w sekcji **pliki git** kliknij przycisk **Dodaj** , aby utworzyć plik. gitignore, lub kliknij przycisk **Edytuj** , jeśli już istnieje.
 
 ## <a name="force-a-garbage-collection"></a>Wymuś wyrzucanie elementów bezużytecznych
 

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: ea87135b1f60c7ae65a8bc25399604151ab2fcee
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d411465869cc960631063d09752d38536af94119
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887812"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683613"
 ---
 # <a name="get-started-with-live-unit-testing"></a>Rozpoczynanie pracy z funkcją Live Unit Testing
 
@@ -113,20 +113,26 @@ Następnym krokiem jest utworzenie projektu testów jednostkowych w celu przetes
 
 4. Wybierz przycisk **OK**, aby utworzyć projekt.
 
+   > [!NOTE]
+   > Ten samouczek wprowadzający używa Live Unit Testing z platformą testową MSTest. Można również użyć platform testowych xUnit i NUnit.
+
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. Wpisz **test jednostkowy** w polu wyszukiwania szablonu, a następnie wybierz szablon **projekt testu MSTest (.NET Core)** . Kliknij przycisk **Dalej**.
+2. Wpisz **test jednostkowy** w polu wyszukiwania szablonu wybierz **C#** jako język, a następnie wybierz **projekt test jednostkowy** dla szablonu .NET Core. Kliknij przycisk **Dalej**.
 
-3. Nazwij projekt **StringLibraryTests**.
+   > [!NOTE]
+   > Począwszy od programu Visual Studio 2019 w wersji 16,9, nazwa szablonu projektu MSTest została zmieniona z projektu **testów jednostkowych MSTest (.NET Core)** na **projekt testu jednostkowego**.
 
-4. Kliknij przycisk **Utwórz** , aby utworzyć projekt.
+3. Nadaj projektowi nazwę **StringLibraryTests** i kliknij przycisk **dalej**.
 
-::: moniker-end
+4. Wybierz zalecaną platformę docelową (.NET Core 3,1) lub .NET 5, a następnie wybierz pozycję **Utwórz**.
 
    > [!NOTE]
    > Ten samouczek wprowadzający używa Live Unit Testing z platformą testową MSTest. Można również użyć platform testowych xUnit i NUnit.
+
+::: moniker-end
 
 5. Projekt testu jednostkowego nie może automatycznie uzyskać dostępu do biblioteki klas, która jest testowana. Możesz nadać dostęp do biblioteki testowej, dodając odwołanie do projektu biblioteki klas. W tym celu kliknij prawym przyciskiem myszy `StringLibraryTests` projekt i wybierz polecenie **Dodaj**  >  **odwołanie**. W oknie dialogowym **Menedżer odwołań** upewnij się, że karta **rozwiązanie** jest zaznaczona, a następnie wybierz projekt StringLibrary, jak pokazano na poniższej ilustracji.
 

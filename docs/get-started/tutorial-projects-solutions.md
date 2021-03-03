@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7172ca8c5341dbaee59ae5b2635da9c5585793cc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fe3eaf3c5efcc8341613e9f223d22410111a548f
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99838737"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101682598"
 ---
 # <a name="introduction-to-projects-and-solutions"></a>Wprowadzenie do projektów i rozwiązań
 
@@ -189,9 +189,14 @@ Dodajmy projekt testu jednostkowego do naszego rozwiązania. Tym razem zaczniemy
 
 2. W oknie dialogowym **Dodawanie nowego projektu** wprowadź **test jednostkowy** tekstu w polu wyszukiwania u góry, a następnie wybierz pozycję **C#** w obszarze **Język**.
 
-3. Wybierz szablon projektu **projektu testowego MSTest (.NET Core)** , a następnie wybierz przycisk **dalej**.
+3. Wybierz szablon projektu **test jednostkowy** dla platformy .NET Core, a następnie wybierz przycisk **dalej**.
 
-4. Nazwij projekt **Quicktest**, a następnie wybierz pozycję **Utwórz**.
+   > [!NOTE]
+   > Począwszy od programu Visual Studio 2019 w wersji 16,9, nazwa szablonu projektu MSTest została zmieniona z projektu **testów jednostkowych MSTest (.NET Core)** na **projekt testu jednostkowego**. Kilka kroków tworzenia projektu uległo zmianie w tej aktualizacji.
+
+4. Nazwij projekt **Quicktest**, a następnie wybierz przycisk **dalej**.
+
+5. Wybierz zalecaną platformę docelową (.NET Core 3,1) lub .NET 5, a następnie wybierz pozycję **Utwórz**.
 
    Drugi projekt zostanie dodany do **Eksplorator rozwiązań**, a w edytorze zostanie otwarty plik o nazwie *UnitTest1.cs* .
 

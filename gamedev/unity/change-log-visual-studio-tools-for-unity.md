@@ -2,7 +2,7 @@
 title: Dziennik zmian (Visual Studio Tools for Unity, Windows) | Microsoft Docs
 description: Wyświetl dziennik zmian dla Visual Studio Tools for Unity systemu Windows. Zobacz zmiany w wersji 1.0.0.0 przez 4.7.0.0 i poza nią.
 ms.custom: ''
-ms.date: 11/13/2020
+ms.date: 3/1/2021
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -12,16 +12,76 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: e3b4b730608234b8d25b7ff4bf6b6fcfa25bec09
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 12a6e122d6193b7aa98cf27668dab201bbb86ce4
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671249"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683475"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Dziennik zmian (Visual Studio Tools for Unity, Windows)
 
 Visual Studio Tools for Unity dziennik zmian.
+
+## <a name="4910"></a>4.9.1.0
+Wydana 2 marca 2021
+
+### <a name="new-features"></a>Nowe funkcje
+
+- **Sprawozdanie**
+
+  - Dodano `Active Scene` do elementów lokalnych, pokazując obiekty głównej gry.
+
+  - Dodano `this.gameObject` do elementów lokalnych, o ile jest szeroko używany w projektach Unity.
+
+  - Dodano `Children` `Components` grupy i do wszystkich `GameObject` wystąpień, dzięki czemu można łatwo wyświetlić wszystkie hierarchie obiektów.
+
+  - Dodano `Scene Path` do wszystkich `GameObject` wystąpień, aby pokazać lokalizację w scenie.
+
+  - Dodano obsługę `JobEntityBatch` /lambdas w przypadku używania jednostek z generatorami źródeł.
+
+  - Ulepszona obsługa wyświetlania dużych tablic (przy użyciu funkcji zasobnika indeksów).
+  
+  - Dodano brakujące komunikaty aparatu Unity dla interfejsu API 2019,4.
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+- **Integration**
+
+  - Rozwiązano różne problemy z interfejsem użytkownika dla języków innych niż plk.
+
+  - Rozwiązano problemy ze stabilnością dotyczące [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md) diagnostyki.
+  
+- **Debugera**
+
+  - Rozwiązano problemy z rozłączeniem maszyny wirtualnej podczas korzystania z `Trace` metod.
+
+- **Sprawozdanie**
+
+  - Stałe filtrowanie przestarzałych właściwości zgłaszających wyjątki.
+
+## <a name="4900"></a>4.9.0.0
+Wydana 20 stycznia 2021
+
+### <a name="new-features"></a>Nowe funkcje
+
+- **Integration**
+
+  - Dodano obsługę `raytrace shaders` `UXML` `USS` plików i.
+
+  - Dodano `.vsconfig` obsługę generacji. Program Visual Studio powinien teraz wykryć składniki, których brakuje, i monitować o ich zainstalowanie podczas korzystania z projektów aparatu Unity.
+
+  - Zaktualizowano interfejs API komunikatów Unity (dla wszystkich metod używanych jako współprocedury).
+
+  - Zaktualizowano wykrywanie Android SDK.
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+- **Integration**
+
+  - Naprawiono proces odświeżania podczas korzystania z okna dialogowego wyboru wystąpienia.
+
+  - Stała [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0006.md) Diagnostyka, dająca błędne ostrzeżenia dotyczące procedur współdziałania i `AssetPostprocessor.OnAssignMaterialModel` .
 
 ## <a name="4820"></a>4.8.2.0
 Wydana 10 listopada 2020

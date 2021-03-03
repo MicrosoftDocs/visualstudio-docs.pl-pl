@@ -12,12 +12,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 3ce27c692e96423bbec89914caeab3afd3e62ba4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d41beea47e8173170ea2d428b40bd7c7ed8ff67e
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99947922"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684157"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>Zdalne debugowanie ASP.NET Core w usługach IIS na platformie Azure w programie Visual Studio
 
@@ -58,10 +58,12 @@ Debugowanie między dwoma komputerami połączonymi za pomocą serwera proxy nie
 
 ## <a name="create-the-aspnet-core-application-on-the-visual-studio-computer"></a>Tworzenie aplikacji ASP.NET Core na komputerze z Visual Studio
 
-1. Utwórz nową aplikację ASP.NET Core.
+1. Utwórz nową aplikację sieci Web ASP.NET Core.
 
     ::: moniker range=">=vs-2019"
-    W programie Visual Studio 2019 **naciśnij klawisze CTRL + Q** , aby otworzyć pole wyszukiwania, **wpisz ASP.NET**, wybierz pozycję **Szablony**, a następnie wybierz pozycję **Utwórz nową ASP.NET Core aplikacji sieci Web**. W wyświetlonym oknie dialogowym wpisz nazwę projektu **MyASPApp**, a następnie wybierz pozycję **Utwórz**. Następnie wybierz pozycję **aplikacja sieci Web (Model-View-Controller)**, a następnie wybierz pozycję **Utwórz**.
+    W programie Visual Studio 2019 wybierz pozycję **Utwórz nowy projekt** w oknie uruchamiania. Jeśli okno startowe nie jest otwarte, wybierz pozycję **plik**  >  **startowy**. Wpisz **aplikacja sieci Web**, wybierz **C#** jako język, a następnie wybierz **ASP.NET Core aplikacji sieci Web (Model-View-Controller)**, a następnie wybierz **dalej**. Na następnym ekranie Nazwij projekt **MyASPApp**, a następnie wybierz przycisk **dalej**.
+
+    Wybierz zalecaną platformę docelową (.NET Core 3,1) lub .NET 5, a następnie wybierz pozycję **Utwórz**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     W programie Visual Studio 2017 wybierz kolejno pozycje **plik > nowy > projekt**, a następnie wybierz pozycję **Visual C# > Web > ASP.NET Core aplikacji sieci Web**. W sekcji szablony ASP.NET Core wybierz pozycję **aplikacja sieci Web (Model-View-Controller)**. Upewnij się, że wybrano ASP.NET Core 2,1, że **Obsługa platformy Docker** nie jest zaznaczona i że **uwierzytelnianie** jest ustawione na wartość **bez uwierzytelniania**. Nazwij projekt **MyASPApp**.

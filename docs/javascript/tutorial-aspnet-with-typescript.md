@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: c28355e4097dc014f4757788f175ea80850a3f63
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 411fbd757eb063202136eba5c1e5fbec27f56523
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960432"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683638"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>Samouczek: Tworzenie aplikacji ASP.NET Core przy użyciu języka TypeScript w programie Visual Studio
 
@@ -69,18 +69,18 @@ W tym samouczku rozpocznie się Tworzenie prostego projektu zawierającego kod d
 1. Tworzenie nowego projektu.
 
     ::: moniker range=">=vs-2019"
-    Jeśli okno startowe nie jest otwarte, wybierz pozycję **plik**  >  **startowy**. W oknie uruchamiania wybierz pozycję **Utwórz nowy projekt**. Z listy rozwijanej Język wybierz pozycję **C#**. W polu wyszukiwania wpisz **ASP.NET**, a następnie wybierz **ASP.NET Core aplikacji sieci Web**. Wybierz pozycję **Next** (Dalej).
+    W programie Visual Studio 2019 wybierz pozycję **Utwórz nowy projekt** w oknie uruchamiania. Jeśli okno startowe nie jest otwarte, wybierz pozycję **plik**  >  **startowy**. Wpisz **aplikacja sieci Web**, wybierz **C#** jako język, a następnie wybierz **ASP.NET Core aplikacji sieci Web (Model-View-Controller)**, a następnie wybierz **dalej**. Na następnym ekranie Nazwij projekt, a następnie wybierz **dalej**.
 
-    Wpisz nazwę projektu i wybierz pozycję **Utwórz**.
+    Wybierz zalecaną platformę docelową (.NET Core 3,1) lub .NET 5, a następnie wybierz pozycję **Utwórz**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Na górnym pasku menu wybierz pozycję **plik**  >  **Nowy**  >  **projekt**. W lewym okienku okna dialogowego **Nowy projekt** rozwiń pozycję **Visual C#**, a następnie wybierz pozycję **.NET Core**. W środkowym okienku wybierz pozycję **ASP.NET Core aplikacja sieci Web — C#**, a następnie wybierz przycisk **OK**.
+
+    W wyświetlonym oknie dialogowym wybierz pozycję **aplikacja sieci Web (Model-View-Controller)** w oknie dialogowym, a następnie wybierz pozycję **Utwórz** (lub **OK**).
+
+    ![Wybierz szablon MVC](../javascript/media/aspnet-core-ts-mvc-template.png)
     ::: moniker-end
     Jeśli nie widzisz szablonu projektu **ASP.NET Core aplikacji sieci Web** , musisz dodać obciążenie **ASP.NET i programowanie dla sieci Web** . Aby uzyskać szczegółowe instrukcje, zobacz [wymagania wstępne](#prerequisites).
-
-1. W wyświetlonym oknie dialogowym wybierz pozycję **aplikacja sieci Web (Model-View-Controller)** w oknie dialogowym, a następnie wybierz pozycję **Utwórz** (lub **OK**).
-
-   ![Wybierz szablon MVC](../javascript/media/aspnet-core-ts-mvc-template.png)
 
     Program Visual Studio tworzy nowe rozwiązanie i otwiera projekt w okienku po prawej stronie.
 

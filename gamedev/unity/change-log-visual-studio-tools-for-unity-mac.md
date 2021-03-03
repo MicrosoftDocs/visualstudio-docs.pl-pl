@@ -2,7 +2,7 @@
 title: Dziennik zmian (Visual Studio Tools for Unity, Mac) | Microsoft Docs
 description: Wyświetl dziennik zmian dla Visual Studio Tools for Unity i Mac. Zobacz zmiany w wersji 1.0.0.0 przez 2.7.0.0 i poza nią.
 ms.custom: ''
-ms.date: 12/18/2020
+ms.date: 3/1/2021
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -12,16 +12,93 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 53aade9880686746d11fb899b377e81174915bfa
-ms.sourcegitcommit: 4976419fae731860295dbcd072e6778832f7255d
+ms.openlocfilehash: f11c5c1407d16d7a82a9d8d24e6a8dd3a04e57eb
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97917908"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683378"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Dziennik zmian (narzędzia Visual Studio Tools for Unity, komputery Mac)
 
 Visual Studio Tools for Unity dziennik zmian.
+
+## <a name="2920"></a>2.9.2.0
+Wydana 2 marca 2021
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+- **Integration**
+
+  - Stałe wyróżnianie wyszukiwania w oknie dialogowym komunikatu środowiska Unity.
+
+  - Rozwiązano problemy ze stabilnością w widoku TreeView projektu środowiska Unity.
+
+- **Debugera**
+
+  - Stała obsługa warunkowych punktów przerwania.
+
+## <a name="2910"></a>2.9.1.0
+Wydanie 9 lutego 2021
+
+### <a name="new-features"></a>Nowe funkcje
+
+- **Integration**
+
+  - Dodano obsługę uruchamiania i debugowania testów aparatu Unity z poziomu środowiska IDE
+
+- **Sprawozdanie**
+
+  - Dodano `Active Scene` do elementów lokalnych, pokazując obiekty głównej gry.
+
+  - Dodano `this.gameObject` do elementów lokalnych, o ile jest szeroko używany w projektach Unity.
+
+  - Dodano `Children` `Components` grupy i do wszystkich `GameObject` wystąpień, dzięki czemu można łatwo wyświetlić wszystkie hierarchie obiektów.
+
+  - Dodano `Scene Path` do wszystkich `GameObject` wystąpień, aby pokazać lokalizację w scenie.
+
+  - Dodano obsługę `JobEntityBatch` /lambdas w przypadku używania jednostek z generatorami źródeł.
+
+  - Ulepszona obsługa wyświetlania dużych tablic (przy użyciu funkcji zasobnika indeksów).
+
+  - Dodano brakujące komunikaty aparatu Unity dla interfejsu API 2019,4.
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+- **Integration**
+
+  - Rozwiązano problemy ze stabilnością w oknie dialogowym komunikatu aparatu Unity
+
+  - Rozwiązano różne problemy z interfejsem użytkownika dla języków innych niż plk.
+
+  - Rozwiązano problemy ze stabilnością dotyczące [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md) diagnostyki.
+
+- **Debugera**
+
+  - Rozwiązano problemy z rozłączeniem maszyny wirtualnej podczas korzystania z `Trace` metod.
+
+- **Sprawozdanie**
+
+  - Stałe filtrowanie przestarzałych właściwości zgłaszających wyjątki.
+
+## <a name="2900"></a>2.9.0.0
+Wydana 20 stycznia 2021
+
+### <a name="new-features"></a>Nowe funkcje
+
+- **Integration**
+
+  - Dodano obsługę `raytrace shaders` `UXML` `USS` plików i.
+
+  - Zaktualizowano interfejs API komunikatów Unity (dla wszystkich metod używanych jako współprocedury).
+
+  - Zaktualizowano wykrywanie Android SDK.
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+- **Integration**
+
+  - Stała [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0006.md) Diagnostyka, dająca błędne ostrzeżenia dotyczące procedur współdziałania i `AssetPostprocessor.OnAssignMaterialModel` .
 
 ## <a name="2840"></a>2.8.4.0
 Wydanie 15 grudnia 2020

@@ -9,16 +9,18 @@ ms.topic: how-to
 ms.date: 12/11/2020
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: a0db2f2e4993fcc3c986686322b8915615758e13
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 250b89c983da039717982b31873a470172bde0f5
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727297"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683272"
 ---
 # <a name="adding-azure-app-configuration-by-using-visual-studio-connected-services"></a>Dodawanie konfiguracji aplikacji platformy Azure przy użyciu usług połączonych programu Visual Studio
 
-W tym samouczku dowiesz się, jak łatwo dodać wszystko, czego potrzebujesz, aby rozpocząć korzystanie z usługi Azure App Configuration do zarządzania flagami konfiguracji i funkcji dla projektów sieci Web w programie Visual Studio, niezależnie od tego, czy używasz ASP.NET Core, czy też dowolnego typu projektu ASP.NET. Korzystając z funkcji usługi połączone w programie Visual Studio, można automatycznie dodać wszystkie kod, pakiety NuGet i ustawienia konfiguracji, które są wymagane do nawiązania połączenia z zasobem konfiguracji aplikacji na platformie Azure. Aby użyć tej funkcji, musisz używać programu Visual Studio 2019 w wersji 16,9 lub nowszej.
+W tym samouczku dowiesz się, jak łatwo dodać wszystko, czego potrzebujesz, aby rozpocząć korzystanie z usługi Azure App Configuration do zarządzania flagami konfiguracji i funkcji dla projektów sieci Web w programie Visual Studio. Korzystając z funkcji usługi połączone w programie Visual Studio, można automatycznie dodać wszystkie kod, pakiety NuGet i ustawienia konfiguracji, które są wymagane do nawiązania połączenia z zasobem konfiguracji aplikacji na platformie Azure. Aby użyć tej funkcji, musisz używać programu Visual Studio 2019 w wersji 16,9 lub nowszej.
+
+Funkcji usługi połączonej konfiguracji aplikacji można użyć w ASP.NET Core, konsoli .NET Core i projektach .NET Framework.
 
 > [!NOTE]
 > Ten temat ma zastosowanie do programu Visual Studio w systemie Windows. Aby uzyskać Visual Studio dla komputerów Mac, zobacz [usługi połączone w programie Visual Studio dla komputerów Mac](/visualstudio/mac/connected-services).

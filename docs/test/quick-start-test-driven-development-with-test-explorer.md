@@ -9,12 +9,12 @@ manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 56bfe2b00efc4af71ca562672ad01423778edecd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 294c99081668baa2ed19df00989ceac768979481
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943734"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683949"
 ---
 # <a name="walkthrough-test-driven-development-using-test-explorer"></a>Przewodnik: Programowanie sterowane testami za pomocą Eksploratora testów
 
@@ -26,7 +26,11 @@ W tym instruktażu przedstawiono sposób tworzenia przetestowanej metody w języ
 
 1. Utwórz projekt **biblioteki klas C# (.NET standard)** . Ten projekt będzie zawierać kod, który chcemy przetestować. Nazwij projekt **Math**.
 
-2. W tym samym rozwiązaniu Dodaj nowy projekt **projektu testowego MSTest (.NET Core)** . Nazwij projekt testowy **MathTests**.
+2. W tym samym rozwiązaniu Dodaj nowy projekt testu MSTest.
+
+   Począwszy od programu Visual Studio 2019 w wersji 16,9, nazwa szablonu projektu MSTest została zmieniona z projektu testowego **MSTest (.NET Core)** na **projekt testu jednostkowego**.
+
+   Nazwij projekt testowy **MathTests**.
 
    ![Nowy kod i projekty testowe](../test/media/test-driven-development-ide.png)
 

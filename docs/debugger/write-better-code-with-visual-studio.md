@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c69fe13821f595a137c07d545a4ccfb10fc89b34
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5fd3d8e17d90cde50f583dfc0393debf460de7f6
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904954"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684081"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>Techniki i narzędzia debugowania ułatwiające pisanie lepszego kodu
 
@@ -42,22 +42,26 @@ Poniższy kod zawiera błędy, które można naprawić za pomocą programu Visua
 
 Aby utworzyć aplikację:
 
-1. W zależności od typu aplikacji, który ma zostać utworzony, musi być zainstalowany program Visual Studio i **Programowanie na platformie .NET Core** lub środowisko **programistyczne programu .NET Desktop** .
+1. Musisz mieć zainstalowany program Visual Studio i zainstalowano obciążenie **Międzyplatformowe platformy .NET Core** .
 
     Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads/) , aby zainstalować ją bezpłatnie.
 
-    Jeśli musisz zainstalować obciążenie, ale masz już program Visual Studio, kliknij przycisk **Narzędzia**  >  **Pobierz narzędzia i funkcje**. Zostanie uruchomiona Instalator programu Visual Studio. Wybierz obciążenie programu **.NET Core dla wielu platform** lub programowanie **aplikacji klasycznych platformy .NET** , a następnie wybierz **Modyfikuj**.
+    Jeśli musisz zainstalować obciążenie, ale masz już program Visual Studio, kliknij przycisk **Narzędzia**  >  **Pobierz narzędzia i funkcje**. Zostanie uruchomiona Instalator programu Visual Studio. Wybierz obciążenie **programistyczne dla platformy .NET Core** , a następnie wybierz **Modyfikuj**.
 
 1. Otwórz program Visual Studio.
 
     ::: moniker range=">=vs-2019"
-    W oknie uruchamiania wybierz pozycję **Utwórz nowy projekt**. Wpisz w polu wyszukiwania **konsolę** , a następnie wybierz pozycję **Aplikacja konsolowa (.NET Core)** lub **Aplikacja konsolowa (.NET Framework)**. Wybierz pozycję **Next** (Dalej). Wpisz nazwę projektu, taką jak **Console_Parse_JSON** , i kliknij przycisk **Utwórz**.
+    W oknie uruchamiania wybierz pozycję **Utwórz nowy projekt**. W polu wyszukiwania wpisz **Console** , a następnie wybierz jedną z **aplikacji konsolowej** dla platformy .NET Core. Wybierz pozycję **Next** (Dalej). Wpisz nazwę projektu, taką jak **Console_Parse_JSON** , i kliknij przycisk **dalej** lub **Utwórz**, zależnie od opcji.
+
+    W przypadku platformy .NET Core wybierz zalecaną platformę docelową (.NET Core 3,1) lub .NET 5, a następnie wybierz pozycję **Utwórz**.
+
+    Jeśli nie widzisz szablonu projektu **aplikacji konsoli** dla platformy .NET Core, przejdź do pozycji **Narzędzia**  >  **Pobierz narzędzia i funkcje**, co spowoduje otwarcie Instalator programu Visual Studio. Wybierz obciążenie **programistyczne dla platformy .NET Core** , a następnie wybierz **Modyfikuj**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Na górnym pasku menu wybierz pozycję **plik**  >  **Nowy**  >  **projekt**. W lewym okienku okna dialogowego **Nowy projekt** w obszarze **Visual C#** wybierz pozycję **Aplikacja konsolowa**, a następnie w środkowym okienku wybierz pozycję **Aplikacja konsolowa (.NET Core)** lub **Aplikacja konsolowa (.NET Framework)**. Wpisz nazwę, taką jak **Console_Parse_JSON** , i kliknij przycisk **OK**.
-    ::: moniker-end
+    Na górnym pasku menu wybierz pozycję **plik**  >  **Nowy**  >  **projekt**. W lewym okienku okna dialogowego **Nowy projekt** w obszarze **Visual C#** wybierz pozycję **Aplikacja konsolowa**, a następnie w środkowym okienku wybierz pozycję **Aplikacja konsolowa (.NET Core)**. Wpisz nazwę, taką jak **Console_Parse_JSON** , i kliknij przycisk **OK**.
 
-    Jeśli nie widzisz szablonu projektu **aplikacja konsoli (.NET Core)** lub **aplikacja konsoli (.NET Framework)** , przejdź do pozycji **Narzędzia**  >  **Pobierz narzędzia i funkcje**, co spowoduje otwarcie Instalator programu Visual Studio. Wybierz opcję **Programowanie dla wielu platform w środowisku .NET Core** lub **środowisko programistyczne programu .NET Desktop** , a następnie wybierz polecenie **Modyfikuj**.
+    Jeśli szablon projektu **aplikacja konsoli (.NET Core)** nie jest widoczny, przejdź do pozycji **Narzędzia**  >  **Pobierz narzędzia i funkcje**, co spowoduje otwarcie Instalator programu Visual Studio. Wybierz obciążenie **programistyczne dla platformy .NET Core** , a następnie wybierz **Modyfikuj**.
+    ::: moniker-end
 
     Program Visual Studio tworzy projekt konsoli, który pojawia się w Eksplorator rozwiązań w okienku po prawej stronie.
 

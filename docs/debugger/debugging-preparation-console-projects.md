@@ -19,16 +19,16 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e39cb7df53a12b97d297ee739338c42a3201089f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 66610eef4419b71cd41c8a7708b43b30bff4cc80
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99872524"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683037"
 ---
 # <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>Przygotowanie debugowania: Projekty konsoli (C#, C++, Visual Basic, F #)
 
-Przygotowanie do debugowania projektu konsoli jest podobne do przygotowania do debugowania projektu systemu Windows, z kilkoma dodatkowymi zagadnieniami, takimi jak argumenty wiersza polecenia i jak wstrzymać debugowanie aplikacji. Aby uzyskać więcej informacji, zobacz [Windows Forms aplikacji](../debugger/debugging-preparation-windows-forms-applications.md)i [Przygotowanie debugowania: aplikacje Windows Forms (.NET)](/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100)). Ze względu na podobieństwo wszystkich aplikacji konsolowych w tym temacie omówiono następujące typy projektów:
+Przygotowanie do debugowania projektu konsoli jest podobne do przygotowania do debugowania projektu systemu Windows, z kilkoma dodatkowymi zagadnieniami, takimi jak argumenty wiersza polecenia i jak wstrzymać debugowanie aplikacji. Aby uzyskać więcej informacji, zobacz temat [Przygotowanie debugowania dla aplikacji formularzy systemu Windows](../debugger/debugging-preparation-windows-forms-applications.md). Ze względu na podobieństwo wszystkich aplikacji konsolowych w tym temacie omówiono następujące typy projektów:
 
 - Aplikacja konsolowa C#, Visual Basic i języka F #
 

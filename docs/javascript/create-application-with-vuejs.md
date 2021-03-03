@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 52281c403ceb0f2708aa546cbd73559593c419be
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 338e53d576e9f4d73b32c3f432223480d9e708c3
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942831"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683935"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Tworzenie aplikacji Vue.js przy użyciu narzędzi Node.js Tools for Visual Studio
 
@@ -68,20 +68,22 @@ W tym przykładzie użyto pustej aplikacji ASP.NET Core (C#). Można jednak wybr
 
 #### <a name="create-an-empty-project"></a>Utwórz pusty projekt
 
-1. Otwórz program Visual Studio i Utwórz nowy projekt.
+* Otwórz program Visual Studio i Utwórz nowy projekt.
 
     ::: moniker range=">=vs-2019"
-    Naciśnij klawisz **ESC** , aby zamknąć okno uruchamiania. **Naciśnij klawisze CTRL + Q** , aby otworzyć pole wyszukiwania, wpisz **ASP.NET**, a następnie wybierz pozycję **utwórz nową aplikację sieci Web ASP.NET Core**. W wyświetlonym oknie dialogowym wpisz nazwę **Client-App**, a następnie wybierz pozycję Create ( **Utwórz**).
+    W programie Visual Studio 2019 wybierz pozycję **Utwórz nowy projekt** w oknie uruchamiania. Jeśli okno startowe nie jest otwarte, wybierz pozycję **plik**  >  **startowy**. Wpisz **aplikacja sieci Web**, wybierz **C#** jako język, a następnie wybierz **ASP.NET Core puste**, a następnie wybierz **dalej**. Na następnym ekranie Nazwij projekt **klient-aplikacja**, a następnie wybierz **dalej**.
+
+    Wybierz zalecaną platformę docelową (.NET Core 3,1) lub .NET 5, a następnie wybierz pozycję **Utwórz**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Na górnym pasku menu wybierz pozycję **plik**  >  **Nowy**  >  **projekt**. W lewym okienku okna dialogowego **Nowy projekt** rozwiń pozycję **Visual C#**, a następnie wybierz pozycję **Sieć Web**. W środkowym okienku wybierz pozycję **ASP.NET Core aplikacja sieci Web**, wpisz nazwę **klient-aplikacja**, a następnie wybierz **przycisk OK**.
+
+    Wybierz opcję **puste**, a następnie kliknij przycisk **OK**.
+
+    Program Visual Studio tworzy projekt, który zostanie otwarty w Eksplorator rozwiązań (prawego okienka).
     ::: moniker-end
 
     Jeśli nie widzisz szablonu projektu **ASP.NET Core aplikacji sieci Web** , musisz zainstalować obciążenie **ASP.NET i programowanie dla sieci Web** oraz. Najpierw **nasienne programowanie w sieci podstawowej** . Aby zainstalować obciążenia, kliknij link **Otwórz Instalator programu Visual Studio** w lewym okienku okna dialogowego **Nowy projekt** (wybierz pozycję **plik**  >  **Nowy**  >  **projekt**). Zostanie uruchomiona Instalator programu Visual Studio. Wybierz wymagane obciążenia.
-
-1. Wybierz opcję **puste**, a następnie kliknij przycisk **OK**.
-
-    Program Visual Studio tworzy projekt, który zostanie otwarty w Eksplorator rozwiązań (prawego okienka).
 
 #### <a name="configure-the-project-startup-file"></a>Konfigurowanie pliku startowego projektu
 

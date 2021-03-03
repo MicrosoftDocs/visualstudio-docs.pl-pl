@@ -3,19 +3,19 @@ title: 'Szybki Start: Przewodnik po środowisku IDE programu Visual Studio'
 description: Poznaj niektóre okna, menu i inne funkcje interfejsu użytkownika zintegrowanego środowiska programistycznego (IDE) programu Visual Studio.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
-ms.date: 02/21/2019
+ms.date: 03/02/2021
 ms.topic: quickstart
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e0199319bc0c647f42e87d4003dd2fabe4544a0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 237b3384d6bec010a760c4bc193b9a95f33febeb
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945503"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683956"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Szybki Start: pierwsze spojrzenie na środowisko IDE programu Visual Studio
 
@@ -83,15 +83,25 @@ Aby kontynuować Eksplorowanie funkcji programu Visual Studio, Utwórz nowy proj
 
 1. W oknie uruchamiania wybierz pozycję **Utwórz nowy projekt**.
 
-   Zostanie otwarte okno dialogowe z komunikatem **Utwórz nowy projekt**. Tutaj można wyszukiwać, filtrować i wybierać szablon projektu. Pokazuje także listę ostatnio używanych szablonów projektu.
+    :::image type="content" source="../get-started/media/vs-2019/start-window-create-new-project.png" alt-text="Zrzut ekranu przedstawiający okno &quot;Tworzenie nowego projektu&quot; w programie Visual Studio 2019.":::
 
-1. W polu wyszukiwania w górnej części wpisz w **konsoli** , aby odfiltrować listę typów projektu do tych, które zawierają "konsolę" w nazwie. Dokładniejsze udoskonalenie wyników wyszukiwania przez wybranie języka **C#** (lub innego wybranego języka) w selektorze **języków** .
+   Zostanie otwarte okno **Utwórz nowy projekt** zawierające kilka *szablonów* projektów. Szablon zawiera podstawowe pliki i ustawienia wymagane dla danego typu projektu.
 
-   ![Okno dialogowe nowego projektu w programie Visual Studio 2019](media/vs-2019/create-a-new-project.png)
+   Tutaj można wyszukiwać, filtrować i wybierać szablon projektu. Pokazuje także listę ostatnio używanych szablonów projektu.
 
-1. Jeśli wybrano język C#, Visual Basic lub F #, wybierz szablon **Aplikacja konsolowa (.NET Core)** , a następnie wybierz przycisk **dalej**. (W przypadku wybrania innego języka wystarczy wybrać dowolny szablon. Interfejs użytkownika, który sprawdzimy, jest podobny dla wszystkich języków programowania.)
+1. W polu wyszukiwania w górnej części wpisz w **konsoli** , aby odfiltrować listę typów projektu do tych, które zawierają "konsolę" w nazwie. Dokładniejsze udoskonalenie wyników wyszukiwania przez wybranie języka **C#** (lub innego wybranego języka) z listy rozwijanej **wszystkie języki** .
 
-1. Na stronie **Konfiguruj nowy projekt** zaakceptuj domyślną nazwę projektu i lokalizację, a następnie wybierz pozycję **Utwórz**.
+    :::image type="content" source="media/vs-2019/create-new-project.png" alt-text="Zrzut ekranu przedstawiający okno &quot;Tworzenie nowego projektu&quot; w programie Visual Studio 2019, w którym wybierasz szablon, którego chcesz użyć.":::
+
+1. Jeśli wybrano język C#, Visual Basic lub F #, wybierz szablon **Aplikacja konsolowa** , a następnie wybierz **dalej**. (W przypadku wybrania innego języka wystarczy wybrać dowolny szablon. Interfejs użytkownika, który sprawdzimy, jest podobny dla wszystkich języków programowania.)
+
+1. W oknie **Konfigurowanie nowego projektu** zaakceptuj domyślną nazwę projektu i lokalizację, a następnie wybierz przycisk **dalej**.
+
+    :::image type="content" source="media/vs-2019/configure-new-project-console.png" alt-text="Zrzut ekranu przedstawiający okno &quot;Konfigurowanie nowego projektu&quot; w programie Visual Studio 2019, w którym wprowadzana jest nazwa projektu.":::
+
+1. W oknie **Informacje dodatkowe** Sprawdź, czy program **.NET Core 3,1** pojawia się w menu rozwijanym **platforma docelowa** , a następnie kliknij przycisk **Utwórz**.
+
+    :::image type="content" source="../get-started/media/vs-2019/create-project-additional-info.png" alt-text="Zrzut ekranu przedstawiający okno &quot;dodatkowe informacje&quot; w programie Visual Studio 2019, w którym wybierasz żądaną wersję platformy .NET Core.":::
 
 ::: moniker-end
 

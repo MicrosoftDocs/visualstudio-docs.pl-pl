@@ -21,15 +21,16 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f370fc0e3f97d53fb63bfdabb637edff90960442
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a59e454238bf362aec20916c6d1f6ed2e4ff187f
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99872407"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684146"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>Przygotowanie debugowania: aplikacje Windows Forms
-Szablon projektu Windows Forms tworzy aplikację Windows Forms. Debugowanie tego typu aplikacji w programie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jest proste. Aby uzyskać więcej informacji, zobacz [Tworzenie projektu aplikacji systemu Windows](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).
+
+Szablon projektu aplikacji Windows Forms tworzy aplikację Windows Forms. Debugowanie tego typu aplikacji w programie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jest proste. Aby uzyskać informacje na temat tworzenia projektu tego typu, zobacz [Tworzenie aplikacji formularza systemu Windows](../ide/create-csharp-winform-visual-studio.md).
 
  Podczas tworzenia projektu Windows Forms przy użyciu szablonu projektu program [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatycznie tworzy wymagane ustawienia dla konfiguracji debugowania i wydania. W razie potrzeby możesz zmienić te ustawienia. Te ustawienia można zmienić w oknie dialogowym **\<project name> strony właściwości** (**mój projekt** w Visual Basic).
 

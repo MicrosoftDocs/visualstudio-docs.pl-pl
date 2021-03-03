@@ -1,7 +1,7 @@
 ---
 title: Przegląd dla deweloperów Visual Basic
 description: Dowiedz się więcej o używaniu programu Visual Studio do edytowania, debugowania i kompilowania kodu, a następnie publikowania aplikacji jako dewelopera Visual Basic.
-ms.date: 11/15/2018
+ms.date: 03/02/2021
 ms.technology: vs-ide-general
 ms.custom:
 - get-started
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3d771fac2cf494e92cbc27fdbdca0b78af97b67e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 398070e0214e36f696bb69614bb6a51b3462a551
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944397"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101682985"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Witamy w programie Visual Studio IDE | Visual Basic
 
@@ -232,7 +232,8 @@ Aby przejść do **ciemnego** motywu:
 
 1. Otwórz program Visual Studio. W oknie uruchamiania wybierz pozycję **Kontynuuj bez kodu**.
 
-   ![Okno uruchamiania w programie Visual Studio 2019](media/vs-2019/continue-without-code.png)
+
+    :::image type="content" source="media/vs-2019/continue-without-code.png" alt-text="Zrzut ekranu okna uruchamiania w programie Visual Studio 2019 z wyróżnionym linkiem &quot;Kontynuuj bez kodu&quot;.":::
 
    Zostanie otwarte środowisko IDE.
 
@@ -240,7 +241,7 @@ Aby przejść do **ciemnego** motywu:
 
 2. Na pasku menu wybierz **Narzędzia**  >  **Opcje** , aby otworzyć okno dialogowe **Opcje** .
 
-3. Na stronie   >  **Ogólne** opcje środowiska Zmień wybór **motywu koloru** na **ciemny**, a następnie wybierz przycisk **OK**.
+3. Na stronie   >  **Ogólne** opcje środowiska Zmień wybór **motywu koloru** na **ciemny**, a następnie kliknij przycisk **OK**.
 
    ![Zmień motyw kolorów na ciemny w programie Visual Studio](media/change-color-theme.png)
 
@@ -264,13 +265,13 @@ Następnie skonfigurujemy program Visual Studio do korzystania z ustawień środ
 
 1. Na pasku menu wybierz kolejno opcje **Narzędzia**  >  **Importuj i Eksportuj ustawienia**.
 
-2. W **Kreatorze importowania i eksportowania ustawień** wybierz pozycję **Zresetuj wszystkie ustawienia** na pierwszej stronie, a następnie wybierz przycisk **dalej**.
+2. W **Kreatorze importowania i eksportowania ustawień** wybierz opcję **Zresetuj wszystkie ustawienia** na pierwszej stronie, a następnie kliknij przycisk **dalej**.
 
-3. Na stronie **Zapisywanie bieżących ustawień** wybierz opcję zapisania bieżących ustawień, a następnie wybierz przycisk **dalej**. (Jeśli nie dostosowano żadnych ustawień, wybierz pozycję **nie, po prostu Zresetuj ustawienia, zastępując Moje bieżące ustawienia**).
+3. Na stronie **Zapisywanie bieżących ustawień** wybierz opcję zapisania bieżących ustawień lub nie, a następnie kliknij przycisk **dalej**. (Jeśli nie dostosowano żadnych ustawień, wybierz pozycję **nie, po prostu Zresetuj ustawienia, zastępując Moje bieżące ustawienia**).
 
-4. Na stronie **Wybierz domyślną kolekcję ustawień** wybierz pozycję **Visual Basic**, a następnie wybierz pozycję **Zakończ**.
+4. Na stronie **Wybierz domyślną kolekcję ustawień** wybierz **Visual Basic**, a następnie kliknij przycisk **Zakończ**.
 
-5. Na stronie **Resetowanie ukończone** wybierz pozycję **Zamknij**.
+5. Na stronie **Resetowanie ukończone** kliknij przycisk **Zamknij**.
 
 Aby dowiedzieć się więcej na temat innych sposobów personalizowania środowiska IDE, zobacz [Personalizowanie programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
@@ -344,21 +345,25 @@ Szczegółowemy i utworzysz prosty program.
 
 ::: moniker range=">=vs-2019"
 
-1. Na pasku menu programu Visual Studio wybierz pozycję **plik** > **Nowy projekt**.
+1. Na pasku menu programu Visual Studio wybierz pozycję **plik**  >  **Nowy**  >  **projekt**. (Alternatywnie naciśnij klawisz **Ctrl** + **SHIFT** + **N**.)
 
-   ![Plik > nowy projekt na pasku menu](media/vs-2019/file-new-project.png)
+    :::image type="content" source="media/vs-2019/file-new-project.png" alt-text="Zrzut ekranu przedstawiający plik > nowy > wybór projektu z paska menu programu Visual Studio 2019.":::
 
-   Zostanie otwarte okno **Utwórz nowy projekt** zawierające kilka *szablonów* projektów. Szablon zawiera podstawowe pliki i ustawienia, które są zbędne dla danego typu projektu.
+   Zostanie otwarte okno **Utwórz nowy projekt** zawierające kilka *szablonów* projektów. Szablon zawiera podstawowe pliki i ustawienia wymagane dla danego typu projektu.
 
-1. Aby znaleźć żądany szablon, wpisz lub wprowadź w polu wyszukiwania **konsolę .NET Core** . Lista dostępnych szablonów jest automatycznie filtrowana na podstawie wprowadzonych słów kluczowych. Można bardziej filtrować wyniki szablonu, wybierając **Visual Basic** z listy rozwijanej **Język** .
+1. Aby znaleźć żądany szablon, wpisz lub wprowadź w polu wyszukiwania **konsolę .NET Core** . Lista dostępnych szablonów jest automatycznie filtrowana na podstawie wprowadzonych słów kluczowych. Możesz dodatkowo filtrować wyniki szablonu, wybierając pozycję **Visual Basic** z listy rozwijanej **wszystkie języki** , **Windows** z listy **wszystkie platformy** **, a następnie** z listy **wszystkie typy projektów** .
 
-1. Wybierz szablon **Aplikacja konsolowa (.NET Core)** , a następnie wybierz przycisk **dalej**.
+   Wybierz szablon **Aplikacja konsolowa** , a następnie kliknij przycisk **dalej**.
 
-   ![Utworzenie nowego projektu w Visual Studio](media/vs-2019/create-new-project.png)
+    :::image type="content" source="media/vs-2019/create-new-project.png" alt-text="Zrzut ekranu przedstawiający okno &quot;Tworzenie nowego projektu&quot; w programie Visual Studio 2019, w którym wybierasz szablon, którego chcesz użyć.":::
 
-1. W oknie **Konfigurowanie nowego projektu** wprowadź **HelloWorld** w polu **Nazwa projektu** , opcjonalnie Zmień lokalizację katalogu dla plików projektu, a następnie wybierz pozycję **Utwórz**.
+1. W oknie **Konfigurowanie nowego projektu** wprowadź **HelloWorld** w polu **Nazwa projektu** , opcjonalnie Zmień lokalizację katalogu dla plików projektu (domyślne ustawienia regionalne to `C:\Users\<name>\source\repos` ), a następnie kliknij przycisk **dalej**.
 
-   ![Konfigurowanie nowego projektu w programie Visual Studio](media/vs-2019/configure-new-project.png)
+    :::image type="content" source="media/vs-2019/configure-new-project.png" alt-text="Zrzut ekranu przedstawiający okno &quot;Konfigurowanie nowego projektu&quot; w programie Visual Studio 2019, w którym wprowadzana jest nazwa projektu.":::
+
+1. W oknie **Informacje dodatkowe** Sprawdź, czy program **.NET Core 3,1** pojawia się w menu rozwijanym **platforma docelowa** , a następnie kliknij przycisk **Utwórz**.
+
+    :::image type="content" source="media/vs-2019/create-project-additional-info.png" alt-text="Zrzut ekranu przedstawiający okno &quot;dodatkowe informacje&quot; w programie Visual Studio 2019, w którym wybierasz żądaną wersję platformy .NET Core.":::
 
    Program Visual Studio tworzy projekt. Jest to prosta aplikacja "Hello world", która wywołuje <xref:System.Console.WriteLine?displayProperty=nameWithType> metodę w celu wyświetlenia ciągu literału "Hello World!" w oknie Konsola (dane wyjściowe programu).
 

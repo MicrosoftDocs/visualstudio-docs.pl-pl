@@ -15,12 +15,12 @@ manager: jmartens
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 4b1d250ed5306ce101fd7482b740ad57514e4f0a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4d001e89993b90f6e8b7b33f43a5c06a1ffd7cd1
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899423"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683324"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Samouczek: debugowanie C# i C++ w tej samej sesji debugowania
 
@@ -126,9 +126,11 @@ Jeśli masz zainstalowany program Visual Studio, ale nie masz potrzebnych obcią
 1. Otwórz program Visual Studio i Utwórz nowy projekt.
 
     ::: moniker range=">=vs-2019"
-    Naciśnij klawisz **ESC** , aby zamknąć okno uruchamiania. **Naciśnij klawisze CTRL + Q** , aby otworzyć pole wyszukiwania, **wpisz Console**, wybierz pozycję **Szablony**, a następnie wybierz pozycję **Aplikacja konsolowa (.NET Core)** lub **Aplikacja konsolowa (.NET Framework)** dla języka C#. W wyświetlonym oknie dialogowym wybierz pozycję **Utwórz**.
+    Naciśnij klawisz **ESC** , aby zamknąć okno uruchamiania. **Naciśnij klawisze CTRL + Q** , aby otworzyć pole wyszukiwania, **wpisz Console**, wybierz pozycję **Szablony**, a następnie wybierz pozycję **aplikacja konsoli** dla platformy .NET Core lub **Aplikacja konsolowa (.NET Framework)** dla języka C#. W wyświetlonym oknie dialogowym wybierz pozycję **dalej**.
 
-    Następnie wpisz nazwę, taką jak **Mixed_Mode_Calling_App** , i kliknij przycisk **Utwórz**.
+    Następnie wpisz nazwę, taką jak **Mixed_Mode_Calling_App** , i kliknij przycisk **dalej** lub **Utwórz**, zależnie od opcji.
+
+    W przypadku platformy .NET Core wybierz zalecaną platformę docelową (.NET Core 3,1) lub .NET 5, a następnie wybierz pozycję **Utwórz**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Na górnym pasku menu wybierz pozycję **plik**  >  **Nowy**  >  **projekt**. W lewym okienku okna dialogowego **Nowy projekt** w obszarze **Visual C#** wybierz pozycję **Windows Desktop**, a następnie w środkowym okienku wybierz pozycję **Aplikacja konsolowa (.NET Framework)** lub  **Aplikacja konsolowa (.NET Core)**.
@@ -136,7 +138,7 @@ Jeśli masz zainstalowany program Visual Studio, ale nie masz potrzebnych obcią
     Następnie wpisz nazwę, taką jak **Mixed_Mode_Calling_App** , i kliknij przycisk **OK**.
     ::: moniker-end
 
-    Jeśli szablon projektu **aplikacji konsolowej** nie jest widoczny, przejdź do pozycji **Narzędzia**  >  **Pobierz narzędzia i funkcje...**, co spowoduje otwarcie Instalator programu Visual Studio. Wybierz obciążenie **Programowanie aplikacji klasycznych platformy .NET** , a następnie wybierz **Modyfikuj**.
+    Jeśli nie widzisz prawidłowego szablonu projektu, przejdź do pozycji **Narzędzia**  >  **Pobierz narzędzia i funkcje...**, co spowoduje otwarcie Instalator programu Visual Studio. Wybierz obciążenie **Międzyplatformowe platformy .NET Core** lub **Programowanie aplikacji klasycznych platformy .NET** , w zależności od platformy docelowej, a następnie wybierz **Modyfikuj**.
 
     > [!NOTE]
     > Można również dodać nowy projekt zarządzany do istniejącego rozwiązania C++. Tworzymy projekt w nowym rozwiązaniu, aby zadanie debugowania w trybie mieszanym było trudniejsze.

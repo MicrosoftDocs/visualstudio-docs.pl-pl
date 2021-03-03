@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f46efe377cb01b7b78a9df2de2d1e6fc89826014
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d8f739ab99f060005f7bbfebc400c424c50ba7d5
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884289"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684135"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Przewodnik: debugowanie aplikacji równoległej w programie Visual Studio (C#, Visual Basic, C++)
 
@@ -70,14 +70,16 @@ W tym instruktażu pokazano, jak używać równoległych **zadań** i **równole
 
    W oknie uruchamiania wybierz pozycję **Utwórz nowy projekt**.
 
-   W oknie **Tworzenie nowego projektu** w polu wyszukiwania wpisz lub wpisz *Console* . Następnie wybierz pozycję **C#**, **C++** lub **Visual Basic** z listy język, a następnie wybierz pozycję **Windows** z listy platform. 
+   W oknie **Tworzenie nowego projektu** w polu wyszukiwania wpisz lub wpisz *Console* . Następnie wybierz pozycję **C#**, **C++** lub **Visual Basic** z listy język, a następnie wybierz pozycję **Windows** z listy platform.
 
-   Po zastosowaniu filtrów języka i platformy wybierz **aplikację konsolową (.NET Core)** lub, dla języka C++, szablon **aplikacji konsolowej** , a następnie wybierz **dalej**.
+   Po zastosowaniu filtrów języka i platformy wybierz **aplikację konsolową** dla platformy .NET Core lub C++, a następnie wybierz przycisk **dalej**.
 
    > [!NOTE]
-   > Jeśli nie widzisz poprawnego szablonu, przejdź do pozycji **Narzędzia**  >  **Pobierz narzędzia i funkcje...**, co spowoduje otwarcie Instalator programu Visual Studio. Wybierz pozycję **Programowanie aplikacji klasycznych dla platformy .NET** lub **Programowanie aplikacji klasycznych w języku C++** , a następnie wybierz polecenie **Modyfikuj**.
+   > Jeśli nie widzisz poprawnego szablonu, przejdź do pozycji **Narzędzia**  >  **Pobierz narzędzia i funkcje...**, co spowoduje otwarcie Instalator programu Visual Studio. Wybierz pozycję **Programowanie dla wielu platform w środowisku .NET Core** lub **Programowanie aplikacji klasycznych w języku C++** , a następnie wybierz polecenie **Modyfikuj**.
 
-   W oknie **Konfigurowanie nowego projektu** wpisz nazwę lub użyj nazwy domyślnej w polu **Nazwa projektu** . Następnie wybierz pozycję **Utwórz**.
+   W oknie **Konfigurowanie nowego projektu** wpisz nazwę lub użyj nazwy domyślnej w polu **Nazwa projektu** . Następnie wybierz pozycję **dalej** lub **Utwórz**, zależnie od opcji.
+
+   W przypadku platformy .NET Core wybierz zalecaną platformę docelową (.NET Core 3,1) lub .NET 5, a następnie wybierz pozycję **Utwórz**.
 
    ::: moniker-end
    ::: moniker range="vs-2017"

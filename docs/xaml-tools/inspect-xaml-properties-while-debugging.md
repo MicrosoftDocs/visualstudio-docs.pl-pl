@@ -2,7 +2,7 @@
 title: Sprawdź właściwości XAML podczas debugowania | Microsoft Docs
 description: Dowiedz się, jak używać aktywnego drzewa wizualnego i narzędzi Eksploratora właściwości na żywo podczas debugowania, aby sprawdzić właściwości XAML i uzyskać widok drzewa elementów interfejsu użytkownika.
 ms.custom: SEO-VS-2020
-ms.date: 11/12/2019
+ms.date: 03/02/2021
 ms.topic: how-to
 ms.assetid: 390edde4-7b8d-4c89-8d69-55106b7e6b11
 author: TerryGLee
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: d9033921c9e9863e5210721fb2c1244c326802d4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 76edf9f1af414a67abd83cec3c2f597c6cdf8707
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881376"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683460"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Sprawdzanie właściwości XAML podczas debugowania
 
@@ -34,7 +34,17 @@ Zacznijmy od bardzo prostej aplikacji WPF, która zawiera widok listy i przycisk
 
 ### <a name="create-the-project"></a>Tworzenie projektu
 
-1. Utwórz nową aplikację WPF w języku c# (**plik**  >  **Nowy**  >  **projekt**, następnie wpisz ciąg "C# WPF" i wybierz pozycję **Aplikacja WPF (.NET Core)** lub **Aplikacja WPF (.NET Framework)**. Nadaj mu nazwę **TestXaml**.
+::: moniker range="vs-2019"
+
+1. Utwórz nową aplikację WPF w języku c# (**plik** > **Nowy** > **projekt**, wpisz "C# WPF", wybierz szablon projektu **aplikacji WPF** , Nadaj projektowi **TestXaml**, a następnie sprawdź, czy program **.NET Core 3,1** pojawia się na liście rozwijanej **platforma docelowa** .
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+1. Utwórz nową aplikację WPF w języku c# (**plik**  >  **Nowy**  >  **projekt**, a następnie wpisz "C# WPF" i wybierz pozycję **Aplikacja WPF (.NET Framework)**). Nadaj mu nazwę **TestXaml**.
+
+::: moniker-end
 
 1. Zmień MainWindow. XAML na następujący:
 

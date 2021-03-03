@@ -3,7 +3,7 @@ title: 'Samouczek: wprowadzenie do języka C# i ASP.NET Core'
 titleSuffix: ''
 description: Dowiedz się, jak utworzyć aplikację internetową ASP.NET Core w programie Visual Studio przy użyciu języka C#, krok po kroku.
 ms.custom: seodec18, get-started
-ms.date: 05/29/2019
+ms.date: 02/12/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 63db3f62f4e7c763bf02fbfec2dd2f52c32d3264
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 026f6f2902b537312c0714b7eeb61d10e0fb980d
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956363"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683137"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Samouczek: wprowadzenie do języka C# i ASP.NET Core w programie Visual Studio
 
@@ -106,13 +106,13 @@ Jeśli nie widzisz szablonu projektu **ASP.NET Core aplikacji sieci Web** , moż
 
 1. W oknie uruchamiania wybierz pozycję **Utwórz nowy projekt**.
 
-   ![Wyświetl okno "Tworzenie nowego projektu"](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
+   :::image type="content" source="../../get-started/media/vs-2019/create-new-project-dark-theme.png" alt-text="Wyświetl okno &quot;Tworzenie nowego projektu&quot;":::
 
-1. W oknie **Tworzenie nowego projektu** wprowadź lub wpisz *ASP.NET* w polu wyszukiwania. Następnie wybierz pozycję **C#** z listy język, a następnie wybierz pozycję **Windows** z listy platform.
+1. W oknie **Tworzenie nowego projektu** wybierz pozycję **C#** z listy język. Następnie wybierz pozycję **Windows** z listy platform i **sieci Web** z listy typów projektów.
 
-   Po zastosowaniu filtrów języka i platformy wybierz szablon **ASP.NET Core aplikacji sieci Web** , a następnie wybierz przycisk **dalej**.
+      Po zastosowaniu filtrów języka, platformy i typu projektu wybierz szablon **ASP.NET Core Web App** , a następnie wybierz **dalej**.
 
-   ![Wybierz szablon C# dla ASP.NET Core aplikacji sieci Web](./media/vs-2019/csharp-create-new-project-search-aspnet-core-filtered.png)
+   :::image type="content" source="./media/vs-2019/csharp-create-new-project-aspnet-core.png" alt-text="Wybierz szablon C# dla aplikacji sieci Web ASP.NET Core":::
 
    > [!NOTE]
    > Jeśli nie widzisz szablonu **ASP.NET Core aplikacji sieci Web** , możesz go zainstalować z okna **Utwórz nowy projekt** . W obszarze **nie można znaleźć tego, czego szukasz?** komunikat wybierz łącze **Zainstaluj więcej narzędzi i funkcji** .
@@ -125,15 +125,21 @@ Jeśli nie widzisz szablonu projektu **ASP.NET Core aplikacji sieci Web** , moż
    >
    > Następnie wybierz przycisk **Modyfikuj** w Instalator programu Visual Studio. Jeśli zostanie wyświetlony monit o zapisanie pracy, zrób to. Następnie wybierz pozycję **Kontynuuj** , aby zainstalować obciążenie. Następnie wróć do kroku 2 w tej procedurze "[Create a Project](#create-a-project)".
 
-1. W oknie **Konfigurowanie nowego projektu** wpisz lub wprowadź *MyCoreApp* w polu **Nazwa projektu** . Następnie wybierz pozycję **Utwórz**.
+1. W oknie **Konfigurowanie nowego projektu** wpisz lub wprowadź *MyCoreApp* w polu **Nazwa projektu** . Następnie wybierz przycisk **dalej**.
 
-   ![w oknie "Konfigurowanie nowego projektu" nazwij projekt "MyCoreApp"](./media/vs-2019/csharp-name-your-aspnet-mycoreapp-project.png)
+   :::image type="content" source="./media/vs-2019/csharp-name-your-aspnet-app.png" alt-text="w oknie &quot;Konfigurowanie nowego projektu&quot; nazwij projekt &quot;MyCoreApp&quot;":::
 
-1. W oknie **Tworzenie nowej ASP.NET Core aplikacji sieci Web** Sprawdź, czy w górnym menu rozwijanym znajduje się **ASP.NET Core 3,0** . Następnie wybierz pozycję **aplikacja sieci Web**, która zawiera przykład Razor Pages. Następnie wybierz pozycję  **Utwórz**.
+1. W oknie **Informacje dodatkowe** Sprawdź, czy program **.NET Core 3,1** pojawia się w górnym menu rozwijanym. Pamiętaj, że możesz włączyć obsługę platformy Docker, zaznaczając pole wyboru. Możesz również dodać obsługę uwierzytelniania, klikając przycisk Zmień uwierzytelnianie. Z tego miejsca możesz wybrać jedną z opcji:
+    - Brak: brak uwierzytelniania.
+    - Pojedyncze konta: są one przechowywane w lokalnej lub opartej na platformie Azure bazie danych.
+    - Platforma tożsamości firmy Microsoft: Ta opcja używa Active Directory, Azure AD lub Microsoft 365 do uwierzytelniania.
+    - Windows: odpowiednie dla aplikacji intranetowych.
+    
+    Pozostaw zaznaczenie pola wyboru **Włącz platformę Docker** i wybierz opcję **Brak** dla opcji Typ uwierzytelniania. Następnie wybierz przycisk **Utwórz**.
 
-   ![Okno "Tworzenie nowej ASP.NET Core aplikacji sieci Web"](./media/vs-2019/csharp-create-aspnet-razor-pages-app.png)
+   :::image type="content" source="./media/vs-2019/aspnet-core-additional-information.png" alt-text="w oknie &quot;dodatkowe informacje&quot; Upewnij się, że wybrano opcję .NET Core 3,1 i pozostaw wszystkie wartości domyślne":::
 
-   Program Visual Studio otwiera nowy projekt.
+   Program Visual Studio otworzy nowy projekt.
 
 ::: moniker-end
 

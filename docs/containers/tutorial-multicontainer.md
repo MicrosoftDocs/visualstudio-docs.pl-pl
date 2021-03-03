@@ -7,12 +7,12 @@ ms.author: ghogen
 ms.date: 01/10/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 93f9d5ba8bd84341e1b314c1fabca07690114e39
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 1dd5e237e99333e9c2fb9414b3d32ff19b70dd9b
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729291"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684247"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Samouczek: Tworzenie aplikacji z obsługą kontenera przy użyciu Docker Compose
 
@@ -34,7 +34,7 @@ W tym samouczku dowiesz się, jak zarządzać więcej niż jednym kontenerem i k
 
 ## <a name="create-a-web-application-project"></a>Tworzenie projektu aplikacji sieci Web
 
-W programie Visual Studio Utwórz projekt **ASP.NET Core aplikacji sieci Web** o nazwie `WebFrontEnd` . Wybierz pozycję **aplikacja sieci Web** , aby utworzyć aplikację sieci Web przy użyciu stron Razor. 
+W programie Visual Studio Utwórz projekt **aplikacji sieci web ASP.NET Core** o nazwie `WebFrontEnd` , aby utworzyć aplikację sieci Web za pomocą stron Razor.
   
 ::: moniker range="vs-2017"
 
@@ -46,11 +46,11 @@ Nie wybieraj opcji **Włącz obsługę platformy Docker**. Później dodasz obs�
 
 ::: moniker range="vs-2019"
 
-![Zrzut ekranu przedstawiający ekran Konfigurowanie nowego projektu dla ASP.NET Core aplikacji sieci Web, nazwy projektu i nazwy rozwiązania są ustawione na "webfronton".](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project1.png)
+![Utwórz projekt aplikacji sieci Web ASP.NET Core](./media/tutorial-multicontainer/vs-2019/create-web-project1.png)
 
 Nie wybieraj opcji **Włącz obsługę platformy Docker**. Później dodasz obsługę platformy Docker.
 
-![Zrzut ekranu przedstawiający ekran Tworzenie nowej ASP.NET Core aplikacji sieci Web z wybraną aplikacją sieci Web. Opcja włączania obsługi platformy Docker nie jest zaznaczona.](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project.png)
+![Zrzut ekranu przedstawiający ekran informacji dodatkowych podczas tworzenia projektu sieci Web. Opcja włączania obsługi platformy Docker nie jest zaznaczona.](./media/tutorial-multicontainer/vs-2019/create-web-project-additional-information.png)
 
 ::: moniker-end
 
@@ -62,7 +62,7 @@ Dodaj projekt do tego samego rozwiązania i Wywołaj go *MyWebAPI*. Wybierz pozy
    ![Zrzut ekranu przedstawiający tworzenie projektu interfejsu API sieci Web](./media/tutorial-multicontainer/docker-tutorial-mywebapi.png)
 ::: moniker-end
 ::: moniker range="vs-2019"
-   ![Zrzut ekranu przedstawiający tworzenie projektu interfejsu API sieci Web](./media/tutorial-multicontainer/vs-2019/web-api-project.png)
+   ![Zrzut ekranu przedstawiający tworzenie projektu interfejsu API sieci Web](./media/tutorial-multicontainer/vs-2019/create-web-api-project.png)
 ::: moniker-end
 
 ## <a name="add-code-to-call-the-web-api"></a>Dodawanie kodu do wywoływania interfejsu API sieci Web

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 28f9ab13cca4f1d31973f9526063eaa56574dcf4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bc5232d616466ec5aa0916d5d1ad9e7bd5b1247c
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870522"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684120"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Rozpocznij debugowanie aplikacji wielowątkowych (C#, Visual Basic, C++)
 
@@ -48,12 +48,14 @@ Najpierw musisz mieć projekt aplikacji wielowątkowej. Poniżej przedstawiono p
 
    W oknie **Tworzenie nowego projektu** w polu wyszukiwania wpisz lub wpisz *Console* . Następnie wybierz pozycję **C#**, **C++** lub **Visual Basic** z listy język, a następnie wybierz pozycję **Windows** z listy platform. 
 
-   Po zastosowaniu filtrów języka i platformy wybierz **aplikację konsolową (.NET Core)** lub, dla języka C++, szablon **aplikacji konsolowej** , a następnie wybierz **dalej**.
+   Po zastosowaniu filtrów języka i platformy wybierz szablon **aplikacja konsoli** dla platformy .NET Core lub C++, a następnie wybierz przycisk **dalej**.
 
    > [!NOTE]
-   > Jeśli nie widzisz poprawnego szablonu, przejdź do pozycji **Narzędzia**  >  **Pobierz narzędzia i funkcje...**, co spowoduje otwarcie Instalator programu Visual Studio. Wybierz pozycję **Programowanie aplikacji klasycznych dla platformy .NET** lub **Programowanie aplikacji klasycznych w języku C++** , a następnie wybierz polecenie **Modyfikuj**.
+   > Jeśli nie widzisz poprawnego szablonu, przejdź do pozycji **Narzędzia**  >  **Pobierz narzędzia i funkcje...**, co spowoduje otwarcie Instalator programu Visual Studio. Wybierz pozycję **Programowanie dla wielu platform w środowisku .NET Core** lub **Programowanie aplikacji klasycznych w języku C++** , a następnie wybierz polecenie **Modyfikuj**.
 
-   W oknie **Konfigurowanie nowego projektu** wpisz lub wprowadź *MyThreadWalkthroughApp* w polu **Nazwa projektu** . Następnie wybierz pozycję **Utwórz**.
+   W oknie **Konfigurowanie nowego projektu** wpisz lub wprowadź *MyThreadWalkthroughApp* w polu **Nazwa projektu** . Następnie wybierz pozycję **dalej** lub **Utwórz**, zależnie od opcji.
+
+   W przypadku projektu .NET Core wybierz zalecaną platformę docelową (.NET Core 3,1) lub .NET 5, a następnie wybierz pozycję **Utwórz**.
 
    ::: moniker-end
    ::: moniker range="vs-2017"
@@ -63,7 +65,7 @@ Najpierw musisz mieć projekt aplikacji wielowątkowej. Poniżej przedstawiono p
    - W przypadku aplikacji Visual Basic w obszarze **Visual Basic** wybierz pozycję **Windows Desktop**, a następnie w środkowym okienku wybierz pozycję **aplikacja konsoli (.NET Framework)**.
    - W przypadku aplikacji w języku C++ w obszarze **Visual C++** wybierz pozycję **Windows Desktop**, a następnie wybierz pozycję **Aplikacja konsolowa systemu Windows**.
 
-   Jeśli nie widzisz **aplikacji konsolowej (.NET Core)** lub, dla języka C++, szablonu projektu **aplikacji konsoli** , przejdź do pozycji **Narzędzia**  >  **Pobierz narzędzia i funkcje...**, co spowoduje otwarcie Instalator programu Visual Studio. Wybierz pozycję **Programowanie aplikacji klasycznych dla platformy .NET** lub **Programowanie aplikacji klasycznych w języku C++** , a następnie wybierz polecenie **Modyfikuj**.
+   Jeśli nie widzisz **aplikacji konsolowej (.NET Framework)** dla języka C++, szablon projektu **aplikacji konsolowej** , przejdź do pozycji **Narzędzia**  >  **Pobierz narzędzia i funkcje...**, co spowoduje otwarcie Instalator programu Visual Studio. Wybierz pozycję **Programowanie aplikacji klasycznych dla platformy .NET** lub **Programowanie aplikacji klasycznych w języku C++** , a następnie wybierz polecenie **Modyfikuj**.
 
    Następnie wpisz nazwę, na przykład *MyThreadWalkthroughApp* , i kliknij przycisk **OK**.
 

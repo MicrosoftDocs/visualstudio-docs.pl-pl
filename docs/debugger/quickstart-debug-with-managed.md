@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 061e667196ce1577206ad76939e20daf3db131c0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f790d30dc97d5549737c3c1cd003086477ce984f
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840889"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683013"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Szybki Start: debugowanie za pomocą języka C# lub Visual Basic przy użyciu debugera programu Visual Studio
 
@@ -28,13 +28,21 @@ Debuger programu Visual Studio udostępnia wiele zaawansowanych funkcji ułatwia
 1. Otwórz program Visual Studio i Utwórz nowy projekt.
 
     ::: moniker range=">=vs-2019"
-    Naciśnij klawisz **ESC** , aby zamknąć okno uruchamiania. **Naciśnij klawisze CTRL + Q** , aby otworzyć pole wyszukiwania, **wpisz Console**, wybierz pozycję **Szablony**, a następnie wybierz pozycję **Utwórz nowy projekt Aplikacja konsolowa (.NET Core)**. W wyświetlonym oknie dialogowym wybierz pozycję **Utwórz**.
+    Jeśli okno startowe nie jest otwarte, wybierz pozycję **plik**  >  **startowy**. W oknie uruchamiania wybierz pozycję **Utwórz nowy projekt**.
+
+    W oknie **Tworzenie nowego projektu** w polu wyszukiwania wpisz lub wpisz *Console* . Następnie wybierz pozycję **C#** z listy język, a następnie wybierz pozycję **Windows** z listy platform.
+
+    Po zastosowaniu filtrów języka i platformy wybierz szablon **aplikacja konsoli** dla platformy .NET Core, a następnie wybierz przycisk **dalej**.
+
+    Wybierz zalecaną platformę docelową (.NET Core 3,1) lub .NET 5, a następnie wybierz pozycję **Utwórz**.
+
+    Jeśli szablon projektu **aplikacji konsolowej** dla platformy .NET Core nie jest widoczny, przejdź do pozycji **Narzędzia**  >  **Pobierz narzędzia i funkcje...**, co spowoduje otwarcie Instalator programu Visual Studio. Wybierz obciążenie dla **wielu platform platformy .NET Core** , a następnie wybierz **Modyfikuj**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Na górnym pasku menu wybierz pozycję **plik**  >  **Nowy**  >  **projekt**. W lewym okienku okna dialogowego **Nowy projekt** w obszarze **Visual C#** wybierz pozycję **.NET Core**, a następnie w środkowym okienku wybierz pozycję **Aplikacja konsolowa (.NET Core)**. Następnie wpisz nazwę, na przykład **MyDbgApp** , i kliknij przycisk **OK**.
-    ::: moniker-end
 
-     Jeśli szablon projektu **aplikacja konsoli (.NET Core)** nie jest widoczny, przejdź do pozycji **Narzędzia**  >  **Pobierz narzędzia i funkcje...**, co spowoduje otwarcie Instalator programu Visual Studio. Wybierz obciążenie programu **.NET Desktop Development** i **.NET Core** , a następnie wybierz **Modyfikuj**.
+    Jeśli szablon projektu **aplikacja konsoli (.NET Core)** nie jest widoczny, przejdź do pozycji **Narzędzia**  >  **Pobierz narzędzia i funkcje...**, co spowoduje otwarcie Instalator programu Visual Studio. Wybierz obciążenie dla **wielu platform platformy .NET Core** , a następnie wybierz **Modyfikuj**.
+    ::: moniker-end
 
     Program Visual Studio tworzy projekt.
 
@@ -155,17 +163,17 @@ Aplikacja kontynuuje wykonywanie, wywoływanie `doWork` i wstrzymuje w wierszu k
 
 Typowe polecenia klawiatury używane do przechodzenia przez kod obejmują **F10** i **F11**. Aby uzyskać bardziej szczegółowe instrukcje, zobacz [pierwsze spojrzenie na debuger](../debugger/debugger-feature-tour.md).
 
-## <a name="inspect-variables-in-a-datatip"></a>Inspekcja zmiennych w etykietki danych
+## <a name="inspect-variables-in-a-data-tip"></a>Sprawdzanie zmiennych w etykietce danych
 
-1. W bieżącym wierszu kodu (oznaczonym przez żółty wskaźnik wykonania) Umieść wskaźnik `c1` myszy nad obiektem, aby wyświetlić etykietki danych.
+1. W bieżącym wierszu kodu (oznaczonym przez żółty wskaźnik wykonania) Umieść kursor nad `c1` obiektem za pomocą myszy, aby wyświetlić etykietkę danych.
 
-    ![Wyświetl etykietki danych](../debugger/media/dbg-qs-data-tip-csharp.png "Wyświetl etykietki danych")
+    ![Wyświetlanie etykietki danych](../debugger/media/dbg-qs-data-tip-csharp.png "Wyświetlanie etykietki danych")
 
-    Etykietki danych pokazuje bieżącą wartość `c1` zmiennej i pozwala na kontrolowanie jej właściwości. W przypadku debugowania, Jeśli zobaczysz nieoczekiwaną wartość, prawdopodobnie masz usterkę w powyższym lub wywoływanym wierszu kodu.
+    Porada dane przedstawia bieżącą wartość `c1` zmiennej i umożliwia inspekcję jej właściwości. W przypadku debugowania, Jeśli zobaczysz nieoczekiwaną wartość, prawdopodobnie masz usterkę w powyższym lub wywoływanym wierszu kodu.
 
-2. Rozwiń etykietki danych, aby sprawdzić bieżącą wartość właściwości `c1` obiektu.
+2. Rozwiń etykietkę danych, aby sprawdzić bieżącą wartość właściwości `c1` obiektu.
 
-3. Jeśli chcesz przypiąć etykietki danych, tak aby można było nadal zobaczyć wartość `c1` podczas wykonywania kodu, kliknij ikonę małego numeru PIN. (Można przenieść przypiętą etykietki danych do wygodnej lokalizacji).
+3. Jeśli chcesz przypiąć wskazówkę dotyczącą danych, aby można było nadal zobaczyć wartość `c1` podczas wykonywania kodu, kliknij ikonę małego numeru PIN. (Można przenieść przypiętą końcówkę danych do wygodnej lokalizacji).
 
 ## <a name="edit-code-and-continue-debugging"></a>Edytowanie kodu i kontynuowanie debugowania
 

@@ -5,15 +5,15 @@ ms.custom: SEO-VS-2020
 author: ghogen
 description: Dowiedz się, jak utworzyć kontenery z reagują na aplikacje za pomocą narzędzi kontenera programu Visual Studio i platformy Docker
 ms.author: ghogen
-ms.date: 05/14/2020
+ms.date: 02/21/2021
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: 15c781be33343d2672396c44492d71f42cbb4eda
-ms.sourcegitcommit: 296ab61c40bf090c577ef20e84d581939bd1855b
+ms.openlocfilehash: 7a2a9e7c8b2c53dcee7f11d4b0b795b66ab80a80
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "92502191"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684336"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>Szybki Start: korzystanie z platformy Docker z aplikacją jednostronicową do reagowania w programie Visual Studio
 
@@ -55,11 +55,16 @@ W przypadku instalacji platformy Docker najpierw przejrzyj informacje na [pulpic
 
 1. Wybierz typ kontenera, a następnie kliknij przycisk **OK**.
 ::: moniker-end
-::: moniker range=">=vs-2019"
-1. Utwórz nowy projekt za pomocą szablonu **aplikacji sieci Web ASP.NET Core** .
-1. Wybierz pozycję **React.js**, a następnie kliknij pozycję **Utwórz**. Nie możesz wybrać opcji **Włącz obsługę platformy Docker**, ale nie martw się, możesz dodać tę obsługę później.
 
-   ![Zrzut ekranu przedstawiający nowy projekt React.js](media/container-tools-react/vs-2019/new-react-project.png)
+::: moniker range=">=vs-2019"
+
+1. Utwórz nowy projekt przy użyciu **ASP.NET Core z** szablonem React.js.
+
+   ![Zrzut ekranu przedstawiający tworzenie nowego projektu React.js](media/container-tools-react/vs-2019/create-reactjs-project.png)
+
+1. Na ekranie **Informacje dodatkowe** nie można wybrać opcji **Włącz obsługę platformy Docker**, ale nie martw się, możesz dodać tę obsługę później.
+
+   ![Zrzut ekranu przedstawiający tworzenie nowego projektu React.js — ekran informacji dodatkowych](media/container-tools-react/vs-2019/new-react-project-additional-information.png)
 
 1. Kliknij prawym przyciskiem myszy węzeł projektu, a następnie wybierz polecenie **Dodaj** > **obsługę platformy Docker** , aby dodać pliku dockerfile do projektu.
 
@@ -237,7 +242,7 @@ Po zakończeniu cyklu opracowywania i debugowania aplikacji można utworzyć obr
     | **Prefiks DNS** | Nazwa unikatowa w skali globalnej | Nazwa, która jednoznacznie identyfikuje rejestr kontenerów. |
     | **Subskrypcja** | Wybierz subskrypcję | Subskrypcja platformy Azure, która ma być używana. |
     | **[Grupa zasobów](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nazwa grupy zasobów, w której ma zostać utworzony rejestr kontenerów. Wybierz pozycję **Nowa**, aby utworzyć nową grupę zasobów.|
-    | **[Jednostka SKU](/azure/container-registry/container-registry-skus)** | Standardowa | Warstwa usług w rejestrze kontenerów  |
+    | **[SKU](/azure/container-registry/container-registry-skus)** | Standardowa | Warstwa usług w rejestrze kontenerów  |
     | **Lokalizacja rejestru** | Lokalizacja blisko Ciebie | Wybierz lokalizację w [regionie](https://azure.microsoft.com/regions/) blisko siebie lub w najbliższej innej usłudze, która będzie korzystać z rejestru kontenerów. |
 
     ![Okno dialogowe tworzenia Azure Container Registry programu Visual Studio](media/hosting-web-apps-in-docker/vs-acr-provisioning-dialog.png)
@@ -267,7 +272,7 @@ Po zakończeniu cyklu opracowywania i debugowania aplikacji można utworzyć obr
     | **Prefiks DNS** | Nazwa unikatowa w skali globalnej | Nazwa, która jednoznacznie identyfikuje rejestr kontenerów. |
     | **Subskrypcja** | Wybierz subskrypcję | Subskrypcja platformy Azure, która ma być używana. |
     | **[Grupa zasobów](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nazwa grupy zasobów, w której ma zostać utworzony rejestr kontenerów. Wybierz pozycję **Nowa**, aby utworzyć nową grupę zasobów.|
-    | **[Jednostka SKU](/azure/container-registry/container-registry-skus)** | Standardowa | Warstwa usług w rejestrze kontenerów  |
+    | **[SKU](/azure/container-registry/container-registry-skus)** | Standardowa | Warstwa usług w rejestrze kontenerów  |
     | **Lokalizacja rejestru** | Lokalizacja blisko Ciebie | Wybierz lokalizację w [regionie](https://azure.microsoft.com/regions/) blisko siebie lub w najbliższej innej usłudze, która będzie korzystać z rejestru kontenerów. |
 
     ![Okno dialogowe tworzenia Azure Container Registry programu Visual Studio](media/container-tools-react/vs-2019/azure-container-registry-details.png)
@@ -287,7 +292,7 @@ Po zakończeniu cyklu opracowywania i debugowania aplikacji można utworzyć obr
 
 Teraz można ściągnąć kontener z rejestru do dowolnego hosta, który może uruchamiać obrazy platformy Docker, na przykład [Azure Container Instances](/azure/container-instances/container-instances-tutorial-deploy-app).
 
-## <a name="additional-resources"></a>Zasoby dodatkowe
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
 * [Opracowywanie kontenerów w programie Visual Studio](./index.yml)
 * [Rozwiązywanie problemów związanych z opracowywaniem zwartości w programie Visual Studio przy użyciu platformy Docker](troubleshooting-docker-errors.md)

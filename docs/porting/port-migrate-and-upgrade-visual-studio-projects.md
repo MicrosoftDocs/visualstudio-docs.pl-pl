@@ -1,7 +1,7 @@
 ---
 title: Przenoszenie, migrowanie i uaktualnianie projektów
 description: Odwołanie do obsługi projektów utworzonych w obecnej i wcześniejszych wersjach programu Visual Studio.
-ms.date: 11/26/2019
+ms.date: 03/02/2021
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 8182f8982734bd0089d483c9acefc230c9baaa91
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 85d85b378de527f1ddbfab52f4a66ae475ee766a
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901320"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683386"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Dokumentacja migracji i uaktualniania projektu dla programu Visual Studio
 
@@ -132,7 +132,7 @@ Jeśli nie widzisz tutaj projektu lub typu pliku, który powinien być wymienion
 | Typ projektu | Pomoc techniczna |
 | --- | --- |
 | Projekty platformy .NET Core (xproj) | Projekty utworzone za pomocą narzędzi do podglądu programu Visual Studio 2015, które zawierają plik projektu xproj.<br/><br/>Visual Studio 2017: format xproj nie jest obsługiwany w przypadku migracji do formatu csproj. Po otwarciu pliku xproj zostanie wyświetlony monit o przeprowadzenie migracji pliku do formatu csproj w stylu zestawu SDK. (Utworzono kopię zapasową pliku xproj). Projekty csproj w stylu zestawu SDK nie są obsługiwane w programie Visual Studio 2015 i jego starszych wersjach. <br/><br/>Visual Studio 2019: w wersji 16,3 i nowszych nie można ładować ani migrować projektów xproj. Aby uzyskać więcej informacji, zobacz [Migrowanie projektów .NET Core do formatu csproj](/dotnet/core/migration/#visual-studio).|
-| Aplikacja sieci Web ASP.NET i aplikacja sieci Web ASP.NET Core z włączoną funkcją Application Insights | W przypadku każdego użytkownika programu Visual Studio informacje o zasobach są przechowywane w rejestrze na wystąpienie użytkownika. Te informacje są używane, gdy użytkownik nie otworzył projektu i chce przeszukiwać dane Application Insights platformy Azure. Program Visual Studio 2015 używa innej lokalizacji rejestru niż Visual Studio 2017 i Visual Studio 2019 i nie powoduje konfliktu.<br/><br/>Gdy użytkownik utworzy aplikację sieci Web ASP.NET lub ASP.NET Core aplikację sieci Web, zasób jest przechowywany w pliku. suo. Użytkownik może otworzyć projekt w programie Visual Studio 2015, Visual Studio 2017 lub Visual Studio 2019, a informacje o zasobach są używane przez program Visual Studio do obsługi projektów i rozwiązań używanych w obu wersjach. Użytkownicy muszą uwierzytelniać się raz w każdym produkcie. Na przykład jeśli projekt jest tworzony przy użyciu programu Visual Studio 2017 i otwarty w programie Visual Studio 2019, użytkownik musi uwierzytelnić się w programie Visual Studio 2019. |
+| ASP.NET Core aplikację sieci Web i ASP.NET Core aplikację sieci Web z włączonym Application Insights | W przypadku każdego użytkownika programu Visual Studio informacje o zasobach są przechowywane w rejestrze na wystąpienie użytkownika. Te informacje są używane, gdy użytkownik nie otworzył projektu i chce przeszukiwać dane Application Insights platformy Azure. Program Visual Studio 2015 używa innej lokalizacji rejestru niż Visual Studio 2017 i Visual Studio 2019 i nie powoduje konfliktu.<br/><br/>Gdy użytkownik utworzy aplikację sieci Web ASP.NET, ASP.NET Core aplikację sieci Web lub ASP.NET Core aplikację sieci Web, zasób jest przechowywany w pliku. suo. Użytkownik może otworzyć projekt w programie Visual Studio 2015, Visual Studio 2017 lub Visual Studio 2019, a informacje o zasobach są używane przez program Visual Studio do obsługi projektów i rozwiązań używanych w obu wersjach. Użytkownicy muszą uwierzytelniać się raz w każdym produkcie. Na przykład jeśli projekt jest tworzony przy użyciu programu Visual Studio 2017 i otwarty w programie Visual Studio 2019, użytkownik musi uwierzytelnić się w programie Visual Studio 2019. |
 | Formularz sieci Web lub formularz Windows C#/Visual Basic | Możesz otworzyć projekt w programie Visual Studio 2019, Visual Studio 2017 i Visual Studio 2015. |
 | Kodowany test interfejsu użytkownika | Kodowany test interfejsu użytkownika dla zautomatyzowanych testów funkcjonalnych opartych na interfejsie użytkownika jest przestarzały w programie Visual Studio 2019. <br/><br/>Program Visual Studio 2019 będzie ostatnią wersją dla kodowanego testu interfejsu użytkownika. Zalecamy używanie selen do testowania aplikacji sieci Web i Appium z WinAppDriver na potrzeby testowania aplikacji klasycznych i platformy UWP. |
 | Projekty testów jednostkowych bazy danych (csproj,. vbproj) | Starsze projekty testów jednostkowych danych są ładowane w programie Visual Studio 2019, ale używają wersji dołączanej GAC. Aby uaktualnić projekt testu jednostkowego, aby użyć najnowszych zależności, kliknij prawym przyciskiem myszy projekt w Eksplorator rozwiązań i wybierz polecenie **Konwertuj do SQL Server projektu testów jednostkowych..**.. |

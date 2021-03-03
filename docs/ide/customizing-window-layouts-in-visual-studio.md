@@ -2,7 +2,7 @@
 title: Dostosowywanie układów okien
 description: Dowiedz się, jak dostosować cechy, które są widziane w systemie Windows w celu utworzenia układów, które działają najlepiej dla różnych przepływów pracy deweloperskiej
 ms.custom: SEO-VS-2020
-ms.date: 07/31/2020
+ms.date: 03/02/2021
 ms.topic: conceptual
 f1_keywords:
 - vs.windows
@@ -25,12 +25,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f6983f9a4b16cc9ed6ece5779cfc44cd7ffa9259
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bd8859b98e54aa9692beaa98dd0f2c2ca70e2796
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910848"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101682586"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Dostosowywanie układów okien w programie Visual Studio
 
@@ -163,7 +163,17 @@ Najpierw utwórz rozwiązanie testowe, które ma dwa projekty, każdy z innym op
 
 #### <a name="create-a-ui-project-and-customize-the-layout"></a>Tworzenie projektu interfejsu użytkownika i dostosowywanie układu
 
+::: moniker range="vs-2017"
+
 1. Utwórz nowy projekt **aplikacji WPF** w języku C#. Załóżmy, że w tym projekcie utworzysz interfejs użytkownika. Chcesz zmaksymalizować miejsce dla okna projektanta i przenieść inne okna narzędzi w sposób nieobecny.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Utwórz nowy projekt **aplikacji WPF** w języku C#. Załóżmy, że w tym projekcie utworzysz interfejs użytkownika. Chcesz zmaksymalizować miejsce dla okna projektanta i przenieść inne okna narzędzi w sposób nieobecny.
+
+::: moniker-end
 
 2. Jeśli masz wiele monitorów, wyciągnij okno **Eksplorator rozwiązań** i okno **Właściwości** do drugiego monitora. W jednym systemie monitorowania Spróbuj zamknąć wszystkie okna z wyjątkiem projektanta.
 

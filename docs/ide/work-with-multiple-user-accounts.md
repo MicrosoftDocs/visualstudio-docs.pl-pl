@@ -2,19 +2,19 @@
 title: Praca z wieloma kontami użytkowników
 description: Dowiedz się, jak dodać wszystkie konta Microsoft do programu Visual Studio, aby uzyskać dostęp do zasobów z dowolnego konta bez konieczności logowania się do niego osobno.
 ms.custom: SEO-VS-2020
-ms.date: 11/16/2020
+ms.date: 03/02/2021
 ms.topic: conceptual
 author: ornellaalt
 ms.author: ornella
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 169415537460dae94ca844c426bb3770449161b5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6740eb4c23d739f439103b2ecdd0e8882018204d
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960458"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683795"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Praca z wieloma kontami użytkowników
 
@@ -65,7 +65,7 @@ Aby wyświetlić tę akcję, Utwórz nowy projekt **ASP.NET Core aplikacji sieci
 
 ::: moniker range=">=vs-2019"
 
-Aby wyświetlić tę akcję, Utwórz nowy projekt **ASP.NET Core aplikacji sieci Web** . Na stronie **Tworzenie nowej ASP.NET Core aplikacji sieci Web** wybierz szablon **aplikacja sieci Web** , a następnie wybierz pozycję **Zmień** w obszarze **uwierzytelnianie**.
+Aby wyświetlić tę akcję, Utwórz nowy projekt **ASP.NET Core aplikacji sieci Web** . Na stronie **Tworzenie nowej ASP.NET Core aplikacji sieci Web** wybierz z listy rozwijanej pozycję **ASP.NET Core 3,1** , wybierz szablon **aplikacja sieci Web** , a następnie wybierz pozycję **Zmień** w obszarze **uwierzytelnianie**.
 
 ::: moniker-end
 

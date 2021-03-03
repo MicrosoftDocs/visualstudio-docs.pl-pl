@@ -2,7 +2,7 @@
 title: 'Samouczek: wprowadzenie do Visual Basic'
 description: Dowiedz się, jak tworzyć aplikacje konsolowe Visual Basic w programie Visual Studio, krok po kroku.
 ms.custom: seodec18, get-started
-ms.date: 09/11/2019
+ms.date: 02/10/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: a08e955d8446ebcd376f81773b5996146241486e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 70782687b6220adf1c61c5b2bb6487d68fde70f4
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915027"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101682634"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Samouczek: wprowadzenie do Visual Basic w programie Visual Studio
 
@@ -84,14 +84,14 @@ Jeśli szablon projektu **Aplikacja konsolowa (.NET Core)** nie jest widoczny, m
 
    ![Wyświetl okno "Tworzenie nowego projektu"](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. W oknie **Tworzenie nowego projektu** w polu wyszukiwania wpisz lub wpisz *Console* . Następnie wybierz **Visual Basic** z listy język, a następnie wybierz pozycję **Windows** z listy platform. 
+1. W oknie **Tworzenie nowego projektu** wybierz **Visual Basic** z listy język. Następnie z listy typów projektów wybierz pozycję **Windows** z listy platform i **konsoli** .
 
-   Po zastosowaniu filtrów języka i platformy wybierz szablon **Aplikacja konsolowa (.NET Core)** , a następnie wybierz przycisk **dalej**.
+   Po zastosowaniu filtrów języka, platformy i typu projektu wybierz szablon **Aplikacja konsolowa** , a następnie wybierz **dalej**.
 
-   ![Wybierz szablon Visual Basic dla aplikacji konsolowej (.NET Framework)](./media/vs-2019/vb-create-new-project-search-console-net-core-filtered.png)
+   :::image type="content" source="./media/vs-2019/vb-create-new-project-console-net-core.png" alt-text="Wybierz szablon Visual Basic dla aplikacji konsolowej":::
 
    > [!NOTE]
-   > Jeśli nie widzisz szablonu **Aplikacja konsolowa (.NET Core)** , możesz go zainstalować z okna **Utwórz nowy projekt** . W obszarze **nie można znaleźć tego, czego szukasz?** komunikat wybierz łącze **Zainstaluj więcej narzędzi i funkcji** .
+   > Jeśli szablon **aplikacji konsolowej** nie jest wyświetlany, można go zainstalować za pomocą okna **Utwórz nowy projekt** . W obszarze **nie można znaleźć tego, czego szukasz?** komunikat wybierz łącze **Zainstaluj więcej narzędzi i funkcji** .
    >
    > ![Link "Zainstaluj więcej narzędzi i funkcji" z komunikatu "nie można odnaleźć szukanego elementu" w oknie "Tworzenie nowego projektu"](../../get-started/media/vs-2019/not-finding-what-looking-for.png) 
    > 
@@ -101,9 +101,13 @@ Jeśli szablon projektu **Aplikacja konsolowa (.NET Core)** nie jest widoczny, m
    >
    > Następnie wybierz przycisk **Modyfikuj** w Instalator programu Visual Studio. Może zostać wyświetlony monit o zapisanie pracy; Jeśli tak, zrób to. Następnie wybierz pozycję **Kontynuuj** , aby zainstalować obciążenie. Następnie wróć do kroku 2 w tej procedurze "[Create a Project](#create-a-project)".
 
-1. W oknie **Konfigurowanie nowego projektu** wpisz lub wprowadź *WhatIsYourName* w polu **Nazwa projektu** . Następnie wybierz pozycję **Utwórz**.
+1. W oknie **Konfigurowanie nowego projektu** wpisz lub wprowadź *WhatIsYourName* w polu **Nazwa projektu** . Następnie wybierz przycisk **dalej**.
 
-   ![w oknie "Konfigurowanie nowego projektu" nazwij projekt "WhatIsYourName"](./media/vs-2019/vb-name-your-project-whatname.png)
+   :::image type="content" source="./media/vs-2019/vb-name-your-project-whatname.png" alt-text="w oknie &quot;Konfigurowanie nowego projektu&quot; nazwij projekt &quot;WhatIsYourName&quot;":::
+
+1. W oknie **Informacje dodatkowe** należy wybrać **platformę .NET Core 3,1** dla platformy docelowej. W przeciwnym razie wybierz pozycję **.NET Core 3,1**. Następnie wybierz pozycję **Utwórz**.
+
+   :::image type="content" source="./media/vs-2019/vb-target-framework.png" alt-text="W oknie &quot;dodatkowe informacje&quot; Upewnij się, że wybrano opcję .NET Core 3,1":::
 
    Program Visual Studio otwiera nowy projekt.
 
@@ -208,11 +212,13 @@ Utwórzmy aplikację, która wyświetli komunikat z prośbą o Twoją nazwę, a 
 
 1. W oknie uruchamiania wybierz pozycję **Utwórz nowy projekt**. 
 
-1. W oknie **Tworzenie nowego projektu** w polu wyszukiwania wpisz lub wpisz *Console* . Następnie wybierz **Visual Basic** z listy język, a następnie wybierz pozycję **Windows** z listy platform. 
+1. W oknie **Tworzenie nowego projektu** wybierz **Visual Basic** z listy język. Następnie z listy typów projektów wybierz pozycję **Windows** z listy platform i **konsoli** .
 
-1. Po zastosowaniu filtrów języka i platformy wybierz szablon **Aplikacja konsolowa (.NET Core)** , a następnie wybierz przycisk **dalej**.
+1. Po zastosowaniu filtrów języka, platformy i typu projektu wybierz szablon **Aplikacja konsolowa** , a następnie wybierz **dalej**.
 
-   Następnie w oknie **Konfigurowanie nowego projektu** wpisz lub wprowadź *CalculateThis* w polu **Nazwa projektu** . Następnie wybierz pozycję **Utwórz**.
+   Następnie w oknie **Konfigurowanie nowego projektu** wpisz lub wprowadź *CalculateThis* w polu **Nazwa projektu** . Następnie wybierz przycisk **dalej**.
+
+1. W oknie **Informacje dodatkowe** należy wybrać **platformę .NET Core 3,1** dla platformy docelowej. W przeciwnym razie wybierz pozycję **.NET Core 3,1**. Następnie wybierz pozycję **Utwórz**.
 
 1. Wprowadź następujący kod między `Module Program` wierszem a `End Module` wierszem:
 
@@ -255,7 +261,7 @@ Program Visual Studio to zintegrowany pakiet programistyczny narzędzi do tworze
 
 ### <a name="what-is-a-console-app"></a>Co to jest Aplikacja konsolowa?
 
-Aplikacja konsolowa pobiera dane wejściowe i wyświetla dane wyjściowe w oknie wiersza polecenia, vel Konsola programu.
+Aplikacja konsolowa pobiera dane wejściowe i wyświetla dane wyjściowe w oknie wiersza polecenia, nazywane również konsolą.
 
 ### <a name="what-is-net-core"></a>Co to jest .NET Core?
 

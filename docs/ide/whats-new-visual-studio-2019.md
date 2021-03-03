@@ -2,7 +2,7 @@
 title: Co nowego w programie Visual Studio 2019
 titleSuffix: ''
 description: Dowiedz się więcej o nowych funkcjach w programie Visual Studio 2019.
-ms.date: 11/10/2020
+ms.date: 03/02/2021
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 41ccdd8ef7285ba0e5fa211b6b9f76fead5a2f3c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e3dc790310fdff71539c6cae354a0170ec36e65e
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960575"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684023"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Co nowego w programie Visual Studio 2019
 
-**Zaktualizowano w [wersji 16,8](/visualstudio/releases/2019/release-notes/)**
+**Zaktualizowano w [wersji 16,9](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
 >[Pobierz program Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
@@ -245,8 +245,8 @@ Dlaczego warto wysłać opinię do zespołu programu Visual Studio? Ze względu 
 * [Informacje o wersji programu Visual Studio 2019 dla komputerów Mac](/visualstudio/releasenotes/vs2019-mac-relnotes/)
 * [Co nowego w zestawie SDK programu Visual Studio 2019](../extensibility/whats-new-visual-studio-2019-sdk.md)
 * [Co nowego w języku C++ w programie Visual Studio](/cpp/overview/what-s-new-for-visual-cpp-in-visual-studio/)
-* [Co nowego w języku C# 8,0](/dotnet/csharp/whats-new/csharp-8/)
-* [Co nowego w programie .NET Core 3.1](/dotnet/core/whats-new/dotnet-core-3-1/)
+* [Co nowego w języku C# 9,0](/dotnet/csharp/whats-new/csharp-9)
+* [Co nowego w wersji .NET 5](/dotnet/core/dotnet-five)
 * [Co nowego w .NET Framework](/dotnet/framework/whats-new/)
 * [Konferencja Build firmy Microsoft](https://www.microsoft.com/build)
 * [Konferencja Microsoft Ignite](https://www.microsoft.com/ignite)

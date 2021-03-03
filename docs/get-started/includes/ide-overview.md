@@ -1,17 +1,17 @@
 ---
-ms.date: 09/22/2020
+ms.date: 03/02/2021
 ms.technology: vs-ide-general
 ms.custom: vs-get-started
 ms.author: tglee
 author: TerryGLee
 manager: jmartens
 ms.topic: include
-ms.openlocfilehash: afc0466e93b8bf2a71db42c08cd2e043107e3bc5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4e36fe11b5eb604a9b109432047da9a3c26df414
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925000"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101750005"
 ---
 *Zintegrowane środowisko programistyczne* programu Visual Studio to twórczy pad do uruchamiania, który umożliwia edytowanie, debugowanie i kompilowanie kodu, a następnie publikowanie aplikacji. Zintegrowane środowisko programistyczne (IDE) to program bogaty w funkcje, który może być używany w wielu aspektach tworzenia oprogramowania. W porównaniu z standardowym edytorem i debugerem, który środowisk IDE zapewnia, program Visual Studio obejmuje kompilatory, narzędzia do uzupełniania kodu, graficzne projektanci i wiele innych funkcji, które ułatwiają proces tworzenia oprogramowania.
 
@@ -237,17 +237,23 @@ Szczegółowemy i utworzysz prosty program.
 
 1. Wybierz pozycję **Utwórz nowy projekt**.
 
-   ![Okno uruchamiania programu Visual Studio — Tworzenie nowego projektu](../media/vs-2019/start-window-create-new-project.png)
+    :::image type="content" source="../media/vs-2019/start-window-create-new-project.png" alt-text="Zrzut ekranu przedstawiający okno &quot;Tworzenie nowego projektu&quot; w programie Visual Studio 2019.":::
 
-   Zostanie otwarte okno **Utwórz nowy projekt** zawierające kilka *szablonów* projektów. Szablon zawiera podstawowe pliki i ustawienia, które są zbędne dla danego typu projektu.
+   Zostanie otwarte okno **Utwórz nowy projekt** zawierające kilka *szablonów* projektów. Szablon zawiera podstawowe pliki i ustawienia wymagane dla danego typu projektu.
 
-1. Aby znaleźć żądany szablon, wpisz lub wprowadź w polu wyszukiwania **konsolę .NET Core** . Lista dostępnych szablonów jest automatycznie filtrowana na podstawie wprowadzonych słów kluczowych. Można bardziej filtrować wyniki szablonu, wybierając **C#** z listy rozwijanej **Język** . Wybierz szablon **Aplikacja konsolowa (.NET Core)** , a następnie wybierz przycisk **dalej**.
+1. Aby znaleźć żądany szablon, wpisz lub wprowadź w polu wyszukiwania **konsolę .NET Core** . Lista dostępnych szablonów jest automatycznie filtrowana na podstawie wprowadzonych słów kluczowych. Można dodatkowo filtrować wyniki szablonu, wybierając **C#** z listy rozwijanej **wszystkie język** , **okna** z listy **wszystkie platformy** **, a następnie** z listy **wszystkie typy projektów** .
 
-    ![Utworzenie nowego projektu w Visual Studio](../media/vs-2019/create-new-project.png)
+    Wybierz szablon **Aplikacja konsolowa** , a następnie kliknij przycisk **dalej**.
 
-1. W oknie **Konfigurowanie nowego projektu** wprowadź **HelloWorld** w polu **Nazwa projektu** , opcjonalnie Zmień lokalizację katalogu dla plików projektu, a następnie wybierz pozycję **Utwórz**.
+    :::image type="content" source="../media/vs-2019/create-new-project.png" alt-text="Zrzut ekranu przedstawiający okno &quot;Tworzenie nowego projektu&quot; w programie Visual Studio 2019, w którym wybierasz szablon, którego chcesz użyć.":::
 
-   ![Konfigurowanie nowego projektu w programie Visual Studio](../media/vs-2019/configure-new-project.png)
+1. W oknie **Konfigurowanie nowego projektu** wprowadź **HelloWorld** w polu **Nazwa projektu** , opcjonalnie Zmień lokalizację katalogu dla plików projektu (domyślne ustawienia regionalne to `C:\Users\<name>\source\repos` ), a następnie kliknij przycisk **dalej**.
+
+    :::image type="content" source="../media/vs-2019/configure-new-project.png" alt-text="Zrzut ekranu przedstawiający okno &quot;Konfigurowanie nowego projektu&quot; w programie Visual Studio 2019, w którym wprowadzana jest nazwa projektu.":::
+
+1. W oknie **Informacje dodatkowe** Sprawdź, czy program **.NET Core 3,1** pojawia się w menu rozwijanym **platforma docelowa** , a następnie kliknij przycisk **Utwórz**.
+
+    :::image type="content" source="../media/vs-2019/create-project-additional-info.png" alt-text="Zrzut ekranu przedstawiający okno &quot;dodatkowe informacje&quot; w programie Visual Studio 2019, w którym wybierasz żądaną wersję platformy .NET Core.":::
 
    Program Visual Studio tworzy projekt. Jest to prosta aplikacja "Hello world", która wywołuje <xref:System.Console.WriteLine?displayProperty=nameWithType> metodę w celu wyświetlenia ciągu literału "Hello World!" w oknie Konsola (dane wyjściowe programu).
 

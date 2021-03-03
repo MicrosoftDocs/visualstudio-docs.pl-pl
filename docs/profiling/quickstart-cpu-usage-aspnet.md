@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: 7170983732ff1350061629e1e8aa4ec88fad3fa1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fa8601b6fe625c5cab2aa1f5de8a69f2d550ee2a
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952840"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683627"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet-core"></a>Szybki Start: analizowanie danych użycia procesora CPU w programie Visual Studio (ASP.NET Core)
 
@@ -42,24 +42,17 @@ System Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania
    W oknie dialogowym, które się pojawi, wybierz **MVC** w środkowym okienku, a następnie kliknij przycisk **OK**.
    ::: moniker-end
    ::: moniker range="vs-2019"
-   Jeśli okno startowe nie jest otwarte, wybierz pozycję **plik** > **startowy**.
+   W programie Visual Studio 2019 wybierz pozycję **Utwórz nowy projekt** w oknie uruchamiania. Jeśli okno startowe nie jest otwarte, wybierz polecenie  >  **okno startowe** plików, a następnie wybierz polecenie **Utwórz nowy projekt**.
 
-   W oknie uruchamiania wybierz pozycję **Utwórz nowy projekt**.
+   W polu wyszukiwania wpisz ciąg **aplikacja sieci Web** , wybierz pozycję **C#** jako język, wybierz pozycję **ASP.NET Core aplikacja internetowa (Model-View-Controller)**, a następnie wybierz przycisk **dalej**. Na następnym ekranie Nazwij projekt *MyProfilingApp_MVC*, a następnie wybierz **dalej**.
 
-   W oknie **Tworzenie nowego projektu** wprowadź lub wpisz *ASP.NET* w polu wyszukiwania. Następnie wybierz pozycję **C#** z listy język, a następnie wybierz pozycję **Windows** z listy platform.
-
-   Po zastosowaniu filtrów języka i platformy wybierz szablon **aplikacja sieci Web ASP.NET (.NET Core)** , a następnie wybierz przycisk **dalej**.
+   Wybierz zalecaną platformę docelową (.NET Core 3,1) lub .NET 5, a następnie wybierz pozycję **Utwórz**.
 
    > [!NOTE]
    > Jeśli szablon **aplikacji sieci Web ASP.NET (.NET Core)** nie jest widoczny, można go zainstalować za pomocą okna **Utwórz nowy projekt** . W obszarze **nie można znaleźć tego, czego szukasz?** komunikat wybierz łącze **Zainstaluj więcej narzędzi i funkcji** . Następnie w Instalator programu Visual Studio wybierz obciążenie **ASP.NET i programowanie dla sieci Web** .
-
-   W oknie **Konfigurowanie nowego projektu** wpisz lub wprowadź *MyProfilingApp_MVC* w polu **Nazwa projektu** . Następnie wybierz pozycję **Utwórz**.
-
-   W wyświetlonym oknie wybierz pozycję **aplikacja sieci Web (Model-View-Controller)** , a następnie wybierz pozycję **Utwórz**.
-
    ::: moniker-end
 
-   Program Visual Studio otwiera nowy projekt.
+   Program Visual Studio tworzy i otwiera nowy projekt.
 
 1. W Eksplorator rozwiązań kliknij prawym przyciskiem myszy folder modele i wybierz polecenie **Dodaj**  >  **klasę**.
 

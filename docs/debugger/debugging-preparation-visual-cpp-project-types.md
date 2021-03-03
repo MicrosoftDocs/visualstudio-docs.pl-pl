@@ -5,9 +5,6 @@ ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
-- CSharp
-- VB
-- FSharp
 - C++
 helpviewer_keywords:
 - project templates, debugging
@@ -20,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fcd4375b475106b0428f21057f5b44fc8bee8700
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d91d18208a2d05fc4d4b60da98e3e3f8e3c0c835
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99872431"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683045"
 ---
 # <a name="debugging-preparation-c-project-types"></a>Przygotowanie debugowania: typy projektów C++
 W tej sekcji opisano sposób debugowania podstawowych typów projektów utworzonych przez [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] Szablony projektu.
@@ -40,8 +37,6 @@ W tej sekcji opisano sposób debugowania podstawowych typów projektów utworzon
 - [Aby debugować aplikację systemu Win32 w języku C lub C++](#BKMK_To_debug_a_C_or_C___Win32_application)
 
 - [Aby ręcznie ustawić konfigurację debugowania](#BKMK_To_manually_set_a_Debug_configuration)
-
-  [Aplikacje Windows Forms (.NET)](#BKMK_Windows_Forms_Applications___NET_)
 
 ## <a name="recommended-property-settings"></a><a name="BKMK_Recommended_Property_Settings"></a> Zalecane ustawienia właściwości
  Niektóre właściwości powinny być ustawiane w taki sam sposób dla wszystkich niezarządzanych scenariuszy debugowania. W poniższych tabelach są wyświetlane zalecane ustawienia właściwości. Ustawienia niewymienione w tym miejscu mogą się różnić w różnych niezarządzanych typach projektów. Aby uzyskać więcej informacji, zobacz [Ustawienia projektu dla konfiguracji debugowania języka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).
@@ -97,22 +92,8 @@ W tej sekcji opisano sposób debugowania podstawowych typów projektów utworzon
 
    [W tym temacie](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)
 
-## <a name="windows-forms-applications-net"></a><a name="BKMK_Windows_Forms_Applications___NET_"></a> Aplikacje Windows Forms (.NET)
- Szablon **aplikacji Windows Forms (.NET)** tworzy [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] aplikację Windows Forms. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie projektu aplikacji systemu Windows](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).
-
- Debugowanie tego typu aplikacji w programie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jest podobne do programu w zarządzanych aplikacjach Windows Forms.
-
- Podczas tworzenia projektu Windows Forms przy użyciu szablonu projektu program [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatycznie tworzy wymagane ustawienia dla konfiguracji debugowania i wydania. W razie potrzeby możesz zmienić te ustawienia w oknie dialogowym **\<project name> strony właściwości** . Aby uzyskać więcej informacji, zobacz [debugowanie i wydawanie konfiguracji](../debugger/how-to-set-debug-and-release-configurations.md).
-
- Aby uzyskać więcej informacji, zobacz [Ustawienia projektu dla konfiguracji debugowania języka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).
-
- Innym sposobem na Debugowanie aplikacji Windows Forms jest uruchomienie aplikacji poza programem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] i dołączenie do niej. Aby uzyskać więcej informacji, zobacz [dołączanie do działającego programu lub wielu programów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
-
- [W tym temacie](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)
-
 ## <a name="see-also"></a>Zobacz też
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)
 - [Ustawienia projektu dla konfiguracji debugowania języka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Dołączanie do uruchomionego programu lub wielu programów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
 - [Konfiguracje debugowania i wydania](../debugger/how-to-set-debug-and-release-configurations.md)
-- [Instrukcje: Tworzenie projektu aplikacji systemu Windows](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dbac3de879937435e9f2e1dc5ab4fad0e7358fc9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cbde477e076203625e35ebf0109ed344679563f8
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925391"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683318"
 ---
 # <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>Przewodnik: debugowanie aplikacji wielowątkowej przy użyciu okna wątków (C#, Visual Basic, C++)
 
@@ -44,12 +44,14 @@ Utwórz następujący projekt aplikacji wielowątkowych do użycia w tym samoucz
 
    W oknie **Tworzenie nowego projektu** w polu wyszukiwania wpisz lub wpisz *Console* . Następnie wybierz pozycję **C#** lub **C++** z listy język, a następnie wybierz pozycję **Windows** z listy platform. 
 
-   Po zastosowaniu filtrów języka i platformy wybierz **aplikację konsolową (.NET Core)** lub, dla języka C++, szablon **aplikacji konsolowej** , a następnie wybierz **dalej**.
+   Po zastosowaniu filtrów języka i platformy wybierz **aplikację konsolową** dla platformy .NET Core lub dla języka C++, a następnie wybierz przycisk **dalej**.
 
    > [!NOTE]
-   > Jeśli nie widzisz poprawnego szablonu, przejdź do pozycji **Narzędzia**  >  **Pobierz narzędzia i funkcje...**, co spowoduje otwarcie Instalator programu Visual Studio. Wybierz pozycję **Programowanie aplikacji klasycznych dla platformy .NET** lub **Programowanie aplikacji klasycznych w języku C++** , a następnie wybierz polecenie **Modyfikuj**.
+   > Jeśli nie widzisz poprawnego szablonu, przejdź do pozycji **Narzędzia**  >  **Pobierz narzędzia i funkcje...**, co spowoduje otwarcie Instalator programu Visual Studio. Wybierz pozycję **Programowanie dla wielu platform w środowisku .NET Core** lub **Programowanie aplikacji klasycznych w języku C++** , a następnie wybierz polecenie **Modyfikuj**.
 
-   W oknie **Konfigurowanie nowego projektu** wpisz lub wprowadź *MyThreadWalkthroughApp* w polu **Nazwa projektu** . Następnie wybierz pozycję **Utwórz**.
+   W oknie **Konfigurowanie nowego projektu** wpisz lub wprowadź *MyThreadWalkthroughApp* w polu **Nazwa projektu** . Następnie wybierz pozycję **dalej** lub **Utwórz**, zależnie od opcji.
+
+   W przypadku platformy .NET Core wybierz zalecaną platformę docelową (.NET Core 3,1) lub .NET 5, a następnie wybierz pozycję **Utwórz**.
 
    ::: moniker-end
    ::: moniker range="vs-2017"
@@ -58,7 +60,7 @@ Utwórz następujący projekt aplikacji wielowątkowych do użycia w tym samoucz
    - W przypadku aplikacji C# w obszarze **Visual C#** wybierz pozycję **Windows Desktop**, a następnie w środkowym okienku wybierz pozycję **aplikacja konsoli (.NET Framework)**.
    - W przypadku aplikacji w języku C++ w obszarze **Visual C++** wybierz pozycję **Windows Desktop**, a następnie wybierz pozycję **Aplikacja konsolowa systemu Windows**.
 
-   Jeśli nie widzisz **aplikacji konsolowej (.NET Core)** lub, dla języka C++, szablonu projektu **aplikacji konsoli** , przejdź do pozycji **Narzędzia**  >  **Pobierz narzędzia i funkcje...**, co spowoduje otwarcie Instalator programu Visual Studio. Wybierz pozycję **Programowanie aplikacji klasycznych dla platformy .NET** lub **Programowanie aplikacji klasycznych w języku C++** , a następnie wybierz polecenie **Modyfikuj**.
+   Jeśli nie widzisz **aplikacji konsolowej (.NET Framework)** lub, w przypadku języka C++, szablonu projektu **aplikacji konsoli** , przejdź do pozycji **Narzędzia**  >  **Pobierz narzędzia i funkcje...**, co spowoduje otwarcie Instalator programu Visual Studio. Wybierz pozycję **Programowanie aplikacji klasycznych dla platformy .NET** lub **Programowanie aplikacji klasycznych w języku C++** , a następnie wybierz polecenie **Modyfikuj**.
 
    Następnie wpisz nazwę, na przykład *MyThreadWalkthroughApp* , i kliknij przycisk **OK**.
 
@@ -147,7 +149,7 @@ Wybierz ikonę flagi, aby zmienić stan wątku na oflagowane lub nieoflagowane, 
 
 Możesz również kliknąć prawym przyciskiem myszy wiersz i wybrać **flagę**, Usuń **flagę** lub usunąć **flagę ze wszystkich wątków** z menu skrótów.
 
-Na pasku narzędzi okna **wątki** jest również **wyświetlany przycisk Pokaż tylko Oflagowane wątki** , który jest righthand jedną z dwóch ikon flag. Działa tak samo jak przycisk na pasku narzędzi **lokalizacji debugowania** , a każdy przycisk steruje wyświetlaniem w obu lokalizacjach.
+Na pasku narzędzi okna **wątki** jest również **wyświetlany przycisk Pokaż tylko Oflagowane wątki** , który jest prawą ręką jedną z dwóch ikon flag. Działa tak samo jak przycisk na pasku narzędzi **lokalizacji debugowania** , a każdy przycisk steruje wyświetlaniem w obu lokalizacjach.
 
 ### <a name="other-threads-window-features"></a>Inne funkcje okna wątków
 

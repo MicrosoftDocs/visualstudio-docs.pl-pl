@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 582a412dbcac043e4a77c1508d385cc8caa4c64c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7fc8eeccdb020d07ff48965d9eb3d5df1dafa7da
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861650"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683550"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c-visual-basic"></a>Szybki Start: analizowanie danych użycia procesora CPU w programie Visual Studio (C#, Visual Basic)
 
@@ -45,12 +45,14 @@ System Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania
 
    W oknie **Tworzenie nowego projektu** w polu wyszukiwania wpisz lub wpisz *Console* . Następnie wybierz pozycję **C#** lub **Visual Basic** z listy język, a następnie wybierz pozycję **Windows** z listy platform.
 
-   Po zastosowaniu filtrów języka i platformy wybierz szablon **Aplikacja konsolowa (.NET Core)** , a następnie wybierz przycisk **dalej**.
+   Po zastosowaniu filtrów języka i platformy wybierz szablon **aplikacja konsoli** dla platformy .NET Core, a następnie wybierz przycisk **dalej**.
 
    > [!NOTE]
-   > Jeśli nie widzisz szablonu **Aplikacja konsolowa (.NET Core)** , możesz go zainstalować z okna **Utwórz nowy projekt** . W obszarze **nie można znaleźć tego, czego szukasz?** komunikat wybierz łącze **Zainstaluj więcej narzędzi i funkcji** . Następnie w Instalator programu Visual Studio wybierz obciążenie dla **wielu platform platformy .NET Core** .
+   > Jeśli szablon **aplikacji konsolowej** nie jest wyświetlany, można go zainstalować za pomocą okna **Utwórz nowy projekt** . W obszarze **nie można znaleźć tego, czego szukasz?** komunikat wybierz łącze **Zainstaluj więcej narzędzi i funkcji** . Następnie w Instalator programu Visual Studio wybierz obciążenie dla **wielu platform platformy .NET Core** .
 
-   W oknie **Konfigurowanie nowego projektu** wpisz lub wprowadź *MyProfilerApp* w polu **Nazwa projektu** . Następnie wybierz pozycję **Utwórz**.
+   W oknie **Konfigurowanie nowego projektu** wpisz lub wprowadź *MyProfilerApp* w polu **Nazwa projektu** . Następnie wybierz przycisk **dalej**.
+
+   Wybierz zalecaną platformę docelową (.NET Core 3,1) lub .NET 5, a następnie wybierz pozycję **Utwórz**.
 
    ::: moniker-end
 

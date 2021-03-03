@@ -15,12 +15,12 @@ manager: jmartens
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: 264744d7fe39c77da625c778d1bfea51f55e1f2d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a6ab205b7f651f8bb5954bee4998602c79fd78e7
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948013"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683920"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Przewodnik: Tworzenie i uruchamianie testów jednostkowych dla kodu zarządzanego
 
@@ -55,9 +55,14 @@ Ten artykuł przeprowadzi Cię przez proces tworzenia, uruchamiania i dostosowyw
 
 2. W oknie uruchamiania wybierz pozycję **Utwórz nowy projekt**.
 
-3. Wyszukaj i wybierz szablon projektu **Aplikacja konsolowa w języku C# (.NET Core)** , a następnie kliknij przycisk **dalej**.
+3. Wyszukaj i wybierz szablon projektu **aplikacji konsolowej** C# dla platformy .NET Core, a następnie kliknij przycisk **dalej**.
 
-4. Nadaj nazwę **bankowi** projektu, a następnie kliknij przycisk **Utwórz**.
+   > [!NOTE]
+   > Jeśli szablon **aplikacji konsolowej** nie jest wyświetlany, można go zainstalować za pomocą okna **Utwórz nowy projekt** . W obszarze **nie można znaleźć tego, czego szukasz?** komunikat wybierz łącze **Zainstaluj więcej narzędzi i funkcji** . Następnie w Instalator programu Visual Studio wybierz obciążenie dla **wielu platform platformy .NET Core** .
+
+4. Nadaj nazwę **bankowi** projektu, a następnie kliknij przycisk **dalej**.
+
+   Wybierz zalecaną platformę docelową (.NET Core 3,1) lub .NET 5, a następnie wybierz pozycję **Utwórz**.
 
    Projekt banku zostanie utworzony i wyświetlony w **Eksplorator rozwiązań** z plikiem *program.cs* otwartym w edytorze kodu.
 
@@ -163,11 +168,14 @@ Masz teraz projekt z metodami, które możesz przetestować. W tym artykule test
 
 ::: moniker range=">=vs-2019"
 
-2. Wyszukaj i wybierz szablon projektu C# **MSTest test Project (.NET Core)** , a następnie kliknij przycisk **dalej**.
+2. Wpisz **test jednostkowy** w polu wyszukiwania, wybierz **C#** jako język, a następnie wybierz **projekt test jednostkowy** c# dla szablonu .NET Core, a następnie kliknij przycisk **dalej**.
 
-3. Nazwij projekt **BankTests**.
+   > [!NOTE]
+   > Począwszy od programu Visual Studio 2019 w wersji 16,9, nazwa szablonu projektu MSTest została zmieniona z projektu **testów jednostkowych MSTest (.NET Core)** na **projekt testu jednostkowego**.
 
-4. Kliknij pozycję **Utwórz**.
+3. Nadaj projektowi nazwę **BankTests** i kliknij przycisk **dalej**.
+
+4. Wybierz zalecaną platformę docelową (.NET Core 3,1) lub .NET 5, a następnie wybierz pozycję **Utwórz**.
 
    Projekt **BankTests** jest dodawany do rozwiązania **bankowego** .
 

@@ -2,7 +2,7 @@
 title: 'Hello world aplikacji z WPF w języku C #'
 description: Utwórz prostą aplikację platformy .NET dla systemu Windows w języku C# za pomocą programu Visual Studio przy użyciu struktury interfejsu użytkownika Windows Presentation Foundation (WPF).
 ms.custom: seodec18, get-started
-ms.date: 08/09/2019
+ms.date: 02/10/2021
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: tutorial
@@ -14,12 +14,12 @@ ms.author: ornella
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4384a724b57de565e03637057e16fc26e8213e5e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1f3232ad0a8b7cc34abbe6d49c05944c066226da
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924878"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101682885"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Samouczek: tworzenie prostej aplikacji za pomocą języka C\#
 
@@ -80,16 +80,17 @@ Podczas tworzenia aplikacji w programie Visual Studio, należy najpierw utworzy�
 
    ![Wyświetl okno "Tworzenie nowego projektu"](../../get-started/media/vs-2019/start-window-create-new-project.png "Zrzut ekranu przedstawiający okno "Tworzenie nowego projektu"")
 
-1. Na ekranie **Tworzenie nowego projektu** Wyszukaj ciąg "WPF", wybierz pozycję **Aplikacja WPF (.NET Core)**, a następnie wybierz przycisk **dalej**.
+1. Na ekranie **Tworzenie nowego projektu** Wyszukaj ciąg "WPF", wybierz pozycję **Aplikacja WPF**, a następnie wybierz przycisk **dalej**.
 
-   ![Szablon aplikacji WPF w oknie dialogowym "Tworzenie nowego projektu"](media/vs-2019/exploreide-newprojectcsharp-vs2019.png "Zrzut ekranu przedstawiający szablon aplikacji WPF w oknie dialogowym "Tworzenie nowego projektu"")
+   :::image type="content" source="media/vs-2019/explore-ide-new-project-csharp-vs-2019.png" alt-text="Szablon aplikacji WPF w oknie dialogowym &quot;Tworzenie nowego projektu&quot;":::
 
-   > [!NOTE]
-   > W przypadku programu .NET Core mogą znajdować się dwa szablony pulpitu WPF, jeden dla .NET Framework i drugi. Szablon .NET Core jest dostępny w programie Visual Studio 2019 w wersji 16,3 lub nowszej. Możesz użyć jednego z nich na potrzeby tego samouczka, ale zalecamy platformę .NET Core do nowych celów programistycznych.
+1. Na następnym ekranie Nadaj projektowi nazwę, **HelloWPFApp** i wybierz **dalej**.
 
-1. Na następnym ekranie Nadaj projektowi nazwę, **HelloWPFApp** i wybierz pozycję **Utwórz**.
+   :::image type="content" source="./media/vs-2019/explore-ide-name-project.png" alt-text="Nazwij projekt &quot;HelloWPFApp&quot;":::
 
-   ![Nazwij projekt "HelloWPFApp"](./media/vs-2019/exploreide-nameproject.png "Zrzut ekranu okna, w którym nanadaj nazwę projektowi")
+1. W oknie **Informacje dodatkowe** należy wybrać **platformę .NET Core 3,1** dla platformy docelowej. W przeciwnym razie wybierz pozycję **.NET Core 3,1**. Następnie wybierz pozycję **Utwórz**.
+
+   :::image type="content" source="./media/vs-2019/wpf-target-framework.png" alt-text="W oknie &quot;dodatkowe informacje&quot; Upewnij się, że wybrano opcję .NET Core 3,1":::
 
 ::: moniker-end
 
