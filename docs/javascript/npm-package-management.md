@@ -2,7 +2,7 @@
 title: Zarządzanie pakietami npm
 description: Program Visual Studio ułatwia zarządzanie pakietami za pomocą Menedżera pakietów Node.js (npm)
 ms.custom: seodec18
-ms.date: 04/16/2020
+ms.date: 02/23/2021
 ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 26c750a11c2910a6c6f91e1207d731024af64a5f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b017495d12d654be3e11da7153310b5bcba367d5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962720"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165816"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Zarządzanie pakietami npm w programie Visual Studio
 
@@ -179,5 +179,7 @@ Zainstalowanie pakietu może potrwać kilka minut. Sprawdź postęp instalacji p
 * W przypadku projektów Node.js należy mieć zainstalowaną **Node.js obciążenie programowaniem** na potrzeby obsługi npm.
 
 * W niektórych scenariuszach Eksplorator rozwiązań mogą nie wyświetlać poprawnego stanu zainstalowanych pakietów npm z powodu znanego [tutaj](https://github.com/aspnet/Tooling/issues/479)problemu. Na przykład pakiet może być wyświetlany jako niezainstalowany podczas instalacji. W większości przypadków można zaktualizować Eksplorator rozwiązań przez usunięcie *package.jsna*, ponowne uruchomienie programu Visual Studio i ponowne dodanie *package.js* do pliku zgodnie z opisem we wcześniejszej części tego artykułu. Lub, podczas instalowania pakietów, można użyć okna danych wyjściowych npm do sprawdzenia stanu instalacji.
+
+* W niektórych scenariuszach ASP.NET Core węzeł npm w Eksplorator rozwiązań może być niewidoczny po skompilowaniu projektu. Aby ponownie wyświetlić węzeł, kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Zwolnij projekt.** Następnie kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Załaduj ponownie projekt**.
 
 * Jeśli podczas kompilowania aplikacji lub transpiling kodu TypeScript wystąpią jakieś błędy, sprawdź, czy nie ma niezgodności pakietów npm jako potencjalne źródło błędów. Aby ułatwić identyfikację błędów, Sprawdź okno danych wyjściowych npm podczas instalowania pakietów, jak opisano wcześniej w tym artykule. Na przykład jeśli co najmniej jedna wersja pakietu npm jest przestarzała i spowoduje błąd, może być konieczne zainstalowanie nowszej wersji w celu rozwiązania błędów. Aby uzyskać informacje na temat korzystania z *package.jsw* celu kontrolowania wersji pakietu npm, zobacz [package.json Configuration](../javascript/configure-packages-with-package-json.md).

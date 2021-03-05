@@ -1,4 +1,5 @@
 ---
+description: Począwszy od programu Visual Studio 2019 w wersji 16,8, można użyć narzędzia do publikowania do publikowania programu .NET Core 3,1 lub nowszego, aplikacji klasycznych systemu Windows przy użyciu technologii ClickOnce z programu Visual Studio.
 title: Wdrażanie aplikacji klasycznej systemu Windows z użyciem technologii ClickOnce
 ms.date: 10/15/2020
 ms.topic: quickstart
@@ -11,12 +12,12 @@ manager: jmartens
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a6f7c2c8d6c79270df94c100bbd4625856efa15
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d3977408f191aabc734226fd6b637fcfaaf5e9de
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934510"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165712"
 ---
 # <a name="deploy-a-net-windows-desktop-application-using-clickonce"></a>Wdrażanie aplikacji klasycznej systemu Windows z użyciem technologii ClickOnce
 

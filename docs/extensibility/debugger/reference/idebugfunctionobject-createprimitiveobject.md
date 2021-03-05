@@ -1,4 +1,5 @@
 ---
+description: Tworzy obiekt danych pierwotnych, na przykład prostą liczbę całkowitą.
 title: 'IDebugFunctionObject:: isprymitywobject | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 69ad4328d2ae94a23ebaa9fb4fd0aa0d2cff7c74
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: eed6bf305667b98e16f4a112b1196456269e5b3c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929990"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165544"
 ---
 # <a name="idebugfunctionobjectcreateprimitiveobject"></a>IDebugFunctionObject::CreatePrimitiveObject
 Tworzy obiekt danych pierwotnych, na przykład prostą liczbę całkowitą.

@@ -1,4 +1,5 @@
 ---
+description: Reprezentuje wystąpienie pola dla ogólnego typu kodu zarządzanego.
 title: IDebugGenericFieldInstance | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 06711f7112aaa528b7274867bc133368075d19ed
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1e593e3e739831ac8478a277962201d4be8f9554
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934380"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165348"
 ---
 # <a name="idebuggenericfieldinstance"></a>IDebugGenericFieldInstance
 Reprezentuje wystąpienie pola dla ogólnego typu kodu zarządzanego.

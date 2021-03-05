@@ -9,12 +9,12 @@ manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 10bfed2a9a2a0ce466e1b3276a487695d40fb580
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9d6b4dd8bd21da7fcfc4d7cde54e5f5a7926472e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964566"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165725"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurowanie testów jednostkowych przy użyciu pliku *. runsettings*
 
@@ -135,7 +135,7 @@ Plik jest wyświetlany w menu test i można go zaznaczyć lub usunąć jego zazn
 
 Aby uruchomić testy z wiersza polecenia, użyj *vstest.console.exe* i określ plik ustawień przy użyciu parametru **/Settings** .
 
-1. Otwórz [wiersz polecenia dla deweloperów](/dotnet/framework/tools/developer-command-prompt-for-vs) dla programu Visual Studio.
+1. Otwórz [wiersz polecenia dla deweloperów dla programu Visual Studio](../ide/reference/command-prompt-powershell.md).
 
 2. Wprowadź polecenie podobne do:
 
