@@ -1,4 +1,5 @@
 ---
+description: Pobiera flagę, która określa, czy funkcja ma atrybut owies) (oznacza to, że funkcja nie ma kodu prologu lub epilogu dodanego przez kompilator).
 title: 'IDiaSymbol:: get_isNaked | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c9e905cc68bb612d9a59bb1780d08561716abca8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6ec1d273ce826a87ae658f7ed22fe7680edad25d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863145"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156161"
 ---
 # <a name="idiasymbolget_isnaked"></a>IDiaSymbol::get_isNaked
 Pobiera flagę, która określa, czy funkcja ma atrybut [owies](/cpp/cpp/naked-cpp) (oznacza to, że funkcja nie ma kodu prologu lub epilogu dodanego przez kompilator).

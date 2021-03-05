@@ -1,4 +1,5 @@
 ---
+description: Pobiera flagę, która określa, czy symbol odwołuje się do kodu zarządzanego.
 title: 'IDiaSymbol:: get_managed | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: c66a98d5570628325968ba7389c87ffe0a962e98
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5e0948395876a0a52a3805e5d2059b293867a3ab
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853878"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156000"
 ---
 # <a name="idiasymbolget_managed"></a>IDiaSymbol::get_managed
 Pobiera flagę, która określa, czy symbol odwołuje się do kodu zarządzanego.

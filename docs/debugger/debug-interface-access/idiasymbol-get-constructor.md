@@ -1,4 +1,5 @@
 ---
+description: Pobiera flagę, która określa, czy typem danych zdefiniowanym przez użytkownika jest Konstruktor lub destruktor.
 title: 'IDiaSymbol:: get_constructor | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f1d2f084d0561d7d691df1f0e12f98b4604c11b1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ca2162f9da71d42308feb44b15edcca77ad269df
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854431"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156420"
 ---
 # <a name="idiasymbolget_constructor"></a>IDiaSymbol::get_constructor
 Pobiera flagę, która określa, czy typem danych zdefiniowanym przez użytkownika jest Konstruktor lub destruktor.

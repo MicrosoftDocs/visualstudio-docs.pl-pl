@@ -1,4 +1,5 @@
 ---
+description: Pobiera identyfikator typu indeksu tablicy symbolu.
 title: 'IDiaSymbol:: get_arrayIndexTypeId | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 48a3be4d7aa3d2f7fcc096c3d8c101733bd71fff
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9815f4d76d80adea96950c4d63ba46702827b8bc
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863586"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156518"
 ---
 # <a name="idiasymbolget_arrayindextypeid"></a>IDiaSymbol::get_arrayIndexTypeId
 Pobiera identyfikator typu indeksu tablicy symbolu.

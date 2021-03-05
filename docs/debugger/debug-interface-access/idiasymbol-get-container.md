@@ -1,4 +1,5 @@
 ---
+description: Ta funkcja Pobiera wskaźnik do symbolu reprezentującego element nadrzędny/kontener tego symbolu.
 title: 'IDiaSymbol:: get_container | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a1f5deb0854a10e3d8947af7ed4c78d0432c21a8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 724127e50708585613175b0f5773f231f1b33944
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854417"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156385"
 ---
 # <a name="idiasymbolget_container"></a>IDiaSymbol::get_container
 Ta funkcja Pobiera wskaźnik do symbolu reprezentującego element nadrzędny/kontener tego symbolu.

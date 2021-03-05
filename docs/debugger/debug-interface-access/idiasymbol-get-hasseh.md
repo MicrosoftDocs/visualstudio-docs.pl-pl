@@ -1,4 +1,5 @@
 ---
+description: Pobiera flagę, która określa, czy funkcja zawiera wszelką obsługę wyjątków strukturalnych (C/C++)) (na przykład bloki _try/__except).
 title: 'IDiaSymbol:: get_hasSEH | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0689490e855508314835a21e44e6cb9a02736ef4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a802a14c1c4e9b9c3b080c751d8cd512c3adf75d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863306"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156267"
 ---
 # <a name="idiasymbolget_hasseh"></a>IDiaSymbol::get_hasSEH
 Pobiera flagę, która określa, czy funkcja zawiera wszelką [obsługę wyjątków strukturalnych (C/C++)](/cpp/cpp/structured-exception-handling-c-cpp) (na przykład bloki __try/ \_ _Except).

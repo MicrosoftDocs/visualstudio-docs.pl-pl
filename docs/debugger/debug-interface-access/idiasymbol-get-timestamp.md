@@ -1,4 +1,5 @@
 ---
+description: Pobiera sygnaturę czasową źródłowego pliku wykonywalnego.
 title: 'IDiaSymbol:: get_timeStamp | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 43556164d3b3713f827797c0b5b8325b67299059
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 652956c4a49d76beeaa5de2dbb607e1ac80f61b9
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862592"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155643"
 ---
 # <a name="idiasymbolget_timestamp"></a>IDiaSymbol::get_timeStamp
 Pobiera sygnaturę czasową źródłowego pliku wykonywalnego.

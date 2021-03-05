@@ -1,4 +1,5 @@
 ---
+description: 'IDiaSymbol:: findInlineeLinesByVA Pobiera wyliczenie, które pozwala klientowi na wykonywanie iteracji przez informacje o numerze wiersza wszystkich funkcji, które są wbudowane, bezpośrednio lub pośrednio, w tym symbolu w ramach określonego adresu wirtualnego (VA).'
 title: 'IDiaSymbol:: findInlineeLinesByVA | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c3dfb222108d2a531e83673ed2fe7f23c5d619f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 24b0eeb503e49f4fd9cda3c9cb7404e712e3c626
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854642"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156707"
 ---
 # <a name="idiasymbolfindinlineelinesbyva"></a>IDiaSymbol::findInlineeLinesByVA
 Pobiera wyliczenie, które umożliwia klientowi przechodzenie do kolejnych informacji o numerze wiersza wszystkich funkcji, które są wbudowane, bezpośrednio lub pośrednio, w tym symbolu w określonym adresie wirtualnym (VA).

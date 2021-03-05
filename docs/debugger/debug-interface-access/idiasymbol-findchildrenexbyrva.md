@@ -1,4 +1,5 @@
 ---
+description: Pobiera elementy podrzędne symbolu, które są prawidłowe w określonym względnym adresie wirtualnym (RVA).
 title: 'IDiaSymbol:: findChildrenExByRVA | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b2ef64d288bdb8e6e5a7cf8befa1f6d7c90ecf0e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0a888c29663e4d5dc9e487c9d6df283c0c13cfbf
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863705"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156763"
 ---
 # <a name="idiasymbolfindchildrenexbyrva"></a>IDiaSymbol::findChildrenExByRVA
 Pobiera elementy podrzędne symbolu, które są prawidłowe w określonym względnym adresie wirtualnym (RVA).

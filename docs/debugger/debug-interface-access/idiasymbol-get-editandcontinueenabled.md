@@ -1,4 +1,5 @@
 ---
+description: Pobiera flagę wskazującą, czy moduł został skompilowany przy użyciu przełącznika kompilatora/Z7,/Zi,/ZI (Debug Information Format)).
 title: 'IDiaSymbol:: get_editAndContinueEnabled | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4168ab7ba3351dc8abe5f9c781fccea881fb7df0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ead107b051dd898b549ee25f800a8b8d2e83973a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854354"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156350"
 ---
 # <a name="idiasymbolget_editandcontinueenabled"></a>IDiaSymbol::get_editAndContinueEnabled
 Pobiera flagę wskazującą, czy moduł został skompilowany przy użyciu przełącznika kompilatora [/Z7,/Zi,/ZI (Debug Information Format)](/cpp/build/reference/z7-zi-zi-debug-information-format) .

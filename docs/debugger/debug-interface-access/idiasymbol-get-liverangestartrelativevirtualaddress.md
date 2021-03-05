@@ -1,4 +1,5 @@
 ---
+description: Zwraca początek zakresu adresów, w którym lokalny symbol jest prawidłowy.
 title: 'IDiaSymbol:: get_liveRangeStartRelativeVirtualAddress | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 38b8d66146b840cabe457784a072d55459ffa646
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 39ee479721a7168aae5504b58495cfb536f5b38a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853927"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156042"
 ---
 # <a name="idiasymbolget_liverangestartrelativevirtualaddress"></a>IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
 Zwraca początek zakresu adresów, w którym lokalny symbol jest prawidłowy.

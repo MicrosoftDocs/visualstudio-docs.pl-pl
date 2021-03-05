@@ -1,4 +1,5 @@
 ---
+description: Pobiera identyfikator symbolu kształtu tabeli wirtualnej symbolu.
 title: 'IDiaSymbol:: get_virtualTableShapeId | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: af945892bfc99e86e30457084481c8675804ffad
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 195503d4d44062d7d1e60c907d70dac4e9264e37
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862431"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155503"
 ---
 # <a name="idiasymbolget_virtualtableshapeid"></a>IDiaSymbol::get_virtualTableShapeId
 Pobiera identyfikator symbolu kształtu tabeli wirtualnej symbolu.
