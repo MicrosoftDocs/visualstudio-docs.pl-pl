@@ -1,4 +1,5 @@
 ---
+description: Resetuje Wyliczenie do pierwszego elementu FRAMEINFO.
 title: 'IEnumDebugFrameInfo2:: Reset | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3c15a5bd7db1def82c5ae7f654f19e76dd524540
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 01a7a2be3986798e087e4bc4096be2b8ce1454ad
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956311"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226439"
 ---
 # <a name="ienumdebugframeinfo2reset"></a>IEnumDebugFrameInfo2::Reset
 Resetuje Wyliczenie do pierwszego elementu.

@@ -1,4 +1,5 @@
 ---
+description: Pomija określoną liczbę elementów w wyliczeniu ścieżek kodu.
 title: 'IEnumCodePaths2:: Skip | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 75b5e75362330def308bc3b0b836d22807aea66a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c05084efe0c4e1fa119b0e76978c4094b87a0d1f
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912731"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225152"
 ---
 # <a name="ienumcodepaths2skip"></a>IEnumCodePaths2::Skip
 Pomija określoną liczbę elementów.

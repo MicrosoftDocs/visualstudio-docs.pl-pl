@@ -1,4 +1,5 @@
 ---
+description: Pobiera informacje o komputerze, na którym działa debuger.
 title: 'IDebugWindowsComputerPort2:: GetComputerInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d0292a520b414c2ca96cb9077af938d692dd57bb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 279de593e79629546f0a3a10fe8e329b4b6ec6af
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965619"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102227323"
 ---
 # <a name="idebugwindowscomputerport2getcomputerinfo"></a>IDebugWindowsComputerPort2::GetComputerInfo
 Pobiera informacje o komputerze, na którym działa debuger.

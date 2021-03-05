@@ -2,7 +2,7 @@
 title: Rozwiązywanie problemów i Tworzenie dzienników dla programu MSBuild
 description: Dowiedz się, jak można zdiagnozować problemy z kompilacją w projekcie programu Visual Studio i w razie potrzeby utworzyć dziennik do wysłania do firmy Microsoft w celu zbadania problemu.
 ms.custom: SEO-VS-2020
-ms.date: 06/27/2019
+ms.date: 02/08/2021
 ms.technology: vs-ide-compile
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -17,12 +17,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Generate build logs for msbuild projects to collect helpful information when troubleshooting issues.
-ms.openlocfilehash: d9308bff68a5a5377c025bba5861ac344dcb0326
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3496eb5a0e8f699a994037ccc853a76e4f93e4ee
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880492"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225218"
 ---
 # <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>Rozwiązywanie problemów i Tworzenie dzienników dla programu MSBuild
 
@@ -99,22 +99,41 @@ W przypadku kompilowania w środowisku IDE programu Visual Studio (ze szczegół
 1>Project is not up-to-date: build input 'f:\test\project1\project1\project1.h' was modified after the last build finished.
 ```
 
-## <a name="create-a-binary-msbuild-log"></a>Tworzenie binarnego dziennika programu MSBuild
+## <a name="create-a-binary-msbuild-log-at-the-command-prompt"></a>Utwórz binarny dziennik programu MSBuild w wierszu polecenia
 
 1. Otwórz wiersz polecenia dla deweloperów dla używanej wersji programu Visual Studio
+
 1. W wierszu polecenia Uruchom jedno z następujących poleceń. (Należy pamiętać, aby użyć rzeczywistego projektu i wartości konfiguracji):
 
-    ```cmd
-    Msbuild /p:Configuration="MyConfiguration";Platform="x86" /bl MySolution.sln
-    ```
+   ```cmd
+   Msbuild /p:Configuration="MyConfiguration";Platform="x86" /bl MySolution.sln
+   ```
 
-    lub
+   lub
 
-    ```cmd
-    Msbuild /p:/p:SolutionDir="c:\MySolutionDir\";Configuration="MyConfiguration";Platform="Win32" /bl MyProject.vcxproj
-    ```
+   ```cmd
+   Msbuild /p:SolutionDir="c:\MySolutionDir\";Configuration="MyConfiguration";Platform="Win32" /bl MyProject.vcxproj
+   ```
 
-Plik MSBuild. binlog zostanie utworzony w katalogu, w którym uruchomiono program MSBuild. Można je wyświetlić i przeszukać przy użyciu [podglądu dzienników struktury programu MSBuild](http://www.msbuildlog.com/).
+Plik *MSBuild. binlog* zostanie utworzony w katalogu, w którym uruchomiono program MSBuild.
+
+## <a name="create-a-binary-msbuild-log-by-using-the-project-system-tools-extension"></a>Utwórz binarny dziennik MSBuild przy użyciu rozszerzenia narzędzi systemu projektu
+
+1. Pobierz i zainstaluj [rozszerzenie narzędzi systemu projektu](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ProjectSystemTools).
+
+1. Po zainstalowaniu rozszerzenia niektóre nowe elementy pojawiają się w menu **Wyświetl**  >  **inne okna** .
+
+   ![Inne menu systemu Windows](../ide/media/view-menu.png)
+
+1. Wybierz pozycję **Wyświetl**  >  **inne**  >  **Rejestrowanie kompilacji** systemu Windows, aby wyświetlić okno **Rejestrowanie kompilacji** w programie Visual Studio. Wybierz ikonę pierwszego paska narzędzi, aby rozpocząć nagrywanie zarówno kompilacji zwykłych, jak i w czasie projektowania w systemie projektu.
+
+   ![Okno rejestrowania kompilacji](../ide/media/build-logging-click-to-record.png)
+
+1. Po zarejestrowaniu kompilacji zostanie ona wyświetlona w oknie rejestrowanie kompilacji. Kliknij prawym przyciskiem myszy element i wybierz polecenie **Zapisz dzienniki** w menu kontekstowym, aby zapisać plik *. binlog* .
+
+   ![Menu kontekstowe rejestrowania kompilacji](../ide/media/build-logging-context-menu.png)
+
+Pliki *. binlog* można wyświetlać i przeszukiwać za pomocą [podglądu dzienników strukturalnych programu MSBuild](http://www.msbuildlog.com/).
 
 ## <a name="create-a-detailed-log"></a>Tworzenie szczegółowego dziennika
 

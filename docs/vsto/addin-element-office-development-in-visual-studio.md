@@ -1,4 +1,5 @@
 ---
+description: Element addin przestrzeni nazw vstav3 zawiera informacje specyficzne dla Microsoft Office dodatków narzędzi VSTO i dostosowań na poziomie dokumentu opracowane w programie Visual Studio.
 title: '&lt;addin — &gt; element (Programowanie Office w Visual Studio)'
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 71fa31122432f4894bfca59929ee5eb127b7cad2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4cfc59475b01fbf42c387b4a7a5ca533b313a322
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896728"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102227388"
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;addin — &gt; element (Programowanie Office w Visual Studio)
   Element **addin** `vstav3` przestrzeni nazw zawiera informacje specyficzne dla Microsoft Office dodatków narzędzi VSTO i dostosowań na poziomie dokumentu opracowanych z programem Visual Studio.
