@@ -1,4 +1,5 @@
 ---
+description: Tworzy moduł wyliczający, który zawiera ten sam stan wyliczenia co bieżący moduł wyliczający pliki źródłowe.
 title: 'IDiaEnumSourceFiles:: Clone | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a8c87a0dd4606396249409984cb0589991cc6c5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 03ceb6b1461af6b3277400c24b1813d50988cc1d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99856321"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159217"
 ---
 # <a name="idiaenumsourcefilesclone"></a>IDiaEnumSourceFiles::Clone
 Tworzy moduł wyliczający, który zawiera ten sam stan wyliczania co bieżący moduł wyliczający.

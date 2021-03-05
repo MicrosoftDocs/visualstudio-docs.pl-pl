@@ -1,4 +1,5 @@
 ---
+description: Pobiera wersję System. Runtime. InteropServices. ComTypes. IEnumVARIANT modułu wyliczającego strumienia danych debugowania.
 title: 'IDiaEnumDebugStreamData:: get__NewEnum | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 54e4d7e5061130ac88facbe17b934fa91f61df19
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 785f857e1907815a9e5958b67dfe36d96f8b4dae
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99857091"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159476"
 ---
 # <a name="idiaenumdebugstreamdataget__newenum"></a>IDiaEnumDebugStreamData::get__NewEnum
 Pobiera <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> wersję tego modułu wyliczającego.

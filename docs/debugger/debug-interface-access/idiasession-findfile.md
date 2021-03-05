@@ -1,4 +1,5 @@
 ---
+description: Pobiera pliki źródłowe według jednostka kompilacji i nazwy.
 title: 'IDiaSession:: FindFile — | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d6358f1968b9ca2da04e5e0fff62b5a5f2acbb3f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: af547f9e504e9d832968bd18a370cb43e816e786
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855215"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159007"
 ---
 # <a name="idiasessionfindfile"></a>IDiaSession::findFile
 Pobiera pliki źródłowe według jednostka kompilacji i nazwy.

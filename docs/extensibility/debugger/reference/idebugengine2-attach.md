@@ -1,4 +1,5 @@
 ---
+description: Dołącza aparat debugowania (DE) do programu lub programów.
 title: 'IDebugEngine2:: Attach | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9c045c68af91896323e4cb6422108de77ae76352
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a780ab04e693fd2868579efbf015aef25e0cca32
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948312"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160151"
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
 Dołącza aparat debugowania (DE) do programu lub programów. Wywoływane przez Menedżera debugowania sesji (SDM), gdy jest uruchomiona w procesie do modelu SDM.

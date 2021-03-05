@@ -1,4 +1,5 @@
 ---
+description: Pobiera flagę, która określa, czy jednostka kompilacji) zostało połączone z przełącznikiem konsolidatora/LTCG (generowanie kodu w czasie konsolidacji) (/CPP/Build/Reference/LTCG-link-Time-Code-Generation), które ułatwia optymalizację w całym programie.
 title: 'IDiaSymbol:: get_isLTCG | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b3f1fde1a3509181182e7d41486facfb01d3efe1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1b8306dabe6533287d7d28841ea76f2d6478e4a3
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863180"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160814"
 ---
 # <a name="idiasymbolget_isltcg"></a>IDiaSymbol::get_isLTCG
 Pobiera flagę, która określa, czy [jednostka kompilacji](../../debugger/debug-interface-access/compiland.md) jest połączona z przełącznikiem konsolidatora [/LTCG (generowanie kodu w czasie konsolidacji)](/cpp/build/reference/ltcg-link-time-code-generation), które ułatwia optymalizację w całym programie. Ten przełącznik ma zastosowanie tylko do kodu zarządzanego.

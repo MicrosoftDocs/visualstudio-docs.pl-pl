@@ -1,4 +1,5 @@
 ---
+description: Konstruuje wystąpienie klasy VsgDbg z lub bez przygotowania składnika w aplikacji diagnostyki grafiki do aktywnego przechwytywania i rejestrowania informacji graficznych na podstawie określonego parametru logicznego.
 title: 'VsgDbg:: VsgDbg (Konstruktor) | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 466c64f3b055eef3629f0f4666529f1be4247f42
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ae4259b1af1bcb51b05431131db596d2a26da895
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861338"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160449"
 ---
 # <a name="vsgdbgvsgdbg-constructor"></a>VsgDbg::VsgDbg (Konstruktor)
 Konstruuje wystąpienie `VsgDbg` klasy z lub bez przygotowania składnika w aplikacji diagnostyki grafiki, aby aktywnie przechwytywać i rejestrować informacje graficzne domyślnie na podstawie określonego parametru logicznego.

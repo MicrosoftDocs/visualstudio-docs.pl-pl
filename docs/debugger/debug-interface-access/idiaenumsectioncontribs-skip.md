@@ -1,4 +1,5 @@
 ---
+description: Pomija określoną liczbę udziałów sekcji w sekwencji wyliczenia.
 title: 'IDiaEnumSectionContribs:: Skip | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ef9bde1498f555a14736d95a6aa9e4695f36324
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 345aa9219071a64fdd497a9e5409ee7dab3068ad
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99856447"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159301"
 ---
 # <a name="idiaenumsectioncontribsskip"></a>IDiaEnumSectionContribs::Skip
 Pomija określoną liczbę udziałów sekcji w sekwencji wyliczenia.

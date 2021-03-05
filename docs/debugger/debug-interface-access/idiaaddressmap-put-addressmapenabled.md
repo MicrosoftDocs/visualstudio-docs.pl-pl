@@ -1,4 +1,5 @@
 ---
+description: Określa, czy mapa adresów ma być używana do tłumaczenia adresów symboli.
 title: IDiaAddressMap::p ut_addressMapEnabled | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e3ebfcc5b76765a8fbfbe2be9ccef2112d351039
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 84878e83db15cfa5a9c68dccfec78536035cb70f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865273"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159515"
 ---
 # <a name="idiaaddressmapput_addressmapenabled"></a>IDiaAddressMap::put_addressMapEnabled
 Określa, czy mapa adresów ma być używana do tłumaczenia adresów symboli.

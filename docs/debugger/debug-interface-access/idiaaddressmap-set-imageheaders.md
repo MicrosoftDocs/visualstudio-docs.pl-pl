@@ -1,4 +1,5 @@
 ---
+description: Ustawia nagłówki obrazu w celu włączenia względnej translacji adresów wirtualnych.
 title: 'IDiaAddressMap:: set_imageHeaders | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 63bf56b7749033ecc99c7ba1ef0c9357c95542d9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f5ae155c6491acf90c327b2503e6993a08c5f536
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865280"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159495"
 ---
 # <a name="idiaaddressmapset_imageheaders"></a>IDiaAddressMap::set_imageHeaders
 Ustawia nagłówki obrazu w celu włączenia względnej translacji adresów wirtualnych.

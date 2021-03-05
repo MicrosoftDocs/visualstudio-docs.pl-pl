@@ -1,4 +1,5 @@
 ---
+description: Resetuje sekwencję wyliczenia wprowadzonych źródeł na początek.
 title: 'IDiaEnumInjectedSources:: Reset | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cf1e6e273074870e6d0b625b6f78ab3d717950e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2676eafff75677804c39e7d1058b6c4274e1ab9a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99856685"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159357"
 ---
 # <a name="idiaenuminjectedsourcesreset"></a>IDiaEnumInjectedSources::Reset
 Resetuje sekwencję wyliczenia na początek.

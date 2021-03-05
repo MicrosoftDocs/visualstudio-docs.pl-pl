@@ -1,4 +1,5 @@
 ---
+description: To okno dialogowe ostrzeżenia pojawia się po dołączeniu do procesu, który zawiera częściowo zaufany kod lub jest własnością niezaufanego użytkownika bezpośrednio przed dołączeniem.
 title: 'Ostrzeżenie o zabezpieczeniach: Dołączanie do procesu należącego do niezaufanego użytkownika może być niebezpieczne. Jeśli poniższe informacje wyglądają podejrzanie lub nie masz pewności, nie dołączaj do tego procesu | Microsoft Docs'
 ms.date: 1/15/2021
 ms.topic: conceptual
@@ -15,12 +16,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ec174a03e62cb8cb033be0b92db679fb19f0180
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9fe65e753a0e825eed0c09fdefc4e93168d27ecb
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881259"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160319"
 ---
 # <a name="security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process"></a>Ostrzeżenie o zabezpieczeniach: Dołączanie do procesu należącego do niezaufanego użytkownika może być niebezpieczne. Jeśli informacje wyglądają podejrzanie lub nie masz do nich pełnego zaufania, nie dołączaj do tego procesu
 

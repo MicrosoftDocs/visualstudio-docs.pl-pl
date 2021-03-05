@@ -1,6 +1,6 @@
 ---
 title: Debugowanie z projektu DLL | Microsoft Docs
-Description: Debugowanie projektu DLL można rozpocząć od samego projektu, określając aplikację wywołującą we właściwościach projektu. Zobacz ten artykuł, aby uzyskać szczegółowe informacje.
+description: Debugowanie projektu DLL można rozpocząć od samego projektu, określając aplikację wywołującą we właściwościach projektu. Zobacz ten artykuł, aby uzyskać szczegółowe informacje.
 ms.custom: SEO-VS-2020
 ms.date: 10/10/2018
 ms.topic: how-to
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b819a5cdbd09ced66fddec91574c1d03718518f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1f6063c5a0343951bb098c6937ce13dac7100d4a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913267"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160438"
 ---
 # <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>Instrukcje: debugowanie z projektu DLL w programie Visual Studio (C#, C++, Visual Basic, F #)
 

@@ -1,4 +1,5 @@
 ---
+description: Karta komunikaty służy do wybierania typów komunikatów, które mają być wyświetlane w widoku komunikatów), oraz do określania kryteriów wyszukiwania komunikatów.
 title: Karta komunikaty, okno dialogowe Opcje komunikatów | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c0a97a5b42e27c6db770e0c74a64e214561cea9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 66c1abcedbf48e8cd80aeafe0c4a5def1ddbb9eb
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891608"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160371"
 ---
 # <a name="messages-tab-message-options-dialog-box"></a>Karta Komunikaty, okno dialogowe opcji komunikatów
 Karta **komunikaty** służy do wybierania typów komunikatów, które mają być [wyświetlane w widoku komunikatów](../debugger/messages-view.md)oraz do określania kryteriów wyszukiwania komunikatów. Aby wyświetlić okno [dialogowe Opcje wiadomości](../debugger/message-options-dialog-box.md), wybierz pozycję **komunikaty dziennika** z menu **Spy** .

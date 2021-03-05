@@ -1,4 +1,5 @@
 ---
+description: Pobiera flagę wskazującą, czy moduł jest modułem. (w języku pośrednim firmy Microsoft), który zawiera tylko metadane i bez symboli natywnych.
 title: 'IDiaSymbol:: get_isMSILNetmodule | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 943f496ff4c08a6f3b2047c977c4ed4588190587
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 27d1294e5cbced8cd2f521a25858a37efe9f5b8c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863159"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160765"
 ---
 # <a name="idiasymbolget_ismsilnetmodule"></a>IDiaSymbol::get_isMSILNetmodule
 Pobiera flagę wskazującą, czy moduł jest modułem. (w języku pośrednim firmy Microsoft), który zawiera tylko metadane i bez symboli natywnych.

@@ -1,6 +1,6 @@
 ---
 title: Widok komunikatów sterujących | Microsoft Docs
-Description: Można wybrać typy okien i komunikatów wyświetlane w oknie widok komunikatów oraz format wyświetlania wierszy wiadomości. Zobacz ten artykuł, aby uzyskać szczegółowe informacje.
+description: Można wybrać typy okien i komunikatów wyświetlane w oknie widok komunikatów oraz format wyświetlania wierszy wiadomości. Zobacz ten artykuł, aby uzyskać szczegółowe informacje.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 674498ff86f3ea3d44d5d9b49ec97789fa5a1205
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9b126c417cee014370a6e5028f29c2207e070983
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837778"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160411"
 ---
 # <a name="how-to-control-messages-view"></a>Porady: kontrolowanie widoku komunikatów
 Dzięki programowi Spy + + masz znaczną kontrolę nad zawartością okna [widoku komunikatów](../debugger/messages-view.md) . W dowolnym momencie możesz [uruchomić i zatrzymać](../debugger/how-to-start-and-stop-the-message-log-display.md) wyświetlanie komunikatów, a także określić:

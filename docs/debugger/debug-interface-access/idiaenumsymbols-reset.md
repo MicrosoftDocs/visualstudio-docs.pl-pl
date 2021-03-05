@@ -1,4 +1,5 @@
 ---
+description: Resetuje sekwencję wyliczenia symboli na początku.
 title: 'IDiaEnumSymbols:: Reset | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2126ce2d0cf7da8178cc54537de57a2fac26fe14
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 99fdf1ba50b0555b9eea4335f444e1ee6c6a1cad
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99856111"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159105"
 ---
 # <a name="idiaenumsymbolsreset"></a>IDiaEnumSymbols::Reset
 Resetuje sekwencję wyliczenia na początek.

@@ -1,4 +1,5 @@
 ---
+description: Pobiera wersję System. Runtime. InteropServices. ComTypes. IEnumVARIANT modułu wyliczającego pliki źródłowe.
 title: 'IDiaEnumSourceFiles:: get__NewEnum | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b8e8942489b1cc70b0e901c7575bdf135e72c52
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c090406c4e8b9ad6a01c18d4fa17c66038881a3d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99856272"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159203"
 ---
 # <a name="idiaenumsourcefilesget__newenum"></a>IDiaEnumSourceFiles::get__NewEnum
 Pobiera <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> wersję tego modułu wyliczającego.

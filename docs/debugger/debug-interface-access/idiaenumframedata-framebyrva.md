@@ -1,4 +1,5 @@
 ---
+description: Zwraca ramkę według względnego adresu wirtualnego (RVA).
 title: 'IDiaEnumFrameData:: frameByRVA | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5aa30598dcae08842c935d0d404cbb8b3303aefe
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a11d249722f192232a80a8951e18e927f27e9a41
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99856881"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159440"
 ---
 # <a name="idiaenumframedataframebyrva"></a>IDiaEnumFrameData::frameByRVA
 Zwraca ramkę według względnego adresu wirtualnego (RVA).

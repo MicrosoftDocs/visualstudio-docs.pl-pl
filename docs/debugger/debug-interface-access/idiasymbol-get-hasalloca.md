@@ -1,4 +1,5 @@
 ---
+description: Pobiera flagę, która określa, czy funkcja zawiera wywołanie metody alloca (która jest używana do przydzielania pamięci na stosie).
 title: 'IDiaSymbol:: get_hasAlloca | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b6dfbb3d12e01656117c0b1a3391af5a0578358
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 42b2c63932cc37e0c5c605e31e9dfb0671fdd586
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854291"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161003"
 ---
 # <a name="idiasymbolget_hasalloca"></a>IDiaSymbol::get_hasAlloca
 Pobiera flagę, która określa, czy funkcja zawiera wywołanie `alloca` (które jest używane do przydzielania pamięci na stosie).

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: f271d623-dcde-442a-865c-4dca5ad8a9c5
-ms.date: 02/02/2021
+ms.date: 03/03/2021
 ms.topic: conceptual
 description: Zarządzanie subskrypcjami w subskrypcjach programu Visual Studio za pomocą usługi GitHub Enterprise
-ms.openlocfilehash: ca71e696081e304cdbb8cc58576e0ae4c536f911
-ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
+ms.openlocfilehash: d1734e3f416815b9c63f7237eca4e7df26e34331
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99511322"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159578"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>Zarządzanie subskrypcjami programu Visual Studio za pomocą usługi GitHub Enterprise
 Klienci, którzy mają umowę Enterprise Agreement (EA) z firmą Microsoft, mogą zakupić nową ofertę subskrypcji, która wiąże się z subskrypcjami programu Visual Studio w wersji Standard i usługi GitHub. Jest to prosty i ekonomiczny sposób, w jaki Subskrybenci programu Visual Studio mogą uzyskać przedsiębiorstwo w serwisie GitHub. 
@@ -32,12 +32,33 @@ Aby uzyskać więcej informacji na temat zarządzania subskrypcjami programu Vis
 > [!Important]
 > Jeśli subskrypcje programu Visual Studio z usługą GitHub Enterprise są przypisane przez administratorów subskrypcji programu Visual Studio bez konieczności uprzedniego zakupu, usługi GitHub nie będą powiadamiane o konieczności utworzenia konta w witrynie GitHub Enterprise.  **Zakup co najmniej jednego** Subskrypcję programu Visual Studio z usługą GitHub Enterprise należy wykonać przed przypisaniem subskrypcji.
 
+## <a name="moving-to-visual-studio-with-github-enterprise"></a>Przechodzenie do programu Visual Studio za pomocą usługi GitHub Enterprise
+Jeśli Twoja organizacja kupuje subskrypcje programu Visual Studio z pakietami dla przedsiębiorstw w witrynie GitHub po przypisaniu standardowych Visual Studio Enterprise i Visual Studio Professional subskrypcje, Portal administracyjny zawiera funkcję ułatwiającą przeniesienie istniejących subskrybentów do odpowiedniej Visual Studio Enterprise z subskrypcją GitHub Enterprise i/lub Visual Studio Professional z subskrypcjami w witrynie GitHub Enterprise.  Na przykład Subskrybenci z subskrypcjami Visual Studio Professional zostaną przeniesieni do Visual Studio Professional za pomocą subskrypcji usługi GitHub Enterprise. Na pasku po lewej stronie panelu "przegląd" zobaczysz następujący kafelek:
+
+   > [!div class="mx-imgBorder"]
+   > ![Przycisk Przenieś teraz](_img/assign-github/move-now.png "Kliknij przycisk "Przenieś teraz", aby uaktualnić subskrypcje do programu Visual Studio z subskrypcjami w witrynie GitHub Enterprise")
+
+> [!IMPORTANT]
+> Jak wspomniano powyżej, istniejące dane subskrybenta, historia i Identyfikator subskrypcji zostaną zachowane, a wszelkie aktywowane korzyści nie będą przerywane z powodu tego przeniesienia.  
+>
+> Ta funkcja jest wdrażana w fazach i może nie być natychmiast dostępna dla Twoich umów.
+
+Po kliknięciu przycisku Przenieś teraz zostanie wyprowadzony panel **przechodzenia** z zaleceniami dotyczącymi przenoszenia subskrypcji przedsiębiorstwa i/lub profesjonalnego:
+
+   > [!div class="mx-imgBorder"]
+   > ![Panel wylotu](_img/assign-github/fly-out.png)
+
+Na tym kafelku można przejrzeć ewentualnych subskrybentów i określić, czy chcesz powiadomić ich o otrzymaniu powiadomienia e-mail po zakończeniu przenoszenia.  Ta wiadomość e-mail informuje subskrybentów, że ich korzyści pozostają niezmienione i zachęca je do rozpoczęcia konfigurowania obecności w serwisie GitHub.  
+
+Po kliknięciu przycisku **Przenieś wszystkich subskrybentów** Potwierdź wybrane opcje i poczekaj kilka sekund, aż subskrypcja zostanie zakończona.  Jeśli ma to zastosowanie, należy wykonać te kroki dla wersji Professional i Enterprise osobno.  
+
+
 ## <a name="what-is-the-visual-studio-with-github-enterprise-setup-process"></a>Jaki jest proces konfiguracji programu Visual Studio z usługą GitHub Enterprise?
 Usługa GitHub Enterprise jest konfigurowana i zarządzana niezależnie od subskrypcji programu Visual Studio. Po rozpoczęciu subskrypcji programu Visual Studio z zakupem w serwisie GitHub Enterprise proces instalacji konta przedsiębiorstwa w witrynie GitHub jest inicjowany równolegle z (ale oddzielony od), który ustanawia umowę w [manage.VisualStudio.com](https://manage.visualstudio.com). Ustanowienie tego konta usługi GitHub Enterprise może trochę potrwać. 
 
 Gdy firma skonfiguruje konto usługi GitHub Enterprise, subskrybenci, którym przypisano subskrypcje programu Visual Studio z usługą GitHub Enterprise, otrzymają wiadomość e-mail od usługi GitHub z powiadomieniem o połączeniu ich subskrypcji programu Visual Studio. Po otrzymaniu tej wiadomości e-mail Subskrybenci mogą skontaktować się z administratorem organizacji usługi GitHub w celu otrzymania zaproszenia do odpowiedniej organizacji.
 
-Dodatkowe szczegóły dotyczące konfiguracji Enterprise w witrynie GitHub można znaleźć w [dokumentacji dotyczącej subskrybenta](access-github.md).   
+Aby uzyskać szczegółowe informacje na temat konfiguracji Enterprise w witrynie GitHub, zapoznaj się z [dokumentacją subskrybenta](access-github.md).   
 
 ## <a name="manage-github-enterprise-subscriptions"></a>Zarządzanie subskrypcjami w witrynie GitHub Enterprise
 W przypadku zakupu subskrypcji usługi GitHub przedsiębiorstwa partnerzy usługi GitHub z klientami mogą pomóc w tworzeniu i konfigurowaniu organizacji, które będą uzyskiwać dostęp do usługi GitHub i identyfikowania administratorów.  Ci Administratorzy otrzymają powiadomienie, że zostały skonfigurowane jako administratorzy.  

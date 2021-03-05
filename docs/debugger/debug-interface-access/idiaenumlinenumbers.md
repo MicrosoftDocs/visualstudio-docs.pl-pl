@@ -1,4 +1,5 @@
 ---
+description: Wylicza różne numery wierszy zawarte w źródle danych.
 title: IDiaEnumLineNumbers | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d4a470a2e3037d77b07786e6f37d588162278a8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f7daca5951ba543e69d74c664cddb863ec703e9f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99856531"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159336"
 ---
 # <a name="idiaenumlinenumbers"></a>IDiaEnumLineNumbers
 Wylicza różne numery wierszy zawarte w źródle danych.
