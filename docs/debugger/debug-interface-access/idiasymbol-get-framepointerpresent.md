@@ -1,4 +1,5 @@
 ---
+description: Pobiera flagę, która określa, czy wskaźnik ramki jest obecny.
 title: 'IDiaSymbol:: get_framePointerPresent | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 591ed4888bd33040be87181c9dbfab8f1a02172c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 66c3a0967a2a692cdc7e6c3d50ab71c56286b94b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854347"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162174"
 ---
 # <a name="idiasymbolget_framepointerpresent"></a>IDiaSymbol::get_framePointerPresent
 Pobiera flagę, która określa, czy wskaźnik ramki jest obecny. Użyj, gdy [Wyliczenie SymTagEnum —](../../debugger/debug-interface-access/symtagenum.md) jest ustawione na `SymTagFunction` .

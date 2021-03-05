@@ -1,4 +1,5 @@
 ---
+description: Pobiera główny numer wersji frontonu.
 title: 'IDiaSymbol:: get_frontEndMajor | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bec64aa467ffeb4780626f2296d9fddbea4d3f1f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bf5bc125b00fa8194475c9f6101e697dbf66062a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854340"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162167"
 ---
 # <a name="idiasymbolget_frontendmajor"></a>IDiaSymbol::get_frontEndMajor
 Pobiera główny numer wersji frontonu.

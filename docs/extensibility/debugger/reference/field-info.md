@@ -1,4 +1,5 @@
 ---
+description: Ta struktura opisuje zmienną lokalną, parametr lub inne pole.
 title: FIELD_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f358c6c9a192ddd4d71f26a0f2f795ae012bc2c7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 47b7c7cb3a77d0ad925b044130901dd481b99943
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941843"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162436"
 ---
 # <a name="field_info"></a>FIELD_INFO
 Ta struktura opisuje zmienną lokalną, parametr lub inne pole.
