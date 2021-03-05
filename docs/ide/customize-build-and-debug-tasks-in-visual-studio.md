@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1088cae031dc3498d2c5cdcd33db8d42f721b7d7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 659e0f4e46d6960a2a1350c605e55357a84ec115
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954426"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161303"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Dostosowywanie zadań kompilacji i debugowania dla opracowywania aplikacji "Otwieranie folderu"
 
@@ -217,7 +217,7 @@ Można utworzyć zadania dla dowolnego pliku lub folderu, określając jego nazw
 
 |Makro|Opis|
 |-|-|
-|`${env.<VARIABLE>}`| Określa zmienną środowiskową (na przykład $ {ENV. PATH}, $ {ENV. wywołana} itd.), która jest ustawiona dla wiersza polecenia dewelopera. Aby uzyskać więcej informacji, zobacz [wiersz polecenia programisty dla programu Visual Studio](/dotnet/framework/tools/developer-command-prompt-for-vs).|
+|`${env.<VARIABLE>}`| Określa zmienną środowiskową (na przykład $ {ENV. PATH}, $ {ENV. wywołana} itd.), która jest ustawiona dla wiersza polecenia dewelopera. Aby uzyskać więcej informacji, zobacz [wiersz polecenia dla deweloperów i Developer PowerShell](../ide/reference/command-prompt-powershell.md).|
 |`${workspaceRoot}`| Pełna ścieżka do folderu obszaru roboczego (na przykład *C:\sources\hello*)|
 |`${file}`| Pełna ścieżka pliku lub folderu wybranego do uruchomienia tego zadania (na przykład *C:\sources\hello\src\hello.js*)|
 |`${relativeFile}`| Ścieżka względna do pliku lub folderu (na przykład *src\hello.js*)|

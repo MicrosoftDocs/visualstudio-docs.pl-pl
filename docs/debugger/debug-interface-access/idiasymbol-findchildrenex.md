@@ -1,4 +1,5 @@
 ---
+description: Pobiera elementy podrzędne symbolu. Symbole lokalne, które są zwracane, zawierają informacje o zakresie aktywnym, jeśli program jest kompilowany z optymalizacją na.
 title: 'IDiaSymbol:: findChildrenEx | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 68c13c433d10bb462c78397b012000f0f245327a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e667766974b8cc97a171567bd267c9ac0f245229
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863719"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161167"
 ---
 # <a name="idiasymbolfindchildrenex"></a>IDiaSymbol::findChildrenEx
 Pobiera elementy podrzędne symbolu. Symbole lokalne, które są zwracane, zawierają informacje o zakresie aktywnym, jeśli program jest kompilowany z optymalizacją na.
