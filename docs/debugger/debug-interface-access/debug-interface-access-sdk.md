@@ -1,4 +1,5 @@
 ---
+description: Pakiet Microsoft Debug Interface Access Software Development Kit (DIA SDK) zapewnia dostęp do informacji debugowania przechowywanych w plikach bazy danych programu (. pdb) wygenerowanych przez narzędzia Microsoft postcompiler Tools.
 title: Zestaw SDK dostępu do interfejsu debugowania | Microsoft Docs
 ms.date: 07/24/2018
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 398c6fac8460ceba07e7fd36df5b4242b15cd133
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fbb7c9025094249715f1d69a8d58d8725d294107
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99857315"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149305"
 ---
 # <a name="debug-interface-access-sdk"></a>Zestaw SDK dostępu do interfejsu debugowania
 

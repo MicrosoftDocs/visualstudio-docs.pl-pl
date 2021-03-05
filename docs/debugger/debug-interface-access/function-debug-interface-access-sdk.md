@@ -1,4 +1,5 @@
 ---
+description: Każda funkcja jest identyfikowana przez symbol SymTagFunction.
 title: Funkcja (zestaw SDK dostępu do interfejsu debugowania) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a294444cf03760ef83fb02ae012bcbf609a2982a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 850ecedbdacb8349dc8ff6450c79dee219b61418
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99857252"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149138"
 ---
 # <a name="function-debug-interface-access-sdk"></a>Funkcja (Zestaw SDK dostępu do interfejsu debugowania)
 Każda funkcja jest identyfikowana przez `SymTagFunction` symbol.

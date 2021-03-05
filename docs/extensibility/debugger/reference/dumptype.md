@@ -1,4 +1,5 @@
 ---
+description: Określa, jak część stanu programu (na przykład uruchomione wątki, ramki stosu i adres bieżącej instrukcji) ma zostać zastrzeżona.
 title: DUMPTYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 99e7e5a9e092118eb40501e6f2ba3cc580cf7cc7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cef9f90c1f08dac742a6f01a4dd48f6bff76848b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953737"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150981"
 ---
 # <a name="dumptype"></a>DUMPTYPE
 Określa, jak część stanu programu (na przykład uruchomione wątki, ramki stosu i adres bieżącej instrukcji) ma zostać zastrzeżona.

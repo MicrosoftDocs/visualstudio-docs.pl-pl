@@ -1,4 +1,5 @@
 ---
+description: Wszystkie zmienne, takie jak parametry, zmienne lokalne, zmienne globalne i składowe klas, są identyfikowane przez symbole SymTagData.
 title: Dane (zestaw SDK dostępu do interfejsu debugowania) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c71f9f39d1b38db79d47aff37cee50f48e92566e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 08354e2f54a8c4d4e96d139470494dcdefe78703
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865434"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149293"
 ---
 # <a name="data-debug-interface-access-sdk"></a>Dane (Zestaw SDK dostępu do interfejsu debugowania)
 Wszystkie zmienne, takie jak parametry, zmienne lokalne, zmienne globalne i składowe klas, są identyfikowane przez `SymTagData` symbole. Wartości stałe ( `LocIsConstant` ) są również identyfikowane za pomocą tego typu.

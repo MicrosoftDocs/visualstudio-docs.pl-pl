@@ -1,4 +1,5 @@
 ---
+description: Ten interfejs jest wysyłany przez aparat debugowania (DE) do Menedżera debugowania sesji (SDM) w przypadku ładowania lub zwalniania modułu.
 title: IDebugModuleLoadEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0dbc1cda72aa868bc5bcf68215e4c3815f520d1d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 59b5e9e7619434b9ff4d914fc7b955ebbab4ace2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929644"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149850"
 ---
 # <a name="idebugmoduleloadevent2"></a>IDebugModuleLoadEvent2
 Ten interfejs jest wysyłany przez aparat debugowania (DE) do Menedżera debugowania sesji (SDM) w przypadku ładowania lub zwalniania modułu.

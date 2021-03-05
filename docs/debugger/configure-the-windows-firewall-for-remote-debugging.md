@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 959d015bd23c91ec2ba6215c7a5b42d13b37ee29
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 52264580e428fa6a2c33d80ea8fb9fb8e07f0c59
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865829"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149330"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>Konfigurowanie zapory systemu Windows na potrzeby debugowania zdalnego
 
@@ -49,6 +49,16 @@ Program Visual Studio i zdalny debuger próbują otworzyć odpowiednie porty pod
 1. Dodaj nazwę reguły (na przykład **msvsmon**, **IIS** lub **Web Deploy**), a następnie wybierz pozycję **Zakończ**.
 
    Nowa reguła powinna zostać wyświetlona i wybrana na liście **reguły ruchu przychodzącego** lub **reguły wychodzące** .
+
+**Aby otworzyć port przy użyciu programu PowerShell:**
+
+W przypadku zapory systemu Windows można użyć poleceń programu PowerShell, takich jak [New-NetFirewallRule](/powershell/module/netsecurity/new-netfirewallrule?view=win10-ps).
+
+W poniższym przykładzie zostanie otwarty port 4024 dla zdalnego debugera na komputerze zdalnym. Ścieżka, której należy użyć, może być inna.
+
+```ps
+New-NetFirewallRule -DisplayName "msvsmon" -Direction Inbound -Program "Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe" -LocalPort 4024 -Protocol TCP -Authentication Required -Action Allow
+```
 
 ### <a name="ports-on-the-remote-computer-that-enable-remote-debugging"></a>Porty na komputerze zdalnym, które umożliwiają debugowanie zdalne
 

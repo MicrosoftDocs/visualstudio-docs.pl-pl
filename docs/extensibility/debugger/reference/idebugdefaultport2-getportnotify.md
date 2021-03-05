@@ -1,4 +1,5 @@
 ---
+description: Ta metoda pobiera interfejs IDebugPortNotify2 dla tego portu.
 title: 'IDebugDefaultPort2:: GetPortNotify | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 26e269e37eddf37aafb87c9e479feb0047bfce70
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cd0d49275188eed1cebb7b1af3ee4dfcbb79cbe4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934308"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150656"
 ---
 # <a name="idebugdefaultport2getportnotify"></a>IDebugDefaultPort2::GetPortNotify
 Ta metoda pobiera interfejs [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) dla tego portu.

@@ -1,4 +1,5 @@
 ---
+description: Ten interfejs reprezentuje proces uruchomiony na porcie.
 title: IDebugProcess2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd644a728f049cf8b94f22ef961464b8bfcb5816
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 131eacba321bac70c75b77faf33b18aae0135e55
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891075"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150266"
 ---
 # <a name="idebugprocess2"></a>IDebugProcess2
 Ten interfejs reprezentuje proces uruchomiony na porcie. Jeśli port jest portem lokalnym, `IDebugProcess2` zazwyczaj reprezentuje proces fizyczny na komputerze lokalnym.
