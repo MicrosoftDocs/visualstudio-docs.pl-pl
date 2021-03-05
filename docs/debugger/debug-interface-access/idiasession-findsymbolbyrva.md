@@ -1,4 +1,5 @@
 ---
+description: Pobiera określony typ symbolu, który zawiera lub jest najbliższy do, określony względny adres wirtualny (RVA).
 title: 'IDiaSession:: findSymbolByRVA | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 720b77852ab0e8eb863fd903f756fb38ebbcf47d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 12e9bfbc1a774f435efc52f5ea1aaf5aff9d4340
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855089"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147633"
 ---
 # <a name="idiasessionfindsymbolbyrva"></a>IDiaSession::findSymbolByRVA
 Pobiera określony typ symbolu, który zawiera lub jest najbliższy do, określony względny adres wirtualny (RVA).

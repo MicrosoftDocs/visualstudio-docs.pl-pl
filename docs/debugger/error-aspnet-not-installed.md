@@ -1,4 +1,5 @@
 ---
+description: Ten błąd występuje, gdy ASP.NET nie jest prawidłowo zainstalowany na komputerze, który próbujesz debugować.
 title: Platforma ASP.NET nie jest zainstalowana
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -19,12 +20,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: 2388e59ae760e28c8f778ab8ccb15265414174b7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 205f0fb3948414ec87b735af9b1b97917872a950
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871757"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147058"
 ---
 # <a name="error-aspnet-not-installed"></a>Błąd: ASP.NET nie jest zainstalowany
 Ten błąd występuje, gdy program [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] nie jest prawidłowo zainstalowany na komputerze, który próbujesz debugować. Może to oznaczać, że [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] nigdy nie został zainstalowany lub wcześniej zainstalowany [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] program IIS został zainstalowany później.

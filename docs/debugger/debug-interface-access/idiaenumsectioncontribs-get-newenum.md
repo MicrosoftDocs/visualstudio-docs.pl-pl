@@ -1,4 +1,5 @@
 ---
+description: Pobiera System. Runtime. InteropServices. ComTypes. IEnumVARIANT w wersji sekcji modułu wyliczającego.
 title: 'IDiaEnumSectionContribs:: get__NewEnum | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 220e1b758a22729d9ba56bc751cd942d613313d4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f4ae9c254262bfad9e2f9b27f513983e5c7a4925
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99856496"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148900"
 ---
 # <a name="idiaenumsectioncontribsget__newenum"></a>IDiaEnumSectionContribs::get__NewEnum
 Pobiera <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> wersję tego modułu wyliczającego.

@@ -1,4 +1,5 @@
 ---
+description: Pobiera adres wirtualny względem obrazu (RVA) udziału.
 title: 'IDiaSectionContrib:: get_relativeVirtualAddress | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a1b7228b461db7beac8b208c198d3453db2295bc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4bd7e1271ed163e9efe4971ca4af08858e79c7ff
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99864419"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147997"
 ---
 # <a name="idiasectioncontribget_relativevirtualaddress"></a>IDiaSectionContrib::get_relativeVirtualAddress
 Pobiera adres wirtualny względem obrazu (RVA) udziału.

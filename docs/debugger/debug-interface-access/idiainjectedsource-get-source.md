@@ -1,4 +1,5 @@
 ---
+description: Pobiera bajty kodu źródłowego.
 title: 'IDiaInjectedSource:: get_source | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f44f30b063a34a0d5d5549cd1923b66c1dde9cb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 248fc00320f94b297a9b0697742dff6e3fbd2004
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99864867"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148417"
 ---
 # <a name="idiainjectedsourceget_source"></a>IDiaInjectedSource::get_source
 Pobiera bajty kodu źródłowego.

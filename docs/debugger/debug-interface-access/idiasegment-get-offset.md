@@ -1,4 +1,5 @@
 ---
+description: Pobiera przesunięcie (w segmentach), gdzie rozpoczyna się sekcja.
 title: 'IDiaSegment:: get_offset | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fbfff4382df74052efdcc59aa813b9c002a9103f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 53618e4e8b47291f8a5200d0128adeb88c0499de
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99864363"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147928"
 ---
 # <a name="idiasegmentget_offset"></a>IDiaSegment::get_offset
 Pobiera przesunięcie (w segmentach), gdzie rozpoczyna się sekcja.

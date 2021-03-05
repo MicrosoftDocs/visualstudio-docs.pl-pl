@@ -1,4 +1,5 @@
 ---
+description: Pobiera określoną liczbę plików źródłowych w sekwencji wyliczenia.
 title: 'IDiaEnumSourceFiles:: Next | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e33abf7a38c5acab799b8a9f9342b2002d62a21
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9fdac59ba0998528cde8412a9fff9062edb56044
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99856237"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148781"
 ---
 # <a name="idiaenumsourcefilesnext"></a>IDiaEnumSourceFiles::Next
 Pobiera określoną liczbę plików źródłowych w sekwencji wyliczenia.

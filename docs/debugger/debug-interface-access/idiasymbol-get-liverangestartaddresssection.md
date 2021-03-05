@@ -1,4 +1,5 @@
 ---
+description: Zwraca część sekcji adresu początkowego zakresu, w którym lokalny symbol jest prawidłowy.
 title: 'IDiaSymbol:: get_liveRangeStartAddressSection | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 05355c9031aa588c8e9ed4ddceb69920fa485f51
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 73060b77eddff157d24194c1051bece2fa67d4b0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863005"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147318"
 ---
 # <a name="idiasymbolget_liverangestartaddresssection"></a>IDiaSymbol::get_liveRangeStartAddressSection
 Zwraca część sekcji adresu początkowego zakresu, w którym lokalny symbol jest prawidłowy.

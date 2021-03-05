@@ -1,4 +1,5 @@
 ---
+description: Pobiera wskaźnik używanej kompresji źródłowej.
 title: 'IDiaInjectedSource:: get_sourceCompression | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 480a0949cd1d42c60b05c5efc89f42c3457ab602
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 868c89da413372e5793f92a5df6bb74c02207421
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855782"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148410"
 ---
 # <a name="idiainjectedsourceget_sourcecompression"></a>IDiaInjectedSource::get_sourceCompression
 Pobiera wskaźnik używanej kompresji źródłowej.

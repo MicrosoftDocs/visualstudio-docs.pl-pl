@@ -1,4 +1,5 @@
 ---
+description: Pobiera symbol zawierający określony token metadanych.
 title: 'IDiaSession:: findSymbolByToken | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 590f15659d1cf590b28b029658a0c1d3f6190fa2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 409e9d50e9800b4db08ff5381cfece470e248dae
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855082"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147619"
 ---
 # <a name="idiasessionfindsymbolbytoken"></a>IDiaSession::findSymbolByToken
 Pobiera symbol zawierający określony token metadanych.

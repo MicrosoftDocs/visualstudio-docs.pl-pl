@@ -1,4 +1,5 @@
 ---
+description: Pobiera część przesunięcia adresu pamięci, w której rozpoczyna się blok.
 title: 'IDiaLineNumber:: get_addressOffset | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d8593277312a168355cef1db3142feaf5af936a7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ec25e04e3d2bb6cbf5b34fedefa6eec20a1a3792
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99864860"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148319"
 ---
 # <a name="idialinenumberget_addressoffset"></a>IDiaLineNumber::get_addressOffset
 Pobiera część przesunięcia adresu pamięci, w której rozpoczyna się blok.

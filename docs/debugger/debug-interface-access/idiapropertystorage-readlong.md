@@ -1,4 +1,5 @@
 ---
+description: Odczytuje długie wartości w zestawie właściwości.
 title: 'IDiaPropertyStorage:: ReadLONG | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e8e2ceabd73d95d1606359346a1e6d52bbd20eae
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3328048efaad86f987511e390ca2a041161f029a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99864580"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148158"
 ---
 # <a name="idiapropertystoragereadlong"></a>IDiaPropertyStorage::ReadLONG
 Odczytuje `LONG` wartości w zestawie właściwości.

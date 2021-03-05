@@ -1,4 +1,5 @@
 ---
+description: Pobiera flagę wskazującą, czy nie można stronicować sekcji poza pamięcią.
 title: 'IDiaSectionContrib:: get_notPaged | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f87ad9efbc64728500e02b7068393528745aaf5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fcb59824f3be2e6f04e1fd49dcdc4a9ef08b8af1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99864426"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147990"
 ---
 # <a name="idiasectioncontribget_notpaged"></a>IDiaSectionContrib::get_notPaged
 Pobiera flagę wskazującą, czy nie można stronicować sekcji poza pamięcią.

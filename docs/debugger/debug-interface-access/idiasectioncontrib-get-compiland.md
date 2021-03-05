@@ -1,4 +1,5 @@
 ---
+description: Pobiera odwołanie do symbolu jednostka kompilacji, który należy do tej sekcji.
 title: 'IDiaSectionContrib:: get_compiland | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 146256d47d5217b63e2718b876e2636c5d6532aa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ddb088d2427c910bc8418923a2ffe794108340b9
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99864517"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148032"
 ---
 # <a name="idiasectioncontribget_compiland"></a>IDiaSectionContrib::get_compiland
 Pobiera odwołanie do symbolu jednostka kompilacji, który należy do tej sekcji.

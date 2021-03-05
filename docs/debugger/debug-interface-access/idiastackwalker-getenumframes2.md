@@ -1,4 +1,5 @@
 ---
+description: Pobiera moduł wyliczający ramek stosu dla określonego typu platformy.
 title: 'IDiaStackWalker:: getEnumFrames2 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f5e4e55c85312033cc79c140381068a64a1ef28
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 71af6f8c78f6f4ac0f6008db8a9ecd4ba72df07e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854809"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147346"
 ---
 # <a name="idiastackwalkergetenumframes2"></a>IDiaStackWalker::getEnumFrames2
 Pobiera moduł wyliczający ramek stosu dla określonego typu platformy.

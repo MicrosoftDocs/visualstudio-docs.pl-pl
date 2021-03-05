@@ -1,4 +1,5 @@
 ---
+description: Pobiera flagę, która określa, czy funkcja zawiera return z instrukcji przerwania (na przykład kod zestawu x86 IRET ').
 title: 'IDiaSymbol:: get_interruptReturn | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f0981f103d9914e9d8d13f02449187fdfef0ff61
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 91e88b4348e5bc778b71c0737a57effcf70ecac6
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863271"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147325"
 ---
 # <a name="idiasymbolget_interruptreturn"></a>IDiaSymbol::get_interruptReturn
 Pobiera flagę, która określa, czy funkcja zawiera return z instrukcji przerwania (na przykład kod zestawu x86 `iret` ).
