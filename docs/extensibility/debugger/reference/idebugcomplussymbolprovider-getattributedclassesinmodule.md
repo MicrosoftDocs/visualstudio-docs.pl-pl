@@ -1,4 +1,5 @@
 ---
+description: Pobiera klasy z określonym atrybutem w danym module.
 title: IDebugComPlusSymbolProvider::GetAttributedClassesinModule
 titleSuffix: ''
 ms.custom: SEO-VS-2020
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 62f9d7a9b9482190700680825865465cdfe341b3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0cdd1186fdea90e75fce7b2cb90fd6d477cd4140
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911989"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163840"
 ---
 # <a name="idebugcomplussymbolprovidergetattributedclassesinmodule"></a>IDebugComPlusSymbolProvider::GetAttributedClassesinModule
 Pobiera klasy z określonym atrybutem w danym module.
