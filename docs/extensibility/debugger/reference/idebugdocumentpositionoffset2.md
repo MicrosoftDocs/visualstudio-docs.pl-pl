@@ -1,4 +1,5 @@
 ---
+description: Reprezentuje pozycję w pliku źródłowym jako przesunięcie znaku.
 title: IDebugDocumentPositionOffset2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69fbdef70fc9c95ef571ce0ce796199292417ca0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1dee28d7f19f6398863476afbab8eb9b3cdbbb60
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933560"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167324"
 ---
 # <a name="idebugdocumentpositionoffset2"></a>IDebugDocumentPositionOffset2
 Reprezentuje pozycję w pliku źródłowym jako przesunięcie znaku.

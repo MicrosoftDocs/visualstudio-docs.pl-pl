@@ -1,4 +1,5 @@
 ---
+description: Ten interfejs reprezentuje pozycję w przestrzeni adresowej maszyny, na której jest wykonywany debugowany program.
 title: IDebugMemoryContext2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12016ae7d03913d1880015a6b8cf318b14c94af5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 20750397eafa392ee7ad8bd742b0126b1fb9deeb
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851078"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166349"
 ---
 # <a name="idebugmemorycontext2"></a>IDebugMemoryContext2
 Ten interfejs reprezentuje pozycję w przestrzeni adresowej maszyny, na której jest wykonywany debugowany program.
