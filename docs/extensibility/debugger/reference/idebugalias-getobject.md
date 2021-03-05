@@ -1,4 +1,5 @@
 ---
+description: Pobiera obiekt, dla którego odnosi się ten alias.
 title: 'IDebugAlias:: GetObject | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5ff5459903b5259d6005a4ebb01228117c2801db
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 10bcb0bb356907cb3f23b1c470248b9926f329ec
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944787"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143899"
 ---
 # <a name="idebugaliasgetobject"></a>IDebugAlias::GetObject
 Pobiera obiekt, dla którego odnosi się ten alias.

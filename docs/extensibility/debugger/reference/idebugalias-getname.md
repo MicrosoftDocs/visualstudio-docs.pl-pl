@@ -1,4 +1,5 @@
 ---
+description: Pobiera nazwę tego aliasu.
 title: 'IDebugAlias:: GetName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 72e6f71384f6e30850527524077df35d49aab3cd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 86de6cf6a9670170e83fe984807c312902a1050b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944774"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143912"
 ---
 # <a name="idebugaliasgetname"></a>IDebugAlias::GetName
 Pobiera nazwę tego aliasu.

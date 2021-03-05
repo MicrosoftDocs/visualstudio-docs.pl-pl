@@ -1,4 +1,5 @@
 ---
+description: Usuwa ten oczekujący punkt przerwania i wszystkie punkty przerwania powiązane z nim.
 title: IDebugPendingBreakpoint2::D suń | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4cf3a78a9bde3a909e1c7d0ebfd8d3e5ca0add9c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 459e21fa7cc9e43d09d56f4537dd9a3bf2a978b3
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953191"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143080"
 ---
 # <a name="idebugpendingbreakpoint2delete"></a>IDebugPendingBreakpoint2::Delete
 Usuwa ten oczekujący punkt przerwania i wszystkie punkty przerwania powiązane z nim.

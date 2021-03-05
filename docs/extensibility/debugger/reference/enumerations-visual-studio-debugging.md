@@ -1,4 +1,5 @@
 ---
+description: Poniżej przedstawiono wyliczenia dla zestawu SDK debugowania programu Visual Studio.
 title: Wyliczenia (debugowanie w programie Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45b26a6d5bc2a9bdb32d5a8412458e6a126486d7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 21813818436e62eb7e9fc16a393af69a613d6d58
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937130"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144146"
 ---
 # <a name="enumerations-visual-studio-debugging"></a>Wyliczenia (Debugowanie w programie Visual Studio)
 Poniżej przedstawiono wyliczenia dla [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] zestawu SDK debugowania.

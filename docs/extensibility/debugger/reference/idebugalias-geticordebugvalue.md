@@ -1,4 +1,5 @@
 ---
+description: Pobiera interfejs kodu zarządzanego, który reprezentuje wartość skojarzoną z tym aliasem.
 title: 'IDebugAlias:: GetICorDebugValue | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2ba5456ba3beabb1d5418d739be2aa74838daa41
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b809e16fefb9306da842f39d93bdb3dd0f7b404f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99947180"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143938"
 ---
 # <a name="idebugaliasgeticordebugvalue"></a>IDebugAlias::GetICorDebugValue
 Pobiera interfejs kodu zarządzanego, który reprezentuje wartość skojarzoną z tym aliasem.

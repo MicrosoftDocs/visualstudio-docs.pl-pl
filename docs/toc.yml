@@ -1070,6 +1070,8 @@
       items:
         - name: Hierarchia wywołań
           href: ide/reference/call-hierarchy.md
+        - name: Wiersz polecenia dla deweloperów & deweloper programu PowerShell
+          href: ide/reference/command-prompt-powershell.md
         - name: Podgląd zmian
           href: ide/preview-changes.md
         - name: 'Wybieranie elementów przybornika, składniki WPF'

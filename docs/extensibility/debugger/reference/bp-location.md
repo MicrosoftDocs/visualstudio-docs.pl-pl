@@ -1,4 +1,5 @@
 ---
+description: Określa typ struktury używany do opisywania lokalizacji punktu przerwania.
 title: BP_LOCATION | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 15f52f9b71bcb18131e03a7d7fbdd9f56ac4fa6b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 472dc7b2e642608691ea2adb2ad1a7dce170729f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902124"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144185"
 ---
 # <a name="bp_location"></a>BP_LOCATION
 Określa typ struktury używany do opisywania lokalizacji punktu przerwania.
