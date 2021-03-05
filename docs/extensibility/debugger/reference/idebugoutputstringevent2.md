@@ -1,4 +1,5 @@
 ---
+description: Ten interfejs jest wysyłany przez aparat debugowania (DE) do Menedżera debugowania sesji (SDM) do wyprowadzania ciągu.
 title: IDebugOutputStringEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8fa51311bb7548889cccdd2eb91e70a4679fb5de
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 604eace2f5f4be7a35b6f4b736722b435cf06928
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953308"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169954"
 ---
 # <a name="idebugoutputstringevent2"></a>IDebugOutputStringEvent2
 Ten interfejs jest wysyłany przez aparat debugowania (DE) do Menedżera debugowania sesji (SDM) do wyprowadzania ciągu.

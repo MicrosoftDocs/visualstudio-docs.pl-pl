@@ -1,4 +1,5 @@
 ---
+description: Ten interfejs rejestruje lub wyrejestrowuje program, który może być debugowany przy użyciu portu, na którym jest uruchomiony.
 title: IDebugPortNotify2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74b9e62b2e442bbab01942f155647f16eae29b09
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 759be0ff57da7c6bb65ed6ca8191720f835b894a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941661"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169343"
 ---
 # <a name="idebugportnotify2"></a>IDebugPortNotify2
 Ten interfejs rejestruje lub wyrejestrowuje program, który może być debugowany przy użyciu portu, na którym jest uruchomiony.

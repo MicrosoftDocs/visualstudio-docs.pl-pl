@@ -1,4 +1,5 @@
 ---
+description: Przełącza włączony stan oczekującego punktu przerwania.
 title: 'IDebugPendingBreakpoint2:: Enable | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d2da595754066adefb397bf90085b7d2e58ab49d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f3d0e92cf469a48e2ace84861a36cb256835d4cf
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953113"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169928"
 ---
 # <a name="idebugpendingbreakpoint2enable"></a>IDebugPendingBreakpoint2::Enable
 Przełącza włączony stan oczekującego punktu przerwania.

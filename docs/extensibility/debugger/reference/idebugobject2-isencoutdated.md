@@ -1,4 +1,5 @@
 ---
+description: Ta metoda określa, czy stan edycji i kontynuowania tego obiektu lub kontenera nadrzędnego jest nieaktualny.
 title: 'IDebugObject2:: IsEncOutdated | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 94f861e6a45b05c8db1b7e7e76815579f6568c69
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 583b77ed4f3fbfc81bb595ddde025b8c08f169dd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953386"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170019"
 ---
 # <a name="idebugobject2isencoutdated"></a>IDebugObject2::IsEncOutdated
 Ta metoda określa, czy stan edycji i kontynuowania tego obiektu lub kontenera nadrzędnego jest nieaktualny. Niestandardowa ewaluatora wyrażeń nie implementuje tej metody i zawsze zwraca wartość `E_NOTIMPL` .

@@ -1,4 +1,5 @@
 ---
+description: Ten interfejs powiadamia odbiornik (zazwyczaj Menedżera debugowania sesji [SDM] lub aparat debugowania) o tworzeniu i zniszczeniu procesu i programu na określonym porcie.
 title: IDebugPortEvents2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba68608e09405265940686bbb235a41c53959943
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 50dadee6ac2e1d1a441796aac7ca49614b84bcdf
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891192"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169473"
 ---
 # <a name="idebugportevents2"></a>IDebugPortEvents2
 Ten interfejs powiadamia odbiornik (zazwyczaj Menedżera debugowania sesji [SDM] lub aparat debugowania) o tworzeniu i zniszczeniu procesu i programu na określonym porcie. Te informacje mogą służyć do prezentowania widoku w czasie rzeczywistym procesów i programów uruchomionych na porcie.
