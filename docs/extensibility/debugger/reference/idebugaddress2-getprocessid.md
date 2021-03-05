@@ -1,4 +1,5 @@
 ---
+description: Pobiera identyfikator procesu, który jest właścicielem obiektu reprezentowanego przez ten interfejs IDebugAddress2.
 title: 'IDebugAddress2:: GetProcessID | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 493f2476eef1cdb68f825240fa4b56779ef7a0d2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: eeae55e91df8dac3fb176952a352df642facb055
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944872"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154954"
 ---
 # <a name="idebugaddress2getprocessid"></a>IDebugAddress2::GetProcessID
 Pobiera identyfikator procesu, który jest właścicielem obiektu reprezentowanego przez ten interfejs [IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md) .

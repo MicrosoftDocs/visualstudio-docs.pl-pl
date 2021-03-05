@@ -1,6 +1,6 @@
 ---
 title: Zastosuj edycje w trybie przerwania za pomocą Edytuj i Kontynuuj | Microsoft Docs
-Description: Zobacz, jak używać Edytuj i Kontynuuj, aby edytować kod Visual Basic w trybie przerwania. Istnieją różne sposoby wprowadzania trybu przerwania.
+description: Zobacz, jak używać Edytuj i Kontynuuj, aby edytować kod Visual Basic w trybie przerwania. Istnieją różne sposoby wprowadzania trybu przerwania.
 ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 46cc695461d7575c7093987c175836896732dce6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a9074d992c06c1b7d49f59481bee35345c5199f8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913399"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155045"
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>Instrukcje: stosowanie edycji w trybie przerwania za pomocą Edytuj i Kontynuuj (Visual Basic)
 Możesz użyć Edytuj i Kontynuuj, aby edytować swój kod w trybie przerwania, a następnie kontynuować bez zatrzymywania i ponownego uruchamiania.

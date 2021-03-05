@@ -1,6 +1,6 @@
 ---
 title: Debugowanie Self-Hosted usługi WCF | Microsoft Docs
-Description: Dowiedz się, jak debugować samodzielną usługę WCF. Najprostszym sposobem (ale nie zawsze jest możliwe) jest skonfigurowanie programu Visual Studio do uruchamiania klienta i serwera.
+description: Dowiedz się, jak debugować samodzielną usługę WCF. Najprostszym sposobem (ale nie zawsze jest możliwe) jest skonfigurowanie programu Visual Studio do uruchamiania klienta i serwera.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2edcf359bd54774647ff1a5957d741fec25b60a9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3cd11966347cd90576eb78a59f6c7eb96cc697ef
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915809"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155084"
 ---
 # <a name="how-to-debug-a-self-hosted-wcf-service"></a>Porady: debugowanie hostowania samoobsługowego WCF
 *Samoobsługowa usługa* to usługa WCF, która nie działa w ramach usług IIS, hosta usługi WCF ani [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] serwera deweloperskiego. Najprostszym sposobem na Debugowanie samoobsługowego programu WCF jest skonfigurowanie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] uruchamiania klienta i serwera w przypadku wybrania opcji **Rozpocznij debugowanie** w menu **Debuguj** .

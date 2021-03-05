@@ -1,4 +1,5 @@
 ---
+description: W poniższej tabeli przedstawiono typy symboli w hierarchii leksykalnej.
 title: Hierarchia leksykalna typów symboli | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d1c9284637be43ab30d35d3e0cb4aea937c0a224
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 605b16d2a53178b52095e9919c10bba53f3f21a1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853255"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155391"
 ---
 # <a name="lexical-hierarchy-of-symbol-types"></a>Hierarchia leksykalna typów symboli
 W poniższej tabeli przedstawiono typy symboli w hierarchii leksykalnej.

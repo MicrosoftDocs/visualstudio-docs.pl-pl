@@ -1,4 +1,5 @@
 ---
+description: Użyj DIA SDK, aby uzyskać dostęp do informacji dotyczących debugowania firmy Microsoft.
 title: Przegląd (zestaw SDK dostępu do interfejsu debugowania) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -21,12 +22,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a3fb8d56ca4df9912862346e5b096b2bb5414881
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c505216cd38b5321f291515794fc07ff58e8d698
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862319"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155363"
 ---
 # <a name="overview-debug-interface-access-sdk"></a>Przegląd (Zestaw SDK dostępu do interfejsu debugowania)
 Użyj DIA SDK, aby uzyskać dostęp do informacji dotyczących debugowania firmy Microsoft. DIA SDK udostępnia zestaw interfejsów API opartych na modelu COM, który eliminuje konieczność ponownego pisania kodu, gdy firma Microsoft zmieni format informacji debugowania. DIA SDK umożliwia również odczytywanie z wyboru zestawu poprzednich wersji informacji o debugowaniu znajdujących się w plikach. pdb i. dbg generowanych przez [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] wersje 5,0 i nowsze.

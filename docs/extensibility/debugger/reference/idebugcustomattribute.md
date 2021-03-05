@@ -1,4 +1,5 @@
 ---
+description: Ten interfejs reprezentuje atrybut niestandardowy i może podawać nazwę, element nadrzędny i typ klasy atrybutu.
 title: IDebugCustomAttribute | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1baa46cd9be53134d42c71e8c2bd88e3e2c38d4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 724aedb41a11607f89193b51f41e403a6da7dd45
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99907949"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154499"
 ---
 # <a name="idebugcustomattribute"></a>IDebugCustomAttribute
 Ten interfejs reprezentuje atrybut niestandardowy i może podawać nazwę, element nadrzędny i typ klasy atrybutu.

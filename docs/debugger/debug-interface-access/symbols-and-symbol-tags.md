@@ -1,4 +1,5 @@
 ---
+description: Informacje debugowania dotyczące skompilowanego programu są przechowywane w pliku bazy danych programu (. pdb) jako symbole, które są dostępne za pomocą interfejsów API zestawu dostęp do interfejsu debugowania (DIA).
 title: Symbole i Tagi symboli | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 12f1927e4290ff9d008eff9f497c9d570d9d44f8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 98631149e5a53c13bfc9b12b0d6de165c345e29a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862284"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155286"
 ---
 # <a name="symbols-and-symbol-tags"></a>Symbole i znaczniki symboli
 Informacje debugowania dotyczące skompilowanego programu są przechowywane w pliku bazy danych programu (. pdb) jako symbole, które są dostępne za pomocą interfejsów API zestawu dostęp do interfejsu debugowania (DIA). Wszystkie symbole mają właściwość [IDiaSymbol:: get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) i [IDiaSymbol:: get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md) . `symTag`Właściwość wskazuje rodzaj symbolu zdefiniowany przez Wyliczenie [wyliczenia SymTagEnum —](../../debugger/debug-interface-access/symtagenum.md) . `symIndexId`Właściwość jest `DWORD` wartością, która zawiera unikatowy identyfikator dla każdego wystąpienia symbolu.

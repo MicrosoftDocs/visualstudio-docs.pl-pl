@@ -1,4 +1,5 @@
 ---
+description: Zawiera dodatkowe właściwości dla obiektu System. Threading. Tasks. Task.
 title: Klasa ContingentProperties — Wewnętrzne elementy członkowskie | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f332c715c8a182b30191cd96c8f1d1438cbdefd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2303318c7a5f36027ce7709c5b09b5846fc6fab6
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930489"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154980"
 ---
 # <a name="contingentproperties-class---internal-members"></a>Klasa ContingentProperties — Wewnętrzne elementy członkowskie
 Zawiera dodatkowe właściwości dla <xref:System.Threading.Tasks.Task> obiektu.

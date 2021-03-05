@@ -1,4 +1,5 @@
 ---
+description: Niszczy wystąpienie klasy VsgDbg.
 title: 'VsgDbg:: ~ VsgDbg (destruktor) | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 53d969e6be772b446598c9c3644582684be488a8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d90664723695756ebd8acdc7c56bec1fcbd08a31
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861351"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155229"
 ---
 # <a name="vsgdbgvsgdbg-destructor"></a>VsgDbg::~VsgDbg (Destruktor)
 Niszczy wystąpienie `VsgDbg` klasy. Jeśli informacje o grafice są aktywnie rejestrowane, plik dziennika grafiki zostanie sfinalizowany i zamknięty, a zasoby, które były używane podczas aktywnie przechwytywania informacji graficznych, są uwalniane.

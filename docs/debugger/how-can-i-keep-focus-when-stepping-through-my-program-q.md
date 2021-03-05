@@ -1,6 +1,6 @@
 ---
 title: Zachowaj fokus podczas przechodzenia przez moją aplikację | Microsoft Docs
-Description: Używaj debugowania zdalnego, aby zapobiec utracie fokusu przez program podczas debugowania problemu z aktywacją okna.
+description: Używaj debugowania zdalnego, aby zapobiec utracie fokusu przez program podczas debugowania problemu z aktywacją okna.
 ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b821c374a87983ab8cb2667b434b1509e8449f31
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9700b5f62637cb70900845185578fbb272f5a22b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911438"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155170"
 ---
 # <a name="how-can-i-keep-focus-when-stepping-through-my-app"></a>Jak zachować fokus podczas przechodzenia przez aplikację?
 ## <a name="description"></a>Opis
