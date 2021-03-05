@@ -1,4 +1,5 @@
 ---
+description: Pobiera interfejs danych ramek dla otaczającej funkcji.
 title: 'IDiaFrameData:: get_functionParent | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c5954bb80afde6d0ab33a4ad14b1ab08a4435f8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c03eb86e7575652fd260aa9a7018081992b78010
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99864993"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102157744"
 ---
 # <a name="idiaframedataget_functionparent"></a>IDiaFrameData::get_functionParent
 Pobiera interfejs danych ramek dla otaczającej funkcji.

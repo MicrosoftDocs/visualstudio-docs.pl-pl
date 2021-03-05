@@ -1,4 +1,5 @@
 ---
+description: Tworzy moduł wyliczający, który zawiera ten sam stan wyliczenia co bieżący moduł wyliczający dane ramek.
 title: 'IDiaEnumFrameData:: Clone | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e5c2b6b70c1e6c4b68c5597aa71f17fb491be1ac
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9a5df5295143e9a6fb815ddc78d103b910ccfda7
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99856888"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158086"
 ---
 # <a name="idiaenumframedataclone"></a>IDiaEnumFrameData::Clone
 Tworzy moduł wyliczający, który zawiera ten sam stan wyliczania co bieżący moduł wyliczający.

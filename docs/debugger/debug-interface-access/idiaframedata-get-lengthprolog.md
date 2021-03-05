@@ -1,4 +1,5 @@
 ---
+description: 'IDiaFrameData:: get_lengthProlog Pobiera liczbę bajtów kodu prologu w bloku.'
 title: 'IDiaFrameData:: get_lengthProlog | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dece324f2da92c0b405bede4d7c2b3c1f2ad7789
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8a4181b36162100b2b69f7dc4e932059695a141e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855915"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102157729"
 ---
 # <a name="idiaframedataget_lengthprolog"></a>IDiaFrameData::get_lengthProlog
 Pobiera liczbę bajtów kodu prologu w bloku.

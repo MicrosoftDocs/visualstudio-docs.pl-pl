@@ -1,4 +1,5 @@
 ---
+description: Pobiera unikatowy identyfikator jednostka kompilacji, który przyczynia się do tego wiersza.
 title: 'IDiaLineNumber:: get_compilandId | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 30e944c04eb3a6fb7fd7bcc2a7749edbb4d9f2f3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 090b8ac199ab709c453bd5f3280afe1abd088077
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855754"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102157582"
 ---
 # <a name="idialinenumberget_compilandid"></a>IDiaLineNumber::get_compilandId
 Pobiera unikatowy identyfikator jednostka kompilacji, który przyczynia się do tego wiersza.

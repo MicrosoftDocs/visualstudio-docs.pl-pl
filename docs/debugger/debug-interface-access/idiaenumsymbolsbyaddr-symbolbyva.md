@@ -1,4 +1,5 @@
 ---
+description: Umieszcza moduł wyliczający, wykonując wyszukiwanie według adresu wirtualnego (VA).
 title: 'IDiaEnumSymbolsByAddr:: symbolByVA | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f3e4d5e4fcaad973ef21263e4eb3e5af6b42265e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e78c9c72174ccd9a0320e8a3b60778583da5f51b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99856055"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102157890"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyva"></a>IDiaEnumSymbolsByAddr::symbolByVA
 Umieszcza moduł wyliczający, wykonując wyszukiwanie według adresu wirtualnego (VA).

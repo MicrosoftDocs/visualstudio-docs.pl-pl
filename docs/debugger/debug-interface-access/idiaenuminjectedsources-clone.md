@@ -1,4 +1,5 @@
 ---
+description: Tworzy moduł wyliczający, który zawiera ten sam stan wyliczania co bieżący moduł wyliczający źródła.
 title: 'IDiaEnumInjectedSources:: Clone | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0426dd3226d0796187b2c03e7b2291bd6c1bf2b6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7752f3b98ff6f4739f92f501297b72501ce0352b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99856748"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158016"
 ---
 # <a name="idiaenuminjectedsourcesclone"></a>IDiaEnumInjectedSources::Clone
 Tworzy moduł wyliczający, który zawiera ten sam stan wyliczania co bieżący moduł wyliczający.

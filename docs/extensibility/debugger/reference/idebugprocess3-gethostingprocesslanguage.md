@@ -1,4 +1,5 @@
 ---
+description: Ta metoda zwraca identyfikator GUID reprezentujący język tego procesu określony przez wywołanie SetHostingProcessLanguage.
 title: 'IDebugProcess3:: GetHostingProcessLanguage | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9743b03af9bf795d5f058a14e3f0d5981657e461
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 303f0e5dcd4cc87bbc13e55fcc9b95bc870213d5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915263"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158439"
 ---
 # <a name="idebugprocess3gethostingprocesslanguage"></a>IDebugProcess3::GetHostingProcessLanguage
 Ta metoda zwraca `GUID` reprezentowanie języka tego procesu jako zestawu przez wywołanie [SetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-sethostingprocesslanguage.md).
