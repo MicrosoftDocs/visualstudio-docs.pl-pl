@@ -1,4 +1,5 @@
 ---
+description: Pobiera kontekst pamięci odwołania.
 title: 'IDebugReference2:: GetMemoryContext | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6d34684be7a08199bfc434b62600b9d1287d0354
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 77bdda6ca03aebdf0e8b10aed24f1f98805f2954
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909626"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151340"
 ---
 # <a name="idebugreference2getmemorycontext"></a>IDebugReference2::GetMemoryContext
 Pobiera kontekst pamięci odwołania. Zarezerwowane do użytku w przyszłości.

@@ -2,7 +2,7 @@
 title: Co nowego w programie Visual Studio 2019
 titleSuffix: ''
 description: Dowiedz się więcej o nowych funkcjach w programie Visual Studio 2019.
-ms.date: 03/02/2021
+ms.date: 03/04/2021
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: e3dc790310fdff71539c6cae354a0170ec36e65e
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: bdbad2633136ead7cfe04a1ef82e3cc9db587212
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101684023"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151418"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Co nowego w programie Visual Studio 2019
 
@@ -47,11 +47,19 @@ Obejrzyj poniższe wideo, aby dowiedzieć się więcej o tym, jak zaoszczędzić
 
 ### <a name="improved-search"></a>Ulepszone wyszukiwanie
 
-Nowe środowisko wyszukiwania znane wcześniej jako szybkie uruchamianie jest szybsze i bardziej wydajne. Teraz wyniki wyszukiwania są wyświetlane dynamicznie podczas wpisywania. Wyniki wyszukiwania mogą często zawierać skróty klawiaturowe poleceń, dzięki czemu można łatwiej znają je do użytku w przyszłości.
+Nowe środowisko wyszukiwania znane wcześniej jako szybkie uruchamianie jest szybsze i bardziej wydajne. Teraz wyniki wyszukiwania są wyświetlane dynamicznie podczas wpisywania. Wyniki wyszukiwania mogą często zawierać skróty klawiaturowe poleceń, dzięki czemu można znają je do użytku w przyszłości.
 
    ![Animacja nowego środowiska wyszukiwania w programie Visual Studio 2019](media/vs-2019/new-search-feature.gif "Nowe środowisko wyszukiwania w programie Visual Studio 2019.")
 
 Nowa logika wyszukiwania rozmytego będzie dowiedzieć się, co jest potrzebne, bez względu na literówki. Tak więc, niezależnie od tego, czy szukasz poleceń, ustawień, dokumentacji lub innych użytecznych funkcji, Nowa funkcja wyszukiwania ułatwia znalezienie szukanych informacji.
+
+Aby uzyskać więcej informacji, zobacz [Korzystanie z programu Visual Studio Search](visual-studio-search.md).
+
+#### <a name="intelligent-search-service"></a>Usługa inteligentnego wyszukiwania
+
+**Nowość w 16,9**: za pomocą technologii wykorzystującej chmurę, sztucznej analizy i uczenia maszynowego udoskonalono nasze wyniki wyszukiwania. Wyszukiwanie w programie Visual Studio jest bardziej istotne, ale może także ułatwić odnajdywanie funkcji produktu.
+
+Aby uzyskać więcej informacji, zobacz wpis w blogu [usługi inteligentnego wyszukiwania programu Visual Studio](https://devblogs.microsoft.com/visualstudio/intelligent-visual-studio-search-service/) .
 
 ### <a name="refactorings"></a>Refaktoryzacje
 

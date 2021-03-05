@@ -1,4 +1,5 @@
 ---
+description: Klasy zaprzyjaźnione i zaprzyjaźnione funkcje są identyfikowane przez symbole SymTagFriend.
 title: Zaprzyjaźniony (zestaw SDK dostępu do interfejsu debugowania) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b895555ce1334fa306b64fe213787bdf5dc827e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4a0e9784c864b2b591847f3d77ced553762911c1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865385"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151217"
 ---
 # <a name="friend-debug-interface-access-sdk"></a>Przyjaciel (Zestaw SDK dostępu do interfejsu debugowania)
 Klasy zaprzyjaźnione i zaprzyjaźnione funkcje są identyfikowane przez `SymTagFriend` symbole. Są one elementami podrzędnymi nadrzędnych typów zdefiniowanych przez użytkownika (UDTs) i mają właściwość [IDiaSymbol:: get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md) .
