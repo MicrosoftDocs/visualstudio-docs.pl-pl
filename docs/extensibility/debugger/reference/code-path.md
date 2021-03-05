@@ -1,4 +1,5 @@
 ---
+description: Opisuje metodę lub wywołanie funkcji.
 title: CODE_PATH | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d4bba942b0740fba98e88a3cddcecfcd43d7d215
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3ecdbbfdbcffbb8b1aa6246e2e99ef6eabfa1f19
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900300"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170962"
 ---
 # <a name="code_path"></a>CODE_PATH
 Opisuje metodę lub wywołanie funkcji.

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f090729cdd0d08d39cf97cab9c3899f0b77c80eb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 285d624debed6dc498e3d274af2839137b5094d1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900472"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171282"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Instrukcje: publikowanie aplikacji WPF z włączonymi stylami wizualizacji
 
@@ -110,9 +110,9 @@ Style wizualne umożliwiają zmianę wyglądu wspólnych kontrolek w zależnośc
 
 ## <a name="embed-the-manifest-file-into-the-executable-file-of-the-published-solution"></a>Osadź plik manifestu w pliku wykonywalnym opublikowanego rozwiązania
 
-1. Otwórz **wiersz polecenia programu Visual Studio**.
+1. Otwórz **wiersz polecenia dla deweloperów dla programu Visual Studio**.
 
-    Aby uzyskać więcej informacji na temat sposobu otwierania **wiersza polecenia programu Visual Studio**, zobacz [monity poleceń](/dotnet/framework/tools/developer-command-prompt-for-vs).
+    Aby uzyskać więcej informacji na temat otwierania wiersz polecenia dla deweloperów dla programu Visual Studio, zobacz [wiersz polecenia dla deweloperów i Developer PowerShell](../ide/reference/command-prompt-powershell.md).
 
    > [!NOTE]
    > Pozostałe kroki dotyczą następujących założeń rozwiązania:
@@ -179,7 +179,7 @@ Style wizualne umożliwiają zmianę wyglądu wspólnych kontrolek w zależnośc
 
 ## <a name="see-also"></a>Zobacz też
 
--[Rozwiązywanie problemów dotyczących określonych błędów we wdrożeniach ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
+- [Rozwiązywanie problemów z określonymi błędami wdrożeń technologii ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
 - [Przegląd stylów wizualnych](/windows/desktop/Controls/visual-styles-overview)
 - [Włączanie stylów wizualnych](/windows/desktop/Controls/cookbook-overview)
-- [Wiersze poleceń](/dotnet/framework/tools/developer-command-prompt-for-vs)
+- [wiersz polecenia dla deweloperów i deweloper programu PowerShell](../ide/reference/command-prompt-powershell.md)

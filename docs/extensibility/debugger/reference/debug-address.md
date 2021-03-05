@@ -1,4 +1,5 @@
 ---
+description: Ta struktura reprezentuje adres.
 title: DEBUG_ADDRESS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e02f78e82c87bceb10b71bcb303a78f25a9a623e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a13a83b5622053593702409c44b6481ba76d17d8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899123"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170682"
 ---
 # <a name="debug_address"></a>DEBUG_ADDRESS
 Ta struktura reprezentuje adres.

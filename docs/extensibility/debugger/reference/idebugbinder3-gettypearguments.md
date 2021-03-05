@@ -1,4 +1,5 @@
 ---
+description: Ta metoda pobiera listę typów argumentów skojarzonych z tym obiektem.
 title: 'IDebugBinder3:: GetTypeArguments — | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1b5c0e89909f06da9d65d15bc6098e636d36a2de
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 74cbd6e67a82113e43226ded8640630be50ba086
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927148"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102173900"
 ---
 # <a name="idebugbinder3gettypearguments"></a>IDebugBinder3::GetTypeArguments
 Ta metoda pobiera listę typów argumentów skojarzonych z tym obiektem.

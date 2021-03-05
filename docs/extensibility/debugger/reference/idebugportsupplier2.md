@@ -1,4 +1,5 @@
 ---
+description: Ten interfejs dostarcza porty do Menedżera debugowania sesji (SDM).
 title: IDebugPortSupplier2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf9cd3cb82e2b14811a8ec52a651248e2990ae27
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5e9523212ea83182e69e83b4f8353f1a9ba7dd8c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840369"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102172042"
 ---
 # <a name="idebugportsupplier2"></a>IDebugPortSupplier2
 Ten interfejs dostarcza porty do Menedżera debugowania sesji (SDM).

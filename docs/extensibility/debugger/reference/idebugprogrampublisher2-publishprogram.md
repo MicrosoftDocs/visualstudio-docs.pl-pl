@@ -1,4 +1,5 @@
 ---
+description: Ta metoda sprawia, że program jest dostępny dla aparatów debugowania (DEs) i Menedżera debugowania sesji.
 title: IDebugProgramPublisher2::P ublishProgram | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1d13154f172fdd92ea4a3d4c96321e884516a74c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2904376efa1a6798cbba967b93ad1c93d395b919
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959561"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171592"
 ---
 # <a name="idebugprogrampublisher2publishprogram"></a>IDebugProgramPublisher2::PublishProgram
 Ta metoda sprawia, że program jest dostępny dla aparatów debugowania (DEs) i Menedżera debugowania sesji.

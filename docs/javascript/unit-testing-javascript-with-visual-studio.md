@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: e10f9b628d1d9fbbdb2911977fe7e63b1a7b6d57
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 04ef9834fdc66256b601ecdcf156e4d290447ce3
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957481"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171321"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Testowanie jednostkowe JavaScript i TypeScript w programie Visual Studio
 
@@ -97,7 +97,7 @@ W przypadku języka TypeScript testy jednostkowe są uruchamiane względem wygen
 
 ### <a name="run-tests-from-the-command-line"></a>Uruchamianie testów z poziomu wiersza polecenia
 
-Testy można uruchomić z [wiersz polecenia dla deweloperów](/dotnet/framework/tools/developer-command-prompt-for-vs) dla programu Visual Studio przy użyciu następującego polecenia:
+Testy z [wiersz polecenia dla deweloperów dla programu Visual Studio](../ide/reference/command-prompt-powershell.md) można uruchomić przy użyciu następującego polecenia:
 
 ```
 vstest.console.exe <path to project file>\NodejsConsoleApp23.njsproj /TestAdapterPath:<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter
@@ -152,11 +152,12 @@ Aby zapoznać się z dobrymi przykładami `find_tests` i `run_tests` implementac
 Odnajdywanie dostępnych platform testowych odbywa się po rozpoczęciu programu Visual Studio. Jeśli po uruchomieniu programu Visual Studio zostanie dodana struktura, uruchom ponownie program Visual Studio, aby wykryć strukturę. Nie trzeba jednak ponownie uruchamiać w przypadku wprowadzania zmian w implementacji.
 
 ## <a name="unit-tests-in-other-project-types"></a>Testy jednostkowe w innych typach projektów
+
 Nie możesz pisać testów jednostkowych tylko w projektach Node.js. Po dodaniu właściwości TestFramework i TestRoot do dowolnego projektu C# lub Visual Basic testy te zostaną wyliczone i można uruchomić je przy użyciu okna Eksplorator testów.
 
 Aby włączyć tę funkcję, kliknij prawym przyciskiem myszy węzeł projektu w Eksplorator rozwiązań, wybierz polecenie **Zwolnij projekt**, a następnie wybierz polecenie **Edytuj projekt**. Następnie w pliku projektu Dodaj następujące dwa elementy do grupy właściwości.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Upewnij się, że grupa właściwości, do której dodawane są elementy, nie ma określonego warunku.
 > Może to spowodować nieoczekiwane zachowanie.
 
@@ -170,6 +171,7 @@ Aby włączyć tę funkcję, kliknij prawym przyciskiem myszy węzeł projektu w
 Następnie Dodaj testy do podanego głównego folderu testowego i będą one dostępne do uruchomienia w oknie Eksplorator testów. Jeśli nie pojawią się na początku, może być konieczne ponowne skompilowanie projektu.
 
 ### <a name="unit-test-net-core-and-net-standard"></a>Test jednostkowy .NET Core i .NET Standard
+
 Oprócz powyższych właściwości należy również zainstalować pakiet NuGet [Microsoft. JavaScript. testu jednostkowego](https://www.nuget.org/packages/Microsoft.JavaScript.UnitTest/) i ustawić właściwość:
 
 ```xml

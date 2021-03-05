@@ -1,4 +1,5 @@
 ---
+description: Pobiera indeks tego parametru generycznego.
 title: 'IDebugGenericParamField:: getIndex | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c45f7c83c840566fb494c7944ccab9dbe37c3875
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8f14326572964c91a7691d1a940ef6df86ed334b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869703"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102172626"
 ---
 # <a name="idebuggenericparamfieldgetindex"></a>IDebugGenericParamField::GetIndex
 Pobiera indeks tego parametru generycznego.
