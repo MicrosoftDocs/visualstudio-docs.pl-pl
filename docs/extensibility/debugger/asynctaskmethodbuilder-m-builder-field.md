@@ -1,4 +1,5 @@
 ---
+description: Reprezentuje obiekt konstruktora generycznego, do którego to wystąpienie nieogólne.
 title: AsyncTaskMethodBuilder.m_builder pole | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 911b094c991e041a3f6a1a466d587294c6a09b4e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 75c2bfafffd20f32db5d49c5938f25bb693f297d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862191"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145706"
 ---
 # <a name="asynctaskmethodbuilderm_builder-field"></a>Pole AsyncTaskMethodBuilder.m_builder
 Reprezentuje obiekt konstruktora generycznego, do którego to wystąpienie nieogólne.

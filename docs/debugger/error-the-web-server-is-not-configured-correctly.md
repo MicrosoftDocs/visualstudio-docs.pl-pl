@@ -1,4 +1,5 @@
 ---
+description: Po pomyślnym wykonaniu kroków w celu rozwiązania problemu i przed ponowieniem próby debugowania należy zresetować usługi IIS.
 title: Serwer sieci Web nie jest prawidłowo skonfigurowany | Microsoft Docs
 ms.date: 09/20/2017
 ms.topic: error-reference
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a5c50822b516b73206791e3d8538bd174cfc8f6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 82af476e51e8fe016e5966847c8c6a7b3e45b0ce
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871237"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146525"
 ---
 # <a name="error-the-web-server-is-not-configured-correctly"></a>Błąd: Serwer sieci Web nie jest prawidłowo skonfigurowany
 

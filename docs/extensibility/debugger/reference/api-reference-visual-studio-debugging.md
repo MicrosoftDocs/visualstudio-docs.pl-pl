@@ -1,4 +1,5 @@
 ---
+description: Sekcja Reference zawiera omówienie pojęć dotyczących interfejsu API, przewodnik, który pokazuje składnię i użycie dla wszystkich elementów interfejsu API oraz asortyment przykładów kodu.
 title: Dokumentacja interfejsu API (debugowanie programu Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24e7c8892798d9192aa59c946e1c978899b4d173
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 47c6697945c6c588a8b4e57ab03d573d45c4d4cf
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912039"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144640"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>Dokumentacja interfejsu API (Debugowanie w programie Visual Studio)
 Sekcja Reference zawiera omówienie pojęć dotyczących interfejsu API, przewodnik, który pokazuje składnię i użycie dla wszystkich elementów interfejsu API oraz asortyment przykładów kodu. Wszystkie odwołania są wyświetlane alfabetycznie według kategorii.

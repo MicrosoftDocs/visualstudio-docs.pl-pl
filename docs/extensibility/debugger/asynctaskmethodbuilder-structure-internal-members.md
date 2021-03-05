@@ -1,4 +1,5 @@
 ---
+description: W tym artykule opisano wewnętrzne elementy członkowskie klasy System. Runtime. CompilerServices. AsyncTaskMethodBuilder.
 title: AsyncTaskMethodBuilder, struktura — składowe wewnętrzne
 titleSuffix: ''
 ms.custom: SEO-VS-2020
@@ -13,12 +14,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 604f86311e2689d4301fec8a186e2a102d633062
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 241b4f3aae50ac70afc8320b637535035ee427e2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888436"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145693"
 ---
 # <a name="asynctaskmethodbuilder-structure---internal-members"></a>Struktura AsyncTaskMethodBuilder — wewnętrzne elementy członkowskie
 W tym temacie opisano wewnętrzne elementy członkowskie <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder> klasy. Aby uzyskać ogólne informacje na temat tej klasy, zobacz temat informacje o <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder> odwołaniach.

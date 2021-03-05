@@ -1,4 +1,5 @@
 ---
+description: Określa, gdzie znajduje się zestaw.
 title: ASSEMBLYLOCRESOLUTION | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e2611828f1e9bb2aec740e392db18ce60839d19a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6756d3c0ee996c0fca2eb35ff92c552f750f2817
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952398"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144627"
 ---
 # <a name="assemblylocresolution"></a>ASSEMBLYLOCRESOLUTION
 Określa, gdzie znajduje się zestaw.

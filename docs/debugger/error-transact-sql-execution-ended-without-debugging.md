@@ -1,4 +1,5 @@
 ---
+description: Ten błąd występuje, gdy próbujesz debugować procedurę języka Transact-SQL lub SQLCLR, a debuger nie odbiera komunikatów debugowania z SQL Server.
 title: Wykonanie języka Transact-SQL zakończyło się bez debugowania | Microsoft Docs
 ms.date: 11/08/2018
 ms.topic: error-reference
@@ -15,12 +16,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 660b6c8b1f8d09baf35d3d019fe80d428e9d7525
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 40b0b89474b24e53c69df14894e50ee502c6eb9b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871133"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146499"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>Błąd: Wykonanie Transact-SQL zakończyło się bez debugowania
 

@@ -2,7 +2,7 @@
 title: Wprowadzenie do narzędzi profilowania
 description: Zapoznaj się z różnymi narzędziami diagnostycznymi dostępnymi w programie Visual Studio.
 ms.custom: ''
-ms.date: 09/08/2020
+ms.date: 02/18/2021
 ms.topic: overview
 f1_keywords:
 - vs.diagnosticshub.overview
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bfd7055303fed2c18501d5eea3b49b34c68ec248
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 855a04fae1d5b406019e758c6d6f931d6657bb4e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929111"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145381"
 ---
 # <a name="first-look-at-profiling-tools"></a>Pierwsze spojrzenie na narzędzia profilowania
 
@@ -162,6 +162,14 @@ Narzędzie wyświetla każde zapytanie w widoku listy. Można wyświetlić infor
 
 ![Alokacja](./media/db-gotosource.png "Alokacja")
 
+## <a name="visualize-net-counters-net-core"></a>Wizualizowanie liczników .NET (.NET Core)
+
+Począwszy od programu Visual Studio 2019 w wersji 16,7, można użyć [Narzędzia liczniki platformy .NET](../profiling/dotnet-counters-tool.md) w programie Visual Studio do wizualizacji liczników wydajności. Można wizualizować liczniki utworzone przy użyciu [liczników dotnet](/dotnet/core/diagnostics/dotnet-counters). Liczniki dotnet obsługują wiele liczników, takich jak użycie procesora CPU i rozmiar sterty modułu wyrzucania elementów bezużytecznych.
+
+Narzędzie wyświetla na żywo wartości dla każdego licznika w widoku listy.
+
+:::image type="content" source="../profiling/media/dotnet-counters-tool-collecting.png" alt-text="Trwa zbieranie narzędzi licznika platformy .NET.":::
+
 ::: moniker-end
 
 ## <a name="examine-ui-performance-and-accessibility-events-uwp"></a>Sprawdzanie wydajności interfejsu użytkownika i zdarzeń dostępności (platformy UWP)
@@ -235,6 +243,7 @@ Poniżej znajduje się tabela zawierająca listę różnych narzędzi oferowanyc
 |[Oś czasu aplikacji](../profiling/application-timeline.md)|tak (XAML)|tak|nie|
 |[Podgląd zdarzeń](../profiling/events-viewer.md)|tak|tak|tak|
 |[.NET Async](../profiling/analyze-async.md)|tak (tylko platforma .NET)|tak|tak|
+|[Liczniki .NET](../profiling/dotnet-counters-tool.md)|tak (tylko platforma .NET Core)|nie|tak (tylko ASP.NET Core)|
 |[Database](../profiling/analyze-database.md) (Baza danych)|tak (tylko platforma .NET Core)|nie|tak (tylko ASP.NET Core)|
 |[Eksplorator wydajności](#analyze-performance-legacy-tools)|nie|nie|nie|
 |[IntelliTrace](../debugger/intellitrace.md)|Tylko platforma .NET z Visual Studio Enterprise|Tylko platforma .NET z Visual Studio Enterprise|Tylko platforma .NET z Visual Studio Enterprise|

@@ -1,4 +1,5 @@
 ---
+description: Jeśli maszyna zdalna nie jest wyświetlana w oknie dialogowym połączenia zdalne, należy sprawdzić następujące typowe przyczyny.
 title: Maszyna zdalna nie jest wyświetlana w oknie dialogowym połączenia zdalne | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: be39d733b2e5fe83fa9f7e2241c7de06980bb583
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 407b33fdcc79b5ff51f34670c91bfd52ec522dac
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871372"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146772"
 ---
 # <a name="error-remote-machine-does-not-appear-in-a-remote-connections-dialog"></a>Błąd: Komputer zdalny nie jest wyświetlany w oknie dialogowym połączeń zdalnych
 Jeśli maszyna zdalna nie jest wyświetlana w oknie dialogowym połączenia zdalne, należy sprawdzić następujące typowe przyczyny.

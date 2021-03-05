@@ -1,4 +1,5 @@
 ---
+description: 'Podczas próby debugowania aplikacji ASP.NET działającej na serwerze sieci Web może zostać wyświetlony następujący komunikat o błędzie: nie można rozpocząć debugowania na serwerze sieci Web ".'
 title: Nie można rozpocząć debugowania na serwerze sieci Web | Microsoft Docs
 ms.date: 05/23/2018
 ms.topic: error-reference
@@ -26,12 +27,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 94dcfdc05f2d852e1a433067b0a574444632195d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 91fa3f74c5dd0f5f6a036d5da7a779e68462c426
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870886"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146369"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Błąd: Nie można rozpocząć debugowania na serwerze sieci Web
 
