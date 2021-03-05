@@ -1,4 +1,5 @@
 ---
+description: Dane wydajności systemu, które zostały zebrane podczas profilowania wskazują, że znacząca część obiektów for.NET pamięci programu Memory została odbrana w ramach generacji 2 wyrzucania elementów bezużytecznych w porównaniu do generacji 0 i wyrzucania elementów bezużytecznych generacji 1.
 title: DA0022 — wysoka liczba wyrzucania elementów bezużytecznych generacji 2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 61fb953b1eae3ecfb0aa9c87e8b10a25099cb12a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c0949dcf7bf55d079037ffa9cb160edeb35294d7
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967010"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223680"
 ---
 # <a name="da0022-high-rate-of-gen-2-garbage-collections"></a>DA0022: Duża częstotliwość odzyskiwania pamięci 2. generacji
 

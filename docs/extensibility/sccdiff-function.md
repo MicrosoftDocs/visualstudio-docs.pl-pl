@@ -1,4 +1,5 @@
 ---
+description: Ta funkcja wyświetla (lub opcjonalnie sprawdza) różnice między bieżącym plikiem (na dysku lokalnym) i jego ostatnią wersją zaewidencjonowania w systemie kontroli źródła.
 title: Funkcja SccDiff | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ff2b2d5e5a0043cde17fecd2d59c084d2958e32
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7f7573cafd8ea06537a7655897f3cc5907448cfa
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943117"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220849"
 ---
 # <a name="sccdiff-function"></a>SccDiff, funkcja
 Ta funkcja wyświetla (lub opcjonalnie sprawdza) różnice między bieżącym plikiem (na dysku lokalnym) i jego ostatnią wersją zaewidencjonowania w systemie kontroli źródła.

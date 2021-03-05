@@ -1,4 +1,5 @@
 ---
+description: Ta funkcja bada listę w pełni kwalifikowanych katalogów dla ich bieżącego stanu.
 title: Funkcja SccDirQueryInfo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d15809623067d9612eb2648d593264d61f08f6e1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: da0d42e2ef65aefc03e2813f32189876d0c07da1
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943091"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220823"
 ---
 # <a name="sccdirqueryinfo-function"></a>SccDirQueryInfo, funkcja
 Ta funkcja bada listę w pełni kwalifikowanych katalogów dla ich bieżącego stanu.

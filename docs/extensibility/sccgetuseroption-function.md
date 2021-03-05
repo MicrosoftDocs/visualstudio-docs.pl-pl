@@ -1,4 +1,5 @@
 ---
+description: Ta funkcja pobiera różne opcje specyficzne dla użytkownika.
 title: Funkcja SccGetUserOption | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e4bc3e4bf6acef8ff8de1cdcecb2596dcf6d86e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c137630e4a29fc534e9bfced16cffe862e07a046
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844557"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220628"
 ---
 # <a name="sccgetuseroption-function"></a>SccGetUserOption, funkcja
 Ta funkcja pobiera różne opcje specyficzne dla użytkownika.

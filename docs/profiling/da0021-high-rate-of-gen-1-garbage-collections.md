@@ -1,4 +1,5 @@
 ---
+description: Dane wydajności systemu, które zostały zebrane podczas profilowania wskazują, że znacząca część obiektów struktury for.NET pamięci została odbrana w ramach generacji 1 wyrzucania elementów bezużytecznych w porównaniu z zbieraniem danych generacji 0.
 title: DA0021 — wysoka liczba wyrzucania elementów bezużytecznych generacji 1 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 23d7e1f2c004b63f93f9f10334698eab14388421
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fb59c3581bf5064b7001a273232e62b731b8763f
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886369"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223696"
 ---
 # <a name="da0021-high-rate-of-gen-1-garbage-collections"></a>DA0021: Duża częstotliwość odzyskiwania pamięci 1. generacji
 

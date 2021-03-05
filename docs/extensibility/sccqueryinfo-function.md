@@ -1,4 +1,5 @@
 ---
+description: Ta funkcja uzyskuje informacje o stanie zestawu wybranych plików pod kontrolą źródła.
 title: Funkcja SccQueryInfo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2794e915efe35c2fee593d677ffd228c055a565a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 880cb2cf7db5c7a988d6549865de1864cb799e53
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836738"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221499"
 ---
 # <a name="sccqueryinfo-function"></a>SccQueryInfo, funkcja
 Ta funkcja uzyskuje informacje o stanie zestawu wybranych plików pod kontrolą źródła.

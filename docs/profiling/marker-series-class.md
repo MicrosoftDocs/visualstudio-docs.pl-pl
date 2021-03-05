@@ -1,4 +1,5 @@
 ---
+description: Reprezentuje kanał szeregowy zdarzeń generowanych przez jednego dostawcę.
 title: Klasa marker_series | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bcd4386b8eff7589993458f1f7f6baaf7f33d4a9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4df579ff4eb43dfca4c386716c49f12dae04e9fa
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917789"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223618"
 ---
 # <a name="marker_series-class"></a>Klasa marker_series
 Reprezentuje kanał szeregowy zdarzeń generowanych przez jednego dostawcę.

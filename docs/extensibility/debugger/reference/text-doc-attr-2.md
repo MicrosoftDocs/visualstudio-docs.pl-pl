@@ -1,4 +1,5 @@
 ---
+description: Opisuje atrybuty dokumentu.
 title: TEXT_DOC_ATTR_2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e7113cfead52348a1d1a85973b90014ca53226ed
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c8351753c5e8da9a320bd93c17e8138dedaff03d
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850729"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221863"
 ---
 # <a name="text_doc_attr_2"></a>TEXT_DOC_ATTR_2
 Opisuje atrybuty dokumentu.

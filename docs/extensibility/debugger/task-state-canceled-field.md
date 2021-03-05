@@ -1,4 +1,5 @@
 ---
+description: Zadanie zostało anulowane przed osiągnięciem stanu uruchomienia lub potwierdzenie jego anulowania i ukończone bez wyjątku.
 title: TASK_STATE_CANCELED pole | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76de853cfa1fbd524c87384da38a9438c6ac66bf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8e99148c223f86a0307a0588e7803a5fadf52d6a
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883574"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223332"
 ---
 # <a name="task_state_canceled-field"></a>Pole TASK_STATE_CANCELED
 Zadanie zostało anulowane przed osiągnięciem stanu uruchomienia lub potwierdzenie jego anulowania i ukończone bez wyjątku.
