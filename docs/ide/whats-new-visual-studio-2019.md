@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: bdbad2633136ead7cfe04a1ef82e3cc9db587212
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 8371b9baa22b72eff0c829426b1b39bcf42398f2
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 03/05/2021
-ms.locfileid: "102151418"
+ms.locfileid: "102221187"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Co nowego w programie Visual Studio 2019
 
@@ -57,7 +57,7 @@ Aby uzyskać więcej informacji, zobacz [Korzystanie z programu Visual Studio Se
 
 #### <a name="intelligent-search-service"></a>Usługa inteligentnego wyszukiwania
 
-**Nowość w 16,9**: za pomocą technologii wykorzystującej chmurę, sztucznej analizy i uczenia maszynowego udoskonalono nasze wyniki wyszukiwania. Wyszukiwanie w programie Visual Studio jest bardziej istotne, ale może także ułatwić odnajdywanie funkcji produktu.
+**Nowość w 16,9**: za pomocą technologii wykorzystującej chmurę, sztucznej analizy i uczenia maszynowego udoskonalono nasze wyniki wyszukiwania. Teraz nie tylko wyszukiwanie w programie Visual Studio daje bardziej istotne wyniki, ale może również ułatwić łatwiejsze odnajdywanie funkcji produktu.
 
 Aby uzyskać więcej informacji, zobacz wpis w blogu [usługi inteligentnego wyszukiwania programu Visual Studio](https://devblogs.microsoft.com/visualstudio/intelligent-visual-studio-search-service/) .
 

@@ -1,4 +1,5 @@
 ---
+description: Ta funkcja pobiera kopię co najmniej jednego pliku do przeglądania i kompilowania, ale nie do edycji.
 title: Funkcja SccGet | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50281ffdd233debd3c10672868e9debd4b1f395f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 799d51c607ce720502c269cf82fe5a857ec7a826
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965216"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220836"
 ---
 # <a name="sccget-function"></a>SccGet, funkcja
 Ta funkcja pobiera kopię co najmniej jednego pliku do przeglądania i kompilowania, ale nie do edycji. W większości systemów pliki są oznaczone jako tylko do odczytu.

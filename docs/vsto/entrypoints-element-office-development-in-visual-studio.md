@@ -1,4 +1,5 @@
 ---
+description: Element entryPoints przestrzeni nazw vstav3 zawiera wszystkie elementy punktu wejścia skojarzone z rozwiązaniem pakietu Office.
 title: '&lt;entryPoint — &gt; element (Programowanie Office w Visual Studio)'
 titleSuffix: ''
 ms.custom: seodec18
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0cd5b49183bc4754e894caf898f6ca6a0c0e5440
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 481c67302c84ce08f60c571eb17084b96c0322bd
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910447"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223176"
 ---
 # <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;entryPoint — &gt; element (Programowanie Office w Visual Studio)
   `entryPoints`Element `vstav3` przestrzeni nazw zawiera wszystkie `entryPoint` elementy skojarzone z rozwiązaniem pakietu Office.

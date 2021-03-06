@@ -1,4 +1,5 @@
 ---
+description: Ten interfejs jest wysyłany przez aparat debugowania (Anuluj) do Menedżera debugowania sesji (SDM), gdy wątek jest uruchomiony do ukończenia.
 title: IDebugThreadDestroyEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d8c349ab867fda76ffbade0c92aa31489321061
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 48390b220a1398e712af494a6d0f21024f659f49
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888189"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223124"
 ---
 # <a name="idebugthreaddestroyevent2"></a>IDebugThreadDestroyEvent2
 Ten interfejs jest wysyłany przez aparat debugowania (Anuluj) do Menedżera debugowania sesji (SDM), gdy wątek jest uruchomiony do ukończenia.

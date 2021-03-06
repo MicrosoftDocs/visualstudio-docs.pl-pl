@@ -1,4 +1,5 @@
 ---
+description: Ta funkcja wyświetla różnice między bieżącym katalogiem lokalnym na dysku klienta i odpowiednim projektem pod kontrolą źródła.
 title: Funkcja SccDirDiff | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b7f045669a0d4b7e4e206c6ad8e85db55edc4ef
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 98a843c061941765404397186af74ab71923a9da
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929215"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221603"
 ---
 # <a name="sccdirdiff-function"></a>SccDirDiff, funkcja
 Ta funkcja wyświetla różnice między bieżącym katalogiem lokalnym na dysku klienta i odpowiednim projektem pod kontrolą źródła.

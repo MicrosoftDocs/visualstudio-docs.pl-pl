@@ -1,4 +1,5 @@
 ---
+description: Ta metoda zwraca serwer proxy dla obiektu właściwości.
 title: 'IEEVisualizerService:: GetPropertyProxy | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1ae18e9e04d6de4be3dcaf28a0e8eae6303ae75e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cbcaa460546443dcbc714a3fa72a6ebc7479dfc3
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966425"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222864"
 ---
 # <a name="ieevisualizerservicegetpropertyproxy"></a>IEEVisualizerService::GetPropertyProxy
 Ta metoda zwraca serwer proxy dla obiektu właściwości.

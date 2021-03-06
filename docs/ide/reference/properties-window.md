@@ -1,4 +1,5 @@
 ---
+description: To okno służy do wyświetlania i zmieniania właściwości czasu projektowania oraz zdarzeń wybranych obiektów, które znajdują się w edytorach i projektantach.
 title: Okno Właściwości
 ms.date: 11/04/2016
 ms.topic: reference
@@ -20,12 +21,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ff6435aa006de851a14f4f04570d086a86a5999
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ddbfb4d001f73e30296a35c2cff4aae0e0c527f9
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967985"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221122"
 ---
 # <a name="properties-window"></a>Okno właściwości
 

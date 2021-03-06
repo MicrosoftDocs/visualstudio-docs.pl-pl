@@ -1,4 +1,5 @@
 ---
+description: Ta metoda służy do tworzenia usługi wizualizatora.
 title: 'IEEVisualizerServiceProvider:: CreateVisualizerService | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1f1149e9522803a199034395697e5c88bd988840
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b304dd8fe2845cf6c1201e6e128f8b89ec47b1b6
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842197"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222825"
 ---
 # <a name="ieevisualizerserviceprovidercreatevisualizerservice"></a>IEEVisualizerServiceProvider::CreateVisualizerService
 Ta metoda służy do tworzenia usługi wizualizatora.
