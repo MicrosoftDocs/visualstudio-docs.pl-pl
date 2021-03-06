@@ -11,12 +11,12 @@ helpviewer_keywords:
 - Visual Studio terminal
 ms.assetid: 94fcf524-9045-4993-bfb2-e2d8bad44219
 no-loc: cmdlet
-ms.openlocfilehash: 2500a540a4135517c65736d7a0f3d039c90cc71e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 406ef4e7d475df82a0e36732dd5e777959ea3b96
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102168879"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249744"
 ---
 # <a name="developer-command-prompt-and-developer-powershell"></a>wiersz polecenia dla deweloperów i deweloper programu PowerShell
 
@@ -55,11 +55,11 @@ Wykonaj następujące kroki, aby otworzyć wiersz polecenia dla deweloperów lub
 
    ![Element menu wiersza polecenia w programie Visual Studio](./media/developer-command-prompt-for-vs/vs-menu.png)
 
-### <a name="use-the-windows-start-menu"></a>Korzystanie z menu Start systemu Windows
+## <a name="use-the-windows-start-menu"></a>Korzystanie z menu Start systemu Windows
 
 W zależności od wersji programu Visual Studio i wszelkich dodatkowych zestawów SDK i obciążeń, które zostały zainstalowane, może być wiele wierszy poleceń. Jeśli poniższe kroki nie działają, możesz spróbować [ręcznie zlokalizować pliki na maszynie](#manually-locate-the-file) lub [uruchomić powłokę z poziomu programu Visual Studio](#start-the-shell-from-inside-visual-studio).
 
-#### <a name="windows-10"></a>Windows 10
+### <a name="windows-10"></a>Windows 10
 
 1. Wybierz pozycję **Uruchom** ![ klucz logo systemu Windows na klawiaturze.](./media/developer-command-prompt-for-vs/windows-logo-key-graphic.png) i przewiń do litery **V**.
 
@@ -71,7 +71,7 @@ W zależności od wersji programu Visual Studio i wszelkich dodatkowych zestawó
 
    ![Animowany plik GIF pokazujący zachowanie wyszukiwania w systemie Windows 10](./media/developer-command-prompt-for-vs/windows-10-search.gif)
 
-#### <a name="windows-81"></a>Windows 8.1
+### <a name="windows-81"></a>Windows 8.1
 
 1. Przejdź do ekranu **startowego** , naciskając klawisz logo systemu Windows ![ na klawiaturze.](./media/developer-command-prompt-for-vs/windows-logo-key-graphic.png) na przykład na klawiaturze.
 
@@ -79,7 +79,7 @@ W zależności od wersji programu Visual Studio i wszelkich dodatkowych zestawó
 
 1. Wybierz **wiersz polecenia dla deweloperów dla programu vs 2019** lub **dewelopera POWERSHELL dla programu vs 2019**.
 
-#### <a name="windows-7"></a>Windows 7
+### <a name="windows-7"></a>Windows 7
 
 1. Wybierz przycisk **Start** , a następnie rozwiń pozycję **Wszystkie programy**.
 
@@ -89,11 +89,11 @@ W zależności od wersji programu Visual Studio i wszelkich dodatkowych zestawó
 
 Jeśli zainstalowano inne zestawy SDK, takie jak [zestaw SDK systemu Windows 10](https://developer.microsoft.com/windows/downloads/windows-10-sdk) lub [poprzednie wersje](https://developer.microsoft.com/windows/downloads/sdk-archive), mogą pojawić się dodatkowe polecenia. W dokumentacji poszczególnych narzędzi można sprawdzić, której wersji wiersza polecenia należy użyć.
 
-### <a name="manually-locate-the-file"></a>Ręczne lokalizowanie pliku
+## <a name="manually-locate-the-file"></a>Ręczne lokalizowanie pliku
 
 Zazwyczaj skróty zainstalowanych powłok są umieszczane w folderze **menu Start** dla programu Visual Studio, na przykład w programie *%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2019 \ Visual Studio Tools*. Jeśli jednak wyszukiwanie w wierszu polecenia nie daje oczekiwanych wyników, możesz spróbować ręcznie zlokalizować pliki na komputerze.
 
-#### <a name="developer-command-prompt"></a>Wiersz polecenia dla deweloperów
+### <a name="developer-command-prompt"></a>Wiersz polecenia dla deweloperów
 
 Wyszukaj nazwę pliku wiersza polecenia, który jest *VsDevCmd.bat* lub przejdź do folderu Tools dla programu Visual Studio, takiego jak *% ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Community\Common7\Tools* (zmiany ścieżki według wersji programu Visual Studio, wersji i lokalizacji instalacji).
 
@@ -112,7 +112,7 @@ Lub wprowadź następujące polecenie w oknie dialogowym **Uruchamianie** system
 > [!TIP]
 > Musisz edytować ścieżkę, aby dopasować ją do instalacji programu Visual Studio.
 
-#### <a name="developer-powershell"></a>Program PowerShell dla deweloperów
+### <a name="developer-powershell"></a>Program PowerShell dla deweloperów
 
 Wyszukaj plik skryptu programu PowerShell o nazwie *Launch-VsDevShell.ps1* lub przejdź do folderu Tools dla programu Visual Studio, takiego jak *% ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Community\Common7\Tools*. (Ścieżka zmienia się w zależności od wersji programu Visual Studio, wersji i lokalizacji instalacji). Po umieszczeniu pliku programu PowerShell uruchom go, wprowadzając następujące polecenie w programie Windows PowerShell lub w wierszu polecenia programu PowerShell 6:
 

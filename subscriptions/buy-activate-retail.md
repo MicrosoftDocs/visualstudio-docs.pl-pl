@@ -4,21 +4,21 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 76654645-08ee-445d-b9ee-123126d1f0fb
-ms.date: 04/13/2020
+ms.date: 02/18/2021
 ms.topic: how-to
 description: Dowiedz się, jak kupić subskrypcje programu Visual Studio w Microsoft Store i aktywować je w portalu subskrypcji programu Visual Studio.
-ms.openlocfilehash: 244d6e6a0e5ccd6bf98b0e95d2165459cbe492c4
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 3902ca5a4cce146d4a0ad62eb23dd777d6032f67
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005966"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249421"
 ---
 # <a name="visual-studio-subscriptions-are-available-through-the-microsoft-store"></a>Subskrypcje programu Visual Studio są dostępne za pomocą Microsoft Store
-Subskrypcje programu Visual Studio są dostępne za pomocą różnych kanałów, takich jak [Licencjonowanie zbiorowe](https://www.microsoft.com/licensing/default), dostawcy rozwiązań w chmurze, [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions)i Microsoft Store.  W tym artykule przedstawiono zakup i aktywowanie subskrypcji za pomocą [Microsoft Store](https://www.microsoft.com/store/collections/visualstudio).  
+Subskrypcje programu Visual Studio są dostępne za poorednictwem różnych kanałów. Wybieraj opcję [Licencjonowanie zbiorowe](https://www.microsoft.com/licensing/default), dostawcy rozwiązań w chmurze, [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions)i Microsoft Store.  W tym artykule przedstawiono zakup i aktywowanie subskrypcji za pomocą [Microsoft Store](https://www.microsoft.com/store/collections/visualstudio).  
 
 ## <a name="how-to-buy-subscriptions"></a>Jak kupować subskrypcje
-Potrzebujesz pomocy przy wyborze odpowiedniej subskrypcji?  Zapoznaj się ze [stroną korzyści z subskrypcji](https://visualstudio.microsoft.com/vs/benefits/).  
+Potrzebujesz pomocy przy wyborze, która subskrypcja jest dla Ciebie odpowiednia?  Zapoznaj się ze [stroną korzyści z subskrypcji](https://visualstudio.microsoft.com/vs/benefits/).  
 
 Subskrypcje programu Visual Studio dostępne za pomocą Microsoft Store obejmują:
 - [Visual Studio Enterprise](https://www.microsoft.com/p/visual-studio-enterprise-subscription/dg7gmgf0dst4?activetab=pivot%3aoverviewtab)
@@ -28,12 +28,12 @@ Subskrypcje programu Visual Studio dostępne za pomocą Microsoft Store obejmuj�
 Każda z tych subskrypcji oferuje opcję dokonania początkowego zakupu lub odnowienia istniejącej subskrypcji.  Cennik odnowienia, który odzwierciedla znaczący rabat, jest dostępny tylko dla istniejących subskrypcji. 
 
 > [!IMPORTANT]
-> Aby można było zakwalifikować się do odnawiania subskrypcji przy obniżonej cenie odnowienia, subskrypcje należy odnawiać przed ich wygaśnięciem.  
+> Aby móc skorzystać z obniżonej ceny odnowienia subskrypcji, należy odnawiać subskrypcje, zanim wygasną.  
 
 ## <a name="how-to-activate-subscriptions"></a>Jak aktywować subskrypcje
 Po zakupie subskrypcji programu Visual Studio za pośrednictwem Microsoft Store można rozpocząć proces aktywacji ze strony potwierdzenia płatności lub wiadomości E-mail z potwierdzeniem, otrzymanej po dokonaniu zakupu.
 
-1. Wybierz **pozycję kliknij tutaj, aby zalogować** się w wiadomości e-mail z potwierdzeniem lub na stronie potwierdzenia zakupu.
+1. Wybierz link **kliknij tutaj, aby się zalogować** w wiadomości e-mail z potwierdzeniem lub na stronie potwierdzenia zakupu.
 2. Nastąpi przekierowanie do [https://my.visualstudio.com/subscriptions/activate](https://my.visualstudio.com/subscriptions/activate?wt.mc_id=o~msft~docs) .
 3. Wprowadź adres e-mail, który wymaga dostępu do subskrypcji programu Visual Studio, a następnie wybierz pozycję **Kontynuuj**.
 4. Użytkownik może zostać przekierowany do jednej z dwóch różnych stron logowania w zależności od używanego typu konta:
@@ -47,9 +47,12 @@ Po zakupie subskrypcji programu Visual Studio za pośrednictwem Microsoft Store 
 ## <a name="support-for-microsoft-store"></a>Obsługa Microsoft Store
 Jeśli masz pytania dotyczące kupowania za pomocą Microsoft Store, dostępna jest pomoc.  Skontaktuj się z [pomocą techniczną Microsoft Store](https://support.microsoft.com/help/28808/microsoft-store-contact-support?ocid=MSCOMStoreFooter-ContactUs).
 
+## <a name="resources"></a>Zasoby 
+- [Obsługa subskrypcji programu Visual Studio](https://my.visualstudio.com/gethelp)
+
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Azure DevOps documentation (Dokumentacja usługi Azure DevOps)](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)
 - [Dokumentacja Microsoft 365](/microsoft-365/)
 

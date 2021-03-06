@@ -1,18 +1,18 @@
 ---
-title: Konfigurowanie administratorów dla miesięcznych subskrypcji | Microsoft Docs
+title: Konfigurowanie administratorów na potrzeby comiesięcznych subskrypcji programu Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 8b30e2bc-2ac3-4fcc-b296-128731471032
-ms.date: 03/03/2020
+ms.date: 02/18/2021
 ms.topic: how-to
 description: Konfigurowanie administratorów dla miesięcznych subskrypcji
-ms.openlocfilehash: 8e102cb19d4f34c93392d89f9778c88460446666
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: c018dbc3437c03c6d029a98c84e0b6cceaef9e2c
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92904238"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249536"
 ---
 # <a name="set-up-admins-for-visual-studio-monthly-subscriptions"></a>Konfigurowanie administratorów dla miesięcznych subskrypcji programu Visual Studio
 
@@ -32,24 +32,24 @@ Jako właściciel subskrypcji platformy Azure używany do zakupu miesięcznych s
 
 Aby dodać administratorów:
 
-1. Połącz się z witryną Azure Portal pod adresem [Portal.Azure.com](https://portal.azure.com).
+1. Połącz się z Azure Portal w [Portal.Azure.com](https://portal.azure.com).
 2. Zaloguj się przy użyciu konta użytego do zakupu miesięcznych subskrypcji programu Visual Studio.
-3. W obszarze **usługi platformy Azure** wybierz pozycję **Cost Management + rozliczenia** .
+3. W obszarze **usługi platformy Azure** wybierz pozycję **Cost Management + rozliczenia**.
    > [!div class="mx-imgBorder"]
    > ![Wybieranie Cost Management i rozliczeń w ramach usług platformy Azure](_img/cloud-admin/azure-cost-billing.png "Wybierz Cost Management z grupy usług platformy Azure")
 4. Z listy **Moje subskrypcje** wybierz subskrypcję platformy Azure, która została użyta do dokonania zakupu.
    > [!div class="mx-imgBorder"]
    > ![Wybierz subskrypcję](_img/cloud-admin/subscription-list.png "Wybierz subskrypcję platformy Azure, której chcesz użyć do dokonania zakupu.")
-5. Kliknij pozycję **Kontrola dostępu (IAM)** , która znajduje się w górnej części listy w okienku nawigacji po lewej stronie.
+5. Kliknij pozycję **Kontrola dostępu (IAM)**, która znajduje się w górnej części listy w okienku nawigacji po lewej stronie.
 6. Kliknij kartę **Dodaj** w górnej części strony.
-7. Kliknij pozycję **Dodaj przypisanie roli** .
+7. Kliknij pozycję **Dodaj przypisanie roli**.
    > [!div class="mx-imgBorder"]
    > ![Wybieranie kontroli dostępu, Dodawanie, Dodawanie przypisania roli](_img/cloud-admin/access-control-add.png "Z listy po lewej stronie wybierz pozycję Kontrola dostępu, a następnie wybierz pozycję Dodaj.")
-8. W okienku po prawej stronie kliknij listę rozwijaną **rola** w górnej części okienka, przewiń w dół i wybierz pozycję **administrator dostępu użytkowników** .
+8. W okienku po prawej stronie kliknij listę rozwijaną **rola** w górnej części okienka, przewiń w dół i wybierz pozycję **administrator dostępu użytkowników**.
 9. Na liście użytkowników przewiń w dół do użytkownika, który ma być administratorem, i wybierz go. 
    > [!div class="mx-imgBorder"]
    > ![Wybieranie roli, administrator dostępu użytkowników](_img/cloud-admin/add-role-user-access-admin.png "Wybierz pozycję rola, wybierz pozycję Administrator dostępu użytkowników, a następnie wybierz nazwę użytkownika, który ma być administratorem.")
-10. Kliknij pozycję **Zapisz** .
+10. Kliknij pozycję **Zapisz**.
 11. Kliknij kartę **przypisania ról** , aby sprawdzić, czy wybrany użytkownik jest teraz widoczny jako administrator dostępu użytkownika.
 
 Nowy administrator może teraz zalogować się do [portalu administracyjnego](https://manage.visualstudio.com), wybrać tę samą subskrypcję platformy Azure, która została użyta do zakupu miesięcznych subskrypcji z listy w lewym górnym rogu strony i rozpocząć zarządzanie tymi subskrypcjami.
@@ -59,9 +59,13 @@ Nowy administrator może teraz zalogować się do [portalu administracyjnego](ht
 
 Informacje o subskrypcjach miesięcznych programu Visual Studio można znaleźć w sekcji [Omówienie](vscloud-overview.md) kupowania subskrypcji. Aby kupić miesięczne subskrypcje programu Visual Studio, odwiedź Visual Studio Marketplace pod adresem [https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscription) .
 
+## <a name="resources"></a>Zasoby
+- [Obsługa subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)
+
+
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Azure DevOps documentation (Dokumentacja usługi Azure DevOps)](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)
 - [Dokumentacja Microsoft 365](/microsoft-365/)
 

@@ -11,12 +11,12 @@ manager: jmartens
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 1b4eabfe35671b3cda0e2df71163b7c91695b264
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: a364289ded27879c74767f03e89b9ea7b9f604fc
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683082"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249817"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio"></a>Zdalne debugowanie ASP.NET Core na zdalnym komputerze IIS w programie Visual Studio
 
@@ -129,10 +129,17 @@ Tej opcji można użyć do utworzenia pliku ustawień publikowania i zaimportowa
 
 Po pomyślnym wdrożeniu aplikacji należy uruchomić ją automatycznie. Jeśli aplikacja nie uruchamia się z programu Visual Studio, uruchom aplikację w usługach IIS, aby sprawdzić, czy działa poprawnie. W przypadku ASP.NET Core należy również upewnić się, że w polu Pula aplikacji **dla tej opcji określono wartość** **Brak kodu zarządzanego**.
 
-1. W oknie dialogowym **Ustawienia** Włącz debugowanie, klikając przycisk **dalej**, wybierz konfigurację **debugowania** , a następnie wybierz pozycję **Usuń dodatkowe pliki w miejscu docelowym** w obszarze Opcje **publikowania plików** .
+1. Przejdź do konfiguracji debugowania.
 
-    > [!IMPORTANT]
-    > W przypadku wybrania konfiguracji wydania można wyłączyć debugowanie w pliku *web.config* podczas publikowania.
+   ::: moniker range=">=vs-2019"
+   Wybierz pozycję **Edytuj** , aby edytować profil, a następnie wybierz pozycję **Ustawienia**. Wybierz konfigurację **debugowania** , a następnie wybierz pozycję **Usuń dodatkowe pliki w miejscu docelowym** w obszarze Opcje **publikowania plików** .
+   ::: moniker-end
+   ::: moniker range="vs-2017"
+   W oknie dialogowym **Ustawienia** Włącz debugowanie, klikając przycisk **dalej**, wybierz konfigurację **debugowania** , a następnie wybierz pozycję **Usuń dodatkowe pliki w miejscu docelowym** w obszarze Opcje **publikowania plików** .
+   ::: moniker-end
+
+   > [!IMPORTANT]
+   > W przypadku wybrania konfiguracji wydania można wyłączyć debugowanie w pliku *web.config* podczas publikowania.
 
 1. Kliknij przycisk **Zapisz** , a następnie ponownie Opublikuj aplikację.
 
@@ -150,13 +157,13 @@ Za pomocą tej opcji można wdrożyć aplikację, jeśli chcesz skopiować aplik
 
 4. Wybierz **domyślną witrynę sieci Web**, wybierz **pozycję Ustawienia podstawowe** i ustaw **ścieżkę fizyczną** na **C:\Publish**.
 
-4. Kliknij prawym przyciskiem myszy **domyślny węzeł witryny sieci Web** i wybierz polecenie **Dodaj aplikację**.
+5. Kliknij prawym przyciskiem myszy **domyślny węzeł witryny sieci Web** i wybierz polecenie **Dodaj aplikację**.
 
-5. Ustaw wartość pola **alias** na **MyASPApp**, zaakceptuj domyślną pulę aplikacji (**Domyślna** konfiguracja), a następnie ustaw **ścieżkę fizyczną** na **C:\Publish**.
+6. Ustaw wartość pola **alias** na **MyASPApp**, zaakceptuj domyślną pulę aplikacji (**Domyślna** konfiguracja), a następnie ustaw **ścieżkę fizyczną** na **C:\Publish**.
 
-6. W obszarze **połączenia** wybierz pozycję **Pule aplikacji**. Otwórz przystawkę **Domyślna** i ustaw wartość pola Pula aplikacji na **Brak kodu zarządzanego**.
+7. W obszarze **połączenia** wybierz pozycję **Pule aplikacji**. Otwórz przystawkę **Domyślna** i ustaw wartość pola Pula aplikacji na **Brak kodu zarządzanego**.
 
-7. Kliknij prawym przyciskiem myszy nową witrynę w Menedżerze usług IIS, wybierz polecenie **Edytuj uprawnienia** i upewnij się, że konto IUSR, IIS_IUSRS lub użytkownik skonfigurowany do dostępu do aplikacji sieci Web jest autoryzowanym użytkownikiem z uprawnieniami do odczytu & wykonywania.
+8. Kliknij prawym przyciskiem myszy nową witrynę w Menedżerze usług IIS, wybierz polecenie **Edytuj uprawnienia** i upewnij się, że konto IUSR, IIS_IUSRS lub użytkownik skonfigurowany do dostępu do aplikacji sieci Web jest autoryzowanym użytkownikiem z uprawnieniami do odczytu & wykonywania.
 
     Jeśli nie widzisz jednego z tych użytkowników z dostępem, wykonaj kroki, aby dodać IUSR jako użytkownik z uprawnieniami do odczytu & wykonywania.
 

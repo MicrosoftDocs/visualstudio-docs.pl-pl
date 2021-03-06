@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b16c10d13f63be43ad2e8c3e16d24c0f9fd5e38
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 23ef2036af7b93ee6eeaaa14cb8733a4e0ced638
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927434"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249502"
 ---
 # <a name="deploy-an-app-to-a-folder-using-visual-studio"></a>Wdrażanie aplikacji w folderze przy użyciu programu Visual Studio
 
@@ -46,25 +46,34 @@ Za pomocą narzędzia do **publikowania** można publikować aplikacje ASP.NET, 
 
 1. W oknie **Publikowanie** wybierz pozycję **folder**.
 
-    ![Wybierz folder jako element docelowy publikowania](../deployment/media/quickstart-publish-folder-new.png "Wybierz folder")
+   ![Wybierz folder jako element docelowy publikowania](../deployment/media/quickstart-publish-folder-new.png "Wybierz folder")
 
-::: moniker range=">=vs-2019"
+   ::: moniker range=">=vs-2019"
 
-4. Jeśli wdrażasz platformę .NET Core 3,1 lub nowszą, aplikacja systemu Windows może wymagać wybrania **folderu** w oknie **określonego celu** .
+   Jeśli wdrażasz platformę .NET Core 3,1 lub nowszą, aplikacja systemu Windows może wymagać wybrania **folderu** w oknie **określonego celu** .
 
-![Wybierz folder jako określony element docelowy](../deployment/media/quickstart-publish-folder-targets.png "Wybierz konkretny element docelowy")
+   ![Wybierz folder jako określony element docelowy](../deployment/media/quickstart-publish-folder-targets.png "Wybierz konkretny element docelowy")
 
-5. Jeśli chcesz opublikować platformę .NET Core 3,1 lub nowszą, aplikację systemu Windows z funkcją ClickOnce, zobacz [wdrażanie aplikacji .NET systemu Windows przy użyciu technologii ClickOnce](quickstart-deploy-using-clickonce-folder.md).
+   Jeśli chcesz opublikować platformę .NET Core 3,1 lub nowszą, aplikację systemu Windows z funkcją ClickOnce, zobacz [wdrażanie aplikacji .NET systemu Windows przy użyciu technologii ClickOnce](quickstart-deploy-using-clickonce-folder.md).
+   ::: moniker-end
 
- ::: moniker-end
+1. Wprowadź ścieżkę lub wybierz pozycję **Przeglądaj** , aby określić folder.
 
-4. Wprowadź ścieżkę lub wybierz pozycję **Przeglądaj** , aby określić folder.
+   ![Określ ścieżkę do folderu](../deployment/media/quickstart-publish-folder-path.png "Wybierz folder")
 
-    ![Określ ścieżkę do folderu](../deployment/media/quickstart-publish-folder-path.png "Wybierz folder")
+   ::: moniker range=">=vs-2019"
+   Kliknij przycisk **Zakończ** , aby zapisać profil.
 
-1. Kliknij pozycję **Opublikuj**. Program Visual Studio kompiluje projekt i publikuje go w określonym folderze. Zostanie wyświetlone okienko **Publikowanie** właściwości projektu przedstawiające Podsumowanie profilu.
+   ![Okienko właściwości publikowania przedstawiające Podsumowanie profilu](../deployment/media/quickstart-publish-folder-summary.png)
+   ::: moniker-end
 
-    ![Okienko właściwości publikowania przedstawiające Podsumowanie profilu](../deployment/media/quickstart-publish-folder-summary.png)
+1. Kliknij pozycję **Opublikuj**. Program Visual Studio kompiluje projekt i publikuje go w określonym folderze.
+
+   ::: moniker range="vs-2017"
+   Zostanie wyświetlone okienko **Publikowanie** właściwości projektu przedstawiające Podsumowanie profilu.
+
+   ![Okienko właściwości publikowania przedstawiające Podsumowanie profilu](../deployment/media/quickstart-publish-folder-summary.png)
+   ::: moniker-end
 
 1. Aby skonfigurować ustawienia wdrożenia, wybierz opcję **Edytuj** w podsumowaniu profilu publikowania i wybierz kartę **Ustawienia** .
 

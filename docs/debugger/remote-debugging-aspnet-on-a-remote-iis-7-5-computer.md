@@ -12,14 +12,15 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: 854d3e23252e63d6330abd9f1704890d3b90ae36
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 104927d42f7ec68e43686278042c0712bb3c875e
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908301"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102250088"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Zdalne debugowanie ASP.NET na zdalnym komputerze IIS
+
 Aby debugować aplikację ASP.NET, która została wdrożona w usługach IIS, zainstaluj i Uruchom narzędzia zdalne na komputerze, na którym została wdrożona aplikacja, a następnie Dołącz do uruchomionej aplikacji z programu Visual Studio.
 
 ![Składniki debugera zdalnego](../debugger/media/remote-debugger-aspnet.png "Remote_debugger_components")
@@ -39,6 +40,7 @@ Aby wykonać kroki opisane w tym artykule, wymagany jest program Visual Studio 2
 ::: moniker-end
 
 Te procedury zostały przetestowane na tych konfiguracjach serwera:
+
 * Systemy Windows Server 2012 R2 i IIS 8 (dla systemu Windows Server 2008 R2, kroki serwera są różne)
 
 ## <a name="network-requirements"></a>Wymagania dotyczące sieci
@@ -130,10 +132,17 @@ Tej opcji można użyć do utworzenia pliku ustawień publikowania i zaimportowa
 
 Po pomyślnym wdrożeniu aplikacji należy uruchomić ją automatycznie. Jeśli aplikacja nie uruchamia się z programu Visual Studio, uruchom aplikację w usługach IIS.
 
-1. W oknie dialogowym **Ustawienia** Włącz debugowanie, klikając przycisk **dalej**, wybierz konfigurację **debugowania** , a następnie wybierz pozycję **Usuń dodatkowe pliki w miejscu docelowym** w obszarze Opcje **publikowania plików** .
+1. Przejdź do konfiguracji debugowania.
 
-    > [!IMPORTANT]
-    > W przypadku wybrania konfiguracji wydania można wyłączyć debugowanie w pliku *web.config* podczas publikowania.
+   ::: moniker range=">=vs-2019"
+   Wybierz pozycję **Edytuj** , aby edytować profil, a następnie wybierz pozycję **Ustawienia**. Wybierz konfigurację **debugowania** , a następnie wybierz pozycję **Usuń dodatkowe pliki w miejscu docelowym** w obszarze Opcje **publikowania plików** .
+   ::: moniker-end
+   ::: moniker range="vs-2017"
+   W oknie dialogowym **Ustawienia** Włącz debugowanie, klikając przycisk **dalej**, wybierz konfigurację **debugowania** , a następnie wybierz pozycję **Usuń dodatkowe pliki w miejscu docelowym** w obszarze Opcje **publikowania plików** .
+   ::: moniker-end
+
+   > [!IMPORTANT]
+   > W przypadku wybrania konfiguracji wydania można wyłączyć debugowanie w pliku *web.config* podczas publikowania.
 
 1. Kliknij przycisk **Zapisz** , a następnie ponownie Opublikuj aplikację.
 

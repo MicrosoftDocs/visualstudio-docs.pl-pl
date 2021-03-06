@@ -3,15 +3,15 @@ title: Przypisywanie określonych identyfikatorów GUID do subskrybentów progra
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
-ms.date: 10/22/2020
+ms.date: 02/18/2021
 ms.topic: conceptual
 description: Dowiedz się, jak Administratorzy mogą określić identyfikator GUID subskrypcji dla subskrybentów
-ms.openlocfilehash: 1097743d1640fbadba550f3c2ee6908ac694436d
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: 3c92a3e6cc35230f6bcf10320e92a50dc5ffb85b
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467482"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249686"
 ---
 # <a name="assign-specific-subscriptions-in-the-visual-studio-subscriptions-administration-portal"></a>Przypisywanie określonych subskrypcji w portalu administratora subskrypcji programu Visual Studio
 
@@ -51,7 +51,7 @@ Ostatnim krokiem jest pobranie **zbiorczego szablonu Dodaj** , wypełnienie wyma
 
 > [!IMPORTANT]
 > Aby zapewnić pomyślne przekazywanie, upewnij się, że:
-> - W przypadku wybrania opcji **Dodaj zbiorczo**używasz szablonu połączonego w oknie dialogowym.  Nie należy używać lokalnie przechowywanej kopii szablonu, ponieważ może nie zawierać wszystkich wymaganych pól.  Użycie starego szablonu spowoduje niepowodzenie przekazywania. 
+> - W przypadku wybrania opcji **Dodaj zbiorczo** używasz szablonu połączonego w oknie dialogowym.  Nie należy używać lokalnie przechowywanej kopii szablonu, ponieważ może nie zawierać wszystkich wymaganych pól.  Użycie starego szablonu spowoduje niepowodzenie przekazywania. 
 > - Wszystkie pola wyświetlane jako **wymagane** w szablonie są kompletne.
 > - Brak błędów wymienionych w kolumnie **komunikat o błędzie** .
 > - Każdy identyfikator GUID jest używany tylko raz w szablonie. 
@@ -62,9 +62,12 @@ Ostatnim krokiem jest pobranie **zbiorczego szablonu Dodaj** , wypełnienie wyma
 ### <a name="q-how-do-i-change-which-subscription-is-currently-assigned-to-an-individual-user"></a>P: Jak mogę zmienić, która subskrypcja jest obecnie przypisana do pojedynczego użytkownika?
 Odp.: Jeśli chcesz zmienić identyfikator GUID przypisany do użytkownika, musisz najpierw usunąć subskrypcję dla tego użytkownika.  Aby uzyskać więcej informacji, zobacz artykuł [usuwanie subskrypcji](delete-license.md) , aby uzyskać więcej informacji.  Po usunięciu subskrypcji dla tego użytkownika należy użyć podanego powyżej procesu, aby wyeksportować listę i przekazać nowe informacje o subskrypcji.  
 
+## <a name="resources"></a>Zasoby
+- [Obsługa subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)
+
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Azure DevOps documentation (Dokumentacja usługi Azure DevOps)](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)
 - [Dokumentacja Microsoft 365](/microsoft-365/)
 

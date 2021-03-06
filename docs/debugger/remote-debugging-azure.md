@@ -12,12 +12,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: d41beea47e8173170ea2d428b40bd7c7ed8ff67e
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 619f1f1cc99cbab425bc1bcb2bac181e09db8fc4
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101684157"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102250071"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>Zdalne debugowanie ASP.NET Core w usługach IIS na platformie Azure w programie Visual Studio
 
@@ -79,13 +79,23 @@ W programie Visual Studio można szybko publikować i debugować aplikację w w 
 
 1. W programie Visual Studio kliknij prawym przyciskiem myszy węzeł projektu, a następnie wybierz polecenie **Publikuj**.
 
-    Jeśli wszystkie profile publikowania zostały wcześniej skonfigurowane, zostanie wyświetlone okienko **Publikowanie** . Kliknij pozycję **Nowy profil**.
+    Jeśli wszystkie profile publikowania zostały wcześniej skonfigurowane, zostanie wyświetlone okienko **Publikowanie** . Wybierz pozycję **Nowy** lub **Nowy profil**.
 
-1. Wybierz **Azure App Service** z okna dialogowego **Publikowanie** , wybierz pozycję **Utwórz nowy** i postępuj zgodnie z monitami, aby utworzyć profil.
+1. Utwórz nowy profil publikowania.
 
-    Aby uzyskać szczegółowe instrukcje, zobacz [wdrażanie aplikacji sieci web ASP.NET Core na platformie Azure przy użyciu programu Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
+    ::: moniker range=">=vs-2019"
+    Wybierz pozycję **Azure** z okna dialogowego **Publikowanie** , a **następnie** wybierz przycisk Dalej. Następnie wybierz **Azure App Service (Windows)**, wybierz pozycję **dalej** i postępuj zgodnie z monitami, aby utworzyć profil.
+
+    :::image type="content" source="../debugger/media/vs-2019/remotedbg-azure-app-service-profile.png" alt-text="Wdrażanie aplikacji internetowej ASP.NET Core na platformie Azure przy użyciu programu Visual Studio":::
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+
+    Wybierz **Azure App Service** z okna dialogowego **Publikowanie** , wybierz pozycję **Utwórz nowy** i postępuj zgodnie z monitami, aby utworzyć profil.
 
     ![Publikowanie w usłudze Azure App Service](../debugger/media/remotedbg_azure_app_service_profile.png)
+    ::: moniker-end
+
+    Aby uzyskać bardziej szczegółowe instrukcje, zobacz [wdrażanie aplikacji sieci web ASP.NET Core na platformie Azure przy użyciu programu Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 
 1. W oknie publikowanie wybierz polecenie **Edytuj konfigurację** i Przełącz się do konfiguracji debugowania, a następnie wybierz pozycję **Publikuj**.
 
@@ -106,6 +116,7 @@ W programie Visual Studio można szybko publikować i debugować aplikację w w 
 Można utworzyć maszynę wirtualną platformy Azure dla systemu Windows Server, a następnie zainstalować i skonfigurować usługi IIS oraz inne wymagane składniki oprogramowania. Zajmuje to więcej czasu niż wdrożenie do Azure App Service i wymaga wykonania pozostałych kroków opisanych w tym samouczku.
 
 Te procedury zostały przetestowane na tych konfiguracjach serwera:
+
 * Windows Server 2012 R2 i IIS 8
 * Windows Server 2016 i IIS 10
 * Windows Server 2019 i IIS 10
@@ -143,7 +154,7 @@ Podczas pobierania oprogramowania można uzyskać żądania udzielenia uprawnie�
     > [!NOTE]
     > Jeśli system nie ma połączenia z Internetem, uzyskaj i zainstaluj *[pakiet redystrybucyjny Microsoft Visual C++ 2015](https://www.microsoft.com/download/details.aspx?id=53840)* przed zainstalowaniem pakietu hostingu platformy .NET Core systemu Windows Server.
 
-3. Uruchom ponownie system (lub wykonaj polecenie **net stop was/y** , a następnie **net start W3SVC** z wiersza polecenia, aby wybrać zmianę ścieżki systemowej).
+2. Uruchom ponownie system (lub wykonaj polecenie **net stop was/y** , a następnie **net start W3SVC** z wiersza polecenia, aby wybrać zmianę ścieżki systemowej).
 
 ## <a name="choose-a-deployment-option"></a>Wybierz opcję wdrożenia
 
