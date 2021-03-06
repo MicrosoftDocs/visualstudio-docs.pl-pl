@@ -1,4 +1,5 @@
 ---
+description: Pomija określoną liczbę DEBUG_PROPERTY_INFO elementów.
 title: 'IEnumDebugPropertyInfo2:: Skip | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9232e5b519097312df5e54898d168bcbf07a53ba
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 799aadf40eafa03e944e5e25f9c721b459320c8c
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869586"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225971"
 ---
 # <a name="ienumdebugpropertyinfo2skip"></a>IEnumDebugPropertyInfo2::Skip
 Pomija określoną liczbę elementów.

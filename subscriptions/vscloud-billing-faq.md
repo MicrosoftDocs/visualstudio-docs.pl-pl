@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
-ms.date: 02/04/2021
+ms.date: 03/05/2021
 ms.topic: conceptual
 description: Pytania dotyczące rozliczeń dla subskrypcji chmury.
-ms.openlocfilehash: a812965a549f2e6e6d6c58366d943f3129d951cd
-ms.sourcegitcommit: 55bc9df751a21656de8cc5b6dbd8a2a1915ec690
+ms.openlocfilehash: 2c03871d11279b7c368ebd0c7012670fc92c9ee0
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99572879"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249719"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Subskrypcje dotyczące rozliczeń w ramach subskrypcji programu Visual Studio Cloud
 [PORÓWNAJ korzyści z subskrypcji chmury i ceny](https://visualstudio.microsoft.com/vs/pricing/) , aby poznać zalety każdej subskrypcji programu Visual Studio, z porównaniami między subskrypcjami w chmurze i standardami programu Visual Studio, szczegółowymi dotyczącymi korzyści dla subskrybentów i innymi.
@@ -56,13 +56,13 @@ Po zwiększeniu ilości płatnej później Oceńmy również zwiększenie liczby
 ### <a name="q-how-are-annual-cloud-subscription-charges-processed"></a>P: jak są przetwarzane **roczne** opłaty za subskrypcję w chmurze?
 Odp.: przy każdym zakupie opłaty są naliczane natychmiast po zakupie. Opłaty nie są naliczane w ciągu roku i nie ma żadnej klasyfikacji. Jeśli kupisz roczną subskrypcję chmury w różnym czasie w roku, będziesz mieć subskrypcje odnawiane w różnych miesiącach. Firma Microsoft nie udostępnia żadnych rocznych subskrypcji w chmurze coterminous, które są wspólne w ramach zakupu w ramach umowy licencjonowania zbiorowego.
 
-### <a name="q-how-do-cancelations-work"></a>P: jak działają anulowania?
+### <a name="q-how-do-cancellations-work"></a>P: jak działają anulowania?
 Odp.: po anulowaniu subskrypcji programu Visual Studio w chmurze anulujesz automatyczne odnawianie. Subskrypcja pozostanie ważna do zwykłej daty odnowienia, a potem po prostu wygaśnie.
 Gdy subskrypcja wygaśnie, subskrybent programu Visual Studio nie będzie już mógł korzystać z programu Visual Studio i nie będzie miał dostępu do żadnych korzyści związanych z subskrypcją.
 
-W przypadku comiesięcznych subskrypcji w chmurze, anulowania zaczynają obowiązywać pierwszego dnia następnego miesiąca. Jeśli chcesz anulować tylko część miesięcznych subskrypcji w chmurze, usuń użytkowników pierwszego dnia kolejnego miesiąca, aby mieć pewność, że właściwe osoby nadal będą miały przypisane aktywne subskrypcje.
+Subskrypcje miesięczne w chmurze zostaną anulowane pierwszego dnia kolejnego miesiąca. Jeśli chcesz anulować tylko część miesięcznych subskrypcji w chmurze, usuń użytkowników pierwszego dnia kolejnego miesiąca, aby mieć pewność, że właściwe osoby nadal będą miały przypisane aktywne subskrypcje.
 
-W przypadku rocznych subskrypcji w chmurze, anulowania zaczną obowiązywać pierwszego dnia miesiąca po 12 miesiącach od oryginalnego zakupu lub 12 miesięcy od ostatniej rocznej opłaty za odnowienie. Jeśli na przykład kupiono roczną subskrypcję programu Visual Studio Professional w chmurze 3 stycznia 2018 roku, będzie ona aktywna do 1 lutego 2019 roku i wtedy zostanie automatycznie odnowiona na kolejny rok. Jeśli anulujesz ją pomiędzy tą datą a 1 lutego 2020 roku, ta subskrypcja wygaśnie 1 lutego 2020 r. Nie ma rabatu za anulowanie rocznych subskrypcji w chmurze przed upływem roku.
+Roczne subskrypcje w chmurze zostaną anulowane pierwszego dnia miesiąca przypadającego po upływie 12 miesięcy od daty zakupu lub 12 miesięcy od ostatniej rocznej opłaty za odnowienie. Jeśli na przykład kupiono roczną subskrypcję programu Visual Studio Professional w chmurze 3 stycznia 2018 roku, będzie ona aktywna do 1 lutego 2019 roku i wtedy zostanie automatycznie odnowiona na kolejny rok. Jeśli anulujesz ją pomiędzy tą datą a 1 lutego 2020 roku, ta subskrypcja wygaśnie 1 lutego 2020 r. Nie ma rabatu za anulowanie rocznych subskrypcji w chmurze przed upływem roku.
 
 ### <a name="q-what-kind-of-volume-discounts-are-available-for-visual-studio-subscriptions"></a>P: jakiego rodzaju rabaty na woluminy są dostępne dla subskrypcji programu Visual Studio?
 Odp.: otrzymujesz 5% rabatu na szóste i wszystkie kolejne subskrypcje *w ramach każdego typu* subskrypcji:
@@ -93,6 +93,9 @@ Odp.: tak. Po udostępnieniu nowych wersji można je pobrać i uruchomić. Ponad
 
 ### <a name="q-can-i-buy-visual-studio-cloud-subscriptions-from-my-software-reseller"></a>P: Czy mogę zakupić subskrypcje programu Visual Studio w chmurze od odsprzedawcy oprogramowania?
 Odp.: tak, możesz, jeśli odsprzedawca uczestniczy w programie w programie Cloud Solution Provider (CSP). Po prostu zadawaj je.
+
+### <a name="q-where-can-i-find-information-about-azure-invoices"></a>P: gdzie można znaleźć informacje na temat faktur platformy Azure?
+Odp.: Zapoznaj się z artykułem [Omówienie usługi Azure Invoice](https://docs.microsoft.com/azure/cost-management-billing/understand/understand-invoice) w [dokumentacji platformy Azure](/azure/).
 
 ## <a name="related-resources"></a>Powiązane zasoby
 - [Portal administratora subskrypcji programu Visual Studio](https://manage.visualstudio.com/)

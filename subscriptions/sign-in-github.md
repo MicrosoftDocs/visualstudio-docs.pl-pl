@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 1bdcb3c9-bba1-4e25-a609-9d7e539d78e0
-ms.date: 12/02/2020
+ms.date: 03/05/2021
 ms.topic: conceptual
 description: Dowiedz się, jak zalogować się do subskrypcji programu Visual Studio za pomocą konta usługi GitHub.
-ms.openlocfilehash: 52f67afdf8a4056063cdefef618be5b895dbb960
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 41966fb4468832b3e1a320e898164989d1fb5c3b
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537997"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249738"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-github-account"></a>Logowanie do subskrypcji programu Visual Studio za pomocą konta usługi GitHub 
 
@@ -59,7 +59,7 @@ Odp.: ze względu na ograniczenia zabezpieczeń firma Microsoft zlicza logowanie
 Odp.: za każdym razem, gdy zalogujesz się przy użyciu aliasu konta (adres e-mail, numer telefonu, nazwa użytkownika Skype), zostaną wyświetlone wszystkie metody logowania dla Twojego konta. Jeśli nie widzisz tam usługi GitHub, nie zostało to jeszcze zrobione.
 
 #### <a name="q--how-can-i-unlink-my-microsoft-and-github-accounts"></a>P: Jak mogę odłączyć moje konta Microsoft i GitHub? 
-Odp.: Przejdź do [karty zabezpieczenia](https://account.microsoft.com/security) w programie account.Microsoft.com, a następnie kliknij pozycję **więcej opcji zabezpieczeń** , aby odłączyć konto usługi GitHub. Odłączenie konta usługi GitHub spowoduje usunięcie go jako metody logowania i usunięcie dostępu do wszystkich repozytoriów GitHub w programie Visual Studio. Inne produkty firmy Microsoft mogły zażądać dostępu do konta usługi GitHub osobno, więc usunięcie dostępu nie spowoduje usunięcia dostępu we wszystkich produktach. Przejdź do strony [uprawnienia aplikacji](https://github.com/settings/applications) w profilu usługi GitHub, aby odwołać zgodę z aplikacji znajdujących się na liście.
+Odp.: Przejdź do [karty zabezpieczenia](https://account.microsoft.com/security) w programie account.Microsoft.com, a następnie kliknij pozycję **Zaawansowane opcje zabezpieczeń** , aby odłączyć konto usługi GitHub. Odłączenie konta usługi GitHub spowoduje usunięcie go jako metody logowania i usunięcie dostępu do wszystkich repozytoriów GitHub w programie Visual Studio. Inne produkty firmy Microsoft mogły zażądać dostępu do konta usługi GitHub osobno, więc usunięcie dostępu nie spowoduje usunięcia dostępu we wszystkich produktach. Przejdź do strony [uprawnienia aplikacji](https://github.com/settings/applications) w profilu usługi GitHub, aby odwołać zgodę z aplikacji znajdujących się na liście.
 
 #### <a name="q--i-try-to-use-my-github-account-to-sign-in-but-im-prompted-that-i-already-have-a-microsoft-identity-that-i-should-use-instead--whats-happening"></a>Pytanie: próbuję zalogować się przy użyciu konta usługi GitHub, ale otrzymuję monit o podanie tożsamości firmy Microsoft, której należy użyć zamiast tego.  Co się dzieje?
 Odp.: Jeśli masz Azure Active Directory adres e-mail na koncie usługi GitHub, oznacza to, że masz już tożsamość firmy Microsoft, która może uzyskiwać dostęp do platformy Azure i uruchamiać potoki CI przy użyciu kodu usługi GitHub. Użycie tego konta zapewnia, że Twoje zasoby platformy Azure i potoki kompilacji pozostaną w granicach organizacyjnych. Jeśli jednak wykonujesz osobistą służbę, zalecamy umieszczenie osobistego adresu e-mail na Twoim koncie usługi GitHub, aby zawsze miał dostęp do niego. Po wykonaniu tej czynności spróbuj zalogować się ponownie i wybierz opcję **Użyj innego adresu e-mail** , gdy zostanie wyświetlony monit o zalogowanie się do konta służbowego. Pozwoli to utworzyć nowe konto Microsoft przy użyciu tego osobistego adresu e-mail.

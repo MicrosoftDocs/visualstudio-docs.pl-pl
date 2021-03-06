@@ -1,4 +1,5 @@
 ---
+description: Zwraca początkowe dane dla tego obiektu.
 title: 'IPropertyProxyEESide:: GetInitialData | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ed7a3b72f35c21c61bd805a45307a98556208d72
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 433354dc4dd5c62ffb544e2e05a1ceae76d0335e
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852806"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225724"
 ---
 # <a name="ipropertyproxyeesidegetinitialdata"></a>IPropertyProxyEESide::GetInitialData
 Zwraca początkowe dane dla tego obiektu.

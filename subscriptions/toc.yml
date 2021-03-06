@@ -46,6 +46,8 @@
       href: manage-vs-subscriptions.md
     - name: Po wygaśnięciu subskrypcji
       href: subscription-expiration.md
+    - name: Zmiany poziomu subskrypcji
+      href: subscription-level-changes.md
     - name: Kontaktowanie się z administratorem subskrypcji
       href: contact-my-admin.md
     - name: Korzyści

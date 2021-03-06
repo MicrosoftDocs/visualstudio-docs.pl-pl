@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
-ms.date: 11/09/2020
+ms.date: 02/18/2021
 ms.topic: how-to
 description: Dowiedz się, jak Administratorzy mogą edytować przypisania subskrypcji.
-ms.openlocfilehash: 0f1ec9c9aa63b5bd877e13f112964f7d74a4b5af
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: f24c949224d895f4cc2926ab30db637835e7886c
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433560"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249796"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Edytuj przypisania subskrypcji programu Visual Studio
 Administrator subskrypcji może wprowadzać zmiany w subskrypcjach przypisanych do osób w organizacji.  W tym artykule omówiono typy zmian, które można wprowadzić, i przedstawiono niezbędne kroki.
@@ -30,7 +30,6 @@ Aby edytować abonenta, wybierz wielokropek (...), który pojawia się obok adre
 Możesz zaktualizować imię i nazwisko subskrybenta, nazwisko, poziom subskrypcji, adres e-mail, kraj, język, pobrania i pole odwołania. Edytuj informacje o subskrybencie i kliknij przycisk **Zapisz**.
 
 ## <a name="edit-multiple-subscribers-using-bulk-edit"></a>Edytowanie wielu subskrybentów przy użyciu edycji zbiorczej
-
 
 Jednocześnie można edytować wielu subskrybentów przy użyciu procesu edycji zbiorczej. Ta funkcja jest używana głównie w przypadku organizacji, które przechodzą przez firmowe adresy e-mail, lub jeśli organizacja zdecydowała się ograniczyć dostęp do plików do pobrania.
 
@@ -56,9 +55,12 @@ Obejrzyj ten film wideo lub przeczytaj, aby dowiedzieć się, jak edytować wiel
 
 5. Po przesłaniu pliku zobaczysz powiadomienie informujące o pomyślnym zapoznaniu się z nim. W tym momencie zmiany zostaną odzwierciedlone w informacjach o subskrybencie.
 
+## <a name="resources"></a>Zasoby
+- [Obsługa subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)
+
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Azure DevOps documentation (Dokumentacja usługi Azure DevOps)](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)
 - [Dokumentacja Microsoft 365](/microsoft-365/)
 
