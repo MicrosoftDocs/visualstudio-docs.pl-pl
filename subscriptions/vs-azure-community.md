@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: c15f7e18-b280-4902-a60d-2c2598653207
-ms.date: 12/02/2020
+ms.date: 02/19/2021
 ms.topic: conceptual
 description: Dowiedz się więcej na temat korzyści z pomocy technicznej dla społeczności platformy Azure zawartych w wybranych subskrypcjach programu Visual Studio.
-ms.openlocfilehash: 58f587d5e9c27197b28457c512e4eb94f07851ef
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 57190bce0625108c332e307051cf28aec192f556
+ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96538023"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102473338"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Forum pomocy technicznej platformy Azure w ramach subskrypcji programu Visual Studio
 Uzyskaj pomoc bezpośrednio z zespołu platformy Azure w ramach wybranych forów pomocy technicznej za pośrednictwem społeczności platformy Azure.  Korzyść społeczność platformy Azure zapewnia dostęp do kolekcji forów skoncentrowanych na tematach związanych z platformą Azure.
@@ -22,7 +22,7 @@ Uzyskaj pomoc bezpośrednio z zespołu platformy Azure w ramach wybranych forów
 :::row:::
     :::column:::
         - [Azure Active Directory](https://social.msdn.microsoft.com/forums/home?forum=WindowsAzureAD&filter=alltypes&sort=lastpostdesc)  
-        - [API Management platformy Azure](https://social.msdn.microsoft.com/Forums/home?forum=azureapimgmt&filter=alltypes&sort=lastpostdesc)  
+        - [Usługa Azure API Management](https://social.msdn.microsoft.com/Forums/home?forum=azureapimgmt&filter=alltypes&sort=lastpostdesc)  
         - [Azure App Service — Web Apps](https://social.msdn.microsoft.com/forums/home?forum=windowsazurewebsitespreview&filter=alltypes&sort=lastpostdesc)  
         - [Azure Backup](https://social.msdn.microsoft.com/forums/home?forum=windowsazureonlinebackup&filter=alltypes&sort=lastpostdesc)  
         - [Azure DevTest Labs](https://social.msdn.microsoft.com/forums/home?forum=AzureDevTestLabs&filter=alltypes&sort=lastpostdesc)  
@@ -49,7 +49,7 @@ Uzyskaj pomoc bezpośrednio z zespołu platformy Azure w ramach wybranych forów
     :::column-end:::
 :::row-end:::
 
-## <a name="get-started"></a>Wprowadzenie
+## <a name="get-started"></a>Rozpoczęcie pracy
 Wprowadzenie do społeczności platformy Azure jest proste.
 1. Zaloguj się do witryny [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
@@ -88,7 +88,7 @@ Nie masz pewności, której subskrypcji używasz?  Połącz się z, [https://my.
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 - Inne zasoby społeczności platformy Azure można znaleźć na [stronie pomocy technicznej](https://azure.microsoft.com/support/forums/)dla społeczności platformy Azure.
 - [Dokumentacja platformy Azure](/azure/).
-- Potrzebujesz pomocy w zakresie sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio?  Skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
+- Potrzebujesz pomocy w zakresie sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio?  Skontaktuj się z [pomocą techniczną subskrypcji](https://aka.ms/vssubscriberhelp)programu Visual Studio.
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Zobacz też

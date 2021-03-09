@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 86f2856c-8adf-4085-9962-f4136679e5ed
-ms.date: 02/02/2021
+ms.date: 02/19/2021
 ms.topic: conceptual
 description: Jak dodać alternatywną tożsamość dla subskrypcji programu Visual Studio, aby korzystać z usługi Azure DevOps i platformy Azure
-ms.openlocfilehash: 200f299ba4e487e40572e54f1066ed6ac079e7d1
-ms.sourcegitcommit: b0ecf9bb0d887bc0a900578089bf41ab8dddbb78
+ms.openlocfilehash: 4d00e6808a71522f95d8580056556f5a502ecbde
+ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99488668"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102473312"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Tożsamości dla subskrybentów programu Visual Studio
 Gdy aktywujesz swoją subskrypcję programu Visual Studio, połączymy tożsamość (lub logowanie), która została użyta podczas aktywacji z subskrypcją programu Visual Studio. W ten sposób możemy rozpoznać użytkownika w [portalu subskrybentów programu Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), na platformie Azure DevOps i na platformie Azure.
@@ -57,6 +57,9 @@ Odp.: usługa Azure DevOps powinna automatycznie rozpoznawać swoją subskrypcj�
 * Odwiedź [Portal subskrybentów programu Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs) co najmniej raz przed zalogowaniem się do usługi Azure DevOps.
 
 Jeśli usługa Azure DevOps nadal nie rozpoznaje Twojej subskrypcji, skontaktuj się z [pomocą techniczną platformy Azure DevOps](https://azure.microsoft.com/support/devops/).
+
+## <a name="resources"></a>Zasoby
+[Obsługa subskrypcji programu Visual Studio](https://aka.ms/vssubscriberhelp)
 
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)

@@ -7,12 +7,12 @@ ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
 ms.date: 03/05/2021
 ms.topic: conceptual
 description: Pytania dotyczące rozliczeń dla subskrypcji chmury.
-ms.openlocfilehash: 2c03871d11279b7c368ebd0c7012670fc92c9ee0
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: d3c370eecab49de5f4ea5001e6052c18ff83e00b
+ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249719"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102473416"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Subskrypcje dotyczące rozliczeń w ramach subskrypcji programu Visual Studio Cloud
 [PORÓWNAJ korzyści z subskrypcji chmury i ceny](https://visualstudio.microsoft.com/vs/pricing/) , aby poznać zalety każdej subskrypcji programu Visual Studio, z porównaniami między subskrypcjami w chmurze i standardami programu Visual Studio, szczegółowymi dotyczącymi korzyści dla subskrybentów i innymi.
@@ -99,8 +99,8 @@ Odp.: Zapoznaj się z artykułem [Omówienie usługi Azure Invoice](https://docs
 
 ## <a name="related-resources"></a>Powiązane zasoby
 - [Portal administratora subskrypcji programu Visual Studio](https://manage.visualstudio.com/)
-- [Obsługa subskrypcji programu Visual Studio](https://visualstudio.microsoft.com/vs/support/)
 - [Kupowanie subskrypcji w chmurze programu Visual Studio dla dostawców CSP](vscloud-csp.md)
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, zobacz [Obsługa subskrypcji](https://aka.ms/vssubscriberhelp)programu Visual Studio.
 
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 92e8957f-c690-46bd-a812-3efd06a2bc6b
-ms.date: 10/21/2020
+ms.date: 02/19/2021
 ms.topic: how-to
 description: Poznaj korzyści wynikające z wyróżniania RZUTowania dostępne w wybranych subskrypcjach programu Visual Studio
-ms.openlocfilehash: fbc7b6278d29d96ed8d97933c295468c7d3e2754
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 0acc7b62dbac66d25e61dcddfeee0c9124d66694
+ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96538140"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102473325"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Korzyść wyróżniania RZUTowania w subskrypcjach programu Visual Studio
 Deweloperzy potrzebują ważnych szczegółowych informacji na temat oprogramowania podczas migracji do chmury. Dzięki wykreśleniu RZUTcy Subskrybenci programu Visual Studio mogą szybko skanować swój kod źródłowy aplikacji, aby identyfikować gotowość do użycia w chmurze do migracji na platformę Azure i monitorować postęp swojej aplikacji zarówno podczas migracji, jak i po niej.
@@ -98,7 +98,7 @@ Nie masz pewności, której subskrypcji używasz?  Połącz się z, [https://my.
   - [Prześlij żądanie pomocy technicznej](https://casthighlight.com/support/)
   - [Podręcznik Wprowadzenie (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
 
-- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, zobacz [Obsługa subskrypcji](https://aka.ms/vssubscriberhelp)programu Visual Studio.
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Zobacz też
