@@ -1,5 +1,6 @@
 ---
 title: DA0002 — brak VSPerfCorProf.dll | Microsoft Docs
+description: To ostrzeżenie występuje, gdy narzędzia wiersza polecenia dla kolekcji danych profilera są używane bez użycia narzędzia VSPerfCLREnv. cmd do zainicjowania niezbędnych zmiennych środowiskowych lub jeśli inny Profiler jest uruchomiony po rozpoczęciu narzędzia profilowania.
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +15,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b6437daa245343f5a7fc40e5564ee6f2f885e14
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 763a28dcb2200549b13b3562ffe3ab9fa629cdc5
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868307"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102466183"
 ---
 # <a name="da0002-vsperfcorprofdll-is-missing"></a>DA0002: Brak biblioteki VSPerfCorProf.dll
 

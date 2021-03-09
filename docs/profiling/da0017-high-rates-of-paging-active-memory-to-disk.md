@@ -1,5 +1,6 @@
 ---
 title: DA0017 — wysokie stawki stronicowania aktywnej pamięci na dysk | Microsoft Docs
+description: Dane wydajności systemu zebrane w ramach uruchomienia profilowania wskazują, że jest duża częstotliwość stronicowania aktywnej pamięci do i z dysku podczas całego uruchomienia profilowania.
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f66db4c727be1377b41da381b75609af6478c10
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fc3be6c354e7ac412ffa069caef4ee09396d6cb5
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916766"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102466092"
 ---
 # <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017: Intensywne stronicowanie aktywnej pamięci na dysk
 

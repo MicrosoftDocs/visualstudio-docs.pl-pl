@@ -1,5 +1,6 @@
 ---
 title: DA0030 — Zbieraj pomiary interakcji warstw dla projektów bazy danych | Microsoft Docs
+description: Wywołania metody System. Data są znaczną częścią danych profilowania, a dane interakcji warstwy nie są zbierane w ramach uruchomienia profilowania. Rozważ ponowne przeprowadzenie profilowania i dodanie danych interakcji między warstwami.
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: bfce545cd3e7eb5e13e28ec7d22aaba4f7cbecfd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 44720e086fa0c9201fba319e445a44835faa9c2e
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908744"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102465884"
 ---
 # <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030: Zbieraj pomiary interakcji między warstwami dla projektów bazy danych
 

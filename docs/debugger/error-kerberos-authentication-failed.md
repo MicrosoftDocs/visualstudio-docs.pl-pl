@@ -1,5 +1,6 @@
 ---
 title: Uwierzytelnianie Kerberos nie powiodło się | Microsoft Docs
+description: Ten błąd występuje, gdy Monitor zdalnego debugowania programu Visual Studio jest uruchomiony w ramach konta System lokalny lub usługa sieciowa.
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -14,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dd5b68c0312c3974667775f90ab4fec911206342
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 41ffc4e5cb71c78462c9dbfd18472a4fc4e57c7d
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871627"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102466241"
 ---
 # <a name="error-kerberos-authentication-failed"></a>Błąd: Uwierzytelnianie Kerberos nie powiodło się
 Podczas próby wykonania zdalnego debugowania może zostać wyświetlony następujący komunikat o błędzie:
