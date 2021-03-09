@@ -1,5 +1,6 @@
 ---
 title: IManagedAddin — interfejs
+description: Zaimplementuj interfejs IManagedAddin —, aby utworzyć składnik ładujący zarządzane dodatki narzędzi VSTO.
 ms.date: 02/02/2017
 ms.topic: interface
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 89e705296c6051b8bdec823e523f0a386ff7ff76
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 614cf7e8d0e682d894328fb764c6d64b855d2834
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920437"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102469791"
 ---
 # <a name="imanagedaddin-interface"></a>IManagedAddin — interfejs
   Zaimplementuj interfejs IManagedAddin —, aby utworzyć składnik ładujący zarządzane dodatki narzędzi VSTO. Ten interfejs został dodany w systemie Microsoft Office 2007.
