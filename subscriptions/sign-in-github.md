@@ -4,18 +4,17 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 1bdcb3c9-bba1-4e25-a609-9d7e539d78e0
-ms.date: 03/05/2021
+ms.date: 03/08/2021
 ms.topic: conceptual
 description: Dowiedz się, jak zalogować się do subskrypcji programu Visual Studio za pomocą konta usługi GitHub.
-ms.openlocfilehash: 41966fb4468832b3e1a320e898164989d1fb5c3b
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: 99352f4f25d4dd6da42dc0a8d51a093c7c4c216e
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249738"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607187"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-github-account"></a>Logowanie do subskrypcji programu Visual Studio za pomocą konta usługi GitHub 
-
 Kroki umożliwiające zalogowanie się do subskrypcji programu Visual Studio zależą od rodzaju konta, którego używasz. Na przykład może być używane konto Microsoft (MSA) lub adres e-mail dostarczony przez pracodawcę lub szkołę. Od stycznia 2019 możesz teraz zalogować się do niektórych subskrypcji przy użyciu konta usługi GitHub. 
 
 W tym artykule przedstawiono procedurę logowania się przy użyciu konta usługi GitHub.
@@ -26,7 +25,7 @@ Obsługa tożsamości usługi GitHub umożliwia korzystanie z istniejącego kont
 
 Po zalogowaniu się za pomocą usługi GitHub firma Microsoft sprawdza, czy adresy e-mail skojarzone z kontem w usłudze GitHub są zgodne z istniejącymi konto Microsoftami osobistymi i firmowymi. Jeśli adres jest zgodny z Twoim kontem przedsiębiorstwa, zostanie wyświetlony monit o zalogowanie się do tego konta. Jeśli adres jest zgodny z kontem osobistym, dodamy konto usługi GitHub jako metodę logowania do tego konta osobistego.
 
-Po połączeniu poświadczeń usługi GitHub i konto Microsoft można korzystać z logowania jednokrotnego w dowolnym miejscu, w którym można używać konto Microsoft osobistego, takich jak witryny platformy Azure, aplikacje pakietu Office i Xbox. Te konta mogą być również używane na potrzeby logowania Azure Active Directory Gości jako konto Microsoft, przy założeniu, że adres e-mail jest zgodny z adresem na zaproszeniu.
+Po dołączeniu poświadczeń usługi GitHub i konto Microsoft można korzystać z logowania jednokrotnego w dowolnym miejscu, w którym można używać konto Microsoft osobistego, na przykład w witrynach platformy Azure, aplikacjach pakietu Office i konsoli Xbox. Te konta mogą być również używane na potrzeby logowania Azure Active Directory Gości jako konto Microsoft, przy założeniu, że adres e-mail jest zgodny z adresem na zaproszeniu.
 
 > [!NOTE]
 > Łączenie tożsamości usługi GitHub z konto Microsoft nie daje dostępu do kodu. Gdy aplikacje takie jak Azure DevOps i Visual Studio wymagają dostępu do repozytoriów kodu, zostanie wyświetlony monit o przyznanie określonej zgody na dostęp. 
@@ -38,7 +37,7 @@ Poniższe często zadawane pytania umożliwiają zalogowanie się do subskrypcji
 Odp.: możesz odzyskać konto usługi GitHub, przechodząc do [resetowania hasła](https://github.com/password_reset). Możesz też odzyskać konto Microsoft połączone z usługą GitHub, wprowadzając adres e-mail konta usługi GitHub w obszarze [Odzyskaj konto](https://account.live.com/password/reset).
 
 #### <a name="q-i-deleted-my-github-account--how-can-i-access-my-microsoft-account-msa-now"></a>P: Usunięto moje konto usługi GitHub.  Jak mogę teraz uzyskać dostęp do konta konto Microsoft (MSA)?
-Odp.: Jeśli nie masz żadnych innych poświadczeń w usłudze MSA (na przykład hasło, aplikacja uwierzytelniania lub klucz zabezpieczeń), możesz odzyskać konto Microsoft przy użyciu dołączanego adresu e-mail. Aby rozpocząć, przejdź do obszaru [Odzyskiwanie konta](https://account.live.com/password/reset). Musisz dodać hasło do swojego konta, aby dowiedzieć się, jak zalogować się później. 
+Odp.: Jeśli nie masz żadnych innych poświadczeń w usłudze MSA, takich jak hasło, aplikacja uwierzytelniania lub klucz zabezpieczeń, możesz odzyskać konto Microsoft przy użyciu dołączanego adresu e-mail. Aby rozpocząć, przejdź do obszaru [Odzyskiwanie konta](https://account.live.com/password/reset). Musisz dodać hasło do swojego konta, aby dowiedzieć się, jak zalogować się później. 
 
 #### <a name="q-theres-no-sign-in-with-github-option-on-the-sign-in-page--how-can-i-use-my-github-credentials-to-sign-in"></a>P: nie ma opcji "Zaloguj się za pomocą usługi GitHub" na stronie logowania.  Jak można się zalogować przy użyciu poświadczeń usługi GitHub?
 Odp.: wpisz adres e-mail konta usługi GitHub wybrany podczas tworzenia konto Microsoft połączonego z usługą GitHub. Zajrzyjmy ci i wyślemy Ci wiadomość do usługi GitHub w celu zalogowania się. Jeśli na stronie logowania znajduje się link opcji logowania, użyj przycisku **Zaloguj się przy użyciu usługi GitHub** , który jest wyświetlany po kliknięciu tego linku. 
@@ -62,7 +61,10 @@ Odp.: za każdym razem, gdy zalogujesz się przy użyciu aliasu konta (adres e-m
 Odp.: Przejdź do [karty zabezpieczenia](https://account.microsoft.com/security) w programie account.Microsoft.com, a następnie kliknij pozycję **Zaawansowane opcje zabezpieczeń** , aby odłączyć konto usługi GitHub. Odłączenie konta usługi GitHub spowoduje usunięcie go jako metody logowania i usunięcie dostępu do wszystkich repozytoriów GitHub w programie Visual Studio. Inne produkty firmy Microsoft mogły zażądać dostępu do konta usługi GitHub osobno, więc usunięcie dostępu nie spowoduje usunięcia dostępu we wszystkich produktach. Przejdź do strony [uprawnienia aplikacji](https://github.com/settings/applications) w profilu usługi GitHub, aby odwołać zgodę z aplikacji znajdujących się na liście.
 
 #### <a name="q--i-try-to-use-my-github-account-to-sign-in-but-im-prompted-that-i-already-have-a-microsoft-identity-that-i-should-use-instead--whats-happening"></a>Pytanie: próbuję zalogować się przy użyciu konta usługi GitHub, ale otrzymuję monit o podanie tożsamości firmy Microsoft, której należy użyć zamiast tego.  Co się dzieje?
-Odp.: Jeśli masz Azure Active Directory adres e-mail na koncie usługi GitHub, oznacza to, że masz już tożsamość firmy Microsoft, która może uzyskiwać dostęp do platformy Azure i uruchamiać potoki CI przy użyciu kodu usługi GitHub. Użycie tego konta zapewnia, że Twoje zasoby platformy Azure i potoki kompilacji pozostaną w granicach organizacyjnych. Jeśli jednak wykonujesz osobistą służbę, zalecamy umieszczenie osobistego adresu e-mail na Twoim koncie usługi GitHub, aby zawsze miał dostęp do niego. Po wykonaniu tej czynności spróbuj zalogować się ponownie i wybierz opcję **Użyj innego adresu e-mail** , gdy zostanie wyświetlony monit o zalogowanie się do konta służbowego. Pozwoli to utworzyć nowe konto Microsoft przy użyciu tego osobistego adresu e-mail.
+Odp.: Jeśli masz Azure Active Directory adres e-mail na koncie usługi GitHub, masz już tożsamość firmy Microsoft, która może uzyskiwać dostęp do platformy Azure i uruchamiać potoki CI przy użyciu kodu usługi GitHub. Użycie tego konta zapewnia, że Twoje zasoby platformy Azure i potoki kompilacji pozostaną w granicach organizacyjnych. Jeśli jednak wykonujesz osobistą służbę, zalecamy umieszczenie osobistego adresu e-mail na Twoim koncie usługi GitHub, aby zawsze miał dostęp do niego. Po wykonaniu tej czynności spróbuj zalogować się ponownie i wybierz opcję **Użyj innego adresu e-mail** , gdy zostanie wyświetlony monit o zalogowanie się do konta służbowego. Pozwoli to utworzyć nowe konto Microsoft przy użyciu tego osobistego adresu e-mail.
+
+## <a name="resources"></a>Zasoby
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, zobacz [Obsługa subskrypcji](https://aka.ms/vssubscriberhelp)programu Visual Studio.
 
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)

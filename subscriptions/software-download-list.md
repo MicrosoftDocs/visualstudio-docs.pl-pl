@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: c2878e28-eb5d-4adb-8d7d-a95ffea703a9
-ms.date: 03/11/2020
+ms.date: 02/19/2021
 ms.topic: how-to
 description: Znajdź listę pobrań oprogramowania uwzględnionych w ramach subskrypcji programu Visual Studio.
-ms.openlocfilehash: 390f33591afa6dfceebddbbe5f7f08b413be5e77
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 54e018420233072f99caa84bb3e1e3858b6ed633
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903462"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607278"
 ---
 # <a name="what-software-is-available-for-download"></a>Jakie oprogramowanie jest dostępne do pobrania?
 
@@ -30,9 +30,12 @@ Aby szybko znaleźć produkty, użyj funkcji "Wyszukaj" w górnej części stron
 
 Możesz również pobrać arkusz kalkulacyjny programu Excel zawierający obszerną listę [dostępnych tytułów oprogramowania](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx) dla każdego typu subskrypcji.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="resources"></a>Zasoby 
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, zobacz [Obsługa subskrypcji](https://aka.ms/vssubscriberhelp)programu Visual Studio. 
+
+## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Azure DevOps documentation (Dokumentacja usługi Azure DevOps)](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)
 - [Dokumentacja Microsoft 365](/microsoft-365/)
 

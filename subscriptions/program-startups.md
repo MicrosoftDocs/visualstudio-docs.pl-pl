@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 71af88da-b9fa-4d12-999c-7d461f3df0ec
-ms.date: 10/28/2020
+ms.date: 02/19/2021
 ms.topic: conceptual
 description: Szczegóły dotyczące subskrypcji są oferowane za pomocą programu Microsoft for Startups.
-ms.openlocfilehash: b1476faec2ea001423ebec139c9ccf4d4dbfa9b4
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 4b8d3e92f55df660dd8990c95ba72b872e3cded7
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903408"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607317"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>Subskrypcje programu Visual Studio oferowane do uruchamiania
 Kwalifikowane uruchomienia, które dołączają do programu Microsoft for Startups, mogą zdobywać 5 Visual Studio Enterprise [comiesięcznych subskrypcji w chmurze](https://visualstudio.microsoft.com/vs/pricing/). 
@@ -33,16 +33,19 @@ Odp.: przy pierwszym zakupie opłata jest naliczana proporcjonalnie do pozostał
 
 Po zwiększeniu ilości płatnej później Oceńmy również zwiększenie liczby jednostek, aby pokryć pozostałe dni w bieżącym miesiącu. Jeśli więc zakupiono 1 więcej Visual Studio Professional comiesięczną subskrypcję chmury w dniu 10 maja, będziemy rozliczać około 0,677 jednostek (21 dni pozostałej w dniu 31-dniowego miesiąca).
 
-### <a name="q-how-do-cancelations-work"></a>P: jak działają anulowania?
+### <a name="q-how-do-cancellations-work"></a>P: jak działają anulowania?
 Odp.: po anulowaniu subskrypcji programu Visual Studio w chmurze anulujesz automatyczne odnawianie. Subskrypcja pozostanie ważna do zwykłej daty odnowienia, a potem po prostu wygaśnie. Gdy subskrypcja wygaśnie, subskrybent programu Visual Studio nie będzie już mógł korzystać z programu Visual Studio i nie będzie miał dostępu do żadnych korzyści związanych z subskrypcją.
 
-W przypadku comiesięcznych subskrypcji w chmurze, anulowania zaczynają obowiązywać pierwszego dnia następnego miesiąca. Jeśli chcesz anulować tylko część miesięcznych subskrypcji w chmurze, usuń użytkowników pierwszego dnia kolejnego miesiąca, aby mieć pewność, że właściwe osoby nadal będą miały przypisane aktywne subskrypcje.
+Subskrypcje miesięczne w chmurze zostaną anulowane pierwszego dnia kolejnego miesiąca. Jeśli chcesz anulować tylko część miesięcznych subskrypcji w chmurze, usuń użytkowników pierwszego dnia kolejnego miesiąca, aby mieć pewność, że właściwe osoby nadal będą miały przypisane aktywne subskrypcje.
 
-W przypadku rocznych subskrypcji w chmurze, anulowania zaczną obowiązywać pierwszego dnia miesiąca po 12 miesiącach od oryginalnego zakupu lub 12 miesięcy od ostatniej rocznej opłaty za odnowienie. Jeśli na przykład kupiono roczną subskrypcję programu Visual Studio Professional w chmurze 3 stycznia 2018 roku, będzie ona aktywna do 1 lutego 2019 roku i wtedy zostanie automatycznie odnowiona na kolejny rok. Jeśli anulujesz ją pomiędzy tą datą a 1 lutego 2020 roku, ta subskrypcja wygaśnie 1 lutego 2020 r. Nie ma rabatu za anulowanie rocznych subskrypcji w chmurze przed upływem roku.
+W przypadku rocznych subskrypcji w chmurze l obowiązuje pierwszy dzień miesiąca po 12 miesiącach od oryginalnego zakupu lub 12 miesięcy od ostatniej rocznej opłaty za odnowienie. Jeśli na przykład kupiono roczną subskrypcję programu Visual Studio Professional w chmurze 3 stycznia 2018 roku, będzie ona aktywna do 1 lutego 2019 roku i wtedy zostanie automatycznie odnowiona na kolejny rok. Jeśli anulujesz ją pomiędzy tą datą a 1 lutego 2020 roku, ta subskrypcja wygaśnie 1 lutego 2020 r. Nie ma rabatu za anulowanie rocznych subskrypcji w chmurze przed upływem roku.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="resources"></a>Zasoby
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, zobacz [Obsługa subskrypcji](https://aka.ms/vssubscriberhelp)programu Visual Studio.
+
+## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Azure DevOps documentation (Dokumentacja usługi Azure DevOps)](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)
 - [Dokumentacja Microsoft 365](/microsoft-365/)
 

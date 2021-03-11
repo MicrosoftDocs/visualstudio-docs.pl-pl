@@ -1,7 +1,7 @@
 ---
 title: Uruchom jako administrator
 description: Dowiedz się, jak uruchomić program Visual Studio jako administrator.
-ms.date: 01/06/2020
+ms.date: 03/09/2021
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, user permissions
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 63787b394d9e8988759cd141540785e34324f8c6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b3d2a22533137bf2c1f2e7cfeb3802f5824c3926
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971300"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607252"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Uprawnienia użytkownika i program Visual Studio
 
@@ -72,7 +72,17 @@ Jeśli musisz uruchomić program Visual Studio jako administrator, wykonaj nast�
 
 ::: moniker-end
 
-Możesz również zmodyfikować skrót aplikacji, aby zawsze był uruchamiany z uprawnieniami administracyjnymi.
+Możesz również zmodyfikować skrót aplikacji, aby zawsze był uruchamiany z uprawnieniami administracyjnymi:
+
+1. Otwórz menu **Start** , przewiń do używanej wersji programu Visual Studio, a następnie wybierz polecenie **więcej**  >  **otwartej lokalizacji pliku**.
+
+1. W **Eksploratorze plików** Znajdź skrót programu **Visual Studio** dla używanej wersji. Następnie kliknij prawym przyciskiem myszy skrót i wybierz polecenie **Wyślij do**  >  **pulpitu (Utwórz skrót)**.
+
+1. Na pulpicie **systemu Windows** kliknij prawym przyciskiem myszy skrót **programu Visual Studio** , a następnie wybierz polecenie **Właściwości**.
+
+1. Wybierz przycisk **Zaawansowane** , a następnie zaznacz pole wyboru **Uruchom jako administrator** .
+
+1. Wybierz przycisk **OK**, a następnie ponownie wybierz przycisk **OK**.
 
 ## <a name="see-also"></a>Zobacz też
 

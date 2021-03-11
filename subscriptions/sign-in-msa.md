@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 19038bb0-2858-49df-9624-cbf8bfbb5d39
-ms.date: 09/08/2020
+ms.date: 02/19/2021
 ms.topic: how-to
 description: Jak zalogować się do Visual Studio Subscription za pomocą konta Microsoft (MSA)
-ms.openlocfilehash: 52882fcf50a784812752dbf606b21db1ddc5c3ea
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 7e0ef2e9adedc62be7c2c7ca709496d1f075f03c
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005940"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607161"
 ---
 # <a name="signing-in-to-your-visual-studio-subscriptions-with-your-microsoft-account-msa"></a>Logowanie się do subskrypcji programu Visual Studio za pomocą konta Microsoft (MSA)
 
@@ -40,11 +40,12 @@ Odp.: wielu użytkowników ma więcej niż jedną subskrypcję.  Jeśli możesz 
 - Użytkownik jest zalogowany przy użyciu innego konta Microsoft.  Istnieje możliwość, że masz wiele subskrypcji, takich jak subskrypcja wersji Professional lub Enterprise i członkostwo w Visual Studio Dev Essentials, i są one skojarzone z różnymi adresami e-mail. Aby wyświetlić inne subskrypcje, Wyloguj się i zaloguj ponownie przy użyciu innego MSA.
 - Masz wiele subskrypcji skojarzonych z tym samym elementem MSA.  Aby wyświetlić wszystkie subskrypcje skojarzone z Twoim MSA, odwiedź stronę https://my.visualstudio.com/subscriptions i wybierz subskrypcję, której chcesz użyć. 
 
-Jeśli nadal masz problemy, możesz skontaktować się z naszym zespołem [pomocy technicznej](https://visualstudio.microsoft.com/subscriptions/support/) , aby uzyskać pomoc.  
+## <a name="resources"></a>Zasoby 
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, zobacz [Obsługa subskrypcji](https://aka.ms/vssubscriberhelp)programu Visual Studio.
 
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Azure DevOps documentation (Dokumentacja usługi Azure DevOps)](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)
 - [Dokumentacja Microsoft 365](/microsoft-365/)
 

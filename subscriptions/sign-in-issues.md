@@ -1,18 +1,18 @@
 ---
 title: Problemy z logowaniem do subskrypcji programu Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 176c7f11-b19d-49e9-a6dd-b2e5da5e8480
-ms.date: 10/28/2020
+ms.date: 02/19/2021
 ms.topic: conceptual
 description: Informacje o problemach, które mogą wystąpić podczas logowania do subskrypcji programu Visual Studio
-ms.openlocfilehash: cf89d2deff2a5e9e81d065fbb7efda8097102d03
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 5735e0c4178e6866539fff2edac6155642a1ba73
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903447"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607200"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>Problemy z logowaniem do subskrypcji programu Visual Studio
 Aby korzystać z subskrypcji programu Visual Studio, musisz najpierw się zalogować.  W zależności od subskrypcji można skonfigurować ją za pomocą tożsamości usługi konto Microsoft (MSA) lub Azure Active Directory (AAD).  W tym artykule omówiono niektóre problemy, które można napotkać podczas logowania się do subskrypcji.
@@ -43,7 +43,7 @@ Jednak jeśli spróbujesz zarejestrować się w celu uzyskania aplikacji firmy M
 Opisany tutaj blok rejestracji uniemożliwia tworzenie nowych kont. Nie ma to wpływu na użytkowników, którzy mają już konto Microsoft z adresem e-mail. Jeśli jesteś już w tej sytuacji, możemy ułatwić zmianę nazwy konto Microsoft osobistej. Ten [artykuł pomocy technicznej](https://windows.microsoft.com/en-US/Windows/rename-personal-microsoft-account) zawiera proste wskazówki krok po kroku. Zmiana nazwy osobistego konto Microsoft oznacza zmianę nazwy użytkownika i nie ma wpływu na służbowy adres e-mail ani sposób logowania się do usług firmowych, takich jak Microsoft 365. Nie ma to również wpływu na Twoje osobiste rzeczy — po prostu zmienia sposób logowania się do niego. Możesz użyć innego adresu e-mail (osobistego), uzyskać nowy @outlook.com adres e-mail od firmy Microsoft lub użyć numeru telefonu jako nowej nazwy użytkownika.
 
 > [!NOTE]
-> Jeśli Twój dział INFORMATYCZNy prosi Cię o utworzenie osobistego konto Microsoft za pomocą poczty e-mail, na przykład w celu uzyskania dostępu do usług firmowych firmy Microsoft, takich jak pomoc techniczna Premier, należy skontaktować się z zespołem administracyjnym przed zmianą nazwy konta.
+> Jeśli Twój dział INFORMATYCZNy prosi Cię o utworzenie osobistego konto Microsoft za pomocą poczty e-mail, na przykład w celu uzyskania dostępu do usług firmowych firmy Microsoft, takich jak pomoc techniczna Premium, należy skontaktować się z zespołem administracyjnym przed zmianą nazwy konta.
 
 ## <a name="deleting-a-sign-in-address-may-prevent-access-to-a-subscription"></a>Usunięcie adresu logowania może uniemożliwić dostęp do subskrypcji
 W przypadku usunięcia co najmniej jednej tożsamości (MSA lub AAD) skojarzonej z subskrypcją informacje o subskrybentach, w tym nazwa użytkownika i identyfikator logowania, mogą być renderowane anonimowo, co spowodowało utratę dostępu do subskrypcji.
@@ -61,11 +61,14 @@ Termin "aliasowanie" odnosi się do użytkowników, którzy mają różne tożsa
 Aliasowanie może wystąpić, gdy firma ma usługę online firmy Microsoft dotyczącą logowania do katalogu, na przykład JohnD@contoso.com , ale użytkownicy uzyskują dostęp do swoich kont e-mail przy użyciu aliasów lub przyjaznych nazw, takich jak John.Doe@contoso.com . W przypadku wielu klientów, którzy zarządzają swoimi subskrypcjami za pośrednictwem usługi licencjonowania zbiorowego (VLSC), może to spowodować nieudane działanie logowania, ponieważ podany adres e-mail ( John.Doe@contoso.com ) nie jest zgodny z adresem katalogu ( JohnD@contoso.com ) wymaganym do pomyślnego uwierzytelnienia za pomocą opcji "konto służbowe".
 
 ### <a name="what-options-do-i-have"></a>Jakie są dostępne opcje?
-Z perspektywy subskrybenta ważne jest, aby najpierw współpracować z administratorem w celu zrozumienia konfiguracji tożsamości firmy. W razie potrzeby administrator może potrzebować aktualizacji ustawień konta z poziomu portalu administratora lub utworzyć konto Microsoft (MSA) przy użyciu firmowego adresu e-mail. Przed wykonaniem kroków związanych z tworzeniem konta MSA skontaktuj się z administratorem w sprawie wszelkich zasad lub problemów związanych z wykonaniem tej akcji. 
+Z perspektywy subskrybenta ważne jest, aby najpierw współpracować z administratorem w celu zrozumienia konfiguracji tożsamości firmy. W razie potrzeby administrator może potrzebować aktualizacji ustawień konta z poziomu portalu administratora lub utworzyć konto Microsoft (MSA) przy użyciu firmowego adresu e-mail. Przed wykonaniem kroków związanych z tworzeniem konta MSA skontaktuj się z administratorem w sprawie wszelkich zasad lub problemów związanych z wykonaniem tej akcji.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="resources"></a>Zasoby
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, zobacz [Obsługa subskrypcji](https://aka.ms/vssubscriberhelp)programu Visual Studio. 
+
+## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Azure DevOps documentation (Dokumentacja usługi Azure DevOps)](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)
 - [Dokumentacja Microsoft 365](/microsoft-365/)
 

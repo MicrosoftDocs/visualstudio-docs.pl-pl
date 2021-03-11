@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 8470f035-2a82-4052-9a12-6f24ce796861
-ms.date: 10/28/2020
+ms.date: 02/19/2021
 ms.topic: overview
 description: Poznaj pełen zakres korzyści dostępnych dla Ciebie w portalu subskrypcji programu Visual Studio
-ms.openlocfilehash: d4f65f4c430d585485c388f22664726c848e6d1e
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 6ce759b3ef6a73980e7bd477e36479d65a61b3c8
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904575"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607147"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>Korzystanie z portalu subskrybenta — my.visualstudio.com
 
@@ -47,15 +47,15 @@ Na stronie subskrypcje można sprawdzić, które subskrypcje są posiadane, prze
 
 ## <a name="support"></a>Pomoc techniczna
 
-Oprócz indywidualnych korzyści, które można znaleźć w kategorii pomoc techniczna na stronie korzyści, Strona pomoc techniczna zapewnia dostęp do zasobów, które ułatwiają maksymalne wykorzystanie subskrypcji programu Visual Studio. Uzyskaj dostęp do [zasobów pomocy technicznej](https://visualstudio.microsoft.com/subscriptions/support/) , aby rozwiązywać problemy techniczne lub pytania związane z sprzedażą, kontami i rozliczeniami subskrypcji.
+Oprócz indywidualnych korzyści, które można znaleźć w kategorii pomoc techniczna na stronie korzyści, Strona pomoc techniczna zapewnia dostęp do zasobów, które ułatwiają maksymalne wykorzystanie subskrypcji programu Visual Studio. Uzyskaj dostęp do [zasobów pomocy technicznej](https://aka.ms/vssubscriberhelp) , aby rozwiązywać problemy techniczne lub pytania związane z sprzedażą, kontami i rozliczeniami subskrypcji.
 
 ## <a name="marketplace"></a>[Rynek](https://marketplace.visualstudio.com/)
 
 Chcesz odnowić subskrypcję programu Visual Studio Cloud?  Czy chcesz pobrać najnowsze rozszerzenia rodziny produktów Visual Studio?  Witryna Marketplace ułatwia użytkownikom znalezienie rozszerzeń, narzędzi i usług, dzięki którym DevOps platformy Azure, Azure DevOps Server i Visual Studio Code jeszcze lepsze. Możesz nawet zostać wydawcą i opublikować własne rozszerzenia w portalu Marketplace.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Azure DevOps documentation (Dokumentacja usługi Azure DevOps)](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)
 - [Dokumentacja Microsoft 365](/microsoft-365/)
 

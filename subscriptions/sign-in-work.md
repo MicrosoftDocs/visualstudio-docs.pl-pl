@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: f39a2672-c283-4755-93d3-31c7c7a032d0
-ms.date: 10/28/2020
+ms.date: 02/19/2021
 ms.topic: how-to
 description: Dowiedz się, jak zalogować się do subskrypcji programu Visual Studio przy użyciu konta służbowego.
-ms.openlocfilehash: 3ac4e9fedae66656d4dee2155c8a8dcbe9325970
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: effec7889199d4eddc3c149bdd4ded296a50e0b1
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903378"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607265"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-work-or-school-account"></a>Logowanie do subskrypcji programu Visual Studio przy użyciu konta służbowego 
 
@@ -28,7 +28,7 @@ W tym artykule przedstawiono procedurę logowania przy użyciu adresu e-mail pod
    > [!NOTE]
    > Ten adres jest również identyfikowany w powitalnej wiadomości e-mail otrzymanej na subskrybencie. Sprawdź foldery wiadomości-śmieci, jeśli masz problemy z lokalizowaniem powitalnej wiadomości e-mail.
 
-3. Kliknij przycisk **Kontynuuj** .
+3. Kliknij przycisk **Kontynuuj**.
 4. Nastąpi przekierowanie do firmowej strony logowania.
 5. Wprowadź hasło.
 6. Kliknij przycisk **Zaloguj**
@@ -46,7 +46,7 @@ W prawym górnym rogu możesz także zobaczyć swoją obecnie wybraną subskrypc
    > [!NOTE]
    > Ten adres jest również identyfikowany na liście powitalnej subskrybenta. Sprawdź foldery wiadomości-śmieci, jeśli nie otrzymano list powitalnych
 
-3. Kliknij przycisk **Kontynuuj** .
+3. Kliknij przycisk **Kontynuuj**.
 4. Nastąpi przekierowanie do strony decyzji.
     - Wybierz pozycję **konto służbowe** , jeśli subskrypcja jest skojarzona z kontem "służbowym" skojarzonym z dzierżawą usługi Azure Active Directory (AAD).
     - Wybierz pozycję **osobiste** , jeśli subskrypcja jest skojarzona z adresem E-mail "firmowa", ale została również przekonwertowane na "osobiste" konto Microsoft (MSA).
@@ -57,7 +57,7 @@ W prawym górnym rogu możesz także zobaczyć swoją obecnie wybraną subskrypc
     - W przypadku niepowodzenia jednej ścieżki Wypróbuj drugą.  Administratorzy subskrypcji mogli zmodyfikować twoją subskrypcję.
 
 5. Wprowadź hasło.
-6. Kliknij przycisk **Zaloguj** .
+6. Kliknij przycisk **Zaloguj**.
 7. Na tym etapie powinna zostać wyświetlona strona "korzyści".
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
@@ -69,11 +69,12 @@ Odp.: wielu użytkowników ma więcej niż jedną subskrypcję.  Jeśli możesz 
 1. Użytkownik jest zalogowany przy użyciu innego konta Microsoft.  Istnieje możliwość, że masz wiele subskrypcji, takich jak subskrypcja wersji Professional lub Enterprise i członkostwo w Visual Studio Dev Essentials, i są one skojarzone z różnymi adresami e-mail. Aby wyświetlić inne subskrypcje, Wyloguj się i zaloguj ponownie przy użyciu innego MSA.
 2. Masz wiele subskrypcji skojarzonych z tym samym adresem e-mail.  Aby wyświetlić wszystkie subskrypcje skojarzone z Twoim adresem e-mail, odwiedź stronę https://my.visualstudio.com/subscriptions i wybierz subskrypcję, której chcesz użyć. 
 
-Jeśli nadal masz problemy, możesz skontaktować się z naszym zespołem [pomocy technicznej](https://visualstudio.microsoft.com/subscriptions/support/) , aby uzyskać pomoc.  
+## <a name="resources"></a>Zasoby 
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, zobacz [Obsługa subskrypcji](https://aka.ms/vssubscriberhelp)programu Visual Studio.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Azure DevOps documentation (Dokumentacja usługi Azure DevOps)](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)
 - [Dokumentacja Microsoft 365](/microsoft-365/)
 

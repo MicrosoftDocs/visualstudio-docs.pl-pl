@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: b6fbfa3e-654a-462f-8e22-e313b6ea617f
-ms.date: 10/30/2020
+ms.date: 02/19/2021
 ms.topic: conceptual
 description: Dowiedz się, co się dzieje po wygaśnięciu subskrypcji programu Visual Studio
-ms.openlocfilehash: 3bab529f4a45a57e6cc21260fdde2d5e18bc5217
-ms.sourcegitcommit: f81984aec5341a84b87c2466461656c38d8ff681
+ms.openlocfilehash: 26659cf70ace2ffb6eaa8f02146ed965c03df48a
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93245011"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607137"
 ---
 # <a name="what-happens-when-your-subscription-expires"></a>Co się stanie po wygaśnięciu subskrypcji
 Subskrypcje programu Visual Studio mają określone czasy trwania i o ile nie zostaną odnowione, wygasną.  Po wygaśnięciu subskrypcji korzyści udostępniane przez subskrypcję mają różne znaczenie.  W tym artykule wyjaśniono, w jaki sposób wygaśnięcie ma wpływ na różne aspekty subskrypcji programu Visual Studio. 
@@ -40,9 +40,12 @@ Miesięczne przydziały środków na korzystanie z platformy Azure będą kontyn
 ### <a name="other-benefits"></a>Inne korzyści 
 Wiele korzyści uwzględnionych w subskrypcjach programu Visual Studio ma określone czasy trwania.  Korzyści świadczone przez partnerów firmy Microsoft, takie jak Pluralsight, datacamp lub WhiteSource, mają limity czasu po ich aktywowaniu.  Wcześniej aktywowane korzyści będą nadal dostępne dla Ciebie w pozostałej części swoich warunków.  Na przykład jeśli aktywowano sześć-miesięczną subskrypcję szkoleniową serwisu LinkedIn i nadal trwa cztery miesiące po wygaśnięciu subskrypcji programu Visual Studio, będziesz mieć dostęp do subskrypcji szkoleniowej usługi LinkedIn na cztery miesiące.  
 
+## <a name="resources"></a>Zasoby
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, zobacz [Obsługa subskrypcji](https://aka.ms/vssubscriberhelp)programu Visual Studio.
+
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Azure DevOps documentation (Dokumentacja usługi Azure DevOps)](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)
 - [Dokumentacja Microsoft 365](/microsoft-365/)
 
