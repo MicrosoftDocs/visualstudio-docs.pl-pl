@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: ce5fc8a4-484c-4df6-97c3-cb60174fb66b
-ms.date: 02/20/2020
+ms.date: 03/11/2021
 ms.topic: conceptual
 description: Dowiedz się, jak anonimowe dane subskrybenta, gdy dostęp do subskrypcji zostanie utracony.
-ms.openlocfilehash: 34059c20a65c41f7998efe344e2d8d4ac63cf7af
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: 69f41232a678a857908b30d63df2ae7f72b79904
+ms.sourcegitcommit: 9da787bf5b4281f933dc22083dc0bdeae3bc9461
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467495"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103225966"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>Zachowywanie anonimowości informacji o subskrybencie programu Visual Studio
 Gdy wystąpi zdarzenie, które blokuje użycie subskrypcji przez subskrybenta, takie jak wygaśnięcie subskrypcji lub usunięcie konta logowania subskrybenta, informacje osobiste użytkownika, takie jak nazwa i konto logowania, są zasadniczo szyfrowane w celu ich nieużycia.  Jest to gotowe do ochrony danych osobowych subskrybenta.
@@ -35,7 +35,9 @@ Zdarzenia, które renderują subskrypcję niezdatną do użycia przez subskryben
 Odp.: nie.  Zachowywanie anonimowości jest w odpowiedzi na zdarzenie, które powoduje utratę dostępu do subskrypcji, ale nie powoduje braku dostępu.
 
 ### <a name="q--im-an-admin-for-my-organizations-subscriptions--if-one-of-my-subscribers-information-is-anonymized-can-that-subscription-be-reassigned-to-another-user"></a>P: jestem administratorem dla subskrypcji mojej organizacji.  Jeśli jedna z informacji na subskrybencie to anonimowe, czy można ponownie przypisać subskrypcję do innego użytkownika?
-Odp.: tak — o ile subskrypcja nie wygasła, może zostać ponownie przypisana do innego subskrybenta.
+Odp.: tak.  Jeśli spełnione są następujące kryteria, można ponownie przypisać subskrypcje:
+- Subskrypcja nie wygasła
+- Co najmniej 90 dni upłynął od momentu ostatniej przydzielenia subskrypcji do subskrybenta.  Na przykład jeśli subskrypcja została przypisana do subskrybenta 1 czerwca, nie można jej przypisać ponownie do 30 sierpnia.
 
 ### <a name="q-how-can-i-prevent-anonymization-caused-by-deleting-a-sign-in-email-address"></a>P: Jak mogę zapobiec zachowywanie anonimowości spowodowane przez usunięcie adresu e-mail logowania?
 Odp.: Istnieją dwa sposoby na uniknięcie problemu:
@@ -44,7 +46,7 @@ Odp.: Istnieją dwa sposoby na uniknięcie problemu:
 
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Azure DevOps documentation (Dokumentacja usługi Azure DevOps)](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)
 - [Dokumentacja Microsoft 365](/microsoft-365/)
 
