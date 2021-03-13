@@ -18,12 +18,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d62d35a296c70462aab75af5a8c6729179d5b34d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e2314bb8fdb44d769a5067a39b01b40b0a74734f
+ms.sourcegitcommit: 99b66b0f4ced46ead0b2506a103f974f40cc0076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925773"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103295762"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Używanie wyrażeń regularnych w programie Visual Studio
 
@@ -60,7 +60,7 @@ Poniższa tabela zawiera niektóre znaki wyrażenia regularnego, operatory, kons
 |Dopasowuje dowolny [znak odstępu](/dotnet/standard/base-types/character-classes-in-regular-expressions#whitespace-character-s)|\s|`Public\sInterface` Dopasowuje frazę "interfejs publiczny"|
 |Dopasowuje dowolny [znak cyfry dziesiętnej](/dotnet/standard/base-types/character-classes-in-regular-expressions#decimal-digit-character-d)|\d|`\d` Dopasowuje "4" i "0" w "WD40"|
 
-Przykładowe wyrażenie regularne, które łączy niektóre operatory i konstrukcje, aby odpowiadało liczbie szesnastkowej `\b0[xX]([0-9a-fA-F]+\)\b` . To wyrażenie pasuje do "0xc67f", ale nie "0xc67g".
+Przykładowe wyrażenie regularne, które łączy niektóre operatory i konstrukcje, aby odpowiadało liczbie szesnastkowej `\b0[xX]([0-9a-fA-F]+)\b` . To wyrażenie pasuje do "0xc67f", ale nie "0xc67g".
 
 > [!TIP]
 > W systemach operacyjnych Windows większość wierszy kończy się znakiem "\r\n" (znak powrotu karetki, po którym następuje nowy wiersz). Te znaki nie są widoczne, ale są obecne w edytorze i przechodzą do usługi wyrażeń regularnych programu .NET.

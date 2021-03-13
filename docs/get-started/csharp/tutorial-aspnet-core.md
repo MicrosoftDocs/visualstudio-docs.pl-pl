@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 026f6f2902b537312c0714b7eeb61d10e0fb980d
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: b9c7f41fd2977ca00294eabd941bc371d8a3220e
+ms.sourcegitcommit: 99b66b0f4ced46ead0b2506a103f974f40cc0076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683137"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103295796"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Samouczek: wprowadzenie do języka C# i ASP.NET Core w programie Visual Studio
 
@@ -357,7 +357,7 @@ Oto krótkie często zadawane pytania, aby wyróżnić niektóre kluczowe pojęc
 
 ### <a name="what-is-c"></a>Co to jest język C#?
 
-[C#](/dotnet/csharp/getting-started/introduction-to-the-csharp-language-and-the-net-framework) to bezpieczny dla typu język programowania i zorientowany obiektowo, zaprojektowany tak, aby był niezawodny i łatwy w nauce.
+[C#](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/) to bezpieczny dla typu język programowania i zorientowany obiektowo, zaprojektowany tak, aby był niezawodny i łatwy w nauce.
 
 ### <a name="what-is-aspnet-core"></a>Co to jest ASP.NET Core?
 

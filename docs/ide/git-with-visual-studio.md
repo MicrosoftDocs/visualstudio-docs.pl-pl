@@ -8,12 +8,12 @@ ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 5f93d8c29bcf7e85df04dd364868e65f70482b72
-ms.sourcegitcommit: 59b63039982bb5894eb35d8b544657688731614f
+ms.openlocfilehash: 354be4d3e31ead2d77e62f61600c20c1774353cd
+ms.sourcegitcommit: 99b66b0f4ced46ead0b2506a103f974f40cc0076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98597408"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103295785"
 ---
 # <a name="git-experience-in-visual-studio"></a>Środowisko Git w programie Visual Studio
 
@@ -117,7 +117,7 @@ Z obu lokalizacji można przełączać się między istniejącymi gałęziami.
 
 ### <a name="create-a-new-branch"></a>Utwórz nową gałąź
 
-Można również utworzyć nową gałąź. Równoważne polecenie dla tej akcji to `git checkout <branchname>` .
+Można również utworzyć nową gałąź. Równoważne polecenie dla tej akcji to `git checkout -b <branchname>` .
 
 Tworzenie nowej gałęzi jest tak proste jak wprowadzenie nazwy gałęzi i oparcie jej poza istniejącą gałęzią.
 
