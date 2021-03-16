@@ -1,4 +1,5 @@
 ---
+description: Podjęto próbę wywołania metody RegExp. prototype. toString lub RegExp. prototype. valueOf na obiekcie typu innego niż RegExp.
 title: Oczekiwano obiektu wyrażenia regularnego | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: e226096c-c58f-4bcb-a71e-fa32ce474b67
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 370e5a8028bae0e60c265ba65dca12668e4b8d8c
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: a5ffabd91a28d07e1c96439ccf96d713f7a557be
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862058"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103570794"
 ---
 # <a name="regular-expression-object-expected"></a>Oczekiwano obiektu będącego wyrażeniem regularnym
 Podjęto próbę wywołania metody **RegExp. prototype. ToString** lub **RegExp. prototype. valueOf** na obiekcie typu innego niż `RegExp` . Obiekt tego typu wywołania musi być typu `RegExp` .  

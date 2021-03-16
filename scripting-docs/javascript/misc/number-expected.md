@@ -1,4 +1,5 @@
 ---
+description: Podjęto próbę wywołania metody Number. prototype. toString lub Number. prototype. valueOf na obiekcie typu innego niż Number * *.
 title: Oczekiwano liczby | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: b272f51a-97c2-4398-8b46-9cc49a5c0bd6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 09a49fb0cbff746f11606e4cef7417a5c9a68d0b
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: cc26c2009b9b3cea17a001c4d1a6a020234757de
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862518"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103572107"
 ---
 # <a name="number-expected"></a>Liczba oczekiwana
 Podjęto próbę wywołania metody **Number. prototype. ToString** lub **Number. prototype. valueOf** na obiekcie typu innego niż **Number**. Obiekt tego typu wywołania musi być typu **Number**.  

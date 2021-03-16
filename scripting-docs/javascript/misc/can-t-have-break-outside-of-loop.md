@@ -1,4 +1,5 @@
 ---
+description: Próbowano użyć słowa kluczowego break poza pętlą.
 title: Element "Break" nie może występować poza pętlą | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: 11d02172-2a78-4705-a730-d21111db5f42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ee177c8070fc5af8123d7fd78e69b1f767a5b700
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: d761a1cff89f650e5fc465b6a6aef2713aafb765
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862803"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103570651"
 ---
 # <a name="cant-have-break-outside-of-loop"></a>Instrukcja „break" nie może występować poza pętlą
 Próbowano użyć słowa kluczowego **Break** poza pętlą. Słowo kluczowe **Break** służy do kończenia pętli lub `switch` instrukcji. Musi być osadzony w treści pętli lub `switch` instrukcji. Jednak **etykieta** może być zgodna ze słowem kluczowym Break.  

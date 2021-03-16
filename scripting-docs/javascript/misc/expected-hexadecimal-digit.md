@@ -1,4 +1,5 @@
 ---
+description: Utworzono nieprawidłową sekwencję ucieczki Unicode.
 title: Oczekiwana cyfra szesnastkowa | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: 67a86df7-49f9-43cb-99c6-99b1a427827a
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8c6be5302c0c4c6565884fa800da7cb9a002d151
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 107ce2dd4f9a65a0a04b8e2ec773367ffae4ce81
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91861936"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103570430"
 ---
 # <a name="expected-hexadecimal-digit"></a>Oczekiwano liczby szestnastkowej
 Utworzono nieprawidłową sekwencję ucieczki Unicode. Sekwencje ucieczki Unicode zaczynają się od \u, po których następuje dokładnie cztery cyfry szesnastkowe (nie więcej i nie mniej). Cyfry szesnastkowe Unicode mogą zawierać tylko cyfry 0-9, wielkie litery A-F i małe litery a-f. Poniższy przykład ilustruje poprawnie sformułowaną sekwencję ucieczki w formacie Unicode.  

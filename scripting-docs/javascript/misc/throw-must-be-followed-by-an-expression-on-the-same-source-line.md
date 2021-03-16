@@ -1,4 +1,5 @@
 ---
+description: Użyto słowa kluczowego throw, ale nie jest ono zgodne z wyrażeniem w tym samym wierszu źródłowym.
 title: Po elemencie throw musi następować wyrażenie w tym samym wierszu źródłowym | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: b03b7747-01a1-40c6-af80-a1dd70bc5781
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b1ce004eb523497b912e8d7ec29c3b03044f0220
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: cfa2bace6f82ae972204cc0a405cc7e8682e98af
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91861998"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103570716"
 ---
 # <a name="throw-must-be-followed-by-an-expression-on-the-same-source-line"></a>Po instrukcji Throw musi występować wyrażenie w tym samym wierszu źródłowym
 Użyto `throw` słowa kluczowego, ale nie było ono zgodne z wyrażeniem w tej samej linii źródłowej. `throw`Instrukcja składa się z dwóch części: `throw` słowa kluczowego, po którym następuje wyrażenie, które ma zostać zgłoszone. Na przykład:  

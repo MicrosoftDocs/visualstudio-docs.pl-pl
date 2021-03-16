@@ -1,4 +1,5 @@
 ---
+description: Podjęto próbę utworzenia wyrażenia za pomocą operatora warunkowego Trzyelementowy, ale nie zawiera on dwukropka między drugim i trzecim argumentem operacji.
 title: Oczekiwano znaku ":" | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: cbb1bb65-59e4-47e0-834d-8f514cfda0f6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 41f99831a92c257b9f8ed361b7abd522d868a430
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 00a0eae2f2f048637aa94d8990d280839e9fd7b0
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862426"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103570443"
 ---
 # <a name="expected-"></a>Oczekiwano znaku „:"
 Podjęto próbę utworzenia wyrażenia za pomocą operatora warunkowego Trzyelementowy, ale nie zawiera on dwukropka między drugim i trzecim argumentem operacji. Operator warunkowy Trzyelementowy (trzy operandy) wymaga dwukropka między drugim (true) i trzecimi operandami (false).  

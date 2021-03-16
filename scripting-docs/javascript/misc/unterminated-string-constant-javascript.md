@@ -1,4 +1,5 @@
 ---
+description: Nie końcowa stała ciągu z zamykającym znakiem cudzysłowu.
 title: Niezakończona stała typu String (JavaScript) | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: 5083809e-9828-4aea-b9b0-80f46d6f3812
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7555aa3413b2c3e5b384f92a0f2c295548d8930a
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 59ce392220b8c3e9fa82384c514e0baf762ee29a
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862715"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103571158"
 ---
 # <a name="unterminated-string-constant-javascript"></a>Niezakończona stała typu string (JavaScript)
 Nie końcowa stała ciągu z zamykającym znakiem cudzysłowu. Stałe ciągów muszą być ujęte w parę znaków cudzysłowu.  

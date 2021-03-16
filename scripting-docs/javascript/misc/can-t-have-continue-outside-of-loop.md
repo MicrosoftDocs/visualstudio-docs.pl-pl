@@ -1,4 +1,5 @@
 ---
+description: Podjęto próbę użycia instrukcji Continue poza pętlą.
 title: Element "Continue" nie może występować poza pętlą | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: d2d95259-b2bc-4069-9876-60c30ad600a3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 14745c5789fe6c0350f83e46ee0e918f92789d96
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: f4f41cf66c2a63d74b2bea7a95d79ea910527685
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91861986"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103572055"
 ---
 # <a name="cant-have-continue-outside-of-loop"></a>Instrukcja „continue" nie może występować poza pętlą
 Podjęto próbę użycia instrukcji **Continue** poza pętlą. Instrukcji **Continue** można użyć tylko w treści elementu:  

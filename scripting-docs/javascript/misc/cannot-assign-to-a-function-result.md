@@ -1,4 +1,5 @@
 ---
+description: Podjęto próbę przypisania wartości do wyniku funkcji.
 title: Nie można przypisać do wyniku funkcji | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: ee8ffb3a-1451-4cb3-99bf-5e9cf8b77d79
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6aab43ec6a547982cf670d64c8ad8b752160839f
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 125d2dc7d41b1b65027952e4e6cb94ff97083e6e
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862346"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103571925"
 ---
 # <a name="cannot-assign-to-a-function-result"></a>Nie można przypisać do wyniku funkcji
 Podjęto próbę przypisania wartości do wyniku funkcji. Wynik funkcji można przypisać do zmiennej, ale nie może być używany jako zmienna. Jeśli chcesz przypisać nową wartość do samej funkcji, Pomiń nawiasy (operator wywołania funkcji). Poniższy przykład demonstruje sytuację, w której ten błąd jest generowany.  

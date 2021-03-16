@@ -14,12 +14,12 @@ manager: jmartens
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b1d5906213b148605e35c483b377280dc942515
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e1c8c20d350561eec520038dec521ab7bc5f5311
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936551"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103570689"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>Mierzenie wydajności aplikacji z poziomu wiersza polecenia
 
@@ -79,7 +79,7 @@ Profilowanie przy użyciu narzędzi interfejsu wiersza polecenia programu Visual
 
 Agenci kolekcji są składnikami, które zbierają różne typy danych w zależności od tego, co próbujesz zmierzyć.
 
-Dla wygody można przechowywać te informacje w pliku konfiguracji agenta. Plik konfiguracji to plik *JSON* , który zawiera co najmniej nazwę pliku *. dll* i jego identyfikator CLSID com. Poniżej przedstawiono przykładowe pliki konfiguracyjne, które można znaleźć w następującym folderze:
+Dla wygody zaleca się przechowywanie tych informacji w pliku konfiguracji agenta. Plik konfiguracji to plik *JSON* , który zawiera co najmniej nazwę pliku *. dll* i jego identyfikator CLSID com. Poniżej przedstawiono przykładowe pliki konfiguracyjne, które można znaleźć w następującym folderze:
 
 ```<Visual Studio installation folder>Team Tools\DiagnosticsHub\Collector\AgentConfigs\```
 
@@ -99,11 +99,7 @@ Konfiguracje DotNetObjectAlloc (podstawowa/niska) odpowiadają danym zebranym dl
 
 Konfiguracje Base/niska/wysoka odnoszą się do częstotliwości próbkowania. Na przykład niska jest 100 próbek/s i wysoka to 4000 próbek/sekundę.
 
-Aby narzędzie *VSDiagnostics.exe* działało z agentem kolekcji, wymaga zarówno biblioteki DLL, jak i identyfikatora CLSID dla odpowiedniego agenta, a agent może również mieć dodatkowe opcje konfiguracji. Jeśli używasz agenta bez pliku konfiguracji, użyj formatu w poniższym poleceniu.
-
-```cmd
-VSDiagnostics.exe start <id> /attach:<pid> /loadAgent:<agentCLSID>;<agentName>[;<config>]
-```
+Aby narzędzie *VSDiagnostics.exe* działało z agentem kolekcji, wymagany jest zarówno plik dll, jak i identyfikator CLSID modelu COM dla odpowiedniego agenta. Agent może również mieć dodatkowe opcje konfiguracji, które będą dostępne w pliku konfiguracyjnym, sformatowane jako prawidłowo zmienione dane JSON.
 
 ## <a name="permissions"></a>Uprawnienia
 

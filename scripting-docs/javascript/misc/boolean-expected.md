@@ -1,4 +1,5 @@
 ---
+description: Podjęto próbę wywołania metody Boolean. prototype. toString lub Boolean. prototype. valueOf na obiekcie typu innego niż wartość logiczna.
 title: Oczekiwano wartości logicznej | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: 35d71b7f-53fd-44c4-a7c7-b1550c65cfd4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b6d88815a33187e209bcba248d3c363afdd91227
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 1ceaddc9341d67ac60326fa7121c32655ab6a3f6
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862651"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103571444"
 ---
 # <a name="boolean-expected"></a>Oczekiwano obiektu logicznego
 Podjęto próbę wywołania metody **Boolean. prototype. ToString** lub **Boolean. prototype. valueOf** na obiekcie typu innego niż `Boolean` . Obiekt tego typu wywołania musi być typu `Boolean` . Na przykład:

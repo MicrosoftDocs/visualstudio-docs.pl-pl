@@ -30,14 +30,15 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bc58d125f82a33f982578f9a186d579d280e89e8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e347bd8de6342a79d7523a1085f0e40cad8b0cbf
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865959"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103571496"
 ---
 # <a name="cc-assertions"></a>Potwierdzenia C/C++
+
 Instrukcja Assert określa warunek, który powinien być prawdziwy w punkcie w programie. Jeśli ten warunek nie ma wartości true, potwierdzenie nie powiedzie się, wykonywanie programu zostanie przerwane i zostanie wyświetlone okno [dialogowe potwierdzenie nie powiodło](../debugger/assertion-failed-dialog-box.md) się.
 
 Program Visual Studio obsługuje instrukcje potwierdzeń języka C++, które są oparte na następujących konstrukcjach:
@@ -53,6 +54,7 @@ Program Visual Studio obsługuje instrukcje potwierdzeń języka C++, które są
   Można użyć potwierdzeń, aby przechwytywać błędy logiki, sprawdzać wyniki operacji i testować warunki błędów, które powinny być obsługiwane.
 
 ## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> W tym temacie
+
 [Jak działają potwierdzenia](#BKMK_How_assertions_work)
 
 [Potwierdzenia w kompilacjach debugowania i wydania](#BKMK_Assertions_in_Debug_and_Release_builds)
@@ -76,6 +78,7 @@ Program Visual Studio obsługuje instrukcje potwierdzeń języka C++, które są
 - [Znajdowanie nieobsłużonych błędów](#BKMK_Testing_error_conditions_)
 
 ## <a name="how-assertions-work"></a><a name="BKMK_How_assertions_work"></a> Jak działają potwierdzenia
+
 Gdy debuger zatrzymuje działanie z powodu potwierdzenia biblioteki wykonawczej MFC lub C, a następnie Jeśli źródło jest dostępne, debuger przechodzi do punktu w pliku źródłowym, w którym wystąpiło potwierdzenie. Komunikat potwierdzenia pojawia się zarówno w [oknie danych wyjściowych](../ide/reference/output-window.md) , jak i w oknie dialogowym **potwierdzenie nie powiodło się** . Możesz skopiować komunikat potwierdzenia z okna **danych wyjściowych** do okna tekstowego, jeśli chcesz go zapisać do użytku w przyszłości. Okno **dane wyjściowe** może również zawierać inne komunikaty o błędach. Uważnie sprawdzaj te komunikaty, ponieważ zapewniają one wskazówki dotyczące przyczyny niepowodzenia potwierdzenia.
 
 Użyj potwierdzeń w celu wykrycia błędów podczas opracowywania. Jako regułę Użyj jednego potwierdzenia dla każdego założenia. Na przykład jeśli założono, że argument nie ma wartości NULL, Użyj potwierdzenia do przetestowania tego założeń.
@@ -83,9 +86,11 @@ Użyj potwierdzeń w celu wykrycia błędów podczas opracowywania. Jako reguł�
 [W tym temacie](#BKMK_In_this_topic)
 
 ## <a name="assertions-in-debug-and-release-builds"></a><a name="BKMK_Assertions_in_Debug_and_Release_builds"></a> Potwierdzenia w kompilacjach debugowania i wydania
+
 Instrukcje Assertion kompilują się tylko wtedy, gdy `_DEBUG` jest zdefiniowana. W przeciwnym razie kompilator traktuje potwierdzenia jako instrukcje o wartości null. W związku z tym instrukcje Assertion nie nakładają kosztów ani kosztu wydajności w końcowym programie wydania i umożliwiają uniknięcie stosowania `#ifdef` dyrektyw.
 
 ## <a name="side-effects-of-using-assertions"></a><a name="BKMK_Side_effects_of_using_assertions"></a> Efekty uboczne używania potwierdzeń
+
 Po dodaniu potwierdzeń do kodu upewnij się, że potwierdzenia nie mają efektów ubocznych. Rozważmy na przykład następujące potwierdzenie, które modyfikuje `nM` wartość:
 
 ```cpp
@@ -106,6 +111,7 @@ VERIFY ( myFnctn(0)==1 ) // safe
 [W tym temacie](#BKMK_In_this_topic)
 
 ## <a name="crt-assertions"></a><a name="BKMK_CRT_assertions"></a> Potwierdzenia CRT
+
 CRTDBG. Plik nagłówkowy H definiuje [_ASSERT i _ASSERTE makra](/cpp/c-runtime-library/reference/assert-asserte-assert-expr-macros) do sprawdzania potwierdzenia.
 
 | Makro | Wynik |
@@ -128,7 +134,10 @@ Gdy `_DEBUG` jest zdefiniowany, `_ASSERTE` makro jest zdefiniowane w następują
 
 Jeśli potwierdzone wyrażenie daje w wyniku wartość FALSE, [_CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw) jest wywoływana w celu zgłaszania błędu potwierdzenia (domyślnie przy użyciu okna dialogowego komunikatu). W przypadku wybrania opcji **Ponów** w oknie dialogowym komunikat `_CrtDbgReport` zwraca wartość 1 i `_CrtDbgBreak` wywołuje debuger za pomocą polecenia `DebugBreak` .
 
+Jeśli musisz tymczasowo wyłączyć wszystkie potwierdzenia, użyj [_CtrSetReportMode](/cpp/c-runtime-library/reference/crtsetreportmode).
+
 ### <a name="checking-for-heap-corruption"></a>Sprawdzanie uszkodzenia sterty
+
 Poniższy przykład używa [_CrtCheckMemory](/cpp/c-runtime-library/reference/crtcheckmemory) , aby sprawdzić uszkodzenie sterty:
 
 ```cpp
@@ -136,6 +145,7 @@ _ASSERTE(_CrtCheckMemory());
 ```
 
 ### <a name="checking-pointer-validity"></a>Sprawdzanie poprawności wskaźnika
+
 Poniższy przykład używa [_CrtIsValidPointer](/cpp/c-runtime-library/reference/crtisvalidpointer) , aby sprawdzić, czy dany zakres pamięci jest prawidłowy do odczytu lub zapisu.
 
 ```cpp
@@ -149,6 +159,7 @@ _ASSERTE(_CrtIsValidPointer( myData );
 ```
 
 ### <a name="checking-a-memory-block"></a>Sprawdzanie bloku pamięci
+
 Poniższy przykład używa [_CrtIsMemoryBlock](/cpp/c-runtime-library/reference/crtismemoryblock) , aby sprawdzić, czy blok pamięci jest w stercie lokalnym i ma prawidłowy typ bloku.
 
 ```cpp
@@ -158,6 +169,7 @@ _ASSERTE(_CrtIsMemoryBlock (myData, size, &requestNumber, &filename, &linenumber
 [W tym temacie](#BKMK_In_this_topic)
 
 ## <a name="mfc-assertions"></a><a name="BKMK_MFC_assertions"></a> Potwierdzenia MFC
+
 MFC definiuje makro [potwierdzenia](/previous-versions/ew16s3zc(v=vs.140)) do sprawdzenia potwierdzenia. Definiuje również `MFC ASSERT_VALID` `CObject::AssertValid` metody i do sprawdzania stanu wewnętrznego `CObject` obiektu pochodnego.
 
 Jeśli argument makra MFC ma wartość `ASSERT` zero lub false, makro zatrzymuje wykonywanie programu i ostrzega użytkownika; w przeciwnym razie wykonywanie jest kontynuowane.
@@ -180,6 +192,7 @@ ASSERT( pObject1->IsKindOf( RUNTIME_CLASS( CPerson ) ) );
 `ASSERT`Makro nie daje kodu w wersji wydania. Jeśli chcesz oszacować wyrażenie w wersji wydania, użyj makra [verify](/cpp/mfc/reference/diagnostic-services#verify) zamiast Assert.
 
 ### <a name="mfc-assert_valid-and-cobjectassertvalid"></a><a name="BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid"></a> MFC ASSERT_VALID i CObject:: AssertValid
+
 [CObject:: AssertValid](/cpp/mfc/reference/cobject-class#assertvalid) Metoda zapewnia sprawdzenie stanu wewnętrznego obiektu w czasie wykonywania. Chociaż nie jest wymagane przesłonięcie w `AssertValid` przypadku wyprowadzania klasy z `CObject` , można zwiększyć niezawodność klasy. `AssertValid` należy wykonać potwierdzenia wszystkich zmiennych składowych obiektu, aby sprawdzić, czy zawierają one prawidłowe wartości. Na przykład należy sprawdzić, czy zmienne elementu członkowskiego wskaźnika nie są puste.
 
 Poniższy przykład pokazuje, jak zadeklarować `AssertValid` funkcję:
@@ -268,6 +281,7 @@ Wyzwolone potwierdzenie wskazuje, że obiekt jest nieskończonie zły i wykonywa
 ## <a name="using-assertions"></a><a name="BKMK_Using_assertions"></a> Używanie potwierdzeń
 
 ### <a name="catching-logic-errors"></a><a name="BKMK_Catching_logic_errors"></a> Przechwytywanie błędów logiki
+
 Można ustawić potwierdzenie dla warunku, który musi być spełniony zgodnie z logiką programu. Potwierdzenie nie działa, chyba że wystąpi błąd logiki.
 
 Załóżmy na przykład, że symulowane są cząsteczki gazu w kontenerze, a zmienna `numMols` reprezentuje łączną liczbę cząsteczek. Ta liczba nie może być mniejsza od zera, więc można uwzględnić w niej instrukcję potwierdzenia MFC:
@@ -287,6 +301,7 @@ Te instrukcje nie działają, jeśli program działa poprawnie. Jeśli błąd lo
 [W tym temacie](#BKMK_In_this_topic)
 
 ### <a name="checking-results"></a><a name="BKMK_Checking_results_"></a> Sprawdzanie wyników
+
 Potwierdzenia są przydatne w przypadku operacji testowych, których wyniki nie są oczywiste od szybkiej inspekcji wizualnej.
 
 Rozważmy na przykład poniższy kod, który aktualizuje zmienną `iMols` na podstawie zawartości listy połączonej wskazywanej przez `mols` :
@@ -310,6 +325,7 @@ Liczba cząsteczek zliczonych przez `iMols` musi być zawsze mniejsza lub równa
 [W tym temacie](#BKMK_In_this_topic)
 
 ### <a name="finding-unhandled-errors"></a><a name="BKMK_Testing_error_conditions_"></a> Znajdowanie nieobsłużonych błędów
+
 Za pomocą potwierdzeń można testować w przypadku wystąpienia błędów w punkcie w kodzie, w którym zostały obsłużone wszystkie błędy. W poniższym przykładzie procedura graficzna zwraca kod błędu lub zero dla sukcesu.
 
 ```cpp

@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 manager: jmartens
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: d44dc484da904d2692b90e23d10db6edc6f6e7b8
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 49c3081e68baf4f2bf1d0975bcdae7ea25ab90b3
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102223163"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103571548"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Jak działa Mostek na platformę Kubernetes
 
@@ -142,10 +142,8 @@ kubectl -n <namespace> apply -f <yaml file name>
 
 Mostek do Kubernetes ma następujące ograniczenia:
 
-* Aby można było połączyć się z tą usługą, usługa musi być objęta usługą. Nie można nawiązać połączenia z usługą z wieloma zasobnikami, takimi jak usługa z replikami.
-* Może istnieć tylko jeden kontener uruchomiony w tym pod, aby most Kubernetes pomyślnie nawiązać połączenie. Mostek do Kubernetes nie może nawiązać połączenia z usługami za pomocą zasobników z dodatkowymi kontenerami, takimi jak kontenery przyczepek z systemem.
+* Może istnieć tylko jeden kontener uruchomiony w tym pod, aby most Kubernetes pomyślnie nawiązać połączenie.
 * Obecnie mostek do Kubernetesy są kontenerami systemu Linux. Kontenery systemu Windows nie są obsługiwane.
-* Nie można używać izolacji z protokołem HTTPS w przypadku używania mostka do Kubernetes z programem Visual Studio. Protokół HTTPS jest obsługiwany tylko w trybie izolacji w przypadku używania Visual Studio Code.
 * Mostek do Kubernetes wymaga podniesionych uprawnień do uruchomienia na komputerze deweloperskim, aby można było edytować plik Hosts.
 * Nie można używać mostu do Kubernetes w przypadku klastrów z włączonym Azure Dev Spaces.
 
