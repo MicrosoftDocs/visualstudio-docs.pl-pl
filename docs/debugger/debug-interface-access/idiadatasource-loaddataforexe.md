@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ecb7c774314a35f99de41af720b180475e0c55b5
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 649efd5202d8b153b5fe5b4dbf9ba5052883f352
+ms.sourcegitcommit: 66951f064d601b1d7a2253cb9b250380807e12db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102158275"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103483185"
 ---
 # <a name="idiadatasourceloaddataforexe"></a>IDiaDataSource::loadDataForExe
 Otwiera i przygotowuje dane debugowania powiązane z plikiem exe/. dll.
@@ -60,6 +60,8 @@ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu. W 
 
 ## <a name="remarks"></a>Uwagi
 Nagłówek debugowania pliku. exe/. dll nazywa skojarzoną lokalizację danych debugowania.
+
+Jeśli ładujesz dane debugowania z serwera symboli, *symsrv.dll* musi znajdować się w tym samym katalogu, w którym zainstalowano aplikację lub *msdia140.dll* użytkownika, lub muszą one znajdować się w katalogu systemowym.
 
 Ta metoda odczytuje nagłówek debugowania, a następnie wyszukuje i przygotowuje dane debugowania. Postęp wyszukiwania może, opcjonalnie, być raportowany i kontrolowany przez wywołania zwrotne. Na przykład, [IDiaLoadCallback:: NotifyDebugDir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md) jest wywoływana, gdy `IDiaDataSource::loadDataForExe` Metoda odnajdzie i przetwarza katalog debugowania.
 

@@ -26,14 +26,15 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 97c0730b2c1fd8d534fed232846dcca76c58ce2e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2a3fa99594f42e7e9c3739a8a8d57abf226bc04c
+ms.sourcegitcommit: 66951f064d601b1d7a2253cb9b250380807e12db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870639"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103483196"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Specyfikatory formatu dla języka C++ w debugerze programu Visual Studio
+
 Można zmienić format, w którym wartość jest wyświetlana w oknach **czujka**, **autostarty** i **lokalne** przy użyciu specyfikatorów formatu.
 
 Można również użyć specyfikatorów formatu w oknie **bezpośrednim** , oknie **polecenia** , w [punkty śledzenia](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints), a nawet w oknach źródłowych. Jeśli wstrzymasz w wyrażeniu w tych oknach, wynik zostanie wyświetlony w [etykietki danych](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). Etykietki danych wyświetla specyfikator formatu.
@@ -42,6 +43,7 @@ Można również użyć specyfikatorów formatu w oknie **bezpośrednim** , okni
 > Gdy debuger natywny programu Visual Studio został zmieniony na nowy aparat debugowania, dodano kilka nowych specyfikatorów formatu, a niektóre stare zostały usunięte. Starszy debuger jest nadal używany w przypadku debugowania międzyoperacyjności (natywne i zarządzane) przy użyciu języka C++/CLI.
 
 ## <a name="set-format-specifiers"></a>Ustaw specyfikatory formatu
+
 Użyjemy następującego przykładowego kodu:
 
 ```C++
@@ -64,6 +66,7 @@ Można wyświetlić i wybrać listę dostępnych specyfikatorów formatu, dołą
 ::: moniker-end
 
 ## <a name="format-specifiers"></a><a name="BKMK_Visual_Studio_2012_format_specifiers"></a> Specyfikatory formatu
+
 W poniższych tabelach opisano specyfikatory formatu, których można użyć w programie Visual Studio. Specyfikatory pogrubione są obsługiwane tylko dla nowych debugerów, a nie do debugowania międzyoperacyjności przy użyciu języka C++/CLI.
 
 ::: moniker range=">= vs-2019" 
@@ -138,6 +141,7 @@ W poniższych tabelach opisano specyfikatory formatu, których można użyć w p
 > Gdy jest obecny Specyfikator formatu **HV** , debuger próbuje określić długość buforu i wyświetlić tę liczbę elementów. Ponieważ nie zawsze jest możliwe, aby debuger znalazł dokładny rozmiar buforu tablicy, należy użyć specyfikatora rozmiaru `(pBuffer,[bufferSize])` wszędzie tam, gdzie to możliwe. Specyfikator formatu **HV** jest przydatny, gdy rozmiar buforu nie jest łatwo dostępny.
 
 ### <a name="size-specifiers-for-pointers-as-arrays"></a><a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> Specyfikatory rozmiaru dla wskaźników jako tablic
+
 Jeśli masz wskaźnik do obiektu, który chcesz wyświetlić jako tablicę, możesz użyć liczby całkowitej lub wyrażenia, aby określić liczbę elementów tablicy.
 
 |Specyfikator|Format|Oryginalna wartość czujki|Wyświetlana wartość|
@@ -147,7 +151,8 @@ Jeśli masz wskaźnik do obiektu, który chcesz wyświetlić jako tablicę, moż
 |**Rozwiń (n)**|Prawidłowe wyrażenie języka C++, które daje w wyniku liczbę całkowitą|pBuffer, rozwiń (2)|Wyświetla trzeci element  `pBuffer`|
 
 ## <a name="format-specifiers-for-interop-debugging-with-ccli"></a><a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> Specyfikatory formatu na potrzeby debugowania międzyoperacyjnego przy użyciu języka C++/CLI
-Specyfikatory **pogrubione** są obsługiwane tylko na potrzeby debugowania kodu natywnego i C++/CLI.
+
+Specyfikatory **pogrubione** są obsługiwane tylko na potrzeby debugowania kodu natywnego i C++/CLI. Wymaga to starszego debugera, określonego przy użyciu [zarządzanego trybu zgodności](../debugger/general-debugging-options-dialog-box.md).
 
 |Specyfikator|Format|Oryginalna wartość czujki|Wyświetlana wartość|
 |---------------|------------|--------------------------|---------------------|
@@ -170,7 +175,10 @@ Specyfikatory **pogrubione** są obsługiwane tylko na potrzeby debugowania kodu
 |!|Format nieprzetworzony, ignorowanie wszelkich dostosowań widoku typu danych|\<customized representation>|4|
 
 ### <a name="format-specifiers-for-memory-locations-in-interop-debugging-with-ccli"></a><a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> Specyfikatory formatu dla lokalizacji pamięci podczas debugowania międzyoperacyjności przy użyciu języka C++/CLI
+
 W poniższej tabeli opisano symbole formatowania używane dla lokalizacji pamięci. Można użyć specyfikatora lokalizacji pamięci z dowolną wartością lub wyrażeniem, które jest oceniane do lokalizacji.
+
+Specyfikatory **pogrubione** są obsługiwane tylko na potrzeby debugowania kodu natywnego i C++/CLI. Wymaga to starszego debugera, określonego przy użyciu [zarządzanego trybu zgodności](../debugger/general-debugging-options-dialog-box.md).
 
 |Symbol|Format|Oryginalna wartość czujki|Wyświetlana wartość|
 |------------|------------|--------------------------|---------------------|
@@ -183,6 +191,7 @@ W poniższej tabeli opisano symbole formatowania używane dla lokalizacji pamię
 |**mu**|znaki dwubajtowe (Unicode)|0x0012ffac|0x0012ffac 8478 77f4 FFFF FFFF 0000 0000 0000 0000|
 
 ### <a name="size-specifier-for-pointers-as-arrays-in-interop-debugging-with-ccli"></a><a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> Specyfikator rozmiaru dla wskaźników jako tablice w debugowaniu międzyoperacyjnym z C++/CLI
+
 Jeśli masz wskaźnik do obiektu, który chcesz wyświetlić jako tablicę, możesz użyć liczby całkowitej, aby określić liczbę elementów tablicy.
 
 |Specyfikator|Format|Wyrażenie|Wyświetlana wartość|
