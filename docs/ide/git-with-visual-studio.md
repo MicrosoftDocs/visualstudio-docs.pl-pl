@@ -2,18 +2,18 @@
 title: Środowisko Git w programie Visual Studio
 titleSuffix: ''
 description: Dowiedz się, w jaki sposób nowe zintegrowane środowisko Git w programie Visual Studio 2019 może pomóc w zwiększeniu produktywności.
-ms.date: 03/08/2021
+ms.date: 03/16/2021
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: e97088f11c32eae6b5d0ef4b7a3490e120a1b6d2
-ms.sourcegitcommit: 8edb1a7e3e8eee48bf0a900f00b5ee8e08de8e1d
+ms.openlocfilehash: e33b91088022a4588773737b2820677c84a65807
+ms.sourcegitcommit: 3a855d3513407ea78336386dc3be0b75142614b0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103481417"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "103622650"
 ---
 # <a name="git-experience-in-visual-studio"></a>Środowisko Git w programie Visual Studio
 
@@ -48,7 +48,7 @@ Okno dialogowe **Tworzenie repozytorium git** ułatwia wypychanie nowego repozyt
 > [!TIP]
 > Bez względu na to, czy repozytorium jest publiczne, czy prywatne, najlepiej bezpieczniej utworzyć kopię zapasową kodu przechowywaną w serwisie GitHub, nawet jeśli nie pracujesz z zespołem. Zapewnia to również, że Twój kod jest dostępny niezależnie od używanego komputera.
 
-Można utworzyć tylko lokalne repozytorium git przy użyciu opcji **tylko lokalna** . Możesz też połączyć repozytorium z dowolnym istniejącym pustym repozytorium zdalnym dla dowolnego innego dostawcy Git za pomocą istniejącej opcji **zdalnej** .
+Można utworzyć tylko lokalne repozytorium git przy użyciu opcji **tylko lokalna** . Możesz też połączyć projekt lokalny z istniejącym pustym repozytorium zdalnym w usłudze Azure DevOps lub dowolnym innym dostawcy git przy użyciu istniejącej opcji **zdalnej** .
 
 ## <a name="clone-an-existing-git-repository"></a>Klonowanie istniejącego repozytorium git
 
