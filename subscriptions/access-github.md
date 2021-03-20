@@ -4,23 +4,23 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 2249b32a-46d7-4e29-b543-4769c71ceda6
-ms.date: 10/22/2020
+ms.date: 03/19/2021
 ms.topic: conceptual
 description: Dowiedz się więcej o uzyskiwaniu dostępu do przedsiębiorstwa GitHub w ramach subskrypcji programu Visual Studio
-ms.openlocfilehash: 7ad60b1c1a177353cad13e3dbcbc50c67b5500ac
-ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
+ms.openlocfilehash: 41cf3779f5572ecd63d11907eb80837e05e176c8
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99511361"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757714"
 ---
 # <a name="visual-studio-subscriptions-with-github-enterprise"></a>Subskrypcje programu Visual Studio z usługą GitHub Enterprise 
 
 Klienci, którzy mają umowę Enterprise Agreement (EA) z firmą Microsoft, mogą zakupić nową ofertę subskrypcji, która wiąże się z subskrypcjami programu Visual Studio w wersji Standard i usługi GitHub. Jest to prosty i ekonomiczny sposób, w jaki Subskrybenci programu Visual Studio mogą uzyskać przedsiębiorstwo w serwisie GitHub. 
 
-- Wprowadzaj innowacje na dużą skalę za pomocą programu Visual Studio i usługi GitHub, bezpieczniej dostarczając kod źródłowy, społeczność i najlepsze praktyki do środowiska IDE i przepływów pracy.
-- Korzystaj z najlepszych w swojej klasie narzędzi programistycznych i usług dla deweloperów z najbardziej kompleksowym zestawem zasobów do tworzenia i wdrażania doskonałych aplikacji oraz zarządzania nimi. 
-- Współpracuj, Zarządzaj żądaniami ściągnięcia w usłudze GitHub Enterprise i Przejrzyj kod źródłowy, gdzie został zapisany w edytorze. 
+- Wprowadzaj innowacje na dużą skalę za pomocą programu Visual Studio i usługi GitHub, bezpieczniej udostępniając kod źródłowy, społeczność i najlepsze rozwiązania w środowisku IDE i przepływom pracy.
+- Korzystaj z najlepszych w swojej klasie narzędzi programistycznych i usług dla deweloperów z najbardziej kompleksowym zestawem zasobów do tworzenia, wdrażania i zarządzania doskonałymi aplikacjami. 
+- Współpracuj i Zarządzaj "żądaniami ściągnięcia" w przedsiębiorstwie GitHub i Przejrzyj kod źródłowy, gdzie został zapisany w edytorze. 
 
 ## <a name="whats-available"></a>Co jest dostępne? 
 
@@ -31,7 +31,7 @@ Dostępne są następujące opcje:
 
 Visual Studio Enterprise, Visual Studio Professional i GitHub Enterprise będą również nadal dostępne osobno. 
 
-Aby dowiedzieć się więcej na temat korzyści i opcji, odwiedź stronę <https://visualstudio.microsoft.com/subscriptions/visual-studio-github> . 
+Aby dowiedzieć się więcej o zaletach i opcjach, odwiedź stronę <https://visualstudio.microsoft.com/subscriptions/visual-studio-github> . 
 
 ## <a name="what-is-the-visual-studio-subscription-with-github-enterprise-setup-process"></a>Co to jest subskrypcja programu Visual Studio z procesem instalacji usługi GitHub Enterprise?
 
@@ -78,14 +78,14 @@ Jeśli dopiero zaczynasz w serwisie GitHub, Oto kilka przydatnych zasobów:
 Odp.: proces konfigurowania konta przedsiębiorstwa w serwisie GitHub może chwilę potrwać.  Jeśli masz oczekujące i nie słyszę wszystkiego, możesz skontaktować się z administratorem usługi GitHub.  Istnieje możliwość, że administrator nadal pracuje nad nim lub nie utworzył konta w witrynie GitHub dla przedsiębiorstw. 
 
 ### <a name="q-do-i-get-the-full-visual-studio-subscription-benefits"></a>P: Czy mogę uzyskać pełną korzyści z subskrypcji programu Visual Studio?
-Odp.: wraz z usługą GitHub Enterprise otrzymujesz wszystkie zalety standardowej subskrypcji programu Visual Studio, w tym pobrania oprogramowania, usług Cloud Services, pomocy technicznej i korzyści dla partnerów, podobnie jak w przypadku zakupu subskrypcji osobno.
+Odp.: wraz z usługą GitHub Enterprise otrzymujesz wszystkie zalety standardowej subskrypcji programu Visual Studio, w tym pobrania oprogramowania, usług Cloud Services, pomocy technicznej i korzyści dla partnerów, tak jakby subskrypcja została zakupiona osobno.
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 - Dowiedz się więcej o przypisaniu usługi GitHub w witrynie [GitHub](https://docs.github.com/github/setting-up-and-managing-your-enterprise-account/managing-licenses-for-the-github-enterprise-and-visual-studio-bundle)
 - Znajdź odpowiedzi na pytania dotyczące szerokiej gamy tematów w witrynie GitHub w [pomocy usługi GitHub](https://help.github.com).
 - Potrzebujesz dodatkowej pomocy?  Skontaktuj się z [pomocą techniczną usługi GitHub](https://support.github.com/)
 - Uzyskaj pomoc od innych użytkowników usługi GitHub na [forum społeczności usługi GitHub](https://github.community/).
-- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, odwiedź naszą stronę [pomocy](https://my.visualstudio.com/GetHelp) .
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, odwiedź naszą stronę [pomocy](https://aka.ms/vssubscriberhelp) .
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 - Uzyskaj [Pomoc techniczną](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) dla przedsiębiorstw w witrynie GitHub.   
 

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 36f0d9f1-fe28-469f-a54c-dc46638270a8
-ms.date: 09/03/2020
+ms.date: 03/19/2021
 ms.topic: how-to
 description: Dowiedz się, jak nowo zakupione miesięczne subskrypcje programu Visual Studio w portalu administracyjnym subskrypcji
-ms.openlocfilehash: f6b835969fff3a8316a2b46c6e15217ebe3e33b1
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 931f297a650926e4da5c13271a58091c9f00ddd3
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92467599"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757649"
 ---
 # <a name="add-new-monthly-visual-studio-subscriptions-to-the-subscriptions-administration-portal"></a>Dodawanie nowych miesięcznych subskrypcji programu Visual Studio do portalu administracyjnego subskrypcji
 Gdy kupisz nowe miesięczne subskrypcje programu Visual Studio przy użyciu subskrypcji platformy Azure, możesz dodać je do portalu administracyjnego subskrypcji, aby przypisać je do użytkowników.  
@@ -41,6 +41,9 @@ Kroki umożliwiające dodanie subskrypcji miesięcznych zależą od tego, jakieg
 - Opcja dodawania nowych subskrypcji miesięcznych będzie dostępna tylko podczas pierwszego zakupu.  Po dodaniu comiesięcznych subskrypcji sprawdzimy nowe subskrypcje za każdym razem, gdy zalogujesz się do portalu. 
 - Gdy zostaną znalezione nowe subskrypcje, możesz zobaczyć, że są już przypisane do subskrybentów.  Wynika to z faktu, że istnieją inne Administratorzy z dostępem do subskrypcji platformy Azure, które mają już przypisane do użytkowników nowe subskrypcje programu Visual Studio.  Teraz, po dodaniu ich do portalu, można administrować tymi subskrypcjami. 
 
+## <a name="support-resources"></a>Zasoby pomocy technicznej
+- Aby uzyskać pomoc dotyczącą administrowania subskrypcjami programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji programu Visual Studio](https://aka.ms/vsadminhelp).
+
 ## <a name="next-steps"></a>Następne kroki
 Po dodaniu subskrypcji możesz przystąpić do ich przypisywania do użytkowników.  Można to zrobić na kilka sposobów:
 - [Przypisywanie subskrypcji pojedynczo](assign-license.md)
@@ -49,6 +52,6 @@ Po dodaniu subskrypcji możesz przystąpić do ich przypisywania do użytkownik�
 
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Azure DevOps documentation (Dokumentacja usługi Azure DevOps)](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)
 - [Dokumentacja Microsoft 365](/microsoft-365/)

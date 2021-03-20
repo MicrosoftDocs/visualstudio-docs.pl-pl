@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 0a02232c-437f-4c48-85c1-93ca7887236b
-ms.date: 10/26/2020
+ms.date: 03/19/2021
 ms.topic: how-to
 description: Dowiedz się więcej o korzyściach z subskrypcji i sposobach ich aktywowania.
-ms.openlocfilehash: 351d81f29d01ec8322fcd6602d3ac4afccdb8ca1
-ms.sourcegitcommit: 8efe6b45d65f9db23f5575c15155fe363fa12cdb
+ms.openlocfilehash: 13c0633c7d775b082bf10cf21421ec843092231d
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92750155"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757636"
 ---
 # <a name="about-your-subscription-benefits"></a>Korzyści z subskrypcji — informacje
 Jako subskrybent programu Visual Studio masz dostęp do różnych korzyści w zależności od poziomu subskrypcji. Istnieje kilka ważnych kwestii dotyczących korzyści.
@@ -43,9 +43,12 @@ Niektóre z korzyści oferowanych przez subskrypcje programu Visual Studio, w ty
 ## <a name="benefits-that-become-temporarily-unavailable"></a>Korzyści, które stają się tymczasowo niedostępne
 Chociaż zdarza się to rzadko, czasami problemy techniczne mogą spowodować, że korzyść nie jest dostępna przez krótki czas. W takich przypadkach zmienimy kafelek korzyści w [portalu subskrypcji programu Visual Studio](https://my.visualstudio.com/benefits) , aby wskazać, że korzyść jest "tymczasowo niedostępna" do momentu rozwiązania problemu, podczas którego zostanie przywrócony kafelek, a korzyść zostanie ponownie udostępniona.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="support-resources"></a>Zasoby pomocy technicznej
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji programu Visual Studio](https://aka.ms/vssubscriberhelp).
+
+## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Azure DevOps documentation (Dokumentacja usługi Azure DevOps)](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)
 - [Dokumentacja Microsoft 365](/microsoft-365/)
 

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
-ms.date: 10/22/2020
+ms.date: 03/19/2021
 ms.topic: conceptual
 description: Dowiedz się, jak ustawić preferencje dotyczące języka, kontaktów, poziomu subskrypcji i innych elementów w portalu administracyjnym
-ms.openlocfilehash: bdb6a5bc1160c75830fe9f1473222155d8fad781
-ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
+ms.openlocfilehash: 93a9417a88d07dcc841c6a59a7353b0ffb5e7565
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99511348"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757623"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-administration-portal"></a>Ustawianie preferencji dla umów w portalu administracyjnym
 Administratorzy mogą ustawić pewne preferencje w portalu administracyjnym (portalu administracyjnym), które będą stosowane globalnie dla każdej umowy.  Te preferencje automatycznie wypełniają szczegóły subskrypcji dla administratorów podczas dodawania subskrybentów i mogą być modyfikowane tylko przez administratorów.  
@@ -73,7 +73,7 @@ Odp.: Zapoznaj [się z](contact-my-admin.md) artykułem dotyczącym mojego admin
 Odp.: Jeśli nie określono określonego adresu e-mail w preferencjach **adres e-mail do kontaktu** , wszystkie Administratorzy na umowie otrzymają żądanie. 
 
 ## <a name="resources"></a>Zasoby
-- [Wsparcie administracyjne i subskrypcje programu Visual Studio](https://my.visualstudio.com/gethelp)
+- [Wsparcie administracyjne i subskrypcje programu Visual Studio](https://aka.ms/vsadminhelp)
 
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)
