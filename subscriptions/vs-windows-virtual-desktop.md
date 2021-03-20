@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 12/02/2020
+ms.date: 03/17/2021
 ms.topic: conceptual
 description: Dowiedz się, jak korzystać z pulpitu wirtualnego systemu Microsoft Windows za pośrednictwem subskrypcji programu Visual Studio
-ms.openlocfilehash: 9198f4180a2f98b89540f1eedc0dab4be59558ab
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 2e7aad5d3f8214d39e5671e4bf5c4d5d357cd930
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537958"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104671742"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>Dostęp do pulpitu wirtualnego systemu Windows w subskrypcjach 
 Subskrybenci programu Visual Studio mogą teraz korzystać z indywidualnych środków na korzystanie z platformy Azure do tworzenia i testowania usług pulpitu wirtualnego systemu Microsoft Windows.  
@@ -29,7 +29,7 @@ Oto co można zrobić w przypadku uruchamiania pulpitu wirtualnego systemu Windo
 Subskrybenci programu Visual Studio mają teraz kilka sposobów na korzystanie z subskrypcji platformy Azure w celu płacenia za usługi pulpitu wirtualnego systemu Windows:
 - [Poszczególne kredyty na platformie Azure DevTest](vs-azure.md).  Subskrybenci, którzy otrzymują pojedyncze kredyty na korzystanie z usługi Azure DevTest w ramach swoich subskrypcji, mogą używać tych kredytów do płacenia za usługi pulpitu wirtualnego systemu Windows.  Kwota miesięcznego kredytu zależy od poziomu subskrypcji.
 - [Subskrypcje usługi Azure DevTest — płatność zgodnie](vs-azure-payg.md)z rzeczywistym użyciem.  Możesz utworzyć subskrypcje platformy Azure i dołączyć instrument płatniczy, aby bezproblemowo zapłacić za użycie pulpitu wirtualnego systemu Windows. 
-- [Oferta usługi Azure Umowa Enterprise DevTest](azure-ea-devtest.md).  Dzięki tej ofercie Subskrybenci z umowami Enterprise Agreement mogą skorzystać z usług pulpitu wirtualnego systemu Windows przy obniżonych cenach na platformę Azure. 
+- [Oferta usługi Azure Enterprise Agreement DevTest](azure-ea-devtest.md).  Dzięki tej ofercie Subskrybenci z umowami Enterprise Agreement mogą skorzystać z usług pulpitu wirtualnego systemu Windows przy obniżonych cenach na platformę Azure. 
 
 ## <a name="requirements"></a>Wymagania
 Pulpit wirtualny systemu Windows wymaga Azure Active Directory (Azure AD), do którego zostaną dołączone maszyny wirtualne.  Użytkownicy muszą należeć do tej usługi Azure AD.  Dostępne są dwie opcje wdrożenia usługi Azure AD:
@@ -37,7 +37,7 @@ Pulpit wirtualny systemu Windows wymaga Azure Active Directory (Azure AD), do kt
 - Maszyna wirtualna z uruchomioną funkcją awansowania kontrolera domeny.  Ta opcja wymaga większego nakładu pracy w konfiguracji, ale oferuje większości użytkownikom niższy koszt działania.
 Aby zapoznać się z pełną listą wymagań wstępnych dotyczących korzystania z pulpitu wirtualnego systemu Windows, odwiedź [stronę Omówienie](/azure/virtual-desktop/overview#requirements)pulpitu wirtualnego systemu Windows. 
 
-## <a name="get-started"></a>Wprowadzenie 
+## <a name="get-started"></a>Rozpoczęcie pracy 
 Gdy zostaną spełnione wszystkie wymagania wstępne, należy wykonać kilka czynności w celu wprowadzenia implementacji.  Zapoznaj się z tymi samouczkami, aby rozpocząć pracę:
 - [Tworzenie dzierżawy pulpitu wirtualnego systemu Windows](/azure/virtual-desktop/virtual-desktop-fall-2019/tenant-setup-azure-active-directory)
 - [Tworzenie puli hostów](/azure/virtual-desktop/create-host-pools-azure-marketplace) przy użyciu Azure Portal
@@ -55,7 +55,7 @@ Gdy zostaną spełnione wszystkie wymagania wstępne, należy wykonać kilka czy
 | Visual Studio Enterprise (standardowa)  | NFR<sup>1</sup> |Niedostępne  | Nie dotyczy |
 | Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure | Niedostępne | Nie dotyczy |
 
-<sup>1</sup>  *obejmuje: nie do odsprzedaży (NFR), ekwiwalentu, najbardziej cennych profesjonalistów (MVP), regionalnego dyrektora (RD), Microsoft Partner Network (MPN), Visual Studio Industry partner (VSIP), Microsoft Certified Trainer, BizSpark, Wyobraź sobie*
+<sup>1</sup>  *obejmuje: nie do odsprzedaży (NFR), ekwiwalentu, najbardziej cennych profesjonalistów (MVP), regionalnego dyrektora (RD), Microsoft Partner Network (MPN), Visual Studio Industry partner (VSIP), Microsoft Certified Trainer, BizSpark, Wyobraź sobie, NFR Basic*
 
 > [!NOTE]
 > Firma Microsoft nie oferuje już Visual Studio Professional rocznych subskrypcji i Visual Studio Enterprise rocznych subskrypcji w ramach subskrypcji chmury. Istnieją zmiany w istniejących klientach i możliwość odnowienia, zwiększenia, zmniejszenia lub anulowania subskrypcji. Zachęcamy nowych klientów do [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) przeglądania różnych opcji zakupu programu Visual Studio.
@@ -65,6 +65,7 @@ Nie masz pewności, której subskrypcji używasz?  Połącz się z, [https://my.
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja platformy Azure](/azure/)
 - [Dokumentacja usługi Windows Virtual Desktop](/azure/virtual-desktop/)
+- [Obsługa subskrypcji programu Visual Studio](https://my.visualstudio.com/gethelp)
 
 ## <a name="next-steps"></a>Następne kroki
 -   Jeśli musisz kupić subskrypcje programu Visual Studio, zapoznaj się z tematem:

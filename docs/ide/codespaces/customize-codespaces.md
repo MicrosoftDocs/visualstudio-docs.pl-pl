@@ -11,14 +11,17 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 15efee817e41f928e5ca1162e9ace20276bd20d2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0e23ca3255761f4d93f89251d00c12c14aecf7b9
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971157"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672354"
 ---
 # <a name="how-to-customize-a-codespace-preview"></a>Jak dostosować codespace (wersja zapoznawcza)
+
+> [!Important] 
+> Od 12 kwietnia 2021 połączenie z usługą GitHub Codespaces z programu Visual Studio 2019 nie będzie już obsługiwane i zostanie zawarta prywatna wersja zapoznawcza. Firma Microsoft koncentruje się na rozwojem środowisk dla chmurowych i opartych na chmurze rozwiązań infrastruktury VDI zoptymalizowanych pod kątem szerokiego zestawu obciążeń programu Visual Studio. Zachęcamy do pracy na naszym [forum społeczności deweloperów](https://developercommunity.visualstudio.com/home) dla programu Visual Studio, aby uzyskać informacje na temat przyszłych informacji o zaplanowanych i związanych z planami. 
 
 Usługa GitHub Codespaces zapewnia pełne środowisko programistyczne w chmurze. W przypadku programowania opartego na systemie Windows za pomocą programu Visual Studio 2019 Domyślne wystąpienia usługi GitHub Codespaces oferują doskonały punkt wyjścia, ale można również dostosować środowisko dla określonego projektu.
 

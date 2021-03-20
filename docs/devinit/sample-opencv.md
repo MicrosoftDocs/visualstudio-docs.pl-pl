@@ -11,14 +11,17 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 6524cec090f20c475724f1ae8615c5dd24cfa2d7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 319f560e4661f12acbef941692e5fd2c257c25ee
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943506"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672468"
 ---
 # <a name="opencv"></a>OpenCV
+
+> [!IMPORTANT]
+> Od 12 kwietnia 2021 połączenie z usługą GitHub Codespaces z programu Visual Studio 2019 nie będzie już obsługiwane i zostanie zawarta prywatna wersja zapoznawcza. Firma Microsoft koncentruje się na rozwojem środowisk dla chmurowych i opartych na chmurze rozwiązań infrastruktury VDI zoptymalizowanych pod kątem szerokiego zestawu obciążeń programu Visual Studio. W ramach tego `devinit` i skojarzonych narzędzi nie będą już dostępne. Zachęcamy do pracy na naszym forum społeczności deweloperów dla programu Visual Studio, aby uzyskać informacje na temat przyszłych informacji o zaplanowanych i związanych z planami.
 
 W tym przykładzie pokazano, jak dostosować [Codespaces GitHub](https://github.com/features/codespaces) , aby można było opracowywać projekty wieloplatformowe, takie jak [OpenCV/OpenCV](https://github.com/opencv/opencv).
 

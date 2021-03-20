@@ -17,22 +17,20 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cd43be13351309e0f4715ee889fb910f4f7e49a3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ceb6b01f06964b8c79fa7357da6688e2e0229799
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963201"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672829"
 ---
 # <a name="common-msbuild-project-items"></a>Wspólne elementy projektów MSBuild
 
 W programie MSBuild element jest nazwanym odwołaniem do co najmniej jednego pliku. Elementy zawierają metadane, takie jak nazwy plików, ścieżki i numery wersji. Wszystkie typy projektów w programie Visual Studio mają kilka elementów wspólnych. Te elementy są zdefiniowane w pliku *Microsoft. Build. CommonTypes. xsd*.
 
-## <a name="common-items"></a>Elementy wspólne
+W tym artykule wymieniono wszystkie typowe elementy projektu.
 
-Poniżej znajduje się lista wszystkich wspólnych elementów projektu.
-
-### <a name="reference"></a>Dokumentacja
+## <a name="reference"></a>Dokumentacja
 
 Reprezentuje odwołanie zestawu (zarządzanego) w projekcie.
 
@@ -45,7 +43,7 @@ Reprezentuje odwołanie zestawu (zarządzanego) w projekcie.
 |Aliasy|Opcjonalny ciąg. Wszelkie aliasy odwołania.|
 |Prywatny|Opcjonalna wartość logiczna. Określa, czy odwołanie ma być kopiowane do folderu wyjściowego. Ten atrybut jest zgodny z właściwością **copy lokalnego** odwołania, która znajduje się w środowisku IDE programu Visual Studio.|
 
-### <a name="comreference"></a>COMReference
+## <a name="comreference"></a>COMReference
 
 Reprezentuje odwołanie do składnika COM (niezarządzane) w projekcie. Ten element ma zastosowanie tylko do projektów .NET.
 
@@ -59,7 +57,7 @@ Reprezentuje odwołanie do składnika COM (niezarządzane) w projekcie. Ten elem
 |WrapperTool|Opcjonalny ciąg. Nazwa narzędzia otoki, które jest używane w składniku, na przykład "tlbimp".|
 |Izolowana|Opcjonalna wartość logiczna. Określa, czy składnik jest składnikiem bezpłatnym reg.|
 
-### <a name="comfilereference"></a>COMFileReference
+## <a name="comfilereference"></a>COMFileReference
 
 Reprezentuje listę bibliotek typów, które są przesyłane do `TypeLibFiles` parametru elementu docelowego [ResolveComReference —](resolvecomreference-task.md) . Ten element ma zastosowanie tylko do projektów .NET.
 
@@ -67,7 +65,7 @@ Reprezentuje listę bibliotek typów, które są przesyłane do `TypeLibFiles` p
 |---------------|-----------------|
 |WrapperTool|Opcjonalny ciąg. Nazwa narzędzia otoki, które jest używane w składniku, na przykład "tlbimp".|
 
-### <a name="nativereference"></a>NativeReference
+## <a name="nativereference"></a>NativeReference
 
 Reprezentuje natywny plik manifestu lub odwołanie do takiego pliku.
 
@@ -76,7 +74,7 @@ Reprezentuje natywny plik manifestu lub odwołanie do takiego pliku.
 |Nazwa|Wymagany ciąg. Podstawowa nazwa pliku manifestu.|
 |HintPath|Wymagany ciąg. Ścieżka względna pliku manifestu.|
 
-### <a name="projectreference"></a>Elementu ProjectReference
+## <a name="projectreference"></a>Elementu ProjectReference
 
 Reprezentuje odwołanie do innego projektu. `ProjectReference` elementy są przekształcane w elementy [odniesienia](#reference) przez `ResolveProjectReferences` obiekt docelowy, więc wszystkie prawidłowe metadane w odwołaniu mogą być prawidłowe w `ProjectReference` przypadku, gdy proces transformacji nie zastąpi tego elementu.
 
@@ -93,7 +91,7 @@ Reprezentuje odwołanie do innego projektu. `ProjectReference` elementy są prze
 |SkipGetTargetFrameworkProperties|Opcjonalna wartość logiczna. Jeśli `true` , kompiluje przywoływany projekt bez negocjowania najbardziej zgodnej `TargetFramework` wartości. Wartość domyślna to `false` .|
 |Targets (Obiekty docelowe)|Opcjonalne `string[]` . Rozdzielana średnikami lista elementów docelowych w projektach, do których się odwołuje, które powinny zostać skompilowane. Wartość domyślna jest wartością `$(ProjectReferenceBuildTargets)` , która domyślnie jest pusta, co wskazuje na domyślne elementy docelowe.|
 
-### <a name="compile"></a>Opracowania
+## <a name="compile"></a>Opracowania
 
 Reprezentuje pliki źródłowe kompilatora.
 
@@ -105,7 +103,7 @@ Reprezentuje pliki źródłowe kompilatora.
 | Widoczne | Opcjonalna wartość logiczna. Wskazuje, czy plik ma być wyświetlany w **Eksplorator rozwiązań** w programie Visual Studio. |
 | CopyToOutputDirectory | Opcjonalny ciąg. Określa, czy plik ma być kopiowany do katalogu wyjściowego. Wartości to:<br /><br /> 1. nigdy nie<br />2. zawsze<br />3. PreserveNewest |
 
-### <a name="embeddedresource"></a>EmbeddedResource
+## <a name="embeddedresource"></a>EmbeddedResource
 
 Reprezentuje zasoby do osadzenia w wygenerowanym zestawie.
 
@@ -120,7 +118,7 @@ Reprezentuje zasoby do osadzenia w wygenerowanym zestawie.
 | CopyToOutputDirectory | Opcjonalny ciąg. Określa, czy plik ma być kopiowany do katalogu wyjściowego. Wartości to:<br /><br /> 1. nigdy nie<br />2. zawsze<br />3. PreserveNewest |
 | Logicznaname | Wymagany ciąg. Nazwa logiczna zasobu osadzonego. |
 
-### <a name="content"></a>Zawartość
+## <a name="content"></a>Zawartość
 
 Reprezentuje pliki, które nie są kompilowane do projektu, ale mogą być osadzone lub opublikowane razem z nim.
 
@@ -136,7 +134,7 @@ Reprezentuje pliki, które nie są kompilowane do projektu, ale mogą być osadz
 | Widoczne | Opcjonalna wartość logiczna. Wskazuje, czy plik ma być wyświetlany w **Eksplorator rozwiązań** w programie Visual Studio. |
 | CopyToOutputDirectory | Opcjonalny ciąg. Określa, czy plik ma być kopiowany do katalogu wyjściowego. Wartości to:<br /><br /> 1. nigdy nie<br />2. zawsze<br />3. PreserveNewest |
 
-### <a name="none"></a>Brak
+## <a name="none"></a>Brak
 
 Reprezentuje pliki, które nie powinny mieć roli w procesie kompilacji.
 
@@ -150,7 +148,7 @@ Reprezentuje pliki, które nie powinny mieć roli w procesie kompilacji.
 | Widoczne | Opcjonalna wartość logiczna. Wskazuje, czy plik ma być wyświetlany w **Eksplorator rozwiązań** w programie Visual Studio. |
 | CopyToOutputDirectory | Opcjonalny ciąg. Określa, czy plik ma być kopiowany do katalogu wyjściowego. Wartości to:<br /><br /> 1. nigdy nie<br />2. zawsze<br />3. PreserveNewest |
 
-### <a name="assemblymetadata"></a>AssemblyMetadata
+## <a name="assemblymetadata"></a>AssemblyMetadata
 
 Reprezentuje atrybuty zestawu, które mają zostać wygenerowane `[AssemblyMetadata(key, value)]` .
 
@@ -162,7 +160,7 @@ Reprezentuje atrybuty zestawu, które mają zostać wygenerowane `[AssemblyMetad
 > [!NOTE]
 > Ten element ma zastosowanie do projektów korzystających z zestawu SDK dla platformy .NET 5 (i programu .NET Core) i nowszych wersji.
 
-### <a name="internalsvisibleto"></a>InternalsVisibleTo
+## <a name="internalsvisibleto"></a>InternalsVisibleTo
 
 Określa zestawy, które mają być emitowane jako `[InternalsVisibleTo(..)]` atrybuty zestawu.
 
@@ -174,15 +172,15 @@ Określa zestawy, które mają być emitowane jako `[InternalsVisibleTo(..)]` at
 > [!NOTE]
 > Ten element ma zastosowanie do projektów korzystających z zestawu SDK dla platformy .NET 5 (i programu .NET Core) i nowszych wersji.
 
-### <a name="baseapplicationmanifest"></a>BaseApplicationManifest
+## <a name="baseapplicationmanifest"></a>BaseApplicationManifest
 
 Reprezentuje podstawowy manifest aplikacji dla kompilacji i zawiera informacje o zabezpieczeniach wdrażania ClickOnce.
 
-### <a name="codeanalysisimport"></a>CodeAnalysisImport
+## <a name="codeanalysisimport"></a>CodeAnalysisImport
 
 Reprezentuje projekt FxCop do zaimportowania.
 
-### <a name="import"></a>Import
+## <a name="import"></a>Importuj
 
 Reprezentuje zestawy, których przestrzenie nazw powinny być importowane przez kompilator Visual Basic.
 

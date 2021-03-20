@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
-ms.date: 12/02/2020
+ms.date: 03/17/2021
 ms.topic: how-to
 description: Dowiedz się, jak aktywować korzyść pomocy technicznej w ramach subskrypcji programu Visual Studio.
-ms.openlocfilehash: ea67dde54dd66af6d20b7f9af84d2bfe80211444
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 77856cf8a1f3497f66e89110e7b951c768da8c28
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537971"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672136"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktywuj korzyść pomocy technicznej i korzystaj z niej w subskrypcjach programu Visual Studio
 Korzyść pomocy technicznej w ramach subskrypcji programu Visual Studio służy do rozwiązywania problemów z uszkodzeniem w **środowiskach nieprodukcyjnych** dla produktów, które są nadal w fazie wsparcia podstawowego dla [cyklu](https://support.microsoft.com/lifecycle/search)pomocy technicznej. Visual Studio Enterprise standardowa i roczna subskrypcja chmury otrzymuje cztery incydenty, podczas Visual Studio Professional standardowa i roczna subskrypcja chmury odbiera dwa zdarzenia, przez maksymalnie 1 rok od aktywacji korzyści. Aktywacja korzyści musi nastąpić, gdy subskrypcja jest aktualna.
@@ -83,7 +83,7 @@ Aby przesłać zdarzenie za pośrednictwem portalu pomocy technicznej dla firm, 
 0. Wprowadź **identyfikator dostępu** i **identyfikator kontraktu** otrzymanego w wiadomości e-mail z potwierdzeniem po aktywowaniu korzyści z pomocy technicznej. Kliknij pozycję **Dodaj**.
    > [!div class="mx-imgBorder"]
    > ![Dodawanie identyfikatora kontraktu](_img/vs-tech-support/vs-tech-support-add-contract-id.png "Dodaj identyfikator dostępu i identyfikator kontraktu z wiadomości e-mail z potwierdzeniem.") 
-0. Nowy kontrakt pomocy technicznej zostanie wyświetlony w **kroku 2**.  Wybierz go.
+0. Nowy kontrakt pomocy technicznej zostanie wyświetlony w **kroku 2**.  Wybierz ją.
 0. Wskaż ważność problemu.  Wartość domyślna to "ważne". 
 0. Wybierz, Kiedy chcesz uzyskać pomoc techniczną. Domyślnie wybrana jest wartość "tylko w godzinach pracy". Opcja dla "24/7 Support" jest dostępna tylko w przypadku wybrania opcji "krytyczna" jako ważności.
 0. Kliknij pozycję **Next** (Dalej), aby kontynuować. 
@@ -113,15 +113,18 @@ Aby skorzystać z pomocy technicznej subskrypcji programu Visual Studio w przypa
 | Visual Studio Professional subskrypcję z usługą GitHub Enterprise | Licencja                                     | 2 zdarzenia                                                          |Tak         |
 | Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | 2 zdarzenia                                             |  Tak         |
 | Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | 2 zdarzenia                                               | Tak         |
-| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure                                       | Niedostępne                                                           |Nie dotyczy|
+| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure                                       | Niedostępne                                                           |NA|
 ||
 
-<sup>1</sup> *zawiera: Wyobraź sobie Premium, BizSpark. Wyklucza: nie do odsprzedaży (NFR), Visual Studio Industry partner (VSIP), Microsoft Partner Network (MPN), równoważnik, MCT Software &, Developer Standard, najbardziej cenny specjalista (MVP), regionalne dyrektor (RD), MCT Software & Services.*
+<sup>1</sup> *zawiera: Wyobraź sobie Premium, BizSpark. Wyklucza: nie do odsprzedaży (NFR), Visual Studio Industry partner (VSIP), Microsoft Partner Network (MPN), równoważnik, MCT Software &, Developer Standard, najbardziej cenny specjalista (MVP), regionalne dyrektor (RD), MCT Software & Services. Wyklucza: NFR podstawowe*
 
 <sup>2</sup> *zawiera: Wyobraź sobie Standard.*
 
 Nie masz pewności, której subskrypcji używasz?  Połącz się z, [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, być może masz co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby zobaczyć te subskrypcje.
 
+## <a name="support-resources"></a>Zasoby pomocy technicznej
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji programu Visual Studio](https://my.visualstudio.com/gethelp).
+- 
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)
 - [Azure DevOps documentation (Dokumentacja usługi Azure DevOps)](/azure/devops/)
@@ -130,6 +133,6 @@ Nie masz pewności, której subskrypcji używasz?  Połącz się z, [https://my.
 
 ## <a name="next-steps"></a>Następne kroki
 Pamiętaj, aby aktywować te doskonałe korzyści, aby zapewnić największą subskrypcję programu Visual Studio:
-- [Program Visual Studio](vs-ide-benefit.md)
+- [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
 - [Indywidualne środki na korzystanie z usługi Azure DevTest](vs-azure.md)

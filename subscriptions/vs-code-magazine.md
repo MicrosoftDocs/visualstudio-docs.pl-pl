@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: e5768153-2758-46d3-a323-3272def213ee
-ms.date: 01/19/2021
+ms.date: 03/18/2021
 ms.topic: how-to
 description: Dowiedz się więcej na temat korzyści z usługi CODE Magazine dostępnych w ramach subskrypcji programu Visual Studio.
-ms.openlocfilehash: a9aabd98fa872846d12e20b3aad3f617d1c97a64
-ms.sourcegitcommit: 59b63039982bb5894eb35d8b544657688731614f
+ms.openlocfilehash: 831885a89b67bc5d9ab50f49c59eb91bc5717262
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98597394"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672044"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Magazyn kodu uwzględniony w subskrypcjach programu Visual Studio
 
@@ -58,7 +58,7 @@ Po zakończeniu zamówienia subskrypcji zobaczysz stronę potwierdzenia zawieraj
 | Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure | Niedostępne | Nie dotyczy |
 | Visual Studio Enterprise NFR<sup>1</sup> | NFR | Niedostępne | Nie dotyczy |
 
-<sup>1</sup>  *obejmuje: nie dotyczy odsprzedaży (NFR), programu Visual Studio Industry partner (VSIP), pełnego poziomu, BizSpark, Wyobraź sobie, Premium, Microsoft Partner Network (MPN), najbardziej cennych profesjonalistów (MVP), regionalnego dyrektora (RD), MCT Software & Services Developer, MCT Software & Services.*
+<sup>1</sup>  * obejmuje: nie dotyczy odsprzedaży (NFR), programu Visual Studio Industry partner (VSIP), pełnego, BizSpark, Wyobraź sobie, Premium, Microsoft Partner Network (MPN), najbardziej cennych profesjonalistów (MVP), regionalnego dyrektora (RD), MCT Software & Services Developer, MCT Software & Services.  
 
 > [!NOTE]
 > Firma Microsoft nie oferuje już Visual Studio Professional rocznych subskrypcji i Visual Studio Enterprise rocznych subskrypcji w ramach subskrypcji chmury. Istnieją zmiany w istniejących klientach i możliwość odnowienia, zwiększenia, zmniejszenia lub anulowania subskrypcji. Zachęcamy nowych klientów do [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) przeglądania różnych opcji zakupu programu Visual Studio.
@@ -74,7 +74,7 @@ Odp.: Magazyn kodu zbiera swój adres, bez względu na to, czy subskrypcja dotyc
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 - Masz pytania dotyczące subskrypcji magazynu kodu?  Skontaktuj się z usługą [Code Magazine](https://www.codemag.com/contact) za pośrednictwem poczty e-mail lub telefonu lub Prześlij żądanie pomocy technicznej online.
-- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji programu Visual Studio](https://my.visualstudio.com/gethelp).
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Zobacz też

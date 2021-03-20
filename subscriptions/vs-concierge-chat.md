@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: dcd99e32-c9f3-4e19-8428-319dfa220463
-ms.date: 12/02/2020
+ms.date: 03/18/2021
 ms.topic: how-to
 description: Dowiedz się więcej na temat korzyści z rozmowy Concierge zawartej w subskrypcjach programu Visual Studio.
-ms.openlocfilehash: 4f5f188ee7b6662549e5ade80a97c57f24bce64c
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 468433ba6cc378fd422f1fee6c806c6a701a9e65
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96538101"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672031"
 ---
 # <a name="concierge-chat-in-visual-studio-subscriptions"></a>Concierge rozmowę w subskrypcjach programu Visual Studio
 Usługa czatu Concierge zapewnia pomoc w zakresie znajdowania informacji o produktach i dokumentacji technicznej, a także pomoc przy korzystaniu z korzyści z subskrypcji programu Visual Studio.
@@ -46,7 +46,7 @@ Uzyskiwanie pomocy za pośrednictwem usługi rozmów Concierge jest bardzo prost
 | Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Dostępne                                              |  Tak          |
 | Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure | Niedostępne | Nie dotyczy |
 
-<sup>1</sup>  *obejmuje: nie do odsprzedaży (NFR), Visual Studio Industry partner (VSIP), Microsoft Certified Trainer, BizSpark.  Wyklucza: równoważnik, najbardziej cenny specjalista (MVP), dyrektor regionalny (RD), Microsoft Partner Network (MPN), Wyobraź sobie.*
+<sup>1</sup>  *obejmuje: nie do odsprzedaży (NFR), Visual Studio Industry partner (VSIP), Microsoft Certified Trainer, BizSpark.  Wyklucza: równoważnik, najbardziej cenny specjalista (MVP), dyrektor regionalny (RD), Microsoft Partner Network (MPN), Wyobraź sobie.  Wyklucza: NFR podstawowe*
 
 > [!NOTE]
 > Firma Microsoft nie oferuje już Visual Studio Professional rocznych subskrypcji i Visual Studio Enterprise rocznych subskrypcji w ramach subskrypcji chmury. Istnieją zmiany w istniejących klientach i możliwość odnowienia, zwiększenia, zmniejszenia lub anulowania subskrypcji. Zachęcamy nowych klientów do [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) przeglądania różnych opcji zakupu programu Visual Studio.
@@ -58,7 +58,7 @@ Nie masz pewności, której subskrypcji używasz?  Połącz się z, [https://my.
    Odp.: Pomoc dotycząca kont, problemów z rozliczeniami i subskrypcjami jest dostępna w wielu językach.  Pomoc dotycząca lokalizowania informacji o produkcie i dokumentacji technicznej jest dostępna w języku angielskim.
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
-- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji programu Visual Studio](https://my.visualstudio.com/gethelp).
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Zobacz też

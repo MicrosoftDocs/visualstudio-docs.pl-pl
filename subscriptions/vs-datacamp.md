@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: fc33d419-78cf-485e-b558-5b7efa900f14
-ms.date: 12/02/2020
+ms.date: 03/17/2021
 ms.topic: how-to
 description: Dowiedz się więcej o subskrypcji szkoleniowej usługi datacamp dołączonej do wybranych subskrypcji programu Visual Studio.
-ms.openlocfilehash: c675d49f1a099c53dfdabe08a71f1c5545010f97
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 270dffd75a0b442e5f275d0840033e54be5fe883
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96538088"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672018"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Korzyść szkoleniowa datacamp w subskrypcjach programu Visual Studio
 Kwalifikujące się subskrypcje programu Visual Studio obejmują subskrypcje do datacamp.  W przypadku usługi datacamp możesz poznać wszystkie potrzebne umiejętności analizy danych. Możesz wybrać, kiedy i w jaki sposób uczysz. W przypadku braku oprogramowania do zainstalowania i braku specjalnych wymagań sprzętowych nauka uczenia danych jest łatwiejsze niż kiedykolwiek.
@@ -29,7 +29,7 @@ Kwalifikujące się subskrypcje programu Visual Studio obejmują subskrypcje do 
    > [!NOTE]
    > Po rozpoczęciu tworzenia konta może zostać wyświetlony następujący komunikat o błędzie: "Niestety!  Kod promocyjny jest nieprawidłowy lub wygasł.  Dzieje się tak, ponieważ podczas tworzenia kodu promocyjnego wygasa on po kilku minutach.  Jeśli zostanie wyświetlony ten komunikat, po prostu Wróć do strony [korzyści](https://my.visualstudio.com/benefits) i kliknij link **Aktywuj** na kafelku korzyści datacamp.
 
-4. Po utworzeniu konta możesz wybrać ścieżkę szkoleniową.  Dostępne opcje:
+4. Po utworzeniu konta możesz wybrać ścieżkę szkoleniową.  Dostępne są następujące opcje:
     - Uczenie języka R na potrzeby nauki o danych
     - Rozpocznij naukę języka Python w celu nauki o danych
     - Opracowywanie analizy danych zestawu umiejętności
@@ -68,7 +68,7 @@ Możesz zatrzymać w dowolnym momencie i wznowić szkolenia w następnej sesji. 
 | Visual Studio Enterprise (standardowa)  | NFR<sup>1</sup> |Niedostępne  | Nie dotyczy |
 | Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure | Niedostępne | Nie dotyczy |
 
-<sup>1</sup>  *obejmuje: nie do odsprzedaży (NFR), ekwiwalentu, najbardziej cennych profesjonalistów (MVP), regionalnego dyrektora (RD), Microsoft Partner Network (MPN), Visual Studio Industry partner (VSIP), Microsoft Certified Trainer, BizSpark, Wyobraź sobie*
+<sup>1</sup>  *obejmuje: nie do odsprzedaży (NFR), ekwiwalentu, najbardziej cennych profesjonalistów (MVP), regionalnego dyrektora (RD), Microsoft Partner Network (MPN), Visual Studio Industry partner (VSIP), Microsoft Certified Trainer, BizSpark, Wyobraź sobie.  Wyklucza: NFR podstawowe*
 
 > [!NOTE]
 > Firma Microsoft nie oferuje już Visual Studio Professional rocznych subskrypcji i Visual Studio Enterprise rocznych subskrypcji w ramach subskrypcji chmury. Istnieją zmiany w istniejących klientach i możliwość odnowienia, zwiększenia, zmniejszenia lub anulowania subskrypcji. Zachęcamy nowych klientów do [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) przeglądania różnych opcji zakupu programu Visual Studio.
@@ -80,7 +80,7 @@ Nie masz pewności, której subskrypcji używasz?  Połącz się z, [https://my.
   - [Społeczność datacamp](https://www.datacamp.com/community/tutorials), z forów i samouczków.
   - [Centrum pomocy programu datacamp](https://support.datacamp.com/hc), w którym tematy pomocy technicznej dotyczące wyszukiwania i zobacz prośby o zażądanie użytkownika.
   - [Prześlij żądanie pomocy technicznej](https://support.datacamp.com/hc/requests/new)
-- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji programu Visual Studio](https://my.visualstudio.com/gethelp).
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Zobacz też

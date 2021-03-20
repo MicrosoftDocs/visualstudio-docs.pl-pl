@@ -11,14 +11,17 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 99daeeff40091bb3600b82b1f25cc9cf44c52cf9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 660bb5a2c3d235a347e478d55ae8176e87c5d626
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99848240"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672482"
 ---
 # <a name="getting-started-with-devinit"></a>Wprowadzenie z devinit
+
+> [!IMPORTANT]
+> Od 12 kwietnia 2021 połączenie z usługą GitHub Codespaces z programu Visual Studio 2019 nie będzie już obsługiwane i zostanie zawarta prywatna wersja zapoznawcza. Firma Microsoft koncentruje się na rozwojem środowisk dla chmurowych i opartych na chmurze rozwiązań infrastruktury VDI zoptymalizowanych pod kątem szerokiego zestawu obciążeń programu Visual Studio. W ramach tego `devinit` i skojarzonych narzędzi nie będą już dostępne. Zachęcamy do pracy na naszym forum społeczności deweloperów dla programu Visual Studio, aby uzyskać informacje na temat przyszłych informacji o zaplanowanych i związanych z planami.
 
 devinit to narzędzie, którego można użyć, aby umożliwić każdemu użytkownikowi uzyskanie kodu i wydajną pracę w repozytorium, uruchamiając proste polecenie. Za pomocą devinit można definiować wszystkie zależności w całym systemie, które wymagają repozytorium, takie jak SQL Server, Node.js, Docker lub IIS. Devinit może wywoływać innych narzędzi i menedżerów pakietów, aby zainstalować elementy wymagane przez repozytorium. Można zdefiniować te zależności w pliku JSON o nazwie [.devinit.jsna](devinit-json.md) , a następnie następna osoba, która ma korzystać z repozytorium, wystarczy uruchomić [`devinit init`](devinit-commands.md#init) w celu zainstalowania wszystkich tych zależności. W związku z tym zamiast spędzać półroczne dołączenie do nowego repozytorium, można to zrobić w ciągu kilku minut.
 

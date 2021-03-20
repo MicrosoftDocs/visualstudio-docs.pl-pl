@@ -11,14 +11,18 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 1a94915748f6c7cedb19a0b27c67eb67d6086963
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ebd64a314f1c4d6afd7b6e6fcc3b38148ff68225
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971144"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672972"
 ---
 # <a name="supported-visual-studio-features-preview"></a>Obsługiwane funkcje programu Visual Studio (wersja zapoznawcza)
+
+> [!Important] 
+> Od 12 kwietnia 2021 połączenie z usługą GitHub Codespaces z programu Visual Studio 2019 nie będzie już obsługiwane i zostanie zawarta prywatna wersja zapoznawcza. Firma Microsoft koncentruje się na rozwojem środowisk dla chmurowych i opartych na chmurze rozwiązań infrastruktury VDI zoptymalizowanych pod kątem szerokiego zestawu obciążeń programu Visual Studio. Zachęcamy do pracy na naszym [forum społeczności deweloperów](https://developercommunity.visualstudio.com/home) dla programu Visual Studio, aby uzyskać informacje na temat przyszłych informacji o zaplanowanych i związanych z planami. 
+
 
 Program Visual Studio zapewnia rozbudowane środowisko programistyczne podczas nawiązywania połączenia z usługą codespace. Uzyskasz narzędzia wewnętrznej pętli programu Visual Studio, które znasz, aby edytować, debugować, testować i korzystać z kodu źródłowego, a także funkcje produktywności, takie jak szablony projektów, rozbudowana Nawigacja w kodzie i technologia IntelliSense.
 

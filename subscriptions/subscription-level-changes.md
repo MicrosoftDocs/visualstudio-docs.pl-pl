@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: bb2fa359-8170-4db0-a0c5-d49fc692b0aa
-ms.date: 03/05/2021
+ms.date: 03/18/2021
 ms.topic: conceptual
 description: Poznaj skutki uaktualnienia lub pobrania poziomu subskrypcji programu Visual Studio.
-ms.openlocfilehash: ac4355149ba66cd06ae5c1abaeb57e7065631050
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: 93ea729280916cb62ba2b87ff820bb25069369d7
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102250098"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672985"
 ---
 # <a name="what-happens-when-you-change-visual-studio-subscription-levels"></a>Co się stanie w przypadku zmiany poziomów subskrypcji programu Visual Studio?
 W subskrypcjach programu Visual Studio oprogramowanie, narzędzia, usługi i inne korzyści, które są dostępne dla użytkownika, zależą od poziomu subskrypcji.  Ogólnie rzecz biorąc, wyższy poziom subskrypcji, tym bardziej niezawodny korzyści, jakie zapewnia.  
@@ -63,7 +63,7 @@ Jeśli korzystasz z korzyści, która jest uwierzytelniana za każdym razem, gdy
 Jeśli korzystasz z korzyści oferowanych w bieżącej subskrypcji, ale nie w subskrypcji, w której Twoje produkty zostały obniżone, możesz utracić dostęp do tych korzyści.  
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
-- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji programu Visual Studio](https://my.visualstudio.com/gethelp).
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, platformy Azure DevOps lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Zobacz też

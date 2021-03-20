@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: c4b13464-76be-40f1-ad60-ed79ee264b12
-ms.date: 12/02/2020
+ms.date: 03/17/2021
 ms.topic: how-to
 description: Dowiedz się, jak pobrać i zainstalować środowisko IDE programu Visual Studio zawarte w subskrypcji programu Visual Studio
-ms.openlocfilehash: edabaa21e8f8b6c7fe8fee33d2c1a4252efa7a1c
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 2cff154f61d662f180fe5087a877073a9d84e27c
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96538062"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672005"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>Korzyść dla programu Visual Studio 2019
 
@@ -69,7 +69,7 @@ Aby pobrać środowisko IDE:
 | Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Dostępne                                             |  Tak         |
 | Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Niedostępne                                              |  Nie dotyczy          |
 
-<sup>1</sup>  *obejmuje: nie do odsprzedaży (NFR), program Visual Studio Industry partner (VSIP), Microsoft Partner Network (MPN), równoważnik, MCT Software & Services Developer, BizSpark, Wyobraź sobie, najbardziej cenny specjalista (MVP), dyrektor regionalny (RD).  Wyklucza: MCT oprogramowania & Services.*
+<sup>1</sup>  *obejmuje: nie do odsprzedaży (NFR), NFR Basic, Visual Studio Industry partner (VSIP), Microsoft Partner Network (MPN), równoważnik, MCT Software & Services Developer, BizSpark, Wyobraź sobie, najbardziej cenny specjalista (MVP), dyrektor regionalny (RD).  Wyklucza: MCT oprogramowania & Services.*
 
 > [!NOTE]
 > Firma Microsoft nie oferuje już Visual Studio Professional rocznych subskrypcji i Visual Studio Enterprise rocznych subskrypcji w ramach subskrypcji chmury. Istnieją zmiany w istniejących klientach i możliwość odnowienia, zwiększenia, zmniejszenia lub anulowania subskrypcji. Zachęcamy nowych klientów do [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) przeglądania różnych opcji zakupu programu Visual Studio.
@@ -80,7 +80,7 @@ Nie masz pewności, której subskrypcji używasz?  Połącz się z, [https://my.
 - Potrzebujesz pomocy dotyczącej środowiska IDE programu Visual Studio, zapoznaj się z następującymi zasobami:
   - Pomoc techniczna: [https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
   - [Dokumentacja](/visualstudio/)
-- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji programu Visual Studio](https://my.visualstudio.com/gethelp).
 
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)

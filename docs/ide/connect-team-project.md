@@ -1,5 +1,5 @@
 ---
-title: Nawiązywanie połączenia z projektami w Team Explorer
+title: Nawiązywanie połączenia z projektami w programie Team Explorer
 description: Dowiedz się, jak używać Team Explorer w programie Visual Studio do pracy z członkami zespołu w celu opracowywania projektów i zarządzania nimi.
 ms.custom: SEO-VS-2020
 ms.date: 11/17/2020
@@ -7,14 +7,14 @@ ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
-ms.openlocfilehash: fd482bd2225025b5cd8a14f0387e938626fad6d5
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: 58603b72128af1c6dd9caae93f92c435f0851ada
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006318"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672998"
 ---
-# <a name="connect-to-projects-in-team-explorer"></a>Nawiązywanie połączenia z projektami w Team Explorer
+# <a name="connect-to-projects-in-team-explorer"></a>Nawiązywanie połączenia z projektami w programie Team Explorer
 
 ::: moniker range="vs-2017"
 
@@ -61,8 +61,9 @@ Aby nawiązać połączenie z projektem:
 > [!TIP]
 > Jeśli chcesz otworzyć projekt z repozytorium, zobacz [Otwieranie projektu z repozytorium](../get-started/tutorial-open-project-from-repo.md). Jeśli chcesz utworzyć nowy projekt lub dodać użytkowników do projektu, zobacz [Tworzenie projektu (Azure DevOps)](/azure/devops/organizations/projects/create-project) i [Dodawanie użytkowników do projektu lub zespołu (Azure DevOps)](/azure/devops/organizations/security/add-users-team-project).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
+- [Porównaj narzędzia Git i Team Explorer obok siebie](git-team-explorer-feature-comparison.md)
 - [Nowe środowisko Git w programie Visual Studio](git-with-visual-studio.md)
 - [Samouczek: Otwieranie projektu z repozytorium](../get-started/tutorial-open-project-from-repo.md)
 - [Dokumentacja wtyczki Team Explorer](reference/team-explorer-reference.md)

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 00c1f300-d04e-4695-815e-775ffbf0f931
-ms.date: 12/02/2020
+ms.date: 03/17/2021
 ms.topic: how-to
 description: Dowiedz się, jak aktywować subskrypcję Test Professional wirtualizacji/SOA Parasoft w ramach subskrypcji programu Visual Studio.
-ms.openlocfilehash: dbe3ee78d46128a5944ee7b4d0bc69f001270588
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 5f7a7cacab798bdb4959b755be39d7322f9b1d1c
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537451"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672894"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Parasoft wirtualizację/SOAtest Professional w subskrypcjach programu Visual Studio
 
@@ -75,14 +75,14 @@ Przetestuj się wcześniej i częściej.  Symuluj i Przetestuj zachowanie niedos
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standardowa)   | LICENCJONOWANie, Azure, sprzedaż detaliczna, wybrane NFR<sup>1</sup> | 6 miesięcy       |  Tak       |
 | Visual Studio Enterprise subskrypcję z usługą GitHub Enterprise | Licencja | 6 miesięcy       |  Tak       |
-| Visual Studio Professional (standardowa) | LICENCJONOWANie, Azure, sprzedaż detaliczna                                       | Niedostępne                                                           |Nie dotyczy         |
-| Visual Studio Professional subskrypcję z usługą GitHub Enterprise | Licencja                                      | Niedostępne                                                           |Nie dotyczy         |
-| Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Niedostępne                                                           |Nie dotyczy         |
-| Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Niedostępne                                                           |Nie dotyczy         |
-| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure                                       | Niedostępne                                                           |Nie dotyczy|
+| Visual Studio Professional (standardowa) | LICENCJONOWANie, Azure, sprzedaż detaliczna                                       | Niedostępne                                                           |NA         |
+| Visual Studio Professional subskrypcję z usługą GitHub Enterprise | Licencja                                      | Niedostępne                                                           |NA         |
+| Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Niedostępne                                                           |NA         |
+| Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Niedostępne                                                           |NA         |
+| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure                                       | Niedostępne                                                           |NA|
 ||
 
-<sup>1</sup>  *zawiera: Microsoft Partner Network (Enterprise).  Wyklucza: nie dotyczy odsprzedaży (NFR), programu Visual Studio Industry partner (VSIP), pełnego etatu, MCT Software & Services Developer, BizSpark, Wyobraź sobie, najbardziej cennych profesjonalistów (MVP), kierownika Regionalnego (RD).  MCT & usług.*
+<sup>1</sup>  *zawiera: Microsoft Partner Network (Enterprise). Wyklucza: nie dotyczy odsprzedaży (NFR), programu Visual Studio Industry partner (VSIP), pełnego etatu, MCT Software & Services Developer, BizSpark, Wyobraź sobie, najbardziej cennych profesjonalistów (MVP), kierownika Regionalnego (RD).  MCT Software & Services, NFR Basic*
 
 > [!NOTE]
 > Firma Microsoft nie oferuje już Visual Studio Professional rocznych subskrypcji i Visual Studio Enterprise rocznych subskrypcji w ramach subskrypcji chmury. Istnieją zmiany w istniejących klientach i możliwość odnowienia, zwiększenia, zmniejszenia lub anulowania subskrypcji. Zachęcamy nowych klientów do [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) przeglądania różnych opcji zakupu programu Visual Studio.
@@ -91,7 +91,7 @@ Przetestuj się wcześniej i częściej.  Symuluj i Przetestuj zachowanie niedos
 - Potrzebujesz pomocy dotyczącej produktów Parasoft?  Zapoznaj się z tymi zasobami:
   - Pomoc techniczna:  https://www.parasoft.com/support/
   - Parasoft centrum zasobów:  https://www.parasoft.com/resources/
-- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji programu Visual Studio](https://my.visualstudio.com/gethelp).
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Zobacz też

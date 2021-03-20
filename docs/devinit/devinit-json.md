@@ -11,14 +11,17 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 47859d00861c2361ed03931bf1417e22425d6e68
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4f94ee609ba4c0783a06648ed037e58d864aa2a9
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908118"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672208"
 ---
 # <a name="devinit-configuration-file"></a>plik konfiguracji devinit
+
+> [!IMPORTANT]
+> Od 12 kwietnia 2021 połączenie z usługą GitHub Codespaces z programu Visual Studio 2019 nie będzie już obsługiwane i zostanie zawarta prywatna wersja zapoznawcza. Firma Microsoft koncentruje się na rozwojem środowisk dla chmurowych i opartych na chmurze rozwiązań infrastruktury VDI zoptymalizowanych pod kątem szerokiego zestawu obciążeń programu Visual Studio. Zachęcamy do pracy na naszym forum społeczności deweloperów dla programu Visual Studio, aby uzyskać informacje na temat przyszłych informacji o zaplanowanych i związanych z planami.
 
 `.devinit.json`Plik definiuje zależności systemowe, których potrzebuje aplikacja, aby można było uruchomić i skompilować. Zależności w całym systemie są takie jak Node.js, SQL Server, IIS, RabbitMQ, Docker itp. Są to sortowanie elementów, które zwykle instalujesz w polu dev, które nie są instalowane przez określone repozytorium. Nie jest to miejsce do definiowania zależności specyficznych dla aplikacji, takich jak w przypadku menedżerów pakietów, takich jak NuGet lub NPM. Istnieje jednak możliwość zdefiniowania potrzeb tych menedżerów pakietów.
 

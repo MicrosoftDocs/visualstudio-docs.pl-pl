@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 7aaa4727-00ef-41dc-937d-8d46973aaf56
-ms.date: 03/08/2021
+ms.date: 03/18/2021
 ms.topic: conceptual
 description: Dowiedz się, jak Administratorzy licencji zbiorczych mogą uzyskać dostęp do portalu administratora subskrypcji programu Visual Studio
-ms.openlocfilehash: 4704b3258eedf8fd1639804a8792a1c18fafce77
-ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
+ms.openlocfilehash: 0ab0ca532c1c2cdb848a3f6df9862c1d80518248
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102607291"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672533"
 ---
 # <a name="accessing-the-admin-portal-as-an-admin-on-a-volume-license-agreement"></a>Uzyskiwanie dostępu do portalu administracyjnego jako administrator w ramach umowy licencjonowania zbiorowego
 
@@ -26,7 +26,7 @@ Po zalogowaniu użytkownik zostanie automatycznie skonfigurowany jako administra
 Dotyczy to wszystkich typów umów licencjonowania zbiorowego, w tym m.in. umów Enterprise Agreement, Enterprise subscriptions, SELECT, Select Plus, Open, Open License, Administracja. i umowy akademickie. 
 
 ## <a name="resources"></a>Zasoby
-- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, zobacz [Obsługa subskrypcji](https://aka.ms/vssubscriberhelp)programu Visual Studio.
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, zobacz [Obsługa subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/) programu Visual Studio.
 
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)

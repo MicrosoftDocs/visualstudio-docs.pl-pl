@@ -18,20 +18,20 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 59a0660bb78e966150a6ef8d17dc24512a901a26
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2b5fd7129cfb21e5b59e8cdf0049b4ee75d59c87
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913944"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672738"
 ---
 # <a name="item-element-msbuild"></a>Item — element (MSBuild)
 
 Zawiera element zdefiniowany przez użytkownika i jego metadane. Każdy element, który jest używany w projekcie MSBuild, musi być określony jako element podrzędny `ItemGroup` elementu.
 
-\<Project>
-\<ItemGroup>
-\<Item>
+\<Project>\
+&nbsp;\<ItemGroup>\
+&nbsp;&nbsp;\<Item>
 
 ## <a name="syntax"></a>Składnia
 
@@ -116,7 +116,7 @@ Poniższy przykład kodu pokazuje, jak zadeklarować dwa elementy typu `CSFile` 
 </ItemGroup>
 ```
 
-Poniższy przykład kodu pokazuje, jak używać `Update` atrybutu do modyfikowania metadanych w pliku o nazwie *SOMEFILE.cs* , który został dołączony za pośrednictwem globalizowania. (Dostępne tylko dla projektów .NET Core w programie Visual Studio 2017 lub nowszym).
+Poniższy przykład kodu pokazuje, jak używać `Update` atrybutu do modyfikowania metadanych w pliku o nazwie *SOMEFILE. cs* , który został dołączony za pośrednictwem globalizowania. (Dostępne tylko dla projektów .NET Core w programie Visual Studio 2017 lub nowszym).
 
 ```xml
 <ItemGroup>

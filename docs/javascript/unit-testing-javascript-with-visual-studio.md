@@ -1,7 +1,7 @@
 ---
 title: Testowanie jednostkowe JavaScript i TypeScript
 description: Program Visual Studio zapewnia obsługę testów jednostkowych w języku JavaScript i kodzie TypeScript przy użyciu narzędzi Node.js Tools for Visual Studio
-ms.date: 07/06/2020
+ms.date: 03/18/2021
 ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
@@ -11,16 +11,16 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 04ef9834fdc66256b601ecdcf156e4d290447ce3
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: dc44e39223fd252ae8c4130a1b358aa6af981119
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102171321"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104671511"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Testowanie jednostkowe JavaScript i TypeScript w programie Visual Studio
 
-Narzędzia Node.js Tools for Visual Studio umożliwiają pisanie i uruchamianie testów jednostkowych przy użyciu niektórych popularnych platform języka JavaScript bez konieczności przełączania się do wiersza polecenia.
+Możesz pisać i uruchamiać testy jednostkowe w programie Visual Studio przy użyciu niektórych popularnych platform języka JavaScript bez konieczności przełączania się do wiersza polecenia. Obsługiwane są zarówno projekty Node.js, jak i ASP.NET Core.
 
 Obsługiwane są następujące platformy:
 * Środowiska Mocha ([mochajs.org](https://mochajs.org/))
@@ -29,9 +29,11 @@ Obsługiwane są następujące platformy:
 * On ([jestjs.IO](https://jestjs.io/))
 * Eksportuj moduł uruchamiający (Platforma ta jest specyficzna dla Node.js narzędzi dla programu Visual Studio)
 
+Aby uzyskać ASP.NET Core i JavaScript lub TypeScript, zobacz [pisanie testów jednostkowych dla ASP.NET Core ](#write-unit-tests-for-aspnet-core).
+
 Jeśli Twoja ulubiona platforma nie jest obsługiwana, zobacz [Dodawanie obsługi dla struktury testów jednostkowych](#addingFramework) , aby uzyskać informacje na temat dodawania obsługi.
 
-## <a name="write-unit-tests"></a>Zapisz testy jednostkowe
+## <a name="write-unit-tests-in-a-nodejs-project"></a>Zapisz testy jednostkowe w projekcie Node.js
 
 Przed dodaniem testów jednostkowych do projektu upewnij się, że struktura, którą planujesz użyć, jest zainstalowana lokalnie w projekcie. Można to łatwo zrobić przy użyciu [okna instalacji pakietu npm](npm-package-management.md#npmInstallWindow).
 
@@ -74,7 +76,7 @@ Po otwarciu Eksploratora testów (wybierz **test**  >    >  **Eksplorator testó
 > [!NOTE]
 > W przypadku języka TypeScript nie używaj `outdir` opcji or `outfile` w *tsconfig.json*, ponieważ Eksplorator testów nie będzie w stanie znaleźć testów jednostkowych.
 
-## <a name="run-tests"></a>Uruchom testy
+## <a name="run-tests-nodejs"></a>Uruchom testy (Node.js)
 
 Testy można uruchamiać w programie Visual Studio lub w wierszu polecenia.
 
@@ -134,6 +136,130 @@ Test execution time: 1.5731 Seconds
 > [!NOTE]
 > Jeśli zostanie wyświetlony komunikat o błędzie z informacją, że nie można odnaleźć *vstest.console.exe* , upewnij się, że otwarto wiersz polecenia dla deweloperów, a nie zwykły wiersz polecenia.
 
+## <a name="write-unit-tests-for-aspnet-core"></a>Zapisz testy jednostkowe dla ASP.NET Core
+
+1. Utwórz projekt ASP.NET Core i Dodaj obsługę języka TypeScript.
+
+   Przykładowy projekt można znaleźć w temacie [Tworzenie aplikacji ASP.NET Core przy użyciu języka TypeScript](../javascript/tutorial-aspnet-with-typescript.md). W przypadku obsługi testowania jednostkowego zalecamy rozpoczęcie od standardowego szablonu projektu ASP.NET Core.
+
+   Użyj pakietu NuGet, aby dodać obsługę języka TypeScript zamiast pakietu npm TypeScript.
+
+1. Zainstaluj pakiet NuGet [Microsoft. JavaScript. testu jednostkowego](https://www.nuget.org/packages/Microsoft.JavaScript.UnitTest/)
+
+1. W Eksplorator rozwiązań kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Zwolnij projekt**.
+
+   Plik *. csproj* powinien zostać otwarty w programie Visual Studio.
+
+1. Dodaj następujące elementy do pliku *. csproj* w `PropertyGroup` elemencie.
+
+   Ten przykład określa środowiska Mocha jako platformę testową. Zamiast tego można określić za ich Jasmine.
+
+   ```xml
+   <PropertyGroup>
+      ...
+      <JavaScriptTestRoot>tests\</JavaScriptTestRoot>
+      <JavaScriptTestFramework>Mocha</JavaScriptTestFramework>
+      <GenerateProgramFile>false</GenerateProgramFile>
+   </PropertyGroup>
+   ```
+
+   `JavaScriptTestRoot`Element określa, że testy jednostkowe będą znajdować się w folderze *Tests* katalogu głównego projektu.
+
+1. W Eksplorator rozwiązań kliknij prawym przyciskiem myszy węzeł projektu, a następnie wybierz polecenie **Załaduj ponownie projekt**.
+
+1. Dodaj obsługę npm, jak opisano w artykule Zarządzanie pakietami npm w obszarze [projekty ASP.NET Core](../javascript/npm-package-management.md#aspnet-core-projects).
+
+   Wymaga to zainstalowania środowiska uruchomieniowego Node.js dla obsługi npm i dodania *package.jsw elemencie* głównym projektu.
+
+1. W *package.jsna*, Dodaj pakiet npm, który ma być objęty zależnościami.
+
+   Na przykład dla środowiska Mocha można użyć następujących:
+
+   ```json
+   "dependencies": {
+     "mocha": "8.3.0",
+   ```
+
+   Niektóre struktury testów jednostkowych, takie jak npm, wymagają dodatkowych pakietów. W przypadku programu należy użyć następującego kodu JSON:
+
+   ```json
+   "dependencies": {
+     "jest": "26.6.3",
+     "jest-editor-support": "28.1.0"
+   ```
+
+   >[!NOTE]
+   > W niektórych scenariuszach Eksplorator rozwiązań nie może wyświetlić węzła npm z powodu znanego problemu opisanego [tutaj](https://github.com/aspnet/Tooling/issues/479). Jeśli musisz zobaczyć węzeł npm, możesz zwolnić projekt (kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Zwolnij projekt**), a następnie ponownie Załaduj projekt, aby ponownie wyświetlić węzeł npm.
+
+1. Dodaj kod do testu.
+
+   Jeśli używasz przykładu opisanego w temacie [Create a ASP.NET Core app with TypeScript](tutorial-aspnet-with-typescript.md), Dodaj następujący kod na końcu pliku *Library. TS* , który znajduje się w folderze *scripts* .
+
+   ```typescript
+   function getData(value) {
+      if (value > 1) {
+         return true;
+      }
+   }
+    
+   module.exports = getData;
+   ```
+
+   W przypadku języka TypeScript testy jednostkowe są uruchamiane względem wygenerowanego kodu JavaScript.
+
+1. Dodaj testy jednostkowe do folderu *Tests* w katalogu głównym projektu.
+
+   Na przykład można użyć poniższego kodu, wybierając poprawną kartę dokumentacji, która pasuje do struktury testowej, w tym przykładzie środowiska Mocha lub. Ten kod testuje funkcję o nazwie `getData` .
+
+   # <a name="mocha"></a>[Środowiska Mocha](#tab/mocha)
+
+   ```typescript
+   const getData = require('../wwwroot/js/library.js');
+   var assert = require('assert');
+    
+   describe('Test Suite 1', function () {
+      it('getData', function () {
+         assert.ok(true, getData(2));
+      })
+   })
+   ```
+
+   # <a name="jest"></a>[Rejestr](#tab/jest)
+
+   ```typescript
+   const getData = require('../wwwroot/js/library.js');
+    
+   test('should return true', () => {
+      expect(getData(2)).toBe(true);
+   });
+   ```
+
+1. Otwórz Eksploratora testów (wybierz **test**  >    >  **Eksplorator testów** systemu Windows), a program Visual Studio odnajduje i wyświetla testy. Jeśli testy nie są początkowo wyświetlane, ponownie skompiluj projekt, aby odświeżyć listę.
+
+   ![Odnajdywanie testów w Eksploratorze testów](../javascript/media/unit-tests-aspnet-core-discovery.png)
+
+   > [!NOTE]
+   > W przypadku języka TypeScript nie należy używać `outfile` opcji w *tsconfig.json*, ponieważ Eksplorator testów nie będzie w stanie znaleźć testów jednostkowych. Możesz użyć `outdir` opcji, ale upewnij się, że pliki konfiguracji, takie jak `package.json` i `tsconfig.json` znajdują się w katalogu głównym projektu.
+
+## <a name="run-tests-aspnet-core"></a>Uruchom testy (ASP.NET Core)
+
+::: moniker range=">=vs-2019"
+Testy można uruchomić, klikając link **Uruchom wszystkie** w Eksploratorze testów. Lub można uruchomić testy, wybierając jeden lub więcej testów lub grup, klikając prawym przyciskiem myszy i wybierając polecenie **Uruchom** z menu skrótów. Testy są uruchamiane w tle, a Eksplorator testów automatycznie aktualizuje i wyświetla wyniki. Ponadto można debugować wybrane testy, klikając je prawym przyciskiem myszy i wybierając polecenie **Debuguj**.
+::: moniker-end
+::: moniker range="vs-2017"
+Testy można uruchomić, klikając link **Uruchom wszystkie** w Eksploratorze testów. Lub można uruchomić testy, wybierając jeden lub więcej testów lub grup, klikając prawym przyciskiem myszy i wybierając polecenie **Uruchom wybrane testy** z menu skrótów. Testy są uruchamiane w tle, a Eksplorator testów automatycznie aktualizuje i wyświetla wyniki. Ponadto można debugować wybrane testy, wybierając **Debuguj wybrane testy**.
+::: moniker-end
+
+W przypadku języka TypeScript testy jednostkowe są uruchamiane względem wygenerowanego kodu JavaScript.
+
+![Wyniki Eksploratora testów](../javascript/media/unit-tests-aspnet-core-run.png)
+
+> [!NOTE]
+> W większości scenariuszy języka TypeScript można debugować test jednostkowy przez ustawienie punktu przerwania w kodzie TypeScript, kliknięcie prawym przyciskiem myszy w Eksploratorze testów i wybranie polecenia **Debuguj**. W bardziej złożonych scenariuszach, takich jak niektóre scenariusze korzystające z map źródła, może wystąpić problem, który sprawia, że punkty przerwania w kodzie TypeScript. Aby obejść ten sposób, spróbuj użyć `debugger` słowa kluczowego.
+
+> [!NOTE]
+> Obecnie nie obsługujemy testów profilowania ani pokrycia kodu.
+
 ## <a name="add-support-for-a-unit-test-framework"></a><a name="addingFramework"></a>Dodawanie obsługi dla struktury testów jednostkowych
 
 Można dodać obsługę dodatkowych platform testowych przez implementację logiki odnajdywania i wykonywania przy użyciu języka JavaScript. Można to zrobić przez dodanie folderu o nazwie struktury testowej w:
@@ -151,9 +277,9 @@ Aby zapoznać się z dobrymi przykładami `find_tests` i `run_tests` implementac
 
 Odnajdywanie dostępnych platform testowych odbywa się po rozpoczęciu programu Visual Studio. Jeśli po uruchomieniu programu Visual Studio zostanie dodana struktura, uruchom ponownie program Visual Studio, aby wykryć strukturę. Nie trzeba jednak ponownie uruchamiać w przypadku wprowadzania zmian w implementacji.
 
-## <a name="unit-tests-in-other-project-types"></a>Testy jednostkowe w innych typach projektów
+## <a name="unit-tests-in-net-framework"></a>Testy jednostkowe w .NET Framework
 
-Nie możesz pisać testów jednostkowych tylko w projektach Node.js. Po dodaniu właściwości TestFramework i TestRoot do dowolnego projektu C# lub Visual Basic testy te zostaną wyliczone i można uruchomić je przy użyciu okna Eksplorator testów.
+Nie możesz pisać testów jednostkowych tylko w Node.js i ASP.NET Core projektach. Po dodaniu właściwości TestFramework i TestRoot do dowolnego projektu C# lub Visual Basic testy te zostaną wyliczone i można uruchomić je przy użyciu okna Eksplorator testów.
 
 Aby włączyć tę funkcję, kliknij prawym przyciskiem myszy węzeł projektu w Eksplorator rozwiązań, wybierz polecenie **Zwolnij projekt**, a następnie wybierz polecenie **Edytuj projekt**. Następnie w pliku projektu Dodaj następujące dwa elementy do grupy właściwości.
 
@@ -170,7 +296,7 @@ Aby włączyć tę funkcję, kliknij prawym przyciskiem myszy węzeł projektu w
 
 Następnie Dodaj testy do podanego głównego folderu testowego i będą one dostępne do uruchomienia w oknie Eksplorator testów. Jeśli nie pojawią się na początku, może być konieczne ponowne skompilowanie projektu.
 
-### <a name="unit-test-net-core-and-net-standard"></a>Test jednostkowy .NET Core i .NET Standard
+## <a name="unit-test-net-core-and-net-standard"></a>Test jednostkowy .NET Core i .NET Standard
 
 Oprócz powyższych właściwości należy również zainstalować pakiet NuGet [Microsoft. JavaScript. testu jednostkowego](https://www.nuget.org/packages/Microsoft.JavaScript.UnitTest/) i ustawić właściwość:
 

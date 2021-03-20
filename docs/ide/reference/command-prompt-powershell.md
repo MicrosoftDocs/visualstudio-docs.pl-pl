@@ -1,6 +1,6 @@
 ---
 title: Powłoki wiersza polecenia dla deweloperów
-description: Dowiedz się, jak znaleźć i korzystać z wiersz polecenia dla deweloperów dla programu Visual Studio, programu PowerShell dla deweloperów i programu Visual Studio, który ułatwia korzystanie z narzędzi .NET i C++.
+description: Dowiedz się, jak znaleźć i korzystać z programu Visual Studio wiersz polecenia dla deweloperów, Visual Studio Developer PowerShell i terminala programu Visual Studio, dzięki czemu można łatwiej korzystać z narzędzi .NET i C++.
 ms.date: 03/04/2021
 ms.custom: contperf-fy21q3
 helpviewer_keywords:
@@ -11,19 +11,19 @@ helpviewer_keywords:
 - Visual Studio terminal
 ms.assetid: 94fcf524-9045-4993-bfb2-e2d8bad44219
 no-loc: cmdlet
-ms.openlocfilehash: 406ef4e7d475df82a0e36732dd5e777959ea3b96
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: fb2c99037577528b77ab5c1b0c74bf7af9e73d1b
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249744"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672328"
 ---
 # <a name="developer-command-prompt-and-developer-powershell"></a>wiersz polecenia dla deweloperów i deweloper programu PowerShell
 
 Program Visual Studio 2019 zawiera dwie powłoki wiersza polecenia dla deweloperów:
 
-- **Wiersz polecenia dla deweloperów for Visual Studio** — standardowy wiersz polecenia z pewnymi zmiennymi środowiskowymi ustawionymi w celu ułatwienia korzystania z narzędzi deweloperskich wiersza polecenia.
-- **Deweloper programu PowerShell** — bardziej wydajny niż wiersz polecenia. Na przykład można przekazać dane wyjściowe jednego polecenia (znanego jako a *cmdlet* ) do innego cmdlet . Ta powłoka ma te same zmienne środowiskowe ustawione jako wiersz polecenia dla deweloperów.
+- **Visual Studio wiersz polecenia dla deweloperów** — standardowy wiersz polecenia z pewnymi zmiennymi środowiskowymi ustawionymi przy użyciu narzędzi deweloperskich wiersza polecenia. Dostępne od programu Visual Studio 2015.
+- **Visual Studio Developer PowerShell** — bardziej wydajny niż wiersz polecenia. Na przykład można przekazać dane wyjściowe jednego polecenia (znanego jako a *cmdlet* ) do innego cmdlet . Ta powłoka ma te same zmienne środowiskowe ustawione jako wiersz polecenia dla deweloperów. Dostępne od programu Visual Studio 2019.
 
 Obie powłoki mają określone zmienne środowiskowe, które umożliwiają łatwiejsze korzystanie z narzędzi deweloperskich wiersza polecenia. Po otwarciu jednej z tych powłok można wprowadzić polecenia dla różnych narzędzi, bez konieczności wiedzieć, gdzie się znajdują. Polecenia, które można uruchomić, obejmują:
 
@@ -40,10 +40,6 @@ Począwszy od programu Visual Studio 2019 w wersji 16,5, program Visual Studio z
 :::image type="content" source="media/developer-command-prompt-for-vs/vs-terminal.png" alt-text="Terminal programu Visual Studio pokazujący wiele kart":::
 
 Po otwarciu jednej z powłok dla deweloperów w programie Visual Studio jako osobna aplikacja lub w oknie terminalu zostanie otwarta w katalogu bieżącego rozwiązania (Jeśli masz załadowane rozwiązanie). Takie zachowanie ułatwia uruchamianie poleceń względem rozwiązania lub jego projektów.
-
-## <a name="prerequisites"></a>Wymagania wstępne
-
-- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)
 
 ## <a name="start-the-shell-from-inside-visual-studio"></a>Uruchom powłokę z programu Visual Studio
 

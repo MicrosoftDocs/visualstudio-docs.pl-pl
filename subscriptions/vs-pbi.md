@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 383fc910-3f4c-474a-a3f8-0f13525f05e9
-ms.date: 12/02/2020
+ms.date: 03/17/2021
 ms.topic: how-to
 description: Dowiedz się więcej o subskrypcji Power BI Pro dołączonej do wybranych subskrypcji programu Visual Studio.
-ms.openlocfilehash: 6d64c9e5d15e24dcf53dd5b45261305dffb43353
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 1801ed8deae3294837078401420e16efdc016979
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96538075"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672907"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro w subskrypcjach programu Visual Studio
 
@@ -65,14 +65,14 @@ Aby użyć Power BI Pro, musisz skonfigurować konto lub zalogować się przy u�
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standardowa)   | LICENCJONOWANie, Azure, sprzedaż detaliczna, wybrane NFR<sup>1</sup> | Dostępne       |  Tak|
 | Visual Studio Enterprise subskrypcję z usługą GitHub Enterprise  | Licencja | Dostępne       |  Tak|
-| Visual Studio Professional (standardowa, miesięczna chmura) | LICENCJONOWANie, Azure, sprzedaż detaliczna                                       | Niedostępne                                                            |Nie dotyczy         |
-| Visual Studio Professional subskrypcję z usługą GitHub Enterprise | Licencja                                      | Niedostępne                                                            |Nie dotyczy         |
-| Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Niedostępne                                                            |Nie dotyczy         |
+| Visual Studio Professional (standardowa, miesięczna chmura) | LICENCJONOWANie, Azure, sprzedaż detaliczna                                       | Niedostępne                                                            |NA         |
+| Visual Studio Professional subskrypcję z usługą GitHub Enterprise | Licencja                                      | Niedostępne                                                            |NA         |
+| Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Niedostępne                                                            |NA         |
 | Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Dostępne       |  Tak|
-| Visual Studio Enterprise (chmura miesięczna) | Azure                                       | Niedostępne                                  |Nie dotyczy|
+| Visual Studio Enterprise (chmura miesięczna) | Azure                                       | Niedostępne                                  |NA|
 ||
 
-<sup>1</sup>  *obejmuje: nie do odsprzedaży (NFR), Visual Studio Industry partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & Service, najbardziej cenny specjalista (MVP), dyrektor regionalny (RD).  Wyklucza: Microsoft Partner Network (MPN), z pełnego etatu.*
+<sup>1</sup>  *obejmuje: nie do odsprzedaży (NFR), Visual Studio Industry partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & Service, najbardziej cenny specjalista (MVP), dyrektor regionalny (RD).  Wyklucza: Microsoft Partner Network (MPN), równoważnik, Wyobraź sobie, NFR Basic.*
 
 > [!NOTE]
 > Firma Microsoft nie oferuje już Visual Studio Professional rocznych subskrypcji i Visual Studio Enterprise rocznych subskrypcji w ramach subskrypcji chmury. Istnieją zmiany w istniejących klientach i możliwość odnowienia, zwiększenia, zmniejszenia lub anulowania subskrypcji. Zachęcamy nowych klientów do [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) przeglądania różnych opcji zakupu programu Visual Studio.
@@ -110,7 +110,7 @@ Odp.: nie.  Korzyści Power BI Pro nie można dodać do dzierżawców instytucji
   - Zapoznaj się z [dokumentacją online](/power-bi/).
   - Problemy z rejestrowaniem?  Zapoznaj [się z rejestrowaniem się w celu Power BI jako osoby indywidualnej](/power-bi/service-self-service-signup-for-power-bi)
   - Poznaj najważniejsze problemy, uzyskaj pomoc od społeczności lub Prześlij bilet pomocy technicznej na [stronie pomocy technicznej](https://powerbi.microsoft.com/support/).
-- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji programu Visual Studio](https://my.visualstudio.com/gethelp)
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Zobacz też

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 02/19/2021
+ms.date: 03/18/2021
 ms.topic: how-to
 description: Dowiedz się, jak aktywować usługę Azure DevTest z korzyściami z tytułu skorzystania z subskrypcji programu Visual Studio.
-ms.openlocfilehash: 0834020113ac4a383abe551ace0ae2e3181e0650
-ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
+ms.openlocfilehash: 1fb85c64ec49d906ba843ac944d550ef1e41fd4d
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102473377"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672260"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Używanie Microsoft Azure w subskrypcjach programu Visual Studio
 Jako subskrybent programu Visual Studio możesz używać Microsoft Azure bez dodatkowych opłat.  W przypadku comiesięcznych środków na korzystanie z [platformy Azure DevTest](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/), platforma Azure jest osobistą piaskownicą na potrzeby tworzenia i testowania.  Możesz udostępniać maszyny wirtualne, usługi w chmurze i inne zasoby platformy Azure.  Kwoty kredytowe różnią się w zależności od poziomu subskrypcji.
@@ -80,7 +80,7 @@ Jeśli masz pytania dotyczące transferu zasobów, usuwania limitów wydatków l
 |              Visual Studio Professional miesięcznie              |        Niedostępne        |                                                             |
 |                    Visual Studio Test Pro                    |     $50 — środki miesięczne      |                             Tak                             |
 |                        Platformy MSDN                        |     $100 — środki miesięczne     |                             Tak                             |
-|               Visual Studio Enterprise — NFR\*               |     $150 — środki miesięczne     |                             Tak                             |
+|               Visual Studio Enterprise — NFR<sup>1</sup>                 |     $150 — środki miesięczne     |                             Tak                             |
 |                Visual Studio Enterprise — równoważnik                |     $150 — środki miesięczne     |                             Tak                             |
 |     Visual Studio Enterprise — Microsoft Partner Network     |     $150 — środki miesięczne     |                             Tak                             |
 |    Visual Studio Professional — Microsoft Partner Network    |        Niedostępne        |                                                             |
@@ -90,7 +90,7 @@ Jeśli masz pytania dotyczące transferu zasobów, usuwania limitów wydatków l
 |      Visual Studio Enterprise — MCT oprogramowania & Services      |     $100 — środki miesięczne     |                             Tak                             |
 | Visual Studio Enterprise — deweloper usług & oprogramowania MCT |     $150 — środki miesięczne     |                             Tak                             |
 
-* Nie obejmuje odsprzedaży (NFR), najbardziej cennych profesjonalistów (MVP), regionalnej dyrektora (RD), Visual Studio Industry partner (VSIP)
+<sup>1</sup>  *obejmuje: nie do odsprzedaży (NFR), najbardziej cennych profesjonalistów (MVP), regionalnej dyrektora (RD), Visual Studio Industry partner (VSIP) wyklucza: NFR Basic*
 
 > [!NOTE]
 > Firma Microsoft nie oferuje już Visual Studio Professional rocznych subskrypcji i Visual Studio Enterprise rocznych subskrypcji w ramach subskrypcji chmury. Istnieją zmiany w istniejących klientach i możliwość odnowienia, zwiększenia, zmniejszenia lub anulowania subskrypcji. Zachęcamy nowych klientów do [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) przeglądania różnych opcji zakupu programu Visual Studio.
