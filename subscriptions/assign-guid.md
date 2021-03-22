@@ -3,15 +3,15 @@ title: Przypisywanie określonych identyfikatorów GUID do subskrybentów progra
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
-ms.date: 02/18/2021
+ms.date: 03/19/2021
 ms.topic: conceptual
 description: Dowiedz się, jak Administratorzy mogą określić identyfikator GUID subskrypcji dla subskrybentów
-ms.openlocfilehash: 3c92a3e6cc35230f6bcf10320e92a50dc5ffb85b
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: a0721029186605c6b9a277c9eb95a370a086d7d2
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249686"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776653"
 ---
 # <a name="assign-specific-subscriptions-in-the-visual-studio-subscriptions-administration-portal"></a>Przypisywanie określonych subskrypcji w portalu administratora subskrypcji programu Visual Studio
 
@@ -63,7 +63,7 @@ Ostatnim krokiem jest pobranie **zbiorczego szablonu Dodaj** , wypełnienie wyma
 Odp.: Jeśli chcesz zmienić identyfikator GUID przypisany do użytkownika, musisz najpierw usunąć subskrypcję dla tego użytkownika.  Aby uzyskać więcej informacji, zobacz artykuł [usuwanie subskrypcji](delete-license.md) , aby uzyskać więcej informacji.  Po usunięciu subskrypcji dla tego użytkownika należy użyć podanego powyżej procesu, aby wyeksportować listę i przekazać nowe informacje o subskrypcji.  
 
 ## <a name="resources"></a>Zasoby
-- [Obsługa subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)
+- [Obsługa subskrypcji](https://aka.ms/vsadminhelp)
 
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)
@@ -78,5 +78,3 @@ Teraz, gdy masz przypisane subskrypcje użytkownikom, Dowiedz się, jak wykonywa
 - [Edytowanie subskrypcji](edit-license.md)
 - [Usuwanie subskrypcji](delete-license.md)
 - [Określanie maksymalnego użycia](maximum-usage.md)
-
-

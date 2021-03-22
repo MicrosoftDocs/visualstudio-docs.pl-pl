@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 14e4cffb-a695-436c-b269-7820f7411f4e
-ms.date: 02/18/2021
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: Dowiedz się, jak wyeksportować listę subskrybentów i szczegółowe informacje o ich przypisaniach subskrypcji.
-ms.openlocfilehash: afd30470b5d9171f803c14b0d604eca626b70342
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: 991128fc0f45b0caa0727c8ab418ba632d90e60c
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102250032"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776821"
 ---
 # <a name="export-subscription-information"></a>Eksportowanie informacji o subskrypcji
 W [portalu administratora](https://manage.visualstudio.com)subskrypcji programu Visual Studio można wyeksportować listę subskrybentów oraz szczegóły dotyczące ich przypisań. Te informacje obejmują nazwę, adres e-mail, alternatywny adres e-mail, poziom subskrypcji, datę przypisania, stan aktywacji, datę wygaśnięcia, pole odwołania, czy pliki do pobrania są włączone, kraj, język, stan subskrypcji i identyfikator GUID subskrypcji.  Lista zostanie wyeksportowana jako plik CSV, który można łatwo otworzyć w programie Microsoft Excel, aby utworzyć wykresy, przestawianie i inne artefakty.
@@ -33,7 +33,7 @@ Aby przeprowadzić eksport:
 > ![Eksportowanie subskrybentów](_img/exporting-subscriptions/exporting-subscriptions.png "Kliknij przycisk Eksportuj, aby pobrać kompletną listę przypisanych subskrypcji.")
 
 ## <a name="resources"></a>Zasoby
-- [Obsługa subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)
+- [Obsługa subskrypcji](https://aka.ms/vsadminhelp)
 
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)

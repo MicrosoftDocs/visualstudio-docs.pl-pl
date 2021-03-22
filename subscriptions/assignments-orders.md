@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 83a9162a-b9e7-43a4-b07f-6c1fd8580f78
-ms.date: 02/18/2021
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: Dowiedz się więcej na temat odpowiedzialności administratorów do śledzenia przypisań użytkowników i przetwarzania zamówień.
-ms.openlocfilehash: 3da446dad534a6a76413a66de2b9ad52e937e253
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: 9ba54d13f4481f68d13e43a2e21f62036d23cab3
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249489"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776990"
 ---
 # <a name="track-user-assignment-and-process-orders"></a>Śledzenie przypisania użytkownika i przetwarzania zamówień
 Administrator subskrypcji programu Visual Studio może śledzić użycie programu Visual Studio i przetwarzać zlecenia dla jakichkolwiek wzrostów użycia zgodnie z harmonogramem w ramach umowy licencjonowania zbiorowego lub umowy dotyczącej produktów i usług firmy Microsoft. Nowy portal administrowania subskrypcjami programu Visual Studio został uproszczony dzięki pomocnemu śledzeniu pokazującemu dostępne i wykorzystane licencje.
@@ -38,7 +38,7 @@ Możesz przypisywać subskrypcje za pomocą programów, takich jak Open License 
 Umowy Microsoft Enterprise Agreement (EA), MPSA i Select + Agreement zapewniają elastyczność w zakresie używania i licencjonowania oprogramowania Visual Studio z upływem czasu. Administratorzy programu Visual Studio muszą utworzyć roczną True-Upą w celu przeprowadzenia licencji na oprogramowanie do maksymalnego użycia ustalonego w okresie obowiązywania umowy.
 
 ## <a name="resources"></a>Zasoby
-- Potrzebujesz pomocy?  Skontaktuj się z [pomocą techniczną](https://visualstudio.microsoft.com/subscriptions/support/).
+- Potrzebujesz pomocy?  Skontaktuj się z [pomocą techniczną](https://aka.ms/vsadminhelp).
 
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: abf271b5-7547-4695-a46f-72b2878ba8d4
-ms.date: 03/09/2020
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: Informacje o dostępności produktu w ramach pobierania oprogramowania dla subskrypcji programu Visual Studio
-ms.openlocfilehash: e223946aabd9a0b789f51e80e522c24d8a85dd4c
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 8188395c236ae116c36da7f60f0afb8042cb81b3
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005862"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776626"
 ---
 # <a name="product-availability-for-software-downloads-in-visual-studio-subscriptions"></a>Dostępność produktu na potrzeby pobierania oprogramowania w ramach subskrypcji programu Visual Studio
 W ramach korzyści dla subskrybenta masz dostęp do szerokiego zakresu pobierania oprogramowania.
@@ -38,9 +38,12 @@ Liczba i typ pobieranych danych zależy od poziomu subskrypcji i członkostwa w 
 
 Nie masz pewności, której subskrypcji używasz?  Połącz się z, [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, być może masz co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby zobaczyć te subskrypcje.
 
+## <a name="support-resources"></a>Zasoby pomocy technicznej
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji programu Visual Studio](https://aka.ms/vssubscriberhelp).
+
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Azure DevOps documentation (Dokumentacja usługi Azure DevOps)](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)
 - [Dokumentacja Microsoft 365](/microsoft-365/)
 

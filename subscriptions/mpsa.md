@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: b331c837-3524-42b7-820e-b4fdd5e12793
-ms.date: 03/05/2021
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: Więcej informacji na temat zarządzania subskrypcjami programu Visual Studio w ramach umowy dotyczącej produktów i usług firmy Microsoft (MPSA)
-ms.openlocfilehash: 49f18b540d27678b46a5fa111c76a069b705309d
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: 63124e8853184fde04db7bc202e5acea3cfbe89f
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249461"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776535"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Subskrypcje programu Visual Studio w ramach umowy dotyczącej produktów i usług firmy Microsoft (MPSA)
 Jeśli masz zakupione subskrypcje programu Visual Studio w programie MPSA, musisz znać kilka kwestii, aby móc być administratorem subskrypcji programu Visual Studio i przypisać subskrypcje użytkownikom. Jeśli masz już skonfigurowaną rolę administratora, możesz przejść bezpośrednio do [portalu administracyjnego](https://manage.visualstudio.com/)subskrypcji programu Visual Studio.
@@ -56,6 +56,9 @@ Aby uzyskać bardziej szczegółowy opis tego procesu, możesz użyć [przewodni
 
 > [!NOTE]
 > Po zakończeniu procesu przejęcia domeny należy przestrzegać kryteriów z pięciu kroków w sekcji w przypadku skojarzenia predzierżawców (zarządzane). Po spełnieniu kryteriów będzie konieczne skontaktowanie się z pomocą techniczną MPSA w celu udostępnienia dodatkowych administratorów subskrypcji programu Visual Studio.
+
+## <a name="support-resources"></a>Zasoby pomocy technicznej
+- Aby uzyskać pomoc dotyczącą administrowania subskrypcjami programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji programu Visual Studio](https://aka.ms/vsadminhelp).
 
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)

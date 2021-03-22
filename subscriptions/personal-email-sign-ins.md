@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 3f4b0528-03f0-4a02-b3c3-a39292a9bbe1
-ms.date: 10/28/2020
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: Subskrypcje programu Visual Studio — Dlaczego widzę adresy Hotmail i Gmail dla subskrybentów?
-ms.openlocfilehash: fda7dab50c2151049e0feffa50609bf4c38e38cc
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 99c22d74a9a6fb57e79f699e548de928ef1ebcb6
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189046"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104777003"
 ---
 # <a name="visual-studio-subscriptions--why-do-i-see-personal-accounts-for-my-subscribers"></a>Subskrypcje programu Visual Studio — Dlaczego widzę konta osobiste dla moich subskrybentów?
 Po przeprowadzeniu migracji z witryny Volume Licensing Service Center (VLSC) do nowego [portalu administratora subskrypcji](https://manage.visualstudio.com)programu Visual Studio Administratorzy mogli stwierdzić, że adres e-mail logowania dla niektórych subskrybentów zawiera osobisty adres e-mail, taki jak Hotmail lub Outlook.  
@@ -49,6 +49,9 @@ Kliknij przycisk Dalej **, aby przejść do** listy zmian, które mają zostać 
 
 > [!NOTE]
 > Podczas edytowania adresu e-mail należy tylko zaktualizować wiadomość e-mail używaną przez subskrybenta, aby zalogować się do swojej subskrypcji https://my.visualstudio.com . Jeśli subskrybent ma już aktywowane korzyści, takie jak Azure lub Pluralsight przy użyciu innego adresu e-mail, będzie musiał nadal korzystać z tych adresów e-mail w celu uzyskania dostępu do nich. W przypadku nowych korzyści, do których mają dostęp, powinny być używane nowe adresy e-mail. 
+
+## <a name="support-resources"></a>Zasoby pomocy technicznej
+- Aby uzyskać pomoc dotyczącą administrowania subskrypcjami programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji programu Visual Studio](https://aka.ms/vsadminhelp).
 
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)

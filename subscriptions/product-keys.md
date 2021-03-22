@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 89e3fcf9-fe5d-4266-8dd7-5567d05fe869
-ms.date: 10/28/2020
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: Dowiedz się, jak uzyskiwać klucze produktów i zarządzać nimi w subskrypcjach programu Visual Studio.
-ms.openlocfilehash: a5da818a059709d311b87572f71b78a51dbb7deb
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: ad9672d089c6e50aa879b38841c468f235347963
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92903994"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776769"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Korzystanie z kluczy produktów w subskrypcjach programu Visual Studio
 
@@ -79,9 +79,12 @@ W zależności od produktu dostępne są różne typy kluczy.
 
 Klucz można przejąć ze strony pobierania produktu lub można wyszukać wymagany klucz na stronie [klucze produktu](https://my.visualstudio.com/productkeys) .
 
+## <a name="support-resources"></a>Zasoby pomocy technicznej
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji programu Visual Studio](https://aka.ms/vssubscriberhelp).
+
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Azure DevOps documentation (Dokumentacja usługi Azure DevOps)](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)
 - [Dokumentacja Microsoft 365](/microsoft-365/)
 

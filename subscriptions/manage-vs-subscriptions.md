@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
-ms.date: 03/09/2020
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: Dowiedz się, jak maksymalnie wykorzystać subskrypcje programu Visual Studio
-ms.openlocfilehash: a865bfa5cf7d55504e022efb1b134bddde7d231c
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: fce096a0999fefe16abc009c04f87cf4eff35748
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92904678"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776835"
 ---
 # <a name="managing-subscriptions"></a>Zarządzanie subskrypcjami
 
@@ -71,7 +71,7 @@ Informacje o kontakcie i preferencje można łatwo zmienić w Twoim profilu.
 1. Wybierz swoją nazwę w prawym górnym rogu portalu subskrybenta.
 2. Wybierz przycisk **Edytuj profil** .
 3. Na karcie **informacje** można zmienić nazwę, adres e-mail, kraj/region, zdjęcie profilu i preferencje kontaktu. Na karcie **Preferencje** możesz wybrać preferowany język, wzorce daty i godziny, strefę czasową i motyw interfejsu użytkownika.
-4. Po sfinalizowaniu zmian wybierz pozycję **Zapisz** .
+4. Po sfinalizowaniu zmian wybierz pozycję **Zapisz**.
 5. Wybierz przycisk **Wstecz** w przeglądarce, aby powrócić do strony korzyści.
 
 ### <a name="setting-communications-preferences"></a>Ustawianie preferencji komunikacji
@@ -89,8 +89,8 @@ Aby dodać alternatywne konto:
 
 1. Zaloguj się do [portalu subskrybenta](https://my.visualstudio.com?wt.mc_id=o~msft~docs) przy użyciu konta Microsoft (MSA).
 2. Wybierz kartę **subskrypcje** .
-3. W obszarze **Linki pokrewne** wybierz pozycję **Dodaj alternatywne konto** .
-4. Wprowadź adres e-mail konta służbowego i wybierz pozycję **Dodaj** .
+3. W obszarze **Linki pokrewne** wybierz pozycję **Dodaj alternatywne konto**.
+4. Wprowadź adres e-mail konta służbowego i wybierz pozycję **Dodaj**.
 
 Po dodaniu alternatywnego konta możesz je zaktualizować lub usunąć w dowolnym momencie, wybierając kartę **subskrypcje** i wybierając odpowiednią opcję w sekcji **Linki pokrewne** .
 
@@ -113,9 +113,12 @@ Odp.: w zależności od kanału zakupu firma Microsoft zachowuje dane klienta pr
 > - Jeśli zdecydujesz się zamknąć konto Microsoft lub usługę Azure AD, Twoje dane osobowe będą anonimowe od razu.
 > - Nie będziemy w pełni usuwać wszystkich Twoich danych osobowych, jeśli masz aktywne subskrypcje.
 
+## <a name="support-resources"></a>Zasoby pomocy technicznej
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji programu Visual Studio](https://aka.ms/vssubscriberhelp).
+
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Azure DevOps documentation (Dokumentacja usługi Azure DevOps)](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)
 - [Dokumentacja Microsoft 365](/microsoft-365/)
 

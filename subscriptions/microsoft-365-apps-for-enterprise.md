@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: d1257931-392a-4a65-bf26-177737505122
-ms.date: 06/24/2020
+ms.date: 03/21/2021
 ms.topic: how-to
 description: Dowiedz się więcej na temat i zainstaluj Microsoft 365 aplikacje dla przedsiębiorstw
-ms.openlocfilehash: d23f8cccd284972d05d7085aea7e0b1cab0f275d
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: e1d629aae2d3c9e5d906a5593c287bd0b3250446
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537828"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776717"
 ---
 # <a name="microsoft-365-apps-for-enterprise-in-visual-studio-subscriptions"></a>Microsoft 365 aplikacje dla przedsiębiorstw w subskrypcjach programu Visual Studio
 W wybranych subskrypcjach programu Visual Studio jest dostępna Microsoft 365 aplikacje dla przedsiębiorstw (dawniej Office 365 Pro Plus). 
@@ -34,7 +34,7 @@ Proces aktywowania aplikacji Microsoft 365 dla subskrypcji przedsiębiorstwa jes
    > [!div class="mx-imgBorder"]
    > ![Microsoft 365 aplikacje dla firmowych informacji o kliencie](_img/microsoft-365-apps-for-enterprise/get-to-know-you.png "Wprowadź informacje kontaktowe")
 
-1. W oknie dialogowym "Tworzenie identyfikatora użytkownika" Utwórz nazwę użytkownika i hasło dla dzierżawy, a następnie wybierz pozycję **Utwórz moją konto**.
+1. W oknie dialogowym "Tworzenie identyfikatora użytkownika" Utwórz nazwę użytkownika i hasło dla dzierżawy, a następnie wybierz pozycję **Utwórz moje konto**.
    > [!div class="mx-imgBorder"]
    > ![Microsoft 365 aplikacji do tworzenia identyfikatora użytkownika przedsiębiorstwa](_img/microsoft-365-apps-for-enterprise/create-your-user-id.png "Utwórz identyfikator użytkownika i hasło")
 
@@ -74,7 +74,7 @@ Nie masz pewności, której subskrypcji używasz?  Połącz się z, [https://my.
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 - Aby uzyskać pomoc techniczną dotyczącą wszystkich składników Microsoft 365 aplikacji dla przedsiębiorstw, odwiedź stronę https://support.microsoft.com/allproducts i wybierz produkt.
-- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://aka.ms/vssubscriberhelp)programu Visual Studio.
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, platformy Azure DevOps lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Zobacz też
@@ -85,6 +85,6 @@ Nie masz pewności, której subskrypcji używasz?  Połącz się z, [https://my.
 
 ## <a name="next-steps"></a>Następne kroki
 Pamiętaj, aby aktywować te doskonałe korzyści, aby zapewnić największą subskrypcję programu Visual Studio:
-- [Program Visual Studio](vs-ide-benefit.md)
+- [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
 - Kredyty na korzystanie z [usługi Azure DevTest](vs-azure.md) Jeśli planujesz opracowywać aplikacje dla pakietu Office, chcesz aktywować [subskrypcję dewelopera pakietu Office](./vs-m365.md)

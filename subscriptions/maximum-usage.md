@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: c473b01f-2dfe-4cc2-ad29-bb5e2a268123
-ms.date: 10/28/2020
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: Dowiedz się, jak wyświetlić maksymalną liczbę przypisanych subskrypcji w portalu administracyjnym
-ms.openlocfilehash: e8ea9aa9001312c792e6f9d356dbc5f7cf58dfb8
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 29aaa3d2268d5fc0ae99a1a400238d633e9026a5
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92904488"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104777016"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>Śledzenie liczby przypisanych subskrypcji przy użyciu funkcji maksymalnego użycia
 Nowa funkcja w portalu administratora subskrypcji programu Visual Studio pomaga śledzić liczbę subskrypcji zakupionych i przypisanych oraz określać szczytową liczbę subskrypcji każdego przypisanego poziomu, zarówno w ciągu ostatniego roku, jak i przez cały czas trwania umów. 
@@ -45,12 +45,12 @@ Odp.: informacje w omówieniu przedstawiają *bieżące* przypisania i dostępne
 
 ## <a name="resources"></a>Zasoby
 - [Oficjalny dokument dotyczący licencjonowana programu Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
-- [Pomoc techniczna dotycząca subskrypcji programu Visual Studio i administrowania nim](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [Pomoc techniczna dotycząca subskrypcji programu Visual Studio i administrowania nim](https://aka.ms/vsadminhelp)
 - [Postanowienia dotyczące licencjonowania zbiorowego](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Azure DevOps documentation (Dokumentacja usługi Azure DevOps)](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)
 - [Dokumentacja Microsoft 365](/microsoft-365/)
 

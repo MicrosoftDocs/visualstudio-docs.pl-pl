@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 9c0b9a4f-b9a3-491c-a68f-6e4bac7f7b3d
-ms.date: 09/21/2020
+ms.date: 03/21/2021
 ms.topic: how-to
 description: Dowiedz się, jak Administratorzy mogą lokalizować poszczególnych subskrybentów lub grupy w portalu administracyjnym.
-ms.openlocfilehash: e1fd5ea959043cbea58d0eb9a14649044f5d556e
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: df94b32dfcc5e2672282c0d18859cba42b490437
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92904545"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776691"
 ---
 # <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>Wyszukiwanie i filtrowanie subskrybentów w subskrypcjach programu Visual Studio
 Portal administrowania subskrypcjami programu Visual Studio umożliwia znalezienie określonego podzestawu subskrybentów na podstawie różnych kryteriów. Listę subskrybentów można filtrować według nazwy, adresu e-mail, poziomu subskrypcji i innych informacji.
@@ -36,14 +36,12 @@ Portal administrowania subskrypcjami programu Visual Studio umożliwia znalezien
    > [!div class="mx-imgBorder"]
    > ![Wyczyść filtr z listy subskrybentów](_img/search-filter/clear-filter.png "Kliknij przycisk Wyczyść filtr, aby usunąć filtr i wznowić wyświetlanie wszystkich przypisanych subskrypcji.")
 
-
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Azure DevOps documentation (Dokumentacja usługi Azure DevOps)](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)
 - [Dokumentacja Microsoft 365](/microsoft-365/)
 
-
 ## <a name="next-steps"></a>Następne kroki
 - Teraz, gdy wiesz już, jak znaleźć abonenta, Dowiedz się, jak [edytować](edit-license.md) swoją subskrypcję.
-- Potrzebujesz pomocy przy użyciu portalu administracyjnego?  Skontaktuj się z [pomocą techniczną programu Visual Studio Administration i subscriptions](https://visualstudio.microsoft.com/support/support-overview-vs).
+- Potrzebujesz pomocy przy użyciu portalu administracyjnego?  Skontaktuj się z [pomocą techniczną programu Visual Studio Administration i subscriptions](https://aka.ms/vsadminhelp).

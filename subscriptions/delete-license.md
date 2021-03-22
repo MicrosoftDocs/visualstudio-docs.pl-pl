@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: e49242bc-e9f2-49e8-8caa-f574d508aba6
-ms.date: 02/18/2021
+ms.date: 03/21/2021
 ms.topic: how-to
 description: Dowiedz się, jak Administratorzy mogą usuwać przypisania subskrypcji w portalu administratora subskrypcji programu Visual Studio
-ms.openlocfilehash: efd0e149f390dd21a286b6ab7405ec36a43b8f78
-ms.sourcegitcommit: 9da787bf5b4281f933dc22083dc0bdeae3bc9461
+ms.openlocfilehash: d0ce93855cf56dab5e1a333e41e24ac2a368a540
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103225979"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776936"
 ---
 # <a name="delete-assignments-in-visual-studio-subscriptions"></a>Usuwanie przypisań w subskrypcjach programu Visual Studio
 Gdy Subskrybenci nie wymagają już subskrypcji programu Visual Studio, na przykład gdy opuszczają firmę, ukończą projekt lub przełączają się do nowej roli zadania, można usunąć swoją subskrypcję i przypisać ją do innej osoby. Należy pamiętać, że po ponownym przypisaniu subskrypcji nie wszystkie korzyści dla subskrybenta zostaną zresetowane.  Nowy użytkownik będzie mógł przejąć wszystkie nieprzejęte klucze i wyświetlić poprzednio zażądane klucze, ale limity **nie** są resetowane.  W przypadku organizacji z umowami Enterprise Agreement (EA) wszystkie korzyści, które były używane przez oryginalnego użytkownika, takie jak szkolenia Pluralsight, zostaną zresetowane. 
@@ -36,7 +36,7 @@ Obejrzyj ten film wideo lub przeczytaj, aby dowiedzieć się, jak usunąć przyp
    > Jeśli dodano przypisania subskrypcji za pomocą Azure Active Directory grup zabezpieczeń, usunięcie aktualizacji w portalu administracyjnym może potrwać do 24 godzin.  Zapoznaj się z [naszym artykułem](assign-license-bulk.md#use-azure-active-directory-groups-to-assign-subscriptions) , aby uzyskać więcej informacji na temat używania grup Azure Active Directory do zarządzania subskrypcjami. 
 
 ## <a name="resources"></a>Zasoby
-- [Obsługa subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)
+- [Obsługa subskrypcji](https://aka.ms/vsadminhelp)
 
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)

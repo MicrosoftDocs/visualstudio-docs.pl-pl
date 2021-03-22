@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
-ms.date: 02/18/2021
+ms.date: 03/21/2021
 ms.topic: how-to
 description: Dowiedz się, jak Administratorzy mogą edytować przypisania subskrypcji.
-ms.openlocfilehash: f24c949224d895f4cc2926ab30db637835e7886c
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: b1779b80cc295e680ff1856181be42a6390fe25b
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249796"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776873"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Edytuj przypisania subskrypcji programu Visual Studio
 Administrator subskrypcji może wprowadzać zmiany w subskrypcjach przypisanych do osób w organizacji.  W tym artykule omówiono typy zmian, które można wprowadzić, i przedstawiono niezbędne kroki.
@@ -56,7 +56,7 @@ Obejrzyj ten film wideo lub przeczytaj, aby dowiedzieć się, jak edytować wiel
 5. Po przesłaniu pliku zobaczysz powiadomienie informujące o pomyślnym zapoznaniu się z nim. W tym momencie zmiany zostaną odzwierciedlone w informacjach o subskrybencie.
 
 ## <a name="resources"></a>Zasoby
-- [Obsługa subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)
+- [Obsługa subskrypcji](https://aka.ms/vsadminhelp)
 
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)

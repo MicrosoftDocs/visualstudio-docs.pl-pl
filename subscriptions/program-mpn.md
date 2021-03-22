@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 7f4399d8-41da-41e5-a666-acc34958b8c0
-ms.date: 03/09/2020
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: Szczegóły dotyczące subskrypcji, których dotyczą reguły, oraz liczbę subskrypcji oferowanych w programie MPN.
-ms.openlocfilehash: 47b13147e87880ea90c07ee4746d5359571719b0
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: eab7779c7aedbbe7116a6227b16b6b3f4f15471c
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005836"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776756"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Subskrypcje programu Visual Studio oferowane partnerom w Microsoft Partner Network (MPN)
 
@@ -35,7 +35,7 @@ Gdy Partner uzyska kompetencje — na poziomie Silver lub Gold — partnerzy uzy
 | Projektowanie aplikacji                     | 5 Visual Studio Enterprise subskrypcje                  | 25 Visual Studio Enterprise subskrypcji               |
 | Zarządzanie relacjami z klientami w chmurze      | 5 Visual Studio Enterprise subskrypcje                  | 25 Visual Studio Enterprise subskrypcji               |
 | Platforma w chmurze                              | 5 Visual Studio Enterprise subskrypcje                  | 25 Visual Studio Enterprise subskrypcji               |
-| Produktywność chmury                          | 5 Visual Studio Enterprise subskrypcje                  | 25 Visual Studio Enterprise subskrypcji               |
+| Produktywność w chmurze                          | 5 Visual Studio Enterprise subskrypcje                  | 25 Visual Studio Enterprise subskrypcji               |
 | DevOps                                      | 5 Visual Studio Enterprise subskrypcje                  | 25 Visual Studio Enterprise subskrypcji                |
 
 Bez względu na liczbę uprawnień uzyskiwanych przez partnera, liczba subskrypcji programu Visual Studio jest ograniczona w następujący sposób:
@@ -71,15 +71,14 @@ To wewnętrzne ograniczenie tylko do użycia polega na tym, że partnerzy nie mo
 W przypadku subskrypcji programu Visual Studio oferowanych za pośrednictwem usługi MPN licencjonowany użytkownik musi zalogować się do programu Visual Studio przy użyciu tej samej tożsamości/nazwy logowania, która została użyta w celu aktywowania subskrypcji programu Visual Studio. Klucze produktów nie są oferowane w celu odblokowania produktu. Logowanie jest jedyną opcją dla uruchamiania programu Visual Studio. Subskrybenci programu Visual Studio mogą działać w trybie offline przez maksymalnie 30 dni, zanim program Visual Studio przestanie działać. Podczas pracy w trybie online program Visual Studio dyskretnie odświeża stan licencji użytkownika, aby upewnić się, że subskrypcja jest nadal ważna.
 
 ## <a name="resources"></a>Zasoby
-
 - [Przewodnik po programach Microsoft Partner Network](https://assets.microsoft.com/MPN-MAPS-Product-Usage-Guide.pdf?tpqid=300-000121)
 - [Przypisywanie subskrypcji programu Visual Studio do pracowników MPN](manage-mpn-subscriptions.md)
 - [Warunki użytkowania](https://www.microsoft.com/useterms/) — subskrypcje programu Visual Studio oferowane za pośrednictwem usługi MPN podlegają subskrypcji programu Visual Studio nieprzeznaczonej do odsprzedaży (NFR).
-
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji programu Visual Studio](https://aka.ms/vssubscriberhelp).
 
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Azure DevOps documentation (Dokumentacja usługi Azure DevOps)](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)
 - [Dokumentacja Microsoft 365](/microsoft-365/)
 

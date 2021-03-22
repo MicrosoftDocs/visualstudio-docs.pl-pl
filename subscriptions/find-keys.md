@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: cabuschl
 ms.assetid: da8df006-4896-4ff9-b487-698d78deabc3
-ms.date: 02/18/2021
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: Dowiedz się, jak znaleźć, zatwierdzić i wyeksportować klucze produktów w subskrypcjach programu Visual Studio
-ms.openlocfilehash: 5e055295e76ee91dbaf641256b8b7e93a530fcfb
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: 2e74269c3e5e49e776b00484de790472030dc1c1
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249268"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776574"
 ---
 # <a name="finding-and-claiming-product-keys-in-visual-studio-subscriptions"></a>Znajdowanie i pojmowanie kluczy produktów w subskrypcjach programu Visual Studio
 W tym artykule opisano sposób lokalizowania, zgłaszania i eksportowania kluczy produktów z programu https://my.visualstudio.com/productkeys .  Aby uzyskać więcej informacji na temat aktywowania produktu przy użyciu klucza, wersji programu Key i licencji zbiorczych oraz dziennych limitów roszczeń dotyczących klucza produktu, przejdź do [omówienia kluczy produktów](product-keys.md).
@@ -67,7 +67,7 @@ Możesz wyeksportować listę przejętych kluczy.  Obejmuje to duże wybór stat
 Aby wyeksportować klucze, wybierz link **Eksportuj wszystkie klucze** z prawej strony na stronie klucze produktów.  Zostanie utworzony plik XML zatytułowany KeysExport.xml i można wybrać opcję otwarcia lub zapisania pliku.  Otwarcie tego pliku jest możliwe przy użyciu aplikacji obsługującej pliki XML.  Na przykład możesz otworzyć ten plik jako skoroszyt tylko do odczytu w programie Excel.
 
 ## <a name="resources"></a>Zasoby
-- [Obsługa subskrypcji programu Visual Studio](https://my.visualstudio.com/gethelp)
+- [Obsługa subskrypcji programu Visual Studio](https://aka.ms/vssubscriberhelp)
 
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)

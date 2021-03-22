@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: a747100c-6f08-41a4-aaad-05099741742b
-ms.date: 12/02/2020
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: Dowiedz się, jak Administratorzy mogą rozwiązywać nadmiernie przydzieloną subskrypcje
-ms.openlocfilehash: c2876223d2aa4f8da5f267595a193a2fecc3ace2
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: d92671a3478fd8044b959c56f3201df5ff5c5a85
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537750"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776561"
 ---
 # <a name="over-allocated-subscriptions"></a>Nadmiernie przydzieloną subskrypcje
 Czasami zamówienia są zmieniane po dodaniu subskrybentów, co może spowodować, że masz więcej przypisanych subskrypcji niż licencje należące do firmy. Jest to nazywane "nadwyżką alokacji".  
@@ -34,7 +34,7 @@ Istnieje kilka sposobów rozwiązywania nadmiernych alokacji:
 - Usuń niektóre przypisania subskrypcji.  (Nie uniemożliwi to potrzeby płatności w rocznym wykorzystaniu subskrypcji, co ma na celu wyróżnienie w tym przypadku maksymalnej liczby przypisanych subskrypcje w dowolnym momencie w roku).
 
 ## <a name="billing-and-true-up"></a>Rozliczenia i prawdziwe
-Jeśli Twoja organizacja ma Umowa Enterprise (EA), Administratorzy mogą przypisywać subskrypcje bez ich zakupu i uregulować je później za pomocą procesu uzgadniania znanego jako "true-up".  Po przekroczeniu przydziału organizacja będzie rozliczana za maksymalną liczbę subskrypcji przypisanych do użytkowników podczas "prawdziwej konfiguracji".  Ta wartość jest prawdziwa, nawet jeśli nie masz już maksymalnej liczby subskrypcji przypisanych w czasie rzeczywistym.  Aby dowiedzieć się więcej o monitorowaniu maksymalnego użycia, przejdź do tematu [maksymalne użycie](maximum-usage.md) .
+Jeśli Twoja organizacja ma Enterprise Agreement (EA), Administratorzy mogą przypisywać subskrypcje bez ich zakupu i uregulować je później za pomocą procesu uzgadniania znanego jako "true-up".  Po przekroczeniu przydziału organizacja będzie rozliczana za maksymalną liczbę subskrypcji przypisanych do użytkowników podczas "prawdziwej konfiguracji".  Ta wartość jest prawdziwa, nawet jeśli nie masz już maksymalnej liczby subskrypcji przypisanych w czasie rzeczywistym.  Aby dowiedzieć się więcej o monitorowaniu maksymalnego użycia, przejdź do tematu [maksymalne użycie](maximum-usage.md) .
 
 
 ## <a name="see-also"></a>Zobacz też
@@ -45,4 +45,4 @@ Jeśli Twoja organizacja ma Umowa Enterprise (EA), Administratorzy mogą przypis
 
 ## <a name="next-steps"></a>Następne kroki
 - Dowiedz się więcej o zarządzaniu [subskrypcjami programu Visual Studio za pomocą usługi GitHub Enterprise](assign-github.md).
-- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://aka.ms/vsadminhelp)programu Visual Studio.
