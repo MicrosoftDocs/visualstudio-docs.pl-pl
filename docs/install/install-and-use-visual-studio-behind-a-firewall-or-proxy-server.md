@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 44af5c5a00e1ca26eb545b0973090486f6d320ea
-ms.sourcegitcommit: 99b66b0f4ced46ead0b2506a103f974f40cc0076
+ms.openlocfilehash: b1452976a2710026b71e89614e776134e8a36ae1
+ms.sourcegitcommit: 20f546a0b13b56e7b0da21abab291d42a5ba5928
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103295707"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104884125"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalowanie i używanie programu Visual Studio i usług platformy Azure za zaporą lub serwerem proxy
 
@@ -97,7 +97,7 @@ Aby mieć pewność, że masz dostęp do wszystkiego, czego potrzebujesz, gdy ko
 | Docelowe<br> Powiadomienie <br>Usługa | targetednotifications-tm.trafficmanager.net <br><br>www.research.net | 443<br><br>443 | Służy do filtrowania globalnej listy powiadomień do listy, która ma zastosowanie tylko do określonych typów maszyn/scenariuszy użycia |
 | Wewnętrzny <br>sprawdzenie aktualizacji | marketplace.visualstudio.com<br><br>&#42;. windows.net <br>&#42;. microsoftonline.com <br>&#42;. live.com | 443 | Służy do dostarczania powiadomień, gdy dostępne jest aktualizacje z zainstalowanym rozszerzeniem <br><br> Używane jako lokalizacja logowania |
 | Projekt AI <br>Integracja | az861674.vo.msecnd.net | 443<br> | Służy do konfigurowania nowych projektów w celu wysyłania danych użycia do zarejestrowanego konta Application Insights |
-| Soczewki kodu | codelensprodscus1su0. app.<br>codelens.visualstudio.com | 443 | Służy do przekazywania informacji w edytorze o momencie ostatniej aktualizacji pliku, osi czasu zmian, elementów roboczych, do których te zmiany są skojarzone, autorów itd. |
+| Soczewki kodu | codelensprodscus1su0.app.<br>codelens.visualstudio.com | 443 | Służy do przekazywania informacji w edytorze o momencie ostatniej aktualizacji pliku, osi czasu zmian, elementów roboczych, do których te zmiany są skojarzone, autorów itd. |
 | Eksperymentalne <br>Włączanie funkcji | visualstudio-devdiv-c2s.msedge.net | 80 | Służy do uaktywniania eksperymentalnych nowych funkcji lub zmian funkcji |
 | Tożsamość "znaczek" <br>(nazwa użytkownika i awatar)<br>oraz <br>Ustawienia roamingu | app.vssps.visualstudio.com <br><br>app.vsspsext.visualstudio.com<br><br>app.vssps.visualstudio.com<br><br> ns-sb2-prod-ch1-002.cloudapp.net <br><br>az700632.vo.msecnd.net<br><br>api.vstsusers.visualstudio.com/profiles/* | 443 | Służy do wyświetlania nazwy i awatara w środowisku IDE <br><br> Służy do upewnienia się, że ustawienie zmienia dostęp z jednego komputera do drugiego |
 | Ustawienia zdalne | az700632.vo.msecnd.net | 443 | Służy do wyłączania rozszerzeń, które są znane, aby spowodować problemy w programie Visual Studio |
@@ -113,8 +113,8 @@ Aby mieć pewność, że masz dostęp do wszystkiego, czego potrzebujesz, gdy ko
 | Sieć Web pakietu Office <br>dodatek <br> Manifest <br>Weryfikacja <br>Usługa | verificationservice.osi.office.net | https/443 | Służy do sprawdzania poprawności manifestów dla dodatków sieci Web pakietu Office |
 | SharePoint i <br>Dodatki pakietu Office | sharepoint.com<br> microsoft.com/microsoft-365<br> microsoftonline.com <br> outlook.com | https/443 | Służy do publikowania i testowania dodatków programu SharePoint i pakietu Office w usłudze SharePoint Online i Microsoft 365 |
 | Menedżer przepływów pracy <br>Usługa testowa<br> Host | | http/12292 | Reguła zapory, która jest tworzona automatycznie dla testowania dodatków programu SharePoint przy użyciu przepływów pracy |
-| Zbierane automatycznie <br>Statystyka niezawodności <br>i inne <br>Obsługa klienta <br>Programy poprawy jakości obsługi klienta (CEIP)<br> dla zestawu Azure SDK i <br>dla narzędzi SQL <br><br> | vortex.data.microsoft.com<br> <br>dc.services.visualstudio.com | https/443 | Służy do wysyłania statystyk dotyczących niezawodności (danych awarii/nieodpowiadających) od użytkownika do firmy Microsoft. Rzeczywiste zrzuty awarii/braku odpowiedzi będą nadal przekazywane, Jeśli Raportowanie błędów systemu Windows jest włączona; tylko informacje statystyczne zostaną pominięte; <br>Służy do ujawniania anonimowych wzorców użycia rozszerzenia zestawu SDK narzędzi platformy Azure do programu Visual Studio oraz dla wzorców użycia narzędzi SQL dla programu Visual Studio |
-| Visual Studio <br> Obsługa klienta <br>Program poprawy jakości obsługi klienta (CEIP) <br><br>PerfWatson.exe | vortex.data.microsoft.com<br>dc.services.visualstudio.com<br>visualstudio-devdiv-c2s.msedge.net<br>az667904.vo.msecnd.net <br>scus-breeziest-in.cloudapp.net<br> | https/443 | Służy do zbierania anonimowych wzorców użycia i dzienników błędów <br><br>Służy do śledzenia problemów z blokowaniem interfejsu użytkownika |
+| Zbierane automatycznie <br>Statystyka niezawodności <br>i inne <br>Obsługa klienta <br>Programy poprawy jakości obsługi klienta (CEIP)<br> dla zestawu Azure SDK i <br>dla narzędzi SQL <br><br> | vortex.data.microsoft.com<br> <br>dc.services.visualstudio.com | https/443 | Służy do wysyłania statystyk dotyczących niezawodności (danych awarii/nieodpowiadających) od użytkownika do firmy Microsoft. Rzeczywiste zrzuty awarii/braku odpowiedzi będą nadal przekazywane, Jeśli Raportowanie błędów systemu Windows jest włączona; tylko informacje statystyczne zostaną pominięte; <br>Służy do ujawniania wzorców użycia rozszerzenia zestawu SDK narzędzi platformy Azure do programu Visual Studio oraz dla wzorców użycia dla narzędzi SQL dla programu Visual Studio |
+| Visual Studio <br> Obsługa klienta <br>Program poprawy jakości obsługi klienta (CEIP) <br><br>PerfWatson.exe | vortex.data.microsoft.com<br>dc.services.visualstudio.com<br>visualstudio-devdiv-c2s.msedge.net<br>az667904.vo.msecnd.net <br>scus-breeziest-in.cloudapp.net<br> | https/443 | Służy do zbierania wzorców użycia i dzienników błędów <br><br>Służy do śledzenia problemów z blokowaniem interfejsu użytkownika |
 | Tworzenie i<br>Zarządzanie <br>Zasoby platformy Azure | management.azure.com <br>management.core.windows.net | https/443 | Służy do tworzenia usługi Azure Websites lub innych zasobów w celu obsługi publikowania aplikacji sieci Web, Azure Functions lub zadań WebJob |
 | Zaktualizowano narzędzia do publikacji w sieci Web <br>sprawdzenia i rozszerzenie <br>zalecenia | marketplace.visualstudio.com | https/443 | Służy do sprawdzania dostępności zaktualizowanych narzędzi publikacji. Jeśli ta wartość jest wyłączona, możliwe jest, że zalecane rozszerzenie publikacji w sieci Web nie może być wyświetlane |
 | Zaktualizowano zasób platformy Azure <br>Informacje o punkcie końcowym tworzenia | \*.blob.core.windows.net | https/443 | Służy do aktualizowania punktów końcowych używanych do tworzenia zasobów platformy Azure dla niektórych usług platformy Azure. Jeśli ta wartość jest wyłączona, zamiast tego są używane ostatnio pobierane lub wbudowane lokalizacje punktów końcowych |

@@ -11,12 +11,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: ab5ddea8ddb3fdd741f4df3b3b53f4239d016049
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 81311e9dea2c5367b44cdf2cc8e2327a8aff5617
+ms.sourcegitcommit: 20f546a0b13b56e7b0da21abab291d42a5ba5928
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928983"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104884112"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Instrukcje: uruchamianie autonomicznej aplikacji .NET Framework z profilerem w celu zbierania danych współbieżności przy użyciu wiersza polecenia
 W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzi wiersza polecenia narzędzia profilowania do uruchamiania .NET Framework autonomicznej aplikacji (klienta) i zbierania danych współbieżności procesu i wątku
@@ -39,7 +39,7 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
 
    - Opcja [/Start](../profiling/start.md) inicjuje profiler.
 
-     | | |
+     | Polecenie | Opis |
      |-------------------------------------| - |
      | **/Start: współbieżność** | Umożliwia zbieranie danych rywalizacji o zasoby i wykonywanie wątków. |
      | **/Start: współbieżność, resourceonly** | Włącza zbieranie tylko danych rywalizacji o zasoby. |

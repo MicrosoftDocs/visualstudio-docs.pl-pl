@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 004427ced7d18d9a5af5c863172416fd8637aa69
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07ecc9a171cf6c0ca254ddbf284f116545ddd0f0
+ms.sourcegitcommit: 20f546a0b13b56e7b0da21abab291d42a5ba5928
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536867"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104884086"
 ---
 # <a name="how-visual-studio-builds-containerized-apps"></a>Jak program Visual Studio umożliwia tworzenie aplikacji konteneryzowanych
 
@@ -107,7 +107,7 @@ Aby debugowanie działało w kontenerach, program Visual Studio używa mapowania
 
 |Wolumin|Opis|
 |-|-|
-| **Zdalny debuger** | Zawiera bity wymagane do uruchomienia debugera w kontenerze w zależności od typu projektu. Jest to wyjaśnione w więcej |Szczegóły w sekcji [debugowanie](#debugging) .
+| **Zdalny debuger** | Zawiera bity wymagane do uruchomienia debugera w kontenerze w zależności od typu projektu. Szczegółowo wyjaśniono w sekcji [debugowanie](#debugging) .|
 | **Folder aplikacji** | Zawiera folder projektu, w którym znajduje się pliku dockerfile.|
 | **Folder źródłowy** | Zawiera kontekst kompilacji, który jest przesyłany do poleceń platformy Docker.|
 | **Foldery pakietów NuGet** | Zawiera pakiety NuGet i foldery rezerwowe, które są odczytywane z pliku *obj \{ }. csproj. NuGet. g. props* w projekcie. |

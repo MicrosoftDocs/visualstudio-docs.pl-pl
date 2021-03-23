@@ -17,12 +17,12 @@ ms.author: joshuapa
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 11c9384d03971f475abbe680f6731d2757cbb195
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ec309be7fbeb81951af73517412f36f7b28bc82f
+ms.sourcegitcommit: 20f546a0b13b56e7b0da21abab291d42a5ba5928
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935303"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104884151"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4
 
@@ -352,7 +352,7 @@ Przydatną funkcją szablonów jest to, że wyglądają bardzo podobnie do gener
 
 4. Sprawdź następujące właściwości pliku **TT** :
 
-   | | |
+   |Właściwość |Ustawienie |
    |-|-|
    | **Niestandardowe narzędzie =** | **TextTemplatingFileGenerator** |
    | **Akcja kompilacji =** | **Brak** |
