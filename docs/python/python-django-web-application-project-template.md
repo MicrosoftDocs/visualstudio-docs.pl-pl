@@ -10,17 +10,20 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0193256edb4a55285e8017a56fe7249ef5d60362
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 462c66229b6f28d281bf03650e4d22d0d1dab64f
+ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912395"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104806046"
 ---
 # <a name="django-web-project-template"></a>Szablon projektów internetowych Django
-
+::: moniker range="vs-2017"
 [Django](https://www.djangoproject.com/) to struktura języka Python wysokiego poziomu przeznaczona do szybkiego, bezpiecznego i skalowalnego programowania w sieci Web. Obsługa języka Python w programie Visual Studio oferuje kilka szablonów projektów służących do konfigurowania struktury aplikacji sieci Web opartej na Django. Aby użyć szablonu w programie Visual Studio, wybierz pozycję **plik**  >  **Nowy**  >  **projekt**, wyszukaj ciąg "Django", a następnie wybierz pozycję z **pustego projektu sieci Web Django**, **Django projektu** sieci Web i **sondowania Django szablonów projektu sieci Web** . Zobacz [samouczek uczenie Django](learn-django-in-visual-studio-step-01-project-and-solution.md) , aby zapoznać się z przewodnikiem dotyczącym wszystkich szablonów.
-
+::: moniker-end
+::: moniker range=">=vs-2019"
+[Django](https://www.djangoproject.com/) to struktura języka Python wysokiego poziomu przeznaczona do szybkiego, bezpiecznego i skalowalnego programowania w sieci Web. Obsługa języka Python w programie Visual Studio oferuje kilka szablonów projektów służących do konfigurowania struktury aplikacji sieci Web opartej na Django. Aby użyć szablonu w programie Visual Studio, wybierz pozycję **plik**  >  **Nowy**  >  **projekt**, wyszukaj ciąg "Django", a następnie wybierz pozycję z szablonów projektu sieci Web programu **Django** i **Django** . Zobacz [samouczek uczenie Django](learn-django-in-visual-studio-step-01-project-and-solution.md) , aby zapoznać się z przewodnikiem dotyczącym wszystkich szablonów.
+::: moniker-end
 Program Visual Studio oferuje pełną funkcję IntelliSense dla projektów Django:
 
 - Zmienne kontekstowe zostały przesłane do szablonu:

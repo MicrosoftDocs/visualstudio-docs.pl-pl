@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e77d4ea1d46914962f0791af91ad6c1efe21825c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ca82beef26f897b2f5d3a145c968c11efaabc294
+ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942519"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104806059"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Samouczek: Rozpoczynanie pracy z platformą sieci Web w programie Visual Studio
 
@@ -24,16 +24,27 @@ ms.locfileid: "99942519"
 
 Kolba jest nazywana strukturą "mikro", ponieważ nie udostępnia bezpośrednio funkcji, takich jak Walidacja formularza, Abstrakcja bazy danych, uwierzytelnianie i tak dalej. Takie funkcje są udostępniane przez specjalne pakiety języka Python nazywane *rozszerzeniami* kolb. Rozszerzenia integrują się bezproblemowo z kolbą, tak aby pojawiły się tak, jakby znajdowały się one częścią kolby. Na przykład sama Kolba nie zapewnia aparatu szablonu strony. Tworzenia szablonów jest udostępniana przez rozszerzenia, takie jak Jinja i jade, jak pokazano w tym samouczku.
 
-Z tego samouczka dowiesz się, jak wykonywać następujące czynności:
-
-> [!div class="checklist"]
-> - Tworzenie projektu kolby podstawowej w repozytorium git przy użyciu szablonu "pusty Kolba" projekt sieci Web (krok 1)
-> - Tworzenie aplikacji do kolby z jedną stroną i renderowanie tej strony przy użyciu szablonu (krok 2)
-> - Obsługiwanie plików statycznych, dodawanie stron i używanie dziedziczenia szablonów (krok 3)
-> - Użyj szablonu projektu sieci Web w celu utworzenia aplikacji z wieloma stronami i rozbudowanym projektem (krok 4)
-> - Użyj szablonu projektu sieci Web kolby sondy do utworzenia aplikacji sondowania korzystającej z różnych opcji magazynu (Azure Storage, MongoDB lub pamięci).
+::: moniker range="vs-2017"
+Ten samouczek zawiera informacje na temat wykonywania następujących czynności:
+- Tworzenie projektu kolby podstawowej w repozytorium git przy użyciu szablonu "pusty Kolba" projekt sieci Web (krok 1)
+- Tworzenie aplikacji do kolby z jedną stroną i renderowanie tej strony przy użyciu szablonu (krok 2)
+- Obsługiwanie plików statycznych, dodawanie stron i używanie dziedziczenia szablonów (krok 3)
+- Użyj szablonu projektu sieci Web w celu utworzenia aplikacji z wieloma stronami i rozbudowanym projektem (krok 4)
+- Użyj szablonu projektu sieci Web kolby sondy do utworzenia aplikacji sondowania korzystającej z różnych opcji magazynu (Azure Storage, MongoDB lub pamięci).
 
 W trakcie wykonywania tych kroków utworzysz pojedyncze rozwiązanie programu Visual Studio, które zawiera trzy oddzielne projekty. Projekt można utworzyć przy użyciu różnych szablonów projektów kolb, które są dołączone do programu Visual Studio. Utrzymując projekty w tym samym rozwiązaniu, można łatwo przełączać się między różnymi plikami do porównania.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Ten samouczek zawiera informacje na temat wykonywania następujących czynności:
+- Tworzenie projektu kolby podstawowej w repozytorium git przy użyciu szablonu "pusty Kolba" projekt sieci Web (krok 1)
+- Tworzenie aplikacji do kolby z jedną stroną i renderowanie tej strony przy użyciu szablonu (krok 2)
+- Obsługiwanie plików statycznych, dodawanie stron i używanie dziedziczenia szablonów (krok 3)
+- Użyj szablonu projektu sieci Web w celu utworzenia aplikacji z wieloma stronami i rozbudowanym projektem (krok 4)
+
+W trakcie wykonywania tych kroków utworzysz pojedyncze rozwiązanie programu Visual Studio, które zawiera dwa oddzielne projekty. Projekt można utworzyć przy użyciu różnych szablonów projektów kolb, które są dołączone do programu Visual Studio. Utrzymując projekty w tym samym rozwiązaniu, można łatwo przełączać się między różnymi plikami do porównania.
+::: moniker-end
 
 > [!Note]
 > Ten samouczek różni się od [przewodnika Szybki Start](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json) w tym samouczku, aby dowiedzieć się więcej o kolbie, a także jak korzystać z różnych szablonów projektu kolb, które zapewniają bardziej obszerny punkt wyjścia dla własnych projektów. Na przykład szablony projektu automatycznie instalują pakiet do kolby podczas tworzenia projektu, a nie wymagają ręcznego instalowania pakietu, jak pokazano w przewodniku Szybki Start.

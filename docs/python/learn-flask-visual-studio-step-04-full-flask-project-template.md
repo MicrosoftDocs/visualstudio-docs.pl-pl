@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ef9154a34ddd08e7e0a4b9434f7f748b2603aef4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7926a7983e43545ad47e8bc975f051821c108c18
+ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882872"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104806007"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>Krok 4. Korzystanie z szablonu projektu sieci Web pełnej kolby
 
@@ -229,8 +229,24 @@ block content
 
 ## <a name="next-steps"></a>Następne kroki
 
-> [!div class="nextstepaction"]
-> [Szablon projektu sieci Web kolby sondy](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md)
+::: moniker range="vs-2017"
+- [Szablon projektu sieci Web kolby sondy](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md)
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+> [!Note]
+> Jeśli Twoje rozwiązanie programu Visual Studio zostało zatwierdzone do kontroli źródła w trakcie tego samouczka, teraz jest dobrym terminem do wykonania kolejnego zatwierdzenia. Twoje rozwiązanie powinno być zgodne z kodem źródłowym samouczka w witrynie GitHub: [Microsoft/Python-Sample-vs-Learning-Kolba](https://github.com/Microsoft/python-sample-vs-learning-flask).
+
+Teraz udało Ci się zapoznać się z całością projektu sieci Web "pustej kolby", "/Jade] projektu sieci Web" i "przegląd * * * * [/Jade] projektu sieci Web" w programie Visual Studio. Wiesz już, jak używać widoków, szablonów i routingu oraz jak korzystać z kopii zapasowych magazynów danych. Teraz możesz zacząć korzystać z własnej aplikacji internetowej z dowolnym widokiem i modelami, które są potrzebne.
+
+Uruchamianie aplikacji sieci Web na komputerze deweloperskim to tylko jeden krok w udostępnieniu aplikacji klientom. Następne kroki mogą obejmować następujące zadania:
+
+- Wdróż aplikację sieci Web na serwerze produkcyjnym, takim jak Azure App Service. Zobacz [Publikowanie w Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md).
+
+- Dodaj implementację repozytorium, która używa innego magazynu danych na poziomie produkcyjnym, takiego jak PostgreSQL, MySQL i SQL Server (wszystkie mogą być hostowane na platformie Azure). Możesz również użyć [zestawu Azure SDK dla języka Python](/azure/python/) do pracy z usługami magazynu platformy Azure, takimi jak tabele i obiekty blob, a także Cosmos DB.
+
+- Skonfiguruj potok ciągłej integracji/ciągłego wdrażania w usłudze, takiej jak Azure DevOps. Oprócz pracy z kontrolą źródła (za pośrednictwem Azure Repos lub GitHub lub w innym miejscu) można skonfigurować projekt platformy Azure DevOps, aby automatycznie uruchamiał testy jednostkowe jako wstępnie wymagane dla wydania, a także skonfigurować potok do wdrożenia na serwerze przejściowym w celu przeprowadzenia dodatkowych testów przed wdrożeniem w środowisku produkcyjnym. Ponadto platforma Azure DevOps integruje się z rozwiązaniami do monitorowania, takimi jak App Insights i zamyka cały cykl dzięki narzędziom do planowania Agile. Aby uzyskać więcej informacji, zobacz Tworzenie potoku ciągłej integracji/ciągłego wdrażania [dla języka Python za pomocą Azure DevOps projects](/azure/devops-project/azure-devops-project-python?view=vsts&preserve-view=true) a także ogólnej [dokumentacji usługi Azure DevOps](/azure/devops/?view=vsts&preserve-view=true).
+::: moniker-end
 
 ## <a name="go-deeper"></a>Przejdź głębiej
 

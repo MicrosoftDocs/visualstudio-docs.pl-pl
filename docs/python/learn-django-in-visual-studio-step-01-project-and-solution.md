@@ -11,26 +11,35 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: afde24347237ed3fc87d7a00ebdf21787d78909c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c6bf427f7597b59fc5bb6fb32766134daa5b22bf
+ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942664"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104806072"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Samouczek: Rozpoczynanie pracy z platformą internetową Django w programie Visual Studio
 
 [Django](https://www.djangoproject.com/) to struktura języka Python wysokiego poziomu przeznaczona do szybkiego, bezpiecznego i skalowalnego programowania w sieci Web. Ten samouczek Eksplorowanie struktury Django w kontekście szablonów projektu, które program Visual Studio zapewnia, aby usprawnić Tworzenie aplikacji sieci Web opartych na Django.
 
-Z tego samouczka dowiesz się, jak wykonywać następujące czynności:
+Ten samouczek zawiera informacje na temat wykonywania następujących czynności:
 
-> [!div class="checklist"]
-> - Tworzenie podstawowego projektu Django w repozytorium git przy użyciu szablonu "Blank Django Web Project" (krok 1)
-> - Tworzenie aplikacji Django z jedną stroną i renderowanie tej strony przy użyciu szablonu (krok 2)
-> - Obsługiwanie plików statycznych, dodawanie stron i używanie dziedziczenia szablonów (krok 3)
-> - Korzystanie z szablonu projektu sieci Web Django w celu utworzenia aplikacji z wieloma stronami i wyglądem (krok 4)
-> - Uwierzytelnianie użytkowników (krok 5)
-> - Użyj szablonu projektu sieci Web Django sondy, aby utworzyć aplikację korzystającą z modeli, migracji baz danych i dostosowań do interfejsu administracyjnego (krok 6)
+::: moniker range="vs-2017"
+- Tworzenie podstawowego projektu Django w repozytorium git przy użyciu szablonu "Blank Django Web Project" (krok 1)
+- Tworzenie aplikacji Django z jedną stroną i renderowanie tej strony przy użyciu szablonu (krok 2)
+- Obsługiwanie plików statycznych, dodawanie stron i używanie dziedziczenia szablonów (krok 3)
+- Korzystanie z szablonu projektu sieci Web Django w celu utworzenia aplikacji z wieloma stronami i wyglądem (krok 4)
+- Uwierzytelnianie użytkowników (krok 5)
+- Użyj szablonu projektu sieci Web Django sondy, aby utworzyć aplikację korzystającą z modeli, migracji baz danych i dostosowań do interfejsu administracyjnego (krok 6)
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+- Tworzenie podstawowego projektu Django w repozytorium git przy użyciu szablonu "Blank Django Web Project" (krok 1)
+- Tworzenie aplikacji Django z jedną stroną i renderowanie tej strony przy użyciu szablonu (krok 2)
+- Obsługiwanie plików statycznych, dodawanie stron i używanie dziedziczenia szablonów (krok 3)
+- Korzystanie z szablonu projektu sieci Web Django w celu utworzenia aplikacji z wieloma stronami i wyglądem (krok 4)
+- Uwierzytelnianie użytkowników (krok 5)
+::: moniker-end
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 

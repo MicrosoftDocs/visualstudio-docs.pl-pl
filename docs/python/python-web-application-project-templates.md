@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1f6376978826afc2946cfac25ab635d0b7533dc4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a309ba898c22836fb5c0cebfc390b6c8d7c116c5
+ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939542"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104805994"
 ---
 # <a name="python-web-application-project-templates"></a>Szablony projektu aplikacji sieci Web w języku Python
 
@@ -56,6 +56,7 @@ Wszystkie szablony **\<Framework> projektu sieci Web** tworzą startową aplikac
 | **Przednie projektu sieci Web** | Generuje aplikację, której pliki statyczne są zawarte w folderze *statycznym* . Kod w *views.py* obsługuje routing z szablonami stron za pomocą aparatu jinja znajdującego się w folderze *templates* . Plik *runserver.py* zawiera kod uruchomienia. Zobacz [więcej informacji o kolbie krok 4](learn-flask-visual-studio-step-04-full-flask-project-template.md). |
 | **Jade/projekt sieci Web** | Generuje tę samą aplikację jak dla szablonu **projektu sieci Web** , ale przy użyciu rozszerzenia Jade dla aparatu jinja tworzenia szablonów. |
 
+::: moniker range="vs-2017"
 ### <a name="polls-group"></a>Grupa sond
 
 Szablony **\<framework> projektu sieci Web dotyczące sondowania** tworzą startową aplikację sieci Web, za pomocą której użytkownicy mogą głosować na różnych pytaniach dotyczących sondowania. Każda aplikacja tworzy na podstawie struktury szablonów projektu **sieci Web** , aby użyć bazy danych do zarządzania sondami i odpowiedziami użytkowników. Aplikacje obejmują odpowiednie modele danych i specjalną stronę aplikacji (/Seed), która ładuje sondy z *samples.js* pliku.
@@ -66,6 +67,7 @@ Szablony **\<framework> projektu sieci Web dotyczące sondowania** tworzą start
 | **Projekt sieci Web Django sondowań** | Generuje projekt Django i aplikację Django z trzema stronami i bazą danych programu SQLite. Obejmuje dostosowania interfejsu administracyjnego Django, aby umożliwić uwierzytelnionemu administratorowi tworzenie sond i zarządzanie nimi. Aby uzyskać więcej informacji, zobacz [Szablony Django](python-django-web-application-project-template.md) i [Naucz Django krok 6](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md). |
 | **Projekt sieci Web w kolbie sondowań** | Generuje aplikację, która może być uruchamiana względem bazy danych w pamięci, MongoDB lub Table Storage platformy Azure, która jest konfigurowana przy użyciu `REPOSITORY_NAME` zmiennej środowiskowej. Modele danych i kod magazynu danych znajdują się w folderze *modele* , a plik *Settings.py* zawiera kod umożliwiający określenie, który magazyn danych jest używany. Aplikacja używa aparatu jinja dla szablonów stron. Zobacz [więcej informacji o kolbie krok 5](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md). |
 | **Sonda/projekt sieci Web Jade** | Generuje taką samą aplikację jak w przypadku szablonu **projektu sieci Web kolby sondy** , ale przy użyciu rozszerzenia Jade dla aparatu jinja tworzenia szablonów. |
+::: moniker-end
 
 ## <a name="install-project-requirements"></a>Wymagania dotyczące instalacji projektu
 
