@@ -905,6 +905,8 @@
   items:
     - name: Nowe środowisko Git w programie Visual Studio
       href: ide/git-with-visual-studio.md
+    - name: Jak program Visual Studio ułatwia kontrolę źródła
+      href: ide/git-visual-studio-source-control.md
     - name: Porównaj narzędzia Git i Team Explorer obok siebie
       href: ide/git-team-explorer-feature-comparison.md
 - name: Testowanie >>

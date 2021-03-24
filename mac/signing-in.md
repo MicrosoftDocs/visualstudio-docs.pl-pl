@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 01/21/2020
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
 ms.topic: how-to
-ms.openlocfilehash: 86d701e50b4d9f5b8e4c9af0c736c117cd2e91be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b4c3aa608969d9f62e2d5ab3bd3d98ef79236d9
+ms.sourcegitcommit: 08ee19f260164271e18bdbafe624301508f554ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950532"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104999631"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Zaloguj się do Visual Studio dla komputerów Mac
 
@@ -21,7 +21,7 @@ Zalogowanie się do Visual Studio dla komputerów Mac polega na [tym, jak aktywo
 
 * **Automatycznie łącz się z platformą Azure** w środowisku IDE bez monitowania o poświadczenia dla tego samego konta.
 
-Po uruchomieniu Visual Studio dla komputerów Mac po raz pierwszy zostanie wyświetlony monit o zalogowanie się przy użyciu konto Microsoft. Użyj konto Microsoft, która jest połączona z licencją, której chcesz użyć. Jeśli nie masz konto Microsoft, zapoznaj się z artykułem [Jak mogę zarejestrować się w celu uzyskania konta](https://support.microsoft.com/instantanswers/d18cc497-d839-cf50-dea8-f99c95f2bd16/sign-up-for-a-microsoft-account).
+Po uruchomieniu Visual Studio dla komputerów Mac po raz pierwszy zostanie wyświetlony monit o zalogowanie się przy użyciu konto Microsoft. Użyj konto Microsoft, która jest połączona z licencją, której chcesz użyć. Jeśli nie masz konto Microsoft, zapoznaj się z artykułem [Jak mogę zarejestrować się w celu uzyskania konta](https://support.microsoft.com/account-billing/how-to-create-a-new-microsoft-account-a84675c3-3e9e-17cf-2911-3d56b15c0aaf).
 
 Jeśli użytkownik zdecyduje się na nie logować się bezpośrednio, będzie można użyć kopii ewaluacyjnej przez 30 dni. Po upływie 30 dni musisz się zalogować, aby dalej korzystać z kopii Visual Studio dla komputerów Mac.
 
