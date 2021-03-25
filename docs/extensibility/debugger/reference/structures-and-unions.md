@@ -7,17 +7,17 @@ ms.topic: reference
 helpviewer_keywords:
 - structures [Visual Studio SDK]
 ms.assetid: 9ff0a8f8-1ee6-4fdd-8b80-206436ff589b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b055446e6bdf147c99cf96b48c03bfcfdd2eda2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 055c8972643a94bd8f13aa6e5e6bc5dde600140b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938697"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061475"
 ---
 # <a name="structures-and-unions"></a>Struktury i związki
 Poniżej przedstawiono struktury i związki w zestawie SDK debugowania programu Visual Studio.

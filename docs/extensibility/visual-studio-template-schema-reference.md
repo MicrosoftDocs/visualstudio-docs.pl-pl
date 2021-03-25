@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Visual Studio templates, schema
 - .vstemplate files
 ms.assetid: 6f74a2d5-3811-43d6-8b10-eb5823ad8995
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 458f3245517dd874a086932c65806978b5a1cf85
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 423e92eef6f9b712bd7705acbf9d95d5a01f44f4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925875"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062450"
 ---
 # <a name="visual-studio-template-schema-reference"></a>Odwołanie do schematu szablonu programu Visual Studio
 Ta sekcja zawiera informacje o elementach XML w plikach *. vstemplate* , które są plikami, które przechowują metadane szablonów projektu, szablonów elementów i zestawów początkowych.
@@ -63,7 +63,7 @@ Ta sekcja zawiera informacje o elementach XML w plikach *. vstemplate* , które 
 |[PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md)|--|--|
 |[ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md)|--|--|
 |[Odwołanie](../extensibility/reference-element-visual-studio-templates.md)|Zestaw|--|
-|[Odwołania](../extensibility/references-element-visual-studio-templates.md)|Dokumentacja|--|
+|[Odwołania](../extensibility/references-element-visual-studio-templates.md)|Odwołanie|--|
 |[RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md)|--|--|
 |[RequiredPlatformVersion](../extensibility/requiredplatformversion-element-visual-studio-templates.md)|--|Wersja|
 |[SDKReference](../extensibility/sdkreference-element-visual-studio-templates.md)|--|Pakiet|

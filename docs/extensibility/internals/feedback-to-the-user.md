@@ -10,17 +10,17 @@ helpviewer_keywords:
 - IDE, context
 - IDE, user feedback
 ms.assetid: 2d472a24-3813-4f5f-9783-b491ad8a71ad
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33e52a277f621c80773518ae4b9606d7a2c222db
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4d40ca34ea8d579e85ee56170f621b98a10b89f2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886993"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069637"
 ---
 # <a name="feedback-to-the-user"></a>Opinie do użytkownika
 W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowanym środowisku programistycznym (IDE), opinie wizualne dotyczące dostępnych funkcji opierają się na bieżącym wyborze użytkownika i globalnym kontekście wyboru. W poniższej tabeli wymieniono funkcje dostępne w różnych kontekstach wyboru.

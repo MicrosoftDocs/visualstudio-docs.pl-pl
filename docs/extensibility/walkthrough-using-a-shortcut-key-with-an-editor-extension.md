@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link keystrokes to commands
 ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0f6cb0d3cc0bef03539428bafeff5ae3da64964
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c2d49fa9e858d65529e466f6ed960835ab8c2324
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931269"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061956"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Przewodnik: używanie klawisza skrótu z rozszerzeniem edytora
 Możesz odpowiedzieć na skróty klawiaturowe w rozszerzeniu edytora. W poniższym przewodniku przedstawiono sposób dodawania zakończenia wyświetlania widoku do widoku tekstu przy użyciu klawisza skrótu. Ten przewodnik jest oparty na szablonie edytora autodefiniowania okienka ekranu, który umożliwia dodanie definiowania układu przy użyciu znaku +.
@@ -47,7 +47,7 @@ Możesz odpowiedzieć na skróty klawiaturowe w rozszerzeniu edytora. W poniższ
 this.layer = view.GetAdornmentLayer("PurpleCornerBox");
 ```
 
-W pliku klasy KeyBindingTestTextViewCreationListener.cs Zmień nazwę AdornmentLayer z **KeyBindingTest** na **PurpleCornerBox**:
+W pliku klasy KeyBindingTestTextViewCreationListener. cs Zmień nazwę AdornmentLayer z **KeyBindingTest** na **PurpleCornerBox**:
 
 ```csharp
 [Export(typeof(AdornmentLayerDefinition))]
@@ -259,7 +259,7 @@ Program obsługi poleceń jest implementacją <xref:Microsoft.VisualStudio.Comma
    }
    ```
 
-   7. Skopiuj definicję warstwy zakończenia z pliku *KeyBindingTestTextViewCreationListener.cs* do *KeyBindingCommandHandler.cs* , a następnie usuń plik *KeyBindingTestTextViewCreationListener.cs* :
+   7. Skopiuj definicję warstwy zakończenia z pliku *KeyBindingTestTextViewCreationListener. cs* do *KeyBindingCommandHandler. cs* , a następnie usuń plik *KeyBindingTestTextViewCreationListener. cs* :
 
    ```csharp
    /// <summary>
@@ -276,7 +276,7 @@ Program obsługi poleceń jest implementacją <xref:Microsoft.VisualStudio.Comma
 
 Oryginalny moduł definiowania układu pojawił się w każdym znaku "a" w pliku tekstowym. Teraz, gdy kod został zmieniony w celu dodania zakończenia w odpowiedzi na **+** znak, dodaje znakowanie tylko w wierszu, w którym **+** jest wpisana wartość. Możemy zmienić kod zakończenia tak, aby po każdym z nich pojawił się moduł definiowania układu.
 
-W pliku *KeyBindingTest.cs* Zmień `CreateVisuals()` metodę, aby wykonać iterację we wszystkich wierszach widoku, aby dekorować znak "a".
+W pliku *KeyBindingTest. cs* Zmień `CreateVisuals()` metodę, aby wykonać iterację we wszystkich wierszach w widoku, aby dekorować znak "a".
 
 ```csharp
 private void CreateVisuals(ITextViewLine line)

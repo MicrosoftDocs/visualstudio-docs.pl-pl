@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, fields and interfaces
 ms.assetid: 0328f0e5-2380-4a7a-a872-b547cb775050
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb1f0a0f78b935a3b61596e4dd0b595030640b00
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9f445d31fe995321ad6ec334a5b6eb93570b8875
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970013"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061033"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Pola i interfejsy okna właściwości
 Model wyboru służący do określania, jakie informacje są wyświetlane w oknie **Właściwości** , zależy od okna, które ma fokus w środowisku IDE. Każde okno i obiekt w wybranym oknie może mieć obiekt kontekstu zaznaczenia wypychany do globalnego kontekstu wyboru. Środowisko aktualizuje globalny kontekst wyboru przy użyciu wartości z ramki okna, gdy to okno ma fokus. Gdy fokus zmieni się, oznacza to, że kontekst zaznaczenia.
