@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - debug engines, attaching to programs
 ms.assetid: ad2b7db8-821c-440c-ba07-c55c6a395e0f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1b23cd7c09f3eeac2bfe85de882ff42affaa652
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2f261d6492943ab0b0da878097685ae2773ddff4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920089"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055300"
 ---
 # <a name="attach-directly-to-a-program"></a>Dołącz bezpośrednio do programu
 Użytkownicy, którzy chcą debugować programy w procesie, który jest już uruchomiony, zwykle wykonują ten proces:

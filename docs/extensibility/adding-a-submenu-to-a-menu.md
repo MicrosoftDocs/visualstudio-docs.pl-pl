@@ -10,17 +10,17 @@ helpviewer_keywords:
 - cascading submenus
 - menus, creating cascading submenus
 ms.assetid: 692600cb-d052-40e2-bdae-4354ae7c6c84
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b784cae836f1a5cae520a9650c8f396ccc960a72
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cc6d521e699beb2345ba76e2e617ff749886eee9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951514"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094903"
 ---
 # <a name="add-a-submenu-to-a-menu"></a>Dodawanie podmenu do menu
 Ten przewodnik kompiluje się w demonstracji w oknie [Dodawanie menu do paska menu programu Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) , pokazując sposób dodawania podmenu do menu **TestMenu** .
@@ -85,7 +85,7 @@ Ten przewodnik kompiluje się w demonstracji w oknie [Dodawanie menu do paska me
 
 ## <a name="add-a-command"></a>Dodaj polecenie
 
-1. Otwórz *TestCommand.cs* i Dodaj następujący identyfikator polecenia po ISTNIEJĄCYm identyfikatorze polecenia.
+1. Otwórz *TestCommand. cs* i Dodaj następujący identyfikator polecenia po ISTNIEJĄCYm identyfikatorze polecenia.
 
     ```csharp
     public const int cmdidTestSubCmd = 0x0105;
