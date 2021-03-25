@@ -7,12 +7,12 @@ ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: 0a27535e9c07f87391b3cdfd8440578e36feee9e
-ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
+ms.openlocfilehash: 4478656af7fff4cfd3a0fdafefe623af5811154f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97846818"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068300"
 ---
 # <a name="docker-compose-build-properties"></a>Docker Compose właściwości kompilacji
 
@@ -39,11 +39,12 @@ W poniższej tabeli przedstawiono właściwości programu MSBuild dostępne dla 
 |AdditionalComposeFilePaths|dcproj|Określa dodatkowe pliki redagowania na liście rozdzielanej średnikami do wysłania do docker-compose.exe dla wszystkich poleceń. Ścieżki względne z pliku projektu platformy Docker (dcproj) są dozwolone.|-|
 |DockerComposeBaseFilePath|dcproj|Określa pierwszą część nazw plików w plikach do redagowania platformy Docker bez rozszerzenia *. yml* . Na przykład: <br>1. DockerComposeBaseFilePath = null/undefined: Użyj podstawowej ścieżki pliku *Docker-Zredaguj*, a pliki będą nazwane *Docker-Compose. yml* i *Docker-Compose. override. yml*<br>2. DockerComposeBaseFilePath = *mydockercompose*: pliki będą nazwane *mydockercompose. yml* i *mydockercompose. override. yml*<br> 3. DockerComposeBaseFilePath = *.. \mydockercompose*: pliki będą mieć jeden poziom. |Docker-Compose|
 |DockerComposeBuildArguments|dcproj|Określa dodatkowe parametry, które mają zostać przekazane do `docker-compose build` polecenia. Na przykład `--parallel --pull` |
-|DockerComposeDownArguments|dcproj|Określa dodatkowe parametry, które mają zostać przekazane do `docker-compose down` polecenia. Na przykład `--timeout 500`|-|  
+|DockerComposeDownArguments|dcproj|Określa dodatkowe parametry, które mają zostać przekazane do `docker-compose down` polecenia. Na przykład `--timeout 500`|-|
+|DockerComposeProjectName| dcproj | Jeśli ta wartość jest określona, zastępuje nazwę projektu dla projektu platformy Docker — tworzenie. | "dockercompose" + wygenerowany automatycznie skrót |
 |DockerComposeProjectPath|CSPROJ lub vbproj|Ścieżka względna do pliku platformy Docker-redagowanie projektu (dcproj). Ustaw tę właściwość podczas publikowania projektu usługi, aby znaleźć skojarzone ustawienia kompilacji obrazu przechowywane w pliku Docker-Compose. yml.|-|
 |DockerComposeUpArguments|dcproj|Określa dodatkowe parametry, które mają zostać przekazane do `docker-compose up` polecenia. Na przykład `--timeout 500`|-|
 |DockerDevelopmentMode|dcproj| Kontroluje, czy jest włączona optymalizacja "Kompiluj-on-host" (debugowanie w trybie szybkim).  Dozwolone wartości są **szybkie** i **regularne**. | Duża |
-|DockerLaunchAction| dcproj | Określa akcję uruchamiania do wykonania na F5 lub CTRL + F5.  Dozwolone wartości to None, LaunchBrowser i LaunchWCFTestClient|Brak|
+|DockerLaunchAction| dcproj | Określa akcję uruchamiania do wykonania na F5 lub CTRL + F5.  Dozwolone wartości to None, LaunchBrowser i LaunchWCFTestClient.|Brak|
 |DockerLaunchBrowser| dcproj | Wskazuje, czy ma zostać uruchomiona przeglądarka. Ignorowany, jeśli określono DockerLaunchAction. | Fałsz |
 |DockerServiceName| dcproj|Jeśli określono DockerLaunchAction lub DockerLaunchBrowser, DockerServiceName jest nazwą usługi, która powinna zostać uruchomiona.  Użyj tej właściwości, aby określić, który z potencjalnie wielu projektów, do których może się odwoływać plik platformy Docker, zostanie uruchomiony.|-|
 |DockerServiceUrl| dcproj | Adres URL, który ma być używany podczas uruchamiania przeglądarki.  Prawidłowe tokeny zastępcze to "{serviceipaddress}", "{serviceport}" i "{Schema}".  Na przykład: {Schema}://{ServiceIPAddress}: {serviceport}|-|

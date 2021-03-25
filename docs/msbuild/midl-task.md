@@ -28,12 +28,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a310cd4428232338ed46a8a54502d9956e73be15
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: eadec17e7c5221f0b169d38b15b9601cec746fa4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932016"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094981"
 ---
 # <a name="midl-task"></a>MIDL — Zadanie
 
@@ -79,7 +79,7 @@ Zawija Microsoft Interface Definition Language narzędzia kompilatora (MIDL), *m
 
      Opcjonalny parametr **ciągu** .
 
-     Określa opcje do przekazania do preprocesora C/C++. Określ rozdzielaną spacją listę opcji preprocesora.
+     Określa opcje do przekazania do preprocesora C/C++. Określ rozdzielaną spacją listę opcji preprocesora. Musi zawierać `/E` opcję.
 
      Aby uzyskać więcej informacji, zobacz opcję **/cpp_opt** w [dokumentacji wiersza polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference).
 

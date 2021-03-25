@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, capability flags
 ms.assetid: a3f6071c-eac8-4bcd-8ffd-8d0a2d24a252
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d626f2390138c7e4e6e2471d285bcda940d7f30
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 12acefb99de787d55bc0f932757dde5ea928c6cb
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882287"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094929"
 ---
 # <a name="capability-flags"></a>Flagi możliwości
 Flagi SCC_CAP_ *XXX* są flagami bitowymi używanymi do wskazywania możliwości wtyczki kontroli źródła. Flagi SCC_EXCAP_ *XXX* są flagami przyrostowymi, które wskazują rozszerzone możliwości i rozwiązują wartości całkowite.
