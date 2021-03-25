@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 03/14/2019
 ms.topic: tutorial
 ms.assetid: f74e1ad1-1ee5-4360-9bd5-d82467b884ca
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e943da6745832cbe59cfe94013650a503265636
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ec465eda5a0bd7d017c3822390d68b43f76b5c47
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903289"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070183"
 ---
 # <a name="tutorial---create-your-first-extension-hello-world"></a>Samouczek — Tworzenie pierwszego rozszerzenia: Hello world
 
@@ -78,7 +78,7 @@ Krok 2. Kliknij prawym przyciskiem myszy projekt (nie rozwiązanie). W menu kont
 
 Krok 3. Wybierz sekcję **rozszerzalność** , a następnie wybierz **polecenie**.
 
-Krok 4. W polu **Nazwa** u dołu wprowadź nazwę pliku, na przykład *Command.cs*.
+Krok 4. W polu **Nazwa** u dołu wpisz nazwę pliku, na przykład *Command. cs*.
 
 ![polecenie niestandardowe](media/hello-world-vsix-command.png)
 
@@ -120,7 +120,7 @@ Krok 2. Zmień `ButtonText` parametr na `Say Hello World!` .
   ...
 ```
 
-Krok 3. Wróć do **Eksplorator rozwiązań** i znajdź plik *Command.cs* . W `Execute` metodzie Zmień ciąg `message` z `string.Format(..)` na `Hello World!` .
+Krok 3. Wróć do **Eksplorator rozwiązań** i Znajdź plik *Command. cs* . W `Execute` metodzie Zmień ciąg `message` z `string.Format(..)` na `Hello World!` .
 
 ```csharp
   ...

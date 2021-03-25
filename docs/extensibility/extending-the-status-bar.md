@@ -8,17 +8,17 @@ helpviewer_keywords:
 - status bars, about status bars
 - status bars, overview
 ms.assetid: f955115c-4c5f-45ec-b41b-365868c5ec0c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7776c7fa35cd7ac06dec60ced3604cb67c96da4a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5ab87f9c8b54d9c31466068668eb8dd5a1857a06
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903198"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070105"
 ---
 # <a name="extend-the-status-bar"></a>Rozwiń pasek stanu
 Aby wyświetlić informacje, można użyć paska stanu programu Visual Studio znajdującego się u dołu IDE.
@@ -36,7 +36,7 @@ Aby wyświetlić informacje, można użyć paska stanu programu Visual Studio zn
 
 1. Utwórz projekt VSIX o nazwie **TestStatusBarExtension** i Dodaj polecenie menu o nazwie **TestStatusBarCommand**.
 
-2. W *TestStatusBarCommand.cs* Zastąp kod metody procedury obsługi polecenia ( `MenuItemCallback` ) następującym:
+2. W *TestStatusBarCommand. cs* Zastąp kod metody procedury obsługi polecenia ( `MenuItemCallback` ) następującym:
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -80,7 +80,7 @@ Aby wyświetlić informacje, można użyć paska stanu programu Visual Studio zn
 
 1. W tej procedurze pokazano, jak zainicjować i zaktualizować pasek postępu.
 
-2. Otwórz plik *TestStatusBarCommand.cs* i Zastąp `MenuItemCallback` metodę następującym kodem:
+2. Otwórz plik *TestStatusBarCommand. cs* i Zastąp `MenuItemCallback` metodę następującym kodem:
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -118,7 +118,7 @@ Aby wyświetlić informacje, można użyć paska stanu programu Visual Studio zn
 
      W tej procedurze zostanie wyświetlona standardowa animacja programu Visual Studio, która przedstawia Kompilowanie projektu lub rozwiązania.
 
-2. Otwórz plik *TestStatusBarCommand.cs* i Zastąp `MenuItemCallback` metodę następującym kodem:
+2. Otwórz plik *TestStatusBarCommand. cs* i Zastąp `MenuItemCallback` metodę następującym kodem:
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)

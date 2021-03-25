@@ -8,17 +8,17 @@ helpviewer_keywords:
 - automation [Visual Studio SDK], implementing project objects
 - project models, automation
 ms.assetid: c8db8fdb-88c1-4b12-86fe-f3c30a18f9ee
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e167a974dde1b98d43f7515581658f1ea549df9d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 506606291996c94ff10514c6c57f83c6e1133862
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896834"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062827"
 ---
 # <a name="project-modeling"></a>Modelowanie projektu
 Następnym krokiem w celu zapewnienia automatyzacji projektu jest zaimplementowanie standardowych obiektów projektu: <xref:EnvDTE.Projects> kolekcja i, `ProjectItems` `Project` <xref:EnvDTE.ProjectItem> obiekty i oraz pozostałe obiekty, które są unikatowe dla implementacji. Te standardowe obiekty są zdefiniowane w pliku Dteinternal. h. Implementacja standardowych obiektów znajduje się w próbce BscPrj. Tych klas można używać jako modeli do tworzenia własnych standardowych obiektów projektu, które obok siebie są obiektami projektów z innych typów projektów.
