@@ -9,17 +9,17 @@ helpviewer_keywords:
 - menus, adding menu controllers to toolbars
 - menu controllers, adding to toolbars
 ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82da331d93a2208b76bb953f3a6a489913c907ac
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 304f4ea11abc332c01603f96b6b67c0bd22e38c6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951527"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060071"
 ---
 # <a name="add-a-menu-controller-to-a-toolbar"></a>Dodawanie kontrolera menu do paska narzędzi
 Ten przewodnik kompiluje się na stronie [Dodawanie paska narzędzi do](../extensibility/adding-a-toolbar-to-a-tool-window.md) przewodnika po oknie narzędzia i pokazuje, jak dodać kontroler menu do paska narzędzi okna narzędzi. Kroki przedstawione w tym miejscu można również zastosować do paska narzędzi, który został utworzony w przewodniku [Dodawanie paska narzędzi](../extensibility/adding-a-toolbar.md) .
@@ -112,7 +112,7 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
 
 ## <a name="implement-the-menu-controller-commands"></a>Implementowanie poleceń kontrolera menu
 
-1. W *TWTestCommandPackageGuids.cs*, Dodaj identyfikatory poleceń dla trzech elementów menu po istniejących identyfikatorach poleceń.
+1. W *TWTestCommandPackageGuids. cs* Dodaj identyfikatory poleceń dla trzech elementów menu po istniejących identyfikatorach poleceń.
 
     ```csharp
     public const int cmdidMCItem1 = 0x130;
@@ -120,7 +120,7 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
     public const int cmdidMCItem3 = 0x132;
     ```
 
-2. W *TWTestCommand.cs* Dodaj następujący kod w górnej części `TWTestCommand` klasy.
+2. W *TWTestCommand. cs* Dodaj następujący kod w górnej części `TWTestCommand` klasy.
 
     ```csharp
     private int currentMCCommand; // The currently selected menu controller command

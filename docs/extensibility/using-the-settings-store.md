@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Settings Store, using
 ms.assetid: 447ec08a-eca5-40b8-89b0-f98fdf3d39a4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 752a912fd9a565e4b3e8dcb5c4c142e8f37dffc5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0a84fa551a4a3ea10b212832c0891fb0d7d19b2f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934041"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060188"
 ---
 # <a name="using-the-settings-store"></a>Korzystanie z magazynu ustawień
 Istnieją dwa rodzaje magazynów ustawień:
@@ -33,12 +33,12 @@ Istnieją dwa rodzaje magazynów ustawień:
 
 1. Każde rozszerzenie programu Visual Studio rozpoczyna się od projektu wdrożenia VSIX, który będzie zawierać zasoby rozszerzenia. Utwórz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projekt VSIX o nazwie `SettingsStoreExtension` . Szablon projektu VSIX można znaleźć w oknie dialogowym **Nowy projekt** w obszarze **Visual C#/rozszerzalność**.
 
-2. Teraz Dodaj niestandardowy szablon elementu polecenia o nazwie **SettingsStoreCommand**. W oknie dialogowym **Dodaj nowy element** przejdź do pozycji **Visual C#/rozszerzalność** i wybierz **polecenie niestandardowe**. W polu **Nazwa** w dolnej części okna Zmień nazwę pliku polecenia na **SettingsStoreCommand.cs**. Aby uzyskać więcej informacji na temat tworzenia polecenia niestandardowego, zobacz [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md)
+2. Teraz Dodaj niestandardowy szablon elementu polecenia o nazwie **SettingsStoreCommand**. W oknie dialogowym **Dodaj nowy element** przejdź do pozycji **Visual C#/rozszerzalność** i wybierz **polecenie niestandardowe**. W polu **Nazwa** w dolnej części okna Zmień nazwę pliku polecenia na **SettingsStoreCommand. cs**. Aby uzyskać więcej informacji na temat tworzenia polecenia niestandardowego, zobacz [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 
 ## <a name="using-the-configuration-settings-store"></a>Korzystanie z magazynu ustawień konfiguracji
  W tej sekcji przedstawiono sposób wykrywania i wyświetlania ustawień konfiguracji.
 
-1. W pliku SettingsStorageCommand.cs Dodaj następujące dyrektywy using:
+1. W pliku SettingsStorageCommand. cs Dodaj następujące dyrektywy using:
 
    ```
    using System.Collections.Generic;

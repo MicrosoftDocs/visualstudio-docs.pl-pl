@@ -8,17 +8,17 @@ helpviewer_keywords:
 - toolbox
 - windows forms
 ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4bb9505ab475da7919a39eb03e7c84b92857db4e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 42dcf30e7c31880357bb95e3858a2c70aa59f174
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902194"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089332"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Tworzenie kontrolki przybornika Windows Forms
 
@@ -46,7 +46,7 @@ Szablon kontrolki przybornika Windows Forms tworzy niezdefiniowaną kontrolkę u
 
 #### <a name="to-build-the-user-interface"></a>Aby skompilować interfejs użytkownika
 
-1. W **Eksplorator rozwiązań** kliknij dwukrotnie pozycję *Counter.cs* , aby otworzyć ją w projektancie.
+1. W **Eksplorator rozwiązań** kliknij dwukrotnie pozycję *Counter. cs* , aby otworzyć ją w projektancie.
 
 2. Usuń **kliknięcie tutaj!** przycisk, który jest uwzględniany domyślnie po dodaniu szablonu elementu formantu Windows Forms przybornika.
 
@@ -163,7 +163,7 @@ Szablon kontrolki przybornika Windows Forms tworzy niezdefiniowaną kontrolkę u
 
 2. W eksperymentalnym wystąpieniu programu Visual Studio Utwórz projekt **aplikacji Windows Forms** .
 
-3. W **Eksplorator rozwiązań** kliknij dwukrotnie pozycję *Form1.cs* , aby otworzyć ją w projektancie, jeśli nie jest jeszcze otwarta.
+3. W **Eksplorator rozwiązań** kliknij dwukrotnie przycisk *Form1. cs* , aby otworzyć go w projektancie, jeśli nie jest jeszcze otwarty.
 
 4. W **przyborniku** `Counter` kontrolka powinna być wyświetlana w sekcji **Ogólne** .
 
@@ -173,7 +173,7 @@ Szablon kontrolki przybornika Windows Forms tworzy niezdefiniowaną kontrolkę u
 
 7. Przeciągnij <xref:System.Windows.Forms.Button> formant do formularza, a następnie ustaw właściwości Nazwa i tekst przycisku na `Test` .
 
-8. Kliknij dwukrotnie przycisk, aby otworzyć *Form1.cs* w widoku kodu i utworzyć procedurę obsługi kliknięcia.
+8. Kliknij dwukrotnie przycisk, aby otworzyć *formularz Form1. cs* w widoku kodu i utworzyć procedurę obsługi kliknięcia.
 
 9. W procedurze obsługi kliknij polecenie Wywołaj `counter1.Increment()` .
 

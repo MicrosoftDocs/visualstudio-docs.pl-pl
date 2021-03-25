@@ -8,17 +8,17 @@ helpviewer_keywords:
 - user interfaces, essentials
 - tool windows, standard
 ms.assetid: 46b2892e-7b2b-4b3f-83a7-b884f1e114ee
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9f17c16d051bdb42750d91971d2be0d3c09b47f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6e5b5615b8b004dcbdfe860ba4d775a3ace177ed
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953087"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105075227"
 ---
 # <a name="extend-and-customize-tool-windows"></a>Rozszerzone i dostosowane okna narzędzi
 Program Visual Studio udostępnia kilka różnych typów okien, na przykład okna narzędzi, okna dokumentów i okna dialogowe. Inne okna, takie jak okno **Właściwości** , okno **dane wyjściowe** i okno **Lista zadań** , są typami okien narzędzi.

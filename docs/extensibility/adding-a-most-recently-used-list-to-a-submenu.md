@@ -9,17 +9,17 @@ helpviewer_keywords:
 - menus, creating MRU list
 - most recently used
 ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdff50655f846ced91e59a93a2d264bb06641ed1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bb238afb0f583f1b913fbd87f4f50e43679ebd7d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951553"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060019"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>Dodaj ostatnio używaną listę do podmenu
 Ten przewodnik jest oparty na pokazach w oknie [Dodawanie podmenu do menu](../extensibility/adding-a-submenu-to-a-menu.md)i pokazuje, jak dodać listę dynamiczną do podmenu. Lista dynamiczna stanowi podstawę tworzenia ostatnio używanej listy (MRU).
@@ -83,14 +83,14 @@ Aby wykonać czynności opisane w tym przewodniku, należy zainstalować Visual 
 
 ## <a name="filling-the-mru-list"></a>Wypełnianie listy MRU
 
-1. W *TestCommandPackageGuids.cs* Dodaj następujące wiersze po istniejących identyfikatorach poleceń w `TestCommandPackageGuids` definicji klasy.
+1. W *TestCommandPackageGuids. cs* Dodaj następujące wiersze po istniejących identyfikatorach poleceń w `TestCommandPackageGuids` definicji klasy.
 
     ```csharp
     public const string guidTestCommandPackageCmdSet = "00000000-0000-0000-0000-00000000"; // get the GUID from the .vsct file
     public const uint cmdidMRUList = 0x200;
     ```
 
-2. W *TestCommand.cs* Dodaj następującą instrukcję using.
+2. W *TestCommand. cs* Dodaj następującą instrukcję using.
 
     ```csharp
     using System.Collections;

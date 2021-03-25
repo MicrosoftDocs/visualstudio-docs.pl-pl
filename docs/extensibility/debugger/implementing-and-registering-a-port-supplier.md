@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], registering port suppliers
 - port suppliers, registering
 ms.assetid: fb057052-ee16-4272-8e16-a4da5dda0ad4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d5639c45fd6dff6702ebc197d46c2eafe482e1d0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 16c1738d4059468384df7ee2e882c20c8b5a0537
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926367"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105059837"
 ---
 # <a name="implement-and-register-a-port-supplier"></a>Implementowanie i rejestrowanie dostawcy portu
 Rolą dostawcy portów jest śledzenie i dostarczanie portów, które z kolei zarządzają procesami. Gdy należy utworzyć port, dostawca portu jest tworzony przy użyciu CoCreate z identyfikatorem GUID dostawcy portu (Menedżer debugowania sesji [SDM] będzie używał dostawcy portu wybranego przez użytkownika lub dostawcę portu określonego przez system projektu). Model SDM następnie wywołuje [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) , aby sprawdzić, czy można dodać dowolne porty. Jeśli można dodać port, żądanie nowego portu jest wymagane przez wywołanie funkcji [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) i przekazanie jej [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) , która opisuje port. `AddPort` zwraca nowy port reprezentowany przez interfejs [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) .

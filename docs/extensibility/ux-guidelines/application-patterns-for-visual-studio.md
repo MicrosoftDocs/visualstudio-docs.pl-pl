@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d647a1dbd3bc6bf99f9803870c7b58ead358b41
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7b19d60294431a08fa26f11bf58606893f392cd1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892596"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060240"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Wzorce aplikacji dla programu Visual Studio
 ## <a name="window-interactions"></a><a name="BKMK_WindowInteractions"></a> Interakcje okna
@@ -117,7 +117,7 @@ Przykłady okien narzędzi do nawigacji z listą to Eksplorator rozwiązań i wy
 
 | Okno narzędzia | Funkcja |
 | --- | --- |
-| Pomoc | Okno, które umożliwia użytkownikom dostęp do różnych metod uzyskiwania pomocy, od "jak?" Filmy wideo na forach MSDN. |
+| Help | Okno, które umożliwia użytkownikom dostęp do różnych metod uzyskiwania pomocy, od "jak?" Filmy wideo na forach MSDN. |
 | Dynamiczna pomoc | Okno narzędzi, które wyświetla linki do tematów pomocy mających zastosowanie do bieżącego zaznaczenia. |
 | Przeglądarka obiektów | Dwukolumnowy zestaw ramek z listą hierarchicznych składników obiektów w lewym okienku oraz właściwościami i metodami obiektu w prawej kolumnie. |
 
@@ -419,7 +419,7 @@ Nie używaj kluczy dostępu dla przycisków **OK**, **Anuluj** lub **Pomoc** . T
 | --- | --- |
 | OK | Enter |
 | Anuluj | Esc |
-| Pomoc | F1 |
+| Help | F1 |
 
 #### <a name="imagery"></a>Obrazach
 Oszczędne używanie obrazów w oknach dialogowych. Nie używaj dużych ikon w oknach dialogowych tylko do wykorzystania miejsca. Używaj obrazów tylko wtedy, gdy są ważną częścią przekazywania wiadomości do użytkownika, takich jak ikony ostrzeżeń lub animacje stanu.

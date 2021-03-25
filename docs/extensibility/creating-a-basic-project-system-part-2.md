@@ -9,17 +9,17 @@ helpviewer_keywords:
 - project system
 - tutorial
 ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ceef95f90d2f54ad7b527ccc8c00322c77491fb7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a60bdc7a6cbd73e85248f6ea5897ad3e56337113
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853155"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089423"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>Tworzenie podstawowego systemu projektu, część 2
 Pierwsze wskazówki w tej serii, [Tworzenie podstawowego systemu projektu, część 1](../extensibility/creating-a-basic-project-system-part-1.md), pokazuje, jak utworzyć podstawowy system projektu. Ten przewodnik jest oparty na podstawowym systemie projektu przez dodanie szablonu programu Visual Studio, strony właściwości i innych funkcji. Przed rozpoczęciem tego procesu należy wykonać pierwszą Instruktaż.
@@ -48,7 +48,7 @@ Przy użyciu szablonu programu Visual Studio (plik *. vstemplate* ) zamiast pods
 
 1. W programie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Otwórz rozwiązanie SimpleProject utworzone w następujący sposób: [Utwórz podstawowy system projektu, część 1](../extensibility/creating-a-basic-project-system-part-1.md).
 
-2. W pliku *SimpleProjectPackage.cs* Znajdź atrybut ProvideProjectFactory. Zastąp drugi parametr (nazwę projektu) wartością null, a czwarty parametr (ścieżka do folderu szablonu projektu) z ". \\ \NullPath "w następujący sposób.
+2. W pliku *SimpleProjectPackage. cs* Znajdź atrybut ProvideProjectFactory. Zastąp drugi parametr (nazwę projektu) wartością null, a czwarty parametr (ścieżka do folderu szablonu projektu) z ". \\ \NullPath "w następujący sposób.
 
     ```
     [ProvideProjectFactory(typeof(SimpleProjectFactory), null,
@@ -100,7 +100,7 @@ Przy użyciu szablonu programu Visual Studio (plik *. vstemplate* ) zamiast pods
 - \<ProjectType>Element nazwa typ projektu w oknie dialogowym **Nowy projekt** . Ta nazwa zastępuje parametr nazwy projektu atrybutu ProvideProjectFactory.
 
   > [!NOTE]
-  > \<ProjectType>Element musi być zgodny z `LanguageVsTemplate` argumentem `ProvideProjectFactory` atrybutu w pliku SimpleProjectPackage.cs.
+  > \<ProjectType>Element musi być zgodny z `LanguageVsTemplate` argumentem `ProvideProjectFactory` atrybutu w pliku SimpleProjectPackage. cs.
 
   \<TemplateContent>Sekcja opisuje te pliki, które są generowane podczas tworzenia nowego projektu:
 
@@ -110,7 +110,7 @@ Przy użyciu szablonu programu Visual Studio (plik *. vstemplate* ) zamiast pods
 
 - *AssemblyInfo.cs*
 
-  Wszystkie trzy pliki mają `ReplaceParameters` ustawioną wartość true, co umożliwia podstawianie parametrów. Plik *program.cs* ma `OpenInEditor` wartość true, co powoduje, że plik zostanie otwarty w edytorze kodu podczas tworzenia projektu.
+  Wszystkie trzy pliki mają `ReplaceParameters` ustawioną wartość true, co umożliwia podstawianie parametrów. Plik *program. cs* ma `OpenInEditor` ustawioną wartość true, co powoduje, że plik zostanie otwarty w edytorze kodu podczas tworzenia projektu.
 
   Aby uzyskać więcej informacji na temat elementów w schemacie szablonu programu Visual Studio, zobacz [Dokumentacja schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md).
 
@@ -285,7 +285,7 @@ Podczas tworzenia projektu przy użyciu szablonu programu Visual Studio w oknie 
 
 ### <a name="to-substitute-project-template-parameters"></a>Aby zastąpić parametry szablonu projektu
 
-1. W pliku *SimpleProjectNode.cs* Usuń `AddFileFromTemplate` metodę.
+1. W pliku *SimpleProjectNode. cs* Usuń `AddFileFromTemplate` metodę.
 
 2. W pliku *\\ Templates\Projects\ConsoleApp\SimpleProject.myproj* Znajdź \<RootNamespace> Właściwość i zmień jej wartość na $safeprojectname $.
 
@@ -319,7 +319,7 @@ Podczas tworzenia projektu przy użyciu szablonu programu Visual Studio w oknie 
 
 5. Utwórz nową aplikację konsolową SimpleProject. (W okienku **typy projektów** wybierz pozycję **SimpleProject**. W obszarze **zainstalowane szablony programu Visual Studio** wybierz pozycję **Aplikacja konsolowa**.
 
-6. W nowo utworzonym projekcie Otwórz *program.cs*. Powinien wyglądać podobnie do poniższego (wartości identyfikatorów GUID w pliku będą się różnić).
+6. W nowo utworzonym projekcie Otwórz *program programu. cs*. Powinien wyglądać podobnie do poniższego (wartości identyfikatorów GUID w pliku będą się różnić).
 
     ```csharp
     using System;
@@ -354,7 +354,7 @@ Strona właściwości utworzona w tej sekcji pozwala modyfikować i zapisywać n
 
 - RootNamespace.
 
-1. W pliku *SimpleProjectPackage.cs* Dodaj ten `ProvideObject` atrybut do `SimpleProjectPackage` klasy:
+1. W pliku *SimpleProjectPackage. cs* Dodaj ten `ProvideObject` atrybut do `SimpleProjectPackage` klasy:
 
     ```
     [ProvideObject(typeof(GeneralPropertyPage))]
@@ -363,7 +363,7 @@ Strona właściwości utworzona w tej sekcji pozwala modyfikować i zapisywać n
 
     Spowoduje to zarejestrowanie klasy strony właściwości `GeneralPropertyPage` z modelem com.
 
-2. W pliku *SimpleProjectNode.cs* Dodaj te dwie zastąpione metody do `SimpleProjectNode` klasy:
+2. W pliku *SimpleProjectNode. cs* Dodaj te dwie zastąpione metody do `SimpleProjectNode` klasy:
 
     ```csharp
     protected override Guid[] GetConfigurationIndependentPropertyPages()
@@ -382,7 +382,7 @@ Strona właściwości utworzona w tej sekcji pozwala modyfikować i zapisywać n
 
     Obie te metody zwracają tablicę identyfikatorów GUID strony właściwości. Identyfikator GUID GeneralPropertyPage jest jedynym elementem w tablicy, dlatego w oknie dialogowym **strony właściwości** zostanie wyświetlona tylko jedna strona.
 
-3. Dodaj plik klasy o nazwie *GeneralPropertyPage.cs* do projektu SimpleProject.
+3. Dodaj plik klasy o nazwie *GeneralPropertyPage. cs* do projektu SimpleProject.
 
 4. Zastąp zawartość tego pliku następującym kodem:
 
@@ -462,7 +462,7 @@ Strona właściwości utworzona w tej sekcji pozwala modyfikować i zapisywać n
 
 6. W eksperymentalnym wystąpieniu Utwórz nową aplikację SimpleProject.
 
-7. Program Visual Studio wywołuje fabrykę projektu, aby utworzyć projekt przy użyciu szablonu programu Visual Studio. Nowy plik *program.cs* zostanie otwarty w edytorze kodu.
+7. Program Visual Studio wywołuje fabrykę projektu, aby utworzyć projekt przy użyciu szablonu programu Visual Studio. Nowy plik *program. cs* zostanie otwarty w edytorze kodu.
 
 8. Kliknij prawym przyciskiem myszy węzeł projektu w **Eksplorator rozwiązań**, a następnie kliknij polecenie **Właściwości**. Wyświetli się okno dialogowe **Strony właściwości**.
 

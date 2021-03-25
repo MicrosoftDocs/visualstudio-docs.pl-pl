@@ -9,17 +9,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], getting started
 - Debugging SDK, getting started
 ms.assetid: d6ce6f43-1409-4bf7-93cd-f3464ca23504
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c3861527a3b049f4c72803f9ef40fe7b4bf0778
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 20591adffbfdfd21d1ff1a77eaade39c165b9c51
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921243"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105059980"
 ---
 # <a name="get-started-with-debugger-extensibility"></a>Wprowadzenie do rozszerzalności debugera
 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]Zawiera informacje potrzebne do tworzenia i dostosowywania składników debugera używanych do debugowania programów z poziomu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] środowiska.

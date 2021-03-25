@@ -8,17 +8,17 @@ helpviewer_keywords:
 - source control plug-ins, callback functions
 - callback functions, source control plug-ins
 ms.assetid: 4a8833f0-6ac0-4ea7-9400-8275aa991468
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42d7c02f2beb24aa92c0a3319c44cce3c8b325b6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7e2e361551fbe03b7f0ef41b19c5d4136aa50472
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911255"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068105"
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>Funkcje wywołania zwrotnego zaimplementowane przez IDE
 Aby zapewnić bezproblemową integrację z zintegrowanym środowiskiem programistycznym (IDE) i zapewniać ujednolicone środowisko użytkownika końcowego, wtyczka do kontroli źródła może korzystać z funkcji wywołania zwrotnego, które są implementowane przez IDE. Wtyczka może wywoływać te funkcje w odpowiednim czasie podczas operacji kontroli źródła, aby przekazać informacje do środowiska IDE; IDE może wyświetlić te informacje jako osadzone elementy w macierzystym interfejsie użytkownika. Użytkownik ma mniej pofragmentowane środowisko w tym scenariuszu, niż w przypadku, gdy wtyczka korzysta z własnego interfejsu użytkownika.

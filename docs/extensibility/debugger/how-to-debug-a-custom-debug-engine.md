@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debug engines, debugging
 - debugging [Debugging SDK], custom debug engines
 ms.assetid: df27a8d6-3938-45ff-b47f-b684e80b38a0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46e9b18f7bb34433ff86fe6a5bede436228d3ff1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ffd21fb08e920209d47ff66feb436f8a83aab53e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99947700"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105059928"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>Instrukcje: debugowanie niestandardowego aparatu debugowania
 Typ projektu uruchamia aparat debugowania (DE) z <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> metody. Oznacza to, że DE jest uruchamiany pod kontrolą wystąpienia kontroli nad [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] typem projektu. Jednak to wystąpienie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nie może debugować elementu de. Poniżej przedstawiono kroki, które pozwalają debugować niestandardowe DE.

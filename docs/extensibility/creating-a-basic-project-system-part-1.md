@@ -9,17 +9,17 @@ helpviewer_keywords:
 - project system
 - tutorial
 ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1b21ef736e69c962db389a7bb1a3eb284ebdd0a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 15d28ff154629d07c643430b210d6106ac99978c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887370"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089436"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Tworzenie podstawowego systemu projektu, część 1
 W programie Visual Studio projekty są kontenerami używanymi przez deweloperów do organizowania plików kodu źródłowego i innych zasobów. Projekty są wyświetlane jako elementy podrzędne rozwiązań w **Eksplorator rozwiązań**. Projekty pozwalają organizować, kompilować, debugować i wdrażać kod źródłowy oraz tworzyć odwołania do usług sieci Web, baz danych i innych zasobów.
@@ -80,7 +80,7 @@ W programie Visual Studio projekty są kontenerami używanymi przez deweloperów
 
 4. Zapisz ikonę i Zamknij Edytor ikon.
 
-5. W folderze *Templates\Projects\SimpleProject* Dodaj element **klasy** o nazwie *program.cs*.
+5. W folderze *Templates\Projects\SimpleProject* Dodaj element **klasy** o nazwie *program. cs*.
 
 6. Zastąp istniejący kod następującymi wierszami.
 
@@ -103,11 +103,11 @@ W programie Visual Studio projekty są kontenerami używanymi przez deweloperów
    ```
 
    > [!IMPORTANT]
-   > To nie jest końcowa postać kodu *program.cs* ; parametry zastępujące będą rozpatrywane w późniejszym kroku. Mogą pojawić się błędy kompilacji, ale o ile plik **BuildAction** ma **zawartość**, powinno być możliwe skompilowanie i uruchomienie projektu w zwykły sposób.
+   > To nie jest końcowa postać kodu *programu program. cs* ; parametry zastępujące będą rozpatrywane w późniejszym kroku. Mogą pojawić się błędy kompilacji, ale o ile plik **BuildAction** ma **zawartość**, powinno być możliwe skompilowanie i uruchomienie projektu w zwykły sposób.
 
 7. Zapisz plik.
 
-8. Skopiuj plik *AssemblyInfo.cs* z folderu *Properties* do folderu *Projects\SimpleProject* .
+8. Skopiuj plik *AssemblyInfo. cs* z folderu *Properties* do folderu *Projects\SimpleProject* .
 
 9. W folderze *Projects\SimpleProject* Dodaj plik XML o nazwie *SimpleProject. webproj*.
 
@@ -156,9 +156,9 @@ W programie Visual Studio projekty są kontenerami używanymi przez deweloperów
 
 11. Zapisz plik.
 
-12. W oknie **Właściwości** Ustaw **akcję kompilacja** z *AssemblyInfo.cs*, *program.cs*, *SimpleProject. ico* i *SimpleProject. webproj* na **zawartość**, a następnie ustaw dla nich opcję **include** na **wartość true**.
+12. W oknie **Właściwości** Ustaw **akcję kompilacja** dla elementów *AssemblyInfo. cs*, *program. cs*, *SimpleProject. ico* i *SimpleProject. webproj* na **zawartość**, a następnie ustaw dla nich opcję **include** na **wartość true**.
 
-    Ten szablon projektu opisuje podstawowy projekt Visual C#, który ma zarówno konfigurację debugowania, jak i konfigurację wydania. Projekt zawiera dwa pliki źródłowe, *AssemblyInfo.cs* i *program.cs* oraz kilka odwołań do zestawów. Po utworzeniu projektu na podstawie szablonu wartość ProjectGuid jest automatycznie zastępowana przez nowy identyfikator GUID.
+    Ten szablon projektu opisuje podstawowy projekt Visual C#, który ma zarówno konfigurację debugowania, jak i konfigurację wydania. Projekt zawiera dwa pliki źródłowe, *AssemblyInfo. cs* i *program. cs* oraz kilka odwołań do zestawów. Po utworzeniu projektu na podstawie szablonu wartość ProjectGuid jest automatycznie zastępowana przez nowy identyfikator GUID.
 
     W **Eksplorator rozwiązań** folder rozwinięte **Szablony** powinien wyglądać następująco:
 
@@ -190,7 +190,7 @@ Templates
        }
    ```
 
-2. Dodaj klasę do folderu Top *SimpleProject* o nazwie *SimpleProjectFactory.cs*.
+2. Dodaj klasę do folderu Top *SimpleProject* o nazwie *SimpleProjectFactory. cs*.
 
 3. Dodaj następujące dyrektywy using:
 
@@ -212,7 +212,7 @@ Templates
 
 ### <a name="to-register-the-project-template"></a>Aby zarejestrować szablon projektu
 
-1. W *SimpleProjectPackage.cs* Dodaj <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> atrybut do `SimpleProjectPackage` klasy w następujący sposób.
+1. W *SimpleProjectPackage. cs* Dodaj <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> atrybut do `SimpleProjectPackage` klasy w następujący sposób.
 
    ```csharp
    [ProvideProjectFactory(    typeof(SimpleProjectFactory),     "Simple Project",
@@ -271,7 +271,7 @@ Templates
 
 ### <a name="to-initialize-the-project-factory"></a>Aby zainicjować fabrykę projektu
 
-1. W pliku *SimpleProjectPackage.cs* Dodaj następującą `using` dyrektywę.
+1. W pliku *SimpleProjectPackage. cs* Dodaj następującą `using` dyrektywę.
 
     ```csharp
     using Microsoft.VisualStudio.Project;
@@ -299,7 +299,7 @@ Templates
     }
     ```
 
-5. W *SimpleProjectFactory.cs*, Dodaj następującą `using` dyrektywę po istniejących `using` dyrektywach.
+5. W *SimpleProjectFactory. cs* Dodaj następującą `using` dyrektywę po istniejących `using` dyrektywach.
 
     ```csharp
     using Microsoft.VisualStudio.Project;
@@ -339,7 +339,7 @@ Templates
 
 ### <a name="to-test-the-project-factory-implementation"></a>Aby przetestować implementację programu Project Factory
 
-1. W pliku *SimpleProjectFactory.cs* Ustaw punkt przerwania w następującym wierszu w `SimpleProjectFactory` konstruktorze.
+1. W pliku *SimpleProjectFactory. cs* Ustaw punkt przerwania w następującym wierszu w `SimpleProjectFactory` konstruktorze.
 
     ```csharp
     this.package = package;
@@ -418,7 +418,7 @@ Templates
 
 ### <a name="to-connect-the-project-factory-class-and-the-node-class"></a>Aby połączyć klasę fabryki projektu i klasę węzła
 
-1. W pliku *SimpleProjectFactory.cs* Dodaj następującą `using` dyrektywę:
+1. W pliku *SimpleProjectFactory. cs* Dodaj następującą `using` dyrektywę:
 
     ```csharp
     using IOleServiceProvider =    Microsoft.VisualStudio.OLE.Interop.IServiceProvider;
@@ -462,7 +462,7 @@ Templates
 
 3. W oknie **Właściwości** Zmień **akcję kompilacja** mapy bitowej na **zasób osadzony**.
 
-4. W *SimpleProjectNode.cs* Dodaj następujące `using` dyrektywy:
+4. W *SimpleProjectNode. cs* Dodaj następujące `using` dyrektywy:
 
    ```csharp
    using System.Drawing;
@@ -564,7 +564,7 @@ Templates
 
 ### <a name="to-substitute-template-parameters"></a>Aby zastąpić parametry szablonu
 
-1. W pliku *SimpleProjectNode.cs* Dodaj następującą `using` dyrektywę.
+1. W pliku *SimpleProjectNode. cs* Dodaj następującą `using` dyrektywę.
 
    ```csharp
    using System.IO;
@@ -605,7 +605,7 @@ Templates
 
    - `nameSpace` otrzymuje wartość \<RootNamespace> elementu w pliku szablonu projektu *\Templates\Projects\SimpleProject\SimpleProject.myproj* . W tym przypadku wartość jest `MyRootNamespace` .
 
-   - `className` otrzymuje wartość nazwy pliku źródłowego klasy, bez rozszerzenia nazwy pliku. W takim przypadku pierwszy plik do skopiowania do folderu docelowego to *AssemblyInfo.cs*; w związku z tym wartość className jest `AssemblyInfo` .
+   - `className` otrzymuje wartość nazwy pliku źródłowego klasy, bez rozszerzenia nazwy pliku. W takim przypadku pierwszy plik do skopiowania do folderu docelowego to *AssemblyInfo. cs*; w związku z tym wartość className jest `AssemblyInfo` .
 
 4. Usuń punkt przerwania i naciśnij klawisz **F5** , aby kontynuować wykonywanie.
 

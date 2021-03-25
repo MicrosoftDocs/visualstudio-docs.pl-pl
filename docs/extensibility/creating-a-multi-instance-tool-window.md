@@ -8,17 +8,17 @@ helpviewer_keywords:
 - multi
 - tool windows
 ms.assetid: 4a7872f1-acc9-4f43-8932-5a526b36adea
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1d332e3c41a55de8f405f028070fa95f97f6717
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ce6122cbf4d6f85ab50e067fbbd643053ac4e4dd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923269"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089358"
 ---
 # <a name="create-a-multi-instance-tool-window"></a>Tworzenie okna narzędzia z obsługą wiele wystąpień
 Możesz zaprogramować okno narzędzi, aby można było otworzyć wiele wystąpień go jednocześnie. Domyślnie w oknach narzędzi może być otwarte tylko jedno wystąpienie.
@@ -34,7 +34,7 @@ W przypadku korzystania z okna narzędzia z wieloma wystąpieniami można w tym 
 
 ## <a name="make-a-tool-window-multi-instance"></a>Tworzenie wieloskładnikowego okna narzędziowego
 
-1. Otwórz plik *MIToolWindowPackage.cs* i Znajdź `ProvideToolWindow` atrybut. i `MultiInstances=true` parametr, jak pokazano w następującym przykładzie:
+1. Otwórz plik *MIToolWindowPackage. cs* i Znajdź `ProvideToolWindow` atrybut. i `MultiInstances=true` parametr, jak pokazano w następującym przykładzie:
 
     ```csharp
     [PackageRegistration(UseManagedResourcesOnly = true)]
@@ -46,7 +46,7 @@ W przypadku korzystania z okna narzędzia z wieloma wystąpieniami można w tym 
     {. . .}
     ```
 
-2. W pliku *MIToolWindowCommand.cs* Znajdź `ShowToolWindos()` metodę. W tej metodzie należy wywołać <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> metodę i ustawić jej `create` flagę na `false` tak, aby przeprowadzili iterację przez istniejące wystąpienia okna narzędzi do momentu znalezienia dostępnego elementu `id` .
+2. W pliku *MIToolWindowCommand. cs* Znajdź `ShowToolWindos()` metodę. W tej metodzie należy wywołać <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> metodę i ustawić jej `create` flagę na `false` tak, aby przeprowadzili iterację przez istniejące wystąpienia okna narzędzi do momentu znalezienia dostępnego elementu `id` .
 
 3. Aby utworzyć wystąpienie okna narzędzi, wywołaj <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> metodę i ustaw jej `id` wartość na dostępna i `create` flagę na `true` .
 

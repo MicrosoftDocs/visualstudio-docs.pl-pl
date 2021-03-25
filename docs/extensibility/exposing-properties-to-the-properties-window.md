@@ -9,17 +9,17 @@ helpviewer_keywords:
 - properties [Visual Studio SDK]
 - Property Browser, exposing properties
 ms.assetid: 47f295b5-1ca5-4e7b-bb52-7b926b136622
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd9f2eb66bd2e1b8edcffd9e1053e4f644ba5e77
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b9de86e956fe6a4d7841d519d7252b75ae216229
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890763"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105075253"
 ---
 # <a name="expose-properties-to-the-properties-window"></a>Uwidacznianie właściwości okno Właściwości
 
@@ -37,9 +37,9 @@ W tej sekcji utworzysz niestandardowe okno narzędzi i zostanie wyświetlone wł
 
 1. Każde rozszerzenie programu Visual Studio rozpoczyna się od projektu wdrożenia VSIX, który będzie zawierać zasoby rozszerzenia. Utwórz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projekt VSIX o nazwie `MyObjectPropertiesExtension` . Szablon projektu VSIX można znaleźć w oknie dialogowym **Nowy projekt** , wyszukując frazę "VSIX".
 
-2. Dodaj okno narzędzi, dodając szablon elementu niestandardowego okna narzędzi o nazwie `MyToolWindow` . W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >  **nowy element**. W **oknie dialogowym Dodaj nowy element** przejdź do obszaru rozszerzanie **elementów Visual C#**  >   i wybierz **niestandardowe okno narzędzi**. W polu **Nazwa** w dolnej części okna dialogowego Zmień nazwę pliku na *MyToolWindow.cs*. Aby uzyskać więcej informacji na temat tworzenia niestandardowego okna narzędzi, zobacz [Tworzenie rozszerzenia przy użyciu okna narzędzi](../extensibility/creating-an-extension-with-a-tool-window.md).
+2. Dodaj okno narzędzi, dodając szablon elementu niestandardowego okna narzędzi o nazwie `MyToolWindow` . W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >  **nowy element**. W **oknie dialogowym Dodaj nowy element** przejdź do obszaru rozszerzanie **elementów Visual C#**  >   i wybierz **niestandardowe okno narzędzi**. W polu **Nazwa** w dolnej części okna dialogowego Zmień nazwę pliku na *MyToolWindow. cs*. Aby uzyskać więcej informacji na temat tworzenia niestandardowego okna narzędzi, zobacz [Tworzenie rozszerzenia przy użyciu okna narzędzi](../extensibility/creating-an-extension-with-a-tool-window.md).
 
-3. Otwórz *MyToolWindow.cs* i Dodaj następującą instrukcję using:
+3. Otwórz *MyToolWindow. cs* i Dodaj następującą instrukcję using:
 
    ```csharp
    using System.Collections;
@@ -112,7 +112,7 @@ W tej sekcji dodasz okno narzędzi i uwidocznisz jego właściwości. Zmiany wpr
 
 ### <a name="to-expose-tool-window-properties"></a>Aby uwidocznić właściwości okna narzędzi
 
-1. Otwórz *MyToolWindow.cs* i Dodaj publiczną właściwość Boolean ischeckd do `MyToolWindow` klasy.
+1. Otwórz *MyToolWindow. cs* i Dodaj publiczną właściwość Boolean ischeckd do `MyToolWindow` klasy.
 
     ```csharp
     [Category("My Properties")]
@@ -131,7 +131,7 @@ W tej sekcji dodasz okno narzędzi i uwidocznisz jego właściwości. Zmiany wpr
 
      Ta właściwość pobiera swój stan z pola wyboru WPF, które zostanie utworzone później.
 
-2. Otwórz *MyToolWindowControl.XAML.cs* i Zastąp Konstruktor MyToolWindowControl następującym kodem.
+2. Otwórz *MyToolWindowControl. XAML. cs* i Zastąp Konstruktor MyToolWindowControl następującym kodem.
 
     ```vb
     private MyToolWindow pane;
@@ -145,7 +145,7 @@ W tej sekcji dodasz okno narzędzi i uwidocznisz jego właściwości. Zmiany wpr
 
      Zapewnia to `MyToolWindowControl` dostęp do `MyToolWindow` okienka.
 
-3. W *MyToolWindow.cs* Zmień konstruktora w `MyToolWindow` następujący sposób:
+3. W *MyToolWindow. cs* Zmień konstruktora w `MyToolWindow` następujący sposób:
 
     ```csharp
     base.Content = new MyToolWindowControl(this);
@@ -189,7 +189,7 @@ W tej sekcji dodasz okno narzędzi i uwidocznisz jego właściwości. Zmiany wpr
 
 ### <a name="to-change-selection-lists"></a>Aby zmienić listy wyboru
 
-1. Otwórz *MyToolWindow.cs* i Dodaj klasę publiczną o nazwie `Simple` .
+1. Otwórz *MyToolWindow. cs* i Dodaj klasę publiczną o nazwie `Simple` .
 
     ```csharp
     public class Simple
@@ -242,7 +242,7 @@ W tej sekcji dodasz okno narzędzi i uwidocznisz jego właściwości. Zmiany wpr
     }
     ```
 
-3. W *MyToolWindowControl.cs* Zastąp programy obsługi pól wyboru następującymi wierszami kodu:
+3. W *MyToolWindowControl. cs* Zastąp obsługę pól wyboru następującymi wierszami kodu:
 
     ```csharp
     private void checkbox_Checked(object sender, RoutedEventArgs e)
