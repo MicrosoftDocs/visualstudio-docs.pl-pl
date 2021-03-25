@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03d4fbd509cbbb408bdcd0465ba4460f8c3b1e9f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8af418d8ffcaad18aca4497078f4e24f9bb679fd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943247"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090645"
 ---
 # <a name="manage-universal-windows-projects"></a>Zarządzanie projektami uniwersalnymi systemu Windows
 
@@ -31,7 +31,7 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
 
 2. Dodaj odwołanie do *Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll* i *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll* (w sekcji **rozszerzenia** ).
 
-3. Otwórz *TestUniversalProject.cs* i Dodaj następujące `using` dyrektywy:
+3. Otwórz *TestUniversalProject. cs* i Dodaj następujące `using` dyrektywy:
 
     ```csharp
     using EnvDTE;
@@ -425,9 +425,9 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
 
       W tej procedurze należy dodać odbiornik zdarzeń do projektu udostępnionego i projektu platformy. Po zmianie nazwy jednego pliku w projekcie udostępnionym i innym pliku w projekcie platformy można zobaczyć zdarzenia, które są generowane dla każdej operacji zmiany nazwy.
 
-2. Dodaj odbiornik zdarzeń. Dodaj nowy plik klasy do projektu i Wywołaj go *HierarchyEventListener.cs*.
+2. Dodaj odbiornik zdarzeń. Dodaj nowy plik klasy do projektu i Wywołaj go *HierarchyEventListener. cs*.
 
-3. Otwórz plik *HierarchyEventListener.cs* i Dodaj następujące dyrektywy using:
+3. Otwórz plik *HierarchyEventListener. cs* i Dodaj następujące dyrektywy using:
 
    ```csharp
    using Microsoft.VisualStudio.Shell.Interop;
@@ -551,7 +551,7 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
     this.ModifyFileNameInProject(sharedHier, fullPath);
     ```
 
-11. Skompiluj i Uruchom projekt. Utwórz aplikację uniwersalną centrum w języku C# w eksperymentalnym wystąpieniu, przejdź do menu **Narzędzia** i kliknij polecenie **Wywołaj TestUniversalProject** i zaznacz tekst w okienku danych wyjściowych ogólne. Nazwa pierwszego elementu w projekcie udostępnionym (oczekujemy, że plik *App. XAML* ) powinien zostać zmieniony i należy zobaczyć, że <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed> zdarzenie zostało wyzwolone. W takim przypadku zmiana nazwy pliku *App. XAML* powoduje, że zmiany nazwy *App.XAML.cs* również powinny być widoczne cztery zdarzenia (dwa dla każdego projektu platformy). (Zdarzenia DTE nie śledzą elementów w projekcie udostępnionym). Powinny być widoczne dwa <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> zdarzenia (po jednym dla każdego projektu platformy), ale nie <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> zdarzenia.
+11. Skompiluj i Uruchom projekt. Utwórz aplikację uniwersalną centrum w języku C# w eksperymentalnym wystąpieniu, przejdź do menu **Narzędzia** i kliknij polecenie **Wywołaj TestUniversalProject** i zaznacz tekst w okienku danych wyjściowych ogólne. Nazwa pierwszego elementu w projekcie udostępnionym (oczekujemy, że plik *App. XAML* ) powinien zostać zmieniony i należy zobaczyć, że <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed> zdarzenie zostało wyzwolone. W takim przypadku, ponieważ zmiana nazwy pliku *App. XAML* spowoduje zmianę nazwy *aplikacji App. XAML. cs* , powinny być widoczne cztery zdarzenia (dwa dla każdego projektu platformy). (Zdarzenia DTE nie śledzą elementów w projekcie udostępnionym). Powinny być widoczne dwa <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> zdarzenia (po jednym dla każdego projektu platformy), ale nie <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> zdarzenia.
 
 12. Teraz spróbuj zmienić nazwę pliku w projekcie platformy i zobaczyć różnicę w zdarzeniach, które są wywoływane. Dodaj następujący kod do programu `ShowMessageBox` po wywołaniu metody `ModifyFileName` .
 

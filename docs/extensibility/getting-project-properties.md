@@ -8,17 +8,17 @@ helpviewer_keywords:
 - project properties, displaying in tool window
 - tool windows, displaying project properties
 ms.assetid: 96ba07ca-0811-4013-8602-12550ac4ba79
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e89a19ee51a62e8d92c0ec8984e912703e2b92b5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8de3f32951cb70b8115781ce067950c7e518b102
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968193"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057666"
 ---
 # <a name="get-project-properties"></a>Pobierz właściwości projektu
 
@@ -38,7 +38,7 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
 
 ### <a name="to-display-project-properties-in-a-tool-window"></a>Aby wyświetlić właściwości projektu w oknie narzędzi
 
-1. W pliku ProjectPropertiesToolWindowCommand.cs Dodaj następujące dyrektywy using.
+1. W pliku ProjectPropertiesToolWindowCommand. cs Dodaj następujące dyrektywy using.
 
     ```csharp
     using EnvDTE;
@@ -46,9 +46,9 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
 
     ```
 
-2. W *ProjectPropertiesToolWindowControl. XAML* usuń istniejący przycisk i Dodaj element TreeView z przybornika. Możesz również usunąć procedurę obsługi zdarzeń kliknięcia z pliku *ProjectPropertiesToolWindowControl.XAML.cs* .
+2. W *ProjectPropertiesToolWindowControl. XAML* usuń istniejący przycisk i Dodaj element TreeView z przybornika. Możesz również usunąć procedurę obsługi zdarzeń kliknięcia z pliku *ProjectPropertiesToolWindowControl. XAML. cs* .
 
-3. W *ProjectPropertiesToolWindowCommand.cs* Użyj metody, `ShowToolWindow()` Aby otworzyć projekt i odczytać jego właściwości, a następnie Dodaj właściwości do widoku TreeView. Kod dla ShowToolWindow powinien wyglądać następująco:
+3. W *ProjectPropertiesToolWindowCommand. cs* Użyj metody, `ShowToolWindow()` Aby otworzyć projekt i odczytać jego właściwości, a następnie Dodaj właściwości do widoku TreeView. Kod dla ShowToolWindow powinien wyglądać następująco:
 
     ```csharp
     private void ShowToolWindow(object sender, EventArgs e)

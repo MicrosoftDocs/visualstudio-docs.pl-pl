@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - tool windows, dynamic
 ms.assetid: 21547ba7-6e81-44df-9277-265bf34f877a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1998091559f78ed7c7eb8d9585206cf0217d8b2d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 357644f67da9a3bbc468d708cf39e44f737dbf0f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946595"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090424"
 ---
 # <a name="open-a-dynamic-tool-window"></a>Otwieranie okna narzędzia dynamicznego
 Okna narzędzi są zwykle otwierane za pomocą polecenia w menu lub równoważnego skrótu klawiaturowego. Czasami jednak może być konieczne okno narzędzi, które jest otwierane za każdym razem, gdy określony kontekst interfejsu użytkownika zostanie zastosowany, i zamyka się, gdy kontekst interfejsu użytkownika już nie ma zastosowania. Te typy okien narzędzi są nazywane *dynamicznym* lub *autowidocznością*.
@@ -34,9 +34,9 @@ Okna narzędzi są zwykle otwierane za pomocą polecenia w menu lub równoważne
 
 ## <a name="to-open-a-dynamic-tool-window"></a>Aby otworzyć okno narzędzia dynamicznego
 
-1. Utwórz projekt VSIX o nazwie **DynamicToolWindow** i Dodaj szablon elementu okna narzędzia o nazwie *DynamicWindowPane.cs*. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia przy użyciu okna narzędzi](../extensibility/creating-an-extension-with-a-tool-window.md).
+1. Utwórz projekt VSIX o nazwie **DynamicToolWindow** i Dodaj szablon elementu okna narzędzia o nazwie *DynamicWindowPane. cs*. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia przy użyciu okna narzędzi](../extensibility/creating-an-extension-with-a-tool-window.md).
 
-2. W pliku *DynamicWindowPanePackage.cs* Znajdź deklarację DynamicWindowPanePackage. Dodaj <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> atrybuty i, <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute> Aby zarejestrować okno narzędzi.
+2. W pliku *DynamicWindowPanePackage. cs* Znajdź deklarację DynamicWindowPanePackage. Dodaj <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> atrybuty i, <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute> Aby zarejestrować okno narzędzi.
 
     ```vb
     [ProvideToolWindow(typeof(DynamicWindowPane)]
