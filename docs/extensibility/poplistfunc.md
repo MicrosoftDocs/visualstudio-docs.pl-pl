@@ -9,17 +9,17 @@ f1_keywords:
 helpviewer_keywords:
 - POPLISTFUNC callback function
 ms.assetid: b2199fd5-d707-4628-92dd-e2a01e2f507a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ddf641cf309eb5b5352904da2ac07b64b0886f97
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: aec322d73e49d4aae91956bd8df015a01c922a10
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967361"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090242"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
 To wywołanie zwrotne jest dostarczane do [SccPopulateList](../extensibility/sccpopulatelist-function.md) przez IDE i używane przez wtyczkę kontroli źródła w celu zaktualizowania listy plików lub katalogów (również dostarczonych do `SccPopulateList` funkcji).

@@ -8,24 +8,24 @@ helpviewer_keywords:
 - properties, adding to a project item
 - project items, adding properties
 ms.assetid: d7a0f2b0-d427-4d49-9536-54edfb37c0f3
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 63b1a4a7cb6e2d12882794a07e51151effe36716
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 58c46da9023cc64246f1ea9ee4bde1ec866c545d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967426"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090359"
 ---
 # <a name="persist-the-property-of-a-project-item"></a>Utrwalanie właściwości elementu projektu
 Możesz chcieć zachować Właściwość dodawaną do elementu projektu, na przykład autora pliku źródłowego. Można to zrobić, przechowując właściwość w pliku projektu.
 
  Pierwszym krokiem, aby zachować właściwość w pliku projektu, jest uzyskanie hierarchii projektu jako <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> interfejsu. Ten interfejs można uzyskać za pomocą automatyzacji lub przy użyciu <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> . Po uzyskaniu interfejsu można za jego pomocą określić, który element projektu jest aktualnie wybrany. Gdy masz identyfikator elementu projektu, możesz użyć, <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> Aby dodać właściwość.
 
- W poniższych procedurach należy zachować Właściwość *VsPkg.cs* `Author` z wartością `Tom` w pliku projektu.
+ W poniższych procedurach należy zachować Właściwość *VsPkg. cs* `Author` z wartością `Tom` w pliku projektu.
 
 ## <a name="to-obtain-the-project-hierarchy-with-the-dte-object"></a>Aby uzyskać hierarchię projektu z obiektem DTE
 
@@ -119,7 +119,7 @@ Możesz chcieć zachować Właściwość dodawaną do elementu projektu, na przy
 
 1. Uruchom [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , a następnie otwórz lub Utwórz rozwiązanie.
 
-2. Wybierz element projektu VsPkg.cs w **Eksplorator rozwiązań**.
+2. Wybierz element projektu VsPkg. cs w **Eksplorator rozwiązań**.
 
 3. Użyj punktu przerwania lub w inny sposób Ustal, czy pakietu VSPackage jest załadowany i czy element SetItemAttribute zostanie uruchomiony.
 
