@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 676668b1247377597bed55b293efb8ad8b5cd253
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ad9f7d329bf00e3fadd665cefea22a2301fdf695
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841708"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061787"
 ---
 # <a name="share-your-app"></a>Udostępnianie aplikacji
 
@@ -24,7 +24,7 @@ Teraz, po zbudowaniu obrazu, udostępnij go! Aby udostępnić obrazy platformy D
 
 Aby wypchnąć obraz, najpierw należy utworzyć repozytorium w usłudze Docker Hub.
 
-1. Przejdź do [centrum platformy Docker](https://hub.docker.com) i zaloguj się, jeśli jest to konieczne.
+1. Przejdź do [centrum platformy Docker](https://hub.docker.com/signup/msftedge?utm_source=msftedge) i zaloguj się, jeśli jest to konieczne.
 
 1. Kliknij przycisk **Utwórz repozytorium** .
 

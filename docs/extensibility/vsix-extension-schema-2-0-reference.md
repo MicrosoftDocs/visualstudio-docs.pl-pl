@@ -8,17 +8,17 @@ helpviewer_keywords:
 - vsix
 - extension schema
 ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3fdbd9220ef82102dd66f10ab7f15570118bae9a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d1b94c7b2cacb7ad78031721156bdd90cb666c4f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904545"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062294"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Dokumentacja schematu rozszerzenia VSIX 2,0
 Plik manifestu wdrożenia VSIX opisuje zawartość pakietu VSIX. Format pliku podlega schematowi. Wersja 2,0 tego schematu obsługuje Dodawanie niestandardowych typów i atrybutów.  Schemat manifestu jest rozszerzalny. Moduł ładujący manifest ignoruje elementy XML i atrybuty, które nie są zrozumiałe.
@@ -114,7 +114,7 @@ Plik manifestu wdrożenia VSIX opisuje zawartość pakietu VSIX. Format pliku po
 
     - Microsoft. VisualStudio. VSLS
 
-    - My. Shell. App
+    - My.Shell.App
 
   - `Version` -Ten atrybut określa zakres wersji o minimalnej i maksymalnej obsługiwanej wersji tej jednostki SKU. Pakiet może szczegółowo określać wersje jednostek SKU obsługiwanych przez program. Notacja zakresu wersji to [10,0-11,0], gdzie
 
