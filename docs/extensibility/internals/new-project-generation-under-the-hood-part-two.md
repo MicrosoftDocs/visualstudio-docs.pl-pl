@@ -7,17 +7,17 @@ helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 73ce91d8-0ab1-4a1f-bf12-4d3c49c01e13
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7891cb6a40e6b7de48ba11871688881625b9c68d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e391ad66c9925dc68997ff610dc5d1556ddf09b2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895612"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063087"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>Generowanie nowego projektu: szczegółowe informacje (część druga)
 
@@ -31,7 +31,7 @@ W [obszarze Nowa generacja projektu: w obszarze okapu część,](../../extensibi
 ### <a name="template-parameter-replacement"></a>Zastąpienie parametru szablonu
  Gdy szablon kopiuje szablon elementu do nowego projektu, zastępuje wszystkie parametry szablonu z ciągami, aby dostosować plik. Parametr szablonu jest specjalnym tokenem, który jest poprzedzony znakiem dolara, na przykład $date $.
 
- Przyjrzyjmy się typowi szablonu elementu projektu. Wyodrębnij i Przeanalizuj Program.cs w programie Files\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip folder.
+ Przyjrzyjmy się typowi szablonu elementu projektu. Wyodrębnij i Przeanalizuj program. cs w folderze Program Files\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip.
 
 ```csharp
 using System;
@@ -130,7 +130,7 @@ namespace Simple
  Powoduje to utworzenie przez nowy szablon projektu prostego pliku projektu. csproj przez skopiowanie i dostosowanie elementu szablonu pliku windowsapplication. csproj.
 
 ### <a name="designers-and-references"></a>Projektanci i odwołania
- W Eksplorator rozwiązań można zobaczyć, że folder właściwości jest obecny i zawiera oczekiwane pliki. Ale co się stało z odwołaniami projektu i zależnościami pliku projektanta, takimi jak Resources.Designer.cs do zasobów. resx i Form1.Designer.cs do Form1.cs?  Są one konfigurowane w prostym pliku. csproj, gdy zostanie wygenerowany.
+ W Eksplorator rozwiązań można zobaczyć, że folder właściwości jest obecny i zawiera oczekiwane pliki. Ale co się stało z odwołaniami projektu i zależnościami pliku projektanta, takimi jak Resources. Designer. cs do zasobów. resx i Form1. Designer. cs do Form1. cs?  Są one konfigurowane w prostym pliku. csproj, gdy zostanie wygenerowany.
 
  Oto element \<ItemGroup> from Simple. csproj, który tworzy odwołania do projektu:
 
@@ -145,7 +145,7 @@ namespace Simple
 </ItemGroup>
 ```
 
- Można zobaczyć, że są to sześć odwołań do projektu, które pojawiają się w Eksplorator rozwiązań. Oto sekcja z innej \<ItemGroup> . Wiele wierszy kodu zostało usuniętych do przejrzystości. Ta sekcja Settings.Designer.cs zależy od ustawień. ustawienia:
+ Można zobaczyć, że są to sześć odwołań do projektu, które pojawiają się w Eksplorator rozwiązań. Oto sekcja z innej \<ItemGroup> . Wiele wierszy kodu zostało usuniętych do przejrzystości. Ta sekcja udostępnia ustawienia. Designer. cs zależnie od ustawień. ustawienia:
 
 ```xml
 <ItemGroup>

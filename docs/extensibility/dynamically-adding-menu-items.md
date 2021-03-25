@@ -9,17 +9,17 @@ helpviewer_keywords:
 - menu items, adding dynamically
 - menus, adding dynamic items
 ms.assetid: d281e9c9-b289-4d64-8d0a-094bac6c333c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3432092bc73ef3a06c807a1b4c4942080b9fce8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fa85d5b5cf4b99840e181fb24b5913ff72a3fee0
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883548"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070339"
 ---
 # <a name="dynamically-add-menu-items"></a>Dynamicznie Dodaj elementy menu
 Możesz dodać elementy menu w czasie wykonywania, określając `DynamicItemStart` flagę polecenia w definicji przycisku zastępczego w pliku tabeli programu Visual Studio (*. vsct*), a następnie definiując (w kodzie) liczbę elementów menu do wyświetlenia i obsługi poleceń. Po załadowaniu pakietu VSPackage symbol zastępczy jest zastępowany dynamicznymi elementami menu.
@@ -144,7 +144,7 @@ Możesz dodać elementy menu w czasie wykonywania, określając `DynamicItemStar
 ## <a name="implement-the-dynamic-menu-command"></a>Implementowanie polecenia menu dynamicznego
  Tworzysz klasę poleceń menu dynamicznego, która dziedziczy z <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> . W tej implementacji Konstruktor Określa predykat, który ma być używany do dopasowywania poleceń. Należy zastąpić <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.DynamicItemMatch%2A> metodę, aby użyć tego predykatu do ustawienia <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.MatchedCommandId%2A> właściwości, która identyfikuje polecenie, które ma być wywoływane.
 
-1. Utwórz nowy plik klasy C# o nazwie *DynamicItemMenuCommand.cs* i Dodaj klasę o nazwie **DynamicItemMenuCommand** , która dziedziczy z <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> :
+1. Utwórz nowy plik klasy C# o nazwie *DynamicItemMenuCommand. cs* i Dodaj klasę o nazwie **DynamicItemMenuCommand** , która dziedziczy z <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> :
 
     ```csharp
     class DynamicItemMenuCommand : OleMenuCommand
@@ -207,14 +207,14 @@ Możesz dodać elementy menu w czasie wykonywania, określając `DynamicItemStar
 ## <a name="add-the-command"></a>Dodaj polecenie
  Konstruktor wywołaniu to miejsce, w którym można skonfigurować polecenia menu, w tym dynamiczne menu i elementy menu.
 
-1. W *DynamicMenuPackage.cs* Dodaj identyfikator GUID zestawu poleceń i identyfikator polecenia:
+1. W *DynamicMenuPackage. cs* Dodaj identyfikator GUID zestawu poleceń i identyfikator polecenia:
 
     ```csharp
     public const string guidDynamicMenuPackageCmdSet = "00000000-0000-0000-0000-00000000";  // get the GUID from the .vsct file
     public const uint cmdidMyCommand = 0x104;
     ```
 
-2. W pliku *DynamicMenu.cs* Dodaj następujące dyrektywy using:
+2. W pliku *wywołaniu. cs* Dodaj następujące dyrektywy using:
 
     ```csharp
     using EnvDTE;
@@ -333,7 +333,7 @@ private bool IsValidDynamicItem(int commandId)
 ```
 
 ## <a name="set-the-vspackage-to-load-only-when-a-solution-has-multiple-projects"></a>Ustaw pakietu VSPackage do załadowania tylko wtedy, gdy rozwiązanie ma wiele projektów
- Ponieważ polecenie **Ustaw projekt startowy** nie ma sensu, chyba że aktywne rozwiązanie ma więcej niż jeden projekt, można ustawić pakietu VSPackage do ładowania automatyczne tylko w tym przypadku. Używasz <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> razem z kontekstem interfejsu użytkownika <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids.SolutionHasMultipleProjects> . W pliku *DynamicMenuPackage.cs* Dodaj następujące atrybuty do klasy DynamicMenuPackage:
+ Ponieważ polecenie **Ustaw projekt startowy** nie ma sensu, chyba że aktywne rozwiązanie ma więcej niż jeden projekt, można ustawić pakietu VSPackage do ładowania automatyczne tylko w tym przypadku. Używasz <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> razem z kontekstem interfejsu użytkownika <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids.SolutionHasMultipleProjects> . W pliku *DynamicMenuPackage. cs* Dodaj następujące atrybuty do klasy DynamicMenuPackage:
 
 ```csharp
 [PackageRegistration(UseManagedResourcesOnly = true)]

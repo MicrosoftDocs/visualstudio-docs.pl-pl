@@ -8,17 +8,17 @@ helpviewer_keywords:
 - source control plug-ins, comparing versions
 - source control plug-ins, local project folders
 ms.assetid: 65217e8b-15a6-4446-92b0-4cff1c6220f5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61a23eb1fcb3cbae9e478f35b3ac1fdb6abaf407
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f7b334bb6e1b73dd31060020378e91b74e5af102
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895482"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063048"
 ---
 # <a name="optional-comparison-of-local-project-folder-to-source-control-store"></a>Opcjonalne porównanie lokalnego folderu projektu do magazynu kontroli kodu źródłowego
 W interfejsie API wtyczki kontroli źródła 1,2 porównanie między lokalnym folderem projektu a kontrolą źródła jest realizowane przy użyciu funkcji [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md) i [SccDirDiff](../../extensibility/sccdirdiff-function.md).
