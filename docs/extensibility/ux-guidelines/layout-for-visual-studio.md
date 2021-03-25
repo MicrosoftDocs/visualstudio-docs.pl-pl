@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16a4178231c575f590a13b8205cd872668f46143
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1c15b7458bfd18314015bbb9228c212a06fcd82f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951943"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105072978"
 ---
 # <a name="layout-for-visual-studio"></a>Układ dla programu Visual Studio
 Większość okien dialogowych programu Visual Studio to [układ okien](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout)dialogowych, które są nienależącymi do nich oknach dialogowych, które są zgodne ze standardowymi [zasadami układu okien dialogowych systemu Windows](/windows/desktop/uxguide/win-dialog-box). Ponieważ program Visual Studio przechodzi do odświeżania interfejsu użytkownika, niektóre z bardziej widocznych okien dialogowych mają nowy projekt, który określa je jako środowiska definiowania produktu. Ten [Układ okna dialogowego z motywem](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) ma wygląd z motywem.
