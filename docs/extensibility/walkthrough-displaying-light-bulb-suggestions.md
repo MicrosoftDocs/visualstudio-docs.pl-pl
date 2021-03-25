@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e1c906b96f3bd20b72cf2b5eca92190e0ad42916
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ad000d486b0808ea4ddc3311daa7178c6eda1231
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931295"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080323"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>Przewodnik: wyświetlanie sugestii żarówki
 Żarówki są ikonami w edytorze programu Visual Studio, które rozszerzają się, aby wyświetlić zestaw akcji, na przykład poprawki dotyczące problemów zidentyfikowanych przez wbudowane analizatory kodu lub refaktoryzacji kodu.
@@ -74,7 +74,7 @@ ms.locfileid: "99931295"
 
 ## <a name="implement-the-light-bulb-source-provider"></a>Implementowanie dostawcy źródła żarówki
 
-1. W pliku klasy *LightBulbTest.cs* Usuń klasę LightBulbTest. Dodaj klasę o nazwie **TestSuggestedActionsSourceProvider** , która implementuje <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider> . Wyeksportuj go przy użyciu nazwy **sugerowanych akcji testowych** i elementu <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "text".
+1. W pliku klasy *LightBulbTest. cs* Usuń klasę LightBulbTest. Dodaj klasę o nazwie **TestSuggestedActionsSourceProvider** , która implementuje <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider> . Wyeksportuj go przy użyciu nazwy **sugerowanych akcji testowych** i elementu <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "text".
 
     ```csharp
     [Export(typeof(ISuggestedActionsSourceProvider))]
