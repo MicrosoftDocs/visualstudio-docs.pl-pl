@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 0448274c-d3d2-4e12-9d11-8aca78a1f3f5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4cbdd539437bce6f160dfa8661f514bf9f40b134
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f9973bb86296442f4b936ddb54ff645d74d7ab74
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965333"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074941"
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Instrukcje: dostarczanie asynchronicznej usługi programu Visual Studio
 Jeśli chcesz uzyskać usługę bez blokowania wątku interfejsu użytkownika, należy utworzyć usługę asynchroniczną i załadować pakiet w wątku w tle. W tym celu można użyć <xref:Microsoft.VisualStudio.Shell.AsyncPackage> <xref:Microsoft.VisualStudio.Shell.Package> , a nie a, i dodać usługę z zastosowaniem specjalnych metod asynchronicznych pakietu asynchronicznego.
@@ -26,9 +26,9 @@ Jeśli chcesz uzyskać usługę bez blokowania wątku interfejsu użytkownika, n
 
 1. Utwórz projekt VSIX (**plik**  >  **Nowy**  >  **projekt**  >  **Visual C#**  >  **Extensiblity**  >  **VSIX**). Nazwij projekt **TestAsync**.
 
-2. Dodaj pakietu VSPackage do projektu. Wybierz węzeł projektu w **Eksplorator rozwiązań** a następnie kliknij pozycję **Dodaj**  >  **nowy element**  >  **Visual C# elementy**  >  **Rozszerzalny**  >  **pakiet Visual Studio**. Nazwij ten plik *TestAsyncPackage.cs*.
+2. Dodaj pakietu VSPackage do projektu. Wybierz węzeł projektu w **Eksplorator rozwiązań** a następnie kliknij pozycję **Dodaj**  >  **nowy element**  >  **Visual C# elementy**  >  **Rozszerzalny**  >  **pakiet Visual Studio**. Nazwij ten plik *TestAsyncPackage. cs*.
 
-3. W *TestAsyncPackage.cs* Zmień pakiet, aby dziedziczyć `AsyncPackage` zamiast `Package` :
+3. W *TestAsyncPackage. cs* Zmień pakiet, aby dziedziczyć z `AsyncPackage` zamiast `Package` :
 
     ```csharp
     public sealed class TestAsyncPackage : AsyncPackage
@@ -122,7 +122,7 @@ public sealed class TestAsyncPackage : AsyncPackage
 
 ## <a name="add-a-service"></a>Dodawanie usługi
 
-1. W *TestAsyncPackage.cs* Usuń `Initialize()` metodę i Zastąp `InitializeAsync()` metodę. Dodaj usługę i Dodaj metodę wywołania zwrotnego, aby utworzyć usługi. Oto przykład inicjatora asynchronicznego dodawanego do usługi:
+1. W *TestAsyncPackage. cs* Usuń `Initialize()` metodę i Zastąp `InitializeAsync()` metodę. Dodaj usługę i Dodaj metodę wywołania zwrotnego, aby utworzyć usługi. Oto przykład inicjatora asynchronicznego dodawanego do usługi:
 
     ```csharp
     protected override async Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)
@@ -173,15 +173,15 @@ public sealed class TestAsyncPackage : AsyncPackage
 ## <a name="use-an-asynchronous-service-in-a-command-handler"></a>Korzystanie z usługi asynchronicznej w programie obsługi poleceń
  Oto przykład sposobu korzystania z usługi asynchronicznej w menu polecenia. Możesz użyć procedury pokazanej w tym miejscu, aby użyć usługi w innych metodach nieasynchronicznych.
 
-1. Dodaj polecenie menu do projektu. (W **Eksplorator rozwiązań** wybierz węzeł projektu, kliknij prawym przyciskiem myszy, a następnie wybierz polecenie **Dodaj**  >  **Nowy element**  >  **Rozszerzalność**  >  **Polecenie niestandardowe**). Nazwij plik poleceń *TestAsyncCommand.cs*.
+1. Dodaj polecenie menu do projektu. (W **Eksplorator rozwiązań** wybierz węzeł projektu, kliknij prawym przyciskiem myszy, a następnie wybierz polecenie **Dodaj**  >  **Nowy element**  >  **Rozszerzalność**  >  **Polecenie niestandardowe**). Nazwij plik poleceń *TestAsyncCommand. cs*.
 
-2. Szablon polecenia niestandardowego ponownie dodaje `Initialize()` metodę do pliku *TestAsyncPackage.cs* , aby można było zainicjować polecenie. W `Initialize()` metodzie Skopiuj wiersz, który inicjuje polecenie. Powinien on wyglądać następująco:
+2. Szablon polecenia niestandardowego ponownie dodaje `Initialize()` metodę do pliku *TestAsyncPackage. cs* , aby można było zainicjować polecenie. W `Initialize()` metodzie Skopiuj wiersz, który inicjuje polecenie. Powinien on wyglądać następująco:
 
     ```csharp
     TestAsyncCommand.Initialize(this);
     ```
 
-     Przenieś ten wiersz do `InitializeAsync()` metody w pliku *AsyncPackageForService.cs* . Ponieważ jest to Inicjalizacja asynchroniczna, należy przełączyć się do głównego wątku przed zainicjowaniem polecenia za pomocą <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A> . Powinien teraz wyglądać następująco:
+     Przenieś ten wiersz do `InitializeAsync()` metody w pliku *AsyncPackageForService. cs* . Ponieważ jest to Inicjalizacja asynchroniczna, należy przełączyć się do głównego wątku przed zainicjowaniem polecenia za pomocą <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A> . Powinien teraz wyglądać następująco:
 
     ```csharp
 
@@ -204,7 +204,7 @@ public sealed class TestAsyncPackage : AsyncPackage
 
 3. Usuń `Initialize()` metodę.
 
-4. W pliku *TestAsyncCommand.cs* Znajdź `MenuItemCallback()` metodę. Usuń treść metody.
+4. W pliku *TestAsyncCommand. cs* Znajdź `MenuItemCallback()` metodę. Usuń treść metody.
 
 5. Dodaj dyrektywę using:
 

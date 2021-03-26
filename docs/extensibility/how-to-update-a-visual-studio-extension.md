@@ -9,17 +9,17 @@ helpviewer_keywords:
 - update extension
 - new package version
 ms.assetid: 93f79774-7b79-4dd6-94ad-13698f72c257
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a79944fbb558e3e7a5debcfc6a64fe4b75aeb0c6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e2af6217ac2f056461c6d833de5d804ebdab17b6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946842"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074863"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>Instrukcje: aktualizowanie rozszerzenia programu Visual Studio
 Rozszerzenie programu Visual Studio można zaktualizować w systemie przy użyciu **rozszerzeń i aktualizacji** w celu zainstalowania zaktualizowanej wersji. Jeśli utworzysz zaktualizowaną wersję rozszerzenia, możesz oznaczać ją jako zaktualizowaną przez zwiększenie numeru wersji w manifeście VSIX.

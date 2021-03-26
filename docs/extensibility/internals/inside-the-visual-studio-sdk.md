@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Visual Studio integration SDK roadmap
 - integration roadmap, Visual Studio SDK
 ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2d67c3d9f998c8dd5192363cf8ff8fae2ce4b57
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e11ee862f43ead3605d8e07dc159e18da13413b8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839862"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074707"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Wewnątrz zestawu Visual Studio SDK
 
@@ -64,7 +64,7 @@ Ta sekcja zawiera szczegółowe informacje na temat rozszerzeń programu Visual 
 
  Niektóre okna narzędzi są zadokowane w jednym okienku, które wyświetla okno narzędzia Eksplorator rozwiązań i ukrywa inne okna narzędzi, ale udostępnia je przez klikanie kart. Obraz przedstawia dwa inne okna narzędzi, **Lista błędów** i **dane wyjściowe** , zadokowane razem w jednym okienku.
 
- Jest również pokazywany panel dokumentu głównego, który pokazuje kilka okien edytora. Chociaż system Windows ma zwykle tylko jedno wystąpienie (na przykład można otworzyć tylko jeden **Eksplorator rozwiązań**), okna edytora mogą mieć wiele wystąpień, z których każdy jest używany do edytowania oddzielnego dokumentu, ale wszystkie są zadokowane w tym samym okienku. Obraz pokazuje okienko dokumentu, które ma dwa okna edytora, jedno okno projektanta formularzy. Wszystkie okna w okienku dokumentu są dostępne po kliknięciu pozycji karty, ale okno edytora zawierające plik EditorPane.cs jest widoczny i aktywny.
+ Jest również pokazywany panel dokumentu głównego, który pokazuje kilka okien edytora. Chociaż system Windows ma zwykle tylko jedno wystąpienie (na przykład można otworzyć tylko jeden **Eksplorator rozwiązań**), okna edytora mogą mieć wiele wystąpień, z których każdy jest używany do edytowania oddzielnego dokumentu, ale wszystkie są zadokowane w tym samym okienku. Obraz pokazuje okienko dokumentu, które ma dwa okna edytora, jedno okno projektanta formularzy. Wszystkie okna w okienku dokumentu są dostępne po kliknięciu pozycji karty, ale okno edytora zawierające plik EditorPane. cs jest widoczny i aktywny.
 
  Po rozszerzeniu programu Visual Studio można utworzyć okna narzędzi, które umożliwiają użytkownikom programu Visual Studio współpracujące z Twoim rozszerzeniem. Można również tworzyć własne edytory, które umożliwiają użytkownikom programu Visual Studio edytowanie dokumentów. Ponieważ okna narzędzi i edytory zostaną zintegrowane z programem Visual Studio, nie ma potrzeby poprawnego programowania lub wyświetlania na karcie. Po poprawnym zarejestrowaniu w programie Visual Studio będą automatycznie korzystać z typowych funkcji okien narzędzi i okien dokumentów w programie Visual Studio. Aby uzyskać więcej informacji, zobacz [rozszerzanie i dostosowywanie okien narzędzi](../../extensibility/extending-and-customizing-tool-windows.md).
 

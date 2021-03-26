@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], code development aides
 ms.assetid: 97c38622-ae0b-4ae0-90ed-604072c298d3
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: afba05f2dd51dbdcdfcbc155077cb28259888738
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a12ee207f7fb7e4f4e2d202d5d63d468e9cea547
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839641"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074486"
 ---
 # <a name="legacy-language-service-features-2"></a>Starsze funkcje usługi językowej 2
 W poniższych tematach wymieniono niektóre ze starszych funkcji usługi językowej, które można podać.

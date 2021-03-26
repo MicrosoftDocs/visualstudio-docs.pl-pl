@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 ms.assetid: c0cc5e08-4897-44f2-8309-e3478f1f999e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b847fad9752c6a2448c0fdc571815ea1823e2d9c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a6c93d90771eeffbfe28ae91781403019743afa9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944898"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089150"
 ---
 # <a name="create-an-extension-with-a-vspackage"></a>Tworzenie rozszerzenia za pomocą pakietu VSPackage
 
@@ -29,7 +29,7 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
 
 1. Utwórz projekt VSIX o nazwie **FirstPackage**. Szablon projektu VSIX można znaleźć w oknie dialogowym **Nowy projekt** , wyszukując frazę "VSIX".
 
-2. Po otwarciu projektu Dodaj szablon elementu pakietu programu Visual Studio o nazwie **FirstPackage**. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >  **nowy element**. W oknie dialogowym **Dodaj nowy element** przejdź do rozszerzalności **Visual C#**  >   i wybierz pozycję **pakiet programu Visual Studio**. W polu **Nazwa** w dolnej części okna Zmień nazwę pliku polecenia na *FirstPackage.cs*.
+2. Po otwarciu projektu Dodaj szablon elementu pakietu programu Visual Studio o nazwie **FirstPackage**. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >  **nowy element**. W oknie dialogowym **Dodaj nowy element** przejdź do rozszerzalności **Visual C#**  >   i wybierz pozycję **pakiet programu Visual Studio**. W polu **Nazwa** w dolnej części okna Zmień nazwę pliku polecenia na *FirstPackage. cs*.
 
 3. Skompiluj projekt i Rozpocznij debugowanie.
 
@@ -41,7 +41,7 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
 
 W tym momencie rozszerzenie nie jest ładowane, ponieważ nie ma nic, co spowoduje jego załadowanie. Można ogólnie załadować rozszerzenie podczas korzystania z jego interfejsu użytkownika (klikając polecenie menu, otwierając okno narzędzia) lub określając, że pakietu VSPackage powinno zostać załadowane w określonym kontekście interfejsu użytkownika. Aby uzyskać więcej informacji na temat ładowania pakietów VSPackage i kontekstów interfejsu użytkownika, zobacz [ładowanie pakietów VSPackage](../extensibility/loading-vspackages.md). W tej procedurze pokazano, jak załadować pakietu VSPackage, gdy rozwiązanie jest otwarte.
 
-1. Otwórz plik *FirstPackage.cs* . Poszukaj deklaracji `FirstPackage` klasy. Zastąp istniejące atrybuty następującymi atrybutami:
+1. Otwórz plik *FirstPackage. cs* . Poszukaj deklaracji `FirstPackage` klasy. Zastąp istniejące atrybuty następującymi atrybutami:
 
     ```csharp
     [PackageRegistration(UseManagedResourcesOnly = true)]
