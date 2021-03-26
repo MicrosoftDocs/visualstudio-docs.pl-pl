@@ -9,17 +9,17 @@ helpviewer_keywords:
 - MPF projects
 - managed package framework, creating projects
 ms.assetid: 926de536-eead-415b-9451-f1ddc8c44630
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c563d127e66b00b3f4358abe0ea86e2384bf371f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cb047c9ef8c5c47c6509a6a5947be77a488e22f5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895378"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060734"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>Implementowanie typu projektu przy użyciu środowiska pakietu zarządzanego (C#)
 Struktura pakietu zarządzanego (MPF) zawiera klasy języka C#, których można użyć lub dziedziczyły z, aby zaimplementować własne typy projektów. MPF implementuje wiele interfejsów program Visual Studio oczekuje typu projektu, który należy podać, dzięki czemu możesz skoncentrować się na implementowaniu szczegółowych informacji o typie projektu.

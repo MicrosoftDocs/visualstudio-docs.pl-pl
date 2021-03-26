@@ -8,17 +8,17 @@ helpviewer_keywords:
 - selection, tracking
 - selection, context objects
 ms.assetid: 7308ea8f-a42c-47e5-954e-7dee933dce7a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8fa0303d752351efd87847941037a36f2f90f2b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ca6239264ca1fa42edb0b73e8a96f523cb450857
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911100"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080843"
 ---
 # <a name="selection-context-objects"></a>Obiekty kontekstu wyboru
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Zintegrowane środowisko programistyczne (IDE) używa obiektu kontekstu globalnego wyboru, aby określić, co powinno być wyświetlane w środowisku IDE. Każde okno w IDE może mieć własny obiekt kontekstu zaznaczenia wypychany do globalnego kontekstu wyboru. IDE aktualizuje kontekst zaznaczenia globalnego z wartościami z okna, gdy to okno ma fokus. Aby uzyskać więcej informacji, zobacz [informacje zwrotne dla użytkownika](../../extensibility/internals/feedback-to-the-user.md).

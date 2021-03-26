@@ -9,17 +9,17 @@ helpviewer_keywords:
 - commands [Visual Studio]
 - toolbars [Visual Studio], commands
 ms.assetid: 07b4ed90-dbbd-40df-b6c9-8395fd6f2ab6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49ae9c27b27a1b3e32338521315007903d9e6825
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2a1b4cdb95fa5b053bc75efb559ea77b84ae56dd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884770"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057159"
 ---
 # <a name="commands-menus-and-toolbars"></a>Polecenia, menu i paski narzędzi
 Menu i paski narzędzi to sposób, w jaki użytkownicy uzyskują dostęp do poleceń w pakietu VSPackage. Polecenia to funkcje wykonujące zadania, takie jak drukowanie dokumentu, odświeżanie widoku lub tworzenie nowego pliku. Menu i paski narzędzi są wygodnym sposobem na prezentowanie poleceń użytkownikom. Zazwyczaj powiązane polecenia są klastrowane w tym samym menu lub pasku narzędzi.

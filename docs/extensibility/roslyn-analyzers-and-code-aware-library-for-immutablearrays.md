@@ -6,17 +6,17 @@ titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c41b70cf9a4e4e5ae4b1d1ddd2d2a6f6876b9a96
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e3bdcc9c35f5acaf9937bd18b0160f9e5a58161c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875526"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060590"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analizatory Roslyn i Biblioteka obsługująca kod ImmutableArrays
 
@@ -66,7 +66,7 @@ Umieść karetkę edytora w wierszu, który deklaruje `b1` . Zobaczysz, że Synt
 
 Z menu głównego wybierz pozycję **plik**  >  **Nowy**  >  **projekt**. W oknie dialogowym **Nowy projekt** w obszarze projekty **C#** na lewym pasku nawigacyjnym wybierz pozycję **rozszerzalność**, a następnie w prawym okienku wybierz szablon projektu **poprawka kodu** . Wprowadź nazwę i Potwierdź okno dialogowe.
 
-Szablon otwiera plik *DiagnosticAnalyzer.cs* . Wybierz kartę bufor edytora. Ten plik ma klasę analizatora (utworzoną na podstawie nazwy podanych w projekcie), która pochodzi od `DiagnosticAnalyzer` (typ interfejsu API Roslyn). Nowa Klasa `DiagnosticAnalyzerAttribute` deklaruje, że analizator ma zastosowanie do języka C#, dzięki czemu kompilator odnajduje i ładuje Analizator.
+Szablon otwiera plik *DiagnosticAnalyzer. cs* . Wybierz kartę bufor edytora. Ten plik ma klasę analizatora (utworzoną na podstawie nazwy podanych w projekcie), która pochodzi od `DiagnosticAnalyzer` (typ interfejsu API Roslyn). Nowa Klasa `DiagnosticAnalyzerAttribute` deklaruje, że analizator ma zastosowanie do języka C#, dzięki czemu kompilator odnajduje i ładuje Analizator.
 
 ```csharp
 [DiagnosticAnalyzer(LanguageNames.CSharp)]

@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e6e4a07a023be398c4106984fe4dc33eddd2706
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9486f1cd3e931d134c6fe2842f8704926de70966
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929202"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060708"
 ---
 # <a name="vsix-color-compiler"></a>Kompilator kolorów VSIX
 Visual Studio Extension Color Tool narzędzie kompilatora to Aplikacja konsolowa, która pobiera plik. XML reprezentujący kolory dla istniejących motywów programu Visual Studio i dzieli go na plik. pkgdef, dzięki czemu można używać tych kolorów w programie Visual Studio. Ponieważ można łatwo porównać różnice między plikami XML, to narzędzie jest przydatne do zarządzania kolorami niestandardowymi w kontroli źródła. Można go również podłączyć do środowisk kompilacji, aby dane wyjściowe kompilacji były prawidłowym plikiem. pkgdef.

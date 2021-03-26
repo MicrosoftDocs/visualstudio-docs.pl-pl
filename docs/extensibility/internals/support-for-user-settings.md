@@ -9,17 +9,17 @@ helpviewer_keywords:
 - user settings [Visual Studio SDK], registering persistence support
 - persistence, registering settings
 ms.assetid: ad9beac3-4f8d-4093-ad0e-6fb00444a709
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 06cd22ec933e72344ab743372fe30c1a3ddf5fbf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e0128ce1f27674010d1b624457815ddb1016e016
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901588"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080648"
 ---
 # <a name="support-for-user-settings"></a>Pomoc techniczna dotycząca ustawień użytkownika
 Pakietu VSPackage może definiować jedną lub więcej kategorii ustawień, które są grupami zmiennych stanu, które są zachowywane, gdy użytkownik wybierze polecenie **Importuj/Eksportuj ustawienia** w menu **Narzędzia** . Aby włączyć tę trwałość, Użyj ustawień API w [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] .

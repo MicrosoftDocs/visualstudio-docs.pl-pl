@@ -8,17 +8,17 @@ helpviewer_keywords:
 - installation [Visual Studio SDK], components
 - installation [Visual Studio SDK], file management
 ms.assetid: 029bffa2-6841-4caa-a41a-442467e1aedc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44ee1a3afe313cdc11bb28e0a24a89e3e3ad7f0c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9767af4c30957111526303600f9e8eda815b42f0
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852729"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057094"
 ---
 # <a name="component-management"></a>Zarządzanie składnikami
 Jednostki zadań w Instalator Windows są określane jako składniki Instalator Windows (czasami nazywane WICs lub tylko składnikami). Identyfikator GUID identyfikuje każdy WIC, który jest podstawową jednostką instalacji i zliczania odwołań dla konfiguracji, które używają Instalator Windows.

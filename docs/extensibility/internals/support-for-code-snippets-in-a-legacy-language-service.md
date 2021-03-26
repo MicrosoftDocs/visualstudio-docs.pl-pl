@@ -9,17 +9,17 @@ helpviewer_keywords:
 - code snippets, supporting in language services [managed package framework]
 - language services [managed package framework], supporting code snippets
 ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16f0df8a21621b93655935b3cfa27a4b62df63ce
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9578159554f77a9ad7553a56c054a863b3b63fd5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888150"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080765"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Obsługa fragmentów kodu w starszej wersji usługi językowej
 Fragment kodu jest fragmentem kodu, który jest wstawiany do pliku źródłowego. Sam fragment kodu jest szablonem opartym na formacie XML zawierającym zestaw pól. Te pola są wyróżniane po wstawieniu fragmentu i mogą mieć różne wartości w zależności od kontekstu, w którym wstawiany jest fragment kodu. Natychmiast po wstawieniu fragmentu, usługa języka może sformatować fragment kodu.

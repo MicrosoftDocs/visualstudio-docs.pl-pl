@@ -8,17 +8,17 @@ helpviewer_keywords:
 - source control [Visual Studio SDK], creating source control packages
 - source control packages
 ms.assetid: cca0a9ed-48ff-409f-8036-ed8db0f7533e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9be8b97b3e37a224b12781e66543f7ab126f2c6f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1085275427aeb02a767a66088ee58ced890dcb05
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958534"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056860"
 ---
 # <a name="create-a-source-control-vspackage"></a>Tworzenie pakietu VSPackage kontroli źródła
 Ta dokumentacja zawiera linki do omówienia architektury pakietu kontroli źródła zintegrowanego z programem [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , interfejs API, który jest zdefiniowany przez interfejsy do zaimplementowania i usługi, które mają być używane, oraz przykład, który ilustruje prostą implementację pakietu kontroli źródła.

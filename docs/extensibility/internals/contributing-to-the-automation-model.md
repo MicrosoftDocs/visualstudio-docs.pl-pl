@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK]
 ms.assetid: 44de482d-93c8-41a4-843c-cefda995a03e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38ea8d477b377f78f5c836ec4661989cdbf8999c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 44da0c91eb425cbd558aea4335447f9293684b90
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884614"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057042"
 ---
 # <a name="contribute-to-the-automation-model"></a>Współtworzenie modelu automatyzacji
 Program Visual Studio udostępnia zestaw interfejsów automatyzacji umożliwiających dostosowanie środowiska. Model automatyzacji to model obiektów, który umożliwia użytkownikom końcowym Tworzenie dodatków i rozszerzeń programu Visual Studio.
@@ -67,5 +67,5 @@ Program Visual Studio udostępnia zestaw interfejsów automatyzacji umożliwiaj�
 
  Zawiera informacje o automatyzacji dla obiektów Configuration i SelectedItems.
 
-## <a name="reference"></a>Dokumentacja
+## <a name="reference"></a>Odwołanie
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> Zawiera przykładowy kod, który pokazuje, jak pakietu VSPackage uczestniczy w modelu obiektów automatyzacji DTE. Wyświetla listę parametrów, wartości zwracane i wybrane uwagi.

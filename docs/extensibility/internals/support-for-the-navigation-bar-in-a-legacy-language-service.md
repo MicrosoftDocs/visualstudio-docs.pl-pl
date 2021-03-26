@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Navigation bar, supporting in language services [managed package framework]
 - language services [managed package framework], Navigation bar
 ms.assetid: 2d301ee6-4523-4b82-aedb-be43f352978e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d33b8452f727037226a50abe6a9493ce132e9564
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e75103d008e65c6d2060d598e442499f38a0e322
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932582"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080661"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Obsługa paska nawigacyjnego w starszej wersji usługi językowej
 Pasek nawigacyjny w górnej części widoku edytora wyświetla typy i elementy członkowskie w pliku. Typy są wyświetlane na liście rozwijanej po lewej stronie, a elementy członkowskie są wyświetlane na liście rozwijanej po prawej stronie. Gdy użytkownik wybierze typ, karetka zostanie umieszczona w pierwszym wierszu typu. Gdy użytkownik wybierze element członkowski, karetka zostanie umieszczona na definicji elementu członkowskiego. Pola rozwijane są aktualizowane w celu odzwierciedlenia bieżącej lokalizacji karetki.
