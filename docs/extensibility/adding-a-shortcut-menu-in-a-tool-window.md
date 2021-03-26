@@ -10,17 +10,17 @@ helpviewer_keywords:
 - shortcut menus, adding to tool windows
 - tool windows, adding context menus
 ms.assetid: 50234537-9e95-4b7e-9cb7-e5cf26d6e9d2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a35652c0eacf22a46eed3f3fc64c3bcc0d6d10ec
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3ba0eb2324812ca7536b361d602bb683d627c743
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951540"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105097620"
 ---
 # <a name="add-a-shortcut-menu-in-a-tool-window"></a>Dodawanie menu skrótów w oknie narzędzi
 W tym instruktażu jest umieszczane menu skrótów w oknie narzędzi. Menu skrótów to menu, które pojawia się po kliknięciu prawym przyciskiem myszy przycisku, pola tekstowego lub tła okna. Polecenia w menu skrótów zachowują się tak samo jak polecenia w innych menu lub paskach narzędzi. Aby obsłużyć menu skrótów, określ je w pliku *. vsct* i Wyświetl go w odpowiedzi na kliknięcie prawym przyciskiem myszy.
@@ -114,7 +114,7 @@ Menu skrótów, takie jak pokazane w tym instruktażu, umożliwia użytkownikowi
     </Buttons>
     ```
 
-5. W *ShortcutMenuCommand.cs*, Dodaj definicje dla identyfikatora GUID zestawu poleceń, menu skrótów i elementów menu.
+5. W *ShortcutMenuCommand. cs* Dodaj definicje dla identyfikatora GUID zestawu poleceń, menu skrótów i elementów menu.
 
     ```csharp
     public const string guidShortcutMenuPackageCmdSet = "00000000-0000-0000-0000-00000000"; // your GUID will differ
@@ -129,9 +129,9 @@ Menu skrótów, takie jak pokazane w tym instruktażu, umożliwia użytkownikowi
 ## <a name="implementing-the-shortcut-menu"></a>Implementowanie menu skrótów
  Ta sekcja implementuje menu skrótów i jego poleceń.
 
-1. W programie *ShortcutMenu.cs* okno narzędzi może pobrać usługę poleceń menu, ale kontrolka, która zawiera, nie może. Poniższe kroki pokazują, jak udostępnić usługę poleceń menu dla kontrolki użytkownika.
+1. W tabeli *ShortcutMenu. cs* okno narzędzi może pobrać usługę poleceń menu, ale kontrolka, która zawiera, nie może. Poniższe kroki pokazują, jak udostępnić usługę poleceń menu dla kontrolki użytkownika.
 
-2. W *ShortcutMenu.cs* Dodaj następujące dyrektywy using:
+2. W obszarze *ShortcutMenu. cs* Dodaj następujące dyrektywy using:
 
     ```csharp
     using Microsoft.VisualStudio.Shell;
@@ -159,7 +159,7 @@ Menu skrótów, takie jak pokazane w tym instruktażu, umożliwia użytkownikowi
     }
     ```
 
-5. W *ShortcutMenuControl.XAML.cs* Dodaj pole private dla usługi poleceń menu i Zmień konstruktora formantów, aby przetworzyć usługę poleceń menu. Następnie użyj usługi poleceń menu, aby dodać polecenia menu kontekstowego. Konstruktor ShortcutMenuControl powinien teraz wyglądać podobnie do następującego kodu. Program obsługi poleceń zostanie zdefiniowany później.
+5. W *ShortcutMenuControl. XAML. cs* Dodaj pole private dla usługi poleceń menu i Zmień konstruktora formantów, aby przetworzyć usługę poleceń menu. Następnie użyj usługi poleceń menu, aby dodać polecenia menu kontekstowego. Konstruktor ShortcutMenuControl powinien teraz wyglądać podobnie do następującego kodu. Program obsługi poleceń zostanie zdefiniowany później.
 
     ```csharp
     public ShortcutMenuControl(OleMenuCommandService service)
@@ -207,7 +207,7 @@ Menu skrótów, takie jak pokazane w tym instruktażu, umożliwia użytkownikowi
     </UserControl>
     ```
 
-7. W *ShortcutMenuControl.XAML.cs*, Dodaj element zastępczy dla programu obsługi zdarzeń.
+7. W *ShortcutMenuControl. XAML. cs* Dodaj procedurę dla programu obsługi zdarzeń.
 
     ```csharp
     private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)

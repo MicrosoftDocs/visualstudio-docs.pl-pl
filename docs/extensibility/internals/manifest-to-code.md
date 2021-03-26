@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 709867c44456223da129460eb6ea72c413ba5b48
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5ae844b0b0b6d585895b6939d1d33b2a699c2756
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839418"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105095163"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 Narzędzie Manifest to Code jest aplikacją konsolową, która pobiera plik. imagemanifest dla usługi obrazów programu Visual Studio i generuje plik lub pliki otoki do odwoływania się do wartości manifestu obrazu w plikach C++, C#, VB i. vsct dla rozszerzeń programu Visual Studio. To narzędzie generuje pliki otoki, których można użyć do żądania obrazów z usługi obrazów programu Visual Studio bezpośrednio lub do przekazywania wartości manifestu za pośrednictwem interfejsów API, jeśli kod nie obsługuje żadnego z własnych interfejsów użytkownika i renderowania.

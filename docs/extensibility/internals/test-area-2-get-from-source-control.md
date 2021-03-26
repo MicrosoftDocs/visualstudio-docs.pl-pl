@@ -8,17 +8,17 @@ helpviewer_keywords:
 - source control plug-ins, getting items from source control
 - source control [Visual Studio SDK], getting items from
 ms.assetid: cbd345c5-ca43-4630-b7a4-85564f4e2090
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83b869a91b823a2f14823ab65a745a3ef6c0d883
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ab6a35aa896d7a68e151007d6f694672f7477688
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898227"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073433"
 ---
 # <a name="test-area-2-get-from-source-control"></a>Obszar testowy 2: pobieranie z kontroli kodu źródłowego
 Ten obszar testowy obejmuje przypadki testowe związane z pobieraniem elementów z magazynu wersji za pomocą polecenia Get. Te przypadki testowe mogą być stosowane zarówno do projektów lokalnych, jak i w sieci Web.

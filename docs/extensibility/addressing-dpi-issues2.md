@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8151748b946d2c1b5ad21359569d6f5f856f9250
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9cf7b4fe19cdefe11b77de1418b16454089f45c6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99876163"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105097516"
 ---
 # <a name="address-dpi-issues"></a>Problemy dotyczące DPI adresów
 Rosnąca liczba urządzeń jest wysyłana z ekranami o wysokiej rozdzielczości. Ekrany te zwykle mają ponad 200 pikseli na cal (ppi). Praca z aplikacją na tych komputerach będzie wymagała skalowania zawartości w górę w celu spełnienia potrzeb związanych z wyświetlaniem zawartości przy normalnej odległości do wyświetlania na urządzeniu. Począwszy od 2014, podstawowy element docelowy dla ekranów o wysokiej gęstości jest urządzeniami przenośnymi z obsługą urządzeń przenośnych (tabletów, laptopów clamshell i telefonów).

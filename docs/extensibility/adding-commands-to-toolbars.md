@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 4f8cfba8-0653-4ccc-a2da-acf064c83aa7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12fd6e336631eeabe1761276442df993d44affe8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6478009e1887fb494bcff1433fb75d81207a7974
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939217"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105097582"
 ---
 # <a name="add-commands-to-toolbars"></a>Dodawanie poleceń do pasków narzędzi
 Pasek narzędzi to poziomy lub pionowy pasek, który zawiera przyciski powiązane z poleceniami. Możesz dodać własne polecenia do pasków narzędzi w wielu różnych oknach w programie Visual Studio: główne okno programu Visual Studio, Eksplorator rozwiązań i własne niestandardowe okna narzędzi.

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - IntelliSense, Complete Word
 - Complete Word
 ms.assetid: 0ace5ac3-f9e1-4e6d-add4-42967b1f96a6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3625719987afc94deda314fa61d7a8cc2c1c843
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 360778e4dbc89130e8a533640fefb188047fe8ca
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943371"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074083"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>Uzupełnianie wyrazów w starszej wersji usługi językowej
 Uzupełnianie wyrazów wypełnia brakujące znaki w częściowo określonym słowie. Jeśli istnieje tylko jedno możliwe zakończenie, słowo zostanie zakończone po wprowadzeniu znaku uzupełniania. Jeśli częściowy wyraz jest zgodny z więcej niż jedną możliwością, zostanie wyświetlona lista możliwych uzupełnień. Znak uzupełniania może być dowolnym znakiem, który nie jest używany do identyfikatorów.

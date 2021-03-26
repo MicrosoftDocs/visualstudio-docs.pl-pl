@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65e4b16beefdef765fe52afd9d84e64a767999fa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 42bd932b093ae805e8885bc9fc61324c3cadbe30
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839431"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105095176"
 ---
 # <a name="manifest-from-resources"></a>Manifest from Resources
 Narzędzie Manifest from Resources to Aplikacja konsolowa, która pobiera listę zasobów obrazów (plików PNG lub XAML) i generuje plik. imagemanifest, który umożliwia korzystanie z tych obrazów w usłudze obrazów programu Visual Studio. Ponadto to narzędzie może służyć do dodawania obrazów do istniejącej imagemanifest. To narzędzie jest przydatne do dodawania obsługi dużych rozdzielczości DPI i dla obrazów do rozszerzenia programu Visual Studio. Wygenerowany plik imagemanifest powinien być dołączony do programu i wdrożony jako część rozszerzenia programu Visual Studio (VSIX).
