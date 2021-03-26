@@ -6,17 +6,17 @@ ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], API reference
 ms.assetid: e4e429da-3667-41f7-9158-a8207d13e91a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47c6697945c6c588a8b4e57ab03d573d45c4d4cf
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: a8a43e4bae5afce98e07b196f5a01c33d44c72ca
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102144640"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085549"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>Dokumentacja interfejsu API (Debugowanie w programie Visual Studio)
 Sekcja Reference zawiera omówienie pojęć dotyczących interfejsu API, przewodnik, który pokazuje składnię i użycie dla wszystkich elementów interfejsu API oraz asortyment przykładów kodu. Wszystkie odwołania są wyświetlane alfabetycznie według kategorii.

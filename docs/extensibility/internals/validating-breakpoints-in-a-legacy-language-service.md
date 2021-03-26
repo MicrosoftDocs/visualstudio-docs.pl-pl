@@ -8,17 +8,17 @@ helpviewer_keywords:
 - breakpoint validation
 - language services [managed package framework], breakpoint validation
 ms.assetid: a7e873cd-dfe1-474f-bda5-fd7532774b15
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 593663c4906cc669c52336ffe6689e8de9fcde48
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 86029300c34e111344157bf39a15dceab8c1b77a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941596"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085796"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>Sprawdzanie poprawności punktów przerwania w starszej wersji usługi językowej
 Punkt przerwania wskazuje, że wykonanie programu powinno zostać zatrzymane w określonym momencie, gdy jest uruchamiane w debugerze. Użytkownik może umieścić punkt przerwania w dowolnym wierszu w pliku źródłowym, ponieważ Edytor nie ma informacji o tym, co stanowi prawidłową lokalizację punktu przerwania. Po uruchomieniu debugera wszystkie oznaczone punkty przerwania (nazywane punktami przerwania w toku) są powiązane z odpowiednią lokalizacją w uruchomionym programie. W tym samym czasie punkty przerwania są sprawdzane, aby upewnić się, że oznaczają poprawne lokalizacje kodu. Na przykład punkt przerwania komentarza jest nieprawidłowy, ponieważ nie ma kodu w tej lokalizacji w kodzie źródłowym. Debuger wyłącza nieprawidłowe punkty przerwania.

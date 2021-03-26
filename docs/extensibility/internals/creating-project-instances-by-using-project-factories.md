@@ -8,17 +8,17 @@ helpviewer_keywords:
 - project factories
 - projects [Visual Studio SDK], project factories
 ms.assetid: 94c90012-8669-459c-af8e-307ac242c8c4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e90b12b12589fff89f4df1241eb73504e8bdb74
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 40b7c3fbe5b5b7fd59fe0e57376290181f3e9a20
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903140"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056805"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>Tworzenie wystąpień projektu przy użyciu fabryk projektów
 Typy projektów w programie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] wykorzystują *fabrykę projektu* do tworzenia wystąpień obiektów projektu. Fabryka projektu jest podobna do standardowej fabryki klas dla współtworzących obiektów COM. Jednak obiekty projektu nie można współistnieć. mogą być tworzone tylko przy użyciu fabryki projektu.

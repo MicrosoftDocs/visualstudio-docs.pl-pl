@@ -8,17 +8,17 @@ helpviewer_keywords:
 - tutorials
 - tool windows
 ms.assetid: 8e16c381-03c8-404e-92ef-3614cdf3150a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3c84eafcfe19efdf6427db10f65dcf24504b598
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 314a684e34c91f43abe9babe4cdd6efc8a15cc35
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951436"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085523"
 ---
 # <a name="add-a-tool-window"></a>Dodaj okno narzędzi
 
@@ -117,7 +117,7 @@ Dodaj polecenie do paska narzędzi, które jest wyświetlane jako przycisk.
     </Button>
     ```
 
-3. Otwórz *FirstToolWindowCommand.cs* i Dodaj następujące wiersze w klasie tuż po istniejących polach.
+3. Otwórz *FirstToolWindowCommand. cs* i Dodaj następujące wiersze w klasie tuż po istniejących polach.
 
     ```csharp
     public const string guidFirstToolWindowPackageCmdSet = "00000000-0000-0000-0000-0000";  // get the GUID from the .vsct file
@@ -143,7 +143,7 @@ public System.Windows.Controls.MediaElement MediaPlayer
 ## <a name="instantiate-the-tool-window-and-toolbar"></a>Tworzenie wystąpienia okna narzędzia i paska narzędzi
 Dodaj pasek narzędzi i polecenie menu, które wywołuje okno dialogowe **Otwórz plik** i odtwarza wybrany plik multimedialny.
 
-1. Otwórz *FirstToolWindow.cs* i Dodaj następujące `using` dyrektywy:
+1. Otwórz *FirstToolWindow. cs* i Dodaj następujące `using` dyrektywy:
 
     ```csharp
     using System.ComponentModel.Design;
@@ -188,7 +188,7 @@ Dodaj pasek narzędzi i polecenie menu, które wywołuje okno dialogowe **Otwór
     }
     ```
 
-6. Dodaj polecenie menu do paska narzędzi. W klasie FirstToolWindowCommand.cs Dodaj następującą dyrektywę using:
+6. Dodaj polecenie menu do paska narzędzi. W klasie FirstToolWindowCommand. cs Dodaj następującą dyrektywę using:
 
     ```csharp
     using System.Windows.Forms;
@@ -255,9 +255,9 @@ Dodaj pasek narzędzi i polecenie menu, które wywołuje okno dialogowe **Otwór
 
 ## <a name="set-the-default-position-for-the-tool-window"></a>Ustaw domyślną pozycję okna narzędzi
 
-Następnie określ lokalizację domyślną w IDE dla okna narzędzi. Informacje o konfiguracji okna narzędzia są w pliku *FirstToolWindowPackage.cs* .
+Następnie określ lokalizację domyślną w IDE dla okna narzędzi. Informacje o konfiguracji okna narzędzia znajduje się w pliku *FirstToolWindowPackage. cs* .
 
-1. W *FirstToolWindowPackage.cs* Znajdź <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> atrybut `FirstToolWindowPackage` klasy, który przekazuje typ FirstToolWindow do konstruktora. Aby określić domyślną pozycję, należy dodać więcej parametrów do konstruktora poniżej przykładu.
+1. W *FirstToolWindowPackage. cs* Znajdź <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> atrybut `FirstToolWindowPackage` klasy, który przekazuje typ FirstToolWindow do konstruktora. Aby określić domyślną pozycję, należy dodać więcej parametrów do konstruktora poniżej przykładu.
 
     ```csharp
     [ProvideToolWindow(typeof(FirstToolWindow),

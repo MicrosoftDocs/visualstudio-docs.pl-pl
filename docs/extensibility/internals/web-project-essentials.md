@@ -7,24 +7,24 @@ ms.topic: conceptual
 helpviewer_keywords:
 - web projects, essentials
 ms.assetid: ca2f4e43-322c-4431-8680-52da846940bc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b071631018ef398be481ccf514b33296e55fc2e8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9442dcdd460e1213c3c07ee87a5ea2e0d7099072
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886876"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085705"
 ---
 # <a name="web-project-essentials"></a>Podstawowe informacje dotyczące projektów internetowych
 Projekty sieci Web tworzą aplikacje sieci Web. Możesz użyć projektu sieci Web, aby utworzyć aplikację sieci Web, która ma inteligentne strony sieci Web. Inteligentna Strona sieci Web zawiera kod po stronie serwera, który renderuje stronę sieci Web na żądanie.
 
  Używając tradycyjnych języków programowania, takich jak [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] lub [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] , możesz tworzyć inteligentne strony sieci Web, aby zbierać i przetwarzać informacje od użytkownika, przechowywać je w bazie danych i tak dalej.
 
-- Model związany z kodem kojarzy zależne pliki kodu źródłowego ze stronami sieci Web, które mają rozszerzenie. aspx lub. asmx. Na przykład Hello. aspx może mieć zależny plik kodu źródłowego hello.aspx.cs.
+- Model związany z kodem kojarzy zależne pliki kodu źródłowego ze stronami sieci Web, które mają rozszerzenie. aspx lub. asmx. Na przykład Witaj. aspx może być zależny od pliku kodu źródłowego Hello. aspx. cs.
 
 - Kod po stronie serwera skojarzony z inteligentną stroną sieci Web jest kompilowany do pliku wykonywalnego, który znajduje się w folderze/bin. witryny sieci Web.
 
