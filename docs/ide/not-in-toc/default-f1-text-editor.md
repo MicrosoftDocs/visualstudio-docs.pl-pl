@@ -1,45 +1,46 @@
 ---
 title: Domyślna strona pomocy F1 dla edytora tekstu
 description: Domyślna strona dla edytora tekstu programu Visual Studio dotycząca żądań pomocy F1
-ms.date: 08/20/2020
+ms.date: 03/25/2021
 ms.topic: troubleshooting
-ms.custom: contperf-fy21q1
+ms.custom: contperf-fy21q3
 robots: noindex,nofollow
 f1_keywords:
 - vs.texteditor
 manager: jmartens
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 6d30a7bf02202b8114e594c94f7564a1d8683e32
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6d22a07e29b45362324074329aabfddf2b247a6b
+ms.sourcegitcommit: 00e16b9afe6b22ba0591e4d0d92690544e6d4357
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961654"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105616912"
 ---
-# <a name="f1-help-for-the-text-editor"></a>F1 — Pomoc dla edytora tekstu
+# <a name="code-editor-f1-help"></a>Edytor kodu F1 — Pomoc
 
 Wygląda na to, że nie udało nam się znaleźć tego, czego szukasz, i Przepraszamy. Możesz pomóc nam ulepszyć program, pozostawiając Opinie na przyciskach w dolnej części tej strony lub wypróbuj jedną z następujących sugestii.
 
-## <a name="cursor-position"></a>Położenie kursora
+## <a name="get-help-for-your-programming-language"></a>Uzyskać pomoc dotyczącą języka programowania?
 
-Jeśli szukasz pomocy F1 dla słowa kluczowego lub nazwy interfejsu API, pamiętaj, aby umieścić kursor wewnątrz lub po prawej stronie słowa przed naciśnięciem klawisza **F1**. Jeśli to nie rozwiąże problemu, wypróbuj jedną z następujących sugestii.
+- [Przewodnik programowania w języku C#](/dotnet/csharp/programming-guide/) lub [Dokumentacja języka](/dotnet/csharp/language-reference/).
+- [Visual Basic funkcje języka](/dotnet/visual-basic/programming-guide/language-features/) lub [Dokumentacja języka](/dotnet/visual-basic/language-reference/).
+- [Dokumentacja języka Python](https://docs.python.org/).
+- [Dokumentacja języka C/C++ i bibliotek standardowych](/cpp/cpp/c-cpp-language-and-standard-libraries).
+- [Przewodnik po języku F #](/dotnet/fsharp/).
+- [Dokumentacja języka TypeScript](https://www.typescriptlang.org/docs).
 
-## <a name="find-help-on-a-keyword-or-api"></a>Znajdź pomoc dotyczącą słowa kluczowego lub interfejsu API
-
-- Aby uzyskać pomoc dotyczącą języka C#, zobacz [Przewodnik programowania w języku C#](/dotnet/csharp/programming-guide/) lub [Dokumentacja języka](/dotnet/csharp/language-reference/).
-- Aby uzyskać pomoc dotyczącą Visual Basic, zobacz [Visual Basic funkcje języka](/dotnet/visual-basic/programming-guide/language-features/) lub [Dokumentacja języka](/dotnet/visual-basic/language-reference/).
-- Aby uzyskać pomoc dotyczącą języka Python, zobacz [dokumentację języka Python](https://docs.python.org/).
-- Aby uzyskać pomoc dotyczącą języka C++, zobacz [Dokumentacja języka C/c++ i biblioteki standardowe](/cpp/cpp/c-cpp-language-and-standard-libraries).
-- Aby uzyskać pomoc dotyczącą języka F #, zobacz [Przewodnik po języku f #](/dotnet/fsharp/).
-- Aby uzyskać pomoc dotyczącą języka TypeScript, zobacz [dokumentację języka TypeScript](https://www.typescriptlang.org/docs).
-
-## <a name="search-for-help-on-a-keyword-or-api-name"></a>Wyszukaj pomoc dotyczącą słowa kluczowego lub nazwy interfejsu API
+## <a name="search-for-help-on-keyword-api-name-file-type-or-ui-settings"></a>Wyszukaj pomoc dotyczącą słowa kluczowego, nazwy interfejsu API, typu pliku lub ustawień interfejsu użytkownika
 
 Jeśli szukasz pomocy F1 dla słowa kluczowego lub nazwy interfejsu API:
+
 - Spróbuj wyszukać w witrynie [docs.Microsoft.com](/)
 - Spróbuj wyszukać przy użyciu wyszukiwarki.
 - Wyszukaj dokumentację referencyjną w [przeglądarce interfejsów API platformy .NET](/dotnet/api/).
+
+## <a name="cursor-position"></a>Położenie kursora
+
+Jeśli szukasz pomocy F1 dla słowa kluczowego lub nazwy interfejsu API, pamiętaj, aby umieścić kursor wewnątrz lub po prawej stronie słowa przed naciśnięciem klawisza **F1**.
 
 ## <a name="find-the-source-code-for-an-api"></a>Znajdowanie kodu źródłowego dla interfejsu API
 

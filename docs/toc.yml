@@ -62,6 +62,10 @@
                   href: install/troubleshooting-network-related-errors-in-visual-studio.md
         - name: Wdrażanie w przedsiębiorstwie
           items:
+            - name: Stosowanie aktualizacji administratorów
+              href: install/applying-administrator-updates.md
+            - name: Włączanie aktualizacji administratorów
+              href: install/enabling-administrator-updates.md
             - name: Zautomatyzowana instalacja programu Visual Studio przy użyciu pliku odpowiedzi
               href: install/automated-installation-with-response-file.md
             - name: Automatyczne stosowanie kluczy produktów podczas wdrażania programu Visual Studio

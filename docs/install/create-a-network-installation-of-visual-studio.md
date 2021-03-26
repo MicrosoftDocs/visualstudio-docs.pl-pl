@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b572a6854d505704accd79cc4da2ac4e52c193d6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e76c5346230b6991f238384a4852938dcc540f6c
+ms.sourcegitcommit: 00e16b9afe6b22ba0591e4d0d92690544e6d4357
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850178"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105616938"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Tworzenie instalacji sieciowej programu Visual Studio
 
@@ -70,7 +70,7 @@ Inne obsługiwane programu inicjujące obejmują [vs_teamexplorer.exe](https://d
 
 ## <a name="create-an-offline-installation-folder"></a>Tworzenie folderu instalacyjnego w trybie offline
 
-Aby ukończyć ten krok, musisz mieć połączenie z Internetem. Aby utworzyć instalację w trybie offline ze wszystkimi językami i wszystkimi funkcjami, użyj polecenia, które jest podobne do jednego z poniższych przykładów.
+Aby ukończyć ten krok, musisz mieć połączenie z Internetem. Aby utworzyć instalację w trybie offline ze wszystkimi językami i wszystkimi funkcjami, użyj polecenia, które jest podobne do jednego z poniższych przykładów. Ten folder musi pozostać statyczny, a wszystkie aktualizacje układu muszą być zawarte w tym folderze. 
 
    > [!IMPORTANT]
    > Pełny układ ustawień regionalnych dla jednego języka wymaga około 35 GB miejsca na dysku dla programu Visual Studio Community i 42 GB na Visual Studio Enterprise. Dodatkowe [Ustawienia regionalne języka](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales) wymagają około połowy GB każdego z nich. Aby uzyskać więcej informacji, zobacz sekcję [Dostosowywanie układu sieciowego](#customize-the-network-layout) .

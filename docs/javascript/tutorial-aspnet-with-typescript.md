@@ -1,7 +1,7 @@
 ---
 title: Tworzenie aplikacji ASP.NET Core w języku TypeScript
 description: W tym samouczku utworzysz aplikację przy użyciu ASP.NET Core i języka TypeScript
-ms.date: 03/16/2020
+ms.date: 03/25/2021
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 6297f7a392a497b79adca991b1ceba7fd701856d
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.openlocfilehash: ce27b8fdd73c1fcc001861a9b1fb7c2e9e4f4058
+ms.sourcegitcommit: 00e16b9afe6b22ba0591e4d0d92690544e6d4357
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104672842"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105616990"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>Samouczek: Tworzenie aplikacji ASP.NET Core przy użyciu języka TypeScript w programie Visual Studio
 
@@ -287,7 +287,10 @@ W tym samouczku rozpocznie się Tworzenie prostego projektu zawierającego kod d
 
 ## <a name="next-steps"></a>Następne kroki
 
-Warto dowiedzieć się więcej na temat używania języka TypeScript z ASP.NET Core.
+Warto dowiedzieć się więcej na temat używania języka TypeScript z ASP.NET Core. Jeśli interesuje Cię programowanie AngularJS w programie Visual Studio, możesz użyć [rozszerzenia usługi językowej AngularJS](https://devblogs.microsoft.com/visualstudio/angular-language-service-for-visual-studio) dla programu Visual Studio.
 
 > [!div class="nextstepaction"]
 > [ASP.NET Core i TypeScript](https://www.typescriptlang.org/docs/handbook/asp-net-core.html)
+
+> [!div class="nextstepaction"]
+> [Rozszerzenie usługi językowej AngularJS](https://devblogs.microsoft.com/visualstudio/angular-language-service-for-visual-studio)
