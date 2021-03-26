@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - multiple document views
 ms.assetid: c7ec2366-91c4-477f-908d-e89068bdb3e3
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5360f67714e1da4f7372ee51eb4f75cc8835c1fd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e54ee028c6a7db2d5d2ea1ab609be6c2887c9829
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965125"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056210"
 ---
 # <a name="supporting-multiple-document-views"></a>Obsługa wielu widoków dokumentu
 Można podać więcej niż jeden widok dokumentu, tworząc oddzielne dane dokumentu i obiekty widoku dokumentu dla edytora. Niektóre przypadki, w których będzie przydatny dodatkowy widok dokumentu, są następujące:
@@ -26,7 +26,7 @@ Można podać więcej niż jeden widok dokumentu, tworząc oddzielne dane dokume
 
 - Obsługa formularzy i kodu: chcesz, aby Edytor zapewniał widoki różnych typów. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]na przykład program udostępnia widok formularza i widok kodu.
 
-  Aby uzyskać więcej informacji na ten temat, zobacz procedurę metody CreateEditorInstance w pliku EditorFactory.cs w projekcie edytora niestandardowego utworzonym przez szablon pakietu programu Visual Studio. Aby uzyskać więcej informacji na temat tego projektu, zobacz [Przewodnik: Tworzenie niestandardowego edytora](../extensibility/walkthrough-creating-a-custom-editor.md).
+  Aby uzyskać więcej informacji na ten temat, zobacz procedurę metody CreateEditorInstance w pliku EditorFactory. cs w projekcie edytora niestandardowego utworzonym przez szablon pakietu programu Visual Studio. Aby uzyskać więcej informacji na temat tego projektu, zobacz [Przewodnik: Tworzenie niestandardowego edytora](../extensibility/walkthrough-creating-a-custom-editor.md).
 
 ## <a name="synchronizing-views"></a>Synchronizowanie widoków
  Podczas implementowania wielu widoków obiekt danych dokumentu jest odpowiedzialny za przechowywanie wszystkich widoków synchronizowanych z danymi. Korzystając z interfejsów obsługi zdarzeń, można <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> synchronizować wiele widoków z danymi.

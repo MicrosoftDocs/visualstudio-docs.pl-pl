@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], supporting
 ms.assetid: 567acde3-354e-4f39-8d99-0ef86c103396
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6923eb7a534a4cacf8062883d073ddddc9395e17
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 56880cab310367a5c4da3af0cf310867a5519495
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892557"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080609"
 ---
 # <a name="supporting-source-control"></a>Obsługa kontroli kodu źródłowego
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] obsługuje wyewidencjonowywanie plików, ewidencjonowanie i inne operacje kontroli źródła dla projektu lub edytora. Jako klient kontroli źródła [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] został zaprojektowany w celu współdziałania z pakietem kontroli źródła, np [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] ., który oferuje funkcje archiwizowania, obsługi wersji i kontroli dla dynamicznie zdefiniowanego zestawu plików.
@@ -43,7 +43,7 @@ ms.locfileid: "99892557"
 
  Opisuje sposób rejestrowania projektu, gdy użytkownik dodaje go do systemu kontroli źródła.
 
-## <a name="reference"></a>Dokumentacja
+## <a name="reference"></a>Odwołanie
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> Wskazuje środowisko lub pakiet kontroli źródła, w którym plik zostanie zmieniony w pamięci lub zapisany.
 
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2> Zezwala na projekty i hierarchie do zarejestrowania się w kontroli źródła i uzyskiwania informacji o stanie kontroli źródła.

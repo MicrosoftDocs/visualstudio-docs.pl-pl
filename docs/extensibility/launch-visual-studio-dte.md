@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 04/26/2019
 ms.topic: conceptual
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2c3703cf0e95b83492f1cb50548d9a90336e34a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 549575d85de9fc1c37ebc4aa34c05e29837885df
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99848146"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060582"
 ---
 # <a name="launch-visual-studio-using-dte"></a>Uruchamianie programu Visual Studio przy użyciu DTE
 
@@ -33,7 +33,7 @@ Aby wyświetlić kod uruchamiania w akcji, Utwórz projekt, wykonując następuj
 
 3. Dodaj odwołanie do EnvDTE.
 
-4. Wklej [przykładowy kod](#example-code) , który następuje po pliku *program.cs* .
+4. Wklej [przykładowy kod](#example-code) znajdujący się poniżej w pliku *program. cs* .
 
 5. Naciśnij klawisz **F5** , aby uruchomić program. Przed zakończeniem działania programu powinien zostać otwarty program Visual Studio 2019.
 

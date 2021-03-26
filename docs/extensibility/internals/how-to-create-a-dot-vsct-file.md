@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - VSCT files, creating
 ms.assetid: b955f51c-f9f9-49c3-a8e4-63b6eb0e0341
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66174d5de1abb4f5bdd23eeab0155a795cf0b634
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7fe1d92a9117193a72f579a01f264f1a13be6b6e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99879985"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056613"
 ---
 # <a name="how-to-create-a-vsct-file"></a>Instrukcje: Tworzenie pliku. vsct
 
@@ -140,7 +140,7 @@ Można utworzyć plik *vsct* oparty na języku XML z istniejącego pliku binarne
 
      Ten znacznik powinien być umieszczony wewnątrz `ItemGroup` elementu, który zawiera osadzone zasoby.
 
-4. Otwórz plik pakietu, zazwyczaj o nazwie *\<ProjectName\> Package.cs* lub *\<ProjectName\> Package. vb*, w edytorze.
+4. Otwórz plik pakietu o nazwie *\<ProjectName\> Package. cs* lub *\<ProjectName\> Package. vb* w edytorze.
 
 5. Dodaj `ProvideMenuResource` atrybut do klasy pakietu, jak pokazano w poniższym przykładzie.
 
