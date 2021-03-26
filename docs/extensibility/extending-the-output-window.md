@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Output window, about Output window
 ms.assetid: b02fa88c-f92a-4ff6-ba5f-2eb4d48a643a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91c59737d269af4eb91df402f38346cf41e3146e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cf875d070d27d307380f23e71af2bda7c4a205b5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961771"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105075045"
 ---
 # <a name="extend-the-output-window"></a>Rozwiń okno danych wyjściowych
 Okno **dane wyjściowe** to zestaw okienek tekstu do odczytu i zapisu. Program Visual Studio zawiera następujące wbudowane okienka: **kompilacja**, w której projekty komunikują się z komunikatami o kompilacjach, a **Ogólne**, w którym [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] KOMUNIKUJĄ się komunikaty dotyczące środowiska IDE. Projekty uzyskują odwołanie do okienka **kompilacji** automatycznie za pośrednictwem <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> metod interfejsu, a program Visual Studio oferuje bezpośredni dostęp do okienka **Ogólne** za pośrednictwem <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> usługi. Oprócz wbudowanych okienek można tworzyć własne okienka niestandardowe i zarządzać nimi.
@@ -35,14 +35,14 @@ Okno **dane wyjściowe** to zestaw okienek tekstu do odczytu i zapisu. Program V
 
     2. EnvDTE80
 
-3. W *TestOutput.cs* Dodaj następującą instrukcję using:
+3. W *TestOutput. cs* Dodaj następującą instrukcję using:
 
     ```f#
     using EnvDTE;
     using EnvDTE80;
     ```
 
-4. W *TestOutput.cs* Usuń `ShowMessageBox` metodę. Dodaj następujący skrót metody:
+4. W *TestOutput. cs* Usuń `ShowMessageBox` metodę. Dodaj następujący skrót metody:
 
     ```csharp
     private void OutputCommandHandler(object sender, EventArgs e)

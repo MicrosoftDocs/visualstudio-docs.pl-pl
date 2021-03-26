@@ -10,17 +10,17 @@ helpviewer_keywords:
 - tutorials
 - visual studio package
 ms.assetid: f97104c8-2bcb-45c7-a3c9-85abeda8df98
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ada5870bc06465b97bdf767eb64910f62e15f0a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: de79662494a3228dd301e8d08480c6aa0a0192a2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944911"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089215"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>Tworzenie rozszerzenia za pomocą polecenia menu
 
@@ -36,13 +36,13 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
 
 ::: moniker range="vs-2017"
 
-2. Po otwarciu projektu Dodaj niestandardowy szablon elementu polecenia o nazwie **FirstCommand**. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >  **nowy element**. W oknie dialogowym **Dodaj nowy element** przejdź do rozszerzalności **Visual C#**  >   i wybierz **polecenie niestandardowe**. W polu **Nazwa** w dolnej części okna Zmień nazwę pliku polecenia na *FirstCommand.cs*.
+2. Po otwarciu projektu Dodaj niestandardowy szablon elementu polecenia o nazwie **FirstCommand**. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >  **nowy element**. W oknie dialogowym **Dodaj nowy element** przejdź do rozszerzalności **Visual C#**  >   i wybierz **polecenie niestandardowe**. W polu **Nazwa** w dolnej części okna Zmień nazwę pliku polecenia na *FirstCommand. cs*.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. Po otwarciu projektu Dodaj niestandardowy szablon elementu polecenia o nazwie **FirstCommand**. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >  **nowy element**. W oknie dialogowym **Dodaj nowy element** przejdź do rozszerzalności **Visual C#**  >   i wybierz **polecenie**. W polu **Nazwa** w dolnej części okna Zmień nazwę pliku polecenia na *FirstCommand.cs*.
+2. Po otwarciu projektu Dodaj niestandardowy szablon elementu polecenia o nazwie **FirstCommand**. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >  **nowy element**. W oknie dialogowym **Dodaj nowy element** przejdź do rozszerzalności **Visual C#**  >   i wybierz **polecenie**. W polu **Nazwa** w dolnej części okna Zmień nazwę pliku polecenia na *FirstCommand. cs*.
 
 ::: moniker-end
 
@@ -68,7 +68,7 @@ Teraz przejdź do menu **Narzędzia** w wystąpieniu eksperymentalnym. Powinien 
 
 Teraz zaktualizujmy procedurę obsługi poleceń, aby uruchomić Notatnik.
 
-1. Zatrzymaj debugowanie i wróć do działającego wystąpienia programu Visual Studio. Otwórz plik *FirstCommand.cs* i Dodaj następującą instrukcję using:
+1. Zatrzymaj debugowanie i wróć do działającego wystąpienia programu Visual Studio. Otwórz plik *FirstCommand. cs* i Dodaj następującą instrukcję using:
 
     ```csharp
     using System.Diagnostics;

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - toolbox
 - wpf
 ms.assetid: 9cc34db9-b0d1-4951-a02f-7537fbbb51ad
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b401baf1605a869772ba41ce83ad906061f8144
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1dccdeb09a938b3b0bbbab803faeed538001b825
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851442"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089254"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>Tworzenie kontrolki przybornika WPF
 
@@ -33,7 +33,7 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
 
 1. Utwórz projekt VSIX o nazwie `MyToolboxControl` . Szablon projektu VSIX można znaleźć w oknie dialogowym **Nowy projekt** , wyszukując frazę "VSIX".
 
-2. Po otwarciu projektu Dodaj szablon elementu **kontrolki przybornika WPF** o nazwie `MyToolboxControl` . W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >  **nowy element**. W oknie dialogowym **Dodaj nowy element** przejdź do rozszerzalności **Visual C#**  >   i wybierz **kontrolkę Przybornik WPF**. W polu **Nazwa** w dolnej części okna Zmień nazwę pliku polecenia na *MyToolboxControl.cs*.
+2. Po otwarciu projektu Dodaj szablon elementu **kontrolki przybornika WPF** o nazwie `MyToolboxControl` . W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >  **nowy element**. W oknie dialogowym **Dodaj nowy element** przejdź do rozszerzalności **Visual C#**  >   i wybierz **kontrolkę Przybornik WPF**. W polu **Nazwa** w dolnej części okna Zmień nazwę pliku polecenia na *MyToolboxControl. cs*.
 
     Rozwiązanie zawiera teraz kontrolkę użytkownika, `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> która dodaje formant do **przybornika** i wpis zasobu **Microsoft. VISUALSTUDIO. ToolboxControl** w manifeście VSIX dla wdrożenia.
 
@@ -57,9 +57,9 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
 
 ## <a name="renaming-the-control"></a>Zmiana nazwy kontrolki
 
- Domyślnie kontrolka będzie wyświetlana w **przyborniku** jako **MyToolboxControl** w grupie o nazwie **MyToolboxControl. MyToolboxControl**. Te nazwy można zmienić w pliku *MyToolboxControl.XAML.cs* .
+ Domyślnie kontrolka będzie wyświetlana w **przyborniku** jako **MyToolboxControl** w grupie o nazwie **MyToolboxControl. MyToolboxControl**. Te nazwy można zmienić w pliku *MyToolboxControl. XAML. cs* .
 
-1. Otwórz *MyToolboxControl.XAML.cs* w widoku kodu.
+1. Otwórz *MyToolboxControl. XAML. cs* w widoku kodu.
 
 2. Znajdź `MyToolboxControl` klasę i zmień jej nazwę na TestControl. (Najszybszym sposobem wykonania tej czynności jest zmiana nazwy klasy, a następnie wybranie opcji **Zmień nazwę** z menu kontekstowego i wykonanie kroków. (Aby uzyskać więcej informacji na temat **zmiany nazwy** , zobacz [Refaktoryzacja zmiany nazwy (C#)](../ide/reference/rename.md).)
 

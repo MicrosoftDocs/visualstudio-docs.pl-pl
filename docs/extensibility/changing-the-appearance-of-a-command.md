@@ -9,17 +9,17 @@ helpviewer_keywords:
 - menu commands, changing appearance
 - menus, changing command appearance
 ms.assetid: da2474fa-f92d-4e9e-b8bf-67c61bf249c2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1514fb9409805df91a16678a5cce67ee1f66ab9f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8b6911d865b253ff82ffcc6c4911e0989f109f28
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911232"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089826"
 ---
 # <a name="change-the-appearance-of-a-command"></a>Zmiana wyglądu polecenia
 Możesz przekazać użytkownikowi informacje zwrotne, zmieniając wygląd polecenia. Na przykład możesz chcieć, aby polecenie wyglądało inaczej, gdy jest niedostępne. Polecenia mogą być dostępne lub niedostępne, ukrywane lub wyświetlane lub zaznaczając je w menu.
@@ -38,19 +38,19 @@ Aby zmienić wygląd polecenia, wykonaj jedną z następujących czynności:
 
 1. Postępuj zgodnie z instrukcjami w [części Zmień tekst polecenia menu](../extensibility/changing-the-text-of-a-menu-command.md) , aby utworzyć element menu o nazwie `New Text` .
 
-2. W pliku *ChangeMenuText.cs* Dodaj następującą instrukcję using:
+2. W pliku *ChangeMenuText. cs* Dodaj następującą instrukcję using:
 
     ```csharp
     using System.Security.Permissions;
     ```
 
-3. W pliku *ChangeMenuTextPackageGuids.cs* Dodaj następujący wiersz:
+3. W pliku *ChangeMenuTextPackageGuids. cs* Dodaj następujący wiersz:
 
     ```csharp
     public const string guidChangeMenuTextPackageCmdSet= "00000000-0000-0000-0000-00000000";  // get the GUID from the .vsct file
     ```
 
-4. W pliku *ChangeMenuText.cs* Zastąp kod w metodzie ShowMessageBox następującym:
+4. W pliku *ChangeMenuText. cs* Zastąp kod w metodzie ShowMessageBox następującym:
 
     ```csharp
     private void Execute(object sender, EventArgs e)

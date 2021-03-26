@@ -9,17 +9,17 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], saving standard documents
 - persistence, saving standard documents
 ms.assetid: d692fedf-b46e-4d60-84bd-578635042235
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18e7fcb73a5ce89fae0936189eada9e3b959a55f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a1864ec689c1068b97775ca1a8bddbd390e7b43a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958456"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080895"
 ---
 # <a name="saving-a-standard-document"></a>Zapisywanie standardowego dokumentu
 Środowisko obsługuje polecenia Zapisz, Zapisz jako i Zapisz wszystkie. Gdy użytkownik wybierze pozycję **Zapisz**, **Zapisz jako** lub **Zapisz wszystko** w menu **plik** lub zamknie rozwiązanie, spowoduje to wystąpienie następującego procesu: **Zapisz wszystko**.

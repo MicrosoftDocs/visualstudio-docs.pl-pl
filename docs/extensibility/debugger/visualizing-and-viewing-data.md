@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], viewing data
 - debugging [Debugging SDK], visualizing data
 ms.assetid: 699dd0f5-7569-40b3-ade6-d0fe53e832bc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61c2094564ea20c1073a198c3da162862c543e65
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4fd87ba5af069a923853c18e43a1c8ba4943c91d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965359"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091425"
 ---
 # <a name="visualizing-and-viewing-data"></a>Wizualizacja i wyświetlanie danych
 Wizualizatory typów i podglądy niestandardowe przedstawiają dane w sposób, który jest szybko zrozumiały dla dewelopera. Ewaluatora wyrażeń (EE) może obsługiwać Wizualizatory typu innych firm, a także dostarczać własne przeglądarki niestandardowe.
