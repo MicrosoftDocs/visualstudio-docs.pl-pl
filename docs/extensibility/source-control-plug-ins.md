@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, reference
 ms.assetid: 964980ca-21c5-4706-8535-6ea23e1c9cc9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab076cef7aaab96779e303ee7b85c8047eb6b52e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a6788d738d37ac62156958acb15c1bcd5d536515
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99848120"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089956"
 ---
 # <a name="source-control-plug-ins"></a>Wtyczki kontroli źródła
 Sekcja Dokumentacja zestawu SDK wtyczki kontroli źródła zawiera kompletną specyfikację interfejsu, która umożliwia zintegrowane systemy kontroli źródła [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Określa składnię i semantykę różnych funkcji i typów danych, które Wtyczka kontroli źródła musi zaimplementować do interfejsu za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zintegrowanego środowiska programistycznego (IDE).

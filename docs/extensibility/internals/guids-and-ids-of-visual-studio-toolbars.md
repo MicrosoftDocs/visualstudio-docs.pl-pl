@@ -13,17 +13,17 @@ helpviewer_keywords:
 - tool window toolbar
 - guid
 ms.assetid: c9cacd57-9225-450f-a9ac-cbf3168ea844
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b4df4bac9fcc933cccc1bd54ced89c416b23863
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8ca3a2ec0b9d0eef7821641eaf05e93f83f94f40
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970221"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082078"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>Identyfikatory GUID i identyfikator pasków narzędzi programu Visual Studio
 W tym temacie przedstawiono identyfikatory GUID i identyfikator pasków narzędzi, które znajdują się w zintegrowanym środowisku programistycznym (IDE) programu Visual Studio, oraz zawartych w nich grup. Te wartości są zdefiniowane w plikach *. vsct* , które są instalowane w ramach zestawu Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [polecenia, menu i grupy zdefiniowane przez środowisko IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -42,7 +42,7 @@ W tym temacie przedstawiono identyfikatory GUID i identyfikator pasków narzędz
 
 |Pasek narzędzi|ID (Identyfikator)|
 |-------------|--------|
-|Standardowa|IDM_VS_TOOL_STANDARD|
+|Standardowa (Standard)|IDM_VS_TOOL_STANDARD|
 |Kompilacja|IDM_VS_TOOL_BUILD|
 |Edytor tekstu|IDM_VS_TOOL_TEXTEDITOR|
 |Debugowanie|guidVSDebugGroup: IDM_DEBUG_TOOLBAR|

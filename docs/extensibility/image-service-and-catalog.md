@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 04/01/2019
 ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77fdc39ccccb7728749edd55527741c15bb1bcb0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4483d73a5e6124006f09d05065b6f75f7a654e47
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912745"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082130"
 ---
 # <a name="image-service-and-catalog"></a>Usługa obrazów i wykaz
 Ten Cookbook zawiera wskazówki i najlepsze rozwiązania dotyczące wdrażania usługi obrazów programu Visual Studio i katalogu obrazów wprowadzonego w programie Visual Studio 2015.
@@ -105,7 +105,7 @@ Ten Cookbook zawiera wskazówki i najlepsze rozwiązania dotyczące wdrażania u
 
 |**Podelementu**|**Definicja**|
 |-|-|
-|Import|Importuje symbole danego pliku manifestu do użycia w bieżącym manifeście|
+|Importuj|Importuje symbole danego pliku manifestu do użycia w bieżącym manifeście|
 |Guid (identyfikator GUID)|Symbol reprezentuje identyfikator GUID i musi pasować do formatowania identyfikatora GUID|
 |ID (Identyfikator)|Symbol reprezentuje identyfikator i musi być nieujemną liczbą całkowitą|
 |Ciąg|Symbol reprezentuje arbitralną wartość ciągu|
@@ -1011,7 +1011,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |GlyphGroupJSharpInterface|GlyphItemShortcut|InterfaceShortcut|
     |GlyphGroupError||StatusError|
     |GlyphBscFile||ClassFile|
-    |GlyphAssembly||Dokumentacja|
+    |GlyphAssembly||Odwołanie|
     |GlyphLibrary||Biblioteka|
     |GlyphVBProject||VBProjectNode|
     |GlyphCoolProject||CSProjectNode|

@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - solutions, managing project loading
 ms.assetid: 097c89d0-f76a-4aaf-ada9-9a778bd179a0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca17eae2b4f21e9705788faa1a2371a066be6475
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 425f610e8a473460cb7d9170138521e2e7bee08a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952164"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073095"
 ---
 # <a name="manage-project-loading-in-a-solution"></a>Zarządzanie ładowaniem projektu w rozwiązaniu
 Rozwiązania programu Visual Studio mogą zawierać wiele projektów. Domyślne zachowanie programu Visual Studio polega na załadowaniu wszystkich projektów w rozwiązaniu w momencie otwarcia rozwiązania, a nie umożliwieniu użytkownikowi dostępu do żadnego z projektów do momentu zakończenia jego ładowania. Gdy proces ładowania projektu będzie trwać więcej niż dwie minuty, zostanie wyświetlony pasek postępu przedstawiający liczbę załadowanych projektów i łączną liczbę projektów. Użytkownik może zwolnić projekty podczas pracy w rozwiązaniu z wieloma projektami, ale ta procedura ma pewne wady: niezaładowane projekty nie są kompilowane jako część polecenia odbudowywania rozwiązania, a opisy typów i elementów członkowskich zamkniętych projektów nie są wyświetlane.

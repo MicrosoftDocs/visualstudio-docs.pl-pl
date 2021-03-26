@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - using MEF for extensions
 ms.assetid: 3f59a285-6c33-4ae3-a4fb-ec1f5aa21bd1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5965ca211710b0710626118f016b2cb3fec116b2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 881b0f4d112b7739ff33099b26a30ab073f55924
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915145"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073173"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>Managed Extensibility Framework w edytorze
 Edytor jest skompilowany przy użyciu składników Managed Extensibility Framework (MEF). Możesz utworzyć własne składniki MEF w celu rozbudowy edytora, a kod może również zużywać składniki edytora.

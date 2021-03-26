@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Visual Studio, supporting multiple versions
 - VSPackages, side-by-side compatibility
 ms.assetid: 0047aa90-1ed4-40d3-8772-622b2719a4b1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52b8bf1be57e10790d91d4712e56d707621cc7df
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3d455ebf18ee8817e2adac2fa266592594ca7e6c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99889944"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056106"
 ---
 # <a name="supporting-multiple-versions-of-visual-studio"></a>Obsługiwanie wielu wersji programu Visual Studio
 Termin *równoczesny* oznacza, że można zainstalować i zachować wiele wersji produktu na tym samym komputerze. W przypadku pakietów VSPackage oznacza, że użytkownik może mieć kilka wersji programu Visual Studio zainstalowanych na tym samym komputerze. Nie można jednak korzystać ze równoległych wersji pakietów VSPackage załadowanych w jednej wersji programu Visual Studio.

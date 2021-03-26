@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - dialog boxes, managing in Visual Studio
 ms.assetid: 491bc0de-7dba-478c-a76b-923440e090f3
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 949f136913a30848ba13185bc699fa0bc51ac456
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 96ac3c9ee92cd9124485dde29814f4a1e5c942c8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884978"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055755"
 ---
 # <a name="create-and-manage-modal-dialog-boxes"></a>Tworzenie modalnych okien dialogowych i zarządzanie nimi
 Gdy tworzysz modalne okno dialogowe w programie Visual Studio, musisz upewnić się, że okno dialogowe nadrzędne jest wyłączone podczas wyświetlania okna dialogowego, a następnie ponownie włącz okno nadrzędne po zamknięciu okna dialogowego. Jeśli tego nie zrobisz, może zostać wyświetlony komunikat o błędzie: *Microsoft Visual Studio nie może zostać zamknięty, ponieważ modalne okno dialogowe jest aktywne. Zamknij aktywne okno dialogowe i spróbuj ponownie.*
@@ -40,7 +40,7 @@ Jeśli okno dialogowe nie jest WPF lub z innego powodu nie można utworzyć klas
 
     - *System. XAML*
 
-3. W *openDialog.cs*, Dodaj następującą `using` instrukcję:
+3. W *openDialog. cs* Dodaj następującą `using` instrukcję:
 
     ```csharp
     using Microsoft.VisualStudio.PlatformUI;

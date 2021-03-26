@@ -2,7 +2,7 @@
 title: Co nowego w programie Visual Studio 2019
 titleSuffix: ''
 description: Dowiedz się więcej o nowych funkcjach w programie Visual Studio 2019.
-ms.date: 03/04/2021
+ms.date: 03/19/2021
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 8371b9baa22b72eff0c829426b1b39bcf42398f2
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 60e1aca5e0f561539f3e27cf36dac67bb92c4ddf
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221187"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082026"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Co nowego w programie Visual Studio 2019
 
@@ -39,7 +39,7 @@ Oto podsumowanie o nowościach, które są nowe:
 
 Aby zapoznać się z pełną listą wszystkiego, co nowego w tej wersji, zobacz [Informacje o wersji](/visualstudio/releases/2019/release-notes/).
 
-## <a name="develop"></a>Programowanie
+## <a name="develop"></a>Opracowywanie
 
 Obejrzyj poniższe wideo, aby dowiedzieć się więcej o tym, jak zaoszczędzić czas dzięki nowym funkcjom. <br><br>*Długość wideo: 3,00 minut*
 
@@ -222,13 +222,7 @@ Aby uzyskać więcej informacji, zobacz [Pinnablee właściwości: Debug & Wyśw
 
 Często aktualizujemy program Visual Studio 2019 dzięki nowym funkcjom, które mogą usprawnić pracę programistyczną. Aby dowiedzieć się więcej na temat najnowszych innowacji, zapoznaj się z [blogiem dotyczącym programu Visual Studio](https://devblogs.microsoft.com/visualstudio/). Aby zapoznać się z rekordem, który został ogłoszony w wersji zapoznawczej, zapoznaj się z informacjami dotyczącymi [wersji zapoznawczej](/visualstudio/releases/2019/release-notes-preview/). Aby zapoznać się z listą zaplanowanych do wydania usługi, zobacz [Przewodnik po programie Visual Studio](/visualstudio/productinfo/vs-roadmap).
 
-W tym miejscu poniżej przedstawiono kilka nowych funkcji dostępnych obecnie w programie Works.
-
-- **Obsługa programu Visual Studio 2019 dla usługi GitHub Codespaces (wersja zapoznawcza)**
-
-  Teraz więcej niż kiedykolwiek wcześniej deweloperzy są Juggling wiele projektów w pracy i w domu. Nowe funkcje, poprawki błędów, przeglądy żądań ściągnięcia, &amp; prototypy wszystkich konkurowania na czas i wymagają stałego przełączania kontekstu. [Codespaces GitHub](https://github.com/features/codespaces) może pomóc. W ciągu kilku sekund możesz tworzyć w chmurze dedykowane, niestandardowe środowiska dla każdego projektu. Za pomocą programu Visual Studio 2019 można nawiązać połączenie z usługą codespace i działać tak samo jak lokalnie.
-
-  Aby uzyskać więcej informacji, zobacz stronę [co to jest strona usługi GitHub Codespaces](codespaces/codespaces-overview.md) .
+W tym miejscu znajduje się nowa funkcja, która jest obecnie w działaniu.
 
 - **Ulepszone środowisko Git w programie Visual Studio 2019 (wersja zapoznawcza)**
 

@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - file extensions, specifying file handlers
 ms.assetid: e3de4730-a95c-465a-b3b2-92ca85364ad7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d897cb9bb4697a687bd06eeb02c779e133090e33
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 65705467b1531e139c0ec857d6a7b57015d5f2f9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99848100"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089969"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>Określanie programów obsługi plików dla rozszerzeń nazw plików
 Istnieje kilka sposobów na określenie aplikacji, która obsługuje plik, który ma rozszerzenie określonego pliku. Zlecenia OpenWithList i OpenWithProgids są dwa sposoby określania programów obsługi plików w ramach wpisu rejestru dla rozszerzenia pliku.

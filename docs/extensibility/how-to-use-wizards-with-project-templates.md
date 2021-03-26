@@ -11,17 +11,17 @@ helpviewer_keywords:
 - templates [Visual Studio], wizards
 - IWizard interface
 ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb70931f2c26c248b2e2d41348fa26958d5348b3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 41290f946c198ed854cad9a7eb2af088f6fe228a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883314"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082286"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Instrukcje: korzystanie z kreatorów z szablonami projektu
 
@@ -74,7 +74,7 @@ Ta procedura pokazuje, jak utworzyć Kreatora niestandardowego, który otwiera f
 
 5. Dodaj klasę dla implementacji kreatora do projektu VSIX. (W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł projektu VSIX i wybierz polecenie **Dodaj**, następnie **nowy element**, a następnie **klasy**.) Nadaj klasie nazwę **WizardImplementation**.
 
-6. Zastąp kod w pliku *WizardImplementationClass.cs* następującym kodem:
+6. Zastąp kod w pliku *WizardImplementationClass. cs* następującym kodem:
 
    ```csharp
    using System;
@@ -161,7 +161,7 @@ Ta procedura pokazuje, jak utworzyć Kreatora niestandardowego, który otwiera f
 
      Ten przykład dodaje wartość parametru z formularza danych wejściowych użytkownika do <xref:System.Collections.Generic.Dictionary%602> parametru. Każde wystąpienie `$custommessage$` parametru w projekcie zostanie zastąpione tekstem wprowadzonym przez użytkownika.
 
-7. Teraz Utwórz **UserInputForm**. W pliku *WizardImplementation.cs* Dodaj następujący kod po zakończeniu `WizardImplementation` klasy.
+7. Teraz Utwórz **UserInputForm**. W pliku *WizardImplementation. cs* Dodaj następujący kod po zakończeniu `WizardImplementation` klasy.
 
    ```csharp
    public partial class UserInputForm : Form
@@ -265,7 +265,7 @@ Aby niestandardowy szablon projektu mógł korzystać z niestandardowego kreator
 
 W tym przykładzie projekt używany jako szablon wyświetla komunikat określony w formularzu danych wejściowych użytkownika Kreatora niestandardowego.
 
-1. W **Eksplorator rozwiązań** przejdź do projektu **MyProjectTemplate** i Otwórz *Class1.cs*.
+1. W **Eksplorator rozwiązań** przejdź do projektu **MyProjectTemplate** i Otwórz *Class1. cs*.
 
 2. W `Main` metodzie aplikacji Dodaj następujący wiersz kodu.
 

@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, installation directory
 ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea697e6e445eeae117bb6bf1d1603220ec0c0675
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6442a8475c862693b851be783ae85bbb0a2e90af
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874077"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082117"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>Wybierz katalog instalacji dla elementu pakietu VSPackage
 Pakietu VSPackage i jego pliki pomocnicze muszą znajdować się w systemie plików użytkownika. Lokalizacja zależy od tego, czy pakietu VSPackage jest zarządzany, czy niezarządzany, schemat obsługi wersji równoległej i wybór użytkownika.
