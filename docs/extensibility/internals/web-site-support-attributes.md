@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - web site projects, registration
 ms.assetid: 46d52e2c-ca2a-4bbd-8500-5b0129768aec
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 452760974207c4ad30e18dd0c4917bcf7b7aa55d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d5259914b238927a58a7297a8e9c0b6fcef0f04c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886837"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069109"
 ---
 # <a name="web-site-support-attributes"></a>Atrybuty pomocy technicznej dotyczącej witryn internetowych
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Projekt witryny sieci Web można rozszerzyć, aby zapewnić obsługę języków programowania w sieci Web. Język musi [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] się zarejestrować w taki sposób, aby szablony projektu mogły pojawić się w oknie dialogowym **Nowa witryna sieci Web** w przypadku wybrania języka.

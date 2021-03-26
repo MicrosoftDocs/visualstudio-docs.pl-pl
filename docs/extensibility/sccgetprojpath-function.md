@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccGetProjPath function
 ms.assetid: 1079847e-d45f-4cb8-9d92-1e01ce5d08f6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3a08c09e1b04cf5e5f826520efcf64ead9113be
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 07c6b8f865d8b1b1d87c9c9468d74e2208265290
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220706"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063971"
 ---
 # <a name="sccgetprojpath-function"></a>SccGetProjPath, funkcja
 Ta funkcja monituje użytkownika o ścieżkę projektu, która jest ciągiem, który jest zrozumiały tylko dla wtyczki kontroli źródła. Jest wywoływana, gdy użytkownik jest:

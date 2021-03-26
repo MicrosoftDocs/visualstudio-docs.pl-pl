@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], design decisions
 ms.assetid: 5f60ec1a-5a74-4362-8293-817a4dd73872
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7335e3c5b15365680d70486f5f8ec8d19e90af4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 82afa3bfee446ab5bd214fd5ac58dbfac9523467
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846494"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069325"
 ---
 # <a name="source-control-design-decisions"></a>Decyzje projektowe dotyczące kontroli kodu źródłowego
 Podczas implementowania kontroli źródła należy wziąć pod uwagę następujące decyzje projektowe.

@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - brace matching
 ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f89c6303dc8ca9e48fb212a3ae889251b34ece91
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0950f6b8ed647a3922fe63e365a97ea0a888ec6e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961732"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078620"
 ---
 # <a name="walkthrough-display-matching-braces"></a>Przewodnik: wyświetlanie pasujących nawiasów klamrowych
 Implementowanie funkcji opartych na języku, takich jak, dopasowywanie nawiasów klamrowych przez definiowanie nawiasów klamrowych, które mają być dopasowane, i Dodawanie znacznika znacznika tekstu do pasujących nawiasów klamrowych, gdy karetka jest w jednym z nawiasów klamrowych. Można zdefiniować nawiasy klamrowe w kontekście języka, zdefiniować własne rozszerzenie nazwy pliku i typ zawartości oraz zastosować znaczniki do samego typu, lub zastosować znaczniki do istniejącego typu zawartości (na przykład "tekst"). W poniższym przewodniku pokazano, jak zastosować nawiasy klamrowe do typu zawartości "text".

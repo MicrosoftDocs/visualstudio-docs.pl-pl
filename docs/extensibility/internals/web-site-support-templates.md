@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - we site projects, templates
 ms.assetid: 37173c97-486b-4b3c-8ed3-cf5890c4de23
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 988b81e72ff7714cb8a0983655de551b54c9150c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8c39e900bbdddd1d558bd0604f16924d2536cb98
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940036"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069105"
 ---
 # <a name="web-site-support-templates"></a>Szablony pomocy technicznej dotyczącej witryn internetowych
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Szablony projektów i elementów witryny sieci Web zapewniają możliwość wielokrotnego użytku i dostosowywania projektu witryny sieci Web oraz elementów, które przyspieszają proces opracowywania, usuwając konieczność tworzenia nowych projektów i danych witryn sieci Web od podstaw. Aby uzyskać więcej informacji na temat [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] szablonów, zobacz [Tworzenie szablonów projektów i elementów](../../ide/creating-project-and-item-templates.md).
@@ -65,7 +65,7 @@ ms.locfileid: "99940036"
 
 - web.config
 
-     Główny plik konfiguracji Web. site.
+     Plik konfiguracji głównego web.site.
 
 - WebApplication. vstemplate
 
@@ -88,7 +88,7 @@ ms.locfileid: "99940036"
 
 - web.config
 
-- Główny plik konfiguracji Web. site.
+- Plik konfiguracji głównego web.site.
 
 - Usługa WebService. vstemplate
 

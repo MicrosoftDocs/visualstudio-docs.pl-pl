@@ -9,17 +9,17 @@ helpviewer_keywords:
 - code snippets, retrieving list
 - GetSnippets method
 ms.assetid: 7d142f8b-35b1-44c4-a13e-f89f6460c906
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 537793165f3a3b46d7f00c19dd2f093f0442326d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5f94d481a2884c64cb42b170d9d1abfa25c913a9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886930"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069143"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Przewodnik: Pobieranie listy zainstalowanych fragmentów kodu (starsza wersja implementacji)
 Fragment kodu to fragment kodu, który może zostać wstawiony do bufora źródłowego za pomocą polecenia menu (co umożliwia wybranie spośród listy zainstalowanych fragmentów kodu) lub wybranie skrótu fragmentu z listy uzupełniania IntelliSense.
