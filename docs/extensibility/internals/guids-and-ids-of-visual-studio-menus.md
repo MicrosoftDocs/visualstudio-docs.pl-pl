@@ -12,17 +12,17 @@ helpviewer_keywords:
 - guid
 - menus
 ms.assetid: 84639d86-dd21-4b35-9988-6bb654162488
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd2bdc047ddd5a568aca01ed99b6148b0f288faa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d9f5066c5ae5c9fa57517406b8eca388747979c4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970273"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082091"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>Identyfikator GUID i identyfikatory menu programu Visual Studio
 W tym artykule jest wyliczany identyfikator GUID i wartości identyfikatorów menu i grup na pasku menu programu Visual Studio. Te wartości są zdefiniowane w plikach *. vsct* , które są instalowane w ramach zestawu Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [polecenia, menu i grupy zdefiniowane przez środowisko IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -62,7 +62,7 @@ W tym artykule jest wyliczany identyfikator GUID i wartości identyfikatorów me
 |Okno|IDM_VS_MENU_WINDOW|
 |Dodatki|IDM_VS_MENU_ADDINS|
 |Społeczność|IDM_VS_MENU_COMMUNITY|
-|Pomoc|IDM_VS_MENU_HELP|
+|Help|IDM_VS_MENU_HELP|
 
 ## <a name="groups-on-visual-studio-menus"></a>Grupy w menu programu Visual Studio
  Na poniższych listach przedstawiono grupy, które pozostały bezpośrednio z menu na pasku menu programu Visual Studio. Najszybszym sposobem dodawania polecenia do menu programu Visual Studio jest ustawienie jednej z tych grup jako nadrzędnej. Grupy, których nie ma w podmenu, nie są wyświetlane w tej sekcji.
@@ -132,7 +132,7 @@ W tym artykule jest wyliczany identyfikator GUID i wartości identyfikatorów me
 |Dodaj|IDG_VS_PROJ_ADD|
 |Folder|IDG_VS_PROJ_FOLDER|
 |Zwolnij/Załaduj ponownie|IDG_VS_PROJ_UNLOADRELOAD|
-|Dokumentacja|IDG_VS_PROJ_REFERENCE|
+|Odwołanie|IDG_VS_PROJ_REFERENCE|
 |Opcje|IDG_VS_PROJ_OPTIONS|
 |Ustawienia|IDG_VS_PROJ_SETTINGS|
 

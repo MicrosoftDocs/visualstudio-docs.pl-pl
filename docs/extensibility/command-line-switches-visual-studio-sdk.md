@@ -9,17 +9,17 @@ helpviewer_keywords:
 - command-line switches
 - command line, switches
 ms.assetid: 0a22516f-f60e-4476-ac5b-f41e5ffaaf8b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf12e2f4967a4157a40cb6c1a02e6e7f45859240
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 58ec16faf930799c8ab164c006e063cbce8378fe
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925343"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089657"
 ---
 # <a name="command-line-switches-visual-studio-sdk"></a>Przełączniki wiersza polecenia (Visual Studio SDK)
 *Devenv.exe*, plik wykonywalny, który uruchamia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zintegrowane środowisko programistyczne (IDE), obsługuje przełączniki wiersza polecenia przeznaczone do programowania w pakietów VSPackage. Pakietów VSPackage mogą również udostępniać własne przełączniki w wierszu polecenia devenv. W poniższych tematach znajdują się informacje dotyczące używania przełączników wiersza polecenia w środowisku IDE.

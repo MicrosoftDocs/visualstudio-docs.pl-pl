@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Solution Explorer, extending
 - extensibility [Visual Studio], projects and solutions
 ms.assetid: df976c76-27ec-4f00-ab6d-a26a745dc6c7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dfe2947d60ad5dde6e2f23b9bed59b09e6abe8ea
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d1256b807d67f95aa8ca1e952a4dca7bd550e0fc
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862125"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105075019"
 ---
 # <a name="extend-the-solution-explorer-filter"></a>Rozwiń filtr Eksplorator rozwiązań
 Można rozłożyć funkcję filtrowania **Eksplorator rozwiązań** , aby pokazać lub ukryć różne pliki. Na przykład można utworzyć filtr, który pokazuje tylko pliki fabryki klas języka C# w **Eksplorator rozwiązań**, jak pokazano w tym instruktażu.
@@ -60,14 +60,14 @@ Można rozłożyć funkcję filtrowania **Eksplorator rozwiązań** , aby pokaza
 
 ### <a name="add-the-filter-code"></a>Dodaj kod filtru
 
-1. Dodaj niektóre identyfikatory GUID do pliku *FileFilterPackageGuids.cs* :
+1. Dodaj niektóre identyfikatory GUID do pliku *FileFilterPackageGuids. cs* :
 
     ```csharp
     public const string guidFileFilterPackageCmdSetString = "00000000-0000-0000-0000-00000000"; // get your GUID from the .vsct file
     public const int FileFilterId = 0x100;
     ```
 
-2. Dodaj plik klasy do projektu FileFilter o nazwie *FileNameFilter.cs*.
+2. Dodaj plik klasy do projektu FileFilter o nazwie *FileNameFilter. cs*.
 
 3. Zastąp pustą przestrzeń nazw i pustą klasę poniższym kodem.
 
@@ -160,7 +160,7 @@ Można rozłożyć funkcję filtrowania **Eksplorator rozwiązań** , aby pokaza
 
     ```
 
-4. W *FileFilter.cs*, Usuń umieszczanie poleceń i kod obsługi z konstruktora FileFilter. Wynik powinien wyglądać następująco:
+4. W obszarze *FileFilter. cs* Usuń rozmieszczenie poleceń i kod obsługi z konstruktora FileFilter. Wynik powinien wyglądać następująco:
 
     ```csharp
     private FileFilter(Package package)
@@ -176,7 +176,7 @@ Można rozłożyć funkcję filtrowania **Eksplorator rozwiązań** , aby pokaza
 
      Usuń `ShowMessageBox()` również metodę.
 
-5. W *FileFilterPackage.cs* Zastąp kod w `Initialize()` metodzie następującymi:
+5. W *FileFilterPackage. cs* Zastąp kod w `Initialize()` metodzie następującymi:
 
     ```csharp
     protected override void Initialize()
