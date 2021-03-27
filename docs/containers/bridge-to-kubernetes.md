@@ -2,20 +2,20 @@
 title: Używanie Mostka na platformę Kubernetes z programem Visual Studio
 titleSuffix: ''
 ms.technology: vs-azure
-ms.date: 06/02/2020
-ms.topic: how-to
+ms.date: 03/24/2021
+ms.topic: quickstart
 description: Dowiedz się, jak używać programu Bridge do Kubernetes z programem Visual Studio, aby połączyć komputer deweloperski z klastrem Kubernetes
 keywords: Bridge to Kubernetes, Azure Dev Spaces, dev Spaces, Docker, Kubernetes, Azure, Containers
 monikerRange: '>=vs-2019'
 ms.author: ghogen
 author: ghogen
 manager: jmartens
-ms.openlocfilehash: 23d060489a13aa8e02316e253d9367e9e3372bbe
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fdcf31d062fe2be72709979f0892e6a7f535024a
+ms.sourcegitcommit: 2049ec99f1439ec91d002853226934b067b1ee70
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859635"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105635049"
 ---
 # <a name="use-bridge-to-kubernetes"></a>Korzystanie z mostka do Kubernetes
 
@@ -23,96 +23,95 @@ Za pomocą mostka Kubernetes można przekierowywać ruch między klastrem Kubern
 
 ## <a name="before-you-begin"></a>Zanim rozpoczniesz
 
-Ten przewodnik korzysta z [przykładowej aplikacji do udostępniania roweru][bike-sharing-github] do zademonstrowania połączenia komputera deweloperskiego z klastrem Kubernetes. Jeśli masz już uruchomioną aplikację w klastrze Kubernetes, możesz wykonać poniższe kroki i użyć nazw własnych usług.
+Ten przewodnik zawiera [przykładową aplikację do wykonania aplikacji][todo-app-github] do zademonstrowania połączenia komputera deweloperskiego z klastrem Kubernetes. Jeśli masz już uruchomioną aplikację w klastrze Kubernetes, możesz wykonać poniższe kroki i użyć nazw własnych usług.
+
+Ten przykład ilustruje sposób, w jaki mostek Kubernetes może służyć do tworzenia mikrousług dla prostej aplikacji do wykonania w dowolnym klastrze Kubernetes. Ten przykład przy użyciu programu Visual Studio został dostosowany z kodu dostarczonego przez [TodoMVC](http://todomvc.com). Te kroki powinny współpracować z dowolnym klastrem Kubernetes.
+
+Przykład aplikacji do zrobienia składa się z frontonu i zaplecza, który zapewnia magazyn trwały. Ten rozszerzony przykład dodaje składnik statystyki i dzieli aplikację na kilka mikrousług, w tym:
+
+- Fronton wywołuje interfejs API bazy danych w celu utrwalenia i zaktualizowania elementów do wykonania.
+- Usługa API Database korzysta z bazy danych Mongo, aby zachować elementy do wykonania.
+- Fronton zapisuje zdarzenia dodawania, kończenia i usuwania do kolejki RabbitMQ;
+- Pracownik przetwarzający dane statystyczne odbiera zdarzenia z kolejki RabbitMQ i aktualizuje pamięć podręczną Redis;
+- Interfejs API statystyk udostępnia buforowane statystyki dla frontonu do wyświetlenia.
+
+W ogóle ta rozszerzona aplikacja do zrobienia składa się z sześciu powiązanych składników.
 
 ### <a name="prerequisites"></a>Wymagania wstępne
 
-* Subskrypcja platformy Azure. Jeśli nie masz subskrypcji platformy Azure, możesz utworzyć [bezpłatne konto](https://azure.microsoft.com/free).
-* [Zainstalowany interfejs wiersza polecenia platformy Azure][azure-cli].
-* [Program Visual Studio 2019][visual-studio] w wersji 16,7 Preview 4 lub nowszej działający w systemie Windows 10 z zainstalowanym obciążeniem *programistycznym platformy Azure* .
-* [Zainstalowano rozszerzenie Bridge to Kubernetes][btk-extension].
+- klaster Kubernetes
+- [Program Visual Studio 2019][visual-studio] w wersji 16,7 Preview 4 lub nowszej działający w systemie Windows 10.
+- [Zainstalowano rozszerzenie Bridge to Kubernetes][btk-extension].
 
-Ponadto w przypadku aplikacji konsolowych platformy .NET Zainstaluj pakiet NuGet *Microsoft. VisualStudio. Azure. Kubernetes. Tools. targets* .
+## <a name="check-the-cluster"></a>Sprawdź klaster
 
-## <a name="create-a-kubernetes-cluster"></a>Tworzenie klastra Kubernetes
+Otwórz wiersz polecenia i sprawdź, czy polecenia kubectl jest zainstalowany i na ścieżce, klaster, który ma być używany, jest dostępny i gotowy, a następnie ustaw kontekst dla tego klastra.
 
-Utwórz klaster AKS w [obsługiwanym regionie][supported-regions]. Poniższe polecenia tworzą grupę zasobów o nazwie Moja *zasobów* i klaster AKS o nazwie *MyAKS*.
-
-```azurecli-interactive
-az group create \
-    --name MyResourceGroup \
-    --location eastus
-
-az aks create \
-    --resource-group MyResourceGroup \
-    --name MyAKS \
-    --location eastus \
-    --node-count 3 \
-    --generate-ssh-keys
+```cmd
+kubectl cluster-info
+kubectl config use-context {context-name}
 ```
 
-## <a name="install-the-sample-application"></a>Instalowanie przykładowej aplikacji
+gdzie {Context-Name} jest nazwą kontekstu klastra, którego chcesz użyć dla przykładu do wykonania aplikacji.
 
-Zainstaluj przykładową aplikację w klastrze przy użyciu dostarczonego skryptu. Ten skrypt można uruchomić przy użyciu [Azure Cloud Shell][azure-cloud-shell].
+## <a name="deploy-the-application"></a>Wdrażanie aplikacji
 
-```azurecli-interactive
-git clone https://github.com/Microsoft/mindaro
-cd mindaro
-chmod +x ./bridge-quickstart.sh
-./bridge-quickstart.sh -g MyResourceGroup -n MyAKS
+Sklonuj [repozytorium mindaro](https://github.com/Microsoft/mindaro) i Otwórz okno poleceń z bieżącym folderem roboczym do *przykładów/do zrobienia — aplikacji*.
+
+Utwórz przestrzeń nazw dla przykładu.
+
+```cmd
+kubectl create namespace todo-app
 ```
 
-Przejdź do przykładowej aplikacji, w której działa klaster, otwierając swój publiczny adres URL, który jest wyświetlany w danych wyjściowych skryptu instalacji.
+Następnie Zastosuj manifest wdrożenia:
 
-```console
-$ ./bridge-quickstart.sh -g MyResourceGroup -n MyAKS
-Defaulting Dev spaces repository root to current directory : ~/mindaro
-Setting the Kube context
-...
-To try out the app, open the url:
-bikeapp.bikesharingweb.EXTERNAL_IP.nip.io
+```cmd
+kubectl apply -n todo-app -f deployment.yaml
 ```
 
-W powyższym przykładzie publiczny adres URL to `bikeapp.bikesharingweb.EXTERNAL_IP.nip.io` .
+Jest to proste wdrożenie, które uwidacznia fronton przy użyciu usługi typu `LoadBalancer` . Poczekaj, aż wszystkie zasobniki będą działać i że zewnętrzny adres IP `frontend` usługi stanie się dostępny.
+
+Jeśli testujesz się za pomocą MiniKube, musisz użyć, `minikube tunnel` Aby rozwiązać zewnętrzny adres IP. Jeśli używasz usługi AKS lub innego dostawcy Kubernetes opartego na chmurze, zewnętrzny adres IP jest przypisywany automatycznie. Użyj poniższego polecenia, aby monitorować `frontend` usługę, aby czekać, aż zostanie uruchomiona:
+
+```output
+kubectl get service -n todo-app frontend --watch
+
+NAME       TYPE           CLUSTER-IP    EXTERNAL-IP     PORT(S)        AGE
+frontend   LoadBalancer   10.0.245.78   20.73.226.228   80:31910/TCP   6m26s
+```
+
+Przejdź do aplikacji przy użyciu zewnętrznego adresu IP i portu lokalnego (pierwszy numer w kolumnie PORT (S).
+
+```
+http://{external-ip}:{local-port}
+```
+
+Przetestuj uruchomioną aplikację w przeglądarce. Po dodaniu, zakończeniu i usunięciu elementów do wykonania należy zauważyć, że strona statystyki jest aktualizowana o oczekiwanych metrykach.
 
 ## <a name="connect-to-your-cluster-and-debug-a-service"></a>Nawiązywanie połączenia z klastrem i debugowanie usługi
 
-Na komputerze deweloperskim Pobierz i skonfiguruj interfejs wiersza polecenia Kubernetes, aby połączyć się z klastrem Kubernetes przy użyciu polecenia [AZ AKS Get-Credentials][az-aks-get-credentials].
-
-```azurecli
-az aks get-credentials --resource-group MyResourceGroup --name MyAKS
-```
-
-W repozytorium [przykładowej aplikacji do udostępniania roweru][bike-sharing-github] w usłudze GitHub Użyj listy rozwijanej na przycisku zielonym **kod** , a następnie wybierz **Otwórz w programie Visual Studio** , aby sklonować repozytorium lokalnie, a następnie otwórz folder w programie Visual Studio. Następnie użyj **plik**  >  **Otwórz projekt** , aby otworzyć projekt **App. csproj** w folderze *Samples/BikeSharingApp/ReservationEngine* .
-
-W projekcie wybierz pozycję **Kubernetes** z listy rozwijanej ustawienia uruchamiania, jak pokazano poniżej.
+Otwórz *samples\todo-app\database-api\database-API.csproj* w programie Visual Studio. W projekcie wybierz pozycję **Kubernetes** z listy rozwijanej ustawienia uruchamiania, jak pokazano poniżej.
 
 ![Wybierz mostek do Kubernetes](media/bridge-to-kubernetes/choose-bridge-to-kubernetes.png)
 
 Kliknij przycisk Start obok pozycji *mostek do Kubernetes*. W oknie dialogowym **Tworzenie profilu dla mostka do Kubernetes** :
 
-* Wybierz subskrypcję.
-* Wybierz pozycję *MyAKS* dla klastra.
-* Wybierz pozycję *bikeapp* dla przestrzeni nazw.
-* Wybierz pozycję *reservationengine* , aby przekierować usługę.
-* Wybierz pozycję *aplikacja* dla profilu uruchamiania.
-* Wybierz `http://bikeapp.bikesharingweb.EXTERNAL_IP.nip.io` adres URL, na który ma zostać uruchomiona przeglądarka.
+- Wybierz nazwę klastra.
+- Wybierz pozycję do *zrobienia — aplikacja* dla przestrzeni nazw.
+- Wybierz opcję *Database-API* dla usługi do przekierowania.
+- Wybierz ten sam adres URL, który został wcześniej użyty do uruchomienia przeglądarki, http://{External-IP}: {Local-Port}
 
-![Wybierz mostek do klastra Kubernetes](media/bridge-to-kubernetes/choose-bridge-cluster2.png)
-
-> [!IMPORTANT]
-> Można przekierować tylko usługi, które mają pojedynczy pod.
+![Wybierz mostek do klastra Kubernetes](media/bridge-to-kubernetes/configure-bridge-debugging.png)
 
 Zdecyduj, czy chcesz uruchomić odizolowany, co oznacza, że zmiany nie wpłyną na inne osoby korzystające z danego klastra. Ten tryb izolacji jest realizowany przez kierowanie żądań do kopii każdej usługi, której to dotyczy, ale przez kierowanie całego ruchu. Dokładniejsze wyjaśnienie tego, jak to zrobić, można znaleźć na drodze [działania programu Bridge do Kubernetes][btk-overview-routing].
 
-Kliknij przycisk **Zapisz i Rozpocznij debugowanie**.
-
-Cały ruch w klastrze Kubernetes jest przekierowywany dla usługi *reservationengine* do wersji aplikacji działającej na komputerze deweloperskim. Mostek do Kubernetes kieruje również cały ruch wychodzący z aplikacji z powrotem do klastra Kubernetes.
+Kliknij przycisk **OK**. Cały ruch w klastrze Kubernetes jest przekierowywany dla usługi *API Database* do wersji aplikacji działającej na komputerze deweloperskim. Mostek do Kubernetes kieruje również cały ruch wychodzący z aplikacji z powrotem do klastra Kubernetes.
 
 > [!NOTE]
 > Zostanie wyświetlony monit o zezwolenie programowi *endpointmanager* na uruchomienie podniesienia uprawnień i zmodyfikowanie pliku Hosts.
 
-Komputer deweloperski jest połączony, gdy zostanie wyświetlony pasek stanu połączony z `reservationengine` usługą.
+Komputer deweloperski jest połączony, gdy zostanie wyświetlony pasek stanu połączony z `database-api` usługą.
 
 ![Komputer deweloperski jest podłączony](media/bridge-to-kubernetes/development-computer-connected.png)
 
@@ -121,16 +120,21 @@ Komputer deweloperski jest połączony, gdy zostanie wyświetlony pasek stanu po
 
 Po nawiązaniu połączenia z komputerem deweloperskim ruch zaczyna się przekierować do komputera deweloperskiego w przypadku zastępowanej usługi.
 
+> [!NOTE]
+> Aby później edytować profil debugowania, na przykład w celu przetestowania z inną usługą Kubernetes wybierz polecenie **Debuguj**  >  **właściwości debugowania**, a następnie kliknij przycisk **Zmień** .
+
 ## <a name="set-a-break-point"></a>Ustaw punkt przerwania
 
-Otwórz [BikesHelper.cs][bikeshelper-cs-breakpoint] i kliknij gdziekolwiek w wierszu 26, aby umieścić w nim kursor. Ustaw punkt przerwania, naciskając klawisz *F9* lub wybierając pozycję **Debuguj**  >  **przełączenie punktu przerwania**.
+Otwórz MongoHelper. cs i kliknij w dowolnym miejscu w wierszu 68 w metodzie ontask, aby umieścić w niej kursor. Ustaw punkt przerwania, naciskając klawisz *F9* lub wybierając pozycję **Debuguj**  >  **przełączenie punktu przerwania**.
 
-Przejdź do przykładowej aplikacji, otwierając publiczny adres URL. Wybierz pozycję **Aurelia Briggs (Customer)** jako użytkownik, a następnie wybierz rower do wynajęcia. Wybierz pozycję **Wynajem roweru**. Wróć do programu Visual Studio i obserwuj wiersz 26. Ustawiony punkt przerwania został wstrzymany usługi w wierszu 26. Aby wznowić działanie usługi, naciśnij klawisz **F5** lub kliknij pozycję **Debuguj**  >  **Kontynuuj**. Wróć do przeglądarki i sprawdź, czy na stronie zostały wydzierżawione rowery.
+Przejdź do przykładowej aplikacji, otwierając publiczny adres URL (zewnętrzny adres IP dla usługi frontonu). Aby wznowić działanie usługi, naciśnij klawisz **F5** lub kliknij pozycję **Debuguj**  >  **Kontynuuj**.
 
-Usuń punkt przerwania, umieszczając kursor w wierszu 26 w `BikesHelper.cs` i naciskając klawisz **F9**.
+Usuń punkt przerwania, umieszczając kursor w wierszu z punktem przerwania i naciskając klawisz **F9**.
 
 > [!NOTE]
-> Domyślnie Zatrzymywanie zadania debugowania powoduje także odłączenie komputera deweloperskiego od klastra Kubernetes. Możesz zmienić to zachowanie, zmieniając opcję **Rozłącz po debugowaniu** na `false` w sekcji **narzędzia debugowania Kubernetes** opcji debugowanie. Po zaktualizowaniu tego ustawienia komputer programistyczny pozostanie połączony, gdy zatrzymasz i zaczniesz debugowanie. Aby odłączyć komputer deweloperski od klastra, kliknij przycisk **Rozłącz** na pasku narzędzi.
+> Domyślnie Zatrzymywanie zadania debugowania powoduje także odłączenie komputera deweloperskiego od klastra Kubernetes. Możesz zmienić to zachowanie, zmieniając opcję **Rozłącz po debugowaniu** na `false` w sekcji **narzędzia debugowania Kubernetes** w   >  oknie dialogowym **Opcje** narzędzi. Po zaktualizowaniu tego ustawienia komputer programistyczny pozostanie połączony, gdy zatrzymasz i zaczniesz debugowanie. Aby odłączyć komputer deweloperski od klastra, kliknij przycisk **Rozłącz** na pasku narzędzi.
+>
+>![Zrzut ekranu przedstawiający opcje debugowania Kubernetes](media/bridge-to-kubernetes/kubernetes-debugging-options.png)
 
 ## <a name="additional-configuration"></a>Dodatkowa konfiguracja
 
@@ -138,15 +142,7 @@ Mostek do Kubernetes może obsługiwać ruch routingu i replikować zmienne śro
 
 ## <a name="using-logging-and-diagnostics"></a>Korzystanie z funkcji rejestrowania i diagnostyki
 
-Dzienniki diagnostyczne znajdują się w `Bridge to Kubernetes` katalogu *tymczasowym* komputera deweloperskiego. 
-
-## <a name="remove-the-sample-application-from-your-cluster"></a>Usuwanie przykładowej aplikacji z klastra
-
-Użyj dostarczonego skryptu, aby usunąć przykładową aplikację z klastra.
-
-```azurecli-interactive
-./bridge-quickstart.sh -c -g MyResourceGroup -n MyAKS
-```
+Dzienniki diagnostyczne znajdują się w `Bridge to Kubernetes` katalogu *tymczasowym* komputera deweloperskiego.
 
 ## <a name="next-steps"></a>Następne kroki
 
@@ -155,15 +151,7 @@ Dowiedz się, jak działa mostek Kubernetes.
 > [!div class="nextstepaction"]
 > [Jak działa Mostek na platformę Kubernetes](overview-bridge-to-kubernetes.md)
 
-[azds-cli]: /azure/dev-spaces/how-to/install-dev-spaces#install-the-client-side-tools
-[azds-vs-code]: https://marketplace.visualstudio.com/items?itemName=azuredevspaces.azds
-[azure-cli]: /cli/azure/install-azure-cli?view=azure-cli-lates&preserve-view=true
-[azure-cloud-shell]: /azure/cloud-shell/overview.md
-[az-aks-get-credentials]: /cli/azure/aks?view=azure-cli-latest&preserve-view=true#az-aks-get-credentials
-[az-aks-vs-code]: https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-aks-tools
-[bike-sharing-github]: https://github.com/Microsoft/mindaro
-[preview-terms]: https://azure.microsoft.com/support/legal/preview-supplemental-terms/
-[bikeshelper-cs-breakpoint]: https://github.com/Microsoft/mindaro/blob/master/samples/BikeSharingApp/ReservationEngine/BikesHelper.cs#L26
+[todo-app-github]: https://github.com/Microsoft/mindaro
 [supported-regions]: https://azure.microsoft.com/global-infrastructure/services/?products=kubernetes-service
 [troubleshooting]: /azure/dev-spaces/troubleshooting#fail-to-restore-original-configuration-of-deployment-on-cluster
 [visual-studio]: https://www.visualstudio.com/vs/
