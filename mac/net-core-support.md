@@ -5,12 +5,12 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 01/08/2020
 ms.assetid: 8B8CEBE8-00DA-4AD1-8193-77F58B57F244
-ms.openlocfilehash: 4009e6c139ef33bcd4caa01a9313695628757884
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: a04d15fc2fc768c2d6896396df5dc0f134d1720b
+ms.sourcegitcommit: 67f3bdeee583a4fb41cacc7f38839a737bfecc6b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583934"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "105735528"
 ---
 # <a name="net-core-support"></a>Obsługa platformy .NET Core
 
@@ -24,7 +24,7 @@ W poniższej tabeli opisano wersje programu .NET Core obsługiwane przez stabiln
 |v 2.2.200 + |✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|
 |wersja 3.0 | | |✔︎|✔︎|✔︎|✔︎|
 |v 3.1 | | | |✔︎|✔︎|✔︎|
-|v 5.0 (wersja zapoznawcza) | | | | | |✔︎|
+|v 5.0 | | | | | |✔︎|
 
 > [!IMPORTANT]
 > Wersje zapoznawcze zestaw .NET Core SDK nie są obsługiwane; Zaktualizuj do wersji wydanej. Podczas instalowania Visual Studio dla komputerów Mac 8,4 zostanie zainstalowana wydana wersja programu .NET Core v 3.1.
