@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 01d8602971e2a89aef8cf8451d1273fa28c70f05
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b61474f4290771fb139d511296580ec1ef0f8820
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949132"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106213917"
 ---
 # <a name="create-reusable-controls-for-web-parts-or-application-pages"></a>Tworzenie kontrolek wielokrotnego użytku dla części sieci Web lub stron aplikacji
   W programie Visual Studio można tworzyć niestandardowe kontrolki wielokrotnego użytku, które mogą być używane przez strony aplikacji oraz składniki Web Part, które są uruchamiane w programie SharePoint. Formanty te są nazywane kontrolkami użytkownika. Kontrolka użytkownika to rodzaj kontrolki złożonej, który działa podobnie jak strona sieci Web ASP.NET — można dodać istniejące kontrolki serwera sieci Web i znaczniki do kontrolki użytkownika, a także zdefiniować właściwości i metody dla kontrolki. Następnie można je osadzić na stronach sieci Web ASP.NET, gdzie działają jako jednostka.
@@ -47,8 +47,8 @@ ms.locfileid: "99949132"
 
  Aby dołączyć kontrolkę użytkownika do składnika Web Part, Dodaj kontrolkę użytkownika do kolekcji składników Web Part <xref:System.Web.UI.WebControls.WebParts.Part.Controls%2A> w pliku kodu składnika Web Part. Poniższy przykład dodaje kontrolkę użytkownika do <xref:System.Web.UI.WebControls.WebParts.Part.Controls%2A> kolekcji części sieci Web.
 
- [!code-vb[SP_VisualWebPart#5](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1.vb#5)]
- [!code-csharp[SP_VisualWebPart#5](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1.cs#5)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1.vb" id="Snippet5":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1.cs" id="Snippet5":::
 
 ## <a name="debug-a-user-control"></a>Debugowanie kontrolki użytkownika
  Aby debugować kontrolkę użytkownika, upewnij się, że kontrolka użytkownika jest uwzględniona na stronie aplikacji lub składniku Web Part w projekcie programu SharePoint. Następnie można debugować kod w kontrolce użytkownika tak samo jak w przypadku debugowania kodu w dowolnym projekcie programu Visual Studio.

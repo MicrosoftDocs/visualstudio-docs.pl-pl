@@ -15,12 +15,12 @@ ms.author: ornella
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bcf879d2bb6fa592f77d4c94cb2f784d2c53f2b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 202f069fc02f9d7afa13d44aab1925e6a1ece03f
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99969623"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106214021"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Krok 9. Przeglądanie, komentowanie i testowanie kodu
 
@@ -58,9 +58,8 @@ Właśnie skompilowano coś, co działa, a chociaż nie zostało to jeszcze zrob
 
      [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
-     [!code-csharp[VbExpressTutorial1Step9_10#1](../ide/codesnippet/CSharp/step-9-review-comment-and-test-your-code_1.cs)]
-
-     [!code-vb[VbExpressTutorial1Step9_10#1](../ide/codesnippet/VisualBasic/step-9-review-comment-and-test-your-code_1.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial1step9_10/cs/form1.cs" id="Snippet1":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial1step9_10/vb/form1.vb" id="Snippet1":::
 
      <xref:System.Windows.Forms.Control.Click> Program obsługi zdarzeń przycisku showButton jest teraz zakończony i działa. Rozpoczęto pisanie kodu, rozpoczynając od `if` instrukcji. `if`Instrukcja to sposób informowania o swojej aplikacji, "Sprawdź to i jeśli jest prawdziwe, wykonaj te akcje". W takim przypadku możesz poinstruować aplikację, aby otworzyła okno dialogowe **Otwórz plik** , a jeśli użytkownik wybierze plik i kliknie przycisk **OK** , Załaduj ten plik w elemencie **PictureBox**.
 

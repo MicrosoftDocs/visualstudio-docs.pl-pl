@@ -2,7 +2,7 @@
 title: Instalowanie obok siebie różnych wersji programu Visual Studio
 description: Dowiedz się, jak zainstalować program Visual Studio na komputerze, na którym jest już zainstalowana wcześniejsza lub nowsza wersja programu Visual Studio.
 ms.custom: SEO-VS-2020
-ms.date: 07/24/2019
+ms.date: 03/29/2021
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: conceptual
@@ -13,12 +13,12 @@ helpviewer_keywords:
 author: ornellaalt
 ms.author: ornella
 manager: jmartens
-ms.openlocfilehash: f17759d186805dc72623f27c9f254c7a6c0d36e2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0814b6ebfacd5b4cf24d0f451967903b9551808f
+ms.sourcegitcommit: 22789927ec8e877b7d2b67a555d6df97d84103e0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941531"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105981280"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Instalowanie obok siebie różnych wersji programu Visual Studio
 
@@ -50,17 +50,44 @@ Przed zainstalowaniem wersji obok siebie zapoznaj się z następującymi warunka
 
 ## <a name="install-minor-visual-studio-versions-side-by-side"></a>Zainstaluj drobne wersje programu Visual Studio obok siebie
 
-W przypadku uaktualniania z jednej pomocniczej wersji programu Visual Studio do następnej Instalator programu Visual Studio zaktualizuje bieżącą instalację do następnej wersji w tym kanale domyślnie. Na przykład podczas instalowania wersji zapoznawczej usługi 16.6.4 Instalator spróbuje zastąpić bieżącą instalację wersji zapoznawczej programu 16.6.3, ponieważ obie wersje znajdują się w kanale w wersji zapoznawczej 16,6. Pozwala to zagwarantować, że starsze wersje programu Visual Studio nie zajmują miejsca na maszynie. W niektórych określonych przypadkach może być przydatne zainstalowanie mniejszych wersji obok siebie. W naszym przykładzie będzie to oznaczało, że zarówno 16.6.3, jak i 16.6.4 na tym samym komputerze.
+W przypadku uaktualniania z jednej pomocniczej wersji programu Visual Studio do następnego Instalator programu Visual Studio domyślnie zaktualizuje bieżącą instalację do najnowszej wersji w tym kanale. Na przykład załóżmy, że 16.9.4 został po prostu wydane. Instalator podejmie próbę zamiany bieżącej instalacji programu 16.9.3 (lub niższej) na 16.9.4, ponieważ obie wersje są częścią [kanału wersji programu Visual Studio 2019](https://docs.microsoft.com/visualstudio/productinfo/release-rhythm). Zastąpienie starszej wersji przy użyciu nowszej wersji w trakcie aktualizacji pomaga upewnić się, że starsze wersje programu Visual Studio nie zajmują miejsca na maszynie. Jednak w niektórych określonych przypadkach może być przydatne zainstalowanie różnych pomocniczych wersji programu Visual Studio obok siebie. Na przykład możesz chcieć mieć zarówno 16.9.3, jak i 16.9.4 na tym samym komputerze. 
 
-1. Pobierz [plik inicjujący programu Visual Studio](/visualstudio/releases/2019/history#installing-an-earlier-release) dla wersji pomocniczej, który chcesz zainstalować obok istniejących wersji programu Visual Studio.
+::: moniker range="vs-2017"
+
+1. Pobierz najnowszy program inicjujący dla programu Visual Studio 2017 w wersji 15,9 z strony [poprzednich wersji programu Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) dla wersji, którą chcesz zainstalować obok istniejącej wersji programu Visual Studio.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Pobierz plik inicjujący programu Visual Studio 2019 ze [strony plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads) lub strony [Visual Studio 2019 releases](https://docs.microsoft.com/visualstudio/releases/2019/history#installing-an-earlier-release) dla wersji pomocniczej, którą chcesz zainstalować obok istniejącej wersji programu Visual Studio.
+
+::: moniker-end
+
+
 2. Otwórz wiersz polecenia w trybie administratora. W tym celu otwórz menu Start systemu Windows, wpisz "cmd", kliknij prawym przyciskiem myszy wyniki wyszukiwania w wierszu polecenia, a następnie wybierz polecenie **Uruchom jako administrator**. W wierszu polecenia Zmień katalog na folder, w którym znajduje się plik programu inicjującego programu Visual Studio.
-3. Uruchom następujące polecenie, określając nową ścieżkę folderu dla lokalizacji instalacji i zastępując nazwę pliku exe odpowiednią nazwą programu inicjującego dla instalowanej wersji programu Visual Studio. Nazwa pliku. exe powinna być taka sama lub podobna do jednego z następujących plików:
-   * vs_community.exe dla programu Visual Studio Community
-   * vs_professional.exe Visual Studio Professional
-   * vs_enterprise.exe Visual Studio Enterprise
 
+::: moniker range="vs-2017"
+
+3. Uruchom następujące polecenie, określając nową ścieżkę folderu dla lokalizacji instalacji i zastępując nazwę pliku exe odpowiednią nazwą programu inicjującego dla instalowanej wersji programu Visual Studio. Nazwa pliku. exe powinna być taka sama lub podobna do jednego z następujących plików:
+
+   * vs_enterprise.exe Visual Studio Enterprise
+   * vs_professional.exe Visual Studio Professional
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+3. Uruchom następujące polecenie, określając nową ścieżkę folderu dla lokalizacji instalacji i zastępując nazwę pliku exe odpowiednią nazwą programu inicjującego dla instalowanej wersji programu Visual Studio. Nazwa pliku. exe powinna być taka sama lub podobna do jednego z następujących plików:
+
+   * vs_enterprise.exe Visual Studio Enterprise
+   * vs_professional.exe Visual Studio Professional
+   * vs_community.exe dla programu Visual Studio Community
+
+::: moniker-end 
+  
    ```
-   vs_Enterprise.exe --installPath "C:\Program Files (x86)\Microsoft Visual Studio\<2019 AddNewPath>"
+   vs_Enterprise.exe --installPath "C:\Program Files (x86)\Microsoft Visual Studio\<AddNewPath>"
    ```
 
 4. Postępuj zgodnie z okna dialogowe Instalatora, aby wybrać składniki potrzebne do instalacji. Aby uzyskać więcej informacji, zobacz [Instalowanie programu Visual Studio](install-visual-studio.md#step-4---choose-workloads).

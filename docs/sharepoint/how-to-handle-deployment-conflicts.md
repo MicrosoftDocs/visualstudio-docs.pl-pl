@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7c163aa10bdcb3ee28de6d6950dd15f85df876bc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b09db3fecde5d4b87b24963930b2783b0c68052c
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99885615"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106213982"
 ---
 # <a name="how-to-handle-deployment-conflicts"></a>Instrukcje: obsługa konfliktów wdrożenia
   Możesz podać własny kod do obsługi konfliktów wdrożenia dla elementu projektu programu SharePoint. Można na przykład określić, czy wszystkie pliki w bieżącym elemencie projektu istnieją już w lokalizacji wdrożenia, a następnie usunąć wdrożone pliki przed wdrożeniem bieżącego elementu projektu. Aby uzyskać więcej informacji na temat konfliktów wdrożenia, zobacz [rozszerzanie pakietów i wdrażanie programu SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md).
@@ -44,8 +44,8 @@ ms.locfileid: "99885615"
 
  Dla uproszczenia <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> w programie obsługi zdarzeń w tym przykładzie przyjęto założenie, że istnieje konflikt wdrożenia (oznacza to, że zawsze dodaje nowy <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> obiekt), a `Resolve` Metoda po prostu zwraca **wartość true** , aby wskazać, że konflikt został rozwiązany. W rzeczywistym scenariuszu <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> program obsługi zdarzeń najpierw określi, czy istnieje konflikt między plikiem w bieżącym elemencie projektu i plikiem w lokalizacji wdrożenia, a następnie Dodaj <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> obiekt tylko wtedy, gdy istnieje konflikt. Na przykład można użyć `e.ProjectItem.Files` właściwości w programie obsługi zdarzeń do przeanalizowania plików w elemencie projektu i można wywołać polecenie programu SharePoint w celu przeanalizowania plików w lokalizacji wdrożenia. Podobnie w rzeczywistym scenariuszu `Resolve` Metoda może wywołać polecenie programu SharePoint w celu rozwiązania konfliktu w witrynie programu SharePoint. Aby uzyskać więcej informacji na temat tworzenia poleceń programu SharePoint, zobacz [How to: Create a SharePoint Command](../sharepoint/how-to-create-a-sharepoint-command.md).
 
- [!code-vb[SPExtensibility.ProjectItemExtension.DeploymentConflict#1](../sharepoint/codesnippet/VisualBasic/deploymentconflict/extension/deploymentconflictextension.vb#1)]
- [!code-csharp[SPExtensibility.ProjectItemExtension.DeploymentConflict#1](../sharepoint/codesnippet/CSharp/deploymentconflict/extension/deploymentconflictextension.cs#1)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/deploymentconflict/extension/deploymentconflictextension.vb" id="Snippet1":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/deploymentconflict/extension/deploymentconflictextension.cs" id="Snippet1":::
 
 ## <a name="compile-the-code"></a>Kompiluj kod
  Ten przykład wymaga odwołania do następujących zestawów:
