@@ -15,12 +15,12 @@ ms.author: ornella
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f37d0f89ad5124956198df1bde94bdb6cf54f64
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 931bd4191331f229f40a813b605eac7f69a1427a
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99950682"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106214281"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>Krok 4. Dodawanie obsługi zdarzeń kliknięcia do każdej etykiety
 
@@ -36,7 +36,7 @@ Gra w dopasowywanie działa w następujący sposób:
 
 ## <a name="to-add-a-click-event-handler-to-each-label"></a>Aby dodać program obsługi zdarzeń kliknięcia do każdej etykiety
 
-1. Otwórz formularz w **Projektant formularzy systemu Windows**. W **Eksplorator rozwiązań** wybierz pozycję *Form1.cs* lub *Form1. vb*. Na pasku menu wybierz polecenie Projektant **widoków**  >  .
+1. Otwórz formularz w **Projektant formularzy systemu Windows**. W **Eksplorator rozwiązań** wybierz pozycję *Form1. cs* lub *Form1. vb*. Na pasku menu wybierz polecenie Projektant **widoków**  >  .
 
 2. Wybierz pierwszy formant etykiety, aby go zaznaczyć. Następnie naciśnij i przytrzymaj klawisz **Ctrl** podczas wybierania każdej z pozostałych etykiet, aby je wybrać. Pamiętaj, że każda etykieta jest zaznaczona.
 
@@ -48,11 +48,11 @@ Gra w dopasowywanie działa w następujący sposób:
 
 5. Wypełnij resztę kodu w następujący sposób:
 
-     [!code-csharp[VbExpressTutorial4Step2_3_4#4](../ide/codesnippet/CSharp/step-4-add-a-click-event-handler-to-each-label_1.cs)]
-     [!code-vb[VbExpressTutorial4Step2_3_4#4](../ide/codesnippet/VisualBasic/step-4-add-a-click-event-handler-to-each-label_1.vb)]
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/cs/form1.cs" id="Snippet4":::
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/vb/form1.vb" id="Snippet4":::
 
-     > [!IMPORTANT]
-     > Użyj kontrolki język programowania w prawym górnym rogu tej strony, aby wyświetlić fragment kodu w języku C# lub fragment kodu Visual Basic.<br><br>![Kontrolka języka programowania dla Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
+    > [!IMPORTANT]
+    > Użyj kontrolki język programowania w prawym górnym rogu tej strony, aby wyświetlić fragment kodu w języku C# lub fragment kodu Visual Basic.<br><br>![Kontrolka języka programowania dla Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
     > [!NOTE]
     > Jeśli skopiujesz i wkleisz `label_Click()` blok kodu zamiast ręcznie wprowadzić kod, pamiętaj, aby zastąpić istniejący `label_Click()` kod. W przeciwnym razie otrzymasz zduplikowany blok kodu.

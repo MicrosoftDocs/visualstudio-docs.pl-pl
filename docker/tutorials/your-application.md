@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: f5f5fdd51e4aa13df66470534303f7fba19e44ab
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1b92792cf9db0090c52f583754e56c306e6d7234
+ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841669"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106082581"
 ---
 # <a name="build-and-run-the-todo-sample-app"></a>Kompiluj i uruchamiaj przykładową aplikację do zrobienia
 
@@ -30,7 +30,7 @@ Przed uruchomieniem aplikacji należy uzyskać kod źródłowy aplikacji na komp
 
 1. Upewnij się, że na komputerze lokalnym zainstalowano Docker for Windows lub platformę Docker Community Edition. Zobacz [dokumentację instalacji Docker for Windows](https://docs.docker.com/docker-for-windows/install/). Proces instalacji powoduje, że plik ZIP zawierający przykład jest dostępny pod adresem localhost.
 
-1. [Pobierz plik zip](http://localhost/assets/app.zip). Otwórz plik ZIP i upewnij się, że wyodrębnisz zawartość.
+1. [Pobierz plik zip](https://github.com/docker/getting-started/tree/master/app). Otwórz plik ZIP i upewnij się, że wyodrębnisz zawartość.
 
 1. Po wyodrębnieniu użyj ulubionego edytora kodu, aby otworzyć projekt. Jeśli potrzebujesz edytora, możesz użyć [Visual Studio Code](https://code.visualstudio.com/). Powinny pojawić się `package.json` i dwa podkatalogi ( `src` i `spec` ).
 

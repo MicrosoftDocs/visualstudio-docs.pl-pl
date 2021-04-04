@@ -23,12 +23,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1db0f53ffc049d8844d7447461c4c33a0492a2d7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 82cfcf1ce030cfe597c3ae7bfe85c528184c548a
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99858244"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215672"
 ---
 # <a name="validate-data-in-datasets"></a>Weryfikowanie danych w zestawach danych
 Sprawdzanie poprawności danych jest procesem potwierdzającym, że wartości wprowadzane do obiektów danych są zgodne z ograniczeniami w schemacie zestawu danych. Proces weryfikacji potwierdza również, że te wartości są przestrzegane w regułach, które zostały określone dla danej aplikacji. Dobrym sposobem jest zweryfikowanie danych przed wysłaniem aktualizacji do źródłowej bazy danych. Pozwala to zmniejszyć liczbę błędów, a także potencjalne liczby operacji rundy między aplikacją a bazą danych.
@@ -106,7 +106,7 @@ Można napisać kod, aby sprawdzić, czy każda kolumna, która ma zostać zwery
     > [!TIP]
     > Kliknij dwukrotnie po lewej stronie nazwy tabeli, aby utworzyć procedurę obsługi zdarzeń zmiany wiersza. Jeśli klikniesz dwukrotnie nazwę tabeli, możesz ją edytować.
 
-     [!code-vb[VbRaddataValidating#3](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_1.vb)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataValidating/VB/NorthwindDataSet.vb" id="Snippet3":::
 
 ### <a name="to-validate-data-when-a-row-changes-c"></a>Aby sprawdzić poprawność danych po zmianie wiersza (C#)
 
@@ -155,8 +155,8 @@ Użyj <xref:System.Data.DataRowVersion> wyliczenia, aby uzyskać dostęp do ró�
 
      Poniższy przykład tworzy nowy zestaw danych o nazwie `changedRecords` i wypełnia go wszystkimi zmienionymi rekordami z innego zestawu danych o nazwie `dataSet1` .
 
-     [!code-csharp[VbRaddataEditing#14](../data-tools/codesnippet/CSharp/validate-data-in-datasets_2.cs)]
-     [!code-vb[VbRaddataEditing#14](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_2.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet14":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet14":::
 
 ### <a name="to-get-all-changed-records-from-a-data-table"></a>Aby pobrać wszystkie zmienione rekordy z tabeli danych
 
@@ -164,8 +164,8 @@ Użyj <xref:System.Data.DataRowVersion> wyliczenia, aby uzyskać dostęp do ró�
 
      Poniższy przykład tworzy nową tabelę danych o nazwie `changedRecordsTable` i wypełnia ją wszystkimi zmienionymi rekordami z innej tabeli danych o nazwie `dataTable1` .
 
-     [!code-csharp[VbRaddataEditing#15](../data-tools/codesnippet/CSharp/validate-data-in-datasets_3.cs)]
-     [!code-vb[VbRaddataEditing#15](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_3.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet15":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet15":::
 
 ### <a name="to-get-all-records-that-have-a-specific-row-state"></a>Aby pobrać wszystkie rekordy z określonym stanem wiersza
 
@@ -173,13 +173,13 @@ Użyj <xref:System.Data.DataRowVersion> wyliczenia, aby uzyskać dostęp do ró�
 
      Poniższy przykład pokazuje, jak utworzyć nowy zestaw danych o nazwie `addedRecords` i wypełnić go tylko rekordami, które zostały dodane do `dataSet1` zestawu danych.
 
-     [!code-csharp[VbRaddataEditing#16](../data-tools/codesnippet/CSharp/validate-data-in-datasets_4.cs)]
-     [!code-vb[VbRaddataEditing#16](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_4.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet16":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet16":::
 
      Poniższy przykład pokazuje, jak zwrócić wszystkie rekordy, które zostały ostatnio dodane do `Customers` tabeli:
 
-     [!code-csharp[VbRaddataEditing#17](../data-tools/codesnippet/CSharp/validate-data-in-datasets_5.cs)]
-     [!code-vb[VbRaddataEditing#17](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_5.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet17":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet17":::
 
 ## <a name="access-the-original-version-of-a-datarow"></a>Dostęp do oryginalnej wersji elementu DataRow
 Gdy zmiany są wprowadzane do wierszy danych, zestaw danych zachowuje zarówno oryginalną ( <xref:System.Data.DataRowVersion.Original> ), jak i nowe <xref:System.Data.DataRowVersion.Current> wersje wiersza. Na przykład przed wywołaniem `AcceptChanges` metody aplikacja może uzyskać dostęp do różnych wersji rekordu (zgodnie z definicją w <xref:System.Data.DataRowVersion> wyliczeniu) i odpowiednio przetworzyć zmiany.
@@ -195,8 +195,8 @@ Przekazanie <xref:System.Data.DataRowVersion> wartości wraz z indeksem kolumny 
 
      Poniższy przykład pokazuje, jak użyć wartości, <xref:System.Data.DataRowVersion> Aby uzyskać oryginalną wartość `CompanyName` pola w <xref:System.Data.DataRow> :
 
-     [!code-csharp[VbRaddataEditing#21](../data-tools/codesnippet/CSharp/validate-data-in-datasets_6.cs)]
-     [!code-vb[VbRaddataEditing#21](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_6.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet21":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet21":::
 
 ## <a name="access-the-current-version-of-a-datarow"></a>Dostęp do bieżącej wersji elementu DataRow
 
@@ -206,8 +206,8 @@ Przekazanie <xref:System.Data.DataRowVersion> wartości wraz z indeksem kolumny 
 
      Poniższy przykład pokazuje, jak użyć wartości, <xref:System.Data.DataRowVersion> Aby uzyskać bieżącą wartość `CompanyName` pola w <xref:System.Data.DataRow> :
 
-     [!code-csharp[VbRaddataEditing#22](../data-tools/codesnippet/CSharp/validate-data-in-datasets_7.cs)]
-     [!code-vb[VbRaddataEditing#22](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_7.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet22":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet22":::
 
 ## <a name="see-also"></a>Zobacz też
 

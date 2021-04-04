@@ -8,16 +8,16 @@ metadata:
   description: Dowiedz się, jak używać programu Visual Studio do tworzenia aplikacji, usług i narzędzi w wybranym przez Ciebie języku, dla dowolnych platform i urządzeń.
   ms.topic: hub-page
   ms.custom: contperf-fy21q1
-  ms.date: 03/23/2021
+  ms.date: 03/30/2021
   monikerRange: '>=vs-2017'
   f1_keywords:
   - MSDNSTART
-  ms.openlocfilehash: 9ea356f29ed511dc5e968dd0947f614277d497f0
-  ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+  ms.openlocfilehash: c2f3b148f99924047c71f2bf1a13a99183e77063
+  ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 03/25/2021
-  ms.locfileid: "105080284"
+  ms.lasthandoff: 03/31/2021
+  ms.locfileid: "106083545"
 highlightedContent:
   items:
   - title: Konfiguracja i instalacja
@@ -186,8 +186,8 @@ additionalContent:
       summary: Udostępnianie aplikacji i kodu przy użyciu narzędzi Web Deploy, InstallShield, NuGet, ciągłej integracji i nie tylko.
       url: ../deployment/index.yml
     - title: Kontrola wersji
-      summary: Udostępniaj kod przy użyciu technologii kontroli wersji, takich jak Git i TFVC.
-      url: /azure/devops/repos/index
+      summary: Udostępniaj kod przy użyciu technologii kontroli wersji, takich jak Git i GitHub.
+      url: ../ide/git-with-visual-studio.md
     - title: DevOps
       summary: Ciągłe tworzenie i wydawanie aplikacji w chmurze oraz wdrażanie praktyk Agile przy użyciu rozwiązania Azure DevOps Services.
       url: /azure/devops

@@ -15,12 +15,12 @@ ms.author: ornella
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 82356ce29f46388f9c74318c05dc6a4b68fcbbae
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3254a986fb21c5a562d0d9a3c7f098d2b560dbfd
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99950773"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106214294"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>Krok 3. Przypisywanie losowej ikony do każdej etykiety
 
@@ -30,8 +30,8 @@ Jeśli ikony w każdej grze są wyświetlane w tych samych komórkach, gra nie n
 
 1. Przed dodaniem poniższego kodu, należy wziąć pod uwagę sposób działania metody. Istnieje nowe słowo kluczowe: `foreach` w języku C# i `For Each` w Visual Basic. (Jeden z wierszy jest celowo zakomentowany, jest to wyjaśnione na końcu tej procedury.)
 
-     [!code-csharp[VbExpressTutorial4Step2_3_4#2](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_1.cs)]
-     [!code-vb[VbExpressTutorial4Step2_3_4#2](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_1.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/cs/form1.cs" id="Snippet2":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/vb/form1.vb" id="Snippet2":::
 
       > [!IMPORTANT]
       > Użyj kontrolki język programowania w prawym górnym rogu tej strony, aby wyświetlić fragment kodu w języku C# lub fragment kodu Visual Basic.<br><br>![Kontrolka języka programowania dla Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
@@ -40,8 +40,8 @@ Jeśli ikony w każdej grze są wyświetlane w tych samych komórkach, gra nie n
 
      Jak wspomniano wcześniej, istnieją nowe `AssignIconsToSquares()` metody: `foreach` Pętla w języku C# i `For Each` w Visual Basic. Pętli można użyć w `For Each` dowolnym momencie, gdy chcesz wykonać tę samą czynność wiele razy. W takim przypadku należy wykonać te same instrukcje dla każdej etykiety w <xref:System.Windows.Forms.TableLayoutPanel> , jak wyjaśniono w poniższym kodzie. Pierwszy wiersz tworzy zmienną o nazwie `control` , która przechowuje każdy formant pojedynczo, podczas gdy kontrolka zawiera instrukcje w pętli wykonanej.
 
-     [!code-csharp[VbExpressTutorial4Step2_3_4#14](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_2.cs)]
-     [!code-vb[VbExpressTutorial4Step2_3_4#14](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_2.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/cs/form1.cs" id="Snippet14":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/vb/form1.vb" id="Snippet14":::
 
     > [!NOTE]
     > Używane są nazwy „iconLabel” (etykieta ikony) i „control” (formant), ponieważ są opisowe. Można zamiast nich użyć innych nazw, a kod zadziała dokładnie tak samo, o ile zmieni się nazwę w każdej instrukcji wewnątrz pętli.
@@ -50,8 +50,8 @@ Jeśli ikony w każdej grze są wyświetlane w tych samych komórkach, gra nie n
 
      Dokładniej sprawdzaj kod, który jest uruchamiany wewnątrz `foreach` pętli lub `For Each` . Ten kod jest przedstawiony tutaj.
 
-     [!code-csharp[VbExpressTutorial4Step2_3_4#16](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_3.cs)]
-     [!code-vb[VbExpressTutorial4Step2_3_4#16](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_3.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/cs/form1.cs" id="Snippet16":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/vb/form1.vb" id="Snippet16":::
 
      Pierwszy wiersz konwertuje zmienną **sterującą** na etykietę o nazwie **iconLabel**. Wiersz po tym jest `if` instrukcją, która sprawdza, czy konwersja zadziałała. Jeśli konwersja działa, instrukcje w `if` instrukcji są uruchamiane. (Jak można przywołać z poprzednich samouczków, `if` instrukcja zostanie użyta do obliczenia dowolnego określonego warunku). Pierwszy wiersz w `if` instrukcji tworzy zmienną o nazwie **randomNumber** , która zawiera liczbę losową odpowiadającą jednemu z elementów na liście ikon. W tym celu używa <xref:System.Random.Next> metody <xref:System.Random> obiektu, który został utworzony wcześniej. `Next`Metoda zwraca liczbę losową. Ten wiersz używa również <xref:System.Collections.Generic.List%601.Count> Właściwości listy **ikon** do określenia zakresu, z którego ma zostać wybrana liczba losowa. Następny wiersz przypisuje jeden z elementów listy ikon do <xref:System.Windows.Forms.Label.Text> właściwości etykiety. Zakomentowany wiersz jest objaśniony w dalszej części tego tematu. Na koniec ostatni wiersz w `if` instrukcji usuwa z listy ikonę, która została dodana do formularza.
 
@@ -59,7 +59,7 @@ Jeśli ikony w każdej grze są wyświetlane w tych samych komórkach, gra nie n
 
 3. Aby wypełnić tablicę gier ikonami, musisz wywołać `AssignIconsToSquares()` metodę zaraz po uruchomieniu programu. Jeśli używasz języka C#, Dodaj instrukcję tuż poniżej wywołania `InitializeComponent()` metody w _konstruktorze_ **Form1** , więc formularz wywoła nową metodę, aby skonfigurować ją przed wyświetleniem. Konstruktory są wywoływane podczas tworzenia nowego obiektu, takiego jak klasa lub struktura. Zobacz [konstruktory (Przewodnik programowania w języku C#)](/dotnet/csharp/programming-guide/classes-and-structs/constructors) lub [Użyj konstruktorów i destruktorów](/previous-versions/visualstudio/visual-studio-2008/2z08e49e\(v\=vs.90\)) w Visual Basic, aby uzyskać więcej informacji.
 
-     [!code-csharp[VbExpressTutorial4Step2_3_4#13](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_4.cs)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/cs/form1.cs" id="Snippet13":::
 
      W przypadku Visual Basic Dodaj `AssignIconsToSquares()` wywołanie metody do metody, `Form1_Load` Aby kod wyglądał następująco.
 
@@ -80,8 +80,8 @@ Jeśli ikony w każdej grze są wyświetlane w tych samych komórkach, gra nie n
 
 6. Aby ukryć ikony, Zatrzymaj program i usuń znaczniki komentarza dla wiersza z komentarzami kodu wewnątrz `For Each` pętli.
 
-     [!code-csharp[VbExpressTutorial4Step2_3_4#15](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_5.cs)]
-     [!code-vb[VbExpressTutorial4Step2_3_4#15](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_5.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/cs/form1.cs" id="Snippet15":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/vb/form1.vb" id="Snippet15":::
 
 7. Na pasku menu wybierz przycisk **Zapisz wszystko** , aby zapisać program, a następnie uruchom go. Wygląda, jakby ikony zniknęły — widać tylko niebieskie tło. Jednakże ikony są losowo przydzielane i nadal istnieją. Ponieważ ikony mają ten sam kolor, co tło, gracz ich nie widzi. Gdyby gracz mógł od razu zobaczyć wszystkie ikony, gra nie byłaby przesadnie trudna, czyż nie?
 

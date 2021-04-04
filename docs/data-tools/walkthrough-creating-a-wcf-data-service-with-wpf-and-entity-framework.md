@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 54699947588e29da7312c0574833a13bbc3c8cfd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f519d8e3bfe01fc3e4a1e4cfe82f4f8502c84821
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99858192"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215698"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Przewodnik: tworzenie usługi danych programu WCF za pomocą struktur WPF i Entity Framework
 W tym instruktażu pokazano, jak utworzyć prostą [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] , która jest hostowana w [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci Web, a następnie uzyskać do niej dostęp z aplikacji Windows Forms.
@@ -126,13 +126,14 @@ W następnym kroku utworzysz i testujesz usługę danych.
 
 4. W **edytorze kodu** Znajdź pierwszy `TODO:` komentarz i zastąp go następującym kodem:
 
-     [!code-vb[WCFDataServiceWalkthrough#1](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework_1.vb)]
-     [!code-csharp[WCFDataServiceWalkthrough#1](../data-tools/codesnippet/CSharp/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework_1.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/wcfdataservicewalkthrough/vb/northwindcustomers.svc.vb" id="Snippet1":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/wcfdataservicewalkthrough/cs/northwindcustomers.svc.cs" id="Snippet1":::
 
 5. Zastąp komentarze w `InitializeService` obsłudze zdarzeń następującym kodem:
 
-     [!code-vb[WCFDataServiceWalkthrough#2](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework_2.vb)]
-     [!code-csharp[WCFDataServiceWalkthrough#2](../data-tools/codesnippet/CSharp/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework_2.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/wcfdataservicewalkthrough/vb/northwindcustomers.svc.vb" id="Snippet2":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/wcfdataservicewalkthrough/cs/northwindcustomers.svc.cs" id="Snippet2":::
+
 
 6. Na pasku menu wybierz **Debuguj**  >  **Rozpocznij bez debugowania** , aby uruchomić usługę. Zostanie otwarte okno przeglądarki i zostanie wyświetlony schemat XML dla usługi.
 
@@ -198,7 +199,7 @@ W następnym kroku utworzysz interfejs użytkownika, który wyświetla dane z us
 
 1. W oknie **źródła danych** Otwórz menu skrótów dla węzła **klienci** i wybierz polecenie **Kopiuj**.
 
-2. W projektancie formularzy **Form1. vb** lub **Form1.cs** Otwórz menu skrótów i wybierz polecenie **Wklej**.
+2. W projektancie formularzy **Form1. vb** lub **Form1. cs** Otwórz menu skrótów i wybierz polecenie **Wklej**.
 
     <xref:System.Windows.Forms.DataGridView>Kontrolka, <xref:System.Windows.Forms.BindingSource> składnik i <xref:System.Windows.Forms.BindingNavigator> składnik są dodawane do formularza.
 
@@ -249,7 +250,7 @@ W tym kroku dostosowano aplikację w celu filtrowania danych według miasta klie
 
 ### <a name="to-add-filtering-by-city"></a>Aby dodać filtrowanie według miejscowości
 
-1. W **Eksplorator rozwiązań** Otwórz menu skrótów dla węzła **Form1. vb** lub **Form1.cs** i wybierz polecenie **Otwórz**.
+1. W **Eksplorator rozwiązań** Otwórz menu skrótów dla węzła **Form1. vb** lub **Form1. cs** i wybierz polecenie **Otwórz**.
 
 2. Dodaj <xref:System.Windows.Forms.TextBox> kontrolkę i <xref:System.Windows.Forms.Button> kontrolkę z **przybornika** do formularza.
 

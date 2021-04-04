@@ -2,18 +2,18 @@
 title: Jak program Visual Studio ułatwia kontrolę źródła
 titleSuffix: ''
 description: Dowiedz się, jak za pomocą usługi git & GitHub w programie Visual Studio, aby śledzić zmiany w kodzie i przywracać je w razie potrzeby.
-ms.date: 03/22/2021
+ms.date: 04/01/2021
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jmartens
 monikerRange: vs-2019
-ms.openlocfilehash: 15e3c08606edf0e491785ba8599c5eb07c6b4551
-ms.sourcegitcommit: 08ee19f260164271e18bdbafe624301508f554ce
+ms.openlocfilehash: 6e4bed3201a48975e9da266794f085f78be6d68c
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105006804"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215581"
 ---
 # <a name="how-visual-studio-makes-source-control-easy"></a>Jak program Visual Studio ułatwia kontrolę źródła
 
@@ -51,5 +51,6 @@ Aby dowiedzieć się więcej na temat korzystania z narzędzia Git i usługi Git
 
 ## <a name="see-also"></a>Zobacz też
 
+- [Wprowadzenie do usługi git i usługi GitHub w programie Visual Studio](/learn/modules/visual-studio-github-push/)
 - [Nowe środowisko Git w programie Visual Studio](git-with-visual-studio.md)
 - [Porównaj narzędzia Git i Team Explorer obok siebie](git-team-explorer-feature-comparison.md)

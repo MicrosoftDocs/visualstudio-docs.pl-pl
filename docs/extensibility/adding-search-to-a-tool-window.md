@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82176afaacae3b9f4553c8b1b5b41b9a4f10dace
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ca1998b5ca3ad78b269c50244ddf51796c9e4005
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105097555"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215529"
 ---
 # <a name="add-search-to-a-tool-window"></a>Dodawanie wyszukiwania do okna narzędzi
 Po utworzeniu lub zaktualizowaniu okna narzędzi w rozszerzeniu można dodać tę samą funkcję wyszukiwania, która pojawia się w innym miejscu w programie Visual Studio. Ta funkcja obejmuje następujące funkcje:
@@ -79,8 +79,8 @@ Postępując zgodnie z tym przewodnikiem, dowiesz się, jak wykonywać następuj
 
      Ten kod dodaje publiczną <xref:System.Windows.Controls.TextBox> Właściwość o nazwie **SearchResultsTextBox** i publiczną właściwość ciągu o nazwie **SearchContent**. W konstruktorze SearchResultsTextBox jest ustawiony na pole tekstowe, a SearchContent jest inicjowany do zestawu ciągów rozdzielanych znakami nowego wiersza. Zawartość pola tekstowego jest również inicjowana do zestawu ciągów.
 
-     [!code-csharp[ToolWindowSearch#1](../extensibility/codesnippet/CSharp/adding-search-to-a-tool-window_1.cs)]
-     [!code-vb[ToolWindowSearch#1](../extensibility/codesnippet/VisualBasic/adding-search-to-a-tool-window_1.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/toolwindowsearch/cs/mycontrol.xaml.cs" id="Snippet1":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/toolwindowsearch/vb/mycontrol.xaml.vb" id="Snippet1":::
 
 5. Skompiluj projekt i Rozpocznij debugowanie. Pojawia się eksperymentalne wystąpienie programu Visual Studio.
 

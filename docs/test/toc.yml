@@ -123,6 +123,8 @@
       items:
         - name: Uaktualnianie z MSTestV1 do MSTestV2
           href: mstest-update-to-mstestv2.md
+        - name: Migrowanie testsettings do runsettings
+          href: migrate-testsettings-to-runsettings.md
 - name: Live Unit Testing
   items:
     - name: Wprowadzenie

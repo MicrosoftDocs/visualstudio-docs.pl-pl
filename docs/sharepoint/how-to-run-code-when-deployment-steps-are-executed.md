@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0b3037c0ec983b9f496947feba41938111fafc38
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 74db1b73dded52ba15ea860873c49c0264f7fea7
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851585"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106214411"
 ---
 # <a name="how-to-run-code-when-deployment-steps-are-executed"></a>Instrukcje: uruchamianie kodu po wykonaniu kroków wdrożenia
   Jeśli chcesz wykonać dodatkowe zadania dla kroku wdrożenia w projekcie programu SharePoint, możesz obsłużyć zdarzenia, które są wywoływane przez elementy projektu programu SharePoint przed i po wykonaniu każdego kroku wdrożenia przez program Visual Studio. Aby uzyskać więcej informacji, zobacz [rozszerzanie pakietów i wdrażanie programu SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md).
@@ -41,8 +41,8 @@ ms.locfileid: "99851585"
 ## <a name="example"></a>Przykład
  Poniższy przykład kodu demonstruje, jak obsłużyć <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepCompleted> zdarzenia i w rozszerzeniu elementu projektu wystąpienia listy. To rozszerzenie zapisuje dodatkowy komunikat do okna **dane wyjściowe** , gdy program Visual Studio odtwarza pulę aplikacji podczas wdrażania i wycofywania rozwiązania.
 
- [!code-vb[SPExtensibility.ProjectSystemExtension.General#4](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/handledeploymentstepevents.vb#4)]
- [!code-csharp[SPExtensibility.ProjectSystemExtension.General#4](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/handledeploymentstepevents.cs#4)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/handledeploymentstepevents.vb" id="Snippet4":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/handledeploymentstepevents.cs" id="Snippet4":::
 
 ## <a name="compile-the-code"></a>Kompiluj kod
  Ten przykład wymaga odwołania do następujących zestawów:

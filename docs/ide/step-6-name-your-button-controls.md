@@ -15,12 +15,12 @@ ms.author: ornella
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f6612806f8bf1453cf28f9d75c78588c2074bb0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f69a87d923eebaea03c9c8a38496c4c379db8aba
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868884"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106214216"
 ---
 # <a name="step-6-name-your-button-controls"></a>Krok 6. Nadawanie nazw kontrolkom przycisków
 
@@ -43,15 +43,15 @@ W formularzu znajdują się cztery przyciski i IDE o nazwie im **Button1**, **Bu
 1. Zmień nazwy pozostałych trzech przycisków na **backgroundButton**, **clearButton** i **showButton**.
 Nazwy można sprawdzić, wybierając listę rozwijaną selektor formantów w oknie **Właściwości** . Pojawią się nowe nazwy przycisków.
 
-1. Kliknij dwukrotnie przycisk **Pokaż obraz** w formularzu. Alternatywnie wybierz przycisk **Pokaż obraz** na formularzu, a następnie naciśnij klawisz **Enter** . Gdy to zrobisz, IDE otworzy dodatkową kartę w oknie głównym o nazwie **Form1.cs**. (Jeśli używasz Visual Basic, karta nosi nazwę **Form1. vb**).
+1. Kliknij dwukrotnie przycisk **Pokaż obraz** w formularzu. Alternatywnie wybierz przycisk **Pokaż obraz** na formularzu, a następnie naciśnij klawisz **Enter** . Gdy to zrobisz, IDE otworzy dodatkową kartę w oknie głównym o nazwie **Form1. cs**. (Jeśli używasz Visual Basic, karta nosi nazwę **Form1. vb**).
 
    Na tej karcie jest wyświetlany plik kodu znajdujący się za formularzem, jak pokazano na poniższym zrzucie ekranu.
 
-    ![Karta Form1.cs z kodem&#35; języka Visual C](../ide/media/express_showbuttoncode.png)<br>
-***Form1.cs** _ _tab z kodem C# *
+    ![Karta Form1. cs z kodem&#35; języka Visual C](../ide/media/express_showbuttoncode.png)<br>
+***Formularz Form1. cs** _ _tab z kodem C# *
 
     > [!NOTE]
-    > Karta Form1.cs lub Form1. vb może w zamian wyświetlić **showButton** jako **showButton** .
+    > W przypadku karty Form1. cs lub Form1. vb zamiast tego można wyświetlić **showButton** jako **showButton** .
 
 1. Skup się na tej części kodu.
 
@@ -71,18 +71,18 @@ Nazwy można sprawdzić, wybierając listę rozwijaną selektor formantów w okn
 
    Przeglądasz kod o nazwie `showButton_Click()` (Alternatywnie `ShowButton_Click()` ). Środowisko IDE zostało dodane do kodu formularza podczas otwierania pliku kodu dla przycisku **showButton** . W czasie projektowania, gdy otworzysz plik kodu dla formantu w formularzu, kod jest generowany dla kontrolki, jeśli jeszcze nie istnieje. Ten kod, znany jako *Metoda*, jest uruchamiany po uruchomieniu aplikacji i wybraniu kontrolki — w tym przypadku przycisk **Pokaż obraz** .
 
-1. Wybierz ponownie kartę **Projektant formularzy systemu Windows** (**Form1.cs [Design]**), a następnie otwórz plik kodu dla przycisku **Wyczyść obraz** , aby utworzyć dla niego metodę w kodzie formularza. Powtórz tę czynność dla pozostałych dwóch przycisków. Za każdym razem IDE dodaje nową metodę do pliku kodu formularza.
+1. Wybierz ponownie kartę **Projektant formularzy systemu Windows** (**Form1. cs [Design]**), a następnie otwórz plik kodu dla przycisku **Wyczyść obraz** , aby utworzyć dla niego metodę w kodzie formularza. Powtórz tę czynność dla pozostałych dwóch przycisków. Za każdym razem IDE dodaje nową metodę do pliku kodu formularza.
 
 1. Aby dodać jeszcze jedną metodę, Otwórz plik kodu dla kontrolki **CheckBox** w **Projektant formularzy systemu Windows** , aby umożliwić IDE dodanie `checkBox1_CheckedChanged()` metody. Ta metoda jest wywoływana za każdym razem, gdy użytkownik zaznaczy lub wyczyści to pole wyboru.
 
    > [!TIP]
-   > Podczas pracy nad aplikacją często przechodzą między edytorem kodu a **Projektant formularzy systemu Windows**. Środowisko IDE ułatwia nawigowanie w projekcie. Użyj **Eksplorator rozwiązań** , aby **otworzyć Projektant formularzy systemu Windows** przez dwukrotne kliknięcie *Form1.cs* w języku C# lub *Form1. vb* w Visual Basic lub na pasku menu wybierz polecenie   >  **Projektant** widoków.
+   > Podczas pracy nad aplikacją często przechodzą między edytorem kodu a **Projektant formularzy systemu Windows**. Środowisko IDE ułatwia nawigowanie w projekcie. Użyj **Eksplorator rozwiązań** , aby otworzyć **Projektant formularzy systemu Windows** przez dwukrotne kliknięcie *formularza Form1. cs* w języku C# lub *Form1. vb* w Visual Basic lub na pasku menu wybierz polecenie   >  **Projektant** widoków.
 
     Poniżej przedstawiono nowy kod widoczny w edytorze kodu.
 
-    [!code-csharp[VbExpressTutorial1Step6_#2](../ide/codesnippet/CSharp/step-6-name-your-button-controls_2.cs)]
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial1step6/cs/form1.cs" id="Snippet2":::
 
-    [!code-vb[VbExpressTutorial1Step6_#2](../ide/codesnippet/VisualBasic/step-6-name-your-button-controls_2.vb)]
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial1step6/vb/form1.vb" id="Snippet2":::
 
     > [!NOTE]
     > Kod może nie wyświetlać programów obsługi zdarzeń w przypadku liter "camelCase".

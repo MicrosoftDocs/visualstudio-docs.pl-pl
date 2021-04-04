@@ -8,16 +8,16 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 60a67da568703282a3ae469afa4dbc15c53cf4ba
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6c7f425d87ba6316c3a3cab66f2b342b4c1141f4
+ms.sourcegitcommit: 5c0e20fc6005bc1f8ca38f4122378c4ac21ba89a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873947"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106110600"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Program poprawy jakości obsługi klienta systemu Visual Studio
 
-Program Visual Studio Program poprawy jakości obsługi klienta (VSCEIP) został zaprojektowany, aby pomóc firmie Microsoft w ulepszaniu programu Visual Studio w miarę upływu czasu. Ten program [zbiera informacje o błędach](../ide/diagnostic-data-collection.md), sprzęcie komputerowym i sposobie korzystania przez użytkowników z programu Visual Studio bez zakłócania pracy użytkowników na komputerze. Zbierane informacje ułatwiają firmie Microsoft identyfikację funkcji, które należy poprawić. W tym dokumencie opisano, jak wybrać lub z VSCEIP.
+Program Visual Studio Program poprawy jakości obsługi klienta (VSCEIP) został zaprojektowany, aby pomóc firmie Microsoft w ulepszaniu programu Visual Studio w miarę upływu czasu. Ten program [zbiera informacje o błędach](../ide/diagnostic-data-collection.md), sprzęcie komputerowym i sposobie korzystania przez użytkowników z programu Visual Studio bez zakłócania pracy użytkowników na komputerze. Zbierane informacje ułatwiają firmie Microsoft identyfikację funkcji, które należy poprawić. W tym dokumencie opisano, jak wybrać lub z VSCEIP. W przypadku rezygnacji z **opcjonalnej** kolekcji danych diagnostycznych. Niektóre kolekcje danych diagnostycznych są **wymagane** , aby upewnić się, że program Visual Studio jest bezpieczny, jest aktualny i wykonywany zgodnie z oczekiwaniami. Wybór nie zostanie zmieniony na wymaganą kolekcję danych diagnostycznych.
 
 [!INCLUDE [gdpr-hybrid-note](../misc/includes/gdpr-hybrid-note.md)]
 > [!NOTE]

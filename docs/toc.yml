@@ -906,6 +906,7 @@
 - name: Debugowanie >>
   href: debugger/index.yml
 - name: Kontrola wersji
+  expanded: true
   items:
     - name: Nowe środowisko Git w programie Visual Studio
       href: ide/git-with-visual-studio.md

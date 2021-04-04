@@ -23,12 +23,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 05575e6cc75468a85a3dd410ea59bebca79eee0f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d43d4267ce0e180a525e990e372b7a6773a9cc51
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99858842"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215815"
 ---
 # <a name="hierarchical-update"></a>Aktualizacja hierarchiczna
 
@@ -93,8 +93,8 @@ Wygenerowany kod zapisu zawiera również wiersz kodu, który wywołuje `Custome
 
 2. Dodaj wiersz kodu, aby wywołać `OrdersBindingSource.EndEdit` metodę po wierszu, który wywołuje `CustomersBindingSource.EndEdit` metodę. Kod w przypadku kliknięcia przycisku **Zapisz** powinien wyglądać podobnie do poniższego:
 
-     [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/VisualBasic/hierarchical-update_1.vb)]
-     [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/CSharp/hierarchical-update_1.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/VB/Form1.vb" id="Snippet1":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/CS/Form1.cs" id="Snippet1":::
 
 Oprócz zatwierdzania zmian w powiązanej tabeli podrzędnej przed zapisaniem danych w bazie danych, można także zatwierdzić nowo utworzone rekordy nadrzędne przed dodaniem nowych rekordów podrzędnych do zestawu danych. Innymi słowy, może być konieczne dodanie nowego rekordu nadrzędnego ( `Customer` ) do zestawu danych przed ograniczeniami klucza obcego, `Orders` które zostaną dodane do zestawu danych. Aby to osiągnąć, możesz użyć zdarzenia podrzędnego `BindingSource.AddingNew` .
 
@@ -109,8 +109,8 @@ Oprócz zatwierdzania zmian w powiązanej tabeli podrzędnej przed zapisaniem da
 
 2. Dodaj wiersz kodu do programu obsługi zdarzeń, który wywołuje `CustomersBindingSource.EndEdit` metodę. Kod w programie `OrdersBindingSource_AddingNew` obsługi zdarzeń powinien wyglądać następująco:
 
-     [!code-vb[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/VisualBasic/hierarchical-update_2.vb)]
-     [!code-csharp[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/CSharp/hierarchical-update_2.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/VB/Form1.vb" id="Snippet2":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/CS/Form1.cs" id="Snippet2":::
 
 ## <a name="tableadaptermanager-reference"></a>Odwołanie TableAdapterManager
 

@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a7f8645cd34fe56d7d8d0f6a9efa6bf01bd13d8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9bc7fe3898bec19b4eb0130e7279974823669e7f
+ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939672"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106082542"
 ---
 # <a name="how-msbuild-builds-projects"></a>Jak program MSBuild kompiluje projekty
 
@@ -139,7 +139,7 @@ Plik *Microsoft. Common. props* ustawia wartości domyślne, które można przes
 
 Plik *Microsoft. Common. targets* i pliki docelowe, które zaimportowano, definiują standardowy proces kompilacji dla projektów .NET. Udostępnia również punkty rozszerzenia, których można użyć do dostosowania kompilacji.
 
-W implementacji, *Microsoft. Common. targets* to cienka otoka, która importuje element *Microsoft. Common. CurrentVersion. targets*. Ten plik zawiera ustawienia dla standardowych właściwości i definiuje rzeczywiste elementy docelowe, które definiują proces kompilacji. `Build`Miejsce docelowe jest zdefiniowane w tym miejscu, ale jest w rzeczywistości puste. Jednak `Build` element docelowy zawiera atrybut, `DependsOn` który określa poszczególne elementy docelowe, które składają się na rzeczywiste kroki kompilacji, które są `BeforeBuild` , `CoreBuild` i `AfterBuild` . `Build`Element docelowy definiuje się w następujący sposób:
+W implementacji, *Microsoft. Common. targets* to cienka otoka, która importuje element *Microsoft. Common. CurrentVersion. targets*. Ten plik zawiera ustawienia dla standardowych właściwości i definiuje rzeczywiste elementy docelowe, które definiują proces kompilacji. `Build`Miejsce docelowe jest zdefiniowane w tym miejscu, ale jest w rzeczywistości puste. Jednak `Build` element docelowy zawiera atrybut, `DependsOnTargets` który określa poszczególne elementy docelowe, które składają się na rzeczywiste kroki kompilacji, które są `BeforeBuild` , `CoreBuild` i `AfterBuild` . `Build`Element docelowy definiuje się w następujący sposób:
 
 ```xml
   <PropertyGroup>
@@ -157,7 +157,7 @@ W implementacji, *Microsoft. Common. targets* to cienka otoka, która importuje 
       Returns="@(TargetPathWithTargetPlatformMoniker)" />
 ```
 
-`BeforeBuild` i `AfterBuild` są punktami rozszerzenia. Są one puste w pliku *Microsoft. Common. CurrentVersion. targets* , ale projekty mogą zapewnić własne `BeforeBuild` i `AfterBuild` cele z zadaniami, które należy wykonać przed lub po głównym procesie kompilacji. `AfterBuild` jest uruchamiany przed elementem docelowym No-op, `Build` ponieważ występuje `AfterBuild` w atrybucie w elemencie `DependsOn` `Build` docelowym, ale występuje po `CoreBuild` .
+`BeforeBuild` i `AfterBuild` są punktami rozszerzenia. Są one puste w pliku *Microsoft. Common. CurrentVersion. targets* , ale projekty mogą zapewnić własne `BeforeBuild` i `AfterBuild` cele z zadaniami, które należy wykonać przed lub po głównym procesie kompilacji. `AfterBuild` jest uruchamiany przed elementem docelowym No-op, `Build` ponieważ występuje `AfterBuild` w atrybucie w elemencie `DependsOnTargets` `Build` docelowym, ale występuje po `CoreBuild` .
 
 `CoreBuild`Element docelowy zawiera wywołania narzędzi do kompilacji w następujący sposób:
 

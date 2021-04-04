@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 15bfae190ba2960c291dca635bfff1188ac64ab5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b0418c8f3928ae2004055db7dfa70be123719377
+ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836192"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106082529"
 ---
 # <a name="xaml-designer-options-page"></a>Strona opcji projektant XAML
 
@@ -61,6 +61,17 @@ Użyj tego ustawienia, aby określić, jak powiększenie ma być stosowane podcz
 |**Kółka myszy**|Powiększ projektant XAML, przewijając kółko myszy.|
 |**CTRL + kółko myszy**|Powiększ projektant XAML, naciskając klawisz **Ctrl** podczas przewijania kółka myszy.|
 |**Alt + kółko myszy**|Powiększ projektant XAML, naciskając klawisz **Alt** podczas przewijania kółka myszy.|
+
+Te ustawienia określają zachowanie projektanta podczas edytowania dokumentu XAML.
+
+## <a name="default-zoom-setting"></a>Domyślne ustawienie powiększenia
+
+Użyj tego ustawienia, aby określić domyślną wartość powiększenia dla wyświetlania dokumentu XAML.
+
+|Nazwa|Opis|
+|-|-|
+|**Ostatnio używane**|Użyj ostatnio używanej wartości powiększenia dla wszystkich dokumentów XAML domyślnie. Gdy dokument XAML zostanie otwarty po raz pierwszy, będzie używać ustawienia "Dopasuj wszystko" tylko po raz pierwszy.|
+|**Dopasuj wszystko**|Użyj tej opcji, aby ustawić wartość powiększenia na "Dopasuj wszystkie" dla projektanta XAML. Po zamknięciu i ponownym otwarciu dokumentu XAML Ostatnia ustawiona wartość zostanie zachowana dla tej sesji, ale dla różnych sesji "Dopasuj wszystkie" zostanie użyta domyślnie.|
 
 Te ustawienia określają zachowanie projektanta podczas edytowania dokumentu XAML.
 

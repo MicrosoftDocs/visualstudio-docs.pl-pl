@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ca82beef26f897b2f5d3a145c968c11efaabc294
-ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
+ms.openlocfilehash: 89a84198256657ae7f94d0a923780163bee73e48
+ms.sourcegitcommit: 5c0e20fc6005bc1f8ca38f4122378c4ac21ba89a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104806059"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106110613"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Samouczek: Rozpoczynanie pracy z platformą sieci Web w programie Visual Studio
 
@@ -221,17 +221,17 @@ def hello():
 
 ### <a name="question-how-does-flask-work-with-variable-url-routes-and-query-parameters"></a>Pytanie: jak działa Kolba ze zmiennymi adresami URL i parametrami zapytania?
 
-Odpowiedź: w trasie Oznacz każdą zmienną za pomocą `<variable_name>` , a Kolba przekazuje zmienną do funkcji przy użyciu argumentu nazwanego. Zmienna może być częścią ścieżki URL lub parametru zapytania. Na przykład trasa w formie `'/hello/<name>` generuje argument ciągu wywoływany `name` do funkcji, a użycie `?message=<msg>` w marszrucie analizuje wartość podaną dla parametru zapytania "Message =" i przekazuje go do funkcji jako `msg` :
+Odpowiedź: w trasie Oznacz każdą zmienną za pomocą `<variable_name>` , a Kolba przekazuje zmienną do funkcji przy użyciu nazwanego argumentu w ścieżce URL. Na przykład trasa w formie `/hello/<name>` generuje argument ciągu wywoływany `name` do funkcji. Parametry zapytania są dostępne za pomocą właściwości, w odróżnieniu `request.args` od `request.args.get` metody. Więcej informacji można znaleźć w dokumentacji dotyczącej [obiektu request](https://flask.palletsprojects.com/en/1.1.x/quickstart/#the-request-object) w kolbie.
 
 ```python
-@app.route('/hello/<name>?message=<msg>')
-def hello(name, msg):
-    return "Hello " + name + "! Message is " + msg + "."
+# URL: /hello/<name>?message=Have%20a%20nice%20day
+@app.route('/hello/<name>')
+def hello(name):
+    msg = request.args.get('message','')
+    return "Hello " + name + "! "+ msg + "."
 ```
 
 Aby zmienić typ, należy prefiksować zmienną z `int` , `float` , `path` (która akceptuje ukośniki do nazw folderów odróżnić) i `uuid` . Aby uzyskać szczegółowe informacje, zobacz [reguły zmiennych](https://flask.palletsprojects.com/en/1.0.x/quickstart/#variable-rules) w dokumentacji dotyczącej kolb.
-
-Parametry zapytania są również dostępne za pomocą właściwości, w odróżnieniu `request.args` od `request.args.get` metody. Więcej informacji można znaleźć w dokumentacji dotyczącej [obiektu request](https://flask.palletsprojects.com/en/1.0.x/quickstart/#the-request-object) w kolbie.
 
 ### <a name="question-can-visual-studio-generate-a-requirementstxt-file-from-a-virtual-environment-after-i-install-other-packages"></a>Pytanie: czy program Visual Studio może generować plik requirements.txt ze środowiska wirtualnego po zainstalowaniu innych pakietów?
 

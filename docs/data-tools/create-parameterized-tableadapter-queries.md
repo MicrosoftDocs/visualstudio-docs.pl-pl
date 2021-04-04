@@ -20,12 +20,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 373e062ad7f2d8600fd28f098cbc0cae1c8d5a65
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d747459abc62462864e94ed9b8af9b11c6b9eabe
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859011"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215933"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Tworzenie sparametryzowanych zapytań adaptera TableAdapter
 
@@ -89,8 +89,8 @@ WHERE (ShippedDate = @ShippedDate) OR (ShippedDate IS NULL)
 
 Jeśli było to zapytanie w TableAdapter, można wykonać zapytanie o wszystkie zamówienia, które nie zostały dostarczone z następującym kodem:
 
-[!code-csharp[VbRaddataTableAdapters#8](../data-tools/codesnippet/CSharp/create-parameterized-tableadapter-queries_1.cs)]
-[!code-vb[VbRaddataTableAdapters#8](../data-tools/codesnippet/VisualBasic/create-parameterized-tableadapter-queries_1.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataTableAdapters/CS/Form2.cs" id="Snippet8":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/Form2.vb" id="Snippet8":::
 
 Aby włączyć akceptowanie przez zapytanie wartości null:
 
