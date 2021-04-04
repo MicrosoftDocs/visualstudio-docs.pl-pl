@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bc664a50fc307c59d5c168b26c8af1bc6181ebad
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 13a2f2c147bbf175a7601cd465dc8acbba9b5388
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918723"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217752"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Przewodnik: Tworzenie elementu projektu kolumny witryny z szablonem projektu, część 2
   Po zdefiniowaniu niestandardowego typu elementu projektu programu SharePoint i skojarzeniu go z szablonem projektu w programie Visual Studio, można również udostępnić Kreator szablonu. Za pomocą kreatora można zbierać informacje od użytkowników, gdy używają szablonu do tworzenia nowego projektu, który zawiera element projektu. Zbierane informacje mogą służyć do inicjowania elementu projektu.
@@ -204,22 +204,22 @@ ms.locfileid: "99918723"
 
 1. W projekcie ProjectTemplateWizard Otwórz plik kodu CommandIds, a następnie zastąp całą zawartość tego pliku następującym kodem.
 
-     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#5](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/commandids.cs#5)]
-     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#5](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/commandids.vb#5)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/commandids.cs" id="Snippet5":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/commandids.vb" id="Snippet5":::
 
 #### <a name="to-create-the-wizard-model"></a>Aby utworzyć model Kreatora
 
 1. Otwórz plik kodu SiteColumnWizardModel i Zastąp całą zawartość tego pliku następującym kodem.
 
-     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#6](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/sitecolumnwizardmodel.vb#6)]
-     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#6](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/sitecolumnwizardmodel.cs#6)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/sitecolumnwizardmodel.vb" id="Snippet6":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/sitecolumnwizardmodel.cs" id="Snippet6":::
 
 #### <a name="to-create-the-project-signing-manager"></a>Aby utworzyć Menedżera podpisywania projektu
 
 1. Otwórz plik kodu ProjectSigningManager, a następnie zastąp całą zawartość tego pliku następującym kodem.
 
-     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#8](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/projectsigningmanager.vb#8)]
-     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#8](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/projectsigningmanager.cs#8)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/projectsigningmanager.vb" id="Snippet8":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/projectsigningmanager.cs" id="Snippet8":::
 
 ## <a name="create-the-wizard-ui"></a>Tworzenie interfejsu użytkownika Kreatora
  Dodaj XAML, aby zdefiniować interfejs użytkownika okna kreatora oraz dwie kontrolki użytkownika, które udostępniają interfejs użytkownika dla stron kreatora, a następnie Dodaj kod, aby zdefiniować zachowanie formantów okna i użytkownika. Kreator, który utworzysz, przypomina kreatora wbudowanego dla projektów programu SharePoint w programie Visual Studio.
@@ -233,7 +233,7 @@ ms.locfileid: "99918723"
 
 2. W widoku XAML projektanta zastąp bieżący kod XAML następującym XAML. KOD XAML definiuje interfejs użytkownika, który zawiera nagłówek, zawierający <xref:System.Windows.Controls.Grid> strony kreatora i przyciski nawigacji w dolnej części okna.
 
-     [!code-xml[SPExtensibility.ProjectItem.SiteColumn#10](../sharepoint/codesnippet/Xaml/sitecolumnprojectitem/projecttemplatewizard/wizardwindow.xaml#10)]
+     :::code language="xml" source="../sharepoint/codesnippet/Xaml/sitecolumnprojectitem/projecttemplatewizard/wizardwindow.xaml" id="Snippet10":::
 
     > [!NOTE]
     > Okno, które zostało utworzone w tym języku XAML, pochodzi od <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> klasy bazowej. Po dodaniu niestandardowego okna dialogowego WPF do programu Visual Studio zalecamy, aby można było utworzyć okno dialogowe z tej klasy, aby mieć spójne style z innymi oknach dialogowych programu Visual Studio i uniknąć problemów z modalnym oknem dialogowym, które mogłyby wystąpić w przeciwnym razie. Aby uzyskać więcej informacji, zobacz [Tworzenie modalnych okien dialogowych i zarządzanie nimi](../extensibility/creating-and-managing-modal-dialog-boxes.md).
@@ -248,8 +248,8 @@ ms.locfileid: "99918723"
 
 5. Zastąp zawartość tego pliku, z wyjątkiem `using` deklaracji w górnej części pliku, przy użyciu następującego kodu.
 
-     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#4](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/wizardwindow.xaml.vb#4)]
-     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#4](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/wizardwindow.xaml.cs#4)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/wizardwindow.xaml.vb" id="Snippet4":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/wizardwindow.xaml.cs" id="Snippet4":::
 
 #### <a name="to-create-the-first-wizard-page-ui"></a>Aby utworzyć pierwszy interfejs użytkownika strony kreatora
 
@@ -257,7 +257,7 @@ ms.locfileid: "99918723"
 
 2. W widoku XAML projektanta zastąp bieżący kod XAML następującym XAML. KOD XAML definiuje interfejs użytkownika, który zawiera pole tekstowe, w którym użytkownicy mogą wprowadzić adres URL lokalnych witryn, których chcą używać do debugowania. Interfejs użytkownika zawiera również przyciski opcji, za pomocą których użytkownicy mogą określić, czy projekt jest w trybie piaskownicy.
 
-     [!code-xml[SPExtensibility.ProjectItem.SiteColumn#11](../sharepoint/codesnippet/Xaml/sitecolumnprojectitem/projecttemplatewizard/page1.xaml#11)]
+     :::code language="xml" source="../sharepoint/codesnippet/Xaml/sitecolumnprojectitem/projecttemplatewizard/page1.xaml" id="Snippet11":::
 
 3. Jeśli tworzysz projekt Visual Basic, Usuń `ProjectTemplateWizard` przestrzeń nazw z `Page1` nazwy klasy w `x:Class` atrybucie `UserControl` elementu. Jest to pierwsza linia XAML. Gdy skończysz, pierwszy wiersz powinien wyglądać podobnie do poniższego.
 
@@ -267,8 +267,8 @@ ms.locfileid: "99918723"
 
 4. Zastąp zawartość pliku Strona1. XAML, z wyjątkiem `using` deklaracji w górnej części pliku, przy użyciu następującego kodu.
 
-     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#2](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/page1.xaml.vb#2)]
-     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#2](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/page1.xaml.cs#2)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/page1.xaml.vb" id="Snippet2":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/page1.xaml.cs" id="Snippet2":::
 
 #### <a name="to-create-the-second-wizard-page-ui"></a>Aby utworzyć drugi interfejs użytkownika strony kreatora
 
@@ -278,7 +278,7 @@ ms.locfileid: "99918723"
 
 2. W widoku XAML zastąp bieżący kod XAML następującym XAML. KOD XAML definiuje interfejs użytkownika, który zawiera listę rozwijaną służącą do wybierania typu podstawowego kolumny lokacja, pola kombi do określania wbudowanej lub niestandardowej grupy, w której ma zostać wyświetlona kolumna lokacja w galerii, oraz pole tekstowe służące do określania nazwy kolumny witryny.
 
-     [!code-xml[SPExtensibility.ProjectItem.SiteColumn#12](../sharepoint/codesnippet/Xaml/sitecolumnprojectitem/projecttemplatewizard/page2.xaml#12)]
+     :::code language="xml" source="../sharepoint/codesnippet/Xaml/sitecolumnprojectitem/projecttemplatewizard/page2.xaml" id="Snippet12":::
 
 3. Jeśli tworzysz projekt Visual Basic, Usuń `ProjectTemplateWizard` przestrzeń nazw z `Page2` nazwy klasy w `x:Class` atrybucie `UserControl` elementu. Jest to pierwsza linia XAML. Gdy skończysz, pierwszy wiersz powinien wyglądać podobnie do poniższego.
 
@@ -288,8 +288,8 @@ ms.locfileid: "99918723"
 
 4. Zastąp zawartość pliku związanego z kodem dla pliku PAGE2. XAML, z wyjątkiem `using` deklaracji w górnej części pliku, przy użyciu następującego kodu.
 
-     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#3](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/page2.xaml.vb#3)]
-     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#3](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/page2.xaml.cs#3)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/page2.xaml.vb" id="Snippet3":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/page2.xaml.cs" id="Snippet3":::
 
 ## <a name="implement-the-wizard"></a>Zaimplementuj Kreatora
  Definiowanie głównych funkcji Kreatora przez implementację <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfejsu. Ten interfejs definiuje metody, które program Visual Studio wywołuje po uruchomieniu i zakończeniu pracy kreatora, a w pewnym czasie w trakcie działania kreatora.
@@ -300,8 +300,8 @@ ms.locfileid: "99918723"
 
 2. Zastąp całą zawartość tego pliku następującym kodem.
 
-     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#7](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/sitecolumnprojectwizard.vb#7)]
-     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#7](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/sitecolumnprojectwizard.cs#7)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/sitecolumnprojectwizard.vb" id="Snippet7":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/sitecolumnprojectwizard.cs" id="Snippet7":::
 
 ## <a name="create-the-sharepoint-commands"></a>Tworzenie poleceń programu SharePoint
  Utwórz dwa niestandardowe polecenia, które odwołują się do modelu obiektów programu SharePoint Server. Jedno polecenie określa, czy adres URL witryny, który jest w kreatorze, jest prawidłowy. Inne polecenie pobiera wszystkie typy pól z określonej witryny programu SharePoint, dzięki czemu użytkownicy mogą wybrać, który z nich ma być używany jako podstawa dla nowej kolumny witryny.
@@ -312,8 +312,8 @@ ms.locfileid: "99918723"
 
 2. Zastąp całą zawartość tego pliku następującym kodem.
 
-     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#9](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/sharepointcommands/commands.vb#9)]
-     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#9](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/sharepointcommands/commands.cs#9)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/sharepointcommands/commands.vb" id="Snippet9":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/sharepointcommands/commands.cs" id="Snippet9":::
 
 ## <a name="checkpoint"></a>Punkt kontrolny
  W tym momencie w przewodniku cały kod kreatora jest teraz w projekcie. Skompiluj projekt, aby upewnić się, że kompiluje się bez błędów.

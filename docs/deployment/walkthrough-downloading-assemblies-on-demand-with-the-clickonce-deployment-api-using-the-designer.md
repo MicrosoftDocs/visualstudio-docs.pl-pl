@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c2ced89c73d39fecb6b6cee80a8fddb0a8c2391
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7bb30b26e859708d295a31bd45b310897e4bcaac
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917327"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216998"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Przewodnik: pobieranie zestawów na żądanie za pomocą interfejsu API wdrażania ClickOnce przy użyciu narzędzia Projektant
 Domyślnie wszystkie zestawy zawarte w [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji są pobierane podczas pierwszego uruchomienia aplikacji. Mogą jednak istnieć części aplikacji, które są używane przez niewielki zestaw użytkowników. W takim przypadku należy pobrać zestaw tylko podczas tworzenia jednego z jego typów. W poniższym instruktażu pokazano, jak oznaczyć pewne zestawy w aplikacji jako "opcjonalne" oraz jak pobrać je przy użyciu klas w <xref:System.Deployment.Application> przestrzeni nazw, gdy środowisko uruchomieniowe języka wspólnego je zażąda.
@@ -46,8 +46,8 @@ Domyślnie wszystkie zestawy zawarte w [!INCLUDE[ndptecclick](../deployment/incl
 
 2. Zdefiniuj klasę o nazwie `DynamicClass` z pojedynczą właściwością o nazwie `Message` .
 
-    [!code-vb[ClickOnceLibrary#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_1.vb)]
-    [!code-csharp[ClickOnceLibrary#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_1.cs)]
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceLibrary/VB/Class1.vb" id="Snippet1":::
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_Winforms/ClickOnceLibrary/CS/Class1.cs" id="Snippet1":::
 
 3. Wybierz projekt Windows Forms w **Eksplorator rozwiązań**. Dodaj odwołanie do <xref:System.Deployment.Application> zestawu i odwołania projektu do `ClickOnceLibrary` projektu.
 
@@ -56,18 +56,18 @@ Domyślnie wszystkie zestawy zawarte w [!INCLUDE[ndptecclick](../deployment/incl
 
 4. Kliknij prawym przyciskiem myszy formularz, kliknij polecenie **Wyświetl kod** z menu i Dodaj następujące odwołania do formularza.
 
-    [!code-csharp[ClickOnceOnDemand#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_2.cs)]
-    [!code-vb[ClickOnceOnDemand#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_2.vb)]
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_Winforms/ClickOnceOnDemand/CS/Form1.cs" id="Snippet1":::
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceOnDemand/VB/Form1.vb" id="Snippet1":::
 
 5. Dodaj następujący kod, aby pobrać ten zestaw na żądanie. Ten kod przedstawia sposób mapowania zestawu zestawów na nazwę grupy przy użyciu klasy generycznej <xref:System.Collections.DictionaryBase.Dictionary%2A> . Ponieważ pobieramy tylko jeden zestaw z tego przewodnika, w naszej grupie istnieje tylko jeden zestaw. W rzeczywistej aplikacji prawdopodobnie chcesz pobrać wszystkie zestawy powiązane z pojedynczą funkcją w aplikacji w tym samym czasie. Tabela mapowanie pozwala łatwo to zrobić, kojarząc wszystkie biblioteki DLL należące do funkcji z nazwą grupy pobierania.
 
-    [!code-csharp[ClickOnceOnDemand#2](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_3.cs)]
-    [!code-vb[ClickOnceOnDemand#2](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_3.vb)]
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_Winforms/ClickOnceOnDemand/CS/Form1.cs" id="Snippet2":::
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceOnDemand/VB/Form1.vb" id="Snippet2":::
 
 6. W menu **Widok** kliknij pozycję **Przybornik**. Przeciągnij <xref:System.Windows.Forms.Button> z **przybornika** do formularza. Kliknij dwukrotnie przycisk i Dodaj następujący kod do <xref:System.Windows.Forms.Control.Click> programu obsługi zdarzeń.
 
-    [!code-csharp[ClickOnceOnDemand#3](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_4.cs)]
-    [!code-vb[ClickOnceOnDemand#3](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_4.vb)]
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_Winforms/ClickOnceOnDemand/CS/Form1.cs" id="Snippet3":::
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceOnDemand/VB/Form1.vb" id="Snippet3":::
 
 ## <a name="mark-assemblies-as-optional"></a>Oznacz zestawy jako opcjonalne
 

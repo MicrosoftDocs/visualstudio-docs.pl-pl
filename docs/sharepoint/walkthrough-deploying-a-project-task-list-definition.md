@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c70a3458a8f54cc4437e00517445917cf92f6aa1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b0692b676ec701b40edd12d1634ab9cdf419f85f
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901031"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217726"
 ---
 # <a name="walkthrough-deploy-a-project-task-list-definition"></a>Przewodnik: wdrażanie definicji listy zadań projektu
 
@@ -77,8 +77,8 @@ Na liście zadań można dodać odbiorcę zdarzeń, który automatycznie ustawia
 
 6. Dodaj kod do `ItemAdded` metody w pliku kodu **ProjectTaskListEventReceiver** . Za każdym razem, gdy nowe zadanie zostanie dodane, do zadania zostanie dodany domyślny termin ukończenia i opis. Domyślna Data ukończenia to 1 lipca 2009.
 
-     [!code-vb[SPProjectTaskList#1](../sharepoint/codesnippet/VisualBasic/projecttasklist1/projecttasklisteventreceiver/projecttasklisteventreceiver.vb#1)]
-     [!code-csharp[SPProjectTaskList#1](../sharepoint/codesnippet/CSharp/projecttasklist/projecttasklisteventreceiver/projecttasklisteventreceiver.cs#1)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projecttasklist1/projecttasklisteventreceiver/projecttasklisteventreceiver.vb" id="Snippet1":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projecttasklist/projecttasklisteventreceiver/projecttasklisteventreceiver.cs" id="Snippet1":::
 
 ## <a name="customize-the-project-task-list-feature"></a>Dostosowywanie funkcji listy zadań projektu
 

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a87bcd8b51bc393921d21d838943d5e1fe8f02a2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 316be1f0a8fa881f781d983cfe9ed663e5907749
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917338"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216907"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Przewodnik: pobieranie zestawów na żądanie przy użyciu interfejsu API wdrażania ClickOnce
 Domyślnie wszystkie zestawy zawarte w [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji są pobierane podczas pierwszego uruchomienia aplikacji. Mogą jednak istnieć części aplikacji, które są używane przez niewielki zestaw użytkowników. W takim przypadku należy pobrać zestaw tylko podczas tworzenia jednego z jego typów. W poniższym instruktażu pokazano, jak oznaczyć pewne zestawy w aplikacji jako "opcjonalne" oraz jak pobierać je przy użyciu klas w <xref:System.Deployment.Application> przestrzeni nazw, gdy program środowiska uruchomieniowego języka wspólnego (CLR) ich żąda.
@@ -56,10 +56,10 @@ Domyślnie wszystkie zestawy zawarte w [!INCLUDE[ndptecclick](../deployment/incl
 
 5. Za pomocą Notatnika lub innego edytora tekstów, zdefiniuj klasę o nazwie `DynamicClass` z pojedynczą właściwością o nazwie `Message` .
 
-    [!code-vb[ClickOnceLibrary#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.vb)]
-    [!code-csharp[ClickOnceLibrary#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.cs)]
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceLibrary/VB/Class1.vb" id="Snippet1":::
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_Winforms/ClickOnceLibrary/CS/Class1.cs" id="Snippet1":::
 
-6. Zapisz tekst jako plik o nazwie *ClickOnceLibrary.cs* lub *ClickOnceLibrary. vb*, w zależności od używanego języka, do katalogu *ClickOnceOnDemand* .
+6. Zapisz tekst jako plik o nazwie *ClickOnceLibrary. cs* lub *ClickOnceLibrary. vb*, w zależności od używanego języka, do katalogu *ClickOnceOnDemand* .
 
 7. Skompiluj plik do zestawu.
 
@@ -79,14 +79,14 @@ Domyślnie wszystkie zestawy zawarte w [!INCLUDE[ndptecclick](../deployment/incl
 
 9. Utwórz nowy plik za pomocą edytora tekstów i wprowadź następujący kod. Ten kod tworzy aplikację Windows Forms, która pobiera zestaw ClickOnceLibrary, gdy jest to wymagane.
 
-     [!code-csharp[ClickOnceOnDemandCmdLine#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_2.cs)]
-     [!code-vb[ClickOnceOnDemandCmdLine#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_2.vb)]
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_Winforms/ClickOnceOnDemandCmdLine/CS/Form1.cs" id="Snippet1":::
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceOnDemandCmdLine/VB/Form1.vb" id="Snippet1":::
 
 10. W kodzie Znajdź wywołanie <xref:System.Reflection.Assembly.LoadFile%2A> .
 
 11. Ustaw `PublicKeyToken` wartość, która została pobrana wcześniej.
 
-12. Zapisz plik jako *Form1.cs* lub *Form1. vb*.
+12. Zapisz plik jako *Form1. cs* lub *Form1. vb*.
 
 13. Skompiluj ją w pliku wykonywalnym przy użyciu następującego polecenia.
 

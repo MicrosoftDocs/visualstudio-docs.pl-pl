@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 51b80124f7cf550843ad346e9d1e1c0b21ccd0f7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7cc3d29d4991b6cfb712e4754f066edbb66f0b71
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923345"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216686"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>Instrukcje: Tworzenie polecenia SharePoint
   Jeśli chcesz użyć modelu obiektów serwera w rozszerzeniu narzędzi programu SharePoint, musisz utworzyć niestandardowe *polecenie programu SharePoint* , aby wywołać interfejs API. Zdefiniuj polecenie programu SharePoint w zestawie, które może bezpośrednio wywołać model obiektów serwera.
@@ -64,8 +64,8 @@ ms.locfileid: "99923345"
 ## <a name="example"></a>Przykład
  Poniższy przykład kodu demonstruje polecenie programu SharePoint o identyfikatorze `Contoso.Commands.UpgradeSolution` . To polecenie używa interfejsów API w modelu obiektów serwera do uaktualnienia do wdrożonego rozwiązania.
 
- [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#5](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/SharePointCommands/Commands.cs#5)]
- [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#5](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/sharepointcommands/commands.vb#5)]
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/SharePointCommands/Commands.cs" id="Snippet5":::
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/sharepointcommands/commands.vb" id="Snippet5":::
 
  Oprócz niejawnego pierwszego <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> parametru to polecenie ma także niestandardowy parametr ciągu, który zawiera pełną ścieżkę pliku. wsp, który jest uaktualniany do witryny programu SharePoint. Aby wyświetlić ten kod w kontekście większego przykładu, zobacz [Przewodnik: Tworzenie niestandardowego kroku wdrożenia dla projektów programu SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).
 

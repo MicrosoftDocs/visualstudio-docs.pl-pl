@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 748d9f5932f93261bc991f0d8af43728b8e5ce02
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e7ae131026a94fa368d55bad1d8cd2164b6f960b
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917288"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216933"
 ---
 # <a name="walkthrough-create-a-custom-installer-for-a-clickonce-application"></a>Przewodnik: Tworzenie niestandardowego Instalatora dla aplikacji ClickOnce
 Wszystkie aplikacje ClickOnce oparte na pliku *. exe* mogą być instalowane w trybie dyskretnym i aktualizowane przez instalatora niestandardowego. Instalator niestandardowy może zaimplementować niestandardowe środowisko użytkownika podczas instalacji, w tym niestandardowe okna dialogowe dla operacji związanych z zabezpieczeniami i konserwacją. W celu wykonania operacji instalacji Instalator niestandardowy używa <xref:System.Deployment.Application.InPlaceHostingManager> klasy. W tym instruktażu przedstawiono sposób tworzenia niestandardowego Instalatora, który dyskretnie instaluje aplikację ClickOnce.
@@ -57,8 +57,8 @@ Wszystkie aplikacje ClickOnce oparte na pliku *. exe* mogą być instalowane w t
     > [!NOTE]
     > Uprawnienia przypisane przez przed zaufaniem nie mogą przekroczyć uprawnień do niestandardowego kodu Instalatora.
 
-     [!code-vb[System.Deployment.Application.InPlaceHostingManager#1](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-installer-for-a-clickonce-application_1.vb)]
-     [!code-csharp[System.Deployment.Application.InPlaceHostingManager#1](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-installer-for-a-clickonce-application_1.cs)]
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/VB/Form1.vb" id="Snippet1":::
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/CS/Form1.cs" id="Snippet1":::
 
 5. Aby podjąć próbę instalacji z kodu, wywołaj `InstallApplication` metodę. Na przykład, jeśli nazwa klasy istnieje `MyInstaller` , można wywołać `InstallApplication` w następujący sposób.
 

@@ -4,17 +4,17 @@ description: Dowiedz się więcej o dziennikach generowanych przez system Visual
 ms.custom: SEO-VS-2020
 ms.date: 05/24/2018
 ms.topic: conceptual
-author: jillre
-ms.author: michma
+author: TerryGLee
+ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a6df4a90d8ddb31db88bb91ff4e874cadd3c589
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d357b5e21ca86d7ccf11f576a15bbd0e7a90e466
+ms.sourcegitcommit: a339547aa2f4e0f64b7afbcc3e1ade0a4f9287d2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99894663"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106171839"
 ---
 # <a name="system-generated-logs-collected-by-visual-studio"></a>Dzienniki generowane przez system w programie Visual Studio
 
@@ -70,7 +70,7 @@ Autorzy rozszerzeń powinni ograniczyć narażenie na dane osobowe, nie używaj�
 
 ## <a name="opt-out-of-data-collection"></a>Rezygnacja z zbierania danych
 
-W oparciu o dane zbierane i ograniczenia dotyczące dostępu i przechowywania, zalecamy użycie domyślnych ustawień prywatności dla programu Visual Studio i systemu Windows. Można jednak [zrezygnować](../ide/visual-studio-experience-improvement-program.md#opt-in-or-out) z program poprawy jakości obsługi programu Visual Studio. Aby zrezygnować z wygenerowanej przez system kolekcji dzienników dla wszystkich programów, zobacz [Diagnostyka, opinie i prywatność w systemie Windows 10](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy). Opcje mogą się różnić w zależności od używanej wersji systemu Windows.
+W oparciu o dane zbierane i ograniczenia dotyczące dostępu i przechowywania, zalecamy użycie domyślnych ustawień prywatności dla programu Visual Studio i systemu Windows. Można jednak [zrezygnować](../ide/visual-studio-experience-improvement-program.md#opt-in-or-out) z program poprawy jakości obsługi programu Visual Studio. W przypadku rezygnacji z **opcjonalnej** kolekcji danych diagnostycznych. Niektóre kolekcje danych diagnostycznych są **wymagane** , aby upewnić się, że program Visual Studio jest bezpieczny, jest aktualny i wykonywany zgodnie z oczekiwaniami. Wybór nie zostanie zmieniony na wymaganą kolekcję danych diagnostycznych. Aby zrezygnować z wygenerowanej przez system kolekcji dzienników dla wszystkich programów, zobacz [Diagnostyka, opinie i prywatność w systemie Windows 10](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy). Opcje mogą się różnić w zależności od używanej wersji systemu Windows.
 
 ## <a name="see-also"></a>Zobacz też
 

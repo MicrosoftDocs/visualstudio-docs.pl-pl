@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b5a9ea96820aafe32ca119d7e6d08057b91206fd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4e22ade9b2414e1d598065bb9e417c4706f75a07
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943825"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217180"
 ---
 # <a name="how-to-execute-a-sharepoint-command"></a>Instrukcje: wykonywanie polecenia SharePoint
   Jeśli chcesz użyć modelu obiektów serwera w rozszerzeniu narzędzi programu SharePoint, musisz utworzyć niestandardowe *polecenie programu SharePoint* , aby wywołać interfejs API. Po zdefiniowaniu polecenia i wdrożeniu go przy użyciu rozszerzenia narzędzi programu SharePoint, rozszerzenie może wykonać polecenie, aby wywołać model obiektów programu SharePoint Server. Aby wykonać polecenie, użyj jednej z ExecuteCommand metod <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> obiektu.
@@ -56,8 +56,8 @@ ms.locfileid: "99943825"
 ## <a name="example"></a>Przykład
  Poniższy przykład kodu demonstruje, jak użyć przeciążenia, <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection.ExecuteCommand%2A> Aby wywołać `Contoso.Commands.UpgradeSolution` polecenie, które zostało opisane w [instrukcje: Create a SharePoint Command](../sharepoint/how-to-create-a-sharepoint-command.md).
 
- [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#6](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/upgradestep.cs#6)]
- [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#6](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/upgradestep.vb#6)]
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/upgradestep.cs" id="Snippet6":::
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/upgradestep.vb" id="Snippet6":::
 
  `Execute`Metoda pokazana w tym przykładzie jest implementacją <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep.Execute%2A> metody <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep> interfejsu w niestandardowym kroku wdrożenia. Aby wyświetlić ten kod w kontekście większego przykładu, zobacz [Przewodnik: Tworzenie niestandardowego kroku wdrożenia dla projektów programu SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).
 

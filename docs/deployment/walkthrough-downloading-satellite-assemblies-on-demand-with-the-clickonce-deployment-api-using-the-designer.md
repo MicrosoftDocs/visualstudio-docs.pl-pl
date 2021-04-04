@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 74e6641eff7fcaecfab300afe4747bb2ab7b75b2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9e9166dbd3d6cd7ba4500e2390bd611a31bcee7b
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917305"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216881"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Przewodnik: pobieranie zestawów satelickich na żądanie za pomocą interfejsu API wdrażania ClickOnce przy użyciu narzędzia Projektant
 Aplikacje Windows Forms można skonfigurować dla wielu kultur przy użyciu zestawów satelickich. *Zestaw satelicki* jest zestawem zawierającym zasoby aplikacji dla kultury innej niż domyślna kultura aplikacji.
@@ -57,11 +57,11 @@ Aplikacje Windows Forms można skonfigurować dla wielu kultur przy użyciu zest
 
 ### <a name="to-download-satellite-assemblies-on-demand-in-c"></a>Pobieranie zestawów satelickich na żądanie w języku C\#
 
-1. Otwórz plik *program.cs* . Jeśli ten plik nie jest widoczny w Eksplorator rozwiązań, wybierz projekt, a następnie w menu **projekt** kliknij polecenie **Pokaż wszystkie pliki**.
+1. Otwórz plik *program. cs* . Jeśli ten plik nie jest widoczny w Eksplorator rozwiązań, wybierz projekt, a następnie w menu **projekt** kliknij polecenie **Pokaż wszystkie pliki**.
 
 2. Użyj poniższego kodu, aby pobrać odpowiedni zestaw satelicki i uruchomić aplikację.
 
-     [!code-csharp[ClickOnce.SatelliteAssemblies#1](../deployment/codesnippet/CSharp/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_1.cs)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_Winforms/ClickOnce.SatelliteAssemblies/CS/Program.cs" id="Snippet1":::
 
 ### <a name="to-download-satellite-assemblies-on-demand-in-visual-basic"></a>Pobieranie zestawów satelickich na żądanie w Visual Basic
 
@@ -71,11 +71,11 @@ Aplikacje Windows Forms można skonfigurować dla wielu kultur przy użyciu zest
 
 3. Dodaj następujące Importy na początku pliku *ApplicationEvents. vb* .
 
-     [!code-vb[ClickOnce.SatelliteAssembliesVB#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_2.vb)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Winforms/ClickOnce.SatelliteAssembliesVB/VB/ApplicationEvents.vb" id="Snippet1":::
 
 4. Dodaj poniższy kod do klasy `MyApplication`.
 
-     [!code-vb[ClickOnce.SatelliteAssembliesVB#2](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_3.vb)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Winforms/ClickOnce.SatelliteAssembliesVB/VB/ApplicationEvents.vb" id="Snippet2":::
 
 ## <a name="next-steps"></a>Następne kroki
  W środowisku produkcyjnym prawdopodobnie trzeba będzie usunąć wiersz w przykładach kodu, które są ustawiane <xref:System.Threading.Thread.CurrentUICulture%2A> na określoną wartość, ponieważ domyślnie maszyny klienckie będą mieć poprawną ustawioną wartość. Gdy aplikacja jest uruchamiana na japońskim komputerze klienckim, na przykład <xref:System.Threading.Thread.CurrentUICulture%2A> będzie `ja-JP` domyślnie. Ustawienie programistyczne jest dobrym sposobem na przetestowanie zestawów satelickich przed wdrożeniem aplikacji.

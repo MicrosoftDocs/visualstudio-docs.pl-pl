@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b9ccf478a084b8dedabc6f470a333e3fe4b54eb7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 07f3b90df070eca4e17e5bba9fa6a9e3582bd238
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918729"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217802"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>Przewodnik: Tworzenie elementu projektu kolumny witryny z szablonem projektu, część 1
   Projekty programu SharePoint są kontenerami dla co najmniej jednego elementu projektu programu SharePoint. System projektu programu SharePoint w programie Visual Studio można rozłożyć przez utworzenie własnych typów elementów projektu programu SharePoint, a następnie skojarzenie ich z szablonem projektu. W tym instruktażu zdefiniujesz typ elementu projektu do tworzenia kolumny witryny, a następnie utworzysz szablon projektu, którego można użyć do utworzenia nowego projektu zawierającego element projektu kolumny witryny.
@@ -150,8 +150,8 @@ ms.locfileid: "99918729"
 
 1. W pliku kodu **SiteColumnProjectItemTypeProvider** Zastąp domyślny kod następującym kodem, a następnie Zapisz plik.
 
-     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#1](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projectitemtypedefinition/sitecolumnprojectitemtypeprovider.cs#1)]
-     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#1](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projectitemtypedefinition/sitecolumnprojectitemtypeprovider.vb#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projectitemtypedefinition/sitecolumnprojectitemtypeprovider.cs" id="Snippet1":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projectitemtypedefinition/sitecolumnprojectitemtypeprovider.vb" id="Snippet1":::
 
 ## <a name="create-a-visual-studio-project-template"></a>Utwórz szablon projektu programu Visual Studio
  Tworząc szablon projektu, można umożliwić innym deweloperom tworzenie projektów programu SharePoint zawierających elementy projektu kolumny witryny. Szablon projektu programu SharePoint zawiera pliki, które są wymagane dla wszystkich projektów w programie Visual Studio, takich jak pliki *. csproj* lub *. vbproj* i *. vstemplate* , i pliki, które są specyficzne dla projektów programu SharePoint. Aby uzyskać więcej informacji, zobacz [Tworzenie szablonów elementów i szablonów projektu dla elementów projektu programu SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).
@@ -225,7 +225,7 @@ ms.locfileid: "99918729"
 ## <a name="edit-the-project-template-files"></a>Edytowanie plików szablonów projektu
  W projekcie SiteColumnProjectTemplate Edytuj następujące pliki, aby zdefiniować zachowanie szablonu projektu:
 
-- *AssemblyInfo.cs* lub *AssemblyInfo. vb*
+- *AssemblyInfo. cs* lub *AssemblyInfo. vb*
 
 - *Elements.xml*
 
@@ -241,9 +241,9 @@ ms.locfileid: "99918729"
 
   Poniższe procedury służą do dodawania parametrów wymiennych do niektórych z tych plików. Parametr wymienny jest tokenem rozpoczynającym się i kończącym znakiem dolara ($). Gdy użytkownik używa tego szablonu projektu do tworzenia projektu, program Visual Studio automatycznie zastępuje te parametry w nowym projekcie o określonych wartościach. Aby uzyskać więcej informacji, zobacz [Parametry wymienne](../sharepoint/replaceable-parameters.md).
 
-#### <a name="to-edit-the-assemblyinfocs-or-assemblyinfovb-file"></a>Aby edytować plik AssemblyInfo.cs lub AssemblyInfo. vb
+#### <a name="to-edit-the-assemblyinfocs-or-assemblyinfovb-file"></a>Aby edytować plik AssemblyInfo. cs lub AssemblyInfo. vb
 
-1. W projekcie SiteColumnProjectTemplate Otwórz plik *AssemblyInfo.cs* lub *AssemblyInfo. vb* , a następnie Dodaj następującą instrukcję do jego górnej części:
+1. W projekcie SiteColumnProjectTemplate Otwórz plik *AssemblyInfo. cs* lub *AssemblyInfo. vb* , a następnie Dodaj następującą instrukcję do jego górnej części:
 
     ```vb
     Imports System.Security

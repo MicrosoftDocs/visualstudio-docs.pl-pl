@@ -37,12 +37,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: fb5ace269d7770d0e7d360734268d3e7adfda319
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 45ff4336859fe0294232e9ca1d99513665d8e975
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99866128"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216478"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Usługi Windows Communication Foundation i usługi danych WCF w programie Visual Studio
 
@@ -64,13 +64,13 @@ Model programowania WCF jest oparty na komunikacji między dwiema jednostkami: u
 
 Usługa WCF jest oparta na interfejsie, który definiuje kontrakt między usługą a klientem. Jest oznaczona <xref:System.ServiceModel.ServiceContractAttribute> atrybutem, jak pokazano w poniższym kodzie:
 
-[!code-csharp[WCFWalkthrough#6](../data-tools/codesnippet/CSharp/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_1.cs)]
-[!code-vb[WCFWalkthrough#6](../data-tools/codesnippet/VisualBasic/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_1.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/iservice1.cs" id="Snippet6":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/iservice1.vb" id="Snippet6":::
 
 Definiujesz funkcje lub metody, które są uwidaczniane przez usługę WCF, oznaczając je <xref:System.ServiceModel.OperationContractAttribute> atrybutem.
 
-[!code-csharp[WCFWalkthrough#1](../data-tools/codesnippet/CSharp/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_2.cs)]
-[!code-vb[WCFWalkthrough#1](../data-tools/codesnippet/VisualBasic/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_2.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/iservice1.cs" id="Snippet1":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/iservice1.vb" id="Snippet1":::
 
 Ponadto można uwidocznić dane serializowane, zaznaczając typ złożony z <xref:System.Runtime.Serialization.DataContractAttribute> atrybutem. Pozwala to na powiązanie danych w kliencie.
 
@@ -88,8 +88,8 @@ Klient WCF składa się z *serwera proxy* , który umożliwia aplikacji komunika
 
 Po utworzeniu klienta WCF należy odwołać się do usługi w kodzie tak samo jak każdy inny obiekt. Na przykład, aby wywołać `GetData` metodę przedstawioną wcześniej, należy napisać kod, który będzie wyglądać następująco:
 
-[!code-csharp[WCFWalkthrough#3](../data-tools/codesnippet/CSharp/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_3.cs)]
-[!code-vb[WCFWalkthrough#3](../data-tools/codesnippet/VisualBasic/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_3.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/form1.cs" id="Snippet3":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/form1.vb" id="Snippet3":::
 
 ## <a name="wcf-tools-in-visual-studio"></a>Narzędzia WCF w programie Visual Studio
 
@@ -265,7 +265,7 @@ Aby uniknąć tego problemu, typy w przywoływanych zestawach są domyślnie udo
 | [Przewodnik: Tworzenie wielowarstwowej aplikacji danych](../data-tools/walkthrough-creating-an-n-tier-data-application.md) | Zawiera instrukcje krok po kroku dotyczące tworzenia określonego zestawu danych i rozdzielania kodu TableAdapter i zestawu danych na wiele projektów. |
 | [Konfigurowanie odwołania do usługi — okno dialogowe](../data-tools/configure-service-reference-dialog-box.md) | Opisuje elementy interfejsu użytkownika okna dialogowego **Konfigurowanie odwołania do usługi** . |
 
-## <a name="reference"></a>Dokumentacja
+## <a name="reference"></a>Odwołanie
 
 - <xref:System.ServiceModel>
 - <xref:System.Data.Services>

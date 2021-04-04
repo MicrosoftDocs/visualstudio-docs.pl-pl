@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 237cd28bffece4517e80b979602ac8d2ed357aa2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 87f5b0cf86178b88b1611f4b0ce8a4bbacde780e
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882690"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216803"
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>Instrukcje: dodawanie określonej metody wyszukiwania
   Wystąpienie pojedynczej jednostki można zwrócić, tworząc określoną metodę *wyszukiwania* . Usługa łączności danych biznesowych (BDC) wykonuje określoną metodę wyszukiwania, gdy użytkownik wybierze jednostkę w składniku Web Part danych biznesowych lub liście zewnętrznej. Aby uzyskać więcej informacji, zobacz [Projektowanie modelu łączności danych firmowych](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -84,8 +84,8 @@ ms.locfileid: "99882690"
      > [!NOTE]
      > Zamień wartość `ServerName` pola na nazwę serwera.
 
-     [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
-     [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs" id="Snippet3":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb" id="Snippet3":::
 
 ## <a name="see-also"></a>Zobacz też
 - [Projektowanie modelu łączności danych firmy](../sharepoint/designing-a-business-data-connectivity-model.md)

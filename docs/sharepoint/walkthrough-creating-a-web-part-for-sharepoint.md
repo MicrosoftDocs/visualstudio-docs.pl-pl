@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0f2d14bfd069fcf5064c9d8643393e28e52570be
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3e018085bd9900a9ee04f838b7c802afd2acc4fe
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918625"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217713"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Przewodnik: Tworzenie składnika Web Part dla programu SharePoint
 
@@ -82,14 +82,14 @@ Dodaj element **składnika Web Part** do projektu. Element **składnika Web Part
 
 Możesz określić, które kontrolki mają być wyświetlane w składniku Web Part, dodając je do kolekcji Controls klasy Web Part.
 
-1. W **Eksplorator rozwiązań** Otwórz *WebPart1. vb* (w Visual Basic) lub *WebPart1.cs* (w języku C#).
+1. W **Eksplorator rozwiązań** Otwórz *WebPart1. vb* (w Visual Basic) lub *WebPart1. cs* (w języku C#).
 
      Plik kodu składnika Web Part zostanie otwarty w edytorze kodu.
 
 2. Dodaj następujące dyrektywy na początku pliku kodu składnika Web Part.
 
-     [!code-csharp[SP_WebPart#1](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#1)]
-     [!code-vb[SP_WebPart#1](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs" id="Snippet1":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb" id="Snippet1":::
 
 3. Dodaj poniższy kod do klasy `WebPart1`. Ten kod deklaruje następujące pola:
 
@@ -101,13 +101,13 @@ Możesz określić, które kontrolki mają być wyświetlane w składniku Web Pa
 
    - Ciąg, który zawiera ścieżkę pliku danych pracownika.
 
-     [!code-csharp[SP_WebPart#2](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#2)]
-     [!code-vb[SP_WebPart#2](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#2)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs" id="Snippet2":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb" id="Snippet2":::
 
 4. Dodaj poniższy kod do klasy `WebPart1`. Ten kod dodaje niestandardową właściwość o nazwie `DataFilePath` do składnika Web Part. Właściwość niestandardowa jest właściwością, którą użytkownik może ustawić w programie SharePoint. Ta właściwość pobiera i ustawia lokalizację pliku danych XML, który jest używany do wypełniania siatki danych.
 
-     [!code-csharp[SP_WebPart#3](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#3)]
-     [!code-vb[SP_WebPart#3](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#3)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs" id="Snippet3":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb" id="Snippet3":::
 
 5. Zastąp metodę `CreateChildControls` następującym kodem. Ten kod wykonuje następujące zadania:
 
@@ -115,8 +115,8 @@ Możesz określić, które kontrolki mają być wyświetlane w składniku Web Pa
 
    - Tworzy powiązanie siatki danych z plikiem XML zawierającym dane pracownika.
 
-     [!code-csharp[SP_WebPart#4](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#4)]
-     [!code-vb[SP_WebPart#4](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#4)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs" id="Snippet4":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb" id="Snippet4":::
 
 6. Dodaj następującą metodę do `WebPart1` klasy. Ten kod wykonuje następujące zadania:
 
@@ -124,8 +124,8 @@ Możesz określić, które kontrolki mają być wyświetlane w składniku Web Pa
 
    - Obsługuje zdarzenie, które jest zgłaszane, gdy użytkownik wybierze zlecenie z menu zlecenia. Ten kod filtruje listę pracowników, którzy pojawiają się w siatce danych.
 
-     [!code-csharp[SP_WebPart#5](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#5)]
-     [!code-vb[SP_WebPart#5](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#5)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs" id="Snippet5":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb" id="Snippet5":::
 
 ## <a name="test-the-web-part"></a>Testowanie składnika Web Part
 

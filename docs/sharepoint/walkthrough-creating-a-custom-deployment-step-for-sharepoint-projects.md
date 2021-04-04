@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8d42726cddb0565af66e161b41c16c94cfe2cb2b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 77c80134ad63346b363c072ef2eff7e49978501f
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839139"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217934"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Przewodnik: Tworzenie niestandardowego kroku wdrożenia dla projektów programu SharePoint
   Podczas wdrażania projektu programu SharePoint, program Visual Studio wykonuje serię kroków wdrożenia w określonej kolejności. Program Visual Studio zawiera wiele wbudowanych kroków wdrażania, ale można również utworzyć własne.
@@ -151,8 +151,8 @@ ms.locfileid: "99839139"
     > [!NOTE]
     > Po dodaniu tego kodu projekt będzie miał pewne błędy kompilacji, ale w późniejszych krokach zostanie dodany kod.
 
-     [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#1](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/upgradestep.cs#1)]
-     [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#1](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/upgradestep.vb#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/upgradestep.cs" id="Snippet1":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/upgradestep.vb" id="Snippet1":::
 
 ## <a name="create-a-deployment-configuration-that-includes-the-custom-deployment-step"></a>Utwórz konfigurację wdrożenia obejmującą niestandardowy krok wdrożenia
  Utwórz rozszerzenie projektu dla nowej konfiguracji wdrożenia, w tym kilka wbudowanych kroków wdrażania i nowego kroku wdrożenia uaktualnienia. Utworzenie tego rozszerzenia ułatwia deweloperom programu SharePoint korzystanie z kroku Uaktualnij wdrożenie w projektach programu SharePoint.
@@ -163,8 +163,8 @@ ms.locfileid: "99839139"
 
 1. W projekcie **DeploymentStepExtension** Otwórz plik kodu DeploymentConfigurationExtension, a następnie wklej do niego następujący kod.
 
-     [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#2](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/deploymentconfigurationextension.cs#2)]
-     [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#2](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/deploymentconfigurationextension.vb#2)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/deploymentconfigurationextension.cs" id="Snippet2":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/deploymentconfigurationextension.vb" id="Snippet2":::
 
 ## <a name="create-the-custom-sharepoint-commands"></a>Tworzenie niestandardowych poleceń programu SharePoint
  Utwórz dwa niestandardowe polecenia, które wywołują model obiektów serwera dla programu SharePoint. Jedno polecenie określa, czy rozwiązanie jest już wdrożone; inne polecenie uaktualnia rozwiązanie.
@@ -173,8 +173,8 @@ ms.locfileid: "99839139"
 
 1. W projekcie **SharePointCommands** Otwórz plik poleceń kod, a następnie wklej do niego następujący kod.
 
-     [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#4](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/SharePointCommands/Commands.cs#4)]
-     [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#4](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/sharepointcommands/commands.vb#4)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/SharePointCommands/Commands.cs" id="Snippet4":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/sharepointcommands/commands.vb" id="Snippet4":::
 
 ## <a name="checkpoint"></a>Punkt kontrolny
  W tym momencie w przewodniku wszystkie kod niestandardowego kroku wdrożenia i poleceń programu SharePoint znajdują się teraz w projektach. Kompiluj je, aby upewnić się, że kompilują się bez błędów.

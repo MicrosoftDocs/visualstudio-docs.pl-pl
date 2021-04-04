@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bc1474d1c7aeabb9b3e9ecbbe6b42931d44c59c7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4b6fad27342c086e551320977cdf712f816b383c
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839100"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217947"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Przewodnik: Tworzenie niestandardowego elementu projektu akcji z szablonem elementu część 2
   Po zdefiniowaniu niestandardowego typu elementu projektu programu SharePoint i skojarzeniu go z szablonem elementu w programie Visual Studio, można również udostępnić Kreator szablonu. Za pomocą kreatora można zbierać informacje od użytkowników, gdy używają one szablonu, aby dodać nowe wystąpienie elementu projektu do projektu. Zbierane informacje mogą służyć do inicjowania elementu projektu.
@@ -115,8 +115,8 @@ ms.locfileid: "99839100"
 
 2. W projekcie **ItemTemplateWizard** Zastąp kod w pliku z kodem ciągów poniższym kodem.
 
-     [!code-csharp[SPExtensibility.ProjectItem.CustomAction#6](../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/strings.cs#6)]
-     [!code-vb[SPExtensibility.ProjectItem.CustomAction#6](../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/strings.vb#6)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/strings.cs" id="Snippet6":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/strings.vb" id="Snippet6":::
 
 ## <a name="create-the-wizard-ui"></a>Tworzenie interfejsu użytkownika Kreatora
  Dodaj XAML, aby zdefiniować interfejs użytkownika kreatora, a następnie Dodaj kod, aby powiązać niektóre kontrolki w Kreatorze z ciągami identyfikatorów. Kreator, który utworzysz, przypomina kreatora wbudowanego dla projektów programu SharePoint w programie Visual Studio.
@@ -130,7 +130,7 @@ ms.locfileid: "99839100"
     > [!NOTE]
     > Po dodaniu tego kodu projekt będzie zawierał błędy kompilacji. Te błędy zostaną odrzucone po dodaniu kodu w dalszych krokach.
 
-     [!code-xml[SPExtensibility.ProjectItem.CustomAction#9](../sharepoint/codesnippet/Xaml/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml#9)]
+     :::code language="xml" source="../sharepoint/codesnippet/Xaml/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml" id="Snippet9":::
 
     > [!NOTE]
     > Okno, które zostało utworzone w tym języku XAML, pochodzi od <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> klasy bazowej. Po dodaniu niestandardowego okna dialogowego WPF do programu Visual Studio zalecamy, aby można było utworzyć okno dialogowe z tej klasy, aby mieć spójne style z innymi oknach dialogowych w programie Visual Studio i uniknąć problemów, które mogłyby wystąpić w innych oknach dialogowych modalnych. Aby uzyskać więcej informacji, zobacz [Tworzenie modalnych okien dialogowych i zarządzanie nimi](../extensibility/creating-and-managing-modal-dialog-boxes.md).
@@ -143,8 +143,8 @@ ms.locfileid: "99839100"
 
 4. W pliku związanym z kodem dla pliku WizardWindow. XAML zastąp bieżący kod następującym kodem.
 
-     [!code-vb[SPExtensibility.ProjectItem.CustomAction#7](../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml.vb#7)]
-     [!code-csharp[SPExtensibility.ProjectItem.CustomAction#7](../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml.cs#7)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml.vb" id="Snippet7":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml.cs" id="Snippet7":::
 
 ## <a name="implement-the-wizard"></a>Zaimplementuj Kreatora
  Definiowanie funkcji Kreatora przez implementację <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfejsu.
@@ -153,8 +153,8 @@ ms.locfileid: "99839100"
 
 1. W projekcie **ItemTemplateWizard** Otwórz plik kodu **CustomActionWizard** , a następnie zastąp bieżący kod w tym pliku następującym kodem:
 
-     [!code-csharp[SPExtensibility.ProjectItem.CustomAction#8](../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/customactionwizard.cs#8)]
-     [!code-vb[SPExtensibility.ProjectItem.CustomAction#8](../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/customactionwizard.vb#8)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/customactionwizard.cs" id="Snippet8":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/customactionwizard.vb" id="Snippet8":::
 
 ## <a name="checkpoint"></a>Punkt kontrolny
  W tym momencie w przewodniku cały kod kreatora jest teraz w projekcie. Skompiluj projekt, aby upewnić się, że kompiluje się bez błędów.

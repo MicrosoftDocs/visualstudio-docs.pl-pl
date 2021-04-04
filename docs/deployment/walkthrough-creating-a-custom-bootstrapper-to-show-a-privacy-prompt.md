@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b2f36ee884beb3b79244e4621ba305c06aafe8ff
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 96cfbf8693ce23dbc0b0584c7742607224aeab4f
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915754"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216946"
 ---
 # <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Przewodnik: Tworzenie niestandardowego programu inicjującego wyświetlającego monit o zasadach ochrony prywatności
 Aplikacje ClickOnce można skonfigurować do automatycznego aktualizowania, gdy zestawy z nowszymi wersjami plików i wersjami zestawu staną się dostępne. Aby upewnić się, że klienci wyrażają zgodę na takie zachowanie, możesz wyświetlić do nich monit o prywatność. Następnie mogą zdecydować, czy udzielić uprawnienia aplikacji do automatycznej aktualizacji. Jeśli aplikacja nie jest dozwolona do automatycznej aktualizacji, nie zostanie zainstalowana.
@@ -81,32 +81,33 @@ Aplikacje ClickOnce można skonfigurować do automatycznego aktualizowania, gdy 
 
 18. W pliku kodu Form1 Dodaj następujący kod dla programu obsługi zdarzeń CheckedChanged.
 
-     [!code-csharp[ConsentDialog#1](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_1.cs)]
-     [!code-vb[ConsentDialog#1](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_1.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/form1.cs" id="Snippet1":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/form1.vb" id="Snippet1":::
 
 19. Zaktualizuj konstruktora klasy, aby domyślnie wyłączyć przycisk " **Wykonaj** ".
 
-     [!code-csharp[ConsentDialog#6](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_2.cs)]
-     [!code-vb[ConsentDialog#6](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_2.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/form1.cs" id="Snippet6":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/form1.vb" id="Snippet6":::
 
 20. W pliku kodu Form1 Dodaj następujący kod dla zmiennej logicznej, aby śledzić, czy użytkownik końcowy wyraził zgodę na aktualizacje w trybie online.
 
-     [!code-csharp[ConsentDialog#3](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_3.cs)]
-     [!code-vb[ConsentDialog#3](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_3.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/form1.cs" id="Snippet3":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/form1.vb" id="Snippet3":::
 
 21. W projektancie kliknij dwukrotnie przycisk " **Wykonaj** ", aby wygenerować procedurę obsługi zdarzeń kliknięcia.
 
 22. W pliku kodu Form1 Dodaj następujący kod do programu obsługi zdarzeń kliknięcia dla przycisku **przechodzenia** .
 
-     [!code-csharp[ConsentDialog#2](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_4.cs)]
-     [!code-vb[ConsentDialog#2](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_4.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/form1.cs" id="Snippet2":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/form1.vb" id="Snippet2":::
+
 
 23. W projektancie kliknij dwukrotnie przycisk **Anuluj** , aby wygenerować procedurę obsługi zdarzeń kliknięcia.
 
 24. W pliku kodu Form1 Dodaj następujący kod dla programu obsługi zdarzeń kliknięcia dla przycisku **Anuluj** .
 
-     [!code-csharp[ConsentDialog#4](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_5.cs)]
-     [!code-vb[ConsentDialog#4](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_5.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/form1.cs" id="Snippet4":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/form1.vb" id="Snippet4":::
 
 25. Zaktualizuj aplikację w celu zwrócenia błędu, jeśli użytkownik końcowy nie wyraża zgody na aktualizacje w trybie online.
 
@@ -118,7 +119,7 @@ Aplikacje ClickOnce można skonfigurować do automatycznego aktualizowania, gdy 
 
     3. W pliku kodu *Module1. vb* Dodaj następujący kod.
 
-        [!code-vb[ConsentDialog#7](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_6.vb)]
+       :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/module1.vb" id="Snippet7":::
 
     4. W menu **projekt** kliknij polecenie **Właściwości ConsentDialog**, a następnie kliknij kartę **aplikacja** .
 
@@ -131,9 +132,9 @@ Aplikacje ClickOnce można skonfigurować do automatycznego aktualizowania, gdy 
 
        Tylko dla deweloperów Visual C#:
 
-       Otwórz plik kodu *program.cs* i Dodaj następujący kod.
+       Otwórz plik kodu *programu program. cs* i Dodaj następujący kod.
 
-       [!code-csharp[ConsentDialog#5](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_7.cs)]
+       :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/program.cs" id="Snippet5":::
 
 26. W menu **kompilacja** kliknij pozycję **BuildSolution**.
 

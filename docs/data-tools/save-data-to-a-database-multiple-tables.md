@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 75800c5a2b5ff62addec3c914905ae67ac171b95
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6f4b174e10eae63044c547d8ed87c46db03d23c6
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99866583"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216049"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Zapisywanie danych w bazie danych (wiele tabel)
 
@@ -133,8 +133,8 @@ Bazę danych można zaktualizować, wywołując `Update` metody TableAdapters **
 
 2. Zastąp kod w programie obsługi zdarzeń, aby wywołać `Update` metody powiązanej TableAdapters. Poniższy kod najpierw tworzy trzy tymczasowe tabele danych do przechowywania zaktualizowanych informacji dla każdego <xref:System.Data.DataRowState> ( <xref:System.Data.DataRowState.Deleted> , <xref:System.Data.DataRowState.Added> i <xref:System.Data.DataRowState.Modified> ). Aktualizacje są wykonywane w odpowiedniej kolejności. Kod powinien wyglądać następująco:
 
-     [!code-vb[VbRaddataSaving#10](../data-tools/codesnippet/VisualBasic/save-data-to-a-database-multiple-tables_1.vb)]
-     [!code-csharp[VbRaddataSaving#10](../data-tools/codesnippet/CSharp/save-data-to-a-database-multiple-tables_1.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form4.vb" id="Snippet10":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form4.cs" id="Snippet10":::
 
 ## <a name="test-the-application"></a>Testowanie aplikacji
 

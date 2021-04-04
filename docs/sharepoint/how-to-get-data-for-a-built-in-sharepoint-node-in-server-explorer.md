@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c49f091477d204b7ed81a6f89fb24a56b2d60669
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c58de345400c7b724a755839cb8baa1afc3cfce2
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945113"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217193"
 ---
 # <a name="how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer"></a>Instrukcje: pobieranie danych dla wbudowanego węzła programu SharePoint w Eksplorator serwera
   Dla każdego wbudowanego węzła programu SharePoint w **Eksplorator serwera** można uzyskać dane dla podstawowego składnika programu SharePoint reprezentowanego przez ten węzeł. Aby uzyskać więcej informacji, zobacz sekcję Rozpoznaj [węzeł połączenia SharePoint w Eksplorator serwera](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
@@ -29,8 +29,8 @@ ms.locfileid: "99945113"
 ## <a name="example"></a>Przykład
  Poniższy przykład kodu demonstruje, jak uzyskać dane dla podstawowej listy programu SharePoint reprezentowanej przez węzeł listy w **Eksplorator serwera**. Domyślnie węzły listy mają **Widok w** elemencie menu kontekstowego przeglądarki, który można kliknąć, aby otworzyć listy w przeglądarce sieci Web. Ten przykład rozszerza listę węzłów przez dodanie widoku w elemencie menu kontekstowego **programu Visual Studio** , który otwiera listy bezpośrednio w programie Visual Studio. Kod uzyskuje dostęp do danych listy dla węzła, aby uzyskać adres URL listy otwartej w programie Visual Studio.
 
- [!code-vb[SPExtensibility.ProjectSystemExtension.General#10](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextensionnodeinfo.vb#10)]
- [!code-csharp[SPExtensibility.ProjectSystemExtension.General#10](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextensionnodeinfo.cs#10)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextensionnodeinfo.vb" id="Snippet10":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextensionnodeinfo.cs" id="Snippet10":::
 
  W tym przykładzie użyto usługi projektu programu SharePoint w celu uzyskania <xref:EnvDTE.DTE> obiektu, który jest używany do otwierania list w programie Visual Studio. Aby uzyskać więcej informacji na temat usługi projektu programu SharePoint, zobacz [Korzystanie z usługi projektu programu SharePoint](../sharepoint/using-the-sharepoint-project-service.md).
 

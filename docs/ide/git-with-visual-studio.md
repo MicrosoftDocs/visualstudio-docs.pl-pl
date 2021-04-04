@@ -2,18 +2,18 @@
 title: Środowisko Git w programie Visual Studio
 titleSuffix: ''
 description: Dowiedz się, w jaki sposób nowe zintegrowane środowisko Git w programie Visual Studio 2019 może pomóc w zwiększeniu produktywności.
-ms.date: 03/16/2021
+ms.date: 04/01/2021
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: e33b91088022a4588773737b2820677c84a65807
-ms.sourcegitcommit: 3a855d3513407ea78336386dc3be0b75142614b0
+ms.openlocfilehash: b58a60efbf2c602706eed6d9278574d1bf1fffcc
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "103622650"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216764"
 ---
 # <a name="git-experience-in-visual-studio"></a>Środowisko Git w programie Visual Studio
 
@@ -202,9 +202,10 @@ Mimo że nowe środowisko git jest teraz domyślnie włączone w programie Visua
 
 ## <a name="see-also"></a>Zobacz też
 
+- [Rozpocznij pracę z narzędziami git i GitHub w samouczku programu Visual Studio](/learn/modules/visual-studio-github-push/) na Microsoft Learn
 - [Wprowadzenie do usługi Git w programie Visual Studio](https://www.youtube.com/watch?v=GCZ9x3yqkyc) wideo w serwisie YouTube
 - [Ogłaszanie wersji środowiska Git w blogu programu Visual Studio](https://devblogs.microsoft.com/visualstudio/announcing-the-release-of-the-git-experience-in-visual-studio/)
-- [Uruchomienie nowego środowiska git](https://www.youtube.com/watch?v=UHrAg3iKoe0&t) w serwisie YouTube
+- [Uruchamianie nowego](https://www.youtube.com/watch?v=UHrAg3iKoe0&t) wideo dotyczącego środowiska Git w serwisie YouTube
 - [Seria Visual Studio Toolbox prezentuje: nowe wideo dotyczące środowiska git](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/The-New-Git-Experience) w witrynie Channel 9 i w serwisie [YouTube](https://www.youtube.com/watch?v=ZiQ2LXtAJ6I&feature=youtu.be)
 - [Atrakcyjne nowe aktualizacje środowiska Git w blogu programu Visual Studio](https://devblogs.microsoft.com/visualstudio/exciting-new-updates-to-the-git-experience-in-visual-studio/)
 - [Ulepszone środowisko Git w blogu programu Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/improved-git-experience-in-visual-studio-2019/)

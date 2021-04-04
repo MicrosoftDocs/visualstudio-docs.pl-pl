@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 74d57ae4beca074fbf7711ea3d732d903d8faa4b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a91cbd863ed613804418cd5d1666412a01f8f542
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952684"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217700"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Przewodnik: zwiększanie typu elementu projektu SharePoint
   Za pomocą elementu projektu **model usługi łączności danych biznesowych** można utworzyć model usługi łączności danych biznesowych (BDC) w programie SharePoint. Domyślnie, gdy tworzysz model przy użyciu tego elementu projektu, dane w modelu nie są wyświetlane użytkownikom. Należy również utworzyć listę zewnętrzną w programie SharePoint, aby umożliwić użytkownikom wyświetlanie danych.
@@ -136,8 +136,8 @@ ms.locfileid: "99952684"
     > [!NOTE]
     > Po dodaniu tego kodu projekt będzie zawierał błędy kompilacji. Te błędy zostaną odrzucone po dodaniu kodu w dalszych krokach.
 
-     [!code-csharp[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#1](../sharepoint/codesnippet/CSharp/generateexternaldatalists/bdcprojectitemextension/projectitemextension.cs#1)]
-     [!code-vb[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#1](../sharepoint/codesnippet/VisualBasic/generateexternaldatalists/bdcprojectitemextension/projectitemextension.vb#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/generateexternaldatalists/bdcprojectitemextension/projectitemextension.cs" id="Snippet1":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/generateexternaldatalists/bdcprojectitemextension/projectitemextension.vb" id="Snippet1":::
 
 ## <a name="create-the-external-data-lists"></a>Tworzenie list danych zewnętrznych
  Dodaj definicję częściową `GenerateExternalDataListsExtension` klasy, która tworzy listę danych zewnętrznych dla każdej jednostki w modelu usługi BDC. Aby utworzyć listę danych zewnętrznych, ten kod najpierw odczytuje dane jednostki w modelu usługi BDC przez analizowanie danych XML w pliku modelu usługi BDC. Następnie tworzy wystąpienie listy, które jest oparte na modelu BDC i dodaje to wystąpienie listy do projektu.
@@ -146,8 +146,8 @@ ms.locfileid: "99952684"
 
 1. Wklej następujący kod do pliku kodu GenerateExternalDataLists.
 
-     [!code-vb[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#2](../sharepoint/codesnippet/VisualBasic/generateexternaldatalists/bdcprojectitemextension/generateexternaldatalists.vb#2)]
-     [!code-csharp[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#2](../sharepoint/codesnippet/CSharp/generateexternaldatalists/bdcprojectitemextension/generateexternaldatalists.cs#2)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/generateexternaldatalists/bdcprojectitemextension/generateexternaldatalists.vb" id="Snippet2":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/generateexternaldatalists/bdcprojectitemextension/generateexternaldatalists.cs" id="Snippet2":::
 
 ## <a name="checkpoint"></a>Punkt kontrolny
  W tym momencie w przewodniku cały kod rozszerzenia elementu projektu znajduje się teraz w projekcie. Skompiluj rozwiązanie, aby upewnić się, że projekt kompiluje się bez błędów.

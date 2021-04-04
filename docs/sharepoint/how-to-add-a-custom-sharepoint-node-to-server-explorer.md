@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: be772075be27cc8d6e58b6b54bb281a127f4677f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e7c0a13879850bbd31112ddcb3193d027abeb5d1
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878126"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216361"
 ---
 # <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>Instrukcje: Dodawanie niestandardowego węzła programu SharePoint do Eksplorator serwera
   Węzły niestandardowe można dodać w węźle **połączenia programu SharePoint** w **Eksplorator serwera**. Jest to przydatne, gdy chcesz wyświetlić dodatkowe składniki programu SharePoint, które nie są domyślnie wyświetlane w **Eksplorator serwera** . Aby uzyskać więcej informacji, zobacz sekcję Rozpoznaj [węzeł połączenia SharePoint w Eksplorator serwera](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
@@ -54,8 +54,8 @@ ms.locfileid: "99878126"
 
      Poniższy przykład kodu demonstruje sposób definiowania nowego węzła. W tym przykładzie przyjęto założenie, że projekt zawiera ikonę o nazwie CustomChildNodeIcon jako zasób osadzony.
 
-     [!code-vb[SPExtensibility.ProjectSystemExtension.General#6](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorernode.vb#6)]
-     [!code-csharp[SPExtensibility.ProjectSystemExtension.General#6](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorernode.cs#6)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorernode.vb" id="Snippet6":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorernode.cs" id="Snippet6":::
 
 ### <a name="to-add-the-new-node-as-a-child-of-an-existing-node"></a>Aby dodać nowy węzeł jako element podrzędny istniejącego węzła
 
@@ -77,14 +77,14 @@ ms.locfileid: "99878126"
 
      Poniższy przykład kodu pokazuje, jak dodać nowy węzeł jako element podrzędny węzła witryny programu SharePoint w **Eksplorator serwera**.
 
-     [!code-vb[SPExtensibility.ProjectSystemExtension.General#7](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorernode.vb#7)]
-     [!code-csharp[SPExtensibility.ProjectSystemExtension.General#7](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorernode.cs#7)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorernode.vb" id="Snippet7":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorernode.cs" id="Snippet7":::
 
 ## <a name="complete-example"></a>Pełny przykład
  Poniższy przykład kodu zawiera kompletny kod definiujący prosty węzeł i dodaj go jako element podrzędny węzła witryny programu SharePoint w **Eksplorator serwera**.
 
- [!code-vb[SPExtensibility.ProjectSystemExtension.General#5](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorernode.vb#5)]
- [!code-csharp[SPExtensibility.ProjectSystemExtension.General#5](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorernode.cs#5)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorernode.vb" id="Snippet5":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorernode.cs" id="Snippet5":::
 
 ## <a name="compiling-the-code"></a>Kompilowanie kodu
  W tym przykładzie przyjęto założenie, że projekt zawiera ikonę o nazwie CustomChildNodeIcon jako zasób osadzony. Ten przykład wymaga również odwołań do następujących zestawów:

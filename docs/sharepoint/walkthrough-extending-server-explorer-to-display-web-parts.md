@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: aa190ea6d5376c00584cc5936d1074d245b9509e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 276315b7f470777da30fda33b15bac995deb07fd
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952671"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217674"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Przewodnik: rozszerzona Eksplorator serwera do wyświetlania składników Web Part
   W programie Visual Studio można użyć węzła **połączenia SharePoint** **Eksplorator serwera** , aby wyświetlić składniki w witrynach programu SharePoint. Jednak **Eksplorator serwera** domyślnie nie wyświetla niektórych składników. W tym instruktażu zostanie rozbudowana **Eksplorator serwera** tak, aby była wyświetlana Galeria składników Web Part w każdej połączonej witrynie programu SharePoint.
@@ -216,8 +216,8 @@ ms.locfileid: "99952671"
     > [!NOTE]
     > Po dodaniu tego kodu projekt będzie miał pewne błędy kompilacji, ale w późniejszych krokach zostanie dodany kod.
 
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#1](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/sitenodeextension.cs#1)]
-     [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#1](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/sitenodeextension.vb#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/sitenodeextension.cs" id="Snippet1":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/sitenodeextension.vb" id="Snippet1":::
 
 ## <a name="define-a-node-type-that-represents-a-web-part"></a>Zdefiniuj typ węzła, który reprezentuje część sieci Web
  Utwórz klasę, która definiuje nowy typ węzła, który reprezentuje składnik Web Part. Program Visual Studio używa tego nowego typu węzła do wyświetlania węzłów podrzędnych w węźle **Galeria składników Web Part** . Każdy węzeł podrzędny reprezentuje pojedynczy składnik Web Part w witrynie programu SharePoint.
@@ -228,8 +228,8 @@ ms.locfileid: "99952671"
 
 1. W projekcie WebPartNodeExtension Otwórz plik kodu WebPartNodeTypeProvder, a następnie wklej do niego następujący kod.
 
-     [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#2](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartnodetypeprovider.vb#2)]
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#2](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartnodetypeprovider.cs#2)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartnodetypeprovider.vb" id="Snippet2":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartnodetypeprovider.cs" id="Snippet2":::
 
 ## <a name="define-the-web-part-data-class"></a>Definiowanie klasy danych składnika Web Part
  Zdefiniuj klasę zawierającą dane o pojedynczym składniku Web Part w witrynie programu SharePoint. W dalszej części tego przewodnika utworzysz niestandardowe polecenie programu SharePoint, które pobiera dane dotyczące poszczególnych składników sieci Web w lokacji, a następnie przypisze dane do wystąpień tej klasy.
@@ -238,8 +238,8 @@ ms.locfileid: "99952671"
 
 1. W projekcie WebPartNodeExtension Otwórz plik kodu WebPartNodeInfo, a następnie wklej do niego następujący kod.
 
-     [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#3](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartnodeinfo.vb#3)]
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#3](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartnodeinfo.cs#3)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartnodeinfo.vb" id="Snippet3":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartnodeinfo.cs" id="Snippet3":::
 
 ## <a name="define-the-ids-for-the-sharepoint-commands"></a>Zdefiniuj identyfikatory dla poleceń programu SharePoint
  Zdefiniuj kilka ciągów, które identyfikują niestandardowe polecenia programu SharePoint. Te polecenia zostaną zaimplementowane w dalszej części tego przewodnika.
@@ -248,8 +248,8 @@ ms.locfileid: "99952671"
 
 1. W projekcie WebPartNodeExtension Otwórz plik kodu WebPartCommandIds, a następnie wklej do niego następujący kod.
 
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#4](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartcommandids.cs#4)]
-     [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#4](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartcommandids.vb#4)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartcommandids.cs" id="Snippet4":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartcommandids.vb" id="Snippet4":::
 
 ## <a name="create-the-custom-sharepoint-commands"></a>Tworzenie niestandardowych poleceń programu SharePoint
  Utwórz niestandardowe polecenia, które wywołują model obiektów serwera dla programu SharePoint, aby pobierać dane dotyczące składniki Web Part w witrynie programu SharePoint. Każde polecenie jest metodą, która ma <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> zastosowanie.
@@ -258,8 +258,8 @@ ms.locfileid: "99952671"
 
 1. W projekcie WebPartCommands Otwórz plik kodu WebPartCommands, a następnie wklej do niego następujący kod.
 
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#6](../sharepoint/codesnippet/CSharp/WebPartNode/WebPartCommands/WebPartCommands.cs#6)]
-     [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#6](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartcommands/webpartcommands.vb#6)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/WebPartNode/WebPartCommands/WebPartCommands.cs" id="Snippet6":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartcommands/webpartcommands.vb" id="Snippet6":::
 
 ## <a name="checkpoint"></a>Punkt kontrolny
  Na tym etapie przewodnika wszystkie kod węzła **Galerii składników Web Part** i poleceń programu SharePoint znajdują się teraz w projektach. Skompiluj rozwiązanie, aby upewnić się, że oba projekty kompilują się bez błędów.

@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e7513617ab4ee4a051dd48cd110ecb2c5e22495
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f7b1b8b92f978739bfa4e540013347e216781cd4
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105056842"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217245"
 ---
 # <a name="create-options-pages"></a>Tworzenie stron opcji
 W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] strukturze pakietów zarządzanych klasy pochodzące od <xref:Microsoft.VisualStudio.Shell.DialogPage> rozszerzeń [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE przez dodanie stron **opcji** w menu **Narzędzia** .
@@ -65,15 +65,15 @@ W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] strukturze pakiet
  Poniższa klasa definiuje minimalną stronę opcji "Hello World". Po otwarciu użytkownik może ustawić właściwość publiczną `HelloWorld` w siatce właściwości.
 
 ### <a name="code"></a>Kod
- [!code-csharp[UI_UserSettings_ToolsOptionPages#11](../../extensibility/internals/codesnippet/CSharp/creating-options-pages_1.cs)]
- [!code-vb[UI_UserSettings_ToolsOptionPages#11](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_1.vb)]
+:::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/cs/class1.cs" id="Snippet11":::
+:::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/vb/class1.vb" id="Snippet11":::
 
 ### <a name="description"></a>Opis
  Zastosowanie następującego atrybutu do klasy Package powoduje, że strona opcji jest dostępna po załadowaniu pakietu. Liczby są dowolnymi identyfikatorami zasobów dla kategorii i strony, a wartość logiczna na końcu określa, czy strona obsługuje automatyzację.
 
 ### <a name="code"></a>Kod
- [!code-csharp[UI_UserSettings_ToolsOptionPages#07](../../extensibility/internals/codesnippet/CSharp/creating-options-pages_2.cs)]
- [!code-vb[UI_UserSettings_ToolsOptionPages#07](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_2.vb)]
+:::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/cs/uiusersettingstoolsoptionspagespackage.cs" id="Snippet07":::
+:::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/vb/uiusersettingstoolsoptionspagespackage.vb" id="Snippet07":::
 
 ### <a name="description"></a>Opis
  Poniższy program obsługi zdarzeń wyświetla wynik w zależności od wartości właściwości ustawionej na stronie Opcje. Używa <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> metody z wynikiem jawnie rzutowania na typ strony opcji niestandardowej, aby uzyskać dostęp do właściwości uwidocznionych na stronie.
@@ -81,8 +81,8 @@ W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] strukturze pakiet
  W przypadku projektu wygenerowanego przez szablon pakietu Wywołaj tę funkcję z `MenuItemCallback` funkcji, aby dołączyć ją do domyślnego polecenia dodawanego do menu **Narzędzia** .
 
 ### <a name="code"></a>Kod
- [!code-csharp[UI_UserSettings_ToolsOptionPages#08](../../extensibility/internals/codesnippet/CSharp/creating-options-pages_3.cs)]
- [!code-vb[UI_UserSettings_ToolsOptionPages#08](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_3.vb)]
+:::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/cs/uiusersettingstoolsoptionspagespackage.cs" id="Snippet08":::
+:::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/vb/uiusersettingstoolsoptionspagespackage.vb" id="Snippet08":::
 
 ## <a name="see-also"></a>Zobacz też
 - [Rozwiń Ustawienia użytkownika i opcje](../../extensibility/extending-user-settings-and-options.md)

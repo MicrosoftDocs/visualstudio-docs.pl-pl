@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a095e9d1e8fc48500bceac06732150a3067e2dd2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dee53642e042c8d4db88bdba7c093f327527798d
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937683"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217024"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Przewodnik: wywoływanie modelu obiektów klienta programu SharePoint w rozszerzeniu Eksplorator serwera
   W tym instruktażu pokazano, jak wywołać model obiektów klienta programu SharePoint z rozszerzenia dla węzła **połączenia programu SharePoint** w **Eksplorator serwera**. Aby uzyskać więcej informacji o sposobach korzystania z modelu obiektów klienta programu SharePoint, zobacz [Wywoływanie modeli obiektów programu SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
@@ -166,8 +166,8 @@ Znajomość następujących pojęć jest pomocna, ale nie jest wymagana, aby uko
     > [!NOTE]
     > Po dodaniu tego kodu projekt będzie zawierał błędy kompilacji. Te błędy zostaną odrzucone po dodaniu kodu w dalszych krokach.
 
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNode#1](../sharepoint/codesnippet/CSharp/webpartnode/webpartnodeextension/sitenodeextension.cs#1)]
-     [!code-vb[SPExtensibility.SPExplorer.WebPartNode#1](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnode.webpartnode/webpartnodeextension/sitenodeextension.vb#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/webpartnode/webpartnodeextension/sitenodeextension.cs" id="Snippet1":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnode.webpartnode/webpartnodeextension/sitenodeextension.vb" id="Snippet1":::
 
 ## <a name="define-a-node-type-that-represents-a-web-part"></a>Zdefiniuj typ węzła, który reprezentuje część sieci Web
  Utwórz klasę, która definiuje nowy typ węzła, który reprezentuje składnik Web Part. Program Visual Studio używa tego nowego typu węzła do wyświetlania węzłów podrzędnych w węźle **Galeria składników Web Part** . Każdy z tych węzłów podrzędnych reprezentuje pojedynczy składnik Web Part w witrynie programu SharePoint.
@@ -178,8 +178,8 @@ Znajomość następujących pojęć jest pomocna, ale nie jest wymagana, aby uko
 
 1. Wklej następujący kod do pliku kodu **WebPartNodeTypeProvider** dla projektu **WebPartNodeExtension** .
 
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNode#2](../sharepoint/codesnippet/CSharp/webpartnode/webpartnodeextension/webpartnodetypeprovider.cs#2)]
-     [!code-vb[SPExtensibility.SPExplorer.WebPartNode#2](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnode.webpartnode/webpartnodeextension/webpartnodetypeprovider.vb#2)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/webpartnode/webpartnodeextension/webpartnodetypeprovider.cs" id="Snippet2":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnode.webpartnode/webpartnodeextension/webpartnodetypeprovider.vb" id="Snippet2":::
 
 ## <a name="checkpoint"></a>Punkt kontrolny
  W tym momencie w przewodniku cały kod węzła **Galerii składników Web Part** znajduje się teraz w projekcie. Utwórz projekt **WebPartNodeExtension** , aby upewnić się, że kompiluje się bez błędów.

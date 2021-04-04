@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ea04a9c70f23c30a5f603fa9411780223fff563
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1a1f115dfff92b1c5e5979e62af257cde6a92360
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883054"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216595"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Przewodnik: testowanie pierwszego środowiska przy użyciu funkcji generowania na podstawie użycia
 
@@ -79,21 +79,21 @@ Funkcja **generowania z użycia** może być używana z platformami testów, kt�
 
 5. Kliknij przycisk **Generuj nowy typ** , aby otworzyć okno dialogowe **generowanie typu** . To okno dialogowe zawiera opcje, które obejmują generowanie typu w innym projekcie.
 
-6. Na liście **projekt** kliknij pozycję **GFUDemo \_ VB** lub **GFUDemo_CS** , aby nakazać programowi Visual Studio dodanie pliku do projektu biblioteki klas zamiast projektu testowego. Jeśli nie została jeszcze wybrana, wybierz opcję **Utwórz nowy plik** i nadaj mu nazwę *automobile.cs* lub *automobile. vb*.
+6. Na liście **projekt** kliknij pozycję **GFUDemo \_ VB** lub **GFUDemo_CS** , aby nakazać programowi Visual Studio dodanie pliku do projektu biblioteki klas zamiast projektu testowego. Jeśli nie została jeszcze wybrana, wybierz pozycję **Utwórz nowy plik** i nadaj jej nazwę *automobile. cs* lub *automobile. vb*.
 
      ![Okno dialogowe generowanie nowego typu](../ide/media/genotherdialog.png)
 
 7. Kliknij przycisk **OK** , aby zamknąć okno dialogowe i utworzyć nowy plik.
 
-8. W **Eksplorator rozwiązań**, poszukaj w węźle projektu **GFUDemo_VB** lub **GFUDemo_CS** , aby upewnić się, że nowy plik *automobile. vb* lub *automobile.cs* znajduje się w tym miejscu. W edytorze kodu fokus jest nadal w `AutomobileTest.DefaultAutomobileIsInitializedCorrectly` , co umożliwia dalsze pisanie testu z minimalnym przerwaniem.
+8. W **Eksplorator rozwiązań**, poszukaj w węźle projektu **GFUDemo_VB** lub **GFUDemo_CS** , aby sprawdzić, czy nowy plik *automobile. vb* lub *automobile. cs* znajduje się w tym miejscu. W edytorze kodu fokus jest nadal w `AutomobileTest.DefaultAutomobileIsInitializedCorrectly` , co umożliwia dalsze pisanie testu z minimalnym przerwaniem.
 
 ### <a name="generate-a-property-stub"></a>Generowanie właściwości zastępczej
 Załóżmy, że Specyfikacja produktu wskazuje, że `Automobile` Klasa ma dwie właściwości publiczne o nazwie `Model` i `TopSpeed` . Te właściwości muszą zostać zainicjowane przy użyciu wartości domyślnych `"Not specified"` i `-1` przez konstruktora domyślnego. Poniższy test jednostkowy sprawdzi, czy domyślny Konstruktor ustawi odpowiednie wartości domyślne.
 
 1. Dodaj następujący wiersz kodu do `DefaultAutomobileIsInitializedCorrectly` metody testowej.
 
-     [!code-csharp[VbTDDWalkthrough#1](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.cs)]
-     [!code-vb[VbTDDWalkthrough#1](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbtddwalkthrough/cs/unittest1.cs" id="Snippet1":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbtddwalkthrough/vb/unittest1.vb" id="Snippet1":::
 
 2. Ponieważ kod odwołuje się do dwóch niezdefiniowanych właściwości w `Automobile` , w obszarze `Model` i `TopSpeed` . Zatrzymaj wskaźnik myszy `Model` i wybierz żarówkę błędu **szybkie akcje** , a następnie wybierz polecenie **Generuj Właściwość "Automobile. model"**.
 
@@ -106,8 +106,8 @@ Teraz utworzysz metodę testową, która spowoduje wygenerowanie klasy zastępcz
 
 1. Dodaj następującą dodatkową metodę testową do `AutomobileTest` klasy.
 
-     [!code-csharp[VbTDDWalkthrough#2](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.cs)]
-     [!code-vb[VbTDDWalkthrough#2](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbtddwalkthrough/cs/intermediate.cs" id="Snippet2":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbtddwalkthrough/vb/intermediate.vb" id="Snippet2":::
 
 2. Kliknij żarówkę błędu **szybkie akcje** w czerwonej części, a następnie kliknij pozycję **Generuj Konstruktor w "Automobile"**.
 
@@ -120,8 +120,8 @@ Przyjęto założenie, że Specyfikacja wskazuje, że nowy `Automobile` może by
 
 1. Dodaj następujące wiersze do `AutomobileWithModelNameCanStart` metody.
 
-     [!code-csharp[VbTDDWalkthrough#3](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.cs)]
-     [!code-vb[VbTDDWalkthrough#3](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbtddwalkthrough/cs/unittest1.cs" id="Snippet3":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbtddwalkthrough/vb/unittest1.vb" id="Snippet3":::
 
 2. Kliknij żarówkę błędu **szybkie akcje** dla `myAuto.Start` wywołania metody, a następnie kliknij pozycję **Generuj metodę "Automobile. Start"**.
 
@@ -145,13 +145,13 @@ Przyjęto założenie, że Specyfikacja wskazuje, że nowy `Automobile` może by
 
 1. Dodaj następujący kod do konstruktora domyślnego, aby `Model` `TopSpeed` `IsRunning` wszystkie właściwości i wszystkie były zainicjowane do ich prawidłowych wartości domyślnych `"Not specified"` , `-1` , i `False` (lub `false` dla języka C#).
 
-     [!code-csharp[VbTDDWalkthrough#5](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_5.cs)]
-     [!code-vb[VbTDDWalkthrough#5](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_5.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbtddwalkthrough/cs/automobile.cs" id="Snippet5":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbtddwalkthrough/vb/automobile.vb" id="Snippet5":::
 
 2. Gdy `Start` Metoda jest wywoływana, należy ustawić `IsRunning` flagę na wartość true tylko wtedy, gdy `Model` `TopSpeed` właściwości lub są ustawione na inną niż wartość domyślna. Usuń `NotImplementedException` z treści metody i Dodaj następujący kod.
 
-     [!code-csharp[VbTDDWalkthrough#6](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_6.cs)]
-     [!code-vb[VbTDDWalkthrough#6](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_6.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbtddwalkthrough/cs/automobile.cs" id="Snippet6":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbtddwalkthrough/vb/automobile.vb" id="Snippet6":::
 
 ### <a name="run-the-tests-again"></a>Uruchom testy ponownie
 

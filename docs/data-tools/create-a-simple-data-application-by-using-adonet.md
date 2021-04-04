@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 71e6c03c4ed0319b45c5b6ef0b79f65abbfc9f73
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c499e36b7ee6bb15980fe89c6185a105681d4d05
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99867194"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216504"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Tworzenie prostej aplikacji do obsługi danych za pomocą pakietu ADO.NET
 
@@ -150,7 +150,7 @@ Po uruchomieniu aplikacji zostanie otwarty formularz nawigacji. Przycisk **Dodaj
 
 #### <a name="make-the-navigation-form-the-startup-form"></a>Ustaw nawigację formularza startowego
 
-Jeśli używasz języka C#, w **Eksplorator rozwiązań** Otwórz **program.cs**, a następnie zmień `Application.Run` wiersz na: `Application.Run(new Navigation());`
+Jeśli używasz języka C#, w **Eksplorator rozwiązań** Otwórz **program programu**, a następnie zmień `Application.Run` wiersz na następujący: `Application.Run(new Navigation());`
 
 Jeśli używasz Visual Basic, w **Eksplorator rozwiązań**, Otwórz okno **Właściwości** , wybierz kartę **aplikacja** , a następnie wybierz pozycję **SimpleDataApp. Nawigacja** na liście **formularz startowy** .
 
@@ -162,8 +162,8 @@ Kliknij dwukrotnie trzy przyciski w formularzu nawigacji, aby utworzyć puste me
 
 Na stronie kodowej formularza nawigacji Wypełnij treść metody dla trzech przycisków procedury obsługi zdarzeń, jak pokazano w poniższym kodzie.
 
-[!code-csharp[Navigation#1](../data-tools/codesnippet/CSharp/SimpleDataApp/Navigation.cs#1)]
-[!code-vb[Navigation#1](../data-tools/codesnippet/VisualBasic/SimpleDataApp/Navigation.vb#1)]
+:::code language="csharp" source="../data-tools/codesnippet/CSharp/SimpleDataApp/Navigation.cs" id="Snippet1":::
+:::code language="vb" source="../data-tools/codesnippet/VisualBasic/SimpleDataApp/Navigation.vb" id="Snippet1":::
 
 ### <a name="newcustomer-form"></a>Formularz NewCustomer
 
@@ -189,13 +189,13 @@ Aby ukończyć logikę formularza NewCustomer, wykonaj następujące kroki.
 
 2. Dodaj do klasy pewne zmienne i metody pomocnicze, jak pokazano w poniższym kodzie.
 
-     [!code-csharp[NewCustomer#1](../data-tools/codesnippet/CSharp/SimpleDataApp/NewCustomer.cs#1)]
-     [!code-vb[NewCustomer#1](../data-tools/codesnippet/VisualBasic/SimpleDataApp/NewCustomer.vb#1)]
+     :::code language="csharp" source="../data-tools/codesnippet/CSharp/SimpleDataApp/NewCustomer.cs" id="Snippet1":::
+     :::code language="vb" source="../data-tools/codesnippet/VisualBasic/SimpleDataApp/NewCustomer.vb" id="Snippet1":::
 
 3. Wypełnij treść metody dla czterech przycisków obsługi zdarzeń, jak pokazano w poniższym kodzie.
 
-     [!code-csharp[NewCustomer#2](../data-tools/codesnippet/CSharp/SimpleDataApp/NewCustomer.cs#2)]
-     [!code-vb[NewCustomer#2](../data-tools/codesnippet/VisualBasic/SimpleDataApp/NewCustomer.vb#2)]
+     :::code language="csharp" source="../data-tools/codesnippet/CSharp/SimpleDataApp/NewCustomer.cs" id="Snippet2":::
+     :::code language="vb" source="../data-tools/codesnippet/VisualBasic/SimpleDataApp/NewCustomer.vb" id="Snippet2":::
 
 ### <a name="fillorcancel-form"></a>Formularz FillOrCancel
 
@@ -223,13 +223,13 @@ Aby ukończyć logikę formularza FillOrCancel, wykonaj następujące kroki.
 
 2. Dodaj zmienną i metodę pomocnika do klasy, jak pokazano w poniższym kodzie.
 
-     [!code-csharp[FillOrCancel#1](../data-tools/codesnippet/CSharp/SimpleDataApp/FillOrCancel.cs#1)]
-     [!code-vb[FillOrCancel#1](../data-tools/codesnippet/VisualBasic/SimpleDataApp/FillOrCancel.vb#1)]
+     :::code language="csharp" source="../data-tools/codesnippet/CSharp/SimpleDataApp/FillOrCancel.cs" id="Snippet1":::
+     :::code language="vb" source="../data-tools/codesnippet/VisualBasic/SimpleDataApp/FillOrCancel.vb" id="Snippet1":::
 
 3. Wypełnij treść metody dla czterech przycisków obsługi zdarzeń, jak pokazano w poniższym kodzie.
 
-     [!code-csharp[FillOrCancel#2](../data-tools/codesnippet/CSharp/SimpleDataApp/FillOrCancel.cs#2)]
-     [!code-vb[FillOrCancel#2](../data-tools/codesnippet/VisualBasic/SimpleDataApp/FillOrCancel.vb#2)]
+     :::code language="csharp" source="../data-tools/codesnippet/CSharp/SimpleDataApp/FillOrCancel.cs" id="Snippet2":::
+     :::code language="vb" source="../data-tools/codesnippet/VisualBasic/SimpleDataApp/FillOrCancel.vb" id="Snippet2":::
 
 ## <a name="test-your-application"></a>Testowanie aplikacji
 

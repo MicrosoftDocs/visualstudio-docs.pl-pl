@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e7427c0866806c705ed28a049b33024771631c0a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 71e9d83cbe3459abb05e24b127e54651aade8ee5
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839126"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217960"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>Przewodnik: Tworzenie niestandardowego elementu projektu akcji z szablonem elementu część 1
   Można zwiększyć system projektu programu SharePoint w programie Visual Studio, tworząc własne typy elementów projektu. W tym instruktażu utworzysz element projektu, który można dodać do projektu programu SharePoint, aby utworzyć akcję niestandardową w witrynie programu SharePoint. Akcja niestandardowa dodaje element menu do menu **Akcje witryny** w witrynie programu SharePoint.
@@ -152,8 +152,8 @@ ms.locfileid: "99839126"
 
 2. Zastąp kod w tym pliku następującym kodem.
 
-     [!code-csharp[SPExtensibility.ProjectItem.CustomAction#1](../sharepoint/codesnippet/CSharp/customactionprojectitem/projectitemtypedefinition/customaction.cs#1)]
-     [!code-vb[SPExtensibility.ProjectItem.CustomAction#1](../sharepoint/codesnippet/VisualBasic/customactionprojectitem/projectitemdefinition/customaction.vb#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/customactionprojectitem/projectitemtypedefinition/customaction.cs" id="Snippet1":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/customactionprojectitem/projectitemdefinition/customaction.vb" id="Snippet1":::
 
 ## <a name="create-an-icon-for-the-project-item-in-solution-explorer"></a>Utwórz ikonę dla elementu projektu w Eksplorator rozwiązań
  Podczas tworzenia niestandardowego elementu projektu programu SharePoint można skojarzyć obraz (ikonę lub mapę bitową) z elementem projektu. Ten obraz pojawia się obok elementu projektu w **Eksplorator rozwiązań**.

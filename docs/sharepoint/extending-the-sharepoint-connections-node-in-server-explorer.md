@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9c10c2bc69086e3c98633ba746c1e6fc8d7f2a20
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1f77e0044b8ae3c7456a31bb9c9153ba9e9f4c99
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99889697"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106218038"
 ---
 # <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Rozwiń węzeł połączenia programu SharePoint w Eksplorator serwera
   W programie Visual Studio można nawiązać połączenie z lokalnymi witrynami programu SharePoint na komputerze deweloperskim przy użyciu węzła **połączenia programu SharePoint** w oknie **Eksplorator serwera** . Ten węzeł wyświetla wiele składników lokalnych witryn programu SharePoint w hierarchicznym widoku drzewa. Na przykład można wyświetlić listy, biblioteki dokumentów i typy zawartości w lokacjach lokalnych. Aby uzyskać więcej informacji na temat używania **Eksplorator serwera** do nawiązywania połączenia z lokalnymi witrynami programu SharePoint, zobacz [przeglądanie połączeń SharePoint przy użyciu Eksplorator serwera](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md).
@@ -50,8 +50,8 @@ ms.locfileid: "99889697"
 
  Poniższy przykład kodu demonstruje, jak uzyskać obiekt danych dla węzła listy. Aby zobaczyć ten przykład w kontekście większego przykładu, zobacz [jak: pobieranie danych dla wbudowanego węzła programu SharePoint w Eksplorator serwera](../sharepoint/how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer.md).
 
- [!code-vb[SPExtensibility.ProjectSystemExtension.General#11](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextensionnodeinfo.vb#11)]
- [!code-csharp[SPExtensibility.ProjectSystemExtension.General#11](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextensionnodeinfo.cs#11)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextensionnodeinfo.vb" id="Snippet11":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextensionnodeinfo.cs" id="Snippet11":::
 
  Poniższa tabela zawiera listę typów obiektów danych dla każdego wbudowanego typu węzła.
 

@@ -2,18 +2,18 @@
 title: Porównanie równoległe git i Team Explorer w programie Visual Studio
 titleSuffix: ''
 description: Porównaj i z różnicą, jak używać nowego środowiska git, a Team Explorer w programie Visual Studio, aby zarządzać kontrolą źródła.
-ms.date: 03/12/2021
+ms.date: 04/01/2021
 ms.topic: how-to
 ms.author: tglee
 author: TerryGLee
 ms.manager: jmartens
 monikerRange: vs-2019
-ms.openlocfilehash: 4cbd5b928bb066401c2f091863ad610fbd9f23d5
-ms.sourcegitcommit: 8edb1a7e3e8eee48bf0a900f00b5ee8e08de8e1d
+ms.openlocfilehash: bff03c9435a763607fd32936ddfa3fb38b45296b
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103482288"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216920"
 ---
 # <a name="side-by-side-comparison-of-git-and-team-explorer"></a>Porównanie Side-by-Side dla usługi git i Team Explorer
 
@@ -69,5 +69,7 @@ Jeśli używasz Team Explorer, poniżej przedstawiono przewodnik krok po kroku, 
 Aby uzyskać więcej informacji na temat nowego środowiska git, zobacz najnowszy film wideo [z wprowadzeniem do usługi Git w programie Visual Studio](https://www.youtube.com/watch?v=GCZ9x3yqkyc)w serwisie YouTube.
 
 ## <a name="see-also"></a>Zobacz też
+
 - [Nowe środowisko Git w programie Visual Studio](git-with-visual-studio.md)
+- [Wprowadzenie do usługi git i usługi GitHub w programie Visual Studio](/learn/modules/visual-studio-github-push/)
 - [Praca z kontami usługi GitHub w programie Visual Studio](work-with-github-accounts.md)

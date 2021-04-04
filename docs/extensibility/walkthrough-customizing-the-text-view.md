@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 17aa8644fc4823df5b68378e9045fa190980306d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 5ef4d0b408afc00a806e73d1e2eae7a07dde7814
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105080310"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216855"
 ---
 # <a name="walkthrough-customize-the-text-view"></a>Przewodnik: Dostosowywanie widoku tekstu
 Widok tekstu można dostosować, modyfikując dowolne z następujących właściwości w mapie formatu edytora:
@@ -51,8 +51,8 @@ Widok tekstu można dostosować, modyfikując dowolne z następujących właści
 
 2. Dodaj następujące `using` dyrektywy:
 
-    [!code-csharp[VSSDKViewPropertyTest#1](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_1.cs)]
-    [!code-vb[VSSDKViewPropertyTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_1.vb)]
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkviewpropertytest/cs/viewpropertymodifier.cs" id="Snippet1":::
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkviewpropertytest/vb/viewpropertymodifier.vb" id="Snippet1":::
 
 3. Zadeklaruj klasę o nazwie `TestViewCreationListener` , która dziedziczy z <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> . Wyeksportuj tę klasę o następujących atrybutach:
 
@@ -60,20 +60,20 @@ Widok tekstu można dostosować, modyfikując dowolne z następujących właści
 
    - <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> Aby określić rolę tego odbiornika.
 
-     [!code-csharp[VSSDKViewPropertyTest#2](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_2.cs)]
-     [!code-vb[VSSDKViewPropertyTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_2.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkviewpropertytest/cs/viewpropertymodifier.cs" id="Snippet2":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkviewpropertytest/vb/viewpropertymodifier.vb" id="Snippet2":::
 
 4. W tej klasie zaimportuj <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMapService> .
 
-    [!code-csharp[VSSDKViewPropertyTest#3](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_3.cs)]
-    [!code-vb[VSSDKViewPropertyTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_3.vb)]
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkviewpropertytest/cs/viewpropertymodifier.cs" id="Snippet3":::
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkviewpropertytest/vb/viewpropertymodifier.vb" id="Snippet3":::
 
 ## <a name="change-the-view-properties"></a>Zmień właściwości widoku
 
 1. Skonfiguruj <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> metodę tak, aby właściwości widoku były zmieniane po otwarciu widoku. Aby wprowadzić zmiany, najpierw Znajdź odpowiadający elementowi widoku, który <xref:System.Windows.ResourceDictionary> ma zostać znaleziony. Następnie zmień odpowiednią właściwość w słowniku zasobów i ustaw właściwości. Przetwarzanie wsadowe wywołań <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.SetProperties%2A> metody przez wywołanie <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.BeginBatchUpdate%2A> metody przed ustawieniem właściwości, a następnie <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.EndBatchUpdate%2A> po ustawieniu właściwości.
 
-     [!code-csharp[VSSDKViewPropertyTest#4](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_4.cs)]
-     [!code-vb[VSSDKViewPropertyTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_4.vb)]
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkviewpropertytest/cs/viewpropertymodifier.cs" id="Snippet4":::
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkviewpropertytest/vb/viewpropertymodifier.vb" id="Snippet4":::
 
 ## <a name="build-and-test-the-code"></a>Kompiluj i Testuj kod
 

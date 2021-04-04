@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: d55a11f30ad8b4397dc27247410d31b0b79267b7
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b21a7515f7ad4bad74088b6b580a4a3122a2e12a
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105078438"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216985"
 ---
 # <a name="walkthrough-implement-code-snippets"></a>Przewodnik: implementowanie fragmentów kodu
 Można utworzyć fragmenty kodu i dołączyć je do rozszerzenia edytora, aby użytkownicy rozszerzenia mogli dodawać je do własnego kodu.
@@ -132,18 +132,18 @@ Można utworzyć fragmenty kodu i dołączyć je do rozszerzenia edytora, aby u�
 
 6. Dodaj klasę statyczną `SnippetUtilities` do projektu.
 
-     [!code-csharp[VSSDKCompletionTest#22](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_1.cs)]
-     [!code-vb[VSSDKCompletionTest#22](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_1.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/snippetutilities.cs" id="Snippet22":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/snippetutilities.vb" id="Snippet22":::
 
 7. W klasie SnippetUtilities zdefiniuj identyfikator GUID i nadaj mu wartość użytą w pliku *SnippetsIndex.xml* .
 
-     [!code-csharp[VSSDKCompletionTest#23](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_2.cs)]
-     [!code-vb[VSSDKCompletionTest#23](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_2.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/snippetutilities.cs" id="Snippet23":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/snippetutilities.vb" id="Snippet23":::
 
 8. Dodaj <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> do `TestCompletionHandler` klasy. Ten atrybut można dodać do dowolnej klasy publicznej lub wewnętrznej (niestatycznej) w projekcie. (Może być konieczne dodanie `using` dyrektywy do przestrzeni nazw Microsoft. VisualStudio. Shell).
 
-     [!code-csharp[VSSDKCompletionTest#24](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_3.cs)]
-     [!code-vb[VSSDKCompletionTest#24](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_3.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/snippetutilities.cs" id="Snippet24":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/snippetutilities.vb" id="Snippet24":::
 
 9. Skompiluj i Uruchom projekt. W eksperymentalnym wystąpieniu programu Visual Studio, które zaczyna się, gdy projekt jest uruchomiony, ten fragment kodu, który właśnie zarejestrowałeś, powinien zostać wyświetlony w **Menedżerze fragmentów kodów** w języku **TestSnippets** .
 
@@ -156,8 +156,8 @@ Można utworzyć fragmenty kodu i dołączyć je do rozszerzenia edytora, aby u�
 
      Ponieważ ta klasa implementuje <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> , można aktywować polecenie **Wstaw fragment kodu** w <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metodzie. Przed włączeniem polecenia Sprawdź, czy ta metoda nie jest wywoływana wewnątrz funkcji automatyzacji, ponieważ po kliknięciu polecenia **Wstaw fragment** kodu zostanie wyświetlony selektor fragmentu interfejsu użytkownika (UI).
 
-     [!code-csharp[VSSDKCompletionTest#25](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_4.cs)]
-     [!code-vb[VSSDKCompletionTest#25](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_4.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/snippetutilities.cs" id="Snippet25":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/snippetutilities.vb" id="Snippet25":::
 
 2. Skompiluj i Uruchom projekt. W eksperymentalnym wystąpieniu Otwórz plik, który ma rozszerzenie nazwy pliku *. zzz* , a następnie kliknij prawym przyciskiem myszy w dowolnym miejscu. Polecenie **Wstaw fragment kodu** powinno pojawić się w menu skrótów.
 
@@ -172,58 +172,58 @@ Można utworzyć fragmenty kodu i dołączyć je do rozszerzenia edytora, aby u�
 
 1. Do pliku, który zawiera `TestCompletionCommandHandler` klasę, Dodaj następujące `using` dyrektywy.
 
-     [!code-csharp[VSSDKCompletionTest#26](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_5.cs)]
-     [!code-vb[VSSDKCompletionTest#26](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_5.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/snippetutilities.cs" id="Snippet26":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/snippetutilities.vb" id="Snippet26":::
 
 2. Ustaw `TestCompletionCommandHandler` klasę jako implementującą <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient> interfejs.
 
-     [!code-csharp[VSSDKCompletionTest#27](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_6.cs)]
-     [!code-vb[VSSDKCompletionTest#27](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_6.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/snippetutilities.cs" id="Snippet27":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/snippetutilities.vb" id="Snippet27":::
 
 3. W `TestCompletionCommandHandlerProvider` klasie zaimportuj <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> .
 
-     [!code-csharp[VSSDKCompletionTest#28](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_7.cs)]
-     [!code-vb[VSSDKCompletionTest#28](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_7.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs" id="Snippet28":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb" id="Snippet28":::
 
 4. Dodaj pola prywatne dla interfejsów rozszerzających kod i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> .
 
-     [!code-csharp[VSSDKCompletionTest#29](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_8.cs)]
-     [!code-vb[VSSDKCompletionTest#29](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_8.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/snippetutilities.cs" id="Snippet29":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/snippetutilities.vb" id="Snippet29":::
 
 5. W konstruktorze `TestCompletionCommandHandler` klasy ustaw następujące pola.
 
-     [!code-csharp[VSSDKCompletionTest#30](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_9.cs)]
-     [!code-vb[VSSDKCompletionTest#30](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_9.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/snippetutilities.cs" id="Snippet30":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/snippetutilities.vb" id="Snippet30":::
 
 6. Aby wyświetlić selektor wstawki, gdy użytkownik kliknie polecenie **Wstaw fragment** kodu, Dodaj następujący kod do <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> metody. (Aby to wyjaśnienie było bardziej czytelne, `Exec()` kod używany do uzupełniania instrukcji nie jest wyświetlany; zamiast tego, bloki kodu są dodawane do istniejącej metody). Dodaj następujący blok kodu po kodzie, który sprawdza znak.
 
-     [!code-csharp[VSSDKCompletionTest#31](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_10.cs)]
-     [!code-vb[VSSDKCompletionTest#31](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_10.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/snippetutilities.cs" id="Snippet31":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/snippetutilities.vb" id="Snippet31":::
 
 7. Jeśli fragment kodu zawiera pola, które mogą być przechodzenie, sesja rozszerzania jest otwarta do momentu, gdy rozszerzanie zostanie jawnie zaakceptowane; Jeśli fragment kodu nie zawiera żadnych pól, sesja jest zamknięta i jest zwracana `null` przez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.InvokeInsertionUI%2A> metodę. W tej <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> metodzie, po kodzie interfejsu użytkownika selektora fragmentów, który został dodany w poprzednim kroku, Dodaj następujący kod, aby obsłużyć nawigację fragmentu (gdy użytkownik naciśnie klawisz **Tab** lub **SHIFT** +  po wstawieniu fragmentu kodu).
 
-     [!code-csharp[VSSDKCompletionTest#32](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_11.cs)]
-     [!code-vb[VSSDKCompletionTest#32](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_11.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/snippetutilities.cs" id="Snippet32":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/snippetutilities.vb" id="Snippet32":::
 
 8. Aby wstawić fragment kodu, gdy użytkownik wpisze odpowiedni skrót, a następnie naciśnij klawisz **Tab**, Dodaj kod do <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> metody. Metoda prywatna, która wstawia fragment kodu, zostanie wyświetlona w późniejszym kroku. Dodaj następujący kod po kodzie nawigacji, który został dodany w poprzednim kroku.
 
-     [!code-csharp[VSSDKCompletionTest#33](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_12.cs)]
-     [!code-vb[VSSDKCompletionTest#33](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_12.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/snippetutilities.cs" id="Snippet33":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/snippetutilities.vb" id="Snippet33":::
 
 9. Zaimplementuj metody <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient> interfejsu. W tej implementacji jedyną metodą zainteresowania są <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient.EndExpansion%2A> i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient.OnItemChosen%2A> . Pozostałe metody powinny po prostu zwrócić <xref:Microsoft.VisualStudio.VSConstants.S_OK> .
 
-     [!code-csharp[VSSDKCompletionTest#34](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_13.cs)]
-     [!code-vb[VSSDKCompletionTest#34](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_13.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/snippetutilities.cs" id="Snippet34":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/snippetutilities.vb" id="Snippet34":::
 
 10. Zaimplementuj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient.OnItemChosen%2A> metodę. Metoda pomocnika, która wstawia rozszerzenia, jest omówiona w późniejszym kroku. <xref:Microsoft.VisualStudio.TextManager.Interop.TextSpan>Zawiera informacje o wierszu i kolumnie, które można uzyskać od <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> .
 
-     [!code-csharp[VSSDKCompletionTest#35](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_14.cs)]
-     [!code-vb[VSSDKCompletionTest#35](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_14.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/snippetutilities.cs" id="Snippet35":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/snippetutilities.vb" id="Snippet35":::
 
 11. Poniższa metoda prywatna wstawia fragment kodu na podstawie skrótu lub tytułu i ścieżki. Następnie wywołuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansion.InsertNamedExpansion%2A> metodę za pomocą fragmentu kodu.
 
-     [!code-csharp[VSSDKCompletionTest#36](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_15.cs)]
-     [!code-vb[VSSDKCompletionTest#36](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_15.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/snippetutilities.cs" id="Snippet36":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/snippetutilities.vb" id="Snippet36":::
 
 ## <a name="build-and-test-code-snippet-expansion"></a>Kompiluj i Testuj rozszerzanie fragmentu kodu
  Możesz sprawdzić, czy rozszerzenie fragmentu działa w projekcie.

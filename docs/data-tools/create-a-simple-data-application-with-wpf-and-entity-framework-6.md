@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 52c9d8ca4af6467c6db21be64083b5bf64af0b6a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e3432dd9a72fa71ea1e749dd28e80a3d55cce19c
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859193"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216062"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Tworzenie prostej aplikacji do obsługi danych za pomocą platform WPF i Entity Framework 6
 
@@ -130,9 +130,9 @@ Istnieje możliwość napisania własnego kodu wiązania, ale znacznie łatwiej 
 
      ![Przeciąganie klas zamówień jako siatki](../data-tools/media/raddata-drag-orders-classes-as-grid.png)
 
-7. Program Visual Studio wygenerował cały kod powiązania, który łączy kontrolki interfejsu użytkownika ze zdarzeniami w modelu. Wszystko, co musisz zrobić, aby zobaczyć pewne dane, napisanie kodu w celu wypełnienia modelu. Najpierw przejdź do *MainWindow.XAML.cs* i Dodaj element członkowski danych do klasy MainWindow dla kontekstu danych. Ten obiekt, który został wygenerowany dla Ciebie, działa podobnie jak kontrolka, która śledzi zmiany i zdarzenia w modelu. Dodasz również do CollectionViewSource członków danych dla klientów i zamówień oraz logiki inicjalizacji skojarzonego konstruktora. Góra klasy powinna wyglądać następująco:
+7. Program Visual Studio wygenerował cały kod powiązania, który łączy kontrolki interfejsu użytkownika ze zdarzeniami w modelu. Wszystko, co musisz zrobić, aby zobaczyć pewne dane, napisanie kodu w celu wypełnienia modelu. Najpierw przejdź do *MainWindow. XAML. cs* i Dodaj element członkowski danych do klasy MainWindow dla kontekstu danych. Ten obiekt, który został wygenerowany dla Ciebie, działa podobnie jak kontrolka, która śledzi zmiany i zdarzenia w modelu. Dodasz również do CollectionViewSource członków danych dla klientów i zamówień oraz logiki inicjalizacji skojarzonego konstruktora. Góra klasy powinna wyglądać następująco:
 
-     [!code-csharp[MainWindow#1](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#1)]
+     :::code language="csharp" source="../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs" id="Snippet1":::
 
      Dodaj `using` dyrektywę dla elementu System. Data. Entity, aby przenieść metodę rozszerzenia Load do zakresu:
 
@@ -142,7 +142,8 @@ Istnieje możliwość napisania własnego kodu wiązania, ale znacznie łatwiej 
 
      Teraz przewiń w dół i Znajdź `Window_Loaded` procedurę obsługi zdarzeń. Zwróć uwagę, że program Visual Studio dodał obiekt CollectionViewSource. Reprezentuje obiekt NorthwindEntities, który został wybrany podczas tworzenia modelu. Dodano już ten element, więc nie potrzebujesz go tutaj. Zastąp kod w, `Window_Loaded` Aby Metoda teraz wyglądała następująco:
 
-     [!code-csharp[Window_Loaded#2](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#2)]
+     :::code language="csharp" source="../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs" id="Snippet2":::
+
 
 8. Naciśnij klawisz **F5**. Powinny zostać wyświetlone szczegóły pierwszego klienta, który został pobrany do CollectionViewSource. W siatce danych powinny również być widoczne ich zamówienia. Formatowanie nie jest doskonałe, dlatego należy rozwiązać ten problem. Można również utworzyć sposób wyświetlania innych rekordów i wykonywać podstawowe operacje CRUD.
 
@@ -421,9 +422,10 @@ Istnieją cztery części logiki poleceń: (1) polecenia, (2) powiązania, (3) p
 
 Kod źródłowy jest minimalny z wyjątkiem metod dodawania i usuwania. Nawigacja jest wykonywana przez wywoływanie metod we właściwości widoku CollectionViewSource. `DeleteOrderCommandHandler`Pokazuje, jak wykonać kaskadowe usuwanie w kolejności. Musimy najpierw usunąć Order_Details, które są z nim skojarzone. `UpdateCommandHandler`Dodaje nowego klienta lub zamówienie do kolekcji lub po prostu aktualizuje istniejącego klienta lub zamówienie ze zmianami wprowadzonymi przez użytkownika w polach tekstowych.
 
-Dodaj te metody obsługi do klasy MainWindow w *MainWindow.XAML.cs*. Jeśli CollectionViewSource dla tabeli Customers ma inną nazwę, należy dostosować nazwę w każdej z tych metod:
+Dodaj te metody obsługi do klasy MainWindow w *MainWindow. XAML. cs*. Jeśli CollectionViewSource dla tabeli Customers ma inną nazwę, należy dostosować nazwę w każdej z tych metod:
 
-[!code-csharp[CommandHandlers#3](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#3)]
+:::code language="csharp" source="../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs" id="Snippet3":::
+
 
 ## <a name="run-the-application"></a>Uruchamianie aplikacji
 

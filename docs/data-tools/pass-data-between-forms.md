@@ -19,12 +19,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9aad1bff0b70f87ff271f6d09cc7f8d34179136d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b22c555b961809d84778df5996455f186efc01f1
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99858569"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216218"
 ---
 # <a name="pass-data-between-forms"></a>Przekazywanie danych między formularzami
 
@@ -168,8 +168,8 @@ Dodaj zapytanie TableAdapter do Form2 w celu załadowania zamówień dla wybrane
 
 2. Dodaj następujący kod do **Form2** po `Form2_Load` metodzie:
 
-     [!code-vb[VbRaddataDisplaying#1](../data-tools/codesnippet/VisualBasic/pass-data-between-forms_1.vb)]
-     [!code-csharp[VbRaddataDisplaying#1](../data-tools/codesnippet/CSharp/pass-data-between-forms_1.cs)]
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDisplaying/VB/Form2.vb" id="Snippet1":::
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDisplaying/CS/Form2.cs" id="Snippet1":::
 
 ## <a name="create-a-method-on-form1-to-pass-data-and-display-form2"></a>Utwórz metodę na formularzu Form1, aby przekazać dane i wyświetlić Form2
 
@@ -183,8 +183,8 @@ Dodaj zapytanie TableAdapter do Form2 w celu załadowania zamówień dla wybrane
 
 4. Zaktualizuj definicję metody, aby pasowała do poniższego przykładu:
 
-     [!code-csharp[VbRaddataDisplaying#2](../data-tools/codesnippet/CSharp/pass-data-between-forms_2.cs)]
-     [!code-vb[VbRaddataDisplaying#2](../data-tools/codesnippet/VisualBasic/pass-data-between-forms_2.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDisplaying/CS/Form1.cs" id="Snippet2":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDisplaying/VB/Form1.vb" id="Snippet2":::
 
 ## <a name="run-the-app"></a>Uruchamianie aplikacji
 

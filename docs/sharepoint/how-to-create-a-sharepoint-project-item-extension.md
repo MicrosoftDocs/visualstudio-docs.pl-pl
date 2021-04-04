@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0f55eb3ba06f2541bf1f4777c24927993444c6b1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8f01d3c15490a19c8cb5071cf7677fcf2b2a5384
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873609"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216621"
 ---
 # <a name="how-to-create-a-sharepoint-project-item-extension"></a>Instrukcje: Tworzenie rozszerzenia elementu projektu SharePoint
   Utwórz rozszerzenie elementu projektu, gdy chcesz dodać funkcję do elementu projektu programu SharePoint, który jest już zainstalowany w programie Visual Studio. Aby uzyskać więcej informacji, zobacz sekcję [rozszerzając elementy projektu programu SharePoint](../sharepoint/extending-sharepoint-project-items.md).
@@ -49,8 +49,8 @@ ms.locfileid: "99873609"
 ## <a name="example"></a>Przykład
  Poniższy przykład kodu demonstruje, jak utworzyć proste rozszerzenie dla elementu projektu odbiorcy zdarzeń. Za każdym razem, gdy użytkownik dodaje element projektu odbiorcy zdarzeń do projektu programu SharePoint, to rozszerzenie zapisuje komunikat do okna **danych wyjściowych** i okna **Lista błędów** .
 
- [!code-csharp[SPExtensibility.ProjectSystemExtension.General#1](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/projectitemextension.cs#1)]
- [!code-vb[SPExtensibility.ProjectSystemExtension.General#1](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/projectitemextension.vb#1)]
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/projectitemextension.cs" id="Snippet1":::
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/projectitemextension.vb" id="Snippet1":::
 
  W tym przykładzie za pomocą usługi projektu programu SharePoint można napisać komunikat do okna **danych wyjściowych** i okna **Lista błędów** . Aby uzyskać więcej informacji, zobacz [Korzystanie z usługi projektu SharePoint](../sharepoint/using-the-sharepoint-project-service.md).
 
