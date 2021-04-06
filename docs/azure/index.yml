@@ -10,12 +10,12 @@ metadata:
   ms.topic: landing-page
   ms.date: 12/05/2019
   ms.author: ghogen
-  ms.openlocfilehash: e2a545d1b9165a158f7d1913668e983386127874
-  ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
-  ms.translationtype: HT
+  ms.openlocfilehash: 7a7740ad4fffd80bc4b96ef7096b3bdd7c7a31bd
+  ms.sourcegitcommit: 2a50f4c1705baeee5c05580f04e3f468550f44e3
+  ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 10/09/2020
-  ms.locfileid: "91860537"
+  ms.lasthandoff: 04/05/2021
+  ms.locfileid: "106381584"
 landingContent:
 - title: Wdrażanie w usłudze Azure App Service
   linkLists:
@@ -77,7 +77,7 @@ landingContent:
       url: azure-cache-for-redis-add-connected-service.md
     - text: Azure CosmosDB
       url: azure-cosmosdb-add-connected-service.md
-    - text: W usłudze Azure Key Vault
+    - text: Azure Key Vault
       url: /azure/key-vault/vs-key-vault-add-connected-service
     - text: Azure SignalR
       url: azure-signalr-add-connected-service.md
@@ -89,6 +89,8 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
+    - text: Tworzenie i wdrażanie w Cloud Services (obsługa rozszerzona)
+      url: cloud-services-extended-support.md
     - text: Tworzenie i konfigurowanie projektów usług w chmurze platformy Azure
       url: vs-azure-tools-azure-project-create.md
     - text: Debugowanie usług w chmurze lokalnie i na platformie Azure

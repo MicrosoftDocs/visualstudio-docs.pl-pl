@@ -40,7 +40,7 @@
   items:
     - name: Praca z projektami usług w chmurze
       items:
-        - name: Użyj Cloud Services (obsługa rozszerzona) (wersja zapoznawcza)
+        - name: Użyj Cloud Services (obsługa rozszerzona)
           href: cloud-services-extended-support.md
         - name: Tworzenie projektu usługi w chmurze platformy Azure
           href: vs-azure-tools-azure-project-create.md
