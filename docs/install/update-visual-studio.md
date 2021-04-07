@@ -2,7 +2,7 @@
 title: Aktualizowanie programu Visual Studio
 titleSuffix: ''
 description: Dowiedz się, jak zaktualizować program Visual Studio do najnowszej wersji, krok po kroku.
-ms.date: 10/12/2020
+ms.date: 04/06/2021
 ms.custom: seodec18
 ms.topic: how-to
 ms.prod: visual-studio-windows
@@ -17,12 +17,12 @@ ms.author: ornella
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d087ed0a43296f77ca934671f63f716bf6ddfae8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 02beb43dede8e38f290ff02febb3b84c53b90f9e
+ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935719"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106547508"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Aktualizowanie programu Visual Studio do najnowszej wersji
 
@@ -287,12 +287,17 @@ Oto kroki tej procedury:
 
 ::: moniker-end
 
+## <a name="administrator-updates"></a>Aktualizacje administratorów 
+
+Jeśli jesteś częścią organizacji, która umożliwia scentralizowane zarządzanie instalacjami oprogramowania, administrator przedsiębiorstwa może spowodować zaktualizowanie programu Visual Studio na maszynie. Aby uzyskać więcej informacji na temat sposobu kontrolowania lub konfigurowania typów aktualizacji, które mogą być akceptowane przez maszynę, zobacz [używanie Configuration Manager do wdrażania aktualizacji programu Visual Studio](../install/applying-administrator-updates.md#using-configuration-manager-to-deploy-visual-studio-updates). 
+
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Zobacz też
 
 * [Instalowanie obok siebie różnych wersji programu Visual Studio](install-visual-studio-versions-side-by-side.md)
 * [Aktualizowanie instalacji sieciowej programu Visual Studio](update-a-network-installation-of-visual-studio.md)
+* [Podręcznik użytkowania programu Visual Studio w przedsiębiorstwie](visual-studio-enterprise-guide.md)
 * [Aktualizowanie programu Visual Studio w obrębie punktu odniesienia obsługi](update-servicing-baseline.md)
 * [Sterowanie aktualizacjami wdrożeń programu Visual Studio opartych na sieci](controlling-updates-to-visual-studio-deployments.md)
 * [Modyfikowanie programu Visual Studio](modify-visual-studio.md)

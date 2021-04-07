@@ -2,7 +2,7 @@
 title: Włączanie aktualizacji administratorów do programu Visual Studio przy użyciu programu Microsoft Endpoint Configuration Manager
 titleSuffix: ''
 description: Dowiedz się więcej o sposobie wdrażania aktualizacji administratorów w programie Visual Studio.
-ms.date: 03/04/2021
+ms.date: 04/06/2021
 ms.custom: ''
 ms.topic: overview
 ms.assetid: 546fbad6-f12b-49cf-bccc-f2e63e051a18
@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ae0bdde60cbf4c4c1eed00847c76ee797809b8db
-ms.sourcegitcommit: 00e16b9afe6b22ba0591e4d0d92690544e6d4357
+ms.openlocfilehash: 9ca14e1f4e84777fd1781249dd54a6646fb2c72a
+ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "105617334"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106547482"
 ---
 # <a name="enabling-administrator-updates-to-visual-studio-with-microsoft-endpoint-configuration-manager"></a>Włączanie aktualizacji administratorów do programu Visual Studio przy użyciu programu Microsoft Endpoint Configuration Manager
 
@@ -63,7 +63,7 @@ Aby umożliwić komputerowi klienckiemu akceptowanie aktualizacji administratora
 
 ### <a name="visual-studio-client-detector-utility"></a>Narzędzie wykrywania klienta programu Visual Studio 
 
-Aby aktualizacje administratorów były prawidłowo odbierane, na komputerach klienckich należy zainstalować narzędzie wykrywania klienta programu Visual Studio. To narzędzie zostało dołączone do wszystkich najnowszych wersji programu Visual Studio.  
+[Narzędzie do wykrywania klienta programu Visual Studio](https://support.microsoft.com/help/5001148) musi być zainstalowane na komputerach klienckich, aby administrator mógł prawidłowo rozpoznać i odebrać aktualizacje. To narzędzie zostało dołączone do wszystkich aktualizacji produktu Visual Studio 2017 i Visual Studio 2019, które zostały wydane od 12 maja 2020, a także dostępne w [katalogu Microsoft Update](https://catalog.update.microsoft.com) w celu samodzielnego zainstalowania go w programie. 
 
 ### <a name="encoding-administrator-intent-on-the-client-machines"></a>Zamiar administratora kodowania na komputerach klienckich 
 
@@ -79,14 +79,14 @@ Klucz **AdministratorUpdatesEnabled**   został zaprojektowany z myślą o z
 
 Poniższe metody umożliwiają przesłanie opinii na temat aktualizacji administratora programu Visual Studio lub raportów dotyczących problemów, które mają wpływ na aktualizacje:
 * Zapoznaj się ze wskazówkami dotyczącymi [rozwiązywania problemów dotyczących instalacji i uaktualniania programu Visual Studio](../install/troubleshooting-installation-issues.md) .
-* Zadawaj pytania do społeczności w obszarze [Konfiguracja wizualizacji Q&forum](https://docs.microsoft.com/answers/topics/vs-setup.html).
+* Zadawaj pytania do społeczności w witrynie [Visual Studio Setup Q&forum](https://docs.microsoft.com/answers/topics/vs-setup.html).
 * Przejdź do [strony pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/vs/support/)i sprawdź, czy Twój problem znajduje się na liście często zadawanych pytań.  Można również wybrać przycisk [link do pomocy technicznej](https://visualstudio.microsoft.com/vs/support/#talktous) , aby uzyskać pomoc dotyczącą rozmowy.
-* [Podaj opinię dotyczącą funkcji lub Zgłoś problem](https://aka.ms/vs/wsus/feedback) do zespołu programu Visual Studio, aby uzyskać dostęp do tego środowiska.
+* [Podaj opinię dotyczącą funkcji lub Zgłoś problem](https://aka.ms/vs/wsus/feedback) do zespołu programu Visual Studio, który dotyczy tego środowiska, włączając aktualizacje administratorów.
 * Skontaktuj się z kierownikiem ds. klientów firmy Microsoft.
 
 ## <a name="see-also"></a>Zobacz też
 * [Stosowanie aktualizacji administratorów](../install/applying-administrator-updates.md)
-* [Przewodnik administratora programu Visual Studio](../install/visual-studio-administrator-guide.md)
+* [Podręcznik administratora programu Visual Studio](../install/visual-studio-administrator-guide.md)
 * [Cykl życia produktu i obsługa techniczna programu Visual Studio](https://docs.microsoft.com/visualstudio/productinfo/vs-servicing-vs)
 * [Informacje o wersji programu Visual Studio 2019](https://docs.microsoft.com/visualstudio/releases/2019/release-notes)
 * [Informacje o wersji programu Visual Studio 2017](https://docs.microsoft.com/visualstudio/releasenotes/vs2017-relnotes)

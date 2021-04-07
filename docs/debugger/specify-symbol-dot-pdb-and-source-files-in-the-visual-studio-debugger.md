@@ -2,7 +2,7 @@
 title: Ustawianie symboli (. pdb) i plików źródłowych w debugerze
 description: Dowiedz się, jak konfigurować symbole i pliki źródłowe w programie Visual Studio oraz zarządzać nimi
 ms.custom: ''
-ms.date: 10/31/2019
+ms.date: 3/31/2021
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Debugger.Native
@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 496994c0f9d546efe8804481230081090309d47e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7ad72d2aa659f3d43bfca99c359d5db94e2d1045
+ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903572"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106083692"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Określanie symboli (. pdb) i plików źródłowych w debugerze programu Visual Studio (C#, C++, Visual Basic, F #)
 
@@ -246,9 +246,10 @@ W takim przypadku debuger wyświetli **nie załadowane symbole** lub **nie zała
 
 - Aby zmienić ścieżkę wyszukiwania, wybierz niewybraną ścieżkę lub wybierz opcję **Nowa ścieżka** lub Nowa ścieżka **VSTS** i wprowadź lub wybierz nową ścieżkę. Wybierz pozycję **Załaduj** , aby ponownie przeszukać ścieżki i załadować plik symboli, jeśli zostanie znaleziony.
 - Aby zastąpić wszelkie opcje symboli i ponowić próbę ścieżki wyszukiwania, wybierz pozycję **Przeglądaj \<executable-name> i Znajdź**. Plik symboli jest ładowany, jeśli zostanie odnaleziony, lub otwiera się **Eksplorator plików** , aby można było ręcznie wybrać plik symboli.
-- Aby otworzyć stronę **Opcje**  >  **debugowania**  >  **symboli** , wybierz pozycję **Zmień ustawienia symboli**.
-- Aby wyświetlić demontaż w nowym oknie jeden raz, wybierz pozycję **Wyświetl demontaż** lub wybierz opcję **okno dialogowe Opcje** , aby ustawić opcję Zawsze wyświetlaj demontaż, gdy pliki źródłowe lub symboliczne nie zostaną znalezione.
+- Aby otworzyć stronę Ustawienia symboli w celu skonfigurowania zachowania, wybierz pozycję **Zmień ustawienia symboli** (lub wybierz opcję **Opcje**  >  **debugowania**  >  **symboli**).
+- Doświadczonych Aby wyświetlić demontaż w nowym oknie jeden raz, wybierz pozycję **Wyświetl demontaż** lub wybierz opcję **okno dialogowe Opcje** , aby ustawić opcję Zawsze wyświetlaj demontaż, gdy pliki źródłowe lub symboliczne nie zostaną znalezione. Aby uzyskać więcej informacji, zobacz [Wyświetlanie kodu demontażu](../debugger/how-to-use-the-disassembly-window.md).
 - Aby wyświetlić przeszukiwane lokalizacje i wyniki, rozwiń pozycję **Informacje o ładowaniu symboli**.
+- W przypadku kodu w języku C# można także wybrać opcję [dekompilowania kodu źródłowego](../debugger/decompilation.md) z **niezaładowanych symboli** lub **nie załadowanych** stron ze źródła.
 
 Jeśli debuger odnajdzie plik *. pdb* po wykonaniu jednej z opcji i może pobrać plik źródłowy przy użyciu informacji w pliku *. pdb* , wyświetla źródło. W przeciwnym razie wyświetlana jest strona **nie załadowana ze źródłem** , która opisuje problem, z linkami do akcji, które mogą rozwiązać problem.
 
@@ -259,6 +260,8 @@ Możesz określić lokalizacje, w których debuger wyszukuje pliki źródłowe, 
 1. Wybierz rozwiązanie w **Eksplorator rozwiązań**, a następnie wybierz ikonę **Właściwości** , naciśnij klawisz **Alt** + **Enter** lub kliknij prawym przyciskiem myszy i wybierz pozycję **Właściwości**.
 
 1. Wybierz pozycję **Debuguj pliki źródłowe**.
+
+   ![Strona debugowania plików źródłowych](../debugger/media/dbg-source-files.png)
 
 1. W obszarze **katalogi zawierające kod źródłowy** wpisz lub Wybierz lokalizacje kodu źródłowego do wyszukania. Użyj ikony **nowy wiersz** , aby dodać więcej lokalizacji, ikon strzałek w **górę** i **w dół** , aby zmienić ich kolejność, lub ikonę **X** , aby je usunąć.
 

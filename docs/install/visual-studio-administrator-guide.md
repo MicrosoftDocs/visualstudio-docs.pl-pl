@@ -2,7 +2,7 @@
 title: Podręcznik administratora programu Visual Studio
 titleSuffix: ''
 description: Dowiedz się więcej o sposobie wdrażania programu Visual Studio w środowisku przedsiębiorstwa.
-ms.date: 07/29/2020
+ms.date: 04/06/2021
 ms.custom: seodec18
 ms.topic: overview
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ecf1dc0332a023a67f2627d852ee56a092830b7e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0b86d8bc6d3533d2ed50eb4e87330a81f1028f13
+ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935615"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106547417"
 ---
 # <a name="visual-studio-administrator-guide"></a>Podręcznik administratora programu Visual Studio
 
@@ -38,53 +38,45 @@ Przed wdrożeniem programu Visual Studio w całej organizacji należy wykonać k
 
 * Upewnij się, że każdy komputer docelowy spełnia [minimalne wymagania dotyczące instalacji](/visualstudio/releases/2019/system-requirements/).
 
-* Zdecyduj na potrzeby obsługi.
-
-  Jeśli firma musi pozostać w zestawie funkcji dłużej, ale nadal chce uzyskać regularne aktualizacje obsługi, należy zaplanować użycie podstawy obsługi. Aby uzyskać więcej informacji, zobacz sekcję ***Opcje pomocy technicznej dla klientów w wersji Enterprise i Professional*** na stronie [cykl życia produktu Visual Studio i obsługa](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers) , a także [Aktualizowanie programu Visual Studio na stronie odniesienia obsługi](update-servicing-baseline.md) .
-
-  Jeśli planujesz zastosować aktualizacje obsługi razem z aktualizacjami funkcji zbiorczych, możesz wybrać najnowsze bity.
-
-* Wybierz model aktualizacji.
-
-  Gdzie poszczególne komputery klienckie mają pobierać aktualizacje? W celu zadecydowania, czy chcesz otrzymywać aktualizacje z Internetu, czy z udziału lokalnego w całej firmie. Następnie, jeśli zdecydujesz się użyć udziału lokalnego, zdecyduj, czy indywidualni użytkownicy mogą zaktualizować swoich klientów, czy chcesz programowo aktualizować klientów.
-
-  Istnieje możliwość aktualizowania układu instalacji sieciowej programu Visual Studio przy użyciu najnowszych aktualizacji produktu, dzięki czemu można go użyć jako punktu instalacji najnowszej aktualizacji programu Visual Studio, a także w celu utrzymania instalacji, które są już wdrożone na stacjach roboczych klienta. Aby uzyskać więcej informacji, zobacz temat [Aktualizowanie instalacji sieciowej programu Visual Studio](../install/update-a-network-installation-of-visual-studio.md).
-
-  W przypadku komputerów, które nie są połączone z Internetem, tworzenie minimalnego układu jest najłatwiejszym i najszybszym sposobem na aktualizację wystąpień programu Visual Studio w trybie offline. Aby uzyskać więcej informacji, zobacz [Aktualizowanie programu Visual Studio przy użyciu minimalnego układu offline](update-minimal-layout.md).
-
-* Decydowanie o [obciążeniach i składnikach](workload-and-component-ids.md?view=vs-2019&preserve-view=true) potrzebnych przez firmę.
-
-* Zdecyduj, czy chcesz użyć [pliku odpowiedzi](automated-installation-with-response-file.md?view=vs-2019&preserve-view=true) (który upraszcza zarządzanie szczegółami w pliku skryptu).
-
-* Zdecyduj, czy chcesz włączyć zasady grupy, a jeśli chcesz skonfigurować program Visual Studio do wyłączania opinii klientów na poszczególnych komputerach.
-
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
 * Upewnij się, że każdy komputer docelowy spełnia [minimalne wymagania dotyczące instalacji](/visualstudio/productinfo/vs2017-system-requirements-vs/).
 
+::: moniker-end
+
 * Zdecyduj na potrzeby obsługi.
 
-  Jeśli firma musi pozostać w zestawie funkcji dłużej, ale nadal chce uzyskać regularne aktualizacje obsługi, należy zaplanować użycie podstawy obsługi. Aby uzyskać więcej informacji, zobacz sekcję ***Obsługa starszych wersji programu Visual Studio*** na stronie [cykl życia produktu Visual Studio, a](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio) także [Aktualizowanie programu Visual Studio na stronie odniesienia obsługi](update-servicing-baseline.md) .
-
-  Jeśli planujesz zastosować aktualizacje obsługi razem z aktualizacjami funkcji zbiorczych, możesz wybrać najnowsze bity.
+  Jeśli firma musi pozostać w zestawie funkcji dłużej, ale nadal chce uzyskać regularne aktualizacje obsługi, należy zaplanować użycie podstawy obsługi. Aby uzyskać więcej informacji, zobacz sekcję ***Opcje pomocy technicznej dla klientów w wersji Enterprise i Professional*** na stronie [cykl życia produktu Visual Studio i obsługa](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers) , a także [Aktualizowanie programu Visual Studio na stronie odniesienia obsługi](update-servicing-baseline.md) .
 
 * Wybierz model aktualizacji.
 
-  Gdzie poszczególne komputery klienckie mają pobierać aktualizacje? W celu zadecydowania, czy chcesz otrzymywać aktualizacje z Internetu, czy z udziału lokalnego w całej firmie. Następnie, jeśli zdecydujesz się użyć udziału lokalnego, zdecyduj, czy indywidualni użytkownicy mogą zaktualizować swoich klientów, czy chcesz programowo aktualizować klientów.
+  Gdzie mają zostać pobrane aktualizacje produktu na poszczególnych komputerach klienckich? W celu określenia, czy klient ma pobierać aktualizacje z Internetu, czy z lokalnego udziału w całej firmie. Następnie, jeśli zdecydujesz się użyć udziału lokalnego, zdecyduj, czy indywidualni użytkownicy mogą zaktualizować swoich klientów, czy chcesz programowo aktualizować klientów. Najlepiej, jeśli te decyzje zostały podjęte przed rozpoczęciem oryginalnej instalacji na komputerze klienckim. Aby uzyskać więcej informacji, zobacz [Tworzenie instalacji sieciowej programu Visual Studio](../install/create-a-network-installation-of-visual-studio.md).
 
   Istnieje możliwość aktualizowania układu instalacji sieciowej programu Visual Studio przy użyciu najnowszych aktualizacji produktu, dzięki czemu można go użyć jako punktu instalacji najnowszej aktualizacji programu Visual Studio, a także w celu utrzymania instalacji, które są już wdrożone na stacjach roboczych klienta. Aby uzyskać więcej informacji, zobacz temat [Aktualizowanie instalacji sieciowej programu Visual Studio](../install/update-a-network-installation-of-visual-studio.md).
 
+  Organizacje korzystające z narzędzi do wdrażania w przedsiębiorstwie mogą korzystać z zalet, że aktualizacje programu Visual Studio są dostępne w wykazie Microsoft Update i Windows Server Update Services. Aby uzyskać więcej informacji, zobacz [Włączanie aktualizacji administratorów](../install/enabling-administrator-updates.md) i [stosowanie aktualizacji administratorów](../install/applying-administrator-updates.md).
+
   W przypadku komputerów, które nie są połączone z Internetem, tworzenie minimalnego układu jest najłatwiejszym i najszybszym sposobem na aktualizację wystąpień programu Visual Studio w trybie offline. Aby uzyskać więcej informacji, zobacz [Aktualizowanie programu Visual Studio przy użyciu minimalnego układu offline](update-minimal-layout.md).
+
+::: moniker range="vs-2019"
+
+* Decydowanie o [obciążeniach i składnikach](workload-and-component-ids.md?view=vs-2019&preserve-view=true) potrzebnych przez firmę.
+
+* Zdecyduj, czy chcesz użyć [pliku odpowiedzi](automated-installation-with-response-file.md?view=vs-2019&preserve-view=true) (który upraszcza zarządzanie szczegółami w pliku skryptu).
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 * Decydowanie o [obciążeniach i składnikach](workload-and-component-ids.md?view=vs-2017&preserve-view=true) potrzebnych przez firmę.
 
 * Zdecyduj, czy chcesz użyć [pliku odpowiedzi](automated-installation-with-response-file.md?view=vs-2017&preserve-view=true) (który upraszcza zarządzanie szczegółami w pliku skryptu).
 
-* Zdecyduj, czy chcesz włączyć zasady grupy, a jeśli chcesz skonfigurować program Visual Studio do wyłączania opinii klientów na poszczególnych komputerach.
-
 ::: moniker-end
+
+* Zdecyduj, czy chcesz włączyć zasady grupy, a jeśli chcesz skonfigurować program Visual Studio do wyłączania opinii klientów na poszczególnych komputerach.
 
 ::: moniker range="vs-2019"
 
@@ -109,17 +101,17 @@ Przed wdrożeniem programu Visual Studio w całej organizacji należy wykonać k
 
 * Obowiązkowe Ustaw zasady grupy. Możesz również [skonfigurować program Visual Studio, aby wyłączyć Opinie klientów](../ide/visual-studio-experience-improvement-program.md) na poszczególnych komputerach.
 
-## <a name="step-3---deploy"></a>Krok 3. wdrażanie
+## <a name="step-3---deploy-updates"></a>Krok 3 — wdrażanie aktualizacji
 
-* Użyj wybranej technologii wdrażania, aby wykonać swój skrypt na docelowych stacjach roboczych deweloperów.
-
-## <a name="step-4---deploy-updates"></a>Krok 4 — wdrażanie aktualizacji
+Użyj wybranej technologii wdrażania, aby wykonać swój skrypt na docelowych stacjach roboczych deweloperów.
 
 * [Odśwież lokalizację sieciową przy użyciu najnowszych aktualizacji](update-a-network-installation-of-visual-studio.md?view=vs-2019&preserve-view=true) programu Visual Studio, uruchamiając polecenie użyte w kroku 1 w regularnych odstępach czasu w celu dodania zaktualizowanych składników.
 
   Program Visual Studio można zaktualizować za pomocą skryptu aktualizacji. Aby to zrobić, użyj [`update`](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019&preserve-view=true) parametru wiersza polecenia.
 
-## <a name="step-5---optional-use-visual-studio-tools"></a>Krok 5 — (opcjonalnie) korzystanie z narzędzi Visual Studio Tools
+  Aktualizacje programu Visual Studio można wdrożyć z poziomu Windows Server Update Services lub wykazu Microsoft Update z narzędziami takimi jak System Center Configuration Manager.  Aby uzyskać więcej informacji, zobacz artykuł dotyczący [stosowania aktualizacji administratora](applying-administrator-updates.md) . 
+
+## <a name="step-4---optional-use-visual-studio-tools-to-verify-installation"></a>Krok 4 — (opcjonalnie) Użyj narzędzi programu Visual Studio do zweryfikowania instalacji
 
 Dostępne są kilka narzędzi, które ułatwiają [wykrywanie zainstalowanych wystąpień programu Visual Studio i zarządzanie nimi](tools-for-managing-visual-studio-instances.md?view=vs-2019&preserve-view=true) na komputerach klienckich.
 
@@ -156,17 +148,17 @@ Rejestr znajduje się w katalogu * Software\Microsoft\VisualStudio\16.0_ {Instan
 
 * Obowiązkowe Ustaw zasady grupy. Możesz również [skonfigurować program Visual Studio, aby wyłączyć Opinie klientów](../ide/visual-studio-experience-improvement-program.md) na poszczególnych komputerach.
 
-## <a name="step-3---deploy"></a>Krok 3. wdrażanie
+## <a name="step-3---deploy-updates"></a>Krok 3 — wdrażanie aktualizacji
 
-* Użyj wybranej technologii wdrażania, aby wykonać swój skrypt na docelowych stacjach roboczych deweloperów.
-
-## <a name="step-4---deploy-updates"></a>Krok 4 — wdrażanie aktualizacji
+Użyj wybranej technologii wdrażania, aby wykonać swój skrypt na docelowych stacjach roboczych deweloperów.
 
 * [Odśwież lokalizację sieciową przy użyciu najnowszych aktualizacji](update-a-network-installation-of-visual-studio.md?view=vs-2017&preserve-view=true) programu Visual Studio, uruchamiając polecenie użyte w kroku 1 w regularnych odstępach czasu w celu dodania zaktualizowanych składników.
 
   Program Visual Studio można zaktualizować za pomocą skryptu aktualizacji. Aby to zrobić, użyj [`update`](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019&preserve-view=true) parametru wiersza polecenia.
 
-## <a name="step-5---optional-use-visual-studio-tools"></a>Krok 5 — (opcjonalnie) korzystanie z narzędzi Visual Studio Tools
+  Aktualizacje programu Visual Studio można wdrożyć z poziomu Windows Server Update Services lub wykazu Microsoft Update z narzędziami takimi jak System Center Configuration Manager. Aby uzyskać więcej informacji, zobacz [stosowanie aktualizacji administratora](applying-administrator-updates.md).
+
+## <a name="step-4---optional-use-visual-studio-tools-to-verify-installation"></a>Krok 4 — (opcjonalnie) Użyj narzędzi programu Visual Studio do zweryfikowania instalacji
 
 Dostępne są kilka narzędzi, które ułatwiają [wykrywanie zainstalowanych wystąpień programu Visual Studio i zarządzanie nimi](tools-for-managing-visual-studio-instances.md?view=vs-2017&preserve-view=true) na komputerach klienckich.
 
@@ -176,7 +168,7 @@ Domyślnie instalacja programu Visual Studio umożliwia dołączanie typów nies
 
 **"PutCustomTypeInBingSearch" DWORD 0**
 
-Rejestr znajduje się w katalogu * Software\Microsoft\VisualStudio\15.0_ {InstanceId} \ Roslyn\Internal\Diagnostics \* gałęzi rejestru prywatnego. Aby uzyskać instrukcje dotyczące sposobu otwierania gałęzi rejestru, zobacz [Edytowanie rejestru dla wystąpienia programu Visual Studio](tools-for-managing-visual-studio-instances.md?view=vs-2017&preserve-view=true#editing-the-registry-for-a-visual-studio-instance).
+Rejestr znajduje się w `Software\Microsoft\VisualStudio\15.0_{InstanceId}\Roslyn\Internal\Diagnostics\` katalogu gałęzi rejestru prywatnego. Aby uzyskać instrukcje dotyczące sposobu otwierania gałęzi rejestru, zobacz [Edytowanie rejestru dla wystąpienia programu Visual Studio](tools-for-managing-visual-studio-instances.md?view=vs-2017&preserve-view=true#editing-the-registry-for-a-visual-studio-instance).
 
 ::: moniker-end
 
@@ -184,6 +176,8 @@ Rejestr znajduje się w katalogu * Software\Microsoft\VisualStudio\15.0_ {Instan
 
 ## <a name="see-also"></a>Zobacz też
 
+* [Włączanie aktualizacji administratorów](enabling-administrator-updates.md)
+* [Stosowanie aktualizacji administratorów](applying-administrator-updates.md)
 * [Przykładowe parametry wiersza polecenia](command-line-parameter-examples.md)
 * [Zainstaluj certyfikaty wymagane do instalacji w trybie offline programu Visual Studio](install-certificates-for-visual-studio-offline.md)
 * [Importowanie lub eksportowanie konfiguracji instalacji](import-export-installation-configurations.md)

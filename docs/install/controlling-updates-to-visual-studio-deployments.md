@@ -1,7 +1,7 @@
 ---
 title: Sterowanie aktualizacjami wdrożeń
 description: Dowiedz się, jak zmienić lokalizację, w której program Visual Studio poszukuje aktualizacji podczas instalacji z sieci.
-ms.date: 03/30/2019
+ms.date: 04/06/2021
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,22 +15,26 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ffa088de8852b0d5884cd4d9db5e65e1c179164b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8360c48e9868f6ed5d81fffc748d050404211228
+ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868546"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106547495"
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>Sterowanie aktualizacjami wdrożeń programu Visual Studio opartych na sieci
 
-Administratorzy przedsiębiorstwa często tworzą układ i obsługują go w sieciowym udziale plików, aby wdrażać je dla użytkowników końcowych.
+Administratorzy przedsiębiorstwa często tworzą układ i obsługują go w sieciowym udziale plików, aby wdrażać je dla użytkowników końcowych. Na tej stronie opisano, jak prawidłowo skonfigurować opcje układu sieciowego. 
 
 ## <a name="controlling-where-visual-studio-looks-for-updates"></a>Kontrolowanie miejsca, w którym program Visual Studio szuka aktualizacji
 
-Domyślnie program Visual Studio nadal wyszukuje aktualizacje w trybie online, nawet jeśli instalacja została wdrożona z udziału sieciowego. Jeśli dostępna jest aktualizacja, użytkownik może ją zainstalować. Zawartość, która nie została znaleziona w układzie offline, jest pobierana z sieci Web.
+**Scenariusz 1: klient pierwotnie zainstalowany z układu, ale jest skonfigurowany do otrzymywania aktualizacji z lokalizacji układu sieciowego lub sieci Web**
 
-Jeśli chcesz mieć bezpośrednią kontrolę nad tym, gdzie program Visual Studio szuka aktualizacji, możesz zmodyfikować lokalizację, w której ma się pojawić. Możesz również kontrolować wersję, do której użytkownicy są aktualizowani. W tym celu wykonaj następujące czynności:
+Domyślnie program Visual Studio kontynuuje wyszukiwanie aktualizacji nawet wtedy, gdy instalacja została pierwotnie wdrożona z udziału sieciowego. Jeśli w sieci Web jest dostępna aktualizacja, użytkownik może ją zainstalować. Mimo że pamięć podręczna układu sieciowego jest najpierw sprawdzana pod kątem wszelkich zaktualizowanych bitów produktu, jeśli nie zostały one tam odnalezione, program Visual Studio wyświetli i pobierze zaktualizowane bity produktu z sieci Web.
+
+**Scenariusz 2: klient zainstalowany pierwotnie i powinien otrzymywać tylko aktualizacje z układu sieciowego**
+
+Jeśli chcesz kontrolować miejsce, w którym klient programu Visual Studio szuka aktualizacji, na przykład jeśli komputer kliencki nie ma dostępu do Internetu i chcesz się upewnić, że tylko i zawsze jest instalowany z układu, można skonfigurować lokalizację, w której instalator klienta szuka zaktualizowanych bitów produktu. Najlepszym rozwiązaniem jest upewnienie się, że to ustawienie jest skonfigurowane poprawnie przed rozpoczęciem instalacji początkowej z układu przez klienta. 
 
 1. Utwórz układ offline:
 
@@ -44,7 +48,7 @@ Jeśli chcesz mieć bezpośrednią kontrolę nad tym, gdzie program Visual Studi
    xcopy /e C:\vsoffline \\server\share\VS
    ```
 
-3. Zmodyfikuj response.jsw pliku w układzie i Zmień `channelUri` wartość tak, aby wskazywała kopię channelManifest.jsna tym formancie administratora.
+3. Zmodyfikuj `response.json` plik w układzie i Zmień `channelUri` wartość tak, aby wskazywała kopię channelManifest.jsna tym formancie administratora.
 
    Upewnij się, że w wartości są wyprowadzane ukośniki odwrotne, jak w poniższym przykładzie:
 
@@ -66,15 +70,20 @@ Gdy administrator przedsiębiorstwa określi czas, aby użytkownicy mogli zaktua
    vs_enterprise.exe --layout \\server\share\VS --lang en-US
    ```
 
-2. Upewnij się, że response.jsw pliku w zaktualizowanym układzie nadal zawiera dostosowania, w tym modyfikacje identyfikator channeluri, w następujący sposób:
+2. Upewnij się, że `response.json` plik w zaktualizowanym układzie nadal zawiera dostosowania, w tym modyfikacje identyfikator channeluri, w następujący sposób:
 
    ```json
    "channelUri":"\\\\server\\share\\VS\\ChannelManifest.json"
    ```
 
-   Istniejące instalacje programu Visual Studio z tego układu odszukają aktualizacje pod adresem `\\server\share\VS\ChannelManifest.json` . Jeśli channelManifest.jsw wersji nowszej niż zainstalowana przez użytkownika, program Visual Studio powiadamia użytkownika, że aktualizacja jest dostępna.
+Istniejące instalacje programu Visual Studio z tego układu odszukają aktualizacje pod adresem `\\server\share\VS\ChannelManifest.json` . Jeśli channelManifest.jsw wersji nowszej niż zainstalowana przez użytkownika, program Visual Studio powiadamia użytkownika, że aktualizacja jest dostępna.
 
-   Nowe instalacje automatycznie instalują zaktualizowaną wersję programu Visual Studio bezpośrednio z układu.
+Każda aktualizacja instalacji zainicjowana z poziomu klienta automatycznie zainstaluje zaktualizowaną wersję programu Visual Studio bezpośrednio z układu.
+
+**Scenariusz 3: klient pierwotnie zainstalowany z sieci Web, ale teraz powinien otrzymywać tylko aktualizacje z układu sieciowego**
+
+W niektórych przypadkach na komputerze klienckim mógł już zostać zainstalowany program Visual Studio z sieci Web, ale teraz administrator chce, aby wszystkie przyszłe aktualizacje były dostarczane z zarządzanego układu. Jedynym obsługiwanym sposobem jest utworzenie układu sieciowego z odpowiednią wersją produktu, a następnie na komputerze klienckim uruchomienie programu inicjującego _z lokalizacji układu_ (np. `\\network\share\vs_enterprise.exe` ). W idealnym przypadku oryginalna instalacja klienta mogłaby nastąpić przy użyciu programu inicjującego z układu sieciowego ze skonfigurowanym prawidłowo identyfikator channeluri, ale uruchomienie zaktualizowanego programu inicjującego z lokalizacji układu sieciowego również będzie działać. Jedna z tych akcji zostałaby osadzona na komputerze klienckim, a połączenie z tą konkretną lokalizacją układu. Jedynym warunkiem, aby ten scenariusz działał prawidłowo, jest to, że "Identyfikator channeluri" w `response.json` pliku układu musi być taki sam jak identyfikator channeluri, który został ustawiony na komputerze klienta po wystąpieniu oryginalnej instalacji. Najprawdopodobniej ta wartość została pierwotnie ustawiona na [kanał wydania](https://aka.ms/vs/16/release/channel)internetowego. 
+
 
 ## <a name="controlling-notifications-in-the-visual-studio-ide"></a>Kontrolowanie powiadomień w środowisku IDE programu Visual Studio
 
@@ -125,8 +134,9 @@ vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterpris
 
 ## <a name="see-also"></a>Zobacz też
 
-* [Instalowanie programu Visual Studio](install-visual-studio.md)
 * [Podręcznik administratora programu Visual Studio](visual-studio-administrator-guide.md)
+* [Włączanie aktualizacji administratorów](enabling-administrator-updates.md)
+* [Stosowanie aktualizacji administratorów](applying-administrator-updates.md)
 * [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Narzędzia do zarządzania wystąpieniami programu Visual Studio](tools-for-managing-visual-studio-instances.md)
 * [Cykl życia produktu Visual Studio i obsługa](/visualstudio/releases/2019/servicing/)

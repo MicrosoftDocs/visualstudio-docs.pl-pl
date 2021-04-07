@@ -1,7 +1,7 @@
 ---
 title: Aktualizowanie instalacji sieciowej
 description: Informacje na temat aktualizowania instalacji programu Visual Studio opartej na sieci za pomocą polecenia--layout
-ms.date: 06/29/2020
+ms.date: 04/06/2021
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6829bac79f747d4f9bacfe5e71f57352fcad0970
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d5ad0231c2dc21acc4a8d954456921dbe2838e39
+ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959158"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106547404"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Aktualizowanie instalacji sieciowej programu Visual Studio
 
@@ -33,17 +33,7 @@ Istnieje możliwość aktualizowania układu instalacji sieciowej programu Visua
 
 Aby odświeżyć udział instalacji sieci, aby zawierał najnowsze aktualizacje, uruchom `--layout` polecenie w celu przyrostowego pobrania zaktualizowanych pakietów.
 
-::: moniker range="vs-2017"
-
-**Nowość w 15,3: w** przypadku wybrania układu częściowego podczas [pierwszego tworzenia układu sieciowego](create-a-network-installation-of-visual-studio.md)te ustawienia są zapisywane. Wszystkie przyszłe polecenia układu używają poprzednich opcji oraz wszelkich nowych opcji, które określisz. Ale jeśli używasz układu starszej wersji, należy używać tych samych parametrów wiersza polecenia, które były używane podczas pierwszego tworzenia układu instalacji sieci (innymi słowy, tych samych obciążeń i języków) w celu zaktualizowania zawartości.
-
-::: moniker-end
-
-::: moniker range="vs-2019"
-
 W przypadku wybrania układu częściowego podczas [pierwszego tworzenia układu sieciowego](create-a-network-installation-of-visual-studio.md)te ustawienia są zapisywane. Wszystkie przyszłe polecenia układu używają poprzednich opcji oraz wszelkich nowych opcji, które określisz.
-
-::: moniker-end
 
 W przypadku hostowania układu w udziale plików należy zaktualizować prywatną kopię układu (na przykład c:\VSLayout), a następnie po pobraniu całej zaktualizowanej zawartości skopiować ją do udziału plików (na przykład \\ server\products\VS). Jeśli tego nie zrobisz, istnieje większa szansa, że każdy użytkownik, który uruchomił Instalatora, podczas aktualizowania układu może nie być w stanie pobrać całej zawartości z układu, ponieważ nie jest jeszcze w pełni aktualizowany.
 
