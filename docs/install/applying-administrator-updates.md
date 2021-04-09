@@ -2,7 +2,7 @@
 title: Stosowanie aktualizacji administratorów do programu Visual Studio przy użyciu programu Microsoft Endpoint Configuration Manager
 titleSuffix: ''
 description: Dowiedz się, jak stosować aktualizacje administratorów do programu Visual Studio.
-ms.date: 04/06/2021
+ms.date: 04/07/2021
 ms.custom: ''
 ms.topic: overview
 ms.assetid: 9a3fdb28-db3d-4970-bc17-7417a985f0fb
@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d316fc35df8c571a9112d7a653737e099df80559
-ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
+ms.openlocfilehash: 4df931ee5eb5eaefdf6d918ff05df65b799bef7e
+ms.sourcegitcommit: be14ae4b95e289f16e9444293bb2ec997d4b4d72
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "106547456"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "107031609"
 ---
 # <a name="applying-administrator-updates-that-use-microsoft-endpoint-configuration-manager"></a>Stosowanie aktualizacji administratorów korzystających z programu Microsoft Endpoint Configuration Manager
 
@@ -83,9 +83,9 @@ Istnieje kilka opcji konfiguracji, których można użyć do dostosowywania aktu
 
 ::: moniker range="vs-2019"
 
-* **Obsługa linii bazowej lepkość**: zgodnie z powyższym opisem, aktualizacje administratorów, które są aktualizacjami funkcji, zastąpią instalację programu Visual Studio nowszą wersję pomocniczą produktu. Czasami jednak zespoły deweloperów, takie jak pozostały, pozostają w określonym stabilnym i bezpiecznym poziomie linii bazowej, i chcą kontrolować, kiedy ich klienci zaawansowani do bardziej aktualnej wersji pomocniczej. W celu skonfigurowania komputera klienckiego w celu pozostawania w linii bazowej obsługi i ignorowania nieżądanych aktualizacji funkcji administratora, należy utworzyć i ustawić wartość danych **BaselineStickinessVersions2019** Reg_SZ na ciąg, który reprezentuje dozwolone linie bazowe, do których można przyciągnąć i pozostawić komputer kliencki.  Ciąg może zawierać sekwencję wersji linii bazowej obsługi, rozdzielonych przecinkami, takimi jak **16.4.0, 16.7.0**. Dowolna liczba wersji linii bazowej obsługi może być uwzględniona w ciągu, a słowo **All**, które jest skrótem dla wszystkich obsługiwanych linii bazowych obsługi, jest również obsługiwane. 
+* **Obsługa linii bazowej lepkość**: zgodnie z powyższym opisem, funkcja administratora aktualizuje instalację programu Visual Studio do nowszej wersji pomocniczej produktu. Czasami jednak użytkownicy programu Visual Studio muszą pozostać na określonym stabilnym i bezpiecznym poziomie linii bazowej, a także chcą kontrolować, kiedy ich komputery zaawansowaną do bardziej aktualnej wersji pomocniczej. W celu skonfigurowania komputera klienckiego do pozostawania w linii bazowej obsługi i ignorowania nieżądanych aktualizacji funkcji administratora, należy utworzyć i ustawić wartość danych **BaselineStickinessVersions2019** Reg_SZ na ciąg, który reprezentuje preferowaną linię bazową, z którą komputer kliencki powinien przyciągnąć i pozostawić. Ciąg może zawierać dopuszczalną wersję bazową obsługi, taką jak **16.7.0**.  
 
-     Jeśli `BaselineStickinessVersions2019` wartość rejestru jest źle sformułowana, wszystkie aktualizacje funkcji zostaną zablokowane na komputerze. Należy również zwrócić uwagę na [obsługiwane przedziały czasu dla aktualizacji funkcji programu Visual Studio](https://docs.microsoft.com/visualstudio/productinfo/vs-servicing-vs). Mimo że jest to technicznie możliwe, aby zastosować aktualizacje funkcji, które osiągnęły koniec ich okresów istnienia, nie zalecamy tego, ponieważ nie są one wspierane i w związku z tym potencjalnie niebezpieczne.
+     Jeśli `BaselineStickinessVersions2019` wartość rejestru jest źle sformułowana, wszystkie aktualizacje funkcji administratora zostaną zablokowane na komputerze. Pamiętaj, aby zwrócić uwagę na [obsługiwane przedziały czasu dla aktualizacji funkcji programu Visual Studio](https://docs.microsoft.com/visualstudio/productinfo/vs-servicing-vs). Bez względu na obecność lub wartość `BaselineStickinessVersions2019` klucza, chociaż jest technicznie możliwe stosowanie aktualizacji funkcji administratora, które osiągnęły koniec ich okresów istnienia, nie zalecamy, ponieważ nie są one obsługiwane i w związku z tym potencjalnie niebezpieczne.
 
 ::: moniker-end
 

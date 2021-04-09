@@ -15,16 +15,62 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: bbad51f6d06c221118ffda01e1c7e93374eea2ff
-ms.sourcegitcommit: 3a855d3513407ea78336386dc3be0b75142614b0
+ms.openlocfilehash: 05af4933569e988b35bea9763a27d8f68aae3627
+ms.sourcegitcommit: be14ae4b95e289f16e9444293bb2ec997d4b4d72
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "103622572"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "107031596"
 ---
 # <a name="history-of-whats-new-in-visual-studio-docs"></a>Historia nowości w dokumentacji programu Visual Studio
 
-Witamy w historii nowości w dokumentacji programu Visual Studio. Ten artykuł zawiera istotne zmiany w dokumentach przed 2021 lutego (od lipca 2020). Aby uzyskać najnowsze informacje o nowościach, zobacz [Visual Studio docs: co nowego w](whats-new-visual-studio-docs.md)dokumentacji.
+Witamy w historii nowości w dokumentacji programu Visual Studio. Ten artykuł zawiera istotne zmiany w dokumentach wcześniejszych niż marzec 2021 (od lipca 2020). Aby uzyskać najnowsze informacje o nowościach, zobacz [Visual Studio docs: co nowego w](whats-new-visual-studio-docs.md)dokumentacji.
+
+## <a name="february-2021"></a>Luty 2021 r.
+
+### <a name="debugger"></a>Debuger
+
+**Zaktualizowane artykuły**
+
+- [Używanie punktów przerwania w debugerze programu Visual Studio](../debugger/using-breakpoints.md) — aktualizacje dla ułatwienia dostępu
+
+### <a name="get-started"></a>Rozpoczęcie pracy
+
+**Zaktualizowane artykuły**
+
+- [Samouczek: Otwieranie projektu z repozytorium w programie Visual Studio 2017](../get-started/tutorial-open-project-from-repo-visual-studio-2017.md) — aktualizacja Zobacz także linki w program VS2017 Otwórz projekt z repozytorium
+- [Samouczek: Otwieranie projektu z repozytorium](../get-started/tutorial-open-project-from-repo-visual-studio-2019.md) — Dodawanie linku do program VS2017 wersji elementu "Otwieranie projektu z repozytorium"
+
+### <a name="ide"></a>IDE
+
+**Zaktualizowane artykuły**
+
+- [Rozwiązywanie problemów i Tworzenie dzienników na potrzeby programu MSBuild](./msbuild-logs.md) — Dodawanie instrukcji dotyczących używania rozszerzenia narzędzi systemu projektu
+
+### <a name="install"></a>Instalowanie
+
+**Zaktualizowane artykuły**
+
+- [Aktualizowanie programu Visual Studio przy użyciu minimalnego układu offline](../install/update-minimal-layout.md)
+  - Dodawanie 2017 przykładu w tabeli opcji
+  - Dodaj przykłady dla program VS2017
+
+### <a name="msbuild"></a>MSBuild
+
+**Nowe artykuły**
+
+- [MSB3644: nie znaleziono zestawów referencyjnych dla elementu "FrameworkVersion"](../msbuild/errors/msb3644.md) — błędy programu MSBuild
+- [MSB8036: nie znaleziono Windows SDK "Version"](../msbuild/errors/msb8036.md) — błędy programu MSBuild
+
+### <a name="test"></a>Testowanie
+
+**Zaktualizowane artykuły**
+
+- [Korzystanie z struktury testów jednostkowych firmy Microsoft dla języka C++ w programie Visual Studio](../test/how-to-use-microsoft-test-framework-for-cpp.md) — odświeżenie i Edytowanie zawartości
+- [Zapisuj testy jednostkowe dla bibliotek DLL języka C++ w programie Visual Studio](../test/how-to-write-unit-tests-for-cpp-dlls.md) — odświeżenie i Edytowanie zawartości
+- [Uruchamianie testów jednostkowych za pomocą Eksploratora testów](../test/run-unit-tests-with-test-explorer.md) — aktualizacje dotyczące ułatwień dostępu
+- [Przewodnik: Tworzenie i uruchamianie testów jednostkowych dla kodu zarządzanego](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) — aktualizacje dla ułatwienia dostępu
+- [Izolowanie testowanego kodu za pomocą](../test/isolating-code-under-test-with-microsoft-fakes.md) elementów sztucznych firmy Microsoft — wyraźnie wspominamy platformę .NET 5,0 w dokumentach sfałszowanych
 
 ## <a name="january-2021"></a>Styczeń 2021 r.
 ### <a name="azure"></a>Azure
