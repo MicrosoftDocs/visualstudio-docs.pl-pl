@@ -17,12 +17,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 46eae980a1dafc8e9b7f95f5d40593e57045cc01
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0e6b984a9f885f137cf387837a242cc1207e45ae
+ms.sourcegitcommit: 52b093e000334f53d87c6165d1418347e4f45dec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971326"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "107221721"
 ---
 # <a name="intellisense-in-visual-studio"></a>Technologia IntelliSense w programie Visual Studio
 
@@ -68,7 +68,7 @@ Po wybraniu elementu członkowskiego z pola **członków listy** pojawiają się
 
 ![Informacje o parametrach w pliku kodu języka C&#35;](../ide/media/vs2015_paraminfo.png)
 
-Szybkie informacje można wywołać ręcznie, wybierając pozycję **Edytuj**  >    >  **szybkie informacje** IntelliSense, naciskając klawisz **Ctrl** + **i** lub wybierając przycisk **szybkie informacje** na pasku narzędzi edytora.
+Szybkie informacje można wywołać ręcznie, wybierając pozycję **Edytuj**  >    >  **szybkie informacje** funkcji IntelliSense, naciskając **klawisze CTRL** + **K**, **Ctrl** + **i** lub wybierając przycisk **szybkie informacje** na pasku narzędzi edytora.
 
 Jeżeli funkcja jest przeciążona, mechanizm IntelliSense może nie wyświetlać informacji dla wszystkich postaci przeciążenia.
 
@@ -93,7 +93,7 @@ Ikony w IntelliSense mogą przekazać dodatkowe znaczenie za pomocą modyfikator
 | ![Wewnętrzny modyfikator ikon](../ide/media/intellisenseInternalModifier.png)       |    Wewnętrzna klasa    |    Dostęp jest ograniczony do bieżącego zestawu.    |
 |![Prywatny modyfikator ikon](../ide/media/intellisensePrivateModifier.png)        |    Klasa prywatna    |    Dostęp jest ograniczony do zawierającej klasy lub typów pochodzących od klasy zawierającej w bieżącym zestawie. (Dostępne od języka C# 7,2).    |
 
-## <a name="troubleshoot-intellisense"></a>Rozwiązywanie problemów z funkcją IntelliSense
+## <a name="troubleshoot-intellisense&quot;></a>Rozwiązywanie problemów z funkcją IntelliSense
 
 W niektórych przypadkach opcje IntelliSense mogą nie działać zgodnie z oczekiwaniami.
 
@@ -104,7 +104,7 @@ W niektórych przypadkach opcje IntelliSense mogą nie działać zgodnie z oczek
 **Kursor znajduje się w literale ciągu.** Nie można użyć funkcji IntelliSense, jeśli kursor znajduje się w cudzysłowie wokół literału ciągu, jak w poniższym przykładzie:
 
 ```cpp
-MessageBox( hWnd, "String literal|")
+MessageBox( hWnd, &quot;String literal|")
 ```
 
 **Opcje automatyczne są wyłączone.** Domyślnie technologia IntelliSense działa automatycznie, ale można ją wyłączyć. Nawet jeśli automatyczne uzupełnianie instrukcji jest wyłączone, można wywołać funkcję mechanizmu IntelliSense.

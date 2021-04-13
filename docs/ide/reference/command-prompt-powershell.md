@@ -1,8 +1,8 @@
 ---
-title: Powłoki wiersza polecenia dla deweloperów
-description: Dowiedz się, jak znaleźć i korzystać z programu Visual Studio wiersz polecenia dla deweloperów, Visual Studio Developer PowerShell i terminala programu Visual Studio, dzięki czemu można łatwiej korzystać z narzędzi .NET i C++.
-ms.date: 03/04/2021
-ms.custom: contperf-fy21q3
+title: Powłoki wiersza polecenia & Monituj dla deweloperów
+description: Zacznij od narzędzi > menu wiersz polecenia. Visual Studio wiersz polecenia dla deweloperów, Developer PowerShell i Terminal umożliwiają łatwiejsze korzystanie z narzędzi .NET i C++.
+ms.date: 04/11/2021
+ms.custom: contperf-fy21q4
 helpviewer_keywords:
 - Visual Studio command prompt
 - command prompt, Visual Studio
@@ -11,27 +11,21 @@ helpviewer_keywords:
 - Visual Studio terminal
 ms.assetid: 94fcf524-9045-4993-bfb2-e2d8bad44219
 no-loc: cmdlet
-ms.openlocfilehash: fb2c99037577528b77ab5c1b0c74bf7af9e73d1b
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.openlocfilehash: 57cbc93f4b6e8cf64dd5149462788e0cde833350
+ms.sourcegitcommit: 52b093e000334f53d87c6165d1418347e4f45dec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104672328"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "107221734"
 ---
-# <a name="developer-command-prompt-and-developer-powershell"></a>wiersz polecenia dla deweloperów i deweloper programu PowerShell
+# <a name="visual-studio-developer-command-prompt-and-developer-powershell"></a>Visual Studio wiersz polecenia dla deweloperów i deweloper programu PowerShell
 
 Program Visual Studio 2019 zawiera dwie powłoki wiersza polecenia dla deweloperów:
 
 - **Visual Studio wiersz polecenia dla deweloperów** — standardowy wiersz polecenia z pewnymi zmiennymi środowiskowymi ustawionymi przy użyciu narzędzi deweloperskich wiersza polecenia. Dostępne od programu Visual Studio 2015.
+
 - **Visual Studio Developer PowerShell** — bardziej wydajny niż wiersz polecenia. Na przykład można przekazać dane wyjściowe jednego polecenia (znanego jako a *cmdlet* ) do innego cmdlet . Ta powłoka ma te same zmienne środowiskowe ustawione jako wiersz polecenia dla deweloperów. Dostępne od programu Visual Studio 2019.
 
-Obie powłoki mają określone zmienne środowiskowe, które umożliwiają łatwiejsze korzystanie z narzędzi deweloperskich wiersza polecenia. Po otwarciu jednej z tych powłok można wprowadzić polecenia dla różnych narzędzi, bez konieczności wiedzieć, gdzie się znajdują. Polecenia, które można uruchomić, obejmują:
-
-- [`MSBuild`](../../msbuild/msbuild-command-line-reference.md), aby skompilować projekt lub rozwiązanie.
-- [.NET Framework narzędzia](/dotnet/framework/tools/index), takie jak [`clrver`](/dotnet/framework/tools/clrver-exe-clr-version-tool) i [`ildasm`](/dotnet/framework/tools/ildasm-exe-il-disassembler) .
-- Narzędzia kompilacji C/C++, takie jak [`CL`](/cpp/build/reference/compiler-command-line-syntax) i [`NMAKE`](/cpp/build/reference/running-nmake) .
-- Dodatkowe narzędzia do kompilacji C/C++, takie jak [`LIB`](/cpp/build/reference/lib-reference) i [`DUMPBIN`](/cpp/build/reference/dumpbin-reference) .
-- [Poleceń interfejsu wiersza polecenia platformy .NET](/dotnet/core/tools/index), takich jak [`dotnet`](/dotnet/core/tools/dotnet) i [`dotnet run`](/dotnet/core/tools/dotnet-run) . (Te polecenia są również dostępne w zwykłym wierszu polecenia).
 
 :::image type="content" source="media/developer-command-prompt-for-vs/command-prompt.png" alt-text="wiersz polecenia dla deweloperów dla programu Visual Studio z pokazywaniem narzędzia Clrver":::
 
@@ -41,7 +35,22 @@ Począwszy od programu Visual Studio 2019 w wersji 16,5, program Visual Studio z
 
 Po otwarciu jednej z powłok dla deweloperów w programie Visual Studio jako osobna aplikacja lub w oknie terminalu zostanie otwarta w katalogu bieżącego rozwiązania (Jeśli masz załadowane rozwiązanie). Takie zachowanie ułatwia uruchamianie poleceń względem rozwiązania lub jego projektów.
 
-## <a name="start-the-shell-from-inside-visual-studio"></a>Uruchom powłokę z programu Visual Studio
+Obie powłoki mają określone zmienne środowiskowe, które umożliwiają łatwiejsze korzystanie z narzędzi deweloperskich wiersza polecenia. Po otwarciu jednej z tych powłok można wprowadzić polecenia dla różnych narzędzi, bez konieczności wiedzieć, gdzie się znajdują. 
+
+|Popularne polecenia|Opis|
+|--|--|
+|[`MSBuild`](../../msbuild/msbuild-command-line-reference.md)|Kompilowanie projektu lub rozwiązania|
+|[`clrver`](/dotnet/framework/tools/clrver-exe-clr-version-tool)| [Narzędzia .NET Framework](/dotnet/framework/tools/index) dla środowiska CLR.|
+|[`ildasm`](/dotnet/framework/tools/ildasm-exe-il-disassembler)|[Narzędzie .NET Framework](/dotnet/framework/tools/index) dla dezasembler.|
+|[`dotnet`](/dotnet/core/tools/dotnet)|[Polecenie interfejsu wiersza polecenia platformy .NET](/dotnet/core/tools/index)|
+|[`dotnet run`](/dotnet/core/tools/dotnet-run)|[Polecenie interfejsu wiersza polecenia platformy .NET](/dotnet/core/tools/index)|
+|[`CL`](/cpp/build/reference/compiler-command-line-syntax)|Narzędzie kompilacji C/C++|
+|[`NMAKE`](/cpp/build/reference/running-nmake)|Narzędzie kompilacji C/C++|
+|[`LIB`](/cpp/build/reference/lib-reference)| Narzędzie kompilacji C/C++|
+|[`DUMPBIN`](/cpp/build/reference/dumpbin-reference)| Narzędzie kompilacji C/C++|
+
+
+## <a name="start-in-visual-studio"></a>Rozpocznij w programie Visual Studio
 
 Wykonaj następujące kroki, aby otworzyć wiersz polecenia dla deweloperów lub deweloper programu PowerShell z poziomu programu Visual Studio:
 
@@ -51,9 +60,9 @@ Wykonaj następujące kroki, aby otworzyć wiersz polecenia dla deweloperów lub
 
    ![Element menu wiersza polecenia w programie Visual Studio](./media/developer-command-prompt-for-vs/vs-menu.png)
 
-## <a name="use-the-windows-start-menu"></a>Korzystanie z menu Start systemu Windows
+## <a name="start-from-windows-menu"></a>Uruchom z menu systemu Windows
 
-W zależności od wersji programu Visual Studio i wszelkich dodatkowych zestawów SDK i obciążeń, które zostały zainstalowane, może być wiele wierszy poleceń. Jeśli poniższe kroki nie działają, możesz spróbować [ręcznie zlokalizować pliki na maszynie](#manually-locate-the-file) lub [uruchomić powłokę z poziomu programu Visual Studio](#start-the-shell-from-inside-visual-studio).
+Innym sposobem uruchamiania powłoki jest z menu Start. W zależności od wersji programu Visual Studio i wszelkich dodatkowych zestawów SDK i obciążeń, które zostały zainstalowane, może być wiele wierszy poleceń. 
 
 ### <a name="windows-10"></a>Windows 10
 
@@ -85,7 +94,7 @@ W zależności od wersji programu Visual Studio i wszelkich dodatkowych zestawó
 
 Jeśli zainstalowano inne zestawy SDK, takie jak [zestaw SDK systemu Windows 10](https://developer.microsoft.com/windows/downloads/windows-10-sdk) lub [poprzednie wersje](https://developer.microsoft.com/windows/downloads/sdk-archive), mogą pojawić się dodatkowe polecenia. W dokumentacji poszczególnych narzędzi można sprawdzić, której wersji wiersza polecenia należy użyć.
 
-## <a name="manually-locate-the-file"></a>Ręczne lokalizowanie pliku
+## <a name="start-from-file-browser"></a>Rozpocznij od przeglądarki plików 
 
 Zazwyczaj skróty zainstalowanych powłok są umieszczane w folderze **menu Start** dla programu Visual Studio, na przykład w programie *%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2019 \ Visual Studio Tools*. Jeśli jednak wyszukiwanie w wierszu polecenia nie daje oczekiwanych wyników, możesz spróbować ręcznie zlokalizować pliki na komputerze.
 
