@@ -7,17 +7,17 @@ ms.assetid: 16ac2422-e720-4e3a-b511-bc2a54201a86
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 04168d6f648a9219c40f81aa042cbc778429ca0e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b2bfba4f3035023a93588d4bc4c6e0f378f6b4eb
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951007"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107296576"
 ---
 # <a name="step-1-create-a-windows-forms-app-project"></a>Krok 1. Tworzenie projektu aplikacji Windows Forms
 
@@ -83,7 +83,7 @@ Program Visual Studio tworzy rozwiązanie dla aplikacji. Rozwiązanie działa ja
 
     ::: moniker range="vs-2017"
 
-    * **Okno główne** W tym oknie można wykonywać większość prac, takich jak praca z formularzami i edytowanie kodu. Okno wyświetla formularz w **Edytorze formularzy**. W górnej części okna zostanie wyświetlona karta **Strona początkowa** i karta **Form1.cs [Design]** . (W Visual Basic Nazwa karty zostanie zakończona z *. vb* zamiast *. cs*).
+    * **Okno główne** W tym oknie można wykonywać większość prac, takich jak praca z formularzami i edytowanie kodu. Okno wyświetla formularz w **Edytorze formularzy**. W górnej części okna zostanie wyświetlona karta **Strona początkowa** i **formularz Form1. cs [Design]** . (W Visual Basic Nazwa karty zostanie zakończona z *. vb* zamiast *. cs*).
 
     ::: moniker-end
 

@@ -7,17 +7,17 @@ ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.assetid: f44e50be-a5f5-4d77-9cff-dd52374c3f74
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7597b97a93b2e602a3166eb60b4055082ed7675f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 75019a9f292a07c1dffe6cce5118ef6502014ce6
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951020"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107296602"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Krok 1. Tworzenie projektu i dodawanie etykiet do formularza
 
@@ -36,7 +36,7 @@ Pierwszym etapem tworzenia tego quizu jest utworzenie projektu i dodanie etykiet
 
 1. Na liście szablonów wybierz szablon **aplikacja Windows Forms (.NET Framework)** , nadaj mu nazwę *MathQuiz*, a następnie wybierz przycisk **OK** .
 
-    Zostanie wyświetlony formularz o nazwie *Form1.cs* lub *Form1. vb* , w zależności od wybranego języka programowania.
+    Zostanie wyświetlony formularz o nazwie *Form1. cs* lub *Form1. vb* , w zależności od wybranego języka programowania.
 
    > [!NOTE]
    > Jeśli szablon **aplikacji Windows Forms (.NET Framework)** nie jest widoczny, użyj Instalator programu Visual Studio, aby zainstalować obciążenie **programistyczne dla programu .NET Desktop** .<br/><br/>![Obciążenie Programowanie aplikacji klasycznych platformy .NET w Instalator programu Visual Studio](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Aby uzyskać więcej informacji, zobacz stronę [Instalowanie programu Visual Studio](../install/install-visual-studio.md) .
@@ -72,7 +72,7 @@ Pierwszym etapem tworzenia tego quizu jest utworzenie projektu i dodanie etykiet
 
 ## <a name="to-set-properties-for-a-form"></a>Aby ustawić właściwości formularza
 
-1. W programie Visual Studio wybierz formularz ( *Form1.cs* lub *Form1. vb*, w zależności od języka programowania), a następnie zmień jego właściwość **Text** na **Quiz matematyczny**.
+1. W programie Visual Studio wybierz formularz ( *Form1. cs* lub *Form1. vb*, w zależności od języka programowania), a następnie zmień jego właściwość **Text** na **Quiz matematyczny**.
 
      Okno **Właściwości** zawiera właściwości dla formularza.
 

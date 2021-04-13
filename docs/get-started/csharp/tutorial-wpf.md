@@ -9,17 +9,17 @@ ms.topic: tutorial
 dev_langs:
 - CSharp
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1f3232ad0a8b7cc34abbe6d49c05944c066226da
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 419fa05ae510f3dc22ce82c3805f9f54b4e53b27
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101682885"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107295575"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Samouczek: tworzenie prostej aplikacji za pomocą języka C\#
 
@@ -78,7 +78,7 @@ Podczas tworzenia aplikacji w programie Visual Studio, należy najpierw utworzy�
 
 1. W oknie uruchamiania wybierz pozycję **Utwórz nowy projekt**.
 
-   ![Wyświetl okno "Tworzenie nowego projektu"](../../get-started/media/vs-2019/start-window-create-new-project.png "Zrzut ekranu przedstawiający okno "Tworzenie nowego projektu"")
+   ![Wyświetl okno "Tworzenie nowego projektu"](../../get-started/media/vs-2019/start-window-create-new-project.png "Zrzut ekranu przedstawiający okno &quot;Tworzenie nowego projektu&quot;")
 
 1. Na ekranie **Tworzenie nowego projektu** Wyszukaj ciąg "WPF", wybierz pozycję **Aplikacja WPF**, a następnie wybierz przycisk **dalej**.
 
@@ -228,11 +228,11 @@ Ostatnim elementem interfejsu użytkownika, który dodasz, jest kontrolka [przyc
 
 ### <a name="add-code-to-the-display-button"></a>Dodawanie kodu do przycisku wyświetlania
 
-Gdy aplikacja jest uruchomiona, okno komunikatu pojawia się, gdy użytkownik wybierze przycisk radiowy, a następnie wybierze przycisk **wyświetlania** . Jedno okno komunikatu pojawi się, żeby wyświetlić „Hello”, a inne pojawi się, aby wyświetlić „Goodbye”. Aby utworzyć to zachowanie, dodasz kod do `Button_Click` zdarzenia w *Greetings.XAML.cs*.
+Gdy aplikacja jest uruchomiona, okno komunikatu pojawia się, gdy użytkownik wybierze przycisk radiowy, a następnie wybierze przycisk **wyświetlania** . Jedno okno komunikatu pojawi się, żeby wyświetlić „Hello”, a inne pojawi się, aby wyświetlić „Goodbye”. Aby utworzyć to zachowanie, dodasz kod do `Button_Click` zdarzenia w *Greetings. XAML. cs*.
 
 1. Na powierzchni projektowej kliknij dwukrotnie przycisk **Wyświetl** .
 
-     *Greetings.XAML.cs* zostanie otwarty z kursorem w `Button_Click` zdarzeniu.
+     *Greetings. XAML. cs* zostanie otwarty z kursorem w `Button_Click` zdarzeniu.
 
     ```csharp
     private void Button_Click(object sender, RoutedEventArgs e)
@@ -293,13 +293,13 @@ Ponownie uruchom debuger (naciśnij klawisz **F5**). Powinny pojawić się okno 
 
 Teraz Zamknij okno aplikacji, aby zatrzymać debugowanie.
 
-### <a name="debug-with-breakpoints"></a>Debuguj z punktami przerwania
+### <a name="debug-with-breakpoints&quot;></a>Debuguj z punktami przerwania
 
 Możesz przetestować kod podczas debugowania przez dodanie niektórych punktów przerwania. Możesz dodać punkty przerwania, wybierając pozycję **Debuguj**  >  **punkt przerwania**, klikając na lewym marginesie edytora obok wiersza kodu, w którym ma nastąpić przerwanie lub naciskając klawisz **F9**.
 
-#### <a name="add-breakpoints"></a>Dodawanie punktów przerwania
+#### <a name=&quot;add-breakpoints&quot;></a>Dodawanie punktów przerwania
 
-1. Otwórz *Greetings.XAML.cs* i wybierz następujący wiersz: `MessageBox.Show("Hello.")`
+1. Otwórz *Greetings. XAML. cs* i wybierz następujący wiersz: `MessageBox.Show(&quot;Hello.")`
 
 1. Dodaj punkt przerwania z menu, wybierając **Debuguj**, a następnie **Przełącz punkt przerwania**.
 

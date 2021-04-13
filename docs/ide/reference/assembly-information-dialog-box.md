@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d1ed2fd5fe9e49ab947752f84accb326499392fb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0a8f4d5612fe8ceaa4470f441133767178b119cc
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836425"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107295445"
 ---
 # <a name="assembly-information-dialog-box"></a>Informacje o zestawie — Okno dialogowe
 
@@ -65,7 +65,7 @@ Określa kulturę obsługiwaną przez zestaw. Odnosi się do <xref:System.Resour
 Określa, czy typy w zestawie będą dostępne dla modelu COM. Odnosi się do <xref:System.Runtime.InteropServices.ComVisibleAttribute> .
 
 > [!NOTE]
-> Aby uzyskać więcej informacji na temat ustawiania tych właściwości podczas generowania pakietu NuGet w bibliotece klas .NET Framework, zobacz [Konfigurowanie właściwości projektu dla pakietu](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework#configure-project-properties-for-the-package).
+> Aby uzyskać więcej informacji na temat ustawiania tych właściwości podczas generowania pakietu NuGet w bibliotece klas .NET Framework, zobacz [Konfigurowanie właściwości projektu dla pakietu](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework#configure-project-properties-for-the-package). Aby uzyskać więcej informacji na temat licencjonowania i wyrażeń związanych z pakietem NuGet, zobacz [licenses.NuGet.org](/nuget/nuget-org/licenses.nuget.org/).
 
 ## <a name="see-also"></a>Zobacz też
 

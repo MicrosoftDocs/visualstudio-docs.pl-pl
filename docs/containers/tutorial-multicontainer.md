@@ -4,15 +4,15 @@ author: ghogen
 description: Dowiedz się, jak używać wielu kontenerów z Docker Compose
 ms.custom: SEO-VS-2020
 ms.author: ghogen
-ms.date: 01/10/2020
+ms.date: 03/15/2021
 ms.technology: vs-azure
 ms.topic: tutorial
-ms.openlocfilehash: eca1d66ddef1a0f89a3971a4867254549118e2a1
-ms.sourcegitcommit: 99b66b0f4ced46ead0b2506a103f974f40cc0076
+ms.openlocfilehash: 412156894658cdb2160574e77ea052e4b194d386
+ms.sourcegitcommit: c875360278312457f4d2212f0811466b4def108d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103295721"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107315982"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Samouczek: Tworzenie aplikacji z obsługą kontenera przy użyciu Docker Compose
 
@@ -67,7 +67,7 @@ Dodaj projekt do tego samego rozwiązania i Wywołaj go *MyWebAPI*. Wybierz pozy
 
 ## <a name="add-code-to-call-the-web-api"></a>Dodawanie kodu do wywoływania interfejsu API sieci Web
 
-1. W `WebFrontEnd` projekcie Otwórz plik *index.cshtml.cs* i Zastąp `OnGet` metodę poniższym kodem.
+1. W `WebFrontEnd` projekcie Otwórz plik *index. cshtml. cs* i Zastąp `OnGet` metodę poniższym kodem.
 
    ```csharp
     public async Task OnGet()
@@ -118,7 +118,7 @@ Dodaj projekt do tego samego rozwiązania i Wywołaj go *MyWebAPI*. Wybierz pozy
         }
       ```
 
-    W przypadku platformy .NET Core 3,1 nie jest to potrzebne, ponieważ można użyć interfejsu API WeatherForecast, który już istnieje. Należy jednak dodać komentarz do wywołania <xref:Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions.UseHttpsRedirection*> `Configure` metody w *Startup.cs*, ponieważ ten kod używa protokołu HTTP, a nie https, aby wywołać internetowy interfejs API.
+    W przypadku platformy .NET Core 3,1 nie jest to potrzebne, ponieważ można użyć interfejsu API WeatherForecast, który już istnieje. Należy jednak dodać komentarz do wywołania <xref:Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions.UseHttpsRedirection*> `Configure` metody w *Start. cs*, ponieważ ten kod używa protokołu HTTP, a nie https, aby wywołać internetowy interfejs API.
 
     ```csharp
                 //app.UseHttpsRedirection();

@@ -6,20 +6,20 @@ ms.date: 11/06/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: quickstart
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 68ccba785643b8f4f29143e5e72dc65cfedcd512
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: d4f36ac4199d082b6ab0eae3154307bd8f4f7487
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101684050"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107296940"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Szybki Start: Tworzenie ASP.NET Core pierwszej aplikacji sieci Web za pomocą programu Visual Studio
 
@@ -142,9 +142,9 @@ Wkrótce po program Visual Studio otworzy plik projektu.
 
    ![Zmiana domyślnego kodu HTML dla obszaru informacji dodatkowych w edytorze programu Visual Studio](../ide/media/csharp-aspnet-about-cshtml-page-hello-world.png)
 
-1. W **Eksplorator rozwiązań** rozwiń pozycję **about. cshtml**, a następnie wybierz pozycję **about.cshtml.cs**. (Ten plik odpowiada również stronie **informacje** w przeglądarce internetowej).
+1. W **Eksplorator rozwiązań** rozwiń pozycję **about. cshtml**, a następnie wybierz pozycję **about. cshtml. cs**. (Ten plik odpowiada również stronie **informacje** w przeglądarce internetowej).
 
-   ![Zrzut ekranu programu Visual Studio Eksplorator rozwiązań pokazujący pliki w projekcie HelloWorld. About. cshtml jest rozwinięta, a wybrano About.cshtml.cs.](../ide/media/csharp-aspnet-about-page-code-file.png)
+   ![Zrzut ekranu programu Visual Studio Eksplorator rozwiązań pokazujący pliki w projekcie HelloWorld. About. cshtml jest rozwinięty i wybrano about. cshtml. cs.](../ide/media/csharp-aspnet-about-page-code-file.png)
 
    W edytorze zobaczysz kod C#, który zawiera tekst dla obszaru "Opis aplikacji" na stronie **informacje** .
 

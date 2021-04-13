@@ -3,19 +3,19 @@ title: Gdy ładunki pakietów zmieniają się po wydaniu
 description: Podczas tworzenia układu należy dowiedzieć się, jak ustalić, czy ładunki pakietów uległy zmianie po wydaniu wersji.
 ms.date: 05/22/2019
 ms.topic: how-to
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: bd0013df051def28c57552c0aeb733888d55e9b6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e773ddf85df1d7f71b1ed929b8f942a5f3b36421
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905551"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107295300"
 ---
 # <a name="package-payload-changes"></a>Zmiany ładunku pakietu
 

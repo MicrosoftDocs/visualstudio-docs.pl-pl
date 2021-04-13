@@ -8,20 +8,20 @@ ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: CSharp
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: b9c7f41fd2977ca00294eabd941bc371d8a3220e
-ms.sourcegitcommit: 99b66b0f4ced46ead0b2506a103f974f40cc0076
+ms.openlocfilehash: a86b7273a123a5c9ed0519caf2166127c090d16f
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103295796"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107296927"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Samouczek: wprowadzenie do języka C# i ASP.NET Core w programie Visual Studio
 
@@ -162,13 +162,13 @@ To rozwiązanie jest zgodne ze wzorcem projektowania **strony Razor** . Jest to 
 
      ![Zrzut ekranu przedstawiający pierwsze dziesięć wierszy pliku about. cshtml w edytorze kodu programu Visual Studio.](media/csharp-aspnet-razor-aboutcshtml-mycoreapp-code.png)
 
- 1. Wybierz plik **about.cshtml.cs** .
+ 1. Wybierz plik **about. cshtml. cs** .
 
-     ![Wybierz plik About.cshtml.cs w edytorze kodu programu Visual Studio](media/csharp-aspnet-razor-solution-explorer-aboutcshtmlcs.png)
+     ![Wybierz plik about. cshtml. cs w edytorze kodu programu Visual Studio](media/csharp-aspnet-razor-solution-explorer-aboutcshtmlcs.png)
 
- 1. Wyświetl plik **about.cshtml.cs** w edytorze kodu.
+ 1. Wyświetl plik **about. cshtml. cs** w edytorze kodu.
 
-     ![Zrzut ekranu przedstawiający pierwsze 18 wierszy pliku About.cshtml.cs w edytorze kodu programu Visual Studio. ](media/csharp-aspnet-razor-aboutcshtmlcs-mycoreapp-code.png)
+     ![Zrzut ekranu przedstawiający pierwsze 18 wierszy pliku o. cshtml. cs w edytorze kodu programu Visual Studio. ](media/csharp-aspnet-razor-aboutcshtmlcs-mycoreapp-code.png)
 
  1. Projekt zawiera folder **wwwroot** , który jest katalogiem głównym witryny sieci Web. Rozwiń folder, aby wyświetlić jego zawartość.
 
@@ -209,11 +209,11 @@ To rozwiązanie jest zgodne ze wzorcem projektowania **strony Razor** . Jest to 
 
     ![Zmień tekst w pliku about. cshtml](media/csharp-aspnet-razor-aboutcshtml-mycoreapp-code-changed.png)
 
-1. Wybierz **about.cshtml.cs**. Następnie wyczyść `using` dyrektywy w górnej części pliku, używając następującego skrótu:
+1. Wybierz pozycję **about. cshtml. cs**. Następnie wyczyść `using` dyrektywy w górnej części pliku, używając następującego skrótu:
 
    Wybierz dowolną z szarych `using` dyrektyw, a żarówka [Quick Actions](../../ide/quick-actions.md) zostanie wyświetlona tuż pod karetką lub na lewym marginesie. Wybierz żarówkę, a następnie wybierz **Usuń niepotrzebne użycie**.
 
-   ![Usuń niepotrzebne użycie w pliku About.cshtml.cs](media/csharp-aspnet-razor-remove-unnecessary-usings.png)
+   ![Usuń niepotrzebne użycie w pliku about. cshtml. cs](media/csharp-aspnet-razor-remove-unnecessary-usings.png)
 
      Program Visual Studio usuwa niepotrzebne `using` dyrektywy z pliku.
 
@@ -265,11 +265,11 @@ To rozwiązanie jest zgodne ze wzorcem projektowania **strony Razor** . Jest to 
 
      ![Wyświetlanie pliku index. cshtml w edytorze kodu programu Visual Studio](media/vs-2019/csharp-aspnet-index-cshtml.png)
 
- 1. Każdy plik. cshtml ma skojarzony plik kodu. Aby otworzyć plik kodu w edytorze, rozwiń węzeł **index. cshtml** w Eksplorator rozwiązań i wybierz plik **index.cshtml.cs** .
+ 1. Każdy plik. cshtml ma skojarzony plik kodu. Aby otworzyć plik kodu w edytorze, rozwiń węzeł **index. cshtml** w Eksplorator rozwiązań i wybierz plik **index. cshtml. cs** .
 
-     ![Wybierz plik Index.cshtml.cs w edytorze kodu programu Visual Studio](media/vs-2019/csharp-aspnet-choose-index-cshtml.png)
+     ![Wybieranie pliku index. cshtml. cs w edytorze kodu programu Visual Studio](media/vs-2019/csharp-aspnet-choose-index-cshtml.png)
 
- 1. Wyświetl plik **index.cshtml.cs** w edytorze kodu.
+ 1. Wyświetl plik **index. cshtml. cs** w edytorze kodu.
 
      ![Wyświetlanie pliku about. cshtml w edytorze kodu programu Visual Studio](media/vs-2019/csharp-aspnet-index-cshtml-editing.png)
 
@@ -308,11 +308,11 @@ To rozwiązanie jest zgodne ze wzorcem projektowania **strony Razor** . Jest to 
 
     ![Zmień tekst w pliku privacy. cshtml](media/vs-2019/csharp-aspnet-privacy-cshtml-code-changed.png)
 
-1. Teraz Wprowadźmy zmianę kodu. Wybierz **privacy.cshtml.cs**. Następnie wyczyść `using` dyrektywy w górnej części pliku, używając następującego skrótu:
+1. Teraz Wprowadźmy zmianę kodu. Wybierz pozycję **privacy. cshtml. cs**. Następnie wyczyść `using` dyrektywy w górnej części pliku, używając następującego skrótu:
 
    Wybierz dowolną z szarych `using` dyrektyw, a żarówka [Quick Actions](../../ide/quick-actions.md) zostanie wyświetlona tuż pod karetką lub na lewym marginesie. Wybierz żarówkę, a następnie umieść wskaźnik myszy nad **Usuń niepotrzebne użycie**.
 
-   ![Usuń niepotrzebne użycie w pliku Privacy.cshtml.cs](media/vs-2019/csharp-aspnet-remove-unnecessary-usings.png)
+   ![Usuń niepotrzebne użycie w pliku privacy. cshtml. cs](media/vs-2019/csharp-aspnet-remove-unnecessary-usings.png)
 
    Teraz wybierz pozycję **Podgląd zmian** , aby zobaczyć, co zmieni się.
 

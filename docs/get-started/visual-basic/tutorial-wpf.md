@@ -9,17 +9,17 @@ ms.topic: tutorial
 dev_langs:
 - VB
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 00b8488682674b2531bac561e9f2536e616800fb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f337551c16aa63b606c10492bab9956a92cbe141
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944371"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107295432"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Samouczek: tworzenie prostej aplikacji z Visual Basic
 
@@ -198,7 +198,7 @@ Ostatnim elementem interfejsu użytkownika, który dodasz, jest kontrolka [przyc
 
 ### <a name="add-code-to-the-display-button"></a>Dodawanie kodu do przycisku wyświetlania
 
-Gdy aplikacja jest uruchomiona, okno komunikatu pojawia się, gdy użytkownik wybierze przycisk radiowy, a następnie wybierze przycisk **wyświetlania** . Jedno okno komunikatu pojawi się, żeby wyświetlić „Hello”, a inne pojawi się, aby wyświetlić „Goodbye”. Aby utworzyć to zachowanie, dodasz kod do `Button_Click` zdarzenia w *Greetings. XAML. vb* lub *Greetings.XAML.cs*.
+Gdy aplikacja jest uruchomiona, okno komunikatu pojawia się, gdy użytkownik wybierze przycisk radiowy, a następnie wybierze przycisk **wyświetlania** . Jedno okno komunikatu pojawi się, żeby wyświetlić „Hello”, a inne pojawi się, aby wyświetlić „Goodbye”. Aby utworzyć to zachowanie, dodasz kod do `Button_Click` zdarzenia w *Greetings. XAML. vb* lub *Greetings. XAML. cs*.
 
 1. Na powierzchni projektowej kliknij dwukrotnie przycisk **Wyświetl** .
 
@@ -259,13 +259,13 @@ Ponownie uruchom debuger (naciśnij klawisz **F5**). Powinny pojawić się okno 
 
  Teraz Zamknij okno aplikacji, aby zatrzymać debugowanie.
 
-### <a name="debug-with-breakpoints"></a>Debuguj z punktami przerwania
+### <a name="debug-with-breakpoints&quot;></a>Debuguj z punktami przerwania
 
 Możesz przetestować kod podczas debugowania przez dodanie niektórych punktów przerwania. Możesz dodać punkty przerwania, wybierając pozycję **Debuguj**  >  **punkt przerwania**, klikając na lewym marginesie edytora obok wiersza kodu, w którym ma nastąpić przerwanie lub naciskając klawisz **F9**.
 
-#### <a name="add-breakpoints"></a>Dodawanie punktów przerwania
+#### <a name=&quot;add-breakpoints&quot;></a>Dodawanie punktów przerwania
 
-1. Otwórz *Greetings. XAML. vb* i wybierz następujący wiersz: `MessageBox.Show("Hello.")`
+1. Otwórz *Greetings. XAML. vb* i wybierz następujący wiersz: `MessageBox.Show(&quot;Hello.")`
 
 2. Dodaj punkt przerwania, naciskając klawisz **F9** lub z menu, wybierając **Debuguj**, a następnie **Przełącz punkt przerwania**.
 
@@ -283,13 +283,13 @@ Możesz przetestować kod podczas debugowania przez dodanie niektórych punktów
 
 6. Na pasku menu wybierz polecenie **Debuguj**  >  **krok wychodzący**.
 
-     Aplikacja wznawia wykonywanie i pojawia się okno komunikatu z wyrazem "Hello".
+     Aplikacja wznawia wykonywanie i pojawia się okno komunikatu z wyrazem "Hello&quot;.
 
 7. Wybierz przycisk **OK** w oknie komunikatu, aby je zamknąć.
 
 8. W oknie **Greetings** wybierz przycisk radiowy **pożegnanie** , a następnie wybierz przycisk **Wyświetl** .
 
-     Wiersz `MessageBox.Show("Goodbye.")` jest wyróżniony kolorem żółtym.
+     Wiersz `MessageBox.Show(&quot;Goodbye.")` jest wyróżniony kolorem żółtym.
 
 9. Wybierz klawisz **F5** , aby kontynuować debugowanie. Gdy pojawi się okno komunikatu, wybierz przycisk **OK** w oknie komunikatu, aby je zamknąć.
 

@@ -3,15 +3,15 @@ title: Omówienie kompilacji i debugowania narzędzi kontenera programu Visual S
 author: ghogen
 description: Przegląd procesu kompilowania i debugowania narzędzi kontenera
 ms.author: ghogen
-ms.date: 11/20/2019
+ms.date: 03/15/2021
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 07ecc9a171cf6c0ca254ddbf284f116545ddd0f0
-ms.sourcegitcommit: 20f546a0b13b56e7b0da21abab291d42a5ba5928
+ms.openlocfilehash: 6b860abeab0745ebae580e3020c94e446f2441c8
+ms.sourcegitcommit: c875360278312457f4d2212f0811466b4def108d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104884086"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107315956"
 ---
 # <a name="how-visual-studio-builds-containerized-apps"></a>Jak program Visual Studio umożliwia tworzenie aplikacji konteneryzowanych
 
@@ -26,7 +26,7 @@ Funkcja kompilacji potokach wieloetapowych ułatwia proces kompilowania kontener
 Kompilacja potokach wieloetapowych umożliwia tworzenie obrazów kontenerów w etapach, które generują obrazy pośrednie. Przykładowo Rozważmy typowe pliku dockerfile wygenerowane przez program Visual Studio — pierwszy etap to `base` :
 
 ```
-FROM mcr.microsoft.com/dotnet/core/aspnet:2.2-stretch-slim AS base
+FROM mcr.microsoft.com/dotnet/aspnet:3.1-buster-slim AS base
 WORKDIR /app
 EXPOSE 80
 EXPOSE 443
@@ -37,24 +37,24 @@ Linie w pliku dockerfile zaczynają się od obrazu Debian z Microsoft Container 
 Następnym etapem jest `build` , która wygląda następująco:
 
 ```
-FROM mcr.microsoft.com/dotnet/core/sdk:2.2-stretch AS build
+FROM mcr.microsoft.com/dotnet/sdk:3.1-buster-slim AS build
 WORKDIR /src
 COPY ["WebApplication43/WebApplication43.csproj", "WebApplication43/"]
 RUN dotnet restore "WebApplication43/WebApplication43.csproj"
 COPY . .
 WORKDIR "/src/WebApplication43"
-RUN dotnet build "WebApplication43.csproj" -c Release -o /app
+RUN dotnet build "WebApplication43.csproj" -c Release -o /app/build
 ```
 
 Możesz zobaczyć, że `build` etap zaczyna się od innego oryginalnego obrazu z rejestru ( `sdk` a nie `aspnet` ), a nie z bazy.  `sdk`Obraz zawiera wszystkie narzędzia kompilacji i z tego powodu jest dużo większy niż obraz ASPNET, który zawiera tylko składniki środowiska uruchomieniowego. Przyczyna użycia oddzielnego obrazu zostanie wyczyszczona, gdy zobaczysz resztę pliku dockerfile:
 
 ```
 FROM build AS publish
-RUN dotnet publish "WebApplication43.csproj" -c Release -o /app
+RUN dotnet publish "WebApplication43.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
-COPY --from=publish /app .
+COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "WebApplication43.dll"]
 ```
 

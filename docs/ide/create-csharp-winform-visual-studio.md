@@ -6,19 +6,19 @@ ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.devlang: CSharp
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fcc42b999039abe5d682394e378cb95f12b9283
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 26f13d12324beb0e414761ce2d79297767c5d708
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956935"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107297122"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-c"></a>Tworzenie aplikacji Windows Forms w programie Visual Studio przy użyciu języka C\#
 
@@ -133,11 +133,11 @@ Po dodaniu kontrolki przycisku do tworzenia akcji Dodajmy kontrolkę etykieta, a
 
 ### <a name="add-code-to-the-form"></a>Dodawanie kodu do formularza
 
-1. W oknie **&#93;projekt Form1.cs &#91;** kliknij dwukrotnie **ten** przycisk, aby otworzyć okno **Form1.cs** .
+1. W oknie **&#93;projektu Form1. cs &#91;** kliknij dwukrotnie **ten** przycisk, aby otworzyć okno **Form1. cs** .
 
-      (Alternatywnie można rozwinąć **Form1.cs** w **Eksplorator rozwiązań**, a następnie wybrać **formularz Form1**).
+      (Możesz również rozwinąć **formularz Form1. cs** w **Eksplorator rozwiązań**, a następnie wybrać **formularz Form1**).
 
-1. W oknie **Form1.cs** , po prywatnym wierszu **void** wpisz lub ENTER, `lblHelloWorld.Text = "Hello World!";` jak pokazano na poniższym zrzucie ekranu:
+1. W oknie **Form1. cs** , po prywatnym wierszu **void** wpisz lub ENTER, `lblHelloWorld.Text = "Hello World!";` jak pokazano na poniższym zrzucie ekranu:
 
      ![Dodawanie kodu do formularza](../get-started/csharp/media/csharp-winforms-add-code.png)
 

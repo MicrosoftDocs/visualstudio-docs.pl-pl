@@ -7,17 +7,17 @@ ms.assetid: 634ef037-1525-48c8-ac7f-abf04be69376
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 10f021e8f8151216cd2728e1e9723b0edb9b3e1f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5741a20def684b517d0eed684e08bfff65a54f6a
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99950734"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107296316"
 ---
 # <a name="step-3-set-your-form-properties"></a>Krok 3. Ustawianie właściwości formularza
 
@@ -25,7 +25,7 @@ Następnie użyj okna **Właściwości** , aby zmienić wygląd formularza.
 
 ## <a name="how-to-set-your-form-properties"></a>Jak ustawić właściwości formularza
 
-1. Upewnij się, że szukasz **Projektant formularzy systemu Windows**. W zintegrowanym środowisku programistycznym (IDE) programu Visual Studio wybierz kartę **Form1.cs [Design]** (lub kartę **Form1. vb [Design]** w Visual Basic).
+1. Upewnij się, że szukasz **Projektant formularzy systemu Windows**. W zintegrowanym środowisku programistycznym (IDE) programu Visual Studio wybierz kartę **Form1. cs [Design]** (lub kartę **Form1. vb [design]** w Visual Basic).
 
 1. Wybierz dowolne miejsce wewnątrz formularza **Form1** , aby go zaznaczyć. Sprawdź okno **Właściwości** , które teraz powinno być wyświetlane właściwości formularza. Formularze mają różne właściwości. Na przykład można ustawić kolor pierwszego planu i tła, tekst tytułu, który pojawia się w górnej części formularza, rozmiar formularza i inne właściwości.
 
