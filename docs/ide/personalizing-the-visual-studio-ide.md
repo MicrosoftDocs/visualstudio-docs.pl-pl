@@ -1,76 +1,76 @@
 ---
 title: Dostosowywanie środowiska IDE
-description: Dowiedz się, jak spersonalizować środowisko IDE programu Visual Studio w sposób, który najlepiej obsługuje własny styl i wymagania deweloperskie.
+description: Dowiedz się, jak spersonalizować Visual Studio IDE w sposób, który najlepiej spełnia Twoje wymagania i styl projektowania.
 ms.custom: SEO-VS-2020
-ms.date: 11/20/2017
+ms.date: 04/12/2021
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 550ab6449cc74d3d0d81d60a41b11f0273003c51
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9a1bcfdc9489ee59f5697f1d96de21e31a71fb17
+ms.sourcegitcommit: 5035ccb32fb5e06451337cbf9a150687082ae2af
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909022"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107373170"
 ---
-# <a name="personalize-the-visual-studio-ide"></a>Personalizowanie środowiska IDE programu Visual Studio
+# <a name="personalize-the-visual-studio-ide"></a>Personalizowanie Visual Studio IDE
 
-Możesz spersonalizować program Visual Studio na różne sposoby, aby najlepiej obsługiwać własne style i wymagania programistyczne. Wiele ustawień przechodzą przez siebie przez wystąpienia programu Visual Studio, &mdash; Zobacz [Ustawienia zsynchronizowane](../ide/synchronized-settings-in-visual-studio.md). W tym artykule krótko opisano inne personalizacje i miejsce, w którym można znaleźć więcej informacji.
+Możesz spersonalizować Visual Studio na różne sposoby, aby jak najlepiej obsługiwać własny styl i wymagania dewelopera. Wiele ustawień jest przenoszowanych między wystąpieniami Visual Studio zobacz &mdash; [Synchronized settings (Zsynchronizowane ustawienia).](../ide/synchronized-settings-in-visual-studio.md) W tym artykule krótko opisano różne personalizacje i przedstawiono w nim więcej informacji.
 
 > [!NOTE]
-> Ten temat ma zastosowanie do programu Visual Studio w systemie Windows. Aby uzyskać Visual Studio dla komputerów Mac, zobacz [dostosowywanie Visual Studio dla komputerów Mac IDE](/visualstudio/mac/customizing-the-ide).
+> Ten temat dotyczy Visual Studio w systemie Windows. Aby uzyskać Visual Studio dla komputerów Mac temat Customize the Visual Studio dla komputerów Mac IDE (Dostosowywanie [Visual Studio dla komputerów Mac IDE).](/visualstudio/mac/customizing-the-ide)
 
 ## <a name="default-settings"></a>Ustawienia domyślne
 
-Można wybrać domyślną kolekcję ustawień, które optymalizują program Visual Studio dla danego typu rozwoju. Aby uzyskać więcej informacji, zobacz [Ustawienia środowiska](environment-settings.md).
+Możesz wybrać domyślną kolekcję ustawień, która Visual Studio pod kątem typu pisania. Aby uzyskać więcej informacji, zobacz [Ustawienia środowiska](environment-settings.md).
 
 ## <a name="general-environment-options"></a>Ogólne opcje środowiska
 
-Wiele opcji personalizacji jest dostępnych w oknie dialogowym [Opcje środowiska](../ide/reference/general-environment-options-dialog-box.md) . Istnieją dwa sposoby uzyskania dostępu do tego okna dialogowego:
+Wiele opcji personalizacji jest dostępnych za [pośrednictwem okna dialogowego Opcje](../ide/reference/general-environment-options-dialog-box.md) środowiska. Istnieją dwa sposoby uzyskiwania dostępu do tego okna dialogowego:
 
-- Na pasku menu wybierz   >  **Opcje** narzędzia i jeśli nie jest jeszcze rozwinięte, rozwiń węzeł **środowisko** .
+- Na pasku menu wybierz pozycję **Opcje** narzędzi, a jeśli nie jest jeszcze rozwinięta,  >  rozwiń węzeł Środowisko. 
 
-- Naciśnij **klawisze CTRL** + **Q**, wpisz **środowisko** w polu wyszukiwania, a następnie wybierz **środowisko > ogólne** z wyników.
+- Naciśnij **klawisze Ctrl** + **Q**, wpisz **environment w** polu wyszukiwania, a następnie wybierz pozycję Environment > General **(Ogólne)** z wyników.
 
 > [!TIP]
-> Gdy zostanie wyświetlone okno dialogowe Opcje, możesz nacisnąć klawisz **F1** , aby uzyskać pomoc dotyczącą różnych ustawień na tej stronie.
+> Gdy pojawi się okno dialogowe Opcje, możesz nacisnąć **klawisz F1,** aby uzyskać pomoc na temat różnych ustawień na tej stronie.
 
 ## <a name="environment-color-themes"></a>Motywy kolorów środowiska
 
-Aby zmienić motyw kolorów między jasnymi, ciemnymi i niebieskimi, wpisz **środowisko** w polu wyszukiwania, a następnie wybierz **środowisko > ogólne**. W oknie dialogowym **Opcje** Zmień opcję **motywu kolorów** .
+Aby zmienić motyw kolorów między ciemnym, jasnym, niebieskim i niebieskim (dodatkowy kontrast), wpisz **motyw** w polu wyszukiwania, a następnie wybierz pozycję Środowisko **> Ogólne.** W **oknie** dialogowym Opcje zmień opcję **Motyw** kolorów.
 
-Aby zmienić opcje kolorowania w edytorze, wpisz **środowisko** w polu wyszukiwania, a następnie wybierz **środowisko > czcionki i kolory**. Zobacz [How to: Change Fonts and Colors](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
+Aby zmienić opcje kolorowania w edytorze, wpisz **environment** w polu wyszukiwania, a następnie wybierz pozycję Środowisko i **> Czcionki i kolory.** Zobacz [How to: Change fonts and colors](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)( Jak zmienić czcionki i kolory).
 
-### <a name="main-menu-casing"></a>Główna wielkość liter w menu
+### <a name="main-menu-casing"></a>Obudowa menu głównego
 
-Można zmienić wielkość liter w menu głównym między **tytułem** "plik") i **wersalikami** ("plik"). Wpisz **środowisko** w polu wyszukiwania, wybierz pozycję **środowisko > ogólne**, a następnie zmień opcję **Zastosuj styl wielkości liter w tytule do paska menu** .
+Możesz zmienić wielkości liter w menu głównym między **literą tytułu ("Plik")** i **wszystkimi literami** ("FILE"). Wpisz **environment** (Środowisko) w polu wyszukiwania, wybierz pozycję **Environment > General (Ogólne), a** następnie zmień opcję Apply title case styleing to menu bar (Zastosuj style przypadku **tytułowego do paska menu).**
 
 ### <a name="customize-menus-and-toolbars"></a>Dostosowywanie menu i pasków narzędzi
 
-Aby dodać lub usunąć elementy menu lub paska narzędzi, zobacz [How to: Dostosowywanie menu i pasków](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)narzędzi.
+Aby dodać lub usunąć elementy menu lub paska narzędzi, zobacz [Jak dostosować menu i paski narzędzi.](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
 
 ::: moniker range="vs-2017"
 
 ## <a name="start-page"></a>Strona początkowa
 
-Aby utworzyć niestandardową stronę początkową dla Ciebie i Twojego zespołu, zobacz [Dostosowywanie strony początkowej](../ide/customizing-the-start-page-for-visual-studio.md).
+Aby utworzyć niestandardową stronę startową dla Ciebie i Twojego zespołu, zobacz [Dostosowywanie strony startowej](../ide/customizing-the-start-page-for-visual-studio.md).
 
 ::: moniker-end
 
 ## <a name="window-layouts"></a>Układy okien
 
-Można definiować i zapisywać wiele układów okien i przełączać się między nimi. Na przykład można zdefiniować jeden układ do kodowania i jeden dla debugowania. Aby rozmieścić pozycje okna i zachowania oraz zapisać układy niestandardowe, zobacz [Dostosowywanie układów okien](../ide/customizing-window-layouts-in-visual-studio.md).
+Można definiować i zapisywać wiele układów okien oraz przełączać się między nimi. Można na przykład zdefiniować jeden układ do kodowania i jeden na potrzeby debugowania. Aby rozmieścić pozycje i zachowanie okna oraz zapisać układy niestandardowe, zobacz [Dostosowywanie układów okien](../ide/customizing-window-layouts-in-visual-studio.md).
 
 ## <a name="external-tools"></a>Narzędzia zewnętrzne
 
-Możesz dostosować menu **Narzędzia** , aby uruchomić zewnętrzne narzędzia. Aby uzyskać więcej informacji, zobacz [Zarządzanie narzędziami zewnętrznymi](../ide/managing-external-tools.md).
+Możesz dostosować menu **Narzędzia,** aby uruchamiać narzędzia zewnętrzne. Aby uzyskać więcej informacji, zobacz [Zarządzanie narzędziami zewnętrznymi.](../ide/managing-external-tools.md)
 
 ## <a name="see-also"></a>Zobacz też
 
 - [Ustawienia środowiska](environment-settings.md)
-- [Środowisko IDE programu Visual Studio — omówienie](../get-started/visual-studio-ide.md)
-- [Szybki Start: pierwsze spojrzenie na środowisko IDE programu Visual Studio](../ide/quickstart-ide-orientation.md)
-- [Dostosowywanie Visual Studio dla komputerów Mac IDE](/visualstudio/mac/customizing-the-ide)
+- [Visual Studio IDE — omówienie](../get-started/visual-studio-ide.md)
+- [Szybki start: pierwsze spojrzenie na Visual Studio IDE](../ide/quickstart-ide-orientation.md)
+- [Dostosowywanie środowiska IDE Visual Studio dla komputerów Mac projektowego](/visualstudio/mac/customizing-the-ide)
