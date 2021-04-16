@@ -211,7 +211,7 @@ W poniższej tabeli wymieniono numery kompilacji i daty wydania dla Visual Studi
 | 16.0.0 | Wersja zapoznawcza 1 | 4 grudnia 2018 r. | 16.0.28329.73 |
 
 > [!NOTE]
-> Aby uzyskać listę numerów kompilacji i dat wydania dla poprzedniej wersji, zobacz numery kompilacji Visual Studio [2017](visual-studio-build-numbers-and-release-dates.md?view=vs-2017&preserve-view=true) i daty wydania
+> Aby uzyskać listę numerów kompilacji i dat wydania dla poprzedniej wersji, zobacz numery kompilacji Visual Studio [2017 i daty wydania](visual-studio-build-numbers-and-release-dates.md?view=vs-2017&preserve-view=true)
 
 ::: moniker-end
 
@@ -403,7 +403,7 @@ W poniższej tabeli wymieniono numery kompilacji i daty wydania dla Visual Studi
 | 15.0.0 | Release | 7 marca 2017 r. | 15.0.26228.4 |
 
 > [!NOTE]
-> Aby uzyskać więcej informacji o numerach kompilacji i datach wydania następnej wersji programu Visual Studio, zobacz stronę Visual Studio 2019 build numbers and release dates (Numery kompilacji i daty wydania programu [Visual Studio 2019).](?preserve-view=true&view=vs-2019)
+> Aby uzyskać więcej informacji o numerach kompilacji i datach wydania następnej wersji programu Visual Studio, zobacz stronę Visual Studio 2019 build numbers and release dates (Numery kompilacji i daty wydania) Visual Studio [2019.](?preserve-view=true&view=vs-2019)
 
 ::: moniker-end
 

@@ -1,6 +1,6 @@
 ---
-title: Pomoc techniczna IDE programu Visual Studio
-description: Uzyskaj pomoc techniczną dla środowiska IDE programu Visual Studio
+title: Visual Studio technicznej środowiska IDE
+description: Uzyskiwanie pomocy technicznej dotyczącej środowiska IDE Visual Studio
 ms.topic: include
 ms.assetid: 4fa47dc5-3791-45c8-afba-9e01693ce45a
 author: caitybuschlen
@@ -10,34 +10,34 @@ user.type: subscriber
 tags: download, activate, licensing
 subscription.type: vl, cloud, retail, partner
 sap.id: af210210-e3e1-2b2e-8d79-9bd20e851241
-ms.openlocfilehash: ac57b500685ae885d5cd68c5901a6ee2617462d0
-ms.sourcegitcommit: bbf532e50b9140724c1a0f66f9a35862bf6e4a97
+ms.openlocfilehash: 755574a0ae60b078a2ea5414e43e16c80c91fa67
+ms.sourcegitcommit: f6aa84e34c2f41877b84c01e7ead956a1b4c24f0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "107291332"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "107512812"
 ---
-## <a name="visual-studio-ide-technical-support"></a>Pomoc techniczna IDE programu Visual Studio  
+## <a name="visual-studio-ide-technical-support"></a>Visual Studio technicznej środowiska IDE  
 
-Obsługa subskrypcji programu Visual Studio zapewnia pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń. Jeśli masz problem techniczny lub pytania dotyczące środowiska IDE programu Visual Studio, Twoje pytanie musi zostać skierowane do [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/vs/support/). Przed użyciem ograniczonych [zdarzeń pomocy technicznej programu Visual Studio](https://docs.microsoft.com/visualstudio/subscriptions/vs-tech-support) , które mogą być dołączone do subskrypcji programu Visual Studio, zalecamy wypróbowanie innych zasobów online.
+Visual Studio subskrypcje zapewniają pomoc w zakresie sprzedaży, subskrypcji, kont i rozliczeń. Jeśli masz problem techniczny lub Visual Studio IDE, twoje pytanie musi zostać skierowane do pomocy [Visual Studio technicznej.](https://visualstudio.microsoft.com/vs/support/) Przed użyciem ograniczonych [zdarzeń pomocy Visual Studio technicznej,](https://docs.microsoft.com/visualstudio/subscriptions/vs-tech-support) które mogą zostać dołączone do subskrypcji usługi Visual Studio, zalecamy wypróbowanie innych zasobów online.
 
-Problemy z instalacją programu Visual Studio można znaleźć w temacie [Rozwiązywanie problemów z instalacją i uaktualnianiem programu Visual Studio](https://docs.microsoft.com/visualstudio/install/troubleshooting-installation-issues?view=vs-2019) w celu uzyskania wskazówek krok po kroku. Możesz również wypróbować opcję obsługi programu [Chat](https://visualstudio.microsoft.com/vs/support/#talktous) (tylko w języku angielskim) dla problemów związanych z instalacją.
+Aby Visual Studio problemów z instalacją, zobacz [Troubleshoot Visual Studio installation and upgrade issues (Rozwiązywanie](https://docs.microsoft.com/visualstudio/install/troubleshooting-installation-issues) problemów z instalacją i uaktualnianiem aplikacji), aby uzyskać szczegółowe wskazówki. Możesz również wypróbować opcję obsługi [czatu instalacyjnego](https://visualstudio.microsoft.com/vs/support/#talktous) (tylko w języku angielskim) w przypadku problemów związanych z instalacją.
 
 
-## <a name="developer-community--visual-studio-ide"></a>Społeczność deweloperów | Środowisko IDE programu Visual Studio
+## <a name="developer-community--visual-studio-ide"></a>Społeczność deweloperów | Visual Studio IDE
 
-Przeszukaj [społeczność deweloperów](https://developercommunity.visualstudio.com/) online i uzyskaj odpowiedzi na ekspertów z forum obsługiwanego przez społeczność. Możesz wyszukiwać słowa kluczowe i czytać, głosować, komentować wszystkie bez logowania.  
+Przeszukaj [strony](https://developercommunity.visualstudio.com/) Developer Community i uzyskaj specjalistyczne odpowiedzi z forum obsługiwanego przez społeczność. Słowa kluczowe można wyszukiwać i odczytywać, głosować, komentować wszystko bez logowania.  
 
-Jeśli nie możesz znaleźć potrzebnych informacji wyszukiwania, możesz zasugerować funkcję lub zgłosić problem z menu nawigacji. Aby przesłać żądanie funkcji, musisz zalogować się, aby wypełnić raport i opublikować. Aby zgłosić problem lub usterkę, uruchomione wystąpienie programu Visual Studio jest wymagane w celu zgłoszenia opinii.   
+Jeśli nie znajdziesz potrzebnych informacji w wyszukiwaniu, możesz zasugerować funkcję lub zgłosić problem z menu nawigacji. Aby przesłać żądanie funkcji, musisz się zalogować, aby wypełnić raport i opublikować wpis. Aby zgłosić problem lub usterkę, do zgłoszenia opinii wymagane jest Visual Studio uruchomione wystąpienie klasy .   
 
-## <a name="stack-overflow--visual-studio-ide"></a>Przepełnienie stosu | Środowisko IDE programu Visual Studio
+## <a name="stack-overflow--visual-studio-ide"></a>Przepełnienie stosu | Visual Studio IDE
 
-Otwarta społeczność dla wszystkich kodów. Przeszukaj [publiczną p&oznakowaną za pomocą programu Visual Studio](https://stackoverflow.com/questions/tagged/visual-studio?tab=Newest) , aby uzyskać odpowiedzi na pytania lub zarejestrować się w celu uzyskania konta i zadać nowe pytanie.  
+Otwarta społeczność dla każdego, kto koduje. Przeszukaj publiczną usługę Q&A oznaczoną tagiem [visual-studio,](https://stackoverflow.com/questions/tagged/visual-studio?tab=Newest) aby uzyskać odpowiedzi na już zadawane pytania lub zarejestrować się w celu uzyskania konta i zadać nowe pytanie.  
 
-## <a name="documentation--visual-studio-ide"></a>Dokumentacja | Środowisko IDE programu Visual Studio
+## <a name="documentation--visual-studio-ide"></a>Dokumentacja | Visual Studio IDE
 
-Przejrzyj samouczki, przewodniki dotyczące rozwiązywania problemów, przydatne zasoby i różne tematy w [dokumentacji środowiska IDE programu Visual Studio](https://docs.microsoft.com/visualstudio/ide/). 
+Zapoznaj się z samouczkami, przewodnikami rozwiązywania problemów, przydatnymi zasobami i szeregiem innych tematów w Visual Studio [IDE.](https://docs.microsoft.com/visualstudio/ide/) 
 
 ## <a name="technical-support-incidents"></a>Zdarzenia pomocy technicznej 
 
-Jeśli zostały wyczerpane powyższe opcje i nadal nie masz odpowiedzi, Aktywuj bilet pomocy technicznej programu Visual Studio, odwiedzając [stronę korzyści dla portalu subskrypcji](https://my.visualstudio.com/Benefits) i klikając kafelek pomoc techniczna dotycząca pomocy technicznej na karcie Pomoc techniczna. Przeczytaj więcej na temat [korzyści z pomocy](https://docs.microsoft.com/visualstudio/subscriptions/vs-tech-support)technicznej. [PORÓWNAJ korzyści z subskrypcji programu Visual Studio](https://visualstudio.microsoft.com/vs/benefits/#azure?cat=visual-studio-enterprise-subscription) , aby dowiedzieć się, co jest dostępne w ramach Twojej subskrypcji.
+Jeśli powyższe opcje zostały wyczerpane i nadal nie masz odpowiedzi, aktywuj bilet pomocy [](https://my.visualstudio.com/Benefits) technicznej usługi Visual Studio, odwiedzając stronę korzyści portalu subskrypcji i klikając kafelek Korzyść pomocy technicznej na karcie Pomoc techniczna. Przeczytaj więcej na temat [korzyści z pomocy technicznej](https://docs.microsoft.com/visualstudio/subscriptions/vs-tech-support). [Porównaj Visual Studio korzyści z subskrypcji,](https://visualstudio.microsoft.com/vs/benefits/#azure?cat=visual-studio-enterprise-subscription) aby dowiedzieć się, co jest dołączone do Twojej subskrypcji.

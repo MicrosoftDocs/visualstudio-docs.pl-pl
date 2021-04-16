@@ -3,100 +3,102 @@ title: Jak działa Mostek na platformę Kubernetes
 ms.technology: vs-azure
 ms.date: 11/19/2020
 ms.topic: conceptual
-description: Zawiera opis procesów korzystania z usługi Bridge do Kubernetes w celu połączenia komputera deweloperskiego z klastrem Kubernetes
-keywords: Mostek do Kubernetes, Docker, Kubernetes, Azure, kontenerów
+description: Opis procesów używania Bridge to Kubernetes do łączenia komputera dewelopera z klastrem Kubernetes
+keywords: Bridge to Kubernetes, Docker, Kubernetes, Azure, kontenery
 monikerRange: '>=vs-2019'
 manager: jmartens
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: 49c3081e68baf4f2bf1d0975bcdae7ea25ab90b3
-ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
+ms.openlocfilehash: 1709785c63bd4fbcd702fbcacfe59dddcb71d1b3
+ms.sourcegitcommit: 0135fc6ffa38995cc9e6ab05fa265758890d2e15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103571548"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107526150"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Jak działa Mostek na platformę Kubernetes
 
-Usługa Bridge do Kubernetes umożliwia uruchamianie i debugowanie kodu na komputerze deweloperskim, przy jednoczesnym połączeniu z klastrem Kubernetes z pozostałą częścią aplikacji lub usług. Na przykład jeśli masz dużą architekturę mikrousług z wieloma zależnymi usługami i bazami danych, replikowanie tych zależności na komputerze deweloperskim może być trudne. Ponadto Kompilowanie i wdrażanie kodu w klastrze Kubernetes dla każdej zmiany kodu podczas programowania w pętli wewnętrznej może być powolne, czasochłonne i trudne do użycia z debugerem.
+Bridge to Kubernetes umożliwia uruchamianie i debugowanie kodu na komputerze dewelopera przy zachowaniu połączenia z klastrem Kubernetes z resztą aplikacji lub usług. Jeśli na przykład masz architekturę dużych mikrousług z wieloma współzależnościami usług i baz danych, replikowanie tych zależności na komputerze deweloperskim może być trudne. Ponadto tworzenie i wdrażanie kodu w klastrze Kubernetes dla każdej zmiany kodu podczas tworzenia pętli wewnętrznej może być powolne, czasochłonne i trudne do użycia z debugerem.
 
-Mostek do Kubernetes pozwala uniknąć konieczności kompilowania i wdrażania kodu w klastrze przez utworzenie połączenia bezpośrednio między komputerem deweloperskim i klastrem. Połączenie komputera deweloperskiego z klastrem podczas debugowania umożliwia szybkie testowanie i opracowywanie usługi w kontekście pełnej aplikacji bez konieczności tworzenia żadnej konfiguracji platformy Docker lub Kubernetes.
+Bridge to Kubernetes uniknąć konieczności kompilowania i wdrażania kodu w klastrze przez utworzenie połączenia bezpośrednio między komputerem dewelopera a klastrem. Połączenie komputera dewelopera z klastrem podczas debugowania umożliwia szybkie testowanie i opracowywanie usługi w kontekście pełnej aplikacji bez konieczności tworzenia konfiguracji platformy Docker lub Kubernetes.
 
-Mostek do Kubernetes przekierowuje ruch między podłączonym klastrem Kubernetes i komputerem deweloperskim. To przekierowywanie ruchu umożliwia kod na komputerze deweloperskim i usługach uruchomionych w klastrze Kubernetes, aby komunikować się tak, jakby znajdowały się w tym samym klastrze Kubernetes. Mostek do Kubernetes umożliwia również replikowanie zmiennych środowiskowych i zainstalowanych woluminów dostępnych dla zasobników w klastrze Kubernetes na komputerze deweloperskim. Zapewnianie dostępu do zmiennych środowiskowych i zainstalowanych woluminów na komputerze deweloperskim pozwala szybko korzystać z kodu bez konieczności ręcznego replikowania tych zależności.
+Bridge to Kubernetes przekierowuje ruch między połączonym klastrem Kubernetes i komputerem dewelopera. To przekierowywanie ruchu umożliwia kodowi na komputerze dewelopera i usługach uruchomionych w klastrze Kubernetes komunikowanie się tak, jakby były w tym samym klastrze Kubernetes. Bridge to Kubernetes umożliwia również replikowanie zmiennych środowiskowych i zainstalowanych woluminów dostępnych dla zasobników w klastrze Kubernetes na komputerze deweloperskim. Zapewnienie dostępu do zmiennych środowiskowych i woluminów zainstalowanych na komputerze dewelopera umożliwia szybką pracę nad kodem bez konieczności ręcznego replikowania tych zależności.
 
 > [!WARNING]
-> Mostek do Kubernetes jest przeznaczony do użycia tylko w scenariuszach deweloperskich i testowych. Nie jest ona przeznaczona do użycia ani nie jest obsługiwana w przypadku klastrów produkcyjnych lub usług na żywo w aktywnym użytkowaniu.
+> Bridge to Kubernetes jest przeznaczony tylko do użytku w scenariuszach tworzenia i testowania. Nie jest ona przeznaczona ani obsługiwana do użytku z klastrami produkcyjnymi ani usługami aktywnymi w aktywnym użyciu.
 
-## <a name="using-bridge-to-kubernetes"></a>Korzystanie z mostka do Kubernetes
+Informacje na temat obecnie obsługiwanych funkcji i przyszłego planu rozwoju Bridge to Kubernetes można znaleźć na stronie [Bridge to Kubernetes mapy.](https://github.com/microsoft/mindaro/projects/1)
 
-Aby można było używać programu Bridge do Kubernetes w programie Visual Studio, wymagany jest [program Visual studio 2019][visual-studio] w wersji 16,7 Preview 4 lub nowszy w systemie Windows 10 z zainstalowanym obciążeniem programu *ASP.NET i sieci Web* oraz zainstalowaną usługą [Bridge to Kubernetes Extension][btk-extension] . W przypadku używania programu Bridge do Kubernetes do nawiązywania połączenia z klastrem Kubernetes można przekierować cały ruch do i z istniejącego obszaru w klastrze do komputera deweloperskiego.
+## <a name="using-bridge-to-kubernetes"></a>Korzystanie z Bridge to Kubernetes
 
-> [!NOTE]
-> W przypadku korzystania z programu Bridge do Kubernetes zostanie wyświetlony monit o podanie nazwy usługi, która ma zostać przekierowana na komputer deweloperski. Ta opcja jest wygodnym sposobem identyfikacji pod kątem przekierowania. Wszystkie przekierowania między klastrem Kubernetes a komputerem deweloperskim dotyczą usługi pod.
-
-Gdy mostek do Kubernetes nawiązuje połączenie z klastrem,:
-
-* Zostanie wyświetlony komunikat z prośbą o skonfigurowanie usługi do zamiany na klaster, port na komputerze deweloperskim, który będzie używany w kodzie, oraz zadanie uruchamiania dla kodu jako akcję jednorazową.
-* Zastępuje kontener w obszarze na klastrze z kontenerem zdalnego agenta, który przekierowuje ruch do komputera deweloperskiego.
-* Uruchamia funkcję [polecenia kubectl port-forward][kubectl-port-forward] na komputerze deweloperskim, aby przekazywać ruch z komputera deweloperskiego do zdalnego agenta działającego w klastrze.
-* Zbiera informacje o środowisku z klastra przy użyciu zdalnego agenta. Informacje o środowisku obejmują zmienne środowiskowe, widoczne usługi, instalacje woluminów i instalacje tajne.
-* Konfiguruje środowisko w programie Visual Studio, aby usługa na komputerze deweloperskim mogła uzyskiwać dostęp do tych samych zmiennych, tak jakby były one uruchomione w klastrze.
-* Aktualizuje plik hosts w celu mapowania usług w klastrze na lokalne adresy IP na komputerze deweloperskim. Te wpisy plików hostów umożliwiają uruchamianie kodu na komputerze deweloperskim w celu wykonywania żądań do innych usług uruchomionych w klastrze. Aby zaktualizować plik hosts, mostek do Kubernetes będzie pytał o dostęp administratora na komputerze deweloperskim podczas nawiązywania połączenia z klastrem.
-* Uruchamia uruchamianie i debugowanie kodu na komputerze deweloperskim. W razie potrzeby program Bridge do Kubernetes będzie zwalniać wymagane porty na komputerze deweloperskim przez zatrzymywanie usług lub procesów, które aktualnie korzystają z tych portów.
-
-Po nawiązaniu połączenia z klastrem można uruchomić i debugować kod natywnie na komputerze bez kontenerach, a kod może bezpośrednio współdziałać z resztą klastra. Każdy ruch sieciowy odbierany przez agenta zdalnego jest przekierowywany do portu lokalnego określonego podczas połączenia, dzięki czemu kod natywnie uruchomiony może zaakceptować i przetworzyć ten ruch. Zmienne środowiskowe, woluminy i wpisy tajne z klastra są udostępniane w kodzie uruchomionym na komputerze deweloperskim. Ponadto ze względu na to, że w przypadku wpisów w pliku Hosts i przekazywania portów dodano do komputera dewelopera przez mostek do Kubernetes, kod może wysyłać ruch sieciowy do usług uruchomionych w klastrze przy użyciu nazw usług z klastra, a ruch jest przesyłany do usług uruchomionych w klastrze. Ruch jest kierowany między komputerem deweloperskim i klastrem przez cały czas, gdy masz połączenie.
-
-Ponadto program Bridge do Kubernetes umożliwia replikowanie zmiennych środowiskowych i zainstalowanych plików dostępnych dla zasobników w klastrze na komputerze deweloperskim przy użyciu `KubernetesLocalProcessConfig.yaml` pliku. Możesz również użyć tego pliku, aby utworzyć nowe zmienne środowiskowe i instalacje woluminów.
+Aby korzystać z usługi Bridge to Kubernetes w programie Visual Studio, musisz mieć zainstalowany program [Visual Studio 2019][visual-studio] w wersji 16.7 (wersja zapoznawcza 4 lub nowsza) uruchomiony w programie Windows 10 z zainstalowanym obciążeniem *ASP.NET* i tworzeniem aplikacji internetowych oraz zainstalowanym [rozszerzeniem Bridge to Kubernetes.][btk-extension] Jeśli używasz usługi Bridge to Kubernetes do nawiązywania połączenia z klastrem Kubernetes, możesz przekierować cały ruch do i z istniejącego zasobnika w klastrze na komputer deweloperski.
 
 > [!NOTE]
-> W przypadku czasu trwania połączenia z klastrem (plus dodatkowego 15 minut) mostek do Kubernetes uruchamia proces o nazwie *endpointmanager* z uprawnieniami administratora na komputerze lokalnym.
+> Podczas Bridge to Kubernetes jest wyświetlany monit o nazwę usługi w celu przekierowania do komputera dewelopera. Ta opcja jest wygodnym sposobem identyfikowania zasobnika do przekierowywania. Całe przekierowanie między klastrem Kubernetes i komputerem deweloperskim jest dla zasobnika.
 
-## <a name="additional-configuration-with-kuberneteslocalprocessconfigyaml"></a>Dodatkowa konfiguracja z KubernetesLocalProcessConfig. YAML
+Po Bridge to Kubernetes nawiązania połączenia z klastrem:
 
-`KubernetesLocalProcessConfig.yaml`Plik umożliwia replikowanie zmiennych środowiskowych i zainstalowanych plików dostępnych dla Twojego zasobnika w klastrze. Aby uzyskać więcej informacji na temat dodatkowych opcji konfiguracji, zobacz [Konfigurowanie mostka do Kubernetes][using-config-yaml].
+* Monituje o skonfigurowanie usługi do zastąpienia w klastrze, portu na komputerze dewelopera do użycia dla kodu oraz zadania uruchamiania kodu w ramach akcji razowej.
+* Zastępuje kontener w zasobniku w klastrze kontenerem agenta zdalnego, który przekierowuje ruch do komputera deweloperskiego.
+* Uruchamia [na komputerze dewelopera port-forward kubectl][kubectl-port-forward] w celu przekazywania ruchu z komputera dewelopera do zdalnego agenta uruchomionego w klastrze.
+* Zbiera informacje o środowisku z klastra przy użyciu agenta zdalnego. Te informacje o środowisku obejmują zmienne środowiskowe, widoczne usługi, instalacji woluminów i instalacji tajnych.
+* Konfiguruje środowisko w programie Visual Studio aby usługa na komputerze dewelopera była w stanie uzyskać dostęp do tych samych zmiennych, jak gdyby była uruchomiona w klastrze.
+* Aktualizuje plik hosts w celu mapowania usług w klastrze na lokalne adresy IP na komputerze dewelopera. Te wpisy pliku hostów umożliwiają kodowi uruchomionego na komputerze dewelopera tworzenie żądań do innych usług uruchomionych w klastrze. Aby zaktualizować plik hosts, Bridge to Kubernetes poprosi o dostęp administratora na komputerze dewelopera podczas nawiązywania połączenia z klastrem.
+* Rozpoczyna uruchamianie i debugowanie kodu na komputerze dewelopera. W razie potrzeby Bridge to Kubernetes porty na komputerze dewelopera przez zatrzymanie usług lub procesów, które obecnie z nich korzystają.
 
-## <a name="using-routing-capabilities-for-developing-in-isolation"></a>Korzystanie z funkcji routingu do programowania w izolacji
+Po nawiązaniu połączenia z klastrem można natywnie uruchamiać i debugować kod na komputerze bez konteneryzacji, a kod może bezpośrednio wchodzić w interakcje z resztą klastra. Każdy ruch sieciowy odbierany przez agenta zdalnego jest przekierowywany do portu lokalnego określonego podczas połączenia, dzięki czemu kod natywnie uruchomiony może akceptować i przetwarzać ten ruch. Zmienne środowiskowe, woluminy i wpisy tajne z klastra są udostępniane kodowi uruchomionemu na komputerze dewelopera. Ponadto ze względu na wpisy pliku hostów i przekazywanie portów dodane do komputera dewelopera przez program Bridge to Kubernetes kod może wysyłać ruch sieciowy do usług uruchomionych w klastrze przy użyciu nazw usług z klastra, a ruch jest przesyłany dalej do usług uruchomionych w klastrze. Ruch jest przekierowywany między komputerem dewelopera a klastrem przez cały czas połączenia.
 
-Domyślnie program Bridge do Kubernetes przekierowuje cały ruch dla usługi do komputera deweloperskiego. Istnieje również możliwość użycia funkcji routingu do przekierowywania tylko żądań do usługi pochodzącej z poddomeny do komputera deweloperskiego. Dzięki tym funkcjom routingu można używać programu Bridge do Kubernetes w celu rozbudowy izolacji i uniknięcia zakłócania innego ruchu w klastrze.
+Ponadto program Bridge to Kubernetes sposób replikowania zmiennych środowiskowych i zainstalowanych plików dostępnych dla zasobników w klastrze na komputerze deweloperskim za pośrednictwem `KubernetesLocalProcessConfig.yaml` pliku . Ten plik umożliwia również tworzenie nowych zmiennych środowiskowych i instalacji woluminów.
 
-Poniższe animacje przedstawiają dwóch deweloperów pracujących nad tym samym klastrem w izolacji:
+> [!NOTE]
+> Przez czas trwania połączenia z klastrem (plus dodatkowe 15 minut) program Bridge to Kubernetes proces o nazwie *EndpointManager* z uprawnieniami administratora na komputerze lokalnym.
 
-![Animowanie izolowania obrazu GIF](media/bridge-to-kubernetes/btk-graphic-isolated.gif)
+## <a name="additional-configuration-with-kuberneteslocalprocessconfigyaml"></a>Dodatkowa konfiguracja przy użyciu pliku KubernetesLocalProcessConfig.yaml
 
-Po włączeniu pracy w izolacji program Bridge do Kubernetes wykonuje następujące czynności oprócz nawiązywania połączenia z klastrem Kubernetes:
+Plik `KubernetesLocalProcessConfig.yaml` umożliwia replikowanie zmiennych środowiskowych i zainstalowanych plików dostępnych dla zasobników w klastrze. W przypadku Visual Studio tworzenia aplikacji Bridge to Kubernetes plik KubernetesLocalConfig.yaml musi znajdować się w tym samym katalogu co plik projektu dla usługi, która jest przekierowywana. Aby uzyskać więcej informacji na temat dodatkowych opcji konfiguracji, zobacz [Konfigurowanie Bridge to Kubernetes][using-config-yaml].
 
-* Sprawdza, czy klaster Kubernetes nie ma włączonej Azure Dev Spaces.
-* Replikuje wybraną usługę w klastrze w tej samej przestrzeni nazw i dodaje etykietę *Routing.VisualStudio.IO/Route-from=service_name* i *Routing.VisualStudio.IO/Route-on-header=Kubernetes-Route-as: GENERATED_NAME* adnotację.
-* Konfiguruje i uruchamia Menedżera routingu w tej samej przestrzeni nazw klastra Kubernetes. Menedżer routingu używa selektora etykiet do wyszukiwania etykiet *Routing.VisualStudio.IO/Route-from=service_name* i  *Routing.VisualStudio.IO/Route-on-header=Kubernetes-Route-as: GENERATED_NAME* adnotacji podczas konfigurowania routingu w przestrzeni nazw.
+## <a name="using-routing-capabilities-for-developing-in-isolation"></a>Używanie możliwości routingu do opracowywania w izolacji
 
-Jeśli program Bridge do Kubernetes wykryje, że Azure Dev Spaces jest włączona w klastrze Kubernetes, zostanie wyświetlony monit o wyłączenie Azure Dev Spaces, zanim będzie można użyć programu Bridge do Kubernetes.
+Domyślnie program Bridge to Kubernetes cały ruch usługi do komputera dewelopera. Możesz również użyć możliwości routingu, aby przekierowywać tylko żądania do usługi pochodzące z poddomeny na komputer dewelopera. Te możliwości routingu umożliwiają korzystanie z Bridge to Kubernetes w celu opracowywania w izolacji i uniknięcia zakłócania innego ruchu w klastrze.
 
-Podczas uruchamiania Menedżer routingu wykonuje następujące czynności:
+Następująca animacja przedstawia dwóch deweloperów pracujących w tym samym klastrze w izolacji:
 
-* Duplikuje wszystkie ingresses (w tym moduł równoważenia obciążenia ingresses) znajdujące się w przestrzeni nazw za pomocą *GENERATED_NAME* dla domeny podrzędnej.
-* Tworzy wysłannika pod dla każdej usługi skojarzonej z powielonym ingresses z poddomeną *GENERATED_NAME* .
-* Tworzy dodatkowy wysłannika pod względem usługi, w której pracujesz w izolacji. Pozwala to na kierowanie żądań z poddomeną do komputera deweloperskiego.
-* Konfiguruje reguły routingu dla każdego wysłannika pod względem obsługi routingu dla usług z poddomeną.
+![Animowany obraz GIF ilustrujący izolację](media/bridge-to-kubernetes/btk-graphic-isolated.gif)
 
-Na poniższym diagramie przedstawiono klaster Kubernetes przed nawiązaniem połączenia z klastrem Kubernetes przez mostek:
+Po włączeniu pracy w izolacji program Bridge to Kubernetes oprócz nawiązywania połączenia z klastrem Kubernetes:
 
-![Diagram klastra bez mostka do Kubernetes](media/bridge-to-kubernetes/kubr-cluster.svg)
+* Sprawdza, czy klaster Kubernetes nie ma Azure Dev Spaces włączony.
+* Replikuje wybraną usługę w klastrze w  tej samej przestrzeni nazw i dodaje etykietę routing.visualstudio.io/route-from=SERVICE_NAME i *routing.visualstudio.io/route-on-header=kubernetes-route-as: GENERATED_NAME* adnotacji.
+* Konfiguruje i uruchamia menedżera routingu w tej samej przestrzeni nazw w klastrze Kubernetes. Menedżer routingu używa selektora  etykiet do wyszukiwania etykiety routing.visualstudio.io/route-from=SERVICE_NAME i *routing.visualstudio.io/route-on-header=kubernetes-route-as: GENERATED_NAME* podczas konfigurowania routingu w przestrzeni nazw.
 
-Na poniższym diagramie przedstawiono ten sam klaster z mostkiem, który Kubernetes włączony w trybie izolacji. Tutaj można zobaczyć duplikat usługi i wysłannika, które obsługują Routing w izolacji.
+Jeśli Bridge to Kubernetes wykryje, Azure Dev Spaces jest włączona w klastrze Kubernetes, zostanie wyświetlony monit o wyłączenie usługi Azure Dev Spaces przed rozpoczęciem korzystania z Bridge to Kubernetes.
 
-![Diagram klastra z włączonym mostkiem do Kubernetes](media/bridge-to-kubernetes/kubr-cluster-devcomputer.svg)
+Menedżer routingu podczas uruchamiania programu robi następujące czynności:
 
-Gdy w klastrze zostanie odebrane żądanie z poddomeną *GENERATED_NAME* , do żądania zostanie dodany nagłówek *Kubernetes-Route-as = GENERATED_NAME* . Wysłannika, które obsługują Routing, który żąda odpowiedniej usługi w klastrze. Jeśli żądanie jest kierowane do usługi, która jest przetwarzana w izolacji, żądanie jest przekierowywane do komputera deweloperskiego przez agenta zdalnego.
+* Duplikuje wszystkie ruchy wychodzące (w tym ruch przychodzący usługi równoważenia obciążenia) znalezione w przestrzeni nazw *przy użyciu GENERATED_NAME* dla poddomeny.
+* Tworzy zasobnik envoy dla każdej usługi skojarzonej ze  zduplikowanymi ruchami przychodzącymi GENERATED_NAME poddomeny.
+* Tworzy dodatkowy zasobnik envoy dla usługi, nad która pracujesz w izolacji. Dzięki temu żądania z poddomeną mogą być kierowane do komputera dewelopera.
+* Konfiguruje reguły routingu dla każdego zasobnika envoy w celu obsługi routingu dla usług z poddomeną.
 
-Gdy w klastrze zostanie odebrane żądanie bez poddomeny *GENERATED_NAME* , nagłówek nie zostanie dodany do żądania. Wysłannika, które obsługują Routing, który żąda odpowiedniej usługi w klastrze. Jeśli żądanie jest kierowane do usługi, która jest zastępowana, to żądanie jest wysyłane do oryginalnej usługi zamiast agenta zdalnego.
+Na poniższym diagramie przedstawiono klaster Kubernetes przed Bridge to Kubernetes się z klastrem:
+
+![Diagram przedstawiający klaster bez Bridge to Kubernetes](media/bridge-to-kubernetes/kubr-cluster.svg)
+
+Na poniższym diagramie przedstawiono ten sam klaster z włączoną Bridge to Kubernetes w trybie izolacji. W tym miejscu możesz zobaczyć zduplikowaną usługę i zasobniki envoy, które obsługują routing w izolacji.
+
+![Diagram klastra z włączonymi Bridge to Kubernetes klastra](media/bridge-to-kubernetes/kubr-cluster-devcomputer.svg)
+
+Gdy w klastrze zostanie odebrane *GENERATED_NAME* z poddomeną usługi , do żądania zostanie dodany nagłówek *kubernetes-route-as=GENERATED_NAME.* Zasobniki envoy obsługują routing tego żądania do odpowiedniej usługi w klastrze. Jeśli żądanie jest kierowane do usługi, nad która jest pracowana w izolacji, to żądanie jest przekierowywany do komputera dewelopera przez agenta zdalnego.
+
+Gdy żądanie bez *GENERATED_NAME* podrzędnej zostanie odebrane w klastrze, do żądania nie zostanie dodany żaden nagłówek. Zasobniki envoy obsługują routing tego żądania do odpowiedniej usługi w klastrze. Jeśli żądanie jest kierowane do usługi, która jest zastępowana, to żądanie jest zamiast tego kierowane do oryginalnej usługi, a nie do agenta zdalnego.
 
 > [!IMPORTANT]
-> Każda usługa w klastrze musi przesłać dalej nagłówek *Kubernetes-Route-as = GENERATED_NAME* podczas wykonywania dodatkowych żądań. Na przykład gdy *Usługa Service* w odbierze żądanie, wysyła żądanie *serviceB* przed zwróceniem odpowiedzi. W tym przykładzie *Usługa Service* . musi przesłać dalej nagłówek *Kubernetes-Route-as = GENERATED_NAME* w żądaniu do *serviceB*. Niektóre języki, takie jak [ASP.NET][asp-net-header], mogą mieć metody obsługi propagacji nagłówka.
+> Każda usługa w klastrze musi przesyłać dalej nagłówek *kubernetes-route-as=GENERATED_NAME* podczas tworzenia dodatkowych żądań. Na przykład gdy *usługa A* odbiera żądanie, następnie wykonuje żądanie do *usługi serviceB* przed zwróceniem odpowiedzi. W tym przykładzie *usługa serviceA* musi w swoim żądaniu do usługi B GENERATED_NAME nagłówek *kubernetes-route-as=GENERATED_NAME* .  Niektóre języki, takie [jak ASP.NET][asp-net-header], mogą mieć metody do obsługi propagacji nagłówka.
 
-Po rozłączeniu z klastrem Domyślnie program Bridge do usługi Kubernetes usunie wszystkie wysłannikay i powieloną usługę.
+Po rozłączeniu z klastrem program Bridge to Kubernetes wszystkie zasobniki envoy i zduplikowaną usługę.
 
 > [!NOTE]
-> Wdrożenie i usługa Menedżera routingu pozostaną uruchomione w Twojej przestrzeni nazw. Aby usunąć wdrożenie i usługę, uruchom następujące polecenia dla swojej przestrzeni nazw.
+> Wdrożenie i usługa menedżera routingu będą nadal działać w Przestrzeni nazw. Aby usunąć wdrożenie i usługę, uruchom następujące polecenia dla przestrzeni nazw.
 >
 > ```azurecli
 > kubectl delete deployment routingmanager-deployment -n NAMESPACE
@@ -105,13 +107,13 @@ Po rozłączeniu z klastrem Domyślnie program Bridge do usługi Kubernetes usun
 
 ## <a name="diagnostics-and-logging"></a>Diagnostyka i rejestrowanie
 
-W przypadku łączenia się z klastrem za pomocą mostka Kubernetes dzienniki diagnostyczne z klastra są rejestrowane w katalogu *tymczasowym* komputera deweloperskiego w *Bridge do folderu Kubernetes* .
+W przypadku Bridge to Kubernetes z klastrem dzienniki diagnostyczne z klastra są rejestrowane w katalogu *TEMP* komputera dewelopera w *folderze Bridge to Kubernetes* aplikacji.
 
 ## <a name="rbac-authorization"></a>Autoryzacja RBAC
 
-Kubernetes zawiera Access Control oparte na rolach (RBAC) do zarządzania uprawnieniami dla użytkowników i grup. Aby uzyskać więcej informacji, zobacz [dokumentację Kubernetes](https://kubernetes.io/docs/reference/access-authn-authz/rbac/) , aby ustawić uprawnienia dla klastra z WŁĄCZONĄ funkcją RBAC, tworząc plik YAML i używając `kubectl` go do zastosowania do klastra. 
+Platformę Kubernetes udostępnia oparte na rolach Access Control (RBAC) do zarządzania uprawnieniami użytkowników i grup. Aby uzyskać więcej informacji, zobacz dokumentację [usługi Kubernetes.](https://kubernetes.io/docs/reference/access-authn-authz/rbac/) Aby ustawić uprawnienia dla klastra z włączoną obsługą kontroli RBAC, należy utworzyć plik YAML i użyć narzędzia , aby zastosować go `kubectl` do klastra. 
 
-Aby ustawić uprawnienia do klastra, Utwórz lub zmodyfikuj plik YAML, taki jak *uprawnienia. yml* jak poniżej, korzystając z własnej przestrzeni nazw dla `<namespace>` i tematów (użytkowników i grup), które wymagają dostępu.
+Aby ustawić uprawnienia w klastrze, utwórz lub zmodyfikuj plik YAML, taki jak *permissions.yml* w następujący sposób, używając własnej przestrzeni nazw dla obiektów i (użytkowników i grup), które `<namespace>` wymagają dostępu.
 
 ```yml
 kind: RoleBinding
@@ -132,7 +134,7 @@ roleRef:
   apiGroup: rbac.authorization.k8s.io
 ```
 
-Zastosuj uprawnienia za pomocą polecenia:
+Zastosuj uprawnienia za pomocą polecenia :
 
 ```cmd
 kubectl -n <namespace> apply -f <yaml file name>
@@ -140,20 +142,20 @@ kubectl -n <namespace> apply -f <yaml file name>
 
 ## <a name="limitations"></a>Ograniczenia
 
-Mostek do Kubernetes ma następujące ograniczenia:
+Bridge to Kubernetes ma następujące ograniczenia:
 
-* Może istnieć tylko jeden kontener uruchomiony w tym pod, aby most Kubernetes pomyślnie nawiązać połączenie.
-* Obecnie mostek do Kubernetesy są kontenerami systemu Linux. Kontenery systemu Windows nie są obsługiwane.
-* Mostek do Kubernetes wymaga podniesionych uprawnień do uruchomienia na komputerze deweloperskim, aby można było edytować plik Hosts.
-* Nie można używać mostu do Kubernetes w przypadku klastrów z włączonym Azure Dev Spaces.
+* Zasobnik może mieć tylko jeden kontener uruchomiony w tym zasobniku, aby Bridge to Kubernetes pomyślnie nawiązać połączenie.
+* Obecnie Bridge to Kubernetes muszą być kontenerami systemu Linux. Kontenery systemu Windows nie są obsługiwane.
+* Bridge to Kubernetes uprawnień do uruchamiania na komputerze dewelopera w celu edytowania pliku hosts.
+* Bridge to Kubernetes nie można używać w klastrach z włączoną Azure Dev Spaces klastra.
 
-### <a name="bridge-to-kubernetes-and-clusters-with-azure-dev-spaces-enabled"></a>Mostek do Kubernetes i klastrów z włączonym Azure Dev Spaces
+### <a name="bridge-to-kubernetes-and-clusters-with-azure-dev-spaces-enabled"></a>Bridge to Kubernetes klastry z włączonymi Azure Dev Spaces klastrami
 
-Nie można użyć mostka do Kubernetes w klastrze z włączonym Azure Dev Spaces. Jeśli chcesz użyć programu Bridge do Kubernetes w klastrze z włączonym Azure Dev Spaces, musisz wyłączyć Azure Dev Spaces przed nawiązaniem połączenia z klastrem.
+Nie można używać funkcji Bridge to Kubernetes w klastrze z włączoną Azure Dev Spaces klastra. Jeśli chcesz używać funkcji Bridge to Kubernetes w klastrze z włączoną Azure Dev Spaces, musisz wyłączyć Azure Dev Spaces przed nawiązaniem połączenia z klastrem.
 
 ## <a name="next-steps"></a>Następne kroki
 
-Aby rozpocząć korzystanie z usługi Bridge do Kubernetes w celu nawiązania połączenia z lokalnym komputerem deweloperskim z klastrem, zobacz [Korzystanie z mostka do Kubernetes](bridge-to-kubernetes.md).
+Aby rozpocząć nawiązywanie połączenia Bridge to Kubernetes lokalnym komputerem dewelopera z klastrem za pomocą usługi Bridge to Kubernetes [.](bridge-to-kubernetes.md)
 
 [asp-net-header]: https://www.nuget.org/packages/Microsoft.AspNetCore.HeaderPropagation/
 [azds-cli]: /azure/dev-spaces/how-to/install-dev-spaces#install-the-client-side-tools
