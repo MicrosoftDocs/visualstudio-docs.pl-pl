@@ -1,30 +1,32 @@
 ---
 title: Wystąpił błąd podczas próby aktywowania miesięcznych środków na korzystanie z platformy Azure
-description: Wystąpił błąd podczas próby aktywowania miesięcznych środków na korzystanie z platformy Azure zawartych w ramach subskrypcji programu Visual Studio.
+description: Występuje błąd podczas próby aktywowania miesięcznych środków na korzystanie z platformy Azure w ramach subskrypcji Visual Studio subskrypcji.
 ms.topic: include
 ms.assetid: eed8114a-651a-47e2-bb24-130acd2a76d0
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 8/14/2020
+ms.date: 4/16/2021
 user.type: subscriber
 tags: benefit, azure
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: 91014bf9e942d874316cf74b9631d23426a61ea1
-ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
+ms.openlocfilehash: 4481af6b1ff33df7542d230abba2d39964027d41
+ms.sourcegitcommit: 54aac5044a9853a435577acc5a134cb254494ffb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99541198"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "107590130"
 ---
-## <a name="im-getting-an-error-while-trying-to-activate-my-azure-monthly-credit"></a>Wystąpił błąd podczas próby aktywowania miesięcznych środków na korzystanie z platformy Azure.
+## <a name="im-getting-an-error-while-trying-to-activate-my-azure-monthly-credit"></a>Podczas próby aktywowania miesięcznych środków na korzystanie z platformy Azure występuje błąd.
 
-Na subskrypcję platformy Azure, która jest skojarzona z subskrypcją programu Visual Studio, można mieć tylko jedną korzyść na korzystanie z platformy Azure do tworzenia i testowania. Jeśli wcześniej aktywowano miesięczne środki na korzystanie z platformy Azure, może wystąpić błąd. Jeśli nie masz pewności, czy Twoje środki zostały aktywowane, zaloguj się do [Azure Portal](https://portal.azure.com/) , aby sprawdzić. 
+Na subskrypcję platformy Azure skojarzoną z subskrypcją platformy Azure skojarzoną z subskrypcją platformy Azure można uzyskać tylko jedną miesięczną indywidualną korzyść kredytową na Visual Studio Azure. Jeśli wcześniej aktywowano miesięczne środków na korzystanie z platformy Azure, może wystąpić błąd. Jeśli nie masz pewności, czy aktywowano kredyt, zaloguj się do [Azure Portal,](https://portal.azure.com/) aby zweryfikować. 
 
-## <a name="verify-your-email"></a>Zweryfikuj swój adres e-mail 
+Jeśli masz nową subskrypcję platformy Visual Studio i otrzymujesz błąd "Nie możesz aktywować tej korzyści Visual Studio więcej niż raz" podczas próby aktywowania miesięcznej korzyści ze środków na korzystanie z platformy Azure, skontaktuj się z pomocą techniczną dla subskrypcji platformy Visual Studio, klikając przycisk "Utwórz bilet pomocy technicznej" w dolnej części tego rozwiązania. 
 
-Po aktywowaniu miesięcznych środków w ramach subskrypcji programu Visual Studio zostanie połączona wiadomość e-mail użyta podczas aktywacji.  
+## <a name="verify-your-email"></a>Weryfikowanie wiadomości e-mail 
 
-Być może masz skojarzone [konto alternatywne](https://docs.microsoft.com/visualstudio/subscriptions/vs-alternate-identity) z subskrypcją programu Visual Studio. Dodanie alternatywnego konta do subskrypcji programu Visual Studio pozwala uzyskać dostęp do korzyści z subskrypcji, takich jak usługa Azure DevOps i platforma Azure, przy użyciu innej tożsamości niż ta, do której jest przypisana subskrypcja.  
+Po aktywowaniu miesięcznych środków łączymy adres e-mail użyty podczas aktywacji z subskrypcją Visual Studio subskrypcji.  
 
-Musisz zalogować się do [Azure Portal](https://portal.azure.com/) za pomocą wiadomości e-mail, dla których ustawiono konto w usłudze. Jeśli na przykład Twoje miesięczne środki zostały aktywowane przy użyciu alternatywnego konta, zawsze musisz zalogować się do subskrypcji platformy Azure za pomocą tej wiadomości e-mail. Możesz sprawdzić, czy w dolnej części [strony subskrypcje](https://my.visualstudio.com/subscriptions) w portalu zostało dodane alternatywne konto.
+Być może skojarzyliśmy [alternatywne konto](https://docs.microsoft.com/visualstudio/subscriptions/vs-alternate-identity) z subskrypcją Visual Studio subskrypcji. Dodanie alternatywnego konta do subskrypcji programu Visual Studio pozwala uzyskać dostęp do korzyści z subskrypcji, takich jak usługa Azure DevOps i platforma Azure, przy użyciu innej tożsamości niż ta, do której jest przypisana subskrypcja.  
+
+Musisz zalogować się do konta [Azure Portal](https://portal.azure.com/) przy użyciu adresu e-mail, za pomocą który skonfigurujesz konto. Jeśli na przykład aktywowano miesięczne środków przy użyciu alternatywnego konta, zawsze musisz zalogować się do subskrypcji platformy Azure za pomocą tej wiadomości e-mail. Możesz sprawdzić, czy dodano alternatywne konto w dolnej części strony [subskrypcji](https://my.visualstudio.com/subscriptions) w portalu.
