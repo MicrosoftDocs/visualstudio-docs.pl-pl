@@ -1,6 +1,6 @@
 ---
-title: 'Instrukcje: programowe Wyświetlanie listy niedawno używanych plików skoroszytu'
-description: Dowiedz się, jak programowo wystawić listę ostatnio używanych plików skoroszytów programu Microsoft Excel przy użyciu programu Visual Studio.
+title: 'How to: Programmatically list recently used workbook files (2017: Programowe udostępnianie listy ostatnio używanych plików skoroszytu)'
+description: Dowiedz się, jak programowo wyświetlić ostatnio używane pliki skoroszytów programu Microsoft Excel przy użyciu Visual Studio.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -18,26 +18,26 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 75405c7a2e02189e205edf6615c5d95a8f1d023c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ba7ca717af4330e8fb3c102b3a5fe5bf7d9162b6
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963149"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825332"
 ---
-# <a name="how-to-programmatically-list-recently-used-workbook-files"></a>Instrukcje: programowe Wyświetlanie listy niedawno używanych plików skoroszytu
-  <xref:Microsoft.Office.Interop.Excel._Application.RecentFiles%2A>Właściwość zwraca kolekcję zawierającą nazwy wszystkich plików, które pojawiają się na liście Microsoft Office Excel ostatnio używanych plików. Długość listy różni się w zależności od liczby plików, które użytkownik wybrał do zachowania. Wyniki można wyświetlić w zakresie.
+# <a name="how-to-programmatically-list-recently-used-workbook-files"></a>How to: Programmatically list recently used workbook files (2017: Programowe udostępnianie listy ostatnio używanych plików skoroszytu)
+  Właściwość zwraca kolekcję zawierającą nazwy wszystkich plików, które są wyświetlane na liście <xref:Microsoft.Office.Interop.Excel._Application.RecentFiles%2A> Microsoft Office Excel ostatnio używanych plików. Długość listy różni się w zależności od liczby plików wybranych przez użytkownika do zachowania. Wyniki można wyświetlić w zakresie.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
 ## <a name="to-list-recently-used-workbooks-in-a-range-object"></a>Aby wyświetlić listę ostatnio używanych skoroszytów w obiekcie zakresu
 
-1. Przepętlenie przez listę ostatnio używanych plików i wyświetlenie nazw w komórkach odnoszących się do <xref:Microsoft.Office.Interop.Excel.Range> obiektu.
+1. Zapętla listę ostatnich plików i wyświetla nazwy w komórkach względem <xref:Microsoft.Office.Interop.Excel.Range> obiektu.
 
-     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#9](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#9)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#9](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#9)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs" id="Snippet9":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb" id="Snippet9":::
 
 ## <a name="see-also"></a>Zobacz też
-- [Pracuj ze skoroszytami](../vsto/working-with-workbooks.md)
-- [NamedRange — formant](../vsto/namedrange-control.md)
+- [Praca ze skoroszytami](../vsto/working-with-workbooks.md)
+- [NamedRange, kontrolka](../vsto/namedrange-control.md)
 - [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)

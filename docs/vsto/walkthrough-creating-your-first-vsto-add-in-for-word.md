@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu Word'
+title: 'Przewodnik: tworzenie pierwszego dodatku VSTO dla programu Word'
 description: Utwórz dodatek na poziomie aplikacji dla programu Microsoft Word. Ta funkcja jest dostępna dla samej aplikacji, niezależnie od tego, które dokumenty są otwarte.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
@@ -17,27 +17,27 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 43104ad8b26045056ca8d8d653fcb9625734f7eb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fd3509ab674faa220ed7bbea15a9762f52b1a525
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899438"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828283"
 ---
-# <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu Word
-  W tym instruktażu wprowadzającym pokazano, jak utworzyć dodatek narzędzi VSTO dla programu Microsoft Office Word. Funkcje, które tworzysz w tym rodzaju rozwiązanie, są dostępne dla samej aplikacji, niezależnie od tego, które dokumenty są otwarte.
+# <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>Przewodnik: tworzenie pierwszego dodatku VSTO dla programu Word
+  W tym przewodniku wprowadzającym pokazano, jak utworzyć dodatek VSTO dla programu Microsoft Office Word. Funkcje, które tworzysz w tego typu rozwiązaniu, są dostępne dla samej aplikacji, niezależnie od tego, które dokumenty są otwarte.
 
  [!INCLUDE[appliesto_wdallapp](../vsto/includes/appliesto-wdallapp-md.md)]
 
  W instruktażu przedstawiono następujące zagadnienia:
 
-- Tworzenie projektu dodatku VSTO dla programu Word.
+- Tworzenie projektu dodatku Word VSTO.
 
-- Pisanie kodu, który używa modelu obiektów programu Word do dodawania tekstu do dokumentu po jego zapisaniu.
+- Pisanie kodu, który używa modelu obiektów programu Word w celu dodania tekstu do dokumentu po jego zapisaniu.
 
-- Kompilowanie i uruchamianie projektu w celu jego przetestowania.
+- Budowania i uruchamiania projektu w celu przetestowania go.
 
-- Czyszczenie ukończonego projektu, aby dodatek VSTO nie był już automatycznie uruchamiany na komputerze deweloperskim.
+- Czyszczenie ukończonego projektu tak, aby dodatek VSTO nie był już automatycznie uruchamiany na komputerze dewelopera.
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -50,97 +50,97 @@ ms.locfileid: "99899438"
 
 ## <a name="create-the-project"></a>Tworzenie projektu
 
-### <a name="to-create-a-new-word-vsto-add-in-project-in-visual-studio"></a>Aby utworzyć nowy projekt dodatku VSTO programu Word w programie Visual Studio
+### <a name="to-create-a-new-word-vsto-add-in-project-in-visual-studio"></a>Aby utworzyć nowy projekt dodatku Word VSTO w programie Visual Studio
 
-1. Rozpocznij [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
+1. Uruchom [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
-2. W menu **plik** wskaż polecenie **Nowy**, a następnie kliknij pozycję **projekt**.
+2. W menu **File (Plik)** wskaż pozycję **New (Nowy),** a następnie kliknij pozycję **Project (Projekt).**
 
-3. W okienku szablony rozwiń pozycję **Visual C#** lub **Visual Basic**, a następnie rozwiń węzeł **Office/SharePoint**.
+3. W okienku szablonów rozwiń pozycję **Visual C#** **lub Visual Basic**, a następnie rozwiń pozycję **Office/SharePoint.**
 
-4. W rozwiniętym węźle **Office/SharePoint** wybierz węzeł **Dodatki pakietu Office** .
+4. W rozwiniętym **węźle Office/SharePoint** wybierz węzeł Dodatki **pakietu Office.**
 
-5. Na liście szablonów projektu wybierz projekt dodatku VSTO programu Word.
+5. Na liście szablonów projektów wybierz projekt dodatku Word VSTO.
 
 6. W polu **Nazwa** wpisz **FirstWordAddIn**.
 
 7. Kliknij przycisk **OK**.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tworzy projekt **FirstWordAddIn** i otwiera plik kodu ThisAddIn w edytorze.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Tworzy projekt **FirstWordAddIn** i otwiera plik kodu ThisAddIn w edytorze.
 
-## <a name="write-code-to-add-text-to-the-saved-document"></a>Napisz kod, aby dodać tekst do zapisanego dokumentu
- Następnie Dodaj kod do pliku kodu ThisAddIn. Nowy kod używa modelu obiektów programu Word do dodawania tekstu standardowego do każdego zapisanego dokumentu. Domyślnie plik kodu ThisAddIn zawiera następujący wygenerowany kod:
+## <a name="write-code-to-add-text-to-the-saved-document"></a>Pisanie kodu w celu dodania tekstu do zapisanego dokumentu
+ Następnie dodaj kod do pliku kodu ThisAddIn. Nowy kod używa modelu obiektów programu Word, aby dodać tekst wzorcowy do każdego zapisanego dokumentu. Domyślnie plik kodu ThisAddIn zawiera następujący wygenerowany kod:
 
-- Częściowa definicja `ThisAddIn` klasy. Ta klasa udostępnia punkt wejścia dla kodu i zapewnia dostęp do modelu obiektów programu Word. Aby uzyskać więcej informacji, zobacz [dodatki narzędzi VSTO dla programu](../vsto/programming-vsto-add-ins.md). Pozostała część `ThisAddIn` klasy jest zdefiniowana w ukrytym pliku kodu, który nie powinien być modyfikowany.
+- Częściowa definicja `ThisAddIn` klasy. Ta klasa zapewnia punkt wejścia dla kodu i zapewnia dostęp do modelu obiektów programu Word. Aby uzyskać więcej informacji, zobacz [Program VSTO Add-ins (Dodatki programu VSTO).](../vsto/programming-vsto-add-ins.md) Pozostała część klasy `ThisAddIn` jest zdefiniowana w ukrytym pliku kodu, który nie powinien być modyfikowany.
 
-- `ThisAddIn_Startup` `ThisAddIn_Shutdown` Programy obsługi zdarzeń i. Te programy obsługi zdarzeń są wywoływane, gdy program Word ładuje i zwalnia dodatek narzędzi VSTO. Te programy obsługi zdarzeń umożliwiają zainicjowanie dodatku VSTO podczas ładowania i oczyszczenie zasobów używanych przez dodatek VSTO po jego wyładowaniu. Aby uzyskać więcej informacji, zobacz [zdarzenia w projektach pakietu Office](../vsto/events-in-office-projects.md).
+- Programy `ThisAddIn_Startup` obsługi zdarzeń i `ThisAddIn_Shutdown` . Te procedury obsługi zdarzeń są wywoływane, gdy program Word ładuje i zwalnia dodatek VSTO. Użyj tych programów obsługi zdarzeń, aby zainicjować dodatek VSTO podczas ładowania i wyczyścić zasoby używane przez dodatek VSTO, gdy jest zwalniany. Aby uzyskać więcej informacji, zobacz [Zdarzenia w projektach pakietu Office.](../vsto/events-in-office-projects.md)
 
 ### <a name="to-add-a-paragraph-of-text-to-the-saved-document"></a>Aby dodać akapit tekstu do zapisanego dokumentu
 
-1. W pliku kodu ThisAddIn Dodaj następujący kod do `ThisAddIn` klasy. Nowy kod definiuje procedurę obsługi zdarzeń dla <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> zdarzenia, które jest zgłaszane po zapisaniu dokumentu.
+1. W pliku kodu ThisAddIn dodaj następujący kod do `ThisAddIn` klasy . Nowy kod definiuje program obsługi zdarzeń dla zdarzenia, które jest <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> wywoływane po zapisaniu dokumentu.
 
     Gdy użytkownik zapisuje dokument, program obsługi zdarzeń dodaje nowy tekst na początku dokumentu.
 
-    [!code-vb[Trin_WordAddInTutorial#1](../vsto/codesnippet/VisualBasic/FirstWordAddIn/ThisAddIn.vb#1)]
-    [!code-csharp[Trin_WordAddInTutorial#1](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#1)]
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/FirstWordAddIn/ThisAddIn.vb" id="Snippet1":::
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs" id="Snippet1":::
 
    > [!NOTE]
-   > Ten kod używa wartości indeksu 1 w celu uzyskania dostępu do pierwszego akapitu w <xref:Microsoft.Office.Interop.Word._Document.Paragraphs%2A> kolekcji. Chociaż Visual Basic i Visual C# używają tablic opartych na liczbie 0, Dolna granica tablicy większości kolekcji w modelu obiektów programu Word to 1. Aby uzyskać więcej informacji, zobacz [pisanie kodu w rozwiązaniach pakietu Office](../vsto/writing-code-in-office-solutions.md).
+   > Ten kod używa wartości indeksu 1, aby uzyskać dostęp do pierwszego akapitu w <xref:Microsoft.Office.Interop.Word._Document.Paragraphs%2A> kolekcji. Chociaż Visual Basic i Visual C# używają tablic opartych na 0, dolna granica tablicy większości kolekcji w modelu obiektów programu Word wynosi 1. Aby uzyskać więcej informacji, zobacz [Pisanie kodu w rozwiązaniach pakietu Office.](../vsto/writing-code-in-office-solutions.md)
 
-2. Jeśli używasz języka C#, Dodaj następujący kod wymagany do `ThisAddIn_Startup` programu obsługi zdarzeń. Ten kod służy do łączenia programu `Application_DocumentBeforeSave` obsługi zdarzeń ze <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> zdarzeniem.
+2. Jeśli używasz języka C#, dodaj następujący wymagany kod do `ThisAddIn_Startup` procedury obsługi zdarzeń. Ten kod służy do łączenia programu `Application_DocumentBeforeSave` obsługi zdarzeń ze <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> zdarzeniem.
 
-    [!code-csharp[Trin_WordAddInTutorial#2](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#2)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs" id="Snippet2":::
 
-   Aby zmodyfikować dokument po jego zapisaniu, poprzednie przykłady kodu używają następujących obiektów:
+   Aby zmodyfikować dokument podczas jego zapisania, poprzednie przykłady kodu używają następujących obiektów:
 
-- `Application`Pole `ThisAddIn` klasy. `Application`Pole zwraca <xref:Microsoft.Office.Interop.Word.Application> obiekt, który reprezentuje bieżące wystąpienie wyrazu.
+- Pole `Application` klasy `ThisAddIn` . Pole `Application` zwraca <xref:Microsoft.Office.Interop.Word.Application> obiekt reprezentujący bieżące wystąpienie programu Word.
 
-- `Doc`Parametr programu obsługi zdarzeń dla <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> zdarzenia. `Doc`Parametr jest <xref:Microsoft.Office.Interop.Word.Document> obiektem, który reprezentuje zapisany dokument. Aby uzyskać więcej informacji, zobacz temat [Omówienie modelu obiektów programu Word](../vsto/word-object-model-overview.md).
+- Parametr `Doc` procedury obsługi zdarzeń <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> dla zdarzenia. Parametr `Doc` jest <xref:Microsoft.Office.Interop.Word.Document> obiektem, który reprezentuje zapisany dokument. Aby uzyskać więcej informacji, zobacz [Omówienie modelu obiektów programu Word](../vsto/word-object-model-overview.md).
 
 ## <a name="test-the-project"></a>Testowanie projektu
 
 ### <a name="to-test-the-project"></a>Aby przetestować projekt
 
-1. Naciśnij klawisz **F5** , aby skompilować i uruchomić projekt.
+1. Naciśnij **klawisz F5,** aby skompilować i uruchomić projekt.
 
-     Podczas kompilowania projektu, kod jest kompilowany do zestawu, który jest dołączony do folderu danych wyjściowych kompilacji dla projektu. Program Visual Studio tworzy również zestaw wpisów rejestru, które umożliwiają programowi Word odnalezienie i załadowanie dodatku VSTO oraz skonfigurowanie ustawień zabezpieczeń na komputerze deweloperskim w celu umożliwienia uruchomienia dodatku VSTO. Aby uzyskać więcej informacji, zobacz [Tworzenie rozwiązań pakietu Office](../vsto/building-office-solutions.md).
+     Podczas kompilowania projektu kod jest kompilowany w zestawie, który znajduje się w folderze wyjściowym kompilacji dla projektu. Visual Studio tworzy również zestaw wpisów rejestru, które umożliwiają programowi Word odnajdywanie i ładowanie dodatku VSTO, a także konfiguruje ustawienia zabezpieczeń na komputerze dewelopera, aby umożliwić uruchamianie dodatku VSTO. Aby uzyskać więcej informacji, zobacz [Build Office solutions (Tworzenie rozwiązań pakietu Office).](../vsto/building-office-solutions.md)
 
-2. W programie Word Zapisz aktywny dokument.
+2. W programie Word zapisz aktywny dokument.
 
 3. Sprawdź, czy do dokumentu został dodany następujący tekst.
 
-     **Ten tekst został dodany za pomocą kodu.**
+     **Ten tekst został dodany przy użyciu kodu.**
 
 4. Zamknij program Word.
 
-## <a name="clean-up-the-project"></a>Wyczyść projekt
- Po zakończeniu opracowywania projektu, Usuń zestaw dodatków VSTO, wpisy rejestru i ustawienia zabezpieczeń z komputera deweloperskiego. W przeciwnym razie dodatek narzędzi VSTO będzie nadal uruchamiany za każdym razem, gdy otworzysz program Word na komputerze deweloperskim.
+## <a name="clean-up-the-project"></a>Czyszczenie projektu
+ Po zakończeniu tworzenia projektu usuń zestaw dodatku VSTO, wpisy rejestru i ustawienia zabezpieczeń z komputera dewelopera. W przeciwnym razie dodatek VSTO będzie nadal uruchamiany przy każdym otwarciu programu Word na komputerze dewelopera.
 
-### <a name="to-clean-up-the-completed-project-on-your-development-computer"></a>Aby wyczyścić ukończony projekt na komputerze deweloperskim
+### <a name="to-clean-up-the-completed-project-on-your-development-computer"></a>Aby wyczyścić ukończony projekt na komputerze dewelopera
 
-1. W programie Visual Studio w menu **kompilacja** kliknij pozycję **czyste rozwiązanie**.
+1. W Visual Studio menu Build  (Kompilacja) kliknij pozycję **Clean Solution (Wyczyść rozwiązanie).**
 
 ## <a name="next-steps"></a>Następne kroki
- Po utworzeniu podstawowego dodatku narzędzi VSTO dla programu Word można dowiedzieć się więcej o sposobach opracowywania dodatków VSTO z następujących tematów:
+ Po utworzeniu podstawowego dodatku VSTO dla programu Word możesz dowiedzieć się więcej na temat tworzenia dodatków VSTO z tych tematów:
 
-- Ogólne zadania programistyczne, które można wykonywać w dodatkach narzędzi VSTO: [programowe dodatki narzędzi VSTO](../vsto/programming-vsto-add-ins.md).
+- Ogólne zadania programistyczne, które można wykonywać w dodatki VSTO: [Dodatki programu VSTO.](../vsto/programming-vsto-add-ins.md)
 
-- Zadania programistyczne, które są specyficzne dla dodatków programu Word VSTO: [rozwiązania programu Word](../vsto/word-solutions.md).
+- Zadania programistyczne specyficzne dla dodatków VSTO programu Word: [rozwiązania programu Word.](../vsto/word-solutions.md)
 
-- Za pomocą modelu obiektów programu Word: [Omówienie modelu obiektów programu](../vsto/word-object-model-overview.md)Word.
+- Korzystanie z modelu obiektów programu Word: [Omówienie modelu obiektów Word](../vsto/word-object-model-overview.md).
 
-- Dostosowywanie interfejsu użytkownika programu Word, na przykład przez dodanie karty niestandardowej do wstążki lub utworzenie własnego niestandardowego okienka zadań: [Dostosowywanie interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md).
+- Dostosowywanie interfejsu użytkownika programu Word, na przykład przez dodanie karty niestandardowej do wstążki lub utworzenie własnego niestandardowego okienka zadań: Dostosowywanie interfejsu [użytkownika pakietu Office.](../vsto/office-ui-customization.md)
 
-- Kompilowanie i debugowanie dodatków narzędzi VSTO dla programu Word: [Tworzenie rozwiązań pakietu Office](../vsto/building-office-solutions.md).
+- Kompilowanie i debugowanie dodatków narzędzi VSTO dla programu Word: [tworzenie rozwiązań pakietu Office.](../vsto/building-office-solutions.md)
 
-- Wdrażanie dodatków narzędzi VSTO dla programu Word: [Wdróż rozwiązanie pakietu Office](../vsto/deploying-an-office-solution.md).
+- Wdrażanie dodatków VSTO dla programu Word: [wdrażanie rozwiązania pakietu Office.](../vsto/deploying-an-office-solution.md)
 
 ## <a name="see-also"></a>Zobacz też
-- [Omówienie programowania rozwiązań dla pakietu Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+- [Omówienie tworzenia rozwiązań pakietu Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Rozwiązania programu Word](../vsto/word-solutions.md)
-- [Dodatki narzędzi VSTO programu](../vsto/programming-vsto-add-ins.md)
-- [Model obiektów programu Word — omówienie](../vsto/word-object-model-overview.md)
+- [Program VSTO Add-ins](../vsto/programming-vsto-add-ins.md)
+- [Omówienie modelu obiektów programu Word](../vsto/word-object-model-overview.md)
 - [Dostosowywanie interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md)
 - [Tworzenie rozwiązań pakietu Office](../vsto/building-office-solutions.md)
-- [Wdróż rozwiązanie pakietu Office](../vsto/deploying-an-office-solution.md)
-- [Szablony projektów pakietu Office — omówienie](../vsto/office-project-templates-overview.md)
+- [Wdrażanie rozwiązania pakietu Office](../vsto/deploying-an-office-solution.md)
+- [Omówienie szablonów projektów pakietu Office](../vsto/office-project-templates-overview.md)

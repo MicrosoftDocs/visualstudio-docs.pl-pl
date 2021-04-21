@@ -1,6 +1,6 @@
 ---
-title: 'Instrukcje: Programowane Resetowanie zakresów w dokumentach programu Word'
-description: Dowiedz się, jak za pomocą programu Visual Studio programowo zmienić rozmiar istniejącego zakresu w dokumencie programu Microsoft Word.
+title: 'How to: Programowe resetowanie zakresów w dokumentach programu Word'
+description: Dowiedz się, jak za pomocą Visual Studio programowo zmienić rozmiar istniejącego zakresu w dokumencie programu Microsoft Word.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -16,57 +16,57 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 562b4dab6c26af12760190b01ff460c7080a3bb2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ae3b8f92231b77d81c1ef68e0929ccd000653b14
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958781"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824149"
 ---
-# <a name="how-to-programmatically-reset-ranges-in-word-documents"></a>Instrukcje: Programowane Resetowanie zakresów w dokumentach programu Word
-  Użyj <xref:Microsoft.Office.Interop.Word.Range.SetRange%2A> metody, aby zmienić rozmiar istniejącego zakresu w dokumencie programu Microsoft Office Word.
+# <a name="how-to-programmatically-reset-ranges-in-word-documents"></a>How to: Programowe resetowanie zakresów w dokumentach programu Word
+  Użyj metody <xref:Microsoft.Office.Interop.Word.Range.SetRange%2A> , aby zmienić rozmiar istniejącego zakresu w Microsoft Office word.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
 ## <a name="to-reset-an-existing-range"></a>Aby zresetować istniejący zakres
 
-1. Ustaw początkowy zakres zaczynający się od pierwszych siedmiu znaków w dokumencie.
+1. Ustaw początkowy zakres, zaczynając od pierwszych siedmiu znaków w dokumencie.
 
-     Poniższy przykład kodu może być używany w dostosowaniu na poziomie dokumentu.
+     Poniższy przykład kodu może służyć do dostosowywania na poziomie dokumentu.
 
-     [!code-vb[Trin_VstcoreWordAutomation#43](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#43)]
-     [!code-csharp[Trin_VstcoreWordAutomation#43](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#43)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet43":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet43":::
 
      Poniższy przykład kodu może być używany w dodatku VSTO. Ten kod używa aktywnego dokumentu.
 
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#43](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#43)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#43](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#43)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb" id="Snippet43":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs" id="Snippet43":::
 
-2. Użyj, <xref:Microsoft.Office.Interop.Word.Range.SetRange%2A> Aby rozpocząć zakres od drugiego zdania i zakończyć je na końcu piątego zdania.
+2. Użyj , aby rozpocząć zakres od drugiego zdania i zakończyć <xref:Microsoft.Office.Interop.Word.Range.SetRange%2A> go na końcu piątego zdania.
 
-     [!code-vb[Trin_VstcoreWordAutomation#44](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#44)]
-     [!code-csharp[Trin_VstcoreWordAutomation#44](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#44)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet44":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet44":::
 
-## <a name="document-level-customization-example"></a>Przykład dostosowywania Document-Level
+## <a name="document-level-customization-example"></a>Document-Level przykład dostosowywania
 
-### <a name="to-reset-an-existing-range-in-a-document-level-customization"></a>Aby zresetować istniejący zakres w dostosowaniu na poziomie dokumentu
+### <a name="to-reset-an-existing-range-in-a-document-level-customization"></a>Aby zresetować istniejący zakres w dostosowywaniu na poziomie dokumentu
 
-1. Poniższy przykład pokazuje kompletny przykład dostosowywania na poziomie dokumentu. Aby użyć tego kodu, należy uruchomić go z `ThisDocument` klasy w projekcie.
+1. W poniższym przykładzie przedstawiono kompletny przykład dostosowywania na poziomie dokumentu. Aby użyć tego kodu, uruchom go z `ThisDocument` klasy w projekcie.
 
-     [!code-vb[Trin_VstcoreWordAutomation#42](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#42)]
-     [!code-csharp[Trin_VstcoreWordAutomation#42](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#42)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet42":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet42":::
 
-## <a name="vsto-add-in-example"></a>Przykład dodatku narzędzi VSTO
+## <a name="vsto-add-in-example"></a>Przykład dodatku VSTO
 
-### <a name="to-reset-an-existing-range-in-a-vsto-add-in"></a>Aby zresetować istniejący zakres w dodatku narzędzi VSTO
+### <a name="to-reset-an-existing-range-in-a-vsto-add-in"></a>Aby zresetować istniejący zakres w dodatku VSTO
 
-1. Poniższy przykład pokazuje kompletny przykład dla dodatku VSTO. Aby użyć tego kodu, należy uruchomić go z `ThisAddIn` klasy w projekcie.
+1. W poniższym przykładzie przedstawiono kompletny przykład dodatku VSTO. Aby użyć tego kodu, uruchom go z `ThisAddIn` klasy w projekcie.
 
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#42](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#42)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#42](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#42)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb" id="Snippet42":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs" id="Snippet42":::
 
 ## <a name="see-also"></a>Zobacz też
-- [Instrukcje: Programowane poszerzanie zakresów w dokumentach](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
-- [Instrukcje: programowe Definiowanie i wybieranie zakresów w dokumentach](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
-- [Instrukcje: programowe pobieranie znaków początkowych i końcowych w zakresach](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)
-- [Instrukcje: programowe zwijanie zakresów lub zaznaczenia w dokumentach](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)
+- [Jak programowo rozszerzyć zakresy w dokumentach](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
+- [Jak programowo definiować i wybierać zakresy w dokumentach](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
+- [How to: Programowe pobieranie znaków początku i końca w zakresach](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)
+- [Jak programowo zwinąć zakresy lub wybory w dokumentach](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)

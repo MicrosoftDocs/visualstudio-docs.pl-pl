@@ -1,6 +1,6 @@
 ---
-title: 'Instrukcje: Programowane uruchamianie obliczeń programu Excel'
-description: Dowiedz się, jak używać programu Visual Studio do programistycznego uruchamiania obliczeń w skoroszycie programu Microsoft Excel.
+title: Jak programowo uruchamiać obliczenia programu Excel
+description: Dowiedz się, jak używać Visual Studio do programowego uruchamiania obliczeń w skoroszycie programu Microsoft Excel.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -17,48 +17,48 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 761f58027171ccaa667aa26569e41c3b4a8b75a0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9fdc9cbc1966ac0fd862b795d66c7004f5089499
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880479"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107823967"
 ---
-# <a name="how-to-programmatically-run-excel-calculations"></a>Instrukcje: Programowane uruchamianie obliczeń programu Excel
-  Podobny proces służy do uruchamiania obliczeń w <xref:Microsoft.Office.Tools.Excel.NamedRange> formancie lub natywnym obiekcie zakresu programu Excel.
+# <a name="how-to-programmatically-run-excel-calculations"></a>Jak programowo uruchamiać obliczenia programu Excel
+  Podobny proces umożliwia uruchamianie obliczeń w kontrolce lub natywnym obiekcie <xref:Microsoft.Office.Tools.Excel.NamedRange> zakresu programu Excel.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
 ## <a name="run-calculations-in-a-namedrange-control"></a>Uruchamianie obliczeń w kontrolce NamedRange
- Poniższy przykład tworzy <xref:Microsoft.Office.Tools.Excel.NamedRange> w komórce A1, a następnie oblicza komórkę. Ten kod musi być umieszczony w klasie arkusza, a nie w `ThisWorkbook` klasie.
+ Poniższy przykład tworzy w <xref:Microsoft.Office.Tools.Excel.NamedRange> komórce A1, a następnie oblicza komórkę. Ten kod musi być umieszczony w klasie arkusza, a nie w `ThisWorkbook` klasie .
 
 ### <a name="to-run-calculations-in-a-namedrange-control"></a>Aby uruchomić obliczenia w kontrolce NamedRange
 
 1. Utwórz nazwany zakres.
 
-     [!code-csharp[Trin_VstcoreExcelAutomation#75](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#75)]
-     [!code-vb[Trin_VstcoreExcelAutomation#75](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#75)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet75":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet75":::
 
-2. Wywołaj <xref:Microsoft.Office.Tools.Excel.NamedRange.Calculate%2A> metodę o określonym zakresie.
+2. Wywołaj <xref:Microsoft.Office.Tools.Excel.NamedRange.Calculate%2A> metodę określonego zakresu.
 
-     [!code-csharp[Trin_VstcoreExcelAutomation#76](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#76)]
-     [!code-vb[Trin_VstcoreExcelAutomation#76](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#76)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet76":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet76":::
 
 ## <a name="run-calculations-in-a-native-excel-range"></a>Uruchamianie obliczeń w natywnym zakresie programu Excel
 
-### <a name="to-run-calculations-in-a-native-excel-range"></a>Aby uruchomić obliczenia w natywnym zakresie programu Excel
+### <a name="to-run-calculations-in-a-native-excel-range"></a>Uruchamianie obliczeń w natywnym zakresie programu Excel
 
 1. Utwórz nazwany zakres.
 
-     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#30](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#30)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#30](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#30)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs" id="Snippet30":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb" id="Snippet30":::
 
-2. Wywołaj <xref:Microsoft.Office.Interop.Excel.Range.Calculate%2A> metodę o określonym zakresie.
+2. Wywołaj <xref:Microsoft.Office.Interop.Excel.Range.Calculate%2A> metodę określonego zakresu.
 
-     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#31](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#31)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#31](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#31)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs" id="Snippet31":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb" id="Snippet31":::
 
 ## <a name="see-also"></a>Zobacz też
-- [Pracuj z zakresami](../vsto/working-with-ranges.md)
-- [NamedRange — formant](../vsto/namedrange-control.md)
+- [Praca z zakresami](../vsto/working-with-ranges.md)
+- [NamedRange, kontrolka](../vsto/namedrange-control.md)
 - [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)

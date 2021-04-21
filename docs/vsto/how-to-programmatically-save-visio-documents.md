@@ -1,6 +1,6 @@
 ---
-title: 'Instrukcje: programowe zapisywanie dokumentów programu Visio'
-description: Dowiedz się, jak można użyć programu Visual Studio do programistycznego zapisywania istniejących dokumentów programu Microsoft Visio i nowych dokumentów, które nie zostały jeszcze zapisane.
+title: 'How to: Programmatically save Visio documents (2017: Programowe zapisywanie dokumentów programu Visio)'
+description: Dowiedz się, jak za pomocą Visual Studio programowo zapisywać istniejące dokumenty programu Microsoft Visio i nowe dokumenty, które nie zostały jeszcze zapisane.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,71 +15,71 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a9d3b8e7d7e7e1a0a58dee5ceb5f1ca49753930f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 340d813a19c0c0dc5c347d3cfe4c7b29ff1bd049
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99947765"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828998"
 ---
-# <a name="how-to-programmatically-save-visio-documents"></a>Instrukcje: programowe zapisywanie dokumentów programu Visio
-  Istnieje kilka sposobów zapisywania Microsoft Office dokumentów programu Visio:
+# <a name="how-to-programmatically-save-visio-documents"></a>How to: Programmatically save Visio documents (2017: Programowe zapisywanie dokumentów programu Visio)
+  Istnieje kilka sposobów zapisywania dokumentów Microsoft Office Visio:
 
 - Zapisz zmiany w istniejącym dokumencie.
 
-- Zapisz nowy dokument lub Zapisz dokument z nową nazwą.
+- Zapisz nowy dokument lub zapisz go pod nową nazwą.
 
 - Zapisz dokument z określonymi argumentami.
 
-  Aby uzyskać więcej informacji, zobacz dokumentację referencyjną języka VBA dla [Microsoft.Office.Interop.Visio.Document. Metoda Save](/office/vba/api/Visio.Document.Save) [Microsoft.Office.Interop.Visio.Document. SaveAs](/office/vba/api/Visio.Document.SaveAs) i [Microsoft.Office.Interop.Visio.Document. SaveAsEx](/office/vba/api/Visio.Document.SaveAsEx) .
+  Aby uzyskać więcej informacji, zobacz dokumentację referencyjną dotyczącąMicrosoft.Office.Interop.Visio.Doc[ VBA. Zapisz](/office/vba/api/Visio.Document.Save) [ metodę,Microsoft.Office.Interop.Visio.Document. Metoda SaveAs](/office/vba/api/Visio.Document.SaveAs) [ iMicrosoft.Office.Interop.Visio.Document. SaveAsEx,](/office/vba/api/Visio.Document.SaveAsEx) metoda.
 
-## <a name="save-an-existing-document"></a>Zapisz istniejący dokument
+## <a name="save-an-existing-document"></a>Zapisywanie istniejącego dokumentu
 
 ### <a name="to-save-a-document"></a>Aby zapisać dokument
 
-- Wywołaj `Microsoft.Office.Interop.Visio.Document.Save` metodę `Microsoft.Office.Tools.Visio.Document` klasy dokumentu, który został wcześniej zapisany.
+- Wywołaj `Microsoft.Office.Interop.Visio.Document.Save` metodę `Microsoft.Office.Tools.Visio.Document` klasy dokumentu, która została wcześniej zapisana.
 
-     Aby użyć tego przykładu kodu, należy uruchomić go z `ThisAddIn` klasy w projekcie.
+     Aby użyć tego przykładu kodu, uruchom go z `ThisAddIn` klasy w projekcie.
 
     > [!NOTE]
-    > `Microsoft.Office.Interop.Visio.Document.Save`Metoda zgłasza wyjątek, jeśli nowy dokument programu Visio nie został jeszcze zapisany.
+    > Metoda `Microsoft.Office.Interop.Visio.Document.Save` zgłasza wyjątek, jeśli nowy dokument programu Visio nie został jeszcze zapisany.
 
-     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#11](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#11)]
-     [!code-vb[Trin_VstcoreVisioAutomationAddIn#11](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#11)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs" id="Snippet11":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb" id="Snippet11":::
 
-## <a name="save-a-document-with-a-new-name"></a>Zapisz dokument o nowej nazwie
- Użyj `Microsoft.Office.Interop.Visio.Document.SaveAs` metody do zapisania nowego dokumentu lub dokumentu o nowej nazwie. Ta metoda wymaga, aby określić nową nazwę pliku.
+## <a name="save-a-document-with-a-new-name"></a>Zapisywanie dokumentu pod nową nazwą
+ Użyj metody , aby zapisać nowy dokument lub dokument `Microsoft.Office.Interop.Visio.Document.SaveAs` o nowej nazwie. Ta metoda wymaga określenia nowej nazwy pliku.
 
-### <a name="to-save-the-active-visio-document-with-a-new-name"></a>Aby zapisać aktywny dokument programu Visio przy użyciu nowej nazwy
+### <a name="to-save-the-active-visio-document-with-a-new-name"></a>Aby zapisać aktywny dokument programu Visio pod nową nazwą
 
-- Wywołaj `Microsoft.Office.Interop.Visio.Document.SaveAs` metodę, `Microsoft.Office.Tools.Visio.Document` która ma zostać zapisana, przy użyciu w pełni kwalifikowanej ścieżki, w tym nazwy pliku. Jeśli plik o tej nazwie już istnieje w tym folderze, zostanie nadpisany w trybie dyskretnym.
+- Wywołaj metodę metody , którą chcesz zapisać, używając w pełni `Microsoft.Office.Interop.Visio.Document.SaveAs` `Microsoft.Office.Tools.Visio.Document` kwalifikowanej ścieżki, w tym nazwy pliku. Jeśli plik o tej nazwie już istnieje w tym folderze, zostanie dyskretnie zastąpiony.
 
-     Aby użyć tego przykładu kodu, należy uruchomić go z `ThisAddIn` klasy w projekcie.
+     Aby użyć tego przykładu kodu, uruchom go z `ThisAddIn` klasy w projekcie.
 
-     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#10](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#10)]
-     [!code-vb[Trin_VstcoreVisioAutomationAddIn#10](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#10)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs" id="Snippet10":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb" id="Snippet10":::
 
-## <a name="save-a-document-with-a-new-name-and-specified-arguments"></a>Zapisz dokument z nową nazwą i określonymi argumentami
- Użyj `Microsoft.Office.Interop.Visio.Document.SaveAsEx` metody, aby zapisać dokument z nową nazwą, i określ odpowiednie argumenty, które mają być zastosowane do dokumentu.
+## <a name="save-a-document-with-a-new-name-and-specified-arguments"></a>Zapisywanie dokumentu z nową nazwą i określonymi argumentami
+ Użyj metody `Microsoft.Office.Interop.Visio.Document.SaveAsEx` , aby zapisać dokument pod nową nazwą i określić wszelkie odpowiednie argumenty, które mają być stosowane do dokumentu.
 
 ### <a name="to-save-document-with-a-new-name-and-specified-arguments"></a>Aby zapisać dokument z nową nazwą i określonymi argumentami
 
-- Wywołaj `Microsoft.Office.Interop.Visio.Document.SaveAsEx` metodę, `Microsoft.Office.Tools.Visio.Document` która ma zostać zapisana, przy użyciu w pełni kwalifikowanej ścieżki, w tym nazwy pliku. Jeśli plik o tej nazwie już istnieje w tym folderze, zgłaszany jest wyjątek.
+- Wywołaj metodę metody , którą chcesz zapisać, używając w pełni kwalifikowanej `Microsoft.Office.Interop.Visio.Document.SaveAsEx` `Microsoft.Office.Tools.Visio.Document` ścieżki, w tym nazwy pliku. Jeśli plik o tej nazwie już istnieje w tym folderze, jest zgłaszany wyjątek.
 
-     Poniższy przykład kodu zapisuje aktywny dokument przy użyciu nowej nazwy, oznacza dokument jako tylko do odczytu i pokazuje dokument z ostatnio używanej listy dokumentów. Aby użyć tego przykładu kodu, należy uruchomić go z `ThisAddIn` klasy w projekcie.
+     Poniższy przykład kodu zapisuje aktywny dokument pod nową nazwą, oznacza dokument jako tylko do odczytu i wyświetla dokument na liście ostatnio używanych dokumentów. Aby użyć tego przykładu kodu, uruchom go z `ThisAddIn` klasy w projekcie.
 
-     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#12](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#12)]
-     [!code-vb[Trin_VstcoreVisioAutomationAddIn#12](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#12)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs" id="Snippet12":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb" id="Snippet12":::
 
-## <a name="compile-the-code"></a>Kompiluj kod
+## <a name="compile-the-code"></a>Kompilowanie kodu
  Ten przykład kodu wymaga następujących czynności:
 
-- Aby zapisać dokument o nowej nazwie, katalog o nazwie musi znajdować się `Test` w folderze *Moje dokumenty* (dla systemu Windows XP i starszych) lub folderu *dokumenty* (dla systemu Windows Vista).
+- Aby zapisać dokument o nowej nazwie, katalog o nazwie musi znajdować się w folderze Moje dokumenty (dla systemu Windows XP i starszych) lub w `Test` folderze *Dokumenty* (dla systemu Windows Vista). 
 
 ## <a name="see-also"></a>Zobacz też
 - [Rozwiązania programu Visio](../vsto/visio-solutions.md)
-- [Model obiektów programu Visio — Omówienie](../vsto/visio-object-model-overview.md)
-- [Instrukcje: Programowane tworzenie nowych dokumentów programu Visio](../vsto/how-to-programmatically-create-new-visio-documents.md)
-- [Instrukcje: Programowane otwieranie dokumentów Visio](../vsto/how-to-programmatically-open-visio-documents.md)
-- [Instrukcje: Programowane Zamykanie dokumentów programu Visio](../vsto/how-to-programmatically-close-visio-documents.md)
-- [Instrukcje: Programowane drukowanie dokumentów programu Visio](../vsto/how-to-programmatically-print-visio-documents.md)
+- [Omówienie modelu obiektów programu Visio](../vsto/visio-object-model-overview.md)
+- [How to: Programmatically create new Visio documents (Tworzyć programowo nowe dokumenty programu Visio)](../vsto/how-to-programmatically-create-new-visio-documents.md)
+- [Jak programowo otwierać dokumenty programu Visio](../vsto/how-to-programmatically-open-visio-documents.md)
+- [Pisano: Programowe zamykanie dokumentów programu Visio](../vsto/how-to-programmatically-close-visio-documents.md)
+- [Jak programowo drukować dokumenty programu Visio](../vsto/how-to-programmatically-print-visio-documents.md)

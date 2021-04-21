@@ -1,6 +1,6 @@
 ---
-title: Programowe Znajdowanie adresu e-mail w kontaktach
-description: Dowiedz się, jak za pomocą programu Visual Studio programowo znaleźć adres e-mail w kontaktach programu Microsoft Outlook.
+title: Programowe znajdowanie adresu e-mail w kontaktach
+description: Dowiedz się, jak używać Visual Studio, aby programowo znaleźć adres e-mail w kontaktach programu Microsoft Outlook.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,28 +16,28 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 43baafee82cf38dfd346ebe50e9b348857a3fdc4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cd977840cd75081d87011540ca00675fb84cee36
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920458"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828946"
 ---
-# <a name="how-to-programmatically-search-for-an-email-address-in-contacts"></a>Instrukcje: programowe wyszukiwanie adresu e-mail w kontaktach
-  Ten przykład przeszukuje folder Contact dla kontaktów, które mają nazwę domeny **example.com** w swoich adresach e-mail.
+# <a name="how-to-programmatically-search-for-an-email-address-in-contacts"></a>How to: Programowe wyszukiwanie adresu e-mail w kontaktach
+  Ten przykład wyszukuje w folderze kontaktów kontakty, które mają nazwę **example.com** w ich adresach e-mail.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="example"></a>Przykład
- [!code-csharp[Trin_OL_SearchEmail#1](../vsto/codesnippet/CSharp/Trin_OL_SearchEmail/thisaddin.cs#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OL_SearchEmail/thisaddin.cs" id="Snippet1":::
 
-## <a name="compile-the-code"></a>Kompiluj kod
+## <a name="compile-the-code"></a>Kompilowanie kodu
  Ten przykład wymaga:
 
-- Kontakty, które mają nazwę domeny **example.com** w swoich adresach e-mail (na przykład `somebody@example.com` ), i które mają imiona i nazwiska.
+- Kontakty, które mają nazwę **example.com** w adresach e-mail (na przykład ), i które `somebody@example.com` mają imiona i nazwiska.
 
 ## <a name="see-also"></a>Zobacz też
-- [Pracuj z elementami kontaktów](../vsto/working-with-contact-items.md)
-- [Instrukcje: Programowane wysyłanie wiadomości e-mail](../vsto/how-to-programmatically-send-e-mail-programmatically.md)
-- [Instrukcje: programowe uzyskiwanie dostępu do kontaktów programu Outlook](../vsto/how-to-programmatically-access-outlook-contacts.md)
-- [Instrukcje: programowe Dodawanie wpisu do kontaktów programu Outlook](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)
+- [Praca z elementami kontaktów](../vsto/working-with-contact-items.md)
+- [Jak programowo wysyłać wiadomości e-mail](../vsto/how-to-programmatically-send-e-mail-programmatically.md)
+- [Szybki start: Programowy dostęp do kontaktów programu Outlook](../vsto/how-to-programmatically-access-outlook-contacts.md)
+- [Jak programowo dodać wpis do kontaktów programu Outlook](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)
