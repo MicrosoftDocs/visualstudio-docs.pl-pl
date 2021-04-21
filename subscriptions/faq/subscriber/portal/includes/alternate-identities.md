@@ -10,18 +10,18 @@ author: CaityBuschlen
 ms.author: cabuschl
 manager: ''
 robots: ''
-ms.date: 4/3/2020
+ms.date: 04/20/2020
 ms.faqid: q1_5
-ms.openlocfilehash: 04c6f3473f31f438afb9785cc460aa0da38605d5
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
-ms.translationtype: HT
+ms.openlocfilehash: 87d2633cb76a92c9a1c73651f3f57b2a139240f1
+ms.sourcegitcommit: 367a2d9df789aa617abaa09b0cd0a18db7357d0c
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "91838428"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107821052"
 ---
 ## <a name="how-do-i-add-alternate-identities-to-my-subscription-and-how-does-this-impact-my-azure-credits-and-azure-devops"></a>Jak mogę dodać alternatywne tożsamości do mojej subskrypcji i jak wpływa to na moje środki na korzystanie z platformy Azure i usługę Azure DevOps?
 
-Dodanie alternatywnego konta do subskrypcji programu Visual Studio pozwala uzyskać dostęp do korzyści z subskrypcji, takich jak usługa Azure DevOps i platforma Azure, przy użyciu innej tożsamości niż ta, do której jest przypisana subskrypcja. W przeszłości ta funkcja była dostępna tylko wtedy, gdy subskrypcja programu Visual Studio (VS) była przypisana do konta Microsoft (MSA). Teraz ta funkcja została rozszerzona na konta służbowe w usłudze Azure Active Directory (Azure AD).
+Dodanie alternatywnego konta do subskrypcji programu Visual Studio pozwala uzyskać dostęp do korzyści z subskrypcji, takich jak usługa Azure DevOps i platforma Azure, przy użyciu innej tożsamości niż ta, do której jest przypisana subskrypcja. W przeszłości ta funkcja była dostępna tylko wtedy, Visual Studio subskrypcji usługi (VS) została przypisana do konta Microsoft (MSA).  Rozszerzyliśmy tę funkcję dla kont służbowych w usłudze Azure Active Directory (Azure AD).
 
 Nie powoduje to udostępnienia kopii subskrypcji dla innego konta. Umożliwia to tylko uzyskanie dostępu do dwóch korzyści za pomocą alternatywnego konta.
 
