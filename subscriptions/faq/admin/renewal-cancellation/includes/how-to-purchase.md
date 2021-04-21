@@ -6,13 +6,13 @@ ms.topic: include
 ms.assetid: c8dd39de-bf7f-40a2-a203-f2be21b87f5c
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 01/27/2021
-ms.openlocfilehash: a2dca00b1a7ebea80a883825783785c84c2352cc
-ms.sourcegitcommit: cfeffe2364275a347db0ba2dce36d8e80001c081
+ms.date: 04/20/2021
+ms.openlocfilehash: c18d855ad79bc3463e310a9fcf1c3a17ea5c6fbc
+ms.sourcegitcommit: 367a2d9df789aa617abaa09b0cd0a18db7357d0c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99104445"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107800759"
 ---
 ## <a name="how-do-i-purchase-visual-studio-subscriptions"></a>Jak mogę kupić subskrypcje programu Visual Studio?
 Subskrypcje programu Visual Studio można kupować za pośrednictwem wielu kanałów, w tym w ramach  [licencjonowania zbiorowego](https://www.microsoft.com/licensing/default), w witrynie  [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions) i w sklepie [Microsoft Store](https://www.microsoft.com/store/collections/visualstudio).  
@@ -25,7 +25,9 @@ Detaliczne subskrypcje programu Visual Studio dostępne za pośrednictwem sklepu
 - [Visual Studio Professional](https://www.microsoft.com/p/visual-studio-professional-subscription/dg7gmgf0dst3?activetab=pivot%3aoverviewtab) 
 - [Visual Studio Test Professional](https://www.microsoft.com/p/visual-studio-test-professional-subscription/dg7gmgf0dst6?activetab=pivot%3aoverviewtab) 
 
-Każda z tych subskrypcji oferuje opcję dokonania początkowego zakupu lub odnowienia istniejącej subskrypcji. Cennik odnawiania uwzględnia znaczący rabat i jest dostępny tylko dla istniejących subskrypcji. Aby móc skorzystać z obniżonej ceny odnowienia subskrypcji, należy odnawiać subskrypcje, zanim wygasną. 
+Każda z tych subskrypcji oferuje opcję zakupu początkowego lub odnowienia istniejącej subskrypcji. Cennik odnawiania uwzględnia znaczący rabat i jest dostępny tylko dla istniejących subskrypcji. Aby móc skorzystać z obniżonej ceny odnowienia subskrypcji, należy odnawiać subskrypcje, zanim wygasną. 
+
+Jeśli chcesz dokonać zakupu usługi Visual Studio raz bez subskrypcji lub dowolnych korzyści, które są zawarte w ramach subskrypcji, odwiedź stronę Microsoft Store for [Visual Studio Professional 2019](https://www.microsoft.com/p/visual-studio-professional-2019/dg7gmgf0f6q1?cid=msft_web_collection&activetab=pivot%3aoverviewtab). 
 
 ### <a name="visual-studio-marketplace"></a>Witryna Visual Studio Marketplace 
 Miesięczne subskrypcje umożliwiają wypożyczanie programu Visual Studio i usługi Azure DevOps bez długoterminowej umowy. Rozliczanie jest obsługiwane za pośrednictwem subskrypcji platformy Microsoft Azure. Jeśli nie masz jeszcze subskrypcji platformy Azure, możesz skonfigurować ją bezpłatnie podczas dokonywania pierwszego zakupu.  
@@ -35,4 +37,4 @@ Miesięczne subskrypcje umożliwiają wypożyczanie programu Visual Studio i us�
 [Przeczytaj więcej](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-billing-faq) na temat comiesięcznych rozliczeń subskrypcji programu Visual Studio. 
 
 ### <a name="volume-licensing"></a>Licencjonowanie zbiorowe 
-Subskrypcje licencjonowania zbiorowego są dostępne, gdy organizacja musi zakupić dużą liczbę subskrypcji. [Przeczytaj więcej](https://www.microsoft.com/licensing/how-to-buy/how-to-buy) na temat kupowania w ramach licencjonowania zbiorowego.  
+Subskrypcje licencjonowania zbiorowego są dostępne, gdy organizacja musi zakupić dużą liczbę subskrypcji. [Przeczytaj więcej na](https://www.microsoft.com/licensing/how-to-buy/how-to-buy) temat zakupów w ramach licencjonowania zbiorowego.  

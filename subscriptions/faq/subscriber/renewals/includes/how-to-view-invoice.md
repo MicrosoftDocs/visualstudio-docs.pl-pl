@@ -1,23 +1,23 @@
 ---
-title: Jak mogę wyświetlić moje faktury?
-description: Jak mogę Wyświetl moją fakturę za miesięczną i roczną subskrypcję programu Visual Studio
+title: Jak mogę wyświetlić moją fakturę?
+description: Jak mogę wyświetlić fakturę za miesięczne i roczne Visual Studio subskrypcji
 ms.faqid: q4_5
 ms.topic: include
 ms.assetid: 2b91ea18-d8d5-4a75-a2cd-4996e63d77e8
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 01/29/2021
-ms.openlocfilehash: 722fcc9425b2fdc8b9aba62ca846d921e6186b97
-ms.sourcegitcommit: cfeffe2364275a347db0ba2dce36d8e80001c081
+ms.date: 04/20/2021
+ms.openlocfilehash: 1d86c3f591a5b1d612a5cae5b087f6164a386e16
+ms.sourcegitcommit: 367a2d9df789aa617abaa09b0cd0a18db7357d0c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99104549"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107800884"
 ---
-## <a name="how-do-i-view-my-invoice-for-monthly-and-annual-subscriptions"></a>Jak mogę wyświetlić moje faktury miesięcznie i rocznych subskrypcji?
+## <a name="how-do-i-view-my-invoice-for-monthly-and-annual-subscriptions"></a>Jak mogę wyświetlić fakturę za subskrypcje miesięczne i roczne?
 
-Miesięczne subskrypcje programu Visual Studio (i roczne subskrypcje w przypadku zakupów przed 2018 grudnia) są rozliczane za pomocą platformy Azure, a rachunek można znaleźć w [Azure Portal](https://portal.azure.com/). 
+Miesięczne Visual Studio subskrypcji (i roczne subskrypcje zakupione przed grudniem 2018 r.) są rozliczane za pośrednictwem platformy Azure, a rachunek można znaleźć w [Azure Portal](https://portal.azure.com/). 
 
-Aby wyświetlić fakturę subskrypcji programu Visual Studio:
+Aby wyświetlić fakturę Visual Studio subskrypcji:
 1. Zaloguj się w witrynie [Azure Portal](https://portal.azure.com/). 
-0. Kliknij blok **Cost Management i rozliczeń** w menu, aby znaleźć przegląd, listę subskrypcji i faktury. 
+0. Kliknij blok **Cost Management + Billing** w menu, aby znaleźć przegląd, listę subskrypcji i faktury. 
