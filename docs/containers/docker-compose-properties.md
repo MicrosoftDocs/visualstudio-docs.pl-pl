@@ -1,26 +1,26 @@
 ---
-title: Docker Compose ustawienia kompilacji
+title: Docker Compose ustawień kompilacji
 author: ghogen
-description: Dowiedz się, jak edytować Docker Compose właściwości kompilacji, aby dostosować sposób kompilowania i uruchamiania aplikacji Docker Compose przez program Visual Studio.
+description: Dowiedz się, jak edytować Docker Compose kompilacji, aby dostosować sposób Visual Studio kompilacji i Docker Compose aplikacji.
 ms.custom: SEO-VS-2020
 ms.author: ghogen
-ms.date: 08/12/2019
+ms.date: 04/06/2021
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: 4478656af7fff4cfd3a0fdafefe623af5811154f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 7f1ebb11133c640c2e0bdcfd84660592792d4205
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105068300"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825007"
 ---
 # <a name="docker-compose-build-properties"></a>Docker Compose właściwości kompilacji
 
-Oprócz właściwości kontrolujących poszczególne projekty platformy Docker, opisanych we [właściwościach kompilacji narzędzi kontenera](container-msbuild-properties.md), można również dostosować sposób, w jaki program Visual Studio kompiluje projekty Docker Compose przez ustawienie właściwości Docker Compose używanych przez MSBuild do kompilowania rozwiązania. Możesz również kontrolować sposób, w jaki debuger programu Visual Studio uruchamia Docker Compose aplikacje przez ustawienie etykiet plików w Docker Compose pliki konfiguracji.
+Oprócz właściwości, które kontrolują poszczególne projekty platformy Docker, opisanych we właściwościach kompilacji narzędzi [Container Tools,](container-msbuild-properties.md)można również dostosować sposób kompilowania projektów platformy Visual Studio Docker Compose przez ustawienie właściwości platformy Docker Compose, których program MSBuild używa do kompilowania rozwiązania. Możesz również kontrolować sposób, w jaki debuger Visual Studio uruchamia aplikacje Docker Compose, ustawiając etykiety plików w Docker Compose konfiguracji.
 
 ## <a name="how-to-set-the-msbuild-properties"></a>Jak ustawić właściwości programu MSBuild
 
-Aby ustawić wartość właściwości, edytuj plik projektu. W przypadku właściwości Docker Compose ten plik projektu jest jednym z rozszerzeniem. dcproj, o ile nie wskazano inaczej w tabeli w następnej sekcji. Załóżmy na przykład, że chcesz określić uruchamianie przeglądarki po rozpoczęciu debugowania. `DockerLaunchAction`Właściwość w pliku projektu. dcproj można ustawić w następujący sposób.
+Aby ustawić wartość właściwości, edytuj plik projektu. W Docker Compose tego pliku projektu jest plik z rozszerzeniem dcproj, chyba że określono inaczej w tabeli w następnej sekcji. Załóżmy na przykład, że chcesz określić, aby przeglądarka uruchamiała się po rozpoczęciu debugowania. Właściwość w pliku projektu dcproj można ustawić `DockerLaunchAction` w następujący sposób.
 
 ```xml
 <PropertyGroup>
@@ -28,31 +28,31 @@ Aby ustawić wartość właściwości, edytuj plik projektu. W przypadku właśc
 </PropertyGroup>
 ```
 
-Możesz dodać ustawienie właściwości do istniejącego `PropertyGroup` elementu lub jeśli nie istnieje, Utwórz nowy `PropertyGroup` element.
+Możesz dodać ustawienie właściwości do istniejącego elementu lub, jeśli go nie `PropertyGroup` ma, utworzyć nowy `PropertyGroup` element.
 
 ## <a name="docker-compose-msbuild-properties"></a>Właściwości narzędzia Docker Compose w programie MSBuild
 
-W poniższej tabeli przedstawiono właściwości programu MSBuild dostępne dla projektów Docker Compose.
+W poniższej tabeli przedstawiono właściwości programu MSBuild dostępne dla Docker Compose projektów.
 
 | Nazwa właściwości | Lokalizacja | Opis | Wartość domyślna  |
 |---------------|----------|-------------|----------------|
-|AdditionalComposeFilePaths|dcproj|Określa dodatkowe pliki redagowania na liście rozdzielanej średnikami do wysłania do docker-compose.exe dla wszystkich poleceń. Ścieżki względne z pliku projektu platformy Docker (dcproj) są dozwolone.|-|
-|DockerComposeBaseFilePath|dcproj|Określa pierwszą część nazw plików w plikach do redagowania platformy Docker bez rozszerzenia *. yml* . Na przykład: <br>1. DockerComposeBaseFilePath = null/undefined: Użyj podstawowej ścieżki pliku *Docker-Zredaguj*, a pliki będą nazwane *Docker-Compose. yml* i *Docker-Compose. override. yml*<br>2. DockerComposeBaseFilePath = *mydockercompose*: pliki będą nazwane *mydockercompose. yml* i *mydockercompose. override. yml*<br> 3. DockerComposeBaseFilePath = *.. \mydockercompose*: pliki będą mieć jeden poziom. |Docker-Compose|
-|DockerComposeBuildArguments|dcproj|Określa dodatkowe parametry, które mają zostać przekazane do `docker-compose build` polecenia. Na przykład `--parallel --pull` |
-|DockerComposeDownArguments|dcproj|Określa dodatkowe parametry, które mają zostać przekazane do `docker-compose down` polecenia. Na przykład `--timeout 500`|-|
-|DockerComposeProjectName| dcproj | Jeśli ta wartość jest określona, zastępuje nazwę projektu dla projektu platformy Docker — tworzenie. | "dockercompose" + wygenerowany automatycznie skrót |
-|DockerComposeProjectPath|CSPROJ lub vbproj|Ścieżka względna do pliku platformy Docker-redagowanie projektu (dcproj). Ustaw tę właściwość podczas publikowania projektu usługi, aby znaleźć skojarzone ustawienia kompilacji obrazu przechowywane w pliku Docker-Compose. yml.|-|
-|DockerComposeUpArguments|dcproj|Określa dodatkowe parametry, które mają zostać przekazane do `docker-compose up` polecenia. Na przykład `--timeout 500`|-|
-|DockerDevelopmentMode|dcproj| Kontroluje, czy jest włączona optymalizacja "Kompiluj-on-host" (debugowanie w trybie szybkim).  Dozwolone wartości są **szybkie** i **regularne**. | Duża |
-|DockerLaunchAction| dcproj | Określa akcję uruchamiania do wykonania na F5 lub CTRL + F5.  Dozwolone wartości to None, LaunchBrowser i LaunchWCFTestClient.|Brak|
-|DockerLaunchBrowser| dcproj | Wskazuje, czy ma zostać uruchomiona przeglądarka. Ignorowany, jeśli określono DockerLaunchAction. | Fałsz |
-|DockerServiceName| dcproj|Jeśli określono DockerLaunchAction lub DockerLaunchBrowser, DockerServiceName jest nazwą usługi, która powinna zostać uruchomiona.  Użyj tej właściwości, aby określić, który z potencjalnie wielu projektów, do których może się odwoływać plik platformy Docker, zostanie uruchomiony.|-|
-|DockerServiceUrl| dcproj | Adres URL, który ma być używany podczas uruchamiania przeglądarki.  Prawidłowe tokeny zastępcze to "{serviceipaddress}", "{serviceport}" i "{Schema}".  Na przykład: {Schema}://{ServiceIPAddress}: {serviceport}|-|
-|DockerTargetOS| dcproj | Docelowy system operacyjny używany podczas kompilowania obrazu platformy Docker.|-|
+|AdditionalComposeFilePaths|dcproj|Określa dodatkowe pliki redagowania na liście rozdzielonych średnikami, które mają być wysyłane do docker-compose.exe dla wszystkich poleceń. Ścieżki względne z pliku projektu docker-compose (dcproj) są dozwolone.|-|
+|DockerComposeBaseFilePath|dcproj|Określa pierwszą część nazw plików docker-compose bez *rozszerzenia yml.* Na przykład: <br>1. DockerComposeBaseFilePath = null/undefined: użyj ścieżki pliku podstawowego *docker-compose,* a pliki będą mieć nazwy *docker-compose.yml* i *docker-compose.override.yml*<br>2. DockerComposeBaseFilePath = *mydockercompose*: pliki będą mieć nazwy *mydockercompose.yml* i *mydockercompose.override.yml*<br> 3. DockerComposeBaseFilePath = *.. \mydockercompose*: pliki będą się o jeden poziom. |docker-compose|
+|DockerComposeBuildArguments|dcproj|Określa dodatkowe parametry do przekazania do `docker-compose build` polecenia. Na przykład `--parallel --pull` |
+|DockerComposeDownArguments|dcproj|Określa dodatkowe parametry do przekazania do `docker-compose down` polecenia. Na przykład `--timeout 500`|-|
+|DockerComposeProjectName| dcproj | Jeśli jest określona, zastępuje nazwę projektu docker-compose. | "dockercompose" + automatycznie generowany skrót |
+|DockerComposeProjectPath|csproj lub vbproj|Ścieżka względna do pliku projektu docker-compose (dcproj). Ustaw tę właściwość podczas publikowania projektu usługi, aby znaleźć skojarzone ustawienia kompilacji obrazu przechowywane w pliku docker-compose.yml.|-|
+|DockerComposeUpArguments|dcproj|Określa dodatkowe parametry do przekazania do `docker-compose up` polecenia. Na przykład `--timeout 500`|-|
+|DockerDevelopmentMode|dcproj| Określa, czy optymalizacja "kompilacja na hoście" ("debugowanie w trybie szybkim") jest włączona.  Dozwolone wartości to `Fast` i `Regular` . | `Fast` w konfiguracji debugowania lub `Regular` we wszystkich innych konfiguracjach |
+|DockerLaunchAction| dcproj | Określa akcję uruchamiania do wykonania na klawiszach F5 lub Ctrl+F5.  Dozwolone wartości to None, LaunchBrowser i LaunchWCFTestClient.|Brak|
+|DockerLaunchBrowser| dcproj | Wskazuje, czy uruchomić przeglądarkę. Ignorowane, jeśli określono dockerLaunchAction. | Fałsz |
+|DockerServiceName| dcproj|Jeśli określono parametr DockerLaunchAction lub DockerLaunchBrowser, nazwa DockerServiceName jest nazwą usługi, która powinna zostać uruchomiona.  Użyj tej właściwości, aby określić, do którego z potencjalnie wielu projektów, do których może odwoływać się plik docker-compose, zostanie uruchomiony.|-|
+|DockerServiceUrl| dcproj | Adres URL do użycia podczas uruchamiania przeglądarki.  Prawidłowe tokeny zastępcze to "{ServiceIPAddress}", "{ServicePort}" i "{Scheme}".  Na przykład: {Scheme}://{ServiceIPAddress}:{ServicePort}|-|
+|DockerTargetOS| dcproj | Docelowy system operacyjny używany podczas budowania obrazu platformy Docker.|-|
 
 ## <a name="example"></a>Przykład
 
-Jeśli zmienisz lokalizację plików redagowania platformy Docker, ustawiając `DockerComposeBaseFilePath` ścieżkę względną, należy również upewnić się, że kontekst kompilacji został zmieniony tak, aby odwoływał się do folderu rozwiązania. Na przykład, jeśli plik redagowania platformy Docker jest folderem o nazwie *DockerComposeFiles*, plik do redagowania platformy Docker powinien ustawić kontekst kompilacji na ".." lub ".. w zależności od tego, gdzie jest względem folderu rozwiązania.
+Jeśli zmienisz lokalizację plików docker compose, ustawiając ścieżkę względną, musisz również upewnić się, że kontekst kompilacji został zmieniony, aby odwołań do folderu `DockerComposeBaseFilePath` rozwiązania. Jeśli na przykład plik docker compose jest folderem o nazwie *DockerComposeFiles, wówczas* plik docker compose powinien ustawić kontekst kompilacji na ".." lub ".. /..", w zależności od tego, gdzie jest względna względem folderu rozwiązania.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -77,7 +77,7 @@ Jeśli zmienisz lokalizację plików redagowania platformy Docker, ustawiając `
 </Project>
 ```
 
-Plik *mydockercompose. yml* powinien wyglądać następująco, a kontekst kompilacji ustawił ścieżkę względną folderu rozwiązania (w tym przypadku `..` ).
+Plik *mydockercompose.yml* powinien wyglądać tak, a kontekst kompilacji powinien być ustawiony na ścieżkę względną folderu rozwiązania (w tym przypadku `..` ).
 
 ```yml
 version: '3.4'
@@ -91,11 +91,18 @@ services:
 ```
 
 > [!NOTE]
-> DockerComposeBuildArguments, DockerComposeDownArguments i DockerComposeUpArguments są nowe w programie Visual Studio 2019 w wersji 16,3.
+> DockerComposeBuildArguments, DockerComposeDownArguments i DockerComposeUpArguments są nowościami w wersji 16.3 programu Visual Studio 2019.
 
-## <a name="docker-compose-file-labels"></a>Docker Compose etykiety plików
+## <a name="overriding-visual-studios-docker-compose-configuration"></a>Zastępowanie Visual Studio konfiguracji Docker Compose serwera
 
-Niektóre ustawienia można również przesłonić, umieszczając plik o nazwie *Docker-Compose. vs. Debug. yml* (dla konfiguracji **debugowania** ) lub *Docker-Compose. vs. release. yml* (dla konfiguracji **wydania** ) w tym samym katalogu, w którym znajduje się plik *Docker-Compose. yml* .  W tym pliku można określić następujące ustawienia:
+Niektóre ustawienia można zastąpić, umieszczając plik o nazwie *docker-compose.vs.debug.yml* (dla trybu szybkiego) lub *docker-compose.vs.release.yml* (dla trybu regularnego) w tym samym katalogu co plik   *docker-compose.yml.* 
+
+>[!TIP] 
+>Aby znaleźć wartości domyślne dla dowolnego z tych ustawień, poszukaj w pliku *docker-compose.vs.debug.g.yml* lub *docker-compose.vs.release.g.yml.*
+
+### <a name="docker-compose-file-labels"></a>Docker Compose etykiety plików
+
+ W *pliku docker-compose.vs.debug.yml* lub *docker-compose.vs.release.yml* można zdefiniować etykiety specyficzne dla przesłonięcia w następujący sposób:
 
 ```yml
 services:
@@ -104,18 +111,31 @@ services:
       com.microsoft.visualstudio.debuggee.workingdirectory: "C:\\my_app_folder"
 ```
 
-Użyj podwójnych cudzysłowów wokół wartości, jak w poprzednim przykładzie, i użyj ukośnika odwrotnego jako znaku ucieczki dla ukośników odwrotnych w ścieżkach.
+Użyj podwójnego cudzysłowu wokół wartości, jak w poprzednim przykładzie, i użyj ukośnika odwrotnego jako znaku ucieczki dla ukośników odwrotnych w ścieżkach.
 
 |Nazwa etykiety|Opis|
 |----------|-----------|
-|com. Microsoft. VisualStudio. debugowanego obiektu. arguments|Argumenty przekazane do programu podczas uruchamiania debugowania. W przypadku aplikacji platformy .NET Core te argumenty są zwykle dodatkowymi ścieżkami wyszukiwania pakietów NuGet, po których następuje ścieżka do zestawu wyjściowego projektu.|
-|com. Microsoft. VisualStudio. debugowanego obiektu. killprogram|To polecenie służy do zatrzymania programu debugowanego obiektu, który działa wewnątrz kontenera (w razie potrzeby).|
-|com. Microsoft. VisualStudio. debugowanego obiektu. program|Program został uruchomiony podczas uruchamiania debugowania. W przypadku aplikacji .NET Core to ustawienie jest zazwyczaj **dotnet**.|
-|com. Microsoft. VisualStudio. debugowanego obiektu. WorkingDirectory|Katalog używany jako katalog początkowy podczas uruchamiania debugowania. To ustawienie jest zwykle */App* dla kontenerów systemu Linux lub kontenerów *C:\app* for Windows.|
+|com.microsoft.visualstudio.debuggee.arguments|Argumenty przekazane do programu podczas uruchamiania debugowania. W przypadku aplikacji .NET Core te argumenty są zazwyczaj dodatkowymi ścieżkami wyszukiwania dla pakietów NuGet, po których następuje ścieżka do wyjściowego zestawu projektu.|
+|com.microsoft.visualstudio.debuggee.program|Program został uruchomiony podczas uruchamiania debugowania. W przypadku aplikacji .NET Core to ustawienie jest zwykle **dotnet**.|
+|com.microsoft.visualstudio.debuggee.workingdirectory|Katalog używany jako katalog początkowy podczas uruchamiania debugowania. To ustawienie to zazwyczaj */app dla* kontenerów systemu Linux lub *C:\app dla* kontenerów systemu Windows.|
+|com.microsoft.visualstudio.debuggee.killprogram|To polecenie służy do zatrzymania programu debugowania, który jest uruchomiony wewnątrz kontenera (w razie potrzeby).|
 
-## <a name="customize-the-app-startup-process"></a>Dostosowywanie procesu uruchamiania aplikacji
+### <a name="customize-the-docker-build-process"></a>Dostosowywanie procesu kompilacji platformy Docker
 
-Można uruchomić polecenie lub skrypt niestandardowy przed uruchomieniem aplikacji przy użyciu `entrypoint` Ustawienia i uzależnić się od konfiguracji. Na przykład, jeśli trzeba skonfigurować certyfikat tylko w trybie **debugowania** przez uruchomienie `update-ca-certificates` , ale nie w trybie **wydania** , można dodać następujący kod tylko w *Docker-Compose. vs. Debug. yml*:
+Możesz zadeklarować etap kompilacji w pliku Dockerfile przy użyciu `target` ustawienia we właściwości `build` . To przesłonięcie może być używane tylko w pliku *docker-compose.vs.debug.yml* lub *docker-compose.vs.release.yml* 
+
+```yml
+services:
+  webapplication1:
+    build:
+      target: customStage
+    labels:
+      ...
+```
+
+### <a name="customize-the-app-startup-process"></a>Dostosowywanie procesu uruchamiania aplikacji
+
+Przed uruchomieniem aplikacji przy użyciu ustawienia możesz uruchomić polecenie lub skrypt niestandardowy, co będzie zależne `entrypoint` od właściwości `DockerDevelopmentMode` . Jeśli na przykład chcesz skonfigurować certyfikat tylko  w trybie szybkim, uruchamiając polecenie , ale nie w trybie regularnym, możesz dodać następujący kod tylko w pliku `update-ca-certificates`  *docker-compose.vs.debug.yml:* 
 
 ```yml
 services:
@@ -125,16 +145,14 @@ services:
       ...
 ```
 
-Jeśli pominięto *Docker-Compose. vs. release. yml* lub *Docker-Compose. vs. Debug. yml* , program Visual Studio generuje je na podstawie ustawień domyślnych.
-
 ## <a name="next-steps"></a>Następne kroki
 
-Aby uzyskać ogólne informacje na temat właściwości programu MSBuild, zobacz [Właściwości programu MSBuild](../msbuild/msbuild-properties.md).
+Aby uzyskać ogólne informacje na temat właściwości programu MSBuild, zobacz [Właściwości programu MSBuild.](../msbuild/msbuild-properties.md)
 
 ## <a name="see-also"></a>Zobacz też
 
 [Właściwości kompilacji narzędzi kontenera](container-msbuild-properties.md)
 
-[Ustawienia uruchamiania narzędzi kontenera](container-launch-settings.md)
+[Ustawienia uruchamiania narzędzi kontenerów](container-launch-settings.md)
 
 [Zarezerwowane i dobrze znane właściwości programu MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)

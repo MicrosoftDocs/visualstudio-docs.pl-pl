@@ -1,6 +1,6 @@
 ---
-title: 'Instrukcje: Dodawanie kontrolek zawartości do dokumentów programu Word'
-description: Dowiedz się, że w projektach programu Word na poziomie dokumentu, możesz dodać kontrolki zawartości do dokumentu w projekcie w czasie projektowania lub w czasie wykonywania.
+title: '2017: Dodawanie kontrolek zawartości do dokumentów programu Word'
+description: Dowiedz się, że w projektach programu Word na poziomie dokumentu możesz dodawać kontrolki zawartości do dokumentu w projekcie w czasie projektowania lub w czasie uruchamiania.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -28,15 +28,15 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ed33208d58e380b688ce2553b71033de0b7d07d6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a902e85f8c53aa7a3d1ebe3b6480a7c68fa60601
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954296"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827906"
 ---
-# <a name="how-to-add-content-controls-to-word-documents"></a>Instrukcje: Dodawanie kontrolek zawartości do dokumentów programu Word
-  W projektach programu Word na poziomie dokumentu można dodawać kontrolki zawartości do dokumentu w projekcie w czasie projektowania lub w czasie wykonywania. W projektach dodatku programu Word VSTO można dodać kontrolki zawartości do dowolnego otwartego dokumentu w czasie wykonywania.
+# <a name="how-to-add-content-controls-to-word-documents"></a>2017: Dodawanie kontrolek zawartości do dokumentów programu Word
+  W projektach programu Word na poziomie dokumentu można dodawać kontrolki zawartości do dokumentu w projekcie w czasie projektowania lub w czasie uruchamiania. W projektach dodatku Word VSTO można dodawać kontrolki zawartości do dowolnego otwartego dokumentu w czasie uruchamiania.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
@@ -44,150 +44,150 @@ ms.locfileid: "99954296"
 
 - [Dodawanie kontrolek zawartości w czasie projektowania](#designtime)
 
-- [Dodawanie kontrolek zawartości w czasie wykonywania w projekcie na poziomie dokumentu](#runtimedoclevel)
+- [Dodawanie kontrolek zawartości w czasie uruchamiania w projekcie na poziomie dokumentu](#runtimedoclevel)
 
-- [Dodawanie kontrolek zawartości w czasie wykonywania w projekcie dodatku narzędzi VSTO](#runtimeaddin)
+- [Dodawanie kontrolek zawartości w czasie uruchamiania w projekcie dodatku VSTO](#runtimeaddin)
 
-  Aby uzyskać informacje o kontrolkach zawartości, zobacz [formanty zawartości](../vsto/content-controls.md).
+  Aby uzyskać informacje na temat kontrolek zawartości, zobacz [Kontrolki zawartości.](../vsto/content-controls.md)
 
 ## <a name="add-content-controls-at-design-time"></a><a name="designtime"></a> Dodawanie kontrolek zawartości w czasie projektowania
  Istnieje kilka sposobów dodawania kontrolek zawartości do dokumentu w projekcie na poziomie dokumentu w czasie projektowania:
 
-- Dodaj kontrolkę zawartość z karty **formanty słowa** w **przyborniku**.
+- Dodaj kontrolkę zawartości z karty **Kontrolki programu Word** przybornika . 
 
-- Dodaj kontrolkę zawartości do dokumentu w taki sam sposób, jak dodać natywną kontrolkę zawartości w programie Word.
+- Dodaj kontrolkę zawartości do dokumentu w taki sam sposób, jak w przypadku dodawania kontrolki zawartości natywnej w programie Word.
 
-- Przeciągnij kontrolkę zawartość do dokumentu z okna **źródła danych** . Jest to przydatne, gdy chcesz powiązać formant z danymi podczas tworzenia formantu. Aby uzyskać więcej informacji, zobacz [How to: zapełnianie dokumentów danymi z obiektów](../vsto/how-to-populate-documents-with-data-from-objects.md) i [instrukcje: zapełnianie dokumentów danymi z bazy danych](../vsto/how-to-populate-documents-with-data-from-a-database.md).
+- Przeciągnij kontrolkę zawartości do dokumentu z **okna Źródła** danych. Jest to przydatne, gdy chcesz powiązać kontrolkę z danymi po utworzeniu kontrolki. Aby uzyskać więcej informacji, zobacz How [to: Populate documents with data from objects](../vsto/how-to-populate-documents-with-data-from-objects.md) (Jak wypełnić dokumenty danymi z obiektów) i How [to: Populate documents with data from a database](../vsto/how-to-populate-documents-with-data-from-a-database.md)(Jak wypełnić dokumenty danymi z bazy danych).
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ### <a name="to-add-a-content-control-to-a-document-by-using-the-toolbox"></a>Aby dodać kontrolkę zawartości do dokumentu przy użyciu przybornika
 
-1. W dokumencie, który jest hostowany w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektancie, umieść kursor, do którego chcesz dodać formant zawartości, lub zaznacz tekst, który ma zostać zastąpiony przez formant zawartości.
+1. W dokumencie hostowanych w projektancie umieść kursor w miejscu, w którym chcesz dodać kontrolkę zawartości, lub wybierz tekst, który ma zostać zastąpiony przez [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] kontrolkę zawartości.
 
-2. Otwórz **Przybornik** i kliknij kartę **formanty wyrazów** .
+2. Otwórz **przybornik i** kliknij **kartę Kontrolki** programu Word.
 
-3. Dodaj kontrolkę jeden z następujących sposobów:
+3. Dodaj kontrolkę na jeden z następujących sposobów:
 
-    - Kliknij dwukrotnie formant zawartości w **przyborniku**.
-
-         lub
-
-    - Kliknij kontrolkę zawartość w **przyborniku** , a następnie naciśnij klawisz **Enter** .
+    - Kliknij dwukrotnie kontrolkę zawartości w **przyborniku**.
 
          lub
 
-    - Przeciągnij kontrolkę zawartości z **przybornika** do dokumentu. Kontrolka zawartości zostanie dodana w bieżącym zaznaczeniu w dokumencie, a nie w lokalizacji wskaźnika myszy.
+    - Kliknij kontrolkę zawartości w **przyborniku,** a następnie naciśnij klawisz **Enter.**
+
+         lub
+
+    - Przeciągnij kontrolkę zawartości z **przybornika** do dokumentu. Kontrolka zawartości jest dodawana przy bieżącym zaznaczeniu w dokumencie, a nie w lokalizacji wskaźnika myszy.
 
 > [!NOTE]
-> Nie można dodać <xref:Microsoft.Office.Tools.Word.GroupContentControl> za pomocą **przybornika**. Można dodać tylko w programie <xref:Microsoft.Office.Tools.Word.GroupContentControl> Word lub w czasie wykonywania.
+> Nie można dodać przy <xref:Microsoft.Office.Tools.Word.GroupContentControl> użyciu **przybornika**. Możesz dodać tylko w <xref:Microsoft.Office.Tools.Word.GroupContentControl> programie Word lub w czasie uruchamiania.
 
 > [!NOTE]
-> Program Visual Studio nie udostępnia kontrolki zawartości pola wyboru w przyborniku. Aby dodać kontrolkę zawartości pola wyboru do dokumentu, należy utworzyć <xref:Microsoft.Office.Tools.Word.ContentControl> obiekt programowo. Aby uzyskać więcej informacji, zobacz [formanty zawartości](../vsto/content-controls.md).
+> Visual Studio nie zapewnia kontrolki zawartości pola wyboru w przyborniku. Aby dodać kontrolkę zawartości pola wyboru do dokumentu, należy utworzyć obiekt <xref:Microsoft.Office.Tools.Word.ContentControl> programowo. Aby uzyskać więcej informacji, zobacz [Kontrolki zawartości](../vsto/content-controls.md).
 
 #### <a name="to-add-a-content-control-to-a-document-in-word"></a>Aby dodać kontrolkę zawartości do dokumentu w programie Word
 
-1. W dokumencie, który jest hostowany w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektancie, umieść kursor, do którego chcesz dodać formant zawartości, lub zaznacz tekst, który ma zostać zastąpiony przez formant zawartości.
+1. W dokumencie hostowany w projektancie umieść kursor w miejscu, w którym chcesz dodać kontrolkę zawartości, lub wybierz tekst, który ma zostać zastąpiony przez [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] kontrolkę zawartości.
 
-2. Na wstążce kliknij kartę **deweloper** .
+2. Na wstążce kliknij **kartę Deweloper.**
 
     > [!NOTE]
-    > Jeśli karta **deweloper** nie jest widoczna, należy ją najpierw pokazać. Aby uzyskać więcej informacji, zobacz [jak: wyświetlić kartę Deweloper na Wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Jeśli karta **Deweloper** nie jest widoczna, musisz ją najpierw wyświetlić. Aby uzyskać więcej informacji, [zobacz Jak wyświetlić kartę Deweloper na wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
-3. W grupie **formanty** kliknij ikonę dla kontrolki zawartości, którą chcesz dodać.
+3. W grupie **Kontrolki** kliknij ikonę kontrolki zawartości, którą chcesz dodać.
 
-## <a name="add-content-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a> Dodawanie kontrolek zawartości w czasie wykonywania w projekcie na poziomie dokumentu
- Kontrolki zawartości można dodawać programowo do dokumentu w czasie wykonywania przy użyciu metod <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> właściwości `ThisDocument` klasy w projekcie. Każda metoda ma trzy przeciążenia, których można użyć do dodania kontrolki zawartości w następujący sposób:
+## <a name="add-content-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a> Dodawanie kontrolek zawartości w czasie uruchamiania w projekcie na poziomie dokumentu
+ Kontrolki zawartości można dodać programowo do dokumentu w czasie działania przy użyciu metod właściwości <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> `ThisDocument` klasy w projekcie. Każda metoda ma trzy przeciążenia, których można użyć, aby dodać kontrolkę zawartości w następujący sposób:
 
-- Dodaj kontrolkę w bieżącym zaznaczeniu.
+- Dodaj kontrolkę przy bieżącym zaznaczeniu.
 
 - Dodaj kontrolkę w określonym zakresie.
 
-- Dodaj kontrolkę opartą na natywnej kontrolce zawartości w dokumencie.
+- Dodaj kontrolkę, która jest oparta na natywnej kontrolce zawartości w dokumencie.
 
-  Dynamicznie utworzone kontrolki zawartości nie są utrwalane w dokumencie, gdy dokument jest zamknięty. Jednak natywny formant zawartości pozostaje w dokumencie. Możesz ponownie utworzyć formant zawartości, który jest oparty na natywnej kontrolce zawartości przy następnym otwarciu dokumentu. Aby uzyskać więcej informacji, zobacz [Dodawanie kontrolek do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md).
+  Dynamicznie tworzone kontrolki zawartości nie są utrwalane w dokumencie po zamknięciu dokumentu. Jednak w dokumencie pozostaje natywna kontrolka zawartości. Kontrolkę zawartości opartą na natywnej kontrolce zawartości można odtworzyć przy następnym otwarciu dokumentu. Aby uzyskać więcej informacji, zobacz [Dodawanie kontrolek do dokumentów pakietu Office w czasie rzeczywistym.](../vsto/adding-controls-to-office-documents-at-run-time.md)
 
 > [!NOTE]
-> Aby dodać kontrolkę zawartości pola wyboru do dokumentu w projekcie programu Word 2010, należy utworzyć <xref:Microsoft.Office.Tools.Word.ContentControl> obiekt. Aby uzyskać więcej informacji, zobacz [formanty zawartości](../vsto/content-controls.md).
+> Aby dodać kontrolkę zawartości pola wyboru do dokumentu w projekcie programu Word 2010, należy utworzyć <xref:Microsoft.Office.Tools.Word.ContentControl> obiekt . Aby uzyskać więcej informacji, zobacz [Kontrolki zawartości](../vsto/content-controls.md).
 
-### <a name="to-add-a-content-control-at-the-current-selection"></a>Aby dodać kontrolkę zawartości w bieżącym zaznaczeniu
+### <a name="to-add-a-content-control-at-the-current-selection"></a>Aby dodać kontrolkę zawartości przy bieżącym zaznaczeniu
 
-1. Użyj <xref:Microsoft.Office.Tools.Word.ControlCollection> metody, która ma nazwę `Add` \<*control class*> (gdzie *Klasa sterowania* jest nazwą klasy kontrolki zawartości, która ma zostać dodana, taka jak <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> ) i która ma jeden parametr dla nazwy nowej kontrolki.
+1. Użyj metody, która ma nazwę (gdzie klasa sterowania jest nazwą klasy kontrolki zawartości, którą chcesz dodać, na przykład ), i która ma jeden parametr dla nazwy nowej <xref:Microsoft.Office.Tools.Word.ControlCollection> `Add` \<*control class*>  <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> kontrolki.
 
-     Poniższy przykład kodu używa metody, <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> Aby dodać nowy <xref:Microsoft.Office.Tools.Word.RichTextContentControl> na początku dokumentu. Aby uruchomić ten kod, Dodaj kod do `ThisDocument` klasy w projekcie i Wywołaj `AddRichTextControlAtSelection` metodę z `ThisDocument_Startup` procedury obsługi zdarzeń.
+     W poniższym przykładzie kodu użyto metody , aby dodać nową <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> <xref:Microsoft.Office.Tools.Word.RichTextContentControl> na początku dokumentu. Aby uruchomić ten kod, dodaj kod do klasy w projekcie i wywołaj `ThisDocument` metodę z procedury obsługi `AddRichTextControlAtSelection` `ThisDocument_Startup` zdarzeń.
 
-     [!code-csharp[Trin_ContentControlReference#700](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/RichText.cs#700)]
-     [!code-vb[Trin_ContentControlReference#700](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/RichText.vb#700)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/RichText.cs" id="Snippet700":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/RichText.vb" id="Snippet700":::
 
-### <a name="to-add-a-content-control-at-a-specified-range"></a>Aby dodać kontrolkę zawartości z określonym zakresem
+### <a name="to-add-a-content-control-at-a-specified-range"></a>Aby dodać kontrolkę zawartości w określonym zakresie
 
-1. Użyj <xref:Microsoft.Office.Tools.Word.ControlCollection> metody, która ma nazwę `Add` \<*control class*> (gdzie *Klasa sterowania* jest nazwą klasy kontrolki zawartości, która ma zostać dodana, taka jak <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> ) i która ma <xref:Microsoft.Office.Interop.Word.Range> parametr.
+1. Użyj metody, która ma nazwę (gdzie klasa sterowania jest nazwą klasy kontroli zawartości, którą chcesz dodać, na przykład ), i która <xref:Microsoft.Office.Tools.Word.ControlCollection> `Add` \<*control class*> ma parametr  <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> <xref:Microsoft.Office.Interop.Word.Range> .
 
-     Poniższy przykład kodu używa metody, <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> Aby dodać nowy <xref:Microsoft.Office.Tools.Word.RichTextContentControl> na początku dokumentu. Aby uruchomić ten kod, Dodaj kod do `ThisDocument` klasy w projekcie i Wywołaj `AddRichTextControlAtRange` metodę z `ThisDocument_Startup` procedury obsługi zdarzeń.
+     W poniższym przykładzie kodu użyto metody , aby dodać nową <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> <xref:Microsoft.Office.Tools.Word.RichTextContentControl> na początku dokumentu. Aby uruchomić ten kod, dodaj kod do klasy w projekcie i wywołaj `ThisDocument` metodę z procedury obsługi `AddRichTextControlAtRange` `ThisDocument_Startup` zdarzeń.
 
-     [!code-csharp[Trin_ContentControlReference#701](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/RichText.cs#701)]
-     [!code-vb[Trin_ContentControlReference#701](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/RichText.vb#701)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/RichText.cs" id="Snippet701":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/RichText.vb" id="Snippet701":::
 
 ### <a name="to-add-a-content-control-that-is-based-on-a-native-content-control"></a>Aby dodać kontrolkę zawartości opartą na natywnej kontrolce zawartości
 
-1. Użyj <xref:Microsoft.Office.Tools.Word.ControlCollection> metody, która ma nazwę `Add` \<*control class*> (gdzie *Klasa sterowania* jest nazwą klasy kontrolki zawartości, która ma zostać dodana, taka jak <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> ) i która ma `Microsoft.Office.Interop.Word.ContentControl` parametr.
+1. Użyj metody, która ma nazwę (gdzie klasa sterowania jest nazwą klasy kontroli zawartości, którą chcesz dodać, na przykład ), i która <xref:Microsoft.Office.Tools.Word.ControlCollection> `Add` \<*control class*> ma parametr  <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> `Microsoft.Office.Interop.Word.ContentControl` .
 
-     Poniższy przykład kodu używa metody, <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> Aby utworzyć nowy <xref:Microsoft.Office.Tools.Word.RichTextContentControl> dla każdej natywnej kontrolki tekstu sformatowanego, która znajduje się w dokumencie. Aby uruchomić ten kod, Dodaj kod do `ThisDocument` klasy w projekcie i Wywołaj `CreateRichTextControlsFromNativeControls` metodę z `ThisDocument_Startup` procedury obsługi zdarzeń.
+     W poniższym przykładzie kodu użyto metody , aby utworzyć nową dla każdej natywnej kontrolki tekstu <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> <xref:Microsoft.Office.Tools.Word.RichTextContentControl> sformatowanego, która znajduje się w dokumencie. Aby uruchomić ten kod, dodaj kod do klasy w projekcie `ThisDocument` i wywołaj `CreateRichTextControlsFromNativeControls` metodę z procedury `ThisDocument_Startup` obsługi zdarzeń.
 
-     [!code-csharp[Trin_ContentControlReference#702](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/RichText.cs#702)]
-     [!code-vb[Trin_ContentControlReference#702](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/RichText.vb#702)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/RichText.cs" id="Snippet702":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/RichText.vb" id="Snippet702":::
 
-## <a name="add-content-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a> Dodawanie kontrolek zawartości w czasie wykonywania w projekcie dodatku narzędzi VSTO
- Formanty zawartości można dodawać programowo do dowolnego otwartego dokumentu w czasie wykonywania przy użyciu dodatku VSTO. W tym celu należy wygenerować <xref:Microsoft.Office.Tools.Word.Document> element hosta, który jest oparty na otwartym dokumencie, a następnie użyć metod <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> właściwości tego elementu hosta. Każda metoda ma trzy przeciążenia, których można użyć do dodania kontrolki zawartości w następujący sposób:
+## <a name="add-content-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a> Dodawanie kontrolek zawartości w czasie uruchamiania w projekcie dodatku VSTO
+ Kontrolki zawartości można dodać programowo do dowolnego otwartego dokumentu w czasie uruchamiania przy użyciu dodatku VSTO. W tym celu wygeneruj element hosta oparty na otwartym dokumencie, a następnie użyj metod właściwości <xref:Microsoft.Office.Tools.Word.Document> <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> tego elementu hosta. Każda metoda ma trzy przeciążenia, których można użyć, aby dodać kontrolkę zawartości w następujący sposób:
 
-- Dodaj kontrolkę w bieżącym zaznaczeniu.
+- Dodaj kontrolkę przy bieżącym zaznaczeniu.
 
 - Dodaj kontrolkę w określonym zakresie.
 
 - Dodaj kontrolkę opartą na natywnej kontrolce zawartości w dokumencie.
 
-  Dynamicznie utworzone kontrolki zawartości nie są utrwalane w dokumencie, gdy dokument jest zamknięty. Jednak natywny formant zawartości pozostaje w dokumencie. Możesz ponownie utworzyć formant zawartości, który jest oparty na natywnej kontrolce zawartości przy następnym otwarciu dokumentu. Aby uzyskać więcej informacji, zobacz [Utrwalanie formantów dynamicznych w dokumentach pakietu Office](../vsto/persisting-dynamic-controls-in-office-documents.md).
+  Dynamicznie tworzone kontrolki zawartości nie są utrwalane w dokumencie po zamknięciu dokumentu. Jednak w dokumencie pozostaje natywna kontrolka zawartości. Kontrolkę zawartości opartą na natywnej kontrolce zawartości można odtworzyć przy następnym otwarciu dokumentu. Aby uzyskać więcej informacji, zobacz [Utrwalanie kontrolek dynamicznych w dokumentach pakietu Office.](../vsto/persisting-dynamic-controls-in-office-documents.md)
 
-  Aby uzyskać więcej informacji na temat generowania elementów hosta w projektach dodatku VSTO, zobacz sekcję [rozszerzając dokumenty programu Word i skoroszyty programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
+  Aby uzyskać więcej informacji na temat generowania elementów hosta w projektach dodatków VSTO, zobacz Rozszerzanie dokumentów programu Word i skoroszytów programu Excel w dodatekach [VSTO w czasie uruchamiania.](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 
 > [!NOTE]
-> Aby dodać kontrolkę zawartości pola wyboru do dokumentu, należy utworzyć <xref:Microsoft.Office.Tools.Word.ContentControl> obiekt. Aby uzyskać więcej informacji, zobacz [formanty zawartości](../vsto/content-controls.md).
+> Aby dodać kontrolkę zawartości pola wyboru do dokumentu, należy utworzyć <xref:Microsoft.Office.Tools.Word.ContentControl> obiekt . Aby uzyskać więcej informacji, zobacz [Kontrolki zawartości](../vsto/content-controls.md).
 
-### <a name="to-add-a-content-control-at-the-current-selection"></a>Aby dodać kontrolkę zawartości w bieżącym zaznaczeniu
+### <a name="to-add-a-content-control-at-the-current-selection"></a>Aby dodać kontrolkę zawartości przy bieżącym zaznaczeniu
 
-1. Użyj <xref:Microsoft.Office.Tools.Word.ControlCollection> metody, która ma nazwę `Add` \<*control class*> (gdzie *Klasa sterowania* jest nazwą klasy kontrolki zawartości, która ma zostać dodana, taka jak <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> ) i która ma jeden parametr dla nazwy nowej kontrolki.
+1. Użyj metody o nazwie (gdzie klasa steruje jest nazwą klasy kontrolki zawartości, którą chcesz dodać, na przykład ), i która ma jeden parametr dla nazwy nowej <xref:Microsoft.Office.Tools.Word.ControlCollection> `Add` \<*control class*>  <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> kontrolki.
 
-     Poniższy przykład kodu używa metody, <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> Aby dodać nowy <xref:Microsoft.Office.Tools.Word.RichTextContentControl> na początku aktywnego dokumentu. Aby uruchomić ten kod, Dodaj kod do `ThisAddIn` klasy w projekcie i Wywołaj `AddRichTextControlAtSelection` metodę z `ThisAddIn_Startup` procedury obsługi zdarzeń.
+     W poniższym przykładzie kodu <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> użyto metody , aby dodać nowy na początku aktywnego <xref:Microsoft.Office.Tools.Word.RichTextContentControl> dokumentu. Aby uruchomić ten kod, dodaj kod do klasy w projekcie `ThisAddIn` i wywołaj `AddRichTextControlAtSelection` metodę z procedury `ThisAddIn_Startup` obsługi zdarzeń.
 
-     [!code-vb[Trin_WordAddInDynamicControls#1](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#1)]
-     [!code-csharp[Trin_WordAddInDynamicControls#1](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#1)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb" id="Snippet1":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs" id="Snippet1":::
 
-### <a name="to-add-a-content-control-at-a-specified-range"></a>Aby dodać kontrolkę zawartości z określonym zakresem
+### <a name="to-add-a-content-control-at-a-specified-range"></a>Aby dodać kontrolkę zawartości w określonym zakresie
 
-1. Użyj <xref:Microsoft.Office.Tools.Word.ControlCollection> metody, która ma nazwę `Add` \<*control class*> (gdzie *Klasa sterowania* jest nazwą klasy kontrolki zawartości, która ma zostać dodana, taka jak <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> ) i która ma <xref:Microsoft.Office.Interop.Word.Range> parametr.
+1. Użyj metody, która ma nazwę (gdzie klasa sterowania jest nazwą klasy kontroli zawartości, którą chcesz dodać, na przykład ), i która <xref:Microsoft.Office.Tools.Word.ControlCollection> `Add` \<*control class*> ma parametr  <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> <xref:Microsoft.Office.Interop.Word.Range> .
 
-     Poniższy przykład kodu używa metody, <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> Aby dodać nowy <xref:Microsoft.Office.Tools.Word.RichTextContentControl> na początku aktywnego dokumentu. Aby uruchomić ten kod, Dodaj kod do `ThisAddIn` klasy w projekcie i Wywołaj `AddRichTextControlAtRange` metodę z `ThisAddIn_Startup` procedury obsługi zdarzeń.
+     W poniższym przykładzie kodu użyto metody , aby dodać nową na <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> początku aktywnego <xref:Microsoft.Office.Tools.Word.RichTextContentControl> dokumentu. Aby uruchomić ten kod, dodaj kod do klasy w projekcie i wywołaj `ThisAddIn` metodę z procedury obsługi `AddRichTextControlAtRange` `ThisAddIn_Startup` zdarzeń.
 
-     [!code-vb[Trin_WordAddInDynamicControls#2](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#2)]
-     [!code-csharp[Trin_WordAddInDynamicControls#2](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#2)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb" id="Snippet2":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs" id="Snippet2":::
 
 #### <a name="to-add-a-content-control-that-is-based-on-a-native-content-control"></a>Aby dodać kontrolkę zawartości opartą na natywnej kontrolce zawartości
 
-1. Użyj <xref:Microsoft.Office.Tools.Word.ControlCollection> metody, która ma nazwę `Add` \<*control class*> (gdzie *Klasa sterowania* jest nazwą klasy kontrolki zawartości, która ma zostać dodana, taka jak <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> ) i która ma `Microsoft.Office.Interop.Word.ContentControl` parametr.
+1. Użyj metody, która ma nazwę (gdzie klasa sterowania jest nazwą klasy kontroli zawartości, którą chcesz dodać, na przykład ), i która <xref:Microsoft.Office.Tools.Word.ControlCollection> `Add` \<*control class*> ma parametr  <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> `Microsoft.Office.Interop.Word.ContentControl` .
 
-     Poniższy przykład kodu używa metody, <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> Aby utworzyć nowy <xref:Microsoft.Office.Tools.Word.RichTextContentControl> dla każdej natywnej kontrolki tekstu sformatowanego, która znajduje się w dokumencie, po otwarciu dokumentu. Aby uruchomić ten kod, Dodaj kod do `ThisAddIn` klasy w projekcie.
+     W poniższym przykładzie kodu użyto metody , aby utworzyć nową dla każdej natywnej kontrolki tekstu sformatowanego, która znajduje się w dokumencie <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> <xref:Microsoft.Office.Tools.Word.RichTextContentControl> po otwarciu dokumentu. Aby uruchomić ten kod, dodaj kod do `ThisAddIn` klasy w projekcie.
 
-     [!code-vb[Trin_WordAddInDynamicControls#3](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#3)]
-     [!code-csharp[Trin_WordAddInDynamicControls#3](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#3)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb" id="Snippet3":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs" id="Snippet3":::
 
-     W przypadku języka C# należy również dołączyć `Application_DocumentOpen` procedurę obsługi zdarzeń do <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> zdarzenia.
+     W przypadku języka C# należy również dołączyć do zdarzenia `Application_DocumentOpen` program obsługi <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> zdarzeń.
 
-     [!code-csharp[Trin_WordAddInDynamicControls#6](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#6)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs" id="Snippet6":::
 
 ## <a name="see-also"></a>Zobacz też
-- [Automatyzowanie programu Word za pomocą obiektów rozszerzonych](../vsto/automating-word-by-using-extended-objects.md)
-- [Elementy hosta i formanty hosta — Omówienie](../vsto/host-items-and-host-controls-overview.md)
-- [Dodawanie kontrolek do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md)
-- [Ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
-- [Dodatki narzędzi VSTO programu](../vsto/programming-vsto-add-ins.md)
-- [Dostosowywanie na poziomie dokumentu programu](../vsto/programming-document-level-customizations.md)
+- [Automatyzowanie programu Word przy użyciu obiektów rozszerzonych](../vsto/automating-word-by-using-extended-objects.md)
+- [Omówienie elementów hosta i kontrolek hosta](../vsto/host-items-and-host-controls-overview.md)
+- [Dodawanie kontrolek do dokumentów pakietu Office w czasie rzeczywistym](../vsto/adding-controls-to-office-documents-at-run-time.md)
+- [Programowe ograniczenia elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [Program VSTO Add-ins](../vsto/programming-vsto-add-ins.md)
+- [Zaprogramowanie dostosowań na poziomie dokumentu](../vsto/programming-document-level-customizations.md)

@@ -1,6 +1,6 @@
 ---
-title: 'Instrukcje: programowe Zamykanie dokumentów'
-description: Dowiedz się, jak zamknąć aktywny dokument lub możesz określić Microsoft Office dokument programu Word do zamknięcia.
+title: 'Pisano: Programowe zamykanie dokumentów'
+description: Dowiedz się, jak zamknąć aktywny dokument lub określić dokument programu Microsoft Office Word do zamknięcia.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,57 +15,57 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 96a18245e477000e1d4969a3e1e597443c6f3372
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1b31a35ac1fa452f526d109dd93ca8264f78947b
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903725"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825358"
 ---
-# <a name="how-to-programmatically-close-documents"></a>Instrukcje: programowe Zamykanie dokumentów
+# <a name="how-to-programmatically-close-documents"></a>Pisano: Programowe zamykanie dokumentów
   Możesz zamknąć aktywny dokument lub określić dokument do zamknięcia.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-## <a name="close-the-active-document"></a>Zamknij aktywny dokument
- Istnieją dwie procedury zamykania aktywnego dokumentu: jeden dla dostosowań na poziomie dokumentu i jeden dla dodatków narzędzi VSTO.
+## <a name="close-the-active-document"></a>Zamykanie aktywnego dokumentu
+ Istnieją dwie procedury zamykania aktywnego dokumentu: jedna dla dostosowań na poziomie dokumentu i jedna dla dodatków VSTO.
 
-### <a name="to-close-the-active-document-in-a-document-level-customization"></a>Aby zamknąć aktywny dokument w dostosowaniu na poziomie dokumentu
+### <a name="to-close-the-active-document-in-a-document-level-customization"></a>Aby zamknąć aktywny dokument w dostosowywaniu na poziomie dokumentu
 
-1. Wywołaj <xref:Microsoft.Office.Tools.Word.Document.Close%2A> metodę `ThisDocument` klasy w projekcie, aby zamknąć dokument skojarzony z dostosowaniem. Aby użyć następującego przykładu kodu, uruchom go z `ThisDocument` klasy.
-
-    > [!NOTE]
-    > Ten przykład przekazuje <xref:Microsoft.Office.Interop.Word.WdSaveOptions.wdDoNotSaveChanges> wartość do parametru *metody SaveChanges* , aby zamknąć bez zapisywania zmian lub monitowania użytkownika.
-
-     [!code-vb[Trin_VstcoreWordAutomation#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#3)]
-     [!code-csharp[Trin_VstcoreWordAutomation#3](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#3)]
-
-### <a name="to-close-the-active-document-in-a-vsto-add-in"></a>Aby zamknąć aktywny dokument w dodatku narzędzi VSTO
-
-1. Wywołaj <xref:Microsoft.Office.Interop.Word._Document.Close%2A> metodę właściwości, <xref:Microsoft.Office.Interop.Word._Application.ActiveDocument%2A> Aby zamknąć aktywny dokument. Aby użyć następującego przykładu kodu, uruchom go z `ThisAddIn` klasy w projekcie.
+1. Wywołaj <xref:Microsoft.Office.Tools.Word.Document.Close%2A> metodę klasy w `ThisDocument` projekcie, aby zamknąć dokument skojarzony z dostosowaniem. Aby użyć poniższego przykładu kodu, uruchom go z `ThisDocument` klasy .
 
     > [!NOTE]
-    > Ten przykład przekazuje <xref:Microsoft.Office.Interop.Word.WdSaveOptions.wdDoNotSaveChanges> wartość do parametru *metody SaveChanges* , aby zamknąć bez zapisywania zmian lub monitowania użytkownika.
+    > W tym przykładzie <xref:Microsoft.Office.Interop.Word.WdSaveOptions.wdDoNotSaveChanges> wartość jest przekazujena do *parametru SaveChanges* w celu zamknięcia bez zapisywania zmian ani monitowania użytkownika.
 
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#3)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#3](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#3)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet3":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet3":::
 
-## <a name="close-a-document-that-you-specify-by-name"></a>Zamknij dokument określony przez nazwę
- Sposób zamykania dokumentu określonego za pomocą nazwy jest taki sam dla dodatków narzędzi VSTO i dostosowań na poziomie dokumentu.
+### <a name="to-close-the-active-document-in-a-vsto-add-in"></a>Aby zamknąć aktywny dokument w dodatku VSTO
+
+1. Wywołaj <xref:Microsoft.Office.Interop.Word._Document.Close%2A> metodę właściwości , aby zamknąć aktywny <xref:Microsoft.Office.Interop.Word._Application.ActiveDocument%2A> dokument. Aby użyć poniższego przykładu kodu, uruchom go z `ThisAddIn` klasy w projekcie.
+
+    > [!NOTE]
+    > W tym przykładzie <xref:Microsoft.Office.Interop.Word.WdSaveOptions.wdDoNotSaveChanges> wartość jest przekazujena do *parametru SaveChanges* w celu zamknięcia bez zapisywania zmian ani monitowania użytkownika.
+
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb" id="Snippet3":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs" id="Snippet3":::
+
+## <a name="close-a-document-that-you-specify-by-name"></a>Zamykanie dokumentu, który został określony przez nazwę
+ Sposób zamykania dokumentu, który jest określony przez nazwę, jest taki sam dla dodatków VSTO i dostosowań na poziomie dokumentu.
 
 ### <a name="to-close-a-document-that-you-specify-by-name"></a>Aby zamknąć dokument określony przez nazwę
 
-1. Określ nazwę dokumentu jako argument <xref:Microsoft.Office.Interop.Word._Application.Documents%2A> kolekcji, a następnie Wywołaj <xref:Microsoft.Office.Interop.Word._Document.Close%2A> metodę. W poniższym przykładzie kodu założono, że dokument o nazwie **NewDocument** jest otwarty w programie Word.
+1. Określ nazwę dokumentu jako argument <xref:Microsoft.Office.Interop.Word._Application.Documents%2A> kolekcji, a następnie wywołaj metodę <xref:Microsoft.Office.Interop.Word._Document.Close%2A> . W poniższym przykładzie kodu przyjęto założenie, że dokument o nazwie **NewDocument** jest otwarty w programie Word.
 
     > [!NOTE]
-    > Ten przykład przekazuje <xref:Microsoft.Office.Interop.Word.WdSaveOptions.wdDoNotSaveChanges> wartość do parametru *metody SaveChanges* , aby zamknąć bez zapisywania zmian lub monitowania użytkownika.
+    > W tym przykładzie <xref:Microsoft.Office.Interop.Word.WdSaveOptions.wdDoNotSaveChanges> wartość jest przekazujena do *parametru SaveChanges* w celu zamknięcia bez zapisywania zmian ani monitowania użytkownika.
 
-     [!code-vb[Trin_VstcoreWordAutomation#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#4)]
-     [!code-csharp[Trin_VstcoreWordAutomation#4](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#4)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet4":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet4":::
 
 ## <a name="see-also"></a>Zobacz też
-- [Instrukcje: programowe otwieranie istniejących dokumentów](../vsto/how-to-programmatically-open-existing-documents.md)
-- [Instrukcje: programowe zapisywanie dokumentów](../vsto/how-to-programmatically-save-documents.md)
-- [Elementy hosta i formanty hosta — Omówienie](../vsto/host-items-and-host-controls-overview.md)
-- [Ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [2018: Programowe otwieranie istniejących dokumentów](../vsto/how-to-programmatically-open-existing-documents.md)
+- [How to: Programowe zapisywanie dokumentów](../vsto/how-to-programmatically-save-documents.md)
+- [Omówienie elementów hosta i kontrolek hosta](../vsto/host-items-and-host-controls-overview.md)
+- [Programowe ograniczenia elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)

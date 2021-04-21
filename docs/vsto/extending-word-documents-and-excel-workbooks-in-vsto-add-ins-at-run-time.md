@@ -1,6 +1,6 @@
 ---
-title: Rozszerzone dokumenty programu Word & skoroszyty programu Excel w dodatkach narzędzi VSTO w czasie wykonywania
-description: Dowiedz się, jak użyć dodatku VSTO, aby dostosować dokumenty programu Word i skoroszyty programu Excel na różne sposoby.
+title: Rozszerzanie dokumentów programu Word & skoroszytów programu Excel w dodatki VSTO w czasie uruchamiania
+description: Dowiedz się, jak za pomocą dodatku VSTO dostosowywać dokumenty programu Word i skoroszyty programu Excel na różne sposoby.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -21,110 +21,110 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 465e28ed0c632bba45fac1670dd40cd90ef417f0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 90dac328f336f7204bc9a70a0dbc543ec996922a
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970377"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825670"
 ---
-# <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time"></a>Rozwiń dokumenty programu Word i skoroszyty programu Excel w dodatkach VSTO w czasie wykonywania
-  Dodatku VSTO można użyć do dostosowania dokumentów programu Word i skoroszytów programu Excel w następujący sposób:
+# <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time"></a>Rozszerzanie dokumentów programu Word i skoroszytów programu Excel w dodatki VSTO w czasie uruchamiania
+  Za pomocą dodatku VSTO można dostosować dokumenty programu Word i skoroszyty programu Excel w następujący sposób:
 
-- Dodaj zarządzane formanty do dowolnego otwartego dokumentu lub arkusza.
+- Dodaj kontrolki zarządzane do dowolnego otwartego dokumentu lub arkusza.
 
-- Przekonwertuj istniejący obiekt listy w arkuszu programu Excel na rozszerzony <xref:Microsoft.Office.Tools.Excel.ListObject> , który uwidacznia zdarzenia i można powiązać z danymi przy użyciu modelu powiązań danych Windows Forms.
+- Przekonwertuj istniejący obiekt listy w arkuszu programu Excel na obiekt rozszerzony, który uwidacznia zdarzenia i może być powiązany z danymi przy <xref:Microsoft.Office.Tools.Excel.ListObject> użyciu Windows Forms powiązania danych.
 
-- Dostęp do zdarzeń na poziomie aplikacji, które są udostępniane przez programy Word i Excel, dla określonych dokumentów, skoroszytów i arkuszy.
+- Uzyskiwanie dostępu do zdarzeń na poziomie aplikacji, które są udostępniane przez program Word i Excel dla określonych dokumentów, skoroszytów i arkuszy.
 
-  Aby użyć tej funkcji, należy wygenerować obiekt w czasie wykonywania, który rozszerza dokument lub skoroszyt.
+  Aby korzystać z tej funkcji, należy wygenerować obiekt w czasie działania, który rozszerza dokument lub skoroszyt.
 
-  **Dotyczy:** Informacje zawarte w tym artykule dotyczą projektów dodatku VSTO dla następujących aplikacji: Excel i Word. Aby uzyskać więcej informacji, zobacz [dostępność funkcji według aplikacji pakietu Office i typów projektów](../vsto/features-available-by-office-application-and-project-type.md).
+  **Dotyczy:** Informacje zawarte w tym artykule dotyczą projektów dodatków VSTO dla następujących aplikacji: Excel i Word. Aby uzyskać więcej informacji, zobacz [Funkcje dostępne dla aplikacji pakietu Office i typu projektu](../vsto/features-available-by-office-application-and-project-type.md).
 
-## <a name="generate-extended-objects-in-vsto-add-ins"></a>Generowanie obiektów rozszerzonych w dodatkach narzędzi VSTO
- *Obiekty rozszerzone* to wystąpienia typów zapewniane przez Visual Studio Tools pakietu Office Runtime, które dodają funkcje do obiektów, które znajdują się natywnie w modelu obiektów Word lub Excel (nazywane *natywnymi obiektami pakietu Office*). Aby wygenerować rozszerzony obiekt dla obiektu programu Word lub Excel, użyj `GetVstoObject` metody. Przy pierwszym wywołaniu `GetVstoObject` metody dla określonego obiektu Word lub Excel zwraca nowy obiekt, który rozszerza określony obiekt. Za każdym razem, gdy wywołasz metodę i określisz ten sam obiekt Word lub Excel, zwraca ten sam obiekt rozszerzony.
+## <a name="generate-extended-objects-in-vsto-add-ins"></a>Generowanie obiektów rozszerzonych w dodatki VSTO
+ *Obiekty rozszerzone* to wystąpienia typów udostępniane przez środowisko uruchomieniowe programu Visual Studio Tools for Office, które dodają funkcje do obiektów, które istnieją natywnie w modelach obiektów programu Word lub Excel (nazywanych natywnymi obiektami *pakietu Office).* Aby wygenerować obiekt rozszerzony dla obiektu programu Word lub Excel, użyj `GetVstoObject` metody . Przy pierwszym wywołaniu metody dla określonego obiektu programu Word lub Excel zwracany jest nowy obiekt, który `GetVstoObject` rozszerza określony obiekt. Za każdym razem, gdy wywołasz metodę i określisz ten sam obiekt programu Word lub Excel, zwraca ona ten sam obiekt rozszerzony.
 
- Typ obiektu rozszerzonego ma taką samą nazwę jak typ natywnego obiektu pakietu Office, ale typ jest zdefiniowany w <xref:Microsoft.Office.Tools.Excel> <xref:Microsoft.Office.Tools.Word> przestrzeni nazw lub. Na przykład, jeśli wywołasz `GetVstoObject` metodę w celu poszerzenia <xref:Microsoft.Office.Interop.Word.Document> obiektu, metoda zwraca <xref:Microsoft.Office.Tools.Word.Document> obiekt.
+ Typ obiektu rozszerzonego ma taką samą nazwę jak typ natywnego obiektu pakietu Office, ale typ jest zdefiniowany w przestrzeni <xref:Microsoft.Office.Tools.Excel> nazw <xref:Microsoft.Office.Tools.Word> lub . Jeśli na przykład wywołasz metodę `GetVstoObject` w celu rozszerzenia <xref:Microsoft.Office.Interop.Word.Document> obiektu, metoda zwróci obiekt <xref:Microsoft.Office.Tools.Word.Document> .
 
- `GetVstoObject`Metody są przeznaczone głównie do użytku w projektach dodatku VSTO. Można również użyć tych metod w projektach na poziomie dokumentu, ale zachowują się one inaczej i mają mniej użycia.
+ Metody `GetVstoObject` są przeznaczone do głównie w projektach dodatków VSTO. Tych metod można również używać w projektach na poziomie dokumentu, ale zachowują się inaczej i mają mniej zastosowań.
 
- Aby określić, czy rozszerzony obiekt został już wygenerowany dla określonego natywnego obiektu pakietu Office, użyj `HasVstoObject` metody. Aby uzyskać więcej informacji, zobacz [Określanie, czy obiekt pakietu Office został rozszerzony](#HasVstoObject).
+ Aby określić, czy obiekt rozszerzony został już wygenerowany dla określonego natywnego obiektu pakietu Office, użyj `HasVstoObject` metody . Aby uzyskać więcej informacji, [zobacz Określanie, czy obiekt pakietu Office został rozszerzony.](#HasVstoObject)
 
-### <a name="generate-host-items"></a>Generuj elementy hosta
- W przypadku korzystania z programu `GetVstoObject` w celu poszerzenia obiektu poziomu dokumentu (czyli, <xref:Microsoft.Office.Interop.Excel.Workbook> <xref:Microsoft.Office.Interop.Excel.Worksheet> lub <xref:Microsoft.Office.Interop.Word.Document> ) zwracany obiekt jest nazywany *elementem hosta*. Element hosta to typ, który może zawierać inne obiekty, w tym inne rozszerzone obiekty i kontrolki. Jest on podobny do odpowiedniego typu w podstawowym zestawie międzyoperacyjnym programu Word lub Excel, ale zawiera dodatkowe funkcje. Aby uzyskać więcej informacji na temat elementów hosta, zobacz [Omówienie elementów hosta i formantów hosta](../vsto/host-items-and-host-controls-overview.md).
+### <a name="generate-host-items"></a>Generowanie elementów hosta
+ W przypadku użycia obiektu na poziomie dokumentu (czyli obiektu , lub ) zwracany obiekt jest `GetVstoObject` <xref:Microsoft.Office.Interop.Excel.Workbook> nazywany <xref:Microsoft.Office.Interop.Excel.Worksheet> <xref:Microsoft.Office.Interop.Word.Document> *elementem hosta*. Element hosta to typ, który może zawierać inne obiekty, w tym inne rozszerzone obiekty i kontrolki. Przypomina odpowiedni typ w podstawowym zestawie międzyoptyku programu Word lub Excel, ale ma dodatkowe funkcje. Aby uzyskać więcej informacji na temat elementów hosta, zobacz [Host items and host controls overview (Elementy hosta i kontrolki hosta — omówienie).](../vsto/host-items-and-host-controls-overview.md)
 
- Po wygenerowaniu elementu hosta można go użyć do dodania formantów zarządzanych do dokumentu, skoroszytu lub arkusza. Aby uzyskać więcej informacji, zobacz [Dodawanie formantów zarządzanych do dokumentów i arkuszy](#AddControls).
+ Po wygenerowaniu elementu hosta można go użyć do dodania zarządzanych kontrolek do dokumentu, skoroszytu lub arkusza. Aby uzyskać więcej informacji, zobacz [Dodawanie kontrolek zarządzanych do dokumentów i arkuszy](#AddControls).
 
 #### <a name="to-generate-a-host-item-for-a-word-document"></a>Aby wygenerować element hosta dla dokumentu programu Word
 
-- Poniższy przykład kodu demonstruje, jak wygenerować element hosta dla aktywnego dokumentu.
+- W poniższym przykładzie kodu pokazano, jak wygenerować element hosta dla aktywnego dokumentu.
 
-     [!code-vb[Trin_WordAddInDynamicControls#8](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#8)]
-     [!code-csharp[Trin_WordAddInDynamicControls#8](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#8)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb" id="Snippet8":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs" id="Snippet8":::
 
 #### <a name="to-generate-a-host-item-for-an-excel-workbook"></a>Aby wygenerować element hosta dla skoroszytu programu Excel
 
-- Poniższy przykład kodu demonstruje, jak wygenerować element hosta dla aktywnego skoroszytu.
+- Poniższy przykład kodu przedstawia sposób generowania elementu hosta dla aktywnego skoroszytu.
 
-     [!code-vb[Trin_ExcelAddInDynamicControls#2](../vsto/codesnippet/VisualBasic/trin_exceladdindynamiccontrols4/ThisAddIn.vb#2)]
-     [!code-csharp[Trin_ExcelAddInDynamicControls#2](../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs#2)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_exceladdindynamiccontrols4/ThisAddIn.vb" id="Snippet2":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs" id="Snippet2":::
 
 #### <a name="to-generate-a-host-item-for-an-excel-worksheet"></a>Aby wygenerować element hosta dla arkusza programu Excel
 
-- Poniższy przykład kodu demonstruje, jak wygenerować element hosta dla aktywnego arkusza w projekcie.
+- Poniższy przykład kodu przedstawia sposób generowania elementu hosta dla aktywnego arkusza w projekcie.
 
-     [!code-vb[Trin_ExcelAddInDynamicControls#1](../vsto/codesnippet/VisualBasic/trin_exceladdindynamiccontrols4/ThisAddIn.vb#1)]
-     [!code-csharp[Trin_ExcelAddInDynamicControls#1](../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs#1)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_exceladdindynamiccontrols4/ThisAddIn.vb" id="Snippet1":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs" id="Snippet1":::
 
-### <a name="generate-listobject-host-controls"></a>Generowanie formantów hosta ListObject
- Gdy używasz `GetVstoObject` metody do rozszerania <xref:Microsoft.Office.Interop.Excel.ListObject> , metoda zwraca <xref:Microsoft.Office.Tools.Excel.ListObject> . <xref:Microsoft.Office.Tools.Excel.ListObject>Ma wszystkie funkcje oryginału <xref:Microsoft.Office.Interop.Excel.ListObject> . Ma także dodatkowe funkcje i może być powiązane z danymi przy użyciu modelu powiązań danych Windows Forms. Aby uzyskać więcej informacji, zobacz [formant ListObject](../vsto/listobject-control.md).
+### <a name="generate-listobject-host-controls"></a>Generowanie kontrolek hosta ListObject
+ W przypadku użycia `GetVstoObject` metody do rozszerzenia metody metoda zwraca wartość <xref:Microsoft.Office.Interop.Excel.ListObject> <xref:Microsoft.Office.Tools.Excel.ListObject> . Ma <xref:Microsoft.Office.Tools.Excel.ListObject> wszystkie funkcje oryginalnego <xref:Microsoft.Office.Interop.Excel.ListObject> . Ma ona również dodatkowe funkcje i może być powiązana z danymi przy użyciu Windows Forms modelu powiązania danych. Aby uzyskać więcej informacji, zobacz [ListObject, kontrolka](../vsto/listobject-control.md).
 
-#### <a name="to-generate-a-host-control-for-a-listobject"></a>Aby wygenerować formant hosta dla ListObject
+#### <a name="to-generate-a-host-control-for-a-listobject"></a>Aby wygenerować kontrolkę hosta dla listObject
 
-- Poniższy przykład kodu demonstruje, jak wygenerować jako <xref:Microsoft.Office.Tools.Excel.ListObject> pierwszy <xref:Microsoft.Office.Interop.Excel.ListObject> w aktywnym arkuszu w projekcie.
+- Poniższy przykład kodu pokazuje, jak wygenerować dla pierwszego w aktywnym <xref:Microsoft.Office.Tools.Excel.ListObject> <xref:Microsoft.Office.Interop.Excel.ListObject> arkuszu w projekcie.
 
-     [!code-vb[Trin_ExcelAddInDynamicControls#3](../vsto/codesnippet/VisualBasic/trin_exceladdindynamiccontrols4/ThisAddIn.vb#3)]
-     [!code-csharp[Trin_ExcelAddInDynamicControls#3](../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs#3)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_exceladdindynamiccontrols4/ThisAddIn.vb" id="Snippet3":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs" id="Snippet3":::
 
-### <a name="add-managed-controls-to-documents-and-worksheets"></a><a name="AddControls"></a> Dodawanie formantów zarządzanych do dokumentów i arkuszy
- Po wygenerowaniu <xref:Microsoft.Office.Tools.Word.Document> lub można <xref:Microsoft.Office.Tools.Excel.Worksheet> dodać kontrolki do dokumentu lub arkusza, które reprezentują te obiekty rozszerzone. Aby dodać kontrolki, użyj `Controls` właściwości <xref:Microsoft.Office.Tools.Word.Document> lub <xref:Microsoft.Office.Tools.Excel.Worksheet> . Aby uzyskać więcej informacji, zobacz [Dodawanie kontrolek do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md).
+### <a name="add-managed-controls-to-documents-and-worksheets"></a><a name="AddControls"></a> Dodawanie kontrolek zarządzanych do dokumentów i arkuszy
+ Po wygenerowaniu obiektu lub można dodać do dokumentu lub arkusza kontrolki <xref:Microsoft.Office.Tools.Word.Document> reprezentowane przez te obiekty <xref:Microsoft.Office.Tools.Excel.Worksheet> rozszerzone. Aby dodać kontrolki, `Controls` użyj właściwości <xref:Microsoft.Office.Tools.Word.Document> lub <xref:Microsoft.Office.Tools.Excel.Worksheet> . Aby uzyskać więcej informacji, zobacz [Dodawanie kontrolek do dokumentów pakietu Office w czasie rzeczywistym.](../vsto/adding-controls-to-office-documents-at-run-time.md)
 
- Można dodać kontrolki Windows Forms lub *formanty hosta*. Formant hosta jest formantem dostarczanym przez [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] program, który otacza odpowiednią kontrolkę w podstawowym zestawie międzyoperacyjnym programu Word lub Excel. Kontrolka hosta uwidacznia wszystkie zachowania bazowego natywnego obiektu pakietu Office. Wywołuje również zdarzenia i może być powiązane z danymi przy użyciu modelu powiązań danych Windows Forms. Aby uzyskać więcej informacji, zobacz [Omówienie elementów hosta i kontrolek hosta](../vsto/host-items-and-host-controls-overview.md).
+ Możesz dodać kontrolki Windows Forms lub *formanty hosta.* Kontrolka hosta to kontrolka dostarczana przez kontrolkę, która opakowywuje odpowiednią kontrolkę w podstawowym zestawie międzyoptyku programu [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Word lub Excel. Kontrolka hosta uwidacznia całe zachowanie podstawowego natywnego obiektu pakietu Office. Zgłasza również zdarzenia i może być powiązany z danymi przy użyciu Windows Forms powiązania danych. Aby uzyskać więcej informacji, zobacz [Host items and host controls overview (Omówienie elementów hosta i kontrolek hosta).](../vsto/host-items-and-host-controls-overview.md)
 
 > [!NOTE]
-> Nie można dodać <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> kontrolki do arkusza lub <xref:Microsoft.Office.Tools.Word.XMLNode> <xref:Microsoft.Office.Tools.Word.XMLNodes> kontrolki lub do dokumentu przy użyciu dodatku VSTO. Tych formantów hosta nie można dodać programowo. Aby uzyskać więcej informacji, zobacz Ograniczenia programowe [elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
+> Za pomocą dodatku VSTO nie można dodać kontrolki do arkusza ani kontrolki ani do <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> <xref:Microsoft.Office.Tools.Word.XMLNode> <xref:Microsoft.Office.Tools.Word.XMLNodes> dokumentu. Tych kontrolek hosta nie można dodać programowo. Aby uzyskać więcej informacji, zobacz [Programowe ograniczenia elementów hosta i kontrolek hosta.](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 
 ### <a name="persist-and-remove-controls"></a>Utrwalanie i usuwanie kontrolek
- Po dodaniu formantów zarządzanych do dokumentu lub arkusza formanty nie są utrwalane, gdy dokument zostanie zapisany, a następnie zamknięty. Wszystkie kontrolki hosta są usuwane, dzięki czemu tylko bazowe natywne obiekty pakietu Office są pozostawione w tle. Na przykład a <xref:Microsoft.Office.Tools.Excel.ListObject> <xref:Microsoft.Office.Interop.Excel.ListObject> . Wszystkie kontrolki Windows Forms są również usuwane, ale otoki ActiveX dla formantów są pozostawione w dokumencie. Musisz dołączyć kod w dodatku VSTO, aby wyczyścić kontrolki, lub odtworzyć kontrolki przy następnym otwarciu dokumentu. Aby uzyskać więcej informacji, zobacz [Utrwalanie formantów dynamicznych w dokumentach pakietu Office](../vsto/persisting-dynamic-controls-in-office-documents.md).
+ Po dodaniu zarządzanych kontrolek do dokumentu lub arkusza kontrolki nie są utrwalane, gdy dokument jest zapisywany, a następnie zamykany. Wszystkie kontrolki hosta są usuwane, dzięki czemu zostaną pozostawione tylko podstawowe natywne obiekty pakietu Office. Na przykład , staje <xref:Microsoft.Office.Tools.Excel.ListObject> się . <xref:Microsoft.Office.Interop.Excel.ListObject> Wszystkie Windows Forms są również usuwane, ale otoki ActiveX dla kontrolek są pozostawiane w dokumencie. Musisz dołączyć kod do dodatku VSTO, aby wyczyścić kontrolki lub ponownie utworzyć kontrolki przy następnym otwarciu dokumentu. Aby uzyskać więcej informacji, zobacz [Utrwalanie kontrolek dynamicznych w dokumentach pakietu Office.](../vsto/persisting-dynamic-controls-in-office-documents.md)
 
-## <a name="access-application-level-events-on-documents-and-workbooks"></a>Dostęp do zdarzeń na poziomie aplikacji w dokumentach i skoroszytach
- Niektóre zdarzenia dokumentów, skoroszytów i arkuszy w natywnych modelach programów Word i Excel są wywoływane tylko na poziomie aplikacji. Na przykład <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> zdarzenie jest zgłaszane, gdy dokument zostanie otwarty w programie Word, ale to zdarzenie jest definiowane w <xref:Microsoft.Office.Interop.Word.Application> klasie, a nie w <xref:Microsoft.Office.Interop.Word.Document> klasie.
+## <a name="access-application-level-events-on-documents-and-workbooks"></a>Uzyskiwanie dostępu do zdarzeń na poziomie aplikacji w dokumentach i skoroszytach
+ Niektóre zdarzenia dokumentów, skoroszytów i arkuszy w natywnych modelach obiektów programów Word i Excel są wywoływane tylko na poziomie aplikacji. Na przykład zdarzenie jest wywoływane, gdy dokument jest otwierany w programie Word, ale to zdarzenie jest definiowane w klasie <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> , a nie w klasie <xref:Microsoft.Office.Interop.Word.Application> <xref:Microsoft.Office.Interop.Word.Document> .
 
- Jeśli używasz tylko natywnych obiektów pakietu Office w dodatku VSTO, musisz obsłużyć te zdarzenia na poziomie aplikacji, a następnie napisać dodatkowy kod, aby określić, czy dokument, który spowodował zdarzenie, został dostosowany. Elementy hosta zapewniają te zdarzenia na poziomie dokumentu, dzięki czemu można łatwiej obsłużyć zdarzenia dla określonego dokumentu. Można wygenerować element hosta, a następnie obsłużyć zdarzenie dla tego elementu hosta.
+ W przypadku używania tylko natywnych obiektów pakietu Office w dodatku VSTO należy obsługiwać te zdarzenia na poziomie aplikacji, a następnie napisać dodatkowy kod, aby określić, czy dokument, który wywłaścił zdarzenie, jest tym, który został dostosowany. Elementy hosta zapewniają te zdarzenia na poziomie dokumentu, co ułatwia obsługę zdarzeń dla określonego dokumentu. Możesz wygenerować element hosta, a następnie obsłużyć zdarzenie dla tego elementu hosta.
 
-### <a name="example-that-uses-native-word-objects"></a>Przykład używający natywnych obiektów programu Word
- Poniższy przykład kodu demonstruje, jak obsłużyć zdarzenie na poziomie aplikacji dla dokumentów programu Word. `CreateDocument`Metoda tworzy nowy dokument, a następnie definiuje <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> program obsługi zdarzeń, który uniemożliwia zapisanie tego dokumentu. Zdarzenie jest zdarzeniem na poziomie aplikacji, które jest zgłaszane dla <xref:Microsoft.Office.Interop.Word.Application> obiektu, a program obsługi zdarzeń musi porównać `Doc` parametr z `document1` obiektem, aby określić, czy `document1` reprezentuje zapisany dokument.
+### <a name="example-that-uses-native-word-objects"></a>Przykład, który używa natywnych obiektów programu Word
+ Poniższy przykład kodu pokazuje, jak obsługiwać zdarzenie na poziomie aplikacji dla dokumentów programu Word. Metoda tworzy nowy dokument, a następnie definiuje program obsługi zdarzeń, `CreateDocument` <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> który uniemożliwia zapisanie tego dokumentu. Zdarzenie to zdarzenie na poziomie aplikacji, które jest wywoływane dla obiektu , a procedura obsługi zdarzeń musi porównać parametr z obiektem , aby określić, czy reprezentuje <xref:Microsoft.Office.Interop.Word.Application> `Doc` zapisany `document1` `document1` dokument.
 
- [!code-vb[Trin_WordAddInDynamicControls #12](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#12)]
- [!code-csharp[Trin_WordAddInDynamicControls#12](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#12)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb" id="Snippet12":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs" id="Snippet12":::
 
-### <a name="examples-that-use-a-host-item"></a>Przykłady korzystające z elementu hosta
- Poniższe przykłady kodu upraszczają ten proces przez obsługę <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> zdarzenia <xref:Microsoft.Office.Tools.Word.Document> elementu hosta. `CreateDocument2`Metoda w tych przykładach generuje, <xref:Microsoft.Office.Tools.Word.Document> że rozszerza `document2` obiekt, a następnie definiuje <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> procedurę obsługi zdarzeń, która uniemożliwia zapisanie dokumentu. Procedura obsługi zdarzeń jest wywoływana tylko wtedy `document2` , gdy jest zapisywana, i może anulować akcję zapisu bez wykonywania dodatkowych czynności w celu sprawdzenia, który dokument został zapisany.
+### <a name="examples-that-use-a-host-item"></a>Przykłady, które używają elementu hosta
+ Poniższe przykłady kodu upraszczają ten proces przez obsługę <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> zdarzenia <xref:Microsoft.Office.Tools.Word.Document> elementu hosta. Metoda w tych przykładach generuje obiekt , który rozszerza obiekt , a następnie definiuje program obsługi zdarzeń, który uniemożliwia `CreateDocument2` <xref:Microsoft.Office.Tools.Word.Document> `document2` <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> zapisanie dokumentu. Program obsługi zdarzeń jest wywoływany tylko wtedy, gdy jest zapisywany, i może anulować akcję zapisywania bez wykonywania dodatkowej pracy w celu sprawdzenia, `document2` który dokument został zapisany.
 
- Poniższy przykład kodu demonstruje to zadanie.
+ W poniższym przykładzie kodu przedstawiono to zadanie.
 
- [!code-vb[Trin_WordAddInDynamicControls #13](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#13)]
- [!code-csharp[Trin_WordAddInDynamicControls#13](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#13)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb" id="Snippet13":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs" id="Snippet13":::
 
 ## <a name="determine-whether-an-office-object-has-been-extended"></a><a name="HasVstoObject"></a> Określanie, czy obiekt pakietu Office został rozszerzony
- Aby określić, czy rozszerzony obiekt został już wygenerowany dla określonego natywnego obiektu pakietu Office, użyj `HasVstoObject` metody. Ta metoda zwraca **wartość true** , jeśli rozszerzony obiekt został już wygenerowany.
+ Aby określić, czy obiekt rozszerzony został już wygenerowany dla określonego natywnego obiektu pakietu Office, użyj `HasVstoObject` metody . Ta metoda zwraca **wartość true,** jeśli obiekt rozszerzony został już wygenerowany.
 
- Użyj metody `Globals.Factory.HasVstoMethod`. Przekaż obiekt macierzysty programu Word lub programu Excel, taki jak <xref:Microsoft.Office.Interop.Word.Document> lub <xref:Microsoft.Office.Interop.Excel.Worksheet> , który ma zostać przetestowany dla rozszerzonego obiektu.
+ Użyj metody `Globals.Factory.HasVstoMethod`. Przekaż natywny obiekt programu Word lub Excel, taki jak lub , który chcesz <xref:Microsoft.Office.Interop.Word.Document> <xref:Microsoft.Office.Interop.Excel.Worksheet> przetestować dla obiektu rozszerzonego.
 
- `HasVstoObject`Metoda jest przydatna, gdy chcesz uruchomić kod tylko wtedy, gdy określony obiekt pakietu Office ma rozszerzony obiekt. Na przykład jeśli masz dodatek narzędzi VSTO dla programu Word, który obsługuje zdarzenie, <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> Aby usunąć formanty zarządzane z dokumentu przed jego zapisaniem, użyj `HasVstoObject` metody w celu ustalenia, czy dokument został rozszerzony. Jeśli dokument nie został rozszerzony, nie może mieć zarządzanych formantów i program obsługi zdarzeń może zwrócić bez próby oczyszczenia formantów w dokumencie.
+ Metoda jest przydatna, gdy chcesz uruchamiać kod tylko wtedy, gdy określony obiekt `HasVstoObject` pakietu Office ma obiekt rozszerzony. Jeśli na przykład masz dodatek Word VSTO obsługujący zdarzenie w celu usunięcia zarządzanych kontrolek z dokumentu przed jego zapisaniem, użyj metody , aby określić, czy dokument <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> `HasVstoObject` został rozszerzony. Jeśli dokument nie został rozszerzony, nie może mieć kontrolek zarządzanych, a procedura obsługi zdarzeń może zwrócić bez próby oczyszczenia kontrolek w dokumencie.
 
 ## <a name="see-also"></a>Zobacz też
-- [Dodatki narzędzi VSTO programu](../vsto/programming-vsto-add-ins.md)
-- [Dodawanie kontrolek do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md)
-- [Elementy hosta i formanty hosta — Omówienie](../vsto/host-items-and-host-controls-overview.md)
-- [Przykłady i przewodniki dotyczące programowania pakietu Office](../vsto/office-development-samples-and-walkthroughs.md)
+- [Program VSTO Add-ins](../vsto/programming-vsto-add-ins.md)
+- [Dodawanie kontrolek do dokumentów pakietu Office w czasie rzeczywistym](../vsto/adding-controls-to-office-documents-at-run-time.md)
+- [Omówienie elementów hosta i kontrolek hosta](../vsto/host-items-and-host-controls-overview.md)
+- [Office development samples and walkthroughs (Przykłady i wskazówki dotyczące tworzenia aplikacji pakietu Office)](../vsto/office-development-samples-and-walkthroughs.md)

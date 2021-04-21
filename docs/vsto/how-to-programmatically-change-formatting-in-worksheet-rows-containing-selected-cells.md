@@ -1,6 +1,6 @@
 ---
-title: Zmień formaty w wierszach zawierających wybrane komórki za poorednictwem kodu
-description: Dowiedz się, w jaki sposób można zmienić czcionkę całego wiersza, który zawiera wybraną komórkę, tak aby tekst był pogrubiony.
+title: Zmienianie formatów w wierszach zawierających zaznaczone komórki za pomocą kodu
+description: Dowiedz się, jak zmienić czcionkę całego wiersza zawierającego wybraną komórkę, tak aby tekst był pogrubiony.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -17,63 +17,63 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 62b9f94bfa423b149fef6abb984a03536d0e3d8c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c35a176dd6780e08dafea3da7b051a9733a788e5
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875318"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827646"
 ---
-# <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>Instrukcje: Programowane zmienianie formatowania w wierszach arkusza zawierających zaznaczone komórki
-  Można zmienić czcionkę całego wiersza, który zawiera wybraną komórkę, tak aby tekst był pogrubiony.
+# <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>How to: Programowe zmienianie formatowania w wierszach arkusza zawierających zaznaczone komórki
+  Możesz zmienić czcionkę całego wiersza, który zawiera wybraną komórkę, tak aby tekst był pogrubiony.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
-## <a name="to-make-the-current-row-bold-and-the-previously-bolded-row-normal"></a>Aby pogrubić bieżący wiersz i poprzednio pogrubiony wiersz
+## <a name="to-make-the-current-row-bold-and-the-previously-bolded-row-normal"></a>Aby pogrubić bieżący wiersz i normalny wcześniej pogrubiony wiersz
 
-1. Zadeklaruj zmienną statyczną, aby śledzić poprzednio wybrany wiersz.
+1. Zadeklaruj zmienną statyczną, aby śledzić wcześniej wybrany wiersz.
 
-    [!code-csharp[Trin_VstcoreExcelAutomation#37](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#37)]
-    [!code-vb[Trin_VstcoreExcelAutomation#37](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#37)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet37":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet37":::
 
-2. Pobierz odwołanie do bieżącej komórki przy użyciu <xref:Microsoft.Office.Interop.Excel._Application.ActiveCell%2A> właściwości.
+2. Pobierz odwołanie do bieżącej komórki przy użyciu <xref:Microsoft.Office.Interop.Excel._Application.ActiveCell%2A> właściwości .
 
-    [!code-csharp[Trin_VstcoreExcelAutomation#38](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#38)]
-    [!code-vb[Trin_VstcoreExcelAutomation#38](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#38)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet38":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet38":::
 
-3. Styl bieżący wiersz pogrubiony przy użyciu <xref:Microsoft.Office.Interop.Excel.Range.EntireRow%2A> Właściwości aktywnej komórki.
+3. Pogrubienie bieżącego wiersza przy <xref:Microsoft.Office.Interop.Excel.Range.EntireRow%2A> użyciu właściwości aktywnej komórki.
 
-    [!code-csharp[Trin_VstcoreExcelAutomation#39](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#39)]
-    [!code-vb[Trin_VstcoreExcelAutomation#39](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#39)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet39":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet39":::
 
-4. Upewnij się, że bieżąca wartość `previousRow` nie jest równa 0. Wartość 0 (zero) wskazuje, że jest to pierwszy raz przez ten kod.
+4. Upewnij się, że bieżąca wartość `previousRow` nie wynosi 0. Wartość 0 (zero) wskazuje, że po raz pierwszy za pośrednictwem tego kodu.
 
-    [!code-csharp[Trin_VstcoreExcelAutomation#40](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#40)]
-    [!code-vb[Trin_VstcoreExcelAutomation#40](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#40)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet40":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet40":::
 
 5. Upewnij się, że bieżący wiersz różni się od poprzedniego wiersza.
 
-    [!code-csharp[Trin_VstcoreExcelAutomation#41](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#41)]
-    [!code-vb[Trin_VstcoreExcelAutomation#41](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#41)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet41":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet41":::
 
-6. Pobierz odwołanie do zakresu, który reprezentuje poprzednio wybrany wiersz, i ustaw dla tego wiersza wartość nie równą Bold.
+6. Pobierz odwołanie do zakresu reprezentującego wcześniej wybrany wiersz i ustaw go tak, aby nie był pogrubiony.
 
-    [!code-csharp[Trin_VstcoreExcelAutomation#42](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#42)]
-    [!code-vb[Trin_VstcoreExcelAutomation#42](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#42)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet42":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet42":::
 
-7. Zapisz bieżący wiersz, tak aby mógł stać się poprzednim wierszem w następnym przebiegu.
+7. Przechowuj bieżący wiersz, aby przy następnym przebiegu stał się poprzednim wierszem.
 
-    [!code-csharp[Trin_VstcoreExcelAutomation#43](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#43)]
-    [!code-vb[Trin_VstcoreExcelAutomation#43](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#43)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet43":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet43":::
 
-   Poniższy przykład przedstawia metodę Complete.
+   W poniższym przykładzie pokazano kompletną metodę .
 
 ## <a name="example"></a>Przykład
- [!code-csharp[Trin_VstcoreExcelAutomation#36](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#36)]
- [!code-vb[Trin_VstcoreExcelAutomation#36](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#36)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet36":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet36":::
 
 ## <a name="see-also"></a>Zobacz także
-- [Pracuj z arkuszami](../vsto/working-with-worksheets.md)
-- [Instrukcje: Programowane stosowanie stylów do zakresów w skoroszytach](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
-- [Instrukcje: Programowane kopiowanie danych i formatowania w arkuszach](../vsto/how-to-programmatically-copy-data-and-formatting-across-worksheets.md)
+- [Praca z arkuszami](../vsto/working-with-worksheets.md)
+- [How to: Programowe stosowanie stylów do zakresów w skoroszytach](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
+- [How to: Programowe kopiowanie danych i formatowania między arkuszami](../vsto/how-to-programmatically-copy-data-and-formatting-across-worksheets.md)
 - [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)

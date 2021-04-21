@@ -1,6 +1,6 @@
 ---
-title: Programowo Dodaj formatowanie tekstu & do komórek tabeli programu Word
-description: Dowiedz się, w jaki sposób można programowo dodawać tekst i formatowanie do komórek w Microsoft Office tabelach programu Word.
+title: Programowe dodawanie & tekstu do komórek tabeli programu Word
+description: Dowiedz się, jak programowo dodawać tekst i formatowanie do komórek w Microsoft Office programu Word.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -18,33 +18,33 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 89f9c1783810661f584718ca621c31fbf79aec1a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 58c9e7f7d5537e4b052a732a85ad9d1c7298afa0
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846312"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828400"
 ---
-# <a name="how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables"></a>Instrukcje: Programowane dodawanie tekstu i formatowania do komórek w tabelach programu Word
-  Każda tabela składa się z kolekcji komórek. Każdy pojedynczy <xref:Microsoft.Office.Interop.Word.Cell> obiekt reprezentuje jedną komórkę w tabeli. Odwołujesz się do każdej komórki według jej lokalizacji w tabeli. Ten przykład odnosi się do komórki znajdującej się w pierwszym wierszu i pierwszej kolumnie tabeli; dodaje tekst do komórki; i stosuje formatowanie.
+# <a name="how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables"></a>Jak programowo dodać tekst i formatowanie do komórek w tabelach programu Word
+  Każda tabela składa się z kolekcji komórek. Każdy pojedynczy <xref:Microsoft.Office.Interop.Word.Cell> obiekt reprezentuje jedną komórkę w tabeli. Każdą komórkę należy odwoływać się według jej lokalizacji w tabeli. Ten przykład odwołuje się do komórki znajdującej się w pierwszym wierszu i pierwszej kolumnie tabeli; dodaje tekst do komórki; i stosuje formatowanie.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
 ## <a name="to-add-text-and-formatting-to-cells"></a>Aby dodać tekst i formatowanie do komórek
 
-1. Zapoznaj się z komórką według jej lokalizacji w tabeli, Dodaj tekst do komórki i Zastosuj formatowanie.
+1. Odwołaj się do komórki według jej lokalizacji w tabeli, dodaj tekst do komórki i zastosuj formatowanie.
 
-     Poniższy przykład kodu może być używany w dostosowaniu na poziomie dokumentu. Aby użyć tego przykładu, należy uruchomić go z `ThisDocument` klasy w projekcie.
+     Poniższy przykład kodu może służyć do dostosowywania na poziomie dokumentu. Aby użyć tego przykładu, uruchom go z `ThisDocument` klasy w projekcie.
 
-     [!code-vb[Trin_VstcoreWordAutomation#97](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#97)]
-     [!code-csharp[Trin_VstcoreWordAutomation#97](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#97)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet97":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet97":::
 
-     Poniższy przykład kodu może być używany w dodatku VSTO. Ten przykład używa aktywnego dokumentu. Aby użyć tego przykładu, należy uruchomić go z `ThisAddIn` klasy w projekcie.
+     Poniższy przykład kodu może być używany w dodatku VSTO. W tym przykładzie jest używany aktywny dokument. Aby użyć przykładu, uruchom go z `ThisAddIn` klasy w projekcie.
 
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#97](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#97)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#97](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#97)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb" id="Snippet97":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs" id="Snippet97":::
 
 ## <a name="see-also"></a>Zobacz też
-- [Instrukcje: Programowane tworzenie tabel programu Word](../vsto/how-to-programmatically-create-word-tables.md)
-- [Instrukcje: programowe Dodawanie wierszy i kolumn do tabel programu Word](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)
-- [Instrukcje: Programowane Wypełnianie tabel programu Word przy użyciu właściwości dokumentu](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)
+- [How to: Programmatically create Word tables (Tworzyć programowo tabele programu Word)](../vsto/how-to-programmatically-create-word-tables.md)
+- [How to: Programowe dodawanie wierszy i kolumn do tabel programu Word](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)
+- [How to: Programowe wypełnianie tabel programu Word właściwościami dokumentu](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)

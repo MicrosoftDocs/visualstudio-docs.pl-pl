@@ -1,6 +1,6 @@
 ---
-title: 'Instrukcje: Programowane dodawanie kształtów do dokumentu programu Visio'
-description: Dowiedz się, jak dodać kształty do dokumentu programu Microsoft Office Visio, pobierając wzorce z wzornika i upuszczając kształty na aktywnej stronie.
+title: Jak programowo dodawać kształty do dokumentu programu Visio
+description: Dowiedz się, jak dodawać kształty do dokumentu Microsoft Office Visio, pobierania wzorców ze wzornika i upuszczania kształtów na aktywnej stronie.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -16,31 +16,31 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e4c60360afb3fa30b29e556dd5a18829970f2707
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f5eabd18ac915e6cc10ff05de3d13d0263fa1eee
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910133"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828413"
 ---
-# <a name="how-to-programmatically-add-shapes-to-a-visio-document"></a>Instrukcje: Programowane dodawanie kształtów do dokumentu programu Visio
-  Możesz dodać kształty do dokumentu programu Microsoft Office Visio, pobierając wzorce z wzornika i upuszczając kształty na aktywnej stronie.
+# <a name="how-to-programmatically-add-shapes-to-a-visio-document"></a>Jak programowo dodawać kształty do dokumentu programu Visio
+  Kształty można dodawać do dokumentu Microsoft Office Visio, pobierania wzorców ze wzornika i upuszczania kształtów na aktywnej stronie.
 
- Aby uzyskać więcej informacji, zobacz dokumentację referencyjną języka VBA dla [Microsoft.Office.Interop.Visio.Documents. Dodaj](/office/vba/api/Visio.Documents.Add) metodę, właściwość [Microsoft. Office. Interop. Visio. Application. ActivePage](/office/vba/api/Visio.Application.ActivePage) oraz [Microsoft. Office. Interop. Visio. Page. Drop](/office/vba/api/Visio.Page.Drop) .
+ Aby uzyskać więcej informacji, zobacz dokumentację referencyjną dotyczącąMicrosoft.Office.Interop.Visio.Doc[VBA. Dodaj](/office/vba/api/Visio.Documents.Add) metodę, [właściwość Microsoft.Office.Interop.Visio.Application.ActivePage](/office/vba/api/Visio.Application.ActivePage) i [metodę Microsoft.Office.Interop.Visio.Page.Drop.](/office/vba/api/Visio.Page.Drop)
 
 ## <a name="add-shapes-to-a-visio-document"></a>Dodawanie kształtów do dokumentu programu Visio
 
 ### <a name="to-add-shapes-to-a-visio-document"></a>Aby dodać kształty do dokumentu programu Visio
 
-- Gdy dokument jest aktywny, Pobierz wzorce z kolekcji Documents. Masters i upuść je w aktywnym dokumencie. Można pobrać wzorzec przy użyciu indeksu lub nazwy głównej.
+- Gdy dokument jest aktywny, pobierz wzorce z kolekcji Documents.Masters i upuść kształty w aktywnym dokumencie. Wzorzec można pobrać przy użyciu indeksu lub nazwy głównej.
 
-     Poniższy przykład kodu tworzy pusty dokument programu Visio, a następnie otwiera go z wzornikem **podstawowe kształty** zadokowane. Następnie kod pobiera kilka kształtów i opuszcza je na aktywnej stronie.
+     Poniższy przykład kodu tworzy pusty dokument programu Visio, a następnie otwiera go zadokowany wzornik **Podstawowe** kształty. Następnie kod pobiera kilka kształtów i porzuca je na aktywnej stronie.
 
-     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#13](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#13)]
-     [!code-vb[Trin_VstcoreVisioAutomationAddIn#13](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#13)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs" id="Snippet13":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb" id="Snippet13":::
 
 ## <a name="see-also"></a>Zobacz też
 - [Rozwiązania programu Visio](../vsto/visio-solutions.md)
-- [Model obiektów programu Visio — Omówienie](../vsto/visio-object-model-overview.md)
-- [Współpraca z kształtami programu Visio](../vsto/working-with-visio-shapes.md)
-- [Instrukcje: Programowane kopiowanie i wklejanie kształtów w dokumencie programu Visio](../vsto/how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md)
+- [Omówienie modelu obiektów programu Visio](../vsto/visio-object-model-overview.md)
+- [Praca z kształtami programu Visio](../vsto/working-with-visio-shapes.md)
+- [Jak programowo kopiować i wklejać kształty w dokumencie programu Visio](../vsto/how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md)

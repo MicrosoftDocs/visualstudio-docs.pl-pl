@@ -1,6 +1,6 @@
 ---
 title: Poprawianie wydajności dodatku VSTO
-description: Dowiedz się, w jaki sposób zoptymalizować Dodatki VSTO utworzone dla aplikacji pakietu Office, aby szybko uruchamiać, zamykać, otwierać elementy i wykonywać inne zadania.
+description: Dowiedz się, jak zoptymalizować dodatki VSTO, które tworzysz dla aplikacji pakietu Office, aby szybko uruchamiały się, zamykały, otwierały elementy i wykonywać inne zadania.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -12,54 +12,54 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5c965c911977f657fe8c5252eabc1739564cf8c0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 29035f4867421ed3f05e5f0c3a5c196f58b7ab34
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958742"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825124"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>Poprawianie wydajności dodatku VSTO
-  Możesz dać użytkownikom lepszy komfort, optymalizując dodatki narzędzi VSTO tworzone dla aplikacji pakietu Office, aby szybko uruchamiać, zamykać, otwierać elementy i wykonywać inne zadania. Jeśli dodatek VSTO jest przeznaczony dla programu Outlook, można również zmniejszyć prawdopodobieństwo wyłączenia dodatku VSTO z powodu niskiej wydajności. Możesz zwiększyć wydajność dodatku VSTO, implementując następujące strategie:
+  Możesz zapewnić użytkownikom lepsze środowisko, optymalizując dodatki VSTO, które tworzysz dla aplikacji pakietu Office, aby szybko uruchamiać, zamykać, otwierać elementy i wykonywać inne zadania. Jeśli dodatek VSTO jest dla programu Outlook, możesz również zmniejszyć prawdopodobieństwo wyłączenia dodatku VSTO z powodu niskiej wydajności. Wydajność dodatku VSTO można zwiększyć, implementując następujące strategie:
 
-- [Załaduj Dodatki VSTO na żądanie](#Load).
+- [Załaduj dodatki VSTO na żądanie.](#Load)
 
 - [Publikowanie rozwiązań pakietu Office przy użyciu Instalator Windows](#Publish).
 
-- [Obejście odbicia wstążki](#Bypass).
+- [Pomiń odbicie wstążki](#Bypass).
 
-- [Wykonywanie kosztownych operacji w osobnym wątku wykonania](#Perform).
+- [Wykonywanie kosztownych operacji w osobnym wątku wykonywania](#Perform).
 
-  Aby uzyskać więcej informacji na temat optymalizowania dodatku VSTO dla programu Outlook, zobacz [kryteria wydajności, które umożliwiają włączenie dodatków VSTO](/previous-versions/office/jj228679(v=office.15)#performance-criteria-for-keeping-add-ins-enabled).
+  Aby uzyskać więcej informacji na temat sposobu optymalizacji dodatku VSTO programu Outlook, zobacz [Performance criteria to keep VSTO Add-ins enabled](/previous-versions/office/jj228679(v=office.15)#performance-criteria-for-keeping-add-ins-enabled)(Kryteria wydajności w celu utrzymania włączonych dodatków VSTO).
 
-## <a name="load-vsto-add-ins-on-demand"></a><a name="Load"></a> Załaduj Dodatki VSTO na żądanie
- Dodatek VSTO można skonfigurować do załadowania tylko w następujących okolicznościach:
+## <a name="load-vsto-add-ins-on-demand"></a><a name="Load"></a> Ładowanie dodatków VSTO na żądanie
+ Dodatek VSTO można skonfigurować do ładowania tylko w następujących okolicznościach:
 
-- Pierwszy raz, gdy użytkownik uruchamia aplikację po zainstalowaniu dodatku VSTO.
+- Przy pierwszym uruchamianiu aplikacji przez użytkownika po zainstalowaniu dodatku VSTO.
 
-- Gdy użytkownik po raz pierwszy współdziała z dodatkiem VSTO po uruchomieniu aplikacji w dowolnym momencie.
+- Za pierwszym razem, gdy użytkownik wchodzi w interakcję z dodatku VSTO po uruchomieniu aplikacji w dowolnym późniejszym czasie.
 
-  Na przykład dodatek VSTO może wypełnić arkusz danymi, gdy użytkownik wybierze przycisk niestandardowy z etykietą **Pobierz moje dane**. Aplikacja musi załadować dodatek Narzędzia VSTO co najmniej jeden raz, aby na Wstążce pojawił się przycisk **Pobierz moje dane** . Jednak dodatek VSTO nie ładuje się ponownie, gdy użytkownik uruchomi aplikację przy następnym uruchomieniu. Dodatek VSTO ładuje się tylko wtedy, gdy użytkownik wybierze przycisk **Pobierz moje dane** .
+  Na przykład dodatek VSTO może wypełnić arkusz danymi, gdy użytkownik wybierze niestandardowy przycisk z etykietą **Pobierz moje dane.** Aplikacja musi załadować dodatek VSTO co najmniej raz, aby przycisk Pobierz moje dane pojawił się na wstążce.  Jednak dodatek VSTO nie zostanie załadowany ponownie, gdy użytkownik następnym razem uruchomi aplikację. Dodatek VSTO jest ładowany tylko wtedy, gdy użytkownik wybierze przycisk **Pobierz moje** dane.
 
 ### <a name="to-configure-a-clickonce-solution-to-load-vsto-add-ins-on-demand"></a>Aby skonfigurować rozwiązanie ClickOnce do ładowania dodatków VSTO na żądanie
 
 1. W **Eksplorator rozwiązań** wybierz węzeł projektu.
 
-2. Na pasku menu wybierz polecenie **Wyświetl**  >  **strony właściwości**.
+2. Na pasku menu wybierz pozycję **Wyświetl**  >  **strony właściwości.**
 
-3. Na karcie **Publikowanie** wybierz przycisk **Opcje** .
+3. Na karcie **Publikowanie** wybierz **przycisk** Opcje.
 
-4. W oknie dialogowym **Opcje publikowania** wybierz pozycję **Ustawienia pakietu Office** , wybierz opcję **Załaduj na żądanie** , a następnie wybierz przycisk **OK** .
+4. W **oknie dialogowym** Opcje publikowania wybierz element  listy Ustawienia pakietu **Office,** wybierz opcję Załaduj na żądanie, a następnie wybierz **przycisk OK.**
 
-### <a name="to-configure-a-windows-installer-solution-to-load-vsto-add-ins-on-demand"></a>Aby skonfigurować Instalator Windows rozwiązanie do ładowania dodatków VSTO na żądanie
+### <a name="to-configure-a-windows-installer-solution-to-load-vsto-add-ins-on-demand"></a>Aby skonfigurować Instalator Windows do ładowania dodatków VSTO na żądanie
 
-1. W rejestrze Ustaw `LoadBehavior` klucz **\\ \\ _identyfikatora dodatku_ głównego \Software\Microsoft\Office _ApplicationName_\Addins** na **0x10**.
+1. W rejestrze ustaw wpis Główny `LoadBehavior` **\Software\Microsoft\Office \\ _ApplicationName_\Addins \\ _Klucz_** identyfikatora dodatku na **wartość 0x10**.
 
-     Aby uzyskać więcej informacji, zobacz [wpisy rejestru dotyczące dodatków narzędzi VSTO](../vsto/registry-entries-for-vsto-add-ins.md).
+     Aby uzyskać więcej informacji, zobacz [Wpisy rejestru dla dodatków VSTO.](../vsto/registry-entries-for-vsto-add-ins.md)
 
 ### <a name="to-configure-a-solution-to-load-vsto-add-ins-on-demand-while-you-debug-the-solution"></a>Aby skonfigurować rozwiązanie do ładowania dodatków VSTO na żądanie podczas debugowania rozwiązania
 
-1. Utwórz skrypt ustawiający `LoadBehavior` wpis **_głównego_ klucza \\ \\ _identyfikatora dodatku_ \Software\Microsoft\Office _ApplicationName_\Addins** na **0x10**.
+1. Utwórz skrypt, który ustawia wpis główny `LoadBehavior` **\Software\Microsoft\Office \\ _ApplicationName_\Addins \\ _Klucz_** identyfikatora dodatku na **0x10**.
 
      Poniższy kod przedstawia przykład tego skryptu.
 
@@ -72,7 +72,7 @@ ms.locfileid: "99958742"
 
     ```
 
-2. Utwórz zdarzenie po kompilacji, które aktualizuje rejestr przy użyciu skryptu.
+2. Utwórz zdarzenie po kompilacji, które aktualizuje rejestr przy użyciu skryptu .
 
      Poniższy kod przedstawia przykład ciągu polecenia, który można dodać do zdarzenia po kompilacji.
 
@@ -81,42 +81,42 @@ ms.locfileid: "99958742"
 
     ```
 
-     Aby uzyskać informacje dotyczące sposobu tworzenia zdarzenia po kompilacji w projekcie w języku C#, zobacz [How to: Określanie zdarzeń kompilacji &#40;C&#35;&#41;](../ide/how-to-specify-build-events-csharp.md).
+     Aby uzyskać informacje na temat sposobu tworzenia zdarzenia po kompilacji w projekcie języka C#, zobacz How [to: Specify build events &#40;C&#35;&#41;](../ide/how-to-specify-build-events-csharp.md).
 
-     Aby uzyskać informacje na temat sposobu tworzenia zdarzenia po kompilacji w projekcie Visual Basic, zobacz [How to: Określanie zdarzeń kompilacji &#40;Visual Basic&#41;](../ide/how-to-specify-build-events-visual-basic.md).
+     Aby uzyskać informacje na temat tworzenia zdarzenia po kompilacji w projekcie Visual Basic, zobacz Jak określić zdarzenia kompilacji [w &#40;Visual Basic&#41;](../ide/how-to-specify-build-events-visual-basic.md).
 
 ## <a name="publish-office-solutions-by-using-windows-installer"></a><a name="Publish"></a> Publikowanie rozwiązań pakietu Office przy użyciu Instalator Windows
- W przypadku publikowania rozwiązania przy użyciu Instalator Windows narzędzia programu Visual Studio 2010 Tools for Office Runtime pomijają następujące kroki podczas ładowania dodatku VSTO.
+ Jeśli publikujesz rozwiązanie przy użyciu programu Instalator Windows, środowisko uruchomieniowe narzędzi programu Visual Studio 2010 Tools for Office pomija następujące kroki podczas ładowania dodatku narzędzi VSTO.
 
-- Sprawdzanie poprawności schematu manifestu.
+- Sprawdzania poprawności schematu manifestu.
 
-- Automatyczne sprawdzanie dostępności aktualizacji.
+- Automatyczne sprawdzanie aktualizacji.
 
-- Weryfikowanie podpisów cyfrowych manifestów wdrożenia.
+- Weryfikację podpisów cyfrowych manifestów wdrożenia.
 
   > [!NOTE]
-  > Takie podejście nie jest konieczne, jeśli dodatek VSTO zostanie wdrożony w bezpiecznej lokalizacji na komputerach użytkowników.
+  > Takie podejście nie jest konieczne w przypadku wdrażania dodatku VSTO w bezpiecznej lokalizacji na komputerach użytkowników.
 
-  Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązania biurowego przy użyciu Instalator Windows](../vsto/deploying-a-vsto-solution-by-using-windows-installer.md).
+  Aby uzyskać więcej informacji, zobacz [Wdrażanie rozwiązania pakietu Office przy użyciu Instalator Windows](../vsto/deploying-a-vsto-solution-by-using-windows-installer.md).
 
-## <a name="bypass-ribbon-reflection"></a><a name="Bypass"></a> Obejście odbicia wstążki
- W przypadku tworzenia rozwiązania przy użyciu programu [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] upewnij się, że użytkownicy zainstalowali najnowszą wersję środowiska uruchomieniowego Visual Studio 2010 Tools for Office podczas wdrażania rozwiązania. Starsze wersje środowiska uruchomieniowego programu VSTO odzwierciedlone w zestawach rozwiązań w celu zlokalizowania dostosowań Wstążki. Ten proces może spowodować spowolnienie ładowania dodatku VSTO.
+## <a name="bypass-ribbon-reflection"></a><a name="Bypass"></a> Pomijanie odbicia wstążki
+ Jeśli tworzysz rozwiązanie przy użyciu programu , upewnij się, że użytkownicy mają zainstalowaną najnowszą wersję środowiska uruchomieniowego [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] narzędzi Visual Studio 2010 Tools for Office podczas wdrażania rozwiązania. Starsze wersje środowiska uruchomieniowego VSTO są odzwierciedlane w zestawach rozwiązań w celu zlokalizowania dostosowań wstążki. Ten proces może spowodować, że dodatek VSTO będzie ładować się wolniej.
 
- Alternatywnie można zapobiec używaniu odbicia dla wszystkich wersji narzędzi Visual Studio 2010 Tools for Office Runtime do identyfikowania dostosowań Wstążki. Aby postępować zgodnie z tą strategią, Zastąp `CreateRibbonExtensibility` metodę i jawnie Zwróć obiekty wstążki. Jeśli dodatek VSTO nie zawiera żadnych dostosowań wstążki, Wróć `null` wewnątrz metody.
+ Alternatywnie można uniemożliwić dowolnej wersji środowiska uruchomieniowego narzędzia Visual Studio 2010 dla pakietu Office używanie odbicia w celu identyfikowania dostosowań wstążki. Aby stosować tę strategię, zastąp `CreateRibbonExtensibility` metodę i jawnie zwróć obiekty wstążki. Jeśli dodatek VSTO nie zawiera żadnych dostosowań wstążki, wróć `null` do metody .
 
  Poniższy przykład zwraca obiekt wstążki na podstawie wartości pola.
 
- [!code-vb[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/VisualBasic/trin_ribbon_choose_ribbon_4/ThisWorkbook.vb#1)]
- [!code-csharp[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/CSharp/trin_ribbon_choose_ribbon_4/ThisWorkbook.cs#1)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_ribbon_choose_ribbon_4/ThisWorkbook.vb" id="Snippet1":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_ribbon_choose_ribbon_4/ThisWorkbook.cs" id="Snippet1":::
 
 ## <a name="perform-expensive-operations-in-a-separate-execution-thread"></a><a name="Perform"></a> Wykonywanie kosztownych operacji w osobnym wątku wykonywania
- Należy rozważyć wykonywanie zadań czasochłonnych (takich jak długotrwałe zadania, połączenia z bazami danych lub inne rodzaje wywołań sieciowych) w osobnym wątku. Aby uzyskać więcej informacji, zobacz [Obsługa wątkowości w pakiecie Office](../vsto/threading-support-in-office.md).
+ Rozważ wykonywanie czasochłonnych zadań (takich jak długotrwałe zadania, połączenia bazy danych lub inne rodzaje wywołań sieciowych) w osobnym wątku. Aby uzyskać więcej informacji, zobacz [Obsługa wątków w psłudze Office.](../vsto/threading-support-in-office.md)
 
 > [!NOTE]
-> Cały kod, który wywołuje do modelu obiektów pakietu Office, musi być wykonywany w wątku głównym.
+> Cały kod, który wywołuje model obiektów pakietu Office, musi być wykonywany w wątku głównym.
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Żądanie — ładowanie dodatków narzędzi VSTO](/archive/blogs/andreww/demand-loading-vsto-add-ins)
-- [Opóźnienie ładowania środowiska CLR w dodatkach pakietu Office](/archive/blogs/andreww/delay-loading-the-clr-in-office-add-ins)
+- [Ładowanie na żądanie dodatków VSTO](/archive/blogs/andreww/demand-loading-vsto-add-ins)
+- [Opóźnienie ładowania clr w dodatki pakietu Office](/archive/blogs/andreww/delay-loading-the-clr-in-office-add-ins)
 - [Tworzenie dodatków narzędzi VSTO dla pakietu Office w programie Visual Studio](create-vsto-add-ins-for-office-by-using-visual-studio.md)

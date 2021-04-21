@@ -1,6 +1,6 @@
 ---
-title: 'Instrukcje: dołączanie rozszerzeń kodu zarządzanego do dokumentów'
-description: Dowiedz się, jak dołączyć zestaw dostosowywania do Microsoft Office istniejącego dokumentu programu Word lub Microsoft Office skoroszytu programu Excel.
+title: 'How to: Attach managed code extensions to documents (Jak dołączyć rozszerzenia kodu zarządzanego do dokumentów)'
+description: Dowiedz się, jak dołączyć zestaw dostosowywania do istniejącego Microsoft Office programu Word lub Microsoft Office programu Excel.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,42 +15,42 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 063b66af781ee412e7f7d2ab8014e009bc93bad9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 60fc27345ef148fd47fdcee15924917ce63f8d68
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954114"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825501"
 ---
-# <a name="how-to-attach-managed-code-extensions-to-documents"></a>Instrukcje: dołączanie rozszerzeń kodu zarządzanego do dokumentów
-  Zestaw dostosowania można dołączyć do istniejącego dokumentu programu Microsoft Office Word lub Microsoft Office skoroszytu programu Excel. Dokument lub skoroszyt może być w dowolnym formacie pliku, który jest obsługiwany przez projekty Microsoft Office i narzędzia programistyczne w programie Visual Studio. Aby uzyskać więcej informacji, zobacz [Architektura dostosowywania na poziomie dokumentu](../vsto/architecture-of-document-level-customizations.md).
+# <a name="how-to-attach-managed-code-extensions-to-documents"></a>How to: Attach managed code extensions to documents (Jak dołączyć rozszerzenia kodu zarządzanego do dokumentów)
+  Zestaw dostosowywania można dołączyć do istniejącego Microsoft Office programu Word lub Microsoft Office programu Excel. Dokument lub skoroszyt może być w dowolnym formacie pliku obsługiwanym przez projekty Microsoft Office i narzędzia programowe w Visual Studio. Aby uzyskać więcej informacji, [zobacz Architecture of document-level customizations](../vsto/architecture-of-document-level-customizations.md)(Architektura dostosowań na poziomie dokumentu).
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
- Aby dołączyć dostosowanie do dokumentu programu Word lub Excel, użyj <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> metody <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> klasy. Ponieważ <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> Klasa została zaprojektowana tak, aby była uruchamiana na komputerze, na którym nie zainstalowano Microsoft Office, można użyć tej metody w rozwiązaniach, które nie są bezpośrednio związane z Microsoft Office programowaniem (np. konsolą lub aplikacją Windows Forms).
+ Aby dołączyć dostosowanie do dokumentu programu Word lub Excel, <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> użyj metody <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> klasy . Ponieważ klasa jest przeznaczona do uruchamiania na komputerze bez zainstalowanego programu Microsoft Office, można użyć tej metody w rozwiązaniach, które nie są bezpośrednio związane z programem Microsoft Office (na przykład konsoli lub aplikacji <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> Windows Forms).
 
 > [!NOTE]
-> Nie można załadować dostosowania, jeśli kod oczekiwał kontroli, że określony dokument nie ma.
+> Załadowanie dostosowania nie powiedzie się, jeśli kod oczekuje kontrolek, których nie ma w określonym dokumencie.
 
 ### <a name="to-attach-managed-code-extensions-to-a-document"></a>Aby dołączyć rozszerzenia kodu zarządzanego do dokumentu
 
-1. W projekcie, który nie wymaga Microsoft Office, takich jak Aplikacja konsolowa lub Windows Forms projektu, Dodaj odwołanie do zestawów *Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll* i *Microsoft.VisualStudio.Tools.Applications.Runtime.dll* .
+1. W projekcie, który nie Microsoft Office aplikacji konsolowej lub projektu programu Windows Forms, dodaj odwołanie  doMicrosoft.VisualStudio.Tools.Applications.ServerDocument.dlli *Microsoft.VisualStudio.Tools.Applications.Runtime.dll* zestawów.
 
-2. Dodaj następujące instrukcje **Import** lub **using** na początku pliku kodu.
+2. Dodaj następujące **instrukcje Imports** lub **using** na początku pliku kodu.
 
-     [!code-csharp[Trin_VstcoreDeployment#4](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#4)]
-     [!code-vb[Trin_VstcoreDeployment#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#4)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs" id="Snippet4":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb" id="Snippet4":::
 
-3. Wywołaj metodę statyczną <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> .
+3. Wywołaj metodę <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> statyczną.
 
-     Poniższy przykład kodu używa <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> przeciążenia. To Przeciążenie pobiera pełną ścieżkę do dokumentu i <xref:System.Uri> określa lokalizację manifestu wdrażania dla dostosowania, które ma zostać dołączone do dokumentu. W tym przykładzie przyjęto założenie, że dokument programu Word o nazwie **WordDocument1.docx** znajduje się na pulpicie, a manifest wdrożenia znajduje się w folderze o nazwie **Publish** , który znajduje się również na pulpicie.
+     W poniższym przykładzie kodu użyto <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> przeciążenia . To przeciążenie przyjmuje pełną ścieżkę dokumentu i wartość określającą lokalizację manifestu wdrożenia dla dostosowania, które chcesz <xref:System.Uri> dołączyć do dokumentu. W tym przykładzie przyjęto założenie, że dokument programu Word o **nazwieWordDocument1.docx** znajduje się na pulpicie, a manifest wdrożenia znajduje się w folderze o nazwie **Publish** (Publikuj), który również znajduje się na pulpicie.
 
-     [!code-csharp[Trin_VstcoreDeployment#3](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#3)]
-     [!code-vb[Trin_VstcoreDeployment#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb" id="Snippet3":::
 
-4. Skompiluj projekt i uruchom aplikację na komputerze, na którym chcesz dołączyć dostosowanie. Na komputerze musi być zainstalowany program Visual Studio 2010 Tools for Office Runtime.
+4. Skompilowanie projektu i uruchomienie aplikacji na komputerze, na którym chcesz dołączyć dostosowanie. Na komputerze musi być zainstalowany Visual Studio 2010 Tools for Office Runtime.
 
 ## <a name="see-also"></a>Zobacz też
-- [Zarządzanie dokumentami na serwerze za pomocą klasy ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)
-- [Instrukcje: usuwanie rozszerzeń kodu zarządzanego z dokumentów](../vsto/how-to-remove-managed-code-extensions-from-documents.md)
-- [Aplikacje i manifesty wdrożenia w rozwiązaniach pakietu Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)
+- [Zarządzanie dokumentami na serwerze przy użyciu klasy ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)
+- [Jak usunąć rozszerzenia kodu zarządzanego z dokumentów](../vsto/how-to-remove-managed-code-extensions-from-documents.md)
+- [Manifesty aplikacji i wdrożenia w rozwiązaniach pakietu Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)
