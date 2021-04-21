@@ -1,6 +1,6 @@
 ---
-title: 'Instrukcje: programowe Dodawanie nagłówków i stopek do dokumentów'
-description: Dowiedz się, jak dodać tekst do nagłówków i stopek w dokumencie przy użyciu właściwości nagłówki i stopek w sekcji.
+title: 'How to: Programowe dodawanie nagłówków i stopek do dokumentów'
+description: Dowiedz się, jak dodawać tekst do nagłówków i stopek w dokumencie przy użyciu właściwości Headers i Footers sekcji.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -18,15 +18,15 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 63b50e020efa549993e36dbd5b43504467e554a6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 73844d19ef6bb85c623706ab0d359836e42a3b14
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908611"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828750"
 ---
-# <a name="how-to-programmatically-add-headers-and-footers-to-documents"></a>Instrukcje: programowe Dodawanie nagłówków i stopek do dokumentów
-  Możesz dodać tekst do nagłówków i stopek w dokumencie przy użyciu <xref:Microsoft.Office.Interop.Word.Section.Headers%2A> właściwości i <xref:Microsoft.Office.Interop.Word.Section.Footers%2A> właściwości <xref:Microsoft.Office.Interop.Word.Section> . Każda sekcja dokumentu zawiera trzy nagłówki i stopki:
+# <a name="how-to-programmatically-add-headers-and-footers-to-documents"></a>How to: Programowe dodawanie nagłówków i stopek do dokumentów
+  Tekst można dodać do nagłówków i stopek w dokumencie przy użyciu właściwości <xref:Microsoft.Office.Interop.Word.Section.Headers%2A> i <xref:Microsoft.Office.Interop.Word.Section.Footers%2A> właściwości <xref:Microsoft.Office.Interop.Word.Section> . Każda sekcja dokumentu zawiera trzy nagłówki i stopki:
 
 - <xref:Microsoft.Office.Interop.Word.WdHeaderFooterIndex.wdHeaderFooterPrimary>
 
@@ -34,45 +34,45 @@ ms.locfileid: "99908611"
 
 - <xref:Microsoft.Office.Interop.Word.WdHeaderFooterIndex.wdHeaderFooterFirstPage>
 
-  Procedury te różnią się w przypadku dostosowań na poziomie dokumentu i dodatków narzędzi VSTO.
+  Procedury są różne w przypadku dostosowań na poziomie dokumentu i dodatków VSTO.
 
   [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
 ## <a name="document-level-customizations"></a>Dostosowania na poziomie dokumentów
- Aby użyć następujących przykładów kodu, uruchom je z `ThisDocument` klasy w projekcie.
+ Aby użyć poniższych przykładów kodu, uruchom je z `ThisDocument` klasy w projekcie.
 
 ### <a name="to-add-text-to-footers-in-the-document"></a>Aby dodać tekst do stopek w dokumencie
 
 1. Poniższy przykład kodu ustawia czcionkę tekstu, który ma zostać wstawiony do podstawowej stopki każdej sekcji dokumentu, a następnie wstawia tekst do stopki.
 
-     [!code-vb[Trin_VstcoreWordAutomation#114](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#114)]
-     [!code-csharp[Trin_VstcoreWordAutomation#114](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#114)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet114":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet114":::
 
 ### <a name="to-add-text-to-headers-in-the-document"></a>Aby dodać tekst do nagłówków w dokumencie
 
-1. Poniższy przykład kodu dodaje pole, aby wyświetlić numer strony w każdym nagłówku dokumentu, a następnie ustawia wyrównanie akapitu tak, aby tekst wyrównany do prawej krawędzi nagłówka.
+1. Poniższy przykład kodu dodaje pole w celu pokazania numeru strony w każdym nagłówku w dokumencie, a następnie ustawia wyrównanie akapitu tak, aby tekst był wyrównany do prawej strony nagłówka.
 
-     [!code-vb[Trin_VstcoreWordAutomation#116](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#116)]
-     [!code-csharp[Trin_VstcoreWordAutomation#116](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#116)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet116":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet116":::
 
-## <a name="vsto-add-ins"></a>Dodatki narzędzi VSTO
- Aby użyć następujących przykładów kodu, uruchom je z `ThisAddIn` klasy w projekcie.
+## <a name="vsto-add-ins"></a>Dodatki VSTO
+ Aby użyć poniższych przykładów kodu, uruchom je z `ThisAddIn` klasy w projekcie.
 
 ### <a name="to-add-text-to-footers-in-a-document"></a>Aby dodać tekst do stopek w dokumencie
 
-1. Poniższy przykład kodu ustawia czcionkę tekstu, który ma zostać wstawiony do podstawowej stopki każdej sekcji dokumentu, a następnie wstawia tekst do stopki. Ten przykład kodu używa aktywnego dokumentu.
+1. Poniższy przykład kodu ustawia czcionkę tekstu, który ma zostać wstawiony do podstawowej stopki każdej sekcji dokumentu, a następnie wstawia tekst do stopki. W tym przykładzie kodu jest używany aktywny dokument.
 
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#114](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#114)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#114](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#114)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb" id="Snippet114":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs" id="Snippet114":::
 
 ### <a name="to-add-text-to-headers-in-the-document"></a>Aby dodać tekst do nagłówków w dokumencie
 
-1. Poniższy przykład kodu dodaje pole, aby wyświetlić numer strony w każdym nagłówku dokumentu, a następnie ustawia wyrównanie akapitu tak, aby tekst wyrównany do prawej krawędzi nagłówka. Ten przykład kodu używa aktywnego dokumentu.
+1. Poniższy przykład kodu dodaje pole w celu pokazania numeru strony w każdym nagłówku w dokumencie, a następnie ustawia wyrównanie akapitu tak, aby tekst był wyrównany do prawej strony nagłówka. W tym przykładzie kodu jest używany aktywny dokument.
 
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#116](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#116)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#116](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#116)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb" id="Snippet116":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs" id="Snippet116":::
 
 ## <a name="see-also"></a>Zobacz też
-- [Instrukcje: Programowane tworzenie nowych dokumentów](../vsto/how-to-programmatically-create-new-documents.md)
-- [Instrukcje: Programowane poszerzanie zakresów w dokumentach](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
-- [Instrukcje: programowe przechodzenie w pętli poprzez znalezione elementy w dokumentach](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)
+- [How to: Programmatically create new documents (Tworzyć programowo nowe dokumenty)](../vsto/how-to-programmatically-create-new-documents.md)
+- [Pisano: Programowe rozszerzanie zakresów w dokumentach](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
+- [How to: Programmatically loop through found items in documents](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)

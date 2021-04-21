@@ -1,6 +1,6 @@
 ---
-title: 'Instrukcje: programowe usuwanie terminów'
-description: Dowiedz się, jak można programowo usunąć apppointments w programie Microsoft Outlook. Ten przykład powoduje usunięcie jednego wystąpienia terminu cyklicznego.
+title: Jak programowo usuwać terminy
+description: Dowiedz się, jak programowo usuwać punkty aplikacji w programie Microsoft Outlook. W tym przykładzie jest usuwane jedno wystąpienie terminu cyklicznego.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,25 +16,25 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0520014edc97f7517338652fa89e4c8269ba552c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9a8c86917392859afe323deb01916b2b6bf12452
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963929"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828686"
 ---
-# <a name="how-to-programmatically-delete-appointments"></a>Instrukcje: programowe usuwanie terminów
-  Ten przykład powoduje usunięcie jednego wystąpienia terminu cyklicznego. W przykładzie założono, że wystąpienie cyklicznego terminu występuje w dniu 28 czerwca 2006, o 08:00.
+# <a name="how-to-programmatically-delete-appointments"></a>Jak programowo usuwać terminy
+  W tym przykładzie jest usuwane jedno wystąpienie terminu cyklicznego. W przykładzie przyjęto założenie, że wystąpienie terminu cyklicznego ma miejsce 28 czerwca 2006 r. o godzinie 08:00.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="example"></a>Przykład
- [!code-vb[Trin_Outlook_RL_DeleteAppointment#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_DeleteAppointment/thisaddin.vb#1)]
- [!code-csharp[Trin_Outlook_RL_DeleteAppointment#1](../vsto/codesnippet/CSharp/Trin_Outlook_RL_DeleteAppointment/thisaddin.cs#1)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_DeleteAppointment/thisaddin.vb" id="Snippet1":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_RL_DeleteAppointment/thisaddin.cs" id="Snippet1":::
 
 ## <a name="see-also"></a>Zobacz także
-- [Pracuj z elementami kalendarza](../vsto/working-with-calendar-items.md)
-- [Wprowadzenie do programowania dodatków narzędzi VSTO](../vsto/getting-started-programming-vsto-add-ins.md)
-- [Instrukcje: Programowane tworzenie terminów](../vsto/how-to-programmatically-create-appointments.md)
-- [Instrukcje: programowe tworzenie kalendarza niestandardowego](../vsto/how-to-programmatically-create-a-custom-calendar.md)
-- [Instrukcje: programowe tworzenie żądania spotkania](../vsto/how-to-programmatically-create-a-meeting-request.md)
+- [Praca z elementami kalendarza](../vsto/working-with-calendar-items.md)
+- [Wprowadzenie do programowania dodatków VSTO](../vsto/getting-started-programming-vsto-add-ins.md)
+- [Jak programowo tworzyć terminy](../vsto/how-to-programmatically-create-appointments.md)
+- [How to: Programmatically create a custom calendar (Tworzyć programowo kalendarz niestandardowy)](../vsto/how-to-programmatically-create-a-custom-calendar.md)
+- [How to: Programmatically create a meeting request (Tworzyć programowo żądanie spotkania)](../vsto/how-to-programmatically-create-a-meeting-request.md)

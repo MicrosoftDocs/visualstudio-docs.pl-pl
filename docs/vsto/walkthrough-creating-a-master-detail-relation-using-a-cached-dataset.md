@@ -1,6 +1,6 @@
 ---
-title: Utwórz relację wzorca głównego przy użyciu buforowanego zestawu danych
-description: Dowiedz się więcej o tworzeniu relacji wzorzec/szczegóły w arkuszu i buforowaniu danych, aby umożliwić korzystanie z rozwiązania w trybie offline.
+title: Tworzenie relacji szczegółów wzorca przy użyciu buforowanych zestawów danych
+description: Dowiedz się więcej na temat tworzenia relacji wzorzec/szczegół w arkuszu i buforowania danych, aby można było używać rozwiązania w trybie offline.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,30 +15,30 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 843718ea49ae7df7d34775283ce8120f077b0a0f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 177b21e2278153693601adf7b7dc18b751cf184e
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925504"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824851"
 ---
-# <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>Wskazówki: Tworzenie relacji głównej szczegółów przy użyciu buforowanego zestawu danych
-  W tym instruktażu pokazano, jak utworzyć relację wzorzec/szczegóły w arkuszu i buforować dane, aby umożliwić korzystanie z rozwiązania w trybie offline.
+# <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>Przewodnik: tworzenie relacji szczegółów wzorca przy użyciu buforowanych zestawów danych
+  W tym przewodniku pokazano tworzenie relacji wzorzec/szczegół w arkuszu oraz buforowanie danych, dzięki czemu rozwiązanie może być używane w trybie offline.
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
- W tym instruktażu dowiesz się, jak:
+ W ramach tego przewodnika dowiesz się, jak:
 
-- Dodawanie formantów do arkusza.
+- Dodawanie kontrolek do arkusza.
 
 - Skonfiguruj zestaw danych do buforowania w arkuszu.
 
-- Dodaj kod, aby włączyć przewijanie rekordów.
+- Dodaj kod umożliwiający przewijanie rekordów.
 
 - Przetestuj projekt.
 
 > [!NOTE]
-> Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [Personalizowanie środowiska IDE Visual Studio .](../ide/personalizing-the-visual-studio-ide.md)
 
 ## <a name="prerequisites"></a>Wymagania wstępne
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
@@ -47,68 +47,68 @@ ms.locfileid: "99925504"
 
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] lub [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
-- Dostęp do przykładowej bazy danych Northwind SQL Server. Baza danych może być na komputerze deweloperskim lub na serwerze.
+- Dostęp do przykładowej bazy danych Northwind SQL Server Northwind. Baza danych może być na komputerze dewelopera lub na serwerze.
 
-- Uprawnienia do odczytu i zapisu w bazie danych SQL Server.
+- Uprawnienia do odczytu i zapisu w SQL Server danych.
 
 ## <a name="create-a-new-project"></a>Tworzenie nowego projektu
  W tym kroku utworzysz projekt skoroszytu programu Excel.
 
 ### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt
 
-1. Utwórz projekt skoroszytu programu Excel o nazwie **My master-detail**, używając obu Visual Basic lub C#. Upewnij się, że wybrano **Utwórz nowy dokument** . Aby uzyskać więcej informacji, zobacz [How to: Create Office projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Utwórz projekt skoroszytu programu Excel o nazwie **My Master-Detail** przy użyciu Visual Basic lub C#. Upewnij się, **że wybrano opcję Utwórz** nowy dokument. Aby uzyskać więcej informacji, [zobacz How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-   Program Visual Studio otwiera nowy skoroszyt programu Excel w Projektancie i dodaje projekt **My master-detail** do **Eksplorator rozwiązań**.
+   Visual Studio nowy skoroszyt programu Excel w projektancie i dodaje projekt **My Master-Detail** do **Eksplorator rozwiązań**.
 
 ## <a name="create-the-data-source"></a>Tworzenie źródła danych
- Użyj okna **źródła danych** , aby dodać do projektu typ zestawu danych.
+ Użyj okna **Źródła danych,** aby dodać typowany zestaw danych do projektu.
 
 ### <a name="to-create-the-data-source"></a>Aby utworzyć źródło danych
 
-1. Jeśli okno **źródła danych** nie jest widoczne, Wyświetl je na pasku menu, wybierając opcję **Wyświetl**  >  **inne**  >  **źródła danych** systemu Windows.
+1. Jeśli **okno Źródła danych** nie jest widoczne, wyświetl je na pasku menu, wybierając pozycję **Wyświetl** inne źródła  >  danych systemu **Windows.**  >  
 
-2. Wybierz pozycję **Dodaj nowe źródło danych** , aby uruchomić **Kreatora konfiguracji źródła danych**.
+2. Wybierz **pozycję Dodaj nowe źródło danych,** aby uruchomić Kreatora konfiguracji źródła **danych.**
 
-3. Wybierz pozycję **baza danych** , a następnie kliknij przycisk **dalej**.
+3. Wybierz **pozycję Baza danych,** a następnie kliknij przycisk **Dalej.**
 
-4. Wybierz połączenie danych z przykładową bazą danych Northwind SQL Server lub Dodaj nowe połączenie za pomocą przycisku **nowe połączenie** .
+4. Wybierz połączenie danych z przykładową bazą danych Northwind SQL Server lub dodaj nowe połączenie przy użyciu **przycisku Nowe** połączenie.
 
-5. Po wybraniu lub utworzeniu połączenia kliknij przycisk **dalej**.
+5. Po wybraniu lub utworzeniu połączenia kliknij przycisk **Dalej.**
 
-6. Usuń zaznaczenie opcji Zapisz połączenie, jeśli jest zaznaczone, a następnie kliknij przycisk **dalej**.
+6. Wyczyść opcję zapisywania połączenia, jeśli jest zaznaczone, a następnie kliknij przycisk **Dalej.**
 
-7. Rozwiń węzeł **tabele** w oknie **obiekty bazy danych** .
+7. Rozwiń **węzeł Tabele** w **oknie Obiekty bazy** danych.
 
-8. Wybierz tabelę **Orders** i tabelę **Order Details** .
+8. Wybierz **tabelę Orders** (Zamówienia) i **tabelę Order Details (Szczegóły** zamówienia).
 
 9. Kliknij przycisk **Finish** (Zakończ).
 
-   Kreator dodaje dwie tabele do okna **źródła danych** . Dodaje również typ DataSet do projektu, który jest widoczny w **Eksplorator rozwiązań**.
+   Kreator dodaje dwie tabele do **okna Źródła** danych. Dodaje również typowany zestaw danych do projektu, który jest widoczny w **Eksplorator rozwiązań**.
 
-## <a name="add-controls-to-the-worksheet"></a>Dodawanie formantów do arkusza
- W tym kroku dodasz nazwany zakres, obiekt listy i dwa przyciski do pierwszego arkusza. Najpierw Dodaj nazwany zakres i obiekt list z okna **źródła danych** , aby były one automatycznie powiązane ze źródłem danych. Następnie Dodaj przyciski z **przybornika**.
+## <a name="add-controls-to-the-worksheet"></a>Dodawanie kontrolek do arkusza
+ W tym kroku dodasz nazwany zakres, obiekt listy i dwa przyciski do pierwszego arkusza. Najpierw dodaj nazwany zakres i obiekt  listy z okna Źródła danych, aby były one automatycznie powiązane ze źródłem danych. Następnie dodaj przyciski z **przybornika**.
 
 ### <a name="to-add-a-named-range-and-a-list-object"></a>Aby dodać nazwany zakres i obiekt listy
 
-1. Upewnij się, że skoroszyt **My Master-Detail.xlsx** jest otwarty w projektancie programu Visual Studio z wyświetlonym arkuszem **Arkusz1** .
+1. Sprawdź, czy **skoroszyt Moja Master-Detail.xlsx** jest otwarty w projektancie Visual Studio, z **wyświetlonym arkuszem Sheet1.**
 
-2. Otwórz okno **źródła danych** i rozwiń węzeł **zamówienia** .
+2. Otwórz okno **Źródła danych** i rozwiń węzeł **Orders (Zamówienia).**
 
-3. Wybierz kolumnę **IDZamówienia** , a następnie kliknij strzałkę listy rozwijanej, która zostanie wyświetlona.
+3. Wybierz **kolumnę OrderID,** a następnie kliknij strzałkę listy rozwijanej, która zostanie wyświetlona.
 
-4. Kliknij pozycję **NamedRange** na liście rozwijanej, a następnie przeciągnij kolumnę **IDZamówienia** do komórki **a2**.
+4. Kliknij **pozycję NamedRange** na liście rozwijanej, a następnie przeciągnij kolumnę **OrderID** do komórki **A2**.
 
-     <xref:Microsoft.Office.Tools.Excel.NamedRange> `OrderIDNamedRange` W komórce **a2** zostanie utworzona kontrolka o nazwie. W tym samym czasie <xref:System.Windows.Forms.BindingSource> nazwa `OrdersBindingSource` , karta tabeli i <xref:System.Data.DataSet> wystąpienie są dodawane do projektu. Formant jest powiązany z <xref:System.Windows.Forms.BindingSource> , który z kolei jest powiązany z <xref:System.Data.DataSet> wystąpieniem.
+     Kontrolka <xref:Microsoft.Office.Tools.Excel.NamedRange> o `OrderIDNamedRange` nazwie jest tworzona w komórce **A2**. W tym samym czasie do projektu są dodawane nazwane karty tabeli i <xref:System.Windows.Forms.BindingSource> `OrdersBindingSource` <xref:System.Data.DataSet> wystąpienie. Kontrolka jest powiązana z <xref:System.Windows.Forms.BindingSource> wystąpieniem <xref:System.Data.DataSet> .
 
-5. Przewiń w dół do kolumn, które znajdują się w tabeli **Orders (zamówienia** ). W dolnej części listy znajduje się tabela **Order Details** . jest to możliwe, ponieważ jest elementem podrzędnym tabeli **Orders** . Wybierz tabelę **szczegóły zamówienia** , a nie taką, która znajduje się na tym samym poziomie co tabela **Orders** , a następnie kliknij strzałkę listy rozwijanej, która zostanie wyświetlona.
+5. Przewiń w dół po kolumnach, które znajdują się w **tabeli Orders** (Zamówienia). W dolnej części listy znajduje się tabela **Szczegóły** zamówienia. znajduje się tutaj, ponieważ jest ona podrzędną **tabelą Orders( Zamówienia).** Wybierz tę **tabelę Szczegóły** zamówienia, a nie tę, która znajduje się na tym samym poziomie co tabela **Orders( Zamówienia),** a następnie kliknij strzałkę listy rozwijanej, która zostanie wyświetlona.
 
-6. Na liście rozwijanej kliknij pozycję **Lista** , a następnie przeciągnij tabelę **OrderDetails** do komórki **a6**.
+6. Kliknij **pozycję ListObject** na liście rozwijanej, a następnie przeciągnij tabelę **OrderDetails** do komórki **A6**.
 
-7. <xref:Microsoft.Office.Tools.Excel.ListObject>Kontrolka o nazwie **Order_DetailsListObject** jest tworzona w komórce **a6** i powiązana z <xref:System.Windows.Forms.BindingSource> .
+7. Kontrolka <xref:Microsoft.Office.Tools.Excel.ListObject> o **Order_DetailsListObject** jest tworzona w komórce **A6** i powiązana z <xref:System.Windows.Forms.BindingSource> .
 
 ### <a name="to-add-two-buttons"></a>Aby dodać dwa przyciski
 
-1. Na karcie **Formanty standardowe** **przybornika** Dodaj <xref:System.Windows.Forms.Button> kontrolkę do komórki **a3** arkusza.
+1. Na karcie **Typowe kontrolki** **przybornika** dodaj kontrolkę <xref:System.Windows.Forms.Button> do komórki **A3** arkusza.
 
     Ten przycisk ma nazwę `Button1` .
 
@@ -116,82 +116,82 @@ ms.locfileid: "99925504"
 
     Ten przycisk ma nazwę `Button2` .
 
-   Następnie Oznacz zestaw danych, który ma zostać zbuforowany w dokumencie.
+   Następnie oznacz zestaw danych do buforowania w dokumencie.
 
 ## <a name="cache-the-dataset"></a>Buforowanie zestawu danych
- Oznacz zestaw danych, który ma zostać zbuforowany w dokumencie, przez udostępnienie elementu DataSet i ustawienie właściwości **CacheInDocument** .
+ Oznacz zestaw danych do buforowania w dokumencie, ustawiając zestaw danych jako publiczny i ustawiając właściwość **CacheInDocument.**
 
 ### <a name="to-cache-the-dataset"></a>Aby buforować zestaw danych
 
-1. Wybierz pozycję **NorthwindDataSet** w zasobniku składników.
+1. Wybierz **pozycję NorthwindDataSet** na pasku zadań.
 
-2. W oknie **Właściwości** Zmień właściwość **Modyfikatory** na **Public**.
+2. W **oknie** Właściwości zmień właściwość **Modyfikatory na** **Public**.
 
-    Zestawy danych muszą być publiczne przed włączeniem buforowania.
+    Przed włączeniu buforowania zestawy danych muszą być publiczne.
 
-3. Zmień wartość właściwości **CacheInDocument** na **true**.
+3. Zmień właściwość **CacheInDocument** na **True.**
 
-   Następnym krokiem jest dodanie tekstu do przycisków i w języku C# Dodaj kod, aby podłączyć procedury obsługi zdarzeń.
+   Następnym krokiem jest dodanie tekstu do przycisków, a w języku C# dodanie kodu w celu podpinania obsługi zdarzeń.
 
-## <a name="initialize-the-controls"></a>Inicjowanie formantów
- Ustaw tekst przycisku i Dodaj obsługę zdarzeń podczas <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> zdarzenia.
+## <a name="initialize-the-controls"></a>Inicjowanie kontrolek
+ Ustaw tekst przycisku i dodaj procedury obsługi zdarzeń podczas <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> zdarzenia.
 
 ### <a name="to-initialize-the-data-and-the-controls"></a>Aby zainicjować dane i kontrolki
 
-1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję **Arkusz1. vb** lub **Sheet1.cs**, a następnie kliknij polecenie **Wyświetl kod** w menu skrótów.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy pozycję **Sheet1.vb** lub **Sheet1.cs,** a następnie kliknij polecenie **Wyświetl** kod w menu skrótów.
 
-2. Dodaj następujący kod do metody, `Sheet1_Startup` Aby ustawić tekst przycisków.
+2. Dodaj następujący kod do metody `Sheet1_Startup` , aby ustawić tekst przycisków.
 
-     [!code-vb[Trin_VstcoreDataExcel#15](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#15)]
-     [!code-csharp[Trin_VstcoreDataExcel#15](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#15)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb" id="Snippet15":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs" id="Snippet15":::
 
-3. W przypadku tylko języka C# Dodaj obsługę zdarzeń dla przycisku kliknij zdarzenia do `Sheet1_Startup` metody.
+3. Tylko w przypadku języka C# dodaj procedury obsługi zdarzeń dla zdarzeń kliknięcia przycisku do `Sheet1_Startup` metody .
 
-     [!code-csharp[Trin_VstcoreDataExcel#16](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#16)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs" id="Snippet16":::
 
-## <a name="add-code-to-enable-scrolling-through-the-records"></a>Dodaj kod, aby włączyć przewijanie rekordów
- Dodaj kod do <xref:System.Windows.Forms.Control.Click> procedury obsługi zdarzeń każdego przycisku, aby przejść przez rekordy.
+## <a name="add-code-to-enable-scrolling-through-the-records"></a>Dodawanie kodu umożliwiającego przewijanie rekordów
+ Dodaj kod do <xref:System.Windows.Forms.Control.Click> procedury obsługi zdarzeń każdego przycisku, aby przechodzić przez rekordy.
 
 ### <a name="to-scroll-through-the-records"></a>Aby przewijać rekordy
 
-1. Dodaj program obsługi zdarzeń dla <xref:System.Windows.Forms.Control.Click> zdarzenia `Button1` i Dodaj następujący kod, aby przejść do tyłu przez rekordy:
+1. Dodaj program obsługi zdarzeń dla zdarzenia , a następnie dodaj następujący kod, aby przechodzić <xref:System.Windows.Forms.Control.Click> `Button1` wstecz przez rekordy:
 
-     [!code-vb[Trin_VstcoreDataExcel#17](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#17)]
-     [!code-csharp[Trin_VstcoreDataExcel#17](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#17)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb" id="Snippet17":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs" id="Snippet17":::
 
-2. Dodaj program obsługi zdarzeń dla <xref:System.Windows.Forms.Control.Click> zdarzenia `Button2` i Dodaj następujący kod, aby przejść do rekordu:
+2. Dodaj program obsługi zdarzeń dla <xref:System.Windows.Forms.Control.Click> zdarzenia , a następnie dodaj następujący `Button2` kod, aby przejść przez rekordy:
 
-     [!code-vb[Trin_VstcoreDataExcel#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#18)]
-     [!code-csharp[Trin_VstcoreDataExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#18)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb" id="Snippet18":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs" id="Snippet18":::
 
 ## <a name="test-the-application"></a>Testowanie aplikacji
- Teraz możesz przetestować skoroszyt, aby upewnić się, że dane są wyświetlane w oczekiwany sposób, i że można użyć rozwiązania w trybie offline.
+ Teraz możesz przetestować skoroszyt, aby upewnić się, że dane są wyświetlane zgodnie z oczekiwaniami i że możesz używać rozwiązania w trybie offline.
 
 ### <a name="to-test-the-data-caching"></a>Aby przetestować buforowanie danych
 
 1. Naciśnij klawisz **F5**.
 
-2. Sprawdź, czy nazwany zakres i obiekt list są wypełnione danymi ze źródła danych.
+2. Sprawdź, czy nazwany zakres i obiekt listy są wypełnione danymi ze źródła danych.
 
-3. Przewiń kilka rekordów, klikając przyciski.
+3. Przewiń niektóre rekordy, klikając przyciski.
 
-4. Zapisz skoroszyt, a następnie zamknij skoroszyt i program Visual Studio.
+4. Zapisz skoroszyt, a następnie zamknij skoroszyt i Visual Studio.
 
-5. Wyłącz połączenie z bazą danych. Odłącz kabel sieciowy od komputera, jeśli baza danych znajduje się na serwerze, lub Zatrzymaj usługę SQL Server, jeśli baza danych znajduje się na komputerze deweloperskim.
+5. Wyłącz połączenie z bazą danych. Odłącz kabel sieciowy od komputera, jeśli baza danych znajduje się na serwerze, lub zatrzymaj usługę SQL Server, jeśli baza danych znajduje się na komputerze dewelopera.
 
-6. Otwórz program Excel, a następnie otwórz **moją Master-Detail.xlsx** z katalogu *\Bin* (*\Moje Master-Detail\bin* w Visual Basic lub *\Moje Master-Detail\bin\debug* w języku C#).
+6. Otwórz program Excel, **Master-Detail.xlsx** w katalogu *\bin* (*\My Master-Detail\bin* w programie Visual Basic lub *\My Master-Detail\bin\debug* w języku C#).
 
-7. Przewiń kilka rekordów, aby zobaczyć, że arkusz działa normalnie po rozłączeniu.
+7. Przewiń niektóre rekordy, aby zobaczyć, że arkusz działa normalnie po rozłączeniu.
 
-8. Ponownie nawiąż połączenie z bazą danych. Ponownie podłącz komputer do sieci, jeśli baza danych znajduje się na serwerze, lub Uruchom usługę SQL Server, jeśli baza danych znajduje się na komputerze deweloperskim.
+8. Połącz się ponownie z bazą danych. Ponownie połącz komputer z siecią, jeśli baza danych znajduje się na serwerze, lub uruchom usługę SQL Server, jeśli baza danych znajduje się na komputerze dewelopera.
 
 ## <a name="next-steps"></a>Następne kroki
- W tym instruktażu przedstawiono podstawowe informacje dotyczące tworzenia relacji danych master/detail w arkuszu i buforowania zestawu danych. Poniżej przedstawiono kilka zadań, które mogą wystąpić poniżej:
+ W tym przewodniku przedstawiono podstawy tworzenia relacji danych wzorzec/szczegół w arkuszu i buforowania zestawu danych. Oto kilka zadań, które mogą pojawić się w następnej części:
 
-- Wdróż rozwiązanie. Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązania pakietu Office](../vsto/deploying-an-office-solution.md)
+- Wdrażanie rozwiązania. Aby uzyskać więcej informacji, zobacz [Wdrażanie rozwiązania pakietu Office](../vsto/deploying-an-office-solution.md)
 
 ## <a name="see-also"></a>Zobacz też
-- [Powiązywanie danych z kontrolkami w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)
+- [Wiązanie danych z kontrolkami w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Dane w rozwiązaniach pakietu Office](../vsto/data-in-office-solutions.md)
 - [Dane pamięci podręcznej](../vsto/caching-data.md)
-- [Elementy hosta i formanty hosta — Omówienie](../vsto/host-items-and-host-controls-overview.md)
+- [Omówienie elementów hosta i kontrolek hosta](../vsto/host-items-and-host-controls-overview.md)
