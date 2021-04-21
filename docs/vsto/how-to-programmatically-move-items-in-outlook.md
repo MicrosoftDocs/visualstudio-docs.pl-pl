@@ -1,6 +1,6 @@
 ---
-title: 'Instrukcje: Programowane przenoszenie elementów w programie Outlook'
-description: Dowiedz się, jak można programistycznie przenosić elementy w programie Microsoft Outlook. Ten przykład przenosi nieprzeczytane wiadomości e-mail ze skrzynki odbiorczej do folderu o nazwie test.
+title: Jak programowo przenosić elementy w programie Outlook
+description: Dowiedz się, jak programowo przenosić elementy w programie Microsoft Outlook. W tym przykładzie nieprzeczytane wiadomości e-mail są przenosine ze skrzynki odbiorczej do folderu o nazwie Test.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,30 +14,30 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 770f056dc681e1ee2cd6704f9bd1d42afae4957b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b8e951ab393d09506ad4f2d593962ea1826eff09
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888865"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826736"
 ---
-# <a name="how-to-programmatically-move-items-in-outlook"></a>Instrukcje: Programowane przenoszenie elementów w programie Outlook
-  Ten przykład przenosi nieprzeczytane wiadomości e-mail ze **skrzynki odbiorczej** do folderu o nazwie **test**. W tym przykładzie tylko przenosi komunikaty, które mają wyraz **test** w `Subject` polu.
+# <a name="how-to-programmatically-move-items-in-outlook"></a>Jak programowo przenosić elementy w programie Outlook
+  W tym przykładzie nieprzeczytane wiadomości e-mail są przenoszyne ze **skrzynki** odbiorczej do folderu o nazwie **Test**. Przykład przenosi tylko komunikaty, które mają **słowo Test** w `Subject` polu .
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="example"></a>Przykład
- [!code-csharp[Trin_OL_MoveItems#1](../vsto/codesnippet/CSharp/Trin_OL_MoveItems/thisaddin.cs#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OL_MoveItems/thisaddin.cs" id="Snippet1":::
 
-## <a name="compile-the-code"></a>Kompiluj kod
+## <a name="compile-the-code"></a>Kompilowanie kodu
  Ten przykład wymaga:
 
-- Folder poczty programu Outlook o nazwie **test**.
+- Folder poczty programu Outlook o nazwie **Test**.
 
-- Wiadomość e-mail, która dociera do programu Word **test** w `Subject` polu.
+- Wiadomość e-mail z wyrazem **Test** w `Subject` polu.
 
 ## <a name="see-also"></a>Zobacz też
-- [Pracuj z folderami](../vsto/working-with-folders.md)
-- [Instrukcje: programowe pobieranie folderu według nazwy](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
-- [Instrukcje: programowe wyszukiwanie w określonym folderze](../vsto/how-to-programmatically-search-within-a-specific-folder.md)
-- [Instrukcje: Programowane wykonywanie akcji po otrzymaniu wiadomości e-mail](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)
+- [Praca z folderami](../vsto/working-with-folders.md)
+- [How to: Programowe pobieranie folderu według nazwy](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
+- [How to: Programowe wyszukiwanie w określonym folderze](../vsto/how-to-programmatically-search-within-a-specific-folder.md)
+- [Dzieje się tak: Programowe wykonywanie akcji po otrzymaniu wiadomości e-mail](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)

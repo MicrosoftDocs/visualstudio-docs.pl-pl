@@ -1,6 +1,6 @@
 ---
-title: Dostęp do danych w dokumentach na serwerze
-description: Dowiedz się, jak programować na podstawie danych w dostosowaniu na poziomie dokumentu bez konieczności używania modelu obiektów programu Microsoft Office Word lub Microsoft Office Excel.
+title: Uzyskiwanie dostępu do danych w dokumentach na serwerze
+description: Dowiedz się, jak programować względem danych w dostosowywaniu na poziomie dokumentu bez konieczności używania modelu obiektów programu Microsoft Office Word lub Microsoft Office Excel.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,71 +15,71 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1c610bdc33564e3e211d1ec5aab943af4eec49d1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0df6aef3c83d66b84f569e85e953fde8a3f0e16c
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965801"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826775"
 ---
-# <a name="access-data-in-documents-on-the-server"></a>Dostęp do danych w dokumentach na serwerze
-  Można programować względem danych w dostosowaniu na poziomie dokumentu bez konieczności używania modelu obiektów programu Microsoft Office Word lub Microsoft Office Excel. Oznacza to, że można uzyskać dostęp do danych znajdujących się w dokumencie na serwerze, na którym nie zainstalowano programu Word lub Excel. Na przykład kod na serwerze (na przykład na [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] stronie) może dostosować dane w dokumencie i wysłać dostosowany dokument do użytkownika końcowego. Gdy użytkownik końcowy otworzy dokument, kod powiązania danych w zestawie rozwiązania wiąże dostosowane dane do dokumentu. Jest to możliwe, ponieważ dane w dokumencie są oddzielone od interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [buforowane dane w dostosowywaniu na poziomie dokumentu](../vsto/cached-data-in-document-level-customizations.md).
+# <a name="access-data-in-documents-on-the-server"></a>Uzyskiwanie dostępu do danych w dokumentach na serwerze
+  Możesz programować względem danych w dostosowywaniu na poziomie dokumentu bez konieczności używania modelu obiektów programu Microsoft Office Word lub Microsoft Office Excel. Oznacza to, że możesz uzyskać dostęp do danych zawartych w dokumencie na serwerze, na którym nie zainstalowano programu Word ani Excel. Na przykład kod na serwerze (na przykład na stronie) może dostosować dane w dokumencie i wysłać dostosowany dokument [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] do użytkownika końcowego. Gdy użytkownik końcowy otworzy dokument, kod powiązania danych w zestawie rozwiązania wiąże dostosowane dane z dokumentem. Jest to możliwe, ponieważ dane w dokumencie są oddzielone od interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [Cached data in document-level customizations (Buforowane dane w dostosowaniach na poziomie dokumentu).](../vsto/cached-data-in-document-level-customizations.md)
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
 ## <a name="cache-data-for-use-on-a-server"></a>Dane pamięci podręcznej do użycia na serwerze
- Aby buforować obiekt danych w dokumencie, oznacz go <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> atrybutem w czasie projektowania lub Użyj `StartCaching` metody elementu hosta w czasie wykonywania. Gdy w dokumencie zostanie zbuforowany obiekt danych, obiekt zostanie [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Zserializowany do ciągu XML, który jest przechowywany w dokumencie. Obiekty muszą spełniać pewne wymagania, aby można było je zakwalifikować do buforowania. Aby uzyskać więcej informacji, zobacz [cache Data](../vsto/caching-data.md).
+ Aby buforować obiekt danych w dokumencie, oznacz go atrybutem w czasie projektowania lub użyj metody elementu <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> `StartCaching` hosta w czasie działania. Podczas buforowania obiektu danych w dokumencie obiekt serializuje go do ciągu XML przechowywanego [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] w dokumencie. Obiekty muszą spełniać pewne wymagania, aby kwalifikowały się do buforowania. Aby uzyskać więcej informacji, zobacz [Dane pamięci podręcznej](../vsto/caching-data.md).
 
- Kod po stronie serwera może manipulować wszystkimi obiektami danych w pamięci podręcznej danych. Formanty, które są powiązane z buforowanymi wystąpieniami danych, są synchronizowane z interfejsem użytkownika, dzięki czemu wszystkie zmiany po stronie serwera, które są wprowadzane do danych są wyświetlane automatycznie po otwarciu dokumentu na kliencie.
+ Kod po stronie serwera może manipulować dowolnymi obiektami danych w pamięci podręcznej danych. Kontrolki powiązane z wystąpieniami danych w pamięci podręcznej są synchronizowane z interfejsem użytkownika, dzięki czemu wszelkie zmiany wprowadzone w danych po stronie serwera są automatycznie wyświetlane po otwarciu dokumentu na kliencie.
 
-## <a name="access-data-in-the-cache"></a>Dostęp do danych w pamięci podręcznej
- Dostęp do danych w pamięci podręcznej można uzyskać z aplikacji poza biurem, na przykład z poziomu aplikacji konsolowej, aplikacji Windows Forms lub strony sieci Web. Aplikacja, która uzyskuje dostęp do danych w pamięci podręcznej, musi mieć pełne zaufanie; Aplikacja sieci Web mająca częściowe zaufanie nie może wstawiać, pobierać ani zmieniać danych przechowywanych w pamięci podręcznej w dokumencie pakietu Office.
+## <a name="access-data-in-the-cache"></a>Uzyskiwanie dostępu do danych w pamięci podręcznej
+ Dostęp do danych w pamięci podręcznej można uzyskać z aplikacji spoza pakietu Office, na przykład z aplikacji konsolowej, aplikacji Windows Forms aplikacji lub strony internetowej. Aplikacja, która uzyskuje dostęp do buforowanych danych, musi mieć pełne zaufanie; Aplikacja internetowa, która ma częściowe zaufanie, nie może wstawiać, pobierać ani zmieniać danych buforowanych w dokumencie pakietu Office.
 
- Pamięć podręczna danych jest dostępna za pomocą hierarchii kolekcji, które są udostępniane przez <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> Właściwość <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> klasy:
+ Pamięć podręczna danych jest dostępna za pośrednictwem hierarchii kolekcji, które są udostępniane <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> przez właściwość <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> klasy :
 
-- <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A>Właściwość zwraca obiekt <xref:Microsoft.VisualStudio.Tools.Applications.CachedData> , który zawiera wszystkie dane z pamięci podręcznej w dostosowaniu na poziomie dokumentu.
+- Właściwość <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> zwraca <xref:Microsoft.VisualStudio.Tools.Applications.CachedData> obiekt , który zawiera wszystkie buforowane dane w dostosowywaniu na poziomie dokumentu.
 
-- Każdy z nich <xref:Microsoft.VisualStudio.Tools.Applications.CachedData> zawiera co najmniej jeden <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataHostItem> obiekt. <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataHostItem>Zawiera wszystkie obiekty danych w pamięci podręcznej, które są zdefiniowane w ramach pojedynczej klasy.
+- Każdy <xref:Microsoft.VisualStudio.Tools.Applications.CachedData> obiekt zawiera co najmniej jeden <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataHostItem> obiekt. Obiekt <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataHostItem> zawiera wszystkie obiekty danych w pamięci podręcznej, które są zdefiniowane w ramach jednej klasy.
 
-- Każdy z nich <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataHostItem> zawiera co najmniej jeden <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> obiekt. <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem>Reprezentuje pojedynczy obiekt danych w pamięci podręcznej.
+- Każdy <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataHostItem> obiekt zawiera co najmniej jeden <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> obiekt. Reprezentuje <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> pojedynczy obiekt danych w pamięci podręcznej.
 
-  Poniższy przykład kodu demonstruje, jak uzyskać dostęp do buforowanego ciągu w `Sheet1` klasie projektu skoroszytu programu Excel. Ten przykład jest częścią większego przykładu przewidzianego dla <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.Save%2A> metody.
+  W poniższym przykładzie kodu pokazano, jak uzyskać dostęp do buforowanych ciągów `Sheet1` w klasie projektu skoroszytu programu Excel. Ten przykład jest częścią większego przykładu, który jest dostarczany dla <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.Save%2A> metody .
 
-  [!code-csharp[Trin_ServerDocument#12](../vsto/codesnippet/CSharp/Trin_ServerDocument/Form1.cs#12)]
-  [!code-vb[Trin_ServerDocument#12](../vsto/codesnippet/VisualBasic/Trin_ServerDocument/Form1.vb#12)]
+  :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_ServerDocument/Form1.cs" id="Snippet12":::
+  :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_ServerDocument/Form1.vb" id="Snippet12":::
 
 ## <a name="modify-data-in-the-cache"></a>Modyfikowanie danych w pamięci podręcznej
- Aby zmodyfikować obiekt danych w pamięci podręcznej, należy zwykle wykonać następujące czynności:
+ Aby zmodyfikować obiekt danych w pamięci podręcznej, zazwyczaj należy wykonać następujące czynności:
 
-1. Deserializować reprezentację XML obiektu w pamięci podręcznej do nowego wystąpienia obiektu. Dostęp do pliku XML można uzyskać przy użyciu <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.Xml%2A> właściwości <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> , która reprezentuje obiekt danych w pamięci podręcznej.
+1. Deserializuj reprezentację XML obiektu w pamięci podręcznej do nowego wystąpienia obiektu. Dostęp do kodu XML można uzyskać za pomocą <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.Xml%2A> właściwości , która reprezentuje obiekt danych w pamięci <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> podręcznej.
 
-2. Wprowadź zmiany w tej kopii.
+2. Dokonaj zmian w tej kopii.
 
-3. Serializacja zmienionego obiektu z powrotem do pamięci podręcznej danych przy użyciu jednej z następujących opcji:
+3. Serializuj zmieniony obiekt z powrotem do pamięci podręcznej danych przy użyciu jednej z następujących opcji:
 
-    - Jeśli chcesz automatycznie serializować zmiany, użyj <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> metody. Ta metoda używa formatu **DiffGram** do serializacji <xref:System.Data.DataSet> , <xref:System.Data.DataTable> i typy obiektów DataSet w pamięci podręcznej danych. Format **DiffGram** gwarantuje, że zmiany w pamięci podręcznej danych w dokumencie offline są wysyłane do serwera prawidłowo.
+    - Jeśli chcesz automatycznie serializować zmiany, użyj <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> metody . Ta metoda używa formatu **DiffGram** do serializacji <xref:System.Data.DataSet> obiektów , i typizowanych zestawów danych w pamięci <xref:System.Data.DataTable> podręcznej danych. Format **DiffGram zapewnia,** że zmiany w pamięci podręcznej danych w dokumencie w trybie offline są prawidłowo wysyłane do serwera.
 
-    - Jeśli chcesz wykonać własną serializację dla zmian danych w pamięci podręcznej, możesz pisać bezpośrednio do <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.Xml%2A> właściwości. Określ format **DiffGram** , jeśli używasz programu <xref:System.Data.Common.DataAdapter> do aktualizowania bazy danych przy użyciu zmian wprowadzonych w danych w <xref:System.Data.DataSet> , <xref:System.Data.DataTable> lub z określonym zestawem danych. W przeciwnym razie <xref:System.Data.Common.DataAdapter> zostanie zaktualizowana baza danych przez dodanie nowych wierszy zamiast modyfikowania istniejących wierszy.
+    - Jeśli chcesz wykonać własną serializacji dla zmian w pamięci podręcznej danych, można zapisać bezpośrednio do <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.Xml%2A> właściwości. Określ format **DiffGram,** jeśli używasz obiektu do aktualizowania bazy danych za pomocą zmian wprowadzonych w danych w <xref:System.Data.Common.DataAdapter> <xref:System.Data.DataSet> <xref:System.Data.DataTable> typiowym zestawie danych , lub . W przeciwnym razie <xref:System.Data.Common.DataAdapter> baza danych zostanie zaktualizowana przez dodanie nowych wierszy zamiast modyfikowania istniejących wierszy.
 
-### <a name="modify-data-without-deserializing-the-current-value"></a>Modyfikuj dane bez deserializacji bieżącej wartości
- W niektórych przypadkach może zajść potrzeba zmodyfikowania wartości obiektu w pamięci podręcznej bez uprzedniego deserializacji bieżącej wartości. Na przykład możesz to zrobić, jeśli zmieniasz wartość obiektu, który ma typ prosty, taki jak ciąg lub liczba całkowita, lub jeśli inicjujesz buforowanie <xref:System.Data.DataSet> w dokumencie na serwerze. W takich przypadkach można użyć <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> metody bez uprzedniego deserializacji bieżącej wartości obiektu w pamięci podręcznej.
+### <a name="modify-data-without-deserializing-the-current-value"></a>Modyfikowanie danych bez deserializacji bieżącej wartości
+ W niektórych przypadkach można zmodyfikować wartość obiektu pamięci podręcznej bez uprzedniego deserializacji bieżącej wartości. Można to zrobić na przykład w przypadku zmiany wartości obiektu o prostym typie, takim jak ciąg lub liczba całkowita, lub w przypadku inicjowania buforowanej w dokumencie na <xref:System.Data.DataSet> serwerze. W takich przypadkach można użyć metody <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> bez uprzedniego deserializacji bieżącej wartości obiektu w pamięci podręcznej.
 
- Poniższy przykład kodu demonstruje, jak zmienić wartość buforowanego ciągu w `Sheet1` klasie projektu skoroszytu programu Excel. Ten przykład jest częścią większego przykładu przewidzianego dla <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.Save%2A> metody.
+ Poniższy przykład kodu pokazuje, jak zmienić wartość buforowanych ciągów w `Sheet1` klasie projektu skoroszytu programu Excel. Ten przykład jest częścią większego przykładu dostarczonego dla <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.Save%2A> metody .
 
- [!code-csharp[Trin_ServerDocument#11](../vsto/codesnippet/CSharp/Trin_ServerDocument/Form1.cs#11)]
- [!code-vb[Trin_ServerDocument#11](../vsto/codesnippet/VisualBasic/Trin_ServerDocument/Form1.vb#11)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_ServerDocument/Form1.cs" id="Snippet11":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_ServerDocument/Form1.vb" id="Snippet11":::
 
 ### <a name="modify-null-values-in-the-data-cache"></a>Modyfikowanie wartości null w pamięci podręcznej danych
- Pamięć podręczna danych nie przechowuje obiektów, które mają wartość **null** , gdy dokument jest zapisywany i zamykany. To ograniczenie ma kilka konsekwencji w przypadku modyfikacji danych w pamięci podręcznej:
+ Pamięć podręczna danych nie przechowuje obiektów o wartości **null** po zapisaniu i zamknięciu dokumentu. To ograniczenie ma kilka konsekwencji podczas modyfikowania danych w pamięci podręcznej:
 
-- Jeśli ustawisz dowolny obiekt w pamięci podręcznej danych na wartość **null**, wszystkie obiekty w pamięci podręcznej danych zostaną automatycznie ustawione na **wartość null** , gdy dokument zostanie otwarty, a cała pamięć podręczna danych zostanie wyczyszczona, gdy dokument zostanie zapisany i zamknięty. Oznacza to, że wszystkie obiekty w pamięci podręcznej zostaną usunięte z pamięci podręcznej danych, a <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> kolekcja będzie pusta.
+- Jeśli dowolny obiekt w pamięci podręcznej danych zostanie ustawiony na wartość **null,** wszystkie obiekty w pamięci podręcznej danych zostaną automatycznie ustawione na wartość **null** po otwarciu dokumentu, a cała pamięć podręczna danych zostanie wyczyszona po zapisaniu i zamknięciu dokumentu. Oznacza to, że wszystkie buforowane obiekty zostaną usunięte z pamięci podręcznej danych, a kolekcja <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> będzie pusta.
 
-- Jeśli tworzysz rozwiązanie z **pustymi** obiektami w pamięci podręcznej danych i chcesz zainicjować te obiekty przy użyciu <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> klasy przed otwarciem dokumentu po raz pierwszy, musisz się upewnić, że zainicjowano wszystkie obiekty w pamięci podręcznej danych. Jeśli zainicjujesz tylko niektóre z obiektów, wszystkie obiekty zostaną ustawione na **wartość null** , gdy dokument zostanie otwarty, a cała pamięć podręczna danych zostanie wyczyszczona po zapisaniu i zamknięciu dokumentu.
+- Jeśli tworzysz rozwiązanie z obiektami o wartości **null** w pamięci podręcznej danych i chcesz zainicjować te obiekty przy użyciu klasy przed pierwszym otwarciem dokumentu, musisz się upewnić, że wszystkie obiekty w pamięci podręcznej danych są <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> zainicjowane. W przypadku zainicjowania tylko niektórych obiektów wszystkie obiekty zostaną ustawione na wartość **null** po otwarciu dokumentu, a cała pamięć podręczna danych zostanie wyczyszona po zapisaniu i zamknięciu dokumentu.
 
-## <a name="access-typed-datasets-in-the-cache"></a>Dostęp do wpisanych zestawów danych w pamięci podręcznej
- Jeśli chcesz uzyskać dostęp do danych w określonym zestawie danych zarówno z rozwiązania pakietu Office, jak i z aplikacji poza biurem, na przykład aplikacji Windows Forms lub [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] projektu, musisz zdefiniować określony zestaw danych w osobnym zestawie, do którego istnieje odwołanie w obu projektach. W przypadku dodania określonego zestawu danych do każdego projektu przy użyciu kreatora **konfiguracji źródła danych** lub **Projektant obiektów DataSet**, .NET Framework będzie traktować typy zestawów danych w dwóch projektach jako różne. Aby uzyskać więcej informacji o tworzeniu wpisanych zestawów danych, zobacz [Tworzenie i konfigurowanie zestawów danych w programie Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md).
+## <a name="access-typed-datasets-in-the-cache"></a>Uzyskiwanie dostępu do typowanych zestawów danych w pamięci podręcznej
+ Jeśli chcesz uzyskać dostęp do danych w typiowym zestawie danych zarówno z rozwiązania pakietu Office, jak i z aplikacji spoza pakietu Office, takiej jak aplikacja usługi Windows Forms lub projekt, musisz zdefiniować typowany zestaw danych w oddzielnym zestawie, do którego odwołuje się oba [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] projekty. Jeśli dodasz typowany zestaw danych do  każdego projektu przy użyciu kreatora konfiguracji źródła danych lub narzędzia **Projektant obiektów Dataset,**.NET Framework będzie traktować typowane zestawy danych w tych dwóch projektach jako różne typy. Aby uzyskać więcej informacji na temat tworzenia typów zestawów danych, zobacz Tworzenie i konfigurowanie zestawów danych w [programie Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md).
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Dostęp do danych w dokumentach na serwerze](../vsto/accessing-data-in-documents-on-the-server.md)
-- [Dane w pamięci podręcznej w dostosowaniu na poziomie dokumentu](../vsto/cached-data-in-document-level-customizations.md)
+- [Uzyskiwanie dostępu do danych w dokumentach na serwerze](../vsto/accessing-data-in-documents-on-the-server.md)
+- [Buforowane dane w dostosowaniach na poziomie dokumentu](../vsto/cached-data-in-document-level-customizations.md)

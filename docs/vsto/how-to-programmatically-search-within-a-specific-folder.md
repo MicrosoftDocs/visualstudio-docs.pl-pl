@@ -1,6 +1,6 @@
 ---
-title: 'Instrukcje: programowe wyszukiwanie w określonym folderze'
-description: Dowiedz się, jak za pomocą programu Visual Studio programowo przeszukiwać w określonym folderze programu Microsoft Outlook.
+title: 'How to: Programowe wyszukiwanie w określonym folderze'
+description: Dowiedz się, jak używać Visual Studio do programowego wyszukiwania w określonym folderze programu Microsoft Outlook.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -15,22 +15,22 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a9c7861698e678ca6d8332e3940c3ae49ff423f3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b25880420e23b82f6f63ab28ef5f1f93429bdd8c
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877879"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824760"
 ---
-# <a name="how-to-programmatically-search-within-a-specific-folder"></a>Instrukcje: programowe wyszukiwanie w określonym folderze
-  Ten przykład kodu używa `Find` metod i, `FindNext` Aby wyszukać tekst w polu podmiotu wiadomości e-mail znajdujących się w **skrzynce odbiorczej**. Ta metoda używa filtru ciągów, aby wyszukać literę T jako początkową literę `Subject` tekstu.
+# <a name="how-to-programmatically-search-within-a-specific-folder"></a>How to: Programowe wyszukiwanie w określonym folderze
+  W tym przykładzie kodu użyto metod i do wyszukiwania tekstu w polu tematu wiadomości `Find` `FindNext` e-mail, które znajdują się w **skrzynce odbiorczej**. Ta metoda używa filtru ciągu, aby sprawdzić literę T jako literę początkową `Subject` tekstu.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="example"></a>Przykład
- [!code-csharp[Trin_OL_SearchFolder#1](../vsto/codesnippet/CSharp/Trin_OL_SearchFolder/thisaddin.cs#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OL_SearchFolder/thisaddin.cs" id="Snippet1":::
 
 ## <a name="see-also"></a>Zobacz także
-- [Pracuj z folderami](../vsto/working-with-folders.md)
-- [Model obiektów programu Outlook — Omówienie](../vsto/outlook-object-model-overview.md)
-- [Instrukcje: programowe pobieranie folderu według nazwy](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
+- [Praca z folderami](../vsto/working-with-folders.md)
+- [Omówienie modelu obiektów programu Outlook](../vsto/outlook-object-model-overview.md)
+- [How to: Programowe pobieranie folderu według nazwy](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)

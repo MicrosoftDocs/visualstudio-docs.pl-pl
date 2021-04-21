@@ -1,6 +1,6 @@
 ---
-title: 'Instrukcje: Programowane korzystanie z okien dialogowych programu Word w trybie ukrytym'
-description: Dowiedz się, jak używać programu Visual Studio do programistycznego używania okien dialogowych programu Microsoft Word w trybie ukrytym.
+title: 'How to: Programmatically use Word dialog boxes in hidden mode (Jak programowo używać okien dialogowych programu Word w trybie ukrytym)'
+description: Dowiedz się, jak używać Visual Studio do programowego korzystania z okien dialogowych programu Microsoft Word w trybie ukrytym.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -17,33 +17,33 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0977e7241920ad23a6248bb2349ddaeb10a5e931
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 39a81ccec284541d93d3a5901211d8a46ea6b61a
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931255"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826190"
 ---
-# <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>Instrukcje: Programowane korzystanie z okien dialogowych programu Word w trybie ukrytym
-  Można wykonywać złożone operacje przy użyciu jednego wywołania metody przez wywoływanie wbudowanych okien dialogowych w Microsoft Office Word bez wyświetlania ich użytkownikowi. Można to zrobić za pomocą <xref:Microsoft.Office.Interop.Word.Dialog.Execute%2A> metody <xref:Microsoft.Office.Interop.Word.Dialog> obiektu bez wywoływania <xref:Microsoft.Office.Interop.Word.Dialog.Display%2A> metody.
+# <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>How to: Programmatically use Word dialog boxes in hidden mode (Jak programowo używać okien dialogowych programu Word w trybie ukrytym)
+  Złożone operacje można wykonywać za pomocą jednego wywołania metody, wywołując wbudowane okna dialogowe w programie Microsoft Office Word bez wyświetlania ich użytkownikowi. Można to zrobić przy użyciu <xref:Microsoft.Office.Interop.Word.Dialog.Execute%2A> metody obiektu <xref:Microsoft.Office.Interop.Word.Dialog> bez wywoływania <xref:Microsoft.Office.Interop.Word.Dialog.Display%2A> metody .
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
 ## <a name="examples"></a>Przykłady
- Poniższy przykład kodu pokazuje, jak używać okna dialogowego **Ustawienia strony** w trybie ukrytym do ustawiania właściwości ustawień wielu stron bez wprowadzania danych przez użytkownika. W przykładach użyto <xref:Microsoft.Office.Interop.Word.Dialog> obiektu do skonfigurowania niestandardowego rozmiaru strony. Określone ustawienia dla ustawień strony, takie jak górny margines, dolny margines i tak dalej, są dostępne jako właściwości z późnym wiązaniem <xref:Microsoft.Office.Interop.Word.Dialog> obiektu. Te właściwości są tworzone dynamicznie przez program Word w czasie wykonywania.
+ W poniższych przykładach kodu pokazano, jak za pomocą okna dialogowego **Ustawienia** strony w trybie ukrytym ustawić wiele właściwości konfiguracji strony bez wprowadzania danych przez użytkownika. W przykładach do <xref:Microsoft.Office.Interop.Word.Dialog> skonfigurowania niestandardowego rozmiaru strony jest obiekt . Określone ustawienia konfiguracji strony, takie jak górny margines, dolny margines itp., są dostępne jako właściwości obiektu z późnym <xref:Microsoft.Office.Interop.Word.Dialog> wiązaniem. Te właściwości są dynamicznie tworzone przez program Word w czasie działania.
 
- W poniższym przykładzie pokazano, jak wykonać to zadanie w Visual Basic projektach, w których **opcja Strict** jest wyłączona i w projektach Visual C#, które są przeznaczone dla [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] . W tych projektach można używać funkcji późnego wiązania w kompilatorach Visual Basic i Visual C#. Aby użyć tego przykładu, należy uruchomić go `ThisDocument` z `ThisAddIn` klasy lub w projekcie.
+ W poniższym przykładzie pokazano, jak wykonać to zadanie w projektach Visual Basic, w których opcja **Option Strict** jest wyłączona, i w projektach Visual C# dla obiektu [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] docelowego . W tych projektach można używać funkcji późnego wiązania w kompilatorach języka Visual Basic i Visual C#. Aby użyć tego przykładu, uruchom go z `ThisDocument` klasy lub `ThisAddIn` w projekcie.
 
- [!code-vb[Trin_VstcoreWordAutomation#123](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#123)]
- [!code-csharp[Trin_VstcoreWordAutomation#123](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#123)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet123":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet123":::
 
- W poniższym przykładzie pokazano, jak wykonać to zadanie w Visual Basic projekty, w których **opcja Strict** jest włączona. W tych projektach należy użyć odbicia, aby uzyskać dostęp do właściwości z późnym wiązaniem. Aby użyć tego przykładu, należy uruchomić go `ThisDocument` z `ThisAddIn` klasy lub w projekcie.
+ W poniższym przykładzie pokazano, jak wykonać to zadanie w Visual Basic projektach, w których **jest wł. opcja** Strict. W tych projektach należy użyć odbicia, aby uzyskać dostęp do właściwości z późnym wiązaniem. Aby użyć tego przykładu, uruchom go z `ThisDocument` klasy lub `ThisAddIn` w projekcie.
 
- [!code-vb[Trin_VstcoreWordAutomation#104](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#104)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet104":::
 
 ## <a name="see-also"></a>Zobacz też
-- [Instrukcje: Programowane Używanie wbudowanych okien dialogowych w programie Word](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)
-- [Model obiektów programu Word — omówienie](../vsto/word-object-model-overview.md)
-- [Późne powiązania w rozwiązaniach pakietu Office](../vsto/late-binding-in-office-solutions.md)
+- [How to: Programmatically use built-in dialog boxes in Word](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)
+- [Model obiektu Word — omówienie](../vsto/word-object-model-overview.md)
+- [Późne powiązanie w rozwiązaniach pakietu Office](../vsto/late-binding-in-office-solutions.md)
 - [Odbicie (C#)](/dotnet/csharp/programming-guide/concepts/reflection)
 - [Odbicie (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection)

@@ -1,6 +1,6 @@
 ---
-title: 'Instrukcje: programowe usuwanie kontaktów programu Outlook'
-description: Dowiedz się, jak można programowo usunąć kontakty w programie Microsoft Outlook. Ten przykład usuwa jeden kontakt.
+title: Jak programowo usuwać kontakty programu Outlook
+description: Dowiedz się, jak programowo usuwać kontakty w programie Microsoft Outlook. W tym przykładzie usuwany jest jeden kontakt.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,23 +15,23 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 98ee7773c86e85fa9ced0274bc37c4db3f8aacc2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b02ed8108daede030d460f80d8cdd76b82112401
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963898"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824773"
 ---
-# <a name="how-to-programmatically-delete-outlook-contacts"></a>Instrukcje: programowe usuwanie kontaktów programu Outlook
-  Ten przykład usuwa kontakt. W przykładzie przyjęto założenie, że kontakt o nazwie "Armando Pinto" istnieje w folderze **kontaktów** .
+# <a name="how-to-programmatically-delete-outlook-contacts"></a>Jak programowo usuwać kontakty programu Outlook
+  W tym przykładzie jest usuwany kontakt. W przykładzie przyjęto założenie, że w folderze **Contacts** istnieje kontakt o nazwie "Armdziałem Pinto".
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="example"></a>Przykład
- [!code-vb[Trin_Outlook_RL_DeleteContacts#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_DeleteContacts/thisaddin.vb#1)]
- [!code-csharp[Trin_Outlook_RL_DeleteContacts#1](../vsto/codesnippet/CSharp/Trin_Outlook_RL_DeleteContacts/thisaddin.cs#1)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_DeleteContacts/thisaddin.vb" id="Snippet1":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_RL_DeleteContacts/thisaddin.cs" id="Snippet1":::
 
 ## <a name="see-also"></a>Zobacz także
-- [Pracuj z elementami kontaktów](../vsto/working-with-contact-items.md)
-- [Instrukcje: programowe wyszukiwanie określonego kontaktu](../vsto/how-to-programmatically-search-for-a-specific-contact.md)
-- [Instrukcje: programowe uzyskiwanie dostępu do kontaktów programu Outlook](../vsto/how-to-programmatically-access-outlook-contacts.md)
+- [Praca z elementami kontaktów](../vsto/working-with-contact-items.md)
+- [How to: Programowe wyszukiwanie określonego kontaktu](../vsto/how-to-programmatically-search-for-a-specific-contact.md)
+- [Szybki start: Programowy dostęp do kontaktów programu Outlook](../vsto/how-to-programmatically-access-outlook-contacts.md)

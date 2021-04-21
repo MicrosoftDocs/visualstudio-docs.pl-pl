@@ -1,6 +1,6 @@
 ---
-title: 'Instrukcje: Programowane poszerzanie zakresów w dokumentach'
-description: Dowiedz się, jak programowo zwiększyć zakres początkowy i punkt końcowy w dokumencie programu Microsoft Word na poziomie dokumentu lub na poziomie aplikacji.
+title: 'Pisano: Programowe rozszerzanie zakresów w dokumentach'
+description: Dowiedz się, jak programowo rozszerzyć zakresy punktów startowych i końcowych w dokumencie programu Microsoft Word na poziomie dokumentu lub aplikacji.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,15 +15,15 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b3236a6303f25d8d24fe77c434a60d31aa572aa7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7a539bbbc4ad8d73477e660ef9903ac51dce712f
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99885446"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826528"
 ---
-# <a name="how-to-programmatically-extend-ranges-in-documents"></a>Instrukcje: Programowane poszerzanie zakresów w dokumentach
-  Po zdefiniowaniu <xref:Microsoft.Office.Interop.Word.Range> obiektu w Microsoft Office dokumencie programu Word można zmienić jego początkową i końcową punkty za pomocą <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> metod i <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> . <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A>Metody i <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> przyjmują te same dwa argumenty, *jednostkę* i *liczbę*. Argument *Count* to liczba jednostek do przeniesienia, a argument *Unit* może być jedną z następujących <xref:Microsoft.Office.Interop.Word.WdUnits> wartości:
+# <a name="how-to-programmatically-extend-ranges-in-documents"></a>Pisano: Programowe rozszerzanie zakresów w dokumentach
+  Po zdefiniowaniu obiektu w dokumencie programu Microsoft Office Word można zmienić jego punkt rozpoczęcia i punkt końcowy przy <xref:Microsoft.Office.Interop.Word.Range> użyciu metod <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> i <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> . Metody <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> i mają te same dwa <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> argumenty: *Unit* (Jednostka) i *Count (Liczba).* Argument *Count* jest liczbą jednostek do przeniesienia, a argument *Unit* może być jedną z następujących <xref:Microsoft.Office.Interop.Word.WdUnits> wartości:
 
 - <xref:Microsoft.Office.Interop.Word.WdUnits.wdCharacter>
 
@@ -47,53 +47,53 @@ ms.locfileid: "99885446"
 
   [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-  Poniższy przykład definiuje zakres siedmiu znaków. Następnie przenosi początkową pozycję zakresu siedem znaków po oryginalnej pozycji początkowej. Ponieważ Pozycja końcowa zakresu była również siedem znaków po pozycji początkowej, wynik jest zakresem zawierającym zero znaków. Następnie kod przenosi koniec siedmiu znaków po bieżącej pozycji końcowej.
+  W poniższym przykładzie zdefiniowano zakres siedmiu znaków. Następnie przenosi pozycję początku zakresu siedmiu znaków po oryginalnej pozycji rozpoczęcia. Ponieważ pozycja końcowa zakresu również miała siedem znaków po pozycji startowej, wynik jest zakresem, który składa się z zera znaków. Następnie kod przenosi pozycję końcową siedem znaków po bieżącej pozycji końcowej.
 
-## <a name="to-extend-a-range"></a>Aby rozwinąć zakres
+## <a name="to-extend-a-range"></a>Aby rozszerzyć zakres
 
-1. Zdefiniuj zakres znaków. Aby uzyskać więcej informacji, zobacz [How to: programowe Definiowanie i wybieranie zakresów w dokumentach](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md).
+1. Zdefiniuj zakres znaków. Aby uzyskać więcej informacji, [zobacz How to: Programmatically define and select ranges in documents (Jak programowo definiować i wybierać zakresy w dokumentach).](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
 
-     Poniższy przykład kodu może być używany w dostosowaniu na poziomie dokumentu.
+     Poniższy przykład kodu może służyć do dostosowywania na poziomie dokumentu.
 
-     [!code-vb[Trin_VstcoreWordAutomation#39](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#39)]
-     [!code-csharp[Trin_VstcoreWordAutomation#39](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#39)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet39":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet39":::
 
-     Poniższy przykład kodu może być używany w dodatku VSTO. Ten przykład używa aktywnego dokumentu.
+     Poniższy przykład kodu może być używany w dodatku VSTO. W tym przykładzie jest używany aktywny dokument.
 
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#39](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#39)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#39](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#39)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb" id="Snippet39":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs" id="Snippet39":::
 
-2. Użyj <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> metody <xref:Microsoft.Office.Interop.Word.Range> obiektu, aby przenieść pozycję początkową zakresu.
+2. Użyj <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> metody obiektu <xref:Microsoft.Office.Interop.Word.Range> , aby przenieść pozycję rozpoczęcia zakresu.
 
-     [!code-vb[Trin_VstcoreWordAutomation#40](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#40)]
-     [!code-csharp[Trin_VstcoreWordAutomation#40](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#40)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet40":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet40":::
 
-3. Użyj <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> metody <xref:Microsoft.Office.Interop.Word.Range> obiektu, aby przenieść pozycję końca zakresu.
+3. Użyj <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> metody obiektu <xref:Microsoft.Office.Interop.Word.Range> , aby przenieść końcową pozycję zakresu.
 
-     [!code-vb[Trin_VstcoreWordAutomation#41](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#41)]
-     [!code-csharp[Trin_VstcoreWordAutomation#41](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#41)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet41":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet41":::
 
-## <a name="document-level-customization-code"></a>Kod dostosowania na poziomie dokumentu
+## <a name="document-level-customization-code"></a>Kod dostosowywania na poziomie dokumentu
 
-### <a name="to-extend-a-range-in-a-document-level-customization"></a>Aby zwiększyć zakres w dostosowaniu na poziomie dokumentu
+### <a name="to-extend-a-range-in-a-document-level-customization"></a>Aby rozszerzyć zakres w dostosowywaniu na poziomie dokumentu
 
-1. Poniższy przykład pokazuje kompletny kod dla dostosowania na poziomie dokumentu. Aby użyć tego kodu, należy uruchomić go z `ThisDocument` klasy w projekcie.
+1. W poniższym przykładzie pokazano kompletny kod dostosowywania na poziomie dokumentu. Aby użyć tego kodu, uruchom go z `ThisDocument` klasy w projekcie.
 
-     [!code-vb[Trin_VstcoreWordAutomation#38](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#38)]
-     [!code-csharp[Trin_VstcoreWordAutomation#38](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#38)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet38":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet38":::
 
-## <a name="vsto-add-in-code"></a>Kod dodatku narzędzi VSTO
+## <a name="vsto-add-in-code"></a>Kod dodatku VSTO
 
-### <a name="to-extend-a-range-in-an-application-level-vsto-add-in"></a>Aby rozwinąć zakres w dodatku VSTO na poziomie aplikacji
+### <a name="to-extend-a-range-in-an-application-level-vsto-add-in"></a>Aby rozszerzyć zakres w dodatku VSTO na poziomie aplikacji
 
-1. Poniższy przykład pokazuje kompletny kod dodatku VSTO. Aby użyć tego kodu, należy uruchomić go z `ThisAddIn` klasy w projekcie.
+1. W poniższym przykładzie pokazano pełny kod dodatku VSTO. Aby użyć tego kodu, uruchom go z `ThisAddIn` klasy w projekcie.
 
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#38](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#38)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#38](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#38)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb" id="Snippet38":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs" id="Snippet38":::
 
 ## <a name="see-also"></a>Zobacz też
-- [Instrukcje: Programowane Resetowanie zakresów w dokumentach programu Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)
-- [Instrukcje: programowe zwijanie zakresów lub zaznaczenia w dokumentach](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)
-- [Instrukcje: programowe Definiowanie i wybieranie zakresów w dokumentach](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
-- [Instrukcje: programowe pobieranie znaków początkowych i końcowych w zakresach](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)
-- [Instrukcje: Programowane wykluczanie znaczników akapitu podczas tworzenia zakresów](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)
+- [How to: Programowe resetowanie zakresów w dokumentach programu Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)
+- [How to: Programowe zwijanie zakresów lub wyborów w dokumentach](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)
+- [Jak programowo definiować i wybierać zakresy w dokumentach](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
+- [How to: Programowe pobieranie znaków początku i końca w zakresach](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)
+- [Dzieje się tak: Programowe wykluczanie znaczników akapitu podczas tworzenia zakresów](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)

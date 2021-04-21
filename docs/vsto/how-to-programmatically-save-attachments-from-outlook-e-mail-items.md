@@ -1,6 +1,6 @@
 ---
-title: Programowo Zapisuj załączniki z elementów poczty e-mail programu Outlook
-description: Dowiedz się, jak za pomocą programu Visual Studio programistycznie zapisywać załączniki z elementów poczty e-mail programu Microsoft Outlook.
+title: Programowe zapisywanie załączników z elementów wiadomości e-mail programu Outlook
+description: Dowiedz się, jak za pomocą Visual Studio programowo zapisywać załączniki z elementów poczty e-mail programu Microsoft Outlook.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -18,29 +18,29 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 516b6b680b8718747490a8afd9cdd2f823e996e1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ad64593f91e14bcfd993929420764869a8359e3e
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880466"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826697"
 ---
-# <a name="how-to-programmatically-save-attachments-from-outlook-email-items"></a>Instrukcje: programowe zapisywanie załączników z elementów poczty e-mail programu Outlook
+# <a name="how-to-programmatically-save-attachments-from-outlook-email-items"></a>Jak programowo zapisywać załączniki z elementów poczty e-mail programu Outlook
 
-Ten przykład zapisuje załączniki wiadomości e-mail do określonego folderu po odebraniu wiadomości w skrzynce odbiorczej.
+W tym przykładzie załączniki wiadomości e-mail są zapisywane w określonym folderze po otrzymaniu wiadomości e-mail w skrzynce odbiorczej.
 
 > [!IMPORTANT]
-> Ten przykład działa tylko w przypadku dodania folderu o nazwie **TestFileSave** w katalogu głównym katalogu C.
+> Ten przykład działa tylko wtedy, gdy dodasz folder o nazwie **TestFileZave** w katalogu głównym katalogu C.
 
 [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="example"></a>Przykład
 
-[!code-csharp[Trin_OL_SaveAttachments#1](../vsto/codesnippet/CSharp/Trin_OL_SaveAttachments/thisaddin.cs#1)]
+:::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OL_SaveAttachments/thisaddin.cs" id="Snippet1":::
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Pracuj z elementami poczty](../vsto/working-with-mail-items.md)
-- [Instrukcje: programowe pobieranie folderu według nazwy](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
-- [Instrukcje: Programowane wykonywanie akcji po otrzymaniu wiadomości e-mail](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)
-- [Instrukcje: programowe wyszukiwanie w określonym folderze](../vsto/how-to-programmatically-search-within-a-specific-folder.md)
+- [Praca z elementami poczty](../vsto/working-with-mail-items.md)
+- [How to: Programowe pobieranie folderu według nazwy](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
+- [Dzieje się tak: Programowe wykonywanie akcji po otrzymaniu wiadomości e-mail](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)
+- [How to: Programowe wyszukiwanie w określonym folderze](../vsto/how-to-programmatically-search-within-a-specific-folder.md)
