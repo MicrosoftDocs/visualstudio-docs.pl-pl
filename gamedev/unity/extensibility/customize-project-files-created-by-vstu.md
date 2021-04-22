@@ -1,8 +1,8 @@
 ---
-title: Dostosowywanie plików projektu utworzonych przez rozszerzenia VSTU | Microsoft Docs
-description: Dowiedz się, jak dostosować pliki projektu utworzone przez Visual Studio Tools for Unity (rozszerzenia VSTU). Zapoznaj się z przykładem kodu w języku C#.
+title: Dostosowywanie plików projektu utworzonych za pomocą interfejsu VSTU | Microsoft Docs
+description: Dowiedz się, jak dostosować pliki projektu utworzone przez Visual Studio Tools for Unity (VSTU). Zapoznaj się z przykładem kodu w języku C#.
 ms.custom: ''
-ms.date: 07/26/2018
+ms.date: 04/19/2021
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -12,64 +12,38 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 071dc7a9f12dcfeb5fff9e59bbbf34dc64f61cf5
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: a4a5973863877db2d071f9be8d4689928b21a689
+ms.sourcegitcommit: 3e1ff87fba290f9e60fb4049d011bb8661255d58
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "94341873"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107879320"
 ---
-# <a name="customize-project-files-created-by-vstu"></a>Dostosowywanie plików projektu utworzonych przez rozszerzenia VSTU
-Visual Studio Tools for Unity zapewnia wywołanie zwrotne w stylu aparatu Unity podczas generowania pliku projektu. Zarejestruj się w `VisualStudioIntegration.ProjectFileGeneration` zdarzeniu, aby zmodyfikować plik projektu za każdym razem, gdy zostanie on ponownie wygenerowany.
+# <a name="customize-project-files-created-by-vstu"></a>Dostosowywanie plików projektu utworzonych przez vstu
+Unity udostępnia wywołania zwrotne podczas generowania pliku projektu. Zaim implementuj metody i przy użyciu metody , aby modyfikować projekt lub `OnGeneratedSlnSolution` plik rozwiązania przy każdym jego `OnGeneratedCSProject` [`AssetPostprocessor`](https://docs.unity3d.com/ScriptReference/AssetPostprocessor.html) wygenerowaniu.
 
 ## <a name="demonstrates"></a>Demonstracje
- Jak dostosować pliki projektu programu Visual Studio wygenerowane przez Visual Studio Tools for Unity.
+Dostosowywanie plików Visual Studio generowanych przez Visual Studio Tools for Unity.
 
 ## <a name="example"></a>Przykład
 
 ```csharp
-#if ENABLE_VSTU
 using System;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Xml.Linq;
-
-using UnityEngine;
 using UnityEditor;
+using UnityEngine;
 
-using SyntaxTree.VisualStudio.Unity.Bridge;
-
-[InitializeOnLoad]
-public class ProjectFileHook
+public class ProjectFilePostprocessor : AssetPostprocessor
 {
-    // necessary for XLinq to save the xml project file in utf8
-    class Utf8StringWriter : StringWriter
-    {
-        public override Encoding Encoding
-        {
-            get { return Encoding.UTF8; }
-        }
-    }
+  public static string OnGeneratedSlnSolution(string path, string content)
+  {
+    // TODO: process solution content
+    return content;
+  }
 
-    static ProjectFileHook()
-    {
-        ProjectFilesGenerator.ProjectFileGeneration += (string name, string content) =>
-        {
-            // parse the document and make some changes
-            var document = XDocument.Parse(content);
-            document.Root.Add(new XComment("FIX ME"));
-
-            // save the changes using the Utf8StringWriter
-            var str = new Utf8StringWriter();
-            document.Save(str);
-
-            return str.ToString();
-        };
-    }
+  public static string OnGeneratedCSProject(string path, string content)
+  {
+    // TODO: process project content
+    return content;
+  }
 }
-#endif
 ```
-
-## <a name="see-also"></a>Zobacz także
- [Przykład: wywołanie zwrotne dziennika](/cross-platform/share-the-unity-log-callback-with-vstu.md)
