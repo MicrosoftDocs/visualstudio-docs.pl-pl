@@ -62,9 +62,9 @@
                   href: install/troubleshooting-network-related-errors-in-visual-studio.md
         - name: Wdrażanie w przedsiębiorstwie
           items:
-            - name: Stosowanie aktualizacji administratorów
+            - name: Stosowanie aktualizacji administratora
               href: install/applying-administrator-updates.md
-            - name: Włączanie aktualizacji administratorów
+            - name: Włączanie aktualizacji administratora
               href: install/enabling-administrator-updates.md
             - name: Zautomatyzowana instalacja programu Visual Studio przy użyciu pliku odpowiedzi
               href: install/automated-installation-with-response-file.md
@@ -192,9 +192,9 @@
           href: ide/create-new-project.md
         - name: Praca z rozwiązaniami i projektami
           href: ide/creating-solutions-and-projects.md
-        - name: Otwieranie projektu z repozytorium w programie Visual Studio 2017
+        - name: Otwieranie projektu z repo w Visual Studio 2017 r.
           href: get-started/tutorial-open-project-from-repo-visual-studio-2017.md
-        - name: Otwieranie projektu z repozytorium w programie Visual Studio 2019
+        - name: Otwieranie projektu z repo w Visual Studio 2019 r.
           href: get-started/tutorial-open-project-from-repo-visual-studio-2019.md
         - name: 'Przenoszenie, migrowanie i uaktualnianie projektów'
           href: porting/port-migrate-and-upgrade-visual-studio-projects.md
@@ -905,15 +905,8 @@
       href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
 - name: Debugowanie >>
   href: debugger/index.yml
-- name: Kontrola wersji
-  expanded: true
-  items:
-    - name: Nowe środowisko Git w programie Visual Studio
-      href: ide/git-with-visual-studio.md
-    - name: Jak program Visual Studio ułatwia kontrolę źródła
-      href: ide/git-visual-studio-source-control.md
-    - name: Porównaj narzędzia Git i Team Explorer obok siebie
-      href: ide/git-team-explorer-feature-comparison.md
+- name: Kontrola wersji >>
+  href: version-control/index.yml
 - name: Testowanie >>
   displayName: Unit testing
   href: test/index.yml
@@ -1081,7 +1074,7 @@
       items:
         - name: Hierarchia wywołań
           href: ide/reference/call-hierarchy.md
-        - name: Wiersz polecenia dla deweloperów & deweloper programu PowerShell
+        - name: wiersz polecenia dla deweloperów & PowerShell dla deweloperów
           href: ide/reference/command-prompt-powershell.md
         - name: Podgląd zmian
           href: ide/preview-changes.md
