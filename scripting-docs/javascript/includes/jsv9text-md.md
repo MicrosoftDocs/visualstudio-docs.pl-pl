@@ -1,1 +1,0 @@
-Tryb standardów programu Internet Explorer 9, Tryb standardów programu Internet Explorer 10, Tryb standardów programu Internet Explorer 11 oraz aplikacje w Sklepie Windows

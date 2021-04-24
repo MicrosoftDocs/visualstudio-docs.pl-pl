@@ -1,3 +1,0 @@
-Obsługiwane w następujących trybach dokumentu: Standardy programu Internet Explorer 9, Standardy programu Internet Explorer 10 i Standardy programu Internet Explorer 11. Również obsługiwane w aplikacjach w Sklepie (Windows 8 i Windows Phone 8.1). Zobacz [Informacje o wersji](../../javascript/reference/javascript-version-information.md).  
-  
- Nieobsługiwane w następujących trybach dokumentu: Osobliwości, Standardy programu Internet Explorer 6, Standardy programu Internet Explorer 7 i Standardy programu Internet Explorer 8.

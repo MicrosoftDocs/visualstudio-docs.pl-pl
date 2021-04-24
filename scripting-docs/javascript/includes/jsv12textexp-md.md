@@ -1,1 +1,0 @@
-Przeglądarka Microsoft Edge z włączonymi eksperymentalnymi funkcjami JavaScript (about:flags)
