@@ -1,6 +1,6 @@
 ---
-title: Wybierz i zainstaluj interpretery języka Python
-description: Kompletna lista interpreterów języka Python, które są obsługiwane w programie Visual Studio z krótkimi instrukcjami dotyczącymi lokalizacji instalacji.
+title: Wybieranie i instalowanie interpreterów języka Python
+description: Pełna lista interpreterów języka Python obsługiwanych w programie Visual Studio z krótkimi instrukcjami dotyczącymi tego, gdzie można znaleźć ich instalatory.
 ms.date: 06/05/2019
 ms.topic: how-to
 author: JoshuaPartlow
@@ -10,65 +10,65 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e2c4cd4c110b55837009ea9d081a95180727d331
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8070bb93a1dd76ad29832afae15d83788300ae7a
+ms.sourcegitcommit: 925db7adb9cb554b081c7e727d09680d4863feed
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916539"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107941113"
 ---
 # <a name="install-python-interpreters"></a>Instalowanie interpreterów języka Python
 
-Domyślnie zainstalowanie obciążenia programowania w języku Python w programie Visual Studio 2017 lub nowszym powoduje także instalację języka Python 3 (64-bit). Opcjonalnie można zainstalować 32-bitowe i 64-bitowe wersje języków Python 2 i Python 3 oraz Miniconda (Visual Studio 2019) lub Anaconda 2/Anaconda 3 (Visual Studio 2017), zgodnie z opisem w [instalacji](installing-python-support-in-visual-studio.md).
+Domyślnie instalowanie obciążenia programowania w języku Python w wersji Visual Studio 2017 i nowszych również instaluje język Python 3 (wersja 64-bitowa). Opcjonalnie możesz zainstalować 32-bitowe i 64-bitowe wersje języka Python 2 i Python 3 wraz z programem Miniconda (Visual Studio 2019) lub Anaconda 2/Anaconda 3 (Visual Studio 2017), zgodnie z opisem w [tece Instalacja](installing-python-support-in-visual-studio.md).
 
 ::: moniker range=">=vs-2019"
-Alternatywnie można zainstalować standardowe interpretery języka Python z okna dialogowego **Dodawanie środowiska** . Wybierz polecenie **Dodaj środowisko** w oknie **środowiska Python** lub na pasku narzędzi Python, wybierz kartę **Instalacja języka Python** , wskaż, które interpretery zainstalować, a następnie wybierz pozycję **Zainstaluj**.
+Alternatywnie możesz zainstalować standardowe interpretery języka Python w **oknie dialogowym Dodawanie środowiska.** Wybierz polecenie **Dodaj środowisko** w oknie Środowiska **języka Python** lub na pasku narzędzi języka Python, wybierz kartę instalacji języka **Python,** wskaż interpretery do zainstalowania, a następnie wybierz **pozycję Zainstaluj**.
 ::: moniker-end
 
-Można również ręcznie zainstalować dowolne interpretery wymienione w poniższej tabeli poza instalatorem programu Visual Studio. Na przykład jeśli zainstalowano Anaconda 3 przed zainstalowaniem programu Visual Studio, nie trzeba go instalować ponownie za pomocą Instalatora programu Visual Studio. Interpreter można także zainstalować ręcznie, jeśli na przykład nowsza wersja dostępna nie pojawia się jeszcze w Instalatorze programu Visual Studio.
+Możesz również ręcznie zainstalować dowolny interpreter wymieniony w poniższej tabeli poza instalatorem Visual Studio instalatora. Jeśli na przykład program Anaconda 3 został zainstalowany przed zainstalowaniem programu Visual Studio, nie trzeba instalować go ponownie za pośrednictwem instalatora Visual Studio instalacji. Interpreter można również zainstalować ręcznie, jeśli na przykład jest dostępna nowsza wersja, która nie jest jeszcze wyświetlana w Visual Studio instalatorze.
 
 ::: moniker range=">=vs-2019"
 > [!Note]
-> Program Visual Studio obsługuje język Python w wersji 2,7, a także wersję 3,5 i nowszą. Chociaż można użyć programu Visual Studio do edycji kodu pisanego w innych wersjach języka Python, te wersje nie są oficjalnie obsługiwane, a funkcje takie jak IntelliSense i debugowanie mogą nie zadziałać.
+> Visual Studio obsługuje język Python w wersji 2.7, a także wersje od 3.5 do 3.7. Chociaż istnieje możliwość edytowania kodu napisanego Visual Studio innych wersjach języka Python, te wersje nie są oficjalnie obsługiwane, a funkcje, takie jak IntelliSense i debugowanie, mogą nie działać.
 ::: moniker-end
 
-W przypadku **programu Visual Studio 2015 i jego wcześniejszych wersji** należy ręcznie zainstalować jeden z interpreterów.
+W **Visual Studio 2015** r. i starszych należy ręcznie zainstalować jeden z interpreterów.
 
-Program Visual Studio (wszystkie wersje) automatycznie wykrywa każdy zainstalowany interpreter języka Python i jego środowisko, sprawdzając rejestr zgodnie z [PEP 514 — Rejestracja w języku Python w rejestrze systemu Windows](https://www.python.org/dev/peps/pep-0514/). Instalacje języka Python zwykle znajdują się w obszarze **HKEY_LOCAL_MACHINE\SOFTWARE\Python** (32-bitowe) i **HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Python** (64-bitowe), a następnie w węzłach dla dystrybucji, takich jak **PythonCore** (CPython) i **ContinuumAnalytics** (Anaconda).
+Visual Studio (wszystkie wersje) automatycznie wykrywa każdy zainstalowany interpreter języka Python i jego środowisko, sprawdzając rejestr zgodnie z [rejestracją PEP 514](https://www.python.org/dev/peps/pep-0514/)— Python w rejestrze systemu Windows. Instalacje języka Python są zwykle dostępne w środowiskach **HKEY_LOCAL_MACHINE\SOFTWARE\Python** (32-bitowych) iHKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Python(64-bitowych), **a** następnie w węzłach dystrybucji, takich jak **PythonCore** (CPython) i **ContinuumAnalytics** (Anaconda).
 
-Jeśli program Visual Studio nie wykrywa zainstalowanego środowiska, zobacz [Ręczne identyfikowanie istniejącego środowiska](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
+Jeśli Visual Studio nie wykryje zainstalowanego środowiska, zobacz [Ręczne identyfikowanie istniejącego środowiska.](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
 
-Program Visual Studio Wyświetla wszystkie znane środowiska w oknie [**środowiska języka Python**](managing-python-environments-in-visual-studio.md#the-python-environments-window) i automatycznie wykrywa aktualizacje istniejących interpreterów.
+Visual Studio wszystkie znane środowiska w oknie Środowiska [**języka Python**](managing-python-environments-in-visual-studio.md#the-python-environments-window) i automatycznie wykrywa aktualizacje istniejących interpreterów.
 
-| Interpretera | Opis |
+| Interpreter | Opis |
 | --- | --- |
-| [CPython](https://www.python.org/) | "Natywny" i najczęściej używany interpreter, dostępny w 32-bitowych i 64-bitowych wersjach (zalecane 32-bit). Obejmuje najnowsze funkcje języka, maksymalną zgodność pakietu Python, pełną obsługę debugowania i międzyoperacyjność z [IPython](https://ipython.org/). Zobacz również: [czy należy użyć języka Python 2 lub Python 3?](https://wiki.python.org/moin/Python2orPython3). Należy zauważyć, że program Visual Studio 2015 i jego starsze wersje nie obsługują języka Python 3.6 + i mogą dawać błędy, takie jak **nieobsługiwana wersja języka python 3,6**. Zamiast tego użyj języka Python 3,5 lub starszego. |
-| [IronPython](https://github.com/IronLanguages/ironpython2) | Implementacja platformy .NET w języku Python, dostępna w systemach 32-bitowych i 64-bitowych, zapewniająca C++/F #/Visual Basic Interop, dostęp do interfejsów API platformy .NET, standardowe Debugowanie języka Python (ale nie debugowanie w trybie mieszanym) oraz mieszane debugowanie IronPython/C#. IronPython jednak nie obsługuje środowisk wirtualnych. |
-| [Anaconda](https://www.continuum.io) | Otwarta platforma analizy danych obsługiwana przez język Python i zawiera najnowszą wersję CPython i większość trudnych do zainstalowania pakietów. Firma Microsoft zaleca, jeśli nie będzie to możliwe. |
-| [PyPy](https://www.pypy.org/) | Implementacja JIT śledzenia o wysokiej wydajności w języku Python, która jest przydatna w przypadku długotrwałych programów i sytuacji, w których zidentyfikowano problemy z wydajnością, ale nie można znaleźć innych rozwiązań. Współpracuje z programem Visual Studio, ale z ograniczoną obsługą zaawansowanych funkcji debugowania. |
-| [Jython](https://www.jython.org/) | Implementacja języka Python w wirtualna maszyna Java (JVM). Podobnie jak w przypadku IronPython, kod działający w Jython może współdziałać z klasami i bibliotekami Java, ale może nie być w stanie korzystać z wielu bibliotek przeznaczonych dla CPython. Współpracuje z programem Visual Studio, ale z ograniczoną obsługą zaawansowanych funkcji debugowania. |
+| [CPython](https://www.python.org/) | "Natywny" i najczęściej używany interpreter, dostępny w wersjach 32-bitowych i 64-bitowych (zalecane 32-bitowe). Obejmuje najnowsze funkcje językowe, maksymalną zgodność pakietów języka Python, pełną obsługę debugowania i międzyoptykę z [językiem IPython.](https://ipython.org/) Zobacz też: [Czy należy używać języka Python 2 lub Python 3?](https://wiki.python.org/moin/Python2orPython3). Pamiętaj, że Visual Studio 2015 i starsze nie obsługują języka Python w wersji 3.6 lub starszej i mogą dawać błędy, takie jak Nieobsługiwany język Python w **wersji 3.6.** Zamiast tego użyj języka Python w wersji 3.5 lub starszej. |
+| [Boo](https://github.com/IronLanguages/ironpython2) | Implementacja języka Python na platformie .NET, dostępna w wersjach 32-bitowych i 64-bitowych, zapewniająca międzyoptykę języka C#/F#/Visual Basic, dostęp do interfejsów API .NET, standardowe debugowanie języka Python (ale nie debugowanie w trybie mieszanym języka C++) i debugowanie mieszane IronPython/C#. IronPython nie obsługuje jednak środowisk wirtualnych. |
+| [Anaconda](https://www.continuum.io) | Otwarta platforma nauki o danych wspierana przez język Python, która zawiera najnowszą wersję środowiska CPython i większość trudnych do zainstalowania pakietów. Jeśli w przeciwnym razie nie możesz podjąć innej decyzji, zalecamy jej skorzystanie. |
+| [PyPy](https://www.pypy.org/) | Implementacja JIT śledzenia o wysokiej wydajności języka Python, która jest dobra dla długotrwałych programów i sytuacji, w których można zidentyfikować problemy z wydajnością, ale nie można znaleźć innych rozdzielczości. Działa z Visual Studio ale z ograniczoną obsługą zaawansowanych funkcji debugowania. |
+| [Jython](https://www.jython.org/) | Implementacja języka Python na wirtualna maszyna Java (JVM). Podobnie jak w przypadku aplikacji IronPython, kod uruchomiony w języku Jython może współdziałać z klasami i bibliotekami języka Java, ale może nie być w stanie używać wielu bibliotek przeznaczonych dla języka CPython. Działa z Visual Studio ale z ograniczoną obsługą zaawansowanych funkcji debugowania. |
 
-Deweloperzy, którzy chcą udostępnić nowe formy wykrywania dla środowisk języka Python, zobacz [PTVS Environment Detection](https://github.com/Microsoft/PTVS/wiki/Extensibility-Environments) (GitHub.com).
+Deweloperzy, którzy chcą zapewnić nowe formy wykrywania dla środowisk Python, zobacz Wykrywanie środowiska [PTVS](https://github.com/Microsoft/PTVS/wiki/Extensibility-Environments) (github.com).
 
 ## <a name="move-an-interpreter"></a>Przenoszenie interpretera
 
-Jeśli przeniesiesz istniejący interpreter do nowej lokalizacji przy użyciu systemu plików, program Visual Studio nie wykryje zmiany automatycznie.
+Jeśli przeniesiesz istniejący interpreter do nowej lokalizacji przy użyciu systemu plików, Visual Studio nie wykryje zmiany automatycznie.
 
-- Jeśli pierwotnie określono lokalizację interpretera za pomocą okna **środowiska języka Python** , należy edytować jego środowisko przy użyciu karty **Konfiguracja** w tym oknie, aby zidentyfikować nową lokalizację. Zobacz [ręcznie Zidentyfikuj istniejące środowisko](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
+- Jeśli pierwotnie określono lokalizację interpretera za pośrednictwem okna Środowiska  **Python,** edytuj jego środowisko przy użyciu karty Konfigurowanie w tym oknie, aby zidentyfikować nową lokalizację. Zobacz [Ręczne identyfikowanie istniejącego środowiska.](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
 
-- Jeśli interpreter został zainstalowany przy użyciu programu Instalatora, wykonaj następujące kroki, aby ponownie zainstalować interpreter w nowej lokalizacji:
+- Jeśli interpreter został zainstalowany przy użyciu programu instalacyjnego, należy wykonać następujące kroki, aby ponownie zainstalować interpreter w nowej lokalizacji:
 
-  1. Przywróć interpreter języka Python do jego oryginalnej lokalizacji.
-  2. Odinstaluj interpreter przy użyciu jego Instalatora, który czyści wpisy rejestru.
-  3. Zainstaluj ponownie interpreter w odpowiedniej lokalizacji.
-  4. Uruchom ponownie program Visual Studio, który powinien automatycznie wykryć nową lokalizację zamiast starej lokalizacji.
+  1. Przywróć interpreter języka Python do oryginalnej lokalizacji.
+  2. Odinstaluj interpreter przy użyciu jego instalatora, który wyczyści wpisy rejestru.
+  3. Zainstaluj ponownie interpreter w żądanej lokalizacji.
+  4. Uruchom Visual Studio, co powinno automatycznie wykryć nową lokalizację w miejsce starej lokalizacji.
 
-Poniższy proces zapewnia, że wpisy rejestru identyfikujące lokalizację interpretera, które są używane przez program Visual Studio, są poprawnie aktualizowane. Korzystanie z Instalatora również obsługuje wszystkie inne efekty uboczne, które mogą istnieć.
+Ten proces gwarantuje, że wpisy rejestru, które identyfikują lokalizację interpretera, która Visual Studio, są prawidłowo aktualizowane. Użycie instalatora obsługuje również wszelkie inne efekty uboczne, które mogą istnieć.
 
 ## <a name="see-also"></a>Zobacz też
 
 - [Zarządzanie środowiskami języka Python](managing-python-environments-in-visual-studio.md)
 - [Wybieranie interpretera dla projektu](selecting-a-python-environment-for-a-project.md)
-- [Użyj requirements.txt dla zależności](managing-required-packages-with-requirements-txt.md)
+- [Używanie requirements.txt zależności](managing-required-packages-with-requirements-txt.md)
 - [Ścieżki wyszukiwania](search-paths.md)
-- [Dokumentacja okna środowiska Python](python-environments-window-tab-reference.md)
+- [Informacje o oknach środowisk Python](python-environments-window-tab-reference.md)
