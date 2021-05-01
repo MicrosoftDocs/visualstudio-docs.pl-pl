@@ -3,7 +3,6 @@ title: Ładowanie podzestawu projektów
 description: Dowiedz się więcej na temat filtrowania rozwiązań i sposobu, w jaki umożliwia ono szybkie ładowanie podzestawu projektów w rozwiązaniu.
 ms.custom: SEO-VS-2020
 ms.date: 04/22/2019
-ms.prod: visual-studio-dev16
 ms.topic: conceptual
 helpviewer_keywords:
 - filtered solution
@@ -12,12 +11,12 @@ author: TerryGLee
 ms.author: stsu
 manager: jmartens
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 3fc64b5f0623a03443278eaa8e4ee1f47b86da38
-ms.sourcegitcommit: 30c404655fb83ea28f96ab1edb1c09b4d8d7eec4
+ms.openlocfilehash: ea30edbaac7248af8e1a58b76aebd66cf44befba
+ms.sourcegitcommit: a667ce8394a800906d633737f4fcbc77f0fcba7b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "108217200"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "108298733"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Odfiltrowane rozwiązania w Visual Studio
 
@@ -30,6 +29,9 @@ Dostępne są następujące funkcje:
 - Po ponownym otwarciu rozwiązania program Visual Studio, które projekty zostały załadowane w poprzedniej sesji, i ładuje tylko te projekty.
 
 - Możesz utworzyć plik filtru rozwiązania, aby zapisać co najmniej jedną konfigurację ładowania projektu lub udostępnić konfigurację innym zespołom.
+
+> [!NOTE]
+> Ten temat dotyczy Visual Studio w systemie Windows.
 
 ## <a name="open-a-filtered-solution"></a>Otwieranie filtrowanych rozwiązań
 
@@ -67,7 +69,7 @@ devenv /donotloadprojects MySln.sln
 
 ## <a name="toggle-unloaded-project-visibility"></a>Przełącz niezaładowany wgląd w projekt
 
-Możesz wyświetlić wszystkie projekty w rozwiązaniu lub tylko te załadowane, korzystając z jednej z następujących opcji w Eksplorator rozwiązań **:**
+Możesz wyświetlić wszystkie projekty w rozwiązaniu lub tylko te załadowane, korzystając z jednej z następujących opcji w **Eksplorator rozwiązań**:
 
 - Kliknij prawym przyciskiem myszy rozwiązanie i wybierz polecenie **Pokaż niezaładowane projekty** lub **Ukryj niezaładowane projekty.**
 
@@ -83,7 +85,7 @@ W rozwiązaniu, w którym ładowane są tylko wybrane projekty, mogą nie być z
 
 ## <a name="solution-filter-files"></a>Pliki filtru rozwiązania
 
-Jeśli chcesz udostępnić konfigurację ładowania projektu lub zatwierdzić ją w kontroli źródła, możesz utworzyć plik filtru rozwiązania (ma rozszerzenie *slnf*). Po otwarciu pliku filtru rozwiązania rozwiązanie zostanie otwarte w skrypcie Visual Studio z załadowanym określonymi projektami i ukrytymi wszystkimi niezaładowanych projektami. Możesz [przełączyć się,](#toggle-unloaded-project-visibility) aby wyświetlić niezaładowane projekty.
+Jeśli chcesz udostępnić konfigurację ładowania projektu lub zatwierdzić ją w kontroli źródła, możesz utworzyć plik filtru rozwiązania (ma rozszerzenie *slnf*). Po otwarciu pliku filtru rozwiązania rozwiązanie zostanie otwarte w skrypcie Visual Studio z załadowanym określonymi projektami i ukryciem wszystkich niezaładowanych projektów. Możesz [przełączyć się,](#toggle-unloaded-project-visibility) aby wyświetlić niezaładowane projekty.
 
 Pliki filtru rozwiązania są wizualnie odróżnione od zwykłych plików rozwiązań za pomocą dodatkowego symbolu lejka na ikonie obok rozwiązania w **Eksplorator rozwiązań**. Nazwa filtru i liczba załadowanych projektów są również wyświetlane obok nazwy rozwiązania.
 
