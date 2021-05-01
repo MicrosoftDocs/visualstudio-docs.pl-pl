@@ -1,6 +1,6 @@
 ---
-title: Załaduj podzestaw projektów
-description: Dowiedz się więcej o filtrowaniu rozwiązań i sposobach jego szybkiego ładowania podzbioru projektów w rozwiązaniu.
+title: Ładowanie podzestawu projektów
+description: Dowiedz się więcej na temat filtrowania rozwiązań i sposobu, w jaki umożliwia ono szybkie ładowanie podzestawu projektów w rozwiązaniu.
 ms.custom: SEO-VS-2020
 ms.date: 04/22/2019
 ms.prod: visual-studio-dev16
@@ -8,101 +8,101 @@ ms.topic: conceptual
 helpviewer_keywords:
 - filtered solution
 - solution filtering
-author: jillre
+author: TerryGLee
 ms.author: stsu
 manager: jmartens
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: eae0d02e1fff3f9ad5b35384e6ccab599805372b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3fc64b5f0623a03443278eaa8e4ee1f47b86da38
+ms.sourcegitcommit: 30c404655fb83ea28f96ab1edb1c09b4d8d7eec4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869391"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "108217200"
 ---
-# <a name="filtered-solutions-in-visual-studio"></a>Rozwiązania filtrowane w programie Visual Studio
+# <a name="filtered-solutions-in-visual-studio"></a>Odfiltrowane rozwiązania w Visual Studio
 
-Duże zespoły programistyczne często współpracują z wykorzystaniem jednego dużego rozwiązania z wieloma projektami. Jednak Indywidualni deweloperzy zazwyczaj pracują nad małym podzbiorem tych projektów. Aby zwiększyć wydajność podczas otwierania dużych rozwiązań, program Visual Studio 2019 wprowadził *filtrowanie rozwiązań*. Filtrowanie rozwiązań pozwala otworzyć rozwiązanie z załadowanymi tylko projektami selektywnymi. Ładowanie podzestawu projektów w rozwiązaniu zmniejsza obciążenie, kompilację i czas wykonywania testu oraz umożliwia dokładniejsze przegląd.
+Duże zespoły programowe często współpracują przy użyciu jednego dużego rozwiązania z wieloma projektami. Jednak poszczegnieni deweloperzy zwykle pracują nad niewielkim podzbiorem tych projektów. Aby zwiększyć wydajność podczas otwierania dużych rozwiązań, Visual Studio 2019 r. *wprowadzono filtrowanie rozwiązań.* Filtrowanie rozwiązań umożliwia otwarcie rozwiązania z załadowanym tylko projektami selektywnym. Ładowanie podzestawu projektów w rozwiązaniu zmniejsza obciążenie rozwiązania, kompilowanie i testowanie czasu działania oraz umożliwia bardziej skoncentrowany przegląd.
 
 Dostępne są następujące funkcje:
 
-- Możesz szybciej uzyskać kod, otwierając rozwiązanie bez ładowania żadnego z jego projektów. Po otwarciu rozwiązania można wybiórczo wybierać projekty do załadowania.
+- Kod można uzyskać szybciej, otwierając rozwiązanie bez ładowania żadnego z jego projektów. Po otworeniu rozwiązania możesz selektywnie wybrać projekty do załadowania.
 
-- Po ponownym otwarciu rozwiązania program Visual Studio zapamiętuje projekty, które zostały załadowane w poprzedniej sesji i ładuje tylko te projekty.
+- Po ponownym otwarciu rozwiązania program Visual Studio, które projekty zostały załadowane w poprzedniej sesji, i ładuje tylko te projekty.
 
-- Można utworzyć plik filtru rozwiązania, aby zapisać co najmniej jedną konfigurację ładowania projektu lub udostępnić konfigurację członkom zespołu.
+- Możesz utworzyć plik filtru rozwiązania, aby zapisać co najmniej jedną konfigurację ładowania projektu lub udostępnić konfigurację innym zespołom.
 
-## <a name="open-a-filtered-solution"></a>Otwórz filtrowane rozwiązanie
+## <a name="open-a-filtered-solution"></a>Otwieranie filtrowanych rozwiązań
 
-Możesz otworzyć rozwiązanie bez ładowania żadnego z jego projektów bezpośrednio z okna dialogowego **Otwórz projekt** lub [wiersza polecenia](#command-line).
+Rozwiązanie można otworzyć bez ładowania żadnego z  jego projektów bezpośrednio z okna dialogowego Otwieranie projektu lub za pośrednictwem [wiersza polecenia](#command-line).
 
-### <a name="open-project-dialog"></a>Otwórz okno dialogowe projektu
+### <a name="open-project-dialog"></a>Okno dialogowe Otwieranie projektu
 
-Aby otworzyć rozwiązanie bez ładowania żadnego z jego projektów przy użyciu okna dialogowego **Otwórz projekt** :
+Aby otworzyć rozwiązanie bez ładowania żadnego z jego projektów przy użyciu okna **dialogowego Otwieranie** projektu:
 
-1. Wybierz pozycję **plik**  >  **Otwórz**  >  **projekt/rozwiązanie** z paska menu.
+1. Wybierz **pozycję Plik**  >  **Otwórz**  >  **projekt/rozwiązanie** na pasku menu.
 
-2. W oknie dialogowym **Otwórz projekt** wybierz rozwiązanie, a następnie wybierz pozycję nie **Ładuj projektów**.
+2. W **oknie dialogowym Otwieranie** projektu wybierz rozwiązanie, a następnie wybierz pozycję **Nie ładuj projektów.**
 
-   ![Okno dialogowe otwierania projektu programu Visual Studio z zaznaczoną opcją nie Ładuj projektów](media/filtered-solutions/do-not-load-projects.png)
+   ![Visual Studio Otwieranie projektu z zaznaczoną oknie dialogowym Nie ładuj projektów](media/filtered-solutions/do-not-load-projects.png)
 
-3. Wybierz pozycję **Otwórz**.
+3. Wybierz **pozycję Otwórz.**
 
-   Zostanie otwarte rozwiązanie ze wszystkimi niezaładowanymi swoimi projektami.
+   Rozwiązanie zostanie otwarte z zwolnionymi wszystkimi swoimi projektami.
 
-4. W **Eksplorator rozwiązań** wybierz projekty, które chcesz załadować (naciśnij klawisz **Ctrl** podczas klikania, aby zaznaczyć więcej niż jeden projekt), a następnie kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Załaduj ponownie projekt**.
+4. W **Eksplorator rozwiązań** projektu wybierz projekty, które chcesz załadować (naciśnij **klawisz Ctrl** podczas klikania, aby wybrać więcej niż jeden projekt), a następnie kliknij prawym przyciskiem myszy projekt i wybierz polecenie Załaduj **ponownie projekt.**
 
-   ![Załaduj ponownie wiele projektów w programie Visual Studio Eksplorator rozwiązań](media/filtered-solutions/reload-project.png)
+   ![Załaduj ponownie wiele projektów w Visual Studio Eksplorator rozwiązań](media/filtered-solutions/reload-project.png)
 
-   Program Visual Studio będzie pamiętać, które projekty są ładowane przy następnym otwarciu rozwiązania lokalnie.
+   Visual Studio zapamięta, które projekty zostaną załadowane przy następnym otwarciu rozwiązania lokalnie.
 
 ### <a name="command-line"></a>Wiersz polecenia
 
-(Nowość w programie Visual Studio 2019 w wersji 16,1).
+(Nowość w Visual Studio 2019 r. w wersji 16.1).
 
-Aby otworzyć rozwiązanie bez ładowania żadnego z jego projektów z wiersza polecenia, należy użyć przełącznika, [`/donotloadprojects`](../ide/reference/donotloadprojects-devenv-exe.md) jak pokazano w następującym przykładzie:
+Aby otworzyć rozwiązanie bez ładowania żadnego z jego projektów z wiersza polecenia, użyj przełącznika , [`/donotloadprojects`](../ide/reference/donotloadprojects-devenv-exe.md) jak pokazano w poniższym przykładzie:
 
 ```cmd
 devenv /donotloadprojects MySln.sln
 ```
 
-## <a name="toggle-unloaded-project-visibility"></a>Przełącz widoczność niezaładowanych projektów
+## <a name="toggle-unloaded-project-visibility"></a>Przełącz niezaładowany wgląd w projekt
 
-Możesz wyświetlić wszystkie projekty w rozwiązaniu lub tylko te, które zostały załadowane, korzystając z jednej z następujących opcji w **Eksplorator rozwiązań**:
+Możesz wyświetlić wszystkie projekty w rozwiązaniu lub tylko te załadowane, korzystając z jednej z następujących opcji w Eksplorator rozwiązań **:**
 
-- Kliknij prawym przyciskiem myszy rozwiązanie i wybierz polecenie **Pokaż niezaładowane projekty** lub **Ukryj niezaładowane projekty**.
+- Kliknij prawym przyciskiem myszy rozwiązanie i wybierz polecenie **Pokaż niezaładowane projekty** lub **Ukryj niezaładowane projekty.**
 
-- Wybierz węzeł rozwiązania, aby włączyć przycisk **Pokaż wszystkie pliki** ; następnie kliknij przycisk, aby przełączyć widoczność niezaładowanych projektów.
+- Wybierz węzeł rozwiązania, aby włączyć **przycisk Pokaż wszystkie** pliki. Następnie kliknij przycisk , aby przełączać widoczność niezaładowanych projektów.
 
-   ![Przycisk Pokaż wszystkie pliki w programie Visual Studio Eksplorator rozwiązań](media/filtered-solutions/show-all-files.PNG)
+   ![Przycisk Pokaż wszystkie pliki w Visual Studio Eksplorator rozwiązań](media/filtered-solutions/show-all-files.PNG)
 
-## <a name="load-project-dependencies"></a>Załaduj zależności projektu
+## <a name="load-project-dependencies"></a>Ładowanie zależności projektu
 
-W rozwiązaniu, w którym załadowano tylko wybrane projekty, nie można załadować wszystkich zależności projektu projektu. Użyj opcji menu **Załaduj zależności projektu** , aby upewnić się, że wszystkie projekty, od których zależy projekt, są również ładowane. Kliknij prawym przyciskiem myszy jeden lub więcej załadowanych projektów w **Eksplorator rozwiązań** i wybierz pozycję **Załaduj zależności projektu**.
+W rozwiązaniu, w którym ładowane są tylko wybrane projekty, mogą nie być załadowane wszystkie zależności projektu. Użyj opcji menu **Załaduj zależności** projektu, aby upewnić się, że wszystkie projekty, od których zależy projekt, również zostaną załadowane. Kliknij prawym przyciskiem myszy co najmniej jeden załadowany projekt **w programie Eksplorator rozwiązań** a następnie wybierz **pozycję Załaduj zależności projektu.**
 
-![Załaduj zależności projektu w programie Visual Studio 2019](media/filtered-solutions/load-project-dependencies.png)
+![Ładowanie zależności projektu w programie Visual Studio 2019](media/filtered-solutions/load-project-dependencies.png)
 
-## <a name="solution-filter-files"></a>Pliki filtrów rozwiązań
+## <a name="solution-filter-files"></a>Pliki filtru rozwiązania
 
-Jeśli chcesz udostępnić konfigurację ładowania projektu lub zatwierdzić ją w kontroli źródła, możesz utworzyć plik filtru rozwiązania (ma rozszerzenie *. slnf*). Po otwarciu pliku filtru rozwiązania rozwiązanie otwiera się w programie Visual Studio z załadowanymi określonymi projektami i wszystkimi niezaładowanymi projektami. Można [przełączyć](#toggle-unloaded-project-visibility) , aby wyświetlić niezaładowane projekty.
+Jeśli chcesz udostępnić konfigurację ładowania projektu lub zatwierdzić ją w kontroli źródła, możesz utworzyć plik filtru rozwiązania (ma rozszerzenie *slnf*). Po otwarciu pliku filtru rozwiązania rozwiązanie zostanie otwarte w skrypcie Visual Studio z załadowanym określonymi projektami i ukrytymi wszystkimi niezaładowanych projektami. Możesz [przełączyć się,](#toggle-unloaded-project-visibility) aby wyświetlić niezaładowane projekty.
 
-Pliki filtrów rozwiązań są wizualnie odróżniane od zwykłych plików rozwiązania przez dodatkowy symbol lejka w ikonie obok rozwiązania w **Eksplorator rozwiązań**. Nazwa filtru i liczba załadowanych projektów są również wyświetlane obok nazwy rozwiązania.
+Pliki filtru rozwiązania są wizualnie odróżnione od zwykłych plików rozwiązań za pomocą dodatkowego symbolu lejka na ikonie obok rozwiązania w **Eksplorator rozwiązań**. Nazwa filtru i liczba załadowanych projektów są również wyświetlane obok nazwy rozwiązania.
 
-![Plik filtru rozwiązania otwarty w programie Visual Studio Eksplorator rozwiązań](media/filtered-solutions/solution-filter.PNG)
+![Plik filtru rozwiązania otwarty w Visual Studio Eksplorator rozwiązań](media/filtered-solutions/solution-filter.PNG)
 
 > [!NOTE]
-> Jeśli nowe projekty zostaną dodane do oryginalnego rozwiązania po utworzeniu pliku filtru rozwiązania, są one wyświetlane jako niezaładowane projekty w **Eksplorator rozwiązań**.
+> Jeśli nowe projekty zostaną dodane do oryginalnego rozwiązania po utworzeniu pliku filtru rozwiązania, będą one wyświetlane jako niezaładowane projekty w **Eksplorator rozwiązań**.
 
-### <a name="create-a-solution-filter-file"></a>Utwórz plik filtru rozwiązania
+### <a name="create-a-solution-filter-file"></a>Tworzenie pliku filtru rozwiązania
 
-1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy rozwiązanie i wybierz polecenie **Zapisz jako filtr rozwiązania**.
+1. W **Eksplorator rozwiązań** kliknij rozwiązanie prawym przyciskiem myszy i wybierz **pozycję Zapisz jako filtr rozwiązania.**
 
-   ![Menu filtrowania rozwiązań w programie Visual Studio Eksplorator rozwiązań](media/filtered-solutions/save-as-solution-filter.png)
+   ![Menu Filtr rozwiązania Zapisz jako w Visual Studio Eksplorator rozwiązań](media/filtered-solutions/save-as-solution-filter.png)
 
 2. Wybierz nazwę i lokalizację pliku filtru rozwiązania.
 
-Po utworzeniu pliku filtru rozwiązania zostanie on dodany do listy **ostatnio używanych projektów i rozwiązań** w celu ułatwienia dostępu:
+Po utworzeniu pliku filtru rozwiązania zostanie on dodany do listy **Ostatnie** projekty i rozwiązania w celu uzyskania łatwego dostępu:
 
-![Otwórz ostatnie w programie Visual Studio](media/filtered-solutions/open-recent.png)
+![Otwórz ostatnio w programie Visual Studio](media/filtered-solutions/open-recent.png)
 
 ## <a name="see-also"></a>Zobacz też
 

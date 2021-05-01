@@ -1,29 +1,29 @@
 ---
 title: Używanie danych czasu projektowania z projektant XAML w Visual Studio
-description: Dowiedz się, jak używać danych w czasie projektowania w języku XAML.
-ms.date: 11/17/2020
+description: Dowiedz się, jak używać danych czasu projektowania w języku XAML.
+ms.date: 04/22/2021
 ms.topic: overview
 author: alihamie
 ms.author: tglee
 manager: jmartens
 monikerRange: vs-2019
-ms.openlocfilehash: 915fe38da63f0b3994a809b20515fdc18e0790ce
-ms.sourcegitcommit: 5fb684ff8729eb118aa91ce9f049c79eeb9747b1
+ms.openlocfilehash: a9f7f23625bb01c227158f720260f14347d39f9d
+ms.sourcegitcommit: 60b7a6159045a44293043a519c8ea6d915bf2c31
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "107913075"
+ms.lasthandoff: 05/01/2021
+ms.locfileid: "108334944"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>Używanie danych czasu projektowania z projektant XAML w Visual Studio
 
-Niektóre układy trudno wizualizować bez danych. W tym dokumencie będziemy przeglądać jedno z podejść, które deweloperzy pracujący nad projektami pulpitu mogą wykorzystać do pozorowania danych w projektancie XAML. To podejście jest wykonywane przy użyciu istniejącej zignorowalnej przestrzeni nazw "d:". Dzięki temu podejściu można szybko dodawać dane w czasie projektowania do stron lub kontrolek bez konieczności tworzenia pełnego modelu ViewModel lub po prostu przetestowania, jak zmiana właściwości może wpłynąć na aplikację, bez obaw, że te zmiany wpłyną na kompilacje wydania. Wszystkie d: dane są używane tylko przez projektant XAML i nie można zignorować wartości przestrzeni nazw są kompilowane do aplikacji.
+Niektóre układy trudno wizualizować bez danych. W tym dokumencie będziemy przeglądać jedno z podejść, które deweloperzy pracujący nad projektami pulpitu mogą wykorzystać do pozorowania danych w projektancie XAML. To podejście jest wykonywane przy użyciu istniejącej zignorowalnej przestrzeni nazw "d:". Takie podejście umożliwia szybkie dodawanie danych czasu projektowania do stron lub kontrolek bez konieczności tworzenia pełnego modelu ViewModel lub po prostu testowania, jak zmiana właściwości może wpłynąć na aplikację, bez obaw, że te zmiany wpłyną na kompilacje wydania. Wszystkie d: dane są używane tylko przez projektant XAML i nie można zignorować wartości przestrzeni nazw są kompilowane do aplikacji.
 
 > [!NOTE]
 > Jeśli używasz platformy Xamarin.Forms, zobacz Xamarin.Forms Design Time Data (Dane czasu projektowania platformy [Xamarin.Forms)](/xamarin/xamarin-forms/xaml/xaml-previewer/design-time-data)
 
 ## <a name="design-time-data-basics"></a>Podstawy danych czasu projektowania
 
-Dane czasu projektowania to pozorowanie danych ustawionych w celu ułatwienia wizualizacji kontrolek w projektant XAML. Aby rozpocząć, dodaj następujące wiersze kodu do nagłówka dokumentu XAML, jeśli jeszcze nie są obecne:
+Dane czasu projektowania są pozorować ustawione dane, aby ułatwić wizualizację kontrolek w projektant XAML. Aby rozpocząć, dodaj następujące wiersze kodu do nagłówka dokumentu XAML, jeśli jeszcze nie są obecne:
 
 ```xml
 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -31,9 +31,9 @@ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 mc:Ignorable="d"
 ```
 
-Po dodaniu przestrzeni nazw można umieścić przed dowolnym atrybutem lub kontrolką, aby pokazać ją tylko w projektant XAML ale nie w `d:` czasie wykonywania.
+Po dodaniu przestrzeni nazw można umieścić przed dowolnym atrybutem lub kontrolką, aby pokazać ją tylko w projektant XAML ale nie `d:` w czasie wykonywania.
 
-Na przykład można dodać tekst do textblock, który zwykle ma powiązane dane.
+Na przykład można dodać tekst do textBlock, który zwykle ma powiązane dane.
 
 ```xml
 <TextBlock Text="{Binding Name}" d:Text="Name!" />
@@ -41,9 +41,9 @@ Na przykład można dodać tekst do textblock, który zwykle ma powiązane dane.
 
 [![Dane czasu projektowania z tekstem w tekście TextBlock](media\xaml-design-time-textblock.png "Dane czasu projektowania z tekstem etykiety")](media\xaml-design-time-textblock.png#lightbox)
 
-W tym przykładzie bez `d:Text` projektant XAML nie będą wyświetlane żadne informacje dla textblock. Zamiast tego wyświetla on "Name!" gdzie TextBlock będzie zawierał rzeczywiste dane w czasie wykonywania.
+W tym przykładzie bez `d:Text` projektant XAML nie będą wyświetlane żadne informacje dla textblock. Zamiast tego jest w nim pojawia się "Name!" gdzie TextBlock będzie zawierał rzeczywiste dane w czasie wykonywania.
 
-Można używać z atrybutami dla dowolnej kontrolki platformy UWP lub WPF .NET Core, takich jak kolory, rozmiary `d:` czcionek i odstępy. Możesz nawet dodać go do samej kontrolki.
+Można użyć z `d:` atrybutami dla dowolnej kontrolki platformy UWP lub WPF .NET Core, takich jak kolory, rozmiary czcionek i odstępy. Możesz nawet dodać go do samej kontrolki.
 
 ```xml
 <d:Button Content="Design Time Button" />
@@ -51,11 +51,11 @@ Można używać z atrybutami dla dowolnej kontrolki platformy UWP lub WPF .NET C
 
 [![Dane czasu projektowania za pomocą kontrolki Przycisk](media\xaml-design-time-button.png "Dane czasu projektowania z kontrolką Przycisk")](media\xaml-design-time-button.png#lightbox)
 
-W tym przykładzie przycisk jest wyświetlany tylko w czasie projektowania. Użyj tej metody, aby umieścić symbol zastępczy w kontrolce niestandardowej lub wypróbować różne kontrolki. Wszystkie `d:` atrybuty i kontrolki zostaną zignorowane podczas wykonywania.
+W tym przykładzie przycisk pojawia się tylko w czasie projektowania. Użyj tej metody, aby umieścić symbol zastępczy dla kontrolki niestandardowej lub wypróbować różne kontrolki. Wszystkie `d:` atrybuty i kontrolki zostaną zignorowane podczas wykonywania.
 
 ## <a name="preview-images-at-design-time"></a>Podgląd obrazów w czasie projektowania
 
-Można ustawić źródło czasu projektowania dla obrazów, które są powiązane ze stroną lub ładowane dynamicznie. Dodaj obraz, który ma być pokazywany w projektant XAML do projektu. Następnie możesz wyświetlić ten obraz na projektant XAML w czasie projektowania:
+Można ustawić źródło czasu projektowania dla obrazów, które są powiązane ze stroną lub ładowane dynamicznie. Dodaj obraz, który chcesz wyświetlić w projektant XAML do projektu. Następnie możesz wyświetlić ten obraz na projektant XAML w czasie projektowania:
 
 ```xml
 <Image Source={Binding ProfilePicture} d:Source="DesignTimePicture.jpg" />
@@ -68,7 +68,7 @@ Można ustawić źródło czasu projektowania dla obrazów, które są powiązan
 
 ListViews to popularny sposób wyświetlania danych w aplikacji klasycznej. Jednak są one trudne do zwizualizowania bez żadnych danych. Za pomocą tej funkcji można tworzyć wbudowane dane czasu projektowania ItemSource lub Items. W projektant XAML zostaną wyświetlone informacje o tym, co znajduje się w tej tablicy w widoku ListView w czasie projektowania.
 
-### <a name="wpf-net-core--example"></a>Przykład platformy WPF .NET Core
+### <a name="wpf-net-core-example"></a>Przykład platformy WPF .NET Core
 Aby użyć typu system:String, upewnij się, że w `xmlns:system="clr-namespace:System;assembly=mscorlib` nagłówku XAML znajduje się ciąg .
 
 ```xml
@@ -90,11 +90,11 @@ Aby użyć typu system:String, upewnij się, że w `xmlns:system="clr-namespace:
 </StackPanel>
 ```
 
-[![Dane czasu projektowania za pomocą listView](media\xaml-design-time-listview-strings.png "Dane czasu projektowania za pomocą listView")](media\xaml-design-time-listview-strings.png#lightbox)
+[![Dane czasu projektowania z listView](media\xaml-design-time-listview-strings.png "Dane czasu projektowania z listView")](media\xaml-design-time-listview-strings.png#lightbox)
 
 W poprzednim przykładzie pokazano widok ListView z trzema blokami TextBlock w projektant XAML.
 
-Można również utworzyć tablicę obiektów danych. Na przykład właściwości publiczne obiektu danych mogą być konstruowane `City` jako dane w czasie projektowania.
+Można również utworzyć tablicę obiektów danych. Na przykład właściwości publiczne obiektu `City` danych mogą być konstruowane jako dane w czasie projektowania.
 
 ```csharp
 namespace Cities.Models
@@ -135,13 +135,13 @@ xmlns:models="clr-namespace:Cities.Models"
 </StackPanel>
 ```
 
-[![Rzeczywisty model w danych czasu projektowania z listView](media\xaml-design-time-listview-models.png "Rzeczywiste dane czasu projektowania modelu za pomocą listView")](media\xaml-design-time-listview-models.png#lightbox)
+[![Rzeczywisty model w danych czasu projektowania za pomocą listView](media\xaml-design-time-listview-models.png "Rzeczywiste dane czasu projektowania modelu z listView")](media\xaml-design-time-listview-models.png#lightbox)
 
-Zaletą tej metody jest możliwość powiązania kontrolek ze statyczną wersją modelu w czasie projektowania.
+Zaletą tego modelu jest możliwość powiązania kontrolek ze statyczną wersją modelu w czasie projektowania.
 
-### <a name="uwp-example"></a>Przykład platformy uniwersalnej systemu Windows 
+### <a name="uwp-example"></a>Przykład platformy uniwersalnej systemu Windows
 
-X:Array nie jest obsługiwana w UWP. W związku z tym możemy użyć `<d:ListView.Items>` zamiast tego. Aby użyć typu system:String, upewnij się, że w `http://schemas.microsoft.com/winfx/2009/xaml` nagłówku XAML znajduje się ciąg .
+X:Array nie jest obsługiwana w UWP. W związku z tym zamiast tego możemy `<d:ListView.Items>` użyć funkcji . Aby użyć typu system:String, upewnij się, że w `http://schemas.microsoft.com/winfx/2009/xaml` nagłówku XAML znajduje się ciąg .
 
 ```xml
     <StackPanel>
@@ -157,7 +157,7 @@ X:Array nie jest obsługiwana w UWP. W związku z tym możemy użyć `<d:ListVie
 
 ## <a name="use-design-time-data-with-custom-types-and-properties"></a>Używanie danych czasu projektowania z niestandardowymi typami i właściwościami
 
-Ta funkcja domyślnie działa tylko z kontrolkami i właściwościami platformy. W tej sekcji ominiemy kroki niezbędne do umożliwienia używania własnych kontrolek niestandardowych jako kontrolek czasu projektowania— nowej możliwości dostępnej dla klientów korzystających z programu Visual Studio 2019 w wersji [16.8](/visualstudio/releases/2019/release-notes/) lub nowszej. Aby to umożliwić, należy spełnić trzy wymagania:
+Ta funkcja domyślnie działa tylko z kontrolkami platformy i właściwościami. W tej sekcji ominiemy kroki niezbędne do umożliwienia używania własnych kontrolek niestandardowych jako kontrolek czasu projektowania— nowej funkcji dostępnej dla klientów korzystających z programu Visual Studio 2019 w wersji [16.8](/visualstudio/releases/2019/release-notes/) lub nowszej. Aby to umożliwić, należy spełnić trzy wymagania:
 
 - Niestandardowa przestrzeń nazw xmlns
 
@@ -165,7 +165,7 @@ Ta funkcja domyślnie działa tylko z kontrolkami i właściwościami platformy.
     xmlns:myControls="http://MyCustomControls"
     ```
 
-- Wersja przestrzeni nazw w czasie projektowania. Można to osiągnąć, po prostu dołączając /design na końcu.
+- Wersja przestrzeni nazw w czasie projektowania. Można to osiągnąć, dołączając po prostu /design na końcu.
 
      ```xml
     xmlns:myDesignTimeControls="http://MyCustomControls/design"
@@ -178,7 +178,7 @@ Ta funkcja domyślnie działa tylko z kontrolkami i właściwościami platformy.
     mc:Ignorable="d myDesignTimeControls"
     ```
 
-Po zakończeniu wszystkich tych kroków możesz użyć prefiksu do `myDesignTimeControls` utworzenia kontrolek czasu projektowania.
+Po zakończeniu wszystkich tych kroków możesz użyć prefiksu do utworzenia `myDesignTimeControls` kontrolek czasu projektowania.
 
 ```xml
 <myDesignTimeControls:MyButton>I am a design time Button</myDesignTimeControls:MyButton>
@@ -198,19 +198,19 @@ Jeśli wystąpi problem, który nie został wymieniony w tej sekcji, daj nam zna
 
 ### <a name="requirements"></a>Wymagania
 
-- Dane czasu projektowania wymagają programu Visual Studio 2019 w wersji [16.7 lub](/visualstudio/releases/2019/release-notes-v16.7) nowszej.
+- Dane czasu projektowania wymagają Visual Studio 2019 w [wersji 16.7](/visualstudio/releases/2019/release-notes-v16.7) lub nowszej.
 
-- Obsługuje projekty pulpitu systemu Windows, które Windows Presentation Foundation (WPF) dla platformy .NET Core i platformy uniwersalnej systemu Windows. Ta funkcja jest również dostępna dla .NET Framework w kanale [w wersji zapoznawczej.](/visualstudio/releases/2019/release-notes-preview) Aby ją włączyć, przejdź do opcji Narzędzia Funkcje środowiska w wersji  >    >    >  **zapoznawczej,** wybierz pozycję Nowy projektant XAML **WPF** dla wersji .NET Framework a następnie ponownie uruchom Visual Studio.
+- Obsługuje projekty klasyczne systemu Windows, które są Windows Presentation Foundation (WPF) dla platformy .NET Core i platformy uniwersalnej systemu Windows. Ta funkcja jest również dostępna dla .NET Framework w kanale [w wersji zapoznawczej.](/visualstudio/releases/2019/release-notes-preview) Aby ją włączyć, przejdź **do** opcji Narzędzia Funkcje środowiska w wersji zapoznawczej, wybierz pozycję Nowy projektant XAML WPF dla .NET Framework a następnie  >    >    >  ponownie uruchom Visual Studio. 
 
-- Począwszy od Visual Studio 2019 r. w wersji 16.7, ta funkcja działa ze wszystkimi kontrolkami WPF i UWP. Obsługa kontrolek innych firm jest teraz dostępna w [wersji 16.8.](/visualstudio/releases/2019/release-notes/)
+- Począwszy od Visual Studio 2019 r. w wersji 16.7, ta funkcja działa ze wszystkimi kontrolkami w ramach platform WPF i UWP. Obsługa kontrolek innych firm jest teraz dostępna w [wersji 16.8.](/visualstudio/releases/2019/release-notes/)
 
-### <a name="the-xaml-designer-stopped-working"></a>Działanie projektant XAML przestało działać
+### <a name="the-xaml-designer-stopped-working"></a>Działanie projektant XAML zatrzymane
 
-Spróbuj zamknąć i ponownie otworzyć plik XAML oraz czyścić i ponownie kompilować projekt.
+Spróbuj zamknąć i ponownie otworzyć plik XAML, a następnie czyszczenia i ponownego kompilowania projektu.
 
 ## <a name="see-also"></a>Zobacz też
 
 - [Dane czasu projektowania za pomocą programu podglądu platformy Xamarin.Forms](/xamarin/xamarin-forms/xaml/xaml-Designer/design-time-data/)
-- [Język XAML w aplikacjach WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)
+- [Xaml w aplikacjach WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)
 - [Język XAML w aplikacjach platformy UWP](/windows/uwp/xaml-platform/xaml-overview)
 - [Język XAML w aplikacjach platformy Xamarin.Forms](/xamarin/xamarin-forms/xaml/)

@@ -52,3 +52,5 @@
       href: overview-bridge-to-kubernetes.md
     - name: Konfigurowanie Mostka na platformę Kubernetes
       href: configure-bridge-to-kubernetes.md
+    - name: Używanie tożsamości zarządzanych usługi Azure AD z Bridge to Kubernetes
+      href: managed-identity.md
