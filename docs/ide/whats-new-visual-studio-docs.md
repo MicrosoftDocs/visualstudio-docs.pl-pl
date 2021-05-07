@@ -1,8 +1,8 @@
 ---
-title: 'Visual Studio docs: Co nowego w marcu 2021 r.'
+title: 'Visual Studio docs: Co nowego w kwietniu 2021 r.'
 titleSuffix: ''
-description: Co nowego w Visual Studio do marca 2021 r.
-ms.date: 04/02/2021
+description: Co nowego w Visual Studio do kwietnia 2021 r.
+ms.date: 05/03/2021
 helpviewer_keywords:
 - Visual Studio, what's new, docs
 - what's new [Visual Studio]
@@ -15,215 +15,226 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 863ba91f88ee953ce7d62179ff3b50aca5500c83
-ms.sourcegitcommit: 5fb684ff8729eb118aa91ce9f049c79eeb9747b1
+ms.openlocfilehash: 38115892acc9c27e70ad956740cee8ae9e9c66ef
+ms.sourcegitcommit: dd2fc6e03a789c044f8438096b8f112e4dba5557
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "107913062"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108640938"
 ---
-# <a name="visual-studio-docs-whats-new-for-march-2021"></a>Visual Studio docs: Co nowego w marcu 2021 r.
+# <a name="visual-studio-docs-whats-new-for-april-2021"></a>Visual Studio docs: Co nowego w kwietniu 2021 r.
 
-Witamy w nowościach w Visual Studio do marca 2021 r. W tym artykule wymieniono niektóre istotne zmiany w owych tematach. Aby uzyskać informacje o nowościach w poprzednich miesiącach, zobacz artykuł [Co nowego w historii.](whats-new-visual-studio-docs-history.md)
+Witamy w nowościach w Visual Studio do kwietnia 2021 r. W tym artykule wymieniono niektóre z najważniejszych zmian w dokumentów w tym okresie. Aby uzyskać informacje o nowościach w poprzednich miesiącach, zobacz artykuł [Co nowego w historii.](whats-new-visual-studio-docs-history.md)
 
-## <a name="code-quality"></a>Jakość kodu
+## <a name="azure"></a>Azure
 
 **Zaktualizowane artykuły**
 
-- [How to: Run legacy code analysis manually for managed code](../code-quality/how-to-run-legacy-code-analysis-manually-for-managed-code.md) - Confirm merge from working branch ( Jak ręcznie uruchomić starszą analizę kodu dla kodu zarządzanego — potwierdzanie scalenia z gałęzi roboczej)
-- [Włączanie lub instalowanie analizatorów .NET innych](../code-quality/install-net-analyzers.md) firm — poprawki problemów z usługą GitHub
+- [Tworzenie i wdrażanie w Cloud Services (rozszerzona](../azure/cloud-services-extended-support.md) pomoc techniczna) w Visual Studio — Cloud Services (rozszerzona pomoc techniczna) — zmiany dotyczące aktualizacji typu GA
 
 ## <a name="containers"></a>Kontenery
 
+**Nowe artykuły**
+
+- [Używanie tożsamości zarządzanej z Bridge to Kubernetes](../containers/managed-identity.md) — tożsamość zarządzana na Bridge to Kubernetes
+
 **Zaktualizowane artykuły**
 
-- [Use Bridge to Kubernetes](../containers/bridge-to-kubernetes.md) - Bridge to Kubernetes: Use .NET todo-app sample (Używanie przykładu todo-app dla aplikacji .NET)
-- [Docker Compose właściwości kompilacji](../containers/docker-compose-properties.md) — dodawanie obiektu ComposeProjectName
-- [Jak Bridge to Kubernetes działa](../containers/overview-bridge-to-kubernetes.md) — sekcja Bridge to Kubernetes: Ograniczenia aktualizacji
-- [Samouczek: tworzenie aplikacji z wieloma kontenerami za pomocą Docker Compose](../containers/tutorial-multicontainer.md) — samouczek narzędzi kontenera dla wielu kontenerów: naprawianie linku do obrazu
+- [Docker Compose właściwości kompilacji](../containers/docker-compose-properties.md) — redagowanie dodatku właściwości
+- [Jak Visual Studio konteneryzowane aplikacje](../containers/container-build.md) — aktualizacja dla wersji LTS
 
 ## <a name="debugger"></a>Debuger
 
-**Zaktualizowane artykuły**
+**Nowe artykuły**
 
-- [How to: Debug from a DLL project in Visual Studio (C#, C++, Visual Basic, F#)](../debugger/how-to-debug-from-a-dll-project.md) — odświeżanie sposobu debugowania z biblioteki DLL
-- Określanie plików symboli (pdb) i plików źródłowych w [debugerze Visual Studio (C#, C++, Visual Basic, F#)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) — odświeżanie sposobu debugowania z biblioteki DLL
-- [Asercja C/C++](../debugger/c-cpp-assertions.md) — poprawki problemów z serwisem GitHub
-- [IDiaDataSource::loadDataForExe](../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) — problemy z usługą GitHub działają
-- [Specyfikatory formatu dla języka C++ w debugerze Visual Studio —](../debugger/format-specifiers-in-cpp.md) problemy z serwisem GitHub działają
-- [Konfigurowanie Zapory systemu Windows na potrzeby debugowania zdalnego](../debugger/configure-the-windows-firewall-for-remote-debugging.md) — poprawki problemów z usługą GitHub
-- [Zdalne debugowanie ASP.NET zdalnym komputerze usług IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md) — aktualizacje dokumentów zdalnego debugowania dla usług IIS i platformy Azure
-- [Zdalne debugowanie ASP.NET Core na zdalnym](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md) komputerze usług IIS w usłudze Visual Studio — aktualizacje dokumentów zdalnego debugowania dla usług IIS i platformy Azure
-- [Usługa Remote Debug ASP.NET Core w usługach IIS na](../debugger/remote-debugging-azure.md) platformie Azure w usłudze Visual Studio — aktualizacje dokumentów zdalnego debugowania dla usług IIS i platformy Azure
-
-## <a name="deployment"></a>Wdrożenie
+- [IDiaSymbol::get_framePadOffset](../debugger/debug-interface-access/idiasymbol-get-framepadoffset.md) — DIA SDK dodatki
+- [IDiaSymbol::get_framePadSize](../debugger/debug-interface-access/idiasymbol-get-framepadsize.md) — DIA SDK dodatki
+- [IDiaSymbol::get_isRTCs](../debugger/debug-interface-access/idiasymbol-get-isrtcs.md) — DIA SDK dodatki
+- [Jak debugować zarządzany zrzut pamięci za pomocą analizatorów diagnostycznych .NET](../debugger/how-to-debug-managed-memory-dump.md) — vs analizatory zrzutów pamięci
 
 **Zaktualizowane artykuły**
 
-- [How to: Publish a WPF application with visual styles enabled](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md) - wiersz polecenia dla deweloperów and Developer PowerShell (Jak opublikować aplikację WPF z włączonymi stylami wizualnymi wiersz polecenia dla deweloperów programie PowerShell dla deweloperów)
-- [Wdrażanie aplikacji w folderze przy użyciu usługi Visual Studio](../deployment/quickstart-deploy-to-local-folder.md) — aktualizacje dokumentów zdalnego debugowania dla usług IIS i platformy Azure
-
-## <a name="extensibility"></a>Rozszerzalność
-
-**Zaktualizowane artykuły**
-
-- [Słownik języka wizualnego —](../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md) dodawanie brakujących nawiasów języka Markdown w celu naprawienia błędu renderowania ikon
-- [VisibilityItem, element](../extensibility/visibilityitem-element.md) — potwierdzanie scalenia z gałęzi roboczej
-- [Rozwiązywanie problemów z instalacją szablonu](../extensibility/troubleshooting-template-discovery.md) — wiersz polecenia dla deweloperów i program PowerShell dla deweloperów
+- [Zrzut plików w debugerze Visual Studio —](../debugger/using-dump-files.md) vs analizatory zrzutu pamięci
+- [Jak debugować dla bezwzględnych początkujących —](../debugger/debugging-absolute-beginners.md) przewodnik dotyczący dodawania wersji VB do początkujących
 
 ## <a name="get-started"></a>Rozpoczęcie pracy
 
 **Zaktualizowane artykuły**
 
-- [Samouczek: otwieranie projektu z repo](../get-started/tutorial-open-project-from-repo-visual-studio-2019.md)
-  - aktualizowanie tematów przy użyciu porównania obok siebie linku & Team Explorer Git
-  - dodawanie linków logowania, aby uzyskać więcej informacji w sekcji logowania
-- [Samouczek: rozpoczynanie pracy z językami C# i ASP.NET Core w Visual Studio](../get-started/csharp/tutorial-aspnet-core.md)
-  - Potwierdzanie scalania z gałęzi roboczej
-  - Aktualizowanie tutorial-aspnet-core.md
+- [Samouczek: rozszerzanie prostej aplikacji konsolowej w języku C#](../get-started/csharp/tutorial-console-part-2.md) — wyjaśnienie kroków i dodanie pełnego kodu w celu rozszerzenia samouczka sidewalk
 
 ## <a name="ide"></a>IDE
 
-**Nowe artykuły**
-- [Jak Visual Studio ułatwia kontrolę źródła](../version-control/git-visual-studio-source-control.md) — tworzenie nowego tematu Visual Studio kontroli źródła
-- [wiersz polecenia dla deweloperów i program PowerShell dla deweloperów](./reference/command-prompt-powershell.md) — wiersz polecenia dla deweloperów i program PowerShell dla deweloperów
-- [Porównanie obok siebie funkcji Git](../version-control/git-team-explorer-feature-comparison.md) i Team Explorer — dodawanie nowej strony porównania side-by-side Team Explorer i nowych funkcji git
-
 **Zaktualizowane artykuły**
 
-- [Dzienniki generowane przez system zbierane przez Visual Studio](./diagnostic-data-collection.md) — aktualizowanie diagnostic-data-collection.md
-- [Visual Studio Program poprawy jakości obsługi klienta](./visual-studio-experience-improvement-program.md) — aktualizowanie visual-studio-experience-improvement-program.md
-- [Dostosowywanie szablonów projektów i elementów —](./customizing-project-and-item-templates.md) dodawanie linków dotyczących dostosowywania szablonów i korzystania z wiersza polecenia
-- [How to: Create project templates -](./how-to-create-project-templates.md) add links about customizing templates and using the command line (Tworzyć szablony projektów — dodawanie linków dotyczących dostosowywania szablonów i korzystania z wiersza polecenia)
-- [Pomoc edytora kodu F1](./not-in-toc/default-f1-text-editor.md) — łączenie aktualizacji dla stron domyślnych F1
-- [Pomoc F1 —](./not-in-toc/default.md) łączenie aktualizacji dla domyślnych stron F1
-- [Szybki start: tworzenie pierwszej Visual Studio](./quickstart-nodejs.md) aplikacji Node.js — aktualizacje angularJS
-- [Wyodrębnianie refaktoryzacji metody](./reference/extract-method.md) — aktualizowanie extract-method.md
-- [projektant XAML opcje —](./reference/xaml-designer.md) dodawanie informacji o nowo dodanych opcjach w projektancie XAML
-- [Co nowego w programie Visual Studio 2019](./whats-new-visual-studio-2019.md)
-  - dodawanie informacji o usłudze inteligentnego wyszukiwania
-  - dodawanie nowego linku CSharp 9 do strony Zobacz również
-- [wiersz polecenia dla deweloperów i program PowerShell dla deweloperów](./reference/command-prompt-powershell.md)
-  - Aktualizowanie tytułów funkcji i usuwanie sekcji prereqs
-  - Aktualizowanie hierarchii nagłówków
-  - wiersz polecenia dla deweloperów i program PowerShell dla deweloperów
-- [Łączenie z projektami w Team Explorer](./connect-team-project.md) — aktualizowanie tematów przy użyciu porównania obok siebie usługi Git & Team Explorer linku
-- [Środowisko git w usłudze Visual Studio](./git-with-visual-studio.md)
-  - dodawanie Azure DevOps do istniejącej zdalnej instrukcji
-  - dodawanie nowej strony porównania side-by-side z Team Explorer nowych funkcji usługi Git
-  - Brak argumentu -b w git-with-visual-studio.md
-- [Domyślne skróty klawiaturowe w Visual Studio](./default-keyboard-shortcuts-in-visual-studio.md) — dodaj brakujący skrót klawiaturowy Ustaw warunki punktu przerwania
-- [Uprawnienia użytkownika i Visual Studio](./user-permissions-and-visual-studio.md) — dodaj procedurę ustawienia uprawnień administratora dla skrótu
-- [Generowanie zastąpień metod Equals i GetHashCode w Visual Studio](./reference/generate-equals-gethashcode-methods.md)
-  - zmniejszanie rozmiaru zrzutu ekranu i dodawanie drobnej edycji do instrukcji
-  - dodawanie kodu do sparowania ze zrzutami ekranu
-- [Używanie wyrażeń regularnych w Visual Studio](./using-regular-expressions-in-visual-studio.md) — naprawianie nieprawidłowego wyrażenia regularnego
-- [Rozwiązywanie problemów z msBuild i](./msbuild-logs.md) tworzenie dzienników — potwierdzanie scalania z gałęzi roboczej
-- [Dostosowywanie zadań kompilacji i debugowania na rzecz tworzenia otwartych folderów](./customize-build-and-debug-tasks-in-visual-studio.md) — wiersz polecenia dla deweloperów i program PowerShell dla deweloperów
-- [Visual Studio productivity guide for C# developers](./csharp-developer-productivity.md) - update code inspection extension list for VS2019 (Przewodnik dotyczący produktywności dla deweloperów języka C# — aktualizowanie listy rozszerzeń inspekcji kodu dla programu VS2019)
+- [Pomoc F1: nie znaleziono dopasowania](./not-in-toc/default.md) — aktualizacja default.md
+- [wiersz polecenia dla deweloperów i program PowerShell dla deweloperów](./reference/command-prompt-powershell.md) — ulepszenia wydajności zawartości
+- [Łączenie z projektami w Team Explorer](./connect-team-project.md) — popraw wersję programu VS 2019 na stronie "Łączenie z projektami w Team Explorer".
 
 ## <a name="install"></a>Instalowanie
 
-**Nowe artykuły**
-- [Stosowanie aktualizacji administratora, które używają Microsoft Endpoint Configuration Manager](../install/applying-administrator-updates.md) — utworzono nową zawartość na temat stosowania aktualizacji administratora
-- [Włączanie aktualizacji administratora do Visual Studio za pomocą Microsoft Endpoint Configuration Manager](../install/enabling-administrator-updates.md) — utworzono nową zawartość na temat włączania aktualizacji administratora
-
 **Zaktualizowane artykuły**
 
-- [Numery wersji i daty wydania programu Visual Studio](../install/visual-studio-build-numbers-and-release-dates.md)
-  - Aktualizacja visual-studio-build-numbers-and-release-dates.md
-  - dodawanie danych wersji 16.9.2
-  - Aktualizacje z wtorku poprawek
-  - aktualizacja strony numerów kompilacji
-  - numery kompilacji dla wersji 16.9 GA i 16.10 (wersja zapoznawcza 1)
-  - Aktualizacja nowych wersji
-- [Tworzenie instalacji aplikacji w trybie offline Visual Studio](../install/create-an-offline-installation-of-visual-studio.md) — edycja dokumentów aktualizacji administratora
-- [Instalowanie certyfikatów wymaganych do instalacji Visual Studio offline](../install/install-certificates-for-visual-studio-offline.md) — zmiany w dokumentów aktualizacji administratora
-- [Instalowanie Visual Studio instalowania](../install/install-visual-studio-versions-side-by-side.md) obok siebie — zmiany w dokumentów aktualizacji administratora
-- [Instalowanie i używanie Visual Studio usług platformy Azure za zaporą lub](../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md) serwerem proxy — zaktualizowany artykuł.
-
-## <a name="javascript"></a>JavaScript
-
-**Zaktualizowane artykuły**
-
-- [JavaScript i TypeScript w Visual Studio # Wymagane; tytuł strony wyświetlany w wynikach wyszukiwania. Dołącz markę. < 60 znaków.](../javascript/index.yml) — Aktualizacje angularJS
-- [Szybki start: tworzenie pierwszej Visual Studio](../javascript/quickstart-vuejs-with-nodejs.md) aplikacji Vue.js — aktualizacje angularJS
-- [Samouczek: tworzenie aplikacji ASP.NET Core przy użyciu języka TypeScript w języku Visual Studio](../javascript/tutorial-aspnet-with-typescript.md)
-  - Aktualizacje angularJS
-  - visualstudio-docs/issues/6457 — brak wersji
-- [Samouczek: tworzenie aplikacji Node.js Express na platformie Visual Studio](../javascript/tutorial-nodejs.md) — aktualizacje angularJS
-- [Dowiedz się, jak używać edytora kodu dla języka JavaScript](../javascript/write-and-edit-code.md) — aktualizacje angularJS
-- [Testowanie jednostkowe języków JavaScript i TypeScript w Visual Studio](../javascript/unit-testing-javascript-with-visual-studio.md)
-  - Testy jednostkowe dla ASP.NET Core i TypeScript
-  - wiersz polecenia dla deweloperów i program PowerShell dla deweloperów
-  - Poprawki problemów z serwisem GitHub
-- [Zarządzanie pakietami npm w usłudze Visual Studio](../javascript/npm-package-management.md) — poprawki problemów z usługą GitHub
+- [Tworzenie instalacji aplikacji w trybie offline Visual Studio](../install/create-an-offline-installation-of-visual-studio.md) — aktualizowanie use-command-line-parameters-to-install-visual-studio.md
+- [Instalowanie aplikacji przy użyciu](../install/use-command-line-parameters-to-install-visual-studio.md) parametrów wiersza Visual Studio — aktualizowanie use-command-line-parameters-to-install-visual-studio.md
+- [Ustawianie wartości domyślnych dla wdrożeń](../install/set-defaults-for-enterprise-deployments.md) w przedsiębiorstwie maszyn Visual Studio — poprawianie literówek związanych z aktualizacjami administratorów i usunięcie niepotrzebnego zastrzeżenia z ustawień domyślnych wdrożeń przedsiębiorstwa
+- [Visual Studio kompilacji i daty wydania](../install/visual-studio-build-numbers-and-release-dates.md) — dodaj aktualizacje z wtorku poprawek
+- [Stosowanie aktualizacji administratora, które używają Microsoft Endpoint Configuration Manager](../install/applying-administrator-updates.md) — aktualizacje administratora
+- [Kontrolowanie aktualizacji sieciowych wdrożeń Visual Studio —](../install/controlling-updates-to-visual-studio-deployments.md) aktualizacje administratora
+- [Tworzenie instalacji sieciowej usługi Visual Studio](../install/create-a-network-installation-of-visual-studio.md) — aktualizacje administratora
+- [Włączanie aktualizacji administratora do Visual Studio za pomocą Microsoft Endpoint Configuration Manager —](../install/enabling-administrator-updates.md) aktualizacje administratora
+- [Narzędzia do wykrywania wystąpień Visual Studio —](../install/tools-for-managing-visual-studio-instances.md) aktualizacje dla administratorów
+- [Aktualizacja Visual Studio najnowszej wersji —](../install/update-visual-studio.md) aktualizacje administratora
+- [Visual Studio administratora —](../install/visual-studio-administrator-guide.md) aktualizacje dla administratorów
+- [Visual Studio przedsiębiorstwa —](../install/visual-studio-enterprise-guide.md) aktualizacje dla administratorów
 
 ## <a name="msbuild"></a>MSBuild
 
-**Zaktualizowane artykuły**
+**Nowe artykuły**
 
-- [Jak msBuild tworzy projekty —](../msbuild/build-process-overview.md) napraw złą nazwę elementu.
-- [Zadanie CreateCSharpManifestResourceName](../msbuild/createcsharpmanifestresourcename-task.md) — naprawia niepoprawne literówki odwołujące się do krzyżowego
-- [How to: Extend the Visual Studio build process](../msbuild/how-to-extend-the-visual-studio-build-process.md) - Fix XML indentation (Jak rozszerzyć proces Visual Studio kompilacji — naprawianie wcięcia XML)
-- [Zadanie MIDL](../msbuild/midl-task.md) — aktualizowanie midl-task.md
-- [Typowe elementy projektu MSBuild](../msbuild/common-msbuild-project-items.md) — dodawanie do artykułu i ulepszanie formatowania
-- [Item, element (MSBuild)](../msbuild/item-element-msbuild.md) — dodawanie do artykułu i ulepszanie formatowania
-- [Zadanie exec](../msbuild/exec-task.md) — dodawanie doc dla parametru Utf8Encoding
-
-## <a name="profiling"></a>Profilowanie
-
-**Zaktualizowane artykuły**
-
-- [Mierzenie wydajności aplikacji z wiersza polecenia](../profiling/profile-apps-from-command-line.md) — poprawki problemów z serwisem GitHub
-- [Pierwsze spojrzenie na narzędzia profilowania —](../profiling/profiling-feature-tour.md) praca odnajdywania dla narzędzia liczników .NET
+- [MSB8066: Kompilacja](../msbuild/errors/msb8066.md) niestandardowa dla elementu "item-list" kończy się z kodem "kod błędu" — nowa wersja robocza strony dla msb8066
+- [MSB8040: Biblioteki z](../msbuild/errors/msb8040.md) ograniczeniami spectre są wymagane dla tego projektu — komunikaty o błędach msBuild C++
+- [MSB8041: Biblioteki MFC](../msbuild/errors/msb8041.md) są wymagane w tym projekcie — komunikaty o błędach msBuild C++
+- [MSB3277: Znaleziono](../msbuild/errors/msb3277.md) konflikty między różnymi wersjami zestawu, których nie można rozwiązać — błąd MSBuild MSB3277
 
 ## <a name="python"></a>Python
 
 **Zaktualizowane artykuły**
 
-- [Samouczek: rozpoczynanie pracy ze platformą internetową Flask w Visual Studio](../python/learn-flask-visual-studio-step-01-project-solution.md)
-  - Zaktualizowany kod i tekst parametrów zapytania
-  - Usunięto zawartość szablonu sondowania z samouczków języka Python Visual Studio 2019 r.
-- [Samouczek: rozpoczynanie pracy ze](../python/learn-django-in-visual-studio-step-01-project-and-solution.md) środowiskiem internetowym Django w środowisku Visual Studio — usunięto zawartość szablonu sondowania z samouczków języka Python Visual Studio 2019 r.
-- [Krok 5. Uwierzytelnianie użytkowników na django](../python/learn-django-in-visual-studio-step-05-django-authentication.md) — usunięto zawartość szablonu sondowania z samouczków języka Python Visual Studio 2019 r.
-- [Krok 6. Używanie](../python/learn-django-in-visual-studio-step-06-polls-django-web-project-template.md) szablonu projektu internetowego Django usługi Polls — usunięto zawartość szablonu sondowania z samouczków języka Python Visual Studio 2019 r.
-- [Krok 4. Używanie pełnego szablonu projektu internetowego flask](../python/learn-flask-visual-studio-step-04-full-flask-project-template.md) — usunięto zawartość szablonu sondowania z samouczków języka Python Visual Studio 2019 r.
-- [Krok 5. Używanie szablonu projektu internetowego](../python/learn-flask-visual-studio-step-05-polls-flask-web-project-template.md) flask usługi Polls — usunięto zawartość szablonu sondowania z samouczków języka Python Visual Studio 2019 r.
-- [Szablon projektu internetowego Django —](../python/python-django-web-application-project-template.md) usunięto zawartość szablonu sondowania z samouczków języka Python Visual Studio 2019 r.
-- [Szablony projektów aplikacji internetowych w języku Python](../python/python-web-application-project-templates.md) — usunięto zawartość szablonu sondowania z samouczków języka Python Visual Studio 2019 r.
-- [Instalowanie symboli debugowania dla interpreterów języka Python](../python/debugging-symbols-for-mixed-mode-c-cpp-python.md) — dodaj 3 ostatnie wersje języka Python 2.7
+- [Tworzenie rozszerzenia C++ dla języka Python](../python/working-with-c-cpp-python-in-visual-studio.md)
+  - Małe aktualizacje w celu rozwiązania problemów z gh
+  - Ulepszanie working-with-c-cpp-python-in-visual-studio.md
 
-## <a name="test"></a>Testowanie
-
-**Nowe artykuły**
-
-- [Uaktualnianie *z .testsettings* do *.runsettings*](../test/migrate-testsettings-to-runsettings.md) — dodawanie migracji do doc runsettings
-- [Uaktualnianie z msTestV1 do MSTestV2](../test/mstest-update-to-mstestv2.md) — dodaj doc podczas uaktualniania z MSTestV1 do MSTestv2
+## <a name="sharepoint"></a>SharePoint
 
 **Zaktualizowane artykuły**
 
-- [Tworzenie wycinki metody testu jednostkowego z kodu](../test/create-unit-tests-menu.md) — visualstudio-docs/issues/6484 -- update link
-- [Pierwsze spojrzenie na narzędzia do testowania w Visual Studio](../test/improve-code-quality.md) — visualstudio-docs/issues/6429 — aktualizowanie linków laboratorium
-- [Konfigurowanie testów jednostkowych przy użyciu *pliku .runsettings*](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)
-  - wiersz polecenia dla deweloperów i program PowerShell dla deweloperów
-  - Poprawiono literówki
-- [VSTest.Console.exe wiersza polecenia —](../test/vstest-console-options.md) wiersz polecenia dla deweloperów program PowerShell dla deweloperów
+- [Tworzenie skojarzenia między jednostkami —](../sharepoint/creating-an-association-between-entities.md) przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 6
+- [How to: Add a custom SharePoint node to Eksplorator serwera](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md) - Moving sample files and updating code references (part 1) - 6 (6. Dodawanie niestandardowego węzła programu SharePoint do programu Eksplorator serwera — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 6
+- [How to: Retrieve the SharePoint project service](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md) - Moving sample files and updating code references (part 1) -6 (6. Pobieranie usługi projektu SharePoint — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu ( część 1) — 6
+- [Zapisywanie danych w rozszerzeniach systemu projektu SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md) — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 6
+- [Przewodnik: tworzenie elementu projektu](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md) akcji niestandardowej za pomocą szablonu elementu, część 2 — Przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 6
+- [Przewodnik: tworzenie niestandardowego kroku wdrażania](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md) dla projektów programu SharePoint — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 6
+- [Przewodnik: tworzenie strony aplikacji SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md) — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 6
+- [Przewodnik: tworzenie elementu projektu kolumn witryny](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md) z szablonem projektu, część 2 — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 6
+- [Przewodnik: tworzenie składników Web Part dla](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md) programu SharePoint przy użyciu projektanta — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 6
+- [Przewodnik: tworzenie składników Web Part dla programu SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md) — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 6
+- [Przewodnik: rozszerzanie Eksplorator serwera w celu wyświetlania składników Web Part](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md) — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 6
+
+## <a name="test"></a>Testowanie
+
+**Zaktualizowane artykuły**
+
+- [Wprowadzenie do testowania jednostkowego](../test/getting-started-with-unit-testing.md) — przewodnik dotyczący dodawania wersji VB do początkujących
+- [Wprowadzenie do Live Unit Testing](../test/live-unit-testing-start.md) — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 7
+
+## <a name="vsto"></a>Vsto
+
+**Zaktualizowane artykuły**
+
+- [Przewodnik: wyświetlanie niestandardowych okienek zadań z](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md) wiadomościami e-mail w programie Outlook — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 11
+- [Przewodnik: importowanie regionu formularza](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md) zaprojektowanego w programie Outlook — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 11
+- [Przewodnik: Wstawianie danych do skoroszytu na serwerze](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md) — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 11
+- [Przewodnik: wstawianie tekstu do dokumentu z okienka akcji](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md) — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 11
+- [Przewodnik: Programowanie względem zdarzeń kontrolki NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md) — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 11
+- [Przewodnik: pobieranie buforowanych](../vsto/walkthrough-retrieving-cached-data-from-a-workbook-on-a-server.md) danych ze skoroszytu na serwerze — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 11
+- [Przewodnik: Proste powiązanie danych w projekcie na poziomie](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md) dokumentu — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 11
+- [Przewodnik: Proste powiązanie danych w](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md) projekcie dodatku VSTO — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 11
+- [Przewodnik: synchronizowanie niestandardowego okienka zadań za](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md) pomocą przycisku wstążki — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 11
+- [Przewodnik: aktualizowanie wykresu w dokumencie](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md) za pomocą przycisków radiowych — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 11
+- [Przewodnik: aktualizowanie wykresu w](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md) arkuszu za pomocą przycisków radiowych — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 11
+- [Przewodnik: aktualizowanie kontrolek na wstążce w czasie uruchamiania](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md) — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 11
+- [Rozwiązywanie problemów z błędami w rozwiązaniach pakietu Office](../vsto/troubleshooting-errors-in-office-solutions.md) — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 10
+- [Przewodnik: dodawanie kontrolek](../vsto/walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md) do dokumentu w czasie uruchamiania w dodatku VSTO — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 10
+- [Przewodnik: Dodawanie kontrolek](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md) do arkusza w czasie uruchamiania w projekcie dodatku VSTO — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 10
+- [Przewodnik: automatyzowanie aplikacji z niestandardowego okienka zadań](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md) — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 10
+- [Przewodnik: wiązanie kontrolek zawartości z niestandardowymi częściami XML](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md) — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 10
+- [Przewodnik: wiązanie danych z kontrolkami w okienku akcji](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md) programu Word — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 10
+- [Przewodnik: wiązanie danych z kontrolkami w okienku akcji](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md) programu Excel — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 10
+- [Przewodnik: wiązanie z danymi](../vsto/walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project.md) z usługi w projekcie dodatku VSTO — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 10
+- [Przewodnik: wywołanie kodu w dodatku VSTO](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md) z pliku VBA — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 10
+- [Przewodnik: zmienianie buforowanych](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md) danych w skoroszycie na serwerze — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 10
+- [Przewodnik: zmienianie formatowania dokumentu przy użyciu kontrolek CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md) — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 10
+- [Przewodnik: zmienianie formatowania arkusza przy użyciu kontrolek CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md) — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 10
+- [Przewodnik: zbieranie danych przy użyciu formularza systemu Windows](../vsto/walkthrough-collecting-data-using-a-windows-form.md) — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 10
+- [Przewodnik: złożone powiązanie danych w projekcie na](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md) poziomie dokumentu — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 10
+- [Przewodnik: złożone powiązanie danych w](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md) projekcie dodatku VSTO — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 10
+- [Przewodnik: tworzenie karty niestandardowej przy](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md) użyciu xml wstążki — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 10
+- [Przewodnik: tworzenie karty niestandardowej przy](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md) użyciu Projektanta wstążki — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 10
+- [Przewodnik: tworzenie relacji szczegółów wzorca](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md) przy użyciu buforowanych zestawów danych — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 10
+- [Przewodnik: tworzenie szablonu przy użyciu](../vsto/walkthrough-creating-a-template-by-using-content-controls.md) kontrolek zawartości — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 10
+- [Przewodnik: tworzenie menu skrótów dla zakładek —](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md) przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) – 10
+- [Przewodnik: Tworzenie pierwszego dodatku VSTO dla programu Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md) — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 10
+- [How to: Programmatically populate Word tables with document properties](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md) - Moving sample files and updating code references (part 1) - 9 (Programowe wypełnianie tabel programu Word właściwościami dokumentu — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu ( część 1) — 9
+- [How to: Programowe drukowanie dokumentów](../vsto/how-to-programmatically-print-documents.md) — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 9
+- [How to: Programowe drukowanie arkuszy —](../vsto/how-to-programmatically-print-worksheets.md) przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 9
+- [Jak programowo chronić dokumenty](../vsto/how-to-programmatically-protect-documents-and-parts-of-documents.md) i części dokumentów — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 9
+- [Jak programowo chronić skoroszyty](../vsto/how-to-programmatically-protect-workbooks.md) — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 9
+- [How to: Programowe resetowanie zakresów w dokumentach](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md) programu Word — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 9
+- [How to: Programmatically restore selections after searches](../vsto/how-to-programmatically-restore-selections-after-searches.md) - Moving sample files and updating code references (part 1) -9 (Programowe przywracanie zaznaczenia po wyszukiwaniu — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu ( część 1) — 9
+- [Jak programowo uruchamiać obliczenia programu Excel](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md) — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 9
+- [Jak programowo zapisywać dokumenty](../vsto/how-to-programmatically-save-documents.md) — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 9
+- [3. Programowe zapisywanie dokumentów programu Visio](../vsto/how-to-programmatically-save-visio-documents.md) — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 9
+- [Jak programowo zapisywać skoroszyty](../vsto/how-to-programmatically-save-workbooks.md) — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 9
+- [How to: Programowe wyszukiwanie](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md) i zastępowanie tekstu w dokumentach — Przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 9
+- [How to: Programowe wyszukiwanie tekstu](../vsto/how-to-programmatically-search-for-text-in-worksheet-ranges.md) w zakresach arkusza — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 9
+- [Jak programowo sortować](../vsto/how-to-programmatically-sort-data-in-worksheets.md) dane w arkuszach — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 9
+- [Jak programowo przechowywać](../vsto/how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges.md) i pobierać wartości dat w zakresach programu Excel — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 9
+- [Jak programowo zaktualizować tekst zakładki](../vsto/how-to-programmatically-update-bookmark-text.md) — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 9
+- [Jak programowo używać](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md) wbudowanych okien dialogowych w programie Word — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 9
+- [Jak chronić części dokumentów za](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md) pomocą kontrolek zawartości — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 9
+- [How to: Read from and write to document properties](../vsto/how-to-read-from-and-write-to-document-properties.md) - Moving sample files and updating code references (part 1) -9 (1. Odczyt z właściwości dokumentu i zapis w dokumencie — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu ( część 1) — 9
+- [Jak zmienić rozmiar kontrolek zakładki](../vsto/how-to-resize-bookmark-controls.md) — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 9
+- [Jak zmienić rozmiar kontrolek ListObject](../vsto/how-to-resize-listobject-controls.md) — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 9
+- [Jak zmienić rozmiar kontrolek NamedRange](../vsto/how-to-resize-namedrange-controls.md) — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 9
+- [Jak zaktualizować źródło danych przy użyciu danych](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md) z kontrolki hosta — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 9
+- [Dzieje się tak:](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md) weryfikowanie danych po dodaniu nowego wiersza do kontrolki ListObject — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 9
+- [Późne powiązanie w rozwiązaniach pakietu Office](../vsto/late-binding-in-office-solutions.md) — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 9
+- [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md) — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 9
+- [Utrwalanie kontrolek dynamicznych w dokumentach pakietu Office](../vsto/persisting-dynamic-controls-in-office-documents.md) — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 9
+- [How to: Programmatically apply color to Excel ranges](../vsto/how-to-programmatically-apply-color-to-excel-ranges.md) - Moving sample files and updating code references (part 1) -8 (Programowe stosowanie koloru do zakresów programu Excel — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu ( część 1) — 8
+- [How to: Programmatically apply styles to ranges in workbooks](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md) - Moving sample files and updating code references (part 1) -8 (Programowe stosowanie stylów do zakresów w skoroszytach ) — Przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 8
+- [How to: Programmatically cache a data source in an Office document](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md) - Moving sample files and updating code references (part 1) - 8 (Programowe buforowanie źródła danych w dokumencie pakietu Office — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu ( część 1) — 8
+- [How to: Programmatically change formatting in worksheet rows containing selected cells](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md) - Moving sample files and updating code references (part 1) -8 (Programowe zmienianie formatowania w wierszach arkusza zawierających wybrane komórki ) — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 8
+- [How to: Programmatically close documents](../vsto/how-to-programmatically-close-documents.md) - Moving sample files and updating code references (part 1) -8 (3.0.2.2. 2. 3. 2018: 3. 3. 3. 3. 3. 4. 3. 4.
+- [Jak programowo zamknąć skoroszyty](../vsto/how-to-programmatically-close-workbooks.md) — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 8
+- [How to: Programowe zwijanie](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md) zakresów lub wyborów w dokumentach — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 8
+- [How to: Programowe zliczanie znaków w dokumentach](../vsto/how-to-programmatically-count-characters-in-documents.md) — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 8
+- [Tworzyć programowo nowe dokumenty programu Visio](../vsto/how-to-programmatically-create-new-visio-documents.md) — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 8
+- [Tworzyć programowo tabele programu Word](../vsto/how-to-programmatically-create-word-tables.md) — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 8
+- [Jak programowo definiować i](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md) wybierać zakresy w dokumentach — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 8
+- [Jak programowo wyświetlać dokumenty w](../vsto/how-to-programmatically-display-documents-in-print-preview.md) podglądzie wydruku — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 8
+- [Dzieje się tak: Programowe wykluczanie](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md) znaczników akapitu podczas tworzenia zakresów — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 8
+- [Jak programowo rozszerzyć zakresy w dokumentach](../vsto/how-to-programmatically-extend-ranges-in-documents.md) — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 8
+- [Jak programowo ukryć tekst](../vsto/how-to-programmatically-hide-text-in-documents.md) w dokumentach — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 8
+- [How to: Programowe wstawianie](../vsto/how-to-programmatically-insert-text-into-word-documents.md) tekstu do dokumentów programu Word — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 8
+- [How to: Programmatically loop through found items in documents](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md) - Moving sample files and updating code references (part 1) -8 (2. Pętlę znalezioną w dokumentach — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu ( część 1) — 8
+- [Uzyskiwanie dostępu do regionu formularza w czasie uruchamiania](../vsto/accessing-a-form-region-at-run-time.md) — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 7
+- [Uzyskiwanie dostępu do wstążki w czasie uruchamiania](../vsto/accessing-the-ribbon-at-run-time.md) — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 7
+- [Omówienie okienka Akcje](../vsto/actions-pane-overview.md) — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 7
+- [Dodawanie kontrolek do dokumentów pakietu Office w czasie uruchamiania](../vsto/adding-controls-to-office-documents-at-run-time.md) — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 7
+- [Rozszerzanie dokumentów programu Word](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md) i skoroszytów programu Excel w dodatki VSTO w czasie uruchamiania — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 7
+- [Jak dodać okienko akcji](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md) do dokumentów programu Word lub skoroszytów programu Excel — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 7
+- [Jak dodać kontrolki zakładek do dokumentów programu Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md) — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 7
+- [Jak dodać kontrolki zawartości do dokumentów programu Word](../vsto/how-to-add-content-controls-to-word-documents.md) — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 7
+- [How to: Add custom XML parts to documents by using VSTO Add-ins](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md) - Moving sample files and updating code references (part 1) -7 (3. Ład: dodawanie niestandardowych części XML do dokumentów przy użyciu dodatków narzędzia VSTO — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu ( część 1) — 7
+- [Jak wypełnić kontrolki ListObject](../vsto/how-to-fill-listobject-controls-with-data.md) danymi — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 7
+- [Samodzielnie: zarządzanie układem kontrolek w okienkach akcji —](../vsto/how-to-manage-control-layout-on-actions-panes.md) przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 7
+- [Jak mapować kolumny ListObject na dane](../vsto/how-to-map-listobject-columns-to-data.md) — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 7
+- [Jak programowo dodawać i](../vsto/how-to-programmatically-add-and-delete-worksheet-comments.md) usuwać komentarze do arkusza — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 7
+- [How to: Programmatically add headers and footers to documents](../vsto/how-to-programmatically-add-headers-and-footers-to-documents.md) - Moving sample files and updating code references (part 1) -7 (Programowe dodawanie nagłówków i stopek do dokumentów — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu ( część 1) — 7
+- [How to: Programmatically add pictures and Word Art to documents](../vsto/how-to-programmatically-add-pictures-and-word-art-to-documents.md) - Moving sample files and updating code references (part 1) -7 (Programowe dodawanie obrazów i obiektów Word Art do dokumentów — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu ( część 1) — 7
+- [How to: Programmatically add rows and columns to Word tables](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md) - Moving sample files and updating code references (part 1) -7 (Programowe dodawanie wierszy i kolumn do tabel programu Word — przenoszenie przykładowych plików i aktualizowanie odwołań do kodu (część 1) — 7
+
+## <a name="xaml-tools"></a>Narzędzia XAML
+
+**Zaktualizowane artykuły**
+
+- [Używanie danych czasu projektowania z projektant XAML w Visual Studio](../xaml-tools/xaml-designtime-data.md) — dodano przykład platformy UWP dla elementów Listview
 
 ## <a name="community-contributors"></a>Współautorzy społeczności
 
-W tym okresie następujące osoby przyczyniły się do Visual Studio dokumentów. Dziękujemy! Dowiedz się, jak współtwolić Visual Studio, korzystając ze wskazówek w [Przewodniku współautora.](/contribute/)
+W tym okresie następujące osoby przyczyniły się do Visual Studio dokumentów. Dziękujemy! Dowiedz się, jak współtwórz Visual Studio dokumentów, korzystając ze wskazówek w [Przewodniku współautora.](/contribute/)
 
-- [AndreKraemer](https://github.com/AndreKraemer) — Andre Kraemer (1)
-- [Bouke](https://github.com/Bouke) — Bouke Haarsma (1)
-- [Chandankkrr](https://github.com/Chandankkrr) — Chandan Rauniyar (1)
-- [enan-slayden —](https://github.com/glenn-slayden) Ichn Slayden (1)
-- [grossag](https://github.com/grossag) — Adam Gross (1)
-- [icnocop](https://github.com/icnocop) — Rami (1)
-- [mookid](https://github.com/mookid) — Nathan Moreau (1)
-- [nebuk89](https://github.com/nebuk89) — Ben de St Paer-Gotch (1)
-- [stanciuadrian —](https://github.com/stanciuadrian) Stanciu Stanciu (1)
-- [stegrams](https://github.com/stegrams) — );os Grammenos (1)
-- [tanpuresiddhant](https://github.com/tanpuresiddhant) (1)
-- [WilchenRy](https://github.com/WilheimRy) (1)
-- [xh286286](https://github.com/xh286286) (1)
+- [scott-xu](https://github.com/scott-xu) — Scott Xu (1)
+- [shreyanavigjan —](https://github.com/shreyanavigyan) Shrejan Avigjan (1)

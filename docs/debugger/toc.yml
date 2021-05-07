@@ -415,7 +415,7 @@
         - name: Debugowanie działającej aplikacji Azure Kubernetes
           href: debug-live-azure-kubernetes.md
         - name: Debugowanie migawek — często zadawane pytania
-          href: debug-live-azure-apps-faq.md
+          href: debug-live-azure-apps-faq.yml
         - name: Rozwiązywanie problemów dotyczących debugowania migawek
           href: debug-live-azure-apps-troubleshooting.md
         - name: Debugowanie przechodzenia w czasie na żywo — aplikacja maszyny wirtualnej platformy Azure
@@ -949,6 +949,6 @@
 - name: Resources
   items:
     - name: Często zadawane pytania — znajdowanie funkcji debugowania
-      href: find-your-debugging-task.md
+      href: find-your-debugging-task.yml
     - name: Co nowego w debugerze programu Visual Studio
       href: what-s-new-for-the-debugger-in-visual-studio.md

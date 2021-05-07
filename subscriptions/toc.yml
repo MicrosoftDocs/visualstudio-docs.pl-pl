@@ -48,6 +48,8 @@
       href: subscription-expiration.md
     - name: Zmiany poziomu subskrypcji
       href: subscription-level-changes.md
+    - name: Usunięte subskrypcje
+      href: subscription-removed.md
     - name: Kontaktowanie się z administratorem subskrypcji
       href: contact-my-admin.md
     - name: Korzyści

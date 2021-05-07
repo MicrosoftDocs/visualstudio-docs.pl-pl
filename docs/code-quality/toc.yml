@@ -49,7 +49,7 @@
             - name: Pomijanie naruszeń analizy kodu
               href: in-source-suppression-overview.md
         - name: Często zadawane pytania
-          href: analyzers-faq.md
+          href: analyzers-faq.yml
     - name: Analiza w starszej wersji
       items:
         - name: Omówienie
@@ -92,7 +92,7 @@
             - name: Przechodzenie z analizatorów FxCop na analizatory .NET
               href: migrate-from-fxcop-analyzers-to-net-analyzers.md
             - name: Najczęściej zadawane pytania
-              href: net-analyzers-faq.md
+              href: net-analyzers-faq.yml
         - name: Zestawy reguł
           items:
             - name: Omówienie

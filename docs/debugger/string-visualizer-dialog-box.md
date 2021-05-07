@@ -1,8 +1,8 @@
 ---
-title: Wizualizator ciągu — okno dialogowe | Microsoft Docs
-description: Wyświetlanie ciągów z wbudowanym Wizualizatorem ciągu w trakcie debugowania w programie Visual Studio.
+title: Okno dialogowe wizualizatora ciągów | Microsoft Docs
+description: Wyświetlaj ciągi za pomocą wbudowanego okna dialogowego wizualizatora ciągów podczas debugowania w Visual Studio.
 ms.date: 10/10/2018
-ms.custom: seoapril2019, SEO-VS-2020
+ms.custom: contperf-fy21q4
 ms.topic: reference
 f1_keywords:
 - vs.debug.stringviewer
@@ -21,49 +21,55 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3084db99226ab268bb6ce70611628dcafcf1753b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 85092f6a339fdaaa3ddaa56112cc351d8b8e9bdc
+ms.sourcegitcommit: dd2fc6e03a789c044f8438096b8f112e4dba5557
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904278"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108640855"
 ---
 # <a name="string-visualizer-dialog-box"></a>String Visualizer — okno dialogowe
 
-Podczas debugowania w programie Visual Studio, można wyświetlać ciągi z wbudowanym wizualizatorem ciągu. Wizualizator ciągu przedstawia ciągi, które są za długie dla okna etykietki danych lub debugera. Może również pomóc identyfikować źle sformułowane ciągi.
+Podczas debugowania w Visual Studio można wyświetlać ciągi za pomocą wbudowanego wizualizatora ciągów. Wizualizator ciągów pokazuje ciągi, które są zbyt długie dla porady danych lub okna debugera. Może również ułatwić identyfikację źle sformułowanych ciągów.
 
-Wbudowany wizualizator ciągu zawiera opcje zwykłego tekstu, XML, HTML i JSON. Możesz również otwierać wbudowane Wizualizatory dla kilku innych typów, takich jak obiekty [DataSet, DataTable i DataView](../debugger/dataset-visualizer-dialog-box.md) , z okien **Autostart** lub innych debugerów.
+Wbudowane wizualizatory ciągów obejmują [opcje Text](#text-string-data), [XML,](#xml-string-data) [HTML](#html-string-data)i [JSON.](#json-string-data) Możesz również otwierać wbudowane wizualizatory dla kilku innych typów, takich jak obiekty  [DataSet, DataTable i DataView,](../debugger/dataset-visualizer-dialog-box.md) z automatycznych lub innych okien debugera.
 
 > [!NOTE]
-> Jeśli musisz sprawdzić elementy interfejsu użytkownika XAML lub WPF w wizualizatorze, zobacz lub [Sprawdź właściwości XAML podczas debugowania](../xaml-tools/inspect-xaml-properties-while-debugging.md) lub [Użyj wizualizatora drzewa WPF](../debugger/how-to-use-the-wpf-tree-visualizer.md).
+> Jeśli musisz sprawdzić elementy interfejsu użytkownika XAML lub WPF w wizualizatorze, zobacz lub sprawdź właściwości [XAML](../xaml-tools/inspect-xaml-properties-while-debugging.md) podczas debugowania lub Jak używać wizualizatora drzewa [WPF.](../debugger/how-to-use-the-wpf-tree-visualizer.md)
 
-Aby otworzyć wizualizator ciągu, należy wstrzymać podczas debugowania. Umieść kursor nad zmienną, która ma wartość ciągu zwykłego tekstu, XML, HTML lub JSON, a następnie wybierz ikonę lupy ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "Ikona wizualizatora").
+Aby otworzyć wizualizator ciągów, musisz być wstrzymany podczas debugowania. Umieść kursor nad zmienną, która ma zwykły tekst, wartość ciągu XML, HTML lub JSON, a następnie wybierz ikonę lupy ![VisualizerIcon.](../debugger/media/dbg-tips-visualizer-icon.png "Ikona wizualizatora")
 
-## <a name="uielement-list"></a>Lista elementów UIElement
+## <a name="uielement-list"></a>Lista UIElement
 
-W polu **wyrażenie** jest wyświetlana zmienna lub wyrażenie, nad którym znajduje się kursor.
+**Pole** wyrażenia zawiera zmienną lub wyrażenie, na których umieszczasz wskaźnik myszy.
 
-W polu **wartość** jest wyświetlana wartość ciągu. **Wartość** pusta oznacza, że wybrany wizualizator nie może rozpoznać ciągu. Na przykład **wizualizator XML** przedstawia pustą **wartość** dla ciągu tekstowego bez tagów XML lub ciąg JSON. Aby wyświetlić ciągi, które nie są rozpoznawane przez wybranego wizualizatora, wybierz zamiast tego **wizualizator tekstu** . **Wizualizator tekstu** wyświetla zwykły tekst.
+**Pole** Wartość zawiera wartość ciągu. Wartość pusta **oznacza,** że wybrany wizualizator nie może rozpoznać ciągu. Na przykład **wizualizator XML** pokazuje pustą **wartość** dla ciągu tekstowego bez tagów XML lub ciągu JSON. Aby wyświetlić ciągi, których wybrany wizualizator nie może rozpoznać, wybierz zamiast tego **wizualizator** tekstu. **Wizualizator tekstu wyświetla** zwykły tekst.
+
+### <a name="text-string-data"></a>Dane ciągu tekstowego
+
+**Wizualizator tekstu wyświetla** zwykły tekst. Jeśli potrzebujesz niestandardowego formatowania dla ciągu C++, utwórz [wizualizację Natvis](../debugger/create-custom-views-of-native-objects.md).
+
+![Wizualizator ciągów tekstowych](../debugger/media/dbg-string-visualizer-text.png "Wizualizator ciągów tekstowych")
 
 ### <a name="json-string-data"></a>Dane ciągu JSON
 
-Poprawnie sformułowany ciąg JSON wygląda podobnie do poniższej ilustracji w wizualizatorze JSON. Źle sformułowany kod JSON może wyświetlić ikonę błędu (lub pustą, jeśli nie zostanie rozpoznany). Aby zidentyfikować błąd JSON, skopiuj i wklej ciąg w narzędziu Zaznaczanie błędów JSON, takim jak [JSLint](https://www.jslint.com/).
+Dobrze uformowany ciąg JSON wygląda podobnie do poniższej ilustracji w wizualizatorze JSON. Źle sformułowany kod JSON może wyświetlać ikonę błędu (lub wartość pustą, jeśli jest nierozpoznana). Aby zidentyfikować błąd JSON, skopiuj i wklej ciąg do narzędzia do linowania JSON, takiego [jak JSLint.](https://www.jslint.com/)
 
-![Wizualizator ciągu JSON](../debugger/media/dbg-tips-string-visualizer-json.png "Wizualizator ciągu JSON")
+![Wizualizator ciągów JSON](../debugger/media/dbg-tips-string-visualizer-json.png "Wizualizator ciągów JSON")
 
 ### <a name="xml-string-data"></a>Dane ciągu XML
 
-Poprawnie sformułowany ciąg XML wygląda podobnie do poniższej ilustracji w wizualizatorze XML. Nieprawidłowo sformułowany kod XML może być wyświetlany bez tagów XML lub pusty, jeśli nie został rozpoznany.
+Dobrze uformowany ciąg XML jest podobny do poniższej ilustracji w wizualizatorze XML. Źle sformułowany kod XML może być wyświetlany bez tagów XML lub pusty, jeśli jest nierozpoznany.
 
-![Wizualizator ciągu XML](../debugger/media/dbg-string-visualizers-xml.png "Wizualizator ciągu XML")
+![Wizualizator ciągów XML](../debugger/media/dbg-string-visualizers-xml.png "Wizualizator ciągów XML")
 
 ### <a name="html-string-data"></a>Dane ciągu HTML
 
-Poprawnie sformułowany ciąg HTML wygląda tak, jakby był renderowany w przeglądarce, jak pokazano na poniższej ilustracji. Nieprawidłowo sformułowany kod HTML może być wyświetlany jako zwykły tekst.
+Dobrze uformowany ciąg HTML wygląda tak, jakby był renderowany w przeglądarce, jak pokazano na poniższej ilustracji. Źle sformułowany kod HTML może być wyświetlany jako zwykły tekst.
 
-![Wizualizator ciągu HTML](../debugger/media/dbg-string-visualizers-html.png "Wizualizator ciągu HTML")
+![Wizualizator ciągów HTML](../debugger/media/dbg-string-visualizers-html.png "Wizualizator ciągów HTML")
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Tworzenie wizualizacji niestandardowych (C#, Visual Basic)](../debugger/create-custom-visualizers-of-data.md)
+- [Tworzenie niestandardowych wizualizatorów (C#, Visual Basic)](../debugger/create-custom-visualizers-of-data.md)
 - [Wizualizacje danych w Visual Studio dla komputerów Mac](/visualstudio/mac/data-visualizations)

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5c965fd73f63906f7a1e055ae5ff051eebab19d5
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 2270216e7245f20d26df580ad90dc627319adcc1
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107828816"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798638"
 ---
 # <a name="get-started-with-live-unit-testing"></a>Rozpoczynanie pracy z funkcją Live Unit Testing
 
@@ -248,7 +248,7 @@ Utworzono bibliotekę klas, a także kilka testów jednostkowych dla tej bibliot
 
 Do tej pory, mimo że zostały napisane testy dla biblioteki klas StringLibrary, nie zostały wykonane. Live Unit Testing są automatycznie wykonywane po włączeniu. W tym celu wykonaj następujące czynności:
 
-1. Opcjonalnie wybierz okno edytora kodu zawierające kod dla stringLibrary. Jest to *klasa Class1.cs* dla projektu języka C# lub *Klasa1.vb* dla Visual Basic projektu. (Ten krok umożliwia wizualne sprawdzenie wyniku testów i zakresu pokrycia kodu po włączeniu funkcji Live Unit Testing).
+1. Opcjonalnie wybierz okno edytora kodu zawierające kod dla stringLibrary. Jest to klasa *Class1.cs* dla projektu języka C# lub *Klasa1.vb* dla Visual Basic projektu. (Ten krok umożliwia wizualne sprawdzenie wyniku testów i zakresu pokrycia kodu po włączeniu funkcji Live Unit Testing).
 
 1. Wybierz **pozycję** Live Unit Testing Start z menu Visual Studio  >    >   najwyższego poziomu.
 
@@ -279,11 +279,11 @@ Głównym problemem, który Live Unit Testing, jest niepełne pokrycie kodu. Ten
 
 ## <a name="expand-test-coverage"></a>Rozszerzanie pokrycia testu
 
-W tej sekcji rozszerzysz testy jednostkowe na `StartsWithLower` metodę . W tym czasie Live Unit Testing będzie dynamicznie kontynuować testowanie kodu.
+W tej sekcji rozszerzysz testy jednostkowe na `StartsWithLower` metodę . Chociaż to zrobisz, Live Unit Testing będzie dynamicznie kontynuować testowanie kodu.
 
 Aby rozszerzyć pokrycie kodu na `StartsWithLower` metodę , wykonaj następujące czynności:
 
-1. Dodaj następujące `TestStartsWithLower` metody i do pliku kodu `TestDoesNotStartWithLower` źródłowego testu projektu:
+1. Dodaj następujące metody `TestStartsWithLower` i do pliku kodu `TestDoesNotStartWithLower` źródłowego testu projektu:
 
    :::code language="csharp" source="../test/samples/snippets/csharp/lut-start/unittest2.cs" id="Snippet1":::
 
@@ -354,8 +354,8 @@ W tej sekcji dowiesz się, jak za pomocą narzędzia Live Unit Testing identyfik
 
    Zwróć uwagę, że w oknie **Autos** wartość zmiennej to `phrase` "Name\tDescription", która jest drugim elementem tablicy. Metoda testowa oczekuje `HasEmbeddedSpaces` zwrócenia wartości , gdy zostanie przekazany ten ciąg. Zamiast `true` tego zwraca wartość `false` . Oczywiście nie rozpoznaje znaku tabuły "\t" jako osadzonego miejsca.
 
-1. Wybierz **pozycję Kontynuuj**  >  **debugowanie,** naciśnij klawisz **F5** lub kliknij przycisk **Kontynuuj** na pasku narzędzi, aby kontynuować wykonywanie programu testowego. Ponieważ wystąpił nieobsługiwany wyjątek, test kończy działanie.
-Zapewnia to wystarczającą ilość informacji do wstępnego badania usterki. Albo (procedura testowa) nie podała niepoprawnego założenia, albo `TestHasEmbeddedSpaces` nie rozpoznaje prawidłowo wszystkich `HasEmbeddedSpaces` osadzonych spacji.
+1. Wybierz **pozycję Kontynuuj**  >  **debugowanie,** naciśnij klawisz **F5** lub kliknij przycisk **Kontynuuj** na pasku narzędzi, aby kontynuować wykonywanie programu testowego. Ponieważ wystąpił nieobsługiwany wyjątek, test zostaje zakończony.
+Zapewnia to wystarczającą ilość informacji do wstępnego badania usterki. Albo `TestHasEmbeddedSpaces` (procedura testowa) podjęła niepoprawne założenie, albo `HasEmbeddedSpaces` nie rozpoznaje prawidłowo wszystkich osadzonych spacji.
 
 1. Aby zdiagnozować i rozwiązać problem, zacznij od `StringLibrary.HasEmbeddedSpaces` metody . Przyjrzyj się porównaniu w `HasEmbeddedSpaces` metodzie . Uważa, że osadzone miejsce to U+0020. Jednak standard Unicode zawiera kilka innych znaków spacji. Sugeruje to, że kod biblioteki został niepoprawnie przetestowany pod kątem znaku odstępu.
 
@@ -370,4 +370,4 @@ Zapewnia to wystarczającą ilość informacji do wstępnego badania usterki. Al
 ## <a name="see-also"></a>Zobacz też
 
 - [Live Unit Testing w Visual Studio](live-unit-testing.md)
-- [Live Unit Testing często zadawanych pytań](live-unit-testing-faq.md)
+- [Live Unit Testing często zadawanych pytań](live-unit-testing-faq.yml)

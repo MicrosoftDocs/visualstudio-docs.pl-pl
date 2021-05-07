@@ -1,6 +1,6 @@
 ---
 title: Live Unit Testing
-description: Dowiedz się więcej na temat Live Unit Testing podczas opracowywania aplikacji, w tym obsługiwanych platform i konfiguracji Live Unit Testing.
+description: Dowiedz się więcej Live Unit Testing podczas tworzenia aplikacji, w tym obsługiwanych platform i sposobu konfigurowania Live Unit Testing.
 ms.custom: SEO-VS-2020
 ms.date: 04/07/2020
 ms.topic: how-to
@@ -10,219 +10,219 @@ author: mikejo5000
 ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: 82ed41514109887d32f38faf4f965c923864ae32
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: b9b78771c36dce26744ba74af63922cf1efa48e2
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329357"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798625"
 ---
 # <a name="how-to-configure-and-use-live-unit-testing"></a>Jak skonfigurować i używać Live Unit Testing
 
-Podczas tworzenia aplikacji Live Unit Testing automatycznie uruchamia wszystkie testy jednostkowe, których to dotyczy, w tle i przedstawia wyniki i pokrycie kodu w czasie rzeczywistym. Podczas modyfikowania kodu Live Unit Testing zawiera informacje na temat sposobu, w jaki zmiany wpływają na istniejące testy, oraz tego, czy dodany kod został objęty co najmniej jednym istniejącym testem. To delikatnie przypomina, aby napisać testy jednostkowe podczas tworzenia poprawek błędów lub dodawania nowych funkcji.
+Podczas tworzenia aplikacji program Live Unit Testing automatycznie uruchamia wszystkie testy jednostkowe, których to miało wpływ, w tle oraz przedstawia wyniki i pokrycie kodu w czasie rzeczywistym. Podczas modyfikowania kodu program Live Unit Testing opinie na temat wpływu zmian na istniejące testy i tego, czy nowy dodany kod jest objęty co najmniej jednym istniejącym testem. To przypomnienie przypomina o pisanych testach jednostkowych podczas tworzenia poprawek błędów lub dodawania nowych funkcji.
 
 > [!NOTE]
-> Live Unit Testing jest dostępny dla projektów C# i Visual Basic przeznaczonych dla platformy .NET Core lub .NET Framework w wersji Enterprise programu Visual Studio.
+> Live Unit Testing jest dostępna dla projektów w języku C# i Visual Basic, które są docelowe dla programu .NET Core lub .NET Framework w wersji Enterprise programu Visual Studio.
 
-W przypadku korzystania z Live Unit Testing dla testów są zachowywane dane o stanie testów. Użycie utrwalonych danych umożliwia Live Unit Testing oferowanie najwyższej wydajności podczas jednoczesnego uruchamiania testów w odpowiedzi na zmiany kodu.
+Jeśli używasz Live Unit Testing do testów, dane o stanie testów są utrwalane. Użycie utrwalonych danych Live Unit Testing zapewnia doskonałą wydajność podczas dynamicznego uruchamiania testów w odpowiedzi na zmiany kodu.
 
-## <a name="supported-test-frameworks"></a>Obsługiwane struktury testów
+## <a name="supported-test-frameworks"></a>Obsługiwane struktury testowe
 
-Live Unit Testing współpracuje z trzema popularnymi platformami testowania jednostek wymienionymi w poniższej tabeli. Wyświetlana jest również minimalna obsługiwana wersja ich kart i struktur. Platformy testów jednostkowych są dostępne z NuGet.org.
+Live Unit Testing działa z trzema popularnymi platformami testowania jednostkowego wymienionymi w poniższej tabeli. Wyświetlana jest również minimalna obsługiwana wersja kart i platform. Wszystkie struktury testowania jednostkowego są dostępne w NuGet.org.
 
-|Platforma testowa  |Minimalna wersja programu Visual Studio adapter  |Minimalna wersja platformy  |
+|Test Framework  |Visual Studio wersji karty sieciowej  |Minimalna wersja struktury  |
 |---------|---------|---------|
-|xUnit.net |xUnit. Runner. VisualStudio w wersji 2.2.0-beta3-build1187 |xUnit 1.9.2 |
-|NUnit |NUnit3TestAdapter w wersji 3.5.1 |NUnit wersja 3.5.0 |
-|MSTest |MSTest. TestAdapter 1.1.4 — wersja zapoznawcza |MSTest. TestFramework 1.0.5 — wersja zapoznawcza |
+|xUnit.net |xunit.runner.visualstudio w wersji 2.2.0-beta3-build1187 |xunit 1.9.2 |
+|NUnit |NUnit3TestAdapter w wersji 3.5.1 |NUnit w wersji 3.5.0 |
+|MSTest |MSTest.TestAdapter 1.1.4-preview |MSTest.TestFramework 1.0.5-preview |
 
-Jeśli masz starsze projekty testowe oparte na MSTest, które odwołują się do Microsoft. VisualStudio. QualityTools. UnitTestFramework, i nie chcesz przenosić do nowszych pakietów NuGet MSTest, przeprowadź uaktualnienie do programu Visual Studio 2019 lub Visual Studio 2017.
+Jeśli masz starsze projekty testowe oparte na narzędziu MSTest odwołujące się do pakietu Microsoft.VisualStudio.QualityTools.UnitTestFramework i nie chcesz przechodzić do nowszej wersji pakietów NuGet MSTest, uaktualnij program do wersji Visual Studio 2019 lub Visual Studio 2017.
 
-W niektórych przypadkach może być konieczne jawne przywrócenie pakietów NuGet, do których odwołuje się projekt, aby Live Unit Testing działała. Można to zrobić, wykonując jawną kompilację rozwiązania (wybierz opcję **Kompiluj**  >  **ponownie rozwiązanie** z menu programu Visual Studio najwyższego poziomu) lub przywracając pakiety w rozwiązaniu (kliknij prawym przyciskiem myszy rozwiązanie i wybierz polecenie **Przywróć pakiety NuGet**).
+W niektórych przypadkach może być konieczne jawne przywrócenie pakietów NuGet, do których odwołuje się projekt, aby Live Unit Testing działać. Możesz to zrobić, wykonując jawną kompilację rozwiązania (wybierz pozycję Build Rebuild Solution (Sbuduj ponownie rozwiązanie) z menu Visual Studio najwyższego poziomu lub przywracając pakiety w rozwiązaniu (kliknij rozwiązanie prawym przyciskiem myszy i wybierz polecenie Restore NuGet Packages (Przywróć pakiety  >   **NuGet).**
 
 ## <a name="configure"></a>Konfigurowanie
 
-Skonfiguruj Live Unit Testing, wybierając **Tools**  >  **Opcje** narzędzia z paska menu programu Visual Studio najwyższego poziomu, a następnie wybierając pozycję **Live Unit Testing** w lewym okienku okna dialogowego **Opcje** .
+Skonfiguruj Live Unit Testing, wybierając pozycję Opcje narzędzi na pasku menu Visual Studio najwyższego poziomu, a następnie wybierając pozycję Live Unit Testing w lewym okienku  >   **okna dialogowego** Opcje. 
 
 > [!TIP]
-> Po włączeniu Live Unit Testing (zobacz następną sekcję, [Uruchamianie, wstrzymywanie i zatrzymywanie Live Unit Testing](#start-pause-and-stop)), możesz również otworzyć okno dialogowe **Opcje** , wybierając opcję Live Unit Testing **testów**  >  **Live Unit Testing**  >  **Options**.
+> Po Live Unit Testing (zobacz następną sekcję Uruchamianie, wstrzymywanie i zatrzymywanie usługi  [Live Unit Testing),](#start-pause-and-stop)możesz również otworzyć okno dialogowe  >  **Opcje,** wybierając pozycję Test Live Unit Testing  >  **Opcje.**
 
-Na poniższej ilustracji przedstawiono opcje konfiguracji Live Unit Testing dostępne w oknie dialogowym:
+Na poniższej ilustracji przedstawiono Live Unit Testing konfiguracji dostępnych w oknie dialogowym:
 
-![Opcje konfiguracji Live Unit Testing](./media/lut-options.png)
+![Live Unit Testing konfiguracji](./media/lut-options.png)
 
 Konfigurowalne opcje obejmują:
 
-- Czy Live Unit Testing wstrzymuje się, gdy rozwiązanie jest skompilowane i debugowane.
+- Czy Live Unit Testing wstrzymuje się, gdy rozwiązanie jest budowane i debugowane.
 
-- Czy Live Unit Testing wstrzymuje się, gdy moc baterii systemu spadnie poniżej określonego progu.
+- Czy Live Unit Testing się, gdy poziom naładowania baterii systemu spadnie poniżej określonego progu.
 
-- Czy Live Unit Testing uruchamiane automatycznie po otwarciu rozwiązania.
+- Czy Live Unit Testing automatycznie po otwarciu rozwiązania.
 
-- Określa, czy ma zostać włączona generacja symboli i komentarzy dokumentacji XML.
+- Czy włączyć generowanie komentarzy do symboli debugowania i dokumentacji XML.
 
 - Katalog, w którym mają być przechowywane utrwalone dane.
 
-- Możliwość usunięcia wszystkich danych trwałych. Jest to przydatne, gdy Live Unit Testing zachowuje się w nieprzewidywalny lub nieoczekiwany sposób, co sugeruje, że utrwalone dane uległy uszkodzeniu.
+- Możliwość usunięcia wszystkich utrwalonych danych. Jest to przydatne, Live Unit Testing działa w sposób nieprzewidywalny lub nieoczekiwany, co sugeruje, że utrwalone dane zostały uszkodzone.
 
-- Interwał, po którym przypadek testowy przeprowadzi limit czasu. Wartość domyślna to 30 sekund.
+- Interwał, po upływie którego ujmuje się czas przypadku testowego. Wartość domyślna to 30 sekund.
 
-- Maksymalna liczba procesów testowych, które Live Unit Testing utworzyć.
+- Maksymalna liczba procesów testowych, które Live Unit Testing procesów.
 
-- Maksymalna ilość pamięci, jaką mogą zużywać procesy Live Unit Testing.
+- Maksymalna ilość pamięci, którą mogą Live Unit Testing procesy.
 
-- Poziom informacji zapisany w oknie **danych wyjściowych** Live Unit Testing.
+- Poziom informacji zapisywanych w oknie Live Unit Testing **Dane** wyjściowe.
 
-   Opcje nie obejmują rejestrowania (**none**), komunikatów o błędach (**Error**), błędów i komunikatów informacyjnych (**informacje**, ustawienia domyślne) lub wszystkie szczegóły (**pełne**).
+   Opcje obejmują brak rejestrowania **(Brak),** tylko komunikaty o błędach **(Błąd),** komunikaty o błędach i komunikaty informacyjne **(informacje**, wartość domyślna) lub wszystkie szczegóły (**Pełne**).
 
-   Możesz również wyświetlić pełne dane wyjściowe w oknie **danych wyjściowych** Live Unit Testing, przypisując wartość "1" do zmiennej środowiskowej na poziomie użytkownika o nazwie `VS_UTE_DIAGNOSTICS` , a następnie uruchamiając ponownie program Visual Studio.
+   W oknie Dane wyjściowe usługi Live Unit Testing można **również** wyświetlić pełne dane wyjściowe, przypisując wartość "1" do zmiennej środowiskowej na poziomie użytkownika o nazwie , a następnie ponownie uruchamiając `VS_UTE_DIAGNOSTICS` Visual Studio.
 
-   Aby przechwycić szczegółowe komunikaty dziennika MSBuild z Live Unit Testing w pliku, należy ustawić `LiveUnitTesting_BuildLog` zmienną środowiskową na poziomie użytkownika na nazwę pliku, który będzie zawierać dziennik.
+   Aby przechwycić szczegółowe komunikaty dziennika programu MSBuild Live Unit Testing pliku, ustaw zmienną środowiskową na poziomie użytkownika na nazwę pliku `LiveUnitTesting_BuildLog` zawierającego dziennik.
 
 ## <a name="start-pause-and-stop"></a>Uruchamianie, wstrzymywanie i zatrzymywanie
 
-Aby włączyć Live Unit Testing, wybierz pozycję **Testuj**  >  **Live Unit Testing**  >  **Rozpocznij** od menu programu Visual Studio najwyższego poziomu. Gdy Live Unit Testing jest włączona, opcje dostępne w menu **Live Unit Testing** zmieniają się z jednego elementu, **zaczynają** się, aby **wstrzymywać** i **zatrzymywać**:
+Aby włączyć Live Unit Testing, **wybierz** Live Unit Testing Start z menu Visual Studio  >    >   najwyższego poziomu. Gdy Live Unit Testing włączona, opcje dostępne w menu usługi **Live Unit Testing** zmienią się z pojedynczego **elementu,** Start , na **Wstrzymaj** i **Zatrzymaj:**
 
-- **Wstrzymuje** tymczasowo wstrzymywanie Live Unit Testing.
+- **Wstrzymanie** tymczasowo wstrzymuje Live Unit Testing.
 
-  Gdy Live Unit Testing jest wstrzymana, Wizualizacja pokrycia nie jest wyświetlana w edytorze, ale wszystkie zebrane dane są zachowywane. Aby wznowić Live Unit Testing, wybierz pozycję **Kontynuuj** w menu Live Unit Testing. Live Unit Testing wykonuje czynności, które należy wykonać, aby przechwycić wszystkie zmiany, które zostały wprowadzone, gdy została wstrzymana, i odpowiednio aktualizuje symbole.
+  Po Live Unit Testing wizualizacja pokrycia nie jest wyświetlana w edytorze, ale wszystkie zebrane dane są zachowywane. Aby wznowić Live Unit Testing, wybierz **pozycję Kontynuuj** z Live Unit Testing menu. Live Unit Testing pracę niezbędną do nadrobić zaległości ze wszystkimi edytować, które zostały wprowadzone, gdy została wstrzymana, i odpowiednio aktualizuje glify.
 
-- **Zatrzymaj** całkowicie zatrzymuje Live Unit Testing. Live Unit Testing odrzuca wszystkie zebrane dane.
+- **Zatrzymaj** całkowicie Live Unit Testing. Live Unit Testing odrzuca wszystkie zebrane dane.
 
 > [!NOTE]
-> Po rozpoczęciu Live Unit Testing w rozwiązaniu, które nie zawiera projektu testu jednostkowego, opcje **Wstrzymaj** i **Zatrzymaj** są wyświetlane w menu **Live Unit Testing** , ale Live Unit Testing nie zostanie uruchomiony. W oknie **danych wyjściowych** zostanie wyświetlony komunikat o rozpoczęciu "Brak obsługiwanych adapterów testowych, do których odwołuje się to rozwiązanie...".
+> Jeśli zaczniesz Live Unit Testing w rozwiązaniu, które nie zawiera  projektu  testu jednostkowego, opcje Wstrzymaj i Zatrzymaj są wyświetlane w **menu** Live Unit Testing, ale nie Live Unit Testing uruchomić. W **oknie** Dane wyjściowe zostanie wyświetlony komunikat "To rozwiązanie nie odwołuje się do obsługiwanych adapterów testowych...".
 
-W dowolnym momencie można tymczasowo wstrzymywać lub całkowicie zatrzymywać Live Unit Testing. Można to zrobić na przykład, jeśli jesteś w trakcie refaktoryzacji i wiadomo, że testy zostaną przerwane przez pewien czas.
+W dowolnym momencie możesz tymczasowo wstrzymać lub całkowicie zatrzymać Live Unit Testing. Możesz to zrobić, na przykład jeśli jesteś w trakcie refaktoryzacji i wiesz, że testy zostaną przerwane przez jakiś czas.
 
-## <a name="view-coverage-visualization"></a>Wyświetl wizualizację pokrycia
+## <a name="view-coverage-visualization"></a>Wyświetlanie wizualizacji pokrycia
 
-Po włączeniu Live Unit Testing aktualizuje każdy wiersz kodu w edytorze programu Visual Studio, aby pokazać, czy kod, który jest pisany jest objęty testami jednostkowymi, oraz czy testy, które je obejmują, są przekazywane. Na poniższej ilustracji przedstawiono wiersze kodu z testami przechodzącymi i zakończonymi niepowodzeniem, a także wierszy kodu, które nie są objęte testami. Linie oznaczone zielonym "✓" są objęte tylko przekazywaniem testów, linie oznaczone czerwoną literą "x" są objęte co najmniej jednym testem, a linie oznaczone niebieską "➖" nie są objęte żadnym testem.
+Po włączeniu tej funkcji program Live Unit Testing aktualizuje każdy wiersz kodu w edytorze Visual Studio, aby pokazać, czy pisany kod jest objęty testami jednostkowymi i czy testy, które go obejmują, są mijające. Na poniższej ilustracji przedstawiono wiersze kodu z testami zarówno z podań, jak i testów, które się nie popełnią, a także wiersze kodu, które nie są objęte testami. Linie dekorowane zielonym "są pokrywane tylko przez testy, linie dekorowane czerwonymi znakami "x" są objęte co najmniej jednym testem nieudanym, a linie dekorowane niebieskimi "➖" nie są objęte żadnym testem.
 
-![Pokrycie kodu w programie Visual Studio](./media/lut-codewindow.png)
+![Pokrycie kodu w Visual Studio](./media/lut-codewindow.png)
 
-Wizualizacja pokrycia Live Unit Testing jest aktualizowana natychmiast po zmodyfikowaniu kodu w edytorze kodu. Podczas przetwarzania zmian wizualizacji w celu wskazania, że dane nie są aktualne przez dodanie obrazu czasomierza okrągłego poniżej symboli zakończonych niepowodzeniem i nie pokrytych, jak pokazano na poniższej ilustracji.
+Live Unit Testing wizualizacja pokrycia jest aktualizowana natychmiast po zmodyfikowaniu kodu w edytorze kodu. Podczas przetwarzania edycji wizualizacja zmienia się, aby wskazać, że dane nie są aktualne, dodając obraz czasomierza rundy poniżej symboli przekazujących, nieudanych i nieukrytych, jak pokazano na poniższej ilustracji.
 
-![Pokrycie kodu w programie Visual Studio przy użyciu ikony czasomierza](./media/lut-codeupdating.png)
+![Pokrycie kodu w Visual Studio ikoną czasomierza](./media/lut-codeupdating.png)
 
-## <a name="get-information-about-test-status"></a>Pobierz informacje o stanie testu
+## <a name="get-information-about-test-status"></a>Uzyskiwanie informacji o stanie testu
 
-Przez umieszczenie kursora nad symbolem pomyślnym lub niepomyślnym w oknie kodu, można zobaczyć, ile testów jest w tym wierszu. Aby wyświetlić stan poszczególnych testów, wybierz symbol:
+Po umieszczeniu wskaźnika myszy na symbolu powodzenie lub niepowodzenie w oknie kodu możesz zobaczyć, ile testów trafia do tego wiersza. Aby wyświetlić stan poszczególnych testów, wybierz symbol:
 
-![Stan testu dla symbolu w programie Visual Studio](./media/lut-failedinfo.png)
+![Stan testu symbolu w Visual Studio](./media/lut-failedinfo.png)
 
-Oprócz podawania nazw i wyników testów, etykietka narzędzia umożliwia ponowne uruchomienie lub debugowanie zestawu testów. W przypadku wybrania co najmniej jednego testu w etykietce narzędzia można również uruchomić lub debugować tylko te testy. Pozwala to debugować testy bez konieczności opuszczania okna kodu. Podczas debugowania, oprócz obserwowania wszystkich punktów przerwania, które można już ustawić, wykonanie programu jest wstrzymywane, gdy debuger wykonuje <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> metodę, która zwraca nieoczekiwany wynik.
+Etykietka narzędzia pozwala nie tylko na podanie nazw i wyników testów, ale także na ponowne uruchomić lub debugować zestaw testów. Jeśli wybierzesz co najmniej jeden test w etykietce narzędzia, możesz również uruchomić lub debugować tylko te testy. Dzięki temu można debugować testy bez konieczności opuszczania okna kodu. Podczas debugowania, oprócz obserwowania punktów przerwania, które być może zostały już ustawione, wykonywanie programu jest wstrzymywane, gdy debuger wykonuje metodę, która <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> zwraca nieoczekiwany wynik.
 
-Po umieszczeniu wskaźnika myszy na teście zakończonym niepowodzeniem w etykietce narzędzia rozszerza się, aby podać dodatkowe informacje o awarii, jak pokazano na poniższej ilustracji. Aby przejść bezpośrednio do testu zakończonego niepowodzeniem, kliknij go dwukrotnie w etykietce narzędzia.
+Po umieszczeniu wskaźnika myszy na teście, który zakończył się niepowodzeniem w etykietce narzędzia, następuje rozszerzenie w celu podania dodatkowych informacji o niepowodzeniu, jak pokazano na poniższej ilustracji. Aby przejść bezpośrednio do testu, który zakończył się niepowodzeniem, kliknij go dwukrotnie w etykietce narzędzia.
 
-![Nie można przetestować informacji o etykietce narzędzia w programie Visual Studio](./media/lut-failedmsg.png)
+![Informacje o etykietce narzędzia testu, które zakończyły się niepowodzeniem w Visual Studio](./media/lut-failedmsg.png)
 
-Gdy przejdziesz do testu zakończonego niepowodzeniem, Live Unit Testing wizualnie wskazuje, że w metodzie podpisuje testy, które mają:
+Po przechodzeniu do testu, który zakończył się niepowodzeniem, Live Unit Testing wizualnie wskazuje w metodzie podpis testów, które mają:
 
-- zakończony zakończono (wskazywanym przez pół zlewki i zieloną "✓")
-- Niepowodzenie (połowa-pełna zlewka wraz z czerwonym " 🞩 ")
-- nie są wykorzystywane w Live Unit Testing (połowa-pełna zlewka wraz z niebieską "➖")
+- passed (wskazywana przez połowię pełną zębnikę z zielonym "").")
+- failed (połowia pełna zmyka z czerwonym " 🞩 ")
+- nie są zaangażowani w Live Unit Testing (połowię pełnej zdjętą ząbkową "➖")
 
-Metody inne niż testowe nie są dekoracyjne symbolem. Na poniższej ilustracji przedstawiono wszystkie cztery typy metod.
+Metody inne niż testowe nie są dekorowane symbolem. Na poniższej ilustracji przedstawiono wszystkie cztery typy metod.
 
-![Metody testowe w programie Visual Studio z symbolem powodzenia lub niepowodzenia](media/lut-testsource.png)
+![Metody testowe w Visual Studio z symbolem pass or fail](media/lut-testsource.png)
 
-## <a name="diagnose-and-correct-test-failures"></a>Diagnozuj i popraw błędy testów
+## <a name="diagnose-and-correct-test-failures"></a>Diagnozowanie i poprawianie błędów testów
 
-W teście zakończonym niepowodzeniem można łatwo debugować kod produktu, wprowadzać zmiany i kontynuować tworzenie aplikacji. Ponieważ Live Unit Testing działa w tle, nie trzeba przerywać ani ponownie uruchamiać Live Unit Testing podczas debugowania, Edytuj i Kontynuuj.
+W teście, który zakończył się niepowodzeniem, można łatwo debugować kod produktu, edytować i kontynuować tworzenie aplikacji. Ponieważ Live Unit Testing działa w tle, nie trzeba zatrzymywać i uruchamiać ponownie Live Unit Testing podczas cyklu debugowania, edytowania i kontynuowania.
 
-Na przykład niepowodzenie testu pokazane na poprzednim obrazie zostało spowodowane przez nieprawidłowe założenie w metodzie testowej, że znaki niealfabetyczne zwracają, `true` gdy są przesyłane do <xref:System.Char.IsLower%2A?displayProperty=fullName> metody. Po naprawieniu metody testowej należy przekazać wszystkie testy. Nie musisz wstrzymywać ani zatrzymywać Live Unit Testing.
+Na przykład niepowodzenie testu pokazane na poprzedniej ilustracji zostało spowodowane niepoprawnym założeniem w metodzie testowej, które zwraca znaki inne niż alfabetyczne po przekazyciu `true` do <xref:System.Char.IsLower%2A?displayProperty=fullName> metody. Po skorygowaniu metody testu wszystkie testy powinny zostać zmieściły się. Nie trzeba wstrzymywać ani zatrzymywać Live Unit Testing.
 
 ::: moniker range="vs-2017"
 ## <a name="test-explorer"></a>Eksplorator testów
 
-**Eksplorator testów** udostępnia interfejs, który umożliwia uruchamianie i debugowanie testów oraz analizowanie wyników testów. Live Unit Testing integruje się z **Eksploratorem testów**. Gdy Live Unit Testing nie jest włączona lub zatrzymana, **Eksplorator testów** wyświetla stan testów jednostkowych przy ostatnim uruchomieniu testu. Zmiany kodu źródłowego wymagają ponownego uruchomienia testów. Natomiast po włączeniu Live Unit Testing stan testów jednostkowych w **Eksploratorze testów** jest natychmiast aktualizowany. Nie musisz jawnie uruchamiać testów jednostkowych.
+**Eksplorator testów** udostępnia interfejs, który umożliwia uruchamianie i debugowanie testów oraz analizowanie wyników testów. Live Unit Testing integruje się z **Eksploratorem testów.** Gdy Live Unit Testing nie jest włączona lub zatrzymana, Eksplorator **testów** wyświetla stan testów jednostkowych podczas ostatniego uruchomienia testu. Zmiany kodu źródłowego wymagają ponownego uruchomić testy. Z kolei po Live Unit Testing testów jednostkowych stan testów jednostkowych w Eksploratorze **testów** jest natychmiast aktualizowany. Nie trzeba jawnie uruchamiać testów jednostkowych.
 
 > [!TIP]
-> Otwórz **Live Unit Testing** , wybierając pozycję **Testuj**  >  **Windows**  >  **Eksplorator testów** systemu Windows z menu programu Visual Studio najwyższego poziomu.
+> Otwórz **Live Unit Testing,** wybierając pozycję **Testuj**  >    >  **Eksploratora testów systemu** Windows z menu Visual Studio najwyższego poziomu.
 
-W oknie **Eksploratora testów** można zauważyć, że niektóre testy są wyblakłe. Na przykład po włączeniu Live Unit Testing po otwarciu wcześniej zapisanego projektu okno **Eksplorator testów** zostało podpięte wszystkie oprócz testu zakończonego niepowodzeniem, jak pokazano na poniższej ilustracji. W takim przypadku Live Unit Testing ponownie uruchamia test zakończony niepowodzeniem, ale nie uruchamia ponownie testów zakończonych powodzeniem. Wynika to z faktu, że dane utrwalone Live Unit Testing wskazują, że nie zostały wprowadzone żadne zmiany, ponieważ testy zostały ostatnio wykonane pomyślnie.
+W oknie Eksplorator **testów** można zauważyć, że niektóre testy są wyblakły. Na przykład po włączeniu funkcji Live Unit Testing wcześniej zapisany projekt  okno Eksploratora testów wygasło, ale test zakończył się niepowodzeniem, jak pokazano na poniższej ilustracji. W takim przypadku Live Unit Testing ponownie uruchomić test, który zakończył się niepowodzeniem, ale nie został ponownie uruchomić pomyślnie testów. Jest to spowodowane Live Unit Testing danych utrwalonych przez program wskazuje, że nie było żadnych zmian od czasu ostatniego pomyślnego uruchomienia testów.
 
-![Test zakończony niepowodzeniem w Eksploratorze testów](media/lut-test-explorer.png)
+![Test nieudany w Eksploratorze testów](media/lut-test-explorer.png)
 
-Wszystkie testy, które są wyświetlane, można uruchomić ponownie, wybierając opcję **Uruchom wszystkie** lub **Uruchom** z menu **Eksplorator testów** . Lub wybierz jeden lub więcej testów w menu  **Eksploratora testów** , kliknij prawym przyciskiem myszy, a następnie wybierz polecenie **Uruchom wybrane testy** lub **Debuguj wybrane testy** z menu podręcznego. Gdy testy są uruchamiane, są one rzutowane do góry.
+Możesz ponownie uruchomić wszystkie testy, które wydają się wygasnąć, wybierając opcje **Uruchom** wszystko lub **Uruchom** z menu Eksplorator **testów.** Możesz też wybrać jeden lub więcej testów w menu **Eksploratora** testów, kliknąć prawym przyciskiem myszy, a następnie wybrać polecenie Uruchom wybrane testy lub **Debuguj** wybrane testy z menu podręcznego.  Podczas uruchamiania testów są one bąbelkami w górę.
 
-Istnieją pewne różnice między Live Unit Testing automatycznie uruchamiać i aktualizować wyniki testów oraz jawnie uruchamiać testy z **Eksploratora testów**. Różnice te obejmują:
+Istnieją pewne różnice między tym, Live Unit Testing automatycznie uruchamiać i aktualizować wyniki testów oraz jawnie uruchamiać testy z **Eksploratora testów.** Różnice te obejmują:
 
-- Uruchamianie lub debugowanie testów z okna Eksploratora testów powoduje uruchomienie zwykłych plików binarnych, podczas gdy Live Unit Testing uruchamia instrumentację plików binarnych.
-- Live Unit Testing nie tworzy nowej domeny aplikacji do uruchamiania testów, ale zamiast uruchamiania testów z domeny domyślnej. Testy przebiega z okna **Eksploratora testów** Utwórz nową domenę aplikacji.
-- Live Unit Testing uruchamia testy w każdym zestawie testów sekwencyjnie. W oknie **Eksplorator testów** można uruchomić wiele testów równolegle.
+- Uruchamianie lub debugowanie testów w oknie Eksplorator testów uruchamia zwykłe pliki binarne, a Live Unit Testing instrumentowane pliki binarne.
+- Live Unit Testing nie tworzy nowej domeny aplikacji do uruchamiania testów, ale uruchamia testy z domeny domyślnej. Testy uruchamiane w **oknie Eksplorator testów** tworzą nową domenę aplikacji.
+- Live Unit Testing uruchamia testy w każdym zestawie testowym sekwencyjnie. W **oknie Eksplorator** testów można uruchomić wiele testów równolegle.
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
-## <a name="live-unit-testing-window"></a>Okno Live Unit Testing
+## <a name="live-unit-testing-window"></a>Live Unit Testing okno
 
-**Live Unit Testing**, podobnie jak w **Eksploratorze testów**, udostępnia interfejs, który umożliwia uruchamianie i debugowanie testów oraz analizowanie wyników testów. Po włączeniu Live Unit Testing stan testów jednostkowych w **Eksploratorze testów** zostaje natychmiast zaktualizowany. Nie musisz jawnie uruchamiać testów jednostkowych. Gdy Live Unit Testing nie jest włączona lub zatrzymana, **Live Unit Testing** wyświetla stan testów jednostkowych przy ostatnim uruchomieniu testu. Po ponownym uruchomieniu Live Unit Testing wymagana jest zmiana kodu źródłowego, aby ponownie uruchomić testy.
+**Live Unit Testing**, podobnie jak **Eksplorator testów,** udostępnia interfejs, który umożliwia uruchamianie i debugowanie testów oraz analizowanie wyników testów. Gdy Live Unit Testing jest włączona, stan testów jednostkowych w Eksploratorze **testów** jest aktualizowany natychmiast. Nie trzeba jawnie uruchamiać testów jednostkowych. Gdy Live Unit Testing nie jest włączona lub  zatrzymana, Live Unit Testing wyświetla stan testów jednostkowych podczas ostatniego uruchomienia testu. Po ponownym uruchomieniu Live Unit Testing ponowne uruchomienie testów wymaga zmiany kodu źródłowego.
 
 > [!TIP]
-> Rozpocznij Live Unit Testing, wybierając pozycję **test**  >  **Live Unit Testing**  >  **Rozpocznij** od menu programu Visual Studio najwyższego poziomu. Okno **Live Unit Testing** można również otworzyć, korzystając z okna **Wyświetl**  >  **inne**  >  **okno Live Unit Testing** systemu Windows.
+> Rozpocznij Live Unit Testing, wybierając pozycję **Live Unit Testing** Start z menu Visual Studio  >    >   najwyższego poziomu. Możesz również otworzyć okno **Live Unit Testing** za pomocą **polecenia View** Other Windows Live Unit Testing Window (Wyświetl inne  >  **okna**  >  **Live Unit Testing Windows).**
 
-W oknie **Live Unit Testing** można zauważyć, że niektóre testy są wyblakłe. Na przykład po zatrzymaniu i ponownym uruchomieniu Live Unit Testing okno **Live Unit Testing** zanika wszystkie testy, jak pokazano na poniższej ilustracji. Wynikowe wyniki testów wskazują, że test nie był częścią najnowszego przebiegu testu jednostkowego na żywo. Testy są uruchamiane tylko wtedy, gdy zostanie wykryta zmiana lub zależności testu. W przypadku braku zmian nie jest to konieczne do uruchomienia testu. W takim przypadku szary wynik testu nadal jest "aktualny", mimo że nie był częścią ostatniego uruchomienia.
+W oknie **Live Unit Testing,** że niektóre testy są wyblakły. Na przykład po zatrzymaniu i ponownym uruchomieniu Live Unit Testing okno Live Unit Testing zanika we wszystkich testach, jak pokazano na poniższej ilustracji.  Wyniki testów zanikanych wskazują, że test nie był częścią najnowszego uruchomienia testu jednostkowego na żywo. Testy są uruchamiane tylko wtedy, gdy zostanie wykryta zmiana w teście lub zależności testu. Jeśli nie ma żadnych zmian, pozwala to uniknąć niepotrzebnych testów. W tym przypadku wyszarzony wynik testu jest nadal "aktualny", chociaż nie był częścią najnowszego uruchomienia.
 
-![Wyblakłe testy w Eksploratorze testów](media/vs-2019/lut-test-explorer.png)
+![Wygasły testy w Eksploratorze testów](media/vs-2019/lut-test-explorer.png)
 
-Możesz ponownie uruchomić wszystkie testy, które są wyświetlane jako wyblakłe, wprowadzając zmiany w kodzie.
+Możesz ponownie uruchomić wszystkie testy, które wyglądają na wyblakły, przez wprowadzenie zmiany kodu.
 
-Istnieją pewne różnice między Live Unit Testing automatycznie uruchamiać i aktualizować wyniki testów oraz jawnie uruchamiać testy z **Eksploratora testów**. Różnice te obejmują:
+Istnieją pewne różnice między tym, Live Unit Testing automatycznie uruchamiać i aktualizować wyniki testów oraz jawnie uruchamiać testy z **Eksploratora testów.** Różnice te obejmują:
 
-- Uruchamianie lub debugowanie testów z okna Eksploratora testów powoduje uruchomienie zwykłych plików binarnych, podczas gdy Live Unit Testing uruchamia instrumentację plików binarnych.
-- Live Unit Testing nie tworzy nowej domeny aplikacji do uruchamiania testów, ale zamiast uruchamiania testów z domeny domyślnej. Testy przebiega z okna **Eksploratora testów** Utwórz nową domenę aplikacji.
-- Live Unit Testing uruchamia testy w każdym zestawie testów sekwencyjnie. W oknie **Eksplorator testów** można uruchomić wiele testów równolegle.
+- Uruchamianie lub debugowanie testów w oknie Eksploratora testów uruchamia zwykłe pliki binarne, podczas gdy Live Unit Testing instrumentowane pliki binarne.
+- Live Unit Testing nie tworzy nowej domeny aplikacji do uruchamiania testów, ale uruchamia testy z domeny domyślnej. Testy uruchamiane w **oknie Eksplorator** testów tworzą nową domenę aplikacji.
+- Live Unit Testing uruchamia testy w każdym zestawie testowym sekwencyjnie. W **oknie Eksplorator** testów można uruchomić wiele testów równolegle.
 ::: moniker-end
 
 ## <a name="large-solutions"></a>Duże rozwiązania
 
-Jeśli rozwiązanie ma 10 lub więcej projektów, program Visual Studio wyświetli następujące okno dialogowe:
+Jeśli rozwiązanie ma co najmniej 10 projektów, Visual Studio zostanie wyświetlone następujące okno dialogowe:
 
-- Rozpocznij Live Unit Testing i nie ma żadnych utrwalonych danych
-- Wybierz **Tools**  >  **Opcje** narzędzi  >  **Live Unit Testing**  >  **Usuń utrwalone dane**
+- uruchom Live Unit Testing i nie ma żadnych utrwalonych danych
+- wybieranie **opcji**  >  **Narzędzia**  >  **Live Unit Testing**  >  **usuwanie utrwalonych danych**
 
-![Okno dialogowe Live Unit Testing dla dużych projektów](media/lut-large-project.png)
+![Live Unit Testing dialogowe dla dużych projektów](media/lut-large-project.png)
 
-Okno dialogowe ostrzega o tym, że dynamiczne wykonywanie dużej liczby testów w dużych projektach może poważnie wpłynąć na wydajność. Jeśli wybierzesz **przycisk OK**, Live Unit Testing wykonuje wszystkie testy w rozwiązaniu. Jeśli wybierzesz pozycję **Anuluj**, możesz wybrać testy do wykonania. W poniższej sekcji wyjaśniono, jak to zrobić.
+W oknie dialogowym zostanie wyświetlone ostrzeżenie, że dynamiczne wykonywanie dużej liczby testów w dużych projektach może poważnie wpłynąć na wydajność. Jeśli wybierzesz **przycisk OK,** Live Unit Testing wszystkie testy w rozwiązaniu. Jeśli wybierzesz **pozycję Anuluj,** możesz wybrać testy do wykonania. W poniższej sekcji wyjaśniono, jak to zrobić.
 
-## <a name="include-and-exclude-test-projects-and-test-methods"></a>Uwzględnianie i Wykluczanie projektów testowych i metod testowych
+## <a name="include-and-exclude-test-projects-and-test-methods&quot;></a>Dołączanie i wykluczanie projektów testowych i metod testowych
 
-W przypadku rozwiązań z wieloma projektami testowymi można kontrolować, które projekty i poszczególne metody w projekcie biorą udział w Live Unit Testing. Jeśli na przykład masz rozwiązanie z setkami projektów testowych, możesz wybrać zestaw projektów testowych przeznaczony do uczestnictwa w Live Unit Testing. Istnieje kilka sposobów, w zależności od tego, czy chcesz wykluczyć wszystkie testy w projekcie lub rozwiązaniu, dołączyć lub wykluczyć większość testów lub wykluczyć poszczególne testy. Live Unit Testing zapisuje stan dołączania/wykluczania jako ustawienia użytkownika i zapamiętuje je po zamknięciu i ponownym otwarciu rozwiązania.
+W przypadku rozwiązań z wieloma projektami testowym możesz kontrolować, które projekty i poszczególne metody w projekcie uczestniczą w Live Unit Testing. Jeśli na przykład masz rozwiązanie z setkami projektów testowych, możesz wybrać docelowy zestaw projektów testowych, które będą uczestniczyć w Live Unit Testing. Istnieje wiele sposobów, aby to zrobić, w zależności od tego, czy chcesz wykluczyć wszystkie testy w projekcie lub rozwiązaniu, dołączyć lub wykluczyć większość testów lub wykluczyć poszczególne testy. Live Unit Testing zapisuje stan dołączania/wykluczania jako ustawienie użytkownika i zapamiętuje je po zamknięciu i ponownym otwarciu rozwiązania.
 
-### <a name="exclude-all-tests-in-a-project-or-solution"></a>Wyklucz wszystkie testy w projekcie lub rozwiązaniu
+### <a name=&quot;exclude-all-tests-in-a-project-or-solution&quot;></a>Wykluczanie wszystkich testów w projekcie lub rozwiązaniu
 
-Aby wybrać poszczególne projekty w testach jednostkowych, wykonaj następujące czynności po rozpoczęciu Live Unit Testing:
+Aby wybrać poszczególne projekty w testach jednostkowych, po Live Unit Testing wykonaj następujące czynności:
 
-1. Kliknij prawym przyciskiem myszy rozwiązanie w **Eksplorator rozwiązań** i wybierz **Live Unit Testing**  >  **Wyklucz** , aby wykluczyć całe rozwiązanie.
-1. Kliknij prawym przyciskiem myszy każdy projekt testowy, który ma zostać uwzględniony w testach, a następnie wybierz **Live Unit Testing**  >  **Uwzględnij**.
+1. Kliknij prawym przyciskiem myszy rozwiązanie w **Eksplorator rozwiązań** i **wybierz** Live Unit Testing  >  **Wyklucz,** aby wykluczyć całe rozwiązanie.
+1. Kliknij prawym przyciskiem myszy każdy projekt testowy, który chcesz uwzględnić w testach, a następnie wybierz polecenie **Live Unit Testing**  >  **uwzględnij**.
 
-### <a name="exclude-individual-tests-from-the-code-editor-window"></a>Wyklucz pojedyncze testy z okna edytora kodu
+### <a name=&quot;exclude-individual-tests-from-the-code-editor-window&quot;></a>Wykluczanie poszczególnych testów z okna edytora kodu
 
-Można użyć okna edytora kodu, aby dołączyć lub wykluczyć poszczególne metody testowe. Kliknij prawym przyciskiem myszy podpis metody testowej w oknie Edytor kodu, a następnie wybierz jedną z następujących opcji:
+Za pomocą okna edytora kodu można dołączać lub wykluczać poszczególne metody testowe. Kliknij prawym przyciskiem myszy podpis metody testowej w oknie edytora kodu, a następnie wybierz jedną z następujących opcji:
 
 - **Live Unit Testing**  >  **Uwzględnij \<selected method>**
 - **Live Unit Testing**  >  **Wyklucz \<selected method>**
-- **Live Unit Testing**  >  **Wyklucz wszystkie \<selected method> oprócz**
+- **Live Unit Testing**  >  **Wyklucz \<selected method> wszystko, ale**
 
-### <a name="exclude-tests-programmatically"></a>Programowe wykluczanie testów
+### <a name=&quot;exclude-tests-programmatically&quot;></a>Programowe wykluczanie testów
 
-Można zastosować atrybut, <xref:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute> Aby programowo wykluczyć metody, klasy lub struktury z raportowania ich pokrycia w Live Unit Testing.
+Atrybut można zastosować do programowego wykluczania metod, klas lub struktur z raportowania ich pokrycia w <xref:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute> Live Unit Testing.
 
 Użyj następujących atrybutów, aby wykluczyć poszczególne metody z Live Unit Testing:
 
-- Dla xUnit: `[Trait("Category", "SkipWhenLiveUnitTesting")]`
+- Dla xUnit: `[Trait(&quot;Category&quot;, &quot;SkipWhenLiveUnitTesting")]`
 - Dla NUnit: `[Category("SkipWhenLiveUnitTesting")]`
-- Dla MSTest: `[TestCategory("SkipWhenLiveUnitTesting")]`
+- W przypadku programu MSTest: `[TestCategory("SkipWhenLiveUnitTesting")]`
 
 Użyj następujących atrybutów, aby wykluczyć cały zestaw testów z Live Unit Testing:
 
 - Dla xUnit: `[assembly: AssemblyTrait("Category", "SkipWhenLiveUnitTesting")]`
 - Dla NUnit: `[assembly: Category("SkipWhenLiveUnitTesting")]`
-- Dla MSTest: `[assembly: TestCategory("SkipWhenLiveUnitTesting")]`
+- W przypadku programu MSTest: `[assembly: TestCategory("SkipWhenLiveUnitTesting")]`
 
 ## <a name="see-also"></a>Zobacz też
 
 - [Narzędzia do testowania kodu](https://visualstudio.microsoft.com/vs/testing-tools/)
-- [Blog Live Unit Testing](https://devblogs.microsoft.com/visualstudio/live-unit-testing-in-visual-studio-2017-enterprise/)
-- [Live Unit Testing — często zadawane pytania](live-unit-testing-faq.md)
-- [Wideo Channel 9: Live Unit Testing w programie Visual Studio](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)
+- [Live Unit Testing bloga](https://devblogs.microsoft.com/visualstudio/live-unit-testing-in-visual-studio-2017-enterprise/)
+- [Live Unit Testing — często zadawane pytania](live-unit-testing-faq.yml)
+- [Wideo z kanału Channel 9: Live Unit Testing w Visual Studio](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)

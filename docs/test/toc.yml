@@ -121,9 +121,9 @@
           href: troubleshooting-code-coverage.md
     - name: Migracja
       items:
-        - name: Uaktualnianie z MSTestV1 do MSTestV2
+        - name: Uaktualnianie z wersji MSTestV1 do MSTestV2
           href: mstest-update-to-mstestv2.md
-        - name: Migrowanie testsettings do runsettings
+        - name: Migrowanie ustawień testsettings do runsettings
           href: migrate-testsettings-to-runsettings.md
 - name: Live Unit Testing
   items:
@@ -137,7 +137,7 @@
     - name: Konfigurowanie i używanie
       href: live-unit-testing.md
     - name: Najczęściej zadawane pytania
-      href: live-unit-testing-faq.md
+      href: live-unit-testing-faq.yml
 - name: Internetowe testowanie wydajnościowe i obciążeniowe
   items:
     - name: 'Szybki start: Tworzenie projektu testu obciążeniowego'
